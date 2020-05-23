@@ -21,16 +21,16 @@ object DataOptions {
   @scala.inline
   def apply(
     controlPosition: ControlPosition = null,
-    controls: js.Array[DrawingMode] = null,
-    drawingMode: DrawingMode = null,
+    controls: js.UndefOr[Null | js.Array[DrawingMode]] = js.undefined,
+    drawingMode: js.UndefOr[Null | DrawingMode] = js.undefined,
     featureFactory: /* geometry */ Geometry => Feature = null,
     map: Map[Element] = null,
     style: StylingFunction | StyleOptions = null
   ): DataOptions = {
     val __obj = js.Dynamic.literal()
     if (controlPosition != null) __obj.updateDynamic("controlPosition")(controlPosition.asInstanceOf[js.Any])
-    if (controls != null) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
-    if (drawingMode != null) __obj.updateDynamic("drawingMode")(drawingMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawingMode)) __obj.updateDynamic("drawingMode")(drawingMode.asInstanceOf[js.Any])
     if (featureFactory != null) __obj.updateDynamic("featureFactory")(js.Any.fromFunction1(featureFactory))
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

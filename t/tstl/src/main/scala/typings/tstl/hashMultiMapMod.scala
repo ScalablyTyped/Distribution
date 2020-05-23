@@ -1,6 +1,7 @@
 package typings.tstl
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.tstl.anon.Iteratoranyanyanyany
 import typings.tstl.binaryPredicatorMod.BinaryPredicator
 import typings.tstl.hashMultiMapMod.HashMultiMap.Iterator
 import typings.tstl.hashMultiMapMod.HashMultiMap.ReverseIterator
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl/container/HashMultiMap", JSImport.Namespace)
 @js.native
 object hashMultiMapMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.tstl.isizeMod.ISize because Already inherited
   - typings.tstl.iforwardcontainerMod.IForwardContainer because Already inherited
   - typings.tstl.ipushMod.IPush because Already inherited

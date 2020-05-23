@@ -1,24 +1,24 @@
 package typings.reactabularTable.mod
 
-import typings.reactabularTable.AnonDraggable
-import typings.reactabularTable.AnonFormatters
+import typings.reactabularTable.anon.Draggable
+import typings.reactabularTable.anon.Formatters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Column extends js.Object {
-  var cell: js.UndefOr[AnonFormatters] = js.undefined
+  var cell: js.UndefOr[Formatters] = js.undefined
   var children: js.UndefOr[js.Array[Column]] = js.undefined
-  var header: js.UndefOr[AnonDraggable] = js.undefined
+  var header: js.UndefOr[Draggable] = js.undefined
   var property: js.UndefOr[String] = js.undefined
 }
 
 object Column {
   @scala.inline
   def apply(
-    cell: AnonFormatters = null,
+    cell: Formatters = null,
     children: js.Array[Column] = null,
-    header: AnonDraggable = null,
+    header: Draggable = null,
     property: String = null
   ): Column = {
     val __obj = js.Dynamic.literal()

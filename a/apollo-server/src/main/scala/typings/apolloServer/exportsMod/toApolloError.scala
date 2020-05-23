@@ -1,7 +1,7 @@
 package typings.apolloServer.exportsMod
 
-import typings.apolloServerErrors.ErrorextensionsRecordstri
-import typings.apolloServerErrors.ErrorextensionsRecordstriExtensions
+import typings.apolloServerErrors.anon.ErrorextensionsRecordstri
+import typings.apolloServerErrors.anon.ErrorextensionsRecordstriExtensions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

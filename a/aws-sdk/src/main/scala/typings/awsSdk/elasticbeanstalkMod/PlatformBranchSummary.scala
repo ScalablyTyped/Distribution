@@ -32,14 +32,14 @@ object PlatformBranchSummary {
   @scala.inline
   def apply(
     BranchName: BranchName = null,
-    BranchOrder: Int | Double = null,
+    BranchOrder: js.UndefOr[BranchOrder] = js.undefined,
     LifecycleState: PlatformBranchLifecycleState = null,
     PlatformName: PlatformName = null,
     SupportedTierList: SupportedTierList = null
   ): PlatformBranchSummary = {
     val __obj = js.Dynamic.literal()
     if (BranchName != null) __obj.updateDynamic("BranchName")(BranchName.asInstanceOf[js.Any])
-    if (BranchOrder != null) __obj.updateDynamic("BranchOrder")(BranchOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(BranchOrder)) __obj.updateDynamic("BranchOrder")(BranchOrder.get.asInstanceOf[js.Any])
     if (LifecycleState != null) __obj.updateDynamic("LifecycleState")(LifecycleState.asInstanceOf[js.Any])
     if (PlatformName != null) __obj.updateDynamic("PlatformName")(PlatformName.asInstanceOf[js.Any])
     if (SupportedTierList != null) __obj.updateDynamic("SupportedTierList")(SupportedTierList.asInstanceOf[js.Any])

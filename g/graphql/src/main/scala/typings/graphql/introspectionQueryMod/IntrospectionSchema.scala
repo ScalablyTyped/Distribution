@@ -19,12 +19,12 @@ object IntrospectionSchema {
     directives: js.Array[IntrospectionDirective],
     queryType: IntrospectionNamedTypeRef[IntrospectionObjectType],
     types: js.Array[IntrospectionType],
-    mutationType: Maybe[IntrospectionNamedTypeRef[IntrospectionObjectType]] = null,
-    subscriptionType: Maybe[IntrospectionNamedTypeRef[IntrospectionObjectType]] = null
+    mutationType: js.UndefOr[Null | Maybe[IntrospectionNamedTypeRef[IntrospectionObjectType]]] = js.undefined,
+    subscriptionType: js.UndefOr[Null | Maybe[IntrospectionNamedTypeRef[IntrospectionObjectType]]] = js.undefined
   ): IntrospectionSchema = {
     val __obj = js.Dynamic.literal(directives = directives.asInstanceOf[js.Any], queryType = queryType.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
-    if (mutationType != null) __obj.updateDynamic("mutationType")(mutationType.asInstanceOf[js.Any])
-    if (subscriptionType != null) __obj.updateDynamic("subscriptionType")(subscriptionType.asInstanceOf[js.Any])
+    if (!js.isUndefined(mutationType)) __obj.updateDynamic("mutationType")(mutationType.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscriptionType)) __obj.updateDynamic("subscriptionType")(subscriptionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionSchema]
   }
 }

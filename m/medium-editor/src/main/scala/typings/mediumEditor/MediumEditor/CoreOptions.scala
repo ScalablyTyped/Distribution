@@ -1,8 +1,8 @@
 package typings.mediumEditor.MediumEditor
 
-import typings.std.Document_
+import typings.std.Document
 import typings.std.HTMLElement
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait CoreOptions extends js.Object {
   var anchorPreview: js.UndefOr[AnchorPreviewOptions | Boolean] = js.undefined
   var autoLink: js.UndefOr[Boolean] = js.undefined
   var buttonLabels: js.UndefOr[String | Boolean] = js.undefined
-  var contentWindow: js.UndefOr[Window_] = js.undefined
+  var contentWindow: js.UndefOr[Window] = js.undefined
   var delay: js.UndefOr[Double] = js.undefined
   var disableDoubleReturn: js.UndefOr[Boolean] = js.undefined
   var disableEditing: js.UndefOr[Boolean] = js.undefined
@@ -24,7 +24,7 @@ trait CoreOptions extends js.Object {
   var extensions: js.UndefOr[js.Any] = js.undefined
   var imageDragging: js.UndefOr[Boolean] = js.undefined
   var keyboardCommands: js.UndefOr[KeyboardCommandsOptions | Boolean] = js.undefined
-  var ownerDocument: js.UndefOr[Document_] = js.undefined
+  var ownerDocument: js.UndefOr[Document] = js.undefined
   var paste: js.UndefOr[PasteOptions] = js.undefined
   var placeholder: js.UndefOr[PlaceholderOptions | Boolean] = js.undefined
   var spellcheck: js.UndefOr[Boolean] = js.undefined
@@ -41,8 +41,8 @@ object CoreOptions {
     anchorPreview: AnchorPreviewOptions | Boolean = null,
     autoLink: js.UndefOr[Boolean] = js.undefined,
     buttonLabels: String | Boolean = null,
-    contentWindow: Window_ = null,
-    delay: Int | Double = null,
+    contentWindow: Window = null,
+    delay: js.UndefOr[Double] = js.undefined,
     disableDoubleReturn: js.UndefOr[Boolean] = js.undefined,
     disableEditing: js.UndefOr[Boolean] = js.undefined,
     disableExtraSpaces: js.UndefOr[Boolean] = js.undefined,
@@ -51,7 +51,7 @@ object CoreOptions {
     extensions: js.Any = null,
     imageDragging: js.UndefOr[Boolean] = js.undefined,
     keyboardCommands: KeyboardCommandsOptions | Boolean = null,
-    ownerDocument: Document_ = null,
+    ownerDocument: Document = null,
     paste: PasteOptions = null,
     placeholder: PlaceholderOptions | Boolean = null,
     spellcheck: js.UndefOr[Boolean] = js.undefined,
@@ -60,26 +60,26 @@ object CoreOptions {
   ): CoreOptions = {
     val __obj = js.Dynamic.literal()
     if (activeButtonClass != null) __obj.updateDynamic("activeButtonClass")(activeButtonClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowMultiParagraphSelection)) __obj.updateDynamic("allowMultiParagraphSelection")(allowMultiParagraphSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMultiParagraphSelection)) __obj.updateDynamic("allowMultiParagraphSelection")(allowMultiParagraphSelection.get.asInstanceOf[js.Any])
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
     if (anchorPreview != null) __obj.updateDynamic("anchorPreview")(anchorPreview.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoLink)) __obj.updateDynamic("autoLink")(autoLink.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoLink)) __obj.updateDynamic("autoLink")(autoLink.get.asInstanceOf[js.Any])
     if (buttonLabels != null) __obj.updateDynamic("buttonLabels")(buttonLabels.asInstanceOf[js.Any])
     if (contentWindow != null) __obj.updateDynamic("contentWindow")(contentWindow.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableDoubleReturn)) __obj.updateDynamic("disableDoubleReturn")(disableDoubleReturn.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableEditing)) __obj.updateDynamic("disableEditing")(disableEditing.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableExtraSpaces)) __obj.updateDynamic("disableExtraSpaces")(disableExtraSpaces.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableReturn)) __obj.updateDynamic("disableReturn")(disableReturn.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableDoubleReturn)) __obj.updateDynamic("disableDoubleReturn")(disableDoubleReturn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableEditing)) __obj.updateDynamic("disableEditing")(disableEditing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableExtraSpaces)) __obj.updateDynamic("disableExtraSpaces")(disableExtraSpaces.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableReturn)) __obj.updateDynamic("disableReturn")(disableReturn.get.asInstanceOf[js.Any])
     if (elementsContainer != null) __obj.updateDynamic("elementsContainer")(elementsContainer.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (!js.isUndefined(imageDragging)) __obj.updateDynamic("imageDragging")(imageDragging.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageDragging)) __obj.updateDynamic("imageDragging")(imageDragging.get.asInstanceOf[js.Any])
     if (keyboardCommands != null) __obj.updateDynamic("keyboardCommands")(keyboardCommands.asInstanceOf[js.Any])
     if (ownerDocument != null) __obj.updateDynamic("ownerDocument")(ownerDocument.asInstanceOf[js.Any])
     if (paste != null) __obj.updateDynamic("paste")(paste.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck.asInstanceOf[js.Any])
-    if (!js.isUndefined(targetBlank)) __obj.updateDynamic("targetBlank")(targetBlank.asInstanceOf[js.Any])
+    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetBlank)) __obj.updateDynamic("targetBlank")(targetBlank.get.asInstanceOf[js.Any])
     if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoreOptions]
   }

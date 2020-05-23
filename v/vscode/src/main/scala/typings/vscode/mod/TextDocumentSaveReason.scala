@@ -12,21 +12,21 @@ sealed trait TextDocumentSaveReason extends js.Object
 @js.native
 object TextDocumentSaveReason extends js.Object {
   /**
-  		 * Automatic after a delay.
-  		 */
+    * Automatic after a delay.
+    */
   @js.native
   sealed trait AfterDelay extends TextDocumentSaveReason
   
   /**
-  		 * When the editor lost focus.
-  		 */
+    * When the editor lost focus.
+    */
   @js.native
   sealed trait FocusOut extends TextDocumentSaveReason
   
   /**
-  		 * Manually triggered, e.g. by the user pressing save, by starting debugging,
-  		 * or by an API call.
-  		 */
+    * Manually triggered, e.g. by the user pressing save, by starting debugging,
+    * or by an API call.
+    */
   @js.native
   sealed trait Manual extends TextDocumentSaveReason
   

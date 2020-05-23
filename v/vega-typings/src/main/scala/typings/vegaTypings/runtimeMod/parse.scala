@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object parse extends js.Object {
   def apply(spec: Spec): Runtime = js.native
-  def apply(spec: Spec, opt: js.Any): Runtime = js.native
+  def apply(spec: Spec, config: js.Any): Runtime = js.native
+  def apply(spec: Spec, config: js.Any, opt: js.Object): Runtime = js.native
 }
 

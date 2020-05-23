@@ -14,12 +14,10 @@ import scala.scalajs.js.annotation._
   *
   * Represents a scoped collection of PivotTables. The PivotTables are sorted based on the location of the PivotTable's top-left corner. They are ordered top to bottom and then left to right.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApiOnline 1.1]
   */
-@JSGlobal("Excel.PivotTableScopedCollection")
 @js.native
-class PivotTableScopedCollection () extends ClientObject {
+trait PivotTableScopedCollection extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_PivotTableScopedCollection: RequestContext = js.native
@@ -28,22 +26,19 @@ class PivotTableScopedCollection () extends ClientObject {
   /**
     * Gets the number of PivotTables in the collection.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApiOnline 1.1]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
     * Gets the first PivotTable in the collection. The PivotTables in the collection are sorted top to bottom and left to right, such that top-left table is the first PivotTable in the collection.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApiOnline 1.1]
     */
   def getFirst(): PivotTable = js.native
   /**
     * Gets a PivotTable by name.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApiOnline 1.1]
     *
     * @param key Name of the PivotTable to be retrieved.
     */
@@ -51,8 +46,7 @@ class PivotTableScopedCollection () extends ClientObject {
   /**
     * Gets a PivotTable by name. If the PivotTable does not exist, will return a null object.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApiOnline 1.1]
     *
     * @param name Name of the PivotTable to be retrieved.
     */

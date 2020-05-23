@@ -27,7 +27,7 @@ object SequenceOptions {
   ): SequenceOptions = {
     val __obj = js.Dynamic.literal(inc_field = inc_field.asInstanceOf[js.Any])
     if (collection_name != null) __obj.updateDynamic("collection_name")(collection_name.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_hooks)) __obj.updateDynamic("disable_hooks")(disable_hooks.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable_hooks)) __obj.updateDynamic("disable_hooks")(disable_hooks.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (reference_fields != null) __obj.updateDynamic("reference_fields")(reference_fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[SequenceOptions]

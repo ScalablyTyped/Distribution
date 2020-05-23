@@ -24,12 +24,12 @@ object UpdateProvisioningParameter {
   @scala.inline
   def apply(
     Key: ParameterKey = null,
-    UsePreviousValue: js.UndefOr[Boolean] = js.undefined,
+    UsePreviousValue: js.UndefOr[UsePreviousValue] = js.undefined,
     Value: ParameterValue = null
   ): UpdateProvisioningParameter = {
     val __obj = js.Dynamic.literal()
     if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
-    if (!js.isUndefined(UsePreviousValue)) __obj.updateDynamic("UsePreviousValue")(UsePreviousValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(UsePreviousValue)) __obj.updateDynamic("UsePreviousValue")(UsePreviousValue.get.asInstanceOf[js.Any])
     if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateProvisioningParameter]
   }

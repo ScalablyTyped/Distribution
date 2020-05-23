@@ -1,8 +1,8 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.AnonColumnComponentElement
-import typings.devextreme.AnonColumnDxTreeListColumn
-import typings.devextreme.AnonKeyRow
+import typings.devextreme.anon.ColumnComponentElement
+import typings.devextreme.anon.ColumnDxTreeListColumn
+import typings.devextreme.anon.KeyRow
 import typings.devextreme.devextremeStrings.add
 import typings.devextreme.devextremeStrings.cancel
 import typings.devextreme.devextremeStrings.delete
@@ -10,7 +10,7 @@ import typings.devextreme.devextremeStrings.edit
 import typings.devextreme.devextremeStrings.save
 import typings.devextreme.devextremeStrings.undelete
 import typings.devextreme.mod.DevExpress.core.dxElement
-import typings.devextreme.mod._Global_.JQuery
+import typings.devextreme.mod.global.JQuery
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,13 +20,13 @@ trait dxTreeListColumnButton extends GridBaseColumnButton {
   /** @name dxTreeListColumnButton.name */
   var name: js.UndefOr[add | cancel | delete | edit | save | undelete | String] = js.undefined
   /** @name dxTreeListColumnButton.onClick */
-  var onClick: js.UndefOr[(js.Function1[/* e */ AnonColumnComponentElement, _]) | String] = js.undefined
+  var onClick: js.UndefOr[(js.Function1[/* e */ ColumnComponentElement, _]) | String] = js.undefined
   /** @name dxTreeListColumnButton.template */
   var template: js.UndefOr[
-    typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ AnonKeyRow, String | Element | JQuery])
+    typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ KeyRow, String | Element | JQuery])
   ] = js.undefined
   /** @name dxTreeListColumnButton.visible */
-  var visible: js.UndefOr[Boolean | (js.Function1[/* options */ AnonColumnDxTreeListColumn, Boolean])] = js.undefined
+  var visible: js.UndefOr[Boolean | (js.Function1[/* options */ ColumnDxTreeListColumn, Boolean])] = js.undefined
 }
 
 object dxTreeListColumnButton {
@@ -36,10 +36,10 @@ object dxTreeListColumnButton {
     hint: String = null,
     icon: String = null,
     name: add | cancel | delete | edit | save | undelete | String = null,
-    onClick: (js.Function1[/* e */ AnonColumnComponentElement, _]) | String = null,
-    template: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ AnonKeyRow, String | Element | JQuery]) = null,
+    onClick: (js.Function1[/* e */ ColumnComponentElement, _]) | String = null,
+    template: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ KeyRow, String | Element | JQuery]) = null,
     text: String = null,
-    visible: Boolean | (js.Function1[/* options */ AnonColumnDxTreeListColumn, Boolean]) = null
+    visible: Boolean | (js.Function1[/* options */ ColumnDxTreeListColumn, Boolean]) = null
   ): dxTreeListColumnButton = {
     val __obj = js.Dynamic.literal()
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])

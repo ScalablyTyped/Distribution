@@ -1,7 +1,6 @@
 package typings.minappEnv
 
 import org.scalablytyped.runtime.NumberDictionary
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -325,8 +324,4 @@ trait Float64Array extends /* index */ NumberDictionary[Double] {
     */
   def values(): IterableIterator[Double] = js.native
 }
-
-@JSGlobal("Float64Array")
-@js.native
-object Float64Array extends TopLevel[Float64ArrayConstructor]
 

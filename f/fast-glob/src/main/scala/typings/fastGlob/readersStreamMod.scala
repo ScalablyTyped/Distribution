@@ -1,5 +1,7 @@
 package typings.fastGlob
 
+import typings.fastGlob.anon.FnCall
+import typings.fastGlob.anon.Typeofstat
 import typings.node.streamMod.Readable
 import typings.nodelibFsWalk.settingsMod.Options
 import scala.scalajs.js

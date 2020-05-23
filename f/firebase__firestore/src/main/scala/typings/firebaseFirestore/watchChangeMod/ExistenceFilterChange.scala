@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/remote/watch_change", "ExistenceFilterChange")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/remote/watch_change", "ExistenceFilterChange")
 @js.native
 class ExistenceFilterChange protected () extends WatchChange {
   def this(targetId: TargetId, existenceFilter: ExistenceFilter) = this()

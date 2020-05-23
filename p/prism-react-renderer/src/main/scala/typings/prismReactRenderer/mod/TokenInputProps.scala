@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TokenInputProps
-  extends /* otherProp */ StringDictionary[js.Any] {
+  extends /* otherProps */ StringDictionary[js.Any] {
   var className: js.UndefOr[String] = js.undefined
   var key: js.UndefOr[Key] = js.undefined
   var style: js.UndefOr[StyleObj] = js.undefined
@@ -18,7 +18,7 @@ object TokenInputProps {
   @scala.inline
   def apply(
     token: Token,
-    StringDictionary: /* otherProp */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     className: String = null,
     key: Key = null,
     style: StyleObj = null

@@ -27,13 +27,13 @@ trait FunctionConfigurationEnvironment extends js.Object {
 object FunctionConfigurationEnvironment {
   @scala.inline
   def apply(
-    AccessSysfs: js.UndefOr[Boolean] = js.undefined,
+    AccessSysfs: js.UndefOr[boolean] = js.undefined,
     Execution: FunctionExecutionConfig = null,
     ResourceAccessPolicies: listOfResourceAccessPolicy = null,
     Variables: mapOfString = null
   ): FunctionConfigurationEnvironment = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AccessSysfs)) __obj.updateDynamic("AccessSysfs")(AccessSysfs.asInstanceOf[js.Any])
+    if (!js.isUndefined(AccessSysfs)) __obj.updateDynamic("AccessSysfs")(AccessSysfs.get.asInstanceOf[js.Any])
     if (Execution != null) __obj.updateDynamic("Execution")(Execution.asInstanceOf[js.Any])
     if (ResourceAccessPolicies != null) __obj.updateDynamic("ResourceAccessPolicies")(ResourceAccessPolicies.asInstanceOf[js.Any])
     if (Variables != null) __obj.updateDynamic("Variables")(Variables.asInstanceOf[js.Any])

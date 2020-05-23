@@ -15,7 +15,7 @@ object RequestDetails {
   @scala.inline
   def apply(isBinary: js.UndefOr[Boolean] = js.undefined): RequestDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isBinary)) __obj.updateDynamic("isBinary")(isBinary.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBinary)) __obj.updateDynamic("isBinary")(isBinary.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestDetails]
   }
 }

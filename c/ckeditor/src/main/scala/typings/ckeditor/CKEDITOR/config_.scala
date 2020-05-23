@@ -1,12 +1,12 @@
 package typings.ckeditor.CKEDITOR
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ckeditor.AnonGroups
 import typings.ckeditor.CKEDITOR.config.styleObject
 import typings.ckeditor.CKEDITOR.dom.element
 import typings.ckeditor.CKEDITOR.editor.eventObject
 import typings.ckeditor.CKEDITOR.filter.allowedContentRules
 import typings.ckeditor.CKEDITOR.filter.disallowedContentRules
+import typings.ckeditor.anon.Groups
 import typings.ckeditor.ckeditorStrings.html
 import typings.ckeditor.ckeditorStrings.text
 import typings.std.RegExp
@@ -258,7 +258,7 @@ trait config_ extends js.Object {
   var templates_files: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var templates_replaceContent: js.UndefOr[Boolean] = js.undefined
   var title: js.UndefOr[String | Boolean] = js.undefined
-  var toolbar: js.UndefOr[String | (js.Array[String | js.Array[String] | AnonGroups]) | Null] = js.undefined
+  var toolbar: js.UndefOr[String | (js.Array[String | js.Array[String] | Groups]) | Null] = js.undefined
   var toolbarCanCollapse: js.UndefOr[Boolean] = js.undefined
   var toolbarGroupCycling: js.UndefOr[Boolean] = js.undefined
   var toolbarGroups: js.UndefOr[js.Array[typings.ckeditor.CKEDITOR.toolbarGroups | String]] = js.undefined
@@ -286,12 +286,12 @@ object config_ {
   def apply(
     allowedContent: Boolean | allowedContentRules = null,
     autoEmbed_widget: String | (js.Function1[/* url */ String, String]) = null,
-    autoGrow_bottomSpace: Int | Double = null,
-    autoGrow_maxHeight: Int | Double = null,
-    autoGrow_minHeight: Int | Double = null,
+    autoGrow_bottomSpace: js.UndefOr[Double] = js.undefined,
+    autoGrow_maxHeight: js.UndefOr[Double] = js.undefined,
+    autoGrow_minHeight: js.UndefOr[Double] = js.undefined,
     autoGrow_onStartup: js.UndefOr[Boolean] = js.undefined,
     autoUpdateElement: js.UndefOr[Boolean] = js.undefined,
-    baseFloatZIndex: Int | Double = null,
+    baseFloatZIndex: js.UndefOr[Double] = js.undefined,
     baseHref: String = null,
     basicEntities: js.UndefOr[Boolean] = js.undefined,
     blockedKeystrokes: js.Array[Double] = null,
@@ -299,7 +299,7 @@ object config_ {
     bodyId: String = null,
     browserContextMenuOnCtrl: js.UndefOr[Boolean] = js.undefined,
     clipboard_defaultContentType: html | text = null,
-    clipboard_notificationDuration: Int | Double = null,
+    clipboard_notificationDuration: js.UndefOr[Double] = js.undefined,
     cloudServices_tokenUrl: String = null,
     cloudServices_uploadUrl: String = null,
     coceSnippet_theme: String = null,
@@ -308,7 +308,7 @@ object config_ {
     codeSnippet_languages: StringDictionary[js.Any] = null,
     colorButton_backStyle: styleObject = null,
     colorButton_colors: String = null,
-    colorButton_colorsPerRow: Int | Double = null,
+    colorButton_colorsPerRow: js.UndefOr[Double] = js.undefined,
     colorButton_enableAutomatic: js.UndefOr[Boolean] = js.undefined,
     colorButton_enableMore: js.UndefOr[Boolean] = js.undefined,
     colorButton_foreStyle: styleObject = null,
@@ -318,8 +318,8 @@ object config_ {
     contentsLanguage: String = null,
     copyFormatting_allowRules: String = null,
     copyFormatting_allowedContexts: Boolean | js.Array[String] = null,
-    copyFormatting_keystrokeCopy: Int | Double = null,
-    copyFormatting_keystrokePaste: Int | Double = null,
+    copyFormatting_keystrokeCopy: js.UndefOr[Double] = js.undefined,
+    copyFormatting_keystrokePaste: js.UndefOr[Double] = js.undefined,
     copyFormatting_outerCursor: js.UndefOr[Boolean] = js.undefined,
     coreStyles_bold: styleObject = null,
     coreStyles_italic: styleObject = null,
@@ -333,9 +333,9 @@ object config_ {
     devtools_styles: String = null,
     devtools_textCallback: (/* editor */ editor, /* dialog */ dialog, /* element */ element, /* tabName */ String) => String = null,
     dialog_backgroundCoverColor: String = null,
-    dialog_backgroundCoverOpacity: Int | Double = null,
+    dialog_backgroundCoverOpacity: js.UndefOr[Double] = js.undefined,
     dialog_buttonsOrder: String = null,
-    dialog_magnetDistance: Int | Double = null,
+    dialog_magnetDistance: js.UndefOr[Double] = js.undefined,
     dialog_noConfirmCancel: js.UndefOr[Boolean] = js.undefined,
     dialog_startupFocusTab: js.UndefOr[Boolean] = js.undefined,
     disableNativeObjectResizing: js.UndefOr[Boolean] = js.undefined,
@@ -352,10 +352,10 @@ object config_ {
     emailProtection: String = null,
     embed_provider: String = null,
     emoji_emojiListUrl: String = null,
-    emoji_minChars: Int | Double = null,
+    emoji_minChars: js.UndefOr[Double] = js.undefined,
     enableContextMenu: js.UndefOr[Boolean] = js.undefined,
     enableTabKeyTools: js.UndefOr[Boolean] = js.undefined,
-    enterMode: Int | Double = null,
+    enterMode: js.UndefOr[Double] = js.undefined,
     entities: js.UndefOr[Boolean] = js.undefined,
     entities_additional: String = null,
     entities_greek: js.UndefOr[Boolean] = js.undefined,
@@ -381,10 +381,10 @@ object config_ {
     flashAddEmbedTag: js.UndefOr[Boolean] = js.undefined,
     flashConvertOnEdit: js.UndefOr[Boolean] = js.undefined,
     flashEmbedTagOnly: js.UndefOr[Boolean] = js.undefined,
-    floatSpaceDockedOffsetX: Int | Double = null,
-    floatSpaceDockedOffsetY: Int | Double = null,
-    floatSpacePinnedOffsetX: Int | Double = null,
-    floatSpacePinnedOffsetY: Int | Double = null,
+    floatSpaceDockedOffsetX: js.UndefOr[Double] = js.undefined,
+    floatSpaceDockedOffsetY: js.UndefOr[Double] = js.undefined,
+    floatSpacePinnedOffsetX: js.UndefOr[Double] = js.undefined,
+    floatSpacePinnedOffsetY: js.UndefOr[Double] = js.undefined,
     floatSpacePreferRight: js.UndefOr[Boolean] = js.undefined,
     fontSize_defaultLabel: String = null,
     fontSize_sizes: String = null,
@@ -421,7 +421,7 @@ object config_ {
     image_previewText: String = null,
     image_removeLinkByEmptyUrl: js.UndefOr[Boolean] = js.undefined,
     indentClasses: js.Array[String] = null,
-    indentOffset: Int | Double = null,
+    indentOffset: js.UndefOr[Double] = js.undefined,
     indentUnit: String = null,
     jqueryOverrideVal: js.UndefOr[Boolean] = js.undefined,
     justifyClasses: js.Array[String] = null,
@@ -433,17 +433,17 @@ object config_ {
     linkShowTargetTab: js.UndefOr[Boolean] = js.undefined,
     magicline_color: String = null,
     magicline_everywhere: js.UndefOr[Boolean] = js.undefined,
-    magicline_holdDistance: Int | Double = null,
-    magicline_keystrokeNext: Int | Double = null,
-    magicline_keystrokePrevious: Int | Double = null,
+    magicline_holdDistance: js.UndefOr[Double] = js.undefined,
+    magicline_keystrokeNext: js.UndefOr[Double] = js.undefined,
+    magicline_keystrokePrevious: js.UndefOr[Double] = js.undefined,
     magicline_tabuList: js.Array[String] = null,
-    magicline_triggerOffset: Int | Double = null,
+    magicline_triggerOffset: js.UndefOr[Double] = js.undefined,
     mathJaxClass: String = null,
     mathJaxLib: String = null,
     menu_groups: String = null,
-    menu_subMenuDelay: Int | Double = null,
+    menu_subMenuDelay: js.UndefOr[Double] = js.undefined,
     newpage_html: String = null,
-    notification_duration: Int | Double = null,
+    notification_duration: js.UndefOr[Double] = js.undefined,
     on: eventObject = null,
     pasteFilter: String = null,
     pasteFromWordCleanupFile: String = null,
@@ -463,10 +463,10 @@ object config_ {
     removePlugins: String = null,
     resize_dir: String = null,
     resize_enabled: js.UndefOr[Boolean] = js.undefined,
-    resize_maxHeight: Int | Double = null,
-    resize_maxWidth: Int | Double = null,
-    resize_minHeight: Int | Double = null,
-    resize_minWidth: Int | Double = null,
+    resize_maxHeight: js.UndefOr[Double] = js.undefined,
+    resize_maxWidth: js.UndefOr[Double] = js.undefined,
+    resize_minHeight: js.UndefOr[Double] = js.undefined,
+    resize_minWidth: js.UndefOr[Double] = js.undefined,
     scayt_autoStartup: js.UndefOr[Boolean] = js.undefined,
     scayt_contextCommands: String = null,
     scayt_contextMenuItemsOrder: String = null,
@@ -481,8 +481,8 @@ object config_ {
     scayt_ignoreWordsWithMixedCases: js.UndefOr[Boolean] = js.undefined,
     scayt_ignoreWordsWithNumbers: js.UndefOr[Boolean] = js.undefined,
     scayt_inlineModeImmediateMarkup: js.UndefOr[Boolean] = js.undefined,
-    scayt_maxSuggestions: Int | Double = null,
-    scayt_minWordLength: Int | Double = null,
+    scayt_maxSuggestions: js.UndefOr[Double] = js.undefined,
+    scayt_minWordLength: js.UndefOr[Double] = js.undefined,
     scayt_moreSuggestions: String = null,
     scayt_multiLanguageMode: js.UndefOr[Boolean] = js.undefined,
     scayt_multiLanguageStyles: StringDictionary[js.Any] = null,
@@ -495,13 +495,13 @@ object config_ {
     scayt_uiTabs: String = null,
     scayt_userDictionaryName: String = null,
     sharedSpaces: sharedSpace = null,
-    shiftEnterMode: Int | Double = null,
+    shiftEnterMode: js.UndefOr[Double] = js.undefined,
     skin: String = null,
-    smiley_columns: Int | Double = null,
+    smiley_columns: js.UndefOr[Double] = js.undefined,
     smiley_descriptions: js.Array[String] = null,
     smiley_images: js.Array[String] = null,
     smiley_path: String = null,
-    sourceAreaTabSize: Int | Double = null,
+    sourceAreaTabSize: js.UndefOr[Double] = js.undefined,
     specialChars: js.Array[String | (js.Tuple2[String, String])] = null,
     startupFocus: String | Boolean = null,
     startupMode: String = null,
@@ -510,20 +510,20 @@ object config_ {
     stylesSet: String | Boolean | js.Array[styleObject] = null,
     stylesheetParser_skipSelectors: RegExp = null,
     stylesheetParser_validSelectors: RegExp = null,
-    tabIndex: Int | Double = null,
-    tabSpaces: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
+    tabSpaces: js.UndefOr[Double] = js.undefined,
     templates: String = null,
     templates_files: StringDictionary[js.Any] = null,
     templates_replaceContent: js.UndefOr[Boolean] = js.undefined,
     title: String | Boolean = null,
-    toolbar: String | (js.Array[String | js.Array[String] | AnonGroups]) = null,
+    toolbar: js.UndefOr[Null | String | (js.Array[String | js.Array[String] | Groups])] = js.undefined,
     toolbarCanCollapse: js.UndefOr[Boolean] = js.undefined,
     toolbarGroupCycling: js.UndefOr[Boolean] = js.undefined,
     toolbarGroups: js.Array[toolbarGroups | String] = null,
     toolbarLocation: String = null,
     toolbarStartupExpanded: js.UndefOr[Boolean] = js.undefined,
     uiColor: String = null,
-    undoStackSize: Int | Double = null,
+    undoStackSize: js.UndefOr[Double] = js.undefined,
     uploadUrl: String = null,
     useComputedState: js.UndefOr[Boolean] = js.undefined,
     width: String | Double = null,
@@ -541,20 +541,20 @@ object config_ {
     val __obj = js.Dynamic.literal()
     if (allowedContent != null) __obj.updateDynamic("allowedContent")(allowedContent.asInstanceOf[js.Any])
     if (autoEmbed_widget != null) __obj.updateDynamic("autoEmbed_widget")(autoEmbed_widget.asInstanceOf[js.Any])
-    if (autoGrow_bottomSpace != null) __obj.updateDynamic("autoGrow_bottomSpace")(autoGrow_bottomSpace.asInstanceOf[js.Any])
-    if (autoGrow_maxHeight != null) __obj.updateDynamic("autoGrow_maxHeight")(autoGrow_maxHeight.asInstanceOf[js.Any])
-    if (autoGrow_minHeight != null) __obj.updateDynamic("autoGrow_minHeight")(autoGrow_minHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoGrow_onStartup)) __obj.updateDynamic("autoGrow_onStartup")(autoGrow_onStartup.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoUpdateElement)) __obj.updateDynamic("autoUpdateElement")(autoUpdateElement.asInstanceOf[js.Any])
-    if (baseFloatZIndex != null) __obj.updateDynamic("baseFloatZIndex")(baseFloatZIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoGrow_bottomSpace)) __obj.updateDynamic("autoGrow_bottomSpace")(autoGrow_bottomSpace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoGrow_maxHeight)) __obj.updateDynamic("autoGrow_maxHeight")(autoGrow_maxHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoGrow_minHeight)) __obj.updateDynamic("autoGrow_minHeight")(autoGrow_minHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoGrow_onStartup)) __obj.updateDynamic("autoGrow_onStartup")(autoGrow_onStartup.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoUpdateElement)) __obj.updateDynamic("autoUpdateElement")(autoUpdateElement.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(baseFloatZIndex)) __obj.updateDynamic("baseFloatZIndex")(baseFloatZIndex.get.asInstanceOf[js.Any])
     if (baseHref != null) __obj.updateDynamic("baseHref")(baseHref.asInstanceOf[js.Any])
-    if (!js.isUndefined(basicEntities)) __obj.updateDynamic("basicEntities")(basicEntities.asInstanceOf[js.Any])
+    if (!js.isUndefined(basicEntities)) __obj.updateDynamic("basicEntities")(basicEntities.get.asInstanceOf[js.Any])
     if (blockedKeystrokes != null) __obj.updateDynamic("blockedKeystrokes")(blockedKeystrokes.asInstanceOf[js.Any])
     if (bodyClass != null) __obj.updateDynamic("bodyClass")(bodyClass.asInstanceOf[js.Any])
     if (bodyId != null) __obj.updateDynamic("bodyId")(bodyId.asInstanceOf[js.Any])
-    if (!js.isUndefined(browserContextMenuOnCtrl)) __obj.updateDynamic("browserContextMenuOnCtrl")(browserContextMenuOnCtrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(browserContextMenuOnCtrl)) __obj.updateDynamic("browserContextMenuOnCtrl")(browserContextMenuOnCtrl.get.asInstanceOf[js.Any])
     if (clipboard_defaultContentType != null) __obj.updateDynamic("clipboard_defaultContentType")(clipboard_defaultContentType.asInstanceOf[js.Any])
-    if (clipboard_notificationDuration != null) __obj.updateDynamic("clipboard_notificationDuration")(clipboard_notificationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(clipboard_notificationDuration)) __obj.updateDynamic("clipboard_notificationDuration")(clipboard_notificationDuration.get.asInstanceOf[js.Any])
     if (cloudServices_tokenUrl != null) __obj.updateDynamic("cloudServices_tokenUrl")(cloudServices_tokenUrl.asInstanceOf[js.Any])
     if (cloudServices_uploadUrl != null) __obj.updateDynamic("cloudServices_uploadUrl")(cloudServices_uploadUrl.asInstanceOf[js.Any])
     if (coceSnippet_theme != null) __obj.updateDynamic("coceSnippet_theme")(coceSnippet_theme.asInstanceOf[js.Any])
@@ -563,19 +563,19 @@ object config_ {
     if (codeSnippet_languages != null) __obj.updateDynamic("codeSnippet_languages")(codeSnippet_languages.asInstanceOf[js.Any])
     if (colorButton_backStyle != null) __obj.updateDynamic("colorButton_backStyle")(colorButton_backStyle.asInstanceOf[js.Any])
     if (colorButton_colors != null) __obj.updateDynamic("colorButton_colors")(colorButton_colors.asInstanceOf[js.Any])
-    if (colorButton_colorsPerRow != null) __obj.updateDynamic("colorButton_colorsPerRow")(colorButton_colorsPerRow.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorButton_enableAutomatic)) __obj.updateDynamic("colorButton_enableAutomatic")(colorButton_enableAutomatic.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorButton_enableMore)) __obj.updateDynamic("colorButton_enableMore")(colorButton_enableMore.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorButton_colorsPerRow)) __obj.updateDynamic("colorButton_colorsPerRow")(colorButton_colorsPerRow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorButton_enableAutomatic)) __obj.updateDynamic("colorButton_enableAutomatic")(colorButton_enableAutomatic.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorButton_enableMore)) __obj.updateDynamic("colorButton_enableMore")(colorButton_enableMore.get.asInstanceOf[js.Any])
     if (colorButton_foreStyle != null) __obj.updateDynamic("colorButton_foreStyle")(colorButton_foreStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorButton_normalizeBackground)) __obj.updateDynamic("colorButton_normalizeBackground")(colorButton_normalizeBackground.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorButton_normalizeBackground)) __obj.updateDynamic("colorButton_normalizeBackground")(colorButton_normalizeBackground.get.asInstanceOf[js.Any])
     if (contentsCss != null) __obj.updateDynamic("contentsCss")(contentsCss.asInstanceOf[js.Any])
     if (contentsLangDirection != null) __obj.updateDynamic("contentsLangDirection")(contentsLangDirection.asInstanceOf[js.Any])
     if (contentsLanguage != null) __obj.updateDynamic("contentsLanguage")(contentsLanguage.asInstanceOf[js.Any])
     if (copyFormatting_allowRules != null) __obj.updateDynamic("copyFormatting_allowRules")(copyFormatting_allowRules.asInstanceOf[js.Any])
     if (copyFormatting_allowedContexts != null) __obj.updateDynamic("copyFormatting_allowedContexts")(copyFormatting_allowedContexts.asInstanceOf[js.Any])
-    if (copyFormatting_keystrokeCopy != null) __obj.updateDynamic("copyFormatting_keystrokeCopy")(copyFormatting_keystrokeCopy.asInstanceOf[js.Any])
-    if (copyFormatting_keystrokePaste != null) __obj.updateDynamic("copyFormatting_keystrokePaste")(copyFormatting_keystrokePaste.asInstanceOf[js.Any])
-    if (!js.isUndefined(copyFormatting_outerCursor)) __obj.updateDynamic("copyFormatting_outerCursor")(copyFormatting_outerCursor.asInstanceOf[js.Any])
+    if (!js.isUndefined(copyFormatting_keystrokeCopy)) __obj.updateDynamic("copyFormatting_keystrokeCopy")(copyFormatting_keystrokeCopy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(copyFormatting_keystrokePaste)) __obj.updateDynamic("copyFormatting_keystrokePaste")(copyFormatting_keystrokePaste.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(copyFormatting_outerCursor)) __obj.updateDynamic("copyFormatting_outerCursor")(copyFormatting_outerCursor.get.asInstanceOf[js.Any])
     if (coreStyles_bold != null) __obj.updateDynamic("coreStyles_bold")(coreStyles_bold.asInstanceOf[js.Any])
     if (coreStyles_italic != null) __obj.updateDynamic("coreStyles_italic")(coreStyles_italic.asInstanceOf[js.Any])
     if (coreStyles_strike != null) __obj.updateDynamic("coreStyles_strike")(coreStyles_strike.asInstanceOf[js.Any])
@@ -588,17 +588,17 @@ object config_ {
     if (devtools_styles != null) __obj.updateDynamic("devtools_styles")(devtools_styles.asInstanceOf[js.Any])
     if (devtools_textCallback != null) __obj.updateDynamic("devtools_textCallback")(js.Any.fromFunction4(devtools_textCallback))
     if (dialog_backgroundCoverColor != null) __obj.updateDynamic("dialog_backgroundCoverColor")(dialog_backgroundCoverColor.asInstanceOf[js.Any])
-    if (dialog_backgroundCoverOpacity != null) __obj.updateDynamic("dialog_backgroundCoverOpacity")(dialog_backgroundCoverOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(dialog_backgroundCoverOpacity)) __obj.updateDynamic("dialog_backgroundCoverOpacity")(dialog_backgroundCoverOpacity.get.asInstanceOf[js.Any])
     if (dialog_buttonsOrder != null) __obj.updateDynamic("dialog_buttonsOrder")(dialog_buttonsOrder.asInstanceOf[js.Any])
-    if (dialog_magnetDistance != null) __obj.updateDynamic("dialog_magnetDistance")(dialog_magnetDistance.asInstanceOf[js.Any])
-    if (!js.isUndefined(dialog_noConfirmCancel)) __obj.updateDynamic("dialog_noConfirmCancel")(dialog_noConfirmCancel.asInstanceOf[js.Any])
-    if (!js.isUndefined(dialog_startupFocusTab)) __obj.updateDynamic("dialog_startupFocusTab")(dialog_startupFocusTab.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableNativeObjectResizing)) __obj.updateDynamic("disableNativeObjectResizing")(disableNativeObjectResizing.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableNativeReadonlyStyling)) __obj.updateDynamic("disableNativeReadonlyStyling")(disableNativeReadonlyStyling.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableNativeSpellChecker)) __obj.updateDynamic("disableNativeSpellChecker")(disableNativeSpellChecker.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableNativeTableHandles)) __obj.updateDynamic("disableNativeTableHandles")(disableNativeTableHandles.asInstanceOf[js.Any])
+    if (!js.isUndefined(dialog_magnetDistance)) __obj.updateDynamic("dialog_magnetDistance")(dialog_magnetDistance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dialog_noConfirmCancel)) __obj.updateDynamic("dialog_noConfirmCancel")(dialog_noConfirmCancel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dialog_startupFocusTab)) __obj.updateDynamic("dialog_startupFocusTab")(dialog_startupFocusTab.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableNativeObjectResizing)) __obj.updateDynamic("disableNativeObjectResizing")(disableNativeObjectResizing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableNativeReadonlyStyling)) __obj.updateDynamic("disableNativeReadonlyStyling")(disableNativeReadonlyStyling.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableNativeSpellChecker)) __obj.updateDynamic("disableNativeSpellChecker")(disableNativeSpellChecker.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableNativeTableHandles)) __obj.updateDynamic("disableNativeTableHandles")(disableNativeTableHandles.get.asInstanceOf[js.Any])
     if (disallowedContent != null) __obj.updateDynamic("disallowedContent")(disallowedContent.asInstanceOf[js.Any])
-    if (!js.isUndefined(div_wrapTable)) __obj.updateDynamic("div_wrapTable")(div_wrapTable.asInstanceOf[js.Any])
+    if (!js.isUndefined(div_wrapTable)) __obj.updateDynamic("div_wrapTable")(div_wrapTable.get.asInstanceOf[js.Any])
     if (docType != null) __obj.updateDynamic("docType")(docType.asInstanceOf[js.Any])
     if (easyimage_class != null) __obj.updateDynamic("easyimage_class")(easyimage_class.asInstanceOf[js.Any])
     if (easyimage_defaultStyle != null) __obj.updateDynamic("easyimage_defaultStyle")(easyimage_defaultStyle.asInstanceOf[js.Any])
@@ -607,14 +607,14 @@ object config_ {
     if (emailProtection != null) __obj.updateDynamic("emailProtection")(emailProtection.asInstanceOf[js.Any])
     if (embed_provider != null) __obj.updateDynamic("embed_provider")(embed_provider.asInstanceOf[js.Any])
     if (emoji_emojiListUrl != null) __obj.updateDynamic("emoji_emojiListUrl")(emoji_emojiListUrl.asInstanceOf[js.Any])
-    if (emoji_minChars != null) __obj.updateDynamic("emoji_minChars")(emoji_minChars.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableContextMenu)) __obj.updateDynamic("enableContextMenu")(enableContextMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTabKeyTools)) __obj.updateDynamic("enableTabKeyTools")(enableTabKeyTools.asInstanceOf[js.Any])
-    if (enterMode != null) __obj.updateDynamic("enterMode")(enterMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(entities)) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
+    if (!js.isUndefined(emoji_minChars)) __obj.updateDynamic("emoji_minChars")(emoji_minChars.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableContextMenu)) __obj.updateDynamic("enableContextMenu")(enableContextMenu.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTabKeyTools)) __obj.updateDynamic("enableTabKeyTools")(enableTabKeyTools.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enterMode)) __obj.updateDynamic("enterMode")(enterMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(entities)) __obj.updateDynamic("entities")(entities.get.asInstanceOf[js.Any])
     if (entities_additional != null) __obj.updateDynamic("entities_additional")(entities_additional.asInstanceOf[js.Any])
-    if (!js.isUndefined(entities_greek)) __obj.updateDynamic("entities_greek")(entities_greek.asInstanceOf[js.Any])
-    if (!js.isUndefined(entities_latin)) __obj.updateDynamic("entities_latin")(entities_latin.asInstanceOf[js.Any])
+    if (!js.isUndefined(entities_greek)) __obj.updateDynamic("entities_greek")(entities_greek.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(entities_latin)) __obj.updateDynamic("entities_latin")(entities_latin.get.asInstanceOf[js.Any])
     if (entities_processNumerical != null) __obj.updateDynamic("entities_processNumerical")(entities_processNumerical.asInstanceOf[js.Any])
     if (extraAllowedContent != null) __obj.updateDynamic("extraAllowedContent")(extraAllowedContent.asInstanceOf[js.Any])
     if (extraPlugins != null) __obj.updateDynamic("extraPlugins")(extraPlugins.asInstanceOf[js.Any])
@@ -633,23 +633,23 @@ object config_ {
     if (filebrowserWindowWidth != null) __obj.updateDynamic("filebrowserWindowWidth")(filebrowserWindowWidth.asInstanceOf[js.Any])
     if (fillEmptyBlocks != null) __obj.updateDynamic("fillEmptyBlocks")(fillEmptyBlocks.asInstanceOf[js.Any])
     if (find_highlight != null) __obj.updateDynamic("find_highlight")(find_highlight.asInstanceOf[js.Any])
-    if (!js.isUndefined(flashAddEmbedTag)) __obj.updateDynamic("flashAddEmbedTag")(flashAddEmbedTag.asInstanceOf[js.Any])
-    if (!js.isUndefined(flashConvertOnEdit)) __obj.updateDynamic("flashConvertOnEdit")(flashConvertOnEdit.asInstanceOf[js.Any])
-    if (!js.isUndefined(flashEmbedTagOnly)) __obj.updateDynamic("flashEmbedTagOnly")(flashEmbedTagOnly.asInstanceOf[js.Any])
-    if (floatSpaceDockedOffsetX != null) __obj.updateDynamic("floatSpaceDockedOffsetX")(floatSpaceDockedOffsetX.asInstanceOf[js.Any])
-    if (floatSpaceDockedOffsetY != null) __obj.updateDynamic("floatSpaceDockedOffsetY")(floatSpaceDockedOffsetY.asInstanceOf[js.Any])
-    if (floatSpacePinnedOffsetX != null) __obj.updateDynamic("floatSpacePinnedOffsetX")(floatSpacePinnedOffsetX.asInstanceOf[js.Any])
-    if (floatSpacePinnedOffsetY != null) __obj.updateDynamic("floatSpacePinnedOffsetY")(floatSpacePinnedOffsetY.asInstanceOf[js.Any])
-    if (!js.isUndefined(floatSpacePreferRight)) __obj.updateDynamic("floatSpacePreferRight")(floatSpacePreferRight.asInstanceOf[js.Any])
+    if (!js.isUndefined(flashAddEmbedTag)) __obj.updateDynamic("flashAddEmbedTag")(flashAddEmbedTag.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flashConvertOnEdit)) __obj.updateDynamic("flashConvertOnEdit")(flashConvertOnEdit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flashEmbedTagOnly)) __obj.updateDynamic("flashEmbedTagOnly")(flashEmbedTagOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(floatSpaceDockedOffsetX)) __obj.updateDynamic("floatSpaceDockedOffsetX")(floatSpaceDockedOffsetX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(floatSpaceDockedOffsetY)) __obj.updateDynamic("floatSpaceDockedOffsetY")(floatSpaceDockedOffsetY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(floatSpacePinnedOffsetX)) __obj.updateDynamic("floatSpacePinnedOffsetX")(floatSpacePinnedOffsetX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(floatSpacePinnedOffsetY)) __obj.updateDynamic("floatSpacePinnedOffsetY")(floatSpacePinnedOffsetY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(floatSpacePreferRight)) __obj.updateDynamic("floatSpacePreferRight")(floatSpacePreferRight.get.asInstanceOf[js.Any])
     if (fontSize_defaultLabel != null) __obj.updateDynamic("fontSize_defaultLabel")(fontSize_defaultLabel.asInstanceOf[js.Any])
     if (fontSize_sizes != null) __obj.updateDynamic("fontSize_sizes")(fontSize_sizes.asInstanceOf[js.Any])
     if (fontSize_style != null) __obj.updateDynamic("fontSize_style")(fontSize_style.asInstanceOf[js.Any])
     if (font_defaultLabel != null) __obj.updateDynamic("font_defaultLabel")(font_defaultLabel.asInstanceOf[js.Any])
     if (font_names != null) __obj.updateDynamic("font_names")(font_names.asInstanceOf[js.Any])
     if (font_style != null) __obj.updateDynamic("font_style")(font_style.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceEnterMode)) __obj.updateDynamic("forceEnterMode")(forceEnterMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(forcePasteAsPlainText)) __obj.updateDynamic("forcePasteAsPlainText")(forcePasteAsPlainText.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceSimpleAmpersand)) __obj.updateDynamic("forceSimpleAmpersand")(forceSimpleAmpersand.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceEnterMode)) __obj.updateDynamic("forceEnterMode")(forceEnterMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forcePasteAsPlainText)) __obj.updateDynamic("forcePasteAsPlainText")(forcePasteAsPlainText.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceSimpleAmpersand)) __obj.updateDynamic("forceSimpleAmpersand")(forceSimpleAmpersand.get.asInstanceOf[js.Any])
     if (format_address != null) __obj.updateDynamic("format_address")(format_address.asInstanceOf[js.Any])
     if (format_div != null) __obj.updateDynamic("format_div")(format_div.asInstanceOf[js.Any])
     if (format_h1 != null) __obj.updateDynamic("format_h1")(format_h1.asInstanceOf[js.Any])
@@ -661,68 +661,68 @@ object config_ {
     if (format_p != null) __obj.updateDynamic("format_p")(format_p.asInstanceOf[js.Any])
     if (format_pre != null) __obj.updateDynamic("format_pre")(format_pre.asInstanceOf[js.Any])
     if (format_tags != null) __obj.updateDynamic("format_tags")(format_tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullPage)) __obj.updateDynamic("fullPage")(fullPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(grayt_autoStartup)) __obj.updateDynamic("grayt_autoStartup")(grayt_autoStartup.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullPage)) __obj.updateDynamic("fullPage")(fullPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(grayt_autoStartup)) __obj.updateDynamic("grayt_autoStartup")(grayt_autoStartup.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(htmlEncodeOutput)) __obj.updateDynamic("htmlEncodeOutput")(htmlEncodeOutput.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreEmptyParagraph)) __obj.updateDynamic("ignoreEmptyParagraph")(ignoreEmptyParagraph.asInstanceOf[js.Any])
+    if (!js.isUndefined(htmlEncodeOutput)) __obj.updateDynamic("htmlEncodeOutput")(htmlEncodeOutput.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreEmptyParagraph)) __obj.updateDynamic("ignoreEmptyParagraph")(ignoreEmptyParagraph.get.asInstanceOf[js.Any])
     if (image2_alignClasses != null) __obj.updateDynamic("image2_alignClasses")(image2_alignClasses.asInstanceOf[js.Any])
-    if (!js.isUndefined(image2_altRequired)) __obj.updateDynamic("image2_altRequired")(image2_altRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(image2_altRequired)) __obj.updateDynamic("image2_altRequired")(image2_altRequired.get.asInstanceOf[js.Any])
     if (image2_captionedClass != null) __obj.updateDynamic("image2_captionedClass")(image2_captionedClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(image2_disableResizer)) __obj.updateDynamic("image2_disableResizer")(image2_disableResizer.asInstanceOf[js.Any])
-    if (!js.isUndefined(image2_prefillDimensions)) __obj.updateDynamic("image2_prefillDimensions")(image2_prefillDimensions.asInstanceOf[js.Any])
+    if (!js.isUndefined(image2_disableResizer)) __obj.updateDynamic("image2_disableResizer")(image2_disableResizer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(image2_prefillDimensions)) __obj.updateDynamic("image2_prefillDimensions")(image2_prefillDimensions.get.asInstanceOf[js.Any])
     if (imageUploadUrl != null) __obj.updateDynamic("imageUploadUrl")(imageUploadUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(image_prefillDimensions)) __obj.updateDynamic("image_prefillDimensions")(image_prefillDimensions.asInstanceOf[js.Any])
+    if (!js.isUndefined(image_prefillDimensions)) __obj.updateDynamic("image_prefillDimensions")(image_prefillDimensions.get.asInstanceOf[js.Any])
     if (image_previewText != null) __obj.updateDynamic("image_previewText")(image_previewText.asInstanceOf[js.Any])
-    if (!js.isUndefined(image_removeLinkByEmptyUrl)) __obj.updateDynamic("image_removeLinkByEmptyUrl")(image_removeLinkByEmptyUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(image_removeLinkByEmptyUrl)) __obj.updateDynamic("image_removeLinkByEmptyUrl")(image_removeLinkByEmptyUrl.get.asInstanceOf[js.Any])
     if (indentClasses != null) __obj.updateDynamic("indentClasses")(indentClasses.asInstanceOf[js.Any])
-    if (indentOffset != null) __obj.updateDynamic("indentOffset")(indentOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(indentOffset)) __obj.updateDynamic("indentOffset")(indentOffset.get.asInstanceOf[js.Any])
     if (indentUnit != null) __obj.updateDynamic("indentUnit")(indentUnit.asInstanceOf[js.Any])
-    if (!js.isUndefined(jqueryOverrideVal)) __obj.updateDynamic("jqueryOverrideVal")(jqueryOverrideVal.asInstanceOf[js.Any])
+    if (!js.isUndefined(jqueryOverrideVal)) __obj.updateDynamic("jqueryOverrideVal")(jqueryOverrideVal.get.asInstanceOf[js.Any])
     if (justifyClasses != null) __obj.updateDynamic("justifyClasses")(justifyClasses.asInstanceOf[js.Any])
     if (keystrokes != null) __obj.updateDynamic("keystrokes")(keystrokes.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (language_list != null) __obj.updateDynamic("language_list")(language_list.asInstanceOf[js.Any])
-    if (!js.isUndefined(linkJavaScriptLinksAllowed)) __obj.updateDynamic("linkJavaScriptLinksAllowed")(linkJavaScriptLinksAllowed.asInstanceOf[js.Any])
-    if (!js.isUndefined(linkShowAdvancedTab)) __obj.updateDynamic("linkShowAdvancedTab")(linkShowAdvancedTab.asInstanceOf[js.Any])
-    if (!js.isUndefined(linkShowTargetTab)) __obj.updateDynamic("linkShowTargetTab")(linkShowTargetTab.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkJavaScriptLinksAllowed)) __obj.updateDynamic("linkJavaScriptLinksAllowed")(linkJavaScriptLinksAllowed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkShowAdvancedTab)) __obj.updateDynamic("linkShowAdvancedTab")(linkShowAdvancedTab.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkShowTargetTab)) __obj.updateDynamic("linkShowTargetTab")(linkShowTargetTab.get.asInstanceOf[js.Any])
     if (magicline_color != null) __obj.updateDynamic("magicline_color")(magicline_color.asInstanceOf[js.Any])
-    if (!js.isUndefined(magicline_everywhere)) __obj.updateDynamic("magicline_everywhere")(magicline_everywhere.asInstanceOf[js.Any])
-    if (magicline_holdDistance != null) __obj.updateDynamic("magicline_holdDistance")(magicline_holdDistance.asInstanceOf[js.Any])
-    if (magicline_keystrokeNext != null) __obj.updateDynamic("magicline_keystrokeNext")(magicline_keystrokeNext.asInstanceOf[js.Any])
-    if (magicline_keystrokePrevious != null) __obj.updateDynamic("magicline_keystrokePrevious")(magicline_keystrokePrevious.asInstanceOf[js.Any])
+    if (!js.isUndefined(magicline_everywhere)) __obj.updateDynamic("magicline_everywhere")(magicline_everywhere.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(magicline_holdDistance)) __obj.updateDynamic("magicline_holdDistance")(magicline_holdDistance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(magicline_keystrokeNext)) __obj.updateDynamic("magicline_keystrokeNext")(magicline_keystrokeNext.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(magicline_keystrokePrevious)) __obj.updateDynamic("magicline_keystrokePrevious")(magicline_keystrokePrevious.get.asInstanceOf[js.Any])
     if (magicline_tabuList != null) __obj.updateDynamic("magicline_tabuList")(magicline_tabuList.asInstanceOf[js.Any])
-    if (magicline_triggerOffset != null) __obj.updateDynamic("magicline_triggerOffset")(magicline_triggerOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(magicline_triggerOffset)) __obj.updateDynamic("magicline_triggerOffset")(magicline_triggerOffset.get.asInstanceOf[js.Any])
     if (mathJaxClass != null) __obj.updateDynamic("mathJaxClass")(mathJaxClass.asInstanceOf[js.Any])
     if (mathJaxLib != null) __obj.updateDynamic("mathJaxLib")(mathJaxLib.asInstanceOf[js.Any])
     if (menu_groups != null) __obj.updateDynamic("menu_groups")(menu_groups.asInstanceOf[js.Any])
-    if (menu_subMenuDelay != null) __obj.updateDynamic("menu_subMenuDelay")(menu_subMenuDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(menu_subMenuDelay)) __obj.updateDynamic("menu_subMenuDelay")(menu_subMenuDelay.get.asInstanceOf[js.Any])
     if (newpage_html != null) __obj.updateDynamic("newpage_html")(newpage_html.asInstanceOf[js.Any])
-    if (notification_duration != null) __obj.updateDynamic("notification_duration")(notification_duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(notification_duration)) __obj.updateDynamic("notification_duration")(notification_duration.get.asInstanceOf[js.Any])
     if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
     if (pasteFilter != null) __obj.updateDynamic("pasteFilter")(pasteFilter.asInstanceOf[js.Any])
     if (pasteFromWordCleanupFile != null) __obj.updateDynamic("pasteFromWordCleanupFile")(pasteFromWordCleanupFile.asInstanceOf[js.Any])
-    if (!js.isUndefined(pasteFromWordNumberedHeadingToList)) __obj.updateDynamic("pasteFromWordNumberedHeadingToList")(pasteFromWordNumberedHeadingToList.asInstanceOf[js.Any])
-    if (!js.isUndefined(pasteFromWordPromptCleanup)) __obj.updateDynamic("pasteFromWordPromptCleanup")(pasteFromWordPromptCleanup.asInstanceOf[js.Any])
-    if (!js.isUndefined(pasteFromWordRemoveFontStyles)) __obj.updateDynamic("pasteFromWordRemoveFontStyles")(pasteFromWordRemoveFontStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(pasteFromWordRemoveStyles)) __obj.updateDynamic("pasteFromWordRemoveStyles")(pasteFromWordRemoveStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(pasteFromWord_heuristicsEdgeList)) __obj.updateDynamic("pasteFromWord_heuristicsEdgeList")(pasteFromWord_heuristicsEdgeList.asInstanceOf[js.Any])
-    if (!js.isUndefined(pasteFromWord_inlineImages)) __obj.updateDynamic("pasteFromWord_inlineImages")(pasteFromWord_inlineImages.asInstanceOf[js.Any])
+    if (!js.isUndefined(pasteFromWordNumberedHeadingToList)) __obj.updateDynamic("pasteFromWordNumberedHeadingToList")(pasteFromWordNumberedHeadingToList.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pasteFromWordPromptCleanup)) __obj.updateDynamic("pasteFromWordPromptCleanup")(pasteFromWordPromptCleanup.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pasteFromWordRemoveFontStyles)) __obj.updateDynamic("pasteFromWordRemoveFontStyles")(pasteFromWordRemoveFontStyles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pasteFromWordRemoveStyles)) __obj.updateDynamic("pasteFromWordRemoveStyles")(pasteFromWordRemoveStyles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pasteFromWord_heuristicsEdgeList)) __obj.updateDynamic("pasteFromWord_heuristicsEdgeList")(pasteFromWord_heuristicsEdgeList.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pasteFromWord_inlineImages)) __obj.updateDynamic("pasteFromWord_inlineImages")(pasteFromWord_inlineImages.get.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (protectedSource != null) __obj.updateDynamic("protectedSource")(protectedSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     if (removeButtons != null) __obj.updateDynamic("removeButtons")(removeButtons.asInstanceOf[js.Any])
     if (removeDialogTabs != null) __obj.updateDynamic("removeDialogTabs")(removeDialogTabs.asInstanceOf[js.Any])
     if (removeFormatAttributes != null) __obj.updateDynamic("removeFormatAttributes")(removeFormatAttributes.asInstanceOf[js.Any])
     if (removeFormatTags != null) __obj.updateDynamic("removeFormatTags")(removeFormatTags.asInstanceOf[js.Any])
     if (removePlugins != null) __obj.updateDynamic("removePlugins")(removePlugins.asInstanceOf[js.Any])
     if (resize_dir != null) __obj.updateDynamic("resize_dir")(resize_dir.asInstanceOf[js.Any])
-    if (!js.isUndefined(resize_enabled)) __obj.updateDynamic("resize_enabled")(resize_enabled.asInstanceOf[js.Any])
-    if (resize_maxHeight != null) __obj.updateDynamic("resize_maxHeight")(resize_maxHeight.asInstanceOf[js.Any])
-    if (resize_maxWidth != null) __obj.updateDynamic("resize_maxWidth")(resize_maxWidth.asInstanceOf[js.Any])
-    if (resize_minHeight != null) __obj.updateDynamic("resize_minHeight")(resize_minHeight.asInstanceOf[js.Any])
-    if (resize_minWidth != null) __obj.updateDynamic("resize_minWidth")(resize_minWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(scayt_autoStartup)) __obj.updateDynamic("scayt_autoStartup")(scayt_autoStartup.asInstanceOf[js.Any])
+    if (!js.isUndefined(resize_enabled)) __obj.updateDynamic("resize_enabled")(resize_enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resize_maxHeight)) __obj.updateDynamic("resize_maxHeight")(resize_maxHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resize_maxWidth)) __obj.updateDynamic("resize_maxWidth")(resize_maxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resize_minHeight)) __obj.updateDynamic("resize_minHeight")(resize_minHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resize_minWidth)) __obj.updateDynamic("resize_minWidth")(resize_minWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scayt_autoStartup)) __obj.updateDynamic("scayt_autoStartup")(scayt_autoStartup.get.asInstanceOf[js.Any])
     if (scayt_contextCommands != null) __obj.updateDynamic("scayt_contextCommands")(scayt_contextCommands.asInstanceOf[js.Any])
     if (scayt_contextMenuItemsOrder != null) __obj.updateDynamic("scayt_contextMenuItemsOrder")(scayt_contextMenuItemsOrder.asInstanceOf[js.Any])
     if (scayt_customDictionaryIds != null) __obj.updateDynamic("scayt_customDictionaryIds")(scayt_customDictionaryIds.asInstanceOf[js.Any])
@@ -731,15 +731,15 @@ object config_ {
     if (scayt_elementsToIgnore != null) __obj.updateDynamic("scayt_elementsToIgnore")(scayt_elementsToIgnore.asInstanceOf[js.Any])
     if (scayt_handleCheckDirty != null) __obj.updateDynamic("scayt_handleCheckDirty")(scayt_handleCheckDirty.asInstanceOf[js.Any])
     if (scayt_handleUndoRedo != null) __obj.updateDynamic("scayt_handleUndoRedo")(scayt_handleUndoRedo.asInstanceOf[js.Any])
-    if (!js.isUndefined(scayt_ignoreAllCapsWords)) __obj.updateDynamic("scayt_ignoreAllCapsWords")(scayt_ignoreAllCapsWords.asInstanceOf[js.Any])
-    if (!js.isUndefined(scayt_ignoreDomainNames)) __obj.updateDynamic("scayt_ignoreDomainNames")(scayt_ignoreDomainNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(scayt_ignoreWordsWithMixedCases)) __obj.updateDynamic("scayt_ignoreWordsWithMixedCases")(scayt_ignoreWordsWithMixedCases.asInstanceOf[js.Any])
-    if (!js.isUndefined(scayt_ignoreWordsWithNumbers)) __obj.updateDynamic("scayt_ignoreWordsWithNumbers")(scayt_ignoreWordsWithNumbers.asInstanceOf[js.Any])
-    if (!js.isUndefined(scayt_inlineModeImmediateMarkup)) __obj.updateDynamic("scayt_inlineModeImmediateMarkup")(scayt_inlineModeImmediateMarkup.asInstanceOf[js.Any])
-    if (scayt_maxSuggestions != null) __obj.updateDynamic("scayt_maxSuggestions")(scayt_maxSuggestions.asInstanceOf[js.Any])
-    if (scayt_minWordLength != null) __obj.updateDynamic("scayt_minWordLength")(scayt_minWordLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(scayt_ignoreAllCapsWords)) __obj.updateDynamic("scayt_ignoreAllCapsWords")(scayt_ignoreAllCapsWords.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scayt_ignoreDomainNames)) __obj.updateDynamic("scayt_ignoreDomainNames")(scayt_ignoreDomainNames.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scayt_ignoreWordsWithMixedCases)) __obj.updateDynamic("scayt_ignoreWordsWithMixedCases")(scayt_ignoreWordsWithMixedCases.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scayt_ignoreWordsWithNumbers)) __obj.updateDynamic("scayt_ignoreWordsWithNumbers")(scayt_ignoreWordsWithNumbers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scayt_inlineModeImmediateMarkup)) __obj.updateDynamic("scayt_inlineModeImmediateMarkup")(scayt_inlineModeImmediateMarkup.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scayt_maxSuggestions)) __obj.updateDynamic("scayt_maxSuggestions")(scayt_maxSuggestions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scayt_minWordLength)) __obj.updateDynamic("scayt_minWordLength")(scayt_minWordLength.get.asInstanceOf[js.Any])
     if (scayt_moreSuggestions != null) __obj.updateDynamic("scayt_moreSuggestions")(scayt_moreSuggestions.asInstanceOf[js.Any])
-    if (!js.isUndefined(scayt_multiLanguageMode)) __obj.updateDynamic("scayt_multiLanguageMode")(scayt_multiLanguageMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(scayt_multiLanguageMode)) __obj.updateDynamic("scayt_multiLanguageMode")(scayt_multiLanguageMode.get.asInstanceOf[js.Any])
     if (scayt_multiLanguageStyles != null) __obj.updateDynamic("scayt_multiLanguageStyles")(scayt_multiLanguageStyles.asInstanceOf[js.Any])
     if (scayt_sLang != null) __obj.updateDynamic("scayt_sLang")(scayt_sLang.asInstanceOf[js.Any])
     if (scayt_serviceHost != null) __obj.updateDynamic("scayt_serviceHost")(scayt_serviceHost.asInstanceOf[js.Any])
@@ -750,37 +750,37 @@ object config_ {
     if (scayt_uiTabs != null) __obj.updateDynamic("scayt_uiTabs")(scayt_uiTabs.asInstanceOf[js.Any])
     if (scayt_userDictionaryName != null) __obj.updateDynamic("scayt_userDictionaryName")(scayt_userDictionaryName.asInstanceOf[js.Any])
     if (sharedSpaces != null) __obj.updateDynamic("sharedSpaces")(sharedSpaces.asInstanceOf[js.Any])
-    if (shiftEnterMode != null) __obj.updateDynamic("shiftEnterMode")(shiftEnterMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(shiftEnterMode)) __obj.updateDynamic("shiftEnterMode")(shiftEnterMode.get.asInstanceOf[js.Any])
     if (skin != null) __obj.updateDynamic("skin")(skin.asInstanceOf[js.Any])
-    if (smiley_columns != null) __obj.updateDynamic("smiley_columns")(smiley_columns.asInstanceOf[js.Any])
+    if (!js.isUndefined(smiley_columns)) __obj.updateDynamic("smiley_columns")(smiley_columns.get.asInstanceOf[js.Any])
     if (smiley_descriptions != null) __obj.updateDynamic("smiley_descriptions")(smiley_descriptions.asInstanceOf[js.Any])
     if (smiley_images != null) __obj.updateDynamic("smiley_images")(smiley_images.asInstanceOf[js.Any])
     if (smiley_path != null) __obj.updateDynamic("smiley_path")(smiley_path.asInstanceOf[js.Any])
-    if (sourceAreaTabSize != null) __obj.updateDynamic("sourceAreaTabSize")(sourceAreaTabSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceAreaTabSize)) __obj.updateDynamic("sourceAreaTabSize")(sourceAreaTabSize.get.asInstanceOf[js.Any])
     if (specialChars != null) __obj.updateDynamic("specialChars")(specialChars.asInstanceOf[js.Any])
     if (startupFocus != null) __obj.updateDynamic("startupFocus")(startupFocus.asInstanceOf[js.Any])
     if (startupMode != null) __obj.updateDynamic("startupMode")(startupMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(startupOutlineBlocks)) __obj.updateDynamic("startupOutlineBlocks")(startupOutlineBlocks.asInstanceOf[js.Any])
-    if (!js.isUndefined(startupShowBorders)) __obj.updateDynamic("startupShowBorders")(startupShowBorders.asInstanceOf[js.Any])
+    if (!js.isUndefined(startupOutlineBlocks)) __obj.updateDynamic("startupOutlineBlocks")(startupOutlineBlocks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startupShowBorders)) __obj.updateDynamic("startupShowBorders")(startupShowBorders.get.asInstanceOf[js.Any])
     if (stylesSet != null) __obj.updateDynamic("stylesSet")(stylesSet.asInstanceOf[js.Any])
     if (stylesheetParser_skipSelectors != null) __obj.updateDynamic("stylesheetParser_skipSelectors")(stylesheetParser_skipSelectors.asInstanceOf[js.Any])
     if (stylesheetParser_validSelectors != null) __obj.updateDynamic("stylesheetParser_validSelectors")(stylesheetParser_validSelectors.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (tabSpaces != null) __obj.updateDynamic("tabSpaces")(tabSpaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabSpaces)) __obj.updateDynamic("tabSpaces")(tabSpaces.get.asInstanceOf[js.Any])
     if (templates != null) __obj.updateDynamic("templates")(templates.asInstanceOf[js.Any])
     if (templates_files != null) __obj.updateDynamic("templates_files")(templates_files.asInstanceOf[js.Any])
-    if (!js.isUndefined(templates_replaceContent)) __obj.updateDynamic("templates_replaceContent")(templates_replaceContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(templates_replaceContent)) __obj.updateDynamic("templates_replaceContent")(templates_replaceContent.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(toolbarCanCollapse)) __obj.updateDynamic("toolbarCanCollapse")(toolbarCanCollapse.asInstanceOf[js.Any])
-    if (!js.isUndefined(toolbarGroupCycling)) __obj.updateDynamic("toolbarGroupCycling")(toolbarGroupCycling.asInstanceOf[js.Any])
+    if (!js.isUndefined(toolbar)) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(toolbarCanCollapse)) __obj.updateDynamic("toolbarCanCollapse")(toolbarCanCollapse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(toolbarGroupCycling)) __obj.updateDynamic("toolbarGroupCycling")(toolbarGroupCycling.get.asInstanceOf[js.Any])
     if (toolbarGroups != null) __obj.updateDynamic("toolbarGroups")(toolbarGroups.asInstanceOf[js.Any])
     if (toolbarLocation != null) __obj.updateDynamic("toolbarLocation")(toolbarLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(toolbarStartupExpanded)) __obj.updateDynamic("toolbarStartupExpanded")(toolbarStartupExpanded.asInstanceOf[js.Any])
+    if (!js.isUndefined(toolbarStartupExpanded)) __obj.updateDynamic("toolbarStartupExpanded")(toolbarStartupExpanded.get.asInstanceOf[js.Any])
     if (uiColor != null) __obj.updateDynamic("uiColor")(uiColor.asInstanceOf[js.Any])
-    if (undoStackSize != null) __obj.updateDynamic("undoStackSize")(undoStackSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(undoStackSize)) __obj.updateDynamic("undoStackSize")(undoStackSize.get.asInstanceOf[js.Any])
     if (uploadUrl != null) __obj.updateDynamic("uploadUrl")(uploadUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(useComputedState)) __obj.updateDynamic("useComputedState")(useComputedState.asInstanceOf[js.Any])
+    if (!js.isUndefined(useComputedState)) __obj.updateDynamic("useComputedState")(useComputedState.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (wsc_cmd != null) __obj.updateDynamic("wsc_cmd")(wsc_cmd.asInstanceOf[js.Any])
     if (wsc_customDictionaryIds != null) __obj.updateDynamic("wsc_customDictionaryIds")(wsc_customDictionaryIds.asInstanceOf[js.Any])

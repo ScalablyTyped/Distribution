@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Optimization
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object VariableType extends js.Object {
   
   @js.native
   sealed trait INTEGER extends VariableType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VariableType with Double] = js.native
-  /* 1 */ @js.native
-  object CONTINUOUS extends TopLevel[CONTINUOUS with Double]
-  
-  /* 0 */ @js.native
-  object INTEGER extends TopLevel[INTEGER with Double]
   
 }
 

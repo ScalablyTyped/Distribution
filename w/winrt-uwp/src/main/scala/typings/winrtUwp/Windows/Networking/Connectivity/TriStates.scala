@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.Connectivity
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object TriStates extends js.Object {
   /** The corresponding state is set. */
   @js.native
   sealed trait yes extends TriStates
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TriStates with Double] = js.native
-  /* 0 */ @js.native
-  object doNotCare extends TopLevel[doNotCare with Double]
-  
-  /* 1 */ @js.native
-  object no extends TopLevel[no with Double]
-  
-  /* 2 */ @js.native
-  object yes extends TopLevel[yes with Double]
   
 }
 

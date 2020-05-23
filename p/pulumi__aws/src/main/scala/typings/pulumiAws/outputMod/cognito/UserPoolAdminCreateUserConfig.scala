@@ -28,7 +28,7 @@ object UserPoolAdminCreateUserConfig {
     inviteMessageTemplate: UserPoolAdminCreateUserConfigInviteMessageTemplate = null
   ): UserPoolAdminCreateUserConfig = {
     val __obj = js.Dynamic.literal(unusedAccountValidityDays = unusedAccountValidityDays.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowAdminCreateUserOnly)) __obj.updateDynamic("allowAdminCreateUserOnly")(allowAdminCreateUserOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowAdminCreateUserOnly)) __obj.updateDynamic("allowAdminCreateUserOnly")(allowAdminCreateUserOnly.get.asInstanceOf[js.Any])
     if (inviteMessageTemplate != null) __obj.updateDynamic("inviteMessageTemplate")(inviteMessageTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPoolAdminCreateUserConfig]
   }

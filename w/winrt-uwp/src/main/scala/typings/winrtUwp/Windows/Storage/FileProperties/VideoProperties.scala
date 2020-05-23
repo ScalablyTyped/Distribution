@@ -11,9 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides access to the video-related properties of an item (like a file or folder). */
-@JSGlobal("Windows.Storage.FileProperties.VideoProperties")
 @js.native
-abstract class VideoProperties () extends js.Object {
+trait VideoProperties extends js.Object {
   /** Gets the sum audio and video bitrate of the video. */
   var bitrate: Double = js.native
   /** Gets the directors of the video. */

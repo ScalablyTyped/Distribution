@@ -8,10 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.dialog")
 @js.native
-class dialog_ protected () extends js.Object {
-  def this(editor: editor, dialogName: String) = this()
+trait dialog_ extends js.Object {
   val state: Double = js.native
   def addFocusable(element: element): Unit = js.native
   def addFocusable(element: element, index: Double): Unit = js.native

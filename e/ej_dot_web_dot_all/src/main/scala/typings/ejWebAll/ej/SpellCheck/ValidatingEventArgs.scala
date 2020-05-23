@@ -45,19 +45,19 @@ object ValidatingEventArgs {
     changeableWord: String = null,
     customWord: String = null,
     ignoreWord: String = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     model: Model = null,
     requestType: String = null,
     targetContent: String = null,
     `type`: String = null
   ): ValidatingEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (changeWord != null) __obj.updateDynamic("changeWord")(changeWord.asInstanceOf[js.Any])
     if (changeableWord != null) __obj.updateDynamic("changeableWord")(changeableWord.asInstanceOf[js.Any])
     if (customWord != null) __obj.updateDynamic("customWord")(customWord.asInstanceOf[js.Any])
     if (ignoreWord != null) __obj.updateDynamic("ignoreWord")(ignoreWord.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (requestType != null) __obj.updateDynamic("requestType")(requestType.asInstanceOf[js.Any])
     if (targetContent != null) __obj.updateDynamic("targetContent")(targetContent.asInstanceOf[js.Any])

@@ -62,10 +62,10 @@ object NodesSubProcess {
   ): NodesSubProcess = {
     val __obj = js.Dynamic.literal()
     if (Processes != null) __obj.updateDynamic("Processes")(Processes.asInstanceOf[js.Any])
-    if (!js.isUndefined(adhoc)) __obj.updateDynamic("adhoc")(adhoc.asInstanceOf[js.Any])
+    if (!js.isUndefined(adhoc)) __obj.updateDynamic("adhoc")(adhoc.get.asInstanceOf[js.Any])
     if (boundary != null) __obj.updateDynamic("boundary")(boundary.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
-    if (!js.isUndefined(compensation)) __obj.updateDynamic("compensation")(compensation.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(compensation)) __obj.updateDynamic("compensation")(compensation.get.asInstanceOf[js.Any])
     if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])

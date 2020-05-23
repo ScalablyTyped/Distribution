@@ -14,8 +14,8 @@ trait PlusOauth extends js.Object {
   /**
     * 登录授权认证信息
     * 此对象仅定义标准属性，登录授权认证服务可扩展自定义数据。
-    * 	例如“微信”登录授权服务，则包括以下数据：
-    * 	unionid - 用户统一标识，针对一个微信开放平台帐号下的应用，同一用户的unionid是唯一的。
+    *     例如“微信”登录授权服务，则包括以下数据：
+    *     unionid - 用户统一标识，针对一个微信开放平台帐号下的应用，同一用户的unionid是唯一的。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
@@ -23,9 +23,9 @@ trait PlusOauth extends js.Object {
   /**
     * JSON对象，授权认证参数选项
     * 此对象支持的属性值由登录授权认证服务定义。
-    * 	例如“微信”，则可配置以下参数：
-    * 	scope - 应用授权作用域；
-    * 	state - 用于保持请求和回调的状态参数。
+    *     例如“微信”，则可配置以下参数：
+    *     scope - 应用授权作用域；
+    *     state - 用于保持请求和回调的状态参数。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
@@ -40,10 +40,10 @@ trait PlusOauth extends js.Object {
   /**
     * 登录授权用户信息
     * 用于保存登录授权用户的信息。
-    * 	此对象仅定义标准属性，登录授权认证服务可扩展自定义数据。
-    * 	例如“微信”登录授权服务，可能包括以下自定义数据：
-    * 	privilege - 用户特权信息，json数组，如微信沃卡用户为（chinaunicom）；
-    * 	unionid - 用户统一标识，针对一个微信开放平台帐号下的应用，同一用户的unionid是唯一的。
+    *     此对象仅定义标准属性，登录授权认证服务可扩展自定义数据。
+    *     例如“微信”登录授权服务，可能包括以下自定义数据：
+    *     privilege - 用户特权信息，json数组，如微信沃卡用户为（chinaunicom）；
+    *     unionid - 用户统一标识，针对一个微信开放平台帐号下的应用，同一用户的unionid是唯一的。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */

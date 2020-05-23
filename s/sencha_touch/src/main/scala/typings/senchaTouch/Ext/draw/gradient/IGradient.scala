@@ -12,16 +12,16 @@ trait IGradient extends IIdentifiable {
   /** [Config Option] (Array/Object) */
   var Defines: js.UndefOr[js.Any] = js.undefined
   /** [Method] Generates the gradient for the given context
-  		* @param ctx Ext.draw.engine.SvgContext The context.
-  		* @param bbox Object
-  		* @returns Object
-  		*/
+    * @param ctx Ext.draw.engine.SvgContext The context.
+    * @param bbox Object
+    * @returns Object
+    */
   var generateGradient: js.UndefOr[
     js.Function2[/* ctx */ js.UndefOr[ISvgContext], /* bbox */ js.UndefOr[js.Any], _]
   ] = js.undefined
   /** [Method] Retrieves the id of this component
-  		* @returns String id
-  		*/
+    * @returns String id
+    */
   @JSName("getId")
   var getId_IGradient: js.UndefOr[js.Function0[String]] = js.undefined
 }
@@ -68,7 +68,7 @@ object IGradient {
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGradient]

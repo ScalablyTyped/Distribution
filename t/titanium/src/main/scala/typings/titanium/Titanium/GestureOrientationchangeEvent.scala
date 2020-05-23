@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * Fired when the device orientation changes.
-	 */
+  * Fired when the device orientation changes.
+  */
 trait GestureOrientationchangeEvent extends GestureBaseEvent {
   /**
-  		 * Orientation of the device.
-  		 */
+    * Orientation of the device.
+    */
   var orientation: Double
 }
 

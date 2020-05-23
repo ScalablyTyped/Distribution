@@ -29,12 +29,12 @@ object ElasticsearchSettings {
   def apply(
     EndpointUri: String,
     ServiceAccessRoleArn: String,
-    ErrorRetryDuration: Int | Double = null,
-    FullLoadErrorPercentage: Int | Double = null
+    ErrorRetryDuration: js.UndefOr[IntegerOptional] = js.undefined,
+    FullLoadErrorPercentage: js.UndefOr[IntegerOptional] = js.undefined
   ): ElasticsearchSettings = {
     val __obj = js.Dynamic.literal(EndpointUri = EndpointUri.asInstanceOf[js.Any], ServiceAccessRoleArn = ServiceAccessRoleArn.asInstanceOf[js.Any])
-    if (ErrorRetryDuration != null) __obj.updateDynamic("ErrorRetryDuration")(ErrorRetryDuration.asInstanceOf[js.Any])
-    if (FullLoadErrorPercentage != null) __obj.updateDynamic("FullLoadErrorPercentage")(FullLoadErrorPercentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(ErrorRetryDuration)) __obj.updateDynamic("ErrorRetryDuration")(ErrorRetryDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(FullLoadErrorPercentage)) __obj.updateDynamic("FullLoadErrorPercentage")(FullLoadErrorPercentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElasticsearchSettings]
   }
 }

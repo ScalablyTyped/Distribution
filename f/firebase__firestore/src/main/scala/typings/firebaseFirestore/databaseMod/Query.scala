@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/api/database", "Query")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/api/database", "Query")
 @js.native
 class Query[T] protected ()
   extends typings.firebaseFirestoreTypes.mod.Query[T] {

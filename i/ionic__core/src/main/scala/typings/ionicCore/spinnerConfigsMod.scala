@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/core/dist/types/components/spinner/spinner-configs", JSImport.Namespace)
 @js.native
 object spinnerConfigsMod extends js.Object {
-  /* Rewritten from type alias, can be one of: 
+  /* keyof @ionic/core.anon.Bubbles */ /* Rewritten from type alias, can be one of: 
     - typings.ionicCore.ionicCoreStrings.bubbles
     - typings.ionicCore.ionicCoreStrings.circles
     - typings.ionicCore.ionicCoreStrings.circular

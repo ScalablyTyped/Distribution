@@ -1,6 +1,6 @@
 package typings.openpgp.mod.key
 
-import typings.openpgp.AnonErr
+import typings.openpgp.anon.Err
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ object read extends js.Object {
     * @param data to be parsed
     * @returns result object with key and error arrays
     */
-  def apply(data: Uint8Array): js.Promise[AnonErr] = js.native
+  def apply(data: Uint8Array): js.Promise[Err] = js.native
 }
 

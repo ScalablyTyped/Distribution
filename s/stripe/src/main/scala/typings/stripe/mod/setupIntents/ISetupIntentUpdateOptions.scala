@@ -35,14 +35,14 @@ object ISetupIntentUpdateOptions {
   @scala.inline
   def apply(
     customer: String = null,
-    description: String = null,
+    description: js.UndefOr[Null | String] = js.undefined,
     metadata: IOptionsMetadata = null,
     payment_method: String = null,
     payment_method_types: js.Array[SetupIntentPaymentMethodType] = null
   ): ISetupIntentUpdateOptions = {
     val __obj = js.Dynamic.literal()
     if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
     if (payment_method_types != null) __obj.updateDynamic("payment_method_types")(payment_method_types.asInstanceOf[js.Any])

@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait ITemplate extends IColumn {
   /** [Method] When defined this will take precedence over the renderer config
-  		* @param value Object
-  		* @param meta Object
-  		* @param record Object
-  		*/
+    * @param value Object
+    * @param meta Object
+    * @param record Object
+    */
   @JSName("defaultRenderer")
   var defaultRenderer_ITemplate: js.UndefOr[
     js.Function3[

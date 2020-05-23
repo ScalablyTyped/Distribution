@@ -25,7 +25,7 @@ object errorData {
     details: String,
     fatal: Boolean,
     `type`: String,
-    buffer: Int | Double = null,
+    buffer: js.UndefOr[Double] = js.undefined,
     context: LoaderContext = null,
     frag: Fragment = null,
     levelRetry: js.UndefOr[Boolean] = js.undefined,
@@ -36,10 +36,10 @@ object errorData {
   ): errorData = {
     val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], fatal = fatal.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.get.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (frag != null) __obj.updateDynamic("frag")(frag.asInstanceOf[js.Any])
-    if (!js.isUndefined(levelRetry)) __obj.updateDynamic("levelRetry")(levelRetry.asInstanceOf[js.Any])
+    if (!js.isUndefined(levelRetry)) __obj.updateDynamic("levelRetry")(levelRetry.get.asInstanceOf[js.Any])
     if (loader != null) __obj.updateDynamic("loader")(loader.asInstanceOf[js.Any])
     if (networkDetails != null) __obj.updateDynamic("networkDetails")(networkDetails.asInstanceOf[js.Any])
     if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])

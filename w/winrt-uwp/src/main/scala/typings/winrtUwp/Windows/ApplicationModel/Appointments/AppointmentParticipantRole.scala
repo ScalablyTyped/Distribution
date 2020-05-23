@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object AppointmentParticipantRole extends js.Object {
   /** The item is a resource that is needed at the appointment. */
   @js.native
   sealed trait resource extends AppointmentParticipantRole
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AppointmentParticipantRole with Double] = js.native
-  /* 1 */ @js.native
-  object optionalAttendee extends TopLevel[optionalAttendee with Double]
-  
-  /* 0 */ @js.native
-  object requiredAttendee extends TopLevel[requiredAttendee with Double]
-  
-  /* 2 */ @js.native
-  object resource extends TopLevel[resource with Double]
   
 }
 

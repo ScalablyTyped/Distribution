@@ -1,5 +1,6 @@
 package typings.azureArmResource
 
+import typings.azureArmResource.anon.CustomHeaders
 import typings.azureArmResource.modelsMod.FeatureOperationsListResult
 import typings.azureArmResource.modelsMod.FeatureResult
 import typings.msRest.mod.HttpOperationResponse
@@ -50,11 +51,11 @@ object operationsMod extends js.Object {
       */
     def get(resourceProviderNamespace: String, featureName: String): js.Promise[FeatureResult] = js.native
     def get(resourceProviderNamespace: String, featureName: String, callback: ServiceCallback[FeatureResult]): Unit = js.native
-    def get(resourceProviderNamespace: String, featureName: String, options: AnonCustomHeaders): js.Promise[FeatureResult] = js.native
+    def get(resourceProviderNamespace: String, featureName: String, options: CustomHeaders): js.Promise[FeatureResult] = js.native
     def get(
       resourceProviderNamespace: String,
       featureName: String,
-      options: AnonCustomHeaders,
+      options: CustomHeaders,
       callback: ServiceCallback[FeatureResult]
     ): Unit = js.native
     /**
@@ -77,7 +78,7 @@ object operationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def getWithHttpOperationResponse(resourceProviderNamespace: String, featureName: String): js.Promise[HttpOperationResponse[FeatureResult]] = js.native
-    def getWithHttpOperationResponse(resourceProviderNamespace: String, featureName: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[FeatureResult]] = js.native
+    def getWithHttpOperationResponse(resourceProviderNamespace: String, featureName: String, options: CustomHeaders): js.Promise[HttpOperationResponse[FeatureResult]] = js.native
     /**
       * Gets all the preview features in a provider namespace that are available
       * through AFEC for the subscription.
@@ -115,10 +116,10 @@ object operationsMod extends js.Object {
       */
     def list(resourceProviderNamespace: String): js.Promise[FeatureOperationsListResult] = js.native
     def list(resourceProviderNamespace: String, callback: ServiceCallback[FeatureOperationsListResult]): Unit = js.native
-    def list(resourceProviderNamespace: String, options: AnonCustomHeaders): js.Promise[FeatureOperationsListResult] = js.native
+    def list(resourceProviderNamespace: String, options: CustomHeaders): js.Promise[FeatureOperationsListResult] = js.native
     def list(
       resourceProviderNamespace: String,
-      options: AnonCustomHeaders,
+      options: CustomHeaders,
       callback: ServiceCallback[FeatureOperationsListResult]
     ): Unit = js.native
     /**
@@ -155,8 +156,8 @@ object operationsMod extends js.Object {
       */
     def listAll(): js.Promise[FeatureOperationsListResult] = js.native
     def listAll(callback: ServiceCallback[FeatureOperationsListResult]): Unit = js.native
-    def listAll(options: AnonCustomHeaders): js.Promise[FeatureOperationsListResult] = js.native
-    def listAll(options: AnonCustomHeaders, callback: ServiceCallback[FeatureOperationsListResult]): Unit = js.native
+    def listAll(options: CustomHeaders): js.Promise[FeatureOperationsListResult] = js.native
+    def listAll(options: CustomHeaders, callback: ServiceCallback[FeatureOperationsListResult]): Unit = js.native
     /**
       * Gets all the preview features that are available through AFEC for the
       * subscription.
@@ -194,10 +195,10 @@ object operationsMod extends js.Object {
       */
     def listAllNext(nextPageLink: String): js.Promise[FeatureOperationsListResult] = js.native
     def listAllNext(nextPageLink: String, callback: ServiceCallback[FeatureOperationsListResult]): Unit = js.native
-    def listAllNext(nextPageLink: String, options: AnonCustomHeaders): js.Promise[FeatureOperationsListResult] = js.native
+    def listAllNext(nextPageLink: String, options: CustomHeaders): js.Promise[FeatureOperationsListResult] = js.native
     def listAllNext(
       nextPageLink: String,
-      options: AnonCustomHeaders,
+      options: CustomHeaders,
       callback: ServiceCallback[FeatureOperationsListResult]
     ): Unit = js.native
     /**
@@ -219,7 +220,7 @@ object operationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listAllNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[FeatureOperationsListResult]] = js.native
-    def listAllNextWithHttpOperationResponse(nextPageLink: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[FeatureOperationsListResult]] = js.native
+    def listAllNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[FeatureOperationsListResult]] = js.native
     /**
       * Gets all the preview features that are available through AFEC for the
       * subscription.
@@ -236,7 +237,7 @@ object operationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listAllWithHttpOperationResponse(): js.Promise[HttpOperationResponse[FeatureOperationsListResult]] = js.native
-    def listAllWithHttpOperationResponse(options: AnonCustomHeaders): js.Promise[HttpOperationResponse[FeatureOperationsListResult]] = js.native
+    def listAllWithHttpOperationResponse(options: CustomHeaders): js.Promise[HttpOperationResponse[FeatureOperationsListResult]] = js.native
     /**
       * Gets all the preview features in a provider namespace that are available
       * through AFEC for the subscription.
@@ -274,10 +275,10 @@ object operationsMod extends js.Object {
       */
     def listNext(nextPageLink: String): js.Promise[FeatureOperationsListResult] = js.native
     def listNext(nextPageLink: String, callback: ServiceCallback[FeatureOperationsListResult]): Unit = js.native
-    def listNext(nextPageLink: String, options: AnonCustomHeaders): js.Promise[FeatureOperationsListResult] = js.native
+    def listNext(nextPageLink: String, options: CustomHeaders): js.Promise[FeatureOperationsListResult] = js.native
     def listNext(
       nextPageLink: String,
-      options: AnonCustomHeaders,
+      options: CustomHeaders,
       callback: ServiceCallback[FeatureOperationsListResult]
     ): Unit = js.native
     /**
@@ -299,7 +300,7 @@ object operationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[FeatureOperationsListResult]] = js.native
-    def listNextWithHttpOperationResponse(nextPageLink: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[FeatureOperationsListResult]] = js.native
+    def listNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[FeatureOperationsListResult]] = js.native
     /**
       * Gets all the preview features in a provider namespace that are available
       * through AFEC for the subscription.
@@ -319,7 +320,7 @@ object operationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listWithHttpOperationResponse(resourceProviderNamespace: String): js.Promise[HttpOperationResponse[FeatureOperationsListResult]] = js.native
-    def listWithHttpOperationResponse(resourceProviderNamespace: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[FeatureOperationsListResult]] = js.native
+    def listWithHttpOperationResponse(resourceProviderNamespace: String, options: CustomHeaders): js.Promise[HttpOperationResponse[FeatureOperationsListResult]] = js.native
     /**
       * Registers the preview feature for the subscription.
       *
@@ -357,11 +358,11 @@ object operationsMod extends js.Object {
       */
     def register(resourceProviderNamespace: String, featureName: String): js.Promise[FeatureResult] = js.native
     def register(resourceProviderNamespace: String, featureName: String, callback: ServiceCallback[FeatureResult]): Unit = js.native
-    def register(resourceProviderNamespace: String, featureName: String, options: AnonCustomHeaders): js.Promise[FeatureResult] = js.native
+    def register(resourceProviderNamespace: String, featureName: String, options: CustomHeaders): js.Promise[FeatureResult] = js.native
     def register(
       resourceProviderNamespace: String,
       featureName: String,
-      options: AnonCustomHeaders,
+      options: CustomHeaders,
       callback: ServiceCallback[FeatureResult]
     ): Unit = js.native
     /**
@@ -384,7 +385,7 @@ object operationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def registerWithHttpOperationResponse(resourceProviderNamespace: String, featureName: String): js.Promise[HttpOperationResponse[FeatureResult]] = js.native
-    def registerWithHttpOperationResponse(resourceProviderNamespace: String, featureName: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[FeatureResult]] = js.native
+    def registerWithHttpOperationResponse(resourceProviderNamespace: String, featureName: String, options: CustomHeaders): js.Promise[HttpOperationResponse[FeatureResult]] = js.native
   }
   
 }

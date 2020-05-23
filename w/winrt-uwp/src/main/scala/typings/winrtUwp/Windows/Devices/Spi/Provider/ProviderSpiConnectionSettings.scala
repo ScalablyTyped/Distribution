@@ -4,13 +4,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Devices.Spi.Provider.ProviderSpiConnectionSettings")
-@js.native
-abstract class ProviderSpiConnectionSettings () extends js.Object {
-  var chipSelectLine: js.Any = js.native
-   /* unmapped type */ var clockFrequency: js.Any = js.native
-   /* unmapped type */ var dataBitLength: js.Any = js.native
-   /* unmapped type */ var mode: js.Any = js.native
-   /* unmapped type */ var sharingMode: js.Any = js.native
+trait ProviderSpiConnectionSettings extends js.Object {
+  var chipSelectLine: js.Any
+   /* unmapped type */ var clockFrequency: js.Any
+   /* unmapped type */ var dataBitLength: js.Any
+   /* unmapped type */ var mode: js.Any
+   /* unmapped type */ var sharingMode: js.Any
+}
+
+object ProviderSpiConnectionSettings {
+  @scala.inline
+  def apply(
+    chipSelectLine: js.Any,
+    clockFrequency: js.Any,
+    dataBitLength: js.Any,
+    mode: js.Any,
+    sharingMode: js.Any
+  ): ProviderSpiConnectionSettings = {
+    val __obj = js.Dynamic.literal(chipSelectLine = chipSelectLine.asInstanceOf[js.Any], clockFrequency = clockFrequency.asInstanceOf[js.Any], dataBitLength = dataBitLength.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], sharingMode = sharingMode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ProviderSpiConnectionSettings]
+  }
 }
 

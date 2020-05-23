@@ -17,7 +17,7 @@ trait BatchResponse extends js.Object {
   /**
     * An array of responses, each corresponding to a message.
     */
-  var responses: js.Array[SendResponse]
+  var responses: js.Array[typings.firebaseAdmin.messagingMod.admin.messaging.SendResponse]
   /**
     * The number of messages that were successfully handed off for sending.
     */
@@ -26,7 +26,11 @@ trait BatchResponse extends js.Object {
 
 object BatchResponse {
   @scala.inline
-  def apply(failureCount: Double, responses: js.Array[SendResponse], successCount: Double): BatchResponse = {
+  def apply(
+    failureCount: Double,
+    responses: js.Array[typings.firebaseAdmin.messagingMod.admin.messaging.SendResponse],
+    successCount: Double
+  ): BatchResponse = {
     val __obj = js.Dynamic.literal(failureCount = failureCount.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any], successCount = successCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchResponse]
   }

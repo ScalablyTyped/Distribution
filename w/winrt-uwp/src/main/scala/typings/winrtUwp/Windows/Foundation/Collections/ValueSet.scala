@@ -8,10 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Implements a map with keys of type String and values of type Object . This class prevents non-serializable types from being put into the map. */
-@JSGlobal("Windows.Foundation.Collections.ValueSet")
 @js.native
-/** Creates and initializes a new instance of the property set. */
-class ValueSet () extends js.Object {
+trait ValueSet extends js.Object {
   /** Occurs when the observable map has changed. */
   @JSName("onmapchanged")
   var onmapchanged_Original: MapChangedEventHandler[String, _] = js.native

@@ -68,8 +68,8 @@ object DBEngineVersion {
     ExportableLogTypes: LogTypeList = null,
     SupportedCharacterSets: SupportedCharacterSetsList = null,
     SupportedTimezones: SupportedTimezonesList = null,
-    SupportsLogExportsToCloudwatchLogs: js.UndefOr[scala.Boolean] = js.undefined,
-    SupportsReadReplica: js.UndefOr[scala.Boolean] = js.undefined,
+    SupportsLogExportsToCloudwatchLogs: js.UndefOr[Boolean] = js.undefined,
+    SupportsReadReplica: js.UndefOr[Boolean] = js.undefined,
     ValidUpgradeTarget: ValidUpgradeTargetList = null
   ): DBEngineVersion = {
     val __obj = js.Dynamic.literal()
@@ -82,8 +82,8 @@ object DBEngineVersion {
     if (ExportableLogTypes != null) __obj.updateDynamic("ExportableLogTypes")(ExportableLogTypes.asInstanceOf[js.Any])
     if (SupportedCharacterSets != null) __obj.updateDynamic("SupportedCharacterSets")(SupportedCharacterSets.asInstanceOf[js.Any])
     if (SupportedTimezones != null) __obj.updateDynamic("SupportedTimezones")(SupportedTimezones.asInstanceOf[js.Any])
-    if (!js.isUndefined(SupportsLogExportsToCloudwatchLogs)) __obj.updateDynamic("SupportsLogExportsToCloudwatchLogs")(SupportsLogExportsToCloudwatchLogs.asInstanceOf[js.Any])
-    if (!js.isUndefined(SupportsReadReplica)) __obj.updateDynamic("SupportsReadReplica")(SupportsReadReplica.asInstanceOf[js.Any])
+    if (!js.isUndefined(SupportsLogExportsToCloudwatchLogs)) __obj.updateDynamic("SupportsLogExportsToCloudwatchLogs")(SupportsLogExportsToCloudwatchLogs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SupportsReadReplica)) __obj.updateDynamic("SupportsReadReplica")(SupportsReadReplica.get.asInstanceOf[js.Any])
     if (ValidUpgradeTarget != null) __obj.updateDynamic("ValidUpgradeTarget")(ValidUpgradeTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBEngineVersion]
   }

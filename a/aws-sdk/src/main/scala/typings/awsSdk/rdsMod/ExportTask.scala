@@ -76,7 +76,7 @@ object ExportTask {
     FailureCause: String = null,
     IamRoleArn: String = null,
     KmsKeyId: String = null,
-    PercentProgress: Int | scala.Double = null,
+    PercentProgress: js.UndefOr[Integer] = js.undefined,
     S3Bucket: String = null,
     S3Prefix: String = null,
     SnapshotTime: TStamp = null,
@@ -84,7 +84,7 @@ object ExportTask {
     Status: String = null,
     TaskEndTime: TStamp = null,
     TaskStartTime: TStamp = null,
-    TotalExtractedDataInGB: Int | scala.Double = null,
+    TotalExtractedDataInGB: js.UndefOr[Integer] = js.undefined,
     WarningMessage: String = null
   ): ExportTask = {
     val __obj = js.Dynamic.literal()
@@ -93,7 +93,7 @@ object ExportTask {
     if (FailureCause != null) __obj.updateDynamic("FailureCause")(FailureCause.asInstanceOf[js.Any])
     if (IamRoleArn != null) __obj.updateDynamic("IamRoleArn")(IamRoleArn.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (PercentProgress != null) __obj.updateDynamic("PercentProgress")(PercentProgress.asInstanceOf[js.Any])
+    if (!js.isUndefined(PercentProgress)) __obj.updateDynamic("PercentProgress")(PercentProgress.get.asInstanceOf[js.Any])
     if (S3Bucket != null) __obj.updateDynamic("S3Bucket")(S3Bucket.asInstanceOf[js.Any])
     if (S3Prefix != null) __obj.updateDynamic("S3Prefix")(S3Prefix.asInstanceOf[js.Any])
     if (SnapshotTime != null) __obj.updateDynamic("SnapshotTime")(SnapshotTime.asInstanceOf[js.Any])
@@ -101,7 +101,7 @@ object ExportTask {
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (TaskEndTime != null) __obj.updateDynamic("TaskEndTime")(TaskEndTime.asInstanceOf[js.Any])
     if (TaskStartTime != null) __obj.updateDynamic("TaskStartTime")(TaskStartTime.asInstanceOf[js.Any])
-    if (TotalExtractedDataInGB != null) __obj.updateDynamic("TotalExtractedDataInGB")(TotalExtractedDataInGB.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalExtractedDataInGB)) __obj.updateDynamic("TotalExtractedDataInGB")(TotalExtractedDataInGB.get.asInstanceOf[js.Any])
     if (WarningMessage != null) __obj.updateDynamic("WarningMessage")(WarningMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportTask]
   }

@@ -1,5 +1,6 @@
 package typings.antdMobileRn
 
+import typings.antdMobileRn.anon.ColorString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,8 +10,8 @@ import scala.scalajs.js.annotation._
 object sliderStyleIndexNativeMod extends js.Object {
   @js.native
   object default extends js.Object {
-    var maximum: AnonColorString = js.native
-    var minimum: AnonColorString = js.native
+    var maximum: ColorString = js.native
+    var minimum: ColorString = js.native
   }
   
 }

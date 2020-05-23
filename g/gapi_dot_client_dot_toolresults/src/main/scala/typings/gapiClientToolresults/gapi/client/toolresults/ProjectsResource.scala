@@ -1,7 +1,7 @@
 package typings.gapiClientToolresults.gapi.client.toolresults
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientToolresults.AnonAltFields
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientToolresults.anon.AltFields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait ProjectsResource extends js.Object {
     *
     * - PERMISSION_DENIED - if the user is not authorized to read from project
     */
-  def getSettings(request: AnonAltFields): Request_[ProjectSettings]
+  def getSettings(request: AltFields): Request[ProjectSettings]
   /**
     * Creates resources for settings which have not yet been set.
     *
@@ -35,15 +35,15 @@ trait ProjectsResource extends js.Object {
     *
     * - PERMISSION_DENIED - if the user is not authorized to write to project - Any error code raised by Google Cloud Storage
     */
-  def initializeSettings(request: AnonAltFields): Request_[ProjectSettings]
+  def initializeSettings(request: AltFields): Request[ProjectSettings]
 }
 
 object ProjectsResource {
   @scala.inline
   def apply(
-    getSettings: AnonAltFields => Request_[ProjectSettings],
+    getSettings: AltFields => Request[ProjectSettings],
     histories: HistoriesResource,
-    initializeSettings: AnonAltFields => Request_[ProjectSettings]
+    initializeSettings: AltFields => Request[ProjectSettings]
   ): ProjectsResource = {
     val __obj = js.Dynamic.literal(getSettings = js.Any.fromFunction1(getSettings), histories = histories.asInstanceOf[js.Any], initializeSettings = js.Any.fromFunction1(initializeSettings))
     __obj.asInstanceOf[ProjectsResource]

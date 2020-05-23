@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side equivalent of the ASPxSpreadsheet object.
   */
-@JSGlobal("ASPxClientSpreadsheet")
 @js.native
-class ASPxClientSpreadsheet () extends ASPxClientControl {
+trait ASPxClientSpreadsheet extends ASPxClientControl {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -165,16 +164,5 @@ class ASPxClientSpreadsheet () extends ASPxClientControl {
     * @param mode A value specifying the control's view mode.
     */
   def SetViewMode(mode: ASPxClientSpreadsheetViewMode): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientSpreadsheet")
-@js.native
-object ASPxClientSpreadsheet extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientSpreadsheet type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientSpreadsheet = js.native
 }
 

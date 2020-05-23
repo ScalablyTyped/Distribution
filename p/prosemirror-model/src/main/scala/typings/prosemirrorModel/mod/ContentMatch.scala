@@ -1,6 +1,6 @@
 package typings.prosemirrorModel.mod
 
-import typings.prosemirrorModel.AnonNext
+import typings.prosemirrorModel.anon.Next
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ class ContentMatch[S /* <: Schema[_, _] */] () extends js.Object {
     * Get the _n_th outgoing edge from this node in the finite automaton
     * that describes the content expression.
     */
-  def edge(n: Double): AnonNext = js.native
+  def edge(n: Double): Next = js.native
   /**
     * Try to match the given fragment, and if that fails, see if it can
     * be made to match by inserting nodes in front of it. When

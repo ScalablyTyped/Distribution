@@ -33,8 +33,7 @@ object Camera {
     _useMultiviewToSingleView: Boolean,
     _multiviewTexture: Nullable[RenderTargetTexture] = null
   ): Camera = {
-    val __obj = js.Dynamic.literal(_resizeOrCreateMultiviewTexture = js.Any.fromFunction2(_resizeOrCreateMultiviewTexture), _useMultiviewToSingleView = _useMultiviewToSingleView.asInstanceOf[js.Any])
-    if (_multiviewTexture != null) __obj.updateDynamic("_multiviewTexture")(_multiviewTexture.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_resizeOrCreateMultiviewTexture = js.Any.fromFunction2(_resizeOrCreateMultiviewTexture), _useMultiviewToSingleView = _useMultiviewToSingleView.asInstanceOf[js.Any], _multiviewTexture = _multiviewTexture.asInstanceOf[js.Any])
     __obj.asInstanceOf[Camera]
   }
 }

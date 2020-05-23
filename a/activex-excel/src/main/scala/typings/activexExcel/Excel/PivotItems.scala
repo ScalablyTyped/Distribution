@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.PivotItems")
 @js.native
-class PivotItems protected () extends js.Object {
+trait PivotItems extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   val Count: Double = js.native
   val Creator: XlCreator = js.native

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("dayjs/plugin/relativeTime", JSImport.Namespace)
 @js.native
-object ^ extends TopLevel[PluginFunc]
+object ^ extends TopLevel[PluginFunc[RelativeTimeOptions]]
 

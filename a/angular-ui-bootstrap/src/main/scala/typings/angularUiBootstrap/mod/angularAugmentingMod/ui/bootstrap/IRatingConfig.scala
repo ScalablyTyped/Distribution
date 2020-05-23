@@ -34,13 +34,13 @@ trait IRatingConfig extends js.Object {
 object IRatingConfig {
   @scala.inline
   def apply(
-    max: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
     stateOff: String = null,
     stateOn: String = null,
     titles: js.Array[String] = null
   ): IRatingConfig = {
     val __obj = js.Dynamic.literal()
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
     if (stateOff != null) __obj.updateDynamic("stateOff")(stateOff.asInstanceOf[js.Any])
     if (stateOn != null) __obj.updateDynamic("stateOn")(stateOn.asInstanceOf[js.Any])
     if (titles != null) __obj.updateDynamic("titles")(titles.asInstanceOf[js.Any])

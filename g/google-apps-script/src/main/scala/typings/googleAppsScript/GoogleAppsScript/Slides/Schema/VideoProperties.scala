@@ -16,17 +16,17 @@ object VideoProperties {
   @scala.inline
   def apply(
     autoPlay: js.UndefOr[Boolean] = js.undefined,
-    end: Int | Double = null,
+    end: js.UndefOr[Double] = js.undefined,
     mute: js.UndefOr[Boolean] = js.undefined,
     outline: Outline = null,
-    start: Int | Double = null
+    start: js.UndefOr[Double] = js.undefined
   ): VideoProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (!js.isUndefined(mute)) __obj.updateDynamic("mute")(mute.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mute)) __obj.updateDynamic("mute")(mute.get.asInstanceOf[js.Any])
     if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoProperties]
   }
 }

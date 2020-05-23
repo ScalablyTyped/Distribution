@@ -11,9 +11,9 @@ trait ChannelGroupCopy extends js.Object {
 
 object ChannelGroupCopy {
   @scala.inline
-  def apply(cgid: Int | Double = null): ChannelGroupCopy = {
+  def apply(cgid: js.UndefOr[Double] = js.undefined): ChannelGroupCopy = {
     val __obj = js.Dynamic.literal()
-    if (cgid != null) __obj.updateDynamic("cgid")(cgid.asInstanceOf[js.Any])
+    if (!js.isUndefined(cgid)) __obj.updateDynamic("cgid")(cgid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelGroupCopy]
   }
 }

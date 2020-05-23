@@ -12,7 +12,7 @@ object IfNotExistsOption {
   @scala.inline
   def apply(ifNotExists: js.UndefOr[Boolean] = js.undefined): IfNotExistsOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ifNotExists)) __obj.updateDynamic("ifNotExists")(ifNotExists.asInstanceOf[js.Any])
+    if (!js.isUndefined(ifNotExists)) __obj.updateDynamic("ifNotExists")(ifNotExists.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IfNotExistsOption]
   }
 }

@@ -43,24 +43,24 @@ object TinySliderInfo {
     slideItems: HTMLCollection,
     controlsContainer: js.UndefOr[Boolean] = js.undefined,
     navContainer: HTMLElement = null,
-    navCurrentIndex: Int | Double = null,
-    navCurrentIndexCached: Int | Double = null,
+    navCurrentIndex: js.UndefOr[Double] = js.undefined,
+    navCurrentIndexCached: js.UndefOr[Double] = js.undefined,
     navItems: HTMLCollection = null,
     nextButton: HTMLElement = null,
     prevButton: HTMLElement = null,
-    visibleNavIndexes: Int | Double = null,
-    visibleNavIndexesCached: Int | Double = null
+    visibleNavIndexes: js.UndefOr[Double] = js.undefined,
+    visibleNavIndexesCached: js.UndefOr[Double] = js.undefined
   ): TinySliderInfo = {
     val __obj = js.Dynamic.literal(cloneCount = cloneCount.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], hasControls = hasControls.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], indexCached = indexCached.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], slideBy = slideBy.asInstanceOf[js.Any], slideCount = slideCount.asInstanceOf[js.Any], slideCountNew = slideCountNew.asInstanceOf[js.Any], slideItems = slideItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(controlsContainer)) __obj.updateDynamic("controlsContainer")(controlsContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(controlsContainer)) __obj.updateDynamic("controlsContainer")(controlsContainer.get.asInstanceOf[js.Any])
     if (navContainer != null) __obj.updateDynamic("navContainer")(navContainer.asInstanceOf[js.Any])
-    if (navCurrentIndex != null) __obj.updateDynamic("navCurrentIndex")(navCurrentIndex.asInstanceOf[js.Any])
-    if (navCurrentIndexCached != null) __obj.updateDynamic("navCurrentIndexCached")(navCurrentIndexCached.asInstanceOf[js.Any])
+    if (!js.isUndefined(navCurrentIndex)) __obj.updateDynamic("navCurrentIndex")(navCurrentIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(navCurrentIndexCached)) __obj.updateDynamic("navCurrentIndexCached")(navCurrentIndexCached.get.asInstanceOf[js.Any])
     if (navItems != null) __obj.updateDynamic("navItems")(navItems.asInstanceOf[js.Any])
     if (nextButton != null) __obj.updateDynamic("nextButton")(nextButton.asInstanceOf[js.Any])
     if (prevButton != null) __obj.updateDynamic("prevButton")(prevButton.asInstanceOf[js.Any])
-    if (visibleNavIndexes != null) __obj.updateDynamic("visibleNavIndexes")(visibleNavIndexes.asInstanceOf[js.Any])
-    if (visibleNavIndexesCached != null) __obj.updateDynamic("visibleNavIndexesCached")(visibleNavIndexesCached.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibleNavIndexes)) __obj.updateDynamic("visibleNavIndexes")(visibleNavIndexes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibleNavIndexesCached)) __obj.updateDynamic("visibleNavIndexesCached")(visibleNavIndexesCached.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TinySliderInfo]
   }
 }

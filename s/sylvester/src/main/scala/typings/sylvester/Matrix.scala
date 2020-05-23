@@ -1,7 +1,5 @@
 package typings.sylvester
 
-import org.scalablytyped.runtime.TopLevel
-import typings.sylvester.Sylvester.MatrixStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -204,8 +202,4 @@ trait Matrix extends js.Object {
   def x(matrix: Matrix): Matrix = js.native
   def x(vector: Vector): Vector = js.native
 }
-
-@JSGlobal("Matrix")
-@js.native
-object Matrix extends TopLevel[MatrixStatic]
 

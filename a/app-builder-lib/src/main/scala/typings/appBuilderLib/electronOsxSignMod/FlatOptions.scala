@@ -25,7 +25,7 @@ object FlatOptions {
   ): FlatOptions = {
     val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any])
     if (identity != null) __obj.updateDynamic("identity")(identity.asInstanceOf[js.Any])
-    if (!js.isUndefined(`identity-validation`)) __obj.updateDynamic("identity-validation")(`identity-validation`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`identity-validation`)) __obj.updateDynamic("identity-validation")(`identity-validation`.get.asInstanceOf[js.Any])
     if (install != null) __obj.updateDynamic("install")(install.asInstanceOf[js.Any])
     if (keychain != null) __obj.updateDynamic("keychain")(keychain.asInstanceOf[js.Any])
     if (pkg != null) __obj.updateDynamic("pkg")(pkg.asInstanceOf[js.Any])

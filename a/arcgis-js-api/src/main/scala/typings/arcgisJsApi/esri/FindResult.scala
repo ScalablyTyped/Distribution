@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,8 +45,4 @@ trait FindResult
     */
   var value: String = js.native
 }
-
-@JSGlobal("__esri.FindResult")
-@js.native
-object FindResult extends TopLevel[FindResultConstructor]
 

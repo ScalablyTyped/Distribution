@@ -63,4 +63,5 @@ package object mod {
     java.lang.String
   ])
   type WeekdaySimpleFn = js.Function1[/* momentToFormat */ typings.moment.mod.Moment, java.lang.String]
+  type numberlike = scala.Double | java.lang.String
 }

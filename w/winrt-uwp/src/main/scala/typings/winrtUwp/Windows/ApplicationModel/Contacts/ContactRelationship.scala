@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,26 +34,6 @@ object ContactRelationship extends js.Object {
   /** Spouse */
   @js.native
   sealed trait spouse extends ContactRelationship
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ContactRelationship with Double] = js.native
-  /* 5 */ @js.native
-  object child extends TopLevel[child with Double]
-  
-  /* 0 */ @js.native
-  object other extends TopLevel[other with Double]
-  
-  /* 4 */ @js.native
-  object parent extends TopLevel[parent with Double]
-  
-  /* 2 */ @js.native
-  object partner extends TopLevel[partner with Double]
-  
-  /* 3 */ @js.native
-  object sibling extends TopLevel[sibling with Double]
-  
-  /* 1 */ @js.native
-  object spouse extends TopLevel[spouse with Double]
   
 }
 

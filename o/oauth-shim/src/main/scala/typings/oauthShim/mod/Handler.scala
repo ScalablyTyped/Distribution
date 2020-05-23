@@ -5,7 +5,7 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import typings.expressServeStaticCore.mod.RequestHandler
 import typings.expressServeStaticCore.mod.Response
-import typings.oauthShim.AnonGet
+import typings.oauthShim.anon.Get
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Handler
   extends RequestHandler[ParamsDictionary, js.Any, js.Any, Query] {
-  var credentials: AnonGet = js.native
+  var credentials: Get = js.native
   @JSName("interpret")
   var interpret_Original: typings.express.mod.RequestHandler[ParamsDictionary, _, _, Query] = js.native
   @JSName("proxy")

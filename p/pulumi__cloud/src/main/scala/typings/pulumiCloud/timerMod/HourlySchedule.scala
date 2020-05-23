@@ -13,9 +13,9 @@ trait HourlySchedule extends js.Object {
 
 object HourlySchedule {
   @scala.inline
-  def apply(minuteUTC: Int | Double = null): HourlySchedule = {
+  def apply(minuteUTC: js.UndefOr[Double] = js.undefined): HourlySchedule = {
     val __obj = js.Dynamic.literal()
-    if (minuteUTC != null) __obj.updateDynamic("minuteUTC")(minuteUTC.asInstanceOf[js.Any])
+    if (!js.isUndefined(minuteUTC)) __obj.updateDynamic("minuteUTC")(minuteUTC.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HourlySchedule]
   }
 }

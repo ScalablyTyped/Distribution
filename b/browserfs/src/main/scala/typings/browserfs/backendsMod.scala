@@ -1,5 +1,19 @@
 package typings.browserfs
 
+import typings.browserfs.anon.TypeofAsyncMirror
+import typings.browserfs.anon.TypeofDropbox
+import typings.browserfs.anon.TypeofEmscripten
+import typings.browserfs.anon.TypeofFolderAdapter
+import typings.browserfs.anon.TypeofHTML5FS
+import typings.browserfs.anon.TypeofInMemory
+import typings.browserfs.anon.TypeofIndexedDB
+import typings.browserfs.anon.TypeofIsoFS
+import typings.browserfs.anon.TypeofLocalStorage
+import typings.browserfs.anon.TypeofMountableFileSystem
+import typings.browserfs.anon.TypeofOverlayFS
+import typings.browserfs.anon.TypeofWorkerFS
+import typings.browserfs.anon.TypeofXmlHttpRequest
+import typings.browserfs.anon.TypeofZipFS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

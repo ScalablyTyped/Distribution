@@ -12,10 +12,10 @@ trait LineValue extends js.Object {
 
 object LineValue {
   @scala.inline
-  def apply(y: Double, marker: String = null, x: Int | Double = null): LineValue = {
+  def apply(y: Double, marker: String = null, x: js.UndefOr[Double] = js.undefined): LineValue = {
     val __obj = js.Dynamic.literal(y = y.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineValue]
   }
 }

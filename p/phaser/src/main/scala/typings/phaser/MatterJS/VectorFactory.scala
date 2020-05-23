@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MatterJS.VectorFactory")
 @js.native
-class VectorFactory () extends js.Object {
+trait VectorFactory extends js.Object {
   /**
     * Adds the two vectors.
     * @method add

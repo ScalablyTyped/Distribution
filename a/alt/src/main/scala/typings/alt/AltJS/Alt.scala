@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AltJS.Alt")
 @js.native
-class Alt () extends js.Object {
-  def this(config: AltConfig) = this()
+trait Alt extends js.Object {
   var actions: Actions = js.native
   //Actions methods
   def addActions(actionsName: String, ActionsClass: ActionsClassConstructor): Unit = js.native

@@ -1,9 +1,9 @@
 package typings.echarts.echarts.EChartOption.SeriesSankey
 
-import typings.echarts.AnonBorderType
-import typings.echarts.AnonDistance
-import typings.echarts.AnonExtraCssText
-import typings.echarts.AnonItemStyleAnonBorderTypeLabelAnonDistance
+import typings.echarts.anon.BorderType
+import typings.echarts.anon.Distance
+import typings.echarts.anon.ExtraCssText
+import typings.echarts.anon.ItemStyleBorderTypeLabelDistance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,21 +12,21 @@ trait DataObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-sankey.data.emphasis
     */
-  var emphasis: js.UndefOr[AnonItemStyleAnonBorderTypeLabelAnonDistance] = js.undefined
+  var emphasis: js.UndefOr[ItemStyleBorderTypeLabelDistance] = js.undefined
   /**
     * The style of this node.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-sankey.data.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
+  var itemStyle: js.UndefOr[BorderType] = js.undefined
   /**
     * The lable style of this node.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-sankey.data.label
     */
-  var label: js.UndefOr[AnonDistance] = js.undefined
+  var label: js.UndefOr[Distance] = js.undefined
   /**
     * The name of data item.
     *
@@ -40,7 +40,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sankey.data.tooltip
     */
-  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
   /**
     * The value of data item.
     *
@@ -53,11 +53,11 @@ trait DataObject extends js.Object {
 object DataObject {
   @scala.inline
   def apply(
-    emphasis: AnonItemStyleAnonBorderTypeLabelAnonDistance = null,
-    itemStyle: AnonBorderType = null,
-    label: AnonDistance = null,
+    emphasis: ItemStyleBorderTypeLabelDistance = null,
+    itemStyle: BorderType = null,
+    label: Distance = null,
     name: String = null,
-    tooltip: AnonExtraCssText = null,
+    tooltip: ExtraCssText = null,
     value: js.Array[_] | Double = null
   ): DataObject = {
     val __obj = js.Dynamic.literal()

@@ -1,7 +1,7 @@
 package typings.materialLineRipple
 
 import typings.materialLineRipple.adapterMod.MDCLineRippleAdapter
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ object foundationMod extends js.Object {
     /**
       * Handles a transition end event
       */
-    def handleTransitionEnd(evt: Event_): Unit = js.native
+    def handleTransitionEnd(evt: Event): Unit = js.native
     /**
       * Sets the center of the ripple animation to the given X coordinate.
       */

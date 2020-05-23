@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Security.ExchangeActiveSyncProvisioning
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object EasEncryptionProviderType extends js.Object {
   /** The encryption provider is a Windows provider. */
   @js.native
   sealed trait windowsEncryption extends EasEncryptionProviderType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EasEncryptionProviderType with Double] = js.native
-  /* 0 */ @js.native
-  object notEvaluated extends TopLevel[notEvaluated with Double]
-  
-  /* 2 */ @js.native
-  object otherEncryption extends TopLevel[otherEncryption with Double]
-  
-  /* 1 */ @js.native
-  object windowsEncryption extends TopLevel[windowsEncryption with Double]
   
 }
 

@@ -1,6 +1,7 @@
 package typings.awsSdkSsecMiddleware
 
 import org.scalablytyped.runtime.TopLevel
+import typings.awsSdkSsecMiddleware.anon.Instantiable
 import typings.awsSdkTypes.middlewareMod.Middleware
 import typings.awsSdkTypes.utilMod.Decoder
 import typings.awsSdkTypes.utilMod.Encoder
@@ -16,7 +17,7 @@ object mod extends js.Object {
   trait SsecMiddlewareConfiguration[Input /* <: js.Object */] extends js.Object {
     @JSName("base64Encoder")
     var base64Encoder_Original: Encoder = js.native
-    var hashConstructor: AnonInstantiable = js.native
+    var hashConstructor: Instantiable = js.native
     var ssecProperties: SsecPropertiesConfiguration[Input] = js.native
     @JSName("utf8Decoder")
     var utf8Decoder_Original: Decoder = js.native

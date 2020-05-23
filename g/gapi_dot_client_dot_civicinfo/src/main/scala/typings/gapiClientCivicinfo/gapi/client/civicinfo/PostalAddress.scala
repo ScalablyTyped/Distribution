@@ -88,7 +88,7 @@ object PostalAddress {
     if (dependentThoroughfaresIndicator != null) __obj.updateDynamic("dependentThoroughfaresIndicator")(dependentThoroughfaresIndicator.asInstanceOf[js.Any])
     if (dependentThoroughfaresType != null) __obj.updateDynamic("dependentThoroughfaresType")(dependentThoroughfaresType.asInstanceOf[js.Any])
     if (firmName != null) __obj.updateDynamic("firmName")(firmName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDisputed)) __obj.updateDynamic("isDisputed")(isDisputed.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDisputed)) __obj.updateDynamic("isDisputed")(isDisputed.get.asInstanceOf[js.Any])
     if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
     if (localityName != null) __obj.updateDynamic("localityName")(localityName.asInstanceOf[js.Any])
     if (postBoxNumber != null) __obj.updateDynamic("postBoxNumber")(postBoxNumber.asInstanceOf[js.Any])

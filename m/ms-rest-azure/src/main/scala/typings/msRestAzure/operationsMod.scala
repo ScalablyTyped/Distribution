@@ -2,6 +2,7 @@ package typings.msRestAzure
 
 import typings.msRest.mod.HttpOperationResponse
 import typings.msRest.mod.ServiceCallback
+import typings.msRestAzure.anon.CustomHeaders
 import typings.msRestAzure.modelsMod.LocationListResult
 import typings.msRestAzure.modelsMod.Subscription
 import typings.msRestAzure.modelsMod.SubscriptionListResult
@@ -49,8 +50,8 @@ object operationsMod extends js.Object {
       */
     def get(subscriptionId: String): js.Promise[Subscription] = js.native
     def get(subscriptionId: String, callback: ServiceCallback[Subscription]): Unit = js.native
-    def get(subscriptionId: String, options: AnonCustomHeaders): js.Promise[Subscription] = js.native
-    def get(subscriptionId: String, options: AnonCustomHeaders, callback: ServiceCallback[Subscription]): Unit = js.native
+    def get(subscriptionId: String, options: CustomHeaders): js.Promise[Subscription] = js.native
+    def get(subscriptionId: String, options: CustomHeaders, callback: ServiceCallback[Subscription]): Unit = js.native
     /**
       * Gets details about a specified subscription.
       *
@@ -68,7 +69,7 @@ object operationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def getWithHttpOperationResponse(subscriptionId: String): js.Promise[HttpOperationResponse[Subscription]] = js.native
-    def getWithHttpOperationResponse(subscriptionId: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[Subscription]] = js.native
+    def getWithHttpOperationResponse(subscriptionId: String, options: CustomHeaders): js.Promise[HttpOperationResponse[Subscription]] = js.native
     /**
       * Gets all subscriptions for a tenant.
       *
@@ -102,8 +103,8 @@ object operationsMod extends js.Object {
       */
     def list(): js.Promise[SubscriptionListResult] = js.native
     def list(callback: ServiceCallback[SubscriptionListResult]): Unit = js.native
-    def list(options: AnonCustomHeaders): js.Promise[SubscriptionListResult] = js.native
-    def list(options: AnonCustomHeaders, callback: ServiceCallback[SubscriptionListResult]): Unit = js.native
+    def list(options: CustomHeaders): js.Promise[SubscriptionListResult] = js.native
+    def list(options: CustomHeaders, callback: ServiceCallback[SubscriptionListResult]): Unit = js.native
     /**
       * @summary Gets all available geo-locations.
       *
@@ -142,8 +143,8 @@ object operationsMod extends js.Object {
       */
     def listLocations(subscriptionId: String): js.Promise[LocationListResult] = js.native
     def listLocations(subscriptionId: String, callback: ServiceCallback[LocationListResult]): Unit = js.native
-    def listLocations(subscriptionId: String, options: AnonCustomHeaders): js.Promise[LocationListResult] = js.native
-    def listLocations(subscriptionId: String, options: AnonCustomHeaders, callback: ServiceCallback[LocationListResult]): Unit = js.native
+    def listLocations(subscriptionId: String, options: CustomHeaders): js.Promise[LocationListResult] = js.native
+    def listLocations(subscriptionId: String, options: CustomHeaders, callback: ServiceCallback[LocationListResult]): Unit = js.native
     /**
       * @summary Gets all available geo-locations.
       *
@@ -165,7 +166,7 @@ object operationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listLocationsWithHttpOperationResponse(subscriptionId: String): js.Promise[HttpOperationResponse[LocationListResult]] = js.native
-    def listLocationsWithHttpOperationResponse(subscriptionId: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[LocationListResult]] = js.native
+    def listLocationsWithHttpOperationResponse(subscriptionId: String, options: CustomHeaders): js.Promise[HttpOperationResponse[LocationListResult]] = js.native
     /**
       * Gets all subscriptions for a tenant.
       *
@@ -202,12 +203,8 @@ object operationsMod extends js.Object {
       */
     def listNext(nextPageLink: String): js.Promise[SubscriptionListResult] = js.native
     def listNext(nextPageLink: String, callback: ServiceCallback[SubscriptionListResult]): Unit = js.native
-    def listNext(nextPageLink: String, options: AnonCustomHeaders): js.Promise[SubscriptionListResult] = js.native
-    def listNext(
-      nextPageLink: String,
-      options: AnonCustomHeaders,
-      callback: ServiceCallback[SubscriptionListResult]
-    ): Unit = js.native
+    def listNext(nextPageLink: String, options: CustomHeaders): js.Promise[SubscriptionListResult] = js.native
+    def listNext(nextPageLink: String, options: CustomHeaders, callback: ServiceCallback[SubscriptionListResult]): Unit = js.native
     /**
       * Gets all subscriptions for a tenant.
       *
@@ -226,7 +223,7 @@ object operationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[SubscriptionListResult]] = js.native
-    def listNextWithHttpOperationResponse(nextPageLink: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[SubscriptionListResult]] = js.native
+    def listNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[SubscriptionListResult]] = js.native
     /**
       * Gets all subscriptions for a tenant.
       *
@@ -242,7 +239,7 @@ object operationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listWithHttpOperationResponse(): js.Promise[HttpOperationResponse[SubscriptionListResult]] = js.native
-    def listWithHttpOperationResponse(options: AnonCustomHeaders): js.Promise[HttpOperationResponse[SubscriptionListResult]] = js.native
+    def listWithHttpOperationResponse(options: CustomHeaders): js.Promise[HttpOperationResponse[SubscriptionListResult]] = js.native
   }
   
   @js.native
@@ -279,8 +276,8 @@ object operationsMod extends js.Object {
       */
     def list(): js.Promise[TenantListResult] = js.native
     def list(callback: ServiceCallback[TenantListResult]): Unit = js.native
-    def list(options: AnonCustomHeaders): js.Promise[TenantListResult] = js.native
-    def list(options: AnonCustomHeaders, callback: ServiceCallback[TenantListResult]): Unit = js.native
+    def list(options: CustomHeaders): js.Promise[TenantListResult] = js.native
+    def list(options: CustomHeaders, callback: ServiceCallback[TenantListResult]): Unit = js.native
     /**
       * Gets the tenants for your account.
       *
@@ -316,8 +313,8 @@ object operationsMod extends js.Object {
       */
     def listNext(nextPageLink: String): js.Promise[TenantListResult] = js.native
     def listNext(nextPageLink: String, callback: ServiceCallback[TenantListResult]): Unit = js.native
-    def listNext(nextPageLink: String, options: AnonCustomHeaders): js.Promise[TenantListResult] = js.native
-    def listNext(nextPageLink: String, options: AnonCustomHeaders, callback: ServiceCallback[TenantListResult]): Unit = js.native
+    def listNext(nextPageLink: String, options: CustomHeaders): js.Promise[TenantListResult] = js.native
+    def listNext(nextPageLink: String, options: CustomHeaders, callback: ServiceCallback[TenantListResult]): Unit = js.native
     /**
       * Gets the tenants for your account.
       *
@@ -336,7 +333,7 @@ object operationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[TenantListResult]] = js.native
-    def listNextWithHttpOperationResponse(nextPageLink: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[TenantListResult]] = js.native
+    def listNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[TenantListResult]] = js.native
     /**
       * Gets the tenants for your account.
       *
@@ -352,7 +349,7 @@ object operationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listWithHttpOperationResponse(): js.Promise[HttpOperationResponse[TenantListResult]] = js.native
-    def listWithHttpOperationResponse(options: AnonCustomHeaders): js.Promise[HttpOperationResponse[TenantListResult]] = js.native
+    def listWithHttpOperationResponse(options: CustomHeaders): js.Promise[HttpOperationResponse[TenantListResult]] = js.native
   }
   
 }

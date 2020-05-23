@@ -23,7 +23,7 @@ object Palette {
   @scala.inline
   def apply(expanded: js.UndefOr[Boolean] = js.undefined, items: js.Array[_] = null, name: String = null): Palette = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
+    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.get.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Palette]

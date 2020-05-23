@@ -53,7 +53,7 @@ object EventSubscription {
   def apply(
     CustSubscriptionId: String = null,
     CustomerAwsId: String = null,
-    Enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    Enabled: js.UndefOr[Boolean] = js.undefined,
     EventCategoriesList: EventCategoriesList = null,
     EventSubscriptionArn: String = null,
     SnsTopicArn: String = null,
@@ -65,7 +65,7 @@ object EventSubscription {
     val __obj = js.Dynamic.literal()
     if (CustSubscriptionId != null) __obj.updateDynamic("CustSubscriptionId")(CustSubscriptionId.asInstanceOf[js.Any])
     if (CustomerAwsId != null) __obj.updateDynamic("CustomerAwsId")(CustomerAwsId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     if (EventCategoriesList != null) __obj.updateDynamic("EventCategoriesList")(EventCategoriesList.asInstanceOf[js.Any])
     if (EventSubscriptionArn != null) __obj.updateDynamic("EventSubscriptionArn")(EventSubscriptionArn.asInstanceOf[js.Any])
     if (SnsTopicArn != null) __obj.updateDynamic("SnsTopicArn")(SnsTopicArn.asInstanceOf[js.Any])

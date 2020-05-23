@@ -17,13 +17,13 @@ object RTCSrtpSdesParameters {
     cryptoSuite: java.lang.String = null,
     keyParams: js.Array[RTCSrtpKeyParam] = null,
     sessionParams: js.Array[java.lang.String] = null,
-    tag: Int | Double = null
+    tag: js.UndefOr[Double] = js.undefined
   ): RTCSrtpSdesParameters = {
     val __obj = js.Dynamic.literal()
     if (cryptoSuite != null) __obj.updateDynamic("cryptoSuite")(cryptoSuite.asInstanceOf[js.Any])
     if (keyParams != null) __obj.updateDynamic("keyParams")(keyParams.asInstanceOf[js.Any])
     if (sessionParams != null) __obj.updateDynamic("sessionParams")(sessionParams.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (!js.isUndefined(tag)) __obj.updateDynamic("tag")(tag.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCSrtpSdesParameters]
   }
 }

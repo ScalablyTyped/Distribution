@@ -7,20 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.model.odata.ODataMetaModel")
 @js.native
-class ODataMetaModel protected () extends MetaModel {
-  /**
-    * DO NOT CALL this private constructor for a new <code>ODataMetaModel</code>,but rather use {@link
-    * sap.ui.model.odata.ODataModel#getMetaModel getMetaModel} instead!
-    * @param oMetadata the OData model's meta data object
-    * @param oAnnotations the OData model's annotations object
-    * @param oODataModelInterface the private interface object of the OData model which provides friend
-    * access to  selected methods
-    */
-  def this(oMetadata: ODataMetadata) = this()
-  def this(oMetadata: ODataMetadata, oAnnotations: ODataAnnotations) = this()
-  def this(oMetadata: ODataMetadata, oAnnotations: ODataAnnotations, oODataModelInterface: js.Any) = this()
+trait ODataMetaModel extends MetaModel {
   /**
     * Returns the OData meta model context corresponding to the given OData model path.
     * @param sPath an absolute path pointing to an entity or property, e.g. 

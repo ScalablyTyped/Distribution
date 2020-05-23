@@ -9,9 +9,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapMenu")
 @js.native
-class BootstrapMenu () extends Control {
+trait BootstrapMenu extends Control {
   def getItem(index: Double): BootstrapMenuItem | Null = js.native
   def getItemByName(name: String): BootstrapMenuItem | Null = js.native
   def getItemCount(): Double = js.native

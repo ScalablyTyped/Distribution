@@ -21,11 +21,15 @@ trait LayersSubLayersShapeSettingsColorMappingsRangeColorMapping extends js.Obje
 
 object LayersSubLayersShapeSettingsColorMappingsRangeColorMapping {
   @scala.inline
-  def apply(from: Int | Double = null, gradientColors: js.Array[_] = null, to: Int | Double = null): LayersSubLayersShapeSettingsColorMappingsRangeColorMapping = {
+  def apply(
+    from: js.UndefOr[Double] = js.undefined,
+    gradientColors: js.Array[_] = null,
+    to: js.UndefOr[Double] = js.undefined
+  ): LayersSubLayersShapeSettingsColorMappingsRangeColorMapping = {
     val __obj = js.Dynamic.literal()
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
     if (gradientColors != null) __obj.updateDynamic("gradientColors")(gradientColors.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayersSubLayersShapeSettingsColorMappingsRangeColorMapping]
   }
 }

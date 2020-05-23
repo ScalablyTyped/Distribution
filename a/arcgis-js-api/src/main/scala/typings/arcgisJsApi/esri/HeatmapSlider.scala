@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`thumb-change`
 import typings.arcgisJsApi.arcgisJsApiStrings.`thumb-drag`
@@ -27,8 +26,4 @@ trait HeatmapSlider extends Widget_ {
   @JSName("on")
   def on_thumbdrag(name: `thumb-drag`, eventHandler: HeatmapSliderThumbDragEventHandler): IHandle = js.native
 }
-
-@JSGlobal("__esri.HeatmapSlider")
-@js.native
-object HeatmapSlider extends TopLevel[HeatmapSliderConstructor]
 

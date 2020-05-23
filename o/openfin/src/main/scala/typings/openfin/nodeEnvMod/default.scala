@@ -3,7 +3,7 @@ package typings.openfin.nodeEnvMod
 import typings.openfin.frameFrameMod.EntityType
 import typings.openfin.identityMod.Identity
 import typings.openfin.wireMod.NewConnectConfig
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,9 +24,11 @@ class default () extends NodeEnvironment {
   /* CompleteClass */
   override def getRandomId(): String = js.native
   /* CompleteClass */
-  override def getWebWindow(identity: Identity): Window_ = js.native
+  override def getWebWindow(identity: Identity): Window = js.native
   /* CompleteClass */
   override def isWindowExists(uuid: String, name: String): Boolean = js.native
+  /* CompleteClass */
+  override def raiseEvent(eventName: String, eventArgs: js.Any): Unit = js.native
   /* CompleteClass */
   override def retrievePort(config: NewConnectConfig): js.Promise[Double] = js.native
   /* CompleteClass */

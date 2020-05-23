@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AccountDetail extends js.Object {
   /**
-    * Member account ID.
+    * The member account ID.
     */
   var AccountId: typings.awsSdk.guarddutyMod.AccountId = js.native
   /**
-    * Member account's email address.
+    * The email address of the member account.
     */
   var Email: typings.awsSdk.guarddutyMod.Email = js.native
 }

@@ -26,14 +26,14 @@ object SnackbarComponentProps {
     accentColor: String = null,
     actionHandler: () => Unit = null,
     actionText: String = null,
-    autoHidingTime: Int | Double = null,
+    autoHidingTime: js.UndefOr[Double] = js.undefined,
     backgroundColor: String = null,
-    bottom: Int | Double = null,
+    bottom: js.UndefOr[Double] = js.undefined,
     distanceCallback: () => Unit = null,
-    left: Int | Double = null,
+    left: js.UndefOr[Double] = js.undefined,
     messageColor: String = null,
     position: String = null,
-    right: Int | Double = null,
+    right: js.UndefOr[Double] = js.undefined,
     textMessage: String = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): SnackbarComponentProps = {
@@ -41,16 +41,16 @@ object SnackbarComponentProps {
     if (accentColor != null) __obj.updateDynamic("accentColor")(accentColor.asInstanceOf[js.Any])
     if (actionHandler != null) __obj.updateDynamic("actionHandler")(js.Any.fromFunction0(actionHandler))
     if (actionText != null) __obj.updateDynamic("actionText")(actionText.asInstanceOf[js.Any])
-    if (autoHidingTime != null) __obj.updateDynamic("autoHidingTime")(autoHidingTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHidingTime)) __obj.updateDynamic("autoHidingTime")(autoHidingTime.get.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (!js.isUndefined(bottom)) __obj.updateDynamic("bottom")(bottom.get.asInstanceOf[js.Any])
     if (distanceCallback != null) __obj.updateDynamic("distanceCallback")(js.Any.fromFunction0(distanceCallback))
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
     if (messageColor != null) __obj.updateDynamic("messageColor")(messageColor.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (!js.isUndefined(right)) __obj.updateDynamic("right")(right.get.asInstanceOf[js.Any])
     if (textMessage != null) __obj.updateDynamic("textMessage")(textMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnackbarComponentProps]
   }
 }

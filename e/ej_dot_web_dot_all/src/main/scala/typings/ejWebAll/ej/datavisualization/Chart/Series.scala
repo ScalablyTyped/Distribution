@@ -294,34 +294,34 @@ object Series {
     boxPlotMode: LabelPosition | String = null,
     bubbleOptions: SeriesBubbleOptions = null,
     bullFillColor: String = null,
-    cardinalSplineTension: Int | Double = null,
+    cardinalSplineTension: js.UndefOr[Double] = js.undefined,
     close: String = null,
     columnFacet: ColumnFacet | String = null,
-    columnSpacing: Int | Double = null,
-    columnWidth: Int | Double = null,
+    columnSpacing: js.UndefOr[Double] = js.undefined,
+    columnWidth: js.UndefOr[Double] = js.undefined,
     connectorLine: SeriesConnectorLine = null,
     cornerRadius: SeriesCornerRadius = null,
     dashArray: String = null,
     dataSource: js.Any = null,
-    doughnutCoefficient: Int | Double = null,
-    doughnutSize: Int | Double = null,
+    doughnutCoefficient: js.UndefOr[Double] = js.undefined,
+    doughnutSize: js.UndefOr[Double] = js.undefined,
     dragSettings: SeriesDragSettings = null,
     drawType: DrawType | String = null,
     emptyPointSettings: SeriesEmptyPointSettings = null,
     enableAnimation: js.UndefOr[Boolean] = js.undefined,
-    enableSmartLabels: Int | Double = null,
-    endAngle: Int | Double = null,
+    enableSmartLabels: js.UndefOr[Double] = js.undefined,
+    endAngle: js.UndefOr[Double] = js.undefined,
     errorBar: SeriesErrorBar = null,
     explode: js.UndefOr[Boolean] = js.undefined,
     explodeAll: js.UndefOr[Boolean] = js.undefined,
-    explodeIndex: Int | Double = null,
-    explodeOffset: Int | Double = null,
+    explodeIndex: js.UndefOr[Double] = js.undefined,
+    explodeOffset: js.UndefOr[Double] = js.undefined,
     fill: String = null,
     font: SeriesFont = null,
     funnelHeight: String = null,
     funnelWidth: String = null,
-    gapRatio: Int | Double = null,
-    gapWidth: Int | Double = null,
+    gapRatio: js.UndefOr[Double] = js.undefined,
+    gapWidth: js.UndefOr[Double] = js.undefined,
     high: String = null,
     highlightSettings: SeriesHighlightSettings = null,
     isClosed: js.UndefOr[Boolean] = js.undefined,
@@ -333,12 +333,12 @@ object Series {
     low: String = null,
     marker: SeriesMarker = null,
     name: String = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     open: String = null,
     outlierSettings: SeriesOutlierSettings = null,
     palette: String = null,
-    pieCoefficient: Int | Double = null,
-    pieOfPieCoefficient: Int | Double = null,
+    pieCoefficient: js.UndefOr[Double] = js.undefined,
+    pieOfPieCoefficient: js.UndefOr[Double] = js.undefined,
     pointColorMappingName: String = null,
     points: js.Array[SeriesPoint] = null,
     positiveFill: String = null,
@@ -351,7 +351,7 @@ object Series {
     splitMode: SplitMode | String = null,
     splitValue: String = null,
     stackingGroup: String = null,
-    startAngle: Int | Double = null,
+    startAngle: js.UndefOr[Double] = js.undefined,
     tooltip: SeriesTooltip = null,
     trendlines: js.Array[SeriesTrendline] = null,
     `type`: Type | String = null,
@@ -361,7 +361,7 @@ object Series {
     xName: String = null,
     yAxisName: String = null,
     yName: String = null,
-    zOrder: Int | Double = null
+    zOrder: js.UndefOr[Double] = js.undefined
   ): Series = {
     val __obj = js.Dynamic.literal()
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
@@ -370,64 +370,64 @@ object Series {
     if (boxPlotMode != null) __obj.updateDynamic("boxPlotMode")(boxPlotMode.asInstanceOf[js.Any])
     if (bubbleOptions != null) __obj.updateDynamic("bubbleOptions")(bubbleOptions.asInstanceOf[js.Any])
     if (bullFillColor != null) __obj.updateDynamic("bullFillColor")(bullFillColor.asInstanceOf[js.Any])
-    if (cardinalSplineTension != null) __obj.updateDynamic("cardinalSplineTension")(cardinalSplineTension.asInstanceOf[js.Any])
+    if (!js.isUndefined(cardinalSplineTension)) __obj.updateDynamic("cardinalSplineTension")(cardinalSplineTension.get.asInstanceOf[js.Any])
     if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
     if (columnFacet != null) __obj.updateDynamic("columnFacet")(columnFacet.asInstanceOf[js.Any])
-    if (columnSpacing != null) __obj.updateDynamic("columnSpacing")(columnSpacing.asInstanceOf[js.Any])
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnSpacing)) __obj.updateDynamic("columnSpacing")(columnSpacing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnWidth)) __obj.updateDynamic("columnWidth")(columnWidth.get.asInstanceOf[js.Any])
     if (connectorLine != null) __obj.updateDynamic("connectorLine")(connectorLine.asInstanceOf[js.Any])
     if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
     if (dashArray != null) __obj.updateDynamic("dashArray")(dashArray.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (doughnutCoefficient != null) __obj.updateDynamic("doughnutCoefficient")(doughnutCoefficient.asInstanceOf[js.Any])
-    if (doughnutSize != null) __obj.updateDynamic("doughnutSize")(doughnutSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(doughnutCoefficient)) __obj.updateDynamic("doughnutCoefficient")(doughnutCoefficient.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(doughnutSize)) __obj.updateDynamic("doughnutSize")(doughnutSize.get.asInstanceOf[js.Any])
     if (dragSettings != null) __obj.updateDynamic("dragSettings")(dragSettings.asInstanceOf[js.Any])
     if (drawType != null) __obj.updateDynamic("drawType")(drawType.asInstanceOf[js.Any])
     if (emptyPointSettings != null) __obj.updateDynamic("emptyPointSettings")(emptyPointSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.asInstanceOf[js.Any])
-    if (enableSmartLabels != null) __obj.updateDynamic("enableSmartLabels")(enableSmartLabels.asInstanceOf[js.Any])
-    if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSmartLabels)) __obj.updateDynamic("enableSmartLabels")(enableSmartLabels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endAngle)) __obj.updateDynamic("endAngle")(endAngle.get.asInstanceOf[js.Any])
     if (errorBar != null) __obj.updateDynamic("errorBar")(errorBar.asInstanceOf[js.Any])
-    if (!js.isUndefined(explode)) __obj.updateDynamic("explode")(explode.asInstanceOf[js.Any])
-    if (!js.isUndefined(explodeAll)) __obj.updateDynamic("explodeAll")(explodeAll.asInstanceOf[js.Any])
-    if (explodeIndex != null) __obj.updateDynamic("explodeIndex")(explodeIndex.asInstanceOf[js.Any])
-    if (explodeOffset != null) __obj.updateDynamic("explodeOffset")(explodeOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(explode)) __obj.updateDynamic("explode")(explode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(explodeAll)) __obj.updateDynamic("explodeAll")(explodeAll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(explodeIndex)) __obj.updateDynamic("explodeIndex")(explodeIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(explodeOffset)) __obj.updateDynamic("explodeOffset")(explodeOffset.get.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (funnelHeight != null) __obj.updateDynamic("funnelHeight")(funnelHeight.asInstanceOf[js.Any])
     if (funnelWidth != null) __obj.updateDynamic("funnelWidth")(funnelWidth.asInstanceOf[js.Any])
-    if (gapRatio != null) __obj.updateDynamic("gapRatio")(gapRatio.asInstanceOf[js.Any])
-    if (gapWidth != null) __obj.updateDynamic("gapWidth")(gapWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(gapRatio)) __obj.updateDynamic("gapRatio")(gapRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gapWidth)) __obj.updateDynamic("gapWidth")(gapWidth.get.asInstanceOf[js.Any])
     if (high != null) __obj.updateDynamic("high")(high.asInstanceOf[js.Any])
     if (highlightSettings != null) __obj.updateDynamic("highlightSettings")(highlightSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(isClosed)) __obj.updateDynamic("isClosed")(isClosed.asInstanceOf[js.Any])
-    if (!js.isUndefined(isStacking)) __obj.updateDynamic("isStacking")(isStacking.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTransposed)) __obj.updateDynamic("isTransposed")(isTransposed.asInstanceOf[js.Any])
+    if (!js.isUndefined(isClosed)) __obj.updateDynamic("isClosed")(isClosed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isStacking)) __obj.updateDynamic("isStacking")(isStacking.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTransposed)) __obj.updateDynamic("isTransposed")(isTransposed.get.asInstanceOf[js.Any])
     if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
     if (lineCap != null) __obj.updateDynamic("lineCap")(lineCap.asInstanceOf[js.Any])
     if (lineJoin != null) __obj.updateDynamic("lineJoin")(lineJoin.asInstanceOf[js.Any])
     if (low != null) __obj.updateDynamic("low")(low.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
     if (outlierSettings != null) __obj.updateDynamic("outlierSettings")(outlierSettings.asInstanceOf[js.Any])
     if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
-    if (pieCoefficient != null) __obj.updateDynamic("pieCoefficient")(pieCoefficient.asInstanceOf[js.Any])
-    if (pieOfPieCoefficient != null) __obj.updateDynamic("pieOfPieCoefficient")(pieOfPieCoefficient.asInstanceOf[js.Any])
+    if (!js.isUndefined(pieCoefficient)) __obj.updateDynamic("pieCoefficient")(pieCoefficient.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pieOfPieCoefficient)) __obj.updateDynamic("pieOfPieCoefficient")(pieOfPieCoefficient.get.asInstanceOf[js.Any])
     if (pointColorMappingName != null) __obj.updateDynamic("pointColorMappingName")(pointColorMappingName.asInstanceOf[js.Any])
     if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
     if (positiveFill != null) __obj.updateDynamic("positiveFill")(positiveFill.asInstanceOf[js.Any])
     if (pyramidMode != null) __obj.updateDynamic("pyramidMode")(pyramidMode.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (selectionSettings != null) __obj.updateDynamic("selectionSettings")(selectionSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMedian)) __obj.updateDynamic("showMedian")(showMedian.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMedian)) __obj.updateDynamic("showMedian")(showMedian.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (splineType != null) __obj.updateDynamic("splineType")(splineType.asInstanceOf[js.Any])
     if (splitMode != null) __obj.updateDynamic("splitMode")(splitMode.asInstanceOf[js.Any])
     if (splitValue != null) __obj.updateDynamic("splitValue")(splitValue.asInstanceOf[js.Any])
     if (stackingGroup != null) __obj.updateDynamic("stackingGroup")(stackingGroup.asInstanceOf[js.Any])
-    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(startAngle)) __obj.updateDynamic("startAngle")(startAngle.get.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (trendlines != null) __obj.updateDynamic("trendlines")(trendlines.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -437,7 +437,7 @@ object Series {
     if (xName != null) __obj.updateDynamic("xName")(xName.asInstanceOf[js.Any])
     if (yAxisName != null) __obj.updateDynamic("yAxisName")(yAxisName.asInstanceOf[js.Any])
     if (yName != null) __obj.updateDynamic("yName")(yName.asInstanceOf[js.Any])
-    if (zOrder != null) __obj.updateDynamic("zOrder")(zOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(zOrder)) __obj.updateDynamic("zOrder")(zOrder.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Series]
   }
 }

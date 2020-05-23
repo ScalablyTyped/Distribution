@@ -17,11 +17,15 @@ trait IBatchCreateEntitiesRequest extends js.Object {
 
 object IBatchCreateEntitiesRequest {
   @scala.inline
-  def apply(entities: js.Array[IEntity] = null, languageCode: String = null, parent: String = null): IBatchCreateEntitiesRequest = {
+  def apply(
+    entities: js.UndefOr[Null | js.Array[IEntity]] = js.undefined,
+    languageCode: js.UndefOr[Null | String] = js.undefined,
+    parent: js.UndefOr[Null | String] = js.undefined
+  ): IBatchCreateEntitiesRequest = {
     val __obj = js.Dynamic.literal()
-    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(entities)) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
+    if (!js.isUndefined(languageCode)) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBatchCreateEntitiesRequest]
   }
 }

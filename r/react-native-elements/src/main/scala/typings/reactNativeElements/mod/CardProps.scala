@@ -6,7 +6,7 @@ import typings.reactNative.mod.ImageStyle
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.PartialImageProps
+import typings.reactNativeElements.anon.PartialImageProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -72,34 +72,34 @@ trait CardProps extends js.Object {
 object CardProps {
   @scala.inline
   def apply(
-    containerStyle: StyleProp[ViewStyle] = null,
-    dividerStyle: StyleProp[ViewStyle] = null,
+    containerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    dividerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     featuredSubtitle: String = null,
-    featuredSubtitleStyle: StyleProp[TextStyle] = null,
+    featuredSubtitleStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
     featuredTitle: String = null,
-    featuredTitleStyle: StyleProp[TextStyle] = null,
+    featuredTitleStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
     image: ImageSourcePropType = null,
     imageProps: PartialImageProps = null,
     imageStyle: ImageStyle = null,
-    imageWrapperStyle: StyleProp[ViewStyle] = null,
+    imageWrapperStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     title: String | ReactElement = null,
-    titleStyle: StyleProp[TextStyle] = null,
-    wrapperStyle: StyleProp[ViewStyle] = null
+    titleStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
+    wrapperStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined
   ): CardProps = {
     val __obj = js.Dynamic.literal()
-    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (dividerStyle != null) __obj.updateDynamic("dividerStyle")(dividerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(containerStyle)) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(dividerStyle)) __obj.updateDynamic("dividerStyle")(dividerStyle.asInstanceOf[js.Any])
     if (featuredSubtitle != null) __obj.updateDynamic("featuredSubtitle")(featuredSubtitle.asInstanceOf[js.Any])
-    if (featuredSubtitleStyle != null) __obj.updateDynamic("featuredSubtitleStyle")(featuredSubtitleStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(featuredSubtitleStyle)) __obj.updateDynamic("featuredSubtitleStyle")(featuredSubtitleStyle.asInstanceOf[js.Any])
     if (featuredTitle != null) __obj.updateDynamic("featuredTitle")(featuredTitle.asInstanceOf[js.Any])
-    if (featuredTitleStyle != null) __obj.updateDynamic("featuredTitleStyle")(featuredTitleStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(featuredTitleStyle)) __obj.updateDynamic("featuredTitleStyle")(featuredTitleStyle.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (imageProps != null) __obj.updateDynamic("imageProps")(imageProps.asInstanceOf[js.Any])
     if (imageStyle != null) __obj.updateDynamic("imageStyle")(imageStyle.asInstanceOf[js.Any])
-    if (imageWrapperStyle != null) __obj.updateDynamic("imageWrapperStyle")(imageWrapperStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageWrapperStyle)) __obj.updateDynamic("imageWrapperStyle")(imageWrapperStyle.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titleStyle != null) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
-    if (wrapperStyle != null) __obj.updateDynamic("wrapperStyle")(wrapperStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(titleStyle)) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapperStyle)) __obj.updateDynamic("wrapperStyle")(wrapperStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardProps]
   }
 }

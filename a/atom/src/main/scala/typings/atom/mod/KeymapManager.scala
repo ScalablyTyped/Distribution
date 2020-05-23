@@ -1,9 +1,9 @@
 package typings.atom.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atom.AnonCommand
-import typings.atom.AnonPriorityNumber
-import typings.atom.AnonWatch
+import typings.atom.anon.Command
+import typings.atom.anon.PriorityNumber
+import typings.atom.anon.Watch
 import typings.std.KeyboardEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +26,7 @@ trait KeymapManager extends js.Object {
   def destroy(): Unit = js.native
   /** Get the key bindings for a given command and optional target. */
   def findKeyBindings(): js.Array[KeyBinding] = js.native
-  def findKeyBindings(params: AnonCommand): js.Array[KeyBinding] = js.native
+  def findKeyBindings(params: Command): js.Array[KeyBinding] = js.native
   // Accessing Bindings
   /** Get all current key bindings. */
   def getKeyBindings(): js.Array[KeyBinding] = js.native
@@ -46,7 +46,7 @@ trait KeymapManager extends js.Object {
   // Managing Keymap Files
   /** Load the key bindings from the given path. */
   def loadKeymap(bindingsPath: String): Unit = js.native
-  def loadKeymap(bindingsPath: String, options: AnonWatch): Unit = js.native
+  def loadKeymap(bindingsPath: String, options: Watch): Unit = js.native
   /** Invoke the given callback when one or more keystrokes fail to match any bindings. */
   def onDidFailToMatchBinding(callback: js.Function1[/* event */ FailedKeybindingMatchEvent, Unit]): Disposable = js.native
   /** Invoke the given callback when a keymap file not able to be loaded. */
@@ -65,6 +65,6 @@ trait KeymapManager extends js.Object {
     *  it changes.
     */
   def watchKeymap(filePath: String): Unit = js.native
-  def watchKeymap(filePath: String, options: AnonPriorityNumber): Unit = js.native
+  def watchKeymap(filePath: String, options: PriorityNumber): Unit = js.native
 }
 

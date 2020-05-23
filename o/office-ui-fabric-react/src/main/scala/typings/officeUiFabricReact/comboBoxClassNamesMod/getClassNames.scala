@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.comboBoxClassNamesMod
 
-import typings.officeUiFabricReact.PartialIComboBoxStyles
+import typings.officeUiFabricReact.anon.PartialIComboBoxStyles
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

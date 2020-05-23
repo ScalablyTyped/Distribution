@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object typesMod {
   type MutationQueryReducer[T] = js.Function2[
     /* previousResult */ typings.std.Record[java.lang.String, js.Any], 
-    /* options */ typings.apolloClient.AnonMutationResult[T], 
+    /* options */ typings.apolloClient.anon.MutationResult[T], 
     typings.std.Record[java.lang.String, js.Any]
   ]
   type MutationQueryReducersMap[T] = org.scalablytyped.runtime.StringDictionary[typings.apolloClient.typesMod.MutationQueryReducer[T]]

@@ -1,9 +1,9 @@
 package typings.rbx.panelTabMod
 
-import typings.rbx.Anon7
-import typings.rbx.AnonAsElementType
-import typings.rbx.PickBadgeHelpersPropsFloa
-import typings.rbx.PreferHelpersPropsOverridBackgroundColor
+import typings.rbx.anon.AsElementType
+import typings.rbx.anon.PickBadgeHelpersPropsFloa
+import typings.rbx.anon.PreferHelpersPropsOverridBackgroundColor
+import typings.rbx.anon.`7`
 import typings.rbx.exoticMod.ForwardRefAsExoticComponent
 import typings.rbx.exoticMod.FromReactType
 import typings.rbx.helpersMod.HelpersPropsOverrides
@@ -45,7 +45,7 @@ import typings.rbx.rbxStrings.unselectable
 import typings.react.mod.ComponentProps
 import typings.react.mod.ElementType
 import typings.react.mod.RefAttributes
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.Exclude
 import typings.std.Partial
 import typings.std.Pick
@@ -59,12 +59,12 @@ object PanelTab extends js.Object {
   @JSName("$$typeof")
   var DollarDollartypeof: js.Symbol = js.native
   var Group: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
-  var defaultProps: AnonAsElementType with (Partial[
+  var defaultProps: AsElementType with (Partial[
     HelpersPropsOverrides with PickBadgeHelpersPropsFloa with PanelTabModifierProps with (Pick[_, String | Double | js.Symbol])
   ]) = js.native
   var displayName: js.UndefOr[String] = js.native
   def apply[TAsComponent /* <: ElementType[_] */](
-    props: Anon7[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with PanelTabModifierProps with (Pick[
+    props: `7`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with PanelTabModifierProps with (Pick[
       ComponentProps[TAsComponent], 
       Exclude[
         /* keyof react.react.ComponentProps<TAsComponent> */ String, 

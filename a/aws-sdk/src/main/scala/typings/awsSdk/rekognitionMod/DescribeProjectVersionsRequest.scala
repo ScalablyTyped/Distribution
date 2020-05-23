@@ -28,12 +28,12 @@ object DescribeProjectVersionsRequest {
   @scala.inline
   def apply(
     ProjectArn: ProjectArn,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[ProjectVersionsPageSize] = js.undefined,
     NextToken: ExtendedPaginationToken = null,
     VersionNames: VersionNames = null
   ): DescribeProjectVersionsRequest = {
     val __obj = js.Dynamic.literal(ProjectArn = ProjectArn.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (VersionNames != null) __obj.updateDynamic("VersionNames")(VersionNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeProjectVersionsRequest]

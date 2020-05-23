@@ -1,6 +1,6 @@
 package typings.stylus.mod.Stylus.Nodes
 
-import typings.stylus.AnonColumn
+import typings.stylus.anon.Column
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ object Unit {
     shouldCoerce: java.lang.String => scala.Boolean,
     toBoolean: () => Boolean,
     toExpression: () => Expression,
-    toJSON: () => AnonColumn,
+    toJSON: () => Column,
     `type`: java.lang.String,
     `val`: Double
   ): Unit = {

@@ -1,6 +1,6 @@
 package typings.antdMobileRn.toastContainerNativeMod
 
-import typings.antdMobileRn.AnonDuration
+import typings.antdMobileRn.anon.Duration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class default protected () extends ToastContainer {
 @JSImport("antd-mobile-rn/lib/toast/ToastContainer.native", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonDuration = js.native
+  var defaultProps: Duration = js.native
 }
 

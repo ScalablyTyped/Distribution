@@ -12,7 +12,7 @@ object OverflowHelpersProps {
   @scala.inline
   def apply(clipped: js.UndefOr[Boolean] = js.undefined): OverflowHelpersProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clipped)) __obj.updateDynamic("clipped")(clipped.asInstanceOf[js.Any])
+    if (!js.isUndefined(clipped)) __obj.updateDynamic("clipped")(clipped.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverflowHelpersProps]
   }
 }

@@ -23,10 +23,10 @@ object IPaymentIntentTransferData {
   @scala.inline
   def apply(
     destination: String | IBankAccount | ICardHash | IAccountCreationOptions,
-    amount: Int | Double = null
+    amount: js.UndefOr[Double] = js.undefined
   ): IPaymentIntentTransferData = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any])
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentIntentTransferData]
   }
 }

@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,11 @@ trait WebGLShaderPrecisionFormat extends js.Object {
   val rangeMin: GLint
 }
 
-@JSGlobal("WebGLShaderPrecisionFormat")
-@js.native
-object WebGLShaderPrecisionFormat extends Instantiable0[WebGLShaderPrecisionFormat]
+object WebGLShaderPrecisionFormat {
+  @scala.inline
+  def apply(precision: GLint, rangeMax: GLint, rangeMin: GLint): WebGLShaderPrecisionFormat = {
+    val __obj = js.Dynamic.literal(precision = precision.asInstanceOf[js.Any], rangeMax = rangeMax.asInstanceOf[js.Any], rangeMin = rangeMin.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebGLShaderPrecisionFormat]
+  }
+}
 

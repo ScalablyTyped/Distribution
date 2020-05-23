@@ -116,20 +116,20 @@ object PrintTemplateProperties {
     format: pdf | png32 | png8 | jpg | gif | eps | svg | svgz = null,
     layout: `map-only` | `a3-landscape` | `a3-portrait` | `a4-landscape` | `a4-portrait` | `letter-ansi-a-landscape` | `letter-ansi-a-portrait` | `tabloid-ansi-b-landscape` | `tabloid-ansi-b-portrait` = null,
     layoutOptions: PrintTemplateLayoutOptions = null,
-    outScale: Int | Double = null,
+    outScale: js.UndefOr[Double] = js.undefined,
     preserveScale: js.UndefOr[Boolean] = js.undefined,
     showLabels: js.UndefOr[Boolean] = js.undefined
   ): PrintTemplateProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(attributionVisible)) __obj.updateDynamic("attributionVisible")(attributionVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(attributionVisible)) __obj.updateDynamic("attributionVisible")(attributionVisible.get.asInstanceOf[js.Any])
     if (exportOptions != null) __obj.updateDynamic("exportOptions")(exportOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceFeatureAttributes)) __obj.updateDynamic("forceFeatureAttributes")(forceFeatureAttributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceFeatureAttributes)) __obj.updateDynamic("forceFeatureAttributes")(forceFeatureAttributes.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (layoutOptions != null) __obj.updateDynamic("layoutOptions")(layoutOptions.asInstanceOf[js.Any])
-    if (outScale != null) __obj.updateDynamic("outScale")(outScale.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveScale)) __obj.updateDynamic("preserveScale")(preserveScale.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLabels)) __obj.updateDynamic("showLabels")(showLabels.asInstanceOf[js.Any])
+    if (!js.isUndefined(outScale)) __obj.updateDynamic("outScale")(outScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveScale)) __obj.updateDynamic("preserveScale")(preserveScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLabels)) __obj.updateDynamic("showLabels")(showLabels.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintTemplateProperties]
   }
 }

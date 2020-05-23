@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("app-builder-lib/out/fileMatcher", "excludedNames")
 @js.native
-object excludedNames extends TopLevel[String]
+object excludedNames extends TopLevel[/* "default" */ String]
 

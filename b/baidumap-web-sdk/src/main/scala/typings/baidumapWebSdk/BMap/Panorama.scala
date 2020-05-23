@@ -1,17 +1,11 @@
 package typings.baidumapWebSdk.BMap
 
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BMap.Panorama")
 @js.native
-class Panorama protected () extends js.Object {
-  def this(container: String) = this()
-  def this(container: HTMLElement) = this()
-  def this(container: String, opts: PanoramaOptions) = this()
-  def this(container: HTMLElement, opts: PanoramaOptions) = this()
+trait Panorama extends js.Object {
   def addOverlay(overlay: PanoramaLabel): Unit = js.native
   def disableScrollWheelZoom(): Unit = js.native
   def enableScrollWheelZoom(): Unit = js.native

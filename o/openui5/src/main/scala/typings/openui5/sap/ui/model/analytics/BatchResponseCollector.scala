@@ -4,20 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.model.analytics.BatchResponseCollector")
 @js.native
-class BatchResponseCollector protected () extends js.Object {
-  /**
-    * Constructor for a batch response collecting component.
-    * @param mParams optional Setup-Parameter, @see BatchResponseCollector#setup
-    */
-  def this(mParams: js.Any) = this()
+trait BatchResponseCollector extends js.Object {
   /**
     * Collects responses of type BatchResponseCollector.TYPE_SUCCESS and
     * BatchResponseCollector.TYPE_ERROR.Keeps track of all collected responses and fires the necessary
     * events after all responses for therequests, given in the constructor, have returned.
     * @param oResponse the response which should be collected
-    * @param sResponseType the type of the response, either BatchResponseCollector.TYPE_SUCCESS									or
+    * @param sResponseType the type of the response, either BatchResponseCollector.TYPE_SUCCESS                                    or
     * BatchResponseCollector.TYPE_ERROR
     */
   def collect(oResponse: js.Any): Unit = js.native

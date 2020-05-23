@@ -1,6 +1,6 @@
 package typings.jupyterlabNbformat.mod
 
-import typings.jupyterlabNbformat.PartialIRawCellMetadata
+import typings.jupyterlabNbformat.anon.PartialIRawCellMetadata
 import typings.jupyterlabNbformat.jupyterlabNbformatStrings.raw
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type BorderWidth = scala.Double | typings.chartJs.keyinPositionTypenumber
+  type BorderWidth = scala.Double | typings.chartJs.anon.keyinPositionTypenumber
   type ChartColor = java.lang.String | typings.std.CanvasGradient | typings.std.CanvasPattern | js.Array[java.lang.String]
   // NOTE: declare plugin options as interface instead of inline '{ [plugin: string]: any }'
   // to allow module augmentation in case some plugins want to strictly type their options.
@@ -19,5 +19,5 @@ package object mod {
   type ChartYAxe = typings.chartJs.mod.CommonAxe
   // tslint:disable-next-line no-empty-interface
   type LogarithmicTickOptions = typings.chartJs.mod.TickOptions
-  type Scriptable[T] = js.Function1[/* ctx */ typings.chartJs.AnonChart, T]
+  type Scriptable[T] = js.Function1[/* ctx */ typings.chartJs.anon.Chart, T]
 }

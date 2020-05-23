@@ -17,11 +17,6 @@ class ProseAssertion protected ()
   def this(openBracketToken: Token[OpenBracketGreaterThanToken], fragments: js.Array[ProseFragment]) = this()
   def this(
     openBracketToken: Token[OpenBracketGreaterThanToken],
-    fragments: js.UndefOr[scala.Nothing],
-    closeBracketToken: Token[CloseBracketToken]
-  ) = this()
-  def this(
-    openBracketToken: Token[OpenBracketGreaterThanToken],
     fragments: js.Array[ProseFragment],
     closeBracketToken: Token[CloseBracketToken]
   ) = this()

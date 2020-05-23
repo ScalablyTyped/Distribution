@@ -39,8 +39,8 @@ object SliceInput {
     date: String = null,
     destination: String = null,
     kind: String = null,
-    maxConnectionDuration: Int | Double = null,
-    maxStops: Int | Double = null,
+    maxConnectionDuration: js.UndefOr[Double] = js.undefined,
+    maxStops: js.UndefOr[Double] = js.undefined,
     origin: String = null,
     permittedCarrier: js.Array[String] = null,
     permittedDepartureTime: TimeOfDayRange = null,
@@ -52,8 +52,8 @@ object SliceInput {
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (maxConnectionDuration != null) __obj.updateDynamic("maxConnectionDuration")(maxConnectionDuration.asInstanceOf[js.Any])
-    if (maxStops != null) __obj.updateDynamic("maxStops")(maxStops.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxConnectionDuration)) __obj.updateDynamic("maxConnectionDuration")(maxConnectionDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxStops)) __obj.updateDynamic("maxStops")(maxStops.get.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     if (permittedCarrier != null) __obj.updateDynamic("permittedCarrier")(permittedCarrier.asInstanceOf[js.Any])
     if (permittedDepartureTime != null) __obj.updateDynamic("permittedDepartureTime")(permittedDepartureTime.asInstanceOf[js.Any])

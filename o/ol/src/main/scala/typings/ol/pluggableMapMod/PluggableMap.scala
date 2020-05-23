@@ -21,7 +21,7 @@ import typings.ol.olStrings.rendercomplete
 import typings.ol.olStrings.singleclick
 import typings.ol.pixelMod.Pixel
 import typings.ol.sizeMod.Size
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.TouchEvent
 import typings.std.Uint8Array
@@ -81,9 +81,9 @@ trait PluggableMap
   def getControls(): typings.ol.collectionMod.default[typings.ol.controlControlMod.default] = js.native
   def getCoordinateFromPixel(pixel: Pixel): Coordinate = js.native
   def getCoordinateFromPixelInternal(pixel: Pixel): Coordinate = js.native
-  def getEventCoordinate(event: Event_): Coordinate = js.native
-  def getEventCoordinateInternal(event: Event_): Coordinate = js.native
-  def getEventPixel(event: Event_): Pixel = js.native
+  def getEventCoordinate(event: Event): Coordinate = js.native
+  def getEventCoordinateInternal(event: Event): Coordinate = js.native
+  def getEventPixel(event: Event): Pixel = js.native
   def getEventPixel(event: TouchEvent): Pixel = js.native
   def getFeaturesAtPixel(pixel: Pixel): js.Array[FeatureLike] = js.native
   def getFeaturesAtPixel(pixel: Pixel, opt_options: AtPixelOptions): js.Array[FeatureLike] = js.native
@@ -110,8 +110,8 @@ trait PluggableMap
   ): Double = js.native
   def getView(): typings.ol.viewMod.default = js.native
   def getViewport(): HTMLElement = js.native
-  def handleBrowserEvent(browserEvent: Event_): Unit = js.native
-  def handleBrowserEvent(browserEvent: Event_, opt_type: String): Unit = js.native
+  def handleBrowserEvent(browserEvent: Event): Unit = js.native
+  def handleBrowserEvent(browserEvent: Event, opt_type: String): Unit = js.native
   def handleMapBrowserEvent(mapBrowserEvent: typings.ol.mapBrowserEventMod.default): Unit = js.native
   /* protected */ def handlePostRender(): Unit = js.native
   def hasFeatureAtPixel(pixel: Pixel): Boolean = js.native

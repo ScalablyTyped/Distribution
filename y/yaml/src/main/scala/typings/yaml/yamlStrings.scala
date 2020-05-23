@@ -1,48 +1,32 @@
 package typings.yaml
 
+import typings.yaml.typesMod.Schema.Name
+import typings.yaml.typesMod.Schema.TagId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object yamlStrings {
   @js.native
-  sealed trait ALIAS extends js.Object
+  sealed trait `1Dot0` extends js.Object
+  
+  @js.native
+  sealed trait `1Dot1` extends js.Object
+  
+  @js.native
+  sealed trait `1Dot2` extends js.Object
   
   @js.native
   sealed trait BIN extends js.Object
   
   @js.native
-  sealed trait BLANK_LINE extends js.Object
-  
-  @js.native
-  sealed trait BLOCK_FOLDED extends js.Object
-  
-  @js.native
-  sealed trait BLOCK_LITERAL extends js.Object
-  
-  @js.native
   sealed trait CLIP extends js.Object
-  
-  @js.native
-  sealed trait COMMENT extends js.Object
   
   @js.native
   sealed trait Colon extends js.Object
   
   @js.native
   sealed trait Comma extends js.Object
-  
-  @js.native
-  sealed trait DIRECTIVE extends js.Object
-  
-  @js.native
-  sealed trait DOCUMENT extends js.Object
-  
-  @js.native
-  sealed trait FLOW_MAP extends js.Object
-  
-  @js.native
-  sealed trait FLOW_SEQ extends js.Object
   
   @js.native
   sealed trait HEX extends js.Object
@@ -54,43 +38,13 @@ object yamlStrings {
   sealed trait Leftcurlybracket extends js.Object
   
   @js.native
-  sealed trait MAP extends js.Object
-  
-  @js.native
-  sealed trait MAP_KEY extends js.Object
-  
-  @js.native
-  sealed trait MAP_VALUE extends js.Object
-  
-  @js.native
-  sealed trait MERGE_PAIR extends js.Object
-  
-  @js.native
   sealed trait OCT extends js.Object
-  
-  @js.native
-  sealed trait PAIR extends js.Object
-  
-  @js.native
-  sealed trait PLAIN extends js.Object
-  
-  @js.native
-  sealed trait QUOTE_DOUBLE extends js.Object
-  
-  @js.native
-  sealed trait QUOTE_SINGLE extends js.Object
   
   @js.native
   sealed trait Questionmark extends js.Object
   
   @js.native
   sealed trait Rightcurlybracket extends js.Object
-  
-  @js.native
-  sealed trait SEQ extends js.Object
-  
-  @js.native
-  sealed trait SEQ_ITEM extends js.Object
   
   @js.native
   sealed trait STRIP extends js.Object
@@ -108,49 +62,85 @@ object yamlStrings {
   sealed trait YAMLSyntaxError extends js.Object
   
   @js.native
+  sealed trait YAMLWarning extends js.Object
+  
+  @js.native
   sealed trait `[` extends js.Object
   
   @js.native
   sealed trait `]` extends js.Object
   
   @js.native
-  sealed trait core extends js.Object
+  sealed trait binary extends TagId
   
   @js.native
-  sealed trait failsafe extends js.Object
+  sealed trait bool extends TagId
   
   @js.native
-  sealed trait json extends js.Object
+  sealed trait core extends Name
   
   @js.native
-  sealed trait `yaml-1Dot1` extends js.Object
+  sealed trait failsafe extends Name
+  
+  @js.native
+  sealed trait float extends TagId
+  
+  @js.native
+  sealed trait floatExp extends TagId
+  
+  @js.native
+  sealed trait floatNaN extends TagId
+  
+  @js.native
+  sealed trait floatTime extends TagId
+  
+  @js.native
+  sealed trait int extends TagId
+  
+  @js.native
+  sealed trait intHex extends TagId
+  
+  @js.native
+  sealed trait intOct extends TagId
+  
+  @js.native
+  sealed trait intTime extends TagId
+  
+  @js.native
+  sealed trait json extends Name
+  
+  @js.native
+  sealed trait `null` extends TagId
+  
+  @js.native
+  sealed trait omap extends TagId
+  
+  @js.native
+  sealed trait pairs extends TagId
+  
+  @js.native
+  sealed trait set extends TagId
+  
+  @js.native
+  sealed trait timestamp extends TagId
+  
+  @js.native
+  sealed trait `yaml-1Dot1` extends Name
   
   @scala.inline
-  def ALIAS: ALIAS = "ALIAS".asInstanceOf[ALIAS]
+  def `1Dot0`: `1Dot0` = "1.0".asInstanceOf[`1Dot0`]
+  @scala.inline
+  def `1Dot1`: `1Dot1` = "1.1".asInstanceOf[`1Dot1`]
+  @scala.inline
+  def `1Dot2`: `1Dot2` = "1.2".asInstanceOf[`1Dot2`]
   @scala.inline
   def BIN: BIN = "BIN".asInstanceOf[BIN]
   @scala.inline
-  def BLANK_LINE: BLANK_LINE = "BLANK_LINE".asInstanceOf[BLANK_LINE]
-  @scala.inline
-  def BLOCK_FOLDED: BLOCK_FOLDED = "BLOCK_FOLDED".asInstanceOf[BLOCK_FOLDED]
-  @scala.inline
-  def BLOCK_LITERAL: BLOCK_LITERAL = "BLOCK_LITERAL".asInstanceOf[BLOCK_LITERAL]
-  @scala.inline
   def CLIP: CLIP = "CLIP".asInstanceOf[CLIP]
-  @scala.inline
-  def COMMENT: COMMENT = "COMMENT".asInstanceOf[COMMENT]
   @scala.inline
   def Colon: Colon = ":".asInstanceOf[Colon]
   @scala.inline
   def Comma: Comma = ",".asInstanceOf[Comma]
-  @scala.inline
-  def DIRECTIVE: DIRECTIVE = "DIRECTIVE".asInstanceOf[DIRECTIVE]
-  @scala.inline
-  def DOCUMENT: DOCUMENT = "DOCUMENT".asInstanceOf[DOCUMENT]
-  @scala.inline
-  def FLOW_MAP: FLOW_MAP = "FLOW_MAP".asInstanceOf[FLOW_MAP]
-  @scala.inline
-  def FLOW_SEQ: FLOW_SEQ = "FLOW_SEQ".asInstanceOf[FLOW_SEQ]
   @scala.inline
   def HEX: HEX = "HEX".asInstanceOf[HEX]
   @scala.inline
@@ -158,31 +148,11 @@ object yamlStrings {
   @scala.inline
   def Leftcurlybracket: Leftcurlybracket = "{".asInstanceOf[Leftcurlybracket]
   @scala.inline
-  def MAP: MAP = "MAP".asInstanceOf[MAP]
-  @scala.inline
-  def MAP_KEY: MAP_KEY = "MAP_KEY".asInstanceOf[MAP_KEY]
-  @scala.inline
-  def MAP_VALUE: MAP_VALUE = "MAP_VALUE".asInstanceOf[MAP_VALUE]
-  @scala.inline
-  def MERGE_PAIR: MERGE_PAIR = "MERGE_PAIR".asInstanceOf[MERGE_PAIR]
-  @scala.inline
   def OCT: OCT = "OCT".asInstanceOf[OCT]
-  @scala.inline
-  def PAIR: PAIR = "PAIR".asInstanceOf[PAIR]
-  @scala.inline
-  def PLAIN: PLAIN = "PLAIN".asInstanceOf[PLAIN]
-  @scala.inline
-  def QUOTE_DOUBLE: QUOTE_DOUBLE = "QUOTE_DOUBLE".asInstanceOf[QUOTE_DOUBLE]
-  @scala.inline
-  def QUOTE_SINGLE: QUOTE_SINGLE = "QUOTE_SINGLE".asInstanceOf[QUOTE_SINGLE]
   @scala.inline
   def Questionmark: Questionmark = "?".asInstanceOf[Questionmark]
   @scala.inline
   def Rightcurlybracket: Rightcurlybracket = "}".asInstanceOf[Rightcurlybracket]
-  @scala.inline
-  def SEQ: SEQ = "SEQ".asInstanceOf[SEQ]
-  @scala.inline
-  def SEQ_ITEM: SEQ_ITEM = "SEQ_ITEM".asInstanceOf[SEQ_ITEM]
   @scala.inline
   def STRIP: STRIP = "STRIP".asInstanceOf[STRIP]
   @scala.inline
@@ -194,15 +164,47 @@ object yamlStrings {
   @scala.inline
   def YAMLSyntaxError: YAMLSyntaxError = "YAMLSyntaxError".asInstanceOf[YAMLSyntaxError]
   @scala.inline
+  def YAMLWarning: YAMLWarning = "YAMLWarning".asInstanceOf[YAMLWarning]
+  @scala.inline
   def `[`: `[` = "[".asInstanceOf[`[`]
   @scala.inline
   def `]`: `]` = "]".asInstanceOf[`]`]
+  @scala.inline
+  def binary: binary = "binary".asInstanceOf[binary]
+  @scala.inline
+  def bool: bool = "bool".asInstanceOf[bool]
   @scala.inline
   def core: core = "core".asInstanceOf[core]
   @scala.inline
   def failsafe: failsafe = "failsafe".asInstanceOf[failsafe]
   @scala.inline
+  def float: float = "float".asInstanceOf[float]
+  @scala.inline
+  def floatExp: floatExp = "floatExp".asInstanceOf[floatExp]
+  @scala.inline
+  def floatNaN: floatNaN = "floatNaN".asInstanceOf[floatNaN]
+  @scala.inline
+  def floatTime: floatTime = "floatTime".asInstanceOf[floatTime]
+  @scala.inline
+  def int: int = "int".asInstanceOf[int]
+  @scala.inline
+  def intHex: intHex = "intHex".asInstanceOf[intHex]
+  @scala.inline
+  def intOct: intOct = "intOct".asInstanceOf[intOct]
+  @scala.inline
+  def intTime: intTime = "intTime".asInstanceOf[intTime]
+  @scala.inline
   def json: json = "json".asInstanceOf[json]
+  @scala.inline
+  def `null`: `null` = "null".asInstanceOf[`null`]
+  @scala.inline
+  def omap: omap = "omap".asInstanceOf[omap]
+  @scala.inline
+  def pairs: pairs = "pairs".asInstanceOf[pairs]
+  @scala.inline
+  def set: set = "set".asInstanceOf[set]
+  @scala.inline
+  def timestamp: timestamp = "timestamp".asInstanceOf[timestamp]
   @scala.inline
   def `yaml-1Dot1`: `yaml-1Dot1` = "yaml-1.1".asInstanceOf[`yaml-1Dot1`]
 }

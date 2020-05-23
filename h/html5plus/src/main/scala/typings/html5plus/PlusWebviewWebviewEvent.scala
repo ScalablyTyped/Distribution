@@ -69,7 +69,7 @@ trait PlusWebviewWebviewEvent extends js.Object {
   /**
     * Webview窗口加载进度变化事件
     * 通过WebviewObject对象的addEventListener方法添加事件监听函数，当Webview窗口加载页面进度变化时触发此事件。
-    * 	回调函数原型为void PorgressCandedCallback(Event e),可通过e.progress获取窗口加载进度，取值范围为0-100。
+    *     回调函数原型为void PorgressCandedCallback(Event e),可通过e.progress获取窗口加载进度，取值范围为0-100。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
@@ -77,7 +77,7 @@ trait PlusWebviewWebviewEvent extends js.Object {
   /**
     * Webview窗口下拉刷新事件
     * Webview窗口打开下拉刷新功能后，用户操作下拉刷新时或调用beginPullToRefresh方法时触发，用于通知业务逻辑可以开始执行刷新操作。
-    * 	更新操作完成后调用窗口的endPullToRefresh方法结束下拉刷新。
+    *     更新操作完成后调用窗口的endPullToRefresh方法结束下拉刷新。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
@@ -113,7 +113,7 @@ trait PlusWebviewWebviewEvent extends js.Object {
   /**
     * Webview加载页面标题更新事件
     * 通过WebviewObject对象的addEventListener方法添加事件监听函数，当Webview窗口加载新页面更新标题时触发此事件，回调函数类型为SuccessCallback。
-    * 	注意：此事件会先于loaded事件触发，通常在加载网络页面时通过此事件可更快获取到页面的标题。
+    *     注意：此事件会先于loaded事件触发，通常在加载网络页面时通过此事件可更快获取到页面的标题。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
@@ -121,7 +121,7 @@ trait PlusWebviewWebviewEvent extends js.Object {
   /**
     * Webview窗口接收到触屏事件
     * 通过WebviewObject对象的addEventListener方法添加事件监听函数，当用户操作按下到Webview窗口时触发此事件，回调函数类型为SuccessCallback。
-    * 	注意：每按下屏幕触发一次此事件。
+    *     注意：每按下屏幕触发一次此事件。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */

@@ -13,15 +13,15 @@ object RendererOptions {
   @scala.inline
   def apply(
     attribution: String = null,
-    padding: Int | Double = null,
+    padding: js.UndefOr[Double] = js.undefined,
     pane: String = null,
-    tolerance: Int | Double = null
+    tolerance: js.UndefOr[Double] = js.undefined
   ): RendererOptions = {
     val __obj = js.Dynamic.literal()
     if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
     if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
-    if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
+    if (!js.isUndefined(tolerance)) __obj.updateDynamic("tolerance")(tolerance.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RendererOptions]
   }
 }

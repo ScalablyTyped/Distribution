@@ -31,17 +31,17 @@ trait WorkGroupConfiguration extends js.Object {
 object WorkGroupConfiguration {
   @scala.inline
   def apply(
-    BytesScannedCutoffPerQuery: Int | Double = null,
-    EnforceWorkGroupConfiguration: js.UndefOr[scala.Boolean] = js.undefined,
-    PublishCloudWatchMetricsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    RequesterPaysEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    BytesScannedCutoffPerQuery: js.UndefOr[BytesScannedCutoffValue] = js.undefined,
+    EnforceWorkGroupConfiguration: js.UndefOr[BoxedBoolean] = js.undefined,
+    PublishCloudWatchMetricsEnabled: js.UndefOr[BoxedBoolean] = js.undefined,
+    RequesterPaysEnabled: js.UndefOr[BoxedBoolean] = js.undefined,
     ResultConfiguration: ResultConfiguration = null
   ): WorkGroupConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (BytesScannedCutoffPerQuery != null) __obj.updateDynamic("BytesScannedCutoffPerQuery")(BytesScannedCutoffPerQuery.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnforceWorkGroupConfiguration)) __obj.updateDynamic("EnforceWorkGroupConfiguration")(EnforceWorkGroupConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(PublishCloudWatchMetricsEnabled)) __obj.updateDynamic("PublishCloudWatchMetricsEnabled")(PublishCloudWatchMetricsEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequesterPaysEnabled)) __obj.updateDynamic("RequesterPaysEnabled")(RequesterPaysEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(BytesScannedCutoffPerQuery)) __obj.updateDynamic("BytesScannedCutoffPerQuery")(BytesScannedCutoffPerQuery.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnforceWorkGroupConfiguration)) __obj.updateDynamic("EnforceWorkGroupConfiguration")(EnforceWorkGroupConfiguration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PublishCloudWatchMetricsEnabled)) __obj.updateDynamic("PublishCloudWatchMetricsEnabled")(PublishCloudWatchMetricsEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RequesterPaysEnabled)) __obj.updateDynamic("RequesterPaysEnabled")(RequesterPaysEnabled.get.asInstanceOf[js.Any])
     if (ResultConfiguration != null) __obj.updateDynamic("ResultConfiguration")(ResultConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkGroupConfiguration]
   }

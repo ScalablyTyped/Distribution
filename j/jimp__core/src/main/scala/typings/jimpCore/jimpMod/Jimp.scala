@@ -114,7 +114,6 @@ trait Jimp extends JimpConstructors {
   def getWidth(): Double = js.native
   def hasAlpha(): Boolean = js.native
   def hash(): String = js.native
-  def hash(base: js.UndefOr[scala.Nothing], cb: GenericCallback[String, _, this.type]): String = js.native
   def hash(base: Double): String = js.native
   def hash(base: Double, cb: GenericCallback[String, _, this.type]): String = js.native
   def hash(base: Null, cb: GenericCallback[String, _, this.type]): String = js.native
@@ -126,7 +125,6 @@ trait Jimp extends JimpConstructors {
   // Methods
   def on[T /* <: ListenableName */](event: T, cb: js.Function1[/* data */ ListenerData[T], _]): js.Any = js.native
   def parseBitmap(data: Buffer): Unit = js.native
-  def parseBitmap(data: Buffer, path: js.UndefOr[scala.Nothing], cb: ImageCallback[this.type]): Unit = js.native
   def parseBitmap(data: Buffer, path: String): Unit = js.native
   def parseBitmap(data: Buffer, path: String, cb: ImageCallback[this.type]): Unit = js.native
   def parseBitmap(data: Buffer, path: Null, cb: ImageCallback[this.type]): Unit = js.native

@@ -11,6 +11,10 @@ trait PutImageRequest extends js.Object {
     */
   var imageManifest: ImageManifest = js.native
   /**
+    * The media type of the image manifest. If you push an image manifest that does not contain the mediaType field, you must specify the imageManifestMediaType in the request.
+    */
+  var imageManifestMediaType: js.UndefOr[MediaType] = js.native
+  /**
     * The tag to associate with the image. This parameter is required for images that use the Docker Image Manifest V2 Schema 2 or OCI formats.
     */
   var imageTag: js.UndefOr[ImageTag] = js.native
@@ -29,10 +33,12 @@ object PutImageRequest {
   def apply(
     imageManifest: ImageManifest,
     repositoryName: RepositoryName,
+    imageManifestMediaType: MediaType = null,
     imageTag: ImageTag = null,
     registryId: RegistryId = null
   ): PutImageRequest = {
     val __obj = js.Dynamic.literal(imageManifest = imageManifest.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
+    if (imageManifestMediaType != null) __obj.updateDynamic("imageManifestMediaType")(imageManifestMediaType.asInstanceOf[js.Any])
     if (imageTag != null) __obj.updateDynamic("imageTag")(imageTag.asInstanceOf[js.Any])
     if (registryId != null) __obj.updateDynamic("registryId")(registryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutImageRequest]

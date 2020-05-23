@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojnavigationlistMod
 
-import typings.oracleOraclejet.AnonAccessibleReorderAfterItem
-import typings.oracleOraclejet.AnonRendererSelectable
+import typings.oracleOraclejet.anon.AccessibleReorderAfterItem
+import typings.oracleOraclejet.anon.RendererSelectable
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.baseComponent
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
@@ -61,7 +61,7 @@ trait ojTabBar_[K, D] extends baseComponent[ojTabBarSettableProperties[K, D]] {
   var data: (DataProvider[K, D]) | Null = js.native
   var display: all | icons = js.native
   var edge: top | bottom | start | end = js.native
-  var item: AnonRendererSelectable[K, D] = js.native
+  var item: RendererSelectable[K, D] = js.native
   var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onCurrentItemChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
@@ -72,7 +72,7 @@ trait ojTabBar_[K, D] extends baseComponent[ojTabBarSettableProperties[K, D]] {
   var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], _]) | Null = js.native
   var onDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[all | icons], _]) | Null = js.native
   var onEdgeChanged: (js.Function1[/* event */ JetElementCustomEvent[top | bottom | start | end], _]) | Null = js.native
-  var onItemChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonRendererSelectable[K, D]], _]) | Null = js.native
+  var onItemChanged: (js.Function1[/* event */ JetElementCustomEvent[RendererSelectable[K, D]], _]) | Null = js.native
   var onOjAnimateEnd: (js.Function1[/* event */ ojAnimateEnd, _]) | Null = js.native
   var onOjAnimateStart: (js.Function1[/* event */ ojAnimateStart, _]) | Null = js.native
   var onOjBeforeCurrentItem: (js.Function1[/* event */ ojBeforeCurrentItem, _]) | Null = js.native
@@ -95,7 +95,7 @@ trait ojTabBar_[K, D] extends baseComponent[ojTabBarSettableProperties[K, D]] {
   var reorderable: enabled | disabled = js.native
   var selection: js.Any = js.native
   @JSName("translations")
-  var translations_ojTabBar_ : AnonAccessibleReorderAfterItem = js.native
+  var translations_ojTabBar_ : AccessibleReorderAfterItem = js.native
   var truncation: none | progressive = js.native
   def addEventListener(
     `type`: currentItemChanged,
@@ -225,20 +225,12 @@ trait ojTabBar_[K, D] extends baseComponent[ojTabBarSettableProperties[K, D]] {
   @JSName("addEventListener")
   def addEventListener_itemChanged(
     `type`: itemChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonRendererSelectable[K, D]], 
-      _
-    ]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[RendererSelectable[K, D]], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_itemChanged(
     `type`: itemChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[AnonRendererSelectable[K, D]], 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[RendererSelectable[K, D]], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -352,7 +344,7 @@ trait ojTabBar_[K, D] extends baseComponent[ojTabBarSettableProperties[K, D]] {
   @JSName("getProperty")
   def getProperty_edge(property: edge): top | bottom | start | end = js.native
   @JSName("getProperty")
-  def getProperty_item(property: item): AnonRendererSelectable[K, D] = js.native
+  def getProperty_item(property: item): RendererSelectable[K, D] = js.native
   @JSName("getProperty")
   def getProperty_overflow(property: overflow): popup | hidden = js.native
   @JSName("getProperty")
@@ -383,10 +375,10 @@ trait ojTabBar_[K, D] extends baseComponent[ojTabBarSettableProperties[K, D]] {
   @JSName("setProperty")
   def setProperty_data(property: data, value: DataProvider[K, D]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_item(property: item, value: AnonRendererSelectable[K, D]): Unit = js.native
+  def setProperty_item(property: item, value: RendererSelectable[K, D]): Unit = js.native
   @JSName("setProperty")
   def setProperty_selection(property: selection, value: js.Any): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonAccessibleReorderAfterItem): Unit = js.native
+  def setProperty_translations(property: translations, value: AccessibleReorderAfterItem): Unit = js.native
 }
 

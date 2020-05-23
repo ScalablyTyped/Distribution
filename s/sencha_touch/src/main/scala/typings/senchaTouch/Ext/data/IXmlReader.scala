@@ -10,19 +10,19 @@ import scala.scalajs.js.annotation._
 trait IXmlReader
   extends typings.senchaTouch.Ext.data.reader.IReader {
   /** [Method] Normalizes the data object
-  		* @param data Object The raw data object.
-  		* @returns Object Returns the documentElement property of the data object if present, or the same object if not.
-  		*/
+    * @param data Object The raw data object.
+    * @returns Object Returns the documentElement property of the data object if present, or the same object if not.
+    */
   var getData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Returns the value of record
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getRecord: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (String) */
   var record: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of record
-  		* @param record String The new value.
-  		*/
+    * @param record String The new value.
+    */
   var setRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[String], Unit]] = js.undefined
 }
 
@@ -149,7 +149,7 @@ object IXmlReader {
     if (getTotalProperty != null) __obj.updateDynamic("getTotalProperty")(js.Any.fromFunction0(getTotalProperty))
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
     if (idProperty != null) __obj.updateDynamic("idProperty")(idProperty.asInstanceOf[js.Any])
-    if (!js.isUndefined(implicitIncludes)) __obj.updateDynamic("implicitIncludes")(implicitIncludes.asInstanceOf[js.Any])
+    if (!js.isUndefined(implicitIncludes)) __obj.updateDynamic("implicitIncludes")(implicitIncludes.get.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
@@ -186,7 +186,7 @@ object IXmlReader {
     if (setRootProperty != null) __obj.updateDynamic("setRootProperty")(js.Any.fromFunction1(setRootProperty))
     if (setSuccessProperty != null) __obj.updateDynamic("setSuccessProperty")(js.Any.fromFunction1(setSuccessProperty))
     if (setTotalProperty != null) __obj.updateDynamic("setTotalProperty")(js.Any.fromFunction1(setTotalProperty))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (successProperty != null) __obj.updateDynamic("successProperty")(successProperty.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))

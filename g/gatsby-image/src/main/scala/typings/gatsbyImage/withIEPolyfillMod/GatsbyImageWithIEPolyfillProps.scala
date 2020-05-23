@@ -1,6 +1,6 @@
 package typings.gatsbyImage.withIEPolyfillMod
 
-import typings.gatsbyImage.AnonWasCached
+import typings.gatsbyImage.anon.WasCached
 import typings.gatsbyImage.gatsbyImageStrings.`lazy`
 import typings.gatsbyImage.gatsbyImageStrings.`scale-down`
 import typings.gatsbyImage.gatsbyImageStrings.auto
@@ -31,7 +31,7 @@ object GatsbyImageWithIEPolyfillProps {
     critical: js.UndefOr[Boolean] = js.undefined,
     crossOrigin: String | Boolean = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
-    durationFadeIn: Int | Double = null,
+    durationFadeIn: js.UndefOr[Double] = js.undefined,
     fadeIn: js.UndefOr[Boolean] = js.undefined,
     fixed: FixedObject | js.Array[FixedObject] = null,
     fluid: FluidObject | js.Array[FluidObject] = null,
@@ -42,7 +42,7 @@ object GatsbyImageWithIEPolyfillProps {
     objectPosition: String = null,
     onError: /* event */ js.Any => Unit = null,
     onLoad: () => Unit = null,
-    onStartLoad: /* param */ AnonWasCached => Unit = null,
+    onStartLoad: /* param */ WasCached => Unit = null,
     placeholderClassName: String = null,
     placeholderStyle: js.Object = null,
     resolutions: FixedObject = null,
@@ -55,11 +55,11 @@ object GatsbyImageWithIEPolyfillProps {
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(critical)) __obj.updateDynamic("critical")(critical.asInstanceOf[js.Any])
+    if (!js.isUndefined(critical)) __obj.updateDynamic("critical")(critical.get.asInstanceOf[js.Any])
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (durationFadeIn != null) __obj.updateDynamic("durationFadeIn")(durationFadeIn.asInstanceOf[js.Any])
-    if (!js.isUndefined(fadeIn)) __obj.updateDynamic("fadeIn")(fadeIn.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(durationFadeIn)) __obj.updateDynamic("durationFadeIn")(durationFadeIn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fadeIn)) __obj.updateDynamic("fadeIn")(fadeIn.get.asInstanceOf[js.Any])
     if (fixed != null) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
     if (fluid != null) __obj.updateDynamic("fluid")(fluid.asInstanceOf[js.Any])
     if (imgStyle != null) __obj.updateDynamic("imgStyle")(imgStyle.asInstanceOf[js.Any])

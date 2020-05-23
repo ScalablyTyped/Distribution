@@ -1,10 +1,10 @@
 package typings.oracleOraclejet.ojeditablevalueMod
 
-import typings.oracleOraclejet.AnonAction
-import typings.oracleOraclejet.AnonConverterHint
-import typings.oracleOraclejet.AnonDefinition
-import typings.oracleOraclejet.AnonElement
-import typings.oracleOraclejet.AnonInstruction
+import typings.oracleOraclejet.anon.Action
+import typings.oracleOraclejet.anon.ConverterHint
+import typings.oracleOraclejet.anon.Definition
+import typings.oracleOraclejet.anon.Element
+import typings.oracleOraclejet.anon.Instruction
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.baseComponent
 import typings.oracleOraclejet.ojeditablevalueMod.editableValue.ojAnimateEnd
@@ -40,16 +40,16 @@ import scala.scalajs.js.annotation._
 trait editableValue[V, SP /* <: editableValueSettableProperties[V, SV, RV] */, SV, RV] extends baseComponent[SP] {
   var describedBy: String | Null = js.native
   var disabled: Boolean = js.native
-  var displayOptions: AnonConverterHint = js.native
-  var help: AnonInstruction = js.native
-  var helpHints: AnonDefinition = js.native
+  var displayOptions: ConverterHint = js.native
+  var help: Instruction = js.native
+  var helpHints: Definition = js.native
   var labelHint: String = js.native
   var messagesCustom: js.Array[^] = js.native
   var onDescribedByChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
   var onDisabledChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
-  var onDisplayOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonConverterHint], _]) | Null = js.native
-  var onHelpChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonInstruction], _]) | Null = js.native
-  var onHelpHintsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonDefinition], _]) | Null = js.native
+  var onDisplayOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[ConverterHint], _]) | Null = js.native
+  var onHelpChanged: (js.Function1[/* event */ JetElementCustomEvent[Instruction], _]) | Null = js.native
+  var onHelpHintsChanged: (js.Function1[/* event */ JetElementCustomEvent[Definition], _]) | Null = js.native
   var onLabelHintChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onMessagesCustomChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[^]], _]) | Null = js.native
   var onOjAnimateEnd: (js.Function1[/* event */ ojAnimateEnd, _]) | Null = js.native
@@ -109,34 +109,34 @@ trait editableValue[V, SP /* <: editableValueSettableProperties[V, SV, RV] */, S
   @JSName("addEventListener")
   def addEventListener_displayOptionsChanged(
     `type`: displayOptionsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonConverterHint], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ConverterHint], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_displayOptionsChanged(
     `type`: displayOptionsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonConverterHint], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ConverterHint], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_helpChanged(
     `type`: helpChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonInstruction], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Instruction], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_helpChanged(
     `type`: helpChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonInstruction], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Instruction], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_helpHintsChanged(
     `type`: helpHintsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonDefinition], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Definition], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_helpHintsChanged(
     `type`: helpHintsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonDefinition], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Definition], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -199,11 +199,11 @@ trait editableValue[V, SP /* <: editableValueSettableProperties[V, SV, RV] */, S
   @JSName("getProperty")
   def getProperty_disabled(property: disabled): Boolean = js.native
   @JSName("getProperty")
-  def getProperty_displayOptions(property: displayOptions): AnonConverterHint = js.native
+  def getProperty_displayOptions(property: displayOptions): ConverterHint = js.native
   @JSName("getProperty")
-  def getProperty_help(property: help): AnonInstruction = js.native
+  def getProperty_help(property: help): Instruction = js.native
   @JSName("getProperty")
-  def getProperty_helpHints(property: helpHints): AnonDefinition = js.native
+  def getProperty_helpHints(property: helpHints): Definition = js.native
   @JSName("getProperty")
   def getProperty_labelHint(property: labelHint): String = js.native
   @JSName("getProperty")
@@ -224,11 +224,11 @@ trait editableValue[V, SP /* <: editableValueSettableProperties[V, SV, RV] */, S
   @JSName("setProperty")
   def setProperty_disabled(property: disabled, value: Boolean): Unit = js.native
   @JSName("setProperty")
-  def setProperty_displayOptions(property: displayOptions, value: AnonConverterHint): Unit = js.native
+  def setProperty_displayOptions(property: displayOptions, value: ConverterHint): Unit = js.native
   @JSName("setProperty")
-  def setProperty_help(property: help, value: AnonInstruction): Unit = js.native
+  def setProperty_help(property: help, value: Instruction): Unit = js.native
   @JSName("setProperty")
-  def setProperty_helpHints(property: helpHints, value: AnonDefinition): Unit = js.native
+  def setProperty_helpHints(property: helpHints, value: Definition): Unit = js.native
   @JSName("setProperty")
   def setProperty_labelHint(property: labelHint, value: String): Unit = js.native
   @JSName("setProperty")
@@ -246,7 +246,7 @@ trait editableValue[V, SP /* <: editableValueSettableProperties[V, SV, RV] */, S
 @JSImport("@oracle/oraclejet/ojeditablevalue", "editableValue")
 @js.native
 object editableValue extends js.Object {
-  type ojAnimateEnd = CustomEvent[AnonAction]
-  type ojAnimateStart = CustomEvent[AnonElement]
+  type ojAnimateEnd = CustomEvent[Action]
+  type ojAnimateStart = CustomEvent[Element]
 }
 

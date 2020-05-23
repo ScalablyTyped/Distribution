@@ -13,7 +13,7 @@ trait CollectionPage[T /* <: BaseResponse[scala.Nothing] */] extends js.Object {
 
 object CollectionPage {
   @scala.inline
-  def apply[T /* <: BaseResponse[scala.Nothing] */](
+  def apply[T](
     next: () => js.Promise[CollectionPage[T]],
     prev: () => js.Promise[CollectionPage[T]],
     records: js.Array[T]

@@ -1,63 +1,63 @@
 package typings.workboxWebpackPlugin.mod
 
-import typings.workboxWebpackPlugin.AnonChannelName
-import typings.workboxWebpackPlugin.AnonHeaders
-import typings.workboxWebpackPlugin.AnonMaxAgeSeconds
-import typings.workboxWebpackPlugin.AnonName
+import typings.workboxWebpackPlugin.anon.ChannelName
+import typings.workboxWebpackPlugin.anon.Headers
+import typings.workboxWebpackPlugin.anon.MaxAgeSeconds
+import typings.workboxWebpackPlugin.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RuntimeCacheOptions extends js.Object {
   /**
-  	 * Configure background sync.
-  	 */
-  var backgroundSync: js.UndefOr[AnonName] = js.undefined
+    * Configure background sync.
+    */
+  var backgroundSync: js.UndefOr[Name] = js.undefined
   /**
-  	 * Configure the broadcast cache update plugin.
-  	 */
-  var broadcastUpdate: js.UndefOr[AnonChannelName] = js.undefined
+    * Configure the broadcast cache update plugin.
+    */
+  var broadcastUpdate: js.UndefOr[ChannelName] = js.undefined
   /**
-  	 * A custom cache name for this route.
-  	 */
+    * A custom cache name for this route.
+    */
   var cacheName: js.UndefOr[String] = js.undefined
   /**
-  	 * Configure which responses are considered cacheable.
-  	 */
-  var cacheableResponse: js.UndefOr[AnonHeaders] = js.undefined
+    * Configure which responses are considered cacheable.
+    */
+  var cacheableResponse: js.UndefOr[Headers] = js.undefined
   /**
-  	 * Custom cache expiration.
-  	 */
-  var expiration: js.UndefOr[AnonMaxAgeSeconds] = js.undefined
+    * Custom cache expiration.
+    */
+  var expiration: js.UndefOr[MaxAgeSeconds] = js.undefined
   /**
-  	 * Used to configure the handler.
-  	 */
+    * Used to configure the handler.
+    */
   var fetchOptions: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Used to configure the handler.
-  	 */
+    * Used to configure the handler.
+    */
   var matchOptions: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Fall back to the cache after X seconds.
-  	 */
+    * Fall back to the cache after X seconds.
+    */
   var networkTimeoutSeconds: js.UndefOr[Double] = js.undefined
   /**
-  	 * Add in any additional plugin logic you need.
-  	 */
+    * Add in any additional plugin logic you need.
+    */
   var plugins: js.UndefOr[js.Array[_]] = js.undefined
 }
 
 object RuntimeCacheOptions {
   @scala.inline
   def apply(
-    backgroundSync: AnonName = null,
-    broadcastUpdate: AnonChannelName = null,
+    backgroundSync: Name = null,
+    broadcastUpdate: ChannelName = null,
     cacheName: String = null,
-    cacheableResponse: AnonHeaders = null,
-    expiration: AnonMaxAgeSeconds = null,
+    cacheableResponse: Headers = null,
+    expiration: MaxAgeSeconds = null,
     fetchOptions: js.Any = null,
     matchOptions: js.Any = null,
-    networkTimeoutSeconds: Int | Double = null,
+    networkTimeoutSeconds: js.UndefOr[Double] = js.undefined,
     plugins: js.Array[_] = null
   ): RuntimeCacheOptions = {
     val __obj = js.Dynamic.literal()
@@ -68,7 +68,7 @@ object RuntimeCacheOptions {
     if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
     if (fetchOptions != null) __obj.updateDynamic("fetchOptions")(fetchOptions.asInstanceOf[js.Any])
     if (matchOptions != null) __obj.updateDynamic("matchOptions")(matchOptions.asInstanceOf[js.Any])
-    if (networkTimeoutSeconds != null) __obj.updateDynamic("networkTimeoutSeconds")(networkTimeoutSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(networkTimeoutSeconds)) __obj.updateDynamic("networkTimeoutSeconds")(networkTimeoutSeconds.get.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuntimeCacheOptions]
   }

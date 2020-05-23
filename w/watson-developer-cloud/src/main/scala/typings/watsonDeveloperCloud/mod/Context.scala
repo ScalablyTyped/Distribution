@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /** State information for the conversation. To maintain state, include the context from the previous response. */
 trait Context
-  extends /** Context accepts additional properties. */
+  extends /** DialogNodeOutput accepts additional properties. */
 /* propName */ StringDictionary[js.Any] {
   /** The unique identifier of the conversation. */
   var conversation_id: js.UndefOr[String] = js.undefined
@@ -20,8 +20,7 @@ trait Context
 object Context {
   @scala.inline
   def apply(
-    StringDictionary: /** Context accepts additional properties. */
-  /* propName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     conversation_id: String = null,
     metadata: MessageContextMetadata = null,
     system: SystemResponse = null

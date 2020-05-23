@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.IHTMLCurrentStyle")
 @js.native
-class IHTMLCurrentStyle protected () extends js.Object {
+trait IHTMLCurrentStyle extends js.Object {
   @JSName("MSHTML.IHTMLCurrentStyle_typekey")
   var MSHTMLDotIHTMLCurrentStyle_typekey: IHTMLCurrentStyle = js.native
   val accelerator: String = js.native

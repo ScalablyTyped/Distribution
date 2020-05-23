@@ -77,7 +77,7 @@ object Model {
     enableResize: js.UndefOr[Boolean] = js.undefined,
     exportSettings: ExportSettings = null,
     frame: Frame = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     init: /* e */ InitEventArgs => Unit = null,
     isResponsive: js.UndefOr[Boolean] = js.undefined,
     itemRendering: /* e */ ItemRenderingEventArgs => Unit = null,
@@ -89,17 +89,17 @@ object Model {
     segmentData: js.Any = null,
     themes: String = null,
     value: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): Model = {
     val __obj = js.Dynamic.literal()
     if (Click != null) __obj.updateDynamic("Click")(js.Any.fromFunction1(Click))
     if (doubleClick != null) __obj.updateDynamic("doubleClick")(js.Any.fromFunction1(doubleClick))
-    if (!js.isUndefined(enableResize)) __obj.updateDynamic("enableResize")(enableResize.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableResize)) __obj.updateDynamic("enableResize")(enableResize.get.asInstanceOf[js.Any])
     if (exportSettings != null) __obj.updateDynamic("exportSettings")(exportSettings.asInstanceOf[js.Any])
     if (frame != null) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
-    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.get.asInstanceOf[js.Any])
     if (itemRendering != null) __obj.updateDynamic("itemRendering")(js.Any.fromFunction1(itemRendering))
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
@@ -109,7 +109,7 @@ object Model {
     if (segmentData != null) __obj.updateDynamic("segmentData")(segmentData.asInstanceOf[js.Any])
     if (themes != null) __obj.updateDynamic("themes")(themes.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
 }

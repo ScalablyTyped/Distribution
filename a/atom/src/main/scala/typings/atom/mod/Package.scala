@@ -1,6 +1,6 @@
 package typings.atom.mod
 
-import typings.atom.AnonCode
+import typings.atom.anon.Code
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ trait Package extends js.Object {
     *  Rebuild native modules in this package's dependencies for the current
     *  version of Atom.
     */
-  def rebuild(): js.Promise[AnonCode]
+  def rebuild(): js.Promise[Code]
 }
 
 object Package {
@@ -36,7 +36,7 @@ object Package {
     name: String,
     onDidDeactivate: js.Function0[Unit] => Disposable,
     path: String,
-    rebuild: () => js.Promise[AnonCode]
+    rebuild: () => js.Promise[Code]
   ): Package = {
     val __obj = js.Dynamic.literal(getBuildFailureOutput = js.Any.fromFunction0(getBuildFailureOutput), isCompatible = js.Any.fromFunction0(isCompatible), name = name.asInstanceOf[js.Any], onDidDeactivate = js.Any.fromFunction1(onDidDeactivate), path = path.asInstanceOf[js.Any], rebuild = js.Any.fromFunction0(rebuild))
     __obj.asInstanceOf[Package]

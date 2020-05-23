@@ -26,13 +26,13 @@ object ItemContext {
     index: Double,
     key: K,
     parentElement: Element,
-    depth: Int | Double = null,
+    depth: js.UndefOr[Double] = js.undefined,
     leaf: js.UndefOr[Boolean] = js.undefined,
     parentKey: K = null
   ): ItemContext[K, D] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], datasource = datasource.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any])
-    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (!js.isUndefined(leaf)) __obj.updateDynamic("leaf")(leaf.asInstanceOf[js.Any])
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(leaf)) __obj.updateDynamic("leaf")(leaf.get.asInstanceOf[js.Any])
     if (parentKey != null) __obj.updateDynamic("parentKey")(parentKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemContext[K, D]]
   }

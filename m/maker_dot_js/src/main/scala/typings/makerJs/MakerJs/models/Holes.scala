@@ -1,34 +1,40 @@
 package typings.makerJs.MakerJs.models
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.makerJs.MakerJs.IModel
+import typings.makerJs.MakerJs.IModelMap
 import typings.makerJs.MakerJs.IPathMap
 import typings.makerJs.MakerJs.IPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MakerJs.models.Holes")
-@js.native
-class Holes protected () extends IModel {
-  /**
-    * Create an array of circles of the same radius from an array of center points.
-    *
-    * Example:
-    * ```
-    * //Create some holes from an array of points
-    * var makerjs = require('makerjs');
-    * var model = new makerjs.models.Holes(10, [[0, 0],[50, 0],[25, 40]]);
-    * var svg = makerjs.exporter.toSVG(model);
-    * document.write(svg);
-    * ```
-    *
-    * @param holeRadius Hole radius.
-    * @param points Array of points for origin of each hole.
-    * @param ids Optional array of corresponding path ids for the holes.
-    */
-  def this(holeRadius: Double, points: js.Array[IPoint]) = this()
-  def this(holeRadius: Double, points: js.Array[IPoint], ids: js.Array[String]) = this()
+trait Holes extends IModel {
   @JSName("paths")
-  var paths_Holes: IPathMap = js.native
+  var paths_Holes: IPathMap
+}
+
+object Holes {
+  @scala.inline
+  def apply(
+    paths: IPathMap,
+    exporterOptions: StringDictionary[js.Any] = null,
+    layer: String = null,
+    models: IModelMap = null,
+    notes: String = null,
+    origin: IPoint = null,
+    `type`: String = null,
+    units: String = null
+  ): Holes = {
+    val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any])
+    if (exporterOptions != null) __obj.updateDynamic("exporterOptions")(exporterOptions.asInstanceOf[js.Any])
+    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
+    if (models != null) __obj.updateDynamic("models")(models.asInstanceOf[js.Any])
+    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Holes]
+  }
 }
 

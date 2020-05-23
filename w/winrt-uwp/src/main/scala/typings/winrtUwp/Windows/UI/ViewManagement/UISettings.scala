@@ -12,10 +12,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains a set of common app user interface settings and operations. */
-@JSGlobal("Windows.UI.ViewManagement.UISettings")
 @js.native
-/** Creates a new default instance of the UISettings class. */
-class UISettings () extends js.Object {
+trait UISettings extends js.Object {
   /** Gets whether animations are enabled for the user interface. */
   var animationsEnabled: Boolean = js.native
   /** Gets the blink rate of a new caret created by the app view. */

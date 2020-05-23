@@ -19,7 +19,7 @@ object SeriesLastVisiblePriceOptionsObject {
     label: SeriesLastVisiblePriceLabelOptionsObject = null
   ): SeriesLastVisiblePriceOptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesLastVisiblePriceOptionsObject]
   }

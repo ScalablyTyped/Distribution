@@ -26,7 +26,7 @@ object GenerateSignedPostPolicyV4Options {
     if (bucketBoundHostname != null) __obj.updateDynamic("bucketBoundHostname")(bucketBoundHostname.asInstanceOf[js.Any])
     if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(virtualHostedStyle)) __obj.updateDynamic("virtualHostedStyle")(virtualHostedStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(virtualHostedStyle)) __obj.updateDynamic("virtualHostedStyle")(virtualHostedStyle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateSignedPostPolicyV4Options]
   }
 }

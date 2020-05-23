@@ -14,7 +14,7 @@ trait PlusAndroid extends js.Object {
   /**
     * Java类对象
     * Java类对象，可通过其属性获取类的常量，可通过方法来操作类的静态变量和方法，也通过new方法来创建类的实例对象。
-    * 	对于类的常量，则直接通过.后面跟随常量名称调用即可。
+    *     对于类的常量，则直接通过.后面跟随常量名称调用即可。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/android.html](http://www.html5plus.org/doc/zh_cn/android.html)
     */
@@ -22,7 +22,7 @@ trait PlusAndroid extends js.Object {
   /**
     * Java实例对象
     * Java实例对象，可通过其方法来操作实例的变量和方法。
-    * 	注意：必须通过plusGetAttribute()方法读取实例对象的属性值，通过plusSetAttribute()方法设置实例对象的属性值。
+    *     注意：必须通过plusGetAttribute()方法读取实例对象的属性值，通过plusSetAttribute()方法设置实例对象的属性值。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/android.html](http://www.html5plus.org/doc/zh_cn/android.html)
     */
@@ -53,7 +53,7 @@ trait PlusAndroid extends js.Object {
   /**
     * 导入Java类对象
     * 导入类对象后，就可以通过.操作符直接调用对象（类对象/实例对象）的方法。
-    * 	注意：导入类对象将会消耗较多的系统资源，通常不应该导入过多的类对象，可以使用plus.android.invoke()来调用未导入类实例对象的方法。
+    *     注意：导入类对象将会消耗较多的系统资源，通常不应该导入过多的类对象，可以使用plus.android.invoke()来调用未导入类实例对象的方法。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/android.html](http://www.html5plus.org/doc/zh_cn/android.html)
     */

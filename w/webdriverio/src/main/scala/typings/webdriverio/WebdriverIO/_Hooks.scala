@@ -1,7 +1,7 @@
 package typings.webdriverio.WebdriverIO
 
 import typings.std.Error
-import typings.webdriverio.AnonDuration
+import typings.webdriverio.anon.Duration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,16 +21,14 @@ trait _Hooks extends js.Object {
     js.Function5[
       /* test */ js.Any, 
       /* context */ js.Any, 
-      /* result */ AnonDuration, 
+      /* result */ Duration, 
       /* stepData */ js.UndefOr[js.Any], 
       /* world */ js.UndefOr[js.Any], 
       Unit
     ]
   ] = js.undefined
   var afterSuite: js.UndefOr[js.Function1[/* suite */ Suite, Unit]] = js.undefined
-  var afterTest: js.UndefOr[
-    js.Function3[/* test */ Test, /* context */ js.Any, /* result */ AnonDuration, Unit]
-  ] = js.undefined
+  var afterTest: js.UndefOr[js.Function3[/* test */ Test, /* context */ js.Any, /* result */ Duration, Unit]] = js.undefined
   var beforeCommand: js.UndefOr[js.Function2[/* commandName */ String, /* args */ js.Array[_], Unit]] = js.undefined
   var beforeHook: js.UndefOr[
     js.Function4[
@@ -50,9 +48,9 @@ object _Hooks {
   @scala.inline
   def apply(
     afterCommand: (/* commandName */ String, /* args */ js.Array[_], /* result */ js.Any, /* error */ js.UndefOr[Error]) => Unit = null,
-    afterHook: (/* test */ js.Any, /* context */ js.Any, /* result */ AnonDuration, /* stepData */ js.UndefOr[js.Any], /* world */ js.UndefOr[js.Any]) => Unit = null,
+    afterHook: (/* test */ js.Any, /* context */ js.Any, /* result */ Duration, /* stepData */ js.UndefOr[js.Any], /* world */ js.UndefOr[js.Any]) => Unit = null,
     afterSuite: /* suite */ Suite => Unit = null,
-    afterTest: (/* test */ Test, /* context */ js.Any, /* result */ AnonDuration) => Unit = null,
+    afterTest: (/* test */ Test, /* context */ js.Any, /* result */ Duration) => Unit = null,
     beforeCommand: (/* commandName */ String, /* args */ js.Array[_]) => Unit = null,
     beforeHook: (/* test */ js.Any, /* context */ js.Any, /* stepData */ js.UndefOr[js.Any], /* world */ js.UndefOr[js.Any]) => Unit = null,
     beforeSuite: /* suite */ Suite => Unit = null,

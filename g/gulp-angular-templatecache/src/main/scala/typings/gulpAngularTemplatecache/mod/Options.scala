@@ -67,7 +67,7 @@ object Options {
     if (module != null) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
     if (moduleSystem != null) __obj.updateDynamic("moduleSystem")(moduleSystem.asInstanceOf[js.Any])
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.asInstanceOf[js.Any])
+    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.get.asInstanceOf[js.Any])
     if (templateBody != null) __obj.updateDynamic("templateBody")(templateBody.asInstanceOf[js.Any])
     if (templateFooter != null) __obj.updateDynamic("templateFooter")(templateFooter.asInstanceOf[js.Any])
     if (templateHeader != null) __obj.updateDynamic("templateHeader")(templateHeader.asInstanceOf[js.Any])

@@ -27,19 +27,19 @@ object SnapshotOptions {
   @scala.inline
   def apply(
     format: png | jpg = null,
-    height: Int | Double = null,
-    quality: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
+    quality: js.UndefOr[Double] = js.undefined,
     region: Region = null,
     result: file | base64 = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): SnapshotOptions = {
     val __obj = js.Dynamic.literal()
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotOptions]
   }
 }

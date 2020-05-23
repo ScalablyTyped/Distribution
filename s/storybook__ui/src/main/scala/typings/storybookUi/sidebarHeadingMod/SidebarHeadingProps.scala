@@ -19,7 +19,7 @@ object SidebarHeadingProps {
   ): SidebarHeadingProps = {
     val __obj = js.Dynamic.literal(menu = menu.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(menuHighlighted)) __obj.updateDynamic("menuHighlighted")(menuHighlighted.asInstanceOf[js.Any])
+    if (!js.isUndefined(menuHighlighted)) __obj.updateDynamic("menuHighlighted")(menuHighlighted.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SidebarHeadingProps]
   }
 }

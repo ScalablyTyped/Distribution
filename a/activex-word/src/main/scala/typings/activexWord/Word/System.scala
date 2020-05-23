@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.System")
 @js.native
-class System protected () extends js.Object {
+trait System extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   val ComputerType: String = js.native
   val Country: WdCountry = js.native

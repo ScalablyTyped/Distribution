@@ -36,16 +36,16 @@ object TripOptionsRequest {
     refundable: js.UndefOr[Boolean] = js.undefined,
     saleCountry: String = null,
     slice: js.Array[SliceInput] = null,
-    solutions: Int | Double = null,
+    solutions: js.UndefOr[Double] = js.undefined,
     ticketingCountry: String = null
   ): TripOptionsRequest = {
     val __obj = js.Dynamic.literal()
     if (maxPrice != null) __obj.updateDynamic("maxPrice")(maxPrice.asInstanceOf[js.Any])
     if (passengers != null) __obj.updateDynamic("passengers")(passengers.asInstanceOf[js.Any])
-    if (!js.isUndefined(refundable)) __obj.updateDynamic("refundable")(refundable.asInstanceOf[js.Any])
+    if (!js.isUndefined(refundable)) __obj.updateDynamic("refundable")(refundable.get.asInstanceOf[js.Any])
     if (saleCountry != null) __obj.updateDynamic("saleCountry")(saleCountry.asInstanceOf[js.Any])
     if (slice != null) __obj.updateDynamic("slice")(slice.asInstanceOf[js.Any])
-    if (solutions != null) __obj.updateDynamic("solutions")(solutions.asInstanceOf[js.Any])
+    if (!js.isUndefined(solutions)) __obj.updateDynamic("solutions")(solutions.get.asInstanceOf[js.Any])
     if (ticketingCountry != null) __obj.updateDynamic("ticketingCountry")(ticketingCountry.asInstanceOf[js.Any])
     __obj.asInstanceOf[TripOptionsRequest]
   }

@@ -1,6 +1,6 @@
 package typings.blueprintjsTable.rowHeaderMod
 
-import typings.blueprintjsTable.AnonRowHeaderCellRenderer
+import typings.blueprintjsTable.anon.RowHeaderCellRenderer
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,6 +28,6 @@ class RowHeader ()
 @JSImport("@blueprintjs/table/lib/esm/headers/rowHeader", "RowHeader")
 @js.native
 object RowHeader extends js.Object {
-  var defaultProps: AnonRowHeaderCellRenderer = js.native
+  var defaultProps: RowHeaderCellRenderer = js.native
 }
 

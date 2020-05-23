@@ -13,14 +13,14 @@ trait LoadPolicyConfig extends js.Object {
 object LoadPolicyConfig {
   @scala.inline
   def apply(
-    maxEventLoopDelay: Int | Double = null,
-    maxHeapUsedBytes: Int | Double = null,
-    maxRssBytes: Int | Double = null
+    maxEventLoopDelay: js.UndefOr[Double] = js.undefined,
+    maxHeapUsedBytes: js.UndefOr[Double] = js.undefined,
+    maxRssBytes: js.UndefOr[Double] = js.undefined
   ): LoadPolicyConfig = {
     val __obj = js.Dynamic.literal()
-    if (maxEventLoopDelay != null) __obj.updateDynamic("maxEventLoopDelay")(maxEventLoopDelay.asInstanceOf[js.Any])
-    if (maxHeapUsedBytes != null) __obj.updateDynamic("maxHeapUsedBytes")(maxHeapUsedBytes.asInstanceOf[js.Any])
-    if (maxRssBytes != null) __obj.updateDynamic("maxRssBytes")(maxRssBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxEventLoopDelay)) __obj.updateDynamic("maxEventLoopDelay")(maxEventLoopDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeapUsedBytes)) __obj.updateDynamic("maxHeapUsedBytes")(maxHeapUsedBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRssBytes)) __obj.updateDynamic("maxRssBytes")(maxRssBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadPolicyConfig]
   }
 }

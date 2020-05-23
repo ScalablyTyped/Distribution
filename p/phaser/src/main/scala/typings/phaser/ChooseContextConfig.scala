@@ -26,13 +26,13 @@ object ChooseContextConfig {
   @scala.inline
   def apply(
     filters: js.Array[ContextFilter] = null,
-    maxSize: Int | Double = null,
-    minSize: Int | Double = null
+    maxSize: js.UndefOr[Double] = js.undefined,
+    minSize: js.UndefOr[Double] = js.undefined
   ): ChooseContextConfig = {
     val __obj = js.Dynamic.literal()
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
-    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSize)) __obj.updateDynamic("maxSize")(maxSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSize)) __obj.updateDynamic("minSize")(minSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChooseContextConfig]
   }
 }

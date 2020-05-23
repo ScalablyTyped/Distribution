@@ -1,8 +1,8 @@
 package typings.cytoscape.mod
 
-import typings.cytoscape.AnonComponents
-import typings.cytoscape.AnonComponentsCut
-import typings.cytoscape.AnonCut
+import typings.cytoscape.anon.Components
+import typings.cytoscape.anon.ComponentsCut
+import typings.cytoscape.anon.Cut
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -86,31 +86,31 @@ trait CollectionAlgorithms extends js.Object {
     * as well as their respective cut vertices, using an algorithm due to Hopcroft and Tarjan.
     * http://js.cytoscape.org/#eles.hopcroftTarjanBiconnected
     */
-  def hopcroftTarjanBiconnected(): AnonCut
+  def hopcroftTarjanBiconnected(): Cut
   /**
     * Finds the biconnected components in an undirected graph,
     * as well as their respective cut vertices, using an algorithm due to Hopcroft and Tarjan.
     * http://js.cytoscape.org/#eles.hopcroftTarjanBiconnected
     */
-  def hopcroftTarjanBiconnectedComponents(): AnonCut
+  def hopcroftTarjanBiconnectedComponents(): Cut
   /**
     * Finds the biconnected components in an undirected graph,
     * as well as their respective cut vertices, using an algorithm due to Hopcroft and Tarjan.
     * http://js.cytoscape.org/#eles.hopcroftTarjanBiconnected
     */
-  def htb(): AnonCut
+  def htb(): Cut
   /**
     * Finds the biconnected components in an undirected graph,
     * as well as their respective cut vertices, using an algorithm due to Hopcroft and Tarjan.
     * http://js.cytoscape.org/#eles.hopcroftTarjanBiconnected
     */
-  def htbc(): AnonCut
+  def htbc(): Cut
   /**
     * Finds the minimum cut in a graph using the Karger-Stein algorithm.
     * The optimal result is found with a high probability, but without guarantee.
     * http://js.cytoscape.org/#eles.kargerStein
     */
-  def kargerStein(): AnonComponents
+  def kargerStein(): Components
   /**
     * Perform Kruskal's algorithm on the elements in the collection,
     * returning the minimum spanning tree, assuming undirected edges.
@@ -126,22 +126,22 @@ trait CollectionAlgorithms extends js.Object {
     * Finds the strongly connected components of a directed graph using Tarjan's algorithm.
     * http://js.cytoscape.org/#eles.tarjanStronglyConnected
     */
-  def tarjanStronglyConnected(): AnonComponentsCut
+  def tarjanStronglyConnected(): ComponentsCut
   /**
     * Finds the strongly connected components of a directed graph using Tarjan's algorithm.
     * http://js.cytoscape.org/#eles.tarjanStronglyConnected
     */
-  def tarjanStronglyConnectedComponents(): AnonComponentsCut
+  def tarjanStronglyConnectedComponents(): ComponentsCut
   /**
     * Finds the strongly connected components of a directed graph using Tarjan's algorithm.
     * http://js.cytoscape.org/#eles.tarjanStronglyConnected
     */
-  def tsc(): AnonComponentsCut
+  def tsc(): ComponentsCut
   /**
     * Finds the strongly connected components of a directed graph using Tarjan's algorithm.
     * http://js.cytoscape.org/#eles.tarjanStronglyConnected
     */
-  def tscc(): AnonComponentsCut
+  def tscc(): ComponentsCut
 }
 
 object CollectionAlgorithms {
@@ -160,17 +160,17 @@ object CollectionAlgorithms {
     dfs: SearchFirstOptions => SearchFirstResult,
     dijkstra: SearchDijkstraOptions => SearchDijkstraResult,
     floydWarshall: SearchFloydWarshallOptions => SearchFloydWarshallResult,
-    hopcroftTarjanBiconnected: () => AnonCut,
-    hopcroftTarjanBiconnectedComponents: () => AnonCut,
-    htb: () => AnonCut,
-    htbc: () => AnonCut,
-    kargerStein: () => AnonComponents,
+    hopcroftTarjanBiconnected: () => Cut,
+    hopcroftTarjanBiconnectedComponents: () => Cut,
+    htb: () => Cut,
+    htbc: () => Cut,
+    kargerStein: () => Components,
     kruskal: js.Function1[/* edge */ EdgeCollection, Double] => CollectionReturnValue,
     pageRank: SearchPageRankOptions => SearchPageRankResult,
-    tarjanStronglyConnected: () => AnonComponentsCut,
-    tarjanStronglyConnectedComponents: () => AnonComponentsCut,
-    tsc: () => AnonComponentsCut,
-    tscc: () => AnonComponentsCut
+    tarjanStronglyConnected: () => ComponentsCut,
+    tarjanStronglyConnectedComponents: () => ComponentsCut,
+    tsc: () => ComponentsCut,
+    tscc: () => ComponentsCut
   ): CollectionAlgorithms = {
     val __obj = js.Dynamic.literal(aStar = js.Any.fromFunction1(aStar), bellmanFord = js.Any.fromFunction1(bellmanFord), betweennessCentrality = js.Any.fromFunction1(betweennessCentrality), bfs = js.Any.fromFunction1(bfs), breadthFirstSearch = js.Any.fromFunction1(breadthFirstSearch), closenessCentrality = js.Any.fromFunction1(closenessCentrality), closenessCentralityNormalized = js.Any.fromFunction1(closenessCentralityNormalized), degreeCentrality = js.Any.fromFunction1(degreeCentrality), degreeCentralityNormalized = js.Any.fromFunction1(degreeCentralityNormalized), depthFirstSearch = js.Any.fromFunction1(depthFirstSearch), dfs = js.Any.fromFunction1(dfs), dijkstra = js.Any.fromFunction1(dijkstra), floydWarshall = js.Any.fromFunction1(floydWarshall), hopcroftTarjanBiconnected = js.Any.fromFunction0(hopcroftTarjanBiconnected), hopcroftTarjanBiconnectedComponents = js.Any.fromFunction0(hopcroftTarjanBiconnectedComponents), htb = js.Any.fromFunction0(htb), htbc = js.Any.fromFunction0(htbc), kargerStein = js.Any.fromFunction0(kargerStein), kruskal = js.Any.fromFunction1(kruskal), pageRank = js.Any.fromFunction1(pageRank), tarjanStronglyConnected = js.Any.fromFunction0(tarjanStronglyConnected), tarjanStronglyConnectedComponents = js.Any.fromFunction0(tarjanStronglyConnectedComponents), tsc = js.Any.fromFunction0(tsc), tscc = js.Any.fromFunction0(tscc))
     __obj.asInstanceOf[CollectionAlgorithms]

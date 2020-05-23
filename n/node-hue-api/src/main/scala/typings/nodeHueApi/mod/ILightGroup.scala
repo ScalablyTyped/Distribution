@@ -1,12 +1,12 @@
 package typings.nodeHueApi.mod
 
-import typings.nodeHueApi.AnonBri
+import typings.nodeHueApi.anon.Bri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ILightGroup extends js.Object {
-  var action: js.UndefOr[AnonBri] = js.undefined
+  var action: js.UndefOr[Bri] = js.undefined
   var `class`: js.UndefOr[RoomType] = js.undefined
   var id: String
   var lights: js.UndefOr[js.Array[String]] = js.undefined
@@ -20,7 +20,7 @@ object ILightGroup {
     id: String,
     name: String,
     `type`: LightGroupType,
-    action: AnonBri = null,
+    action: Bri = null,
     `class`: RoomType = null,
     lights: js.Array[String] = null
   ): ILightGroup = {

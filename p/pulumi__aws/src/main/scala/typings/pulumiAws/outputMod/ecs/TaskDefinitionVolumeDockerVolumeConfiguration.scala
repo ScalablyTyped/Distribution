@@ -39,7 +39,7 @@ object TaskDefinitionVolumeDockerVolumeConfiguration {
     labels: StringDictionary[String] = null
   ): TaskDefinitionVolumeDockerVolumeConfiguration = {
     val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoprovision)) __obj.updateDynamic("autoprovision")(autoprovision.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoprovision)) __obj.updateDynamic("autoprovision")(autoprovision.get.asInstanceOf[js.Any])
     if (driver != null) __obj.updateDynamic("driver")(driver.asInstanceOf[js.Any])
     if (driverOpts != null) __obj.updateDynamic("driverOpts")(driverOpts.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])

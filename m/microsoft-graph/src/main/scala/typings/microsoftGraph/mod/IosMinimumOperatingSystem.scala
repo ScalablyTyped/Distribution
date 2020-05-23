@@ -30,12 +30,12 @@ object IosMinimumOperatingSystem {
     v9_0: js.UndefOr[Boolean] = js.undefined
   ): IosMinimumOperatingSystem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(v10_0)) __obj.updateDynamic("v10_0")(v10_0.asInstanceOf[js.Any])
-    if (!js.isUndefined(v11_0)) __obj.updateDynamic("v11_0")(v11_0.asInstanceOf[js.Any])
-    if (!js.isUndefined(v12_0)) __obj.updateDynamic("v12_0")(v12_0.asInstanceOf[js.Any])
-    if (!js.isUndefined(v13_0)) __obj.updateDynamic("v13_0")(v13_0.asInstanceOf[js.Any])
-    if (!js.isUndefined(v8_0)) __obj.updateDynamic("v8_0")(v8_0.asInstanceOf[js.Any])
-    if (!js.isUndefined(v9_0)) __obj.updateDynamic("v9_0")(v9_0.asInstanceOf[js.Any])
+    if (!js.isUndefined(v10_0)) __obj.updateDynamic("v10_0")(v10_0.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(v11_0)) __obj.updateDynamic("v11_0")(v11_0.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(v12_0)) __obj.updateDynamic("v12_0")(v12_0.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(v13_0)) __obj.updateDynamic("v13_0")(v13_0.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(v8_0)) __obj.updateDynamic("v8_0")(v8_0.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(v9_0)) __obj.updateDynamic("v9_0")(v9_0.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IosMinimumOperatingSystem]
   }
 }

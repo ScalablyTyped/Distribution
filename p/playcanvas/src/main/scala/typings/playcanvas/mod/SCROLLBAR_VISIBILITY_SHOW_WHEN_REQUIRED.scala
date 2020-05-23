@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @type {number}
-  * @name pc.SCROLLBAR_VISIBILITY_SHOW_WHEN_REQUIRED
-  * @description The scrollbar will be visible only when content exceeds the size of the viewport.
+  * The scrollbar will be visible only when content exceeds the size of the viewport.
   */
 @JSImport("playcanvas", "SCROLLBAR_VISIBILITY_SHOW_WHEN_REQUIRED")
 @js.native

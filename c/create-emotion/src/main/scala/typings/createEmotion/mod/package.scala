@@ -10,7 +10,7 @@ package object mod {
     scala.Null | scala.Boolean | java.lang.String | (org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Null | scala.Boolean | java.lang.String]]) | typings.createEmotion.mod.ArrayClassNameArg
   ]
   /* Rewritten from type alias, can be one of: 
-    - `js.undefined`
+    - js.UndefOr[scala.Nothing]
     - scala.Null
     - scala.Boolean
     - java.lang.String

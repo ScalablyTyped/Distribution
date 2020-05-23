@@ -28,12 +28,12 @@ object Props {
     restDelta: Double,
     timeConstant: Double,
     velocity: Double,
-    max: Int | Double = null,
-    min: Int | Double = null
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined
   ): Props = {
     val __obj = js.Dynamic.literal(bounceDamping = bounceDamping.asInstanceOf[js.Any], bounceStiffness = bounceStiffness.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], modifyTarget = js.Any.fromFunction1(modifyTarget), power = power.asInstanceOf[js.Any], restDelta = restDelta.asInstanceOf[js.Any], timeConstant = timeConstant.asInstanceOf[js.Any], velocity = velocity.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

@@ -2,13 +2,14 @@ package typings.linq4js
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
+import typings.linq4js.anon.GroupValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait Array[T] extends js.Object {
-  var _linq4js_ : AnonGroupValue = js.native
+  var _linq4js_ : GroupValue = js.native
   /**
     * Adds an object to the array
     * @param object The object to add

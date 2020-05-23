@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.babylonjs.anon.Size
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
@@ -30,8 +31,8 @@ object planeBuilderMod extends js.Object {
       * @returns the plane mesh
       * @see https://doc.babylonjs.com/how_to/set_shapes#plane
       */
-    def CreatePlane(name: String, options: AnonSize): Mesh = js.native
-    def CreatePlane(name: String, options: AnonSize, scene: Nullable[Scene]): Mesh = js.native
+    def CreatePlane(name: String, options: Size): Mesh = js.native
+    def CreatePlane(name: String, options: Size, scene: Nullable[Scene]): Mesh = js.native
   }
   
 }

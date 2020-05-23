@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Security.Authentication.Web.Provider
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object WebAccountClientViewType extends js.Object {
   /** Shows only the Id. */
   @js.native
   sealed trait idOnly extends WebAccountClientViewType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WebAccountClientViewType with Double] = js.native
-  /* 1 */ @js.native
-  object idAndProperties extends TopLevel[idAndProperties with Double]
-  
-  /* 0 */ @js.native
-  object idOnly extends TopLevel[idOnly with Double]
   
 }
 

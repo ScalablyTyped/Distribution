@@ -1,7 +1,7 @@
 package typings.webidl2.mod
 
 import typings.std.Error
-import typings.webidl2.AnonBareMessage
+import typings.webidl2.anon.BareMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("webidl2", "WebIDLParseError")
 @js.native
 class WebIDLParseError protected () extends Error {
-  def this(options: AnonBareMessage) = this()
+  def this(options: BareMessage) = this()
   var bareMessage: String = js.native
   var context: String = js.native
   /** a short peek at the text at the point where the error happened */

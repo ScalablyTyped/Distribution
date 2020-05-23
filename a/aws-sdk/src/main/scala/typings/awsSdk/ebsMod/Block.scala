@@ -18,9 +18,9 @@ trait Block extends js.Object {
 
 object Block {
   @scala.inline
-  def apply(BlockIndex: Int | Double = null, BlockToken: BlockToken = null): Block = {
+  def apply(BlockIndex: js.UndefOr[BlockIndex] = js.undefined, BlockToken: BlockToken = null): Block = {
     val __obj = js.Dynamic.literal()
-    if (BlockIndex != null) __obj.updateDynamic("BlockIndex")(BlockIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(BlockIndex)) __obj.updateDynamic("BlockIndex")(BlockIndex.get.asInstanceOf[js.Any])
     if (BlockToken != null) __obj.updateDynamic("BlockToken")(BlockToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[Block]
   }

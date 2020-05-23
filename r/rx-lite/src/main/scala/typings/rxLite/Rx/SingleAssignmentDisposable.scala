@@ -6,14 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Single assignment
-@JSGlobal("Rx.SingleAssignmentDisposable")
-@js.native
-class SingleAssignmentDisposable () extends IDisposable {
-  var current: IDisposable = js.native
-  var isDisposed: Boolean = js.native
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
-  def getDisposable(): IDisposable = js.native
-  def setDisposable(value: IDisposable): Unit = js.native
+trait SingleAssignmentDisposable extends IDisposable {
+  var current: IDisposable
+  var isDisposed: Boolean
+  def getDisposable(): IDisposable
+  def setDisposable(value: IDisposable): Unit
+}
+
+object SingleAssignmentDisposable {
+  @scala.inline
+  def apply(
+    current: IDisposable,
+    dispose: () => Unit,
+    getDisposable: () => IDisposable,
+    isDisposed: Boolean,
+    setDisposable: IDisposable => Unit
+  ): SingleAssignmentDisposable = {
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), getDisposable = js.Any.fromFunction0(getDisposable), isDisposed = isDisposed.asInstanceOf[js.Any], setDisposable = js.Any.fromFunction1(setDisposable))
+    __obj.asInstanceOf[SingleAssignmentDisposable]
+  }
 }
 

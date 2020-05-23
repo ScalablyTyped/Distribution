@@ -18,12 +18,12 @@ trait ListTenantsResult extends js.Object {
   /**
     * The list of {@link admin.auth.Tenant `Tenant`} objects for the downloaded batch.
     */
-  var tenants: js.Array[Tenant]
+  var tenants: js.Array[typings.firebaseAdmin.authMod.admin.auth.Tenant]
 }
 
 object ListTenantsResult {
   @scala.inline
-  def apply(tenants: js.Array[Tenant], pageToken: String = null): ListTenantsResult = {
+  def apply(tenants: js.Array[typings.firebaseAdmin.authMod.admin.auth.Tenant], pageToken: String = null): ListTenantsResult = {
     val __obj = js.Dynamic.literal(tenants = tenants.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTenantsResult]

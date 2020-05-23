@@ -9,6 +9,6 @@ package object toastr {
     /* message */ java.lang.String, 
     /* title */ js.UndefOr[java.lang.String], 
     /* overrides */ js.UndefOr[typings.toastr.ToastrOptions], 
-    typings.jquery.JQuery_[typings.std.HTMLElement]
+    typings.jquery.JQuery[typings.std.HTMLElement]
   ]
 }

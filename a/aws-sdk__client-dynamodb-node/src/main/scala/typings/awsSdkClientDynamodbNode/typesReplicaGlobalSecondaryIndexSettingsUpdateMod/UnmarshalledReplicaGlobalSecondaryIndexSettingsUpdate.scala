@@ -18,11 +18,11 @@ object UnmarshalledReplicaGlobalSecondaryIndexSettingsUpdate {
   def apply(
     IndexName: String,
     ProvisionedReadCapacityAutoScalingSettingsUpdate: UnmarshalledAutoScalingSettingsUpdate = null,
-    ProvisionedReadCapacityUnits: Int | Double = null
+    ProvisionedReadCapacityUnits: js.UndefOr[Double] = js.undefined
   ): UnmarshalledReplicaGlobalSecondaryIndexSettingsUpdate = {
     val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any])
     if (ProvisionedReadCapacityAutoScalingSettingsUpdate != null) __obj.updateDynamic("ProvisionedReadCapacityAutoScalingSettingsUpdate")(ProvisionedReadCapacityAutoScalingSettingsUpdate.asInstanceOf[js.Any])
-    if (ProvisionedReadCapacityUnits != null) __obj.updateDynamic("ProvisionedReadCapacityUnits")(ProvisionedReadCapacityUnits.asInstanceOf[js.Any])
+    if (!js.isUndefined(ProvisionedReadCapacityUnits)) __obj.updateDynamic("ProvisionedReadCapacityUnits")(ProvisionedReadCapacityUnits.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledReplicaGlobalSecondaryIndexSettingsUpdate]
   }
 }

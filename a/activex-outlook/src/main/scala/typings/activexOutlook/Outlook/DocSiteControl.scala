@@ -4,12 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Outlook._DocSiteControl")
-@js.native
-class DocSiteControl protected () extends js.Object {
+trait DocSiteControl extends js.Object {
   @JSName("Outlook._DocSiteControl_typekey")
-  var OutlookDot_DocSiteControl_typekey: DocSiteControl = js.native
-  var ReadOnly: Double = js.native
-  var SuppressAttachments: Double = js.native
+  var OutlookDot_DocSiteControl_typekey: DocSiteControl
+  var ReadOnly: Double
+  var SuppressAttachments: Double
+}
+
+object DocSiteControl {
+  @scala.inline
+  def apply(OutlookDot_DocSiteControl_typekey: DocSiteControl, ReadOnly: Double, SuppressAttachments: Double): DocSiteControl = {
+    val __obj = js.Dynamic.literal(ReadOnly = ReadOnly.asInstanceOf[js.Any], SuppressAttachments = SuppressAttachments.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook._DocSiteControl_typekey")(OutlookDot_DocSiteControl_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DocSiteControl]
+  }
 }
 

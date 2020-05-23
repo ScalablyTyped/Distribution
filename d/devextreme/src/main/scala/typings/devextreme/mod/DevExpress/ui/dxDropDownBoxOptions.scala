@@ -1,14 +1,13 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.AnonComponentElement
-import typings.devextreme.AnonComponentT
-import typings.devextreme.AnonComponentValue
-import typings.devextreme.AnonElement
-import typings.devextreme.AnonElementEventJQueryEvent
-import typings.devextreme.AnonIcon
-import typings.devextreme.AnonJQueryEvent
-import typings.devextreme.AnonModel
-import typings.devextreme.AnonName
+import typings.devextreme.anon.ComponentElement
+import typings.devextreme.anon.ComponentT
+import typings.devextreme.anon.ComponentValue
+import typings.devextreme.anon.ElementEventJQueryEvent
+import typings.devextreme.anon.Icon
+import typings.devextreme.anon.JQueryEvent
+import typings.devextreme.anon.Model
+import typings.devextreme.anon.Name
 import typings.devextreme.devextremeStrings.always
 import typings.devextreme.devextremeStrings.auto
 import typings.devextreme.devextremeStrings.clear
@@ -31,18 +30,18 @@ import typings.devextreme.devextremeStrings.valid
 import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.DevExpress.data.DataSource
 import typings.devextreme.mod.DevExpress.data.DataSourceOptions
-import typings.devextreme.mod._Global_.JQuery
+import typings.devextreme.mod.global.JQuery
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.devextreme.mod.DevExpress.ui.DataExpressionMixinOptions because var conflicts: value. Inlined dataSource, displayExpr, itemTemplate, items, valueExpr */ trait dxDropDownBoxOptions extends dxDropDownEditorOptions[dxDropDownBox] {
   /** @name dxDropDownBox.Options.contentTemplate */
   var contentTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[
-      /* templateData */ AnonComponentValue, 
+      /* templateData */ ComponentValue, 
       /* contentElement */ dxElement, 
       String | Element | JQuery
     ])
@@ -84,7 +83,7 @@ object dxDropDownBoxOptions {
     bindingOptions: js.Any = null,
     buttons: js.Array[clear | dropDown | dxTextEditorButton] = null,
     contentTemplate: typings.devextreme.mod.DevExpress.core.template | (js.Function2[
-      /* templateData */ AnonComponentValue, 
+      /* templateData */ ComponentValue, 
       /* contentElement */ dxElement, 
       String | Element | JQuery
     ]) = null,
@@ -93,7 +92,7 @@ object dxDropDownBoxOptions {
     disabled: js.UndefOr[Boolean] = js.undefined,
     displayExpr: String | (js.Function1[/* item */ js.Any, String]) = null,
     displayValueFormatter: /* value */ String | js.Array[_] => String = null,
-    dropDownButtonTemplate: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* buttonData */ AnonIcon, /* contentElement */ dxElement, String | Element | JQuery]) = null,
+    dropDownButtonTemplate: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* buttonData */ Icon, /* contentElement */ dxElement, String | Element | JQuery]) = null,
     dropDownOptions: dxPopupOptions[dxPopup] = null,
     elementAttr: js.Any = null,
     fieldTemplate: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* value */ js.Any, /* fieldElement */ dxElement, String | Element | JQuery]) = null,
@@ -117,24 +116,24 @@ object dxDropDownBoxOptions {
     maxLength: String | Double = null,
     mode: email | password | search | tel | text | url = null,
     name: String = null,
-    onChange: /* e */ AnonElementEventJQueryEvent[dxDropDownBox] => _ = null,
-    onClosed: /* e */ AnonComponentT[dxDropDownBox] => _ = null,
-    onContentReady: /* e */ AnonComponentElement[dxDropDownBox] => _ = null,
-    onCopy: /* e */ AnonElementEventJQueryEvent[dxDropDownBox] => _ = null,
-    onCut: /* e */ AnonElementEventJQueryEvent[dxDropDownBox] => _ = null,
-    onDisposing: /* e */ AnonModel[dxDropDownBox] => _ = null,
-    onEnterKey: /* e */ AnonElementEventJQueryEvent[dxDropDownBox] => _ = null,
-    onFocusIn: /* e */ AnonElementEventJQueryEvent[dxDropDownBox] => _ = null,
-    onFocusOut: /* e */ AnonElementEventJQueryEvent[dxDropDownBox] => _ = null,
-    onInitialized: /* e */ AnonElement[dxDropDownBox] => _ = null,
-    onInput: /* e */ AnonElementEventJQueryEvent[dxDropDownBox] => _ = null,
-    onKeyDown: /* e */ AnonElementEventJQueryEvent[dxDropDownBox] => _ = null,
-    onKeyPress: /* e */ AnonElementEventJQueryEvent[dxDropDownBox] => _ = null,
-    onKeyUp: /* e */ AnonElementEventJQueryEvent[dxDropDownBox] => _ = null,
-    onOpened: /* e */ AnonComponentT[dxDropDownBox] => _ = null,
-    onOptionChanged: /* e */ AnonName[dxDropDownBox] => _ = null,
-    onPaste: /* e */ AnonElementEventJQueryEvent[dxDropDownBox] => _ = null,
-    onValueChanged: /* e */ AnonJQueryEvent[dxDropDownBox] => _ = null,
+    onChange: /* e */ ElementEventJQueryEvent[dxDropDownBox] => _ = null,
+    onClosed: /* e */ ComponentT[dxDropDownBox] => _ = null,
+    onContentReady: /* e */ ComponentElement[dxDropDownBox] => _ = null,
+    onCopy: /* e */ ElementEventJQueryEvent[dxDropDownBox] => _ = null,
+    onCut: /* e */ ElementEventJQueryEvent[dxDropDownBox] => _ = null,
+    onDisposing: /* e */ Model[dxDropDownBox] => _ = null,
+    onEnterKey: /* e */ ElementEventJQueryEvent[dxDropDownBox] => _ = null,
+    onFocusIn: /* e */ ElementEventJQueryEvent[dxDropDownBox] => _ = null,
+    onFocusOut: /* e */ ElementEventJQueryEvent[dxDropDownBox] => _ = null,
+    onInitialized: /* e */ typings.devextreme.anon.Element[dxDropDownBox] => _ = null,
+    onInput: /* e */ ElementEventJQueryEvent[dxDropDownBox] => _ = null,
+    onKeyDown: /* e */ ElementEventJQueryEvent[dxDropDownBox] => _ = null,
+    onKeyPress: /* e */ ElementEventJQueryEvent[dxDropDownBox] => _ = null,
+    onKeyUp: /* e */ ElementEventJQueryEvent[dxDropDownBox] => _ = null,
+    onOpened: /* e */ ComponentT[dxDropDownBox] => _ = null,
+    onOptionChanged: /* e */ Name[dxDropDownBox] => _ = null,
+    onPaste: /* e */ ElementEventJQueryEvent[dxDropDownBox] => _ = null,
+    onValueChanged: /* e */ JQueryEvent[dxDropDownBox] => _ = null,
     openOnFieldClick: js.UndefOr[Boolean] = js.undefined,
     opened: js.UndefOr[Boolean] = js.undefined,
     placeholder: String = null,
@@ -145,7 +144,7 @@ object dxDropDownBoxOptions {
     showMaskMode: always | onFocus = null,
     spellcheck: js.UndefOr[Boolean] = js.undefined,
     stylingMode: outlined | underlined | filled = null,
-    tabIndex: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     text: String = null,
     useMaskedValue: js.UndefOr[Boolean] = js.undefined,
     validationError: js.Any = null,
@@ -159,28 +158,28 @@ object dxDropDownBoxOptions {
     width: Double | String | (js.Function0[Double | String]) = null
   ): dxDropDownBoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(acceptCustomValue)) __obj.updateDynamic("acceptCustomValue")(acceptCustomValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(acceptCustomValue)) __obj.updateDynamic("acceptCustomValue")(acceptCustomValue.get.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.get.asInstanceOf[js.Any])
     if (applyValueMode != null) __obj.updateDynamic("applyValueMode")(applyValueMode.asInstanceOf[js.Any])
     if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
     if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
     if (contentTemplate != null) __obj.updateDynamic("contentTemplate")(contentTemplate.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(deferRendering)) __obj.updateDynamic("deferRendering")(deferRendering.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(deferRendering)) __obj.updateDynamic("deferRendering")(deferRendering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (displayExpr != null) __obj.updateDynamic("displayExpr")(displayExpr.asInstanceOf[js.Any])
     if (displayValueFormatter != null) __obj.updateDynamic("displayValueFormatter")(js.Any.fromFunction1(displayValueFormatter))
     if (dropDownButtonTemplate != null) __obj.updateDynamic("dropDownButtonTemplate")(dropDownButtonTemplate.asInstanceOf[js.Any])
     if (dropDownOptions != null) __obj.updateDynamic("dropDownOptions")(dropDownOptions.asInstanceOf[js.Any])
     if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
     if (fieldTemplate != null) __obj.updateDynamic("fieldTemplate")(fieldTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.get.asInstanceOf[js.Any])
     if (inputAttr != null) __obj.updateDynamic("inputAttr")(inputAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(isValid)) __obj.updateDynamic("isValid")(isValid.asInstanceOf[js.Any])
+    if (!js.isUndefined(isValid)) __obj.updateDynamic("isValid")(isValid.get.asInstanceOf[js.Any])
     if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(itemTemplate.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
@@ -208,19 +207,19 @@ object dxDropDownBoxOptions {
     if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
     if (onPaste != null) __obj.updateDynamic("onPaste")(js.Any.fromFunction1(onPaste))
     if (onValueChanged != null) __obj.updateDynamic("onValueChanged")(js.Any.fromFunction1(onValueChanged))
-    if (!js.isUndefined(openOnFieldClick)) __obj.updateDynamic("openOnFieldClick")(openOnFieldClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(opened)) __obj.updateDynamic("opened")(opened.asInstanceOf[js.Any])
+    if (!js.isUndefined(openOnFieldClick)) __obj.updateDynamic("openOnFieldClick")(openOnFieldClick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opened)) __obj.updateDynamic("opened")(opened.get.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(showClearButton)) __obj.updateDynamic("showClearButton")(showClearButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDropDownButton)) __obj.updateDynamic("showDropDownButton")(showDropDownButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showClearButton)) __obj.updateDynamic("showClearButton")(showClearButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDropDownButton)) __obj.updateDynamic("showDropDownButton")(showDropDownButton.get.asInstanceOf[js.Any])
     if (showMaskMode != null) __obj.updateDynamic("showMaskMode")(showMaskMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck.get.asInstanceOf[js.Any])
     if (stylingMode != null) __obj.updateDynamic("stylingMode")(stylingMode.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMaskedValue)) __obj.updateDynamic("useMaskedValue")(useMaskedValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(useMaskedValue)) __obj.updateDynamic("useMaskedValue")(useMaskedValue.get.asInstanceOf[js.Any])
     if (validationError != null) __obj.updateDynamic("validationError")(validationError.asInstanceOf[js.Any])
     if (validationErrors != null) __obj.updateDynamic("validationErrors")(validationErrors.asInstanceOf[js.Any])
     if (validationMessageMode != null) __obj.updateDynamic("validationMessageMode")(validationMessageMode.asInstanceOf[js.Any])
@@ -228,7 +227,7 @@ object dxDropDownBoxOptions {
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (valueChangeEvent != null) __obj.updateDynamic("valueChangeEvent")(valueChangeEvent.asInstanceOf[js.Any])
     if (valueExpr != null) __obj.updateDynamic("valueExpr")(valueExpr.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxDropDownBoxOptions]
   }

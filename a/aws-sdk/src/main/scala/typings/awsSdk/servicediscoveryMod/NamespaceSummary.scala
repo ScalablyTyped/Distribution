@@ -46,7 +46,7 @@ object NamespaceSummary {
     Id: ResourceId = null,
     Name: NamespaceName = null,
     Properties: NamespaceProperties = null,
-    ServiceCount: Int | Double = null,
+    ServiceCount: js.UndefOr[ResourceCount] = js.undefined,
     Type: NamespaceType = null
   ): NamespaceSummary = {
     val __obj = js.Dynamic.literal()
@@ -56,7 +56,7 @@ object NamespaceSummary {
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (Properties != null) __obj.updateDynamic("Properties")(Properties.asInstanceOf[js.Any])
-    if (ServiceCount != null) __obj.updateDynamic("ServiceCount")(ServiceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(ServiceCount)) __obj.updateDynamic("ServiceCount")(ServiceCount.get.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamespaceSummary]
   }

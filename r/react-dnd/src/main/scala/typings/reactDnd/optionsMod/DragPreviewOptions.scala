@@ -41,18 +41,18 @@ trait DragPreviewOptions extends js.Object {
 object DragPreviewOptions {
   @scala.inline
   def apply(
-    anchorX: Int | Double = null,
-    anchorY: Int | Double = null,
+    anchorX: js.UndefOr[Double] = js.undefined,
+    anchorY: js.UndefOr[Double] = js.undefined,
     captureDraggingState: js.UndefOr[Boolean] = js.undefined,
-    offsetX: Int | Double = null,
-    offsetY: Int | Double = null
+    offsetX: js.UndefOr[Double] = js.undefined,
+    offsetY: js.UndefOr[Double] = js.undefined
   ): DragPreviewOptions = {
     val __obj = js.Dynamic.literal()
-    if (anchorX != null) __obj.updateDynamic("anchorX")(anchorX.asInstanceOf[js.Any])
-    if (anchorY != null) __obj.updateDynamic("anchorY")(anchorY.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureDraggingState)) __obj.updateDynamic("captureDraggingState")(captureDraggingState.asInstanceOf[js.Any])
-    if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX.asInstanceOf[js.Any])
-    if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY.asInstanceOf[js.Any])
+    if (!js.isUndefined(anchorX)) __obj.updateDynamic("anchorX")(anchorX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(anchorY)) __obj.updateDynamic("anchorY")(anchorY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(captureDraggingState)) __obj.updateDynamic("captureDraggingState")(captureDraggingState.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetX)) __obj.updateDynamic("offsetX")(offsetX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetY)) __obj.updateDynamic("offsetY")(offsetY.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragPreviewOptions]
   }
 }

@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation._
 @js.native
 class SignatureHelp () extends js.Object {
   /**
-  		 * The active parameter of the active signature.
-  		 */
+    * The active parameter of the active signature.
+    */
   var activeParameter: Double = js.native
   /**
-  		 * The active signature.
-  		 */
+    * The active signature.
+    */
   var activeSignature: Double = js.native
   /**
-  		 * One or more signatures.
-  		 */
+    * One or more signatures.
+    */
   var signatures: js.Array[SignatureInformation] = js.native
 }
 

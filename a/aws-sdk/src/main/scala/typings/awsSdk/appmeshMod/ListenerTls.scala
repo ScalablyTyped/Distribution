@@ -15,15 +15,18 @@ trait ListenerTls extends js.Object {
     
     
     
-    STRICT – Listener only accepts connections with TLS enabled. 
+    STRICT – Listener only accepts connections with TLS
+    enabled. 
     
     
     
-    PERMISSIVE – Listener accepts connections with or without TLS enabled.
+    PERMISSIVE – Listener accepts connections with or
+    without TLS enabled.
     
     
     
-    DISABLED –  Listener only accepts connections without TLS. 
+    DISABLED – Listener only accepts connections without
+    TLS. 
     
     
     */

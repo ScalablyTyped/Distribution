@@ -1,7 +1,7 @@
 package typings.electronPackager.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.electronPackager.AnonName
+import typings.electronPackager.anon.Name
 import typings.electronPackager.electronPackagerBooleans.`false`
 import typings.std.RegExp
 import scala.scalajs.js
@@ -127,7 +127,7 @@ trait Options extends js.Object {
     */
   var prebuiltAsar: js.UndefOr[String] = js.undefined
   /** The URL protocol schemes the app supports. */
-  var protocols: js.UndefOr[js.Array[AnonName]] = js.undefined
+  var protocols: js.UndefOr[js.Array[Name]] = js.undefined
   /**
     * Runs the package manager command to remove all of the packages specified in the devDependencies section of package.json from the outputted Electron app.
     */
@@ -178,7 +178,7 @@ object Options {
     overwrite: js.UndefOr[Boolean] = js.undefined,
     platform: platform = null,
     prebuiltAsar: String = null,
-    protocols: js.Array[AnonName] = null,
+    protocols: js.Array[Name] = null,
     prune: js.UndefOr[Boolean] = js.undefined,
     quiet: js.UndefOr[Boolean] = js.undefined,
     tmpdir: String | `false` = null,
@@ -188,7 +188,7 @@ object Options {
     if (afterCopy != null) __obj.updateDynamic("afterCopy")(afterCopy.asInstanceOf[js.Any])
     if (afterExtract != null) __obj.updateDynamic("afterExtract")(afterExtract.asInstanceOf[js.Any])
     if (afterPrune != null) __obj.updateDynamic("afterPrune")(afterPrune.asInstanceOf[js.Any])
-    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
+    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all.get.asInstanceOf[js.Any])
     if (appBundleId != null) __obj.updateDynamic("appBundleId")(appBundleId.asInstanceOf[js.Any])
     if (appCategoryType != null) __obj.updateDynamic("appCategoryType")(appCategoryType.asInstanceOf[js.Any])
     if (appCopyright != null) __obj.updateDynamic("appCopyright")(appCopyright.asInstanceOf[js.Any])
@@ -196,8 +196,8 @@ object Options {
     if (arch != null) __obj.updateDynamic("arch")(arch.asInstanceOf[js.Any])
     if (asar != null) __obj.updateDynamic("asar")(asar.asInstanceOf[js.Any])
     if (buildVersion != null) __obj.updateDynamic("buildVersion")(buildVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(darwinDarkModeSupport)) __obj.updateDynamic("darwinDarkModeSupport")(darwinDarkModeSupport.asInstanceOf[js.Any])
-    if (!js.isUndefined(derefSymlinks)) __obj.updateDynamic("derefSymlinks")(derefSymlinks.asInstanceOf[js.Any])
+    if (!js.isUndefined(darwinDarkModeSupport)) __obj.updateDynamic("darwinDarkModeSupport")(darwinDarkModeSupport.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(derefSymlinks)) __obj.updateDynamic("derefSymlinks")(derefSymlinks.get.asInstanceOf[js.Any])
     if (download != null) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
     if (electronVersion != null) __obj.updateDynamic("electronVersion")(electronVersion.asInstanceOf[js.Any])
     if (executableName != null) __obj.updateDynamic("executableName")(executableName.asInstanceOf[js.Any])
@@ -210,12 +210,12 @@ object Options {
     if (osxNotarize != null) __obj.updateDynamic("osxNotarize")(osxNotarize.asInstanceOf[js.Any])
     if (osxSign != null) __obj.updateDynamic("osxSign")(osxSign.asInstanceOf[js.Any])
     if (out != null) __obj.updateDynamic("out")(out.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.get.asInstanceOf[js.Any])
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
     if (prebuiltAsar != null) __obj.updateDynamic("prebuiltAsar")(prebuiltAsar.asInstanceOf[js.Any])
     if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
-    if (!js.isUndefined(prune)) __obj.updateDynamic("prune")(prune.asInstanceOf[js.Any])
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.asInstanceOf[js.Any])
+    if (!js.isUndefined(prune)) __obj.updateDynamic("prune")(prune.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.get.asInstanceOf[js.Any])
     if (tmpdir != null) __obj.updateDynamic("tmpdir")(tmpdir.asInstanceOf[js.Any])
     if (win32metadata != null) __obj.updateDynamic("win32metadata")(win32metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

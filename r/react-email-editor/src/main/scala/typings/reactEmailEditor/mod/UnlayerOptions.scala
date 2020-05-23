@@ -38,7 +38,7 @@ object UnlayerOptions {
     id: String = null,
     locale: String = null,
     mergeTags: js.Array[MergeTag] = null,
-    projectId: Int | Double = null,
+    projectId: js.UndefOr[Double] = js.undefined,
     safeHtml: js.UndefOr[Boolean] = js.undefined,
     tools: ToolsConfig = null,
     user: User = null
@@ -56,8 +56,8 @@ object UnlayerOptions {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (mergeTags != null) __obj.updateDynamic("mergeTags")(mergeTags.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (!js.isUndefined(safeHtml)) __obj.updateDynamic("safeHtml")(safeHtml.asInstanceOf[js.Any])
+    if (!js.isUndefined(projectId)) __obj.updateDynamic("projectId")(projectId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(safeHtml)) __obj.updateDynamic("safeHtml")(safeHtml.get.asInstanceOf[js.Any])
     if (tools != null) __obj.updateDynamic("tools")(tools.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnlayerOptions]

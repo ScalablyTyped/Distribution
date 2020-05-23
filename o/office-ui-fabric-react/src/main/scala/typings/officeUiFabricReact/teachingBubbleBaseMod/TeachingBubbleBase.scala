@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.teachingBubbleBaseMod
 
-import typings.officeUiFabricReact.AnonCalloutProps
+import typings.officeUiFabricReact.anon.CalloutProps
 import typings.officeUiFabricReact.teachingBubbleTypesMod.ITeachingBubbleProps
 import typings.react.mod.Component
 import typings.react.mod.RefObject
@@ -23,6 +23,6 @@ class TeachingBubbleBase protected ()
 @JSImport("office-ui-fabric-react/lib/components/TeachingBubble/TeachingBubble.base", "TeachingBubbleBase")
 @js.native
 object TeachingBubbleBase extends js.Object {
-  var defaultProps: AnonCalloutProps = js.native
+  var defaultProps: CalloutProps = js.native
 }
 

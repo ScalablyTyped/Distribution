@@ -15,7 +15,7 @@ trait PivotTableStyleData extends js.Object {
   var name: js.UndefOr[String] = js.undefined
   /**
     *
-    * Specifies whether this PivotTableStyle object is read-only. Read-only.
+    * Specifies if this PivotTableStyle object is read-only.
     *
     * [Api set: ExcelApi 1.10]
     */
@@ -27,7 +27,7 @@ object PivotTableStyleData {
   def apply(name: String = null, readOnly: js.UndefOr[Boolean] = js.undefined): PivotTableStyleData = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotTableStyleData]
   }
 }

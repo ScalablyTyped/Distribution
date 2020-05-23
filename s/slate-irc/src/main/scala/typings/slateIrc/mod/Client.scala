@@ -1,6 +1,6 @@
 package typings.slateIrc.mod
 
-import typings.slateIrc.AnonMode
+import typings.slateIrc.anon.Mode
 import typings.slateIrc.slateIrcStrings.away
 import typings.slateIrc.slateIrcStrings.data
 import typings.slateIrc.slateIrcStrings.join
@@ -33,7 +33,7 @@ class Client () extends js.Object {
   def kick(channels: js.Array[String], nicks: String, msg: String): Unit = js.native
   def kick(channels: js.Array[String], nicks: js.Array[String], msg: String): Unit = js.native
   def mode(target: String, flags: String, params: String): Unit = js.native
-  def names(channel: String, callback: js.Function2[/* error */ Error, /* names */ js.Array[AnonMode], Unit]): Unit = js.native
+  def names(channel: String, callback: js.Function2[/* error */ Error, /* names */ js.Array[Mode], Unit]): Unit = js.native
   def nick(nick: String): Unit = js.native
   def notice(target: String, msg: String): Unit = js.native
   def on(event: String, callback: js.Function): Unit = js.native

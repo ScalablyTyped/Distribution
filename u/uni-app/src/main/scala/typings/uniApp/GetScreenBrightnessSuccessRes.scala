@@ -13,9 +13,9 @@ trait GetScreenBrightnessSuccessRes extends js.Object {
 
 object GetScreenBrightnessSuccessRes {
   @scala.inline
-  def apply(value: Int | Double = null): GetScreenBrightnessSuccessRes = {
+  def apply(value: js.UndefOr[Double] = js.undefined): GetScreenBrightnessSuccessRes = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetScreenBrightnessSuccessRes]
   }
 }

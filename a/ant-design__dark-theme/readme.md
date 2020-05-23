@@ -1,7 +1,7 @@
 
 # Scala.js typings for ant-design__dark-theme
 
-Typings are for version 2.0.1
+Typings are for version 2.0.2
 
 ## Library description:
 Dark theme variables for Ant Design

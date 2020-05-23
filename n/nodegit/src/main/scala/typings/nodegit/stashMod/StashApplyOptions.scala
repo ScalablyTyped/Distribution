@@ -17,17 +17,17 @@ object StashApplyOptions {
   @scala.inline
   def apply(
     checkoutOptions: CheckoutOptions = null,
-    flags: Int | Double = null,
+    flags: js.UndefOr[Double] = js.undefined,
     progressCb: js.Function = null,
     progressPayload: js.Any = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): StashApplyOptions = {
     val __obj = js.Dynamic.literal()
     if (checkoutOptions != null) __obj.updateDynamic("checkoutOptions")(checkoutOptions.asInstanceOf[js.Any])
-    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
+    if (!js.isUndefined(flags)) __obj.updateDynamic("flags")(flags.get.asInstanceOf[js.Any])
     if (progressCb != null) __obj.updateDynamic("progressCb")(progressCb.asInstanceOf[js.Any])
     if (progressPayload != null) __obj.updateDynamic("progressPayload")(progressPayload.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StashApplyOptions]
   }
 }

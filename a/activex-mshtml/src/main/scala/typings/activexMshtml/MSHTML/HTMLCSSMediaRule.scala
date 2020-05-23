@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLCSSMediaRule")
 @js.native
-class HTMLCSSMediaRule protected () extends js.Object {
+trait HTMLCSSMediaRule extends js.Object {
   @JSName("MSHTML.HTMLCSSMediaRule_typekey")
   var MSHTMLDotHTMLCSSMediaRule_typekey: HTMLCSSMediaRule = js.native
   @JSName("cssRules")

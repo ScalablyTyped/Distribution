@@ -6,20 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.reactInteractive.AnonFocus
-  - typings.reactInteractive.AnonFocusFromMouse
+  - typings.reactInteractive.anon.Focus
+  - typings.reactInteractive.anon.FocusFromMouse
 */
 trait FocusProps extends js.Object
 
 object FocusProps {
   @scala.inline
-  def AnonFocus(focus: CSSProperties = null): FocusProps = {
+  def Focus(focus: CSSProperties = null): FocusProps = {
     val __obj = js.Dynamic.literal()
     if (focus != null) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
     __obj.asInstanceOf[FocusProps]
   }
   @scala.inline
-  def AnonFocusFromMouse(
+  def FocusFromMouse(
     focusFromMouse: CSSProperties = null,
     focusFromTab: CSSProperties = null,
     focusFromTouch: CSSProperties = null

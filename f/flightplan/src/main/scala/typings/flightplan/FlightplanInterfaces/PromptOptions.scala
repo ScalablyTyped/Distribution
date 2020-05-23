@@ -13,8 +13,8 @@ object PromptOptions {
   @scala.inline
   def apply(hidden: js.UndefOr[Boolean] = js.undefined, required: js.UndefOr[Boolean] = js.undefined): PromptOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromptOptions]
   }
 }

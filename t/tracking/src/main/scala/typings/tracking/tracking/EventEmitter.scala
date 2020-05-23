@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * EventEmitter utility class.
   */
-@JSGlobal("tracking.EventEmitter")
 @js.native
-class EventEmitter () extends js.Object {
+trait EventEmitter extends js.Object {
   /**
     * Adds a listener to the end of the listeners array for the specified event.
     * @param event Name of the event.

@@ -14,9 +14,8 @@ import scala.scalajs.js.annotation._
   * 
   * https://github.com/webgme/webgme/blob/master/src/client/js/client.js
   */
-@JSGlobal("Gme.Client")
 @js.native
-class Client () extends js.Object {
+trait Client extends js.Object {
   /**
     * assign a node to a set
     * The source and target should already be loaded.

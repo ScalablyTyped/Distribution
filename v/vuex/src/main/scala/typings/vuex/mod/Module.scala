@@ -28,7 +28,7 @@ object Module {
     if (getters != null) __obj.updateDynamic("getters")(getters.asInstanceOf[js.Any])
     if (modules != null) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])
     if (mutations != null) __obj.updateDynamic("mutations")(mutations.asInstanceOf[js.Any])
-    if (!js.isUndefined(namespaced)) __obj.updateDynamic("namespaced")(namespaced.asInstanceOf[js.Any])
+    if (!js.isUndefined(namespaced)) __obj.updateDynamic("namespaced")(namespaced.get.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Module[S, R]]
   }

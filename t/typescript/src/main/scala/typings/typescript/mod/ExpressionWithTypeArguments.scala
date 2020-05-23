@@ -12,6 +12,6 @@ trait ExpressionWithTypeArguments
   @JSName("kind")
   var kind_ExpressionWithTypeArguments: typings.typescript.mod.SyntaxKind.ExpressionWithTypeArguments = js.native
   @JSName("parent")
-  var parent_ExpressionWithTypeArguments: HeritageClause | JSDocAugmentsTag = js.native
+  var parent_ExpressionWithTypeArguments: HeritageClause | JSDocAugmentsTag | JSDocImplementsTag = js.native
 }
 

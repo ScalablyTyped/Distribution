@@ -1,6 +1,6 @@
 package typings.reactNativeScrollableTabView.mod
 
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle

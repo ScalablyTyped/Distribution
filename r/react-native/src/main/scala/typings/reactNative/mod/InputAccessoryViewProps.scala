@@ -15,11 +15,15 @@ trait InputAccessoryViewProps extends js.Object {
 
 object InputAccessoryViewProps {
   @scala.inline
-  def apply(backgroundColor: String = null, nativeID: String = null, style: StyleProp[ViewStyle] = null): InputAccessoryViewProps = {
+  def apply(
+    backgroundColor: String = null,
+    nativeID: String = null,
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined
+  ): InputAccessoryViewProps = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputAccessoryViewProps]
   }
 }

@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.PivotTableStyleData
 import typings.officeJs.Excel.Interfaces.PivotTableStyleLoadOptions
 import typings.officeJs.Excel.Interfaces.PivotTableStyleUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +16,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.10]
   */
-@JSGlobal("Excel.PivotTableStyle")
 @js.native
-class PivotTableStyle () extends ClientObject {
+trait PivotTableStyle extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_PivotTableStyle: RequestContext = js.native
@@ -31,7 +30,7 @@ class PivotTableStyle () extends ClientObject {
   var name: String = js.native
   /**
     *
-    * Specifies whether this PivotTableStyle object is read-only. Read-only.
+    * Specifies if this PivotTableStyle object is read-only.
     *
     * [Api set: ExcelApi 1.10]
     */
@@ -56,7 +55,7 @@ class PivotTableStyle () extends ClientObject {
     */
   def load(): PivotTableStyle = js.native
   def load(options: PivotTableStyleLoadOptions): PivotTableStyle = js.native
-  def load(propertyNamesAndPaths: AnonExpand): PivotTableStyle = js.native
+  def load(propertyNamesAndPaths: Expand): PivotTableStyle = js.native
   def load(propertyNames: String): PivotTableStyle = js.native
   def load(propertyNames: js.Array[String]): PivotTableStyle = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

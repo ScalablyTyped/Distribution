@@ -13,14 +13,14 @@ trait ContentRangeType extends js.Object {
 object ContentRangeType {
   @scala.inline
   def apply(
-    firstBytePosition: Int | Double = null,
-    instanceLength: Int | Double = null,
-    lastBytePosition: Int | Double = null
+    firstBytePosition: js.UndefOr[Double] = js.undefined,
+    instanceLength: js.UndefOr[Double] = js.undefined,
+    lastBytePosition: js.UndefOr[Double] = js.undefined
   ): ContentRangeType = {
     val __obj = js.Dynamic.literal()
-    if (firstBytePosition != null) __obj.updateDynamic("firstBytePosition")(firstBytePosition.asInstanceOf[js.Any])
-    if (instanceLength != null) __obj.updateDynamic("instanceLength")(instanceLength.asInstanceOf[js.Any])
-    if (lastBytePosition != null) __obj.updateDynamic("lastBytePosition")(lastBytePosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstBytePosition)) __obj.updateDynamic("firstBytePosition")(firstBytePosition.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(instanceLength)) __obj.updateDynamic("instanceLength")(instanceLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastBytePosition)) __obj.updateDynamic("lastBytePosition")(lastBytePosition.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentRangeType]
   }
 }

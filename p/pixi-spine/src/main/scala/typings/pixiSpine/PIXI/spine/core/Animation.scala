@@ -4,14 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PIXI.spine.core.Animation")
-@js.native
-class Animation protected () extends js.Object {
-  def this(name: String, timelines: js.Array[Timeline], duration: Double) = this()
-  var duration: Double = js.native
-  var name: String = js.native
-  var timelineIds: js.Array[Boolean] = js.native
-  var timelines: js.Array[Timeline] = js.native
+trait Animation extends js.Object {
+  var duration: Double
+  var name: String
+  var timelineIds: js.Array[Boolean]
+  var timelines: js.Array[Timeline]
   @JSName("apply")
   def apply(
     skeleton: Skeleton,
@@ -22,16 +19,22 @@ class Animation protected () extends js.Object {
     alpha: Double,
     blend: MixBlend,
     direction: MixDirection
-  ): Unit = js.native
-  def hasTimeline(id: Double): Boolean = js.native
+  ): Unit
+  def hasTimeline(id: Double): Boolean
 }
 
-/* static members */
-@JSGlobal("PIXI.spine.core.Animation")
-@js.native
-object Animation extends js.Object {
-  def binarySearch(values: ArrayLike[Double], target: Double): Double = js.native
-  def binarySearch(values: ArrayLike[Double], target: Double, step: Double): Double = js.native
-  def linearSearch(values: ArrayLike[Double], target: Double, step: Double): Double = js.native
+object Animation {
+  @scala.inline
+  def apply(
+    apply: (Skeleton, Double, Double, Boolean, js.Array[Event], Double, MixBlend, MixDirection) => Unit,
+    duration: Double,
+    hasTimeline: Double => Boolean,
+    name: String,
+    timelineIds: js.Array[Boolean],
+    timelines: js.Array[Timeline]
+  ): Animation = {
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction8(apply), duration = duration.asInstanceOf[js.Any], hasTimeline = js.Any.fromFunction1(hasTimeline), name = name.asInstanceOf[js.Any], timelineIds = timelineIds.asInstanceOf[js.Any], timelines = timelines.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Animation]
+  }
 }
 

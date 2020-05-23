@@ -12,10 +12,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides members for programmatically installing apps, including the ability to start an app install and get a list of app installs currently in progress. */
-@JSGlobal("Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallManager")
 @js.native
-/** Creates and initializes a new instance of the AppInstallManager class */
-class AppInstallManager () extends js.Object {
+trait AppInstallManager extends js.Object {
   /** Gets or sets the user identity associated with the app installs. */
   var acquisitionIdentity: String = js.native
   /** Retrieves information about all apps that are currently in the installation queue. */

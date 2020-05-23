@@ -1,6 +1,6 @@
 package typings.reactNativeSwiper.mod
 
-import typings.reactNativeSwiper.AnonX
+import typings.reactNativeSwiper.anon.X
 import typings.reactNativeSwiper.reactNativeSwiperStrings.x
 import typings.reactNativeSwiper.reactNativeSwiperStrings.y
 import scala.scalajs.js
@@ -14,7 +14,7 @@ trait SwiperState extends js.Object {
   var index: Double
   var isScrolling: Boolean
   var loopJump: Boolean
-  var offset: AnonX
+  var offset: X
   var total: Double
   var width: Double
 }
@@ -28,7 +28,7 @@ object SwiperState {
     index: Double,
     isScrolling: Boolean,
     loopJump: Boolean,
-    offset: AnonX,
+    offset: X,
     total: Double,
     width: Double
   ): SwiperState = {

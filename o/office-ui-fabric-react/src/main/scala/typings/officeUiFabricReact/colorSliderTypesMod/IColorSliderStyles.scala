@@ -22,11 +22,15 @@ trait IColorSliderStyles extends js.Object {
 
 object IColorSliderStyles {
   @scala.inline
-  def apply(root: IStyle = null, sliderOverlay: IStyle = null, sliderThumb: IStyle = null): IColorSliderStyles = {
+  def apply(
+    root: js.UndefOr[Null | IStyle] = js.undefined,
+    sliderOverlay: js.UndefOr[Null | IStyle] = js.undefined,
+    sliderThumb: js.UndefOr[Null | IStyle] = js.undefined
+  ): IColorSliderStyles = {
     val __obj = js.Dynamic.literal()
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (sliderOverlay != null) __obj.updateDynamic("sliderOverlay")(sliderOverlay.asInstanceOf[js.Any])
-    if (sliderThumb != null) __obj.updateDynamic("sliderThumb")(sliderThumb.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(sliderOverlay)) __obj.updateDynamic("sliderOverlay")(sliderOverlay.asInstanceOf[js.Any])
+    if (!js.isUndefined(sliderThumb)) __obj.updateDynamic("sliderThumb")(sliderThumb.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColorSliderStyles]
   }
 }

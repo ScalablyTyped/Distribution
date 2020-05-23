@@ -31,14 +31,14 @@ trait CreateVpcPeeringConnectionRequest extends js.Object {
 object CreateVpcPeeringConnectionRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     PeerOwnerId: String = null,
     PeerRegion: String = null,
     PeerVpcId: String = null,
     VpcId: VpcId = null
   ): CreateVpcPeeringConnectionRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (PeerOwnerId != null) __obj.updateDynamic("PeerOwnerId")(PeerOwnerId.asInstanceOf[js.Any])
     if (PeerRegion != null) __obj.updateDynamic("PeerRegion")(PeerRegion.asInstanceOf[js.Any])
     if (PeerVpcId != null) __obj.updateDynamic("PeerVpcId")(PeerVpcId.asInstanceOf[js.Any])

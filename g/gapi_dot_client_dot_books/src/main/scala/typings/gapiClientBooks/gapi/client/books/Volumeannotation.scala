@@ -1,6 +1,6 @@
 package typings.gapiClientBooks.gapi.client.books
 
-import typings.gapiClientBooks.AnonContentVersion
+import typings.gapiClientBooks.anon.ContentVersion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait Volumeannotation extends js.Object {
   /** The type of annotation this is. */
   var annotationType: js.UndefOr[String] = js.undefined
   /** The content ranges to identify the selected text. */
-  var contentRanges: js.UndefOr[AnonContentVersion] = js.undefined
+  var contentRanges: js.UndefOr[ContentVersion] = js.undefined
   /** Data for this annotation. */
   var data: js.UndefOr[String] = js.undefined
   /** Indicates that this annotation is deleted. */
@@ -42,7 +42,7 @@ object Volumeannotation {
     annotationDataId: String = null,
     annotationDataLink: String = null,
     annotationType: String = null,
-    contentRanges: AnonContentVersion = null,
+    contentRanges: ContentVersion = null,
     data: String = null,
     deleted: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
@@ -60,7 +60,7 @@ object Volumeannotation {
     if (annotationType != null) __obj.updateDynamic("annotationType")(annotationType.asInstanceOf[js.Any])
     if (contentRanges != null) __obj.updateDynamic("contentRanges")(contentRanges.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])

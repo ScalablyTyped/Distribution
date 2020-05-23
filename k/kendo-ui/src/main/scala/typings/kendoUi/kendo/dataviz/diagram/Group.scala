@@ -1,14 +1,12 @@
 package typings.kendoUi.kendo.dataviz.diagram
 
-import typings.kendoUi.kendo.Observable_
+import typings.kendoUi.kendo.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.dataviz.diagram.Group")
 @js.native
-class Group () extends Observable_ {
-  def this(options: GroupOptions) = this()
+trait Group extends Observable {
   var drawingElement: typings.kendoUi.kendo.drawing.Group = js.native
   var options: GroupOptions = js.native
   def append(element: js.Any): Unit = js.native

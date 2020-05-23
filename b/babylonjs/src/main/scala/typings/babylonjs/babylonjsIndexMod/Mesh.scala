@@ -1,9 +1,9 @@
 package typings.babylonjs.babylonjsIndexMod
 
-import typings.babylonjs.AnonFaceColors
-import typings.babylonjs.AnonH
-import typings.babylonjs.AnonMax
-import typings.babylonjs.AnonUpdatable
+import typings.babylonjs.anon.FaceColors
+import typings.babylonjs.anon.H
+import typings.babylonjs.anon.Max
+import typings.babylonjs.anon.Updatable
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.nodeMod.Node
 import typings.babylonjs.physicsImpostorMod.IPhysicsEnabledObject
@@ -145,7 +145,7 @@ object Mesh extends js.Object {
     * @param meshesOrMinMaxVector could be an array of meshes or a `{min:` Vector3`, max:` Vector3`}` object
     * @returns a vector3
     */
-  def Center(meshesOrMinMaxVector: AnonMax): Vector3 = js.native
+  def Center(meshesOrMinMaxVector: Max): Vector3 = js.native
   /**
     * Creates a box mesh. Please consider using the same method from the MeshBuilder class instead
     * @param name defines the name of the mesh to create
@@ -400,7 +400,7 @@ object Mesh extends js.Object {
     * @returns a new Mesh
     * @see http://doc.babylonjs.com/how_to/polyhedra_shapes#icosphere
     */
-  def CreateIcoSphere(name: String, options: AnonUpdatable, scene: Scene): typings.babylonjs.meshMod.Mesh = js.native
+  def CreateIcoSphere(name: String, options: Updatable, scene: Scene): typings.babylonjs.meshMod.Mesh = js.native
   /**
     * Creates lathe mesh.
     * The lathe is a shape with a symetry axis : a 2D model shape is rotated around this axis to design the lathe.
@@ -525,7 +525,7 @@ object Mesh extends js.Object {
     * @param scene defines the hosting scene
     * @returns a new Mesh
     */
-  def CreatePolyhedron(name: String, options: AnonFaceColors, scene: Scene): typings.babylonjs.meshMod.Mesh = js.native
+  def CreatePolyhedron(name: String, options: FaceColors, scene: Scene): typings.babylonjs.meshMod.Mesh = js.native
   /**
     * Creates a ribbon mesh. Please consider using the same method from the MeshBuilder class instead
     * @see http://doc.babylonjs.com/how_to/parametric_shapes
@@ -626,8 +626,8 @@ object Mesh extends js.Object {
     zmin: Double,
     xmax: Double,
     zmax: Double,
-    subdivisions: AnonH,
-    precision: AnonH,
+    subdivisions: H,
+    precision: H,
     scene: Scene
   ): typings.babylonjs.meshMod.Mesh = js.native
   def CreateTiledGround(
@@ -636,8 +636,8 @@ object Mesh extends js.Object {
     zmin: Double,
     xmax: Double,
     zmax: Double,
-    subdivisions: AnonH,
-    precision: AnonH,
+    subdivisions: H,
+    precision: H,
     scene: Scene,
     updatable: Boolean
   ): typings.babylonjs.meshMod.Mesh = js.native
@@ -1015,7 +1015,7 @@ object Mesh extends js.Object {
     * @param meshes defines the list of meshes to scan
     * @returns an object `{min:` Vector3`, max:` Vector3`}`
     */
-  def MinMax(meshes: js.Array[typings.babylonjs.abstractMeshMod.AbstractMesh]): AnonMax = js.native
+  def MinMax(meshes: js.Array[typings.babylonjs.abstractMeshMod.AbstractMesh]): Max = js.native
   /**
     * Returns a new Mesh object parsed from the source provided.
     * @param parsedMesh is the source

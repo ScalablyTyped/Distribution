@@ -2,7 +2,6 @@ package typings.zipkinTransportHttp.mod
 
 import typings.zipkin.mod.Logger
 import typings.zipkin.mod.model.Span
-import typings.zipkinTransportHttp.AnonAgent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +21,7 @@ class HttpLogger protected () extends Logger {
     * @param {Agent|Function} options.agent HTTP(S) agent to use for any networking related options.
     * @param {ErrorLogger} options.log Internal error logger used within the transport.
     */
-  def this(options: AnonAgent) = this()
+  def this(options: typings.zipkinTransportHttp.anon.Agent) = this()
   /* CompleteClass */
   override def logSpan(span: Span): Unit = js.native
 }

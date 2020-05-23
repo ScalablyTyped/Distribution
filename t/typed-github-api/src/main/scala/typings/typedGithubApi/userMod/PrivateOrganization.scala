@@ -1,12 +1,12 @@
 package typings.typedGithubApi.userMod
 
 import typings.std.Date
-import typings.typedGithubApi.AnonCollaborators
+import typings.typedGithubApi.anon.Collaborators
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.typedGithubApi.userMod.UserOrOrgSummary because Already inherited
 - typings.typedGithubApi.userMod.UserOrOrg because Already inherited
 - typings.typedGithubApi.userMod.PrivateUserOrOrg because var conflicts: avatar_url, blog, company, created_at, email, events_url, followers, following, id, location, login, name, public_gists, public_repos, repos_url, `type`, updated_at, url. Inlined total_private_repos, owned_private_repos, private_gists, disk_usage, collaborators, plan */ trait PrivateOrganization extends Organization {
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   var disk_usage: Double
   var members_can_create_repositories: Boolean
   var owned_private_repos: Double
-  var plan: AnonCollaborators
+  var plan: Collaborators
   var private_gists: Double
   var total_private_repos: Double
 }
@@ -49,7 +49,7 @@ object PrivateOrganization {
     members_url: String,
     name: String,
     owned_private_repos: Double,
-    plan: AnonCollaborators,
+    plan: Collaborators,
     private_gists: Double,
     public_gists: Double,
     public_members_url: String,

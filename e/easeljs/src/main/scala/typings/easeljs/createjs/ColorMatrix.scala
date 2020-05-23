@@ -4,13 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("createjs.ColorMatrix")
 @js.native
-class ColorMatrix () extends js.Object {
-  def this(brightness: Double) = this()
-  def this(brightness: Double, contrast: Double) = this()
-  def this(brightness: Double, contrast: Double, saturation: Double) = this()
-  def this(brightness: Double, contrast: Double, saturation: Double, hue: Double) = this()
+trait ColorMatrix extends js.Object {
   // methods
   def adjustBrightness(value: Double): ColorMatrix = js.native
   def adjustColor(brightness: Double, contrast: Double, saturation: Double, hue: Double): ColorMatrix = js.native

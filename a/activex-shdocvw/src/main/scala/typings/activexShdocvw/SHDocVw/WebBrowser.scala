@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** WebBrowser Control */
-@JSGlobal("SHDocVw.WebBrowser")
 @js.native
-class WebBrowser protected () extends js.Object {
+trait WebBrowser extends js.Object {
   /** Controls whether address bar is shown (ignored by WebBrowser) */
   var AddressBar: Boolean = js.native
   /** Returns the application automation object if accessible, this automation object otherwise.. */

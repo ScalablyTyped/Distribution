@@ -1,10 +1,10 @@
 package typings.multerGridfsStorage.mod
 
-import typings.expressServeStaticCore.mod._Global_.Express.Request
+import typings.expressServeStaticCore.mod.global.Express.Request
 import typings.mongodb.mod.Db
 import typings.mongodb.mod.MongoClient
 import typings.multer.mod.StorageEngine
-import typings.multerGridfsStorage.mod._Global_.Express.Multer.File
+import typings.multerGridfsStorage.mod.global.Express.Multer.File
 import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import scala.scalajs.js

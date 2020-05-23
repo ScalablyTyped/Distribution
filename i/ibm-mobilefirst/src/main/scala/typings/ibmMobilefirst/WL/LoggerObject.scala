@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Artifact to allow chaining of Logger class as: WL.Logger.ctx({pkg: 'something'}).debug('Hello world');
   */
-@JSGlobal("WL.LoggerObject")
 @js.native
-class LoggerObject () extends js.Object {
+trait LoggerObject extends js.Object {
   /**
     * Configures the logger globally.
     */

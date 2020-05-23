@@ -4,17 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.ConstructorDeclarationSyntax")
 @js.native
-class ConstructorDeclarationSyntax protected () extends SyntaxNode {
-  def this(
-    modifiers: ISyntaxList,
-    constructorKeyword: ISyntaxToken,
-    callSignature: CallSignatureSyntax,
-    block: BlockSyntax,
-    semicolonToken: ISyntaxToken,
-    parsedInStrictMode: Boolean
-  ) = this()
+trait ConstructorDeclarationSyntax extends SyntaxNode {
   var block: BlockSyntax = js.native
   var callSignature: CallSignatureSyntax = js.native
   var constructorKeyword: ISyntaxToken = js.native
@@ -33,13 +24,5 @@ class ConstructorDeclarationSyntax protected () extends SyntaxNode {
   def withModifier(modifier: ISyntaxToken): ConstructorDeclarationSyntax = js.native
   def withModifiers(modifiers: ISyntaxList): ConstructorDeclarationSyntax = js.native
   def withSemicolonToken(semicolonToken: ISyntaxToken): ConstructorDeclarationSyntax = js.native
-}
-
-/* static members */
-@JSGlobal("TypeScript.ConstructorDeclarationSyntax")
-@js.native
-object ConstructorDeclarationSyntax extends js.Object {
-  def create(constructorKeyword: ISyntaxToken, callSignature: CallSignatureSyntax): ConstructorDeclarationSyntax = js.native
-  def create1(): ConstructorDeclarationSyntax = js.native
 }
 

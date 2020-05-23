@@ -51,14 +51,14 @@ object TableGlobalSecondaryIndex {
     projectionType: String,
     nonKeyAttributes: js.Array[String] = null,
     rangeKey: String = null,
-    readCapacity: Int | Double = null,
-    writeCapacity: Int | Double = null
+    readCapacity: js.UndefOr[Double] = js.undefined,
+    writeCapacity: js.UndefOr[Double] = js.undefined
   ): TableGlobalSecondaryIndex = {
     val __obj = js.Dynamic.literal(hashKey = hashKey.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], projectionType = projectionType.asInstanceOf[js.Any])
     if (nonKeyAttributes != null) __obj.updateDynamic("nonKeyAttributes")(nonKeyAttributes.asInstanceOf[js.Any])
     if (rangeKey != null) __obj.updateDynamic("rangeKey")(rangeKey.asInstanceOf[js.Any])
-    if (readCapacity != null) __obj.updateDynamic("readCapacity")(readCapacity.asInstanceOf[js.Any])
-    if (writeCapacity != null) __obj.updateDynamic("writeCapacity")(writeCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(readCapacity)) __obj.updateDynamic("readCapacity")(readCapacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(writeCapacity)) __obj.updateDynamic("writeCapacity")(writeCapacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableGlobalSecondaryIndex]
   }
 }

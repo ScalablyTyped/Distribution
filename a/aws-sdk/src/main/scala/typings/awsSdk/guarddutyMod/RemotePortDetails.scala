@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RemotePortDetails extends js.Object {
   /**
-    * Port number of the remote connection.
+    * The port number of the remote connection.
     */
   var Port: js.UndefOr[Integer] = js.native
   /**
-    * Port name of the remote connection.
+    * The port name of the remote connection.
     */
   var PortName: js.UndefOr[String] = js.native
 }
 
 object RemotePortDetails {
   @scala.inline
-  def apply(Port: Int | scala.Double = null, PortName: String = null): RemotePortDetails = {
+  def apply(Port: js.UndefOr[Integer] = js.undefined, PortName: String = null): RemotePortDetails = {
     val __obj = js.Dynamic.literal()
-    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
+    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
     if (PortName != null) __obj.updateDynamic("PortName")(PortName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemotePortDetails]
   }

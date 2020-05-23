@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object ChartErrorBarsType extends js.Object {
   
   @js.native
   sealed trait stError extends ChartErrorBarsType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartErrorBarsType with String] = js.native
-  /* "Custom" */ @js.native
-  object custom extends TopLevel[custom with String]
-  
-  /* "FixedValue" */ @js.native
-  object fixedValue extends TopLevel[fixedValue with String]
-  
-  /* "Percent" */ @js.native
-  object percent extends TopLevel[percent with String]
-  
-  /* "StDev" */ @js.native
-  object stDev extends TopLevel[stDev with String]
-  
-  /* "StError" */ @js.native
-  object stError extends TopLevel[stError with String]
   
 }
 

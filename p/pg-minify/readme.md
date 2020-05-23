@@ -1,7 +1,7 @@
 
 # Scala.js typings for pg-minify
 
-Typings are for version 1.5.2
+Typings are for version 1.6.0
 
 ## Library description:
 Minifies PostgreSQL scripts.

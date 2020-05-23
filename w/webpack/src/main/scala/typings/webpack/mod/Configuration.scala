@@ -113,7 +113,7 @@ object Configuration {
     node: Node | `false` = null,
     optimization: Optimization = null,
     output: Output = null,
-    parallelism: Int | Double = null,
+    parallelism: js.UndefOr[Double] = js.undefined,
     performance: Performance | `false` = null,
     plugins: js.Array[Plugin] = null,
     profile: js.UndefOr[Boolean] = js.undefined,
@@ -129,7 +129,7 @@ object Configuration {
   ): Configuration = {
     val __obj = js.Dynamic.literal()
     if (amd != null) __obj.updateDynamic("amd")(amd.asInstanceOf[js.Any])
-    if (!js.isUndefined(bail)) __obj.updateDynamic("bail")(bail.asInstanceOf[js.Any])
+    if (!js.isUndefined(bail)) __obj.updateDynamic("bail")(bail.get.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (devtool != null) __obj.updateDynamic("devtool")(devtool.asInstanceOf[js.Any])
@@ -141,10 +141,10 @@ object Configuration {
     if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
     if (optimization != null) __obj.updateDynamic("optimization")(optimization.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
-    if (parallelism != null) __obj.updateDynamic("parallelism")(parallelism.asInstanceOf[js.Any])
+    if (!js.isUndefined(parallelism)) __obj.updateDynamic("parallelism")(parallelism.get.asInstanceOf[js.Any])
     if (performance != null) __obj.updateDynamic("performance")(performance.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (!js.isUndefined(profile)) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
+    if (!js.isUndefined(profile)) __obj.updateDynamic("profile")(profile.get.asInstanceOf[js.Any])
     if (recordsInputPath != null) __obj.updateDynamic("recordsInputPath")(recordsInputPath.asInstanceOf[js.Any])
     if (recordsOutputPath != null) __obj.updateDynamic("recordsOutputPath")(recordsOutputPath.asInstanceOf[js.Any])
     if (recordsPath != null) __obj.updateDynamic("recordsPath")(recordsPath.asInstanceOf[js.Any])
@@ -152,7 +152,7 @@ object Configuration {
     if (resolveLoader != null) __obj.updateDynamic("resolveLoader")(resolveLoader.asInstanceOf[js.Any])
     if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
+    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.get.asInstanceOf[js.Any])
     if (watchOptions != null) __obj.updateDynamic("watchOptions")(watchOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }

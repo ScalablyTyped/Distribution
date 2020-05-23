@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.Table")
 @js.native
-class Table protected () extends js.Object {
+trait Table extends js.Object {
   var AllowAutoFit: Boolean = js.native
   var AllowPageBreaks: Boolean = js.native
   val Application: typings.activexWord.Word.Application = js.native

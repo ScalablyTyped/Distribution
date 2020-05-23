@@ -34,15 +34,15 @@ object FunctionEventInvokeConfig {
     DestinationConfig: DestinationConfig = null,
     FunctionArn: FunctionArn = null,
     LastModified: Date = null,
-    MaximumEventAgeInSeconds: Int | Double = null,
-    MaximumRetryAttempts: Int | Double = null
+    MaximumEventAgeInSeconds: js.UndefOr[MaximumEventAgeInSeconds] = js.undefined,
+    MaximumRetryAttempts: js.UndefOr[MaximumRetryAttempts] = js.undefined
   ): FunctionEventInvokeConfig = {
     val __obj = js.Dynamic.literal()
     if (DestinationConfig != null) __obj.updateDynamic("DestinationConfig")(DestinationConfig.asInstanceOf[js.Any])
     if (FunctionArn != null) __obj.updateDynamic("FunctionArn")(FunctionArn.asInstanceOf[js.Any])
     if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
-    if (MaximumEventAgeInSeconds != null) __obj.updateDynamic("MaximumEventAgeInSeconds")(MaximumEventAgeInSeconds.asInstanceOf[js.Any])
-    if (MaximumRetryAttempts != null) __obj.updateDynamic("MaximumRetryAttempts")(MaximumRetryAttempts.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaximumEventAgeInSeconds)) __obj.updateDynamic("MaximumEventAgeInSeconds")(MaximumEventAgeInSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaximumRetryAttempts)) __obj.updateDynamic("MaximumRetryAttempts")(MaximumRetryAttempts.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionEventInvokeConfig]
   }
 }

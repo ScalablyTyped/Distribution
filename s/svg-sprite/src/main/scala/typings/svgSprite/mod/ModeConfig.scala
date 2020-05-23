@@ -73,7 +73,7 @@ object ModeConfig {
     sprite: String = null
   ): ModeConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bust)) __obj.updateDynamic("bust")(bust.asInstanceOf[js.Any])
+    if (!js.isUndefined(bust)) __obj.updateDynamic("bust")(bust.get.asInstanceOf[js.Any])
     if (dest != null) __obj.updateDynamic("dest")(dest.asInstanceOf[js.Any])
     if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
     if (example != null) __obj.updateDynamic("example")(example.asInstanceOf[js.Any])

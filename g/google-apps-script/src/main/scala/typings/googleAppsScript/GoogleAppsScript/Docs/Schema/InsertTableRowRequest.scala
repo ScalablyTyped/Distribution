@@ -13,7 +13,7 @@ object InsertTableRowRequest {
   @scala.inline
   def apply(insertBelow: js.UndefOr[Boolean] = js.undefined, tableCellLocation: TableCellLocation = null): InsertTableRowRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(insertBelow)) __obj.updateDynamic("insertBelow")(insertBelow.asInstanceOf[js.Any])
+    if (!js.isUndefined(insertBelow)) __obj.updateDynamic("insertBelow")(insertBelow.get.asInstanceOf[js.Any])
     if (tableCellLocation != null) __obj.updateDynamic("tableCellLocation")(tableCellLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertTableRowRequest]
   }

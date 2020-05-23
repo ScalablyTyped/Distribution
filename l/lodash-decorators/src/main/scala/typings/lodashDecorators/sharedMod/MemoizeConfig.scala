@@ -1,6 +1,6 @@
 package typings.lodashDecorators.sharedMod
 
-import typings.lodashDecorators.AnonInstantiable
+import typings.lodashDecorators.anon.Instantiable
 import typings.lodashDecorators.commonMod.ResolvableFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait MemoizeConfig[T, U] extends js.Object {
   var cache: js.UndefOr[MemoizeMap[T, U]] = js.undefined
   var resolver: js.UndefOr[ResolvableFunction] = js.undefined
-  var `type`: js.UndefOr[AnonInstantiable[T, U]] = js.undefined
+  var `type`: js.UndefOr[Instantiable[T, U]] = js.undefined
 }
 
 object MemoizeConfig {
@@ -17,7 +17,7 @@ object MemoizeConfig {
   def apply[T, U](
     cache: MemoizeMap[T, U] = null,
     resolver: ResolvableFunction = null,
-    `type`: AnonInstantiable[T, U] = null
+    `type`: Instantiable[T, U] = null
   ): MemoizeConfig[T, U] = {
     val __obj = js.Dynamic.literal()
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])

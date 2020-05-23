@@ -7,31 +7,30 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientFileManager.ErrorOccurred event.
   */
-@JSGlobal("ASPxClientFileManagerErrorEventArgs")
-@js.native
-class ASPxClientFileManagerErrorEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientFileManagerErrorEventArgs class.
-    * @param commandName A string value that specifies the name of the processed command.
-    * @param errorText A string value that specifies the error description.
-    * @param errorCode An integer value that specifies the error code.
-    */
-  def this(commandName: String, errorText: String, errorCode: Double) = this()
+trait ASPxClientFileManagerErrorEventArgs extends ASPxClientEventArgs {
   /**
     * Gets the name of the processed command.
     */
-  var commandName: String = js.native
+  var commandName: String
   /**
     * Gets a specifically generated code that uniquely identifies an error, which occurs while editing an item.
     */
-  var errorCode: Double = js.native
+  var errorCode: Double
   /**
     * Gets or sets the error description.
     */
-  var errorText: String = js.native
+  var errorText: String
   /**
     * Gets or sets a value specifying whether an event error message is sent to the ASPxClientFileManager.ErrorAlertDisplaying event.
     */
-  var showAlert: Boolean = js.native
+  var showAlert: Boolean
+}
+
+object ASPxClientFileManagerErrorEventArgs {
+  @scala.inline
+  def apply(commandName: String, errorCode: Double, errorText: String, showAlert: Boolean): ASPxClientFileManagerErrorEventArgs = {
+    val __obj = js.Dynamic.literal(commandName = commandName.asInstanceOf[js.Any], errorCode = errorCode.asInstanceOf[js.Any], errorText = errorText.asInstanceOf[js.Any], showAlert = showAlert.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientFileManagerErrorEventArgs]
+  }
 }
 

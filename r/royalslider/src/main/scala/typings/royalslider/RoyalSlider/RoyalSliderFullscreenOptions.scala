@@ -32,10 +32,10 @@ object RoyalSliderFullscreenOptions {
     nativeFS: js.UndefOr[Boolean] = js.undefined
   ): RoyalSliderFullscreenOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(buttonFS)) __obj.updateDynamic("buttonFS")(buttonFS.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboardNav)) __obj.updateDynamic("keyboardNav")(keyboardNav.asInstanceOf[js.Any])
-    if (!js.isUndefined(nativeFS)) __obj.updateDynamic("nativeFS")(nativeFS.asInstanceOf[js.Any])
+    if (!js.isUndefined(buttonFS)) __obj.updateDynamic("buttonFS")(buttonFS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboardNav)) __obj.updateDynamic("keyboardNav")(keyboardNav.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nativeFS)) __obj.updateDynamic("nativeFS")(nativeFS.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoyalSliderFullscreenOptions]
   }
 }

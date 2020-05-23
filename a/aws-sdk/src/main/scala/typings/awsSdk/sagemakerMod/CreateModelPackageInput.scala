@@ -36,14 +36,14 @@ object CreateModelPackageInput {
   @scala.inline
   def apply(
     ModelPackageName: EntityName,
-    CertifyForMarketplace: js.UndefOr[scala.Boolean] = js.undefined,
+    CertifyForMarketplace: js.UndefOr[CertifyForMarketplace] = js.undefined,
     InferenceSpecification: InferenceSpecification = null,
     ModelPackageDescription: EntityDescription = null,
     SourceAlgorithmSpecification: SourceAlgorithmSpecification = null,
     ValidationSpecification: ModelPackageValidationSpecification = null
   ): CreateModelPackageInput = {
     val __obj = js.Dynamic.literal(ModelPackageName = ModelPackageName.asInstanceOf[js.Any])
-    if (!js.isUndefined(CertifyForMarketplace)) __obj.updateDynamic("CertifyForMarketplace")(CertifyForMarketplace.asInstanceOf[js.Any])
+    if (!js.isUndefined(CertifyForMarketplace)) __obj.updateDynamic("CertifyForMarketplace")(CertifyForMarketplace.get.asInstanceOf[js.Any])
     if (InferenceSpecification != null) __obj.updateDynamic("InferenceSpecification")(InferenceSpecification.asInstanceOf[js.Any])
     if (ModelPackageDescription != null) __obj.updateDynamic("ModelPackageDescription")(ModelPackageDescription.asInstanceOf[js.Any])
     if (SourceAlgorithmSpecification != null) __obj.updateDynamic("SourceAlgorithmSpecification")(SourceAlgorithmSpecification.asInstanceOf[js.Any])

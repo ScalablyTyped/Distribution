@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -148,8 +147,4 @@ trait IDBObjectStore extends js.Object {
   def put(value: js.Any): IDBRequest[IDBValidKey] = js.native
   def put(value: js.Any, key: IDBValidKey): IDBRequest[IDBValidKey] = js.native
 }
-
-@JSGlobal("IDBObjectStore")
-@js.native
-object IDBObjectStore extends Instantiable0[IDBObjectStore]
 

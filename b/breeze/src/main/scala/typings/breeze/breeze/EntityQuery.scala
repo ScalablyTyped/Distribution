@@ -4,12 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("breeze.EntityQuery")
 @js.native
-class EntityQuery () extends js.Object {
-  def this(resourceName: String) = this()
-  /** Create query from an expression tree */
-  def this(tree: js.Object) = this()
+trait EntityQuery extends js.Object {
   var entityManager: EntityManager = js.native
   var orderByClause: OrderByClause = js.native
   var parameters: js.Object = js.native
@@ -66,16 +62,5 @@ class EntityQuery () extends js.Object {
   def where(property: String, operator: String, value: js.Any): EntityQuery = js.native
   def where(property: String, operator: FilterQueryOpSymbol, value: js.Any): EntityQuery = js.native
   def withParameters(params: js.Object): EntityQuery = js.native
-}
-
-/* static members */
-@JSGlobal("breeze.EntityQuery")
-@js.native
-object EntityQuery extends js.Object {
-  def from(resourceName: String): EntityQuery = js.native
-  def fromEntities(entities: js.Array[Entity]): EntityQuery = js.native
-  def fromEntities(entity: Entity): EntityQuery = js.native
-  def fromEntityKey(entityKey: EntityKey): EntityQuery = js.native
-  def fromEntityNavigation(entity: Entity, navigationProperty: NavigationProperty): EntityQuery = js.native
 }
 

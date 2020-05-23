@@ -22,14 +22,14 @@ object VarianceScalingArgs {
   def apply(
     distribution: Distribution = null,
     mode: FanMode = null,
-    scale: Int | Double = null,
-    seed: Int | Double = null
+    scale: js.UndefOr[Double] = js.undefined,
+    seed: js.UndefOr[Double] = js.undefined
   ): VarianceScalingArgs = {
     val __obj = js.Dynamic.literal()
     if (distribution != null) __obj.updateDynamic("distribution")(distribution.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(seed)) __obj.updateDynamic("seed")(seed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VarianceScalingArgs]
   }
 }

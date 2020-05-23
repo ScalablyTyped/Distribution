@@ -29,11 +29,11 @@ object CreateLedgerRequest {
   def apply(
     Name: LedgerName,
     PermissionsMode: PermissionsMode,
-    DeletionProtection: js.UndefOr[Boolean] = js.undefined,
+    DeletionProtection: js.UndefOr[DeletionProtection] = js.undefined,
     Tags: Tags = null
   ): CreateLedgerRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], PermissionsMode = PermissionsMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection.get.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLedgerRequest]
   }

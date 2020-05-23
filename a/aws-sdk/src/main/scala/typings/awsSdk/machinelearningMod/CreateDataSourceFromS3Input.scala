@@ -29,11 +29,11 @@ object CreateDataSourceFromS3Input {
   def apply(
     DataSourceId: EntityId,
     DataSpec: S3DataSpec,
-    ComputeStatistics: js.UndefOr[Boolean] = js.undefined,
+    ComputeStatistics: js.UndefOr[ComputeStatistics] = js.undefined,
     DataSourceName: EntityName = null
   ): CreateDataSourceFromS3Input = {
     val __obj = js.Dynamic.literal(DataSourceId = DataSourceId.asInstanceOf[js.Any], DataSpec = DataSpec.asInstanceOf[js.Any])
-    if (!js.isUndefined(ComputeStatistics)) __obj.updateDynamic("ComputeStatistics")(ComputeStatistics.asInstanceOf[js.Any])
+    if (!js.isUndefined(ComputeStatistics)) __obj.updateDynamic("ComputeStatistics")(ComputeStatistics.get.asInstanceOf[js.Any])
     if (DataSourceName != null) __obj.updateDynamic("DataSourceName")(DataSourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDataSourceFromS3Input]
   }

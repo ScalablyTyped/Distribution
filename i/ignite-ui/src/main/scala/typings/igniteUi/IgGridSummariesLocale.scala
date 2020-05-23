@@ -7,48 +7,45 @@ import scala.scalajs.js.annotation._
 
 trait IgGridSummariesLocale
   extends /**
-	 * Option for IgGridSummariesLocale
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * Text of the button Cancel in the summaries dropdown
-  	 *
-  	 */
+    * Text of the button Cancel in the summaries dropdown
+    *
+    */
   var dialogButtonCancelText: js.UndefOr[String] = js.undefined
   /**
-  	 * Text of the button OK in the summaries dropdown
-  	 *
-  	 */
+    * Text of the button OK in the summaries dropdown
+    *
+    */
   var dialogButtonOKText: js.UndefOr[String] = js.undefined
   /**
-  	 * Empty text template to be shown for empty cells
-  	 *
-  	 */
+    * Empty text template to be shown for empty cells
+    *
+    */
   var emptyCellText: js.UndefOr[String] = js.undefined
   /**
-  	 * Get or set text that is shown in the feature chooser dropdown when summaries are hidden
-  	 *
-  	 */
+    * Get or set text that is shown in the feature chooser dropdown when summaries are hidden
+    *
+    */
   var featureChooserText: js.UndefOr[String] = js.undefined
   /**
-  	 * Get or set text that is shown in the feauture chooser dropdown when summaries are shown
-  	 *
-  	 */
+    * Get or set text that is shown in the feauture chooser dropdown when summaries are shown
+    *
+    */
   var featureChooserTextHide: js.UndefOr[String] = js.undefined
   /**
-  	 * Tooltip text for header cell button
-  	 *
-  	 */
+    * Tooltip text for header cell button
+    *
+    */
   var summariesHeaderButtonTooltip: js.UndefOr[String] = js.undefined
 }
 
 object IgGridSummariesLocale {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for IgGridSummariesLocale
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     dialogButtonCancelText: String = null,
     dialogButtonOKText: String = null,
     emptyCellText: String = null,

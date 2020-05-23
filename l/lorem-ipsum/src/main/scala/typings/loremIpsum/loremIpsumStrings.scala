@@ -6,15 +6,6 @@ import scala.scalajs.js.annotation._
 
 object loremIpsumStrings {
   @js.native
-  sealed trait `3 words [options]` extends js.Object
-  
-  @js.native
-  sealed trait `Could not determine host operating systemDot` extends js.Object
-  
-  @js.native
-  sealed trait `Generates one or more wordsVerticallinesentencesVerticallineparagraphs` extends js.Object
-  
-  @js.native
   sealed trait html extends js.Object
   
   @js.native
@@ -38,12 +29,6 @@ object loremIpsumStrings {
   @js.native
   sealed trait words extends js.Object
   
-  @scala.inline
-  def `3 words [options]`: `3 words [options]` = ("3 words [options]").asInstanceOf[`3 words [options]`]
-  @scala.inline
-  def `Could not determine host operating systemDot`: `Could not determine host operating systemDot` = ("Could not determine host operating system.").asInstanceOf[`Could not determine host operating systemDot`]
-  @scala.inline
-  def `Generates one or more wordsVerticallinesentencesVerticallineparagraphs`: `Generates one or more wordsVerticallinesentencesVerticallineparagraphs` = ("Generates one or more words|sentences|paragraphs").asInstanceOf[`Generates one or more wordsVerticallinesentencesVerticallineparagraphs`]
   @scala.inline
   def html: html = "html".asInstanceOf[html]
   @scala.inline

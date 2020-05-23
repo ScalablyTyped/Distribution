@@ -8,6 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BaseMark extends js.Object {
+  var aria: js.UndefOr[Boolean] = js.undefined
   var clip: js.UndefOr[Clip] = js.undefined
   var description: js.UndefOr[String] = js.undefined
   var from: js.UndefOr[From] = js.undefined
@@ -25,6 +26,7 @@ trait BaseMark extends js.Object {
 object BaseMark {
   @scala.inline
   def apply(
+    aria: js.UndefOr[Boolean] = js.undefined,
     clip: Clip = null,
     description: String = null,
     from: From = null,
@@ -36,9 +38,10 @@ object BaseMark {
     sort: Compare = null,
     style: String | js.Array[String] = null,
     transform: js.Array[Transforms] = null,
-    zindex: Int | Double = null
+    zindex: js.UndefOr[Double] = js.undefined
   ): BaseMark = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(aria)) __obj.updateDynamic("aria")(aria.get.asInstanceOf[js.Any])
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
@@ -50,7 +53,7 @@ object BaseMark {
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (zindex != null) __obj.updateDynamic("zindex")(zindex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zindex)) __obj.updateDynamic("zindex")(zindex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseMark]
   }
 }

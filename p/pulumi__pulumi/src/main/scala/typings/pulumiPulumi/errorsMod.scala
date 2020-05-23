@@ -13,7 +13,6 @@ object errorsMod extends js.Object {
   class ResourceError protected () extends Error {
     def this(message: String) = this()
     def this(message: String, resource: Resource) = this()
-    def this(message: String, resource: js.UndefOr[scala.Nothing], hideStack: Boolean) = this()
     def this(message: String, resource: Resource, hideStack: Boolean) = this()
     var hideStack: js.UndefOr[Boolean] = js.native
     /* CompleteClass */

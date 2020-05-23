@@ -75,7 +75,7 @@ trait OptionGroupOption extends js.Object {
 object OptionGroupOption {
   @scala.inline
   def apply(
-    DefaultPort: Int | scala.Double = null,
+    DefaultPort: js.UndefOr[IntegerOptional] = js.undefined,
     Description: String = null,
     EngineName: String = null,
     MajorEngineVersion: String = null,
@@ -85,15 +85,15 @@ object OptionGroupOption {
     OptionGroupOptionVersions: OptionGroupOptionVersionsList = null,
     OptionsConflictsWith: OptionsConflictsWith = null,
     OptionsDependedOn: OptionsDependedOn = null,
-    Permanent: js.UndefOr[scala.Boolean] = js.undefined,
-    Persistent: js.UndefOr[scala.Boolean] = js.undefined,
-    PortRequired: js.UndefOr[scala.Boolean] = js.undefined,
-    RequiresAutoMinorEngineVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
-    SupportsOptionVersionDowngrade: js.UndefOr[scala.Boolean] = js.undefined,
-    VpcOnly: js.UndefOr[scala.Boolean] = js.undefined
+    Permanent: js.UndefOr[Boolean] = js.undefined,
+    Persistent: js.UndefOr[Boolean] = js.undefined,
+    PortRequired: js.UndefOr[Boolean] = js.undefined,
+    RequiresAutoMinorEngineVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
+    SupportsOptionVersionDowngrade: js.UndefOr[BooleanOptional] = js.undefined,
+    VpcOnly: js.UndefOr[Boolean] = js.undefined
   ): OptionGroupOption = {
     val __obj = js.Dynamic.literal()
-    if (DefaultPort != null) __obj.updateDynamic("DefaultPort")(DefaultPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(DefaultPort)) __obj.updateDynamic("DefaultPort")(DefaultPort.get.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (EngineName != null) __obj.updateDynamic("EngineName")(EngineName.asInstanceOf[js.Any])
     if (MajorEngineVersion != null) __obj.updateDynamic("MajorEngineVersion")(MajorEngineVersion.asInstanceOf[js.Any])
@@ -103,12 +103,12 @@ object OptionGroupOption {
     if (OptionGroupOptionVersions != null) __obj.updateDynamic("OptionGroupOptionVersions")(OptionGroupOptionVersions.asInstanceOf[js.Any])
     if (OptionsConflictsWith != null) __obj.updateDynamic("OptionsConflictsWith")(OptionsConflictsWith.asInstanceOf[js.Any])
     if (OptionsDependedOn != null) __obj.updateDynamic("OptionsDependedOn")(OptionsDependedOn.asInstanceOf[js.Any])
-    if (!js.isUndefined(Permanent)) __obj.updateDynamic("Permanent")(Permanent.asInstanceOf[js.Any])
-    if (!js.isUndefined(Persistent)) __obj.updateDynamic("Persistent")(Persistent.asInstanceOf[js.Any])
-    if (!js.isUndefined(PortRequired)) __obj.updateDynamic("PortRequired")(PortRequired.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequiresAutoMinorEngineVersionUpgrade)) __obj.updateDynamic("RequiresAutoMinorEngineVersionUpgrade")(RequiresAutoMinorEngineVersionUpgrade.asInstanceOf[js.Any])
-    if (!js.isUndefined(SupportsOptionVersionDowngrade)) __obj.updateDynamic("SupportsOptionVersionDowngrade")(SupportsOptionVersionDowngrade.asInstanceOf[js.Any])
-    if (!js.isUndefined(VpcOnly)) __obj.updateDynamic("VpcOnly")(VpcOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(Permanent)) __obj.updateDynamic("Permanent")(Permanent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Persistent)) __obj.updateDynamic("Persistent")(Persistent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PortRequired)) __obj.updateDynamic("PortRequired")(PortRequired.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RequiresAutoMinorEngineVersionUpgrade)) __obj.updateDynamic("RequiresAutoMinorEngineVersionUpgrade")(RequiresAutoMinorEngineVersionUpgrade.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SupportsOptionVersionDowngrade)) __obj.updateDynamic("SupportsOptionVersionDowngrade")(SupportsOptionVersionDowngrade.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VpcOnly)) __obj.updateDynamic("VpcOnly")(VpcOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionGroupOption]
   }
 }

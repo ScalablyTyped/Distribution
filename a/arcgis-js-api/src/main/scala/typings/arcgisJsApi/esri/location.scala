@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,7 +40,11 @@ trait location extends js.Object {
   def createRenderer(params: locationCreateRendererParams): js.Promise[locationRendererResult]
 }
 
-@JSGlobal("__esri.location")
-@js.native
-object location extends TopLevel[location]
+object location {
+  @scala.inline
+  def apply(createRenderer: locationCreateRendererParams => js.Promise[locationRendererResult]): location = {
+    val __obj = js.Dynamic.literal(createRenderer = js.Any.fromFunction1(createRenderer))
+    __obj.asInstanceOf[location]
+  }
+}
 

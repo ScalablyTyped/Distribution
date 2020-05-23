@@ -6,7 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IHttpRequestConfigHeaders
-  extends /* requestType */ StringDictionary[js.Any] {
+  extends /**
+  * Indexer which should return ng.INgModelController for most properties but cannot because of "All named properties must be assignable to string indexer type" constraint - see https://github.com/Microsoft/TypeScript/issues/272
+  */
+/* name */ StringDictionary[js.Any] {
   var common: js.UndefOr[js.Any] = js.undefined
   var get: js.UndefOr[js.Any] = js.undefined
   var patch: js.UndefOr[js.Any] = js.undefined
@@ -17,7 +20,7 @@ trait IHttpRequestConfigHeaders
 object IHttpRequestConfigHeaders {
   @scala.inline
   def apply(
-    StringDictionary: /* requestType */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     common: js.Any = null,
     get: js.Any = null,
     patch: js.Any = null,

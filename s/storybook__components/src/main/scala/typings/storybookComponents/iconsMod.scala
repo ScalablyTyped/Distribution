@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@storybook/components/dist/icon/icons", JSImport.Namespace)
 @js.native
 object iconsMod extends js.Object {
-  /* Rewritten from type alias, can be one of: 
+  /* keyof @storybook/components.anon.Add */ /* Rewritten from type alias, can be one of: 
     - typings.storybookComponents.storybookComponentsStrings.mobile
     - typings.storybookComponents.storybookComponentsStrings.watch
     - typings.storybookComponents.storybookComponentsStrings.tablet

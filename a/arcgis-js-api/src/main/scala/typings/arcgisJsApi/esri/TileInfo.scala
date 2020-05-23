@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.dib
 import typings.arcgisJsApi.arcgisJsApiStrings.emf
 import typings.arcgisJsApi.arcgisJsApiStrings.gif
@@ -84,8 +83,4 @@ trait TileInfo
     */
   def zoomToScale(zoom: Double): Double = js.native
 }
-
-@JSGlobal("__esri.TileInfo")
-@js.native
-object TileInfo extends TopLevel[TileInfoConstructor]
 

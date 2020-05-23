@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.ChartGroup")
 @js.native
-class ChartGroup protected () extends js.Object {
+trait ChartGroup extends js.Object {
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   var AxisGroup: XlAxisGroup = js.native
   var BubbleScale: Double = js.native

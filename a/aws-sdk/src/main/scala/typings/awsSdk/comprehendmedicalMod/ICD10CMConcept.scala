@@ -22,11 +22,11 @@ trait ICD10CMConcept extends js.Object {
 
 object ICD10CMConcept {
   @scala.inline
-  def apply(Code: String = null, Description: String = null, Score: Int | Double = null): ICD10CMConcept = {
+  def apply(Code: String = null, Description: String = null, Score: js.UndefOr[Float] = js.undefined): ICD10CMConcept = {
     val __obj = js.Dynamic.literal()
     if (Code != null) __obj.updateDynamic("Code")(Code.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Score != null) __obj.updateDynamic("Score")(Score.asInstanceOf[js.Any])
+    if (!js.isUndefined(Score)) __obj.updateDynamic("Score")(Score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICD10CMConcept]
   }
 }

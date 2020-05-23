@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.Footnotes")
 @js.native
-class Footnotes protected () extends js.Object {
+trait Footnotes extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   val ContinuationNotice: Range = js.native
   val ContinuationSeparator: Range = js.native

@@ -1,19 +1,20 @@
 package typings.primereact.dataTableMod
 
-import typings.primereact.AnonColumns
-import typings.primereact.AnonData
-import typings.primereact.AnonDataArray
-import typings.primereact.AnonDataField
-import typings.primereact.AnonDataIndex
-import typings.primereact.AnonDataOriginalEvent
-import typings.primereact.AnonDelta
-import typings.primereact.AnonDragIndex
-import typings.primereact.AnonFirst
-import typings.primereact.AnonMultiSortMeta
-import typings.primereact.AnonType
-import typings.primereact.AnonValue
+import typings.primereact.anon.Columns
+import typings.primereact.anon.Data
+import typings.primereact.anon.DataArray
+import typings.primereact.anon.DataField
+import typings.primereact.anon.DataIndex
+import typings.primereact.anon.DataOriginalEvent
+import typings.primereact.anon.Delta
+import typings.primereact.anon.DragIndex
+import typings.primereact.anon.Filters
+import typings.primereact.anon.First
+import typings.primereact.anon.MultiSortMeta
+import typings.primereact.anon.Type
+import typings.primereact.anon.Value
 import typings.react.mod.ReactNode
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +35,7 @@ trait DataTableProps extends js.Object {
   var expandableRowGroups: js.UndefOr[Boolean] = js.undefined
   var expandedRows: js.UndefOr[js.Array[_]] = js.undefined
   var exportFilename: js.UndefOr[String] = js.undefined
-  var exportFunction: js.UndefOr[js.Function1[/* e */ AnonDataField, _]] = js.undefined
+  var exportFunction: js.UndefOr[js.Function1[/* e */ DataField, _]] = js.undefined
   var filterLocale: js.UndefOr[String] = js.undefined
   var filters: js.UndefOr[js.Object] = js.undefined
   var first: js.UndefOr[Double] = js.undefined
@@ -54,27 +55,27 @@ trait DataTableProps extends js.Object {
   var loadingIcon: js.UndefOr[String] = js.undefined
   var metaKeySelection: js.UndefOr[Boolean] = js.undefined
   var multiSortMeta: js.UndefOr[js.Array[_]] = js.undefined
-  var onColReorder: js.UndefOr[js.Function1[/* e */ AnonColumns, Unit]] = js.undefined
-  var onColumnResizeEnd: js.UndefOr[js.Function1[/* e */ AnonDelta, Unit]] = js.undefined
-  var onContextMenu: js.UndefOr[js.Function1[/* e */ AnonDataOriginalEvent, Unit]] = js.undefined
-  var onContextMenuSelectionChange: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
-  var onFilter: js.UndefOr[js.Function1[/* filters */ js.Object, Unit]] = js.undefined
-  var onPage: js.UndefOr[js.Function1[/* e */ AnonFirst, Unit]] = js.undefined
-  var onRowClick: js.UndefOr[js.Function1[/* e */ AnonDataIndex, Unit]] = js.undefined
-  var onRowCollapse: js.UndefOr[js.Function1[/* e */ AnonDataOriginalEvent, Unit]] = js.undefined
-  var onRowDoubleClick: js.UndefOr[js.Function1[/* e */ AnonDataIndex, Unit]] = js.undefined
-  var onRowEditCancel: js.UndefOr[js.Function1[/* e */ AnonDataIndex, Unit]] = js.undefined
-  var onRowEditInit: js.UndefOr[js.Function1[/* e */ AnonDataOriginalEvent, Unit]] = js.undefined
-  var onRowEditSave: js.UndefOr[js.Function1[/* e */ AnonDataOriginalEvent, Unit]] = js.undefined
-  var onRowExpand: js.UndefOr[js.Function1[/* e */ AnonDataOriginalEvent, Unit]] = js.undefined
-  var onRowReorder: js.UndefOr[js.Function1[/* e */ AnonDragIndex, Unit]] = js.undefined
-  var onRowSelect: js.UndefOr[js.Function1[/* e */ AnonType, Unit]] = js.undefined
-  var onRowToggle: js.UndefOr[js.Function1[/* e */ AnonDataArray, Unit]] = js.undefined
-  var onRowUnselect: js.UndefOr[js.Function1[/* e */ AnonType, Unit]] = js.undefined
-  var onSelectionChange: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
-  var onSort: js.UndefOr[js.Function1[/* e */ AnonMultiSortMeta, Unit]] = js.undefined
+  var onColReorder: js.UndefOr[js.Function1[/* e */ Columns, Unit]] = js.undefined
+  var onColumnResizeEnd: js.UndefOr[js.Function1[/* e */ Delta, Unit]] = js.undefined
+  var onContextMenu: js.UndefOr[js.Function1[/* e */ DataOriginalEvent, Unit]] = js.undefined
+  var onContextMenuSelectionChange: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
+  var onFilter: js.UndefOr[js.Function1[/* e */ Filters, Unit]] = js.undefined
+  var onPage: js.UndefOr[js.Function1[/* e */ First, Unit]] = js.undefined
+  var onRowClick: js.UndefOr[js.Function1[/* e */ DataIndex, Unit]] = js.undefined
+  var onRowCollapse: js.UndefOr[js.Function1[/* e */ DataOriginalEvent, Unit]] = js.undefined
+  var onRowDoubleClick: js.UndefOr[js.Function1[/* e */ DataIndex, Unit]] = js.undefined
+  var onRowEditCancel: js.UndefOr[js.Function1[/* e */ DataIndex, Unit]] = js.undefined
+  var onRowEditInit: js.UndefOr[js.Function1[/* e */ DataOriginalEvent, Unit]] = js.undefined
+  var onRowEditSave: js.UndefOr[js.Function1[/* e */ DataOriginalEvent, Unit]] = js.undefined
+  var onRowExpand: js.UndefOr[js.Function1[/* e */ DataOriginalEvent, Unit]] = js.undefined
+  var onRowReorder: js.UndefOr[js.Function1[/* e */ DragIndex, Unit]] = js.undefined
+  var onRowSelect: js.UndefOr[js.Function1[/* e */ Type, Unit]] = js.undefined
+  var onRowToggle: js.UndefOr[js.Function1[/* e */ DataArray, Unit]] = js.undefined
+  var onRowUnselect: js.UndefOr[js.Function1[/* e */ Type, Unit]] = js.undefined
+  var onSelectionChange: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
+  var onSort: js.UndefOr[js.Function1[/* e */ MultiSortMeta, Unit]] = js.undefined
   var onValueChange: js.UndefOr[js.Function1[/* value */ js.Array[_], Unit]] = js.undefined
-  var onVirtualScroll: js.UndefOr[js.Function1[/* e */ AnonFirst, Unit]] = js.undefined
+  var onVirtualScroll: js.UndefOr[js.Function1[/* e */ First, Unit]] = js.undefined
   var pageLinkSize: js.UndefOr[Double] = js.undefined
   var paginator: js.UndefOr[Boolean] = js.undefined
   var paginatorLeft: js.UndefOr[js.Any] = js.undefined
@@ -98,8 +99,8 @@ trait DataTableProps extends js.Object {
   var scrollable: js.UndefOr[Boolean] = js.undefined
   var selection: js.UndefOr[js.Any] = js.undefined
   var selectionMode: js.UndefOr[String] = js.undefined
-  var showReorderElement: js.UndefOr[js.Function1[/* e */ AnonData, Boolean]] = js.undefined
-  var showSelectionElement: js.UndefOr[js.Function1[/* e */ AnonData, Boolean]] = js.undefined
+  var showReorderElement: js.UndefOr[js.Function1[/* e */ Data, Boolean]] = js.undefined
+  var showSelectionElement: js.UndefOr[js.Function1[/* e */ Data, Boolean]] = js.undefined
   var sortField: js.UndefOr[String] = js.undefined
   var sortMode: js.UndefOr[String] = js.undefined
   var sortOrder: js.UndefOr[Double] = js.undefined
@@ -128,16 +129,16 @@ object DataTableProps {
     csvSeparator: String = null,
     currentPageReportTemplate: String = null,
     dataKey: String = null,
-    defaultSortOrder: Int | Double = null,
+    defaultSortOrder: js.UndefOr[Double] = js.undefined,
     editMode: String = null,
     emptyMessage: js.Any = null,
     expandableRowGroups: js.UndefOr[Boolean] = js.undefined,
     expandedRows: js.Array[_] = null,
     exportFilename: String = null,
-    exportFunction: /* e */ AnonDataField => _ = null,
+    exportFunction: /* e */ DataField => _ = null,
     filterLocale: String = null,
     filters: js.Object = null,
-    first: Int | Double = null,
+    first: js.UndefOr[Double] = js.undefined,
     footer: js.Any = null,
     footerColumnGroup: js.Any = null,
     frozenFooterColumnGroup: js.Any = null,
@@ -154,28 +155,28 @@ object DataTableProps {
     loadingIcon: String = null,
     metaKeySelection: js.UndefOr[Boolean] = js.undefined,
     multiSortMeta: js.Array[_] = null,
-    onColReorder: /* e */ AnonColumns => Unit = null,
-    onColumnResizeEnd: /* e */ AnonDelta => Unit = null,
-    onContextMenu: /* e */ AnonDataOriginalEvent => Unit = null,
-    onContextMenuSelectionChange: /* e */ AnonValue => Unit = null,
-    onFilter: /* filters */ js.Object => Unit = null,
-    onPage: /* e */ AnonFirst => Unit = null,
-    onRowClick: /* e */ AnonDataIndex => Unit = null,
-    onRowCollapse: /* e */ AnonDataOriginalEvent => Unit = null,
-    onRowDoubleClick: /* e */ AnonDataIndex => Unit = null,
-    onRowEditCancel: /* e */ AnonDataIndex => Unit = null,
-    onRowEditInit: /* e */ AnonDataOriginalEvent => Unit = null,
-    onRowEditSave: /* e */ AnonDataOriginalEvent => Unit = null,
-    onRowExpand: /* e */ AnonDataOriginalEvent => Unit = null,
-    onRowReorder: /* e */ AnonDragIndex => Unit = null,
-    onRowSelect: /* e */ AnonType => Unit = null,
-    onRowToggle: /* e */ AnonDataArray => Unit = null,
-    onRowUnselect: /* e */ AnonType => Unit = null,
-    onSelectionChange: /* e */ AnonValue => Unit = null,
-    onSort: /* e */ AnonMultiSortMeta => Unit = null,
+    onColReorder: /* e */ Columns => Unit = null,
+    onColumnResizeEnd: /* e */ Delta => Unit = null,
+    onContextMenu: /* e */ DataOriginalEvent => Unit = null,
+    onContextMenuSelectionChange: /* e */ Value => Unit = null,
+    onFilter: /* e */ Filters => Unit = null,
+    onPage: /* e */ First => Unit = null,
+    onRowClick: /* e */ DataIndex => Unit = null,
+    onRowCollapse: /* e */ DataOriginalEvent => Unit = null,
+    onRowDoubleClick: /* e */ DataIndex => Unit = null,
+    onRowEditCancel: /* e */ DataIndex => Unit = null,
+    onRowEditInit: /* e */ DataOriginalEvent => Unit = null,
+    onRowEditSave: /* e */ DataOriginalEvent => Unit = null,
+    onRowExpand: /* e */ DataOriginalEvent => Unit = null,
+    onRowReorder: /* e */ DragIndex => Unit = null,
+    onRowSelect: /* e */ Type => Unit = null,
+    onRowToggle: /* e */ DataArray => Unit = null,
+    onRowUnselect: /* e */ Type => Unit = null,
+    onSelectionChange: /* e */ Value => Unit = null,
+    onSort: /* e */ MultiSortMeta => Unit = null,
     onValueChange: /* value */ js.Array[_] => Unit = null,
-    onVirtualScroll: /* e */ AnonFirst => Unit = null,
-    pageLinkSize: Int | Double = null,
+    onVirtualScroll: /* e */ First => Unit = null,
+    pageLinkSize: js.UndefOr[Double] = js.undefined,
     paginator: js.UndefOr[Boolean] = js.undefined,
     paginatorLeft: js.Any = null,
     paginatorPosition: String = null,
@@ -192,32 +193,32 @@ object DataTableProps {
     rowGroupHeaderTemplate: (/* data */ js.Any, /* index */ Double) => js.UndefOr[ReactNode] = null,
     rowGroupMode: String = null,
     rowHover: js.UndefOr[Boolean] = js.undefined,
-    rows: Int | Double = null,
+    rows: js.UndefOr[Double] = js.undefined,
     rowsPerPageOptions: js.Array[Double] = null,
     scrollHeight: String = null,
     scrollable: js.UndefOr[Boolean] = js.undefined,
     selection: js.Any = null,
     selectionMode: String = null,
-    showReorderElement: /* e */ AnonData => Boolean = null,
-    showSelectionElement: /* e */ AnonData => Boolean = null,
+    showReorderElement: /* e */ Data => Boolean = null,
+    showSelectionElement: /* e */ Data => Boolean = null,
     sortField: String = null,
     sortMode: String = null,
-    sortOrder: Int | Double = null,
+    sortOrder: js.UndefOr[Double] = js.undefined,
     stateKey: String = null,
     stateStorage: String = null,
     style: js.Object = null,
     tabIndex: String = null,
     tableClassName: String = null,
     tableStyle: js.Object = null,
-    totalRecords: Int | Double = null,
+    totalRecords: js.UndefOr[Double] = js.undefined,
     value: js.Array[_] = null,
-    virtualRowHeight: Int | Double = null,
+    virtualRowHeight: js.UndefOr[Double] = js.undefined,
     virtualScroll: js.UndefOr[Boolean] = js.undefined,
-    virtualScrollDelay: Int | Double = null
+    virtualScrollDelay: js.UndefOr[Double] = js.undefined
   ): DataTableProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alwaysShowPaginator)) __obj.updateDynamic("alwaysShowPaginator")(alwaysShowPaginator.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoLayout)) __obj.updateDynamic("autoLayout")(autoLayout.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysShowPaginator)) __obj.updateDynamic("alwaysShowPaginator")(alwaysShowPaginator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoLayout)) __obj.updateDynamic("autoLayout")(autoLayout.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (columnResizeMode != null) __obj.updateDynamic("columnResizeMode")(columnResizeMode.asInstanceOf[js.Any])
     if (compareSelectionBy != null) __obj.updateDynamic("compareSelectionBy")(compareSelectionBy.asInstanceOf[js.Any])
@@ -225,16 +226,16 @@ object DataTableProps {
     if (csvSeparator != null) __obj.updateDynamic("csvSeparator")(csvSeparator.asInstanceOf[js.Any])
     if (currentPageReportTemplate != null) __obj.updateDynamic("currentPageReportTemplate")(currentPageReportTemplate.asInstanceOf[js.Any])
     if (dataKey != null) __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
-    if (defaultSortOrder != null) __obj.updateDynamic("defaultSortOrder")(defaultSortOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultSortOrder)) __obj.updateDynamic("defaultSortOrder")(defaultSortOrder.get.asInstanceOf[js.Any])
     if (editMode != null) __obj.updateDynamic("editMode")(editMode.asInstanceOf[js.Any])
     if (emptyMessage != null) __obj.updateDynamic("emptyMessage")(emptyMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandableRowGroups)) __obj.updateDynamic("expandableRowGroups")(expandableRowGroups.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandableRowGroups)) __obj.updateDynamic("expandableRowGroups")(expandableRowGroups.get.asInstanceOf[js.Any])
     if (expandedRows != null) __obj.updateDynamic("expandedRows")(expandedRows.asInstanceOf[js.Any])
     if (exportFilename != null) __obj.updateDynamic("exportFilename")(exportFilename.asInstanceOf[js.Any])
     if (exportFunction != null) __obj.updateDynamic("exportFunction")(js.Any.fromFunction1(exportFunction))
     if (filterLocale != null) __obj.updateDynamic("filterLocale")(filterLocale.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
+    if (!js.isUndefined(first)) __obj.updateDynamic("first")(first.get.asInstanceOf[js.Any])
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
     if (footerColumnGroup != null) __obj.updateDynamic("footerColumnGroup")(footerColumnGroup.asInstanceOf[js.Any])
     if (frozenFooterColumnGroup != null) __obj.updateDynamic("frozenFooterColumnGroup")(frozenFooterColumnGroup.asInstanceOf[js.Any])
@@ -246,10 +247,10 @@ object DataTableProps {
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (headerColumnGroup != null) __obj.updateDynamic("headerColumnGroup")(headerColumnGroup.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
+    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.get.asInstanceOf[js.Any])
     if (loadingIcon != null) __obj.updateDynamic("loadingIcon")(loadingIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(metaKeySelection)) __obj.updateDynamic("metaKeySelection")(metaKeySelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(metaKeySelection)) __obj.updateDynamic("metaKeySelection")(metaKeySelection.get.asInstanceOf[js.Any])
     if (multiSortMeta != null) __obj.updateDynamic("multiSortMeta")(multiSortMeta.asInstanceOf[js.Any])
     if (onColReorder != null) __obj.updateDynamic("onColReorder")(js.Any.fromFunction1(onColReorder))
     if (onColumnResizeEnd != null) __obj.updateDynamic("onColumnResizeEnd")(js.Any.fromFunction1(onColumnResizeEnd))
@@ -272,45 +273,45 @@ object DataTableProps {
     if (onSort != null) __obj.updateDynamic("onSort")(js.Any.fromFunction1(onSort))
     if (onValueChange != null) __obj.updateDynamic("onValueChange")(js.Any.fromFunction1(onValueChange))
     if (onVirtualScroll != null) __obj.updateDynamic("onVirtualScroll")(js.Any.fromFunction1(onVirtualScroll))
-    if (pageLinkSize != null) __obj.updateDynamic("pageLinkSize")(pageLinkSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(paginator)) __obj.updateDynamic("paginator")(paginator.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageLinkSize)) __obj.updateDynamic("pageLinkSize")(pageLinkSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paginator)) __obj.updateDynamic("paginator")(paginator.get.asInstanceOf[js.Any])
     if (paginatorLeft != null) __obj.updateDynamic("paginatorLeft")(paginatorLeft.asInstanceOf[js.Any])
     if (paginatorPosition != null) __obj.updateDynamic("paginatorPosition")(paginatorPosition.asInstanceOf[js.Any])
     if (paginatorRight != null) __obj.updateDynamic("paginatorRight")(paginatorRight.asInstanceOf[js.Any])
     if (paginatorTemplate != null) __obj.updateDynamic("paginatorTemplate")(paginatorTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(removableSort)) __obj.updateDynamic("removableSort")(removableSort.asInstanceOf[js.Any])
-    if (!js.isUndefined(reorderableColumns)) __obj.updateDynamic("reorderableColumns")(reorderableColumns.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizableColumns)) __obj.updateDynamic("resizableColumns")(resizableColumns.asInstanceOf[js.Any])
-    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(removableSort)) __obj.updateDynamic("removableSort")(removableSort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reorderableColumns)) __obj.updateDynamic("reorderableColumns")(reorderableColumns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizableColumns)) __obj.updateDynamic("resizableColumns")(resizableColumns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.get.asInstanceOf[js.Any])
     if (rowClassName != null) __obj.updateDynamic("rowClassName")(js.Any.fromFunction1(rowClassName))
     if (rowEditorValidator != null) __obj.updateDynamic("rowEditorValidator")(js.Any.fromFunction1(rowEditorValidator))
     if (rowExpansionTemplate != null) __obj.updateDynamic("rowExpansionTemplate")(js.Any.fromFunction1(rowExpansionTemplate))
     if (rowGroupFooterTemplate != null) __obj.updateDynamic("rowGroupFooterTemplate")(js.Any.fromFunction2(rowGroupFooterTemplate))
     if (rowGroupHeaderTemplate != null) __obj.updateDynamic("rowGroupHeaderTemplate")(js.Any.fromFunction2(rowGroupHeaderTemplate))
     if (rowGroupMode != null) __obj.updateDynamic("rowGroupMode")(rowGroupMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowHover)) __obj.updateDynamic("rowHover")(rowHover.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowHover)) __obj.updateDynamic("rowHover")(rowHover.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
     if (rowsPerPageOptions != null) __obj.updateDynamic("rowsPerPageOptions")(rowsPerPageOptions.asInstanceOf[js.Any])
     if (scrollHeight != null) __obj.updateDynamic("scrollHeight")(scrollHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollable)) __obj.updateDynamic("scrollable")(scrollable.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollable)) __obj.updateDynamic("scrollable")(scrollable.get.asInstanceOf[js.Any])
     if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
     if (showReorderElement != null) __obj.updateDynamic("showReorderElement")(js.Any.fromFunction1(showReorderElement))
     if (showSelectionElement != null) __obj.updateDynamic("showSelectionElement")(js.Any.fromFunction1(showSelectionElement))
     if (sortField != null) __obj.updateDynamic("sortField")(sortField.asInstanceOf[js.Any])
     if (sortMode != null) __obj.updateDynamic("sortMode")(sortMode.asInstanceOf[js.Any])
-    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortOrder)) __obj.updateDynamic("sortOrder")(sortOrder.get.asInstanceOf[js.Any])
     if (stateKey != null) __obj.updateDynamic("stateKey")(stateKey.asInstanceOf[js.Any])
     if (stateStorage != null) __obj.updateDynamic("stateStorage")(stateStorage.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (tableClassName != null) __obj.updateDynamic("tableClassName")(tableClassName.asInstanceOf[js.Any])
     if (tableStyle != null) __obj.updateDynamic("tableStyle")(tableStyle.asInstanceOf[js.Any])
-    if (totalRecords != null) __obj.updateDynamic("totalRecords")(totalRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalRecords)) __obj.updateDynamic("totalRecords")(totalRecords.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (virtualRowHeight != null) __obj.updateDynamic("virtualRowHeight")(virtualRowHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(virtualScroll)) __obj.updateDynamic("virtualScroll")(virtualScroll.asInstanceOf[js.Any])
-    if (virtualScrollDelay != null) __obj.updateDynamic("virtualScrollDelay")(virtualScrollDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(virtualRowHeight)) __obj.updateDynamic("virtualRowHeight")(virtualRowHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(virtualScroll)) __obj.updateDynamic("virtualScroll")(virtualScroll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(virtualScrollDelay)) __obj.updateDynamic("virtualScrollDelay")(virtualScrollDelay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTableProps]
   }
 }

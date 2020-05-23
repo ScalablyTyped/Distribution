@@ -15,8 +15,8 @@ trait PlusWebviewWebviewDragOtherViewOptions extends js.Object {
   /**
     * 滑动模式
     * 可取值：
-    * 	"follow" - 同步跟随主Webview窗口滑动；
-    * 	"silent" - 不跟随主Webview窗口滑动。
+    *     "follow" - 同步跟随主Webview窗口滑动；
+    *     "silent" - 不跟随主Webview窗口滑动。
     * - follow: 同步跟随主Webview窗口滑动
     * - silent: 不跟随主Webview窗口滑动
     * 

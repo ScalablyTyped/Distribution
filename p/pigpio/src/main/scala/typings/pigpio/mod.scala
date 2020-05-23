@@ -2,6 +2,8 @@ package typings.pigpio
 
 import typings.node.NodeJS.ReadableStream
 import typings.node.eventsMod.EventEmitter
+import typings.pigpio.anon.Alert
+import typings.pigpio.anon.Bits
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +19,7 @@ object mod extends js.Object {
       * @param options   object (optional)
       */
     def this(gpio: Double) = this()
-    def this(gpio: Double, options: AnonAlert) = this()
+    def this(gpio: Double, options: Alert) = this()
     /**
       * The same to #pwmWrite.
       * @param dutyCycle     an unsigned integer >= 0 (off) and <= range (fully on). range defaults to 255.
@@ -159,7 +161,7 @@ object mod extends js.Object {
     * @param options   Used to configure which GPIOs notifications should be provided for.
     */
   class Notifier () extends js.Object {
-    def this(options: AnonBits) = this()
+    def this(options: Bits) = this()
     /**
       * Stops notifications and releases resources.
       */

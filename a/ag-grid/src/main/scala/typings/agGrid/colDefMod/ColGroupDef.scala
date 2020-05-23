@@ -1,7 +1,7 @@
 package typings.agGrid.colDefMod
 
-import typings.agGrid.AnonInstantiableAny
-import typings.agGrid.AnonInstantiableIHeaderGroupComp
+import typings.agGrid.anon.InstantiableAny
+import typings.agGrid.anon.InstantiableIHeaderGroupComp
 import typings.agGrid.componentResolverMod.ComponentHolder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,9 +15,9 @@ trait ColGroupDef
   /** Group ID */
   var groupId: js.UndefOr[String] = js.undefined
   /** The custom header group component to be used for rendering the component header. If none specified the default ag-Grid is used**/
-  var headerGroupComponent: js.UndefOr[String | AnonInstantiableIHeaderGroupComp] = js.undefined
+  var headerGroupComponent: js.UndefOr[String | InstantiableIHeaderGroupComp] = js.undefined
   /** The custom header group component to be used for rendering the component header in the hosting framework (ie: React/Angular). If none specified the default ag-Grid is used**/
-  var headerGroupComponentFramework: js.UndefOr[AnonInstantiableAny] = js.undefined
+  var headerGroupComponentFramework: js.UndefOr[InstantiableAny] = js.undefined
   /** The custom header group component to be used for rendering the component header. If none specified the default ag-Grid is used**/
   var headerGroupComponentParams: js.UndefOr[js.Any] = js.undefined
   /** If true, group cannot be broken up by column moving, child columns will always appear side by side, however you can rearrange child columns within the group */
@@ -33,8 +33,8 @@ object ColGroupDef {
     columnGroupShow: String = null,
     groupId: String = null,
     headerClass: String | js.Array[String] | (js.Function1[/* params */ js.Any, String | js.Array[String]]) = null,
-    headerGroupComponent: String | AnonInstantiableIHeaderGroupComp = null,
-    headerGroupComponentFramework: AnonInstantiableAny = null,
+    headerGroupComponent: String | InstantiableIHeaderGroupComp = null,
+    headerGroupComponentFramework: InstantiableAny = null,
     headerGroupComponentParams: js.Any = null,
     headerName: String = null,
     headerTooltip: String = null,
@@ -55,10 +55,10 @@ object ColGroupDef {
     if (headerName != null) __obj.updateDynamic("headerName")(headerName.asInstanceOf[js.Any])
     if (headerTooltip != null) __obj.updateDynamic("headerTooltip")(headerTooltip.asInstanceOf[js.Any])
     if (headerValueGetter != null) __obj.updateDynamic("headerValueGetter")(headerValueGetter.asInstanceOf[js.Any])
-    if (!js.isUndefined(marryChildren)) __obj.updateDynamic("marryChildren")(marryChildren.asInstanceOf[js.Any])
-    if (!js.isUndefined(openByDefault)) __obj.updateDynamic("openByDefault")(openByDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(marryChildren)) __obj.updateDynamic("marryChildren")(marryChildren.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(openByDefault)) __obj.updateDynamic("openByDefault")(openByDefault.get.asInstanceOf[js.Any])
     if (pivotKeys != null) __obj.updateDynamic("pivotKeys")(pivotKeys.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressToolPanel)) __obj.updateDynamic("suppressToolPanel")(suppressToolPanel.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressToolPanel)) __obj.updateDynamic("suppressToolPanel")(suppressToolPanel.get.asInstanceOf[js.Any])
     if (toolPanelClass != null) __obj.updateDynamic("toolPanelClass")(toolPanelClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColGroupDef]
   }

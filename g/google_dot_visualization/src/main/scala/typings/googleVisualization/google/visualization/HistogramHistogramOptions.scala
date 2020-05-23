@@ -13,14 +13,14 @@ trait HistogramHistogramOptions extends js.Object {
 object HistogramHistogramOptions {
   @scala.inline
   def apply(
-    bucketSize: Int | Double = null,
+    bucketSize: js.UndefOr[Double] = js.undefined,
     hideBucketItems: js.UndefOr[Boolean] = js.undefined,
-    lastBucketPercentile: Int | Double = null
+    lastBucketPercentile: js.UndefOr[Double] = js.undefined
   ): HistogramHistogramOptions = {
     val __obj = js.Dynamic.literal()
-    if (bucketSize != null) __obj.updateDynamic("bucketSize")(bucketSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideBucketItems)) __obj.updateDynamic("hideBucketItems")(hideBucketItems.asInstanceOf[js.Any])
-    if (lastBucketPercentile != null) __obj.updateDynamic("lastBucketPercentile")(lastBucketPercentile.asInstanceOf[js.Any])
+    if (!js.isUndefined(bucketSize)) __obj.updateDynamic("bucketSize")(bucketSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideBucketItems)) __obj.updateDynamic("hideBucketItems")(hideBucketItems.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastBucketPercentile)) __obj.updateDynamic("lastBucketPercentile")(lastBucketPercentile.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistogramHistogramOptions]
   }
 }

@@ -12,11 +12,15 @@ trait BackspaceProperties extends js.Object {
 
 object BackspaceProperties {
   @scala.inline
-  def apply(count: Int | Double = null, delay: Int | Double = null, speed: Int | Double = null): BackspaceProperties = {
+  def apply(
+    count: js.UndefOr[Double] = js.undefined,
+    delay: js.UndefOr[Double] = js.undefined,
+    speed: js.UndefOr[Double] = js.undefined
+  ): BackspaceProperties = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackspaceProperties]
   }
 }

@@ -1,5 +1,7 @@
 package typings.emberRouting
 
+import typings.emberRouting.anon.As
+import typings.emberRouting.anon.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,11 +12,11 @@ object routerDslMod extends js.Object {
   @js.native
   trait RouterDSL extends js.Object {
     def mount(name: String): Unit = js.native
-    def mount(name: String, options: AnonAs): Unit = js.native
+    def mount(name: String, options: As): Unit = js.native
     def route(name: String): Unit = js.native
     def route(name: String, callback: js.ThisFunction0[/* this */ this.type, Unit]): Unit = js.native
-    def route(name: String, options: AnonPath): Unit = js.native
-    def route(name: String, options: AnonPath, callback: js.ThisFunction0[/* this */ this.type, Unit]): Unit = js.native
+    def route(name: String, options: Path): Unit = js.native
+    def route(name: String, options: Path, callback: js.ThisFunction0[/* this */ this.type, Unit]): Unit = js.native
   }
   
   @js.native

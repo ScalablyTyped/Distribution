@@ -1,7 +1,7 @@
 package typings.angularMocks.mod.angularAugmentingMod
 
 import typings.angular.mod.Injectable
-import typings.angularMocks.AnonCall
+import typings.angularMocks.anon.Call
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ trait IMockStatic extends js.Object {
   var inject_Original: IInjectStatic = js.native
   // see https://docs.angularjs.org/api/ngMock/function/angular.mock.module
   @JSName("module")
-  var module_Original: AnonCall = js.native
+  var module_Original: Call = js.native
   def TzDate(offset: Double, timestamp: String): Date = js.native
   // see https://docs.angularjs.org/api/ngMock/type/angular.mock.TzDate
   def TzDate(offset: Double, timestamp: Double): Date = js.native

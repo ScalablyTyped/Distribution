@@ -1,6 +1,6 @@
 package typings.ionicCore
 
-import typings.ionicCore.componentsMod._Global_.HTMLIonFabElement
+import typings.ionicCore.componentsMod.global.HTMLIonFabElement
 import typings.ionicCore.ionicCoreStrings.bottom
 import typings.ionicCore.ionicCoreStrings.end
 import typings.ionicCore.ionicCoreStrings.start

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "playcanvas" : "1.26.1"
+      "playcanvas" : "1.27.4"
     }
   ],
   "test-dependencies" : [
     {
-      "playcanvas" : "1.26.1"
+      "playcanvas" : "1.27.4"
     }
   ],
   "compile-devDependencies" : [

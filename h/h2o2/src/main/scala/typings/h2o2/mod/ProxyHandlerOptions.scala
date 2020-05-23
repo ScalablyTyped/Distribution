@@ -96,28 +96,28 @@ object ProxyHandlerOptions {
     protocol: http | https = null,
     redirects: Double | `false` = null,
     rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     ttl: upstream = null,
     uri: String = null,
     xforward: js.UndefOr[Boolean] = js.undefined
   ): ProxyHandlerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(acceptEncoding)) __obj.updateDynamic("acceptEncoding")(acceptEncoding.asInstanceOf[js.Any])
+    if (!js.isUndefined(acceptEncoding)) __obj.updateDynamic("acceptEncoding")(acceptEncoding.get.asInstanceOf[js.Any])
     if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(localStatePassThrough)) __obj.updateDynamic("localStatePassThrough")(localStatePassThrough.asInstanceOf[js.Any])
+    if (!js.isUndefined(localStatePassThrough)) __obj.updateDynamic("localStatePassThrough")(localStatePassThrough.get.asInstanceOf[js.Any])
     if (mapUri != null) __obj.updateDynamic("mapUri")(mapUri.asInstanceOf[js.Any])
     if (maxSockets != null) __obj.updateDynamic("maxSockets")(maxSockets.asInstanceOf[js.Any])
     if (onResponse != null) __obj.updateDynamic("onResponse")(onResponse.asInstanceOf[js.Any])
-    if (!js.isUndefined(passThrough)) __obj.updateDynamic("passThrough")(passThrough.asInstanceOf[js.Any])
+    if (!js.isUndefined(passThrough)) __obj.updateDynamic("passThrough")(passThrough.get.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (redirects != null) __obj.updateDynamic("redirects")(redirects.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
-    if (!js.isUndefined(xforward)) __obj.updateDynamic("xforward")(xforward.asInstanceOf[js.Any])
+    if (!js.isUndefined(xforward)) __obj.updateDynamic("xforward")(xforward.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyHandlerOptions]
   }
 }

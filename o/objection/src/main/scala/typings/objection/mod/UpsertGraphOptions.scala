@@ -32,7 +32,7 @@ object UpsertGraphOptions {
     update: Boolean | js.Array[String] = null
   ): UpsertGraphOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowRefs)) __obj.updateDynamic("allowRefs")(allowRefs.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowRefs)) __obj.updateDynamic("allowRefs")(allowRefs.get.asInstanceOf[js.Any])
     if (insertMissing != null) __obj.updateDynamic("insertMissing")(insertMissing.asInstanceOf[js.Any])
     if (noDelete != null) __obj.updateDynamic("noDelete")(noDelete.asInstanceOf[js.Any])
     if (noInsert != null) __obj.updateDynamic("noInsert")(noInsert.asInstanceOf[js.Any])

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object typesMod {
   type NavigationDrawerScreenComponent[Params, ScreenProps] = (typings.react.mod.ComponentType[
     typings.reactNavigationDrawer.typesMod.NavigationDrawerScreenProps[Params, ScreenProps]
-  ]) with (typings.reactNavigationDrawer.AnonNavigationOptions[Params, ScreenProps])
+  ]) with (typings.reactNavigationDrawer.anon.NavigationOptions[Params, ScreenProps])
   type SceneDescriptorMap = org.scalablytyped.runtime.StringDictionary[
     typings.reactNavigation.mod.NavigationDescriptor[
       typings.reactNavigation.mod.NavigationParams, 
@@ -18,5 +18,5 @@ package object typesMod {
       ]
     ]
   ]
-  type ThemedColor = java.lang.String | typings.reactNavigationDrawer.AnonDark
+  type ThemedColor = java.lang.String | typings.reactNavigationDrawer.anon.Dark
 }

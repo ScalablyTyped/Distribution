@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.ApplicationSettings
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,26 +34,6 @@ object SupportedWebAccountActions extends js.Object {
   /** The app displays details about the web account. */
   @js.native
   sealed trait viewDetails extends SupportedWebAccountActions
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SupportedWebAccountActions with Double] = js.native
-  /* 4 */ @js.native
-  object manage extends TopLevel[manage with Double]
-  
-  /* 5 */ @js.native
-  object more extends TopLevel[more with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object reconnect extends TopLevel[reconnect with Double]
-  
-  /* 2 */ @js.native
-  object remove extends TopLevel[remove with Double]
-  
-  /* 3 */ @js.native
-  object viewDetails extends TopLevel[viewDetails with Double]
   
 }
 

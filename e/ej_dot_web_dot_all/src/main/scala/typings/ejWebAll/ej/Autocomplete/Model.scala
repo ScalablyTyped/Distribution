@@ -240,7 +240,7 @@ object Model {
     create: /* e */ CreateEventArgs => Unit = null,
     cssClass: String = null,
     dataSource: js.Any | js.Array[_] = null,
-    delaySuggestionTimeout: Int | Double = null,
+    delaySuggestionTimeout: js.UndefOr[Double] = js.undefined,
     delimiterChar: String = null,
     destroy: /* e */ DestroyEventArgs => Unit = null,
     emptyResultText: String = null,
@@ -256,9 +256,9 @@ object Model {
     height: String | Double = null,
     highlightSearch: js.UndefOr[Boolean] = js.undefined,
     ignoreAccent: js.UndefOr[Boolean] = js.undefined,
-    itemsCount: Int | Double = null,
+    itemsCount: js.UndefOr[Double] = js.undefined,
     locale: String = null,
-    minCharacter: Int | Double = null,
+    minCharacter: js.UndefOr[Double] = js.undefined,
     multiColumnSettings: MultiColumnSettings = null,
     multiSelectMode: MultiSelectMode | String = null,
     open: /* e */ OpenEventArgs => Unit = null,
@@ -267,7 +267,7 @@ object Model {
     query: Query = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     select: /* e */ SelectEventArgs => Unit = null,
-    selectValueByKey: Int | Double = null,
+    selectValueByKey: js.UndefOr[Double] = js.undefined,
     showEmptyResultText: js.UndefOr[Boolean] = js.undefined,
     showLoadingIcon: js.UndefOr[Boolean] = js.undefined,
     showPopupButton: js.UndefOr[Boolean] = js.undefined,
@@ -288,55 +288,55 @@ object Model {
     if (actionFailure != null) __obj.updateDynamic("actionFailure")(js.Any.fromFunction1(actionFailure))
     if (actionSuccess != null) __obj.updateDynamic("actionSuccess")(js.Any.fromFunction1(actionSuccess))
     if (addNewText != null) __obj.updateDynamic("addNewText")(addNewText.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowAddNew)) __obj.updateDynamic("allowAddNew")(allowAddNew.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowAddNew)) __obj.updateDynamic("allowAddNew")(allowAddNew.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting.get.asInstanceOf[js.Any])
     if (animateType != null) __obj.updateDynamic("animateType")(animateType.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(caseSensitiveSearch)) __obj.updateDynamic("caseSensitiveSearch")(caseSensitiveSearch.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(caseSensitiveSearch)) __obj.updateDynamic("caseSensitiveSearch")(caseSensitiveSearch.get.asInstanceOf[js.Any])
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (delaySuggestionTimeout != null) __obj.updateDynamic("delaySuggestionTimeout")(delaySuggestionTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(delaySuggestionTimeout)) __obj.updateDynamic("delaySuggestionTimeout")(delaySuggestionTimeout.get.asInstanceOf[js.Any])
     if (delimiterChar != null) __obj.updateDynamic("delimiterChar")(delimiterChar.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (emptyResultText != null) __obj.updateDynamic("emptyResultText")(emptyResultText.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAutoFill)) __obj.updateDynamic("enableAutoFill")(enableAutoFill.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableDistinct)) __obj.updateDynamic("enableDistinct")(enableDistinct.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAutoFill)) __obj.updateDynamic("enableAutoFill")(enableAutoFill.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableDistinct)) __obj.updateDynamic("enableDistinct")(enableDistinct.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
     if (focusIn != null) __obj.updateDynamic("focusIn")(js.Any.fromFunction1(focusIn))
     if (focusOut != null) __obj.updateDynamic("focusOut")(js.Any.fromFunction1(focusOut))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightSearch)) __obj.updateDynamic("highlightSearch")(highlightSearch.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreAccent)) __obj.updateDynamic("ignoreAccent")(ignoreAccent.asInstanceOf[js.Any])
-    if (itemsCount != null) __obj.updateDynamic("itemsCount")(itemsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightSearch)) __obj.updateDynamic("highlightSearch")(highlightSearch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreAccent)) __obj.updateDynamic("ignoreAccent")(ignoreAccent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemsCount)) __obj.updateDynamic("itemsCount")(itemsCount.get.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (minCharacter != null) __obj.updateDynamic("minCharacter")(minCharacter.asInstanceOf[js.Any])
+    if (!js.isUndefined(minCharacter)) __obj.updateDynamic("minCharacter")(minCharacter.get.asInstanceOf[js.Any])
     if (multiColumnSettings != null) __obj.updateDynamic("multiColumnSettings")(multiColumnSettings.asInstanceOf[js.Any])
     if (multiSelectMode != null) __obj.updateDynamic("multiSelectMode")(multiSelectMode.asInstanceOf[js.Any])
     if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (popupHeight != null) __obj.updateDynamic("popupHeight")(popupHeight.asInstanceOf[js.Any])
     if (popupWidth != null) __obj.updateDynamic("popupWidth")(popupWidth.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
-    if (selectValueByKey != null) __obj.updateDynamic("selectValueByKey")(selectValueByKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(showEmptyResultText)) __obj.updateDynamic("showEmptyResultText")(showEmptyResultText.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLoadingIcon)) __obj.updateDynamic("showLoadingIcon")(showLoadingIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPopupButton)) __obj.updateDynamic("showPopupButton")(showPopupButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(showResetIcon)) __obj.updateDynamic("showResetIcon")(showResetIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectValueByKey)) __obj.updateDynamic("selectValueByKey")(selectValueByKey.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showEmptyResultText)) __obj.updateDynamic("showEmptyResultText")(showEmptyResultText.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLoadingIcon)) __obj.updateDynamic("showLoadingIcon")(showLoadingIcon.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPopupButton)) __obj.updateDynamic("showPopupButton")(showPopupButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showResetIcon)) __obj.updateDynamic("showResetIcon")(showResetIcon.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner.get.asInstanceOf[js.Any])
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (validationMessage != null) __obj.updateDynamic("validationMessage")(validationMessage.asInstanceOf[js.Any])
     if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (watermarkText != null) __obj.updateDynamic("watermarkText")(watermarkText.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]

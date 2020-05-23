@@ -1,6 +1,7 @@
 package typings.saxes.mod
 
 import typings.saxes.saxesBooleans.`false`
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,13 +18,13 @@ trait NSOptionsWithoutNamespaces extends NSOptions {
 object NSOptionsWithoutNamespaces {
   @scala.inline
   def apply(
-    additionalNamespaces: js.UndefOr[scala.Nothing] = js.undefined,
-    resolvePrefix: js.UndefOr[scala.Nothing] = js.undefined,
+    additionalNamespaces: Record[String, String] = null,
+    resolvePrefix: /* prefix */ String => js.UndefOr[String] = null,
     xmlns: `false` = null
   ): NSOptionsWithoutNamespaces = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(additionalNamespaces)) __obj.updateDynamic("additionalNamespaces")(additionalNamespaces.asInstanceOf[js.Any])
-    if (!js.isUndefined(resolvePrefix)) __obj.updateDynamic("resolvePrefix")(resolvePrefix.asInstanceOf[js.Any])
+    if (additionalNamespaces != null) __obj.updateDynamic("additionalNamespaces")(additionalNamespaces.asInstanceOf[js.Any])
+    if (resolvePrefix != null) __obj.updateDynamic("resolvePrefix")(js.Any.fromFunction1(resolvePrefix))
     if (xmlns != null) __obj.updateDynamic("xmlns")(xmlns.asInstanceOf[js.Any])
     __obj.asInstanceOf[NSOptionsWithoutNamespaces]
   }

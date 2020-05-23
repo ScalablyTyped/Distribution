@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,8 +48,4 @@ trait SVGFEImageElement
     options: EventListenerOptions
   ): Unit = js.native
 }
-
-@JSGlobal("SVGFEImageElement")
-@js.native
-object SVGFEImageElement extends Instantiable0[SVGFEImageElement]
 

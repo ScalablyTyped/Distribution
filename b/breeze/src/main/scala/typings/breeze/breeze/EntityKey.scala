@@ -4,20 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("breeze.EntityKey")
-@js.native
-class EntityKey protected () extends js.Object {
-  def this(entityType: EntityType, keyValue: js.Any) = this()
-  def this(entityType: EntityType, keyValues: js.Array[_]) = this()
-  var entityType: EntityType = js.native
-  var values: js.Array[_] = js.native
-  def equals(entityKey: EntityKey): Boolean = js.native
+trait EntityKey extends js.Object {
+  var entityType: EntityType
+  var values: js.Array[_]
+  def equals(entityKey: EntityKey): Boolean
 }
 
-/* static members */
-@JSGlobal("breeze.EntityKey")
-@js.native
-object EntityKey extends js.Object {
-  def equals(k1: EntityKey, k2: EntityKey): Boolean = js.native
+object EntityKey {
+  @scala.inline
+  def apply(entityType: EntityType, equals: EntityKey => Boolean, values: js.Array[_]): EntityKey = {
+    val __obj = js.Dynamic.literal(entityType = entityType.asInstanceOf[js.Any], equals = js.Any.fromFunction1(equals), values = values.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EntityKey]
+  }
 }
 

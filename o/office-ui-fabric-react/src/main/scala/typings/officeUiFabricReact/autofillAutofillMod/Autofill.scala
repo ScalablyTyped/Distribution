@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.autofillAutofillMod
 
-import typings.officeUiFabricReact.AnonEnableAutofillOnKeyPress
+import typings.officeUiFabricReact.anon.EnableAutofillOnKeyPress
 import typings.officeUiFabricReact.autofillTypesMod.IAutofill
 import typings.officeUiFabricReact.autofillTypesMod.IAutofillProps
 import typings.react.mod.Component
@@ -110,6 +110,6 @@ class Autofill protected ()
 @JSImport("office-ui-fabric-react/lib/components/Autofill/Autofill", "Autofill")
 @js.native
 object Autofill extends js.Object {
-  var defaultProps: AnonEnableAutofillOnKeyPress = js.native
+  var defaultProps: EnableAutofillOnKeyPress = js.native
 }
 

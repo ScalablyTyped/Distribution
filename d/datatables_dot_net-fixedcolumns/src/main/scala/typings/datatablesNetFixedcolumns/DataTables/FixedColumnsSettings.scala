@@ -29,13 +29,13 @@ object FixedColumnsSettings {
   @scala.inline
   def apply(
     heightMatch: none | semiauto | auto = null,
-    leftColumns: Int | Double = null,
-    rightColumns: Int | Double = null
+    leftColumns: js.UndefOr[Double] = js.undefined,
+    rightColumns: js.UndefOr[Double] = js.undefined
   ): FixedColumnsSettings = {
     val __obj = js.Dynamic.literal()
     if (heightMatch != null) __obj.updateDynamic("heightMatch")(heightMatch.asInstanceOf[js.Any])
-    if (leftColumns != null) __obj.updateDynamic("leftColumns")(leftColumns.asInstanceOf[js.Any])
-    if (rightColumns != null) __obj.updateDynamic("rightColumns")(rightColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(leftColumns)) __obj.updateDynamic("leftColumns")(leftColumns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightColumns)) __obj.updateDynamic("rightColumns")(rightColumns.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FixedColumnsSettings]
   }
 }

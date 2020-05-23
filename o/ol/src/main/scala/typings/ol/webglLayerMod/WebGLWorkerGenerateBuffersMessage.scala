@@ -18,13 +18,13 @@ object WebGLWorkerGenerateBuffersMessage {
   def apply(
     renderInstructions: ArrayBuffer,
     `type`: WebGLWorkerMessageType,
-    customAttributesCount: Int | Double = null,
+    customAttributesCount: js.UndefOr[Double] = js.undefined,
     indexBuffer: ArrayBuffer = null,
     vertexBuffer: ArrayBuffer = null
   ): WebGLWorkerGenerateBuffersMessage = {
     val __obj = js.Dynamic.literal(renderInstructions = renderInstructions.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (customAttributesCount != null) __obj.updateDynamic("customAttributesCount")(customAttributesCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(customAttributesCount)) __obj.updateDynamic("customAttributesCount")(customAttributesCount.get.asInstanceOf[js.Any])
     if (indexBuffer != null) __obj.updateDynamic("indexBuffer")(indexBuffer.asInstanceOf[js.Any])
     if (vertexBuffer != null) __obj.updateDynamic("vertexBuffer")(vertexBuffer.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebGLWorkerGenerateBuffersMessage]

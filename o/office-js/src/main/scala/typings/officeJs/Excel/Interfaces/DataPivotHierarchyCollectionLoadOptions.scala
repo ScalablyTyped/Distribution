@@ -53,14 +53,14 @@ trait DataPivotHierarchyCollectionLoadOptions extends js.Object {
   var position: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Determines whether the data should be shown as a specific summary calculation or not.
+    * For EACH ITEM in the collection: Specifies if the data should be shown as a specific summary calculation.
     *
     * [Api set: ExcelApi 1.8]
     */
   var showAs: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Determines whether to show all items of the DataPivotHierarchy.
+    * For EACH ITEM in the collection: Specifies if all items of the DataPivotHierarchy are shown.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -80,14 +80,14 @@ object DataPivotHierarchyCollectionLoadOptions {
     summarizeBy: js.UndefOr[Boolean] = js.undefined
   ): DataPivotHierarchyCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberFormat)) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAs)) __obj.updateDynamic("showAs")(showAs.asInstanceOf[js.Any])
-    if (!js.isUndefined(summarizeBy)) __obj.updateDynamic("summarizeBy")(summarizeBy.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberFormat)) __obj.updateDynamic("numberFormat")(numberFormat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAs)) __obj.updateDynamic("showAs")(showAs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(summarizeBy)) __obj.updateDynamic("summarizeBy")(summarizeBy.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataPivotHierarchyCollectionLoadOptions]
   }
 }

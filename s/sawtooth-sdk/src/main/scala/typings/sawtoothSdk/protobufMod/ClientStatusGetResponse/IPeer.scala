@@ -12,9 +12,9 @@ trait IPeer extends js.Object {
 
 object IPeer {
   @scala.inline
-  def apply(endpoint: String = null): IPeer = {
+  def apply(endpoint: js.UndefOr[Null | String] = js.undefined): IPeer = {
     val __obj = js.Dynamic.literal()
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    if (!js.isUndefined(endpoint)) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPeer]
   }
 }

@@ -9,7 +9,7 @@ package object mod {
   type ErrorCallback = js.Function1[/* error */ js.UndefOr[typings.std.Error | scala.Null], scala.Unit]
   type ModemBitsCallback = js.Function2[
     /* error */ js.UndefOr[typings.std.Error | scala.Null], 
-    /* status */ typings.serialport.AnonCts, 
+    /* status */ typings.serialport.anon.Cts, 
     scala.Unit
   ]
   type darwinBinding = typings.serialport.mod.BaseBinding

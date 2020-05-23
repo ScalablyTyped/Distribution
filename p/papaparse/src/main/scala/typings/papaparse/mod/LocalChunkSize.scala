@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("papaparse", "LocalChunkSize")
 @js.native
-object LocalChunkSize extends TopLevel[String]
+object LocalChunkSize extends TopLevel[/* "\\u001E" */ String]
 

@@ -1,7 +1,7 @@
 package typings.reactNative.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.reactNative.AnonDefault
+import typings.reactNative.anon.Default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ trait PlatformStatic extends js.Object {
     */
   @JSName("select")
   def select_T_T[T](
-    specifics: typings.reactNative.reactNativeStrings.PlatformStatic with TopLevel[js.Any] with AnonDefault[T]
+    specifics: typings.reactNative.reactNativeStrings.PlatformStatic with TopLevel[js.Any] with Default[T]
   ): T = js.native
 }
 

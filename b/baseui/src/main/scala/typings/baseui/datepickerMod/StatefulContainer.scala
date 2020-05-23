@@ -1,6 +1,6 @@
 package typings.baseui.datepickerMod
 
-import typings.baseui.AnonDate
+import typings.baseui.anon.Date
 import typings.baseui.baseuiStrings.change_
 import typings.baseui.baseuiStrings.mouseLeave
 import typings.baseui.baseuiStrings.mouseOver
@@ -31,6 +31,6 @@ class StatefulContainer ()
   def internalSetState_moveRight(`type`: moveRight, changes: ContainerState): Unit = js.native
   @JSName("internalSetState")
   def internalSetState_moveUp(`type`: moveUp, changes: ContainerState): Unit = js.native
-  def onChange(data: AnonDate): Unit = js.native
+  def onChange(data: Date): Unit = js.native
 }
 

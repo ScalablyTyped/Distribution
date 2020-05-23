@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("mendixmodelsdk/dist/Model", JSImport.Namespace)
 @js.native
 object modelMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.mendixmodelsdk.abstractModelMod.IAbstractModel because Already inherited
   - typings.mendixmodelsdk.baseModelMod.IBaseModel because Already inherited
   - typings.mendixmodelsdk.baseModelMod.IModel because var conflicts: id, metaModelVersion, mxVersionForModel, root, workingCopy. Inlined findModuleByQualifiedName */ @js.native

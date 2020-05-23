@@ -176,45 +176,35 @@ object IPaymentIntent {
     `object`: payment_intent,
     payment_method_types: js.Array[PaymentIntentPaymentMethodType],
     status: requires_payment_method | requires_confirmation | requires_action | processing | requires_capture | canceled | succeeded,
-    application: String | IApplication = null,
-    application_fee_amount: Int | Double = null,
-    canceled_at: Int | Double = null,
+    application: js.UndefOr[Null | String | IApplication] = js.undefined,
+    application_fee_amount: js.UndefOr[Null | Double] = js.undefined,
+    canceled_at: Double = null.asInstanceOf[Double],
     cancellation_reason: PaymentIntentUserProvidedCancellationReason | PaymentIntentStripeProvidedCancellationReason = null,
     customer: String | ICustomer = null,
     description: String = null,
     last_payment_error: IStripeError = null,
-    on_behalf_of: String = null,
-    payment_method: String = null,
+    on_behalf_of: js.UndefOr[Null | String] = js.undefined,
+    payment_method: js.UndefOr[Null | String] = js.undefined,
     payment_method_options: IPaymentMethodOptions = null,
     receipt_email: String = null,
-    review: String | IReview = null,
+    review: js.UndefOr[Null | String | IReview] = js.undefined,
     setup_future_usage: PaymentIntentFutureUsageType = null,
-    shipping: IShippingInformation = null,
+    shipping: js.UndefOr[Null | IShippingInformation] = js.undefined,
     source: String | IStripeSource = null,
     statement_descriptor: String = null,
     transfer_data: IPaymentIntentTransferData = null,
     transfer_group: String = null
   ): IPaymentIntent = {
-    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], amount_capturable = amount_capturable.asInstanceOf[js.Any], amount_received = amount_received.asInstanceOf[js.Any], capture_method = capture_method.asInstanceOf[js.Any], charges = charges.asInstanceOf[js.Any], client_secret = client_secret.asInstanceOf[js.Any], confirmation_method = confirmation_method.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], next_action = next_action.asInstanceOf[js.Any], payment_method_types = payment_method_types.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], amount_capturable = amount_capturable.asInstanceOf[js.Any], amount_received = amount_received.asInstanceOf[js.Any], capture_method = capture_method.asInstanceOf[js.Any], charges = charges.asInstanceOf[js.Any], client_secret = client_secret.asInstanceOf[js.Any], confirmation_method = confirmation_method.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], next_action = next_action.asInstanceOf[js.Any], payment_method_types = payment_method_types.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], canceled_at = canceled_at.asInstanceOf[js.Any], cancellation_reason = cancellation_reason.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], last_payment_error = last_payment_error.asInstanceOf[js.Any], receipt_email = receipt_email.asInstanceOf[js.Any], setup_future_usage = setup_future_usage.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], statement_descriptor = statement_descriptor.asInstanceOf[js.Any], transfer_data = transfer_data.asInstanceOf[js.Any], transfer_group = transfer_group.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
-    if (application_fee_amount != null) __obj.updateDynamic("application_fee_amount")(application_fee_amount.asInstanceOf[js.Any])
-    if (canceled_at != null) __obj.updateDynamic("canceled_at")(canceled_at.asInstanceOf[js.Any])
-    if (cancellation_reason != null) __obj.updateDynamic("cancellation_reason")(cancellation_reason.asInstanceOf[js.Any])
-    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
+    if (!js.isUndefined(application)) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
+    if (!js.isUndefined(application_fee_amount)) __obj.updateDynamic("application_fee_amount")(application_fee_amount.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (last_payment_error != null) __obj.updateDynamic("last_payment_error")(last_payment_error.asInstanceOf[js.Any])
-    if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of.asInstanceOf[js.Any])
-    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
+    if (!js.isUndefined(on_behalf_of)) __obj.updateDynamic("on_behalf_of")(on_behalf_of.asInstanceOf[js.Any])
+    if (!js.isUndefined(payment_method)) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
     if (payment_method_options != null) __obj.updateDynamic("payment_method_options")(payment_method_options.asInstanceOf[js.Any])
-    if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email.asInstanceOf[js.Any])
-    if (review != null) __obj.updateDynamic("review")(review.asInstanceOf[js.Any])
-    if (setup_future_usage != null) __obj.updateDynamic("setup_future_usage")(setup_future_usage.asInstanceOf[js.Any])
-    if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor.asInstanceOf[js.Any])
-    if (transfer_data != null) __obj.updateDynamic("transfer_data")(transfer_data.asInstanceOf[js.Any])
-    if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group.asInstanceOf[js.Any])
+    if (!js.isUndefined(review)) __obj.updateDynamic("review")(review.asInstanceOf[js.Any])
+    if (!js.isUndefined(shipping)) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentIntent]
   }
 }

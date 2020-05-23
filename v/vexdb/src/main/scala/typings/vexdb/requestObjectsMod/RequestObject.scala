@@ -22,8 +22,8 @@ object RequestObject {
     country: StringRequest = null,
     grade: StringRequest = null,
     is_registered: NumberRequest = null,
-    limit_number: Int | Double = null,
-    limit_start: Int | Double = null,
+    limit_number: js.UndefOr[Double] = js.undefined,
+    limit_start: js.UndefOr[Double] = js.undefined,
     number: StringRequest = null,
     organisation: StringRequest = null,
     program: StringRequest = null,
@@ -39,14 +39,14 @@ object RequestObject {
     if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
     if (grade != null) __obj.updateDynamic("grade")(grade.asInstanceOf[js.Any])
     if (is_registered != null) __obj.updateDynamic("is_registered")(is_registered.asInstanceOf[js.Any])
-    if (limit_number != null) __obj.updateDynamic("limit_number")(limit_number.asInstanceOf[js.Any])
-    if (limit_start != null) __obj.updateDynamic("limit_start")(limit_start.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit_number)) __obj.updateDynamic("limit_number")(limit_number.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit_start)) __obj.updateDynamic("limit_start")(limit_start.get.asInstanceOf[js.Any])
     if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
     if (organisation != null) __obj.updateDynamic("organisation")(organisation.asInstanceOf[js.Any])
     if (program != null) __obj.updateDynamic("program")(program.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (robot_name != null) __obj.updateDynamic("robot_name")(robot_name.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.asInstanceOf[js.Any])
+    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.get.asInstanceOf[js.Any])
     if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
     if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
     if (team_name != null) __obj.updateDynamic("team_name")(team_name.asInstanceOf[js.Any])
@@ -58,8 +58,8 @@ object RequestObject {
     ccwm: NumberRequest = null,
     division: StringRequest = null,
     dpr: NumberRequest = null,
-    limit_number: Int | Double = null,
-    limit_start: Int | Double = null,
+    limit_number: js.UndefOr[Double] = js.undefined,
+    limit_start: js.UndefOr[Double] = js.undefined,
     losses: NumberRequest = null,
     max_score: NumberRequest = null,
     opr: NumberRequest = null,
@@ -79,14 +79,14 @@ object RequestObject {
     if (ccwm != null) __obj.updateDynamic("ccwm")(ccwm.asInstanceOf[js.Any])
     if (division != null) __obj.updateDynamic("division")(division.asInstanceOf[js.Any])
     if (dpr != null) __obj.updateDynamic("dpr")(dpr.asInstanceOf[js.Any])
-    if (limit_number != null) __obj.updateDynamic("limit_number")(limit_number.asInstanceOf[js.Any])
-    if (limit_start != null) __obj.updateDynamic("limit_start")(limit_start.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit_number)) __obj.updateDynamic("limit_number")(limit_number.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit_start)) __obj.updateDynamic("limit_start")(limit_start.get.asInstanceOf[js.Any])
     if (losses != null) __obj.updateDynamic("losses")(losses.asInstanceOf[js.Any])
     if (max_score != null) __obj.updateDynamic("max_score")(max_score.asInstanceOf[js.Any])
     if (opr != null) __obj.updateDynamic("opr")(opr.asInstanceOf[js.Any])
     if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
     if (season != null) __obj.updateDynamic("season")(season.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.asInstanceOf[js.Any])
+    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.get.asInstanceOf[js.Any])
     if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
     if (sp != null) __obj.updateDynamic("sp")(sp.asInstanceOf[js.Any])
     if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
@@ -106,8 +106,8 @@ object RequestObject {
     division: StringRequest = null,
     field: StringRequest = null,
     instance: NumberRequest = null,
-    limit_number: Int | Double = null,
-    limit_start: Int | Double = null,
+    limit_number: js.UndefOr[Double] = js.undefined,
+    limit_start: js.UndefOr[Double] = js.undefined,
     matchnum: NumberRequest = null,
     red1: StringRequest = null,
     red2: StringRequest = null,
@@ -131,8 +131,8 @@ object RequestObject {
     if (division != null) __obj.updateDynamic("division")(division.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
-    if (limit_number != null) __obj.updateDynamic("limit_number")(limit_number.asInstanceOf[js.Any])
-    if (limit_start != null) __obj.updateDynamic("limit_start")(limit_start.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit_number)) __obj.updateDynamic("limit_number")(limit_number.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit_start)) __obj.updateDynamic("limit_start")(limit_start.get.asInstanceOf[js.Any])
     if (matchnum != null) __obj.updateDynamic("matchnum")(matchnum.asInstanceOf[js.Any])
     if (red1 != null) __obj.updateDynamic("red1")(red1.asInstanceOf[js.Any])
     if (red2 != null) __obj.updateDynamic("red2")(red2.asInstanceOf[js.Any])
@@ -143,7 +143,7 @@ object RequestObject {
     if (scheduled != null) __obj.updateDynamic("scheduled")(scheduled.asInstanceOf[js.Any])
     if (scored != null) __obj.updateDynamic("scored")(scored.asInstanceOf[js.Any])
     if (season != null) __obj.updateDynamic("season")(season.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.asInstanceOf[js.Any])
+    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.get.asInstanceOf[js.Any])
     if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
     if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestObject]
@@ -151,8 +151,8 @@ object RequestObject {
   @scala.inline
   def SkillsRequestObject(
     attempts: NumberRequest = null,
-    limit_number: Int | Double = null,
-    limit_start: Int | Double = null,
+    limit_number: js.UndefOr[Double] = js.undefined,
+    limit_start: js.UndefOr[Double] = js.undefined,
     program: StringRequest = null,
     rank: NumberRequest = null,
     score: NumberRequest = null,
@@ -165,14 +165,14 @@ object RequestObject {
   ): RequestObject = {
     val __obj = js.Dynamic.literal()
     if (attempts != null) __obj.updateDynamic("attempts")(attempts.asInstanceOf[js.Any])
-    if (limit_number != null) __obj.updateDynamic("limit_number")(limit_number.asInstanceOf[js.Any])
-    if (limit_start != null) __obj.updateDynamic("limit_start")(limit_start.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit_number)) __obj.updateDynamic("limit_number")(limit_number.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit_start)) __obj.updateDynamic("limit_start")(limit_start.get.asInstanceOf[js.Any])
     if (program != null) __obj.updateDynamic("program")(program.asInstanceOf[js.Any])
     if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
     if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
     if (season != null) __obj.updateDynamic("season")(season.asInstanceOf[js.Any])
     if (season_rank != null) __obj.updateDynamic("season_rank")(season_rank.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.asInstanceOf[js.Any])
+    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.get.asInstanceOf[js.Any])
     if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
     if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -180,8 +180,8 @@ object RequestObject {
   }
   @scala.inline
   def AwardsRequestObject(
-    limit_number: Int | Double = null,
-    limit_start: Int | Double = null,
+    limit_number: js.UndefOr[Double] = js.undefined,
+    limit_start: js.UndefOr[Double] = js.undefined,
     name: StringRequest = null,
     order: NumberRequest = null,
     season: StringRequest = null,
@@ -190,12 +190,12 @@ object RequestObject {
     team: StringRequest = null
   ): RequestObject = {
     val __obj = js.Dynamic.literal()
-    if (limit_number != null) __obj.updateDynamic("limit_number")(limit_number.asInstanceOf[js.Any])
-    if (limit_start != null) __obj.updateDynamic("limit_start")(limit_start.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit_number)) __obj.updateDynamic("limit_number")(limit_number.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit_start)) __obj.updateDynamic("limit_start")(limit_start.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (season != null) __obj.updateDynamic("season")(season.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.asInstanceOf[js.Any])
+    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.get.asInstanceOf[js.Any])
     if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
     if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestObject]
@@ -207,8 +207,8 @@ object RequestObject {
     date: StringRequest = null,
     end: StringRequest = null,
     key: StringRequest = null,
-    limit_number: Int | Double = null,
-    limit_start: Int | Double = null,
+    limit_number: js.UndefOr[Double] = js.undefined,
+    limit_start: js.UndefOr[Double] = js.undefined,
     loc_address1: StringRequest = null,
     loc_address2: StringRequest = null,
     loc_city: StringRequest = null,
@@ -232,8 +232,8 @@ object RequestObject {
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (limit_number != null) __obj.updateDynamic("limit_number")(limit_number.asInstanceOf[js.Any])
-    if (limit_start != null) __obj.updateDynamic("limit_start")(limit_start.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit_number)) __obj.updateDynamic("limit_number")(limit_number.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit_start)) __obj.updateDynamic("limit_start")(limit_start.get.asInstanceOf[js.Any])
     if (loc_address1 != null) __obj.updateDynamic("loc_address1")(loc_address1.asInstanceOf[js.Any])
     if (loc_address2 != null) __obj.updateDynamic("loc_address2")(loc_address2.asInstanceOf[js.Any])
     if (loc_city != null) __obj.updateDynamic("loc_city")(loc_city.asInstanceOf[js.Any])
@@ -245,7 +245,7 @@ object RequestObject {
     if (program != null) __obj.updateDynamic("program")(program.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (season != null) __obj.updateDynamic("season")(season.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.asInstanceOf[js.Any])
+    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.get.asInstanceOf[js.Any])
     if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
@@ -254,8 +254,8 @@ object RequestObject {
   }
   @scala.inline
   def SeasonRankingsRequestObject(
-    limit_number: Int | Double = null,
-    limit_start: Int | Double = null,
+    limit_number: js.UndefOr[Double] = js.undefined,
+    limit_start: js.UndefOr[Double] = js.undefined,
     program: StringRequest = null,
     season: StringRequest = null,
     single: js.UndefOr[Boolean] = js.undefined,
@@ -264,11 +264,11 @@ object RequestObject {
     vrating_rank: NumberRequest = null
   ): RequestObject = {
     val __obj = js.Dynamic.literal()
-    if (limit_number != null) __obj.updateDynamic("limit_number")(limit_number.asInstanceOf[js.Any])
-    if (limit_start != null) __obj.updateDynamic("limit_start")(limit_start.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit_number)) __obj.updateDynamic("limit_number")(limit_number.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit_start)) __obj.updateDynamic("limit_start")(limit_start.get.asInstanceOf[js.Any])
     if (program != null) __obj.updateDynamic("program")(program.asInstanceOf[js.Any])
     if (season != null) __obj.updateDynamic("season")(season.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.asInstanceOf[js.Any])
+    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.get.asInstanceOf[js.Any])
     if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
     if (vrating != null) __obj.updateDynamic("vrating")(vrating.asInstanceOf[js.Any])
     if (vrating_rank != null) __obj.updateDynamic("vrating_rank")(vrating_rank.asInstanceOf[js.Any])

@@ -16,7 +16,7 @@ object FormatParams {
   def apply(csv: CsvParams = null, json: js.UndefOr[Boolean] = js.undefined, xml: XmlParams = null): FormatParams = {
     val __obj = js.Dynamic.literal()
     if (csv != null) __obj.updateDynamic("csv")(csv.asInstanceOf[js.Any])
-    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
+    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.get.asInstanceOf[js.Any])
     if (xml != null) __obj.updateDynamic("xml")(xml.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatParams]
   }

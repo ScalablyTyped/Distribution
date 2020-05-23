@@ -1,46 +1,37 @@
 package typings.materializeCss.M
 
-import typings.materializeCss.MElements
-import typings.materializeCss.PartialTapTargetOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("M.TapTarget")
-@js.native
-class TapTarget () extends Component[TapTargetOptions] {
+trait TapTarget extends Component[TapTargetOptions] {
   /**
     * If the tap target is open
     */
-  var isOpen: Boolean = js.native
+  var isOpen: Boolean
   /**
     * Close Tap Target
     */
-  def close(): Unit = js.native
+  def close(): Unit
   /**
     * Open Tap Target
     */
-  def open(): Unit = js.native
+  def open(): Unit
 }
 
-/* static members */
-@JSGlobal("M.TapTarget")
-@js.native
-object TapTarget extends js.Object {
-  /**
-    * Get Instance
-    */
-  def getInstance(elem: Element): TapTarget = js.native
-  /**
-    * Init TapTargets
-    */
-  def init(els: MElements): js.Array[TapTarget] = js.native
-  def init(els: MElements, options: PartialTapTargetOptions): js.Array[TapTarget] = js.native
-  /**
-    * Init TapTarget
-    */
-  def init(els: Element): TapTarget = js.native
-  def init(els: Element, options: PartialTapTargetOptions): TapTarget = js.native
+object TapTarget {
+  @scala.inline
+  def apply(
+    close: () => Unit,
+    destroy: () => Unit,
+    el: Element,
+    isOpen: Boolean,
+    open: () => Unit,
+    options: TapTargetOptions
+  ): TapTarget = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), destroy = js.Any.fromFunction0(destroy), el = el.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], open = js.Any.fromFunction0(open), options = options.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TapTarget]
+  }
 }
 

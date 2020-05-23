@@ -1,5 +1,6 @@
 package typings.vscodeLanguageserver.mod
 
+import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.protocolMod.ApplyWorkspaceEditParams
 import typings.vscodeLanguageserverProtocol.protocolMod.ApplyWorkspaceEditResponse
 import scala.scalajs.js
@@ -9,6 +10,6 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode-languageserver", "ApplyWorkspaceEditRequest")
 @js.native
 object ApplyWorkspaceEditRequest extends js.Object {
-  val `type`: typings.vscodeJsonrpc.mod.RequestType[ApplyWorkspaceEditParams, ApplyWorkspaceEditResponse, Unit, Unit] = js.native
+  val `type`: ProtocolRequestType[ApplyWorkspaceEditParams, ApplyWorkspaceEditResponse, scala.Nothing, Unit, Unit] = js.native
 }
 

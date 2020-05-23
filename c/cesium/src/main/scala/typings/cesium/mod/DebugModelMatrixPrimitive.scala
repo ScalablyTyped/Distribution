@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonId
+import typings.cesium.anon.Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "DebugModelMatrixPrimitive")
 @js.native
 class DebugModelMatrixPrimitive () extends js.Object {
-  def this(options: AnonId) = this()
+  def this(options: Id) = this()
   var id: js.Any = js.native
   var length: Double = js.native
   var modelMatrix: Matrix4 = js.native

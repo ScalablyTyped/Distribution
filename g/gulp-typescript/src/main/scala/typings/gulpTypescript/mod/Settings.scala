@@ -1,7 +1,7 @@
 package typings.gulpTypescript.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.gulpTypescript.Typeofts
+import typings.gulpTypescript.anon.Typeofts
 import typings.gulpTypescript.typesMod.GetCustomTransformers
 import typings.typescript.mod.ModuleKind
 import typings.typescript.mod.ScriptTarget
@@ -51,7 +51,7 @@ object Settings {
     StringDictionary: /* name */ StringDictionary[js.Any] = null,
     allowNonTsExtensions: js.UndefOr[Boolean] = js.undefined,
     charset: String = null,
-    codepage: Int | Double = null,
+    codepage: js.UndefOr[Double] = js.undefined,
     declaration: js.UndefOr[Boolean] = js.undefined,
     declarationFiles: js.UndefOr[Boolean] = js.undefined,
     experimentalDecorators: js.UndefOr[Boolean] = js.undefined,
@@ -84,36 +84,36 @@ object Settings {
   ): Settings = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(allowNonTsExtensions)) __obj.updateDynamic("allowNonTsExtensions")(allowNonTsExtensions.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowNonTsExtensions)) __obj.updateDynamic("allowNonTsExtensions")(allowNonTsExtensions.get.asInstanceOf[js.Any])
     if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
-    if (codepage != null) __obj.updateDynamic("codepage")(codepage.asInstanceOf[js.Any])
-    if (!js.isUndefined(declaration)) __obj.updateDynamic("declaration")(declaration.asInstanceOf[js.Any])
-    if (!js.isUndefined(declarationFiles)) __obj.updateDynamic("declarationFiles")(declarationFiles.asInstanceOf[js.Any])
-    if (!js.isUndefined(experimentalDecorators)) __obj.updateDynamic("experimentalDecorators")(experimentalDecorators.asInstanceOf[js.Any])
+    if (!js.isUndefined(codepage)) __obj.updateDynamic("codepage")(codepage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(declaration)) __obj.updateDynamic("declaration")(declaration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(declarationFiles)) __obj.updateDynamic("declarationFiles")(declarationFiles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(experimentalDecorators)) __obj.updateDynamic("experimentalDecorators")(experimentalDecorators.get.asInstanceOf[js.Any])
     if (getCustomTransformers != null) __obj.updateDynamic("getCustomTransformers")(getCustomTransformers.asInstanceOf[js.Any])
-    if (!js.isUndefined(isolatedModules)) __obj.updateDynamic("isolatedModules")(isolatedModules.asInstanceOf[js.Any])
+    if (!js.isUndefined(isolatedModules)) __obj.updateDynamic("isolatedModules")(isolatedModules.get.asInstanceOf[js.Any])
     if (jsx != null) __obj.updateDynamic("jsx")(jsx.asInstanceOf[js.Any])
     if (lib != null) __obj.updateDynamic("lib")(lib.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (mapRoot != null) __obj.updateDynamic("mapRoot")(mapRoot.asInstanceOf[js.Any])
     if (module != null) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
     if (moduleResolution != null) __obj.updateDynamic("moduleResolution")(moduleResolution.asInstanceOf[js.Any])
-    if (!js.isUndefined(noEmitOnError)) __obj.updateDynamic("noEmitOnError")(noEmitOnError.asInstanceOf[js.Any])
-    if (!js.isUndefined(noExternalResolve)) __obj.updateDynamic("noExternalResolve")(noExternalResolve.asInstanceOf[js.Any])
-    if (!js.isUndefined(noImplicitAny)) __obj.updateDynamic("noImplicitAny")(noImplicitAny.asInstanceOf[js.Any])
-    if (!js.isUndefined(noLib)) __obj.updateDynamic("noLib")(noLib.asInstanceOf[js.Any])
-    if (!js.isUndefined(noLibCheck)) __obj.updateDynamic("noLibCheck")(noLibCheck.asInstanceOf[js.Any])
-    if (!js.isUndefined(noResolve)) __obj.updateDynamic("noResolve")(noResolve.asInstanceOf[js.Any])
+    if (!js.isUndefined(noEmitOnError)) __obj.updateDynamic("noEmitOnError")(noEmitOnError.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noExternalResolve)) __obj.updateDynamic("noExternalResolve")(noExternalResolve.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noImplicitAny)) __obj.updateDynamic("noImplicitAny")(noImplicitAny.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noLib)) __obj.updateDynamic("noLib")(noLib.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noLibCheck)) __obj.updateDynamic("noLibCheck")(noLibCheck.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noResolve)) __obj.updateDynamic("noResolve")(noResolve.get.asInstanceOf[js.Any])
     if (out != null) __obj.updateDynamic("out")(out.asInstanceOf[js.Any])
     if (outDir != null) __obj.updateDynamic("outDir")(outDir.asInstanceOf[js.Any])
     if (outFile != null) __obj.updateDynamic("outFile")(outFile.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveConstEnums)) __obj.updateDynamic("preserveConstEnums")(preserveConstEnums.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeComments)) __obj.updateDynamic("removeComments")(removeComments.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveConstEnums)) __obj.updateDynamic("preserveConstEnums")(preserveConstEnums.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeComments)) __obj.updateDynamic("removeComments")(removeComments.get.asInstanceOf[js.Any])
     if (rootDir != null) __obj.updateDynamic("rootDir")(rootDir.asInstanceOf[js.Any])
     if (rootDirs != null) __obj.updateDynamic("rootDirs")(rootDirs.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortOutput)) __obj.updateDynamic("sortOutput")(sortOutput.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortOutput)) __obj.updateDynamic("sortOutput")(sortOutput.get.asInstanceOf[js.Any])
     if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressImplicitAnyIndexErrors)) __obj.updateDynamic("suppressImplicitAnyIndexErrors")(suppressImplicitAnyIndexErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressImplicitAnyIndexErrors)) __obj.updateDynamic("suppressImplicitAnyIndexErrors")(suppressImplicitAnyIndexErrors.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (typescript != null) __obj.updateDynamic("typescript")(typescript.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]

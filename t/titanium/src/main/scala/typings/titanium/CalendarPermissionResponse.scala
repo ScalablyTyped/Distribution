@@ -9,30 +9,30 @@ import scala.scalajs.js.annotation._
   */
 trait CalendarPermissionResponse extends js.Object {
   /**
-  	 * Error code, if any returned.
-  	 */
+    * Error code, if any returned.
+    */
   var code: js.UndefOr[Double] = js.undefined
   /**
-  	 * Error message, if any returned.
-  	 */
+    * Error message, if any returned.
+    */
   var error: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Indicates whether the request succeeded.
-  	 */
+    * Indicates whether the request succeeded.
+    */
   var success: js.UndefOr[Boolean] = js.undefined
 }
 
 object CalendarPermissionResponse {
   @scala.inline
   def apply(
-    code: Int | Double = null,
+    code: js.UndefOr[Double] = js.undefined,
     error: java.lang.String = null,
     success: js.UndefOr[Boolean] = js.undefined
   ): CalendarPermissionResponse = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code.get.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarPermissionResponse]
   }
 }

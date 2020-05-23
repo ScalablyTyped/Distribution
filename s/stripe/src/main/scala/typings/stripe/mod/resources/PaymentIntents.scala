@@ -1,6 +1,6 @@
 package typings.stripe.mod.resources
 
-import typings.stripe.AnonCancellationreason
+import typings.stripe.anon.Cancellationreason
 import typings.stripe.mod.HeaderOptions
 import typings.stripe.mod.IList
 import typings.stripe.mod.IListPromise
@@ -21,21 +21,21 @@ import scala.scalajs.js.annotation._
 @js.native
 class PaymentIntents () extends StripeResource {
   def cancel(paymentIntentId: String): js.Promise[IPaymentIntent] = js.native
-  def cancel(paymentIntentId: String, data: AnonCancellationreason): js.Promise[IPaymentIntent] = js.native
+  def cancel(paymentIntentId: String, data: Cancellationreason): js.Promise[IPaymentIntent] = js.native
   /**
     * A PaymentIntent object can be canceled when it is in one of these statuses: `requires_payment_method`, `requires_capture`, `requires_confirmation`, `requires_action`.
     * Once canceled, no additional charges will be made by the PaymentIntent and any operations on the PaymentIntent will fail with an error. For PaymentIntents with `status='requires_capture'`, the remaining `amount_capturable` will automatically be refunded.
     *
     * @returns Returns a PaymentIntent object if the cancellation succeeded. Returns an error if the PaymentIntent has already been canceled or is not in a cancelable state.
     */
-  def cancel(paymentIntentId: String, data: AnonCancellationreason, options: HeaderOptions): js.Promise[IPaymentIntent] = js.native
+  def cancel(paymentIntentId: String, data: Cancellationreason, options: HeaderOptions): js.Promise[IPaymentIntent] = js.native
   def cancel(
     paymentIntentId: String,
-    data: AnonCancellationreason,
+    data: Cancellationreason,
     options: HeaderOptions,
     response: IResponseFn[IPaymentIntent]
   ): js.Promise[IPaymentIntent] = js.native
-  def cancel(paymentIntentId: String, data: AnonCancellationreason, response: IResponseFn[IPaymentIntent]): js.Promise[IPaymentIntent] = js.native
+  def cancel(paymentIntentId: String, data: Cancellationreason, response: IResponseFn[IPaymentIntent]): js.Promise[IPaymentIntent] = js.native
   def cancel(paymentIntentId: String, options: HeaderOptions): js.Promise[IPaymentIntent] = js.native
   def cancel(paymentIntentId: String, options: HeaderOptions, response: IResponseFn[IPaymentIntent]): js.Promise[IPaymentIntent] = js.native
   def cancel(paymentIntentId: String, response: IResponseFn[IPaymentIntent]): js.Promise[IPaymentIntent] = js.native

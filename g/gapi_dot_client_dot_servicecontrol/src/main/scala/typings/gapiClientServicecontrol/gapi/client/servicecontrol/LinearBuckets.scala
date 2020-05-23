@@ -28,11 +28,15 @@ trait LinearBuckets extends js.Object {
 
 object LinearBuckets {
   @scala.inline
-  def apply(numFiniteBuckets: Int | Double = null, offset: Int | Double = null, width: Int | Double = null): LinearBuckets = {
+  def apply(
+    numFiniteBuckets: js.UndefOr[Double] = js.undefined,
+    offset: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
+  ): LinearBuckets = {
     val __obj = js.Dynamic.literal()
-    if (numFiniteBuckets != null) __obj.updateDynamic("numFiniteBuckets")(numFiniteBuckets.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(numFiniteBuckets)) __obj.updateDynamic("numFiniteBuckets")(numFiniteBuckets.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinearBuckets]
   }
 }

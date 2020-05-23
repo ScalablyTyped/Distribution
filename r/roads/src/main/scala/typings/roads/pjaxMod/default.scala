@@ -1,11 +1,11 @@
 package typings.roads.pjaxMod
 
-import typings.std.Document_
+import typings.std.Document
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLElement
 import typings.std.HTMLFormElement
 import typings.std.MouseEvent
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,13 +20,13 @@ class default protected () extends RoadsPjax {
     * @param {HTMLElement} container_element - The element that will be filled with your roads output
     * @param {Window} window - The pages window object to help set page title and other items
     */
-  def this(road: typings.roads.roadMod.default, container_element: HTMLElement, window: Window_) = this()
+  def this(road: typings.roads.roadMod.default, container_element: HTMLElement, window: Window) = this()
   /* CompleteClass */
   override var _container_element: HTMLElement = js.native
   /* CompleteClass */
   override var _road: typings.roads.roadMod.default = js.native
   /* CompleteClass */
-  override var _window: Window_ = js.native
+  override var _window: Window = js.native
   /**
     * Handles all click events, and directs
     * @param {MouseEvent} event
@@ -54,7 +54,7 @@ class default protected () extends RoadsPjax {
     * @returns {RoadsPjax} this object, useful for chaining
     */
   /* CompleteClass */
-  override def addCookieMiddleware(document: Document_): RoadsPjax = js.native
+  override def addCookieMiddleware(document: Document): RoadsPjax = js.native
   /**
     * Adds middleware to the assigned road whcih will adds setTitle to the PJAX object (as opposed to the request object like the setTitle middlweare does).
     * This allows you to easily update the page title.

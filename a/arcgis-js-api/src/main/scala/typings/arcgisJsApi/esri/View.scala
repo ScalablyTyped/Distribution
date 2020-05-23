@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`double-click`
 import typings.arcgisJsApi.arcgisJsApiStrings.`immediate-click`
@@ -26,11 +25,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.arcgisJsApi.esri.Evented because Inheritance from two classes. Inlined emit, emit, hasEventListener, on, on */ @js.native
+@js.native
 trait View
   extends Accessor
      with corePromise
+     with Evented
      with DOMContainer {
   /**
     * Collection containing a flat list of all the created [LayerViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) related to the basemap, operational layers, and group layers in this view.
@@ -175,17 +174,6 @@ trait View
     */
   val updating: Boolean = js.native
   /**
-    * Emits an event on the instance. This method should only be used when creating subclasses of this class.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#emit)
-    *
-    * @param type The name of the event.
-    * @param event The event payload.
-    *
-    */
-  def emit(`type`: String): Boolean = js.native
-  def emit(`type`: String, event: js.Any): Boolean = js.native
-  /**
     * Sets the focus on the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#focus)
@@ -193,25 +181,6 @@ trait View
     *
     */
   def focus(): Unit = js.native
-  /**
-    * Indicates whether there is an event listener on the instance that matches the provided event name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#hasEventListener)
-    *
-    * @param type The name of the event.
-    *
-    */
-  def hasEventListener(`type`: String): Boolean = js.native
-  /**
-    * Registers an event handler on the instance. Call this method to hook an event with a listener.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#on)
-    *
-    * @param type A event type, or an array of event types, to listen for.
-    * @param listener The function to call when the event is fired.
-    *
-    */
-  def on(`type`: String, listener: EventHandler): IHandle = js.native
   /**
     * Registers an event handler on the instance. Call this method to hook an event with a listener. See the [Events summary table](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#events-summary) for a list of listened events.
     *
@@ -226,7 +195,6 @@ trait View
   def on(`type`: String, modifiersOrHandler: js.Array[String], handler: js.Function): js.Any = js.native
   def on(`type`: String, modifiersOrHandler: js.Function): js.Any = js.native
   def on(`type`: String, modifiersOrHandler: js.Function, handler: js.Function): js.Any = js.native
-  def on(`type`: js.Array[String], listener: EventHandler): IHandle = js.native
   def on(`type`: js.Array[String], modifiersOrHandler: js.Array[String]): js.Any = js.native
   def on(`type`: js.Array[String], modifiersOrHandler: js.Array[String], handler: js.Function): js.Any = js.native
   def on(`type`: js.Array[String], modifiersOrHandler: js.Function): js.Any = js.native
@@ -435,8 +403,4 @@ trait View
     */
   def whenLayerView(layer: StreamLayer): js.Promise[StreamLayerView] = js.native
 }
-
-@JSGlobal("__esri.View")
-@js.native
-object View extends TopLevel[ViewConstructor]
 

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,8 +25,4 @@ trait LayerOptions
     */
   var showNoDataRecords: Boolean = js.native
 }
-
-@JSGlobal("__esri.LayerOptions")
-@js.native
-object LayerOptions extends TopLevel[LayerOptionsConstructor]
 

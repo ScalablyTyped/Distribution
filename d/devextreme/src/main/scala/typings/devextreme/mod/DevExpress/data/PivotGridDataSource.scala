@@ -1,8 +1,8 @@
 package typings.devextreme.mod.DevExpress.data
 
-import typings.devextreme.AnonColumnPath
-import typings.devextreme.mod._Global_.JQueryPromise
-import typings.devextreme.mod._Global_.Promise
+import typings.devextreme.anon.ColumnPath
+import typings.devextreme.mod.global.JQueryPromise
+import typings.devextreme.mod.global.Promise
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait PivotGridDataSource extends js.Object {
   /** @name PivotGridDataSource.collapseHeaderItem(area, path) */
   def collapseHeaderItem(area: String, path: js.Array[String | Double | Date]): Unit = js.native
   /** @name PivotGridDataSource.createDrillDownDataSource(options) */
-  def createDrillDownDataSource(options: AnonColumnPath): DataSource = js.native
+  def createDrillDownDataSource(options: ColumnPath): DataSource = js.native
   /** @name PivotGridDataSource.dispose() */
   def dispose(): Unit = js.native
   def expandAll(id: String): Unit = js.native

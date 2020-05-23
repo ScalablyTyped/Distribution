@@ -14,9 +14,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("GmeClasses.Project")
 @js.native
-class Project () extends js.Object {
+trait Project extends js.Object {
   /**
     * Unique ID of project, built up by the ownerId and projectName.
     */

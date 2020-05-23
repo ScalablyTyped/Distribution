@@ -44,7 +44,7 @@ trait PlusFingerprint extends js.Object {
   /**
     * 取消指纹识别认证
     * 取消当前正在处理的指纹识别认证操作。
-    * 	如果当前没有进行指纹识别则不进行任何操作；如果当前正在进行指纹识别则触发错误回调（错误码为“CANCEL”）。
+    *     如果当前没有进行指纹识别则不进行任何操作；如果当前正在进行指纹识别则触发错误回调（错误码为“CANCEL”）。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/fingerprint.html](http://www.html5plus.org/doc/zh_cn/fingerprint.html)
     */
@@ -52,7 +52,7 @@ trait PlusFingerprint extends js.Object {
   /**
     * 当前设备是否已经录入指纹
     * 如果设备没有录入指纹，则无法使用指纹识别功能，建议调用指纹识别前先使用此接口检查。
-    * 	调用plus.fingerprint.authenticate会返回失败。
+    *     调用plus.fingerprint.authenticate会返回失败。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/fingerprint.html](http://www.html5plus.org/doc/zh_cn/fingerprint.html)
     */
@@ -60,7 +60,7 @@ trait PlusFingerprint extends js.Object {
   /**
     * 当前设备是否设置密码锁屏
     * 如果设备没有设置密码锁屏，则无法使用指纹识别功能，建议调用指纹识别前先使用此接口检查。
-    * 	调用plus.fingerprint.authenticate会返回失败。
+    *     调用plus.fingerprint.authenticate会返回失败。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/fingerprint.html](http://www.html5plus.org/doc/zh_cn/fingerprint.html)
     */

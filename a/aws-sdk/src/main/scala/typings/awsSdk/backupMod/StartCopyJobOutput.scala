@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StartCopyJobOutput extends js.Object {
   /**
-    * Uniquely identifies a request to AWS Backup to copy a resource.
+    * Uniquely identifies a copy job.
     */
   var CopyJobId: js.UndefOr[String] = js.native
   /**
-    * The date and time that a backup job is started, in Unix format and Coordinated Universal Time (UTC). The value of CreationDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM. &gt;
+    * The date and time that a copy job is started, in Unix format and Coordinated Universal Time (UTC). The value of CreationDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
   var CreationDate: js.UndefOr[timestamp] = js.native
 }

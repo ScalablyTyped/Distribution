@@ -60,7 +60,7 @@ object IStickyState {
     if (dsr != null) __obj.updateDynamic("dsr")(dsr.asInstanceOf[js.Any])
     if (onInactivate != null) __obj.updateDynamic("onInactivate")(js.Any.fromFunction1(onInactivate))
     if (onReactivate != null) __obj.updateDynamic("onReactivate")(js.Any.fromFunction1(onReactivate))
-    if (!js.isUndefined(sticky)) __obj.updateDynamic("sticky")(sticky.asInstanceOf[js.Any])
+    if (!js.isUndefined(sticky)) __obj.updateDynamic("sticky")(sticky.get.asInstanceOf[js.Any])
     if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStickyState]
   }

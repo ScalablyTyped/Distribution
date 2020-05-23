@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xss-filters", JSImport.Namespace)
 @js.native
-object mod extends TopLevel[XSSFilters_]
+object mod extends TopLevel[XSSFilters]
 

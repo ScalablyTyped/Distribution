@@ -4,7 +4,6 @@ import typings.heremaps.H.map.layer.TileLayer
 import typings.heremaps.H.service.IConfigurable
 import typings.heremaps.H.service.ServiceParameters
 import typings.heremaps.H.service.metaInfo.Service.Info
-import typings.heremaps.H.service.metaInfo.Service.Options
 import typings.heremaps.H.util.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,16 +12,10 @@ import scala.scalajs.js.annotation._
 /**
   * This class encapsulates a Metainfo Tile end point of the HERE Map Tile API.
   */
-@JSGlobal("H.service.metaInfo.Service")
 @js.native
-/**
-  * Constructor
-  * @param opt_options {H.service.metaInfo.Service.Options=} - additional service parameters
-  */
-class Service_ ()
+trait Service_
   extends EventTarget
      with IConfigurable {
-  def this(opt_options: Options) = this()
   /**
     * This method creates a tile layer. This layer can be used as a layer on a map's data model.
     * @param tileSize {number} - The tile size

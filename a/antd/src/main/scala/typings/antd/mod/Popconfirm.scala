@@ -1,24 +1,14 @@
 package typings.antd.mod
 
-import typings.antd.Anon1
-import typings.antd.AnonDisabled
+import org.scalablytyped.runtime.TopLevel
 import typings.antd.popconfirmMod.PopconfirmProps
-import typings.antd.popconfirmMod.default
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.RefAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("antd", "Popconfirm")
 @js.native
-class Popconfirm protected () extends default {
-  def this(props: PopconfirmProps) = this()
-}
-
-/* static members */
-@JSImport("antd", "Popconfirm")
-@js.native
-object Popconfirm extends js.Object {
-  var defaultProps: AnonDisabled = js.native
-  def getDerivedStateFromProps(nextProps: PopconfirmProps): Anon1 | Null = js.native
-}
+object Popconfirm extends TopLevel[ForwardRefExoticComponent[PopconfirmProps with RefAttributes[_]]]
 

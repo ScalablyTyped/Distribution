@@ -1,7 +1,7 @@
 package typings.flot.jquery.flot
 
+import typings.jquery.JQuery
 import typings.jquery.JQueryCoordinates
-import typings.jquery.JQuery_
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -15,7 +15,7 @@ trait plot extends js.Object {
   def getCanvas(): HTMLCanvasElement = js.native
   def getData(): js.Array[dataSeries] = js.native
   def getOptions(): plotOptions = js.native
-  def getPlaceholder(): JQuery_[HTMLElement] = js.native
+  def getPlaceholder(): JQuery[HTMLElement] = js.native
   def getPlotOffset(): canvasPoint = js.native
   def getXAxes(): js.Array[axis] = js.native
   def getYAxes(): js.Array[axis] = js.native

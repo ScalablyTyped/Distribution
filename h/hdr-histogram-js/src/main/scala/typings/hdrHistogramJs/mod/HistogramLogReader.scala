@@ -1,6 +1,6 @@
 package typings.hdrHistogramJs.mod
 
-import typings.hdrHistogramJs.AnonHistogramConstr
+import typings.hdrHistogramJs.anon.HistogramConstr
 import typings.hdrHistogramJs.histogramLogReaderMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -51,6 +51,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class HistogramLogReader protected () extends default {
   def this(logContent: String) = this()
-  def this(logContent: String, options: AnonHistogramConstr) = this()
+  def this(logContent: String, options: HistogramConstr) = this()
 }
 

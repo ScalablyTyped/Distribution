@@ -18,14 +18,14 @@ trait ConditionalRangeBorderLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     *
     * [Api set: ExcelApi 1.6]
     */
   var color: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details. Read-only.
+    * Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -48,10 +48,10 @@ object ConditionalRangeBorderLoadOptions {
     style: js.UndefOr[Boolean] = js.undefined
   ): ConditionalRangeBorderLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(sideIndex)) __obj.updateDynamic("sideIndex")(sideIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sideIndex)) __obj.updateDynamic("sideIndex")(sideIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalRangeBorderLoadOptions]
   }
 }

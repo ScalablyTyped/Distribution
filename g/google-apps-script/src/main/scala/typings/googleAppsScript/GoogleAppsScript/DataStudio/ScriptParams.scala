@@ -15,7 +15,7 @@ object ScriptParams {
   @scala.inline
   def apply(lastRefresh: String, sampleExtraction: js.UndefOr[Boolean] = js.undefined): ScriptParams = {
     val __obj = js.Dynamic.literal(lastRefresh = lastRefresh.asInstanceOf[js.Any])
-    if (!js.isUndefined(sampleExtraction)) __obj.updateDynamic("sampleExtraction")(sampleExtraction.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleExtraction)) __obj.updateDynamic("sampleExtraction")(sampleExtraction.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScriptParams]
   }
 }

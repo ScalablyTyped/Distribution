@@ -7,7 +7,7 @@ import typings.blueprintjsCore.propsMod.MaybeElement
 import typings.blueprintjsIcons.iconNameMod.IconName
 import typings.react.mod.CSSProperties
 import typings.react.mod.SyntheticEvent
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -58,7 +58,7 @@ trait IAlertProps
     *
     * If any of the `cancel` props are defined, then either `onCancel` or `onClose` must be defined.
     */
-  var onCancel: js.UndefOr[js.Function1[/* evt */ js.UndefOr[SyntheticEvent[HTMLElement, Event_]], Unit]] = js.undefined
+  var onCancel: js.UndefOr[js.Function1[/* evt */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], Unit]] = js.undefined
   /**
     * Handler invoked when the Alert is confirmed or canceled; see `onConfirm` and `onCancel` for more details.
     * First argument is `true` if confirmed, `false` otherwise.
@@ -67,7 +67,7 @@ trait IAlertProps
   var onClose: js.UndefOr[
     js.Function2[
       /* confirmed */ Boolean, 
-      /* evt */ js.UndefOr[SyntheticEvent[HTMLElement, Event_]], 
+      /* evt */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], 
       Unit
     ]
   ] = js.undefined
@@ -76,7 +76,7 @@ trait IAlertProps
     * - clicking the confirm button
     * - focusing on the confirm button and pressing `enter` or `space`
     */
-  var onConfirm: js.UndefOr[js.Function1[/* evt */ js.UndefOr[SyntheticEvent[HTMLElement, Event_]], Unit]] = js.undefined
+  var onConfirm: js.UndefOr[js.Function1[/* evt */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], Unit]] = js.undefined
   /**
     * The container element into which the overlay renders its contents, when `usePortal` is `true`.
     * This prop is ignored if `usePortal` is `false`.
@@ -106,26 +106,26 @@ object IAlertProps {
     cancelButtonText: String = null,
     className: String = null,
     confirmButtonText: String = null,
-    icon: IconName | MaybeElement = null,
+    icon: js.UndefOr[Null | IconName | MaybeElement] = js.undefined,
     intent: Intent = null,
-    onCancel: /* evt */ js.UndefOr[SyntheticEvent[HTMLElement, Event_]] => Unit = null,
-    onClose: (/* confirmed */ Boolean, /* evt */ js.UndefOr[SyntheticEvent[HTMLElement, Event_]]) => Unit = null,
+    onCancel: /* evt */ js.UndefOr[SyntheticEvent[HTMLElement, Event]] => Unit = null,
+    onClose: (/* confirmed */ Boolean, /* evt */ js.UndefOr[SyntheticEvent[HTMLElement, Event]]) => Unit = null,
     onClosed: /* node */ HTMLElement => Unit = null,
     onClosing: /* node */ HTMLElement => Unit = null,
-    onConfirm: /* evt */ js.UndefOr[SyntheticEvent[HTMLElement, Event_]] => Unit = null,
+    onConfirm: /* evt */ js.UndefOr[SyntheticEvent[HTMLElement, Event]] => Unit = null,
     onOpened: /* node */ HTMLElement => Unit = null,
     onOpening: /* node */ HTMLElement => Unit = null,
     portalContainer: HTMLElement = null,
     style: CSSProperties = null,
-    transitionDuration: Int | Double = null
+    transitionDuration: js.UndefOr[Double] = js.undefined
   ): IAlertProps = {
     val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
-    if (!js.isUndefined(canEscapeKeyCancel)) __obj.updateDynamic("canEscapeKeyCancel")(canEscapeKeyCancel.asInstanceOf[js.Any])
-    if (!js.isUndefined(canOutsideClickCancel)) __obj.updateDynamic("canOutsideClickCancel")(canOutsideClickCancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(canEscapeKeyCancel)) __obj.updateDynamic("canEscapeKeyCancel")(canEscapeKeyCancel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(canOutsideClickCancel)) __obj.updateDynamic("canOutsideClickCancel")(canOutsideClickCancel.get.asInstanceOf[js.Any])
     if (cancelButtonText != null) __obj.updateDynamic("cancelButtonText")(cancelButtonText.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (confirmButtonText != null) __obj.updateDynamic("confirmButtonText")(confirmButtonText.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
     if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction1(onCancel))
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction2(onClose))
@@ -136,7 +136,7 @@ object IAlertProps {
     if (onOpening != null) __obj.updateDynamic("onOpening")(js.Any.fromFunction1(onOpening))
     if (portalContainer != null) __obj.updateDynamic("portalContainer")(portalContainer.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitionDuration)) __obj.updateDynamic("transitionDuration")(transitionDuration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAlertProps]
   }
 }

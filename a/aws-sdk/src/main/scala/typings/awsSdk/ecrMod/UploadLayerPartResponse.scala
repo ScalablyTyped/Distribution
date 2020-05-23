@@ -27,13 +27,13 @@ trait UploadLayerPartResponse extends js.Object {
 object UploadLayerPartResponse {
   @scala.inline
   def apply(
-    lastByteReceived: Int | Double = null,
+    lastByteReceived: js.UndefOr[PartSize] = js.undefined,
     registryId: RegistryId = null,
     repositoryName: RepositoryName = null,
     uploadId: UploadId = null
   ): UploadLayerPartResponse = {
     val __obj = js.Dynamic.literal()
-    if (lastByteReceived != null) __obj.updateDynamic("lastByteReceived")(lastByteReceived.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastByteReceived)) __obj.updateDynamic("lastByteReceived")(lastByteReceived.get.asInstanceOf[js.Any])
     if (registryId != null) __obj.updateDynamic("registryId")(registryId.asInstanceOf[js.Any])
     if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
     if (uploadId != null) __obj.updateDynamic("uploadId")(uploadId.asInstanceOf[js.Any])

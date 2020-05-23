@@ -36,21 +36,21 @@ trait OptionsWithMap[Props, Exports /* <: StringDictionary[js.Any] */] extends C
 
 object OptionsWithMap {
   @scala.inline
-  def apply[Props, Exports /* <: StringDictionary[js.Any] */](
+  def apply[Props, Exports](
     loader: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof Exports ]: (): std.Promise<Exports[P]>}
     */ typings.reactLoadable.reactLoadableStrings.OptionsWithMap with TopLevel[Exports],
     loading: ComponentType[LoadingComponentProps],
     render: (Exports, Props) => ReactNode,
-    delay: Double | `false` = null,
+    delay: js.UndefOr[Null | Double | `false`] = js.undefined,
     modules: js.Array[String] = null,
-    timeout: Double | `false` = null,
+    timeout: js.UndefOr[Null | Double | `false`] = js.undefined,
     webpack: () => js.Array[String | Double] = null
   ): OptionsWithMap[Props, Exports] = {
     val __obj = js.Dynamic.literal(loader = loader.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], render = js.Any.fromFunction2(render))
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (modules != null) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (webpack != null) __obj.updateDynamic("webpack")(js.Any.fromFunction0(webpack))
     __obj.asInstanceOf[OptionsWithMap[Props, Exports]]
   }

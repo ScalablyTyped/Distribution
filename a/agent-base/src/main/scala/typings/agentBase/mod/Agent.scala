@@ -1,6 +1,6 @@
 package typings.agentBase.mod
 
-import typings.agentBase.AnonSecureEndpoint
+import typings.agentBase.anon.SecureEndpoint
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ trait Agent extends EventEmitter {
   def addRequest(req: js.Any, opts: js.Any): Unit = js.native
   def callback(): Unit = js.native
   def callback(req: js.Any): Unit = js.native
-  def callback(req: js.Any, opts: AnonSecureEndpoint): Unit = js.native
+  def callback(req: js.Any, opts: SecureEndpoint): Unit = js.native
   def freeSocket(socket: js.Any, opts: js.Any): Unit = js.native
 }
 

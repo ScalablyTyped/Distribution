@@ -50,16 +50,16 @@ object SimpleUserOptions {
     aor: String = null,
     delegate: SimpleUserDelegate = null,
     media: SimpleUserMedia = null,
-    reconnectionAttempts: Int | Double = null,
-    reconnectionDelay: Int | Double = null,
+    reconnectionAttempts: js.UndefOr[Double] = js.undefined,
+    reconnectionDelay: js.UndefOr[Double] = js.undefined,
     userAgentOptions: UserAgentOptions = null
   ): SimpleUserOptions = {
     val __obj = js.Dynamic.literal()
     if (aor != null) __obj.updateDynamic("aor")(aor.asInstanceOf[js.Any])
     if (delegate != null) __obj.updateDynamic("delegate")(delegate.asInstanceOf[js.Any])
     if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
-    if (reconnectionAttempts != null) __obj.updateDynamic("reconnectionAttempts")(reconnectionAttempts.asInstanceOf[js.Any])
-    if (reconnectionDelay != null) __obj.updateDynamic("reconnectionDelay")(reconnectionDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(reconnectionAttempts)) __obj.updateDynamic("reconnectionAttempts")(reconnectionAttempts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reconnectionDelay)) __obj.updateDynamic("reconnectionDelay")(reconnectionDelay.get.asInstanceOf[js.Any])
     if (userAgentOptions != null) __obj.updateDynamic("userAgentOptions")(userAgentOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleUserOptions]
   }

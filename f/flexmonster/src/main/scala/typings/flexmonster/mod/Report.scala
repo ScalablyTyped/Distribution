@@ -1,6 +1,6 @@
 package typings.flexmonster.mod
 
-import typings.flexmonster.AnonColumns
+import typings.flexmonster.anon.Columns
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait Report extends js.Object {
   var localization: js.UndefOr[js.Object | String] = js.undefined
   var options: js.UndefOr[Options] = js.undefined
   var slice: js.UndefOr[Slice] = js.undefined
-  var tableSizes: js.UndefOr[AnonColumns] = js.undefined
+  var tableSizes: js.UndefOr[Columns] = js.undefined
   var version: js.UndefOr[String] = js.undefined
 }
 
@@ -27,7 +27,7 @@ object Report {
     localization: js.Object | String = null,
     options: Options = null,
     slice: Slice = null,
-    tableSizes: AnonColumns = null,
+    tableSizes: Columns = null,
     version: String = null
   ): Report = {
     val __obj = js.Dynamic.literal()

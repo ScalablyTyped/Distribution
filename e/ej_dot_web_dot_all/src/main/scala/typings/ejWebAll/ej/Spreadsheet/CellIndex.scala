@@ -15,10 +15,10 @@ trait CellIndex extends js.Object {
 
 object CellIndex {
   @scala.inline
-  def apply(colIndex: Int | Double = null, rowIndex: Int | Double = null): CellIndex = {
+  def apply(colIndex: js.UndefOr[Double] = js.undefined, rowIndex: js.UndefOr[Double] = js.undefined): CellIndex = {
     val __obj = js.Dynamic.literal()
-    if (colIndex != null) __obj.updateDynamic("colIndex")(colIndex.asInstanceOf[js.Any])
-    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(colIndex)) __obj.updateDynamic("colIndex")(colIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellIndex]
   }
 }

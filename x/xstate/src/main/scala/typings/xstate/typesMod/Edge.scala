@@ -1,6 +1,6 @@
 package typings.xstate.typesMod
 
-import typings.xstate.Anon0
+import typings.xstate.anon.`0`
 import typings.xstate.stateNodeMod.StateNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Edge[TContext, TEvent /* <: EventObject */, TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */] extends js.Object {
   var actions: js.Array[Action[TContext, TEvent]]
-  var cond: js.UndefOr[Condition[TContext, TEvent with (Anon0[TEventType, TEvent])]] = js.undefined
+  var cond: js.UndefOr[Condition[TContext, TEvent with (`0`[TEventType, TEvent])]] = js.undefined
   var event: TEventType
   var meta: js.UndefOr[MetaObject] = js.undefined
   var source: StateNode[TContext, _, TEvent, _]
@@ -18,13 +18,13 @@ trait Edge[TContext, TEvent /* <: EventObject */, TEventType /* <: /* import war
 
 object Edge {
   @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */, TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */](
+  def apply[TContext, TEvent, TEventType](
     actions: js.Array[Action[TContext, TEvent]],
     event: TEventType,
     source: StateNode[TContext, _, TEvent, _],
     target: StateNode[TContext, _, TEvent, _],
     transition: TransitionDefinition[TContext, TEvent],
-    cond: Condition[TContext, TEvent with (Anon0[TEventType, TEvent])] = null,
+    cond: Condition[TContext, TEvent with (`0`[TEventType, TEvent])] = null,
     meta: MetaObject = null
   ): Edge[TContext, TEvent, TEventType] = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any])

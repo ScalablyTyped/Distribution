@@ -1,8 +1,8 @@
 package typings.angularCommon.httpHttpMod
 
-import typings.angularCommon.AnonBody
-import typings.angularCommon.AnonHeaders
-import typings.angularCommon.AnonStatus
+import typings.angularCommon.anon.Body
+import typings.angularCommon.anon.Headers
+import typings.angularCommon.anon.Status
 import typings.angularCommon.httpHttpMod.HttpEventType.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,14 +16,14 @@ import scala.scalajs.js.annotation._
 class HttpResponse[T] ()
   extends HttpResponseBase
      with HttpEvent[T] {
-  def this(init: AnonBody[T]) = this()
+  def this(init: Body[T]) = this()
   /**
     * The response body, or `null` if one was not returned.
     */
   val body: T | Null = js.native
   @JSName("type")
   val type_HttpResponse: Response = js.native
-  def clone(update: AnonHeaders): HttpResponse[T] = js.native
-  def clone[V](update: AnonStatus[V]): HttpResponse[V] = js.native
+  def clone(update: Headers): HttpResponse[T] = js.native
+  def clone[V](update: Status[V]): HttpResponse[V] = js.native
 }
 

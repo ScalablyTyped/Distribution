@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`unique-value`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -166,8 +165,4 @@ trait UniqueValueRenderer
     */
   def removeUniqueValueInfo(value: String): Unit = js.native
 }
-
-@JSGlobal("__esri.UniqueValueRenderer")
-@js.native
-object UniqueValueRenderer extends TopLevel[UniqueValueRendererConstructor]
 

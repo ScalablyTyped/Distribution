@@ -1,36 +1,36 @@
 package typings.reactBootstrapTableNext.mod
 
-import typings.reactBootstrapTableNext.AnonCurrFilters
-import typings.reactBootstrapTableNext.AnonCurrPage
-import typings.reactBootstrapTableNext.AnonProps
-import typings.reactBootstrapTableNext.AnonSelected
-import typings.reactBootstrapTableNext.AnonStartEditing
-import typings.reactBootstrapTableNext.AnonState
-import typings.reactBootstrapTableNext.AnonStateAnonSortColumn
+import typings.reactBootstrapTableNext.anon.CurrFilters
+import typings.reactBootstrapTableNext.anon.CurrPage
+import typings.reactBootstrapTableNext.anon.Props
+import typings.reactBootstrapTableNext.anon.Selected
+import typings.reactBootstrapTableNext.anon.StartEditing
+import typings.reactBootstrapTableNext.anon.State
+import typings.reactBootstrapTableNext.anon.StateSortColumn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BootstrapTableRef[T /* <: js.Object */] extends js.Object {
-  var cellEditContext: js.UndefOr[AnonStartEditing] = js.undefined
-  var filterContext: js.UndefOr[AnonCurrFilters] = js.undefined
-  var paginationContext: js.UndefOr[AnonCurrPage] = js.undefined
-  var rowExpandContext: js.UndefOr[AnonState] = js.undefined
-  var selectionContext: js.UndefOr[AnonSelected] = js.undefined
-  var sortContext: js.UndefOr[AnonStateAnonSortColumn[T]] = js.undefined
-  var table: AnonProps[T]
+  var cellEditContext: js.UndefOr[StartEditing] = js.undefined
+  var filterContext: js.UndefOr[CurrFilters] = js.undefined
+  var paginationContext: js.UndefOr[CurrPage] = js.undefined
+  var rowExpandContext: js.UndefOr[State] = js.undefined
+  var selectionContext: js.UndefOr[Selected] = js.undefined
+  var sortContext: js.UndefOr[StateSortColumn[T]] = js.undefined
+  var table: Props[T]
 }
 
 object BootstrapTableRef {
   @scala.inline
-  def apply[T /* <: js.Object */](
-    table: AnonProps[T],
-    cellEditContext: AnonStartEditing = null,
-    filterContext: AnonCurrFilters = null,
-    paginationContext: AnonCurrPage = null,
-    rowExpandContext: AnonState = null,
-    selectionContext: AnonSelected = null,
-    sortContext: AnonStateAnonSortColumn[T] = null
+  def apply[T](
+    table: Props[T],
+    cellEditContext: StartEditing = null,
+    filterContext: CurrFilters = null,
+    paginationContext: CurrPage = null,
+    rowExpandContext: State = null,
+    selectionContext: Selected = null,
+    sortContext: StateSortColumn[T] = null
   ): BootstrapTableRef[T] = {
     val __obj = js.Dynamic.literal(table = table.asInstanceOf[js.Any])
     if (cellEditContext != null) __obj.updateDynamic("cellEditContext")(cellEditContext.asInstanceOf[js.Any])

@@ -7,8 +7,8 @@ import typings.std.Blob
 import typings.std.Error
 import typings.std.HTMLElement
 import typings.std.HTMLMediaElement
-import typings.webtorrent.AnonAutoplay
-import typings.webtorrent.AnonEnd
+import typings.webtorrent.anon.Autoplay
+import typings.webtorrent.anon.End
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,10 +25,10 @@ trait TorrentFile extends EventEmitter {
     rootElement: String,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
   ): Unit = js.native
-  def appendTo(rootElement: String, opts: AnonAutoplay): Unit = js.native
+  def appendTo(rootElement: String, opts: Autoplay): Unit = js.native
   def appendTo(
     rootElement: String,
-    opts: AnonAutoplay,
+    opts: Autoplay,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
   ): Unit = js.native
   def appendTo(rootElement: HTMLElement): Unit = js.native
@@ -36,14 +36,14 @@ trait TorrentFile extends EventEmitter {
     rootElement: HTMLElement,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
   ): Unit = js.native
-  def appendTo(rootElement: HTMLElement, opts: AnonAutoplay): Unit = js.native
+  def appendTo(rootElement: HTMLElement, opts: Autoplay): Unit = js.native
   def appendTo(
     rootElement: HTMLElement,
-    opts: AnonAutoplay,
+    opts: Autoplay,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
   ): Unit = js.native
   def createReadStream(): ReadableStream = js.native
-  def createReadStream(opts: AnonEnd): ReadableStream = js.native
+  def createReadStream(opts: End): ReadableStream = js.native
   def deselect(): Unit = js.native
   def getBlob(callback: js.Function2[/* err */ js.UndefOr[String | Error], /* blob */ js.UndefOr[Blob], Unit]): Unit = js.native
   def getBlobURL(
@@ -57,10 +57,10 @@ trait TorrentFile extends EventEmitter {
     rootElement: String,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
   ): Unit = js.native
-  def renderTo(rootElement: String, opts: AnonAutoplay): Unit = js.native
+  def renderTo(rootElement: String, opts: Autoplay): Unit = js.native
   def renderTo(
     rootElement: String,
-    opts: AnonAutoplay,
+    opts: Autoplay,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
   ): Unit = js.native
   def renderTo(rootElement: HTMLMediaElement): Unit = js.native
@@ -68,10 +68,10 @@ trait TorrentFile extends EventEmitter {
     rootElement: HTMLMediaElement,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
   ): Unit = js.native
-  def renderTo(rootElement: HTMLMediaElement, opts: AnonAutoplay): Unit = js.native
+  def renderTo(rootElement: HTMLMediaElement, opts: Autoplay): Unit = js.native
   def renderTo(
     rootElement: HTMLMediaElement,
-    opts: AnonAutoplay,
+    opts: Autoplay,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
   ): Unit = js.native
   def select(): Unit = js.native

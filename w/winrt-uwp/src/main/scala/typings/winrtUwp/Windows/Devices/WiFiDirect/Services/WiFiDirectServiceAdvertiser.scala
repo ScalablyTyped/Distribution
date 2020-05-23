@@ -15,14 +15,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a Service Advertiser. This class is used by code on a device that advertises Wi-Fi Direct Services, to advertise the service. */
-@JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectServiceAdvertiser")
 @js.native
-class WiFiDirectServiceAdvertiser protected () extends js.Object {
-  /**
-    * Creates an instance of the WiFiDirectServiceAdvertiser class. To start advertising a Wi-Fi Direct Service, create an instance of this class, set its properties appropriately for your service, and then call its Start method.
-    * @param serviceName The name of the service to be advertised. Service names are UTF-8 strings no more than 255 characters long. It is recommended that names use reverse domain name notation, where the service owner's DNS name (such as "contoso.com") is reversed and used as the beginning of the service name (such as "com.contoso.serviceX"). This convention is intended to make it easy to choose unique service names. Service names that start with "org.wi-fi.wfds" are reserved for use by the Wi-Fi Alliance, and you may not use such names for your service.
-    */
-  def this(serviceName: String) = this()
+trait WiFiDirectServiceAdvertiser extends js.Object {
   /** Gets a value that describes the current status of the advertisement. */
   var advertisementStatus: WiFiDirectServiceAdvertisementStatus = js.native
   /** Gets or sets the Auto Accept property for this service advertisement. */

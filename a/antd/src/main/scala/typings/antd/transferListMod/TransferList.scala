@@ -1,6 +1,6 @@
 package typings.antd.transferListMod
 
-import typings.antd.AnonFilteredItems
+import typings.antd.anon.FilteredItems
 import typings.antd.antdBooleans.`false`
 import typings.antd.antdStrings.all
 import typings.antd.antdStrings.none
@@ -9,7 +9,7 @@ import typings.antd.transferMod.TransferItem
 import typings.react.mod.ChangeEvent
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -38,7 +38,7 @@ trait TransferList
     disabled: Boolean
   ): `false` | Element = js.native
   def getCheckStatus(filteredItems: js.Array[TransferItem]): none | all | part = js.native
-  def getFilteredItems(dataSource: js.Array[TransferItem], filterValue: String): AnonFilteredItems = js.native
+  def getFilteredItems(dataSource: js.Array[TransferItem], filterValue: String): FilteredItems = js.native
   def getListBody(
     prefixCls: String,
     searchPlaceholder: String,

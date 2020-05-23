@@ -18,8 +18,8 @@ object UIkitLightboxOptions {
   @scala.inline
   def apply(
     animation: String = null,
-    autoplay: Int | Double = null,
-    `autoplay-interval`: Int | Double = null,
+    autoplay: js.UndefOr[Double] = js.undefined,
+    `autoplay-interval`: js.UndefOr[Double] = js.undefined,
     index: String = null,
     `pause-on-hover`: js.UndefOr[Boolean] = js.undefined,
     toggle: String = null,
@@ -27,12 +27,12 @@ object UIkitLightboxOptions {
   ): UIkitLightboxOptions = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (autoplay != null) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
-    if (`autoplay-interval` != null) __obj.updateDynamic("autoplay-interval")(`autoplay-interval`.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`autoplay-interval`)) __obj.updateDynamic("autoplay-interval")(`autoplay-interval`.get.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(`pause-on-hover`)) __obj.updateDynamic("pause-on-hover")(`pause-on-hover`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`pause-on-hover`)) __obj.updateDynamic("pause-on-hover")(`pause-on-hover`.get.asInstanceOf[js.Any])
     if (toggle != null) __obj.updateDynamic("toggle")(toggle.asInstanceOf[js.Any])
-    if (!js.isUndefined(`video-autoplay`)) __obj.updateDynamic("video-autoplay")(`video-autoplay`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`video-autoplay`)) __obj.updateDynamic("video-autoplay")(`video-autoplay`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIkitLightboxOptions]
   }
 }

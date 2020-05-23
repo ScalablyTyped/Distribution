@@ -1,7 +1,7 @@
 package typings.jsCookie.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jsCookie.AnonRead
+import typings.jsCookie.anon.Read
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,7 +51,7 @@ trait CookiesStatic[T /* <: js.Object */] extends js.Object {
     */
   def set(name: String, value: String): js.UndefOr[String] = js.native
   def set(name: String, value: String, options: CookieAttributes): js.UndefOr[String] = js.native
-  def withConverter[TConv /* <: js.Object */](converter: AnonRead[TConv]): CookiesStatic[TConv] = js.native
+  def withConverter[TConv /* <: js.Object */](converter: Read[TConv]): CookiesStatic[TConv] = js.native
   /**
     * Create a new instance of the api that overrides the default
     * decoding implementation. All methods that rely in a proper

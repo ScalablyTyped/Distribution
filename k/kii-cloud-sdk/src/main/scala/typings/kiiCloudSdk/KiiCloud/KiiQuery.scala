@@ -7,14 +7,12 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a KiiQuery object
   */
-@JSGlobal("KiiCloud.KiiQuery")
-@js.native
-class KiiQuery () extends js.Object {
+trait KiiQuery extends js.Object {
   /**
     * Get the limit of the current query
     *
     */
-  def getLimit(): Double = js.native
+  def getLimit(): Double
   /**
     * Set the limit of the given query
     *
@@ -22,7 +20,7 @@ class KiiQuery () extends js.Object {
     *
     * @throws InvalidLimitException
     */
-  def setLimit(value: Double): Unit = js.native
+  def setLimit(value: Double): Unit
   /**
     * Set the query to sort by a field in ascending order
     *
@@ -30,7 +28,7 @@ class KiiQuery () extends js.Object {
     *
     * @param field The key that should be used to sort
     */
-  def sortByAsc(field: String): Unit = js.native
+  def sortByAsc(field: String): Unit
   /**
     * Set the query to sort by a field in descending order
     *
@@ -38,20 +36,19 @@ class KiiQuery () extends js.Object {
     *
     * @param field The key that should be used to sort
     */
-  def sortByDesc(field: String): Unit = js.native
+  def sortByDesc(field: String): Unit
 }
 
-/* static members */
-@JSGlobal("KiiCloud.KiiQuery")
-@js.native
-object KiiQuery extends js.Object {
-  /**
-    * Create a KiiQuery object based on a KiiClause
-    * <br><br>
-    * By passing null as the ‘clause’ parameter, all objects can be retrieved.
-    *
-    * @param clause The KiiClause to be executed with the query
-    */
-  def queryWithClause(clause: KiiClause): KiiQuery = js.native
+object KiiQuery {
+  @scala.inline
+  def apply(
+    getLimit: () => Double,
+    setLimit: Double => Unit,
+    sortByAsc: String => Unit,
+    sortByDesc: String => Unit
+  ): KiiQuery = {
+    val __obj = js.Dynamic.literal(getLimit = js.Any.fromFunction0(getLimit), setLimit = js.Any.fromFunction1(setLimit), sortByAsc = js.Any.fromFunction1(sortByAsc), sortByDesc = js.Any.fromFunction1(sortByDesc))
+    __obj.asInstanceOf[KiiQuery]
+  }
 }
 

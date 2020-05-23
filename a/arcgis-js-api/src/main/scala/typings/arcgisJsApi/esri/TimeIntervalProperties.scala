@@ -39,11 +39,11 @@ object TimeIntervalProperties {
   @scala.inline
   def apply(
     unit: milliseconds | seconds | minutes | hours | days | weeks | months | years | decades | centuries = null,
-    value: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined
   ): TimeIntervalProperties = {
     val __obj = js.Dynamic.literal()
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeIntervalProperties]
   }
 }

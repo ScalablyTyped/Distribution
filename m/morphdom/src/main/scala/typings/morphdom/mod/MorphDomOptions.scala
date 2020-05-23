@@ -32,7 +32,7 @@ object MorphDomOptions {
     onNodeDiscarded: /* node */ Node => Unit = null
   ): MorphDomOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(childrenOnly)) __obj.updateDynamic("childrenOnly")(childrenOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(childrenOnly)) __obj.updateDynamic("childrenOnly")(childrenOnly.get.asInstanceOf[js.Any])
     if (getNodeKey != null) __obj.updateDynamic("getNodeKey")(js.Any.fromFunction1(getNodeKey))
     if (onBeforeElChildrenUpdated != null) __obj.updateDynamic("onBeforeElChildrenUpdated")(js.Any.fromFunction2(onBeforeElChildrenUpdated))
     if (onBeforeElUpdated != null) __obj.updateDynamic("onBeforeElUpdated")(js.Any.fromFunction2(onBeforeElUpdated))

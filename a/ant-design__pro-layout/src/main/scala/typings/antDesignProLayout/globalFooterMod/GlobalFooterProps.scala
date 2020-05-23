@@ -1,6 +1,6 @@
 package typings.antDesignProLayout.globalFooterMod
 
-import typings.antDesignProLayout.AnonBlankTarget
+import typings.antDesignProLayout.anon.BlankTarget
 import typings.antDesignProLayout.typingsMod.WithFalse
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait GlobalFooterProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var copyright: js.UndefOr[ReactNode] = js.undefined
-  var links: js.UndefOr[WithFalse[js.Array[AnonBlankTarget]]] = js.undefined
+  var links: js.UndefOr[WithFalse[js.Array[BlankTarget]]] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
 }
 
@@ -20,7 +20,7 @@ object GlobalFooterProps {
   def apply(
     className: String = null,
     copyright: ReactNode = null,
-    links: WithFalse[js.Array[AnonBlankTarget]] = null,
+    links: WithFalse[js.Array[BlankTarget]] = null,
     style: CSSProperties = null
   ): GlobalFooterProps = {
     val __obj = js.Dynamic.literal()

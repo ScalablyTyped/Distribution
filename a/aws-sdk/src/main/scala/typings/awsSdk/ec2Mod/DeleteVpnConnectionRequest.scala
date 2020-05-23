@@ -18,9 +18,9 @@ trait DeleteVpnConnectionRequest extends js.Object {
 
 object DeleteVpnConnectionRequest {
   @scala.inline
-  def apply(VpnConnectionId: VpnConnectionId, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteVpnConnectionRequest = {
+  def apply(VpnConnectionId: VpnConnectionId, DryRun: js.UndefOr[Boolean] = js.undefined): DeleteVpnConnectionRequest = {
     val __obj = js.Dynamic.literal(VpnConnectionId = VpnConnectionId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVpnConnectionRequest]
   }
 }

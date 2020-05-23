@@ -39,8 +39,8 @@ object MicrosoftStoreForBusinessApp {
     productKey: String = null,
     publisher: String = null,
     publishingState: MobileAppPublishingState = null,
-    totalLicenseCount: Int | Double = null,
-    usedLicenseCount: Int | Double = null
+    totalLicenseCount: js.UndefOr[Double] = js.undefined,
+    usedLicenseCount: js.UndefOr[Double] = js.undefined
   ): MicrosoftStoreForBusinessApp = {
     val __obj = js.Dynamic.literal()
     if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
@@ -51,7 +51,7 @@ object MicrosoftStoreForBusinessApp {
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (informationUrl != null) __obj.updateDynamic("informationUrl")(informationUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFeatured)) __obj.updateDynamic("isFeatured")(isFeatured.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFeatured)) __obj.updateDynamic("isFeatured")(isFeatured.get.asInstanceOf[js.Any])
     if (largeIcon != null) __obj.updateDynamic("largeIcon")(largeIcon.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
     if (licenseType != null) __obj.updateDynamic("licenseType")(licenseType.asInstanceOf[js.Any])
@@ -62,8 +62,8 @@ object MicrosoftStoreForBusinessApp {
     if (productKey != null) __obj.updateDynamic("productKey")(productKey.asInstanceOf[js.Any])
     if (publisher != null) __obj.updateDynamic("publisher")(publisher.asInstanceOf[js.Any])
     if (publishingState != null) __obj.updateDynamic("publishingState")(publishingState.asInstanceOf[js.Any])
-    if (totalLicenseCount != null) __obj.updateDynamic("totalLicenseCount")(totalLicenseCount.asInstanceOf[js.Any])
-    if (usedLicenseCount != null) __obj.updateDynamic("usedLicenseCount")(usedLicenseCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalLicenseCount)) __obj.updateDynamic("totalLicenseCount")(totalLicenseCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(usedLicenseCount)) __obj.updateDynamic("usedLicenseCount")(usedLicenseCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MicrosoftStoreForBusinessApp]
   }
 }

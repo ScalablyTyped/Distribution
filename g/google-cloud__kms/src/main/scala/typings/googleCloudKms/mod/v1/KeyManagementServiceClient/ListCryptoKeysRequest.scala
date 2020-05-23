@@ -12,9 +12,9 @@ trait ListCryptoKeysRequest extends js.Object {
 
 object ListCryptoKeysRequest {
   @scala.inline
-  def apply(parent: String, page_size: Int | Double = null, page_token: String = null): ListCryptoKeysRequest = {
+  def apply(parent: String, page_size: js.UndefOr[Double] = js.undefined, page_token: String = null): ListCryptoKeysRequest = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
-    if (page_size != null) __obj.updateDynamic("page_size")(page_size.asInstanceOf[js.Any])
+    if (!js.isUndefined(page_size)) __obj.updateDynamic("page_size")(page_size.get.asInstanceOf[js.Any])
     if (page_token != null) __obj.updateDynamic("page_token")(page_token.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCryptoKeysRequest]
   }

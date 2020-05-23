@@ -31,7 +31,7 @@ object RendererOptions {
     val __obj = js.Dynamic.literal()
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
-    if (!js.isUndefined(inject)) __obj.updateDynamic("inject")(inject.asInstanceOf[js.Any])
+    if (!js.isUndefined(inject)) __obj.updateDynamic("inject")(inject.get.asInstanceOf[js.Any])
     if (shouldPrefetch != null) __obj.updateDynamic("shouldPrefetch")(js.Any.fromFunction2(shouldPrefetch))
     if (shouldPreload != null) __obj.updateDynamic("shouldPreload")(js.Any.fromFunction2(shouldPreload))
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])

@@ -1,9 +1,9 @@
 package typings.aliApp.my
 
-import typings.aliApp.AnonInputValue
 import typings.aliApp.aliAppStrings.center
 import typings.aliApp.aliAppStrings.left
 import typings.aliApp.aliAppStrings.right
+import typings.aliApp.anon.InputValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ trait PromptOptions
   /** prompt框标题 */
   var title: js.UndefOr[String] = js.undefined
   @JSName("success")
-  def success_MPromptOptions(result: AnonInputValue): Unit
+  def success_MPromptOptions(result: InputValue): Unit
 }
 
 object PromptOptions {
@@ -31,7 +31,7 @@ object PromptOptions {
   def apply(
     cancelButtonText: String,
     okButtonText: String,
-    success: AnonInputValue => Unit,
+    success: InputValue => Unit,
     align: left | center | right | String = null,
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,

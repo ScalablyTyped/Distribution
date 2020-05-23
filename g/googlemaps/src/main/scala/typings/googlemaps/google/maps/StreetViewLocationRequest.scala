@@ -16,12 +16,12 @@ object StreetViewLocationRequest {
   def apply(
     location: LatLng | LatLngLiteral,
     preference: StreetViewPreference = null,
-    radius: Int | Double = null,
+    radius: js.UndefOr[Double] = js.undefined,
     source: StreetViewSource = null
   ): StreetViewLocationRequest = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
     if (preference != null) __obj.updateDynamic("preference")(preference.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreetViewLocationRequest]
   }

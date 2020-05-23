@@ -62,6 +62,9 @@ object auth0JsStrings {
   sealed trait signUp extends js.Object
   
   @js.native
+  sealed trait signup_ extends js.Object
+  
+  @js.native
   sealed trait sms extends js.Object
   
   @js.native
@@ -106,6 +109,8 @@ object auth0JsStrings {
   def request_uri_not_supported: request_uri_not_supported = "request_uri_not_supported".asInstanceOf[request_uri_not_supported]
   @scala.inline
   def signUp: signUp = "signUp".asInstanceOf[signUp]
+  @scala.inline
+  def signup_ : signup_ = "signup".asInstanceOf[signup_]
   @scala.inline
   def sms: sms = "sms".asInstanceOf[sms]
   @scala.inline

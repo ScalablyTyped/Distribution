@@ -5,16 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.core.mvc.JSView")
 @js.native
-class JSView protected () extends View {
-  /**
-    * Constructor for a new mvc/JSView.
-    * @param sId id for the new control, generated automatically if no id is given
-    * @param mSettings initial settings for the new control
-    */
-  def this(sId: String) = this()
-  def this(sId: String, mSettings: js.Any) = this()
+trait JSView extends View {
   /**
     * Flag for feature detection of asynchronous loading/rendering
     * @since 1.30

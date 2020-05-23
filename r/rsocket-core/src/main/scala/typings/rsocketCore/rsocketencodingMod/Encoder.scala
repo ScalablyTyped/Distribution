@@ -14,7 +14,7 @@ trait Encoder[T /* <: Encodable */] extends js.Object {
 
 object Encoder {
   @scala.inline
-  def apply[T /* <: Encodable */](
+  def apply[T](
     byteLength: Encodable => Double,
     decode: (Buffer, Double, Double) => T,
     encode: (Encodable, Buffer, Double, Double) => Double

@@ -1,6 +1,5 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonInterpolationAlgorithm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,6 +26,6 @@ class SampledProperty protected () extends PositionProperty {
   def addSamplesPackedArray(packedSamples: js.Array[Double]): Unit = js.native
   def addSamplesPackedArray(packedSamples: js.Array[Double], epoch: JulianDate): Unit = js.native
   def setInterpolationOptions(): Unit = js.native
-  def setInterpolationOptions(options: AnonInterpolationAlgorithm): Unit = js.native
+  def setInterpolationOptions(options: typings.cesium.anon.InterpolationAlgorithm): Unit = js.native
 }
 

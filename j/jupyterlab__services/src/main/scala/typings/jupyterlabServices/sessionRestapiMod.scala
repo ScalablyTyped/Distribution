@@ -1,7 +1,7 @@
 package typings.jupyterlabServices
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jupyterlabServices.jupyterlabServicesStrings.apiSlashsessions
+import typings.jupyterlabServices.anon.PickIModelidDeepPartialOm
 import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
 import typings.jupyterlabServices.sessionSessionMod.IModel
 import typings.jupyterlabServices.sessionSessionMod.ISessionOptions
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/services/lib/session/restapi", JSImport.Namespace)
 @js.native
 object sessionRestapiMod extends js.Object {
-  val SESSION_SERVICE_URL: apiSlashsessions = js.native
+  val SESSION_SERVICE_URL: /* "api/sessions" */ String = js.native
   def getSessionModel(id: String): js.Promise[IModel] = js.native
   def getSessionModel(id: String, settings: ISettings): js.Promise[IModel] = js.native
   def getSessionUrl(baseUrl: String, id: String): String = js.native

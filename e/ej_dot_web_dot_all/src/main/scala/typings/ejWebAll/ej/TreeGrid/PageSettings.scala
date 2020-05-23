@@ -38,22 +38,22 @@ trait PageSettings extends js.Object {
 object PageSettings {
   @scala.inline
   def apply(
-    currentPage: Int | Double = null,
-    pageCount: Int | Double = null,
-    pageSize: Int | Double = null,
+    currentPage: js.UndefOr[Double] = js.undefined,
+    pageCount: js.UndefOr[Double] = js.undefined,
+    pageSize: js.UndefOr[Double] = js.undefined,
     pageSizeMode: PageSizeMode | String = null,
     printMode: PrintMode | String = null,
     template: String = null,
-    totalRecordsCount: Int | Double = null
+    totalRecordsCount: js.UndefOr[Double] = js.undefined
   ): PageSettings = {
     val __obj = js.Dynamic.literal()
-    if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
-    if (pageCount != null) __obj.updateDynamic("pageCount")(pageCount.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentPage)) __obj.updateDynamic("currentPage")(currentPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageCount)) __obj.updateDynamic("pageCount")(pageCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (pageSizeMode != null) __obj.updateDynamic("pageSizeMode")(pageSizeMode.asInstanceOf[js.Any])
     if (printMode != null) __obj.updateDynamic("printMode")(printMode.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (totalRecordsCount != null) __obj.updateDynamic("totalRecordsCount")(totalRecordsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalRecordsCount)) __obj.updateDynamic("totalRecordsCount")(totalRecordsCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageSettings]
   }
 }

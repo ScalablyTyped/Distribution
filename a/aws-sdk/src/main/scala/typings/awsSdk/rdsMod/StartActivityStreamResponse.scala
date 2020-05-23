@@ -31,14 +31,14 @@ trait StartActivityStreamResponse extends js.Object {
 object StartActivityStreamResponse {
   @scala.inline
   def apply(
-    ApplyImmediately: js.UndefOr[scala.Boolean] = js.undefined,
+    ApplyImmediately: js.UndefOr[Boolean] = js.undefined,
     KinesisStreamName: String = null,
     KmsKeyId: String = null,
     Mode: ActivityStreamMode = null,
     Status: ActivityStreamStatus = null
   ): StartActivityStreamResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ApplyImmediately)) __obj.updateDynamic("ApplyImmediately")(ApplyImmediately.asInstanceOf[js.Any])
+    if (!js.isUndefined(ApplyImmediately)) __obj.updateDynamic("ApplyImmediately")(ApplyImmediately.get.asInstanceOf[js.Any])
     if (KinesisStreamName != null) __obj.updateDynamic("KinesisStreamName")(KinesisStreamName.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
     if (Mode != null) __obj.updateDynamic("Mode")(Mode.asInstanceOf[js.Any])

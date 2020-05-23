@@ -24,7 +24,7 @@ object AnchorOptions {
     icon: String = null,
     placement: AnchorPlacement = null,
     titleText: String = null,
-    truncate: Int | Double = null,
+    truncate: js.UndefOr[Double] = js.undefined,
     visible: AnchorVisibility = null
   ): AnchorOptions = {
     val __obj = js.Dynamic.literal()
@@ -34,7 +34,7 @@ object AnchorOptions {
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (titleText != null) __obj.updateDynamic("titleText")(titleText.asInstanceOf[js.Any])
-    if (truncate != null) __obj.updateDynamic("truncate")(truncate.asInstanceOf[js.Any])
+    if (!js.isUndefined(truncate)) __obj.updateDynamic("truncate")(truncate.get.asInstanceOf[js.Any])
     if (visible != null) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnchorOptions]
   }

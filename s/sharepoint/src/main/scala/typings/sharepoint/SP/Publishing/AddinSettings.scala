@@ -1,17 +1,14 @@
 package typings.sharepoint.SP.Publishing
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sharepoint.SP.ClientContext
 import typings.sharepoint.SP.ClientObject
 import typings.sharepoint.SP.Guid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Publishing.AddinSettings")
 @js.native
-class AddinSettings protected () extends ClientObject {
-  def this(ctx: ClientContext, id: Guid) = this()
+trait AddinSettings extends ClientObject {
   def get_description(): String = js.native
   def get_enabled(): Boolean = js.native
   def get_headScript(): String = js.native

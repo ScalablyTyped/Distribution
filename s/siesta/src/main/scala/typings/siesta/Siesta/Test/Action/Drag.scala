@@ -29,7 +29,7 @@ object Drag {
     val __obj = js.Dynamic.literal()
     if (by != null) __obj.updateDynamic("by")(by.asInstanceOf[js.Any])
     if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragOnly)) __obj.updateDynamic("dragOnly")(dragOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragOnly)) __obj.updateDynamic("dragOnly")(dragOnly.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])

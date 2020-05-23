@@ -16,7 +16,7 @@ object PanoProviderOptions {
   @scala.inline
   def apply(cors: js.UndefOr[Boolean] = js.undefined): PanoProviderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cors)) __obj.updateDynamic("cors")(cors.asInstanceOf[js.Any])
+    if (!js.isUndefined(cors)) __obj.updateDynamic("cors")(cors.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanoProviderOptions]
   }
 }

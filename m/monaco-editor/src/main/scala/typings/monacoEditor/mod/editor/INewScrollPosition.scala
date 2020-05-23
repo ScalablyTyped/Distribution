@@ -11,10 +11,10 @@ trait INewScrollPosition extends js.Object {
 
 object INewScrollPosition {
   @scala.inline
-  def apply(scrollLeft: Int | Double = null, scrollTop: Int | Double = null): INewScrollPosition = {
+  def apply(scrollLeft: js.UndefOr[Double] = js.undefined, scrollTop: js.UndefOr[Double] = js.undefined): INewScrollPosition = {
     val __obj = js.Dynamic.literal()
-    if (scrollLeft != null) __obj.updateDynamic("scrollLeft")(scrollLeft.asInstanceOf[js.Any])
-    if (scrollTop != null) __obj.updateDynamic("scrollTop")(scrollTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollLeft)) __obj.updateDynamic("scrollLeft")(scrollLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollTop)) __obj.updateDynamic("scrollTop")(scrollTop.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[INewScrollPosition]
   }
 }

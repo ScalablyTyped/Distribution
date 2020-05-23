@@ -1,6 +1,6 @@
 package typings.evernote.mod.NoteStore
 
-import typings.evernote.AnonIncludeAttributes
+import typings.evernote.anon.IncludeAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("evernote", "NoteStore.NotesMetadataResultSpec")
 @js.native
 class NotesMetadataResultSpec () extends js.Object {
-  def this(args: AnonIncludeAttributes) = this()
+  def this(args: IncludeAttributes) = this()
   var includeAttributes: js.UndefOr[Boolean] = js.native
   var includeContentLength: js.UndefOr[Boolean] = js.native
   var includeCreated: js.UndefOr[Boolean] = js.native

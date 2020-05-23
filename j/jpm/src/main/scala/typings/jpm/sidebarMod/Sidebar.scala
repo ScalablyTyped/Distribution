@@ -1,7 +1,7 @@
 package typings.jpm.sidebarMod
 
-import typings.jpm.AnonId
 import typings.jpm.FFAddonSDK.BrowserWindow
+import typings.jpm.anon.Id
 import typings.jpm.jpmStrings.attach
 import typings.jpm.jpmStrings.detach
 import typings.jpm.jpmStrings.hide
@@ -56,6 +56,6 @@ trait Sidebar extends js.Object {
 @JSImport("sdk/ui/sidebar", "Sidebar")
 @js.native
 object Sidebar extends js.Object {
-  def apply(options: AnonId): Sidebar = js.native
+  def apply(options: Id): Sidebar = js.native
 }
 

@@ -18,9 +18,9 @@ object IEqualizerOptions {
     equalizeOnStack: js.UndefOr[Boolean] = js.undefined
   ): IEqualizerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(equalizeByRow)) __obj.updateDynamic("equalizeByRow")(equalizeByRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(equalizeByRow)) __obj.updateDynamic("equalizeByRow")(equalizeByRow.get.asInstanceOf[js.Any])
     if (equalizeOn != null) __obj.updateDynamic("equalizeOn")(equalizeOn.asInstanceOf[js.Any])
-    if (!js.isUndefined(equalizeOnStack)) __obj.updateDynamic("equalizeOnStack")(equalizeOnStack.asInstanceOf[js.Any])
+    if (!js.isUndefined(equalizeOnStack)) __obj.updateDynamic("equalizeOnStack")(equalizeOnStack.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEqualizerOptions]
   }
 }

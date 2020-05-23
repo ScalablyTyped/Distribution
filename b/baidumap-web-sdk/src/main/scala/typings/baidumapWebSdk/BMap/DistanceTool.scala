@@ -1,16 +1,21 @@
 package typings.baidumapWebSdk.BMap
 
-import typings.baidumapWebSdk.AnonDistance
+import typings.baidumapWebSdk.anon.Distance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BMap.DistanceTool")
-@js.native
-class DistanceTool protected () extends js.Object {
-  def this(map: Map) = this()
-  def close(): Unit = js.native
-  def ondrawend(event: AnonDistance): Unit = js.native
-  def open(): Boolean = js.native
+trait DistanceTool extends js.Object {
+  def close(): Unit
+  def ondrawend(event: Distance): Unit
+  def open(): Boolean
+}
+
+object DistanceTool {
+  @scala.inline
+  def apply(close: () => Unit, ondrawend: Distance => Unit, open: () => Boolean): DistanceTool = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), ondrawend = js.Any.fromFunction1(ondrawend), open = js.Any.fromFunction0(open))
+    __obj.asInstanceOf[DistanceTool]
+  }
 }
 

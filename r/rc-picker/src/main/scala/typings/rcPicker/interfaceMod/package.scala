@@ -14,7 +14,7 @@ package object interfaceMod {
     /* type */ typings.rcPicker.rcPickerStrings.key | typings.rcPicker.rcPickerStrings.mouse | typings.rcPicker.rcPickerStrings.submit, 
     scala.Unit
   ]
-  type RangeList = js.Array[typings.rcPicker.AnonLabel]
+  type RangeList = js.Array[typings.rcPicker.anon.Label]
   type RangeValue[DateType] = (js.Tuple2[
     typings.rcPicker.interfaceMod.EventValue[DateType], 
     typings.rcPicker.interfaceMod.EventValue[DateType]

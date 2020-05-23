@@ -12,9 +12,9 @@ trait IText extends js.Object {
 
 object IText {
   @scala.inline
-  def apply(text: js.Array[String] = null): IText = {
+  def apply(text: js.UndefOr[Null | js.Array[String]] = js.undefined): IText = {
     val __obj = js.Dynamic.literal()
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IText]
   }
 }

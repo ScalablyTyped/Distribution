@@ -1,5 +1,8 @@
 package typings.storybookTheming
 
+import typings.storybookTheming.anon.Base
+import typings.storybookTheming.anon.Black
+import typings.storybookTheming.anon.Code
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,9 +55,9 @@ object baseMod extends js.Object {
   
   @js.native
   object typography extends js.Object {
-    var fonts: AnonBase = js.native
-    var size: AnonCode = js.native
-    var weight: AnonBlack = js.native
+    var fonts: Base = js.native
+    var size: Code = js.native
+    var weight: Black = js.native
   }
   
 }

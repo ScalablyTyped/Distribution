@@ -46,8 +46,8 @@ object UpdateLicenseConfigurationRequest {
     LicenseConfigurationArn: String,
     Description: String = null,
     LicenseConfigurationStatus: LicenseConfigurationStatus = null,
-    LicenseCount: Int | Double = null,
-    LicenseCountHardLimit: js.UndefOr[scala.Boolean] = js.undefined,
+    LicenseCount: js.UndefOr[BoxLong] = js.undefined,
+    LicenseCountHardLimit: js.UndefOr[BoxBoolean] = js.undefined,
     LicenseRules: StringList = null,
     Name: String = null,
     ProductInformationList: ProductInformationList = null
@@ -55,8 +55,8 @@ object UpdateLicenseConfigurationRequest {
     val __obj = js.Dynamic.literal(LicenseConfigurationArn = LicenseConfigurationArn.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (LicenseConfigurationStatus != null) __obj.updateDynamic("LicenseConfigurationStatus")(LicenseConfigurationStatus.asInstanceOf[js.Any])
-    if (LicenseCount != null) __obj.updateDynamic("LicenseCount")(LicenseCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(LicenseCountHardLimit)) __obj.updateDynamic("LicenseCountHardLimit")(LicenseCountHardLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(LicenseCount)) __obj.updateDynamic("LicenseCount")(LicenseCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(LicenseCountHardLimit)) __obj.updateDynamic("LicenseCountHardLimit")(LicenseCountHardLimit.get.asInstanceOf[js.Any])
     if (LicenseRules != null) __obj.updateDynamic("LicenseRules")(LicenseRules.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (ProductInformationList != null) __obj.updateDynamic("ProductInformationList")(ProductInformationList.asInstanceOf[js.Any])

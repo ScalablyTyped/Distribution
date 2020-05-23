@@ -1,6 +1,7 @@
 package typings.phaser.phaserMod
 
 import typings.phaser.Phaser.Textures.Frame
+import typings.phaser.Phaser.Types.Animations.JSONAnimationFrame
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -54,6 +55,68 @@ object Animations extends js.Object {
       */
     def this(textureKey: String, textureFrame: String, index: integer, frame: Frame) = this()
     def this(textureKey: String, textureFrame: integer, index: integer, frame: Frame) = this()
+    /**
+      * Additional time (in ms) that this frame should appear for during playback.
+      * The value is added onto the msPerFrame set by the animation.
+      */
+    /* CompleteClass */
+    override var duration: Double = js.native
+    /**
+      * A reference to the Texture Frame this AnimationFrame uses for rendering.
+      */
+    /* CompleteClass */
+    override var frame: Frame = js.native
+    /**
+      * The index of this AnimationFrame within the Animation sequence.
+      */
+    /* CompleteClass */
+    override var index: integer = js.native
+    /**
+      * Is this the first frame in an animation sequence?
+      */
+    /* CompleteClass */
+    override val isFirst: Boolean = js.native
+    /**
+      * Is this the last frame in an animation sequence?
+      */
+    /* CompleteClass */
+    override val isLast: Boolean = js.native
+    /**
+      * A reference to the AnimationFrame that comes after this one in the animation, if any.
+      */
+    /* CompleteClass */
+    override val nextFrame: typings.phaser.Phaser.Animations.AnimationFrame = js.native
+    /**
+      * A reference to the AnimationFrame that comes before this one in the animation, if any.
+      */
+    /* CompleteClass */
+    override val prevFrame: typings.phaser.Phaser.Animations.AnimationFrame = js.native
+    /**
+      * What % through the animation does this frame come?
+      * This value is generated when the animation is created and cached here.
+      */
+    /* CompleteClass */
+    override val progress: Double = js.native
+    /**
+      * The key of the Frame within the Texture that this AnimationFrame uses.
+      */
+    /* CompleteClass */
+    override var textureFrame: String | integer = js.native
+    /**
+      * The key of the Texture this AnimationFrame uses.
+      */
+    /* CompleteClass */
+    override var textureKey: String = js.native
+    /**
+      * Destroys this object by removing references to external resources and callbacks.
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    /**
+      * Generates a JavaScript object suitable for converting to JSON.
+      */
+    /* CompleteClass */
+    override def toJSON(): JSONAnimationFrame = js.native
   }
   
   /**

@@ -2,20 +2,20 @@ package typings.rmcNukaCarousel.carouselMod
 
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
-import typings.react.mod._Global_.JSX.Element
-import typings.rmcNukaCarousel.AnonBeginValue
-import typings.rmcNukaCarousel.AnonBottom
-import typings.rmcNukaCarousel.AnonBottomPosition
-import typings.rmcNukaCarousel.AnonBoxSizing
-import typings.rmcNukaCarousel.AnonLeft
-import typings.rmcNukaCarousel.AnonMsTransform
-import typings.rmcNukaCarousel.AnonOnMouseDown
-import typings.rmcNukaCarousel.AnonOnTouchCancel
-import typings.rmcNukaCarousel.AnonPosition
-import typings.rmcNukaCarousel.AnonRight
-import typings.rmcNukaCarousel.AnonTextAlign
-import typings.rmcNukaCarousel.AnonTop
-import typings.rmcNukaCarousel.AnonTransform
+import typings.react.mod.global.JSX.Element
+import typings.rmcNukaCarousel.anon.BeginValue
+import typings.rmcNukaCarousel.anon.Bottom
+import typings.rmcNukaCarousel.anon.BottomPosition
+import typings.rmcNukaCarousel.anon.BoxSizing
+import typings.rmcNukaCarousel.anon.Left
+import typings.rmcNukaCarousel.anon.MsTransform
+import typings.rmcNukaCarousel.anon.OnMouseDown
+import typings.rmcNukaCarousel.anon.OnTouchCancel
+import typings.rmcNukaCarousel.anon.Position
+import typings.rmcNukaCarousel.anon.Right
+import typings.rmcNukaCarousel.anon.TextAlign
+import typings.rmcNukaCarousel.anon.Top
+import typings.rmcNukaCarousel.anon.Transform
 import typings.rmcNukaCarousel.rmcNukaCarouselNumbers.`-1`
 import typings.rmcNukaCarousel.rmcNukaCarouselNumbers.`0`
 import typings.rmcNukaCarousel.rmcNukaCarouselNumbers.`1`
@@ -48,18 +48,18 @@ trait Carousel
   @JSName("componentWillUnmount")
   def componentWillUnmount_MCarousel(): Unit = js.native
   def formatChildren(children: js.Any): js.Array[Element] = js.native
-  def getDecoratorStyles(position: js.Any): AnonLeft | AnonMsTransform | AnonPosition | AnonTop | AnonTransform | AnonRight | AnonBottom | AnonTextAlign | AnonBottomPosition = js.native
+  def getDecoratorStyles(position: js.Any): Left | MsTransform | Position | Top | Transform | Right | Bottom | TextAlign | BottomPosition = js.native
   def getFrameStyles(): CSSProperties = js.native
   def getListStyles(): CSSProperties = js.native
-  def getMouseEvents(): AnonOnMouseDown | Null = js.native
+  def getMouseEvents(): OnMouseDown | Null = js.native
   def getSlideStyles(index: js.Any, positionValue: js.Any): CSSProperties = js.native
   def getSlideTargetPosition(index: js.Any, positionValue: js.Any): Double = js.native
-  def getSliderStyles(): AnonBoxSizing = js.native
+  def getSliderStyles(): BoxSizing = js.native
   def getStyleTagStyles(): String = js.native
   def getTargetLeft(): Double = js.native
   def getTargetLeft(touchOffset: js.Any): Double = js.native
   def getTargetLeft(touchOffset: js.Any, slide: js.Any): Double = js.native
-  def getTouchEvents(): AnonOnTouchCancel | Null = js.native
+  def getTouchEvents(): OnTouchCancel | Null = js.native
   def getTweeningValue(path: js.Any): js.Any = js.native
   def goToSlide(index: js.Any): Unit = js.native
   def handleClick(e: js.Any): Unit = js.native
@@ -79,7 +79,7 @@ trait Carousel
   def startAutoplay(): Unit = js.native
   def stopAutoplay(): Unit = js.native
   def swipeDirection(x1: js.Any, x2: js.Any, y1: js.Any, y2: js.Any): `0` | `1` | `-1` = js.native
-  def tweenState(path: js.Any, hasEasingDurationDelayBeginValueEndValueOnEndStackBehavior: AnonBeginValue): Unit = js.native
+  def tweenState(path: js.Any, hasEasingDurationDelayBeginValueEndValueOnEndStackBehavior: BeginValue): Unit = js.native
   def unbindEvents(): Unit = js.native
 }
 

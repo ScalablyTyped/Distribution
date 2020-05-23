@@ -4,15 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.MethodSignatureSyntax")
 @js.native
-class MethodSignatureSyntax protected () extends SyntaxNode {
-  def this(
-    propertyName: ISyntaxToken,
-    questionToken: ISyntaxToken,
-    callSignature: CallSignatureSyntax,
-    parsedInStrictMode: Boolean
-  ) = this()
+trait MethodSignatureSyntax extends SyntaxNode {
   var callSignature: CallSignatureSyntax = js.native
   var propertyName: ISyntaxToken = js.native
   var questionToken: ISyntaxToken = js.native
@@ -20,13 +13,5 @@ class MethodSignatureSyntax protected () extends SyntaxNode {
   def withCallSignature(callSignature: CallSignatureSyntax): MethodSignatureSyntax = js.native
   def withPropertyName(propertyName: ISyntaxToken): MethodSignatureSyntax = js.native
   def withQuestionToken(questionToken: ISyntaxToken): MethodSignatureSyntax = js.native
-}
-
-/* static members */
-@JSGlobal("TypeScript.MethodSignatureSyntax")
-@js.native
-object MethodSignatureSyntax extends js.Object {
-  def create(propertyName: ISyntaxToken, callSignature: CallSignatureSyntax): MethodSignatureSyntax = js.native
-  def create1(propertyName: ISyntaxToken): MethodSignatureSyntax = js.native
 }
 

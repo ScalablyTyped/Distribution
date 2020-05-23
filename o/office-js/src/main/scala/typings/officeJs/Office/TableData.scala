@@ -7,10 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the data in a table or an {@link Office.TableBinding}.
   */
-@JSGlobal("Office.TableData")
-@js.native
-class TableData () extends js.Object {
-  def this(rows: js.Array[js.Array[_]], headers: js.Array[_]) = this()
+trait TableData extends js.Object {
   /**
     * Gets or sets the headers of the table.
     * 
@@ -26,7 +23,7 @@ class TableData () extends js.Object {
     *
     * - If you overwrite or update an existing table, the existing headers are not altered.
     */
-  var headers: js.Array[_] = js.native
+  var headers: js.Array[_]
   /**
     * Gets or sets the rows in the table. Returns an array of arrays that contains the data in the table. 
     * Returns an empty array if there are no rows.
@@ -43,6 +40,14 @@ class TableData () extends js.Object {
     *
     * - If you overwrite or update an existing table, the existing rows are not altered.
     */
-  var rows: js.Array[js.Array[_]] = js.native
+  var rows: js.Array[js.Array[_]]
+}
+
+object TableData {
+  @scala.inline
+  def apply(headers: js.Array[_], rows: js.Array[js.Array[_]]): TableData = {
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TableData]
+  }
 }
 

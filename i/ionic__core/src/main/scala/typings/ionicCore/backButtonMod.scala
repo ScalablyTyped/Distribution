@@ -46,6 +46,8 @@ object backButtonMod extends js.Object {
     override var `type`: submit | reset | button = js.native
     def backButtonIcon: js.Any = js.native
     def backButtonText: js.Any = js.native
+    @JSName("componentWillLoad")
+    def componentWillLoad_MBackButton(): Unit = js.native
     def hasIconOnly: Boolean = js.native
     @JSName("render")
     def render_MBackButton(): js.Any = js.native

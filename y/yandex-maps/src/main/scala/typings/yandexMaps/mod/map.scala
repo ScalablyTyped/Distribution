@@ -1,7 +1,7 @@
 package typings.yandexMaps.mod
 
 import typings.std.HTMLElement
-import typings.yandexMaps.AnonTrafficImageZIndex
+import typings.yandexMaps.anon.TrafficImageZIndex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -130,14 +130,14 @@ object map extends js.Object {
   
   @js.native
   object layer extends js.Object {
-    /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+    /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
     - typings.yandexMaps.mod.IEventEmitter because Already inherited
     - typings.yandexMaps.mod.ICollection because var conflicts: events. Inlined add, getIterator, remove */ @js.native
     class Manager protected ()
       extends ILayer
          with IParentOnMap {
       def this(map: Map_) = this()
-      def this(map: Map_, options: AnonTrafficImageZIndex) = this()
+      def this(map: Map_, options: TrafficImageZIndex) = this()
       /* CompleteClass */
       override var events: IEventManager = js.native
       def add(`object`: js.Object): this.type = js.native

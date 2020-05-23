@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait ModalDialogContentsRenderedEventUIParam extends js.Object {
   /**
-  	 * Gets a reference to the modal dialog element. This is a jQuery object.
-  	 */
+    * Gets a reference to the modal dialog element. This is a jQuery object.
+    */
   var modalDialogElement: js.UndefOr[String] = js.undefined
   /**
-  	 * Gets access the GroupBy widget object.
-  	 */
+    * Gets access the GroupBy widget object.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 

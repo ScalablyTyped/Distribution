@@ -21,9 +21,9 @@ trait PlotVwapParamsOptions extends js.Object {
 
 object PlotVwapParamsOptions {
   @scala.inline
-  def apply(period: Int | Double = null, volumeSeriesID: String = null): PlotVwapParamsOptions = {
+  def apply(period: js.UndefOr[Double] = js.undefined, volumeSeriesID: String = null): PlotVwapParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
+    if (!js.isUndefined(period)) __obj.updateDynamic("period")(period.get.asInstanceOf[js.Any])
     if (volumeSeriesID != null) __obj.updateDynamic("volumeSeriesID")(volumeSeriesID.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotVwapParamsOptions]
   }

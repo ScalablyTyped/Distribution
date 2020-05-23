@@ -4,15 +4,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.m.semantic.SendEmailAction")
 @js.native
-class SendEmailAction protected () extends SemanticButton {
-  /**
-    * Constructor for a new SendEmailAction.
-    * @param sId ID for the new control, generated automatically if no ID is given
-    * @param mSettings Custom initial settings for the new control
-    */
-  def this(sId: String) = this()
-  def this(sId: String, mSettings: js.Any) = this()
-}
+trait SendEmailAction extends SemanticButton
 

@@ -1,7 +1,6 @@
 package typings.typedoc
 
 import typings.typedoc.modelsTypesMod.Type
-import typings.typedoc.typedocStrings.indexedAccess
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +13,6 @@ object typesIndexedAccessMod extends js.Object {
     def this(objectType: Type, indexType: Type) = this()
     var indexType: Type = js.native
     var objectType: Type = js.native
-    @JSName("type")
-    val type_IndexedAccessType: indexedAccess = js.native
     def equals(`type`: Type): Boolean = js.native
   }
   

@@ -33,10 +33,9 @@ object IExecuteResult {
     data: IMimeBundle,
     metadata: OutputMetadata,
     output_type: execute_result,
-    execution_count: Int | Double = null
+    execution_count: ExecutionCount = null.asInstanceOf[ExecutionCount]
   ): IExecuteResult = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], output_type = output_type.asInstanceOf[js.Any])
-    if (execution_count != null) __obj.updateDynamic("execution_count")(execution_count.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], output_type = output_type.asInstanceOf[js.Any], execution_count = execution_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExecuteResult]
   }
 }

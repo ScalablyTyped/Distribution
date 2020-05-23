@@ -25,10 +25,10 @@ trait IAddOptions extends js.Object {
 
 object IAddOptions {
   @scala.inline
-  def apply(mode: InsertMode = null, ref: Widget = null): IAddOptions = {
+  def apply(mode: InsertMode = null, ref: js.UndefOr[Null | Widget] = js.undefined): IAddOptions = {
     val __obj = js.Dynamic.literal()
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAddOptions]
   }
 }

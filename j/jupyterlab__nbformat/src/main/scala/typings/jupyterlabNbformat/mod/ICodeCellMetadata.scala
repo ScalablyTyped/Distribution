@@ -1,12 +1,12 @@
 package typings.jupyterlabNbformat.mod
 
-import typings.jupyterlabNbformat.PartialICodeCellJupyterMe
+import typings.jupyterlabNbformat.anon.PartialICodeCellJupyterMe
 import typings.jupyterlabNbformat.jupyterlabNbformatStrings.auto
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.jupyterlabNbformat.mod.ICellMetadata because Already inherited */ trait ICodeCellMetadata extends IBaseCellMetadata {
   /**
     * Whether the cell is collapsed/expanded.

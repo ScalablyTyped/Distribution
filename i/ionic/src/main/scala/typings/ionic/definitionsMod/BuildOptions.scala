@@ -10,7 +10,7 @@ trait BuildOptions[T /* <: ProjectType */] extends BaseBuildOptions {
 
 object BuildOptions {
   @scala.inline
-  def apply[T /* <: ProjectType */](
+  def apply[T](
     `--`: js.Array[String],
     engine: String,
     `type`: T,
@@ -23,7 +23,7 @@ object BuildOptions {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
     if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildOptions[T]]
   }
 }

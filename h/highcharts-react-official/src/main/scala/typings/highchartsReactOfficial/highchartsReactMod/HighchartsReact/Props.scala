@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.highcharts.mod.ChartCallbackFunction
 import typings.highcharts.mod.Chart_
 import typings.highcharts.mod.Options
-import typings.highchartsReactOfficial.TypeofHighcharts
+import typings.highchartsReactOfficial.anon.TypeofHighcharts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -69,15 +69,7 @@ trait Props
 object Props {
   @scala.inline
   def apply(
-    StringDictionary: /* *
-    *
-    *  Properties
-    *
-    * */
-  /**
-    * Indexer for custom properties
-    */
-  /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     allowChartUpdate: js.UndefOr[Boolean] = js.undefined,
     callback: /* chart */ Chart_ => Unit = null,
     constructorType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 78 */ js.Any = null,
@@ -89,12 +81,12 @@ object Props {
   ): Props = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(allowChartUpdate)) __obj.updateDynamic("allowChartUpdate")(allowChartUpdate.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowChartUpdate)) __obj.updateDynamic("allowChartUpdate")(allowChartUpdate.get.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
     if (constructorType != null) __obj.updateDynamic("constructorType")(constructorType.asInstanceOf[js.Any])
     if (containerProps != null) __obj.updateDynamic("containerProps")(containerProps.asInstanceOf[js.Any])
     if (highcharts != null) __obj.updateDynamic("highcharts")(highcharts.asInstanceOf[js.Any])
-    if (!js.isUndefined(immutable)) __obj.updateDynamic("immutable")(immutable.asInstanceOf[js.Any])
+    if (!js.isUndefined(immutable)) __obj.updateDynamic("immutable")(immutable.get.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (updateArgs != null) __obj.updateDynamic("updateArgs")(updateArgs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]

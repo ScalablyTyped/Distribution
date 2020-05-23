@@ -33,11 +33,11 @@ object FilterOptions {
     operators: FilterOperators = null
   ): FilterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(applyButton)) __obj.updateDynamic("applyButton")(applyButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(applyButton)) __obj.updateDynamic("applyButton")(applyButton.get.asInstanceOf[js.Any])
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
-    if (!js.isUndefined(expressionPreview)) __obj.updateDynamic("expressionPreview")(expressionPreview.asInstanceOf[js.Any])
+    if (!js.isUndefined(expressionPreview)) __obj.updateDynamic("expressionPreview")(expressionPreview.get.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (mainLogic != null) __obj.updateDynamic("mainLogic")(mainLogic.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])

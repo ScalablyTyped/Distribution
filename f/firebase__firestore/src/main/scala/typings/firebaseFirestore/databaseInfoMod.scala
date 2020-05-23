@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/core/database_info", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/core/database_info", JSImport.Namespace)
 @js.native
 object databaseInfoMod extends js.Object {
   @js.native
@@ -14,7 +14,7 @@ object databaseInfoMod extends js.Object {
     val database: String = js.native
     val projectId: String = js.native
     def compareTo(other: DatabaseId): Double = js.native
-    def isDefaultDatabase(): Boolean = js.native
+    def isDefaultDatabase: Boolean = js.native
     def isEqual(other: js.Object): Boolean = js.native
   }
   

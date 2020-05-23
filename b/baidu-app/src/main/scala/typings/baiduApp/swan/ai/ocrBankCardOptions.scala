@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * 识别银行卡并返回卡号、发卡行和卡片类型。
-		 */
+  * 识别银行卡并返回卡号、发卡行和卡片类型。
+  */
 trait ocrBankCardOptions
   extends BaseOptions[js.Any, js.Any] {
   var image: String

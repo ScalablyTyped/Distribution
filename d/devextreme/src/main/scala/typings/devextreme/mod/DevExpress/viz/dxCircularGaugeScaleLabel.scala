@@ -1,6 +1,6 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.AnonValueText
+import typings.devextreme.anon.ValueText
 import typings.devextreme.devextremeStrings.first
 import typings.devextreme.devextremeStrings.hide
 import typings.devextreme.devextremeStrings.last
@@ -20,11 +20,11 @@ trait dxCircularGaugeScaleLabel extends BaseGaugeScaleLabel {
 object dxCircularGaugeScaleLabel {
   @scala.inline
   def apply(
-    customizeText: /* scaleValue */ AnonValueText => String = null,
+    customizeText: /* scaleValue */ ValueText => String = null,
     font: Font = null,
     format: format = null,
     hideFirstOrLast: first | last = null,
-    indentFromTick: Int | Double = null,
+    indentFromTick: js.UndefOr[Double] = js.undefined,
     overlappingBehavior: hide | none = null,
     useRangeColors: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined
@@ -34,10 +34,10 @@ object dxCircularGaugeScaleLabel {
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (hideFirstOrLast != null) __obj.updateDynamic("hideFirstOrLast")(hideFirstOrLast.asInstanceOf[js.Any])
-    if (indentFromTick != null) __obj.updateDynamic("indentFromTick")(indentFromTick.asInstanceOf[js.Any])
+    if (!js.isUndefined(indentFromTick)) __obj.updateDynamic("indentFromTick")(indentFromTick.get.asInstanceOf[js.Any])
     if (overlappingBehavior != null) __obj.updateDynamic("overlappingBehavior")(overlappingBehavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(useRangeColors)) __obj.updateDynamic("useRangeColors")(useRangeColors.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(useRangeColors)) __obj.updateDynamic("useRangeColors")(useRangeColors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxCircularGaugeScaleLabel]
   }
 }

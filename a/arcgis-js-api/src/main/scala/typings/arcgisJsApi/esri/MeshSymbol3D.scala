@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`mesh-3d`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,8 +20,4 @@ trait MeshSymbol3D
   @JSName("type")
   val type_MeshSymbol3D: `mesh-3d` = js.native
 }
-
-@JSGlobal("__esri.MeshSymbol3D")
-@js.native
-object MeshSymbol3D extends TopLevel[MeshSymbol3DConstructor]
 

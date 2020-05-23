@@ -4,24 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BMap.Bounds")
-@js.native
-class Bounds protected () extends js.Object {
-  def this(sw: Point, ne: Point) = this()
-  def this(minX: Double, minY: Double, maxX: Double, maxY: Double) = this()
-  var maxX: Double = js.native
-  var maxY: Double = js.native
-  var minX: Double = js.native
-  var minY: Double = js.native
-  def containsBounds(bounds: Bounds): Boolean = js.native
-  def containsPoint(point: Point): Boolean = js.native
-  def equals(other: Bounds): Boolean = js.native
-  def extend(point: Point): Unit = js.native
-  def getCenter(): Point = js.native
-  def getNorthEast(): Point = js.native
-  def getSouthWest(): Point = js.native
-  def intersects(other: Bounds): Boolean = js.native
-  def isEmpty(): Boolean = js.native
-  def toSpan(): Point = js.native
+trait Bounds extends js.Object {
+  var maxX: Double
+  var maxY: Double
+  var minX: Double
+  var minY: Double
+  def containsBounds(bounds: Bounds): Boolean
+  def containsPoint(point: Point): Boolean
+  def equals(other: Bounds): Boolean
+  def extend(point: Point): Unit
+  def getCenter(): Point
+  def getNorthEast(): Point
+  def getSouthWest(): Point
+  def intersects(other: Bounds): Boolean
+  def isEmpty(): Boolean
+  def toSpan(): Point
+}
+
+object Bounds {
+  @scala.inline
+  def apply(
+    containsBounds: Bounds => Boolean,
+    containsPoint: Point => Boolean,
+    equals: Bounds => Boolean,
+    extend: Point => Unit,
+    getCenter: () => Point,
+    getNorthEast: () => Point,
+    getSouthWest: () => Point,
+    intersects: Bounds => Boolean,
+    isEmpty: () => Boolean,
+    maxX: Double,
+    maxY: Double,
+    minX: Double,
+    minY: Double,
+    toSpan: () => Point
+  ): Bounds = {
+    val __obj = js.Dynamic.literal(containsBounds = js.Any.fromFunction1(containsBounds), containsPoint = js.Any.fromFunction1(containsPoint), equals = js.Any.fromFunction1(equals), extend = js.Any.fromFunction1(extend), getCenter = js.Any.fromFunction0(getCenter), getNorthEast = js.Any.fromFunction0(getNorthEast), getSouthWest = js.Any.fromFunction0(getSouthWest), intersects = js.Any.fromFunction1(intersects), isEmpty = js.Any.fromFunction0(isEmpty), maxX = maxX.asInstanceOf[js.Any], maxY = maxY.asInstanceOf[js.Any], minX = minX.asInstanceOf[js.Any], minY = minY.asInstanceOf[js.Any], toSpan = js.Any.fromFunction0(toSpan))
+    __obj.asInstanceOf[Bounds]
+  }
 }
 

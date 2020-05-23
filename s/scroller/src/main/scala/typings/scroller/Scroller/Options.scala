@@ -22,29 +22,29 @@ object Options {
   @scala.inline
   def apply(
     animating: js.UndefOr[Boolean] = js.undefined,
-    animationDuration: Int | Double = null,
+    animationDuration: js.UndefOr[Double] = js.undefined,
     bouncing: js.UndefOr[Boolean] = js.undefined,
     locking: js.UndefOr[Boolean] = js.undefined,
-    maxZoom: Int | Double = null,
-    minZoom: Int | Double = null,
+    maxZoom: js.UndefOr[Double] = js.undefined,
+    minZoom: js.UndefOr[Double] = js.undefined,
     paging: js.UndefOr[Boolean] = js.undefined,
     scrollingX: js.UndefOr[Boolean] = js.undefined,
     scrollingY: js.UndefOr[Boolean] = js.undefined,
     snapping: js.UndefOr[Boolean] = js.undefined,
-    zooming: Int | Double = null
+    zooming: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animating)) __obj.updateDynamic("animating")(animating.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(bouncing)) __obj.updateDynamic("bouncing")(bouncing.asInstanceOf[js.Any])
-    if (!js.isUndefined(locking)) __obj.updateDynamic("locking")(locking.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(paging)) __obj.updateDynamic("paging")(paging.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollingX)) __obj.updateDynamic("scrollingX")(scrollingX.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollingY)) __obj.updateDynamic("scrollingY")(scrollingY.asInstanceOf[js.Any])
-    if (!js.isUndefined(snapping)) __obj.updateDynamic("snapping")(snapping.asInstanceOf[js.Any])
-    if (zooming != null) __obj.updateDynamic("zooming")(zooming.asInstanceOf[js.Any])
+    if (!js.isUndefined(animating)) __obj.updateDynamic("animating")(animating.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bouncing)) __obj.updateDynamic("bouncing")(bouncing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(locking)) __obj.updateDynamic("locking")(locking.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paging)) __obj.updateDynamic("paging")(paging.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollingX)) __obj.updateDynamic("scrollingX")(scrollingX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollingY)) __obj.updateDynamic("scrollingY")(scrollingY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapping)) __obj.updateDynamic("snapping")(snapping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zooming)) __obj.updateDynamic("zooming")(zooming.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

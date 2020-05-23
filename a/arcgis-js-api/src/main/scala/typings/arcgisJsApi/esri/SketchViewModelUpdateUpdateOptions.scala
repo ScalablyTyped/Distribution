@@ -85,12 +85,12 @@ object SketchViewModelUpdateUpdateOptions {
     tool: String = null
   ): SketchViewModelUpdateUpdateOptions = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (!js.isUndefined(enableRotation)) __obj.updateDynamic("enableRotation")(enableRotation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableScaling)) __obj.updateDynamic("enableScaling")(enableScaling.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableZ)) __obj.updateDynamic("enableZ")(enableZ.asInstanceOf[js.Any])
-    if (!js.isUndefined(multipleSelectionEnabled)) __obj.updateDynamic("multipleSelectionEnabled")(multipleSelectionEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveAspectRatio)) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(toggleToolOnClick)) __obj.updateDynamic("toggleToolOnClick")(toggleToolOnClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRotation)) __obj.updateDynamic("enableRotation")(enableRotation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableScaling)) __obj.updateDynamic("enableScaling")(enableScaling.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableZ)) __obj.updateDynamic("enableZ")(enableZ.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multipleSelectionEnabled)) __obj.updateDynamic("multipleSelectionEnabled")(multipleSelectionEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveAspectRatio)) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(toggleToolOnClick)) __obj.updateDynamic("toggleToolOnClick")(toggleToolOnClick.get.asInstanceOf[js.Any])
     if (tool != null) __obj.updateDynamic("tool")(tool.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchViewModelUpdateUpdateOptions]
   }

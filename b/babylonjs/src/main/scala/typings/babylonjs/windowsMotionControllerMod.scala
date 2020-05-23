@@ -1,6 +1,7 @@
 package typings.babylonjs
 
 import typings.babylonjs.abstractMeshMod.AbstractMesh
+import typings.babylonjs.anon.AxisMeshNames
 import typings.babylonjs.gamepadMod.StickValues
 import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.poseEnabledControllerMod.ExtendedGamepadButton
@@ -21,7 +22,7 @@ object windowsMotionControllerMod extends js.Object {
       */
     def this(vrGamepad: js.Any) = this()
     var _loadedMeshInfo: js.Any = js.native
-    val _mapping: AnonAxisMeshNames = js.native
+    val _mapping: AxisMeshNames = js.native
     var createMeshInfo: js.Any = js.native
     /**
       * Fired when the trackpad on this controller is clicked

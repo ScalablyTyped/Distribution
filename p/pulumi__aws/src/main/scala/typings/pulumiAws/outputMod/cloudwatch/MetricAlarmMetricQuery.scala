@@ -41,7 +41,7 @@ object MetricAlarmMetricQuery {
     if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (metric != null) __obj.updateDynamic("metric")(metric.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnData)) __obj.updateDynamic("returnData")(returnData.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnData)) __obj.updateDynamic("returnData")(returnData.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricAlarmMetricQuery]
   }
 }

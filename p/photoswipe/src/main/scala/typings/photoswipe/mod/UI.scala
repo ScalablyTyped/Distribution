@@ -13,7 +13,7 @@ trait UI[T /* <: Options */] extends js.Object {
 
 object UI {
   @scala.inline
-  def apply[T /* <: Options */](init: () => Unit): UI[T] = {
+  def apply[T](init: () => Unit): UI[T] = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction0(init))
     __obj.asInstanceOf[UI[T]]
   }

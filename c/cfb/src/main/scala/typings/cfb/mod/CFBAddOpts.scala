@@ -13,7 +13,7 @@ object CFBAddOpts {
   @scala.inline
   def apply(unsafe: js.UndefOr[Boolean] = js.undefined): CFBAddOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(unsafe)) __obj.updateDynamic("unsafe")(unsafe.asInstanceOf[js.Any])
+    if (!js.isUndefined(unsafe)) __obj.updateDynamic("unsafe")(unsafe.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CFBAddOpts]
   }
 }

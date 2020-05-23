@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.disabled
 import typings.arcgisJsApi.arcgisJsApiStrings.loading
 import typings.arcgisJsApi.arcgisJsApiStrings.ready
@@ -66,8 +65,4 @@ trait BasemapLayerListViewModel extends Accessor {
   def triggerAction(action: ActionButton, item: ListItem): Unit = js.native
   def triggerAction(action: ActionToggle, item: ListItem): Unit = js.native
 }
-
-@JSGlobal("__esri.BasemapLayerListViewModel")
-@js.native
-object BasemapLayerListViewModel extends TopLevel[BasemapLayerListViewModelConstructor]
 

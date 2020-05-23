@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait LinkProps
   extends Props
      with /**
-  * Additional parameters passed to anchor element.
+  * Additional properties passed to inner input element.
   */
 /* key */ StringDictionary[js.Any] {
   /**
@@ -50,13 +50,13 @@ object LinkProps {
   @scala.inline
   def apply(
     StringDictionary: /**
-    * Additional parameters passed to anchor element.
+    * Additional properties passed to inner input element.
     */
   /* key */ StringDictionary[js.Any] = null,
     active: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     className: String = null,
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     href: String = null,
     icon: ReactNode = null,
     key: Key = null,
@@ -88,10 +88,10 @@ object LinkProps {
   ): LinkProps = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

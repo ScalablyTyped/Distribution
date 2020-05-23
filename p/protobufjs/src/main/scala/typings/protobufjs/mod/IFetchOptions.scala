@@ -15,8 +15,8 @@ object IFetchOptions {
   @scala.inline
   def apply(binary: js.UndefOr[Boolean] = js.undefined, xhr: js.UndefOr[Boolean] = js.undefined): IFetchOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
-    if (!js.isUndefined(xhr)) __obj.updateDynamic("xhr")(xhr.asInstanceOf[js.Any])
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xhr)) __obj.updateDynamic("xhr")(xhr.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFetchOptions]
   }
 }

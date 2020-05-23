@@ -4,7 +4,7 @@ import typings.baseui.baseuiStrings.horizontal
 import typings.baseui.baseuiStrings.vertical
 import typings.react.mod.Key
 import typings.react.mod.ReactNode
-import typings.std.Event_
+import typings.std.Event
 import typings.std.KeyboardEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ trait TabProps extends js.Object {
   var disabled: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var key: js.UndefOr[Key] = js.undefined
-  var onClick: js.UndefOr[js.Function1[/* e */ Event_, _]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* e */ Event, _]] = js.undefined
   var onKeyDown: js.UndefOr[js.Function1[/* e */ KeyboardEvent, _]] = js.undefined
   var onSelect: js.UndefOr[js.Function0[_]] = js.undefined
   var overrides: js.UndefOr[TabOverrides[SharedProps]] = js.undefined
@@ -34,7 +34,7 @@ object TabProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     key: Key = null,
-    onClick: /* e */ Event_ => _ = null,
+    onClick: /* e */ Event => _ = null,
     onKeyDown: /* e */ KeyboardEvent => _ = null,
     onSelect: () => _ = null,
     overrides: TabOverrides[SharedProps] = null,
@@ -42,9 +42,9 @@ object TabProps {
   ): TabProps = {
     val __obj = js.Dynamic.literal()
     if ($orientation != null) __obj.updateDynamic("$orientation")($orientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))

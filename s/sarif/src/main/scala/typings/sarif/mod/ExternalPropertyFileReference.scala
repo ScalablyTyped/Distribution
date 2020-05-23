@@ -27,13 +27,13 @@ object ExternalPropertyFileReference {
   @scala.inline
   def apply(
     guid: String = null,
-    itemCount: Int | Double = null,
+    itemCount: js.UndefOr[Double] = js.undefined,
     location: ArtifactLocation = null,
     properties: PropertyBag = null
   ): ExternalPropertyFileReference = {
     val __obj = js.Dynamic.literal()
     if (guid != null) __obj.updateDynamic("guid")(guid.asInstanceOf[js.Any])
-    if (itemCount != null) __obj.updateDynamic("itemCount")(itemCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemCount)) __obj.updateDynamic("itemCount")(itemCount.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalPropertyFileReference]

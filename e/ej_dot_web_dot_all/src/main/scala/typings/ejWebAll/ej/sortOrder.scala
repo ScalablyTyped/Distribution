@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,14 +17,6 @@ object sortOrder extends js.Object {
   //Enum for Descending sort order
   @js.native
   sealed trait Descending extends sortOrder
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[sortOrder with Double] = js.native
-  /* 0 */ @js.native
-  object Ascending extends TopLevel[Ascending with Double]
-  
-  /* 1 */ @js.native
-  object Descending extends TopLevel[Descending with Double]
   
 }
 

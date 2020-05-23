@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.aliApp.AnonConfirm
+import typings.aliApp.anon.Confirm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait ConfirmOptions
   /** confirm框的标题 */
   var title: String
   @JSName("success")
-  def success_MConfirmOptions(result: AnonConfirm): Unit
+  def success_MConfirmOptions(result: Confirm): Unit
 }
 
 object ConfirmOptions {
@@ -25,7 +25,7 @@ object ConfirmOptions {
     cancelButtonText: String,
     confirmButtonText: String,
     content: String,
-    success: AnonConfirm => Unit,
+    success: Confirm => Unit,
     title: String,
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null

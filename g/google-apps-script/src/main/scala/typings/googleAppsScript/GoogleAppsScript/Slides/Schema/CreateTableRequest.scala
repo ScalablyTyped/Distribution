@@ -14,16 +14,16 @@ trait CreateTableRequest extends js.Object {
 object CreateTableRequest {
   @scala.inline
   def apply(
-    columns: Int | Double = null,
+    columns: js.UndefOr[Double] = js.undefined,
     elementProperties: PageElementProperties = null,
     objectId: String = null,
-    rows: Int | Double = null
+    rows: js.UndefOr[Double] = js.undefined
   ): CreateTableRequest = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns.get.asInstanceOf[js.Any])
     if (elementProperties != null) __obj.updateDynamic("elementProperties")(elementProperties.asInstanceOf[js.Any])
     if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTableRequest]
   }
 }

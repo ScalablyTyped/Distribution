@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("__MaterialUI.TextField")
 @js.native
-class TextField ()
+trait TextField
   extends Component[TextFieldProps, js.Object, js.Any] {
   def blur(): Unit = js.native
   def focus(): Unit = js.native

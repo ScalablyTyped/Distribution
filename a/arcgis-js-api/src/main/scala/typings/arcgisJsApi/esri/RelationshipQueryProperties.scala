@@ -73,26 +73,26 @@ object RelationshipQueryProperties {
   @scala.inline
   def apply(
     gdbVersion: String = null,
-    geometryPrecision: Int | Double = null,
+    geometryPrecision: js.UndefOr[Double] = js.undefined,
     historicMoment: DateProperties = null,
-    maxAllowableOffset: Int | Double = null,
+    maxAllowableOffset: js.UndefOr[Double] = js.undefined,
     objectIds: js.Array[Double] = null,
     outFields: js.Array[String] = null,
     outSpatialReference: SpatialReferenceProperties = null,
-    relationshipId: Int | Double = null,
+    relationshipId: js.UndefOr[Double] = js.undefined,
     returnGeometry: js.UndefOr[Boolean] = js.undefined,
     where: String = null
   ): RelationshipQueryProperties = {
     val __obj = js.Dynamic.literal()
     if (gdbVersion != null) __obj.updateDynamic("gdbVersion")(gdbVersion.asInstanceOf[js.Any])
-    if (geometryPrecision != null) __obj.updateDynamic("geometryPrecision")(geometryPrecision.asInstanceOf[js.Any])
+    if (!js.isUndefined(geometryPrecision)) __obj.updateDynamic("geometryPrecision")(geometryPrecision.get.asInstanceOf[js.Any])
     if (historicMoment != null) __obj.updateDynamic("historicMoment")(historicMoment.asInstanceOf[js.Any])
-    if (maxAllowableOffset != null) __obj.updateDynamic("maxAllowableOffset")(maxAllowableOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAllowableOffset)) __obj.updateDynamic("maxAllowableOffset")(maxAllowableOffset.get.asInstanceOf[js.Any])
     if (objectIds != null) __obj.updateDynamic("objectIds")(objectIds.asInstanceOf[js.Any])
     if (outFields != null) __obj.updateDynamic("outFields")(outFields.asInstanceOf[js.Any])
     if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference.asInstanceOf[js.Any])
-    if (relationshipId != null) __obj.updateDynamic("relationshipId")(relationshipId.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnGeometry)) __obj.updateDynamic("returnGeometry")(returnGeometry.asInstanceOf[js.Any])
+    if (!js.isUndefined(relationshipId)) __obj.updateDynamic("relationshipId")(relationshipId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnGeometry)) __obj.updateDynamic("returnGeometry")(returnGeometry.get.asInstanceOf[js.Any])
     if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationshipQueryProperties]
   }

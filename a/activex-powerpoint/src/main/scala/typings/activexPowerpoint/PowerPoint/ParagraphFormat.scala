@@ -5,25 +5,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.ParagraphFormat")
-@js.native
-class ParagraphFormat protected () extends js.Object {
-  var Alignment: PpParagraphAlignment = js.native
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
-  var BaseLineAlignment: PpBaselineAlignment = js.native
-  val Bullet: BulletFormat = js.native
-  var FarEastLineBreakControl: MsoTriState = js.native
-  var HangingPunctuation: MsoTriState = js.native
-  var LineRuleAfter: MsoTriState = js.native
-  var LineRuleBefore: MsoTriState = js.native
-  var LineRuleWithin: MsoTriState = js.native
-  val Parent: js.Any = js.native
+trait ParagraphFormat extends js.Object {
+  var Alignment: PpParagraphAlignment
+  val Application: typings.activexPowerpoint.PowerPoint.Application
+  var BaseLineAlignment: PpBaselineAlignment
+  val Bullet: BulletFormat
+  var FarEastLineBreakControl: MsoTriState
+  var HangingPunctuation: MsoTriState
+  var LineRuleAfter: MsoTriState
+  var LineRuleBefore: MsoTriState
+  var LineRuleWithin: MsoTriState
+  val Parent: js.Any
   @JSName("PowerPoint.ParagraphFormat_typekey")
-  var PowerPointDotParagraphFormat_typekey: ParagraphFormat = js.native
-  var SpaceAfter: Double = js.native
-  var SpaceBefore: Double = js.native
-  var SpaceWithin: Double = js.native
-  var TextDirection: PpDirection = js.native
-  var WordWrap: MsoTriState = js.native
+  var PowerPointDotParagraphFormat_typekey: ParagraphFormat
+  var SpaceAfter: Double
+  var SpaceBefore: Double
+  var SpaceWithin: Double
+  var TextDirection: PpDirection
+  var WordWrap: MsoTriState
+}
+
+object ParagraphFormat {
+  @scala.inline
+  def apply(
+    Alignment: PpParagraphAlignment,
+    Application: Application,
+    BaseLineAlignment: PpBaselineAlignment,
+    Bullet: BulletFormat,
+    FarEastLineBreakControl: MsoTriState,
+    HangingPunctuation: MsoTriState,
+    LineRuleAfter: MsoTriState,
+    LineRuleBefore: MsoTriState,
+    LineRuleWithin: MsoTriState,
+    Parent: js.Any,
+    PowerPointDotParagraphFormat_typekey: ParagraphFormat,
+    SpaceAfter: Double,
+    SpaceBefore: Double,
+    SpaceWithin: Double,
+    TextDirection: PpDirection,
+    WordWrap: MsoTriState
+  ): ParagraphFormat = {
+    val __obj = js.Dynamic.literal(Alignment = Alignment.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], BaseLineAlignment = BaseLineAlignment.asInstanceOf[js.Any], Bullet = Bullet.asInstanceOf[js.Any], FarEastLineBreakControl = FarEastLineBreakControl.asInstanceOf[js.Any], HangingPunctuation = HangingPunctuation.asInstanceOf[js.Any], LineRuleAfter = LineRuleAfter.asInstanceOf[js.Any], LineRuleBefore = LineRuleBefore.asInstanceOf[js.Any], LineRuleWithin = LineRuleWithin.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], SpaceAfter = SpaceAfter.asInstanceOf[js.Any], SpaceBefore = SpaceBefore.asInstanceOf[js.Any], SpaceWithin = SpaceWithin.asInstanceOf[js.Any], TextDirection = TextDirection.asInstanceOf[js.Any], WordWrap = WordWrap.asInstanceOf[js.Any])
+    __obj.updateDynamic("PowerPoint.ParagraphFormat_typekey")(PowerPointDotParagraphFormat_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ParagraphFormat]
+  }
 }
 

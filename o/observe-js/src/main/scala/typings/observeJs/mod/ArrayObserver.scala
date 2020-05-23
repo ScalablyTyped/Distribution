@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class ArrayObserver protected () extends ArrayObserverInstance {
   /**
-  		 * Constructor
-  		 * @param receiver the target for observation
-  		 */
+    * Constructor
+    * @param receiver the target for observation
+    */
   def this(receiver: js.Array[_]) = this()
 }
 

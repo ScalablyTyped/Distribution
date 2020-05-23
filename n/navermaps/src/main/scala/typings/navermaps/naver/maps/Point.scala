@@ -5,10 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Base
-@JSGlobal("naver.maps.Point")
 @js.native
-class Point protected () extends Coord {
-  def this(x: Double, y: Double) = this()
+trait Point extends Coord {
   def add(point: Coord): Point = js.native
   def add(point: PointLiteral): Point = js.native
   def add(x: Double, y: Double): Point = js.native

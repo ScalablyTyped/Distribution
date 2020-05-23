@@ -16,8 +16,8 @@ object Options {
     overrideProcessEnv: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(assignToProcessEnv)) __obj.updateDynamic("assignToProcessEnv")(assignToProcessEnv.asInstanceOf[js.Any])
-    if (!js.isUndefined(overrideProcessEnv)) __obj.updateDynamic("overrideProcessEnv")(overrideProcessEnv.asInstanceOf[js.Any])
+    if (!js.isUndefined(assignToProcessEnv)) __obj.updateDynamic("assignToProcessEnv")(assignToProcessEnv.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overrideProcessEnv)) __obj.updateDynamic("overrideProcessEnv")(overrideProcessEnv.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

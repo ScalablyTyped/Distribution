@@ -20,12 +20,10 @@ object ResponseModel {
     agent: Boolean,
     id: ZendeskID,
     name: String,
-    organization_id: Int | Double = null,
+    organization_id: Double = null.asInstanceOf[Double],
     photo: Model = null
   ): ResponseModel = {
-    val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (organization_id != null) __obj.updateDynamic("organization_id")(organization_id.asInstanceOf[js.Any])
-    if (photo != null) __obj.updateDynamic("photo")(photo.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], organization_id = organization_id.asInstanceOf[js.Any], photo = photo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseModel]
   }
 }

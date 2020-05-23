@@ -17,13 +17,13 @@ object TableProps {
     NoResults: js.Any = null,
     TableBody: js.Any = null,
     TableHeading: js.Any = null,
-    visibleRows: Int | Double = null
+    visibleRows: js.UndefOr[Double] = js.undefined
   ): TableProps = {
     val __obj = js.Dynamic.literal()
     if (NoResults != null) __obj.updateDynamic("NoResults")(NoResults.asInstanceOf[js.Any])
     if (TableBody != null) __obj.updateDynamic("TableBody")(TableBody.asInstanceOf[js.Any])
     if (TableHeading != null) __obj.updateDynamic("TableHeading")(TableHeading.asInstanceOf[js.Any])
-    if (visibleRows != null) __obj.updateDynamic("visibleRows")(visibleRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibleRows)) __obj.updateDynamic("visibleRows")(visibleRows.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableProps]
   }
 }

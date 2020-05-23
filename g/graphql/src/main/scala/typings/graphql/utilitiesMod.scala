@@ -1,6 +1,7 @@
 package typings.graphql
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.graphql.anon.Description
 import typings.graphql.astMod.ASTNode
 import typings.graphql.astMod.DocumentNode
 import typings.graphql.astMod.ListTypeNode
@@ -88,7 +89,7 @@ object utilitiesMod extends js.Object {
   def findBreakingChanges(oldSchema: GraphQLSchema, newSchema: GraphQLSchema): js.Array[BreakingChange] = js.native
   def findDangerousChanges(oldSchema: GraphQLSchema, newSchema: GraphQLSchema): js.Array[DangerousChange] = js.native
   def findDeprecatedUsages(schema: GraphQLSchema, ast: DocumentNode): js.Array[GraphQLError] = js.native
-  def getDescription(node: AnonDescription, options: Maybe[BuildSchemaOptions]): js.UndefOr[String] = js.native
+  def getDescription(node: Description, options: Maybe[BuildSchemaOptions]): js.UndefOr[String] = js.native
   def getIntrospectionQuery(): String = js.native
   def getIntrospectionQuery(options: IntrospectionOptions): String = js.native
   def getOperationAST(documentAST: DocumentNode, operationName: Maybe[String]): Maybe[OperationDefinitionNode] = js.native

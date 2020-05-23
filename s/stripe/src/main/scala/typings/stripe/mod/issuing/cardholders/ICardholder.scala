@@ -1,7 +1,7 @@
 package typings.stripe.mod.issuing.cardholders
 
-import typings.stripe.AnonAddressName
-import typings.stripe.AnonPastdue
+import typings.stripe.anon.AddressName
+import typings.stripe.anon.Pastdue
 import typings.stripe.mod.IMetadata
 import typings.stripe.mod.IResourceObject
 import typings.stripe.stripeStrings.issuingDotcardholder
@@ -17,7 +17,7 @@ trait ICardholder extends IResourceObject {
   /**
     * The cardholder’s billing address.
     */
-  var billing: AnonAddressName
+  var billing: AddressName
   /**
     * Additional information about a business_entity cardholder.
     */
@@ -62,7 +62,7 @@ trait ICardholder extends IResourceObject {
   /**
     * Information about verification requirements for the cardholder, including what information needs to be collected.
     */
-  var requirements: AnonPastdue
+  var requirements: Pastdue
   /**
     * One of active, inactive, or blocked.
     */
@@ -77,7 +77,7 @@ object ICardholder {
   @scala.inline
   def apply(
     authorization_controls: ICardholderAuthorizationControls,
-    billing: AnonAddressName,
+    billing: AddressName,
     company: ICardholderBusinessEntity,
     created: Double,
     email: String,
@@ -89,7 +89,7 @@ object ICardholder {
     name: String,
     `object`: issuingDotcardholder,
     phone_number: String,
-    requirements: AnonPastdue,
+    requirements: Pastdue,
     status: CardholderStatus,
     `type`: CardholderType
   ): ICardholder = {

@@ -5,6 +5,7 @@ import typings.stellarBase.mod.Memo
 import typings.stellarBase.mod.MemoType
 import typings.stellarBase.mod.Operation
 import typings.stellarBase.mod.Transaction
+import typings.stellarSdk.anon.ClientAccountID
 import typings.stellarSdk.serverApiMod.ServerApi.AccountRecordSigners
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,8 +26,8 @@ object utilsMod extends js.Object {
       networkPassphrase: String
     ): String = js.native
     def gatherTxSigners(transaction: Transaction[Memo[MemoType], js.Array[Operation]], signers: js.Array[String]): js.Array[String] = js.native
-    def readChallengeTx(challengeTx: String, serverAccountId: String): AnonClientAccountID = js.native
-    def readChallengeTx(challengeTx: String, serverAccountId: String, networkPassphrase: String): AnonClientAccountID = js.native
+    def readChallengeTx(challengeTx: String, serverAccountId: String): ClientAccountID = js.native
+    def readChallengeTx(challengeTx: String, serverAccountId: String, networkPassphrase: String): ClientAccountID = js.native
     def verifyChallengeTx(challengeTx: String, serverAccountId: String): Boolean = js.native
     def verifyChallengeTx(challengeTx: String, serverAccountId: String, networkPassphrase: String): Boolean = js.native
     def verifyChallengeTxSigners(challengeTx: String, serverAccountID: String, networkPassphrase: String, signers: js.Array[String]): js.Array[String] = js.native

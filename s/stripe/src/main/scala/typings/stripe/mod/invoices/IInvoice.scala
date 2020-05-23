@@ -400,7 +400,7 @@ object IInvoice {
     status_transitions: IStatusTransitions,
     subtotal: Double,
     total: Double,
-    application_fee: Int | Double = null,
+    application_fee: js.UndefOr[Double] = js.undefined,
     charge: String | ICharge = null,
     closed: js.UndefOr[Boolean] = js.undefined,
     collection_method: charge_automatically | send_invoice = null,
@@ -411,64 +411,38 @@ object IInvoice {
     customer_phone: String = null,
     customer_shipping: IShippingInformation = null,
     customer_tax_exempt: String = null,
-    date: Int | Double = null,
+    date: js.UndefOr[Double] = js.undefined,
     default_payment_method: String | IPaymentMethod = null,
     default_source: String = null,
     description: String = null,
     discount: IDiscount = null,
-    due_date: Int | Double = null,
-    ending_balance: Int | Double = null,
+    due_date: Double = null.asInstanceOf[Double],
+    ending_balance: Double = null.asInstanceOf[Double],
     footer: String = null,
     forgiven: js.UndefOr[Boolean] = js.undefined,
     hosted_invoice_url: String = null,
     invoice_pdf: String = null,
-    next_payment_attempt: Int | Double = null,
+    next_payment_attempt: Double = null.asInstanceOf[Double],
     payment_intent: IPaymentIntent | String = null,
     receipt_number: String = null,
     statement_descriptor: String = null,
     subscription: String | ISubscription = null,
-    subscription_proration_date: Int | Double = null,
-    tax: Int | Double = null,
-    tax_percent: Int | Double = null,
+    subscription_proration_date: js.UndefOr[Null | Double] = js.undefined,
+    tax: Double = null.asInstanceOf[Double],
+    tax_percent: Double = null.asInstanceOf[Double],
     threshold_reason: IThresholdReason = null,
     total_tax_amounts: js.Array[ITaxAmount] = null,
-    webhooks_delivered_at: Int | Double = null
+    webhooks_delivered_at: Double = null.asInstanceOf[Double]
   ): IInvoice = {
-    val __obj = js.Dynamic.literal(account_country = account_country.asInstanceOf[js.Any], account_name = account_name.asInstanceOf[js.Any], amount_due = amount_due.asInstanceOf[js.Any], amount_paid = amount_paid.asInstanceOf[js.Any], amount_remaining = amount_remaining.asInstanceOf[js.Any], application_fee_amount = application_fee_amount.asInstanceOf[js.Any], attempt_count = attempt_count.asInstanceOf[js.Any], attempted = attempted.asInstanceOf[js.Any], auto_advance = auto_advance.asInstanceOf[js.Any], billing = billing.asInstanceOf[js.Any], billing_reason = billing_reason.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], customer_tax_ids = customer_tax_ids.asInstanceOf[js.Any], default_tax_rates = default_tax_rates.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], paid = paid.asInstanceOf[js.Any], period_end = period_end.asInstanceOf[js.Any], period_start = period_start.asInstanceOf[js.Any], post_payment_credit_notes_amount = post_payment_credit_notes_amount.asInstanceOf[js.Any], pre_payment_credit_notes_amount = pre_payment_credit_notes_amount.asInstanceOf[js.Any], starting_balance = starting_balance.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], status_transitions = status_transitions.asInstanceOf[js.Any], subtotal = subtotal.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(account_country = account_country.asInstanceOf[js.Any], account_name = account_name.asInstanceOf[js.Any], amount_due = amount_due.asInstanceOf[js.Any], amount_paid = amount_paid.asInstanceOf[js.Any], amount_remaining = amount_remaining.asInstanceOf[js.Any], application_fee_amount = application_fee_amount.asInstanceOf[js.Any], attempt_count = attempt_count.asInstanceOf[js.Any], attempted = attempted.asInstanceOf[js.Any], auto_advance = auto_advance.asInstanceOf[js.Any], billing = billing.asInstanceOf[js.Any], billing_reason = billing_reason.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], customer_tax_ids = customer_tax_ids.asInstanceOf[js.Any], default_tax_rates = default_tax_rates.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], paid = paid.asInstanceOf[js.Any], period_end = period_end.asInstanceOf[js.Any], period_start = period_start.asInstanceOf[js.Any], post_payment_credit_notes_amount = post_payment_credit_notes_amount.asInstanceOf[js.Any], pre_payment_credit_notes_amount = pre_payment_credit_notes_amount.asInstanceOf[js.Any], starting_balance = starting_balance.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], status_transitions = status_transitions.asInstanceOf[js.Any], subtotal = subtotal.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], custom_fields = custom_fields.asInstanceOf[js.Any], customer_address = customer_address.asInstanceOf[js.Any], customer_email = customer_email.asInstanceOf[js.Any], customer_name = customer_name.asInstanceOf[js.Any], customer_phone = customer_phone.asInstanceOf[js.Any], customer_shipping = customer_shipping.asInstanceOf[js.Any], customer_tax_exempt = customer_tax_exempt.asInstanceOf[js.Any], default_payment_method = default_payment_method.asInstanceOf[js.Any], default_source = default_source.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], discount = discount.asInstanceOf[js.Any], due_date = due_date.asInstanceOf[js.Any], ending_balance = ending_balance.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], hosted_invoice_url = hosted_invoice_url.asInstanceOf[js.Any], invoice_pdf = invoice_pdf.asInstanceOf[js.Any], next_payment_attempt = next_payment_attempt.asInstanceOf[js.Any], payment_intent = payment_intent.asInstanceOf[js.Any], receipt_number = receipt_number.asInstanceOf[js.Any], statement_descriptor = statement_descriptor.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any], tax = tax.asInstanceOf[js.Any], tax_percent = tax_percent.asInstanceOf[js.Any], total_tax_amounts = total_tax_amounts.asInstanceOf[js.Any], webhooks_delivered_at = webhooks_delivered_at.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (application_fee != null) __obj.updateDynamic("application_fee")(application_fee.asInstanceOf[js.Any])
-    if (charge != null) __obj.updateDynamic("charge")(charge.asInstanceOf[js.Any])
-    if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed.asInstanceOf[js.Any])
+    if (!js.isUndefined(application_fee)) __obj.updateDynamic("application_fee")(application_fee.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed.get.asInstanceOf[js.Any])
     if (collection_method != null) __obj.updateDynamic("collection_method")(collection_method.asInstanceOf[js.Any])
-    if (custom_fields != null) __obj.updateDynamic("custom_fields")(custom_fields.asInstanceOf[js.Any])
-    if (customer_address != null) __obj.updateDynamic("customer_address")(customer_address.asInstanceOf[js.Any])
-    if (customer_email != null) __obj.updateDynamic("customer_email")(customer_email.asInstanceOf[js.Any])
-    if (customer_name != null) __obj.updateDynamic("customer_name")(customer_name.asInstanceOf[js.Any])
-    if (customer_phone != null) __obj.updateDynamic("customer_phone")(customer_phone.asInstanceOf[js.Any])
-    if (customer_shipping != null) __obj.updateDynamic("customer_shipping")(customer_shipping.asInstanceOf[js.Any])
-    if (customer_tax_exempt != null) __obj.updateDynamic("customer_tax_exempt")(customer_tax_exempt.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (default_payment_method != null) __obj.updateDynamic("default_payment_method")(default_payment_method.asInstanceOf[js.Any])
-    if (default_source != null) __obj.updateDynamic("default_source")(default_source.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (discount != null) __obj.updateDynamic("discount")(discount.asInstanceOf[js.Any])
-    if (due_date != null) __obj.updateDynamic("due_date")(due_date.asInstanceOf[js.Any])
-    if (ending_balance != null) __obj.updateDynamic("ending_balance")(ending_balance.asInstanceOf[js.Any])
-    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
-    if (!js.isUndefined(forgiven)) __obj.updateDynamic("forgiven")(forgiven.asInstanceOf[js.Any])
-    if (hosted_invoice_url != null) __obj.updateDynamic("hosted_invoice_url")(hosted_invoice_url.asInstanceOf[js.Any])
-    if (invoice_pdf != null) __obj.updateDynamic("invoice_pdf")(invoice_pdf.asInstanceOf[js.Any])
-    if (next_payment_attempt != null) __obj.updateDynamic("next_payment_attempt")(next_payment_attempt.asInstanceOf[js.Any])
-    if (payment_intent != null) __obj.updateDynamic("payment_intent")(payment_intent.asInstanceOf[js.Any])
-    if (receipt_number != null) __obj.updateDynamic("receipt_number")(receipt_number.asInstanceOf[js.Any])
-    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor.asInstanceOf[js.Any])
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
-    if (subscription_proration_date != null) __obj.updateDynamic("subscription_proration_date")(subscription_proration_date.asInstanceOf[js.Any])
-    if (tax != null) __obj.updateDynamic("tax")(tax.asInstanceOf[js.Any])
-    if (tax_percent != null) __obj.updateDynamic("tax_percent")(tax_percent.asInstanceOf[js.Any])
+    if (!js.isUndefined(date)) __obj.updateDynamic("date")(date.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forgiven)) __obj.updateDynamic("forgiven")(forgiven.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscription_proration_date)) __obj.updateDynamic("subscription_proration_date")(subscription_proration_date.asInstanceOf[js.Any])
     if (threshold_reason != null) __obj.updateDynamic("threshold_reason")(threshold_reason.asInstanceOf[js.Any])
-    if (total_tax_amounts != null) __obj.updateDynamic("total_tax_amounts")(total_tax_amounts.asInstanceOf[js.Any])
-    if (webhooks_delivered_at != null) __obj.updateDynamic("webhooks_delivered_at")(webhooks_delivered_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInvoice]
   }
 }

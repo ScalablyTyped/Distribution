@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.KeyBinding")
 @js.native
-class KeyBinding protected () extends js.Object {
+trait KeyBinding extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   val Command: String = js.native
   val CommandParameter: String = js.native

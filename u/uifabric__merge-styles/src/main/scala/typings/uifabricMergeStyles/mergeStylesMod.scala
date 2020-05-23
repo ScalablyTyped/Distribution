@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object mergeStylesMod extends js.Object {
   def mergeCss(): String = js.native
-  def mergeCss(args: js.UndefOr[IStyle], options: IStyleOptions): String = js.native
   def mergeCss(args: Null, options: IStyleOptions): String = js.native
   def mergeCss(args: IStyle): String = js.native
   def mergeCss(args: IStyleBaseArray): String = js.native
   def mergeCss(args: IStyleBaseArray, options: IStyleOptions): String = js.native
+  def mergeCss(args: IStyle, options: IStyleOptions): String = js.native
   @JSName("mergeCss")
   def mergeCss_false(args: js.Array[js.UndefOr[IStyle | IStyleBaseArray | `false` | Null]]): String = js.native
   @JSName("mergeCss")

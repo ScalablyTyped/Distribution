@@ -1,6 +1,6 @@
 package typings.antdMobile.mod
 
-import typings.antdMobile.AnonFocusOnUpDown
+import typings.antdMobile.anon.FocusOnUpDown
 import typings.antdMobile.stepperMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ class Stepper () extends default
 @JSImport("antd-mobile", "Stepper")
 @js.native
 object Stepper extends js.Object {
-  var defaultProps: AnonFocusOnUpDown = js.native
+  var defaultProps: FocusOnUpDown = js.native
 }
 

@@ -18,12 +18,14 @@ trait IRbmCarouselCard extends js.Object {
 object IRbmCarouselCard {
   @scala.inline
   def apply(
-    cardContents: js.Array[IRbmCardContent] = null,
-    cardWidth: CardWidth | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.CardWidth * / any */ String) = null
+    cardContents: js.UndefOr[Null | js.Array[IRbmCardContent]] = js.undefined,
+    cardWidth: js.UndefOr[
+      Null | CardWidth | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.CardWidth * / any */ String)
+    ] = js.undefined
   ): IRbmCarouselCard = {
     val __obj = js.Dynamic.literal()
-    if (cardContents != null) __obj.updateDynamic("cardContents")(cardContents.asInstanceOf[js.Any])
-    if (cardWidth != null) __obj.updateDynamic("cardWidth")(cardWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(cardContents)) __obj.updateDynamic("cardContents")(cardContents.asInstanceOf[js.Any])
+    if (!js.isUndefined(cardWidth)) __obj.updateDynamic("cardWidth")(cardWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRbmCarouselCard]
   }
 }

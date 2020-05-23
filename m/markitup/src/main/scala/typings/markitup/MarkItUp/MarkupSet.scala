@@ -114,7 +114,7 @@ object MarkupSet {
     altKey: js.UndefOr[Boolean] = js.undefined,
     beforeInsert: /* h */ MarkupSet => String = null,
     beforeMultiInsert: /* h */ MarkupSet => String = null,
-    caretPosition: Int | Double = null,
+    caretPosition: js.UndefOr[Double] = js.undefined,
     className: String = null,
     closeBlockWith: String | (js.Function1[MarkupSet, String]) = null,
     closeWith: String | (js.Function1[MarkupSet, String]) = null,
@@ -122,14 +122,14 @@ object MarkupSet {
     dropMenu: js.Array[MarkupSet] = null,
     keepDefault: js.UndefOr[Boolean] = js.undefined,
     key: String = null,
-    line: Int | Double = null,
+    line: js.UndefOr[Double] = js.undefined,
     multiline: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     openBlockWith: String | (js.Function1[MarkupSet, String]) = null,
     openWith: String | (js.Function1[MarkupSet, String]) = null,
     placeHolder: String | (js.Function1[MarkupSet, String]) = null,
     replaceWith: String | (js.Function1[MarkupSet, String]) = null,
-    scrollPosition: Int | Double = null,
+    scrollPosition: js.UndefOr[Double] = js.undefined,
     selection: String = null,
     separator: String = null,
     shiftKey: js.UndefOr[Boolean] = js.undefined,
@@ -138,28 +138,28 @@ object MarkupSet {
     val __obj = js.Dynamic.literal()
     if (afterInsert != null) __obj.updateDynamic("afterInsert")(js.Any.fromFunction1(afterInsert))
     if (afterMultiInsert != null) __obj.updateDynamic("afterMultiInsert")(js.Any.fromFunction1(afterMultiInsert))
-    if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey.get.asInstanceOf[js.Any])
     if (beforeInsert != null) __obj.updateDynamic("beforeInsert")(js.Any.fromFunction1(beforeInsert))
     if (beforeMultiInsert != null) __obj.updateDynamic("beforeMultiInsert")(js.Any.fromFunction1(beforeMultiInsert))
-    if (caretPosition != null) __obj.updateDynamic("caretPosition")(caretPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(caretPosition)) __obj.updateDynamic("caretPosition")(caretPosition.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (closeBlockWith != null) __obj.updateDynamic("closeBlockWith")(closeBlockWith.asInstanceOf[js.Any])
     if (closeWith != null) __obj.updateDynamic("closeWith")(closeWith.asInstanceOf[js.Any])
-    if (!js.isUndefined(ctrlKey)) __obj.updateDynamic("ctrlKey")(ctrlKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(ctrlKey)) __obj.updateDynamic("ctrlKey")(ctrlKey.get.asInstanceOf[js.Any])
     if (dropMenu != null) __obj.updateDynamic("dropMenu")(dropMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepDefault)) __obj.updateDynamic("keepDefault")(keepDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepDefault)) __obj.updateDynamic("keepDefault")(keepDefault.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline.asInstanceOf[js.Any])
+    if (!js.isUndefined(line)) __obj.updateDynamic("line")(line.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (openBlockWith != null) __obj.updateDynamic("openBlockWith")(openBlockWith.asInstanceOf[js.Any])
     if (openWith != null) __obj.updateDynamic("openWith")(openWith.asInstanceOf[js.Any])
     if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder.asInstanceOf[js.Any])
     if (replaceWith != null) __obj.updateDynamic("replaceWith")(replaceWith.asInstanceOf[js.Any])
-    if (scrollPosition != null) __obj.updateDynamic("scrollPosition")(scrollPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollPosition)) __obj.updateDynamic("scrollPosition")(scrollPosition.get.asInstanceOf[js.Any])
     if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (!js.isUndefined(shiftKey)) __obj.updateDynamic("shiftKey")(shiftKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(shiftKey)) __obj.updateDynamic("shiftKey")(shiftKey.get.asInstanceOf[js.Any])
     if (textarea != null) __obj.updateDynamic("textarea")(textarea.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkupSet]
   }

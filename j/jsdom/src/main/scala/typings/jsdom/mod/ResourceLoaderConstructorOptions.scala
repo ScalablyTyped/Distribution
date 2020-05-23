@@ -15,7 +15,7 @@ object ResourceLoaderConstructorOptions {
   def apply(proxy: String = null, strictSSL: js.UndefOr[Boolean] = js.undefined, userAgent: String = null): ResourceLoaderConstructorOptions = {
     val __obj = js.Dynamic.literal()
     if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictSSL)) __obj.updateDynamic("strictSSL")(strictSSL.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictSSL)) __obj.updateDynamic("strictSSL")(strictSSL.get.asInstanceOf[js.Any])
     if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceLoaderConstructorOptions]
   }

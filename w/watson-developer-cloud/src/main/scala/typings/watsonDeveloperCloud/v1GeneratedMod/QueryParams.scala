@@ -64,7 +64,7 @@ object QueryParams {
     aggregation: String = null,
     bias: String = null,
     collection_ids: String = null,
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     deduplicate: js.UndefOr[Boolean] = js.undefined,
     deduplicate_field: String = null,
     filter: String = null,
@@ -72,10 +72,10 @@ object QueryParams {
     highlight: js.UndefOr[Boolean] = js.undefined,
     logging_opt_out: js.UndefOr[Boolean] = js.undefined,
     natural_language_query: String = null,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     passages: js.UndefOr[Boolean] = js.undefined,
-    passages_characters: Int | Double = null,
-    passages_count: Int | Double = null,
+    passages_characters: js.UndefOr[Double] = js.undefined,
+    passages_count: js.UndefOr[Double] = js.undefined,
     passages_fields: String = null,
     query: String = null,
     return_fields: String = null,
@@ -89,23 +89,23 @@ object QueryParams {
     if (aggregation != null) __obj.updateDynamic("aggregation")(aggregation.asInstanceOf[js.Any])
     if (bias != null) __obj.updateDynamic("bias")(bias.asInstanceOf[js.Any])
     if (collection_ids != null) __obj.updateDynamic("collection_ids")(collection_ids.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (!js.isUndefined(deduplicate)) __obj.updateDynamic("deduplicate")(deduplicate.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deduplicate)) __obj.updateDynamic("deduplicate")(deduplicate.get.asInstanceOf[js.Any])
     if (deduplicate_field != null) __obj.updateDynamic("deduplicate_field")(deduplicate_field.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
-    if (!js.isUndefined(logging_opt_out)) __obj.updateDynamic("logging_opt_out")(logging_opt_out.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(logging_opt_out)) __obj.updateDynamic("logging_opt_out")(logging_opt_out.get.asInstanceOf[js.Any])
     if (natural_language_query != null) __obj.updateDynamic("natural_language_query")(natural_language_query.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(passages)) __obj.updateDynamic("passages")(passages.asInstanceOf[js.Any])
-    if (passages_characters != null) __obj.updateDynamic("passages_characters")(passages_characters.asInstanceOf[js.Any])
-    if (passages_count != null) __obj.updateDynamic("passages_count")(passages_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passages)) __obj.updateDynamic("passages")(passages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passages_characters)) __obj.updateDynamic("passages_characters")(passages_characters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passages_count)) __obj.updateDynamic("passages_count")(passages_count.get.asInstanceOf[js.Any])
     if (passages_fields != null) __obj.updateDynamic("passages_fields")(passages_fields.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (return_fields != null) __obj.updateDynamic("return_fields")(return_fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
-    if (!js.isUndefined(similar)) __obj.updateDynamic("similar")(similar.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(similar)) __obj.updateDynamic("similar")(similar.get.asInstanceOf[js.Any])
     if (similar_document_ids != null) __obj.updateDynamic("similar_document_ids")(similar_document_ids.asInstanceOf[js.Any])
     if (similar_fields != null) __obj.updateDynamic("similar_fields")(similar_fields.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])

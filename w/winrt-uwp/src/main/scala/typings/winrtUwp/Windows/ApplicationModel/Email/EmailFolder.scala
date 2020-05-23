@@ -9,9 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents and email folder. */
-@JSGlobal("Windows.ApplicationModel.Email.EmailFolder")
 @js.native
-abstract class EmailFolder () extends js.Object {
+trait EmailFolder extends js.Object {
   /** Gets or sets the display name for the folder. */
   var displayName: String = js.native
   /** Gets the ID of the email folder. */

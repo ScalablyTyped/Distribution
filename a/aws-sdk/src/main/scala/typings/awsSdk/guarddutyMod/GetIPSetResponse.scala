@@ -11,19 +11,19 @@ trait GetIPSetResponse extends js.Object {
     */
   var Format: IpSetFormat = js.native
   /**
-    * The URI of the file that contains the IPSet. For example (https://s3.us-west-2.amazonaws.com/my-bucket/my-object-key)
+    * The URI of the file that contains the IPSet. For example: .
     */
   var Location: typings.awsSdk.guarddutyMod.Location = js.native
   /**
-    * The user friendly name for the IPSet.
+    * The user-friendly name for the IPSet.
     */
   var Name: typings.awsSdk.guarddutyMod.Name = js.native
   /**
-    * The status of ipSet file uploaded.
+    * The status of IPSet file that was uploaded.
     */
   var Status: IpSetStatus = js.native
   /**
-    * The tags of the IP set resource.
+    * The tags of the IPSet resource.
     */
   var Tags: js.UndefOr[TagMap] = js.native
 }

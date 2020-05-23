@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/query/base", JSImport.Namespace)
 @js.native
 object baseMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.pulumiQuery.interfacesMod.AsyncIterator because Already inherited
   - typings.pulumiQuery.interfacesMod.AsyncIterableIterator because Already inherited
   - typings.pulumiQuery.interfacesMod.GroupedAsyncIterableIterator because var conflicts: `return`, `throw`. Inlined key */ @js.native

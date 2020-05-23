@@ -15,14 +15,14 @@ trait BluetoothRequestDeviceFilter extends js.Object {
 object BluetoothRequestDeviceFilter {
   @scala.inline
   def apply(
-    manufacturerId: Int | Double = null,
+    manufacturerId: js.UndefOr[Double] = js.undefined,
     name: String = null,
     namePrefix: String = null,
     serviceDataUUID: BluetoothServiceUUID = null,
     services: js.Array[BluetoothServiceUUID] = null
   ): BluetoothRequestDeviceFilter = {
     val __obj = js.Dynamic.literal()
-    if (manufacturerId != null) __obj.updateDynamic("manufacturerId")(manufacturerId.asInstanceOf[js.Any])
+    if (!js.isUndefined(manufacturerId)) __obj.updateDynamic("manufacturerId")(manufacturerId.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
     if (serviceDataUUID != null) __obj.updateDynamic("serviceDataUUID")(serviceDataUUID.asInstanceOf[js.Any])

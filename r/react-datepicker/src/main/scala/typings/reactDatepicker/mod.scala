@@ -10,10 +10,13 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
+import typings.reactDatepicker.anon.ChangeMonth
+import typings.reactDatepicker.anon.Children
+import typings.reactDatepicker.anon.Code
 import typings.reactDatepicker.reactDatepickerStrings.scroll
 import typings.reactDatepicker.reactDatepickerStrings.select
 import typings.std.Date
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
 import scala.scalajs.js
@@ -41,7 +44,7 @@ object mod extends js.Object {
     var autoComplete: js.UndefOr[String] = js.native
     var autoFocus: js.UndefOr[Boolean] = js.native
     var calendarClassName: js.UndefOr[String] = js.native
-    var calendarContainer: js.UndefOr[js.Function1[/* props */ AnonChildren, ReactNode]] = js.native
+    var calendarContainer: js.UndefOr[js.Function1[/* props */ Children, ReactNode]] = js.native
     var children: js.UndefOr[ReactNode] = js.native
     var className: js.UndefOr[String] = js.native
     var clearButtonTitle: js.UndefOr[String] = js.native
@@ -86,18 +89,18 @@ object mod extends js.Object {
     var onDayMouseEnter: js.UndefOr[js.Function1[/* date */ Date, Unit]] = js.native
     var onFocus: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLInputElement], Unit]] = js.native
     var onInputClick: js.UndefOr[js.Function0[Unit]] = js.native
-    var onInputError: js.UndefOr[js.Function1[/* err */ AnonCode, Unit]] = js.native
+    var onInputError: js.UndefOr[js.Function1[/* err */ Code, Unit]] = js.native
     var onKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent[HTMLDivElement], Unit]] = js.native
     var onMonthChange: js.UndefOr[js.Function1[/* date */ Date, Unit]] = js.native
     var onMonthMouseLeave: js.UndefOr[js.Function0[Unit]] = js.native
     var onSelect: js.UndefOr[
-        js.Function2[/* date */ Date, /* event */ js.UndefOr[SyntheticEvent[_, Event_]], Unit]
+        js.Function2[/* date */ Date, /* event */ js.UndefOr[SyntheticEvent[_, Event]], Unit]
       ] = js.native
     var onWeekSelect: js.UndefOr[
         js.Function3[
           /* firstDayOfWeek */ Date, 
           /* weekNumber */ String | Double, 
-          /* event */ js.UndefOr[SyntheticEvent[_, Event_]], 
+          /* event */ js.UndefOr[SyntheticEvent[_, Event]], 
           Unit
         ]
       ] = js.native
@@ -107,7 +110,7 @@ object mod extends js.Object {
     var peekNextMonth: js.UndefOr[Boolean] = js.native
     var placeholderText: js.UndefOr[String] = js.native
     var popperClassName: js.UndefOr[String] = js.native
-    var popperContainer: js.UndefOr[js.Function1[/* props */ AnonChildren, ReactNode]] = js.native
+    var popperContainer: js.UndefOr[js.Function1[/* props */ Children, ReactNode]] = js.native
     var popperModifiers: js.UndefOr[Modifiers] = js.native
     var popperPlacement: js.UndefOr[String] = js.native
     var popperProps: js.UndefOr[js.Object] = js.native
@@ -115,7 +118,7 @@ object mod extends js.Object {
     var previousMonthButtonLabel: js.UndefOr[String] = js.native
     var previousYearButtonLabel: js.UndefOr[String] = js.native
     var readOnly: js.UndefOr[Boolean] = js.native
-    var renderCustomHeader: js.UndefOr[js.Function1[/* params */ AnonChangeMonth, ReactNode]] = js.native
+    var renderCustomHeader: js.UndefOr[js.Function1[/* params */ ChangeMonth, ReactNode]] = js.native
     var renderDayContents: js.UndefOr[js.Function2[/* dayOfMonth */ Double, /* date */ js.UndefOr[Date], ReactNode]] = js.native
     var required: js.UndefOr[Boolean] = js.native
     var scrollableMonthYearDropdown: js.UndefOr[Boolean] = js.native
@@ -154,9 +157,9 @@ object mod extends js.Object {
     var wrapperClassName: js.UndefOr[String] = js.native
     var yearDropdownItemNumber: js.UndefOr[Double] = js.native
     def onChange(): Unit = js.native
-    def onChange(date: Null, event: SyntheticEvent[_, Event_]): Unit = js.native
+    def onChange(date: Null, event: SyntheticEvent[_, Event]): Unit = js.native
     def onChange(date: Date): Unit = js.native
-    def onChange(date: Date, event: SyntheticEvent[_, Event_]): Unit = js.native
+    def onChange(date: Date, event: SyntheticEvent[_, Event]): Unit = js.native
   }
   
   @js.native

@@ -36,15 +36,15 @@ object ModifyClusterMaintenanceMessage {
   @scala.inline
   def apply(
     ClusterIdentifier: String,
-    DeferMaintenance: js.UndefOr[scala.Boolean] = js.undefined,
-    DeferMaintenanceDuration: Int | scala.Double = null,
+    DeferMaintenance: js.UndefOr[BooleanOptional] = js.undefined,
+    DeferMaintenanceDuration: js.UndefOr[IntegerOptional] = js.undefined,
     DeferMaintenanceEndTime: TStamp = null,
     DeferMaintenanceIdentifier: String = null,
     DeferMaintenanceStartTime: TStamp = null
   ): ModifyClusterMaintenanceMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeferMaintenance)) __obj.updateDynamic("DeferMaintenance")(DeferMaintenance.asInstanceOf[js.Any])
-    if (DeferMaintenanceDuration != null) __obj.updateDynamic("DeferMaintenanceDuration")(DeferMaintenanceDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeferMaintenance)) __obj.updateDynamic("DeferMaintenance")(DeferMaintenance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeferMaintenanceDuration)) __obj.updateDynamic("DeferMaintenanceDuration")(DeferMaintenanceDuration.get.asInstanceOf[js.Any])
     if (DeferMaintenanceEndTime != null) __obj.updateDynamic("DeferMaintenanceEndTime")(DeferMaintenanceEndTime.asInstanceOf[js.Any])
     if (DeferMaintenanceIdentifier != null) __obj.updateDynamic("DeferMaintenanceIdentifier")(DeferMaintenanceIdentifier.asInstanceOf[js.Any])
     if (DeferMaintenanceStartTime != null) __obj.updateDynamic("DeferMaintenanceStartTime")(DeferMaintenanceStartTime.asInstanceOf[js.Any])

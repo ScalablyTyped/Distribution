@@ -9,27 +9,27 @@ import scala.scalajs.js.annotation._
 
 trait IStateful extends IObservable {
   /** [Method] Add events that will trigger the state to be saved
-  		* @param events String/String[] The event name or an array of event names.
-  		*/
+    * @param events String/String[] The event name or an array of event names.
+    */
   var addStateEvents: js.UndefOr[js.Function1[/* events */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Applies the state to the object
-  		* @param state Object The state
-  		*/
+    * @param state Object The state
+    */
   var applyState: js.UndefOr[js.Function1[/* state */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Destroys this stateful object  */
   var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Gets the current state of the object
-  		* @returns Object The current state
-  		*/
+    * @returns Object The current state
+    */
   var getState: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (Number) */
   var saveDelay: js.UndefOr[Double] = js.undefined
   /** [Method] Conditionally saves a single property from this object to the given state object
-  		* @param propName String The name of the property to save.
-  		* @param state Object The state object in to which to save the property.
-  		* @param stateName String The name to use for the property in state.
-  		* @returns Boolean True if the property was saved, false if not.
-  		*/
+    * @param propName String The name of the property to save.
+    * @param state Object The state object in to which to save the property.
+    * @param stateName String The name to use for the property in state.
+    * @returns Boolean True if the property was saved, false if not.
+    */
   var savePropToState: js.UndefOr[
     js.Function3[
       /* propName */ js.UndefOr[String], 
@@ -39,10 +39,10 @@ trait IStateful extends IObservable {
     ]
   ] = js.undefined
   /** [Method] Gathers additional named properties of the instance and adds their current values to the passed state object
-  		* @param propNames String/String[] The name (or array of names) of the property to save.
-  		* @param state Object The state object in to which to save the property values.
-  		* @returns Object state
-  		*/
+    * @param propNames String/String[] The name (or array of names) of the property to save.
+    * @param state Object The state object in to which to save the property values.
+    * @returns Object state
+    */
   var savePropsToState: js.UndefOr[
     js.Function2[/* propNames */ js.UndefOr[js.Any], /* state */ js.UndefOr[js.Any], _]
   ] = js.undefined
@@ -95,7 +95,7 @@ object IStateful {
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
     resumeEvents: () => Unit = null,
-    saveDelay: Int | Double = null,
+    saveDelay: js.UndefOr[Double] = js.undefined,
     savePropToState: (/* propName */ js.UndefOr[String], /* state */ js.UndefOr[js.Any], /* stateName */ js.UndefOr[String]) => Boolean = null,
     savePropsToState: (/* propNames */ js.UndefOr[js.Any], /* state */ js.UndefOr[js.Any]) => _ = null,
     saveState: () => Unit = null,
@@ -135,7 +135,7 @@ object IStateful {
     if (hasListeners != null) __obj.updateDynamic("hasListeners")(hasListeners.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
@@ -147,15 +147,15 @@ object IStateful {
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (resumeEvent != null) __obj.updateDynamic("resumeEvent")(js.Any.fromFunction1(resumeEvent))
     if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction0(resumeEvents))
-    if (saveDelay != null) __obj.updateDynamic("saveDelay")(saveDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveDelay)) __obj.updateDynamic("saveDelay")(saveDelay.get.asInstanceOf[js.Any])
     if (savePropToState != null) __obj.updateDynamic("savePropToState")(js.Any.fromFunction3(savePropToState))
     if (savePropsToState != null) __obj.updateDynamic("savePropsToState")(js.Any.fromFunction2(savePropsToState))
     if (saveState != null) __obj.updateDynamic("saveState")(js.Any.fromFunction0(saveState))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (stateEvents != null) __obj.updateDynamic("stateEvents")(stateEvents.asInstanceOf[js.Any])
     if (stateId != null) __obj.updateDynamic("stateId")(stateId.asInstanceOf[js.Any])
-    if (!js.isUndefined(stateful)) __obj.updateDynamic("stateful")(stateful.asInstanceOf[js.Any])
+    if (!js.isUndefined(stateful)) __obj.updateDynamic("stateful")(stateful.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction1(suspendEvents))

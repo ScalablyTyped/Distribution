@@ -15,23 +15,23 @@ trait BiquadFilterOptions extends AudioNodeOptions {
 object BiquadFilterOptions {
   @scala.inline
   def apply(
-    Q: Int | Double = null,
-    channelCount: Int | Double = null,
+    Q: js.UndefOr[Double] = js.undefined,
+    channelCount: js.UndefOr[Double] = js.undefined,
     channelCountMode: ChannelCountMode = null,
     channelInterpretation: ChannelInterpretation = null,
-    detune: Int | Double = null,
-    frequency: Int | Double = null,
-    gain: Int | Double = null,
+    detune: js.UndefOr[Double] = js.undefined,
+    frequency: js.UndefOr[Double] = js.undefined,
+    gain: js.UndefOr[Double] = js.undefined,
     `type`: BiquadFilterType = null
   ): BiquadFilterOptions = {
     val __obj = js.Dynamic.literal()
-    if (Q != null) __obj.updateDynamic("Q")(Q.asInstanceOf[js.Any])
-    if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(Q)) __obj.updateDynamic("Q")(Q.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(channelCount)) __obj.updateDynamic("channelCount")(channelCount.get.asInstanceOf[js.Any])
     if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
     if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
-    if (detune != null) __obj.updateDynamic("detune")(detune.asInstanceOf[js.Any])
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
-    if (gain != null) __obj.updateDynamic("gain")(gain.asInstanceOf[js.Any])
+    if (!js.isUndefined(detune)) __obj.updateDynamic("detune")(detune.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frequency)) __obj.updateDynamic("frequency")(frequency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gain)) __obj.updateDynamic("gain")(gain.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BiquadFilterOptions]
   }

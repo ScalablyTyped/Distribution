@@ -22,10 +22,14 @@ trait DiskInfo extends js.Object {
 
 object DiskInfo {
   @scala.inline
-  def apply(Count: Int | scala.Double = null, SizeInGB: Int | scala.Double = null, Type: DiskType = null): DiskInfo = {
+  def apply(
+    Count: js.UndefOr[DiskCount] = js.undefined,
+    SizeInGB: js.UndefOr[DiskSize] = js.undefined,
+    Type: DiskType = null
+  ): DiskInfo = {
     val __obj = js.Dynamic.literal()
-    if (Count != null) __obj.updateDynamic("Count")(Count.asInstanceOf[js.Any])
-    if (SizeInGB != null) __obj.updateDynamic("SizeInGB")(SizeInGB.asInstanceOf[js.Any])
+    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SizeInGB)) __obj.updateDynamic("SizeInGB")(SizeInGB.get.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiskInfo]
   }

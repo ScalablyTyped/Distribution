@@ -1,7 +1,7 @@
 package typings.sharepoint.SP.JsGrid
 
-import typings.sharepoint.AnonBDelayInit
-import typings.sharepoint.AnonDataValue
+import typings.sharepoint.anon.BDelayInit
+import typings.sharepoint.anon.DataValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait IMultiValuePropertyType extends IPropertyType {
   var bMultiValue: Boolean
   var separator: String
   var singleValuePropType: String
-  def GetSerializableMultiValuePropType(): AnonBDelayInit
+  def GetSerializableMultiValuePropType(): BDelayInit
   def InitSingleValuePropType(): Unit
   def LocStrArrayToLocStr(locStrArray: js.Array[String]): String
   def LocStrToLocStrArray(locStr: String): js.Array[String]
@@ -20,8 +20,8 @@ trait IMultiValuePropertyType extends IPropertyType {
 object IMultiValuePropertyType {
   @scala.inline
   def apply(
-    BeginValidateNormalizeConvert: (Double, String, js.Any, Boolean, js.Function1[/* args */ AnonDataValue, Unit], js.Any) => Unit,
-    GetSerializableMultiValuePropType: () => AnonBDelayInit,
+    BeginValidateNormalizeConvert: (Double, String, js.Any, Boolean, js.Function1[/* args */ DataValue, Unit], js.Any) => Unit,
+    GetSerializableMultiValuePropType: () => BDelayInit,
     ID: String,
     InitSingleValuePropType: () => Unit,
     LocStrArrayToLocStr: js.Array[String] => String,

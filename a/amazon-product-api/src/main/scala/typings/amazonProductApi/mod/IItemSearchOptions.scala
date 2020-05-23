@@ -17,7 +17,7 @@ object IItemSearchOptions {
   @scala.inline
   def apply(
     condition: String = null,
-    itemPage: Int | Double = null,
+    itemPage: js.UndefOr[Double] = js.undefined,
     keywords: String = null,
     responseGroup: String = null,
     searchIndex: String = null,
@@ -25,7 +25,7 @@ object IItemSearchOptions {
   ): IItemSearchOptions = {
     val __obj = js.Dynamic.literal()
     if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
-    if (itemPage != null) __obj.updateDynamic("itemPage")(itemPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemPage)) __obj.updateDynamic("itemPage")(itemPage.get.asInstanceOf[js.Any])
     if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
     if (responseGroup != null) __obj.updateDynamic("responseGroup")(responseGroup.asInstanceOf[js.Any])
     if (searchIndex != null) __obj.updateDynamic("searchIndex")(searchIndex.asInstanceOf[js.Any])

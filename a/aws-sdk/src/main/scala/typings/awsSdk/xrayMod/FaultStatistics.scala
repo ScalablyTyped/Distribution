@@ -18,10 +18,13 @@ trait FaultStatistics extends js.Object {
 
 object FaultStatistics {
   @scala.inline
-  def apply(OtherCount: Int | scala.Double = null, TotalCount: Int | scala.Double = null): FaultStatistics = {
+  def apply(
+    OtherCount: js.UndefOr[NullableLong] = js.undefined,
+    TotalCount: js.UndefOr[NullableLong] = js.undefined
+  ): FaultStatistics = {
     val __obj = js.Dynamic.literal()
-    if (OtherCount != null) __obj.updateDynamic("OtherCount")(OtherCount.asInstanceOf[js.Any])
-    if (TotalCount != null) __obj.updateDynamic("TotalCount")(TotalCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(OtherCount)) __obj.updateDynamic("OtherCount")(OtherCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalCount)) __obj.updateDynamic("TotalCount")(TotalCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FaultStatistics]
   }
 }

@@ -9,9 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents your app's future-access list (obtained from the static StorageApplicationPermissions.FutureAccessList property). By picking files and folders, your user grants your app permission to access items that might not be accessible otherwise. If you add these items to your future-access list then you'll retain that permission when your app wants to access those items again later. Items are stored in the future-access list as StorageFile and StorageFolder objects. */
-@JSGlobal("Windows.Storage.AccessCache.StorageItemAccessList")
 @js.native
-abstract class StorageItemAccessList () extends js.Object {
+trait StorageItemAccessList extends js.Object {
   /** Gets an object for retrieving storage items from the access list. */
   var entries: AccessListEntryView = js.native
   /** Gets the maximum number of storage items that the access list can contain. */

@@ -14,10 +14,13 @@ trait IRbmSuggestion extends js.Object {
 
 object IRbmSuggestion {
   @scala.inline
-  def apply(action: IRbmSuggestedAction = null, reply: IRbmSuggestedReply = null): IRbmSuggestion = {
+  def apply(
+    action: js.UndefOr[Null | IRbmSuggestedAction] = js.undefined,
+    reply: js.UndefOr[Null | IRbmSuggestedReply] = js.undefined
+  ): IRbmSuggestion = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (reply != null) __obj.updateDynamic("reply")(reply.asInstanceOf[js.Any])
+    if (!js.isUndefined(action)) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (!js.isUndefined(reply)) __obj.updateDynamic("reply")(reply.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRbmSuggestion]
   }
 }

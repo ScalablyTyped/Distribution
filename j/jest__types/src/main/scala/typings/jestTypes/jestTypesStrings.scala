@@ -46,9 +46,6 @@ object jestTypesStrings {
   sealed trait Function extends js.Object
   
   @js.native
-  sealed trait GLOBAL extends js.Object
-  
-  @js.native
   sealed trait Infinity extends js.Object
   
   @js.native
@@ -269,7 +266,7 @@ object jestTypesStrings {
   sealed trait finish_describe_definition extends js.Object
   
   @js.native
-  sealed trait global_ extends js.Object
+  sealed trait global extends js.Object
   
   @js.native
   sealed trait gray extends DisplayNameColor
@@ -348,9 +345,6 @@ object jestTypesStrings {
   
   @js.native
   sealed trait redBright extends DisplayNameColor
-  
-  @js.native
-  sealed trait root extends js.Object
   
   @js.native
   sealed trait run_describe_finish extends js.Object
@@ -465,8 +459,6 @@ object jestTypesStrings {
   def Float64Array: Float64Array = "Float64Array".asInstanceOf[Float64Array]
   @scala.inline
   def Function: Function = "Function".asInstanceOf[Function]
-  @scala.inline
-  def GLOBAL: GLOBAL = "GLOBAL".asInstanceOf[GLOBAL]
   @scala.inline
   def Infinity: Infinity = "Infinity".asInstanceOf[Infinity]
   @scala.inline
@@ -612,7 +604,7 @@ object jestTypesStrings {
   @scala.inline
   def finish_describe_definition: finish_describe_definition = "finish_describe_definition".asInstanceOf[finish_describe_definition]
   @scala.inline
-  def global_ : global_ = "global".asInstanceOf[global_]
+  def global: global = "global".asInstanceOf[global]
   @scala.inline
   def gray: gray = "gray".asInstanceOf[gray]
   @scala.inline
@@ -665,8 +657,6 @@ object jestTypesStrings {
   def red: red = "red".asInstanceOf[red]
   @scala.inline
   def redBright: redBright = "redBright".asInstanceOf[redBright]
-  @scala.inline
-  def root: root = "root".asInstanceOf[root]
   @scala.inline
   def run_describe_finish: run_describe_finish = "run_describe_finish".asInstanceOf[run_describe_finish]
   @scala.inline

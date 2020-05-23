@@ -20,7 +20,7 @@ trait ListObjectVersionsRequest extends js.Object {
     */
   var KeyMarker: js.UndefOr[typings.awsSdk.s3Mod.KeyMarker] = js.native
   /**
-    * Sets the maximum number of keys returned in the response. The response might contain fewer keys but will never contain more. If additional keys satisfy the search criteria, but were not returned because max-keys was exceeded, the response contains &lt;isTruncated&gt;true&lt;/isTruncated&gt;. To return the additional keys, see key-marker and version-id-marker.
+    * Sets the maximum number of keys returned in the response. By default the API returns up to 1,000 key names. The response might contain fewer keys but will never contain more. If additional keys satisfy the search criteria, but were not returned because max-keys was exceeded, the response contains &lt;isTruncated&gt;true&lt;/isTruncated&gt;. To return the additional keys, see key-marker and version-id-marker.
     */
   var MaxKeys: js.UndefOr[typings.awsSdk.s3Mod.MaxKeys] = js.native
   /**
@@ -40,7 +40,7 @@ object ListObjectVersionsRequest {
     Delimiter: Delimiter = null,
     EncodingType: EncodingType = null,
     KeyMarker: KeyMarker = null,
-    MaxKeys: Int | Double = null,
+    MaxKeys: js.UndefOr[MaxKeys] = js.undefined,
     Prefix: Prefix = null,
     VersionIdMarker: VersionIdMarker = null
   ): ListObjectVersionsRequest = {
@@ -48,7 +48,7 @@ object ListObjectVersionsRequest {
     if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter.asInstanceOf[js.Any])
     if (EncodingType != null) __obj.updateDynamic("EncodingType")(EncodingType.asInstanceOf[js.Any])
     if (KeyMarker != null) __obj.updateDynamic("KeyMarker")(KeyMarker.asInstanceOf[js.Any])
-    if (MaxKeys != null) __obj.updateDynamic("MaxKeys")(MaxKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxKeys)) __obj.updateDynamic("MaxKeys")(MaxKeys.get.asInstanceOf[js.Any])
     if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
     if (VersionIdMarker != null) __obj.updateDynamic("VersionIdMarker")(VersionIdMarker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListObjectVersionsRequest]

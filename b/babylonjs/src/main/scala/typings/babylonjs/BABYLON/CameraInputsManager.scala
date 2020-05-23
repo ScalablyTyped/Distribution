@@ -5,14 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.CameraInputsManager")
 @js.native
-class CameraInputsManager[TCamera /* <: Camera */] protected () extends js.Object {
-  /**
-    * Instantiate a new Camera Input Manager.
-    * @param camera Defines the camera the input manager blongs to
-    */
-  def this(camera: TCamera) = this()
+trait CameraInputsManager[TCamera /* <: Camera */] extends js.Object {
   var _addCheckInputs: js.Any = js.native
   /**
     * Defines the list of inputs attahed to the camera.

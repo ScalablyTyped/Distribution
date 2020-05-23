@@ -33,14 +33,14 @@ object DescribeDirectConnectGatewayAssociationProposalsRequest {
   def apply(
     associatedGatewayId: AssociatedGatewayId = null,
     directConnectGatewayId: DirectConnectGatewayId = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[MaxResultSetSize] = js.undefined,
     nextToken: PaginationToken = null,
     proposalId: DirectConnectGatewayAssociationProposalId = null
   ): DescribeDirectConnectGatewayAssociationProposalsRequest = {
     val __obj = js.Dynamic.literal()
     if (associatedGatewayId != null) __obj.updateDynamic("associatedGatewayId")(associatedGatewayId.asInstanceOf[js.Any])
     if (directConnectGatewayId != null) __obj.updateDynamic("directConnectGatewayId")(directConnectGatewayId.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (proposalId != null) __obj.updateDynamic("proposalId")(proposalId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDirectConnectGatewayAssociationProposalsRequest]

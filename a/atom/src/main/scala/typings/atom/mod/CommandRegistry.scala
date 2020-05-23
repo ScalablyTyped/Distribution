@@ -1,8 +1,8 @@
 package typings.atom.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atom.AnonDisplayName
-import typings.atom.AnonTarget
+import typings.atom.anon.DisplayName
+import typings.atom.anon.Target
 import typings.atom.atomStrings.`atom-text-editor`
 import typings.std.EventTarget
 import typings.std.Node
@@ -33,7 +33,7 @@ trait CommandRegistry extends js.Object {
     */
   def dispatch(target: Node, commandName: String): js.Promise[Unit] | Null = js.native
   /** Find all registered commands matching a query. */
-  def findCommands(params: AnonTarget): js.Array[AnonDisplayName] = js.native
+  def findCommands(params: Target): js.Array[DisplayName] = js.native
   /** Invoke the given callback after dispatching a command event. */
   def onDidDispatch(callback: js.Function1[/* event */ CommandEvent[EventTarget], Unit]): Disposable = js.native
   /** Invoke the given callback before dispatching a command event. */

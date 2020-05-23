@@ -26,7 +26,7 @@ trait IOptions[T /* <: Widget */] extends js.Object {
 
 object IOptions {
   @scala.inline
-  def apply[T /* <: Widget */](shell: T, contextMenuRenderer: IRenderer = null): IOptions[T] = {
+  def apply[T](shell: T, contextMenuRenderer: IRenderer = null): IOptions[T] = {
     val __obj = js.Dynamic.literal(shell = shell.asInstanceOf[js.Any])
     if (contextMenuRenderer != null) __obj.updateDynamic("contextMenuRenderer")(contextMenuRenderer.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions[T]]

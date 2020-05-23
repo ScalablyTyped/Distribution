@@ -1,5 +1,6 @@
 package typings.ionic
 
+import typings.ionic.anon.PartialCommandMetadata
 import typings.ionic.definitionsMod.GenerateOptions
 import typings.ionic.definitionsMod.IConfig
 import typings.ionic.definitionsMod.ILogger

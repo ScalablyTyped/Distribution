@@ -42,6 +42,7 @@ package object ecrMod {
     - typings.awsSdk.awsSdkStrings.ImageTagDoesNotMatchDigest
     - typings.awsSdk.awsSdkStrings.ImageNotFound
     - typings.awsSdk.awsSdkStrings.MissingDigestAndTag
+    - typings.awsSdk.awsSdkStrings.ImageReferencedByManifestList
     - java.lang.String
   */
   type ImageFailureCode = typings.awsSdk.ecrMod._ImageFailureCode | java.lang.String

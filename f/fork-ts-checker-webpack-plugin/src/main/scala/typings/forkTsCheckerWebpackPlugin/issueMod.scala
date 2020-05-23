@@ -1,5 +1,6 @@
 package typings.forkTsCheckerWebpackPlugin
 
+import typings.forkTsCheckerWebpackPlugin.anon.Typeofts
 import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.error
 import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.eslint
 import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.internal

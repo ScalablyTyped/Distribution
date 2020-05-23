@@ -4,9 +4,8 @@ import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
-import typings.expressWinston.AnonError
+import typings.expressWinston.anon.Error
 import typings.logform.mod.Format_
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +32,7 @@ trait BaseLoggerOptions extends js.Object {
   var responseFilter: js.UndefOr[ResponseFilter] = js.undefined
   var responseWhitelist: js.UndefOr[js.Array[String]] = js.undefined
   var skip: js.UndefOr[RouteFilter] = js.undefined
-  var statusLevels: js.UndefOr[AnonError] = js.undefined
+  var statusLevels: js.UndefOr[Error] = js.undefined
 }
 
 object BaseLoggerOptions {
@@ -43,7 +42,7 @@ object BaseLoggerOptions {
     bodyBlacklist: js.Array[String] = null,
     bodyWhitelist: js.Array[String] = null,
     colorize: js.UndefOr[Boolean] = js.undefined,
-    dynamicMeta: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* err */ Error) => js.Object = null,
+    dynamicMeta: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* err */ typings.std.Error) => js.Object = null,
     expressFormat: js.UndefOr[Boolean] = js.undefined,
     format: Format_ = null,
     headerBlacklist: js.Array[String] = null,
@@ -60,21 +59,21 @@ object BaseLoggerOptions {
     responseFilter: (/* res */ FilterResponse, /* propName */ String) => js.Any = null,
     responseWhitelist: js.Array[String] = null,
     skip: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Boolean = null,
-    statusLevels: AnonError = null
+    statusLevels: Error = null
   ): BaseLoggerOptions = {
     val __obj = js.Dynamic.literal()
     if (baseMeta != null) __obj.updateDynamic("baseMeta")(baseMeta.asInstanceOf[js.Any])
     if (bodyBlacklist != null) __obj.updateDynamic("bodyBlacklist")(bodyBlacklist.asInstanceOf[js.Any])
     if (bodyWhitelist != null) __obj.updateDynamic("bodyWhitelist")(bodyWhitelist.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorize)) __obj.updateDynamic("colorize")(colorize.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorize)) __obj.updateDynamic("colorize")(colorize.get.asInstanceOf[js.Any])
     if (dynamicMeta != null) __obj.updateDynamic("dynamicMeta")(js.Any.fromFunction3(dynamicMeta))
-    if (!js.isUndefined(expressFormat)) __obj.updateDynamic("expressFormat")(expressFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(expressFormat)) __obj.updateDynamic("expressFormat")(expressFormat.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (headerBlacklist != null) __obj.updateDynamic("headerBlacklist")(headerBlacklist.asInstanceOf[js.Any])
     if (ignoreRoute != null) __obj.updateDynamic("ignoreRoute")(js.Any.fromFunction2(ignoreRoute))
     if (ignoredRoutes != null) __obj.updateDynamic("ignoredRoutes")(ignoredRoutes.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (!js.isUndefined(meta)) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (!js.isUndefined(meta)) __obj.updateDynamic("meta")(meta.get.asInstanceOf[js.Any])
     if (metaField != null) __obj.updateDynamic("metaField")(metaField.asInstanceOf[js.Any])
     if (msg != null) __obj.updateDynamic("msg")(msg.asInstanceOf[js.Any])
     if (requestField != null) __obj.updateDynamic("requestField")(requestField.asInstanceOf[js.Any])

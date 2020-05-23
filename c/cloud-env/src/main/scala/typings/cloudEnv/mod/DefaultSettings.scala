@@ -34,18 +34,18 @@ object DefaultSettings {
     IP: String = null,
     MONGODB_DB_HOST: String = null,
     MONGODB_DB_PASSWORD: String = null,
-    MONGODB_DB_PORT: Int | Double = null,
+    MONGODB_DB_PORT: js.UndefOr[Double] = js.undefined,
     MONGODB_DB_URL: String = null,
     MONGODB_DB_USERNAME: String = null,
     MYSQL_DB_HOST: String = null,
     MYSQL_DB_PASSWORD: String = null,
-    MYSQL_DB_PORT: Int | Double = null,
+    MYSQL_DB_PORT: js.UndefOr[Double] = js.undefined,
     MYSQL_DB_URL: String = null,
     MYSQL_DB_USERNAME: String = null,
-    PORT: Int | Double = null,
+    PORT: js.UndefOr[Double] = js.undefined,
     POSTGRESQL_DB_HOST: String = null,
     POSTGRESQL_DB_PASSWORD: String = null,
-    POSTGRESQL_DB_PORT: Int | Double = null,
+    POSTGRESQL_DB_PORT: js.UndefOr[Double] = js.undefined,
     POSTGRESQL_DB_URL: String = null,
     POSTGRESQL_DB_USERNAME: String = null
   ): DefaultSettings = {
@@ -55,18 +55,18 @@ object DefaultSettings {
     if (IP != null) __obj.updateDynamic("IP")(IP.asInstanceOf[js.Any])
     if (MONGODB_DB_HOST != null) __obj.updateDynamic("MONGODB_DB_HOST")(MONGODB_DB_HOST.asInstanceOf[js.Any])
     if (MONGODB_DB_PASSWORD != null) __obj.updateDynamic("MONGODB_DB_PASSWORD")(MONGODB_DB_PASSWORD.asInstanceOf[js.Any])
-    if (MONGODB_DB_PORT != null) __obj.updateDynamic("MONGODB_DB_PORT")(MONGODB_DB_PORT.asInstanceOf[js.Any])
+    if (!js.isUndefined(MONGODB_DB_PORT)) __obj.updateDynamic("MONGODB_DB_PORT")(MONGODB_DB_PORT.get.asInstanceOf[js.Any])
     if (MONGODB_DB_URL != null) __obj.updateDynamic("MONGODB_DB_URL")(MONGODB_DB_URL.asInstanceOf[js.Any])
     if (MONGODB_DB_USERNAME != null) __obj.updateDynamic("MONGODB_DB_USERNAME")(MONGODB_DB_USERNAME.asInstanceOf[js.Any])
     if (MYSQL_DB_HOST != null) __obj.updateDynamic("MYSQL_DB_HOST")(MYSQL_DB_HOST.asInstanceOf[js.Any])
     if (MYSQL_DB_PASSWORD != null) __obj.updateDynamic("MYSQL_DB_PASSWORD")(MYSQL_DB_PASSWORD.asInstanceOf[js.Any])
-    if (MYSQL_DB_PORT != null) __obj.updateDynamic("MYSQL_DB_PORT")(MYSQL_DB_PORT.asInstanceOf[js.Any])
+    if (!js.isUndefined(MYSQL_DB_PORT)) __obj.updateDynamic("MYSQL_DB_PORT")(MYSQL_DB_PORT.get.asInstanceOf[js.Any])
     if (MYSQL_DB_URL != null) __obj.updateDynamic("MYSQL_DB_URL")(MYSQL_DB_URL.asInstanceOf[js.Any])
     if (MYSQL_DB_USERNAME != null) __obj.updateDynamic("MYSQL_DB_USERNAME")(MYSQL_DB_USERNAME.asInstanceOf[js.Any])
-    if (PORT != null) __obj.updateDynamic("PORT")(PORT.asInstanceOf[js.Any])
+    if (!js.isUndefined(PORT)) __obj.updateDynamic("PORT")(PORT.get.asInstanceOf[js.Any])
     if (POSTGRESQL_DB_HOST != null) __obj.updateDynamic("POSTGRESQL_DB_HOST")(POSTGRESQL_DB_HOST.asInstanceOf[js.Any])
     if (POSTGRESQL_DB_PASSWORD != null) __obj.updateDynamic("POSTGRESQL_DB_PASSWORD")(POSTGRESQL_DB_PASSWORD.asInstanceOf[js.Any])
-    if (POSTGRESQL_DB_PORT != null) __obj.updateDynamic("POSTGRESQL_DB_PORT")(POSTGRESQL_DB_PORT.asInstanceOf[js.Any])
+    if (!js.isUndefined(POSTGRESQL_DB_PORT)) __obj.updateDynamic("POSTGRESQL_DB_PORT")(POSTGRESQL_DB_PORT.get.asInstanceOf[js.Any])
     if (POSTGRESQL_DB_URL != null) __obj.updateDynamic("POSTGRESQL_DB_URL")(POSTGRESQL_DB_URL.asInstanceOf[js.Any])
     if (POSTGRESQL_DB_USERNAME != null) __obj.updateDynamic("POSTGRESQL_DB_USERNAME")(POSTGRESQL_DB_USERNAME.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultSettings]

@@ -11,9 +11,12 @@ trait SubscriptionTransferInfo extends js.Object {
 
 object SubscriptionTransferInfo {
   @scala.inline
-  def apply(minimumTransferableSeats: Int | Double = null, transferabilityExpirationTime: String = null): SubscriptionTransferInfo = {
+  def apply(
+    minimumTransferableSeats: js.UndefOr[Double] = js.undefined,
+    transferabilityExpirationTime: String = null
+  ): SubscriptionTransferInfo = {
     val __obj = js.Dynamic.literal()
-    if (minimumTransferableSeats != null) __obj.updateDynamic("minimumTransferableSeats")(minimumTransferableSeats.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumTransferableSeats)) __obj.updateDynamic("minimumTransferableSeats")(minimumTransferableSeats.get.asInstanceOf[js.Any])
     if (transferabilityExpirationTime != null) __obj.updateDynamic("transferabilityExpirationTime")(transferabilityExpirationTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionTransferInfo]
   }

@@ -20,9 +20,9 @@ object Options {
     rawDefine: VariableDefinitions = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
-    if (!js.isUndefined(`include css`)) __obj.updateDynamic("include css")((`include css`).asInstanceOf[js.Any])
-    if (!js.isUndefined(linenos)) __obj.updateDynamic("linenos")(linenos.asInstanceOf[js.Any])
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`include css`)) __obj.updateDynamic("include css")(((`include css`).get).asInstanceOf[js.Any])
+    if (!js.isUndefined(linenos)) __obj.updateDynamic("linenos")(linenos.get.asInstanceOf[js.Any])
     if (rawDefine != null) __obj.updateDynamic("rawDefine")(rawDefine.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

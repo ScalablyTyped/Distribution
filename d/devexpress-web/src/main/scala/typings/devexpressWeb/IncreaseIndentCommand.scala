@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * A command to increment the indent level of paragraphs in a selected range.
   */
-@JSGlobal("IncreaseIndentCommand")
-@js.native
-class IncreaseIndentCommand () extends CommandWithSimpleStateBase {
+trait IncreaseIndentCommand extends CommandWithSimpleStateBase {
   /**
     * Executes the IncreaseIndentCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
+}
+
+object IncreaseIndentCommand {
+  @scala.inline
+  def apply(execute: () => Boolean, getState: () => SimpleCommandState): IncreaseIndentCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
+    __obj.asInstanceOf[IncreaseIndentCommand]
+  }
 }
 

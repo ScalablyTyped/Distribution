@@ -1,7 +1,7 @@
 package typings.babylonjs.materialsIndexMod
 
 import typings.babylonjs.HTMLVideoElement
-import typings.babylonjs.minWidthnumbermaxWidthnum
+import typings.babylonjs.anon.minWidthnumbermaxWidthnum
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.videoTextureMod.VideoTextureSettings

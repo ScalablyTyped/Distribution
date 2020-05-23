@@ -38,29 +38,29 @@ trait IConnectionParameters[C /* <: IClient */] extends js.Object {
 
 object IConnectionParameters {
   @scala.inline
-  def apply[C /* <: IClient */](
+  def apply[C](
     Client: Instantiable1[/* config */ String | IConnectionParameters[IClient], C] = null,
     application_name: String = null,
     binary: js.UndefOr[Boolean] = js.undefined,
     client_encoding: String = null,
     connectionString: String = null,
-    connectionTimeoutMillis: Int | Double = null,
+    connectionTimeoutMillis: js.UndefOr[Double] = js.undefined,
     database: String = null,
     encoding: String = null,
     fallback_application_name: String = null,
     host: String = null,
-    idleTimeoutMillis: Int | Double = null,
+    idleTimeoutMillis: js.UndefOr[Double] = js.undefined,
     isDomainSocket: js.UndefOr[Boolean] = js.undefined,
     keepAlive: js.UndefOr[Boolean] = js.undefined,
-    keepAliveInitialDelayMillis: Int | Double = null,
-    keepalives: Int | Double = null,
-    keepalives_idle: Int | Double = null,
-    max: Int | Double = null,
+    keepAliveInitialDelayMillis: js.UndefOr[Double] = js.undefined,
+    keepalives: js.UndefOr[Double] = js.undefined,
+    keepalives_idle: js.UndefOr[Double] = js.undefined,
+    max: js.UndefOr[Double] = js.undefined,
     parseInputDatesAsUTC: js.UndefOr[Boolean] = js.undefined,
     password: DynamicPassword = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     query_timeout: Boolean | Double = null,
-    rows: Int | Double = null,
+    rows: js.UndefOr[Double] = js.undefined,
     ssl: Boolean | ISSLConfig = null,
     statement_timeout: Boolean | Double = null,
     user: String = null
@@ -68,26 +68,26 @@ object IConnectionParameters {
     val __obj = js.Dynamic.literal()
     if (Client != null) __obj.updateDynamic("Client")(Client.asInstanceOf[js.Any])
     if (application_name != null) __obj.updateDynamic("application_name")(application_name.asInstanceOf[js.Any])
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.get.asInstanceOf[js.Any])
     if (client_encoding != null) __obj.updateDynamic("client_encoding")(client_encoding.asInstanceOf[js.Any])
     if (connectionString != null) __obj.updateDynamic("connectionString")(connectionString.asInstanceOf[js.Any])
-    if (connectionTimeoutMillis != null) __obj.updateDynamic("connectionTimeoutMillis")(connectionTimeoutMillis.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectionTimeoutMillis)) __obj.updateDynamic("connectionTimeoutMillis")(connectionTimeoutMillis.get.asInstanceOf[js.Any])
     if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (fallback_application_name != null) __obj.updateDynamic("fallback_application_name")(fallback_application_name.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (idleTimeoutMillis != null) __obj.updateDynamic("idleTimeoutMillis")(idleTimeoutMillis.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDomainSocket)) __obj.updateDynamic("isDomainSocket")(isDomainSocket.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.asInstanceOf[js.Any])
-    if (keepAliveInitialDelayMillis != null) __obj.updateDynamic("keepAliveInitialDelayMillis")(keepAliveInitialDelayMillis.asInstanceOf[js.Any])
-    if (keepalives != null) __obj.updateDynamic("keepalives")(keepalives.asInstanceOf[js.Any])
-    if (keepalives_idle != null) __obj.updateDynamic("keepalives_idle")(keepalives_idle.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (!js.isUndefined(parseInputDatesAsUTC)) __obj.updateDynamic("parseInputDatesAsUTC")(parseInputDatesAsUTC.asInstanceOf[js.Any])
+    if (!js.isUndefined(idleTimeoutMillis)) __obj.updateDynamic("idleTimeoutMillis")(idleTimeoutMillis.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDomainSocket)) __obj.updateDynamic("isDomainSocket")(isDomainSocket.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepAliveInitialDelayMillis)) __obj.updateDynamic("keepAliveInitialDelayMillis")(keepAliveInitialDelayMillis.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepalives)) __obj.updateDynamic("keepalives")(keepalives.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepalives_idle)) __obj.updateDynamic("keepalives_idle")(keepalives_idle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parseInputDatesAsUTC)) __obj.updateDynamic("parseInputDatesAsUTC")(parseInputDatesAsUTC.get.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (query_timeout != null) __obj.updateDynamic("query_timeout")(query_timeout.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
     if (ssl != null) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
     if (statement_timeout != null) __obj.updateDynamic("statement_timeout")(statement_timeout.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])

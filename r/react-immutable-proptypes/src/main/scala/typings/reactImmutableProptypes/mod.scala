@@ -5,7 +5,7 @@ import typings.immutable.Immutable.Map
 import typings.immutable.Immutable.OrderedMap
 import typings.immutable.Immutable.OrderedSet
 import typings.immutable.Immutable.Seq
-import typings.immutable.Immutable.Set_
+import typings.immutable.Immutable.Set
 import typings.immutable.Immutable.Stack
 import typings.propTypes.mod.Requireable
 import typings.propTypes.mod.ValidationMap
@@ -25,7 +25,7 @@ object mod extends js.Object {
   val orderedSet: Requireable[OrderedSet[js.Any]] = js.native
   val record: Requireable[Map[String, js.Any]] = js.native
   val seq: Requireable[Seq[js.Any, js.Any]] = js.native
-  val set: Requireable[Set_[js.Any]] = js.native
+  val set: Requireable[Set[js.Any]] = js.native
   val stack: Requireable[Stack[js.Any]] = js.native
   def contains(`type`: ValidationMap[_]): Requireable[Iterable[_]] = js.native
   def iterableOf[V](`type`: Validator[V]): Requireable[Iterable[_]] = js.native
@@ -37,7 +37,7 @@ object mod extends js.Object {
   def orderedMapOf[V, K](valueType: Validator[V], keyType: Validator[K]): Requireable[OrderedMap[K, V]] = js.native
   def orderedSetOf[V](`type`: Validator[V]): Requireable[OrderedSet[V]] = js.native
   def recordOf(`type`: ValidationMap[_]): Requireable[Map[String, _]] = js.native
-  def setOf[V](`type`: Validator[V]): Requireable[Set_[V]] = js.native
+  def setOf[V](`type`: Validator[V]): Requireable[Set[V]] = js.native
   def shape(`type`: ValidationMap[_]): Requireable[Iterable[_]] = js.native
   def stackOf[V](`type`: Validator[V]): Requireable[Stack[V]] = js.native
 }

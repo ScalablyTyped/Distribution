@@ -20,8 +20,8 @@ object seedRandomOptions {
     state: Boolean | State = null
   ): seedRandomOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(entropy)) __obj.updateDynamic("entropy")(entropy.asInstanceOf[js.Any])
-    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
+    if (!js.isUndefined(entropy)) __obj.updateDynamic("entropy")(entropy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.get.asInstanceOf[js.Any])
     if (pass != null) __obj.updateDynamic("pass")(js.Any.fromFunction4(pass))
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[seedRandomOptions]

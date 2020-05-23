@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * A command to cut the selected text and place it to the clipboard.
   */
-@JSGlobal("CutCommand")
-@js.native
-class CutCommand () extends CommandWithSimpleStateBase {
+trait CutCommand extends CommandWithSimpleStateBase {
   /**
     * Executes the CutCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
+}
+
+object CutCommand {
+  @scala.inline
+  def apply(execute: () => Boolean, getState: () => SimpleCommandState): CutCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
+    __obj.asInstanceOf[CutCommand]
+  }
 }
 

@@ -17,14 +17,8 @@ trait BrowserEventObj extends js.Object {
 
 object BrowserEventObj {
   @scala.inline
-  def apply(
-    targetchanged: Target,
-    targetcreated: Target,
-    targetdestroyed: Target,
-    disconnected: js.UndefOr[scala.Nothing] = js.undefined
-  ): BrowserEventObj = {
+  def apply(targetchanged: Target, targetcreated: Target, targetdestroyed: Target): BrowserEventObj = {
     val __obj = js.Dynamic.literal(targetchanged = targetchanged.asInstanceOf[js.Any], targetcreated = targetcreated.asInstanceOf[js.Any], targetdestroyed = targetdestroyed.asInstanceOf[js.Any])
-    if (!js.isUndefined(disconnected)) __obj.updateDynamic("disconnected")(disconnected.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowserEventObj]
   }
 }

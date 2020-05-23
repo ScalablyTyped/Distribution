@@ -1,7 +1,7 @@
 package typings.semanticUiReactEventStack.typesEventStackMod
 
 import typings.react.mod.Component
-import typings.semanticUiReactEventStack.ReadonlyEventStackProps
+import typings.semanticUiReactEventStack.anon.ReadonlyEventStackProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

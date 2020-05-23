@@ -1,14 +1,14 @@
 package typings.nodeLogglyBulk.mod
 
-import typings.loggly.AnonPassword
+import typings.loggly.anon.Password
 import typings.loggly.mod.LogglyOptions
-import typings.nodeLogglyBulk.AnonRetriesInMilliSeconds
+import typings.nodeLogglyBulk.anon.RetriesInMilliSeconds
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LogglyBulkOptions extends LogglyOptions {
-  var bufferOptions: js.UndefOr[AnonRetriesInMilliSeconds] = js.undefined
+  var bufferOptions: js.UndefOr[RetriesInMilliSeconds] = js.undefined
   var isBulk: js.UndefOr[Boolean] = js.undefined
   var networkErrorsOnConsole: js.UndefOr[Boolean] = js.undefined
   var proxy: js.UndefOr[js.Any] = js.undefined
@@ -21,8 +21,8 @@ object LogglyBulkOptions {
   def apply(
     subdomain: String,
     token: String,
-    auth: AnonPassword = null,
-    bufferOptions: AnonRetriesInMilliSeconds = null,
+    auth: Password = null,
+    bufferOptions: RetriesInMilliSeconds = null,
     host: String = null,
     isBulk: js.UndefOr[Boolean] = js.undefined,
     json: js.UndefOr[Boolean] = js.undefined,
@@ -36,12 +36,12 @@ object LogglyBulkOptions {
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (bufferOptions != null) __obj.updateDynamic("bufferOptions")(bufferOptions.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBulk)) __obj.updateDynamic("isBulk")(isBulk.asInstanceOf[js.Any])
-    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
-    if (!js.isUndefined(networkErrorsOnConsole)) __obj.updateDynamic("networkErrorsOnConsole")(networkErrorsOnConsole.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBulk)) __obj.updateDynamic("isBulk")(isBulk.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(networkErrorsOnConsole)) __obj.updateDynamic("networkErrorsOnConsole")(networkErrorsOnConsole.get.asInstanceOf[js.Any])
     if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(useTagHeader)) __obj.updateDynamic("useTagHeader")(useTagHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(useTagHeader)) __obj.updateDynamic("useTagHeader")(useTagHeader.get.asInstanceOf[js.Any])
     if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogglyBulkOptions]
   }

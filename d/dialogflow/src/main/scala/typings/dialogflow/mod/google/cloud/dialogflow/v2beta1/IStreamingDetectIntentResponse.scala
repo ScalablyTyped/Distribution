@@ -27,22 +27,22 @@ trait IStreamingDetectIntentResponse extends js.Object {
 object IStreamingDetectIntentResponse {
   @scala.inline
   def apply(
-    alternativeQueryResults: js.Array[IQueryResult] = null,
-    outputAudio: Uint8Array | String = null,
-    outputAudioConfig: IOutputAudioConfig = null,
-    queryResult: IQueryResult = null,
-    recognitionResult: IStreamingRecognitionResult = null,
-    responseId: String = null,
-    webhookStatus: IStatus = null
+    alternativeQueryResults: js.UndefOr[Null | js.Array[IQueryResult]] = js.undefined,
+    outputAudio: js.UndefOr[Null | Uint8Array | String] = js.undefined,
+    outputAudioConfig: js.UndefOr[Null | IOutputAudioConfig] = js.undefined,
+    queryResult: js.UndefOr[Null | IQueryResult] = js.undefined,
+    recognitionResult: js.UndefOr[Null | IStreamingRecognitionResult] = js.undefined,
+    responseId: js.UndefOr[Null | String] = js.undefined,
+    webhookStatus: js.UndefOr[Null | IStatus] = js.undefined
   ): IStreamingDetectIntentResponse = {
     val __obj = js.Dynamic.literal()
-    if (alternativeQueryResults != null) __obj.updateDynamic("alternativeQueryResults")(alternativeQueryResults.asInstanceOf[js.Any])
-    if (outputAudio != null) __obj.updateDynamic("outputAudio")(outputAudio.asInstanceOf[js.Any])
-    if (outputAudioConfig != null) __obj.updateDynamic("outputAudioConfig")(outputAudioConfig.asInstanceOf[js.Any])
-    if (queryResult != null) __obj.updateDynamic("queryResult")(queryResult.asInstanceOf[js.Any])
-    if (recognitionResult != null) __obj.updateDynamic("recognitionResult")(recognitionResult.asInstanceOf[js.Any])
-    if (responseId != null) __obj.updateDynamic("responseId")(responseId.asInstanceOf[js.Any])
-    if (webhookStatus != null) __obj.updateDynamic("webhookStatus")(webhookStatus.asInstanceOf[js.Any])
+    if (!js.isUndefined(alternativeQueryResults)) __obj.updateDynamic("alternativeQueryResults")(alternativeQueryResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputAudio)) __obj.updateDynamic("outputAudio")(outputAudio.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputAudioConfig)) __obj.updateDynamic("outputAudioConfig")(outputAudioConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(queryResult)) __obj.updateDynamic("queryResult")(queryResult.asInstanceOf[js.Any])
+    if (!js.isUndefined(recognitionResult)) __obj.updateDynamic("recognitionResult")(recognitionResult.asInstanceOf[js.Any])
+    if (!js.isUndefined(responseId)) __obj.updateDynamic("responseId")(responseId.asInstanceOf[js.Any])
+    if (!js.isUndefined(webhookStatus)) __obj.updateDynamic("webhookStatus")(webhookStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStreamingDetectIntentResponse]
   }
 }

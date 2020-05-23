@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Enumeration
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object DeviceUnpairingResultStatus extends js.Object {
   /** The device object is successfully unpaired. */
   @js.native
   sealed trait unpaired extends DeviceUnpairingResultStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DeviceUnpairingResultStatus with Double] = js.native
-  /* 3 */ @js.native
-  object accessDenied extends TopLevel[accessDenied with Double]
-  
-  /* 1 */ @js.native
-  object alreadyUnpaired extends TopLevel[alreadyUnpaired with Double]
-  
-  /* 4 */ @js.native
-  object failed extends TopLevel[failed with Double]
-  
-  /* 2 */ @js.native
-  object operationAlreadyInProgress extends TopLevel[operationAlreadyInProgress with Double]
-  
-  /* 0 */ @js.native
-  object unpaired extends TopLevel[unpaired with Double]
   
 }
 

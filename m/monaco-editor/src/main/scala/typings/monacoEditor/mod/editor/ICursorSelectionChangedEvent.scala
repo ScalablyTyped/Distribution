@@ -47,8 +47,7 @@ object ICursorSelectionChangedEvent {
     source: String,
     oldSelections: js.Array[Selection] = null
   ): ICursorSelectionChangedEvent = {
-    val __obj = js.Dynamic.literal(modelVersionId = modelVersionId.asInstanceOf[js.Any], oldModelVersionId = oldModelVersionId.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], secondarySelections = secondarySelections.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-    if (oldSelections != null) __obj.updateDynamic("oldSelections")(oldSelections.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(modelVersionId = modelVersionId.asInstanceOf[js.Any], oldModelVersionId = oldModelVersionId.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], secondarySelections = secondarySelections.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], oldSelections = oldSelections.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICursorSelectionChangedEvent]
   }
 }

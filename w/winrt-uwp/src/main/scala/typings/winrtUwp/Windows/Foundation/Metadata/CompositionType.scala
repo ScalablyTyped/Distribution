@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Foundation.Metadata
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object CompositionType extends js.Object {
   /** Indicates that access to the programming element is not restricted. */
   @js.native
   sealed trait public extends CompositionType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CompositionType with Double] = js.native
-  /* 0 */ @js.native
-  object `protected` extends TopLevel[`protected` with Double]
-  
-  /* 1 */ @js.native
-  object public extends TopLevel[public with Double]
   
 }
 

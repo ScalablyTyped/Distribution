@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** SAX XML Reader 6.0 */
-@JSGlobal("MSXML2.SAXXMLReader60")
 @js.native
-class SAXXMLReader60 protected () extends js.Object {
+trait SAXXMLReader60 extends js.Object {
   @JSName("MSXML2.SAXXMLReader60_typekey")
   var MSXML2DotSAXXMLReader60_typekey: SAXXMLReader60 = js.native
   /** Set or get the base URL for the document. */

@@ -110,7 +110,7 @@ object StrictSidebarProps {
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction2(onShow))
     if (onVisible != null) __obj.updateDynamic("onVisible")(js.Any.fromFunction2(onVisible))
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictSidebarProps]
   }

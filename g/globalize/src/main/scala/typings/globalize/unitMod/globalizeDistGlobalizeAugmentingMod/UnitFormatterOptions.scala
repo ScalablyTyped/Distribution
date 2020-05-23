@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 
 trait UnitFormatterOptions extends js.Object {
   /**
-  		 * form: [String] eg. "long", "short" or "narrow".
-  		 */
+    * form: [String] eg. "long", "short" or "narrow".
+    */
   var form: js.UndefOr[long | short | narrow] = js.undefined
   /**
-  		 * numberFormatter: [Function] a number formatter function. Defaults to Globalize .numberFormatter() for the current locale using the default options.
-  		 */
+    * numberFormatter: [Function] a number formatter function. Defaults to Globalize .numberFormatter() for the current locale using the default options.
+    */
   var numberFormatter: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NumberFormatterOptions */ js.Any
   ] = js.undefined

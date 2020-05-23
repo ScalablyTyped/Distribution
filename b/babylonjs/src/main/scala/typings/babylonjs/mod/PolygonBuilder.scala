@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.AnonHoles
+import typings.babylonjs.anon.Holes
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,11 +29,11 @@ object PolygonBuilder extends js.Object {
     * @param earcutInjection can be used to inject your own earcut reference
     * @returns the polygon mesh
     */
-  def CreatePolygon(name: String, options: AnonHoles): typings.babylonjs.meshMod.Mesh = js.native
-  def CreatePolygon(name: String, options: AnonHoles, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = js.native
+  def CreatePolygon(name: String, options: Holes): typings.babylonjs.meshMod.Mesh = js.native
+  def CreatePolygon(name: String, options: Holes, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = js.native
   def CreatePolygon(
     name: String,
-    options: AnonHoles,
+    options: Holes,
     scene: Nullable[typings.babylonjs.sceneMod.Scene],
     earcutInjection: js.Any
   ): typings.babylonjs.meshMod.Mesh = js.native
@@ -47,11 +47,11 @@ object PolygonBuilder extends js.Object {
     * @param earcutInjection can be used to inject your own earcut reference
     * @returns the polygon mesh
     */
-  def ExtrudePolygon(name: String, options: AnonHoles): typings.babylonjs.meshMod.Mesh = js.native
-  def ExtrudePolygon(name: String, options: AnonHoles, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = js.native
+  def ExtrudePolygon(name: String, options: Holes): typings.babylonjs.meshMod.Mesh = js.native
+  def ExtrudePolygon(name: String, options: Holes, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = js.native
   def ExtrudePolygon(
     name: String,
-    options: AnonHoles,
+    options: Holes,
     scene: Nullable[typings.babylonjs.sceneMod.Scene],
     earcutInjection: js.Any
   ): typings.babylonjs.meshMod.Mesh = js.native

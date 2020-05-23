@@ -12,9 +12,9 @@ trait RequestMetadataResponse extends js.Object {
 
 object RequestMetadataResponse {
   @scala.inline
-  def apply(headers: Headers, res: GaxiosResponse[Unit] = null): RequestMetadataResponse = {
+  def apply(headers: Headers, res: js.UndefOr[Null | GaxiosResponse[Unit]] = js.undefined): RequestMetadataResponse = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
-    if (res != null) __obj.updateDynamic("res")(res.asInstanceOf[js.Any])
+    if (!js.isUndefined(res)) __obj.updateDynamic("res")(res.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestMetadataResponse]
   }
 }

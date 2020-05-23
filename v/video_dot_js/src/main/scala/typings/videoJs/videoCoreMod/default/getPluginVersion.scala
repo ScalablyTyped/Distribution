@@ -11,12 +11,12 @@ import scala.scalajs.js.annotation._
   * @param name
   *         The name of a plugin.
   *
-  * @return	The plugin's version or an empty string.
+  * @return    The plugin's version or an empty string.
   */
 @JSImport("video.js/dist/alt/video.core", "getPluginVersion")
 @js.native
 object getPluginVersion
   extends TopLevel[
-      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.getPluginVersion */ js.Any
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.getPlugin */ js.Any
     ]
 

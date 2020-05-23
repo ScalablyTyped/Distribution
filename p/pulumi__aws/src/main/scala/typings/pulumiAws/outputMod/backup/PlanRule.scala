@@ -42,18 +42,18 @@ object PlanRule {
   def apply(
     ruleName: String,
     targetVaultName: String,
-    completionWindow: Int | Double = null,
+    completionWindow: js.UndefOr[Double] = js.undefined,
     lifecycle: PlanRuleLifecycle = null,
     recoveryPointTags: StringDictionary[js.Any] = null,
     schedule: String = null,
-    startWindow: Int | Double = null
+    startWindow: js.UndefOr[Double] = js.undefined
   ): PlanRule = {
     val __obj = js.Dynamic.literal(ruleName = ruleName.asInstanceOf[js.Any], targetVaultName = targetVaultName.asInstanceOf[js.Any])
-    if (completionWindow != null) __obj.updateDynamic("completionWindow")(completionWindow.asInstanceOf[js.Any])
+    if (!js.isUndefined(completionWindow)) __obj.updateDynamic("completionWindow")(completionWindow.get.asInstanceOf[js.Any])
     if (lifecycle != null) __obj.updateDynamic("lifecycle")(lifecycle.asInstanceOf[js.Any])
     if (recoveryPointTags != null) __obj.updateDynamic("recoveryPointTags")(recoveryPointTags.asInstanceOf[js.Any])
     if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
-    if (startWindow != null) __obj.updateDynamic("startWindow")(startWindow.asInstanceOf[js.Any])
+    if (!js.isUndefined(startWindow)) __obj.updateDynamic("startWindow")(startWindow.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlanRule]
   }
 }

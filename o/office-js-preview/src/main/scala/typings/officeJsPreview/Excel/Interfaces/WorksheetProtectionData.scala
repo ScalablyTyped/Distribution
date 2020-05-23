@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 trait WorksheetProtectionData extends js.Object {
   /**
     *
-    * Sheet protection options. Read-only.
+    * Specifies the protection options for the worksheet.
     *
     * [Api set: ExcelApi 1.2]
     */
   var options: js.UndefOr[WorksheetProtectionOptions] = js.undefined
   /**
     *
-    * Indicates if the worksheet is protected. Read-only.
+    * Specifies if the worksheet is protected.
     *
     * [Api set: ExcelApi 1.2]
     */
@@ -28,7 +28,7 @@ object WorksheetProtectionData {
   def apply(options: WorksheetProtectionOptions = null, `protected`: js.UndefOr[Boolean] = js.undefined): WorksheetProtectionData = {
     val __obj = js.Dynamic.literal()
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (!js.isUndefined(`protected`)) __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`protected`)) __obj.updateDynamic("protected")(`protected`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorksheetProtectionData]
   }
 }

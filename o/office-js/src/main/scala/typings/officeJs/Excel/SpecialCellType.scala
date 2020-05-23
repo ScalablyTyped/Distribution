@@ -1,6 +1,5 @@
 package typings.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -69,32 +68,6 @@ object SpecialCellType extends js.Object {
     */
   @js.native
   sealed trait visible extends SpecialCellType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[SpecialCellType with String] = js.native
-  /* "Blanks" */ @js.native
-  object blanks extends TopLevel[blanks with String]
-  
-  /* "ConditionalFormats" */ @js.native
-  object conditionalFormats extends TopLevel[conditionalFormats with String]
-  
-  /* "Constants" */ @js.native
-  object constants extends TopLevel[constants with String]
-  
-  /* "DataValidations" */ @js.native
-  object dataValidations extends TopLevel[dataValidations with String]
-  
-  /* "Formulas" */ @js.native
-  object formulas extends TopLevel[formulas with String]
-  
-  /* "SameConditionalFormat" */ @js.native
-  object sameConditionalFormat extends TopLevel[sameConditionalFormat with String]
-  
-  /* "SameDataValidation" */ @js.native
-  object sameDataValidation extends TopLevel[sameDataValidation with String]
-  
-  /* "Visible" */ @js.native
-  object visible extends TopLevel[visible with String]
   
 }
 

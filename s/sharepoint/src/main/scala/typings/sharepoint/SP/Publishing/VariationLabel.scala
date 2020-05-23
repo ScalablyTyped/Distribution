@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Publishing.VariationLabel")
 @js.native
-class VariationLabel () extends ClientObject {
+trait VariationLabel extends ClientObject {
   def get_displayName(): String = js.native
   def get_isSource(): Boolean = js.native
   def get_language(): String = js.native

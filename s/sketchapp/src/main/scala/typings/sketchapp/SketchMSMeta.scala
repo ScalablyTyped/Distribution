@@ -1,5 +1,6 @@
 package typings.sketchapp
 
+import typings.sketchapp.anon.App
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ trait SketchMSMeta extends js.Object {
   var build: Double
   var commit: String
   var compatibilityVersion: Double
-  var created: AnonApp
+  var created: App
   var fonts: js.Array[String]
   var pagesAndArtboards: SketchMSPagesAndArtboards
   var saveHistory: js.Array[String]
@@ -28,7 +29,7 @@ object SketchMSMeta {
     build: Double,
     commit: String,
     compatibilityVersion: Double,
-    created: AnonApp,
+    created: App,
     fonts: js.Array[String],
     pagesAndArtboards: SketchMSPagesAndArtboards,
     saveHistory: js.Array[String],

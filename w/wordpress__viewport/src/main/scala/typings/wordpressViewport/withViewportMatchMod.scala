@@ -1,5 +1,7 @@
 package typings.wordpressViewport
 
+import typings.react.mod.ComponentType
+import typings.std.Omit
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,18 +21,15 @@ object withViewportMatchMod extends js.Object {
     *
     * ```jsx
     * function MyComponent( { isMobile } ) {
-    * 	return (
-    * 		<div>Currently: { isMobile ? 'Mobile' : 'Not Mobile' }</div>
-    * 	);
+    *     return (
+    *         <div>Currently: { isMobile ? 'Mobile' : 'Not Mobile' }</div>
+    *     );
     * }
     *
     * MyComponent = withViewportMatch( { isMobile: '< small' } )( MyComponent );
     * ```
     */
   // prettier-ignore
-  def default[T /* <: Record[String, String] */](queries: T): js.Function1[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<any> */ /* component */ js.Any, 
-    _
-  ] = js.native
+  def default[T /* <: Record[String, String] */](queries: T): js.Function1[/* component */ ComponentType[_], ComponentType[Omit[_, /* keyof T */ String]]] = js.native
 }
 

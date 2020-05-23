@@ -5,18 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @class
-  * @name pc.XrHitTestSource
-  * @augments pc.EventHandler
-  * @classdesc Represents XR hit test source, which provides access to hit results of real world geometry from AR session.
-  * @description Represents XR hit test source, which provides access to hit results of real world geometry from AR session.
-  * @param {pc.XrManager} manager - WebXR Manager.
-  * @param {object} xrHitTestSource - XRHitTestSource object that is created by WebXR API.
-  * @param {boolean} transient - True if XRHitTestSource created for input source profile.
+  * Represents XR hit test source, which provides access to hit results of real world geometry from AR session.
   * @example
   * hitTestSource.on('result', function (position, rotation) {
-  *     target.setPosition(position);
-  * });
+  target.setPosition(position);
+  });
+  * @param manager - WebXR Manager.
+  * @param xrHitTestSource - XRHitTestSource object that is created by WebXR API.
+  * @param transient - True if XRHitTestSource created for input source profile.
   */
 @JSImport("playcanvas", "XrHitTestSource")
 @js.native

@@ -34,16 +34,16 @@ object DescribeLimitsOutput {
   @scala.inline
   def apply(
     $metadata: ResponseMetadata,
-    AccountMaxReadCapacityUnits: Int | Double = null,
-    AccountMaxWriteCapacityUnits: Int | Double = null,
-    TableMaxReadCapacityUnits: Int | Double = null,
-    TableMaxWriteCapacityUnits: Int | Double = null
+    AccountMaxReadCapacityUnits: js.UndefOr[Double] = js.undefined,
+    AccountMaxWriteCapacityUnits: js.UndefOr[Double] = js.undefined,
+    TableMaxReadCapacityUnits: js.UndefOr[Double] = js.undefined,
+    TableMaxWriteCapacityUnits: js.UndefOr[Double] = js.undefined
   ): DescribeLimitsOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
-    if (AccountMaxReadCapacityUnits != null) __obj.updateDynamic("AccountMaxReadCapacityUnits")(AccountMaxReadCapacityUnits.asInstanceOf[js.Any])
-    if (AccountMaxWriteCapacityUnits != null) __obj.updateDynamic("AccountMaxWriteCapacityUnits")(AccountMaxWriteCapacityUnits.asInstanceOf[js.Any])
-    if (TableMaxReadCapacityUnits != null) __obj.updateDynamic("TableMaxReadCapacityUnits")(TableMaxReadCapacityUnits.asInstanceOf[js.Any])
-    if (TableMaxWriteCapacityUnits != null) __obj.updateDynamic("TableMaxWriteCapacityUnits")(TableMaxWriteCapacityUnits.asInstanceOf[js.Any])
+    if (!js.isUndefined(AccountMaxReadCapacityUnits)) __obj.updateDynamic("AccountMaxReadCapacityUnits")(AccountMaxReadCapacityUnits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(AccountMaxWriteCapacityUnits)) __obj.updateDynamic("AccountMaxWriteCapacityUnits")(AccountMaxWriteCapacityUnits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TableMaxReadCapacityUnits)) __obj.updateDynamic("TableMaxReadCapacityUnits")(TableMaxReadCapacityUnits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TableMaxWriteCapacityUnits)) __obj.updateDynamic("TableMaxWriteCapacityUnits")(TableMaxWriteCapacityUnits.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLimitsOutput]
   }
 }

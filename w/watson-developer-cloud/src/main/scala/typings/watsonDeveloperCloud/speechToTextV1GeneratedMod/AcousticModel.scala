@@ -43,7 +43,7 @@ object AcousticModel {
     language: String = null,
     name: String = null,
     owner: String = null,
-    progress: Int | Double = null,
+    progress: js.UndefOr[Double] = js.undefined,
     status: String = null,
     versions: js.Array[String] = null,
     warnings: String = null
@@ -55,7 +55,7 @@ object AcousticModel {
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
+    if (!js.isUndefined(progress)) __obj.updateDynamic("progress")(progress.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (versions != null) __obj.updateDynamic("versions")(versions.asInstanceOf[js.Any])
     if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])

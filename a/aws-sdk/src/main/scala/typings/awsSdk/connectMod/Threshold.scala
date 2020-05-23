@@ -18,10 +18,10 @@ trait Threshold extends js.Object {
 
 object Threshold {
   @scala.inline
-  def apply(Comparison: Comparison = null, ThresholdValue: Int | Double = null): Threshold = {
+  def apply(Comparison: Comparison = null, ThresholdValue: js.UndefOr[ThresholdValue] = js.undefined): Threshold = {
     val __obj = js.Dynamic.literal()
     if (Comparison != null) __obj.updateDynamic("Comparison")(Comparison.asInstanceOf[js.Any])
-    if (ThresholdValue != null) __obj.updateDynamic("ThresholdValue")(ThresholdValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(ThresholdValue)) __obj.updateDynamic("ThresholdValue")(ThresholdValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Threshold]
   }
 }

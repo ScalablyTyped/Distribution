@@ -76,14 +76,14 @@ object Dataset {
     ]),
     async: js.UndefOr[Boolean] = js.undefined,
     display: String | (js.Function1[/* obj */ T, String]) = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     name: String = null,
     templates: Templates[T] = null
   ): Dataset[T] = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (templates != null) __obj.updateDynamic("templates")(templates.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dataset[T]]

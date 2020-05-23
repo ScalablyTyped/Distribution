@@ -87,8 +87,8 @@ object i18nMod extends js.Object {
   /* static members */
   @js.native
   object Extractor extends js.Object {
-    def create(host: ExtractorHost): AnonExtractor = js.native
-    def create(host: ExtractorHost, locale: String): AnonExtractor = js.native
+    def create(host: ExtractorHost): typings.angularCompiler.anon.Extractor = js.native
+    def create(host: ExtractorHost, locale: String): typings.angularCompiler.anon.Extractor = js.native
   }
   
 }

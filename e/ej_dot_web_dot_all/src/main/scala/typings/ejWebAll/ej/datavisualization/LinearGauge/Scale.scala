@@ -125,16 +125,16 @@ object Scale {
     direction: Direction | String = null,
     indicators: js.Array[ScalesIndicator] = null,
     labels: js.Array[ScalesLabel] = null,
-    length: Int | Double = null,
-    majorIntervalValue: Int | Double = null,
+    length: js.UndefOr[Double] = js.undefined,
+    majorIntervalValue: js.UndefOr[Double] = js.undefined,
     markerPointers: js.Array[ScalesMarkerPointer] = null,
-    maximum: Int | Double = null,
-    minimum: Int | Double = null,
-    minorIntervalValue: Int | Double = null,
-    opacity: Int | Double = null,
+    maximum: js.UndefOr[Double] = js.undefined,
+    minimum: js.UndefOr[Double] = js.undefined,
+    minorIntervalValue: js.UndefOr[Double] = js.undefined,
+    opacity: js.UndefOr[Double] = js.undefined,
     position: ScalesPosition = null,
     ranges: js.Array[ScalesRange] = null,
-    shadowOffset: Int | Double = null,
+    shadowOffset: js.UndefOr[Double] = js.undefined,
     showBarPointers: js.UndefOr[Boolean] = js.undefined,
     showCustomLabels: js.UndefOr[Boolean] = js.undefined,
     showIndicators: js.UndefOr[Boolean] = js.undefined,
@@ -144,7 +144,7 @@ object Scale {
     showTicks: js.UndefOr[Boolean] = js.undefined,
     ticks: js.Array[ScalesTick] = null,
     `type`: ScaleType | String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): Scale = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
@@ -154,26 +154,26 @@ object Scale {
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (indicators != null) __obj.updateDynamic("indicators")(indicators.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (majorIntervalValue != null) __obj.updateDynamic("majorIntervalValue")(majorIntervalValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(majorIntervalValue)) __obj.updateDynamic("majorIntervalValue")(majorIntervalValue.get.asInstanceOf[js.Any])
     if (markerPointers != null) __obj.updateDynamic("markerPointers")(markerPointers.asInstanceOf[js.Any])
-    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
-    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
-    if (minorIntervalValue != null) __obj.updateDynamic("minorIntervalValue")(minorIntervalValue.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximum)) __obj.updateDynamic("maximum")(maximum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimum)) __obj.updateDynamic("minimum")(minimum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minorIntervalValue)) __obj.updateDynamic("minorIntervalValue")(minorIntervalValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (ranges != null) __obj.updateDynamic("ranges")(ranges.asInstanceOf[js.Any])
-    if (shadowOffset != null) __obj.updateDynamic("shadowOffset")(shadowOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBarPointers)) __obj.updateDynamic("showBarPointers")(showBarPointers.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCustomLabels)) __obj.updateDynamic("showCustomLabels")(showCustomLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(showIndicators)) __obj.updateDynamic("showIndicators")(showIndicators.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLabels)) __obj.updateDynamic("showLabels")(showLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMarkerPointers)) __obj.updateDynamic("showMarkerPointers")(showMarkerPointers.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRanges)) __obj.updateDynamic("showRanges")(showRanges.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTicks)) __obj.updateDynamic("showTicks")(showTicks.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadowOffset)) __obj.updateDynamic("shadowOffset")(shadowOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showBarPointers)) __obj.updateDynamic("showBarPointers")(showBarPointers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCustomLabels)) __obj.updateDynamic("showCustomLabels")(showCustomLabels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showIndicators)) __obj.updateDynamic("showIndicators")(showIndicators.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLabels)) __obj.updateDynamic("showLabels")(showLabels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMarkerPointers)) __obj.updateDynamic("showMarkerPointers")(showMarkerPointers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRanges)) __obj.updateDynamic("showRanges")(showRanges.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTicks)) __obj.updateDynamic("showTicks")(showTicks.get.asInstanceOf[js.Any])
     if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scale]
   }
 }

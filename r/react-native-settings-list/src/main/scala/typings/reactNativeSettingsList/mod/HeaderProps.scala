@@ -19,15 +19,15 @@ trait HeaderProps extends js.Object {
 object HeaderProps {
   @scala.inline
   def apply(
-    headerNumberOfLines: Int | Double = null,
+    headerNumberOfLines: js.UndefOr[Double] = js.undefined,
     headerRef: () => Unit = null,
-    headerStyle: StyleProp[TextStyle] = null,
+    headerStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
     headerText: String = null
   ): HeaderProps = {
     val __obj = js.Dynamic.literal()
-    if (headerNumberOfLines != null) __obj.updateDynamic("headerNumberOfLines")(headerNumberOfLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerNumberOfLines)) __obj.updateDynamic("headerNumberOfLines")(headerNumberOfLines.get.asInstanceOf[js.Any])
     if (headerRef != null) __obj.updateDynamic("headerRef")(js.Any.fromFunction0(headerRef))
-    if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerStyle)) __obj.updateDynamic("headerStyle")(headerStyle.asInstanceOf[js.Any])
     if (headerText != null) __obj.updateDynamic("headerText")(headerText.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderProps]
   }

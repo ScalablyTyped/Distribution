@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.babylonjs.anon.Axes
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.webXRAbstractMotionControllerMod.IMinimalMotionControllerObject
 import typings.babylonjs.webXRAbstractMotionControllerMod.MotionControllerHandness
@@ -14,7 +15,7 @@ object webXRMicrosoftMixedRealityControllerMod extends js.Object {
   @js.native
   class WebXRMicrosoftMixedRealityController protected () extends WebXRAbstractMotionController {
     def this(scene: Scene, gamepadObject: IMinimalMotionControllerObject, handness: MotionControllerHandness) = this()
-    val _mapping: AnonAxes = js.native
+    val _mapping: Axes = js.native
     /* protected */ def _updateModel(): Unit = js.native
   }
   

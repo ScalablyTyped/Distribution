@@ -1,7 +1,7 @@
 package typings.reactNativeTabView.pagerMod
 
 import typings.react.mod.Component
-import typings.reactNativeTabView.AnonChildPanGestureHandlerRefs
+import typings.reactNativeTabView.anon.ChildPanGestureHandlerRefs
 import typings.reactNativeTabView.typesMod.Route
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -45,7 +45,7 @@ trait Pager[T /* <: Route */]
   var springConfig: js.Any = js.native
   var springVelocityScale: js.Any = js.native
   @JSName("state")
-  var state_Pager: AnonChildPanGestureHandlerRefs = js.native
+  var state_Pager: ChildPanGestureHandlerRefs = js.native
   var swipeVelocityImpact: js.Any = js.native
   var timingConfig: js.Any = js.native
   var toggleEnabled: js.Any = js.native

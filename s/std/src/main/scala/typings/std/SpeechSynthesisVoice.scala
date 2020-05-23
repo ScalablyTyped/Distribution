@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,17 @@ trait SpeechSynthesisVoice extends js.Object {
   val voiceURI: java.lang.String
 }
 
-@JSGlobal("SpeechSynthesisVoice")
-@js.native
-object SpeechSynthesisVoice extends Instantiable0[SpeechSynthesisVoice]
+object SpeechSynthesisVoice {
+  @scala.inline
+  def apply(
+    default: scala.Boolean,
+    lang: java.lang.String,
+    localService: scala.Boolean,
+    name: java.lang.String,
+    voiceURI: java.lang.String
+  ): SpeechSynthesisVoice = {
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any], localService = localService.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], voiceURI = voiceURI.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpeechSynthesisVoice]
+  }
+}
 

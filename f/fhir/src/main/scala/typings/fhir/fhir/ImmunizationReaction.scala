@@ -56,7 +56,7 @@ object ImmunizationReaction {
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (!js.isUndefined(reported)) __obj.updateDynamic("reported")(reported.asInstanceOf[js.Any])
+    if (!js.isUndefined(reported)) __obj.updateDynamic("reported")(reported.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImmunizationReaction]
   }
 }

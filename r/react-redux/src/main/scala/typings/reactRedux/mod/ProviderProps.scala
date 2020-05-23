@@ -23,7 +23,7 @@ trait ProviderProps[A /* <: Action[_] */] extends js.Object {
 
 object ProviderProps {
   @scala.inline
-  def apply[A /* <: Action[_] */](store: Store[_, A], context: Context[ReactReduxContextValue[_, AnyAction]] = null): ProviderProps[A] = {
+  def apply[A](store: Store[_, A], context: Context[ReactReduxContextValue[_, AnyAction]] = null): ProviderProps[A] = {
     val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderProps[A]]

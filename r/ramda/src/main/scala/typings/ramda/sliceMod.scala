@@ -1,5 +1,7 @@
 package typings.ramda
 
+import typings.ramda.anon.FnCallBList
+import typings.ramda.anon.FnCallList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

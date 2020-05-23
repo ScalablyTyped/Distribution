@@ -19,6 +19,9 @@ object reduxFormStrings {
   sealed trait blur extends js.Object
   
   @js.native
+  sealed trait change extends js.Object
+  
+  @js.native
   sealed trait delete extends js.Object
   
   @js.native
@@ -71,6 +74,8 @@ object reduxFormStrings {
   def append: append = "append".asInstanceOf[append]
   @scala.inline
   def blur: blur = "blur".asInstanceOf[blur]
+  @scala.inline
+  def change: change = "change".asInstanceOf[change]
   @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
   @scala.inline

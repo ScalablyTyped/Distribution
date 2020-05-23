@@ -1,5 +1,9 @@
 package typings.antd
 
+import typings.antd.anon.ButtonStyle
+import typings.antd.anon.PartialRadioGroupState
+import typings.antd.anon.Type
+import typings.antd.anon.TypeofRadioGroup
 import typings.antd.radioButtonMod.RadioButtonProps
 import typings.antd.radioInterfaceMod.RadioGroupContextProps
 import typings.antd.radioInterfaceMod.RadioGroupProps
@@ -28,7 +32,7 @@ object radioMod extends js.Object {
   /* static members */
   @js.native
   object Group extends js.Object {
-    var defaultProps: AnonButtonStyle = js.native
+    var defaultProps: ButtonStyle = js.native
     def getDerivedStateFromProps(nextProps: RadioGroupProps, prevState: RadioGroupState): PartialRadioGroupState = js.native
   }
   
@@ -38,7 +42,7 @@ object radioMod extends js.Object {
     var Button: ForwardRefExoticComponent[RadioButtonProps with RefAttributes[_]] = js.native
     var Group: TypeofRadioGroup = js.native
     var contextType: Context[RadioGroupContextProps | Null] = js.native
-    var defaultProps: AnonType = js.native
+    var defaultProps: Type = js.native
   }
   
 }

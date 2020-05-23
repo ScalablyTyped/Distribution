@@ -47,13 +47,13 @@ object ParserParameters {
     strictEntities: js.UndefOr[Boolean] = js.undefined
   ): ParserParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(lowercaseTagnames)) __obj.updateDynamic("lowercaseTagnames")(lowercaseTagnames.asInstanceOf[js.Any])
-    if (!js.isUndefined(noNamespaces)) __obj.updateDynamic("noNamespaces")(noNamespaces.asInstanceOf[js.Any])
-    if (!js.isUndefined(noNormalizeWhitespaces)) __obj.updateDynamic("noNormalizeWhitespaces")(noNormalizeWhitespaces.asInstanceOf[js.Any])
-    if (!js.isUndefined(noTracing)) __obj.updateDynamic("noTracing")(noTracing.asInstanceOf[js.Any])
-    if (!js.isUndefined(noTrim)) __obj.updateDynamic("noTrim")(noTrim.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictEntities)) __obj.updateDynamic("strictEntities")(strictEntities.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowercaseTagnames)) __obj.updateDynamic("lowercaseTagnames")(lowercaseTagnames.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noNamespaces)) __obj.updateDynamic("noNamespaces")(noNamespaces.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noNormalizeWhitespaces)) __obj.updateDynamic("noNormalizeWhitespaces")(noNormalizeWhitespaces.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noTracing)) __obj.updateDynamic("noTracing")(noTracing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noTrim)) __obj.updateDynamic("noTrim")(noTrim.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictEntities)) __obj.updateDynamic("strictEntities")(strictEntities.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParserParameters]
   }
 }

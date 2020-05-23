@@ -1,7 +1,7 @@
 package typings.reconnectingwebsocket.mod
 
-import typings.reconnectingwebsocket.FnCall
-import typings.reconnectingwebsocket.FnCallData
+import typings.reconnectingwebsocket.anon.FnCall
+import typings.reconnectingwebsocket.anon.FnCallData
 import typings.reconnectingwebsocket.reconnectingwebsocketStrings.close
 import typings.reconnectingwebsocket.reconnectingwebsocketStrings.connecting
 import typings.reconnectingwebsocket.reconnectingwebsocketStrings.error

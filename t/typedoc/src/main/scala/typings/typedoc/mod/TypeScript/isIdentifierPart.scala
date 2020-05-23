@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation._
 object isIdentifierPart extends js.Object {
   def apply(ch: Double): Boolean = js.native
   def apply(ch: Double, languageVersion: typings.typescript.mod.ScriptTarget): Boolean = js.native
+  def apply(
+    ch: Double,
+    languageVersion: typings.typescript.mod.ScriptTarget,
+    identifierVariant: typings.typescript.mod.LanguageVariant
+  ): Boolean = js.native
 }
 

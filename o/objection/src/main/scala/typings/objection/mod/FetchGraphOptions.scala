@@ -13,7 +13,7 @@ object FetchGraphOptions {
   @scala.inline
   def apply(skipFetched: js.UndefOr[Boolean] = js.undefined, transaction: TransactionOrKnex = null): FetchGraphOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(skipFetched)) __obj.updateDynamic("skipFetched")(skipFetched.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipFetched)) __obj.updateDynamic("skipFetched")(skipFetched.get.asInstanceOf[js.Any])
     if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchGraphOptions]
   }

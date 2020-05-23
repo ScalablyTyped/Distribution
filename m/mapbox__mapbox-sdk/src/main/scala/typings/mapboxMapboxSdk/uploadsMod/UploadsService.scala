@@ -1,8 +1,8 @@
 package typings.mapboxMapboxSdk.uploadsMod
 
-import typings.mapboxMapboxSdk.AnonMapId
-import typings.mapboxMapboxSdk.AnonReverse
-import typings.mapboxMapboxSdk.AnonUploadId
+import typings.mapboxMapboxSdk.anon.MapId
+import typings.mapboxMapboxSdk.anon.Reverse
+import typings.mapboxMapboxSdk.anon.UploadId
 import typings.mapboxMapboxSdk.mapiRequestMod.MapiRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ trait UploadsService extends js.Object {
     * Create an upload.
     * @param config
     */
-  def createUpload(config: AnonMapId): MapiRequest
+  def createUpload(config: MapId): MapiRequest
   /**
     * Create S3 credentials.
     */
@@ -23,28 +23,28 @@ trait UploadsService extends js.Object {
     * @param config
     */
   // implicit any
-  def deleteUpload(config: AnonUploadId): js.Any
+  def deleteUpload(config: UploadId): js.Any
   /**
     * Get an upload's status.
     * @param config
     */
   // implicit any
-  def getUpload(config: AnonUploadId): js.Any
+  def getUpload(config: UploadId): js.Any
   /**
     * List the statuses of all recent uploads.
     * @param config
     */
-  def listUploads(config: AnonReverse): MapiRequest
+  def listUploads(config: Reverse): MapiRequest
 }
 
 object UploadsService {
   @scala.inline
   def apply(
-    createUpload: AnonMapId => MapiRequest,
+    createUpload: MapId => MapiRequest,
     createUploadCredentials: () => MapiRequest,
-    deleteUpload: AnonUploadId => js.Any,
-    getUpload: AnonUploadId => js.Any,
-    listUploads: AnonReverse => MapiRequest
+    deleteUpload: UploadId => js.Any,
+    getUpload: UploadId => js.Any,
+    listUploads: Reverse => MapiRequest
   ): UploadsService = {
     val __obj = js.Dynamic.literal(createUpload = js.Any.fromFunction1(createUpload), createUploadCredentials = js.Any.fromFunction0(createUploadCredentials), deleteUpload = js.Any.fromFunction1(deleteUpload), getUpload = js.Any.fromFunction1(getUpload), listUploads = js.Any.fromFunction1(listUploads))
     __obj.asInstanceOf[UploadsService]

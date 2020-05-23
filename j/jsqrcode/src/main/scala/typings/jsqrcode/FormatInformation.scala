@@ -4,23 +4,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("FormatInformation")
-@js.native
-class FormatInformation () extends js.Object {
-  val DataMask: Double = js.native
-  val ErrorCorrectionLevel: typings.jsqrcode.ErrorCorrectionLevel = js.native
-  var dataMask: Double = js.native
-  var errorCorrectionLevel: typings.jsqrcode.ErrorCorrectionLevel = js.native
-  def Equals(other: FormatInformation): Boolean = js.native
-  def GetHashCode(): Double = js.native
+trait FormatInformation extends js.Object {
+  val DataMask: Double
+  val ErrorCorrectionLevel: typings.jsqrcode.ErrorCorrectionLevel
+  var dataMask: Double
+  var errorCorrectionLevel: typings.jsqrcode.ErrorCorrectionLevel
+  def Equals(other: FormatInformation): Boolean
+  def GetHashCode(): Double
 }
 
-/* static members */
-@JSGlobal("FormatInformation")
-@js.native
-object FormatInformation extends js.Object {
-  def decodeFormatInformation(maskedFormatInfo: Double): FormatInformation = js.native
-  /* private */ def doDecodeFormatInformation(maskedFormatInfo: Double): FormatInformation = js.native
-  def numBitsDiffering(a: Double, b: js.Tuple2[Double, Double]): Double = js.native
+object FormatInformation {
+  @scala.inline
+  def apply(
+    DataMask: Double,
+    Equals: FormatInformation => Boolean,
+    ErrorCorrectionLevel: ErrorCorrectionLevel,
+    GetHashCode: () => Double,
+    dataMask: Double,
+    errorCorrectionLevel: ErrorCorrectionLevel
+  ): FormatInformation = {
+    val __obj = js.Dynamic.literal(DataMask = DataMask.asInstanceOf[js.Any], Equals = js.Any.fromFunction1(Equals), ErrorCorrectionLevel = ErrorCorrectionLevel.asInstanceOf[js.Any], GetHashCode = js.Any.fromFunction0(GetHashCode), dataMask = dataMask.asInstanceOf[js.Any], errorCorrectionLevel = errorCorrectionLevel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FormatInformation]
+  }
 }
 

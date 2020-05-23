@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.Template")
 @js.native
-class Template protected () extends js.Object {
+trait Template extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   val AutoTextEntries: typings.activexWord.Word.AutoTextEntries = js.native
   val BuildingBlockEntries: typings.activexWord.Word.BuildingBlockEntries = js.native

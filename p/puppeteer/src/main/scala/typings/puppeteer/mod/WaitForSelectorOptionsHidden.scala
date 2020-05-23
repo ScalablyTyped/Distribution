@@ -12,10 +12,14 @@ trait WaitForSelectorOptionsHidden extends WaitForSelectorOptions {
 
 object WaitForSelectorOptionsHidden {
   @scala.inline
-  def apply(hidden: `true`, timeout: Int | Double = null, visible: js.UndefOr[Boolean] = js.undefined): WaitForSelectorOptionsHidden = {
+  def apply(
+    hidden: `true`,
+    timeout: js.UndefOr[Double] = js.undefined,
+    visible: js.UndefOr[Boolean] = js.undefined
+  ): WaitForSelectorOptionsHidden = {
     val __obj = js.Dynamic.literal(hidden = hidden.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WaitForSelectorOptionsHidden]
   }
 }

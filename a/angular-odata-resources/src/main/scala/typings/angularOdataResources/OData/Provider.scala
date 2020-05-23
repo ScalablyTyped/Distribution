@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("OData.Provider")
 @js.native
-class Provider[T] protected () extends js.Object {
-  def this(callback: ProviderCallback[T]) = this()
+trait Provider[T] extends js.Object {
   var callback: js.Any = js.native
   var expandables: js.Any = js.native
   var filters: js.Any = js.native

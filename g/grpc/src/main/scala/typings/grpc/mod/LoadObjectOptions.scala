@@ -51,10 +51,10 @@ object LoadObjectOptions {
     protobufjsVersion: `5` | `6` | detect = null
   ): LoadObjectOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(binaryAsBase64)) __obj.updateDynamic("binaryAsBase64")(binaryAsBase64.asInstanceOf[js.Any])
-    if (!js.isUndefined(deprecatedArgumentOrder)) __obj.updateDynamic("deprecatedArgumentOrder")(deprecatedArgumentOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(enumsAsStrings)) __obj.updateDynamic("enumsAsStrings")(enumsAsStrings.asInstanceOf[js.Any])
-    if (!js.isUndefined(longsAsStrings)) __obj.updateDynamic("longsAsStrings")(longsAsStrings.asInstanceOf[js.Any])
+    if (!js.isUndefined(binaryAsBase64)) __obj.updateDynamic("binaryAsBase64")(binaryAsBase64.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecatedArgumentOrder)) __obj.updateDynamic("deprecatedArgumentOrder")(deprecatedArgumentOrder.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enumsAsStrings)) __obj.updateDynamic("enumsAsStrings")(enumsAsStrings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(longsAsStrings)) __obj.updateDynamic("longsAsStrings")(longsAsStrings.get.asInstanceOf[js.Any])
     if (protobufjsVersion != null) __obj.updateDynamic("protobufjsVersion")(protobufjsVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadObjectOptions]
   }

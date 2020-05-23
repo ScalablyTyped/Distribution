@@ -31,15 +31,15 @@ trait VpcConfigRequest extends js.Object {
 object VpcConfigRequest {
   @scala.inline
   def apply(
-    endpointPrivateAccess: js.UndefOr[scala.Boolean] = js.undefined,
-    endpointPublicAccess: js.UndefOr[scala.Boolean] = js.undefined,
+    endpointPrivateAccess: js.UndefOr[BoxedBoolean] = js.undefined,
+    endpointPublicAccess: js.UndefOr[BoxedBoolean] = js.undefined,
     publicAccessCidrs: StringList = null,
     securityGroupIds: StringList = null,
     subnetIds: StringList = null
   ): VpcConfigRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(endpointPrivateAccess)) __obj.updateDynamic("endpointPrivateAccess")(endpointPrivateAccess.asInstanceOf[js.Any])
-    if (!js.isUndefined(endpointPublicAccess)) __obj.updateDynamic("endpointPublicAccess")(endpointPublicAccess.asInstanceOf[js.Any])
+    if (!js.isUndefined(endpointPrivateAccess)) __obj.updateDynamic("endpointPrivateAccess")(endpointPrivateAccess.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endpointPublicAccess)) __obj.updateDynamic("endpointPublicAccess")(endpointPublicAccess.get.asInstanceOf[js.Any])
     if (publicAccessCidrs != null) __obj.updateDynamic("publicAccessCidrs")(publicAccessCidrs.asInstanceOf[js.Any])
     if (securityGroupIds != null) __obj.updateDynamic("securityGroupIds")(securityGroupIds.asInstanceOf[js.Any])
     if (subnetIds != null) __obj.updateDynamic("subnetIds")(subnetIds.asInstanceOf[js.Any])

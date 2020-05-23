@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.aliApp.AnonFileList
+import typings.aliApp.anon.FileList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait GetSavedFileListOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")
-  var success_GetSavedFileListOptions: js.UndefOr[js.Function1[/* res */ AnonFileList, Unit]] = js.undefined
+  var success_GetSavedFileListOptions: js.UndefOr[js.Function1[/* res */ FileList, Unit]] = js.undefined
 }
 
 object GetSavedFileListOptions {
@@ -16,7 +16,7 @@ object GetSavedFileListOptions {
   def apply(
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
-    success: /* res */ AnonFileList => Unit = null
+    success: /* res */ FileList => Unit = null
   ): GetSavedFileListOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

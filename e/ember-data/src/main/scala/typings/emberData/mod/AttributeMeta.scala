@@ -15,17 +15,17 @@ trait AttributeMeta[Model /* <: Model */] extends js.Object {
   var name: AttributesFor[Model]
   var options: js.Object
   var parentType: Model
-  var `type`: string | boolean | number | date
+  var `type`: /* keyof ember-data.ember-data/types/registries/transform.TransformRegistry */ string | boolean | number | date
 }
 
 object AttributeMeta {
   @scala.inline
-  def apply[Model /* <: Model */](
+  def apply[Model](
     isAttribute: `true`,
     name: AttributesFor[Model],
     options: js.Object,
     parentType: Model,
-    `type`: string | boolean | number | date
+    `type`: /* keyof ember-data.ember-data/types/registries/transform.TransformRegistry */ string | boolean | number | date
   ): AttributeMeta[Model] = {
     val __obj = js.Dynamic.literal(isAttribute = isAttribute.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], parentType = parentType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

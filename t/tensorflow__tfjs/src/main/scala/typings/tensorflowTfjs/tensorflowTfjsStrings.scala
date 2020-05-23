@@ -6,33 +6,6 @@ import scala.scalajs.js.annotation._
 
 object tensorflowTfjsStrings {
   @js.native
-  sealed trait `1Dot7Dot2` extends js.Object
-  
-  @js.native
-  sealed trait Add extends js.Object
-  
-  @js.native
-  sealed trait AddN extends js.Object
-  
-  @js.native
-  sealed trait BroadcastTo extends js.Object
-  
-  @js.native
-  sealed trait Div extends js.Object
-  
-  @js.native
-  sealed trait FromPixels extends js.Object
-  
-  @js.native
-  sealed trait FusedBatchNorm extends js.Object
-  
-  @js.native
-  sealed trait Identity extends js.Object
-  
-  @js.native
-  sealed trait MaxPoolWithArgmax extends js.Object
-  
-  @js.native
   sealed trait NCDHW extends js.Object
   
   @js.native
@@ -49,27 +22,6 @@ object tensorflowTfjsStrings {
   
   @js.native
   sealed trait NWC extends js.Object
-  
-  @js.native
-  sealed trait NonMaxSuppressionV5 extends js.Object
-  
-  @js.native
-  sealed trait OneHot extends js.Object
-  
-  @js.native
-  sealed trait PadV2 extends js.Object
-  
-  @js.native
-  sealed trait Square extends js.Object
-  
-  @js.native
-  sealed trait SquaredDifference extends js.Object
-  
-  @js.native
-  sealed trait Tile extends js.Object
-  
-  @js.native
-  sealed trait Transpose extends js.Object
   
   @js.native
   sealed trait avg extends js.Object
@@ -126,24 +78,6 @@ object tensorflowTfjsStrings {
   sealed trait valid extends js.Object
   
   @scala.inline
-  def `1Dot7Dot2`: `1Dot7Dot2` = "1.7.2".asInstanceOf[`1Dot7Dot2`]
-  @scala.inline
-  def Add: Add = "Add".asInstanceOf[Add]
-  @scala.inline
-  def AddN: AddN = "AddN".asInstanceOf[AddN]
-  @scala.inline
-  def BroadcastTo: BroadcastTo = "BroadcastTo".asInstanceOf[BroadcastTo]
-  @scala.inline
-  def Div: Div = "Div".asInstanceOf[Div]
-  @scala.inline
-  def FromPixels: FromPixels = "FromPixels".asInstanceOf[FromPixels]
-  @scala.inline
-  def FusedBatchNorm: FusedBatchNorm = "FusedBatchNorm".asInstanceOf[FusedBatchNorm]
-  @scala.inline
-  def Identity: Identity = "Identity".asInstanceOf[Identity]
-  @scala.inline
-  def MaxPoolWithArgmax: MaxPoolWithArgmax = "MaxPoolWithArgmax".asInstanceOf[MaxPoolWithArgmax]
-  @scala.inline
   def NCDHW: NCDHW = "NCDHW".asInstanceOf[NCDHW]
   @scala.inline
   def NCHW: NCHW = "NCHW".asInstanceOf[NCHW]
@@ -155,20 +89,6 @@ object tensorflowTfjsStrings {
   def NHWC: NHWC = "NHWC".asInstanceOf[NHWC]
   @scala.inline
   def NWC: NWC = "NWC".asInstanceOf[NWC]
-  @scala.inline
-  def NonMaxSuppressionV5: NonMaxSuppressionV5 = "NonMaxSuppressionV5".asInstanceOf[NonMaxSuppressionV5]
-  @scala.inline
-  def OneHot: OneHot = "OneHot".asInstanceOf[OneHot]
-  @scala.inline
-  def PadV2: PadV2 = "PadV2".asInstanceOf[PadV2]
-  @scala.inline
-  def Square: Square = "Square".asInstanceOf[Square]
-  @scala.inline
-  def SquaredDifference: SquaredDifference = "SquaredDifference".asInstanceOf[SquaredDifference]
-  @scala.inline
-  def Tile: Tile = "Tile".asInstanceOf[Tile]
-  @scala.inline
-  def Transpose: Transpose = "Transpose".asInstanceOf[Transpose]
   @scala.inline
   def avg: avg = "avg".asInstanceOf[avg]
   @scala.inline

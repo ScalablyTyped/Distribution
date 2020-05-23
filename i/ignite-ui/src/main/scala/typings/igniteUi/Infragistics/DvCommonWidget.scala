@@ -4,9 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Infragistics.DvCommonWidget")
-@js.native
-class DvCommonWidget () extends js.Object {
-  def option(key: js.Object, value: js.Object): Unit = js.native
+trait DvCommonWidget extends js.Object {
+  def option(key: js.Object, value: js.Object): Unit
+}
+
+object DvCommonWidget {
+  @scala.inline
+  def apply(option: (js.Object, js.Object) => Unit): DvCommonWidget = {
+    val __obj = js.Dynamic.literal(option = js.Any.fromFunction2(option))
+    __obj.asInstanceOf[DvCommonWidget]
+  }
 }
 

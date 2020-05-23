@@ -2,7 +2,7 @@ package typings.sortablejs.pluginsMod
 
 import typings.sortablejs.mod.^
 import typings.sortablejs.sortablejsStrings.continue
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.TouchEvent
 import scala.scalajs.js
@@ -26,7 +26,7 @@ trait AutoScrollOptions extends js.Object {
       /* this */ ^, 
       /* offsetX */ Double, 
       /* offsetY */ Double, 
-      /* originalEvent */ Event_, 
+      /* originalEvent */ Event, 
       /* touchEvt */ TouchEvent, 
       /* hoverTargetEl */ HTMLElement, 
       continue | Unit
@@ -51,20 +51,20 @@ object AutoScrollOptions {
       /* this */ ^, 
       /* offsetX */ Double, 
       /* offsetY */ Double, 
-      /* originalEvent */ Event_, 
+      /* originalEvent */ Event, 
       /* touchEvt */ TouchEvent, 
       /* hoverTargetEl */ HTMLElement, 
       continue | Unit
     ] = null,
-    scrollSensitivity: Int | Double = null,
-    scrollSpeed: Int | Double = null
+    scrollSensitivity: js.UndefOr[Double] = js.undefined,
+    scrollSpeed: js.UndefOr[Double] = js.undefined
   ): AutoScrollOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbleScroll)) __obj.updateDynamic("bubbleScroll")(bubbleScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(bubbleScroll)) __obj.updateDynamic("bubbleScroll")(bubbleScroll.get.asInstanceOf[js.Any])
     if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
     if (scrollFn != null) __obj.updateDynamic("scrollFn")(scrollFn.asInstanceOf[js.Any])
-    if (scrollSensitivity != null) __obj.updateDynamic("scrollSensitivity")(scrollSensitivity.asInstanceOf[js.Any])
-    if (scrollSpeed != null) __obj.updateDynamic("scrollSpeed")(scrollSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollSensitivity)) __obj.updateDynamic("scrollSensitivity")(scrollSensitivity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollSpeed)) __obj.updateDynamic("scrollSpeed")(scrollSpeed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoScrollOptions]
   }
 }

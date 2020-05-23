@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("InfoPath.UI")
 @js.native
-class UI protected () extends js.Object {
+trait UI extends js.Object {
   @JSName("InfoPath.UI_typekey")
   var InfoPathDotUI_typekey: UI = js.native
   def Alert(bstrAlertString: String): Unit = js.native

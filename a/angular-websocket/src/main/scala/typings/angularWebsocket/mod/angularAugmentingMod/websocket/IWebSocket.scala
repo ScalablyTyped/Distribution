@@ -2,7 +2,7 @@ package typings.angularWebsocket.mod.angularAugmentingMod.websocket
 
 import typings.angular.mod.IPromise
 import typings.std.CloseEvent
-import typings.std.Event_
+import typings.std.Event
 import typings.std.MessageEvent
 import typings.std.WebSocket
 import scala.scalajs.js
@@ -26,7 +26,7 @@ trait IWebSocket extends js.Object {
   /**
     * List of callbacks to be executed when an error is received from the socket.
     */
-  var onErrorCallbacks: js.Array[js.Function1[/* evt */ Event_, Unit]] = js.native
+  var onErrorCallbacks: js.Array[js.Function1[/* evt */ Event, Unit]] = js.native
   /**
     * List of callbacks to be executed when a message is received from the socket.
     */
@@ -34,7 +34,7 @@ trait IWebSocket extends js.Object {
   /**
     * List of callbacks to be executed when the socket is opened.
     */
-  var onOpenCallbacks: js.Array[js.Function1[/* evt */ Event_, Unit]] = js.native
+  var onOpenCallbacks: js.Array[js.Function1[/* evt */ Event, Unit]] = js.native
   /**
     * Returns either the readyState value from the underlying WebSocket instance
     * or a proprietary value representing the internal state
@@ -71,7 +71,7 @@ trait IWebSocket extends js.Object {
     * @param event event object
     * @returns this instance, for method chaining
     */
-  def onError(callback: js.Function1[/* event */ Event_, Unit]): IWebSocket = js.native
+  def onError(callback: js.Function1[/* event */ Event, Unit]): IWebSocket = js.native
   /**
     * Adds a callback to be executed each time a socket connection has an error for
     * this instance.
@@ -88,7 +88,7 @@ trait IWebSocket extends js.Object {
     * @param event event object
     * @returns this instance, for method chaining
     */
-  def onOpen(callback: js.Function1[/* event */ Event_, Unit]): IWebSocket = js.native
+  def onOpen(callback: js.Function1[/* event */ Event, Unit]): IWebSocket = js.native
   /**
     * Adds data to a queue, and attempts to send if the socket is ready.
     *

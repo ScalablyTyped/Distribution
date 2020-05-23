@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.Grid
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,20 +25,6 @@ object GridLines extends js.Object {
   ///Displays the vertical grid lines only.
   @js.native
   sealed trait Vertical extends GridLines
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[GridLines with Double] = js.native
-  /* 0 */ @js.native
-  object Both extends TopLevel[Both with Double]
-  
-  /* 1 */ @js.native
-  object Horizontal extends TopLevel[Horizontal with Double]
-  
-  /* 3 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 2 */ @js.native
-  object Vertical extends TopLevel[Vertical with Double]
   
 }
 

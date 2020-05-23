@@ -1,6 +1,6 @@
 package typings.nano.mod
 
-import typings.nano.AnonExternal
+import typings.nano.anon.External
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,12 +16,12 @@ trait PartitionInfoResponse extends js.Object {
   // Partition name
   var partition: String
   // Partition sizes
-  var sizes: AnonExternal
+  var sizes: External
 }
 
 object PartitionInfoResponse {
   @scala.inline
-  def apply(db_name: String, doc_count: Double, doc_del_count: Double, partition: String, sizes: AnonExternal): PartitionInfoResponse = {
+  def apply(db_name: String, doc_count: Double, doc_del_count: Double, partition: String, sizes: External): PartitionInfoResponse = {
     val __obj = js.Dynamic.literal(db_name = db_name.asInstanceOf[js.Any], doc_count = doc_count.asInstanceOf[js.Any], doc_del_count = doc_del_count.asInstanceOf[js.Any], partition = partition.asInstanceOf[js.Any], sizes = sizes.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartitionInfoResponse]
   }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DateSchemaConstructor
   extends AnySchemaConstructor
-     with Instantiable0[DateSchema[Date]] {
-  def apply(): DateSchema[Date] = js.native
+     with Instantiable0[DateSchema[js.UndefOr[Date]]] {
+  def apply(): DateSchema[js.UndefOr[Date]] = js.native
 }
 

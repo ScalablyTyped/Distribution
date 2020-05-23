@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A statement of system capabilities
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait CapabilityStatement extends DomainResource {
   /**
     * Contains extended information for property 'acceptUnknown'.
@@ -281,7 +281,7 @@ object CapabilityStatement {
     if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
-    if (!js.isUndefined(experimental)) __obj.updateDynamic("experimental")(experimental.asInstanceOf[js.Any])
+    if (!js.isUndefined(experimental)) __obj.updateDynamic("experimental")(experimental.get.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (implementation != null) __obj.updateDynamic("implementation")(implementation.asInstanceOf[js.Any])

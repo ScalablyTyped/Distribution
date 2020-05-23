@@ -67,7 +67,7 @@ object UserSecurityState {
     if (accountName != null) __obj.updateDynamic("accountName")(accountName.asInstanceOf[js.Any])
     if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
     if (emailRole != null) __obj.updateDynamic("emailRole")(emailRole.asInstanceOf[js.Any])
-    if (!js.isUndefined(isVpn)) __obj.updateDynamic("isVpn")(isVpn.asInstanceOf[js.Any])
+    if (!js.isUndefined(isVpn)) __obj.updateDynamic("isVpn")(isVpn.get.asInstanceOf[js.Any])
     if (logonDateTime != null) __obj.updateDynamic("logonDateTime")(logonDateTime.asInstanceOf[js.Any])
     if (logonId != null) __obj.updateDynamic("logonId")(logonId.asInstanceOf[js.Any])
     if (logonIp != null) __obj.updateDynamic("logonIp")(logonIp.asInstanceOf[js.Any])

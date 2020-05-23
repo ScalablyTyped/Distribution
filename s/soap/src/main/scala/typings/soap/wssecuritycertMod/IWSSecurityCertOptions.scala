@@ -23,7 +23,7 @@ object IWSSecurityCertOptions {
   ): IWSSecurityCertOptions = {
     val __obj = js.Dynamic.literal()
     if (additionalReferences != null) __obj.updateDynamic("additionalReferences")(additionalReferences.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasTimeStamp)) __obj.updateDynamic("hasTimeStamp")(hasTimeStamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasTimeStamp)) __obj.updateDynamic("hasTimeStamp")(hasTimeStamp.get.asInstanceOf[js.Any])
     if (signatureAlgorithm != null) __obj.updateDynamic("signatureAlgorithm")(signatureAlgorithm.asInstanceOf[js.Any])
     if (signatureTransformations != null) __obj.updateDynamic("signatureTransformations")(signatureTransformations.asInstanceOf[js.Any])
     if (signerOptions != null) __obj.updateDynamic("signerOptions")(signerOptions.asInstanceOf[js.Any])

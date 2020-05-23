@@ -5,18 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a time event that triggers a background task to run. */
-@JSGlobal("Windows.ApplicationModel.Background.TimeTrigger")
-@js.native
-class TimeTrigger protected () extends js.Object {
-  /**
-    * Initializes a new instance of a time event trigger.
-    * @param freshnessTime Specifies the number of minutes to wait before scheduling the background task. The system schedules the task within 15 minutes after freshnessTime elapses. If the OneShot property is false, freshnessTime specifies the interval between recurring tasks.
-    * @param oneShot True if the time event trigger will be used once; false if it will be used each time freshnessTime elapses.
-    */
-  def this(freshnessTime: Double, oneShot: Boolean) = this()
+trait TimeTrigger extends js.Object {
   /** Gets the interval of a time event trigger. */
-  var freshnessTime: Double = js.native
+  var freshnessTime: Double
   /** Gets whether the time event trigger will be used only once or each time the FreshnessTime interval elapses. */
-  var oneShot: Boolean = js.native
+  var oneShot: Boolean
+}
+
+object TimeTrigger {
+  @scala.inline
+  def apply(freshnessTime: Double, oneShot: Boolean): TimeTrigger = {
+    val __obj = js.Dynamic.literal(freshnessTime = freshnessTime.asInstanceOf[js.Any], oneShot = oneShot.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TimeTrigger]
+  }
 }
 

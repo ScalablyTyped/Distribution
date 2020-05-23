@@ -22,9 +22,13 @@ trait DescribeBudgetsRequest extends js.Object {
 
 object DescribeBudgetsRequest {
   @scala.inline
-  def apply(AccountId: AccountId, MaxResults: Int | Double = null, NextToken: GenericString = null): DescribeBudgetsRequest = {
+  def apply(
+    AccountId: AccountId,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    NextToken: GenericString = null
+  ): DescribeBudgetsRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeBudgetsRequest]
   }

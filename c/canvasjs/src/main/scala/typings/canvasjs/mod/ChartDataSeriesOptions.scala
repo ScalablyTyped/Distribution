@@ -1,6 +1,6 @@
 package typings.canvasjs.mod
 
-import typings.canvasjs.AnonDataSeries
+import typings.canvasjs.anon.DataSeries
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -172,42 +172,42 @@ object ChartDataSeriesOptions {
   @scala.inline
   def apply(
     dataPoints: js.Array[ChartDataPoint],
-    axisXIndex: Int | Double = null,
+    axisXIndex: js.UndefOr[Double] = js.undefined,
     axisXType: String = null,
-    axisYIndex: Int | Double = null,
+    axisYIndex: js.UndefOr[Double] = js.undefined,
     axisYType: String = null,
     bevelEnabled: js.UndefOr[Boolean] = js.undefined,
     click: /* event */ ChartEvent => Unit = null,
     color: String = null,
     connectNullData: js.UndefOr[Boolean] = js.undefined,
     explodeOnClick: js.UndefOr[Boolean] = js.undefined,
-    fillOpacity: Int | Double = null,
+    fillOpacity: js.UndefOr[Double] = js.undefined,
     highlightEnabled: js.UndefOr[Boolean] = js.undefined,
     indexLabel: String = null,
     indexLabelBackgroundColor: String = null,
     indexLabelFontColor: String = null,
     indexLabelFontFamily: String = null,
-    indexLabelFontSize: Int | Double = null,
+    indexLabelFontSize: js.UndefOr[Double] = js.undefined,
     indexLabelFontStyle: String = null,
     indexLabelFontWeight: String = null,
-    indexLabelFormatter: /* e */ AnonDataSeries => String = null,
+    indexLabelFormatter: /* e */ DataSeries => String = null,
     indexLabelLineColor: String = null,
     indexLabelLineDashType: DashType = null,
-    indexLabelLineThickness: Int | Double = null,
+    indexLabelLineThickness: js.UndefOr[Double] = js.undefined,
     indexLabelOrientation: String = null,
     indexLabelPlacement: String = null,
     innerRadius: Double | String = null,
     legendMarkerBorderColor: String = null,
-    legendMarkerBorderThickness: Int | Double = null,
+    legendMarkerBorderThickness: js.UndefOr[Double] = js.undefined,
     legendMarkerColor: String = null,
     legendMarkerType: String = null,
     legendText: String = null,
     lineDashType: DashType = null,
-    lineThickness: Int | Double = null,
+    lineThickness: js.UndefOr[Double] = js.undefined,
     markerBorderColor: String = null,
-    markerBorderThickness: Int | Double = null,
+    markerBorderThickness: js.UndefOr[Double] = js.undefined,
     markerColor: String = null,
-    markerSize: Int | Double = null,
+    markerSize: js.UndefOr[Double] = js.undefined,
     markerType: String = null,
     mousemove: /* event */ ChartEvent => Unit = null,
     mouseout: /* event */ ChartEvent => Unit = null,
@@ -218,7 +218,7 @@ object ChartDataSeriesOptions {
     radius: Double | String = null,
     risingColor: String = null,
     showInLegend: js.UndefOr[Boolean] = js.undefined,
-    startAngle: Int | Double = null,
+    startAngle: js.UndefOr[Double] = js.undefined,
     toolTipContent: String = null,
     `type`: String = null,
     visible: js.UndefOr[Boolean] = js.undefined,
@@ -228,42 +228,42 @@ object ChartDataSeriesOptions {
     zValueFormatString: String = null
   ): ChartDataSeriesOptions = {
     val __obj = js.Dynamic.literal(dataPoints = dataPoints.asInstanceOf[js.Any])
-    if (axisXIndex != null) __obj.updateDynamic("axisXIndex")(axisXIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(axisXIndex)) __obj.updateDynamic("axisXIndex")(axisXIndex.get.asInstanceOf[js.Any])
     if (axisXType != null) __obj.updateDynamic("axisXType")(axisXType.asInstanceOf[js.Any])
-    if (axisYIndex != null) __obj.updateDynamic("axisYIndex")(axisYIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(axisYIndex)) __obj.updateDynamic("axisYIndex")(axisYIndex.get.asInstanceOf[js.Any])
     if (axisYType != null) __obj.updateDynamic("axisYType")(axisYType.asInstanceOf[js.Any])
-    if (!js.isUndefined(bevelEnabled)) __obj.updateDynamic("bevelEnabled")(bevelEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(bevelEnabled)) __obj.updateDynamic("bevelEnabled")(bevelEnabled.get.asInstanceOf[js.Any])
     if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(connectNullData)) __obj.updateDynamic("connectNullData")(connectNullData.asInstanceOf[js.Any])
-    if (!js.isUndefined(explodeOnClick)) __obj.updateDynamic("explodeOnClick")(explodeOnClick.asInstanceOf[js.Any])
-    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightEnabled)) __obj.updateDynamic("highlightEnabled")(highlightEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectNullData)) __obj.updateDynamic("connectNullData")(connectNullData.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(explodeOnClick)) __obj.updateDynamic("explodeOnClick")(explodeOnClick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillOpacity)) __obj.updateDynamic("fillOpacity")(fillOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightEnabled)) __obj.updateDynamic("highlightEnabled")(highlightEnabled.get.asInstanceOf[js.Any])
     if (indexLabel != null) __obj.updateDynamic("indexLabel")(indexLabel.asInstanceOf[js.Any])
     if (indexLabelBackgroundColor != null) __obj.updateDynamic("indexLabelBackgroundColor")(indexLabelBackgroundColor.asInstanceOf[js.Any])
     if (indexLabelFontColor != null) __obj.updateDynamic("indexLabelFontColor")(indexLabelFontColor.asInstanceOf[js.Any])
     if (indexLabelFontFamily != null) __obj.updateDynamic("indexLabelFontFamily")(indexLabelFontFamily.asInstanceOf[js.Any])
-    if (indexLabelFontSize != null) __obj.updateDynamic("indexLabelFontSize")(indexLabelFontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(indexLabelFontSize)) __obj.updateDynamic("indexLabelFontSize")(indexLabelFontSize.get.asInstanceOf[js.Any])
     if (indexLabelFontStyle != null) __obj.updateDynamic("indexLabelFontStyle")(indexLabelFontStyle.asInstanceOf[js.Any])
     if (indexLabelFontWeight != null) __obj.updateDynamic("indexLabelFontWeight")(indexLabelFontWeight.asInstanceOf[js.Any])
     if (indexLabelFormatter != null) __obj.updateDynamic("indexLabelFormatter")(js.Any.fromFunction1(indexLabelFormatter))
     if (indexLabelLineColor != null) __obj.updateDynamic("indexLabelLineColor")(indexLabelLineColor.asInstanceOf[js.Any])
     if (indexLabelLineDashType != null) __obj.updateDynamic("indexLabelLineDashType")(indexLabelLineDashType.asInstanceOf[js.Any])
-    if (indexLabelLineThickness != null) __obj.updateDynamic("indexLabelLineThickness")(indexLabelLineThickness.asInstanceOf[js.Any])
+    if (!js.isUndefined(indexLabelLineThickness)) __obj.updateDynamic("indexLabelLineThickness")(indexLabelLineThickness.get.asInstanceOf[js.Any])
     if (indexLabelOrientation != null) __obj.updateDynamic("indexLabelOrientation")(indexLabelOrientation.asInstanceOf[js.Any])
     if (indexLabelPlacement != null) __obj.updateDynamic("indexLabelPlacement")(indexLabelPlacement.asInstanceOf[js.Any])
     if (innerRadius != null) __obj.updateDynamic("innerRadius")(innerRadius.asInstanceOf[js.Any])
     if (legendMarkerBorderColor != null) __obj.updateDynamic("legendMarkerBorderColor")(legendMarkerBorderColor.asInstanceOf[js.Any])
-    if (legendMarkerBorderThickness != null) __obj.updateDynamic("legendMarkerBorderThickness")(legendMarkerBorderThickness.asInstanceOf[js.Any])
+    if (!js.isUndefined(legendMarkerBorderThickness)) __obj.updateDynamic("legendMarkerBorderThickness")(legendMarkerBorderThickness.get.asInstanceOf[js.Any])
     if (legendMarkerColor != null) __obj.updateDynamic("legendMarkerColor")(legendMarkerColor.asInstanceOf[js.Any])
     if (legendMarkerType != null) __obj.updateDynamic("legendMarkerType")(legendMarkerType.asInstanceOf[js.Any])
     if (legendText != null) __obj.updateDynamic("legendText")(legendText.asInstanceOf[js.Any])
     if (lineDashType != null) __obj.updateDynamic("lineDashType")(lineDashType.asInstanceOf[js.Any])
-    if (lineThickness != null) __obj.updateDynamic("lineThickness")(lineThickness.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineThickness)) __obj.updateDynamic("lineThickness")(lineThickness.get.asInstanceOf[js.Any])
     if (markerBorderColor != null) __obj.updateDynamic("markerBorderColor")(markerBorderColor.asInstanceOf[js.Any])
-    if (markerBorderThickness != null) __obj.updateDynamic("markerBorderThickness")(markerBorderThickness.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerBorderThickness)) __obj.updateDynamic("markerBorderThickness")(markerBorderThickness.get.asInstanceOf[js.Any])
     if (markerColor != null) __obj.updateDynamic("markerColor")(markerColor.asInstanceOf[js.Any])
-    if (markerSize != null) __obj.updateDynamic("markerSize")(markerSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerSize)) __obj.updateDynamic("markerSize")(markerSize.get.asInstanceOf[js.Any])
     if (markerType != null) __obj.updateDynamic("markerType")(markerType.asInstanceOf[js.Any])
     if (mousemove != null) __obj.updateDynamic("mousemove")(js.Any.fromFunction1(mousemove))
     if (mouseout != null) __obj.updateDynamic("mouseout")(js.Any.fromFunction1(mouseout))
@@ -273,11 +273,11 @@ object ChartDataSeriesOptions {
     if (percentFormatString != null) __obj.updateDynamic("percentFormatString")(percentFormatString.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (risingColor != null) __obj.updateDynamic("risingColor")(risingColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.asInstanceOf[js.Any])
-    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startAngle)) __obj.updateDynamic("startAngle")(startAngle.get.asInstanceOf[js.Any])
     if (toolTipContent != null) __obj.updateDynamic("toolTipContent")(toolTipContent.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (xValueFormatString != null) __obj.updateDynamic("xValueFormatString")(xValueFormatString.asInstanceOf[js.Any])
     if (xValueType != null) __obj.updateDynamic("xValueType")(xValueType.asInstanceOf[js.Any])
     if (yValueFormatString != null) __obj.updateDynamic("yValueFormatString")(yValueFormatString.asInstanceOf[js.Any])

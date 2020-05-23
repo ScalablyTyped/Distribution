@@ -19,7 +19,7 @@ object ICustomizations {
     inCustomizerContext: js.UndefOr[Boolean] = js.undefined
   ): ICustomizations = {
     val __obj = js.Dynamic.literal(scopedSettings = scopedSettings.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any])
-    if (!js.isUndefined(inCustomizerContext)) __obj.updateDynamic("inCustomizerContext")(inCustomizerContext.asInstanceOf[js.Any])
+    if (!js.isUndefined(inCustomizerContext)) __obj.updateDynamic("inCustomizerContext")(inCustomizerContext.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomizations]
   }
 }

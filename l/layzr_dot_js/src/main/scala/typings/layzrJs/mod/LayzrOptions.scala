@@ -31,13 +31,13 @@ object LayzrOptions {
     normal: String = null,
     retina: String = null,
     srcset: String = null,
-    threshold: Int | Double = null
+    threshold: js.UndefOr[Double] = js.undefined
   ): LayzrOptions = {
     val __obj = js.Dynamic.literal()
     if (normal != null) __obj.updateDynamic("normal")(normal.asInstanceOf[js.Any])
     if (retina != null) __obj.updateDynamic("retina")(retina.asInstanceOf[js.Any])
     if (srcset != null) __obj.updateDynamic("srcset")(srcset.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayzrOptions]
   }
 }

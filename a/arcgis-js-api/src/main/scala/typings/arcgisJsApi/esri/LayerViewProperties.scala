@@ -19,7 +19,7 @@ object LayerViewProperties {
   @scala.inline
   def apply(visible: js.UndefOr[Boolean] = js.undefined): LayerViewProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerViewProperties]
   }
 }

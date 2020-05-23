@@ -34,18 +34,18 @@ object MessageRule {
     id: String = null,
     isEnabled: js.UndefOr[Boolean] = js.undefined,
     isReadOnly: js.UndefOr[Boolean] = js.undefined,
-    sequence: Int | Double = null
+    sequence: js.UndefOr[Double] = js.undefined
   ): MessageRule = {
     val __obj = js.Dynamic.literal()
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
     if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (exceptions != null) __obj.updateDynamic("exceptions")(exceptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasError)) __obj.updateDynamic("hasError")(hasError.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasError)) __obj.updateDynamic("hasError")(hasError.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEnabled)) __obj.updateDynamic("isEnabled")(isEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(isReadOnly)) __obj.updateDynamic("isReadOnly")(isReadOnly.asInstanceOf[js.Any])
-    if (sequence != null) __obj.updateDynamic("sequence")(sequence.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEnabled)) __obj.updateDynamic("isEnabled")(isEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isReadOnly)) __obj.updateDynamic("isReadOnly")(isReadOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sequence)) __obj.updateDynamic("sequence")(sequence.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageRule]
   }
 }

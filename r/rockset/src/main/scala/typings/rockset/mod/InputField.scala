@@ -28,7 +28,7 @@ object InputField {
     val __obj = js.Dynamic.literal()
     if (field_name != null) __obj.updateDynamic("field_name")(field_name.asInstanceOf[js.Any])
     if (if_missing != null) __obj.updateDynamic("if_missing")(if_missing.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_drop)) __obj.updateDynamic("is_drop")(is_drop.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_drop)) __obj.updateDynamic("is_drop")(is_drop.get.asInstanceOf[js.Any])
     if (param != null) __obj.updateDynamic("param")(param.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputField]
   }

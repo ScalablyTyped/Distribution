@@ -68,7 +68,7 @@ object GetApplicationResponse {
     CreationTime: string = null,
     Description: string = null,
     HomePageUrl: string = null,
-    IsVerifiedAuthor: js.UndefOr[Boolean] = js.undefined,
+    IsVerifiedAuthor: js.UndefOr[boolean] = js.undefined,
     Labels: listOfString = null,
     LicenseUrl: string = null,
     Name: string = null,
@@ -83,7 +83,7 @@ object GetApplicationResponse {
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (HomePageUrl != null) __obj.updateDynamic("HomePageUrl")(HomePageUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsVerifiedAuthor)) __obj.updateDynamic("IsVerifiedAuthor")(IsVerifiedAuthor.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsVerifiedAuthor)) __obj.updateDynamic("IsVerifiedAuthor")(IsVerifiedAuthor.get.asInstanceOf[js.Any])
     if (Labels != null) __obj.updateDynamic("Labels")(Labels.asInstanceOf[js.Any])
     if (LicenseUrl != null) __obj.updateDynamic("LicenseUrl")(LicenseUrl.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])

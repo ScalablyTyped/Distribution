@@ -27,19 +27,19 @@ object MarkerOptions {
     icon: Icon = null,
     offset: Size = null,
     raiseOnDrag: js.UndefOr[Boolean] = js.undefined,
-    rotation: Int | Double = null,
+    rotation: js.UndefOr[Double] = js.undefined,
     shadow: Icon = null,
     title: String = null
   ): MarkerOptions = {
     val __obj = js.Dynamic.literal()
     if (draggingCursor != null) __obj.updateDynamic("draggingCursor")(draggingCursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableClicking)) __obj.updateDynamic("enableClicking")(enableClicking.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableDragging)) __obj.updateDynamic("enableDragging")(enableDragging.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMassClear)) __obj.updateDynamic("enableMassClear")(enableMassClear.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableClicking)) __obj.updateDynamic("enableClicking")(enableClicking.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableDragging)) __obj.updateDynamic("enableDragging")(enableDragging.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableMassClear)) __obj.updateDynamic("enableMassClear")(enableMassClear.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(raiseOnDrag)) __obj.updateDynamic("raiseOnDrag")(raiseOnDrag.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(raiseOnDrag)) __obj.updateDynamic("raiseOnDrag")(raiseOnDrag.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
     if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerOptions]

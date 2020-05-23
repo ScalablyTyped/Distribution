@@ -32,17 +32,17 @@ object DescribeScalingPlansRequest {
   @scala.inline
   def apply(
     ApplicationSources: ApplicationSources = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: NextToken = null,
     ScalingPlanNames: ScalingPlanNames = null,
-    ScalingPlanVersion: Int | Double = null
+    ScalingPlanVersion: js.UndefOr[ScalingPlanVersion] = js.undefined
   ): DescribeScalingPlansRequest = {
     val __obj = js.Dynamic.literal()
     if (ApplicationSources != null) __obj.updateDynamic("ApplicationSources")(ApplicationSources.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (ScalingPlanNames != null) __obj.updateDynamic("ScalingPlanNames")(ScalingPlanNames.asInstanceOf[js.Any])
-    if (ScalingPlanVersion != null) __obj.updateDynamic("ScalingPlanVersion")(ScalingPlanVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(ScalingPlanVersion)) __obj.updateDynamic("ScalingPlanVersion")(ScalingPlanVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeScalingPlansRequest]
   }
 }

@@ -80,7 +80,7 @@ object ParameterDefinition {
     fhir_comments: js.Array[String] = null,
     id: String = null,
     max: String = null,
-    min: Int | Double = null,
+    min: js.UndefOr[integer] = js.undefined,
     name: code = null,
     profile: Reference = null
   ): ParameterDefinition = {
@@ -99,7 +99,7 @@ object ParameterDefinition {
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterDefinition]

@@ -15,7 +15,7 @@ trait ISelectOption
 object ISelectOption {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     group: String = null,
     name: String = null,
     value: String = null

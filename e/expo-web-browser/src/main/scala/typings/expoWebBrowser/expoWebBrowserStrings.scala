@@ -13,6 +13,9 @@ object expoWebBrowserStrings {
   sealed trait dismiss extends WebBrowserResultType
   
   @js.native
+  sealed trait failed extends js.Object
+  
+  @js.native
   sealed trait opened extends WebBrowserResultType
   
   @js.native
@@ -22,6 +25,8 @@ object expoWebBrowserStrings {
   def cancel: cancel = "cancel".asInstanceOf[cancel]
   @scala.inline
   def dismiss: dismiss = "dismiss".asInstanceOf[dismiss]
+  @scala.inline
+  def failed: failed = "failed".asInstanceOf[failed]
   @scala.inline
   def opened: opened = "opened".asInstanceOf[opened]
   @scala.inline

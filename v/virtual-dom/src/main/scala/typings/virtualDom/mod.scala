@@ -11,6 +11,7 @@ import typings.virtualDom.VirtualDOM.VText
 import typings.virtualDom.VirtualDOM.VTree
 import typings.virtualDom.VirtualDOM.Widget
 import typings.virtualDom.VirtualDOM.createProperties
+import typings.virtualDom.anon.Document
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,17 +20,17 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def create(vnode: Thunk): Element = js.native
-  def create(vnode: Thunk, opts: AnonDocument): Element = js.native
+  def create(vnode: Thunk, opts: Document): Element = js.native
   def create(vnode: VNode): Element = js.native
-  def create(vnode: VNode, opts: AnonDocument): Element = js.native
+  def create(vnode: VNode, opts: Document): Element = js.native
   /**
     create() calls either document.createElement() or document.createElementNS(),
     for which the common denominator is Element (not HTMLElement).
     */
   def create(vnode: VText): Text = js.native
-  def create(vnode: VText, opts: AnonDocument): Text = js.native
+  def create(vnode: VText, opts: Document): Text = js.native
   def create(vnode: Widget): Element = js.native
-  def create(vnode: Widget, opts: AnonDocument): Element = js.native
+  def create(vnode: Widget, opts: Document): Element = js.native
   def diff(left: VTree, right: VTree): js.Array[VPatch] = js.native
   def h(tagName: String, children: String): VNode = js.native
   def h(tagName: String, children: js.Array[VChild]): VNode = js.native

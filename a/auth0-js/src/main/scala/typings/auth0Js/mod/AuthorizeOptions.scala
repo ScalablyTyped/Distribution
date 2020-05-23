@@ -2,6 +2,7 @@ package typings.auth0Js.mod
 
 import typings.auth0Js.auth0JsStrings.login
 import typings.auth0Js.auth0JsStrings.signUp
+import typings.auth0Js.auth0JsStrings.signup_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,6 +25,7 @@ trait AuthorizeOptions extends js.Object {
   var responseMode: js.UndefOr[String] = js.undefined
   var responseType: js.UndefOr[String] = js.undefined
   var scope: js.UndefOr[String] = js.undefined
+  var screen_hint: js.UndefOr[signup_] = js.undefined
   var state: js.UndefOr[String] = js.undefined
 }
 
@@ -47,6 +49,7 @@ object AuthorizeOptions {
     responseMode: String = null,
     responseType: String = null,
     scope: String = null,
+    screen_hint: signup_ = null,
     state: String = null
   ): AuthorizeOptions = {
     val __obj = js.Dynamic.literal()
@@ -67,6 +70,7 @@ object AuthorizeOptions {
     if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode.asInstanceOf[js.Any])
     if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (screen_hint != null) __obj.updateDynamic("screen_hint")(screen_hint.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizeOptions]
   }

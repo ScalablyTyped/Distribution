@@ -1,46 +1,32 @@
 package typings.materializeCss.M
 
-import typings.materializeCss.MElements
-import typings.materializeCss.PartialModalOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("M.Modal")
-@js.native
-class Modal ()
+trait Modal
   extends Component[ModalOptions]
      with Openable {
   /**
     * ID of the modal element
     */
-  var id: String = js.native
-  /* CompleteClass */
-  override var isOpen: Boolean = js.native
-  /* CompleteClass */
-  override def close(): Unit = js.native
-  /* CompleteClass */
-  override def open(): Unit = js.native
+  var id: String
 }
 
-/* static members */
-@JSGlobal("M.Modal")
-@js.native
-object Modal extends js.Object {
-  /**
-    * Get Instance
-    */
-  def getInstance(elem: Element): Modal = js.native
-  /**
-    * Init Modals
-    */
-  def init(els: MElements): js.Array[Modal] = js.native
-  def init(els: MElements, options: PartialModalOptions): js.Array[Modal] = js.native
-  /**
-    * Init Modal
-    */
-  def init(els: Element): Modal = js.native
-  def init(els: Element, options: PartialModalOptions): Modal = js.native
+object Modal {
+  @scala.inline
+  def apply(
+    close: () => Unit,
+    destroy: () => Unit,
+    el: Element,
+    id: String,
+    isOpen: Boolean,
+    open: () => Unit,
+    options: ModalOptions
+  ): Modal = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), destroy = js.Any.fromFunction0(destroy), el = el.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], open = js.Any.fromFunction0(open), options = options.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Modal]
+  }
 }
 

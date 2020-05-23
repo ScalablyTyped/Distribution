@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +24,11 @@ trait SublayersOwner extends js.Object {
   def findSublayerById(id: Double): Sublayer
 }
 
-@JSGlobal("__esri.SublayersOwner")
-@js.native
-object SublayersOwner extends TopLevel[SublayersOwnerConstructor]
+object SublayersOwner {
+  @scala.inline
+  def apply(createServiceSublayers: () => Collection[Sublayer], findSublayerById: Double => Sublayer): SublayersOwner = {
+    val __obj = js.Dynamic.literal(createServiceSublayers = js.Any.fromFunction0(createServiceSublayers), findSublayerById = js.Any.fromFunction1(findSublayerById))
+    __obj.asInstanceOf[SublayersOwner]
+  }
+}
 

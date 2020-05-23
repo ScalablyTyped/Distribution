@@ -17,10 +17,10 @@ trait DailySchedule extends js.Object {
 
 object DailySchedule {
   @scala.inline
-  def apply(hourUTC: Int | Double = null, minuteUTC: Int | Double = null): DailySchedule = {
+  def apply(hourUTC: js.UndefOr[Double] = js.undefined, minuteUTC: js.UndefOr[Double] = js.undefined): DailySchedule = {
     val __obj = js.Dynamic.literal()
-    if (hourUTC != null) __obj.updateDynamic("hourUTC")(hourUTC.asInstanceOf[js.Any])
-    if (minuteUTC != null) __obj.updateDynamic("minuteUTC")(minuteUTC.asInstanceOf[js.Any])
+    if (!js.isUndefined(hourUTC)) __obj.updateDynamic("hourUTC")(hourUTC.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minuteUTC)) __obj.updateDynamic("minuteUTC")(minuteUTC.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DailySchedule]
   }
 }

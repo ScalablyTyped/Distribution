@@ -1,8 +1,8 @@
 package typings.intlMessageformat.coreMod
 
-import typings.intlMessageformat.AnonDate
-import typings.intlMessageformat.FnCall
-import typings.intlMessageformat.PartialFormats
+import typings.intlMessageformat.anon.Date
+import typings.intlMessageformat.anon.FnCall
+import typings.intlMessageformat.anon.PartialFormats
 import typings.intlMessageformatParser.mod.MessageFormatElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -47,6 +47,6 @@ class default protected () extends IntlMessageFormat {
 object default extends js.Object {
   var __parse: js.UndefOr[FnCall] = js.native
   var defaultLocale: String = js.native
-  var formats: AnonDate = js.native
+  var formats: Date = js.native
 }
 

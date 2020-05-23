@@ -21,15 +21,15 @@ object WebhookInfo {
     pending_update_count: Double,
     url: String,
     allowed_updates: js.Array[String] = null,
-    last_error_date: Int | Double = null,
+    last_error_date: js.UndefOr[Double] = js.undefined,
     last_error_message: String = null,
-    max_connections: Int | Double = null
+    max_connections: js.UndefOr[Double] = js.undefined
   ): WebhookInfo = {
     val __obj = js.Dynamic.literal(has_custom_certificate = has_custom_certificate.asInstanceOf[js.Any], pending_update_count = pending_update_count.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (allowed_updates != null) __obj.updateDynamic("allowed_updates")(allowed_updates.asInstanceOf[js.Any])
-    if (last_error_date != null) __obj.updateDynamic("last_error_date")(last_error_date.asInstanceOf[js.Any])
+    if (!js.isUndefined(last_error_date)) __obj.updateDynamic("last_error_date")(last_error_date.get.asInstanceOf[js.Any])
     if (last_error_message != null) __obj.updateDynamic("last_error_message")(last_error_message.asInstanceOf[js.Any])
-    if (max_connections != null) __obj.updateDynamic("max_connections")(max_connections.asInstanceOf[js.Any])
+    if (!js.isUndefined(max_connections)) __obj.updateDynamic("max_connections")(max_connections.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebhookInfo]
   }
 }

@@ -74,7 +74,7 @@ trait PlusMapsCircle extends js.Object {
   /**
     * 设置圆圈填充颜色的透明度
     * 圆圈默认值为不透明。
-    * 	如果设置的值不合法则保持原有的透明度；该方法设置将导致地图中的圆圈立即更新。
+    *     如果设置的值不合法则保持原有的透明度；该方法设置将导致地图中的圆圈立即更新。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -83,7 +83,7 @@ trait PlusMapsCircle extends js.Object {
   /**
     * 设置圆圈边框的线条宽度
     * 圆圈边框的默认值为5。
-    * 	如果设置的值不合法则保持原有的宽度；该方法设置将导致地图中的圆圈立即更新。
+    *     如果设置的值不合法则保持原有的宽度；该方法设置将导致地图中的圆圈立即更新。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -108,7 +108,7 @@ trait PlusMapsCircle extends js.Object {
   /**
     * 设置圆圈的边框颜色
     * 圆圈默认值为不透明。
-    * 	如果设置的值不合法则保持原有的透明度；该方法设置将导致地图中的圆圈立即更新。
+    *     如果设置的值不合法则保持原有的透明度；该方法设置将导致地图中的圆圈立即更新。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */

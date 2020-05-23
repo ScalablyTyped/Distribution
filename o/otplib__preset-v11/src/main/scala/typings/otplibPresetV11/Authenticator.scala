@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Authenticator")
 @js.native
-class Authenticator () extends TOTP {
+trait Authenticator extends TOTP {
   var Authenticator: Instantiable0[typings.otplibPresetV11.Authenticator] = js.native
   def decode(encodedKey: String): String = js.native
   def encode(secret: String): String = js.native

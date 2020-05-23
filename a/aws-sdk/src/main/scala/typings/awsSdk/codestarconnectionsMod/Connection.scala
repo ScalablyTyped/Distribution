@@ -19,7 +19,7 @@ trait Connection extends js.Object {
     */
   var ConnectionStatus: js.UndefOr[typings.awsSdk.codestarconnectionsMod.ConnectionStatus] = js.native
   /**
-    * The name of the external provider where your third-party code repository is configured. For Bitbucket, this is the account ID of the owner of the Bitbucket repository.
+    * The identifier of the external provider where your third-party code repository is configured. For Bitbucket, this is the account ID of the owner of the Bitbucket repository.
     */
   var OwnerAccountId: js.UndefOr[AccountId] = js.native
   /**

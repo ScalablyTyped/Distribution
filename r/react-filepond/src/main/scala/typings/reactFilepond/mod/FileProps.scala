@@ -21,14 +21,14 @@ object FileProps {
     metadata: StringDictionary[js.Any] = null,
     name: String = null,
     origin: FilePondOrigin = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): FileProps = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileProps]
   }

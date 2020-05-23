@@ -35,13 +35,13 @@ object ListPartsRequest {
     Bucket: BucketName,
     Key: ObjectKey,
     UploadId: MultipartUploadId,
-    MaxParts: Int | Double = null,
-    PartNumberMarker: Int | Double = null,
+    MaxParts: js.UndefOr[MaxParts] = js.undefined,
+    PartNumberMarker: js.UndefOr[PartNumberMarker] = js.undefined,
     RequestPayer: RequestPayer = null
   ): ListPartsRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any], UploadId = UploadId.asInstanceOf[js.Any])
-    if (MaxParts != null) __obj.updateDynamic("MaxParts")(MaxParts.asInstanceOf[js.Any])
-    if (PartNumberMarker != null) __obj.updateDynamic("PartNumberMarker")(PartNumberMarker.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxParts)) __obj.updateDynamic("MaxParts")(MaxParts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PartNumberMarker)) __obj.updateDynamic("PartNumberMarker")(PartNumberMarker.get.asInstanceOf[js.Any])
     if (RequestPayer != null) __obj.updateDynamic("RequestPayer")(RequestPayer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPartsRequest]
   }

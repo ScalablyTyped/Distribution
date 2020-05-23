@@ -54,19 +54,19 @@ object IHowlProperties {
     onstop: /* soundId */ Double => Unit = null,
     onunlock: /* soundId */ Double => Unit = null,
     onvolume: /* soundId */ Double => Unit = null,
-    pool: Int | Double = null,
+    pool: js.UndefOr[Double] = js.undefined,
     preload: js.UndefOr[Boolean] = js.undefined,
-    rate: Int | Double = null,
+    rate: js.UndefOr[Double] = js.undefined,
     sprite: IHowlSoundSpriteDefinition = null,
-    volume: Int | Double = null,
+    volume: js.UndefOr[Double] = js.undefined,
     xhrWithCredentials: js.UndefOr[Boolean] = js.undefined
   ): IHowlProperties = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(html5)) __obj.updateDynamic("html5")(html5.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (!js.isUndefined(mute)) __obj.updateDynamic("mute")(mute.asInstanceOf[js.Any])
+    if (!js.isUndefined(html5)) __obj.updateDynamic("html5")(html5.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mute)) __obj.updateDynamic("mute")(mute.get.asInstanceOf[js.Any])
     if (onend != null) __obj.updateDynamic("onend")(js.Any.fromFunction1(onend))
     if (onfade != null) __obj.updateDynamic("onfade")(js.Any.fromFunction1(onfade))
     if (onload != null) __obj.updateDynamic("onload")(js.Any.fromFunction0(onload))
@@ -80,12 +80,12 @@ object IHowlProperties {
     if (onstop != null) __obj.updateDynamic("onstop")(js.Any.fromFunction1(onstop))
     if (onunlock != null) __obj.updateDynamic("onunlock")(js.Any.fromFunction1(onunlock))
     if (onvolume != null) __obj.updateDynamic("onvolume")(js.Any.fromFunction1(onvolume))
-    if (pool != null) __obj.updateDynamic("pool")(pool.asInstanceOf[js.Any])
-    if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
-    if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
+    if (!js.isUndefined(pool)) __obj.updateDynamic("pool")(pool.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rate)) __obj.updateDynamic("rate")(rate.get.asInstanceOf[js.Any])
     if (sprite != null) __obj.updateDynamic("sprite")(sprite.asInstanceOf[js.Any])
-    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
-    if (!js.isUndefined(xhrWithCredentials)) __obj.updateDynamic("xhrWithCredentials")(xhrWithCredentials.asInstanceOf[js.Any])
+    if (!js.isUndefined(volume)) __obj.updateDynamic("volume")(volume.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xhrWithCredentials)) __obj.updateDynamic("xhrWithCredentials")(xhrWithCredentials.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHowlProperties]
   }
 }

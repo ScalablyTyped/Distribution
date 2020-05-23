@@ -47,11 +47,11 @@ trait Command extends js.Object {
     */
   var InstanceIds: js.UndefOr[InstanceIdList] = js.native
   /**
-    * The maximum number of instances that are allowed to run the command at the same time. You can specify a number of instances, such as 10, or a percentage of instances, such as 10%. The default value is 50. For more information about how to use MaxConcurrency, see Running Commands Using Systems Manager Run Command in the AWS Systems Manager User Guide.
+    * The maximum number of instances that are allowed to run the command at the same time. You can specify a number of instances, such as 10, or a percentage of instances, such as 10%. The default value is 50. For more information about how to use MaxConcurrency, see Running commands using Systems Manager Run Command in the AWS Systems Manager User Guide.
     */
   var MaxConcurrency: js.UndefOr[typings.awsSdk.ssmMod.MaxConcurrency] = js.native
   /**
-    * The maximum number of errors allowed before the system stops sending the command to additional targets. You can specify a number of errors, such as 10, or a percentage or errors, such as 10%. The default value is 0. For more information about how to use MaxErrors, see Running Commands Using Systems Manager Run Command in the AWS Systems Manager User Guide.
+    * The maximum number of errors allowed before the system stops sending the command to additional targets. You can specify a number of errors, such as 10, or a percentage or errors, such as 10%. The default value is 0. For more information about how to use MaxErrors, see Running commands using Systems Manager Run Command in the AWS Systems Manager User Guide.
     */
   var MaxErrors: js.UndefOr[typings.awsSdk.ssmMod.MaxErrors] = js.native
   /**
@@ -67,7 +67,7 @@ trait Command extends js.Object {
     */
   var OutputS3KeyPrefix: js.UndefOr[S3KeyPrefix] = js.native
   /**
-    * (Deprecated) You can no longer specify this parameter. The system ignores it. Instead, Systems Manager automatically determines the Amazon S3 bucket region.
+    * (Deprecated) You can no longer specify this parameter. The system ignores it. Instead, Systems Manager automatically determines the Region of the S3 bucket.
     */
   var OutputS3Region: js.UndefOr[S3Region] = js.native
   /**
@@ -87,7 +87,7 @@ trait Command extends js.Object {
     */
   var Status: js.UndefOr[CommandStatus] = js.native
   /**
-    * A detailed status of the command execution. StatusDetails includes more information than Status because it includes states resulting from error and concurrency control parameters. StatusDetails can show different results than Status. For more information about these statuses, see Understanding Command Statuses in the AWS Systems Manager User Guide. StatusDetails can be one of the following values:   Pending: The command has not been sent to any instances.   In Progress: The command has been sent to at least one instance but has not reached a final state on all instances.   Success: The command successfully ran on all invocations. This is a terminal state.   Delivery Timed Out: The value of MaxErrors or more command invocations shows a status of Delivery Timed Out. This is a terminal state.   Execution Timed Out: The value of MaxErrors or more command invocations shows a status of Execution Timed Out. This is a terminal state.   Failed: The value of MaxErrors or more command invocations shows a status of Failed. This is a terminal state.   Incomplete: The command was attempted on all instances and one or more invocations does not have a value of Success but not enough invocations failed for the status to be Failed. This is a terminal state.   Canceled: The command was terminated before it was completed. This is a terminal state.   Rate Exceeded: The number of instances targeted by the command exceeded the account limit for pending invocations. The system has canceled the command before running it on any instance. This is a terminal state.  
+    * A detailed status of the command execution. StatusDetails includes more information than Status because it includes states resulting from error and concurrency control parameters. StatusDetails can show different results than Status. For more information about these statuses, see Understanding command statuses in the AWS Systems Manager User Guide. StatusDetails can be one of the following values:   Pending: The command has not been sent to any instances.   In Progress: The command has been sent to at least one instance but has not reached a final state on all instances.   Success: The command successfully ran on all invocations. This is a terminal state.   Delivery Timed Out: The value of MaxErrors or more command invocations shows a status of Delivery Timed Out. This is a terminal state.   Execution Timed Out: The value of MaxErrors or more command invocations shows a status of Execution Timed Out. This is a terminal state.   Failed: The value of MaxErrors or more command invocations shows a status of Failed. This is a terminal state.   Incomplete: The command was attempted on all instances and one or more invocations does not have a value of Success but not enough invocations failed for the status to be Failed. This is a terminal state.   Canceled: The command was terminated before it was completed. This is a terminal state.   Rate Exceeded: The number of instances targeted by the command exceeded the account limit for pending invocations. The system has canceled the command before running it on any instance. This is a terminal state.  
     */
   var StatusDetails: js.UndefOr[typings.awsSdk.ssmMod.StatusDetails] = js.native
   /**
@@ -98,6 +98,10 @@ trait Command extends js.Object {
     * An array of search criteria that targets instances using a Key,Value combination that you specify. Targets is required if you don't provide one or more instance IDs in the call.
     */
   var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.native
+  /**
+    * The TimeoutSeconds value specified for a command.
+    */
+  var TimeoutSeconds: js.UndefOr[typings.awsSdk.ssmMod.TimeoutSeconds] = js.native
 }
 
 object Command {
@@ -106,11 +110,11 @@ object Command {
     CloudWatchOutputConfig: CloudWatchOutputConfig = null,
     CommandId: CommandId = null,
     Comment: Comment = null,
-    CompletedCount: Int | Double = null,
-    DeliveryTimedOutCount: Int | Double = null,
+    CompletedCount: js.UndefOr[CompletedCount] = js.undefined,
+    DeliveryTimedOutCount: js.UndefOr[DeliveryTimedOutCount] = js.undefined,
     DocumentName: DocumentName = null,
     DocumentVersion: DocumentVersion = null,
-    ErrorCount: Int | Double = null,
+    ErrorCount: js.UndefOr[ErrorCount] = js.undefined,
     ExpiresAfter: DateTime = null,
     InstanceIds: InstanceIdList = null,
     MaxConcurrency: MaxConcurrency = null,
@@ -124,18 +128,19 @@ object Command {
     ServiceRole: ServiceRole = null,
     Status: CommandStatus = null,
     StatusDetails: StatusDetails = null,
-    TargetCount: Int | Double = null,
-    Targets: Targets = null
+    TargetCount: js.UndefOr[TargetCount] = js.undefined,
+    Targets: Targets = null,
+    TimeoutSeconds: js.UndefOr[TimeoutSeconds] = js.undefined
   ): Command = {
     val __obj = js.Dynamic.literal()
     if (CloudWatchOutputConfig != null) __obj.updateDynamic("CloudWatchOutputConfig")(CloudWatchOutputConfig.asInstanceOf[js.Any])
     if (CommandId != null) __obj.updateDynamic("CommandId")(CommandId.asInstanceOf[js.Any])
     if (Comment != null) __obj.updateDynamic("Comment")(Comment.asInstanceOf[js.Any])
-    if (CompletedCount != null) __obj.updateDynamic("CompletedCount")(CompletedCount.asInstanceOf[js.Any])
-    if (DeliveryTimedOutCount != null) __obj.updateDynamic("DeliveryTimedOutCount")(DeliveryTimedOutCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(CompletedCount)) __obj.updateDynamic("CompletedCount")(CompletedCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeliveryTimedOutCount)) __obj.updateDynamic("DeliveryTimedOutCount")(DeliveryTimedOutCount.get.asInstanceOf[js.Any])
     if (DocumentName != null) __obj.updateDynamic("DocumentName")(DocumentName.asInstanceOf[js.Any])
     if (DocumentVersion != null) __obj.updateDynamic("DocumentVersion")(DocumentVersion.asInstanceOf[js.Any])
-    if (ErrorCount != null) __obj.updateDynamic("ErrorCount")(ErrorCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(ErrorCount)) __obj.updateDynamic("ErrorCount")(ErrorCount.get.asInstanceOf[js.Any])
     if (ExpiresAfter != null) __obj.updateDynamic("ExpiresAfter")(ExpiresAfter.asInstanceOf[js.Any])
     if (InstanceIds != null) __obj.updateDynamic("InstanceIds")(InstanceIds.asInstanceOf[js.Any])
     if (MaxConcurrency != null) __obj.updateDynamic("MaxConcurrency")(MaxConcurrency.asInstanceOf[js.Any])
@@ -149,8 +154,9 @@ object Command {
     if (ServiceRole != null) __obj.updateDynamic("ServiceRole")(ServiceRole.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (StatusDetails != null) __obj.updateDynamic("StatusDetails")(StatusDetails.asInstanceOf[js.Any])
-    if (TargetCount != null) __obj.updateDynamic("TargetCount")(TargetCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(TargetCount)) __obj.updateDynamic("TargetCount")(TargetCount.get.asInstanceOf[js.Any])
     if (Targets != null) __obj.updateDynamic("Targets")(Targets.asInstanceOf[js.Any])
+    if (!js.isUndefined(TimeoutSeconds)) __obj.updateDynamic("TimeoutSeconds")(TimeoutSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Command]
   }
 }

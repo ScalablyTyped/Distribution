@@ -30,16 +30,16 @@ trait Options
 object Options {
   @scala.inline
   def apply(
-    StringDictionary: /* prop */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     dedupe: js.UndefOr[Boolean] = js.undefined,
     expose: js.Array[String] | (StringDictionary[Boolean | String]) = null,
     index: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(dedupe)) __obj.updateDynamic("dedupe")(dedupe.asInstanceOf[js.Any])
+    if (!js.isUndefined(dedupe)) __obj.updateDynamic("dedupe")(dedupe.get.asInstanceOf[js.Any])
     if (expose != null) __obj.updateDynamic("expose")(expose.asInstanceOf[js.Any])
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

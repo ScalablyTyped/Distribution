@@ -23,7 +23,7 @@ object VideoHTMLAttributes {
     val __obj = js.Dynamic.literal()
     if (MediaHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, MediaHTMLAttributes)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(playsInline)) __obj.updateDynamic("playsInline")(playsInline.asInstanceOf[js.Any])
+    if (!js.isUndefined(playsInline)) __obj.updateDynamic("playsInline")(playsInline.get.asInstanceOf[js.Any])
     if (poster != null) __obj.updateDynamic("poster")(poster.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoHTMLAttributes[T]]

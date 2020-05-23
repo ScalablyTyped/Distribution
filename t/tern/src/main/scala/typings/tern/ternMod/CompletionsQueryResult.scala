@@ -1,6 +1,6 @@
 package typings.tern.ternMod
 
-import typings.tern.AnonDepth
+import typings.tern.anon.Depth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait CompletionsQueryResult extends js.Object {
     * and, depending on the options, `type`, `depth`, `doc`, `url`, and `origin` properties.
     * When none of these options are enabled, the result array will hold plain strings.
     */
-  var completions: js.Array[AnonDepth | String]
+  var completions: js.Array[Depth | String]
   /** end offsets of the word that was completed */
   var end: Double | Position
   /** whether the completion is for a property or a variable */
@@ -25,7 +25,7 @@ trait CompletionsQueryResult extends js.Object {
 object CompletionsQueryResult {
   @scala.inline
   def apply(
-    completions: js.Array[AnonDepth | String],
+    completions: js.Array[Depth | String],
     end: Double | Position,
     isProperty: Boolean,
     start: Double | Position

@@ -10,16 +10,16 @@ import scala.scalajs.js.annotation._
   */
 trait PreviewImageOptions extends js.Object {
   /**
-  	 * Function called back if the preview fails. Check the `message` property of passed back parameter.
-  	 */
+    * Function called back if the preview fails. Check the `message` property of passed back parameter.
+    */
   var error: js.UndefOr[js.Function1[/* param0 */ PreviewImageError, Unit]] = js.undefined
   /**
-  	 * The image to preview. Must be a blob based on a file, such as from <Titanium.Filesystem.File.read>.
-  	 */
+    * The image to preview. Must be a blob based on a file, such as from <Titanium.Filesystem.File.read>.
+    */
   var image: js.UndefOr[Blob] = js.undefined
   /**
-  	 * Function to be called back if the preview succeeds. No info is passed.
-  	 */
+    * Function to be called back if the preview succeeds. No info is passed.
+    */
   var success: js.UndefOr[js.Function1[/* param0 */ SuccessResponse, Unit]] = js.undefined
 }
 

@@ -24,11 +24,11 @@ object ChartTrendlineOptions {
   @scala.inline
   def apply(
     color: String = null,
-    degree: Int | Double = null,
+    degree: js.UndefOr[Double] = js.undefined,
     labelInLegend: String = null,
-    lineWidth: Int | Double = null,
-    opacity: Int | Double = null,
-    pointSize: Int | Double = null,
+    lineWidth: js.UndefOr[Double] = js.undefined,
+    opacity: js.UndefOr[Double] = js.undefined,
+    pointSize: js.UndefOr[Double] = js.undefined,
     pointsVisible: js.UndefOr[Boolean] = js.undefined,
     showR2: js.UndefOr[Boolean] = js.undefined,
     `type`: linear | exponential | polynomial = null,
@@ -36,15 +36,15 @@ object ChartTrendlineOptions {
   ): ChartTrendlineOptions = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (degree != null) __obj.updateDynamic("degree")(degree.asInstanceOf[js.Any])
+    if (!js.isUndefined(degree)) __obj.updateDynamic("degree")(degree.get.asInstanceOf[js.Any])
     if (labelInLegend != null) __obj.updateDynamic("labelInLegend")(labelInLegend.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (pointSize != null) __obj.updateDynamic("pointSize")(pointSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(pointsVisible)) __obj.updateDynamic("pointsVisible")(pointsVisible.asInstanceOf[js.Any])
-    if (!js.isUndefined(showR2)) __obj.updateDynamic("showR2")(showR2.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointSize)) __obj.updateDynamic("pointSize")(pointSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointsVisible)) __obj.updateDynamic("pointsVisible")(pointsVisible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showR2)) __obj.updateDynamic("showR2")(showR2.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibleInLegend)) __obj.updateDynamic("visibleInLegend")(visibleInLegend.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibleInLegend)) __obj.updateDynamic("visibleInLegend")(visibleInLegend.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartTrendlineOptions]
   }
 }

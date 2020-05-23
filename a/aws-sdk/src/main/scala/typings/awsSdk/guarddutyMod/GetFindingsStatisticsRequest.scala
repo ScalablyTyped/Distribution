@@ -11,11 +11,11 @@ trait GetFindingsStatisticsRequest extends js.Object {
     */
   var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
   /**
-    * Represents the criteria used for querying findings.
+    * Represents the criteria that is used for querying findings.
     */
   var FindingCriteria: js.UndefOr[typings.awsSdk.guarddutyMod.FindingCriteria] = js.native
   /**
-    * Types of finding statistics to retrieve.
+    * The types of finding statistics to retrieve.
     */
   var FindingStatisticTypes: typings.awsSdk.guarddutyMod.FindingStatisticTypes = js.native
 }

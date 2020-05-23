@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OptionProps
-  extends /* key */ StringDictionary[js.Any] {
+  extends /* customProp */ StringDictionary[js.Any] {
   var children: ReactNode
   var value: String
 }
@@ -16,7 +16,7 @@ object OptionProps {
   @scala.inline
   def apply(
     value: String,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     children: ReactNode = null
   ): OptionProps = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])

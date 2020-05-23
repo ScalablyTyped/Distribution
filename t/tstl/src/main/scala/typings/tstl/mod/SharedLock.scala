@@ -1,10 +1,10 @@
 package typings.tstl.mod
 
 import typings.std.Date
-import typings.tstl.PickISharedLockablelocksh
-import typings.tstl.PickISharedLockabletryloc
-import typings.tstl.PickISharedTimedLockablet
-import typings.tstl.PickISharedTimedLockabletTrylockshareduntil
+import typings.tstl.anon.PickISharedLockablelocksh
+import typings.tstl.anon.PickISharedLockabletryloc
+import typings.tstl.anon.PickISharedTimedLockablet
+import typings.tstl.anon.PickISharedTimedLockabletTrylockshareduntil
 import typings.tstl.sharedLockMod.Closure
 import typings.tstl.sharedLockMod.IMutex
 import scala.scalajs.js

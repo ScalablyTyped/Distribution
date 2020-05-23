@@ -4,7 +4,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.DataTransfer.ShareTarget.ShareOperation")
 @js.native
-class ShareOperation () extends IShareOperation
+trait ShareOperation extends IShareOperation
 

@@ -9,10 +9,16 @@ import scala.scalajs.js.annotation._
 //    setValue(value: any): void;
 //    constructor();
 // }
-@JSGlobal("SP.ClientResult")
-@js.native
-class ClientResult[T] () extends js.Object {
-  def get_value(): T = js.native
-  def setValue(value: T): Unit = js.native
+trait ClientResult[T] extends js.Object {
+  def get_value(): T
+  def setValue(value: T): Unit
+}
+
+object ClientResult {
+  @scala.inline
+  def apply[T](get_value: () => T, setValue: T => Unit): ClientResult[T] = {
+    val __obj = js.Dynamic.literal(get_value = js.Any.fromFunction0(get_value), setValue = js.Any.fromFunction1(setValue))
+    __obj.asInstanceOf[ClientResult[T]]
+  }
 }
 

@@ -19,7 +19,7 @@ object ValidateOption {
   ): ValidateOption = {
     val __obj = js.Dynamic.literal()
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullMessages)) __obj.updateDynamic("fullMessages")(fullMessages.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullMessages)) __obj.updateDynamic("fullMessages")(fullMessages.get.asInstanceOf[js.Any])
     if (prettify != null) __obj.updateDynamic("prettify")(prettify.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidateOption]
   }

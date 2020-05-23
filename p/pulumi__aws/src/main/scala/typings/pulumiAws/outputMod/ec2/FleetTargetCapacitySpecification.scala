@@ -29,12 +29,12 @@ object FleetTargetCapacitySpecification {
   def apply(
     defaultTargetCapacityType: String,
     totalTargetCapacity: Double,
-    onDemandTargetCapacity: Int | Double = null,
-    spotTargetCapacity: Int | Double = null
+    onDemandTargetCapacity: js.UndefOr[Double] = js.undefined,
+    spotTargetCapacity: js.UndefOr[Double] = js.undefined
   ): FleetTargetCapacitySpecification = {
     val __obj = js.Dynamic.literal(defaultTargetCapacityType = defaultTargetCapacityType.asInstanceOf[js.Any], totalTargetCapacity = totalTargetCapacity.asInstanceOf[js.Any])
-    if (onDemandTargetCapacity != null) __obj.updateDynamic("onDemandTargetCapacity")(onDemandTargetCapacity.asInstanceOf[js.Any])
-    if (spotTargetCapacity != null) __obj.updateDynamic("spotTargetCapacity")(spotTargetCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(onDemandTargetCapacity)) __obj.updateDynamic("onDemandTargetCapacity")(onDemandTargetCapacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spotTargetCapacity)) __obj.updateDynamic("spotTargetCapacity")(spotTargetCapacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FleetTargetCapacitySpecification]
   }
 }

@@ -68,7 +68,7 @@ object GanttOptions {
     cancel: /* e */ GanttCancelEvent => Unit = null,
     change: /* e */ GanttChangeEvent => Unit = null,
     columnResize: /* e */ GanttColumnResizeEvent => Unit = null,
-    columnResizeHandleWidth: Int | Double = null,
+    columnResizeHandleWidth: js.UndefOr[Double] = js.undefined,
     columns: js.Array[GanttColumn] = null,
     currentTimeMarker: Boolean | GanttCurrentTimeMarker = null,
     dataBinding: /* e */ GanttDataBindingEvent => Unit = null,
@@ -79,7 +79,7 @@ object GanttOptions {
     edit: /* e */ GanttEditEvent => Unit = null,
     editable: Boolean | GanttEditable = null,
     height: Double | String = null,
-    hourSpan: Int | Double = null,
+    hourSpan: js.UndefOr[Double] = js.undefined,
     listWidth: String | Double = null,
     messages: GanttMessages = null,
     move: /* e */ GanttMoveEvent => Unit = null,
@@ -109,17 +109,17 @@ object GanttOptions {
     views: js.Array[GanttView] = null,
     workDayEnd: Date = null,
     workDayStart: Date = null,
-    workWeekEnd: Int | Double = null,
-    workWeekStart: Int | Double = null
+    workWeekEnd: js.UndefOr[Double] = js.undefined,
+    workWeekStart: js.UndefOr[Double] = js.undefined
   ): GanttOptions = {
     val __obj = js.Dynamic.literal()
     if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction1(add))
     if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.get.asInstanceOf[js.Any])
     if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1(cancel))
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (columnResize != null) __obj.updateDynamic("columnResize")(js.Any.fromFunction1(columnResize))
-    if (columnResizeHandleWidth != null) __obj.updateDynamic("columnResizeHandleWidth")(columnResizeHandleWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnResizeHandleWidth)) __obj.updateDynamic("columnResizeHandleWidth")(columnResizeHandleWidth.get.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (currentTimeMarker != null) __obj.updateDynamic("currentTimeMarker")(currentTimeMarker.asInstanceOf[js.Any])
     if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction1(dataBinding))
@@ -130,38 +130,38 @@ object GanttOptions {
     if (edit != null) __obj.updateDynamic("edit")(js.Any.fromFunction1(edit))
     if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hourSpan != null) __obj.updateDynamic("hourSpan")(hourSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(hourSpan)) __obj.updateDynamic("hourSpan")(hourSpan.get.asInstanceOf[js.Any])
     if (listWidth != null) __obj.updateDynamic("listWidth")(listWidth.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     if (move != null) __obj.updateDynamic("move")(js.Any.fromFunction1(move))
     if (moveEnd != null) __obj.updateDynamic("moveEnd")(js.Any.fromFunction1(moveEnd))
     if (moveStart != null) __obj.updateDynamic("moveStart")(js.Any.fromFunction1(moveStart))
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigatable)) __obj.updateDynamic("navigatable")(navigatable.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigatable)) __obj.updateDynamic("navigatable")(navigatable.get.asInstanceOf[js.Any])
     if (navigate != null) __obj.updateDynamic("navigate")(js.Any.fromFunction1(navigate))
     if (pdf != null) __obj.updateDynamic("pdf")(pdf.asInstanceOf[js.Any])
     if (pdfExport != null) __obj.updateDynamic("pdfExport")(js.Any.fromFunction1(pdfExport))
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.get.asInstanceOf[js.Any])
     if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction1(resize))
     if (resizeEnd != null) __obj.updateDynamic("resizeEnd")(js.Any.fromFunction1(resizeEnd))
     if (resizeStart != null) __obj.updateDynamic("resizeStart")(js.Any.fromFunction1(resizeStart))
     if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
     if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
     if (save != null) __obj.updateDynamic("save")(js.Any.fromFunction1(save))
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWorkDays)) __obj.updateDynamic("showWorkDays")(showWorkDays.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWorkHours)) __obj.updateDynamic("showWorkHours")(showWorkHours.asInstanceOf[js.Any])
-    if (!js.isUndefined(snap)) __obj.updateDynamic("snap")(snap.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showWorkDays)) __obj.updateDynamic("showWorkDays")(showWorkDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showWorkHours)) __obj.updateDynamic("showWorkHours")(showWorkHours.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(snap)) __obj.updateDynamic("snap")(snap.get.asInstanceOf[js.Any])
     if (taskTemplate != null) __obj.updateDynamic("taskTemplate")(taskTemplate.asInstanceOf[js.Any])
     if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])
     if (workDayEnd != null) __obj.updateDynamic("workDayEnd")(workDayEnd.asInstanceOf[js.Any])
     if (workDayStart != null) __obj.updateDynamic("workDayStart")(workDayStart.asInstanceOf[js.Any])
-    if (workWeekEnd != null) __obj.updateDynamic("workWeekEnd")(workWeekEnd.asInstanceOf[js.Any])
-    if (workWeekStart != null) __obj.updateDynamic("workWeekStart")(workWeekStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(workWeekEnd)) __obj.updateDynamic("workWeekEnd")(workWeekEnd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workWeekStart)) __obj.updateDynamic("workWeekStart")(workWeekStart.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttOptions]
   }
 }

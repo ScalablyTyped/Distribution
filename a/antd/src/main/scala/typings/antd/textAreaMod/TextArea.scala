@@ -1,10 +1,10 @@
 package typings.antd.textAreaMod
 
-import typings.antd.contextMod.ConfigConsumerProps
+import typings.antd.configProviderContextMod.ConfigConsumerProps
 import typings.react.mod.ChangeEvent
 import typings.react.mod.Component
 import typings.react.mod.KeyboardEvent
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import typings.std.HTMLTextAreaElement
 import typings.std.MouseEvent
@@ -22,7 +22,7 @@ trait TextArea
   def handleChange(e: ChangeEvent[HTMLTextAreaElement]): Unit = js.native
   def handleKeyDown(e: KeyboardEvent[HTMLTextAreaElement]): Unit = js.native
   def handleReset(e: typings.react.mod.MouseEvent[HTMLElement, MouseEvent]): Unit = js.native
-  def renderComponent(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
+  def renderComponent(hasGetPrefixClsDirection: ConfigConsumerProps): Element = js.native
   def renderTextArea(prefixCls: String): Element = js.native
   def saveClearableInput(clearableInput: typings.antd.clearableLabeledInputMod.default): Unit = js.native
   def saveTextArea(resizableTextArea: typings.antd.resizableTextAreaMod.default): Unit = js.native

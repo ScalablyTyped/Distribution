@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,8 +60,4 @@ trait HeatmapRenderer
   @JSName("type")
   val type_HeatmapRenderer: typings.arcgisJsApi.arcgisJsApiStrings.heatmap = js.native
 }
-
-@JSGlobal("__esri.HeatmapRenderer")
-@js.native
-object HeatmapRenderer extends TopLevel[HeatmapRendererConstructor]
 

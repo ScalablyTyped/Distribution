@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.CommandBar")
 @js.native
-class CommandBar protected () extends js.Object {
+trait CommandBar extends js.Object {
   var AdaptiveMenu: Boolean = js.native
   val Application: js.Any = js.native
   val BuiltIn: Boolean = js.native

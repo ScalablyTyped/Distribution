@@ -1,7 +1,6 @@
 package typings.gestalt.mod
 
-import typings.gestalt.Anon3
-import typings.gestalt.AnonEventSyntheticEvent
+import typings.gestalt.anon.EventSyntheticEvent
 import typings.gestalt.gestaltNumbers.`0`
 import typings.gestalt.gestaltNumbers.`1`
 import typings.gestalt.gestaltNumbers.`2`
@@ -31,28 +30,28 @@ trait TouchableProps extends js.Object {
   var fullHeight: js.UndefOr[Boolean] = js.undefined
   var fullWidth: js.UndefOr[Boolean] = js.undefined
   var mouseCursor: js.UndefOr[copy | grab | grabbing | move | noDrop | pointer | zoomIn | zoomOut] = js.undefined
-  var onMouseEnter: js.UndefOr[js.Function1[/* args */ AnonEventSyntheticEvent, Unit]] = js.undefined
-  var onMouseLeave: js.UndefOr[js.Function1[/* args */ AnonEventSyntheticEvent, Unit]] = js.undefined
+  var onMouseEnter: js.UndefOr[js.Function1[/* args */ EventSyntheticEvent, Unit]] = js.undefined
+  var onMouseLeave: js.UndefOr[js.Function1[/* args */ EventSyntheticEvent, Unit]] = js.undefined
   var rounding: js.UndefOr[pill | circle | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`] = js.undefined
-  def onTouch(args: Anon3): Unit
+  def onTouch(args: typings.gestalt.anon.`3`): Unit
 }
 
 object TouchableProps {
   @scala.inline
   def apply(
-    onTouch: Anon3 => Unit,
+    onTouch: typings.gestalt.anon.`3` => Unit,
     children: ReactNode = null,
     fullHeight: js.UndefOr[Boolean] = js.undefined,
     fullWidth: js.UndefOr[Boolean] = js.undefined,
     mouseCursor: copy | grab | grabbing | move | noDrop | pointer | zoomIn | zoomOut = null,
-    onMouseEnter: /* args */ AnonEventSyntheticEvent => Unit = null,
-    onMouseLeave: /* args */ AnonEventSyntheticEvent => Unit = null,
+    onMouseEnter: /* args */ EventSyntheticEvent => Unit = null,
+    onMouseLeave: /* args */ EventSyntheticEvent => Unit = null,
     rounding: pill | circle | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` = null
   ): TouchableProps = {
     val __obj = js.Dynamic.literal(onTouch = js.Any.fromFunction1(onTouch))
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullHeight)) __obj.updateDynamic("fullHeight")(fullHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullHeight)) __obj.updateDynamic("fullHeight")(fullHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth.get.asInstanceOf[js.Any])
     if (mouseCursor != null) __obj.updateDynamic("mouseCursor")(mouseCursor.asInstanceOf[js.Any])
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))

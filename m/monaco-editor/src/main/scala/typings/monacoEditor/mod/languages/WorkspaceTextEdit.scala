@@ -18,11 +18,11 @@ object WorkspaceTextEdit {
     edit: TextEdit,
     resource: Uri,
     metadata: WorkspaceEditMetadata = null,
-    modelVersionId: Int | Double = null
+    modelVersionId: js.UndefOr[Double] = js.undefined
   ): WorkspaceTextEdit = {
     val __obj = js.Dynamic.literal(edit = edit.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (modelVersionId != null) __obj.updateDynamic("modelVersionId")(modelVersionId.asInstanceOf[js.Any])
+    if (!js.isUndefined(modelVersionId)) __obj.updateDynamic("modelVersionId")(modelVersionId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceTextEdit]
   }
 }

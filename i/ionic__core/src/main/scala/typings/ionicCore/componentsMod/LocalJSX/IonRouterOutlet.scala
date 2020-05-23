@@ -31,7 +31,7 @@ object IonRouterOutlet {
     mode: ios | md = null
   ): IonRouterOutlet = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(js.Any.fromFunction2(animation))
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonRouterOutlet]

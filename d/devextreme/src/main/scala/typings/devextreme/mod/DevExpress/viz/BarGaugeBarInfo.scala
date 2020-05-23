@@ -15,11 +15,15 @@ trait BarGaugeBarInfo extends js.Object {
 
 object BarGaugeBarInfo {
   @scala.inline
-  def apply(color: String = null, index: Int | Double = null, value: Int | Double = null): BarGaugeBarInfo = {
+  def apply(
+    color: String = null,
+    index: js.UndefOr[Double] = js.undefined,
+    value: js.UndefOr[Double] = js.undefined
+  ): BarGaugeBarInfo = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarGaugeBarInfo]
   }
 }

@@ -1,6 +1,6 @@
 package typings.mochaPrepare
 
-import typings.mocha.Mocha_.Done
+import typings.mocha.Mocha.Done
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

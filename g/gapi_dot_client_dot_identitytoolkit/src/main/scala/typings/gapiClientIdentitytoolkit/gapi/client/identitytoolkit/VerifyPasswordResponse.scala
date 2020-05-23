@@ -42,7 +42,7 @@ object VerifyPasswordResponse {
     localId: String = null,
     oauthAccessToken: String = null,
     oauthAuthorizationCode: String = null,
-    oauthExpireIn: Int | Double = null,
+    oauthExpireIn: js.UndefOr[Double] = js.undefined,
     photoUrl: String = null,
     refreshToken: String = null,
     registered: js.UndefOr[Boolean] = js.undefined
@@ -56,10 +56,10 @@ object VerifyPasswordResponse {
     if (localId != null) __obj.updateDynamic("localId")(localId.asInstanceOf[js.Any])
     if (oauthAccessToken != null) __obj.updateDynamic("oauthAccessToken")(oauthAccessToken.asInstanceOf[js.Any])
     if (oauthAuthorizationCode != null) __obj.updateDynamic("oauthAuthorizationCode")(oauthAuthorizationCode.asInstanceOf[js.Any])
-    if (oauthExpireIn != null) __obj.updateDynamic("oauthExpireIn")(oauthExpireIn.asInstanceOf[js.Any])
+    if (!js.isUndefined(oauthExpireIn)) __obj.updateDynamic("oauthExpireIn")(oauthExpireIn.get.asInstanceOf[js.Any])
     if (photoUrl != null) __obj.updateDynamic("photoUrl")(photoUrl.asInstanceOf[js.Any])
     if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(registered)) __obj.updateDynamic("registered")(registered.asInstanceOf[js.Any])
+    if (!js.isUndefined(registered)) __obj.updateDynamic("registered")(registered.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifyPasswordResponse]
   }
 }

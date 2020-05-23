@@ -1,5 +1,16 @@
 package typings.chui
 
+import typings.chui.anon.ArticleId
+import typings.chui.anon.Background
+import typings.chui.anon.Call
+import typings.chui.anon.Callback
+import typings.chui.anon.Checked
+import typings.chui.anon.ClassName
+import typings.chui.anon.Data
+import typings.chui.anon.Dynamic
+import typings.chui.anon.Icons
+import typings.chui.anon.Id
+import typings.chui.anon.Pagination
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +33,7 @@ trait JQueryStatic extends js.Object {
     * Creates and initializes a slide out menu. Possible options: {dynamic: true, callback: function() { alert("Woohoo!");}}
     */
   @JSName("UISlideout")
-  var UISlideout_Original: AnonCall = js.native
+  var UISlideout_Original: Call = js.native
   /**
     * The body tag wrapped and ready to use: $.body.css('background-color','orange')
     */
@@ -152,7 +163,7 @@ trait JQueryStatic extends js.Object {
     *
     */
   @JSName("template")
-  var template_Original: AnonData = js.native
+  var template_Original: Data = js.native
   /**
     * Object used to store string templates and parsed templates.
     *
@@ -184,14 +195,14 @@ trait JQueryStatic extends js.Object {
     * @param: options UICreateSegmentedOptions
     * @return JQuery
     */
-  def UICreateSegmented(options: AnonClassName): JQuery = js.native
+  def UICreateSegmented(options: ClassName): JQuery = js.native
   /**
     * Create a switch control. Possible options: { id: '#myId', name: 'fruit.mango', state: 'on', value: 'Mango', checked: 'on', style: 'traditional', callback: function() { alert('hi');}}
     *
     * @return void
     */
   def UICreateSwitch(): Unit = js.native
-  def UICreateSwitch(options: AnonChecked): Unit = js.native
+  def UICreateSwitch(options: Checked): Unit = js.native
   /**
     * Method to tell ChocolateChip-UI to register navigation history on Window hash.
     */
@@ -239,7 +250,7 @@ trait JQueryStatic extends js.Object {
     * @return void
     */
   def UIPopover(): Unit = js.native
-  def UIPopover(options: AnonId): Unit = js.native
+  def UIPopover(options: Id): Unit = js.native
   /**
     * Close any currently visible popovers.
     *
@@ -254,7 +265,7 @@ trait JQueryStatic extends js.Object {
     * @return void
     */
   def UIPopup(): Unit = js.native
-  def UIPopup(options: AnonCallback): Unit = js.native
+  def UIPopup(options: Callback): Unit = js.native
   /**
     * Reset the value of the stepper to its defaults at initialization. Pass it a reference to the stepper to reset.
     *
@@ -267,19 +278,19 @@ trait JQueryStatic extends js.Object {
     * @return void
     */
   def UISearch(): Unit = js.native
-  def UISearch(options: AnonArticleId): Unit = js.native
+  def UISearch(options: ArticleId): Unit = js.native
   /**
     * Create and initialize a swipable carousel. Options: {target : '#myCarousel', panels: ['<p>stuff</p>','<p>more</p>'], loop: true, pagination: true }
     *
     * @return void
     */
-  def UISetupCarousel(options: AnonPagination): Unit = js.native
+  def UISetupCarousel(options: Pagination): Unit = js.native
   /**
     * Creates a sheet. Minimum option is an id: {id : 'starTrek', listClass :'enterprise', background: 'transparent', handle: false }
     *
     * @return void
     */
-  def UISheet(options: AnonBackground): Unit = js.native
+  def UISheet(options: Background): Unit = js.native
   /**
     * If the navigation bar is hidden, show it, pushing down the content to make room.
     */
@@ -299,7 +310,7 @@ trait JQueryStatic extends js.Object {
     * Creates and initializes a slide out menu. Possible options: {dynamic: true, callback: function() { alert("Woohoo!");}}
     */
   def UISlideout(): js.Any = js.native
-  def UISlideout(options: AnonDynamic): js.Any = js.native
+  def UISlideout(options: Dynamic): js.Any = js.native
   /**
     * Creates a tabbar. On iOS this is at the bottom of the screen. On Android and Windows, it is at the top.
     * Options: {id: 'mySpecialTabbar', tabs: 4, labels: ["Refresh", "Add", "Info", "Downloads", "Favorite"], icons: ["refresh", "add", "info", "downloads", "favorite"], selected: 2 }
@@ -307,7 +318,7 @@ trait JQueryStatic extends js.Object {
     * @return void
     */
   def UITabbar(): Unit = js.native
-  def UITabbar(options: AnonIcons): Unit = js.native
+  def UITabbar(options: Icons): Unit = js.native
   /**
     * Unbind the values of data-models from their data-controllers.
     * If you provide a controller name as the argument, only that controller will be unbound.

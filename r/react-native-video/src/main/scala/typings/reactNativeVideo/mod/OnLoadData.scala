@@ -1,6 +1,6 @@
 package typings.reactNativeVideo.mod
 
-import typings.reactNativeVideo.AnonHeight
+import typings.reactNativeVideo.anon.Height
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait OnLoadData extends js.Object {
   var canStepForward: Boolean
   var currentTime: Double
   var duration: Double
-  var naturalSize: AnonHeight
+  var naturalSize: Height
 }
 
 object OnLoadData {
@@ -28,7 +28,7 @@ object OnLoadData {
     canStepForward: Boolean,
     currentTime: Double,
     duration: Double,
-    naturalSize: AnonHeight
+    naturalSize: Height
   ): OnLoadData = {
     val __obj = js.Dynamic.literal(canPlayFastForward = canPlayFastForward.asInstanceOf[js.Any], canPlayReverse = canPlayReverse.asInstanceOf[js.Any], canPlaySlowForward = canPlaySlowForward.asInstanceOf[js.Any], canPlaySlowReverse = canPlaySlowReverse.asInstanceOf[js.Any], canStepBackward = canStepBackward.asInstanceOf[js.Any], canStepForward = canStepForward.asInstanceOf[js.Any], currentTime = currentTime.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], naturalSize = naturalSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnLoadData]

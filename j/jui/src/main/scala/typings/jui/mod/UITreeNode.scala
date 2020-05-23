@@ -28,20 +28,20 @@ object UITreeNode {
   def apply(
     children: js.Array[UITreeNode] = null,
     data: js.Array[_] = null,
-    depth: Int | Double = null,
+    depth: js.UndefOr[Double] = js.undefined,
     element: js.Any = null,
-    index: Int | Double = null,
-    nodenum: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
+    nodenum: js.UndefOr[Double] = js.undefined,
     parent: UITreeNode = null,
     `type`: String = null
   ): UITreeNode = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (nodenum != null) __obj.updateDynamic("nodenum")(nodenum.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodenum)) __obj.updateDynamic("nodenum")(nodenum.get.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UITreeNode]

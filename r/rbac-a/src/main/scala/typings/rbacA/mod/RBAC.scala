@@ -1,7 +1,7 @@
 package typings.rbacA.mod
 
 import typings.node.eventsMod.EventEmitter
-import typings.rbacA.AnonAttributes
+import typings.rbacA.anon.Attributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("rbac-a", "RBAC")
 @js.native
 class RBAC[P /* <: Provider */, AM /* <: AttributesManager */] protected () extends EventEmitter {
-  def this(opts: AnonAttributes[P, AM]) = this()
+  def this(opts: Attributes[P, AM]) = this()
   val attributes: AM = js.native
   val provider: P = js.native
   /**

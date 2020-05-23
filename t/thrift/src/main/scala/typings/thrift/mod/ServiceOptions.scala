@@ -1,13 +1,13 @@
 package typings.thrift.mod
 
-import typings.thrift.AnonInstantiable
+import typings.thrift.anon.Instantiable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ServiceOptions[TProcessor, THandler] extends js.Object {
   var handler: js.UndefOr[THandler] = js.undefined
-  var processor: js.UndefOr[AnonInstantiable[THandler, TProcessor]] = js.undefined
+  var processor: js.UndefOr[Instantiable[THandler, TProcessor]] = js.undefined
   var protocol: js.UndefOr[TProtocolConstructor] = js.undefined
   var transport: js.UndefOr[TTransportConstructor] = js.undefined
 }
@@ -16,7 +16,7 @@ object ServiceOptions {
   @scala.inline
   def apply[TProcessor, THandler](
     handler: THandler = null,
-    processor: AnonInstantiable[THandler, TProcessor] = null,
+    processor: Instantiable[THandler, TProcessor] = null,
     protocol: TProtocolConstructor = null,
     transport: TTransportConstructor = null
   ): ServiceOptions[TProcessor, THandler] = {

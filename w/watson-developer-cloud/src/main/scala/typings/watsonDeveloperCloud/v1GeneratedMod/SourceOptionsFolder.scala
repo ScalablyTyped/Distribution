@@ -16,9 +16,9 @@ trait SourceOptionsFolder extends js.Object {
 
 object SourceOptionsFolder {
   @scala.inline
-  def apply(folder_id: String, owner_user_id: String, limit: Int | Double = null): SourceOptionsFolder = {
+  def apply(folder_id: String, owner_user_id: String, limit: js.UndefOr[Double] = js.undefined): SourceOptionsFolder = {
     val __obj = js.Dynamic.literal(folder_id = folder_id.asInstanceOf[js.Any], owner_user_id = owner_user_id.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceOptionsFolder]
   }
 }

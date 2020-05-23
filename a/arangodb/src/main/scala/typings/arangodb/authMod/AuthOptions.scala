@@ -12,10 +12,10 @@ trait AuthOptions extends js.Object {
 
 object AuthOptions {
   @scala.inline
-  def apply(method: HashAlgorithm = null, saltLength: Int | Double = null): AuthOptions = {
+  def apply(method: HashAlgorithm = null, saltLength: js.UndefOr[Double] = js.undefined): AuthOptions = {
     val __obj = js.Dynamic.literal()
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (saltLength != null) __obj.updateDynamic("saltLength")(saltLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(saltLength)) __obj.updateDynamic("saltLength")(saltLength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthOptions]
   }
 }

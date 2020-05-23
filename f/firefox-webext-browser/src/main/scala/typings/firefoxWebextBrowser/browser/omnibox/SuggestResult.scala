@@ -1,7 +1,7 @@
 package typings.firefoxWebextBrowser.browser.omnibox
 
-import typings.firefoxWebextBrowser.AnonLength
-import typings.firefoxWebextBrowser.AnonOffset
+import typings.firefoxWebextBrowser.anon.Length
+import typings.firefoxWebextBrowser.anon.Offset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,12 +23,12 @@ trait SuggestResult extends js.Object {
     * An array of style ranges for the description, as provided by the extension.
     * @deprecated Unsupported on Firefox at this time.
     */
-  var descriptionStyles: js.UndefOr[js.Array[AnonLength]] = js.undefined
+  var descriptionStyles: js.UndefOr[js.Array[Length]] = js.undefined
   /**
     * An array of style ranges for the description, as provided by ToValue().
     * @deprecated Unsupported on Firefox at this time.
     */
-  var descriptionStylesRaw: js.UndefOr[js.Array[AnonOffset]] = js.undefined
+  var descriptionStylesRaw: js.UndefOr[js.Array[Offset]] = js.undefined
 }
 
 object SuggestResult {
@@ -36,8 +36,8 @@ object SuggestResult {
   def apply(
     content: String,
     description: String,
-    descriptionStyles: js.Array[AnonLength] = null,
-    descriptionStylesRaw: js.Array[AnonOffset] = null
+    descriptionStyles: js.Array[Length] = null,
+    descriptionStylesRaw: js.Array[Offset] = null
   ): SuggestResult = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any])
     if (descriptionStyles != null) __obj.updateDynamic("descriptionStyles")(descriptionStyles.asInstanceOf[js.Any])

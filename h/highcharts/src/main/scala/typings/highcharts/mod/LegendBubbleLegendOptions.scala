@@ -107,43 +107,43 @@ object LegendBubbleLegendOptions {
   @scala.inline
   def apply(
     borderColor: ColorString | GradientColorObject | PatternObject = null,
-    borderWidth: Int | Double = null,
+    borderWidth: js.UndefOr[Double] = js.undefined,
     className: String = null,
     color: ColorString | GradientColorObject | PatternObject = null,
     connectorClassName: String = null,
     connectorColor: ColorString | GradientColorObject | PatternObject = null,
-    connectorDistance: Int | Double = null,
-    connectorWidth: Int | Double = null,
+    connectorDistance: js.UndefOr[Double] = js.undefined,
+    connectorWidth: js.UndefOr[Double] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
     labels: LegendBubbleLegendLabelsOptions = null,
-    legendIndex: Int | Double = null,
-    maxSize: Int | Double = null,
-    minSize: Int | Double = null,
+    legendIndex: js.UndefOr[Double] = js.undefined,
+    maxSize: js.UndefOr[Double] = js.undefined,
+    minSize: js.UndefOr[Double] = js.undefined,
     ranges: js.Array[LegendBubbleLegendRangesOptions] = null,
     sizeBy: BubbleSizeByValue = null,
     sizeByAbsoluteValue: js.UndefOr[Boolean] = js.undefined,
-    zIndex: Int | Double = null,
-    zThreshold: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined,
+    zThreshold: js.UndefOr[Double] = js.undefined
   ): LegendBubbleLegendOptions = {
     val __obj = js.Dynamic.literal()
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (connectorClassName != null) __obj.updateDynamic("connectorClassName")(connectorClassName.asInstanceOf[js.Any])
     if (connectorColor != null) __obj.updateDynamic("connectorColor")(connectorColor.asInstanceOf[js.Any])
-    if (connectorDistance != null) __obj.updateDynamic("connectorDistance")(connectorDistance.asInstanceOf[js.Any])
-    if (connectorWidth != null) __obj.updateDynamic("connectorWidth")(connectorWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectorDistance)) __obj.updateDynamic("connectorDistance")(connectorDistance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectorWidth)) __obj.updateDynamic("connectorWidth")(connectorWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (legendIndex != null) __obj.updateDynamic("legendIndex")(legendIndex.asInstanceOf[js.Any])
-    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
-    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(legendIndex)) __obj.updateDynamic("legendIndex")(legendIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSize)) __obj.updateDynamic("maxSize")(maxSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSize)) __obj.updateDynamic("minSize")(minSize.get.asInstanceOf[js.Any])
     if (ranges != null) __obj.updateDynamic("ranges")(ranges.asInstanceOf[js.Any])
     if (sizeBy != null) __obj.updateDynamic("sizeBy")(sizeBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(sizeByAbsoluteValue)) __obj.updateDynamic("sizeByAbsoluteValue")(sizeByAbsoluteValue.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
-    if (zThreshold != null) __obj.updateDynamic("zThreshold")(zThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizeByAbsoluteValue)) __obj.updateDynamic("sizeByAbsoluteValue")(sizeByAbsoluteValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zThreshold)) __obj.updateDynamic("zThreshold")(zThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendBubbleLegendOptions]
   }
 }

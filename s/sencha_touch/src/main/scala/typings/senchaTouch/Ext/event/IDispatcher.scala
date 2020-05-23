@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 
 trait IDispatcher extends IBase {
   /** [Method] Returns the value of publishers
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getPublishers: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Sets the value of publishers
-  		* @param publishers Object The new value.
-  		*/
+    * @param publishers Object The new value.
+    */
   var setPublishers: js.UndefOr[js.Function1[/* publishers */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -58,7 +58,7 @@ object IDispatcher {
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setPublishers != null) __obj.updateDynamic("setPublishers")(js.Any.fromFunction1(setPublishers))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDispatcher]

@@ -2,8 +2,8 @@ package typings.reactAriaMenubutton.mod
 
 import typings.react.mod.AllHTMLAttributes
 import typings.react.mod.ClassAttributes
-import typings.react.mod._Global_.JSX.Element
-import typings.reactAriaMenubutton.AnonIsOpen
+import typings.react.mod.global.JSX.Element
+import typings.reactAriaMenubutton.anon.IsOpen
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,10 +13,10 @@ trait MenuProps[T /* <: HTMLElement */]
   extends AllHTMLAttributes[T]
      with ClassAttributes[T] {
   @JSName("children")
-  var children_MenuProps: Element | (js.Function1[/* hasIsOpen */ AnonIsOpen, Element])
+  var children_MenuProps: Element | (js.Function1[/* hasIsOpen */ IsOpen, Element])
   /**
-  	 * The HTML tag for this element. Default: 'span'.
-  	 */
+    * The HTML tag for this element. Default: 'span'.
+    */
   var tag: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any
   ] = js.undefined
@@ -24,8 +24,8 @@ trait MenuProps[T /* <: HTMLElement */]
 
 object MenuProps {
   @scala.inline
-  def apply[T /* <: HTMLElement */](
-    children: Element | (js.Function1[/* hasIsOpen */ AnonIsOpen, Element]),
+  def apply[T](
+    children: Element | (js.Function1[/* hasIsOpen */ IsOpen, Element]),
     AllHTMLAttributes: AllHTMLAttributes[T] = null,
     ClassAttributes: ClassAttributes[T] = null,
     tag: /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any = null

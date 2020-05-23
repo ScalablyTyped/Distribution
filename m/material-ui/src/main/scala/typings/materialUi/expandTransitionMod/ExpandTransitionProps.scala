@@ -22,25 +22,25 @@ object ExpandTransitionProps {
   @scala.inline
   def apply(
     children: ReactNode = null,
-    enterDelay: Int | Double = null,
+    enterDelay: js.UndefOr[Double] = js.undefined,
     key: Key = null,
     loading: js.UndefOr[Boolean] = js.undefined,
     open: js.UndefOr[Boolean] = js.undefined,
-    ref: LegacyRef[ExpandTransition] = null,
+    ref: js.UndefOr[Null | LegacyRef[ExpandTransition]] = js.undefined,
     style: CSSProperties = null,
-    transitionDelay: Int | Double = null,
-    transitionDuration: Int | Double = null
+    transitionDelay: js.UndefOr[Double] = js.undefined,
+    transitionDuration: js.UndefOr[Double] = js.undefined
   ): ExpandTransitionProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (enterDelay != null) __obj.updateDynamic("enterDelay")(enterDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(enterDelay)) __obj.updateDynamic("enterDelay")(enterDelay.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (transitionDelay != null) __obj.updateDynamic("transitionDelay")(transitionDelay.asInstanceOf[js.Any])
-    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitionDelay)) __obj.updateDynamic("transitionDelay")(transitionDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitionDuration)) __obj.updateDynamic("transitionDuration")(transitionDuration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpandTransitionProps]
   }
 }

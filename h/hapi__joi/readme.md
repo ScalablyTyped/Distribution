@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__joi
 
-Typings are for version 16.0
+Typings are for version 17.1
 
 ## Library description:
 Object schema validation

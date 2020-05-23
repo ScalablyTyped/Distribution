@@ -69,12 +69,12 @@ object BoostDebugOptions {
     timeSetup: js.UndefOr[Boolean] = js.undefined
   ): BoostDebugOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(showSkipSummary)) __obj.updateDynamic("showSkipSummary")(showSkipSummary.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeBufferCopy)) __obj.updateDynamic("timeBufferCopy")(timeBufferCopy.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeKDTree)) __obj.updateDynamic("timeKDTree")(timeKDTree.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeRendering)) __obj.updateDynamic("timeRendering")(timeRendering.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeSeriesProcessing)) __obj.updateDynamic("timeSeriesProcessing")(timeSeriesProcessing.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeSetup)) __obj.updateDynamic("timeSetup")(timeSetup.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSkipSummary)) __obj.updateDynamic("showSkipSummary")(showSkipSummary.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeBufferCopy)) __obj.updateDynamic("timeBufferCopy")(timeBufferCopy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeKDTree)) __obj.updateDynamic("timeKDTree")(timeKDTree.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeRendering)) __obj.updateDynamic("timeRendering")(timeRendering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeSeriesProcessing)) __obj.updateDynamic("timeSeriesProcessing")(timeSeriesProcessing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeSetup)) __obj.updateDynamic("timeSetup")(timeSetup.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoostDebugOptions]
   }
 }

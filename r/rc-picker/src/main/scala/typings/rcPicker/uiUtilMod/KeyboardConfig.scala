@@ -15,18 +15,18 @@ trait KeyboardConfig extends js.Object {
 object KeyboardConfig {
   @scala.inline
   def apply(
-    onCtrlLeftRight: /* diff */ Double => Unit = null,
-    onEnter: () => Unit = null,
-    onLeftRight: /* diff */ Double => Unit = null,
-    onPageUpDown: /* diff */ Double => Unit = null,
-    onUpDown: /* diff */ Double => Unit = null
+    onCtrlLeftRight: js.UndefOr[Null | (/* diff */ Double => Unit)] = js.undefined,
+    onEnter: js.UndefOr[Null | (() => Unit)] = js.undefined,
+    onLeftRight: js.UndefOr[Null | (/* diff */ Double => Unit)] = js.undefined,
+    onPageUpDown: js.UndefOr[Null | (/* diff */ Double => Unit)] = js.undefined,
+    onUpDown: js.UndefOr[Null | (/* diff */ Double => Unit)] = js.undefined
   ): KeyboardConfig = {
     val __obj = js.Dynamic.literal()
-    if (onCtrlLeftRight != null) __obj.updateDynamic("onCtrlLeftRight")(js.Any.fromFunction1(onCtrlLeftRight))
-    if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction0(onEnter))
-    if (onLeftRight != null) __obj.updateDynamic("onLeftRight")(js.Any.fromFunction1(onLeftRight))
-    if (onPageUpDown != null) __obj.updateDynamic("onPageUpDown")(js.Any.fromFunction1(onPageUpDown))
-    if (onUpDown != null) __obj.updateDynamic("onUpDown")(js.Any.fromFunction1(onUpDown))
+    if (!js.isUndefined(onCtrlLeftRight)) __obj.updateDynamic("onCtrlLeftRight")(if (onCtrlLeftRight != null) js.Any.fromFunction1(onCtrlLeftRight.asInstanceOf[/* diff */ Double => Unit]) else null)
+    if (!js.isUndefined(onEnter)) __obj.updateDynamic("onEnter")(if (onEnter != null) js.Any.fromFunction0(onEnter.asInstanceOf[() => Unit]) else null)
+    if (!js.isUndefined(onLeftRight)) __obj.updateDynamic("onLeftRight")(if (onLeftRight != null) js.Any.fromFunction1(onLeftRight.asInstanceOf[/* diff */ Double => Unit]) else null)
+    if (!js.isUndefined(onPageUpDown)) __obj.updateDynamic("onPageUpDown")(if (onPageUpDown != null) js.Any.fromFunction1(onPageUpDown.asInstanceOf[/* diff */ Double => Unit]) else null)
+    if (!js.isUndefined(onUpDown)) __obj.updateDynamic("onUpDown")(if (onUpDown != null) js.Any.fromFunction1(onUpDown.asInstanceOf[/* diff */ Double => Unit]) else null)
     __obj.asInstanceOf[KeyboardConfig]
   }
 }

@@ -1,6 +1,5 @@
 package typings.tableau.tableau
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object SelectionUpdateType extends js.Object {
   /** Replaces the current marks values with new ones specified in the call. */
   @js.native
   sealed trait REPLACE extends SelectionUpdateType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[SelectionUpdateType with String] = js.native
-  /* "add" */ @js.native
-  object ADD extends TopLevel[ADD with String]
-  
-  /* "remove" */ @js.native
-  object REMOVE extends TopLevel[REMOVE with String]
-  
-  /* "replace" */ @js.native
-  object REPLACE extends TopLevel[REPLACE with String]
   
 }
 

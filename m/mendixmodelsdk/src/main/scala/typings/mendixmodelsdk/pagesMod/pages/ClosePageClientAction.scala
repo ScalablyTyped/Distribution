@@ -28,6 +28,11 @@ class ClosePageClientAction protected () extends ClientAction {
   ) = this()
   @JSName("model")
   var model_FClosePageClientAction: IModel = js.native
+  /**
+    * In version 8.9.0: introduced
+    */
+  def numberOfPages: Double = js.native
+  def numberOfPages(newValue: Double): js.Any = js.native
 }
 
 /* static members */

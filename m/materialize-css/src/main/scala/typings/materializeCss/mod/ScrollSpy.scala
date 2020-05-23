@@ -1,7 +1,8 @@
 package typings.materializeCss.mod
 
+import typings.materializeCss.M.ScrollSpyOptions
 import typings.materializeCss.MElements
-import typings.materializeCss.PartialScrollSpyOptions
+import typings.materializeCss.anon.PartialScrollSpyOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +11,23 @@ import scala.scalajs.js.annotation._
 @JSImport("materialize-css", "ScrollSpy")
 @js.native
 class ScrollSpy ()
-  extends typings.materializeCss.M.ScrollSpy
+  extends typings.materializeCss.M.Component[ScrollSpyOptions] {
+  /**
+    * The DOM element the plugin was initialized with
+    */
+  /* CompleteClass */
+  override var el: Element = js.native
+  /**
+    * The options the instance was initialized with
+    */
+  /* CompleteClass */
+  override var options: ScrollSpyOptions = js.native
+  /**
+    * Destroy plugin instance and teardown
+    */
+  /* CompleteClass */
+  override def destroy(): Unit = js.native
+}
 
 /* static members */
 @JSImport("materialize-css", "ScrollSpy")

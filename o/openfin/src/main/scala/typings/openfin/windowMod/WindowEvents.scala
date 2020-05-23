@@ -14,6 +14,8 @@ import typings.openfin.openfinStrings.`end-user-bounds-changing`
 import typings.openfin.openfinStrings.`external-process-exited`
 import typings.openfin.openfinStrings.`external-process-started`
 import typings.openfin.openfinStrings.`group-changed`
+import typings.openfin.openfinStrings.`layout-initialized`
+import typings.openfin.openfinStrings.`layout-ready`
 import typings.openfin.openfinStrings.`options-changed`
 import typings.openfin.openfinStrings.`performance-report`
 import typings.openfin.openfinStrings.`preload-scripts-state-changed`
@@ -31,6 +33,7 @@ import typings.openfin.openfinStrings.closing
 import typings.openfin.openfinStrings.embedded
 import typings.openfin.openfinStrings.focused
 import typings.openfin.openfinStrings.hidden
+import typings.openfin.openfinStrings.hotkey
 import typings.openfin.openfinStrings.initialized
 import typings.openfin.openfinStrings.maximized
 import typings.openfin.openfinStrings.minimized
@@ -38,6 +41,8 @@ import typings.openfin.openfinStrings.reloaded
 import typings.openfin.openfinStrings.restored
 import typings.openfin.openfinStrings.shown
 import typings.openfin.openfinStrings.window
+import typings.openfin.viewMod.InputEvent
+import typings.openfin.viewMod.TargetChangedEvent
 import typings.openfin.webcontentsMod.CertificateErrorEvent
 import typings.openfin.webcontentsMod.PageTitleUpdatedEvent
 import typings.openfin.webcontentsMod.WindowResourceLoadFailedEvent
@@ -48,7 +53,11 @@ import scala.scalajs.js.annotation._
 
 /* Inlined openfin.openfin/_v2/api/events/view.PropagatedViewEventMapping<'window', string> & {[ Type in keyof openfin.openfin/_v2/api/events/window.WindowEventMapping<string, string> ]: openfin.openfin/_v2/api/events/window.WindowEventMapping<'window', Type>[Type]} */
 trait WindowEvents
-  extends /* name */ StringDictionary[js.Any] {
+  extends /**
+  * @hidden
+  * Custom properties and metadata. This can be extended in specific context object.
+  */
+/* key */ StringDictionary[js.Any] {
   var `auth-requested`: WindowAuthRequestedEvent[window, typings.openfin.openfinStrings.`auth-requested`]
   var `begin-user-bounds-changing`: WindowBeginBoundsChangingEvent[window, typings.openfin.openfinStrings.`begin-user-bounds-changing`]
   var blurred: WindowEvent[window, typings.openfin.openfinStrings.blurred]
@@ -70,7 +79,10 @@ trait WindowEvents
   var `found-in-page`: WindowEvent[String, String]
   var `group-changed`: WindowGroupChanged[window, typings.openfin.openfinStrings.`group-changed`]
   var hidden: WindowHiddenEvent[window, typings.openfin.openfinStrings.hidden]
+  var hotkey: InputEvent with (WindowEvent[window, typings.openfin.openfinStrings.hotkey])
   var initialized: WindowEvent[window, typings.openfin.openfinStrings.initialized]
+  var `layout-initialized`: WindowEvent[window, typings.openfin.openfinStrings.`layout-initialized`]
+  var `layout-ready`: WindowEvent[window, typings.openfin.openfinStrings.`layout-ready`]
   var listenerRemoved: String
   var maximized: WindowEvent[window, typings.openfin.openfinStrings.maximized]
   var minimized: WindowEvent[window, typings.openfin.openfinStrings.minimized]
@@ -94,16 +106,18 @@ trait WindowEvents
   var `view-crashed`: CrashedEvent with (WindowEvent[window, String])
   var `view-created`: CrashedEvent with (WindowEvent[window, String])
   var `view-destroyed`: WindowEvent[window, String]
-  var `view-detached`: WindowEvent[window, typings.openfin.openfinStrings.`view-detached`]
+  var `view-detached`: ViewDetached[window, typings.openfin.openfinStrings.`view-detached`]
   var `view-did-change-theme-color`: WindowEvent[window, String]
+  var `view-focused`: WindowEvent[window, String]
   var `view-hidden`: WindowEvent[window, String]
+  var `view-hotkey`: InputEvent with (WindowEvent[window, String])
   var `view-navigation-rejected`: WindowNavigationRejectedEvent[window, String]
   var `view-page-favicon-updated`: WindowEvent[window, String]
   var `view-page-title-updated`: WindowEvent[window, String]
   var `view-resource-load-failed`: WindowResourceLoadFailedEvent[window, String]
   var `view-resource-response-received`: WindowResourceResponseReceivedEvent[window, String]
   var `view-shown`: WindowEvent[window, String]
-  var `view-target-changed`: WindowEvent[window, String]
+  var `view-target-changed`: TargetChangedEvent[window, String]
   var `will-move`: WillMoveOrResize[window, typings.openfin.openfinStrings.`will-move`]
   var `will-resize`: WillMoveOrResize[window, typings.openfin.openfinStrings.`will-resize`]
 }
@@ -132,7 +146,10 @@ object WindowEvents {
     `found-in-page`: WindowEvent[String, String],
     `group-changed`: WindowGroupChanged[window, `group-changed`],
     hidden: WindowHiddenEvent[window, hidden],
+    hotkey: InputEvent with (WindowEvent[window, hotkey]),
     initialized: WindowEvent[window, initialized],
+    `layout-initialized`: WindowEvent[window, `layout-initialized`],
+    `layout-ready`: WindowEvent[window, `layout-ready`],
     listenerRemoved: String,
     maximized: WindowEvent[window, maximized],
     minimized: WindowEvent[window, minimized],
@@ -156,21 +173,23 @@ object WindowEvents {
     `view-crashed`: CrashedEvent with (WindowEvent[window, String]),
     `view-created`: CrashedEvent with (WindowEvent[window, String]),
     `view-destroyed`: WindowEvent[window, String],
-    `view-detached`: WindowEvent[window, `view-detached`],
+    `view-detached`: ViewDetached[window, `view-detached`],
     `view-did-change-theme-color`: WindowEvent[window, String],
+    `view-focused`: WindowEvent[window, String],
     `view-hidden`: WindowEvent[window, String],
+    `view-hotkey`: InputEvent with (WindowEvent[window, String]),
     `view-navigation-rejected`: WindowNavigationRejectedEvent[window, String],
     `view-page-favicon-updated`: WindowEvent[window, String],
     `view-page-title-updated`: WindowEvent[window, String],
     `view-resource-load-failed`: WindowResourceLoadFailedEvent[window, String],
     `view-resource-response-received`: WindowResourceResponseReceivedEvent[window, String],
     `view-shown`: WindowEvent[window, String],
-    `view-target-changed`: WindowEvent[window, String],
+    `view-target-changed`: TargetChangedEvent[window, String],
     `will-move`: WillMoveOrResize[window, `will-move`],
     `will-resize`: WillMoveOrResize[window, `will-resize`],
     StringDictionary: /* name */ StringDictionary[js.Any] = null
   ): WindowEvents = {
-    val __obj = js.Dynamic.literal(blurred = blurred.asInstanceOf[js.Any], closed = closed.asInstanceOf[js.Any], closing = closing.asInstanceOf[js.Any], crashed = crashed.asInstanceOf[js.Any], embedded = embedded.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], initialized = initialized.asInstanceOf[js.Any], listenerRemoved = listenerRemoved.asInstanceOf[js.Any], maximized = maximized.asInstanceOf[js.Any], minimized = minimized.asInstanceOf[js.Any], newListener = newListener.asInstanceOf[js.Any], reloaded = reloaded.asInstanceOf[js.Any], restored = restored.asInstanceOf[js.Any], shown = shown.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(blurred = blurred.asInstanceOf[js.Any], closed = closed.asInstanceOf[js.Any], closing = closing.asInstanceOf[js.Any], crashed = crashed.asInstanceOf[js.Any], embedded = embedded.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], hotkey = hotkey.asInstanceOf[js.Any], initialized = initialized.asInstanceOf[js.Any], listenerRemoved = listenerRemoved.asInstanceOf[js.Any], maximized = maximized.asInstanceOf[js.Any], minimized = minimized.asInstanceOf[js.Any], newListener = newListener.asInstanceOf[js.Any], reloaded = reloaded.asInstanceOf[js.Any], restored = restored.asInstanceOf[js.Any], shown = shown.asInstanceOf[js.Any])
     __obj.updateDynamic("auth-requested")(`auth-requested`.asInstanceOf[js.Any])
     __obj.updateDynamic("begin-user-bounds-changing")(`begin-user-bounds-changing`.asInstanceOf[js.Any])
     __obj.updateDynamic("bounds-changed")(`bounds-changed`.asInstanceOf[js.Any])
@@ -185,6 +204,8 @@ object WindowEvents {
     __obj.updateDynamic("external-process-started")(`external-process-started`.asInstanceOf[js.Any])
     __obj.updateDynamic("found-in-page")(`found-in-page`.asInstanceOf[js.Any])
     __obj.updateDynamic("group-changed")(`group-changed`.asInstanceOf[js.Any])
+    __obj.updateDynamic("layout-initialized")(`layout-initialized`.asInstanceOf[js.Any])
+    __obj.updateDynamic("layout-ready")(`layout-ready`.asInstanceOf[js.Any])
     __obj.updateDynamic("navigation-rejected")(`navigation-rejected`.asInstanceOf[js.Any])
     __obj.updateDynamic("options-changed")(`options-changed`.asInstanceOf[js.Any])
     __obj.updateDynamic("page-favicon-updated")(`page-favicon-updated`.asInstanceOf[js.Any])
@@ -203,7 +224,9 @@ object WindowEvents {
     __obj.updateDynamic("view-destroyed")(`view-destroyed`.asInstanceOf[js.Any])
     __obj.updateDynamic("view-detached")(`view-detached`.asInstanceOf[js.Any])
     __obj.updateDynamic("view-did-change-theme-color")(`view-did-change-theme-color`.asInstanceOf[js.Any])
+    __obj.updateDynamic("view-focused")(`view-focused`.asInstanceOf[js.Any])
     __obj.updateDynamic("view-hidden")(`view-hidden`.asInstanceOf[js.Any])
+    __obj.updateDynamic("view-hotkey")(`view-hotkey`.asInstanceOf[js.Any])
     __obj.updateDynamic("view-navigation-rejected")(`view-navigation-rejected`.asInstanceOf[js.Any])
     __obj.updateDynamic("view-page-favicon-updated")(`view-page-favicon-updated`.asInstanceOf[js.Any])
     __obj.updateDynamic("view-page-title-updated")(`view-page-title-updated`.asInstanceOf[js.Any])

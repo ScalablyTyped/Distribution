@@ -1,6 +1,10 @@
 package typings.rxjs
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.rxjs.anon.Fn0
+import typings.rxjs.anon.FnCallMarblesValuesError
+import typings.rxjs.anon.ToBe
+import typings.rxjs.anon.ToBeSubscriptionLogsToBeFn
 import typings.rxjs.coldObservableMod.ColdObservable
 import typings.rxjs.hotObservableMod.HotObservable
 import typings.rxjs.internalObservableMod.Observable
@@ -19,16 +23,9 @@ object testSchedulerMod extends js.Object {
     @JSName("cold")
     var cold_Original: FnCallMarblesValuesError = js.native
     @JSName("expectObservable")
-    var expectObservable_Original: js.Function2[
-        /* observable */ Observable[_], 
-        /* subscriptionMarbles */ js.UndefOr[String], 
-        AnonToBe
-      ] = js.native
+    var expectObservable_Original: js.Function2[/* observable */ Observable[_], /* subscriptionMarbles */ js.UndefOr[String], ToBe] = js.native
     @JSName("expectSubscriptions")
-    var expectSubscriptions_Original: js.Function1[
-        /* actualSubscriptionLogs */ js.Array[SubscriptionLog], 
-        AnonToBeSubscriptionLogsToBeFn
-      ] = js.native
+    var expectSubscriptions_Original: js.Function1[/* actualSubscriptionLogs */ js.Array[SubscriptionLog], ToBeSubscriptionLogsToBeFn] = js.native
     @JSName("flush")
     var flush_Original: js.Function0[Unit] = js.native
     @JSName("hot")
@@ -36,9 +33,9 @@ object testSchedulerMod extends js.Object {
     def cold[T](marbles: String): ColdObservable[T] = js.native
     def cold[T](marbles: String, values: StringDictionary[T]): ColdObservable[T] = js.native
     def cold[T](marbles: String, values: StringDictionary[T], error: js.Any): ColdObservable[T] = js.native
-    def expectObservable(observable: Observable[_]): AnonToBe = js.native
-    def expectObservable(observable: Observable[_], subscriptionMarbles: String): AnonToBe = js.native
-    def expectSubscriptions(actualSubscriptionLogs: js.Array[SubscriptionLog]): AnonToBeSubscriptionLogsToBeFn = js.native
+    def expectObservable(observable: Observable[_]): ToBe = js.native
+    def expectObservable(observable: Observable[_], subscriptionMarbles: String): ToBe = js.native
+    def expectSubscriptions(actualSubscriptionLogs: js.Array[SubscriptionLog]): ToBeSubscriptionLogsToBeFn = js.native
     def flush(): Unit = js.native
     def hot[T](marbles: String): HotObservable[T] = js.native
     def hot[T](marbles: String, values: StringDictionary[T]): HotObservable[T] = js.native
@@ -71,9 +68,9 @@ object testSchedulerMod extends js.Object {
     def createHotObservable[T](marbles: String, values: StringDictionary[T]): HotObservable[T] = js.native
     def createHotObservable[T](marbles: String, values: StringDictionary[T], error: js.Any): HotObservable[T] = js.native
     def createTime(marbles: String): Double = js.native
-    def expectObservable(observable: Observable[_]): AnonToBe = js.native
-    def expectObservable(observable: Observable[_], subscriptionMarbles: String): AnonToBe = js.native
-    def expectSubscriptions(actualSubscriptionLogs: js.Array[SubscriptionLog]): AnonToBeSubscriptionLogsToBeFn = js.native
+    def expectObservable(observable: Observable[_]): ToBe = js.native
+    def expectObservable(observable: Observable[_], subscriptionMarbles: String): ToBe = js.native
+    def expectSubscriptions(actualSubscriptionLogs: js.Array[SubscriptionLog]): ToBeSubscriptionLogsToBeFn = js.native
     def run[T](callback: js.Function1[/* helpers */ RunHelpers, T]): T = js.native
   }
   

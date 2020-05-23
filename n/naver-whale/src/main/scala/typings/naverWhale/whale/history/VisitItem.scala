@@ -24,10 +24,10 @@ object VisitItem {
     referringVisitId: String,
     transition: String,
     visitId: String,
-    visitTime: Int | Double = null
+    visitTime: js.UndefOr[Double] = js.undefined
   ): VisitItem = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], referringVisitId = referringVisitId.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], visitId = visitId.asInstanceOf[js.Any])
-    if (visitTime != null) __obj.updateDynamic("visitTime")(visitTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(visitTime)) __obj.updateDynamic("visitTime")(visitTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisitItem]
   }
 }

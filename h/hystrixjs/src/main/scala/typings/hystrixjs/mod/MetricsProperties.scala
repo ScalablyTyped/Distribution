@@ -18,16 +18,16 @@ object MetricsProperties {
   def apply(
     commandGroup: String,
     commandKey: String,
-    percentileWindowNumberOfBuckets: Int | Double = null,
-    percentileWindowTimeInMilliSeconds: Int | Double = null,
-    statisticalWindowNumberOfBuckets: Int | Double = null,
-    statisticalWindowTimeInMilliSeconds: Int | Double = null
+    percentileWindowNumberOfBuckets: js.UndefOr[Double] = js.undefined,
+    percentileWindowTimeInMilliSeconds: js.UndefOr[Double] = js.undefined,
+    statisticalWindowNumberOfBuckets: js.UndefOr[Double] = js.undefined,
+    statisticalWindowTimeInMilliSeconds: js.UndefOr[Double] = js.undefined
   ): MetricsProperties = {
     val __obj = js.Dynamic.literal(commandGroup = commandGroup.asInstanceOf[js.Any], commandKey = commandKey.asInstanceOf[js.Any])
-    if (percentileWindowNumberOfBuckets != null) __obj.updateDynamic("percentileWindowNumberOfBuckets")(percentileWindowNumberOfBuckets.asInstanceOf[js.Any])
-    if (percentileWindowTimeInMilliSeconds != null) __obj.updateDynamic("percentileWindowTimeInMilliSeconds")(percentileWindowTimeInMilliSeconds.asInstanceOf[js.Any])
-    if (statisticalWindowNumberOfBuckets != null) __obj.updateDynamic("statisticalWindowNumberOfBuckets")(statisticalWindowNumberOfBuckets.asInstanceOf[js.Any])
-    if (statisticalWindowTimeInMilliSeconds != null) __obj.updateDynamic("statisticalWindowTimeInMilliSeconds")(statisticalWindowTimeInMilliSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(percentileWindowNumberOfBuckets)) __obj.updateDynamic("percentileWindowNumberOfBuckets")(percentileWindowNumberOfBuckets.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(percentileWindowTimeInMilliSeconds)) __obj.updateDynamic("percentileWindowTimeInMilliSeconds")(percentileWindowTimeInMilliSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(statisticalWindowNumberOfBuckets)) __obj.updateDynamic("statisticalWindowNumberOfBuckets")(statisticalWindowNumberOfBuckets.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(statisticalWindowTimeInMilliSeconds)) __obj.updateDynamic("statisticalWindowTimeInMilliSeconds")(statisticalWindowTimeInMilliSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricsProperties]
   }
 }

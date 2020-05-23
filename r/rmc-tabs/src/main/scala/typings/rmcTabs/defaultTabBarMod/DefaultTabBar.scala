@@ -1,9 +1,9 @@
 package typings.rmcTabs.defaultTabBarMod
 
 import typings.react.mod.Component
-import typings.react.mod._Global_.JSX.Element
-import typings.rmcTabs.AnonOnPanEnd
-import typings.rmcTabs.AnonShowNext
+import typings.react.mod.global.JSX.Element
+import typings.rmcTabs.anon.OnPanEnd
+import typings.rmcTabs.anon.ShowNext
 import typings.rmcTabs.modelsMod.Models.TabData
 import typings.rmcTabs.rmcTabsStrings.bottom
 import typings.rmcTabs.rmcTabsStrings.left
@@ -20,11 +20,11 @@ class DefaultTabBar protected ()
   extends Component[PropsType, StateType, js.Any] {
   def this(props: PropsType) = this()
   var layout: HTMLDivElement = js.native
-  var onPan: AnonOnPanEnd = js.native
+  var onPan: OnPanEnd = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MDefaultTabBar(nextProps: PropsType): Unit = js.native
   def getTabSize(page: Double, tabLength: Double): Double = js.native
-  def getTransformByIndex(props: PropsType): AnonShowNext = js.native
+  def getTransformByIndex(props: PropsType): ShowNext = js.native
   def isTabBarVertical(): Boolean = js.native
   @JSName("isTabBarVertical")
   def isTabBarVertical_bottom(position: bottom): Boolean = js.native

@@ -17,10 +17,10 @@ trait UploadFileSuccessCallbackResult extends js.Object {
 
 object UploadFileSuccessCallbackResult {
   @scala.inline
-  def apply(data: String = null, statusCode: Int | Double = null): UploadFileSuccessCallbackResult = {
+  def apply(data: String = null, statusCode: js.UndefOr[Double] = js.undefined): UploadFileSuccessCallbackResult = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusCode)) __obj.updateDynamic("statusCode")(statusCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadFileSuccessCallbackResult]
   }
 }

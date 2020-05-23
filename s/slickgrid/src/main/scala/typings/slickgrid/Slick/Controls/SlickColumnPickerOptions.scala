@@ -10,9 +10,9 @@ trait SlickColumnPickerOptions extends js.Object {
 
 object SlickColumnPickerOptions {
   @scala.inline
-  def apply(fadeSpeed: Int | Double = null): SlickColumnPickerOptions = {
+  def apply(fadeSpeed: js.UndefOr[Double] = js.undefined): SlickColumnPickerOptions = {
     val __obj = js.Dynamic.literal()
-    if (fadeSpeed != null) __obj.updateDynamic("fadeSpeed")(fadeSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(fadeSpeed)) __obj.updateDynamic("fadeSpeed")(fadeSpeed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlickColumnPickerOptions]
   }
 }

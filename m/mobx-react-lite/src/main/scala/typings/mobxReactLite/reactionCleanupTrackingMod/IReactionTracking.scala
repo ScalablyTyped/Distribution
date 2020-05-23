@@ -34,8 +34,8 @@ object IReactionTracking {
     mounted: js.UndefOr[Boolean] = js.undefined
   ): IReactionTracking = {
     val __obj = js.Dynamic.literal(cleanAt = cleanAt.asInstanceOf[js.Any], reaction = reaction.asInstanceOf[js.Any])
-    if (!js.isUndefined(changedBeforeMount)) __obj.updateDynamic("changedBeforeMount")(changedBeforeMount.asInstanceOf[js.Any])
-    if (!js.isUndefined(mounted)) __obj.updateDynamic("mounted")(mounted.asInstanceOf[js.Any])
+    if (!js.isUndefined(changedBeforeMount)) __obj.updateDynamic("changedBeforeMount")(changedBeforeMount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mounted)) __obj.updateDynamic("mounted")(mounted.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IReactionTracking]
   }
 }

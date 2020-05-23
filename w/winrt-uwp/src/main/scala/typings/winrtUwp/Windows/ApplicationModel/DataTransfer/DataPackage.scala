@@ -15,10 +15,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains the data that a user wants to exchange with another app. */
-@JSGlobal("Windows.ApplicationModel.DataTransfer.DataPackage")
 @js.native
-/** Constructor that creates a new DataPackage . */
-class DataPackage () extends js.Object {
+trait DataPackage extends js.Object {
   /** Occurs when the DataPackage is destroyed. */
   @JSName("ondestroyed")
   var ondestroyed_Original: TypedEventHandler[DataPackage, _] = js.native

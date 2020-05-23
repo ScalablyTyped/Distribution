@@ -13,12 +13,12 @@ trait ListFragmentsOutput extends js.Object {
   /**
     * If the returned list is truncated, the operation returns this token to use to retrieve the next page of results. This value is null when there are no more results to return.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.kinesisvideoarchivedmediaMod.NextToken] = js.native
 }
 
 object ListFragmentsOutput {
   @scala.inline
-  def apply(Fragments: FragmentList = null, NextToken: String = null): ListFragmentsOutput = {
+  def apply(Fragments: FragmentList = null, NextToken: NextToken = null): ListFragmentsOutput = {
     val __obj = js.Dynamic.literal()
     if (Fragments != null) __obj.updateDynamic("Fragments")(Fragments.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])

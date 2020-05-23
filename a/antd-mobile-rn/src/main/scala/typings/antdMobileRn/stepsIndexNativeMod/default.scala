@@ -1,6 +1,6 @@
 package typings.antdMobileRn.stepsIndexNativeMod
 
-import typings.antdMobileRn.AnonDirection
+import typings.antdMobileRn.anon.Direction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +16,6 @@ class default protected () extends Steps {
 @js.native
 object default extends js.Object {
   var Step: js.Any = js.native
-  var defaultProps: AnonDirection = js.native
+  var defaultProps: Direction = js.native
 }
 

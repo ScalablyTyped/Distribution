@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.comments")
 @js.native
-class comments () extends baseview {
+trait comments extends baseview {
   @JSName("$onLoad")
   var $onLoad_Original: WebixCallback = js.native
   @JSName("config")

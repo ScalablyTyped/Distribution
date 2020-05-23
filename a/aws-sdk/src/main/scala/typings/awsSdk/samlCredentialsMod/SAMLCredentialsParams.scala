@@ -37,11 +37,11 @@ object SAMLCredentialsParams {
     PrincipalArn: String,
     RoleArn: String,
     SAMLAssertion: String,
-    DurationSeconds: Int | Double = null,
+    DurationSeconds: js.UndefOr[Double] = js.undefined,
     Policy: String = null
   ): SAMLCredentialsParams = {
     val __obj = js.Dynamic.literal(PrincipalArn = PrincipalArn.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any], SAMLAssertion = SAMLAssertion.asInstanceOf[js.Any])
-    if (DurationSeconds != null) __obj.updateDynamic("DurationSeconds")(DurationSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(DurationSeconds)) __obj.updateDynamic("DurationSeconds")(DurationSeconds.get.asInstanceOf[js.Any])
     if (Policy != null) __obj.updateDynamic("Policy")(Policy.asInstanceOf[js.Any])
     __obj.asInstanceOf[SAMLCredentialsParams]
   }

@@ -18,9 +18,9 @@ trait DescribeChannelRequest extends js.Object {
 
 object DescribeChannelRequest {
   @scala.inline
-  def apply(channelName: ChannelName, includeStatistics: js.UndefOr[Boolean] = js.undefined): DescribeChannelRequest = {
+  def apply(channelName: ChannelName, includeStatistics: js.UndefOr[IncludeStatisticsFlag] = js.undefined): DescribeChannelRequest = {
     val __obj = js.Dynamic.literal(channelName = channelName.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeStatistics)) __obj.updateDynamic("includeStatistics")(includeStatistics.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeStatistics)) __obj.updateDynamic("includeStatistics")(includeStatistics.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeChannelRequest]
   }
 }

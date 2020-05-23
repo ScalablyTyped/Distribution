@@ -1,7 +1,7 @@
 package typings.zchatBrowser.mod
 
 import typings.std.File
-import typings.zchatBrowser.AnonMimetype
+import typings.zchatBrowser.anon.Mimetype
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object sendFile extends js.Object {
   def apply(file: File): Unit = js.native
-  def apply(file: File, callback: js.Function2[/* err */ SendFileErrorMessage, /* data */ AnonMimetype, Unit]): Unit = js.native
+  def apply(file: File, callback: js.Function2[/* err */ SendFileErrorMessage, /* data */ Mimetype, Unit]): Unit = js.native
 }
 

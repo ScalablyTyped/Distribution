@@ -1,6 +1,6 @@
 package typings.reduxApiMiddleware.mod
 
-import typings.reduxApiMiddleware.FnCall
+import typings.reduxApiMiddleware.anon.FnCall
 import typings.reduxApiMiddleware.reduxApiMiddlewareStrings.DELETE
 import typings.reduxApiMiddleware.reduxApiMiddlewareStrings.GET
 import typings.reduxApiMiddleware.reduxApiMiddlewareStrings.HEAD
@@ -46,7 +46,7 @@ object RSAACall {
       RSAAFailureType[State, Payload, Meta]
     ],
     bailout: TypeOrResolver[State, Boolean] = null,
-    body: TypeOrResolver[State, BodyInit | Null] = null,
+    body: js.UndefOr[Null | (TypeOrResolver[State, BodyInit | Null])] = js.undefined,
     credentials: RequestCredentials = null,
     fetch: FnCall = null,
     headers: TypeOrResolver[State, HeadersInit] = null,
@@ -55,7 +55,7 @@ object RSAACall {
   ): RSAACall[State, Payload, Meta] = {
     val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
     if (bailout != null) __obj.updateDynamic("bailout")(bailout.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (!js.isUndefined(body)) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
     if (fetch != null) __obj.updateDynamic("fetch")(fetch.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])

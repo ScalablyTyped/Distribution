@@ -43,15 +43,15 @@ object Options {
     automaticFailover: js.UndefOr[Boolean] = js.undefined,
     cache: js.UndefOr[Boolean] = js.undefined,
     forceRefresh: js.UndefOr[Boolean] = js.undefined,
-    maxTtl: Int | Double = null,
+    maxTtl: js.UndefOr[Double] = js.undefined,
     strictTtl: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(automaticFailover)) __obj.updateDynamic("automaticFailover")(automaticFailover.asInstanceOf[js.Any])
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceRefresh)) __obj.updateDynamic("forceRefresh")(forceRefresh.asInstanceOf[js.Any])
-    if (maxTtl != null) __obj.updateDynamic("maxTtl")(maxTtl.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictTtl)) __obj.updateDynamic("strictTtl")(strictTtl.asInstanceOf[js.Any])
+    if (!js.isUndefined(automaticFailover)) __obj.updateDynamic("automaticFailover")(automaticFailover.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceRefresh)) __obj.updateDynamic("forceRefresh")(forceRefresh.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTtl)) __obj.updateDynamic("maxTtl")(maxTtl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictTtl)) __obj.updateDynamic("strictTtl")(strictTtl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

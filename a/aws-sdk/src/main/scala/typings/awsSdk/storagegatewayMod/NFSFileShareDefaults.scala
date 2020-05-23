@@ -29,14 +29,14 @@ object NFSFileShareDefaults {
   def apply(
     DirectoryMode: PermissionMode = null,
     FileMode: PermissionMode = null,
-    GroupId: Int | Double = null,
-    OwnerId: Int | Double = null
+    GroupId: js.UndefOr[PermissionId] = js.undefined,
+    OwnerId: js.UndefOr[PermissionId] = js.undefined
   ): NFSFileShareDefaults = {
     val __obj = js.Dynamic.literal()
     if (DirectoryMode != null) __obj.updateDynamic("DirectoryMode")(DirectoryMode.asInstanceOf[js.Any])
     if (FileMode != null) __obj.updateDynamic("FileMode")(FileMode.asInstanceOf[js.Any])
-    if (GroupId != null) __obj.updateDynamic("GroupId")(GroupId.asInstanceOf[js.Any])
-    if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
+    if (!js.isUndefined(GroupId)) __obj.updateDynamic("GroupId")(GroupId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(OwnerId)) __obj.updateDynamic("OwnerId")(OwnerId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NFSFileShareDefaults]
   }
 }

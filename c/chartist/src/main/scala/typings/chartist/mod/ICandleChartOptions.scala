@@ -90,7 +90,7 @@ object ICandleChartOptions {
     if (hight != null) __obj.updateDynamic("hight")(hight.asInstanceOf[js.Any])
     if (low != null) __obj.updateDynamic("low")(low.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverseData)) __obj.updateDynamic("reverseData")(reverseData.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverseData)) __obj.updateDynamic("reverseData")(reverseData.get.asInstanceOf[js.Any])
     if (useOneThirdAsCandleWickWidth != null) __obj.updateDynamic("useOneThirdAsCandleWickWidth")(useOneThirdAsCandleWickWidth.asInstanceOf[js.Any])
     if (useStepLengthAsCandleWidth != null) __obj.updateDynamic("useStepLengthAsCandleWidth")(useStepLengthAsCandleWidth.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

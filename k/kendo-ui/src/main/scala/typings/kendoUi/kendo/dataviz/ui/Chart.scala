@@ -9,16 +9,12 @@ import typings.kendoUi.kendo.drawing.PDFOptions
 import typings.kendoUi.kendo.drawing.Surface
 import typings.kendoUi.kendo.ui.Widget
 import typings.std.Date
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.dataviz.ui.Chart")
 @js.native
-class Chart protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: ChartOptions) = this()
+trait Chart extends Widget {
   var dataSource: DataSource = js.native
   @JSName("options")
   var options_Chart: ChartOptions = js.native
@@ -49,13 +45,5 @@ class Chart protected () extends Widget {
   def showTooltip(filter: Date): Unit = js.native
   def svg(): String = js.native
   def toggleHighlight(show: Boolean, options: js.Any): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.dataviz.ui.Chart")
-@js.native
-object Chart extends js.Object {
-  var fn: Chart = js.native
-  def extend(proto: js.Object): Chart = js.native
 }
 

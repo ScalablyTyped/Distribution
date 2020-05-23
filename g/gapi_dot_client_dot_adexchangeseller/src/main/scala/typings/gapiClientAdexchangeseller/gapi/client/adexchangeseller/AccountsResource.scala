@@ -1,8 +1,8 @@
 package typings.gapiClientAdexchangeseller.gapi.client.adexchangeseller
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientAdexchangeseller.AnonKey
-import typings.gapiClientAdexchangeseller.AnonMaxResults
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientAdexchangeseller.anon.Key
+import typings.gapiClientAdexchangeseller.anon.MaxResults
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +16,9 @@ trait AccountsResource extends js.Object {
   var reports: ReportsResource
   var urlchannels: UrlchannelsResource
   /** Get information about the selected Ad Exchange account. */
-  def get(request: AnonKey): Request_[Account]
+  def get(request: Key): Request[Account]
   /** List all accounts available to this Ad Exchange account. */
-  def list(request: AnonMaxResults): Request_[Accounts]
+  def list(request: MaxResults): Request[Accounts]
 }
 
 object AccountsResource {
@@ -27,8 +27,8 @@ object AccountsResource {
     adclients: AdclientsResource,
     alerts: AlertsResource,
     customchannels: CustomchannelsResource,
-    get: AnonKey => Request_[Account],
-    list: AnonMaxResults => Request_[Accounts],
+    get: Key => Request[Account],
+    list: MaxResults => Request[Accounts],
     metadata: MetadataResource,
     preferreddeals: PreferreddealsResource,
     reports: ReportsResource,

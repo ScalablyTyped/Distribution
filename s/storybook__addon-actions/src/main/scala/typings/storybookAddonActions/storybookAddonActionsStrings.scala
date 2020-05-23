@@ -6,12 +6,6 @@ import scala.scalajs.js.annotation._
 
 object storybookAddonActionsStrings {
   @js.native
-  sealed trait $___storybookDotisCyclic extends js.Object
-  
-  @js.native
-  sealed trait actions extends js.Object
-  
-  @js.native
   sealed trait additions extends js.Object
   
   @js.native
@@ -126,9 +120,6 @@ object storybookAddonActionsStrings {
   sealed trait step extends js.Object
   
   @js.native
-  sealed trait storybookSlashactions extends js.Object
-  
-  @js.native
   sealed trait tel extends js.Object
   
   @js.native
@@ -149,10 +140,6 @@ object storybookAddonActionsStrings {
   @js.native
   sealed trait yes extends js.Object
   
-  @scala.inline
-  def $___storybookDotisCyclic: $___storybookDotisCyclic = "$___storybook.isCyclic".asInstanceOf[$___storybookDotisCyclic]
-  @scala.inline
-  def actions: actions = "actions".asInstanceOf[actions]
   @scala.inline
   def additions: additions = "additions".asInstanceOf[additions]
   @scala.inline
@@ -229,8 +216,6 @@ object storybookAddonActionsStrings {
   def spelling: spelling = "spelling".asInstanceOf[spelling]
   @scala.inline
   def step: step = "step".asInstanceOf[step]
-  @scala.inline
-  def storybookSlashactions: storybookSlashactions = "storybook/actions".asInstanceOf[storybookSlashactions]
   @scala.inline
   def tel: tel = "tel".asInstanceOf[tel]
   @scala.inline

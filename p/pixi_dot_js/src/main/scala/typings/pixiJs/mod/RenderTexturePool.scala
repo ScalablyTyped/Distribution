@@ -1,6 +1,6 @@
 package typings.pixiJs.mod
 
-import typings.pixiJs.AnonScaleMode
+import typings.pixiJs.anon.ScaleMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class RenderTexturePool ()
   extends typings.pixiJs.PIXI.RenderTexturePool {
-  def this(textureOptions: AnonScaleMode) = this()
+  def this(textureOptions: ScaleMode) = this()
 }
 
 /* static members */

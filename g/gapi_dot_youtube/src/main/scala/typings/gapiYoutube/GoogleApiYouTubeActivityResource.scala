@@ -1,5 +1,7 @@
 package typings.gapiYoutube
 
+import typings.gapiYoutube.anon.Bulletin
+import typings.gapiYoutube.anon.ChannelId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +10,7 @@ trait GoogleApiYouTubeActivityResource extends js.Object {
   /**
     * The contentDetails object contains information about the content associated with the activity.
     */
-  var contentDetails: AnonBulletin
+  var contentDetails: Bulletin
   /**
     * The ETag of the activity resource.
     */
@@ -24,12 +26,12 @@ trait GoogleApiYouTubeActivityResource extends js.Object {
   /**
     * The snippet object contains basic details about the activity, including the activitys type and group ID.
     */
-  var snippet: AnonChannelTitle
+  var snippet: ChannelId
 }
 
 object GoogleApiYouTubeActivityResource {
   @scala.inline
-  def apply(contentDetails: AnonBulletin, etag: String, id: String, kind: String, snippet: AnonChannelTitle): GoogleApiYouTubeActivityResource = {
+  def apply(contentDetails: Bulletin, etag: String, id: String, kind: String, snippet: ChannelId): GoogleApiYouTubeActivityResource = {
     val __obj = js.Dynamic.literal(contentDetails = contentDetails.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], snippet = snippet.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleApiYouTubeActivityResource]
   }

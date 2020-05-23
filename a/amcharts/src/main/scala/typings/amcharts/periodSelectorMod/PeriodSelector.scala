@@ -1,6 +1,6 @@
 package typings.amcharts.periodSelectorMod
 
-import typings.amcharts.AnonCount
+import typings.amcharts.anon.Count
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -72,7 +72,7 @@ trait PeriodSelector extends js.Object {
     * @param handler - Dispatched when dates in period selector input fields are changed or
     * user clicks on one of the predefined period buttons.
     */
-  def addListener(`type`: String, handler: js.Function1[/* e */ AnonCount, Unit]): Unit
+  def addListener(`type`: String, handler: js.Function1[/* e */ Count, Unit]): Unit
   /**
     * Removes event listener from chart object.
     */
@@ -82,7 +82,7 @@ trait PeriodSelector extends js.Object {
 object PeriodSelector {
   @scala.inline
   def apply(
-    addListener: (String, js.Function1[/* e */ AnonCount, Unit]) => Unit,
+    addListener: (String, js.Function1[/* e */ Count, Unit]) => Unit,
     dateFormat: String,
     fromText: String,
     hideOutOfScopePeriods: Boolean,

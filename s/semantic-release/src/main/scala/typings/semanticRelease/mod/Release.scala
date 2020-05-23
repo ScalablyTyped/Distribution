@@ -8,40 +8,40 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * Details of a release published by a publish plugin.
-	 */
+  * Details of a release published by a publish plugin.
+  */
 trait Release extends js.Object {
   /**
-  		 * The sha of the last commit being part of the release.
-  		 */
+    * The sha of the last commit being part of the release.
+    */
   var gitHead: String
   /**
-  		 * The Git tag associated with the release.
-  		 */
+    * The Git tag associated with the release.
+    */
   var gitTag: String
   /**
-  		 * The release name, only if set by the corresponding publish plugin.
-  		 */
+    * The release name, only if set by the corresponding publish plugin.
+    */
   var name: js.UndefOr[String] = js.undefined
   /**
-  		 * The release notes for the release.
-  		 */
+    * The release notes for the release.
+    */
   var notes: String
   /**
-  		 * The name of the plugin that published the release.
-  		 */
+    * The name of the plugin that published the release.
+    */
   var pluginName: String
   /**
-  		 * The semver type of the release.
-  		 */
+    * The semver type of the release.
+    */
   var `type`: patch | minor | major
   /**
-  		 * The release URL, only if set by the corresponding publish plugin.
-  		 */
+    * The release URL, only if set by the corresponding publish plugin.
+    */
   var url: js.UndefOr[String] = js.undefined
   /**
-  		 * The version of the release.
-  		 */
+    * The version of the release.
+    */
   var version: String
 }
 

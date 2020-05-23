@@ -46,23 +46,23 @@ object ConnectionInfo {
     name: String,
     paused: Boolean,
     peristent: Boolean,
-    bitrate: Int | Double = null,
-    connectionId: Int | Double = null,
+    bitrate: js.UndefOr[Double] = js.undefined,
+    connectionId: js.UndefOr[Double] = js.undefined,
     ctsFlowControl: js.UndefOr[Boolean] = js.undefined,
     dataBits: seven | eight = null,
     parityBit: no | odd | even = null,
-    receiveTimeout: Int | Double = null,
-    sendTimeout: Int | Double = null,
+    receiveTimeout: js.UndefOr[Double] = js.undefined,
+    sendTimeout: js.UndefOr[Double] = js.undefined,
     stopBits: one | two = null
   ): ConnectionInfo = {
     val __obj = js.Dynamic.literal(bufferSize = bufferSize.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], paused = paused.asInstanceOf[js.Any], peristent = peristent.asInstanceOf[js.Any])
-    if (bitrate != null) __obj.updateDynamic("bitrate")(bitrate.asInstanceOf[js.Any])
-    if (connectionId != null) __obj.updateDynamic("connectionId")(connectionId.asInstanceOf[js.Any])
-    if (!js.isUndefined(ctsFlowControl)) __obj.updateDynamic("ctsFlowControl")(ctsFlowControl.asInstanceOf[js.Any])
+    if (!js.isUndefined(bitrate)) __obj.updateDynamic("bitrate")(bitrate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectionId)) __obj.updateDynamic("connectionId")(connectionId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ctsFlowControl)) __obj.updateDynamic("ctsFlowControl")(ctsFlowControl.get.asInstanceOf[js.Any])
     if (dataBits != null) __obj.updateDynamic("dataBits")(dataBits.asInstanceOf[js.Any])
     if (parityBit != null) __obj.updateDynamic("parityBit")(parityBit.asInstanceOf[js.Any])
-    if (receiveTimeout != null) __obj.updateDynamic("receiveTimeout")(receiveTimeout.asInstanceOf[js.Any])
-    if (sendTimeout != null) __obj.updateDynamic("sendTimeout")(sendTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(receiveTimeout)) __obj.updateDynamic("receiveTimeout")(receiveTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendTimeout)) __obj.updateDynamic("sendTimeout")(sendTimeout.get.asInstanceOf[js.Any])
     if (stopBits != null) __obj.updateDynamic("stopBits")(stopBits.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionInfo]
   }

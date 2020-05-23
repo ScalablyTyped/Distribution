@@ -14,9 +14,9 @@ trait ModifyAvailabilityZoneGroupResult extends js.Object {
 
 object ModifyAvailabilityZoneGroupResult {
   @scala.inline
-  def apply(Return: js.UndefOr[scala.Boolean] = js.undefined): ModifyAvailabilityZoneGroupResult = {
+  def apply(Return: js.UndefOr[Boolean] = js.undefined): ModifyAvailabilityZoneGroupResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Return)) __obj.updateDynamic("Return")(Return.asInstanceOf[js.Any])
+    if (!js.isUndefined(Return)) __obj.updateDynamic("Return")(Return.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyAvailabilityZoneGroupResult]
   }
 }

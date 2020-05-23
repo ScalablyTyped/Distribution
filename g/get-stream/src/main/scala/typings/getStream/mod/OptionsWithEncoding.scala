@@ -14,10 +14,10 @@ trait OptionsWithEncoding[EncodingType] extends Options {
 
 object OptionsWithEncoding {
   @scala.inline
-  def apply[EncodingType](encoding: EncodingType = null, maxBuffer: Int | Double = null): OptionsWithEncoding[EncodingType] = {
+  def apply[EncodingType](encoding: EncodingType = null, maxBuffer: js.UndefOr[Double] = js.undefined): OptionsWithEncoding[EncodingType] = {
     val __obj = js.Dynamic.literal()
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (maxBuffer != null) __obj.updateDynamic("maxBuffer")(maxBuffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBuffer)) __obj.updateDynamic("maxBuffer")(maxBuffer.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsWithEncoding[EncodingType]]
   }
 }

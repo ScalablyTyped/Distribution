@@ -2,8 +2,7 @@ package typings.cliBox.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.cliBox.AnonMarks
-import typings.cliBox.AnonStringify
+import typings.cliBox.anon.Stringify
 import typings.cliBox.cliBoxStrings.stringify
 import typings.std.Exclude
 import scala.scalajs.js
@@ -18,10 +17,10 @@ trait BoxConstructor
       (/* text */ String) | (/* text */ Text), 
       Box
     ] {
-  var defaults: AnonMarks = js.native
-  def apply(options: (Exclude[Options, stringify]) with AnonStringify): String = js.native
-  def apply(options: (Exclude[Options, stringify]) with AnonStringify, text: String): String = js.native
-  def apply(options: (Exclude[Options, stringify]) with AnonStringify, text: Text): String = js.native
+  var defaults: typings.cliBox.anon.Marks = js.native
+  def apply(options: (Exclude[Options, stringify]) with Stringify): String = js.native
+  def apply(options: (Exclude[Options, stringify]) with Stringify, text: String): String = js.native
+  def apply(options: (Exclude[Options, stringify]) with Stringify, text: Text): String = js.native
   def apply(options: String): Box = js.native
   def apply(options: String, text: String): Box = js.native
   def apply(options: String, text: Text): Box = js.native

@@ -27,18 +27,18 @@ object IDecoratorProps {
     slideCount: Double,
     slideWidth: Double | String,
     slidesToScroll: Double,
-    cellSpacing: Int | Double = null,
+    cellSpacing: js.UndefOr[Double] = js.undefined,
     goToSlide: /* index */ Double => Unit = null,
     nextSlide: () => Unit = null,
-    slidesToShow: Int | Double = null,
+    slidesToShow: js.UndefOr[Double] = js.undefined,
     wrapAround: js.UndefOr[Boolean] = js.undefined
   ): IDecoratorProps = {
     val __obj = js.Dynamic.literal(currentSlide = currentSlide.asInstanceOf[js.Any], frameWidth = frameWidth.asInstanceOf[js.Any], previousSlide = js.Any.fromFunction0(previousSlide), slideCount = slideCount.asInstanceOf[js.Any], slideWidth = slideWidth.asInstanceOf[js.Any], slidesToScroll = slidesToScroll.asInstanceOf[js.Any])
-    if (cellSpacing != null) __obj.updateDynamic("cellSpacing")(cellSpacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellSpacing)) __obj.updateDynamic("cellSpacing")(cellSpacing.get.asInstanceOf[js.Any])
     if (goToSlide != null) __obj.updateDynamic("goToSlide")(js.Any.fromFunction1(goToSlide))
     if (nextSlide != null) __obj.updateDynamic("nextSlide")(js.Any.fromFunction0(nextSlide))
-    if (slidesToShow != null) __obj.updateDynamic("slidesToShow")(slidesToShow.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapAround)) __obj.updateDynamic("wrapAround")(wrapAround.asInstanceOf[js.Any])
+    if (!js.isUndefined(slidesToShow)) __obj.updateDynamic("slidesToShow")(slidesToShow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapAround)) __obj.updateDynamic("wrapAround")(wrapAround.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDecoratorProps]
   }
 }

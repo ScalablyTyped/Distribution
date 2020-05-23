@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,8 +23,4 @@ trait dataUtil extends js.Object {
   def sum(json: js.Any, fieldName: String): Double = js.native
   def swap(array: js.Array[_], x: Double, y: Double): Unit = js.native
 }
-
-@JSGlobal("ej.dataUtil")
-@js.native
-object dataUtil extends TopLevel[dataUtil]
 

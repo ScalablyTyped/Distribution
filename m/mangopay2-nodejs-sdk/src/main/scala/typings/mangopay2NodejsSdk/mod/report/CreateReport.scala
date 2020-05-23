@@ -32,7 +32,7 @@ object CreateReport {
     if (Columns != null) __obj.updateDynamic("Columns")(Columns.asInstanceOf[js.Any])
     if (DownloadFormat != null) __obj.updateDynamic("DownloadFormat")(DownloadFormat.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(Preview)) __obj.updateDynamic("Preview")(Preview.asInstanceOf[js.Any])
+    if (!js.isUndefined(Preview)) __obj.updateDynamic("Preview")(Preview.get.asInstanceOf[js.Any])
     if (Sort != null) __obj.updateDynamic("Sort")(Sort.asInstanceOf[js.Any])
     if (Tag != null) __obj.updateDynamic("Tag")(Tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateReport]

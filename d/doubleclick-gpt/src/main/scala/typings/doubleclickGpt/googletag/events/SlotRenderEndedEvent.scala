@@ -22,18 +22,18 @@ object SlotRenderEndedEvent {
     serviceName: String,
     size: js.Array[Double] | String,
     slot: Slot,
-    advertiserId: Int | Double = null,
-    creativeId: Int | Double = null,
-    lineItemId: Int | Double = null,
-    sourceAgnosticCreativeId: Int | Double = null,
-    sourceAgnosticLineItemId: Int | Double = null
+    advertiserId: js.UndefOr[Double] = js.undefined,
+    creativeId: js.UndefOr[Double] = js.undefined,
+    lineItemId: js.UndefOr[Double] = js.undefined,
+    sourceAgnosticCreativeId: js.UndefOr[Double] = js.undefined,
+    sourceAgnosticLineItemId: js.UndefOr[Double] = js.undefined
   ): SlotRenderEndedEvent = {
     val __obj = js.Dynamic.literal(isEmpty = isEmpty.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any])
-    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
-    if (creativeId != null) __obj.updateDynamic("creativeId")(creativeId.asInstanceOf[js.Any])
-    if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId.asInstanceOf[js.Any])
-    if (sourceAgnosticCreativeId != null) __obj.updateDynamic("sourceAgnosticCreativeId")(sourceAgnosticCreativeId.asInstanceOf[js.Any])
-    if (sourceAgnosticLineItemId != null) __obj.updateDynamic("sourceAgnosticLineItemId")(sourceAgnosticLineItemId.asInstanceOf[js.Any])
+    if (!js.isUndefined(advertiserId)) __obj.updateDynamic("advertiserId")(advertiserId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(creativeId)) __obj.updateDynamic("creativeId")(creativeId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineItemId)) __obj.updateDynamic("lineItemId")(lineItemId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceAgnosticCreativeId)) __obj.updateDynamic("sourceAgnosticCreativeId")(sourceAgnosticCreativeId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceAgnosticLineItemId)) __obj.updateDynamic("sourceAgnosticLineItemId")(sourceAgnosticLineItemId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlotRenderEndedEvent]
   }
 }

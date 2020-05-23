@@ -30,11 +30,11 @@ object DownloadDBLogFilePortionMessage {
     DBInstanceIdentifier: String,
     LogFileName: String,
     Marker: String = null,
-    NumberOfLines: Int | scala.Double = null
+    NumberOfLines: js.UndefOr[Integer] = js.undefined
   ): DownloadDBLogFilePortionMessage = {
     val __obj = js.Dynamic.literal(DBInstanceIdentifier = DBInstanceIdentifier.asInstanceOf[js.Any], LogFileName = LogFileName.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (NumberOfLines != null) __obj.updateDynamic("NumberOfLines")(NumberOfLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfLines)) __obj.updateDynamic("NumberOfLines")(NumberOfLines.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadDBLogFilePortionMessage]
   }
 }

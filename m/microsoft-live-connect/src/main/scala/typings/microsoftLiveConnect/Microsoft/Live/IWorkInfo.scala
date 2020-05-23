@@ -1,6 +1,6 @@
 package typings.microsoftLiveConnect.Microsoft.Live
 
-import typings.microsoftLiveConnect.AnonName
+import typings.microsoftLiveConnect.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,16 +12,16 @@ trait IWorkInfo extends js.Object {
   /**
     * Info about the user's employer.
     */
-  var employer: AnonName
+  var employer: Name
   /**
     * Info about the user's work position.
     */
-  var position: AnonName
+  var position: Name
 }
 
 object IWorkInfo {
   @scala.inline
-  def apply(employer: AnonName, position: AnonName): IWorkInfo = {
+  def apply(employer: Name, position: Name): IWorkInfo = {
     val __obj = js.Dynamic.literal(employer = employer.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWorkInfo]
   }

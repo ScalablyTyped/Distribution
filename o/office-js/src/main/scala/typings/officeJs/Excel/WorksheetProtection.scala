@@ -1,9 +1,9 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.WorksheetProtectionData
 import typings.officeJs.Excel.Interfaces.WorksheetProtectionLoadOptions
 import typings.officeJs.OfficeExtension.ClientObject
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,22 +14,21 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.2]
   */
-@JSGlobal("Excel.WorksheetProtection")
 @js.native
-class WorksheetProtection () extends ClientObject {
+trait WorksheetProtection extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_WorksheetProtection: RequestContext = js.native
   /**
     *
-    * Sheet protection options. Read-only.
+    * Specifies the protection options for the worksheet.
     *
     * [Api set: ExcelApi 1.2]
     */
   val options: WorksheetProtectionOptions = js.native
   /**
     *
-    * Indicates if the worksheet is protected. Read-only.
+    * Specifies if the worksheet is protected.
     *
     * [Api set: ExcelApi 1.2]
     */
@@ -41,7 +40,7 @@ class WorksheetProtection () extends ClientObject {
     */
   def load(): WorksheetProtection = js.native
   def load(options: WorksheetProtectionLoadOptions): WorksheetProtection = js.native
-  def load(propertyNamesAndPaths: AnonExpand): WorksheetProtection = js.native
+  def load(propertyNamesAndPaths: Expand): WorksheetProtection = js.native
   def load(propertyNames: String): WorksheetProtection = js.native
   def load(propertyNames: js.Array[String]): WorksheetProtection = js.native
   /**

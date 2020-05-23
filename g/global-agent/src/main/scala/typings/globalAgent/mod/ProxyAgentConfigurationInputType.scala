@@ -15,12 +15,12 @@ object ProxyAgentConfigurationInputType {
   def apply(
     environmentVariableNamespace: String = null,
     forceGlobalAgent: js.UndefOr[Boolean] = js.undefined,
-    socketConnectionTimeout: Int | Double = null
+    socketConnectionTimeout: js.UndefOr[Double] = js.undefined
   ): ProxyAgentConfigurationInputType = {
     val __obj = js.Dynamic.literal()
     if (environmentVariableNamespace != null) __obj.updateDynamic("environmentVariableNamespace")(environmentVariableNamespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceGlobalAgent)) __obj.updateDynamic("forceGlobalAgent")(forceGlobalAgent.asInstanceOf[js.Any])
-    if (socketConnectionTimeout != null) __obj.updateDynamic("socketConnectionTimeout")(socketConnectionTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceGlobalAgent)) __obj.updateDynamic("forceGlobalAgent")(forceGlobalAgent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(socketConnectionTimeout)) __obj.updateDynamic("socketConnectionTimeout")(socketConnectionTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyAgentConfigurationInputType]
   }
 }

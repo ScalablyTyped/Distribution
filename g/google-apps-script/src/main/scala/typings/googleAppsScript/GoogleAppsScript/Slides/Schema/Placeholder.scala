@@ -12,9 +12,9 @@ trait Placeholder extends js.Object {
 
 object Placeholder {
   @scala.inline
-  def apply(index: Int | Double = null, parentObjectId: String = null, `type`: String = null): Placeholder = {
+  def apply(index: js.UndefOr[Double] = js.undefined, parentObjectId: String = null, `type`: String = null): Placeholder = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (parentObjectId != null) __obj.updateDynamic("parentObjectId")(parentObjectId.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Placeholder]

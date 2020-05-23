@@ -6,11 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.BLEND_SUBTRACTIVE
-  * @type {number}
-  * @description Subtract the color of the source fragment from the destination fragment
-  * and write the result to the frame buffer.
+  * Subtract the color of the source fragment from the destination fragment
+  and write the result to the frame buffer.
   */
 @JSImport("playcanvas", "BLEND_SUBTRACTIVE")
 @js.native

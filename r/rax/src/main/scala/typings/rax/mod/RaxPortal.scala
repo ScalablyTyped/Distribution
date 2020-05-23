@@ -14,13 +14,12 @@ object RaxPortal {
   def apply(
     props: js.Any,
     `type`: String | JSXElementConstructor[js.Any],
-    children: RaxNode = null,
+    children: js.UndefOr[Null | RaxNode] = js.undefined,
     key: Key = null
   ): RaxPortal = {
-    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(children)) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaxPortal]
   }
 }

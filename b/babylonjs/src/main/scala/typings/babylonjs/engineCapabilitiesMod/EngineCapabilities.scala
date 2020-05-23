@@ -1,7 +1,7 @@
 package typings.babylonjs.engineCapabilitiesMod
 
-import typings.babylonjs.AnonCOMPLETIONSTATUSKHR
 import typings.babylonjs.EXTDisjointTimerQuery
+import typings.babylonjs.anon.COMPLETIONSTATUSKHR
 import typings.std.EXTTextureFilterAnisotropic
 import typings.std.WEBGLCompressedTextureS3tc
 import scala.scalajs.js
@@ -62,7 +62,7 @@ trait EngineCapabilities extends js.Object {
   /** Defines if oculus multiview is supported (https://developer.oculus.com/documentation/oculus-browser/latest/concepts/browser-multiview/) */
   var oculusMultiview: js.UndefOr[js.Any] = js.undefined
   /** Function used to let the system compiles shaders in background */
-  var parallelShaderCompile: js.UndefOr[AnonCOMPLETIONSTATUSKHR] = js.undefined
+  var parallelShaderCompile: js.UndefOr[COMPLETIONSTATUSKHR] = js.undefined
   /** Defines if pvrtc texture compression is supported */
   var pvrtc: js.Any
   /** Defines if s3tc texture compression is supported */
@@ -130,16 +130,16 @@ object EngineCapabilities {
     textureLOD: Boolean,
     uintIndices: Boolean,
     vertexArrayObject: Boolean,
-    maxSamples: Int | Double = null,
+    maxSamples: js.UndefOr[Double] = js.undefined,
     multiview: js.Any = null,
     oculusMultiview: js.Any = null,
-    parallelShaderCompile: AnonCOMPLETIONSTATUSKHR = null,
+    parallelShaderCompile: COMPLETIONSTATUSKHR = null,
     s3tc: WEBGLCompressedTextureS3tc = null,
     textureAnisotropicFilterExtension: EXTTextureFilterAnisotropic = null,
     timerQuery: EXTDisjointTimerQuery = null
   ): EngineCapabilities = {
     val __obj = js.Dynamic.literal(astc = astc.asInstanceOf[js.Any], blendMinMax = blendMinMax.asInstanceOf[js.Any], canUseTimestampForTimerQuery = canUseTimestampForTimerQuery.asInstanceOf[js.Any], colorBufferFloat = colorBufferFloat.asInstanceOf[js.Any], depthTextureExtension = depthTextureExtension.asInstanceOf[js.Any], drawBuffersExtension = drawBuffersExtension.asInstanceOf[js.Any], etc1 = etc1.asInstanceOf[js.Any], etc2 = etc2.asInstanceOf[js.Any], fragmentDepthSupported = fragmentDepthSupported.asInstanceOf[js.Any], highPrecisionShaderSupported = highPrecisionShaderSupported.asInstanceOf[js.Any], instancedArrays = instancedArrays.asInstanceOf[js.Any], maxAnisotropy = maxAnisotropy.asInstanceOf[js.Any], maxCombinedTexturesImageUnits = maxCombinedTexturesImageUnits.asInstanceOf[js.Any], maxCubemapTextureSize = maxCubemapTextureSize.asInstanceOf[js.Any], maxFragmentUniformVectors = maxFragmentUniformVectors.asInstanceOf[js.Any], maxMSAASamples = maxMSAASamples.asInstanceOf[js.Any], maxRenderTextureSize = maxRenderTextureSize.asInstanceOf[js.Any], maxTextureSize = maxTextureSize.asInstanceOf[js.Any], maxTexturesImageUnits = maxTexturesImageUnits.asInstanceOf[js.Any], maxVaryingVectors = maxVaryingVectors.asInstanceOf[js.Any], maxVertexAttribs = maxVertexAttribs.asInstanceOf[js.Any], maxVertexTextureImageUnits = maxVertexTextureImageUnits.asInstanceOf[js.Any], maxVertexUniformVectors = maxVertexUniformVectors.asInstanceOf[js.Any], pvrtc = pvrtc.asInstanceOf[js.Any], standardDerivatives = standardDerivatives.asInstanceOf[js.Any], textureFloat = textureFloat.asInstanceOf[js.Any], textureFloatLinearFiltering = textureFloatLinearFiltering.asInstanceOf[js.Any], textureFloatRender = textureFloatRender.asInstanceOf[js.Any], textureHalfFloat = textureHalfFloat.asInstanceOf[js.Any], textureHalfFloatLinearFiltering = textureHalfFloatLinearFiltering.asInstanceOf[js.Any], textureHalfFloatRender = textureHalfFloatRender.asInstanceOf[js.Any], textureLOD = textureLOD.asInstanceOf[js.Any], uintIndices = uintIndices.asInstanceOf[js.Any], vertexArrayObject = vertexArrayObject.asInstanceOf[js.Any])
-    if (maxSamples != null) __obj.updateDynamic("maxSamples")(maxSamples.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSamples)) __obj.updateDynamic("maxSamples")(maxSamples.get.asInstanceOf[js.Any])
     if (multiview != null) __obj.updateDynamic("multiview")(multiview.asInstanceOf[js.Any])
     if (oculusMultiview != null) __obj.updateDynamic("oculusMultiview")(oculusMultiview.asInstanceOf[js.Any])
     if (parallelShaderCompile != null) __obj.updateDynamic("parallelShaderCompile")(parallelShaderCompile.asInstanceOf[js.Any])

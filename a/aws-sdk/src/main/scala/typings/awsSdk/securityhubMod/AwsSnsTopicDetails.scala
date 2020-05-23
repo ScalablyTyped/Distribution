@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AwsSnsTopicDetails extends js.Object {
   /**
-    * The ID of an AWS-managed customer master key (CMK) for Amazon SNS or a custom CMK.
+    * The ID of an AWS managed customer master key (CMK) for Amazon SNS or a custom CMK.
     */
   var KmsMasterKeyId: js.UndefOr[NonEmptyString] = js.native
   /**

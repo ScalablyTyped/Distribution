@@ -4,11 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.EmitState")
-@js.native
-class EmitState () extends js.Object {
-  var column: Double = js.native
-  var container: EmitContainer = js.native
-  var line: Double = js.native
+trait EmitState extends js.Object {
+  var column: Double
+  var container: EmitContainer
+  var line: Double
+}
+
+object EmitState {
+  @scala.inline
+  def apply(column: Double, container: EmitContainer, line: Double): EmitState = {
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EmitState]
+  }
 }
 

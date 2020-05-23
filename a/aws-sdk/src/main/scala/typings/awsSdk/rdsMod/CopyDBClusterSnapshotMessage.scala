@@ -38,14 +38,14 @@ object CopyDBClusterSnapshotMessage {
   def apply(
     SourceDBClusterSnapshotIdentifier: String,
     TargetDBClusterSnapshotIdentifier: String,
-    CopyTags: js.UndefOr[scala.Boolean] = js.undefined,
+    CopyTags: js.UndefOr[BooleanOptional] = js.undefined,
     KmsKeyId: String = null,
     PreSignedUrl: String = null,
     SourceRegion: String = null,
     Tags: TagList = null
   ): CopyDBClusterSnapshotMessage = {
     val __obj = js.Dynamic.literal(SourceDBClusterSnapshotIdentifier = SourceDBClusterSnapshotIdentifier.asInstanceOf[js.Any], TargetDBClusterSnapshotIdentifier = TargetDBClusterSnapshotIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(CopyTags)) __obj.updateDynamic("CopyTags")(CopyTags.asInstanceOf[js.Any])
+    if (!js.isUndefined(CopyTags)) __obj.updateDynamic("CopyTags")(CopyTags.get.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
     if (PreSignedUrl != null) __obj.updateDynamic("PreSignedUrl")(PreSignedUrl.asInstanceOf[js.Any])
     if (SourceRegion != null) __obj.updateDynamic("SourceRegion")(SourceRegion.asInstanceOf[js.Any])

@@ -40,13 +40,13 @@ object IItemOptions {
   def apply(
     args: ReadonlyJSONObject = null,
     command: String = null,
-    submenu: typings.luminoWidgets.menuMod.Menu = null,
+    submenu: js.UndefOr[Null | typings.luminoWidgets.menuMod.Menu] = js.undefined,
     `type`: ItemType = null
   ): IItemOptions = {
     val __obj = js.Dynamic.literal()
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
-    if (submenu != null) __obj.updateDynamic("submenu")(submenu.asInstanceOf[js.Any])
+    if (!js.isUndefined(submenu)) __obj.updateDynamic("submenu")(submenu.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IItemOptions]
   }

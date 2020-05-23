@@ -1,8 +1,8 @@
 package typings.semanticUiApi.SemanticUI.ApiSettings
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jquery.JQuery_.Deferred
-import typings.jquery.JQuery_.jqXHR
+import typings.jquery.JQuery.Deferred
+import typings.jquery.JQuery.jqXHR
 import typings.semanticUiApi.JQuery
 import typings.semanticUiApi.SemanticUI.Api.ClassNameSettings
 import typings.semanticUiApi.SemanticUI.Api.ErrorSettings

@@ -1,43 +1,39 @@
 package typings.gapiClientCalendar.gapi.client.calendar
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientCalendar.AnonAlt
-import typings.gapiClientCalendar.AnonCalendarId
-import typings.gapiClientCalendar.AnonFields
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientCalendar.anon.Alt
+import typings.gapiClientCalendar.anon.CalendarId
+import typings.gapiClientCalendar.anon.Fields
+import typings.gapiClientCalendar.anon.Key
+import typings.gapiClientCalendar.anon.MaxResults
+import typings.gapiClientCalendar.anon.Oauthtoken
+import typings.gapiClientCalendar.anon.PrettyPrint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AclResource extends js.Object {
   /** Deletes an access control rule. */
-  def delete(request: AnonAlt): Request_[Unit]
+  def delete(): Request[Unit] = js.native
+  def delete(request: Alt): Request[Unit] = js.native
   /** Returns an access control rule. */
-  def get(request: AnonAlt): Request_[AclRule]
+  def get(): Request[AclRule] = js.native
+  def get(request: Alt): Request[AclRule] = js.native
   /** Creates an access control rule. */
-  def insert(request: AnonCalendarId): Request_[AclRule]
+  def insert(request: CalendarId): Request[AclRule] = js.native
+  def insert(request: Fields, body: AclRule): Request[AclRule] = js.native
   /** Returns the rules in the access control list for the calendar. */
-  def list(request: AnonFields): Request_[Acl]
+  def list(): Request[Acl] = js.native
+  def list(request: Key): Request[Acl] = js.native
   /** Updates an access control rule. This method supports patch semantics. */
-  def patch(request: AnonAlt): Request_[AclRule]
+  def patch(request: Oauthtoken): Request[AclRule] = js.native
+  def patch(request: PrettyPrint, body: AclRule): Request[AclRule] = js.native
   /** Updates an access control rule. */
-  def update(request: AnonAlt): Request_[AclRule]
+  def update(request: Oauthtoken): Request[AclRule] = js.native
+  def update(request: PrettyPrint, body: AclRule): Request[AclRule] = js.native
+  def watch(request: Key, body: Channel): Request[Channel] = js.native
   /** Watch for changes to ACL resources. */
-  def watch(request: AnonFields): Request_[Channel]
-}
-
-object AclResource {
-  @scala.inline
-  def apply(
-    delete: AnonAlt => Request_[Unit],
-    get: AnonAlt => Request_[AclRule],
-    insert: AnonCalendarId => Request_[AclRule],
-    list: AnonFields => Request_[Acl],
-    patch: AnonAlt => Request_[AclRule],
-    update: AnonAlt => Request_[AclRule],
-    watch: AnonFields => Request_[Channel]
-  ): AclResource = {
-    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update), watch = js.Any.fromFunction1(watch))
-    __obj.asInstanceOf[AclResource]
-  }
+  def watch(request: MaxResults): Request[Channel] = js.native
 }
 

@@ -14,10 +14,13 @@ trait ICreateContextRequest extends js.Object {
 
 object ICreateContextRequest {
   @scala.inline
-  def apply(context: IContext = null, parent: String = null): ICreateContextRequest = {
+  def apply(
+    context: js.UndefOr[Null | IContext] = js.undefined,
+    parent: js.UndefOr[Null | String] = js.undefined
+  ): ICreateContextRequest = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(context)) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICreateContextRequest]
   }
 }

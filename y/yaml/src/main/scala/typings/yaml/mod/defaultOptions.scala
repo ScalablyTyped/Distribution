@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("yaml", "defaultOptions")
 @js.native
-object defaultOptions extends TopLevel[ParseOptions]
+object defaultOptions extends TopLevel[Options]
 

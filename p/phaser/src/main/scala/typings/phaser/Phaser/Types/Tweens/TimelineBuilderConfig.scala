@@ -150,13 +150,13 @@ object TimelineBuilderConfig {
   def apply(
     callbackScope: js.Any = null,
     completeDelay: Double | js.Function | js.Object | js.Array[_] = null,
-    delay: Int | Double = null,
-    duration: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
+    duration: js.UndefOr[Double] = js.undefined,
     ease: String | js.Function = null,
     easeParams: js.Array[_] = null,
     flipX: js.UndefOr[Boolean] = js.undefined,
     flipY: js.UndefOr[Boolean] = js.undefined,
-    hold: Int | Double = null,
+    hold: js.UndefOr[Double] = js.undefined,
     loop: Double | js.Function | js.Object | js.Array[_] = null,
     loopDelay: Double | js.Function | js.Object | js.Array[_] = null,
     onComplete: (/* timeline */ Timeline, /* repeated */ js.Any) => Unit = null,
@@ -175,10 +175,10 @@ object TimelineBuilderConfig {
     onYoyoParams: js.Array[_] = null,
     onYoyoScope: js.Any = null,
     paused: js.UndefOr[Boolean] = js.undefined,
-    repeat: Int | Double = null,
-    repeatDelay: Int | Double = null,
+    repeat: js.UndefOr[integer] = js.undefined,
+    repeatDelay: js.UndefOr[Double] = js.undefined,
     targets: js.Any = null,
-    totalDuration: Int | Double = null,
+    totalDuration: js.UndefOr[Double] = js.undefined,
     tweens: (js.Array[js.Object | TweenBuilderConfig]) | js.Function = null,
     useFrames: js.UndefOr[Boolean] = js.undefined,
     yoyo: js.UndefOr[Boolean] = js.undefined
@@ -186,13 +186,13 @@ object TimelineBuilderConfig {
     val __obj = js.Dynamic.literal()
     if (callbackScope != null) __obj.updateDynamic("callbackScope")(callbackScope.asInstanceOf[js.Any])
     if (completeDelay != null) __obj.updateDynamic("completeDelay")(completeDelay.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (ease != null) __obj.updateDynamic("ease")(ease.asInstanceOf[js.Any])
     if (easeParams != null) __obj.updateDynamic("easeParams")(easeParams.asInstanceOf[js.Any])
-    if (!js.isUndefined(flipX)) __obj.updateDynamic("flipX")(flipX.asInstanceOf[js.Any])
-    if (!js.isUndefined(flipY)) __obj.updateDynamic("flipY")(flipY.asInstanceOf[js.Any])
-    if (hold != null) __obj.updateDynamic("hold")(hold.asInstanceOf[js.Any])
+    if (!js.isUndefined(flipX)) __obj.updateDynamic("flipX")(flipX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flipY)) __obj.updateDynamic("flipY")(flipY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hold)) __obj.updateDynamic("hold")(hold.get.asInstanceOf[js.Any])
     if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
     if (loopDelay != null) __obj.updateDynamic("loopDelay")(loopDelay.asInstanceOf[js.Any])
     if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction2(onComplete))
@@ -210,14 +210,14 @@ object TimelineBuilderConfig {
     if (onYoyo != null) __obj.updateDynamic("onYoyo")(js.Any.fromFunction2(onYoyo))
     if (onYoyoParams != null) __obj.updateDynamic("onYoyoParams")(onYoyoParams.asInstanceOf[js.Any])
     if (onYoyoScope != null) __obj.updateDynamic("onYoyoScope")(onYoyoScope.asInstanceOf[js.Any])
-    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused.asInstanceOf[js.Any])
-    if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
-    if (repeatDelay != null) __obj.updateDynamic("repeatDelay")(repeatDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeat)) __obj.updateDynamic("repeat")(repeat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeatDelay)) __obj.updateDynamic("repeatDelay")(repeatDelay.get.asInstanceOf[js.Any])
     if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
-    if (totalDuration != null) __obj.updateDynamic("totalDuration")(totalDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalDuration)) __obj.updateDynamic("totalDuration")(totalDuration.get.asInstanceOf[js.Any])
     if (tweens != null) __obj.updateDynamic("tweens")(tweens.asInstanceOf[js.Any])
-    if (!js.isUndefined(useFrames)) __obj.updateDynamic("useFrames")(useFrames.asInstanceOf[js.Any])
-    if (!js.isUndefined(yoyo)) __obj.updateDynamic("yoyo")(yoyo.asInstanceOf[js.Any])
+    if (!js.isUndefined(useFrames)) __obj.updateDynamic("useFrames")(useFrames.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yoyo)) __obj.updateDynamic("yoyo")(yoyo.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineBuilderConfig]
   }
 }

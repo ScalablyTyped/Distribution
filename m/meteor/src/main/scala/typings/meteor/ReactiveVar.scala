@@ -1,6 +1,5 @@
 package typings.meteor
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,11 @@ trait ReactiveVar[T] extends js.Object {
   def set(newValue: T): Unit
 }
 
-@JSGlobal("ReactiveVar")
-@js.native
-object ReactiveVar extends TopLevel[ReactiveVarStatic]
+object ReactiveVar {
+  @scala.inline
+  def apply[T](get: () => T, set: T => Unit): ReactiveVar[T] = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), set = js.Any.fromFunction1(set))
+    __obj.asInstanceOf[ReactiveVar[T]]
+  }
+}
 

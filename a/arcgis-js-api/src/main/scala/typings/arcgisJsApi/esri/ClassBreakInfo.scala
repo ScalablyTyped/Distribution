@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,8 +33,4 @@ trait ClassBreakInfo
     */
   var symbol: Symbol = js.native
 }
-
-@JSGlobal("__esri.ClassBreakInfo")
-@js.native
-object ClassBreakInfo extends TopLevel[ClassBreakInfoConstructor]
 

@@ -9,7 +9,7 @@ package object validationErrorMod {
   type JSONSchema7 = typings.jsonSchema.mod.JSONSchema7
   type PostFormatter = js.Function2[
     /* formattedError */ java.lang.String, 
-    /* error */ typings.develarSchemaUtils.ErrorObjectchildrenArrayE, 
+    /* error */ typings.develarSchemaUtils.anon.ErrorObjectchildrenArrayE, 
     java.lang.String
   ]
   type SPECIFICITY = scala.Double

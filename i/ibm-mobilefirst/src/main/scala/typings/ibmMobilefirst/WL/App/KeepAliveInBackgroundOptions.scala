@@ -20,7 +20,7 @@ object KeepAliveInBackgroundOptions {
     contentTextText: String = null,
     contentTitle: String = null,
     icon: String = null,
-    notificationId: Int | Double = null,
+    notificationId: js.UndefOr[Double] = js.undefined,
     tickerText: String = null
   ): KeepAliveInBackgroundOptions = {
     val __obj = js.Dynamic.literal()
@@ -28,7 +28,7 @@ object KeepAliveInBackgroundOptions {
     if (contentTextText != null) __obj.updateDynamic("contentTextText")(contentTextText.asInstanceOf[js.Any])
     if (contentTitle != null) __obj.updateDynamic("contentTitle")(contentTitle.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (notificationId != null) __obj.updateDynamic("notificationId")(notificationId.asInstanceOf[js.Any])
+    if (!js.isUndefined(notificationId)) __obj.updateDynamic("notificationId")(notificationId.get.asInstanceOf[js.Any])
     if (tickerText != null) __obj.updateDynamic("tickerText")(tickerText.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeepAliveInBackgroundOptions]
   }

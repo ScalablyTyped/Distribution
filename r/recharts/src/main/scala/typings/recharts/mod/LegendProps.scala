@@ -1,8 +1,8 @@
 package typings.recharts.mod
 
 import typings.react.mod.ReactElement
-import typings.recharts.AnonWidth
-import typings.recharts.PartialMargin
+import typings.recharts.anon.PartialMargin
+import typings.recharts.anon.Width
 import typings.recharts.rechartsStrings.bottom
 import typings.recharts.rechartsStrings.center
 import typings.recharts.rechartsStrings.left
@@ -38,34 +38,34 @@ object LegendProps {
   @scala.inline
   def apply(
     align: left | center | right = null,
-    chartHeight: Int | Double = null,
-    chartWidth: Int | Double = null,
+    chartHeight: js.UndefOr[Double] = js.undefined,
+    chartWidth: js.UndefOr[Double] = js.undefined,
     content: ReactElement | ContentRenderer[LegendProps] = null,
     formatter: (/* value */ js.UndefOr[
       /* import warning: importer.ImportType#apply Failed type conversion: recharts.recharts.LegendPayload['value'] */ js.Any
     ], /* entry */ js.UndefOr[LegendPayload], /* i */ js.UndefOr[Double]) => js.Any = null,
-    height: Int | Double = null,
-    iconSize: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
+    iconSize: js.UndefOr[Double] = js.undefined,
     iconType: IconType = null,
     layout: LayoutType = null,
     margin: PartialMargin = null,
-    onBBoxUpdate: /* box */ AnonWidth => Unit = null,
+    onBBoxUpdate: /* box */ Width => Unit = null,
     onClick: /* repeated */ js.Any => Unit = null,
     onMouseEnter: /* repeated */ js.Any => Unit = null,
     onMouseLeave: /* repeated */ js.Any => Unit = null,
     payload: js.Array[LegendPayload] = null,
     verticalAlign: top | middle | bottom = null,
-    width: Int | Double = null,
+    width: js.UndefOr[Double] = js.undefined,
     wrapperStyle: js.Object = null
   ): LegendProps = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (chartHeight != null) __obj.updateDynamic("chartHeight")(chartHeight.asInstanceOf[js.Any])
-    if (chartWidth != null) __obj.updateDynamic("chartWidth")(chartWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(chartHeight)) __obj.updateDynamic("chartHeight")(chartHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(chartWidth)) __obj.updateDynamic("chartWidth")(chartWidth.get.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction3(formatter))
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(iconSize)) __obj.updateDynamic("iconSize")(iconSize.get.asInstanceOf[js.Any])
     if (iconType != null) __obj.updateDynamic("iconType")(iconType.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
@@ -75,7 +75,7 @@ object LegendProps {
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     if (wrapperStyle != null) __obj.updateDynamic("wrapperStyle")(wrapperStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendProps]
   }

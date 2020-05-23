@@ -39,21 +39,21 @@ object AnnotationsTunnelTypeOptions {
   @scala.inline
   def apply(
     background: js.Object | AnnotationsTunnelTypeBackgroundOptions = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     heightControlPoint: AnnotationsTunnelTypeHeightControlPointOptions = null,
     line: AnnotationsTunnelTypeLineOptions = null,
     points: js.Array[AnnotationsTunnelTypePointsOptions] = null,
-    xAxis: Int | Double = null,
-    yAxis: Int | Double = null
+    xAxis: js.UndefOr[Double] = js.undefined,
+    yAxis: js.UndefOr[Double] = js.undefined
   ): AnnotationsTunnelTypeOptions = {
     val __obj = js.Dynamic.literal()
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (heightControlPoint != null) __obj.updateDynamic("heightControlPoint")(heightControlPoint.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
-    if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
-    if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])
+    if (!js.isUndefined(xAxis)) __obj.updateDynamic("xAxis")(xAxis.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yAxis)) __obj.updateDynamic("yAxis")(yAxis.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsTunnelTypeOptions]
   }
 }

@@ -10,7 +10,7 @@ trait OnHeaderMouseEventArgs[T /* <: SlickData */] extends GridEventArgs[T] {
 
 object OnHeaderMouseEventArgs {
   @scala.inline
-  def apply[T /* <: SlickData */](column: Column[T], grid: Grid[T]): OnHeaderMouseEventArgs[T] = {
+  def apply[T](column: Column[T], grid: Grid[T]): OnHeaderMouseEventArgs[T] = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnHeaderMouseEventArgs[T]]
   }

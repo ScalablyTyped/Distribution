@@ -14,9 +14,9 @@ trait ValidateMatchmakingRuleSetOutput extends js.Object {
 
 object ValidateMatchmakingRuleSetOutput {
   @scala.inline
-  def apply(Valid: js.UndefOr[Boolean] = js.undefined): ValidateMatchmakingRuleSetOutput = {
+  def apply(Valid: js.UndefOr[BooleanModel] = js.undefined): ValidateMatchmakingRuleSetOutput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Valid)) __obj.updateDynamic("Valid")(Valid.asInstanceOf[js.Any])
+    if (!js.isUndefined(Valid)) __obj.updateDynamic("Valid")(Valid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidateMatchmakingRuleSetOutput]
   }
 }

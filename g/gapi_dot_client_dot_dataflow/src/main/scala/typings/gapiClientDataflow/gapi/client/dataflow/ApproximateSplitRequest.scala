@@ -16,9 +16,9 @@ trait ApproximateSplitRequest extends js.Object {
 
 object ApproximateSplitRequest {
   @scala.inline
-  def apply(fractionConsumed: Int | Double = null, position: Position = null): ApproximateSplitRequest = {
+  def apply(fractionConsumed: js.UndefOr[Double] = js.undefined, position: Position = null): ApproximateSplitRequest = {
     val __obj = js.Dynamic.literal()
-    if (fractionConsumed != null) __obj.updateDynamic("fractionConsumed")(fractionConsumed.asInstanceOf[js.Any])
+    if (!js.isUndefined(fractionConsumed)) __obj.updateDynamic("fractionConsumed")(fractionConsumed.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApproximateSplitRequest]
   }

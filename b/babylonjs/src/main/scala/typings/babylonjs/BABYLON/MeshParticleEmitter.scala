@@ -4,81 +4,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.MeshParticleEmitter")
-@js.native
-/**
-  * Creates a new instance MeshParticleEmitter
-  * @param mesh defines the mesh to use as source
-  */
-class MeshParticleEmitter () extends IParticleEmitterType {
-  def this(/** Defines the mesh to use as source */
-  mesh: AbstractMesh) = this()
-  var _indices: js.Any = js.native
-  var _normals: js.Any = js.native
-  var _positions: js.Any = js.native
-  var _storedNormal: js.Any = js.native
+trait MeshParticleEmitter extends IParticleEmitterType {
+  var _indices: js.Any
+  var _normals: js.Any
+  var _positions: js.Any
+  var _storedNormal: js.Any
   /**
     * Random direction of each particle after it has been emitted, between direction1 and direction2 vectors.
     */
-  var direction1: Vector3 = js.native
+  var direction1: Vector3
   /**
     * Random direction of each particle after it has been emitted, between direction1 and direction2 vectors.
     */
-  var direction2: Vector3 = js.native
+  var direction2: Vector3
   /** Defines the mesh to use as source */
-  var mesh: js.UndefOr[AbstractMesh] = js.native
+  var mesh: js.UndefOr[AbstractMesh] = js.undefined
   /**
     * Gets or sets a boolean indicating that particle directions must be built from mesh face normals
     */
-  var useMeshNormalsForDirection: Boolean = js.native
-  /**
-    * Called by the GPUParticleSystem to setup the update shader
-    * @param effect defines the update shader
-    */
-  /* CompleteClass */
-  override def applyToShader(effect: Effect): Unit = js.native
-  /**
-    * Returns a string representing the class name
-    * @returns a string containing the class name
-    */
-  /* CompleteClass */
-  override def getClassName(): String = js.native
-  /**
-    * Returns a string to use to update the GPU particles update shader
-    * @returns the effect defines string
-    */
-  /* CompleteClass */
-  override def getEffectDefines(): String = js.native
-  /**
-    * Parse properties from a JSON object
-    * @param serializationObject defines the JSON object
-    * @param scene defines the hosting scene
-    */
-  /* CompleteClass */
-  override def parse(serializationObject: js.Any, scene: Scene): Unit = js.native
-  /**
-    * Serializes the particle system to a JSON object.
-    * @returns the JSON object
-    */
-  /* CompleteClass */
-  override def serialize(): js.Any = js.native
-  /**
-    * Called by the particle System when the direction is computed for the created particle.
-    * @param worldMatrix is the world matrix of the particle system
-    * @param directionToUpdate is the direction vector to update with the result
-    * @param particle is the particle we are computed the direction for
-    * @param isLocal defines if the direction should be set in local space
-    */
-  /* CompleteClass */
-  override def startDirectionFunction(worldMatrix: Matrix, directionToUpdate: Vector3, particle: Particle, isLocal: Boolean): Unit = js.native
-  /**
-    * Called by the particle System when the position is computed for the created particle.
-    * @param worldMatrix is the world matrix of the particle system
-    * @param positionToUpdate is the position vector to update with the result
-    * @param particle is the particle we are computed the position for
-    * @param isLocal defines if the position should be set in local space
-    */
-  /* CompleteClass */
-  override def startPositionFunction(worldMatrix: Matrix, positionToUpdate: Vector3, particle: Particle, isLocal: Boolean): Unit = js.native
+  var useMeshNormalsForDirection: Boolean
+}
+
+object MeshParticleEmitter {
+  @scala.inline
+  def apply(
+    _indices: js.Any,
+    _normals: js.Any,
+    _positions: js.Any,
+    _storedNormal: js.Any,
+    applyToShader: Effect => Unit,
+    direction1: Vector3,
+    direction2: Vector3,
+    getClassName: () => String,
+    getEffectDefines: () => String,
+    parse: (js.Any, Scene) => Unit,
+    serialize: () => js.Any,
+    startDirectionFunction: (Matrix, Vector3, Particle, Boolean) => Unit,
+    startPositionFunction: (Matrix, Vector3, Particle, Boolean) => Unit,
+    useMeshNormalsForDirection: Boolean,
+    mesh: AbstractMesh = null
+  ): MeshParticleEmitter = {
+    val __obj = js.Dynamic.literal(_indices = _indices.asInstanceOf[js.Any], _normals = _normals.asInstanceOf[js.Any], _positions = _positions.asInstanceOf[js.Any], _storedNormal = _storedNormal.asInstanceOf[js.Any], applyToShader = js.Any.fromFunction1(applyToShader), direction1 = direction1.asInstanceOf[js.Any], direction2 = direction2.asInstanceOf[js.Any], getClassName = js.Any.fromFunction0(getClassName), getEffectDefines = js.Any.fromFunction0(getEffectDefines), parse = js.Any.fromFunction2(parse), serialize = js.Any.fromFunction0(serialize), startDirectionFunction = js.Any.fromFunction4(startDirectionFunction), startPositionFunction = js.Any.fromFunction4(startPositionFunction), useMeshNormalsForDirection = useMeshNormalsForDirection.asInstanceOf[js.Any])
+    if (mesh != null) __obj.updateDynamic("mesh")(mesh.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MeshParticleEmitter]
+  }
 }
 

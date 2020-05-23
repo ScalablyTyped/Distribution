@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 trait ICartesianProductGenerator[T] extends IPredictableGenerator[T] {
   /**
-  		 * Arguments are integer coordinates.
-  		 * Arguments can be out of bounds but it returns `undefined` in such cases.
-  		 */
+    * Arguments are integer coordinates.
+    * Arguments can be out of bounds but it returns `undefined` in such cases.
+    */
   def get(coordinates: Double*): T
 }
 

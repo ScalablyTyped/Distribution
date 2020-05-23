@@ -43,24 +43,24 @@ trait Latency extends js.Object {
 object Latency {
   @scala.inline
   def apply(
-    P10: Int | Double = null,
-    P50: Int | Double = null,
-    P75: Int | Double = null,
-    P85: Int | Double = null,
-    P90: Int | Double = null,
-    P95: Int | Double = null,
-    P99: Int | Double = null,
-    P999: Int | Double = null
+    P10: js.UndefOr[NullableDouble] = js.undefined,
+    P50: js.UndefOr[NullableDouble] = js.undefined,
+    P75: js.UndefOr[NullableDouble] = js.undefined,
+    P85: js.UndefOr[NullableDouble] = js.undefined,
+    P90: js.UndefOr[NullableDouble] = js.undefined,
+    P95: js.UndefOr[NullableDouble] = js.undefined,
+    P99: js.UndefOr[NullableDouble] = js.undefined,
+    P999: js.UndefOr[NullableDouble] = js.undefined
   ): Latency = {
     val __obj = js.Dynamic.literal()
-    if (P10 != null) __obj.updateDynamic("P10")(P10.asInstanceOf[js.Any])
-    if (P50 != null) __obj.updateDynamic("P50")(P50.asInstanceOf[js.Any])
-    if (P75 != null) __obj.updateDynamic("P75")(P75.asInstanceOf[js.Any])
-    if (P85 != null) __obj.updateDynamic("P85")(P85.asInstanceOf[js.Any])
-    if (P90 != null) __obj.updateDynamic("P90")(P90.asInstanceOf[js.Any])
-    if (P95 != null) __obj.updateDynamic("P95")(P95.asInstanceOf[js.Any])
-    if (P99 != null) __obj.updateDynamic("P99")(P99.asInstanceOf[js.Any])
-    if (P999 != null) __obj.updateDynamic("P999")(P999.asInstanceOf[js.Any])
+    if (!js.isUndefined(P10)) __obj.updateDynamic("P10")(P10.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(P50)) __obj.updateDynamic("P50")(P50.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(P75)) __obj.updateDynamic("P75")(P75.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(P85)) __obj.updateDynamic("P85")(P85.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(P90)) __obj.updateDynamic("P90")(P90.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(P95)) __obj.updateDynamic("P95")(P95.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(P99)) __obj.updateDynamic("P99")(P99.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(P999)) __obj.updateDynamic("P999")(P999.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Latency]
   }
 }

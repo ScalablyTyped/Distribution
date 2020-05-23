@@ -93,18 +93,18 @@ object WindowsFirewallNetworkProfile {
     unicastResponsesToMulticastBroadcastsBlocked: js.UndefOr[Boolean] = js.undefined
   ): WindowsFirewallNetworkProfile = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(authorizedApplicationRulesFromGroupPolicyMerged)) __obj.updateDynamic("authorizedApplicationRulesFromGroupPolicyMerged")(authorizedApplicationRulesFromGroupPolicyMerged.asInstanceOf[js.Any])
-    if (!js.isUndefined(connectionSecurityRulesFromGroupPolicyMerged)) __obj.updateDynamic("connectionSecurityRulesFromGroupPolicyMerged")(connectionSecurityRulesFromGroupPolicyMerged.asInstanceOf[js.Any])
+    if (!js.isUndefined(authorizedApplicationRulesFromGroupPolicyMerged)) __obj.updateDynamic("authorizedApplicationRulesFromGroupPolicyMerged")(authorizedApplicationRulesFromGroupPolicyMerged.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectionSecurityRulesFromGroupPolicyMerged)) __obj.updateDynamic("connectionSecurityRulesFromGroupPolicyMerged")(connectionSecurityRulesFromGroupPolicyMerged.get.asInstanceOf[js.Any])
     if (firewallEnabled != null) __obj.updateDynamic("firewallEnabled")(firewallEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(globalPortRulesFromGroupPolicyMerged)) __obj.updateDynamic("globalPortRulesFromGroupPolicyMerged")(globalPortRulesFromGroupPolicyMerged.asInstanceOf[js.Any])
-    if (!js.isUndefined(inboundConnectionsBlocked)) __obj.updateDynamic("inboundConnectionsBlocked")(inboundConnectionsBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(inboundNotificationsBlocked)) __obj.updateDynamic("inboundNotificationsBlocked")(inboundNotificationsBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(incomingTrafficBlocked)) __obj.updateDynamic("incomingTrafficBlocked")(incomingTrafficBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(outboundConnectionsBlocked)) __obj.updateDynamic("outboundConnectionsBlocked")(outboundConnectionsBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(policyRulesFromGroupPolicyMerged)) __obj.updateDynamic("policyRulesFromGroupPolicyMerged")(policyRulesFromGroupPolicyMerged.asInstanceOf[js.Any])
-    if (!js.isUndefined(securedPacketExemptionAllowed)) __obj.updateDynamic("securedPacketExemptionAllowed")(securedPacketExemptionAllowed.asInstanceOf[js.Any])
-    if (!js.isUndefined(stealthModeBlocked)) __obj.updateDynamic("stealthModeBlocked")(stealthModeBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(unicastResponsesToMulticastBroadcastsBlocked)) __obj.updateDynamic("unicastResponsesToMulticastBroadcastsBlocked")(unicastResponsesToMulticastBroadcastsBlocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(globalPortRulesFromGroupPolicyMerged)) __obj.updateDynamic("globalPortRulesFromGroupPolicyMerged")(globalPortRulesFromGroupPolicyMerged.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inboundConnectionsBlocked)) __obj.updateDynamic("inboundConnectionsBlocked")(inboundConnectionsBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inboundNotificationsBlocked)) __obj.updateDynamic("inboundNotificationsBlocked")(inboundNotificationsBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(incomingTrafficBlocked)) __obj.updateDynamic("incomingTrafficBlocked")(incomingTrafficBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(outboundConnectionsBlocked)) __obj.updateDynamic("outboundConnectionsBlocked")(outboundConnectionsBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(policyRulesFromGroupPolicyMerged)) __obj.updateDynamic("policyRulesFromGroupPolicyMerged")(policyRulesFromGroupPolicyMerged.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(securedPacketExemptionAllowed)) __obj.updateDynamic("securedPacketExemptionAllowed")(securedPacketExemptionAllowed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stealthModeBlocked)) __obj.updateDynamic("stealthModeBlocked")(stealthModeBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unicastResponsesToMulticastBroadcastsBlocked)) __obj.updateDynamic("unicastResponsesToMulticastBroadcastsBlocked")(unicastResponsesToMulticastBroadcastsBlocked.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsFirewallNetworkProfile]
   }
 }

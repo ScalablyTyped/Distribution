@@ -21,15 +21,15 @@ object QueryAutocompletionRequest {
     bounds: LatLngBounds | LatLngBoundsLiteral = null,
     input: String = null,
     location: LatLng = null,
-    offset: Int | Double = null,
-    radius: Int | Double = null
+    offset: js.UndefOr[Double] = js.undefined,
+    radius: js.UndefOr[Double] = js.undefined
   ): QueryAutocompletionRequest = {
     val __obj = js.Dynamic.literal()
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryAutocompletionRequest]
   }
 }

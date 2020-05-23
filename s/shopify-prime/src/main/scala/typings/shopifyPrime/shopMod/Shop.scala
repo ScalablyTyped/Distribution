@@ -197,7 +197,7 @@ object Shop {
     has_gift_cards: js.UndefOr[Boolean] = js.undefined,
     has_storefront: js.UndefOr[Boolean] = js.undefined,
     iana_timezone: String = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     latitude: String = null,
     longitude: String = null,
     money_format: String = null,
@@ -227,7 +227,7 @@ object Shop {
     if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
     if (country_code != null) __obj.updateDynamic("country_code")(country_code.asInstanceOf[js.Any])
     if (country_name != null) __obj.updateDynamic("country_name")(country_name.asInstanceOf[js.Any])
-    if (!js.isUndefined(county_taxes)) __obj.updateDynamic("county_taxes")(county_taxes.asInstanceOf[js.Any])
+    if (!js.isUndefined(county_taxes)) __obj.updateDynamic("county_taxes")(county_taxes.get.asInstanceOf[js.Any])
     if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
     if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (customer_email != null) __obj.updateDynamic("customer_email")(customer_email.asInstanceOf[js.Any])
@@ -235,32 +235,32 @@ object Shop {
     if (display_plan_name != null) __obj.updateDynamic("display_plan_name")(display_plan_name.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(force_ssl)) __obj.updateDynamic("force_ssl")(force_ssl.asInstanceOf[js.Any])
+    if (!js.isUndefined(force_ssl)) __obj.updateDynamic("force_ssl")(force_ssl.get.asInstanceOf[js.Any])
     if (google_apps_domain != null) __obj.updateDynamic("google_apps_domain")(google_apps_domain.asInstanceOf[js.Any])
-    if (!js.isUndefined(google_apps_login_enabled)) __obj.updateDynamic("google_apps_login_enabled")(google_apps_login_enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(has_discounts)) __obj.updateDynamic("has_discounts")(has_discounts.asInstanceOf[js.Any])
-    if (!js.isUndefined(has_gift_cards)) __obj.updateDynamic("has_gift_cards")(has_gift_cards.asInstanceOf[js.Any])
-    if (!js.isUndefined(has_storefront)) __obj.updateDynamic("has_storefront")(has_storefront.asInstanceOf[js.Any])
+    if (!js.isUndefined(google_apps_login_enabled)) __obj.updateDynamic("google_apps_login_enabled")(google_apps_login_enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(has_discounts)) __obj.updateDynamic("has_discounts")(has_discounts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(has_gift_cards)) __obj.updateDynamic("has_gift_cards")(has_gift_cards.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(has_storefront)) __obj.updateDynamic("has_storefront")(has_storefront.get.asInstanceOf[js.Any])
     if (iana_timezone != null) __obj.updateDynamic("iana_timezone")(iana_timezone.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
     if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
     if (money_format != null) __obj.updateDynamic("money_format")(money_format.asInstanceOf[js.Any])
     if (money_with_currency_format != null) __obj.updateDynamic("money_with_currency_format")(money_with_currency_format.asInstanceOf[js.Any])
     if (myshopify_domain != null) __obj.updateDynamic("myshopify_domain")(myshopify_domain.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(password_enabled)) __obj.updateDynamic("password_enabled")(password_enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(password_enabled)) __obj.updateDynamic("password_enabled")(password_enabled.get.asInstanceOf[js.Any])
     if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
     if (plan_name != null) __obj.updateDynamic("plan_name")(plan_name.asInstanceOf[js.Any])
     if (primary_locale != null) __obj.updateDynamic("primary_locale")(primary_locale.asInstanceOf[js.Any])
     if (province != null) __obj.updateDynamic("province")(province.asInstanceOf[js.Any])
     if (province_code != null) __obj.updateDynamic("province_code")(province_code.asInstanceOf[js.Any])
-    if (!js.isUndefined(setup_required)) __obj.updateDynamic("setup_required")(setup_required.asInstanceOf[js.Any])
+    if (!js.isUndefined(setup_required)) __obj.updateDynamic("setup_required")(setup_required.get.asInstanceOf[js.Any])
     if (ships_to_countries != null) __obj.updateDynamic("ships_to_countries")(ships_to_countries.asInstanceOf[js.Any])
     if (shop_owner != null) __obj.updateDynamic("shop_owner")(shop_owner.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (!js.isUndefined(tax_shipping)) __obj.updateDynamic("tax_shipping")(tax_shipping.asInstanceOf[js.Any])
-    if (!js.isUndefined(taxes_included)) __obj.updateDynamic("taxes_included")(taxes_included.asInstanceOf[js.Any])
+    if (!js.isUndefined(tax_shipping)) __obj.updateDynamic("tax_shipping")(tax_shipping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(taxes_included)) __obj.updateDynamic("taxes_included")(taxes_included.get.asInstanceOf[js.Any])
     if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
     if (zip != null) __obj.updateDynamic("zip")(zip.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shop]

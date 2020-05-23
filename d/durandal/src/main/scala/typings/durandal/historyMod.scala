@@ -1,6 +1,6 @@
 package typings.durandal
 
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ object historyMod extends js.Object {
   def deactivate(): Unit = js.native
   def getFragment(fragment: String, forcePushState: Boolean): String = js.native
   def getHash(): String = js.native
-  def getHash(window: Window_): String = js.native
+  def getHash(window: Window): String = js.native
   def loadUrl(): Boolean = js.native
   def navigate(fragment: String): Boolean = js.native
   def navigate(fragment: String, options: DurandalNavigationOptions): Boolean = js.native

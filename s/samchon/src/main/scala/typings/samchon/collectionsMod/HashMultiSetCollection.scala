@@ -2,7 +2,7 @@ package typings.samchon.collectionsMod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable3
-import typings.tstl.Iteratoranyanyany
+import typings.tstl.anon.Iteratoranyanyany
 import typings.tstl.icontainerMod.IContainer
 import typings.tstl.setContainerMod.SetContainer
 import scala.scalajs.js

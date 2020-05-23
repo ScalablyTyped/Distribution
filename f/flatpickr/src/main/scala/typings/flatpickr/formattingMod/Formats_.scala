@@ -1,13 +1,13 @@
 package typings.flatpickr.formattingMod
 
-import typings.flatpickr.globalsMod._Global_.Date
+import typings.flatpickr.globalsMod.global.Date
 import typings.flatpickr.localeMod.Locale
 import typings.flatpickr.optionsMod.ParsedOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Record<flatpickr.flatpickr/dist/utils/formatting.token, (date : flatpickr.flatpickr/dist/types/globals._Global_.Date, locale : flatpickr.flatpickr/dist/types/locale.Locale, options : flatpickr.flatpickr/dist/types/options.ParsedOptions): string | number> */
+/* Inlined std.Record<flatpickr.flatpickr/dist/utils/formatting.token, (date : flatpickr.flatpickr/dist/types/globals.<global>.Date, locale : flatpickr.flatpickr/dist/types/locale.Locale, options : flatpickr.flatpickr/dist/types/options.ParsedOptions): string | number> */
 @js.native
 trait Formats_ extends js.Object {
   @JSName("D")

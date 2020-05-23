@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object route53domainsMod {
+  type AccountId = java.lang.String
   type AddressLine = java.lang.String
   type BillingRecords = js.Array[typings.awsSdk.route53domainsMod.BillingRecord]
   type Boolean = scala.Boolean
@@ -290,6 +291,8 @@ package object route53domainsMod {
     - typings.awsSdk.awsSdkStrings.AU_ID_TYPE
     - typings.awsSdk.awsSdkStrings.CA_LEGAL_TYPE
     - typings.awsSdk.awsSdkStrings.CA_BUSINESS_ENTITY_TYPE
+    - typings.awsSdk.awsSdkStrings.CA_LEGAL_REPRESENTATIVE
+    - typings.awsSdk.awsSdkStrings.CA_LEGAL_REPRESENTATIVE_CAPACITY
     - typings.awsSdk.awsSdkStrings.ES_IDENTIFICATION
     - typings.awsSdk.awsSdkStrings.ES_IDENTIFICATION_TYPE
     - typings.awsSdk.awsSdkStrings.ES_LEGAL_FORM
@@ -297,6 +300,7 @@ package object route53domainsMod {
     - typings.awsSdk.awsSdkStrings.FI_ID_NUMBER
     - typings.awsSdk.awsSdkStrings.FI_NATIONALITY
     - typings.awsSdk.awsSdkStrings.FI_ORGANIZATION_TYPE
+    - typings.awsSdk.awsSdkStrings.IT_NATIONALITY
     - typings.awsSdk.awsSdkStrings.IT_PIN
     - typings.awsSdk.awsSdkStrings.IT_REGISTRANT_ENTITY_TYPE
     - typings.awsSdk.awsSdkStrings.RU_PASSPORT_DATA
@@ -345,6 +349,8 @@ package object route53domainsMod {
     - typings.awsSdk.awsSdkStrings.CHANGE_DOMAIN_OWNER
     - typings.awsSdk.awsSdkStrings.RENEW_DOMAIN
     - typings.awsSdk.awsSdkStrings.PUSH_DOMAIN
+    - typings.awsSdk.awsSdkStrings.INTERNAL_TRANSFER_OUT_DOMAIN
+    - typings.awsSdk.awsSdkStrings.INTERNAL_TRANSFER_IN_DOMAIN
     - java.lang.String
   */
   type OperationType = typings.awsSdk.route53domainsMod._OperationType | java.lang.String

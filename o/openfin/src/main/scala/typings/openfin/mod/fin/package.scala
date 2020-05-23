@@ -10,7 +10,7 @@ package object fin {
   type AppAssetRequest = typings.openfin.downloadAssetMod.AppAssetRequest
   type ApplicationInfo = typings.openfin.applicationMod.ApplicationInfo
   type ApplicationOption = typings.openfin.applicationOptionMod.ApplicationOption
-  type ApplySnapshotOptions = typings.openfin.platformMod.ApplySnapshotOptions
+  type ApplySnapshotOptions = typings.openfin.platformPlatformMod.ApplySnapshotOptions
   type Bounds = typings.openfin.shapesMod.Bounds
   type Channel = typings.openfin.interappbusChannelMod.Channel
   type ChannelClient = typings.openfin.clientMod.ChannelClient
@@ -28,14 +28,18 @@ package object fin {
   type FrameInfo = typings.openfin.windowWindowMod.FrameInfo
   type HostSpecs = typings.openfin.hostSpecsMod.HostSpecs
   type Identity = typings.openfin.identityMod.Identity
+  type InitLayoutOptions = typings.openfin.layoutMod.InitLayoutOptions
+  type InitPlatformOptions = typings.openfin.platformPlatformMod.InitPlatformOptions
   type LaunchInfo = typings.openfin.applicationMod.ApplicationInfo
+  type Layout = typings.openfin.layoutMod.Layout
   type LogInfo = typings.openfin.logMod.LogInfo
   type MonitorInfo = typings.openfin.monitorMod.MonitorInfo
   type Opacity = typings.openfin.shapesMod.Opacity
-  type Platform = typings.openfin.platformMod.Platform
-  type PlatformOptions = typings.openfin.platformMod.PlatformOptions
+  type Platform = typings.openfin.platformPlatformMod.Platform
+  type PlatformOptions = typings.openfin.platformPlatformMod.PlatformOptions
   type PointTopLeft = typings.openfin.pointMod.PointTopLeft
   type Position = typings.openfin.shapesMod.Position
+  type PresetLayoutOptions = typings.openfin.layoutMod.PresetLayoutOptions
   type ProcessInfo = typings.openfin.processMod.ProcessInfo
   type ProxyInfo = typings.openfin.proxyMod.ProxyInfo
   type RGB = typings.openfin.shapesMod.RGB
@@ -47,7 +51,7 @@ package object fin {
   type RvmLaunchOptions = typings.openfin.applicationMod.RvmLaunchOptions
   type ShortCutConfig = typings.openfin.applicationMod.ShortCutConfig
   type Size = typings.openfin.shapesMod.Size
-  type Snapshot = typings.openfin.platformMod.Snapshot
+  type Snapshot = typings.openfin.platformPlatformMod.Snapshot
   type SystemWindowInfo = typings.openfin.systemWindowMod.WindowInfo
   type Transition = typings.openfin.shapesMod.Transition
   type TransitionBase = typings.openfin.shapesMod.TransitionBase
@@ -59,6 +63,7 @@ package object fin {
   type WindowDetail = typings.openfin.systemWindowMod.WindowDetail
   type WindowInfo = typings.openfin.systemWindowMod.WindowInfo
   type WindowOption = typings.openfin.windowOptionMod.WindowOption
+  type _Window = typings.openfin.windowWindowMod.Window
   // v2 shapes
   type applicationLogInfo = typings.openfin.applicationMod.LogInfo
 }

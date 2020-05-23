@@ -1,12 +1,13 @@
 package typings.antd.inputInputMod
 
-import typings.antd.contextMod.ConfigConsumerProps
+import typings.antd.anon.AutoComplete
+import typings.antd.configProviderContextMod.ConfigConsumerProps
 import typings.antd.sizeContextMod.SizeType
 import typings.react.mod.ChangeEvent
 import typings.react.mod.Component
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.KeyboardEvent
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import typings.std.MouseEvent
@@ -37,9 +38,10 @@ trait Input
   def handleChange(e: ChangeEvent[HTMLInputElement]): Unit = js.native
   def handleKeyDown(e: KeyboardEvent[HTMLInputElement]): Unit = js.native
   def handleReset(e: typings.react.mod.MouseEvent[HTMLElement, MouseEvent]): Unit = js.native
-  def renderComponent(hasGetPrefixClsDirection: ConfigConsumerProps): Element = js.native
+  def renderComponent(hasGetPrefixClsDirectionInput: ConfigConsumerProps): Element = js.native
   def renderInput(prefixCls: String): Element = js.native
   def renderInput(prefixCls: String, size: SizeType): Element = js.native
+  def renderInput(prefixCls: String, size: SizeType, input: AutoComplete): Element = js.native
   def saveClearableInput(input: typings.antd.clearableLabeledInputMod.default): Unit = js.native
   def saveInput(input: HTMLInputElement): Unit = js.native
   def select(): Unit = js.native

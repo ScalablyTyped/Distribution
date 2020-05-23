@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.webicon.iconMod.Icon because Already inherited
 - typings.webicon.sizeableMod.Sizeable because Already inherited
 - typings.webicon.downloadableMod.Downloadable because var conflicts: iconIdParser. Inlined url, uri
@@ -44,7 +44,7 @@ object IconSetOptions {
   def apply(
     cumulative: js.UndefOr[Boolean] = js.undefined,
     iconIdParser: (/* id */ String, /* params */ js.Array[String]) => String = null,
-    iconSize: Int | Double = null,
+    iconSize: js.UndefOr[Double] = js.undefined,
     size: /* import warning: importer.ImportType#apply Failed type conversion: this['iconSize'] */ js.Any = null,
     svgIconSize: /* import warning: importer.ImportType#apply Failed type conversion: this['iconSize'] */ js.Any = null,
     uri: /* import warning: importer.ImportType#apply Failed type conversion: this['url'] */ js.Any = null,
@@ -52,9 +52,9 @@ object IconSetOptions {
     viewBox: String = null
   ): IconSetOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cumulative)) __obj.updateDynamic("cumulative")(cumulative.asInstanceOf[js.Any])
+    if (!js.isUndefined(cumulative)) __obj.updateDynamic("cumulative")(cumulative.get.asInstanceOf[js.Any])
     if (iconIdParser != null) __obj.updateDynamic("iconIdParser")(js.Any.fromFunction2(iconIdParser))
-    if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(iconSize)) __obj.updateDynamic("iconSize")(iconSize.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (svgIconSize != null) __obj.updateDynamic("svgIconSize")(svgIconSize.asInstanceOf[js.Any])
     if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])

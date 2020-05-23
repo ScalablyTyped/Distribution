@@ -26,7 +26,7 @@ object TableHeaderProps {
   ): TableHeaderProps = {
     val __obj = js.Dynamic.literal(dataKey = dataKey.asInstanceOf[js.Any])
     if (columnData != null) __obj.updateDynamic("columnData")(columnData.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableSort)) __obj.updateDynamic("disableSort")(disableSort.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableSort)) __obj.updateDynamic("disableSort")(disableSort.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy.asInstanceOf[js.Any])
     if (sortDirection != null) __obj.updateDynamic("sortDirection")(sortDirection.asInstanceOf[js.Any])

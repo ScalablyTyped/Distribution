@@ -11,10 +11,10 @@ trait IWebStorageProxy extends IClient {
   /** [Property] (Object) */
   var cache: js.UndefOr[js.Any] = js.undefined
   /** [Method] inherit docs
-  		* @param operation Object
-  		* @param callback Object
-  		* @param scope Object
-  		*/
+    * @param operation Object
+    * @param callback Object
+    * @param scope Object
+    */
   @JSName("create")
   var create_IWebStorageProxy: js.UndefOr[
     js.Function3[
@@ -25,10 +25,10 @@ trait IWebStorageProxy extends IClient {
     ]
   ] = js.undefined
   /** [Method] inherit
-  		* @param operation Object
-  		* @param callback Object
-  		* @param scope Object
-  		*/
+    * @param operation Object
+    * @param callback Object
+    * @param scope Object
+    */
   @JSName("destroy")
   var destroy_IWebStorageProxy: js.UndefOr[
     js.Function3[
@@ -41,10 +41,10 @@ trait IWebStorageProxy extends IClient {
   /** [Config Option] (String) */
   var id: js.UndefOr[String] = js.undefined
   /** [Method] inherit docs
-  		* @param operation Object
-  		* @param callback Object
-  		* @param scope Object
-  		*/
+    * @param operation Object
+    * @param callback Object
+    * @param scope Object
+    */
   @JSName("read")
   var read_IWebStorageProxy: js.UndefOr[
     js.Function3[
@@ -55,15 +55,15 @@ trait IWebStorageProxy extends IClient {
     ]
   ] = js.undefined
   /** [Method] Saves the given record in the Proxy
-  		* @param record Ext.data.Model The model instance
-  		* @param id String The id to save the record under (defaults to the value of the record's getId() function)
-  		*/
+    * @param record Ext.data.Model The model instance
+    * @param id String The id to save the record under (defaults to the value of the record's getId() function)
+    */
   var setRecord: js.UndefOr[js.Function2[/* record */ js.UndefOr[IModel], /* id */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] inherit docs
-  		* @param operation Object
-  		* @param callback Object
-  		* @param scope Object
-  		*/
+    * @param operation Object
+    * @param callback Object
+    * @param scope Object
+    */
   @JSName("update")
   var update_IWebStorageProxy: js.UndefOr[
     js.Function3[
@@ -147,7 +147,7 @@ object IWebStorageProxy {
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
     if (batch != null) __obj.updateDynamic("batch")(js.Any.fromFunction1(batch))
-    if (!js.isUndefined(batchActions)) __obj.updateDynamic("batchActions")(batchActions.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchActions)) __obj.updateDynamic("batchActions")(batchActions.get.asInstanceOf[js.Any])
     if (batchOrder != null) __obj.updateDynamic("batchOrder")(batchOrder.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
@@ -172,9 +172,9 @@ object IWebStorageProxy {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
-    if (!js.isUndefined(isProxy)) __obj.updateDynamic("isProxy")(isProxy.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSynchronous)) __obj.updateDynamic("isSynchronous")(isSynchronous.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isProxy)) __obj.updateDynamic("isProxy")(isProxy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSynchronous)) __obj.updateDynamic("isSynchronous")(isSynchronous.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
@@ -194,7 +194,7 @@ object IWebStorageProxy {
     if (setReader != null) __obj.updateDynamic("setReader")(js.Any.fromFunction1(setReader))
     if (setRecord != null) __obj.updateDynamic("setRecord")(js.Any.fromFunction2(setRecord))
     if (setWriter != null) __obj.updateDynamic("setWriter")(js.Any.fromFunction1(setWriter))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction1(suspendEvents))

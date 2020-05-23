@@ -27,16 +27,16 @@ trait Rectangle extends js.Object {
 object Rectangle {
   @scala.inline
   def apply(
-    Height: Int | Double = null,
-    Width: Int | Double = null,
-    X: Int | Double = null,
-    Y: Int | Double = null
+    Height: js.UndefOr[integerMin2Max2147483647] = js.undefined,
+    Width: js.UndefOr[integerMin2Max2147483647] = js.undefined,
+    X: js.UndefOr[integerMin0Max2147483647] = js.undefined,
+    Y: js.UndefOr[integerMin0Max2147483647] = js.undefined
   ): Rectangle = {
     val __obj = js.Dynamic.literal()
-    if (Height != null) __obj.updateDynamic("Height")(Height.asInstanceOf[js.Any])
-    if (Width != null) __obj.updateDynamic("Width")(Width.asInstanceOf[js.Any])
-    if (X != null) __obj.updateDynamic("X")(X.asInstanceOf[js.Any])
-    if (Y != null) __obj.updateDynamic("Y")(Y.asInstanceOf[js.Any])
+    if (!js.isUndefined(Height)) __obj.updateDynamic("Height")(Height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Width)) __obj.updateDynamic("Width")(Width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(X)) __obj.updateDynamic("X")(X.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Y)) __obj.updateDynamic("Y")(Y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rectangle]
   }
 }

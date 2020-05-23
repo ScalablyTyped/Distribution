@@ -14,13 +14,13 @@ object ConfigureAnchorsOptions {
   @scala.inline
   def apply(
     keepLastAnchorHash: js.UndefOr[Boolean] = js.undefined,
-    offset: Int | Double = null,
-    scrollDuration: Int | Double = null
+    offset: js.UndefOr[Double] = js.undefined,
+    scrollDuration: js.UndefOr[Double] = js.undefined
   ): ConfigureAnchorsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(keepLastAnchorHash)) __obj.updateDynamic("keepLastAnchorHash")(keepLastAnchorHash.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (scrollDuration != null) __obj.updateDynamic("scrollDuration")(scrollDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepLastAnchorHash)) __obj.updateDynamic("keepLastAnchorHash")(keepLastAnchorHash.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollDuration)) __obj.updateDynamic("scrollDuration")(scrollDuration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigureAnchorsOptions]
   }
 }

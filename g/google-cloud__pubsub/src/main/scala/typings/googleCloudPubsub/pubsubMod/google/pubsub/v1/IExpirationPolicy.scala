@@ -13,9 +13,9 @@ trait IExpirationPolicy extends js.Object {
 
 object IExpirationPolicy {
   @scala.inline
-  def apply(ttl: IDuration = null): IExpirationPolicy = {
+  def apply(ttl: js.UndefOr[Null | IDuration] = js.undefined): IExpirationPolicy = {
     val __obj = js.Dynamic.literal()
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExpirationPolicy]
   }
 }

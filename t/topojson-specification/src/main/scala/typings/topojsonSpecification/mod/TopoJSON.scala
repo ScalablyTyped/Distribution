@@ -19,7 +19,7 @@ object TopoJSON {
   ): TopoJSON = {
     val __obj = js.Dynamic.literal()
     if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopoJSON]
   }
 }

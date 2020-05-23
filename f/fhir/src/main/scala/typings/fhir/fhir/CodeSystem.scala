@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A set of codes drawn from one or more code systems
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait CodeSystem extends DomainResource {
   /**
     * Contains extended information for property 'caseSensitive'.
@@ -216,7 +216,7 @@ object CodeSystem {
     contact: js.Array[ContactDetail] = null,
     contained: js.Array[Resource] = null,
     copyright: markdown = null,
-    count: Int | Double = null,
+    count: js.UndefOr[unsignedInt] = js.undefined,
     date: dateTime = null,
     description: markdown = null,
     experimental: js.UndefOr[Boolean] = js.undefined,
@@ -266,16 +266,16 @@ object CodeSystem {
     if (_valueSet != null) __obj.updateDynamic("_valueSet")(_valueSet.asInstanceOf[js.Any])
     if (_version != null) __obj.updateDynamic("_version")(_version.asInstanceOf[js.Any])
     if (_versionNeeded != null) __obj.updateDynamic("_versionNeeded")(_versionNeeded.asInstanceOf[js.Any])
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
-    if (!js.isUndefined(compositional)) __obj.updateDynamic("compositional")(compositional.asInstanceOf[js.Any])
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(compositional)) __obj.updateDynamic("compositional")(compositional.get.asInstanceOf[js.Any])
     if (concept != null) __obj.updateDynamic("concept")(concept.asInstanceOf[js.Any])
     if (contact != null) __obj.updateDynamic("contact")(contact.asInstanceOf[js.Any])
     if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
     if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(experimental)) __obj.updateDynamic("experimental")(experimental.asInstanceOf[js.Any])
+    if (!js.isUndefined(experimental)) __obj.updateDynamic("experimental")(experimental.get.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (hierarchyMeaning != null) __obj.updateDynamic("hierarchyMeaning")(hierarchyMeaning.asInstanceOf[js.Any])
@@ -297,7 +297,7 @@ object CodeSystem {
     if (useContext != null) __obj.updateDynamic("useContext")(useContext.asInstanceOf[js.Any])
     if (valueSet != null) __obj.updateDynamic("valueSet")(valueSet.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (!js.isUndefined(versionNeeded)) __obj.updateDynamic("versionNeeded")(versionNeeded.asInstanceOf[js.Any])
+    if (!js.isUndefined(versionNeeded)) __obj.updateDynamic("versionNeeded")(versionNeeded.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeSystem]
   }
 }

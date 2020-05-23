@@ -34,7 +34,7 @@ object AdSlot {
     if (linkedPlacementId != null) __obj.updateDynamic("linkedPlacementId")(linkedPlacementId.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (paymentSourceType != null) __obj.updateDynamic("paymentSourceType")(paymentSourceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdSlot]
   }

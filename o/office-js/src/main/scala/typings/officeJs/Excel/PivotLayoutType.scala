@@ -1,6 +1,5 @@
 package typings.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,17 +33,6 @@ object PivotLayoutType extends js.Object {
     */
   @js.native
   sealed trait tabular extends PivotLayoutType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[PivotLayoutType with String] = js.native
-  /* "Compact" */ @js.native
-  object compact extends TopLevel[compact with String]
-  
-  /* "Outline" */ @js.native
-  object outline extends TopLevel[outline with String]
-  
-  /* "Tabular" */ @js.native
-  object tabular extends TopLevel[tabular with String]
   
 }
 

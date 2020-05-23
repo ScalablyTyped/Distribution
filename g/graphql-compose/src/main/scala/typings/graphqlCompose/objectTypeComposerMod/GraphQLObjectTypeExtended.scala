@@ -1,7 +1,7 @@
 package typings.graphqlCompose.objectTypeComposerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.GraphQLObjectTypeConfigan
+import typings.graphql.anon.GraphQLObjectTypeConfigan
 import typings.graphql.astMod.ObjectTypeDefinitionNode
 import typings.graphql.astMod.ObjectTypeExtensionNode
 import typings.graphql.definitionMod.GraphQLFieldMap
@@ -60,10 +60,10 @@ object GraphQLObjectTypeExtended {
     _gqcInterfaces: js.Array[ComposeInterfaceType] = null,
     _gqcRelations: RelationThunkMap[TSource, TContext] = null,
     _gqcResolvers: Map[String, Resolver[TSource, TContext, ArgsMap, _]] = null,
-    astNode: Maybe[ObjectTypeDefinitionNode] = null,
-    extensionASTNodes: Maybe[js.Array[ObjectTypeExtensionNode]] = null,
-    extensions: Maybe[Record[String, _]] = null,
-    isTypeOf: (_, _, /* info */ GraphQLResolveInfo) => PromiseOrValue[Boolean] = null
+    astNode: js.UndefOr[Null | Maybe[ObjectTypeDefinitionNode]] = js.undefined,
+    extensionASTNodes: js.UndefOr[Null | Maybe[js.Array[ObjectTypeExtensionNode]]] = js.undefined,
+    extensions: js.UndefOr[Null | (Maybe[Record[String, _]])] = js.undefined,
+    isTypeOf: js.UndefOr[Null | ((_, _, /* info */ GraphQLResolveInfo) => PromiseOrValue[Boolean])] = js.undefined
   ): GraphQLObjectTypeExtended[TSource, TContext] = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], getFields = js.Any.fromFunction0(getFields), getInterfaces = js.Any.fromFunction0(getInterfaces), inspect = js.Any.fromFunction0(inspect), name = name.asInstanceOf[js.Any], toConfig = js.Any.fromFunction0(toConfig), toJSON = js.Any.fromFunction0(toJSON))
     if (_gqcExtensions != null) __obj.updateDynamic("_gqcExtensions")(_gqcExtensions.asInstanceOf[js.Any])
@@ -73,10 +73,10 @@ object GraphQLObjectTypeExtended {
     if (_gqcInterfaces != null) __obj.updateDynamic("_gqcInterfaces")(_gqcInterfaces.asInstanceOf[js.Any])
     if (_gqcRelations != null) __obj.updateDynamic("_gqcRelations")(_gqcRelations.asInstanceOf[js.Any])
     if (_gqcResolvers != null) __obj.updateDynamic("_gqcResolvers")(_gqcResolvers.asInstanceOf[js.Any])
-    if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
-    if (extensionASTNodes != null) __obj.updateDynamic("extensionASTNodes")(extensionASTNodes.asInstanceOf[js.Any])
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (isTypeOf != null) __obj.updateDynamic("isTypeOf")(js.Any.fromFunction3(isTypeOf))
+    if (!js.isUndefined(astNode)) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
+    if (!js.isUndefined(extensionASTNodes)) __obj.updateDynamic("extensionASTNodes")(extensionASTNodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(extensions)) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTypeOf)) __obj.updateDynamic("isTypeOf")(if (isTypeOf != null) js.Any.fromFunction3(isTypeOf.asInstanceOf[(_, _, /* info */ GraphQLResolveInfo) => PromiseOrValue[Boolean]]) else null)
     __obj.asInstanceOf[GraphQLObjectTypeExtended[TSource, TContext]]
   }
 }

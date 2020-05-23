@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,8 +19,4 @@ trait TemplateItemGroup extends Accessor {
     */
   val label: String = js.native
 }
-
-@JSGlobal("__esri.TemplateItemGroup")
-@js.native
-object TemplateItemGroup extends TopLevel[TemplateItemGroupConstructor]
 

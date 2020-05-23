@@ -19,11 +19,11 @@ trait RegisterInstanceEventNotificationAttributesRequest extends js.Object {
 object RegisterInstanceEventNotificationAttributesRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     InstanceTagAttribute: RegisterInstanceTagAttributeRequest = null
   ): RegisterInstanceEventNotificationAttributesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (InstanceTagAttribute != null) __obj.updateDynamic("InstanceTagAttribute")(InstanceTagAttribute.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterInstanceEventNotificationAttributesRequest]
   }

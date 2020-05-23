@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientHtmlEditor.CommandExecuting event.
   */
-@JSGlobal("ASPxClientHtmlEditorCommandExecutingEventArgs")
-@js.native
-class ASPxClientHtmlEditorCommandExecutingEventArgs protected () extends ASPxClientCancelEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientHtmlEditorCommandExecutingEventArgs object with the specified settings.
-    * @param commandName A string value that identifies the command currently being executed. Initializes the ASPxClientHtmlEditorCommandExecutingEventArgs.commandName property.
-    * @param parameter An object that contains the command specific information needed for handling the command execution. Initializes the ASPxClientHtmlEditorCommandExecutingEventArgs.parameter property.
-    */
-  def this(commandName: String, parameter: js.Any) = this()
+trait ASPxClientHtmlEditorCommandExecutingEventArgs extends ASPxClientCancelEventArgs {
   /**
     * Gets the name of the processed command.
     */
-  var commandName: String = js.native
+  var commandName: String
   /**
     * Gets an optional parameter that complements the processed command.
     */
-  var parameter: js.Any = js.native
+  var parameter: js.Any
+}
+
+object ASPxClientHtmlEditorCommandExecutingEventArgs {
+  @scala.inline
+  def apply(cancel: Boolean, commandName: String, parameter: js.Any): ASPxClientHtmlEditorCommandExecutingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], commandName = commandName.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientHtmlEditorCommandExecutingEventArgs]
+  }
 }
 

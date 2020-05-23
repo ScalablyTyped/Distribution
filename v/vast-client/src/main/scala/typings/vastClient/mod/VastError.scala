@@ -25,12 +25,12 @@ object VastError {
     ERRORCODE: String | Double,
     ERRORMESSAGE: String = null,
     extensions: js.Array[VastAdExtension] = null,
-    system: VastSystem | String = null
+    system: js.UndefOr[Null | VastSystem | String] = js.undefined
   ): VastError = {
     val __obj = js.Dynamic.literal(ERRORCODE = ERRORCODE.asInstanceOf[js.Any])
     if (ERRORMESSAGE != null) __obj.updateDynamic("ERRORMESSAGE")(ERRORMESSAGE.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (system != null) __obj.updateDynamic("system")(system.asInstanceOf[js.Any])
+    if (!js.isUndefined(system)) __obj.updateDynamic("system")(system.asInstanceOf[js.Any])
     __obj.asInstanceOf[VastError]
   }
 }

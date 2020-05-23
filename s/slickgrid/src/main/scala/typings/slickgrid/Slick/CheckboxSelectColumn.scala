@@ -4,10 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Slick.CheckboxSelectColumn")
-@js.native
-class CheckboxSelectColumn[T /* <: SlickData */] () extends Plugin[T] {
-  def this(options: SlickGridCheckBoxSelectColumnOptions) = this()
-  def getColumnDefinition(): ColumnMetadata[T] = js.native
+trait CheckboxSelectColumn[T /* <: SlickData */] extends Plugin[T] {
+  def getColumnDefinition(): ColumnMetadata[T]
+}
+
+object CheckboxSelectColumn {
+  @scala.inline
+  def apply[T](destroy: () => Unit, getColumnDefinition: () => ColumnMetadata[T], init: Grid[T] => Unit): CheckboxSelectColumn[T] = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getColumnDefinition = js.Any.fromFunction0(getColumnDefinition), init = js.Any.fromFunction1(init))
+    __obj.asInstanceOf[CheckboxSelectColumn[T]]
+  }
 }
 

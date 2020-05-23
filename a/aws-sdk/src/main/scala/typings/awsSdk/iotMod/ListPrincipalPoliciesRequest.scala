@@ -28,14 +28,14 @@ object ListPrincipalPoliciesRequest {
   @scala.inline
   def apply(
     principal: Principal,
-    ascendingOrder: js.UndefOr[scala.Boolean] = js.undefined,
+    ascendingOrder: js.UndefOr[AscendingOrder] = js.undefined,
     marker: Marker = null,
-    pageSize: Int | Double = null
+    pageSize: js.UndefOr[PageSize] = js.undefined
   ): ListPrincipalPoliciesRequest = {
     val __obj = js.Dynamic.literal(principal = principal.asInstanceOf[js.Any])
-    if (!js.isUndefined(ascendingOrder)) __obj.updateDynamic("ascendingOrder")(ascendingOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(ascendingOrder)) __obj.updateDynamic("ascendingOrder")(ascendingOrder.get.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPrincipalPoliciesRequest]
   }
 }

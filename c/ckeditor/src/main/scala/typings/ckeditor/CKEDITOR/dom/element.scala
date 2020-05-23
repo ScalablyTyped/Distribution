@@ -11,13 +11,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.dom.element")
 @js.native
-class element protected () extends node {
-  def this(element: String) = this()
-  def this(element: HTMLElement) = this()
-  def this(element: String, ownerDocument: document) = this()
-  def this(element: HTMLElement, ownerDocument: document) = this()
+trait element extends node {
   @JSName("$")
   val $_element: HTMLElement = js.native
   def addClass(className: String): Unit = js.native
@@ -120,19 +115,5 @@ class element protected () extends node {
   def setValue(value: String): element = js.native
   def show(): Unit = js.native
   def unselectable(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("CKEDITOR.dom.element")
-@js.native
-object element extends js.Object {
-  // static method
-  def clearAllMarkers(database: js.Any): js.Any = js.native
-  def clearMarkers(database: js.Any, element: element, removeFromDatabase: Boolean): Unit = js.native
-  def createFromHtml(html: String): element = js.native
-  def get(element: String): element = js.native
-  def get(element: element): element = js.native
-  def get(element: HTMLElement): element = js.native
-  def setMarker(database: js.Any, element: element, name: String, value: js.Any): element = js.native
 }
 

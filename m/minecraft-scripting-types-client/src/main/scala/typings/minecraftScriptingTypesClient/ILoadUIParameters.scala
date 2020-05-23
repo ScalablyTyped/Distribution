@@ -1,5 +1,6 @@
 package typings.minecraftScriptingTypesClient
 
+import typings.minecraftScriptingTypesClient.anon.Absorbsinput
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ trait ILoadUIParameters extends js.Object {
   /**
     * You can define the following options for the screen by setting their value to true or false:
     */
-  var options: js.UndefOr[AnonAbsorbsinput] = js.undefined
+  var options: js.UndefOr[Absorbsinput] = js.undefined
   /**
     * The file path to the screen's HTML file
     */
@@ -20,7 +21,7 @@ trait ILoadUIParameters extends js.Object {
 
 object ILoadUIParameters {
   @scala.inline
-  def apply(path: String, options: AnonAbsorbsinput = null): ILoadUIParameters = {
+  def apply(path: String, options: Absorbsinput = null): ILoadUIParameters = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILoadUIParameters]

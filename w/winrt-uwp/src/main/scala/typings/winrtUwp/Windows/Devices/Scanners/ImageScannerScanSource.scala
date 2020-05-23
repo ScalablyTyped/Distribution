@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Scanners
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object ImageScannerScanSource extends js.Object {
   /** A Flatbed scan source. */
   @js.native
   sealed trait flatbed extends ImageScannerScanSource
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ImageScannerScanSource with Double] = js.native
-  /* 3 */ @js.native
-  object autoConfigured extends TopLevel[autoConfigured with Double]
-  
-  /* 0 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 2 */ @js.native
-  object feeder extends TopLevel[feeder with Double]
-  
-  /* 1 */ @js.native
-  object flatbed extends TopLevel[flatbed with Double]
   
 }
 

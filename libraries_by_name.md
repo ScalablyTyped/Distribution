@@ -15,6 +15,7 @@
 | [absolute](./a/absolute) | Test if a path (string) is absolute | - |
 | [abstract-leveldown](./a/abstract-leveldown) | An abstract prototype matching the LevelDOWN API | level, leveldb, leveldown, levelup |
 | [acc-wizard](./a/acc-wizard) | - | - |
+| [accedo__accedo-one](./a/accedo__accedo-one) | The official Accedo One SDK for Node.js and browse | AppGrid, Accedo, Accedo One, SDK, ES6, Javascript |
 | [accept](./a/accept) | HTTP Accept-* headers parsing | HTTP, header, accept, accept-encoding |
 | [accept-language-parser](./a/accept-language-parser) | Parse the accept-language header from a HTTP reque | accept-language, i18n, parser |
 | [accepts](./a/accepts) | Higher-level content negotiation | content, negotiation, accept, accepts |
@@ -42,6 +43,7 @@
 | [activex-infopath](./a/activex-infopath) | - | - |
 | [activex-interop](./a/activex-interop) | - | - |
 | [activex-iwshruntimelibrar](./a/activex-iwshruntimelibrary) | - | - |
+| [activex-libreoffice](./a/activex-libreoffice) | - | - |
 | [activex-msforms](./a/activex-msforms) | - | - |
 | [activex-mshtml](./a/activex-mshtml) | - | - |
 | [activex-msxml2](./a/activex-msxml2) | - | - |
@@ -158,7 +160,6 @@
 | [amqplib](./a/amqplib) | An AMQP 0-9-1 (e.g., RabbitMQ) library and client. | AMQP, AMQP 0-9-1, RabbitMQ |
 | [analytics-node](./a/analytics-node) | The hassle-free way to integrate analytics into an | analytics, stats, segment.io, segmentio, segment, client, driver |
 | [anchor-js](./a/anchor-js) | A JavaScript utility for adding deep anchor links  | anchor, links, urlify |
-| [androiduix](./a/androiduix) | Framework to make high-performance SPA/WebApp. Ren | webapp, app, canvas, spa |
 | [angular](./a/angular) | HTML enhanced for web apps | angular, framework, browser, client-side |
 | [angular-agility](./a/angular-agility) | - | angular, forms, validation, dsl, bootstrap, dirty, changed, select2, notificaiton, growl |
 | [angular-animate](./a/angular-animate) | AngularJS module for animations | angular, framework, browser, animation, client-side |
@@ -250,6 +251,7 @@
 | [animation-frame](./a/animation-frame) | An even better requestAnimationFrame | animationFrame, RAF, requestAnimationFrame, cancelAnimationFrame |
 | [animejs](./a/animejs) | JavaScript animation engine | anime, animation, javascript, CSS, transforms, SVG, canvas |
 | [annyang](./a/annyang) | A javascript library for adding voice commands to  | annyang, annyang.js, recognition, speech, speechrecognition, voice, webkitspeechrecognition |
+| [anser](./a/anser) | A low level parser for ANSI sequences. | ansi, html |
 | [ansi](./a/ansi) | Advanced ANSI formatting tool for Node.js | ansi, formatting, cursor, color, terminal, rgb, 256, stream |
 | [ansi-colors](./a/ansi-colors) | Easily add ANSI colors to your text and symbols in | ansi, bgblack, bgBlack, bgblue, bgBlue, bgcyan, bgCyan, bggreen, bgGreen, bgmagenta, bgMagenta, bgred, bgRed, bgwhite, bgWhite, bgyellow, bgYellow, black, blue, bold, clorox, colors, cyan, dim, gray, green, grey, hidden, inverse, italic, kleur, magenta, red, reset, strikethrough, underline, white, yellow |
 | [ansi-escape-sequences](./a/ansi-escape-sequences) | A simple library containing all known terminal ans | ansi, terminal, colour, color, command line, cursor |
@@ -290,6 +292,7 @@
 | [api-error-handler](./a/api-error-handler) | Express error handlers for JSON APIs | express, error, handler, api, json |
 | [apicache](./a/apicache) | An ultra-simplified API response caching middlewar | cache, API, redis, memcache, response, express, JSON, duration, middleware, memory |
 | [apicalypse](./a/apicalypse) | The apicalypse query language client for nodejs | query, language, graphql, apicalypse |
+| [apidoc](./a/apidoc) | RESTful web API Documentation Generator | api, apidoc, doc, documentation, rest, restful |
 | [apigee-access](./a/apigee-access) | Provides access to Apigee-specific functionality | apigee |
 | [apimocker](./a/apimocker) | Simple HTTP server that returns mock service API r | express, mock, stub, REST, SOAP, testing, functional, api, grunt, gulp |
 | [apn](./a/apn) | An interface to the Apple Push Notification servic | apple, push, push notifications, iOS, apns, notifications |
@@ -333,6 +336,7 @@
 | [app-path](./a/app-path) | Get the path to an app (macOS) | macos, applescript, app, application, path, directory, bundle, location |
 | [app-root-dir](./a/app-root-dir) | Simple module to infer the root directory of the c | modules, path, node, app, root, directory |
 | [app-root-path](./a/app-root-path) | Determine an app's root path from anywhere inside  | root, path, utility, util, node, module, modules, node_modules, require, app |
+| [appcache-webpack-plugin](./a/appcache-webpack-plugin) | Generate an HTML5 Application Cache for a Webpack  | webpack, appcache, application, cache, plugin |
 | [appdmg](./a/appdmg) | Generate beautiful DMG-images for your OS X applic | - |
 | [append-query](./a/append-query) | Append querystring params to a URL. | string, url, querystring, query params, query, append |
 | [appframework](./a/appframework) | - | - |
@@ -359,6 +363,7 @@
 | [argparse](./a/argparse) | Very powerful CLI arguments parser. Native port of | cli, parser, argparse, option, args |
 | [args](./a/args) | Minimal toolkit for building CLIs | cli, command, arguments, util, bin, commander, nanomist |
 | [argv](./a/argv) | CLI Argument Parser | cli, argv, options |
+| [ari-client](./a/ari-client) | JavaScript client for Asterisk REST Interface. | Asterisk, ARI |
 | [aria-query](./a/aria-query) | Programmatic access to the ARIA specification | accessibility, ARIA |
 | [arr-diff](./a/arr-diff) | Returns an array with only the unique values from  | arr, array, array differ, array-differ, diff, differ, difference |
 | [arr-union](./a/arr-union) | Combines a list of arrays, returning a single arra | add, append, array, arrays, combine, concat, extend, union, uniq, unique, util, utility, utils |
@@ -388,6 +393,7 @@
 | [asciify](./a/asciify) | Plain text awesomizer. A hybrid npm module and CLI | ascii, art, figlet, banner, text |
 | [asenv](./a/asenv) | NODE_ENV accessor | NODE_ENV |
 | [askmethat-rating](./a/askmethat-rating) | Simple plugin providing to use fonts as rating | rating, font, askmethat, plugin, font-awesome, glyphicon |
+| [asmcrypto_dot_js](./a/asmcrypto_dot_js) | Asm.js implementation of WebCrypto API | - |
 | [asn1](./a/asn1) | Contains parsers and serializers for ASN.1 (curren | - |
 | [asn1js](./a/asn1js) | asn1js is a pure JavaScript library implementing t | asn1, parser, asn.1, ber, der, sequence, set, bitstring, octetstring, utctime, utf8string, bmpstring, universalstring, generalizedtime |
 | [aspnet-identity-pw](./a/aspnet-identity-pw) | Utility for hashing and validating passwords using | ASP.NET, Identity, password, hash |
@@ -407,6 +413,7 @@
 | [async-iterable-stream](./a/async-iterable-stream) | A readable async stream which can be iterated over | async, generator, stream, data, for-await-of |
 | [async-lock](./a/async-lock) | Lock on asynchronous code | lock, async, concurrency, critical, section, mutex |
 | [async-polling](./a/async-polling) | An easy way to run reliable polling without messin | poll, polling, async, setTimeout, setInterval, task |
+| [async-redis](./a/async-redis) | Light wrapper over redis_node with first class asy | redis, async, promise, es6 |
 | [async-retry](./a/async-retry) | Retrying made simple, easy and async | - |
 | [async-stream-emitter](./a/async-stream-emitter) | An alternantive to EventEmitter using consumable s | iterable, async, stream, event, emitter, for-await-of |
 | [async-stream-generator](./a/async-stream-generator) | Pipe ES6 Async Generators through Node.js Streams | streams, async, generators, async, iterators, pipe |
@@ -625,10 +632,13 @@
 | [babel-core](./b/babel-core) | Babel compiler core. | 6to5, babel, classes, const, es6, harmony, let, modules, transpile, transpiler, var, babel-core, compiler |
 | [babel-generator](./b/babel-generator) | Turns an AST into code. | - |
 | [babel-jest](./b/babel-jest) | Jest plugin to use babel for transformation. | - |
+| [babel-plugin-glaze](./b/babel-plugin-glaze) | Babel plugin to transform sx prop | babel, sx, glaze |
 | [babel-plugin-jest-hoist](./b/babel-plugin-jest-hoist) | Babel plugin to hoist jest.disableAutomock, jest.e | - |
 | [babel-plugin-macros](./b/babel-plugin-macros) | Allows you to build compile-time libraries | babel-plugin, macros, macro, babel-macro, babel-plugin-macro, babel-macros, babel-plugin-macros |
+| [babel-plugin-react-html-a](./b/babel-plugin-react-html-attrs) | Babel plugin which transforms HTML attributes on J | - |
 | [babel-plugin-react-pug](./b/babel-plugin-react-pug) | Convert Pug into React function calls. | pug, react, babel-plugin |
 | [babel-plugin-syntax-jsx](./b/babel-plugin-syntax-jsx) | Allow parsing of jsx | babel-plugin |
+| [babel-plugin-tester](./b/babel-plugin-tester) | Utilities for testing babel plugins | - |
 | [babel-template](./b/babel-template) | Generate an AST from a string template. | - |
 | [babel-traverse](./b/babel-traverse) | The Babel Traverse module maintains the overall tr | - |
 | [babel-types](./b/babel-types) | Babel Types is a Lodash-esque utility library for  | - |
@@ -648,6 +658,7 @@
 | [babylon-walk](./b/babylon-walk) | Lightweight Babylon AST traversal | - |
 | [babylonjs](./b/babylonjs) | Babylon.js is a JavaScript 3D engine based on webg | 3D, javascript, html5, webgl |
 | [babyparse](./b/babyparse) | Fast and reliable CSV parser based on PapaParse | csv, parse, parsing, parser, delimited, text, data, auto-detect, comma, tab, stream |
+| [backblaze-b2](./b/backblaze-b2) | Node.js Library for the Backblaze B2 Storage Servi | backblaze, b2, storage |
 | [backbone](./b/backbone) | Give your JS App some Backbone with Models, Views, | model, view, controller, router, server, client, browser |
 | [backbone-associations](./b/backbone-associations) | Create object hierarchies with Backbone models. Re | Backbone, association, associated, nested, model, cyclic graph, qualified event paths, relational, relations |
 | [backbone-fetch-cache](./b/backbone-fetch-cache) | Caches calls to Backbone. | backbone, fetch, cache |
@@ -663,6 +674,7 @@
 | [backoff](./b/backoff) | Fibonacci and exponential backoffs. | backoff, retry, fibonacci, exponential |
 | [backstopjs](./b/backstopjs) | BackstopJS: Catch CSS curveballs. | - |
 | [baconjs](./b/baconjs) | A small functional reactive programming lib for Ja | bacon.js, bacon, frp, functional, reactive, programming, stream, streams, EventStream, Rx, RxJs, Observable |
+| [bad-words](./b/bad-words) | A javascript filter for bad words | curse, words, profanity, filter |
 | [bagpipes](./b/bagpipes) | Less code, more flow. Let's dance | swagger, plumbing, pipes |
 | [baidu-app](./b/baidu-app) | - | - |
 | [baidumap-web-sdk](./b/baidumap-web-sdk) | - | - |
@@ -838,6 +850,7 @@
 | [braintree-web](./b/braintree-web) | A suite of tools for integrating Braintree in the  | braintree, payments |
 | [braintree-web-drop-in](./b/braintree-web-drop-in) | - | - |
 | [braintree__sanitize-url](./b/braintree__sanitize-url) | A url sanitizer | - |
+| [branch-sdk](./b/branch-sdk) | Branch Metrics Deep Linking/Smart Banner Web SDK | - |
 | [breeze](./b/breeze) | Functional async flow control library | flow, async, ocaml, functional, haskell, waterfall, try, catch, promises, thennable, bluebird, q |
 | [bresenham](./b/bresenham) | Bresenham's line algorithm | line, bresenham, math |
 | [bricks_dot_js](./b/bricks_dot_js) | A blazing fast masonry layout generator for fixed  | grid, masonry, layout, packing |
@@ -939,6 +952,7 @@
 | [caniuse-lite](./c/caniuse-lite) | A smaller version of caniuse-db, with only the ess | support, css, js, html5, svg |
 | [cannon](./c/cannon) | A lightweight 3D physics engine written in JavaScr | cannon.js, cannon, physics, engine, 3d |
 | [canvas-confetti](./c/canvas-confetti) | performant confetti animation in the browser | canvas, confetti, animation, burst, fireworks, snow, particles |
+| [canvas-fit](./c/canvas-fit) | Small module for fitting a canvas element within t | canvas, fit, screen, window, browser, stretch, resize |
 | [canvas-gauges](./c/canvas-gauges) | Minimalist HTML5 Canvas Gauges | gauge, canvas, html5, javascript, radial-gauge, linear-gauge |
 | [canvasjs](./c/canvasjs) | CanvasJS charting library | - |
 | [canvaskit-wasm](./c/canvaskit-wasm) | A WASM version of Skia's Canvas API | - |
@@ -1019,6 +1033,9 @@
 | [charset](./c/charset) | Get the content charset from header and html conte | charset, content-type, ContentType, Content-Type, xml, encoding |
 | [chart_dot_js](./c/chart_dot_js) | Simple HTML5 charts using the canvas element. | canvas, charts, data, graphs, html5, responsive |
 | [chartist](./c/chartist) | Simple, responsive charts | chartist, responsive charts, charts, charting |
+| [chartjs-plugin-annotation](./c/chartjs-plugin-annotation) | Annotations for Chart.js | - |
+| [chartjs-plugin-colorschem](./c/chartjs-plugin-colorschemes) | Predefined color schemes for Chart.js | chart.js, plugin, color, scheme, palette, brewer, office, tableau |
+| [chartjs-plugin-crosshair](./c/chartjs-plugin-crosshair) | Chart.js plugin to draw and sync vertical crosshai | - |
 | [chartmogul-node](./c/chartmogul-node) | Official Chartmogul API Node.js Client | chartmogul, api |
 | [chayns](./c/chayns) | - | - |
 | [cheap-ruler](./c/cheap-ruler) | A collection of fast approximations to common geog | geospatial, measurement, approximation, distance |
@@ -1040,7 +1057,6 @@
 | [chownr](./c/chownr) | like chown -R | - |
 | [chroma-js](./c/chroma-js) | JavaScript library for color conversions | color |
 | [chrome](./c/chrome) | Open chrome in shell | - |
-| [chrome-apps](./c/chrome-apps) | - | - |
 | [chrome-trace-event](./c/chrome-trace-event) | A library to create a trace of your node app per G | trace-event, trace, event, trace-viewer, google |
 | [chromecast-caf-sender](./c/chromecast-caf-sender) | - | - |
 | [chromedriver](./c/chromedriver) | ChromeDriver for Selenium | chromedriver, selenium |
@@ -1051,6 +1067,7 @@
 | [chunked-dc](./c/chunked-dc) | Binary chunking for WebRTC data channels & more. | saltyrtc, webrtc, ortc, chunking |
 | [ci-info](./c/ci-info) | Get details about the current Continuous Integrati | ci, continuous, integration, test, detect |
 | [cipher-base](./c/cipher-base) | abstract base class for crypto-streams | cipher, stream |
+| [circle-to-polygon](./c/circle-to-polygon) | Receives a Coordinate, a Radius and a Number of ed | GeoJSON, circle, polygon |
 | [circuit-breaker-js](./c/circuit-breaker-js) | Hystrix-like circuit breaker for JavaScript. | - |
 | [circular-dependency-plugi](./c/circular-dependency-plugin) | Detect modules with circular dependencies when bun | - |
 | [circular-json](./c/circular-json) | JSON does not handle circular references. This ver | JSON, circular, reference, recursive, recursion, parse, stringify |
@@ -1140,6 +1157,7 @@
 | [color-hash](./c/color-hash) | Generate color based on the given string (using HS | - |
 | [color-name](./c/color-name) | A list of color names and its values | color-name, color, color-keyword, keyword |
 | [color-namer](./c/color-namer) | Give me a color and I'll name it. | color, colors, names, rgb, hsl, hsv, lab, search, tagging, image, design |
+| [color-rgba](./c/color-rgba) | Convert color string (or parseable argument) to RG | color, colorjs, rgb, rgba, color-space, css |
 | [color-string](./c/color-string) | Parser and generator for CSS color strings | color, colour, rgb, css |
 | [color-support](./c/color-support) | A module which will endeavor to guess your termina | terminal, color, support, xterm, truecolor, 256 |
 | [colorbrewer](./c/colorbrewer) | A shim module of colorbrewer2 by Cythina Brewer fo | colors, design, visualization, cartography, svg, d3, browserify |
@@ -1206,6 +1224,7 @@
 | [configurable](./c/configurable) | Configuration mixin | configuration |
 | [confirmdialog](./c/confirmdialog) | - | - |
 | [confit](./c/confit) | Environment-aware configuration. | application, config, configuration |
+| [confusing-browser-globals](./c/confusing-browser-globals) | A list of browser globals that are often used by m | eslint, globals |
 | [connect](./c/connect) | High performance middleware framework | framework, web, middleware, connect, rack |
 | [connect-azuretables](./c/connect-azuretables) | Azure Table Storage session store for express-sess | - |
 | [connect-busboy](./c/connect-busboy) | Connect middleware for busboy | connect, middleware, uploads, forms, multipart, form-data |
@@ -1272,7 +1291,7 @@
 | [cordova-plugin-badge](./c/cordova-plugin-badge) | Shows the count of unread messages as a badge on t | appplant, badge, shortcutbadger, ecosystem:cordova, cordova-ios, cordova-osx, cordova-android, cordova-browser, cordova-windows |
 | [cordova-plugin-battery-st](./c/cordova-plugin-battery-status) | Cordova Battery Plugin | cordova, battery, ecosystem:cordova, cordova-android, cordova-ios |
 | [cordova-plugin-ble-centra](./c/cordova-plugin-ble-central) | Bluetooth Low Energy (BLE) Central Plugin | cordova, bluetooth, ble, bluetoothle, bluetooth le, low energy, smart, ecosystem:cordova, cordova-ios, cordova-android |
-| [cordova-plugin-bluetoothc](./c/cordova-plugin-bluetoothclassic-serial) | - | - |
+| [cordova-plugin-bluetoothc](./c/cordova-plugin-bluetoothclassic-serial) | Bluetooth Serial Communication Plugin | cordova, bluetooth, serial, arduino, ecosystem:cordova |
 | [cordova-plugin-camera](./c/cordova-plugin-camera) | Cordova Camera Plugin | cordova, camera, ecosystem:cordova, cordova-android, cordova-ios, cordova-browser, cordova-windows, cordova-osx |
 | [cordova-plugin-canvascame](./c/cordova-plugin-canvascamera) | - | - |
 | [cordova-plugin-contacts](./c/cordova-plugin-contacts) | Cordova Contacts Plugin | cordova, contacts, ecosystem:cordova, cordova-android, cordova-amazon-fireos, cordova-ubuntu, cordova-ios, cordova-blackberry10, cordova-wp7, cordova-wp8, cordova-firefoxos, cordova-windows8, cordova-windows |
@@ -1321,6 +1340,7 @@
 | [countdown](./c/countdown) | A simple JavaScript API for producing an accurate, | countdown, timer, clock, date, time, timespan, year, month, week, day, hour, minute, second |
 | [counterpart](./c/counterpart) | A translation and localization library for Node.js | globalization, g11n, internationalization, i18n, localization, l10n, translation, translate, localize |
 | [countries-and-timezones](./c/countries-and-timezones) | Minimalistic library to work with countries and ti | Countries, Timezones, Country, Timezone, Time, Date, DST |
+| [country-code-lookup](./c/country-code-lookup) | Finds countries by various country codes | fips, iso, country, code, countries |
 | [country-data](./c/country-data) | Data about countries - like their ISO codes and cu | data, country |
 | [country-list](./c/country-list) | Maps ISO 3166-1-alpha-2 codes to English country n | country, countries, ISO 3166-1-alpha-2, ISO 3166-1 |
 | [country-select-js](./c/country-select-js) | A jQuery plugin for selecting a country | country, international, jQuery |
@@ -1372,6 +1392,7 @@
 | [csrf](./c/csrf) | primary logic behind csrf tokens | csrf, tokens |
 | [css](./c/css) | CSS parser / stringifier | css, parser, stringifier, stylesheet |
 | [css-font-loading-module](./c/css-font-loading-module) | - | - |
+| [css-global-variables](./c/css-global-variables) | Manipulate CSS3 Global Variables with Javascript,  | css global variables, css vars helper, css variables helper, cssvar, cssvars, css variable, css globals, css vars, templating, css templating, html templating |
 | [css-jss](./c/css-jss) | Implements css() interface on top of JSS | jss, style, sheet, stylesheet, css, components, composable, css in js, css-in-js |
 | [css-mediaquery](./c/css-mediaquery) | Parses and determines if a given CSS Media Query m | css, media, query, mediaquery, mobile, parse, match |
 | [css-modules](./c/css-modules) | - | - |
@@ -1418,6 +1439,7 @@
 | [cypress-cucumber-preproce](./c/cypress-cucumber-preprocessor) | Run gherkin-syntaxed specs with cypress.io | cucumber, gherkin, cypress, testing |
 | [cypress-image-snapshot](./c/cypress-image-snapshot) | Cypress bindings for jest-image-snapshot. | - |
 | [cytoscape](./c/cytoscape) | Graph theory (a.k.a. network) library for analysis | graph, graph-theory, network, node, edge, vertex, link, analysis, visualisation, visualization, draw, render, biojs, cytoscape |
+| [cytoscape-edgehandles](./c/cytoscape-edgehandles) | Edge creation UI extension for Cytoscape | cytoscape, cytoscape-extension |
 | [d](./d/d) | Property descriptor factory | descriptor, es, ecmascript, ecma, property, descriptors, meta, properties |
 | [d20](./d/d20) | Library for rolling dice based on dice-syntax used | dice, rpg, d20 |
 | [d3](./d/d3) | Data-Driven Documents | dom, visualization, svg, animation, canvas |
@@ -1646,6 +1668,7 @@
 | [dock-spawn](./d/dock-spawn) | - | - |
 | [docker-events](./d/docker-events) | Create an event emitter from dockerode's events re | docker, events, event, emitter |
 | [docker-file-parser](./d/docker-file-parser) | Parses a Dockerfile and returns an array of comman | dockerfile, docker, parser |
+| [dockerfile-ast](./d/dockerfile-ast) | Parse a Dockerfile into an array of instructions a | ast, abstract, docker, dockerfile, moby, parse, parser, syntax, tree |
 | [dockerode](./d/dockerode) | Docker Remote API module. | docker, docker.io |
 | [docopt](./d/docopt) | a command line option parser that will make you sm | command, options, argument, args, cli, commandline |
 | [doctrine](./d/doctrine) | JSDoc parser | - |
@@ -1657,7 +1680,6 @@
 | [docx-templates](./d/docx-templates) | Template-based docx report creation | docx, office, word, ms-word, report, template |
 | [dogapi](./d/dogapi) | Datadog API Node.JS Client | datadog, api, datadog api, dog, dogapi, dog api |
 | [doge-seed](./d/doge-seed) | Dank mnemonic seed phrases | bitcoin, cryptocurrency, seed, phrase, bip39 |
-| [dojo](./d/dojo) | Dojo core is a powerful, lightweight library that  | JavaScript, Dojo, Toolkit |
 | [dom-align](./d/dom-align) | Align DOM Node Flexibly | dom, align |
 | [dom-clipboard-api](./d/dom-clipboard-api) | - | - |
 | [dom-helpers](./d/dom-helpers) | tiny modular DOM lib for ie9+ | dom-helpers, react-component, dom, api, cross-browser, style, event, height, width, dom-helpers, class, classlist, css |
@@ -1696,6 +1718,7 @@
 | [dotenv-safe](./d/dotenv-safe) | Load environment variables from .env and ensure th | dotenv |
 | [dotenv-webpack](./d/dotenv-webpack) | A simple webpack plugin to support dotenv. | dotenv, env, safe, environment, dotenv-safe, variables, process, process.env, webpack, plugin |
 | [dotfile-regex](./d/dotfile-regex) | Regular expresson for matching dotfiles. | detect, dotfile, expression, find, match, regex, regexp, regular |
+| [dotnet-deps-parser](./d/dotnet-deps-parser) | Generate a dep tree given a collection of manifest | - |
 | [dottie](./d/dottie) | Fast and safe nested object access and manipulatio | - |
 | [double-ended-queue](./d/double-ended-queue) | Extremely fast double-ended queue implementation | data-structure, data-structures, queue, deque, double-ended-queue |
 | [doublearray](./d/doublearray) | JavaScript implementation of Double-Array trie | trie |
@@ -1724,6 +1747,7 @@
 | [dsv](./d/dsv) | A parser and formatter for DSV (CSV and TSV) files | dsv, csv, tsv |
 | [dts-bundle](./d/dts-bundle) | Export TypeScript .d.ts files as an external modul | typescript, definition, bundle, export, d.ts |
 | [dts-generator](./d/dts-generator) | .d.ts generator. Generates a single d.ts bundle co | - |
+| [dtype](./d/dtype) | Return a data type from a string representing the  | ndarray, array, typed |
 | [du](./d/du) | A simple JavaScript implementation of du -sb | du, size |
 | [duckduckgo-images-api](./d/duckduckgo-images-api) | DuckDuckGo image-search api for node | node, javascript, duckduckgo, image, image-search, api |
 | [duo_web_sdk](./d/duo_web_sdk) | - | - |
@@ -1768,6 +1792,7 @@
 | [ecdsa-sig-formatter](./e/ecdsa-sig-formatter) | Translate ECDSA signatures between ASN.1/DER and J | ecdsa, der, asn.1, jwt, jwa, jsonwebtoken, jose |
 | [echarts](./e/echarts) | A powerful charting and visualization library for  | visualization, canvas |
 | [ecma-proposal-math-extens](./e/ecma-proposal-math-extensions) | Tests and a polyfill for the ES2017 Math Extension | ecmascript, math, test262, Math.map, Math.remap, Math.scale, Math.clamp, Math.constrain, Math.radians, Math.degrees |
+| [ecmarkdown](./e/ecmarkdown) | A compiler for "Ecmarkdown" algorithm shorthand in | ecmascript, javascript, specs, typography, markup, markdown, html, code |
 | [ecmarkup](./e/ecmarkup) | Custom element definitions and core utilities for  | ecmascript, javascript, specs, specifications, markup, markdown, html, code |
 | [ecol](./e/ecol) | Event Collections | STL, TSTL, standard template library, event, collection, iterator, VectorCollection, ListCollection, DequeCollection, TreeSetCollection, TreeMultiSetCollection, HashSetCollection, HashMultiSetCollection, TreeMapCollection, TreeMultiMapCollection, HashMapCollection, HashMultiMapCollection |
 | [ecore](./e/ecore) | Ecore (EMOF) JavaScript Implementation | emf, emof, model |
@@ -1778,6 +1803,7 @@
 | [edmonds-blossom](./e/edmonds-blossom) | Edmond's weighted maximum matching algorithm (Blos | graph, directional graph, edmonds, maximum matching, blossom |
 | [edtr-io__mathquill](./e/edtr-io__mathquill) | Easily type math in your webapp | - |
 | [ee-first](./e/ee-first) | return the first event in a set of ee/event pairs | - |
+| [eetase](./e/eetase) | EventEmitter to AsyncStreamEmitter converter. | event, emitter, async, stream, converter |
 | [egg](./e/egg) | A web framework's framework for Node.js | web, app, http, application, framework, middleware, koa, egg |
 | [egg-cookies](./e/egg-cookies) | cookies module for egg | - |
 | [egg-core](./e/egg-core) | A core Pluggable framework based on koa | egg, loader |
@@ -1825,6 +1851,7 @@
 | [element-ready](./e/element-ready) | Detect when an element is ready in the DOM | browser, element, ready, dom, css, selector, wait, detect, check, dom, domcontentloaded, domready |
 | [element-resize-detector](./e/element-resize-detector) | Resize event emitter for elements. | - |
 | [element-resize-event](./e/element-resize-event) | Polyfill to make it easy to listen for element res | event, resize, element-query, element queries |
+| [element-size](./e/element-size) | Get the size of an element in pixels, including ma | element, dom, browser, browserify, node, dimensions, margin |
 | [elementtree](./e/elementtree) | XML Serialization and Parsing module based on Pyth | xml, sax, parser, seralization, elementtree |
 | [elgamal](./e/elgamal) | ElGamal cryptosystem for JavaScript. | el, gamal, crypto, encrypt |
 | [elliptic](./e/elliptic) | EC cryptography | EC, Elliptic, curve, Cryptography |
@@ -1947,13 +1974,20 @@
 | [escape-string-regexp](./e/escape-string-regexp) | Escape RegExp special characters | escape, regex, regexp, re, regular, expression, string, str, special, characters |
 | [escodegen](./e/escodegen) | ECMAScript code generator | - |
 | [escpos](./e/escpos) | ESC/POS Printer driver for nodejs | escpos, printer |
+| [esfx__async-canceltoken](./e/esfx__async-canceltoken) | CancelToken async coordination primitive. | - |
 | [esfx__cancelable](./e/esfx__cancelable) | A low-level Symbol-based API for defining a common | - |
+| [esfx__collection-core](./e/esfx__collection-core) | A low-level Symbol-based API for defining common c | - |
+| [esfx__collections-linkedl](./e/esfx__collections-linkedlist) | LinkedList collection API. | - |
 | [esfx__disposable](./e/esfx__disposable) | A low-level API for defining explicit resource man | - |
+| [esfx__equatable](./e/esfx__equatable) | A low-level API for defining equality. | - |
 | [esfx__internal-deprecate](./e/esfx__internal-deprecate) | This package provides internal utilities for '@esf | - |
 | [esfx__internal-guards](./e/esfx__internal-guards) | This package provides internal utilities for @esfx | - |
+| [esfx__internal-hashcode](./e/esfx__internal-hashcode) | This package provides internal utilities for @esfx | - |
+| [esfx__internal-murmur3](./e/esfx__internal-murmur3) | This package provides internal utilities for @esfx | - |
 | [esfx__internal-tag](./e/esfx__internal-tag) | This package provides internal utilities for & | - |
 | [esfx__type-model](./e/esfx__type-model) | Utility types for TypeScript. | - |
 | [eslint](./e/eslint) | An AST-based pattern checker for JavaScript. | ast, lint, javascript, ecmascript, espree |
+| [eslint-config-prettier](./e/eslint-config-prettier) | Turns off all rules that are unnecessary or might  | eslint, eslintconfig, prettier |
 | [eslint-plugin-prettier](./e/eslint-plugin-prettier) | Runs prettier as an eslint rule | eslint, eslintplugin, eslint-plugin, prettier |
 | [eslint-plugin-react](./e/eslint-plugin-react) | React specific linting rules for ESLint | eslint, eslint-plugin, eslintplugin, react |
 | [eslint-scope](./e/eslint-scope) | ECMAScript scope analyzer for ESLint | - |
@@ -1961,7 +1995,6 @@
 | [esm](./e/esm) | Tomorrow's ECMAScript modules today | commonjs, ecmascript, export, import, modules, node, require |
 | [esprima](./e/esprima) | ECMAScript parsing infrastructure for multipurpose | ast, ecmascript, esprima, javascript, parser, syntax |
 | [esprima-walk](./e/esprima-walk) | Walk the primary nodes of an esprima parse tree -  | esprima, parse, parser, source, code, ast, syntax, tree, walk, walker, traverse, fast, quick, quickly, performant, performance |
-| [espruino](./e/espruino) | Command Line Interface and library for Communicati | espruino, microcontroller, uc, embedded |
 | [esquery](./e/esquery) | A query library for ECMAScript AST using a CSS sel | ast, ecmascript, javascript, query |
 | [esrever](./e/esrever) | A fully Unicode-aware string reverser written in J | string, reverse, unicode |
 | [esri-leaflet](./e/esri-leaflet) | Leaflet plugins for consuming ArcGIS Online and Ar | arcgis, esri, esri leaflet, gis, leaflet plugin, mapping |
@@ -1980,7 +2013,17 @@
 | [ethereumjs-common](./e/ethereumjs-common) | Resources common to all Ethereum implementations | ethereum, ethereumjs, constants, parameters, genesis, networks, bootstrap |
 | [ethereumjs-tx](./e/ethereumjs-tx) | A simple module for creating, manipulating and sig | ethereum, transactions |
 | [ethereumjs-util](./e/ethereumjs-util) | a collection of utility functions for Ethereum | ethereum, utilties |
-| [ethers](./e/ethers) | Ethereum wallet library. | ethereum, library, wallet |
+| [ethersproject__abi](./e/ethersproject__abi) | Utilities and Classes for parsing, formatting and  | Ethereum, ethers |
+| [ethersproject__address](./e/ethersproject__address) | Utilities for handling Ethereum Addresses for ethe | Ethereum, ethers |
+| [ethersproject__bignumber](./e/ethersproject__bignumber) | BigNumber library used in ethers.js. | Ethereum, bignumber, bn |
+| [ethersproject__bytes](./e/ethersproject__bytes) | Bytes utility functions for ethers. | Ethereum, ethers |
+| [ethersproject__constants](./e/ethersproject__constants) | Common Ethereum constants used for ethers. | Ethereum, ethers |
+| [ethersproject__hash](./e/ethersproject__hash) | Hash utility functions for Ethereum. | Ethereum, ethers |
+| [ethersproject__keccak256](./e/ethersproject__keccak256) | The keccak256 hash function for ethers. | Ethereum, ethers |
+| [ethersproject__logger](./e/ethersproject__logger) | Logger utility functions for ethers. | Ethereum, ethers |
+| [ethersproject__properties](./e/ethersproject__properties) | Properties utility functions for ethers. | Ethereum, ethers |
+| [ethersproject__rlp](./e/ethersproject__rlp) | Recursive-Length Prefix (RLP) coder. | Ethereum, ethers, rlp |
+| [ethersproject__strings](./e/ethersproject__strings) | String utility functions. | Ethereum, ethers, strings, utf8 |
 | [ethjs-signer](./e/ethjs-signer) | A simple module for signing Ethereum transactions. | ethereum, rpc, formatter, format, ethereum, encoding, decoding |
 | [eureka-js-client](./e/eureka-js-client) | A JavaScript implementation the Netflix OSS servic | eureka, service, registry, netflix |
 | [evaporate](./e/evaporate) | Javascript library for browser to S3 multipart res | aws, amazon, S3, multipart, multi-part, uploads, browser, transfer, acceleration, signature version 4, v4, electron, ReadableFileStream, fs, stream, checksum, Content-MD5 |
@@ -1990,6 +2033,7 @@
 | [event-kit](./e/event-kit) | Simple library for implementing and consuming even | - |
 | [event-lite](./e/event-lite) | Light-weight EventEmitter (less than 1KB when gzip | browser, emitter, event, eventlistener, fire, trigger |
 | [event-loop-lag](./e/event-loop-lag) | Measure event loop lag | - |
+| [event-loop-spinner](./e/event-loop-spinner) | Tiny helper to prevent blocking Node.js event loop | - |
 | [event-stream](./e/event-stream) | construct pipes of streams of events | stream, map, flatmap, filter, split, join, merge, replace |
 | [event-target-shim](./e/event-target-shim) | An implementation of WHATWG EventTarget interface. | w3c, whatwg, eventtarget, event, events, shim |
 | [event-to-promise](./e/event-to-promise) | Create a promise waiting for an event | event, promise |
@@ -2029,6 +2073,7 @@
 | [expo-location](./e/expo-location) | Allows reading geolocation information from the de | react-native, expo, location, geolocation, coords, geocoding, compass, heading |
 | [expo-mixpanel-analytics](./e/expo-mixpanel-analytics) | Mixpanel integration for use with React Native app | react, native, expo, mixpanel, analytics |
 | [expo-permissions](./e/expo-permissions) | Allows you prompt for various permissions to acces | react-native, expo, permissions |
+| [expo-random](./e/expo-random) | Expo universal module for random bytes | react-native, expo, random, crypto, random-bytes, secure, generator, bytes |
 | [expo-sqlite](./e/expo-sqlite) | Provides access to a database that can be queried  | react-native, expo, sqlite, websql, sql |
 | [expo-web-browser](./e/expo-web-browser) | Provides access to the system's web browser and su | react-native, expo, expo-web-browser, web, browser |
 | [expo__status-bar-height](./e/expo__status-bar-height) | Listen to status bar changes during incoming calls | expo, statusbar, tools, react-native, react, ui, multitask |
@@ -2148,6 +2193,7 @@
 | [fast-memoize](./f/fast-memoize) | Fastest memoization lib that supports N arguments | - |
 | [fast-memory-cache](./f/fast-memory-cache) | Simple in-memory cache implementation | memory, cache |
 | [fast-ratelimit](./f/fast-ratelimit) | Fast and efficient in-memory rate-limit for Node,  | ratelimit, rate-limit, rate, limit, attack, flood, security, dos, ddos |
+| [fast-redact](./f/fast-redact) | very fast object redaction | redact, censor, performance, performant, gdpr, fast, speed, serialize, stringify |
 | [fast-safe-stringify](./f/fast-safe-stringify) | Safely and quickly serialize JavaScript objects | stable, stringify, JSON, JSON.stringify, safe, serialize |
 | [fast-shuffle](./f/fast-shuffle) | A fast implementation of a fisher-yates shuffle th | knuth, fisher-yates, shuffle, deterministic, pure |
 | [fast-stats](./f/fast-stats) | Quickly calculate common statistics on lists of nu | statistics, statistic, gauss, lognormal, normal, mean, median, mode, standard deviation, margin of error, iqr, quartile, inter quartile range |
@@ -2223,6 +2269,7 @@
 | [filing-cabinet](./f/filing-cabinet) | Find files based on partial paths | lookup, es6, amd, commonjs, sass, less, stylus, partial, resolution, paths |
 | [fill-pdf](./f/fill-pdf) | Fill out pdf forms | pdf, fdf, utf8, pdftk |
 | [filter-console](./f/filter-console) | Filter out unwanted console.log() output | filter, console, console-log, log, logging, exclude, exclusion, devtools, pattern, patterns, test, testing, mock, electron, react, proptypes |
+| [filter-css](./f/filter-css) | Filter CSS rules | css, filter, parse |
 | [filter-invalid-dom-props](./f/filter-invalid-dom-props) | a function to filter props that are not valid dom  | react, props, dom, filter-props, dom-props |
 | [final-form-focus](./f/final-form-focus) | Decorator that will attempt to apply focus to the  | - |
 | [final-form-set-field-data](./f/final-form-set-field-data) | Mutator for setting arbitrary metadata on fields i | - |
@@ -2240,6 +2287,7 @@
 | [find-parent-dir](./f/find-parent-dir) | Finds the first parent directory that contains a g | find, parent, dir, root, resolve, walk |
 | [find-process](./f/find-process) | find process info by port/pid/name etc. | node, process, pid, port |
 | [find-project-root](./f/find-project-root) | Finds project root | - |
+| [find-replace](./f/find-replace) | Replace or remove multiple items in an array. | find, replace, array, remove, splice |
 | [find-root](./f/find-root) | find the closest package.json | fs, get, find, closest, package, module, base, root |
 | [find-unused-sass-variable](./f/find-unused-sass-variables) | A small tool to find unused Sass variables | sass, unused, variables, scss |
 | [find-up](./f/find-up) | Find a file or directory by walking up parent dire | find, up, find-up, findup, look-up, look, file, search, match, package, resolve, parent, parents, folder, directory, walk, walking, path |
@@ -2263,6 +2311,7 @@
 | [firebase__component](./f/firebase__component) | Firebase Component Platform | - |
 | [firebase__database](./f/firebase__database) | This is the Firebase Realtime Database component o | - |
 | [firebase__database-types](./f/firebase__database-types) | @firebase/database Types | - |
+| [firebase__firestore](./f/firebase__firestore) | This is the  | - |
 | [firebase__firestore-types](./f/firebase__firestore-types) | @firebase/firestore Types | - |
 | [firebase__functions](./f/firebase__functions) | This is the Firebase Functions component of the Fi | - |
 | [firebase__functions-types](./f/firebase__functions-types) | @firebase/functions Types | - |
@@ -2305,6 +2354,7 @@
 | [flipsnap](./f/flipsnap) | Provides UI of snap and slide | mobile, ui, browser |
 | [float-equal](./f/float-equal) | Check if two floats are almost equal | float, number, epsilon, equal, same, almost, compare, comparison, round, near, tolerance, upperbound |
 | [float-regex](./f/float-regex) | regular expression to match floating point numbers | regex, regexp, regular expression, floating, point |
+| [floreal](./f/floreal) | Date formatting for the French Revolutionary calen | conversion, dates, calendar, history, historical, france, french, republic |
 | [flot](./f/flot) | - | - |
 | [flowdoc](./f/flowdoc) | - | - |
 | [flowjs](./f/flowjs) | asynchronous flow-control micro library | - |
@@ -2317,8 +2367,9 @@
 | [fluent__langneg](./f/fluent__langneg) | Language Negotiation API for Fluent | localization, l10n, internationalization, i18n, locale, language, language-negotiation |
 | [fluent__react](./f/fluent__react) | Fluent bindings for React | localization, l10n, internationalization, i18n, ftl, plural, gender, locale, language, formatting, translate, translation, format, parser, react, reactjs |
 | [fluent__sequence](./f/fluent__sequence) | Manage ordered sequences of FluentBundles | fluent, ftl |
+| [fluentui__keyboard-key](./f/fluentui__keyboard-key) | A simple utility for determining the KeyboardEvent | - |
 | [fluentui__react-focus](./f/fluentui__react-focus) | Focus helpers to be used in React applications. | - |
-| [fluentui__react-icons](./f/fluentui__react-icons) | - | - |
+| [fluentui__react-icons](./f/fluentui__react-icons) | React components for building web experiences. | - |
 | [flush-write-stream](./f/flush-write-stream) | A write stream constructor that supports a flush f | - |
 | [flushable](./f/flushable) | A flushable timeout function | - |
 | [flux](./f/flux) | An application architecture based on a unidirectio | flux, react, facebook, dispatcher |
@@ -2402,6 +2453,7 @@
 | [fs-merger](./f/fs-merger) | Reads files from a real location | - |
 | [fs-mock](./f/fs-mock) | - | fs, file system, posix, linux, windows, testing, mock |
 | [fs-plus](./f/fs-plus) | node's fs with more helpers | fs, filesystem |
+| [fs-promise](./f/fs-promise) | - | promise, fs, file, file system |
 | [fs-readdir-recursive](./f/fs-readdir-recursive) | Recursively read a directory | - |
 | [fs-readfile-promise](./f/fs-readfile-promise) | Promise version of fs.readFile | fs, read, file, promise, promises, then, thenable |
 | [fs-routes](./f/fs-routes) | Scan a filesystem for route files. | filesystem, routes, paths, api |
@@ -2577,6 +2629,7 @@
 | [gatsby-core-utils](./g/gatsby-core-utils) | A collection of gatsby utils used in different gat | gatsby, gatsby-core-utils |
 | [gatsby-image](./g/gatsby-image) | Lazy-loading React image component with optional s | gatsby, gatsby-component, react-component |
 | [gatsby-link](./g/gatsby-link) | An enhanced Link component for Gatsby sites with s | gatsby |
+| [gaugejs](./g/gaugejs) | - | - |
 | [gaussian](./g/gaussian) | A JavaScript model of a Gaussian distribution | gaussian, normal, distribution |
 | [gaxios](./g/gaxios) | A simple common HTTP client specifically for Googl | google |
 | [gaze](./g/gaze) | A globbing fs.watch wrapper built from the best pa | watch, glob |
@@ -2589,6 +2642,7 @@
 | [gen-readlines](./g/gen-readlines) | Generator based line reader | generator, file, line, reader, read, by, es6, ecma2015 |
 | [generate-changelog](./g/generate-changelog) | Generate a changelog from git commits. | changelog, cli, npm, version, git, semver |
 | [generate-json-webpack-plu](./g/generate-json-webpack-plugin) | Webpack plugin to generate a custom JSON asset | webpack |
+| [generate-password](./g/generate-password) | Easy library for generating unique passwords. | generate, password, generator, unique |
 | [generic-functions](./g/generic-functions) | A generic function library for Node.js | library, generic, functions, strcmp, println, printlns |
 | [generic-pool](./g/generic-pool) | Generic resource pooling for Node.JS | pool, pooling, throttle |
 | [gently](./g/gently) |   | - |
@@ -2653,6 +2707,7 @@
 | [git-user-email](./g/git-user-email) | Get the email address of the current user from git | config, email, git, github, user |
 | [git-user-name](./g/git-user-name) | Get a user's name from git config at the project o | git, gitconfig, github, global, name, user, username |
 | [git-username](./g/git-username) | Get the username (or 'owner' name) from a git/GitH | git, name, origin, parse, remote, remote origin, remote origin url, url, user, username |
+| [gitana](./g/gitana) | Cloud CMS Gitana Driver for Node JS | gitana, cloudcms, cms, content, json, rest, mobile, content management, javascript |
 | [gitconfiglocal](./g/gitconfiglocal) | parse the .git/config file into a useful data stru | git, config |
 | [github-url-from-git](./g/github-url-from-git) | Parse a github git url and return the github repo  | github, git, url, parser |
 | [github-url-to-object](./g/github-url-to-object) | Extract user, repo, and other interesting properti | github, url, repo |
@@ -2697,6 +2752,7 @@
 | [globrex](./g/globrex) | Glob to regular expression with support for extend | glob, regex, regexp, parser, glob2regx, compiler |
 | [globule](./g/globule) | An easy-to-use wildcard globbing library. | glob, file, match, mapping, expand, wildcard, pattern, sync, awesome |
 | [glue](./g/glue) | Server composer for hapi.js | server, pack, composer, manifest, hapi |
+| [glur](./g/glur) | Fast Gaussian Blur in pure JavaScript, via IIR fil | blur, gaussian |
 | [gm](./g/gm) | GraphicsMagick and ImageMagick for node.js | graphics, magick, image, graphicsmagick, imagemagick, gm, convert, identify, compare |
 | [go](./g/go) | Create and use boilerplates with ease | boilerplate, automation, template, generator, scaffold, cli |
 | [good-storage](./g/good-storage) | a storage lib which support sessionStorage and loc | store, html5 |
@@ -2713,6 +2769,7 @@
 | [google-cloud__precise-dat](./g/google-cloud__precise-date) | A simple utility for precise-dateing functions and | nano, date, time, precise |
 | [google-cloud__projectify](./g/google-cloud__projectify) | A simple utility for replacing the projectid token | - |
 | [google-cloud__promisify](./g/google-cloud__promisify) | A simple utility for promisifying functions and cl | - |
+| [google-cloud__pubsub](./g/google-cloud__pubsub) | Cloud Pub/Sub Client Library for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google pubsub, pubsub |
 | [google-cloud__storage](./g/google-cloud__storage) | Cloud Storage Client Library for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google storage, storage |
 | [google-cloud__tasks](./g/google-cloud__tasks) | Cloud Tasks API client for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google cloud-tasks, cloud-tasks, Cloud Tasks API |
 | [google-cloud__text-to-spe](./g/google-cloud__text-to-speech) | Cloud Text-to-Speech API client for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google texttospeech, texttospeech, Cloud Text-to-Speech API |
@@ -2720,12 +2777,14 @@
 | [google-drive-realtime-api](./g/google-drive-realtime-api) | - | - |
 | [google-earth](./g/google-earth) | - | - |
 | [google-fonts](./g/google-fonts) | A small helper library for embedding Google Fonts  | google, fonts, webfonts, inline, embed, append |
+| [google-gax](./g/google-gax) | Google API Extensions | grpc |
 | [google-images](./g/google-images) | Search images using Google Custom Search Engine AP | google, images, google images, image search |
 | [google-libphonenumber](./g/google-libphonenumber) | The up-to-date and reliable Google's libphonenumbe | browserify, e164, format, formatting, international, libphonenumber, number, phone, phonenumber, rfc3966, standardize, wrapper |
 | [google-map-react](./g/google-map-react) | isomorphic google map react component, allows rend | react, reactjs, google, map, maps, isomorphic, render, component, javascript, react-component |
 | [google-maps](./g/google-maps) | Wrapper for asynchronously used Google Maps API | google, maps, asynchronous, browser, wrapper |
 | [google-maps-react](./g/google-maps-react) | Google maps container | - |
 | [google-p12-pem](./g/google-p12-pem) | Convert Google .p12 keys to .pem keys. | - |
+| [google-profanity-words](./g/google-profanity-words) | Full List of Bad Words and Top Swear Words Banned  | node, google, profanity, words, machine learning |
 | [google-protobuf](./g/google-protobuf) | Protocol Buffers for JavaScript | - |
 | [google-translate-api](./g/google-translate-api) | A free and unlimited API for Google Translate | translate, translator, google, translate, api, free, language |
 | [google__maps](./g/google__maps) | Node.js client library for Google Maps API Web Ser | google, maps, googlemaps, geo, geocode, timezone, api, client, roads, directions, navigation |
@@ -2803,9 +2862,11 @@
 | [growing-io](./g/growing-io) | - | - |
 | [grpc](./g/grpc) | gRPC Library for Node | - |
 | [grpc-error](./g/grpc-error) | Utility Error class suitable for gRPC error respon | protocol buffer, protobuf, grpc |
+| [grpc__grpc-js](./g/grpc__grpc-js) | gRPC Library for Node - pure JS implementation | - |
 | [grpc__proto-loader](./g/grpc__proto-loader) | gRPC utility library for loading .proto files | - |
 | [grunt](./g/grunt) | The JavaScript Task Runner | task, async, cli, minify, uglify, build, lodash, unit, test, qunit, nodeunit, server, init, scaffold, make, jake, tool |
 | [gsap](./g/gsap) | GSAP is a JavaScript library for building high-per | GSAP, GreenSock, animation, MotionPathPlugin, motion, motionPath, easing, JavaScript, PixiPlugin, CustomEase, SVG, 3D, 2D, transform, morph, morphing, tweening |
+| [gsheets](./g/gsheets) | Get public Google Spreadsheets as plain JavaScript | google, spreadsheets, worksheets, sheets, json, cli |
 | [gtag_dot_js](./g/gtag_dot_js) | - | - |
 | [gtin](./g/gtin) | GTIN (UPC, EAN, ITF, etc.) utilities. | gtin, upc, ean, ucc, itf, itf-14, itf14, ean-13, ean13, ucc-12, ucc12, upc-e, upce, upca, upc-a, validation, utilities, valid |
 | [gtoken](./g/gtoken) | Node.js Google Authentication Service Account Toke | google, service, account, api, token, api, auth |
@@ -2917,6 +2978,7 @@
 | [gzip-js](./g/gzip-js) | GZIP in pure JavaScript (works in the browser) | - |
 | [gzip-size](./g/gzip-size) | Get the gzipped size of a string or buffer | app, tool, zlib, gzip, compressed, size, string, buffer |
 | [h2o2](./h/h2o2) | Proxy handler plugin for hapi.js | HTTP, proxy, handler, hapi, plugin |
+| [hafas-client](./h/hafas-client) | Client for HAFAS public transport APIs. | hafas, public, transport, transit, api, http |
 | [halfred](./h/halfred) | parses JSON HAL resources (Hypertext Application L | HAL, REST, JSON |
 | [halogen](./h/halogen) | A collection of loading spinners with React.js | react, react-component, loader, spinner, halogen |
 | [halogenium](./h/halogenium) | A collection of loading spinners with React.js bas | react, react-component, loader, spinner, halogen, halogenium |
@@ -2974,8 +3036,11 @@
 | [hark](./h/hark) | Converts an audio stream to speech events in the b | - |
 | [harmon](./h/harmon) | A piece of middleware for node-http-proxy that all | - |
 | [harmony-proxy](./h/harmony-proxy) | Small shim providing new Proxy(target, handler) | harmony, proxy, trap, es6 |
+| [harmony-reflect](./h/harmony-reflect) | ES5 shim for ES6 (ECMAScript 6) Reflect and Proxy  | reflection, proxies, proxy, reflect, harmony, es6 |
+| [has](./h/has) | Object.prototype.hasOwnProperty.call shortcut | - |
 | [has-ansi](./h/has-ansi) | Check if a string has ANSI escape codes | ansi, styles, color, colour, colors, terminal, console, string, tty, escape, shell, xterm, command-line, text, regex, regexp, match, test, find, pattern, has |
 | [has-emoji](./h/has-emoji) | Check whether a string has any emoji | emoji, emojis, string, text, has, contains, includes, detect, is |
+| [has-symbols](./h/has-symbols) | Determine if the JS environment has Symbol support | Symbol, symbols, typeof, sham, polyfill, native, core-js, ES6 |
 | [has-yarn](./h/has-yarn) | Check if a project is using Yarn | yarn, has, detect, is, project, app, module, package, manager, npm |
 | [hash-file](./h/hash-file) | Create a hashed file name | file, hash, name, crypto |
 | [hash-it](./h/hash-it) | Hash any object based on its value | hash, hashcode, object-hash, unique |
@@ -2996,6 +3061,7 @@
 | [haversine](./h/haversine) | A simple haversine module | haversine, distance, coordinates, geolocation |
 | [hbs](./h/hbs) | Express.js template engine plugin for Handlebars | - |
 | [hcaptcha__react-hcaptcha](./h/hcaptcha__react-hcaptcha) | A React library for hCaptcha | hcaptcha, hcaptcha-react, react, captcha |
+| [hcaptcha__vue-hcaptcha](./h/hcaptcha__vue-hcaptcha) | hCaptcha Component Library for Vue.js, compatible  | hcaptcha, captcha, component, vue, vue-component, earn |
 | [hdkey](./h/hdkey) | Bitcoin BIP32 hierarchical deterministic keys | bitcoin, bip32, bip, key, hierarchical, deterministic, crypto |
 | [hdr-histogram-js](./h/hdr-histogram-js) | TypeScript port of HdrHistogram | - |
 | [he](./h/he) | A robust HTML entities encoder/decoder with full U | string, entities, entity, html, encode, decode, unicode |
@@ -3056,6 +3122,7 @@
 | [html](./h/html) | HTML pretty printer CLI utility (based on jsbeauti | html, tabifier, beautifier, prettyprinter, prettifier, pretty, command, shell |
 | [html-encoding-sniffer](./h/html-encoding-sniffer) | Sniff the encoding from a HTML byte stream | encoding, html |
 | [html-entities](./h/html-entities) | Faster HTML entities encode/decode library. | html, html entities, html entities encode, html entities decode, entities, entities encode, entities decode |
+| [html-escaper](./h/html-escaper) | fast and safe way to escape and unescape &<>'" cha | html, escape, encode, unescape, decode, entities |
 | [html-minifier](./h/html-minifier) | Highly configurable, well-tested, JavaScript-based | cli, compress, compressor, css, html, htmlmin, javascript, min, minification, minifier, minify, optimize, optimizer, pack, packer, parse, parser, uglifier, uglify |
 | [html-minifier-terser](./h/html-minifier-terser) | Highly configurable, well-tested, JavaScript-based | cli, compress, compressor, css, html, htmlmin, javascript, min, minification, minifier, minify, optimize, optimizer, pack, packer, parse, parser, terser, uglifier, uglify |
 | [html-parser](./h/html-parser) | HTML/XML parser with less explosions | html, xml, parser, explosion |
@@ -3097,6 +3164,7 @@
 | [http-status](./h/http-status) | Interact with HTTP status code | http, express, connect |
 | [http-status-codes](./h/http-status-codes) | Constants enumerating the HTTP status codes. Based | node, http, apache, HttpStatus, httpclient, status, codes |
 | [http-string-parser](./h/http-string-parser) | Parse HTTP Request and Response from String | http, message, request, response, parser, string, raw, bare |
+| [http-terminator](./h/http-terminator) | Gracefully terminates HTTP(S) server. | kubernetes, prometheus |
 | [httperr](./h/httperr) | HTTP status codes as JavaScript errors. | http, errors, error, request, response, errorclass |
 | [https-proxy-agent](./h/https-proxy-agent) | An HTTP(s) proxy http.Agent implementation for HTT | https, proxy, endpoint, agent |
 | [hubot](./h/hubot) | A simple helpful robot for your Company | github, hubot, campfire, bot |
@@ -3117,6 +3185,7 @@
 | [hyperloris__tyson](./h/hyperloris__tyson) | A TypeScript serialization/deserialization library | typescript, json, converter, serialization, deserialization, angular |
 | [hyperscript](./h/hyperscript) | Create HyperText with JavaScript, on client or ser | - |
 | [hypertext-application-lan](./h/hypertext-application-language) | - | - |
+| [hyphen](./h/hyphen) | Text hyphenation in Javascript. | hyphen, hyphenate, hyphenation, hyphenator |
 | [hystrixjs](./h/hystrixjs) | resilience module for NodeJS applications | - |
 | [i18n](./i/i18n) | lightweight translation module with dynamic json s | template, i18n, l10n |
 | [i18n-abide](./i/i18n-abide) | Express/connect module for Node i18n and l10n supp | express, connect, l10n, i18n, gettext |
@@ -3256,7 +3325,6 @@
 | [inversify-inject-decorato](./i/inversify-inject-decorators) | Lazy evaluated property injection decorators for I | inject, lazy, property, decorator, inversify, dependency, injection |
 | [inversify-logger-middlewa](./i/inversify-logger-middleware) | A basic logger middleware for InversifyJS | inversifyjs, logger, inversion, of, control, dependency, inversion |
 | [inversify-restify-utils](./i/inversify-restify-utils) | Some utilities for the development of restify appl | InversifyJS, restify, dependency, injection |
-| [io-ts](./i/io-ts) | TypeScript compatible runtime type system for IO v | typescript, validation, inference, types, runtime |
 | [iobroker](./i/iobroker) | automate your life - platfom | ioBroker, Smarthome, Home Automation, Smart Metering, Homematic, Hue, KNX, Z-Wave, ZigBee, Bidcos, TV, Sonos, AV Receiver |
 | [ion-rangeslider](./i/ion-rangeslider) | Cool, comfortable and easily customizable range sl | jquery-plugin, ecosystem:jquery, jquery, form, input, range, slider, rangeslider, interface, diapason, ui, noui, skins |
 | [ionic](./i/ionic) | A tool for creating and developing Ionic Framework | ionic, ionic framework, ionicframework, mobile, app, hybrid, cordova, native, phonegap |
@@ -3284,9 +3352,11 @@
 | [ip-address](./i/ip-address) | A library for parsing IPv4 and IPv6 IP addresses i | ipv6, ipv4, browser, validation |
 | [ip-regex](./i/ip-regex) | Regular expression for matching IP addresses (IPv4 | ip, ipv6, ipv4, regex, regexp, re, match, test, find, text, pattern, internet, protocol, address, validate |
 | [ip-subnet-calculator](./i/ip-subnet-calculator) | Calculate optimal subnet masks for standard and no | ip, subnet, network, netmask, calculator, mask |
+| [ip6addr](./i/ip6addr) | IPv6/IPv4 address parsing and manipulation | ip, ipv4, ipv6, cidr, subnet |
 | [ipaddr_dot_js](./i/ipaddr_dot_js) | A library for manipulating IPv4 and IPv6 addresses | ip, ipv4, ipv6 |
 | [ipcheck](./i/ipcheck) | Super-efficient module to parse and check if an IP | ip, ipv6, ipv4, cidr |
 | [ipify](./i/ipify) | Get your public IP address | ip, ipv6, ipv4, address, public, external, own |
+| [ipp](./i/ipp) | Internet Printing Protocol (IPP) for nodejs | ipp, print, printing |
 | [irc](./i/irc) | An IRC client library for node | - |
 | [iri](./i/iri) | IRI parsing and IRI-URI conversion utilities | IRI |
 | [iron](./i/iron) | Encapsulated tokens (encrypted and mac'ed objects) | authentication, encryption, data integrity |
@@ -3344,6 +3414,7 @@
 | [is-obj](./i/is-obj) | Check if a value is an object | object, is, check, test, type |
 | [is-object](./i/is-object) | Checks whether a value is an object | - |
 | [is-odd](./i/is-odd) | Returns true if the given number is odd, and is an | array, count, even, filter, integer, is, math, numeric, odd, string |
+| [is-online](./i/is-online) | Check if the internet connection is up | browser, online, offline, is-online, network, connected, connectivity, internet, is, has, detect, hostname, hostnames, dns, socket, reachable, reachability, accessible, no, disconnected |
 | [is-path-cwd](./i/is-path-cwd) | Check if a path is the current working directory | path, cwd, pwd, check, filepath, file, folder |
 | [is-path-in-cwd](./i/is-path-in-cwd) | Check if a path is in the current working director | path, cwd, pwd, check, filepath, file, folder, in, inside |
 | [is-path-inside](./i/is-path-inside) | Check if a path is inside another path | path, inside, folder, directory, dir, file, resolve |
@@ -3352,6 +3423,7 @@
 | [is-png](./i/is-png) | Check if a Buffer/Uint8Array is a PNG image | png, portable, network, graphics, image, picture, photo, type, detect, check, is, exif, binary, buffer, uint8array |
 | [is-progressive](./i/is-progressive) | Check if JPEG images are progressive | jpg, jpeg, progressive, file, image, img, pic, picture, photo, detect, check, is, exif, buffer, stream, fs |
 | [is-promise](./i/is-promise) | Test whether an object looks like a promises-a+ pr | - |
+| [is-reachable](./i/is-reachable) | Check if servers are reachable | browser, online, offline, network, connected, connectivity, internet, is, has, detect, reachable, reachability, server, host, accessible, socket |
 | [is-reference](./i/is-reference) | Determine whether an AST node is a reference | ast, javascript, estree, acorn |
 | [is-regexp](./i/is-regexp) | Check if a value is a regular expression | regex, regexp, regular, expression, regular expression, re, check, type, is |
 | [is-relative](./i/is-relative) | Returns true if the path appears to be relative. | absolute, check, file, filepath, is, normalize, path, path.relative, relative, resolve, slash, slashes, uri, url |
@@ -3411,6 +3483,7 @@
 | [ityped](./i/ityped) | Dead simple animated typing, with no dependencies. | - |
 | [iv-viewer](./i/iv-viewer) | A zooming and panning plugin inspired by google ph | image, zooming, panning, google, photos |
 | [ix_dot_js](./i/ix_dot_js) | - | - |
+| [j5-io-types](./j/j5-io-types) | TypeScript type information for dependency modules | - |
 | [jackrabbit](./j/jackrabbit) | Easy RabbitMQ for node | amqp, rabbit, job, jobs, queue, task, resqueue |
 | [jade](./j/jade) | A clean, whitespace-sensitive template language fo | - |
 | [jaeger-client](./j/jaeger-client) | Jaeger binding for OpenTracing Node | - |
@@ -3492,12 +3565,14 @@
 | [jest__core](./j/jest__core) | Delightful JavaScript Testing. | ava, babel, coverage, easy, expect, facebook, immersive, instant, jasmine, jest, jsdom, mocha, mocking, painless, qunit, runner, sandboxed, snapshot, tap, tape, test, testing, typescript, watch |
 | [jest__environment](./j/jest__environment) | - | - |
 | [jest__fake-timers](./j/jest__fake-timers) | - | - |
+| [jest__globals](./j/jest__globals) | - | - |
 | [jest__reporters](./j/jest__reporters) | Jest's reporters | - |
 | [jest__source-map](./j/jest__source-map) | - | - |
 | [jest__test-result](./j/jest__test-result) | - | - |
 | [jest__test-sequencer](./j/jest__test-sequencer) | - | - |
 | [jest__transform](./j/jest__transform) | - | - |
 | [jest__types](./j/jest__types) | - | - |
+| [jexcel](./j/jexcel) | jExcel is a lightweight, vanilla javascript plugin | spreadsheet, tables, table, excel, grid, grid-editor, data-table, data-grid, data-spreadsheet |
 | [jexl](./j/jexl) | Javascript Expression Language: Powerful context-b | JSON, expression, evaluator, parser, target, context, jsep, filter, selector |
 | [jfp](./j/jfp) | A language as a library borrowing concepts from Li | - |
 | [jfs](./j/jfs) | A simple JSON file store | - |
@@ -3764,6 +3839,7 @@
 | [json-stream-stringify](./j/json-stream-stringify) | JSON.Stringify as a readable stream | - |
 | [json-stringify-pretty-com](./j/json-stringify-pretty-compact) | The best of both JSON.stringify(obj) and JSON.stri | JSON, stringify, pretty, print, pretty-print, compact, indent, format, formatter |
 | [json-stringify-safe](./j/json-stringify-safe) | Like JSON.stringify, but doesn't blow up on circul | json, stringify, circular, safe |
+| [json-templates](./j/json-templates) | Simple JSON value templating. | json, template |
 | [json-to-ast](./j/json-to-ast) | JSON AST parser | json-parser, parser, ast, json, tree |
 | [json2csv](./j/json2csv) | Convert JSON to CSV | json, to, csv, export, convert, parse |
 | [json2md](./j/json2md) | A JSON to Markdown converter. | json, markdown, converter, generator |
@@ -3933,6 +4009,7 @@
 | [just-safe-set](./j/just-safe-set) | set value at property, create intermediate propert | object, safe, set, no-dependencies, just |
 | [just-snake-case](./j/just-snake-case) | convert a string to snake case | snake, snake_case, string, no-dependencies, just |
 | [just-throttle](./j/just-throttle) | return a throttled function | function, throttle, no-dependencies, just |
+| [justified-layout](./j/justified-layout) | Pass in box sizes and get back sizes and coordinat | justify, grid, photos, layout, boxes |
 | [jweixin](./j/jweixin) | wechat js-sdk | - |
 | [jwk-to-pem](./j/jwk-to-pem) | Convert a JSON Web Key to a PEM | jwt, jwk, jwa, jsonwebtoken |
 | [jwplayer](./j/jwplayer) | 'jwplayer node js module to make request to jwplay | jwplayer, platform, jwplayer, API |
@@ -3984,6 +4061,7 @@
 | [kd-tree-javascript](./k/kd-tree-javascript) | A basic but super fast JavaScript implementation o | - |
 | [kdbush](./k/kdbush) | A very fast static 2D index for points based on kd | index, points, kd-tree, data structures, algorithms, spatial, geometry |
 | [kdbxweb](./k/kdbxweb) | Kdbx KeePass database reader for web | kdbx, keepass |
+| [keccak](./k/keccak) | Keccak sponge function family | sha3, sha-3, keccak, shake |
 | [keen-tracking](./k/keen-tracking) | Track events - custom user actions, clicks, pagevi | Tracking, Tracker, Event Tracker, Event tracking, Track events, Page tracking, User tracking, Analytics event tracking, Analytics events, Analytics tracking, Custom events, Analytics, Stats, Statistics, Monitoring, Metrics, Pageviews, Segmentation, Funnel, Conversion, Log, Logger, Logging, Javascript events, Universal tracking, Click analytics |
 | [kefir](./k/kefir) | Reactive Programming library for JavaScript inspir | frp, bacon, bacon.js, kefir, kefir.js, functional, reactive, stream, streams, EventStream, Rx, RxJs, Observable |
 | [kendo-ui](./k/kendo-ui) | - | - |
@@ -4087,6 +4165,7 @@
 | [koa-joi-router-docs](./k/koa-joi-router-docs) | OpenAPI(aka Swagger) API docs generator for koa-jo | - |
 | [koa-json](./k/koa-json) | pretty (non-compressed) json response middleware | koa, json |
 | [koa-json-error](./k/koa-json-error) | Error handler for pure-JSON Koa apps | koa, json, error, api, handler, middleware |
+| [koa-jwt](./k/koa-jwt) | Koa JWT authentication middleware. | auth, authn, authentication, authz, authorization, http, jwt, json, middleware, token, oauth, koa |
 | [koa-log](./k/koa-log) | logger middlware for koa | koa, logger, middlware |
 | [koa-log4](./k/koa-log4) | log4js-node support Koa-middleware | log4js, Koa, logger |
 | [koa-logger](./k/koa-logger) | Logging middleware for koa | koa, middleware, logger, log |
@@ -4172,7 +4251,6 @@
 | [ldapjs-client](./l/ldapjs-client) | LDAP js client | LDAP, ldap, client, simple, promised, async |
 | [ldclient-js](./l/ldclient-js) | LaunchDarkly SDK for JavaScript | launchdarkly, analytics, client |
 | [ldclient-js-common](./l/ldclient-js-common) | LaunchDarkly SDK for JavaScript - common code | launchdarkly, analytics, client |
-| [leadfoot](./l/leadfoot) | Leadfoot. A JavaScript client library that brings  | javascript, test, functional, selenium, webdriver, sauce labs, browserstack, testingbot |
 | [leaflet](./l/leaflet) | JavaScript library for mobile-friendly interactive | gis, map |
 | [leaflet-areaselect](./l/leaflet-areaselect) | - | - |
 | [leaflet-curve](./l/leaflet-curve) | A Leaflet plugin for drawing Bézier curves and oth | leaflet, Bezier, curve, SVG |
@@ -4232,6 +4310,7 @@
 | [levenary](./l/levenary) | > Given a string, A and an array of strings XS, re | leven, levenshtein, distance, array, string, algorithm, algo, string, difference, diff, fast, fuzzy, similar, similarity, compare, comparison, edit, text, match, matching |
 | [levenshtein](./l/levenshtein) | Javascript implementation of the L-diggity. | - |
 | [lexicographic-integer](./l/lexicographic-integer) | create lexicographic string keys for positive inte | lexicographic, encoding, pack, padding, integer |
+| [lgtv2](./l/lgtv2) | Simple module to remote control LG WebOS smart TVs | tv, smarttv, webos, remote, control |
 | [libnpmsearch](./l/libnpmsearch) | Programmatic API for searching in npm and compatib | npm, search, api, libnpm |
 | [libphonenumber-js](./l/libphonenumber-js) | A simpler (and smaller) rewrite of Google Android' | javascript, telephone, phone, number, input, mobile, android, iphone, international, libphonenumber |
 | [libpq](./l/libpq) | Low-level native bindings to PostgreSQL libpq | postgres, libpq |
@@ -4793,6 +4872,8 @@
 | [md5-file](./m/md5-file) | return an md5sum of a given file | md5, md5sum, checksum |
 | [md5-hex](./m/md5-hex) | Create a MD5 hash with hex encoding | hash, crypto, md5, hex, buffer, browser |
 | [mdast](./m/mdast) | Markdown Abstract Syntax Tree format | - |
+| [mdast-util-definitions](./m/mdast-util-definitions) | mdast utility to find definition nodes in a tree | unist, mdast, mdast-util, util, utility, markdown, tree, node, definition, find, cache |
+| [mdast-util-to-hast](./m/mdast-util-to-hast) | mdast utility to transform to hast | unist, mdast, mdast-util, hast, hast-util, util, utility, markdown, html |
 | [mdns](./m/mdns) | multicast DNS service discovery | zeroconf, bonjour, dns_sd, mDNSResponder |
 | [mdurl](./m/mdurl) | URL utilities for markdown-it | - |
 | [mdx-js__react](./m/mdx-js__react) | React implementation for MDX | mdx, markdown, react, jsx, remark, mdxast |
@@ -4805,6 +4886,7 @@
 | [mem-fs-editor](./m/mem-fs-editor) | File edition helpers working on top of mem-fs | - |
 | [memcached](./m/memcached) | A fully featured Memcached API client, supporting  | InnoDB memcached API, cache, client, cluster, failover, hashing, membase, memcache, memcached, nMemcached, nosql |
 | [memdown](./m/memdown) | An drop-in replacement for LevelDOWN that works in | level, leveldb, leveldown, levelup, memory |
+| [memize](./m/memize) | Unabashedly-barebones memoization library with an  | memoize, memoization, memoisation, cache |
 | [memjs](./m/memjs) | A memcache client for node using the binary protoc | cache, memcache, memcached, MemCachier |
 | [memoize-one](./m/memoize-one) | A memoization library which only remembers the lat | memoize, memoization, cache, performance |
 | [memoizee](./m/memoizee) | Memoize/cache function results | memoize, memoizer, cache, memoization, memo, memcached, hashing., storage, caching, memory, gc, weak, garbage, collector, async |
@@ -4945,6 +5027,7 @@
 | [modernizr](./m/modernizr) | Modernizr is a JavaScript library that detects HTM | modernizr, html5, css3, javascript, browser, feature detection |
 | [modesl](./m/modesl) | FreeSWITCH ESL Node.js Implementation | freeswitch, api, wrapper, esl, event, socket, library |
 | [modular-scale](./m/modular-scale) | Module for generating a modular scale. | modular, scale, typography, design, css |
+| [modularscale](./m/modularscale) | Calculate a value from a modular scale | modular, modular-scale, modularscale, scale, typography |
 | [module-alias](./m/module-alias) | Create aliases of directories and register custom  | extend, modules, node, path, resolve |
 | [module-deps](./m/module-deps) | walk the dependency graph to generate json output  | dependency, graph, browser, require, module, exports, json |
 | [moji](./m/moji) | 半角全角変換・特定文字抽出など日本語を便利に扱うJavaScriptライブラリ。 | 半角, 全角, kataカタカナ, 半角カナ, 変換 |
@@ -4996,6 +5079,7 @@
 | [morris_dot_js](./m/morris_dot_js) | Easy, pretty charts | - |
 | [mosca](./m/mosca) | MQTT broker as a module | mqtt, mqtt server, publish, subscribe, pubsub, rabbitmq, zeromq, 0mq, amqp, mosquitto, websocket |
 | [motion-scroll](./m/motion-scroll) | scroll to an element or a position with easing | scroll, element, easing, window |
+| [motion-sensors-polyfill](./m/motion-sensors-polyfill) | A polyfill for the motion sensors based on the W3C | - |
 | [motor-hat](./m/motor-hat) | Node Module to control Adafruits MotorHAT for the  | raspberry, pi, raspberrypi, motor, dc, stepper, servo, motorhat, hat |
 | [mousetrap](./m/mousetrap) | Simple library for handling keyboard shortcuts | keyboard, shortcuts, events |
 | [move-concurrently](./m/move-concurrently) | Promises of moves of files or directories with ren | move |
@@ -5051,14 +5135,18 @@
 | [musicmetadata](./m/musicmetadata) | Streaming music metadata parser for node and the b | id3, id3v1, id3v2, m4a, mp4, vorbis, ogg, flac, asf, wma, wmv, tags, tag |
 | [mustache](./m/mustache) | Logic-less {{mustache}} templates with JavaScript | mustache, template, templates, ejs |
 | [mustache-express](./m/mustache-express) | Use mustache, including partials, in Express 3 | - |
+| [mute-stream](./m/mute-stream) | Bytes go in, but they don't come out (when muted). | mute, stream, pipe |
 | [mutexify](./m/mutexify) | mutex lock for javascript | mutex, lock |
 | [mv](./m/mv) | fs.rename but works across devices. same as the un | mv, move, rename, device, recursive, folder |
+| [mvdan-sh](./m/mvdan-sh) | A shell parser and formatter (POSIX/Bash/mksh) | shell, bash, sh, parser, ast, syntax, posix, bash-parser |
 | [mysql](./m/mysql) | A node.js driver for mysql. It is written in JavaS | - |
 | [mysql-import](./m/mysql-import) | Import .sql into a MySQL database with Node. | nodejs, mysql, textfiles, import, sql |
 | [mysticatea__spy](./m/mysticatea__spy) | Just a spy library. | spy, test, testing |
+| [mz](./m/mz) | modernize node.js to current ECMAScript standards | promisify, promise, thenify, then, es6 |
 | [n-readlines](./n/n-readlines) | Read file line by line without buffering the whole | read, line, reader, linereader, readfile, linebyline, synchronous, sync, readline, readlines |
 | [n3](./n/n3) | Lightning fast, asynchronous, streaming Turtle / N | turtle, rdf, n3, streaming, asynchronous |
 | [naja](./n/naja) | Modern AJAX library for Nette Framework | nette, ajax, history |
+| [name-all-modules-plugin](./n/name-all-modules-plugin) | Names all remaining modules that do not get named  | - |
 | [named-regexp-groups](./n/named-regexp-groups) | Regular expressions with named capture groups and  | backreference, capture, expression, group, named, regex, regexp, regular |
 | [named-routes](./n/named-routes) | Named routes for node.js. Works with express and i | named, routes, i18n, router, reversable, express, web |
 | [nano](./n/nano) | The official CouchDB client for Node.js | couchdb, data, request, json, nosql, micro, nano, database |
@@ -5129,6 +5217,8 @@
 | [next-seo](./n/next-seo) | SEO plugin for Next.js projects | next.js, seo, react, node, ssr |
 | [next-server](./n/next-server) | - | - |
 | [next-tick](./n/next-tick) | Environment agnostic nextTick polyfill | nexttick, setImmediate, setTimeout, async |
+| [next__react-dev-overlay](./n/next__react-dev-overlay) | A development-only overlay for developing React ap | - |
+| [next__react-refresh-utils](./n/next__react-refresh-utils) | An experimental package providing utilities for Re | - |
 | [nextgen-events](./n/nextgen-events) | The next generation of events handling for javascr | events, async, emit, listener, context, series, serialize, namespace, proxy, network |
 | [ng-command](./n/ng-command) | - | - |
 | [ng-cordova](./n/ng-cordova) | - | - |
@@ -5258,9 +5348,11 @@
 | [node-statsd](./n/node-statsd) | node client for Etsy'd StatsD server | - |
 | [node-telegram-bot-api](./n/node-telegram-bot-api) | Telegram Bot API | telegram, telegram bot, telegram bot api, bot |
 | [node-timecodes](./n/node-timecodes) | Time and SMTPE Timecodes conversions | node, timecode, smtpe, time, conversion |
+| [node-uci](./n/node-uci) | Universal Chess Interface protocol implementation  | universal chess interface, uci, chess, engine |
 | [node-uuid](./n/node-uuid) | Rigorous implementation of RFC4122 (v1 and v4) UUI | guid, rfc4122, uuid |
 | [node-vagrant](./n/node-vagrant) | Node js wrapper for vagrant CLI - command line too | vagrant |
 | [node-validator](./n/node-validator) | A simple, extensible object property validator for | validator, validation, express, check, test, request-validation, koa, koajs |
+| [node-vault](./n/node-vault) | Javascript client for HashiCorp's Vault | vault, hashicorp, secrets, manage, client |
 | [node-waves](./n/node-waves) | Click effect insipired by Google Material Design | - |
 | [node-wget-promise](./n/node-wget-promise) | wget in Node, with Promise support | download, http, promise, request, wget |
 | [node-windows](./n/node-windows) | Support for Windows services, event logging, UAC,  | ngn, windows, service, daemon, logging, event, event logging, elevate, sudo, task |
@@ -5308,6 +5400,8 @@
 | [notp](./n/notp) | Node One Time Password library, supports HOTP, TOT | - |
 | [notyf](./n/notyf) | A dead simple, responsive, a11y, dependency-free,  | javascript, plugin, notification, plugin, notify |
 | [nouislider](./n/nouislider) | noUiSlider is a lightweight JavaScript range slide | - |
+| [nova-editor](./n/nova-editor) | - | - |
+| [nova-editor-node](./n/nova-editor-node) | - | - |
 | [novnc-core](./n/novnc-core) | noVNC core files for using with node | - |
 | [npm](./n/npm) | a package manager for JavaScript | install, modules, package manager, package.json |
 | [npm-cache-filename](./n/npm-cache-filename) | Given a cache folder and url, return the appropria | - |
@@ -5380,6 +5474,7 @@
 | [object-path](./o/object-path) | Access deep object properties using a path | deep, path, access, bean, get, property, dot, prop, object, obj, notation, segment, value, nested, key |
 | [object-path-immutable](./o/object-path-immutable) | Modify deep object properties without modifying th | deep, path, access, get, property, dot, prop, object, obj, notation, segment, value, nested, key, immutable, immutability, react, redux, state |
 | [object-refs](./o/object-refs) | Minimal bi-directional object references for JavaS | object, bidirectional, references, refs, ref, property, binding |
+| [object_dot_fromentries](./o/object_dot_fromentries) | ES proposal-spec-compliant Object.fromEntries shim | Object.fromEntries, Object.entries, Object.values, Object.keys, entries, values, ES7, ES8, ES2017, shim, object, keys, polyfill, es-shim API |
 | [object_dot_getownproperty](./o/object_dot_getownpropertydescriptors) | ES2017 spec-compliant shim for Object.getOwnProper | Object.getOwnPropertyDescriptors, descriptor, property descriptor, ES8, ES2017, shim, polyfill, getOwnPropertyDescriptor, es-shim API |
 | [object_dot_omit](./o/object_dot_omit) | Return a copy of an object excluding the given key | clear, delete, key, object, omit, property, remove, value |
 | [object_dot_pick](./o/object_dot_pick) | Returns a filtered copy of an object with only the | object, pick |
@@ -5400,6 +5495,7 @@
 | [octokit__request](./o/octokit__request) | Send parameterized requests to GitHub’s APIs with  | octokit, github, api, request |
 | [octokit__request-error](./o/octokit__request-error) | Error class for Octokit request errors | octokit, github, api, error |
 | [octokit__rest](./o/octokit__rest) | GitHub REST API client for Node.js | octokit, github, rest, api-client |
+| [octokit__types](./o/octokit__types) | Shared TypeScript definitions for Octokit projects | github, api, sdk, toolkit, typescript |
 | [odata](./o/odata) | o.js is a isomorphic Odata Javascript library to s | - |
 | [oembed-parser](./o/oembed-parser) | Get oEmbed data from given URL. | oembed, extractor, parser, util |
 | [ofe](./o/ofe) | Overwrite OnFatalError to produce heapdump | On Fatal Error, Fatal, Error, OnFatalError |
@@ -5454,9 +5550,11 @@
 | [opener](./o/opener) | Opens stuff, like webpages and files and executabl | - |
 | [openfin](./o/openfin) | - | - |
 | [openid](./o/openid) | OpenID 1.1/2.0 library for node.js | openid, auth, authentication, identity, identifier, relying, party, 1.1, 2.0, library |
+| [openid-client](./o/openid-client) | OpenID Connect Relying Party (RP, Client) implemen | auth, authentication, basic, certified, client, connect, dynamic, electron, hybrid, identity, implicit, oauth, oauth2, oidc, openid, passport, relying party, strategy |
 | [openjscad](./o/openjscad) | - | - |
 | [openlayers](./o/openlayers) | Build tools and sources for developing OpenLayers  | map, mapping, ol |
 | [openpgp](./o/openpgp) | OpenPGP.js is a Javascript implementation of the O | crypto, pgp, gpg, openpgp |
+| [openseadragon](./o/openseadragon) | Provides a smooth, zoomable user interface for HTM | image, zoom, pan, openseadragon, seadragon, deepzoom, dzi, iiif, osm, tms |
 | [openssi-websdk](./o/openssi-websdk) | A SDK for issuing and verifying digital credential | - |
 | [openstack-wrapper](./o/openstack-wrapper) | A simple js wrapper for the Openstack APIs | openstack, keystone, nova, neutron, glance |
 | [opentok](./o/opentok) | OpenTok server-side SDK | - |
@@ -5501,11 +5599,14 @@
 | [ouibounce](./o/ouibounce) | Show some HTML before visitors leave your site. | - |
 | [overlayscrollbars](./o/overlayscrollbars) | A javascript scrollbar plugin which hides native s | overlayscrollbars, custom, scrollbar, scrollbars, scroll, frontend |
 | [overload-protection](./o/overload-protection) | Load detection and shedding capabilities for http, | load shedding, overload protection, production monitoring, 503, Service Unavailable, Server Unavailable, HTTP 503, heavy load, load, protection, shedding, express, fastify, http, koa, restify |
+| [oversmash](./o/oversmash) | API wrapper for Blizzard's Overwatch player data | overwatch, gaming, api, client, scraper, oversmash |
 | [overwatch-api](./o/overwatch-api) | An Unoffical Overwatch API. | node, overwatch, api |
+| [ow](./o/ow) | Function argument validation for humans | type, types, check, checking, guard, guards, assert, assertion, predicate, predicates, is, validate, validation, utility, util, typeof, instanceof, object |
 | [owasp-password-strength-t](./o/owasp-password-strength-test) | A password-strength tester based upon the OWASP gu | security, password, owasp |
 | [owl_dot_carousel](./o/owl_dot_carousel) | Touch enabled jQuery plugin that lets you create b | responsive, carousel, owlcarousel, jQuery, plugin |
 | [owlcarousel](./o/owlcarousel) | Owl Carousel. Touch enabled jQuery plugin that let | - |
 | [p-all](./p/p-all) | Run promise-returning & async functions concurrent | promise, all, function, func, fn, limited, limit, control, rate, collection, iterable, iterator, fulfilled, async, await, promises, concurrent, concurrently, concurrency, parallel, bluebird |
+| [p-any](./p/p-any) | Wait for any promise to be fulfilled | promise, any, resolved, wait, collection, iterable, iterator, race, fulfilled, fastest, one, single, async, await, promises, bluebird |
 | [p-cancelable](./p/p-cancelable) | Create a promise that can be canceled | promise, cancelable, cancel, canceled, canceling, cancellable, cancellation, abort, abortable, aborting, cleanup, task, token, async, function, await, promises, bluebird |
 | [p-catch-if](./p/p-catch-if) | Conditional promise catch handler | promise, catch, if, conditional, cond, iff, chain, throw, error, reject, rejected, handler, filter, filtered, predicate, exception, thunk, function, async, await, promises, combinator, bluebird |
 | [p-debounce](./p/p-debounce) | Debounce promise-returning & async functions | promise, debounce, debounced, limit, limited, concurrency, throttle, throat, limited, interval, rate, batch, ratelimit, task, queue, async, await, promises, bluebird |
@@ -5537,6 +5638,7 @@
 | [p-retry](./p/p-retry) | Retry a promise-returning or async function | promise, retry, retries, operation, failed, rejected, try, exponential, backoff, attempt, async, await, promises, concurrently, concurrency, parallel, bluebird |
 | [p-series](./p/p-series) | Run promise-returning & async functions in series | promise, series, serial, sequence, sequential, ordered, task, tasks, array, collection, iterable, iterator, async, await, promises, bluebird |
 | [p-settle](./p/p-settle) | Settle promises concurrently and get their fulfill | promise, settle, settled, resolved, iterator, fulfill, reject, fulfilled, rejected, reflect, inspect, error, async, await, promises, concurrently, concurrency, parallel, bluebird |
+| [p-some](./p/p-some) | Wait for a specified number of promises to be fulf | promise, some, resolved, wait, collection, iterable, iterator, race, fulfilled, fastest, async, await, promises, bluebird |
 | [p-tap](./p/p-tap) | Tap into a promise chain without affecting its val | promise, tap, debug, log, then, catch, error, chain, pipeline, thunk, function, async, await, promises, bluebird |
 | [p-throttle](./p/p-throttle) | Throttle promise-returning & async functions | promise, throttle, throat, limit, limited, interval, rate, batch, ratelimit, queue, discard, async, await, promises, time, out, cancel, bluebird |
 | [p-time](./p/p-time) | Measure the time a promise takes to resolve | promise, time, timed, timing, timer, elapsed, measure, bench, resolve, execute |
@@ -5570,6 +5672,7 @@
 | [parameterize](./p/parameterize) | This repository adds node.js and npm support for p | - |
 | [parcel-bundler](./p/parcel-bundler) | Blazing fast, zero configuration web application b | - |
 | [parcel-env](./p/parcel-env) | - | - |
+| [parcel__watcher](./p/parcel__watcher) | A native C++ Node module for querying and subscrib | - |
 | [parchment](./p/parchment) | A document model for rich text editors | - |
 | [parent-package-json](./p/parent-package-json) | Find, read and parse the package.json of the paren | parent, package.json, find, search, parse, read |
 | [parents](./p/parents) | return all the parent directories for a directory | directory, parent, path, tree |
@@ -5613,6 +5716,7 @@
 | [parseurl](./p/parseurl) | parse a url with memoization | - |
 | [parsimmon](./p/parsimmon) | A monadic LL(infinity) parser combinator library | parsing, parse, parsers, parser combinators |
 | [pascal-case](./p/pascal-case) | Transform into a string of capitalized words witho | pascal, case, camel, capital, convert, transform, identifier, class |
+| [pascalcase](./p/pascalcase) | Convert a string to pascal-case. | camelcase, case, casing, pascal, pascal-case, pascal case, pascalcase, string, UpperCamelCase |
 | [passport](./p/passport) | Simple, unobtrusive authentication for Node.js. | express, connect, auth, authn, authentication |
 | [passport-anonymous](./p/passport-anonymous) | Anonymous authentication strategy for Passport. | passport, authn, authentication, anonymous |
 | [passport-auth0](./p/passport-auth0) | Auth0 platform authentication strategy for Passpor | - |
@@ -5678,6 +5782,8 @@
 | [pbkdf2](./p/pbkdf2) | This library provides the functionality of PBKDF2  | pbkdf2, kdf, salt, hash |
 | [pdf-fill-form](./p/pdf-fill-form) | Fill PDF forms and return rendered PDF in buffer.  | pdf, forms, poppler, qt5, cairo |
 | [pdf-image](./p/pdf-image) | Provides an interface to convert PDF's pages to pn | - |
+| [pdf-parse](./p/pdf-parse) | Pure javascript cross-platform module to extract t | pdf-parse, pdf-crawler, xpdf, pdf.js, pdfreader, pdf-extractor, pdf2json, j-pdfjson, pdf-parser, pdf-extract, pdf-extractor, pdf-to-text, pdf-text-extract, pdfjs, server side PDF parsing, pdf metadata |
+| [pdf-thumbnail](./p/pdf-thumbnail) | pdf-thumbnail creates a thumbnail of the first pag | - |
 | [pdf-viewer-reactjs](./p/pdf-viewer-reactjs) | Simple react PDF viewer component with controls ba | pdf, pdf viewer, rotate, rotate pdf, zoom, zoom pdf, react, reactjs |
 | [pdf2image](./p/pdf2image) | Converts a given pdf to the desired images | pdf, convert, image, imagemagick, pdf2image, pdf2img |
 | [pdfjs-dist](./p/pdfjs-dist) | Generic build of Mozilla's PDF.js library. | Mozilla, pdf, pdf.js |
@@ -5685,6 +5791,8 @@
 | [pdfmake](./p/pdfmake) | Client/server side PDF printing in pure JavaScript | pdf, javascript, printing, layout |
 | [pdfobject](./p/pdfobject) | An open-source standards-friendly JavaScript utili | pdf, pdfobject |
 | [pebblekitjs](./p/pebblekitjs) | - | - |
+| [peculiar__asn1-schema](./p/peculiar__asn1-schema) | Decorators for ASN.1 schemas building | asn, serialize, parse, convert, decorator |
+| [peculiar__json-schema](./p/peculiar__json-schema) | This package uses ES2015 decorators to simplify JS | json, stringify, serialize, parse, convert, decorator |
 | [peek-readable](./p/peek-readable) | Read and peek from a readable stream | readable, buffer, stream, read |
 | [peer-dial](./p/peer-dial) | Nodejs implementation of the Discovery and Launch  | ssdp, upnp, nsd, discovery, launch, dial, multiscreen, chromecast |
 | [peerjs](./p/peerjs) | PeerJS client | - |
@@ -5712,7 +5820,7 @@
 | [pg-packet-stream](./p/pg-packet-stream) | - | - |
 | [pg-pool](./p/pg-pool) | Connection pool for node-postgres | pg, postgres, pool, database |
 | [pg-promise](./p/pg-promise) | PostgreSQL interface for Node.js | pg, promise, postgres |
-| [pg-protocol](./p/pg-protocol) | - | - |
+| [pg-protocol](./p/pg-protocol) | The postgres client/server binary protocol, implem | - |
 | [pg-query-stream](./p/pg-query-stream) | Postgres query result returned as readable stream | postgres, pg, query, stream |
 | [pg-types](./p/pg-types) | Query result type converters for node-postgres | postgres, PostgreSQL, pg |
 | [pgwmodal](./p/pgwmodal) | Responsive Modal / Dialog window for jQuery, Zepto | modal, dialog, window, popup, alert, lightbox, responsive, mobile, jquery, jquery-plugin, zepto, angular, angularjs |
@@ -5735,13 +5843,15 @@
 | [photonui](./p/photonui) | A javascript framework to create user interfaces | - |
 | [photoswipe](./p/photoswipe) | JavaScript gallery | gallery, lightbox, photo, image, touch, swipe, zoom |
 | [php-serialize](./p/php-serialize) | PHP serialize/unserialize in Javascript | - |
-| [physijs](./p/physijs) | - | - |
+| [physical-cpu-count](./p/physical-cpu-count) | Provides the number of physical cores | os, cpu, cpus, length, physical, logical, cores |
+| [physijs](./p/physijs) | Physics plugin for Three.js | physijs, threejs |
 | [pi-camera](./p/pi-camera) | A very lightweight promise based Node.js wrapper f | Raspberry, Pi, Camera, Picture, Photo, Video, raspicam, raspistill, raspivid, picamera, pi-camera |
 | [pi-spi](./p/pi-spi) | Simple async SPI library for Raspberry Pi | raspi, spi |
 | [pica](./p/pica) | High quality image resize in browser. | resize, scale, image, lanczos, canvas |
 | [pick-deep](./p/pick-deep) | Creates an object composed of the picked object pr | obj, object, prop, property, dot, path, pick, deep, pickDeep, pick-deep, access, notation, dotty, key, nested, paths, properties, props, segment, value, values, custom, separator, small, fast |
 | [pick-weight](./p/pick-weight) | Returns a single item from an array with relative  | pick, item, weight, odds, random, randomly, randomize, chance, test, dice, mock |
 | [pickadate](./p/pickadate) | The composable date & time picker. | date, time, picker, input, responsive |
+| [picomatch](./p/picomatch) | Blazing fast and accurate glob matcher written in  | glob, match, picomatch |
 | [picturefill](./p/picturefill) | A responsive image polyfill. | picturefill, srcset, picture, responsive, responsive images |
 | [pid-from-port](./p/pid-from-port) | Get PID from a port | get, pid, netstat, port |
 | [pidusage](./p/pidusage) | Cross-platform process cpu % and memory usage of a | pid, usage, ps, cpu, memory, proc |
@@ -5759,6 +5869,7 @@
 | [pino-std-serializers](./p/pino-std-serializers) | A collection of standard object serializers for Pi | pino, logging |
 | [pinterest-sdk](./p/pinterest-sdk) | - | - |
 | [pinyin](./p/pinyin) | 汉语拼音转换工具。 | 拼音, 汉语, 汉字, 中文, Pinyin |
+| [pinyin-engine](./p/pinyin-engine) | 小巧高效的拼音匹配引擎 | pinyin |
 | [pirates](./p/pirates) | Properly hijack require | - |
 | [piwik-tracker](./p/piwik-tracker) | A wrapper for the Piwik tracking HTTP API | piwik, analytics, tracking |
 | [pixelmatch](./p/pixelmatch) | The smallest and fastest pixel-level image compari | image, comparison, diff |
@@ -5791,6 +5902,7 @@
 | [plur](./p/plur) | Pluralize a word | plural, plurals, pluralize, singular, count, word, string, irregular, noun, nouns |
 | [pluralize](./p/pluralize) | Pluralize and singularize any word | plural, plurals, pluralize, singular, singularize, inflection |
 | [plurals-cldr](./p/plurals-cldr) | Plurals suport, generated from CLDR. | i18n, l10n, plural, plurals, pluralize, pluralizer, clrd, ldml |
+| [pmmmwh__react-refresh-web](./p/pmmmwh__react-refresh-webpack-plugin) | An **EXPERIMENTAL** Webpack plugin to enable "Fast | react, javascript, webpack, refresh, hmr, hotreload, livereload, live, edit, hot, reload |
 | [png-async](./p/png-async) | A simple and non-blocking PNG encoder / decoder. | png, stream, async, non-blocking |
 | [png-img](./p/png-img) | PNG Image | - |
 | [png_dot_js](./p/png_dot_js) | A PNG decoder fully written in JavaScript | - |
@@ -5804,6 +5916,7 @@
 | [point-in-polygon](./p/point-in-polygon) | determine if a point is inside a polygon with a ra | point, polygon, inside |
 | [poker-evaluator](./p/poker-evaluator) | A library to evaluate 3, 5 or 7 card poker hands | poker, games |
 | [polished](./p/polished) | A lightweight toolset for writing styles in Javasc | styled-components, polished, emotion, glamor, css-in-js, inline-styles, react, flow, typescript |
+| [polka](./p/polka) | A micro web server so fast, it'll make you dance | - |
 | [pollyjs__adapter](./p/pollyjs__adapter) | Extendable base adapter class used by @pollyjs | polly, pollyjs, adapter |
 | [pollyjs__adapter-fetch](./p/pollyjs__adapter-fetch) | Fetch adapter for @pollyjs | polly, pollyjs, record, replay, fetch, adapter |
 | [pollyjs__adapter-node-htt](./p/pollyjs__adapter-node-http) | Node HTTP adapter for @pollyjs | polly, pollyjs, record, replay, http, adapter |
@@ -5839,6 +5952,7 @@
 | [postcss](./p/postcss) | Tool for transforming styles with JS plugins | css, postcss, rework, preprocessor, parser, source map, transform, manipulation, transpiler |
 | [postcss-calc](./p/postcss-calc) | PostCSS plugin to reduce calc() | css, postcss, postcss-plugin, calculation, calc |
 | [postcss-custom-properties](./p/postcss-custom-properties) | Use Custom Properties Queries in CSS | postcss, css, postcss-plugin, custom, properties, declarations, variables, vars, w3c, csswg, specification |
+| [postcss-flexbugs-fixes](./p/postcss-flexbugs-fixes) | PostCSS plugin This project tries to fix all of fl | postcss, css, postcss-plugin, flexbugs, flexbox, flex |
 | [postcss-icss-values](./p/postcss-icss-values) | PostCSS plugin for CSS Modules to pass arbitrary v | css, modules, postcss |
 | [postcss-import](./p/postcss-import) | PostCSS plugin to import CSS files | css, postcss, postcss-plugin, import, node modules, npm |
 | [postcss-load-config](./p/postcss-load-config) | Autoload Config for PostCSS | postcss, postcssrc, postcss.config.js |
@@ -5849,10 +5963,12 @@
 | [postcss-modules-values](./p/postcss-modules-values) | PostCSS plugin for CSS Modules to pass arbitrary v | css, modules, postcss |
 | [postcss-nested](./p/postcss-nested) | PostCSS plugin to unwrap nested rules like how Sas | postcss, css, postcss-plugin, sass, nested |
 | [postcss-reporter](./p/postcss-reporter) | Log PostCSS messages in the console | - |
+| [postcss-safe-parser](./p/postcss-safe-parser) | Fault-tolerant CSS parser for PostCSS | css, postcss, postcss-syntax, parser, fault tolerant |
 | [postcss-selector-parser](./p/postcss-selector-parser) | > Selector parser with built in methods for workin | - |
 | [postcss-url](./p/postcss-url) | PostCSS plugin to rebase or inline on url(). | css, postcss, postcss-plugin, url, rebase, inline, base64, assets |
 | [postcss-value-parser](./p/postcss-value-parser) | Transforms css values and at-rule params into the  | postcss, value, parser |
 | [poster-image](./p/poster-image) | Capture preview image from a video file | js, capture, frame, poster, screenshot, video, video poster |
+| [posterus](./p/posterus) | Composable async primitives (futures) with cancela | future, promise, async, asynchronous, composable, cancelable, abortable, scheduling, coroutine, fiber, async, await |
 | [postgres-array](./p/postgres-array) | Parse postgres array columns | postgres, array, parser |
 | [postgres-interval](./p/postgres-interval) | Parse Postgres interval columns | postgres, interval, parser |
 | [postlight__mercury-parser](./p/postlight__mercury-parser) | Mercury transforms web pages into clean text. Publ | mercury, parser, reader, web, content |
@@ -5998,6 +6114,7 @@
 | [protocol-buffers-schema](./p/protocol-buffers-schema) | No nonsense protocol buffers schema parser written | protobuf, protocol, buffers, schema, parser, parse |
 | [protocols](./p/protocols) | Get the protocols of an input url. | protocols, protocol, url, parse |
 | [proton-native](./p/proton-native) | React Native for the desktop, cross compatible | - |
+| [protoo-client](./p/protoo-client) | protoo JavaScript client module | nodejs, browser, websocket |
 | [protoo-server](./p/protoo-server) | protoo Node.js server module | nodejs, websocket |
 | [protractor](./p/protractor) | Webdriver E2E test wrapper for Angular. | angular, test, testing, webdriver, webdriverjs, selenium |
 | [protractor-browser-logs](./p/protractor-browser-logs) | Provides tools for asserting browser logs inside p | angular, test, testing, webdriver, webdriverjs, selenium, protractor, protractor-plugin, browser, logs, console |
@@ -6089,8 +6206,10 @@
 | [random-int](./r/random-int) | Generate a random integer | rand, random, randomize, int, integer, number, max, min, math, generate, generator |
 | [random-item](./r/random-item) | Get a random item from an array | random, randomize, math, array, item, element, pick, select |
 | [random-js](./r/random-js) | A mathematically correct random number generator l | random |
+| [random-name](./r/random-name) | return random last names. | - |
 | [random-normal](./r/random-normal) | Return a normally-distributed random variate. | normally, distributed, variate, random, randomly, randomize, chance, test, dice, mock |
 | [random-number](./r/random-number) | Generate pseudo-randum numbers | random-number, random, random-integer |
+| [random-number-csprng](./r/random-number-csprng) | A cryptographically secure generator for random nu | csprng, random, number, crypto |
 | [random-obj-key](./r/random-obj-key) | Get a random key from an object | random, randomize, math, object, key, pick, select, choice |
 | [random-obj-prop](./r/random-obj-prop) | Get a random property from an object | random, randomize, math, object, property, prop, pick, select, choice |
 | [random-seed](./r/random-seed) | GRC's UHE PRNG in node (Ultra-High Entropy Pseudo- | random, number, generator, seed, uhe, prng |
@@ -6137,6 +6256,7 @@
 | [rc-dialog](./r/rc-dialog) | dialog ui component for react | react, react-component, react-dialog, dialog, ui |
 | [rc-drawer](./r/rc-drawer) | drawer component for react | react, react-component, react-drawer, drawer, drawer-menu, rc-drawer-menu, react-drawer-menu, animation, drawer-motion, drawer-animation |
 | [rc-dropdown](./r/rc-dropdown) | dropdown ui component for react | react, react-dropdown |
+| [rc-easyui](./r/rc-easyui) | The EasyUI for React | react, easyui |
 | [rc-field-form](./r/rc-field-form) | React Form Component | react, react-component, react-form, form |
 | [rc-gesture](./r/rc-gesture) | Support gesture for react component | react, react-component, react-gesture, gesture, touch |
 | [rc-mentions](./r/rc-mentions) | React Mentions | react, react-component, react-mentions, mentions |
@@ -6145,6 +6265,7 @@
 | [rc-pagination](./r/rc-pagination) | pagination ui component for react | react, react-component, react-pagination, pagination |
 | [rc-picker](./r/rc-picker) | React date & time picker | react, react-component, react-picker |
 | [rc-progress](./r/rc-progress) | progress ui component for react | react, react-component, react-progress, progress |
+| [rc-rate](./r/rc-rate) | React Star Rate Component | react, react-component, react-rate, rate |
 | [rc-resize-observer](./r/rc-resize-observer) | Resize observer for React | react, react-component, react-resize-observer, resize-observer |
 | [rc-select](./r/rc-select) | React Select | react, react-component, react-select, select |
 | [rc-slider](./r/rc-slider) | Slider UI component for React | react, react-component, react-slider, slider, input, range |
@@ -6175,7 +6296,6 @@
 | [rdfjs__serializer-jsonld](./r/rdfjs__serializer-jsonld) | JSON-LD serializer that implements the RDFJS Sink  | rdf, rdfjs, serializer, json-ld |
 | [rdfjs__serializer-jsonld-](./r/rdfjs__serializer-jsonld-ext) | JSON-LD serializer that implements the RDFJS Sink  | rdf, rdfjs, serializer, json-ld |
 | [rdfjs__sink-map](./r/rdfjs__sink-map) | Map for RDFJS Sinks including shortcut methods | map, rdf, rdfjs, sink |
-| [rdfjs__term-set](./r/rdfjs__term-set) | Set for RDFJS Terms | rdf, rdfjs, set, term |
 | [rdfjs__to-ntriples](./r/rdfjs__to-ntriples) | Converts RDFJS Terms and Quads to N-Triple strings | rdf, rdfjs, ntriples, string |
 | [rdflib](./r/rdflib) | an RDF library for node.js. Suitable for client an | linkeddata, linked data, rdf, rdfa, turtle, semantic, web, read-write web |
 | [re-base](./r/re-base) | A Relay inspired library for building React.js + F | - |
@@ -6323,7 +6443,6 @@
 | [react-email-editor](./r/react-email-editor) | Unlayer's Email Editor Component for React.js | react-component |
 | [react-event-listener](./r/react-event-listener) | A React component that allow to bind events on the | react, event, listener, binding |
 | [react-fa](./r/react-fa) | Font Awesome icons as React components | react, react-component, font-awesome, icons |
-| [react-facade](./r/react-facade) | - | - |
 | [react-facebook-login](./r/react-facebook-login) | A Component React for Facebook Login | react, reactjs, react-component, facebook-login, react-facebook-login |
 | [react-facebook-login-comp](./r/react-facebook-login-component) | React Component that lets you instantly login thro | React, Facebook, Login, Auth, oauth, component |
 | [react-fade-in](./r/react-fade-in) | Super-easy fade-in animation for react children | - |
@@ -6351,6 +6470,8 @@
 | [react-ga](./r/react-ga) | React Google Analytics Module. | React, GA, Google Analytics, Universal Analytics |
 | [react-gamepad](./r/react-gamepad) | A Gamepad handler as a React component | - |
 | [react-gateway](./r/react-gateway) | Render React DOM into a new context | react, gateway, portal, modal, dialog |
+| [react-gauge-chart](./r/react-gauge-chart) | React component for displaying a gauge chart, usin | visualization, react, gauge chart, speedometer |
+| [react-geocode](./r/react-geocode) | A module to transform a description of a location  | google, geocode, geocoder, geocoding |
 | [react-geosuggest](./r/react-geosuggest) | A React autosuggest for the Google Maps Places API | react, react-component, google, autosuggest, places |
 | [react-github-button](./r/react-github-button) | Unofficial GitHub buttons in React. | react, github, button |
 | [react-global-configuratio](./r/react-global-configuration) | For setting a global config object managed as a re | react, global, configurator |
@@ -6387,6 +6508,7 @@
 | [react-image-crop](./r/react-image-crop) | A responsive image cropping tool for React | react, reactjs, image, crop, react-component |
 | [react-image-fallback](./r/react-image-fallback) | if your image doesn't exist, fallback onto another | react, image, fallback, preload, preloader, reactjs |
 | [react-image-gallery](./r/react-image-gallery) | React carousel image gallery component with thumbn | react, carousel, react-component, react-carousel, react-slideshow, react-gallery, react carousel, react slideshow, react gallery, image gallery, image slider, slideshow, gallery, slider |
+| [react-image-magnifiers](./r/react-image-magnifiers) | A collection of responsive, image magnifying React | react, image, photo, picture, magnify, magnifying glass, magnifier, zoom, enlarge, responsive, touch, ecommerce, product |
 | [react-image-magnify](./r/react-image-magnify) | A responsive image zoom component designed for sho | react, image, photo, picture, zoom, enlarge, magnify, expand, lens, detail, ecommerce, store, shopping, product |
 | [react-imageloader](./r/react-imageloader) | A React component for wrangling image loading | react-component, react, loader, component |
 | [react-images](./r/react-images) | A mobile-friendly, highly customizable, carousel c | react, images, carousel, lightbox, gallery, modal |
@@ -6411,7 +6533,6 @@
 | [react-intl-redux](./r/react-intl-redux) | Redux binding for React Intl | react, reactjs, react-intl, react-redux, intl, i18n, redux |
 | [react-is](./r/react-is) | Brand checking of React Elements. | react |
 | [react-is-deprecated](./r/react-is-deprecated) | Adds an isDeprecated method to the React.PropTypes | react, propTypes, isDeprecated |
-| [react-japgolly-facade](./r/react-japgolly-facade) | - | - |
 | [react-joyride](./r/react-joyride) | Create guided tours for your apps | react, react-component, tooltips, joyride, walkthroughs, tour |
 | [react-js-pagination](./r/react-js-pagination) | Simple, easy to use component for pagination. Comp | react, reactjs, pagination, paginator, bootstrap, reload, webpack, babel, react-transform, react-component |
 | [react-json](./r/react-json) | A JSON editor packed as a React.js component and t | react, forms, json |
@@ -6437,6 +6558,7 @@
 | [react-loadable-visibility](./r/react-loadable-visibility) | A wrapper around react-loadable for elements that  | - |
 | [react-loader](./r/react-loader) | React component that displays a spinner via spin.j | react, component, react-component, loader, spinner, spin, spinjs, spin.js |
 | [react-loader-spinner](./r/react-loader-spinner) | react-spinner-loader provides simple React.js spin | react-component, loader, spinner, react |
+| [react-loading-indicator](./r/react-loading-indicator) | A loading indicator written purely in React that u | react, component, loading-indicator |
 | [react-localization](./r/react-localization) | Simple module to localize the React interface usin | react-component, react, localization, internationalization, javascript, typescript, react, react-component |
 | [react-lottie](./r/react-lottie) | lottie animation view for React | - |
 | [react-mailchimp-subscribe](./r/react-mailchimp-subscribe) | react-mailchimp-subscribe React component | react-component |
@@ -6513,6 +6635,7 @@
 | [react-native-google-analy](./r/react-native-google-analytics-bridge) | React Native bridge for using native Google Analyt | react, native, google, analytics, tracking, native, bridge, events, screen, hits, react-native, ios, android |
 | [react-native-google-signi](./r/react-native-google-signin) | Google Signin for your react native applications | react-component, react-native, google signin, google login, google+, oauth, oauth2, ios, android |
 | [react-native-honeywell-sc](./r/react-native-honeywell-scanner) | A barcode scanner for Honeywell handheld devices l | honeywell, barcode, scanner |
+| [react-native-html-to-pdf](./r/react-native-html-to-pdf) | Convert html strings to PDF documents using React  | html, pdf, react-native |
 | [react-native-htmlview](./r/react-native-htmlview) | A component which renders HTML content as native v | react, html, react-native, react-component, react-native-component, mobile, ui |
 | [react-native-huawei-prote](./r/react-native-huawei-protected-apps) | Customized dialog alerting the user of the battery | react-native, react-component, android, Huawei, Protected, apps |
 | [react-native-i18n](./r/react-native-i18n) | Provide I18n to your React Native application | react-native, react-component, ios, i18n |
@@ -6532,6 +6655,7 @@
 | [react-native-material-dro](./r/react-native-material-dropdown) | Material dropdown | react, react-component, react-native, ios, android, material, dropdown, spinner, select |
 | [react-native-material-kit](./r/react-native-material-kit) | Bringing Material Design to React Native | react, native, react-component, react-native, react-native-component, ios, android, material design, MaterialKit |
 | [react-native-material-men](./r/react-native-material-menu) | Material Menu for React Native | react-native, react, menu, material-menu, react-component, material, dropdown |
+| [react-native-material-rip](./r/react-native-material-ripple) | Base component for touchable elements | react, react-component, react-native, ios, android, ripple, material |
 | [react-native-material-tex](./r/react-native-material-textfield) | Material textfield | react, react-component, react-native, ios, android, material, input, textinput, field, textfield, floating, label |
 | [react-native-material-ui](./r/react-native-material-ui) | React Native Material Design Components | react-native, material, design, ui, components, react-component, android |
 | [react-native-mauron85-bac](./r/react-native-mauron85-background-geolocation) | optimized background location tracking | gps, geolocation, position, location, tracking, background, react, react-native, react-component, android, ios |
@@ -6553,6 +6677,7 @@
 | [react-native-platform-tou](./r/react-native-platform-touchable) | Uses TouchableNativeFeedback where possible and fa | react-native, react |
 | [react-native-popup-dialog](./r/react-native-popup-dialog) | React Native Popup Dialog for IOS & Android. | dialog, popup, react dialog, react-native, react-native-popup-dialog, react-native-dialog, react native dialog, popup-dialog, react-component, ios, android |
 | [react-native-privacy-snap](./r/react-native-privacy-snapshot) | Obscure passwords and other sensitive personal inf | react-native, react-component, privacy, snapshot, secure |
+| [react-native-pull-to-refr](./r/react-native-pull-to-refresh) | The Pull-To-Refresh ScrollView component for React | react-component, react-native, ios, android, pull-to-refresh, scroll-view |
 | [react-native-push-notific](./r/react-native-push-notification) | React Native Local and Remote Notifications | react-component, react-native, ios, android, notifications, push, apns, gcm |
 | [react-native-qrcode](./r/react-native-qrcode) | react-native qrocode generator | react-native, qrcode |
 | [react-native-ratings](./r/react-native-ratings) | The standard Ratings component for React Native | react-native, reactjs, reactnative, gestures, ios, stars, android, ratings, ui-components |
@@ -6571,6 +6696,7 @@
 | [react-native-share](./r/react-native-share) | Social share, sending simple data to other apps. | react-native, android, ios, windows, bridge, react, share |
 | [react-native-share-extens](./r/react-native-share-extension) | share extension using react-native for both ios an | react-component, react-native, share-extension |
 | [react-native-share-menu](./r/react-native-share-menu) | Adds the app to share menu, so it can be launched  | react-component, react-native, android, ios, share |
+| [react-native-side-menu](./r/react-native-side-menu) | Simple customizable component to create side menu | react-native, react-component, ios, sidebar |
 | [react-native-signature-ca](./r/react-native-signature-capture) | Lets users sign their signatures | react-component, react-native, ios, signature |
 | [react-native-snackbar-com](./r/react-native-snackbar-component) | A snackbar component for Android and iOS | snackbar, material, design, android, ios, notifications, react-native |
 | [react-native-snap-carouse](./r/react-native-snap-carousel) | Swiper/carousel component for React Native with pr | react, native, carousel, slider, swiper, flatlist, scrollview, parallax, images, infinite, scroll, scrolling, items, edge, snap, card, cards, stack, deck, tinder, android, ios, snapping, component, rtl |
@@ -6589,6 +6715,7 @@
 | [react-native-tab-view](./r/react-native-tab-view) | Tab view component for React Native | react-native-component, react-component, react-native, ios, android, tab, swipe, scrollable, coverflow |
 | [react-native-text-input-m](./r/react-native-text-input-mask) | Text input mask for React Native. | react, native, mask, text input, android, ios |
 | [react-native-toast-native](./r/react-native-toast-native) | Native toast for react-native. In Android it's jus | react-native, native, toast |
+| [react-native-torch](./r/react-native-torch) | Torch/flashlight for react-native | react, react-component, react-native, ios, android, device, torch, flashlight |
 | [react-native-touch-id](./r/react-native-touch-id) | React Native authentication with the native Touch  | react-native, react, native, touch-id, react-component, react-native-component, authentication, auth, authenticate, mobile |
 | [react-native-uuid](./r/react-native-uuid) | Rigorous implementation of RFC4122 (v1 and v4) UUI | react-native, react, iOS, Android, guid, rfc4122, uuid |
 | [react-native-uuid-generat](./r/react-native-uuid-generator) | A simple wrapper around the native iOS and Android | react-native, uuid |
@@ -6609,6 +6736,7 @@
 | [react-no-ssr](./r/react-no-ssr) | React component to wrap non SSR components. | - |
 | [react-notification-system](./r/react-notification-system) | A React Notification System fully customized | react, notification, notification system, component, react component, react-component |
 | [react-notification-system](./r/react-notification-system-redux) | react-notification-system-redux | react-notification-system, redux |
+| [react-notifications-compo](./r/react-notifications-component) | React component for creating notifications on the  | react, react-component, react-notifications, notifications-component, toast-notifications, toast-component, notifications |
 | [react-notify-toast](./r/react-notify-toast) | Toast notifications for React.js | react, toast, notification, component, notify |
 | [react-numeric-input](./r/react-numeric-input) | Number input component that can replace the native | react, input, number, numeric, widget, component |
 | [react-offcanvas](./r/react-offcanvas) | Off-canvas menus for React. | - |
@@ -6645,7 +6773,6 @@
 | [react-reconciler](./r/react-reconciler) | React package for creating custom renderers. | react |
 | [react-redux](./r/react-redux) | Official React bindings for Redux | react, reactjs, redux |
 | [react-redux-epic](./r/react-redux-epic) | Server side rendering for Redux-Observable | react, redux, redux-observable, rx, rxjs, observables, middleware, server-sider-rendering, ssr |
-| [react-redux-facade](./r/react-redux-facade) | - | - |
 | [react-redux-i18n](./r/react-redux-i18n) | A binding library for redux to react-i18nify | - |
 | [react-redux-toastr](./r/react-redux-toastr) | react-redux-toastr is a React toastr message imple | React.js, React, Redux, react, redux toastr, react-redux-toastr, react-component, toastr, alert, toast, message, popup, react toastr, react redux toastr, react toastr redux, react confirm, react alert, avatar, toastr profile |
 | [react-relay](./r/react-relay) | A framework for building GraphQL-driven React appl | graphql, relay, react |
@@ -6662,7 +6789,6 @@
 | [react-router-guard](./r/react-router-guard) | React Router Guard | react, router, guard, react authentication router, react router auth, react router code splitting, react router lazy |
 | [react-router-hash-link](./r/react-router-hash-link) | Hash link scroll functionality for React Router v4 | react, react-router, link, hash-link, scroll |
 | [react-router-native](./r/react-router-native) | React Native bindings for React Router | - |
-| [react-router-native-slink](./r/react-router-native-slinky-facade) | - | - |
 | [react-router-navigation](./r/react-router-navigation) | Declarative routing for  | react-native, ios, android, router, navigation, navigator |
 | [react-router-navigation-c](./r/react-router-navigation-core) | - | web, react-native, ios, android, router, navigation, navigator |
 | [react-router-param-link](./r/react-router-param-link) | A wrapper around react-router's Link that allows p | link-component, component, parameter, dynamic, router, react |
@@ -6691,7 +6817,6 @@
 | [react-sketchapp](./r/react-sketchapp) | A React renderer for Sketch.app | sketch, sketchapp, react, reactjs, renderer |
 | [react-slick](./r/react-slick) | React port of slick carousel | slick, carousel, Image slider, orbit, slider, react-component |
 | [react-slider](./r/react-slider) | Slider component for React | react-component, react, slider, component |
-| [react-slinky-facade](./r/react-slinky-facade) | - | - |
 | [react-smooth-scrollbar](./r/react-smooth-scrollbar) | React implementation of smooth-scrollbar | react, smooth, scroll, performance, scrollbar |
 | [react-sortable-hoc](./r/react-sortable-hoc) | Set of higher-order components to turn any list in | react, reactjs, react-component, sortable, sortable-list, list, sortable list, smooth, animated, hoc, higher-order, component |
 | [react-sortable-pane](./r/react-sortable-pane) | - | React |
@@ -6713,12 +6838,16 @@
 | [react-stripe-elements](./r/react-stripe-elements) | React components for Stripe.js and Stripe Elements | - |
 | [react-svg](./r/react-svg) | A React component that injects SVG into the DOM. | dom, html, images, img, javascript, react, scalable vector graphics, svg, svginjector, typescript |
 | [react-svg-inline](./r/react-svg-inline) | A React component to inline your SVGs. | react, svg, icon, inline |
+| [react-svg-map](./r/react-svg-map) | A set of React.js components to display an interac | react, component, svg, interactive, map, checkbox, radiobutton |
 | [react-svg-pan-zoom](./r/react-svg-pan-zoom) | A React component that adds pan and zoom features  | react, react-component, svg, pan, zoom, react, ui, user, interface, component, web-components |
+| [react-svg-pan-zoom-loader](./r/react-svg-pan-zoom-loader) | This package allows us to load a SVG file remotely | react-svg-pan-zoom, svg-file, reactjs svg file |
 | [react-swf](./r/react-swf) | Shockwave Flash Player component for React | react, react-component, component, swf, shockwave, flash, player, object, embed |
 | [react-swipe](./r/react-swipe) | Brad Birdsall's Swipe.js as a React component | react, component, carousel, swipe, react-component |
 | [react-swipeable](./r/react-swipeable) | React Swipe event handler component & hook | react swipe, react touch, react hook, touch, swipe, swipeable, react, hook, react-component |
 | [react-swipeable-views](./r/react-swipeable-views) | A React component for swipeable views | react, component, swipe, swipeable |
+| [react-swipeable-views-cor](./r/react-swipeable-views-core) | react-swipeable-views core modules | - |
 | [react-swipeable-views-uti](./r/react-swipeable-views-utils) | react-swipeable-views utility modules | - |
+| [react-switch-case](./r/react-switch-case) | Little switch-case React component to render neste | react, react-component, state, ui |
 | [react-syntax-highlighter](./r/react-syntax-highlighter) | syntax highlighting component for react with prism | react, syntax, lowlight, highlighting, ast |
 | [react-table](./r/react-table) | Hooks for building lightweight, fast and extendabl | react, table, react-table, datagrid |
 | [react-table-filter](./r/react-table-filter) | > Module creates Excel like Column Filters for Tab | react, reactjs, react-table, react-table-filter, tablefilter, react-component, react-filter-table |
@@ -6731,6 +6860,7 @@
 | [react-tap-event-plugin](./r/react-tap-event-plugin) | Facebook's TapEventPlugin, temporarily available o | TapEventPlugin, react, touch, delay, 300ms, react-tap-event-plugin |
 | [react-test-renderer](./r/react-test-renderer) | React package for snapshot testing. | react, react-native, react-testing |
 | [react-tether](./r/react-tether) | Drop content anywhere on the page. | react, react-tether, tether, component, drop |
+| [react-text-marquee](./r/react-text-marquee) | A  component for react. | - |
 | [react-text-mask](./r/react-text-mask) | React input component that accepts mask pattern | react, react-component, text mask, input mask, string mask, input formatting, text formatting, string formatting |
 | [react-text-truncate](./r/react-text-truncate) | Truncate text for React.js | react, react-component, text, truncate |
 | [react-textarea-autosize](./r/react-textarea-autosize) | textarea component for React which grows with cont | autosize, grow, react, react-component, textarea |
@@ -6890,10 +7020,12 @@
 | [redux-storage](./r/redux-storage) | Persistence layer for redux with flexible backends | redux, redux-middleware, fsa, flux-standard-action, flux, immutable, persistent, data, localstorage |
 | [redux-storage-engine-jsur](./r/redux-storage-engine-jsurl) | jsurl engine for redux-store. Store your state in  | redux, redux-storage, redux-storage-engine, jsurl |
 | [redux-storage-engine-loca](./r/redux-storage-engine-localstorage) | window.localStorage engine for redux-storage | redux, redux-storage, redux-storage-engine, localStorage |
+| [redux-subscriber](./r/redux-subscriber) | Subscribe to changes in any part of redux state | redux, store, state, subscribe, subscriber, watch, watcher, observe, observer, react |
 | [redux-test-utils](./r/redux-test-utils) | Test utils to simplify testing of containers in re | redux, store, test |
 | [redux-testkit](./r/redux-testkit) | Complete and opinionated testkit for testing Redux | - |
 | [redux-thunk](./r/redux-thunk) | Thunk middleware for Redux. | redux, thunk, middleware, redux-middleware, flux |
 | [redux-ui](./r/redux-ui) | UI state management for Redux and React | react-component, redux, redux-ui, ui |
+| [redux-watch](./r/redux-watch) | Watch Redux state for changes. | redux, watch, observe, monitor, notify, state, observer, watcher, react |
 | [ref](./r/ref) | Turn Buffer instances into "pointers" | native, buffer, extensions, c++, pointer, reference, dereference, type, int, long, float, double, byte, 64 |
 | [ref-array](./r/ref-array) | Create C "array" instances on top of Buffers | array, ref |
 | [ref-array-di](./r/ref-array-di) | Create C "array" instances on top of Buffers | array, ref |
@@ -6981,6 +7113,7 @@
 | [restling](./r/restling) | Restling is a lightweight Node.js module for build | resquest, http, async, asynchronous, promise, restler, rest, parallel, bluebird |
 | [restore-cursor](./r/restore-cursor) | Gracefully restore the CLI cursor on exit | exit, quit, process, graceful, shutdown, sigterm, sigint, terminate, kill, stop, cli, cursor, ansi, show, term, terminal, console, tty, shell, command-line |
 | [resumablejs](./r/resumablejs) | A JavaScript library for providing multiple simult | html5, file, upload |
+| [rethinkdb](./r/rethinkdb) | This package provides the JavaScript driver librar | database, NoSQL, reql, query language |
 | [retinajs](./r/retinajs) | - | retina, images, @2x, @3x, retina.js |
 | [retry](./r/retry) | Abstraction for exponential and custom retry strat | - |
 | [retry-as-promised](./r/retry-as-promised) | Retry a failed promise | retry, promise, bluebird |
@@ -7076,6 +7209,9 @@
 | [rox-node](./r/rox-node) | Rollout.io ROX JS SDK Node | feature-flag, feature-flags, remote-configuration, remote-variable, rollout, rox, flags, flag, configuration, remote-control, rollout.io |
 | [rox-react-native](./r/rox-react-native) | Rollout.io ROX JS SDK Client | feature-flag, feature-flags, remote-configuration, remote-variable, rollout, rox, flags, flag, configuration, remote-control, rollout.io |
 | [royalslider](./r/royalslider) | - | - |
+| [rpi-gpio](./r/rpi-gpio) | Control Raspberry Pi GPIO pins with node.js | - |
+| [rpio](./r/rpio) | High performance GPIO/i2c/PWM/SPI module for Raspb | bcm2835, gpio, gpiomem, i2c, mmap, pi, pwm, raspberry, raspberrypi, raspberry pi, rpi, spi |
+| [rr-notifications](./r/rr-notifications) | Flexible react notification system | react, styled-components, notifications |
 | [rrc](./r/rrc) | React Router v4 helper components | react-router, context, component |
 | [rrule](./r/rrule) | JavaScript library for working with recurrence rul | dates, recurrences, calendar, icalendar, rfc |
 | [rsmq](./r/rsmq) | A really simple message queue based on Redis | queue, messagequeue, jobs, message-queue, redis |
@@ -7203,6 +7339,7 @@
 | [scroll-to-element](./s/scroll-to-element) | Smooth scrolling to an element via selector or nod | animate, scroll, tween, smooth |
 | [scrollbooster](./s/scrollbooster) | Enjoyable content drag-to-scroll library | drag, draggable, scroll, scrollable, UI, microlibrary |
 | [scroller](./s/scroller) | Accelerated panning and zooming for HTML and Canva | Scrolling, Scroll, Scroller, Touch |
+| [scrollmagic](./s/scrollmagic) | The javascript library for magical scroll interact | scroll, scrolling, animation, sticky, pin, fixed, scrollbar, scrub, sync, position, progress, parallax, events, classes, jquery-plugin, ecosystem:jquery, scroll, scrolling, animation, sticky, pin, fixed, scrollbar, scrub, sync, position, progress, parallax, events, classes, jquery-plugin, ecosystem:jquery |
 | [scrollparent](./s/scrollparent) | A function to get the scrolling parent of an html  | browser, scroll, scrollparent, dom |
 | [scrollreveal](./s/scrollreveal) | Animate elements as they scroll into view | scroll, animation, reveal, css, transform, transition |
 | [scrolltofixed](./s/scrolltofixed) | This plugin is used to fix elements on the page (t | scroll, fixed, jquery |
@@ -7217,6 +7354,7 @@
 | [seamless](./s/seamless) | Beautiful, seamless iframes with seamless.js ----- | - |
 | [seamless-immutable](./s/seamless-immutable) | Immutable data structures for JavaScript which are | immutable |
 | [search-params](./s/search-params) | A module to manipulate search part of URLs (querys | querystring, query, query params, search params, search, location, url |
+| [searchjs](./s/searchjs) | A library for filtering JavaScript objects based o | - |
 | [season](./s/season) | CSON utilities | cson, json, CoffeeScript |
 | [secp256k1](./s/secp256k1) | This module provides native bindings to ecdsa secp | ec, ecdh, ecdsa, secp256k1 |
 | [secure-json-parse](./s/secure-json-parse) | JSON parse with prototype poisoning protection | JSON, parse, safe, security, prototype, pollution |
@@ -7268,6 +7406,7 @@
 | [semver-utils](./s/semver-utils) | Tools for manipulating semver strings and objects | semver, parse, parseRange, range |
 | [sencha_touch](./s/sencha_touch) | - | - |
 | [send](./s/send) | Better streaming static file server with Range and | static, file, server |
+| [sendcloud](./s/sendcloud) | Node for sendcloud. send email quickly and simply. | email, sendcloud, mail |
 | [sendgrid](./s/sendgrid) | Official SendGrid NodeJS library. | - |
 | [sendgrid-rest](./s/sendgrid-rest) | HTTP REST client, simplified for Node.js. | - |
 | [sendmail](./s/sendmail) | Sendmail without setting up SMTP server | email sender, send mail, sendmail, node sendmail, no smtp, without server, without smtp server, dev mode, dkim sign mail |
@@ -7380,11 +7519,9 @@
 | [simulant](./s/simulant) | Simulated DOM events for automated testing | - |
 | [sindresorhus__class-names](./s/sindresorhus__class-names) | Conditionally join CSS class names together - Espe | class-names, classnames, class, names, name, classes, react, jsx, component, join, concatenate, concat |
 | [sindresorhus__df](./s/sindresorhus__df) | Get free disk space info from df -kP | df, dfkp, df-kp, disk, space, free, info, data, fs, filesystem, file-system, drive, mount, size, capacity |
-| [sindresorhus__fnv1a](./s/sindresorhus__fnv1a) | FNV-1a non-cryptographic hash function | fnv1a, fnv-1a, fnv1, fnv-1, fnv, algorithm, hash, hashing, string, function, fowler–noll–vo, fowler, noll, vo, unicode, bigint |
 | [sindresorhus__is](./s/sindresorhus__is) | Type check values | type, types, is, check, checking, validate, validation, utility, util, typeof, instanceof, object, assert, assertion, test, kind, primitive, verify, compare, typescript, typeguards, types |
 | [sindresorhus__jimp](./s/sindresorhus__jimp) | - | image, image processing, image manipulation, png, jpg, jpeg, bmp, resize, scale, crop |
 | [sindresorhus__slugify](./s/sindresorhus__slugify) | Slugify a string | string, slugify, slug, url, url-safe, urlify, transliterate, transliteration, deburr, unicode, ascii, text, decamelize, pretty, clean, filename, id |
-| [sindresorhus__string-hash](./s/sindresorhus__string-hash) | Get the hash of a string | string, hash, code, hashcode, hash-code, fnv1a, fnv-1a, fnv, algorithm, hashing, function |
 | [sindresorhus__to-millisec](./s/sindresorhus__to-milliseconds) | Convert an object of time properties to millisecon | parse, object, properties, to, into, time, ms, milliseconds, microseconds, nanoseconds, duration, period, range, interval |
 | [sindresorhus__translitera](./s/sindresorhus__transliterate) | Convert Unicode characters to Latin characters usi | transliterate, transliteration, string, deburr, unicode, ascii, text, latin, latinize, convert, replace |
 | [single-line-log](./s/single-line-log) | Keep writing to the same line in the terminal. Ver | single, line, log, output, overwrite, collapse, stdout, terminal, tty, cli, shell |
@@ -7453,6 +7590,22 @@
 | [snowball-stemmers](./s/snowball-stemmers) | JS Port from Snowball Stemmers http://snowball.tar | Snowball, Stemmer |
 | [sns-validator](./s/sns-validator) | A standalone validator for inbound SNS HTTP messag | AWS, SNS |
 | [sntp](./s/sntp) | SNTP Client | sntp, ntp, time |
+| [snyk-config](./s/snyk-config) | Config setup for snyk shared across projects | config |
+| [snyk-docker-plugin](./s/snyk-docker-plugin) | Snyk CLI docker plugin | - |
+| [snyk-go-parser](./s/snyk-go-parser) | Generate a dep tree given a collection of manifest | - |
+| [snyk-go-plugin](./s/snyk-go-plugin) | Snyk CLI Golang plugin | - |
+| [snyk-gradle-plugin](./s/snyk-gradle-plugin) | Snyk CLI Gradle plugin | - |
+| [snyk-nodejs-lockfile-pars](./s/snyk-nodejs-lockfile-parser) | Generate a dep tree given a lockfile | - |
+| [snyk-paket-parser](./s/snyk-paket-parser) | Generate a dep tree given a collection of manifest | - |
+| [snyk-php-plugin](./s/snyk-php-plugin) | Snyk CLI PHP plugin | - |
+| [snyk-python-plugin](./s/snyk-python-plugin) | Snyk CLI Python plugin | - |
+| [snyk__cli-interface](./s/snyk__cli-interface) | Snyk CLI interface definitions | - |
+| [snyk__cocoapods-lockfile-](./s/snyk__cocoapods-lockfile-parser) | Generate a Snyk dependency graph from a Podfile.lo | - |
+| [snyk__composer-lockfile-p](./s/snyk__composer-lockfile-parser) | Generate a dep tree given a composer.lock file | snyk, php, composer, parser |
+| [snyk__dep-graph](./s/snyk__dep-graph) | Snyk dependency graph library | - |
+| [snyk__java-call-graph-bui](./s/snyk__java-call-graph-builder) | Tool for building a call graph for JVM ecosystem ( | - |
+| [snyk__rpm-parser](./s/snyk__rpm-parser) | Produce a list of dependencies from an RPM databas | - |
+| [snyk__snyk-cocoapods-plug](./s/snyk__snyk-cocoapods-plugin) | Snyk CLI CocoaPods plugin | - |
 | [soap](./s/soap) | A minimal node SOAP client | soap |
 | [socket_dot_io](./s/socket_dot_io) | node.js realtime framework server | realtime, framework, websocket, tcp, events, socket, io |
 | [socket_dot_io-client](./s/socket_dot_io-client) | - | realtime, framework, websocket, tcp, events, client |
@@ -7509,9 +7662,11 @@
 | [spected](./s/spected) | Validation Library | Validation, Deeply Nested Validation Rules, Forms |
 | [spectrogram](./s/spectrogram) | Audio spectrogram in canvas. | audio, spectrogram, canvas |
 | [spectrum](./s/spectrum) | JavaScript Template Library | - |
+| [speed-measure-webpack-plu](./s/speed-measure-webpack-plugin) | Measure + analyse the speed of your webpack loader | - |
 | [spellchecker](./s/spellchecker) | Bindings to native spellchecker | - |
 | [spex](./s/spex) | Specialized Promise Extensions | promise, throttle, throttling, load balancing |
 | [spin_dot_js](./s/spin_dot_js) | A spinning activity indicator | css, progress indicator, spin, spinner |
+| [splashy](./s/splashy) | Given an image, extract predominant & palette colo | canvas, color, colour, dominant, extract, extraction, file, image, main, palette, photo, picture, url |
 | [split](./s/split) | split a Text Stream into a Line Stream | - |
 | [split-at](./s/split-at) | Split a string at one or more indices | split, cut, at, string, text, index, indexes, indices |
 | [split-on-first](./s/split-on-first) | Split a string on the first occurance of a given s | split, string, first, occurrence, separator, delimiter, text |
@@ -7560,6 +7715,7 @@
 | [stack-utils](./s/stack-utils) | Captures and cleans stack traces | - |
 | [stackframe](./s/stackframe) | JS Object representation of a stack frame | stacktrace, error, debugger, stack frame |
 | [stacktrace-js](./s/stacktrace-js) | Framework-agnostic, micro-library for getting stac | stacktrace, error, debugger, client, browser |
+| [stacktrace-parser](./s/stacktrace-parser) | Parses every stack trace into a nicely formatted a | errors, stacktrace, parser, exceptions |
 | [stale-lru-cache](./s/stale-lru-cache) | Resilient and performant in-memory cache for node. | lru, cache, stale-while-revalidate, max-age, cache-control |
 | [stampit](./s/stampit) | Create objects from reusable, composable behaviors | object, prototype, object oriented, browser, inheritance, oop, node, factory, class, stamp |
 | [stamplay-js-sdk](./s/stamplay-js-sdk) | - | - |
@@ -7667,6 +7823,7 @@
 | [string-length](./s/string-length) | Get the real length of a string - by correctly cou | unicode, string, length, size, count, astral, symbol, surrogates, codepoints, ansi, escape, codes |
 | [string-pixel-width](./s/string-pixel-width) | String pixel width measurement on the backend in J | string, pixel width |
 | [string-placeholder](./s/string-placeholder) | Replaces placeholders from string templates. | - |
+| [string-replace-loader](./s/string-replace-loader) | Replace loader for Webpack | webpack, loader, webpack-loader, replace, string-replace, regex-replace |
 | [string-replace-webpack-pl](./s/string-replace-webpack-plugin) | Replace string tokens in the contents of a file. | webpack, string, replace, plugin |
 | [string-similarity](./s/string-similarity) | Finds degree of similarity between strings, based  | strings, similar, difference, similarity, compare, comparison, degree, match, matching, dice, levenshtein |
 | [string-strip-html](./s/string-strip-html) | Strips HTML tags from strings. Detects legit unenc | amount, currency, digits, from, numbers, remove, separator, separators, string, thousand, thousands |
@@ -7748,12 +7905,14 @@
 | [survey-knockout](./s/survey-knockout) | survey.js is a JavaScript Survey Library. It is a  | Survey, JavaScript, Bootstrap, Library, knockout |
 | [svg-injector](./s/svg-injector) | Fast, caching, dynamic inline SVG DOM injection li | SVG, Scalable Vector Graphics, SVG injector, images, img, html, DOM |
 | [svg-intersections](./s/svg-intersections) | A library of intersection algorithms covering all  | intersection, bezier, circle, ellipse, line, polygon, rectangle, path |
+| [svg-maps__usa](./s/svg-maps__usa) | Map of USA states | svg, map, usa, states |
 | [svg-pan-zoom](./s/svg-pan-zoom) | JavaScript library for panning and zooming an SVG  | svg, pan, zoom |
 | [svg-parser](./s/svg-parser) | Create a JSON-friendly object from an SVG string | SVG, parser, JSON, object |
 | [svg-path-bounding-box](./s/svg-path-bounding-box) | SVG path bounding box calculator | - |
 | [svg-path-parser](./s/svg-path-parser) | A parser for SVG's path syntax | svg, path, d, attribute, parser, lines, drawing |
 | [svg-sprite](./s/svg-sprite) | SVG sprites & stacks galore — A low-level Node.js  | icon, icons, svg, png, sprite, spritesheet, stack, generator, css, sass, less, stylus, stylesheet, inline, html, vector, rwd, retina, mustache, gulpfriendly |
 | [svg-sprite-loader](./s/svg-sprite-loader) | Webpack loader for creating SVG sprites | svg, sprite, svg sprite, svg stack, webpack, webpack2, webpack3, webpack loader, webpack plugin |
+| [svg-tags](./s/svg-tags) | List of standard SVG tags. | svg, tags, w3c |
 | [svg2png](./s/svg2png) | Converts SVGs to PNGs, using PhantomJS | - |
 | [svg4everybody](./s/svg4everybody) | Use external SVG spritemaps in any browser | contents, defs, externals, fallbacks, icons, ie8s, ie9s, oldies, safaris, sprites, spritemaps, svgs, symbols, uses |
 | [svg_dot_js](./s/svg_dot_js) | A lightweight library for manipulating and animati | svg, vector, graphics, animation |
@@ -7811,14 +7970,18 @@
 | [tableau](./t/tableau) | Construct rows and columns from an alphabet with w | tableau, cipher, encrypt, decrypt |
 | [tableify](./t/tableify) | Create HTML tables from Javascript Objects | object, html, table |
 | [tablesorter](./t/tablesorter) | tablesorter (FORK) is a jQuery plugin for turning  | table, sort, sorting, alphanumeric, natural, jquery-plugin |
-| [tabris](./t/tabris) | Mobile apps with native UIs in JavaScript | native, mobile, ios, android |
-| [tabris-plugin-firebase](./t/tabris-plugin-firebase) | A firebase plugin for Tabris.js | ecosystem:cordova, cordova-android, cordova-ios, tabris, tabris.js, firebase |
 | [tabtab](./t/tabtab) | tab completion helpers, for node cli programs. Ins | terminal, tab, unix, console, complete, completion |
 | [tabulator](./t/tabulator) | Put data into tables | - |
 | [tabulator-tables](./t/tabulator-tables) | Interactive table generation JavaScript library | table, grid, datagrid, tabulator, editable, cookie, sort, format, resizable, list, scrollable, ajax, json, widget, jquery, react, angular, vue |
 | [tail](./t/tail) | tail a file in node | tail, file, logs |
 | [tampermonkey](./t/tampermonkey) | - | - |
 | [tanem__svg-injector](./t/tanem__svg-injector) | Fast, caching, dynamic inline SVG DOM injection li | dom, html, images, img, javascript, scalable-vector-graphics, svg, typescript |
+| [tannin](./t/tannin) | gettext localization library compatible with Jed-f | jed, gettext, localization, internationalization, l10n, i18n, translate |
+| [tannin__compile](./t/tannin__compile) | Compiles an evaluating function for a C expression | - |
+| [tannin__evaluate](./t/tannin__evaluate) | Evaluates the result of an expression given as pos | - |
+| [tannin__plural-forms](./t/tannin__plural-forms) | Compiles a function to compute the plural forms in | - |
+| [tannin__postfix](./t/tannin__postfix) | Convert a C expression to an array of postfix term | - |
+| [tap](./t/tap) | A Test-Anything-Protocol library for JavaScript | assert, tap, test, testing |
 | [tapable](./t/tapable) | Just a little module for plugins. | - |
 | [tape](./t/tape) | tap-producing test harness for node and browsers | tap, test, harness, assert, browser |
 | [tape-async](./t/tape-async) | A lite wrapper around tape to simplify async testi | - |
@@ -7866,6 +8029,7 @@
 | [terminal-link](./t/terminal-link) | Create clickable links in the terminal | link, hyperlink, url, ansi, escape, terminal, term, console, command-line |
 | [terminal-menu](./t/terminal-menu) | retro ansi terminal menus for serious 80s technico | menu, terminal, ansi, 80s, ibm |
 | [tern](./t/tern) | A JavaScript code analyzer for deep, cross-editor  | - |
+| [terraformer__spatial](./t/terraformer__spatial) | Spatial predicates for GeoJSON. | arcgis, convert, geo, geojson, geometry |
 | [terser](./t/terser) | JavaScript parser, mangler/compressor and beautifi | uglify, terser, uglify-es, uglify-js, minify, minifier, javascript, ecmascript, es5, es6, es7, es8, es2015, es2016, es2017, async, await |
 | [terser-webpack-plugin](./t/terser-webpack-plugin) | Terser plugin for webpack | uglify, uglify-js, uglify-es, terser, webpack, webpack-plugin, minification, compress, compressor, min, minification, minifier, minify, optimize, optimizer |
 | [teslajs](./t/teslajs) | Full-featured Tesla REST API NodeJS package | Tesla, Model S, Model X, Model 3, REST |
@@ -7951,6 +8115,7 @@
 | [titanium](./t/titanium) | Appcelerator Titanium Command line | appcelerator, titanium, mobile, ios, iphone, android, blackberry, html5, mobileweb, mobile web, appc-client |
 | [title](./t/title) | Capitalize your titles properly | title, capitalize, chicago, manual, of, style |
 | [title-case](./t/title-case) | Transform a string into title case following Engli | title, case, english, capital, sentence, convert, transform |
+| [titlecase](./t/titlecase) | Intelligently converting strings to title case (an | title-case, title, case, gouch, to-title-case |
 | [tldjs](./t/tldjs) | JavaScript API to work against complex domain name | tld, sld, domain, browser, uri, url, domain name, subdomain, public suffix |
 | [tlds](./t/tlds) | List of TLDs | data, tld, tlds, top, level, domains |
 | [tlf-log](./t/tlf-log) | A small logging library | logging |
@@ -7958,6 +8123,7 @@
 | [tmp-promise](./t/tmp-promise) | The tmp package with promises support and disposer | tmp, promise, tempfile, mkdtemp, mktemp |
 | [to-absolute-glob](./t/to-absolute-glob) | Make a glob pattern absolute, ensuring that negati | absolute, file, filepath, glob, negate, negative, path, pattern, resolve, to |
 | [to-camel-case](./t/to-camel-case) | Convert a string to camel case. | camel, case, camelcase, string |
+| [to-ico](./t/to-ico) | Convert PNG to ICO in memory | buffer, convert, fast, ico, png |
 | [to-json-schema](./t/to-json-schema) | Convert JS object to JSON Schema | JSON, schema, JSON schema, jsonschema, converter, convert |
 | [to-markdown](./t/to-markdown) | HTML-to-Markdown converter | markdown |
 | [to-semver](./t/to-semver) | Get an array of valid, sorted, and cleaned semver  | semver, semantic, version, versions, versioning, list, array, clean, sort, cleaned, sorted, valid, validated, filter, filtered, git, tag, tags |
@@ -8013,10 +8179,12 @@
 | [triple-beam](./t/triple-beam) | Definitions of levels for logging purposes & share | winstonjs, winston, logging, logform, symbols, logs, levels |
 | [triplesec](./t/triplesec) | A CommonJS-compliant system for secure encryption  | - |
 | [trouter](./t/trouter) | 🐟 A fast, small-but-mighty, familiar ~fish~ route | route, router, routing |
+| [trtc-js-sdk](./t/trtc-js-sdk) | Tencent Cloud RTC SDK for Web | 实时音视频, 视频通话, 音频通话, WEBRTC, 直播 |
 | [true-case-path](./t/true-case-path) | Given a possibly case-variant version of an existi | - |
 | [truffle-privatekey-provid](./t/truffle-privatekey-provider) | Private Key Web3 provider | ethereum, private key, wallet, provider, truffle provider |
 | [truncate-middle](./t/truncate-middle) | Truncates in the middle. | - |
 | [trunk8](./t/trunk8) | trunk8 is an intelligent text truncation extension | truncate, trunk8, jquery, text, cut-off, spill-over |
+| [trust__webcrypto](./t/trust__webcrypto) | WebCrypto API for Node.js | WebCrypto |
 | [trusted-types](./t/trusted-types) | Polyfill for the Trusted Types | - |
 | [tryer](./t/tryer) | Because everyone loves a tryer | repeat, retry, predicate, conditional, invocation, execution, loop, condition, termination, exponential, backoff |
 | [tryghost__content-api](./t/tryghost__content-api) | JavaScript Client Library for the Ghost  | - |
@@ -8083,6 +8251,7 @@
 | [typed_dot_js](./t/typed_dot_js) | A JavaScript Typing Animation Library | typed, animation |
 | [typedarray-pool](./t/typedarray-pool) | Reuse typed arrays | typed, array, cache, pool, memory, malloc, free, reuse, optimize, construct, overhead |
 | [typedoc](./t/typedoc) | Create api documentation for TypeScript projects. | typescript, documentation, generator |
+| [typeform__embed](./t/typeform__embed) | Library to embed Typeforms in your website | - |
 | [typeof](./t/typeof) | Node module. typeOf('a string') == 'string', typeO | typeof, type |
 | [typescript](./t/typescript) | TypeScript is a language for application scale Jav | TypeScript, Microsoft, compiler, language, javascript |
 | [typescript-collections](./t/typescript-collections) | A complete, fully tested data structure library wr | typescript, generics, data, structures, collections, linked, list, dictionary, default, dictionary, multi, dictionary, binary, search, tree, key, value, stack, queue, set, bag, binary, heap, priority, queue, array |
@@ -8132,6 +8301,9 @@
 | [ultra-strftime](./u/ultra-strftime) | Ultra fast realization of javascript strftime func | ultrafast, strftime, format, date |
 | [umbraco](./u/umbraco) | - | - |
 | [umd](./u/umd) | Universal Module Definition for use in automated b | - |
+| [umi-utils](./u/umi-utils) | - | - |
+| [umijs__route-utils](./u/umijs__route-utils) | Quickly process the routing of umi | - |
+| [umtrack-wx](./u/umtrack-wx) | 微信小程序友盟统计SDK | umeng, weixin, wx |
 | [umzug](./u/umzug) | Framework agnostic migration tool for Node.JS | migrate, migration, migrations, sequelize |
 | [unc-path-regex](./u/unc-path-regex) | Regular expression for testing if a file path is a | absolute, expression, file, filepath, match, matching, path, regex, regexp, regular, unc, win, windows |
 | [underscore](./u/underscore) | JavaScript's functional programming helper library | util, functional, server, client, browser |
@@ -8318,6 +8490,7 @@
 | [vision](./v/vision) | Templates rendering plugin support for hapi.js | view, render, template, hapi |
 | [vitalsigns](./v/vitalsigns) | Powerful and customizable application health monit | health, check, monitor, express, cpu, memory, application |
 | [vivus](./v/vivus) | JavaScript library to make drawing animation on SV | - |
+| [viz_dot_js](./v/viz_dot_js) | A hack to put Graphviz on the web. | graphviz, emscripten |
 | [vk-openapi](./v/vk-openapi) | Vkontakte Open API for websites for use with Brows | vk, vkontakte, browserify |
 | [vkbeautify](./v/vkbeautify) | Pretty prints and minifies XML/JSON/SQL/CSS | minify, beautify, pretty, print, pretty-print, json, xml, sql, css |
 | [vlq](./v/vlq) | Generate, and decode, base64 VLQ mappings for sour | - |
@@ -8334,6 +8507,7 @@
 | [vscode](./v/vscode) | - | - |
 | [vscode-jsonrpc](./v/vscode-jsonrpc) | A json rpc implementation over streams | - |
 | [vscode-languageclient](./v/vscode-languageclient) | VSCode Language client implementation | - |
+| [vscode-languageserver](./v/vscode-languageserver) | Language server implementation for node | - |
 | [vscode-languageserver-pro](./v/vscode-languageserver-protocol) | VSCode Language Server Protocol implementation | - |
 | [vscode-languageserver-typ](./v/vscode-languageserver-types) | Types used by the Language server for node | - |
 | [vscode-windows-registry](./v/vscode-windows-registry) | A native node module for accessing the windows reg | - |
@@ -8344,6 +8518,7 @@
 | [vue-class-component](./v/vue-class-component) | ES201X/TypeScript class decorator for Vue componen | vue, class, babel, typescript |
 | [vue-clickaway](./v/vue-clickaway) | Reusable clickaway directive for reusable Vue.js c | click, clickaway, reusable, vue, vue-directive, vuejs |
 | [vue-color](./v/vue-color) | Color of Vue Components | color, vuejs |
+| [vue-cropperjs](./v/vue-cropperjs) | A Vue wrapper component for cropperjs | vue, vuejs, cropper, cropperjs, component |
 | [vue-datetime](./v/vue-datetime) | Mobile friendly datetime picker for Vue. Supports  | datetime, datetime-picker, picker, date, vue |
 | [vue-feather-icons](./v/vue-feather-icons) | Simply beautiful open source icons as Vue function | - |
 | [vue-i18n](./v/vue-i18n) | Internationalization plugin for Vue.js | i18n, internationalization, plugin, vue, vue.js |
@@ -8405,10 +8580,12 @@
 | [weak-napi](./w/weak-napi) | Make weak references to JavaScript Objects. | weak, reference, js, javascript, object, function, callback, napi |
 | [weapp-api](./w/weapp-api) | wechat api | weapp, wechat, api |
 | [web-animations-js](./w/web-animations-js) | JavaScript implementation of the Web Animations AP | animations, polyfill |
+| [web-app-manifest](./w/web-app-manifest) | - | - |
 | [web-bluetooth](./w/web-bluetooth) | Library for interacting with Bluetooth 4.0 devices | abstraction, API, ble, bluetooth, browser, client, developer, developer tool, experimental, framework, internet of things, library, web-bluetooth |
 | [web-locks-api](./w/web-locks-api) | - | - |
 | [web-push](./w/web-push) | Web Push library for Node.js | web push, push, notifications, push notifications |
 | [web-resource-inliner](./w/web-resource-inliner) | Inlines img, script and link tags into the same fi | inline, js, css, scripts, stylesheets, html, datauri |
+| [web-vitals](./w/web-vitals) | Easily measure performance metrics in JavaScript | crux, performance, metrics, CLS, FCP, FID, LCP, TTFB |
 | [web3](./w/web3) | Ethereum JavaScript API | Ethereum, JavaScript, API |
 | [web3-bzz](./w/web3-bzz) | Web3 module to interact with the Swarm network. | - |
 | [web3-core](./w/web3-core) | Web3 core tools for sub packages. This is an inter | - |
@@ -8478,6 +8655,7 @@
 | [webpack-hot-middleware](./w/webpack-hot-middleware) | Webpack hot reloading you can attach to your own s | webpack, hmr, hot, module, reloading, hot-reloading, middleware, express |
 | [webpack-manifest-plugin](./w/webpack-manifest-plugin) | webpack plugin for generating asset manifests | - |
 | [webpack-merge](./w/webpack-merge) | Variant of merge that's useful for webpack configu | webpack, merge |
+| [webpack-merge-and-include](./w/webpack-merge-and-include-globally) | Merge multiple files (js,css..) into single file t | webpack, global, js, merge, concat, global library, expose |
 | [webpack-node-externals](./w/webpack-node-externals) | Easily exclude node_modules in Webpack bundle | webpack, node_modules, node, bundle, externals |
 | [webpack-notifier](./w/webpack-notifier) | webpack + node-notifier = build status system noti | webpack, notify, notification, node-notifier, notifier, build |
 | [webpack-plugin-serve](./w/webpack-plugin-serve) | A Development Server in a Webpack Plugin | dev, development, devserver, serve, server, webpack |
@@ -8511,6 +8689,7 @@
 | [wellknown](./w/wellknown) | convert wkt to geojson | wkt, geojson, maps |
 | [wepy](./w/wepy) | - | - |
 | [wepy-redux](./w/wepy-redux) | WePY bindings for Redux | wepy-redux, wepy, redux, connect |
+| [what-input](./w/what-input) | A global utility for tracking the current input me | accessibility, a11y, input, javascript |
 | [whatwg-encoding](./w/whatwg-encoding) | Decode strings according to the WHATWG Encoding St | encoding, whatwg |
 | [whatwg-mimetype](./w/whatwg-mimetype) | Parses, serializes, and manipulates MIME types, ac | content-type, mime type, mimesniff, http, whatwg |
 | [whatwg-url](./w/whatwg-url) | An implementation of the WHATWG URL Standard's URL | - |
@@ -8552,6 +8731,7 @@
 | [wiring-pi](./w/wiring-pi) | Bindings to wiringPi | wiringPi, gpio, raspberry, pi, raspberrypi, bcm2835 |
 | [wix-style-react](./w/wix-style-react) | - | - |
 | [wnumb](./w/wnumb) | wNumb - JavaScript Number & Money formatting | - |
+| [wol](./w/wol) | wake up on lan | wol, wake, lan |
 | [wolfy87-eventemitter](./w/wolfy87-eventemitter) | Event based JavaScript for the browser | eventemitter, events, browser, amd |
 | [wonder-frp](./w/wonder-frp) | * Wonder-FRP Wonder-FRP is a functional reactive p | FRP, Wonder-FRP |
 | [wonder_dot_js](./w/wonder_dot_js) | 3d webgl engine | wonder, webgl, functional-programming, high-performance, 3d, engine, reasonml, reason, bucklescript |
@@ -8565,9 +8745,12 @@
 | [wordpress__api-fetch](./w/wordpress__api-fetch) | Utility to make WordPress REST API requests. | wordpress, rest-api, fetch |
 | [wordpress__autop](./w/wordpress__autop) | WordPress's automatic paragraph functions autop an | wordpress, autop |
 | [wordpress__blob](./w/wordpress__blob) | Blob utilities for WordPress. | wordpress, blob |
+| [wordpress__block-editor](./w/wordpress__block-editor) | Generic block editor. | wordpress, editor, blocks |
 | [wordpress__block-library](./w/wordpress__block-library) | Block library for the WordPress editor. | wordpress, blocks |
 | [wordpress__block-serializ](./w/wordpress__block-serialization-default-parser) | Block serialization specification parser for WordP | wordpress, block, parser |
 | [wordpress__block-serializ](./w/wordpress__block-serialization-spec-parser) | Block serialization specification parser for WordP | wordpress, block, spec, parser |
+| [wordpress__blocks](./w/wordpress__blocks) | Block API for WordPress. | wordpress, blocks |
+| [wordpress__components](./w/wordpress__components) | UI components for WordPress. | wordpress, components |
 | [wordpress__compose](./w/wordpress__compose) | WordPress higher-order components (HOCs). | wordpress, React, hoc |
 | [wordpress__core-data](./w/wordpress__core-data) | Access to and manipulation of core WordPress entit | wordpress, data, entities |
 | [wordpress__custom-templat](./w/wordpress__custom-templated-path-webpack-plugin) | Webpack plugin for creating custom path template t | wordpress, webpack, webpack-plugin |
@@ -8578,6 +8761,8 @@
 | [wordpress__deprecated](./w/wordpress__deprecated) | Deprecation utility for WordPress. | wordpress, deprecated |
 | [wordpress__dom](./w/wordpress__dom) | DOM utilities module for WordPress. | wordpress, dom, utils |
 | [wordpress__dom-ready](./w/wordpress__dom-ready) | Execute callback after the DOM is loaded. | wordpress, dom-ready |
+| [wordpress__edit-post](./w/wordpress__edit-post) | Edit Post module for WordPress. | wordpress, editor |
+| [wordpress__editor](./w/wordpress__editor) | Building blocks for WordPress editors. | wordpress, editor |
 | [wordpress__element](./w/wordpress__element) | Element React module for WordPress. | wordpress, element, react |
 | [wordpress__escape-html](./w/wordpress__escape-html) | Escape HTML utils. | wordpress |
 | [wordpress__hooks](./w/wordpress__hooks) | WordPress hooks library. | wordpress, hooks |
@@ -8587,8 +8772,10 @@
 | [wordpress__jest-console](./w/wordpress__jest-console) | Custom Jest matchers for the Console object. | wordpress, jest, matchers, console |
 | [wordpress__keycodes](./w/wordpress__keycodes) | Keycodes utilities for WordPress. Used to check fo | wordpress, keycodes |
 | [wordpress__library-export](./w/wordpress__library-export-default-webpack-plugin) | Webpack plugin for exporting default property for  | wordpress, webpack, webpack-plugin |
+| [wordpress__media-utils](./w/wordpress__media-utils) | WordPress Media Upload Utils. | wordpress, media, upload, media-upload |
 | [wordpress__notices](./w/wordpress__notices) | State management for notices. | wordpress, notices |
 | [wordpress__nux](./w/wordpress__nux) | NUX (New User eXperience) module for WordPress. | wordpress, nux |
+| [wordpress__plugins](./w/wordpress__plugins) | Plugins module for WordPress. | wordpress, plugins |
 | [wordpress__priority-queue](./w/wordpress__priority-queue) | Generic browser priority queue. | wordpress, browser, async |
 | [wordpress__redux-routine](./w/wordpress__redux-routine) | Redux middleware for generator coroutines. | wordpress, redux, middleware, coroutine |
 | [wordpress__rich-text](./w/wordpress__rich-text) | Rich text value and manipulation API. | wordpress, rich-text |
@@ -8660,6 +8847,7 @@
 | [xml2js](./x/xml2js) | Simple XML to JavaScript object converter. | xml, json |
 | [xml2json](./x/xml2json) | Converts xml to json and vice-versa, using node-ex | - |
 | [xmlbuilder](./x/xmlbuilder) | An XML builder for node.js | xml, xmlbuilder |
+| [xmlchars](./x/xmlchars) | Utilities for determining if characters belong to  | XML, validation |
 | [xmlcreate](./x/xmlcreate) | Simple XML builder for Node.js | build, builder, create, creator, xml |
 | [xmldoc](./x/xmldoc) | A lightweight XML Document class for JavaScript. | - |
 | [xmldom](./x/xmldom) | A W3C Standard XML DOM(Level2 CORE) implementation | w3c, dom, xml, parser, javascript, DOMParser, XMLSerializer |
@@ -8681,6 +8869,7 @@
 | [xss-filters](./x/xss-filters) | Secure XSS Filters - Just sufficient output filter | xss, output filter, sanitize, sanitise, escape, encode, filter, context-aware, context-sensitive, security, yahoo |
 | [xstate](./x/xstate) | Finite State Machines and Statecharts for the Mode | statechart, state machine, finite state machine, finite automata, scxml, state, interpreter |
 | [xstream](./x/xstream) | An extremely intuitive, small, and fast functional | - |
+| [xstyled__styled-component](./x/xstyled__styled-components) | Xstyled bindings for styled-components. | styled-components, css, system, styled-system |
 | [xstyled__system](./x/xstyled__system) | Modern style system for styled-components & emotio | emotion, styled-components, css, system, styled-system |
 | [xtend](./x/xtend) | extend like a boss | extend, merge, options, opts, object, array |
 | [xterm](./x/xterm) | Full xterm terminal, in your browser | - |
@@ -8695,6 +8884,7 @@
 | [yaml-front-matter](./y/yaml-front-matter) | yaml front matter for JS. Parse yaml or JSON from  | yaml, front matter, json |
 | [yamljs](./y/yamljs) | Standalone JavaScript YAML 1.2 Parser & Encoder. W | yaml, json, yaml2json, json2yaml |
 | [yandex-maps](./y/yandex-maps) | - | - |
+| [yandex-metrika-tag](./y/yandex-metrika-tag) | - | - |
 | [yandex-money-sdk](./y/yandex-money-sdk) | SDK for working with yandex money API | yandex, money, sdk |
 | [yar](./y/yar) | Cookie jar plugin for Hapi | hapi, plugin, cookies, jar, session |
 | [yargs](./y/yargs) | yargs the modern, pirate-themed, successor to opti | argument, args, option, parser, parsing, cli, command |

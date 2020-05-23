@@ -1,6 +1,6 @@
 package typings.xtucLong.mod
 
-import typings.xtucLong.AnonHigh
+import typings.xtucLong.anon.High
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -94,8 +94,8 @@ object ^ extends js.Object {
   def fromValue(`val`: String, unsigned: Boolean): Long = js.native
   def fromValue(`val`: Double): Long = js.native
   def fromValue(`val`: Double, unsigned: Boolean): Long = js.native
-  def fromValue(`val`: AnonHigh): Long = js.native
-  def fromValue(`val`: AnonHigh, unsigned: Boolean): Long = js.native
+  def fromValue(`val`: High): Long = js.native
+  def fromValue(`val`: High, unsigned: Boolean): Long = js.native
   /**
     * Converts the specified value to a Long.
     */

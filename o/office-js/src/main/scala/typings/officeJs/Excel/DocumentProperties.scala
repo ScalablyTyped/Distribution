@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.DocumentPropertiesData
 import typings.officeJs.Excel.Interfaces.DocumentPropertiesLoadOptions
 import typings.officeJs.Excel.Interfaces.DocumentPropertiesUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,33 +17,32 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.7]
   */
-@JSGlobal("Excel.DocumentProperties")
 @js.native
-class DocumentProperties () extends ClientObject {
+trait DocumentProperties extends ClientObject {
   /**
     *
-    * Gets or sets the author of the workbook.
+    * The author of the workbook.
     *
     * [Api set: ExcelApi 1.7]
     */
   var author: String = js.native
   /**
     *
-    * Gets or sets the category of the workbook.
+    * The category of the workbook.
     *
     * [Api set: ExcelApi 1.7]
     */
   var category: String = js.native
   /**
     *
-    * Gets or sets the comments of the workbook.
+    * The comments of the workbook.
     *
     * [Api set: ExcelApi 1.7]
     */
   var comments: String = js.native
   /**
     *
-    * Gets or sets the company of the workbook.
+    * The company of the workbook.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -67,7 +66,7 @@ class DocumentProperties () extends ClientObject {
   val custom: CustomPropertyCollection = js.native
   /**
     *
-    * Gets or sets the keywords of the workbook.
+    * The keywords of the workbook.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -81,7 +80,7 @@ class DocumentProperties () extends ClientObject {
   val lastAuthor: String = js.native
   /**
     *
-    * Gets or sets the manager of the workbook.
+    * The manager of the workbook.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -95,14 +94,14 @@ class DocumentProperties () extends ClientObject {
   var revisionNumber: Double = js.native
   /**
     *
-    * Gets or sets the subject of the workbook.
+    * The subject of the workbook.
     *
     * [Api set: ExcelApi 1.7]
     */
   var subject: String = js.native
   /**
     *
-    * Gets or sets the title of the workbook.
+    * The title of the workbook.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -114,7 +113,7 @@ class DocumentProperties () extends ClientObject {
     */
   def load(): DocumentProperties = js.native
   def load(options: DocumentPropertiesLoadOptions): DocumentProperties = js.native
-  def load(propertyNamesAndPaths: AnonExpand): DocumentProperties = js.native
+  def load(propertyNamesAndPaths: Expand): DocumentProperties = js.native
   def load(propertyNames: String): DocumentProperties = js.native
   def load(propertyNames: js.Array[String]): DocumentProperties = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

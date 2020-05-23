@@ -32,14 +32,14 @@ object Mp4Settings {
   @scala.inline
   def apply(
     CslgAtom: Mp4CslgAtom = null,
-    CttsVersion: Int | Double = null,
+    CttsVersion: js.UndefOr[integerMin0Max1] = js.undefined,
     FreeSpaceBox: Mp4FreeSpaceBox = null,
     MoovPlacement: Mp4MoovPlacement = null,
     Mp4MajorBrand: string = null
   ): Mp4Settings = {
     val __obj = js.Dynamic.literal()
     if (CslgAtom != null) __obj.updateDynamic("CslgAtom")(CslgAtom.asInstanceOf[js.Any])
-    if (CttsVersion != null) __obj.updateDynamic("CttsVersion")(CttsVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(CttsVersion)) __obj.updateDynamic("CttsVersion")(CttsVersion.get.asInstanceOf[js.Any])
     if (FreeSpaceBox != null) __obj.updateDynamic("FreeSpaceBox")(FreeSpaceBox.asInstanceOf[js.Any])
     if (MoovPlacement != null) __obj.updateDynamic("MoovPlacement")(MoovPlacement.asInstanceOf[js.Any])
     if (Mp4MajorBrand != null) __obj.updateDynamic("Mp4MajorBrand")(Mp4MajorBrand.asInstanceOf[js.Any])

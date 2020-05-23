@@ -13,8 +13,8 @@ object InternalState {
   @scala.inline
   def apply(isFocused: js.UndefOr[Boolean] = js.undefined, isMasked: js.UndefOr[Boolean] = js.undefined): InternalState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isFocused)) __obj.updateDynamic("isFocused")(isFocused.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMasked)) __obj.updateDynamic("isMasked")(isMasked.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFocused)) __obj.updateDynamic("isFocused")(isFocused.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMasked)) __obj.updateDynamic("isMasked")(isMasked.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InternalState]
   }
 }

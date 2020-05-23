@@ -1,6 +1,5 @@
 package typings.zipkin.mod
 
-import typings.zipkin.AnonLogger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +16,7 @@ class BatchRecorder protected () extends Recorder {
     * implications in the reported data of the span so we discourage users
     * to pass a value for it unless there is a good reason for.
     */
-  def this(args: AnonLogger) = this()
+  def this(args: typings.zipkin.anon.Logger) = this()
   def flush(): Unit = js.native
   /* CompleteClass */
   override def record(rec: Record): Unit = js.native

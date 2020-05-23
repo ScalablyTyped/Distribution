@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
   */
 trait OnLinkURLResponse extends js.Object {
   /**
-  	 * The url of the link that should be navigated to.
-  	 */
+    * The url of the link that should be navigated to.
+    */
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 

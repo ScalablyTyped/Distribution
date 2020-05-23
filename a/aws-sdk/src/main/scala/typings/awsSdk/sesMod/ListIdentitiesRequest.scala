@@ -22,10 +22,14 @@ trait ListIdentitiesRequest extends js.Object {
 
 object ListIdentitiesRequest {
   @scala.inline
-  def apply(IdentityType: IdentityType = null, MaxItems: Int | Double = null, NextToken: NextToken = null): ListIdentitiesRequest = {
+  def apply(
+    IdentityType: IdentityType = null,
+    MaxItems: js.UndefOr[MaxItems] = js.undefined,
+    NextToken: NextToken = null
+  ): ListIdentitiesRequest = {
     val __obj = js.Dynamic.literal()
     if (IdentityType != null) __obj.updateDynamic("IdentityType")(IdentityType.asInstanceOf[js.Any])
-    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListIdentitiesRequest]
   }

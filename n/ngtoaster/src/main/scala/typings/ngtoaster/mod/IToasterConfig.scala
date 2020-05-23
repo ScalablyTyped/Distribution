@@ -47,31 +47,31 @@ object IToasterConfig {
     `close-html`: String = null,
     `icon-class`: String = null,
     `icon-classes`: IIconClasses = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     `message-class`: String = null,
     `mouseover-timer-stop`: js.UndefOr[Boolean] = js.undefined,
     `newest-on-top`: js.UndefOr[Boolean] = js.undefined,
     `position-class`: String = null,
     `prevent-duplicates`: js.UndefOr[Boolean] = js.undefined,
     `tap-to-dismiss`: js.UndefOr[Boolean] = js.undefined,
-    `time-out`: Int | Double = null,
+    `time-out`: js.UndefOr[Double] = js.undefined,
     `title-class`: String = null
   ): IToasterConfig = {
     val __obj = js.Dynamic.literal()
     if (`body-output-type` != null) __obj.updateDynamic("body-output-type")(`body-output-type`.asInstanceOf[js.Any])
     if (`body-template` != null) __obj.updateDynamic("body-template")(`body-template`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`close-button`)) __obj.updateDynamic("close-button")(`close-button`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`close-button`)) __obj.updateDynamic("close-button")(`close-button`.get.asInstanceOf[js.Any])
     if (`close-html` != null) __obj.updateDynamic("close-html")(`close-html`.asInstanceOf[js.Any])
     if (`icon-class` != null) __obj.updateDynamic("icon-class")(`icon-class`.asInstanceOf[js.Any])
     if (`icon-classes` != null) __obj.updateDynamic("icon-classes")(`icon-classes`.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (`message-class` != null) __obj.updateDynamic("message-class")(`message-class`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`mouseover-timer-stop`)) __obj.updateDynamic("mouseover-timer-stop")(`mouseover-timer-stop`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`newest-on-top`)) __obj.updateDynamic("newest-on-top")(`newest-on-top`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`mouseover-timer-stop`)) __obj.updateDynamic("mouseover-timer-stop")(`mouseover-timer-stop`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`newest-on-top`)) __obj.updateDynamic("newest-on-top")(`newest-on-top`.get.asInstanceOf[js.Any])
     if (`position-class` != null) __obj.updateDynamic("position-class")(`position-class`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`prevent-duplicates`)) __obj.updateDynamic("prevent-duplicates")(`prevent-duplicates`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`tap-to-dismiss`)) __obj.updateDynamic("tap-to-dismiss")(`tap-to-dismiss`.asInstanceOf[js.Any])
-    if (`time-out` != null) __obj.updateDynamic("time-out")(`time-out`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`prevent-duplicates`)) __obj.updateDynamic("prevent-duplicates")(`prevent-duplicates`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`tap-to-dismiss`)) __obj.updateDynamic("tap-to-dismiss")(`tap-to-dismiss`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`time-out`)) __obj.updateDynamic("time-out")(`time-out`.get.asInstanceOf[js.Any])
     if (`title-class` != null) __obj.updateDynamic("title-class")(`title-class`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IToasterConfig]
   }

@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object MetadataSettings {
-  type Param = (typings.semanticUiDropdown.PickImpldefaultText | typings.semanticUiDropdown.PickImpldefaultValue | typings.semanticUiDropdown.PickImplplaceholderText | typings.semanticUiDropdown.PickImpltext | typings.semanticUiDropdown.PickImplvalue) with typings.semanticUiDropdown.PartialPickImplkeyofImplDefaultText
+  type Param = (typings.semanticUiDropdown.anon.PickImpldefaultText | typings.semanticUiDropdown.anon.PickImpldefaultValue | typings.semanticUiDropdown.anon.PickImplplaceholderText | typings.semanticUiDropdown.anon.PickImpltext | typings.semanticUiDropdown.anon.PickImplvalue) with typings.semanticUiDropdown.anon.PartialPickImplkeyofImplDefaultText
 }

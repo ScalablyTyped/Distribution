@@ -1,7 +1,7 @@
 package typings.giraffe.Giraffe
 
 import typings.backbone.mod.EventsMixin
-import typings.jquery.JQuery_
+import typings.jquery.JQuery
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object Contrib extends js.Object {
   @js.native
-  class CollectionView[TModel /* <: Model */] () extends View[TModel] {
+  trait CollectionView[TModel /* <: Model */] extends View[TModel] {
     @JSName("collection")
     var collection_CollectionView: Collection[TModel] = js.native
     var modelView: View[TModel] = js.native
@@ -24,11 +24,9 @@ object Contrib extends js.Object {
   }
   
   @js.native
-  class Controller ()
+  trait Controller
     extends EventsMixin
        with GiraffeObject {
-    /* CompleteClass */
-    override var app: App_ = js.native
     /**
       * Faulty overgeneralization of Backbone.Events.on, for historical
       * reasons.
@@ -39,7 +37,7 @@ object Contrib extends js.Object {
   }
   
   @js.native
-  class FastCollectionView[TModel /* <: Model */] () extends View[TModel] {
+  trait FastCollectionView[TModel /* <: Model */] extends View[TModel] {
     @JSName("collection")
     var collection_FastCollectionView: Collection[TModel] = js.native
     var modelEl: js.Any = js.native
@@ -48,24 +46,12 @@ object Contrib extends js.Object {
     var renderOnChange: Boolean = js.native
     def addAll(): View[TModel] = js.native
     def addOne(model: Model): View[TModel] = js.native
-    def findElByIndex(index: Double): JQuery_[HTMLElement] = js.native
-    def findElByModel(model: Model): JQuery_[HTMLElement] = js.native
+    def findElByIndex(index: Double): JQuery[HTMLElement] = js.native
+    def findElByModel(model: Model): JQuery[HTMLElement] = js.native
     def findModelByEl(el: js.Any): Model = js.native
     def modelSerialize(): js.Any = js.native
     def removeByIndex(index: Double): View[TModel] = js.native
     def removeOne(model: Model): View[TModel] = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object CollectionView extends js.Object {
-    def getDefaults(ctx: js.Any): js.Any = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object FastCollectionView extends js.Object {
-    def getDefaults(ctx: js.Any): js.Any = js.native
   }
   
 }

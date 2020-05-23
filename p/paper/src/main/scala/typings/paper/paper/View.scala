@@ -12,9 +12,8 @@ import scala.scalajs.js.annotation._
   * center, both useful for constructing artwork that should appear centered on
   * screen.
   */
-@JSGlobal("paper.View")
 @js.native
-class View () extends js.Object {
+trait View extends js.Object {
   /** 
     * Controls whether the view is automatically updated in the next animation
     * frame on changes, or whether you prefer to manually call

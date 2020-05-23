@@ -17,10 +17,10 @@ trait ArticleTagListOptions extends js.Object {
 
 object ArticleTagListOptions {
   @scala.inline
-  def apply(limit: Int | Double = null, popular: Int | Double = null): ArticleTagListOptions = {
+  def apply(limit: js.UndefOr[Double] = js.undefined, popular: js.UndefOr[Double] = js.undefined): ArticleTagListOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (popular != null) __obj.updateDynamic("popular")(popular.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(popular)) __obj.updateDynamic("popular")(popular.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArticleTagListOptions]
   }
 }

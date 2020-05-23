@@ -18,8 +18,8 @@ object GalleriaOptions {
     lightbox: js.UndefOr[Boolean] = js.undefined
   ): GalleriaOptions = {
     val __obj = js.Dynamic.literal(dataSource = dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
-    if (!js.isUndefined(lightbox)) __obj.updateDynamic("lightbox")(lightbox.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lightbox)) __obj.updateDynamic("lightbox")(lightbox.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GalleriaOptions]
   }
 }

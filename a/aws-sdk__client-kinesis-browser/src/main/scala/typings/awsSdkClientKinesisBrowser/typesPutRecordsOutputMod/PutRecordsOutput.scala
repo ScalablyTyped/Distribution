@@ -35,11 +35,11 @@ object PutRecordsOutput {
     $metadata: ResponseMetadata,
     Records: js.Array[UnmarshalledPutRecordsResultEntry],
     EncryptionType: NONE | KMS | String = null,
-    FailedRecordCount: Int | Double = null
+    FailedRecordCount: js.UndefOr[Double] = js.undefined
   ): PutRecordsOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], Records = Records.asInstanceOf[js.Any])
     if (EncryptionType != null) __obj.updateDynamic("EncryptionType")(EncryptionType.asInstanceOf[js.Any])
-    if (FailedRecordCount != null) __obj.updateDynamic("FailedRecordCount")(FailedRecordCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(FailedRecordCount)) __obj.updateDynamic("FailedRecordCount")(FailedRecordCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutRecordsOutput]
   }
 }

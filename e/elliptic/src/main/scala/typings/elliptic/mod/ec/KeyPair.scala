@@ -1,7 +1,7 @@
 package typings.elliptic.mod.ec
 
-import typings.elliptic.AnonReason
-import typings.elliptic.AnonX
+import typings.elliptic.anon.Reason
+import typings.elliptic.anon.X
 import typings.elliptic.ellipticStrings.array
 import typings.elliptic.ellipticStrings.hex
 import typings.elliptic.mod.BNInput
@@ -35,7 +35,7 @@ class KeyPair protected () extends js.Object {
   def sign(msg: BNInput, enc: String): Signature = js.native
   def sign(msg: BNInput, enc: String, options: SignOptions): Signature = js.native
   def sign(msg: BNInput, options: SignOptions): Signature = js.native
-  def validate(): AnonReason = js.native
+  def validate(): Reason = js.native
   def verify(msg: BNInput, signature: SignatureInput): Boolean = js.native
 }
 
@@ -51,8 +51,8 @@ object KeyPair extends js.Object {
   def fromPrivate(ec: typings.elliptic.mod.ec, priv: Buffer, enc: String): KeyPair = js.native
   def fromPublic(ec: typings.elliptic.mod.ec, pub: String): KeyPair = js.native
   def fromPublic(ec: typings.elliptic.mod.ec, pub: String, enc: String): KeyPair = js.native
-  def fromPublic(ec: typings.elliptic.mod.ec, pub: AnonX): KeyPair = js.native
-  def fromPublic(ec: typings.elliptic.mod.ec, pub: AnonX, enc: String): KeyPair = js.native
+  def fromPublic(ec: typings.elliptic.mod.ec, pub: X): KeyPair = js.native
+  def fromPublic(ec: typings.elliptic.mod.ec, pub: X, enc: String): KeyPair = js.native
   def fromPublic(ec: typings.elliptic.mod.ec, pub: KeyPair): KeyPair = js.native
   def fromPublic(ec: typings.elliptic.mod.ec, pub: KeyPair, enc: String): KeyPair = js.native
   def fromPublic(ec: typings.elliptic.mod.ec, pub: Buffer): KeyPair = js.native

@@ -1,7 +1,7 @@
 package typings.reactNativeTabView.sceneViewMod
 
 import typings.react.mod.Component
-import typings.reactNativeTabView.AnonLoading
+import typings.reactNativeTabView.anon.Loading
 import typings.reactNativeTabView.typesMod.Route
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ trait SceneView[T /* <: Route */]
   extends Component[Props[T], State, js.Any] {
   var handleEnter: js.Any = js.native
   @JSName("state")
-  var state_SceneView: AnonLoading = js.native
+  var state_SceneView: Loading = js.native
   @JSName("componentDidMount")
   def componentDidMount_MSceneView(): Unit = js.native
   @JSName("componentDidUpdate")

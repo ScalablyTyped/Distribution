@@ -17,14 +17,11 @@ object ComputedTimingProperties {
   def apply(
     activeDuration: Double,
     endTime: Double,
-    currentIteration: Int | Double = null,
-    localTime: Int | Double = null,
-    progress: Int | Double = null
+    currentIteration: Double = null.asInstanceOf[Double],
+    localTime: Double = null.asInstanceOf[Double],
+    progress: Double = null.asInstanceOf[Double]
   ): ComputedTimingProperties = {
-    val __obj = js.Dynamic.literal(activeDuration = activeDuration.asInstanceOf[js.Any], endTime = endTime.asInstanceOf[js.Any])
-    if (currentIteration != null) __obj.updateDynamic("currentIteration")(currentIteration.asInstanceOf[js.Any])
-    if (localTime != null) __obj.updateDynamic("localTime")(localTime.asInstanceOf[js.Any])
-    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(activeDuration = activeDuration.asInstanceOf[js.Any], endTime = endTime.asInstanceOf[js.Any], currentIteration = currentIteration.asInstanceOf[js.Any], localTime = localTime.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComputedTimingProperties]
   }
 }

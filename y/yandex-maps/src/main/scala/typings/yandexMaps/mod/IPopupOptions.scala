@@ -16,20 +16,20 @@ trait IPopupOptions extends js.Object {
 object IPopupOptions {
   @scala.inline
   def apply(
-    closeTimeout: Int | Double = null,
+    closeTimeout: js.UndefOr[Double] = js.undefined,
     interactivityModel: InteractivityModelKey = null,
-    openTimeout: Int | Double = null,
+    openTimeout: js.UndefOr[Double] = js.undefined,
     pane: IPane | String = null,
     projection: IProjection = null,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): IPopupOptions = {
     val __obj = js.Dynamic.literal()
-    if (closeTimeout != null) __obj.updateDynamic("closeTimeout")(closeTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeTimeout)) __obj.updateDynamic("closeTimeout")(closeTimeout.get.asInstanceOf[js.Any])
     if (interactivityModel != null) __obj.updateDynamic("interactivityModel")(interactivityModel.asInstanceOf[js.Any])
-    if (openTimeout != null) __obj.updateDynamic("openTimeout")(openTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(openTimeout)) __obj.updateDynamic("openTimeout")(openTimeout.get.asInstanceOf[js.Any])
     if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPopupOptions]
   }
 }

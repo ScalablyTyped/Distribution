@@ -11,10 +11,10 @@ trait OrdersCustomBatchRequestEntryCreateTestReturnReturnItem extends js.Object 
 
 object OrdersCustomBatchRequestEntryCreateTestReturnReturnItem {
   @scala.inline
-  def apply(lineItemId: String = null, quantity: Int | Double = null): OrdersCustomBatchRequestEntryCreateTestReturnReturnItem = {
+  def apply(lineItemId: String = null, quantity: js.UndefOr[Double] = js.undefined): OrdersCustomBatchRequestEntryCreateTestReturnReturnItem = {
     val __obj = js.Dynamic.literal()
     if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrdersCustomBatchRequestEntryCreateTestReturnReturnItem]
   }
 }

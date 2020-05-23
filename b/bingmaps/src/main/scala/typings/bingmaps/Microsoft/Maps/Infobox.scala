@@ -4,16 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Microsoft.Maps.Infobox")
 @js.native
-class Infobox protected () extends js.Object {
-  /**
-    * @constructor
-    * @param location The location to display the infobox at.
-    * @param options Options for rendering the infobox.
-    */
-  def this(location: Location) = this()
-  def this(location: Location, options: IInfoboxOptions) = this()
+trait Infobox extends js.Object {
   /**
     * @deprecated Use HTML buttons and links in description instead.
     */

@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait DocumentRangeSemanticTokensProvider extends js.Object {
   /**
-  		 * @see [provideDocumentSemanticTokens](#DocumentSemanticTokensProvider.provideDocumentSemanticTokens).
-  		 */
+    * @see [provideDocumentSemanticTokens](#DocumentSemanticTokensProvider.provideDocumentSemanticTokens).
+    */
   def provideDocumentRangeSemanticTokens(document: TextDocument, range: Range, token: CancellationToken): ProviderResult[SemanticTokens]
 }
 

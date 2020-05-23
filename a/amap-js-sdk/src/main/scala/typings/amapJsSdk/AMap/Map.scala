@@ -1,15 +1,12 @@
 package typings.amapJsSdk.AMap
 
-import typings.amapJsSdk.AnonCity
+import typings.amapJsSdk.anon.City
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.Map")
 @js.native
-class Map protected () extends EventBindable {
-  def this(mapDiv: String) = this()
-  def this(mapDiv: String, opts: MapOptions) = this()
+trait Map extends EventBindable {
   def add(overlayers: js.Array[_]): Unit = js.native
   def addControl(obj: js.Any): Unit = js.native
   def clearInfoWindow(): Unit = js.native
@@ -20,7 +17,7 @@ class Map protected () extends EventBindable {
   def getAllOverlays(`type`: String): js.Array[Circle | Marker | Polygon | Polyline] = js.native
   def getBounds(): Bounds = js.native
   def getCenter(): LngLat = js.native
-  def getCity(callback: js.Function1[/* result */ AnonCity, Unit]): Unit = js.native
+  def getCity(callback: js.Function1[/* result */ City, Unit]): Unit = js.native
   def getDefaultCursor(): String = js.native
   def getFeatures(): js.Array[String] = js.native
   def getLang(): String = js.native

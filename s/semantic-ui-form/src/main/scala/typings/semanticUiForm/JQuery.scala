@@ -1,7 +1,7 @@
 package typings.semanticUiForm
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jquery.JQuery_.TriggeredEvent
+import typings.jquery.JQuery.TriggeredEvent
 import typings.semanticUiForm.SemanticUI.Form
 import typings.semanticUiForm.SemanticUI.Form.ClassNameSettings
 import typings.semanticUiForm.SemanticUI.Form.ErrorSettings

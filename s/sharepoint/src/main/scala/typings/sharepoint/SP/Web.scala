@@ -10,9 +10,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Web")
 @js.native
-class Web () extends SecurableObject {
+trait Web extends SecurableObject {
   def applyTheme(
     colorPaletteUrl: String,
     fontSchemeUrl: String,

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("JsGraphs.Stack")
 @js.native
-class Stack[T] () extends js.Object {
+trait Stack[T] extends js.Object {
   var N: js.Any = js.native
   var first: js.Any = js.native
   def _push(x: Null, a: T): StackNode[T] = js.native

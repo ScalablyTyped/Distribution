@@ -17,13 +17,13 @@ object CompareOptions {
     file: String = null,
     highlightColor: String = null,
     highlightStyle: HighlightStyle = null,
-    tolerance: Int | Double = null
+    tolerance: js.UndefOr[Double] = js.undefined
   ): CompareOptions = {
     val __obj = js.Dynamic.literal()
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     if (highlightColor != null) __obj.updateDynamic("highlightColor")(highlightColor.asInstanceOf[js.Any])
     if (highlightStyle != null) __obj.updateDynamic("highlightStyle")(highlightStyle.asInstanceOf[js.Any])
-    if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
+    if (!js.isUndefined(tolerance)) __obj.updateDynamic("tolerance")(tolerance.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompareOptions]
   }
 }

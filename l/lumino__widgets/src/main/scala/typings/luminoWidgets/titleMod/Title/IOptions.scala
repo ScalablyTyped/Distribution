@@ -71,19 +71,19 @@ object IOptions {
     iconLabel: String = null,
     iconRenderer: IRenderer = null,
     label: String = null,
-    mnemonic: Int | Double = null
+    mnemonic: js.UndefOr[Double] = js.undefined
   ): IOptions[T] = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any])
     if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.asInstanceOf[js.Any])
+    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.get.asInstanceOf[js.Any])
     if (dataset != null) __obj.updateDynamic("dataset")(dataset.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
     if (iconLabel != null) __obj.updateDynamic("iconLabel")(iconLabel.asInstanceOf[js.Any])
     if (iconRenderer != null) __obj.updateDynamic("iconRenderer")(iconRenderer.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (mnemonic != null) __obj.updateDynamic("mnemonic")(mnemonic.asInstanceOf[js.Any])
+    if (!js.isUndefined(mnemonic)) __obj.updateDynamic("mnemonic")(mnemonic.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions[T]]
   }
 }

@@ -14,10 +14,13 @@ trait IEntity extends js.Object {
 
 object IEntity {
   @scala.inline
-  def apply(synonyms: js.Array[String] = null, value: String = null): IEntity = {
+  def apply(
+    synonyms: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    value: js.UndefOr[Null | String] = js.undefined
+  ): IEntity = {
     val __obj = js.Dynamic.literal()
-    if (synonyms != null) __obj.updateDynamic("synonyms")(synonyms.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(synonyms)) __obj.updateDynamic("synonyms")(synonyms.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEntity]
   }
 }

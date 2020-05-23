@@ -16,9 +16,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.7]
   */
-@JSGlobal("Excel.CustomPropertyCollection")
 @js.native
-class CustomPropertyCollection () extends ClientObject {
+trait CustomPropertyCollection extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_CustomPropertyCollection: RequestContext = js.native

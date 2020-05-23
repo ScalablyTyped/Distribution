@@ -1,19 +1,18 @@
 package typings.winrtUwp.Windows.Web.Http.Headers
 
 import typings.std.Array
-import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsLanguage
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Globalization.Language
+import typings.winrtUwp.anon.Index
+import typings.winrtUwp.anon.ItemsLanguage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the value of the Content-Language HTTP header on HTTP content in a request or a response. */
-@JSGlobal("Windows.Web.Http.Headers.HttpLanguageHeaderValueCollection")
 @js.native
-abstract class HttpLanguageHeaderValueCollection () extends Array[Language] {
+trait HttpLanguageHeaderValueCollection extends Array[Language] {
   /** Gets the number of Language objects in the collection. */
   var size: Double = js.native
   /**
@@ -38,13 +37,13 @@ abstract class HttpLanguageHeaderValueCollection () extends Array[Language] {
     * Retrieves the Language items that start at the specified index in the collection.
     * @param startIndex The zero-based index of the start of the Language items in the HttpLanguageHeaderValueCollection .
     */
-  def getMany(startIndex: Double): AnonItemsLanguage = js.native
+  def getMany(startIndex: Double): ItemsLanguage = js.native
   /**
     * Returns an immutable view of the HttpLanguageHeaderValueCollection .
     * @return The view of the HttpLanguageHeaderValueCollection .
     */
   def getView(): IVectorView[Language] = js.native
-  def indexOf(value: Language, extra: js.Any*): AnonIndex = js.native
+  def indexOf(value: Language, extra: js.Any*): Index = js.native
   /**
     * Determines the index of a specific item in the collection.
     * @param item The object to locate in the collection.

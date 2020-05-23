@@ -46,17 +46,17 @@ object FirehoseDeliveryStreamSplunkConfiguration {
     cloudwatchLoggingOptions: FirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptions,
     hecEndpoint: String,
     hecToken: String,
-    hecAcknowledgmentTimeout: Int | Double = null,
+    hecAcknowledgmentTimeout: js.UndefOr[Double] = js.undefined,
     hecEndpointType: String = null,
     processingConfiguration: FirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration = null,
-    retryDuration: Int | Double = null,
+    retryDuration: js.UndefOr[Double] = js.undefined,
     s3BackupMode: String = null
   ): FirehoseDeliveryStreamSplunkConfiguration = {
     val __obj = js.Dynamic.literal(cloudwatchLoggingOptions = cloudwatchLoggingOptions.asInstanceOf[js.Any], hecEndpoint = hecEndpoint.asInstanceOf[js.Any], hecToken = hecToken.asInstanceOf[js.Any])
-    if (hecAcknowledgmentTimeout != null) __obj.updateDynamic("hecAcknowledgmentTimeout")(hecAcknowledgmentTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(hecAcknowledgmentTimeout)) __obj.updateDynamic("hecAcknowledgmentTimeout")(hecAcknowledgmentTimeout.get.asInstanceOf[js.Any])
     if (hecEndpointType != null) __obj.updateDynamic("hecEndpointType")(hecEndpointType.asInstanceOf[js.Any])
     if (processingConfiguration != null) __obj.updateDynamic("processingConfiguration")(processingConfiguration.asInstanceOf[js.Any])
-    if (retryDuration != null) __obj.updateDynamic("retryDuration")(retryDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(retryDuration)) __obj.updateDynamic("retryDuration")(retryDuration.get.asInstanceOf[js.Any])
     if (s3BackupMode != null) __obj.updateDynamic("s3BackupMode")(s3BackupMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseDeliveryStreamSplunkConfiguration]
   }

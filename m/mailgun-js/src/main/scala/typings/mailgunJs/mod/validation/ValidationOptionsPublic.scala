@@ -14,7 +14,7 @@ object ValidationOptionsPublic {
   def apply(api_key: String = null, mailbox_verification: js.UndefOr[Boolean] = js.undefined): ValidationOptionsPublic = {
     val __obj = js.Dynamic.literal()
     if (api_key != null) __obj.updateDynamic("api_key")(api_key.asInstanceOf[js.Any])
-    if (!js.isUndefined(mailbox_verification)) __obj.updateDynamic("mailbox_verification")(mailbox_verification.asInstanceOf[js.Any])
+    if (!js.isUndefined(mailbox_verification)) __obj.updateDynamic("mailbox_verification")(mailbox_verification.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationOptionsPublic]
   }
 }

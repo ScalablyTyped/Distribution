@@ -7,21 +7,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Writes data to a file. */
-@JSGlobal("Windows.Storage.Streams.FileOutputStream")
-@js.native
-abstract class FileOutputStream () extends js.Object {
+trait FileOutputStream extends js.Object {
   /** Closes the current stream and releases system resources. */
-  def close(): Unit = js.native
+  def close(): Unit
   /**
     * Flushes data asynchronously in a sequential stream.
     * @return The stream flush operation.
     */
-  def flushAsync(): IPromiseWithIAsyncOperation[Boolean] = js.native
+  def flushAsync(): IPromiseWithIAsyncOperation[Boolean]
   /**
     * Writes data asynchronously to a file.
     * @param buffer The buffer into which the asynchronous writer operation writes.
     * @return The byte writer operation.
     */
-  def writeAsync(buffer: IBuffer): IPromiseWithIAsyncOperationWithProgress[Double, Double] = js.native
+  def writeAsync(buffer: IBuffer): IPromiseWithIAsyncOperationWithProgress[Double, Double]
+}
+
+object FileOutputStream {
+  @scala.inline
+  def apply(
+    close: () => Unit,
+    flushAsync: () => IPromiseWithIAsyncOperation[Boolean],
+    writeAsync: IBuffer => IPromiseWithIAsyncOperationWithProgress[Double, Double]
+  ): FileOutputStream = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), flushAsync = js.Any.fromFunction0(flushAsync), writeAsync = js.Any.fromFunction1(writeAsync))
+    __obj.asInstanceOf[FileOutputStream]
+  }
 }
 

@@ -81,48 +81,48 @@ trait PlatformSpecificBuildOptions extends TargetSpecificOptions {
 object PlatformSpecificBuildOptions {
   @scala.inline
   def apply(
-    appId: String = null,
-    artifactName: String = null,
-    asar: AsarOptions | Boolean = null,
-    asarUnpack: js.Array[String] | String = null,
-    compression: CompressionLevel = null,
-    cscKeyPassword: String = null,
-    cscLink: String = null,
+    appId: js.UndefOr[Null | String] = js.undefined,
+    artifactName: js.UndefOr[Null | String] = js.undefined,
+    asar: js.UndefOr[Null | AsarOptions | Boolean] = js.undefined,
+    asarUnpack: js.UndefOr[Null | js.Array[String] | String] = js.undefined,
+    compression: js.UndefOr[Null | CompressionLevel] = js.undefined,
+    cscKeyPassword: js.UndefOr[Null | String] = js.undefined,
+    cscLink: js.UndefOr[Null | String] = js.undefined,
     detectUpdateChannel: js.UndefOr[Boolean] = js.undefined,
-    electronUpdaterCompatibility: String = null,
-    extraFiles: (js.Array[FileSet | String]) | FileSet | String = null,
-    extraResources: (js.Array[FileSet | String]) | FileSet | String = null,
+    electronUpdaterCompatibility: js.UndefOr[Null | String] = js.undefined,
+    extraFiles: js.UndefOr[Null | (js.Array[FileSet | String]) | FileSet | String] = js.undefined,
+    extraResources: js.UndefOr[Null | (js.Array[FileSet | String]) | FileSet | String] = js.undefined,
     fileAssociations: js.Array[FileAssociation] | FileAssociation = null,
-    files: (js.Array[FileSet | String]) | FileSet | String = null,
+    files: js.UndefOr[Null | (js.Array[FileSet | String]) | FileSet | String] = js.undefined,
     forceCodeSigning: js.UndefOr[Boolean] = js.undefined,
     generateUpdatesFilesForAllChannels: js.UndefOr[Boolean] = js.undefined,
-    icon: String = null,
+    icon: js.UndefOr[Null | String] = js.undefined,
     protocols: js.Array[Protocol] | Protocol = null,
-    publish: Publish = null,
+    publish: js.UndefOr[Null | Publish] = js.undefined,
     releaseInfo: ReleaseInfo = null,
-    target: (js.Array[String | TargetConfiguration]) | String | TargetConfiguration = null
+    target: js.UndefOr[Null | (js.Array[String | TargetConfiguration]) | String | TargetConfiguration] = js.undefined
   ): PlatformSpecificBuildOptions = {
     val __obj = js.Dynamic.literal()
-    if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
-    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
-    if (asar != null) __obj.updateDynamic("asar")(asar.asInstanceOf[js.Any])
-    if (asarUnpack != null) __obj.updateDynamic("asarUnpack")(asarUnpack.asInstanceOf[js.Any])
-    if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
-    if (cscKeyPassword != null) __obj.updateDynamic("cscKeyPassword")(cscKeyPassword.asInstanceOf[js.Any])
-    if (cscLink != null) __obj.updateDynamic("cscLink")(cscLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(detectUpdateChannel)) __obj.updateDynamic("detectUpdateChannel")(detectUpdateChannel.asInstanceOf[js.Any])
-    if (electronUpdaterCompatibility != null) __obj.updateDynamic("electronUpdaterCompatibility")(electronUpdaterCompatibility.asInstanceOf[js.Any])
-    if (extraFiles != null) __obj.updateDynamic("extraFiles")(extraFiles.asInstanceOf[js.Any])
-    if (extraResources != null) __obj.updateDynamic("extraResources")(extraResources.asInstanceOf[js.Any])
+    if (!js.isUndefined(appId)) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
+    if (!js.isUndefined(artifactName)) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
+    if (!js.isUndefined(asar)) __obj.updateDynamic("asar")(asar.asInstanceOf[js.Any])
+    if (!js.isUndefined(asarUnpack)) __obj.updateDynamic("asarUnpack")(asarUnpack.asInstanceOf[js.Any])
+    if (!js.isUndefined(compression)) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
+    if (!js.isUndefined(cscKeyPassword)) __obj.updateDynamic("cscKeyPassword")(cscKeyPassword.asInstanceOf[js.Any])
+    if (!js.isUndefined(cscLink)) __obj.updateDynamic("cscLink")(cscLink.asInstanceOf[js.Any])
+    if (!js.isUndefined(detectUpdateChannel)) __obj.updateDynamic("detectUpdateChannel")(detectUpdateChannel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(electronUpdaterCompatibility)) __obj.updateDynamic("electronUpdaterCompatibility")(electronUpdaterCompatibility.asInstanceOf[js.Any])
+    if (!js.isUndefined(extraFiles)) __obj.updateDynamic("extraFiles")(extraFiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(extraResources)) __obj.updateDynamic("extraResources")(extraResources.asInstanceOf[js.Any])
     if (fileAssociations != null) __obj.updateDynamic("fileAssociations")(fileAssociations.asInstanceOf[js.Any])
-    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceCodeSigning)) __obj.updateDynamic("forceCodeSigning")(forceCodeSigning.asInstanceOf[js.Any])
-    if (!js.isUndefined(generateUpdatesFilesForAllChannels)) __obj.updateDynamic("generateUpdatesFilesForAllChannels")(generateUpdatesFilesForAllChannels.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(files)) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceCodeSigning)) __obj.updateDynamic("forceCodeSigning")(forceCodeSigning.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(generateUpdatesFilesForAllChannels)) __obj.updateDynamic("generateUpdatesFilesForAllChannels")(generateUpdatesFilesForAllChannels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
-    if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
+    if (!js.isUndefined(publish)) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
     if (releaseInfo != null) __obj.updateDynamic("releaseInfo")(releaseInfo.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (!js.isUndefined(target)) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlatformSpecificBuildOptions]
   }
 }

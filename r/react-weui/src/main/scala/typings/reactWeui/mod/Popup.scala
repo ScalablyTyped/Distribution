@@ -1,6 +1,6 @@
 package typings.reactWeui.mod
 
-import typings.reactWeui.AnonEnableMask
+import typings.reactWeui.anon.EnableMask
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class Popup protected () extends js.Object {
 @JSImport("react-weui", "Popup")
 @js.native
 object Popup extends js.Object {
-  var defaultProps: AnonEnableMask = js.native
+  var defaultProps: EnableMask = js.native
   @js.native
   object propTypes extends js.Object {
     @js.native

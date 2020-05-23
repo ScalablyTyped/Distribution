@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "apollo-server-types" : "0.3.1"
+      "apollo-server-types" : "0.4.1-alpha.0"
     }
   ],
   "test-dependencies" : [
     {
-      "apollo-server-types" : "0.3.1"
+      "apollo-server-types" : "0.4.1-alpha.0"
     }
   ],
   "compile-devDependencies" : [

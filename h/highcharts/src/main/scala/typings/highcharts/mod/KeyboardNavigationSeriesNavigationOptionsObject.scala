@@ -42,7 +42,7 @@ object KeyboardNavigationSeriesNavigationOptionsObject {
     val __obj = js.Dynamic.literal()
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (pointNavigationEnabledThreshold != null) __obj.updateDynamic("pointNavigationEnabledThreshold")(pointNavigationEnabledThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipNullPoints)) __obj.updateDynamic("skipNullPoints")(skipNullPoints.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipNullPoints)) __obj.updateDynamic("skipNullPoints")(skipNullPoints.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardNavigationSeriesNavigationOptionsObject]
   }
 }

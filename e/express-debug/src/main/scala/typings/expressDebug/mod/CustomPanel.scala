@@ -39,7 +39,7 @@ object CustomPanel {
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (post_render != null) __obj.updateDynamic("post_render")(js.Any.fromFunction1(post_render))
     if (pre_render != null) __obj.updateDynamic("pre_render")(js.Any.fromFunction1(pre_render))
-    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.asInstanceOf[js.Any])
+    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomPanel]
   }
 }

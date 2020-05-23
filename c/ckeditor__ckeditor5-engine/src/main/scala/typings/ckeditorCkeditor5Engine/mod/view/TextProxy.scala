@@ -1,6 +1,6 @@
 package typings.ckeditorCkeditor5Engine.mod.view
 
-import typings.ckeditorCkeditor5Engine.AnonParentFirst
+import typings.ckeditorCkeditor5Engine.anon.ParentFirst
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.textProxy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +19,7 @@ class TextProxy protected () extends Item {
   val parent: Element | DocumentFragment | Null = js.native
   val root: Node | DocumentFragment = js.native
   val textNode: Text = js.native
-  def getAncestors(options: AnonParentFirst): js.Array[Text | Element | DocumentFragment] = js.native
+  def getAncestors(options: ParentFirst): js.Array[Text | Element | DocumentFragment] = js.native
   def is(`type`: String): Boolean = js.native
   @JSName("is")
   def is_textProxy(`type`: textProxy): /* is @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine.view.TextProxy */ Boolean = js.native

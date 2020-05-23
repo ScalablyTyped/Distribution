@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * A command to hide the search results.
   */
-@JSGlobal("HideFindResultsCommand")
-@js.native
-class HideFindResultsCommand () extends CommandWithSimpleStateBase {
+trait HideFindResultsCommand extends CommandWithSimpleStateBase {
   /**
     * Executes the HideFindResultsCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
+}
+
+object HideFindResultsCommand {
+  @scala.inline
+  def apply(execute: () => Boolean, getState: () => SimpleCommandState): HideFindResultsCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
+    __obj.asInstanceOf[HideFindResultsCommand]
+  }
 }
 

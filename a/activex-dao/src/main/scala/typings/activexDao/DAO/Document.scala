@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DAO.Document")
 @js.native
-class Document protected () extends js.Object {
+trait Document extends js.Object {
   val AllPermissions: Double = js.native
   val Container: String = js.native
   @JSName("DAO.Document_typekey")

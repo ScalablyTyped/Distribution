@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Taxonomy.TermGroup")
 @js.native
-class TermGroup () extends TaxonomyItem {
+trait TermGroup extends TaxonomyItem {
   def createTermSet(name: String, newTermSetId: Guid, lcid: Double): TermSet = js.native
   def exportObject(): StringResult = js.native
   def getChanges(changeInformation: ChangeInformation): ChangedItemCollection = js.native

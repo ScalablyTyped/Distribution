@@ -23,8 +23,8 @@ object SharedProps {
     $orientation: horizontal | vertical = null
   ): SharedProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($active)) __obj.updateDynamic("$active")($active.asInstanceOf[js.Any])
-    if (!js.isUndefined($disabled)) __obj.updateDynamic("$disabled")($disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined($active)) __obj.updateDynamic("$active")($active.get.asInstanceOf[js.Any])
+    if (!js.isUndefined($disabled)) __obj.updateDynamic("$disabled")($disabled.get.asInstanceOf[js.Any])
     if ($orientation != null) __obj.updateDynamic("$orientation")($orientation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedProps]
   }

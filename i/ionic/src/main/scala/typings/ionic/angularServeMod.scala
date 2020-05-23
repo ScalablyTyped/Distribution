@@ -2,10 +2,6 @@ package typings.ionic
 
 import typings.ionic.angularMod.AngularProject
 import typings.ionic.definitionsMod.AngularServeOptions
-import typings.ionic.ionicStrings.`@angularSlashcli`
-import typings.ionic.ionicStrings.`Angular CLI`
-import typings.ionic.ionicStrings.ionicColonserve
-import typings.ionic.ionicStrings.ng
 import typings.ionic.libServeMod.ServeCLI
 import typings.ionic.libServeMod.ServeRunner
 import typings.ionic.libServeMod.ServeRunnerDeps
@@ -19,16 +15,8 @@ object angularServeMod extends js.Object {
   @js.native
   class AngularServeCLI () extends ServeCLI[AngularServeOptions] {
     var chunks: Double = js.native
-    @JSName("name")
-    val name_AngularServeCLI: `Angular CLI` = js.native
-    @JSName("pkg")
-    val pkg_AngularServeCLI: `@angularSlashcli` = js.native
-    @JSName("prefix")
-    val prefix_AngularServeCLI: ng = js.native
-    @JSName("program")
-    val program_AngularServeCLI: ng = js.native
     @JSName("script")
-    val script_AngularServeCLI: ionicColonserve = js.native
+    val script_AngularServeCLI: /* "ionic:serve" */ String = js.native
     /* protected */ def buildArchitectCommand(options: AngularServeOptions): js.Array[String] = js.native
     /* protected */ def serveOptionsToNgArgs(options: AngularServeOptions): js.Promise[js.Array[String]] = js.native
   }

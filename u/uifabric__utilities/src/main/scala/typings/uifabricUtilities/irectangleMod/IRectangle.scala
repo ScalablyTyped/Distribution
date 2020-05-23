@@ -20,12 +20,12 @@ object IRectangle {
     left: Double,
     top: Double,
     width: Double,
-    bottom: Int | Double = null,
-    right: Int | Double = null
+    bottom: js.UndefOr[Double] = js.undefined,
+    right: js.UndefOr[Double] = js.undefined
   ): IRectangle = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (!js.isUndefined(bottom)) __obj.updateDynamic("bottom")(bottom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(right)) __obj.updateDynamic("right")(right.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRectangle]
   }
 }

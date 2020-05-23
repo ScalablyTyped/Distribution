@@ -1,5 +1,6 @@
 package typings.storybookApi.mod
 
+import typings.history.mod.LocationState
 import typings.reachRouter.mod.NavigateFn
 import typings.reachRouter.mod.WindowLocation
 import typings.storybookApi.storeMod.default
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation._
 /* Inlined @storybook/api.@storybook/api.StoreData & @storybook/router.@storybook/router.RenderData & @storybook/api.@storybook/api.ProviderData & {  mode ? :'production' | 'development',   state  :@storybook/api.@storybook/api.State} */
 trait Module extends js.Object {
   var default: js.UndefOr[Boolean] = js.undefined
-  var location: js.UndefOr[WindowLocation] = js.undefined
+  var location: js.UndefOr[WindowLocation[LocationState]] = js.undefined
   var mode: js.UndefOr[production | development] = js.undefined
   var navigate: js.UndefOr[NavigateFn] = js.undefined
   var path: js.UndefOr[String] = js.undefined
@@ -31,7 +32,7 @@ object Module {
     state: State,
     store: default,
     default: js.UndefOr[Boolean] = js.undefined,
-    location: WindowLocation = null,
+    location: WindowLocation[LocationState] = null,
     mode: production | development = null,
     navigate: NavigateFn = null,
     path: String = null,
@@ -40,7 +41,7 @@ object Module {
     viewMode: String = null
   ): Module = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (navigate != null) __obj.updateDynamic("navigate")(navigate.asInstanceOf[js.Any])

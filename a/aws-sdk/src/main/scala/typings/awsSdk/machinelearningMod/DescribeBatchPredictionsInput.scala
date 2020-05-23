@@ -61,7 +61,7 @@ object DescribeBatchPredictionsInput {
     GT: ComparatorValue = null,
     LE: ComparatorValue = null,
     LT: ComparatorValue = null,
-    Limit: Int | Double = null,
+    Limit: js.UndefOr[PageLimit] = js.undefined,
     NE: ComparatorValue = null,
     NextToken: StringType = null,
     Prefix: ComparatorValue = null,
@@ -74,7 +74,7 @@ object DescribeBatchPredictionsInput {
     if (GT != null) __obj.updateDynamic("GT")(GT.asInstanceOf[js.Any])
     if (LE != null) __obj.updateDynamic("LE")(LE.asInstanceOf[js.Any])
     if (LT != null) __obj.updateDynamic("LT")(LT.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     if (NE != null) __obj.updateDynamic("NE")(NE.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])

@@ -15,12 +15,12 @@ object EmbeddedObjectPosition {
   def apply(
     newSheet: js.UndefOr[Boolean] = js.undefined,
     overlayPosition: OverlayPosition = null,
-    sheetId: Int | Double = null
+    sheetId: js.UndefOr[Double] = js.undefined
   ): EmbeddedObjectPosition = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(newSheet)) __obj.updateDynamic("newSheet")(newSheet.asInstanceOf[js.Any])
+    if (!js.isUndefined(newSheet)) __obj.updateDynamic("newSheet")(newSheet.get.asInstanceOf[js.Any])
     if (overlayPosition != null) __obj.updateDynamic("overlayPosition")(overlayPosition.asInstanceOf[js.Any])
-    if (sheetId != null) __obj.updateDynamic("sheetId")(sheetId.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetId)) __obj.updateDynamic("sheetId")(sheetId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmbeddedObjectPosition]
   }
 }

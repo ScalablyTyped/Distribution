@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojprogressMod
 
-import typings.oracleOraclejet.AnonAriaIndeterminateProgressText
+import typings.oracleOraclejet.anon.AriaIndeterminateProgressText
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.baseComponent
 import typings.oracleOraclejet.oracleOraclejetStrings.`type`
@@ -24,7 +24,7 @@ trait ojProgress extends baseComponent[ojProgressSettableProperties] {
   var onTypeChanged: (js.Function1[/* event */ JetElementCustomEvent[bar | circle], _]) | Null = js.native
   var onValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
   @JSName("translations")
-  var translations_ojProgress: AnonAriaIndeterminateProgressText = js.native
+  var translations_ojProgress: AriaIndeterminateProgressText = js.native
   var `type`: bar | circle = js.native
   var value: Double = js.native
   def addEventListener(
@@ -70,7 +70,7 @@ trait ojProgress extends baseComponent[ojProgressSettableProperties] {
   @JSName("setProperty")
   def setProperty_max(property: max, value: Double): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonAriaIndeterminateProgressText): Unit = js.native
+  def setProperty_translations(property: translations, value: AriaIndeterminateProgressText): Unit = js.native
   @JSName("setProperty")
   def setProperty_value(property: value, value: Double): Unit = js.native
 }

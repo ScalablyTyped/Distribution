@@ -1,6 +1,6 @@
 package typings.rotJs.fovFovMod
 
-import typings.rotJs.PartialOptions
+import typings.rotJs.anon.PartialOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

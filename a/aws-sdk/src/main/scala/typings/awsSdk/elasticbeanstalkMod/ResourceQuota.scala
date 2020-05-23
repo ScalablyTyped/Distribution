@@ -14,9 +14,9 @@ trait ResourceQuota extends js.Object {
 
 object ResourceQuota {
   @scala.inline
-  def apply(Maximum: Int | Double = null): ResourceQuota = {
+  def apply(Maximum: js.UndefOr[BoxedInt] = js.undefined): ResourceQuota = {
     val __obj = js.Dynamic.literal()
-    if (Maximum != null) __obj.updateDynamic("Maximum")(Maximum.asInstanceOf[js.Any])
+    if (!js.isUndefined(Maximum)) __obj.updateDynamic("Maximum")(Maximum.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceQuota]
   }
 }

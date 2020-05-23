@@ -65,7 +65,7 @@ object IBreadcrumbItem {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCurrentItem)) __obj.updateDynamic("isCurrentItem")(isCurrentItem.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCurrentItem)) __obj.updateDynamic("isCurrentItem")(isCurrentItem.get.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
     __obj.asInstanceOf[IBreadcrumbItem]
   }

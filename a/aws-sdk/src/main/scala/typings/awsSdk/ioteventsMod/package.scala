@@ -7,6 +7,17 @@ import scala.scalajs.js.annotation._
 package object ioteventsMod {
   type Actions = js.Array[typings.awsSdk.ioteventsMod.Action]
   type AmazonResourceName = java.lang.String
+  type AssetId = java.lang.String
+  type AssetPropertyAlias = java.lang.String
+  type AssetPropertyBooleanValue = java.lang.String
+  type AssetPropertyDoubleValue = java.lang.String
+  type AssetPropertyEntryId = java.lang.String
+  type AssetPropertyId = java.lang.String
+  type AssetPropertyIntegerValue = java.lang.String
+  type AssetPropertyOffsetInNanos = java.lang.String
+  type AssetPropertyQuality = java.lang.String
+  type AssetPropertyStringValue = java.lang.String
+  type AssetPropertyTimeInSeconds = java.lang.String
   type AttributeJsonPath = java.lang.String
   type Attributes = js.Array[typings.awsSdk.ioteventsMod.Attribute]
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.ioteventsMod.ClientApiVersions

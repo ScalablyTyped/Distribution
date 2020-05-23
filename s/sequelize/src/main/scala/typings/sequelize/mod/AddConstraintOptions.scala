@@ -1,6 +1,6 @@
 package typings.sequelize.mod
 
-import typings.sequelize.AnonField
+import typings.sequelize.anon.Field
 import typings.sequelize.sequelizeStrings.`foreign key`
 import typings.sequelize.sequelizeStrings.`primary key`
 import typings.sequelize.sequelizeStrings.check
@@ -56,7 +56,7 @@ object AddConstraintOptions {
     onUpdate: String,
     `type`: `foreign key`,
     name: String = null,
-    references: AnonField = null
+    references: Field = null
   ): AddConstraintOptions = {
     val __obj = js.Dynamic.literal(onDelete = onDelete.asInstanceOf[js.Any], onUpdate = onUpdate.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

@@ -20,7 +20,7 @@ trait StartMedicalTranscriptionJobRequest extends js.Object {
     */
   var MediaSampleRateHertz: js.UndefOr[typings.awsSdk.transcribeserviceMod.MediaSampleRateHertz] = js.native
   /**
-    * The name of the medical transcription job. You can't use the strings "." or ".." by themselves as the job name. The name must also be unique within an AWS account.
+    * The name of the medical transcription job. You can't use the strings "." or ".." by themselves as the job name. The name must also be unique within an AWS account. If you try to create a medical transcription job with the same name as a previous medical transcription job you will receive a ConflictException error.
     */
   var MedicalTranscriptionJobName: TranscriptionJobName = js.native
   /**
@@ -40,7 +40,7 @@ trait StartMedicalTranscriptionJobRequest extends js.Object {
     */
   var Specialty: typings.awsSdk.transcribeserviceMod.Specialty = js.native
   /**
-    * The speech of clinician in the input audio. CONVERSATION refers to conversations clinicians have with patients. DICTATION refers to medical professionals dictating their notes about a patient encounter.
+    * The type of speech in the input audio. CONVERSATION refers to conversations between two or more speakers, e.g., a conversations between doctors and patients. DICTATION refers to single-speaker dictated speech, e.g., for clinical notes.
     */
   var Type: typings.awsSdk.transcribeserviceMod.Type = js.native
 }
@@ -55,13 +55,13 @@ object StartMedicalTranscriptionJobRequest {
     Specialty: Specialty,
     Type: Type,
     MediaFormat: MediaFormat = null,
-    MediaSampleRateHertz: Int | Double = null,
+    MediaSampleRateHertz: js.UndefOr[MediaSampleRateHertz] = js.undefined,
     OutputEncryptionKMSKeyId: KMSKeyId = null,
     Settings: MedicalTranscriptionSetting = null
   ): StartMedicalTranscriptionJobRequest = {
     val __obj = js.Dynamic.literal(LanguageCode = LanguageCode.asInstanceOf[js.Any], Media = Media.asInstanceOf[js.Any], MedicalTranscriptionJobName = MedicalTranscriptionJobName.asInstanceOf[js.Any], OutputBucketName = OutputBucketName.asInstanceOf[js.Any], Specialty = Specialty.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     if (MediaFormat != null) __obj.updateDynamic("MediaFormat")(MediaFormat.asInstanceOf[js.Any])
-    if (MediaSampleRateHertz != null) __obj.updateDynamic("MediaSampleRateHertz")(MediaSampleRateHertz.asInstanceOf[js.Any])
+    if (!js.isUndefined(MediaSampleRateHertz)) __obj.updateDynamic("MediaSampleRateHertz")(MediaSampleRateHertz.get.asInstanceOf[js.Any])
     if (OutputEncryptionKMSKeyId != null) __obj.updateDynamic("OutputEncryptionKMSKeyId")(OutputEncryptionKMSKeyId.asInstanceOf[js.Any])
     if (Settings != null) __obj.updateDynamic("Settings")(Settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartMedicalTranscriptionJobRequest]

@@ -12,8 +12,7 @@ trait ContainerSnapshot extends js.Object {
 object ContainerSnapshot {
   @scala.inline
   def apply(bindings: Lookup[Binding[_]], middleware: /* args */ NextArgs => js.Any | js.Array[js.Any] = null): ContainerSnapshot = {
-    val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any])
-    if (middleware != null) __obj.updateDynamic("middleware")(js.Any.fromFunction1(middleware))
+    val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any], middleware = js.Any.fromFunction1(middleware))
     __obj.asInstanceOf[ContainerSnapshot]
   }
 }

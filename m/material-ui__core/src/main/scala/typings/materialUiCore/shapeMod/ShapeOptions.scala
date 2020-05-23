@@ -12,9 +12,9 @@ trait ShapeOptions extends js.Object {
 
 object ShapeOptions {
   @scala.inline
-  def apply(borderRadius: Int | Double = null): ShapeOptions = {
+  def apply(borderRadius: js.UndefOr[Double] = js.undefined): ShapeOptions = {
     val __obj = js.Dynamic.literal()
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderRadius)) __obj.updateDynamic("borderRadius")(borderRadius.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeOptions]
   }
 }

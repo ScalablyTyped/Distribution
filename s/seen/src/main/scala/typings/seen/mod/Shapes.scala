@@ -1,6 +1,6 @@
 package typings.seen.mod
 
-import typings.seen.PartialSurface
+import typings.seen.anon.PartialSurface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

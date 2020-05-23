@@ -18,10 +18,10 @@ trait PlotBbTopLineStylesOptions extends js.Object {
 
 object PlotBbTopLineStylesOptions {
   @scala.inline
-  def apply(lineColor: ColorString = null, lineWidth: Int | Double = null): PlotBbTopLineStylesOptions = {
+  def apply(lineColor: ColorString = null, lineWidth: js.UndefOr[Double] = js.undefined): PlotBbTopLineStylesOptions = {
     val __obj = js.Dynamic.literal()
     if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotBbTopLineStylesOptions]
   }
 }

@@ -21,10 +21,13 @@ trait IRegion extends js.Object {
 
 object IRegion {
   @scala.inline
-  def apply(cols: ICellInterval = null, rows: ICellInterval = null): IRegion = {
+  def apply(
+    cols: js.UndefOr[Null | ICellInterval] = js.undefined,
+    rows: js.UndefOr[Null | ICellInterval] = js.undefined
+  ): IRegion = {
     val __obj = js.Dynamic.literal()
-    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (!js.isUndefined(cols)) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
+    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRegion]
   }
 }

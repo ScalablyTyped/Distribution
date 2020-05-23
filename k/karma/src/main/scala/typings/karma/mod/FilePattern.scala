@@ -52,11 +52,11 @@ object FilePattern {
     watched: js.UndefOr[Boolean] = js.undefined
   ): FilePattern = {
     val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
-    if (!js.isUndefined(included)) __obj.updateDynamic("included")(included.asInstanceOf[js.Any])
-    if (!js.isUndefined(nocache)) __obj.updateDynamic("nocache")(nocache.asInstanceOf[js.Any])
-    if (!js.isUndefined(served)) __obj.updateDynamic("served")(served.asInstanceOf[js.Any])
+    if (!js.isUndefined(included)) __obj.updateDynamic("included")(included.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nocache)) __obj.updateDynamic("nocache")(nocache.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(served)) __obj.updateDynamic("served")(served.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(watched)) __obj.updateDynamic("watched")(watched.asInstanceOf[js.Any])
+    if (!js.isUndefined(watched)) __obj.updateDynamic("watched")(watched.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilePattern]
   }
 }

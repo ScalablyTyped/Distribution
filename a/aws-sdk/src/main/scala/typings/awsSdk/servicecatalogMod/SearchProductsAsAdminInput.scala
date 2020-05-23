@@ -45,7 +45,7 @@ object SearchProductsAsAdminInput {
   def apply(
     AcceptLanguage: AcceptLanguage = null,
     Filters: ProductViewFilters = null,
-    PageSize: Int | Double = null,
+    PageSize: js.UndefOr[PageSize] = js.undefined,
     PageToken: PageToken = null,
     PortfolioId: Id = null,
     ProductSource: ProductSource = null,
@@ -55,7 +55,7 @@ object SearchProductsAsAdminInput {
     val __obj = js.Dynamic.literal()
     if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize.get.asInstanceOf[js.Any])
     if (PageToken != null) __obj.updateDynamic("PageToken")(PageToken.asInstanceOf[js.Any])
     if (PortfolioId != null) __obj.updateDynamic("PortfolioId")(PortfolioId.asInstanceOf[js.Any])
     if (ProductSource != null) __obj.updateDynamic("ProductSource")(ProductSource.asInstanceOf[js.Any])

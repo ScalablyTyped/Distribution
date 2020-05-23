@@ -45,7 +45,7 @@ trait RecurrenceProperties extends js.Object {
     */
   var month: js.UndefOr[Month | String] = js.undefined
   /**
-    * Represents the number of the week in the selected month e.g. 'first' for first week of the month.
+    * Represents the number of the week in the selected month e.g., 'first' for first week of the month.
     */
   var weekNumber: js.UndefOr[WeekNumber | String] = js.undefined
 }
@@ -54,7 +54,7 @@ object RecurrenceProperties {
   @scala.inline
   def apply(
     interval: Double,
-    dayOfMonth: Int | Double = null,
+    dayOfMonth: js.UndefOr[Double] = js.undefined,
     dayOfWeek: Days | String = null,
     days: js.Array[Days | String] = null,
     firstDayOfWeek: Days | String = null,
@@ -62,7 +62,7 @@ object RecurrenceProperties {
     weekNumber: WeekNumber | String = null
   ): RecurrenceProperties = {
     val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any])
-    if (dayOfMonth != null) __obj.updateDynamic("dayOfMonth")(dayOfMonth.asInstanceOf[js.Any])
+    if (!js.isUndefined(dayOfMonth)) __obj.updateDynamic("dayOfMonth")(dayOfMonth.get.asInstanceOf[js.Any])
     if (dayOfWeek != null) __obj.updateDynamic("dayOfWeek")(dayOfWeek.asInstanceOf[js.Any])
     if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
     if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])

@@ -4,15 +4,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CANNON.Ray")
-@js.native
-class Ray () extends js.Object {
-  def this(from: Vec3) = this()
-  def this(from: Vec3, to: Vec3) = this()
-  var checkCollisionResponse: Boolean = js.native
-  var from: Vec3 = js.native
-  var precision: Double = js.native
-  var to: Vec3 = js.native
-  def getAABB(result: RaycastResult): Unit = js.native
+trait Ray extends js.Object {
+  var checkCollisionResponse: Boolean
+  var from: Vec3
+  var precision: Double
+  var to: Vec3
+  def getAABB(result: RaycastResult): Unit
+}
+
+object Ray {
+  @scala.inline
+  def apply(
+    checkCollisionResponse: Boolean,
+    from: Vec3,
+    getAABB: RaycastResult => Unit,
+    precision: Double,
+    to: Vec3
+  ): Ray = {
+    val __obj = js.Dynamic.literal(checkCollisionResponse = checkCollisionResponse.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], getAABB = js.Any.fromFunction1(getAABB), precision = precision.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Ray]
+  }
 }
 

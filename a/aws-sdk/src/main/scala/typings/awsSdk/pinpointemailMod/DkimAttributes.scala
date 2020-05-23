@@ -23,12 +23,12 @@ trait DkimAttributes extends js.Object {
 object DkimAttributes {
   @scala.inline
   def apply(
-    SigningEnabled: js.UndefOr[Boolean] = js.undefined,
+    SigningEnabled: js.UndefOr[Enabled] = js.undefined,
     Status: DkimStatus = null,
     Tokens: DnsTokenList = null
   ): DkimAttributes = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(SigningEnabled)) __obj.updateDynamic("SigningEnabled")(SigningEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(SigningEnabled)) __obj.updateDynamic("SigningEnabled")(SigningEnabled.get.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (Tokens != null) __obj.updateDynamic("Tokens")(Tokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[DkimAttributes]

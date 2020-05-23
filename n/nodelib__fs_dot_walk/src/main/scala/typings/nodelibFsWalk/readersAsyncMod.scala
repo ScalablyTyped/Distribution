@@ -1,6 +1,7 @@
 package typings.nodelibFsWalk
 
 import typings.node.eventsMod.EventEmitter
+import typings.nodelibFsWalk.anon.Typeofscandir
 import typings.nodelibFsWalk.typesMod.Entry
 import typings.nodelibFsWalk.typesMod.Errno
 import scala.scalajs.js

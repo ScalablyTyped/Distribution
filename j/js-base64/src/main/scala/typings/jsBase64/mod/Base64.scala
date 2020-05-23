@@ -1,6 +1,6 @@
 package typings.jsBase64.mod
 
-import typings.jsBase64.TypeofBase64
+import typings.jsBase64.anon.TypeofBase64
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

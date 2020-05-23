@@ -3,7 +3,7 @@ package typings.tinymce.mod
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.RegExp
-import typings.std.Window_
+import typings.std.Window
 import typings.tinymce.mod.settings.Menu
 import typings.tinymce.tinymceBooleans.`false`
 import scala.scalajs.js
@@ -57,7 +57,7 @@ trait Settings_ extends js.Object {
   var extended_valid_elements: js.UndefOr[String] = js.undefined
   var external_plugins: js.UndefOr[js.Object] = js.undefined
   var file_browser_callback: js.UndefOr[
-    js.Function4[/* field_name */ String, /* url */ String, /* type */ String, /* win */ Window_, Unit]
+    js.Function4[/* field_name */ String, /* url */ String, /* type */ String, /* win */ Window, Unit]
   ] = js.undefined
   var file_browser_callback_types: js.UndefOr[String] = js.undefined
   var file_picker_callback: js.UndefOr[
@@ -207,7 +207,7 @@ object Settings_ {
     convert_urls: js.UndefOr[Boolean] = js.undefined,
     custom_elements: String = null,
     custom_ui_selector: String = null,
-    custom_undo_redo_levels: Int | Double = null,
+    custom_undo_redo_levels: js.UndefOr[Double] = js.undefined,
     directionality: String = null,
     doctype: String = null,
     document_base_url: String = null,
@@ -220,7 +220,7 @@ object Settings_ {
     event_root: js.UndefOr[Boolean] = js.undefined,
     extended_valid_elements: String = null,
     external_plugins: js.Object = null,
-    file_browser_callback: (/* field_name */ String, /* url */ String, /* type */ String, /* win */ Window_) => Unit = null,
+    file_browser_callback: (/* field_name */ String, /* url */ String, /* type */ String, /* win */ Window) => Unit = null,
     file_browser_callback_types: String = null,
     file_picker_callback: (/* callback */ js.Function2[/* filename */ String, /* metadata */ js.Object, Unit], /* valud */ String, /* meta */ js.Object) => Unit = null,
     file_picker_types: String = null,
@@ -256,8 +256,8 @@ object Settings_ {
     keep_styles: js.UndefOr[Boolean] = js.undefined,
     language: String = null,
     language_url: String = null,
-    max_height: Int | Double = null,
-    max_width: Int | Double = null,
+    max_height: js.UndefOr[Double] = js.undefined,
+    max_width: js.UndefOr[Double] = js.undefined,
     menu: Menu = null,
     menubar: String | Boolean = null,
     min_height: Double | String = null,
@@ -321,67 +321,67 @@ object Settings_ {
   ): Settings_ = {
     val __obj = js.Dynamic.literal()
     if (advlist_number_styles != null) __obj.updateDynamic("advlist_number_styles")(advlist_number_styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(allow_conditional_comments)) __obj.updateDynamic("allow_conditional_comments")(allow_conditional_comments.asInstanceOf[js.Any])
-    if (!js.isUndefined(allow_html_in_named_anchor)) __obj.updateDynamic("allow_html_in_named_anchor")(allow_html_in_named_anchor.asInstanceOf[js.Any])
-    if (!js.isUndefined(allow_script_urls)) __obj.updateDynamic("allow_script_urls")(allow_script_urls.asInstanceOf[js.Any])
-    if (!js.isUndefined(allow_unsafe_link_target)) __obj.updateDynamic("allow_unsafe_link_target")(allow_unsafe_link_target.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_conditional_comments)) __obj.updateDynamic("allow_conditional_comments")(allow_conditional_comments.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_html_in_named_anchor)) __obj.updateDynamic("allow_html_in_named_anchor")(allow_html_in_named_anchor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_script_urls)) __obj.updateDynamic("allow_script_urls")(allow_script_urls.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_unsafe_link_target)) __obj.updateDynamic("allow_unsafe_link_target")(allow_unsafe_link_target.get.asInstanceOf[js.Any])
     if (anchor_bottom != null) __obj.updateDynamic("anchor_bottom")(anchor_bottom.asInstanceOf[js.Any])
     if (anchor_top != null) __obj.updateDynamic("anchor_top")(anchor_top.asInstanceOf[js.Any])
     if (auto_focus != null) __obj.updateDynamic("auto_focus")(auto_focus.asInstanceOf[js.Any])
-    if (!js.isUndefined(automatic_uploads)) __obj.updateDynamic("automatic_uploads")(automatic_uploads.asInstanceOf[js.Any])
-    if (!js.isUndefined(autosave_ask_before_unload)) __obj.updateDynamic("autosave_ask_before_unload")(autosave_ask_before_unload.asInstanceOf[js.Any])
+    if (!js.isUndefined(automatic_uploads)) __obj.updateDynamic("automatic_uploads")(automatic_uploads.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autosave_ask_before_unload)) __obj.updateDynamic("autosave_ask_before_unload")(autosave_ask_before_unload.get.asInstanceOf[js.Any])
     if (autosave_interval != null) __obj.updateDynamic("autosave_interval")(autosave_interval.asInstanceOf[js.Any])
     if (autosave_prefix != null) __obj.updateDynamic("autosave_prefix")(autosave_prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(autosave_restore_when_empty)) __obj.updateDynamic("autosave_restore_when_empty")(autosave_restore_when_empty.asInstanceOf[js.Any])
+    if (!js.isUndefined(autosave_restore_when_empty)) __obj.updateDynamic("autosave_restore_when_empty")(autosave_restore_when_empty.get.asInstanceOf[js.Any])
     if (autosave_retention != null) __obj.updateDynamic("autosave_retention")(autosave_retention.asInstanceOf[js.Any])
     if (base_url != null) __obj.updateDynamic("base_url")(base_url.asInstanceOf[js.Any])
     if (block_formats != null) __obj.updateDynamic("block_formats")(block_formats.asInstanceOf[js.Any])
     if (body_class != null) __obj.updateDynamic("body_class")(body_class.asInstanceOf[js.Any])
     if (body_id != null) __obj.updateDynamic("body_id")(body_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(br_in_pre)) __obj.updateDynamic("br_in_pre")(br_in_pre.asInstanceOf[js.Any])
-    if (!js.isUndefined(branding)) __obj.updateDynamic("branding")(branding.asInstanceOf[js.Any])
-    if (!js.isUndefined(browser_spellcheck)) __obj.updateDynamic("browser_spellcheck")(browser_spellcheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(br_in_pre)) __obj.updateDynamic("br_in_pre")(br_in_pre.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(branding)) __obj.updateDynamic("branding")(branding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(browser_spellcheck)) __obj.updateDynamic("browser_spellcheck")(browser_spellcheck.get.asInstanceOf[js.Any])
     if (cache_suffix != null) __obj.updateDynamic("cache_suffix")(cache_suffix.asInstanceOf[js.Any])
     if (color_picker_callback != null) __obj.updateDynamic("color_picker_callback")(js.Any.fromFunction2(color_picker_callback))
     if (content_css != null) __obj.updateDynamic("content_css")(content_css.asInstanceOf[js.Any])
     if (content_security_policy != null) __obj.updateDynamic("content_security_policy")(content_security_policy.asInstanceOf[js.Any])
     if (content_style != null) __obj.updateDynamic("content_style")(content_style.asInstanceOf[js.Any])
-    if (!js.isUndefined(convert_fonts_to_spans)) __obj.updateDynamic("convert_fonts_to_spans")(convert_fonts_to_spans.asInstanceOf[js.Any])
-    if (!js.isUndefined(convert_urls)) __obj.updateDynamic("convert_urls")(convert_urls.asInstanceOf[js.Any])
+    if (!js.isUndefined(convert_fonts_to_spans)) __obj.updateDynamic("convert_fonts_to_spans")(convert_fonts_to_spans.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(convert_urls)) __obj.updateDynamic("convert_urls")(convert_urls.get.asInstanceOf[js.Any])
     if (custom_elements != null) __obj.updateDynamic("custom_elements")(custom_elements.asInstanceOf[js.Any])
     if (custom_ui_selector != null) __obj.updateDynamic("custom_ui_selector")(custom_ui_selector.asInstanceOf[js.Any])
-    if (custom_undo_redo_levels != null) __obj.updateDynamic("custom_undo_redo_levels")(custom_undo_redo_levels.asInstanceOf[js.Any])
+    if (!js.isUndefined(custom_undo_redo_levels)) __obj.updateDynamic("custom_undo_redo_levels")(custom_undo_redo_levels.get.asInstanceOf[js.Any])
     if (directionality != null) __obj.updateDynamic("directionality")(directionality.asInstanceOf[js.Any])
     if (doctype != null) __obj.updateDynamic("doctype")(doctype.asInstanceOf[js.Any])
     if (document_base_url != null) __obj.updateDynamic("document_base_url")(document_base_url.asInstanceOf[js.Any])
     if (element_format != null) __obj.updateDynamic("element_format")(element_format.asInstanceOf[js.Any])
-    if (!js.isUndefined(elementpath)) __obj.updateDynamic("elementpath")(elementpath.asInstanceOf[js.Any])
+    if (!js.isUndefined(elementpath)) __obj.updateDynamic("elementpath")(elementpath.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(end_container_on_empty_block)) __obj.updateDynamic("end_container_on_empty_block")(end_container_on_empty_block.asInstanceOf[js.Any])
+    if (!js.isUndefined(end_container_on_empty_block)) __obj.updateDynamic("end_container_on_empty_block")(end_container_on_empty_block.get.asInstanceOf[js.Any])
     if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
     if (entity_encoding != null) __obj.updateDynamic("entity_encoding")(entity_encoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(event_root)) __obj.updateDynamic("event_root")(event_root.asInstanceOf[js.Any])
+    if (!js.isUndefined(event_root)) __obj.updateDynamic("event_root")(event_root.get.asInstanceOf[js.Any])
     if (extended_valid_elements != null) __obj.updateDynamic("extended_valid_elements")(extended_valid_elements.asInstanceOf[js.Any])
     if (external_plugins != null) __obj.updateDynamic("external_plugins")(external_plugins.asInstanceOf[js.Any])
     if (file_browser_callback != null) __obj.updateDynamic("file_browser_callback")(js.Any.fromFunction4(file_browser_callback))
     if (file_browser_callback_types != null) __obj.updateDynamic("file_browser_callback_types")(file_browser_callback_types.asInstanceOf[js.Any])
     if (file_picker_callback != null) __obj.updateDynamic("file_picker_callback")(js.Any.fromFunction3(file_picker_callback))
     if (file_picker_types != null) __obj.updateDynamic("file_picker_types")(file_picker_types.asInstanceOf[js.Any])
-    if (!js.isUndefined(fix_list_elements)) __obj.updateDynamic("fix_list_elements")(fix_list_elements.asInstanceOf[js.Any])
+    if (!js.isUndefined(fix_list_elements)) __obj.updateDynamic("fix_list_elements")(fix_list_elements.get.asInstanceOf[js.Any])
     if (fixed_toolbar_container != null) __obj.updateDynamic("fixed_toolbar_container")(fixed_toolbar_container.asInstanceOf[js.Any])
     if (font_formats != null) __obj.updateDynamic("font_formats")(font_formats.asInstanceOf[js.Any])
     if (fontsize_formats != null) __obj.updateDynamic("fontsize_formats")(fontsize_formats.asInstanceOf[js.Any])
-    if (!js.isUndefined(force_hex_style_colors)) __obj.updateDynamic("force_hex_style_colors")(force_hex_style_colors.asInstanceOf[js.Any])
+    if (!js.isUndefined(force_hex_style_colors)) __obj.updateDynamic("force_hex_style_colors")(force_hex_style_colors.get.asInstanceOf[js.Any])
     if (forced_root_block != null) __obj.updateDynamic("forced_root_block")(forced_root_block.asInstanceOf[js.Any])
     if (forced_root_block_attrs != null) __obj.updateDynamic("forced_root_block_attrs")(forced_root_block_attrs.asInstanceOf[js.Any])
     if (formats != null) __obj.updateDynamic("formats")(formats.asInstanceOf[js.Any])
-    if (!js.isUndefined(gecko_spellcheck)) __obj.updateDynamic("gecko_spellcheck")(gecko_spellcheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(gecko_spellcheck)) __obj.updateDynamic("gecko_spellcheck")(gecko_spellcheck.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden_input)) __obj.updateDynamic("hidden_input")(hidden_input.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden_input)) __obj.updateDynamic("hidden_input")(hidden_input.get.asInstanceOf[js.Any])
     if (images_dataimg_filter != null) __obj.updateDynamic("images_dataimg_filter")(js.Any.fromFunction1(images_dataimg_filter))
-    if (!js.isUndefined(images_reuse_filename)) __obj.updateDynamic("images_reuse_filename")(images_reuse_filename.asInstanceOf[js.Any])
+    if (!js.isUndefined(images_reuse_filename)) __obj.updateDynamic("images_reuse_filename")(images_reuse_filename.get.asInstanceOf[js.Any])
     if (images_upload_base_path != null) __obj.updateDynamic("images_upload_base_path")(images_upload_base_path.asInstanceOf[js.Any])
-    if (!js.isUndefined(images_upload_credentials)) __obj.updateDynamic("images_upload_credentials")(images_upload_credentials.asInstanceOf[js.Any])
+    if (!js.isUndefined(images_upload_credentials)) __obj.updateDynamic("images_upload_credentials")(images_upload_credentials.get.asInstanceOf[js.Any])
     if (images_upload_handler != null) __obj.updateDynamic("images_upload_handler")(js.Any.fromFunction3(images_upload_handler))
     if (images_upload_url != null) __obj.updateDynamic("images_upload_url")(images_upload_url.asInstanceOf[js.Any])
     if (imagetools_api_key != null) __obj.updateDynamic("imagetools_api_key")(imagetools_api_key.asInstanceOf[js.Any])
@@ -390,31 +390,31 @@ object Settings_ {
     if (imagetools_toolbar != null) __obj.updateDynamic("imagetools_toolbar")(imagetools_toolbar.asInstanceOf[js.Any])
     if (indentation != null) __obj.updateDynamic("indentation")(indentation.asInstanceOf[js.Any])
     if (init_instance_callback != null) __obj.updateDynamic("init_instance_callback")(js.Any.fromFunction1(init_instance_callback))
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
-    if (!js.isUndefined(inline_boundaries)) __obj.updateDynamic("inline_boundaries")(inline_boundaries.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inline_boundaries)) __obj.updateDynamic("inline_boundaries")(inline_boundaries.get.asInstanceOf[js.Any])
     if (insert_button_items != null) __obj.updateDynamic("insert_button_items")(insert_button_items.asInstanceOf[js.Any])
     if (insert_toolbar != null) __obj.updateDynamic("insert_toolbar")(insert_toolbar.asInstanceOf[js.Any])
     if (invalid_elements != null) __obj.updateDynamic("invalid_elements")(invalid_elements.asInstanceOf[js.Any])
     if (invalid_styles != null) __obj.updateDynamic("invalid_styles")(invalid_styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(keep_styles)) __obj.updateDynamic("keep_styles")(keep_styles.asInstanceOf[js.Any])
+    if (!js.isUndefined(keep_styles)) __obj.updateDynamic("keep_styles")(keep_styles.get.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (language_url != null) __obj.updateDynamic("language_url")(language_url.asInstanceOf[js.Any])
-    if (max_height != null) __obj.updateDynamic("max_height")(max_height.asInstanceOf[js.Any])
-    if (max_width != null) __obj.updateDynamic("max_width")(max_width.asInstanceOf[js.Any])
+    if (!js.isUndefined(max_height)) __obj.updateDynamic("max_height")(max_height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max_width)) __obj.updateDynamic("max_width")(max_width.get.asInstanceOf[js.Any])
     if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
     if (menubar != null) __obj.updateDynamic("menubar")(menubar.asInstanceOf[js.Any])
     if (min_height != null) __obj.updateDynamic("min_height")(min_height.asInstanceOf[js.Any])
     if (min_width != null) __obj.updateDynamic("min_width")(min_width.asInstanceOf[js.Any])
-    if (!js.isUndefined(nowrap)) __obj.updateDynamic("nowrap")(nowrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(nowrap)) __obj.updateDynamic("nowrap")(nowrap.get.asInstanceOf[js.Any])
     if (object_resizing != null) __obj.updateDynamic("object_resizing")(object_resizing.asInstanceOf[js.Any])
-    if (!js.isUndefined(paste_data_images)) __obj.updateDynamic("paste_data_images")(paste_data_images.asInstanceOf[js.Any])
+    if (!js.isUndefined(paste_data_images)) __obj.updateDynamic("paste_data_images")(paste_data_images.get.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (preview_styles != null) __obj.updateDynamic("preview_styles")(preview_styles.asInstanceOf[js.Any])
     if (protect != null) __obj.updateDynamic("protect")(protect.asInstanceOf[js.Any])
-    if (!js.isUndefined(relative_urls)) __obj.updateDynamic("relative_urls")(relative_urls.asInstanceOf[js.Any])
+    if (!js.isUndefined(relative_urls)) __obj.updateDynamic("relative_urls")(relative_urls.get.asInstanceOf[js.Any])
     if (removeFormat != null) __obj.updateDynamic("removeFormat")(removeFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(remove_script_host)) __obj.updateDynamic("remove_script_host")(remove_script_host.asInstanceOf[js.Any])
-    if (!js.isUndefined(remove_trailing_brs)) __obj.updateDynamic("remove_trailing_brs")(remove_trailing_brs.asInstanceOf[js.Any])
+    if (!js.isUndefined(remove_script_host)) __obj.updateDynamic("remove_script_host")(remove_script_host.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(remove_trailing_brs)) __obj.updateDynamic("remove_trailing_brs")(remove_trailing_brs.get.asInstanceOf[js.Any])
     if (removed_menuitems != null) __obj.updateDynamic("removed_menuitems")(removed_menuitems.asInstanceOf[js.Any])
     if (resize != null) __obj.updateDynamic("resize")(resize.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
@@ -423,41 +423,41 @@ object Settings_ {
     if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction1(setup))
     if (skin != null) __obj.updateDynamic("skin")(skin.asInstanceOf[js.Any])
     if (skin_url != null) __obj.updateDynamic("skin_url")(skin_url.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellchecker_active)) __obj.updateDynamic("spellchecker_active")(spellchecker_active.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellchecker_dialog)) __obj.updateDynamic("spellchecker_dialog")(spellchecker_dialog.asInstanceOf[js.Any])
+    if (!js.isUndefined(spellchecker_active)) __obj.updateDynamic("spellchecker_active")(spellchecker_active.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spellchecker_dialog)) __obj.updateDynamic("spellchecker_dialog")(spellchecker_dialog.get.asInstanceOf[js.Any])
     if (spellchecker_language != null) __obj.updateDynamic("spellchecker_language")(spellchecker_language.asInstanceOf[js.Any])
     if (spellchecker_languages != null) __obj.updateDynamic("spellchecker_languages")(spellchecker_languages.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellchecker_on_load)) __obj.updateDynamic("spellchecker_on_load")(spellchecker_on_load.asInstanceOf[js.Any])
+    if (!js.isUndefined(spellchecker_on_load)) __obj.updateDynamic("spellchecker_on_load")(spellchecker_on_load.get.asInstanceOf[js.Any])
     if (spellchecker_rpc_url != null) __obj.updateDynamic("spellchecker_rpc_url")(spellchecker_rpc_url.asInstanceOf[js.Any])
     if (spellchecker_whitelist != null) __obj.updateDynamic("spellchecker_whitelist")(spellchecker_whitelist.asInstanceOf[js.Any])
-    if (!js.isUndefined(statusbar)) __obj.updateDynamic("statusbar")(statusbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusbar)) __obj.updateDynamic("statusbar")(statusbar.get.asInstanceOf[js.Any])
     if (style_formats != null) __obj.updateDynamic("style_formats")(style_formats.asInstanceOf[js.Any])
-    if (!js.isUndefined(style_formats_autohide)) __obj.updateDynamic("style_formats_autohide")(style_formats_autohide.asInstanceOf[js.Any])
-    if (!js.isUndefined(style_formats_merge)) __obj.updateDynamic("style_formats_merge")(style_formats_merge.asInstanceOf[js.Any])
-    if (!js.isUndefined(table_advtab)) __obj.updateDynamic("table_advtab")(table_advtab.asInstanceOf[js.Any])
-    if (!js.isUndefined(table_appearance_options)) __obj.updateDynamic("table_appearance_options")(table_appearance_options.asInstanceOf[js.Any])
-    if (!js.isUndefined(table_cell_advtab)) __obj.updateDynamic("table_cell_advtab")(table_cell_advtab.asInstanceOf[js.Any])
+    if (!js.isUndefined(style_formats_autohide)) __obj.updateDynamic("style_formats_autohide")(style_formats_autohide.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(style_formats_merge)) __obj.updateDynamic("style_formats_merge")(style_formats_merge.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(table_advtab)) __obj.updateDynamic("table_advtab")(table_advtab.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(table_appearance_options)) __obj.updateDynamic("table_appearance_options")(table_appearance_options.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(table_cell_advtab)) __obj.updateDynamic("table_cell_advtab")(table_cell_advtab.get.asInstanceOf[js.Any])
     if (table_cell_class_list != null) __obj.updateDynamic("table_cell_class_list")(table_cell_class_list.asInstanceOf[js.Any])
     if (table_class_list != null) __obj.updateDynamic("table_class_list")(table_class_list.asInstanceOf[js.Any])
     if (table_clone_elements != null) __obj.updateDynamic("table_clone_elements")(table_clone_elements.asInstanceOf[js.Any])
     if (table_default_attributes != null) __obj.updateDynamic("table_default_attributes")(table_default_attributes.asInstanceOf[js.Any])
     if (table_default_styles != null) __obj.updateDynamic("table_default_styles")(table_default_styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(table_grid)) __obj.updateDynamic("table_grid")(table_grid.asInstanceOf[js.Any])
-    if (!js.isUndefined(table_row_advtab)) __obj.updateDynamic("table_row_advtab")(table_row_advtab.asInstanceOf[js.Any])
+    if (!js.isUndefined(table_grid)) __obj.updateDynamic("table_grid")(table_grid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(table_row_advtab)) __obj.updateDynamic("table_row_advtab")(table_row_advtab.get.asInstanceOf[js.Any])
     if (table_row_class_list != null) __obj.updateDynamic("table_row_class_list")(table_row_class_list.asInstanceOf[js.Any])
-    if (!js.isUndefined(table_tab_navigation)) __obj.updateDynamic("table_tab_navigation")(table_tab_navigation.asInstanceOf[js.Any])
+    if (!js.isUndefined(table_tab_navigation)) __obj.updateDynamic("table_tab_navigation")(table_tab_navigation.get.asInstanceOf[js.Any])
     if (table_toolbar != null) __obj.updateDynamic("table_toolbar")(table_toolbar.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (theme_url != null) __obj.updateDynamic("theme_url")(theme_url.asInstanceOf[js.Any])
     if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(type_ahead_urls)) __obj.updateDynamic("type_ahead_urls")(type_ahead_urls.asInstanceOf[js.Any])
+    if (!js.isUndefined(type_ahead_urls)) __obj.updateDynamic("type_ahead_urls")(type_ahead_urls.get.asInstanceOf[js.Any])
     if (urlconverter_callback != null) __obj.updateDynamic("urlconverter_callback")(js.Any.fromFunction4(urlconverter_callback))
     if (valid_children != null) __obj.updateDynamic("valid_children")(valid_children.asInstanceOf[js.Any])
     if (valid_classes != null) __obj.updateDynamic("valid_classes")(valid_classes.asInstanceOf[js.Any])
     if (valid_elements != null) __obj.updateDynamic("valid_elements")(valid_elements.asInstanceOf[js.Any])
     if (valid_styles != null) __obj.updateDynamic("valid_styles")(valid_styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(visual)) __obj.updateDynamic("visual")(visual.asInstanceOf[js.Any])
+    if (!js.isUndefined(visual)) __obj.updateDynamic("visual")(visual.get.asInstanceOf[js.Any])
     if (visual_anchor_class != null) __obj.updateDynamic("visual_anchor_class")(visual_anchor_class.asInstanceOf[js.Any])
     if (visual_table_class != null) __obj.updateDynamic("visual_table_class")(visual_table_class.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

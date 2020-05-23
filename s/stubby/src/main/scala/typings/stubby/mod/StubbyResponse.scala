@@ -40,14 +40,14 @@ object StubbyResponse {
     body: String = null,
     file: String = null,
     headers: StringDictionary[String] = null,
-    latency: Int | Double = null,
+    latency: js.UndefOr[Double] = js.undefined,
     status: Double | String = null
   ): StubbyResponse = {
     val __obj = js.Dynamic.literal()
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (latency != null) __obj.updateDynamic("latency")(latency.asInstanceOf[js.Any])
+    if (!js.isUndefined(latency)) __obj.updateDynamic("latency")(latency.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[StubbyResponse]
   }

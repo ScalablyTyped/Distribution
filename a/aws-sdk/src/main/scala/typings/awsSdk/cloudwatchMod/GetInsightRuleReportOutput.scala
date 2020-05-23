@@ -35,17 +35,17 @@ trait GetInsightRuleReportOutput extends js.Object {
 object GetInsightRuleReportOutput {
   @scala.inline
   def apply(
-    AggregateValue: Int | Double = null,
+    AggregateValue: js.UndefOr[InsightRuleUnboundDouble] = js.undefined,
     AggregationStatistic: InsightRuleAggregationStatistic = null,
-    ApproximateUniqueCount: Int | Double = null,
+    ApproximateUniqueCount: js.UndefOr[InsightRuleUnboundLong] = js.undefined,
     Contributors: InsightRuleContributors = null,
     KeyLabels: InsightRuleContributorKeyLabels = null,
     MetricDatapoints: InsightRuleMetricDatapoints = null
   ): GetInsightRuleReportOutput = {
     val __obj = js.Dynamic.literal()
-    if (AggregateValue != null) __obj.updateDynamic("AggregateValue")(AggregateValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(AggregateValue)) __obj.updateDynamic("AggregateValue")(AggregateValue.get.asInstanceOf[js.Any])
     if (AggregationStatistic != null) __obj.updateDynamic("AggregationStatistic")(AggregationStatistic.asInstanceOf[js.Any])
-    if (ApproximateUniqueCount != null) __obj.updateDynamic("ApproximateUniqueCount")(ApproximateUniqueCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(ApproximateUniqueCount)) __obj.updateDynamic("ApproximateUniqueCount")(ApproximateUniqueCount.get.asInstanceOf[js.Any])
     if (Contributors != null) __obj.updateDynamic("Contributors")(Contributors.asInstanceOf[js.Any])
     if (KeyLabels != null) __obj.updateDynamic("KeyLabels")(KeyLabels.asInstanceOf[js.Any])
     if (MetricDatapoints != null) __obj.updateDynamic("MetricDatapoints")(MetricDatapoints.asInstanceOf[js.Any])

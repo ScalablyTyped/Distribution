@@ -1,5 +1,7 @@
 package typings.antDesignProLayout
 
+import typings.antDesignProLayout.anon.Children
+import typings.antDesignProLayout.anon.ContentHeight
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +12,7 @@ import scala.scalajs.js.annotation._
 object wrapContentMod extends js.Object {
   @js.native
   trait ResizeObserverContent
-    extends Component[AnonChildren, AnonContentHeight, js.Any] {
+    extends Component[Children, ContentHeight, js.Any] {
     var resize: js.Any = js.native
     @JSName("componentWillUnmount")
     def componentWillUnmount_MResizeObserverContent(): Unit = js.native

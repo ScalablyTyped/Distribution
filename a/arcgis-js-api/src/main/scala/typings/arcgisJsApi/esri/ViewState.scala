@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -86,7 +85,22 @@ trait ViewState extends js.Object {
   def toScreenNoRotation(out: js.Array[Double], x: Double, y: Double): js.Array[Double]
 }
 
-@JSGlobal("__esri.ViewState")
-@js.native
-object ViewState extends TopLevel[ViewStateConstructor]
+object ViewState {
+  @scala.inline
+  def apply(
+    center: js.Array[Double],
+    copy: ViewState => ViewState,
+    extent: Extent,
+    resolution: Double,
+    rotation: Double,
+    scale: Double,
+    size: js.Array[Double],
+    toMap: (js.Array[Double], Double, Double) => js.Array[Double],
+    toScreen: (js.Array[Double], Double, Double) => js.Array[Double],
+    toScreenNoRotation: (js.Array[Double], Double, Double) => js.Array[Double]
+  ): ViewState = {
+    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], copy = js.Any.fromFunction1(copy), extent = extent.asInstanceOf[js.Any], resolution = resolution.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], toMap = js.Any.fromFunction3(toMap), toScreen = js.Any.fromFunction3(toScreen), toScreenNoRotation = js.Any.fromFunction3(toScreenNoRotation))
+    __obj.asInstanceOf[ViewState]
+  }
+}
 

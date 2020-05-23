@@ -4,13 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapSchedulerAppointmentOperation")
-@js.native
-class BootstrapSchedulerAppointmentOperation protected () extends js.Object {
-  protected def this(instance: js.Any) = this()
-  val instance: js.Any = js.native
+trait BootstrapSchedulerAppointmentOperation extends js.Object {
+  val instance: js.Any
   @JSName("apply")
-  def apply(): Unit = js.native
-  def cancel(): Unit = js.native
+  def apply(): Unit
+  def cancel(): Unit
+}
+
+object BootstrapSchedulerAppointmentOperation {
+  @scala.inline
+  def apply(apply: () => Unit, cancel: () => Unit, instance: js.Any): BootstrapSchedulerAppointmentOperation = {
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction0(apply), cancel = js.Any.fromFunction0(cancel), instance = instance.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BootstrapSchedulerAppointmentOperation]
+  }
 }
 

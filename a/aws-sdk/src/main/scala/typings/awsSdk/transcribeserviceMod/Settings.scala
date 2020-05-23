@@ -43,21 +43,21 @@ trait Settings extends js.Object {
 object Settings {
   @scala.inline
   def apply(
-    ChannelIdentification: js.UndefOr[scala.Boolean] = js.undefined,
-    MaxAlternatives: Int | Double = null,
-    MaxSpeakerLabels: Int | Double = null,
-    ShowAlternatives: js.UndefOr[scala.Boolean] = js.undefined,
-    ShowSpeakerLabels: js.UndefOr[scala.Boolean] = js.undefined,
+    ChannelIdentification: js.UndefOr[Boolean] = js.undefined,
+    MaxAlternatives: js.UndefOr[MaxAlternatives] = js.undefined,
+    MaxSpeakerLabels: js.UndefOr[MaxSpeakers] = js.undefined,
+    ShowAlternatives: js.UndefOr[Boolean] = js.undefined,
+    ShowSpeakerLabels: js.UndefOr[Boolean] = js.undefined,
     VocabularyFilterMethod: VocabularyFilterMethod = null,
     VocabularyFilterName: VocabularyFilterName = null,
     VocabularyName: VocabularyName = null
   ): Settings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ChannelIdentification)) __obj.updateDynamic("ChannelIdentification")(ChannelIdentification.asInstanceOf[js.Any])
-    if (MaxAlternatives != null) __obj.updateDynamic("MaxAlternatives")(MaxAlternatives.asInstanceOf[js.Any])
-    if (MaxSpeakerLabels != null) __obj.updateDynamic("MaxSpeakerLabels")(MaxSpeakerLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(ShowAlternatives)) __obj.updateDynamic("ShowAlternatives")(ShowAlternatives.asInstanceOf[js.Any])
-    if (!js.isUndefined(ShowSpeakerLabels)) __obj.updateDynamic("ShowSpeakerLabels")(ShowSpeakerLabels.asInstanceOf[js.Any])
+    if (!js.isUndefined(ChannelIdentification)) __obj.updateDynamic("ChannelIdentification")(ChannelIdentification.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxAlternatives)) __obj.updateDynamic("MaxAlternatives")(MaxAlternatives.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxSpeakerLabels)) __obj.updateDynamic("MaxSpeakerLabels")(MaxSpeakerLabels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ShowAlternatives)) __obj.updateDynamic("ShowAlternatives")(ShowAlternatives.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ShowSpeakerLabels)) __obj.updateDynamic("ShowSpeakerLabels")(ShowSpeakerLabels.get.asInstanceOf[js.Any])
     if (VocabularyFilterMethod != null) __obj.updateDynamic("VocabularyFilterMethod")(VocabularyFilterMethod.asInstanceOf[js.Any])
     if (VocabularyFilterName != null) __obj.updateDynamic("VocabularyFilterName")(VocabularyFilterName.asInstanceOf[js.Any])
     if (VocabularyName != null) __obj.updateDynamic("VocabularyName")(VocabularyName.asInstanceOf[js.Any])

@@ -39,14 +39,14 @@ object ParticleEmitterEdgeZoneConfig {
     source: EdgeZoneSource,
     `type`: String,
     seamless: js.UndefOr[Boolean] = js.undefined,
-    stepRate: Int | Double = null,
+    stepRate: js.UndefOr[Double] = js.undefined,
     yoyo: js.UndefOr[Boolean] = js.undefined
   ): ParticleEmitterEdgeZoneConfig = {
     val __obj = js.Dynamic.literal(quantity = quantity.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(seamless)) __obj.updateDynamic("seamless")(seamless.asInstanceOf[js.Any])
-    if (stepRate != null) __obj.updateDynamic("stepRate")(stepRate.asInstanceOf[js.Any])
-    if (!js.isUndefined(yoyo)) __obj.updateDynamic("yoyo")(yoyo.asInstanceOf[js.Any])
+    if (!js.isUndefined(seamless)) __obj.updateDynamic("seamless")(seamless.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stepRate)) __obj.updateDynamic("stepRate")(stepRate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yoyo)) __obj.updateDynamic("yoyo")(yoyo.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParticleEmitterEdgeZoneConfig]
   }
 }

@@ -1,8 +1,8 @@
 package typings.awsLambda.lexMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsLambda.AnonAlias
-import typings.awsLambda.AnonConfirmationStatus
+import typings.awsLambda.anon.Alias
+import typings.awsLambda.anon.ConfirmationStatus
 import typings.awsLambda.awsLambdaStrings.DialogCodeHook
 import typings.awsLambda.awsLambdaStrings.FulfillmentCodeHook
 import typings.awsLambda.awsLambdaStrings.Text
@@ -13,8 +13,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LexEvent extends js.Object {
-  var bot: AnonAlias
-  var currentIntent: AnonConfirmationStatus
+  var bot: Alias
+  var currentIntent: ConfirmationStatus
   var inputTranscript: String
   var invocationSource: DialogCodeHook | FulfillmentCodeHook
   var messageVersion: `1Dot0`
@@ -27,8 +27,8 @@ trait LexEvent extends js.Object {
 object LexEvent {
   @scala.inline
   def apply(
-    bot: AnonAlias,
-    currentIntent: AnonConfirmationStatus,
+    bot: Alias,
+    currentIntent: ConfirmationStatus,
     inputTranscript: String,
     invocationSource: DialogCodeHook | FulfillmentCodeHook,
     messageVersion: `1Dot0`,
@@ -37,8 +37,7 @@ object LexEvent {
     userId: String,
     requestAttributes: StringDictionary[String] = null
   ): LexEvent = {
-    val __obj = js.Dynamic.literal(bot = bot.asInstanceOf[js.Any], currentIntent = currentIntent.asInstanceOf[js.Any], inputTranscript = inputTranscript.asInstanceOf[js.Any], invocationSource = invocationSource.asInstanceOf[js.Any], messageVersion = messageVersion.asInstanceOf[js.Any], outputDialogMode = outputDialogMode.asInstanceOf[js.Any], sessionAttributes = sessionAttributes.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
-    if (requestAttributes != null) __obj.updateDynamic("requestAttributes")(requestAttributes.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bot = bot.asInstanceOf[js.Any], currentIntent = currentIntent.asInstanceOf[js.Any], inputTranscript = inputTranscript.asInstanceOf[js.Any], invocationSource = invocationSource.asInstanceOf[js.Any], messageVersion = messageVersion.asInstanceOf[js.Any], outputDialogMode = outputDialogMode.asInstanceOf[js.Any], sessionAttributes = sessionAttributes.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any], requestAttributes = requestAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[LexEvent]
   }
 }

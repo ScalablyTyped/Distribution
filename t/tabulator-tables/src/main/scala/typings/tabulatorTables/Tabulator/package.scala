@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object Tabulator {
   type CellEditEventCallback = js.Function1[/* cell */ typings.tabulatorTables.Tabulator.CellComponent, scala.Unit]
   type CellEventCallback = js.Function2[
-    /* e */ js.Any, 
+    /* e */ typings.std.UIEvent, 
     /* cell */ typings.tabulatorTables.Tabulator.CellComponent, 
     scala.Unit
   ]
@@ -23,17 +23,17 @@ package object Tabulator {
   / * values * / js.Array[js.Any], 
   / * data * / js.Array[js.Any], 
   / * calcParams * / js.Object, 
-  scala.Double]
+  js.Any]
   */
   type ColumnCalc = typings.tabulatorTables.Tabulator._ColumnCalc | (js.Function3[
     /* values */ js.Array[js.Any], 
     /* data */ js.Array[js.Any], 
     /* calcParams */ js.Object, 
-    scala.Double
+    js.Any
   ])
   type ColumnCalcParams = js.Function2[/* values */ js.Any, /* data */ js.Any, js.Any]
   type ColumnEventCallback = js.Function2[
-    /* e */ js.Any, 
+    /* e */ typings.std.UIEvent, 
     /* column */ typings.tabulatorTables.Tabulator.ColumnComponent, 
     scala.Unit
   ]
@@ -170,13 +170,17 @@ package object Tabulator {
   type FormatterParams = typings.tabulatorTables.Tabulator._FormatterParams | (js.Function1[/* cell */ typings.tabulatorTables.Tabulator.CellComponent, js.Object]) | typings.tabulatorTables.Tabulator.JSONRecord
   type GlobalTooltipOption = scala.Boolean | (js.Function1[/* cell */ typings.tabulatorTables.Tabulator.CellComponent, java.lang.String])
   type GroupEventCallback = js.Function2[
-    /* e */ js.Any, 
+    /* e */ typings.std.UIEvent, 
     /* group */ typings.tabulatorTables.Tabulator.GroupComponent, 
     scala.Unit
   ]
   type JSONRecord = typings.std.Record[java.lang.String, java.lang.String | scala.Double | scala.Boolean]
   type RowChangedCallback = js.Function1[/* row */ typings.tabulatorTables.Tabulator.RowComponent, scala.Unit]
-  type RowEventCallback = js.Function2[/* e */ js.Any, /* row */ typings.tabulatorTables.Tabulator.RowComponent, scala.Unit]
+  type RowEventCallback = js.Function2[
+    /* e */ typings.std.UIEvent, 
+    /* row */ typings.tabulatorTables.Tabulator.RowComponent, 
+    scala.Unit
+  ]
   type RowLookup = typings.tabulatorTables.Tabulator.RowComponent | typings.std.HTMLElement | java.lang.String | scala.Double | (js.Array[scala.Double | java.lang.String])
   type StandardStringParam = java.lang.String | typings.std.HTMLElement | (js.Function0[java.lang.String | typings.std.HTMLElement])
   type ValueBooleanCallback = js.Function1[/* value */ js.Any, scala.Boolean]

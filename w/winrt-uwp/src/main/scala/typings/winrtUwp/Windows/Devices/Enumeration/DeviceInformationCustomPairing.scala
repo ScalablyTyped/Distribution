@@ -10,9 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a custom pairing for a DeviceInformation object. */
-@JSGlobal("Windows.Devices.Enumeration.DeviceInformationCustomPairing")
 @js.native
-abstract class DeviceInformationCustomPairing () extends js.Object {
+trait DeviceInformationCustomPairing extends js.Object {
   /** Raised when a pairing action is requested. */
   @JSName("onpairingrequested")
   var onpairingrequested_Original: TypedEventHandler[DeviceInformationCustomPairing, DevicePairingRequestedEventArgs] = js.native

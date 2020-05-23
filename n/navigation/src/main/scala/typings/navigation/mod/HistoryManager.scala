@@ -1,7 +1,7 @@
 package typings.navigation.mod
 
 import typings.std.HTMLAnchorElement
-import typings.std.Location_
+import typings.std.Location
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +16,10 @@ trait HistoryManager extends js.Object {
     * Adds browser history
     * @param url The current url
     * @param replace A value indicating whether to replace the current
+    * @param stateContext The current StateContext
     * browser history entry
     */
-  def addHistory(url: String, replace: Boolean): Unit = js.native
+  def addHistory(url: String, replace: Boolean, stateContext: StateContext): Unit = js.native
   /**
     * Gets the current location
     */
@@ -31,7 +32,7 @@ trait HistoryManager extends js.Object {
     * Gets a Url from the anchor or location
     */
   def getUrl(hrefElement: HTMLAnchorElement): String = js.native
-  def getUrl(hrefElement: Location_): String = js.native
+  def getUrl(hrefElement: Location): String = js.native
   /**
     * Registers browser history event listeners
     * @param navigateHistory The history navigation event handler

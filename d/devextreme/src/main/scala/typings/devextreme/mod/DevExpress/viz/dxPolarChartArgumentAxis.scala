@@ -1,6 +1,6 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.AnonColorOpacity
+import typings.devextreme.anon.ColorOpacity
 import typings.devextreme.devextremeStrings.allArgumentPoints
 import typings.devextreme.devextremeStrings.betweenLabels
 import typings.devextreme.devextremeStrings.continuous
@@ -78,7 +78,7 @@ object dxPolarChartArgumentAxis {
   def apply(
     allowDecimals: js.UndefOr[Boolean] = js.undefined,
     argumentType: datetime | numeric | string_ = null,
-    axisDivisionFactor: Int | Double = null,
+    axisDivisionFactor: js.UndefOr[Double] = js.undefined,
     categories: js.Array[Double | String | Date] = null,
     color: String = null,
     constantLineStyle: dxPolarChartCommonAxisSettingsConstantLineStyle = null,
@@ -86,60 +86,60 @@ object dxPolarChartArgumentAxis {
     discreteAxisDivisionMode: betweenLabels | crossLabels = null,
     endOnTick: js.UndefOr[Boolean] = js.undefined,
     firstPointOnStartAngle: js.UndefOr[Boolean] = js.undefined,
-    grid: AnonColorOpacity = null,
+    grid: ColorOpacity = null,
     hoverMode: allArgumentPoints | none = null,
     inverted: js.UndefOr[Boolean] = js.undefined,
     label: dxPolarChartArgumentAxisLabel = null,
-    linearThreshold: Int | Double = null,
-    logarithmBase: Int | Double = null,
-    minorGrid: AnonColorOpacity = null,
+    linearThreshold: js.UndefOr[Double] = js.undefined,
+    logarithmBase: js.UndefOr[Double] = js.undefined,
+    minorGrid: ColorOpacity = null,
     minorTick: dxPolarChartArgumentAxisMinorTick = null,
-    minorTickCount: Int | Double = null,
+    minorTickCount: js.UndefOr[Double] = js.undefined,
     minorTickInterval: Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year = null,
-    opacity: Int | Double = null,
-    originValue: Int | Double = null,
-    period: Int | Double = null,
-    startAngle: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
+    originValue: js.UndefOr[Double] = js.undefined,
+    period: js.UndefOr[Double] = js.undefined,
+    startAngle: js.UndefOr[Double] = js.undefined,
     stripStyle: dxPolarChartCommonAxisSettingsStripStyle = null,
     strips: js.Array[dxPolarChartArgumentAxisStrips] = null,
     tick: dxPolarChartArgumentAxisTick = null,
     tickInterval: Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year = null,
     `type`: continuous | discrete | logarithmic = null,
     visible: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): dxPolarChartArgumentAxis = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals.get.asInstanceOf[js.Any])
     if (argumentType != null) __obj.updateDynamic("argumentType")(argumentType.asInstanceOf[js.Any])
-    if (axisDivisionFactor != null) __obj.updateDynamic("axisDivisionFactor")(axisDivisionFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(axisDivisionFactor)) __obj.updateDynamic("axisDivisionFactor")(axisDivisionFactor.get.asInstanceOf[js.Any])
     if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (constantLineStyle != null) __obj.updateDynamic("constantLineStyle")(constantLineStyle.asInstanceOf[js.Any])
     if (constantLines != null) __obj.updateDynamic("constantLines")(constantLines.asInstanceOf[js.Any])
     if (discreteAxisDivisionMode != null) __obj.updateDynamic("discreteAxisDivisionMode")(discreteAxisDivisionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(endOnTick)) __obj.updateDynamic("endOnTick")(endOnTick.asInstanceOf[js.Any])
-    if (!js.isUndefined(firstPointOnStartAngle)) __obj.updateDynamic("firstPointOnStartAngle")(firstPointOnStartAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(endOnTick)) __obj.updateDynamic("endOnTick")(endOnTick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstPointOnStartAngle)) __obj.updateDynamic("firstPointOnStartAngle")(firstPointOnStartAngle.get.asInstanceOf[js.Any])
     if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
     if (hoverMode != null) __obj.updateDynamic("hoverMode")(hoverMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.asInstanceOf[js.Any])
+    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (linearThreshold != null) __obj.updateDynamic("linearThreshold")(linearThreshold.asInstanceOf[js.Any])
-    if (logarithmBase != null) __obj.updateDynamic("logarithmBase")(logarithmBase.asInstanceOf[js.Any])
+    if (!js.isUndefined(linearThreshold)) __obj.updateDynamic("linearThreshold")(linearThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(logarithmBase)) __obj.updateDynamic("logarithmBase")(logarithmBase.get.asInstanceOf[js.Any])
     if (minorGrid != null) __obj.updateDynamic("minorGrid")(minorGrid.asInstanceOf[js.Any])
     if (minorTick != null) __obj.updateDynamic("minorTick")(minorTick.asInstanceOf[js.Any])
-    if (minorTickCount != null) __obj.updateDynamic("minorTickCount")(minorTickCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(minorTickCount)) __obj.updateDynamic("minorTickCount")(minorTickCount.get.asInstanceOf[js.Any])
     if (minorTickInterval != null) __obj.updateDynamic("minorTickInterval")(minorTickInterval.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (originValue != null) __obj.updateDynamic("originValue")(originValue.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(originValue)) __obj.updateDynamic("originValue")(originValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(period)) __obj.updateDynamic("period")(period.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startAngle)) __obj.updateDynamic("startAngle")(startAngle.get.asInstanceOf[js.Any])
     if (stripStyle != null) __obj.updateDynamic("stripStyle")(stripStyle.asInstanceOf[js.Any])
     if (strips != null) __obj.updateDynamic("strips")(strips.asInstanceOf[js.Any])
     if (tick != null) __obj.updateDynamic("tick")(tick.asInstanceOf[js.Any])
     if (tickInterval != null) __obj.updateDynamic("tickInterval")(tickInterval.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxPolarChartArgumentAxis]
   }
 }

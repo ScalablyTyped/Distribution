@@ -11,9 +11,9 @@ trait MapMarkerTooltipAnimationClose extends js.Object {
 
 object MapMarkerTooltipAnimationClose {
   @scala.inline
-  def apply(duration: Int | Double = null, effects: String = null): MapMarkerTooltipAnimationClose = {
+  def apply(duration: js.UndefOr[Double] = js.undefined, effects: String = null): MapMarkerTooltipAnimationClose = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (effects != null) __obj.updateDynamic("effects")(effects.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapMarkerTooltipAnimationClose]
   }

@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,8 +12,4 @@ trait IDBCursorWithValue extends IDBCursor {
     */
   val value: js.Any = js.native
 }
-
-@JSGlobal("IDBCursorWithValue")
-@js.native
-object IDBCursorWithValue extends Instantiable0[IDBCursorWithValue]
 

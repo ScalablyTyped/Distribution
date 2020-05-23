@@ -5,10 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Called when a print task option has changed. */
-@JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintTaskOptionChangedEventArgs")
-@js.native
-abstract class PrintTaskOptionChangedEventArgs () extends js.Object {
+trait PrintTaskOptionChangedEventArgs extends js.Object {
   /** Gets the ID of the print task option that changed. */
-  var optionId: js.Any = js.native
+  var optionId: js.Any
+}
+
+object PrintTaskOptionChangedEventArgs {
+  @scala.inline
+  def apply(optionId: js.Any): PrintTaskOptionChangedEventArgs = {
+    val __obj = js.Dynamic.literal(optionId = optionId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PrintTaskOptionChangedEventArgs]
+  }
 }
 

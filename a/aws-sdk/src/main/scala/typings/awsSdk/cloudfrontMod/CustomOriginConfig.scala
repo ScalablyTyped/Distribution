@@ -38,13 +38,13 @@ object CustomOriginConfig {
     HTTPPort: integer,
     HTTPSPort: integer,
     OriginProtocolPolicy: OriginProtocolPolicy,
-    OriginKeepaliveTimeout: Int | Double = null,
-    OriginReadTimeout: Int | Double = null,
+    OriginKeepaliveTimeout: js.UndefOr[integer] = js.undefined,
+    OriginReadTimeout: js.UndefOr[integer] = js.undefined,
     OriginSslProtocols: OriginSslProtocols = null
   ): CustomOriginConfig = {
     val __obj = js.Dynamic.literal(HTTPPort = HTTPPort.asInstanceOf[js.Any], HTTPSPort = HTTPSPort.asInstanceOf[js.Any], OriginProtocolPolicy = OriginProtocolPolicy.asInstanceOf[js.Any])
-    if (OriginKeepaliveTimeout != null) __obj.updateDynamic("OriginKeepaliveTimeout")(OriginKeepaliveTimeout.asInstanceOf[js.Any])
-    if (OriginReadTimeout != null) __obj.updateDynamic("OriginReadTimeout")(OriginReadTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(OriginKeepaliveTimeout)) __obj.updateDynamic("OriginKeepaliveTimeout")(OriginKeepaliveTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(OriginReadTimeout)) __obj.updateDynamic("OriginReadTimeout")(OriginReadTimeout.get.asInstanceOf[js.Any])
     if (OriginSslProtocols != null) __obj.updateDynamic("OriginSslProtocols")(OriginSslProtocols.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomOriginConfig]
   }

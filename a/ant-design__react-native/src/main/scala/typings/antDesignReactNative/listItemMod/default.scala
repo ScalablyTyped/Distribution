@@ -1,7 +1,7 @@
 package typings.antDesignReactNative.listItemMod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.antDesignReactNative.PartialListItemProps
+import typings.antDesignReactNative.anon.PartialListItemProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

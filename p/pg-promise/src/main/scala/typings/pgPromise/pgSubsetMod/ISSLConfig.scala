@@ -34,7 +34,7 @@ object ISSLConfig {
     passphrase: String = null,
     pfx: String | Buffer | (js.Array[String | Buffer | js.Object]) = null,
     rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
-    secureOptions: Int | Double = null
+    secureOptions: js.UndefOr[Double] = js.undefined
   ): ISSLConfig = {
     val __obj = js.Dynamic.literal()
     if (NPNProtocols != null) __obj.updateDynamic("NPNProtocols")(NPNProtocols.asInstanceOf[js.Any])
@@ -44,8 +44,8 @@ object ISSLConfig {
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
     if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
-    if (secureOptions != null) __obj.updateDynamic("secureOptions")(secureOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(secureOptions)) __obj.updateDynamic("secureOptions")(secureOptions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISSLConfig]
   }
 }

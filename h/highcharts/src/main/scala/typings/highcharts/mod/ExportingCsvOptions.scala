@@ -59,17 +59,17 @@ trait ExportingCsvOptions extends js.Object {
 object ExportingCsvOptions {
   @scala.inline
   def apply(
-    columnHeaderFormatter: js.Function = null,
+    columnHeaderFormatter: js.UndefOr[Null | js.Function] = js.undefined,
     dateFormat: String = null,
-    decimalPoint: String = null,
-    itemDelimiter: String = null,
+    decimalPoint: js.UndefOr[Null | String] = js.undefined,
+    itemDelimiter: js.UndefOr[Null | String] = js.undefined,
     lineDelimiter: String = null
   ): ExportingCsvOptions = {
     val __obj = js.Dynamic.literal()
-    if (columnHeaderFormatter != null) __obj.updateDynamic("columnHeaderFormatter")(columnHeaderFormatter.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnHeaderFormatter)) __obj.updateDynamic("columnHeaderFormatter")(columnHeaderFormatter.asInstanceOf[js.Any])
     if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
-    if (decimalPoint != null) __obj.updateDynamic("decimalPoint")(decimalPoint.asInstanceOf[js.Any])
-    if (itemDelimiter != null) __obj.updateDynamic("itemDelimiter")(itemDelimiter.asInstanceOf[js.Any])
+    if (!js.isUndefined(decimalPoint)) __obj.updateDynamic("decimalPoint")(decimalPoint.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemDelimiter)) __obj.updateDynamic("itemDelimiter")(itemDelimiter.asInstanceOf[js.Any])
     if (lineDelimiter != null) __obj.updateDynamic("lineDelimiter")(lineDelimiter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportingCsvOptions]
   }

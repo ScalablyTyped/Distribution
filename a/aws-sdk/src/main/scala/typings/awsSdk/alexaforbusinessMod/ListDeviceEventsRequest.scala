@@ -29,12 +29,12 @@ object ListDeviceEventsRequest {
   def apply(
     DeviceArn: Arn,
     EventType: DeviceEventType = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: NextToken = null
   ): ListDeviceEventsRequest = {
     val __obj = js.Dynamic.literal(DeviceArn = DeviceArn.asInstanceOf[js.Any])
     if (EventType != null) __obj.updateDynamic("EventType")(EventType.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDeviceEventsRequest]
   }

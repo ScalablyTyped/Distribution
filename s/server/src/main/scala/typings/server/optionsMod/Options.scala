@@ -1,9 +1,9 @@
 package typings.server.optionsMod
 
 import typings.expressSession.mod.SessionOptions
-import typings.server.AnonBody
-import typings.server.AnonLevel
-import typings.server.IHelmetConfigurationcsurf
+import typings.server.anon.Body
+import typings.server.anon.IHelmetConfigurationcsurf
+import typings.server.anon.Level
 import typings.server.commonMod.LogLevel
 import typings.server.serverBooleans.`false`
 import scala.scalajs.js
@@ -14,8 +14,8 @@ trait Options extends js.Object {
   var engine: js.UndefOr[String] = js.undefined
   var env: js.UndefOr[String] = js.undefined
   var favicon: js.UndefOr[String] = js.undefined
-  var log: js.UndefOr[LogLevel | AnonLevel] = js.undefined
-  var parser: js.UndefOr[AnonBody] = js.undefined
+  var log: js.UndefOr[LogLevel | Level] = js.undefined
+  var parser: js.UndefOr[Body] = js.undefined
   var port: js.UndefOr[Double] = js.undefined
   var public: js.UndefOr[String] = js.undefined
   var secret: js.UndefOr[String] = js.undefined
@@ -30,9 +30,9 @@ object Options {
     engine: String = null,
     env: String = null,
     favicon: String = null,
-    log: LogLevel | AnonLevel = null,
-    parser: AnonBody = null,
-    port: Int | Double = null,
+    log: LogLevel | Level = null,
+    parser: Body = null,
+    port: js.UndefOr[Double] = js.undefined,
     public: String = null,
     secret: String = null,
     security: `false` | IHelmetConfigurationcsurf = null,
@@ -45,7 +45,7 @@ object Options {
     if (favicon != null) __obj.updateDynamic("favicon")(favicon.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
     if (parser != null) __obj.updateDynamic("parser")(parser.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (public != null) __obj.updateDynamic("public")(public.asInstanceOf[js.Any])
     if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
     if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])

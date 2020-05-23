@@ -47,7 +47,7 @@ trait JobSettings extends js.Object {
 object JobSettings {
   @scala.inline
   def apply(
-    AdAvailOffset: Int | Double = null,
+    AdAvailOffset: js.UndefOr[integerMinNegative1000Max1000] = js.undefined,
     AvailBlanking: AvailBlanking = null,
     Esam: EsamSettings = null,
     Inputs: listOfInput = null,
@@ -58,7 +58,7 @@ object JobSettings {
     TimedMetadataInsertion: TimedMetadataInsertion = null
   ): JobSettings = {
     val __obj = js.Dynamic.literal()
-    if (AdAvailOffset != null) __obj.updateDynamic("AdAvailOffset")(AdAvailOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(AdAvailOffset)) __obj.updateDynamic("AdAvailOffset")(AdAvailOffset.get.asInstanceOf[js.Any])
     if (AvailBlanking != null) __obj.updateDynamic("AvailBlanking")(AvailBlanking.asInstanceOf[js.Any])
     if (Esam != null) __obj.updateDynamic("Esam")(Esam.asInstanceOf[js.Any])
     if (Inputs != null) __obj.updateDynamic("Inputs")(Inputs.asInstanceOf[js.Any])

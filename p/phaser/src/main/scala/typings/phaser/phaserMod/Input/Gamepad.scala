@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.Input
 
+import typings.phaser.Phaser.Events.EventEmitter
 import typings.phaser.Phaser.Types.Input.Gamepad.Pad
 import typings.phaser.integer
 import scala.scalajs.js
@@ -22,6 +23,42 @@ object Gamepad extends js.Object {
       * @param index The index of this Axis.
       */
     def this(pad: typings.phaser.Phaser.Input.Gamepad.Gamepad, index: integer) = this()
+    /**
+      * An event emitter to use to emit the axis events.
+      */
+    /* CompleteClass */
+    override var events: EventEmitter = js.native
+    /**
+      * The index of this Axis.
+      */
+    /* CompleteClass */
+    override var index: integer = js.native
+    /**
+      * A reference to the Gamepad that this Axis belongs to.
+      */
+    /* CompleteClass */
+    override var pad: typings.phaser.Phaser.Input.Gamepad.Gamepad = js.native
+    /**
+      * Movement tolerance threshold below which axis values are ignored in `getValue`.
+      */
+    /* CompleteClass */
+    override var threshold: Double = js.native
+    /**
+      * The raw axis value, between -1 and 1 with 0 being dead center.
+      * Use the method `getValue` to get a normalized value with the threshold applied.
+      */
+    /* CompleteClass */
+    override var value: Double = js.native
+    /**
+      * Destroys this Axis instance and releases external references it holds.
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    /**
+      * Applies the `threshold` value to the axis and returns it.
+      */
+    /* CompleteClass */
+    override def getValue(): Double = js.native
   }
   
   /**
@@ -37,6 +74,42 @@ object Gamepad extends js.Object {
       * @param index The index of this Button.
       */
     def this(pad: typings.phaser.Phaser.Input.Gamepad.Gamepad, index: integer) = this()
+    /**
+      * An event emitter to use to emit the button events.
+      */
+    /* CompleteClass */
+    override var events: EventEmitter = js.native
+    /**
+      * The index of this Button.
+      */
+    /* CompleteClass */
+    override var index: integer = js.native
+    /**
+      * A reference to the Gamepad that this Button belongs to.
+      */
+    /* CompleteClass */
+    override var pad: typings.phaser.Phaser.Input.Gamepad.Gamepad = js.native
+    /**
+      * Is the Button being pressed down or not?
+      */
+    /* CompleteClass */
+    override var pressed: Boolean = js.native
+    /**
+      * Can be set for analogue buttons to enable a 'pressure' threshold,
+      * before a button is considered as being 'pressed'.
+      */
+    /* CompleteClass */
+    override var threshold: Double = js.native
+    /**
+      * Between 0 and 1.
+      */
+    /* CompleteClass */
+    override var value: Double = js.native
+    /**
+      * Destroys this Button instance and releases external references it holds.
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
   }
   
   /**

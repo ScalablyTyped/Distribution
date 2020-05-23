@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,8 +15,4 @@ trait RTCRtpTransceiver extends js.Object {
   def setCodecPreferences(codecs: Iterable[RTCRtpCodecCapability]): Unit = js.native
   def stop(): Unit = js.native
 }
-
-@JSGlobal("RTCRtpTransceiver")
-@js.native
-object RTCRtpTransceiver extends Instantiable0[RTCRtpTransceiver]
 

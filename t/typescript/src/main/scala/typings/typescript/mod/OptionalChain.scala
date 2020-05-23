@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
   - typings.typescript.mod.PropertyAccessChain
   - typings.typescript.mod.ElementAccessChain
   - typings.typescript.mod.CallChain
+  - typings.typescript.mod.NonNullChain
 */
 trait OptionalChain extends js.Object
 

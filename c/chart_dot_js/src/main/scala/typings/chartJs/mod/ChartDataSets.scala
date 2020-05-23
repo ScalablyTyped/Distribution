@@ -31,7 +31,7 @@ trait ChartDataSets extends js.Object {
   var borderWidth: js.UndefOr[BorderWidth | js.Array[BorderWidth] | Scriptable[BorderWidth]] = js.undefined
   var categoryPercentage: js.UndefOr[Double] = js.undefined
   var cubicInterpolationMode: js.UndefOr[default | monotone] = js.undefined
-  var data: js.UndefOr[js.Array[js.UndefOr[ChartPoint | Double | Null]]] = js.undefined
+  var data: js.UndefOr[js.Array[js.UndefOr[js.Array[Double] | ChartPoint | Double | Null]]] = js.undefined
   var fill: js.UndefOr[Boolean | Double | String] = js.undefined
   var hidden: js.UndefOr[Boolean] = js.undefined
   var hideInLegendAndTooltip: js.UndefOr[Boolean] = js.undefined
@@ -74,19 +74,19 @@ object ChartDataSets {
   @scala.inline
   def apply(
     backgroundColor: ChartColor | js.Array[ChartColor] | Scriptable[ChartColor] = null,
-    barPercentage: Int | Double = null,
+    barPercentage: js.UndefOr[Double] = js.undefined,
     barThickness: Double | flex = null,
     borderAlign: BorderAlignment | js.Array[BorderAlignment] | Scriptable[BorderAlignment] = null,
     borderCapStyle: butt | round | square = null,
     borderColor: ChartColor | js.Array[ChartColor] | Scriptable[ChartColor] = null,
     borderDash: js.Array[Double] = null,
-    borderDashOffset: Int | Double = null,
+    borderDashOffset: js.UndefOr[Double] = js.undefined,
     borderJoinStyle: bevel | round | miter = null,
     borderSkipped: PositionType | js.Array[PositionType] | Scriptable[PositionType] = null,
     borderWidth: BorderWidth | js.Array[BorderWidth] | Scriptable[BorderWidth] = null,
-    categoryPercentage: Int | Double = null,
+    categoryPercentage: js.UndefOr[Double] = js.undefined,
     cubicInterpolationMode: default | monotone = null,
-    data: js.Array[js.UndefOr[ChartPoint | Double | Null]] = null,
+    data: js.Array[js.UndefOr[js.Array[Double] | ChartPoint | Double | Null]] = null,
     fill: Boolean | Double | String = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     hideInLegendAndTooltip: js.UndefOr[Boolean] = js.undefined,
@@ -94,12 +94,12 @@ object ChartDataSets {
     hoverBackgroundColor: ChartColor | js.Array[ChartColor] | Scriptable[ChartColor] = null,
     hoverBorderColor: ChartColor | js.Array[ChartColor] | Scriptable[ChartColor] = null,
     hoverBorderWidth: Double | js.Array[Double] | Scriptable[Double] = null,
-    hoverRadius: Int | Double = null,
+    hoverRadius: js.UndefOr[Double] = js.undefined,
     label: String = null,
-    lineTension: Int | Double = null,
-    maxBarThickness: Int | Double = null,
-    minBarLength: Int | Double = null,
-    order: Int | Double = null,
+    lineTension: js.UndefOr[Double] = js.undefined,
+    maxBarThickness: js.UndefOr[Double] = js.undefined,
+    minBarLength: js.UndefOr[Double] = js.undefined,
+    order: js.UndefOr[Double] = js.undefined,
     pointBackgroundColor: ChartColor | js.Array[ChartColor] | Scriptable[ChartColor] = null,
     pointBorderColor: ChartColor | js.Array[ChartColor] | Scriptable[ChartColor] = null,
     pointBorderWidth: Double | js.Array[Double] | Scriptable[Double] = null,
@@ -118,38 +118,38 @@ object ChartDataSets {
     stack: String = null,
     steppedLine: before | after | middle | Boolean = null,
     `type`: ChartType | String = null,
-    weight: Int | Double = null,
+    weight: js.UndefOr[Double] = js.undefined,
     xAxisID: String = null,
     yAxisID: String = null
   ): ChartDataSets = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (barPercentage != null) __obj.updateDynamic("barPercentage")(barPercentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(barPercentage)) __obj.updateDynamic("barPercentage")(barPercentage.get.asInstanceOf[js.Any])
     if (barThickness != null) __obj.updateDynamic("barThickness")(barThickness.asInstanceOf[js.Any])
     if (borderAlign != null) __obj.updateDynamic("borderAlign")(borderAlign.asInstanceOf[js.Any])
     if (borderCapStyle != null) __obj.updateDynamic("borderCapStyle")(borderCapStyle.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderDash != null) __obj.updateDynamic("borderDash")(borderDash.asInstanceOf[js.Any])
-    if (borderDashOffset != null) __obj.updateDynamic("borderDashOffset")(borderDashOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderDashOffset)) __obj.updateDynamic("borderDashOffset")(borderDashOffset.get.asInstanceOf[js.Any])
     if (borderJoinStyle != null) __obj.updateDynamic("borderJoinStyle")(borderJoinStyle.asInstanceOf[js.Any])
     if (borderSkipped != null) __obj.updateDynamic("borderSkipped")(borderSkipped.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (categoryPercentage != null) __obj.updateDynamic("categoryPercentage")(categoryPercentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(categoryPercentage)) __obj.updateDynamic("categoryPercentage")(categoryPercentage.get.asInstanceOf[js.Any])
     if (cubicInterpolationMode != null) __obj.updateDynamic("cubicInterpolationMode")(cubicInterpolationMode.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideInLegendAndTooltip)) __obj.updateDynamic("hideInLegendAndTooltip")(hideInLegendAndTooltip.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideInLegendAndTooltip)) __obj.updateDynamic("hideInLegendAndTooltip")(hideInLegendAndTooltip.get.asInstanceOf[js.Any])
     if (hitRadius != null) __obj.updateDynamic("hitRadius")(hitRadius.asInstanceOf[js.Any])
     if (hoverBackgroundColor != null) __obj.updateDynamic("hoverBackgroundColor")(hoverBackgroundColor.asInstanceOf[js.Any])
     if (hoverBorderColor != null) __obj.updateDynamic("hoverBorderColor")(hoverBorderColor.asInstanceOf[js.Any])
     if (hoverBorderWidth != null) __obj.updateDynamic("hoverBorderWidth")(hoverBorderWidth.asInstanceOf[js.Any])
-    if (hoverRadius != null) __obj.updateDynamic("hoverRadius")(hoverRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverRadius)) __obj.updateDynamic("hoverRadius")(hoverRadius.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (lineTension != null) __obj.updateDynamic("lineTension")(lineTension.asInstanceOf[js.Any])
-    if (maxBarThickness != null) __obj.updateDynamic("maxBarThickness")(maxBarThickness.asInstanceOf[js.Any])
-    if (minBarLength != null) __obj.updateDynamic("minBarLength")(minBarLength.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineTension)) __obj.updateDynamic("lineTension")(lineTension.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBarThickness)) __obj.updateDynamic("maxBarThickness")(maxBarThickness.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minBarLength)) __obj.updateDynamic("minBarLength")(minBarLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(order)) __obj.updateDynamic("order")(order.get.asInstanceOf[js.Any])
     if (pointBackgroundColor != null) __obj.updateDynamic("pointBackgroundColor")(pointBackgroundColor.asInstanceOf[js.Any])
     if (pointBorderColor != null) __obj.updateDynamic("pointBorderColor")(pointBorderColor.asInstanceOf[js.Any])
     if (pointBorderWidth != null) __obj.updateDynamic("pointBorderWidth")(pointBorderWidth.asInstanceOf[js.Any])
@@ -163,12 +163,12 @@ object ChartDataSets {
     if (pointStyle != null) __obj.updateDynamic("pointStyle")(pointStyle.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLine)) __obj.updateDynamic("showLine")(showLine.asInstanceOf[js.Any])
-    if (!js.isUndefined(spanGaps)) __obj.updateDynamic("spanGaps")(spanGaps.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLine)) __obj.updateDynamic("showLine")(showLine.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spanGaps)) __obj.updateDynamic("spanGaps")(spanGaps.get.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     if (steppedLine != null) __obj.updateDynamic("steppedLine")(steppedLine.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     if (xAxisID != null) __obj.updateDynamic("xAxisID")(xAxisID.asInstanceOf[js.Any])
     if (yAxisID != null) __obj.updateDynamic("yAxisID")(yAxisID.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartDataSets]

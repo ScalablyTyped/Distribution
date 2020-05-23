@@ -67,7 +67,7 @@ object Quantity {
     id: String = null,
     system: uri = null,
     unit: String = null,
-    value: Int | Double = null
+    value: js.UndefOr[decimal] = js.undefined
   ): Quantity = {
     val __obj = js.Dynamic.literal()
     if (_code != null) __obj.updateDynamic("_code")(_code.asInstanceOf[js.Any])
@@ -84,7 +84,7 @@ object Quantity {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (system != null) __obj.updateDynamic("system")(system.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Quantity]
   }
 }

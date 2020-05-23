@@ -14,10 +14,13 @@ trait IFollowupIntentInfo extends js.Object {
 
 object IFollowupIntentInfo {
   @scala.inline
-  def apply(followupIntentName: String = null, parentFollowupIntentName: String = null): IFollowupIntentInfo = {
+  def apply(
+    followupIntentName: js.UndefOr[Null | String] = js.undefined,
+    parentFollowupIntentName: js.UndefOr[Null | String] = js.undefined
+  ): IFollowupIntentInfo = {
     val __obj = js.Dynamic.literal()
-    if (followupIntentName != null) __obj.updateDynamic("followupIntentName")(followupIntentName.asInstanceOf[js.Any])
-    if (parentFollowupIntentName != null) __obj.updateDynamic("parentFollowupIntentName")(parentFollowupIntentName.asInstanceOf[js.Any])
+    if (!js.isUndefined(followupIntentName)) __obj.updateDynamic("followupIntentName")(followupIntentName.asInstanceOf[js.Any])
+    if (!js.isUndefined(parentFollowupIntentName)) __obj.updateDynamic("parentFollowupIntentName")(parentFollowupIntentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFollowupIntentInfo]
   }
 }

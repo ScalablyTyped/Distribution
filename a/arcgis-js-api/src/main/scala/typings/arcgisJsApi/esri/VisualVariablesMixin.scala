@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -62,7 +61,11 @@ trait VisualVariablesMixin extends js.Object {
   var visualVariables: js.Array[VisualVariable]
 }
 
-@JSGlobal("__esri.VisualVariablesMixin")
-@js.native
-object VisualVariablesMixin extends TopLevel[VisualVariablesMixinConstructor]
+object VisualVariablesMixin {
+  @scala.inline
+  def apply(visualVariables: js.Array[VisualVariable]): VisualVariablesMixin = {
+    val __obj = js.Dynamic.literal(visualVariables = visualVariables.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VisualVariablesMixin]
+  }
+}
 

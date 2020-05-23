@@ -55,21 +55,21 @@ object CreateQualificationTypeRequest {
     Name: String,
     QualificationTypeStatus: QualificationTypeStatus,
     AnswerKey: String = null,
-    AutoGranted: js.UndefOr[scala.Boolean] = js.undefined,
-    AutoGrantedValue: Int | Double = null,
+    AutoGranted: js.UndefOr[Boolean] = js.undefined,
+    AutoGrantedValue: js.UndefOr[Integer] = js.undefined,
     Keywords: String = null,
-    RetryDelayInSeconds: Int | Double = null,
+    RetryDelayInSeconds: js.UndefOr[Long] = js.undefined,
     Test: String = null,
-    TestDurationInSeconds: Int | Double = null
+    TestDurationInSeconds: js.UndefOr[Long] = js.undefined
   ): CreateQualificationTypeRequest = {
     val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], QualificationTypeStatus = QualificationTypeStatus.asInstanceOf[js.Any])
     if (AnswerKey != null) __obj.updateDynamic("AnswerKey")(AnswerKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoGranted)) __obj.updateDynamic("AutoGranted")(AutoGranted.asInstanceOf[js.Any])
-    if (AutoGrantedValue != null) __obj.updateDynamic("AutoGrantedValue")(AutoGrantedValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoGranted)) __obj.updateDynamic("AutoGranted")(AutoGranted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoGrantedValue)) __obj.updateDynamic("AutoGrantedValue")(AutoGrantedValue.get.asInstanceOf[js.Any])
     if (Keywords != null) __obj.updateDynamic("Keywords")(Keywords.asInstanceOf[js.Any])
-    if (RetryDelayInSeconds != null) __obj.updateDynamic("RetryDelayInSeconds")(RetryDelayInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(RetryDelayInSeconds)) __obj.updateDynamic("RetryDelayInSeconds")(RetryDelayInSeconds.get.asInstanceOf[js.Any])
     if (Test != null) __obj.updateDynamic("Test")(Test.asInstanceOf[js.Any])
-    if (TestDurationInSeconds != null) __obj.updateDynamic("TestDurationInSeconds")(TestDurationInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(TestDurationInSeconds)) __obj.updateDynamic("TestDurationInSeconds")(TestDurationInSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateQualificationTypeRequest]
   }
 }

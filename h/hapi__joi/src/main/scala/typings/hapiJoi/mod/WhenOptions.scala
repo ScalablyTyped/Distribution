@@ -36,19 +36,19 @@ object WhenOptions {
   @scala.inline
   def apply(
     break: js.UndefOr[Boolean] = js.undefined,
-    is: SchemaLike = null,
-    not: SchemaLike = null,
-    otherwise: SchemaLike = null,
+    is: js.UndefOr[Null | SchemaLike] = js.undefined,
+    not: js.UndefOr[Null | SchemaLike] = js.undefined,
+    otherwise: js.UndefOr[Null | SchemaLike] = js.undefined,
     switch: js.Array[SwitchCases | SwitchDefault] = null,
-    `then`: SchemaLike = null
+    `then`: js.UndefOr[Null | SchemaLike] = js.undefined
   ): WhenOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(break)) __obj.updateDynamic("break")(break.asInstanceOf[js.Any])
-    if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
-    if (not != null) __obj.updateDynamic("not")(not.asInstanceOf[js.Any])
-    if (otherwise != null) __obj.updateDynamic("otherwise")(otherwise.asInstanceOf[js.Any])
+    if (!js.isUndefined(break)) __obj.updateDynamic("break")(break.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(is)) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
+    if (!js.isUndefined(not)) __obj.updateDynamic("not")(not.asInstanceOf[js.Any])
+    if (!js.isUndefined(otherwise)) __obj.updateDynamic("otherwise")(otherwise.asInstanceOf[js.Any])
     if (switch != null) __obj.updateDynamic("switch")(switch.asInstanceOf[js.Any])
-    if (`then` != null) __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`then`)) __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WhenOptions]
   }
 }

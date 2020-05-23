@@ -17,7 +17,7 @@ trait IFloatingFilterWrapperParams[M, F /* <: FloatingFilterChange */, P /* <: I
 
 object IFloatingFilterWrapperParams {
   @scala.inline
-  def apply[M, F /* <: FloatingFilterChange */, P /* <: IFloatingFilterParams[M, F] */](
+  def apply[M, F, P](
     column: Column,
     floatingFilterComp: Promise[IFloatingFilterComp[M, F, P]],
     suppressFilterButton: Boolean

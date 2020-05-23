@@ -27,6 +27,10 @@ trait Action extends js.Object {
     */
   var iotEvents: js.UndefOr[IotEventsAction] = js.native
   /**
+    * Sends information about the detector model instance and the event that triggered the action to an asset property in AWS IoT SiteWise .
+    */
+  var iotSiteWise: js.UndefOr[IotSiteWiseAction] = js.native
+  /**
     * Publishes an MQTT message with the given topic to the AWS IoT message broker.
     */
   var iotTopicPublish: js.UndefOr[IotTopicPublishAction] = js.native
@@ -64,6 +68,7 @@ object Action {
     dynamoDBv2: DynamoDBv2Action = null,
     firehose: FirehoseAction = null,
     iotEvents: IotEventsAction = null,
+    iotSiteWise: IotSiteWiseAction = null,
     iotTopicPublish: IotTopicPublishAction = null,
     lambda: LambdaAction = null,
     resetTimer: ResetTimerAction = null,
@@ -78,6 +83,7 @@ object Action {
     if (dynamoDBv2 != null) __obj.updateDynamic("dynamoDBv2")(dynamoDBv2.asInstanceOf[js.Any])
     if (firehose != null) __obj.updateDynamic("firehose")(firehose.asInstanceOf[js.Any])
     if (iotEvents != null) __obj.updateDynamic("iotEvents")(iotEvents.asInstanceOf[js.Any])
+    if (iotSiteWise != null) __obj.updateDynamic("iotSiteWise")(iotSiteWise.asInstanceOf[js.Any])
     if (iotTopicPublish != null) __obj.updateDynamic("iotTopicPublish")(iotTopicPublish.asInstanceOf[js.Any])
     if (lambda != null) __obj.updateDynamic("lambda")(lambda.asInstanceOf[js.Any])
     if (resetTimer != null) __obj.updateDynamic("resetTimer")(resetTimer.asInstanceOf[js.Any])

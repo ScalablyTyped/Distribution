@@ -9,19 +9,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/api/user_data_writer", "UserDataWriter")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/api/user_data_writer", "UserDataWriter")
 @js.native
 class UserDataWriter[T] protected () extends js.Object {
   def this(firestore: Firestore, timestampsInSnapshots: Boolean) = this()
   def this(firestore: Firestore, timestampsInSnapshots: Boolean, serverTimestampBehavior: estimate) = this()
   def this(firestore: Firestore, timestampsInSnapshots: Boolean, serverTimestampBehavior: none) = this()
   def this(firestore: Firestore, timestampsInSnapshots: Boolean, serverTimestampBehavior: previous) = this()
-  def this(
-    firestore: Firestore,
-    timestampsInSnapshots: Boolean,
-    serverTimestampBehavior: js.UndefOr[scala.Nothing],
-    converter: FirestoreDataConverter[T]
-  ) = this()
   def this(
     firestore: Firestore,
     timestampsInSnapshots: Boolean,
@@ -41,6 +35,7 @@ class UserDataWriter[T] protected () extends js.Object {
     converter: FirestoreDataConverter[T]
   ) = this()
   var convertArray: js.Any = js.native
+  var convertGeoPoint: js.Any = js.native
   var convertObject: js.Any = js.native
   var convertReference: js.Any = js.native
   var convertServerTimestamp: js.Any = js.native

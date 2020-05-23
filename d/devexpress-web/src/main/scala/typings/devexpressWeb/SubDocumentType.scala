@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,20 +36,6 @@ object SubDocumentType extends js.Object {
     */
   @js.native
   sealed trait TextBox extends SubDocumentType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SubDocumentType with Double] = js.native
-  /* 2 */ @js.native
-  object Footer extends TopLevel[Footer with Double]
-  
-  /* 1 */ @js.native
-  object Header extends TopLevel[Header with Double]
-  
-  /* 0 */ @js.native
-  object Main extends TopLevel[Main with Double]
-  
-  /* 3 */ @js.native
-  object TextBox extends TopLevel[TextBox with Double]
   
 }
 

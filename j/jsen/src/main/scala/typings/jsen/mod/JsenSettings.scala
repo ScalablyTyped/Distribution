@@ -22,8 +22,8 @@ object JsenSettings {
   ): JsenSettings = {
     val __obj = js.Dynamic.literal()
     if (formats != null) __obj.updateDynamic("formats")(formats.asInstanceOf[js.Any])
-    if (!js.isUndefined(greedy)) __obj.updateDynamic("greedy")(greedy.asInstanceOf[js.Any])
-    if (!js.isUndefined(missing$Ref)) __obj.updateDynamic("missing$Ref")(missing$Ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(greedy)) __obj.updateDynamic("greedy")(greedy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(missing$Ref)) __obj.updateDynamic("missing$Ref")(missing$Ref.get.asInstanceOf[js.Any])
     if (schemas != null) __obj.updateDynamic("schemas")(schemas.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsenSettings]
   }

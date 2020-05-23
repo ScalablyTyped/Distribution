@@ -1,6 +1,6 @@
 package typings.weixinApp.wx
 
-import typings.weixinApp.Anon0
+import typings.weixinApp.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,14 +11,14 @@ trait GetStorageOptions
   var key: String
   /** 接口调用的回调函数,res = {data: key对应的内容} */
   @JSName("success")
-  def success_MGetStorageOptions(res: Anon0): Unit
+  def success_MGetStorageOptions(res: `0`): Unit
 }
 
 object GetStorageOptions {
   @scala.inline
   def apply(
     key: String,
-    success: Anon0 => Unit,
+    success: `0` => Unit,
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null
   ): GetStorageOptions = {

@@ -77,12 +77,12 @@ object GetLicenseConfigurationResponse {
   def apply(
     AutomatedDiscoveryInformation: AutomatedDiscoveryInformation = null,
     ConsumedLicenseSummaryList: ConsumedLicenseSummaryList = null,
-    ConsumedLicenses: Int | Double = null,
+    ConsumedLicenses: js.UndefOr[BoxLong] = js.undefined,
     Description: String = null,
     LicenseConfigurationArn: String = null,
     LicenseConfigurationId: String = null,
-    LicenseCount: Int | Double = null,
-    LicenseCountHardLimit: js.UndefOr[scala.Boolean] = js.undefined,
+    LicenseCount: js.UndefOr[BoxLong] = js.undefined,
+    LicenseCountHardLimit: js.UndefOr[BoxBoolean] = js.undefined,
     LicenseCountingType: LicenseCountingType = null,
     LicenseRules: StringList = null,
     ManagedResourceSummaryList: ManagedResourceSummaryList = null,
@@ -95,12 +95,12 @@ object GetLicenseConfigurationResponse {
     val __obj = js.Dynamic.literal()
     if (AutomatedDiscoveryInformation != null) __obj.updateDynamic("AutomatedDiscoveryInformation")(AutomatedDiscoveryInformation.asInstanceOf[js.Any])
     if (ConsumedLicenseSummaryList != null) __obj.updateDynamic("ConsumedLicenseSummaryList")(ConsumedLicenseSummaryList.asInstanceOf[js.Any])
-    if (ConsumedLicenses != null) __obj.updateDynamic("ConsumedLicenses")(ConsumedLicenses.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConsumedLicenses)) __obj.updateDynamic("ConsumedLicenses")(ConsumedLicenses.get.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (LicenseConfigurationArn != null) __obj.updateDynamic("LicenseConfigurationArn")(LicenseConfigurationArn.asInstanceOf[js.Any])
     if (LicenseConfigurationId != null) __obj.updateDynamic("LicenseConfigurationId")(LicenseConfigurationId.asInstanceOf[js.Any])
-    if (LicenseCount != null) __obj.updateDynamic("LicenseCount")(LicenseCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(LicenseCountHardLimit)) __obj.updateDynamic("LicenseCountHardLimit")(LicenseCountHardLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(LicenseCount)) __obj.updateDynamic("LicenseCount")(LicenseCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(LicenseCountHardLimit)) __obj.updateDynamic("LicenseCountHardLimit")(LicenseCountHardLimit.get.asInstanceOf[js.Any])
     if (LicenseCountingType != null) __obj.updateDynamic("LicenseCountingType")(LicenseCountingType.asInstanceOf[js.Any])
     if (LicenseRules != null) __obj.updateDynamic("LicenseRules")(LicenseRules.asInstanceOf[js.Any])
     if (ManagedResourceSummaryList != null) __obj.updateDynamic("ManagedResourceSummaryList")(ManagedResourceSummaryList.asInstanceOf[js.Any])

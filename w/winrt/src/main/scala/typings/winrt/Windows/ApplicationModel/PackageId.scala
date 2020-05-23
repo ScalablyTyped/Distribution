@@ -5,24 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.PackageId")
-@js.native
-class PackageId () extends IPackageId {
-  /* CompleteClass */
-  override var architecture: ProcessorArchitecture = js.native
-  /* CompleteClass */
-  override var familyName: String = js.native
-  /* CompleteClass */
-  override var fullName: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
-  /* CompleteClass */
-  override var publisher: String = js.native
-  /* CompleteClass */
-  override var publisherId: String = js.native
-  /* CompleteClass */
-  override var resourceId: String = js.native
-  /* CompleteClass */
-  override var version: PackageVersion = js.native
+trait PackageId extends IPackageId
+
+object PackageId {
+  @scala.inline
+  def apply(
+    architecture: ProcessorArchitecture,
+    familyName: String,
+    fullName: String,
+    name: String,
+    publisher: String,
+    publisherId: String,
+    resourceId: String,
+    version: PackageVersion
+  ): PackageId = {
+    val __obj = js.Dynamic.literal(architecture = architecture.asInstanceOf[js.Any], familyName = familyName.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], publisher = publisher.asInstanceOf[js.Any], publisherId = publisherId.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PackageId]
+  }
 }
 

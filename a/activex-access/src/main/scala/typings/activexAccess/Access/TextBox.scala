@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.TextBox")
 @js.native
-class TextBox protected () extends js.Object {
+trait TextBox extends js.Object {
   @JSName("Access.TextBox_typekey")
   var AccessDotTextBox_typekey: TextBox = js.native
   var AddColon: Boolean = js.native

@@ -45,16 +45,16 @@ object IRenderOptions {
     host: HTMLElement,
     mimeType: String,
     source: String,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     needsBackground: String = null,
     unconfined: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): IRenderOptions = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (needsBackground != null) __obj.updateDynamic("needsBackground")(needsBackground.asInstanceOf[js.Any])
-    if (!js.isUndefined(unconfined)) __obj.updateDynamic("unconfined")(unconfined.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(unconfined)) __obj.updateDynamic("unconfined")(unconfined.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRenderOptions]
   }
 }

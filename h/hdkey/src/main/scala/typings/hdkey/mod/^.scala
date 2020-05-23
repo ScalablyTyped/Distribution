@@ -1,6 +1,6 @@
 package typings.hdkey.mod
 
-import typings.hdkey.AnonXpriv
+import typings.hdkey.anon.Xpriv
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,13 +18,13 @@ class ^ () extends HDNode {
   /* CompleteClass */
   override def derive(path: String): HDNode = js.native
   /* CompleteClass */
-  override def toJSON(): AnonXpriv = js.native
+  override def toJSON(): Xpriv = js.native
 }
 
 @JSImport("hdkey", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def fromJSON(obj: AnonXpriv): HDNode = js.native
+  def fromJSON(obj: Xpriv): HDNode = js.native
   def fromMasterSeed(seed: Buffer): HDNode = js.native
 }
 

@@ -15,12 +15,12 @@ object TabStripOptions {
   def apply(
     name: String = null,
     select: /* e */ TabStripSelectEvent => Unit = null,
-    selectedIndex: Int | Double = null
+    selectedIndex: js.UndefOr[Double] = js.undefined
   ): TabStripOptions = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
-    if (selectedIndex != null) __obj.updateDynamic("selectedIndex")(selectedIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedIndex)) __obj.updateDynamic("selectedIndex")(selectedIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabStripOptions]
   }
 }

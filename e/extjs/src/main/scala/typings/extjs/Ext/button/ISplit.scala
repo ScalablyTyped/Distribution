@@ -10,9 +10,9 @@ trait ISplit extends IButton {
   /** [Config Option] (String) */
   var arrowTooltip: js.UndefOr[String] = js.undefined
   /** [Method] Sets this button s arrow click handler
-  		* @param handler Function The function to call when the arrow is clicked.
-  		* @param scope Object Scope for the function passed above.
-  		*/
+    * @param handler Function The function to call when the arrow is clicked.
+    * @param scope Object Scope for the function passed above.
+    */
   var setArrowHandler: js.UndefOr[
     js.Function2[/* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]
   ] = js.undefined

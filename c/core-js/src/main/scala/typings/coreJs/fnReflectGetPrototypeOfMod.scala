@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/fn/reflect/get-prototype-of", JSImport.Namespace)
 @js.native
 object fnReflectGetPrototypeOfMod
-  extends TopLevel[js.Function1[/* target */ js.Any, js.Any]]
+  extends TopLevel[js.Function1[/* o */ js.Any, js.Any]]
 

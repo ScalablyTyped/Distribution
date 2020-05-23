@@ -36,7 +36,7 @@ object TargetInstance {
   @scala.inline
   def apply(
     CurrencyCode: GenericString = null,
-    DefaultTargetInstance: js.UndefOr[Boolean] = js.undefined,
+    DefaultTargetInstance: js.UndefOr[GenericBoolean] = js.undefined,
     EstimatedMonthlyCost: GenericString = null,
     EstimatedMonthlySavings: GenericString = null,
     ExpectedResourceUtilization: ResourceUtilization = null,
@@ -44,7 +44,7 @@ object TargetInstance {
   ): TargetInstance = {
     val __obj = js.Dynamic.literal()
     if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(DefaultTargetInstance)) __obj.updateDynamic("DefaultTargetInstance")(DefaultTargetInstance.asInstanceOf[js.Any])
+    if (!js.isUndefined(DefaultTargetInstance)) __obj.updateDynamic("DefaultTargetInstance")(DefaultTargetInstance.get.asInstanceOf[js.Any])
     if (EstimatedMonthlyCost != null) __obj.updateDynamic("EstimatedMonthlyCost")(EstimatedMonthlyCost.asInstanceOf[js.Any])
     if (EstimatedMonthlySavings != null) __obj.updateDynamic("EstimatedMonthlySavings")(EstimatedMonthlySavings.asInstanceOf[js.Any])
     if (ExpectedResourceUtilization != null) __obj.updateDynamic("ExpectedResourceUtilization")(ExpectedResourceUtilization.asInstanceOf[js.Any])

@@ -25,14 +25,14 @@ trait DebugInfo extends js.Object {
   /**
     * The statement that caused the error, if available.
     *
-    * This statement will never contain any potentially-sensitive data and may not match the code exactly as written, 
+    * This statement will never contain any potentially-sensitive data and may not match the code exactly as written,
     * but will be a close approximation.
     */
   var statements: js.UndefOr[String] = js.undefined
   /**
     * The statements that closely precede and follow the statement that caused the error, if available.
     *
-    * These statements will never contain any potentially-sensitive data and may not match the code exactly as written, 
+    * These statements will never contain any potentially-sensitive data and may not match the code exactly as written,
     * but will be a close approximation.
     */
   var surroundingStatements: js.UndefOr[js.Array[String]] = js.undefined

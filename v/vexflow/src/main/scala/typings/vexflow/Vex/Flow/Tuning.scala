@@ -1,26 +1,28 @@
 package typings.vexflow.Vex.Flow
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Vex.Flow.Tuning")
-@js.native
-class Tuning () extends js.Object {
-  def this(tuningString: String) = this()
-  def getNoteForFret(fretNum: String, stringNum: String): String = js.native
-  def getValueForFret(fretNum: String, stringNum: String): Double = js.native
-  def getValueForString(stringNum: String): Double = js.native
-  def noteToInteger(noteString: String): Double = js.native
-  def setTuning(tuningString: String): Unit = js.native
+trait Tuning extends js.Object {
+  def getNoteForFret(fretNum: String, stringNum: String): String
+  def getValueForFret(fretNum: String, stringNum: String): Double
+  def getValueForString(stringNum: String): Double
+  def noteToInteger(noteString: String): Double
+  def setTuning(tuningString: String): Unit
 }
 
-@JSGlobal("Vex.Flow.Tuning")
-@js.native
-object Tuning extends js.Object {
-  @js.native
-  object names extends /* name */ StringDictionary[String]
-  
+object Tuning {
+  @scala.inline
+  def apply(
+    getNoteForFret: (String, String) => String,
+    getValueForFret: (String, String) => Double,
+    getValueForString: String => Double,
+    noteToInteger: String => Double,
+    setTuning: String => Unit
+  ): Tuning = {
+    val __obj = js.Dynamic.literal(getNoteForFret = js.Any.fromFunction2(getNoteForFret), getValueForFret = js.Any.fromFunction2(getValueForFret), getValueForString = js.Any.fromFunction1(getValueForString), noteToInteger = js.Any.fromFunction1(noteToInteger), setTuning = js.Any.fromFunction1(setTuning))
+    __obj.asInstanceOf[Tuning]
+  }
 }
 

@@ -1,7 +1,7 @@
 package typings.activeWin.mod
 
-import typings.activeWin.AnonHeight
 import typings.activeWin.activeWinStrings.macos
+import typings.activeWin.anon.Height
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait MacOSResult
 object MacOSResult {
   @scala.inline
   def apply(
-    bounds: AnonHeight,
+    bounds: Height,
     id: Double,
     memoryUsage: Double,
     owner: MacOSOwner,

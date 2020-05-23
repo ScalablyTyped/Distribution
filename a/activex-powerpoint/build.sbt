@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "activex-powerpoint"
-version := "14.0-dt-20200225Z-9ea306"
-scalaVersion := "2.13.1"
+version := "14.0-dt-20200515Z-6ce2ab"
+scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "activex-office" % "16.0-dt-20200225Z-1945e9",
-  "org.scalablytyped" %%% "activex-outlook" % "14.0-dt-20200225Z-dcc3ab",
-  "org.scalablytyped" %%% "activex-stdole" % "2.0-dt-20200225Z-f087da",
-  "org.scalablytyped" %%% "activex-vbide" % "14.0-dt-20200225Z-02db44",
-  "org.scalablytyped" %%% "std" % "3.8-9b2470")
+  "org.scalablytyped" %%% "activex-office" % "16.0-dt-20200515Z-826b64",
+  "org.scalablytyped" %%% "activex-outlook" % "14.0-dt-20200515Z-edd90e",
+  "org.scalablytyped" %%% "activex-stdole" % "2.0-dt-20200515Z-65ceec",
+  "org.scalablytyped" %%% "activex-vbide" % "14.0-dt-20200515Z-68c611",
+  "org.scalablytyped" %%% "std" % "3.9-18cbeb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

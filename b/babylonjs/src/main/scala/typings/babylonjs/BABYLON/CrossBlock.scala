@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.CrossBlock")
 @js.native
-class CrossBlock protected () extends NodeMaterialBlock {
-  /**
-    * Creates a new CrossBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait CrossBlock extends NodeMaterialBlock {
   /**
     * Gets the left operand input component
     */

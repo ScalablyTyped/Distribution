@@ -53,14 +53,14 @@ object IActionDescriptor {
     label: String,
     run: (ICodeEditor, /* repeated */ js.Any) => Unit | js.Promise[Unit],
     contextMenuGroupId: String = null,
-    contextMenuOrder: Int | Double = null,
+    contextMenuOrder: js.UndefOr[Double] = js.undefined,
     keybindingContext: String = null,
     keybindings: js.Array[Double] = null,
     precondition: String = null
   ): IActionDescriptor = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], run = js.Any.fromFunction2(run))
     if (contextMenuGroupId != null) __obj.updateDynamic("contextMenuGroupId")(contextMenuGroupId.asInstanceOf[js.Any])
-    if (contextMenuOrder != null) __obj.updateDynamic("contextMenuOrder")(contextMenuOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(contextMenuOrder)) __obj.updateDynamic("contextMenuOrder")(contextMenuOrder.get.asInstanceOf[js.Any])
     if (keybindingContext != null) __obj.updateDynamic("keybindingContext")(keybindingContext.asInstanceOf[js.Any])
     if (keybindings != null) __obj.updateDynamic("keybindings")(keybindings.asInstanceOf[js.Any])
     if (precondition != null) __obj.updateDynamic("precondition")(precondition.asInstanceOf[js.Any])

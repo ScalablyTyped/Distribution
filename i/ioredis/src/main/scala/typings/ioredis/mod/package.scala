@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
+  type Callback[T] = js.Function2[/* err */ typings.std.Error | scala.Null, /* res */ T, scala.Unit]
   type CallbackFunction[T] = js.Function2[
     /* err */ js.UndefOr[typings.node.NodeJS.ErrnoException | scala.Null], 
     /* result */ js.UndefOr[T], 
@@ -23,11 +24,11 @@ package object mod {
     scala.Unit
   ]
   type KeyType = java.lang.String | typings.node.Buffer
-  type NatMap = org.scalablytyped.runtime.StringDictionary[typings.ioredis.AnonHost]
+  type NatMap = org.scalablytyped.runtime.StringDictionary[typings.ioredis.anon.Host]
   type Ok = typings.ioredis.ioredisStrings.OK
   type PreferredSlaves = (js.Function1[
     /* slaves */ js.Array[typings.ioredis.mod.AddressFromResponse], 
     typings.ioredis.mod.AddressFromResponse | scala.Null
-  ]) | js.Array[typings.ioredis.AnonIp] | typings.ioredis.AnonIp
+  ]) | js.Array[typings.ioredis.anon.Ip] | typings.ioredis.anon.Ip
   type ValueType = java.lang.String | typings.node.Buffer | scala.Double | js.Array[js.Any]
 }

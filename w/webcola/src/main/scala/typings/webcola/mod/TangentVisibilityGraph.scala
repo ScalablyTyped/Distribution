@@ -1,6 +1,6 @@
 package typings.webcola.mod
 
-import typings.webcola.AnonE
+import typings.webcola.anon.E
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 class TangentVisibilityGraph protected ()
   extends typings.webcola.geomMod.TangentVisibilityGraph {
   def this(P: js.Array[js.Array[typings.webcola.geomMod.TVGPoint]]) = this()
-  def this(P: js.Array[js.Array[typings.webcola.geomMod.TVGPoint]], g0: AnonE) = this()
+  def this(P: js.Array[js.Array[typings.webcola.geomMod.TVGPoint]], g0: E) = this()
 }
 

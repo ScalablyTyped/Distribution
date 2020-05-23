@@ -7,23 +7,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Web.Syndication.SyndicationClient")
-@js.native
-class SyndicationClient () extends ISyndicationClient {
-  def this(serverCredential: PasswordCredential) = this()
-  /* CompleteClass */
-  override var bypassCacheOnRetrieve: Boolean = js.native
-  /* CompleteClass */
-  override var maxResponseBufferSize: Double = js.native
-  /* CompleteClass */
-  override var proxyCredential: PasswordCredential = js.native
-  /* CompleteClass */
-  override var serverCredential: PasswordCredential = js.native
-  /* CompleteClass */
-  override var timeout: Double = js.native
-  /* CompleteClass */
-  override def retrieveFeedAsync(uri: Uri): IAsyncOperationWithProgress[SyndicationFeed, RetrievalProgress] = js.native
-  /* CompleteClass */
-  override def setRequestHeader(name: String, value: String): Unit = js.native
+trait SyndicationClient extends ISyndicationClient
+
+object SyndicationClient {
+  @scala.inline
+  def apply(
+    bypassCacheOnRetrieve: Boolean,
+    maxResponseBufferSize: Double,
+    proxyCredential: PasswordCredential,
+    retrieveFeedAsync: Uri => IAsyncOperationWithProgress[SyndicationFeed, RetrievalProgress],
+    serverCredential: PasswordCredential,
+    setRequestHeader: (String, String) => Unit,
+    timeout: Double
+  ): SyndicationClient = {
+    val __obj = js.Dynamic.literal(bypassCacheOnRetrieve = bypassCacheOnRetrieve.asInstanceOf[js.Any], maxResponseBufferSize = maxResponseBufferSize.asInstanceOf[js.Any], proxyCredential = proxyCredential.asInstanceOf[js.Any], retrieveFeedAsync = js.Any.fromFunction1(retrieveFeedAsync), serverCredential = serverCredential.asInstanceOf[js.Any], setRequestHeader = js.Any.fromFunction2(setRequestHeader), timeout = timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SyndicationClient]
+  }
 }
 

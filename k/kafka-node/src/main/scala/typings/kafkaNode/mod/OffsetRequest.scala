@@ -15,14 +15,14 @@ object OffsetRequest {
   @scala.inline
   def apply(
     topic: String,
-    maxNum: Int | Double = null,
-    partition: Int | Double = null,
-    time: Int | Double = null
+    maxNum: js.UndefOr[Double] = js.undefined,
+    partition: js.UndefOr[Double] = js.undefined,
+    time: js.UndefOr[Double] = js.undefined
   ): OffsetRequest = {
     val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any])
-    if (maxNum != null) __obj.updateDynamic("maxNum")(maxNum.asInstanceOf[js.Any])
-    if (partition != null) __obj.updateDynamic("partition")(partition.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxNum)) __obj.updateDynamic("maxNum")(maxNum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(partition)) __obj.updateDynamic("partition")(partition.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OffsetRequest]
   }
 }

@@ -6,7 +6,7 @@ import typings.std.RequestInit
 import typings.std.Response
 import typings.std.Uint32Array
 import typings.std.Uint8Array
-import typings.tensorflowTfjsCore.AnonKeptDims
+import typings.tensorflowTfjsCore.anon.KeptDims
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.FlatVector
 import typings.tensorflowTfjsCore.distTypesMod.NumericDataType
@@ -131,8 +131,8 @@ object util extends js.Object {
   def shuffle(array: Uint32Array): Unit = js.native
   def sizeFromShape(shape: js.Array[Double]): Double = js.native
   def sizeToSquarishShape(size: Double): js.Tuple2[Double, Double] = js.native
-  def squeezeShape(shape: js.Array[Double]): AnonKeptDims = js.native
-  def squeezeShape(shape: js.Array[Double], axis: js.Array[Double]): AnonKeptDims = js.native
+  def squeezeShape(shape: js.Array[Double]): KeptDims = js.native
+  def squeezeShape(shape: js.Array[Double], axis: js.Array[Double]): KeptDims = js.native
   def sum(arr: js.Array[Double]): Double = js.native
   def tanh(x: Double): Double = js.native
   def toNestedArray(shape: js.Array[Double], a: TypedArray): Double | js.Array[_] = js.native

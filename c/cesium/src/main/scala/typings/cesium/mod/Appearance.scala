@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonClosed
+import typings.cesium.anon.Closed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "Appearance")
 @js.native
 class Appearance () extends js.Object {
-  def this(options: AnonClosed) = this()
+  def this(options: Closed) = this()
   val closed: Boolean = js.native
   val fragmentShaderSource: String = js.native
   var material: Material = js.native

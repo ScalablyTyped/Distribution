@@ -30,13 +30,13 @@ object SelectAggregateResourceConfigRequest {
   def apply(
     ConfigurationAggregatorName: ConfigurationAggregatorName,
     Expression: Expression,
-    Limit: Int | Double = null,
-    MaxResults: Int | Double = null,
+    Limit: js.UndefOr[Limit] = js.undefined,
+    MaxResults: js.UndefOr[Limit] = js.undefined,
     NextToken: NextToken = null
   ): SelectAggregateResourceConfigRequest = {
     val __obj = js.Dynamic.literal(ConfigurationAggregatorName = ConfigurationAggregatorName.asInstanceOf[js.Any], Expression = Expression.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectAggregateResourceConfigRequest]
   }

@@ -15,8 +15,8 @@ object OpenSelectDialogOptions {
   @scala.inline
   def apply(showImages: js.UndefOr[Boolean] = js.undefined, showVideos: js.UndefOr[Boolean] = js.undefined): OpenSelectDialogOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(showImages)) __obj.updateDynamic("showImages")(showImages.asInstanceOf[js.Any])
-    if (!js.isUndefined(showVideos)) __obj.updateDynamic("showVideos")(showVideos.asInstanceOf[js.Any])
+    if (!js.isUndefined(showImages)) __obj.updateDynamic("showImages")(showImages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showVideos)) __obj.updateDynamic("showVideos")(showVideos.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenSelectDialogOptions]
   }
 }

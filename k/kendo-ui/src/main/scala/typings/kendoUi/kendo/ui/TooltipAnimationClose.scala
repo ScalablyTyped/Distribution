@@ -11,9 +11,9 @@ trait TooltipAnimationClose extends js.Object {
 
 object TooltipAnimationClose {
   @scala.inline
-  def apply(duration: Int | Double = null, effects: String = null): TooltipAnimationClose = {
+  def apply(duration: js.UndefOr[Double] = js.undefined, effects: String = null): TooltipAnimationClose = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (effects != null) __obj.updateDynamic("effects")(effects.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipAnimationClose]
   }

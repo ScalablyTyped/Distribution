@@ -5,20 +5,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fires when the list view is scrolling. Calling the `scrollTo` methods will not fire this event
-		 */
+  * Fires when the list view is scrolling. Calling the `scrollTo` methods will not fire this event
+  */
 trait ListViewScrollingEvent extends ListViewBaseEvent {
   /**
-  			 * Direction of the scroll either 'up', or 'down'.
-  			 */
+    * Direction of the scroll either 'up', or 'down'.
+    */
   var direction: String
   /**
-  			 * The expected y axis offset when the scrolling action decelerates to a stop.
-  			 */
+    * The expected y axis offset when the scrolling action decelerates to a stop.
+    */
   var targetContentOffset: Double
   /**
-  			 * The velocity of the scroll in scale factor per second
-  			 */
+    * The velocity of the scroll in scale factor per second
+    */
   var velocity: Double
 }
 

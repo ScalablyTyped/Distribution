@@ -7,16 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Defines a section column in the document.
   */
-@JSGlobal("SectionColumn")
-@js.native
-class SectionColumn () extends js.Object {
+trait SectionColumn extends js.Object {
   /**
     * Specifies the space between adjacent section columns.
     */
-  var spacing: Double = js.native
+  var spacing: Double
   /**
     * Specifies the width of the section column.
     */
-  var width: Double = js.native
+  var width: Double
+}
+
+object SectionColumn {
+  @scala.inline
+  def apply(spacing: Double, width: Double): SectionColumn = {
+    val __obj = js.Dynamic.literal(spacing = spacing.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SectionColumn]
+  }
 }
 

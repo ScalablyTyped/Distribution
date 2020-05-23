@@ -12,18 +12,18 @@ trait ConvolverOptions extends AudioNodeOptions {
 object ConvolverOptions {
   @scala.inline
   def apply(
-    buffer: AudioBuffer = null,
-    channelCount: Int | Double = null,
+    buffer: js.UndefOr[Null | AudioBuffer] = js.undefined,
+    channelCount: js.UndefOr[Double] = js.undefined,
     channelCountMode: ChannelCountMode = null,
     channelInterpretation: ChannelInterpretation = null,
     disableNormalization: js.UndefOr[scala.Boolean] = js.undefined
   ): ConvolverOptions = {
     val __obj = js.Dynamic.literal()
-    if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
-    if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(channelCount)) __obj.updateDynamic("channelCount")(channelCount.get.asInstanceOf[js.Any])
     if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
     if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableNormalization)) __obj.updateDynamic("disableNormalization")(disableNormalization.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableNormalization)) __obj.updateDynamic("disableNormalization")(disableNormalization.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConvolverOptions]
   }
 }

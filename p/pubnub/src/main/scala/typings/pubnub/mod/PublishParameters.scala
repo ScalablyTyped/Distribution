@@ -22,13 +22,13 @@ object PublishParameters {
     meta: js.Any = null,
     sendByPost: js.UndefOr[Boolean] = js.undefined,
     storeInHistory: js.UndefOr[Boolean] = js.undefined,
-    ttl: Int | Double = null
+    ttl: js.UndefOr[Double] = js.undefined
   ): PublishParameters = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (!js.isUndefined(sendByPost)) __obj.updateDynamic("sendByPost")(sendByPost.asInstanceOf[js.Any])
-    if (!js.isUndefined(storeInHistory)) __obj.updateDynamic("storeInHistory")(storeInHistory.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendByPost)) __obj.updateDynamic("sendByPost")(sendByPost.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(storeInHistory)) __obj.updateDynamic("storeInHistory")(storeInHistory.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishParameters]
   }
 }

@@ -35,14 +35,14 @@ object MUIDataTableSelectCell {
   ): MUIDataTableSelectCell = {
     val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], fixedHeader = fixedHeader.asInstanceOf[js.Any])
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandableOn)) __obj.updateDynamic("expandableOn")(expandableOn.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHeaderCell)) __obj.updateDynamic("isHeaderCell")(isHeaderCell.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRowExpanded)) __obj.updateDynamic("isRowExpanded")(isRowExpanded.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRowSelectable)) __obj.updateDynamic("isRowSelectable")(isRowSelectable.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandableOn)) __obj.updateDynamic("expandableOn")(expandableOn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHeaderCell)) __obj.updateDynamic("isHeaderCell")(isHeaderCell.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRowExpanded)) __obj.updateDynamic("isRowExpanded")(isRowExpanded.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRowSelectable)) __obj.updateDynamic("isRowSelectable")(isRowSelectable.get.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onExpand != null) __obj.updateDynamic("onExpand")(js.Any.fromFunction1(onExpand))
     if (otherProps != null) __obj.updateDynamic("otherProps")(otherProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectableOn)) __obj.updateDynamic("selectableOn")(selectableOn.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectableOn)) __obj.updateDynamic("selectableOn")(selectableOn.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableSelectCell]
   }
 }

@@ -80,7 +80,7 @@ object JobFlowDetail {
     ServiceRole: XmlString = null,
     Steps: StepDetailList = null,
     SupportedProducts: SupportedProductsList = null,
-    VisibleToAllUsers: js.UndefOr[scala.Boolean] = js.undefined
+    VisibleToAllUsers: js.UndefOr[Boolean] = js.undefined
   ): JobFlowDetail = {
     val __obj = js.Dynamic.literal(ExecutionStatusDetail = ExecutionStatusDetail.asInstanceOf[js.Any], Instances = Instances.asInstanceOf[js.Any], JobFlowId = JobFlowId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     if (AmiVersion != null) __obj.updateDynamic("AmiVersion")(AmiVersion.asInstanceOf[js.Any])
@@ -92,7 +92,7 @@ object JobFlowDetail {
     if (ServiceRole != null) __obj.updateDynamic("ServiceRole")(ServiceRole.asInstanceOf[js.Any])
     if (Steps != null) __obj.updateDynamic("Steps")(Steps.asInstanceOf[js.Any])
     if (SupportedProducts != null) __obj.updateDynamic("SupportedProducts")(SupportedProducts.asInstanceOf[js.Any])
-    if (!js.isUndefined(VisibleToAllUsers)) __obj.updateDynamic("VisibleToAllUsers")(VisibleToAllUsers.asInstanceOf[js.Any])
+    if (!js.isUndefined(VisibleToAllUsers)) __obj.updateDynamic("VisibleToAllUsers")(VisibleToAllUsers.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobFlowDetail]
   }
 }

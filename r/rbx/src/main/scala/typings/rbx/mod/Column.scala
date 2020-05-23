@@ -1,10 +1,10 @@
 package typings.rbx.mod
 
-import typings.rbx.AnonAsElementType
-import typings.rbx.AnonDesktop
-import typings.rbx.AnonFullhd
-import typings.rbx.ColumnGroupPropsBackgroundColor
-import typings.rbx.PickBadgeHelpersPropsFloa
+import typings.rbx.anon.AsElementType
+import typings.rbx.anon.ColumnGroupPropsBackgroundColor
+import typings.rbx.anon.Desktop
+import typings.rbx.anon.Fullhd
+import typings.rbx.anon.PickBadgeHelpersPropsFloa
 import typings.rbx.columnMod.ColumnBreakpointOptions
 import typings.rbx.exoticMod.ForwardRefAsExoticComponent
 import typings.rbx.exoticMod.FromReactType
@@ -55,7 +55,7 @@ import typings.rbx.rbxStrings.widescreen
 import typings.react.mod.ComponentProps
 import typings.react.mod.ElementType
 import typings.react.mod.RefAttributes
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.Exclude
 import typings.std.Partial
 import typings.std.Pick
@@ -69,12 +69,12 @@ object Column extends js.Object {
   @JSName("$$typeof")
   var DollarDollartypeof: js.Symbol = js.native
   var Group: ForwardRefAsExoticComponent[ColumnGroupPropsBackgroundColor, ElementType[_]] = js.native
-  var defaultProps: AnonAsElementType with (Partial[
-    HelpersPropsOverrides with PickBadgeHelpersPropsFloa with AnonFullhd with ColumnBreakpointOptions with (Pick[_, String | Double | js.Symbol])
+  var defaultProps: AsElementType with (Partial[
+    HelpersPropsOverrides with PickBadgeHelpersPropsFloa with Fullhd with ColumnBreakpointOptions with (Pick[_, String | Double | js.Symbol])
   ]) = js.native
   var displayName: js.UndefOr[String] = js.native
   def apply[TAsComponent /* <: ElementType[_] */](
-    props: AnonDesktop[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with ColumnBreakpointOptions with (Pick[
+    props: Desktop[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with ColumnBreakpointOptions with (Pick[
       ComponentProps[TAsComponent], 
       Exclude[
         /* keyof react.react.ComponentProps<TAsComponent> */ String, 

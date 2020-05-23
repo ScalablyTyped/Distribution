@@ -1,7 +1,7 @@
 package typings.winjs.WinJS.UI
 
 import typings.std.CustomEvent
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.winjs.WinJS.Promise
 import scala.scalajs.js
@@ -11,18 +11,8 @@ import scala.scalajs.js.annotation._
 /**
   * Displays a collection, such as a set of photos, one item at a time.
   **/
-@JSGlobal("WinJS.UI.FlipView")
 @js.native
-//#region Constructors
-/**
-  * Creates a new FlipView.
-  * @constructor
-  * @param element The DOM element that hosts the control.
-  * @param options An object that contains one or more property/value pairs to apply to the new control. Each property corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the pageselected event, add a property named "onpageselected" and set its value to the event handler.
-  **/
-class FlipView[T] () extends js.Object {
-  def this(element: HTMLElement) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+trait FlipView[T] extends js.Object {
   //#endregion Methods
   //#region Properties
   /**
@@ -90,7 +80,7 @@ class FlipView[T] () extends js.Object {
     * Occurs when the datasource count changes.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: source.
     **/
-  def ondatasourcecountchanged(eventInfo: Event_): Unit = js.native
+  def ondatasourcecountchanged(eventInfo: Event): Unit = js.native
   /**
     * Raised when the FlipView flips to a page and its renderer function completes.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.source.
@@ -124,31 +114,5 @@ class FlipView[T] () extends js.Object {
     * @param animations An object that contains up to three fields, one for each navigation action: next, previous, and jump. Each of those fields must be a function with this signature: function (outgoingPage, incomingPage) Each function must return a WinJS.Promise that completes once the animations are finished. If a field is null or undefined, the FlipView reverts to its default animation for that action.
     **/
   def setCustomAnimations(animations: js.Any): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("WinJS.UI.FlipView")
-@js.native
-object FlipView extends js.Object {
-  /**
-    * Event Name
-    **/
-  var datasourceCountChangedEvent: String = js.native
-  /**
-    * Event Name
-    **/
-  var pageCompletedEvent: String = js.native
-  /**
-    * Event Name
-    **/
-  var pageSelectedEvent: String = js.native
-  /**
-    * Event Name
-    **/
-  var pageVisibilityChangedEvent: String = js.native
-  /**
-    * Indicates that the object is compatibile with declarative processing.
-    **/
-  var supportedForProcessing: Boolean = js.native
 }
 

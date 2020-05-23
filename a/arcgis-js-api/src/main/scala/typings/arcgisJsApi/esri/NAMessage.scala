@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`process-definition`
 import typings.arcgisJsApi.arcgisJsApiStrings.`process-start`
 import typings.arcgisJsApi.arcgisJsApiStrings.`process-stop`
@@ -30,8 +29,4 @@ trait NAMessage
     */
   var `type`: informative | `process-definition` | `process-start` | `process-stop` | warning | error | empty | abort = js.native
 }
-
-@JSGlobal("__esri.NAMessage")
-@js.native
-object NAMessage extends TopLevel[NAMessageConstructor]
 

@@ -11,10 +11,13 @@ trait CodeInjection extends js.Object {
 
 object CodeInjection {
   @scala.inline
-  def apply(codeinjection_foot: Nullable[String] = null, codeinjection_head: Nullable[String] = null): CodeInjection = {
+  def apply(
+    codeinjection_foot: js.UndefOr[Null | Nullable[String]] = js.undefined,
+    codeinjection_head: js.UndefOr[Null | Nullable[String]] = js.undefined
+  ): CodeInjection = {
     val __obj = js.Dynamic.literal()
-    if (codeinjection_foot != null) __obj.updateDynamic("codeinjection_foot")(codeinjection_foot.asInstanceOf[js.Any])
-    if (codeinjection_head != null) __obj.updateDynamic("codeinjection_head")(codeinjection_head.asInstanceOf[js.Any])
+    if (!js.isUndefined(codeinjection_foot)) __obj.updateDynamic("codeinjection_foot")(codeinjection_foot.asInstanceOf[js.Any])
+    if (!js.isUndefined(codeinjection_head)) __obj.updateDynamic("codeinjection_head")(codeinjection_head.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeInjection]
   }
 }

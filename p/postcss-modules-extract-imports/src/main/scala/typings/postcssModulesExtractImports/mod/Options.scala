@@ -17,7 +17,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (createImportedName != null) __obj.updateDynamic("createImportedName")(js.Any.fromFunction2(createImportedName))
-    if (!js.isUndefined(failOnWrongOrder)) __obj.updateDynamic("failOnWrongOrder")(failOnWrongOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(failOnWrongOrder)) __obj.updateDynamic("failOnWrongOrder")(failOnWrongOrder.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

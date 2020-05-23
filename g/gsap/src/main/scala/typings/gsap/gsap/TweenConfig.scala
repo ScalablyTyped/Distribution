@@ -81,11 +81,10 @@ trait TweenConfig
 object TweenConfig {
   @scala.inline
   def apply(
-    StringDictionary: /** Any tweenable property */
-  /* p */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     autoCSS: js.UndefOr[Boolean] = js.undefined,
     callbackScope: js.Object = null,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     ease: Ease = null,
     immediateRender: js.UndefOr[Boolean] = js.undefined,
     `lazy`: js.UndefOr[Boolean] = js.undefined,
@@ -106,20 +105,20 @@ object TweenConfig {
     onUpdateScope: js.Object = null,
     overwrite: String | Double = null,
     paused: js.UndefOr[Boolean] = js.undefined,
-    repeat: Int | Double = null,
-    repeatDelay: Int | Double = null,
+    repeat: js.UndefOr[Double] = js.undefined,
+    repeatDelay: js.UndefOr[Double] = js.undefined,
     startAt: js.Object = null,
     useFrames: js.UndefOr[Boolean] = js.undefined,
     yoyo: js.UndefOr[Boolean] = js.undefined
   ): TweenConfig = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(autoCSS)) __obj.updateDynamic("autoCSS")(autoCSS.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCSS)) __obj.updateDynamic("autoCSS")(autoCSS.get.asInstanceOf[js.Any])
     if (callbackScope != null) __obj.updateDynamic("callbackScope")(callbackScope.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (ease != null) __obj.updateDynamic("ease")(ease.asInstanceOf[js.Any])
-    if (!js.isUndefined(immediateRender)) __obj.updateDynamic("immediateRender")(immediateRender.asInstanceOf[js.Any])
-    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
+    if (!js.isUndefined(immediateRender)) __obj.updateDynamic("immediateRender")(immediateRender.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.get.asInstanceOf[js.Any])
     if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
     if (onCompleteParams != null) __obj.updateDynamic("onCompleteParams")(onCompleteParams.asInstanceOf[js.Any])
     if (onCompleteScope != null) __obj.updateDynamic("onCompleteScope")(onCompleteScope.asInstanceOf[js.Any])
@@ -136,12 +135,12 @@ object TweenConfig {
     if (onUpdateParams != null) __obj.updateDynamic("onUpdateParams")(onUpdateParams.asInstanceOf[js.Any])
     if (onUpdateScope != null) __obj.updateDynamic("onUpdateScope")(onUpdateScope.asInstanceOf[js.Any])
     if (overwrite != null) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
-    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused.asInstanceOf[js.Any])
-    if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
-    if (repeatDelay != null) __obj.updateDynamic("repeatDelay")(repeatDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeat)) __obj.updateDynamic("repeat")(repeat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeatDelay)) __obj.updateDynamic("repeatDelay")(repeatDelay.get.asInstanceOf[js.Any])
     if (startAt != null) __obj.updateDynamic("startAt")(startAt.asInstanceOf[js.Any])
-    if (!js.isUndefined(useFrames)) __obj.updateDynamic("useFrames")(useFrames.asInstanceOf[js.Any])
-    if (!js.isUndefined(yoyo)) __obj.updateDynamic("yoyo")(yoyo.asInstanceOf[js.Any])
+    if (!js.isUndefined(useFrames)) __obj.updateDynamic("useFrames")(useFrames.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yoyo)) __obj.updateDynamic("yoyo")(yoyo.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TweenConfig]
   }
 }

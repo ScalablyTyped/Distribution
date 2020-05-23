@@ -23,6 +23,11 @@ trait Options extends js.Object {
   var inputStream: js.UndefOr[ReadableStream] = js.undefined
   /** an array of exiting conditions that will cause a process to kill others. Can contain any of success or failure. */
   var killOthers: js.UndefOr[js.Array[success | failure]] = js.undefined
+  /**
+    * how many processes should run at once
+    * @default 0
+    */
+  var maxProcesses: js.UndefOr[Double] = js.undefined
   /**  a Writable stream to write logs to. Default: `process.stdout` */
   var outputStream: js.UndefOr[WritableStream] = js.undefined
   /**
@@ -46,28 +51,30 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    defaultInputTarget: Int | Double = null,
+    defaultInputTarget: js.UndefOr[Double] = js.undefined,
     inputStream: ReadableStream = null,
     killOthers: js.Array[success | failure] = null,
+    maxProcesses: js.UndefOr[Double] = js.undefined,
     outputStream: WritableStream = null,
     prefix: index | pid | time | command | name | none | String = null,
-    prefixLength: Int | Double = null,
+    prefixLength: js.UndefOr[Double] = js.undefined,
     raw: js.UndefOr[Boolean] = js.undefined,
-    restartDelay: Int | Double = null,
-    restartTries: Int | Double = null,
+    restartDelay: js.UndefOr[Double] = js.undefined,
+    restartTries: js.UndefOr[Double] = js.undefined,
     successCondition: first | last = null,
     timestampFormat: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (defaultInputTarget != null) __obj.updateDynamic("defaultInputTarget")(defaultInputTarget.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultInputTarget)) __obj.updateDynamic("defaultInputTarget")(defaultInputTarget.get.asInstanceOf[js.Any])
     if (inputStream != null) __obj.updateDynamic("inputStream")(inputStream.asInstanceOf[js.Any])
     if (killOthers != null) __obj.updateDynamic("killOthers")(killOthers.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxProcesses)) __obj.updateDynamic("maxProcesses")(maxProcesses.get.asInstanceOf[js.Any])
     if (outputStream != null) __obj.updateDynamic("outputStream")(outputStream.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (prefixLength != null) __obj.updateDynamic("prefixLength")(prefixLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
-    if (restartDelay != null) __obj.updateDynamic("restartDelay")(restartDelay.asInstanceOf[js.Any])
-    if (restartTries != null) __obj.updateDynamic("restartTries")(restartTries.asInstanceOf[js.Any])
+    if (!js.isUndefined(prefixLength)) __obj.updateDynamic("prefixLength")(prefixLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(restartDelay)) __obj.updateDynamic("restartDelay")(restartDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(restartTries)) __obj.updateDynamic("restartTries")(restartTries.get.asInstanceOf[js.Any])
     if (successCondition != null) __obj.updateDynamic("successCondition")(successCondition.asInstanceOf[js.Any])
     if (timestampFormat != null) __obj.updateDynamic("timestampFormat")(timestampFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

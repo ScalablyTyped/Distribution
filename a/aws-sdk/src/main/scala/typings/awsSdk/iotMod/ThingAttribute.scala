@@ -35,14 +35,14 @@ object ThingAttribute {
     thingArn: ThingArn = null,
     thingName: ThingName = null,
     thingTypeName: ThingTypeName = null,
-    version: Int | Double = null
+    version: js.UndefOr[Version] = js.undefined
   ): ThingAttribute = {
     val __obj = js.Dynamic.literal()
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (thingArn != null) __obj.updateDynamic("thingArn")(thingArn.asInstanceOf[js.Any])
     if (thingName != null) __obj.updateDynamic("thingName")(thingName.asInstanceOf[js.Any])
     if (thingTypeName != null) __obj.updateDynamic("thingTypeName")(thingTypeName.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThingAttribute]
   }
 }

@@ -1,7 +1,7 @@
 package typings.datatablesNet.DataTables
 
 import typings.datatablesNet.JQuery
-import typings.std.Event_
+import typings.std.Event
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -85,21 +85,21 @@ trait CoreMethods extends UtilityMethods {
     * @param callback Specific callback function to remove if you want to unbind a single event listener.
     */
   def off(event: String): Api = js.native
-  def off(event: String, callback: js.Function2[/* e */ Event_, /* repeated */ js.Any, Unit]): Api = js.native
+  def off(event: String, callback: js.Function2[/* e */ Event, /* repeated */ js.Any, Unit]): Api = js.native
   /**
     * Table events listener.
     *
     * @param event Event to listen for.
     * @param callback Specific callback function to remove if you want to unbind a single event listener.
     */
-  def on(event: String, callback: js.Function2[/* e */ Event_, /* repeated */ js.Any, Unit]): Api = js.native
+  def on(event: String, callback: js.Function2[/* e */ Event, /* repeated */ js.Any, Unit]): Api = js.native
   /**
     * Listen for a table event once and then remove the listener.
     *
     * @param event Event to listen for.
     * @param callback Specific callback function to remove if you want to unbind a single event listener.
     */
-  def one(event: String, callback: js.Function2[/* e */ Event_, /* repeated */ js.Any, Unit]): Api = js.native
+  def one(event: String, callback: js.Function2[/* e */ Event, /* repeated */ js.Any, Unit]): Api = js.native
   /**
     * Get the current page of the table.
     */

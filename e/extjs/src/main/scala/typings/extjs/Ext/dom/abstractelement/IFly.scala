@@ -22,10 +22,10 @@ trait IFly extends IElement {
 object IFly {
   @scala.inline
   def apply(
-    ASCLASS: Int | Double = null,
-    DISPLAY: Int | Double = null,
-    OFFSETS: Int | Double = null,
-    VISIBILITY: Int | Double = null,
+    ASCLASS: js.UndefOr[Double] = js.undefined,
+    DISPLAY: js.UndefOr[Double] = js.undefined,
+    OFFSETS: js.UndefOr[Double] = js.undefined,
+    VISIBILITY: js.UndefOr[Double] = js.undefined,
     addCls: /* className */ js.UndefOr[js.Any] => IElement = null,
     addClsOnClick: (/* className */ js.UndefOr[String], /* testFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IFly = null,
     addClsOnFocus: (/* className */ js.UndefOr[String], /* testFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IFly = null,
@@ -213,10 +213,10 @@ object IFly {
     wrap: (/* config */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[Boolean], /* selector */ js.UndefOr[String]) => _ = null
   ): IFly = {
     val __obj = js.Dynamic.literal()
-    if (ASCLASS != null) __obj.updateDynamic("ASCLASS")(ASCLASS.asInstanceOf[js.Any])
-    if (DISPLAY != null) __obj.updateDynamic("DISPLAY")(DISPLAY.asInstanceOf[js.Any])
-    if (OFFSETS != null) __obj.updateDynamic("OFFSETS")(OFFSETS.asInstanceOf[js.Any])
-    if (VISIBILITY != null) __obj.updateDynamic("VISIBILITY")(VISIBILITY.asInstanceOf[js.Any])
+    if (!js.isUndefined(ASCLASS)) __obj.updateDynamic("ASCLASS")(ASCLASS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DISPLAY)) __obj.updateDynamic("DISPLAY")(DISPLAY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(OFFSETS)) __obj.updateDynamic("OFFSETS")(OFFSETS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VISIBILITY)) __obj.updateDynamic("VISIBILITY")(VISIBILITY.get.asInstanceOf[js.Any])
     if (addCls != null) __obj.updateDynamic("addCls")(js.Any.fromFunction1(addCls))
     if (addClsOnClick != null) __obj.updateDynamic("addClsOnClick")(js.Any.fromFunction3(addClsOnClick))
     if (addClsOnFocus != null) __obj.updateDynamic("addClsOnFocus")(js.Any.fromFunction3(addClsOnFocus))
@@ -230,7 +230,7 @@ object IFly {
     if (appendChild != null) __obj.updateDynamic("appendChild")(js.Any.fromFunction2(appendChild))
     if (appendTo != null) __obj.updateDynamic("appendTo")(js.Any.fromFunction1(appendTo))
     if (applyStyles != null) __obj.updateDynamic("applyStyles")(js.Any.fromFunction1(applyStyles))
-    if (!js.isUndefined(autoBoxAdjust)) __obj.updateDynamic("autoBoxAdjust")(autoBoxAdjust.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoBoxAdjust)) __obj.updateDynamic("autoBoxAdjust")(autoBoxAdjust.get.asInstanceOf[js.Any])
     if (blur != null) __obj.updateDynamic("blur")(js.Any.fromFunction0(blur))
     if (boxWrap != null) __obj.updateDynamic("boxWrap")(js.Any.fromFunction1(boxWrap))
     if (cacheScrollValues != null) __obj.updateDynamic("cacheScrollValues")(js.Any.fromFunction0(cacheScrollValues))
@@ -320,7 +320,7 @@ object IFly {
     if (is != null) __obj.updateDynamic("is")(js.Any.fromFunction1(is))
     if (isBorderBox != null) __obj.updateDynamic("isBorderBox")(js.Any.fromFunction0(isBorderBox))
     if (isDisplayed != null) __obj.updateDynamic("isDisplayed")(js.Any.fromFunction0(isDisplayed))
-    if (!js.isUndefined(isFly)) __obj.updateDynamic("isFly")(isFly.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFly)) __obj.updateDynamic("isFly")(isFly.get.asInstanceOf[js.Any])
     if (isFocusable != null) __obj.updateDynamic("isFocusable")(js.Any.fromFunction1(isFocusable))
     if (isMasked != null) __obj.updateDynamic("isMasked")(js.Any.fromFunction0(isMasked))
     if (isScrollable != null) __obj.updateDynamic("isScrollable")(js.Any.fromFunction0(isScrollable))
@@ -386,7 +386,7 @@ object IFly {
     if (setWidth != null) __obj.updateDynamic("setWidth")(js.Any.fromFunction1(setWidth))
     if (shift != null) __obj.updateDynamic("shift")(js.Any.fromFunction1(shift))
     if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (slideIn != null) __obj.updateDynamic("slideIn")(js.Any.fromFunction2(slideIn))
     if (slideOut != null) __obj.updateDynamic("slideOut")(js.Any.fromFunction2(slideOut))
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])

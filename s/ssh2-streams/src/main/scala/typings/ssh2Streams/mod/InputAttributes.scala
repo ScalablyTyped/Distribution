@@ -18,19 +18,19 @@ object InputAttributes {
   @scala.inline
   def apply(
     atime: Double | Date = null,
-    gid: Int | Double = null,
+    gid: js.UndefOr[Double] = js.undefined,
     mode: Double | String = null,
     mtime: Double | Date = null,
-    size: Int | Double = null,
-    uid: Int | Double = null
+    size: js.UndefOr[Double] = js.undefined,
+    uid: js.UndefOr[Double] = js.undefined
   ): InputAttributes = {
     val __obj = js.Dynamic.literal()
     if (atime != null) __obj.updateDynamic("atime")(atime.asInstanceOf[js.Any])
-    if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
+    if (!js.isUndefined(gid)) __obj.updateDynamic("gid")(gid.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (mtime != null) __obj.updateDynamic("mtime")(mtime.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(uid)) __obj.updateDynamic("uid")(uid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputAttributes]
   }
 }

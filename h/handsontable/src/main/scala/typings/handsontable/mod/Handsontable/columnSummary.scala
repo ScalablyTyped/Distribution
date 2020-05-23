@@ -1,8 +1,8 @@
 package typings.handsontable.mod.Handsontable
 
-import typings.handsontable.AnonCustomFunction
-import typings.handsontable.AnonDestinationColumn
-import typings.handsontable.AnonType
+import typings.handsontable.anon.CustomFunction
+import typings.handsontable.anon.DestinationColumn
+import typings.handsontable.anon.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @JSImport("handsontable", "Handsontable.columnSummary")
 @js.native
 object columnSummary extends js.Object {
-  type Settings = AnonDestinationColumn with (AnonType | AnonCustomFunction)
+  type Settings = DestinationColumn with (Type | CustomFunction)
 }
 

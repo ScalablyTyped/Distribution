@@ -1,6 +1,6 @@
 package typings.pendoIoBrowser.pendo
 
-import typings.pendoIoBrowser.AnonAutoHeight
+import typings.pendoIoBrowser.anon.AutoHeight
 import typings.pendoIoBrowser.pendoIoBrowserStrings.button
 import typings.pendoIoBrowser.pendoIoBrowserStrings.element
 import typings.pendoIoBrowser.pendoIoBrowserStrings.programatic
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait GuideStep extends js.Object {
   var advanceMethod: button | programatic | element
-  var attributes: AnonAutoHeight
+  var attributes: AutoHeight
   var contentType: String
   var contentUrl: js.UndefOr[String] = js.undefined
   var contentUrlCss: js.UndefOr[String] = js.undefined
@@ -29,7 +29,7 @@ object GuideStep {
   @scala.inline
   def apply(
     advanceMethod: button | programatic | element,
-    attributes: AnonAutoHeight,
+    attributes: AutoHeight,
     contentType: String,
     elementPathRule: String,
     guideId: String,

@@ -1,6 +1,6 @@
 package typings.htmlparser2.mod
 
-import typings.htmlparser2.PartialDomHandler
+import typings.htmlparser2.anon.PartialDomHandler
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

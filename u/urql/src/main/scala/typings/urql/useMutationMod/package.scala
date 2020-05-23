@@ -9,7 +9,7 @@ package object useMutationMod {
     typings.urql.useMutationMod.UseMutationState[T], 
     js.Function2[
       /* variables */ js.UndefOr[V], 
-      /* context */ js.UndefOr[typings.urql.PartialOperationContext], 
+      /* context */ js.UndefOr[typings.urql.anon.PartialOperationContext], 
       js.Promise[typings.urqlCore.typesMod.OperationResult[T]]
     ]
   ]

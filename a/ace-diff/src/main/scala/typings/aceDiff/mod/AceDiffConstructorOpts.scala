@@ -1,8 +1,8 @@
 package typings.aceDiff.mod
 
-import typings.aceDiff.AnonConnector
 import typings.aceDiff.aceDiffStrings.broad
 import typings.aceDiff.aceDiffStrings.specific
+import typings.aceDiff.anon.Connector
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,9 +22,9 @@ object AceDiffConstructorOpts {
     element: String | HTMLElement,
     left: AceDiffLROpts,
     right: AceDiffLROpts,
-    classes: AnonConnector = null,
+    classes: Connector = null,
     diffGranularity: specific | broad = null,
-    maxDiffs: Int | Double = null,
+    maxDiffs: js.UndefOr[Double] = js.undefined,
     mode: String = null,
     showConnectors: js.UndefOr[Boolean] = js.undefined,
     showDiffs: js.UndefOr[Boolean] = js.undefined,
@@ -33,10 +33,10 @@ object AceDiffConstructorOpts {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (diffGranularity != null) __obj.updateDynamic("diffGranularity")(diffGranularity.asInstanceOf[js.Any])
-    if (maxDiffs != null) __obj.updateDynamic("maxDiffs")(maxDiffs.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDiffs)) __obj.updateDynamic("maxDiffs")(maxDiffs.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(showConnectors)) __obj.updateDynamic("showConnectors")(showConnectors.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDiffs)) __obj.updateDynamic("showDiffs")(showDiffs.asInstanceOf[js.Any])
+    if (!js.isUndefined(showConnectors)) __obj.updateDynamic("showConnectors")(showConnectors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDiffs)) __obj.updateDynamic("showDiffs")(showDiffs.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[AceDiffConstructorOpts]
   }

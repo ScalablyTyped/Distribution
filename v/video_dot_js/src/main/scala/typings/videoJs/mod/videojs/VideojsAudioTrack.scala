@@ -24,8 +24,7 @@ object VideojsAudioTrack {
     language: String,
     sourceBuffer: SourceBuffer = null
   ): VideojsAudioTrack = {
-    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any])
-    if (sourceBuffer != null) __obj.updateDynamic("sourceBuffer")(sourceBuffer.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], sourceBuffer = sourceBuffer.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideojsAudioTrack]
   }
 }

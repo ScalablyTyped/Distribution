@@ -19,7 +19,20 @@ class QuestionMatrixDynamicModel protected () extends QuestionMatrixDropdownMode
     */
   var addRowText: String = js.native
   /**
+    * Set this property to false to disable ability to add new rows. "Add new Row" button becomes invsible in UI
+    * @see canAddRow
+    * @see allowRemoveRows
+    */
+  var allowAddRows: Boolean = js.native
+  /**
+    * Set this property to false to disable ability to remove rows. "Remove" row buttons become invsible in UI
+    * @see canRemoveRows
+    * @see allowAddRows
+    */
+  var allowRemoveRows: Boolean = js.native
+  /**
     * Returns true, if a new row can be added.
+    * @see allowAddRows
     * @see maxRowCount
     * @see canRemoveRows
     * @see rowCount
@@ -67,12 +80,14 @@ class QuestionMatrixDynamicModel protected () extends QuestionMatrixDropdownMode
     * The maximum row count. A user could not add a row if the rowCount equals to maxRowCount
     * @see rowCount
     * @see minRowCount
+    * @see allowAddRows
     */
   var maxRowCount: Double = js.native
   /**
     * The minimum row count. A user could not delete a row if the rowCount equals to minRowCount
     * @see rowCount
     * @see maxRowCount
+    * @see allowAddRows
     */
   var minRowCount: Double = js.native
   /**

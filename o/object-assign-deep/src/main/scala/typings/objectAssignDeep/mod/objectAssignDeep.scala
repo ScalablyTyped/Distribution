@@ -1,6 +1,6 @@
 package typings.objectAssignDeep.mod
 
-import typings.objectAssignDeep.FnCall
+import typings.objectAssignDeep.anon.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

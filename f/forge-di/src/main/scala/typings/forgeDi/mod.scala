@@ -1,6 +1,7 @@
 package typings.forgeDi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.forgeDi.anon.Partialdefault
 import typings.forgeDi.argumentsMod.Arguments
 import typings.forgeDi.configMod.Config
 import typings.forgeDi.constructorMod.Constructor

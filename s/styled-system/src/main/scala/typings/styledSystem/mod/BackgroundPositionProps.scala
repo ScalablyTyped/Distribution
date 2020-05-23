@@ -16,9 +16,9 @@ trait BackgroundPositionProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVa
 
 object BackgroundPositionProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](backgroundPosition: ResponsiveValue[TVal, ThemeType] = null): BackgroundPositionProps[ThemeType, TVal] = {
+  def apply[ThemeType, TVal](backgroundPosition: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): BackgroundPositionProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
-    if (backgroundPosition != null) __obj.updateDynamic("backgroundPosition")(backgroundPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(backgroundPosition)) __obj.updateDynamic("backgroundPosition")(backgroundPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundPositionProps[ThemeType, TVal]]
   }
 }

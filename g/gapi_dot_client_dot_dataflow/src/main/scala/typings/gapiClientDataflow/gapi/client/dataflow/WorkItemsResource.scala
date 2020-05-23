@@ -1,8 +1,8 @@
 package typings.gapiClientDataflow.gapi.client.dataflow
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientDataflow.AnonAccesstoken
-import typings.gapiClientDataflow.AnonAlt
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientDataflow.anon.Accesstoken
+import typings.gapiClientDataflow.anon.Alt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait WorkItemsResource extends js.Object {
   /** Leases a dataflow WorkItem to run. */
-  def lease(request: AnonAccesstoken): Request_[LeaseWorkItemResponse] = js.native
+  def lease(request: Accesstoken): Request[LeaseWorkItemResponse] = js.native
   /** Leases a dataflow WorkItem to run. */
-  def lease(request: AnonAlt): Request_[LeaseWorkItemResponse] = js.native
+  def lease(request: Alt): Request[LeaseWorkItemResponse] = js.native
   /** Reports the status of dataflow WorkItems leased by a worker. */
-  def reportStatus(request: AnonAccesstoken): Request_[ReportWorkItemStatusResponse] = js.native
+  def reportStatus(request: Accesstoken): Request[ReportWorkItemStatusResponse] = js.native
   /** Reports the status of dataflow WorkItems leased by a worker. */
-  def reportStatus(request: AnonAlt): Request_[ReportWorkItemStatusResponse] = js.native
+  def reportStatus(request: Alt): Request[ReportWorkItemStatusResponse] = js.native
 }
 

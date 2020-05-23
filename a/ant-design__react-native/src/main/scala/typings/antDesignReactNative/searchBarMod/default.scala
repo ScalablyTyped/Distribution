@@ -1,7 +1,7 @@
 package typings.antDesignReactNative.searchBarMod
 
-import typings.antDesignReactNative.AnonAntLocale
-import typings.antDesignReactNative.AnonOnBlur
+import typings.antDesignReactNative.anon.AntLocale
+import typings.antDesignReactNative.anon.OnBlur
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class default protected () extends SearchBar {
 @JSImport("@ant-design/react-native/lib/search-bar", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var contextTypes: AnonAntLocale = js.native
-  var defaultProps: AnonOnBlur = js.native
+  var contextTypes: AntLocale = js.native
+  var defaultProps: OnBlur = js.native
 }
 

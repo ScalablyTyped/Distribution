@@ -8,23 +8,23 @@ trait SearchUserIDsResponse extends js.Object {
   /**
     * List of userID matching the query.
     */
-  val hits: js.Array[UserIDResponse]
+  var hits: js.Array[UserIDResponse]
   /**
     * Number of hits retrieved per page.
     */
-  val hitsPerPage: Double
+  var hitsPerPage: Double
   /**
     * Number of userIDs matching the query.
     */
-  val nbHits: Double
+  var nbHits: Double
   /**
     * Current page.
     */
-  val page: Double
+  var page: Double
   /**
     * Timestamp of the last update of the index.
     */
-  val updatedAt: Double
+  var updatedAt: Double
 }
 
 object SearchUserIDsResponse {

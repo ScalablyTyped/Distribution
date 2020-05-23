@@ -1,5 +1,7 @@
 package typings.antdMobile
 
+import typings.antdMobile.anon.Label
+import typings.antdMobile.anon.ListViewPrefixCls
 import typings.antdMobile.listViewPropsTypeMod.ListViewPropsType
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
@@ -23,7 +25,7 @@ object indexedMod extends js.Object {
     var delayTime: js.UndefOr[Double] = js.native
     var onQuickSearch: js.UndefOr[js.Function2[/* sectionID */ js.Any, /* topId */ js.UndefOr[js.Any], Unit]] = js.native
     var quickSearchBarStyle: js.UndefOr[CSSProperties] = js.native
-    var quickSearchBarTop: js.UndefOr[AnonLabel] = js.native
+    var quickSearchBarTop: js.UndefOr[Label] = js.native
   }
   
   @js.native
@@ -32,7 +34,7 @@ object indexedMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonListViewPrefixCls = js.native
+    var defaultProps: ListViewPrefixCls = js.native
   }
   
 }

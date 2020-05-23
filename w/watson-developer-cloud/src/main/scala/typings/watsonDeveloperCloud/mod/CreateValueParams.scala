@@ -42,7 +42,7 @@ object CreateValueParams {
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (patterns != null) __obj.updateDynamic("patterns")(patterns.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     if (synonyms != null) __obj.updateDynamic("synonyms")(synonyms.asInstanceOf[js.Any])
     if (value_type != null) __obj.updateDynamic("value_type")(value_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateValueParams]

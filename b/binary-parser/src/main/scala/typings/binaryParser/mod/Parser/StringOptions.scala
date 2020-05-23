@@ -29,10 +29,10 @@ object StringOptions {
     if (assert != null) __obj.updateDynamic("assert")(assert.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
-    if (!js.isUndefined(greedy)) __obj.updateDynamic("greedy")(greedy.asInstanceOf[js.Any])
+    if (!js.isUndefined(greedy)) __obj.updateDynamic("greedy")(greedy.get.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripNull)) __obj.updateDynamic("stripNull")(stripNull.asInstanceOf[js.Any])
-    if (!js.isUndefined(zeroTerminated)) __obj.updateDynamic("zeroTerminated")(zeroTerminated.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripNull)) __obj.updateDynamic("stripNull")(stripNull.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zeroTerminated)) __obj.updateDynamic("zeroTerminated")(zeroTerminated.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringOptions]
   }
 }

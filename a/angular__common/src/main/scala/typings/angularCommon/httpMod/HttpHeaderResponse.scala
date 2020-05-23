@@ -1,6 +1,6 @@
 package typings.angularCommon.httpMod
 
-import typings.angularCommon.AnonHeaders
+import typings.angularCommon.anon.Headers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class HttpHeaderResponse ()
   extends typings.angularCommon.httpHttpMod.HttpHeaderResponse {
-  def this(init: AnonHeaders) = this()
+  def this(init: Headers) = this()
 }
 

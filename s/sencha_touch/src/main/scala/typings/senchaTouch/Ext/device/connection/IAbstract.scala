@@ -24,24 +24,24 @@ trait IAbstract extends IEvented {
   /** [Property] (String) */
   var WIFI: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of online
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getOnline: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the current connection type
-  		* @returns String type
-  		*/
+    * @returns String type
+    */
   var getType: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] True if the device is currently online
-  		* @returns Boolean online
-  		*/
+    * @returns Boolean online
+    */
   var isOnline: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Sets the value of online
-  		* @param online Boolean The new value.
-  		*/
+    * @param online Boolean The new value.
+    */
   var setOnline: js.UndefOr[js.Function1[/* online */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of type
-  		* @param type Object The new value.
-  		*/
+    * @param type Object The new value.
+    */
   var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -165,7 +165,7 @@ object IAbstract {
     if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
     if (setOnline != null) __obj.updateDynamic("setOnline")(js.Any.fromFunction1(setOnline))
     if (setType != null) __obj.updateDynamic("setType")(js.Any.fromFunction1(setType))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))

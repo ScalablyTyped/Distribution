@@ -20,8 +20,8 @@ object WebServerSyncOptions {
   ): WebServerSyncOptions = {
     val __obj = js.Dynamic.literal()
     if (browser != null) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
-    if (!js.isUndefined(notify)) __obj.updateDynamic("notify")(notify.asInstanceOf[js.Any])
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (!js.isUndefined(notify)) __obj.updateDynamic("notify")(notify.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebServerSyncOptions]
   }
 }

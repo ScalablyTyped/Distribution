@@ -1,9 +1,9 @@
 package typings.vueRx.mod
 
 import typings.rxjs.mod.Observable_
-import typings.std.Event_
+import typings.std.Event
 import typings.vue.optionsMod.WatchOptions
-import typings.vueRx.AnonMsg
+import typings.vueRx.anon.Msg
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,11 +18,11 @@ object vueTypesVueAugmentingMod extends js.Object {
     @JSName("$createObservableMethod")
     def $createObservableMethod(methodName: String): Observable_[_] = js.native
     @JSName("$eventToObservable")
-    def $eventToObservable(event: String): Observable_[AnonMsg] = js.native
+    def $eventToObservable(event: String): Observable_[Msg] = js.native
     @JSName("$fromDOMEvent")
-    def $fromDOMEvent(selector: String, event: String): Observable_[Event_] = js.native
+    def $fromDOMEvent(selector: String, event: String): Observable_[Event] = js.native
     @JSName("$fromDOMEvent")
-    def $fromDOMEvent(selector: Null, event: String): Observable_[Event_] = js.native
+    def $fromDOMEvent(selector: Null, event: String): Observable_[Event] = js.native
     @JSName("$subscribeTo")
     def $subscribeTo[T](observable: Observable_[T], next: js.Function1[/* t */ T, Unit]): Unit = js.native
     @JSName("$subscribeTo")

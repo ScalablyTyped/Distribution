@@ -16,17 +16,12 @@ import scala.scalajs.js.annotation._
   *
   * NOTE: 'params' can be omitted.
   */
-@JSGlobal("jsrsasign.KJUR.asn1.DERObjectIdentifier")
-@js.native
-class DERObjectIdentifier () extends ASN1Object {
-  def this(params: HexParam) = this()
-  def this(params: NameParam) = this()
-  def this(params: ObjectIdentifierParam) = this()
+trait DERObjectIdentifier extends ASN1Object {
   /**
     * set value by a hexadecimal string
     * @param newHexString hexadecimal value of OID bytes
     */
-  def setValueHex(newHexString: String): Unit = js.native
+  def setValueHex(newHexString: String): Unit
   /**
     * set value by a OID name
     * @param oidName OID name (ex. 'serverAuth')
@@ -37,7 +32,7 @@ class DERObjectIdentifier () extends ASN1Object {
     * o = new KJUR.asn1.DERObjectIdentifier();
     * o.setValueName("serverAuth");
     */
-  def setValueName(oidName: String): Unit = js.native
+  def setValueName(oidName: String): Unit
   /**
     * set value by a OID string
     * @param oidString OID string (ex. 2.5.4.13)
@@ -45,6 +40,27 @@ class DERObjectIdentifier () extends ASN1Object {
     * o = new KJUR.asn1.DERObjectIdentifier();
     * o.setValueOidString("2.5.4.13");
     */
-  def setValueOidString(oidString: String): Unit = js.native
+  def setValueOidString(oidString: String): Unit
+}
+
+object DERObjectIdentifier {
+  @scala.inline
+  def apply(
+    getEncodedHex: () => String,
+    getFreshValueHex: () => String,
+    getLengthHexFromValue: () => String,
+    getValueHex: () => String,
+    hL: String,
+    hT: String,
+    hTLV: String,
+    hV: String,
+    isModified: String,
+    setValueHex: String => Unit,
+    setValueName: String => Unit,
+    setValueOidString: String => Unit
+  ): DERObjectIdentifier = {
+    val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setValueHex = js.Any.fromFunction1(setValueHex), setValueName = js.Any.fromFunction1(setValueName), setValueOidString = js.Any.fromFunction1(setValueOidString))
+    __obj.asInstanceOf[DERObjectIdentifier]
+  }
 }
 

@@ -107,32 +107,32 @@ object Device {
     modelName: String = null,
     os: String = null,
     osVersion: String = null,
-    physicalScreenHeight: Int | Double = null,
-    physicalScreenWidth: Int | Double = null,
-    resolutionHeight: Int | Double = null,
-    resolutionWidth: Int | Double = null,
-    xhtmlSupportLevel: Int | Double = null
+    physicalScreenHeight: js.UndefOr[Double] = js.undefined,
+    physicalScreenWidth: js.UndefOr[Double] = js.undefined,
+    resolutionHeight: js.UndefOr[Double] = js.undefined,
+    resolutionWidth: js.UndefOr[Double] = js.undefined,
+    xhtmlSupportLevel: js.UndefOr[Double] = js.undefined
   ): Device = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(acceptsThirdPartyCookie)) __obj.updateDynamic("acceptsThirdPartyCookie")(acceptsThirdPartyCookie.asInstanceOf[js.Any])
+    if (!js.isUndefined(acceptsThirdPartyCookie)) __obj.updateDynamic("acceptsThirdPartyCookie")(acceptsThirdPartyCookie.get.asInstanceOf[js.Any])
     if (brandName != null) __obj.updateDynamic("brandName")(brandName.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasAjaxSupport)) __obj.updateDynamic("hasAjaxSupport")(hasAjaxSupport.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasCookieSupport)) __obj.updateDynamic("hasCookieSupport")(hasCookieSupport.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasFlashSupport)) __obj.updateDynamic("hasFlashSupport")(hasFlashSupport.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTablet)) __obj.updateDynamic("isTablet")(isTablet.asInstanceOf[js.Any])
-    if (!js.isUndefined(isWireless)) __obj.updateDynamic("isWireless")(isWireless.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasAjaxSupport)) __obj.updateDynamic("hasAjaxSupport")(hasAjaxSupport.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasCookieSupport)) __obj.updateDynamic("hasCookieSupport")(hasCookieSupport.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasFlashSupport)) __obj.updateDynamic("hasFlashSupport")(hasFlashSupport.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTablet)) __obj.updateDynamic("isTablet")(isTablet.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isWireless)) __obj.updateDynamic("isWireless")(isWireless.get.asInstanceOf[js.Any])
     if (marketingName != null) __obj.updateDynamic("marketingName")(marketingName.asInstanceOf[js.Any])
     if (mobileBrowser != null) __obj.updateDynamic("mobileBrowser")(mobileBrowser.asInstanceOf[js.Any])
     if (mobileBrowserVersion != null) __obj.updateDynamic("mobileBrowserVersion")(mobileBrowserVersion.asInstanceOf[js.Any])
     if (modelName != null) __obj.updateDynamic("modelName")(modelName.asInstanceOf[js.Any])
     if (os != null) __obj.updateDynamic("os")(os.asInstanceOf[js.Any])
     if (osVersion != null) __obj.updateDynamic("osVersion")(osVersion.asInstanceOf[js.Any])
-    if (physicalScreenHeight != null) __obj.updateDynamic("physicalScreenHeight")(physicalScreenHeight.asInstanceOf[js.Any])
-    if (physicalScreenWidth != null) __obj.updateDynamic("physicalScreenWidth")(physicalScreenWidth.asInstanceOf[js.Any])
-    if (resolutionHeight != null) __obj.updateDynamic("resolutionHeight")(resolutionHeight.asInstanceOf[js.Any])
-    if (resolutionWidth != null) __obj.updateDynamic("resolutionWidth")(resolutionWidth.asInstanceOf[js.Any])
-    if (xhtmlSupportLevel != null) __obj.updateDynamic("xhtmlSupportLevel")(xhtmlSupportLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(physicalScreenHeight)) __obj.updateDynamic("physicalScreenHeight")(physicalScreenHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(physicalScreenWidth)) __obj.updateDynamic("physicalScreenWidth")(physicalScreenWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolutionHeight)) __obj.updateDynamic("resolutionHeight")(resolutionHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolutionWidth)) __obj.updateDynamic("resolutionWidth")(resolutionWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xhtmlSupportLevel)) __obj.updateDynamic("xhtmlSupportLevel")(xhtmlSupportLevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Device]
   }
 }

@@ -32,7 +32,7 @@ object IgLoaderSettings {
     theme: String = null
   ): IgLoaderSettings = {
     val __obj = js.Dynamic.literal(cssPath = cssPath.asInstanceOf[js.Any], scriptPath = scriptPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoDetectLocale)) __obj.updateDynamic("autoDetectLocale")(autoDetectLocale.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDetectLocale)) __obj.updateDynamic("autoDetectLocale")(autoDetectLocale.get.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (localePath != null) __obj.updateDynamic("localePath")(localePath.asInstanceOf[js.Any])
     if (preinit != null) __obj.updateDynamic("preinit")(preinit.asInstanceOf[js.Any])

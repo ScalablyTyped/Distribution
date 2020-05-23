@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Annotation extends js.Object {
-  /**	If true, attach annotations to the x-axis, rather than to actual points. */
+  /**    If true, attach annotations to the x-axis, rather than to actual points. */
   var attachAtBottom: js.UndefOr[Boolean] = js.undefined
   /** This function is called whenever the user clicks on this annotation. */
   var clickHandler: js.UndefOr[
@@ -20,7 +20,7 @@ trait Annotation extends js.Object {
       _
     ]
   ] = js.undefined
-  /**	CSS class to use for styling the annotation. */
+  /**    CSS class to use for styling the annotation. */
   var cssClass: js.UndefOr[String] = js.undefined
   /** this function is called whenever the user double-clicks on this annotation. */
   var dblClickHandler: js.UndefOr[
@@ -62,13 +62,13 @@ trait Annotation extends js.Object {
   ] = js.undefined
   /** The name of the series to which the annotated point belongs. */
   var series: String
-  /**	Text that will appear on the annotation's flag. */
+  /**    Text that will appear on the annotation's flag. */
   var shortText: js.UndefOr[String] = js.undefined
   /** A longer description of the annotation which will appear when the user hovers over it. */
   var text: js.UndefOr[String] = js.undefined
-  /**	Height of the tick mark (in pixels) connecting the point to its flag or icon. */
+  /**    Height of the tick mark (in pixels) connecting the point to its flag or icon. */
   var tickHeight: js.UndefOr[Double] = js.undefined
-  /**	Width (in pixels) of the annotation flag or icon. */
+  /**    Width (in pixels) of the annotation flag or icon. */
   var width: js.UndefOr[Double] = js.undefined
   /**
     * The x value of the point. This should be the same as the value
@@ -91,33 +91,33 @@ object Annotation {
     cssClass: String = null,
     dblClickHandler: (/* annotation */ Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => _ = null,
     div: HTMLDivElement = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     icon: String = null,
     mouseOutHandler: (/* annotation */ Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => _ = null,
     mouseOverHandler: (/* annotation */ Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => _ = null,
     shortText: String = null,
     text: String = null,
-    tickHeight: Int | Double = null,
-    width: Int | Double = null,
+    tickHeight: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined,
     x: Double | String = null,
-    xval: Int | Double = null
+    xval: js.UndefOr[Double] = js.undefined
   ): Annotation = {
     val __obj = js.Dynamic.literal(series = series.asInstanceOf[js.Any])
-    if (!js.isUndefined(attachAtBottom)) __obj.updateDynamic("attachAtBottom")(attachAtBottom.asInstanceOf[js.Any])
+    if (!js.isUndefined(attachAtBottom)) __obj.updateDynamic("attachAtBottom")(attachAtBottom.get.asInstanceOf[js.Any])
     if (clickHandler != null) __obj.updateDynamic("clickHandler")(js.Any.fromFunction4(clickHandler))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (dblClickHandler != null) __obj.updateDynamic("dblClickHandler")(js.Any.fromFunction4(dblClickHandler))
     if (div != null) __obj.updateDynamic("div")(div.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (mouseOutHandler != null) __obj.updateDynamic("mouseOutHandler")(js.Any.fromFunction4(mouseOutHandler))
     if (mouseOverHandler != null) __obj.updateDynamic("mouseOverHandler")(js.Any.fromFunction4(mouseOverHandler))
     if (shortText != null) __obj.updateDynamic("shortText")(shortText.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (tickHeight != null) __obj.updateDynamic("tickHeight")(tickHeight.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(tickHeight)) __obj.updateDynamic("tickHeight")(tickHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (xval != null) __obj.updateDynamic("xval")(xval.asInstanceOf[js.Any])
+    if (!js.isUndefined(xval)) __obj.updateDynamic("xval")(xval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Annotation]
   }
 }

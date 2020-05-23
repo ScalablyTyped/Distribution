@@ -13,10 +13,10 @@ trait RunOptions extends js.Object {
 
 object RunOptions {
   @scala.inline
-  def apply(repeatView: js.UndefOr[Boolean] = js.undefined, run: Int | Double = null): RunOptions = {
+  def apply(repeatView: js.UndefOr[Boolean] = js.undefined, run: js.UndefOr[Double] = js.undefined): RunOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(repeatView)) __obj.updateDynamic("repeatView")(repeatView.asInstanceOf[js.Any])
-    if (run != null) __obj.updateDynamic("run")(run.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeatView)) __obj.updateDynamic("repeatView")(repeatView.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(run)) __obj.updateDynamic("run")(run.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunOptions]
   }
 }

@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.PullAccessorSymbol")
 @js.native
-class PullAccessorSymbol protected () extends PullSymbol {
-  def this(name: String) = this()
+trait PullAccessorSymbol extends PullSymbol {
   var _getterSymbol: js.Any = js.native
   var _setterSymbol: js.Any = js.native
   def getGetter(): PullSymbol = js.native

@@ -17,12 +17,12 @@ object RoomSubcriptionParams {
     roomId: String,
     disableCursors: js.UndefOr[Boolean] = js.undefined,
     hooks: RoomSubscriptionHooks = null,
-    messageLimit: Int | Double = null
+    messageLimit: js.UndefOr[Double] = js.undefined
   ): RoomSubcriptionParams = {
     val __obj = js.Dynamic.literal(roomId = roomId.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableCursors)) __obj.updateDynamic("disableCursors")(disableCursors.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableCursors)) __obj.updateDynamic("disableCursors")(disableCursors.get.asInstanceOf[js.Any])
     if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
-    if (messageLimit != null) __obj.updateDynamic("messageLimit")(messageLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(messageLimit)) __obj.updateDynamic("messageLimit")(messageLimit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoomSubcriptionParams]
   }
 }

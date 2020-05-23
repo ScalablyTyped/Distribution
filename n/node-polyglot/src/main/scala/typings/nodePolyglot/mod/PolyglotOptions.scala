@@ -31,7 +31,7 @@ object PolyglotOptions {
     warn: /* message */ String => Unit = null
   ): PolyglotOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowMissing)) __obj.updateDynamic("allowMissing")(allowMissing.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMissing)) __obj.updateDynamic("allowMissing")(allowMissing.get.asInstanceOf[js.Any])
     if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (onMissingKey != null) __obj.updateDynamic("onMissingKey")(js.Any.fromFunction3(onMissingKey))

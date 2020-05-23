@@ -5,7 +5,7 @@ import typings.react.mod.ComponentProps
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeGestureHandler.mod.PanGestureHandler
-import typings.reactNavigationDrawer.AnonProgress
+import typings.reactNavigationDrawer.anon.Progress
 import typings.reactNavigationDrawer.reactNavigationDrawerStrings.`on-drag`
 import typings.reactNavigationDrawer.reactNavigationDrawerStrings.back
 import typings.reactNavigationDrawer.reactNavigationDrawerStrings.fade
@@ -51,8 +51,8 @@ object Props {
     onClose: () => Unit,
     onOpen: () => Unit,
     open: Boolean,
-    renderDrawerContent: /* props */ AnonProgress => ReactNode,
-    renderSceneContent: /* props */ AnonProgress => ReactNode,
+    renderDrawerContent: /* props */ Progress => ReactNode,
+    renderSceneContent: /* props */ Progress => ReactNode,
     statusBarAnimation: slide | none | fade,
     swipeEdgeWidth: Double,
     swipeVelocityThreshold: Double,
@@ -61,7 +61,7 @@ object Props {
     onGestureRef: /* ref */ PanGestureHandler | Null => Unit = null,
     overlayStyle: ViewStyle = null,
     sceneContainerStyle: ViewStyle = null,
-    swipeDistanceThreshold: Int | Double = null
+    swipeDistanceThreshold: js.UndefOr[Double] = js.undefined
   ): Props = {
     val __obj = js.Dynamic.literal(drawerPosition = drawerPosition.asInstanceOf[js.Any], drawerType = drawerType.asInstanceOf[js.Any], gestureEnabled = gestureEnabled.asInstanceOf[js.Any], hideStatusBar = hideStatusBar.asInstanceOf[js.Any], keyboardDismissMode = keyboardDismissMode.asInstanceOf[js.Any], onClose = js.Any.fromFunction0(onClose), onOpen = js.Any.fromFunction0(onOpen), open = open.asInstanceOf[js.Any], renderDrawerContent = js.Any.fromFunction1(renderDrawerContent), renderSceneContent = js.Any.fromFunction1(renderSceneContent), statusBarAnimation = statusBarAnimation.asInstanceOf[js.Any], swipeEdgeWidth = swipeEdgeWidth.asInstanceOf[js.Any], swipeVelocityThreshold = swipeVelocityThreshold.asInstanceOf[js.Any])
     if (drawerStyle != null) __obj.updateDynamic("drawerStyle")(drawerStyle.asInstanceOf[js.Any])
@@ -69,7 +69,7 @@ object Props {
     if (onGestureRef != null) __obj.updateDynamic("onGestureRef")(js.Any.fromFunction1(onGestureRef))
     if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
     if (sceneContainerStyle != null) __obj.updateDynamic("sceneContainerStyle")(sceneContainerStyle.asInstanceOf[js.Any])
-    if (swipeDistanceThreshold != null) __obj.updateDynamic("swipeDistanceThreshold")(swipeDistanceThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(swipeDistanceThreshold)) __obj.updateDynamic("swipeDistanceThreshold")(swipeDistanceThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

@@ -1,9 +1,10 @@
 package typings.reactSignatureCanvas.mod
 
 import typings.react.mod.Component
-import typings.reactSignatureCanvas.FnCall
-import typings.reactSignatureCanvas.FnCallTypeEncoderOptions
-import typings.signaturePad.mod.SignaturePad.Point
+import typings.reactSignatureCanvas.anon.FnCall
+import typings.reactSignatureCanvas.anon.FnCallTypeEncoderOptions
+import typings.signaturePad.mod.Point
+import typings.signaturePad.mod.^
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +22,7 @@ trait ReactSignatureCanvas
   var toData: js.Function0[js.Array[js.Array[Point]]] = js.native
   var toDataURL: FnCallTypeEncoderOptions = js.native
   def getCanvas(): HTMLCanvasElement = js.native
-  def getSignaturePad(): typings.signaturePad.mod.default = js.native
+  def getSignaturePad(): ^ = js.native
   def getTrimmedCanvas(): HTMLCanvasElement = js.native
 }
 

@@ -6,7 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait SchemaObj[T] extends js.Object {
   var arg: js.UndefOr[String] = js.undefined
-  var default: T
+  /**
+    * You can define a configuration property as "required" without providing a default value.
+    * Set its default to null and if your format doesn't accept null it will throw an error.
+    */
+  var default: T | Null
   var doc: js.UndefOr[String] = js.undefined
   var env: js.UndefOr[String] = js.undefined
   /**
@@ -28,8 +32,8 @@ trait SchemaObj[T] extends js.Object {
 object SchemaObj {
   @scala.inline
   def apply[T](
-    default: T,
     arg: String = null,
+    default: T = null,
     doc: String = null,
     env: String = null,
     format: PredefinedFormat | js.Array[_] | (js.Function1[/* val */ js.Any, Unit]) = null,
@@ -40,7 +44,7 @@ object SchemaObj {
     if (doc != null) __obj.updateDynamic("doc")(doc.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaObj[T]]
   }
 }

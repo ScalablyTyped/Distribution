@@ -54,8 +54,8 @@ object DescribeActivitiesRequest {
     ActivityTypes: ActivityNamesFilterType = null,
     AuthenticationToken: AuthenticationHeaderType = null,
     EndTime: TimestampType = null,
-    IncludeIndirectActivities: js.UndefOr[Boolean] = js.undefined,
-    Limit: Int | Double = null,
+    IncludeIndirectActivities: js.UndefOr[BooleanType] = js.undefined,
+    Limit: js.UndefOr[LimitType] = js.undefined,
     Marker: MarkerType = null,
     OrganizationId: IdType = null,
     ResourceId: IdType = null,
@@ -66,8 +66,8 @@ object DescribeActivitiesRequest {
     if (ActivityTypes != null) __obj.updateDynamic("ActivityTypes")(ActivityTypes.asInstanceOf[js.Any])
     if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken.asInstanceOf[js.Any])
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeIndirectActivities)) __obj.updateDynamic("IncludeIndirectActivities")(IncludeIndirectActivities.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeIndirectActivities)) __obj.updateDynamic("IncludeIndirectActivities")(IncludeIndirectActivities.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     if (OrganizationId != null) __obj.updateDynamic("OrganizationId")(OrganizationId.asInstanceOf[js.Any])
     if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])

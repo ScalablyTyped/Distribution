@@ -17,9 +17,12 @@ trait NavigationBarColorAnimationOptions extends js.Object {
 
 object NavigationBarColorAnimationOptions {
   @scala.inline
-  def apply(animation: Int | Double = null, timingFunc: linear | easeIn | easeOut | easeInOut = null): NavigationBarColorAnimationOptions = {
+  def apply(
+    animation: js.UndefOr[Double] = js.undefined,
+    timingFunc: linear | easeIn | easeOut | easeInOut = null
+  ): NavigationBarColorAnimationOptions = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
     if (timingFunc != null) __obj.updateDynamic("timingFunc")(timingFunc.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationBarColorAnimationOptions]
   }

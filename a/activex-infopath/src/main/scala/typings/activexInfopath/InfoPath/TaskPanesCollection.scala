@@ -4,12 +4,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("InfoPath.TaskPanesCollection")
-@js.native
-class TaskPanesCollection protected () extends js.Object {
-  val Count: Double = js.native
+trait TaskPanesCollection extends js.Object {
+  val Count: Double
   @JSName("InfoPath.TaskPanesCollection_typekey")
-  var InfoPathDotTaskPanesCollection_typekey: TaskPanesCollection = js.native
-  def Item(varIndex: js.Any): TaskPaneObject = js.native
+  var InfoPathDotTaskPanesCollection_typekey: TaskPanesCollection
+  def Item(varIndex: js.Any): TaskPaneObject
+}
+
+object TaskPanesCollection {
+  @scala.inline
+  def apply(
+    Count: Double,
+    InfoPathDotTaskPanesCollection_typekey: TaskPanesCollection,
+    Item: js.Any => TaskPaneObject
+  ): TaskPanesCollection = {
+    val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
+    __obj.updateDynamic("InfoPath.TaskPanesCollection_typekey")(InfoPathDotTaskPanesCollection_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TaskPanesCollection]
+  }
 }
 

@@ -36,29 +36,29 @@ trait SecureScore extends Entity {
 object SecureScore {
   @scala.inline
   def apply(
-    activeUserCount: Int | Double = null,
+    activeUserCount: js.UndefOr[Double] = js.undefined,
     averageComparativeScores: js.Array[AverageComparativeScore] = null,
     azureTenantId: String = null,
     controlScores: js.Array[ControlScore] = null,
     createdDateTime: String = null,
-    currentScore: Int | Double = null,
+    currentScore: js.UndefOr[Double] = js.undefined,
     enabledServices: js.Array[String] = null,
     id: String = null,
-    licensedUserCount: Int | Double = null,
-    maxScore: Int | Double = null,
+    licensedUserCount: js.UndefOr[Double] = js.undefined,
+    maxScore: js.UndefOr[Double] = js.undefined,
     vendorInformation: SecurityVendorInformation = null
   ): SecureScore = {
     val __obj = js.Dynamic.literal()
-    if (activeUserCount != null) __obj.updateDynamic("activeUserCount")(activeUserCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeUserCount)) __obj.updateDynamic("activeUserCount")(activeUserCount.get.asInstanceOf[js.Any])
     if (averageComparativeScores != null) __obj.updateDynamic("averageComparativeScores")(averageComparativeScores.asInstanceOf[js.Any])
     if (azureTenantId != null) __obj.updateDynamic("azureTenantId")(azureTenantId.asInstanceOf[js.Any])
     if (controlScores != null) __obj.updateDynamic("controlScores")(controlScores.asInstanceOf[js.Any])
     if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (currentScore != null) __obj.updateDynamic("currentScore")(currentScore.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentScore)) __obj.updateDynamic("currentScore")(currentScore.get.asInstanceOf[js.Any])
     if (enabledServices != null) __obj.updateDynamic("enabledServices")(enabledServices.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (licensedUserCount != null) __obj.updateDynamic("licensedUserCount")(licensedUserCount.asInstanceOf[js.Any])
-    if (maxScore != null) __obj.updateDynamic("maxScore")(maxScore.asInstanceOf[js.Any])
+    if (!js.isUndefined(licensedUserCount)) __obj.updateDynamic("licensedUserCount")(licensedUserCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxScore)) __obj.updateDynamic("maxScore")(maxScore.get.asInstanceOf[js.Any])
     if (vendorInformation != null) __obj.updateDynamic("vendorInformation")(vendorInformation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecureScore]
   }

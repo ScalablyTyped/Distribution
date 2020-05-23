@@ -1,6 +1,5 @@
 package typings.babylonjs.BABYLON
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,14 +17,6 @@ object NodeMaterialConnectionPointDirection extends js.Object {
   /** Output */
   @js.native
   sealed trait Output extends NodeMaterialConnectionPointDirection
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NodeMaterialConnectionPointDirection with Double] = js.native
-  /* 0 */ @js.native
-  object Input extends TopLevel[Input with Double]
-  
-  /* 1 */ @js.native
-  object Output extends TopLevel[Output with Double]
   
 }
 

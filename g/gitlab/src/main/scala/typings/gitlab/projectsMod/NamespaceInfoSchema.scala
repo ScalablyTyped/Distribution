@@ -25,10 +25,10 @@ object NamespaceInfoSchema {
     name: String,
     path: String,
     web_url: String,
-    parent_id: Int | Double = null
+    parent_id: js.UndefOr[Double] = js.undefined
   ): NamespaceInfoSchema = {
     val __obj = js.Dynamic.literal(avatar_url = avatar_url.asInstanceOf[js.Any], full_path = full_path.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], web_url = web_url.asInstanceOf[js.Any])
-    if (parent_id != null) __obj.updateDynamic("parent_id")(parent_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent_id)) __obj.updateDynamic("parent_id")(parent_id.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamespaceInfoSchema]
   }
 }

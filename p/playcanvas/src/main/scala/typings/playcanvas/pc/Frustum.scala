@@ -5,50 +5,50 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @class
-  * @name pc.Frustum
-  * @classdesc A frustum is a shape that defines the viewing space of a camera.
-  * @description Creates a new frustum shape.
+  * Creates a new frustum shape.
   * @example
   * // Create a new frustum equivalent to one held by a camera component
-  * var projectionMatrix = entity.camera.projectionMatrix;
-  * var viewMatrix = entity.camera.viewMatrix;
-  * var frustum = new pc.Frustum(projectionMatrix, viewMatrix);
-  * @param {pc.Mat4} projectionMatrix - The projection matrix describing the shape of the frustum.
-  * @param {pc.Mat4} viewMatrix - The inverse of the world transformation matrix for the frustum.
+  var projectionMatrix = entity.camera.projectionMatrix;
+  var viewMatrix = entity.camera.viewMatrix;
+  var frustum = new pc.Frustum(projectionMatrix, viewMatrix);
+  * @param projectionMatrix - The projection matrix describing the shape of the frustum.
+  * @param viewMatrix - The inverse of the world transformation matrix for the frustum.
   */
-@JSGlobal("pc.Frustum")
-@js.native
-class Frustum protected () extends js.Object {
-  def this(projectionMatrix: Mat4, viewMatrix: Mat4) = this()
+trait Frustum extends js.Object {
   /**
-    * @function
-    * @name pc.Frustum#containsPoint
-    * @description Tests whether a point is inside the frustum. Note that points lying in a frustum plane are
-    * considered to be outside the frustum.
-    * @param {pc.Vec3} point - The point to test.
-    * @returns {boolean} True if the point is inside the frustum, false otherwise.
+    * Tests whether a point is inside the frustum. Note that points lying in a frustum plane are
+    considered to be outside the frustum.
+    * @param point - The point to test.
+    * @returns True if the point is inside the frustum, false otherwise.
     */
-  def containsPoint(point: Vec3): Boolean = js.native
+  def containsPoint(point: Vec3): Boolean
   /**
-    * @function
-    * @name pc.Frustum#containsSphere
-    * @description Tests whether a bounding sphere intersects the frustum. If the sphere is outside the frustum,
-    * zero is returned. If the sphere intersects the frustum, 1 is returned. If the sphere is completely inside
-    * the frustum, 2 is returned. Note that a sphere touching a frustum plane from the outside is considered to
-    * be outside the frustum.
-    * @param {pc.BoundingSphere} sphere - The sphere to test.
-    * @returns {number} 0 if the bounding sphere is outside the frustum, 1 if it intersects the frustum and 2 if
-    * it is contained by the frustum.
+    * Tests whether a bounding sphere intersects the frustum. If the sphere is outside the frustum,
+    zero is returned. If the sphere intersects the frustum, 1 is returned. If the sphere is completely inside
+    the frustum, 2 is returned. Note that a sphere touching a frustum plane from the outside is considered to
+    be outside the frustum.
+    * @param sphere - The sphere to test.
+    * @returns 0 if the bounding sphere is outside the frustum, 1 if it intersects the frustum and 2 if
+    it is contained by the frustum.
     */
-  def containsSphere(sphere: BoundingSphere): Double = js.native
+  def containsSphere(sphere: BoundingSphere): Double
   /**
-    * @function
-    * @name pc.Frustum#update
-    * @description Updates the frustum shape based on a view matrix and a projection matrix.
-    * @param {pc.Mat4} projectionMatrix - The projection matrix describing the shape of the frustum.
-    * @param {pc.Mat4} viewMatrix - The inverse of the world transformation matrix for the frustum.
+    * Updates the frustum shape based on a view matrix and a projection matrix.
+    * @param projectionMatrix - The projection matrix describing the shape of the frustum.
+    * @param viewMatrix - The inverse of the world transformation matrix for the frustum.
     */
-  def update(projectionMatrix: Mat4, viewMatrix: Mat4): Unit = js.native
+  def update(projectionMatrix: Mat4, viewMatrix: Mat4): Unit
+}
+
+object Frustum {
+  @scala.inline
+  def apply(
+    containsPoint: Vec3 => Boolean,
+    containsSphere: BoundingSphere => Double,
+    update: (Mat4, Mat4) => Unit
+  ): Frustum = {
+    val __obj = js.Dynamic.literal(containsPoint = js.Any.fromFunction1(containsPoint), containsSphere = js.Any.fromFunction1(containsSphere), update = js.Any.fromFunction2(update))
+    __obj.asInstanceOf[Frustum]
+  }
 }
 

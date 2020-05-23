@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 class SqlThemeIcon protected () extends js.Object {
   protected def this(id: String) = this()
   /**
-  		 * Gets the ID for the theme icon for help in cases where string comparison is needed
-  		 */
+    * Gets the ID for the theme icon for help in cases where string comparison is needed
+    */
   val id: String = js.native
 }
 

@@ -18,6 +18,9 @@ trait RectEncodeEntry extends EncodeEntry {
 object RectEncodeEntry {
   @scala.inline
   def apply(
+    aria: ProductionRule[BooleanValueRef] = null,
+    ariaRole: ProductionRule[StringValueRef] = null,
+    ariaRoleDescription: ProductionRule[StringValueRef] = null,
     blend: ProductionRule[ScaledValueRef[Blend]] = null,
     cornerRadius: ProductionRule[NumericValueRef] = null,
     cornerRadiusBottomLeft: ProductionRule[NumericValueRef] = null,
@@ -25,6 +28,7 @@ object RectEncodeEntry {
     cornerRadiusTopLeft: ProductionRule[NumericValueRef] = null,
     cornerRadiusTopRight: ProductionRule[NumericValueRef] = null,
     cursor: ProductionRule[ScaledValueRef[Cursor]] = null,
+    description: ProductionRule[StringValueRef] = null,
     fill: ProductionRule[ColorValueRef] = null,
     fillOpacity: ProductionRule[NumericValueRef] = null,
     height: ProductionRule[NumericValueRef] = null,
@@ -48,6 +52,9 @@ object RectEncodeEntry {
     zindex: ProductionRule[NumericValueRef] = null
   ): RectEncodeEntry = {
     val __obj = js.Dynamic.literal()
+    if (aria != null) __obj.updateDynamic("aria")(aria.asInstanceOf[js.Any])
+    if (ariaRole != null) __obj.updateDynamic("ariaRole")(ariaRole.asInstanceOf[js.Any])
+    if (ariaRoleDescription != null) __obj.updateDynamic("ariaRoleDescription")(ariaRoleDescription.asInstanceOf[js.Any])
     if (blend != null) __obj.updateDynamic("blend")(blend.asInstanceOf[js.Any])
     if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
     if (cornerRadiusBottomLeft != null) __obj.updateDynamic("cornerRadiusBottomLeft")(cornerRadiusBottomLeft.asInstanceOf[js.Any])
@@ -55,6 +62,7 @@ object RectEncodeEntry {
     if (cornerRadiusTopLeft != null) __obj.updateDynamic("cornerRadiusTopLeft")(cornerRadiusTopLeft.asInstanceOf[js.Any])
     if (cornerRadiusTopRight != null) __obj.updateDynamic("cornerRadiusTopRight")(cornerRadiusTopRight.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])

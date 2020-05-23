@@ -12,9 +12,9 @@ trait IConsensusCommitBlockResponse extends js.Object {
 
 object IConsensusCommitBlockResponse {
   @scala.inline
-  def apply(status: Status = null): IConsensusCommitBlockResponse = {
+  def apply(status: js.UndefOr[Null | Status] = js.undefined): IConsensusCommitBlockResponse = {
     val __obj = js.Dynamic.literal()
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConsensusCommitBlockResponse]
   }
 }

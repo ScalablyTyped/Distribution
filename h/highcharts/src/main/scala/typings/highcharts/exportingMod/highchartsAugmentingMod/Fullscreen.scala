@@ -47,7 +47,7 @@ object Fullscreen {
     isOpen: js.UndefOr[Boolean] = js.undefined
   ): Fullscreen = {
     val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], close = js.Any.fromFunction0(close), open = js.Any.fromFunction0(open), toggle = js.Any.fromFunction0(toggle))
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fullscreen]
   }
 }

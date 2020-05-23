@@ -6,27 +6,34 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a MIDI message that specifies a control change. */
-@JSGlobal("Windows.Devices.Midi.MidiControlChangeMessage")
-@js.native
-class MidiControlChangeMessage protected () extends js.Object {
-  /**
-    * Creates a new MidiControlChangeMessage object.
-    * @param channel The channel from 0-15 that this message applies to.
-    * @param controller The controller from 0-127 to receive this message.
-    * @param controlValue The value from 0-127 to apply to the controller .
-    */
-  def this(channel: Double, controller: Double, controlValue: Double) = this()
+trait MidiControlChangeMessage extends js.Object {
   /** Gets the channel from 0-15 that this message applies to. */
-  var channel: Double = js.native
+  var channel: Double
   /** Gets the value from 0-127 to apply to the controller . */
-  var controlValue: Double = js.native
+  var controlValue: Double
   /** Gets controller from 0-127 to receive this message. */
-  var controller: Double = js.native
+  var controller: Double
   /** Gets the array of bytes associated with the MIDI message, including status byte. */
-  var rawData: IBuffer = js.native
+  var rawData: IBuffer
   /** Gets the duration from when the MidiInPort was created to the time the message was received. For messages being sent to a MidiOutPort , this value has no meaning. */
-  var timestamp: Double = js.native
+  var timestamp: Double
   /** Gets the type of this MIDI message. */
-  var `type`: MidiMessageType = js.native
+  var `type`: MidiMessageType
+}
+
+object MidiControlChangeMessage {
+  @scala.inline
+  def apply(
+    channel: Double,
+    controlValue: Double,
+    controller: Double,
+    rawData: IBuffer,
+    timestamp: Double,
+    `type`: MidiMessageType
+  ): MidiControlChangeMessage = {
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], controlValue = controlValue.asInstanceOf[js.Any], controller = controller.asInstanceOf[js.Any], rawData = rawData.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MidiControlChangeMessage]
+  }
 }
 

@@ -8,17 +8,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("spine.webgl.ManagedWebGLRenderingContext")
-@js.native
-class ManagedWebGLRenderingContext protected () extends js.Object {
-  def this(canvasOrContext: HTMLCanvasElement) = this()
-  def this(canvasOrContext: WebGLRenderingContext) = this()
-  def this(canvasOrContext: HTMLCanvasElement, contextConfig: js.Any) = this()
-  def this(canvasOrContext: WebGLRenderingContext, contextConfig: js.Any) = this()
-  var canvas: HTMLCanvasElement | OffscreenCanvas = js.native
-  var gl: WebGLRenderingContext = js.native
-  var restorables: js.Any = js.native
-  def addRestorable(restorable: Restorable): Unit = js.native
-  def removeRestorable(restorable: Restorable): Unit = js.native
+trait ManagedWebGLRenderingContext extends js.Object {
+  var canvas: HTMLCanvasElement | OffscreenCanvas
+  var gl: WebGLRenderingContext
+  var restorables: js.Any
+  def addRestorable(restorable: Restorable): Unit
+  def removeRestorable(restorable: Restorable): Unit
+}
+
+object ManagedWebGLRenderingContext {
+  @scala.inline
+  def apply(
+    addRestorable: Restorable => Unit,
+    canvas: HTMLCanvasElement | OffscreenCanvas,
+    gl: WebGLRenderingContext,
+    removeRestorable: Restorable => Unit,
+    restorables: js.Any
+  ): ManagedWebGLRenderingContext = {
+    val __obj = js.Dynamic.literal(addRestorable = js.Any.fromFunction1(addRestorable), canvas = canvas.asInstanceOf[js.Any], gl = gl.asInstanceOf[js.Any], removeRestorable = js.Any.fromFunction1(removeRestorable), restorables = restorables.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ManagedWebGLRenderingContext]
+  }
 }
 

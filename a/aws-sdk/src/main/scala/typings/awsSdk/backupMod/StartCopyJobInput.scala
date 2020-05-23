@@ -24,7 +24,7 @@ trait StartCopyJobInput extends js.Object {
     */
   var RecoveryPointArn: ARN = js.native
   /**
-    * The name of a logical source container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens. &gt;
+    * The name of a logical source container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
     */
   var SourceBackupVaultName: BackupVaultName = js.native
 }

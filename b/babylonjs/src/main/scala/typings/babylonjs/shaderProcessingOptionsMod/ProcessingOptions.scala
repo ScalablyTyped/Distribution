@@ -36,7 +36,7 @@ object ProcessingOptions {
     processor: IShaderProcessor = null
   ): ProcessingOptions = {
     val __obj = js.Dynamic.literal(defines = defines.asInstanceOf[js.Any], includesShadersStore = includesShadersStore.asInstanceOf[js.Any], indexParameters = indexParameters.asInstanceOf[js.Any], isFragment = isFragment.asInstanceOf[js.Any], platformName = platformName.asInstanceOf[js.Any], shadersRepository = shadersRepository.asInstanceOf[js.Any], shouldUseHighPrecisionShader = shouldUseHighPrecisionShader.asInstanceOf[js.Any], supportsUniformBuffers = supportsUniformBuffers.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-    if (!js.isUndefined(lookForClosingBracketForUniformBuffer)) __obj.updateDynamic("lookForClosingBracketForUniformBuffer")(lookForClosingBracketForUniformBuffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(lookForClosingBracketForUniformBuffer)) __obj.updateDynamic("lookForClosingBracketForUniformBuffer")(lookForClosingBracketForUniformBuffer.get.asInstanceOf[js.Any])
     if (processor != null) __obj.updateDynamic("processor")(processor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessingOptions]
   }

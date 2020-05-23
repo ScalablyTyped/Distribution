@@ -80,7 +80,7 @@ trait SeriesMarkerDataLabel extends js.Object {
 object SeriesMarkerDataLabel {
   @scala.inline
   def apply(
-    angle: Int | Double = null,
+    angle: js.UndefOr[Double] = js.undefined,
     border: SeriesMarkerDataLabelBorder = null,
     connectorLine: SeriesMarkerDataLabelConnectorLine = null,
     enableContrastColor: js.UndefOr[Boolean] = js.undefined,
@@ -89,9 +89,9 @@ object SeriesMarkerDataLabel {
     font: SeriesMarkerDataLabelFont = null,
     horizontalTextAlignment: HorizontalTextAlignment | String = null,
     margin: SeriesMarkerDataLabelMargin = null,
-    maximumLabelWidth: Int | Double = null,
+    maximumLabelWidth: js.UndefOr[Double] = js.undefined,
     offset: SeriesMarkerDataLabelOffset = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     shape: Shape | String = null,
     showEdgeLabels: js.UndefOr[Boolean] = js.undefined,
     template: String = null,
@@ -101,25 +101,25 @@ object SeriesMarkerDataLabel {
     visible: js.UndefOr[Boolean] = js.undefined
   ): SeriesMarkerDataLabel = {
     val __obj = js.Dynamic.literal()
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (connectorLine != null) __obj.updateDynamic("connectorLine")(connectorLine.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableContrastColor)) __obj.updateDynamic("enableContrastColor")(enableContrastColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableWrap)) __obj.updateDynamic("enableWrap")(enableWrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableContrastColor)) __obj.updateDynamic("enableContrastColor")(enableContrastColor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableWrap)) __obj.updateDynamic("enableWrap")(enableWrap.get.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (horizontalTextAlignment != null) __obj.updateDynamic("horizontalTextAlignment")(horizontalTextAlignment.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (maximumLabelWidth != null) __obj.updateDynamic("maximumLabelWidth")(maximumLabelWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumLabelWidth)) __obj.updateDynamic("maximumLabelWidth")(maximumLabelWidth.get.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (!js.isUndefined(showEdgeLabels)) __obj.updateDynamic("showEdgeLabels")(showEdgeLabels.asInstanceOf[js.Any])
+    if (!js.isUndefined(showEdgeLabels)) __obj.updateDynamic("showEdgeLabels")(showEdgeLabels.get.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (textMappingName != null) __obj.updateDynamic("textMappingName")(textMappingName.asInstanceOf[js.Any])
     if (textPosition != null) __obj.updateDynamic("textPosition")(textPosition.asInstanceOf[js.Any])
     if (verticalTextAlignment != null) __obj.updateDynamic("verticalTextAlignment")(verticalTextAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesMarkerDataLabel]
   }
 }

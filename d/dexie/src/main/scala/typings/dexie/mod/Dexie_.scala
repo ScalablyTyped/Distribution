@@ -1,7 +1,7 @@
 package typings.dexie.mod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.dexie.AnonAddons
+import typings.dexie.anon.Addons
 import typings.dexie.dexieStrings.blocked
 import typings.dexie.dexieStrings.populate
 import typings.dexie.dexieStrings.ready
@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Dexie_ protected () extends js.Object {
   def this(databaseName: String) = this()
-  def this(databaseName: String, options: AnonAddons) = this()
+  def this(databaseName: String, options: Addons) = this()
   var Collection: Instantiable0[Collection[js.Any, js.Any]] = js.native
   // Make it possible to touch physical class constructors where they reside - as properties on db instance.
   // For example, checking if (x instanceof db.Table). Can't do (x instanceof Dexie.Table because it's just a virtual interface)

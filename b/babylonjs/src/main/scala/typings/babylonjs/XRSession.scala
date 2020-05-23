@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.babylonjs.anon.PlaneDetectionState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +17,6 @@ trait XRSession extends XRAnchorCreator {
   def requestHitTest(ray: XRRay, referenceSpace: XRReferenceSpace): js.Promise[js.Array[XRHitResult]] = js.native
   def requestReferenceSpace(`type`: XRReferenceSpaceType): js.Promise[XRReferenceSpace] = js.native
   def updateRenderState(XRRenderStateInit: XRRenderState): js.Promise[Unit] = js.native
-  def updateWorldTrackingState(options: AnonPlaneDetectionState): Unit = js.native
+  def updateWorldTrackingState(options: PlaneDetectionState): Unit = js.native
 }
 

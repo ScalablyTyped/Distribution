@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 
 trait IExceptionEvent extends IRemotingEvent {
   /** [Method] Returns the value of error
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getError: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Sets the value of error
-  		* @param error Object The new value.
-  		*/
+    * @param error Object The new value.
+    */
   var setError: js.UndefOr[js.Function1[/* error */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -97,7 +97,7 @@ object IExceptionEvent {
     if (setTid != null) __obj.updateDynamic("setTid")(js.Any.fromFunction1(setTid))
     if (setTransaction != null) __obj.updateDynamic("setTransaction")(js.Any.fromFunction1(setTransaction))
     if (setXhr != null) __obj.updateDynamic("setXhr")(js.Any.fromFunction1(setXhr))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExceptionEvent]

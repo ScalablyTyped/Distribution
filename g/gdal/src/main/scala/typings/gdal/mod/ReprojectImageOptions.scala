@@ -31,31 +31,31 @@ object ReprojectImageOptions {
     src: Dataset,
     t_srs: SpatialReference,
     cutline: Geometry = null,
-    dstAlphaBand: Int | Double = null,
+    dstAlphaBand: js.UndefOr[Double] = js.undefined,
     dstBands: js.Array[Double] = null,
-    dstNodata: Int | Double = null,
-    maxError: Int | Double = null,
-    memoryLimit: Int | Double = null,
+    dstNodata: js.UndefOr[Double] = js.undefined,
+    maxError: js.UndefOr[Double] = js.undefined,
+    memoryLimit: js.UndefOr[Double] = js.undefined,
     multi: js.UndefOr[Boolean] = js.undefined,
     options: js.Array[String] | js.Object = null,
     resampling: String = null,
-    srcAlphaBand: Int | Double = null,
+    srcAlphaBand: js.UndefOr[Double] = js.undefined,
     srcBands: js.Array[Double] = null,
-    srcNodata: Int | Double = null
+    srcNodata: js.UndefOr[Double] = js.undefined
   ): ReprojectImageOptions = {
     val __obj = js.Dynamic.literal(dst = dst.asInstanceOf[js.Any], s_srs = s_srs.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], t_srs = t_srs.asInstanceOf[js.Any])
     if (cutline != null) __obj.updateDynamic("cutline")(cutline.asInstanceOf[js.Any])
-    if (dstAlphaBand != null) __obj.updateDynamic("dstAlphaBand")(dstAlphaBand.asInstanceOf[js.Any])
+    if (!js.isUndefined(dstAlphaBand)) __obj.updateDynamic("dstAlphaBand")(dstAlphaBand.get.asInstanceOf[js.Any])
     if (dstBands != null) __obj.updateDynamic("dstBands")(dstBands.asInstanceOf[js.Any])
-    if (dstNodata != null) __obj.updateDynamic("dstNodata")(dstNodata.asInstanceOf[js.Any])
-    if (maxError != null) __obj.updateDynamic("maxError")(maxError.asInstanceOf[js.Any])
-    if (memoryLimit != null) __obj.updateDynamic("memoryLimit")(memoryLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
+    if (!js.isUndefined(dstNodata)) __obj.updateDynamic("dstNodata")(dstNodata.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxError)) __obj.updateDynamic("maxError")(maxError.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(memoryLimit)) __obj.updateDynamic("memoryLimit")(memoryLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.get.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (resampling != null) __obj.updateDynamic("resampling")(resampling.asInstanceOf[js.Any])
-    if (srcAlphaBand != null) __obj.updateDynamic("srcAlphaBand")(srcAlphaBand.asInstanceOf[js.Any])
+    if (!js.isUndefined(srcAlphaBand)) __obj.updateDynamic("srcAlphaBand")(srcAlphaBand.get.asInstanceOf[js.Any])
     if (srcBands != null) __obj.updateDynamic("srcBands")(srcBands.asInstanceOf[js.Any])
-    if (srcNodata != null) __obj.updateDynamic("srcNodata")(srcNodata.asInstanceOf[js.Any])
+    if (!js.isUndefined(srcNodata)) __obj.updateDynamic("srcNodata")(srcNodata.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReprojectImageOptions]
   }
 }

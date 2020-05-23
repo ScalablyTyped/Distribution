@@ -1,6 +1,6 @@
 package typings.asana.mod.resources.Events
 
-import typings.asana.AnonGid
+import typings.asana.anon.Gid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,7 +51,7 @@ trait EventSection extends js.Object {
   var gid: js.UndefOr[String] = js.native
   var id: js.UndefOr[Double] = js.native
   var name: js.UndefOr[String] = js.native
-  var project: AnonGid = js.native
+  var project: Gid = js.native
   var resource_subtype: String = js.native
   var resource_type: String = js.native
   /**

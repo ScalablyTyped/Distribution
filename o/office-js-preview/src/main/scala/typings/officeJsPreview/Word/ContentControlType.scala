@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Word
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -87,59 +86,6 @@ object ContentControlType extends js.Object {
   
   @js.native
   sealed trait unknown extends ContentControlType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ContentControlType with String] = js.native
-  /* "BuildingBlockGallery" */ @js.native
-  object buildingBlockGallery extends TopLevel[buildingBlockGallery with String]
-  
-  /* "CheckBox" */ @js.native
-  object checkBox extends TopLevel[checkBox with String]
-  
-  /* "ComboBox" */ @js.native
-  object comboBox extends TopLevel[comboBox with String]
-  
-  /* "DatePicker" */ @js.native
-  object datePicker extends TopLevel[datePicker with String]
-  
-  /* "DropDownList" */ @js.native
-  object dropDownList extends TopLevel[dropDownList with String]
-  
-  /* "Picture" */ @js.native
-  object picture extends TopLevel[picture with String]
-  
-  /* "PlainText" */ @js.native
-  object plainText extends TopLevel[plainText with String]
-  
-  /* "PlainTextInline" */ @js.native
-  object plainTextInline extends TopLevel[plainTextInline with String]
-  
-  /* "PlainTextParagraph" */ @js.native
-  object plainTextParagraph extends TopLevel[plainTextParagraph with String]
-  
-  /* "RepeatingSection" */ @js.native
-  object repeatingSection extends TopLevel[repeatingSection with String]
-  
-  /* "RichText" */ @js.native
-  object richText extends TopLevel[richText with String]
-  
-  /* "RichTextInline" */ @js.native
-  object richTextInline extends TopLevel[richTextInline with String]
-  
-  /* "RichTextParagraphs" */ @js.native
-  object richTextParagraphs extends TopLevel[richTextParagraphs with String]
-  
-  /* "RichTextTable" */ @js.native
-  object richTextTable extends TopLevel[richTextTable with String]
-  
-  /* "RichTextTableCell" */ @js.native
-  object richTextTableCell extends TopLevel[richTextTableCell with String]
-  
-  /* "RichTextTableRow" */ @js.native
-  object richTextTableRow extends TopLevel[richTextTableRow with String]
-  
-  /* "Unknown" */ @js.native
-  object unknown extends TopLevel[unknown with String]
   
 }
 

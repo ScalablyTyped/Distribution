@@ -1,15 +1,15 @@
 package typings.packageJson.mod
 
-import typings.packageJson.AnonEmail
-import typings.packageJson.AnonType
-import typings.packageJson.AnonUrl
+import typings.packageJson.anon.Email
+import typings.packageJson.anon.Type
+import typings.packageJson.anon.Url
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HoistedData extends js.Object {
   val author: js.UndefOr[Person] = js.undefined
-  val bugs: js.UndefOr[AnonEmail | AnonUrl] = js.undefined
+  val bugs: js.UndefOr[Email | Url] = js.undefined
   val contributors: js.UndefOr[js.Array[Person]] = js.undefined
   val description: js.UndefOr[String] = js.undefined
   val homepage: js.UndefOr[String] = js.undefined
@@ -18,14 +18,14 @@ trait HoistedData extends js.Object {
   val maintainers: js.UndefOr[js.Array[Person]] = js.undefined
   val readme: js.UndefOr[String] = js.undefined
   val readmeFilename: js.UndefOr[String] = js.undefined
-  val repository: js.UndefOr[AnonType] = js.undefined
+  val repository: js.UndefOr[Type] = js.undefined
 }
 
 object HoistedData {
   @scala.inline
   def apply(
     author: Person = null,
-    bugs: AnonEmail | AnonUrl = null,
+    bugs: Email | Url = null,
     contributors: js.Array[Person] = null,
     description: String = null,
     homepage: String = null,
@@ -34,7 +34,7 @@ object HoistedData {
     maintainers: js.Array[Person] = null,
     readme: String = null,
     readmeFilename: String = null,
-    repository: AnonType = null
+    repository: Type = null
   ): HoistedData = {
     val __obj = js.Dynamic.literal()
     if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])

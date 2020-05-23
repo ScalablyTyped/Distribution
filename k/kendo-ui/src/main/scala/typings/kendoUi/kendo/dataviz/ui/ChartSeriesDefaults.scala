@@ -42,7 +42,7 @@ object ChartSeriesDefaults {
     candlestick: js.Any = null,
     column: js.Any = null,
     donut: js.Any = null,
-    gap: Int | Double = null,
+    gap: js.UndefOr[Double] = js.undefined,
     labels: ChartSeriesDefaultsLabels = null,
     line: js.Any = null,
     notes: ChartSeriesDefaultsNotes = null,
@@ -52,7 +52,7 @@ object ChartSeriesDefaults {
     rangeArea: js.Any = null,
     scatter: js.Any = null,
     scatterLine: js.Any = null,
-    spacing: Int | Double = null,
+    spacing: js.UndefOr[Double] = js.undefined,
     stack: Boolean | ChartSeriesDefaultsStack = null,
     tooltip: ChartSeriesDefaultsTooltip = null,
     `type`: String = null,
@@ -69,7 +69,7 @@ object ChartSeriesDefaults {
     if (candlestick != null) __obj.updateDynamic("candlestick")(candlestick.asInstanceOf[js.Any])
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
     if (donut != null) __obj.updateDynamic("donut")(donut.asInstanceOf[js.Any])
-    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
+    if (!js.isUndefined(gap)) __obj.updateDynamic("gap")(gap.get.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
@@ -79,7 +79,7 @@ object ChartSeriesDefaults {
     if (rangeArea != null) __obj.updateDynamic("rangeArea")(rangeArea.asInstanceOf[js.Any])
     if (scatter != null) __obj.updateDynamic("scatter")(scatter.asInstanceOf[js.Any])
     if (scatterLine != null) __obj.updateDynamic("scatterLine")(scatterLine.asInstanceOf[js.Any])
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(spacing)) __obj.updateDynamic("spacing")(spacing.get.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

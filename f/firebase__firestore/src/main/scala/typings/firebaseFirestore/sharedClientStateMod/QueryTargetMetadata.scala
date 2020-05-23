@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/shared_client_state", "QueryTargetMetadata")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/shared_client_state", "QueryTargetMetadata")
 @js.native
 class QueryTargetMetadata protected () extends js.Object {
   def this(targetId: TargetId, state: QueryTargetState) = this()
@@ -19,7 +19,7 @@ class QueryTargetMetadata protected () extends js.Object {
 }
 
 /* static members */
-@JSImport("@firebase/firestore/dist/lib/src/local/shared_client_state", "QueryTargetMetadata")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/shared_client_state", "QueryTargetMetadata")
 @js.native
 object QueryTargetMetadata extends js.Object {
   /**

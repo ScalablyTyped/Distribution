@@ -31,22 +31,22 @@ object FindMarkerOptions {
     containsPoint: PointCompatible = null,
     containsRange: RangeCompatible = null,
     endPosition: PointCompatible = null,
-    endRow: Int | Double = null,
+    endRow: js.UndefOr[Double] = js.undefined,
     endsInRange: RangeCompatible = null,
-    intersectsRow: Int | Double = null,
+    intersectsRow: js.UndefOr[Double] = js.undefined,
     startPosition: PointCompatible = null,
-    startRow: Int | Double = null,
+    startRow: js.UndefOr[Double] = js.undefined,
     startsInRange: RangeCompatible = null
   ): FindMarkerOptions = {
     val __obj = js.Dynamic.literal()
     if (containsPoint != null) __obj.updateDynamic("containsPoint")(containsPoint.asInstanceOf[js.Any])
     if (containsRange != null) __obj.updateDynamic("containsRange")(containsRange.asInstanceOf[js.Any])
     if (endPosition != null) __obj.updateDynamic("endPosition")(endPosition.asInstanceOf[js.Any])
-    if (endRow != null) __obj.updateDynamic("endRow")(endRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(endRow)) __obj.updateDynamic("endRow")(endRow.get.asInstanceOf[js.Any])
     if (endsInRange != null) __obj.updateDynamic("endsInRange")(endsInRange.asInstanceOf[js.Any])
-    if (intersectsRow != null) __obj.updateDynamic("intersectsRow")(intersectsRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(intersectsRow)) __obj.updateDynamic("intersectsRow")(intersectsRow.get.asInstanceOf[js.Any])
     if (startPosition != null) __obj.updateDynamic("startPosition")(startPosition.asInstanceOf[js.Any])
-    if (startRow != null) __obj.updateDynamic("startRow")(startRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(startRow)) __obj.updateDynamic("startRow")(startRow.get.asInstanceOf[js.Any])
     if (startsInRange != null) __obj.updateDynamic("startsInRange")(startsInRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindMarkerOptions]
   }

@@ -18,7 +18,6 @@ object IFieldTransformSetToServerValueEnum {
     values: () => js.Array[FieldTransformSetToServerValue]
   ): IFieldTransformSetToServerValueEnum = {
     val __obj = js.Dynamic.literal(REQUEST_TIME = REQUEST_TIME.asInstanceOf[js.Any], SERVER_VALUE_UNSPECIFIED = SERVER_VALUE_UNSPECIFIED.asInstanceOf[js.Any], values = js.Any.fromFunction0(values))
-  
     __obj.asInstanceOf[IFieldTransformSetToServerValueEnum]
   }
 }

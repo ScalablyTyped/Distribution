@@ -5,22 +5,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("InfoPath.WebServiceAdapterObject")
-@js.native
-class WebServiceAdapterObject protected () extends js.Object {
-  val ErrorsLocation: IXMLDOMNode = js.native
+trait WebServiceAdapterObject extends js.Object {
+  val ErrorsLocation: IXMLDOMNode
   @JSName("InfoPath.WebServiceAdapterObject_typekey")
-  var InfoPathDotWebServiceAdapterObject_typekey: WebServiceAdapterObject = js.native
-  var Input: String = js.native
-  val Name: String = js.native
-  var Operation: String = js.native
-  val OutputLocation: IXMLDOMNode = js.native
-  val QueryAllowed: Boolean = js.native
-  val SubmitAllowed: Boolean = js.native
-  var Timeout: Double = js.native
-  val WSDLURL: String = js.native
-  def GenerateDataSetDiffGram(pNode: IXMLDOMNode): IXMLDOMNode = js.native
-  def Query(): Unit = js.native
-  def Submit(): Unit = js.native
+  var InfoPathDotWebServiceAdapterObject_typekey: WebServiceAdapterObject
+  var Input: String
+  val Name: String
+  var Operation: String
+  val OutputLocation: IXMLDOMNode
+  val QueryAllowed: Boolean
+  val SubmitAllowed: Boolean
+  var Timeout: Double
+  val WSDLURL: String
+  def GenerateDataSetDiffGram(pNode: IXMLDOMNode): IXMLDOMNode
+  def Query(): Unit
+  def Submit(): Unit
+}
+
+object WebServiceAdapterObject {
+  @scala.inline
+  def apply(
+    ErrorsLocation: IXMLDOMNode,
+    GenerateDataSetDiffGram: IXMLDOMNode => IXMLDOMNode,
+    InfoPathDotWebServiceAdapterObject_typekey: WebServiceAdapterObject,
+    Input: String,
+    Name: String,
+    Operation: String,
+    OutputLocation: IXMLDOMNode,
+    Query: () => Unit,
+    QueryAllowed: Boolean,
+    Submit: () => Unit,
+    SubmitAllowed: Boolean,
+    Timeout: Double,
+    WSDLURL: String
+  ): WebServiceAdapterObject = {
+    val __obj = js.Dynamic.literal(ErrorsLocation = ErrorsLocation.asInstanceOf[js.Any], GenerateDataSetDiffGram = js.Any.fromFunction1(GenerateDataSetDiffGram), Input = Input.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Operation = Operation.asInstanceOf[js.Any], OutputLocation = OutputLocation.asInstanceOf[js.Any], Query = js.Any.fromFunction0(Query), QueryAllowed = QueryAllowed.asInstanceOf[js.Any], Submit = js.Any.fromFunction0(Submit), SubmitAllowed = SubmitAllowed.asInstanceOf[js.Any], Timeout = Timeout.asInstanceOf[js.Any], WSDLURL = WSDLURL.asInstanceOf[js.Any])
+    __obj.updateDynamic("InfoPath.WebServiceAdapterObject_typekey")(InfoPathDotWebServiceAdapterObject_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebServiceAdapterObject]
+  }
 }
 

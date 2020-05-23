@@ -1,6 +1,6 @@
 package typings.awsSdk.neptuneMod
 
-import typings.awsSdk.DescribeDBInstancesMessagDBInstanceIdentifier
+import typings.awsSdk.anon.DescribeDBInstancesMessagDBInstanceIdentifier
 import typings.awsSdk.awsSdkStrings.dBInstanceAvailable
 import typings.awsSdk.awsSdkStrings.dBInstanceDeleted
 import typings.awsSdk.configMod.ConfigBase

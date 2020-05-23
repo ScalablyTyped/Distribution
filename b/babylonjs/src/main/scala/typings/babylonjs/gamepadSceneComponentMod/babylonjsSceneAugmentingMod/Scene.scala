@@ -19,8 +19,7 @@ trait Scene extends js.Object {
 object Scene {
   @scala.inline
   def apply(gamepadManager: GamepadManager, _gamepadManager: Nullable[GamepadManager] = null): Scene = {
-    val __obj = js.Dynamic.literal(gamepadManager = gamepadManager.asInstanceOf[js.Any])
-    if (_gamepadManager != null) __obj.updateDynamic("_gamepadManager")(_gamepadManager.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(gamepadManager = gamepadManager.asInstanceOf[js.Any], _gamepadManager = _gamepadManager.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scene]
   }
 }

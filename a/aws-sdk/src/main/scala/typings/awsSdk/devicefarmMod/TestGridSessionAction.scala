@@ -32,14 +32,14 @@ object TestGridSessionAction {
   @scala.inline
   def apply(
     action: String = null,
-    duration: Int | scala.Double = null,
+    duration: js.UndefOr[Long] = js.undefined,
     requestMethod: String = null,
     started: DateTime = null,
     statusCode: String = null
   ): TestGridSessionAction = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (requestMethod != null) __obj.updateDynamic("requestMethod")(requestMethod.asInstanceOf[js.Any])
     if (started != null) __obj.updateDynamic("started")(started.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])

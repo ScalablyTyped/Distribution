@@ -11,9 +11,9 @@ trait Config extends js.Object {
 
 object Config {
   @scala.inline
-  def apply(frequency: Int | Double = null, pin: Double | String = null): Config = {
+  def apply(frequency: js.UndefOr[Double] = js.undefined, pin: Double | String = null): Config = {
     val __obj = js.Dynamic.literal()
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
+    if (!js.isUndefined(frequency)) __obj.updateDynamic("frequency")(frequency.get.asInstanceOf[js.Any])
     if (pin != null) __obj.updateDynamic("pin")(pin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }

@@ -35,7 +35,7 @@ object DeclarationRaws {
     if (important != null) __obj.updateDynamic("important")(important.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (!js.isUndefined(semicolon)) __obj.updateDynamic("semicolon")(semicolon.asInstanceOf[js.Any])
+    if (!js.isUndefined(semicolon)) __obj.updateDynamic("semicolon")(semicolon.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeclarationRaws]
   }

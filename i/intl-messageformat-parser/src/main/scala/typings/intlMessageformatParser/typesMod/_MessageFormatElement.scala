@@ -1,10 +1,9 @@
 package typings.intlMessageformatParser.typesMod
 
-import typings.intlMessageformatParser.intlMessageformatParserStrings.cardinal
-import typings.intlMessageformatParser.intlMessageformatParserStrings.ordinal
 import typings.intlMessageformatParser.typesMod.TYPE.plural
 import typings.intlMessageformatParser.typesMod.TYPE.pound
 import typings.intlMessageformatParser.typesMod.TYPE.select
+import typings.std.Intl.PluralRuleType
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,7 +31,7 @@ object _MessageFormatElement {
     `type`: plural,
     value: String,
     location: Location = null,
-    pluralType: cardinal | ordinal = null
+    pluralType: PluralRuleType = null
   ): _MessageFormatElement = {
     val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

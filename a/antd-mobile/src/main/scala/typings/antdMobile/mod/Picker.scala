@@ -1,7 +1,7 @@
 package typings.antdMobile.mod
 
-import typings.antdMobile.AnonAntLocale
-import typings.antdMobile.AnonCascade
+import typings.antdMobile.anon.AntLocale
+import typings.antdMobile.anon.Cascade
 import typings.antdMobile.pickerMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ class Picker () extends default
 @JSImport("antd-mobile", "Picker")
 @js.native
 object Picker extends js.Object {
-  var contextTypes: AnonAntLocale = js.native
-  var defaultProps: AnonCascade = js.native
+  var contextTypes: AntLocale = js.native
+  var defaultProps: Cascade = js.native
 }
 

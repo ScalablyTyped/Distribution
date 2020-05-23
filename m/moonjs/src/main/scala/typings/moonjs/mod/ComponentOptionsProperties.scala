@@ -20,7 +20,7 @@ trait ComponentOptionsProperties[Props /* <: String */, Data, Methods] extends j
 
 object ComponentOptionsProperties {
   @scala.inline
-  def apply[Props /* <: String */, Data, Methods](
+  def apply[Props, Data, Methods](
     data: Data = null,
     el: String | HTMLElement = null,
     functional: `true` = null,

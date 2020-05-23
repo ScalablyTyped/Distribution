@@ -1,7 +1,7 @@
 package typings.fundamentalReact.comboboxInputMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.fundamentalReact.AnonState
+import typings.fundamentalReact.anon.State
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement
@@ -25,14 +25,14 @@ trait ComboboxInputProps
   ] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var popoverProps: js.UndefOr[js.Object] = js.undefined
-  var validationState: js.UndefOr[AnonState] = js.undefined
+  var validationState: js.UndefOr[State] = js.undefined
 }
 
 object ComboboxInputProps {
   @scala.inline
   def apply(
     menu: ReactElement,
-    StringDictionary: /* x */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     buttonProps: js.Object = null,
     className: String = null,
     compact: js.UndefOr[Boolean] = js.undefined,
@@ -42,14 +42,14 @@ object ComboboxInputProps {
     onClick: /* event */ typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent] => Unit = null,
     placeholder: String = null,
     popoverProps: js.Object = null,
-    validationState: AnonState = null
+    validationState: State = null
   ): ComboboxInputProps = {
     val __obj = js.Dynamic.literal(menu = menu.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.get.asInstanceOf[js.Any])
     if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
     if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))

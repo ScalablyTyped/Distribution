@@ -55,6 +55,10 @@ trait AssociationVersionInfo extends js.Object {
     */
   var ScheduleExpression: js.UndefOr[typings.awsSdk.ssmMod.ScheduleExpression] = js.native
   /**
+    * The mode for generating association compliance. You can specify AUTO or MANUAL. In AUTO mode, the system uses the status of the association execution to determine the compliance status. If the association execution runs successfully, then the association is COMPLIANT. If the association execution doesn't run successfully, the association is NON-COMPLIANT. In MANUAL mode, you must specify the AssociationId as a parameter for the PutComplianceItems API action. In this case, compliance data is not managed by State Manager. It is managed by your direct call to the PutComplianceItems API action. By default, all associations use AUTO mode.
+    */
+  var SyncCompliance: js.UndefOr[AssociationSyncCompliance] = js.native
+  /**
     * The targets specified for the association when the association version was created. 
     */
   var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.native
@@ -75,6 +79,7 @@ object AssociationVersionInfo {
     OutputLocation: InstanceAssociationOutputLocation = null,
     Parameters: Parameters = null,
     ScheduleExpression: ScheduleExpression = null,
+    SyncCompliance: AssociationSyncCompliance = null,
     Targets: Targets = null
   ): AssociationVersionInfo = {
     val __obj = js.Dynamic.literal()
@@ -90,6 +95,7 @@ object AssociationVersionInfo {
     if (OutputLocation != null) __obj.updateDynamic("OutputLocation")(OutputLocation.asInstanceOf[js.Any])
     if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
     if (ScheduleExpression != null) __obj.updateDynamic("ScheduleExpression")(ScheduleExpression.asInstanceOf[js.Any])
+    if (SyncCompliance != null) __obj.updateDynamic("SyncCompliance")(SyncCompliance.asInstanceOf[js.Any])
     if (Targets != null) __obj.updateDynamic("Targets")(Targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociationVersionInfo]
   }

@@ -15,15 +15,15 @@ object TeamDriveBackgroundImageFile {
   @scala.inline
   def apply(
     id: String = null,
-    width: Int | Double = null,
-    xCoordinate: Int | Double = null,
-    yCoordinate: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined,
+    xCoordinate: js.UndefOr[Double] = js.undefined,
+    yCoordinate: js.UndefOr[Double] = js.undefined
   ): TeamDriveBackgroundImageFile = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (xCoordinate != null) __obj.updateDynamic("xCoordinate")(xCoordinate.asInstanceOf[js.Any])
-    if (yCoordinate != null) __obj.updateDynamic("yCoordinate")(yCoordinate.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xCoordinate)) __obj.updateDynamic("xCoordinate")(xCoordinate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yCoordinate)) __obj.updateDynamic("yCoordinate")(yCoordinate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamDriveBackgroundImageFile]
   }
 }

@@ -23,7 +23,7 @@ object Options {
     core: String = null,
     host: String = null,
     path: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     secure: js.UndefOr[Boolean] = js.undefined,
     solrVersion: String = null
   ): Options = {
@@ -33,8 +33,8 @@ object Options {
     if (core != null) __obj.updateDynamic("core")(core.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.get.asInstanceOf[js.Any])
     if (solrVersion != null) __obj.updateDynamic("solrVersion")(solrVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

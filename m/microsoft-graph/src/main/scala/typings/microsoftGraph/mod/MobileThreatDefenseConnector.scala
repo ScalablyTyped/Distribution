@@ -36,19 +36,19 @@ object MobileThreatDefenseConnector {
     iosEnabled: js.UndefOr[Boolean] = js.undefined,
     lastHeartbeatDateTime: String = null,
     partnerState: MobileThreatPartnerTenantState = null,
-    partnerUnresponsivenessThresholdInDays: Int | Double = null,
+    partnerUnresponsivenessThresholdInDays: js.UndefOr[Double] = js.undefined,
     partnerUnsupportedOsVersionBlocked: js.UndefOr[Boolean] = js.undefined
   ): MobileThreatDefenseConnector = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(androidDeviceBlockedOnMissingPartnerData)) __obj.updateDynamic("androidDeviceBlockedOnMissingPartnerData")(androidDeviceBlockedOnMissingPartnerData.asInstanceOf[js.Any])
-    if (!js.isUndefined(androidEnabled)) __obj.updateDynamic("androidEnabled")(androidEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(androidDeviceBlockedOnMissingPartnerData)) __obj.updateDynamic("androidDeviceBlockedOnMissingPartnerData")(androidDeviceBlockedOnMissingPartnerData.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(androidEnabled)) __obj.updateDynamic("androidEnabled")(androidEnabled.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(iosDeviceBlockedOnMissingPartnerData)) __obj.updateDynamic("iosDeviceBlockedOnMissingPartnerData")(iosDeviceBlockedOnMissingPartnerData.asInstanceOf[js.Any])
-    if (!js.isUndefined(iosEnabled)) __obj.updateDynamic("iosEnabled")(iosEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(iosDeviceBlockedOnMissingPartnerData)) __obj.updateDynamic("iosDeviceBlockedOnMissingPartnerData")(iosDeviceBlockedOnMissingPartnerData.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(iosEnabled)) __obj.updateDynamic("iosEnabled")(iosEnabled.get.asInstanceOf[js.Any])
     if (lastHeartbeatDateTime != null) __obj.updateDynamic("lastHeartbeatDateTime")(lastHeartbeatDateTime.asInstanceOf[js.Any])
     if (partnerState != null) __obj.updateDynamic("partnerState")(partnerState.asInstanceOf[js.Any])
-    if (partnerUnresponsivenessThresholdInDays != null) __obj.updateDynamic("partnerUnresponsivenessThresholdInDays")(partnerUnresponsivenessThresholdInDays.asInstanceOf[js.Any])
-    if (!js.isUndefined(partnerUnsupportedOsVersionBlocked)) __obj.updateDynamic("partnerUnsupportedOsVersionBlocked")(partnerUnsupportedOsVersionBlocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(partnerUnresponsivenessThresholdInDays)) __obj.updateDynamic("partnerUnresponsivenessThresholdInDays")(partnerUnresponsivenessThresholdInDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(partnerUnsupportedOsVersionBlocked)) __obj.updateDynamic("partnerUnsupportedOsVersionBlocked")(partnerUnsupportedOsVersionBlocked.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileThreatDefenseConnector]
   }
 }

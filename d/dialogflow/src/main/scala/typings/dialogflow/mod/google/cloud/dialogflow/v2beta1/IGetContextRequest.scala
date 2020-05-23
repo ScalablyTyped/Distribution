@@ -12,9 +12,9 @@ trait IGetContextRequest extends js.Object {
 
 object IGetContextRequest {
   @scala.inline
-  def apply(name: String = null): IGetContextRequest = {
+  def apply(name: js.UndefOr[Null | String] = js.undefined): IGetContextRequest = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetContextRequest]
   }
 }

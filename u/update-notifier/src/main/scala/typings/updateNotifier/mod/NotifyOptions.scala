@@ -25,8 +25,8 @@ object NotifyOptions {
   ): NotifyOptions = {
     val __obj = js.Dynamic.literal()
     if (boxenOptions != null) __obj.updateDynamic("boxenOptions")(boxenOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.asInstanceOf[js.Any])
-    if (!js.isUndefined(isGlobal)) __obj.updateDynamic("isGlobal")(isGlobal.asInstanceOf[js.Any])
+    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isGlobal)) __obj.updateDynamic("isGlobal")(isGlobal.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotifyOptions]
   }

@@ -38,7 +38,7 @@ object DeviceCompliancePolicySettingState {
   @scala.inline
   def apply(
     currentValue: String = null,
-    errorCode: Int | Double = null,
+    errorCode: js.UndefOr[Double] = js.undefined,
     errorDescription: String = null,
     instanceDisplayName: String = null,
     setting: String = null,
@@ -52,7 +52,7 @@ object DeviceCompliancePolicySettingState {
   ): DeviceCompliancePolicySettingState = {
     val __obj = js.Dynamic.literal()
     if (currentValue != null) __obj.updateDynamic("currentValue")(currentValue.asInstanceOf[js.Any])
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorCode)) __obj.updateDynamic("errorCode")(errorCode.get.asInstanceOf[js.Any])
     if (errorDescription != null) __obj.updateDynamic("errorDescription")(errorDescription.asInstanceOf[js.Any])
     if (instanceDisplayName != null) __obj.updateDynamic("instanceDisplayName")(instanceDisplayName.asInstanceOf[js.Any])
     if (setting != null) __obj.updateDynamic("setting")(setting.asInstanceOf[js.Any])

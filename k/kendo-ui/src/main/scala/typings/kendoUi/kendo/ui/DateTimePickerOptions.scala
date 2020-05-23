@@ -44,7 +44,7 @@ object DateTimePickerOptions {
     disableDates: js.Any | js.Function = null,
     footer: Boolean | String | js.Function = null,
     format: String = null,
-    interval: Int | Double = null,
+    interval: js.UndefOr[Double] = js.undefined,
     max: Date = null,
     min: Date = null,
     month: DateTimePickerMonth = null,
@@ -62,13 +62,13 @@ object DateTimePickerOptions {
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
     if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
-    if (!js.isUndefined(dateInput)) __obj.updateDynamic("dateInput")(dateInput.asInstanceOf[js.Any])
+    if (!js.isUndefined(dateInput)) __obj.updateDynamic("dateInput")(dateInput.get.asInstanceOf[js.Any])
     if (dates != null) __obj.updateDynamic("dates")(dates.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (disableDates != null) __obj.updateDynamic("disableDates")(disableDates.asInstanceOf[js.Any])
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
@@ -78,7 +78,7 @@ object DateTimePickerOptions {
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (timeFormat != null) __obj.updateDynamic("timeFormat")(timeFormat.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(weekNumber)) __obj.updateDynamic("weekNumber")(weekNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(weekNumber)) __obj.updateDynamic("weekNumber")(weekNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateTimePickerOptions]
   }
 }

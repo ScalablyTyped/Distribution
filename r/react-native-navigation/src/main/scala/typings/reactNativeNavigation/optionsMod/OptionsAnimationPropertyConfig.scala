@@ -34,18 +34,18 @@ trait OptionsAnimationPropertyConfig extends js.Object {
 object OptionsAnimationPropertyConfig {
   @scala.inline
   def apply(
-    duration: Int | Double = null,
-    from: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
+    from: js.UndefOr[Double] = js.undefined,
     interpolation: accelerate | decelerate = null,
-    startDelay: Int | Double = null,
-    to: Int | Double = null
+    startDelay: js.UndefOr[Double] = js.undefined,
+    to: js.UndefOr[Double] = js.undefined
   ): OptionsAnimationPropertyConfig = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
     if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation.asInstanceOf[js.Any])
-    if (startDelay != null) __obj.updateDynamic("startDelay")(startDelay.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (!js.isUndefined(startDelay)) __obj.updateDynamic("startDelay")(startDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsAnimationPropertyConfig]
   }
 }

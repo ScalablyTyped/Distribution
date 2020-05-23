@@ -12,9 +12,9 @@ trait IExtensionRangeOptions extends js.Object {
 
 object IExtensionRangeOptions {
   @scala.inline
-  def apply(uninterpretedOption: js.Array[IUninterpretedOption] = null): IExtensionRangeOptions = {
+  def apply(uninterpretedOption: js.UndefOr[Null | js.Array[IUninterpretedOption]] = js.undefined): IExtensionRangeOptions = {
     val __obj = js.Dynamic.literal()
-    if (uninterpretedOption != null) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption.asInstanceOf[js.Any])
+    if (!js.isUndefined(uninterpretedOption)) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExtensionRangeOptions]
   }
 }

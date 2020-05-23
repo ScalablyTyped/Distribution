@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.dropdownBaseMod
 
-import typings.officeUiFabricReact.AnonOptions
+import typings.officeUiFabricReact.anon.Options
 import typings.officeUiFabricReact.dropdownTypesMod.IDropdown
 import typings.officeUiFabricReact.dropdownTypesMod.IDropdownProps
 import typings.react.mod.Component
@@ -130,6 +130,6 @@ class DropdownBase protected ()
 @JSImport("office-ui-fabric-react/lib/components/Dropdown/Dropdown.base", "DropdownBase")
 @js.native
 object DropdownBase extends js.Object {
-  var defaultProps: AnonOptions = js.native
+  var defaultProps: Options = js.native
 }
 

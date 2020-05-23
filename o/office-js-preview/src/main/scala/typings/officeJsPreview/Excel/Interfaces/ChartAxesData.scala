@@ -8,21 +8,21 @@ import scala.scalajs.js.annotation._
 trait ChartAxesData extends js.Object {
   /**
     *
-    * Represents the category axis in a chart. Read-only.
+    * Represents the category axis in a chart.
     *
     * [Api set: ExcelApi 1.1]
     */
   var categoryAxis: js.UndefOr[ChartAxisData] = js.undefined
   /**
     *
-    * Represents the series axis of a 3-dimensional chart. Read-only.
+    * Represents the series axis of a 3-dimensional chart.
     *
     * [Api set: ExcelApi 1.1]
     */
   var seriesAxis: js.UndefOr[ChartAxisData] = js.undefined
   /**
     *
-    * Represents the value axis in an axis. Read-only.
+    * Represents the value axis in an axis.
     *
     * [Api set: ExcelApi 1.1]
     */

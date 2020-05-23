@@ -1,5 +1,6 @@
 package typings.sketchapp
 
+import typings.sketchapp.anon.X
 import typings.sketchapp.sketchappStrings.gradient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,11 +9,11 @@ import scala.scalajs.js.annotation._
 trait SketchMSGradient extends js.Object {
   var _class: gradient
   var elipseLength: Double
-  var from: AnonX
+  var from: X
   var gradientType: Double
   var shouldSmoothenOpacity: Boolean
   var stops: js.Array[SketchMSGradientStop]
-  var to: AnonX
+  var to: X
 }
 
 object SketchMSGradient {
@@ -20,11 +21,11 @@ object SketchMSGradient {
   def apply(
     _class: gradient,
     elipseLength: Double,
-    from: AnonX,
+    from: X,
     gradientType: Double,
     shouldSmoothenOpacity: Boolean,
     stops: js.Array[SketchMSGradientStop],
-    to: AnonX
+    to: X
   ): SketchMSGradient = {
     val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], elipseLength = elipseLength.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], gradientType = gradientType.asInstanceOf[js.Any], shouldSmoothenOpacity = shouldSmoothenOpacity.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSGradient]

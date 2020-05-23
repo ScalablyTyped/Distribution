@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.elevation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -99,8 +98,4 @@ trait ElevationLayer
   def queryElevation(geometry: Polyline): js.Promise[ElevationLayerElevationQueryResult] = js.native
   def queryElevation(geometry: Polyline, options: ElevationLayerQueryElevationOptions): js.Promise[ElevationLayerElevationQueryResult] = js.native
 }
-
-@JSGlobal("__esri.ElevationLayer")
-@js.native
-object ElevationLayer extends TopLevel[ElevationLayerConstructor]
 

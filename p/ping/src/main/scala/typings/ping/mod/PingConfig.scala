@@ -35,19 +35,19 @@ object PingConfig {
   @scala.inline
   def apply(
     extra: js.Array[String] = null,
-    min_reply: Int | Double = null,
+    min_reply: js.UndefOr[Double] = js.undefined,
     numeric: js.UndefOr[Boolean] = js.undefined,
     sourceAddr: String = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     v6: js.UndefOr[Boolean] = js.undefined
   ): PingConfig = {
     val __obj = js.Dynamic.literal()
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
-    if (min_reply != null) __obj.updateDynamic("min_reply")(min_reply.asInstanceOf[js.Any])
-    if (!js.isUndefined(numeric)) __obj.updateDynamic("numeric")(numeric.asInstanceOf[js.Any])
+    if (!js.isUndefined(min_reply)) __obj.updateDynamic("min_reply")(min_reply.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numeric)) __obj.updateDynamic("numeric")(numeric.get.asInstanceOf[js.Any])
     if (sourceAddr != null) __obj.updateDynamic("sourceAddr")(sourceAddr.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(v6)) __obj.updateDynamic("v6")(v6.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(v6)) __obj.updateDynamic("v6")(v6.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PingConfig]
   }
 }

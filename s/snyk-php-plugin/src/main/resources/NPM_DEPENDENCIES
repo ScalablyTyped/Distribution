@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "snyk-php-plugin" : "1.9.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "snyk-php-plugin" : "1.9.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

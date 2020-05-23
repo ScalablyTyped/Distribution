@@ -28,9 +28,9 @@ trait PlusBarcodeBarcodeStyles extends js.Object {
   /**
     * Barcode扫码控件的高度
     * 可取值：
-    * 		像素值，如"100px"；
-    * 		百分比，如"10%"，相对于父Webview窗口的高度。
-    * 	默认值为"100%"。
+    *         像素值，如"100px"；
+    *         百分比，如"10%"，相对于父Webview窗口的高度。
+    *     默认值为"100%"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */
@@ -38,10 +38,10 @@ trait PlusBarcodeBarcodeStyles extends js.Object {
   /**
     * Barcode扫码控件左上角的水平偏移量
     * 可取值：
-    * 		像素值，如"100px"；
-    * 		百分比，如"10%"，相对于父Webview窗口的宽度；
-    * 		自动计算，如"auto"，根据width值自动计算，相对于父Webview窗口水平居中。
-    * 	默认值为"0px"。
+    *         像素值，如"100px"；
+    *         百分比，如"10%"，相对于父Webview窗口的宽度；
+    *         自动计算，如"auto"，根据width值自动计算，相对于父Webview窗口水平居中。
+    *     默认值为"0px"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */
@@ -49,9 +49,9 @@ trait PlusBarcodeBarcodeStyles extends js.Object {
   /**
     * Barcode扫码控件在Webview窗口的布局模式
     * 可取值：
-    * 		"static" - 静态布局模式，如果页面存在滚动条则随窗口内容滚动；
-    * 		"absolute" - 绝对布局模式，如果页面存在滚动条不随窗口内容滚动；
-    * 	默认值为"static"。
+    *         "static" - 静态布局模式，如果页面存在滚动条则随窗口内容滚动；
+    *         "absolute" - 绝对布局模式，如果页面存在滚动条不随窗口内容滚动；
+    *     默认值为"static"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */
@@ -66,9 +66,9 @@ trait PlusBarcodeBarcodeStyles extends js.Object {
   /**
     * Barcode扫码控件左上角的垂直偏移量
     * 可取值：
-    * 		像素值，如"100px"；
-    * 		百分比，如"10%"，相对于父Webview窗口的高度；
-    * 		自动计算，如"auto",根据height值自动计算，相对于父Webview窗口垂直居中。
+    *         像素值，如"100px"；
+    *         百分比，如"10%"，相对于父Webview窗口的高度；
+    *         自动计算，如"auto",根据height值自动计算，相对于父Webview窗口垂直居中。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */
@@ -76,9 +76,9 @@ trait PlusBarcodeBarcodeStyles extends js.Object {
   /**
     * Barcode扫码控件的宽度
     * 可取值：
-    * 		像素值，如"100px"；
-    * 		百分比，如"10%"，相对于父Webview窗口的宽度。
-    * 	默认值为"100%"。
+    *         像素值，如"100px"；
+    *         百分比，如"10%"，相对于父Webview窗口的宽度。
+    *     默认值为"100%"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */

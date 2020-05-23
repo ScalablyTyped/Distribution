@@ -18,9 +18,9 @@ trait ListKeysRequest extends js.Object {
 
 object ListKeysRequest {
   @scala.inline
-  def apply(Limit: Int | Double = null, Marker: MarkerType = null): ListKeysRequest = {
+  def apply(Limit: js.UndefOr[LimitType] = js.undefined, Marker: MarkerType = null): ListKeysRequest = {
     val __obj = js.Dynamic.literal()
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListKeysRequest]
   }

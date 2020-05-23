@@ -35,25 +35,25 @@ object Options {
     cookies: Cookies = null,
     fetchRes: Writable = null,
     headers: StringDictionary[String] = null,
-    maxRedirects: Int | Double = null,
+    maxRedirects: js.UndefOr[Double] = js.undefined,
     method: String = null,
-    redirects: Int | Double = null,
-    timeout: Int | Double = null,
+    redirects: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[ms] = js.undefined,
     tls: TlsOptions = null,
     userAgent: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowErrorResponse)) __obj.updateDynamic("allowErrorResponse")(allowErrorResponse.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowErrorResponse)) __obj.updateDynamic("allowErrorResponse")(allowErrorResponse.get.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
     if (cookies != null) __obj.updateDynamic("cookies")(cookies.asInstanceOf[js.Any])
     if (fetchRes != null) __obj.updateDynamic("fetchRes")(fetchRes.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (maxRedirects != null) __obj.updateDynamic("maxRedirects")(maxRedirects.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRedirects)) __obj.updateDynamic("maxRedirects")(maxRedirects.get.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (redirects != null) __obj.updateDynamic("redirects")(redirects.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(redirects)) __obj.updateDynamic("redirects")(redirects.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (tls != null) __obj.updateDynamic("tls")(tls.asInstanceOf[js.Any])
     if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

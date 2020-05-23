@@ -18,18 +18,18 @@ object BatchUpdateValuesResponse {
   def apply(
     responses: js.Array[UpdateValuesResponse] = null,
     spreadsheetId: String = null,
-    totalUpdatedCells: Int | Double = null,
-    totalUpdatedColumns: Int | Double = null,
-    totalUpdatedRows: Int | Double = null,
-    totalUpdatedSheets: Int | Double = null
+    totalUpdatedCells: js.UndefOr[Double] = js.undefined,
+    totalUpdatedColumns: js.UndefOr[Double] = js.undefined,
+    totalUpdatedRows: js.UndefOr[Double] = js.undefined,
+    totalUpdatedSheets: js.UndefOr[Double] = js.undefined
   ): BatchUpdateValuesResponse = {
     val __obj = js.Dynamic.literal()
     if (responses != null) __obj.updateDynamic("responses")(responses.asInstanceOf[js.Any])
     if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId.asInstanceOf[js.Any])
-    if (totalUpdatedCells != null) __obj.updateDynamic("totalUpdatedCells")(totalUpdatedCells.asInstanceOf[js.Any])
-    if (totalUpdatedColumns != null) __obj.updateDynamic("totalUpdatedColumns")(totalUpdatedColumns.asInstanceOf[js.Any])
-    if (totalUpdatedRows != null) __obj.updateDynamic("totalUpdatedRows")(totalUpdatedRows.asInstanceOf[js.Any])
-    if (totalUpdatedSheets != null) __obj.updateDynamic("totalUpdatedSheets")(totalUpdatedSheets.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalUpdatedCells)) __obj.updateDynamic("totalUpdatedCells")(totalUpdatedCells.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalUpdatedColumns)) __obj.updateDynamic("totalUpdatedColumns")(totalUpdatedColumns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalUpdatedRows)) __obj.updateDynamic("totalUpdatedRows")(totalUpdatedRows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalUpdatedSheets)) __obj.updateDynamic("totalUpdatedSheets")(totalUpdatedSheets.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchUpdateValuesResponse]
   }
 }

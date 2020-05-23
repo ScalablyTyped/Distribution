@@ -13,9 +13,13 @@ trait ListResult extends js.Object {
 
 object ListResult {
   @scala.inline
-  def apply(items: js.Array[Reference], prefixes: js.Array[Reference], nextPageToken: String = null): ListResult = {
+  def apply(
+    items: js.Array[Reference],
+    prefixes: js.Array[Reference],
+    nextPageToken: js.UndefOr[Null | String] = js.undefined
+  ): ListResult = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], prefixes = prefixes.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(nextPageToken)) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListResult]
   }
 }

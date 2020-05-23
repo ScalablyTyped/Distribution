@@ -1,7 +1,7 @@
 package typings.easyXapiSupertest.fsMod
 
-import typings.easyXapiSupertest.AnonFlag
-import typings.easyXapiSupertest.AnonFlagString
+import typings.easyXapiSupertest.anon.Flag
+import typings.easyXapiSupertest.anon.FlagString
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 object readFileSync extends js.Object {
   def apply(filename: String): Buffer = js.native
   def apply(filename: String, encoding: String): String = js.native
-  def apply(filename: String, options: AnonFlag): String = js.native
-  def apply(filename: String, options: AnonFlagString): Buffer = js.native
+  def apply(filename: String, options: Flag): String = js.native
+  def apply(filename: String, options: FlagString): Buffer = js.native
 }
 

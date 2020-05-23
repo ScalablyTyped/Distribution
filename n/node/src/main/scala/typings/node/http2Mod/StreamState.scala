@@ -16,20 +16,20 @@ trait StreamState extends js.Object {
 object StreamState {
   @scala.inline
   def apply(
-    localClose: Int | Double = null,
-    localWindowSize: Int | Double = null,
-    remoteClose: Int | Double = null,
-    state: Int | Double = null,
-    sumDependencyWeight: Int | Double = null,
-    weight: Int | Double = null
+    localClose: js.UndefOr[Double] = js.undefined,
+    localWindowSize: js.UndefOr[Double] = js.undefined,
+    remoteClose: js.UndefOr[Double] = js.undefined,
+    state: js.UndefOr[Double] = js.undefined,
+    sumDependencyWeight: js.UndefOr[Double] = js.undefined,
+    weight: js.UndefOr[Double] = js.undefined
   ): StreamState = {
     val __obj = js.Dynamic.literal()
-    if (localClose != null) __obj.updateDynamic("localClose")(localClose.asInstanceOf[js.Any])
-    if (localWindowSize != null) __obj.updateDynamic("localWindowSize")(localWindowSize.asInstanceOf[js.Any])
-    if (remoteClose != null) __obj.updateDynamic("remoteClose")(remoteClose.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (sumDependencyWeight != null) __obj.updateDynamic("sumDependencyWeight")(sumDependencyWeight.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(localClose)) __obj.updateDynamic("localClose")(localClose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(localWindowSize)) __obj.updateDynamic("localWindowSize")(localWindowSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteClose)) __obj.updateDynamic("remoteClose")(remoteClose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(state)) __obj.updateDynamic("state")(state.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sumDependencyWeight)) __obj.updateDynamic("sumDependencyWeight")(sumDependencyWeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamState]
   }
 }

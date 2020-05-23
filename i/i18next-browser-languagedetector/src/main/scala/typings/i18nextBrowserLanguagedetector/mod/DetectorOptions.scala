@@ -47,9 +47,9 @@ object DetectorOptions {
   def apply(
     caches: js.Array[String] = null,
     cookieDomain: String = null,
-    cookieMinutes: Int | Double = null,
+    cookieMinutes: js.UndefOr[Double] = js.undefined,
     excludeCacheFor: js.Array[String] = null,
-    htmlTag: HTMLElement = null,
+    htmlTag: js.UndefOr[Null | HTMLElement] = js.undefined,
     lookupCookie: String = null,
     lookupLocalStorage: String = null,
     lookupQuerystring: String = null,
@@ -58,9 +58,9 @@ object DetectorOptions {
     val __obj = js.Dynamic.literal()
     if (caches != null) __obj.updateDynamic("caches")(caches.asInstanceOf[js.Any])
     if (cookieDomain != null) __obj.updateDynamic("cookieDomain")(cookieDomain.asInstanceOf[js.Any])
-    if (cookieMinutes != null) __obj.updateDynamic("cookieMinutes")(cookieMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(cookieMinutes)) __obj.updateDynamic("cookieMinutes")(cookieMinutes.get.asInstanceOf[js.Any])
     if (excludeCacheFor != null) __obj.updateDynamic("excludeCacheFor")(excludeCacheFor.asInstanceOf[js.Any])
-    if (htmlTag != null) __obj.updateDynamic("htmlTag")(htmlTag.asInstanceOf[js.Any])
+    if (!js.isUndefined(htmlTag)) __obj.updateDynamic("htmlTag")(htmlTag.asInstanceOf[js.Any])
     if (lookupCookie != null) __obj.updateDynamic("lookupCookie")(lookupCookie.asInstanceOf[js.Any])
     if (lookupLocalStorage != null) __obj.updateDynamic("lookupLocalStorage")(lookupLocalStorage.asInstanceOf[js.Any])
     if (lookupQuerystring != null) __obj.updateDynamic("lookupQuerystring")(lookupQuerystring.asInstanceOf[js.Any])

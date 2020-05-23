@@ -42,13 +42,13 @@ object RowColumnPivotHierarchyData {
     fields: js.Array[PivotFieldData] = null,
     id: String = null,
     name: String = null,
-    position: Int | Double = null
+    position: js.UndefOr[Double] = js.undefined
   ): RowColumnPivotHierarchyData = {
     val __obj = js.Dynamic.literal()
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowColumnPivotHierarchyData]
   }
 }

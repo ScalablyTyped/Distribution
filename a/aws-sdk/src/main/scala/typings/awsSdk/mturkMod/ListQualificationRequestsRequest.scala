@@ -20,12 +20,12 @@ trait ListQualificationRequestsRequest extends js.Object {
 object ListQualificationRequestsRequest {
   @scala.inline
   def apply(
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[ResultSize] = js.undefined,
     NextToken: PaginationToken = null,
     QualificationTypeId: EntityId = null
   ): ListQualificationRequestsRequest = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (QualificationTypeId != null) __obj.updateDynamic("QualificationTypeId")(QualificationTypeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListQualificationRequestsRequest]

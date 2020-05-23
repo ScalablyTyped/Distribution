@@ -4,9 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.Input.Spatial.SpatialHoldCanceledEventArgs")
-@js.native
-abstract class SpatialHoldCanceledEventArgs () extends js.Object {
-  var interactionSourceKind: js.Any = js.native
+trait SpatialHoldCanceledEventArgs extends js.Object {
+  var interactionSourceKind: js.Any
+}
+
+object SpatialHoldCanceledEventArgs {
+  @scala.inline
+  def apply(interactionSourceKind: js.Any): SpatialHoldCanceledEventArgs = {
+    val __obj = js.Dynamic.literal(interactionSourceKind = interactionSourceKind.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpatialHoldCanceledEventArgs]
+  }
 }
 

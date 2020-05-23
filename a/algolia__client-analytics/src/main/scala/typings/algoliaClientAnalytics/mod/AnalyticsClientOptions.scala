@@ -1,5 +1,7 @@
 package typings.algoliaClientAnalytics.mod
 
+import typings.algoliaClientAnalytics.algoliaClientAnalyticsStrings.de
+import typings.algoliaClientAnalytics.algoliaClientAnalyticsStrings.us
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,12 +18,12 @@ trait AnalyticsClientOptions extends js.Object {
   /**
     * The prefered region.
     */
-  val region: js.UndefOr[String] = js.undefined
+  val region: js.UndefOr[de | us] = js.undefined
 }
 
 object AnalyticsClientOptions {
   @scala.inline
-  def apply(apiKey: String, appId: String, region: String = null): AnalyticsClientOptions = {
+  def apply(apiKey: String, appId: String, region: de | us = null): AnalyticsClientOptions = {
     val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], appId = appId.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsClientOptions]

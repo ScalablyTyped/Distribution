@@ -29,7 +29,7 @@ object TemplateOptions {
     if (helpers != null) __obj.updateDynamic("helpers")(helpers.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (templates != null) __obj.updateDynamic("templates")(templates.asInstanceOf[js.Any])
-    if (!js.isUndefined(useViews)) __obj.updateDynamic("useViews")(useViews.asInstanceOf[js.Any])
+    if (!js.isUndefined(useViews)) __obj.updateDynamic("useViews")(useViews.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateOptions]
   }
 }

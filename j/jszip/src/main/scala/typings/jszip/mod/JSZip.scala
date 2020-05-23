@@ -4,15 +4,14 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
-import typings.jszip.AnonPromise
-import typings.jszip.JSZipFileOptionsdirtrue
+import typings.jszip.anon.JSZipFileOptionsdirtrue
+import typings.jszip.anon.Promise
 import typings.jszip.jszipStrings.array
 import typings.jszip.jszipStrings.arraybuffer
 import typings.jszip.jszipStrings.base64
 import typings.jszip.jszipStrings.binarystring
 import typings.jszip.jszipStrings.blob
 import typings.jszip.jszipStrings.nodebuffer
-import typings.jszip.jszipStrings.string
 import typings.jszip.jszipStrings.text
 import typings.jszip.jszipStrings.uint8array
 import typings.node.Buffer
@@ -40,7 +39,7 @@ trait JSZip
 Instantiable0[JSZip]
      with Instantiable1[/* data */ InputFileFormat, JSZip]
      with Instantiable2[/* data */ InputFileFormat, /* options */ JSZipLoadOptions, JSZip] {
-  var external: AnonPromise = js.native
+  var external: Promise = js.native
   var files: StringDictionary[JSZipObject] = js.native
   var support: JSZipSupport = js.native
   var version: String = js.native
@@ -150,10 +149,6 @@ Instantiable0[JSZip]
   def generateAsync_nodebuffer(options: JSZipGeneratorOptions[nodebuffer]): js.Promise[Buffer] = js.native
   @JSName("generateAsync")
   def generateAsync_nodebuffer(options: JSZipGeneratorOptions[nodebuffer], onUpdate: OnUpdateCallback): js.Promise[Buffer] = js.native
-  @JSName("generateAsync")
-  def generateAsync_string(options: JSZipGeneratorOptions[string]): js.Promise[String] = js.native
-  @JSName("generateAsync")
-  def generateAsync_string(options: JSZipGeneratorOptions[string], onUpdate: OnUpdateCallback): js.Promise[String] = js.native
   @JSName("generateAsync")
   def generateAsync_text(options: JSZipGeneratorOptions[text]): js.Promise[String] = js.native
   @JSName("generateAsync")

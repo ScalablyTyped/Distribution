@@ -1,7 +1,7 @@
 package typings.i18next.mod
 
-import typings.i18next.AnonAllowedHosts
-import typings.i18next.AnonAutoOpen
+import typings.i18next.anon.AllowedHosts
+import typings.i18next.anon.AutoOpen
 import typings.i18next.i18nextBooleans.`false`
 import typings.i18next.i18nextStrings.all
 import typings.i18next.i18nextStrings.current
@@ -70,7 +70,7 @@ trait InitOptions extends js.Object {
     * Options for https://github.com/locize/locize-editor
     * @default undefined
     */
-  var editor: js.UndefOr[AnonAutoOpen] = js.undefined
+  var editor: js.UndefOr[AutoOpen] = js.undefined
   /**
     * Language to use if translations in user language are not available.
     * @default 'dev'
@@ -124,7 +124,7 @@ trait InitOptions extends js.Object {
     * Options for https://github.com/locize/locize-lastused
     * @default undefined
     */
-  var locizeLastUsed: js.UndefOr[AnonAllowedHosts] = js.undefined
+  var locizeLastUsed: js.UndefOr[AllowedHosts] = js.undefined
   /**
     * Language will be lowercased eg. en-US --> en-us
     * @default false
@@ -272,7 +272,7 @@ object InitOptions {
     debug: js.UndefOr[Boolean] = js.undefined,
     defaultNS: String = null,
     detection: js.Object = null,
-    editor: AnonAutoOpen = null,
+    editor: AutoOpen = null,
     fallbackLng: `false` | FallbackLng = null,
     fallbackNS: `false` | String | js.Array[String] = null,
     i18nFormat: js.Object = null,
@@ -282,7 +282,7 @@ object InitOptions {
     keySeparator: `false` | String = null,
     lng: String = null,
     load: all | currentOnly | languageOnly = null,
-    locizeLastUsed: AnonAllowedHosts = null,
+    locizeLastUsed: AllowedHosts = null,
     lowerCaseLng: js.UndefOr[Boolean] = js.undefined,
     missingInterpolationHandler: (/* text */ String, /* value */ js.Any, /* options */ InitOptions) => _ = null,
     missingKeyHandler: `false` | (js.Function4[
@@ -315,50 +315,50 @@ object InitOptions {
     whitelist: `false` | js.Array[String] = null
   ): InitOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(appendNamespaceToCIMode)) __obj.updateDynamic("appendNamespaceToCIMode")(appendNamespaceToCIMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(appendNamespaceToMissingKey)) __obj.updateDynamic("appendNamespaceToMissingKey")(appendNamespaceToMissingKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(appendNamespaceToCIMode)) __obj.updateDynamic("appendNamespaceToCIMode")(appendNamespaceToCIMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(appendNamespaceToMissingKey)) __obj.updateDynamic("appendNamespaceToMissingKey")(appendNamespaceToMissingKey.get.asInstanceOf[js.Any])
     if (backend != null) __obj.updateDynamic("backend")(backend.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (!js.isUndefined(cleanCode)) __obj.updateDynamic("cleanCode")(cleanCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(cleanCode)) __obj.updateDynamic("cleanCode")(cleanCode.get.asInstanceOf[js.Any])
     if (compatibilityJSON != null) __obj.updateDynamic("compatibilityJSON")(compatibilityJSON.asInstanceOf[js.Any])
     if (contextSeparator != null) __obj.updateDynamic("contextSeparator")(contextSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (defaultNS != null) __obj.updateDynamic("defaultNS")(defaultNS.asInstanceOf[js.Any])
     if (detection != null) __obj.updateDynamic("detection")(detection.asInstanceOf[js.Any])
     if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
     if (fallbackLng != null) __obj.updateDynamic("fallbackLng")(fallbackLng.asInstanceOf[js.Any])
     if (fallbackNS != null) __obj.updateDynamic("fallbackNS")(fallbackNS.asInstanceOf[js.Any])
     if (i18nFormat != null) __obj.updateDynamic("i18nFormat")(i18nFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(initImmediate)) __obj.updateDynamic("initImmediate")(initImmediate.asInstanceOf[js.Any])
+    if (!js.isUndefined(initImmediate)) __obj.updateDynamic("initImmediate")(initImmediate.get.asInstanceOf[js.Any])
     if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation.asInstanceOf[js.Any])
     if (joinArrays != null) __obj.updateDynamic("joinArrays")(joinArrays.asInstanceOf[js.Any])
     if (keySeparator != null) __obj.updateDynamic("keySeparator")(keySeparator.asInstanceOf[js.Any])
     if (lng != null) __obj.updateDynamic("lng")(lng.asInstanceOf[js.Any])
     if (load != null) __obj.updateDynamic("load")(load.asInstanceOf[js.Any])
     if (locizeLastUsed != null) __obj.updateDynamic("locizeLastUsed")(locizeLastUsed.asInstanceOf[js.Any])
-    if (!js.isUndefined(lowerCaseLng)) __obj.updateDynamic("lowerCaseLng")(lowerCaseLng.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowerCaseLng)) __obj.updateDynamic("lowerCaseLng")(lowerCaseLng.get.asInstanceOf[js.Any])
     if (missingInterpolationHandler != null) __obj.updateDynamic("missingInterpolationHandler")(js.Any.fromFunction3(missingInterpolationHandler))
     if (missingKeyHandler != null) __obj.updateDynamic("missingKeyHandler")(missingKeyHandler.asInstanceOf[js.Any])
-    if (!js.isUndefined(nonExplicitWhitelist)) __obj.updateDynamic("nonExplicitWhitelist")(nonExplicitWhitelist.asInstanceOf[js.Any])
+    if (!js.isUndefined(nonExplicitWhitelist)) __obj.updateDynamic("nonExplicitWhitelist")(nonExplicitWhitelist.get.asInstanceOf[js.Any])
     if (ns != null) __obj.updateDynamic("ns")(ns.asInstanceOf[js.Any])
     if (nsSeparator != null) __obj.updateDynamic("nsSeparator")(nsSeparator.asInstanceOf[js.Any])
     if (overloadTranslationOptionHandler != null) __obj.updateDynamic("overloadTranslationOptionHandler")(js.Any.fromFunction1(overloadTranslationOptionHandler))
     if (parseMissingKeyHandler != null) __obj.updateDynamic("parseMissingKeyHandler")(js.Any.fromFunction1(parseMissingKeyHandler))
-    if (!js.isUndefined(partialBundledLanguages)) __obj.updateDynamic("partialBundledLanguages")(partialBundledLanguages.asInstanceOf[js.Any])
+    if (!js.isUndefined(partialBundledLanguages)) __obj.updateDynamic("partialBundledLanguages")(partialBundledLanguages.get.asInstanceOf[js.Any])
     if (pluralSeparator != null) __obj.updateDynamic("pluralSeparator")(pluralSeparator.asInstanceOf[js.Any])
     if (postProcess != null) __obj.updateDynamic("postProcess")(postProcess.asInstanceOf[js.Any])
-    if (!js.isUndefined(postProcessPassResolved)) __obj.updateDynamic("postProcessPassResolved")(postProcessPassResolved.asInstanceOf[js.Any])
+    if (!js.isUndefined(postProcessPassResolved)) __obj.updateDynamic("postProcessPassResolved")(postProcessPassResolved.get.asInstanceOf[js.Any])
     if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
     if (react != null) __obj.updateDynamic("react")(react.asInstanceOf[js.Any])
     if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnEmptyString)) __obj.updateDynamic("returnEmptyString")(returnEmptyString.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnNull)) __obj.updateDynamic("returnNull")(returnNull.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnObjects)) __obj.updateDynamic("returnObjects")(returnObjects.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnEmptyString)) __obj.updateDynamic("returnEmptyString")(returnEmptyString.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnNull)) __obj.updateDynamic("returnNull")(returnNull.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnObjects)) __obj.updateDynamic("returnObjects")(returnObjects.get.asInstanceOf[js.Any])
     if (returnedObjectHandler != null) __obj.updateDynamic("returnedObjectHandler")(js.Any.fromFunction3(returnedObjectHandler))
-    if (!js.isUndefined(saveMissing)) __obj.updateDynamic("saveMissing")(saveMissing.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveMissing)) __obj.updateDynamic("saveMissing")(saveMissing.get.asInstanceOf[js.Any])
     if (saveMissingTo != null) __obj.updateDynamic("saveMissingTo")(saveMissingTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(simplifyPluralSuffix)) __obj.updateDynamic("simplifyPluralSuffix")(simplifyPluralSuffix.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateMissing)) __obj.updateDynamic("updateMissing")(updateMissing.asInstanceOf[js.Any])
+    if (!js.isUndefined(simplifyPluralSuffix)) __obj.updateDynamic("simplifyPluralSuffix")(simplifyPluralSuffix.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateMissing)) __obj.updateDynamic("updateMissing")(updateMissing.get.asInstanceOf[js.Any])
     if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitOptions]
   }

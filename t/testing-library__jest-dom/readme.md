@@ -1,7 +1,7 @@
 
 # Scala.js typings for testing-library__jest-dom
 
-Typings are for version 5.0
+Typings are for version 5.7
 
 ## Library description:
 Custom jest matchers to test the state of the DOM

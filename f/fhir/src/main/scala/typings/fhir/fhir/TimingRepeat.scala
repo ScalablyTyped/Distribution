@@ -156,20 +156,20 @@ object TimingRepeat {
     boundsDuration: Duration = null,
     boundsPeriod: Period = null,
     boundsRange: Range = null,
-    count: Int | Double = null,
-    countMax: Int | Double = null,
+    count: js.UndefOr[integer] = js.undefined,
+    countMax: js.UndefOr[integer] = js.undefined,
     dayOfWeek: js.Array[code] = null,
-    duration: Int | Double = null,
-    durationMax: Int | Double = null,
+    duration: js.UndefOr[decimal] = js.undefined,
+    durationMax: js.UndefOr[decimal] = js.undefined,
     durationUnit: code = null,
     extension: js.Array[Extension] = null,
     fhir_comments: js.Array[String] = null,
-    frequency: Int | Double = null,
-    frequencyMax: Int | Double = null,
+    frequency: js.UndefOr[integer] = js.undefined,
+    frequencyMax: js.UndefOr[integer] = js.undefined,
     id: String = null,
-    offset: Int | Double = null,
-    period: Int | Double = null,
-    periodMax: Int | Double = null,
+    offset: js.UndefOr[unsignedInt] = js.undefined,
+    period: js.UndefOr[decimal] = js.undefined,
+    periodMax: js.UndefOr[decimal] = js.undefined,
     periodUnit: code = null,
     timeOfDay: js.Array[time] = null,
     when: js.Array[code] = null
@@ -194,20 +194,20 @@ object TimingRepeat {
     if (boundsDuration != null) __obj.updateDynamic("boundsDuration")(boundsDuration.asInstanceOf[js.Any])
     if (boundsPeriod != null) __obj.updateDynamic("boundsPeriod")(boundsPeriod.asInstanceOf[js.Any])
     if (boundsRange != null) __obj.updateDynamic("boundsRange")(boundsRange.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (countMax != null) __obj.updateDynamic("countMax")(countMax.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(countMax)) __obj.updateDynamic("countMax")(countMax.get.asInstanceOf[js.Any])
     if (dayOfWeek != null) __obj.updateDynamic("dayOfWeek")(dayOfWeek.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (durationMax != null) __obj.updateDynamic("durationMax")(durationMax.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(durationMax)) __obj.updateDynamic("durationMax")(durationMax.get.asInstanceOf[js.Any])
     if (durationUnit != null) __obj.updateDynamic("durationUnit")(durationUnit.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
-    if (frequencyMax != null) __obj.updateDynamic("frequencyMax")(frequencyMax.asInstanceOf[js.Any])
+    if (!js.isUndefined(frequency)) __obj.updateDynamic("frequency")(frequency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frequencyMax)) __obj.updateDynamic("frequencyMax")(frequencyMax.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (periodMax != null) __obj.updateDynamic("periodMax")(periodMax.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(period)) __obj.updateDynamic("period")(period.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(periodMax)) __obj.updateDynamic("periodMax")(periodMax.get.asInstanceOf[js.Any])
     if (periodUnit != null) __obj.updateDynamic("periodUnit")(periodUnit.asInstanceOf[js.Any])
     if (timeOfDay != null) __obj.updateDynamic("timeOfDay")(timeOfDay.asInstanceOf[js.Any])
     if (when != null) __obj.updateDynamic("when")(when.asInstanceOf[js.Any])

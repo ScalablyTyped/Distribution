@@ -77,13 +77,13 @@ object GetBotResponse {
   def apply(
     abortStatement: Statement = null,
     checksum: String = null,
-    childDirected: js.UndefOr[scala.Boolean] = js.undefined,
+    childDirected: js.UndefOr[Boolean] = js.undefined,
     clarificationPrompt: Prompt = null,
     createdDate: Timestamp = null,
     description: Description = null,
-    detectSentiment: js.UndefOr[scala.Boolean] = js.undefined,
+    detectSentiment: js.UndefOr[Boolean] = js.undefined,
     failureReason: String = null,
-    idleSessionTTLInSeconds: Int | Double = null,
+    idleSessionTTLInSeconds: js.UndefOr[SessionTTL] = js.undefined,
     intents: IntentList = null,
     lastUpdatedDate: Timestamp = null,
     locale: Locale = null,
@@ -95,13 +95,13 @@ object GetBotResponse {
     val __obj = js.Dynamic.literal()
     if (abortStatement != null) __obj.updateDynamic("abortStatement")(abortStatement.asInstanceOf[js.Any])
     if (checksum != null) __obj.updateDynamic("checksum")(checksum.asInstanceOf[js.Any])
-    if (!js.isUndefined(childDirected)) __obj.updateDynamic("childDirected")(childDirected.asInstanceOf[js.Any])
+    if (!js.isUndefined(childDirected)) __obj.updateDynamic("childDirected")(childDirected.get.asInstanceOf[js.Any])
     if (clarificationPrompt != null) __obj.updateDynamic("clarificationPrompt")(clarificationPrompt.asInstanceOf[js.Any])
     if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(detectSentiment)) __obj.updateDynamic("detectSentiment")(detectSentiment.asInstanceOf[js.Any])
+    if (!js.isUndefined(detectSentiment)) __obj.updateDynamic("detectSentiment")(detectSentiment.get.asInstanceOf[js.Any])
     if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
-    if (idleSessionTTLInSeconds != null) __obj.updateDynamic("idleSessionTTLInSeconds")(idleSessionTTLInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(idleSessionTTLInSeconds)) __obj.updateDynamic("idleSessionTTLInSeconds")(idleSessionTTLInSeconds.get.asInstanceOf[js.Any])
     if (intents != null) __obj.updateDynamic("intents")(intents.asInstanceOf[js.Any])
     if (lastUpdatedDate != null) __obj.updateDynamic("lastUpdatedDate")(lastUpdatedDate.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 package typings.ky.mod
 
-import typings.ky.AnonCall
+import typings.ky.anon.Call
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,7 +51,7 @@ object default extends js.Object {
   	Create a new Ky instance with complete new defaults.
   	@returns A new Ky instance.
   	*/
-  def create(defaultOptions: Options): AnonCall = js.native
+  def create(defaultOptions: Options): Call = js.native
   /**
   	Fetch the given `url` using the option `{method: 'delete'}`.
   	@param url - `Request` object, `URL` object, or URL string.
@@ -64,7 +64,7 @@ object default extends js.Object {
   	In contrast to `ky.create()`, `ky.extend()` inherits defaults from its parent.
   	@returns A new Ky instance.
   	*/
-  def extend(defaultOptions: Options): AnonCall = js.native
+  def extend(defaultOptions: Options): Call = js.native
   /**
   	Fetch the given `url` using the option `{method: 'get'}`.
   	@param url - `Request` object, `URL` object, or URL string.

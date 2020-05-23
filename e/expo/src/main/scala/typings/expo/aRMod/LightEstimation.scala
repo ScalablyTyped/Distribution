@@ -17,11 +17,11 @@ object LightEstimation {
     ambientColorTemperature: Double,
     ambientIntensity: Double,
     primaryLightDirection: Vector3 = null,
-    primaryLightIntensity: Int | Double = null
+    primaryLightIntensity: js.UndefOr[Double] = js.undefined
   ): LightEstimation = {
     val __obj = js.Dynamic.literal(ambientColorTemperature = ambientColorTemperature.asInstanceOf[js.Any], ambientIntensity = ambientIntensity.asInstanceOf[js.Any])
     if (primaryLightDirection != null) __obj.updateDynamic("primaryLightDirection")(primaryLightDirection.asInstanceOf[js.Any])
-    if (primaryLightIntensity != null) __obj.updateDynamic("primaryLightIntensity")(primaryLightIntensity.asInstanceOf[js.Any])
+    if (!js.isUndefined(primaryLightIntensity)) __obj.updateDynamic("primaryLightIntensity")(primaryLightIntensity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LightEstimation]
   }
 }

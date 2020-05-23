@@ -1,9 +1,9 @@
 package typings.msRestAzure.mod
 
-import typings.msRestAzure.AnonActiveDirectoryEndpointUrl
-import typings.msRestAzure.AnonActiveDirectoryGraphApiVersion
-import typings.msRestAzure.AnonActiveDirectoryGraphResourceId
-import typings.msRestAzure.AnonActiveDirectoryResourceId
+import typings.msRestAzure.anon.ActiveDirectoryEndpointUrl
+import typings.msRestAzure.anon.ActiveDirectoryGraphApiVersion
+import typings.msRestAzure.anon.ActiveDirectoryGraphResourceId
+import typings.msRestAzure.anon.ActiveDirectoryResourceId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -108,9 +108,9 @@ class AzureEnvironment protected () extends js.Object {
 @JSImport("ms-rest-azure", "AzureEnvironment")
 @js.native
 object AzureEnvironment extends js.Object {
-  val Azure: AnonActiveDirectoryEndpointUrl = js.native
-  val AzureChina: AnonActiveDirectoryGraphApiVersion = js.native
-  val AzureGermanCloud: AnonActiveDirectoryResourceId = js.native
-  val AzureUSGovernment: AnonActiveDirectoryGraphResourceId = js.native
+  val Azure: ActiveDirectoryEndpointUrl = js.native
+  val AzureChina: ActiveDirectoryGraphApiVersion = js.native
+  val AzureGermanCloud: ActiveDirectoryResourceId = js.native
+  val AzureUSGovernment: ActiveDirectoryGraphResourceId = js.native
 }
 

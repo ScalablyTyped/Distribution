@@ -1,5 +1,6 @@
 package typings.safeBuffer
 
+import typings.safeBuffer.anon.Data
 import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import scala.scalajs.js
@@ -140,7 +141,7 @@ object mod extends js.Object {
     def swap16(): Buffer = js.native
     def swap32(): Buffer = js.native
     def swap64(): Buffer = js.native
-    def toJSON(): AnonData = js.native
+    def toJSON(): Data = js.native
     def toString(encoding: String): String = js.native
     def toString(encoding: String, start: Double): String = js.native
     def toString(encoding: String, start: Double, end: Double): String = js.native

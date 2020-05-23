@@ -7,6 +7,7 @@ import typings.reactTransitionGroup.reactTransitionGroupStrings.div
 import typings.reactTransitionGroup.switchTransitionMod.SwitchTransitionProps
 import typings.reactTransitionGroup.transitionGroupMod.TransitionGroupProps
 import typings.reactTransitionGroup.transitionMod.TransitionProps
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,8 +16,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   @js.native
-  class CSSTransition ()
-    extends Component[CSSTransitionProps, js.Object, js.Any]
+  class CSSTransition[Ref /* <: js.UndefOr[HTMLElement] */] ()
+    extends Component[CSSTransitionProps[Ref], js.Object, js.Any]
   
   /**
     * A transition component inspired by the [vue transition modes](https://vuejs.org/v2/guide/transitions.html#Transition-Modes).
@@ -89,8 +90,8 @@ object mod extends js.Object {
     *
     */
   @js.native
-  class Transition ()
-    extends Component[TransitionProps, js.Object, js.Any]
+  class Transition[RefElement /* <: js.UndefOr[HTMLElement] */] ()
+    extends Component[TransitionProps[RefElement], js.Object, js.Any]
   
   /**
     * The `<TransitionGroup>` component manages a set of `<Transition>` components

@@ -66,7 +66,7 @@ trait FileInputOptions extends js.Object {
   /**
     * Whether to automatically replace the files in the preview after the maxFileCount limit is reached and a new set of file(s) is/are selected.
     * This will only work if a valid maxFileCount is set.
-    * Defaults to false.
+    * @default false
     */
   var autoReplace: js.UndefOr[Boolean] = js.undefined
   /**
@@ -129,7 +129,7 @@ trait FileInputOptions extends js.Object {
   /**
     * whether to enable a drag and drop zone for dragging and dropping files to.
     * This is available only for ajax based uploads.
-    * Defaults to true.
+    * @default true
     */
   var dropZoneEnabled: js.UndefOr[Boolean] = js.undefined
   /**
@@ -176,14 +176,42 @@ trait FileInputOptions extends js.Object {
     */
   var elPreviewStatus: js.UndefOr[String] = js.undefined
   /**
+    * Whether to encode all the URLs before triggering the ajax calls.
+    * The following URLs are currently set and used within the plugin:
+    *     * uploadUrl
+    *     * deleteUrl
+    *     * initialPreviewDownloadUrl
+    *     * url within initialPreviewConfig
+    *     * downloadUrl within initialPreviewConfig
+    *     * testUrl within resumableUploadOptions
+    * @default true
+    */
+  var encodeUrl: js.UndefOr[Boolean] = js.undefined
+  /**
     * configuration for setting up file actions for newly selected file thumbnails in the preview window.
     */
-  var fileActionsettings: js.UndefOr[FileActionSettings] = js.undefined
+  var fileActionSettings: js.UndefOr[FileActionSettings] = js.undefined
   /**
     * the settings to validate and identify each file type when a file is selected for upload.
     * This is a list of callbacks, which accepts the file mime type and file name as a parameter.
     */
   var fileTypeSettings: js.UndefOr[FileTypeSettings] = js.undefined
+  /**
+    * Whether to focus the file caption after browsing and selecting a file.
+    * @default true
+    */
+  var focusCaptionOnBrowse: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Whether to focus the file caption after clearing / removing the files (using the remove button for example).
+    * @default true
+    */
+  var focusCaptionOnClear: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Whether to hide the preview content (image, pdf content, text content, etc.) within the thumbnail.
+    * When set to true, only the file name and file size as defined in the thumbnail footer layout template will be displayed.
+    * @default false
+    */
+  var hideThumbnailContent: js.UndefOr[Boolean] = js.undefined
   /**
     * the initial preview caption text to be displayed.
     * If you do not set a value here and initialPreview is set to true this will default to "{preview-file-count} files selected",
@@ -578,6 +606,12 @@ trait FileInputOptions extends js.Object {
     */
   var removeTitle: js.UndefOr[String] = js.undefined
   /**
+    * Whether file selection is mandatory before upload (for ajax) or submit of the form (for non-ajax). When set to true, and if files are not
+    * selected before upload, this will show the error message as set in msgFilerequired.
+    * @default false
+    */
+  var required: js.UndefOr[Boolean] = js.undefined
+  /**
     * the default image mime type of the converted image after resize.
     * Defaults to image/jpeg.
     */
@@ -608,46 +642,52 @@ trait FileInputOptions extends js.Object {
     */
   var resizePreference: js.UndefOr[width | height] = js.undefined
   /**
+    * Whether to orient the widget in Right-To-Left (RTL) mode. To view RTL orientation you must set this to true and also must load the
+    * css/fileinput-rtl.css file after the css/fileinput.css on your page for RTL styling.
+    * @default false
+    */
+  var rtl: js.UndefOr[Boolean] = js.undefined
+  /**
     * whether to show details of the error stack from the server log when an error is encountered via ajax response.
-    * Defaults to true.
+    * @default true
     */
   var showAjaxErrorDetails: js.UndefOr[Boolean] = js.undefined
   /**
     * Whether to display the file upload cancel button.
-    * Defaults to true.
+    * @default true
     * This will be only enabled and displayed when an AJAX upload is in process.
     */
   var showCancel: js.UndefOr[Boolean] = js.undefined
   /**
     * Whether to display the file caption.
-    * Defaults to true.
+    * @default true
     */
   var showCaption: js.UndefOr[Boolean] = js.undefined
   /**
     * Whether to display the close icon in the preview.
-    * Defaults to true.
+    * @default true
     * This will be only parsed when showPreview is true or when you are using the {close} tag in your preview templates.
     */
   var showClose: js.UndefOr[Boolean] = js.undefined
   /**
     * Whether to display the file preview.
-    * Defaults to true.
+    * @default true
     */
   var showPreview: js.UndefOr[Boolean] = js.undefined
   /**
     * Whether to display the file remove/clear button.
-    * Defaults to true.
+    * @default true
     */
   var showRemove: js.UndefOr[Boolean] = js.undefined
   /**
     * Whether to display the file upload button.
-    * Defaults to true.
+    * @default true
     * This will default to a form submit button, unless the uploadUrl is specified.
     */
   var showUpload: js.UndefOr[Boolean] = js.undefined
   /**
     * Whether to persist display of the uploaded file thumbnails in the preview window (for ajax uploads) until the remove/clear button is pressed.
-    * Defaults to true.
+    * @default true
     * When set to false, a next batch of files selected for upload will clear these thumbnails from preview.
     */
   var showUploadedThumbs: js.UndefOr[Boolean] = js.undefined
@@ -669,7 +709,7 @@ trait FileInputOptions extends js.Object {
   var theme: js.UndefOr[String] = js.undefined
   /**
     * whether the batch upload of multiple files will be asynchronous/in parallel.
-    * Defaults to true.
+    * @default true
     */
   var uploadAsync: js.UndefOr[Boolean] = js.undefined
   /**
@@ -714,7 +754,7 @@ trait FileInputOptions extends js.Object {
   var uploadUrl: js.UndefOr[String] = js.undefined
   /**
     * whether to include initial preview file count (server uploaded files) in validating minFileCount and maxFileCount.
-    * Defaults to false.
+    * @default false
     */
   var validateInitialCount: js.UndefOr[Boolean] = js.undefined
   /**
@@ -754,24 +794,28 @@ object FileInputOptions {
     elPreviewContainer: String = null,
     elPreviewImage: String = null,
     elPreviewStatus: String = null,
-    fileActionsettings: FileActionSettings = null,
+    encodeUrl: js.UndefOr[Boolean] = js.undefined,
+    fileActionSettings: FileActionSettings = null,
     fileTypeSettings: FileTypeSettings = null,
+    focusCaptionOnBrowse: js.UndefOr[Boolean] = js.undefined,
+    focusCaptionOnClear: js.UndefOr[Boolean] = js.undefined,
+    hideThumbnailContent: js.UndefOr[Boolean] = js.undefined,
     initialCaption: String = null,
     initialPreview: String | js.Array[_] = null,
     initialPreviewConfig: js.Array[PreviewConfig] = null,
-    initialPreviewCount: Int | Double = null,
+    initialPreviewCount: js.UndefOr[Double] = js.undefined,
     initialPreviewDelimiter: String = null,
     initialPreviewShowDelete: js.UndefOr[Boolean] = js.undefined,
     initialPreviewThumbTags: StringDictionary[String] = null,
     language: String = null,
     layoutTemplates: LayoutTemplates = null,
     mainClass: String = null,
-    maxFileCount: Int | Double = null,
-    maxFileSize: Int | Double = null,
-    maxImageHeight: Int | Double = null,
-    maxImageWidth: Int | Double = null,
-    minFileCount: Int | Double = null,
-    minImageHeight: Int | Double = null,
+    maxFileCount: js.UndefOr[Double] = js.undefined,
+    maxFileSize: js.UndefOr[Double] = js.undefined,
+    maxImageHeight: js.UndefOr[Double] = js.undefined,
+    maxImageWidth: js.UndefOr[Double] = js.undefined,
+    minFileCount: js.UndefOr[Double] = js.undefined,
+    minImageHeight: js.UndefOr[Double] = js.undefined,
     msgCancelled: String = null,
     msgErrorClass: String = null,
     msgFileNotFound: String = null,
@@ -818,10 +862,12 @@ object FileInputOptions {
     removeIcon: String = null,
     removeLabel: String = null,
     removeTitle: String = null,
+    required: js.UndefOr[Boolean] = js.undefined,
     resizeDefaultImageType: String = null,
     resizeImage: js.UndefOr[Boolean] = js.undefined,
-    resizeImageQuality: Int | Double = null,
+    resizeImageQuality: js.UndefOr[Double] = js.undefined,
     resizePreference: width | height = null,
+    rtl: js.UndefOr[Boolean] = js.undefined,
     showAjaxErrorDetails: js.UndefOr[Boolean] = js.undefined,
     showCancel: js.UndefOr[Boolean] = js.undefined,
     showCaption: js.UndefOr[Boolean] = js.undefined,
@@ -850,7 +896,7 @@ object FileInputOptions {
     if (allowedFileTypes != null) __obj.updateDynamic("allowedFileTypes")(allowedFileTypes.asInstanceOf[js.Any])
     if (allowedPreviewMimeTypes != null) __obj.updateDynamic("allowedPreviewMimeTypes")(allowedPreviewMimeTypes.asInstanceOf[js.Any])
     if (allowedPreviewTypes != null) __obj.updateDynamic("allowedPreviewTypes")(allowedPreviewTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoReplace)) __obj.updateDynamic("autoReplace")(autoReplace.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoReplace)) __obj.updateDynamic("autoReplace")(autoReplace.get.asInstanceOf[js.Any])
     if (browseClass != null) __obj.updateDynamic("browseClass")(browseClass.asInstanceOf[js.Any])
     if (browseIcon != null) __obj.updateDynamic("browseIcon")(browseIcon.asInstanceOf[js.Any])
     if (browseLabel != null) __obj.updateDynamic("browseLabel")(browseLabel.asInstanceOf[js.Any])
@@ -861,7 +907,7 @@ object FileInputOptions {
     if (defaultPreviewContent != null) __obj.updateDynamic("defaultPreviewContent")(defaultPreviewContent.asInstanceOf[js.Any])
     if (deleteExtraData != null) __obj.updateDynamic("deleteExtraData")(deleteExtraData.asInstanceOf[js.Any])
     if (deleteUrl != null) __obj.updateDynamic("deleteUrl")(deleteUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropZoneEnabled)) __obj.updateDynamic("dropZoneEnabled")(dropZoneEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropZoneEnabled)) __obj.updateDynamic("dropZoneEnabled")(dropZoneEnabled.get.asInstanceOf[js.Any])
     if (dropZoneTitle != null) __obj.updateDynamic("dropZoneTitle")(dropZoneTitle.asInstanceOf[js.Any])
     if (dropZoneTitleClass != null) __obj.updateDynamic("dropZoneTitleClass")(dropZoneTitleClass.asInstanceOf[js.Any])
     if (elCaptionContainer != null) __obj.updateDynamic("elCaptionContainer")(elCaptionContainer.asInstanceOf[js.Any])
@@ -870,24 +916,28 @@ object FileInputOptions {
     if (elPreviewContainer != null) __obj.updateDynamic("elPreviewContainer")(elPreviewContainer.asInstanceOf[js.Any])
     if (elPreviewImage != null) __obj.updateDynamic("elPreviewImage")(elPreviewImage.asInstanceOf[js.Any])
     if (elPreviewStatus != null) __obj.updateDynamic("elPreviewStatus")(elPreviewStatus.asInstanceOf[js.Any])
-    if (fileActionsettings != null) __obj.updateDynamic("fileActionsettings")(fileActionsettings.asInstanceOf[js.Any])
+    if (!js.isUndefined(encodeUrl)) __obj.updateDynamic("encodeUrl")(encodeUrl.get.asInstanceOf[js.Any])
+    if (fileActionSettings != null) __obj.updateDynamic("fileActionSettings")(fileActionSettings.asInstanceOf[js.Any])
     if (fileTypeSettings != null) __obj.updateDynamic("fileTypeSettings")(fileTypeSettings.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusCaptionOnBrowse)) __obj.updateDynamic("focusCaptionOnBrowse")(focusCaptionOnBrowse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusCaptionOnClear)) __obj.updateDynamic("focusCaptionOnClear")(focusCaptionOnClear.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideThumbnailContent)) __obj.updateDynamic("hideThumbnailContent")(hideThumbnailContent.get.asInstanceOf[js.Any])
     if (initialCaption != null) __obj.updateDynamic("initialCaption")(initialCaption.asInstanceOf[js.Any])
     if (initialPreview != null) __obj.updateDynamic("initialPreview")(initialPreview.asInstanceOf[js.Any])
     if (initialPreviewConfig != null) __obj.updateDynamic("initialPreviewConfig")(initialPreviewConfig.asInstanceOf[js.Any])
-    if (initialPreviewCount != null) __obj.updateDynamic("initialPreviewCount")(initialPreviewCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialPreviewCount)) __obj.updateDynamic("initialPreviewCount")(initialPreviewCount.get.asInstanceOf[js.Any])
     if (initialPreviewDelimiter != null) __obj.updateDynamic("initialPreviewDelimiter")(initialPreviewDelimiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialPreviewShowDelete)) __obj.updateDynamic("initialPreviewShowDelete")(initialPreviewShowDelete.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialPreviewShowDelete)) __obj.updateDynamic("initialPreviewShowDelete")(initialPreviewShowDelete.get.asInstanceOf[js.Any])
     if (initialPreviewThumbTags != null) __obj.updateDynamic("initialPreviewThumbTags")(initialPreviewThumbTags.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (layoutTemplates != null) __obj.updateDynamic("layoutTemplates")(layoutTemplates.asInstanceOf[js.Any])
     if (mainClass != null) __obj.updateDynamic("mainClass")(mainClass.asInstanceOf[js.Any])
-    if (maxFileCount != null) __obj.updateDynamic("maxFileCount")(maxFileCount.asInstanceOf[js.Any])
-    if (maxFileSize != null) __obj.updateDynamic("maxFileSize")(maxFileSize.asInstanceOf[js.Any])
-    if (maxImageHeight != null) __obj.updateDynamic("maxImageHeight")(maxImageHeight.asInstanceOf[js.Any])
-    if (maxImageWidth != null) __obj.updateDynamic("maxImageWidth")(maxImageWidth.asInstanceOf[js.Any])
-    if (minFileCount != null) __obj.updateDynamic("minFileCount")(minFileCount.asInstanceOf[js.Any])
-    if (minImageHeight != null) __obj.updateDynamic("minImageHeight")(minImageHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFileCount)) __obj.updateDynamic("maxFileCount")(maxFileCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFileSize)) __obj.updateDynamic("maxFileSize")(maxFileSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxImageHeight)) __obj.updateDynamic("maxImageHeight")(maxImageHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxImageWidth)) __obj.updateDynamic("maxImageWidth")(maxImageWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minFileCount)) __obj.updateDynamic("minFileCount")(minFileCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minImageHeight)) __obj.updateDynamic("minImageHeight")(minImageHeight.get.asInstanceOf[js.Any])
     if (msgCancelled != null) __obj.updateDynamic("msgCancelled")(msgCancelled.asInstanceOf[js.Any])
     if (msgErrorClass != null) __obj.updateDynamic("msgErrorClass")(msgErrorClass.asInstanceOf[js.Any])
     if (msgFileNotFound != null) __obj.updateDynamic("msgFileNotFound")(msgFileNotFound.asInstanceOf[js.Any])
@@ -916,7 +966,7 @@ object FileInputOptions {
     if (msgZoomModalHeading != null) __obj.updateDynamic("msgZoomModalHeading")(msgZoomModalHeading.asInstanceOf[js.Any])
     if (msgZoomTitle != null) __obj.updateDynamic("msgZoomTitle")(msgZoomTitle.asInstanceOf[js.Any])
     if (otherActionButtons != null) __obj.updateDynamic("otherActionButtons")(otherActionButtons.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwriteInitial)) __obj.updateDynamic("overwriteInitial")(overwriteInitial.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwriteInitial)) __obj.updateDynamic("overwriteInitial")(overwriteInitial.get.asInstanceOf[js.Any])
     if (previewClass != null) __obj.updateDynamic("previewClass")(previewClass.asInstanceOf[js.Any])
     if (previewFileExtSettings != null) __obj.updateDynamic("previewFileExtSettings")(previewFileExtSettings.asInstanceOf[js.Any])
     if (previewFileIcon != null) __obj.updateDynamic("previewFileIcon")(previewFileIcon.asInstanceOf[js.Any])
@@ -930,33 +980,35 @@ object FileInputOptions {
     if (progressCompleteClass != null) __obj.updateDynamic("progressCompleteClass")(progressCompleteClass.asInstanceOf[js.Any])
     if (progressErrorClass != null) __obj.updateDynamic("progressErrorClass")(progressErrorClass.asInstanceOf[js.Any])
     if (removeClass != null) __obj.updateDynamic("removeClass")(removeClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeFromPreviewOnError)) __obj.updateDynamic("removeFromPreviewOnError")(removeFromPreviewOnError.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeFromPreviewOnError)) __obj.updateDynamic("removeFromPreviewOnError")(removeFromPreviewOnError.get.asInstanceOf[js.Any])
     if (removeIcon != null) __obj.updateDynamic("removeIcon")(removeIcon.asInstanceOf[js.Any])
     if (removeLabel != null) __obj.updateDynamic("removeLabel")(removeLabel.asInstanceOf[js.Any])
     if (removeTitle != null) __obj.updateDynamic("removeTitle")(removeTitle.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
     if (resizeDefaultImageType != null) __obj.updateDynamic("resizeDefaultImageType")(resizeDefaultImageType.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizeImage)) __obj.updateDynamic("resizeImage")(resizeImage.asInstanceOf[js.Any])
-    if (resizeImageQuality != null) __obj.updateDynamic("resizeImageQuality")(resizeImageQuality.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizeImage)) __obj.updateDynamic("resizeImage")(resizeImage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizeImageQuality)) __obj.updateDynamic("resizeImageQuality")(resizeImageQuality.get.asInstanceOf[js.Any])
     if (resizePreference != null) __obj.updateDynamic("resizePreference")(resizePreference.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAjaxErrorDetails)) __obj.updateDynamic("showAjaxErrorDetails")(showAjaxErrorDetails.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCancel)) __obj.updateDynamic("showCancel")(showCancel.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCaption)) __obj.updateDynamic("showCaption")(showCaption.asInstanceOf[js.Any])
-    if (!js.isUndefined(showClose)) __obj.updateDynamic("showClose")(showClose.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPreview)) __obj.updateDynamic("showPreview")(showPreview.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRemove)) __obj.updateDynamic("showRemove")(showRemove.asInstanceOf[js.Any])
-    if (!js.isUndefined(showUpload)) __obj.updateDynamic("showUpload")(showUpload.asInstanceOf[js.Any])
-    if (!js.isUndefined(showUploadedThumbs)) __obj.updateDynamic("showUploadedThumbs")(showUploadedThumbs.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAjaxErrorDetails)) __obj.updateDynamic("showAjaxErrorDetails")(showAjaxErrorDetails.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCancel)) __obj.updateDynamic("showCancel")(showCancel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCaption)) __obj.updateDynamic("showCaption")(showCaption.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showClose)) __obj.updateDynamic("showClose")(showClose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPreview)) __obj.updateDynamic("showPreview")(showPreview.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRemove)) __obj.updateDynamic("showRemove")(showRemove.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showUpload)) __obj.updateDynamic("showUpload")(showUpload.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showUploadedThumbs)) __obj.updateDynamic("showUploadedThumbs")(showUploadedThumbs.get.asInstanceOf[js.Any])
     if (slugCallback != null) __obj.updateDynamic("slugCallback")(js.Any.fromFunction1(slugCallback))
     if (textEncoding != null) __obj.updateDynamic("textEncoding")(textEncoding.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(uploadAsync)) __obj.updateDynamic("uploadAsync")(uploadAsync.asInstanceOf[js.Any])
+    if (!js.isUndefined(uploadAsync)) __obj.updateDynamic("uploadAsync")(uploadAsync.get.asInstanceOf[js.Any])
     if (uploadClass != null) __obj.updateDynamic("uploadClass")(uploadClass.asInstanceOf[js.Any])
     if (uploadExtraData != null) __obj.updateDynamic("uploadExtraData")(uploadExtraData.asInstanceOf[js.Any])
     if (uploadIcon != null) __obj.updateDynamic("uploadIcon")(uploadIcon.asInstanceOf[js.Any])
     if (uploadLabel != null) __obj.updateDynamic("uploadLabel")(uploadLabel.asInstanceOf[js.Any])
     if (uploadTitle != null) __obj.updateDynamic("uploadTitle")(uploadTitle.asInstanceOf[js.Any])
     if (uploadUrl != null) __obj.updateDynamic("uploadUrl")(uploadUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateInitialCount)) __obj.updateDynamic("validateInitialCount")(validateInitialCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateInitialCount)) __obj.updateDynamic("validateInitialCount")(validateInitialCount.get.asInstanceOf[js.Any])
     if (zoomIndicator != null) __obj.updateDynamic("zoomIndicator")(zoomIndicator.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileInputOptions]
   }

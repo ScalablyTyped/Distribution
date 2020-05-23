@@ -1,19 +1,21 @@
 package typings.babylonjs.BABYLON
 
+import typings.std.Error
 import typings.std.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.ReadFileError")
-@js.native
-class ReadFileError protected () extends BaseError {
-  /**
-    * Creates a new ReadFileError
-    * @param message defines the message of the error
-    * @param file defines the optional file
-    */
-  def this(message: String, file: File) = this()
-  var file: File = js.native
+trait ReadFileError extends Error {
+  var file: File
+}
+
+object ReadFileError {
+  @scala.inline
+  def apply(file: File, message: String, name: String, stack: String = null): ReadFileError = {
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReadFileError]
+  }
 }
 

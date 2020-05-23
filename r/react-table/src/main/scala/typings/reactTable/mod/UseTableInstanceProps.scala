@@ -1,6 +1,6 @@
 package typings.reactTable.mod
 
-import typings.reactTable.PartialTableToggleHideAll
+import typings.reactTable.anon.PartialTableToggleHideAll
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`

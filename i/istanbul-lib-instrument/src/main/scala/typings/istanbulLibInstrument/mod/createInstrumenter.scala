@@ -1,6 +1,6 @@
 package typings.istanbulLibInstrument.mod
 
-import typings.istanbulLibInstrument.PartialInstrumenterOption
+import typings.istanbulLibInstrument.anon.PartialInstrumenterOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

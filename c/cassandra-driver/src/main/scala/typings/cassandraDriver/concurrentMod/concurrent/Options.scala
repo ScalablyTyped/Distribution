@@ -16,17 +16,17 @@ object Options {
   @scala.inline
   def apply(
     collectResults: js.UndefOr[Boolean] = js.undefined,
-    concurrencyLevel: Int | Double = null,
+    concurrencyLevel: js.UndefOr[Double] = js.undefined,
     executionProfile: String = null,
-    maxErrors: Int | Double = null,
+    maxErrors: js.UndefOr[Double] = js.undefined,
     raiseOnFirstError: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collectResults)) __obj.updateDynamic("collectResults")(collectResults.asInstanceOf[js.Any])
-    if (concurrencyLevel != null) __obj.updateDynamic("concurrencyLevel")(concurrencyLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(collectResults)) __obj.updateDynamic("collectResults")(collectResults.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(concurrencyLevel)) __obj.updateDynamic("concurrencyLevel")(concurrencyLevel.get.asInstanceOf[js.Any])
     if (executionProfile != null) __obj.updateDynamic("executionProfile")(executionProfile.asInstanceOf[js.Any])
-    if (maxErrors != null) __obj.updateDynamic("maxErrors")(maxErrors.asInstanceOf[js.Any])
-    if (!js.isUndefined(raiseOnFirstError)) __obj.updateDynamic("raiseOnFirstError")(raiseOnFirstError.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxErrors)) __obj.updateDynamic("maxErrors")(maxErrors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(raiseOnFirstError)) __obj.updateDynamic("raiseOnFirstError")(raiseOnFirstError.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

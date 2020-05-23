@@ -96,7 +96,7 @@ object distPullRequestMod extends js.Object {
     override var state: APPROVED | CHANGES_REQUESTED | COMMENTED | DISMISSED = js.native
   }
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.typedGithubApi.interfacesIssueMod.IssueComment because Already inherited
   - typings.typedGithubApi.interfacesPullRequestMod.ReviewComment because var conflicts: body, createdAt, createdBy, htmlUri, id, updatedAt. Inlined diffHunk, position */ @js.native
   class ReviewCommentClass protected () extends IssueCommentClass {

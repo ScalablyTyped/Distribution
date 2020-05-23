@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DAO.ComplexType")
 @js.native
-class ComplexType protected () extends js.Object {
+trait ComplexType extends js.Object {
   @JSName("DAO.ComplexType_typekey")
   var DAODotComplexType_typekey: ComplexType = js.native
   @JSName("Fields")

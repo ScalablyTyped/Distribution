@@ -21,10 +21,10 @@ object MembershipData {
     spaceId: String,
     updated: String,
     userId: String,
-    custom: js.Object = null
+    custom: js.UndefOr[Null | js.Object] = js.undefined
   ): MembershipData = {
     val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], eTag = eTag.asInstanceOf[js.Any], spaceId = spaceId.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
-    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (!js.isUndefined(custom)) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
     __obj.asInstanceOf[MembershipData]
   }
 }

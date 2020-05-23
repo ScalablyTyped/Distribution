@@ -17,13 +17,13 @@ object TreeListColumnResizeEvent {
     preventDefault: js.Function,
     sender: TreeList,
     column: js.Any = null,
-    newWidth: Int | Double = null,
-    oldWidth: Int | Double = null
+    newWidth: js.UndefOr[Double] = js.undefined,
+    oldWidth: js.UndefOr[Double] = js.undefined
   ): TreeListColumnResizeEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (newWidth != null) __obj.updateDynamic("newWidth")(newWidth.asInstanceOf[js.Any])
-    if (oldWidth != null) __obj.updateDynamic("oldWidth")(oldWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(newWidth)) __obj.updateDynamic("newWidth")(newWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(oldWidth)) __obj.updateDynamic("oldWidth")(oldWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListColumnResizeEvent]
   }
 }

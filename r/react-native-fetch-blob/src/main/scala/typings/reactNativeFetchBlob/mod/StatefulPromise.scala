@@ -1,6 +1,6 @@
 package typings.reactNativeFetchBlob.mod
 
-import typings.reactNativeFetchBlob.AnonCount
+import typings.reactNativeFetchBlob.anon.Count
 import typings.std.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +26,7 @@ trait StatefulPromise[T] extends Promise[T] {
   /**
     * Add an event listener with custom configuration
     */
-  def progress(config: AnonCount, callback: js.Function2[/* received */ Double, /* total */ Double, Unit]): StatefulPromise[FetchBlobResponse] = js.native
+  def progress(config: Count, callback: js.Function2[/* received */ Double, /* total */ Double, Unit]): StatefulPromise[FetchBlobResponse] = js.native
   /**
     * Add an event listener with custom configuration.
     */
@@ -34,6 +34,6 @@ trait StatefulPromise[T] extends Promise[T] {
   /**
     * Add an event listener with custom configuration
     */
-  def uploadProgress(config: AnonCount, callback: js.Function2[/* sent */ Double, /* total */ Double, Unit]): StatefulPromise[FetchBlobResponse] = js.native
+  def uploadProgress(config: Count, callback: js.Function2[/* sent */ Double, /* total */ Double, Unit]): StatefulPromise[FetchBlobResponse] = js.native
 }
 

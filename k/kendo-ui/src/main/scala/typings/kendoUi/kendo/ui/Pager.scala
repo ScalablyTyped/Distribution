@@ -2,16 +2,12 @@ package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.JQuery
 import typings.kendoUi.kendo.data.DataSource
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.Pager")
 @js.native
-class Pager protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: PagerOptions) = this()
+trait Pager extends Widget {
   var dataSource: DataSource = js.native
   @JSName("options")
   var options_Pager: PagerOptions = js.native
@@ -21,13 +17,5 @@ class Pager protected () extends Widget {
   def pageSize(): Double = js.native
   def refresh(): Unit = js.native
   def totalPages(): Double = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.Pager")
-@js.native
-object Pager extends js.Object {
-  var fn: Pager = js.native
-  def extend(proto: js.Object): Pager = js.native
 }
 

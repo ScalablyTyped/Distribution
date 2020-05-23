@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.NumberDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +13,7 @@ trait CSSStyleDeclaration
   var alignItems: java.lang.String = js.native
   var alignSelf: java.lang.String = js.native
   var alignmentBaseline: java.lang.String = js.native
+  var all: java.lang.String = js.native
   var animation: java.lang.String = js.native
   var animationDelay: java.lang.String = js.native
   var animationDirection: java.lang.String = js.native
@@ -114,14 +114,13 @@ trait CSSStyleDeclaration
   var content: java.lang.String = js.native
   var counterIncrement: java.lang.String = js.native
   var counterReset: java.lang.String = js.native
-  var cssFloat: java.lang.String | Null = js.native
+  var cssFloat: java.lang.String = js.native
   var cssText: java.lang.String = js.native
   var cursor: java.lang.String = js.native
   var direction: java.lang.String = js.native
   var display: java.lang.String = js.native
   var dominantBaseline: java.lang.String = js.native
   var emptyCells: java.lang.String = js.native
-  var enableBackground: java.lang.String | Null = js.native
   var fill: java.lang.String = js.native
   var fillOpacity: java.lang.String = js.native
   var fillRule: java.lang.String = js.native
@@ -153,7 +152,6 @@ trait CSSStyleDeclaration
   var fontVariantPosition: java.lang.String = js.native
   var fontWeight: java.lang.String = js.native
   var gap: java.lang.String = js.native
-  var glyphOrientationHorizontal: java.lang.String | Null = js.native
   var glyphOrientationVertical: java.lang.String = js.native
   var grid: java.lang.String = js.native
   var gridArea: java.lang.String = js.native
@@ -177,19 +175,12 @@ trait CSSStyleDeclaration
   var hyphens: java.lang.String = js.native
   var imageOrientation: java.lang.String = js.native
   var imageRendering: java.lang.String = js.native
-  var imeMode: java.lang.String | Null = js.native
   var inlineSize: java.lang.String = js.native
   @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[java.lang.String]] = js.native
   var justifyContent: java.lang.String = js.native
   var justifyItems: java.lang.String = js.native
   var justifySelf: java.lang.String = js.native
-  var kerning: java.lang.String | Null = js.native
-  var layoutGrid: java.lang.String | Null = js.native
-  var layoutGridChar: java.lang.String | Null = js.native
-  var layoutGridLine: java.lang.String | Null = js.native
-  var layoutGridMode: java.lang.String | Null = js.native
-  var layoutGridType: java.lang.String | Null = js.native
   var left: java.lang.String = js.native
   val length: Double = js.native
   var letterSpacing: java.lang.String = js.native
@@ -228,53 +219,6 @@ trait CSSStyleDeclaration
   var minHeight: java.lang.String = js.native
   var minInlineSize: java.lang.String = js.native
   var minWidth: java.lang.String = js.native
-  var msContentZoomChaining: java.lang.String | Null = js.native
-  var msContentZoomLimit: java.lang.String | Null = js.native
-  var msContentZoomLimitMax: js.Any = js.native
-  var msContentZoomLimitMin: js.Any = js.native
-  var msContentZoomSnap: java.lang.String | Null = js.native
-  var msContentZoomSnapPoints: java.lang.String | Null = js.native
-  var msContentZoomSnapType: java.lang.String | Null = js.native
-  var msContentZooming: java.lang.String | Null = js.native
-  var msFlowFrom: java.lang.String | Null = js.native
-  var msFlowInto: java.lang.String | Null = js.native
-  var msFontFeatureSettings: java.lang.String | Null = js.native
-  var msGridColumn: js.Any = js.native
-  var msGridColumnAlign: java.lang.String | Null = js.native
-  var msGridColumnSpan: js.Any = js.native
-  var msGridColumns: java.lang.String | Null = js.native
-  var msGridRow: js.Any = js.native
-  var msGridRowAlign: java.lang.String | Null = js.native
-  var msGridRowSpan: js.Any = js.native
-  var msGridRows: java.lang.String | Null = js.native
-  var msHighContrastAdjust: java.lang.String | Null = js.native
-  var msHyphenateLimitChars: java.lang.String | Null = js.native
-  var msHyphenateLimitLines: js.Any = js.native
-  var msHyphenateLimitZone: js.Any = js.native
-  var msHyphens: java.lang.String | Null = js.native
-  var msImeAlign: java.lang.String | Null = js.native
-  var msOverflowStyle: java.lang.String | Null = js.native
-  var msScrollChaining: java.lang.String | Null = js.native
-  var msScrollLimit: java.lang.String | Null = js.native
-  var msScrollLimitXMax: js.Any = js.native
-  var msScrollLimitXMin: js.Any = js.native
-  var msScrollLimitYMax: js.Any = js.native
-  var msScrollLimitYMin: js.Any = js.native
-  var msScrollRails: java.lang.String | Null = js.native
-  var msScrollSnapPointsX: java.lang.String | Null = js.native
-  var msScrollSnapPointsY: java.lang.String | Null = js.native
-  var msScrollSnapType: java.lang.String | Null = js.native
-  var msScrollSnapX: java.lang.String | Null = js.native
-  var msScrollSnapY: java.lang.String | Null = js.native
-  var msScrollTranslation: java.lang.String | Null = js.native
-  var msTextCombineHorizontal: java.lang.String | Null = js.native
-  var msTextSizeAdjust: js.Any = js.native
-  var msTouchAction: java.lang.String | Null = js.native
-  var msTouchSelect: java.lang.String | Null = js.native
-  var msUserSelect: java.lang.String | Null = js.native
-  var msWrapFlow: java.lang.String = js.native
-  var msWrapMargin: js.Any = js.native
-  var msWrapThrough: java.lang.String = js.native
   var objectFit: java.lang.String = js.native
   var objectPosition: java.lang.String = js.native
   var opacity: java.lang.String = js.native
@@ -303,14 +247,13 @@ trait CSSStyleDeclaration
   var pageBreakBefore: java.lang.String = js.native
   var pageBreakInside: java.lang.String = js.native
   var paintOrder: java.lang.String = js.native
-  val parentRule: CSSRule = js.native
-  var penAction: java.lang.String | Null = js.native
+  val parentRule: CSSRule | Null = js.native
   var perspective: java.lang.String = js.native
   var perspectiveOrigin: java.lang.String = js.native
   var placeContent: java.lang.String = js.native
   var placeItems: java.lang.String = js.native
   var placeSelf: java.lang.String = js.native
-  var pointerEvents: java.lang.String | Null = js.native
+  var pointerEvents: java.lang.String = js.native
   var position: java.lang.String = js.native
   var quotes: java.lang.String = js.native
   var resize: java.lang.String = js.native
@@ -318,7 +261,6 @@ trait CSSStyleDeclaration
   var rotate: java.lang.String = js.native
   var rowGap: java.lang.String = js.native
   var rubyAlign: java.lang.String = js.native
-  var rubyOverhang: java.lang.String | Null = js.native
   var rubyPosition: java.lang.String = js.native
   var scale: java.lang.String = js.native
   var scrollBehavior: java.lang.String = js.native
@@ -349,8 +291,6 @@ trait CSSStyleDeclaration
   var textEmphasisStyle: java.lang.String = js.native
   var textIndent: java.lang.String = js.native
   var textJustify: java.lang.String = js.native
-  var textKashida: java.lang.String | Null = js.native
-  var textKashidaSpace: java.lang.String | Null = js.native
   var textOrientation: java.lang.String = js.native
   var textOverflow: java.lang.String = js.native
   var textRendering: java.lang.String = js.native
@@ -411,7 +351,6 @@ trait CSSStyleDeclaration
   var webkitBorderBottomLeftRadius: java.lang.String = js.native
   /** @deprecated */
   var webkitBorderBottomRightRadius: java.lang.String = js.native
-  var webkitBorderImage: java.lang.String | Null = js.native
   /** @deprecated */
   var webkitBorderRadius: java.lang.String = js.native
   /** @deprecated */
@@ -420,7 +359,6 @@ trait CSSStyleDeclaration
   var webkitBorderTopRightRadius: java.lang.String = js.native
   /** @deprecated */
   var webkitBoxAlign: java.lang.String = js.native
-  var webkitBoxDirection: java.lang.String | Null = js.native
   /** @deprecated */
   var webkitBoxFlex: java.lang.String = js.native
   /** @deprecated */
@@ -433,18 +371,6 @@ trait CSSStyleDeclaration
   var webkitBoxShadow: java.lang.String = js.native
   /** @deprecated */
   var webkitBoxSizing: java.lang.String = js.native
-  var webkitColumnBreakAfter: java.lang.String | Null = js.native
-  var webkitColumnBreakBefore: java.lang.String | Null = js.native
-  var webkitColumnBreakInside: java.lang.String | Null = js.native
-  var webkitColumnCount: js.Any = js.native
-  var webkitColumnGap: js.Any = js.native
-  var webkitColumnRule: java.lang.String | Null = js.native
-  var webkitColumnRuleColor: js.Any = js.native
-  var webkitColumnRuleStyle: java.lang.String | Null = js.native
-  var webkitColumnRuleWidth: js.Any = js.native
-  var webkitColumnSpan: java.lang.String | Null = js.native
-  var webkitColumnWidth: js.Any = js.native
-  var webkitColumns: java.lang.String | Null = js.native
   /** @deprecated */
   var webkitFilter: java.lang.String = js.native
   /** @deprecated */
@@ -498,7 +424,7 @@ trait CSSStyleDeclaration
   var webkitPerspective: java.lang.String = js.native
   /** @deprecated */
   var webkitPerspectiveOrigin: java.lang.String = js.native
-  var webkitTapHighlightColor: java.lang.String | Null = js.native
+  var webkitTapHighlightColor: java.lang.String = js.native
   /** @deprecated */
   var webkitTextFillColor: java.lang.String = js.native
   /** @deprecated */
@@ -525,9 +451,8 @@ trait CSSStyleDeclaration
   var webkitTransitionProperty: java.lang.String = js.native
   /** @deprecated */
   var webkitTransitionTimingFunction: java.lang.String = js.native
-  var webkitUserModify: java.lang.String | Null = js.native
-  var webkitUserSelect: java.lang.String | Null = js.native
-  var webkitWritingMode: java.lang.String | Null = js.native
+  /** @deprecated */
+  var webkitUserSelect: java.lang.String = js.native
   var whiteSpace: java.lang.String = js.native
   var widows: java.lang.String = js.native
   var width: java.lang.String = js.native
@@ -537,18 +462,15 @@ trait CSSStyleDeclaration
   var wordWrap: java.lang.String = js.native
   var writingMode: java.lang.String = js.native
   var zIndex: java.lang.String = js.native
-  var zoom: java.lang.String | Null = js.native
-  def getPropertyPriority(propertyName: java.lang.String): java.lang.String = js.native
-  def getPropertyValue(propertyName: java.lang.String): java.lang.String = js.native
+  /** @deprecated */
+  var zoom: java.lang.String = js.native
+  def getPropertyPriority(property: java.lang.String): java.lang.String = js.native
+  def getPropertyValue(property: java.lang.String): java.lang.String = js.native
   def item(index: Double): java.lang.String = js.native
-  def removeProperty(propertyName: java.lang.String): java.lang.String = js.native
-  def setProperty(propertyName: java.lang.String): Unit = js.native
-  def setProperty(propertyName: java.lang.String, value: java.lang.String): Unit = js.native
-  def setProperty(propertyName: java.lang.String, value: java.lang.String, priority: java.lang.String): Unit = js.native
-  def setProperty(propertyName: java.lang.String, value: Null, priority: java.lang.String): Unit = js.native
+  def removeProperty(property: java.lang.String): java.lang.String = js.native
+  def setProperty(property: java.lang.String): Unit = js.native
+  def setProperty(property: java.lang.String, value: java.lang.String): Unit = js.native
+  def setProperty(property: java.lang.String, value: java.lang.String, priority: java.lang.String): Unit = js.native
+  def setProperty(property: java.lang.String, value: Null, priority: java.lang.String): Unit = js.native
 }
-
-@JSGlobal("CSSStyleDeclaration")
-@js.native
-object CSSStyleDeclaration extends Instantiable0[CSSStyleDeclaration]
 

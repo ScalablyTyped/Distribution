@@ -1,7 +1,5 @@
 package typings.awsSdkRegionProvider
 
-import typings.awsSdkRegionProvider.awsSdkRegionProviderStrings.AWS_PROFILE
-import typings.awsSdkRegionProvider.awsSdkRegionProviderStrings.AWS_REGION
 import typings.awsSdkRegionProvider.defaultProviderMod.RegionProviderConfiguration
 import typings.awsSdkRegionProvider.fromEnvMod.EnvConfiguration
 import typings.awsSdkRegionProvider.fromSharedConfigFilesMod.SharedConfigInit
@@ -13,8 +11,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@aws-sdk/region-provider", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  val ENV_PROFILE: AWS_PROFILE = js.native
-  val ENV_REGION: AWS_REGION = js.native
+  val ENV_PROFILE: /* "AWS_PROFILE" */ String = js.native
+  val ENV_REGION: /* "AWS_REGION" */ String = js.native
   def defaultProvider(): Provider[String] = js.native
   def defaultProvider(configuration: RegionProviderConfiguration): Provider[String] = js.native
   def fromEnv(): Provider[String] = js.native

@@ -38,12 +38,12 @@ object Options {
   def apply(
     fallbackUrls: js.Array[String] = null,
     onlyHttps: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (fallbackUrls != null) __obj.updateDynamic("fallbackUrls")(fallbackUrls.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyHttps)) __obj.updateDynamic("onlyHttps")(onlyHttps.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyHttps)) __obj.updateDynamic("onlyHttps")(onlyHttps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -1,8 +1,8 @@
 package typings.oracleOraclejet.ojchartMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.Anon0
-import typings.oracleOraclejet.AnonLabelAndValue
+import typings.oracleOraclejet.anon.LabelAndValue
+import typings.oracleOraclejet.anon.`0`
 import typings.oracleOraclejet.ojchartMod.ojSparkChart.ReferenceObject
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.oracleOraclejetStrings.area
@@ -66,9 +66,9 @@ trait ojSparkChartSettablePropertiesLenient[K, D]
   var referenceObjects: js.UndefOr[js.Array[ReferenceObject]] = js.undefined
   var svgClassName: js.UndefOr[String] = js.undefined
   var svgStyle: js.UndefOr[js.Object] = js.undefined
-  var tooltip: js.UndefOr[Anon0] = js.undefined
+  var tooltip: js.UndefOr[`0`] = js.undefined
   var trackResize: js.UndefOr[on | off] = js.undefined
-  var translations: js.UndefOr[AnonLabelAndValue] = js.undefined
+  var translations: js.UndefOr[LabelAndValue] = js.undefined
   var `type`: js.UndefOr[area | lineWithArea | bar | line] = js.undefined
   var visualEffects: js.UndefOr[none | auto] = js.undefined
 }
@@ -76,15 +76,15 @@ trait ojSparkChartSettablePropertiesLenient[K, D]
 object ojSparkChartSettablePropertiesLenient {
   @scala.inline
   def apply[K, D](
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    animationDuration: Int | Double = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    animationDuration: js.UndefOr[Double] = js.undefined,
     animationOnDataChange: auto | none = null,
     animationOnDisplay: auto | none = null,
     areaColor: String = null,
     areaSvgClassName: String = null,
     areaSvgStyle: js.Object = null,
     as: String = null,
-    barGapRatio: Int | Double = null,
+    barGapRatio: js.UndefOr[Double] = js.undefined,
     baselineScaling: zero | min = null,
     color: String = null,
     data: DataProvider[K, D] = null,
@@ -93,29 +93,29 @@ object ojSparkChartSettablePropertiesLenient {
     lastColor: String = null,
     lineStyle: dotted | dashed | solid = null,
     lineType: curved | stepped | centeredStepped | segmented | centeredSegmented | none | straight = null,
-    lineWidth: Int | Double = null,
+    lineWidth: js.UndefOr[Double] = js.undefined,
     lowColor: String = null,
     markerShape: auto | circle | diamond | human | plus | square | star | triangleDown | triangleUp | String = null,
-    markerSize: Int | Double = null,
+    markerSize: js.UndefOr[Double] = js.undefined,
     referenceObjects: js.Array[ReferenceObject] = null,
     svgClassName: String = null,
     svgStyle: js.Object = null,
-    tooltip: Anon0 = null,
+    tooltip: `0` = null,
     trackResize: on | off = null,
-    translations: AnonLabelAndValue = null,
+    translations: LabelAndValue = null,
     `type`: area | lineWithArea | bar | line = null,
     visualEffects: none | auto = null
   ): ojSparkChartSettablePropertiesLenient[K, D] = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
     if (animationOnDataChange != null) __obj.updateDynamic("animationOnDataChange")(animationOnDataChange.asInstanceOf[js.Any])
     if (animationOnDisplay != null) __obj.updateDynamic("animationOnDisplay")(animationOnDisplay.asInstanceOf[js.Any])
     if (areaColor != null) __obj.updateDynamic("areaColor")(areaColor.asInstanceOf[js.Any])
     if (areaSvgClassName != null) __obj.updateDynamic("areaSvgClassName")(areaSvgClassName.asInstanceOf[js.Any])
     if (areaSvgStyle != null) __obj.updateDynamic("areaSvgStyle")(areaSvgStyle.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (barGapRatio != null) __obj.updateDynamic("barGapRatio")(barGapRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(barGapRatio)) __obj.updateDynamic("barGapRatio")(barGapRatio.get.asInstanceOf[js.Any])
     if (baselineScaling != null) __obj.updateDynamic("baselineScaling")(baselineScaling.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
@@ -124,10 +124,10 @@ object ojSparkChartSettablePropertiesLenient {
     if (lastColor != null) __obj.updateDynamic("lastColor")(lastColor.asInstanceOf[js.Any])
     if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
     if (lineType != null) __obj.updateDynamic("lineType")(lineType.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
     if (lowColor != null) __obj.updateDynamic("lowColor")(lowColor.asInstanceOf[js.Any])
     if (markerShape != null) __obj.updateDynamic("markerShape")(markerShape.asInstanceOf[js.Any])
-    if (markerSize != null) __obj.updateDynamic("markerSize")(markerSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerSize)) __obj.updateDynamic("markerSize")(markerSize.get.asInstanceOf[js.Any])
     if (referenceObjects != null) __obj.updateDynamic("referenceObjects")(referenceObjects.asInstanceOf[js.Any])
     if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName.asInstanceOf[js.Any])
     if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])

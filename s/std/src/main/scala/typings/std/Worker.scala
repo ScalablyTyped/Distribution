@@ -1,8 +1,7 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import typings.std.stdStrings.message
+import typings.std.stdStrings.messageerror
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +12,7 @@ trait Worker
   extends EventTarget
      with AbstractWorker {
   var onmessage: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]) | Null = js.native
+  var onmessageerror: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]) | Null = js.native
   /**
     * Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.
     * 
@@ -50,8 +50,25 @@ trait Worker
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
     options: AddEventListenerOptions
   ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_messageerror(`type`: messageerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_messageerror(
+    `type`: messageerror,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_messageerror(
+    `type`: messageerror,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
   def postMessage(message: js.Any): Unit = js.native
   def postMessage(message: js.Any, options: PostMessageOptions): Unit = js.native
+  /**
+    * Clones message and transmits it to worker's global environment. transfer can be passed as a list of objects that are to be transferred rather than cloned.
+    */
   def postMessage(message: js.Any, transfer: js.Array[Transferable]): Unit = js.native
   /**
     * Removes the event listener in target's event listener list with the same type, callback, and options.
@@ -80,16 +97,23 @@ trait Worker
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
     options: EventListenerOptions
   ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_messageerror(`type`: messageerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_messageerror(
+    `type`: messageerror,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_messageerror(
+    `type`: messageerror,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
+    options: EventListenerOptions
+  ): Unit = js.native
+  /**
+    * Aborts worker's associated global environment.
+    */
   def terminate(): Unit = js.native
 }
-
-@JSGlobal("Worker")
-@js.native
-object Worker
-  extends Instantiable1[(/* stringUrl */ java.lang.String) | (/* stringUrl */ URL), Worker]
-     with Instantiable2[
-      (/* stringUrl */ java.lang.String) | (/* stringUrl */ URL), 
-      /* options */ WorkerOptions, 
-      Worker
-    ]
 

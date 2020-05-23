@@ -154,10 +154,10 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(alignDelimiters)) __obj.updateDynamic("alignDelimiters")(alignDelimiters.asInstanceOf[js.Any])
-    if (!js.isUndefined(delimiterEnd)) __obj.updateDynamic("delimiterEnd")(delimiterEnd.asInstanceOf[js.Any])
-    if (!js.isUndefined(delimiterStart)) __obj.updateDynamic("delimiterStart")(delimiterStart.asInstanceOf[js.Any])
-    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(alignDelimiters)) __obj.updateDynamic("alignDelimiters")(alignDelimiters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delimiterEnd)) __obj.updateDynamic("delimiterEnd")(delimiterEnd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delimiterStart)) __obj.updateDynamic("delimiterStart")(delimiterStart.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
     if (stringLength != null) __obj.updateDynamic("stringLength")(js.Any.fromFunction1(stringLength))
     __obj.asInstanceOf[Options]
   }

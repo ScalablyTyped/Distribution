@@ -1,7 +1,7 @@
 package typings.reactDragtastic.mod
 
 import typings.react.mod.ReactNode
-import typings.reactDragtastic.StateisOverAcceptedboolea
+import typings.reactDragtastic.anon.StateisOverAcceptedboolea
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +28,13 @@ object DragComponentProps {
     alwaysRender: js.UndefOr[Boolean] = js.undefined,
     `for`: Id = null,
     onDrag: () => Unit = null,
-    subscribeTo: js.Array[String] = null
+    subscribeTo: js.UndefOr[Null | js.Array[String]] = js.undefined
   ): DragComponentProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-    if (!js.isUndefined(alwaysRender)) __obj.updateDynamic("alwaysRender")(alwaysRender.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysRender)) __obj.updateDynamic("alwaysRender")(alwaysRender.get.asInstanceOf[js.Any])
     if (`for` != null) __obj.updateDynamic("for")(`for`.asInstanceOf[js.Any])
     if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction0(onDrag))
-    if (subscribeTo != null) __obj.updateDynamic("subscribeTo")(subscribeTo.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscribeTo)) __obj.updateDynamic("subscribeTo")(subscribeTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragComponentProps]
   }
 }

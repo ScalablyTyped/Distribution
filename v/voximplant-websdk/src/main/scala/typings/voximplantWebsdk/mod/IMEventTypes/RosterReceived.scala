@@ -7,16 +7,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		*	Event dispatched when roster data received
-		*/
+  *    Event dispatched when roster data received
+  */
 trait RosterReceived extends VoxImplantIMEvent {
   /**
-  			*	User id
-  			*/
+    *    User id
+    */
   var id: String
   /**
-  			*	Array contains VoxImplant.RosterItem elements
-  			*/
+    *    Array contains VoxImplant.RosterItem elements
+    */
   var roster: js.Array[RosterItem]
 }
 

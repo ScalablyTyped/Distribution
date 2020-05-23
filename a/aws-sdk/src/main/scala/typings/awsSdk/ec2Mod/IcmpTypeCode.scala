@@ -18,10 +18,10 @@ trait IcmpTypeCode extends js.Object {
 
 object IcmpTypeCode {
   @scala.inline
-  def apply(Code: Int | scala.Double = null, Type: Int | scala.Double = null): IcmpTypeCode = {
+  def apply(Code: js.UndefOr[Integer] = js.undefined, Type: js.UndefOr[Integer] = js.undefined): IcmpTypeCode = {
     val __obj = js.Dynamic.literal()
-    if (Code != null) __obj.updateDynamic("Code")(Code.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
+    if (!js.isUndefined(Code)) __obj.updateDynamic("Code")(Code.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Type)) __obj.updateDynamic("Type")(Type.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IcmpTypeCode]
   }
 }

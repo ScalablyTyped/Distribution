@@ -2,8 +2,8 @@ package typings.wordpressShortcode.mod
 
 import typings.std.RegExp
 import typings.std.RegExpMatchArray
-import typings.wordpressShortcode.AnonCall
-import typings.wordpressShortcode.PartialShortcodeOptions
+import typings.wordpressShortcode.anon.Call
+import typings.wordpressShortcode.anon.PartialShortcodeOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ class default () extends shortcode {
 @js.native
 object default extends js.Object {
   @JSName("attrs")
-  var attrs_Original: AnonCall = js.native
+  var attrs_Original: Call = js.native
   @JSName("fromMatch")
   var fromMatch_Original: js.Function1[/* match */ RegExpMatchArray, Shortcode_] = js.native
   @JSName("next")

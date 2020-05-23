@@ -3,7 +3,6 @@ package typings.tensorflowTfjsCore
 import typings.std.RegExp
 import typings.std.RequestInit
 import typings.tensorflowTfjsCore.routerRegistryMod.IORouter
-import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.POST
 import typings.tensorflowTfjsCore.typesMod.IOHandler
 import typings.tensorflowTfjsCore.typesMod.LoadOptions
 import typings.tensorflowTfjsCore.typesMod.ModelArtifacts
@@ -19,7 +18,7 @@ object httpMod extends js.Object {
   class HTTPRequest protected () extends IOHandler {
     def this(path: String) = this()
     def this(path: String, loadOptions: LoadOptions) = this()
-    val DEFAULT_METHOD: POST = js.native
+    val DEFAULT_METHOD: /* "POST" */ String = js.native
     val fetch: js.Any = js.native
     var loadWeights: js.Any = js.native
     val onProgress: js.Any = js.native

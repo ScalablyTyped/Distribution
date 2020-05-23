@@ -35,7 +35,7 @@ trait RecoveryPointByResource extends js.Object {
 object RecoveryPointByResource {
   @scala.inline
   def apply(
-    BackupSizeBytes: Int | Double = null,
+    BackupSizeBytes: js.UndefOr[Long_] = js.undefined,
     BackupVaultName: BackupVaultName = null,
     CreationDate: timestamp = null,
     EncryptionKeyArn: ARN = null,
@@ -43,7 +43,7 @@ object RecoveryPointByResource {
     Status: RecoveryPointStatus = null
   ): RecoveryPointByResource = {
     val __obj = js.Dynamic.literal()
-    if (BackupSizeBytes != null) __obj.updateDynamic("BackupSizeBytes")(BackupSizeBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(BackupSizeBytes)) __obj.updateDynamic("BackupSizeBytes")(BackupSizeBytes.get.asInstanceOf[js.Any])
     if (BackupVaultName != null) __obj.updateDynamic("BackupVaultName")(BackupVaultName.asInstanceOf[js.Any])
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
     if (EncryptionKeyArn != null) __obj.updateDynamic("EncryptionKeyArn")(EncryptionKeyArn.asInstanceOf[js.Any])

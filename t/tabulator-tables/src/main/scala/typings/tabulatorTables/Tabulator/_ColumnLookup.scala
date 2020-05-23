@@ -1,6 +1,7 @@
 package typings.tabulatorTables.Tabulator
 
 import typings.std.HTMLElement
+import typings.std.UIEvent
 import typings.tabulatorTables.tabulatorTablesBooleans.`false`
 import typings.tabulatorTables.tabulatorTablesStrings.alphanum
 import typings.tabulatorTables.tabulatorTablesStrings.array
@@ -67,23 +68,23 @@ object _ColumnLookup {
     bottomCalcFormatter: Formatter = null,
     bottomCalcFormatterParams: FormatterParams = null,
     bottomCalcParams: (/* values */ js.Any, /* data */ js.Any) => js.Any = null,
-    cellClick: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
-    cellContext: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
-    cellDblClick: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
-    cellDblTap: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
+    cellClick: (/* e */ UIEvent, /* cell */ CellComponent) => Unit = null,
+    cellContext: (/* e */ UIEvent, /* cell */ CellComponent) => Unit = null,
+    cellDblClick: (/* e */ UIEvent, /* cell */ CellComponent) => Unit = null,
+    cellDblTap: (/* e */ UIEvent, /* cell */ CellComponent) => Unit = null,
     cellEditCancelled: /* cell */ CellComponent => Unit = null,
     cellEdited: /* cell */ CellComponent => Unit = null,
     cellEditing: /* cell */ CellComponent => Unit = null,
-    cellMouseEnter: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
-    cellMouseLeave: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
-    cellMouseMove: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
-    cellMouseOut: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
-    cellMouseOver: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
-    cellTap: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
-    cellTapHold: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
+    cellMouseEnter: (/* e */ UIEvent, /* cell */ CellComponent) => Unit = null,
+    cellMouseLeave: (/* e */ UIEvent, /* cell */ CellComponent) => Unit = null,
+    cellMouseMove: (/* e */ UIEvent, /* cell */ CellComponent) => Unit = null,
+    cellMouseOut: (/* e */ UIEvent, /* cell */ CellComponent) => Unit = null,
+    cellMouseOver: (/* e */ UIEvent, /* cell */ CellComponent) => Unit = null,
+    cellTap: (/* e */ UIEvent, /* cell */ CellComponent) => Unit = null,
+    cellTapHold: (/* e */ UIEvent, /* cell */ CellComponent) => Unit = null,
     clipboard: js.UndefOr[Boolean] = js.undefined,
     columns: js.Array[typings.tabulatorTables.Tabulator.ColumnDefinition] = null,
-    contextMenu: js.Array[MenuObject | MenuSeparator] = null,
+    contextMenu: js.Array[MenuObject[CellComponent] | MenuSeparator] = null,
     cssClass: String = null,
     download: js.UndefOr[Boolean] = js.undefined,
     downloadTitle: String = null,
@@ -101,11 +102,11 @@ object _ColumnLookup {
     formatterPrint: Formatter | `false` = null,
     formatterPrintParams: FormatterParams = null,
     frozen: js.UndefOr[Boolean] = js.undefined,
-    headerClick: (/* e */ js.Any, /* column */ ColumnComponent) => Unit = null,
-    headerContext: (/* e */ js.Any, /* column */ ColumnComponent) => Unit = null,
-    headerContextMenu: js.Array[MenuObject | MenuSeparator] = null,
-    headerDblClick: (/* e */ js.Any, /* column */ ColumnComponent) => Unit = null,
-    headerDblTap: (/* e */ js.Any, /* column */ ColumnComponent) => Unit = null,
+    headerClick: (/* e */ UIEvent, /* column */ ColumnComponent) => Unit = null,
+    headerContext: (/* e */ UIEvent, /* column */ ColumnComponent) => Unit = null,
+    headerContextMenu: js.Array[MenuObject[ColumnComponent] | MenuSeparator] = null,
+    headerDblClick: (/* e */ UIEvent, /* column */ ColumnComponent) => Unit = null,
+    headerDblTap: (/* e */ UIEvent, /* column */ ColumnComponent) => Unit = null,
     headerFilter: Editor = null,
     headerFilterEmptyCheck: /* value */ js.Any => Boolean = null,
     headerFilterFunc: FilterType | (js.Function4[
@@ -119,18 +120,18 @@ object _ColumnLookup {
     headerFilterLiveFilter: js.UndefOr[Boolean] = js.undefined,
     headerFilterParams: EditorParams = null,
     headerFilterPlaceholder: String = null,
-    headerMenu: js.Array[MenuObject | MenuSeparator] = null,
+    headerMenu: js.Array[MenuObject[ColumnComponent] | MenuSeparator] = null,
     headerSort: js.UndefOr[Boolean] = js.undefined,
     headerSortStartingDir: SortDirection = null,
     headerSortTristate: js.UndefOr[Boolean] = js.undefined,
-    headerTap: (/* e */ js.Any, /* column */ ColumnComponent) => Unit = null,
-    headerTapHold: (/* e */ js.Any, /* column */ ColumnComponent) => Unit = null,
+    headerTap: (/* e */ UIEvent, /* column */ ColumnComponent) => Unit = null,
+    headerTapHold: (/* e */ UIEvent, /* column */ ColumnComponent) => Unit = null,
     headerTooltip: Boolean | String | (js.Function1[/* column */ ColumnComponent, String]) = null,
     headerVertical: Boolean | flip = null,
     hideInHtml: js.UndefOr[Boolean] = js.undefined,
     hozAlign: ColumnDefinitionAlign = null,
     htmlOutput: js.UndefOr[Boolean] = js.undefined,
-    minWidth: Int | Double = null,
+    minWidth: js.UndefOr[Double] = js.undefined,
     mutator: (/* value */ js.Any, /* data */ js.Any, /* type */ data | edit, /* mutatorParams */ js.Any, /* cell */ js.UndefOr[CellComponent]) => js.Any = null,
     mutatorClipboard: (/* value */ js.Any, /* data */ js.Any, /* type */ data | edit, /* mutatorParams */ js.Any, /* cell */ js.UndefOr[CellComponent]) => js.Any = null,
     mutatorClipboardParams: CustomMutatorParams = null,
@@ -140,7 +141,7 @@ object _ColumnLookup {
     mutatorEditParams: CustomMutatorParams = null,
     mutatorParams: CustomMutatorParams = null,
     resizable: js.UndefOr[Boolean] = js.undefined,
-    responsive: Int | Double = null,
+    responsive: js.UndefOr[Double] = js.undefined,
     rowHandle: js.UndefOr[Boolean] = js.undefined,
     sorter: string | number | alphanum | boolean | exists | date | time | datetime | array | (js.Function7[
       /* a */ js.Any, 
@@ -165,8 +166,8 @@ object _ColumnLookup {
     vertAlign: VerticalAlign = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     width: Double | String = null,
-    widthGrow: Int | Double = null,
-    widthShrink: Int | Double = null
+    widthGrow: js.UndefOr[Double] = js.undefined,
+    widthShrink: js.UndefOr[Double] = js.undefined
   ): _ColumnLookup = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     if (accessor != null) __obj.updateDynamic("accessor")(js.Any.fromFunction5(accessor))
@@ -197,14 +198,14 @@ object _ColumnLookup {
     if (cellMouseOver != null) __obj.updateDynamic("cellMouseOver")(js.Any.fromFunction2(cellMouseOver))
     if (cellTap != null) __obj.updateDynamic("cellTap")(js.Any.fromFunction2(cellTap))
     if (cellTapHold != null) __obj.updateDynamic("cellTapHold")(js.Any.fromFunction2(cellTapHold))
-    if (!js.isUndefined(clipboard)) __obj.updateDynamic("clipboard")(clipboard.asInstanceOf[js.Any])
+    if (!js.isUndefined(clipboard)) __obj.updateDynamic("clipboard")(clipboard.get.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(download)) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
+    if (!js.isUndefined(download)) __obj.updateDynamic("download")(download.get.asInstanceOf[js.Any])
     if (downloadTitle != null) __obj.updateDynamic("downloadTitle")(downloadTitle.asInstanceOf[js.Any])
     if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    if (!js.isUndefined(editableTitle)) __obj.updateDynamic("editableTitle")(editableTitle.asInstanceOf[js.Any])
+    if (!js.isUndefined(editableTitle)) __obj.updateDynamic("editableTitle")(editableTitle.get.asInstanceOf[js.Any])
     if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
     if (editorParams != null) __obj.updateDynamic("editorParams")(editorParams.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
@@ -216,7 +217,7 @@ object _ColumnLookup {
     if (formatterParams != null) __obj.updateDynamic("formatterParams")(formatterParams.asInstanceOf[js.Any])
     if (formatterPrint != null) __obj.updateDynamic("formatterPrint")(formatterPrint.asInstanceOf[js.Any])
     if (formatterPrintParams != null) __obj.updateDynamic("formatterPrintParams")(formatterPrintParams.asInstanceOf[js.Any])
-    if (!js.isUndefined(frozen)) __obj.updateDynamic("frozen")(frozen.asInstanceOf[js.Any])
+    if (!js.isUndefined(frozen)) __obj.updateDynamic("frozen")(frozen.get.asInstanceOf[js.Any])
     if (headerClick != null) __obj.updateDynamic("headerClick")(js.Any.fromFunction2(headerClick))
     if (headerContext != null) __obj.updateDynamic("headerContext")(js.Any.fromFunction2(headerContext))
     if (headerContextMenu != null) __obj.updateDynamic("headerContextMenu")(headerContextMenu.asInstanceOf[js.Any])
@@ -226,21 +227,21 @@ object _ColumnLookup {
     if (headerFilterEmptyCheck != null) __obj.updateDynamic("headerFilterEmptyCheck")(js.Any.fromFunction1(headerFilterEmptyCheck))
     if (headerFilterFunc != null) __obj.updateDynamic("headerFilterFunc")(headerFilterFunc.asInstanceOf[js.Any])
     if (headerFilterFuncParams != null) __obj.updateDynamic("headerFilterFuncParams")(headerFilterFuncParams.asInstanceOf[js.Any])
-    if (!js.isUndefined(headerFilterLiveFilter)) __obj.updateDynamic("headerFilterLiveFilter")(headerFilterLiveFilter.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerFilterLiveFilter)) __obj.updateDynamic("headerFilterLiveFilter")(headerFilterLiveFilter.get.asInstanceOf[js.Any])
     if (headerFilterParams != null) __obj.updateDynamic("headerFilterParams")(headerFilterParams.asInstanceOf[js.Any])
     if (headerFilterPlaceholder != null) __obj.updateDynamic("headerFilterPlaceholder")(headerFilterPlaceholder.asInstanceOf[js.Any])
     if (headerMenu != null) __obj.updateDynamic("headerMenu")(headerMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(headerSort)) __obj.updateDynamic("headerSort")(headerSort.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerSort)) __obj.updateDynamic("headerSort")(headerSort.get.asInstanceOf[js.Any])
     if (headerSortStartingDir != null) __obj.updateDynamic("headerSortStartingDir")(headerSortStartingDir.asInstanceOf[js.Any])
-    if (!js.isUndefined(headerSortTristate)) __obj.updateDynamic("headerSortTristate")(headerSortTristate.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerSortTristate)) __obj.updateDynamic("headerSortTristate")(headerSortTristate.get.asInstanceOf[js.Any])
     if (headerTap != null) __obj.updateDynamic("headerTap")(js.Any.fromFunction2(headerTap))
     if (headerTapHold != null) __obj.updateDynamic("headerTapHold")(js.Any.fromFunction2(headerTapHold))
     if (headerTooltip != null) __obj.updateDynamic("headerTooltip")(headerTooltip.asInstanceOf[js.Any])
     if (headerVertical != null) __obj.updateDynamic("headerVertical")(headerVertical.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideInHtml)) __obj.updateDynamic("hideInHtml")(hideInHtml.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideInHtml)) __obj.updateDynamic("hideInHtml")(hideInHtml.get.asInstanceOf[js.Any])
     if (hozAlign != null) __obj.updateDynamic("hozAlign")(hozAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(htmlOutput)) __obj.updateDynamic("htmlOutput")(htmlOutput.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(htmlOutput)) __obj.updateDynamic("htmlOutput")(htmlOutput.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
     if (mutator != null) __obj.updateDynamic("mutator")(js.Any.fromFunction5(mutator))
     if (mutatorClipboard != null) __obj.updateDynamic("mutatorClipboard")(js.Any.fromFunction5(mutatorClipboard))
     if (mutatorClipboardParams != null) __obj.updateDynamic("mutatorClipboardParams")(mutatorClipboardParams.asInstanceOf[js.Any])
@@ -249,9 +250,9 @@ object _ColumnLookup {
     if (mutatorEdit != null) __obj.updateDynamic("mutatorEdit")(js.Any.fromFunction5(mutatorEdit))
     if (mutatorEditParams != null) __obj.updateDynamic("mutatorEditParams")(mutatorEditParams.asInstanceOf[js.Any])
     if (mutatorParams != null) __obj.updateDynamic("mutatorParams")(mutatorParams.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
-    if (responsive != null) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowHandle)) __obj.updateDynamic("rowHandle")(rowHandle.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowHandle)) __obj.updateDynamic("rowHandle")(rowHandle.get.asInstanceOf[js.Any])
     if (sorter != null) __obj.updateDynamic("sorter")(sorter.asInstanceOf[js.Any])
     if (sorterParams != null) __obj.updateDynamic("sorterParams")(sorterParams.asInstanceOf[js.Any])
     if (titleFormatter != null) __obj.updateDynamic("titleFormatter")(titleFormatter.asInstanceOf[js.Any])
@@ -262,12 +263,12 @@ object _ColumnLookup {
     if (topCalcFormatterParams != null) __obj.updateDynamic("topCalcFormatterParams")(topCalcFormatterParams.asInstanceOf[js.Any])
     if (topCalcParams != null) __obj.updateDynamic("topCalcParams")(js.Any.fromFunction2(topCalcParams))
     if (validator != null) __obj.updateDynamic("validator")(validator.asInstanceOf[js.Any])
-    if (!js.isUndefined(variableHeight)) __obj.updateDynamic("variableHeight")(variableHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(variableHeight)) __obj.updateDynamic("variableHeight")(variableHeight.get.asInstanceOf[js.Any])
     if (vertAlign != null) __obj.updateDynamic("vertAlign")(vertAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (widthGrow != null) __obj.updateDynamic("widthGrow")(widthGrow.asInstanceOf[js.Any])
-    if (widthShrink != null) __obj.updateDynamic("widthShrink")(widthShrink.asInstanceOf[js.Any])
+    if (!js.isUndefined(widthGrow)) __obj.updateDynamic("widthGrow")(widthGrow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(widthShrink)) __obj.updateDynamic("widthShrink")(widthShrink.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ColumnLookup]
   }
 }

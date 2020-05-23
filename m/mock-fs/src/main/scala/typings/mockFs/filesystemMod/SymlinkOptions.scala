@@ -31,19 +31,19 @@ object SymlinkOptions {
     atime: Date = null,
     birthtime: Date = null,
     ctime: Date = null,
-    gid: Int | Double = null,
-    mode: Int | Double = null,
+    gid: js.UndefOr[Double] = js.undefined,
+    mode: js.UndefOr[Double] = js.undefined,
     mtime: Date = null,
-    uid: Int | Double = null
+    uid: js.UndefOr[Double] = js.undefined
   ): SymlinkOptions = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     if (atime != null) __obj.updateDynamic("atime")(atime.asInstanceOf[js.Any])
     if (birthtime != null) __obj.updateDynamic("birthtime")(birthtime.asInstanceOf[js.Any])
     if (ctime != null) __obj.updateDynamic("ctime")(ctime.asInstanceOf[js.Any])
-    if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(gid)) __obj.updateDynamic("gid")(gid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mode)) __obj.updateDynamic("mode")(mode.get.asInstanceOf[js.Any])
     if (mtime != null) __obj.updateDynamic("mtime")(mtime.asInstanceOf[js.Any])
-    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
+    if (!js.isUndefined(uid)) __obj.updateDynamic("uid")(uid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SymlinkOptions]
   }
 }

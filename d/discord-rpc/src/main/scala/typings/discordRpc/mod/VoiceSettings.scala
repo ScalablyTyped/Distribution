@@ -1,7 +1,7 @@
 package typings.discordRpc.mod
 
-import typings.discordRpc.AnonAutoThreshold
-import typings.discordRpc.AnonDevice
+import typings.discordRpc.anon.AutoThreshold
+import typings.discordRpc.anon.Device
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,11 +10,11 @@ trait VoiceSettings extends js.Object {
   var automaticGainControl: Boolean
   var deaf: Boolean
   var echoCancellation: Boolean
-  var input: js.UndefOr[AnonDevice] = js.undefined
-  var mode: js.UndefOr[AnonAutoThreshold] = js.undefined
+  var input: js.UndefOr[Device] = js.undefined
+  var mode: js.UndefOr[AutoThreshold] = js.undefined
   var mute: Boolean
   var noiseSuppression: Boolean
-  var output: js.UndefOr[AnonDevice] = js.undefined
+  var output: js.UndefOr[Device] = js.undefined
   var qos: Boolean
   var silenceWarning: Boolean
 }
@@ -29,9 +29,9 @@ object VoiceSettings {
     noiseSuppression: Boolean,
     qos: Boolean,
     silenceWarning: Boolean,
-    input: AnonDevice = null,
-    mode: AnonAutoThreshold = null,
-    output: AnonDevice = null
+    input: Device = null,
+    mode: AutoThreshold = null,
+    output: Device = null
   ): VoiceSettings = {
     val __obj = js.Dynamic.literal(automaticGainControl = automaticGainControl.asInstanceOf[js.Any], deaf = deaf.asInstanceOf[js.Any], echoCancellation = echoCancellation.asInstanceOf[js.Any], mute = mute.asInstanceOf[js.Any], noiseSuppression = noiseSuppression.asInstanceOf[js.Any], qos = qos.asInstanceOf[js.Any], silenceWarning = silenceWarning.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])

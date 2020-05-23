@@ -14,14 +14,14 @@ object SerializeOptions {
   def apply(
     checkKeys: js.UndefOr[Boolean] = js.undefined,
     ignoreUndefined: js.UndefOr[Boolean] = js.undefined,
-    minInternalBufferSize: Int | scala.Double = null,
+    minInternalBufferSize: js.UndefOr[scala.Double] = js.undefined,
     serializeFunctions: js.UndefOr[Boolean] = js.undefined
   ): SerializeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkKeys)) __obj.updateDynamic("checkKeys")(checkKeys.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined.asInstanceOf[js.Any])
-    if (minInternalBufferSize != null) __obj.updateDynamic("minInternalBufferSize")(minInternalBufferSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkKeys)) __obj.updateDynamic("checkKeys")(checkKeys.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minInternalBufferSize)) __obj.updateDynamic("minInternalBufferSize")(minInternalBufferSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerializeOptions]
   }
 }

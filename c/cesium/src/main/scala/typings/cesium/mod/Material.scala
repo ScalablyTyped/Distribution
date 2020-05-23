@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonFabric
+import typings.cesium.anon.Fabric
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "Material")
 @js.native
 class Material () extends js.Object {
-  def this(options: AnonFabric) = this()
+  def this(options: Fabric) = this()
   var materials: js.Any = js.native
   var shaderSource: String = js.native
   var translucent: Boolean | (js.Function1[/* material */ this.type, Boolean]) = js.native

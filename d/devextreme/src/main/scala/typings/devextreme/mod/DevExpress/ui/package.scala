@@ -102,7 +102,7 @@ package object ui {
     - typings.devextreme.devextremeStrings.shortDateShortTime
     - java.lang.String
     - js.Function1[/ * value * / scala.Double | typings.std.Date, java.lang.String]
-    - typings.devextreme.AnonCurrency
+    - typings.devextreme.anon.Currency
   */
   type format = typings.devextreme.mod.DevExpress.ui._format | (js.Function1[/* value */ scala.Double | typings.std.Date, java.lang.String]) | java.lang.String
   type template = typings.devextreme.mod.DevExpress.core.template

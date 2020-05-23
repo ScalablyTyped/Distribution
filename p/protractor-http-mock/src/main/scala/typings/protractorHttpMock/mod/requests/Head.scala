@@ -1,7 +1,7 @@
 package typings.protractorHttpMock.mod.requests
 
-import typings.protractorHttpMock.AnonData
-import typings.protractorHttpMock.AnonRegex
+import typings.protractorHttpMock.anon.Data
+import typings.protractorHttpMock.anon.Regex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
   * HEAD request mock.
   */
 trait Head[TResponse] extends js.Object {
-  var request: AnonRegex
-  var response: AnonData[TResponse]
+  var request: Regex
+  var response: Data[TResponse]
 }
 
 object Head {
   @scala.inline
-  def apply[TResponse](request: AnonRegex, response: AnonData[TResponse]): Head[TResponse] = {
+  def apply[TResponse](request: Regex, response: Data[TResponse]): Head[TResponse] = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[Head[TResponse]]
   }

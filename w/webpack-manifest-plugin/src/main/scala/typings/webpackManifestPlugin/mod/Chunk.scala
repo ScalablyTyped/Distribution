@@ -16,7 +16,7 @@ object Chunk {
   def apply(
     id: String,
     parents: js.Array[String],
-    StringDictionary: /* propName */ StringDictionary[js.Any] = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null
   ): Chunk = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

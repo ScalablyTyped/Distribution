@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Types {
+  type CapabilityOp_ = typings.ably.mod.Types.capabilityOp
   type ChannelEvent = typings.ably.mod.Types.ChannelEvent.FAILED | typings.ably.mod.Types.ChannelEvent.INITIALIZED | typings.ably.mod.Types.ChannelEvent.SUSPENDED | typings.ably.mod.Types.ChannelEvent.ATTACHED | typings.ably.mod.Types.ChannelEvent.ATTACHING | typings.ably.mod.Types.ChannelEvent.DETACHED | typings.ably.mod.Types.ChannelEvent.DETACHING | typings.ably.mod.Types.ChannelEvent.UPDATE
   type ChannelState = typings.ably.mod.Types.ChannelState.FAILED | typings.ably.mod.Types.ChannelState.INITIALIZED | typings.ably.mod.Types.ChannelState.SUSPENDED | typings.ably.mod.Types.ChannelState.ATTACHED | typings.ably.mod.Types.ChannelState.ATTACHING | typings.ably.mod.Types.ChannelState.DETACHED | typings.ably.mod.Types.ChannelState.DETACHING
   type ConnectionEvent = typings.ably.mod.Types.ConnectionEvent.INITIALIZED | typings.ably.mod.Types.ConnectionEvent.CONNECTED | typings.ably.mod.Types.ConnectionEvent.CONNECTING | typings.ably.mod.Types.ConnectionEvent.DISCONNECTED | typings.ably.mod.Types.ConnectionEvent.SUSPENDED | typings.ably.mod.Types.ConnectionEvent.CLOSED | typings.ably.mod.Types.ConnectionEvent.CLOSING | typings.ably.mod.Types.ConnectionEvent.FAILED | typings.ably.mod.Types.ConnectionEvent.UPDATE

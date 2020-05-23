@@ -1,17 +1,13 @@
 package typings.winrtUwp.Windows.Devices.Gpio
 
-import typings.winrtUwp.AnonOpenStatus
-import typings.winrtUwp.Windows.Devices.Gpio.Provider.IGpioProvider
-import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
-import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import typings.winrtUwp.anon.OpenStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the default general-purpose I/O (GPIO) controller for the system. */
-@JSGlobal("Windows.Devices.Gpio.GpioController")
 @js.native
-abstract class GpioController () extends js.Object {
+trait GpioController extends js.Object {
   /** Gets the number of pins on the general-purpose I/O (GPIO) controller. */
   var pinCount: Double = js.native
   /**
@@ -32,28 +28,6 @@ abstract class GpioController () extends js.Object {
     * @param pinNumber The pin number of the GPIO pin that you want to open. Some pins may not be available in user mode. For information about how the pin numbers correspond to physical pins, see the documentation for your circuit board.
     * @param sharingMode The mode in which you want to open the GPIO pin, which determines whether other connections to the pin can be opened while you have the pin open.
     */
-  def tryOpenPin(pinNumber: Double, sharingMode: GpioSharingMode): AnonOpenStatus = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Devices.Gpio.GpioController")
-@js.native
-object GpioController extends js.Object {
-  /**
-    * Gets all the controllers that are connected to the system asynchronously.
-    * @param provider The GPIO provider for the controllers on the system.
-    * @return When the method completes successfully, it returns a list of values that represent the controllers available on the system.
-    */
-  def getControllersAsync(provider: IGpioProvider): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
-  /**
-    * Gets the default general-purpose I/O (GPIO) controller for the system.
-    * @return The default GPIO controller for the system, or null if the system has no GPIO controller.
-    */
-  def getDefault(): GpioController = js.native
-  /**
-    * Gets the default general-purpose I/O (GPIO) controller for the system.
-    * @return The default GPIO controller for the system, or null if the system has no GPIO controller.
-    */
-  def getDefaultAsync(): IPromiseWithIAsyncOperation[GpioController] = js.native
+  def tryOpenPin(pinNumber: Double, sharingMode: GpioSharingMode): OpenStatus = js.native
 }
 

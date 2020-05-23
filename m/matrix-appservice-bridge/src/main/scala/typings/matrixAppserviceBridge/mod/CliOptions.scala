@@ -27,8 +27,8 @@ object CliOptions {
   ): CliOptions = {
     val __obj = js.Dynamic.literal(generateRegistration = js.Any.fromFunction2(generateRegistration), port = port.asInstanceOf[js.Any], run = js.Any.fromFunction2(run))
     if (bridgeConfig != null) __obj.updateDynamic("bridgeConfig")(bridgeConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLocalpart)) __obj.updateDynamic("enableLocalpart")(enableLocalpart.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRegistration)) __obj.updateDynamic("enableRegistration")(enableRegistration.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableLocalpart)) __obj.updateDynamic("enableLocalpart")(enableLocalpart.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRegistration)) __obj.updateDynamic("enableRegistration")(enableRegistration.get.asInstanceOf[js.Any])
     if (registrationPath != null) __obj.updateDynamic("registrationPath")(registrationPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[CliOptions]
   }

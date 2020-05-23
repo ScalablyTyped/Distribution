@@ -5,13 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Graphics.Imaging.BitmapTypedValue")
-@js.native
-class BitmapTypedValue protected () extends IBitmapTypedValue {
-  def this(value: js.Any, `type`: PropertyType) = this()
-  /* CompleteClass */
-  override var `type`: PropertyType = js.native
-  /* CompleteClass */
-  override var value: js.Any = js.native
+trait BitmapTypedValue extends IBitmapTypedValue
+
+object BitmapTypedValue {
+  @scala.inline
+  def apply(`type`: PropertyType, value: js.Any): BitmapTypedValue = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BitmapTypedValue]
+  }
 }
 

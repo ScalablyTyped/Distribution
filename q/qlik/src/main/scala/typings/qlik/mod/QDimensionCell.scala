@@ -14,9 +14,15 @@ trait QDimensionCell extends js.Object {
 
 object QDimensionCell {
   @scala.inline
-  def apply(qElemNumber: Double, qState: String, qText: String, select: () => Unit, qNum: Int | Double = null): QDimensionCell = {
+  def apply(
+    qElemNumber: Double,
+    qState: String,
+    qText: String,
+    select: () => Unit,
+    qNum: js.UndefOr[Double] = js.undefined
+  ): QDimensionCell = {
     val __obj = js.Dynamic.literal(qElemNumber = qElemNumber.asInstanceOf[js.Any], qState = qState.asInstanceOf[js.Any], qText = qText.asInstanceOf[js.Any], select = js.Any.fromFunction0(select))
-    if (qNum != null) __obj.updateDynamic("qNum")(qNum.asInstanceOf[js.Any])
+    if (!js.isUndefined(qNum)) __obj.updateDynamic("qNum")(qNum.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QDimensionCell]
   }
 }

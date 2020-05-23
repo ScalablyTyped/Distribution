@@ -4,13 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.Services.FormalParameterInfo")
-@js.native
-class FormalParameterInfo () extends js.Object {
-  var docComment: String = js.native
-  var isVariable: Boolean = js.native
-  var limChar: Double = js.native
-  var minChar: Double = js.native
-  var name: String = js.native
+trait FormalParameterInfo extends js.Object {
+  var docComment: String
+  var isVariable: Boolean
+  var limChar: Double
+  var minChar: Double
+  var name: String
+}
+
+object FormalParameterInfo {
+  @scala.inline
+  def apply(docComment: String, isVariable: Boolean, limChar: Double, minChar: Double, name: String): FormalParameterInfo = {
+    val __obj = js.Dynamic.literal(docComment = docComment.asInstanceOf[js.Any], isVariable = isVariable.asInstanceOf[js.Any], limChar = limChar.asInstanceOf[js.Any], minChar = minChar.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FormalParameterInfo]
+  }
 }
 

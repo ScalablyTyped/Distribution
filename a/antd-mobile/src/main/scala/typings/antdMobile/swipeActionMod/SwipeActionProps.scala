@@ -1,6 +1,6 @@
 package typings.antdMobile.swipeActionMod
 
-import typings.antdMobile.AnonOnPress
+import typings.antdMobile.anon.OnPress
 import typings.antdMobile.swipeActionPropsTypeMod.SwipeActionPropsType
 import typings.react.mod.CSSProperties
 import scala.scalajs.js
@@ -19,18 +19,18 @@ object SwipeActionProps {
     autoClose: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    left: js.Array[AnonOnPress[CSSProperties]] = null,
+    left: js.Array[OnPress[CSSProperties]] = null,
     onClose: () => Unit = null,
     onOpen: () => Unit = null,
     prefixCls: String = null,
-    right: js.Array[AnonOnPress[CSSProperties]] = null,
+    right: js.Array[OnPress[CSSProperties]] = null,
     style: CSSProperties = null,
     title: String = null
   ): SwipeActionProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
     if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction0(onOpen))

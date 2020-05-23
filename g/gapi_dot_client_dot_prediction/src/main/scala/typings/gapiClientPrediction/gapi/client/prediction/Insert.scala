@@ -1,6 +1,5 @@
 package typings.gapiClientPrediction.gapi.client.prediction
 
-import typings.gapiClientPrediction.AnonOutput
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +19,7 @@ trait Insert extends js.Object {
   /** Google storage location of the pmml model file. */
   var storagePMMLModelLocation: js.UndefOr[String] = js.undefined
   /** Instances to train model on. */
-  var trainingInstances: js.UndefOr[js.Array[AnonOutput]] = js.undefined
+  var trainingInstances: js.UndefOr[js.Array[typings.gapiClientPrediction.anon.Output]] = js.undefined
   /** A class weighting function, which allows the importance weights for class labels to be specified (Categorical models only). */
   var utility: js.UndefOr[js.Array[Record[String, Double]]] = js.undefined
 }
@@ -34,7 +33,7 @@ object Insert {
     storageDataLocation: String = null,
     storagePMMLLocation: String = null,
     storagePMMLModelLocation: String = null,
-    trainingInstances: js.Array[AnonOutput] = null,
+    trainingInstances: js.Array[typings.gapiClientPrediction.anon.Output] = null,
     utility: js.Array[Record[String, Double]] = null
   ): Insert = {
     val __obj = js.Dynamic.literal()

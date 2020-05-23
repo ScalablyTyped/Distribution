@@ -1,5 +1,7 @@
 package typings.antDesignReactNative
 
+import typings.antDesignReactNative.anon.AntLocale
+import typings.antDesignReactNative.anon.MinuteStep
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +16,8 @@ object datePickerViewMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var contextTypes: AnonAntLocale = js.native
-    var defaultProps: AnonMinuteStep = js.native
+    var contextTypes: AntLocale = js.native
+    var defaultProps: MinuteStep = js.native
   }
   
 }

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 /** module Or Internal Object */
 /**
-	* @brief 输入输出处理模块
-	* @detail 使用方法：,```JavaScript,var io = require('io');,```
-	*/
+  * @brief 输入输出处理模块
+  * @detail 使用方法：,```JavaScript,var io = require('io');,```
+  */
 @JSImport("io", JSImport.Namespace)
 @js.native
 object ioMod extends js.Object {

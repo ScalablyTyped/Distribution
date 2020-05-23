@@ -6,11 +6,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.JsGrid.EventArgs.RecordChecked")
-@js.native
-class RecordChecked protected () extends IEventArgs {
-  def this(recordKeySet: Set, bChecked: Boolean) = this()
-  var bChecked: Boolean = js.native
-  var recordKeySet: Set = js.native
+trait RecordChecked extends IEventArgs {
+  var bChecked: Boolean
+  var recordKeySet: Set
+}
+
+object RecordChecked {
+  @scala.inline
+  def apply(bChecked: Boolean, recordKeySet: Set): RecordChecked = {
+    val __obj = js.Dynamic.literal(bChecked = bChecked.asInstanceOf[js.Any], recordKeySet = recordKeySet.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RecordChecked]
+  }
 }
 

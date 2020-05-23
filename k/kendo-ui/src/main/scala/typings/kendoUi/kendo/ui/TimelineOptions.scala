@@ -47,9 +47,9 @@ object TimelineOptions {
     dataSubTitleField: String = null,
     dataTitleField: String = null,
     dateformat: String = null,
-    eventHeight: Int | Double = null,
+    eventHeight: js.UndefOr[Double] = js.undefined,
     eventTemplate: String | js.Function = null,
-    eventWidth: Int | Double = null,
+    eventWidth: js.UndefOr[Double] = js.undefined,
     expand: /* e */ TimelineExpandEvent => Unit = null,
     name: String = null,
     navigate: /* e */ TimelineNavigateEvent => Unit = null,
@@ -58,10 +58,10 @@ object TimelineOptions {
   ): TimelineOptions = {
     val __obj = js.Dynamic.literal()
     if (actionClick != null) __obj.updateDynamic("actionClick")(js.Any.fromFunction1(actionClick))
-    if (!js.isUndefined(alternatingMode)) __obj.updateDynamic("alternatingMode")(alternatingMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(alternatingMode)) __obj.updateDynamic("alternatingMode")(alternatingMode.get.asInstanceOf[js.Any])
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (collapse != null) __obj.updateDynamic("collapse")(js.Any.fromFunction1(collapse))
-    if (!js.isUndefined(collapsibleEvents)) __obj.updateDynamic("collapsibleEvents")(collapsibleEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsibleEvents)) __obj.updateDynamic("collapsibleEvents")(collapsibleEvents.get.asInstanceOf[js.Any])
     if (dataActionsField != null) __obj.updateDynamic("dataActionsField")(dataActionsField.asInstanceOf[js.Any])
     if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
     if (dataDateField != null) __obj.updateDynamic("dataDateField")(dataDateField.asInstanceOf[js.Any])
@@ -71,14 +71,14 @@ object TimelineOptions {
     if (dataSubTitleField != null) __obj.updateDynamic("dataSubTitleField")(dataSubTitleField.asInstanceOf[js.Any])
     if (dataTitleField != null) __obj.updateDynamic("dataTitleField")(dataTitleField.asInstanceOf[js.Any])
     if (dateformat != null) __obj.updateDynamic("dateformat")(dateformat.asInstanceOf[js.Any])
-    if (eventHeight != null) __obj.updateDynamic("eventHeight")(eventHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(eventHeight)) __obj.updateDynamic("eventHeight")(eventHeight.get.asInstanceOf[js.Any])
     if (eventTemplate != null) __obj.updateDynamic("eventTemplate")(eventTemplate.asInstanceOf[js.Any])
-    if (eventWidth != null) __obj.updateDynamic("eventWidth")(eventWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(eventWidth)) __obj.updateDynamic("eventWidth")(eventWidth.get.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(js.Any.fromFunction1(expand))
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (navigate != null) __obj.updateDynamic("navigate")(js.Any.fromFunction1(navigate))
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDateLabels)) __obj.updateDynamic("showDateLabels")(showDateLabels.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDateLabels)) __obj.updateDynamic("showDateLabels")(showDateLabels.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineOptions]
   }
 }

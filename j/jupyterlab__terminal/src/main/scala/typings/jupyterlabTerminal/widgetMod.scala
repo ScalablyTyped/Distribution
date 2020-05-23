@@ -1,6 +1,7 @@
 package typings.jupyterlabTerminal
 
 import typings.jupyterlabServices.terminalTerminalMod.ITerminalConnection
+import typings.jupyterlabTerminal.anon.PartialIOptions
 import typings.jupyterlabTerminal.tokensMod.ITerminal.ITerminal
 import typings.luminoWidgets.mod.Widget.ResizeMessage
 import scala.scalajs.js

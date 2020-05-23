@@ -1,7 +1,7 @@
 package typings.keya.storeMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.keya.AnonKey
+import typings.keya.anon.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +10,10 @@ trait Store extends js.Object {
   var name: String
   var store: StringDictionary[js.Any]
   var version: Double
-  def all(): js.Promise[js.Array[AnonKey]]
+  def all(): js.Promise[js.Array[Key]]
   def clear(): js.Promise[Unit]
   def delete(key: String): js.Promise[Boolean]
-  def find(finder: js.Function2[/* value */ js.Any, /* name */ String, js.Promise[Boolean] | Boolean]): js.Promise[js.Array[AnonKey]]
+  def find(finder: js.Function2[/* value */ js.Any, /* name */ String, js.Promise[Boolean] | Boolean]): js.Promise[js.Array[Key]]
   def get(key: String): js.Promise[_]
   def initalize(): js.Promise[Unit]
   def load(): js.Promise[Unit]
@@ -24,10 +24,10 @@ trait Store extends js.Object {
 object Store {
   @scala.inline
   def apply(
-    all: () => js.Promise[js.Array[AnonKey]],
+    all: () => js.Promise[js.Array[Key]],
     clear: () => js.Promise[Unit],
     delete: String => js.Promise[Boolean],
-    find: js.Function2[/* value */ js.Any, /* name */ String, js.Promise[Boolean] | Boolean] => js.Promise[js.Array[AnonKey]],
+    find: js.Function2[/* value */ js.Any, /* name */ String, js.Promise[Boolean] | Boolean] => js.Promise[js.Array[Key]],
     get: String => js.Promise[_],
     initalize: () => js.Promise[Unit],
     load: () => js.Promise[Unit],

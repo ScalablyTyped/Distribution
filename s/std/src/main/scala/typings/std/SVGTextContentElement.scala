@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,13 +22,5 @@ trait SVGTextContentElement extends SVGGraphicsElement {
   def getStartPositionOfChar(charnum: Double): DOMPoint = js.native
   def getSubStringLength(charnum: Double, nchars: Double): Double = js.native
   def selectSubString(charnum: Double, nchars: Double): Unit = js.native
-}
-
-@JSGlobal("SVGTextContentElement")
-@js.native
-object SVGTextContentElement extends Instantiable0[SVGTextContentElement] {
-  val LENGTHADJUST_SPACING: Double = js.native
-  val LENGTHADJUST_SPACINGANDGLYPHS: Double = js.native
-  val LENGTHADJUST_UNKNOWN: Double = js.native
 }
 

@@ -12,10 +12,10 @@ trait FromDiagramOptions extends js.Object {
 
 object FromDiagramOptions {
   @scala.inline
-  def apply(errorValue: js.Any = null, timeUnit: Int | Double = null, values: js.Object = null): FromDiagramOptions = {
+  def apply(errorValue: js.Any = null, timeUnit: js.UndefOr[Double] = js.undefined, values: js.Object = null): FromDiagramOptions = {
     val __obj = js.Dynamic.literal()
     if (errorValue != null) __obj.updateDynamic("errorValue")(errorValue.asInstanceOf[js.Any])
-    if (timeUnit != null) __obj.updateDynamic("timeUnit")(timeUnit.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeUnit)) __obj.updateDynamic("timeUnit")(timeUnit.get.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[FromDiagramOptions]
   }

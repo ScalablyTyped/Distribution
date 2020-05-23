@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ASPxClientReportPreview")
 @js.native
-class ASPxClientReportPreview () extends js.Object {
+trait ASPxClientReportPreview extends js.Object {
   @JSName("documentBuilding")
   var documentBuilding_Original: KnockoutObservable[Boolean] = js.native
   @JSName("pageIndex")

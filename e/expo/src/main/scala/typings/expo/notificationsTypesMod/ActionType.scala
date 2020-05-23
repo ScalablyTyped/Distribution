@@ -1,6 +1,6 @@
 package typings.expo.notificationsTypesMod
 
-import typings.expo.AnonPlaceholder
+import typings.expo.anon.Placeholder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait ActionType extends js.Object {
   var doNotOpenInForeground: js.UndefOr[Boolean] = js.undefined
   var isAuthenticationRequired: js.UndefOr[Boolean] = js.undefined
   var isDestructive: js.UndefOr[Boolean] = js.undefined
-  var textInput: js.UndefOr[AnonPlaceholder] = js.undefined
+  var textInput: js.UndefOr[Placeholder] = js.undefined
 }
 
 object ActionType {
@@ -22,12 +22,12 @@ object ActionType {
     doNotOpenInForeground: js.UndefOr[Boolean] = js.undefined,
     isAuthenticationRequired: js.UndefOr[Boolean] = js.undefined,
     isDestructive: js.UndefOr[Boolean] = js.undefined,
-    textInput: AnonPlaceholder = null
+    textInput: Placeholder = null
   ): ActionType = {
     val __obj = js.Dynamic.literal(actionId = actionId.asInstanceOf[js.Any], buttonTitle = buttonTitle.asInstanceOf[js.Any])
-    if (!js.isUndefined(doNotOpenInForeground)) __obj.updateDynamic("doNotOpenInForeground")(doNotOpenInForeground.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAuthenticationRequired)) __obj.updateDynamic("isAuthenticationRequired")(isAuthenticationRequired.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDestructive)) __obj.updateDynamic("isDestructive")(isDestructive.asInstanceOf[js.Any])
+    if (!js.isUndefined(doNotOpenInForeground)) __obj.updateDynamic("doNotOpenInForeground")(doNotOpenInForeground.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAuthenticationRequired)) __obj.updateDynamic("isAuthenticationRequired")(isAuthenticationRequired.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDestructive)) __obj.updateDynamic("isDestructive")(isDestructive.get.asInstanceOf[js.Any])
     if (textInput != null) __obj.updateDynamic("textInput")(textInput.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionType]
   }

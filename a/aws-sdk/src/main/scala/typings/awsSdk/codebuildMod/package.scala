@@ -249,6 +249,7 @@ package object codebuildMod {
     - typings.awsSdk.awsSdkStrings.HEAD_REF
     - typings.awsSdk.awsSdkStrings.ACTOR_ACCOUNT_ID
     - typings.awsSdk.awsSdkStrings.FILE_PATH
+    - typings.awsSdk.awsSdkStrings.COMMIT_MESSAGE
     - java.lang.String
   */
   type WebhookFilterType = typings.awsSdk.codebuildMod._WebhookFilterType | java.lang.String

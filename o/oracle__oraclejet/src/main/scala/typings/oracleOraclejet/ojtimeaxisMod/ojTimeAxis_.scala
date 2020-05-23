@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojtimeaxisMod
 
-import typings.oracleOraclejet.AnonLabelAndValue
+import typings.oracleOraclejet.anon.LabelAndValue
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponent
 import typings.oracleOraclejet.ojtimeaxisMod.ojTimeAxis.Converters
@@ -41,7 +41,7 @@ trait ojTimeAxis_ extends dvtBaseComponent[ojTimeAxisSettableProperties] {
   var scale: seconds | minutes | hours | days | weeks | months | quarters | years = js.native
   var start: String = js.native
   @JSName("translations")
-  var translations_ojTimeAxis_ : AnonLabelAndValue = js.native
+  var translations_ojTimeAxis_ : LabelAndValue = js.native
   def addEventListener(
     `type`: scaleChanged,
     listener: js.ThisFunction1[
@@ -126,6 +126,6 @@ trait ojTimeAxis_ extends dvtBaseComponent[ojTimeAxisSettableProperties] {
   @JSName("setProperty")
   def setProperty_start(property: start, value: String): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonLabelAndValue): Unit = js.native
+  def setProperty_translations(property: translations, value: LabelAndValue): Unit = js.native
 }
 

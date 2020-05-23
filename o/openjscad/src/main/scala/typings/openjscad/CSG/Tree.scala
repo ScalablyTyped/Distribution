@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CSG.Tree")
 @js.native
-class Tree protected () extends js.Object {
-  def this(polygons: js.Array[Polygon]) = this()
+trait Tree extends js.Object {
   var polygonTree: PolygonTreeNode = js.native
   var rootnode: Node = js.native
   def addPolygons(polygons: js.Array[Polygon]): Unit = js.native

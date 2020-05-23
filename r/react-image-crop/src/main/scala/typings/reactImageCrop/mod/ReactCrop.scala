@@ -3,7 +3,7 @@ package typings.reactImageCrop.mod
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
-import typings.reactImageCrop.AnonHeight
+import typings.reactImageCrop.anon.Height
 import typings.std.HTMLImageElement
 import typings.std.MouseEvent
 import scala.scalajs.js
@@ -17,7 +17,7 @@ trait ReactCrop
   def crossOverCheck(): Unit = js.native
   def dragCrop(): Crop = js.native
   def getCropStyle(): CSSProperties = js.native
-  def getNewSize(): AnonHeight = js.native
+  def getNewSize(): Height = js.native
   def makeNewCrop(): Crop = js.native
   def onComponentKeyDown(e: MouseEvent): Unit = js.native
   def onComponentMouseTouchDown(e: MouseEvent): Unit = js.native

@@ -1,6 +1,6 @@
 package typings.antvG2.mod
 
-import typings.antvG2.AnonColumn
+import typings.antvG2.anon.Column
 import typings.antvG2.antvG2Strings.canvas
 import typings.antvG2.antvG2Strings.dark
 import typings.antvG2.antvG2Strings.default
@@ -38,7 +38,7 @@ class Global () extends js.Object {
   /**
     * 宽度所占的分类的比例
     */
-  var widthRatio: AnonColumn = js.native
+  var widthRatio: Column = js.native
   def registerTheme(name: String, option: js.Object): Unit = js.native
   def setTheme(option: String): Unit = js.native
   def setTheme(option: js.Object): Unit = js.native

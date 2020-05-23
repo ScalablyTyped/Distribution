@@ -19,16 +19,16 @@ object IPreparedStatement {
   def apply(
     binary: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
-    rowMode: array | Unit = null,
-    rows: Int | Double = null,
+    rowMode: js.UndefOr[Null | array | Unit] = js.undefined,
+    rows: js.UndefOr[Double] = js.undefined,
     text: String | QueryFile = null,
     values: js.Array[_] = null
   ): IPreparedStatement = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (rowMode != null) __obj.updateDynamic("rowMode")(rowMode.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowMode)) __obj.updateDynamic("rowMode")(rowMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPreparedStatement]

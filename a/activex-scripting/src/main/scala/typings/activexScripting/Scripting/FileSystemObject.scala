@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** FileSystem Object */
-@JSGlobal("Scripting.FileSystemObject")
 @js.native
-class FileSystemObject protected () extends js.Object {
+trait FileSystemObject extends js.Object {
   /** Get drives collection */
   @JSName("Drives")
   val Drives_Original: Drives = js.native

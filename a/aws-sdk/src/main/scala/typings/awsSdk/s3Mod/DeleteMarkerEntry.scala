@@ -31,14 +31,14 @@ trait DeleteMarkerEntry extends js.Object {
 object DeleteMarkerEntry {
   @scala.inline
   def apply(
-    IsLatest: js.UndefOr[Boolean] = js.undefined,
+    IsLatest: js.UndefOr[IsLatest] = js.undefined,
     Key: ObjectKey = null,
     LastModified: LastModified = null,
     Owner: Owner = null,
     VersionId: ObjectVersionId = null
   ): DeleteMarkerEntry = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(IsLatest)) __obj.updateDynamic("IsLatest")(IsLatest.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsLatest)) __obj.updateDynamic("IsLatest")(IsLatest.get.asInstanceOf[js.Any])
     if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
     if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
     if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])

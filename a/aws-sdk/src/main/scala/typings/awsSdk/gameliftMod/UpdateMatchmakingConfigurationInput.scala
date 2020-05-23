@@ -64,9 +64,9 @@ object UpdateMatchmakingConfigurationInput {
   @scala.inline
   def apply(
     Name: MatchmakingConfigurationName,
-    AcceptanceRequired: js.UndefOr[Boolean] = js.undefined,
-    AcceptanceTimeoutSeconds: Int | scala.Double = null,
-    AdditionalPlayerCount: Int | scala.Double = null,
+    AcceptanceRequired: js.UndefOr[BooleanModel] = js.undefined,
+    AcceptanceTimeoutSeconds: js.UndefOr[MatchmakingAcceptanceTimeoutInteger] = js.undefined,
+    AdditionalPlayerCount: js.UndefOr[WholeNumber] = js.undefined,
     BackfillMode: BackfillMode = null,
     CustomEventData: CustomEventData = null,
     Description: NonZeroAndMaxString = null,
@@ -74,13 +74,13 @@ object UpdateMatchmakingConfigurationInput {
     GameSessionData: GameSessionData = null,
     GameSessionQueueArns: QueueArnsList = null,
     NotificationTarget: SnsArnStringModel = null,
-    RequestTimeoutSeconds: Int | scala.Double = null,
+    RequestTimeoutSeconds: js.UndefOr[MatchmakingRequestTimeoutInteger] = js.undefined,
     RuleSetName: MatchmakingRuleSetName = null
   ): UpdateMatchmakingConfigurationInput = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(AcceptanceRequired)) __obj.updateDynamic("AcceptanceRequired")(AcceptanceRequired.asInstanceOf[js.Any])
-    if (AcceptanceTimeoutSeconds != null) __obj.updateDynamic("AcceptanceTimeoutSeconds")(AcceptanceTimeoutSeconds.asInstanceOf[js.Any])
-    if (AdditionalPlayerCount != null) __obj.updateDynamic("AdditionalPlayerCount")(AdditionalPlayerCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(AcceptanceRequired)) __obj.updateDynamic("AcceptanceRequired")(AcceptanceRequired.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(AcceptanceTimeoutSeconds)) __obj.updateDynamic("AcceptanceTimeoutSeconds")(AcceptanceTimeoutSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(AdditionalPlayerCount)) __obj.updateDynamic("AdditionalPlayerCount")(AdditionalPlayerCount.get.asInstanceOf[js.Any])
     if (BackfillMode != null) __obj.updateDynamic("BackfillMode")(BackfillMode.asInstanceOf[js.Any])
     if (CustomEventData != null) __obj.updateDynamic("CustomEventData")(CustomEventData.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
@@ -88,7 +88,7 @@ object UpdateMatchmakingConfigurationInput {
     if (GameSessionData != null) __obj.updateDynamic("GameSessionData")(GameSessionData.asInstanceOf[js.Any])
     if (GameSessionQueueArns != null) __obj.updateDynamic("GameSessionQueueArns")(GameSessionQueueArns.asInstanceOf[js.Any])
     if (NotificationTarget != null) __obj.updateDynamic("NotificationTarget")(NotificationTarget.asInstanceOf[js.Any])
-    if (RequestTimeoutSeconds != null) __obj.updateDynamic("RequestTimeoutSeconds")(RequestTimeoutSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(RequestTimeoutSeconds)) __obj.updateDynamic("RequestTimeoutSeconds")(RequestTimeoutSeconds.get.asInstanceOf[js.Any])
     if (RuleSetName != null) __obj.updateDynamic("RuleSetName")(RuleSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMatchmakingConfigurationInput]
   }

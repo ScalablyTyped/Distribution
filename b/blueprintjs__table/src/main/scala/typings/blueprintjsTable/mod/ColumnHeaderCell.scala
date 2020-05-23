@@ -1,6 +1,6 @@
 package typings.blueprintjsTable.mod
 
-import typings.blueprintjsTable.ValidationMapIColumnInter
+import typings.blueprintjsTable.anon.ValidationMapIColumnInter
 import typings.blueprintjsTable.columnHeaderCellMod.IColumnHeaderCellProps
 import typings.std.HTMLElement
 import scala.scalajs.js

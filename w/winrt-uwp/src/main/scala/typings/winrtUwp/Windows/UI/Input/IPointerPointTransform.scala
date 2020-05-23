@@ -1,8 +1,8 @@
 package typings.winrtUwp.Windows.UI.Input
 
-import typings.winrtUwp.AnonOutPoint
 import typings.winrtUwp.Windows.Foundation.Point
 import typings.winrtUwp.Windows.Foundation.Rect
+import typings.winrtUwp.anon.OutPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,16 +21,12 @@ trait IPointerPointTransform extends js.Object {
     * Attempts to perform the transformation on the specified input point.
     * @param inPoint The original input point.
     */
-  def tryTransform(inPoint: Point): AnonOutPoint
+  def tryTransform(inPoint: Point): OutPoint
 }
 
 object IPointerPointTransform {
   @scala.inline
-  def apply(
-    inverse: IPointerPointTransform,
-    transformBounds: Rect => Rect,
-    tryTransform: Point => AnonOutPoint
-  ): IPointerPointTransform = {
+  def apply(inverse: IPointerPointTransform, transformBounds: Rect => Rect, tryTransform: Point => OutPoint): IPointerPointTransform = {
     val __obj = js.Dynamic.literal(inverse = inverse.asInstanceOf[js.Any], transformBounds = js.Any.fromFunction1(transformBounds), tryTransform = js.Any.fromFunction1(tryTransform))
     __obj.asInstanceOf[IPointerPointTransform]
   }

@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait CollapsingEventUIParam extends js.Object {
   /**
-  	 * Used to get a reference the igSplitButton.
-  	 */
+    * Used to get a reference the igSplitButton.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 

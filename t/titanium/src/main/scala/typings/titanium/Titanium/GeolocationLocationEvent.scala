@@ -7,28 +7,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * Fired when a location update is received.
-	 */
+  * Fired when a location update is received.
+  */
 trait GeolocationLocationEvent extends GeolocationBaseEvent {
   /**
-  		 * if `success` is false, the error code if available.
-  		 */
+    * if `success` is false, the error code if available.
+    */
   var code: Double
   /**
-  		 * If `success` is true, actual location data for this update.
-  		 */
+    * If `success` is true, actual location data for this update.
+    */
   var coords: LocationCoordinates
   /**
-  		 * If `success` is false, a string describing the error.
-  		 */
+    * If `success` is false, a string describing the error.
+    */
   var error: String
   /**
-  		 * If `success` is true, object describing the location provider generating this update.
-  		 */
+    * If `success` is true, object describing the location provider generating this update.
+    */
   var provider: LocationProviderDict
   /**
-  		 * Indicates if location data was successfully retrieved.
-  		 */
+    * Indicates if location data was successfully retrieved.
+    */
   var success: Boolean
 }
 

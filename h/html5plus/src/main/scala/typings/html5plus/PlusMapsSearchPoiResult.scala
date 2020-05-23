@@ -58,18 +58,18 @@ object PlusMapsSearchPoiResult {
   @scala.inline
   def apply(
     getPosition: () => PlusMapsPosition,
-    currentNumber: Int | Double = null,
-    pageIndex: Int | Double = null,
-    pageNumber: Int | Double = null,
+    currentNumber: js.UndefOr[Double] = js.undefined,
+    pageIndex: js.UndefOr[Double] = js.undefined,
+    pageNumber: js.UndefOr[Double] = js.undefined,
     poiList: js.Array[_] = null,
-    totalNumber: Int | Double = null
+    totalNumber: js.UndefOr[Double] = js.undefined
   ): PlusMapsSearchPoiResult = {
     val __obj = js.Dynamic.literal(getPosition = js.Any.fromFunction0(getPosition))
-    if (currentNumber != null) __obj.updateDynamic("currentNumber")(currentNumber.asInstanceOf[js.Any])
-    if (pageIndex != null) __obj.updateDynamic("pageIndex")(pageIndex.asInstanceOf[js.Any])
-    if (pageNumber != null) __obj.updateDynamic("pageNumber")(pageNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentNumber)) __obj.updateDynamic("currentNumber")(currentNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageIndex)) __obj.updateDynamic("pageIndex")(pageIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageNumber)) __obj.updateDynamic("pageNumber")(pageNumber.get.asInstanceOf[js.Any])
     if (poiList != null) __obj.updateDynamic("poiList")(poiList.asInstanceOf[js.Any])
-    if (totalNumber != null) __obj.updateDynamic("totalNumber")(totalNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalNumber)) __obj.updateDynamic("totalNumber")(totalNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusMapsSearchPoiResult]
   }
 }

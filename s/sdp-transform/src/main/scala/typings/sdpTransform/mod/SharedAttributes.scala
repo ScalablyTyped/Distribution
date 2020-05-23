@@ -1,9 +1,9 @@
 package typings.sdpTransform.mod
 
-import typings.sdpTransform.AnonAddressTypes
-import typings.sdpTransform.AnonHash
-import typings.sdpTransform.AnonUri
-import typings.sdpTransform.AnonValueString
+import typings.sdpTransform.anon.AddressTypes
+import typings.sdpTransform.anon.Hash
+import typings.sdpTransform.anon.Uri
+import typings.sdpTransform.anon.ValueString
 import typings.sdpTransform.sdpTransformStrings.inactive
 import typings.sdpTransform.sdpTransformStrings.recvonly
 import typings.sdpTransform.sdpTransformStrings.sendonly
@@ -21,15 +21,15 @@ trait SharedAttributes extends js.Object {
   // a=inactive
   var direction: js.UndefOr[sendrecv | recvonly | sendonly | inactive] = js.undefined
   // a=extmap
-  var ext: js.UndefOr[js.Array[AnonUri]] = js.undefined
-  var fingerprint: js.UndefOr[AnonHash] = js.undefined
+  var ext: js.UndefOr[js.Array[Uri]] = js.undefined
+  var fingerprint: js.UndefOr[Hash] = js.undefined
   var icePwd: js.UndefOr[String] = js.undefined
   var iceUfrag: js.UndefOr[String] = js.undefined
-  var invalid: js.UndefOr[js.Array[AnonValueString]] = js.undefined
+  var invalid: js.UndefOr[js.Array[ValueString]] = js.undefined
   // a=setup
   var setup: js.UndefOr[String] = js.undefined
   // a=source-filter: incl IN IP4 239.5.2.31 10.1.15.5
-  var sourceFilter: js.UndefOr[AnonAddressTypes] = js.undefined
+  var sourceFilter: js.UndefOr[AddressTypes] = js.undefined
 }
 
 object SharedAttributes {
@@ -37,13 +37,13 @@ object SharedAttributes {
   def apply(
     control: String = null,
     direction: sendrecv | recvonly | sendonly | inactive = null,
-    ext: js.Array[AnonUri] = null,
-    fingerprint: AnonHash = null,
+    ext: js.Array[Uri] = null,
+    fingerprint: Hash = null,
     icePwd: String = null,
     iceUfrag: String = null,
-    invalid: js.Array[AnonValueString] = null,
+    invalid: js.Array[ValueString] = null,
     setup: String = null,
-    sourceFilter: AnonAddressTypes = null
+    sourceFilter: AddressTypes = null
   ): SharedAttributes = {
     val __obj = js.Dynamic.literal()
     if (control != null) __obj.updateDynamic("control")(control.asInstanceOf[js.Any])

@@ -14,7 +14,7 @@ object DailyMotionConfig {
   def apply(params: js.Object = null, preload: js.UndefOr[Boolean] = js.undefined): DailyMotionConfig = {
     val __obj = js.Dynamic.literal()
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
+    if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DailyMotionConfig]
   }
 }

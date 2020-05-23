@@ -13,20 +13,22 @@ trait AppMesh extends Service {
   @JSName("config")
   var config_AppMesh: ConfigBase with ClientConfiguration = js.native
   /**
-    * Creates a service mesh. A service mesh is a logical boundary for network traffic between
-    the services that reside within it.
-    After you create your service mesh, you can create virtual services, virtual nodes,
-    virtual routers, and routes to distribute traffic between the applications in your
-    mesh.
+    * Creates a service mesh.
+    A service mesh is a logical boundary for network traffic between services that are
+    represented by resources within the mesh. After you create your service mesh, you can
+    create virtual services, virtual nodes, virtual routers, and routes to distribute traffic
+    between the applications in your mesh.
+    For more information about service meshes, see Service meshes.
     */
   def createMesh(): Request[CreateMeshOutput, AWSError] = js.native
   def createMesh(callback: js.Function2[/* err */ AWSError, /* data */ CreateMeshOutput, Unit]): Request[CreateMeshOutput, AWSError] = js.native
   /**
-    * Creates a service mesh. A service mesh is a logical boundary for network traffic between
-    the services that reside within it.
-    After you create your service mesh, you can create virtual services, virtual nodes,
-    virtual routers, and routes to distribute traffic between the applications in your
-    mesh.
+    * Creates a service mesh.
+    A service mesh is a logical boundary for network traffic between services that are
+    represented by resources within the mesh. After you create your service mesh, you can
+    create virtual services, virtual nodes, virtual routers, and routes to distribute traffic
+    between the applications in your mesh.
+    For more information about service meshes, see Service meshes.
     */
   def createMesh(params: CreateMeshInput): Request[CreateMeshOutput, AWSError] = js.native
   def createMesh(
@@ -35,26 +37,16 @@ trait AppMesh extends Service {
   ): Request[CreateMeshOutput, AWSError] = js.native
   /**
     * Creates a route that is associated with a virtual router.
-    You can use the prefix parameter in your route specification for path-based
-    routing of requests. For example, if your virtual service name is
-    my-service.local and you want the route to match requests to
-    my-service.local/metrics, your prefix should be
-    /metrics.
-    If your route matches a request, you can distribute traffic to one or more target
-    virtual nodes with relative weighting.
+    You can route several different protocols and define a retry policy for a route.
+    Traffic can be routed to one or more virtual nodes.
     For more information about routes, see Routes.
     */
   def createRoute(): Request[CreateRouteOutput, AWSError] = js.native
   def createRoute(callback: js.Function2[/* err */ AWSError, /* data */ CreateRouteOutput, Unit]): Request[CreateRouteOutput, AWSError] = js.native
   /**
     * Creates a route that is associated with a virtual router.
-    You can use the prefix parameter in your route specification for path-based
-    routing of requests. For example, if your virtual service name is
-    my-service.local and you want the route to match requests to
-    my-service.local/metrics, your prefix should be
-    /metrics.
-    If your route matches a request, you can distribute traffic to one or more target
-    virtual nodes with relative weighting.
+    You can route several different protocols and define a retry policy for a route.
+    Traffic can be routed to one or more virtual nodes.
     For more information about routes, see Routes.
     */
   def createRoute(params: CreateRouteInput): Request[CreateRouteOutput, AWSError] = js.native
@@ -66,10 +58,11 @@ trait AppMesh extends Service {
     * Creates a virtual node within a service mesh.
     A virtual node acts as a logical pointer to a particular task group, such as an Amazon ECS
     service or a Kubernetes deployment. When you create a virtual node, you can specify the
-    service discovery information for your task group.
-    Any inbound traffic that your virtual node expects should be specified as a
-    listener. Any outbound traffic that your virtual node expects to reach
-    should be specified as a backend.
+    service discovery information for your task group, and whether the proxy running in a task
+    group will communicate with other proxies using Transport Layer Security (TLS).
+    You define a listener for any inbound traffic that your virtual node
+    expects. Any virtual service that your virtual node expects to communicate to is specified
+    as a backend.
     The response metadata for your new virtual node contains the arn that is
     associated with the virtual node. Set this value (either the full ARN or the truncated
     resource name: for example, mesh/default/virtualNode/simpleapp) as the
@@ -82,7 +75,7 @@ trait AppMesh extends Service {
     APPMESH_VIRTUAL_NODE_NAME with the
     APPMESH_VIRTUAL_NODE_CLUSTER environment variable.
     
-    For more information about virtual nodes, see Virtual Nodes.
+    For more information about virtual nodes, see Virtual nodes.
     */
   def createVirtualNode(): Request[CreateVirtualNodeOutput, AWSError] = js.native
   def createVirtualNode(callback: js.Function2[/* err */ AWSError, /* data */ CreateVirtualNodeOutput, Unit]): Request[CreateVirtualNodeOutput, AWSError] = js.native
@@ -90,10 +83,11 @@ trait AppMesh extends Service {
     * Creates a virtual node within a service mesh.
     A virtual node acts as a logical pointer to a particular task group, such as an Amazon ECS
     service or a Kubernetes deployment. When you create a virtual node, you can specify the
-    service discovery information for your task group.
-    Any inbound traffic that your virtual node expects should be specified as a
-    listener. Any outbound traffic that your virtual node expects to reach
-    should be specified as a backend.
+    service discovery information for your task group, and whether the proxy running in a task
+    group will communicate with other proxies using Transport Layer Security (TLS).
+    You define a listener for any inbound traffic that your virtual node
+    expects. Any virtual service that your virtual node expects to communicate to is specified
+    as a backend.
     The response metadata for your new virtual node contains the arn that is
     associated with the virtual node. Set this value (either the full ARN or the truncated
     resource name: for example, mesh/default/virtualNode/simpleapp) as the
@@ -106,7 +100,7 @@ trait AppMesh extends Service {
     APPMESH_VIRTUAL_NODE_NAME with the
     APPMESH_VIRTUAL_NODE_CLUSTER environment variable.
     
-    For more information about virtual nodes, see Virtual Nodes.
+    For more information about virtual nodes, see Virtual nodes.
     */
   def createVirtualNode(params: CreateVirtualNodeInput): Request[CreateVirtualNodeOutput, AWSError] = js.native
   def createVirtualNode(
@@ -115,23 +109,23 @@ trait AppMesh extends Service {
   ): Request[CreateVirtualNodeOutput, AWSError] = js.native
   /**
     * Creates a virtual router within a service mesh.
-    Any inbound traffic that your virtual router expects should be specified as a
-    listener. 
-    Virtual routers handle traffic for one or more virtual services within your mesh. After
-    you create your virtual router, create and associate routes for your virtual router that
-    direct incoming requests to different virtual nodes.
-    For more information about virtual routers, see Virtual Routers.
+    Specify a listener for any inbound traffic that your virtual router
+    receives. Create a virtual router for each protocol and port that you need to route.
+    Virtual routers handle traffic for one or more virtual services within your mesh. After you
+    create your virtual router, create and associate routes for your virtual router that direct
+    incoming requests to different virtual nodes.
+    For more information about virtual routers, see Virtual routers.
     */
   def createVirtualRouter(): Request[CreateVirtualRouterOutput, AWSError] = js.native
   def createVirtualRouter(callback: js.Function2[/* err */ AWSError, /* data */ CreateVirtualRouterOutput, Unit]): Request[CreateVirtualRouterOutput, AWSError] = js.native
   /**
     * Creates a virtual router within a service mesh.
-    Any inbound traffic that your virtual router expects should be specified as a
-    listener. 
-    Virtual routers handle traffic for one or more virtual services within your mesh. After
-    you create your virtual router, create and associate routes for your virtual router that
-    direct incoming requests to different virtual nodes.
-    For more information about virtual routers, see Virtual Routers.
+    Specify a listener for any inbound traffic that your virtual router
+    receives. Create a virtual router for each protocol and port that you need to route.
+    Virtual routers handle traffic for one or more virtual services within your mesh. After you
+    create your virtual router, create and associate routes for your virtual router that direct
+    incoming requests to different virtual nodes.
+    For more information about virtual routers, see Virtual routers.
     */
   def createVirtualRouter(params: CreateVirtualRouterInput): Request[CreateVirtualRouterOutput, AWSError] = js.native
   def createVirtualRouter(
@@ -145,7 +139,7 @@ trait AppMesh extends Service {
     service by its virtualServiceName, and those requests are routed to the
     virtual node or virtual router that is specified as the provider for the virtual
     service.
-    For more information about virtual services, see Virtual Services.
+    For more information about virtual services, see Virtual services.
     */
   def createVirtualService(): Request[CreateVirtualServiceOutput, AWSError] = js.native
   def createVirtualService(callback: js.Function2[/* err */ AWSError, /* data */ CreateVirtualServiceOutput, Unit]): Request[CreateVirtualServiceOutput, AWSError] = js.native
@@ -156,7 +150,7 @@ trait AppMesh extends Service {
     service by its virtualServiceName, and those requests are routed to the
     virtual node or virtual router that is specified as the provider for the virtual
     service.
-    For more information about virtual services, see Virtual Services.
+    For more information about virtual services, see Virtual services.
     */
   def createVirtualService(params: CreateVirtualServiceInput): Request[CreateVirtualServiceOutput, AWSError] = js.native
   def createVirtualService(

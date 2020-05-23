@@ -58,32 +58,32 @@ trait Region extends js.Object {
 object Region {
   @scala.inline
   def apply(
-    byteLength: Int | Double = null,
-    byteOffset: Int | Double = null,
-    charLength: Int | Double = null,
-    charOffset: Int | Double = null,
-    endColumn: Int | Double = null,
-    endLine: Int | Double = null,
+    byteLength: js.UndefOr[Double] = js.undefined,
+    byteOffset: js.UndefOr[Double] = js.undefined,
+    charLength: js.UndefOr[Double] = js.undefined,
+    charOffset: js.UndefOr[Double] = js.undefined,
+    endColumn: js.UndefOr[Double] = js.undefined,
+    endLine: js.UndefOr[Double] = js.undefined,
     message: Message = null,
     properties: PropertyBag = null,
     snippet: ArtifactContent = null,
     sourceLanguage: String = null,
-    startColumn: Int | Double = null,
-    startLine: Int | Double = null
+    startColumn: js.UndefOr[Double] = js.undefined,
+    startLine: js.UndefOr[Double] = js.undefined
   ): Region = {
     val __obj = js.Dynamic.literal()
-    if (byteLength != null) __obj.updateDynamic("byteLength")(byteLength.asInstanceOf[js.Any])
-    if (byteOffset != null) __obj.updateDynamic("byteOffset")(byteOffset.asInstanceOf[js.Any])
-    if (charLength != null) __obj.updateDynamic("charLength")(charLength.asInstanceOf[js.Any])
-    if (charOffset != null) __obj.updateDynamic("charOffset")(charOffset.asInstanceOf[js.Any])
-    if (endColumn != null) __obj.updateDynamic("endColumn")(endColumn.asInstanceOf[js.Any])
-    if (endLine != null) __obj.updateDynamic("endLine")(endLine.asInstanceOf[js.Any])
+    if (!js.isUndefined(byteLength)) __obj.updateDynamic("byteLength")(byteLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(byteOffset)) __obj.updateDynamic("byteOffset")(byteOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(charLength)) __obj.updateDynamic("charLength")(charLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(charOffset)) __obj.updateDynamic("charOffset")(charOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endColumn)) __obj.updateDynamic("endColumn")(endColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endLine)) __obj.updateDynamic("endLine")(endLine.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (snippet != null) __obj.updateDynamic("snippet")(snippet.asInstanceOf[js.Any])
     if (sourceLanguage != null) __obj.updateDynamic("sourceLanguage")(sourceLanguage.asInstanceOf[js.Any])
-    if (startColumn != null) __obj.updateDynamic("startColumn")(startColumn.asInstanceOf[js.Any])
-    if (startLine != null) __obj.updateDynamic("startLine")(startLine.asInstanceOf[js.Any])
+    if (!js.isUndefined(startColumn)) __obj.updateDynamic("startColumn")(startColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startLine)) __obj.updateDynamic("startLine")(startLine.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Region]
   }
 }

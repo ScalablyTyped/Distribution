@@ -5,14 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Media.Transcoding.PrepareTranscodeResult")
-@js.native
-class PrepareTranscodeResult () extends IPrepareTranscodeResult {
-  /* CompleteClass */
-  override var canTranscode: Boolean = js.native
-  /* CompleteClass */
-  override var failureReason: TranscodeFailureReason = js.native
-  /* CompleteClass */
-  override def transcodeAsync(): IAsyncActionWithProgress[Double] = js.native
+trait PrepareTranscodeResult extends IPrepareTranscodeResult
+
+object PrepareTranscodeResult {
+  @scala.inline
+  def apply(
+    canTranscode: Boolean,
+    failureReason: TranscodeFailureReason,
+    transcodeAsync: () => IAsyncActionWithProgress[Double]
+  ): PrepareTranscodeResult = {
+    val __obj = js.Dynamic.literal(canTranscode = canTranscode.asInstanceOf[js.Any], failureReason = failureReason.asInstanceOf[js.Any], transcodeAsync = js.Any.fromFunction0(transcodeAsync))
+    __obj.asInstanceOf[PrepareTranscodeResult]
+  }
 }
 

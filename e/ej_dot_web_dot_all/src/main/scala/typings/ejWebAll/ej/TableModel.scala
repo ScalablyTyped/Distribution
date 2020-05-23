@@ -4,24 +4,45 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.TableModel")
-@js.native
-class TableModel protected () extends js.Object {
-  def this(name: String, jsonArray: js.Array[_], dataManager: DataManager, modelComputed: js.Any) = this()
-  def bindTo(element: js.Any): Unit = js.native
-  def get(index: Double): Unit = js.native
-  def getChanges(): Changes = js.native
-  def insert(json: js.Any): Unit = js.native
-  def isDirty(): Boolean = js.native
-  def length(): Double = js.native
-  def off(eventName: String, handler: js.Any): Unit = js.native
-  def on(eventName: String, handler: js.Any): Unit = js.native
-  def rejectChanges(): Unit = js.native
-  def remove(key: String): Unit = js.native
-  def saveChanges(): Unit = js.native
-  def setDataManager(dataManager: DataManager): Unit = js.native
-  def setDirty(dirty: js.Any, model: js.Any): Unit = js.native
-  def toArray(): js.Array[_] = js.native
-  def update(value: js.Any): Unit = js.native
+trait TableModel extends js.Object {
+  def bindTo(element: js.Any): Unit
+  def get(index: Double): Unit
+  def getChanges(): Changes
+  def insert(json: js.Any): Unit
+  def isDirty(): Boolean
+  def length(): Double
+  def off(eventName: String, handler: js.Any): Unit
+  def on(eventName: String, handler: js.Any): Unit
+  def rejectChanges(): Unit
+  def remove(key: String): Unit
+  def saveChanges(): Unit
+  def setDataManager(dataManager: DataManager): Unit
+  def setDirty(dirty: js.Any, model: js.Any): Unit
+  def toArray(): js.Array[_]
+  def update(value: js.Any): Unit
+}
+
+object TableModel {
+  @scala.inline
+  def apply(
+    bindTo: js.Any => Unit,
+    get: Double => Unit,
+    getChanges: () => Changes,
+    insert: js.Any => Unit,
+    isDirty: () => Boolean,
+    length: () => Double,
+    off: (String, js.Any) => Unit,
+    on: (String, js.Any) => Unit,
+    rejectChanges: () => Unit,
+    remove: String => Unit,
+    saveChanges: () => Unit,
+    setDataManager: DataManager => Unit,
+    setDirty: (js.Any, js.Any) => Unit,
+    toArray: () => js.Array[_],
+    update: js.Any => Unit
+  ): TableModel = {
+    val __obj = js.Dynamic.literal(bindTo = js.Any.fromFunction1(bindTo), get = js.Any.fromFunction1(get), getChanges = js.Any.fromFunction0(getChanges), insert = js.Any.fromFunction1(insert), isDirty = js.Any.fromFunction0(isDirty), length = js.Any.fromFunction0(length), off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on), rejectChanges = js.Any.fromFunction0(rejectChanges), remove = js.Any.fromFunction1(remove), saveChanges = js.Any.fromFunction0(saveChanges), setDataManager = js.Any.fromFunction1(setDataManager), setDirty = js.Any.fromFunction2(setDirty), toArray = js.Any.fromFunction0(toArray), update = js.Any.fromFunction1(update))
+    __obj.asInstanceOf[TableModel]
+  }
 }
 

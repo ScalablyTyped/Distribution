@@ -58,35 +58,35 @@ object Options {
     spellChecker: js.UndefOr[Boolean] = js.undefined,
     status: Boolean | (js.Array[String | StatusBarItem]) = null,
     styleSelectedText: js.UndefOr[Boolean] = js.undefined,
-    tabSize: Int | Double = null,
+    tabSize: js.UndefOr[Double] = js.undefined,
     toolbar: Boolean | (js.Array[String | ToolbarIcon]) = null,
     toolbarTips: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoDownloadFontAwesome)) __obj.updateDynamic("autoDownloadFontAwesome")(autoDownloadFontAwesome.asInstanceOf[js.Any])
-    if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDownloadFontAwesome)) __obj.updateDynamic("autoDownloadFontAwesome")(autoDownloadFontAwesome.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.get.asInstanceOf[js.Any])
     if (autosave != null) __obj.updateDynamic("autosave")(autosave.asInstanceOf[js.Any])
     if (blockStyles != null) __obj.updateDynamic("blockStyles")(blockStyles.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceSync)) __obj.updateDynamic("forceSync")(forceSync.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceSync)) __obj.updateDynamic("forceSync")(forceSync.get.asInstanceOf[js.Any])
     if (hideIcons != null) __obj.updateDynamic("hideIcons")(hideIcons.asInstanceOf[js.Any])
-    if (!js.isUndefined(indentWithTabs)) __obj.updateDynamic("indentWithTabs")(indentWithTabs.asInstanceOf[js.Any])
+    if (!js.isUndefined(indentWithTabs)) __obj.updateDynamic("indentWithTabs")(indentWithTabs.get.asInstanceOf[js.Any])
     if (initialValue != null) __obj.updateDynamic("initialValue")(initialValue.asInstanceOf[js.Any])
     if (insertTexts != null) __obj.updateDynamic("insertTexts")(insertTexts.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineWrapping)) __obj.updateDynamic("lineWrapping")(lineWrapping.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWrapping)) __obj.updateDynamic("lineWrapping")(lineWrapping.get.asInstanceOf[js.Any])
     if (parsingConfig != null) __obj.updateDynamic("parsingConfig")(parsingConfig.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (previewRender != null) __obj.updateDynamic("previewRender")(js.Any.fromFunction2(previewRender))
-    if (!js.isUndefined(promptURLs)) __obj.updateDynamic("promptURLs")(promptURLs.asInstanceOf[js.Any])
+    if (!js.isUndefined(promptURLs)) __obj.updateDynamic("promptURLs")(promptURLs.get.asInstanceOf[js.Any])
     if (renderingConfig != null) __obj.updateDynamic("renderingConfig")(renderingConfig.asInstanceOf[js.Any])
     if (shortcuts != null) __obj.updateDynamic("shortcuts")(shortcuts.asInstanceOf[js.Any])
     if (showIcons != null) __obj.updateDynamic("showIcons")(showIcons.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellChecker)) __obj.updateDynamic("spellChecker")(spellChecker.asInstanceOf[js.Any])
+    if (!js.isUndefined(spellChecker)) __obj.updateDynamic("spellChecker")(spellChecker.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (!js.isUndefined(styleSelectedText)) __obj.updateDynamic("styleSelectedText")(styleSelectedText.asInstanceOf[js.Any])
-    if (tabSize != null) __obj.updateDynamic("tabSize")(tabSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(styleSelectedText)) __obj.updateDynamic("styleSelectedText")(styleSelectedText.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabSize)) __obj.updateDynamic("tabSize")(tabSize.get.asInstanceOf[js.Any])
     if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(toolbarTips)) __obj.updateDynamic("toolbarTips")(toolbarTips.asInstanceOf[js.Any])
+    if (!js.isUndefined(toolbarTips)) __obj.updateDynamic("toolbarTips")(toolbarTips.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

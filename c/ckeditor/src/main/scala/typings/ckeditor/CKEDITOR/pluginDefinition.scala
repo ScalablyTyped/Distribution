@@ -28,7 +28,7 @@ object pluginDefinition {
     val __obj = js.Dynamic.literal()
     if (afterInit != null) __obj.updateDynamic("afterInit")(js.Any.fromFunction1(afterInit))
     if (beforeInit != null) __obj.updateDynamic("beforeInit")(js.Any.fromFunction1(beforeInit))
-    if (!js.isUndefined(hidpi)) __obj.updateDynamic("hidpi")(hidpi.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidpi)) __obj.updateDynamic("hidpi")(hidpi.get.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction0(onLoad))

@@ -38,13 +38,13 @@ object DocumentToObjectOptions {
     virtuals: js.UndefOr[Boolean] = js.undefined
   ): DocumentToObjectOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(depopulate)) __obj.updateDynamic("depopulate")(depopulate.asInstanceOf[js.Any])
-    if (!js.isUndefined(flattenMaps)) __obj.updateDynamic("flattenMaps")(flattenMaps.asInstanceOf[js.Any])
-    if (!js.isUndefined(getters)) __obj.updateDynamic("getters")(getters.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimize)) __obj.updateDynamic("minimize")(minimize.asInstanceOf[js.Any])
+    if (!js.isUndefined(depopulate)) __obj.updateDynamic("depopulate")(depopulate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flattenMaps)) __obj.updateDynamic("flattenMaps")(flattenMaps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(getters)) __obj.updateDynamic("getters")(getters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimize)) __obj.updateDynamic("minimize")(minimize.get.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction3(transform))
-    if (!js.isUndefined(versionKey)) __obj.updateDynamic("versionKey")(versionKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(virtuals)) __obj.updateDynamic("virtuals")(virtuals.asInstanceOf[js.Any])
+    if (!js.isUndefined(versionKey)) __obj.updateDynamic("versionKey")(versionKey.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(virtuals)) __obj.updateDynamic("virtuals")(virtuals.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentToObjectOptions]
   }
 }

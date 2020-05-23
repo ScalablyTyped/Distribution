@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapCardViewCellInfo")
 @js.native
-class BootstrapCardViewCellInfo protected () extends js.Object {
-  protected def this(instance: js.Any) = this()
+trait BootstrapCardViewCellInfo extends js.Object {
   val cardVisibleIndex: Double = js.native
   val instance: js.Any = js.native
   def endEdit(): Unit = js.native

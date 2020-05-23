@@ -1,9 +1,9 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.AnonArgumentFormat
-import typings.devextreme.AnonColorDashStyle
-import typings.devextreme.AnonGroupName
-import typings.devextreme.AnonHatching
+import typings.devextreme.anon.ArgumentFormat
+import typings.devextreme.anon.ColorDashStyle
+import typings.devextreme.anon.GroupName
+import typings.devextreme.anon.Hatching
 import typings.devextreme.devextremeStrings.datetime
 import typings.devextreme.devextremeStrings.none
 import typings.devextreme.devextremeStrings.numeric
@@ -19,15 +19,15 @@ trait dxPieChartSeriesTypesCommonPieChartSeries extends js.Object {
   /** @name dxPieChartSeriesTypes.CommonPieChartSeries.argumentType */
   var argumentType: js.UndefOr[datetime | numeric | string_] = js.undefined
   /** @name dxPieChartSeriesTypes.CommonPieChartSeries.border */
-  var border: js.UndefOr[AnonColorDashStyle] = js.undefined
+  var border: js.UndefOr[ColorDashStyle] = js.undefined
   /** @name dxPieChartSeriesTypes.CommonPieChartSeries.color */
   var color: js.UndefOr[String] = js.undefined
   /** @name dxPieChartSeriesTypes.CommonPieChartSeries.hoverMode */
   var hoverMode: js.UndefOr[none | onlyPoint] = js.undefined
   /** @name dxPieChartSeriesTypes.CommonPieChartSeries.hoverStyle */
-  var hoverStyle: js.UndefOr[AnonHatching] = js.undefined
+  var hoverStyle: js.UndefOr[Hatching] = js.undefined
   /** @name dxPieChartSeriesTypes.CommonPieChartSeries.label */
-  var label: js.UndefOr[AnonArgumentFormat] = js.undefined
+  var label: js.UndefOr[ArgumentFormat] = js.undefined
   /** @name dxPieChartSeriesTypes.CommonPieChartSeries.maxLabelCount */
   var maxLabelCount: js.UndefOr[Double] = js.undefined
   /** @name dxPieChartSeriesTypes.CommonPieChartSeries.minSegmentSize */
@@ -35,9 +35,9 @@ trait dxPieChartSeriesTypesCommonPieChartSeries extends js.Object {
   /** @name dxPieChartSeriesTypes.CommonPieChartSeries.selectionMode */
   var selectionMode: js.UndefOr[none | onlyPoint] = js.undefined
   /** @name dxPieChartSeriesTypes.CommonPieChartSeries.selectionStyle */
-  var selectionStyle: js.UndefOr[AnonHatching] = js.undefined
+  var selectionStyle: js.UndefOr[Hatching] = js.undefined
   /** @name dxPieChartSeriesTypes.CommonPieChartSeries.smallValuesGrouping */
-  var smallValuesGrouping: js.UndefOr[AnonGroupName] = js.undefined
+  var smallValuesGrouping: js.UndefOr[GroupName] = js.undefined
   /** @name dxPieChartSeriesTypes.CommonPieChartSeries.tagField */
   var tagField: js.UndefOr[String] = js.undefined
   /** @name dxPieChartSeriesTypes.CommonPieChartSeries.valueField */
@@ -49,16 +49,16 @@ object dxPieChartSeriesTypesCommonPieChartSeries {
   def apply(
     argumentField: String = null,
     argumentType: datetime | numeric | string_ = null,
-    border: AnonColorDashStyle = null,
+    border: ColorDashStyle = null,
     color: String = null,
     hoverMode: none | onlyPoint = null,
-    hoverStyle: AnonHatching = null,
-    label: AnonArgumentFormat = null,
-    maxLabelCount: Int | Double = null,
-    minSegmentSize: Int | Double = null,
+    hoverStyle: Hatching = null,
+    label: ArgumentFormat = null,
+    maxLabelCount: js.UndefOr[Double] = js.undefined,
+    minSegmentSize: js.UndefOr[Double] = js.undefined,
     selectionMode: none | onlyPoint = null,
-    selectionStyle: AnonHatching = null,
-    smallValuesGrouping: AnonGroupName = null,
+    selectionStyle: Hatching = null,
+    smallValuesGrouping: GroupName = null,
     tagField: String = null,
     valueField: String = null
   ): dxPieChartSeriesTypesCommonPieChartSeries = {
@@ -70,8 +70,8 @@ object dxPieChartSeriesTypesCommonPieChartSeries {
     if (hoverMode != null) __obj.updateDynamic("hoverMode")(hoverMode.asInstanceOf[js.Any])
     if (hoverStyle != null) __obj.updateDynamic("hoverStyle")(hoverStyle.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (maxLabelCount != null) __obj.updateDynamic("maxLabelCount")(maxLabelCount.asInstanceOf[js.Any])
-    if (minSegmentSize != null) __obj.updateDynamic("minSegmentSize")(minSegmentSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLabelCount)) __obj.updateDynamic("maxLabelCount")(maxLabelCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSegmentSize)) __obj.updateDynamic("minSegmentSize")(minSegmentSize.get.asInstanceOf[js.Any])
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
     if (selectionStyle != null) __obj.updateDynamic("selectionStyle")(selectionStyle.asInstanceOf[js.Any])
     if (smallValuesGrouping != null) __obj.updateDynamic("smallValuesGrouping")(smallValuesGrouping.asInstanceOf[js.Any])

@@ -14,9 +14,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Shell Object Type Information */
-@JSGlobal("Shell32.Shell")
 @js.native
-class Shell protected () extends js.Object {
+trait Shell extends js.Object {
   /** Get Application object */
   val Application: js.Any = js.native
   /** Get Parent object */

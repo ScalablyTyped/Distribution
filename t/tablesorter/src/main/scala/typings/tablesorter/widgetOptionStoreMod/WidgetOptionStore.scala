@@ -1,17 +1,17 @@
 package typings.tablesorter.widgetOptionStoreMod
 
+import typings.jquery.JQuery.AjaxSettings
+import typings.jquery.JQuery.Selector
+import typings.jquery.JQuery.jqXHR
 import typings.jquery.JQueryAjaxSettings
-import typings.jquery.JQuery_.AjaxSettings
-import typings.jquery.JQuery_.Selector
-import typings.jquery.JQuery_.jqXHR
 import typings.tablesorter.filterControlFactoryMod.FilterControlFactory
 import typings.tablesorter.filterFunctionCollectionMod.FilterFunctionCollection
 import typings.tablesorter.filterFunctionMod.FilterFunction
 import typings.tablesorter.filterPlaceholdersMod.FilterPlaceholders
 import typings.tablesorter.mappedSettingsMod.MappedSettings
 import typings.tablesorter.matchTypeSettingsMod.MatchTypeSettings
-import typings.tablesorter.mod._Global_.HTMLElement
-import typings.tablesorter.mod._Global_.JQuery
+import typings.tablesorter.mod.global.HTMLElement
+import typings.tablesorter.mod.global.JQuery
 import typings.tablesorter.pageSizeMod.PageSize
 import typings.tablesorter.pagerClassesMod.PagerClasses
 import typings.tablesorter.pagerDataPartMod.PagerDataPart
@@ -83,9 +83,9 @@ object WidgetOptionStore {
     filter_reset: Selector | JQuery[HTMLElement] = null,
     filter_resetOnEsc: js.UndefOr[Boolean] = js.undefined,
     filter_saveFilters: js.UndefOr[Boolean] = js.undefined,
-    filter_searchDelay: Int | Double = null,
+    filter_searchDelay: js.UndefOr[Double] = js.undefined,
     filter_searchFiltered: js.UndefOr[Boolean] = js.undefined,
-    filter_selectSource: SelectSources[TElement] | MappedSettings[SelectSources[TElement]] = null,
+    filter_selectSource: js.UndefOr[Null | SelectSources[TElement] | MappedSettings[SelectSources[TElement]]] = js.undefined,
     filter_selectSourceSeparator: String = null,
     filter_serversideFiltering: js.UndefOr[Boolean] = js.undefined,
     filter_startsWith: js.UndefOr[Boolean] = js.undefined,
@@ -110,7 +110,7 @@ object WidgetOptionStore {
     pager_savePages: js.UndefOr[Boolean] = js.undefined,
     pager_selectors: PagerSelectors = null,
     pager_size: PageSize = null,
-    pager_startPage: Int | Double = null,
+    pager_startPage: js.UndefOr[Double] = js.undefined,
     pager_storageKey: String = null,
     pager_updateArrows: js.UndefOr[Boolean] = js.undefined,
     resizable: js.UndefOr[Boolean] = js.undefined,
@@ -130,7 +130,7 @@ object WidgetOptionStore {
     stickyHeaders_offset: Double | Selector | JQuery[HTMLElement] = null,
     stickyHeaders_xScroll: Selector | JQuery[HTMLElement] = null,
     stickyHeaders_yScroll: Selector | JQuery[HTMLElement] = null,
-    stickyHeaders_zindex: Int | Double = null,
+    stickyHeaders_zindex: js.UndefOr[Double] = js.undefined,
     storage_fixedUrl: String = null,
     storage_group: String = null,
     storage_page: String = null,
@@ -140,14 +140,14 @@ object WidgetOptionStore {
   ): WidgetOptionStore[TElement] = {
     val __obj = js.Dynamic.literal($sticky = $sticky.asInstanceOf[js.Any], filter_$anyMatch = filter_$anyMatch.asInstanceOf[js.Any], filter_$externalFilters = filter_$externalFilters.asInstanceOf[js.Any], filter_initialized = filter_initialized.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (!js.isUndefined(columns_tfoot)) __obj.updateDynamic("columns_tfoot")(columns_tfoot.asInstanceOf[js.Any])
-    if (!js.isUndefined(columns_thead)) __obj.updateDynamic("columns_thead")(columns_thead.asInstanceOf[js.Any])
+    if (!js.isUndefined(columns_tfoot)) __obj.updateDynamic("columns_tfoot")(columns_tfoot.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columns_thead)) __obj.updateDynamic("columns_thead")(columns_thead.get.asInstanceOf[js.Any])
     if (filter_cellFilter != null) __obj.updateDynamic("filter_cellFilter")(filter_cellFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_childByColumn)) __obj.updateDynamic("filter_childByColumn")(filter_childByColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_childRows)) __obj.updateDynamic("filter_childRows")(filter_childRows.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_childWithSibs)) __obj.updateDynamic("filter_childWithSibs")(filter_childWithSibs.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_columnAnyMatch)) __obj.updateDynamic("filter_columnAnyMatch")(filter_columnAnyMatch.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_columnFilters)) __obj.updateDynamic("filter_columnFilters")(filter_columnFilters.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_childByColumn)) __obj.updateDynamic("filter_childByColumn")(filter_childByColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_childRows)) __obj.updateDynamic("filter_childRows")(filter_childRows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_childWithSibs)) __obj.updateDynamic("filter_childWithSibs")(filter_childWithSibs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_columnAnyMatch)) __obj.updateDynamic("filter_columnAnyMatch")(filter_columnAnyMatch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_columnFilters)) __obj.updateDynamic("filter_columnFilters")(filter_columnFilters.get.asInstanceOf[js.Any])
     if (filter_cssFilter != null) __obj.updateDynamic("filter_cssFilter")(filter_cssFilter.asInstanceOf[js.Any])
     if (filter_defaultAttrib != null) __obj.updateDynamic("filter_defaultAttrib")(filter_defaultAttrib.asInstanceOf[js.Any])
     if (filter_defaultFilter != null) __obj.updateDynamic("filter_defaultFilter")(filter_defaultFilter.asInstanceOf[js.Any])
@@ -157,60 +157,60 @@ object WidgetOptionStore {
     if (filter_filteredRow != null) __obj.updateDynamic("filter_filteredRow")(filter_filteredRow.asInstanceOf[js.Any])
     if (filter_formatter != null) __obj.updateDynamic("filter_formatter")(filter_formatter.asInstanceOf[js.Any])
     if (filter_functions != null) __obj.updateDynamic("filter_functions")(filter_functions.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_hideEmpty)) __obj.updateDynamic("filter_hideEmpty")(filter_hideEmpty.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_hideEmpty)) __obj.updateDynamic("filter_hideEmpty")(filter_hideEmpty.get.asInstanceOf[js.Any])
     if (filter_hideFilters != null) __obj.updateDynamic("filter_hideFilters")(filter_hideFilters.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_ignoreCase)) __obj.updateDynamic("filter_ignoreCase")(filter_ignoreCase.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_ignoreCase)) __obj.updateDynamic("filter_ignoreCase")(filter_ignoreCase.get.asInstanceOf[js.Any])
     if (filter_liveSearch != null) __obj.updateDynamic("filter_liveSearch")(filter_liveSearch.asInstanceOf[js.Any])
     if (filter_matchType != null) __obj.updateDynamic("filter_matchType")(filter_matchType.asInstanceOf[js.Any])
     if (filter_onlyAvail != null) __obj.updateDynamic("filter_onlyAvail")(filter_onlyAvail.asInstanceOf[js.Any])
     if (filter_placeholder != null) __obj.updateDynamic("filter_placeholder")(filter_placeholder.asInstanceOf[js.Any])
     if (filter_reset != null) __obj.updateDynamic("filter_reset")(filter_reset.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_resetOnEsc)) __obj.updateDynamic("filter_resetOnEsc")(filter_resetOnEsc.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_saveFilters)) __obj.updateDynamic("filter_saveFilters")(filter_saveFilters.asInstanceOf[js.Any])
-    if (filter_searchDelay != null) __obj.updateDynamic("filter_searchDelay")(filter_searchDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_searchFiltered)) __obj.updateDynamic("filter_searchFiltered")(filter_searchFiltered.asInstanceOf[js.Any])
-    if (filter_selectSource != null) __obj.updateDynamic("filter_selectSource")(filter_selectSource.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_resetOnEsc)) __obj.updateDynamic("filter_resetOnEsc")(filter_resetOnEsc.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_saveFilters)) __obj.updateDynamic("filter_saveFilters")(filter_saveFilters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_searchDelay)) __obj.updateDynamic("filter_searchDelay")(filter_searchDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_searchFiltered)) __obj.updateDynamic("filter_searchFiltered")(filter_searchFiltered.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_selectSource)) __obj.updateDynamic("filter_selectSource")(filter_selectSource.asInstanceOf[js.Any])
     if (filter_selectSourceSeparator != null) __obj.updateDynamic("filter_selectSourceSeparator")(filter_selectSourceSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_serversideFiltering)) __obj.updateDynamic("filter_serversideFiltering")(filter_serversideFiltering.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_startsWith)) __obj.updateDynamic("filter_startsWith")(filter_startsWith.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_useParsedData)) __obj.updateDynamic("filter_useParsedData")(filter_useParsedData.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_serversideFiltering)) __obj.updateDynamic("filter_serversideFiltering")(filter_serversideFiltering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_startsWith)) __obj.updateDynamic("filter_startsWith")(filter_startsWith.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_useParsedData)) __obj.updateDynamic("filter_useParsedData")(filter_useParsedData.get.asInstanceOf[js.Any])
     if (pager_ajaxError != null) __obj.updateDynamic("pager_ajaxError")(js.Any.fromFunction4(pager_ajaxError))
     if (pager_ajaxObject != null) __obj.updateDynamic("pager_ajaxObject")(pager_ajaxObject.asInstanceOf[js.Any])
     if (pager_ajaxProcessing != null) __obj.updateDynamic("pager_ajaxProcessing")(js.Any.fromFunction3(pager_ajaxProcessing))
     if (pager_ajaxUrl != null) __obj.updateDynamic("pager_ajaxUrl")(pager_ajaxUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(pager_countChildRows)) __obj.updateDynamic("pager_countChildRows")(pager_countChildRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(pager_countChildRows)) __obj.updateDynamic("pager_countChildRows")(pager_countChildRows.get.asInstanceOf[js.Any])
     if (pager_css != null) __obj.updateDynamic("pager_css")(pager_css.asInstanceOf[js.Any])
     if (pager_customAjaxUrl != null) __obj.updateDynamic("pager_customAjaxUrl")(js.Any.fromFunction2(pager_customAjaxUrl))
-    if (!js.isUndefined(pager_fixedHeight)) __obj.updateDynamic("pager_fixedHeight")(pager_fixedHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(pager_fixedHeight)) __obj.updateDynamic("pager_fixedHeight")(pager_fixedHeight.get.asInstanceOf[js.Any])
     if (pager_initialRows != null) __obj.updateDynamic("pager_initialRows")(pager_initialRows.asInstanceOf[js.Any])
     if (pager_output != null) __obj.updateDynamic("pager_output")(pager_output.asInstanceOf[js.Any])
     if (pager_pageReset != null) __obj.updateDynamic("pager_pageReset")(pager_pageReset.asInstanceOf[js.Any])
-    if (!js.isUndefined(pager_processAjaxOnInit)) __obj.updateDynamic("pager_processAjaxOnInit")(pager_processAjaxOnInit.asInstanceOf[js.Any])
-    if (!js.isUndefined(pager_removeRows)) __obj.updateDynamic("pager_removeRows")(pager_removeRows.asInstanceOf[js.Any])
-    if (!js.isUndefined(pager_savePages)) __obj.updateDynamic("pager_savePages")(pager_savePages.asInstanceOf[js.Any])
+    if (!js.isUndefined(pager_processAjaxOnInit)) __obj.updateDynamic("pager_processAjaxOnInit")(pager_processAjaxOnInit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pager_removeRows)) __obj.updateDynamic("pager_removeRows")(pager_removeRows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pager_savePages)) __obj.updateDynamic("pager_savePages")(pager_savePages.get.asInstanceOf[js.Any])
     if (pager_selectors != null) __obj.updateDynamic("pager_selectors")(pager_selectors.asInstanceOf[js.Any])
     if (pager_size != null) __obj.updateDynamic("pager_size")(pager_size.asInstanceOf[js.Any])
-    if (pager_startPage != null) __obj.updateDynamic("pager_startPage")(pager_startPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(pager_startPage)) __obj.updateDynamic("pager_startPage")(pager_startPage.get.asInstanceOf[js.Any])
     if (pager_storageKey != null) __obj.updateDynamic("pager_storageKey")(pager_storageKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(pager_updateArrows)) __obj.updateDynamic("pager_updateArrows")(pager_updateArrows.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizable_addLastColumn)) __obj.updateDynamic("resizable_addLastColumn")(resizable_addLastColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizable_includeFooter)) __obj.updateDynamic("resizable_includeFooter")(resizable_includeFooter.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizable_targetLast)) __obj.updateDynamic("resizable_targetLast")(resizable_targetLast.asInstanceOf[js.Any])
+    if (!js.isUndefined(pager_updateArrows)) __obj.updateDynamic("pager_updateArrows")(pager_updateArrows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable_addLastColumn)) __obj.updateDynamic("resizable_addLastColumn")(resizable_addLastColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable_includeFooter)) __obj.updateDynamic("resizable_includeFooter")(resizable_includeFooter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable_targetLast)) __obj.updateDynamic("resizable_targetLast")(resizable_targetLast.get.asInstanceOf[js.Any])
     if (resizable_throttle != null) __obj.updateDynamic("resizable_throttle")(resizable_throttle.asInstanceOf[js.Any])
     if (resizable_widths != null) __obj.updateDynamic("resizable_widths")(resizable_widths.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveSort)) __obj.updateDynamic("saveSort")(saveSort.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveSort)) __obj.updateDynamic("saveSort")(saveSort.get.asInstanceOf[js.Any])
     if (stickyHeaders != null) __obj.updateDynamic("stickyHeaders")(stickyHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(stickyHeaders_addResizeEvent)) __obj.updateDynamic("stickyHeaders_addResizeEvent")(stickyHeaders_addResizeEvent.asInstanceOf[js.Any])
+    if (!js.isUndefined(stickyHeaders_addResizeEvent)) __obj.updateDynamic("stickyHeaders_addResizeEvent")(stickyHeaders_addResizeEvent.get.asInstanceOf[js.Any])
     if (stickyHeaders_appendTo != null) __obj.updateDynamic("stickyHeaders_appendTo")(stickyHeaders_appendTo.asInstanceOf[js.Any])
     if (stickyHeaders_attachTo != null) __obj.updateDynamic("stickyHeaders_attachTo")(stickyHeaders_attachTo.asInstanceOf[js.Any])
     if (stickyHeaders_cloneId != null) __obj.updateDynamic("stickyHeaders_cloneId")(stickyHeaders_cloneId.asInstanceOf[js.Any])
-    if (!js.isUndefined(stickyHeaders_filteredToTop)) __obj.updateDynamic("stickyHeaders_filteredToTop")(stickyHeaders_filteredToTop.asInstanceOf[js.Any])
-    if (!js.isUndefined(stickyHeaders_includeCaption)) __obj.updateDynamic("stickyHeaders_includeCaption")(stickyHeaders_includeCaption.asInstanceOf[js.Any])
+    if (!js.isUndefined(stickyHeaders_filteredToTop)) __obj.updateDynamic("stickyHeaders_filteredToTop")(stickyHeaders_filteredToTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stickyHeaders_includeCaption)) __obj.updateDynamic("stickyHeaders_includeCaption")(stickyHeaders_includeCaption.get.asInstanceOf[js.Any])
     if (stickyHeaders_offset != null) __obj.updateDynamic("stickyHeaders_offset")(stickyHeaders_offset.asInstanceOf[js.Any])
     if (stickyHeaders_xScroll != null) __obj.updateDynamic("stickyHeaders_xScroll")(stickyHeaders_xScroll.asInstanceOf[js.Any])
     if (stickyHeaders_yScroll != null) __obj.updateDynamic("stickyHeaders_yScroll")(stickyHeaders_yScroll.asInstanceOf[js.Any])
-    if (stickyHeaders_zindex != null) __obj.updateDynamic("stickyHeaders_zindex")(stickyHeaders_zindex.asInstanceOf[js.Any])
+    if (!js.isUndefined(stickyHeaders_zindex)) __obj.updateDynamic("stickyHeaders_zindex")(stickyHeaders_zindex.get.asInstanceOf[js.Any])
     if (storage_fixedUrl != null) __obj.updateDynamic("storage_fixedUrl")(storage_fixedUrl.asInstanceOf[js.Any])
     if (storage_group != null) __obj.updateDynamic("storage_group")(storage_group.asInstanceOf[js.Any])
     if (storage_page != null) __obj.updateDynamic("storage_page")(storage_page.asInstanceOf[js.Any])

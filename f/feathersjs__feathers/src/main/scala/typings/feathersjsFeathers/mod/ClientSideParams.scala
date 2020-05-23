@@ -1,6 +1,6 @@
 package typings.feathersjsFeathers.mod
 
-import typings.feathersjsFeathers.PickPaginationOptionsmax
+import typings.feathersjsFeathers.anon.PickPaginationOptionsmax
 import typings.feathersjsFeathers.feathersjsFeathersBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -81,7 +81,7 @@ object Crawler {
   def apply(
     Classifiers: ClassifierNameList = null,
     Configuration: CrawlerConfiguration = null,
-    CrawlElapsedTime: Int | Double = null,
+    CrawlElapsedTime: js.UndefOr[MillisecondsCount] = js.undefined,
     CrawlerSecurityConfiguration: CrawlerSecurityConfiguration = null,
     CreationTime: Timestamp = null,
     DatabaseName: DatabaseName = null,
@@ -95,12 +95,12 @@ object Crawler {
     State: CrawlerState = null,
     TablePrefix: TablePrefix = null,
     Targets: CrawlerTargets = null,
-    Version: Int | Double = null
+    Version: js.UndefOr[VersionId] = js.undefined
   ): Crawler = {
     val __obj = js.Dynamic.literal()
     if (Classifiers != null) __obj.updateDynamic("Classifiers")(Classifiers.asInstanceOf[js.Any])
     if (Configuration != null) __obj.updateDynamic("Configuration")(Configuration.asInstanceOf[js.Any])
-    if (CrawlElapsedTime != null) __obj.updateDynamic("CrawlElapsedTime")(CrawlElapsedTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(CrawlElapsedTime)) __obj.updateDynamic("CrawlElapsedTime")(CrawlElapsedTime.get.asInstanceOf[js.Any])
     if (CrawlerSecurityConfiguration != null) __obj.updateDynamic("CrawlerSecurityConfiguration")(CrawlerSecurityConfiguration.asInstanceOf[js.Any])
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
     if (DatabaseName != null) __obj.updateDynamic("DatabaseName")(DatabaseName.asInstanceOf[js.Any])
@@ -114,7 +114,7 @@ object Crawler {
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (TablePrefix != null) __obj.updateDynamic("TablePrefix")(TablePrefix.asInstanceOf[js.Any])
     if (Targets != null) __obj.updateDynamic("Targets")(Targets.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
+    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Crawler]
   }
 }

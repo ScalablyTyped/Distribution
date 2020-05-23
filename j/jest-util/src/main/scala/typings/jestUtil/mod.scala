@@ -7,7 +7,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.callsites.mod.CallSite
 import typings.jestConsole.mod.CustomConsole
 import typings.jestConsole.typesMod.LogEntry
-import typings.jestFakeTimers.AnonConfig
+import typings.jestFakeTimers.anon.Config
 import typings.jestFakeTimers.mod.JestFakeTimers
 import typings.jestTestResult.typesMod.AggregatedResult
 import typings.jestTestResult.typesMod.CodeCoverageFormatter
@@ -16,6 +16,12 @@ import typings.jestTestResult.typesMod.FormattedTestResults
 import typings.jestTypes.configMod.ConfigGlobals
 import typings.jestTypes.configMod.Glob
 import typings.jestTypes.configMod.Path
+import typings.jestUtil.anon.FnCall
+import typings.jestUtil.anon.FnCallResultsCodeCoverageFormatterReporter
+import typings.jestUtil.anon.FnCallValueOptionsCycles
+import typings.jestUtil.anon.TypeofBufferedConsole
+import typings.jestUtil.anon.TypeofpreRunMessage
+import typings.jestUtil.anon.TypeofspecialChars
 import typings.jestUtil.deepCyclicCopyMod.DeepCyclicCopyOptions
 import typings.jestUtil.errorWithStackMod.default
 import typings.node.NodeJS.Global
@@ -23,7 +29,7 @@ import typings.node.NodeJS.WritableStream
 import typings.std.Record
 import typings.std.RegExp
 import typings.std.WeakMap
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,13 +44,12 @@ object mod extends js.Object {
   
   @js.native
   class ErrorWithStack protected () extends default {
-    def this(message: js.UndefOr[scala.Nothing], callsite: js.Function) = this()
-    def this(message: String, callsite: js.Function) = this()
+    def this(message: js.UndefOr[String], callsite: js.Function) = this()
   }
   
   @js.native
   class FakeTimers[TimerRef] protected () extends JestFakeTimers[TimerRef] {
-    def this(hasGlobalModuleMockerTimerConfigConfigMaxLoops: AnonConfig[/* import warning: RewrittenClass.unapply cls was tparam TimerRef */ _]) = this()
+    def this(hasGlobalModuleMockerTimerConfigConfigMaxLoops: Config[/* import warning: RewrittenClass.unapply cls was tparam TimerRef */ _]) = this()
   }
   
   @js.native
@@ -99,7 +104,7 @@ object mod extends js.Object {
   def pluralize(word: String, count: Double): String = js.native
   def replacePathSepForGlob(path: Path): Glob = js.native
   def setGlobal(globalToMutate: Global, key: String, value: js.Any): Unit = js.native
-  def setGlobal(globalToMutate: Window_, key: String, value: js.Any): Unit = js.native
+  def setGlobal(globalToMutate: Window, key: String, value: js.Any): Unit = js.native
   def testPathPatternToRegExp(testPathPattern: String): RegExp = js.native
   @js.native
   object Console extends TopLevel[
@@ -109,14 +114,14 @@ object mod extends js.Object {
   @js.native
   object ErrorWithStack
     extends TopLevel[
-          Instantiable2[/* message */ js.UndefOr[String], /* callsite */ js.Function, default]
+          Instantiable2[js.UndefOr[/* message */ String], /* callsite */ js.Function, default]
         ]
   
   @js.native
   object FakeTimers
     extends TopLevel[
           Instantiable1[
-            /* hasGlobalModuleMockerTimerConfigConfigMaxLoops */ AnonConfig[/* import warning: RewrittenClass.unapply cls was tparam TimerRef */ js.Any], 
+            /* hasGlobalModuleMockerTimerConfigConfigMaxLoops */ Config[/* import warning: RewrittenClass.unapply cls was tparam TimerRef */ js.Any], 
             JestFakeTimers[js.Object]
           ]
         ]

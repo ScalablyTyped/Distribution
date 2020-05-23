@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.mongodb.mod.MongoError
 import typings.mongodb.mod.SessionOptions
-import typings.mongoose.ConnectionthenPromiseConn
-import typings.mongoose.TypeofSchema
-import typings.mongoose.Typeofmongoose
+import typings.mongoose.anon.ConnectionthenPromiseConn
+import typings.mongoose.anon.TypeofSchema
+import typings.mongoose.anon.Typeofmongoose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

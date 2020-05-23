@@ -19,14 +19,14 @@ object DrawOptionsConfig {
     lineJoin: String = null,
     shadow: js.Any = null,
     stroke: String = null,
-    strokeWidth: Int | Double = null
+    strokeWidth: js.UndefOr[Double] = js.undefined
   ): DrawOptionsConfig = {
     val __obj = js.Dynamic.literal()
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (lineJoin != null) __obj.updateDynamic("lineJoin")(lineJoin.asInstanceOf[js.Any])
     if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(strokeWidth)) __obj.updateDynamic("strokeWidth")(strokeWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawOptionsConfig]
   }
 }

@@ -12,9 +12,9 @@ trait SignalMetric extends js.Object {
 
 object SignalMetric {
   @scala.inline
-  def apply(metric: String, value: Double, timestamp: Int | Double = null): SignalMetric = {
+  def apply(metric: String, value: Double, timestamp: js.UndefOr[Double] = js.undefined): SignalMetric = {
     val __obj = js.Dynamic.literal(metric = metric.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignalMetric]
   }
 }

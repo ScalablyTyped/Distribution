@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A grouping of people or organizations with a common purpose
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait Organization extends DomainResource {
   /**
     * Contains extended information for property 'active'.
@@ -101,7 +101,7 @@ object Organization {
     if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
     if (_name != null) __obj.updateDynamic("_name")(_name.asInstanceOf[js.Any])
     if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (contact != null) __obj.updateDynamic("contact")(contact.asInstanceOf[js.Any])

@@ -752,6 +752,9 @@ object rcMenuStrings {
   sealed trait WebkitWritingMode extends js.Object
   
   @js.native
+  sealed trait WebkittextUnderlinePosition extends js.Object
+  
+  @js.native
   sealed trait additions extends js.Object
   
   @js.native
@@ -2159,6 +2162,21 @@ object rcMenuStrings {
   sealed trait scrollSnapDestination extends js.Object
   
   @js.native
+  sealed trait scrollSnapMargin extends js.Object
+  
+  @js.native
+  sealed trait scrollSnapMarginBottom extends js.Object
+  
+  @js.native
+  sealed trait scrollSnapMarginLeft extends js.Object
+  
+  @js.native
+  sealed trait scrollSnapMarginRight extends js.Object
+  
+  @js.native
+  sealed trait scrollSnapMarginTop extends js.Object
+  
+  @js.native
   sealed trait scrollSnapPointsX extends js.Object
   
   @js.native
@@ -2927,6 +2945,8 @@ object rcMenuStrings {
   def WebkitUserSelect: WebkitUserSelect = "WebkitUserSelect".asInstanceOf[WebkitUserSelect]
   @scala.inline
   def WebkitWritingMode: WebkitWritingMode = "WebkitWritingMode".asInstanceOf[WebkitWritingMode]
+  @scala.inline
+  def WebkittextUnderlinePosition: WebkittextUnderlinePosition = "WebkittextUnderlinePosition".asInstanceOf[WebkittextUnderlinePosition]
   @scala.inline
   def additions: additions = "additions".asInstanceOf[additions]
   @scala.inline
@@ -3865,6 +3885,16 @@ object rcMenuStrings {
   def scrollSnapCoordinate: scrollSnapCoordinate = "scrollSnapCoordinate".asInstanceOf[scrollSnapCoordinate]
   @scala.inline
   def scrollSnapDestination: scrollSnapDestination = "scrollSnapDestination".asInstanceOf[scrollSnapDestination]
+  @scala.inline
+  def scrollSnapMargin: scrollSnapMargin = "scrollSnapMargin".asInstanceOf[scrollSnapMargin]
+  @scala.inline
+  def scrollSnapMarginBottom: scrollSnapMarginBottom = "scrollSnapMarginBottom".asInstanceOf[scrollSnapMarginBottom]
+  @scala.inline
+  def scrollSnapMarginLeft: scrollSnapMarginLeft = "scrollSnapMarginLeft".asInstanceOf[scrollSnapMarginLeft]
+  @scala.inline
+  def scrollSnapMarginRight: scrollSnapMarginRight = "scrollSnapMarginRight".asInstanceOf[scrollSnapMarginRight]
+  @scala.inline
+  def scrollSnapMarginTop: scrollSnapMarginTop = "scrollSnapMarginTop".asInstanceOf[scrollSnapMarginTop]
   @scala.inline
   def scrollSnapPointsX: scrollSnapPointsX = "scrollSnapPointsX".asInstanceOf[scrollSnapPointsX]
   @scala.inline

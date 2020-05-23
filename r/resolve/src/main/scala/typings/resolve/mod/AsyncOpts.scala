@@ -11,6 +11,8 @@ trait AsyncOpts extends Opts {
   var isFile: js.UndefOr[js.Function2[/* file */ String, /* cb */ existsCallback, Unit]] = js.undefined
   /** how to read files asynchronously (defaults to fs.readFile) */
   var readFile: js.UndefOr[js.Function2[/* file */ String, /* cb */ readFileCallback, Unit]] = js.undefined
+  /** function to asynchronously resolve a potential symlink to its real path */
+  var realpath: js.UndefOr[js.Function2[/* file */ String, /* cb */ realpathCallback, Unit]] = js.undefined
 }
 
 object AsyncOpts {
@@ -23,10 +25,12 @@ object AsyncOpts {
     isFile: (/* file */ String, /* cb */ existsCallback) => Unit = null,
     moduleDirectory: String | js.Array[String] = null,
     packageFilter: (/* pkg */ js.Any, /* pkgfile */ String) => _ = null,
+    packageIterator: (/* request */ String, /* start */ String, /* getPackageCandidates */ js.Function0[js.Array[String]], /* opts */ Opts) => js.Array[String] = null,
     pathFilter: (/* pkg */ js.Any, /* path */ String, /* relativePath */ String) => String = null,
     paths: String | js.Array[String] = null,
     preserveSymlinks: js.UndefOr[Boolean] = js.undefined,
-    readFile: (/* file */ String, /* cb */ readFileCallback) => Unit = null
+    readFile: (/* file */ String, /* cb */ readFileCallback) => Unit = null,
+    realpath: (/* file */ String, /* cb */ realpathCallback) => Unit = null
   ): AsyncOpts = {
     val __obj = js.Dynamic.literal()
     if (_package != null) __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
@@ -36,10 +40,12 @@ object AsyncOpts {
     if (isFile != null) __obj.updateDynamic("isFile")(js.Any.fromFunction2(isFile))
     if (moduleDirectory != null) __obj.updateDynamic("moduleDirectory")(moduleDirectory.asInstanceOf[js.Any])
     if (packageFilter != null) __obj.updateDynamic("packageFilter")(js.Any.fromFunction2(packageFilter))
+    if (packageIterator != null) __obj.updateDynamic("packageIterator")(js.Any.fromFunction4(packageIterator))
     if (pathFilter != null) __obj.updateDynamic("pathFilter")(js.Any.fromFunction3(pathFilter))
     if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveSymlinks)) __obj.updateDynamic("preserveSymlinks")(preserveSymlinks.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveSymlinks)) __obj.updateDynamic("preserveSymlinks")(preserveSymlinks.get.asInstanceOf[js.Any])
     if (readFile != null) __obj.updateDynamic("readFile")(js.Any.fromFunction2(readFile))
+    if (realpath != null) __obj.updateDynamic("realpath")(js.Any.fromFunction2(realpath))
     __obj.asInstanceOf[AsyncOpts]
   }
 }

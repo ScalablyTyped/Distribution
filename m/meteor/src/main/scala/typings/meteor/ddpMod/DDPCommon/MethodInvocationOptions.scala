@@ -22,9 +22,8 @@ object MethodInvocationOptions {
     setUserId: /* newUserId */ String => Unit = null,
     userId: String = null
   ): MethodInvocationOptions = {
-    val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], isSimulation = isSimulation.asInstanceOf[js.Any], randomSeed = randomSeed.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], isSimulation = isSimulation.asInstanceOf[js.Any], randomSeed = randomSeed.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
     if (setUserId != null) __obj.updateDynamic("setUserId")(js.Any.fromFunction1(setUserId))
-    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MethodInvocationOptions]
   }
 }

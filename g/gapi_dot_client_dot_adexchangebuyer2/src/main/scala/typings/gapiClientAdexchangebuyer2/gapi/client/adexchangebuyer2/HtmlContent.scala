@@ -15,11 +15,15 @@ trait HtmlContent extends js.Object {
 
 object HtmlContent {
   @scala.inline
-  def apply(height: Int | Double = null, snippet: String = null, width: Int | Double = null): HtmlContent = {
+  def apply(
+    height: js.UndefOr[Double] = js.undefined,
+    snippet: String = null,
+    width: js.UndefOr[Double] = js.undefined
+  ): HtmlContent = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (snippet != null) __obj.updateDynamic("snippet")(snippet.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HtmlContent]
   }
 }

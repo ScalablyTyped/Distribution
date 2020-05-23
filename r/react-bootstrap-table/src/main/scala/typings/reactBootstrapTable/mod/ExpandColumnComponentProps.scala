@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait ExpandColumnComponentProps extends js.Object {
   /**
-  	 * True if the current row is able to be expanded.
-  	 */
+    * True if the current row is able to be expanded.
+    */
   var isExpandableRow: Boolean
   /**
-  	 * True if the current row is currently expanded.
-  	 */
+    * True if the current row is currently expanded.
+    */
   var isExpanded: Boolean
 }
 

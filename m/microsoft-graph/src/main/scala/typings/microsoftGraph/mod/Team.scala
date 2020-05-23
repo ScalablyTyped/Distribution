@@ -51,7 +51,7 @@ object Team {
     if (guestSettings != null) __obj.updateDynamic("guestSettings")(guestSettings.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (installedApps != null) __obj.updateDynamic("installedApps")(installedApps.asInstanceOf[js.Any])
-    if (!js.isUndefined(isArchived)) __obj.updateDynamic("isArchived")(isArchived.asInstanceOf[js.Any])
+    if (!js.isUndefined(isArchived)) __obj.updateDynamic("isArchived")(isArchived.get.asInstanceOf[js.Any])
     if (memberSettings != null) __obj.updateDynamic("memberSettings")(memberSettings.asInstanceOf[js.Any])
     if (messagingSettings != null) __obj.updateDynamic("messagingSettings")(messagingSettings.asInstanceOf[js.Any])
     if (operations != null) __obj.updateDynamic("operations")(operations.asInstanceOf[js.Any])

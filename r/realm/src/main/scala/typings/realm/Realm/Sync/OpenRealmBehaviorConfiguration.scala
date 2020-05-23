@@ -14,12 +14,12 @@ object OpenRealmBehaviorConfiguration {
   @scala.inline
   def apply(
     `type`: OpenRealmBehaviorType,
-    timeOut: Int | Double = null,
+    timeOut: js.UndefOr[Double] = js.undefined,
     timeOutBehavior: OpenRealmTimeOutBehavior = null
   ): OpenRealmBehaviorConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (timeOut != null) __obj.updateDynamic("timeOut")(timeOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeOut)) __obj.updateDynamic("timeOut")(timeOut.get.asInstanceOf[js.Any])
     if (timeOutBehavior != null) __obj.updateDynamic("timeOutBehavior")(timeOutBehavior.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenRealmBehaviorConfiguration]
   }

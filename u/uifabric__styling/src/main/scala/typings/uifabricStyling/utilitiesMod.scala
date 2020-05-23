@@ -1,6 +1,7 @@
 package typings.uifabricStyling
 
 import org.scalablytyped.runtime.TopLevel
+import typings.uifabricStyling.anon.PartialIIconOptions
 import typings.uifabricStyling.iconsMod.IIconRecord
 import typings.uifabricStyling.iconsMod.IIconSubset
 import scala.scalajs.js

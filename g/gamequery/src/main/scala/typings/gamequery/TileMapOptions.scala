@@ -17,22 +17,22 @@ trait TileMapOptions extends js.Object {
 object TileMapOptions {
   @scala.inline
   def apply(
-    buffer: Int | Double = null,
-    height: Int | Double = null,
-    posx: Int | Double = null,
-    posy: Int | Double = null,
-    sizex: Int | Double = null,
-    sizey: Int | Double = null,
-    width: Int | Double = null
+    buffer: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
+    posx: js.UndefOr[Double] = js.undefined,
+    posy: js.UndefOr[Double] = js.undefined,
+    sizex: js.UndefOr[Double] = js.undefined,
+    sizey: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): TileMapOptions = {
     val __obj = js.Dynamic.literal()
-    if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (posx != null) __obj.updateDynamic("posx")(posx.asInstanceOf[js.Any])
-    if (posy != null) __obj.updateDynamic("posy")(posy.asInstanceOf[js.Any])
-    if (sizex != null) __obj.updateDynamic("sizex")(sizex.asInstanceOf[js.Any])
-    if (sizey != null) __obj.updateDynamic("sizey")(sizey.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(posx)) __obj.updateDynamic("posx")(posx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(posy)) __obj.updateDynamic("posy")(posy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizex)) __obj.updateDynamic("sizex")(sizex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizey)) __obj.updateDynamic("sizey")(sizey.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileMapOptions]
   }
 }

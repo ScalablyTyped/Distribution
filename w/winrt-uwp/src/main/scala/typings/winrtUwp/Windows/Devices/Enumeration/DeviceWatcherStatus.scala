@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Enumeration
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,26 +34,6 @@ object DeviceWatcherStatus extends js.Object {
   /** The client has called Stop and the watcher is still in the process of stopping. Events may still be raised. */
   @js.native
   sealed trait stopping extends DeviceWatcherStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DeviceWatcherStatus with Double] = js.native
-  /* 5 */ @js.native
-  object aborted extends TopLevel[aborted with Double]
-  
-  /* 0 */ @js.native
-  object created extends TopLevel[created with Double]
-  
-  /* 2 */ @js.native
-  object enumerationCompleted extends TopLevel[enumerationCompleted with Double]
-  
-  /* 1 */ @js.native
-  object started extends TopLevel[started with Double]
-  
-  /* 4 */ @js.native
-  object stopped extends TopLevel[stopped with Double]
-  
-  /* 3 */ @js.native
-  object stopping extends TopLevel[stopping with Double]
   
 }
 

@@ -16,20 +16,20 @@ trait IElementDimension extends js.Object {
 object IElementDimension {
   @scala.inline
   def apply(
-    rootMaxH: Int | Double = null,
-    rootMaxW: Int | Double = null,
-    rowIndexCellW: Int | Double = null,
-    rowSelectedCellW: Int | Double = null,
-    scrollH: Int | Double = null,
-    scrollW: Int | Double = null
+    rootMaxH: js.UndefOr[Double] = js.undefined,
+    rootMaxW: js.UndefOr[Double] = js.undefined,
+    rowIndexCellW: js.UndefOr[Double] = js.undefined,
+    rowSelectedCellW: js.UndefOr[Double] = js.undefined,
+    scrollH: js.UndefOr[Double] = js.undefined,
+    scrollW: js.UndefOr[Double] = js.undefined
   ): IElementDimension = {
     val __obj = js.Dynamic.literal()
-    if (rootMaxH != null) __obj.updateDynamic("rootMaxH")(rootMaxH.asInstanceOf[js.Any])
-    if (rootMaxW != null) __obj.updateDynamic("rootMaxW")(rootMaxW.asInstanceOf[js.Any])
-    if (rowIndexCellW != null) __obj.updateDynamic("rowIndexCellW")(rowIndexCellW.asInstanceOf[js.Any])
-    if (rowSelectedCellW != null) __obj.updateDynamic("rowSelectedCellW")(rowSelectedCellW.asInstanceOf[js.Any])
-    if (scrollH != null) __obj.updateDynamic("scrollH")(scrollH.asInstanceOf[js.Any])
-    if (scrollW != null) __obj.updateDynamic("scrollW")(scrollW.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootMaxH)) __obj.updateDynamic("rootMaxH")(rootMaxH.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootMaxW)) __obj.updateDynamic("rootMaxW")(rootMaxW.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowIndexCellW)) __obj.updateDynamic("rowIndexCellW")(rowIndexCellW.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowSelectedCellW)) __obj.updateDynamic("rowSelectedCellW")(rowSelectedCellW.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollH)) __obj.updateDynamic("scrollH")(scrollH.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollW)) __obj.updateDynamic("scrollW")(scrollW.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IElementDimension]
   }
 }

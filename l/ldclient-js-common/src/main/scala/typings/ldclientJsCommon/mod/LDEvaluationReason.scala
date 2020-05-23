@@ -43,13 +43,13 @@ object LDEvaluationReason {
     errorKind: String = null,
     prerequisiteKey: String = null,
     ruleId: String = null,
-    ruleIndex: Int | Double = null
+    ruleIndex: js.UndefOr[Double] = js.undefined
   ): LDEvaluationReason = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
     if (errorKind != null) __obj.updateDynamic("errorKind")(errorKind.asInstanceOf[js.Any])
     if (prerequisiteKey != null) __obj.updateDynamic("prerequisiteKey")(prerequisiteKey.asInstanceOf[js.Any])
     if (ruleId != null) __obj.updateDynamic("ruleId")(ruleId.asInstanceOf[js.Any])
-    if (ruleIndex != null) __obj.updateDynamic("ruleIndex")(ruleIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(ruleIndex)) __obj.updateDynamic("ruleIndex")(ruleIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LDEvaluationReason]
   }
 }

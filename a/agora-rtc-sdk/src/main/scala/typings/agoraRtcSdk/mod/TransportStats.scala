@@ -32,7 +32,7 @@ trait TransportStats extends js.Object {
     * - "unknown": Unknown network type.
     * - "UNSUPPORTED": The browser does not support getting the network type.
     *
-    * **Note:**
+    * **Note**
     *
     * Chrome 61 or later is required for this function, and the compatibility is not guaranteed.
     * See [Network Information API](https://developer.mozilla.org/en-US/docs/Web/API/Network_Information_API) for details.

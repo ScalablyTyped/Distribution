@@ -67,7 +67,7 @@ object ISetupIntentCreationOptions {
   def apply(
     confirm: js.UndefOr[Boolean] = js.undefined,
     customer: String = null,
-    description: String = null,
+    description: js.UndefOr[Null | String] = js.undefined,
     metadata: IOptionsMetadata = null,
     on_behalf_of: String = null,
     payment_method: String = null,
@@ -77,9 +77,9 @@ object ISetupIntentCreationOptions {
     usage: SetupIntentUsageType = null
   ): ISetupIntentCreationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(confirm)) __obj.updateDynamic("confirm")(confirm.asInstanceOf[js.Any])
+    if (!js.isUndefined(confirm)) __obj.updateDynamic("confirm")(confirm.get.asInstanceOf[js.Any])
     if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of.asInstanceOf[js.Any])
     if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])

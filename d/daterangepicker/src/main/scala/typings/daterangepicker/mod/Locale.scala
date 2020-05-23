@@ -58,7 +58,7 @@ object Locale {
     cancelLabel: String = null,
     customRangeLabel: String = null,
     daysOfWeek: js.Array[String] = null,
-    firstDay: Int | Double = null,
+    firstDay: js.UndefOr[Double] = js.undefined,
     format: String = null,
     fromLabel: String = null,
     monthNames: js.Array[String] = null,
@@ -71,7 +71,7 @@ object Locale {
     if (cancelLabel != null) __obj.updateDynamic("cancelLabel")(cancelLabel.asInstanceOf[js.Any])
     if (customRangeLabel != null) __obj.updateDynamic("customRangeLabel")(customRangeLabel.asInstanceOf[js.Any])
     if (daysOfWeek != null) __obj.updateDynamic("daysOfWeek")(daysOfWeek.asInstanceOf[js.Any])
-    if (firstDay != null) __obj.updateDynamic("firstDay")(firstDay.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstDay)) __obj.updateDynamic("firstDay")(firstDay.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (fromLabel != null) __obj.updateDynamic("fromLabel")(fromLabel.asInstanceOf[js.Any])
     if (monthNames != null) __obj.updateDynamic("monthNames")(monthNames.asInstanceOf[js.Any])

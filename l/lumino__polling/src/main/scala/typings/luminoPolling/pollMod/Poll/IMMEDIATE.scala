@@ -1,7 +1,6 @@
 package typings.luminoPolling.pollMod.Poll
 
 import org.scalablytyped.runtime.TopLevel
-import typings.luminoPolling.luminoPollingNumbers.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,5 +10,5 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("@lumino/polling/lib/poll", "Poll.IMMEDIATE")
 @js.native
-object IMMEDIATE extends TopLevel[`0`]
+object IMMEDIATE extends TopLevel[/* 0 */ Double]
 

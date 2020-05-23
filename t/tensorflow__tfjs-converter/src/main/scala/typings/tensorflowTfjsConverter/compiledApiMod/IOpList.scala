@@ -11,9 +11,9 @@ trait IOpList extends js.Object {
 
 object IOpList {
   @scala.inline
-  def apply(op: js.Array[IOpDef] = null): IOpList = {
+  def apply(op: js.UndefOr[Null | js.Array[IOpDef]] = js.undefined): IOpList = {
     val __obj = js.Dynamic.literal()
-    if (op != null) __obj.updateDynamic("op")(op.asInstanceOf[js.Any])
+    if (!js.isUndefined(op)) __obj.updateDynamic("op")(op.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOpList]
   }
 }

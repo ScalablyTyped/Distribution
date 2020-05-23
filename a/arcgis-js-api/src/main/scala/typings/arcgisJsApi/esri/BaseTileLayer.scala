@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`base-tile`
 import typings.arcgisJsApi.arcgisJsApiStrings.`bing-maps`
 import typings.std.HTMLCanvasElement
@@ -92,8 +91,4 @@ trait BaseTileLayer
     */
   def getTileUrl(level: Double, row: Double, col: Double): String = js.native
 }
-
-@JSGlobal("__esri.BaseTileLayer")
-@js.native
-object BaseTileLayer extends TopLevel[BaseTileLayerConstructor]
 

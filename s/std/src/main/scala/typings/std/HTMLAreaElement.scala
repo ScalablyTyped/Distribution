@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -73,8 +72,4 @@ trait HTMLAreaElement
     options: EventListenerOptions
   ): Unit = js.native
 }
-
-@JSGlobal("HTMLAreaElement")
-@js.native
-object HTMLAreaElement extends Instantiable0[HTMLAreaElement]
 

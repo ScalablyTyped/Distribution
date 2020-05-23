@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.global
 import typings.arcgisJsApi.arcgisJsApiStrings.local
 import scala.scalajs.js
@@ -38,8 +37,4 @@ trait websceneInitialViewProperties
     */
   var viewpoint: Viewpoint = js.native
 }
-
-@JSGlobal("__esri.websceneInitialViewProperties")
-@js.native
-object websceneInitialViewProperties extends TopLevel[websceneInitialViewPropertiesConstructor]
 

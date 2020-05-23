@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.carousel")
 @js.native
-class carousel () extends baseview {
+trait carousel extends baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
   @JSName("config")

@@ -15,7 +15,7 @@ object NativeKeyboardHideOptions {
   @scala.inline
   def apply(animated: js.UndefOr[Boolean] = js.undefined): NativeKeyboardHideOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeKeyboardHideOptions]
   }
 }

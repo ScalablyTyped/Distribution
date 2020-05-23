@@ -17,11 +17,15 @@ trait IUpdateEntityTypeRequest extends js.Object {
 
 object IUpdateEntityTypeRequest {
   @scala.inline
-  def apply(entityType: IEntityType = null, languageCode: String = null, updateMask: IFieldMask = null): IUpdateEntityTypeRequest = {
+  def apply(
+    entityType: js.UndefOr[Null | IEntityType] = js.undefined,
+    languageCode: js.UndefOr[Null | String] = js.undefined,
+    updateMask: js.UndefOr[Null | IFieldMask] = js.undefined
+  ): IUpdateEntityTypeRequest = {
     val __obj = js.Dynamic.literal()
-    if (entityType != null) __obj.updateDynamic("entityType")(entityType.asInstanceOf[js.Any])
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
+    if (!js.isUndefined(entityType)) __obj.updateDynamic("entityType")(entityType.asInstanceOf[js.Any])
+    if (!js.isUndefined(languageCode)) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateMask)) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUpdateEntityTypeRequest]
   }
 }

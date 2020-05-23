@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Gpio
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,32 +42,6 @@ object GpioPinDriveMode extends js.Object {
   /** Configures the GPIO pin in open collector mode with resistive pull-down mode. */
   @js.native
   sealed trait outputOpenSourcePullDown extends GpioPinDriveMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[GpioPinDriveMode with Double] = js.native
-  /* 0 */ @js.native
-  object input extends TopLevel[input with Double]
-  
-  /* 3 */ @js.native
-  object inputPullDown extends TopLevel[inputPullDown with Double]
-  
-  /* 2 */ @js.native
-  object inputPullUp extends TopLevel[inputPullUp with Double]
-  
-  /* 1 */ @js.native
-  object output extends TopLevel[output with Double]
-  
-  /* 4 */ @js.native
-  object outputOpenDrain extends TopLevel[outputOpenDrain with Double]
-  
-  /* 5 */ @js.native
-  object outputOpenDrainPullUp extends TopLevel[outputOpenDrainPullUp with Double]
-  
-  /* 6 */ @js.native
-  object outputOpenSource extends TopLevel[outputOpenSource with Double]
-  
-  /* 7 */ @js.native
-  object outputOpenSourcePullDown extends TopLevel[outputOpenSourcePullDown with Double]
   
 }
 

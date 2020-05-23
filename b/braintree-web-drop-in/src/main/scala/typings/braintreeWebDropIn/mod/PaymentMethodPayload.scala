@@ -24,13 +24,12 @@ object PaymentMethodPayload {
     details: js.Object,
     nonce: String,
     `type`: CreditCard | PayPalAccount | VenmoAccount | AndroidPayCard | ApplePayCard,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     deviceData: String = null
   ): PaymentMethodPayload = {
-    val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], deviceData = deviceData.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (deviceData != null) __obj.updateDynamic("deviceData")(deviceData.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentMethodPayload]
   }
 }

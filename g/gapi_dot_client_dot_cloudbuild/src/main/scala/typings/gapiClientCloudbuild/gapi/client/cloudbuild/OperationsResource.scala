@@ -1,8 +1,8 @@
 package typings.gapiClientCloudbuild.gapi.client.cloudbuild
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientCloudbuild.AnonAccesstoken
-import typings.gapiClientCloudbuild.AnonAlt
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientCloudbuild.anon.Accesstoken
+import typings.gapiClientCloudbuild.anon.Alt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,13 +20,13 @@ trait OperationsResource extends js.Object {
     * an Operation.error value with a google.rpc.Status.code of 1,
     * corresponding to `Code.CANCELLED`.
     */
-  def cancel(request: AnonAccesstoken): Request_[js.Object]
+  def cancel(request: Accesstoken): Request[js.Object]
   /**
     * Gets the latest state of a long-running operation.  Clients can use this
     * method to poll the operation result at intervals as recommended by the API
     * service.
     */
-  def get(request: AnonAccesstoken): Request_[Operation]
+  def get(request: Accesstoken): Request[Operation]
   /**
     * Lists operations that match the specified filter in the request. If the
     * server doesn't support this method, it returns `UNIMPLEMENTED`.
@@ -39,15 +39,15 @@ trait OperationsResource extends js.Object {
     * collection id, however overriding users must ensure the name binding
     * is the parent resource, without the operations collection id.
     */
-  def list(request: AnonAlt): Request_[ListOperationsResponse]
+  def list(request: Alt): Request[ListOperationsResponse]
 }
 
 object OperationsResource {
   @scala.inline
   def apply(
-    cancel: AnonAccesstoken => Request_[js.Object],
-    get: AnonAccesstoken => Request_[Operation],
-    list: AnonAlt => Request_[ListOperationsResponse]
+    cancel: Accesstoken => Request[js.Object],
+    get: Accesstoken => Request[Operation],
+    list: Alt => Request[ListOperationsResponse]
   ): OperationsResource = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
     __obj.asInstanceOf[OperationsResource]

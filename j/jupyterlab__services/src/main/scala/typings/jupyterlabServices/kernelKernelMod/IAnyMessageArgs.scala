@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.kernelKernelMod
 
-import typings.jupyterlabServices.ReadonlyIMessageMessageTy
+import typings.jupyterlabServices.anon.ReadonlyIMessageMessageTy
 import typings.jupyterlabServices.jupyterlabServicesStrings.recv
 import typings.jupyterlabServices.jupyterlabServicesStrings.send
 import scala.scalajs.js

@@ -14,9 +14,9 @@ trait LoggingConfiguration extends js.Object {
 
 object LoggingConfiguration {
   @scala.inline
-  def apply(EnableSIPLogs: js.UndefOr[scala.Boolean] = js.undefined): LoggingConfiguration = {
+  def apply(EnableSIPLogs: js.UndefOr[Boolean] = js.undefined): LoggingConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(EnableSIPLogs)) __obj.updateDynamic("EnableSIPLogs")(EnableSIPLogs.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableSIPLogs)) __obj.updateDynamic("EnableSIPLogs")(EnableSIPLogs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggingConfiguration]
   }
 }

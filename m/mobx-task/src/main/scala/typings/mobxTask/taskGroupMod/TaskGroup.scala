@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 /* Inlined std.Pick<mobx-task.mobx-task/lib/task.Task<A, R>, mobx-task.mobx-task/lib/task-group.QueryableMethods> */
 trait TaskGroup[A /* <: js.Array[_] */, R] extends js.Object {
-  var error: js.Any
-  var `match`: js.Any
-  var pending: js.Any
-  var rejected: js.Any
-  var resolved: js.Any
-  var result: js.Any
-  var state: js.Any
+  var error: js.UndefOr[js.Any] = js.undefined
+  var `match`: js.UndefOr[js.Any] = js.undefined
+  var pending: js.UndefOr[js.Any] = js.undefined
+  var rejected: js.UndefOr[js.Any] = js.undefined
+  var resolved: js.UndefOr[js.Any] = js.undefined
+  var result: js.UndefOr[js.Any] = js.undefined
+  var state: js.UndefOr[js.Any] = js.undefined
 }
 
 @JSImport("mobx-task/lib/task-group", "TaskGroup")

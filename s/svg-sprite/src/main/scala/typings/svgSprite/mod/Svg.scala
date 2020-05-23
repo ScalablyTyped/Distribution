@@ -60,17 +60,17 @@ object Svg {
     doctypeDeclaration: Boolean | String = null,
     namespaceClassnames: js.UndefOr[Boolean] = js.undefined,
     namespaceIDs: js.UndefOr[Boolean] = js.undefined,
-    precision: Int | Double = null,
+    precision: js.UndefOr[Double] = js.undefined,
     rootAttributes: js.Any = null,
     transform: SvgTransformer | js.Array[SvgTransformer] = null,
     xmlDeclaration: Boolean | String = null
   ): Svg = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dimensionAttributes)) __obj.updateDynamic("dimensionAttributes")(dimensionAttributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(dimensionAttributes)) __obj.updateDynamic("dimensionAttributes")(dimensionAttributes.get.asInstanceOf[js.Any])
     if (doctypeDeclaration != null) __obj.updateDynamic("doctypeDeclaration")(doctypeDeclaration.asInstanceOf[js.Any])
-    if (!js.isUndefined(namespaceClassnames)) __obj.updateDynamic("namespaceClassnames")(namespaceClassnames.asInstanceOf[js.Any])
-    if (!js.isUndefined(namespaceIDs)) __obj.updateDynamic("namespaceIDs")(namespaceIDs.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (!js.isUndefined(namespaceClassnames)) __obj.updateDynamic("namespaceClassnames")(namespaceClassnames.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(namespaceIDs)) __obj.updateDynamic("namespaceIDs")(namespaceIDs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
     if (rootAttributes != null) __obj.updateDynamic("rootAttributes")(rootAttributes.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     if (xmlDeclaration != null) __obj.updateDynamic("xmlDeclaration")(xmlDeclaration.asInstanceOf[js.Any])

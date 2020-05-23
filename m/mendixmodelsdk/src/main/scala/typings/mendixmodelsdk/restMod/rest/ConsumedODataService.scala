@@ -23,7 +23,8 @@ import scala.scalajs.js.annotation._
   *
   * In version 7.18.0: introduced
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.unitsMod.IAbstractUnit because Already inherited
@@ -32,7 +33,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IRemoteEntitySourceDocument because Already inherited
-- typings.mendixmodelsdk.restMod.rest.IConsumedODataService because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ConsumedODataService")
+- typings.mendixmodelsdk.restMod.rest.IConsumedODataService because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined serviceName, version, entities */ @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ConsumedODataService")
 @js.native
 class ConsumedODataService protected () extends RemoteEntitySourceDocument {
   def this(
@@ -42,12 +43,33 @@ class ConsumedODataService protected () extends RemoteEntitySourceDocument {
     isPartial: Boolean,
     container: IFolderBase
   ) = this()
+  /**
+    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+    *
+    * In version 8.9.0: added public
+    */
+  @JSName("entities")
+  val entities_FConsumedODataService: IList[IODataEntity] = js.native
   @JSName("model")
   var model_FConsumedODataService: IModel = js.native
+  /**
+    * In version 8.10.0: added public
+    * In version 8.0.0: introduced
+    */
+  @JSName("serviceName")
+  val serviceName_FConsumedODataService: String = js.native
+  /**
+    * In version 8.10.0: added public
+    * In version 8.0.0: introduced
+    */
+  @JSName("version")
+  val version_FConsumedODataService: String = js.native
   @JSName("containerAsFolderBase")
   def containerAsFolderBase_MConsumedODataService: FolderBase = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+    *
+    * In version 8.9.0: added public
     */
   def entities: IList[ODataEntity] = js.native
   def headersMicroflow(): js.Any = js.native
@@ -104,6 +126,7 @@ class ConsumedODataService protected () extends RemoteEntitySourceDocument {
   def serviceId: String = js.native
   def serviceId(newValue: String): js.Any = js.native
   /**
+    * In version 8.10.0: added public
     * In version 8.0.0: introduced
     */
   def serviceName: String = js.native
@@ -123,6 +146,7 @@ class ConsumedODataService protected () extends RemoteEntitySourceDocument {
   def timeoutModel: Expression = js.native
   def timeoutModel(newValue: Expression): js.Any = js.native
   /**
+    * In version 8.10.0: added public
     * In version 8.0.0: introduced
     */
   def version: String = js.native

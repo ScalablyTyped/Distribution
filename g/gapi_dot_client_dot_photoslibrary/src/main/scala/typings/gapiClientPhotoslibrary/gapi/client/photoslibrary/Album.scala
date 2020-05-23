@@ -69,7 +69,7 @@ object Album {
     if (coverPhotoBaseUrl != null) __obj.updateDynamic("coverPhotoBaseUrl")(coverPhotoBaseUrl.asInstanceOf[js.Any])
     if (coverPhotoMediaItemId != null) __obj.updateDynamic("coverPhotoMediaItemId")(coverPhotoMediaItemId.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isWriteable)) __obj.updateDynamic("isWriteable")(isWriteable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isWriteable)) __obj.updateDynamic("isWriteable")(isWriteable.get.asInstanceOf[js.Any])
     if (mediaItemsCount != null) __obj.updateDynamic("mediaItemsCount")(mediaItemsCount.asInstanceOf[js.Any])
     if (productUrl != null) __obj.updateDynamic("productUrl")(productUrl.asInstanceOf[js.Any])
     if (shareInfo != null) __obj.updateDynamic("shareInfo")(shareInfo.asInstanceOf[js.Any])

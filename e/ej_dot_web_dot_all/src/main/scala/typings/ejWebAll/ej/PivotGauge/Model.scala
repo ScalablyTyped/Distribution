@@ -113,7 +113,7 @@ object Model {
     analysisMode: AnalysisMode | String = null,
     beforePivotEnginePopulate: /* e */ BeforePivotEnginePopulateEventArgs => Unit = null,
     beforeServiceInvoke: /* e */ BeforeServiceInvokeEventArgs => Unit = null,
-    columnsCount: Int | Double = null,
+    columnsCount: js.UndefOr[Double] = js.undefined,
     cssClass: String = null,
     customObject: js.Any = null,
     dataSource: DataSource = null,
@@ -130,7 +130,7 @@ object Model {
     renderComplete: /* e */ RenderCompleteEventArgs => Unit = null,
     renderFailure: /* e */ RenderFailureEventArgs => Unit = null,
     renderSuccess: /* e */ RenderSuccessEventArgs => Unit = null,
-    rowsCount: Int | Double = null,
+    rowsCount: js.UndefOr[Double] = js.undefined,
     scales: js.Any = null,
     serviceMethodSettings: ServiceMethodSettings = null,
     showHeaderLabel: js.UndefOr[Boolean] = js.undefined,
@@ -141,16 +141,16 @@ object Model {
     if (analysisMode != null) __obj.updateDynamic("analysisMode")(analysisMode.asInstanceOf[js.Any])
     if (beforePivotEnginePopulate != null) __obj.updateDynamic("beforePivotEnginePopulate")(js.Any.fromFunction1(beforePivotEnginePopulate))
     if (beforeServiceInvoke != null) __obj.updateDynamic("beforeServiceInvoke")(js.Any.fromFunction1(beforeServiceInvoke))
-    if (columnsCount != null) __obj.updateDynamic("columnsCount")(columnsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnsCount)) __obj.updateDynamic("columnsCount")(columnsCount.get.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (customObject != null) __obj.updateDynamic("customObject")(customObject.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTooltip)) __obj.updateDynamic("enableTooltip")(enableTooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableXHRCredentials)) __obj.updateDynamic("enableXHRCredentials")(enableXHRCredentials.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTooltip)) __obj.updateDynamic("enableTooltip")(enableTooltip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableXHRCredentials)) __obj.updateDynamic("enableXHRCredentials")(enableXHRCredentials.get.asInstanceOf[js.Any])
     if (frame != null) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.get.asInstanceOf[js.Any])
     if (labelFormatSettings != null) __obj.updateDynamic("labelFormatSettings")(labelFormatSettings.asInstanceOf[js.Any])
     if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
@@ -158,10 +158,10 @@ object Model {
     if (renderComplete != null) __obj.updateDynamic("renderComplete")(js.Any.fromFunction1(renderComplete))
     if (renderFailure != null) __obj.updateDynamic("renderFailure")(js.Any.fromFunction1(renderFailure))
     if (renderSuccess != null) __obj.updateDynamic("renderSuccess")(js.Any.fromFunction1(renderSuccess))
-    if (rowsCount != null) __obj.updateDynamic("rowsCount")(rowsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowsCount)) __obj.updateDynamic("rowsCount")(rowsCount.get.asInstanceOf[js.Any])
     if (scales != null) __obj.updateDynamic("scales")(scales.asInstanceOf[js.Any])
     if (serviceMethodSettings != null) __obj.updateDynamic("serviceMethodSettings")(serviceMethodSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHeaderLabel)) __obj.updateDynamic("showHeaderLabel")(showHeaderLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHeaderLabel)) __obj.updateDynamic("showHeaderLabel")(showHeaderLabel.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }

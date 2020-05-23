@@ -1,7 +1,7 @@
 package typings.orientjs.mod
 
-import typings.orientjs.AnonFields
-import typings.orientjs.AnonForce
+import typings.orientjs.anon.Fields
+import typings.orientjs.anon.Force
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 class OClassProperty () extends js.Object {
   var `class`: js.UndefOr[OClass] = js.native
   var collate: js.UndefOr[String] = js.native
-  var custom: js.UndefOr[AnonFields] = js.native
+  var custom: js.UndefOr[Fields] = js.native
   var linkedClass: js.UndefOr[String] = js.native
   var linkedType: js.UndefOr[PropertyType] = js.native
   var mandatory: js.UndefOr[Boolean] = js.native
@@ -41,7 +41,7 @@ class OClassProperty () extends js.Object {
   def create(config: PropertyCreateConfig): js.Promise[OClassProperty] = js.native
   def create(config: PropertyCreateConfig, reload: Boolean): js.Promise[OClassProperty] = js.native
   def drop(name: String): js.Promise[OClass] = js.native
-  def drop(name: String, config: AnonForce): js.Promise[OClass] = js.native
+  def drop(name: String, config: Force): js.Promise[OClass] = js.native
   /**
     * Get the property with the given name.
     *

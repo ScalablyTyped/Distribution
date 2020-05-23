@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** File object */
-@JSGlobal("Scripting.File")
 @js.native
-class File protected () extends js.Object {
+trait File extends js.Object {
   /** File attributes */
   var Attributes: FileAttribute = js.native
   /** Date file was created */

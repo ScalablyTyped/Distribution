@@ -14,10 +14,13 @@ trait IListIntentsResponse extends js.Object {
 
 object IListIntentsResponse {
   @scala.inline
-  def apply(intents: js.Array[IIntent] = null, nextPageToken: String = null): IListIntentsResponse = {
+  def apply(
+    intents: js.UndefOr[Null | js.Array[IIntent]] = js.undefined,
+    nextPageToken: js.UndefOr[Null | String] = js.undefined
+  ): IListIntentsResponse = {
     val __obj = js.Dynamic.literal()
-    if (intents != null) __obj.updateDynamic("intents")(intents.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(intents)) __obj.updateDynamic("intents")(intents.asInstanceOf[js.Any])
+    if (!js.isUndefined(nextPageToken)) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListIntentsResponse]
   }
 }

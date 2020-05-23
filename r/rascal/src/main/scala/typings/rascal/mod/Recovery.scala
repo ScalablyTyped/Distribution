@@ -23,8 +23,8 @@ object Recovery {
   @scala.inline
   def apply(
     strategy: ack | nack | republish | forward,
-    attempts: Int | Double = null,
-    defer: Int | Double = null,
+    attempts: js.UndefOr[Double] = js.undefined,
+    defer: js.UndefOr[Double] = js.undefined,
     immediateNack: js.UndefOr[Boolean] = js.undefined,
     options: PublicationConfig = null,
     publication: String = null,
@@ -32,13 +32,13 @@ object Recovery {
     xDeathFix: js.UndefOr[Boolean] = js.undefined
   ): Recovery = {
     val __obj = js.Dynamic.literal(strategy = strategy.asInstanceOf[js.Any])
-    if (attempts != null) __obj.updateDynamic("attempts")(attempts.asInstanceOf[js.Any])
-    if (defer != null) __obj.updateDynamic("defer")(defer.asInstanceOf[js.Any])
-    if (!js.isUndefined(immediateNack)) __obj.updateDynamic("immediateNack")(immediateNack.asInstanceOf[js.Any])
+    if (!js.isUndefined(attempts)) __obj.updateDynamic("attempts")(attempts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(immediateNack)) __obj.updateDynamic("immediateNack")(immediateNack.get.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (publication != null) __obj.updateDynamic("publication")(publication.asInstanceOf[js.Any])
-    if (!js.isUndefined(requeue)) __obj.updateDynamic("requeue")(requeue.asInstanceOf[js.Any])
-    if (!js.isUndefined(xDeathFix)) __obj.updateDynamic("xDeathFix")(xDeathFix.asInstanceOf[js.Any])
+    if (!js.isUndefined(requeue)) __obj.updateDynamic("requeue")(requeue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xDeathFix)) __obj.updateDynamic("xDeathFix")(xDeathFix.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Recovery]
   }
 }

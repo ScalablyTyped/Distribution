@@ -1,7 +1,7 @@
 package typings.jsreportXlsx.mod
 
 import typings.jsreportCore.mod.ExtensionDefinition
-import typings.jsreportXlsx.PartialOptions
+import typings.jsreportXlsx.anon.PartialOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,5 +1,7 @@
 package typings.jqueryAjaxfile
 
+import typings.jqueryAjaxfile.anon.AddDisposeCallback
+import typings.jqueryAjaxfile.anon.Clear
 import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -11,11 +13,11 @@ trait KnockoutUtils extends js.Object {
   //////////////////////////////////
   // utils.domData.js
   //////////////////////////////////
-  var domData: AnonClear = js.native
+  var domData: Clear = js.native
   //////////////////////////////////
   // utils.domNodeDisposal.js
   //////////////////////////////////
-  var domNodeDisposal: AnonAddDisposeCallback = js.native
+  var domNodeDisposal: AddDisposeCallback = js.native
   //////////////////////////////////
   // utils.js
   //////////////////////////////////

@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.ConditionalFormatData
 import typings.officeJsPreview.Excel.Interfaces.ConditionalFormatLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.ConditionalFormatUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.CellValue
 import typings.officeJsPreview.officeJsPreviewStrings.ColorScale
 import typings.officeJsPreview.officeJsPreviewStrings.ContainsText
@@ -24,13 +24,12 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.6]
   */
-@JSGlobal("Excel.ConditionalFormat")
 @js.native
-class ConditionalFormat () extends ClientObject {
+trait ConditionalFormat extends ClientObject {
   /**
     *
     * Returns the cell value conditional format properties if the current conditional format is a CellValue type.
-    For example to format all cells between 5 and 10. Read-only.
+    For example to format all cells between 5 and 10.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -38,21 +37,21 @@ class ConditionalFormat () extends ClientObject {
   /**
     *
     * Returns the cell value conditional format properties if the current conditional format is a CellValue type.
-    For example to format all cells between 5 and 10. Read-only.
+    For example to format all cells between 5 and 10.
     *
     * [Api set: ExcelApi 1.6]
     */
   val cellValueOrNullObject: CellValueConditionalFormat = js.native
   /**
     *
-    * Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type. Read-only.
+    * Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
     *
     * [Api set: ExcelApi 1.6]
     */
   val colorScale: ColorScaleConditionalFormat = js.native
   /**
     *
-    * Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type. Read-only.
+    * Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -62,49 +61,49 @@ class ConditionalFormat () extends ClientObject {
   var context_ConditionalFormat: RequestContext = js.native
   /**
     *
-    * Returns the custom conditional format properties if the current conditional format is a custom type. Read-only.
+    * Returns the custom conditional format properties if the current conditional format is a custom type.
     *
     * [Api set: ExcelApi 1.6]
     */
   val custom: CustomConditionalFormat = js.native
   /**
     *
-    * Returns the custom conditional format properties if the current conditional format is a custom type. Read-only.
+    * Returns the custom conditional format properties if the current conditional format is a custom type.
     *
     * [Api set: ExcelApi 1.6]
     */
   val customOrNullObject: CustomConditionalFormat = js.native
   /**
     *
-    * Returns the data bar properties if the current conditional format is a data bar. Read-only.
+    * Returns the data bar properties if the current conditional format is a data bar.
     *
     * [Api set: ExcelApi 1.6]
     */
   val dataBar: DataBarConditionalFormat = js.native
   /**
     *
-    * Returns the data bar properties if the current conditional format is a data bar. Read-only.
+    * Returns the data bar properties if the current conditional format is a data bar.
     *
     * [Api set: ExcelApi 1.6]
     */
   val dataBarOrNullObject: DataBarConditionalFormat = js.native
   /**
     *
-    * Returns the IconSet conditional format properties if the current conditional format is an IconSet type. Read-only.
+    * Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
     *
     * [Api set: ExcelApi 1.6]
     */
   val iconSet: IconSetConditionalFormat = js.native
   /**
     *
-    * Returns the IconSet conditional format properties if the current conditional format is an IconSet type. Read-only.
+    * Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
     *
     * [Api set: ExcelApi 1.6]
     */
   val iconSetOrNullObject: IconSetConditionalFormat = js.native
   /**
     *
-    * The Priority of the Conditional Format within the current ConditionalFormatCollection. Read-only.
+    * The Priority of the Conditional Format within the current ConditionalFormatCollection.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -129,7 +128,7 @@ class ConditionalFormat () extends ClientObject {
     changes other conditional formats' priorities, to allow for a contiguous priority order.
     Use a negative priority to begin from the back.
     Priorities greater than than bounds will get and set to the maximum (or minimum if negative) priority.
-    Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it. Read-only.
+    Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -145,7 +144,7 @@ class ConditionalFormat () extends ClientObject {
   /**
     *
     * Returns the specific text conditional format properties if the current conditional format is a text type.
-    For example to format cells matching the word "Text". Read-only.
+    For example to format cells matching the word "Text".
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -153,7 +152,7 @@ class ConditionalFormat () extends ClientObject {
   /**
     *
     * Returns the specific text conditional format properties if the current conditional format is a text type.
-    For example to format cells matching the word "Text". Read-only.
+    For example to format cells matching the word "Text".
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -161,7 +160,7 @@ class ConditionalFormat () extends ClientObject {
   /**
     *
     * Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.
-    For example to format the top 10% or bottom 10 items. Read-only.
+    For example to format the top 10% or bottom 10 items.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -169,14 +168,14 @@ class ConditionalFormat () extends ClientObject {
   /**
     *
     * Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.
-    For example to format the top 10% or bottom 10 items. Read-only.
+    For example to format the top 10% or bottom 10 items.
     *
     * [Api set: ExcelApi 1.6]
     */
   val topBottomOrNullObject: TopBottomConditionalFormat = js.native
   /**
     *
-    * A type of conditional format. Only one can be set at a time. Read-only.
+    * A type of conditional format. Only one can be set at a time.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -188,19 +187,19 @@ class ConditionalFormat () extends ClientObject {
     */
   def delete(): Unit = js.native
   /**
-    * Returns the range the conditonal format is applied to. Throws an error if the conditional format is applied to multiple ranges. Read-only.
+    * Returns the range the conditonal format is applied to. Throws an error if the conditional format is applied to multiple ranges.
     *
     * [Api set: ExcelApi 1.6]
     */
   def getRange(): Range = js.native
   /**
-    * Returns the range the conditonal format is applied to, or a null object if the conditional format is applied to multiple ranges. Read-only.
+    * Returns the range the conditonal format is applied to, or a null object if the conditional format is applied to multiple ranges.
     *
     * [Api set: ExcelApi 1.6]
     */
   def getRangeOrNullObject(): Range = js.native
   /**
-    * Returns the RangeAreas, comprising one or more rectangular ranges, the conditonal format is applied to. Read-only.
+    * Returns the RangeAreas, comprising one or more rectangular ranges, the conditonal format is applied to.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -212,7 +211,7 @@ class ConditionalFormat () extends ClientObject {
     */
   def load(): ConditionalFormat = js.native
   def load(options: ConditionalFormatLoadOptions): ConditionalFormat = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ConditionalFormat = js.native
+  def load(propertyNamesAndPaths: Expand): ConditionalFormat = js.native
   def load(propertyNames: String): ConditionalFormat = js.native
   def load(propertyNames: js.Array[String]): ConditionalFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.NumberDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,8 +14,4 @@ trait MimeTypeArray extends /* index */ NumberDictionary[MimeType] {
   def item(index: Double): MimeType | Null = js.native
   def namedItem(name: java.lang.String): MimeType | Null = js.native
 }
-
-@JSGlobal("MimeTypeArray")
-@js.native
-object MimeTypeArray extends Instantiable0[MimeTypeArray]
 

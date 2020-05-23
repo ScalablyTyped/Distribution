@@ -1,6 +1,6 @@
 package typings.firefoxWebextBrowser.browser.urlbar.contextualTip
 
-import typings.firefoxWebextBrowser.AnonDefaultIcon_
+import typings.firefoxWebextBrowser.anon.DefaultIcon_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait ContextualTip extends js.Object {
   /** A string to be used as the contextual tip's button's title. */
   var buttonTitle: js.UndefOr[String] = js.undefined
   /** Specifies the default icon and theme icons */
-  var icon: js.UndefOr[AnonDefaultIcon_] = js.undefined
+  var icon: js.UndefOr[DefaultIcon_] = js.undefined
   /** A string to be used as the contextual tip's link's title. */
   var linkTitle: js.UndefOr[String] = js.undefined
   /** A string to be used as the contextual tip's title. */
@@ -22,7 +22,7 @@ trait ContextualTip extends js.Object {
 
 object ContextualTip {
   @scala.inline
-  def apply(title: String, buttonTitle: String = null, icon: AnonDefaultIcon_ = null, linkTitle: String = null): ContextualTip = {
+  def apply(title: String, buttonTitle: String = null, icon: DefaultIcon_ = null, linkTitle: String = null): ContextualTip = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     if (buttonTitle != null) __obj.updateDynamic("buttonTitle")(buttonTitle.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])

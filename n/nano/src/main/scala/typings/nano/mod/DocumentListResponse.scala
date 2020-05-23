@@ -23,10 +23,10 @@ object DocumentListResponse {
     offset: Double,
     rows: js.Array[DocumentResponseRow[D]],
     total_rows: Double,
-    update_seq: Int | Double = null
+    update_seq: js.UndefOr[Double] = js.undefined
   ): DocumentListResponse[D] = {
     val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], total_rows = total_rows.asInstanceOf[js.Any])
-    if (update_seq != null) __obj.updateDynamic("update_seq")(update_seq.asInstanceOf[js.Any])
+    if (!js.isUndefined(update_seq)) __obj.updateDynamic("update_seq")(update_seq.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentListResponse[D]]
   }
 }

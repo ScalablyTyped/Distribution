@@ -5,17 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.BaseTexture")
 @js.native
-class BaseTexture protected () extends IAnimatable {
-  /**
-    * Instantiates a new BaseTexture.
-    * Base class of all the textures in babylon.
-    * It groups all the common properties the materials, post process, lights... might need
-    * in order to make a correct use of the texture.
-    * @param scene Define the scene the texture blongs to
-    */
-  def this(scene: Nullable[Scene]) = this()
+trait BaseTexture extends IAnimatable {
   var _cachedSize: js.Any = js.native
   var _coordinatesMode: js.Any = js.native
   var _hasAlpha: js.Any = js.native
@@ -24,11 +15,6 @@ class BaseTexture protected () extends IAnimatable {
   /** @hidden */
   var _texture: Nullable[InternalTexture] = js.native
   var _uid: js.Any = js.native
-  /**
-    * Array of animations
-    */
-  /* CompleteClass */
-  override var animations: Nullable[js.Array[Animation]] = js.native
   /**
     * Define the list of animation attached to the texture.
     */
@@ -346,22 +332,5 @@ class BaseTexture protected () extends IAnimatable {
     *@param samplingMode Define the new sampling mode of the texture
     */
   def updateSamplingMode(samplingMode: Double): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.BaseTexture")
-@js.native
-object BaseTexture extends js.Object {
-  /**
-    * Default anisotropic filtering level for the application.
-    * It is set to 4 as a good tradeoff between perf and quality.
-    */
-  var DEFAULT_ANISOTROPIC_FILTERING_LEVEL: Double = js.native
-  /**
-    * Helper function to be called back once a list of texture contains only ready textures.
-    * @param textures Define the list of textures to wait for
-    * @param callback Define the callback triggered once the entire list will be ready
-    */
-  def WhenAllReady(textures: js.Array[BaseTexture], callback: js.Function0[Unit]): Unit = js.native
 }
 

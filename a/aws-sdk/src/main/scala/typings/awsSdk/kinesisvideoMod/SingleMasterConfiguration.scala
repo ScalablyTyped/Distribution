@@ -14,9 +14,9 @@ trait SingleMasterConfiguration extends js.Object {
 
 object SingleMasterConfiguration {
   @scala.inline
-  def apply(MessageTtlSeconds: Int | Double = null): SingleMasterConfiguration = {
+  def apply(MessageTtlSeconds: js.UndefOr[MessageTtlSeconds] = js.undefined): SingleMasterConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (MessageTtlSeconds != null) __obj.updateDynamic("MessageTtlSeconds")(MessageTtlSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(MessageTtlSeconds)) __obj.updateDynamic("MessageTtlSeconds")(MessageTtlSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SingleMasterConfiguration]
   }
 }

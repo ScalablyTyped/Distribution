@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesMod {
-  type DefaultOrNot[T] = typings.useSidecar.AnonDefault[T] | T
+  type DefaultOrNot[T] = typings.useSidecar.anon.Default[T] | T
   type Importer[T] = js.Function0[
     js.Promise[typings.useSidecar.typesMod.DefaultOrNot[typings.react.mod.ComponentType[T]]]
   ]

@@ -16,8 +16,8 @@ trait IAssociation extends IBase {
   /** [Config Option] (String) */
   var associationKey: js.UndefOr[String] = js.undefined
   /** [Method] Get a specialized reader for reading associated data
-  		* @returns Ext.data.reader.Reader The reader, null if not supplied
-  		*/
+    * @returns Ext.data.reader.Reader The reader, null if not supplied
+    */
   var getReader: js.UndefOr[js.Function0[IReader]] = js.undefined
   /** [Config Option] (String) */
   var model: js.UndefOr[String] = js.undefined
@@ -83,7 +83,7 @@ object IAssociation {
     if (reader != null) __obj.updateDynamic("reader")(reader.asInstanceOf[js.Any])
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAssociation]

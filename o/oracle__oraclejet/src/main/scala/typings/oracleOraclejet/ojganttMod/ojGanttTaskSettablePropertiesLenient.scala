@@ -1,8 +1,8 @@
 package typings.oracleOraclejet.ojganttMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.AnonEnd
-import typings.oracleOraclejet.AnonValue
+import typings.oracleOraclejet.anon.End
+import typings.oracleOraclejet.anon.Value
 import typings.oracleOraclejet.oracleOraclejetStrings.auto
 import typings.oracleOraclejet.oracleOraclejetStrings.end
 import typings.oracleOraclejet.oracleOraclejetStrings.innerCenter
@@ -20,14 +20,14 @@ import scala.scalajs.js.annotation._
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTaskSettableProperties> */
 trait ojGanttTaskSettablePropertiesLenient
   extends /* key */ StringDictionary[js.Any] {
-  var baseline: js.UndefOr[AnonEnd] = js.undefined
+  var baseline: js.UndefOr[End] = js.undefined
   var borderRadius: js.UndefOr[String] = js.undefined
   var end: js.UndefOr[String] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
   var label: js.UndefOr[String] = js.undefined
   var labelPosition: js.UndefOr[start | innerCenter | innerStart | innerEnd | end | none] = js.undefined
   var labelStyle: js.UndefOr[js.Object] = js.undefined
-  var progress: js.UndefOr[AnonValue] = js.undefined
+  var progress: js.UndefOr[Value] = js.undefined
   var rowId: js.UndefOr[js.Any] = js.undefined
   var shortDesc: js.UndefOr[String] = js.undefined
   var start: js.UndefOr[String] = js.undefined
@@ -39,15 +39,15 @@ trait ojGanttTaskSettablePropertiesLenient
 object ojGanttTaskSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    baseline: AnonEnd = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    baseline: End = null,
     borderRadius: String = null,
     end: String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     label: String = null,
     labelPosition: start | innerCenter | innerStart | innerEnd | end | none = null,
     labelStyle: js.Object = null,
-    progress: AnonValue = null,
+    progress: Value = null,
     rowId: js.Any = null,
     shortDesc: String = null,
     start: String = null,
@@ -60,7 +60,7 @@ object ojGanttTaskSettablePropertiesLenient {
     if (baseline != null) __obj.updateDynamic("baseline")(baseline.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
     if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])

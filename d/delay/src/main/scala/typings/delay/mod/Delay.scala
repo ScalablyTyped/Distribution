@@ -1,6 +1,6 @@
 package typings.delay.mod
 
-import typings.delay.Optionsvalueunknown
+import typings.delay.anon.Optionsvalueunknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

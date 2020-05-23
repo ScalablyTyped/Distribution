@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait DocumentSymbolProviderMetadata extends js.Object {
   /**
-  		 * A human-readable string that is shown when multiple outlines trees show for one document.
-  		 */
+    * A human-readable string that is shown when multiple outlines trees show for one document.
+    */
   var label: js.UndefOr[String] = js.undefined
 }
 

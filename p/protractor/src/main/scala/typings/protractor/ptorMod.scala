@@ -3,6 +3,14 @@ package typings.protractor
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.TopLevel
+import typings.protractor.anon.Chrome
+import typings.protractor.anon.TypeofCapabilities
+import typings.protractor.anon.TypeofWebDriver
+import typings.protractor.anon.TypeofWebElement
+import typings.protractor.anon.Typeoferror
+import typings.protractor.anon.Typeoflogging
+import typings.protractor.anon.Typeofpromise
+import typings.protractor.anon.Typeofuntil
 import typings.protractor.browserMod.ElementHelper
 import typings.protractor.browserMod.ProtractorBrowser
 import typings.protractor.elementMod.ElementArrayFinder
@@ -60,7 +68,7 @@ object ptorMod extends js.Object {
     var logging: Typeoflogging = js.native
     var promise: Typeofpromise = js.native
     var until: Typeofuntil = js.native
-    var utils: AnonChrome = js.native
+    var utils: Chrome = js.native
     @JSName("$")
     def $(search: String): ElementFinder = js.native
     @JSName("$$")

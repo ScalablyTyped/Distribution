@@ -24,7 +24,7 @@ object TestDocument {
   @scala.inline
   def apply(
     configuration_id: String = null,
-    enriched_field_units: Int | Double = null,
+    enriched_field_units: js.UndefOr[Double] = js.undefined,
     notices: js.Array[Notice] = null,
     original_media_type: String = null,
     snapshots: js.Array[DocumentSnapshot] = null,
@@ -32,7 +32,7 @@ object TestDocument {
   ): TestDocument = {
     val __obj = js.Dynamic.literal()
     if (configuration_id != null) __obj.updateDynamic("configuration_id")(configuration_id.asInstanceOf[js.Any])
-    if (enriched_field_units != null) __obj.updateDynamic("enriched_field_units")(enriched_field_units.asInstanceOf[js.Any])
+    if (!js.isUndefined(enriched_field_units)) __obj.updateDynamic("enriched_field_units")(enriched_field_units.get.asInstanceOf[js.Any])
     if (notices != null) __obj.updateDynamic("notices")(notices.asInstanceOf[js.Any])
     if (original_media_type != null) __obj.updateDynamic("original_media_type")(original_media_type.asInstanceOf[js.Any])
     if (snapshots != null) __obj.updateDynamic("snapshots")(snapshots.asInstanceOf[js.Any])

@@ -23,6 +23,7 @@ class Responder protected () extends Component {
     */
   discoveryOptions: DiscoveryOptions
   ) = this()
+  def on[T /* <: Event */](`type`: String, listener: js.Function1[/* event */ T, js.Promise[_]]): this.type = js.native
   /**
     * Responds to certain requests from a Requester.
     *
@@ -37,6 +38,7 @@ class Responder protected () extends Component {
       Unit
     ]
   ): this.type = js.native
+  def on[T /* <: Event */](`type`: js.Array[String], listener: js.Function1[/* event */ T, js.Promise[_]]): this.type = js.native
   def on[T /* <: Event */](
     `type`: js.Array[String],
     listener: js.Function2[

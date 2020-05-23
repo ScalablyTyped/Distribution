@@ -23,14 +23,14 @@ object ImageSource {
   @scala.inline
   def apply(
     url: String,
-    heightPixels: Int | Double = null,
+    heightPixels: js.UndefOr[Double] = js.undefined,
     size: ImageSourceSize = null,
-    widthPixels: Int | Double = null
+    widthPixels: js.UndefOr[Double] = js.undefined
   ): ImageSource = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (heightPixels != null) __obj.updateDynamic("heightPixels")(heightPixels.asInstanceOf[js.Any])
+    if (!js.isUndefined(heightPixels)) __obj.updateDynamic("heightPixels")(heightPixels.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (widthPixels != null) __obj.updateDynamic("widthPixels")(widthPixels.asInstanceOf[js.Any])
+    if (!js.isUndefined(widthPixels)) __obj.updateDynamic("widthPixels")(widthPixels.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageSource]
   }
 }

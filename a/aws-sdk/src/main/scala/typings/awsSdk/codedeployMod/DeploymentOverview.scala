@@ -35,20 +35,20 @@ trait DeploymentOverview extends js.Object {
 object DeploymentOverview {
   @scala.inline
   def apply(
-    Failed: Int | Double = null,
-    InProgress: Int | Double = null,
-    Pending: Int | Double = null,
-    Ready: Int | Double = null,
-    Skipped: Int | Double = null,
-    Succeeded: Int | Double = null
+    Failed: js.UndefOr[InstanceCount] = js.undefined,
+    InProgress: js.UndefOr[InstanceCount] = js.undefined,
+    Pending: js.UndefOr[InstanceCount] = js.undefined,
+    Ready: js.UndefOr[InstanceCount] = js.undefined,
+    Skipped: js.UndefOr[InstanceCount] = js.undefined,
+    Succeeded: js.UndefOr[InstanceCount] = js.undefined
   ): DeploymentOverview = {
     val __obj = js.Dynamic.literal()
-    if (Failed != null) __obj.updateDynamic("Failed")(Failed.asInstanceOf[js.Any])
-    if (InProgress != null) __obj.updateDynamic("InProgress")(InProgress.asInstanceOf[js.Any])
-    if (Pending != null) __obj.updateDynamic("Pending")(Pending.asInstanceOf[js.Any])
-    if (Ready != null) __obj.updateDynamic("Ready")(Ready.asInstanceOf[js.Any])
-    if (Skipped != null) __obj.updateDynamic("Skipped")(Skipped.asInstanceOf[js.Any])
-    if (Succeeded != null) __obj.updateDynamic("Succeeded")(Succeeded.asInstanceOf[js.Any])
+    if (!js.isUndefined(Failed)) __obj.updateDynamic("Failed")(Failed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(InProgress)) __obj.updateDynamic("InProgress")(InProgress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Pending)) __obj.updateDynamic("Pending")(Pending.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Ready)) __obj.updateDynamic("Ready")(Ready.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Skipped)) __obj.updateDynamic("Skipped")(Skipped.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Succeeded)) __obj.updateDynamic("Succeeded")(Succeeded.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentOverview]
   }
 }

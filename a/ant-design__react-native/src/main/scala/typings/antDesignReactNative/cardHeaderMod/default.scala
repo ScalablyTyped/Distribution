@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.cardHeaderMod
 
-import typings.antDesignReactNative.AnonThumbStyle
+import typings.antDesignReactNative.anon.ThumbStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends CardHeader
 @JSImport("@ant-design/react-native/lib/card/CardHeader", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonThumbStyle = js.native
+  var defaultProps: ThumbStyle = js.native
 }
 

@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,8 +21,4 @@ trait HTMLOutputElement extends HTMLElement {
   def reportValidity(): scala.Boolean = js.native
   def setCustomValidity(error: java.lang.String): Unit = js.native
 }
-
-@JSGlobal("HTMLOutputElement")
-@js.native
-object HTMLOutputElement extends Instantiable0[HTMLOutputElement]
 

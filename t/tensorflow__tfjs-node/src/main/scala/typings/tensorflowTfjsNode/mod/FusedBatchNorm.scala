@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@tensorflow/tfjs-node", "FusedBatchNorm")
 @js.native
-object FusedBatchNorm
-  extends TopLevel[typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.FusedBatchNorm]
+object FusedBatchNorm extends TopLevel[/* "Identity" */ String]
 

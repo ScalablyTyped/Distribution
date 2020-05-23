@@ -1,20 +1,20 @@
 package typings.sipml.SIPml.Stack
 
-import typings.sipml.AnonAudio
-import typings.sipml.AnonListener
-import typings.sipml.AnonMaxHeight
+import typings.sipml.anon.Audio
+import typings.sipml.anon.Listener
+import typings.sipml.anon.MaxHeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Configuration extends js.Object {
-  var bandwidth: js.UndefOr[AnonAudio] = js.undefined
+  var bandwidth: js.UndefOr[Audio] = js.undefined
   var display_name: js.UndefOr[String] = js.undefined
   var enable_click2call: js.UndefOr[Boolean] = js.undefined
   var enable_early_ims: js.UndefOr[Boolean] = js.undefined
   var enable_media_stream_cache: js.UndefOr[Boolean] = js.undefined
   var enable_rtcweb_breaker: js.UndefOr[Boolean] = js.undefined
-  var events_listener: js.UndefOr[AnonListener] = js.undefined
+  var events_listener: js.UndefOr[Listener] = js.undefined
   var ice_servers: js.UndefOr[js.Array[js.Object]] = js.undefined
   var impi: js.UndefOr[String] = js.undefined
   var impu: js.UndefOr[String] = js.undefined
@@ -22,20 +22,20 @@ trait Configuration extends js.Object {
   var password: js.UndefOr[String] = js.undefined
   var realm: js.UndefOr[String] = js.undefined
   var sip_headers: js.UndefOr[js.Array[js.Object]] = js.undefined
-  var video_size: js.UndefOr[AnonMaxHeight] = js.undefined
+  var video_size: js.UndefOr[MaxHeight] = js.undefined
   var websocket_proxy_url: js.UndefOr[String] = js.undefined
 }
 
 object Configuration {
   @scala.inline
   def apply(
-    bandwidth: AnonAudio = null,
+    bandwidth: Audio = null,
     display_name: String = null,
     enable_click2call: js.UndefOr[Boolean] = js.undefined,
     enable_early_ims: js.UndefOr[Boolean] = js.undefined,
     enable_media_stream_cache: js.UndefOr[Boolean] = js.undefined,
     enable_rtcweb_breaker: js.UndefOr[Boolean] = js.undefined,
-    events_listener: AnonListener = null,
+    events_listener: Listener = null,
     ice_servers: js.Array[js.Object] = null,
     impi: String = null,
     impu: String = null,
@@ -43,16 +43,16 @@ object Configuration {
     password: String = null,
     realm: String = null,
     sip_headers: js.Array[js.Object] = null,
-    video_size: AnonMaxHeight = null,
+    video_size: MaxHeight = null,
     websocket_proxy_url: String = null
   ): Configuration = {
     val __obj = js.Dynamic.literal()
     if (bandwidth != null) __obj.updateDynamic("bandwidth")(bandwidth.asInstanceOf[js.Any])
     if (display_name != null) __obj.updateDynamic("display_name")(display_name.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable_click2call)) __obj.updateDynamic("enable_click2call")(enable_click2call.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable_early_ims)) __obj.updateDynamic("enable_early_ims")(enable_early_ims.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable_media_stream_cache)) __obj.updateDynamic("enable_media_stream_cache")(enable_media_stream_cache.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable_rtcweb_breaker)) __obj.updateDynamic("enable_rtcweb_breaker")(enable_rtcweb_breaker.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable_click2call)) __obj.updateDynamic("enable_click2call")(enable_click2call.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable_early_ims)) __obj.updateDynamic("enable_early_ims")(enable_early_ims.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable_media_stream_cache)) __obj.updateDynamic("enable_media_stream_cache")(enable_media_stream_cache.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable_rtcweb_breaker)) __obj.updateDynamic("enable_rtcweb_breaker")(enable_rtcweb_breaker.get.asInstanceOf[js.Any])
     if (events_listener != null) __obj.updateDynamic("events_listener")(events_listener.asInstanceOf[js.Any])
     if (ice_servers != null) __obj.updateDynamic("ice_servers")(ice_servers.asInstanceOf[js.Any])
     if (impi != null) __obj.updateDynamic("impi")(impi.asInstanceOf[js.Any])

@@ -20,18 +20,18 @@ trait IDataBinMetrics extends js.Object {
 object IDataBinMetrics {
   @scala.inline
   def apply(
-    average: Int | Double = null,
-    count: Int | Double = null,
-    countNotBlank: Int | Double = null,
-    countNumbers: Int | Double = null,
-    sum: Int | Double = null
+    average: js.UndefOr[Double] = js.undefined,
+    count: js.UndefOr[Double] = js.undefined,
+    countNotBlank: js.UndefOr[Double] = js.undefined,
+    countNumbers: js.UndefOr[Double] = js.undefined,
+    sum: js.UndefOr[Double] = js.undefined
   ): IDataBinMetrics = {
     val __obj = js.Dynamic.literal()
-    if (average != null) __obj.updateDynamic("average")(average.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (countNotBlank != null) __obj.updateDynamic("countNotBlank")(countNotBlank.asInstanceOf[js.Any])
-    if (countNumbers != null) __obj.updateDynamic("countNumbers")(countNumbers.asInstanceOf[js.Any])
-    if (sum != null) __obj.updateDynamic("sum")(sum.asInstanceOf[js.Any])
+    if (!js.isUndefined(average)) __obj.updateDynamic("average")(average.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(countNotBlank)) __obj.updateDynamic("countNotBlank")(countNotBlank.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(countNumbers)) __obj.updateDynamic("countNumbers")(countNumbers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sum)) __obj.updateDynamic("sum")(sum.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDataBinMetrics]
   }
 }

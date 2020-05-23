@@ -1,6 +1,6 @@
 package typings.threeTdsLoader.mod
 
-import typings.threeTdsLoader.TypeofTHREE
+import typings.threeTdsLoader.anon.TypeofTHREE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

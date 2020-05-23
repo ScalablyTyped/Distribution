@@ -1,7 +1,7 @@
 package typings.svgPanZoom
 
 import org.scalablytyped.runtime.TopLevel
-import typings.svgPanZoom.SvgPanZoom_.Instance
+import typings.svgPanZoom.SvgPanZoom.Instance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

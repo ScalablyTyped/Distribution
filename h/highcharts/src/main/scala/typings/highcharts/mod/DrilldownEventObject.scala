@@ -1,7 +1,7 @@
 package typings.highcharts.mod
 
 import typings.highcharts.highchartsStrings.drilldown
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait DrilldownEventObject extends js.Object {
   /**
     * The original browser event (usually click) that triggered the drilldown.
     */
-  var originalEvent: js.UndefOr[Event_] = js.undefined
+  var originalEvent: js.UndefOr[Event] = js.undefined
   /**
     * The originating point.
     */
@@ -50,14 +50,14 @@ object DrilldownEventObject {
     preventDefault: js.Function,
     target: Chart_,
     `type`: drilldown,
-    category: Int | Double = null,
-    originalEvent: Event_ = null,
+    category: js.UndefOr[Double] = js.undefined,
+    originalEvent: Event = null,
     points: Boolean | js.Array[Point] = null,
     seriesOptions: SeriesOptionsType = null
   ): DrilldownEventObject = {
     val __obj = js.Dynamic.literal(point = point.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (!js.isUndefined(category)) __obj.updateDynamic("category")(category.get.asInstanceOf[js.Any])
     if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent.asInstanceOf[js.Any])
     if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
     if (seriesOptions != null) __obj.updateDynamic("seriesOptions")(seriesOptions.asInstanceOf[js.Any])

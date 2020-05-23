@@ -8,21 +8,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("AdazzleReactDataGridPlugins.Filters")
 @js.native
 object Filters extends js.Object {
-  @js.native
-  class AutoCompleteFilter ()
-    extends Component[js.Any, js.Object, js.Any]
-  
-  @js.native
-  class MultiSelectFilter ()
-    extends Component[js.Any, js.Object, js.Any]
-  
-  @js.native
-  class NumericFilter ()
-    extends Component[js.Any, js.Object, js.Any]
-  
-  @js.native
-  class SingleSelectFilter ()
-    extends Component[js.Any, js.Object, js.Any]
-  
+  type AutoCompleteFilter = Component[js.Any, js.Object, js.Any]
+  type MultiSelectFilter = Component[js.Any, js.Object, js.Any]
+  type NumericFilter = Component[js.Any, js.Object, js.Any]
+  type SingleSelectFilter = Component[js.Any, js.Object, js.Any]
 }
 

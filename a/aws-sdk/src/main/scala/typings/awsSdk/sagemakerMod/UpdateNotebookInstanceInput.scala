@@ -67,29 +67,29 @@ object UpdateNotebookInstanceInput {
     AcceleratorTypes: NotebookInstanceAcceleratorTypes = null,
     AdditionalCodeRepositories: AdditionalCodeRepositoryNamesOrUrls = null,
     DefaultCodeRepository: CodeRepositoryNameOrUrl = null,
-    DisassociateAcceleratorTypes: js.UndefOr[scala.Boolean] = js.undefined,
-    DisassociateAdditionalCodeRepositories: js.UndefOr[scala.Boolean] = js.undefined,
-    DisassociateDefaultCodeRepository: js.UndefOr[scala.Boolean] = js.undefined,
-    DisassociateLifecycleConfig: js.UndefOr[scala.Boolean] = js.undefined,
+    DisassociateAcceleratorTypes: js.UndefOr[DisassociateNotebookInstanceAcceleratorTypes] = js.undefined,
+    DisassociateAdditionalCodeRepositories: js.UndefOr[DisassociateAdditionalCodeRepositories] = js.undefined,
+    DisassociateDefaultCodeRepository: js.UndefOr[DisassociateDefaultCodeRepository] = js.undefined,
+    DisassociateLifecycleConfig: js.UndefOr[DisassociateNotebookInstanceLifecycleConfig] = js.undefined,
     InstanceType: InstanceType = null,
     LifecycleConfigName: NotebookInstanceLifecycleConfigName = null,
     RoleArn: RoleArn = null,
     RootAccess: RootAccess = null,
-    VolumeSizeInGB: Int | Double = null
+    VolumeSizeInGB: js.UndefOr[NotebookInstanceVolumeSizeInGB] = js.undefined
   ): UpdateNotebookInstanceInput = {
     val __obj = js.Dynamic.literal(NotebookInstanceName = NotebookInstanceName.asInstanceOf[js.Any])
     if (AcceleratorTypes != null) __obj.updateDynamic("AcceleratorTypes")(AcceleratorTypes.asInstanceOf[js.Any])
     if (AdditionalCodeRepositories != null) __obj.updateDynamic("AdditionalCodeRepositories")(AdditionalCodeRepositories.asInstanceOf[js.Any])
     if (DefaultCodeRepository != null) __obj.updateDynamic("DefaultCodeRepository")(DefaultCodeRepository.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisassociateAcceleratorTypes)) __obj.updateDynamic("DisassociateAcceleratorTypes")(DisassociateAcceleratorTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisassociateAdditionalCodeRepositories)) __obj.updateDynamic("DisassociateAdditionalCodeRepositories")(DisassociateAdditionalCodeRepositories.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisassociateDefaultCodeRepository)) __obj.updateDynamic("DisassociateDefaultCodeRepository")(DisassociateDefaultCodeRepository.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisassociateLifecycleConfig)) __obj.updateDynamic("DisassociateLifecycleConfig")(DisassociateLifecycleConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(DisassociateAcceleratorTypes)) __obj.updateDynamic("DisassociateAcceleratorTypes")(DisassociateAcceleratorTypes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DisassociateAdditionalCodeRepositories)) __obj.updateDynamic("DisassociateAdditionalCodeRepositories")(DisassociateAdditionalCodeRepositories.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DisassociateDefaultCodeRepository)) __obj.updateDynamic("DisassociateDefaultCodeRepository")(DisassociateDefaultCodeRepository.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DisassociateLifecycleConfig)) __obj.updateDynamic("DisassociateLifecycleConfig")(DisassociateLifecycleConfig.get.asInstanceOf[js.Any])
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
     if (LifecycleConfigName != null) __obj.updateDynamic("LifecycleConfigName")(LifecycleConfigName.asInstanceOf[js.Any])
     if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
     if (RootAccess != null) __obj.updateDynamic("RootAccess")(RootAccess.asInstanceOf[js.Any])
-    if (VolumeSizeInGB != null) __obj.updateDynamic("VolumeSizeInGB")(VolumeSizeInGB.asInstanceOf[js.Any])
+    if (!js.isUndefined(VolumeSizeInGB)) __obj.updateDynamic("VolumeSizeInGB")(VolumeSizeInGB.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateNotebookInstanceInput]
   }
 }

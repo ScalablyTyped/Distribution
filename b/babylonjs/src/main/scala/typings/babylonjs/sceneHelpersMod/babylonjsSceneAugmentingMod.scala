@@ -1,6 +1,6 @@
 package typings.babylonjs.sceneHelpersMod
 
-import typings.babylonjs.PartialIEnvironmentHelper
+import typings.babylonjs.anon.PartialIEnvironmentHelper
 import typings.babylonjs.baseTextureMod.BaseTexture
 import typings.babylonjs.environmentHelperMod.EnvironmentHelper
 import typings.babylonjs.meshMod.Mesh

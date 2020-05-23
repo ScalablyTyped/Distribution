@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.mod
 
-import typings.antDesignReactNative.TypeofItem
+import typings.antDesignReactNative.anon.TypeofItem
 import typings.antDesignReactNative.listMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,7 +1,7 @@
 package typings.gapiAuth2.gapi.auth2
 
-import typings.gapiAuth2.AnonCode
-import typings.gapiAuth2.AnonDetails
+import typings.gapiAuth2.anon.Code
+import typings.gapiAuth2.anon.Details
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,9 +11,8 @@ import scala.scalajs.js.annotation._
   * get the user's current sign-in status, get specific data from the user's Google profile,
   * request additional scopes, and sign out from the current account.
   */
-@JSGlobal("gapi.auth2.GoogleAuth")
 @js.native
-class GoogleAuth () extends js.Object {
+trait GoogleAuth extends js.Object {
   var currentUser: CurrentUser = js.native
   var isSignedIn: IsSignedIn = js.native
   /**
@@ -32,8 +31,8 @@ class GoogleAuth () extends js.Object {
   /**
     * Get permission from the user to access the specified scopes offline.
     */
-  def grantOfflineAccess(): js.Promise[AnonCode] = js.native
-  def grantOfflineAccess(options: OfflineAccessOptions): js.Promise[AnonCode] = js.native
+  def grantOfflineAccess(): js.Promise[Code] = js.native
+  def grantOfflineAccess(options: OfflineAccessOptions): js.Promise[Code] = js.native
   /**
     * Signs in the user using the specified options.
     * If no option specified here, fallback to the options specified to gapi.auth2.init().
@@ -52,7 +51,7 @@ class GoogleAuth () extends js.Object {
   def `then`(onInit: js.Function1[/* googleAuth */ this.type, _]): js.Any = js.native
   def `then`(
     onInit: js.Function1[/* googleAuth */ this.type, _],
-    onFailure: js.Function1[/* reason */ AnonDetails, _]
+    onFailure: js.Function1[/* reason */ Details, _]
   ): js.Any = js.native
 }
 

@@ -5,7 +5,7 @@ import typings.greasemonkey.greasemonkeyNumbers.`1`
 import typings.greasemonkey.greasemonkeyNumbers.`2`
 import typings.greasemonkey.greasemonkeyNumbers.`3`
 import typings.greasemonkey.greasemonkeyNumbers.`4`
-import typings.std.Document_
+import typings.std.Document
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ object ProgressResponse {
     response: js.Any,
     responseHeaders: String,
     responseText: String,
-    responseXML: Document_ | `false`,
+    responseXML: Document | `false`,
     status: Double,
     statusText: String,
     total: Double,

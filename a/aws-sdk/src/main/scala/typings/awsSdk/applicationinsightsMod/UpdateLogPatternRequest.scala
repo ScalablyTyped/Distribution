@@ -35,11 +35,11 @@ object UpdateLogPatternRequest {
     PatternSetName: LogPatternSetName,
     ResourceGroupName: ResourceGroupName,
     Pattern: LogPatternRegex = null,
-    Rank: Int | Double = null
+    Rank: js.UndefOr[LogPatternRank] = js.undefined
   ): UpdateLogPatternRequest = {
     val __obj = js.Dynamic.literal(PatternName = PatternName.asInstanceOf[js.Any], PatternSetName = PatternSetName.asInstanceOf[js.Any], ResourceGroupName = ResourceGroupName.asInstanceOf[js.Any])
     if (Pattern != null) __obj.updateDynamic("Pattern")(Pattern.asInstanceOf[js.Any])
-    if (Rank != null) __obj.updateDynamic("Rank")(Rank.asInstanceOf[js.Any])
+    if (!js.isUndefined(Rank)) __obj.updateDynamic("Rank")(Rank.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateLogPatternRequest]
   }
 }

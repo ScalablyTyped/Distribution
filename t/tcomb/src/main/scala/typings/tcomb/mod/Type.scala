@@ -1,6 +1,6 @@
 package typings.tcomb.mod
 
-import typings.tcomb.AnonIdentity
+import typings.tcomb.anon.Identity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait Type[T]
   var displayName: java.lang.String = js.native
   @JSName("is")
   var is_Original: TypeGuardPredicate[T] = js.native
-  var meta: AnonIdentity = js.native
+  var meta: Identity = js.native
   var t: T = js.native
   def apply(value: T): T = js.native
   def is(x: js.Any): /* is T */ scala.Boolean = js.native

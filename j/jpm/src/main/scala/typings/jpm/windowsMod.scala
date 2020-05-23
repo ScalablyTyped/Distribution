@@ -1,6 +1,7 @@
 package typings.jpm
 
 import typings.jpm.FFAddonSDK.BrowserWindow
+import typings.jpm.anon.IsPrivate
 import typings.jpm.jpmStrings.activate
 import typings.jpm.jpmStrings.close
 import typings.jpm.jpmStrings.deactivate
@@ -32,7 +33,7 @@ object windowsMod extends js.Object {
       * @param options.isPrivate determines whether the new window should be private or not
       */
     def open(options: String): BrowserWindow = js.native
-    def open(options: AnonIsPrivate): BrowserWindow = js.native
+    def open(options: IsPrivate): BrowserWindow = js.native
   }
   
   val browserWindows: BrowserWindows_ = js.native

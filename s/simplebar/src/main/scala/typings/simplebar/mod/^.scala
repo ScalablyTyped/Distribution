@@ -1,6 +1,6 @@
 package typings.simplebar.mod
 
-import typings.simplebar.PickWeakMapHTMLElementSim
+import typings.simplebar.anon.PickWeakMapHTMLElementSim
 import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js

@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,14 +35,6 @@ object ProtectionType extends js.Object {
   
   @js.native
   sealed trait SHEET extends ProtectionType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ProtectionType with Double] = js.native
-  /* 0 */ @js.native
-  object RANGE extends TopLevel[RANGE with Double]
-  
-  /* 1 */ @js.native
-  object SHEET extends TopLevel[SHEET with Double]
   
 }
 

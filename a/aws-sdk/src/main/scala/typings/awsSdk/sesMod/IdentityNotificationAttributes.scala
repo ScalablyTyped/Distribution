@@ -43,14 +43,14 @@ object IdentityNotificationAttributes {
     ComplaintTopic: NotificationTopic,
     DeliveryTopic: NotificationTopic,
     ForwardingEnabled: Enabled,
-    HeadersInBounceNotificationsEnabled: js.UndefOr[Boolean] = js.undefined,
-    HeadersInComplaintNotificationsEnabled: js.UndefOr[Boolean] = js.undefined,
-    HeadersInDeliveryNotificationsEnabled: js.UndefOr[Boolean] = js.undefined
+    HeadersInBounceNotificationsEnabled: js.UndefOr[Enabled] = js.undefined,
+    HeadersInComplaintNotificationsEnabled: js.UndefOr[Enabled] = js.undefined,
+    HeadersInDeliveryNotificationsEnabled: js.UndefOr[Enabled] = js.undefined
   ): IdentityNotificationAttributes = {
     val __obj = js.Dynamic.literal(BounceTopic = BounceTopic.asInstanceOf[js.Any], ComplaintTopic = ComplaintTopic.asInstanceOf[js.Any], DeliveryTopic = DeliveryTopic.asInstanceOf[js.Any], ForwardingEnabled = ForwardingEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(HeadersInBounceNotificationsEnabled)) __obj.updateDynamic("HeadersInBounceNotificationsEnabled")(HeadersInBounceNotificationsEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(HeadersInComplaintNotificationsEnabled)) __obj.updateDynamic("HeadersInComplaintNotificationsEnabled")(HeadersInComplaintNotificationsEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(HeadersInDeliveryNotificationsEnabled)) __obj.updateDynamic("HeadersInDeliveryNotificationsEnabled")(HeadersInDeliveryNotificationsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(HeadersInBounceNotificationsEnabled)) __obj.updateDynamic("HeadersInBounceNotificationsEnabled")(HeadersInBounceNotificationsEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(HeadersInComplaintNotificationsEnabled)) __obj.updateDynamic("HeadersInComplaintNotificationsEnabled")(HeadersInComplaintNotificationsEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(HeadersInDeliveryNotificationsEnabled)) __obj.updateDynamic("HeadersInDeliveryNotificationsEnabled")(HeadersInDeliveryNotificationsEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityNotificationAttributes]
   }
 }

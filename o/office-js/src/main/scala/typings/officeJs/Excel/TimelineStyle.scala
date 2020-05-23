@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.TimelineStyleData
 import typings.officeJs.Excel.Interfaces.TimelineStyleLoadOptions
 import typings.officeJs.Excel.Interfaces.TimelineStyleUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +16,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.10]
   */
-@JSGlobal("Excel.TimelineStyle")
 @js.native
-class TimelineStyle () extends ClientObject {
+trait TimelineStyle extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_TimelineStyle: RequestContext = js.native
@@ -31,7 +30,7 @@ class TimelineStyle () extends ClientObject {
   var name: String = js.native
   /**
     *
-    * Specifies whether this TimelineStyle object is read-only. Read-only.
+    * Specifies if this TimelineStyle object is read-only.
     *
     * [Api set: ExcelApi 1.10]
     */
@@ -56,7 +55,7 @@ class TimelineStyle () extends ClientObject {
     */
   def load(): TimelineStyle = js.native
   def load(options: TimelineStyleLoadOptions): TimelineStyle = js.native
-  def load(propertyNamesAndPaths: AnonExpand): TimelineStyle = js.native
+  def load(propertyNamesAndPaths: Expand): TimelineStyle = js.native
   def load(propertyNames: String): TimelineStyle = js.native
   def load(propertyNames: js.Array[String]): TimelineStyle = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

@@ -10,9 +10,9 @@ trait TextareaChangeEventDetail extends js.Object {
 
 object TextareaChangeEventDetail {
   @scala.inline
-  def apply(value: String = null): TextareaChangeEventDetail = {
+  def apply(value: js.UndefOr[Null | String] = js.undefined): TextareaChangeEventDetail = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextareaChangeEventDetail]
   }
 }

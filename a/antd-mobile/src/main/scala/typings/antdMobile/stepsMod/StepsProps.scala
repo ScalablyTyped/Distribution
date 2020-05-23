@@ -17,7 +17,7 @@ object StepsProps {
   @scala.inline
   def apply(
     children: js.Array[_],
-    current: Int | Double = null,
+    current: js.UndefOr[Double] = js.undefined,
     direction: String = null,
     iconPrefix: String = null,
     labelPlacement: String = null,
@@ -26,7 +26,7 @@ object StepsProps {
     status: String = null
   ): StepsProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
+    if (!js.isUndefined(current)) __obj.updateDynamic("current")(current.get.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (iconPrefix != null) __obj.updateDynamic("iconPrefix")(iconPrefix.asInstanceOf[js.Any])
     if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement.asInstanceOf[js.Any])

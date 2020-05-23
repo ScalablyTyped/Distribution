@@ -1,6 +1,6 @@
 package typings.cometd.mod
 
-import typings.cometd.AnonHosts
+import typings.cometd.anon.Hosts
 import typings.cometd.cometdBooleans.`false`
 import typings.cometd.cometdBooleans.`true`
 import scala.scalajs.js
@@ -19,7 +19,7 @@ object Message {
   def BaseMessage(
     channel: String,
     successful: Boolean,
-    advice: AnonHosts = null,
+    advice: Hosts = null,
     clientId: String = null,
     connectionType: ConnectionType = null,
     data: js.Any = null,
@@ -48,7 +48,7 @@ object Message {
     channel: String,
     subscription: String,
     successful: Boolean,
-    advice: AnonHosts = null,
+    advice: Hosts = null,
     clientId: String = null,
     connectionType: ConnectionType = null,
     data: js.Any = null,
@@ -80,7 +80,7 @@ object Message {
     successful: `true`,
     supportedConnectionTypes: js.Array[ConnectionType],
     version: String,
-    advice: AnonHosts = null,
+    advice: Hosts = null,
     authSuccessful: `true` = null,
     connectionType: ConnectionType = null,
     data: js.Any = null,
@@ -107,14 +107,13 @@ object Message {
     channel: String,
     error: String,
     successful: `false`,
-    advice: AnonHosts = null,
+    advice: Hosts = null,
     clientId: String = null,
     connectionType: ConnectionType = null,
     data: js.Any = null,
     ext: js.Any = null,
     id: String = null,
     minimumVersion: String = null,
-    reestablish: js.UndefOr[scala.Nothing] = js.undefined,
     supportedConnectionTypes: js.Array[ConnectionType] = null,
     timestamp: String = null,
     version: String = null
@@ -127,7 +126,6 @@ object Message {
     if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (minimumVersion != null) __obj.updateDynamic("minimumVersion")(minimumVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(reestablish)) __obj.updateDynamic("reestablish")(reestablish.asInstanceOf[js.Any])
     if (supportedConnectionTypes != null) __obj.updateDynamic("supportedConnectionTypes")(supportedConnectionTypes.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])

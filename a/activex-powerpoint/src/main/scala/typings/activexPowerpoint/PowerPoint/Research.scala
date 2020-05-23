@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.Research")
 @js.native
-class Research protected () extends js.Object {
+trait Research extends js.Object {
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   val Parent: js.Any = js.native
   @JSName("PowerPoint.Research_typekey")

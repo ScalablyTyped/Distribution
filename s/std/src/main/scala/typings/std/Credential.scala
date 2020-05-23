@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,12 @@ trait Credential extends js.Object {
   val `type`: java.lang.String
 }
 
-@JSGlobal("Credential")
-@js.native
-object Credential extends Instantiable0[Credential]
+object Credential {
+  @scala.inline
+  def apply(id: java.lang.String, `type`: java.lang.String): Credential = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Credential]
+  }
+}
 

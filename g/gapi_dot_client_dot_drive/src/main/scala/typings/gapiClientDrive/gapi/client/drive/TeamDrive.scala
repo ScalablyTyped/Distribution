@@ -1,7 +1,7 @@
 package typings.gapiClientDrive.gapi.client.drive
 
-import typings.gapiClientDrive.AnonCanChangeTeamDriveBackground
-import typings.gapiClientDrive.AnonId
+import typings.gapiClientDrive.anon.CanChangeTeamDriveBackground
+import typings.gapiClientDrive.anon.Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,11 +11,11 @@ trait TeamDrive extends js.Object {
     * An image file and cropping parameters from which a background image for this Team Drive is set. This is a write only field; it can only be set on
     * drive.teamdrives.update requests that don't set themeId. When specified, all fields of the backgroundImageFile must be set.
     */
-  var backgroundImageFile: js.UndefOr[AnonId] = js.undefined
+  var backgroundImageFile: js.UndefOr[Id] = js.undefined
   /** A short-lived link to this Team Drive's background image. */
   var backgroundImageLink: js.UndefOr[String] = js.undefined
   /** Capabilities the current user has on this Team Drive. */
-  var capabilities: js.UndefOr[AnonCanChangeTeamDriveBackground] = js.undefined
+  var capabilities: js.UndefOr[CanChangeTeamDriveBackground] = js.undefined
   /** The color of this Team Drive as an RGB hex string. It can only be set on a drive.teamdrives.update request that does not set themeId. */
   var colorRgb: js.UndefOr[String] = js.undefined
   /** The time at which the Team Drive was created (RFC 3339 date-time). */
@@ -37,9 +37,9 @@ trait TeamDrive extends js.Object {
 object TeamDrive {
   @scala.inline
   def apply(
-    backgroundImageFile: AnonId = null,
+    backgroundImageFile: Id = null,
     backgroundImageLink: String = null,
-    capabilities: AnonCanChangeTeamDriveBackground = null,
+    capabilities: CanChangeTeamDriveBackground = null,
     colorRgb: String = null,
     createdTime: String = null,
     id: String = null,

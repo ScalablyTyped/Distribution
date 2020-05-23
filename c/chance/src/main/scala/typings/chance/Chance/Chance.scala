@@ -1,19 +1,19 @@
 package typings.chance.Chance
 
-import typings.chance.AnonFormatted
-import typings.chance.AnonLikelihood
-import typings.chance.AnonRegion
-import typings.chance.AnonVersion
-import typings.chance.PartialCharacterOptions
-import typings.chance.PartialEmailOptions
-import typings.chance.PartialFirstNameOptions
-import typings.chance.PartialIntegerOptions
-import typings.chance.PartialNameOptions
-import typings.chance.PartialPrefixOptions
-import typings.chance.PartialSentenceOptions
-import typings.chance.PartialStringOptions
-import typings.chance.PartialUrlOptions
-import typings.chance.PartialWordOptions
+import typings.chance.anon.Formatted
+import typings.chance.anon.Likelihood
+import typings.chance.anon.PartialCharacterOptions
+import typings.chance.anon.PartialEmailOptions
+import typings.chance.anon.PartialFirstNameOptions
+import typings.chance.anon.PartialIntegerOptions
+import typings.chance.anon.PartialNameOptions
+import typings.chance.anon.PartialPrefixOptions
+import typings.chance.anon.PartialSentenceOptions
+import typings.chance.anon.PartialStringOptions
+import typings.chance.anon.PartialUrlOptions
+import typings.chance.anon.PartialWordOptions
+import typings.chance.anon.Region
+import typings.chance.anon.Version
 import typings.chance.chanceStrings.Friday
 import typings.chance.chanceStrings.Monday
 import typings.chance.chanceStrings.Saturday
@@ -67,7 +67,7 @@ trait Chance extends Seeded {
   def birthday_Union(): Date | String = js.native
   // Basics
   def bool(): Boolean = js.native
-  def bool(opts: AnonLikelihood): Boolean = js.native
+  def bool(opts: Likelihood): Boolean = js.native
   // Helpers
   def capitalize(str: String): String = js.native
   // Finance
@@ -92,7 +92,7 @@ trait Chance extends Seeded {
   def country(): String = js.native
   def country(opts: Options): String = js.native
   def cpf(): String = js.native
-  def cpf(opts: AnonFormatted): String = js.native
+  def cpf(opts: Formatted): String = js.native
   def currency(): Currency = js.native
   def currency_pair(): js.Tuple2[Currency, Currency] = js.native
   def d10(): Double = js.native
@@ -121,6 +121,9 @@ trait Chance extends Seeded {
   def exp_month(opts: Options): String = js.native
   def exp_year(): String = js.native
   def exp_year(opts: Options): String = js.native
+  /** https://chancejs.com/basics/falsy.html */
+  def falsy(): FalsyType = js.native
+  def falsy(ops: FalsyOptions): FalsyType = js.native
   def fbid(): String = js.native
   def first(): String = js.native
   def first(opts: PartialFirstNameOptions): String = js.native
@@ -131,7 +134,7 @@ trait Chance extends Seeded {
   def geohash(opts: Options): String = js.native
   def google_analytics(): String = js.native
   def guid(): String = js.native
-  def guid(options: AnonVersion): String = js.native
+  def guid(options: Version): String = js.native
   def hammertime(): Double = js.native
   def hash(): String = js.native
   def hash(opts: Options): String = js.native
@@ -150,9 +153,9 @@ trait Chance extends Seeded {
   def letter(): String = js.native
   def letter(opts: Options): String = js.native
   def locale(): String = js.native
-  def locale(opts: AnonRegion): String = js.native
+  def locale(opts: Region): String = js.native
   def locales(): js.Array[String] = js.native
-  def locales(opts: AnonRegion): js.Array[String] = js.native
+  def locales(opts: Region): js.Array[String] = js.native
   def longitude(): Double = js.native
   def longitude(opts: Options): Double = js.native
   def mersenne_twister(): js.Any = js.native
@@ -250,6 +253,7 @@ trait Chance extends Seeded {
   def suffix(opts: SuffixOptions): String = js.native
   def syllable(): String = js.native
   def syllable(opts: Options): String = js.native
+  def template(template: String): String = js.native
   def timestamp(): Double = js.native
   def timezone(): Timezone = js.native
   def tld(): String = js.native

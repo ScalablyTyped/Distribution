@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ScrollArea")
 @js.native
-class ScrollArea ()
+trait ScrollArea
   extends Component[ScrollAreaProps, js.Object, js.Any] {
   /**
     * Allows manual refreshing of the scrollbar.

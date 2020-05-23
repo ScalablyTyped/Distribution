@@ -13,7 +13,7 @@ class ^ protected () extends Memcached {
     * @param options options
     */
   def this(location: Location) = this()
-  def this(location: Location, options: options) = this()
+  def this(location: Location, options: typings.memcached.mod.options) = this()
 }
 
 @JSImport("memcached", JSImport.Namespace)

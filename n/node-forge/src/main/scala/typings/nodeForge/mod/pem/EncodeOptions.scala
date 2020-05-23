@@ -10,9 +10,9 @@ trait EncodeOptions extends js.Object {
 
 object EncodeOptions {
   @scala.inline
-  def apply(maxline: Int | Double = null): EncodeOptions = {
+  def apply(maxline: js.UndefOr[Double] = js.undefined): EncodeOptions = {
     val __obj = js.Dynamic.literal()
-    if (maxline != null) __obj.updateDynamic("maxline")(maxline.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxline)) __obj.updateDynamic("maxline")(maxline.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncodeOptions]
   }
 }

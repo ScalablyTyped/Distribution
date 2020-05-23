@@ -4,16 +4,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("InfoPath.SaveEventObject")
-@js.native
-class SaveEventObject protected () extends js.Object {
-  val FileName: String = js.native
+trait SaveEventObject extends js.Object {
+  val FileName: String
   @JSName("InfoPath.SaveEventObject_typekey")
-  var InfoPathDotSaveEventObject_typekey: SaveEventObject = js.native
-  var IsCancelled: Boolean = js.native
-  val IsSaveAs: Boolean = js.native
-  var ReturnStatus: Boolean = js.native
-  val XDocument: _XDocument = js.native
-  def PerformSaveOperation(): Boolean = js.native
+  var InfoPathDotSaveEventObject_typekey: SaveEventObject
+  var IsCancelled: Boolean
+  val IsSaveAs: Boolean
+  var ReturnStatus: Boolean
+  val XDocument: _XDocument
+  def PerformSaveOperation(): Boolean
+}
+
+object SaveEventObject {
+  @scala.inline
+  def apply(
+    FileName: String,
+    InfoPathDotSaveEventObject_typekey: SaveEventObject,
+    IsCancelled: Boolean,
+    IsSaveAs: Boolean,
+    PerformSaveOperation: () => Boolean,
+    ReturnStatus: Boolean,
+    XDocument: _XDocument
+  ): SaveEventObject = {
+    val __obj = js.Dynamic.literal(FileName = FileName.asInstanceOf[js.Any], IsCancelled = IsCancelled.asInstanceOf[js.Any], IsSaveAs = IsSaveAs.asInstanceOf[js.Any], PerformSaveOperation = js.Any.fromFunction0(PerformSaveOperation), ReturnStatus = ReturnStatus.asInstanceOf[js.Any], XDocument = XDocument.asInstanceOf[js.Any])
+    __obj.updateDynamic("InfoPath.SaveEventObject_typekey")(InfoPathDotSaveEventObject_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SaveEventObject]
+  }
 }
 

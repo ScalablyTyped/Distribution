@@ -18,13 +18,13 @@ trait WindowsInformationProtectionDataRecoveryCertificate extends js.Object {
 object WindowsInformationProtectionDataRecoveryCertificate {
   @scala.inline
   def apply(
-    certificate: Int | Double = null,
+    certificate: js.UndefOr[Double] = js.undefined,
     description: String = null,
     expirationDateTime: String = null,
     subjectName: String = null
   ): WindowsInformationProtectionDataRecoveryCertificate = {
     val __obj = js.Dynamic.literal()
-    if (certificate != null) __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
+    if (!js.isUndefined(certificate)) __obj.updateDynamic("certificate")(certificate.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (expirationDateTime != null) __obj.updateDynamic("expirationDateTime")(expirationDateTime.asInstanceOf[js.Any])
     if (subjectName != null) __obj.updateDynamic("subjectName")(subjectName.asInstanceOf[js.Any])

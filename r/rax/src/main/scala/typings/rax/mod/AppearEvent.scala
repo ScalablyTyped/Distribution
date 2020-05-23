@@ -2,12 +2,12 @@ package typings.rax.mod
 
 import typings.rax.raxStrings.down
 import typings.rax.raxStrings.up
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AppearEvent[T] extends BaseSyntheticEvent[Event_, EventTarget with T, EventTarget] {
+trait AppearEvent[T] extends BaseSyntheticEvent[Event, EventTarget with T, EventTarget] {
   var direction: up | down
 }
 
@@ -23,7 +23,7 @@ object AppearEvent {
     isDefaultPrevented: () => Boolean,
     isPropagationStopped: () => Boolean,
     isTrusted: Boolean,
-    nativeEvent: Event_,
+    nativeEvent: Event,
     persist: () => Unit,
     preventDefault: () => Unit,
     stopPropagation: () => Unit,

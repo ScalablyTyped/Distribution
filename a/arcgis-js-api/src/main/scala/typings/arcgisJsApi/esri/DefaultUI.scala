@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,8 +14,4 @@ trait DefaultUI extends UI {
     */
   var components: js.Array[String] = js.native
 }
-
-@JSGlobal("__esri.DefaultUI")
-@js.native
-object DefaultUI extends TopLevel[DefaultUIConstructor]
 

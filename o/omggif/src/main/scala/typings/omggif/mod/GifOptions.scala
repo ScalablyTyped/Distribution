@@ -12,10 +12,14 @@ trait GifOptions extends js.Object {
 
 object GifOptions {
   @scala.inline
-  def apply(background: Int | Double = null, loop: Int | Double = null, palette: js.Array[Double] = null): GifOptions = {
+  def apply(
+    background: js.UndefOr[Double] = js.undefined,
+    loop: js.UndefOr[Double] = js.undefined,
+    palette: js.Array[Double] = null
+  ): GifOptions = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
     if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
     __obj.asInstanceOf[GifOptions]
   }

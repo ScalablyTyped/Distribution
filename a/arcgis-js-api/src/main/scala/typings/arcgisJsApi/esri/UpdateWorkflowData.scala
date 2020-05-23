@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +31,16 @@ trait UpdateWorkflowData extends js.Object {
   var viewModel: EditorViewModel
 }
 
-@JSGlobal("__esri.UpdateWorkflowData")
-@js.native
-object UpdateWorkflowData extends TopLevel[UpdateWorkflowData]
+object UpdateWorkflowData {
+  @scala.inline
+  def apply(
+    candidates: js.Array[Graphic],
+    editableItem: EditableItem,
+    edits: Edits,
+    viewModel: EditorViewModel
+  ): UpdateWorkflowData = {
+    val __obj = js.Dynamic.literal(candidates = candidates.asInstanceOf[js.Any], editableItem = editableItem.asInstanceOf[js.Any], edits = edits.asInstanceOf[js.Any], viewModel = viewModel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UpdateWorkflowData]
+  }
+}
 

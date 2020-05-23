@@ -4,11 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("cast.framework.VolumeEventData")
-@js.native
-class VolumeEventData protected () extends EventData {
-  def this(volume: Double, isMute: Boolean) = this()
-  var isMute: Boolean = js.native
-  var volume: Double = js.native
+trait VolumeEventData extends EventData {
+  var isMute: Boolean
+  var volume: Double
+}
+
+object VolumeEventData {
+  @scala.inline
+  def apply(isMute: Boolean, `type`: String, volume: Double): VolumeEventData = {
+    val __obj = js.Dynamic.literal(isMute = isMute.asInstanceOf[js.Any], volume = volume.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VolumeEventData]
+  }
 }
 

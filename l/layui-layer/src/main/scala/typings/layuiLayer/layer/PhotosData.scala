@@ -20,9 +20,14 @@ trait PhotosData extends js.Object {
 
 object PhotosData {
   @scala.inline
-  def apply(data: js.Array[PhotosDataItem], id: Double, title: String, start: Int | Double = null): PhotosData = {
+  def apply(
+    data: js.Array[PhotosDataItem],
+    id: Double,
+    title: String,
+    start: js.UndefOr[Double] = js.undefined
+  ): PhotosData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhotosData]
   }
 }

@@ -17,9 +17,9 @@ trait PageViewUpdateData extends js.Object {
 
 object PageViewUpdateData {
   @scala.inline
-  def apply(zoom: Int | Double = null): PageViewUpdateData = {
+  def apply(zoom: js.UndefOr[Double] = js.undefined): PageViewUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageViewUpdateData]
   }
 }

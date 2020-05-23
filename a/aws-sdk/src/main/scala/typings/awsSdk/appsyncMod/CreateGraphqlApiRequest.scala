@@ -50,7 +50,7 @@ object CreateGraphqlApiRequest {
     openIDConnectConfig: OpenIDConnectConfig = null,
     tags: TagMap = null,
     userPoolConfig: UserPoolConfig = null,
-    xrayEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    xrayEnabled: js.UndefOr[Boolean] = js.undefined
   ): CreateGraphqlApiRequest = {
     val __obj = js.Dynamic.literal(authenticationType = authenticationType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (additionalAuthenticationProviders != null) __obj.updateDynamic("additionalAuthenticationProviders")(additionalAuthenticationProviders.asInstanceOf[js.Any])
@@ -58,7 +58,7 @@ object CreateGraphqlApiRequest {
     if (openIDConnectConfig != null) __obj.updateDynamic("openIDConnectConfig")(openIDConnectConfig.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (userPoolConfig != null) __obj.updateDynamic("userPoolConfig")(userPoolConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(xrayEnabled)) __obj.updateDynamic("xrayEnabled")(xrayEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(xrayEnabled)) __obj.updateDynamic("xrayEnabled")(xrayEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGraphqlApiRequest]
   }
 }

@@ -1,5 +1,7 @@
 package typings.expressValidator
 
+import typings.expressValidator.anon.CheckFalsy
+import typings.expressValidator.anon.Max
 import typings.expressValidator.baseMod.CustomValidator
 import typings.expressValidator.baseMod.DynamicMessageCreator
 import typings.expressValidator.expressValidatorStrings.ES
@@ -40,7 +42,7 @@ object validatorsMod extends js.Object {
     def custom(validator: CustomValidator): Return = js.native
     def equals(comparison: String): Return = js.native
     def exists(): Return = js.native
-    def exists(options: AnonCheckFalsy): Return = js.native
+    def exists(options: CheckFalsy): Return = js.native
     def isAfter(): Return = js.native
     def isAfter(date: String): Return = js.native
     def isAlpha(): Return = js.native
@@ -48,7 +50,7 @@ object validatorsMod extends js.Object {
     def isAlphanumeric(): Return = js.native
     def isAlphanumeric(locale: AlphanumericLocale): Return = js.native
     def isArray(): Return = js.native
-    def isArray(options: AnonMax): Return = js.native
+    def isArray(options: Max): Return = js.native
     def isAscii(): Return = js.native
     def isBIC(): Return = js.native
     def isBase32(): Return = js.native
@@ -56,6 +58,7 @@ object validatorsMod extends js.Object {
     def isBefore(): Return = js.native
     def isBefore(date: String): Return = js.native
     def isBoolean(): Return = js.native
+    def isBtcAddress(): Return = js.native
     def isByteLength(options: MinMaxExtendedOptions): Return = js.native
     def isCreditCard(): Return = js.native
     def isCurrency(): Return = js.native
@@ -64,19 +67,23 @@ object validatorsMod extends js.Object {
     def isDecimal(): Return = js.native
     def isDecimal(options: IsDecimalOptions): Return = js.native
     def isDivisibleBy(number: Double): Return = js.native
+    def isEAN(): Return = js.native
     def isEmail(): Return = js.native
     def isEmail(options: IsEmailOptions): Return = js.native
     def isEmpty(): Return = js.native
     def isEmpty(options: IsEmptyOptions): Return = js.native
+    def isEthereumAddress(): Return = js.native
     def isFQDN(): Return = js.native
     def isFQDN(options: IsFQDNOptions): Return = js.native
     def isFloat(): Return = js.native
     def isFloat(options: IsFloatOptions): Return = js.native
     def isFullWidth(): Return = js.native
+    def isHSL(): Return = js.native
     def isHalfWidth(): Return = js.native
     def isHash(algorithm: HashAlgorithm): Return = js.native
     def isHexColor(): Return = js.native
     def isHexadecimal(): Return = js.native
+    def isIBAN(): Return = js.native
     def isIP(): Return = js.native
     def isIP(version: IPVersion): Return = js.native
     def isIPRange(): Return = js.native
@@ -102,6 +109,7 @@ object validatorsMod extends js.Object {
     def isJWT(): Return = js.native
     def isLatLong(): Return = js.native
     def isLength(options: MinMaxOptions): Return = js.native
+    def isLocale(): Return = js.native
     def isLowercase(): Return = js.native
     def isMACAddress(): Return = js.native
     def isMACAddress(options: IsMACAddressOptions): Return = js.native
@@ -117,9 +125,14 @@ object validatorsMod extends js.Object {
     def isNumeric(): Return = js.native
     def isNumeric(options: IsNumericOptions): Return = js.native
     def isOctal(): Return = js.native
+    def isPassportNumber(): Return = js.native
+    def isPassportNumber(countryCode: String): Return = js.native
     def isPort(): Return = js.native
     def isPostalCode(locale: PostalCodeLocale): Return = js.native
     def isRFC3339(): Return = js.native
+    def isRgbColor(): Return = js.native
+    def isRgbColor(includePercentValues: Boolean): Return = js.native
+    def isSemVer(): Return = js.native
     def isSlug(): Return = js.native
     def isString(): Return = js.native
     def isSurrogatePair(): Return = js.native

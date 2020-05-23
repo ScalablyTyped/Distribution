@@ -22,13 +22,9 @@ trait DeleteFleetsRequest extends js.Object {
 
 object DeleteFleetsRequest {
   @scala.inline
-  def apply(
-    FleetIds: FleetIdSet,
-    TerminateInstances: Boolean,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined
-  ): DeleteFleetsRequest = {
+  def apply(FleetIds: FleetIdSet, TerminateInstances: Boolean, DryRun: js.UndefOr[Boolean] = js.undefined): DeleteFleetsRequest = {
     val __obj = js.Dynamic.literal(FleetIds = FleetIds.asInstanceOf[js.Any], TerminateInstances = TerminateInstances.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFleetsRequest]
   }
 }

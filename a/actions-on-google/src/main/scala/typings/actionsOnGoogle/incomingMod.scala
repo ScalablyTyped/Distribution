@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object incomingMod extends js.Object {
   @js.native
+  /** @hidden */
   class Incoming () extends js.Object {
-    /** @hidden */
     def this(fulfillment: js.Array[GoogleCloudDialogflowV2IntentMessage]) = this()
     def this(fulfillment: DialogflowV1Fulfillment) = this()
     /**

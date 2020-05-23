@@ -1,7 +1,7 @@
 package typings.angularCommon.upgradeUpgradeMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularCommon.AnonHash
+import typings.angularCommon.anon.Hash
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -74,7 +74,7 @@ abstract class UrlCodec () extends js.Object {
     * @param url The full URL string
     * @param base The base for the URL
     */
-  def parse(url: String): AnonHash = js.native
-  def parse(url: String, base: String): AnonHash = js.native
+  def parse(url: String): Hash = js.native
+  def parse(url: String, base: String): Hash = js.native
 }
 

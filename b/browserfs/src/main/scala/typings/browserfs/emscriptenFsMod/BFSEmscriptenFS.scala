@@ -1,6 +1,6 @@
 package typings.browserfs.emscriptenFsMod
 
-import typings.browserfs.Anon0
+import typings.browserfs.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait BFSEmscriptenFS extends EmscriptenFS {
   var ERRNO_CODES: js.Any = js.native
   var FS: js.Any = js.native
   var PATH: js.Any = js.native
-  var flagsToPermissionStringMap: Anon0 = js.native
+  var flagsToPermissionStringMap: `0` = js.native
   var nodefs: js.Any = js.native
   def createNode(parent: Null, name: String, mode: Double): EmscriptenFSNode = js.native
   def createNode(parent: Null, name: String, mode: Double, dev: js.Any): EmscriptenFSNode = js.native

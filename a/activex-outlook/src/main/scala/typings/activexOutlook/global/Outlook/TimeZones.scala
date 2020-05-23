@@ -1,0 +1,37 @@
+package typings.activexOutlook.global.Outlook
+
+import typings.activexOutlook.Outlook.OlObjectClass
+import typings.std.VarDate
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("Outlook.TimeZones")
+@js.native
+class TimeZones protected ()
+  extends typings.activexOutlook.Outlook.TimeZones {
+  /* CompleteClass */
+  override val Application: typings.activexOutlook.Outlook.Application = js.native
+  /* CompleteClass */
+  override val Class: OlObjectClass = js.native
+  /* CompleteClass */
+  override val Count: Double = js.native
+  /* CompleteClass */
+  override val CurrentTimeZone: typings.activexOutlook.Outlook.TimeZone = js.native
+  /* CompleteClass */
+  @JSName("Outlook.TimeZones_typekey")
+  override var OutlookDotTimeZones_typekey: typings.activexOutlook.Outlook.TimeZones = js.native
+  /* CompleteClass */
+  override val Parent: js.Any = js.native
+  /* CompleteClass */
+  override val Session: typings.activexOutlook.Outlook.NameSpace = js.native
+  /* CompleteClass */
+  override def ConvertTime(
+    SourceDateTime: VarDate,
+    SourceTimeZone: typings.activexOutlook.Outlook.TimeZone,
+    DestinationTimeZone: typings.activexOutlook.Outlook.TimeZone
+  ): VarDate = js.native
+  /* CompleteClass */
+  override def Item(Index: js.Any): typings.activexOutlook.Outlook.TimeZone = js.native
+}
+

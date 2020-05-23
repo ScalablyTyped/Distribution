@@ -1,7 +1,7 @@
 package typings.firebaseAdmin.admin.auth
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firebaseAdmin.AnonDictkey
+import typings.firebaseAdmin.anon.Dictkey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   * for more information about the specific properties below.
   */
 trait DecodedIdToken
-  extends /* key */ StringDictionary[js.Any] {
+  extends /* customData */ StringDictionary[js.Any] {
   /**
     * The audience for which this token is intended.
     *
@@ -36,6 +36,15 @@ trait DecodedIdToken
     */
   var auth_time: Double
   /**
+    * The email of the user to whom the ID token belongs, if available.
+    */
+  var email: js.UndefOr[String] = js.undefined
+  /**
+    * Whether or not the email of the user to whom the ID token belongs is
+    * verified, provided the user has an email.
+    */
+  var email_verified: js.UndefOr[Boolean] = js.undefined
+  /**
     * The ID token's expiration time, in seconds since the Unix epoch. That is, the
     * time at which this ID token expires and should no longer be considered valid.
     *
@@ -50,7 +59,7 @@ trait DecodedIdToken
     * This data is provided by the Firebase Authentication service and is a
     * reserved claim in the ID token.
     */
-  var firebase: AnonDictkey
+  var firebase: Dictkey
   /**
     * The ID token's issued-at time, in seconds since the Unix epoch. That is, the
     * time at which this ID token was issued and should start to be considered
@@ -70,6 +79,14 @@ trait DecodedIdToken
     * same project ID specified in the [`aud`](#aud) property.
     */
   var iss: String
+  /**
+    * The phone number of the user to whom the ID token belongs, if available.
+    */
+  var phone_number: js.UndefOr[String] = js.undefined
+  /**
+    * The photo URL for the user to whom the ID token belongs, if available.
+    */
+  var picture: js.UndefOr[String] = js.undefined
   /**
     * The `uid` corresponding to the user who the ID token belonged to.
     *
@@ -91,15 +108,23 @@ object DecodedIdToken {
     aud: String,
     auth_time: Double,
     exp: Double,
-    firebase: AnonDictkey,
+    firebase: Dictkey,
     iat: Double,
     iss: String,
     sub: String,
     uid: String,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    email: String = null,
+    email_verified: js.UndefOr[Boolean] = js.undefined,
+    phone_number: String = null,
+    picture: String = null
   ): DecodedIdToken = {
     val __obj = js.Dynamic.literal(aud = aud.asInstanceOf[js.Any], auth_time = auth_time.asInstanceOf[js.Any], exp = exp.asInstanceOf[js.Any], firebase = firebase.asInstanceOf[js.Any], iat = iat.asInstanceOf[js.Any], iss = iss.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (!js.isUndefined(email_verified)) __obj.updateDynamic("email_verified")(email_verified.get.asInstanceOf[js.Any])
+    if (phone_number != null) __obj.updateDynamic("phone_number")(phone_number.asInstanceOf[js.Any])
+    if (picture != null) __obj.updateDynamic("picture")(picture.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecodedIdToken]
   }
 }

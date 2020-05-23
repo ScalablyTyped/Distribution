@@ -1,16 +1,12 @@
 package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.JQuery
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.Window")
 @js.native
-class Window protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: WindowOptions) = this()
+trait Window extends Widget {
   @JSName("options")
   var options_Window: WindowOptions = js.native
   var wrapper: JQuery = js.native
@@ -37,13 +33,5 @@ class Window protected () extends Widget {
   def toFront(): Window = js.native
   def toggleMaximization(): Window = js.native
   def unpin(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.Window")
-@js.native
-object Window extends js.Object {
-  var fn: Window = js.native
-  def extend(proto: js.Object): Window = js.native
 }
 

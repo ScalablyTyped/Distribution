@@ -57,7 +57,7 @@ object RequestAuthDefinition {
     if (bearer != null) __obj.updateDynamic("bearer")(bearer.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (digest != null) __obj.updateDynamic("digest")(digest.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (edgegrid != null) __obj.updateDynamic("edgegrid")(edgegrid.asInstanceOf[js.Any])
     if (hawk != null) __obj.updateDynamic("hawk")(hawk.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

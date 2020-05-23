@@ -64,9 +64,9 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    customStylesheet: String = null,
-    height: Int | Double = null,
-    icon: String = null,
+    customStylesheet: js.UndefOr[Null | String] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
+    icon: js.UndefOr[Null | String] = js.undefined,
     inputAttrs: Record[String, _] = null,
     label: String = null,
     resizable: js.UndefOr[Boolean] = js.undefined,
@@ -74,22 +74,22 @@ object Options {
     title: String = null,
     `type`: ApostropheinputApostrophe | select = null,
     useHtmlLabel: js.UndefOr[Boolean] = js.undefined,
-    value: String = null,
-    width: Int | Double = null
+    value: js.UndefOr[Null | String] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (customStylesheet != null) __obj.updateDynamic("customStylesheet")(customStylesheet.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(customStylesheet)) __obj.updateDynamic("customStylesheet")(customStylesheet.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (inputAttrs != null) __obj.updateDynamic("inputAttrs")(inputAttrs.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.get.asInstanceOf[js.Any])
     if (selectOptions != null) __obj.updateDynamic("selectOptions")(selectOptions.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHtmlLabel)) __obj.updateDynamic("useHtmlLabel")(useHtmlLabel.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHtmlLabel)) __obj.updateDynamic("useHtmlLabel")(useHtmlLabel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -9,9 +9,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapMemo")
 @js.native
-class BootstrapMemo () extends BootstrapClientEdit {
+trait BootstrapMemo extends BootstrapClientEdit {
   def getCaretPosition(): Double = js.native
   def getText(): String = js.native
   @JSName("off")

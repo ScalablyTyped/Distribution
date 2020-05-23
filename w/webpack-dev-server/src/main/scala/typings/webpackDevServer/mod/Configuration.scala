@@ -8,11 +8,11 @@ import typings.serveStatic.mod.ServeStaticOptions
 import typings.webpack.mod.Compiler_
 import typings.webpack.mod.Options.Stats
 import typings.webpack.mod.WatchOptions
-import typings.webpackDevServer.AnonClient
-import typings.webpackDevServer.AnonClientServer
-import typings.webpackDevServer.AnonErrors
-import typings.webpackDevServer.AnonServer
-import typings.webpackDevServer.AnonTypeMap
+import typings.webpackDevServer.anon.Client
+import typings.webpackDevServer.anon.ClientServer
+import typings.webpackDevServer.anon.Errors
+import typings.webpackDevServer.anon.Server
+import typings.webpackDevServer.anon.TypeMap
 import typings.webpackDevServer.webpackDevServerStrings.debug
 import typings.webpackDevServer.webpackDevServerStrings.error
 import typings.webpackDevServer.webpackDevServerStrings.info
@@ -76,7 +76,7 @@ trait Configuration extends js.Object {
     * If there was a file `assets/manifest.json`,
     * it would be served at `/serve-content-base-at-this-url/manifest.json`
     */
-  var contentBasePublicPath: js.UndefOr[String] = js.undefined
+  var contentBasePublicPath: js.UndefOr[String | js.Array[String]] = js.undefined
   /**
     * When set to true this option bypasses host checking.  THIS IS NOT
     * RECOMMENDED as apps that do not check the host are vulnerable to DNS
@@ -166,7 +166,7 @@ trait Configuration extends js.Object {
     * [documentation](https://github.com/webpack/webpack-dev-middleware#mimetypes)
     * for usage notes.
     */
-  var mimeTypes: js.UndefOr[StringDictionary[js.Array[String]] | AnonTypeMap] = js.undefined
+  var mimeTypes: js.UndefOr[StringDictionary[js.Array[String]] | TypeMap] = js.undefined
   /**
     * With noInfo enabled, messages like the webpack bundle information
     * that is shown when starting up and after each save,will be hidden.
@@ -179,14 +179,14 @@ trait Configuration extends js.Object {
     */
   var onListening: js.UndefOr[js.Function1[/* server */ WebpackDevServer, Unit]] = js.undefined
   /** When open is enabled, the dev server will open the browser. */
-  var open: js.UndefOr[Boolean | String] = js.undefined
+  var open: js.UndefOr[Boolean | String | js.Object] = js.undefined
   /** Specify a page to navigate to when opening the browser. */
   var openPage: js.UndefOr[String | js.Array[String]] = js.undefined
   /**
     * Shows a full-screen overlay in the browser when there are compiler
     * errors or warnings. Disabled by default.
     */
-  var overlay: js.UndefOr[Boolean | AnonErrors] = js.undefined
+  var overlay: js.UndefOr[Boolean | Errors] = js.undefined
   /**
     * When used via the CLI, a path to an SSL .pfx file. If used in
     * options, it should be the bytestream of the .pfx file.
@@ -290,7 +290,7 @@ trait Configuration extends js.Object {
     * version. This mode uses ws as a server, and native WebSockets on the
     * client.
     */
-  var transportMode: js.UndefOr[sockjs | ws | AnonClient | AnonServer | AnonClientServer] = js.undefined
+  var transportMode: js.UndefOr[sockjs | ws | Client | Server | ClientServer] = js.undefined
   /** This option lets the browser open with your local IP. */
   var useLocalIp: js.UndefOr[Boolean] = js.undefined
   /**
@@ -315,7 +315,7 @@ object Configuration {
     clientLogLevel: silent | trace | debug | info | warn | error | none | warning = null,
     compress: js.UndefOr[Boolean] = js.undefined,
     contentBase: Boolean | String | js.Array[String] | Double = null,
-    contentBasePublicPath: String = null,
+    contentBasePublicPath: String | js.Array[String] = null,
     disableHostCheck: js.UndefOr[Boolean] = js.undefined,
     filename: String = null,
     headers: StringDictionary[String] = null,
@@ -331,15 +331,15 @@ object Configuration {
     `inline`: js.UndefOr[Boolean] = js.undefined,
     `lazy`: js.UndefOr[Boolean] = js.undefined,
     liveReload: js.UndefOr[Boolean] = js.undefined,
-    mimeTypes: StringDictionary[js.Array[String]] | AnonTypeMap = null,
+    mimeTypes: StringDictionary[js.Array[String]] | TypeMap = null,
     noInfo: js.UndefOr[Boolean] = js.undefined,
     onListening: /* server */ WebpackDevServer => Unit = null,
-    open: Boolean | String = null,
+    open: Boolean | String | js.Object = null,
     openPage: String | js.Array[String] = null,
-    overlay: Boolean | AnonErrors = null,
+    overlay: Boolean | Errors = null,
     pfx: String = null,
     pfxPassphrase: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     proxy: ProxyConfigMap | ProxyConfigArray = null,
     public: String = null,
     publicPath: String = null,
@@ -352,7 +352,7 @@ object Configuration {
     socket: String = null,
     staticOptions: ServeStaticOptions = null,
     stats: Stats = null,
-    transportMode: sockjs | ws | AnonClient | AnonServer | AnonClientServer = null,
+    transportMode: sockjs | ws | Client | Server | ClientServer = null,
     useLocalIp: js.UndefOr[Boolean] = js.undefined,
     watchContentBase: js.UndefOr[Boolean] = js.undefined,
     watchOptions: WatchOptions = null,
@@ -362,40 +362,40 @@ object Configuration {
     if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction3(after))
     if (allowedHosts != null) __obj.updateDynamic("allowedHosts")(allowedHosts.asInstanceOf[js.Any])
     if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction3(before))
-    if (!js.isUndefined(bonjour)) __obj.updateDynamic("bonjour")(bonjour.asInstanceOf[js.Any])
+    if (!js.isUndefined(bonjour)) __obj.updateDynamic("bonjour")(bonjour.get.asInstanceOf[js.Any])
     if (clientLogLevel != null) __obj.updateDynamic("clientLogLevel")(clientLogLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.get.asInstanceOf[js.Any])
     if (contentBase != null) __obj.updateDynamic("contentBase")(contentBase.asInstanceOf[js.Any])
     if (contentBasePublicPath != null) __obj.updateDynamic("contentBasePublicPath")(contentBasePublicPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableHostCheck)) __obj.updateDynamic("disableHostCheck")(disableHostCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableHostCheck)) __obj.updateDynamic("disableHostCheck")(disableHostCheck.get.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (historyApiFallback != null) __obj.updateDynamic("historyApiFallback")(historyApiFallback.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(hot)) __obj.updateDynamic("hot")(hot.asInstanceOf[js.Any])
-    if (!js.isUndefined(hotOnly)) __obj.updateDynamic("hotOnly")(hotOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(http2)) __obj.updateDynamic("http2")(http2.asInstanceOf[js.Any])
+    if (!js.isUndefined(hot)) __obj.updateDynamic("hot")(hot.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hotOnly)) __obj.updateDynamic("hotOnly")(hotOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(http2)) __obj.updateDynamic("http2")(http2.get.asInstanceOf[js.Any])
     if (https != null) __obj.updateDynamic("https")(https.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (injectClient != null) __obj.updateDynamic("injectClient")(injectClient.asInstanceOf[js.Any])
     if (injectHot != null) __obj.updateDynamic("injectHot")(injectHot.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
-    if (!js.isUndefined(liveReload)) __obj.updateDynamic("liveReload")(liveReload.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(liveReload)) __obj.updateDynamic("liveReload")(liveReload.get.asInstanceOf[js.Any])
     if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(noInfo)) __obj.updateDynamic("noInfo")(noInfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(noInfo)) __obj.updateDynamic("noInfo")(noInfo.get.asInstanceOf[js.Any])
     if (onListening != null) __obj.updateDynamic("onListening")(js.Any.fromFunction1(onListening))
     if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
     if (openPage != null) __obj.updateDynamic("openPage")(openPage.asInstanceOf[js.Any])
     if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
     if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
     if (pfxPassphrase != null) __obj.updateDynamic("pfxPassphrase")(pfxPassphrase.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     if (public != null) __obj.updateDynamic("public")(public.asInstanceOf[js.Any])
     if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.asInstanceOf[js.Any])
-    if (!js.isUndefined(serveIndex)) __obj.updateDynamic("serveIndex")(serveIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(serveIndex)) __obj.updateDynamic("serveIndex")(serveIndex.get.asInstanceOf[js.Any])
     if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction2(setup))
     if (sockHost != null) __obj.updateDynamic("sockHost")(sockHost.asInstanceOf[js.Any])
     if (sockPath != null) __obj.updateDynamic("sockPath")(sockPath.asInstanceOf[js.Any])
@@ -404,8 +404,8 @@ object Configuration {
     if (staticOptions != null) __obj.updateDynamic("staticOptions")(staticOptions.asInstanceOf[js.Any])
     if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
     if (transportMode != null) __obj.updateDynamic("transportMode")(transportMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(useLocalIp)) __obj.updateDynamic("useLocalIp")(useLocalIp.asInstanceOf[js.Any])
-    if (!js.isUndefined(watchContentBase)) __obj.updateDynamic("watchContentBase")(watchContentBase.asInstanceOf[js.Any])
+    if (!js.isUndefined(useLocalIp)) __obj.updateDynamic("useLocalIp")(useLocalIp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(watchContentBase)) __obj.updateDynamic("watchContentBase")(watchContentBase.get.asInstanceOf[js.Any])
     if (watchOptions != null) __obj.updateDynamic("watchOptions")(watchOptions.asInstanceOf[js.Any])
     if (writeToDisk != null) __obj.updateDynamic("writeToDisk")(writeToDisk.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]

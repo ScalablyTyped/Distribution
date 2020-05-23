@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.ShapeFillData
 import typings.officeJs.Excel.Interfaces.ShapeFillLoadOptions
 import typings.officeJs.Excel.Interfaces.ShapeFillUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.Gradient
 import typings.officeJs.officeJsStrings.Mixed
 import typings.officeJs.officeJsStrings.NoFill
@@ -22,29 +22,28 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-@JSGlobal("Excel.ShapeFill")
 @js.native
-class ShapeFill () extends ClientObject {
+trait ShapeFill extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ShapeFill: RequestContext = js.native
   /**
     *
-    * Represents the shape fill foreground color in HTML color format, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
+    * Represents the shape fill foreground color in HTML color format, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange")
     *
     * [Api set: ExcelApi 1.9]
     */
   var foregroundColor: String = js.native
   /**
     *
-    * Returns or sets the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns null if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
+    * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns null if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
     *
     * [Api set: ExcelApi 1.9]
     */
   var transparency: Double = js.native
   /**
     *
-    * Returns the fill type of the shape. Read-only. See Excel.ShapeFillType for details.
+    * Returns the fill type of the shape. See Excel.ShapeFillType for details.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -62,7 +61,7 @@ class ShapeFill () extends ClientObject {
     */
   def load(): ShapeFill = js.native
   def load(options: ShapeFillLoadOptions): ShapeFill = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ShapeFill = js.native
+  def load(propertyNamesAndPaths: Expand): ShapeFill = js.native
   def load(propertyNames: String): ShapeFill = js.native
   def load(propertyNames: js.Array[String]): ShapeFill = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
@@ -85,7 +84,7 @@ class ShapeFill () extends ClientObject {
     *
     * [Api set: ExcelApi 1.9]
     *
-    * @param color A string that represents the fill color in HTML color format, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+    * @param color A string that represents the fill color in HTML color format, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     */
   def setSolidColor(color: String): Unit = js.native
   /**

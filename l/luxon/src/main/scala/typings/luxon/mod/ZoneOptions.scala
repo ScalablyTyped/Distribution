@@ -19,8 +19,8 @@ object ZoneOptions {
     keepLocalTime: js.UndefOr[Boolean] = js.undefined
   ): ZoneOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(keepCalendarTime)) __obj.updateDynamic("keepCalendarTime")(keepCalendarTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepLocalTime)) __obj.updateDynamic("keepLocalTime")(keepLocalTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepCalendarTime)) __obj.updateDynamic("keepCalendarTime")(keepCalendarTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepLocalTime)) __obj.updateDynamic("keepLocalTime")(keepLocalTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoneOptions]
   }
 }

@@ -16,6 +16,7 @@ trait DividerProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var dashed: js.UndefOr[Boolean] = js.undefined
   var orientation: js.UndefOr[left | right | center] = js.undefined
+  var plain: js.UndefOr[Boolean] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var `type`: js.UndefOr[horizontal | vertical] = js.undefined
@@ -28,6 +29,7 @@ object DividerProps {
     className: String = null,
     dashed: js.UndefOr[Boolean] = js.undefined,
     orientation: left | right | center = null,
+    plain: js.UndefOr[Boolean] = js.undefined,
     prefixCls: String = null,
     style: CSSProperties = null,
     `type`: horizontal | vertical = null
@@ -35,8 +37,9 @@ object DividerProps {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(dashed)) __obj.updateDynamic("dashed")(dashed.asInstanceOf[js.Any])
+    if (!js.isUndefined(dashed)) __obj.updateDynamic("dashed")(dashed.get.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.get.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

@@ -4,41 +4,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.model.analytics.odata4analytics.DimensionAttribute")
-@js.native
-class DimensionAttribute protected () extends js.Object {
-  /**
-    * Create a representation of a dimension attribute provided by an analyticquery. Do not create your
-    * own instances.
-    * @param oQueryResult The query result containing this dimension attribute
-    * @param oProperty The DataJS object object representing the dimension           attribute
-    */
-  def this(oQueryResult: QueryResult, oProperty: js.Any) = this()
+trait DimensionAttribute extends js.Object {
   /**
     * Get dimension
     * @returns The dimension object         containing this attribute
     */
-  def getDimension(): Dimension = js.native
+  def getDimension(): Dimension
   /**
     * Get the key property
     * @returns The DataJS object representing the property for the key         of this dimension attribute
     */
-  def getKeyProperty(): js.Any = js.native
+  def getKeyProperty(): js.Any
   /**
     * Get label
     * @returns The (possibly language-dependent) label text for this         dimension attribute
     */
-  def getLabelText(): String = js.native
+  def getLabelText(): String
   /**
     * Get the name of the dimension attribute
     * @returns The name of the dimension attribute, which is identical         to the name of the property
     * in the entity type holding the         attribute value
     */
-  def getName(): String = js.native
+  def getName(): String
   /**
     * Get text property related to this dimension attribute
     * @returns The DataJS object representing the text property or         null if it does not exist
     */
-  def getTextProperty(): js.Any = js.native
+  def getTextProperty(): js.Any
+}
+
+object DimensionAttribute {
+  @scala.inline
+  def apply(
+    getDimension: () => Dimension,
+    getKeyProperty: () => js.Any,
+    getLabelText: () => String,
+    getName: () => String,
+    getTextProperty: () => js.Any
+  ): DimensionAttribute = {
+    val __obj = js.Dynamic.literal(getDimension = js.Any.fromFunction0(getDimension), getKeyProperty = js.Any.fromFunction0(getKeyProperty), getLabelText = js.Any.fromFunction0(getLabelText), getName = js.Any.fromFunction0(getName), getTextProperty = js.Any.fromFunction0(getTextProperty))
+    __obj.asInstanceOf[DimensionAttribute]
+  }
 }
 

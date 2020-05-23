@@ -1,6 +1,5 @@
 package typings.screeps
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +22,19 @@ trait Nuke extends RoomObject {
   var timeToLand: Double
 }
 
-@JSGlobal("Nuke")
-@js.native
-object Nuke extends TopLevel[NukeConstructor]
+object Nuke {
+  @scala.inline
+  def apply(
+    effects: js.Array[RoomObjectEffect],
+    id: Id[Nuke],
+    launchRoomName: String,
+    pos: RoomPosition,
+    timeToLand: Double,
+    room: Room = null
+  ): Nuke = {
+    val __obj = js.Dynamic.literal(effects = effects.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], launchRoomName = launchRoomName.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], timeToLand = timeToLand.asInstanceOf[js.Any])
+    if (room != null) __obj.updateDynamic("room")(room.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Nuke]
+  }
+}
 

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.MediaFormat")
 @js.native
-class MediaFormat protected () extends js.Object {
+trait MediaFormat extends js.Object {
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   val AudioCompressionType: String = js.native
   val AudioSamplingRate: Double = js.native

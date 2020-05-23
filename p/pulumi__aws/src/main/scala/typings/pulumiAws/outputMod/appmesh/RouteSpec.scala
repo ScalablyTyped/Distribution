@@ -25,12 +25,12 @@ object RouteSpec {
   @scala.inline
   def apply(
     httpRoute: RouteSpecHttpRoute = null,
-    priority: Int | Double = null,
+    priority: js.UndefOr[Double] = js.undefined,
     tcpRoute: RouteSpecTcpRoute = null
   ): RouteSpec = {
     val __obj = js.Dynamic.literal()
     if (httpRoute != null) __obj.updateDynamic("httpRoute")(httpRoute.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     if (tcpRoute != null) __obj.updateDynamic("tcpRoute")(tcpRoute.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteSpec]
   }

@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait RowEditDialogAfterOpenEventUIParam extends js.Object {
   /**
-  	 * Gets a reference to row edit dialog DOM element.
-  	 */
+    * Gets a reference to row edit dialog DOM element.
+    */
   var dialogElement: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Gets a reference to GridUpdating.
-  	 */
+    * Gets a reference to GridUpdating.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 

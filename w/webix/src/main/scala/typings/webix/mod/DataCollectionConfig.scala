@@ -28,7 +28,7 @@ object DataCollectionConfig {
   def apply(
     data: String | js.Array[_] = null,
     dataFeed: String | WebixCallback = null,
-    datathrottle: Int | Double = null,
+    datathrottle: js.UndefOr[Double] = js.undefined,
     datatype: String = null,
     defaultData: js.Any = null,
     externalData: /* repeated */ js.Any => js.Any = null,
@@ -46,7 +46,7 @@ object DataCollectionConfig {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataFeed != null) __obj.updateDynamic("dataFeed")(dataFeed.asInstanceOf[js.Any])
-    if (datathrottle != null) __obj.updateDynamic("datathrottle")(datathrottle.asInstanceOf[js.Any])
+    if (!js.isUndefined(datathrottle)) __obj.updateDynamic("datathrottle")(datathrottle.get.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
     if (defaultData != null) __obj.updateDynamic("defaultData")(defaultData.asInstanceOf[js.Any])
     if (externalData != null) __obj.updateDynamic("externalData")(js.Any.fromFunction1(externalData))
@@ -54,7 +54,7 @@ object DataCollectionConfig {
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
     if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
-    if (!js.isUndefined(removeMissed)) __obj.updateDynamic("removeMissed")(removeMissed.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeMissed)) __obj.updateDynamic("removeMissed")(removeMissed.get.asInstanceOf[js.Any])
     if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     if (save != null) __obj.updateDynamic("save")(save.asInstanceOf[js.Any])
     if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])

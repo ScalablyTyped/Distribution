@@ -18,15 +18,15 @@ trait Resources extends js.Object {
 object Resources {
   @scala.inline
   def apply(
-    cpu: Int | Double = null,
-    diskGb: Int | Double = null,
-    memoryGb: Int | Double = null,
+    cpu: js.UndefOr[Double] = js.undefined,
+    diskGb: js.UndefOr[Double] = js.undefined,
+    memoryGb: js.UndefOr[Double] = js.undefined,
     volumes: js.Array[Volume] = null
   ): Resources = {
     val __obj = js.Dynamic.literal()
-    if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
-    if (diskGb != null) __obj.updateDynamic("diskGb")(diskGb.asInstanceOf[js.Any])
-    if (memoryGb != null) __obj.updateDynamic("memoryGb")(memoryGb.asInstanceOf[js.Any])
+    if (!js.isUndefined(cpu)) __obj.updateDynamic("cpu")(cpu.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(diskGb)) __obj.updateDynamic("diskGb")(diskGb.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(memoryGb)) __obj.updateDynamic("memoryGb")(memoryGb.get.asInstanceOf[js.Any])
     if (volumes != null) __obj.updateDynamic("volumes")(volumes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resources]
   }

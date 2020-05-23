@@ -49,14 +49,14 @@ object LoaderContext {
     `type`: String,
     url: String,
     progressData: js.UndefOr[Boolean] = js.undefined,
-    rangeEnd: Int | Double = null,
-    rangeStart: Int | Double = null
+    rangeEnd: js.UndefOr[Double] = js.undefined,
+    rangeStart: js.UndefOr[Double] = js.undefined
   ): LoaderContext = {
     val __obj = js.Dynamic.literal(frag = frag.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], responseType = responseType.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(progressData)) __obj.updateDynamic("progressData")(progressData.asInstanceOf[js.Any])
-    if (rangeEnd != null) __obj.updateDynamic("rangeEnd")(rangeEnd.asInstanceOf[js.Any])
-    if (rangeStart != null) __obj.updateDynamic("rangeStart")(rangeStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressData)) __obj.updateDynamic("progressData")(progressData.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rangeEnd)) __obj.updateDynamic("rangeEnd")(rangeEnd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rangeStart)) __obj.updateDynamic("rangeStart")(rangeStart.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoaderContext]
   }
 }

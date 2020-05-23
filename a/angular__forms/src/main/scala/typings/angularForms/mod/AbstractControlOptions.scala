@@ -28,14 +28,14 @@ trait AbstractControlOptions extends js.Object {
 object AbstractControlOptions {
   @scala.inline
   def apply(
-    asyncValidators: AsyncValidatorFn | js.Array[AsyncValidatorFn] = null,
+    asyncValidators: js.UndefOr[Null | AsyncValidatorFn | js.Array[AsyncValidatorFn]] = js.undefined,
     updateOn: change | blur | submit = null,
-    validators: ValidatorFn | js.Array[ValidatorFn] = null
+    validators: js.UndefOr[Null | ValidatorFn | js.Array[ValidatorFn]] = js.undefined
   ): AbstractControlOptions = {
     val __obj = js.Dynamic.literal()
-    if (asyncValidators != null) __obj.updateDynamic("asyncValidators")(asyncValidators.asInstanceOf[js.Any])
+    if (!js.isUndefined(asyncValidators)) __obj.updateDynamic("asyncValidators")(asyncValidators.asInstanceOf[js.Any])
     if (updateOn != null) __obj.updateDynamic("updateOn")(updateOn.asInstanceOf[js.Any])
-    if (validators != null) __obj.updateDynamic("validators")(validators.asInstanceOf[js.Any])
+    if (!js.isUndefined(validators)) __obj.updateDynamic("validators")(validators.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbstractControlOptions]
   }
 }

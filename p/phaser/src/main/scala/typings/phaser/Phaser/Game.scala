@@ -16,7 +16,6 @@ import typings.phaser.Phaser.Sound.HTML5AudioSoundManager
 import typings.phaser.Phaser.Sound.NoAudioSoundManager
 import typings.phaser.Phaser.Sound.WebAudioSoundManager
 import typings.phaser.Phaser.Textures.TextureManager
-import typings.phaser.Phaser.Types.Core.GameConfig
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLDivElement
@@ -34,14 +33,8 @@ import scala.scalajs.js.annotation._
   * You should generally avoid accessing any of the systems created by Game, and instead use those
   * made available to you via the Phaser.Scene Systems class instead.
   */
-@JSGlobal("Phaser.Game")
 @js.native
-/**
-  * 
-  * @param GameConfig The configuration object for your Phaser Game instance.
-  */
-class Game () extends js.Object {
-  def this(GameConfig: GameConfig) = this()
+trait Game extends js.Object {
   /**
     * An instance of the Animation Manager.
     * 

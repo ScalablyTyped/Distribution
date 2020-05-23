@@ -23,9 +23,9 @@ trait DrawActionProperties extends js.Object {
 
 object DrawActionProperties {
   @scala.inline
-  def apply(hasZ: Int | Double = null, view: MapViewProperties = null): DrawActionProperties = {
+  def apply(hasZ: js.UndefOr[Double] = js.undefined, view: MapViewProperties = null): DrawActionProperties = {
     val __obj = js.Dynamic.literal()
-    if (hasZ != null) __obj.updateDynamic("hasZ")(hasZ.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ.get.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawActionProperties]
   }

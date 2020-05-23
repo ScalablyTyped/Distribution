@@ -25,10 +25,10 @@ object ControlModifierProps {
     size: small | medium | large = null
   ): ControlModifierProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
-    if (!js.isUndefined(iconLeft)) __obj.updateDynamic("iconLeft")(iconLeft.asInstanceOf[js.Any])
-    if (!js.isUndefined(iconRight)) __obj.updateDynamic("iconRight")(iconRight.asInstanceOf[js.Any])
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
+    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(iconLeft)) __obj.updateDynamic("iconLeft")(iconLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(iconRight)) __obj.updateDynamic("iconRight")(iconRight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ControlModifierProps]
   }

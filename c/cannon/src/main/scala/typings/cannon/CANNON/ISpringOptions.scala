@@ -17,20 +17,20 @@ trait ISpringOptions extends js.Object {
 object ISpringOptions {
   @scala.inline
   def apply(
-    damping: Int | Double = null,
+    damping: js.UndefOr[Double] = js.undefined,
     localAnchorA: Vec3 = null,
     localAnchorB: Vec3 = null,
-    restLength: Int | Double = null,
-    stiffness: Int | Double = null,
+    restLength: js.UndefOr[Double] = js.undefined,
+    stiffness: js.UndefOr[Double] = js.undefined,
     worldAnchorA: Vec3 = null,
     worldAnchorB: Vec3 = null
   ): ISpringOptions = {
     val __obj = js.Dynamic.literal()
-    if (damping != null) __obj.updateDynamic("damping")(damping.asInstanceOf[js.Any])
+    if (!js.isUndefined(damping)) __obj.updateDynamic("damping")(damping.get.asInstanceOf[js.Any])
     if (localAnchorA != null) __obj.updateDynamic("localAnchorA")(localAnchorA.asInstanceOf[js.Any])
     if (localAnchorB != null) __obj.updateDynamic("localAnchorB")(localAnchorB.asInstanceOf[js.Any])
-    if (restLength != null) __obj.updateDynamic("restLength")(restLength.asInstanceOf[js.Any])
-    if (stiffness != null) __obj.updateDynamic("stiffness")(stiffness.asInstanceOf[js.Any])
+    if (!js.isUndefined(restLength)) __obj.updateDynamic("restLength")(restLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stiffness)) __obj.updateDynamic("stiffness")(stiffness.get.asInstanceOf[js.Any])
     if (worldAnchorA != null) __obj.updateDynamic("worldAnchorA")(worldAnchorA.asInstanceOf[js.Any])
     if (worldAnchorB != null) __obj.updateDynamic("worldAnchorB")(worldAnchorB.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISpringOptions]

@@ -13,9 +13,9 @@ trait MessagePayload extends js.Object {
 
 object MessagePayload {
   @scala.inline
-  def apply(devices: js.Array[String], payload: js.Any, topic: String, qos: Int | Double = null): MessagePayload = {
+  def apply(devices: js.Array[String], payload: js.Any, topic: String, qos: js.UndefOr[Double] = js.undefined): MessagePayload = {
     val __obj = js.Dynamic.literal(devices = devices.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
-    if (qos != null) __obj.updateDynamic("qos")(qos.asInstanceOf[js.Any])
+    if (!js.isUndefined(qos)) __obj.updateDynamic("qos")(qos.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessagePayload]
   }
 }

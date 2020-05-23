@@ -1,8 +1,8 @@
 package typings.antDesignProLayout.getPageTitleMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.antDesignProLayout.AnonDefaultMessage
-import typings.antDesignProLayout.AnonDefaultOpenAll
+import typings.antDesignProLayout.anon.DefaultMessage
+import typings.antDesignProLayout.anon.DefaultOpenAll
 import typings.antDesignProLayout.typingsMod.MenuDataItem
 import typings.std.Map
 import scala.scalajs.js
@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
 trait GetPageTitleProps extends js.Object {
   var breadcrumb: js.UndefOr[StringDictionary[MenuDataItem]] = js.undefined
   var breadcrumbMap: js.UndefOr[Map[String, MenuDataItem]] = js.undefined
-  var formatMessage: js.UndefOr[js.Function1[/* data */ AnonDefaultMessage, String]] = js.undefined
-  var menu: js.UndefOr[AnonDefaultOpenAll] = js.undefined
+  var formatMessage: js.UndefOr[js.Function1[/* data */ DefaultMessage, String]] = js.undefined
+  var menu: js.UndefOr[DefaultOpenAll] = js.undefined
   var pageName: js.UndefOr[String] = js.undefined
   var pathname: js.UndefOr[String] = js.undefined
   var title: js.UndefOr[String] = js.undefined
@@ -24,8 +24,8 @@ object GetPageTitleProps {
   def apply(
     breadcrumb: StringDictionary[MenuDataItem] = null,
     breadcrumbMap: Map[String, MenuDataItem] = null,
-    formatMessage: /* data */ AnonDefaultMessage => String = null,
-    menu: AnonDefaultOpenAll = null,
+    formatMessage: /* data */ DefaultMessage => String = null,
+    menu: DefaultOpenAll = null,
     pageName: String = null,
     pathname: String = null,
     title: String = null

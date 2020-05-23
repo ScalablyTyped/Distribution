@@ -1,9 +1,9 @@
 package typings.feflowCli.Feflow
 
-import typings.feflowCli.Anon
 import typings.feflowCli.Command
 import typings.feflowCli.Hook
 import typings.feflowCli.Logger
+import typings.feflowCli.anon._empty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait ctx extends js.Object {
   /**
     * Feflow context params
     */
-  var args: Anon
+  var args: _empty
   /**
     * Feflow command includes: (register)
     */
@@ -62,7 +62,7 @@ trait ctx extends js.Object {
 object ctx {
   @scala.inline
   def apply(
-    args: Anon,
+    args: _empty,
     commander: Command,
     config: String,
     configPath: String,

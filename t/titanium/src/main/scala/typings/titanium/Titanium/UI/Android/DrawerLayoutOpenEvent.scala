@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * Fired when the drawer view is opened.
-			 */
+  * Fired when the drawer view is opened.
+  */
 trait DrawerLayoutOpenEvent extends DrawerLayoutBaseEvent {
   /**
-  				 * Contains the drawer frame type. Either `left` or `right`.
-  				 */
+    * Contains the drawer frame type. Either `left` or `right`.
+    */
   var drawer: String
 }
 

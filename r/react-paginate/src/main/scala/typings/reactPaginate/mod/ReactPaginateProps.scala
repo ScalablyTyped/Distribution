@@ -1,7 +1,7 @@
 package typings.reactPaginate.mod
 
 import typings.react.mod.ReactNode
-import typings.reactPaginate.AnonSelected
+import typings.reactPaginate.anon.Selected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -74,7 +74,7 @@ trait ReactPaginateProps extends js.Object {
   /**
     * The method to call when a page is clicked. Exposes the current page object as an argument.
     */
-  var onPageChange: js.UndefOr[js.Function1[/* selectedItem */ AnonSelected, Unit]] = js.undefined
+  var onPageChange: js.UndefOr[js.Function1[/* selectedItem */ Selected, Unit]] = js.undefined
   /**
     * The classname on tag `li` of each page element.
     */
@@ -120,13 +120,13 @@ object ReactPaginateProps {
     disableInitialCallback: js.UndefOr[Boolean] = js.undefined,
     disabledClassName: String = null,
     extraAriaContext: String = null,
-    forcePage: Int | Double = null,
+    forcePage: js.UndefOr[Double] = js.undefined,
     hrefBuilder: /* pageIndex */ Double => Unit = null,
-    initialPage: Int | Double = null,
+    initialPage: js.UndefOr[Double] = js.undefined,
     nextClassName: String = null,
     nextLabel: ReactNode = null,
     nextLinkClassName: String = null,
-    onPageChange: /* selectedItem */ AnonSelected => Unit = null,
+    onPageChange: /* selectedItem */ Selected => Unit = null,
     pageClassName: String = null,
     pageLinkClassName: String = null,
     previousClassName: String = null,
@@ -140,12 +140,12 @@ object ReactPaginateProps {
     if (breakLabel != null) __obj.updateDynamic("breakLabel")(breakLabel.asInstanceOf[js.Any])
     if (breakLinkClassName != null) __obj.updateDynamic("breakLinkClassName")(breakLinkClassName.asInstanceOf[js.Any])
     if (containerClassName != null) __obj.updateDynamic("containerClassName")(containerClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableInitialCallback)) __obj.updateDynamic("disableInitialCallback")(disableInitialCallback.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableInitialCallback)) __obj.updateDynamic("disableInitialCallback")(disableInitialCallback.get.asInstanceOf[js.Any])
     if (disabledClassName != null) __obj.updateDynamic("disabledClassName")(disabledClassName.asInstanceOf[js.Any])
     if (extraAriaContext != null) __obj.updateDynamic("extraAriaContext")(extraAriaContext.asInstanceOf[js.Any])
-    if (forcePage != null) __obj.updateDynamic("forcePage")(forcePage.asInstanceOf[js.Any])
+    if (!js.isUndefined(forcePage)) __obj.updateDynamic("forcePage")(forcePage.get.asInstanceOf[js.Any])
     if (hrefBuilder != null) __obj.updateDynamic("hrefBuilder")(js.Any.fromFunction1(hrefBuilder))
-    if (initialPage != null) __obj.updateDynamic("initialPage")(initialPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialPage)) __obj.updateDynamic("initialPage")(initialPage.get.asInstanceOf[js.Any])
     if (nextClassName != null) __obj.updateDynamic("nextClassName")(nextClassName.asInstanceOf[js.Any])
     if (nextLabel != null) __obj.updateDynamic("nextLabel")(nextLabel.asInstanceOf[js.Any])
     if (nextLinkClassName != null) __obj.updateDynamic("nextLinkClassName")(nextLinkClassName.asInstanceOf[js.Any])

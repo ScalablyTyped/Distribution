@@ -31,16 +31,16 @@ object LayersSubLayersLabelSettings {
   @scala.inline
   def apply(
     enableSmartLabel: js.UndefOr[Boolean] = js.undefined,
-    labelLength: Int | Double = null,
+    labelLength: js.UndefOr[Double] = js.undefined,
     labelPath: String = null,
     showLabels: js.UndefOr[Boolean] = js.undefined,
     smartLabelSize: LabelSize | String = null
   ): LayersSubLayersLabelSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableSmartLabel)) __obj.updateDynamic("enableSmartLabel")(enableSmartLabel.asInstanceOf[js.Any])
-    if (labelLength != null) __obj.updateDynamic("labelLength")(labelLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSmartLabel)) __obj.updateDynamic("enableSmartLabel")(enableSmartLabel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelLength)) __obj.updateDynamic("labelLength")(labelLength.get.asInstanceOf[js.Any])
     if (labelPath != null) __obj.updateDynamic("labelPath")(labelPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLabels)) __obj.updateDynamic("showLabels")(showLabels.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLabels)) __obj.updateDynamic("showLabels")(showLabels.get.asInstanceOf[js.Any])
     if (smartLabelSize != null) __obj.updateDynamic("smartLabelSize")(smartLabelSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayersSubLayersLabelSettings]
   }

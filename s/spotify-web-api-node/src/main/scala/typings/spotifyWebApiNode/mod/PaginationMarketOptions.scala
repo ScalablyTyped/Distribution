@@ -10,11 +10,15 @@ trait PaginationMarketOptions
 
 object PaginationMarketOptions {
   @scala.inline
-  def apply(limit: Int | Double = null, market: String = null, offset: Int | Double = null): PaginationMarketOptions = {
+  def apply(
+    limit: js.UndefOr[Double] = js.undefined,
+    market: String = null,
+    offset: js.UndefOr[Double] = js.undefined
+  ): PaginationMarketOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (market != null) __obj.updateDynamic("market")(market.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationMarketOptions]
   }
 }

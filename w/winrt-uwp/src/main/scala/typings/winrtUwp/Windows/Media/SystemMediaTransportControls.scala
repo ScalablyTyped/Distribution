@@ -14,9 +14,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents an object that enables integrate with the system media transport controls and support for media commands. */
-@JSGlobal("Windows.Media.SystemMediaTransportControls")
 @js.native
-abstract class SystemMediaTransportControls () extends js.Object {
+trait SystemMediaTransportControls extends js.Object {
   /** Gets or sets a value representing the current auto-repeat mode of the SystemMediaTransportControls . */
   var autoRepeatMode: MediaPlaybackAutoRepeatMode = js.native
   /** Gets the display updater for the SystemMediaTransportControls which enable updating the information displayed about the currently playing song. */
@@ -146,16 +145,5 @@ abstract class SystemMediaTransportControls () extends js.Object {
     * @param timelineProperties The object representing the new timeline property values.
     */
   def updateTimelineProperties(timelineProperties: SystemMediaTransportControlsTimelineProperties): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Media.SystemMediaTransportControls")
-@js.native
-object SystemMediaTransportControls extends js.Object {
-  /**
-    * The system transport controls for the current view.
-    * @return The system transport controls for the current view.
-    */
-  def getForCurrentView(): SystemMediaTransportControls = js.native
 }
 

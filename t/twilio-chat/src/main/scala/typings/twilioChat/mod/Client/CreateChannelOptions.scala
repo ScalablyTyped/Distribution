@@ -22,7 +22,7 @@ object CreateChannelOptions {
     val __obj = js.Dynamic.literal()
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPrivate)) __obj.updateDynamic("isPrivate")(isPrivate.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPrivate)) __obj.updateDynamic("isPrivate")(isPrivate.get.asInstanceOf[js.Any])
     if (uniqueName != null) __obj.updateDynamic("uniqueName")(uniqueName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateChannelOptions]
   }

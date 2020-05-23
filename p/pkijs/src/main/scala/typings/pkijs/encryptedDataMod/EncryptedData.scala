@@ -1,7 +1,7 @@
 package typings.pkijs.encryptedDataMod
 
-import typings.pkijs.AnonContentEncryptionAlgorithm
-import typings.pkijs.AnonPassword
+import typings.pkijs.anon.ContentEncryptionAlgorithm
+import typings.pkijs.anon.Password
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,13 +15,13 @@ trait EncryptedData extends js.Object {
     * Create a new CMS Encrypted Data content
     * @param {*} parameters Parameters neccessary for encryption
     */
-  def decrypt(parameters: AnonPassword): js.Thenable[ArrayBuffer]
+  def decrypt(parameters: Password): js.Thenable[ArrayBuffer]
   /**
     * Create a new CMS Encrypted Data content
     * @param {*} parameters Parameters neccessary for encryption
     * @returns {Promise}
     */
-  def encrypt(parameters: AnonContentEncryptionAlgorithm): js.Thenable[ArrayBuffer]
+  def encrypt(parameters: ContentEncryptionAlgorithm): js.Thenable[ArrayBuffer]
   def fromSchema(schema: js.Any): Unit
   def toJSON(): js.Any
   def toSchema(): js.Any
@@ -30,8 +30,8 @@ trait EncryptedData extends js.Object {
 object EncryptedData {
   @scala.inline
   def apply(
-    decrypt: AnonPassword => js.Thenable[ArrayBuffer],
-    encrypt: AnonContentEncryptionAlgorithm => js.Thenable[ArrayBuffer],
+    decrypt: Password => js.Thenable[ArrayBuffer],
+    encrypt: ContentEncryptionAlgorithm => js.Thenable[ArrayBuffer],
     encryptedContentInfo: typings.pkijs.encryptedContentInfoMod.default,
     fromSchema: js.Any => Unit,
     toJSON: () => js.Any,

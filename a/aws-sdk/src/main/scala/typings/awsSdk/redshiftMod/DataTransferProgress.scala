@@ -35,20 +35,20 @@ trait DataTransferProgress extends js.Object {
 object DataTransferProgress {
   @scala.inline
   def apply(
-    CurrentRateInMegaBytesPerSecond: Int | scala.Double = null,
-    DataTransferredInMegaBytes: Int | scala.Double = null,
-    ElapsedTimeInSeconds: Int | scala.Double = null,
-    EstimatedTimeToCompletionInSeconds: Int | scala.Double = null,
+    CurrentRateInMegaBytesPerSecond: js.UndefOr[DoubleOptional] = js.undefined,
+    DataTransferredInMegaBytes: js.UndefOr[Long] = js.undefined,
+    ElapsedTimeInSeconds: js.UndefOr[LongOptional] = js.undefined,
+    EstimatedTimeToCompletionInSeconds: js.UndefOr[LongOptional] = js.undefined,
     Status: String = null,
-    TotalDataInMegaBytes: Int | scala.Double = null
+    TotalDataInMegaBytes: js.UndefOr[Long] = js.undefined
   ): DataTransferProgress = {
     val __obj = js.Dynamic.literal()
-    if (CurrentRateInMegaBytesPerSecond != null) __obj.updateDynamic("CurrentRateInMegaBytesPerSecond")(CurrentRateInMegaBytesPerSecond.asInstanceOf[js.Any])
-    if (DataTransferredInMegaBytes != null) __obj.updateDynamic("DataTransferredInMegaBytes")(DataTransferredInMegaBytes.asInstanceOf[js.Any])
-    if (ElapsedTimeInSeconds != null) __obj.updateDynamic("ElapsedTimeInSeconds")(ElapsedTimeInSeconds.asInstanceOf[js.Any])
-    if (EstimatedTimeToCompletionInSeconds != null) __obj.updateDynamic("EstimatedTimeToCompletionInSeconds")(EstimatedTimeToCompletionInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(CurrentRateInMegaBytesPerSecond)) __obj.updateDynamic("CurrentRateInMegaBytesPerSecond")(CurrentRateInMegaBytesPerSecond.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DataTransferredInMegaBytes)) __obj.updateDynamic("DataTransferredInMegaBytes")(DataTransferredInMegaBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ElapsedTimeInSeconds)) __obj.updateDynamic("ElapsedTimeInSeconds")(ElapsedTimeInSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EstimatedTimeToCompletionInSeconds)) __obj.updateDynamic("EstimatedTimeToCompletionInSeconds")(EstimatedTimeToCompletionInSeconds.get.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (TotalDataInMegaBytes != null) __obj.updateDynamic("TotalDataInMegaBytes")(TotalDataInMegaBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalDataInMegaBytes)) __obj.updateDynamic("TotalDataInMegaBytes")(TotalDataInMegaBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTransferProgress]
   }
 }

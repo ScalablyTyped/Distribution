@@ -64,12 +64,12 @@ object DashIsoGroupSettings {
     Destination: stringPatternS3 = null,
     DestinationSettings: DestinationSettings = null,
     Encryption: DashIsoEncryptionSettings = null,
-    FragmentLength: Int | Double = null,
+    FragmentLength: js.UndefOr[integerMin1Max2147483647] = js.undefined,
     HbbtvCompliance: DashIsoHbbtvCompliance = null,
-    MinBufferTime: Int | Double = null,
+    MinBufferTime: js.UndefOr[integerMin0Max2147483647] = js.undefined,
     MpdProfile: DashIsoMpdProfile = null,
     SegmentControl: DashIsoSegmentControl = null,
-    SegmentLength: Int | Double = null,
+    SegmentLength: js.UndefOr[integerMin1Max2147483647] = js.undefined,
     WriteSegmentTimelineInRepresentation: DashIsoWriteSegmentTimelineInRepresentation = null
   ): DashIsoGroupSettings = {
     val __obj = js.Dynamic.literal()
@@ -78,12 +78,12 @@ object DashIsoGroupSettings {
     if (Destination != null) __obj.updateDynamic("Destination")(Destination.asInstanceOf[js.Any])
     if (DestinationSettings != null) __obj.updateDynamic("DestinationSettings")(DestinationSettings.asInstanceOf[js.Any])
     if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
-    if (FragmentLength != null) __obj.updateDynamic("FragmentLength")(FragmentLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(FragmentLength)) __obj.updateDynamic("FragmentLength")(FragmentLength.get.asInstanceOf[js.Any])
     if (HbbtvCompliance != null) __obj.updateDynamic("HbbtvCompliance")(HbbtvCompliance.asInstanceOf[js.Any])
-    if (MinBufferTime != null) __obj.updateDynamic("MinBufferTime")(MinBufferTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinBufferTime)) __obj.updateDynamic("MinBufferTime")(MinBufferTime.get.asInstanceOf[js.Any])
     if (MpdProfile != null) __obj.updateDynamic("MpdProfile")(MpdProfile.asInstanceOf[js.Any])
     if (SegmentControl != null) __obj.updateDynamic("SegmentControl")(SegmentControl.asInstanceOf[js.Any])
-    if (SegmentLength != null) __obj.updateDynamic("SegmentLength")(SegmentLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(SegmentLength)) __obj.updateDynamic("SegmentLength")(SegmentLength.get.asInstanceOf[js.Any])
     if (WriteSegmentTimelineInRepresentation != null) __obj.updateDynamic("WriteSegmentTimelineInRepresentation")(WriteSegmentTimelineInRepresentation.asInstanceOf[js.Any])
     __obj.asInstanceOf[DashIsoGroupSettings]
   }

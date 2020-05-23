@@ -21,13 +21,13 @@ object ShareSheetProps {
     onCancel: () => Unit,
     visible: Boolean,
     children: ReactNode = null,
-    overlayStyle: StyleProp[ViewProps] = null,
-    style: StyleProp[ViewProps] = null
+    overlayStyle: js.UndefOr[Null | StyleProp[ViewProps]] = js.undefined,
+    style: js.UndefOr[Null | StyleProp[ViewProps]] = js.undefined
   ): ShareSheetProps = {
     val __obj = js.Dynamic.literal(onCancel = js.Any.fromFunction0(onCancel), visible = visible.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlayStyle)) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareSheetProps]
   }
 }

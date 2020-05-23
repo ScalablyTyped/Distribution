@@ -1,6 +1,6 @@
 package typings.awsSdk.dynamodbMod
 
-import typings.awsSdk.DescribeTableInputwaiterW
+import typings.awsSdk.anon.DescribeTableInputwaiterW
 import typings.awsSdk.awsSdkStrings.tableExists
 import typings.awsSdk.awsSdkStrings.tableNotExists
 import typings.awsSdk.configMod.ConfigBase
@@ -55,12 +55,12 @@ trait DynamoDB extends DynamoDBCustomizations {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateBackupOutput, Unit]
   ): Request[CreateBackupOutput, AWSError] = js.native
   /**
-    * Creates a global table from an existing table. A global table creates a replication relationship between two or more DynamoDB tables with the same table name in the provided Regions.   This method only applies to Version 2017.11.29 of global tables.  If you want to add a new replica table to a global table, each of the following conditions must be true:   The table must have the same primary key as all of the other replicas.   The table must have the same name as all of the other replicas.   The table must have DynamoDB Streams enabled, with the stream containing both the new and the old images of the item.   None of the replica tables in the global table can contain any data.    If global secondary indexes are specified, then the following conditions must also be met:     The global secondary indexes must have the same name.     The global secondary indexes must have the same hash key and sort key (if present).      Write capacity settings should be set consistently across your replica tables and secondary indexes. DynamoDB strongly recommends enabling auto scaling to manage the write capacity settings for all of your global tables replicas and indexes.   If you prefer to manage write capacity settings manually, you should provision equal replicated write capacity units to your replica tables. You should also provision equal replicated write capacity units to matching secondary indexes across your global table.  
+    * Creates a global table from an existing table. A global table creates a replication relationship between two or more DynamoDB tables with the same table name in the provided Regions.   This operation only applies to Version 2017.11.29 of global tables.  If you want to add a new replica table to a global table, each of the following conditions must be true:   The table must have the same primary key as all of the other replicas.   The table must have the same name as all of the other replicas.   The table must have DynamoDB Streams enabled, with the stream containing both the new and the old images of the item.   None of the replica tables in the global table can contain any data.    If global secondary indexes are specified, then the following conditions must also be met:     The global secondary indexes must have the same name.     The global secondary indexes must have the same hash key and sort key (if present).     If local secondary indexes are specified, then the following conditions must also be met:     The local secondary indexes must have the same name.     The local secondary indexes must have the same hash key and sort key (if present).      Write capacity settings should be set consistently across your replica tables and secondary indexes. DynamoDB strongly recommends enabling auto scaling to manage the write capacity settings for all of your global tables replicas and indexes.   If you prefer to manage write capacity settings manually, you should provision equal replicated write capacity units to your replica tables. You should also provision equal replicated write capacity units to matching secondary indexes across your global table.  
     */
   def createGlobalTable(): Request[CreateGlobalTableOutput, AWSError] = js.native
   def createGlobalTable(callback: js.Function2[/* err */ AWSError, /* data */ CreateGlobalTableOutput, Unit]): Request[CreateGlobalTableOutput, AWSError] = js.native
   /**
-    * Creates a global table from an existing table. A global table creates a replication relationship between two or more DynamoDB tables with the same table name in the provided Regions.   This method only applies to Version 2017.11.29 of global tables.  If you want to add a new replica table to a global table, each of the following conditions must be true:   The table must have the same primary key as all of the other replicas.   The table must have the same name as all of the other replicas.   The table must have DynamoDB Streams enabled, with the stream containing both the new and the old images of the item.   None of the replica tables in the global table can contain any data.    If global secondary indexes are specified, then the following conditions must also be met:     The global secondary indexes must have the same name.     The global secondary indexes must have the same hash key and sort key (if present).      Write capacity settings should be set consistently across your replica tables and secondary indexes. DynamoDB strongly recommends enabling auto scaling to manage the write capacity settings for all of your global tables replicas and indexes.   If you prefer to manage write capacity settings manually, you should provision equal replicated write capacity units to your replica tables. You should also provision equal replicated write capacity units to matching secondary indexes across your global table.  
+    * Creates a global table from an existing table. A global table creates a replication relationship between two or more DynamoDB tables with the same table name in the provided Regions.   This operation only applies to Version 2017.11.29 of global tables.  If you want to add a new replica table to a global table, each of the following conditions must be true:   The table must have the same primary key as all of the other replicas.   The table must have the same name as all of the other replicas.   The table must have DynamoDB Streams enabled, with the stream containing both the new and the old images of the item.   None of the replica tables in the global table can contain any data.    If global secondary indexes are specified, then the following conditions must also be met:     The global secondary indexes must have the same name.     The global secondary indexes must have the same hash key and sort key (if present).     If local secondary indexes are specified, then the following conditions must also be met:     The local secondary indexes must have the same name.     The local secondary indexes must have the same hash key and sort key (if present).      Write capacity settings should be set consistently across your replica tables and secondary indexes. DynamoDB strongly recommends enabling auto scaling to manage the write capacity settings for all of your global tables replicas and indexes.   If you prefer to manage write capacity settings manually, you should provision equal replicated write capacity units to your replica tables. You should also provision equal replicated write capacity units to matching secondary indexes across your global table.  
     */
   def createGlobalTable(params: CreateGlobalTableInput): Request[CreateGlobalTableOutput, AWSError] = js.native
   def createGlobalTable(
@@ -172,12 +172,12 @@ trait DynamoDB extends DynamoDBCustomizations {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEndpointsResponse, Unit]
   ): Request[DescribeEndpointsResponse, AWSError] = js.native
   /**
-    * Returns information about the specified global table.  This method only applies to Version 2017.11.29 of global tables. 
+    * Returns information about the specified global table.  This operation only applies to Version 2017.11.29 of global tables. If you are using global tables Version 2019.11.21 you can use DescribeTable instead. 
     */
   def describeGlobalTable(): Request[DescribeGlobalTableOutput, AWSError] = js.native
   def describeGlobalTable(callback: js.Function2[/* err */ AWSError, /* data */ DescribeGlobalTableOutput, Unit]): Request[DescribeGlobalTableOutput, AWSError] = js.native
   /**
-    * Returns information about the specified global table.  This method only applies to Version 2017.11.29 of global tables. 
+    * Returns information about the specified global table.  This operation only applies to Version 2017.11.29 of global tables. If you are using global tables Version 2019.11.21 you can use DescribeTable instead. 
     */
   def describeGlobalTable(params: DescribeGlobalTableInput): Request[DescribeGlobalTableOutput, AWSError] = js.native
   def describeGlobalTable(
@@ -185,12 +185,12 @@ trait DynamoDB extends DynamoDBCustomizations {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeGlobalTableOutput, Unit]
   ): Request[DescribeGlobalTableOutput, AWSError] = js.native
   /**
-    * Describes Region-specific settings for a global table.  This method only applies to Version 2017.11.29 of global tables. 
+    * Describes Region-specific settings for a global table.  This operation only applies to Version 2017.11.29 of global tables. 
     */
   def describeGlobalTableSettings(): Request[DescribeGlobalTableSettingsOutput, AWSError] = js.native
   def describeGlobalTableSettings(callback: js.Function2[/* err */ AWSError, /* data */ DescribeGlobalTableSettingsOutput, Unit]): Request[DescribeGlobalTableSettingsOutput, AWSError] = js.native
   /**
-    * Describes Region-specific settings for a global table.  This method only applies to Version 2017.11.29 of global tables. 
+    * Describes Region-specific settings for a global table.  This operation only applies to Version 2017.11.29 of global tables. 
     */
   def describeGlobalTableSettings(params: DescribeGlobalTableSettingsInput): Request[DescribeGlobalTableSettingsOutput, AWSError] = js.native
   def describeGlobalTableSettings(
@@ -224,12 +224,12 @@ trait DynamoDB extends DynamoDBCustomizations {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeTableOutput, Unit]
   ): Request[DescribeTableOutput, AWSError] = js.native
   /**
-    * Describes auto scaling settings across replicas of the global table at once.  This method only applies to Version 2019.11.21 of global tables. 
+    * Describes auto scaling settings across replicas of the global table at once.  This operation only applies to Version 2019.11.21 of global tables. 
     */
   def describeTableReplicaAutoScaling(): Request[DescribeTableReplicaAutoScalingOutput, AWSError] = js.native
   def describeTableReplicaAutoScaling(callback: js.Function2[/* err */ AWSError, /* data */ DescribeTableReplicaAutoScalingOutput, Unit]): Request[DescribeTableReplicaAutoScalingOutput, AWSError] = js.native
   /**
-    * Describes auto scaling settings across replicas of the global table at once.  This method only applies to Version 2019.11.21 of global tables. 
+    * Describes auto scaling settings across replicas of the global table at once.  This operation only applies to Version 2019.11.21 of global tables. 
     */
   def describeTableReplicaAutoScaling(params: DescribeTableReplicaAutoScalingInput): Request[DescribeTableReplicaAutoScalingOutput, AWSError] = js.native
   def describeTableReplicaAutoScaling(
@@ -286,12 +286,12 @@ trait DynamoDB extends DynamoDBCustomizations {
     callback: js.Function2[/* err */ AWSError, /* data */ ListContributorInsightsOutput, Unit]
   ): Request[ListContributorInsightsOutput, AWSError] = js.native
   /**
-    * Lists all global tables that have a replica in the specified Region.  This method only applies to Version 2017.11.29 of global tables. 
+    * Lists all global tables that have a replica in the specified Region.  This operation only applies to Version 2017.11.29 of global tables. 
     */
   def listGlobalTables(): Request[ListGlobalTablesOutput, AWSError] = js.native
   def listGlobalTables(callback: js.Function2[/* err */ AWSError, /* data */ ListGlobalTablesOutput, Unit]): Request[ListGlobalTablesOutput, AWSError] = js.native
   /**
-    * Lists all global tables that have a replica in the specified Region.  This method only applies to Version 2017.11.29 of global tables. 
+    * Lists all global tables that have a replica in the specified Region.  This operation only applies to Version 2017.11.29 of global tables. 
     */
   def listGlobalTables(params: ListGlobalTablesInput): Request[ListGlobalTablesOutput, AWSError] = js.native
   def listGlobalTables(
@@ -325,12 +325,12 @@ trait DynamoDB extends DynamoDBCustomizations {
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsOfResourceOutput, Unit]
   ): Request[ListTagsOfResourceOutput, AWSError] = js.native
   /**
-    * Creates a new item, or replaces an old item with a new item. If an item that has the same primary key as the new item already exists in the specified table, the new item completely replaces the existing item. You can perform a conditional put operation (add a new item if one with the specified primary key doesn't exist), or replace an existing item if it has certain attribute values. You can return the item's attribute values in the same operation, using the ReturnValues parameter.  This topic provides general information about the PutItem API. For information on how to call the PutItem API using the AWS SDK in specific languages, see the following:     PutItem in the AWS Command Line Interface      PutItem in the AWS SDK for .NET      PutItem in the AWS SDK for C++      PutItem in the AWS SDK for Go      PutItem in the AWS SDK for Java      PutItem in the AWS SDK for JavaScript      PutItem in the AWS SDK for PHP V3      PutItem in the AWS SDK for Python      PutItem in the AWS SDK for Ruby V2     When you add an item, the primary key attributes are the only required attributes. Attribute values cannot be null. String and Binary type attributes must have lengths greater than zero. Set type attributes cannot be empty. Requests with empty values will be rejected with a ValidationException exception.  To prevent a new item from replacing an existing item, use a conditional expression that contains the attribute_not_exists function with the name of the attribute being used as the partition key for the table. Since every record must contain that attribute, the attribute_not_exists function will only succeed if no matching item exists.  For more information about PutItem, see Working with Items in the Amazon DynamoDB Developer Guide.
+    * Creates a new item, or replaces an old item with a new item. If an item that has the same primary key as the new item already exists in the specified table, the new item completely replaces the existing item. You can perform a conditional put operation (add a new item if one with the specified primary key doesn't exist), or replace an existing item if it has certain attribute values. You can return the item's attribute values in the same operation, using the ReturnValues parameter.  This topic provides general information about the PutItem API. For information on how to call the PutItem API using the AWS SDK in specific languages, see the following:     PutItem in the AWS Command Line Interface      PutItem in the AWS SDK for .NET      PutItem in the AWS SDK for C++      PutItem in the AWS SDK for Go      PutItem in the AWS SDK for Java      PutItem in the AWS SDK for JavaScript      PutItem in the AWS SDK for PHP V3      PutItem in the AWS SDK for Python      PutItem in the AWS SDK for Ruby V2     When you add an item, the primary key attributes are the only required attributes. Attribute values cannot be null. Empty String and Binary attribute values are allowed. Attribute values of type String and Binary must have a length greater than zero if the attribute is used as a key attribute for a table or index. Set type attributes cannot be empty.  Invalid Requests with empty values will be rejected with a ValidationException exception.  To prevent a new item from replacing an existing item, use a conditional expression that contains the attribute_not_exists function with the name of the attribute being used as the partition key for the table. Since every record must contain that attribute, the attribute_not_exists function will only succeed if no matching item exists.  For more information about PutItem, see Working with Items in the Amazon DynamoDB Developer Guide.
     */
   def putItem(): Request[PutItemOutput, AWSError] = js.native
   def putItem(callback: js.Function2[/* err */ AWSError, /* data */ PutItemOutput, Unit]): Request[PutItemOutput, AWSError] = js.native
   /**
-    * Creates a new item, or replaces an old item with a new item. If an item that has the same primary key as the new item already exists in the specified table, the new item completely replaces the existing item. You can perform a conditional put operation (add a new item if one with the specified primary key doesn't exist), or replace an existing item if it has certain attribute values. You can return the item's attribute values in the same operation, using the ReturnValues parameter.  This topic provides general information about the PutItem API. For information on how to call the PutItem API using the AWS SDK in specific languages, see the following:     PutItem in the AWS Command Line Interface      PutItem in the AWS SDK for .NET      PutItem in the AWS SDK for C++      PutItem in the AWS SDK for Go      PutItem in the AWS SDK for Java      PutItem in the AWS SDK for JavaScript      PutItem in the AWS SDK for PHP V3      PutItem in the AWS SDK for Python      PutItem in the AWS SDK for Ruby V2     When you add an item, the primary key attributes are the only required attributes. Attribute values cannot be null. String and Binary type attributes must have lengths greater than zero. Set type attributes cannot be empty. Requests with empty values will be rejected with a ValidationException exception.  To prevent a new item from replacing an existing item, use a conditional expression that contains the attribute_not_exists function with the name of the attribute being used as the partition key for the table. Since every record must contain that attribute, the attribute_not_exists function will only succeed if no matching item exists.  For more information about PutItem, see Working with Items in the Amazon DynamoDB Developer Guide.
+    * Creates a new item, or replaces an old item with a new item. If an item that has the same primary key as the new item already exists in the specified table, the new item completely replaces the existing item. You can perform a conditional put operation (add a new item if one with the specified primary key doesn't exist), or replace an existing item if it has certain attribute values. You can return the item's attribute values in the same operation, using the ReturnValues parameter.  This topic provides general information about the PutItem API. For information on how to call the PutItem API using the AWS SDK in specific languages, see the following:     PutItem in the AWS Command Line Interface      PutItem in the AWS SDK for .NET      PutItem in the AWS SDK for C++      PutItem in the AWS SDK for Go      PutItem in the AWS SDK for Java      PutItem in the AWS SDK for JavaScript      PutItem in the AWS SDK for PHP V3      PutItem in the AWS SDK for Python      PutItem in the AWS SDK for Ruby V2     When you add an item, the primary key attributes are the only required attributes. Attribute values cannot be null. Empty String and Binary attribute values are allowed. Attribute values of type String and Binary must have a length greater than zero if the attribute is used as a key attribute for a table or index. Set type attributes cannot be empty.  Invalid Requests with empty values will be rejected with a ValidationException exception.  To prevent a new item from replacing an existing item, use a conditional expression that contains the attribute_not_exists function with the name of the attribute being used as the partition key for the table. Since every record must contain that attribute, the attribute_not_exists function will only succeed if no matching item exists.  For more information about PutItem, see Working with Items in the Amazon DynamoDB Developer Guide.
     */
   def putItem(params: PutItemInput): Request[PutItemOutput, AWSError] = js.native
   def putItem(params: PutItemInput, callback: js.Function2[/* err */ AWSError, /* data */ PutItemOutput, Unit]): Request[PutItemOutput, AWSError] = js.native
@@ -505,12 +505,12 @@ trait DynamoDB extends DynamoDBCustomizations {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateTableOutput, Unit]
   ): Request[UpdateTableOutput, AWSError] = js.native
   /**
-    * Updates auto scaling settings on your global tables at once.  This method only applies to Version 2019.11.21 of global tables. 
+    * Updates auto scaling settings on your global tables at once.  This operation only applies to Version 2019.11.21 of global tables. 
     */
   def updateTableReplicaAutoScaling(): Request[UpdateTableReplicaAutoScalingOutput, AWSError] = js.native
   def updateTableReplicaAutoScaling(callback: js.Function2[/* err */ AWSError, /* data */ UpdateTableReplicaAutoScalingOutput, Unit]): Request[UpdateTableReplicaAutoScalingOutput, AWSError] = js.native
   /**
-    * Updates auto scaling settings on your global tables at once.  This method only applies to Version 2019.11.21 of global tables. 
+    * Updates auto scaling settings on your global tables at once.  This operation only applies to Version 2019.11.21 of global tables. 
     */
   def updateTableReplicaAutoScaling(params: UpdateTableReplicaAutoScalingInput): Request[UpdateTableReplicaAutoScalingOutput, AWSError] = js.native
   def updateTableReplicaAutoScaling(

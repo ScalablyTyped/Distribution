@@ -21,14 +21,14 @@ object PaginationProps {
     count: Double,
     current: Double,
     styles: js.Any,
-    dotActiveStyle: StyleProp[ViewStyle] = null,
-    dotStyle: StyleProp[ViewStyle] = null,
+    dotActiveStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    dotStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     vertical: js.UndefOr[Boolean] = js.undefined
   ): PaginationProps = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
-    if (dotActiveStyle != null) __obj.updateDynamic("dotActiveStyle")(dotActiveStyle.asInstanceOf[js.Any])
-    if (dotStyle != null) __obj.updateDynamic("dotStyle")(dotStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
+    if (!js.isUndefined(dotActiveStyle)) __obj.updateDynamic("dotActiveStyle")(dotActiveStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(dotStyle)) __obj.updateDynamic("dotStyle")(dotStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationProps]
   }
 }

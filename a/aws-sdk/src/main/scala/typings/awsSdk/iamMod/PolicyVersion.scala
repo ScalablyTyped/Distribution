@@ -29,13 +29,13 @@ object PolicyVersion {
   def apply(
     CreateDate: dateType = null,
     Document: policyDocumentType = null,
-    IsDefaultVersion: js.UndefOr[Boolean] = js.undefined,
+    IsDefaultVersion: js.UndefOr[booleanType] = js.undefined,
     VersionId: policyVersionIdType = null
   ): PolicyVersion = {
     val __obj = js.Dynamic.literal()
     if (CreateDate != null) __obj.updateDynamic("CreateDate")(CreateDate.asInstanceOf[js.Any])
     if (Document != null) __obj.updateDynamic("Document")(Document.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsDefaultVersion)) __obj.updateDynamic("IsDefaultVersion")(IsDefaultVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsDefaultVersion)) __obj.updateDynamic("IsDefaultVersion")(IsDefaultVersion.get.asInstanceOf[js.Any])
     if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolicyVersion]
   }

@@ -17,10 +17,10 @@ trait PagerInitialRows extends js.Object {
 
 object PagerInitialRows {
   @scala.inline
-  def apply(filtered: Int | Double = null, total: Int | Double = null): PagerInitialRows = {
+  def apply(filtered: js.UndefOr[Double] = js.undefined, total: js.UndefOr[Double] = js.undefined): PagerInitialRows = {
     val __obj = js.Dynamic.literal()
-    if (filtered != null) __obj.updateDynamic("filtered")(filtered.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (!js.isUndefined(filtered)) __obj.updateDynamic("filtered")(filtered.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PagerInitialRows]
   }
 }

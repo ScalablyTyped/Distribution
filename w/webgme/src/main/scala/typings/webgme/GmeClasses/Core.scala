@@ -535,7 +535,6 @@ trait Core extends js.Object {
     * @return an object that represents all the META rules of the node.
     */
   def getJsonMeta(node: Node): MetaRules = js.native
-  def getLibraryGuid(node: Node): GUID | Error = js.native
   /**
     * Returns the origin GUID of any library node.
     * @param node the node in question.
@@ -544,6 +543,7 @@ trait Core extends js.Object {
     * direct library root of the node
     * @return the origin GUID of the node or error if the query cannot be fulfilled.
     */
+  def getLibraryGuid(node: Node): GUID | Error = js.native
   def getLibraryGuid(node: Node, name: Name): GUID | Error = js.native
   /**
     * Returns the info associated with the library.
@@ -1141,13 +1141,13 @@ trait Core extends js.Object {
     * this function will still returns true).
     */
   def isValidChildOf(node: Node, parent: Node): Boolean = js.native
-  def isValidNewBase(node: Node): Boolean = js.native
   /**
     * Checks if base can be the new base of node.
     * @param node the node in question.
     * @param base the new base node.
     * @return true if the supplied base is a valid base for the node.
     */
+  def isValidNewBase(node: Node): Boolean = js.native
   def isValidNewBase(node: Node, base: Node): Boolean = js.native
   /**
     * Checks if parent can be the new parent of node.

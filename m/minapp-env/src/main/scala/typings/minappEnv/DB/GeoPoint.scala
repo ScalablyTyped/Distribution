@@ -4,12 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DB.GeoPoint")
-@js.native
-abstract class GeoPoint protected () extends js.Object {
-  def this(longitude: Double, latitude: Double) = this()
-  var latitude: Double = js.native
-  var longitude: Double = js.native
-  def toJSON(): js.Object = js.native
+trait GeoPoint extends js.Object {
+  var latitude: Double
+  var longitude: Double
+  def toJSON(): js.Object
+}
+
+object GeoPoint {
+  @scala.inline
+  def apply(latitude: Double, longitude: Double, toJSON: () => js.Object): GeoPoint = {
+    val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
+    __obj.asInstanceOf[GeoPoint]
+  }
 }
 

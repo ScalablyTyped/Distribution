@@ -10,7 +10,7 @@ package object mod {
     - typings.webpackConfigUtils.webpackConfigUtilsBooleans.`false`
     - typings.webpackConfigUtils.webpackConfigUtilsStrings._empty
     - typings.webpackConfigUtils.webpackConfigUtilsStrings.`false`
-    - `js.undefined`
+    - js.UndefOr[scala.Nothing]
     - scala.Null
     - typings.webpackConfigUtils.webpackConfigUtilsNumbers.`0`
   */

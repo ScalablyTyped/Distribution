@@ -1,6 +1,7 @@
 package typings.simonwepSelectionJs
 
 import typings.simonwepSelectionJs.mod.Mode
+import typings.simonwepSelectionJs.mod.TapMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,10 +26,19 @@ object simonwepSelectionJsStrings {
   sealed trait disableTouch extends js.Object
   
   @js.native
+  sealed trait frame extends js.Object
+  
+  @js.native
+  sealed trait manualScrollSpeed extends js.Object
+  
+  @js.native
   sealed trait mode extends js.Object
   
   @js.native
   sealed trait move extends js.Object
+  
+  @js.native
+  sealed trait native extends TapMode
   
   @js.native
   sealed trait scrollSpeedDivider extends js.Object
@@ -55,7 +65,12 @@ object simonwepSelectionJsStrings {
   sealed trait stop extends js.Object
   
   @js.native
-  sealed trait touch extends Mode
+  sealed trait tapMode extends js.Object
+  
+  @js.native
+  sealed trait touch
+    extends Mode
+       with TapMode
   
   @scala.inline
   def beforestart: beforestart = "beforestart".asInstanceOf[beforestart]
@@ -70,9 +85,15 @@ object simonwepSelectionJsStrings {
   @scala.inline
   def disableTouch: disableTouch = "disableTouch".asInstanceOf[disableTouch]
   @scala.inline
+  def frame: frame = "frame".asInstanceOf[frame]
+  @scala.inline
+  def manualScrollSpeed: manualScrollSpeed = "manualScrollSpeed".asInstanceOf[manualScrollSpeed]
+  @scala.inline
   def mode: mode = "mode".asInstanceOf[mode]
   @scala.inline
   def move: move = "move".asInstanceOf[move]
+  @scala.inline
+  def native: native = "native".asInstanceOf[native]
   @scala.inline
   def scrollSpeedDivider: scrollSpeedDivider = "scrollSpeedDivider".asInstanceOf[scrollSpeedDivider]
   @scala.inline
@@ -89,6 +110,8 @@ object simonwepSelectionJsStrings {
   def startareas: startareas = "startareas".asInstanceOf[startareas]
   @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
+  @scala.inline
+  def tapMode: tapMode = "tapMode".asInstanceOf[tapMode]
   @scala.inline
   def touch: touch = "touch".asInstanceOf[touch]
 }

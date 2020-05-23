@@ -36,7 +36,7 @@ object AuthenticationResultType {
   @scala.inline
   def apply(
     AccessToken: TokenModelType = null,
-    ExpiresIn: Int | Double = null,
+    ExpiresIn: js.UndefOr[IntegerType] = js.undefined,
     IdToken: TokenModelType = null,
     NewDeviceMetadata: NewDeviceMetadataType = null,
     RefreshToken: TokenModelType = null,
@@ -44,7 +44,7 @@ object AuthenticationResultType {
   ): AuthenticationResultType = {
     val __obj = js.Dynamic.literal()
     if (AccessToken != null) __obj.updateDynamic("AccessToken")(AccessToken.asInstanceOf[js.Any])
-    if (ExpiresIn != null) __obj.updateDynamic("ExpiresIn")(ExpiresIn.asInstanceOf[js.Any])
+    if (!js.isUndefined(ExpiresIn)) __obj.updateDynamic("ExpiresIn")(ExpiresIn.get.asInstanceOf[js.Any])
     if (IdToken != null) __obj.updateDynamic("IdToken")(IdToken.asInstanceOf[js.Any])
     if (NewDeviceMetadata != null) __obj.updateDynamic("NewDeviceMetadata")(NewDeviceMetadata.asInstanceOf[js.Any])
     if (RefreshToken != null) __obj.updateDynamic("RefreshToken")(RefreshToken.asInstanceOf[js.Any])

@@ -38,13 +38,13 @@ object EventDestination {
     MatchingEventTypes: EventTypes,
     Name: EventDestinationName,
     CloudWatchDestination: CloudWatchDestination = null,
-    Enabled: js.UndefOr[Boolean] = js.undefined,
+    Enabled: js.UndefOr[Enabled] = js.undefined,
     KinesisFirehoseDestination: KinesisFirehoseDestination = null,
     SNSDestination: SNSDestination = null
   ): EventDestination = {
     val __obj = js.Dynamic.literal(MatchingEventTypes = MatchingEventTypes.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     if (CloudWatchDestination != null) __obj.updateDynamic("CloudWatchDestination")(CloudWatchDestination.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     if (KinesisFirehoseDestination != null) __obj.updateDynamic("KinesisFirehoseDestination")(KinesisFirehoseDestination.asInstanceOf[js.Any])
     if (SNSDestination != null) __obj.updateDynamic("SNSDestination")(SNSDestination.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventDestination]

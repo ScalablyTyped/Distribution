@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.UI.DialogOptions")
 @js.native
-class DialogOptions () extends IDialogOptions {
+trait DialogOptions extends IDialogOptions {
   /** specifies if maximize button should be shown on the dialog */
   @JSName("allowMaximize")
   var allowMaximize_DialogOptions: Boolean = js.native

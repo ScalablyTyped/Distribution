@@ -1,6 +1,6 @@
 package typings.firebaseAdmin.admin.projectManagement
 
-import typings.firebaseAdmin.admin.projectManagement.AppPlatform.IOS
+import typings.firebaseAdmin.projectManagementMod.admin.projectManagement.AppPlatform.IOS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Metadata about a Firebase iOS App.
   */
-trait IosAppMetadata extends AppMetadata {
+trait IosAppMetadata
+  extends typings.firebaseAdmin.projectManagementMod.admin.projectManagement.AppMetadata {
   /**
     * The canonical bundle ID of the iOS App as it would appear in the iOS App Store.
     *

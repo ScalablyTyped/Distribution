@@ -1,6 +1,6 @@
 package typings.combineSourceMap.mod
 
-import typings.combineSourceMap.AnonSource
+import typings.combineSourceMap.anon.Source
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,8 +19,8 @@ trait Combiner extends js.Object {
     * @param opts the 'sourceFile' path/name and the file's 'source' contents
     * @param offset the source file 'line' number and 'column' number offsets
     */
-  def addFile(opts: AnonSource): Combiner = js.native
-  def addFile(opts: AnonSource, offset: Offset): Combiner = js.native
+  def addFile(opts: Source): Combiner = js.native
+  def addFile(opts: Source, offset: Offset): Combiner = js.native
   /**
     * output the combined source map in base64 format
     * @return base64 encoded combined source map

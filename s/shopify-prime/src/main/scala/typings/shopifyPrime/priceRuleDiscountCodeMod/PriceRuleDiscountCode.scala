@@ -36,19 +36,19 @@ object PriceRuleDiscountCode {
     admin_graphql_api_id: String = null,
     code: String = null,
     created_at: String = null,
-    id: Int | Double = null,
-    price_rule_id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
+    price_rule_id: js.UndefOr[Double] = js.undefined,
     updated_at: String = null,
-    usage_count: Int | Double = null
+    usage_count: js.UndefOr[Double] = js.undefined
   ): PriceRuleDiscountCode = {
     val __obj = js.Dynamic.literal()
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (price_rule_id != null) __obj.updateDynamic("price_rule_id")(price_rule_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(price_rule_id)) __obj.updateDynamic("price_rule_id")(price_rule_id.get.asInstanceOf[js.Any])
     if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
-    if (usage_count != null) __obj.updateDynamic("usage_count")(usage_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(usage_count)) __obj.updateDynamic("usage_count")(usage_count.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PriceRuleDiscountCode]
   }
 }

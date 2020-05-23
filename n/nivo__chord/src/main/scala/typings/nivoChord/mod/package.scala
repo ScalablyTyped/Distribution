@@ -15,9 +15,9 @@ package object mod {
     /* event */ typings.react.mod.MouseEvent[js.Any, typings.react.mod.NativeMouseEvent], 
     scala.Unit
   ]
-  type LabelAccessor = js.Function1[/* datum */ typings.nivoChord.OmitArcDatalabel, java.lang.String]
+  type LabelAccessor = js.Function1[/* datum */ typings.nivoChord.anon.OmitArcDatalabel, java.lang.String]
   type ValueFormatter = js.Function1[
-    /* datum */ typings.nivoChord.OmitArcDataformattedValue, 
+    /* datum */ typings.nivoChord.anon.OmitArcDataformattedValue, 
     java.lang.String | scala.Double
   ]
 }

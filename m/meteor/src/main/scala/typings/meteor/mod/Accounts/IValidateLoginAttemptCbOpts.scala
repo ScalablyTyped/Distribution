@@ -2,7 +2,7 @@ package typings.meteor.mod.Accounts
 
 import typings.meteor.Meteor.Connection
 import typings.meteor.Meteor.Error
-import typings.meteor.Meteor.User_
+import typings.meteor.Meteor.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait IValidateLoginAttemptCbOpts extends js.Object {
   var methodArguments: js.Array[_]
   var methodName: String
   var `type`: String
-  var user: User_
+  var user: User
 }
 
 object IValidateLoginAttemptCbOpts {
@@ -26,7 +26,7 @@ object IValidateLoginAttemptCbOpts {
     methodArguments: js.Array[_],
     methodName: String,
     `type`: String,
-    user: User_
+    user: User
   ): IValidateLoginAttemptCbOpts = {
     val __obj = js.Dynamic.literal(allowed = allowed.asInstanceOf[js.Any], connection = connection.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], methodArguments = methodArguments.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

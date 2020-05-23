@@ -18,10 +18,13 @@ trait ExportTaskExecutionInfo extends js.Object {
 
 object ExportTaskExecutionInfo {
   @scala.inline
-  def apply(completionTime: Int | Double = null, creationTime: Int | Double = null): ExportTaskExecutionInfo = {
+  def apply(
+    completionTime: js.UndefOr[Timestamp] = js.undefined,
+    creationTime: js.UndefOr[Timestamp] = js.undefined
+  ): ExportTaskExecutionInfo = {
     val __obj = js.Dynamic.literal()
-    if (completionTime != null) __obj.updateDynamic("completionTime")(completionTime.asInstanceOf[js.Any])
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(completionTime)) __obj.updateDynamic("completionTime")(completionTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(creationTime)) __obj.updateDynamic("creationTime")(creationTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportTaskExecutionInfo]
   }
 }

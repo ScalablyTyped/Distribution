@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.NetworkOperators
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object MobileBroadbandPinFormat extends js.Object {
   /** No PIN format has been defined. This is normally not used. */
   @js.native
   sealed trait unknown extends MobileBroadbandPinFormat
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MobileBroadbandPinFormat with Double] = js.native
-  /* 2 */ @js.native
-  object alphanumeric extends TopLevel[alphanumeric with Double]
-  
-  /* 1 */ @js.native
-  object numeric extends TopLevel[numeric with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
   
 }
 

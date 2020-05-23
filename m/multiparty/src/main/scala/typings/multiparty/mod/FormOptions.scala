@@ -50,18 +50,18 @@ object FormOptions {
     autoFields: js.UndefOr[Boolean] = js.undefined,
     autoFiles: js.UndefOr[Boolean] = js.undefined,
     encoding: String = null,
-    maxFields: Int | Double = null,
-    maxFieldsSize: Int | Double = null,
-    maxFilesSize: Int | Double = null,
+    maxFields: js.UndefOr[Double] = js.undefined,
+    maxFieldsSize: js.UndefOr[Double] = js.undefined,
+    maxFilesSize: js.UndefOr[Double] = js.undefined,
     uploadDir: String = null
   ): FormOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFields)) __obj.updateDynamic("autoFields")(autoFields.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFiles)) __obj.updateDynamic("autoFiles")(autoFiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFields)) __obj.updateDynamic("autoFields")(autoFields.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFiles)) __obj.updateDynamic("autoFiles")(autoFiles.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (maxFields != null) __obj.updateDynamic("maxFields")(maxFields.asInstanceOf[js.Any])
-    if (maxFieldsSize != null) __obj.updateDynamic("maxFieldsSize")(maxFieldsSize.asInstanceOf[js.Any])
-    if (maxFilesSize != null) __obj.updateDynamic("maxFilesSize")(maxFilesSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFields)) __obj.updateDynamic("maxFields")(maxFields.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFieldsSize)) __obj.updateDynamic("maxFieldsSize")(maxFieldsSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFilesSize)) __obj.updateDynamic("maxFilesSize")(maxFilesSize.get.asInstanceOf[js.Any])
     if (uploadDir != null) __obj.updateDynamic("uploadDir")(uploadDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormOptions]
   }

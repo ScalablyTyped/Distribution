@@ -18,15 +18,15 @@ object SafeJwtStorageOptions {
   def apply(
     secret: String,
     algorithm: JwtAlgorithm = null,
-    maxExp: Int | Double = null,
-    ttl: Int | Double = null,
+    maxExp: js.UndefOr[Double] = js.undefined,
+    ttl: js.UndefOr[Double] = js.undefined,
     verify: js.UndefOr[Boolean] = js.undefined
   ): SafeJwtStorageOptions = {
     val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
-    if (maxExp != null) __obj.updateDynamic("maxExp")(maxExp.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
-    if (!js.isUndefined(verify)) __obj.updateDynamic("verify")(verify.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxExp)) __obj.updateDynamic("maxExp")(maxExp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verify)) __obj.updateDynamic("verify")(verify.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SafeJwtStorageOptions]
   }
 }

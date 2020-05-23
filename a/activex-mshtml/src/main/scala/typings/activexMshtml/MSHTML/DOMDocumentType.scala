@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.DOMDocumentType")
 @js.native
-class DOMDocumentType protected () extends js.Object {
+trait DOMDocumentType extends js.Object {
   @JSName("MSHTML.DOMDocumentType_typekey")
   var MSHTMLDotDOMDocumentType_typekey: DOMDocumentType = js.native
   val attributes: js.Any = js.native

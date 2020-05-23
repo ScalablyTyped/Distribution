@@ -82,23 +82,23 @@ object OuibounceConfig {
     aggressive: js.UndefOr[Boolean] = js.undefined,
     callback: () => Unit = null,
     cookieDomain: String = null,
-    cookieExpire: Int | Double = null,
+    cookieExpire: js.UndefOr[Double] = js.undefined,
     cookieName: String = null,
-    delay: Int | Double = null,
-    sensitivity: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
+    sensitivity: js.UndefOr[Double] = js.undefined,
     sitewide: js.UndefOr[Boolean] = js.undefined,
-    timer: Int | Double = null
+    timer: js.UndefOr[Double] = js.undefined
   ): OuibounceConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(aggressive)) __obj.updateDynamic("aggressive")(aggressive.asInstanceOf[js.Any])
+    if (!js.isUndefined(aggressive)) __obj.updateDynamic("aggressive")(aggressive.get.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
     if (cookieDomain != null) __obj.updateDynamic("cookieDomain")(cookieDomain.asInstanceOf[js.Any])
-    if (cookieExpire != null) __obj.updateDynamic("cookieExpire")(cookieExpire.asInstanceOf[js.Any])
+    if (!js.isUndefined(cookieExpire)) __obj.updateDynamic("cookieExpire")(cookieExpire.get.asInstanceOf[js.Any])
     if (cookieName != null) __obj.updateDynamic("cookieName")(cookieName.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (sensitivity != null) __obj.updateDynamic("sensitivity")(sensitivity.asInstanceOf[js.Any])
-    if (!js.isUndefined(sitewide)) __obj.updateDynamic("sitewide")(sitewide.asInstanceOf[js.Any])
-    if (timer != null) __obj.updateDynamic("timer")(timer.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sensitivity)) __obj.updateDynamic("sensitivity")(sensitivity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sitewide)) __obj.updateDynamic("sitewide")(sitewide.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timer)) __obj.updateDynamic("timer")(timer.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OuibounceConfig]
   }
 }

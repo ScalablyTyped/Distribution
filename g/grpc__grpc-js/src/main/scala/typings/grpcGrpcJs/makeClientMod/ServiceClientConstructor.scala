@@ -2,9 +2,8 @@ package typings.grpcGrpcJs.makeClientMod
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
+import typings.grpcGrpcJs.anon.PartialChannelOptions
 import typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials
-import typings.grpcGrpcJs.channelOptionsMod.ChannelOptions
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +14,7 @@ trait ServiceClientConstructor
      with Instantiable3[
       /* address */ String, 
       /* credentials */ ChannelCredentials, 
-      /* options */ Partial[ChannelOptions], 
+      /* options */ PartialChannelOptions, 
       ServiceClient
     ] {
   var service: ServiceDefinition = js.native

@@ -1,21 +1,12 @@
 package typings.bingmaps.Microsoft.Maps.Directions
 
-import typings.bingmaps.Microsoft.Maps.Map
 import typings.bingmaps.Microsoft.Maps.Pushpin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Microsoft.Maps.Directions.DirectionsManager")
 @js.native
-class DirectionsManager protected () extends js.Object {
-  /**
-    * @constructor
-    * @param map A map to calculate directions for.
-    * @param waypoints An array of waypoints to be added to the route.
-    */
-  def this(map: Map) = this()
-  def this(map: Map, waypoints: js.Array[Waypoint]) = this()
+trait DirectionsManager extends js.Object {
   /**
     * Adds a waypoint to the route at the given index, if specified. If an index is not specified, the waypoint is added as the last waypoint in the route. The maximum number of walking or driving waypoints is 25. The maximum number of transit waypoints is 2. Up to 10 via points are allowed between two stop waypoints. To recalculate the route, use calculateDirections.
     * @param waypoint The waypoint to be added to the directions manager.

@@ -1,6 +1,5 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.ShapeData
 import typings.officeJs.Excel.Interfaces.ShapeLoadOptions
 import typings.officeJs.Excel.Interfaces.ShapeUpdateData
@@ -8,6 +7,7 @@ import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.OfficeExtension.EventHandlers
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.Absolute
 import typings.officeJs.officeJsStrings.BMP
 import typings.officeJs.officeJsStrings.BringForward
@@ -39,26 +39,25 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-@JSGlobal("Excel.Shape")
 @js.native
-class Shape () extends ClientObject {
+trait Shape extends ClientObject {
   /**
     *
-    * Returns or sets the alternative description text for a Shape object.
+    * Specifies the alternative description text for a Shape object.
     *
     * [Api set: ExcelApi 1.9]
     */
   var altTextDescription: String = js.native
   /**
     *
-    * Returns or sets the alternative title text for a Shape object.
+    * Specifies the alternative title text for a Shape object.
     *
     * [Api set: ExcelApi 1.9]
     */
   var altTextTitle: String = js.native
   /**
     *
-    * Returns the number of connection sites on this shape. Read-only.
+    * Returns the number of connection sites on this shape.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -68,7 +67,7 @@ class Shape () extends ClientObject {
   var context_Shape: RequestContext = js.native
   /**
     *
-    * Returns the fill formatting of this shape. Read-only.
+    * Returns the fill formatting of this shape.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -82,7 +81,7 @@ class Shape () extends ClientObject {
   val geometricShape: GeometricShape = js.native
   /**
     *
-    * Represents the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
+    * Specifies the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -96,7 +95,7 @@ class Shape () extends ClientObject {
   val group: ShapeGroup = js.native
   /**
     *
-    * Represents the height, in points, of the shape.
+    * Specifies the height, in points, of the shape.
     Throws an invalid argument exception when set with a negative value or zero as input.
     *
     * [Api set: ExcelApi 1.9]
@@ -104,7 +103,7 @@ class Shape () extends ClientObject {
   var height: Double = js.native
   /**
     *
-    * Represents the shape identifier. Read-only.
+    * Specifies the shape identifier.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -126,7 +125,7 @@ class Shape () extends ClientObject {
   var left: Double = js.native
   /**
     *
-    * Represents the level of the specified shape. For example, a level of 0 means that the shape is not part of any groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a sub-group of the top level.
+    * Specifies the level of the specified shape. For example, a level of 0 means that the shape is not part of any groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a sub-group of the top level.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -140,21 +139,21 @@ class Shape () extends ClientObject {
   val line: Line = js.native
   /**
     *
-    * Returns the line formatting of this shape. Read-only.
+    * Returns the line formatting of this shape.
     *
     * [Api set: ExcelApi 1.9]
     */
   val lineFormat: ShapeLineFormat = js.native
   /**
     *
-    * Specifies whether or not the aspect ratio of this shape is locked.
+    * Specifies if the aspect ratio of this shape is locked.
     *
     * [Api set: ExcelApi 1.9]
     */
   var lockAspectRatio: Boolean = js.native
   /**
     *
-    * Represents the name of the shape.
+    * Specifies the name of the shape.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -179,7 +178,7 @@ class Shape () extends ClientObject {
   val onDeactivated: EventHandlers[ShapeDeactivatedEventArgs] = js.native
   /**
     *
-    * Represents the parent group of this shape.
+    * Specifies the parent group of this shape.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -193,7 +192,7 @@ class Shape () extends ClientObject {
   var placement: Placement | TwoCell | OneCell | Absolute = js.native
   /**
     *
-    * Represents the rotation, in degrees, of the shape.
+    * Specifies the rotation, in degrees, of the shape.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -215,21 +214,21 @@ class Shape () extends ClientObject {
   var top: Double = js.native
   /**
     *
-    * Returns the type of this shape. See Excel.ShapeType for details. Read-only.
+    * Returns the type of this shape. See Excel.ShapeType for details.
     *
     * [Api set: ExcelApi 1.9]
     */
   val `type`: ShapeType | Unsupported | typings.officeJs.officeJsStrings.Image | typings.officeJs.officeJsStrings.GeometricShape | Group | typings.officeJs.officeJsStrings.Line = js.native
   /**
     *
-    * Represents the visibility of this shape.
+    * Specifies if the shape is visible.
     *
     * [Api set: ExcelApi 1.9]
     */
   var visible: Boolean = js.native
   /**
     *
-    * Represents the width, in points, of the shape.
+    * Specifies the width, in points, of the shape.
     Throws an invalid argument exception when set with a negative value or zero as input.
     *
     * [Api set: ExcelApi 1.9]
@@ -237,7 +236,7 @@ class Shape () extends ClientObject {
   var width: Double = js.native
   /**
     *
-    * Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack. Read-only.
+    * Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -318,7 +317,7 @@ class Shape () extends ClientObject {
     */
   def load(): Shape = js.native
   def load(options: ShapeLoadOptions): Shape = js.native
-  def load(propertyNamesAndPaths: AnonExpand): Shape = js.native
+  def load(propertyNamesAndPaths: Expand): Shape = js.native
   def load(propertyNames: String): Shape = js.native
   def load(propertyNames: js.Array[String]): Shape = js.native
   /**

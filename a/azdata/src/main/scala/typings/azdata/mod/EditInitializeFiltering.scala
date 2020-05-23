@@ -10,9 +10,9 @@ trait EditInitializeFiltering extends js.Object {
 
 object EditInitializeFiltering {
   @scala.inline
-  def apply(LimitResults: Int | Double = null): EditInitializeFiltering = {
+  def apply(LimitResults: js.UndefOr[Double] = js.undefined): EditInitializeFiltering = {
     val __obj = js.Dynamic.literal()
-    if (LimitResults != null) __obj.updateDynamic("LimitResults")(LimitResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(LimitResults)) __obj.updateDynamic("LimitResults")(LimitResults.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditInitializeFiltering]
   }
 }

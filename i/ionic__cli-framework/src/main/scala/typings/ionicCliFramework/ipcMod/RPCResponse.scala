@@ -16,7 +16,7 @@ trait RPCResponse[R /* <: RPCRequest[_, _] */, D /* <: js.Object */] extends js.
 
 object RPCResponse {
   @scala.inline
-  def apply[R /* <: RPCRequest[_, _] */, D /* <: js.Object */](
+  def apply[R, D](
     data: D,
     id: String,
     procedure: /* import warning: importer.ImportType#apply Failed type conversion: R['procedure'] */ js.Any,

@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.Spreadsheet
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -98,74 +97,6 @@ object ChartProperties extends js.Object {
   ///Specifies to make the title to none of the chart.
   @js.native
   sealed trait TitleNone extends ChartProperties
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ChartProperties with Double] = js.native
-  /* 0 */ @js.native
-  object DataLabelCenter extends TopLevel[DataLabelCenter with Double]
-  
-  /* 1 */ @js.native
-  object DataLabelInsideBase extends TopLevel[DataLabelInsideBase with Double]
-  
-  /* 2 */ @js.native
-  object DataLabelInsideEnd extends TopLevel[DataLabelInsideEnd with Double]
-  
-  /* 3 */ @js.native
-  object DataLabelNone extends TopLevel[DataLabelNone with Double]
-  
-  /* 4 */ @js.native
-  object DataLabelOutsideEnd extends TopLevel[DataLabelOutsideEnd with Double]
-  
-  /* 5 */ @js.native
-  object LegendsBottom extends TopLevel[LegendsBottom with Double]
-  
-  /* 6 */ @js.native
-  object LegendsLeft extends TopLevel[LegendsLeft with Double]
-  
-  /* 7 */ @js.native
-  object LegendsNone extends TopLevel[LegendsNone with Double]
-  
-  /* 8 */ @js.native
-  object LegendsRight extends TopLevel[LegendsRight with Double]
-  
-  /* 9 */ @js.native
-  object LegendsTop extends TopLevel[LegendsTop with Double]
-  
-  /* 10 */ @js.native
-  object PrimaryHorizontal extends TopLevel[PrimaryHorizontal with Double]
-  
-  /* 11 */ @js.native
-  object PrimaryHorizontalAxisTitle extends TopLevel[PrimaryHorizontalAxisTitle with Double]
-  
-  /* 12 */ @js.native
-  object PrimaryMajorHorizontal extends TopLevel[PrimaryMajorHorizontal with Double]
-  
-  /* 13 */ @js.native
-  object PrimaryMajorVertical extends TopLevel[PrimaryMajorVertical with Double]
-  
-  /* 14 */ @js.native
-  object PrimaryMinorHorizontal extends TopLevel[PrimaryMinorHorizontal with Double]
-  
-  /* 15 */ @js.native
-  object PrimaryMinorVertical extends TopLevel[PrimaryMinorVertical with Double]
-  
-  /* 16 */ @js.native
-  object PrimaryVertical extends TopLevel[PrimaryVertical with Double]
-  
-  /* 17 */ @js.native
-  object PrimaryVerticalAxisTitle extends TopLevel[PrimaryVerticalAxisTitle with Double]
-  
-  /* 18 */ @js.native
-  object TitleCenter extends TopLevel[TitleCenter with Double]
-  
-  /* 19 */ @js.native
-  object TitleFar extends TopLevel[TitleFar with Double]
-  
-  /* 20 */ @js.native
-  object TitleNear extends TopLevel[TitleNear with Double]
-  
-  /* 21 */ @js.native
-  object TitleNone extends TopLevel[TitleNone with Double]
   
 }
 

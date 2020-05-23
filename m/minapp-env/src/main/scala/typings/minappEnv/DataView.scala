@@ -1,6 +1,5 @@
 package typings.minappEnv
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -133,8 +132,4 @@ trait DataView extends js.Object {
     */
   def setUint8(byteOffset: Double, value: Double): Unit = js.native
 }
-
-@JSGlobal("DataView")
-@js.native
-object DataView extends TopLevel[DataViewConstructor]
 

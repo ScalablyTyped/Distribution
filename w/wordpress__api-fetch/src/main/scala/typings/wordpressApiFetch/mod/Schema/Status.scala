@@ -1,7 +1,7 @@
 package typings.wordpressApiFetch.mod.Schema
 
 import typings.std.Record
-import typings.wordpressApiFetch.AnonDictk
+import typings.wordpressApiFetch.anon.Dictk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 // prettier-ignore
 /* Rewritten from type alias, can be one of: 
   - typings.wordpressApiFetch.mod.Schema.BaseStatus
-  - typings.wordpressApiFetch.PickBaseStatusStatusEmbedded
-  - typings.wordpressApiFetch.PickBaseStatusStatus
+  - typings.wordpressApiFetch.anon.PickBaseStatusStatusEmbedded
+  - typings.wordpressApiFetch.anon.PickBaseStatusStatus
 */
 trait Status[T /* <: Context */] extends js.Object
 
 object Status {
   @scala.inline
-  def BaseStatus[T /* <: Context */](
-    _links: Record[String, js.Array[AnonDictk]],
+  def BaseStatus[T](
+    _links: Record[String, js.Array[Dictk]],
     name: String,
     `private`: Boolean,
     `protected`: Boolean,
@@ -34,8 +34,8 @@ object Status {
     __obj.asInstanceOf[Status[T]]
   }
   @scala.inline
-  def PickBaseStatusStatusEmbedded[T /* <: Context */](
-    _links: Record[String, js.Array[AnonDictk]],
+  def PickBaseStatusStatusEmbedded[T](
+    _links: Record[String, js.Array[Dictk]],
     name: String,
     public: Boolean,
     queryable: Boolean,
@@ -47,8 +47,8 @@ object Status {
     __obj.asInstanceOf[Status[T]]
   }
   @scala.inline
-  def PickBaseStatusStatus[T /* <: Context */](
-    _links: Record[String, js.Array[AnonDictk]],
+  def PickBaseStatusStatus[T](
+    _links: Record[String, js.Array[Dictk]],
     name: String,
     slug: String,
     _embedded: Record[String, js.Array[_]] = null

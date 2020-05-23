@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.fill
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -45,8 +44,4 @@ trait FillSymbol3DLayer
   @JSName("type")
   val type_FillSymbol3DLayer: fill = js.native
 }
-
-@JSGlobal("__esri.FillSymbol3DLayer")
-@js.native
-object FillSymbol3DLayer extends TopLevel[FillSymbol3DLayerConstructor]
 

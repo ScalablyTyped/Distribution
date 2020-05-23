@@ -18,14 +18,14 @@ object MobileDeviceApplications {
     displayName: String = null,
     packageName: String = null,
     permission: js.Array[String] = null,
-    versionCode: Int | Double = null,
+    versionCode: js.UndefOr[Double] = js.undefined,
     versionName: String = null
   ): MobileDeviceApplications = {
     val __obj = js.Dynamic.literal()
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
     if (permission != null) __obj.updateDynamic("permission")(permission.asInstanceOf[js.Any])
-    if (versionCode != null) __obj.updateDynamic("versionCode")(versionCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(versionCode)) __obj.updateDynamic("versionCode")(versionCode.get.asInstanceOf[js.Any])
     if (versionName != null) __obj.updateDynamic("versionName")(versionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileDeviceApplications]
   }

@@ -14,10 +14,13 @@ trait IImage extends js.Object {
 
 object IImage {
   @scala.inline
-  def apply(accessibilityText: String = null, imageUri: String = null): IImage = {
+  def apply(
+    accessibilityText: js.UndefOr[Null | String] = js.undefined,
+    imageUri: js.UndefOr[Null | String] = js.undefined
+  ): IImage = {
     val __obj = js.Dynamic.literal()
-    if (accessibilityText != null) __obj.updateDynamic("accessibilityText")(accessibilityText.asInstanceOf[js.Any])
-    if (imageUri != null) __obj.updateDynamic("imageUri")(imageUri.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessibilityText)) __obj.updateDynamic("accessibilityText")(accessibilityText.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageUri)) __obj.updateDynamic("imageUri")(imageUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[IImage]
   }
 }

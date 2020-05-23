@@ -10,9 +10,9 @@ trait ButtonStyleProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js
 
 object ButtonStyleProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](variant: ResponsiveValue[String, ThemeType] = null): ButtonStyleProps[ThemeType] = {
+  def apply[ThemeType](variant: js.UndefOr[Null | (ResponsiveValue[String, ThemeType])] = js.undefined): ButtonStyleProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
-    if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
+    if (!js.isUndefined(variant)) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonStyleProps[ThemeType]]
   }
 }

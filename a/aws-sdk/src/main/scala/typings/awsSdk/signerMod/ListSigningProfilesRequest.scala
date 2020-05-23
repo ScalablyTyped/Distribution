@@ -23,13 +23,13 @@ trait ListSigningProfilesRequest extends js.Object {
 object ListSigningProfilesRequest {
   @scala.inline
   def apply(
-    includeCanceled: js.UndefOr[Boolean] = js.undefined,
-    maxResults: Int | Double = null,
+    includeCanceled: js.UndefOr[bool] = js.undefined,
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
     nextToken: NextToken = null
   ): ListSigningProfilesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeCanceled)) __obj.updateDynamic("includeCanceled")(includeCanceled.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeCanceled)) __obj.updateDynamic("includeCanceled")(includeCanceled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSigningProfilesRequest]
   }

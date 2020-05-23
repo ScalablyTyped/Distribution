@@ -1,6 +1,6 @@
 package typings.baseui.toastMod
 
-import typings.baseui.ReadonlyToastProps
+import typings.baseui.anon.ReadonlyToastProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

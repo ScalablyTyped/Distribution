@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object SelectorSettings {
-  type Param = (typings.semanticUiEmbed.PickImplembed | typings.semanticUiEmbed.PickImplplaceholder | typings.semanticUiEmbed.PickImplplay) with typings.semanticUiEmbed.PartialPickImplkeyofImplEmbed
+  type Param = (typings.semanticUiEmbed.anon.PickImplembed | typings.semanticUiEmbed.anon.PickImplplaceholder | typings.semanticUiEmbed.anon.PickImplplay) with typings.semanticUiEmbed.anon.PartialPickImplkeyofImplEmbed
 }

@@ -77,7 +77,7 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (buttonNextClass != null) __obj.updateDynamic("buttonNextClass")(buttonNextClass.asInstanceOf[js.Any])
     if (buttonPreviousClass != null) __obj.updateDynamic("buttonPreviousClass")(buttonPreviousClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(carousel)) __obj.updateDynamic("carousel")(carousel.asInstanceOf[js.Any])
+    if (!js.isUndefined(carousel)) __obj.updateDynamic("carousel")(carousel.get.asInstanceOf[js.Any])
     if (currentItemClass != null) __obj.updateDynamic("currentItemClass")(currentItemClass.asInstanceOf[js.Any])
     if (hideNextClass != null) __obj.updateDynamic("hideNextClass")(hideNextClass.asInstanceOf[js.Any])
     if (hidePreviousClass != null) __obj.updateDynamic("hidePreviousClass")(hidePreviousClass.asInstanceOf[js.Any])

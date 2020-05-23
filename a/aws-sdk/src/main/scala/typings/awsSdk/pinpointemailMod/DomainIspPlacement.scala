@@ -31,18 +31,18 @@ trait DomainIspPlacement extends js.Object {
 object DomainIspPlacement {
   @scala.inline
   def apply(
-    InboxPercentage: Int | Double = null,
-    InboxRawCount: Int | Double = null,
+    InboxPercentage: js.UndefOr[Percentage] = js.undefined,
+    InboxRawCount: js.UndefOr[Volume] = js.undefined,
     IspName: IspName = null,
-    SpamPercentage: Int | Double = null,
-    SpamRawCount: Int | Double = null
+    SpamPercentage: js.UndefOr[Percentage] = js.undefined,
+    SpamRawCount: js.UndefOr[Volume] = js.undefined
   ): DomainIspPlacement = {
     val __obj = js.Dynamic.literal()
-    if (InboxPercentage != null) __obj.updateDynamic("InboxPercentage")(InboxPercentage.asInstanceOf[js.Any])
-    if (InboxRawCount != null) __obj.updateDynamic("InboxRawCount")(InboxRawCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(InboxPercentage)) __obj.updateDynamic("InboxPercentage")(InboxPercentage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(InboxRawCount)) __obj.updateDynamic("InboxRawCount")(InboxRawCount.get.asInstanceOf[js.Any])
     if (IspName != null) __obj.updateDynamic("IspName")(IspName.asInstanceOf[js.Any])
-    if (SpamPercentage != null) __obj.updateDynamic("SpamPercentage")(SpamPercentage.asInstanceOf[js.Any])
-    if (SpamRawCount != null) __obj.updateDynamic("SpamRawCount")(SpamRawCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(SpamPercentage)) __obj.updateDynamic("SpamPercentage")(SpamPercentage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SpamRawCount)) __obj.updateDynamic("SpamRawCount")(SpamRawCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainIspPlacement]
   }
 }

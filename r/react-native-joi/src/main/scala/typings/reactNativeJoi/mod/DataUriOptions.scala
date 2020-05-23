@@ -15,7 +15,7 @@ object DataUriOptions {
   @scala.inline
   def apply(paddingRequired: js.UndefOr[Boolean] = js.undefined): DataUriOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(paddingRequired)) __obj.updateDynamic("paddingRequired")(paddingRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingRequired)) __obj.updateDynamic("paddingRequired")(paddingRequired.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataUriOptions]
   }
 }

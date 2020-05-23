@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetBucketNotificationConfigurationRequest extends js.Object {
   /**
-    * Name of the bucket for which to get the notification configuration
+    * Name of the bucket for which to get the notification configuration.
     */
   var Bucket: BucketName = js.native
 }

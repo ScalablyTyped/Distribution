@@ -13,9 +13,9 @@ trait IdentityArgs extends js.Object {
 
 object IdentityArgs {
   @scala.inline
-  def apply(gain: Int | Double = null): IdentityArgs = {
+  def apply(gain: js.UndefOr[Double] = js.undefined): IdentityArgs = {
     val __obj = js.Dynamic.literal()
-    if (gain != null) __obj.updateDynamic("gain")(gain.asInstanceOf[js.Any])
+    if (!js.isUndefined(gain)) __obj.updateDynamic("gain")(gain.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityArgs]
   }
 }

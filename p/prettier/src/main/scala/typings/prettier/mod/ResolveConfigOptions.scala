@@ -34,8 +34,8 @@ object ResolveConfigOptions {
   ): ResolveConfigOptions = {
     val __obj = js.Dynamic.literal()
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (!js.isUndefined(editorconfig)) __obj.updateDynamic("editorconfig")(editorconfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCache)) __obj.updateDynamic("useCache")(useCache.asInstanceOf[js.Any])
+    if (!js.isUndefined(editorconfig)) __obj.updateDynamic("editorconfig")(editorconfig.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCache)) __obj.updateDynamic("useCache")(useCache.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolveConfigOptions]
   }
 }

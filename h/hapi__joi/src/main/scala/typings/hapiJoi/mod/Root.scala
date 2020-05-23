@@ -1,6 +1,7 @@
 package typings.hapiJoi.mod
 
-import typings.hapiJoi.AnonAlternatives
+import org.scalablytyped.runtime.Instantiable3
+import typings.hapiJoi.anon.Alternatives
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +10,12 @@ import scala.scalajs.js.annotation._
 // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 @js.native
 trait Root extends js.Object {
-  var ValidationError: typings.hapiJoi.mod.ValidationError = js.native
+  var ValidationError: Instantiable3[
+    /* message */ String, 
+    /* details */ js.Any, 
+    /* original */ js.Any, 
+    typings.hapiJoi.mod.ValidationError
+  ] = js.native
   var cache: CacheConfiguration = js.native
   /**
     * A special value used with `any.allow()`, `any.invalid()`, and `any.valid()` as the first value to reset any previously set values.
@@ -153,6 +159,10 @@ trait Root extends js.Object {
     */
   def invalid(values: js.Any*): Schema = js.native
   /**
+    * Checks whether or not the provided argument is an instance of ValidationError
+    */
+  def isError(error: js.Any): /* is @hapi/joi.@hapi/joi.ValidationError */ Boolean = js.native
+  /**
     * Checks whether or not the provided argument is an expression.
     */
   def isExpression(expression: js.Any): Boolean = js.native
@@ -229,7 +239,7 @@ trait Root extends js.Object {
     * Useful for creating type shortcuts using deconstruction.
     * Note that the types are already formed and do not need to be called as functions (e.g. `string`, not `string()`).
     */
-  def types(): AnonAlternatives = js.native
+  def types(): Alternatives = js.native
   def untrace(args: js.Any*): js.Any = js.native
   /**
     * Adds the provided values into the allowed whitelist and marks them as the only valid values allowed.

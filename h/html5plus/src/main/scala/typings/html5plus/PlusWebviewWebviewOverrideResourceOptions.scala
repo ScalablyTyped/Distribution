@@ -20,7 +20,7 @@ trait PlusWebviewWebviewOverrideResourceOptions extends js.Object {
   /**
     * 设置重定向资源数据的http头数据
     * 可设置标注http头数据（如Content-type）,也可设置自定义数据。
-    * 	通常可通过此属性来设置拦截资源的缓存策略（如Cache-control）。
+    *     通常可通过此属性来设置拦截资源的缓存策略（如Cache-control）。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
@@ -35,8 +35,8 @@ trait PlusWebviewWebviewOverrideResourceOptions extends js.Object {
   /**
     * 重定向的资源数据类型
     * RFC2045/RFC2046/RFC2047/RFC2048/RFC2049规范中定义的数据类型。
-    * 	如普通文本（text/plain）、PNG图像(image/png)、GIF图形(image/gif)、JPEG图形(image/jpeg)。
-    * 	如果未指定mime类型，则根据重定向资源路径自动区配。
+    *     如普通文本（text/plain）、PNG图像(image/png)、GIF图形(image/gif)、JPEG图形(image/jpeg)。
+    *     如果未指定mime类型，则根据重定向资源路径自动区配。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */

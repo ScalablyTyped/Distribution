@@ -87,7 +87,7 @@ object InstanceNetworkInterface {
     PrivateDnsName: String = null,
     PrivateIpAddress: String = null,
     PrivateIpAddresses: InstancePrivateIpAddressList = null,
-    SourceDestCheck: js.UndefOr[scala.Boolean] = js.undefined,
+    SourceDestCheck: js.UndefOr[Boolean] = js.undefined,
     Status: NetworkInterfaceStatus = null,
     SubnetId: String = null,
     VpcId: String = null
@@ -105,7 +105,7 @@ object InstanceNetworkInterface {
     if (PrivateDnsName != null) __obj.updateDynamic("PrivateDnsName")(PrivateDnsName.asInstanceOf[js.Any])
     if (PrivateIpAddress != null) __obj.updateDynamic("PrivateIpAddress")(PrivateIpAddress.asInstanceOf[js.Any])
     if (PrivateIpAddresses != null) __obj.updateDynamic("PrivateIpAddresses")(PrivateIpAddresses.asInstanceOf[js.Any])
-    if (!js.isUndefined(SourceDestCheck)) __obj.updateDynamic("SourceDestCheck")(SourceDestCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(SourceDestCheck)) __obj.updateDynamic("SourceDestCheck")(SourceDestCheck.get.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])
     if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])

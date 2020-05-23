@@ -30,15 +30,15 @@ object PortFinderOptions {
   @scala.inline
   def apply(
     host: String = null,
-    port: Int | Double = null,
-    startPort: Int | Double = null,
-    stopPort: Int | Double = null
+    port: js.UndefOr[Double] = js.undefined,
+    startPort: js.UndefOr[Double] = js.undefined,
+    stopPort: js.UndefOr[Double] = js.undefined
   ): PortFinderOptions = {
     val __obj = js.Dynamic.literal()
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (startPort != null) __obj.updateDynamic("startPort")(startPort.asInstanceOf[js.Any])
-    if (stopPort != null) __obj.updateDynamic("stopPort")(stopPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startPort)) __obj.updateDynamic("startPort")(startPort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopPort)) __obj.updateDynamic("stopPort")(stopPort.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortFinderOptions]
   }
 }

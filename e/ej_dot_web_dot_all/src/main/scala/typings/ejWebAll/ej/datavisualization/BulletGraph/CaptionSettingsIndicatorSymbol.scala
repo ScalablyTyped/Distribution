@@ -33,7 +33,7 @@ object CaptionSettingsIndicatorSymbol {
     border: CaptionSettingsIndicatorSymbolBorder = null,
     color: String = null,
     imageURL: String = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     shape: String = null,
     size: CaptionSettingsIndicatorSymbolSize = null
   ): CaptionSettingsIndicatorSymbol = {
@@ -41,7 +41,7 @@ object CaptionSettingsIndicatorSymbol {
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (imageURL != null) __obj.updateDynamic("imageURL")(imageURL.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptionSettingsIndicatorSymbol]

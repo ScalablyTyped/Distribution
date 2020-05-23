@@ -29,12 +29,12 @@ object UpdateUploadRequest {
   def apply(
     arn: AmazonResourceName,
     contentType: ContentType = null,
-    editContent: js.UndefOr[scala.Boolean] = js.undefined,
+    editContent: js.UndefOr[Boolean] = js.undefined,
     name: Name = null
   ): UpdateUploadRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(editContent)) __obj.updateDynamic("editContent")(editContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(editContent)) __obj.updateDynamic("editContent")(editContent.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateUploadRequest]
   }

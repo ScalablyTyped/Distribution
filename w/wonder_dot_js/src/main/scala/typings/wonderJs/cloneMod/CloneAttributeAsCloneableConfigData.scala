@@ -10,9 +10,9 @@ trait CloneAttributeAsCloneableConfigData extends js.Object {
 
 object CloneAttributeAsCloneableConfigData {
   @scala.inline
-  def apply(order: Int | Double = null): CloneAttributeAsCloneableConfigData = {
+  def apply(order: js.UndefOr[Double] = js.undefined): CloneAttributeAsCloneableConfigData = {
     val __obj = js.Dynamic.literal()
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (!js.isUndefined(order)) __obj.updateDynamic("order")(order.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloneAttributeAsCloneableConfigData]
   }
 }

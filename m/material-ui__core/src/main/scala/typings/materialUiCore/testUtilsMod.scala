@@ -1,6 +1,13 @@
 package typings.materialUiCore
 
 import typings.enzyme.mod.ReactWrapper
+import typings.materialUiCore.anon.Fn0
+import typings.materialUiCore.anon.Fn1
+import typings.materialUiCore.anon.NonePSnodeReactElementopt
+import typings.materialUiCore.anon.PartialMountOptions
+import typings.materialUiCore.anon.PartialRenderOptions
+import typings.materialUiCore.anon.PartialShallowOptions
+import typings.materialUiCore.anon.PartialwithThemeboolean
 import typings.react.mod.Component
 import typings.react.mod.ReactElement
 import scala.scalajs.js

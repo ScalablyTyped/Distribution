@@ -1,7 +1,7 @@
 package typings.uifabricStyling.iconsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.uifabricMergeStyles.irawstylebaseMod.IFontFace
 import typings.uifabricMergeStyles.istyleMod.IRawStyle
 import scala.scalajs.js
@@ -25,7 +25,7 @@ object IIconSubsetRecord {
     val __obj = js.Dynamic.literal(icons = icons.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (fontFace != null) __obj.updateDynamic("fontFace")(fontFace.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRegistered)) __obj.updateDynamic("isRegistered")(isRegistered.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRegistered)) __obj.updateDynamic("isRegistered")(isRegistered.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIconSubsetRecord]
   }

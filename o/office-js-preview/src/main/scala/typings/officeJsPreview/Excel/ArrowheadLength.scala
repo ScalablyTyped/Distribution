@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object ArrowheadLength extends js.Object {
   
   @js.native
   sealed trait short extends ArrowheadLength
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ArrowheadLength with String] = js.native
-  /* "Long" */ @js.native
-  object long extends TopLevel[long with String]
-  
-  /* "Medium" */ @js.native
-  object medium extends TopLevel[medium with String]
-  
-  /* "Short" */ @js.native
-  object short extends TopLevel[short with String]
   
 }
 

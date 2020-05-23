@@ -100,8 +100,8 @@ object DeviceHealthAttestationState {
     operatingSystemRevListInfo: String = null,
     pcr0: String = null,
     pcrHashAlgorithm: String = null,
-    resetCount: Int | Double = null,
-    restartCount: Int | Double = null,
+    resetCount: js.UndefOr[Double] = js.undefined,
+    restartCount: js.UndefOr[Double] = js.undefined,
     safeMode: String = null,
     secureBoot: String = null,
     secureBootConfigurationPolicyFingerPrint: String = null,
@@ -134,8 +134,8 @@ object DeviceHealthAttestationState {
     if (operatingSystemRevListInfo != null) __obj.updateDynamic("operatingSystemRevListInfo")(operatingSystemRevListInfo.asInstanceOf[js.Any])
     if (pcr0 != null) __obj.updateDynamic("pcr0")(pcr0.asInstanceOf[js.Any])
     if (pcrHashAlgorithm != null) __obj.updateDynamic("pcrHashAlgorithm")(pcrHashAlgorithm.asInstanceOf[js.Any])
-    if (resetCount != null) __obj.updateDynamic("resetCount")(resetCount.asInstanceOf[js.Any])
-    if (restartCount != null) __obj.updateDynamic("restartCount")(restartCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetCount)) __obj.updateDynamic("resetCount")(resetCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(restartCount)) __obj.updateDynamic("restartCount")(restartCount.get.asInstanceOf[js.Any])
     if (safeMode != null) __obj.updateDynamic("safeMode")(safeMode.asInstanceOf[js.Any])
     if (secureBoot != null) __obj.updateDynamic("secureBoot")(secureBoot.asInstanceOf[js.Any])
     if (secureBootConfigurationPolicyFingerPrint != null) __obj.updateDynamic("secureBootConfigurationPolicyFingerPrint")(secureBootConfigurationPolicyFingerPrint.asInstanceOf[js.Any])

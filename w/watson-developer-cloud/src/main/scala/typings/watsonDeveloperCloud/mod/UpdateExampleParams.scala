@@ -35,7 +35,7 @@ object UpdateExampleParams {
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (new_mentions != null) __obj.updateDynamic("new_mentions")(new_mentions.asInstanceOf[js.Any])
     if (new_text != null) __obj.updateDynamic("new_text")(new_text.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateExampleParams]
   }
 }

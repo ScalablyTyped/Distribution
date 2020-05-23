@@ -1,8 +1,7 @@
 package typings.reactNative.mod
 
 import typings.react.mod.Component
-import typings.reactNative.AnonAnimated
-import typings.reactNative.AnonContentLength
+import typings.reactNative.anon.ContentLength
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +15,7 @@ class ListView ()
   /**
     * Exports some data, e.g. for perf investigations or analytics.
     */
-  def getMetrics(): AnonContentLength = js.native
+  def getMetrics(): ContentLength = js.native
   /**
     * Provides a handle to the underlying scroll responder.
     */
@@ -30,9 +29,9 @@ class ListView ()
   def scrollTo(y: Double): Unit = js.native
   def scrollTo(y: Double, x: Double): Unit = js.native
   def scrollTo(y: Double, x: Double, animated: Boolean): Unit = js.native
-  def scrollTo(y: AnonAnimated): Unit = js.native
-  def scrollTo(y: AnonAnimated, x: Double): Unit = js.native
-  def scrollTo(y: AnonAnimated, x: Double, animated: Boolean): Unit = js.native
+  def scrollTo(y: typings.reactNative.anon.Animated): Unit = js.native
+  def scrollTo(y: typings.reactNative.anon.Animated, x: Double): Unit = js.native
+  def scrollTo(y: typings.reactNative.anon.Animated, x: Double, animated: Boolean): Unit = js.native
 }
 
 /* static members */

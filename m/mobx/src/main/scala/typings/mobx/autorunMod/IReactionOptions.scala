@@ -24,7 +24,7 @@ trait IReactionOptions extends js.Object {
 object IReactionOptions {
   @scala.inline
   def apply(
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     equals: (_, _) => Boolean = null,
     fireImmediately: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
@@ -33,12 +33,12 @@ object IReactionOptions {
     scheduler: /* callback */ js.Function0[Unit] => _ = null
   ): IReactionOptions = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (equals != null) __obj.updateDynamic("equals")(js.Any.fromFunction2(equals))
-    if (!js.isUndefined(fireImmediately)) __obj.updateDynamic("fireImmediately")(fireImmediately.asInstanceOf[js.Any])
+    if (!js.isUndefined(fireImmediately)) __obj.updateDynamic("fireImmediately")(fireImmediately.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
-    if (!js.isUndefined(requiresObservable)) __obj.updateDynamic("requiresObservable")(requiresObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(requiresObservable)) __obj.updateDynamic("requiresObservable")(requiresObservable.get.asInstanceOf[js.Any])
     if (scheduler != null) __obj.updateDynamic("scheduler")(js.Any.fromFunction1(scheduler))
     __obj.asInstanceOf[IReactionOptions]
   }

@@ -1,6 +1,6 @@
 package typings.pouchReduxMiddleware.mod
 
-import typings.pouchReduxMiddleware.AnonBatchInsert
+import typings.pouchReduxMiddleware.anon.BatchInsert
 import typings.pouchdbCore.PouchDB.Database
 import typings.redux.mod.Dispatch
 import typings.std.Error
@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Path[T] extends js.Object {
-  var actions: AnonBatchInsert[T]
+  var actions: BatchInsert[T]
   var db: Database[T]
   var docs: js.UndefOr[js.Any] = js.undefined
   var handleResponse: js.UndefOr[
@@ -34,7 +34,7 @@ trait Path[T] extends js.Object {
 object Path {
   @scala.inline
   def apply[T](
-    actions: AnonBatchInsert[T],
+    actions: BatchInsert[T],
     db: Database[T],
     path: String,
     docs: js.Any = null,

@@ -12,11 +12,15 @@ trait RangeHighlight extends js.Object {
 
 object RangeHighlight {
   @scala.inline
-  def apply(`class`: String = null, end: Int | Double = null, start: Int | Double = null): RangeHighlight = {
+  def apply(
+    `class`: String = null,
+    end: js.UndefOr[Double] = js.undefined,
+    start: js.UndefOr[Double] = js.undefined
+  ): RangeHighlight = {
     val __obj = js.Dynamic.literal()
     if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeHighlight]
   }
 }

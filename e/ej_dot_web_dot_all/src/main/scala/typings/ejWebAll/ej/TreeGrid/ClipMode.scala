@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.TreeGrid
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,14 +17,6 @@ object ClipMode extends js.Object {
   ///Shows ellipsis for the overflown cell.
   @js.native
   sealed trait Ellipsis extends ClipMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ClipMode with Double] = js.native
-  /* 1 */ @js.native
-  object Clip extends TopLevel[Clip with Double]
-  
-  /* 0 */ @js.native
-  object Ellipsis extends TopLevel[Ellipsis with Double]
   
 }
 

@@ -1,6 +1,6 @@
 package typings.stripe.mod.resources
 
-import typings.stripe.AnonCard
+import typings.stripe.anon.Card
 import typings.stripe.mod.HeaderOptions
 import typings.stripe.mod.IDeleteConfirmation
 import typings.stripe.mod.IList
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 @JSImport("stripe", "resources.CustomerCards")
 @js.native
 class CustomerCards () extends StripeResource {
-  def create(data: AnonCard): js.Promise[ICard] = js.native
+  def create(data: Card): js.Promise[ICard] = js.native
   /**
     * When you create a new credit card, you must specify a customer or recipient to create it on. If the card's owner has no default card,
     * then the new card will become the default. However, if the owner already has a default then it will not change. To change the default,
@@ -25,9 +25,9 @@ class CustomerCards () extends StripeResource {
     *
     * @returns Returns the card object.
     */
-  def create(data: AnonCard, options: HeaderOptions): js.Promise[ICard] = js.native
-  def create(data: AnonCard, options: HeaderOptions, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
-  def create(data: AnonCard, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
+  def create(data: Card, options: HeaderOptions): js.Promise[ICard] = js.native
+  def create(data: Card, options: HeaderOptions, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
+  def create(data: Card, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
   def del(cardId: String): js.Promise[IDeleteConfirmation] = js.native
   /**
     * You can delete cards from a customer or recipient. If you delete a card that is currently the

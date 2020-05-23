@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Rewritten from type alias, can be one of: 
+/* keyof @ant-design/icons-react-native.anon.Accountbook */ /* Rewritten from type alias, can be one of: 
   - typings.antDesignIconsReactNative.antDesignIconsReactNativeStrings.`account-book`
   - typings.antDesignIconsReactNative.antDesignIconsReactNativeStrings.alert
   - typings.antDesignIconsReactNative.antDesignIconsReactNativeStrings.`alipay-circle`

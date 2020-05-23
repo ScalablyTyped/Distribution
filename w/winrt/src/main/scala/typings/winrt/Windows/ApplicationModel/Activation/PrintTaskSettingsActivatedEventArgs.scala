@@ -5,16 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Activation.PrintTaskSettingsActivatedEventArgs")
-@js.native
-class PrintTaskSettingsActivatedEventArgs () extends IPrintTaskSettingsActivatedEventArgs {
-  /* CompleteClass */
-  override var configuration: PrintTaskConfiguration = js.native
-  /* CompleteClass */
-  override var kind: ActivationKind = js.native
-  /* CompleteClass */
-  override var previousExecutionState: ApplicationExecutionState = js.native
-  /* CompleteClass */
-  override var splashScreen: SplashScreen = js.native
+trait PrintTaskSettingsActivatedEventArgs extends IPrintTaskSettingsActivatedEventArgs
+
+object PrintTaskSettingsActivatedEventArgs {
+  @scala.inline
+  def apply(
+    configuration: PrintTaskConfiguration,
+    kind: ActivationKind,
+    previousExecutionState: ApplicationExecutionState,
+    splashScreen: SplashScreen
+  ): PrintTaskSettingsActivatedEventArgs = {
+    val __obj = js.Dynamic.literal(configuration = configuration.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PrintTaskSettingsActivatedEventArgs]
+  }
 }
 

@@ -4,12 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Knockback.LocalizedObservable")
-@js.native
-class LocalizedObservable protected () extends js.Object {
-  def this(value: js.Any, options: js.Any, vm: js.Any) = this()
-  def destroy(): js.Any = js.native
-  def observedValue(value: js.Any): js.Any = js.native
-  def resetToCurrent(): js.Any = js.native
+trait LocalizedObservable extends js.Object {
+  def destroy(): js.Any
+  def observedValue(value: js.Any): js.Any
+  def resetToCurrent(): js.Any
+}
+
+object LocalizedObservable {
+  @scala.inline
+  def apply(destroy: () => js.Any, observedValue: js.Any => js.Any, resetToCurrent: () => js.Any): LocalizedObservable = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), observedValue = js.Any.fromFunction1(observedValue), resetToCurrent = js.Any.fromFunction0(resetToCurrent))
+    __obj.asInstanceOf[LocalizedObservable]
+  }
 }
 

@@ -39,11 +39,11 @@ object ITeachingBubbleStyleProps {
   ): ITeachingBubbleStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     if (calloutProps != null) __obj.updateDynamic("calloutProps")(calloutProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasCloseButton)) __obj.updateDynamic("hasCloseButton")(hasCloseButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasCondensedHeadline)) __obj.updateDynamic("hasCondensedHeadline")(hasCondensedHeadline.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasHeadline)) __obj.updateDynamic("hasHeadline")(hasHeadline.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasSmallHeadline)) __obj.updateDynamic("hasSmallHeadline")(hasSmallHeadline.asInstanceOf[js.Any])
-    if (!js.isUndefined(isWide)) __obj.updateDynamic("isWide")(isWide.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasCloseButton)) __obj.updateDynamic("hasCloseButton")(hasCloseButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasCondensedHeadline)) __obj.updateDynamic("hasCondensedHeadline")(hasCondensedHeadline.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasHeadline)) __obj.updateDynamic("hasHeadline")(hasHeadline.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasSmallHeadline)) __obj.updateDynamic("hasSmallHeadline")(hasSmallHeadline.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isWide)) __obj.updateDynamic("isWide")(isWide.get.asInstanceOf[js.Any])
     if (primaryButtonClassName != null) __obj.updateDynamic("primaryButtonClassName")(primaryButtonClassName.asInstanceOf[js.Any])
     if (secondaryButtonClassName != null) __obj.updateDynamic("secondaryButtonClassName")(secondaryButtonClassName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITeachingBubbleStyleProps]

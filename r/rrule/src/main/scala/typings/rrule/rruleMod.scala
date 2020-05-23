@@ -1,5 +1,7 @@
 package typings.rrule
 
+import typings.rrule.anon.PartialIterArgs
+import typings.rrule.anon.PartialOptions
 import typings.rrule.cacheMod.Cache
 import typings.rrule.cacheMod.CacheKeys
 import typings.rrule.i18nMod.Language

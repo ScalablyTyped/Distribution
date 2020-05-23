@@ -12,7 +12,7 @@ trait Data
 
 object Data {
   @scala.inline
-  def apply(StringDictionary: /* propName */ StringDictionary[js.Any] = null, name: String = null): Data = {
+  def apply(StringDictionary: /* name */ StringDictionary[js.Any] = null, name: String = null): Data = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

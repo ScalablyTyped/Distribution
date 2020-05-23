@@ -15,7 +15,7 @@ object ExternalDocumentationObject {
   @scala.inline
   def apply(
     url: String,
-    StringDictionary: /* index */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     description: String = null
   ): ExternalDocumentationObject = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])

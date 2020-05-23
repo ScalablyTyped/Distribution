@@ -1,8 +1,8 @@
 package typings.swaggerNodeRunner.mod
 
 import typings.express.mod.NextFunction
-import typings.expressServeStaticCore.mod._Global_.Express.Request
-import typings.expressServeStaticCore.mod._Global_.Express.Response
+import typings.expressServeStaticCore.mod.global.Express.Request
+import typings.expressServeStaticCore.mod.global.Express.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

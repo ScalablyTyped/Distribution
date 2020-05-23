@@ -10,7 +10,7 @@ import typings.propTypes.mod.Requireable
 import typings.propTypes.mod.Validator
 import typings.react.mod.Context
 import typings.react.mod.FC
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,12 +1,12 @@
 package typings.braintree.mod
 
-import typings.braintree.AnonAddBillingAddressToPaymentMethod
-import typings.braintree.AnonCavv
-import typings.braintree.AnonCompany
-import typings.braintree.AnonCountryCodeNumeric
-import typings.braintree.AnonCvv
-import typings.braintree.AnonEmail
-import typings.braintree.AnonPreviousNetworkTransactionId
+import typings.braintree.anon.AddBillingAddressToPaymentMethod
+import typings.braintree.anon.Cavv
+import typings.braintree.anon.Company
+import typings.braintree.anon.CountryCodeNumeric
+import typings.braintree.anon.Cvv
+import typings.braintree.anon.Email
+import typings.braintree.anon.PreviousNetworkTransactionId
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,21 +14,21 @@ import scala.scalajs.js.annotation._
 
 trait TransactionRequest extends js.Object {
   var amount: String
-  var billing: js.UndefOr[AnonCountryCodeNumeric] = js.undefined
+  var billing: js.UndefOr[CountryCodeNumeric] = js.undefined
   var billingAddressId: js.UndefOr[String] = js.undefined
   var channel: js.UndefOr[String] = js.undefined
-  var creditCard: js.UndefOr[AnonCvv] = js.undefined
+  var creditCard: js.UndefOr[Cvv] = js.undefined
   var customFields: js.UndefOr[Record[String, _]] = js.undefined
-  var customer: js.UndefOr[AnonEmail] = js.undefined
+  var customer: js.UndefOr[Email] = js.undefined
   var customerId: js.UndefOr[String] = js.undefined
   var descriptor: js.UndefOr[Descriptor] = js.undefined
   var deviceData: js.UndefOr[String] = js.undefined
   var deviceSessionId: js.UndefOr[String] = js.undefined
   var discountAmount: js.UndefOr[String] = js.undefined
-  var externalVault: js.UndefOr[AnonPreviousNetworkTransactionId] = js.undefined
+  var externalVault: js.UndefOr[PreviousNetworkTransactionId] = js.undefined
   var lineItems: js.UndefOr[js.Array[TransactionLineItem]] = js.undefined
   var merchantAccountId: js.UndefOr[String] = js.undefined
-  var options: js.UndefOr[AnonAddBillingAddressToPaymentMethod] = js.undefined
+  var options: js.UndefOr[AddBillingAddressToPaymentMethod] = js.undefined
   var orderId: js.UndefOr[String] = js.undefined
   var paymentMethodNonce: js.UndefOr[String] = js.undefined
   var paymentMethodToken: js.UndefOr[String] = js.undefined
@@ -42,13 +42,13 @@ trait TransactionRequest extends js.Object {
   var sharedPaymentMethodNonce: js.UndefOr[String] = js.undefined
   var sharedPaymentMethodToken: js.UndefOr[String] = js.undefined
   var sharedShippingAddressId: js.UndefOr[String] = js.undefined
-  var shipping: js.UndefOr[AnonCompany] = js.undefined
+  var shipping: js.UndefOr[Company] = js.undefined
   var shippingAddressId: js.UndefOr[String] = js.undefined
   var shippingAmount: js.UndefOr[String] = js.undefined
   var shipsFromPostalCode: js.UndefOr[String] = js.undefined
   var taxAmount: js.UndefOr[String] = js.undefined
   var taxExempt: js.UndefOr[Boolean] = js.undefined
-  var threeDSecurePassThru: js.UndefOr[AnonCavv] = js.undefined
+  var threeDSecurePassThru: js.UndefOr[Cavv] = js.undefined
   var transactionSource: js.UndefOr[TransactionRequestSource] = js.undefined
 }
 
@@ -56,21 +56,21 @@ object TransactionRequest {
   @scala.inline
   def apply(
     amount: String,
-    billing: AnonCountryCodeNumeric = null,
+    billing: CountryCodeNumeric = null,
     billingAddressId: String = null,
     channel: String = null,
-    creditCard: AnonCvv = null,
+    creditCard: Cvv = null,
     customFields: Record[String, _] = null,
-    customer: AnonEmail = null,
+    customer: Email = null,
     customerId: String = null,
     descriptor: Descriptor = null,
     deviceData: String = null,
     deviceSessionId: String = null,
     discountAmount: String = null,
-    externalVault: AnonPreviousNetworkTransactionId = null,
+    externalVault: PreviousNetworkTransactionId = null,
     lineItems: js.Array[TransactionLineItem] = null,
     merchantAccountId: String = null,
-    options: AnonAddBillingAddressToPaymentMethod = null,
+    options: AddBillingAddressToPaymentMethod = null,
     orderId: String = null,
     paymentMethodNonce: String = null,
     paymentMethodToken: String = null,
@@ -83,13 +83,13 @@ object TransactionRequest {
     sharedPaymentMethodNonce: String = null,
     sharedPaymentMethodToken: String = null,
     sharedShippingAddressId: String = null,
-    shipping: AnonCompany = null,
+    shipping: Company = null,
     shippingAddressId: String = null,
     shippingAmount: String = null,
     shipsFromPostalCode: String = null,
     taxAmount: String = null,
     taxExempt: js.UndefOr[Boolean] = js.undefined,
-    threeDSecurePassThru: AnonCavv = null,
+    threeDSecurePassThru: Cavv = null,
     transactionSource: TransactionRequestSource = null
   ): TransactionRequest = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any])
@@ -112,7 +112,7 @@ object TransactionRequest {
     if (paymentMethodNonce != null) __obj.updateDynamic("paymentMethodNonce")(paymentMethodNonce.asInstanceOf[js.Any])
     if (paymentMethodToken != null) __obj.updateDynamic("paymentMethodToken")(paymentMethodToken.asInstanceOf[js.Any])
     if (purchaseOrderNumber != null) __obj.updateDynamic("purchaseOrderNumber")(purchaseOrderNumber.asInstanceOf[js.Any])
-    if (!js.isUndefined(recurring)) __obj.updateDynamic("recurring")(recurring.asInstanceOf[js.Any])
+    if (!js.isUndefined(recurring)) __obj.updateDynamic("recurring")(recurring.get.asInstanceOf[js.Any])
     if (riskData != null) __obj.updateDynamic("riskData")(riskData.asInstanceOf[js.Any])
     if (serviceFeeAmount != null) __obj.updateDynamic("serviceFeeAmount")(serviceFeeAmount.asInstanceOf[js.Any])
     if (sharedBillingAddressId != null) __obj.updateDynamic("sharedBillingAddressId")(sharedBillingAddressId.asInstanceOf[js.Any])
@@ -125,7 +125,7 @@ object TransactionRequest {
     if (shippingAmount != null) __obj.updateDynamic("shippingAmount")(shippingAmount.asInstanceOf[js.Any])
     if (shipsFromPostalCode != null) __obj.updateDynamic("shipsFromPostalCode")(shipsFromPostalCode.asInstanceOf[js.Any])
     if (taxAmount != null) __obj.updateDynamic("taxAmount")(taxAmount.asInstanceOf[js.Any])
-    if (!js.isUndefined(taxExempt)) __obj.updateDynamic("taxExempt")(taxExempt.asInstanceOf[js.Any])
+    if (!js.isUndefined(taxExempt)) __obj.updateDynamic("taxExempt")(taxExempt.get.asInstanceOf[js.Any])
     if (threeDSecurePassThru != null) __obj.updateDynamic("threeDSecurePassThru")(threeDSecurePassThru.asInstanceOf[js.Any])
     if (transactionSource != null) __obj.updateDynamic("transactionSource")(transactionSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionRequest]

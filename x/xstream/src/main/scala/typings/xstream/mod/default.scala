@@ -2,7 +2,7 @@ package typings.xstream.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.xstream.AnonSubscribe
+import typings.xstream.anon.Subscribe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -512,7 +512,7 @@ object default
     * @param {any} observable The observable to be converted as a stream.
     * @return {Stream}
     */
-  def fromObservable[T](obs: AnonSubscribe): Stream[T] = js.native
+  def fromObservable[T](obs: Subscribe): Stream[T] = js.native
   /**
     * Converts a promise to a stream. The returned stream will emit the resolved
     * value of the promise, and then complete. However, if the promise is

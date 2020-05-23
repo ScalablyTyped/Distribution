@@ -22,9 +22,6 @@ trait IDate
   var disabledDaysText: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
   var format: js.UndefOr[String] = js.undefined
-  /** [Method] Initializes the field s value based on the initial config  */
-  @JSName("initValue")
-  var initValue_IDate: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (String) */
   var maxText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Date/String) */
@@ -36,25 +33,25 @@ trait IDate
   /** [Method] Attempts to parse a given string value using a given date format. ... */
   var safeParse: js.UndefOr[js.Any] = js.undefined
   /** [Method] Replaces any existing disabled dates with new values and refreshes the Date picker
-  		* @param disabledDates String[] An array of date strings (see the disabledDates config for details on supported values) used to disable a pattern of dates.
-  		*/
+    * @param disabledDates String[] An array of date strings (see the disabledDates config for details on supported values) used to disable a pattern of dates.
+    */
   var setDisabledDates: js.UndefOr[js.Function1[/* disabledDates */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Replaces any existing disabled days by index 0 6 with new values and refreshes the Date picker
-  		* @param disabledDays Number[] An array of disabled day indexes. See the disabledDays config for details on supported values.
-  		*/
+    * @param disabledDays Number[] An array of disabled day indexes. See the disabledDays config for details on supported values.
+    */
   var setDisabledDays: js.UndefOr[js.Function1[/* disabledDays */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Replaces any existing maxValue with the new value and refreshes the Date picker
-  		* @param value Date The maximum date that can be selected
-  		*/
+    * @param value Date The maximum date that can be selected
+    */
   var setMaxValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Replaces any existing minValue with the new value and refreshes the Date picker
-  		* @param value Date The minimum date that can be selected
-  		*/
+    * @param value Date The minimum date that can be selected
+    */
   var setMinValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of the date field
-  		* @param date String/Date The date or valid date string
-  		* @returns Ext.form.field.Date this
-  		*/
+    * @param date String/Date The date or valid date string
+    * @returns Ext.form.field.Date this
+    */
   @JSName("setValue")
   var setValue_IDate: js.UndefOr[js.Function1[/* date */ js.UndefOr[js.Any], this.type]] = js.undefined
   /** [Config Option] (Boolean) */
@@ -78,7 +75,6 @@ object IDate {
     disabledDays: Array = null,
     disabledDaysText: String = null,
     format: String = null,
-    initValue: () => Unit = null,
     maxText: String = null,
     maxValue: js.Any = null,
     minText: String = null,
@@ -90,7 +86,7 @@ object IDate {
     setMinValue: /* value */ js.UndefOr[js.Any] => Unit = null,
     setValue: /* date */ js.UndefOr[js.Any] => IDate = null,
     showToday: js.UndefOr[Boolean] = js.undefined,
-    startDay: Int | Double = null,
+    startDay: js.UndefOr[Double] = js.undefined,
     submitFormat: String = null,
     useStrict: js.UndefOr[Boolean] = js.undefined
   ): IDate = {
@@ -103,7 +99,6 @@ object IDate {
     if (disabledDays != null) __obj.updateDynamic("disabledDays")(disabledDays.asInstanceOf[js.Any])
     if (disabledDaysText != null) __obj.updateDynamic("disabledDaysText")(disabledDaysText.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (initValue != null) __obj.updateDynamic("initValue")(js.Any.fromFunction0(initValue))
     if (maxText != null) __obj.updateDynamic("maxText")(maxText.asInstanceOf[js.Any])
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minText != null) __obj.updateDynamic("minText")(minText.asInstanceOf[js.Any])
@@ -114,10 +109,10 @@ object IDate {
     if (setMaxValue != null) __obj.updateDynamic("setMaxValue")(js.Any.fromFunction1(setMaxValue))
     if (setMinValue != null) __obj.updateDynamic("setMinValue")(js.Any.fromFunction1(setMinValue))
     if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
-    if (!js.isUndefined(showToday)) __obj.updateDynamic("showToday")(showToday.asInstanceOf[js.Any])
-    if (startDay != null) __obj.updateDynamic("startDay")(startDay.asInstanceOf[js.Any])
+    if (!js.isUndefined(showToday)) __obj.updateDynamic("showToday")(showToday.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startDay)) __obj.updateDynamic("startDay")(startDay.get.asInstanceOf[js.Any])
     if (submitFormat != null) __obj.updateDynamic("submitFormat")(submitFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(useStrict)) __obj.updateDynamic("useStrict")(useStrict.asInstanceOf[js.Any])
+    if (!js.isUndefined(useStrict)) __obj.updateDynamic("useStrict")(useStrict.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDate]
   }
 }

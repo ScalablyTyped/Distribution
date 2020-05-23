@@ -46,7 +46,7 @@ object VanillaModalConfig {
   ): VanillaModalConfig = {
     val __obj = js.Dynamic.literal()
     if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickOutside)) __obj.updateDynamic("clickOutside")(clickOutside.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickOutside)) __obj.updateDynamic("clickOutside")(clickOutside.get.asInstanceOf[js.Any])
     if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
     if (closeKeys != null) __obj.updateDynamic("closeKeys")(closeKeys.asInstanceOf[js.Any])
     if (loadClass != null) __obj.updateDynamic("loadClass")(loadClass.asInstanceOf[js.Any])

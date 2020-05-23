@@ -18,11 +18,11 @@ object ScatterplotData {
     `type`: String | Double,
     x: Double | Date | String,
     y: Double | Date | String,
-    z: Int | Double = null
+    z: js.UndefOr[Double] = js.undefined
   ): ScatterplotData = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScatterplotData]
   }
 }

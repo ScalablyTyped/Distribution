@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait PivotTableUpdateData extends js.Object {
   /**
     *
-    * Specifies whether the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
+    * Specifies if the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -16,7 +16,7 @@ trait PivotTableUpdateData extends js.Object {
   var allowMultipleFiltersPerField: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Specifies whether the PivotTable allows values in the data body to be edited by the user.
+    * Specifies if the PivotTable allows values in the data body to be edited by the user.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -30,7 +30,7 @@ trait PivotTableUpdateData extends js.Object {
   var name: js.UndefOr[String] = js.undefined
   /**
     *
-    * Specifies whether the PivotTable uses custom lists when sorting.
+    * Specifies if the PivotTable uses custom lists when sorting.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -46,10 +46,10 @@ object PivotTableUpdateData {
     useCustomSortLists: js.UndefOr[Boolean] = js.undefined
   ): PivotTableUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowMultipleFiltersPerField)) __obj.updateDynamic("allowMultipleFiltersPerField")(allowMultipleFiltersPerField.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableDataValueEditing)) __obj.updateDynamic("enableDataValueEditing")(enableDataValueEditing.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMultipleFiltersPerField)) __obj.updateDynamic("allowMultipleFiltersPerField")(allowMultipleFiltersPerField.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableDataValueEditing)) __obj.updateDynamic("enableDataValueEditing")(enableDataValueEditing.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCustomSortLists)) __obj.updateDynamic("useCustomSortLists")(useCustomSortLists.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCustomSortLists)) __obj.updateDynamic("useCustomSortLists")(useCustomSortLists.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotTableUpdateData]
   }
 }

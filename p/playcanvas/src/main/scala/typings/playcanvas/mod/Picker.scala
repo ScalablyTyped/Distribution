@@ -5,16 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @class
-  * @name pc.Picker
-  * @classdesc Picker object used to select mesh instances from screen coordinates.
-  * @description Create a new instance of a Picker object.
-  * @param {pc.Application} app - The application managing this picker instance.
-  * @param {number} width - The width of the pick buffer in pixels.
-  * @param {number} height - The height of the pick buffer in pixels.
-  * @property {number} width Width of the pick buffer in pixels (read-only).
-  * @property {number} height Height of the pick buffer in pixels (read-only).
-  * @property {pc.RenderTarget} renderTarget The render target used by the picker internally (read-only).
+  * Create a new instance of a Picker object.
+  * @property width - Width of the pick buffer in pixels (read-only).
+  * @property height - Height of the pick buffer in pixels (read-only).
+  * @property renderTarget - The render target used by the picker internally (read-only).
+  * @param app - The application managing this picker instance.
+  * @param width - The width of the pick buffer in pixels.
+  * @param height - The height of the pick buffer in pixels.
   */
 @JSImport("playcanvas", "Picker")
 @js.native

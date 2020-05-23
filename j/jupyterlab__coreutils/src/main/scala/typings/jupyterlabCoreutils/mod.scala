@@ -2,7 +2,8 @@ package typings.jupyterlabCoreutils
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.jupyterlabCoreutils.activitymonitorMod.ActivityMonitor.IOptions
-import typings.jupyterlabCoreutils.jupyterlabCoreutilsStrings.GraveaccentGraveaccentGraveaccent
+import typings.jupyterlabCoreutils.anon.Download
+import typings.jupyterlabCoreutils.anon.Raw
 import typings.jupyterlabCoreutils.urlMod.URLExt.IUrl
 import typings.luminoCoreutils.jsonMod.PartialJSONObject
 import typings.std.Date
@@ -30,7 +31,7 @@ object mod extends js.Object {
       def this(startLine: Double) = this()
     }
     
-    val CODE_BLOCK_MARKER: GraveaccentGraveaccentGraveaccent = js.native
+    val CODE_BLOCK_MARKER: /* "```" */ String = js.native
     /**
       * Construct all code snippets from current text
       * (this could be potentially optimized if we can cache and detect differences)
@@ -60,7 +61,7 @@ object mod extends js.Object {
       * Returns the URL converting this notebook to a certain
       * format with nbconvert.
       */
-    def getNBConvertURL(hasPathFormatDownload: AnonDownload): String = js.native
+    def getNBConvertURL(hasPathFormatDownload: Download): String = js.native
     /**
       * Get the Notebook version info [major, minor, patch].
       */
@@ -124,11 +125,11 @@ object mod extends js.Object {
       /**
         * The collection of deferred extensions in page config.
         */
-      val deferred: js.Array[AnonRaw] = js.native
+      val deferred: js.Array[Raw] = js.native
       /**
         * The collection of disabled extensions in page config.
         */
-      val disabled: js.Array[AnonRaw] = js.native
+      val disabled: js.Array[Raw] = js.native
       /**
         * Returns whether a plugin is deferred.
         *

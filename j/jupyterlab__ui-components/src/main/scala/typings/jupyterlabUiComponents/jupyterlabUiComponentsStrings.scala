@@ -36,12 +36,6 @@ object jupyterlabUiComponentsStrings {
   sealed trait div extends js.Object
   
   @js.native
-  sealed trait `jp-DefaultStyle` extends js.Object
-  
-  @js.native
-  sealed trait `jp-HTMLSelect` extends js.Object
-  
-  @js.native
   sealed trait large extends ISize
   
   @js.native
@@ -134,10 +128,6 @@ object jupyterlabUiComponentsStrings {
   def commandPaletteItem: commandPaletteItem = "commandPaletteItem".asInstanceOf[commandPaletteItem]
   @scala.inline
   def div: div = "div".asInstanceOf[div]
-  @scala.inline
-  def `jp-DefaultStyle`: `jp-DefaultStyle` = "jp-DefaultStyle".asInstanceOf[`jp-DefaultStyle`]
-  @scala.inline
-  def `jp-HTMLSelect`: `jp-HTMLSelect` = "jp-HTMLSelect".asInstanceOf[`jp-HTMLSelect`]
   @scala.inline
   def large: large = "large".asInstanceOf[large]
   @scala.inline

@@ -1,21 +1,12 @@
 package typings.easeljs.createjs
 
-import typings.easeljs.AnonRotation
+import typings.easeljs.anon.Rotation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("createjs.Matrix2D")
 @js.native
-class Matrix2D protected () extends js.Object {
-  def this(
-    a: js.UndefOr[Double],
-    b: js.UndefOr[Double],
-    c: js.UndefOr[Double],
-    d: js.UndefOr[Double],
-    tx: js.UndefOr[Double],
-    ty: js.UndefOr[Double]
-  ) = this()
+trait Matrix2D extends js.Object {
   // properties
   var a: Double = js.native
   var b: Double = js.native
@@ -57,7 +48,7 @@ class Matrix2D protected () extends js.Object {
     regY: Double
   ): Matrix2D = js.native
   def copy(matrix: Matrix2D): Matrix2D = js.native
-  def decompose(): AnonRotation = js.native
+  def decompose(): Rotation = js.native
   def decompose(target: js.Object): Matrix2D = js.native
   def equals(matrix: Matrix2D): Boolean = js.native
   def identity(): Matrix2D = js.native
@@ -110,13 +101,5 @@ class Matrix2D protected () extends js.Object {
   def transformPoint(x: Double, y: Double, pt: js.Object): Point = js.native
   def transformPoint(x: Double, y: Double, pt: Point): Point = js.native
   def translate(x: Double, y: Double): Matrix2D = js.native
-}
-
-/* static members */
-@JSGlobal("createjs.Matrix2D")
-@js.native
-object Matrix2D extends js.Object {
-  var DEG_TO_RAD: Double = js.native
-  var identity: Matrix2D = js.native
 }
 

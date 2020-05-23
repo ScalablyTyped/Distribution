@@ -7,40 +7,40 @@ import scala.scalajs.js.annotation._
 
 trait AccountProvider extends js.Object {
   /**
-  		 * Called from the account management service when the user has cancelled an auto OAuth
-  		 * authorization process. Implementations should use this to cancel any polling process
-  		 * and call the end OAuth method.
-  		 */
+    * Called from the account management service when the user has cancelled an auto OAuth
+    * authorization process. Implementations should use this to cancel any polling process
+    * and call the end OAuth method.
+    */
   def autoOAuthCancelled(): Thenable[Unit]
   /**
-  		 * Clears sensitive information for an account. To be called when account is removed
-  		 * @param accountKey - Key that uniquely identifies the account to clear
-  		 */
+    * Clears sensitive information for an account. To be called when account is removed
+    * @param accountKey - Key that uniquely identifies the account to clear
+    */
   def clear(accountKey: AccountKey): Thenable[Unit]
   /**
-  		 * Generates a security token for the provided account
-  		 * @param account The account to generate a security token for
-  		 * @param resource The resource to get the token for
-  		 * @return Promise to return a security token object
-  		 */
+    * Generates a security token for the provided account
+    * @param account The account to generate a security token for
+    * @param resource The resource to get the token for
+    * @return Promise to return a security token object
+    */
   def getSecurityToken(account: Account, resource: AzureResource): Thenable[js.Object]
   /**
-  		 * Initializes the account provider with the accounts restored from the memento,
-  		 * @param storedAccounts Accounts restored from the memento
-  		 * @return Account objects after being rehydrated (if necessary)
-  		 */
+    * Initializes the account provider with the accounts restored from the memento,
+    * @param storedAccounts Accounts restored from the memento
+    * @return Account objects after being rehydrated (if necessary)
+    */
   def initialize(storedAccounts: js.Array[Account]): Thenable[js.Array[Account]]
   /**
-  		 * Prompts the user to enter account information.
-  		 * Returns an error if the user canceled the operation.
-  		 */
+    * Prompts the user to enter account information.
+    * Returns an error if the user canceled the operation.
+    */
   def prompt(): Thenable[Account | PromptFailedResult]
   /**
-  		 * Refreshes a stale account.
-  		 * Returns an error if the user canceled the operation.
-  		 * Otherwise, returns a new updated account instance.
-  		 * @param account - An account.
-  		 */
+    * Refreshes a stale account.
+    * Returns an error if the user canceled the operation.
+    * Otherwise, returns a new updated account instance.
+    * @param account - An account.
+    */
   def refresh(account: Account): Thenable[Account | PromptFailedResult]
 }
 

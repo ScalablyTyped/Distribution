@@ -22,15 +22,15 @@ object ServoGeneralOption {
     controller: String = null,
     isInverted: js.UndefOr[Boolean] = js.undefined,
     range: js.Array[Double] = null,
-    startAt: Int | Double = null,
+    startAt: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): ServoGeneralOption = {
     val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
-    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.get.asInstanceOf[js.Any])
     if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInverted)) __obj.updateDynamic("isInverted")(isInverted.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInverted)) __obj.updateDynamic("isInverted")(isInverted.get.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (startAt != null) __obj.updateDynamic("startAt")(startAt.asInstanceOf[js.Any])
+    if (!js.isUndefined(startAt)) __obj.updateDynamic("startAt")(startAt.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServoGeneralOption]
   }

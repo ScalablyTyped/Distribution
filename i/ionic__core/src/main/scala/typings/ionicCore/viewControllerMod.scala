@@ -1,8 +1,5 @@
 package typings.ionicCore
 
-import typings.ionicCore.ionicCoreNumbers.`1`
-import typings.ionicCore.ionicCoreNumbers.`2`
-import typings.ionicCore.ionicCoreNumbers.`3`
 import typings.ionicCore.mod.ComponentProps
 import typings.ionicCore.mod.FrameworkDelegate
 import typings.std.HTMLElement
@@ -30,15 +27,13 @@ object viewControllerMod extends js.Object {
     def init(container: HTMLElement): js.Promise[Unit] = js.native
   }
   
-  val VIEW_STATE_ATTACHED: `2` = js.native
-  val VIEW_STATE_DESTROYED: `3` = js.native
-  val VIEW_STATE_NEW: `1` = js.native
+  val VIEW_STATE_ATTACHED: /* 2 */ Double = js.native
+  val VIEW_STATE_DESTROYED: /* 3 */ Double = js.native
+  val VIEW_STATE_NEW: /* 1 */ Double = js.native
   def convertToView(page: js.Any): ViewController | Null = js.native
   def convertToView(page: js.Any, params: ComponentProps[Null]): ViewController | Null = js.native
   def convertToViews(pages: js.Array[_]): js.Array[ViewController] = js.native
-  def matches(view: js.UndefOr[scala.Nothing], id: String): /* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean = js.native
-  def matches(view: js.UndefOr[scala.Nothing], id: String, params: ComponentProps[Null]): /* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean = js.native
-  def matches(view: ViewController, id: String): /* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean = js.native
-  def matches(view: ViewController, id: String, params: ComponentProps[Null]): /* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean = js.native
+  def matches(view: js.UndefOr[ViewController], id: String): /* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean = js.native
+  def matches(view: js.UndefOr[ViewController], id: String, params: ComponentProps[Null]): /* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean = js.native
 }
 

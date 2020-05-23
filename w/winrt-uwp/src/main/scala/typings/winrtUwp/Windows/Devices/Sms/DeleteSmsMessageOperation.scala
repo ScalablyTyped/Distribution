@@ -9,9 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Enables start, track, and end an asynchronous message delete operation for a single message. */
-@JSGlobal("Windows.Devices.Sms.DeleteSmsMessageOperation")
 @js.native
-abstract class DeleteSmsMessageOperation () extends js.Object {
+trait DeleteSmsMessageOperation extends js.Object {
   /** Specifies whether the asynchronous SMS message delete operation has completed or not. */
   @JSName("completed")
   var completed_Original: AsyncActionCompletedHandler = js.native

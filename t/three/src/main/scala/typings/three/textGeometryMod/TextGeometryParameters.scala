@@ -21,25 +21,25 @@ object TextGeometryParameters {
   @scala.inline
   def apply(
     bevelEnabled: js.UndefOr[Boolean] = js.undefined,
-    bevelOffset: Int | Double = null,
-    bevelSegments: Int | Double = null,
-    bevelSize: Int | Double = null,
-    bevelThickness: Int | Double = null,
-    curveSegments: Int | Double = null,
+    bevelOffset: js.UndefOr[Double] = js.undefined,
+    bevelSegments: js.UndefOr[Double] = js.undefined,
+    bevelSize: js.UndefOr[Double] = js.undefined,
+    bevelThickness: js.UndefOr[Double] = js.undefined,
+    curveSegments: js.UndefOr[Double] = js.undefined,
     font: Font = null,
-    height: Int | Double = null,
-    size: Int | Double = null
+    height: js.UndefOr[Double] = js.undefined,
+    size: js.UndefOr[Double] = js.undefined
   ): TextGeometryParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bevelEnabled)) __obj.updateDynamic("bevelEnabled")(bevelEnabled.asInstanceOf[js.Any])
-    if (bevelOffset != null) __obj.updateDynamic("bevelOffset")(bevelOffset.asInstanceOf[js.Any])
-    if (bevelSegments != null) __obj.updateDynamic("bevelSegments")(bevelSegments.asInstanceOf[js.Any])
-    if (bevelSize != null) __obj.updateDynamic("bevelSize")(bevelSize.asInstanceOf[js.Any])
-    if (bevelThickness != null) __obj.updateDynamic("bevelThickness")(bevelThickness.asInstanceOf[js.Any])
-    if (curveSegments != null) __obj.updateDynamic("curveSegments")(curveSegments.asInstanceOf[js.Any])
+    if (!js.isUndefined(bevelEnabled)) __obj.updateDynamic("bevelEnabled")(bevelEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bevelOffset)) __obj.updateDynamic("bevelOffset")(bevelOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bevelSegments)) __obj.updateDynamic("bevelSegments")(bevelSegments.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bevelSize)) __obj.updateDynamic("bevelSize")(bevelSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bevelThickness)) __obj.updateDynamic("bevelThickness")(bevelThickness.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(curveSegments)) __obj.updateDynamic("curveSegments")(curveSegments.get.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextGeometryParameters]
   }
 }

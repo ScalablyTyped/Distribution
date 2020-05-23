@@ -25,7 +25,7 @@ object IDocumentCardActivityStyleProps {
   def apply(theme: ITheme, className: String = null, multiplePeople: js.UndefOr[Boolean] = js.undefined): IDocumentCardActivityStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiplePeople)) __obj.updateDynamic("multiplePeople")(multiplePeople.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiplePeople)) __obj.updateDynamic("multiplePeople")(multiplePeople.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDocumentCardActivityStyleProps]
   }
 }

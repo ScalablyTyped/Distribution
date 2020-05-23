@@ -4,19 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.m.MultiInput")
 @js.native
-class MultiInput protected () extends Input {
-  /**
-    * Constructor for a new MultiInput.Accepts an object literal <code>mSettings</code> that defines
-    * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
-    * sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the settings
-    * object.
-    * @param sId id for the new control, generated automatically if no id is given
-    * @param mSettings initial settings for the new control
-    */
-  def this(sId: String) = this()
-  def this(sId: String, mSettings: js.Any) = this()
+trait MultiInput extends Input {
   /**
     * Adds some token to the aggregation <code>tokens</code>.
     * @param oToken the token to add; if empty, nothing is inserted
@@ -66,7 +55,7 @@ class MultiInput protected () extends Input {
     * Fires event <code>tokenChange</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>type</code> of type <code>string</code>Type of tokenChange event.There are
     * four TokenChange types: "added", "removed", "removedAll", "tokensChanged".Use
-    * Tokenizer.TokenChangeType.Added for "added",	Tokenizer.TokenChangeType.Removed for "removed",
+    * Tokenizer.TokenChangeType.Added for "added",    Tokenizer.TokenChangeType.Removed for "removed",
     * Tokenizer.TokenChangeType.RemovedAll for "removedAll" and Tokenizer.TokenChangeType.TokensChanged
     * for "tokensChanged".</li><li><code>token</code> of type <code>sap.m.Token</code>The added token or
     * removed token.This parameter is used when tokenChange type is "added" or

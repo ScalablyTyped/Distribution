@@ -26,11 +26,10 @@ object ojTagCloudItemSettableProperties {
     svgStyle: js.Object,
     url: String,
     color: String = null,
-    value: Int | Double = null
+    value: Double = null.asInstanceOf[Double]
   ): ojTagCloudItemSettableProperties = {
-    val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], shortDesc = shortDesc.asInstanceOf[js.Any], svgClassName = svgClassName.asInstanceOf[js.Any], svgStyle = svgStyle.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], shortDesc = shortDesc.asInstanceOf[js.Any], svgClassName = svgClassName.asInstanceOf[js.Any], svgStyle = svgStyle.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojTagCloudItemSettableProperties]
   }
 }

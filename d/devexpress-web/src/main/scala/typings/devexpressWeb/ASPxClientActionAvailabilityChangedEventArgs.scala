@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientDashboard.ActionAvailabilityChanged event.
   */
-@JSGlobal("ASPxClientActionAvailabilityChangedEventArgs")
-@js.native
-class ASPxClientActionAvailabilityChangedEventArgs () extends ASPxClientEventArgs {
+trait ASPxClientActionAvailabilityChangedEventArgs extends ASPxClientEventArgs {
   /**
     * Gets the component name of the dashboard item.
     */
-  var ItemName: String = js.native
+  var ItemName: String
+}
+
+object ASPxClientActionAvailabilityChangedEventArgs {
+  @scala.inline
+  def apply(ItemName: String): ASPxClientActionAvailabilityChangedEventArgs = {
+    val __obj = js.Dynamic.literal(ItemName = ItemName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientActionAvailabilityChangedEventArgs]
+  }
 }
 

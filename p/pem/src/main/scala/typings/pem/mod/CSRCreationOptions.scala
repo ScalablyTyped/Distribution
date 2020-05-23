@@ -67,7 +67,7 @@ object CSRCreationOptions {
     csrConfigFile: String = null,
     emailAddress: String = null,
     hash: HashFunction = null,
-    keyBitsize: Int | Double = null,
+    keyBitsize: js.UndefOr[Double] = js.undefined,
     locality: String = null,
     organization: String = null,
     organizationUnit: String = null,
@@ -82,7 +82,7 @@ object CSRCreationOptions {
     if (csrConfigFile != null) __obj.updateDynamic("csrConfigFile")(csrConfigFile.asInstanceOf[js.Any])
     if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
     if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    if (keyBitsize != null) __obj.updateDynamic("keyBitsize")(keyBitsize.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyBitsize)) __obj.updateDynamic("keyBitsize")(keyBitsize.get.asInstanceOf[js.Any])
     if (locality != null) __obj.updateDynamic("locality")(locality.asInstanceOf[js.Any])
     if (organization != null) __obj.updateDynamic("organization")(organization.asInstanceOf[js.Any])
     if (organizationUnit != null) __obj.updateDynamic("organizationUnit")(organizationUnit.asInstanceOf[js.Any])

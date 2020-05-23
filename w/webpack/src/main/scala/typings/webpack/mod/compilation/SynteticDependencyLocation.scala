@@ -11,9 +11,9 @@ trait SynteticDependencyLocation extends DependencyLocation {
 
 object SynteticDependencyLocation {
   @scala.inline
-  def apply(name: String, index: Int | Double = null): SynteticDependencyLocation = {
+  def apply(name: String, index: js.UndefOr[Double] = js.undefined): SynteticDependencyLocation = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SynteticDependencyLocation]
   }
 }

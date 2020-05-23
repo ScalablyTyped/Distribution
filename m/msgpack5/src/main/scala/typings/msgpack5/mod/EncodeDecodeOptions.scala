@@ -12,7 +12,7 @@ object EncodeDecodeOptions {
   @scala.inline
   def apply(header: js.UndefOr[Boolean] = js.undefined): EncodeDecodeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncodeDecodeOptions]
   }
 }

@@ -1,19 +1,19 @@
 package typings.gapiClientBlogger.gapi.client.blogger
 
-import typings.gapiClientBlogger.AnonDisplayName
-import typings.gapiClientBlogger.AnonId
-import typings.gapiClientBlogger.AnonLat
-import typings.gapiClientBlogger.AnonTotalItems
-import typings.gapiClientBlogger.AnonUrl
+import typings.gapiClientBlogger.anon.DisplayName
+import typings.gapiClientBlogger.anon.Id
+import typings.gapiClientBlogger.anon.Lat
+import typings.gapiClientBlogger.anon.TotalItems
+import typings.gapiClientBlogger.anon.Url
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Post extends js.Object {
   /** The author of this Post. */
-  var author: js.UndefOr[AnonDisplayName] = js.undefined
+  var author: js.UndefOr[DisplayName] = js.undefined
   /** Data about the blog containing this Post. */
-  var blog: js.UndefOr[AnonId] = js.undefined
+  var blog: js.UndefOr[Id] = js.undefined
   /** The content of the Post. May contain HTML markup. */
   var content: js.UndefOr[String] = js.undefined
   /** The JSON meta-data for the Post. */
@@ -23,19 +23,19 @@ trait Post extends js.Object {
   /** The identifier of this Post. */
   var id: js.UndefOr[String] = js.undefined
   /** Display image for the Post. */
-  var images: js.UndefOr[js.Array[AnonUrl]] = js.undefined
+  var images: js.UndefOr[js.Array[Url]] = js.undefined
   /** The kind of this entity. Always blogger#post */
   var kind: js.UndefOr[String] = js.undefined
   /** The list of labels this Post was tagged with. */
   var labels: js.UndefOr[js.Array[String]] = js.undefined
   /** The location for geotagged posts. */
-  var location: js.UndefOr[AnonLat] = js.undefined
+  var location: js.UndefOr[Lat] = js.undefined
   /** RFC 3339 date-time when this Post was published. */
   var published: js.UndefOr[String] = js.undefined
   /** Comment control and display setting for readers of this post. */
   var readerComments: js.UndefOr[String] = js.undefined
   /** The container of comments on this Post. */
-  var replies: js.UndefOr[AnonTotalItems] = js.undefined
+  var replies: js.UndefOr[TotalItems] = js.undefined
   /** The API REST URL to fetch this resource from. */
   var selfLink: js.UndefOr[String] = js.undefined
   /** Status of the post. Only set for admin-level requests */
@@ -53,19 +53,19 @@ trait Post extends js.Object {
 object Post {
   @scala.inline
   def apply(
-    author: AnonDisplayName = null,
-    blog: AnonId = null,
+    author: DisplayName = null,
+    blog: Id = null,
     content: String = null,
     customMetaData: String = null,
     etag: String = null,
     id: String = null,
-    images: js.Array[AnonUrl] = null,
+    images: js.Array[Url] = null,
     kind: String = null,
     labels: js.Array[String] = null,
-    location: AnonLat = null,
+    location: Lat = null,
     published: String = null,
     readerComments: String = null,
-    replies: AnonTotalItems = null,
+    replies: TotalItems = null,
     selfLink: String = null,
     status: String = null,
     title: String = null,

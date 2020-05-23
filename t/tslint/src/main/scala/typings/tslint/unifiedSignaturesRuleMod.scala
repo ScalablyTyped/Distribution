@@ -21,8 +21,7 @@ object unifiedSignaturesRuleMod extends js.Object {
     def FAILURE_STRING_OMITTING_REST_PARAMETER(otherLine: Double): String = js.native
     def FAILURE_STRING_OMITTING_SINGLE_PARAMETER(): String = js.native
     def FAILURE_STRING_OMITTING_SINGLE_PARAMETER(otherLine: Double): String = js.native
-    def FAILURE_STRING_SINGLE_PARAMETER_DIFFERENCE(otherLine: js.UndefOr[scala.Nothing], type1: String, type2: String): String = js.native
-    def FAILURE_STRING_SINGLE_PARAMETER_DIFFERENCE(otherLine: Double, type1: String, type2: String): String = js.native
+    def FAILURE_STRING_SINGLE_PARAMETER_DIFFERENCE(otherLine: js.UndefOr[Double], type1: String, type2: String): String = js.native
   }
   
 }

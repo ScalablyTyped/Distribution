@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "z-schema" : "4.2.2"
+      "z-schema" : "4.2.3"
     }
   ],
   "test-dependencies" : [
     {
-      "z-schema" : "4.2.2"
+      "z-schema" : "4.2.3"
     }
   ],
   "compile-devDependencies" : [

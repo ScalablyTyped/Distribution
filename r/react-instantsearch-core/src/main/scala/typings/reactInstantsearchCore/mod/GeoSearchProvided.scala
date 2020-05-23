@@ -1,6 +1,6 @@
 package typings.reactInstantsearchCore.mod
 
-import typings.reactInstantsearchCore.AnonLat
+import typings.reactInstantsearchCore.anon.Lat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait GeoSearchProvided[THit] extends js.Object {
   /** true if the current refinement is set with the map bounds */
   var isRefinedWithMap: Boolean
   /** the position of the search */
-  var position: AnonLat
+  var position: Lat
   /** a function to generate a URL for the corresponding search state */
   def createURL(args: js.Any*): js.Any
   /** a function to toggle the refinement */
@@ -27,7 +27,7 @@ object GeoSearchProvided {
     currentRefinement: NESW,
     hits: js.Array[THit],
     isRefinedWithMap: Boolean,
-    position: AnonLat,
+    position: Lat,
     refine: NESW => Unit
   ): GeoSearchProvided[THit] = {
     val __obj = js.Dynamic.literal(createURL = js.Any.fromFunction1(createURL), currentRefinement = currentRefinement.asInstanceOf[js.Any], hits = hits.asInstanceOf[js.Any], isRefinedWithMap = isRefinedWithMap.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], refine = js.Any.fromFunction1(refine))

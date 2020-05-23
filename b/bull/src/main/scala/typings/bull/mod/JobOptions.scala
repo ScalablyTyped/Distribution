@@ -65,30 +65,30 @@ trait JobOptions extends js.Object {
 object JobOptions {
   @scala.inline
   def apply(
-    attempts: Int | Double = null,
+    attempts: js.UndefOr[Double] = js.undefined,
     backoff: Double | BackoffOptions = null,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     jobId: JobId = null,
     lifo: js.UndefOr[Boolean] = js.undefined,
-    priority: Int | Double = null,
+    priority: js.UndefOr[Double] = js.undefined,
     removeOnComplete: Boolean | Double = null,
     removeOnFail: Boolean | Double = null,
     repeat: CronRepeatOptions | EveryRepeatOptions = null,
-    stackTraceLimit: Int | Double = null,
-    timeout: Int | Double = null
+    stackTraceLimit: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined
   ): JobOptions = {
     val __obj = js.Dynamic.literal()
-    if (attempts != null) __obj.updateDynamic("attempts")(attempts.asInstanceOf[js.Any])
+    if (!js.isUndefined(attempts)) __obj.updateDynamic("attempts")(attempts.get.asInstanceOf[js.Any])
     if (backoff != null) __obj.updateDynamic("backoff")(backoff.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
-    if (!js.isUndefined(lifo)) __obj.updateDynamic("lifo")(lifo.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(lifo)) __obj.updateDynamic("lifo")(lifo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     if (removeOnComplete != null) __obj.updateDynamic("removeOnComplete")(removeOnComplete.asInstanceOf[js.Any])
     if (removeOnFail != null) __obj.updateDynamic("removeOnFail")(removeOnFail.asInstanceOf[js.Any])
     if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
-    if (stackTraceLimit != null) __obj.updateDynamic("stackTraceLimit")(stackTraceLimit.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(stackTraceLimit)) __obj.updateDynamic("stackTraceLimit")(stackTraceLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobOptions]
   }
 }

@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,14 +29,6 @@ object SortBy extends js.Object {
     */
   @js.native
   sealed trait descending extends SortBy
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[SortBy with String] = js.native
-  /* "Ascending" */ @js.native
-  object ascending extends TopLevel[ascending with String]
-  
-  /* "Descending" */ @js.native
-  object descending extends TopLevel[descending with String]
   
 }
 

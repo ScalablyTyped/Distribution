@@ -12,11 +12,11 @@ trait IDiscrete extends ILayout {
   @JSName("processData")
   var processData_IDiscrete: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Snaps the data bound to the axis to meaningful tick marks
-  		* @param context Object
-  		* @param min Object
-  		* @param max Object
-  		* @param estStepSize Object
-  		*/
+    * @param context Object
+    * @param min Object
+    * @param max Object
+    * @param estStepSize Object
+    */
   @JSName("snapEnds")
   var snapEnds_IDiscrete: js.UndefOr[
     js.Function4[
@@ -28,11 +28,11 @@ trait IDiscrete extends ILayout {
     ]
   ] = js.undefined
   /** [Method] Trims the layout of the axis by the defined minimum and maximum
-  		* @param context Object
-  		* @param out Object
-  		* @param trimMin Object
-  		* @param trimMax Object
-  		*/
+    * @param context Object
+    * @param out Object
+    * @param trimMin Object
+    * @param trimMax Object
+    */
   @JSName("trimByRange")
   var trimByRange_IDiscrete: js.UndefOr[
     js.Function4[
@@ -97,7 +97,7 @@ object IDiscrete {
     if (processData != null) __obj.updateDynamic("processData")(js.Any.fromFunction0(processData))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setAxis != null) __obj.updateDynamic("setAxis")(js.Any.fromFunction1(setAxis))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (snapEnds != null) __obj.updateDynamic("snapEnds")(js.Any.fromFunction4(snapEnds))
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (trimByRange != null) __obj.updateDynamic("trimByRange")(js.Any.fromFunction4(trimByRange))

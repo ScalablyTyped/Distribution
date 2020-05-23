@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object UnifiedPosHealthCheckLevel extends js.Object {
   /** Perform an unspecified test. */
   @js.native
   sealed trait unknownHealthCheckLevel extends UnifiedPosHealthCheckLevel
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UnifiedPosHealthCheckLevel with Double] = js.native
-  /* 2 */ @js.native
-  object external extends TopLevel[external with Double]
-  
-  /* 3 */ @js.native
-  object interactive extends TopLevel[interactive with Double]
-  
-  /* 1 */ @js.native
-  object posinternal extends TopLevel[posinternal with Double]
-  
-  /* 0 */ @js.native
-  object unknownHealthCheckLevel extends TopLevel[unknownHealthCheckLevel with Double]
   
 }
 

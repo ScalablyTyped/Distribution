@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @JSImport("mssql", "ConnectionPool")
 @js.native
 class ConnectionPool protected () extends EventEmitter {
-  def this(config: config) = this()
+  def this(config: typings.mssql.mod.config) = this()
   def this(connectionString: String) = this()
-  def this(config: config, callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]) = this()
+  def this(config: typings.mssql.mod.config, callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]) = this()
   def this(connectionString: String, callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]) = this()
   var connected: Boolean = js.native
   var connecting: Boolean = js.native

@@ -43,13 +43,13 @@ object TokenData {
     name: String,
     address_country: String = null,
     address_line2: String = null,
-    amount: Int | Double = null,
+    amount: js.UndefOr[Double] = js.undefined,
     currency: String = null
   ): TokenData = {
     val __obj = js.Dynamic.literal(address_city = address_city.asInstanceOf[js.Any], address_line1 = address_line1.asInstanceOf[js.Any], address_state = address_state.asInstanceOf[js.Any], address_zip = address_zip.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (address_country != null) __obj.updateDynamic("address_country")(address_country.asInstanceOf[js.Any])
     if (address_line2 != null) __obj.updateDynamic("address_line2")(address_line2.asInstanceOf[js.Any])
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
     if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenData]
   }

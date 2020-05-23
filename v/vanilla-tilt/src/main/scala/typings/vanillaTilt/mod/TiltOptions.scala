@@ -93,52 +93,52 @@ trait TiltOptions extends js.Object {
 object TiltOptions {
   @scala.inline
   def apply(
-    axis: x | y = null,
+    axis: js.UndefOr[Null | x | y] = js.undefined,
     easing: String = null,
     `full-page-listening`: js.UndefOr[Boolean] = js.undefined,
     glare: js.UndefOr[Boolean] = js.undefined,
     `glare-prerender`: js.UndefOr[Boolean] = js.undefined,
     gyroscope: js.UndefOr[Boolean] = js.undefined,
-    gyroscopeMaxAngleX: Int | Double = null,
-    gyroscopeMaxAngleY: Int | Double = null,
-    gyroscopeMinAngleX: Int | Double = null,
-    gyroscopeMinAngleY: Int | Double = null,
-    gyroscopeSamples: Int | Double = null,
-    max: Int | Double = null,
-    `max-glare`: Int | Double = null,
+    gyroscopeMaxAngleX: js.UndefOr[Double] = js.undefined,
+    gyroscopeMaxAngleY: js.UndefOr[Double] = js.undefined,
+    gyroscopeMinAngleX: js.UndefOr[Double] = js.undefined,
+    gyroscopeMinAngleY: js.UndefOr[Double] = js.undefined,
+    gyroscopeSamples: js.UndefOr[Double] = js.undefined,
+    max: js.UndefOr[Double] = js.undefined,
+    `max-glare`: js.UndefOr[Double] = js.undefined,
     `mouse-event-element`: String = null,
-    perspective: Int | Double = null,
+    perspective: js.UndefOr[Double] = js.undefined,
     reset: js.UndefOr[Boolean] = js.undefined,
     reverse: js.UndefOr[Boolean] = js.undefined,
-    scale: Int | Double = null,
-    speed: Int | Double = null,
-    startX: Int | Double = null,
-    startY: Int | Double = null,
+    scale: js.UndefOr[Double] = js.undefined,
+    speed: js.UndefOr[Double] = js.undefined,
+    startX: js.UndefOr[Double] = js.undefined,
+    startY: js.UndefOr[Double] = js.undefined,
     transition: js.UndefOr[Boolean] = js.undefined
   ): TiltOptions = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (!js.isUndefined(axis)) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (!js.isUndefined(`full-page-listening`)) __obj.updateDynamic("full-page-listening")(`full-page-listening`.asInstanceOf[js.Any])
-    if (!js.isUndefined(glare)) __obj.updateDynamic("glare")(glare.asInstanceOf[js.Any])
-    if (!js.isUndefined(`glare-prerender`)) __obj.updateDynamic("glare-prerender")(`glare-prerender`.asInstanceOf[js.Any])
-    if (!js.isUndefined(gyroscope)) __obj.updateDynamic("gyroscope")(gyroscope.asInstanceOf[js.Any])
-    if (gyroscopeMaxAngleX != null) __obj.updateDynamic("gyroscopeMaxAngleX")(gyroscopeMaxAngleX.asInstanceOf[js.Any])
-    if (gyroscopeMaxAngleY != null) __obj.updateDynamic("gyroscopeMaxAngleY")(gyroscopeMaxAngleY.asInstanceOf[js.Any])
-    if (gyroscopeMinAngleX != null) __obj.updateDynamic("gyroscopeMinAngleX")(gyroscopeMinAngleX.asInstanceOf[js.Any])
-    if (gyroscopeMinAngleY != null) __obj.updateDynamic("gyroscopeMinAngleY")(gyroscopeMinAngleY.asInstanceOf[js.Any])
-    if (gyroscopeSamples != null) __obj.updateDynamic("gyroscopeSamples")(gyroscopeSamples.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (`max-glare` != null) __obj.updateDynamic("max-glare")(`max-glare`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`full-page-listening`)) __obj.updateDynamic("full-page-listening")(`full-page-listening`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(glare)) __obj.updateDynamic("glare")(glare.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`glare-prerender`)) __obj.updateDynamic("glare-prerender")(`glare-prerender`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gyroscope)) __obj.updateDynamic("gyroscope")(gyroscope.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gyroscopeMaxAngleX)) __obj.updateDynamic("gyroscopeMaxAngleX")(gyroscopeMaxAngleX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gyroscopeMaxAngleY)) __obj.updateDynamic("gyroscopeMaxAngleY")(gyroscopeMaxAngleY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gyroscopeMinAngleX)) __obj.updateDynamic("gyroscopeMinAngleX")(gyroscopeMinAngleX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gyroscopeMinAngleY)) __obj.updateDynamic("gyroscopeMinAngleY")(gyroscopeMinAngleY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gyroscopeSamples)) __obj.updateDynamic("gyroscopeSamples")(gyroscopeSamples.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`max-glare`)) __obj.updateDynamic("max-glare")(`max-glare`.get.asInstanceOf[js.Any])
     if (`mouse-event-element` != null) __obj.updateDynamic("mouse-event-element")(`mouse-event-element`.asInstanceOf[js.Any])
-    if (perspective != null) __obj.updateDynamic("perspective")(perspective.asInstanceOf[js.Any])
-    if (!js.isUndefined(reset)) __obj.updateDynamic("reset")(reset.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (startX != null) __obj.updateDynamic("startX")(startX.asInstanceOf[js.Any])
-    if (startY != null) __obj.updateDynamic("startY")(startY.asInstanceOf[js.Any])
-    if (!js.isUndefined(transition)) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
+    if (!js.isUndefined(perspective)) __obj.updateDynamic("perspective")(perspective.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reset)) __obj.updateDynamic("reset")(reset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startX)) __obj.updateDynamic("startX")(startX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startY)) __obj.updateDynamic("startY")(startY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transition)) __obj.updateDynamic("transition")(transition.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TiltOptions]
   }
 }

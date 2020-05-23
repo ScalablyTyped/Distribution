@@ -13,7 +13,7 @@ object WebGLCapabilitiesParameters {
   @scala.inline
   def apply(logarithmicDepthBuffer: js.UndefOr[Boolean] = js.undefined, precision: String = null): WebGLCapabilitiesParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(logarithmicDepthBuffer)) __obj.updateDynamic("logarithmicDepthBuffer")(logarithmicDepthBuffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(logarithmicDepthBuffer)) __obj.updateDynamic("logarithmicDepthBuffer")(logarithmicDepthBuffer.get.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebGLCapabilitiesParameters]
   }

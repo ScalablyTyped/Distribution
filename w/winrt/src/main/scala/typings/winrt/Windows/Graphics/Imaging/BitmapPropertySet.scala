@@ -8,24 +8,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Graphics.Imaging.BitmapPropertySet")
-@js.native
-class BitmapPropertySet () extends IMap[String, BitmapTypedValue] {
-  /* CompleteClass */
-  override var size: Double = js.native
-  /* CompleteClass */
-  override def clear(): Unit = js.native
-  /* CompleteClass */
-  override def first(): IIterator[IKeyValuePair[String, BitmapTypedValue]] = js.native
-  /* CompleteClass */
-  override def getView(): IMapView[String, BitmapTypedValue] = js.native
-  /* CompleteClass */
-  override def hasKey(key: String): Boolean = js.native
-  /* CompleteClass */
-  override def insert(key: String, value: BitmapTypedValue): Boolean = js.native
-  /* CompleteClass */
-  override def lookup(key: String): BitmapTypedValue = js.native
-  /* CompleteClass */
-  override def remove(key: String): Unit = js.native
+trait BitmapPropertySet extends IMap[String, BitmapTypedValue]
+
+object BitmapPropertySet {
+  @scala.inline
+  def apply(
+    clear: () => Unit,
+    first: () => IIterator[IKeyValuePair[String, BitmapTypedValue]],
+    getView: () => IMapView[String, BitmapTypedValue],
+    hasKey: String => Boolean,
+    insert: (String, BitmapTypedValue) => Boolean,
+    lookup: String => BitmapTypedValue,
+    remove: String => Unit,
+    size: Double
+  ): BitmapPropertySet = {
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), first = js.Any.fromFunction0(first), getView = js.Any.fromFunction0(getView), hasKey = js.Any.fromFunction1(hasKey), insert = js.Any.fromFunction2(insert), lookup = js.Any.fromFunction1(lookup), remove = js.Any.fromFunction1(remove), size = size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BitmapPropertySet]
+  }
 }
 

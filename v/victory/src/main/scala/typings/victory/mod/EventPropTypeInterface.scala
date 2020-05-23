@@ -2,7 +2,7 @@ package typings.victory.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.SyntheticEvent
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait EventPropTypeInterface[TTarget, TEventKey] extends js.Object {
     */
   var eventHandlers: StringDictionary[
     js.Function1[
-      /* event */ SyntheticEvent[_, Event_], 
+      /* event */ SyntheticEvent[_, Event], 
       (js.Array[EventCallbackInterface[TTarget, TEventKey]]) | (EventCallbackInterface[TTarget, TEventKey])
     ]
   ]
@@ -35,7 +35,7 @@ object EventPropTypeInterface {
   def apply[TTarget, TEventKey](
     eventHandlers: StringDictionary[
       js.Function1[
-        /* event */ SyntheticEvent[_, Event_], 
+        /* event */ SyntheticEvent[_, Event], 
         (js.Array[EventCallbackInterface[TTarget, TEventKey]]) | (EventCallbackInterface[TTarget, TEventKey])
       ]
     ],

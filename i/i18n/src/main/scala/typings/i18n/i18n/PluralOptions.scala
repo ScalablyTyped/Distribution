@@ -13,9 +13,9 @@ trait PluralOptions extends js.Object {
 
 object PluralOptions {
   @scala.inline
-  def apply(plural: String, singular: String, count: Int | Double = null, locale: String = null): PluralOptions = {
+  def apply(plural: String, singular: String, count: js.UndefOr[Double] = js.undefined, locale: String = null): PluralOptions = {
     val __obj = js.Dynamic.literal(plural = plural.asInstanceOf[js.Any], singular = singular.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluralOptions]
   }

@@ -5,11 +5,11 @@ import typings.react.mod.Ref
 import typings.reactNative.mod.Animated.AnimatedInterpolation
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeGestureHandler.AnonBottom
-import typings.reactNativeGestureHandler.AnonBottomHeight
-import typings.reactNativeGestureHandler.AnonHeight
-import typings.reactNativeGestureHandler.AnonLeft
-import typings.reactNativeGestureHandler.AnonRight
+import typings.reactNativeGestureHandler.anon.Bottom
+import typings.reactNativeGestureHandler.anon.BottomHeight
+import typings.reactNativeGestureHandler.anon.Height
+import typings.reactNativeGestureHandler.anon.Left
+import typings.reactNativeGestureHandler.anon.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ trait SwipeableProperties extends js.Object {
   var failOffsetX: js.UndefOr[Double | js.Array[Double]] = js.undefined
   var failOffsetY: js.UndefOr[Double | js.Array[Double]] = js.undefined
   var friction: js.UndefOr[Double] = js.undefined
-  var hitSlop: js.UndefOr[Double | AnonBottom | AnonLeft | AnonRight | AnonHeight | AnonBottomHeight] = js.undefined
+  var hitSlop: js.UndefOr[Double | Bottom | Left | Right | Height | BottomHeight] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var leftThreshold: js.UndefOr[Double] = js.undefined
   var maxDeltaX: js.UndefOr[Double] = js.undefined
@@ -98,27 +98,27 @@ object SwipeableProperties {
     activeOffsetX: Double | js.Array[Double] = null,
     activeOffsetY: Double | js.Array[Double] = null,
     avgTouches: js.UndefOr[Boolean] = js.undefined,
-    childrenContainerStyle: StyleProp[ViewStyle] = null,
-    containerStyle: StyleProp[ViewStyle] = null,
+    childrenContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    containerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
     failOffsetX: Double | js.Array[Double] = null,
     failOffsetY: Double | js.Array[Double] = null,
-    friction: Int | Double = null,
-    hitSlop: Double | AnonBottom | AnonLeft | AnonRight | AnonHeight | AnonBottomHeight = null,
+    friction: js.UndefOr[Double] = js.undefined,
+    hitSlop: Double | Bottom | Left | Right | Height | BottomHeight = null,
     id: String = null,
-    leftThreshold: Int | Double = null,
-    maxDeltaX: Int | Double = null,
-    maxDeltaY: Int | Double = null,
-    maxPointers: Int | Double = null,
-    minDeltaX: Int | Double = null,
-    minDeltaY: Int | Double = null,
-    minDist: Int | Double = null,
-    minOffsetX: Int | Double = null,
-    minOffsetY: Int | Double = null,
-    minPointers: Int | Double = null,
-    minVelocity: Int | Double = null,
-    minVelocityX: Int | Double = null,
-    minVelocityY: Int | Double = null,
+    leftThreshold: js.UndefOr[Double] = js.undefined,
+    maxDeltaX: js.UndefOr[Double] = js.undefined,
+    maxDeltaY: js.UndefOr[Double] = js.undefined,
+    maxPointers: js.UndefOr[Double] = js.undefined,
+    minDeltaX: js.UndefOr[Double] = js.undefined,
+    minDeltaY: js.UndefOr[Double] = js.undefined,
+    minDist: js.UndefOr[Double] = js.undefined,
+    minOffsetX: js.UndefOr[Double] = js.undefined,
+    minOffsetY: js.UndefOr[Double] = js.undefined,
+    minPointers: js.UndefOr[Double] = js.undefined,
+    minVelocity: js.UndefOr[Double] = js.undefined,
+    minVelocityX: js.UndefOr[Double] = js.undefined,
+    minVelocityY: js.UndefOr[Double] = js.undefined,
     onSwipeableClose: () => Unit = null,
     onSwipeableLeftOpen: () => Unit = null,
     onSwipeableLeftWillOpen: () => Unit = null,
@@ -127,42 +127,42 @@ object SwipeableProperties {
     onSwipeableRightWillOpen: () => Unit = null,
     onSwipeableWillClose: () => Unit = null,
     onSwipeableWillOpen: () => Unit = null,
-    overshootFriction: Int | Double = null,
+    overshootFriction: js.UndefOr[Double] = js.undefined,
     overshootLeft: js.UndefOr[Boolean] = js.undefined,
     overshootRight: js.UndefOr[Boolean] = js.undefined,
     renderLeftActions: (/* progressAnimatedValue */ AnimatedInterpolation, /* dragAnimatedValue */ AnimatedInterpolation) => ReactNode = null,
     renderRightActions: (/* progressAnimatedValue */ AnimatedInterpolation, /* dragAnimatedValue */ AnimatedInterpolation) => ReactNode = null,
-    rightThreshold: Int | Double = null,
+    rightThreshold: js.UndefOr[Double] = js.undefined,
     shouldCancelWhenOutside: js.UndefOr[Boolean] = js.undefined,
-    simultaneousHandlers: Ref[_] | js.Array[Ref[_]] = null,
+    simultaneousHandlers: js.UndefOr[Null | Ref[_] | js.Array[Ref[_]]] = js.undefined,
     useNativeAnimations: js.UndefOr[Boolean] = js.undefined,
-    waitFor: Ref[_] | js.Array[Ref[_]] = null
+    waitFor: js.UndefOr[Null | Ref[_] | js.Array[Ref[_]]] = js.undefined
   ): SwipeableProperties = {
     val __obj = js.Dynamic.literal()
     if (activeOffsetX != null) __obj.updateDynamic("activeOffsetX")(activeOffsetX.asInstanceOf[js.Any])
     if (activeOffsetY != null) __obj.updateDynamic("activeOffsetY")(activeOffsetY.asInstanceOf[js.Any])
-    if (!js.isUndefined(avgTouches)) __obj.updateDynamic("avgTouches")(avgTouches.asInstanceOf[js.Any])
-    if (childrenContainerStyle != null) __obj.updateDynamic("childrenContainerStyle")(childrenContainerStyle.asInstanceOf[js.Any])
-    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(avgTouches)) __obj.updateDynamic("avgTouches")(avgTouches.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(childrenContainerStyle)) __obj.updateDynamic("childrenContainerStyle")(childrenContainerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(containerStyle)) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (failOffsetX != null) __obj.updateDynamic("failOffsetX")(failOffsetX.asInstanceOf[js.Any])
     if (failOffsetY != null) __obj.updateDynamic("failOffsetY")(failOffsetY.asInstanceOf[js.Any])
-    if (friction != null) __obj.updateDynamic("friction")(friction.asInstanceOf[js.Any])
+    if (!js.isUndefined(friction)) __obj.updateDynamic("friction")(friction.get.asInstanceOf[js.Any])
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (leftThreshold != null) __obj.updateDynamic("leftThreshold")(leftThreshold.asInstanceOf[js.Any])
-    if (maxDeltaX != null) __obj.updateDynamic("maxDeltaX")(maxDeltaX.asInstanceOf[js.Any])
-    if (maxDeltaY != null) __obj.updateDynamic("maxDeltaY")(maxDeltaY.asInstanceOf[js.Any])
-    if (maxPointers != null) __obj.updateDynamic("maxPointers")(maxPointers.asInstanceOf[js.Any])
-    if (minDeltaX != null) __obj.updateDynamic("minDeltaX")(minDeltaX.asInstanceOf[js.Any])
-    if (minDeltaY != null) __obj.updateDynamic("minDeltaY")(minDeltaY.asInstanceOf[js.Any])
-    if (minDist != null) __obj.updateDynamic("minDist")(minDist.asInstanceOf[js.Any])
-    if (minOffsetX != null) __obj.updateDynamic("minOffsetX")(minOffsetX.asInstanceOf[js.Any])
-    if (minOffsetY != null) __obj.updateDynamic("minOffsetY")(minOffsetY.asInstanceOf[js.Any])
-    if (minPointers != null) __obj.updateDynamic("minPointers")(minPointers.asInstanceOf[js.Any])
-    if (minVelocity != null) __obj.updateDynamic("minVelocity")(minVelocity.asInstanceOf[js.Any])
-    if (minVelocityX != null) __obj.updateDynamic("minVelocityX")(minVelocityX.asInstanceOf[js.Any])
-    if (minVelocityY != null) __obj.updateDynamic("minVelocityY")(minVelocityY.asInstanceOf[js.Any])
+    if (!js.isUndefined(leftThreshold)) __obj.updateDynamic("leftThreshold")(leftThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDeltaX)) __obj.updateDynamic("maxDeltaX")(maxDeltaX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDeltaY)) __obj.updateDynamic("maxDeltaY")(maxDeltaY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPointers)) __obj.updateDynamic("maxPointers")(maxPointers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minDeltaX)) __obj.updateDynamic("minDeltaX")(minDeltaX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minDeltaY)) __obj.updateDynamic("minDeltaY")(minDeltaY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minDist)) __obj.updateDynamic("minDist")(minDist.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minOffsetX)) __obj.updateDynamic("minOffsetX")(minOffsetX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minOffsetY)) __obj.updateDynamic("minOffsetY")(minOffsetY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minPointers)) __obj.updateDynamic("minPointers")(minPointers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minVelocity)) __obj.updateDynamic("minVelocity")(minVelocity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minVelocityX)) __obj.updateDynamic("minVelocityX")(minVelocityX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minVelocityY)) __obj.updateDynamic("minVelocityY")(minVelocityY.get.asInstanceOf[js.Any])
     if (onSwipeableClose != null) __obj.updateDynamic("onSwipeableClose")(js.Any.fromFunction0(onSwipeableClose))
     if (onSwipeableLeftOpen != null) __obj.updateDynamic("onSwipeableLeftOpen")(js.Any.fromFunction0(onSwipeableLeftOpen))
     if (onSwipeableLeftWillOpen != null) __obj.updateDynamic("onSwipeableLeftWillOpen")(js.Any.fromFunction0(onSwipeableLeftWillOpen))
@@ -171,16 +171,16 @@ object SwipeableProperties {
     if (onSwipeableRightWillOpen != null) __obj.updateDynamic("onSwipeableRightWillOpen")(js.Any.fromFunction0(onSwipeableRightWillOpen))
     if (onSwipeableWillClose != null) __obj.updateDynamic("onSwipeableWillClose")(js.Any.fromFunction0(onSwipeableWillClose))
     if (onSwipeableWillOpen != null) __obj.updateDynamic("onSwipeableWillOpen")(js.Any.fromFunction0(onSwipeableWillOpen))
-    if (overshootFriction != null) __obj.updateDynamic("overshootFriction")(overshootFriction.asInstanceOf[js.Any])
-    if (!js.isUndefined(overshootLeft)) __obj.updateDynamic("overshootLeft")(overshootLeft.asInstanceOf[js.Any])
-    if (!js.isUndefined(overshootRight)) __obj.updateDynamic("overshootRight")(overshootRight.asInstanceOf[js.Any])
+    if (!js.isUndefined(overshootFriction)) __obj.updateDynamic("overshootFriction")(overshootFriction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overshootLeft)) __obj.updateDynamic("overshootLeft")(overshootLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overshootRight)) __obj.updateDynamic("overshootRight")(overshootRight.get.asInstanceOf[js.Any])
     if (renderLeftActions != null) __obj.updateDynamic("renderLeftActions")(js.Any.fromFunction2(renderLeftActions))
     if (renderRightActions != null) __obj.updateDynamic("renderRightActions")(js.Any.fromFunction2(renderRightActions))
-    if (rightThreshold != null) __obj.updateDynamic("rightThreshold")(rightThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldCancelWhenOutside)) __obj.updateDynamic("shouldCancelWhenOutside")(shouldCancelWhenOutside.asInstanceOf[js.Any])
-    if (simultaneousHandlers != null) __obj.updateDynamic("simultaneousHandlers")(simultaneousHandlers.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNativeAnimations)) __obj.updateDynamic("useNativeAnimations")(useNativeAnimations.asInstanceOf[js.Any])
-    if (waitFor != null) __obj.updateDynamic("waitFor")(waitFor.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightThreshold)) __obj.updateDynamic("rightThreshold")(rightThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldCancelWhenOutside)) __obj.updateDynamic("shouldCancelWhenOutside")(shouldCancelWhenOutside.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(simultaneousHandlers)) __obj.updateDynamic("simultaneousHandlers")(simultaneousHandlers.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNativeAnimations)) __obj.updateDynamic("useNativeAnimations")(useNativeAnimations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitFor)) __obj.updateDynamic("waitFor")(waitFor.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwipeableProperties]
   }
 }

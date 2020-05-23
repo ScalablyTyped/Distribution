@@ -5,28 +5,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * Fired when the motion state of the drawer view changes.
-			 */
+  * Fired when the motion state of the drawer view changes.
+  */
 trait DrawerLayoutChangeEvent extends DrawerLayoutBaseEvent {
   /**
-  				 * Whether or not the drawer is currently dragging.
-  				 */
+    * Whether or not the drawer is currently dragging.
+    */
   var dragging: Boolean
   /**
-  				 * Contains the drawer frame type. Either `left` or `right`.
-  				 */
+    * Contains the drawer frame type. Either `left` or `right`.
+    */
   var drawer: String
   /**
-  				 * Whether or not the drawer is currently idle.
-  				 */
+    * Whether or not the drawer is currently idle.
+    */
   var idle: Boolean
   /**
-  				 * Whether or not the drawer is currently settling.
-  				 */
+    * Whether or not the drawer is currently settling.
+    */
   var settling: Boolean
   /**
-  				 * The current drawer state.
-  				 */
+    * The current drawer state.
+    */
   var state: Double
 }
 

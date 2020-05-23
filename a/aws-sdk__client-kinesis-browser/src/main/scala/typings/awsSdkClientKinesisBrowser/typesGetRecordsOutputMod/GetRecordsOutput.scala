@@ -32,11 +32,11 @@ object GetRecordsOutput {
   def apply(
     $metadata: ResponseMetadata,
     Records: js.Array[UnmarshalledRecord],
-    MillisBehindLatest: Int | Double = null,
+    MillisBehindLatest: js.UndefOr[Double] = js.undefined,
     NextShardIterator: String = null
   ): GetRecordsOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], Records = Records.asInstanceOf[js.Any])
-    if (MillisBehindLatest != null) __obj.updateDynamic("MillisBehindLatest")(MillisBehindLatest.asInstanceOf[js.Any])
+    if (!js.isUndefined(MillisBehindLatest)) __obj.updateDynamic("MillisBehindLatest")(MillisBehindLatest.get.asInstanceOf[js.Any])
     if (NextShardIterator != null) __obj.updateDynamic("NextShardIterator")(NextShardIterator.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRecordsOutput]
   }

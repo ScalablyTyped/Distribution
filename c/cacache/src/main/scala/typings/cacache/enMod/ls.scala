@@ -1,6 +1,6 @@
 package typings.cacache.enMod
 
-import typings.cacache.CacheObjectsizenumber
+import typings.cacache.anon.CacheObjectsizenumber
 import typings.node.NodeJS.ReadableStream
 import typings.std.Record
 import scala.scalajs.js

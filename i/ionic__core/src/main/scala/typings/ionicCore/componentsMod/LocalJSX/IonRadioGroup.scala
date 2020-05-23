@@ -31,13 +31,13 @@ object IonRadioGroup {
     allowEmptySelection: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     onIonChange: /* event */ CustomEvent[RadioGroupChangeEventDetail] => Unit = null,
-    value: js.Any = null
+    value: js.UndefOr[Null | js.Any] = js.undefined
   ): IonRadioGroup = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowEmptySelection)) __obj.updateDynamic("allowEmptySelection")(allowEmptySelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowEmptySelection)) __obj.updateDynamic("allowEmptySelection")(allowEmptySelection.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onIonChange != null) __obj.updateDynamic("onIonChange")(js.Any.fromFunction1(onIonChange))
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonRadioGroup]
   }
 }

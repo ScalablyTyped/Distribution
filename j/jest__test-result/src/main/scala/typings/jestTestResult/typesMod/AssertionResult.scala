@@ -25,14 +25,14 @@ object AssertionResult {
     numPassingAsserts: Double,
     status: Status,
     title: String,
-    duration: Int | Double = null,
-    invocations: Int | Double = null,
-    location: Callsite = null
+    duration: js.UndefOr[Null | Milliseconds] = js.undefined,
+    invocations: js.UndefOr[Double] = js.undefined,
+    location: js.UndefOr[Null | Callsite] = js.undefined
   ): AssertionResult = {
     val __obj = js.Dynamic.literal(ancestorTitles = ancestorTitles.asInstanceOf[js.Any], failureMessages = failureMessages.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], numPassingAsserts = numPassingAsserts.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (invocations != null) __obj.updateDynamic("invocations")(invocations.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(invocations)) __obj.updateDynamic("invocations")(invocations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(location)) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssertionResult]
   }
 }

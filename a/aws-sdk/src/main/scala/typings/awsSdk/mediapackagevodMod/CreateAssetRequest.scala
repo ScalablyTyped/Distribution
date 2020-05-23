@@ -26,6 +26,7 @@ trait CreateAssetRequest extends js.Object {
     * The IAM role ARN used to access the source S3 bucket.
     */
   var SourceRoleArn: string = js.native
+  var Tags: js.UndefOr[typings.awsSdk.mediapackagevodMod.Tags] = js.native
 }
 
 object CreateAssetRequest {
@@ -35,10 +36,12 @@ object CreateAssetRequest {
     PackagingGroupId: string,
     SourceArn: string,
     SourceRoleArn: string,
-    ResourceId: string = null
+    ResourceId: string = null,
+    Tags: Tags = null
   ): CreateAssetRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], PackagingGroupId = PackagingGroupId.asInstanceOf[js.Any], SourceArn = SourceArn.asInstanceOf[js.Any], SourceRoleArn = SourceRoleArn.asInstanceOf[js.Any])
     if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAssetRequest]
   }
 }

@@ -1,11 +1,5 @@
 package typings.cordovaPluginContacts
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
-import org.scalablytyped.runtime.Instantiable4
-import org.scalablytyped.runtime.Instantiable5
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,27 +21,22 @@ trait ContactOrganization extends js.Object {
   var `type`: js.UndefOr[String] = js.undefined
 }
 
-@JSGlobal("ContactOrganization")
-@js.native
-object ContactOrganization
-  extends /** Constructor for ContactOrganization object */
-Instantiable0[ContactOrganization]
-     with Instantiable1[/* pref */ Boolean, ContactOrganization]
-     with Instantiable2[/* pref */ Boolean, /* type */ String, ContactOrganization]
-     with Instantiable3[/* pref */ Boolean, /* type */ String, /* name */ String, ContactOrganization]
-     with Instantiable4[
-      /* pref */ Boolean, 
-      /* type */ String, 
-      /* name */ String, 
-      /* department */ String, 
-      ContactOrganization
-    ]
-     with Instantiable5[
-      /* pref */ Boolean, 
-      /* type */ String, 
-      /* name */ String, 
-      /* department */ String, 
-      /* title */ String, 
-      ContactOrganization
-    ]
+object ContactOrganization {
+  @scala.inline
+  def apply(
+    department: String = null,
+    name: String = null,
+    pref: js.UndefOr[Boolean] = js.undefined,
+    title: String = null,
+    `type`: String = null
+  ): ContactOrganization = {
+    val __obj = js.Dynamic.literal()
+    if (department != null) __obj.updateDynamic("department")(department.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(pref)) __obj.updateDynamic("pref")(pref.get.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ContactOrganization]
+  }
+}
 

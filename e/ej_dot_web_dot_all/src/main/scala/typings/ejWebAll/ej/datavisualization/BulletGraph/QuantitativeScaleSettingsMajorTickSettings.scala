@@ -21,11 +21,15 @@ trait QuantitativeScaleSettingsMajorTickSettings extends js.Object {
 
 object QuantitativeScaleSettingsMajorTickSettings {
   @scala.inline
-  def apply(size: Int | Double = null, stroke: String = null, width: Int | Double = null): QuantitativeScaleSettingsMajorTickSettings = {
+  def apply(
+    size: js.UndefOr[Double] = js.undefined,
+    stroke: String = null,
+    width: js.UndefOr[Double] = js.undefined
+  ): QuantitativeScaleSettingsMajorTickSettings = {
     val __obj = js.Dynamic.literal()
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuantitativeScaleSettingsMajorTickSettings]
   }
 }

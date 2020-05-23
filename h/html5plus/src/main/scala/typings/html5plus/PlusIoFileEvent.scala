@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * 文件或目录操作事件对象
   * 所有文件或目录操作事件回调函数中都创建该对象的实例。
-  * 	该对象从DOMEvent继承而来，可通过该其target属性获取事件触发的文件或目录操作对象。
+  *     该对象从DOMEvent继承而来，可通过该其target属性获取事件触发的文件或目录操作对象。
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
   */

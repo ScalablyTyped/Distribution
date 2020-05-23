@@ -14,9 +14,9 @@ trait NotificationProperty extends js.Object {
 
 object NotificationProperty {
   @scala.inline
-  def apply(NotifyDelayAfter: Int | Double = null): NotificationProperty = {
+  def apply(NotifyDelayAfter: js.UndefOr[NotifyDelayAfter] = js.undefined): NotificationProperty = {
     val __obj = js.Dynamic.literal()
-    if (NotifyDelayAfter != null) __obj.updateDynamic("NotifyDelayAfter")(NotifyDelayAfter.asInstanceOf[js.Any])
+    if (!js.isUndefined(NotifyDelayAfter)) __obj.updateDynamic("NotifyDelayAfter")(NotifyDelayAfter.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationProperty]
   }
 }

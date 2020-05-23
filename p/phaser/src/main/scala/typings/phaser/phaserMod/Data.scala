@@ -21,6 +21,7 @@ object Data extends js.Object {
       * @param parent The object that this DataManager belongs to.
       * @param eventEmitter The DataManager's event emitter.
       */
+    def this(parent: js.Object) = this()
     def this(parent: js.Object, eventEmitter: EventEmitter) = this()
   }
   

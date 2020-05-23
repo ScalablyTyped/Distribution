@@ -54,15 +54,15 @@ object SizeRampStop {
     label: String,
     propertyIsEnumerable: PropertyKey => Boolean,
     symbol: Symbol,
-    outlineSize: Int | Double = null,
+    outlineSize: js.UndefOr[Double] = js.undefined,
     preview: HTMLElement = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     value: js.Any = null
   ): SizeRampStop = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), label = label.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), symbol = symbol.asInstanceOf[js.Any])
-    if (outlineSize != null) __obj.updateDynamic("outlineSize")(outlineSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(outlineSize)) __obj.updateDynamic("outlineSize")(outlineSize.get.asInstanceOf[js.Any])
     if (preview != null) __obj.updateDynamic("preview")(preview.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeRampStop]
   }

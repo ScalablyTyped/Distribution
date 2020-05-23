@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Core
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object TimedMetadataTrackErrorCode extends js.Object {
   /** No error code. */
   @js.native
   sealed trait none extends TimedMetadataTrackErrorCode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TimedMetadataTrackErrorCode with Double] = js.native
-  /* 1 */ @js.native
-  object dataFormatError extends TopLevel[dataFormatError with Double]
-  
-  /* 3 */ @js.native
-  object internalError extends TopLevel[internalError with Double]
-  
-  /* 2 */ @js.native
-  object networkError extends TopLevel[networkError with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
   
 }
 

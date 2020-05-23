@@ -1,7 +1,6 @@
 package typings.winjs.WinJS.UI
 
-import typings.std.CustomEvent
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,18 +9,8 @@ import scala.scalajs.js.annotation._
 /**
   * Provides users with fast, in-context access to settings that affect the current Windows Store app.
   **/
-@JSGlobal("WinJS.UI.SettingsFlyout")
 @js.native
-//#region Constructors
-/**
-  * Creates a new SettingsFlyout object.
-  * @constructor
-  * @param element The DOM element that will host the control.
-  * @param options The set of properties and values to apply to the new SettingsFlyout.
-  **/
-class SettingsFlyout () extends js.Object {
-  def this(element: HTMLElement) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+trait SettingsFlyout extends js.Object {
   //#endregion Methods
   //#region Properties
   /**
@@ -75,22 +64,22 @@ class SettingsFlyout () extends js.Object {
     * Raised immediately after the SettingsFlyout is completely hidden.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onafterhide(eventInfo: Event_): Unit = js.native
+  def onafterhide(eventInfo: Event): Unit = js.native
   /**
     * Raised immediately after a SettingsFlyout is fully shown.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onaftershow(eventInfo: Event_): Unit = js.native
+  def onaftershow(eventInfo: Event): Unit = js.native
   /**
     * Raised just before hiding a SettingsFlyout.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onbeforehide(eventInfo: Event_): Unit = js.native
+  def onbeforehide(eventInfo: Event): Unit = js.native
   /**
     * Raised just before showing a SettingsFlyout.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onbeforeshow(eventInfo: Event_): Unit = js.native
+  def onbeforeshow(eventInfo: Event): Unit = js.native
   /**
     * Removes an event handler that the addEventListener method registered.
     * @param type The event type to unregister. It must be beforeshow, beforehide, aftershow, or afterhide.
@@ -103,30 +92,5 @@ class SettingsFlyout () extends js.Object {
     * Shows the SettingsPane UI, if hidden.
     **/
   def show(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("WinJS.UI.SettingsFlyout")
-@js.native
-object SettingsFlyout extends js.Object {
-  /**
-    * Indicates that the object is compatibile with declarative processing.
-    **/
-  var supportedForProcessing: Boolean = js.native
-  /**
-    * Loads a fragment of the SettingsFlyout. Your app calls this when the user invokes a settings command and the WinJS.Application.onsettings event occurs.
-    * @param e An object that contains information about the event, received from the WinJS.Application.onsettings event. The detail property of this object contains the applicationcommands sub-property that you set to an array of settings commands. You then populate the SettingsFlyout with these commands by a call to populateSettings.
-    **/
-  def populateSettings(e: CustomEvent[_]): Unit = js.native
-  /**
-    * Shows the SettingsPane UI, if hidden, regardless of other state.
-    **/
-  def show(): Unit = js.native
-  /**
-    * Show the Settings flyout using the Settings element identifier (ID) and the path of the page that contains the Settings element.
-    * @param id The ID of the Settings element.
-    * @param path The path of the page that contains the Settings element.
-    **/
-  def showSettings(id: String, path: js.Any): Unit = js.native
 }
 

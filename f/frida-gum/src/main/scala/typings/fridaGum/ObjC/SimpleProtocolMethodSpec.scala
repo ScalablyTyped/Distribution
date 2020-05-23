@@ -23,7 +23,7 @@ object SimpleProtocolMethodSpec {
   @scala.inline
   def apply(argTypes: js.Array[String], retType: String, optional: js.UndefOr[Boolean] = js.undefined): SimpleProtocolMethodSpec = {
     val __obj = js.Dynamic.literal(argTypes = argTypes.asInstanceOf[js.Any], retType = retType.asInstanceOf[js.Any])
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleProtocolMethodSpec]
   }
 }

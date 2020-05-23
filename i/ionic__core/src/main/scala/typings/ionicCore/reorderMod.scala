@@ -1,7 +1,7 @@
 package typings.ionicCore
 
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object reorderMod extends js.Object {
   @js.native
   class Reorder () extends ComponentInterface {
-    def onClick(ev: Event_): Unit = js.native
+    def onClick(ev: Event): Unit = js.native
     @JSName("render")
     def render_MReorder(): js.Any = js.native
   }

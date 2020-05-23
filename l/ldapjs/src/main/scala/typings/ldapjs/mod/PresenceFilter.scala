@@ -1,6 +1,6 @@
 package typings.ldapjs.mod
 
-import typings.ldapjs.AnonAttributeString
+import typings.ldapjs.anon.AttributeString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ldapjs", "PresenceFilter")
 @js.native
 class PresenceFilter protected () extends Filter {
-  def this(options: AnonAttributeString) = this()
+  def this(options: AttributeString) = this()
   /* CompleteClass */
   override var `type`: String = js.native
   /* CompleteClass */

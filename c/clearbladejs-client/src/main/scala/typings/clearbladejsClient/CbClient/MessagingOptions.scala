@@ -20,13 +20,13 @@ object MessagingOptions {
     useSSL: js.UndefOr[Boolean] = js.undefined
   ): MessagingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cleanSession)) __obj.updateDynamic("cleanSession")(cleanSession.asInstanceOf[js.Any])
+    if (!js.isUndefined(cleanSession)) __obj.updateDynamic("cleanSession")(cleanSession.get.asInstanceOf[js.Any])
     if (hosts != null) __obj.updateDynamic("hosts")(hosts.asInstanceOf[js.Any])
     if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure.asInstanceOf[js.Any])
     if (onSuccess != null) __obj.updateDynamic("onSuccess")(onSuccess.asInstanceOf[js.Any])
     if (ports != null) __obj.updateDynamic("ports")(ports.asInstanceOf[js.Any])
     if (qos != null) __obj.updateDynamic("qos")(qos.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSSL)) __obj.updateDynamic("useSSL")(useSSL.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSSL)) __obj.updateDynamic("useSSL")(useSSL.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessagingOptions]
   }
 }

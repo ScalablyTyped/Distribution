@@ -66,10 +66,10 @@ object CreateRemoteAccessSessionRequest {
     instanceArn: AmazonResourceName = null,
     interactionMode: InteractionMode = null,
     name: Name = null,
-    remoteDebugEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    remoteDebugEnabled: js.UndefOr[Boolean] = js.undefined,
     remoteRecordAppArn: AmazonResourceName = null,
-    remoteRecordEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    skipAppResign: js.UndefOr[scala.Boolean] = js.undefined,
+    remoteRecordEnabled: js.UndefOr[Boolean] = js.undefined,
+    skipAppResign: js.UndefOr[Boolean] = js.undefined,
     sshPublicKey: SshPublicKey = null
   ): CreateRemoteAccessSessionRequest = {
     val __obj = js.Dynamic.literal(deviceArn = deviceArn.asInstanceOf[js.Any], projectArn = projectArn.asInstanceOf[js.Any])
@@ -78,10 +78,10 @@ object CreateRemoteAccessSessionRequest {
     if (instanceArn != null) __obj.updateDynamic("instanceArn")(instanceArn.asInstanceOf[js.Any])
     if (interactionMode != null) __obj.updateDynamic("interactionMode")(interactionMode.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(remoteDebugEnabled)) __obj.updateDynamic("remoteDebugEnabled")(remoteDebugEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteDebugEnabled)) __obj.updateDynamic("remoteDebugEnabled")(remoteDebugEnabled.get.asInstanceOf[js.Any])
     if (remoteRecordAppArn != null) __obj.updateDynamic("remoteRecordAppArn")(remoteRecordAppArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(remoteRecordEnabled)) __obj.updateDynamic("remoteRecordEnabled")(remoteRecordEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipAppResign)) __obj.updateDynamic("skipAppResign")(skipAppResign.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteRecordEnabled)) __obj.updateDynamic("remoteRecordEnabled")(remoteRecordEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipAppResign)) __obj.updateDynamic("skipAppResign")(skipAppResign.get.asInstanceOf[js.Any])
     if (sshPublicKey != null) __obj.updateDynamic("sshPublicKey")(sshPublicKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRemoteAccessSessionRequest]
   }

@@ -11,10 +11,10 @@ trait TokenCacheOptions extends js.Object {
 
 object TokenCacheOptions {
   @scala.inline
-  def apply(getMaxAge: () => Double = null, maxAge: Int | Double = null): TokenCacheOptions = {
+  def apply(getMaxAge: () => Double = null, maxAge: js.UndefOr[Double] = js.undefined): TokenCacheOptions = {
     val __obj = js.Dynamic.literal()
     if (getMaxAge != null) __obj.updateDynamic("getMaxAge")(js.Any.fromFunction0(getMaxAge))
-    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAge)) __obj.updateDynamic("maxAge")(maxAge.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenCacheOptions]
   }
 }

@@ -21,9 +21,9 @@ trait GeoOptions extends js.Object {
 
 object GeoOptions {
   @scala.inline
-  def apply(latitude: Double, longitude: Double, accuracy: Int | Double = null): GeoOptions = {
+  def apply(latitude: Double, longitude: Double, accuracy: js.UndefOr[Double] = js.undefined): GeoOptions = {
     val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
-    if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
+    if (!js.isUndefined(accuracy)) __obj.updateDynamic("accuracy")(accuracy.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoOptions]
   }
 }

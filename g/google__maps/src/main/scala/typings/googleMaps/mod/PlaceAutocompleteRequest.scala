@@ -68,8 +68,8 @@ object PlaceAutocompleteRequest {
     components: js.Array[String] = null,
     language: String = null,
     location: LatLng = null,
-    offset: Int | Double = null,
-    radius: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
+    radius: js.UndefOr[Double] = js.undefined,
     sessiontoken: String = null,
     strictbounds: js.UndefOr[Boolean] = js.undefined,
     types: PlaceAutocompleteType = null
@@ -78,10 +78,10 @@ object PlaceAutocompleteRequest {
     if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     if (sessiontoken != null) __obj.updateDynamic("sessiontoken")(sessiontoken.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictbounds)) __obj.updateDynamic("strictbounds")(strictbounds.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictbounds)) __obj.updateDynamic("strictbounds")(strictbounds.get.asInstanceOf[js.Any])
     if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaceAutocompleteRequest]
   }

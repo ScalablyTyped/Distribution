@@ -24,7 +24,7 @@ object IShimmerApplicationExampleState {
   ): IShimmerApplicationExampleState = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDataLoaded)) __obj.updateDynamic("isDataLoaded")(isDataLoaded.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDataLoaded)) __obj.updateDynamic("isDataLoaded")(isDataLoaded.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShimmerApplicationExampleState]
   }
 }

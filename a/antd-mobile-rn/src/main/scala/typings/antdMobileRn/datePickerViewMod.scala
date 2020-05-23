@@ -1,5 +1,7 @@
 package typings.antdMobileRn
 
+import typings.antdMobileRn.anon.AntLocale
+import typings.antdMobileRn.anon.Extra
 import typings.antdMobileRn.datePickerViewPropsTypeMod.DatePickerProps
 import typings.react.mod.Component
 import scala.scalajs.js
@@ -19,8 +21,8 @@ object datePickerViewMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var contextTypes: AnonAntLocale = js.native
-    var defaultProps: AnonExtra = js.native
+    var contextTypes: AntLocale = js.native
+    var defaultProps: Extra = js.native
   }
   
 }

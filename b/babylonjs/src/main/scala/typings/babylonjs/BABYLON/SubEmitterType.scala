@@ -1,6 +1,5 @@
 package typings.babylonjs.BABYLON
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,14 +21,6 @@ object SubEmitterType extends js.Object {
     */
   @js.native
   sealed trait END extends SubEmitterType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SubEmitterType with Double] = js.native
-  /* 0 */ @js.native
-  object ATTACHED extends TopLevel[ATTACHED with Double]
-  
-  /* 1 */ @js.native
-  object END extends TopLevel[END with Double]
   
 }
 

@@ -83,7 +83,7 @@ object Coding {
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (system != null) __obj.updateDynamic("system")(system.asInstanceOf[js.Any])
-    if (!js.isUndefined(userSelected)) __obj.updateDynamic("userSelected")(userSelected.asInstanceOf[js.Any])
+    if (!js.isUndefined(userSelected)) __obj.updateDynamic("userSelected")(userSelected.get.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Coding]
   }

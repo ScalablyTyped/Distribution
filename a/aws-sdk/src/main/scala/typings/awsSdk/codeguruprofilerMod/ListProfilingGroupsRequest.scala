@@ -23,13 +23,13 @@ trait ListProfilingGroupsRequest extends js.Object {
 object ListProfilingGroupsRequest {
   @scala.inline
   def apply(
-    includeDescription: js.UndefOr[scala.Boolean] = js.undefined,
-    maxResults: Int | Double = null,
+    includeDescription: js.UndefOr[Boolean] = js.undefined,
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
     nextToken: PaginationToken = null
   ): ListProfilingGroupsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeDescription)) __obj.updateDynamic("includeDescription")(includeDescription.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeDescription)) __obj.updateDynamic("includeDescription")(includeDescription.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProfilingGroupsRequest]
   }

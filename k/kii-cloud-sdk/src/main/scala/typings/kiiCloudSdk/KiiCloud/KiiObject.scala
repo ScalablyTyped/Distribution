@@ -1,9 +1,9 @@
 package typings.kiiCloudSdk.KiiCloud
 
-import typings.kiiCloudSdk.Anon15
-import typings.kiiCloudSdk.Anon16
-import typings.kiiCloudSdk.Anon17
-import typings.kiiCloudSdk.Anon18
+import typings.kiiCloudSdk.anon.`12`
+import typings.kiiCloudSdk.anon.`13`
+import typings.kiiCloudSdk.anon.`14`
+import typings.kiiCloudSdk.anon.`15`
 import typings.std.Blob
 import typings.std.Date
 import scala.scalajs.js
@@ -13,9 +13,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a KiiObject object
   */
-@JSGlobal("KiiCloud.KiiObject")
 @js.native
-class KiiObject () extends js.Object {
+trait KiiObject extends js.Object {
   /**
     * Delete the object from the server
     *
@@ -57,7 +56,7 @@ class KiiObject () extends js.Object {
     *     );
     */
   def delete(): js.Promise[KiiObject] = js.native
-  def delete(callbacks: Anon15): js.Promise[KiiObject] = js.native
+  def delete(callbacks: `12`): js.Promise[KiiObject] = js.native
   /**
     * Delete the object body from the server.<br>
     * If the KiiObject has not saved on the cloud or deleted
@@ -102,7 +101,7 @@ class KiiObject () extends js.Object {
     *     );
     */
   def deleteBody(): js.Promise[KiiObject] = js.native
-  def deleteBody(callbacks: Anon15): js.Promise[KiiObject] = js.native
+  def deleteBody(callbacks: `12`): js.Promise[KiiObject] = js.native
   /**
     * Download body data of this object.<br>
     * If the KiiObject has not saved on the cloud or deleted
@@ -177,7 +176,7 @@ class KiiObject () extends js.Object {
     *     );
     */
   def downloadBody(): js.Promise[js.Tuple2[KiiObject, Blob]] = js.native
-  def downloadBody(callbacks: Anon17): js.Promise[js.Tuple2[KiiObject, Blob]] = js.native
+  def downloadBody(callbacks: `14`): js.Promise[js.Tuple2[KiiObject, Blob]] = js.native
   /**
     * Gets the value associated with the given key
     *
@@ -304,7 +303,7 @@ class KiiObject () extends js.Object {
     *     );
     */
   def moveBody(targetObjectUri: String): js.Promise[js.Tuple2[KiiObject, String]] = js.native
-  def moveBody(targetObjectUri: String, callbacks: Anon16): js.Promise[js.Tuple2[KiiObject, String]] = js.native
+  def moveBody(targetObjectUri: String, callbacks: `13`): js.Promise[js.Tuple2[KiiObject, String]] = js.native
   /**
     * Get the ACL handle for this file
     *
@@ -313,8 +312,8 @@ class KiiObject () extends js.Object {
     * @return A KiiACL object associated with this KiiObject
     *
     * @example
-    *     	var obj = . . .; // a KiiObject
-    *     	var acl = obj.objectACL();
+    *         var obj = . . .; // a KiiObject
+    *         var acl = obj.objectACL();
     */
   def objectACL(): KiiACL = js.native
   /**
@@ -381,7 +380,7 @@ class KiiObject () extends js.Object {
     *     );
     */
   def publishBody(): js.Promise[js.Tuple2[KiiObject, String]] = js.native
-  def publishBody(callbacks: Anon18): js.Promise[js.Tuple2[KiiObject, String]] = js.native
+  def publishBody(callbacks: `15`): js.Promise[js.Tuple2[KiiObject, String]] = js.native
   /**
     * Publish object body with expiration date.<br>
     * Publish object body and obtain public URL links to the body.<br>
@@ -437,7 +436,7 @@ class KiiObject () extends js.Object {
     *     );
     */
   def publishBodyExpiresAt(expiresAt: Date): js.Promise[js.Tuple2[KiiObject, String]] = js.native
-  def publishBodyExpiresAt(expiresAt: Date, callbacks: Anon18): js.Promise[js.Tuple2[KiiObject, String]] = js.native
+  def publishBodyExpiresAt(expiresAt: Date, callbacks: `15`): js.Promise[js.Tuple2[KiiObject, String]] = js.native
   /**
     * Publish object body with expiration duration.<br>
     * Publish object body and obtain public URL links to the body.<br>
@@ -493,7 +492,7 @@ class KiiObject () extends js.Object {
     *     );
     */
   def publishBodyExpiresIn(expiresIn: Double): js.Promise[js.Tuple2[KiiObject, String]] = js.native
-  def publishBodyExpiresIn(expiresIn: Double, callbacks: Anon18): js.Promise[js.Tuple2[KiiObject, String]] = js.native
+  def publishBodyExpiresIn(expiresIn: Double, callbacks: `15`): js.Promise[js.Tuple2[KiiObject, String]] = js.native
   /**
     * Updates the local object's data with the user data on the server
     *
@@ -537,7 +536,7 @@ class KiiObject () extends js.Object {
     *     );
     */
   def refresh(): js.Promise[KiiObject] = js.native
-  def refresh(callbacks: Anon15): js.Promise[KiiObject] = js.native
+  def refresh(callbacks: `12`): js.Promise[KiiObject] = js.native
   /**
     * Removes a pair of key/value from this object.
     * This pair is also removed from server when saveAllFields() is succeeded.
@@ -606,8 +605,8 @@ class KiiObject () extends js.Object {
     *     );
     */
   def save(): js.Promise[KiiObject] = js.native
-  def save(callbacks: Anon15): js.Promise[KiiObject] = js.native
-  def save(callbacks: Anon15, overwrite: Boolean): js.Promise[KiiObject] = js.native
+  def save(callbacks: `12`): js.Promise[KiiObject] = js.native
+  def save(callbacks: `12`, overwrite: Boolean): js.Promise[KiiObject] = js.native
   /**
     * Create or update the KiiObject on KiiCloud.
     * <br><br>When call this method for the object that has not saved on cloud, will send all fields.
@@ -664,8 +663,8 @@ class KiiObject () extends js.Object {
     *     );
     */
   def saveAllFields(): js.Promise[KiiObject] = js.native
-  def saveAllFields(callbacks: Anon15): js.Promise[KiiObject] = js.native
-  def saveAllFields(callbacks: Anon15, overwrite: Boolean): js.Promise[KiiObject] = js.native
+  def saveAllFields(callbacks: `12`): js.Promise[KiiObject] = js.native
+  def saveAllFields(callbacks: `12`, overwrite: Boolean): js.Promise[KiiObject] = js.native
   /**
     * Sets a key/value pair to a KiiObject
     *
@@ -776,34 +775,6 @@ class KiiObject () extends js.Object {
     *     );
     */
   def uploadBody(srcDataBlob: Blob): js.Promise[KiiObject] = js.native
-  def uploadBody(srcDataBlob: Blob, callbacks: Anon15): js.Promise[KiiObject] = js.native
-}
-
-/* static members */
-@JSGlobal("KiiCloud.KiiObject")
-@js.native
-object KiiObject extends js.Object {
-  /**
-    * Check if given ID is valid for object ID.
-    *  Valid pattern: ^[a-zA-Z0-9-_\\.]{2,100}$
-    *
-    * @param objectID to be checked.
-    *
-    * @return true if given ID is valid, false otherwise.
-    */
-  def isValidObjectID(objectID: String): Boolean = js.native
-  /**
-    * Generate a new KiiObject based on a given URI
-    *
-    * @param uri The URI of the object to be represented
-    *
-    * @return A new KiiObject with its parameters filled in from the URI
-    *
-    * @throws If the URI is not in the proper format
-    *
-    * @example
-    *     var group = new KiiObject.objectWithURI("kiicloud://myuri");
-    */
-  def objectWithURI(uri: String): KiiObject = js.native
+  def uploadBody(srcDataBlob: Blob, callbacks: `12`): js.Promise[KiiObject] = js.native
 }
 

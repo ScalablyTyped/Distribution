@@ -11,10 +11,10 @@ trait DeleteConditionalFormatRuleRequest extends js.Object {
 
 object DeleteConditionalFormatRuleRequest {
   @scala.inline
-  def apply(index: Int | Double = null, sheetId: Int | Double = null): DeleteConditionalFormatRuleRequest = {
+  def apply(index: js.UndefOr[Double] = js.undefined, sheetId: js.UndefOr[Double] = js.undefined): DeleteConditionalFormatRuleRequest = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (sheetId != null) __obj.updateDynamic("sheetId")(sheetId.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetId)) __obj.updateDynamic("sheetId")(sheetId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteConditionalFormatRuleRequest]
   }
 }

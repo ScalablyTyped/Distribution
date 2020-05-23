@@ -1,6 +1,5 @@
 package typings.bingmaps.Microsoft.Maps
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,14 +17,6 @@ object NavigationBarOrientation extends js.Object {
   /** Repositions the buttons in the navigation bar such that they are aligned vertically. */
   @js.native
   sealed trait vertical extends NavigationBarOrientation
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NavigationBarOrientation with Double] = js.native
-  /* 0 */ @js.native
-  object horizontal extends TopLevel[horizontal with Double]
-  
-  /* 1 */ @js.native
-  object vertical extends TopLevel[vertical with Double]
   
 }
 

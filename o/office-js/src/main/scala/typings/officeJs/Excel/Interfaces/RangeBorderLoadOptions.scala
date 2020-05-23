@@ -18,14 +18,14 @@ trait RangeBorderLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     *
     * [Api set: ExcelApi 1.1]
     */
   var color: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only.
+    * Constant value that indicates the specific side of the border. See Excel.BorderIndex for details.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -39,7 +39,7 @@ trait RangeBorderLoadOptions extends js.Object {
   var style: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns or sets a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+    * Specifies a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
     A null value indicates that the border doesn't have uniform tintAndShade setting.
     *
     * [Api set: ExcelApi 1.9]
@@ -65,12 +65,12 @@ object RangeBorderLoadOptions {
     weight: js.UndefOr[Boolean] = js.undefined
   ): RangeBorderLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(sideIndex)) __obj.updateDynamic("sideIndex")(sideIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(tintAndShade)) __obj.updateDynamic("tintAndShade")(tintAndShade.asInstanceOf[js.Any])
-    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sideIndex)) __obj.updateDynamic("sideIndex")(sideIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tintAndShade)) __obj.updateDynamic("tintAndShade")(tintAndShade.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeBorderLoadOptions]
   }
 }

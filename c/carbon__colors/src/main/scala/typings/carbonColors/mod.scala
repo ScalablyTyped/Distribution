@@ -1,5 +1,10 @@
 package typings.carbonColors
 
+import typings.carbonColors.anon.`0`
+import typings.carbonColors.anon.`100`
+import typings.carbonColors.anon.`10`
+import typings.carbonColors.anon.`20`
+import typings.carbonColors.anon.`40`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -131,20 +136,20 @@ object mod extends js.Object {
   
   @js.native
   object colors extends js.Object {
-    var black: Anon100 = js.native
-    var blue: Anon10 = js.native
-    var coolGray: Anon10 = js.native
-    var cyan: Anon10 = js.native
-    var gray: Anon10 = js.native
-    var green: Anon10 = js.native
-    var magenta: Anon10 = js.native
-    var orange: Anon40 = js.native
-    var purple: Anon10 = js.native
-    var red: Anon10 = js.native
-    var teal: Anon10 = js.native
-    var warmGray: Anon10 = js.native
-    var white: Anon0 = js.native
-    var yellow: Anon20 = js.native
+    var black: `100` = js.native
+    var blue: `10` = js.native
+    var coolGray: `10` = js.native
+    var cyan: `10` = js.native
+    var gray: `10` = js.native
+    var green: `10` = js.native
+    var magenta: `10` = js.native
+    var orange: `40` = js.native
+    var purple: `10` = js.native
+    var red: `10` = js.native
+    var teal: `10` = js.native
+    var warmGray: `10` = js.native
+    var white: `0` = js.native
+    var yellow: `20` = js.native
   }
   
   @js.native

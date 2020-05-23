@@ -13,36 +13,36 @@ trait IProfile extends IObservable {
   /** [Config Option] (Array) */
   var controllers: js.UndefOr[Array] = js.undefined
   /** [Method] Returns the value of application
-  		* @returns Ext.app.Application
-  		*/
+    * @returns Ext.app.Application
+    */
   var getApplication: js.UndefOr[js.Function0[IApplication]] = js.undefined
   /** [Method] Returns the value of controllers
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getControllers: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the value of models
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getModels: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the value of name
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of namespace
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getNamespace: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of stores
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getStores: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the value of views
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getViews: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Determines whether or not this Profile is active on the device isActive is executed on
-  		* @returns Boolean True if this Profile should be activated on the device it is running on, false otherwise
-  		*/
+    * @returns Boolean True if this Profile should be activated on the device it is running on, false otherwise
+    */
   var isActive: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] The launch function is called by the Application if this Profile s isActive function returned true  */
   var launch: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -53,41 +53,41 @@ trait IProfile extends IObservable {
   /** [Config Option] (String) */
   var namespace: js.UndefOr[String] = js.undefined
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
-  		* @param object Object The Observable whose events this object is to relay.
-  		* @param events String/Array/Object Array of event names to relay.
-  		* @returns Ext.mixin.Observable this
-  		*/
+    * @param object Object The Observable whose events this object is to relay.
+    * @param events String/Array/Object Array of event names to relay.
+    * @returns Ext.mixin.Observable this
+    */
   @JSName("relayEvents")
   var relayEvents_IProfile: js.UndefOr[
     js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
   ] = js.undefined
   /** [Method] Sets the value of application
-  		* @param application Ext.app.Application The new value.
-  		*/
+    * @param application Ext.app.Application The new value.
+    */
   var setApplication: js.UndefOr[js.Function1[/* application */ js.UndefOr[IApplication], Unit]] = js.undefined
   /** [Method] Sets the value of controllers
-  		* @param controllers Array The new value.
-  		*/
+    * @param controllers Array The new value.
+    */
   var setControllers: js.UndefOr[js.Function1[/* controllers */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Sets the value of models
-  		* @param models Array The new value.
-  		*/
+    * @param models Array The new value.
+    */
   var setModels: js.UndefOr[js.Function1[/* models */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Sets the value of name
-  		* @param name String The new value.
-  		*/
+    * @param name String The new value.
+    */
   var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of namespace
-  		* @param namespace String The new value.
-  		*/
+    * @param namespace String The new value.
+    */
   var setNamespace: js.UndefOr[js.Function1[/* namespace */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of stores
-  		* @param stores Array The new value.
-  		*/
+    * @param stores Array The new value.
+    */
   var setStores: js.UndefOr[js.Function1[/* stores */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Sets the value of views
-  		* @param views Array The new value.
-  		*/
+    * @param views Array The new value.
+    */
   var setViews: js.UndefOr[js.Function1[/* views */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Config Option] (Array) */
   var stores: js.UndefOr[Array] = js.undefined
@@ -235,7 +235,7 @@ object IProfile {
     if (setNamespace != null) __obj.updateDynamic("setNamespace")(js.Any.fromFunction1(setNamespace))
     if (setStores != null) __obj.updateDynamic("setStores")(js.Any.fromFunction1(setStores))
     if (setViews != null) __obj.updateDynamic("setViews")(js.Any.fromFunction1(setViews))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (stores != null) __obj.updateDynamic("stores")(stores.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))

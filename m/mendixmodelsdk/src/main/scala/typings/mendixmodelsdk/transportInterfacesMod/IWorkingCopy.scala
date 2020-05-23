@@ -36,8 +36,7 @@ object IWorkingCopy {
     uploadDateTime: Double,
     mergeData: ILockData = null
   ): IWorkingCopy = {
-    val __obj = js.Dynamic.literal(changed = changed.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isCollaboration = isCollaboration.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], metaData = metaData.asInstanceOf[js.Any], mprFileName = mprFileName.asInstanceOf[js.Any], mprMetaData = mprMetaData.asInstanceOf[js.Any], uploadDateTime = uploadDateTime.asInstanceOf[js.Any])
-    if (mergeData != null) __obj.updateDynamic("mergeData")(mergeData.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(changed = changed.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isCollaboration = isCollaboration.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], metaData = metaData.asInstanceOf[js.Any], mprFileName = mprFileName.asInstanceOf[js.Any], mprMetaData = mprMetaData.asInstanceOf[js.Any], uploadDateTime = uploadDateTime.asInstanceOf[js.Any], mergeData = mergeData.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWorkingCopy]
   }
 }

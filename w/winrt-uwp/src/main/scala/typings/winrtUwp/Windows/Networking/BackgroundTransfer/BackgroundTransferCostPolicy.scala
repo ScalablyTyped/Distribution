@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.BackgroundTransfer
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object BackgroundTransferCostPolicy extends js.Object {
   /** Do not allow transfers on metered networks. */
   @js.native
   sealed trait unrestrictedOnly extends BackgroundTransferCostPolicy
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BackgroundTransferCostPolicy with Double] = js.native
-  /* 2 */ @js.native
-  object always extends TopLevel[always with Double]
-  
-  /* 0 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 1 */ @js.native
-  object unrestrictedOnly extends TopLevel[unrestrictedOnly with Double]
   
 }
 

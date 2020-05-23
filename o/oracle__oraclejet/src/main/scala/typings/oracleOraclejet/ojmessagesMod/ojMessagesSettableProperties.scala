@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojmessagesMod
 
-import typings.oracleOraclejet.AnonAriaLiveRegion
+import typings.oracleOraclejet.anon.AriaLiveRegion
 import typings.oracleOraclejet.mod.JetSettableProperties
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojmessageMod.ojMessage.DisplayOptions
@@ -17,7 +17,7 @@ trait ojMessagesSettableProperties extends JetSettableProperties {
   var displayOptions: DisplayOptions
   var messages: js.Array[Message] | Null | (DataProvider[_, Message])
   var position: Position | Null
-  var translations: AnonAriaLiveRegion
+  var translations: AriaLiveRegion
 }
 
 object ojMessagesSettableProperties {
@@ -25,13 +25,11 @@ object ojMessagesSettableProperties {
   def apply(
     display: general | notification,
     displayOptions: DisplayOptions,
-    translations: AnonAriaLiveRegion,
+    translations: AriaLiveRegion,
     messages: js.Array[Message] | (DataProvider[_, Message]) = null,
     position: Position = null
   ): ojMessagesSettableProperties = {
-    val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojMessagesSettableProperties]
   }
 }

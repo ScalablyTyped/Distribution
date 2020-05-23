@@ -38,13 +38,13 @@ object CreateAlgorithmInput {
     AlgorithmName: EntityName,
     TrainingSpecification: TrainingSpecification,
     AlgorithmDescription: EntityDescription = null,
-    CertifyForMarketplace: js.UndefOr[scala.Boolean] = js.undefined,
+    CertifyForMarketplace: js.UndefOr[CertifyForMarketplace] = js.undefined,
     InferenceSpecification: InferenceSpecification = null,
     ValidationSpecification: AlgorithmValidationSpecification = null
   ): CreateAlgorithmInput = {
     val __obj = js.Dynamic.literal(AlgorithmName = AlgorithmName.asInstanceOf[js.Any], TrainingSpecification = TrainingSpecification.asInstanceOf[js.Any])
     if (AlgorithmDescription != null) __obj.updateDynamic("AlgorithmDescription")(AlgorithmDescription.asInstanceOf[js.Any])
-    if (!js.isUndefined(CertifyForMarketplace)) __obj.updateDynamic("CertifyForMarketplace")(CertifyForMarketplace.asInstanceOf[js.Any])
+    if (!js.isUndefined(CertifyForMarketplace)) __obj.updateDynamic("CertifyForMarketplace")(CertifyForMarketplace.get.asInstanceOf[js.Any])
     if (InferenceSpecification != null) __obj.updateDynamic("InferenceSpecification")(InferenceSpecification.asInstanceOf[js.Any])
     if (ValidationSpecification != null) __obj.updateDynamic("ValidationSpecification")(ValidationSpecification.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAlgorithmInput]

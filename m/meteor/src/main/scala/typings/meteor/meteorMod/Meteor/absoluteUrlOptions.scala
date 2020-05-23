@@ -18,9 +18,9 @@ object absoluteUrlOptions {
     secure: js.UndefOr[Boolean] = js.undefined
   ): absoluteUrlOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(replaceLocalhost)) __obj.updateDynamic("replaceLocalhost")(replaceLocalhost.asInstanceOf[js.Any])
+    if (!js.isUndefined(replaceLocalhost)) __obj.updateDynamic("replaceLocalhost")(replaceLocalhost.get.asInstanceOf[js.Any])
     if (rootUrl != null) __obj.updateDynamic("rootUrl")(rootUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[absoluteUrlOptions]
   }
 }

@@ -19,12 +19,12 @@ object ButtonInformation {
   def apply(
     icon: String,
     title: String,
-    buttonStyle: StyleProp[ViewStyle] = null,
-    titleStyle: StyleProp[TextStyle] = null
+    buttonStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    titleStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined
   ): ButtonInformation = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])
-    if (titleStyle != null) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(buttonStyle)) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(titleStyle)) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonInformation]
   }
 }

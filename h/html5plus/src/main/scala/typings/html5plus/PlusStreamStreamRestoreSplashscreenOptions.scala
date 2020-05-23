@@ -21,7 +21,7 @@ trait PlusStreamStreamRestoreSplashscreenOptions extends js.Object {
   /**
     * 启动界面超时时间
     * 单位为毫秒（ms），当启动界面超过此时间仍然未关闭时（不管autoclose值设置true还是false），应用将自动关闭启动界面。
-    * 	默认值为6000（即6秒）。
+    *     默认值为6000（即6秒）。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
@@ -30,10 +30,10 @@ trait PlusStreamStreamRestoreSplashscreenOptions extends js.Object {
 
 object PlusStreamStreamRestoreSplashscreenOptions {
   @scala.inline
-  def apply(autoclose: js.UndefOr[Boolean] = js.undefined, timeout: Int | Double = null): PlusStreamStreamRestoreSplashscreenOptions = {
+  def apply(autoclose: js.UndefOr[Boolean] = js.undefined, timeout: js.UndefOr[Double] = js.undefined): PlusStreamStreamRestoreSplashscreenOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusStreamStreamRestoreSplashscreenOptions]
   }
 }

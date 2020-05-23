@@ -16,6 +16,7 @@ trait BrowserFetcher extends js.Object {
   ): js.Promise[RevisionInfo] = js.native
   def localRevisions(): js.Promise[js.Array[String]] = js.native
   def platform(): Platform = js.native
+  def product(): Product = js.native
   def remove(revision: String): js.Promise[Unit] = js.native
   def revisionInfo(revision: String): RevisionInfo = js.native
 }

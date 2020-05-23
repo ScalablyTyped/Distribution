@@ -33,8 +33,8 @@ object MapboxImageryProviderOptions {
     credit: Credit | String = null,
     ellipsoid: Ellipsoid = null,
     format: String = null,
-    maximumLevel: Int | Double = null,
-    minimumLevel: Int | Double = null,
+    maximumLevel: js.UndefOr[Double] = js.undefined,
+    minimumLevel: js.UndefOr[Double] = js.undefined,
     rectangle: Rectangle = null,
     url: String = null
   ): MapboxImageryProviderOptions = {
@@ -43,8 +43,8 @@ object MapboxImageryProviderOptions {
     if (credit != null) __obj.updateDynamic("credit")(credit.asInstanceOf[js.Any])
     if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (maximumLevel != null) __obj.updateDynamic("maximumLevel")(maximumLevel.asInstanceOf[js.Any])
-    if (minimumLevel != null) __obj.updateDynamic("minimumLevel")(minimumLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumLevel)) __obj.updateDynamic("maximumLevel")(maximumLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumLevel)) __obj.updateDynamic("minimumLevel")(minimumLevel.get.asInstanceOf[js.Any])
     if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapboxImageryProviderOptions]

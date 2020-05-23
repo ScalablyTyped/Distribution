@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.Diagram
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,38 +49,6 @@ object BPMNTasks extends js.Object {
   //Used to set BPMN Task Type as User
   @js.native
   sealed trait User extends BPMNTasks
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BPMNTasks with Double] = js.native
-  /* 6 */ @js.native
-  object BusinessRule extends TopLevel[BusinessRule with Double]
-  
-  /* 4 */ @js.native
-  object InstantiatingReceive extends TopLevel[InstantiatingReceive with Double]
-  
-  /* 5 */ @js.native
-  object Manual extends TopLevel[Manual with Double]
-  
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 9 */ @js.native
-  object Parallel extends TopLevel[Parallel with Double]
-  
-  /* 2 */ @js.native
-  object Receive extends TopLevel[Receive with Double]
-  
-  /* 8 */ @js.native
-  object Script extends TopLevel[Script with Double]
-  
-  /* 3 */ @js.native
-  object Send extends TopLevel[Send with Double]
-  
-  /* 1 */ @js.native
-  object Service extends TopLevel[Service with Double]
-  
-  /* 7 */ @js.native
-  object User extends TopLevel[User with Double]
   
 }
 

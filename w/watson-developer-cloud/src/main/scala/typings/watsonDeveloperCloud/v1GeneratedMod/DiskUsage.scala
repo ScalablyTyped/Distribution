@@ -14,10 +14,13 @@ trait DiskUsage extends js.Object {
 
 object DiskUsage {
   @scala.inline
-  def apply(maximum_allowed_bytes: Int | Double = null, used_bytes: Int | Double = null): DiskUsage = {
+  def apply(
+    maximum_allowed_bytes: js.UndefOr[Double] = js.undefined,
+    used_bytes: js.UndefOr[Double] = js.undefined
+  ): DiskUsage = {
     val __obj = js.Dynamic.literal()
-    if (maximum_allowed_bytes != null) __obj.updateDynamic("maximum_allowed_bytes")(maximum_allowed_bytes.asInstanceOf[js.Any])
-    if (used_bytes != null) __obj.updateDynamic("used_bytes")(used_bytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximum_allowed_bytes)) __obj.updateDynamic("maximum_allowed_bytes")(maximum_allowed_bytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(used_bytes)) __obj.updateDynamic("used_bytes")(used_bytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiskUsage]
   }
 }

@@ -26,9 +26,14 @@ trait ListRevisionAssetsRequest extends js.Object {
 
 object ListRevisionAssetsRequest {
   @scala.inline
-  def apply(DataSetId: string, RevisionId: string, MaxResults: Int | Double = null, NextToken: string = null): ListRevisionAssetsRequest = {
+  def apply(
+    DataSetId: string,
+    RevisionId: string,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    NextToken: string = null
+  ): ListRevisionAssetsRequest = {
     val __obj = js.Dynamic.literal(DataSetId = DataSetId.asInstanceOf[js.Any], RevisionId = RevisionId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRevisionAssetsRequest]
   }

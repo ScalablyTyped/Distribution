@@ -38,7 +38,7 @@ trait MessagingDevicesResponse extends js.Object {
     * the same index in this array. If only a single registration token is
     * provided, this array will contain a single object.
     */
-  var results: js.Array[MessagingDeviceResult]
+  var results: js.Array[typings.firebaseAdmin.messagingMod.admin.messaging.MessagingDeviceResult]
   /**
     * The number of messages that were successfully processed and sent.
     */
@@ -51,7 +51,7 @@ object MessagingDevicesResponse {
     canonicalRegistrationTokenCount: Double,
     failureCount: Double,
     multicastId: Double,
-    results: js.Array[MessagingDeviceResult],
+    results: js.Array[typings.firebaseAdmin.messagingMod.admin.messaging.MessagingDeviceResult],
     successCount: Double
   ): MessagingDevicesResponse = {
     val __obj = js.Dynamic.literal(canonicalRegistrationTokenCount = canonicalRegistrationTokenCount.asInstanceOf[js.Any], failureCount = failureCount.asInstanceOf[js.Any], multicastId = multicastId.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], successCount = successCount.asInstanceOf[js.Any])

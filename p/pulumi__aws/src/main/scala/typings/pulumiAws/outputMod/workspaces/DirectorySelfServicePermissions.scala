@@ -38,11 +38,11 @@ object DirectorySelfServicePermissions {
     switchRunningMode: js.UndefOr[Boolean] = js.undefined
   ): DirectorySelfServicePermissions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(changeComputeType)) __obj.updateDynamic("changeComputeType")(changeComputeType.asInstanceOf[js.Any])
-    if (!js.isUndefined(increaseVolumeSize)) __obj.updateDynamic("increaseVolumeSize")(increaseVolumeSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(rebuildWorkspace)) __obj.updateDynamic("rebuildWorkspace")(rebuildWorkspace.asInstanceOf[js.Any])
-    if (!js.isUndefined(restartWorkspace)) __obj.updateDynamic("restartWorkspace")(restartWorkspace.asInstanceOf[js.Any])
-    if (!js.isUndefined(switchRunningMode)) __obj.updateDynamic("switchRunningMode")(switchRunningMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(changeComputeType)) __obj.updateDynamic("changeComputeType")(changeComputeType.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(increaseVolumeSize)) __obj.updateDynamic("increaseVolumeSize")(increaseVolumeSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rebuildWorkspace)) __obj.updateDynamic("rebuildWorkspace")(rebuildWorkspace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(restartWorkspace)) __obj.updateDynamic("restartWorkspace")(restartWorkspace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(switchRunningMode)) __obj.updateDynamic("switchRunningMode")(switchRunningMode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectorySelfServicePermissions]
   }
 }

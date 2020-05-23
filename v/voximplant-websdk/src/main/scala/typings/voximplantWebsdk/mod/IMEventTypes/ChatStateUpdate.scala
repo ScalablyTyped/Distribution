@@ -7,20 +7,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		*	Event dispatched when chat session state updated
-		*/
+  *    Event dispatched when chat session state updated
+  */
 trait ChatStateUpdate extends VoxImplantIMEvent {
   /**
-  			*	User id
-  			*/
+    *    User id
+    */
   var id: String
   /**
-  			*	Resource name
-  			*/
+    *    Resource name
+    */
   var resource: js.UndefOr[String] = js.undefined
   /**
-  			*	Current chat session state. See VoxImplant.ChatStateType enum
-  			*/
+    *    Current chat session state. See VoxImplant.ChatStateType enum
+    */
   var state: ChatStateType
 }
 

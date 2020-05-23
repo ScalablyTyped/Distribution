@@ -17,10 +17,10 @@ trait BasicListOptions extends js.Object {
 
 object BasicListOptions {
   @scala.inline
-  def apply(limit: Int | Double = null, page: Int | Double = null): BasicListOptions = {
+  def apply(limit: js.UndefOr[Double] = js.undefined, page: js.UndefOr[Double] = js.undefined): BasicListOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasicListOptions]
   }
 }

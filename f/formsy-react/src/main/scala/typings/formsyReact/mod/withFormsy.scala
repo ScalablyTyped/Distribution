@@ -29,7 +29,7 @@ object withFormsy extends js.Object {
   def apply[T, V](WrappedComponent: ComponentType[T with PassDownProps[V]]): ComponentType[
     Omit[
       T with WrapperProps[V], 
-      errorMessage | errorMessages | hasValue | isFormDisabled | isFormSubmitted | isPristine | isRequired | isValid | isValidValue | ref | resetValue | setValidations | setValue | showError | showRequired
+      /* keyof formsy-react.formsy-react/dist/Wrapper.InjectedProps<V> */ errorMessage | errorMessages | hasValue | isFormDisabled | isFormSubmitted | isPristine | isRequired | isValid | isValidValue | ref | resetValue | setValidations | setValue | showError | showRequired
     ]
   ] = js.native
 }

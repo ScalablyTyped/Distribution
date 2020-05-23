@@ -4,28 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.AnimationRange")
-@js.native
-class AnimationRange protected () extends js.Object {
-  /**
-    * Initializes the range of an animation
-    * @param name The name of the animation range
-    * @param from The starting frame of the animation
-    * @param to The ending frame of the animation
-    */
-  def this(
-    /**The name of the animation range**/
-  name: String,
-    /**The starting frame of the animation */
-  from: Double,
-    /**The ending frame of the animation*/
-  to: Double
-  ) = this()
+trait AnimationRange extends js.Object {
   /**The starting frame of the animation */
-  var from: Double = js.native
+  var from: Double
   /**The name of the animation range**/
-  var name: String = js.native
+  var name: String
   /**The ending frame of the animation*/
-  var to: Double = js.native
+  var to: Double
+}
+
+object AnimationRange {
+  @scala.inline
+  def apply(from: Double, name: String, to: Double): AnimationRange = {
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnimationRange]
+  }
 }
 

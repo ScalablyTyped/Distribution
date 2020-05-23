@@ -15,17 +15,17 @@ trait Connection extends js.Object {
 object Connection {
   @scala.inline
   def apply(
-    downlink: Int | Double = null,
+    downlink: js.UndefOr[Double] = js.undefined,
     downlinkMax: js.Any = null,
     effectiveType: String = null,
-    rtt: Int | Double = null,
+    rtt: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): Connection = {
     val __obj = js.Dynamic.literal()
-    if (downlink != null) __obj.updateDynamic("downlink")(downlink.asInstanceOf[js.Any])
+    if (!js.isUndefined(downlink)) __obj.updateDynamic("downlink")(downlink.get.asInstanceOf[js.Any])
     if (downlinkMax != null) __obj.updateDynamic("downlinkMax")(downlinkMax.asInstanceOf[js.Any])
     if (effectiveType != null) __obj.updateDynamic("effectiveType")(effectiveType.asInstanceOf[js.Any])
-    if (rtt != null) __obj.updateDynamic("rtt")(rtt.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtt)) __obj.updateDynamic("rtt")(rtt.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Connection]
   }

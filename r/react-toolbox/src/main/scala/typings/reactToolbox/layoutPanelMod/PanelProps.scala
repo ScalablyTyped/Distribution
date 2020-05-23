@@ -50,7 +50,7 @@ object PanelProps {
     theme: PanelTheme = null
   ): PanelProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bodyScroll)) __obj.updateDynamic("bodyScroll")(bodyScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(bodyScroll)) __obj.updateDynamic("bodyScroll")(bodyScroll.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])

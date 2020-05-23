@@ -2,17 +2,14 @@ package typings.sharepoint.SP.UserProfiles
 
 import typings.sharepoint.SP.BooleanResult
 import typings.sharepoint.SP.ClientObject
-import typings.sharepoint.SP.ClientRuntimeContext
 import typings.sharepoint.SP.IntResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides access to followed content items. */
-@JSGlobal("SP.UserProfiles.FollowedContent")
 @js.native
-class FollowedContent protected () extends ClientObject {
-  def this(context: ClientRuntimeContext) = this()
+trait FollowedContent extends ClientObject {
   /** Finds the original item that is being pointed to in the Followed Content list and updates the Title, Url, and IconUrl fields if they have been changed.
     @param url The URL of the original item as stored in the Followed Content list. */
   def findAndUpdateFollowedItem(url: String): FollowedItem = js.native
@@ -66,12 +63,5 @@ class FollowedContent protected () extends ClientObject {
     The url parameter can also identify a document with the following format: http:// host/site?listId=<listGuid>&itemId=<itemId>
     @param data Application-defined data stored with the followed item. */
   def updateData(url: String, data: FollowedItemData): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("SP.UserProfiles.FollowedContent")
-@js.native
-object FollowedContent extends js.Object {
-  def newObject(context: ClientRuntimeContext): FollowedContent = js.native
 }
 

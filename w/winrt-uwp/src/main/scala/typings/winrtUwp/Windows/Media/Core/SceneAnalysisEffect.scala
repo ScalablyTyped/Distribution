@@ -10,9 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents an effect that analyzes video frames to determine if any of the supported variable photo sequence capture techniques may produce a higher-quality captured image. */
-@JSGlobal("Windows.Media.Core.SceneAnalysisEffect")
 @js.native
-abstract class SceneAnalysisEffect () extends js.Object {
+trait SceneAnalysisEffect extends js.Object {
   /** Gets or sets the duration of the time window during which video frames are analyzed. */
   var desiredAnalysisInterval: Double = js.native
   /** Gets or sets a HighDynamicRangeControl object that is used to enable or disable High Dynamic Range (HDR) analysis. */

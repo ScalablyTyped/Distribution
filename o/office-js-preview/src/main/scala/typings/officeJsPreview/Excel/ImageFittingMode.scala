@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object ImageFittingMode extends js.Object {
   
   @js.native
   sealed trait fitAndCenter extends ImageFittingMode
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ImageFittingMode with String] = js.native
-  /* "Fill" */ @js.native
-  object fill extends TopLevel[fill with String]
-  
-  /* "Fit" */ @js.native
-  object fit extends TopLevel[fit with String]
-  
-  /* "FitAndCenter" */ @js.native
-  object fitAndCenter extends TopLevel[fitAndCenter with String]
   
 }
 

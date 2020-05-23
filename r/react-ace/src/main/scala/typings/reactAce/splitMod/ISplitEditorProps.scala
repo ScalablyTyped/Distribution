@@ -6,7 +6,7 @@ import typings.reactAce.typesMod.IAnnotation
 import typings.reactAce.typesMod.ICommand
 import typings.reactAce.typesMod.IEditorProps
 import typings.reactAce.typesMod.IMarker
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,11 +34,11 @@ trait ISplitEditorProps
   var mode: js.UndefOr[String] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var onBeforeLoad: js.UndefOr[js.Function1[/* ace */ js.Any, Unit]] = js.undefined
-  var onBlur: js.UndefOr[js.Function1[/* value */ Event_, Unit]] = js.undefined
+  var onBlur: js.UndefOr[js.Function1[/* value */ Event, Unit]] = js.undefined
   var onChange: js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
   var onCopy: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
   var onCursorChange: js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var onFocus: js.UndefOr[js.Function1[/* value */ Event_, Unit]] = js.undefined
+  var onFocus: js.UndefOr[js.Function1[/* value */ Event, Unit]] = js.undefined
   var onInput: js.UndefOr[js.Function1[/* event */ js.UndefOr[js.Any], Unit]] = js.undefined
   var onLoad: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.undefined
   var onPaste: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
@@ -66,12 +66,12 @@ object ISplitEditorProps {
   def apply(
     splits: Double,
     style: js.Any,
-    StringDictionary: /* index */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     annotations: js.Array[js.Array[IAnnotation]] = null,
     className: String = null,
     commands: js.Array[ICommand] = null,
-    cursorStart: Int | Double = null,
-    debounceChangePeriod: Int | Double = null,
+    cursorStart: js.UndefOr[Double] = js.undefined,
+    debounceChangePeriod: js.UndefOr[Double] = js.undefined,
     defaultValue: js.Array[String] = null,
     editorProps: IEditorProps = null,
     enableBasicAutocompletion: Boolean | js.Array[String] = null,
@@ -82,16 +82,16 @@ object ISplitEditorProps {
     highlightActiveLine: js.UndefOr[Boolean] = js.undefined,
     keyboardHandler: String = null,
     markers: js.Array[js.Array[IMarker]] = null,
-    maxLines: Int | Double = null,
-    minLines: Int | Double = null,
+    maxLines: js.UndefOr[Double] = js.undefined,
+    minLines: js.UndefOr[Double] = js.undefined,
     mode: String = null,
     name: String = null,
     onBeforeLoad: /* ace */ js.Any => Unit = null,
-    onBlur: /* value */ Event_ => Unit = null,
+    onBlur: /* value */ Event => Unit = null,
     onChange: (/* value */ js.Array[String], /* event */ js.UndefOr[js.Any]) => Unit = null,
     onCopy: /* value */ String => Unit = null,
     onCursorChange: (/* value */ js.Any, /* event */ js.UndefOr[js.Any]) => Unit = null,
-    onFocus: /* value */ Event_ => Unit = null,
+    onFocus: /* value */ Event => Unit = null,
     onInput: /* event */ js.UndefOr[js.Any] => Unit = null,
     onLoad: /* editor */ IEditorProps => Unit = null,
     onPaste: /* value */ String => Unit = null,
@@ -104,7 +104,7 @@ object ISplitEditorProps {
     setOptions: IAceOptions = null,
     showGutter: js.UndefOr[Boolean] = js.undefined,
     showPrintMargin: js.UndefOr[Boolean] = js.undefined,
-    tabSize: Int | Double = null,
+    tabSize: js.UndefOr[Double] = js.undefined,
     theme: String = null,
     value: js.Array[String] = null,
     width: String = null,
@@ -115,20 +115,20 @@ object ISplitEditorProps {
     if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (commands != null) __obj.updateDynamic("commands")(commands.asInstanceOf[js.Any])
-    if (cursorStart != null) __obj.updateDynamic("cursorStart")(cursorStart.asInstanceOf[js.Any])
-    if (debounceChangePeriod != null) __obj.updateDynamic("debounceChangePeriod")(debounceChangePeriod.asInstanceOf[js.Any])
+    if (!js.isUndefined(cursorStart)) __obj.updateDynamic("cursorStart")(cursorStart.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(debounceChangePeriod)) __obj.updateDynamic("debounceChangePeriod")(debounceChangePeriod.get.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (editorProps != null) __obj.updateDynamic("editorProps")(editorProps.asInstanceOf[js.Any])
     if (enableBasicAutocompletion != null) __obj.updateDynamic("enableBasicAutocompletion")(enableBasicAutocompletion.asInstanceOf[js.Any])
     if (enableLiveAutocompletion != null) __obj.updateDynamic("enableLiveAutocompletion")(enableLiveAutocompletion.asInstanceOf[js.Any])
-    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
+    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.get.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightActiveLine)) __obj.updateDynamic("highlightActiveLine")(highlightActiveLine.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightActiveLine)) __obj.updateDynamic("highlightActiveLine")(highlightActiveLine.get.asInstanceOf[js.Any])
     if (keyboardHandler != null) __obj.updateDynamic("keyboardHandler")(keyboardHandler.asInstanceOf[js.Any])
     if (markers != null) __obj.updateDynamic("markers")(markers.asInstanceOf[js.Any])
-    if (maxLines != null) __obj.updateDynamic("maxLines")(maxLines.asInstanceOf[js.Any])
-    if (minLines != null) __obj.updateDynamic("minLines")(minLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLines)) __obj.updateDynamic("maxLines")(maxLines.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minLines)) __obj.updateDynamic("minLines")(minLines.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onBeforeLoad != null) __obj.updateDynamic("onBeforeLoad")(js.Any.fromFunction1(onBeforeLoad))
@@ -144,16 +144,16 @@ object ISplitEditorProps {
     if (onSelection != null) __obj.updateDynamic("onSelection")(js.Any.fromFunction2(onSelection))
     if (onSelectionChange != null) __obj.updateDynamic("onSelectionChange")(js.Any.fromFunction2(onSelectionChange))
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     if (scrollMargin != null) __obj.updateDynamic("scrollMargin")(scrollMargin.asInstanceOf[js.Any])
     if (setOptions != null) __obj.updateDynamic("setOptions")(setOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(showGutter)) __obj.updateDynamic("showGutter")(showGutter.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPrintMargin)) __obj.updateDynamic("showPrintMargin")(showPrintMargin.asInstanceOf[js.Any])
-    if (tabSize != null) __obj.updateDynamic("tabSize")(tabSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(showGutter)) __obj.updateDynamic("showGutter")(showGutter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPrintMargin)) __obj.updateDynamic("showPrintMargin")(showPrintMargin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabSize)) __obj.updateDynamic("tabSize")(tabSize.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapEnabled)) __obj.updateDynamic("wrapEnabled")(wrapEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapEnabled)) __obj.updateDynamic("wrapEnabled")(wrapEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISplitEditorProps]
   }
 }

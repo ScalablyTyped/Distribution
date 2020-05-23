@@ -1,6 +1,5 @@
 package typings.heremaps.H.service
 
-import typings.heremaps.H.service.GeocodingService.Options
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,14 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * This class encapsulates the Geocoding REST API in a service stub with calls to its various resources implemented.
   */
-@JSGlobal("H.service.GeocodingService")
 @js.native
-/**
-  * Constructor
-  * @param opt_options {H.service.GeocodingService.Options=}
-  */
-class GeocodingService_ () extends AbstractRestService {
-  def this(opt_options: Options) = this()
+trait GeocodingService_ extends AbstractRestService {
   /**
     * This method sends a reverse geocoding request to Geocoder REST API and calls the onResult callback function once the service response was received - providing a H.service.ServiceResult
     * object - or the onError callback if a communication error occured.

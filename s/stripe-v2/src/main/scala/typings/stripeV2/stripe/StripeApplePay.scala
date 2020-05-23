@@ -1,6 +1,6 @@
 package typings.stripeV2.stripe
 
-import typings.stripeV2.AnonMessage
+import typings.stripeV2.anon.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait StripeApplePay extends js.Object {
       /* completion */ js.Function1[/* value */ js.Any, Unit], 
       Unit
     ],
-    onErrorHanlder: js.Function1[/* error */ AnonMessage, Unit]
+    onErrorHanlder: js.Function1[/* error */ Message, Unit]
   ): js.Any
   def checkAvailability(resopnseHandler: js.Function1[/* result */ Boolean, Unit]): Unit
 }
@@ -25,7 +25,7 @@ object StripeApplePay {
       /* result */ StripeApplePaySessionResult, 
       /* completion */ js.Function1[/* value */ js.Any, Unit], 
       Unit
-    ], js.Function1[/* error */ AnonMessage, Unit]) => js.Any,
+    ], js.Function1[/* error */ Message, Unit]) => js.Any,
     checkAvailability: js.Function1[/* result */ Boolean, Unit] => Unit
   ): StripeApplePay = {
     val __obj = js.Dynamic.literal(buildSession = js.Any.fromFunction3(buildSession), checkAvailability = js.Any.fromFunction1(checkAvailability))

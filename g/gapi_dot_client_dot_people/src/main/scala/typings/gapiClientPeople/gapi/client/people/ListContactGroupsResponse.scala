@@ -24,13 +24,13 @@ object ListContactGroupsResponse {
     contactGroups: js.Array[ContactGroup] = null,
     nextPageToken: String = null,
     nextSyncToken: String = null,
-    totalItems: Int | Double = null
+    totalItems: js.UndefOr[Double] = js.undefined
   ): ListContactGroupsResponse = {
     val __obj = js.Dynamic.literal()
     if (contactGroups != null) __obj.updateDynamic("contactGroups")(contactGroups.asInstanceOf[js.Any])
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     if (nextSyncToken != null) __obj.updateDynamic("nextSyncToken")(nextSyncToken.asInstanceOf[js.Any])
-    if (totalItems != null) __obj.updateDynamic("totalItems")(totalItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalItems)) __obj.updateDynamic("totalItems")(totalItems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListContactGroupsResponse]
   }
 }

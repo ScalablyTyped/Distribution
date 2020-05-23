@@ -29,7 +29,7 @@ object FormProps {
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     cssModule: CSSModule = null,
     `inline`: js.UndefOr[Boolean] = js.undefined,
-    innerRef: Ref[HTMLFormElement] = null,
+    innerRef: js.UndefOr[Null | Ref[HTMLFormElement]] = js.undefined,
     tag: String | ReactType[_] = null
   ): FormProps = {
     val __obj = js.Dynamic.literal()
@@ -37,8 +37,8 @@ object FormProps {
     if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(innerRef)) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormProps]
   }

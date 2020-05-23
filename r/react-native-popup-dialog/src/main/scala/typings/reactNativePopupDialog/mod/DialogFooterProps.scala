@@ -13,10 +13,13 @@ trait DialogFooterProps extends js.Object {
 
 object DialogFooterProps {
   @scala.inline
-  def apply(bordered: js.UndefOr[Boolean] = js.undefined, style: StyleProp[ViewStyle] = null): DialogFooterProps = {
+  def apply(
+    bordered: js.UndefOr[Boolean] = js.undefined,
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined
+  ): DialogFooterProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogFooterProps]
   }
 }

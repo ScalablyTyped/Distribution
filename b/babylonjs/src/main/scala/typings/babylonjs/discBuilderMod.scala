@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.babylonjs.anon.Tessellation
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
@@ -30,8 +31,8 @@ object discBuilderMod extends js.Object {
       * @returns the plane polygonal mesh
       * @see https://doc.babylonjs.com/how_to/set_shapes#disc-or-regular-polygon
       */
-    def CreateDisc(name: String, options: AnonTessellation): Mesh = js.native
-    def CreateDisc(name: String, options: AnonTessellation, scene: Nullable[Scene]): Mesh = js.native
+    def CreateDisc(name: String, options: Tessellation): Mesh = js.native
+    def CreateDisc(name: String, options: Tessellation, scene: Nullable[Scene]): Mesh = js.native
   }
   
 }

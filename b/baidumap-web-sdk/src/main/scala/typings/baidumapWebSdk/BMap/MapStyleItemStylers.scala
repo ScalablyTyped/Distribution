@@ -19,7 +19,7 @@ trait MapStyleItemStylers
 object MapStyleItemStylers {
   @scala.inline
   def apply(
-    StringDictionary: /* k */ StringDictionary[js.UndefOr[String]] = null,
+    StringDictionary: /* header */ StringDictionary[js.UndefOr[String]] = null,
     color: String = null,
     curZoomRegion: String = null,
     curZoomRegionId: String = null,

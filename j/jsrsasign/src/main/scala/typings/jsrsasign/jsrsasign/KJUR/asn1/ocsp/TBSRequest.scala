@@ -27,10 +27,7 @@ import scala.scalajs.js.annotation._
   *   {issuerCert: "-----BEGIN...", subjectCert: "-----BEGIN...", alg: "sha256"}
   * ]});
   */
-@JSGlobal("jsrsasign.KJUR.asn1.ocsp.TBSRequest")
-@js.native
-class TBSRequest () extends ASN1Object {
-  def this(params: CertificateRequestList) = this()
+trait TBSRequest extends ASN1Object {
   /**
     * set TBSRequest ASN.1 object by array of parameters.
     * @param aParams array of parameters for Request class
@@ -41,6 +38,25 @@ class TBSRequest () extends ASN1Object {
     *   {issuerCert: "-----BEGIN...", subjectCert: "-----BEGIN...", alg: "sha256"}
     * ]);
     */
-  def setRequestListByParam(aParams: js.Array[CertificateRequest]): Unit = js.native
+  def setRequestListByParam(aParams: js.Array[CertificateRequest]): Unit
+}
+
+object TBSRequest {
+  @scala.inline
+  def apply(
+    getEncodedHex: () => String,
+    getFreshValueHex: () => String,
+    getLengthHexFromValue: () => String,
+    getValueHex: () => String,
+    hL: String,
+    hT: String,
+    hTLV: String,
+    hV: String,
+    isModified: String,
+    setRequestListByParam: js.Array[CertificateRequest] => Unit
+  ): TBSRequest = {
+    val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setRequestListByParam = js.Any.fromFunction1(setRequestListByParam))
+    __obj.asInstanceOf[TBSRequest]
+  }
 }
 

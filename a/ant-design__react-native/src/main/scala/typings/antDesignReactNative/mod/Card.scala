@@ -1,9 +1,9 @@
 package typings.antDesignReactNative.mod
 
-import typings.antDesignReactNative.AnonFull
-import typings.antDesignReactNative.TypeofCardBody
-import typings.antDesignReactNative.TypeofCardFooter
-import typings.antDesignReactNative.TypeofCardHeader
+import typings.antDesignReactNative.anon.Full
+import typings.antDesignReactNative.anon.TypeofCardBody
+import typings.antDesignReactNative.anon.TypeofCardFooter
+import typings.antDesignReactNative.anon.TypeofCardHeader
 import typings.antDesignReactNative.cardMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,6 +20,6 @@ object Card extends js.Object {
   var Body: TypeofCardBody = js.native
   var Footer: TypeofCardFooter = js.native
   var Header: TypeofCardHeader = js.native
-  var defaultProps: AnonFull = js.native
+  var defaultProps: Full = js.native
 }
 

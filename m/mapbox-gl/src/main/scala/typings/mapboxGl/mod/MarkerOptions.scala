@@ -46,17 +46,17 @@ object MarkerOptions {
     element: HTMLElement = null,
     offset: PointLike = null,
     pitchAlignment: Alignment = null,
-    rotation: Int | Double = null,
+    rotation: js.UndefOr[Double] = js.undefined,
     rotationAlignment: Alignment = null
   ): MarkerOptions = {
     val __obj = js.Dynamic.literal()
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (pitchAlignment != null) __obj.updateDynamic("pitchAlignment")(pitchAlignment.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
     if (rotationAlignment != null) __obj.updateDynamic("rotationAlignment")(rotationAlignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerOptions]
   }

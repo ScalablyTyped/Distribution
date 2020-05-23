@@ -181,7 +181,7 @@ object Course {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (descriptionHeading != null) __obj.updateDynamic("descriptionHeading")(descriptionHeading.asInstanceOf[js.Any])
     if (enrollmentCode != null) __obj.updateDynamic("enrollmentCode")(enrollmentCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(guardiansEnabled)) __obj.updateDynamic("guardiansEnabled")(guardiansEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(guardiansEnabled)) __obj.updateDynamic("guardiansEnabled")(guardiansEnabled.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (ownerId != null) __obj.updateDynamic("ownerId")(ownerId.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 package typings.inboxsdk.mod.NavMenu
 
-import typings.inboxsdk.AnonPreventDefault
+import typings.inboxsdk.anon.PreventDefault
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,8 +20,8 @@ object NavItemIconHtmlDescriptor {
     backgroundColor: String = null,
     expanderForegroundColor: String = null,
     iconElement: HTMLElement = null,
-    onClick: /* event */ AnonPreventDefault => Unit = null,
-    orderHint: Int | Double = null,
+    onClick: /* event */ PreventDefault => Unit = null,
+    orderHint: js.UndefOr[Double] = js.undefined,
     routeID: String = null,
     routeParams: js.Object = null,
     `type`: NavItemTypes = null
@@ -32,7 +32,7 @@ object NavItemIconHtmlDescriptor {
     if (expanderForegroundColor != null) __obj.updateDynamic("expanderForegroundColor")(expanderForegroundColor.asInstanceOf[js.Any])
     if (iconElement != null) __obj.updateDynamic("iconElement")(iconElement.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (orderHint != null) __obj.updateDynamic("orderHint")(orderHint.asInstanceOf[js.Any])
+    if (!js.isUndefined(orderHint)) __obj.updateDynamic("orderHint")(orderHint.get.asInstanceOf[js.Any])
     if (routeID != null) __obj.updateDynamic("routeID")(routeID.asInstanceOf[js.Any])
     if (routeParams != null) __obj.updateDynamic("routeParams")(routeParams.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

@@ -3,8 +3,8 @@ package typings.jestTestResult.typesMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.istanbulLibCoverage.mod.CoverageMapData
 import typings.jestConsole.typesMod.ConsoleBuffer
-import typings.jestTestResult.AnonAdded
-import typings.jestTestResult.AnonEnd
+import typings.jestTestResult.anon.Added
+import typings.jestTestResult.anon.End
 import typings.jestTypes.configMod.DisplayName
 import typings.std.Error
 import scala.scalajs.js
@@ -23,9 +23,9 @@ trait TestResult extends js.Object {
   var numPendingTests: Double
   var numTodoTests: Double
   var openHandles: js.Array[Error]
-  var perfStats: AnonEnd
+  var perfStats: End
   var skipped: Boolean
-  var snapshot: AnonAdded
+  var snapshot: Added
   var sourceMaps: js.UndefOr[StringDictionary[String]] = js.undefined
   var testExecError: js.UndefOr[SerializableError] = js.undefined
   var testFilePath: String
@@ -41,16 +41,16 @@ object TestResult {
     numPendingTests: Double,
     numTodoTests: Double,
     openHandles: js.Array[Error],
-    perfStats: AnonEnd,
+    perfStats: End,
     skipped: Boolean,
-    snapshot: AnonAdded,
+    snapshot: Added,
     testFilePath: String,
     testResults: js.Array[AssertionResult],
     console: ConsoleBuffer = null,
     coverage: CoverageMapData = null,
     displayName: DisplayName = null,
-    failureMessage: String = null,
-    memoryUsage: Int | Double = null,
+    failureMessage: js.UndefOr[Null | String] = js.undefined,
+    memoryUsage: js.UndefOr[Bytes] = js.undefined,
     sourceMaps: StringDictionary[String] = null,
     testExecError: SerializableError = null
   ): TestResult = {
@@ -58,8 +58,8 @@ object TestResult {
     if (console != null) __obj.updateDynamic("console")(console.asInstanceOf[js.Any])
     if (coverage != null) __obj.updateDynamic("coverage")(coverage.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (failureMessage != null) __obj.updateDynamic("failureMessage")(failureMessage.asInstanceOf[js.Any])
-    if (memoryUsage != null) __obj.updateDynamic("memoryUsage")(memoryUsage.asInstanceOf[js.Any])
+    if (!js.isUndefined(failureMessage)) __obj.updateDynamic("failureMessage")(failureMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(memoryUsage)) __obj.updateDynamic("memoryUsage")(memoryUsage.get.asInstanceOf[js.Any])
     if (sourceMaps != null) __obj.updateDynamic("sourceMaps")(sourceMaps.asInstanceOf[js.Any])
     if (testExecError != null) __obj.updateDynamic("testExecError")(testExecError.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestResult]

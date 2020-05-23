@@ -40,6 +40,10 @@ trait ScrollViewPropsAndroid extends js.Object {
     */
   var overScrollMode: js.UndefOr[auto | always | never] = js.undefined
   /**
+    * Causes the scrollbars not to turn transparent when they are not in use. The default value is false.
+    */
+  var persistentScrollbar: js.UndefOr[Boolean] = js.undefined
+  /**
     * Tag used to log scroll performance on this scroll view. Will force
     * momentum events to be turned on (see sendMomentumEvents). This doesn't do
     * anything out of the box and you need to implement a custom native
@@ -53,16 +57,18 @@ object ScrollViewPropsAndroid {
   @scala.inline
   def apply(
     endFillColor: String = null,
-    fadingEdgeLength: Int | Double = null,
+    fadingEdgeLength: js.UndefOr[Double] = js.undefined,
     nestedScrollEnabled: js.UndefOr[Boolean] = js.undefined,
     overScrollMode: auto | always | never = null,
+    persistentScrollbar: js.UndefOr[Boolean] = js.undefined,
     scrollPerfTag: String = null
   ): ScrollViewPropsAndroid = {
     val __obj = js.Dynamic.literal()
     if (endFillColor != null) __obj.updateDynamic("endFillColor")(endFillColor.asInstanceOf[js.Any])
-    if (fadingEdgeLength != null) __obj.updateDynamic("fadingEdgeLength")(fadingEdgeLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(nestedScrollEnabled)) __obj.updateDynamic("nestedScrollEnabled")(nestedScrollEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(fadingEdgeLength)) __obj.updateDynamic("fadingEdgeLength")(fadingEdgeLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nestedScrollEnabled)) __obj.updateDynamic("nestedScrollEnabled")(nestedScrollEnabled.get.asInstanceOf[js.Any])
     if (overScrollMode != null) __obj.updateDynamic("overScrollMode")(overScrollMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistentScrollbar)) __obj.updateDynamic("persistentScrollbar")(persistentScrollbar.get.asInstanceOf[js.Any])
     if (scrollPerfTag != null) __obj.updateDynamic("scrollPerfTag")(scrollPerfTag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollViewPropsAndroid]
   }

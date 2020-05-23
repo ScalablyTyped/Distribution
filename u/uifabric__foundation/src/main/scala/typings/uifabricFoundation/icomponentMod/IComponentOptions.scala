@@ -28,7 +28,7 @@ trait IComponentOptions[TComponentProps /* <: ISlottableProps[TComponentSlots] *
 
 object IComponentOptions {
   @scala.inline
-  def apply[TComponentProps /* <: ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TComponentSlots, TStatics](
+  def apply[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics](
     displayName: String = null,
     factoryOptions: IFactoryOptions[TComponentProps] = null,
     fields: js.Array[String] = null,

@@ -18,7 +18,7 @@ object PsbtInput {
     partialSig: js.Array[PartialSig] = null,
     porCommitment: PorCommitment = null,
     redeemScript: RedeemScript = null,
-    sighashType: Int | Double = null,
+    sighashType: js.UndefOr[SighashType] = js.undefined,
     unknownKeyVals: js.Array[KeyValue] = null,
     witnessScript: WitnessScript = null,
     witnessUtxo: WitnessUtxo = null
@@ -31,7 +31,7 @@ object PsbtInput {
     if (partialSig != null) __obj.updateDynamic("partialSig")(partialSig.asInstanceOf[js.Any])
     if (porCommitment != null) __obj.updateDynamic("porCommitment")(porCommitment.asInstanceOf[js.Any])
     if (redeemScript != null) __obj.updateDynamic("redeemScript")(redeemScript.asInstanceOf[js.Any])
-    if (sighashType != null) __obj.updateDynamic("sighashType")(sighashType.asInstanceOf[js.Any])
+    if (!js.isUndefined(sighashType)) __obj.updateDynamic("sighashType")(sighashType.get.asInstanceOf[js.Any])
     if (unknownKeyVals != null) __obj.updateDynamic("unknownKeyVals")(unknownKeyVals.asInstanceOf[js.Any])
     if (witnessScript != null) __obj.updateDynamic("witnessScript")(witnessScript.asInstanceOf[js.Any])
     if (witnessUtxo != null) __obj.updateDynamic("witnessUtxo")(witnessUtxo.asInstanceOf[js.Any])

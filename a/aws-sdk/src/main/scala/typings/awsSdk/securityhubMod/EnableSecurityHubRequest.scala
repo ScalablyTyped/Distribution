@@ -11,16 +11,16 @@ trait EnableSecurityHubRequest extends js.Object {
     */
   var EnableDefaultStandards: js.UndefOr[Boolean] = js.native
   /**
-    * The tags to add to the Hub resource when you enable Security Hub.
+    * The tags to add to the hub resource when you enable Security Hub.
     */
   var Tags: js.UndefOr[TagMap] = js.native
 }
 
 object EnableSecurityHubRequest {
   @scala.inline
-  def apply(EnableDefaultStandards: js.UndefOr[scala.Boolean] = js.undefined, Tags: TagMap = null): EnableSecurityHubRequest = {
+  def apply(EnableDefaultStandards: js.UndefOr[Boolean] = js.undefined, Tags: TagMap = null): EnableSecurityHubRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(EnableDefaultStandards)) __obj.updateDynamic("EnableDefaultStandards")(EnableDefaultStandards.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableDefaultStandards)) __obj.updateDynamic("EnableDefaultStandards")(EnableDefaultStandards.get.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableSecurityHubRequest]
   }

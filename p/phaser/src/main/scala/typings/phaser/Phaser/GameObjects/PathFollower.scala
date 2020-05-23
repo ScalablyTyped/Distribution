@@ -1,11 +1,8 @@
 package typings.phaser.Phaser.GameObjects
 
-import typings.phaser.Phaser.Curves.Path
 import typings.phaser.Phaser.Math.Vector2
-import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Tweens.Tween
 import typings.phaser.Phaser.Types.GameObjects.PathFollower.PathConfig
-import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,27 +19,18 @@ import scala.scalajs.js.annotation._
   * to finish, forwards or backwards, or from any given point on the Path to its end. They can optionally rotate
   * to face the direction of the path, be offset from the path coordinates or rotate independently of the Path.
   */
-@JSGlobal("Phaser.GameObjects.PathFollower")
 @js.native
-class PathFollower protected ()
+trait PathFollower
   extends Sprite
      with typings.phaser.Phaser.GameObjects.Components.PathFollower {
-  /**
-    * 
-    * @param scene The Scene to which this PathFollower belongs.
-    * @param path The Path this PathFollower is following. It can only follow one Path at a time.
-    * @param x The horizontal position of this Game Object in the world.
-    * @param y The vertical position of this Game Object in the world.
-    * @param texture The key of the Texture this Game Object will use to render with, as stored in the Texture Manager.
-    * @param frame An optional frame from the Texture this Game Object is rendering with.
-    */
-  def this(scene: Scene, path: Path, x: Double, y: Double, texture: String) = this()
-  def this(scene: Scene, path: Path, x: Double, y: Double, texture: String, frame: String) = this()
-  def this(scene: Scene, path: Path, x: Double, y: Double, texture: String, frame: integer) = this()
   /**
     * Settings for the PathFollower.
     */
   var pathConfig: PathConfig = js.native
+  /**
+    * The distance the follower has traveled from the previous point to the current one, at the last update.
+    */
+  var pathDelta: Vector2 = js.native
   /**
     * An additional vector to add to the PathFollowers position, allowing you to offset it from the
     * Path coordinates.

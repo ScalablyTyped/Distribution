@@ -20,9 +20,8 @@ trait MapCoordinateObject extends js.Object {
 
 object MapCoordinateObject {
   @scala.inline
-  def apply(x: Double, y: Int | Double = null): MapCoordinateObject = {
-    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+  def apply(x: Double, y: Double = null.asInstanceOf[Double]): MapCoordinateObject = {
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapCoordinateObject]
   }
 }

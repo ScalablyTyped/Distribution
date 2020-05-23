@@ -10,11 +10,16 @@ trait OpenDocumentOptions extends OpenOptions {
 
 object OpenDocumentOptions {
   @scala.inline
-  def apply(id: String = null, mode: OpenMode = null, ttl: Int | Double = null, value: json = null): OpenDocumentOptions = {
+  def apply(
+    id: String = null,
+    mode: OpenMode = null,
+    ttl: js.UndefOr[Double] = js.undefined,
+    value: json = null
+  ): OpenDocumentOptions = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenDocumentOptions]
   }

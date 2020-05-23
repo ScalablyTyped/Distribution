@@ -11,10 +11,10 @@ trait TaskOptions extends js.Object {
 
 object TaskOptions {
   @scala.inline
-  def apply(msg: String = null, tickInterval: Int | Double = null): TaskOptions = {
+  def apply(msg: String = null, tickInterval: js.UndefOr[Double] = js.undefined): TaskOptions = {
     val __obj = js.Dynamic.literal()
     if (msg != null) __obj.updateDynamic("msg")(msg.asInstanceOf[js.Any])
-    if (tickInterval != null) __obj.updateDynamic("tickInterval")(tickInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(tickInterval)) __obj.updateDynamic("tickInterval")(tickInterval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskOptions]
   }
 }

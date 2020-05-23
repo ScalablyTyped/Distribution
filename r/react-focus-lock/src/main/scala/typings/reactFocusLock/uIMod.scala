@@ -2,6 +2,7 @@ package typings.reactFocusLock
 
 import typings.react.mod.Component
 import typings.react.mod.FC
+import typings.reactFocusLock.anon.ReactFocusLockPropsReactN
 import typings.reactFocusLock.interfacesMod.AutoFocusProps
 import typings.reactFocusLock.interfacesMod.FreeFocusProps
 import typings.reactFocusLock.interfacesMod.InFocusGuardProps

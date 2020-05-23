@@ -11,9 +11,9 @@ trait ITransactionList extends js.Object {
 
 object ITransactionList {
   @scala.inline
-  def apply(transactions: js.Array[ITransaction] = null): ITransactionList = {
+  def apply(transactions: js.UndefOr[Null | js.Array[ITransaction]] = js.undefined): ITransactionList = {
     val __obj = js.Dynamic.literal()
-    if (transactions != null) __obj.updateDynamic("transactions")(transactions.asInstanceOf[js.Any])
+    if (!js.isUndefined(transactions)) __obj.updateDynamic("transactions")(transactions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITransactionList]
   }
 }

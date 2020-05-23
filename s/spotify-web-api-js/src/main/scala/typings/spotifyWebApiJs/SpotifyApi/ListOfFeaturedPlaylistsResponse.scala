@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * Get a list of featured playlists
-  * 
+  *
   * GET /v1/browse/featured-playlists
   * https://developer.spotify.com/web-api/get-list-featured-playlists/
   */

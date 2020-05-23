@@ -92,7 +92,7 @@ object GroupOptions {
     if (checkPut != null) __obj.updateDynamic("checkPut")(js.Any.fromFunction4(checkPut))
     if (pull != null) __obj.updateDynamic("pull")(pull.asInstanceOf[js.Any])
     if (put != null) __obj.updateDynamic("put")(put.asInstanceOf[js.Any])
-    if (!js.isUndefined(revertClone)) __obj.updateDynamic("revertClone")(revertClone.asInstanceOf[js.Any])
+    if (!js.isUndefined(revertClone)) __obj.updateDynamic("revertClone")(revertClone.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupOptions]
   }
 }

@@ -10,9 +10,9 @@ trait ReplaceAllShapesWithImageResponse extends js.Object {
 
 object ReplaceAllShapesWithImageResponse {
   @scala.inline
-  def apply(occurrencesChanged: Int | Double = null): ReplaceAllShapesWithImageResponse = {
+  def apply(occurrencesChanged: js.UndefOr[Double] = js.undefined): ReplaceAllShapesWithImageResponse = {
     val __obj = js.Dynamic.literal()
-    if (occurrencesChanged != null) __obj.updateDynamic("occurrencesChanged")(occurrencesChanged.asInstanceOf[js.Any])
+    if (!js.isUndefined(occurrencesChanged)) __obj.updateDynamic("occurrencesChanged")(occurrencesChanged.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceAllShapesWithImageResponse]
   }
 }

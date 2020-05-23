@@ -7,33 +7,31 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for events related to manipulations on items.
   */
-@JSGlobal("BootstrapClientAccordionItemEventArgs")
-@js.native
-class BootstrapClientAccordionItemEventArgs protected () extends ASPxClientProcessingModeEventArgs {
-  /**
-    * Initializes a new object of the BootstrapClientAccordionItemEventArgs type with the specified settings.
-    * @param processOnServer true to process the event on the server side; false to completely handle it on the client side.
-    * @param item An BootstrapClientAccordionItem object that represents an item related to the event.
-    * @param htmlElement An HTML object that contains the processed navbar item.
-    * @param htmlEvent A DHTML event object that relates to the processed event.
-    */
-  def this(
-    processOnServer: Boolean,
-    item: BootstrapClientAccordionItem,
-    htmlElement: js.Any,
-    htmlEvent: js.Any
-  ) = this()
+trait BootstrapClientAccordionItemEventArgs extends ASPxClientProcessingModeEventArgs {
   /**
     * Gets an HTML object that contains the processed Accordion item.
     */
-  var htmlElement: js.Any = js.native
+  var htmlElement: js.Any
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: js.Any
   /**
     * Gets the item object related to the event.
     */
-  var item: BootstrapClientAccordionItem = js.native
+  var item: BootstrapClientAccordionItem
+}
+
+object BootstrapClientAccordionItemEventArgs {
+  @scala.inline
+  def apply(
+    htmlElement: js.Any,
+    htmlEvent: js.Any,
+    item: BootstrapClientAccordionItem,
+    processOnServer: Boolean
+  ): BootstrapClientAccordionItemEventArgs = {
+    val __obj = js.Dynamic.literal(htmlElement = htmlElement.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BootstrapClientAccordionItemEventArgs]
+  }
 }
 

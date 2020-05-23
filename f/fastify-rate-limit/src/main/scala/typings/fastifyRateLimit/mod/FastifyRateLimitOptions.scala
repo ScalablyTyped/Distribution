@@ -61,21 +61,21 @@ trait FastifyRateLimitOptions[T] extends js.Object {
 object FastifyRateLimitOptions {
   @scala.inline
   def apply[T](
-    cache: Int | Double = null,
+    cache: js.UndefOr[Double] = js.undefined,
     keyGenerator: /* req */ T => String = null,
-    max: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
     redis: Redis = null,
     skipOnError: js.UndefOr[Boolean] = js.undefined,
-    timeWindow: Int | Double = null,
+    timeWindow: js.UndefOr[Double] = js.undefined,
     whitelist: js.Array[String] = null
   ): FastifyRateLimitOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
     if (keyGenerator != null) __obj.updateDynamic("keyGenerator")(js.Any.fromFunction1(keyGenerator))
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
     if (redis != null) __obj.updateDynamic("redis")(redis.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipOnError)) __obj.updateDynamic("skipOnError")(skipOnError.asInstanceOf[js.Any])
-    if (timeWindow != null) __obj.updateDynamic("timeWindow")(timeWindow.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipOnError)) __obj.updateDynamic("skipOnError")(skipOnError.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeWindow)) __obj.updateDynamic("timeWindow")(timeWindow.get.asInstanceOf[js.Any])
     if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[FastifyRateLimitOptions[T]]
   }

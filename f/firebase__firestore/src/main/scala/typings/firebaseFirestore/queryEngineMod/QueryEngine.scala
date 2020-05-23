@@ -30,7 +30,6 @@ object QueryEngine {
     setLocalDocumentsView: LocalDocumentsView => Unit
   ): QueryEngine = {
     val __obj = js.Dynamic.literal(getDocumentsMatchingQuery = js.Any.fromFunction4(getDocumentsMatchingQuery), setLocalDocumentsView = js.Any.fromFunction1(setLocalDocumentsView))
-  
     __obj.asInstanceOf[QueryEngine]
   }
 }

@@ -1,6 +1,6 @@
 package typings.hlsParser.mod.types
 
-import typings.hlsParser.BasePlaylistConstructorPrDiscontinuitySequenceBase
+import typings.hlsParser.anon.BasePlaylistConstructorPrDiscontinuitySequenceBase
 import typings.hlsParser.hlsParserStrings.EVENT
 import typings.hlsParser.hlsParserStrings.VOD
 import scala.scalajs.js

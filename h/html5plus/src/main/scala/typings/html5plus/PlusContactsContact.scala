@@ -50,7 +50,7 @@ trait PlusContactsContact extends js.Object {
   /**
     * 联系人的id
     * 联系人id由系统分配维护，从系统获取联系人时自动赋值，再次查询时可使用此id值进行检索。
-    * 	注意：此值为只读属性，改写此值可能会导致无法预期的错误。
+    *     注意：此值为只读属性，改写此值可能会导致无法预期的错误。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
@@ -97,8 +97,8 @@ trait PlusContactsContact extends js.Object {
   /**
     * 数组，联系人的头像
     * 其值为头像图片url地址或图片数据：
-    * 	url地址：仅支持本地图片地址，可以是绝对路径或相对路径，如“_doc/a.png”；
-    * 	图片数据：必须符合Data URI scheme（RFC2397）格式的数据，如“image/png;base64,XXXX”，其中XXXX为base64编码的图片数据。在获取联系人时默认返回此类型的数据。
+    *     url地址：仅支持本地图片地址，可以是绝对路径或相对路径，如“_doc/a.png”；
+    *     图片数据：必须符合Data URI scheme（RFC2397）格式的数据，如“image/png;base64,XXXX”，其中XXXX为base64编码的图片数据。在获取联系人时默认返回此类型的数据。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */

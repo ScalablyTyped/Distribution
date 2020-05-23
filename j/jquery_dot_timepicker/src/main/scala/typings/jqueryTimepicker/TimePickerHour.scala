@@ -13,10 +13,10 @@ trait TimePickerHour extends js.Object {
 
 object TimePickerHour {
   @scala.inline
-  def apply(ends: Int | Double = null, starts: Int | Double = null): TimePickerHour = {
+  def apply(ends: js.UndefOr[Double] = js.undefined, starts: js.UndefOr[Double] = js.undefined): TimePickerHour = {
     val __obj = js.Dynamic.literal()
-    if (ends != null) __obj.updateDynamic("ends")(ends.asInstanceOf[js.Any])
-    if (starts != null) __obj.updateDynamic("starts")(starts.asInstanceOf[js.Any])
+    if (!js.isUndefined(ends)) __obj.updateDynamic("ends")(ends.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(starts)) __obj.updateDynamic("starts")(starts.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimePickerHour]
   }
 }

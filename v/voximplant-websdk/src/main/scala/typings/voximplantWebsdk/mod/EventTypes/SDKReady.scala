@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		*	Event dispatched after SDK was successfully initialized after init function call
-		*/
+  *    Event dispatched after SDK was successfully initialized after init function call
+  */
 trait SDKReady extends VoxImplantEvent {
   /**
-  			*	SDK version
-  			*/
+    *    SDK version
+    */
   var version: String
 }
 

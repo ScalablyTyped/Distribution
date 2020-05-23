@@ -71,7 +71,7 @@ object UserProfile {
     if (markets != null) __obj.updateDynamic("markets")(markets.asInstanceOf[js.Any])
     if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
     if (primaryCountryCode != null) __obj.updateDynamic("primaryCountryCode")(primaryCountryCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(profilePublic)) __obj.updateDynamic("profilePublic")(profilePublic.asInstanceOf[js.Any])
+    if (!js.isUndefined(profilePublic)) __obj.updateDynamic("profilePublic")(profilePublic.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserProfile]
   }
 }

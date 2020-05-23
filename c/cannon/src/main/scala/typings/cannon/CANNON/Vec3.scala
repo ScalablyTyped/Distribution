@@ -4,12 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CANNON.Vec3")
 @js.native
-class Vec3 () extends js.Object {
-  def this(x: Double) = this()
-  def this(x: Double, y: Double) = this()
-  def this(x: Double, y: Double, z: Double) = this()
+trait Vec3 extends js.Object {
   var x: Double = js.native
   var y: Double = js.native
   var z: Double = js.native
@@ -47,12 +43,5 @@ class Vec3 () extends js.Object {
   def vadd(v: Vec3, target: Vec3): Vec3 = js.native
   def vsub(v: Vec3): Vec3 = js.native
   def vsub(v: Vec3, target: Vec3): Vec3 = js.native
-}
-
-/* static members */
-@JSGlobal("CANNON.Vec3")
-@js.native
-object Vec3 extends js.Object {
-  var ZERO: Vec3 = js.native
 }
 

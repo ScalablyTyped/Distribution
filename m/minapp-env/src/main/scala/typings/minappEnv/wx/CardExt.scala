@@ -28,14 +28,14 @@ object CardExt {
     signature: String,
     timestamp: Double,
     code: String = null,
-    fixed_begintimestamp: Int | Double = null,
+    fixed_begintimestamp: js.UndefOr[Double] = js.undefined,
     nonce_str: String = null,
     openid: String = null,
     outer_str: String = null
   ): CardExt = {
     val __obj = js.Dynamic.literal(signature = signature.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (fixed_begintimestamp != null) __obj.updateDynamic("fixed_begintimestamp")(fixed_begintimestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixed_begintimestamp)) __obj.updateDynamic("fixed_begintimestamp")(fixed_begintimestamp.get.asInstanceOf[js.Any])
     if (nonce_str != null) __obj.updateDynamic("nonce_str")(nonce_str.asInstanceOf[js.Any])
     if (openid != null) __obj.updateDynamic("openid")(openid.asInstanceOf[js.Any])
     if (outer_str != null) __obj.updateDynamic("outer_str")(outer_str.asInstanceOf[js.Any])

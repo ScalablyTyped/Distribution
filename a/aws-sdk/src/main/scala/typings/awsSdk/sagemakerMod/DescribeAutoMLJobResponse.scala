@@ -98,7 +98,7 @@ object DescribeAutoMLJobResponse {
     BestCandidate: AutoMLCandidate = null,
     EndTime: Timestamp = null,
     FailureReason: AutoMLFailureReason = null,
-    GenerateCandidateDefinitionsOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    GenerateCandidateDefinitionsOnly: js.UndefOr[GenerateCandidateDefinitionsOnly] = js.undefined,
     ProblemType: ProblemType = null,
     ResolvedAttributes: ResolvedAttributes = null
   ): DescribeAutoMLJobResponse = {
@@ -109,7 +109,7 @@ object DescribeAutoMLJobResponse {
     if (BestCandidate != null) __obj.updateDynamic("BestCandidate")(BestCandidate.asInstanceOf[js.Any])
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
     if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason.asInstanceOf[js.Any])
-    if (!js.isUndefined(GenerateCandidateDefinitionsOnly)) __obj.updateDynamic("GenerateCandidateDefinitionsOnly")(GenerateCandidateDefinitionsOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(GenerateCandidateDefinitionsOnly)) __obj.updateDynamic("GenerateCandidateDefinitionsOnly")(GenerateCandidateDefinitionsOnly.get.asInstanceOf[js.Any])
     if (ProblemType != null) __obj.updateDynamic("ProblemType")(ProblemType.asInstanceOf[js.Any])
     if (ResolvedAttributes != null) __obj.updateDynamic("ResolvedAttributes")(ResolvedAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAutoMLJobResponse]

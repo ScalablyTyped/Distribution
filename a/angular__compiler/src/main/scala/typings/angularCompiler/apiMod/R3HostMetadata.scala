@@ -1,7 +1,7 @@
 package typings.angularCompiler.apiMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularCompiler.AnonClassAttr
+import typings.angularCompiler.anon.ClassAttr
 import typings.angularCompiler.outputAstMod.Expression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +20,7 @@ trait R3HostMetadata extends js.Object {
     * A mapping of property binding keys to unparsed expressions.
     */
   var properties: StringDictionary[String]
-  var specialAttributes: AnonClassAttr
+  var specialAttributes: ClassAttr
 }
 
 object R3HostMetadata {
@@ -29,7 +29,7 @@ object R3HostMetadata {
     attributes: StringDictionary[Expression],
     listeners: StringDictionary[String],
     properties: StringDictionary[String],
-    specialAttributes: AnonClassAttr
+    specialAttributes: ClassAttr
   ): R3HostMetadata = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], listeners = listeners.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], specialAttributes = specialAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3HostMetadata]

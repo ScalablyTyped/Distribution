@@ -1,6 +1,6 @@
 package typings.rrule.iterresultMod
 
-import typings.rrule.PartialIterArgs
+import typings.rrule.anon.PartialIterArgs
 import typings.rrule.typesMod.IterResultType
 import typings.rrule.typesMod.QueryMethodTypes
 import typings.std.Date
@@ -40,7 +40,7 @@ trait IterResult[M /* <: QueryMethodTypes */] extends js.Object {
 
 object IterResult {
   @scala.inline
-  def apply[M /* <: QueryMethodTypes */](
+  def apply[M](
     _result: js.Array[Date],
     accept: Date => Boolean,
     add: Date => Boolean,
@@ -51,9 +51,7 @@ object IterResult {
     maxDate: Date = null,
     minDate: Date = null
   ): IterResult[M] = {
-    val __obj = js.Dynamic.literal(_result = _result.asInstanceOf[js.Any], accept = js.Any.fromFunction1(accept), add = js.Any.fromFunction1(add), args = args.asInstanceOf[js.Any], getValue = js.Any.fromFunction0(getValue), method = method.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_result = _result.asInstanceOf[js.Any], accept = js.Any.fromFunction1(accept), add = js.Any.fromFunction1(add), args = args.asInstanceOf[js.Any], getValue = js.Any.fromFunction0(getValue), method = method.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], maxDate = maxDate.asInstanceOf[js.Any], minDate = minDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[IterResult[M]]
   }
 }

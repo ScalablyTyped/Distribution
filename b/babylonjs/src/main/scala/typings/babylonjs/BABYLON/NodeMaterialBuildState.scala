@@ -1,14 +1,13 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.AnonRemoveAttributes
-import typings.babylonjs.AnonRepeatKey
+import typings.babylonjs.anon.RemoveAttributes
+import typings.babylonjs.anon.RepeatKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.NodeMaterialBuildState")
 @js.native
-class NodeMaterialBuildState () extends js.Object {
+trait NodeMaterialBuildState extends js.Object {
   /** @hidden */
   var _attributeDeclaration: String = js.native
   /** @hidden */
@@ -70,7 +69,7 @@ class NodeMaterialBuildState () extends js.Object {
   def _emit2DSampler(name: String): Unit = js.native
   /** @hidden */
   def _emitCodeFromInclude(includeName: String, comments: String): String = js.native
-  def _emitCodeFromInclude(includeName: String, comments: String, options: AnonRepeatKey): String = js.native
+  def _emitCodeFromInclude(includeName: String, comments: String, options: RepeatKey): String = js.native
   /** @hidden */
   def _emitExtension(name: String, extension: String): Unit = js.native
   /** @hidden */
@@ -79,8 +78,8 @@ class NodeMaterialBuildState () extends js.Object {
   def _emitFunction(name: String, code: String, comments: String): Unit = js.native
   /** @hidden */
   def _emitFunctionFromInclude(includeName: String, comments: String): Unit = js.native
-  def _emitFunctionFromInclude(includeName: String, comments: String, options: AnonRemoveAttributes): Unit = js.native
-  def _emitFunctionFromInclude(includeName: String, comments: String, options: AnonRemoveAttributes, storeKey: String): Unit = js.native
+  def _emitFunctionFromInclude(includeName: String, comments: String, options: RemoveAttributes): Unit = js.native
+  def _emitFunctionFromInclude(includeName: String, comments: String, options: RemoveAttributes, storeKey: String): Unit = js.native
   /** @hidden */
   def _emitUniformFromString(name: String, `type`: String): Unit = js.native
   def _emitUniformFromString(name: String, `type`: String, define: String): Unit = js.native

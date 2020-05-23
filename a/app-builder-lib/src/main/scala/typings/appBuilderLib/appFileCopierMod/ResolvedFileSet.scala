@@ -22,10 +22,10 @@ object ResolvedFileSet {
     files: js.Array[String],
     metadata: Map[String, Stats],
     src: String,
-    transformedFiles: Map[Double, String | Buffer] = null
+    transformedFiles: js.UndefOr[Null | (Map[Double, String | Buffer])] = js.undefined
   ): ResolvedFileSet = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
-    if (transformedFiles != null) __obj.updateDynamic("transformedFiles")(transformedFiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(transformedFiles)) __obj.updateDynamic("transformedFiles")(transformedFiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedFileSet]
   }
 }

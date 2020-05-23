@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.anon.Instances
 import typings.three.bufferGeometryMod.BufferGeometry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +12,7 @@ object instancedBufferGeometryMod extends js.Object {
   @js.native
   class InstancedBufferGeometry () extends BufferGeometry {
     @JSName("groups")
-    var groups_InstancedBufferGeometry: js.Array[AnonInstances] = js.native
+    var groups_InstancedBufferGeometry: js.Array[Instances] = js.native
     var maxInstancedCount: Double = js.native
   }
   

@@ -1,6 +1,6 @@
 package typings.antdMobile.marqueeMod
 
-import typings.antdMobile.AnonAnimatedWidth
+import typings.antdMobile.anon.AnimatedWidth
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait Marquee
   extends Component[MarqueeProps, js.Any, js.Any] {
   var _marqueeTimer: js.Any = js.native
   @JSName("state")
-  var state_Marquee: AnonAnimatedWidth = js.native
+  var state_Marquee: AnimatedWidth = js.native
   var textRef: js.Any = js.native
   def _measureText(): Unit = js.native
   def _startAnimation(): Unit = js.native

@@ -28,11 +28,11 @@ trait MaintenanceWindowRunCommandParameters extends js.Object {
     */
   var NotificationConfig: js.UndefOr[typings.awsSdk.ssmMod.NotificationConfig] = js.native
   /**
-    * The name of the Amazon S3 bucket.
+    * The name of the S3 bucket.
     */
   var OutputS3BucketName: js.UndefOr[S3BucketName] = js.native
   /**
-    * The Amazon S3 bucket subfolder.
+    * The S3 bucket subfolder.
     */
   var OutputS3KeyPrefix: js.UndefOr[S3KeyPrefix] = js.native
   /**
@@ -62,7 +62,7 @@ object MaintenanceWindowRunCommandParameters {
     OutputS3KeyPrefix: S3KeyPrefix = null,
     Parameters: Parameters = null,
     ServiceRoleArn: ServiceRole = null,
-    TimeoutSeconds: Int | Double = null
+    TimeoutSeconds: js.UndefOr[TimeoutSeconds] = js.undefined
   ): MaintenanceWindowRunCommandParameters = {
     val __obj = js.Dynamic.literal()
     if (CloudWatchOutputConfig != null) __obj.updateDynamic("CloudWatchOutputConfig")(CloudWatchOutputConfig.asInstanceOf[js.Any])
@@ -75,7 +75,7 @@ object MaintenanceWindowRunCommandParameters {
     if (OutputS3KeyPrefix != null) __obj.updateDynamic("OutputS3KeyPrefix")(OutputS3KeyPrefix.asInstanceOf[js.Any])
     if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
     if (ServiceRoleArn != null) __obj.updateDynamic("ServiceRoleArn")(ServiceRoleArn.asInstanceOf[js.Any])
-    if (TimeoutSeconds != null) __obj.updateDynamic("TimeoutSeconds")(TimeoutSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(TimeoutSeconds)) __obj.updateDynamic("TimeoutSeconds")(TimeoutSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaintenanceWindowRunCommandParameters]
   }
 }

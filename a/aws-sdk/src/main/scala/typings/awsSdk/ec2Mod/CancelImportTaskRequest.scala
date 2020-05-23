@@ -24,12 +24,12 @@ object CancelImportTaskRequest {
   @scala.inline
   def apply(
     CancelReason: String = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     ImportTaskId: ImportTaskId = null
   ): CancelImportTaskRequest = {
     val __obj = js.Dynamic.literal()
     if (CancelReason != null) __obj.updateDynamic("CancelReason")(CancelReason.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (ImportTaskId != null) __obj.updateDynamic("ImportTaskId")(ImportTaskId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelImportTaskRequest]
   }

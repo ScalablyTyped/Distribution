@@ -42,19 +42,10 @@ object stellarSdkStrings {
   sealed trait error extends js.Object
   
   @js.native
-  sealed trait hash extends js.Object
-  
-  @js.native
-  sealed trait id extends js.Object
-  
-  @js.native
   sealed trait ledger extends js.Object
   
   @js.native
   sealed trait message extends js.Object
-  
-  @js.native
-  sealed trait none extends js.Object
   
   @js.native
   sealed trait offers extends js.Object
@@ -72,13 +63,7 @@ object stellarSdkStrings {
   sealed trait precedes extends js.Object
   
   @js.native
-  sealed trait `return` extends js.Object
-  
-  @js.native
   sealed trait succeeds extends js.Object
-  
-  @js.native
-  sealed trait text extends js.Object
   
   @js.native
   sealed trait trades extends js.Object
@@ -114,15 +99,9 @@ object stellarSdkStrings {
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
-  def hash: hash = "hash".asInstanceOf[hash]
-  @scala.inline
-  def id: id = "id".asInstanceOf[id]
-  @scala.inline
   def ledger: ledger = "ledger".asInstanceOf[ledger]
   @scala.inline
   def message: message = "message".asInstanceOf[message]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
   @scala.inline
   def offers: offers = "offers".asInstanceOf[offers]
   @scala.inline
@@ -134,11 +113,7 @@ object stellarSdkStrings {
   @scala.inline
   def precedes: precedes = "precedes".asInstanceOf[precedes]
   @scala.inline
-  def `return`: `return` = "return".asInstanceOf[`return`]
-  @scala.inline
   def succeeds: succeeds = "succeeds".asInstanceOf[succeeds]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
   @scala.inline
   def trades: trades = "trades".asInstanceOf[trades]
   @scala.inline

@@ -1,7 +1,7 @@
 package typings.jsmediatags.mod
 
-import typings.jsmediatags.TypeofMediaFileReader
-import typings.jsmediatags.TypeofMediaTagReader
+import typings.jsmediatags.anon.TypeofMediaFileReader
+import typings.jsmediatags.anon.TypeofMediaTagReader
 import typings.jsmediatags.mediaFileReaderMod.default
 import typings.jsmediatags.typesMod.CallbackType
 import typings.jsmediatags.typesMod.LoadCallbackType

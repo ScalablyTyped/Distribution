@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,7 +39,11 @@ trait TemporalLayer extends js.Object {
   var useViewTime: Boolean
 }
 
-@JSGlobal("__esri.TemporalLayer")
-@js.native
-object TemporalLayer extends TopLevel[TemporalLayerConstructor]
+object TemporalLayer {
+  @scala.inline
+  def apply(timeExtent: TimeExtent, timeInfo: TimeInfo, timeOffset: TimeInterval, useViewTime: Boolean): TemporalLayer = {
+    val __obj = js.Dynamic.literal(timeExtent = timeExtent.asInstanceOf[js.Any], timeInfo = timeInfo.asInstanceOf[js.Any], timeOffset = timeOffset.asInstanceOf[js.Any], useViewTime = useViewTime.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TemporalLayer]
+  }
+}
 

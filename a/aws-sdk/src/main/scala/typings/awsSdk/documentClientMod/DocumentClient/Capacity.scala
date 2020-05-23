@@ -23,14 +23,14 @@ trait Capacity extends js.Object {
 object Capacity {
   @scala.inline
   def apply(
-    CapacityUnits: Int | scala.Double = null,
-    ReadCapacityUnits: Int | scala.Double = null,
-    WriteCapacityUnits: Int | scala.Double = null
+    CapacityUnits: js.UndefOr[ConsumedCapacityUnits] = js.undefined,
+    ReadCapacityUnits: js.UndefOr[ConsumedCapacityUnits] = js.undefined,
+    WriteCapacityUnits: js.UndefOr[ConsumedCapacityUnits] = js.undefined
   ): Capacity = {
     val __obj = js.Dynamic.literal()
-    if (CapacityUnits != null) __obj.updateDynamic("CapacityUnits")(CapacityUnits.asInstanceOf[js.Any])
-    if (ReadCapacityUnits != null) __obj.updateDynamic("ReadCapacityUnits")(ReadCapacityUnits.asInstanceOf[js.Any])
-    if (WriteCapacityUnits != null) __obj.updateDynamic("WriteCapacityUnits")(WriteCapacityUnits.asInstanceOf[js.Any])
+    if (!js.isUndefined(CapacityUnits)) __obj.updateDynamic("CapacityUnits")(CapacityUnits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReadCapacityUnits)) __obj.updateDynamic("ReadCapacityUnits")(ReadCapacityUnits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(WriteCapacityUnits)) __obj.updateDynamic("WriteCapacityUnits")(WriteCapacityUnits.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Capacity]
   }
 }

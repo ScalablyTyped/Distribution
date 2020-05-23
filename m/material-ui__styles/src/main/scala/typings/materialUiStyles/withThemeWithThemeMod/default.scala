@@ -9,7 +9,7 @@ import typings.react.mod.ComponentProps
 import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
 import typings.react.mod.FunctionComponent
-import typings.react.mod._Global_.JSX.LibraryManagedAttributes
+import typings.react.mod.global.JSX.LibraryManagedAttributes
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +26,7 @@ object default extends js.Object {
           ComponentClass[ConsistentWith[ComponentProps[_], WithTheme[Theme]], ComponentState]
         ]
       ], 
-      theme | innerRef
+      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
     ]) with Partial[WithTheme[Theme]] with ThemedComponentProps
   ] = js.native
   def apply[Theme](component: FunctionComponent[ConsistentWith[ComponentProps[_], WithTheme[Theme]]]): ComponentType[
@@ -35,7 +35,7 @@ object default extends js.Object {
         FunctionComponent[ConsistentWith[ComponentProps[_], WithTheme[Theme]]], 
         ComponentProps[FunctionComponent[ConsistentWith[ComponentProps[_], WithTheme[Theme]]]]
       ], 
-      theme | innerRef
+      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
     ]) with Partial[WithTheme[Theme]] with ThemedComponentProps
   ] = js.native
 }

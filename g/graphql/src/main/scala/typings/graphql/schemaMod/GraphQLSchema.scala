@@ -1,7 +1,7 @@
 package typings.graphql.schemaMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.GraphQLSchemaConfigtypesA
+import typings.graphql.anon.GraphQLSchemaConfigtypesA
 import typings.graphql.astMod.SchemaDefinitionNode
 import typings.graphql.astMod.SchemaExtensionNode
 import typings.graphql.definitionMod.GraphQLAbstractType

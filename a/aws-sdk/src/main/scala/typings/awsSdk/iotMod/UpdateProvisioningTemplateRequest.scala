@@ -19,9 +19,17 @@ trait UpdateProvisioningTemplateRequest extends js.Object {
     */
   var enabled: js.UndefOr[Enabled] = js.native
   /**
+    * Updates the pre-provisioning hook template.
+    */
+  var preProvisioningHook: js.UndefOr[ProvisioningHook] = js.native
+  /**
     * The ARN of the role associated with the provisioning template. This IoT role grants permission to provision a device.
     */
   var provisioningRoleArn: js.UndefOr[RoleArn] = js.native
+  /**
+    * Removes pre-provisioning hook template.
+    */
+  var removePreProvisioningHook: js.UndefOr[RemoveHook] = js.native
   /**
     * The name of the fleet provisioning template.
     */
@@ -32,16 +40,20 @@ object UpdateProvisioningTemplateRequest {
   @scala.inline
   def apply(
     templateName: TemplateName,
-    defaultVersionId: Int | Double = null,
+    defaultVersionId: js.UndefOr[TemplateVersionId] = js.undefined,
     description: TemplateDescription = null,
-    enabled: js.UndefOr[scala.Boolean] = js.undefined,
-    provisioningRoleArn: RoleArn = null
+    enabled: js.UndefOr[Enabled] = js.undefined,
+    preProvisioningHook: ProvisioningHook = null,
+    provisioningRoleArn: RoleArn = null,
+    removePreProvisioningHook: js.UndefOr[RemoveHook] = js.undefined
   ): UpdateProvisioningTemplateRequest = {
     val __obj = js.Dynamic.literal(templateName = templateName.asInstanceOf[js.Any])
-    if (defaultVersionId != null) __obj.updateDynamic("defaultVersionId")(defaultVersionId.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultVersionId)) __obj.updateDynamic("defaultVersionId")(defaultVersionId.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (preProvisioningHook != null) __obj.updateDynamic("preProvisioningHook")(preProvisioningHook.asInstanceOf[js.Any])
     if (provisioningRoleArn != null) __obj.updateDynamic("provisioningRoleArn")(provisioningRoleArn.asInstanceOf[js.Any])
+    if (!js.isUndefined(removePreProvisioningHook)) __obj.updateDynamic("removePreProvisioningHook")(removePreProvisioningHook.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateProvisioningTemplateRequest]
   }
 }

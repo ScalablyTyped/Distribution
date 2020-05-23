@@ -34,20 +34,20 @@ trait CommonLinuxOptions extends js.Object {
 object CommonLinuxOptions {
   @scala.inline
   def apply(
-    category: String = null,
-    description: String = null,
-    desktop: js.Any = null,
-    executableArgs: js.Array[String] = null,
-    mimeTypes: js.Array[String] = null,
-    synopsis: String = null
+    category: js.UndefOr[Null | String] = js.undefined,
+    description: js.UndefOr[Null | String] = js.undefined,
+    desktop: js.UndefOr[Null | js.Any] = js.undefined,
+    executableArgs: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    mimeTypes: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    synopsis: js.UndefOr[Null | String] = js.undefined
   ): CommonLinuxOptions = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (desktop != null) __obj.updateDynamic("desktop")(desktop.asInstanceOf[js.Any])
-    if (executableArgs != null) __obj.updateDynamic("executableArgs")(executableArgs.asInstanceOf[js.Any])
-    if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes.asInstanceOf[js.Any])
-    if (synopsis != null) __obj.updateDynamic("synopsis")(synopsis.asInstanceOf[js.Any])
+    if (!js.isUndefined(category)) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(desktop)) __obj.updateDynamic("desktop")(desktop.asInstanceOf[js.Any])
+    if (!js.isUndefined(executableArgs)) __obj.updateDynamic("executableArgs")(executableArgs.asInstanceOf[js.Any])
+    if (!js.isUndefined(mimeTypes)) __obj.updateDynamic("mimeTypes")(mimeTypes.asInstanceOf[js.Any])
+    if (!js.isUndefined(synopsis)) __obj.updateDynamic("synopsis")(synopsis.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonLinuxOptions]
   }
 }

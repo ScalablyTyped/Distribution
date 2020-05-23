@@ -1,7 +1,7 @@
 
 # Scala.js typings for tar-fs
 
-Typings are for version 1.16
+Typings are for version 2.0
 
 ## Library description:
 filesystem bindings for tar-stream

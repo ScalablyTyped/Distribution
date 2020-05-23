@@ -1,24 +1,14 @@
 package typings.fibjs
 
-import typings.fibjs.fibjsNumbers.`0`
-import typings.fibjs.fibjsNumbers.`10`
-import typings.fibjs.fibjsNumbers.`1`
-import typings.fibjs.fibjsNumbers.`2`
-import typings.fibjs.fibjsNumbers.`3`
-import typings.fibjs.fibjsNumbers.`4`
-import typings.fibjs.fibjsNumbers.`5`
-import typings.fibjs.fibjsNumbers.`6`
-import typings.fibjs.fibjsNumbers.`7`
-import typings.fibjs.fibjsNumbers.`9`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** module Or Internal Object */
 /**
-	* @brief 全局对象，所有脚本均可以访问的基础对象
-	* @detail 
-	*/
+  * @brief 全局对象，所有脚本均可以访问的基础对象
+  * @detail 
+  */
 @JSImport("global", JSImport.Namespace)
 @js.native
 object globalMod extends js.Object {
@@ -54,16 +44,16 @@ object globalMod extends js.Object {
   def setTimeout(callback: js.Function, timeout: Double, args: js.Any*): ClassTimer = js.native
   @js.native
   object console extends js.Object {
-    val ALERT: `1` = js.native
-    val CRIT: `2` = js.native
-    val DEBUG: `7` = js.native
-    val ERROR: `3` = js.native
-    val FATAL: `0` = js.native
-    val INFO: `6` = js.native
-    val NOTICE: `5` = js.native
-    val NOTSET: `10` = js.native
-    val PRINT: `9` = js.native
-    val WARN: `4` = js.native
+    val ALERT: /* 1 */ Double = js.native
+    val CRIT: /* 2 */ Double = js.native
+    val DEBUG: /* 7 */ Double = js.native
+    val ERROR: /* 3 */ Double = js.native
+    val FATAL: /* 0 */ Double = js.native
+    val INFO: /* 6 */ Double = js.native
+    val NOTICE: /* 5 */ Double = js.native
+    val NOTSET: /* 10 */ Double = js.native
+    val PRINT: /* 9 */ Double = js.native
+    val WARN: /* 4 */ Double = js.native
     val height: Double = js.native
     val loglevel: Double = js.native
     val width: Double = js.native

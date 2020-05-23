@@ -14,9 +14,9 @@ trait DeleteAccountAuditConfigurationRequest extends js.Object {
 
 object DeleteAccountAuditConfigurationRequest {
   @scala.inline
-  def apply(deleteScheduledAudits: js.UndefOr[scala.Boolean] = js.undefined): DeleteAccountAuditConfigurationRequest = {
+  def apply(deleteScheduledAudits: js.UndefOr[DeleteScheduledAudits] = js.undefined): DeleteAccountAuditConfigurationRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deleteScheduledAudits)) __obj.updateDynamic("deleteScheduledAudits")(deleteScheduledAudits.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleteScheduledAudits)) __obj.updateDynamic("deleteScheduledAudits")(deleteScheduledAudits.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAccountAuditConfigurationRequest]
   }
 }

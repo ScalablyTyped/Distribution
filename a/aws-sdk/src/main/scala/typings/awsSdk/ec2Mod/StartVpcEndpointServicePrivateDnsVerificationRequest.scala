@@ -18,9 +18,9 @@ trait StartVpcEndpointServicePrivateDnsVerificationRequest extends js.Object {
 
 object StartVpcEndpointServicePrivateDnsVerificationRequest {
   @scala.inline
-  def apply(ServiceId: VpcEndpointServiceId, DryRun: js.UndefOr[scala.Boolean] = js.undefined): StartVpcEndpointServicePrivateDnsVerificationRequest = {
+  def apply(ServiceId: VpcEndpointServiceId, DryRun: js.UndefOr[Boolean] = js.undefined): StartVpcEndpointServicePrivateDnsVerificationRequest = {
     val __obj = js.Dynamic.literal(ServiceId = ServiceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartVpcEndpointServicePrivateDnsVerificationRequest]
   }
 }

@@ -44,16 +44,16 @@ object JQueryTinyScrollbarOptions {
     scroll: js.UndefOr[Boolean] = js.undefined,
     size: js.Any = null,
     sizethumb: js.Any = null,
-    wheel: Int | Double = null
+    wheel: js.UndefOr[Double] = js.undefined
   ): JQueryTinyScrollbarOptions = {
     val __obj = js.Dynamic.literal()
     if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (!js.isUndefined(invertscroll)) __obj.updateDynamic("invertscroll")(invertscroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockscroll)) __obj.updateDynamic("lockscroll")(lockscroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(invertscroll)) __obj.updateDynamic("invertscroll")(invertscroll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockscroll)) __obj.updateDynamic("lockscroll")(lockscroll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (sizethumb != null) __obj.updateDynamic("sizethumb")(sizethumb.asInstanceOf[js.Any])
-    if (wheel != null) __obj.updateDynamic("wheel")(wheel.asInstanceOf[js.Any])
+    if (!js.isUndefined(wheel)) __obj.updateDynamic("wheel")(wheel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryTinyScrollbarOptions]
   }
 }

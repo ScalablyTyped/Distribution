@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait EndpointDetails extends js.Object {
   /**
-    * A list of address allocation IDs that are required to attach an Elastic IP address to your SFTP server's endpoint. This is only valid in the UpdateServer API.  This property can only be use when EndpointType is set to VPC. 
+    * A list of address allocation IDs that are required to attach an Elastic IP address to your file transfer protocol-enabled server's endpoint. This is only valid in the UpdateServer API.  This property can only be use when EndpointType is set to VPC. 
     */
   var AddressAllocationIds: js.UndefOr[typings.awsSdk.transferMod.AddressAllocationIds] = js.native
   /**
-    * A list of subnet IDs that are required to host your SFTP server endpoint in your VPC.
+    * A list of subnet IDs that are required to host your file transfer protocol-enabled server endpoint in your VPC.
     */
   var SubnetIds: js.UndefOr[typings.awsSdk.transferMod.SubnetIds] = js.native
   /**
@@ -19,7 +19,7 @@ trait EndpointDetails extends js.Object {
     */
   var VpcEndpointId: js.UndefOr[typings.awsSdk.transferMod.VpcEndpointId] = js.native
   /**
-    * The VPC ID of the virtual private cloud in which the SFTP server's endpoint will be hosted.
+    * The VPC ID of the VPC in which a file transfer protocol-enabled server's endpoint will be hosted.
     */
   var VpcId: js.UndefOr[typings.awsSdk.transferMod.VpcId] = js.native
 }

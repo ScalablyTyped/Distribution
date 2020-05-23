@@ -12,10 +12,6 @@ import scala.scalajs.js.annotation._
   * @memberof PIXI
   * @implements IPoint
   */
-@JSGlobal("PIXI.Point")
 @js.native
-class Point () extends IPoint {
-  def this(x: Double) = this()
-  def this(x: Double, y: Double) = this()
-}
+trait Point extends IPoint
 

@@ -1,8 +1,8 @@
 package typings.gapiClientCustomsearch.gapi.client.customsearch
 
-import typings.gapiClientCustomsearch.AnonCorrectedQuery
-import typings.gapiClientCustomsearch.AnonFormattedSearchTime
-import typings.gapiClientCustomsearch.AnonTemplate
+import typings.gapiClientCustomsearch.anon.CorrectedQuery
+import typings.gapiClientCustomsearch.anon.FormattedSearchTime
+import typings.gapiClientCustomsearch.anon.Template
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,9 +14,9 @@ trait Search extends js.Object {
   var kind: js.UndefOr[String] = js.undefined
   var promotions: js.UndefOr[js.Array[Promotion]] = js.undefined
   var queries: js.UndefOr[Record[String, js.Array[Query]]] = js.undefined
-  var searchInformation: js.UndefOr[AnonFormattedSearchTime] = js.undefined
-  var spelling: js.UndefOr[AnonCorrectedQuery] = js.undefined
-  var url: js.UndefOr[AnonTemplate] = js.undefined
+  var searchInformation: js.UndefOr[FormattedSearchTime] = js.undefined
+  var spelling: js.UndefOr[CorrectedQuery] = js.undefined
+  var url: js.UndefOr[Template] = js.undefined
 }
 
 object Search {
@@ -27,9 +27,9 @@ object Search {
     kind: String = null,
     promotions: js.Array[Promotion] = null,
     queries: Record[String, js.Array[Query]] = null,
-    searchInformation: AnonFormattedSearchTime = null,
-    spelling: AnonCorrectedQuery = null,
-    url: AnonTemplate = null
+    searchInformation: FormattedSearchTime = null,
+    spelling: CorrectedQuery = null,
+    url: Template = null
   ): Search = {
     val __obj = js.Dynamic.literal()
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])

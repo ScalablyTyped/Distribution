@@ -1,6 +1,6 @@
 package typings.algoliaRequesterCommon.mod
 
-import typings.algoliaRequesterCommon.ReadonlyPromiseResponse
+import typings.algoliaRequesterCommon.anon.ReadonlyPromiseResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

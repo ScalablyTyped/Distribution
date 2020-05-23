@@ -5,31 +5,30 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the control code. */
-@JSGlobal("Windows.Devices.Custom.IOControlCode")
-@js.native
-class IOControlCode protected () extends js.Object {
-  /**
-    * The control code.
-    * @param deviceType The device type.
-    * @param function The device function.
-    * @param accessMode The access mode.
-    * @param bufferingMethod The buffering method.
-    */
-  def this(
-    deviceType: Double,
-    func: Double,
-    accessMode: IOControlAccessMode,
-    bufferingMethod: IOControlBufferingMethod
-  ) = this()
+trait IOControlCode extends js.Object {
   /** The access mode. */
-  var accessMode: IOControlAccessMode = js.native
+  var accessMode: IOControlAccessMode
   /** The buffering method. */
-  var bufferingMethod: IOControlBufferingMethod = js.native
+  var bufferingMethod: IOControlBufferingMethod
   /** The control code. */
-  var controlCode: Double = js.native
+  var controlCode: Double
   /** The device type. */
-  var deviceType: Double = js.native
+  var deviceType: Double
   /** The function. */
-  var function: Double = js.native
+  var function: Double
+}
+
+object IOControlCode {
+  @scala.inline
+  def apply(
+    accessMode: IOControlAccessMode,
+    bufferingMethod: IOControlBufferingMethod,
+    controlCode: Double,
+    deviceType: Double,
+    function: Double
+  ): IOControlCode = {
+    val __obj = js.Dynamic.literal(accessMode = accessMode.asInstanceOf[js.Any], bufferingMethod = bufferingMethod.asInstanceOf[js.Any], controlCode = controlCode.asInstanceOf[js.Any], deviceType = deviceType.asInstanceOf[js.Any], function = function.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IOControlCode]
+  }
 }
 

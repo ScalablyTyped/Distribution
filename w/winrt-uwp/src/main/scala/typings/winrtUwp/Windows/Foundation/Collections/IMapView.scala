@@ -1,6 +1,6 @@
 package typings.winrtUwp.Windows.Foundation.Collections
 
-import typings.winrtUwp.AnonFirst
+import typings.winrtUwp.anon.First
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ trait IMapView[K, V]
   /**
     * Splits the map view into two views.
     */
-  def split(): AnonFirst[K, V]
+  def split(): First[K, V]
 }
 
 object IMapView {
@@ -35,7 +35,7 @@ object IMapView {
     hasKey: K => Boolean,
     lookup: K => V,
     size: Double,
-    split: () => AnonFirst[K, V]
+    split: () => First[K, V]
   ): IMapView[K, V] = {
     val __obj = js.Dynamic.literal(first = js.Any.fromFunction0(first), hasKey = js.Any.fromFunction1(hasKey), lookup = js.Any.fromFunction1(lookup), size = size.asInstanceOf[js.Any], split = js.Any.fromFunction0(split))
     __obj.asInstanceOf[IMapView[K, V]]

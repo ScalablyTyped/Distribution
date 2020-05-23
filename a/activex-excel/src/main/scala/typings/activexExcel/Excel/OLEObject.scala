@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.OLEObject")
 @js.native
-class OLEObject protected () extends js.Object {
+trait OLEObject extends js.Object {
   var AltHTML: String = js.native
   val Application: typings.activexExcel.Excel.Application = js.native
   var AutoLoad: Boolean = js.native

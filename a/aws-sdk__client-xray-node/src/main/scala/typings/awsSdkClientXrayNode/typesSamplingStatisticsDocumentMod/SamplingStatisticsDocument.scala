@@ -40,10 +40,10 @@ object SamplingStatisticsDocument {
     RuleName: String,
     SampledCount: Double,
     Timestamp: Date | String | Double,
-    BorrowCount: Int | Double = null
+    BorrowCount: js.UndefOr[Double] = js.undefined
   ): SamplingStatisticsDocument = {
     val __obj = js.Dynamic.literal(ClientID = ClientID.asInstanceOf[js.Any], RequestCount = RequestCount.asInstanceOf[js.Any], RuleName = RuleName.asInstanceOf[js.Any], SampledCount = SampledCount.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any])
-    if (BorrowCount != null) __obj.updateDynamic("BorrowCount")(BorrowCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(BorrowCount)) __obj.updateDynamic("BorrowCount")(BorrowCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SamplingStatisticsDocument]
   }
 }

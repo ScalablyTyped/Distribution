@@ -53,18 +53,8 @@ object clientMod extends js.Object {
     val channel: js.Any = js.native
     val config: js.Any = js.native
     var handleStorageId: js.Any = js.native
-    /**
-      * Indicates if twilsock is connected now
-      * @returns {Boolean}
-      */
-    val isConnected: Boolean = js.native
     var offlineStorageDeferred: js.Any = js.native
     val registrations: js.Any = js.native
-    /**
-      * Current state
-      * @returns {String}
-      */
-    val state: String = js.native
     val upstream: js.Any = js.native
     /**
       * Connect to the server
@@ -94,6 +84,11 @@ object clientMod extends js.Object {
       * @returns {Promise}
       */
     def get(url: String, headers: js.Any): js.Promise[Result] = js.native
+    /**
+      * Indicates if twilsock is connected now
+      * @returns {Boolean}
+      */
+    def isConnected: Boolean = js.native
     /**
       * Post HTTP request to upstream service
       * @param {string} url Upstream service url
@@ -125,6 +120,11 @@ object clientMod extends js.Object {
       * @private
       */
     def setNotificationsContext(contextId: String, context: Context): Unit = js.native
+    /**
+      * Current state
+      * @returns {String}
+      */
+    def state: String = js.native
     /**
       * Get offline storage ID
       * @returns {Promise<OfflineProductStorage>}

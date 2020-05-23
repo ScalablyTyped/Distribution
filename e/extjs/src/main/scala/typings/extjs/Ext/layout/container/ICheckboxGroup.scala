@@ -14,22 +14,22 @@ trait ICheckboxGroup extends IContainer {
   /** [Config Option] (Boolean) */
   var autoFlex: js.UndefOr[Boolean] = js.undefined
   /** [Method] Just wait for the child items to all lay themselves out in the width we are configured to make available to them
-  		* @param ownerContext Object
-  		*/
+    * @param ownerContext Object
+    */
   @JSName("calculate")
   var calculate_ICheckboxGroup: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Returns an object describing how this layout manages the size of the given component
-  		* @param item Object
-  		* @returns Ext.layout.SizePolicy An object describing the sizing done by the layout for this item.
-  		*/
+    * @param item Object
+    * @returns Ext.layout.SizePolicy An object describing the sizing done by the layout for this item.
+    */
   @JSName("getItemSizePolicy")
   var getItemSizePolicy_ICheckboxGroup: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], ISizePolicy]] = js.undefined
   /** [Method] Always valid  */
   @JSName("isValidParent")
   var isValidParent_ICheckboxGroup: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Iterates over all passed items ensuring they are rendered
-  		* @param items Object
-  		*/
+    * @param items Object
+    */
   @JSName("renderItems")
   var renderItems_ICheckboxGroup: js.UndefOr[js.Function1[/* items */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
@@ -88,7 +88,7 @@ object ICheckboxGroup {
     if (afterRemove != null) __obj.updateDynamic("afterRemove")(js.Any.fromFunction1(afterRemove))
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFlex)) __obj.updateDynamic("autoFlex")(autoFlex.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFlex)) __obj.updateDynamic("autoFlex")(autoFlex.get.asInstanceOf[js.Any])
     if (beginLayout != null) __obj.updateDynamic("beginLayout")(js.Any.fromFunction1(beginLayout))
     if (beginLayoutCycle != null) __obj.updateDynamic("beginLayoutCycle")(js.Any.fromFunction2(beginLayoutCycle))
     if (calculate != null) __obj.updateDynamic("calculate")(js.Any.fromFunction1(calculate))
@@ -99,7 +99,7 @@ object ICheckboxGroup {
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (configureItem != null) __obj.updateDynamic("configureItem")(js.Any.fromFunction1(configureItem))
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done.asInstanceOf[js.Any])
+    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done.get.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (finalizeLayout != null) __obj.updateDynamic("finalizeLayout")(js.Any.fromFunction1(finalizeLayout))
     if (finishedLayout != null) __obj.updateDynamic("finishedLayout")(js.Any.fromFunction1(finishedLayout))
@@ -115,7 +115,7 @@ object ICheckboxGroup {
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (initLayout != null) __obj.updateDynamic("initLayout")(js.Any.fromFunction0(initLayout))
-    if (!js.isUndefined(isLayout)) __obj.updateDynamic("isLayout")(isLayout.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLayout)) __obj.updateDynamic("isLayout")(isLayout.get.asInstanceOf[js.Any])
     if (isValidParent != null) __obj.updateDynamic("isValidParent")(js.Any.fromFunction0(isValidParent))
     if (itemCls != null) __obj.updateDynamic("itemCls")(itemCls.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
@@ -126,7 +126,7 @@ object ICheckboxGroup {
     if (renderItems != null) __obj.updateDynamic("renderItems")(js.Any.fromFunction1(renderItems))
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICheckboxGroup]

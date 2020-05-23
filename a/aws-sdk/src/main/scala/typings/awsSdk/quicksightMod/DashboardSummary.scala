@@ -45,7 +45,7 @@ object DashboardSummary {
     LastPublishedTime: Timestamp_ = null,
     LastUpdatedTime: Timestamp_ = null,
     Name: DashboardName = null,
-    PublishedVersionNumber: Int | scala.Double = null
+    PublishedVersionNumber: js.UndefOr[VersionNumber] = js.undefined
   ): DashboardSummary = {
     val __obj = js.Dynamic.literal()
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
@@ -54,7 +54,7 @@ object DashboardSummary {
     if (LastPublishedTime != null) __obj.updateDynamic("LastPublishedTime")(LastPublishedTime.asInstanceOf[js.Any])
     if (LastUpdatedTime != null) __obj.updateDynamic("LastUpdatedTime")(LastUpdatedTime.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (PublishedVersionNumber != null) __obj.updateDynamic("PublishedVersionNumber")(PublishedVersionNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(PublishedVersionNumber)) __obj.updateDynamic("PublishedVersionNumber")(PublishedVersionNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DashboardSummary]
   }
 }

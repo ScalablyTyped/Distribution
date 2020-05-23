@@ -52,9 +52,9 @@ object IGridData {
     MultiValueSeparator: String = null,
     PaneLayout: PaneLayout = null,
     PivotedColumns: js.Array[ColumnInfo] = null,
-    RecordCount: Int | Double = null,
+    RecordCount: js.UndefOr[Double] = js.undefined,
     SortState: js.Array[_] = null,
-    TopRecord: Int | Double = null,
+    TopRecord: js.UndefOr[Double] = js.undefined,
     UnfilteredHierarchy: js.Any = null,
     ViewDepKeys: js.Array[_] = null
   ): IGridData = {
@@ -62,7 +62,7 @@ object IGridData {
     if (AdditionalParams != null) __obj.updateDynamic("AdditionalParams")(AdditionalParams.asInstanceOf[js.Any])
     if (AutoFilterEntries != null) __obj.updateDynamic("AutoFilterEntries")(AutoFilterEntries.asInstanceOf[js.Any])
     if (AutoFilterState != null) __obj.updateDynamic("AutoFilterState")(AutoFilterState.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoFilterableColumns)) __obj.updateDynamic("AutoFilterableColumns")(AutoFilterableColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoFilterableColumns)) __obj.updateDynamic("AutoFilterableColumns")(AutoFilterableColumns.get.asInstanceOf[js.Any])
     if (CellStyles != null) __obj.updateDynamic("CellStyles")(CellStyles.asInstanceOf[js.Any])
     if (GanttInfo != null) __obj.updateDynamic("GanttInfo")(GanttInfo.asInstanceOf[js.Any])
     if (GroupingGridRowStyleIds != null) __obj.updateDynamic("GroupingGridRowStyleIds")(GroupingGridRowStyleIds.asInstanceOf[js.Any])
@@ -71,9 +71,9 @@ object IGridData {
     if (MultiValueSeparator != null) __obj.updateDynamic("MultiValueSeparator")(MultiValueSeparator.asInstanceOf[js.Any])
     if (PaneLayout != null) __obj.updateDynamic("PaneLayout")(PaneLayout.asInstanceOf[js.Any])
     if (PivotedColumns != null) __obj.updateDynamic("PivotedColumns")(PivotedColumns.asInstanceOf[js.Any])
-    if (RecordCount != null) __obj.updateDynamic("RecordCount")(RecordCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(RecordCount)) __obj.updateDynamic("RecordCount")(RecordCount.get.asInstanceOf[js.Any])
     if (SortState != null) __obj.updateDynamic("SortState")(SortState.asInstanceOf[js.Any])
-    if (TopRecord != null) __obj.updateDynamic("TopRecord")(TopRecord.asInstanceOf[js.Any])
+    if (!js.isUndefined(TopRecord)) __obj.updateDynamic("TopRecord")(TopRecord.get.asInstanceOf[js.Any])
     if (UnfilteredHierarchy != null) __obj.updateDynamic("UnfilteredHierarchy")(UnfilteredHierarchy.asInstanceOf[js.Any])
     if (ViewDepKeys != null) __obj.updateDynamic("ViewDepKeys")(ViewDepKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridData]

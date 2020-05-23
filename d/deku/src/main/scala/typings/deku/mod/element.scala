@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object element extends js.Object {
   /**
-  	 * This function lets us create virtual nodes using a simple syntax.
-  	 * It is compatible with JSX transforms so you can use JSX to write nodes that will compile to this function.
-  	 */
+    * This function lets us create virtual nodes using a simple syntax.
+    * It is compatible with JSX transforms so you can use JSX to write nodes that will compile to this function.
+    */
   def apply(`type`: String): VirtualElement = js.native
   def apply(`type`: Thunk): VirtualElement = js.native
   def apply[A](`type`: String, attributes: A, children: js.Any*): VirtualElement = js.native

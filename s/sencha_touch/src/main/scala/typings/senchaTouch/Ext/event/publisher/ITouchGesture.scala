@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation._
 
 trait ITouchGesture extends IBase {
   /** [Method] Returns the value of moveThrottle
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMoveThrottle: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of recognizers
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getRecognizers: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Sets the value of moveThrottle
-  		* @param moveThrottle Number The new value.
-  		*/
+    * @param moveThrottle Number The new value.
+    */
   var setMoveThrottle: js.UndefOr[js.Function1[/* moveThrottle */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of recognizers
-  		* @param recognizers Object The new value.
-  		*/
+    * @param recognizers Object The new value.
+    */
   var setRecognizers: js.UndefOr[js.Function1[/* recognizers */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -70,7 +70,7 @@ object ITouchGesture {
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setMoveThrottle != null) __obj.updateDynamic("setMoveThrottle")(js.Any.fromFunction1(setMoveThrottle))
     if (setRecognizers != null) __obj.updateDynamic("setRecognizers")(js.Any.fromFunction1(setRecognizers))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITouchGesture]

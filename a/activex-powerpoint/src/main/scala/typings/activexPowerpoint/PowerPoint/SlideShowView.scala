@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.SlideShowView")
 @js.native
-class SlideShowView protected () extends js.Object {
+trait SlideShowView extends js.Object {
   var AcceleratorsEnabled: MsoTriState = js.native
   val AdvanceMode: PpSlideShowAdvanceMode = js.native
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native

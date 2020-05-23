@@ -29,7 +29,7 @@ object CustomMetric {
     active: js.UndefOr[Boolean] = js.undefined,
     created: String = null,
     id: String = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     kind: String = null,
     max_value: String = null,
     min_value: String = null,
@@ -43,10 +43,10 @@ object CustomMetric {
   ): CustomMetric = {
     val __obj = js.Dynamic.literal()
     if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (max_value != null) __obj.updateDynamic("max_value")(max_value.asInstanceOf[js.Any])
     if (min_value != null) __obj.updateDynamic("min_value")(min_value.asInstanceOf[js.Any])

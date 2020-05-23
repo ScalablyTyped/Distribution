@@ -16,7 +16,7 @@ object formatterFactoryMod extends js.Object {
   def createFormatter(`type`: FormatterType, options: FormatterOptions): Formatter = js.native
   type FormatterOptions = CodeFrameFormatterOptions
   /* Rewritten from type alias, can be one of: 
-    - `js.undefined`
+    - js.UndefOr[scala.Nothing]
     - typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.default
     - typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.codeframe
     - typings.forkTsCheckerWebpackPlugin.formatterFormatterMod.Formatter

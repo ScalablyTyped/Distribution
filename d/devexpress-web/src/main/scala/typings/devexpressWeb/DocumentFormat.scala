@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -73,38 +72,6 @@ object DocumentFormat extends js.Object {
     */
   @js.native
   sealed trait ePub extends DocumentFormat
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DocumentFormat with Double] = js.native
-  /* 10 */ @js.native
-  object Doc extends TopLevel[Doc with Double]
-  
-  /* 3 */ @js.native
-  object Html extends TopLevel[Html with Double]
-  
-  /* 5 */ @js.native
-  object Mht extends TopLevel[Mht with Double]
-  
-  /* 7 */ @js.native
-  object OpenDocument extends TopLevel[OpenDocument with Double]
-  
-  /* 4 */ @js.native
-  object OpenXml extends TopLevel[OpenXml with Double]
-  
-  /* 1 */ @js.native
-  object PlainText extends TopLevel[PlainText with Double]
-  
-  /* 2 */ @js.native
-  object Rtf extends TopLevel[Rtf with Double]
-  
-  /* 0 */ @js.native
-  object Undefined extends TopLevel[Undefined with Double]
-  
-  /* 6 */ @js.native
-  object WordML extends TopLevel[WordML with Double]
-  
-  /* 9 */ @js.native
-  object ePub extends TopLevel[ePub with Double]
   
 }
 

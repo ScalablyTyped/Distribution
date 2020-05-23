@@ -1,6 +1,5 @@
 package typings.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -159,119 +158,6 @@ object PermissionKind extends js.Object {
   /** View past versions of a list item or document. */
   @js.native
   sealed trait viewVersions extends PermissionKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PermissionKind with Double] = js.native
-  /* 16 */ @js.native
-  object addAndCustomizePages extends TopLevel[addAndCustomizePages with Double]
-  
-  /* 26 */ @js.native
-  object addDelPrivateWebParts extends TopLevel[addDelPrivateWebParts with Double]
-  
-  /* 2 */ @js.native
-  object addListItems extends TopLevel[addListItems with Double]
-  
-  /* 13 */ @js.native
-  object anonymousSearchAccessList extends TopLevel[anonymousSearchAccessList with Double]
-  
-  /* 29 */ @js.native
-  object anonymousSearchAccessWebLists extends TopLevel[anonymousSearchAccessWebLists with Double]
-  
-  /* 18 */ @js.native
-  object applyStyleSheets extends TopLevel[applyStyleSheets with Double]
-  
-  /* 17 */ @js.native
-  object applyThemeAndBorder extends TopLevel[applyThemeAndBorder with Double]
-  
-  /* 5 */ @js.native
-  object approveItems extends TopLevel[approveItems with Double]
-  
-  /* 24 */ @js.native
-  object browseDirectories extends TopLevel[browseDirectories with Double]
-  
-  /* 25 */ @js.native
-  object browseUserInfo extends TopLevel[browseUserInfo with Double]
-  
-  /* 9 */ @js.native
-  object cancelCheckout extends TopLevel[cancelCheckout with Double]
-  
-  /* 33 */ @js.native
-  object createAlerts extends TopLevel[createAlerts with Double]
-  
-  /* 22 */ @js.native
-  object createGroups extends TopLevel[createGroups with Double]
-  
-  /* 20 */ @js.native
-  object createSSCSite extends TopLevel[createSSCSite with Double]
-  
-  /* 4 */ @js.native
-  object deleteListItems extends TopLevel[deleteListItems with Double]
-  
-  /* 8 */ @js.native
-  object deleteVersions extends TopLevel[deleteVersions with Double]
-  
-  /* 3 */ @js.native
-  object editListItems extends TopLevel[editListItems with Double]
-  
-  /* 34 */ @js.native
-  object editMyUserInfo extends TopLevel[editMyUserInfo with Double]
-  
-  /* 0 */ @js.native
-  object emptyMask extends TopLevel[emptyMask with Double]
-  
-  /* 35 */ @js.native
-  object enumeratePermissions extends TopLevel[enumeratePermissions with Double]
-  
-  /* 36 */ @js.native
-  object fullMask extends TopLevel[fullMask with Double]
-  
-  /* 32 */ @js.native
-  object manageAlerts extends TopLevel[manageAlerts with Double]
-  
-  /* 11 */ @js.native
-  object manageLists extends TopLevel[manageLists with Double]
-  
-  /* 23 */ @js.native
-  object managePermissions extends TopLevel[managePermissions with Double]
-  
-  /* 10 */ @js.native
-  object managePersonalViews extends TopLevel[managePersonalViews with Double]
-  
-  /* 21 */ @js.native
-  object manageSubwebs extends TopLevel[manageSubwebs with Double]
-  
-  /* 28 */ @js.native
-  object manageWeb extends TopLevel[manageWeb with Double]
-  
-  /* 14 */ @js.native
-  object open extends TopLevel[open with Double]
-  
-  /* 6 */ @js.native
-  object openItems extends TopLevel[openItems with Double]
-  
-  /* 27 */ @js.native
-  object updatePersonalWebParts extends TopLevel[updatePersonalWebParts with Double]
-  
-  /* 30 */ @js.native
-  object useClientIntegration extends TopLevel[useClientIntegration with Double]
-  
-  /* 31 */ @js.native
-  object useRemoteAPIs extends TopLevel[useRemoteAPIs with Double]
-  
-  /* 12 */ @js.native
-  object viewFormPages extends TopLevel[viewFormPages with Double]
-  
-  /* 1 */ @js.native
-  object viewListItems extends TopLevel[viewListItems with Double]
-  
-  /* 15 */ @js.native
-  object viewPages extends TopLevel[viewPages with Double]
-  
-  /* 19 */ @js.native
-  object viewUsageData extends TopLevel[viewUsageData with Double]
-  
-  /* 7 */ @js.native
-  object viewVersions extends TopLevel[viewVersions with Double]
   
 }
 

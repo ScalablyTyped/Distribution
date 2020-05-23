@@ -1,7 +1,6 @@
 package typings.storybookUi
 
 import org.scalablytyped.runtime.TopLevel
-import typings.storybookUi.storybookUiBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +15,9 @@ object platformMod extends js.Object {
   sealed trait Platform extends js.Object
   
   val OS: OperatingSystem = js.native
-  val isLinux: `false` = js.native
-  val isMacintosh: `false` = js.native
-  val isWindows: `false` = js.native
+  val isLinux: /* false */ Boolean = js.native
+  val isMacintosh: /* false */ Boolean = js.native
+  val isWindows: /* false */ Boolean = js.native
   @js.native
   object OperatingSystem extends js.Object {
     @js.native

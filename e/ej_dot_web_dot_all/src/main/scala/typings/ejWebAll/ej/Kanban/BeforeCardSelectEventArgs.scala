@@ -42,8 +42,8 @@ object BeforeCardSelectEventArgs {
   def apply(
     Target: js.Any = null,
     cancel: js.UndefOr[Boolean] = js.undefined,
-    cardIndex: Int | Double = null,
-    cellIndex: Int | Double = null,
+    cardIndex: js.UndefOr[Double] = js.undefined,
+    cellIndex: js.UndefOr[Double] = js.undefined,
     currentCell: js.Any = null,
     data: js.Any = null,
     model: js.Any = null,
@@ -53,9 +53,9 @@ object BeforeCardSelectEventArgs {
   ): BeforeCardSelectEventArgs = {
     val __obj = js.Dynamic.literal()
     if (Target != null) __obj.updateDynamic("Target")(Target.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (cardIndex != null) __obj.updateDynamic("cardIndex")(cardIndex.asInstanceOf[js.Any])
-    if (cellIndex != null) __obj.updateDynamic("cellIndex")(cellIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cardIndex)) __obj.updateDynamic("cardIndex")(cardIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellIndex)) __obj.updateDynamic("cellIndex")(cellIndex.get.asInstanceOf[js.Any])
     if (currentCell != null) __obj.updateDynamic("currentCell")(currentCell.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])

@@ -52,7 +52,7 @@ object DescribeAlarmsInput {
     AlarmNames: AlarmNames = null,
     AlarmTypes: AlarmTypes = null,
     ChildrenOfAlarmName: AlarmName = null,
-    MaxRecords: Int | Double = null,
+    MaxRecords: js.UndefOr[MaxRecords] = js.undefined,
     NextToken: NextToken = null,
     ParentsOfAlarmName: AlarmName = null,
     StateValue: StateValue = null
@@ -63,7 +63,7 @@ object DescribeAlarmsInput {
     if (AlarmNames != null) __obj.updateDynamic("AlarmNames")(AlarmNames.asInstanceOf[js.Any])
     if (AlarmTypes != null) __obj.updateDynamic("AlarmTypes")(AlarmTypes.asInstanceOf[js.Any])
     if (ChildrenOfAlarmName != null) __obj.updateDynamic("ChildrenOfAlarmName")(ChildrenOfAlarmName.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (ParentsOfAlarmName != null) __obj.updateDynamic("ParentsOfAlarmName")(ParentsOfAlarmName.asInstanceOf[js.Any])
     if (StateValue != null) __obj.updateDynamic("StateValue")(StateValue.asInstanceOf[js.Any])

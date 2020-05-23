@@ -46,19 +46,19 @@ object DatePickerOptions {
     locale: String = null,
     maxDate: Date | String | Double = null,
     minDate: Date | String | Double = null,
-    minuteInterval: Int | Double = null,
+    minuteInterval: js.UndefOr[Double] = js.undefined,
     mode: String = null,
     nowText: String = null,
     okText: String = null,
     popoverArrowDirection: String = null,
     titleText: String = null,
     todayText: String = null,
-    x: Int | Double = null,
-    y: Int | Double = null
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined
   ): DatePickerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowFutureDates)) __obj.updateDynamic("allowFutureDates")(allowFutureDates.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowOldDates)) __obj.updateDynamic("allowOldDates")(allowOldDates.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFutureDates)) __obj.updateDynamic("allowFutureDates")(allowFutureDates.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowOldDates)) __obj.updateDynamic("allowOldDates")(allowOldDates.get.asInstanceOf[js.Any])
     if (androidTheme != null) __obj.updateDynamic("androidTheme")(androidTheme.asInstanceOf[js.Any])
     if (cancelButtonColor != null) __obj.updateDynamic("cancelButtonColor")(cancelButtonColor.asInstanceOf[js.Any])
     if (cancelButtonLabel != null) __obj.updateDynamic("cancelButtonLabel")(cancelButtonLabel.asInstanceOf[js.Any])
@@ -66,19 +66,19 @@ object DatePickerOptions {
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (doneButtonColor != null) __obj.updateDynamic("doneButtonColor")(doneButtonColor.asInstanceOf[js.Any])
     if (doneButtonLabel != null) __obj.updateDynamic("doneButtonLabel")(doneButtonLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(is24Hour)) __obj.updateDynamic("is24Hour")(is24Hour.asInstanceOf[js.Any])
+    if (!js.isUndefined(is24Hour)) __obj.updateDynamic("is24Hour")(is24Hour.get.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (minuteInterval != null) __obj.updateDynamic("minuteInterval")(minuteInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(minuteInterval)) __obj.updateDynamic("minuteInterval")(minuteInterval.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (nowText != null) __obj.updateDynamic("nowText")(nowText.asInstanceOf[js.Any])
     if (okText != null) __obj.updateDynamic("okText")(okText.asInstanceOf[js.Any])
     if (popoverArrowDirection != null) __obj.updateDynamic("popoverArrowDirection")(popoverArrowDirection.asInstanceOf[js.Any])
     if (titleText != null) __obj.updateDynamic("titleText")(titleText.asInstanceOf[js.Any])
     if (todayText != null) __obj.updateDynamic("todayText")(todayText.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatePickerOptions]
   }
 }

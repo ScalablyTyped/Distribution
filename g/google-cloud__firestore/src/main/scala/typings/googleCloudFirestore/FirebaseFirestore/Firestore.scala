@@ -1,18 +1,12 @@
 package typings.googleCloudFirestore.FirebaseFirestore
 
-import typings.googleCloudFirestore.AnonMaxAttempts
+import typings.googleCloudFirestore.anon.MaxAttempts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("FirebaseFirestore.Firestore")
 @js.native
-/**
-  * @param settings Configuration object. See [Firestore Documentation]
-  * {@link https://firebase.google.com/docs/firestore/}
-  */
-class Firestore () extends js.Object {
-  def this(settings: Settings) = this()
+trait Firestore extends js.Object {
   /**
     * Creates a write batch, used for performing multiple writes as a single
     * atomic operation.
@@ -88,7 +82,7 @@ class Firestore () extends js.Object {
   def runTransaction[T](updateFunction: js.Function1[/* transaction */ Transaction, js.Promise[T]]): js.Promise[T] = js.native
   def runTransaction[T](
     updateFunction: js.Function1[/* transaction */ Transaction, js.Promise[T]],
-    transactionOptions: AnonMaxAttempts
+    transactionOptions: MaxAttempts
   ): js.Promise[T] = js.native
   /**
     * Specifies custom settings to be used to configure the `Firestore`

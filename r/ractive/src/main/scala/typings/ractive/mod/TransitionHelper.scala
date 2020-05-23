@@ -24,8 +24,8 @@ trait TransitionHelper extends js.Object {
   	 * @param complete an optional callback to call when the animation is complete
   	 * @returns a Promise that resolves when the animation is complete
   	 */
-  def animateStyle(map: ValueMap, opts: typings.ractive.TransitionOpts): js.Promise[Unit] = js.native
-  def animateStyle(map: ValueMap, opts: typings.ractive.TransitionOpts, complete: js.Function0[Unit]): js.Promise[Unit] = js.native
+  def animateStyle(map: ValueMap, opts: typings.ractive.anon.TransitionOpts): js.Promise[Unit] = js.native
+  def animateStyle(map: ValueMap, opts: typings.ractive.anon.TransitionOpts, complete: js.Function0[Unit]): js.Promise[Unit] = js.native
   /**
   	 * Animate the given property to the given value.
   	 * @param prop the css property to animate
@@ -34,8 +34,13 @@ trait TransitionHelper extends js.Object {
   	 * @param complete an optional callback to call when the animation is complete
   	 * @returns a Promise that resolves when the animation is complete
   	 */
-  def animateStyle(prop: String, value: js.Any, opts: typings.ractive.TransitionOpts): js.Promise[Unit] = js.native
-  def animateStyle(prop: String, value: js.Any, opts: typings.ractive.TransitionOpts, complete: js.Function0[Unit]): js.Promise[Unit] = js.native
+  def animateStyle(prop: String, value: js.Any, opts: typings.ractive.anon.TransitionOpts): js.Promise[Unit] = js.native
+  def animateStyle(
+    prop: String,
+    value: js.Any,
+    opts: typings.ractive.anon.TransitionOpts,
+    complete: js.Function0[Unit]
+  ): js.Promise[Unit] = js.native
   /**
   	 * The function to call when the transition is complete. This is used to control the Promises returned by mutation methods.j
   	 * @param noReset whether or not to skip resetting the styles back to their starting points - defaults to false

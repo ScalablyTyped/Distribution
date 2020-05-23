@@ -45,11 +45,11 @@ object LookupOptions {
     viewIds: js.Array[String] = null
   ): LookupOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowMultiSelect)) __obj.updateDynamic("allowMultiSelect")(allowMultiSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMultiSelect)) __obj.updateDynamic("allowMultiSelect")(allowMultiSelect.get.asInstanceOf[js.Any])
     if (defaultEntityType != null) __obj.updateDynamic("defaultEntityType")(defaultEntityType.asInstanceOf[js.Any])
     if (defaultViewId != null) __obj.updateDynamic("defaultViewId")(defaultViewId.asInstanceOf[js.Any])
     if (entityTypes != null) __obj.updateDynamic("entityTypes")(entityTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBarcodeScanner)) __obj.updateDynamic("showBarcodeScanner")(showBarcodeScanner.asInstanceOf[js.Any])
+    if (!js.isUndefined(showBarcodeScanner)) __obj.updateDynamic("showBarcodeScanner")(showBarcodeScanner.get.asInstanceOf[js.Any])
     if (viewIds != null) __obj.updateDynamic("viewIds")(viewIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[LookupOptions]
   }

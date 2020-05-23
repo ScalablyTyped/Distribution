@@ -114,7 +114,7 @@ object ClusterInfo {
     EncryptionInfo: EncryptionInfo = null,
     EnhancedMonitoring: EnhancedMonitoring = null,
     LoggingInfo: LoggingInfo = null,
-    NumberOfBrokerNodes: Int | Double = null,
+    NumberOfBrokerNodes: js.UndefOr[integer] = js.undefined,
     OpenMonitoring: OpenMonitoring = null,
     State: ClusterState = null,
     StateInfo: StateInfo = null,
@@ -133,7 +133,7 @@ object ClusterInfo {
     if (EncryptionInfo != null) __obj.updateDynamic("EncryptionInfo")(EncryptionInfo.asInstanceOf[js.Any])
     if (EnhancedMonitoring != null) __obj.updateDynamic("EnhancedMonitoring")(EnhancedMonitoring.asInstanceOf[js.Any])
     if (LoggingInfo != null) __obj.updateDynamic("LoggingInfo")(LoggingInfo.asInstanceOf[js.Any])
-    if (NumberOfBrokerNodes != null) __obj.updateDynamic("NumberOfBrokerNodes")(NumberOfBrokerNodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfBrokerNodes)) __obj.updateDynamic("NumberOfBrokerNodes")(NumberOfBrokerNodes.get.asInstanceOf[js.Any])
     if (OpenMonitoring != null) __obj.updateDynamic("OpenMonitoring")(OpenMonitoring.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (StateInfo != null) __obj.updateDynamic("StateInfo")(StateInfo.asInstanceOf[js.Any])

@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/remote/remote_event", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/remote/remote_event", JSImport.Namespace)
 @js.native
 object remoteEventMod extends js.Object {
   @js.native

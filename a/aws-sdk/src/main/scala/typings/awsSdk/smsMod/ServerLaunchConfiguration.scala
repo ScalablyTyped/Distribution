@@ -47,7 +47,7 @@ trait ServerLaunchConfiguration extends js.Object {
 object ServerLaunchConfiguration {
   @scala.inline
   def apply(
-    associatePublicIpAddress: js.UndefOr[Boolean] = js.undefined,
+    associatePublicIpAddress: js.UndefOr[AssociatePublicIpAddress] = js.undefined,
     ec2KeyName: EC2KeyName = null,
     instanceType: InstanceType = null,
     logicalId: LogicalId = null,
@@ -58,7 +58,7 @@ object ServerLaunchConfiguration {
     vpc: VPC = null
   ): ServerLaunchConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(associatePublicIpAddress)) __obj.updateDynamic("associatePublicIpAddress")(associatePublicIpAddress.asInstanceOf[js.Any])
+    if (!js.isUndefined(associatePublicIpAddress)) __obj.updateDynamic("associatePublicIpAddress")(associatePublicIpAddress.get.asInstanceOf[js.Any])
     if (ec2KeyName != null) __obj.updateDynamic("ec2KeyName")(ec2KeyName.asInstanceOf[js.Any])
     if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
     if (logicalId != null) __obj.updateDynamic("logicalId")(logicalId.asInstanceOf[js.Any])

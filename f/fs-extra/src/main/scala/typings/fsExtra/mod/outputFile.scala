@@ -12,11 +12,11 @@ object outputFile extends js.Object {
   def apply(file: String, data: js.Any, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
   def apply(file: String, data: js.Any, options: String): js.Promise[Unit] = js.native
   def apply(file: String, data: js.Any, options: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  def apply(file: String, data: js.Any, options: typings.node.fsMod.WriteFileOptions): js.Promise[Unit] = js.native
+  def apply(file: String, data: js.Any, options: WriteFileOptions): js.Promise[Unit] = js.native
   def apply(
     file: String,
     data: js.Any,
-    options: typings.node.fsMod.WriteFileOptions,
+    options: WriteFileOptions,
     callback: js.Function1[/* err */ Error, Unit]
   ): Unit = js.native
 }

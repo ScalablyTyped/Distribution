@@ -1,6 +1,6 @@
 package typings.ionic.cordovaConfigMod
 
-import typings.ionic.RequiredProjectIntegratio
+import typings.ionic.anon.RequiredProjectIntegratio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

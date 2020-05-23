@@ -152,14 +152,14 @@ object ReactJsonViewProps {
     src: js.Object,
     collapseStringsAfterLength: Double | `false` = null,
     collapsed: Boolean | Double = null,
-    defaultValue: TypeDefaultValue | js.Array[TypeDefaultValue] = null,
+    defaultValue: js.UndefOr[Null | TypeDefaultValue | js.Array[TypeDefaultValue]] = js.undefined,
     displayDataTypes: js.UndefOr[Boolean] = js.undefined,
     displayObjectSize: js.UndefOr[Boolean] = js.undefined,
     enableClipboard: Boolean | (js.Function1[/* copy */ OnCopyProps, Unit]) = null,
-    groupArraysAfterLength: Int | Double = null,
+    groupArraysAfterLength: js.UndefOr[Double] = js.undefined,
     iconStyle: circle | triangle | square = null,
-    indentWidth: Int | Double = null,
-    name: String | `false` = null,
+    indentWidth: js.UndefOr[Double] = js.undefined,
+    name: js.UndefOr[Null | String | `false`] = js.undefined,
     onAdd: (js.Function1[/* add */ InteractionProps, `false` | _]) | `false` = null,
     onDelete: (js.Function1[/* del */ InteractionProps, `false` | _]) | `false` = null,
     onEdit: (js.Function1[/* edit */ InteractionProps, `false` | _]) | `false` = null,
@@ -173,20 +173,20 @@ object ReactJsonViewProps {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
     if (collapseStringsAfterLength != null) __obj.updateDynamic("collapseStringsAfterLength")(collapseStringsAfterLength.asInstanceOf[js.Any])
     if (collapsed != null) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayDataTypes)) __obj.updateDynamic("displayDataTypes")(displayDataTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayObjectSize)) __obj.updateDynamic("displayObjectSize")(displayObjectSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayDataTypes)) __obj.updateDynamic("displayDataTypes")(displayDataTypes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayObjectSize)) __obj.updateDynamic("displayObjectSize")(displayObjectSize.get.asInstanceOf[js.Any])
     if (enableClipboard != null) __obj.updateDynamic("enableClipboard")(enableClipboard.asInstanceOf[js.Any])
-    if (groupArraysAfterLength != null) __obj.updateDynamic("groupArraysAfterLength")(groupArraysAfterLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupArraysAfterLength)) __obj.updateDynamic("groupArraysAfterLength")(groupArraysAfterLength.get.asInstanceOf[js.Any])
     if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle.asInstanceOf[js.Any])
-    if (indentWidth != null) __obj.updateDynamic("indentWidth")(indentWidth.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(indentWidth)) __obj.updateDynamic("indentWidth")(indentWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onAdd != null) __obj.updateDynamic("onAdd")(onAdd.asInstanceOf[js.Any])
     if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete.asInstanceOf[js.Any])
     if (onEdit != null) __obj.updateDynamic("onEdit")(onEdit.asInstanceOf[js.Any])
     if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect.asInstanceOf[js.Any])
     if (shouldCollapse != null) __obj.updateDynamic("shouldCollapse")(shouldCollapse.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortKeys)) __obj.updateDynamic("sortKeys")(sortKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortKeys)) __obj.updateDynamic("sortKeys")(sortKeys.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (validationMessage != null) __obj.updateDynamic("validationMessage")(validationMessage.asInstanceOf[js.Any])

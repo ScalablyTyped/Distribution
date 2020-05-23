@@ -4,22 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.SceneOptimization")
-@js.native
-/**
-  * Creates the SceneOptimization object
-  * @param priority defines the priority of this optimization (0 by default which means first in the list)
-  * @param desc defines the description associated with the optimization
-  */
-class SceneOptimization () extends js.Object {
-  def this(/**
-    * Defines the priority of this optimization (0 by default which means first in the list)
-    */
-  priority: Double) = this()
+trait SceneOptimization extends js.Object {
   /**
     * Defines the priority of this optimization (0 by default which means first in the list)
     */
-  var priority: Double = js.native
+  var priority: Double
   /**
     * This function will be called by the SceneOptimizer when its priority is reached in order to apply the change required by the current optimization
     * @param scene defines the current scene where to apply this optimization
@@ -27,11 +16,19 @@ class SceneOptimization () extends js.Object {
     * @returns true if everything that can be done was applied
     */
   @JSName("apply")
-  def apply(scene: Scene, optimizer: SceneOptimizer): Boolean = js.native
+  def apply(scene: Scene, optimizer: SceneOptimizer): Boolean
   /**
     * Gets a string describing the action executed by the current optimization
     * @returns description string
     */
-  def getDescription(): String = js.native
+  def getDescription(): String
+}
+
+object SceneOptimization {
+  @scala.inline
+  def apply(apply: (Scene, SceneOptimizer) => Boolean, getDescription: () => String, priority: Double): SceneOptimization = {
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction2(apply), getDescription = js.Any.fromFunction0(getDescription), priority = priority.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SceneOptimization]
+  }
 }
 

@@ -1,8 +1,8 @@
 package typings.braintreeWeb.mod
 
-import typings.braintreeWeb.AnonClient
-import typings.braintreeWeb.AnonDisplayName
-import typings.braintreeWeb.AnonToken
+import typings.braintreeWeb.anon.Client
+import typings.braintreeWeb.anon.DisplayName
+import typings.braintreeWeb.anon.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait ApplePay_ extends js.Object {
     * @param {callback} callback The second argument, `data`, is the {@link ApplePay} instance.
     * @returns {void}
     */
-  def create(options: AnonClient, callback: callback): Unit
+  def create(options: Client, callback: callback): Unit
   /**
     * Merges a payment request with Braintree defaults
     * The following properties are assigned to `paymentRequest` if not already defined
@@ -88,7 +88,7 @@ trait ApplePay_ extends js.Object {
     *   };
     * });
     */
-  def performValidation(options: AnonDisplayName, callback: callback): Unit
+  def performValidation(options: DisplayName, callback: callback): Unit
   /**
     * Tokenizes an Apple Pay payment.
     * @public
@@ -117,17 +117,17 @@ trait ApplePay_ extends js.Object {
     *  };
     * });
     */
-  def tokenize(options: AnonToken, callback: callback): Unit
+  def tokenize(options: Token, callback: callback): Unit
 }
 
 object ApplePay_ {
   @scala.inline
   def apply(
     VERSION: String,
-    create: (AnonClient, callback) => Unit,
+    create: (Client, callback) => Unit,
     createPaymentRequest: ApplePayPaymentRequest => ApplePayPaymentRequest,
-    performValidation: (AnonDisplayName, callback) => Unit,
-    tokenize: (AnonToken, callback) => Unit
+    performValidation: (DisplayName, callback) => Unit,
+    tokenize: (Token, callback) => Unit
   ): ApplePay_ = {
     val __obj = js.Dynamic.literal(VERSION = VERSION.asInstanceOf[js.Any], create = js.Any.fromFunction2(create), createPaymentRequest = js.Any.fromFunction1(createPaymentRequest), performValidation = js.Any.fromFunction2(performValidation), tokenize = js.Any.fromFunction2(tokenize))
     __obj.asInstanceOf[ApplePay_]

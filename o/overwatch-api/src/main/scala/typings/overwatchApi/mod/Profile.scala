@@ -1,20 +1,20 @@
 package typings.overwatchApi.mod
 
-import typings.overwatchApi.AnonCompetitive
-import typings.overwatchApi.AnonDamage
-import typings.overwatchApi.AnonFrame
-import typings.overwatchApi.AnonQuickplay
+import typings.overwatchApi.anon.Competitive
+import typings.overwatchApi.anon.Damage
+import typings.overwatchApi.anon.Frame
+import typings.overwatchApi.anon.Quickplay
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Profile extends js.Object {
-  var competitive: AnonDamage
-  var endorsement: AnonFrame
-  var games: AnonCompetitive
+  var competitive: Damage
+  var endorsement: Frame
+  var games: Competitive
   var level: Double
   var levelFrame: String
-  var playtime: AnonQuickplay
+  var playtime: Quickplay
   var portrait: String
   var `private`: Boolean
   var star: String
@@ -24,12 +24,12 @@ trait Profile extends js.Object {
 object Profile {
   @scala.inline
   def apply(
-    competitive: AnonDamage,
-    endorsement: AnonFrame,
-    games: AnonCompetitive,
+    competitive: Damage,
+    endorsement: Frame,
+    games: Competitive,
     level: Double,
     levelFrame: String,
-    playtime: AnonQuickplay,
+    playtime: Quickplay,
     portrait: String,
     `private`: Boolean,
     star: String,

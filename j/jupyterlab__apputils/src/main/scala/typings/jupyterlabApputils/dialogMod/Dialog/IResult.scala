@@ -21,8 +21,7 @@ trait IResult[T] extends js.Object {
 object IResult {
   @scala.inline
   def apply[T](button: IButton, value: T = null): IResult[T] = {
-    val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResult[T]]
   }
 }

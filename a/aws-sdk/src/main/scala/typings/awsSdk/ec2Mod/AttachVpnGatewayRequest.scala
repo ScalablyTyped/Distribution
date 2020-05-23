@@ -22,9 +22,9 @@ trait AttachVpnGatewayRequest extends js.Object {
 
 object AttachVpnGatewayRequest {
   @scala.inline
-  def apply(VpcId: VpcId, VpnGatewayId: VpnGatewayId, DryRun: js.UndefOr[scala.Boolean] = js.undefined): AttachVpnGatewayRequest = {
+  def apply(VpcId: VpcId, VpnGatewayId: VpnGatewayId, DryRun: js.UndefOr[Boolean] = js.undefined): AttachVpnGatewayRequest = {
     val __obj = js.Dynamic.literal(VpcId = VpcId.asInstanceOf[js.Any], VpnGatewayId = VpnGatewayId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachVpnGatewayRequest]
   }
 }

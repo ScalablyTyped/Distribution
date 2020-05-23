@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.RegionalSettings")
 @js.native
-class RegionalSettings () extends ClientObject {
+trait RegionalSettings extends ClientObject {
   def get_aM(): String = js.native
   def get_adjustHijriDays(): Double = js.native
   def get_alternateCalendarType(): Double = js.native

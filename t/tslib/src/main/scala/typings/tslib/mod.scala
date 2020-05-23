@@ -1,6 +1,9 @@
 package typings.tslib
 
 import typings.std.TemplateStringsArray
+import typings.tslib.anon.Default
+import typings.tslib.anon.Get
+import typings.tslib.anon.Has
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,9 +24,9 @@ object mod extends js.Object {
   @JSName("__awaiter")
   def awaiter(thisArg: js.Any, _arguments: js.Any, P: js.Function, generator: js.Function): js.Any = js.native
   @JSName("__classPrivateFieldGet")
-  def classPrivateFieldGet[T /* <: js.Object */, V](receiver: T, privateMap: AnonGet[T, V]): V = js.native
+  def classPrivateFieldGet[T /* <: js.Object */, V](receiver: T, privateMap: Get[T, V]): V = js.native
   @JSName("__classPrivateFieldSet")
-  def classPrivateFieldSet[T /* <: js.Object */, V](receiver: T, privateMap: AnonHas[T, V], value: V): V = js.native
+  def classPrivateFieldSet[T /* <: js.Object */, V](receiver: T, privateMap: Has[T, V], value: V): V = js.native
   @JSName("__decorate")
   def decorate(decorators: js.Array[js.Function], target: js.Any): js.Any = js.native
   @JSName("__decorate")
@@ -41,7 +44,7 @@ object mod extends js.Object {
   @JSName("__generator")
   def generator(thisArg: js.Any, body: js.Function): js.Any = js.native
   @JSName("__importDefault")
-  def importDefault[T](mod: T): T | AnonDefault[T] = js.native
+  def importDefault[T](mod: T): T | Default[T] = js.native
   @JSName("__importStar")
   def importStar[T](mod: T): T = js.native
   @JSName("__makeTemplateObject")

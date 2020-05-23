@@ -1,16 +1,15 @@
 package typings.jsrsasign.mod.KJUR.asn1
 
-import typings.jsrsasign.AnonAccuracy
-import typings.jsrsasign.AnonAddInfoNotAvailable
-import typings.jsrsasign.AnonCertreq
-import typings.jsrsasign.AnonFailinfo
-import typings.jsrsasign.AnonGranted
-import typings.jsrsasign.AnonHashValue
-import typings.jsrsasign.AnonMi
-import typings.jsrsasign.AnonMicros
-import typings.jsrsasign.AnonSigAlg
-import typings.jsrsasign.AnonSignerCert
-import typings.jsrsasign.AnonStatus
+import typings.jsrsasign.anon.AddInfoNotAvailable
+import typings.jsrsasign.anon.Certreq
+import typings.jsrsasign.anon.Failinfo
+import typings.jsrsasign.anon.Granted
+import typings.jsrsasign.anon.HashValue
+import typings.jsrsasign.anon.Mi
+import typings.jsrsasign.anon.Micros
+import typings.jsrsasign.anon.SigAlg
+import typings.jsrsasign.anon.SignerCert
+import typings.jsrsasign.anon.Status
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ArrayParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.IntegerParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.NameParam
@@ -41,7 +40,10 @@ object tsp extends js.Object {
     */
   @js.native
   class AbstractTSAAdapter ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.AbstractTSAAdapter
+    extends typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.AbstractTSAAdapter {
+    /* CompleteClass */
+    override def getTSTHex(msgHex: String, hashAlg: String): Unit = js.native
+  }
   
   /**
     * class for TSP Accuracy ASN.1 object
@@ -61,7 +63,42 @@ object tsp extends js.Object {
   @js.native
   class Accuracy ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.Accuracy {
-    def this(params: AnonMicros) = this()
+    def this(params: Micros) = this()
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    override var hL: String = js.native
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    override var hT: String = js.native
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    override var hTLV: String = js.native
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    override var hV: String = js.native
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    override var isModified: String = js.native
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
   }
   
   /**
@@ -82,7 +119,9 @@ object tsp extends js.Object {
   @js.native
   class FixedTSAAdapter ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.FixedTSAAdapter {
-    def this(initParams: AnonSigAlg) = this()
+    def this(initParams: SigAlg) = this()
+    /* CompleteClass */
+    override def getTSTHex(msgHex: String, hashAlg: String): String = js.native
   }
   
   /**
@@ -101,7 +140,42 @@ object tsp extends js.Object {
   @js.native
   class MessageImprint ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.MessageImprint {
-    def this(params: AnonHashValue) = this()
+    def this(params: HashValue) = this()
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    override var hL: String = js.native
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    override var hT: String = js.native
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    override var hTLV: String = js.native
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    override var hV: String = js.native
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    override var isModified: String = js.native
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
   }
   
   /**
@@ -122,9 +196,44 @@ object tsp extends js.Object {
     */
   @js.native
   class PKIFailureInfo ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.PKIFailureInfo {
+    extends typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object {
     def this(params: IntegerParam) = this()
     def this(params: NameParam) = this()
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    override var hL: String = js.native
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    override var hT: String = js.native
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    override var hTLV: String = js.native
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    override var hV: String = js.native
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    override var isModified: String = js.native
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
   }
   
   /**
@@ -138,8 +247,43 @@ object tsp extends js.Object {
     */
   @js.native
   class PKIFreeText ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.PKIFreeText {
+    extends typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object {
     def this(params: ArrayParam[String]) = this()
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    override var hL: String = js.native
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    override var hT: String = js.native
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    override var hTLV: String = js.native
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    override var hV: String = js.native
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    override var isModified: String = js.native
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
   }
   
   /**
@@ -158,8 +302,43 @@ object tsp extends js.Object {
     */
   @js.native
   class PKIStatus ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.PKIStatus {
+    extends typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object {
     def this(params: NameParam) = this()
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    override var hL: String = js.native
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    override var hT: String = js.native
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    override var hTLV: String = js.native
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    override var hV: String = js.native
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    override var isModified: String = js.native
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
   }
   
   /**
@@ -175,8 +354,43 @@ object tsp extends js.Object {
     */
   @js.native
   class PKIStatusInfo ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.PKIStatusInfo {
-    def this(params: AnonFailinfo) = this()
+    extends typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object {
+    def this(params: Failinfo) = this()
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    override var hL: String = js.native
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    override var hT: String = js.native
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    override var hTLV: String = js.native
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    override var hV: String = js.native
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    override var isModified: String = js.native
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
   }
   
   /**
@@ -187,7 +401,9 @@ object tsp extends js.Object {
   @js.native
   class SimpleTSAAdapter ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.SimpleTSAAdapter {
-    def this(initParams: AnonSigAlg) = this()
+    def this(initParams: SigAlg) = this()
+    /* CompleteClass */
+    override def getTSTHex(msgHex: String, hashAlg: String): String = js.native
   }
   
   /**
@@ -221,7 +437,42 @@ object tsp extends js.Object {
   @js.native
   class TSTInfo protected ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.TSTInfo {
-    def this(params: AnonAccuracy) = this()
+    def this(params: typings.jsrsasign.anon.Accuracy) = this()
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    override var hL: String = js.native
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    override var hT: String = js.native
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    override var hTLV: String = js.native
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    override var hV: String = js.native
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    override var isModified: String = js.native
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
   }
   
   /**
@@ -241,7 +492,44 @@ object tsp extends js.Object {
   @js.native
   class TimeStampReq ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.TimeStampReq {
-    def this(params: AnonMi) = this()
+    def this(params: Mi) = this()
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    override var hL: String = js.native
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    override var hT: String = js.native
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    override var hTLV: String = js.native
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    override var hV: String = js.native
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    override var isModified: String = js.native
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    /* CompleteClass */
+    override def setMessageImprint(params: typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.MessageImprint): Unit = js.native
   }
   
   /**
@@ -256,8 +544,43 @@ object tsp extends js.Object {
     */
   @js.native
   class TimeStampResp ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.TimeStampResp {
-    def this(params: AnonStatus) = this()
+    extends typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object {
+    def this(params: Status) = this()
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    override var hL: String = js.native
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    override var hT: String = js.native
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    override var hTLV: String = js.native
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    override var hV: String = js.native
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    override var isModified: String = js.native
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
   }
   
   /**
@@ -290,17 +613,17 @@ object tsp extends js.Object {
     *  nonce: '9abcf318...',            // nonce (OPTION)
     *  certreq: true}                   // certReq (OPTION)
     */
-  def parseTimeStampReq(reqHex: String): AnonCertreq = js.native
+  def parseTimeStampReq(reqHex: String): Certreq = js.native
   /* static members */
   @js.native
   object PKIFailureInfo extends js.Object {
-    val valueList: AnonAddInfoNotAvailable = js.native
+    val valueList: AddInfoNotAvailable = js.native
   }
   
   /* static members */
   @js.native
   object PKIStatus extends js.Object {
-    val valueList: AnonGranted = js.native
+    val valueList: Granted = js.native
   }
   
   @js.native
@@ -313,7 +636,7 @@ object tsp extends js.Object {
       * @example
       */
     def newTimeStampToken(): SignedData = js.native
-    def newTimeStampToken(param: AnonSignerCert): SignedData = js.native
+    def newTimeStampToken(param: SignerCert): SignedData = js.native
   }
   
 }

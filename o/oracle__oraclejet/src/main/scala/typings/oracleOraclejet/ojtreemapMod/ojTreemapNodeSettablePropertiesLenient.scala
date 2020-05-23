@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojtreemapMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.AnonIsolate
+import typings.oracleOraclejet.anon.Isolate
 import typings.oracleOraclejet.oracleOraclejetStrings.auto
 import typings.oracleOraclejet.oracleOraclejetStrings.bottom
 import typings.oracleOraclejet.oracleOraclejetStrings.center
@@ -37,7 +37,7 @@ trait ojTreemapNodeSettablePropertiesLenient
   var color: js.UndefOr[String] = js.undefined
   var drilling: js.UndefOr[on | off | inherit] = js.undefined
   var groupLabelDisplay: js.UndefOr[node | off | header] = js.undefined
-  var header: js.UndefOr[AnonIsolate] = js.undefined
+  var header: js.UndefOr[Isolate] = js.undefined
   var label: js.UndefOr[String] = js.undefined
   var labelDisplay: js.UndefOr[off | node] = js.undefined
   var labelHalign: js.UndefOr[start | end | center] = js.undefined
@@ -56,12 +56,12 @@ trait ojTreemapNodeSettablePropertiesLenient
 object ojTreemapNodeSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     categories: js.Array[String] = null,
     color: String = null,
     drilling: on | off | inherit = null,
     groupLabelDisplay: node | off | header = null,
-    header: AnonIsolate = null,
+    header: Isolate = null,
     label: String = null,
     labelDisplay: off | node = null,
     labelHalign: start | end | center = null,
@@ -72,7 +72,7 @@ object ojTreemapNodeSettablePropertiesLenient {
     shortDesc: String = null,
     svgClassName: String = null,
     svgStyle: js.Object = null,
-    value: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined
   ): ojTreemapNodeSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
@@ -91,7 +91,7 @@ object ojTreemapNodeSettablePropertiesLenient {
     if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc.asInstanceOf[js.Any])
     if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName.asInstanceOf[js.Any])
     if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojTreemapNodeSettablePropertiesLenient]
   }
 }

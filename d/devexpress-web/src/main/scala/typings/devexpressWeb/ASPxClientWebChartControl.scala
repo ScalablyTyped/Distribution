@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A class which provides access to the entire hierarchy of chart elements on the client side.
   */
-@JSGlobal("ASPxClientWebChartControl")
 @js.native
-class ASPxClientWebChartControl () extends ASPxClientControl {
+trait ASPxClientWebChartControl extends ASPxClientControl {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -93,16 +92,5 @@ class ASPxClientWebChartControl () extends ASPxClientControl {
     * @param cursor A string value representing the name of the desired cursor.
     */
   def SetCursor(cursor: String): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientWebChartControl")
-@js.native
-object ASPxClientWebChartControl extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientWebChartControl type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientWebChartControl = js.native
 }
 

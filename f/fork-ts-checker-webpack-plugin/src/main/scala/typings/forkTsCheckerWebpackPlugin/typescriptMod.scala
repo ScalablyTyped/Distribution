@@ -1,5 +1,6 @@
 package typings.forkTsCheckerWebpackPlugin
 
+import typings.forkTsCheckerWebpackPlugin.anon.Typeofts
 import typings.forkTsCheckerWebpackPlugin.issueIssueMod.Issue
 import typings.typescript.mod.Diagnostic
 import scala.scalajs.js

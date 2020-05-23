@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +34,11 @@ trait opacity extends js.Object {
   def createVisualVariable(params: opacityCreateVisualVariableParams): js.Promise[opacityVisualVariableResult]
 }
 
-@JSGlobal("__esri.opacity")
-@js.native
-object opacity extends TopLevel[opacity]
+object opacity {
+  @scala.inline
+  def apply(createVisualVariable: opacityCreateVisualVariableParams => js.Promise[opacityVisualVariableResult]): opacity = {
+    val __obj = js.Dynamic.literal(createVisualVariable = js.Any.fromFunction1(createVisualVariable))
+    __obj.asInstanceOf[opacity]
+  }
+}
 

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DeleteSignalingChannelInput extends js.Object {
   /**
-    * The ARN of the signaling channel that you want to delete.
+    * The Amazon Resource Name (ARN) of the signaling channel that you want to delete.
     */
   var ChannelARN: ResourceARN = js.native
   /**
-    * The current version of the signaling channel that you want to delete. You can obtain the current version by invoking the DescribeSignalingChannel or ListSignalingChannels APIs.
+    * The current version of the signaling channel that you want to delete. You can obtain the current version by invoking the DescribeSignalingChannel or ListSignalingChannels API operations.
     */
   var CurrentVersion: js.UndefOr[Version] = js.native
 }

@@ -1,12 +1,12 @@
 package typings.gapiClientPlusdomains.gapi.client.plusdomains
 
-import typings.gapiClientPlusdomains.AnonCoverInfo
-import typings.gapiClientPlusdomains.AnonDepartment
-import typings.gapiClientPlusdomains.AnonFormatted
-import typings.gapiClientPlusdomains.AnonIsDefault
-import typings.gapiClientPlusdomains.AnonLabel
-import typings.gapiClientPlusdomains.AnonPrimary
-import typings.gapiClientPlusdomains.AnonValue
+import typings.gapiClientPlusdomains.anon.CoverInfo
+import typings.gapiClientPlusdomains.anon.Department
+import typings.gapiClientPlusdomains.anon.Formatted
+import typings.gapiClientPlusdomains.anon.IsDefault
+import typings.gapiClientPlusdomains.anon.Label
+import typings.gapiClientPlusdomains.anon.Primary
+import typings.gapiClientPlusdomains.anon.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait Person extends js.Object {
   /** For followers who are visible, the number of people who have added this person or page to a circle. */
   var circledByCount: js.UndefOr[Double] = js.undefined
   /** The cover photo content. */
-  var cover: js.UndefOr[AnonCoverInfo] = js.undefined
+  var cover: js.UndefOr[CoverInfo] = js.undefined
   /** (this field is not currently used) */
   var currentLocation: js.UndefOr[String] = js.undefined
   /** The name of this person, which is suitable for display. */
@@ -36,7 +36,7 @@ trait Person extends js.Object {
     * profile. The plus.profile.emails.read scope is needed to retrieve these email addresses, or the email scope can be used to retrieve just the Google
     * account email address.
     */
-  var emails: js.UndefOr[js.Array[AnonValue]] = js.undefined
+  var emails: js.UndefOr[js.Array[Value]] = js.undefined
   /** ETag of this response for caching purposes. */
   var etag: js.UndefOr[String] = js.undefined
   /**
@@ -49,13 +49,13 @@ trait Person extends js.Object {
   /** The ID of this person. */
   var id: js.UndefOr[String] = js.undefined
   /** The representation of the person's profile photo. */
-  var image: js.UndefOr[AnonIsDefault] = js.undefined
+  var image: js.UndefOr[IsDefault] = js.undefined
   /** Whether this user has signed up for Google+. */
   var isPlusUser: js.UndefOr[Boolean] = js.undefined
   /** Identifies this resource as a person. Value: "plus#person". */
   var kind: js.UndefOr[String] = js.undefined
   /** An object representation of the individual components of a person's name. */
-  var name: js.UndefOr[AnonFormatted] = js.undefined
+  var name: js.UndefOr[Formatted] = js.undefined
   /** The nickname of this person. */
   var nickname: js.UndefOr[String] = js.undefined
   /**
@@ -67,9 +67,9 @@ trait Person extends js.Object {
   /** The occupation of this person. */
   var occupation: js.UndefOr[String] = js.undefined
   /** A list of current or past organizations with which this person is associated. */
-  var organizations: js.UndefOr[js.Array[AnonDepartment]] = js.undefined
+  var organizations: js.UndefOr[js.Array[Department]] = js.undefined
   /** A list of places where this person has lived. */
-  var placesLived: js.UndefOr[js.Array[AnonPrimary]] = js.undefined
+  var placesLived: js.UndefOr[js.Array[Primary]] = js.undefined
   /** If a Google+ Page, the number of people who have +1'd this page. */
   var plusOneCount: js.UndefOr[Double] = js.undefined
   /**
@@ -92,7 +92,7 @@ trait Person extends js.Object {
   /** The URL of this person's profile. */
   var url: js.UndefOr[String] = js.undefined
   /** A list of URLs for this person. */
-  var urls: js.UndefOr[js.Array[AnonLabel]] = js.undefined
+  var urls: js.UndefOr[js.Array[Label]] = js.undefined
   /** Whether the person or Google+ Page has been verified. */
   var verified: js.UndefOr[Boolean] = js.undefined
 }
@@ -103,37 +103,37 @@ object Person {
     aboutMe: String = null,
     birthday: String = null,
     braggingRights: String = null,
-    circledByCount: Int | Double = null,
-    cover: AnonCoverInfo = null,
+    circledByCount: js.UndefOr[Double] = js.undefined,
+    cover: CoverInfo = null,
     currentLocation: String = null,
     displayName: String = null,
     domain: String = null,
-    emails: js.Array[AnonValue] = null,
+    emails: js.Array[Value] = null,
     etag: String = null,
     gender: String = null,
     id: String = null,
-    image: AnonIsDefault = null,
+    image: IsDefault = null,
     isPlusUser: js.UndefOr[Boolean] = js.undefined,
     kind: String = null,
-    name: AnonFormatted = null,
+    name: Formatted = null,
     nickname: String = null,
     objectType: String = null,
     occupation: String = null,
-    organizations: js.Array[AnonDepartment] = null,
-    placesLived: js.Array[AnonPrimary] = null,
-    plusOneCount: Int | Double = null,
+    organizations: js.Array[Department] = null,
+    placesLived: js.Array[Primary] = null,
+    plusOneCount: js.UndefOr[Double] = js.undefined,
     relationshipStatus: String = null,
     skills: String = null,
     tagline: String = null,
     url: String = null,
-    urls: js.Array[AnonLabel] = null,
+    urls: js.Array[Label] = null,
     verified: js.UndefOr[Boolean] = js.undefined
   ): Person = {
     val __obj = js.Dynamic.literal()
     if (aboutMe != null) __obj.updateDynamic("aboutMe")(aboutMe.asInstanceOf[js.Any])
     if (birthday != null) __obj.updateDynamic("birthday")(birthday.asInstanceOf[js.Any])
     if (braggingRights != null) __obj.updateDynamic("braggingRights")(braggingRights.asInstanceOf[js.Any])
-    if (circledByCount != null) __obj.updateDynamic("circledByCount")(circledByCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(circledByCount)) __obj.updateDynamic("circledByCount")(circledByCount.get.asInstanceOf[js.Any])
     if (cover != null) __obj.updateDynamic("cover")(cover.asInstanceOf[js.Any])
     if (currentLocation != null) __obj.updateDynamic("currentLocation")(currentLocation.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
@@ -143,7 +143,7 @@ object Person {
     if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPlusUser)) __obj.updateDynamic("isPlusUser")(isPlusUser.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPlusUser)) __obj.updateDynamic("isPlusUser")(isPlusUser.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (nickname != null) __obj.updateDynamic("nickname")(nickname.asInstanceOf[js.Any])
@@ -151,13 +151,13 @@ object Person {
     if (occupation != null) __obj.updateDynamic("occupation")(occupation.asInstanceOf[js.Any])
     if (organizations != null) __obj.updateDynamic("organizations")(organizations.asInstanceOf[js.Any])
     if (placesLived != null) __obj.updateDynamic("placesLived")(placesLived.asInstanceOf[js.Any])
-    if (plusOneCount != null) __obj.updateDynamic("plusOneCount")(plusOneCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(plusOneCount)) __obj.updateDynamic("plusOneCount")(plusOneCount.get.asInstanceOf[js.Any])
     if (relationshipStatus != null) __obj.updateDynamic("relationshipStatus")(relationshipStatus.asInstanceOf[js.Any])
     if (skills != null) __obj.updateDynamic("skills")(skills.asInstanceOf[js.Any])
     if (tagline != null) __obj.updateDynamic("tagline")(tagline.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
-    if (!js.isUndefined(verified)) __obj.updateDynamic("verified")(verified.asInstanceOf[js.Any])
+    if (!js.isUndefined(verified)) __obj.updateDynamic("verified")(verified.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Person]
   }
 }

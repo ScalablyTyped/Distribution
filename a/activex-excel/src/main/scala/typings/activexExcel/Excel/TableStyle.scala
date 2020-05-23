@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.TableStyle")
 @js.native
-class TableStyle protected () extends js.Object {
+trait TableStyle extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   val BuiltIn: Boolean = js.native
   val Creator: XlCreator = js.native

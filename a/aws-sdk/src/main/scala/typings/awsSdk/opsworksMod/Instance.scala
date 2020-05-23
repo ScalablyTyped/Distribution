@@ -183,14 +183,14 @@ object Instance {
     AvailabilityZone: String = null,
     BlockDeviceMappings: BlockDeviceMappings = null,
     CreatedAt: DateTime = null,
-    EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined,
+    EbsOptimized: js.UndefOr[Boolean] = js.undefined,
     Ec2InstanceId: String = null,
     EcsClusterArn: String = null,
     EcsContainerInstanceArn: String = null,
     ElasticIp: String = null,
     Hostname: String = null,
     InfrastructureClass: String = null,
-    InstallUpdatesOnBoot: js.UndefOr[scala.Boolean] = js.undefined,
+    InstallUpdatesOnBoot: js.UndefOr[Boolean] = js.undefined,
     InstanceId: String = null,
     InstanceProfileArn: String = null,
     InstanceType: String = null,
@@ -226,14 +226,14 @@ object Instance {
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
     if (BlockDeviceMappings != null) __obj.updateDynamic("BlockDeviceMappings")(BlockDeviceMappings.asInstanceOf[js.Any])
     if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.asInstanceOf[js.Any])
+    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.get.asInstanceOf[js.Any])
     if (Ec2InstanceId != null) __obj.updateDynamic("Ec2InstanceId")(Ec2InstanceId.asInstanceOf[js.Any])
     if (EcsClusterArn != null) __obj.updateDynamic("EcsClusterArn")(EcsClusterArn.asInstanceOf[js.Any])
     if (EcsContainerInstanceArn != null) __obj.updateDynamic("EcsContainerInstanceArn")(EcsContainerInstanceArn.asInstanceOf[js.Any])
     if (ElasticIp != null) __obj.updateDynamic("ElasticIp")(ElasticIp.asInstanceOf[js.Any])
     if (Hostname != null) __obj.updateDynamic("Hostname")(Hostname.asInstanceOf[js.Any])
     if (InfrastructureClass != null) __obj.updateDynamic("InfrastructureClass")(InfrastructureClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstallUpdatesOnBoot)) __obj.updateDynamic("InstallUpdatesOnBoot")(InstallUpdatesOnBoot.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstallUpdatesOnBoot)) __obj.updateDynamic("InstallUpdatesOnBoot")(InstallUpdatesOnBoot.get.asInstanceOf[js.Any])
     if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
     if (InstanceProfileArn != null) __obj.updateDynamic("InstanceProfileArn")(InstanceProfileArn.asInstanceOf[js.Any])
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])

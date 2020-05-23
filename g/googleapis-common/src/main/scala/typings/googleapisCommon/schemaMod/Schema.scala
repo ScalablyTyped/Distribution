@@ -1,13 +1,13 @@
 package typings.googleapisCommon.schemaMod
 
-import typings.googleapisCommon.AnonOauth2
-import typings.googleapisCommon.AnonX16
+import typings.googleapisCommon.anon.Oauth2
+import typings.googleapisCommon.anon.X16
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Schema extends js.Object {
-  var auth: AnonOauth2
+  var auth: Oauth2
   var basePath: String
   var baseUrl: String
   var batchPath: String
@@ -16,7 +16,7 @@ trait Schema extends js.Object {
   var discoveryVersion: String
   var documentationLink: String
   var etag: String
-  var icons: AnonX16
+  var icons: X16
   var id: String
   var kind: String
   var methods: SchemaMethods
@@ -37,7 +37,7 @@ trait Schema extends js.Object {
 object Schema {
   @scala.inline
   def apply(
-    auth: AnonOauth2,
+    auth: Oauth2,
     basePath: String,
     baseUrl: String,
     batchPath: String,
@@ -46,7 +46,7 @@ object Schema {
     discoveryVersion: String,
     documentationLink: String,
     etag: String,
-    icons: AnonX16,
+    icons: X16,
     id: String,
     kind: String,
     methods: SchemaMethods,

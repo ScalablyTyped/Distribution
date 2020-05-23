@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.Gantt
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,20 +25,6 @@ object TimescaleRoundMode extends js.Object {
   ///Schedule headers start date will round off to the immediate year
   @js.native
   sealed trait Year extends TimescaleRoundMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TimescaleRoundMode with Double] = js.native
-  /* 0 */ @js.native
-  object Auto extends TopLevel[Auto with Double]
-  
-  /* 2 */ @js.native
-  object Month extends TopLevel[Month with Double]
-  
-  /* 1 */ @js.native
-  object Week extends TopLevel[Week with Double]
-  
-  /* 3 */ @js.native
-  object Year extends TopLevel[Year with Double]
   
 }
 

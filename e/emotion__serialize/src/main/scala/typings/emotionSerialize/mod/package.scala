@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object mod {
   /* Rewritten from type alias, can be one of: 
     - scala.Null
-    - `js.undefined`
+    - js.UndefOr[scala.Nothing]
     - scala.Boolean
     - scala.Double
     - java.lang.String
@@ -23,7 +23,7 @@ package object mod {
   type CSSProperties = typings.csstype.mod.PropertiesFallback[scala.Double | java.lang.String]
   /* Rewritten from type alias, can be one of: 
     - scala.Null
-    - `js.undefined`
+    - js.UndefOr[scala.Nothing]
     - scala.Boolean
     - scala.Double
     - java.lang.String
@@ -46,5 +46,5 @@ package object mod {
       typings.emotionSerialize.mod.FunctionInterpolation[MP]
     ]) | scala.Null | scala.Boolean | scala.Double | java.lang.String | typings.emotionSerialize.mod.Keyframes | typings.emotionUtils.mod.SerializedStyles
   ]
-  type Keyframes = typings.emotionSerialize.AnonAnim with java.lang.String
+  type Keyframes = typings.emotionSerialize.anon.Anim with java.lang.String
 }

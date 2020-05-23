@@ -13,9 +13,7 @@ trait InjectedStripeProps extends js.Object {
 object InjectedStripeProps {
   @scala.inline
   def apply(elements: Elements = null, stripe: StripeProps = null): InjectedStripeProps = {
-    val __obj = js.Dynamic.literal()
-    if (elements != null) __obj.updateDynamic("elements")(elements.asInstanceOf[js.Any])
-    if (stripe != null) __obj.updateDynamic("stripe")(stripe.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], stripe = stripe.asInstanceOf[js.Any])
     __obj.asInstanceOf[InjectedStripeProps]
   }
 }

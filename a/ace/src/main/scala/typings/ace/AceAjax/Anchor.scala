@@ -1,6 +1,5 @@
 package typings.ace.AceAjax
 
-import org.scalablytyped.runtime.Instantiable3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,14 +36,18 @@ trait Anchor extends js.Object {
   def setPosition(row: Double, column: Double, noClip: Boolean): Unit
 }
 
-@JSGlobal("AceAjax.Anchor")
-@js.native
-object Anchor
-  extends /**
-  * Creates a new `Anchor` and associates it with a document.
-  * @param doc The document to associate with the anchor
-  * @param row The starting row position
-  * @param column The starting column position
-  **/
-Instantiable3[/* doc */ Document, /* row */ Double, /* column */ Double, Anchor]
+object Anchor {
+  @scala.inline
+  def apply(
+    detach: () => Unit,
+    getDocument: () => Document,
+    getPosition: () => Position,
+    on: (String, js.Function1[/* e */ js.Any, _]) => Unit,
+    onChange: js.Any => Unit,
+    setPosition: (Double, Double, Boolean) => Unit
+  ): Anchor = {
+    val __obj = js.Dynamic.literal(detach = js.Any.fromFunction0(detach), getDocument = js.Any.fromFunction0(getDocument), getPosition = js.Any.fromFunction0(getPosition), on = js.Any.fromFunction2(on), onChange = js.Any.fromFunction1(onChange), setPosition = js.Any.fromFunction3(setPosition))
+    __obj.asInstanceOf[Anchor]
+  }
+}
 

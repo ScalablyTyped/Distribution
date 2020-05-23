@@ -6,20 +6,39 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.Diagram")
-@js.native
-class Diagram protected () extends js.Object {
-  val Application: js.Any = js.native
-  var AutoFormat: MsoTriState = js.native
-  var AutoLayout: MsoTriState = js.native
-  val Creator: Double = js.native
-  val Nodes: DiagramNodes = js.native
-  val Parent: js.Any = js.native
+trait Diagram extends js.Object {
+  val Application: js.Any
+  var AutoFormat: MsoTriState
+  var AutoLayout: MsoTriState
+  val Creator: Double
+  val Nodes: DiagramNodes
+  val Parent: js.Any
   @JSName("PowerPoint.Diagram_typekey")
-  var PowerPointDotDiagram_typekey: Diagram = js.native
-  var Reverse: MsoTriState = js.native
-  val Type: MsoDiagramType = js.native
-  def Convert(Type: MsoDiagramType): Unit = js.native
-  def FitText(): Unit = js.native
+  var PowerPointDotDiagram_typekey: Diagram
+  var Reverse: MsoTriState
+  val Type: MsoDiagramType
+  def Convert(Type: MsoDiagramType): Unit
+  def FitText(): Unit
+}
+
+object Diagram {
+  @scala.inline
+  def apply(
+    Application: js.Any,
+    AutoFormat: MsoTriState,
+    AutoLayout: MsoTriState,
+    Convert: MsoDiagramType => Unit,
+    Creator: Double,
+    FitText: () => Unit,
+    Nodes: DiagramNodes,
+    Parent: js.Any,
+    PowerPointDotDiagram_typekey: Diagram,
+    Reverse: MsoTriState,
+    Type: MsoDiagramType
+  ): Diagram = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], AutoFormat = AutoFormat.asInstanceOf[js.Any], AutoLayout = AutoLayout.asInstanceOf[js.Any], Convert = js.Any.fromFunction1(Convert), Creator = Creator.asInstanceOf[js.Any], FitText = js.Any.fromFunction0(FitText), Nodes = Nodes.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Reverse = Reverse.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+    __obj.updateDynamic("PowerPoint.Diagram_typekey")(PowerPointDotDiagram_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Diagram]
+  }
 }
 

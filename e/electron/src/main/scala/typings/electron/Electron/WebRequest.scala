@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Electron.WebRequest")
 @js.native
-class WebRequest () extends js.Object {
+trait WebRequest extends js.Object {
   def onBeforeRedirect(): Unit = js.native
   def onBeforeRedirect(filter: Filter): Unit = js.native
   // Docs: http://electronjs.org/docs/api/web-request

@@ -15,17 +15,17 @@ object dsv extends js.Object {
     /** Converts the specified array of rows into comma-separated values format, returning a string. This operation is the reverse of parseRows. Each row will be separated by a newline (\n), and each column within each row will be separated by a comma (,). Values that contain either commas, double-quotes (") or newlines will be escaped using double-quotes. */
     def formatRows(rows: js.Array[_]): String = js.native
     /** Parses the specified string, which is the contents of a CSV file, returning an array of objects representing the parsed rows. 
-    		The string is assumed to be RFC4180-compliant. 
-    		Unlike the parseRows method, this method requires that the first line of the CSV file contains a comma-separated list of column names; 
-    		these column names become the attributes on the returned objects. 
-    		For example, consider the following CSV file:
+      The string is assumed to be RFC4180-compliant. 
+      Unlike the parseRows method, this method requires that the first line of the CSV file contains a comma-separated list of column names; 
+      these column names become the attributes on the returned objects. 
+      For example, consider the following CSV file:
     Year,Make,Model,Length
     1997,Ford,E350,2.34
     2000,Mercury,Cougar,2.38
     The resulting JavaScript array is:
     [  {"Year": "1997", "Make": "Ford", "Model": "E350", "Length": "2.34"},
       {"Year": "2000", "Make": "Mercury", "Model": "Cougar", "Length": "2.38"} ]
-    		 */
+      */
     def parse[TRow](table: String): js.Array[TRow] = js.native
     def parse[TRow](
       table: String,

@@ -33,14 +33,14 @@ trait ConsumedCapacity extends js.Object {
 object ConsumedCapacity {
   @scala.inline
   def apply(
-    CapacityUnits: Int | Double = null,
+    CapacityUnits: js.UndefOr[Double] = js.undefined,
     GlobalSecondaryIndexes: StringDictionary[Capacity] | (Iterable[js.Tuple2[String, Capacity]]) = null,
     LocalSecondaryIndexes: StringDictionary[Capacity] | (Iterable[js.Tuple2[String, Capacity]]) = null,
     Table: Capacity = null,
     TableName: String = null
   ): ConsumedCapacity = {
     val __obj = js.Dynamic.literal()
-    if (CapacityUnits != null) __obj.updateDynamic("CapacityUnits")(CapacityUnits.asInstanceOf[js.Any])
+    if (!js.isUndefined(CapacityUnits)) __obj.updateDynamic("CapacityUnits")(CapacityUnits.get.asInstanceOf[js.Any])
     if (GlobalSecondaryIndexes != null) __obj.updateDynamic("GlobalSecondaryIndexes")(GlobalSecondaryIndexes.asInstanceOf[js.Any])
     if (LocalSecondaryIndexes != null) __obj.updateDynamic("LocalSecondaryIndexes")(LocalSecondaryIndexes.asInstanceOf[js.Any])
     if (Table != null) __obj.updateDynamic("Table")(Table.asInstanceOf[js.Any])

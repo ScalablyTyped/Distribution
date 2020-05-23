@@ -72,7 +72,7 @@ object JobTemplate {
     Description: string = null,
     HopDestinations: listOfHopDestination = null,
     LastUpdated: timestampUnix = null,
-    Priority: Int | Double = null,
+    Priority: js.UndefOr[integerMinNegative50Max50] = js.undefined,
     Queue: string = null,
     StatusUpdateInterval: StatusUpdateInterval = null,
     Type: Type = null
@@ -85,7 +85,7 @@ object JobTemplate {
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (HopDestinations != null) __obj.updateDynamic("HopDestinations")(HopDestinations.asInstanceOf[js.Any])
     if (LastUpdated != null) __obj.updateDynamic("LastUpdated")(LastUpdated.asInstanceOf[js.Any])
-    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority.get.asInstanceOf[js.Any])
     if (Queue != null) __obj.updateDynamic("Queue")(Queue.asInstanceOf[js.Any])
     if (StatusUpdateInterval != null) __obj.updateDynamic("StatusUpdateInterval")(StatusUpdateInterval.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 package typings.uuidApikey.mod
 
-import typings.uuidApikey.PartialUUIDOptions
+import typings.uuidApikey.anon.PartialUUIDOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

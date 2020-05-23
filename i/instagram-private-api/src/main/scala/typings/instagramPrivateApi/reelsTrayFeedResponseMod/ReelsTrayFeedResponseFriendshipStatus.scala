@@ -32,12 +32,12 @@ object ReelsTrayFeedResponseFriendshipStatus {
     is_restricted: js.UndefOr[Boolean] = js.undefined
   ): ReelsTrayFeedResponseFriendshipStatus = {
     val __obj = js.Dynamic.literal(following = following.asInstanceOf[js.Any], is_muting_reel = is_muting_reel.asInstanceOf[js.Any], muting = muting.asInstanceOf[js.Any], outgoing_request = outgoing_request.asInstanceOf[js.Any])
-    if (!js.isUndefined(blocking)) __obj.updateDynamic("blocking")(blocking.asInstanceOf[js.Any])
-    if (!js.isUndefined(followed_by)) __obj.updateDynamic("followed_by")(followed_by.asInstanceOf[js.Any])
-    if (!js.isUndefined(incoming_request)) __obj.updateDynamic("incoming_request")(incoming_request.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_bestie)) __obj.updateDynamic("is_bestie")(is_bestie.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_private)) __obj.updateDynamic("is_private")(is_private.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_restricted)) __obj.updateDynamic("is_restricted")(is_restricted.asInstanceOf[js.Any])
+    if (!js.isUndefined(blocking)) __obj.updateDynamic("blocking")(blocking.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(followed_by)) __obj.updateDynamic("followed_by")(followed_by.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(incoming_request)) __obj.updateDynamic("incoming_request")(incoming_request.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_bestie)) __obj.updateDynamic("is_bestie")(is_bestie.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_private)) __obj.updateDynamic("is_private")(is_private.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_restricted)) __obj.updateDynamic("is_restricted")(is_restricted.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReelsTrayFeedResponseFriendshipStatus]
   }
 }

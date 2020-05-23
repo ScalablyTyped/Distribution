@@ -50,7 +50,7 @@ object CSVInput {
     RecordDelimiter: String = null
   ): CSVInput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllowQuotedRecordDelimiter)) __obj.updateDynamic("AllowQuotedRecordDelimiter")(AllowQuotedRecordDelimiter.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllowQuotedRecordDelimiter)) __obj.updateDynamic("AllowQuotedRecordDelimiter")(AllowQuotedRecordDelimiter.get.asInstanceOf[js.Any])
     if (Comments != null) __obj.updateDynamic("Comments")(Comments.asInstanceOf[js.Any])
     if (FieldDelimiter != null) __obj.updateDynamic("FieldDelimiter")(FieldDelimiter.asInstanceOf[js.Any])
     if (FileHeaderInfo != null) __obj.updateDynamic("FileHeaderInfo")(FileHeaderInfo.asInstanceOf[js.Any])

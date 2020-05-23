@@ -33,7 +33,7 @@ object AcceleratorType {
     description: String = null,
     id: String = null,
     kind: String = null,
-    maximumCardsPerInstance: Int | Double = null,
+    maximumCardsPerInstance: js.UndefOr[Double] = js.undefined,
     name: String = null,
     selfLink: String = null,
     zone: String = null
@@ -44,7 +44,7 @@ object AcceleratorType {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (maximumCardsPerInstance != null) __obj.updateDynamic("maximumCardsPerInstance")(maximumCardsPerInstance.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumCardsPerInstance)) __obj.updateDynamic("maximumCardsPerInstance")(maximumCardsPerInstance.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])

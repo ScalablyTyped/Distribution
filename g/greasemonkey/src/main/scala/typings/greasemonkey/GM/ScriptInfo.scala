@@ -1,7 +1,7 @@
 package typings.greasemonkey.GM
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.greasemonkey.AnonMimetype
+import typings.greasemonkey.anon.Mimetype
 import typings.greasemonkey.greasemonkeyStrings.end
 import typings.greasemonkey.greasemonkeyStrings.idle
 import typings.greasemonkey.greasemonkeyStrings.start
@@ -21,7 +21,7 @@ trait ScriptInfo extends js.Object {
     * Each value is an object with keys `name` and `mimetype` and `url`
     * with string values.
     */
-  var resources: StringDictionary[AnonMimetype]
+  var resources: StringDictionary[Mimetype]
   /** @default 'end' */
   var runAt: start | end | idle
   var uuid: String
@@ -36,7 +36,7 @@ object ScriptInfo {
     includes: js.Array[String],
     matches: js.Array[String],
     name: String,
-    resources: StringDictionary[AnonMimetype],
+    resources: StringDictionary[Mimetype],
     runAt: start | end | idle,
     uuid: String,
     version: String,

@@ -7,6 +7,7 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.Element
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
+import typings.mendixmodelsdk.workflowsMod.workflows.UserTask
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,6 +31,7 @@ abstract class Template protected () extends Element {
   def containerAsLogMessageAction: LogMessageAction = js.native
   def containerAsShowMessageAction: ShowMessageAction = js.native
   def containerAsStringTemplateParameterValue: StringTemplateParameterValue = js.native
+  def containerAsUserTask: UserTask = js.native
   def containerAsValidationFeedbackAction: ValidationFeedbackAction = js.native
 }
 

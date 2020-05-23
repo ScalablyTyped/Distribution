@@ -90,11 +90,11 @@ object TreemapChartSpec {
     headerColor: Color = null,
     headerColorStyle: ColorStyle = null,
     hideTooltips: js.UndefOr[Boolean] = js.undefined,
-    hintedLevels: Int | Double = null,
+    hintedLevels: js.UndefOr[Double] = js.undefined,
     labels: ChartData = null,
-    levels: Int | Double = null,
-    maxValue: Int | Double = null,
-    minValue: Int | Double = null,
+    levels: js.UndefOr[Double] = js.undefined,
+    maxValue: js.UndefOr[Double] = js.undefined,
+    minValue: js.UndefOr[Double] = js.undefined,
     parentLabels: ChartData = null,
     sizeData: ChartData = null,
     textFormat: TextFormat = null
@@ -104,12 +104,12 @@ object TreemapChartSpec {
     if (colorScale != null) __obj.updateDynamic("colorScale")(colorScale.asInstanceOf[js.Any])
     if (headerColor != null) __obj.updateDynamic("headerColor")(headerColor.asInstanceOf[js.Any])
     if (headerColorStyle != null) __obj.updateDynamic("headerColorStyle")(headerColorStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideTooltips)) __obj.updateDynamic("hideTooltips")(hideTooltips.asInstanceOf[js.Any])
-    if (hintedLevels != null) __obj.updateDynamic("hintedLevels")(hintedLevels.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideTooltips)) __obj.updateDynamic("hideTooltips")(hideTooltips.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hintedLevels)) __obj.updateDynamic("hintedLevels")(hintedLevels.get.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (levels != null) __obj.updateDynamic("levels")(levels.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(levels)) __obj.updateDynamic("levels")(levels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minValue)) __obj.updateDynamic("minValue")(minValue.get.asInstanceOf[js.Any])
     if (parentLabels != null) __obj.updateDynamic("parentLabels")(parentLabels.asInstanceOf[js.Any])
     if (sizeData != null) __obj.updateDynamic("sizeData")(sizeData.asInstanceOf[js.Any])
     if (textFormat != null) __obj.updateDynamic("textFormat")(textFormat.asInstanceOf[js.Any])

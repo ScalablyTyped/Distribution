@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Graphics.DirectX.Direct3D11
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,38 +50,6 @@ object Direct3DBindings extends js.Object {
   /** Set this flag to indicate that a 2D texture is used to receive input from the video encoder API. */
   @js.native
   sealed trait videoEncoder extends Direct3DBindings
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Direct3DBindings with Double] = js.native
-  /* 2 */ @js.native
-  object constantBuffer extends TopLevel[constantBuffer with Double]
-  
-  /* 8 */ @js.native
-  object decoder extends TopLevel[decoder with Double]
-  
-  /* 6 */ @js.native
-  object depthStencil extends TopLevel[depthStencil with Double]
-  
-  /* 1 */ @js.native
-  object indexBuffer extends TopLevel[indexBuffer with Double]
-  
-  /* 5 */ @js.native
-  object renderTarget extends TopLevel[renderTarget with Double]
-  
-  /* 3 */ @js.native
-  object shaderResource extends TopLevel[shaderResource with Double]
-  
-  /* 4 */ @js.native
-  object streamOutput extends TopLevel[streamOutput with Double]
-  
-  /* 7 */ @js.native
-  object unorderedAccess extends TopLevel[unorderedAccess with Double]
-  
-  /* 0 */ @js.native
-  object vertexBuffer extends TopLevel[vertexBuffer with Double]
-  
-  /* 9 */ @js.native
-  object videoEncoder extends TopLevel[videoEncoder with Double]
   
 }
 

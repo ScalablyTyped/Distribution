@@ -15,13 +15,13 @@ object AsObject {
   @scala.inline
   def apply(
     pathList: js.Array[Double],
-    begin: Int | Double = null,
-    end: Int | Double = null,
+    begin: js.UndefOr[Double] = js.undefined,
+    end: js.UndefOr[Double] = js.undefined,
     sourceFile: String = null
   ): AsObject = {
     val __obj = js.Dynamic.literal(pathList = pathList.asInstanceOf[js.Any])
-    if (begin != null) __obj.updateDynamic("begin")(begin.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(begin)) __obj.updateDynamic("begin")(begin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
     if (sourceFile != null) __obj.updateDynamic("sourceFile")(sourceFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }

@@ -14,14 +14,12 @@ trait HandlerType extends js.Object
 
 object HandlerType {
   @scala.inline
-  def bidi: typings.grpcGrpcJs.grpcGrpcJsStrings.bidi = this.cast("bidi")
+  def bidi: typings.grpcGrpcJs.grpcGrpcJsStrings.bidi = "bidi".asInstanceOf[typings.grpcGrpcJs.grpcGrpcJsStrings.bidi]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def clientStream: typings.grpcGrpcJs.grpcGrpcJsStrings.clientStream = "clientStream".asInstanceOf[typings.grpcGrpcJs.grpcGrpcJsStrings.clientStream]
   @scala.inline
-  def clientStream: typings.grpcGrpcJs.grpcGrpcJsStrings.clientStream = this.cast("clientStream")
+  def serverStream: typings.grpcGrpcJs.grpcGrpcJsStrings.serverStream = "serverStream".asInstanceOf[typings.grpcGrpcJs.grpcGrpcJsStrings.serverStream]
   @scala.inline
-  def serverStream: typings.grpcGrpcJs.grpcGrpcJsStrings.serverStream = this.cast("serverStream")
-  @scala.inline
-  def unary: typings.grpcGrpcJs.grpcGrpcJsStrings.unary = this.cast("unary")
+  def unary: typings.grpcGrpcJs.grpcGrpcJsStrings.unary = "unary".asInstanceOf[typings.grpcGrpcJs.grpcGrpcJsStrings.unary]
 }
 

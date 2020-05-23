@@ -29,11 +29,11 @@ object CreateSecurityGroupRequest {
   def apply(
     Description: String,
     GroupName: String,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     VpcId: VpcId = null
   ): CreateSecurityGroupRequest = {
     val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], GroupName = GroupName.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSecurityGroupRequest]
   }

@@ -1,6 +1,6 @@
 package typings.jsreportChromePdf.mod
 
-import typings.jsreportChromePdf.AnonBottom
+import typings.jsreportChromePdf.anon.Bottom
 import typings.jsreportChromePdf.jsreportChromePdfStrings.print
 import typings.jsreportChromePdf.jsreportChromePdfStrings.screen
 import scala.scalajs.js
@@ -12,14 +12,14 @@ import scala.scalajs.js.annotation._
 trait Chrome extends js.Object {
   var displayHeaderFooter: Boolean
   var footerTemplate: String
-  	// 1-5, 8, 11-13
+      // 1-5, 8, 11-13
   var format: String
   // https://github.com/jsreport/jsreport-chrome-pdf/blob/master/test/chromeTest.js
   var header: String
   var headerTemplate: String
   var height: String | Double
   var landscape: Boolean
-  var margin: AnonBottom
+  var margin: Bottom
   var marginBottom: String | Double
   var marginLeft: String | Double
   var marginRight: String | Double
@@ -49,7 +49,7 @@ object Chrome {
     headerTemplate: String,
     height: String | Double,
     landscape: Boolean,
-    margin: AnonBottom,
+    margin: Bottom,
     marginBottom: String | Double,
     marginLeft: String | Double,
     marginRight: String | Double,

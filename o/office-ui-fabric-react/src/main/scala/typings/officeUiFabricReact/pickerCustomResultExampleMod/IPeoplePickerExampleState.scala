@@ -20,8 +20,8 @@ object IPeoplePickerExampleState {
   ): IPeoplePickerExampleState = {
     val __obj = js.Dynamic.literal()
     if (contextualMenuTarget != null) __obj.updateDynamic("contextualMenuTarget")(contextualMenuTarget.asInstanceOf[js.Any])
-    if (!js.isUndefined(contextualMenuVisible)) __obj.updateDynamic("contextualMenuVisible")(contextualMenuVisible.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPickerDisabled)) __obj.updateDynamic("isPickerDisabled")(isPickerDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(contextualMenuVisible)) __obj.updateDynamic("contextualMenuVisible")(contextualMenuVisible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPickerDisabled)) __obj.updateDynamic("isPickerDisabled")(isPickerDisabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPeoplePickerExampleState]
   }
 }

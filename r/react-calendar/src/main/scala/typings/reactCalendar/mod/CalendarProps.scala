@@ -1,7 +1,6 @@
 package typings.reactCalendar.mod
 
-import typings.reactCalendar.AnonDate
-import typings.reactCalendar.CalendarTilePropertiesact
+import typings.reactCalendar.anon.CalendarTilePropertiesact
 import typings.reactCalendar.reactCalendarStrings.end
 import typings.reactCalendar.reactCalendarStrings.range
 import typings.reactCalendar.reactCalendarStrings.start
@@ -30,7 +29,7 @@ trait CalendarProps extends js.Object {
   var navigationAriaLabel: js.UndefOr[String] = js.undefined
   var navigationLabel: js.UndefOr[
     js.Function1[
-      /* props */ AnonDate, 
+      /* props */ typings.reactCalendar.anon.Date, 
       String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ _) | Null
     ]
   ] = js.undefined
@@ -108,9 +107,11 @@ object CalendarProps {
     minDate: Date = null,
     minDetail: Detail = null,
     navigationAriaLabel: String = null,
-    navigationLabel: /* props */ AnonDate => String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ _) | Null = null,
+    navigationLabel: /* props */ typings.reactCalendar.anon.Date => String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ _) | Null = null,
     next2AriaLabel: String = null,
-    next2Label: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) = null,
+    next2Label: js.UndefOr[
+      Null | String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
+    ] = js.undefined,
     nextAriaLabel: String = null,
     nextLabel: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) = null,
     onActiveStartDateChange: /* props */ ViewCallbackProperties => Unit = null,
@@ -124,7 +125,9 @@ object CalendarProps {
     onDrillUp: /* props */ ViewCallbackProperties => Unit = null,
     onViewChange: /* props */ ViewCallbackProperties => Unit = null,
     prev2AriaLabel: String = null,
-    prev2Label: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) = null,
+    prev2Label: js.UndefOr[
+      Null | String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
+    ] = js.undefined,
     prevAriaLabel: String = null,
     prevLabel: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) = null,
     renderChildren: /* props */ CalendarTileProperties => (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ _) | Null = null,
@@ -164,7 +167,7 @@ object CalendarProps {
     if (navigationAriaLabel != null) __obj.updateDynamic("navigationAriaLabel")(navigationAriaLabel.asInstanceOf[js.Any])
     if (navigationLabel != null) __obj.updateDynamic("navigationLabel")(js.Any.fromFunction1(navigationLabel))
     if (next2AriaLabel != null) __obj.updateDynamic("next2AriaLabel")(next2AriaLabel.asInstanceOf[js.Any])
-    if (next2Label != null) __obj.updateDynamic("next2Label")(next2Label.asInstanceOf[js.Any])
+    if (!js.isUndefined(next2Label)) __obj.updateDynamic("next2Label")(next2Label.asInstanceOf[js.Any])
     if (nextAriaLabel != null) __obj.updateDynamic("nextAriaLabel")(nextAriaLabel.asInstanceOf[js.Any])
     if (nextLabel != null) __obj.updateDynamic("nextLabel")(nextLabel.asInstanceOf[js.Any])
     if (onActiveStartDateChange != null) __obj.updateDynamic("onActiveStartDateChange")(js.Any.fromFunction1(onActiveStartDateChange))
@@ -178,17 +181,17 @@ object CalendarProps {
     if (onDrillUp != null) __obj.updateDynamic("onDrillUp")(js.Any.fromFunction1(onDrillUp))
     if (onViewChange != null) __obj.updateDynamic("onViewChange")(js.Any.fromFunction1(onViewChange))
     if (prev2AriaLabel != null) __obj.updateDynamic("prev2AriaLabel")(prev2AriaLabel.asInstanceOf[js.Any])
-    if (prev2Label != null) __obj.updateDynamic("prev2Label")(prev2Label.asInstanceOf[js.Any])
+    if (!js.isUndefined(prev2Label)) __obj.updateDynamic("prev2Label")(prev2Label.asInstanceOf[js.Any])
     if (prevAriaLabel != null) __obj.updateDynamic("prevAriaLabel")(prevAriaLabel.asInstanceOf[js.Any])
     if (prevLabel != null) __obj.updateDynamic("prevLabel")(prevLabel.asInstanceOf[js.Any])
     if (renderChildren != null) __obj.updateDynamic("renderChildren")(js.Any.fromFunction1(renderChildren))
     if (returnValue != null) __obj.updateDynamic("returnValue")(returnValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectRange)) __obj.updateDynamic("selectRange")(selectRange.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDoubleView)) __obj.updateDynamic("showDoubleView")(showDoubleView.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFixedNumberOfWeeks)) __obj.updateDynamic("showFixedNumberOfWeeks")(showFixedNumberOfWeeks.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNavigation)) __obj.updateDynamic("showNavigation")(showNavigation.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNeighboringMonth)) __obj.updateDynamic("showNeighboringMonth")(showNeighboringMonth.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWeekNumbers)) __obj.updateDynamic("showWeekNumbers")(showWeekNumbers.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectRange)) __obj.updateDynamic("selectRange")(selectRange.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDoubleView)) __obj.updateDynamic("showDoubleView")(showDoubleView.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFixedNumberOfWeeks)) __obj.updateDynamic("showFixedNumberOfWeeks")(showFixedNumberOfWeeks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNavigation)) __obj.updateDynamic("showNavigation")(showNavigation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNeighboringMonth)) __obj.updateDynamic("showNeighboringMonth")(showNeighboringMonth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showWeekNumbers)) __obj.updateDynamic("showWeekNumbers")(showWeekNumbers.get.asInstanceOf[js.Any])
     if (tileClassName != null) __obj.updateDynamic("tileClassName")(tileClassName.asInstanceOf[js.Any])
     if (tileContent != null) __obj.updateDynamic("tileContent")(tileContent.asInstanceOf[js.Any])
     if (tileDisabled != null) __obj.updateDynamic("tileDisabled")(js.Any.fromFunction1(tileDisabled))

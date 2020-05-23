@@ -10,10 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a UI element that lets the user choose and open files. */
-@JSGlobal("Windows.Storage.Pickers.FileOpenPicker")
 @js.native
- /* unmapped type */ /** Creates a new instance of a FileOpenPicker . */
-class FileOpenPicker () extends js.Object {
+trait FileOpenPicker extends js.Object {
   /** Gets or sets the label text of the file open picker's commit button. */
   var commitButtonText: String = js.native
   /** Gets a set of values to be populated by the app before PickSingleFileAndContinue or PickMultipleFilesAndContinue operation that deactivates the app in order to provide context when the app is activated. (Windows Phone Store apps) */
@@ -46,12 +44,5 @@ class FileOpenPicker () extends js.Object {
     * @return When the call to this method completes successfully, it returns a StorageFile object that represents the file that the user picked.
     */
   def pickSingleFileAsync(pickerOperationId: String): IPromiseWithIAsyncOperation[StorageFile] = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Storage.Pickers.FileOpenPicker")
-@js.native
-object FileOpenPicker extends js.Object {
-  var resumePickSingleFileAsync: js.Any = js.native
 }
 

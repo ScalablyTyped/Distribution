@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +16,20 @@ trait GamepadPose extends js.Object {
   val position: Float32Array | Null
 }
 
-@JSGlobal("GamepadPose")
-@js.native
-object GamepadPose extends Instantiable0[GamepadPose]
+object GamepadPose {
+  @scala.inline
+  def apply(
+    hasOrientation: scala.Boolean,
+    hasPosition: scala.Boolean,
+    angularAcceleration: Float32Array = null,
+    angularVelocity: Float32Array = null,
+    linearAcceleration: Float32Array = null,
+    linearVelocity: Float32Array = null,
+    orientation: Float32Array = null,
+    position: Float32Array = null
+  ): GamepadPose = {
+    val __obj = js.Dynamic.literal(hasOrientation = hasOrientation.asInstanceOf[js.Any], hasPosition = hasPosition.asInstanceOf[js.Any], angularAcceleration = angularAcceleration.asInstanceOf[js.Any], angularVelocity = angularVelocity.asInstanceOf[js.Any], linearAcceleration = linearAcceleration.asInstanceOf[js.Any], linearVelocity = linearVelocity.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GamepadPose]
+  }
+}
 

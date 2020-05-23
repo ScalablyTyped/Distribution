@@ -87,46 +87,46 @@ trait TableStatistics extends js.Object {
 object TableStatistics {
   @scala.inline
   def apply(
-    Ddls: Int | Double = null,
-    Deletes: Int | Double = null,
-    FullLoadCondtnlChkFailedRows: Int | Double = null,
+    Ddls: js.UndefOr[Long] = js.undefined,
+    Deletes: js.UndefOr[Long] = js.undefined,
+    FullLoadCondtnlChkFailedRows: js.UndefOr[Long] = js.undefined,
     FullLoadEndTime: TStamp = null,
-    FullLoadErrorRows: Int | Double = null,
-    FullLoadReloaded: js.UndefOr[scala.Boolean] = js.undefined,
-    FullLoadRows: Int | Double = null,
+    FullLoadErrorRows: js.UndefOr[Long] = js.undefined,
+    FullLoadReloaded: js.UndefOr[BooleanOptional] = js.undefined,
+    FullLoadRows: js.UndefOr[Long] = js.undefined,
     FullLoadStartTime: TStamp = null,
-    Inserts: Int | Double = null,
+    Inserts: js.UndefOr[Long] = js.undefined,
     LastUpdateTime: TStamp = null,
     SchemaName: String = null,
     TableName: String = null,
     TableState: String = null,
-    Updates: Int | Double = null,
-    ValidationFailedRecords: Int | Double = null,
-    ValidationPendingRecords: Int | Double = null,
+    Updates: js.UndefOr[Long] = js.undefined,
+    ValidationFailedRecords: js.UndefOr[Long] = js.undefined,
+    ValidationPendingRecords: js.UndefOr[Long] = js.undefined,
     ValidationState: String = null,
     ValidationStateDetails: String = null,
-    ValidationSuspendedRecords: Int | Double = null
+    ValidationSuspendedRecords: js.UndefOr[Long] = js.undefined
   ): TableStatistics = {
     val __obj = js.Dynamic.literal()
-    if (Ddls != null) __obj.updateDynamic("Ddls")(Ddls.asInstanceOf[js.Any])
-    if (Deletes != null) __obj.updateDynamic("Deletes")(Deletes.asInstanceOf[js.Any])
-    if (FullLoadCondtnlChkFailedRows != null) __obj.updateDynamic("FullLoadCondtnlChkFailedRows")(FullLoadCondtnlChkFailedRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(Ddls)) __obj.updateDynamic("Ddls")(Ddls.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Deletes)) __obj.updateDynamic("Deletes")(Deletes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(FullLoadCondtnlChkFailedRows)) __obj.updateDynamic("FullLoadCondtnlChkFailedRows")(FullLoadCondtnlChkFailedRows.get.asInstanceOf[js.Any])
     if (FullLoadEndTime != null) __obj.updateDynamic("FullLoadEndTime")(FullLoadEndTime.asInstanceOf[js.Any])
-    if (FullLoadErrorRows != null) __obj.updateDynamic("FullLoadErrorRows")(FullLoadErrorRows.asInstanceOf[js.Any])
-    if (!js.isUndefined(FullLoadReloaded)) __obj.updateDynamic("FullLoadReloaded")(FullLoadReloaded.asInstanceOf[js.Any])
-    if (FullLoadRows != null) __obj.updateDynamic("FullLoadRows")(FullLoadRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(FullLoadErrorRows)) __obj.updateDynamic("FullLoadErrorRows")(FullLoadErrorRows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(FullLoadReloaded)) __obj.updateDynamic("FullLoadReloaded")(FullLoadReloaded.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(FullLoadRows)) __obj.updateDynamic("FullLoadRows")(FullLoadRows.get.asInstanceOf[js.Any])
     if (FullLoadStartTime != null) __obj.updateDynamic("FullLoadStartTime")(FullLoadStartTime.asInstanceOf[js.Any])
-    if (Inserts != null) __obj.updateDynamic("Inserts")(Inserts.asInstanceOf[js.Any])
+    if (!js.isUndefined(Inserts)) __obj.updateDynamic("Inserts")(Inserts.get.asInstanceOf[js.Any])
     if (LastUpdateTime != null) __obj.updateDynamic("LastUpdateTime")(LastUpdateTime.asInstanceOf[js.Any])
     if (SchemaName != null) __obj.updateDynamic("SchemaName")(SchemaName.asInstanceOf[js.Any])
     if (TableName != null) __obj.updateDynamic("TableName")(TableName.asInstanceOf[js.Any])
     if (TableState != null) __obj.updateDynamic("TableState")(TableState.asInstanceOf[js.Any])
-    if (Updates != null) __obj.updateDynamic("Updates")(Updates.asInstanceOf[js.Any])
-    if (ValidationFailedRecords != null) __obj.updateDynamic("ValidationFailedRecords")(ValidationFailedRecords.asInstanceOf[js.Any])
-    if (ValidationPendingRecords != null) __obj.updateDynamic("ValidationPendingRecords")(ValidationPendingRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(Updates)) __obj.updateDynamic("Updates")(Updates.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ValidationFailedRecords)) __obj.updateDynamic("ValidationFailedRecords")(ValidationFailedRecords.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ValidationPendingRecords)) __obj.updateDynamic("ValidationPendingRecords")(ValidationPendingRecords.get.asInstanceOf[js.Any])
     if (ValidationState != null) __obj.updateDynamic("ValidationState")(ValidationState.asInstanceOf[js.Any])
     if (ValidationStateDetails != null) __obj.updateDynamic("ValidationStateDetails")(ValidationStateDetails.asInstanceOf[js.Any])
-    if (ValidationSuspendedRecords != null) __obj.updateDynamic("ValidationSuspendedRecords")(ValidationSuspendedRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(ValidationSuspendedRecords)) __obj.updateDynamic("ValidationSuspendedRecords")(ValidationSuspendedRecords.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableStatistics]
   }
 }

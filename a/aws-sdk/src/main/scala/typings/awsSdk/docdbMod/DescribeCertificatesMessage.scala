@@ -30,13 +30,13 @@ object DescribeCertificatesMessage {
     CertificateIdentifier: String = null,
     Filters: FilterList = null,
     Marker: String = null,
-    MaxRecords: Int | Double = null
+    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
   ): DescribeCertificatesMessage = {
     val __obj = js.Dynamic.literal()
     if (CertificateIdentifier != null) __obj.updateDynamic("CertificateIdentifier")(CertificateIdentifier.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCertificatesMessage]
   }
 }

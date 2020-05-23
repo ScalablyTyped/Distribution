@@ -16,10 +16,10 @@ trait ImageObject extends js.Object {
 
 object ImageObject {
   @scala.inline
-  def apply(url: String, height: Int | Double = null, width: Int | Double = null): ImageObject = {
+  def apply(url: String, height: js.UndefOr[Double] = js.undefined, width: js.UndefOr[Double] = js.undefined): ImageObject = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageObject]
   }
 }

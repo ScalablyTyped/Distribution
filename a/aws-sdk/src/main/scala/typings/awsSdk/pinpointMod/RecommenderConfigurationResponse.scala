@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RecommenderConfigurationResponse extends js.Object {
   /**
-    * A map that defines 1-10 custom endpoint or user attributes, depending on the value for the RecommenderUserIdType property. Each of these attributes temporarily stores a recommended item that's retrieved from the recommender model and sent to an AWS Lambda function for additional processing. Each attribute can be used as a message variable in a message template. This value is null if the configuration doesn't invoke an AWS Lambda function (LambdaFunctionArn) to perform additional processing of recommendation data.
+    * A map that defines 1-10 custom endpoint or user attributes, depending on the value for the RecommendationProviderIdType property. Each of these attributes temporarily stores a recommended item that's retrieved from the recommender model and sent to an AWS Lambda function for additional processing. Each attribute can be used as a message variable in a message template. This value is null if the configuration doesn't invoke an AWS Lambda function (RecommendationTransformerUri) to perform additional processing of recommendation data.
     */
   var Attributes: js.UndefOr[MapOfString] = js.native
   /**
@@ -47,11 +47,11 @@ trait RecommenderConfigurationResponse extends js.Object {
     */
   var RecommendationTransformerUri: js.UndefOr[string] = js.native
   /**
-    * The custom display name for the standard endpoint or user attribute (RecommendationItems) that temporarily stores a recommended item for each endpoint or user, depending on the value for the RecommenderUserIdType property. This name appears in the Attribute finder pane of the template editor on the Amazon Pinpoint console. This value is null if the configuration doesn't invoke an AWS Lambda function (LambdaFunctionArn) to perform additional processing of recommendation data.
+    * The custom display name for the standard endpoint or user attribute (RecommendationItems) that temporarily stores recommended items for each endpoint or user, depending on the value for the RecommendationProviderIdType property. This name appears in the Attribute finder of the template editor on the Amazon Pinpoint console. This value is null if the configuration doesn't invoke an AWS Lambda function (RecommendationTransformerUri) to perform additional processing of recommendation data.
     */
   var RecommendationsDisplayName: js.UndefOr[string] = js.native
   /**
-    * The number of recommended items that are retrieved from the model for each endpoint or user, depending on the value for the RecommenderUserIdType property. This number determines how many recommended attributes are available for use as message variables in message templates.
+    * The number of recommended items that are retrieved from the model for each endpoint or user, depending on the value for the RecommendationProviderIdType property. This number determines how many recommended items are available for use in message variables.
     */
   var RecommendationsPerMessage: js.UndefOr[integer] = js.native
 }
@@ -70,7 +70,7 @@ object RecommenderConfigurationResponse {
     RecommendationProviderIdType: string = null,
     RecommendationTransformerUri: string = null,
     RecommendationsDisplayName: string = null,
-    RecommendationsPerMessage: Int | Double = null
+    RecommendationsPerMessage: js.UndefOr[integer] = js.undefined
   ): RecommenderConfigurationResponse = {
     val __obj = js.Dynamic.literal(CreationDate = CreationDate.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], LastModifiedDate = LastModifiedDate.asInstanceOf[js.Any], RecommendationProviderRoleArn = RecommendationProviderRoleArn.asInstanceOf[js.Any], RecommendationProviderUri = RecommendationProviderUri.asInstanceOf[js.Any])
     if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
@@ -79,7 +79,7 @@ object RecommenderConfigurationResponse {
     if (RecommendationProviderIdType != null) __obj.updateDynamic("RecommendationProviderIdType")(RecommendationProviderIdType.asInstanceOf[js.Any])
     if (RecommendationTransformerUri != null) __obj.updateDynamic("RecommendationTransformerUri")(RecommendationTransformerUri.asInstanceOf[js.Any])
     if (RecommendationsDisplayName != null) __obj.updateDynamic("RecommendationsDisplayName")(RecommendationsDisplayName.asInstanceOf[js.Any])
-    if (RecommendationsPerMessage != null) __obj.updateDynamic("RecommendationsPerMessage")(RecommendationsPerMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(RecommendationsPerMessage)) __obj.updateDynamic("RecommendationsPerMessage")(RecommendationsPerMessage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecommenderConfigurationResponse]
   }
 }

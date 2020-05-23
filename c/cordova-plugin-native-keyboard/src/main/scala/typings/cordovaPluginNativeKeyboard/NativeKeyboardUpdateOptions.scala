@@ -22,13 +22,13 @@ trait NativeKeyboardUpdateOptions extends js.Object {
 object NativeKeyboardUpdateOptions {
   @scala.inline
   def apply(
-    caretIndex: Int | Double = null,
+    caretIndex: js.UndefOr[Double] = js.undefined,
     showKeyboard: js.UndefOr[Boolean] = js.undefined,
     text: String = null
   ): NativeKeyboardUpdateOptions = {
     val __obj = js.Dynamic.literal()
-    if (caretIndex != null) __obj.updateDynamic("caretIndex")(caretIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(showKeyboard)) __obj.updateDynamic("showKeyboard")(showKeyboard.asInstanceOf[js.Any])
+    if (!js.isUndefined(caretIndex)) __obj.updateDynamic("caretIndex")(caretIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showKeyboard)) __obj.updateDynamic("showKeyboard")(showKeyboard.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeKeyboardUpdateOptions]
   }

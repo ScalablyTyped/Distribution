@@ -1,9 +1,8 @@
 package typings.atom.mod
 
-import typings.atom.AnonAutoFocus
-import typings.atom.AnonFilePath
-import typings.atom.AnonPane
-import typings.atom.AnonPriority
+import typings.atom.anon.AutoFocus
+import typings.atom.anon.FilePath
+import typings.atom.anon.Priority
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,15 +15,15 @@ trait Workspace extends js.Object {
   /** Make the previous pane active. */
   def activatePreviousPane(): Boolean = js.native
   /** Adds a panel item to the bottom of the editor window. */
-  def addBottomPanel[T](options: AnonPriority[T]): Panel[T] = js.native
+  def addBottomPanel[T](options: Priority[T]): Panel[T] = js.native
   /** Adds a panel item to the footer. */
-  def addFooterPanel[T](options: AnonPriority[T]): Panel[T] = js.native
+  def addFooterPanel[T](options: Priority[T]): Panel[T] = js.native
   /** Adds a panel item to the header. */
-  def addHeaderPanel[T](options: AnonPriority[T]): Panel[T] = js.native
+  def addHeaderPanel[T](options: Priority[T]): Panel[T] = js.native
   /** Adds a panel item to the left of the editor window. */
-  def addLeftPanel[T](options: AnonPriority[T]): Panel[T] = js.native
+  def addLeftPanel[T](options: Priority[T]): Panel[T] = js.native
   /** Adds a panel item as a modal dialog. */
-  def addModalPanel[T](options: AnonAutoFocus[T]): Panel[T] = js.native
+  def addModalPanel[T](options: AutoFocus[T]): Panel[T] = js.native
   /** Register an opener for a URI. */
   def addOpener(
     opener: js.Function2[
@@ -34,9 +33,9 @@ trait Workspace extends js.Object {
     ]
   ): Disposable = js.native
   /** Adds a panel item to the right of the editor window. */
-  def addRightPanel[T](options: AnonPriority[T]): Panel[T] = js.native
+  def addRightPanel[T](options: Priority[T]): Panel[T] = js.native
   /** Adds a panel item to the top of the editor window above the tabs. */
-  def addTopPanel[T](options: AnonPriority[T]): Panel[T] = js.native
+  def addTopPanel[T](options: Priority[T]): Panel[T] = js.native
   /** Create a new text editor. */
   def buildTextEditor(params: js.Object): TextEditor = js.native
   /**
@@ -124,7 +123,7 @@ trait Workspace extends js.Object {
     */
   def observeTextEditors(callback: js.Function1[/* editor */ TextEditor, Unit]): Disposable = js.native
   /** Invoke the given callback when a pane is added to the workspace. */
-  def onDidAddPane(callback: js.Function1[/* event */ AnonPane, Unit]): Disposable = js.native
+  def onDidAddPane(callback: js.Function1[/* event */ typings.atom.anon.Pane, Unit]): Disposable = js.native
   /** Invoke the given callback when a pane item is added to the workspace. */
   def onDidAddPaneItem(callback: js.Function1[/* event */ PaneItemObservedEvent, Unit]): Disposable = js.native
   /** Invoke the given callback when a text editor is added to the workspace. */
@@ -139,7 +138,7 @@ trait Workspace extends js.Object {
     */
   def onDidChangeActiveTextEditor(callback: js.Function1[/* editor */ js.UndefOr[TextEditor], Unit]): Disposable = js.native
   /** Invoke the given callback when a pane is destroyed in the workspace. */
-  def onDidDestroyPane(callback: js.Function1[/* event */ AnonPane, Unit]): Disposable = js.native
+  def onDidDestroyPane(callback: js.Function1[/* event */ typings.atom.anon.Pane, Unit]): Disposable = js.native
   /** Invoke the given callback when a pane item is destroyed. */
   def onDidDestroyPaneItem(callback: js.Function1[/* event */ PaneItemObservedEvent, Unit]): Disposable = js.native
   /**
@@ -151,7 +150,7 @@ trait Workspace extends js.Object {
   /** Invoke the given callback when the active pane item stops changing. */
   def onDidStopChangingActivePaneItem(callback: js.Function1[/* item */ js.Object, Unit]): Disposable = js.native
   /** Invoke the given callback before a pane is destroyed in the workspace. */
-  def onWillDestroyPane(callback: js.Function1[/* event */ AnonPane, Unit]): Disposable = js.native
+  def onWillDestroyPane(callback: js.Function1[/* event */ typings.atom.anon.Pane, Unit]): Disposable = js.native
   /**
     *  Invoke the given callback when a pane item is about to be destroyed,
     *  before the user is prompted to save it.
@@ -204,7 +203,7 @@ trait Workspace extends js.Object {
     regex: RegExp,
     replacementText: String,
     filePaths: js.Array[String],
-    iterator: js.Function1[/* result */ AnonFilePath, Unit]
+    iterator: js.Function1[/* result */ FilePath, Unit]
   ): js.Promise[Unit] = js.native
   // Searching and Replacing
   /** Performs a search across all files in the workspace. */

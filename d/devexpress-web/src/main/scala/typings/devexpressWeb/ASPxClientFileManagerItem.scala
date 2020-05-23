@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side equivalent of the file manager's FileManagerItem object and serves as a base class for client file and folder objects.
   */
-@JSGlobal("ASPxClientFileManagerItem")
 @js.native
-class ASPxClientFileManagerItem () extends js.Object {
+trait ASPxClientFileManagerItem extends js.Object {
   /**
     * Gets the item's unique identifier.
     */

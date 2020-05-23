@@ -2,7 +2,7 @@ package typings.glob.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.glob.AnonIsDirectory
+import typings.glob.anon.IsDirectory
 import typings.glob.globBooleans.`false`
 import typings.glob.globStrings.DIR
 import typings.glob.globStrings.FILE
@@ -29,7 +29,7 @@ class GlobSync protected () extends IGlobBase {
   /* CompleteClass */
   override var realpathCache: StringDictionary[String] = js.native
   /* CompleteClass */
-  override var statCache: StringDictionary[js.UndefOr[`false` | AnonIsDirectory]] = js.native
+  override var statCache: StringDictionary[js.UndefOr[`false` | IsDirectory]] = js.native
   /* CompleteClass */
   override var symlinks: StringDictionary[js.UndefOr[Boolean]] = js.native
 }

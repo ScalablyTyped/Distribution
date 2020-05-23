@@ -6,14 +6,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.Input.Inking.InkRecognizerContainer")
-@js.native
-class InkRecognizerContainer () extends IInkRecognizerContainer {
-  /* CompleteClass */
-  override def getRecognizers(): IVectorView[InkRecognizer] = js.native
-  /* CompleteClass */
-  override def recognizeAsync(strokeCollection: InkStrokeContainer, recognitionTarget: InkRecognitionTarget): IAsyncOperation[IVectorView[InkRecognitionResult]] = js.native
-  /* CompleteClass */
-  override def setDefaultRecognizer(recognizer: InkRecognizer): Unit = js.native
+trait InkRecognizerContainer extends IInkRecognizerContainer
+
+object InkRecognizerContainer {
+  @scala.inline
+  def apply(
+    getRecognizers: () => IVectorView[InkRecognizer],
+    recognizeAsync: (InkStrokeContainer, InkRecognitionTarget) => IAsyncOperation[IVectorView[InkRecognitionResult]],
+    setDefaultRecognizer: InkRecognizer => Unit
+  ): InkRecognizerContainer = {
+    val __obj = js.Dynamic.literal(getRecognizers = js.Any.fromFunction0(getRecognizers), recognizeAsync = js.Any.fromFunction2(recognizeAsync), setDefaultRecognizer = js.Any.fromFunction1(setDefaultRecognizer))
+    __obj.asInstanceOf[InkRecognizerContainer]
+  }
 }
 

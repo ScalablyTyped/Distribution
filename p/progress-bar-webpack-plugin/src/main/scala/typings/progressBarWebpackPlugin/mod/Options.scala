@@ -40,31 +40,31 @@ object Options {
     callback: () => Unit = null,
     clear: js.UndefOr[Boolean] = js.undefined,
     complete: String = null,
-    curr: Int | Double = null,
+    curr: js.UndefOr[Double] = js.undefined,
     customSummary: /* summary */ String => Unit = null,
     format: String = null,
     head: String = null,
     incomplete: String = null,
-    renderThrottle: Int | Double = null,
+    renderThrottle: js.UndefOr[Double] = js.undefined,
     stream: WritableStream = null,
     summary: js.UndefOr[Boolean] = js.undefined,
     summaryContent: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
-    if (!js.isUndefined(clear)) __obj.updateDynamic("clear")(clear.asInstanceOf[js.Any])
+    if (!js.isUndefined(clear)) __obj.updateDynamic("clear")(clear.get.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(complete.asInstanceOf[js.Any])
-    if (curr != null) __obj.updateDynamic("curr")(curr.asInstanceOf[js.Any])
+    if (!js.isUndefined(curr)) __obj.updateDynamic("curr")(curr.get.asInstanceOf[js.Any])
     if (customSummary != null) __obj.updateDynamic("customSummary")(js.Any.fromFunction1(customSummary))
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (head != null) __obj.updateDynamic("head")(head.asInstanceOf[js.Any])
     if (incomplete != null) __obj.updateDynamic("incomplete")(incomplete.asInstanceOf[js.Any])
-    if (renderThrottle != null) __obj.updateDynamic("renderThrottle")(renderThrottle.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderThrottle)) __obj.updateDynamic("renderThrottle")(renderThrottle.get.asInstanceOf[js.Any])
     if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
-    if (!js.isUndefined(summary)) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
-    if (!js.isUndefined(summaryContent)) __obj.updateDynamic("summaryContent")(summaryContent.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(summary)) __obj.updateDynamic("summary")(summary.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(summaryContent)) __obj.updateDynamic("summaryContent")(summaryContent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

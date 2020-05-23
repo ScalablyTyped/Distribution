@@ -1,14 +1,14 @@
 package typings.storybookApi.urlMod
 
 import typings.reachRouter.mod.NavigateOptions
-import typings.storybookApi.AnonPath
+import typings.storybookApi.anon.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SubAPI extends js.Object {
   def getQueryParam(key: String): js.UndefOr[String]
-  def getUrlState(): AnonPath
+  def getUrlState(): Path
   def navigateUrl(url: String, options: NavigateOptions[js.Object]): Unit
   def setQueryParams(input: QueryParams): Unit
 }
@@ -17,7 +17,7 @@ object SubAPI {
   @scala.inline
   def apply(
     getQueryParam: String => js.UndefOr[String],
-    getUrlState: () => AnonPath,
+    getUrlState: () => Path,
     navigateUrl: (String, NavigateOptions[js.Object]) => Unit,
     setQueryParams: QueryParams => Unit
   ): SubAPI = {

@@ -86,8 +86,7 @@ object TQuery {
     template: (TView, TNode) => Unit,
     matches: js.Array[Double] = null
   ): TQuery = {
-    val __obj = js.Dynamic.literal(crossesNgTemplate = crossesNgTemplate.asInstanceOf[js.Any], elementEnd = js.Any.fromFunction1(elementEnd), elementStart = js.Any.fromFunction2(elementStart), embeddedTView = js.Any.fromFunction2(embeddedTView), indexInDeclarationView = indexInDeclarationView.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], template = js.Any.fromFunction2(template))
-    if (matches != null) __obj.updateDynamic("matches")(matches.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(crossesNgTemplate = crossesNgTemplate.asInstanceOf[js.Any], elementEnd = js.Any.fromFunction1(elementEnd), elementStart = js.Any.fromFunction2(elementStart), embeddedTView = js.Any.fromFunction2(embeddedTView), indexInDeclarationView = indexInDeclarationView.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], template = js.Any.fromFunction2(template), matches = matches.asInstanceOf[js.Any])
     __obj.asInstanceOf[TQuery]
   }
 }

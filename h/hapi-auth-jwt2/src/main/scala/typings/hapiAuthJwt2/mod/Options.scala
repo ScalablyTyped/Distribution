@@ -1,6 +1,5 @@
 package typings.hapiAuthJwt2.mod
 
-import typings.hapiAuthJwt2.AnonExtraInfo
 import typings.hapiHapi.mod.Request
 import typings.hapiHapi.mod.ResponseObject
 import typings.hapiHapi.mod.ResponseToolkit
@@ -57,7 +56,7 @@ trait Options extends js.Object {
     * The secret key used to check the signature of the token *or* a *key lookup function*
     */
   var key: js.UndefOr[
-    String | js.Array[String] | (js.Function1[/* decodedToken */ js.Any, js.Promise[AnonExtraInfo]])
+    String | js.Array[String] | (js.Function1[/* decodedToken */ js.Any, js.Promise[typings.hapiAuthJwt2.anon.ExtraInfo]])
   ] = js.undefined
   /**
     * If you want to set a custom key for your payload token use the
@@ -114,7 +113,7 @@ object Options {
     customExtractionFunc: /* request */ Request => String = null,
     errorFunc: /* ctx */ ErrorContext => ErrorContext = null,
     headerKey: String | Boolean = null,
-    key: String | js.Array[String] | (js.Function1[/* decodedToken */ js.Any, js.Promise[AnonExtraInfo]]) = null,
+    key: String | js.Array[String] | (js.Function1[/* decodedToken */ js.Any, js.Promise[typings.hapiAuthJwt2.anon.ExtraInfo]]) = null,
     payloadKey: String | Boolean = null,
     responseFunc: (/* request */ Request, /* reply */ js.Function2[/* err */ js.Any, /* response */ ResponseObject, Unit]) => Unit = null,
     tokenType: String = null,
@@ -122,8 +121,8 @@ object Options {
     verifyOptions: VerifyOptions = null
   ): Options = {
     val __obj = js.Dynamic.literal(validate = js.Any.fromFunction3(validate))
-    if (!js.isUndefined(attemptToExtractTokenInPayload)) __obj.updateDynamic("attemptToExtractTokenInPayload")(attemptToExtractTokenInPayload.asInstanceOf[js.Any])
-    if (!js.isUndefined(complete)) __obj.updateDynamic("complete")(complete.asInstanceOf[js.Any])
+    if (!js.isUndefined(attemptToExtractTokenInPayload)) __obj.updateDynamic("attemptToExtractTokenInPayload")(attemptToExtractTokenInPayload.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(complete)) __obj.updateDynamic("complete")(complete.get.asInstanceOf[js.Any])
     if (cookieKey != null) __obj.updateDynamic("cookieKey")(cookieKey.asInstanceOf[js.Any])
     if (customExtractionFunc != null) __obj.updateDynamic("customExtractionFunc")(js.Any.fromFunction1(customExtractionFunc))
     if (errorFunc != null) __obj.updateDynamic("errorFunc")(js.Any.fromFunction1(errorFunc))

@@ -27,9 +27,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapScheduler")
 @js.native
-class BootstrapScheduler () extends Control {
+trait BootstrapScheduler extends Control {
   def appointmentFormCancel(): Unit = js.native
   def appointmentFormDelete(): Unit = js.native
   def appointmentFormSave(): Unit = js.native

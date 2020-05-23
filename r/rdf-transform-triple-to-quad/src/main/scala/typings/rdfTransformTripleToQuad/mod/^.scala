@@ -1,8 +1,8 @@
 package typings.rdfTransformTripleToQuad.mod
 
-import typings.node.AnonEnd
 import typings.node.Buffer
 import typings.node.NodeJS.WritableStream
+import typings.node.anon.End
 import typings.node.streamMod.Transform
 import typings.rdfJs.mod.BaseQuad
 import typings.rdfJs.mod.QuadGraph
@@ -21,7 +21,7 @@ class ^[Q /* <: BaseQuad */] ()
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
   /* InferMemberOverrides */
-  override def pipe[T /* <: WritableStream */](destination: T, options: AnonEnd): T = js.native
+  override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
   /**
     * This method pulls a quad out of the internal buffer and returns it.
     * If there is no quad available, then it will return null.

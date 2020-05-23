@@ -1,13 +1,13 @@
 package typings.gatsby.mod
 
-import typings.gatsby.AnonComponent
+import typings.gatsby.anon.Component
 import typings.reachRouter.mod.NavigateFn
 import typings.reachRouter.mod.WindowLocation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PageProps[DataType, PageContextType] extends js.Object {
+trait PageProps[DataType, PageContextType, LocationState] extends js.Object {
   /** You can't get passed children as this is the root user-land component */
   var children: js.UndefOr[scala.Nothing] = js.undefined
   /**
@@ -28,7 +28,7 @@ trait PageProps[DataType, PageContextType] extends js.Object {
     */
   var data: DataType
   /** An extended version of window.document which comes from @react/router */
-  var location: WindowLocation
+  var location: WindowLocation[LocationState]
   /** A way to handle programmatically controlling navigation */
   var navigate: NavigateFn
   /**
@@ -48,7 +48,7 @@ trait PageProps[DataType, PageContextType] extends js.Object {
     */
   var pageContext: PageContextType
   /** Holds information about the build process for this component */
-  var pageResources: AnonComponent[DataType, PageContextType]
+  var pageResources: Component[DataType, PageContextType]
   /** The path for this current page */
   var path: String
   /** @deprecated use pageContext instead */
@@ -59,20 +59,18 @@ trait PageProps[DataType, PageContextType] extends js.Object {
 
 object PageProps {
   @scala.inline
-  def apply[DataType, PageContextType](
+  def apply[DataType, PageContextType, LocationState](
     data: DataType,
-    location: WindowLocation,
+    location: WindowLocation[LocationState],
     navigate: NavigateFn,
     pageContext: PageContextType,
-    pageResources: AnonComponent[DataType, PageContextType],
+    pageResources: Component[DataType, PageContextType],
     path: String,
     pathContext: js.Object,
-    uri: String,
-    children: js.UndefOr[scala.Nothing] = js.undefined
-  ): PageProps[DataType, PageContextType] = {
+    uri: String
+  ): PageProps[DataType, PageContextType, LocationState] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], navigate = navigate.asInstanceOf[js.Any], pageContext = pageContext.asInstanceOf[js.Any], pageResources = pageResources.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pathContext = pathContext.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-    if (!js.isUndefined(children)) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.asInstanceOf[PageProps[DataType, PageContextType]]
+    __obj.asInstanceOf[PageProps[DataType, PageContextType, LocationState]]
   }
 }
 

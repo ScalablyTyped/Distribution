@@ -1,12 +1,12 @@
 package typings.divaJs.interfacesMod
 
-import typings.divaJs.AnonAhei
+import typings.divaJs.anon.Ahei
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ManifestData extends js.Object {
-  var dims: AnonAhei
+  var dims: Ahei
   var item_title: String
   var max_zoom: Double
   var metadata: js.Object
@@ -18,16 +18,16 @@ trait ManifestData extends js.Object {
 object ManifestData {
   @scala.inline
   def apply(
-    dims: AnonAhei,
+    dims: Ahei,
     item_title: String,
     max_zoom: Double,
     metadata: js.Object,
     paged: Boolean,
     pgs: js.Array[Page],
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): ManifestData = {
     val __obj = js.Dynamic.literal(dims = dims.asInstanceOf[js.Any], item_title = item_title.asInstanceOf[js.Any], max_zoom = max_zoom.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], paged = paged.asInstanceOf[js.Any], pgs = pgs.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManifestData]
   }
 }

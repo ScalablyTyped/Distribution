@@ -26,7 +26,7 @@ trait Rule extends js.Object {
     */
   var Status: ExpirationStatus = js.native
   /**
-    * Specifies when an object transitions to a specified storage class.
+    * Specifies when an object transitions to a specified storage class. For more information about Amazon S3 lifecycle configuration rules, see Transitioning Objects Using Amazon S3 Lifecycle in the Amazon Simple Storage Service Developer Guide.
     */
   var Transition: js.UndefOr[typings.awsSdk.s3Mod.Transition] = js.native
 }

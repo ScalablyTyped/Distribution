@@ -1,6 +1,6 @@
 package typings.chrome.chrome.system.display
 
-import typings.chrome.AnonManufacturerId
+import typings.chrome.anon.ManufacturerId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ trait DisplayInfo extends js.Object {
   /**
     * @requires(CrOS Kiosk app) Only available in Chrome OS Kiosk apps
     */
-  var edid: js.UndefOr[AnonManufacturerId] = js.undefined
+  var edid: js.UndefOr[ManufacturerId] = js.undefined
   /** True if this display has a touch input device associated with it. */
   var hasTouchSupport: Boolean
   /** The unique identifier of the display. */
@@ -87,7 +87,7 @@ object DisplayInfo {
     overscan: Insets,
     rotation: Double,
     workArea: Bounds,
-    edid: AnonManufacturerId = null
+    edid: ManufacturerId = null
   ): DisplayInfo = {
     val __obj = js.Dynamic.literal(availableDisplayZoomFactors = availableDisplayZoomFactors.asInstanceOf[js.Any], bounds = bounds.asInstanceOf[js.Any], displayZoomFactor = displayZoomFactor.asInstanceOf[js.Any], dpiX = dpiX.asInstanceOf[js.Any], dpiY = dpiY.asInstanceOf[js.Any], hasTouchSupport = hasTouchSupport.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], isInternal = isInternal.asInstanceOf[js.Any], isPrimary = isPrimary.asInstanceOf[js.Any], mirroringDestinationIds = mirroringDestinationIds.asInstanceOf[js.Any], mirroringSourceId = mirroringSourceId.asInstanceOf[js.Any], modes = modes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], overscan = overscan.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], workArea = workArea.asInstanceOf[js.Any])
     if (edid != null) __obj.updateDynamic("edid")(edid.asInstanceOf[js.Any])

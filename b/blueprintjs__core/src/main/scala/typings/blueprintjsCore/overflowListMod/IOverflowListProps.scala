@@ -78,7 +78,7 @@ object IOverflowListProps {
     visibleItemRenderer: (T, Double) => ReactChild,
     className: String = null,
     collapseFrom: Boundary = null,
-    minVisibleItems: Int | Double = null,
+    minVisibleItems: js.UndefOr[Double] = js.undefined,
     observeParents: js.UndefOr[Boolean] = js.undefined,
     onOverflow: /* overflowItems */ js.Array[T] => Unit = null,
     style: CSSProperties = null,
@@ -87,8 +87,8 @@ object IOverflowListProps {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], overflowRenderer = js.Any.fromFunction1(overflowRenderer), visibleItemRenderer = js.Any.fromFunction2(visibleItemRenderer))
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (collapseFrom != null) __obj.updateDynamic("collapseFrom")(collapseFrom.asInstanceOf[js.Any])
-    if (minVisibleItems != null) __obj.updateDynamic("minVisibleItems")(minVisibleItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(observeParents)) __obj.updateDynamic("observeParents")(observeParents.asInstanceOf[js.Any])
+    if (!js.isUndefined(minVisibleItems)) __obj.updateDynamic("minVisibleItems")(minVisibleItems.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(observeParents)) __obj.updateDynamic("observeParents")(observeParents.get.asInstanceOf[js.Any])
     if (onOverflow != null) __obj.updateDynamic("onOverflow")(js.Any.fromFunction1(onOverflow))
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])

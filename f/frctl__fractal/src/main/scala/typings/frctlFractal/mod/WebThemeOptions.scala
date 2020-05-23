@@ -1,6 +1,6 @@
 package typings.frctlFractal.mod
 
-import typings.frctlFractal.AnonMount
+import typings.frctlFractal.anon.Mount
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait WebThemeOptions extends js.Object {
   var rtl: Boolean
   var scripts: js.UndefOr[js.Array[String]] = js.undefined
   var skin: js.UndefOr[String] = js.undefined
-  var static: js.UndefOr[AnonMount] = js.undefined
+  var static: js.UndefOr[Mount] = js.undefined
   @JSName("static.mount")
   var staticDotmount: String
   var styles: js.UndefOr[js.Array[String]] = js.undefined
@@ -33,7 +33,7 @@ object WebThemeOptions {
     panels: js.Array[String] = null,
     scripts: js.Array[String] = null,
     skin: String = null,
-    static: AnonMount = null,
+    static: Mount = null,
     styles: js.Array[String] = null,
     version: String = null
   ): WebThemeOptions = {

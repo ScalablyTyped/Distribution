@@ -13,12 +13,13 @@ trait NullableMappedPosition extends js.Object {
 
 object NullableMappedPosition {
   @scala.inline
-  def apply(column: Int | Double = null, line: Int | Double = null, name: String = null, source: String = null): NullableMappedPosition = {
-    val __obj = js.Dynamic.literal()
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+  def apply(
+    column: Double = null.asInstanceOf[Double],
+    line: Double = null.asInstanceOf[Double],
+    name: String = null,
+    source: String = null
+  ): NullableMappedPosition = {
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[NullableMappedPosition]
   }
 }

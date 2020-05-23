@@ -12,15 +12,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.WebXRSessionManager")
 @js.native
-class WebXRSessionManager protected () extends IDisposable {
-  /**
-    * Constructs a WebXRSessionManager, this must be initialized within a user action before usage
-    * @param scene The scene which the session should be created for
-    */
-  def this(/** The scene which the session should be created for */
-  scene: Scene) = this()
+trait WebXRSessionManager extends IDisposable {
   var _createRenderTargetTexture: js.Any = js.native
   var _referenceSpace: js.Any = js.native
   var _rttProvider: js.Any = js.native
@@ -70,11 +63,6 @@ class WebXRSessionManager protected () extends IDisposable {
     * or get the offset the player is currently at.
     */
   var viewerReferenceSpace: XRReferenceSpace = js.native
-  /**
-    * Releases all held resources
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
   /**
     * Stops the xrSession and restores the render loop
     * @returns Promise which resolves after it exits XR
@@ -145,17 +133,5 @@ class WebXRSessionManager protected () extends IDisposable {
     * @returns a promise that resolves once the render state has been updated
     */
   def updateRenderStateAsync(state: XRRenderState): js.Promise[Unit] = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.WebXRSessionManager")
-@js.native
-object WebXRSessionManager extends js.Object {
-  /**
-    * Returns a promise that resolves with a boolean indicating if the provided session mode is supported by this browser
-    * @param sessionMode defines the session to test
-    * @returns a promise with boolean as final value
-    */
-  def IsSessionSupportedAsync(sessionMode: XRSessionMode): js.Promise[Boolean] = js.native
 }
 

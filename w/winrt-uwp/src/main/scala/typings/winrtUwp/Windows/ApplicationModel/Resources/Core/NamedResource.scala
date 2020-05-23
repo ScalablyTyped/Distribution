@@ -7,9 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a single logical, named resource, such as a string resource named 'Header1'. */
-@JSGlobal("Windows.ApplicationModel.Resources.Core.NamedResource")
 @js.native
-abstract class NamedResource () extends js.Object {
+trait NamedResource extends js.Object {
   /** Gets all possible candidate values for this named resource. */
   var candidates: IVectorView[ResourceCandidate] = js.native
   /** Gets a URI that can be used to refer to this named resource. */

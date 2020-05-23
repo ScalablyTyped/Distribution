@@ -17,7 +17,7 @@ import typings.csstype.mod.OverflowYProperty
 import typings.csstype.mod.TextAlignProperty
 import typings.csstype.mod.VerticalAlignProperty
 import typings.csstype.mod.WidthProperty
-import typings.react.AnonHtml
+import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
 import typings.react.mod.Booleanish
@@ -105,7 +105,7 @@ import typings.rebass.rebassStrings.tree
 import typings.rebass.rebassStrings.url
 import typings.rebass.rebassStrings.vertical
 import typings.rebass.rebassStrings.yes
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLHeadingElement
 import typings.styledComponents.styledComponentsMod.CSSObject
 import typings.styledComponents.styledComponentsMod.FlattenSimpleInterpolation
@@ -239,7 +239,7 @@ trait HeadingProps extends js.Object {
   var coords: js.UndefOr[String] = js.undefined
   var crossOrigin: js.UndefOr[String] = js.undefined
   var css: js.UndefOr[CSSObject | FlattenSimpleInterpolation | String] = js.undefined
-  var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.undefined
+  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   var data: js.UndefOr[String] = js.undefined
   var datatype: js.UndefOr[String] = js.undefined
   var dateTime: js.UndefOr[String] = js.undefined
@@ -653,7 +653,7 @@ object HeadingProps {
     acceptCharset: String = null,
     accessKey: String = null,
     action: String = null,
-    alignSelf: ResponsiveValue[AlignSelfProperty, RequiredTheme] = null,
+    alignSelf: js.UndefOr[Null | (ResponsiveValue[AlignSelfProperty, RequiredTheme])] = js.undefined,
     allowFullScreen: js.UndefOr[Boolean] = js.undefined,
     allowTransparency: js.UndefOr[Boolean] = js.undefined,
     alt: String = null,
@@ -662,9 +662,9 @@ object HeadingProps {
     `aria-autocomplete`: none | `inline` | list | both = null,
     `aria-busy`: js.UndefOr[Boolean] = js.undefined,
     `aria-checked`: Boolean | mixed = null,
-    `aria-colcount`: Int | Double = null,
-    `aria-colindex`: Int | Double = null,
-    `aria-colspan`: Int | Double = null,
+    `aria-colcount`: js.UndefOr[Double] = js.undefined,
+    `aria-colindex`: js.UndefOr[Double] = js.undefined,
+    `aria-colspan`: js.UndefOr[Double] = js.undefined,
     `aria-controls`: String = null,
     `aria-current`: Boolean | page | step | location | date | time = null,
     `aria-describedby`: String = null,
@@ -681,7 +681,7 @@ object HeadingProps {
     `aria-keyshortcuts`: String = null,
     `aria-label`: String = null,
     `aria-labelledby`: String = null,
-    `aria-level`: Int | Double = null,
+    `aria-level`: js.UndefOr[Double] = js.undefined,
     `aria-live`: off | assertive | polite = null,
     `aria-modal`: js.UndefOr[Boolean] = js.undefined,
     `aria-multiline`: js.UndefOr[Boolean] = js.undefined,
@@ -689,21 +689,21 @@ object HeadingProps {
     `aria-orientation`: horizontal | vertical = null,
     `aria-owns`: String = null,
     `aria-placeholder`: String = null,
-    `aria-posinset`: Int | Double = null,
+    `aria-posinset`: js.UndefOr[Double] = js.undefined,
     `aria-pressed`: Boolean | mixed = null,
     `aria-readonly`: js.UndefOr[Boolean] = js.undefined,
     `aria-relevant`: additions | (`additions text`) | all | removals | text = null,
     `aria-required`: js.UndefOr[Boolean] = js.undefined,
     `aria-roledescription`: String = null,
-    `aria-rowcount`: Int | Double = null,
-    `aria-rowindex`: Int | Double = null,
-    `aria-rowspan`: Int | Double = null,
+    `aria-rowcount`: js.UndefOr[Double] = js.undefined,
+    `aria-rowindex`: js.UndefOr[Double] = js.undefined,
+    `aria-rowspan`: js.UndefOr[Double] = js.undefined,
     `aria-selected`: js.UndefOr[Boolean] = js.undefined,
-    `aria-setsize`: Int | Double = null,
+    `aria-setsize`: js.UndefOr[Double] = js.undefined,
     `aria-sort`: none | ascending | descending | other = null,
-    `aria-valuemax`: Int | Double = null,
-    `aria-valuemin`: Int | Double = null,
-    `aria-valuenow`: Int | Double = null,
+    `aria-valuemax`: js.UndefOr[Double] = js.undefined,
+    `aria-valuemin`: js.UndefOr[Double] = js.undefined,
+    `aria-valuenow`: js.UndefOr[Double] = js.undefined,
     `aria-valuetext`: String = null,
     as: ElementType[_] = null,
     async: js.UndefOr[Boolean] = js.undefined,
@@ -713,8 +713,8 @@ object HeadingProps {
     autoFocus: js.UndefOr[Boolean] = js.undefined,
     autoPlay: js.UndefOr[Boolean] = js.undefined,
     autoSave: String = null,
-    backgroundColor: ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme] = null,
-    bg: ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme] = null,
+    backgroundColor: js.UndefOr[Null | (ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme])] = js.undefined,
+    bg: js.UndefOr[Null | (ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme])] = js.undefined,
     capture: Boolean | String = null,
     cellPadding: Double | String = null,
     cellSpacing: Double | String = null,
@@ -725,9 +725,9 @@ object HeadingProps {
     cite: String = null,
     classID: String = null,
     className: String = null,
-    colSpan: Int | Double = null,
-    color: ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme] = null,
-    cols: Int | Double = null,
+    colSpan: js.UndefOr[Double] = js.undefined,
+    color: js.UndefOr[Null | (ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme])] = js.undefined,
+    cols: js.UndefOr[Double] = js.undefined,
     content: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
@@ -735,7 +735,7 @@ object HeadingProps {
     coords: String = null,
     crossOrigin: String = null,
     css: CSSObject | FlattenSimpleInterpolation | String = null,
-    dangerouslySetInnerHTML: AnonHtml = null,
+    dangerouslySetInnerHTML: Html = null,
     data: String = null,
     datatype: String = null,
     dateTime: String = null,
@@ -745,15 +745,17 @@ object HeadingProps {
     defer: js.UndefOr[Boolean] = js.undefined,
     dir: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    display: ResponsiveValue[DisplayProperty, RequiredTheme] = null,
+    display: js.UndefOr[Null | (ResponsiveValue[DisplayProperty, RequiredTheme])] = js.undefined,
     download: js.Any = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
+    draggable: js.UndefOr[Booleanish] = js.undefined,
     encType: String = null,
-    flex: ResponsiveValue[FlexProperty[TLengthStyledSystem], RequiredTheme] = null,
-    fontFamily: ResponsiveValue[FontFamilyProperty, RequiredTheme] = null,
-    fontSize: ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, _], RequiredTheme] = null,
-    fontStyle: ResponsiveValue[FontStyleProperty, RequiredTheme] = null,
-    fontWeight: ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, _], RequiredTheme] = null,
+    flex: js.UndefOr[Null | (ResponsiveValue[FlexProperty[TLengthStyledSystem], RequiredTheme])] = js.undefined,
+    fontFamily: js.UndefOr[Null | (ResponsiveValue[FontFamilyProperty, RequiredTheme])] = js.undefined,
+    fontSize: js.UndefOr[Null | (ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, _], RequiredTheme])] = js.undefined,
+    fontStyle: js.UndefOr[Null | (ResponsiveValue[FontStyleProperty, RequiredTheme])] = js.undefined,
+    fontWeight: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, _], RequiredTheme])
+    ] = js.undefined,
     form: String = null,
     formAction: String = null,
     formEncType: String = null,
@@ -762,9 +764,9 @@ object HeadingProps {
     formTarget: String = null,
     frameBorder: Double | String = null,
     headers: String = null,
-    height: ResponsiveValue[HeightProperty[TLengthStyledSystem], RequiredTheme] = null,
+    height: js.UndefOr[Null | (ResponsiveValue[HeightProperty[TLengthStyledSystem], RequiredTheme])] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,
-    high: Int | Double = null,
+    high: js.UndefOr[Double] = js.undefined,
     href: String = null,
     hrefLang: String = null,
     htmlFor: String = null,
@@ -785,53 +787,57 @@ object HeadingProps {
     kind: String = null,
     label: String = null,
     lang: String = null,
-    letterSpacing: ResponsiveValue[ThemeValue[letterSpacings, RequiredTheme, _], RequiredTheme] = null,
-    lineHeight: ResponsiveValue[ThemeValue[lineHeights, RequiredTheme, _], RequiredTheme] = null,
+    letterSpacing: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[letterSpacings, RequiredTheme, _], RequiredTheme])
+    ] = js.undefined,
+    lineHeight: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[lineHeights, RequiredTheme, _], RequiredTheme])
+    ] = js.undefined,
     list: String = null,
     loop: js.UndefOr[Boolean] = js.undefined,
-    low: Int | Double = null,
-    m: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
+    low: js.UndefOr[Double] = js.undefined,
+    m: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
     manifest: String = null,
-    margin: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    marginBottom: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    marginHeight: Int | Double = null,
-    marginLeft: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    marginRight: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    marginTop: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    marginWidth: Int | Double = null,
-    marginX: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    marginY: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
+    margin: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
+    marginBottom: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
+    marginHeight: js.UndefOr[Double] = js.undefined,
+    marginLeft: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
+    marginRight: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
+    marginTop: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
+    marginWidth: js.UndefOr[Double] = js.undefined,
+    marginX: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
+    marginY: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
     max: Double | String = null,
-    maxHeight: ResponsiveValue[MaxHeightProperty[TLengthStyledSystem], RequiredTheme] = null,
-    maxLength: Int | Double = null,
-    maxWidth: ResponsiveValue[MaxWidthProperty[TLengthStyledSystem], RequiredTheme] = null,
-    mb: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
+    maxHeight: js.UndefOr[Null | (ResponsiveValue[MaxHeightProperty[TLengthStyledSystem], RequiredTheme])] = js.undefined,
+    maxLength: js.UndefOr[Double] = js.undefined,
+    maxWidth: js.UndefOr[Null | (ResponsiveValue[MaxWidthProperty[TLengthStyledSystem], RequiredTheme])] = js.undefined,
+    mb: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
     media: String = null,
     mediaGroup: String = null,
     method: String = null,
     min: Double | String = null,
-    minHeight: ResponsiveValue[MinHeightProperty[TLengthStyledSystem], RequiredTheme] = null,
-    minLength: Int | Double = null,
-    minWidth: ResponsiveValue[MinWidthProperty[TLengthStyledSystem], RequiredTheme] = null,
-    ml: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    mr: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    mt: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
+    minHeight: js.UndefOr[Null | (ResponsiveValue[MinHeightProperty[TLengthStyledSystem], RequiredTheme])] = js.undefined,
+    minLength: js.UndefOr[Double] = js.undefined,
+    minWidth: js.UndefOr[Null | (ResponsiveValue[MinWidthProperty[TLengthStyledSystem], RequiredTheme])] = js.undefined,
+    ml: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
+    mr: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
+    mt: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
     multiple: js.UndefOr[Boolean] = js.undefined,
     muted: js.UndefOr[Boolean] = js.undefined,
-    mx: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    my: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
+    mx: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
+    my: js.UndefOr[Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme])] = js.undefined,
     name: String = null,
     noValidate: js.UndefOr[Boolean] = js.undefined,
     nonce: String = null,
-    onAbort: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
+    onAbort: SyntheticEvent[HTMLHeadingElement, Event] => Unit = null,
     onAnimationEnd: AnimationEvent[HTMLHeadingElement] => Unit = null,
     onAnimationIteration: AnimationEvent[HTMLHeadingElement] => Unit = null,
     onAnimationStart: AnimationEvent[HTMLHeadingElement] => Unit = null,
     onAuxClick: MouseEvent[HTMLHeadingElement, NativeMouseEvent] => Unit = null,
     onBeforeInput: FormEvent[HTMLHeadingElement] => Unit = null,
     onBlur: FocusEvent[HTMLHeadingElement] => Unit = null,
-    onCanPlay: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
+    onCanPlay: SyntheticEvent[HTMLHeadingElement, Event] => Unit = null,
+    onCanPlayThrough: SyntheticEvent[HTMLHeadingElement, Event] => Unit = null,
     onChange: FormEvent[HTMLHeadingElement] => Unit = null,
     onClick: MouseEvent[HTMLHeadingElement, NativeMouseEvent] => Unit = null,
     onCompositionEnd: CompositionEvent[HTMLHeadingElement] => Unit = null,
@@ -849,21 +855,21 @@ object HeadingProps {
     onDragOver: DragEvent[HTMLHeadingElement] => Unit = null,
     onDragStart: DragEvent[HTMLHeadingElement] => Unit = null,
     onDrop: DragEvent[HTMLHeadingElement] => Unit = null,
-    onDurationChange: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
-    onEmptied: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
-    onEncrypted: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
-    onEnded: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
-    onError: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
+    onDurationChange: SyntheticEvent[HTMLHeadingElement, Event] => Unit = null,
+    onEmptied: SyntheticEvent[HTMLHeadingElement, Event] => Unit = null,
+    onEncrypted: SyntheticEvent[HTMLHeadingElement, Event] => Unit = null,
+    onEnded: SyntheticEvent[HTMLHeadingElement, Event] => Unit = null,
+    onError: SyntheticEvent[HTMLHeadingElement, Event] => Unit = null,
     onFocus: FocusEvent[HTMLHeadingElement] => Unit = null,
     onInput: FormEvent[HTMLHeadingElement] => Unit = null,
     onInvalid: FormEvent[HTMLHeadingElement] => Unit = null,
     onKeyDown: KeyboardEvent[HTMLHeadingElement] => Unit = null,
     onKeyPress: KeyboardEvent[HTMLHeadingElement] => Unit = null,
     onKeyUp: KeyboardEvent[HTMLHeadingElement] => Unit = null,
-    onLoad: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
-    onLoadStart: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
-    onLoadedData: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
+    onLoad: SyntheticEvent[HTMLHeadingElement, Event] => Unit = null,
+    onLoadStart: SyntheticEvent[HTMLHeadingElement, Event] => Unit = null,
+    onLoadedData: SyntheticEvent[HTMLHeadingElement, Event] => Unit = null,
+    onLoadedMetadata: SyntheticEvent[HTMLHeadingElement, Event] => Unit = null,
     onMouseDown: MouseEvent[HTMLHeadingElement, NativeMouseEvent] => Unit = null,
     onMouseEnter: MouseEvent[HTMLHeadingElement, NativeMouseEvent] => Unit = null,
     onMouseLeave: MouseEvent[HTMLHeadingElement, NativeMouseEvent] => Unit = null,
@@ -872,9 +878,9 @@ object HeadingProps {
     onMouseOver: MouseEvent[HTMLHeadingElement, NativeMouseEvent] => Unit = null,
     onMouseUp: MouseEvent[HTMLHeadingElement, NativeMouseEvent] => Unit = null,
     onPaste: ClipboardEvent[HTMLHeadingElement] => Unit = null,
-    onPause: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
-    onPlay: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
-    onPlaying: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
+    onPause: SyntheticEvent[HTMLHeadingElement, Event] => Unit = null,
+    onPlay: SyntheticEvent[HTMLHeadingElement, Event] => Unit = null,
+    onPlaying: SyntheticEvent[HTMLHeadingElement, Event] => Unit = null,
     onPointerCancel: PointerEvent[HTMLHeadingElement] => Unit = null,
     onPointerDown: PointerEvent[HTMLHeadingElement] => Unit = null,
     onPointerEnter: PointerEvent[HTMLHeadingElement] => Unit = null,
@@ -883,24 +889,24 @@ object HeadingProps {
     onPointerOut: PointerEvent[HTMLHeadingElement] => Unit = null,
     onPointerOver: PointerEvent[HTMLHeadingElement] => Unit = null,
     onPointerUp: PointerEvent[HTMLHeadingElement] => Unit = null,
-    onProgress: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
-    onRateChange: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
+    onProgress: SyntheticEvent[HTMLHeadingElement, Event] => Unit = null,
+    onRateChange: SyntheticEvent[HTMLHeadingElement, Event] => Unit = null,
     onReset: FormEvent[HTMLHeadingElement] => Unit = null,
     onScroll: UIEvent[HTMLHeadingElement, NativeUIEvent] => Unit = null,
-    onSeeked: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
-    onSeeking: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
-    onSelect: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
-    onStalled: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
+    onSeeked: SyntheticEvent[HTMLHeadingElement, Event] => Unit = null,
+    onSeeking: SyntheticEvent[HTMLHeadingElement, Event] => Unit = null,
+    onSelect: SyntheticEvent[HTMLHeadingElement, Event] => Unit = null,
+    onStalled: SyntheticEvent[HTMLHeadingElement, Event] => Unit = null,
     onSubmit: FormEvent[HTMLHeadingElement] => Unit = null,
-    onSuspend: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
-    onTimeUpdate: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
+    onSuspend: SyntheticEvent[HTMLHeadingElement, Event] => Unit = null,
+    onTimeUpdate: SyntheticEvent[HTMLHeadingElement, Event] => Unit = null,
     onTouchCancel: TouchEvent[HTMLHeadingElement] => Unit = null,
     onTouchEnd: TouchEvent[HTMLHeadingElement] => Unit = null,
     onTouchMove: TouchEvent[HTMLHeadingElement] => Unit = null,
     onTouchStart: TouchEvent[HTMLHeadingElement] => Unit = null,
     onTransitionEnd: TransitionEvent[HTMLHeadingElement] => Unit = null,
-    onVolumeChange: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
-    onWaiting: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
+    onVolumeChange: SyntheticEvent[HTMLHeadingElement, Event] => Unit = null,
+    onWaiting: SyntheticEvent[HTMLHeadingElement, Event] => Unit = null,
     onWheel: WheelEvent[HTMLHeadingElement] => Unit = null
   ): HeadingProps = {
     val __obj = js.Dynamic.literal()
@@ -909,85 +915,85 @@ object HeadingProps {
     if (acceptCharset != null) __obj.updateDynamic("acceptCharset")(acceptCharset.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFullScreen)) __obj.updateDynamic("allowFullScreen")(allowFullScreen.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowTransparency)) __obj.updateDynamic("allowTransparency")(allowTransparency.asInstanceOf[js.Any])
+    if (!js.isUndefined(alignSelf)) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFullScreen)) __obj.updateDynamic("allowFullScreen")(allowFullScreen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowTransparency)) __obj.updateDynamic("allowTransparency")(allowTransparency.get.asInstanceOf[js.Any])
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.get.asInstanceOf[js.Any])
     if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.get.asInstanceOf[js.Any])
     if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
-    if (`aria-colcount` != null) __obj.updateDynamic("aria-colcount")(`aria-colcount`.asInstanceOf[js.Any])
-    if (`aria-colindex` != null) __obj.updateDynamic("aria-colindex")(`aria-colindex`.asInstanceOf[js.Any])
-    if (`aria-colspan` != null) __obj.updateDynamic("aria-colspan")(`aria-colspan`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-colcount`)) __obj.updateDynamic("aria-colcount")(`aria-colcount`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-colindex`)) __obj.updateDynamic("aria-colindex")(`aria-colindex`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-colspan`)) __obj.updateDynamic("aria-colspan")(`aria-colspan`.get.asInstanceOf[js.Any])
     if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`.asInstanceOf[js.Any])
     if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
     if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
     if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.get.asInstanceOf[js.Any])
     if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
     if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.get.asInstanceOf[js.Any])
     if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.get.asInstanceOf[js.Any])
     if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.get.asInstanceOf[js.Any])
     if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
     if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
     if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (`aria-level` != null) __obj.updateDynamic("aria-level")(`aria-level`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-level`)) __obj.updateDynamic("aria-level")(`aria-level`.get.asInstanceOf[js.Any])
     if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.get.asInstanceOf[js.Any])
     if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
     if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
     if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`.asInstanceOf[js.Any])
-    if (`aria-posinset` != null) __obj.updateDynamic("aria-posinset")(`aria-posinset`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-posinset`)) __obj.updateDynamic("aria-posinset")(`aria-posinset`.get.asInstanceOf[js.Any])
     if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.get.asInstanceOf[js.Any])
     if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.get.asInstanceOf[js.Any])
     if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
-    if (`aria-rowcount` != null) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.asInstanceOf[js.Any])
-    if (`aria-rowindex` != null) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.asInstanceOf[js.Any])
-    if (`aria-rowspan` != null) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.asInstanceOf[js.Any])
-    if (`aria-setsize` != null) __obj.updateDynamic("aria-setsize")(`aria-setsize`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-rowcount`)) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-rowindex`)) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-rowspan`)) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-setsize`)) __obj.updateDynamic("aria-setsize")(`aria-setsize`.get.asInstanceOf[js.Any])
     if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
-    if (`aria-valuemax` != null) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.asInstanceOf[js.Any])
-    if (`aria-valuemin` != null) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.asInstanceOf[js.Any])
-    if (`aria-valuenow` != null) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-valuemax`)) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-valuemin`)) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-valuenow`)) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.get.asInstanceOf[js.Any])
     if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
     if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
     if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.get.asInstanceOf[js.Any])
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
+    if (!js.isUndefined(backgroundColor)) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(bg)) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
     if (capture != null) __obj.updateDynamic("capture")(capture.asInstanceOf[js.Any])
     if (cellPadding != null) __obj.updateDynamic("cellPadding")(cellPadding.asInstanceOf[js.Any])
     if (cellSpacing != null) __obj.updateDynamic("cellSpacing")(cellSpacing.asInstanceOf[js.Any])
     if (challenge != null) __obj.updateDynamic("challenge")(challenge.asInstanceOf[js.Any])
     if (charSet != null) __obj.updateDynamic("charSet")(charSet.asInstanceOf[js.Any])
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (cite != null) __obj.updateDynamic("cite")(cite.asInstanceOf[js.Any])
     if (classID != null) __obj.updateDynamic("classID")(classID.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
+    if (!js.isUndefined(colSpan)) __obj.updateDynamic("colSpan")(colSpan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(cols)) __obj.updateDynamic("cols")(cols.get.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
+    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.get.asInstanceOf[js.Any])
     if (coords != null) __obj.updateDynamic("coords")(coords.asInstanceOf[js.Any])
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
     if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
@@ -995,32 +1001,32 @@ object HeadingProps {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
     if (dateTime != null) __obj.updateDynamic("dateTime")(dateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.get.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.asInstanceOf[js.Any])
+    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.get.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (download != null) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
     if (encType != null) __obj.updateDynamic("encType")(encType.asInstanceOf[js.Any])
-    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(flex)) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontFamily)) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontStyle)) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontWeight)) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
     if (formAction != null) __obj.updateDynamic("formAction")(formAction.asInstanceOf[js.Any])
     if (formEncType != null) __obj.updateDynamic("formEncType")(formEncType.asInstanceOf[js.Any])
     if (formMethod != null) __obj.updateDynamic("formMethod")(formMethod.asInstanceOf[js.Any])
-    if (!js.isUndefined(formNoValidate)) __obj.updateDynamic("formNoValidate")(formNoValidate.asInstanceOf[js.Any])
+    if (!js.isUndefined(formNoValidate)) __obj.updateDynamic("formNoValidate")(formNoValidate.get.asInstanceOf[js.Any])
     if (formTarget != null) __obj.updateDynamic("formTarget")(formTarget.asInstanceOf[js.Any])
     if (frameBorder != null) __obj.updateDynamic("frameBorder")(frameBorder.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (high != null) __obj.updateDynamic("high")(high.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(high)) __obj.updateDynamic("high")(high.get.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (hrefLang != null) __obj.updateDynamic("hrefLang")(hrefLang.asInstanceOf[js.Any])
     if (htmlFor != null) __obj.updateDynamic("htmlFor")(htmlFor.asInstanceOf[js.Any])
@@ -1033,7 +1039,7 @@ object HeadingProps {
     if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])
     if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp.asInstanceOf[js.Any])
     if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.get.asInstanceOf[js.Any])
     if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (keyParams != null) __obj.updateDynamic("keyParams")(keyParams.asInstanceOf[js.Any])
@@ -1041,43 +1047,43 @@ object HeadingProps {
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing.asInstanceOf[js.Any])
-    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(letterSpacing)) __obj.updateDynamic("letterSpacing")(letterSpacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineHeight)) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
     if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (low != null) __obj.updateDynamic("low")(low.asInstanceOf[js.Any])
-    if (m != null) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(low)) __obj.updateDynamic("low")(low.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(m)) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
     if (manifest != null) __obj.updateDynamic("manifest")(manifest.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (marginBottom != null) __obj.updateDynamic("marginBottom")(marginBottom.asInstanceOf[js.Any])
-    if (marginHeight != null) __obj.updateDynamic("marginHeight")(marginHeight.asInstanceOf[js.Any])
-    if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
-    if (marginRight != null) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
-    if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
-    if (marginWidth != null) __obj.updateDynamic("marginWidth")(marginWidth.asInstanceOf[js.Any])
-    if (marginX != null) __obj.updateDynamic("marginX")(marginX.asInstanceOf[js.Any])
-    if (marginY != null) __obj.updateDynamic("marginY")(marginY.asInstanceOf[js.Any])
+    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginBottom)) __obj.updateDynamic("marginBottom")(marginBottom.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginHeight)) __obj.updateDynamic("marginHeight")(marginHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginLeft)) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginRight)) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginTop)) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginWidth)) __obj.updateDynamic("marginWidth")(marginWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginX)) __obj.updateDynamic("marginX")(marginX.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginY)) __obj.updateDynamic("marginY")(marginY.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (mb != null) __obj.updateDynamic("mb")(mb.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(mb)) __obj.updateDynamic("mb")(mb.asInstanceOf[js.Any])
     if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
     if (mediaGroup != null) __obj.updateDynamic("mediaGroup")(mediaGroup.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (ml != null) __obj.updateDynamic("ml")(ml.asInstanceOf[js.Any])
-    if (mr != null) __obj.updateDynamic("mr")(mr.asInstanceOf[js.Any])
-    if (mt != null) __obj.updateDynamic("mt")(mt.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
-    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.asInstanceOf[js.Any])
-    if (mx != null) __obj.updateDynamic("mx")(mx.asInstanceOf[js.Any])
-    if (my != null) __obj.updateDynamic("my")(my.asInstanceOf[js.Any])
+    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(minLength)) __obj.updateDynamic("minLength")(minLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(ml)) __obj.updateDynamic("ml")(ml.asInstanceOf[js.Any])
+    if (!js.isUndefined(mr)) __obj.updateDynamic("mr")(mr.asInstanceOf[js.Any])
+    if (!js.isUndefined(mt)) __obj.updateDynamic("mt")(mt.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mx)) __obj.updateDynamic("mx")(mx.asInstanceOf[js.Any])
+    if (!js.isUndefined(my)) __obj.updateDynamic("my")(my.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(noValidate)) __obj.updateDynamic("noValidate")(noValidate.asInstanceOf[js.Any])
+    if (!js.isUndefined(noValidate)) __obj.updateDynamic("noValidate")(noValidate.get.asInstanceOf[js.Any])
     if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
     if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))

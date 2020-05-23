@@ -11,9 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides access to the document-related properties of an item (like a file or folder). */
-@JSGlobal("Windows.Storage.FileProperties.DocumentProperties")
 @js.native
-abstract class DocumentProperties () extends js.Object {
+trait DocumentProperties extends js.Object {
   /** Gets the collection of the document's authors. */
   var author: IVector[String] = js.native
   /** Gets or sets the comments associated with the document. */

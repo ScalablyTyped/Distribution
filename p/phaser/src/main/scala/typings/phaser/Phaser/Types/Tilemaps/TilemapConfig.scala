@@ -45,21 +45,21 @@ object TilemapConfig {
   @scala.inline
   def apply(
     data: js.Array[js.Array[integer]] = null,
-    height: Int | Double = null,
+    height: js.UndefOr[integer] = js.undefined,
     insertNull: js.UndefOr[Boolean] = js.undefined,
     key: String = null,
-    tileHeight: Int | Double = null,
-    tileWidth: Int | Double = null,
-    width: Int | Double = null
+    tileHeight: js.UndefOr[integer] = js.undefined,
+    tileWidth: js.UndefOr[integer] = js.undefined,
+    width: js.UndefOr[integer] = js.undefined
   ): TilemapConfig = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertNull)) __obj.updateDynamic("insertNull")(insertNull.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(insertNull)) __obj.updateDynamic("insertNull")(insertNull.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (tileHeight != null) __obj.updateDynamic("tileHeight")(tileHeight.asInstanceOf[js.Any])
-    if (tileWidth != null) __obj.updateDynamic("tileWidth")(tileWidth.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(tileHeight)) __obj.updateDynamic("tileHeight")(tileHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tileWidth)) __obj.updateDynamic("tileWidth")(tileWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TilemapConfig]
   }
 }

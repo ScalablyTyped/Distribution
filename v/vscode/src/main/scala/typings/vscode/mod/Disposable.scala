@@ -1,6 +1,6 @@
 package typings.vscode.mod
 
-import typings.vscode.AnonDispose
+import typings.vscode.anon.Dispose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class Disposable protected () extends js.Object {
   /**
-  		 * Creates a new Disposable calling the provided function
-  		 * on dispose.
-  		 * @param callOnDispose Function that disposes something.
-  		 */
+    * Creates a new Disposable calling the provided function
+    * on dispose.
+    * @param callOnDispose Function that disposes something.
+    */
   def this(callOnDispose: js.Function) = this()
   /**
-  		 * Dispose this object.
-  		 */
+    * Dispose this object.
+    */
   def dispose(): js.Any = js.native
 }
 
@@ -25,14 +25,14 @@ class Disposable protected () extends js.Object {
 @js.native
 object Disposable extends js.Object {
   /**
-  		 * Combine many disposable-likes into one. Use this method
-  		 * when having objects with a dispose function which are not
-  		 * instances of Disposable.
-  		 *
-  		 * @param disposableLikes Objects that have at least a `dispose`-function member.
-  		 * @return Returns a new disposable which, upon dispose, will
-  		 * dispose all provided disposables.
-  		 */
-  def from(disposableLikes: AnonDispose*): Disposable = js.native
+    * Combine many disposable-likes into one. Use this method
+    * when having objects with a dispose function which are not
+    * instances of Disposable.
+    *
+    * @param disposableLikes Objects that have at least a `dispose`-function member.
+    * @return Returns a new disposable which, upon dispose, will
+    * dispose all provided disposables.
+    */
+  def from(disposableLikes: Dispose*): Disposable = js.native
 }
 

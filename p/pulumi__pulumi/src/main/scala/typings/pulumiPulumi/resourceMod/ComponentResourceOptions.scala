@@ -41,7 +41,7 @@ object ComponentResourceOptions {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (ignoreChanges != null) __obj.updateDynamic("ignoreChanges")(ignoreChanges.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (!js.isUndefined(protect)) __obj.updateDynamic("protect")(protect.asInstanceOf[js.Any])
+    if (!js.isUndefined(protect)) __obj.updateDynamic("protect")(protect.get.asInstanceOf[js.Any])
     if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
     if (providers != null) __obj.updateDynamic("providers")(providers.asInstanceOf[js.Any])
     if (transformations != null) __obj.updateDynamic("transformations")(transformations.asInstanceOf[js.Any])

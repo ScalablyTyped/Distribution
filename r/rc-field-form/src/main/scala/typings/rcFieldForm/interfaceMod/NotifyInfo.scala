@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.rcFieldForm.interfaceMod.ValueUpdateInfo
-  - typings.rcFieldForm.AnonType
-  - typings.rcFieldForm.AnonData
-  - typings.rcFieldForm.AnonRelatedFields
+  - typings.rcFieldForm.anon.Type
+  - typings.rcFieldForm.anon.Data
+  - typings.rcFieldForm.anon.RelatedFields
 */
 trait NotifyInfo extends js.Object
 
@@ -27,19 +27,19 @@ object NotifyInfo {
     __obj.asInstanceOf[NotifyInfo]
   }
   @scala.inline
-  def AnonType(`type`: validateFinish | reset): NotifyInfo = {
+  def Type(`type`: validateFinish | reset): NotifyInfo = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotifyInfo]
   }
   @scala.inline
-  def AnonData(data: FieldData, `type`: setField): NotifyInfo = {
+  def Data(data: FieldData, `type`: setField): NotifyInfo = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotifyInfo]
   }
   @scala.inline
-  def AnonRelatedFields(relatedFields: js.Array[InternalNamePath], `type`: dependenciesUpdate): NotifyInfo = {
+  def RelatedFields(relatedFields: js.Array[InternalNamePath], `type`: dependenciesUpdate): NotifyInfo = {
     val __obj = js.Dynamic.literal(relatedFields = relatedFields.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotifyInfo]

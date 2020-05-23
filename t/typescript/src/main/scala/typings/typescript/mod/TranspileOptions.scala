@@ -28,7 +28,7 @@ object TranspileOptions {
     if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
     if (moduleName != null) __obj.updateDynamic("moduleName")(moduleName.asInstanceOf[js.Any])
     if (renamedDependencies != null) __obj.updateDynamic("renamedDependencies")(renamedDependencies.asInstanceOf[js.Any])
-    if (!js.isUndefined(reportDiagnostics)) __obj.updateDynamic("reportDiagnostics")(reportDiagnostics.asInstanceOf[js.Any])
+    if (!js.isUndefined(reportDiagnostics)) __obj.updateDynamic("reportDiagnostics")(reportDiagnostics.get.asInstanceOf[js.Any])
     if (transformers != null) __obj.updateDynamic("transformers")(transformers.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranspileOptions]
   }

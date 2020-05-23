@@ -1,6 +1,6 @@
 package typings.nightmare.mod
 
-import typings.nightmare.AnonHeight
+import typings.nightmare.anon.Height
 import typings.nightmare.nightmareStrings.HTMLComplete
 import typings.nightmare.nightmareStrings.HTMLOnly
 import typings.nightmare.nightmareStrings.MHTML
@@ -228,12 +228,12 @@ trait Nightmare extends js.Object {
   def run(): Nightmare = js.native
   def run(cb: js.Function2[/* err */ js.Any, /* nightmare */ this.type, Unit]): Nightmare = js.native
   def screenshot(): Nightmare = js.native
-  def screenshot(clip: AnonHeight): Nightmare = js.native
-  def screenshot(clip: AnonHeight, done: js.Function2[/* err */ js.Any, /* buffer */ Buffer, Unit]): Nightmare = js.native
+  def screenshot(clip: Height): Nightmare = js.native
+  def screenshot(clip: Height, done: js.Function2[/* err */ js.Any, /* buffer */ Buffer, Unit]): Nightmare = js.native
   def screenshot(done: js.Function2[/* err */ js.Any, /* buffer */ Buffer, Unit]): Nightmare = js.native
   def screenshot(path: String): Nightmare = js.native
-  def screenshot(path: String, clip: AnonHeight): Nightmare = js.native
-  def screenshot(path: String, clip: AnonHeight, done: js.Function1[/* err */ js.Any, Unit]): Nightmare = js.native
+  def screenshot(path: String, clip: Height): Nightmare = js.native
+  def screenshot(path: String, clip: Height, done: js.Function1[/* err */ js.Any, Unit]): Nightmare = js.native
   def screenshot(path: String, done: js.Function1[/* err */ js.Any, Unit]): Nightmare = js.native
   def scrollTo(top: Double, left: Double): Nightmare = js.native
   def select(seletor: String, option: String): Nightmare = js.native

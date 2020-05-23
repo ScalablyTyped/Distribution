@@ -10,9 +10,9 @@ trait PuffEffect extends js.Object {
 
 object PuffEffect {
   @scala.inline
-  def apply(percent: Int | Double = null): PuffEffect = {
+  def apply(percent: js.UndefOr[Double] = js.undefined): PuffEffect = {
     val __obj = js.Dynamic.literal()
-    if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
+    if (!js.isUndefined(percent)) __obj.updateDynamic("percent")(percent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PuffEffect]
   }
 }

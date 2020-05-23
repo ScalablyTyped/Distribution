@@ -22,9 +22,13 @@ trait ListPublishedSchemaArnsRequest extends js.Object {
 
 object ListPublishedSchemaArnsRequest {
   @scala.inline
-  def apply(MaxResults: Int | Double = null, NextToken: NextToken = null, SchemaArn: Arn = null): ListPublishedSchemaArnsRequest = {
+  def apply(
+    MaxResults: js.UndefOr[NumberResults] = js.undefined,
+    NextToken: NextToken = null,
+    SchemaArn: Arn = null
+  ): ListPublishedSchemaArnsRequest = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (SchemaArn != null) __obj.updateDynamic("SchemaArn")(SchemaArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPublishedSchemaArnsRequest]

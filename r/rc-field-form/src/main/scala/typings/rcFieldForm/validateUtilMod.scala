@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-field-form/lib/utils/validateUtil", JSImport.Namespace)
+@JSImport("rc-field-form/es/utils/validateUtil", JSImport.Namespace)
 @js.native
 object validateUtilMod extends js.Object {
   def validateRules(

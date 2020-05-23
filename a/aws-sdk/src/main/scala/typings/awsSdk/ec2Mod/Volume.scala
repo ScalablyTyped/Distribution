@@ -74,13 +74,13 @@ object Volume {
     Attachments: VolumeAttachmentList = null,
     AvailabilityZone: String = null,
     CreateTime: DateTime = null,
-    Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
-    FastRestored: js.UndefOr[scala.Boolean] = js.undefined,
-    Iops: Int | scala.Double = null,
+    Encrypted: js.UndefOr[Boolean] = js.undefined,
+    FastRestored: js.UndefOr[Boolean] = js.undefined,
+    Iops: js.UndefOr[Integer] = js.undefined,
     KmsKeyId: String = null,
-    MultiAttachEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    MultiAttachEnabled: js.UndefOr[Boolean] = js.undefined,
     OutpostArn: String = null,
-    Size: Int | scala.Double = null,
+    Size: js.UndefOr[Integer] = js.undefined,
     SnapshotId: String = null,
     State: VolumeState = null,
     Tags: TagList = null,
@@ -91,13 +91,13 @@ object Volume {
     if (Attachments != null) __obj.updateDynamic("Attachments")(Attachments.asInstanceOf[js.Any])
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
     if (CreateTime != null) __obj.updateDynamic("CreateTime")(CreateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.asInstanceOf[js.Any])
-    if (!js.isUndefined(FastRestored)) __obj.updateDynamic("FastRestored")(FastRestored.asInstanceOf[js.Any])
-    if (Iops != null) __obj.updateDynamic("Iops")(Iops.asInstanceOf[js.Any])
+    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(FastRestored)) __obj.updateDynamic("FastRestored")(FastRestored.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops.get.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (!js.isUndefined(MultiAttachEnabled)) __obj.updateDynamic("MultiAttachEnabled")(MultiAttachEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(MultiAttachEnabled)) __obj.updateDynamic("MultiAttachEnabled")(MultiAttachEnabled.get.asInstanceOf[js.Any])
     if (OutpostArn != null) __obj.updateDynamic("OutpostArn")(OutpostArn.asInstanceOf[js.Any])
-    if (Size != null) __obj.updateDynamic("Size")(Size.asInstanceOf[js.Any])
+    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size.get.asInstanceOf[js.Any])
     if (SnapshotId != null) __obj.updateDynamic("SnapshotId")(SnapshotId.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])

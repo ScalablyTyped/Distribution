@@ -22,10 +22,10 @@ object MultiVarWrite {
     Data: Buffer,
     Start: Double,
     WordLen: WordLen,
-    DBNumber: Int | Double = null
+    DBNumber: js.UndefOr[Double] = js.undefined
   ): MultiVarWrite = {
     val __obj = js.Dynamic.literal(Amount = Amount.asInstanceOf[js.Any], Area = Area.asInstanceOf[js.Any], Data = Data.asInstanceOf[js.Any], Start = Start.asInstanceOf[js.Any], WordLen = WordLen.asInstanceOf[js.Any])
-    if (DBNumber != null) __obj.updateDynamic("DBNumber")(DBNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(DBNumber)) __obj.updateDynamic("DBNumber")(DBNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiVarWrite]
   }
 }

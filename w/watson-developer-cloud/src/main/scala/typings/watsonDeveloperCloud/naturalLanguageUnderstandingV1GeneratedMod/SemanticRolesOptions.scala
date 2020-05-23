@@ -19,12 +19,12 @@ object SemanticRolesOptions {
   def apply(
     entities: js.UndefOr[Boolean] = js.undefined,
     keywords: js.UndefOr[Boolean] = js.undefined,
-    limit: Int | Double = null
+    limit: js.UndefOr[Double] = js.undefined
   ): SemanticRolesOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(entities)) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
-    if (!js.isUndefined(keywords)) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(entities)) __obj.updateDynamic("entities")(entities.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keywords)) __obj.updateDynamic("keywords")(keywords.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SemanticRolesOptions]
   }
 }

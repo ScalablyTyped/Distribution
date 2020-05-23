@@ -17,11 +17,15 @@ trait IInvalidTransaction extends js.Object {
 
 object IInvalidTransaction {
   @scala.inline
-  def apply(extendedData: Uint8Array = null, message: String = null, transactionId: String = null): IInvalidTransaction = {
+  def apply(
+    extendedData: js.UndefOr[Null | Uint8Array] = js.undefined,
+    message: js.UndefOr[Null | String] = js.undefined,
+    transactionId: js.UndefOr[Null | String] = js.undefined
+  ): IInvalidTransaction = {
     val __obj = js.Dynamic.literal()
-    if (extendedData != null) __obj.updateDynamic("extendedData")(extendedData.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (transactionId != null) __obj.updateDynamic("transactionId")(transactionId.asInstanceOf[js.Any])
+    if (!js.isUndefined(extendedData)) __obj.updateDynamic("extendedData")(extendedData.asInstanceOf[js.Any])
+    if (!js.isUndefined(message)) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (!js.isUndefined(transactionId)) __obj.updateDynamic("transactionId")(transactionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInvalidTransaction]
   }
 }

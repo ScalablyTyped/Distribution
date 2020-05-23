@@ -36,18 +36,18 @@ object BuildArtifacts {
   @scala.inline
   def apply(
     artifactIdentifier: String = null,
-    encryptionDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    encryptionDisabled: js.UndefOr[WrapperBoolean] = js.undefined,
     location: String = null,
     md5sum: String = null,
-    overrideArtifactName: js.UndefOr[scala.Boolean] = js.undefined,
+    overrideArtifactName: js.UndefOr[WrapperBoolean] = js.undefined,
     sha256sum: String = null
   ): BuildArtifacts = {
     val __obj = js.Dynamic.literal()
     if (artifactIdentifier != null) __obj.updateDynamic("artifactIdentifier")(artifactIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(encryptionDisabled)) __obj.updateDynamic("encryptionDisabled")(encryptionDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(encryptionDisabled)) __obj.updateDynamic("encryptionDisabled")(encryptionDisabled.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (md5sum != null) __obj.updateDynamic("md5sum")(md5sum.asInstanceOf[js.Any])
-    if (!js.isUndefined(overrideArtifactName)) __obj.updateDynamic("overrideArtifactName")(overrideArtifactName.asInstanceOf[js.Any])
+    if (!js.isUndefined(overrideArtifactName)) __obj.updateDynamic("overrideArtifactName")(overrideArtifactName.get.asInstanceOf[js.Any])
     if (sha256sum != null) __obj.updateDynamic("sha256sum")(sha256sum.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildArtifacts]
   }

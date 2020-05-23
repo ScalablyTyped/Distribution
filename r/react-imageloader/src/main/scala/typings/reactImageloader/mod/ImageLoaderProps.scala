@@ -40,7 +40,7 @@ object ImageLoaderProps {
     onError: /* event */ js.Any => Unit = null,
     onLoad: /* event */ js.Any => Unit = null,
     preloader: /* params */ js.Any => ReactElement = null,
-    ref: LegacyRef[ImageLoader] = null,
+    ref: js.UndefOr[Null | LegacyRef[ImageLoader]] = js.undefined,
     style: CSSProperties = null,
     wrapper: /* props */ js.Any => ReactElement = null
   ): ImageLoaderProps = {
@@ -52,7 +52,7 @@ object ImageLoaderProps {
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
     if (preloader != null) __obj.updateDynamic("preloader")(js.Any.fromFunction1(preloader))
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (wrapper != null) __obj.updateDynamic("wrapper")(js.Any.fromFunction1(wrapper))
     __obj.asInstanceOf[ImageLoaderProps]

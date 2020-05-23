@@ -7,24 +7,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * Fired when two items collide.
-			 */
+  * Fired when two items collide.
+  */
 trait CollisionBehaviorItemcollisionEvent extends CollisionBehaviorBaseEvent {
   /**
-  				 * Item that collided with `item2`.
-  				 */
+    * Item that collided with `item2`.
+    */
   var item1: View
   /**
-  				 * Item that collided with `item1`.
-  				 */
+    * Item that collided with `item1`.
+    */
   var item2: View
   /**
-  				 * Point of the collision when it started. Only returned when `start` is `true`.
-  				 */
+    * Point of the collision when it started. Only returned when `start` is `true`.
+    */
   var point: Point
   /**
-  				 * Returns `true` if the collision started else `false`.
-  				 */
+    * Returns `true` if the collision started else `false`.
+    */
   var start: Boolean
 }
 

@@ -30,8 +30,8 @@ object Config {
     description: String = null,
     grids: js.Array[String] = null,
     legend: String = null,
-    maxzoom: Int | Double = null,
-    minzoom: Int | Double = null,
+    maxzoom: js.UndefOr[Double] = js.undefined,
+    minzoom: js.UndefOr[Double] = js.undefined,
     name: String = null,
     scheme: String = null,
     template: String = null,
@@ -44,8 +44,8 @@ object Config {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (grids != null) __obj.updateDynamic("grids")(grids.asInstanceOf[js.Any])
     if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (maxzoom != null) __obj.updateDynamic("maxzoom")(maxzoom.asInstanceOf[js.Any])
-    if (minzoom != null) __obj.updateDynamic("minzoom")(minzoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxzoom)) __obj.updateDynamic("maxzoom")(maxzoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minzoom)) __obj.updateDynamic("minzoom")(minzoom.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])

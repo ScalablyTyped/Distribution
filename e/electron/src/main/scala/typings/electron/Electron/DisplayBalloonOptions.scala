@@ -50,9 +50,9 @@ object DisplayBalloonOptions {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (iconType != null) __obj.updateDynamic("iconType")(iconType.asInstanceOf[js.Any])
-    if (!js.isUndefined(largeIcon)) __obj.updateDynamic("largeIcon")(largeIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(noSound)) __obj.updateDynamic("noSound")(noSound.asInstanceOf[js.Any])
-    if (!js.isUndefined(respectQuietTime)) __obj.updateDynamic("respectQuietTime")(respectQuietTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(largeIcon)) __obj.updateDynamic("largeIcon")(largeIcon.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noSound)) __obj.updateDynamic("noSound")(noSound.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(respectQuietTime)) __obj.updateDynamic("respectQuietTime")(respectQuietTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayBalloonOptions]
   }
 }

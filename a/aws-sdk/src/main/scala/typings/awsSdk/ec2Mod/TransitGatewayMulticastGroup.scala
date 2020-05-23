@@ -52,8 +52,8 @@ object TransitGatewayMulticastGroup {
   @scala.inline
   def apply(
     GroupIpAddress: String = null,
-    GroupMember: js.UndefOr[scala.Boolean] = js.undefined,
-    GroupSource: js.UndefOr[scala.Boolean] = js.undefined,
+    GroupMember: js.UndefOr[Boolean] = js.undefined,
+    GroupSource: js.UndefOr[Boolean] = js.undefined,
     MemberType: MembershipType = null,
     NetworkInterfaceId: String = null,
     ResourceId: String = null,
@@ -64,8 +64,8 @@ object TransitGatewayMulticastGroup {
   ): TransitGatewayMulticastGroup = {
     val __obj = js.Dynamic.literal()
     if (GroupIpAddress != null) __obj.updateDynamic("GroupIpAddress")(GroupIpAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(GroupMember)) __obj.updateDynamic("GroupMember")(GroupMember.asInstanceOf[js.Any])
-    if (!js.isUndefined(GroupSource)) __obj.updateDynamic("GroupSource")(GroupSource.asInstanceOf[js.Any])
+    if (!js.isUndefined(GroupMember)) __obj.updateDynamic("GroupMember")(GroupMember.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(GroupSource)) __obj.updateDynamic("GroupSource")(GroupSource.get.asInstanceOf[js.Any])
     if (MemberType != null) __obj.updateDynamic("MemberType")(MemberType.asInstanceOf[js.Any])
     if (NetworkInterfaceId != null) __obj.updateDynamic("NetworkInterfaceId")(NetworkInterfaceId.asInstanceOf[js.Any])
     if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])

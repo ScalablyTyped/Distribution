@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.tabview")
 @js.native
-class tabview () extends baseview {
+trait tabview extends baseview {
   @JSName("config")
   var config_tabview: tabviewConfig = js.native
   def addView(obj: js.Any): Unit = js.native

@@ -1,7 +1,7 @@
 package typings.jestHasteMap.mod
 
 import org.scalablytyped.runtime.Instantiable2
-import typings.jestHasteMap.TypeofHasteModuleMap
+import typings.jestHasteMap.anon.TypeofHasteModuleMap
 import typings.jestHasteMap.moduleMapMod.default
 import typings.jestHasteMap.typesMod.InternalHasteMap
 import typings.jestTypes.configMod.Path

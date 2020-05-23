@@ -57,22 +57,22 @@ object HotNotifierInfo {
     moduleId: Double,
     `type`: `self-declined` | declined | unaccepted | accepted | disposed | `accept-errored` | `self-accept-errored` | `self-accept-error-handler-errored`,
     chain: js.Array[Double] = null,
-    dependencyId: Int | Double = null,
+    dependencyId: js.UndefOr[Double] = js.undefined,
     error: Error = null,
     originalError: Error = null,
     outdatedDependencies: NumberDictionary[js.Array[Double]] = null,
     outdatedModules: js.Array[Double] = null,
-    parentId: Int | Double = null
+    parentId: js.UndefOr[Double] = js.undefined
   ): HotNotifierInfo = {
     val __obj = js.Dynamic.literal(moduleId = moduleId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (chain != null) __obj.updateDynamic("chain")(chain.asInstanceOf[js.Any])
-    if (dependencyId != null) __obj.updateDynamic("dependencyId")(dependencyId.asInstanceOf[js.Any])
+    if (!js.isUndefined(dependencyId)) __obj.updateDynamic("dependencyId")(dependencyId.get.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (originalError != null) __obj.updateDynamic("originalError")(originalError.asInstanceOf[js.Any])
     if (outdatedDependencies != null) __obj.updateDynamic("outdatedDependencies")(outdatedDependencies.asInstanceOf[js.Any])
     if (outdatedModules != null) __obj.updateDynamic("outdatedModules")(outdatedModules.asInstanceOf[js.Any])
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
+    if (!js.isUndefined(parentId)) __obj.updateDynamic("parentId")(parentId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HotNotifierInfo]
   }
 }

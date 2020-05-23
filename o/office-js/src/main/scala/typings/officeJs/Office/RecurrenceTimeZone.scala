@@ -30,10 +30,10 @@ object RecurrenceTimeZone {
   @scala.inline
   def apply(
     name: typings.officeJs.Office.MailboxEnums.RecurrenceTimeZone | String,
-    offset: Int | Double = null
+    offset: js.UndefOr[Double] = js.undefined
   ): RecurrenceTimeZone = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecurrenceTimeZone]
   }
 }

@@ -40,7 +40,7 @@ class w3cwebsocket protected () extends js.Object {
     origin: String,
     headers: OutgoingHttpHeaders,
     requestOptions: js.Object,
-    IClientConfig: IClientConfig
+    IClientConfig: typings.websocket.mod.IClientConfig
   ) = this()
   def this(
     url: String,
@@ -48,7 +48,7 @@ class w3cwebsocket protected () extends js.Object {
     origin: String,
     headers: OutgoingHttpHeaders,
     requestOptions: js.Object,
-    IClientConfig: IClientConfig
+    IClientConfig: typings.websocket.mod.IClientConfig
   ) = this()
   var CLOSED: Double = js.native
   var CLOSING: Double = js.native

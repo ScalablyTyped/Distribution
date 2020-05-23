@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Overlay
-@JSGlobal("naver.maps.OverlayView")
 @js.native
-class OverlayView () extends KVO {
+trait OverlayView extends KVO {
   def draw(): Unit = js.native
   def getContainerTopLeft(): Point = js.native
   def getMap(): Map | Null = js.native

@@ -1,6 +1,7 @@
 package typings.reactLazylog
 
 import typings.react.mod.Component
+import typings.reactLazylog.anon.PartialLazyLogProps
 import typings.reactLazylog.scrollFollowMod.ScrollFollowProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`

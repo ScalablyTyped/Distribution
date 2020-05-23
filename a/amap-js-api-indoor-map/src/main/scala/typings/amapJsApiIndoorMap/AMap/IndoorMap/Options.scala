@@ -46,27 +46,27 @@ object Options {
     disableHoverMarker: js.UndefOr[Boolean] = js.undefined,
     disableIconRender: js.UndefOr[Boolean] = js.undefined,
     disableLabelRender: js.UndefOr[Boolean] = js.undefined,
-    featurezIndex: Int | Double = null,
+    featurezIndex: js.UndefOr[Double] = js.undefined,
     hideFloorBar: js.UndefOr[Boolean] = js.undefined,
     map: Map = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
-    zIndex: Int | Double = null,
+    zIndex: js.UndefOr[Double] = js.undefined,
     zooms: js.Tuple2[Double, Double] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alaysShow)) __obj.updateDynamic("alaysShow")(alaysShow.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoLoadBuildingsInTile)) __obj.updateDynamic("autoLoadBuildingsInTile")(autoLoadBuildingsInTile.asInstanceOf[js.Any])
+    if (!js.isUndefined(alaysShow)) __obj.updateDynamic("alaysShow")(alaysShow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoLoadBuildingsInTile)) __obj.updateDynamic("autoLoadBuildingsInTile")(autoLoadBuildingsInTile.get.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableHoverMarker)) __obj.updateDynamic("disableHoverMarker")(disableHoverMarker.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableIconRender)) __obj.updateDynamic("disableIconRender")(disableIconRender.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableLabelRender)) __obj.updateDynamic("disableLabelRender")(disableLabelRender.asInstanceOf[js.Any])
-    if (featurezIndex != null) __obj.updateDynamic("featurezIndex")(featurezIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideFloorBar)) __obj.updateDynamic("hideFloorBar")(hideFloorBar.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableHoverMarker)) __obj.updateDynamic("disableHoverMarker")(disableHoverMarker.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableIconRender)) __obj.updateDynamic("disableIconRender")(disableIconRender.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableLabelRender)) __obj.updateDynamic("disableLabelRender")(disableLabelRender.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(featurezIndex)) __obj.updateDynamic("featurezIndex")(featurezIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideFloorBar)) __obj.updateDynamic("hideFloorBar")(hideFloorBar.get.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     if (zooms != null) __obj.updateDynamic("zooms")(zooms.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

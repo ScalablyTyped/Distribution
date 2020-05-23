@@ -28,16 +28,16 @@ object GetLocationOptions {
     altitude: js.UndefOr[Boolean] = js.undefined,
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
-    highAccuracyExpireTime: Int | Double = null,
+    highAccuracyExpireTime: js.UndefOr[Double] = js.undefined,
     isHighAccuracy: js.UndefOr[Boolean] = js.undefined,
     `type`: wgs84 | gcj02 = null
   ): GetLocationOptions = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
-    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
+    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude.get.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (highAccuracyExpireTime != null) __obj.updateDynamic("highAccuracyExpireTime")(highAccuracyExpireTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHighAccuracy)) __obj.updateDynamic("isHighAccuracy")(isHighAccuracy.asInstanceOf[js.Any])
+    if (!js.isUndefined(highAccuracyExpireTime)) __obj.updateDynamic("highAccuracyExpireTime")(highAccuracyExpireTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHighAccuracy)) __obj.updateDynamic("isHighAccuracy")(isHighAccuracy.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLocationOptions]
   }

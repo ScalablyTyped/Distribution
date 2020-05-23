@@ -35,9 +35,7 @@ import scala.scalajs.js.annotation._
   * //                                  }  OPTIONAL,
   * //        crlExtensions           [0]  EXPLICIT Extensions OPTIONAL
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.TBSCertList")
-@js.native
-class TBSCertList () extends ASN1Object {
+trait TBSCertList extends ASN1Object {
   /**
     * add revoked certificate by parameter
     * @param snParam DERInteger parameter for certificate serial number
@@ -46,7 +44,7 @@ class TBSCertList () extends ASN1Object {
     * tbsc.addRevokedCert({'int': 3}, {'str': '130508235959Z'});
     * @see KJUR.asn1.x509.Time
     */
-  def addRevokedCert(snParam: IntegerParam, timeParam: StringParam): Unit = js.native
+  def addRevokedCert(snParam: IntegerParam, timeParam: StringParam): Unit
   /**
     * set issuer name field by parameter
     * @param x500NameParam X500Name parameter
@@ -54,7 +52,7 @@ class TBSCertList () extends ASN1Object {
     * tbsc.setIssuerParam({'str': '/C=US/CN=b'});
     * @see KJUR.asn1.x509.X500Name
     */
-  def setIssuerByParam(x500NameParam: StringParam): Unit = js.native
+  def setIssuerByParam(x500NameParam: StringParam): Unit
   /**
     * set nextUpdate field by parameter
     * @param timeParam Time parameter
@@ -62,14 +60,14 @@ class TBSCertList () extends ASN1Object {
     * tbsc.setNextUpdateByParam({'str': '130508235959Z'});
     * @see KJUR.asn1.x509.Time
     */
-  def setNextUpdateByParam(timeParam: StringParam): Unit = js.native
+  def setNextUpdateByParam(timeParam: StringParam): Unit
   /**
     * set signature algorithm field by parameter
     * @param algIdParam AlgorithmIdentifier parameter
     * @example
     * tbsc.setSignatureAlgByParam({'name': 'SHA1withRSA'});
     */
-  def setSignatureAlgByParam(algIdParam: NameParam): Unit = js.native
+  def setSignatureAlgByParam(algIdParam: NameParam): Unit
   /**
     * set thisUpdate field by parameter
     * @param timeParam Time parameter
@@ -77,6 +75,29 @@ class TBSCertList () extends ASN1Object {
     * tbsc.setThisUpdateByParam({'str': '130508235959Z'});
     * @see KJUR.asn1.x509.Time
     */
-  def setThisUpdateByParam(timeParam: StringParam): Unit = js.native
+  def setThisUpdateByParam(timeParam: StringParam): Unit
+}
+
+object TBSCertList {
+  @scala.inline
+  def apply(
+    addRevokedCert: (IntegerParam, StringParam) => Unit,
+    getEncodedHex: () => String,
+    getFreshValueHex: () => String,
+    getLengthHexFromValue: () => String,
+    getValueHex: () => String,
+    hL: String,
+    hT: String,
+    hTLV: String,
+    hV: String,
+    isModified: String,
+    setIssuerByParam: StringParam => Unit,
+    setNextUpdateByParam: StringParam => Unit,
+    setSignatureAlgByParam: NameParam => Unit,
+    setThisUpdateByParam: StringParam => Unit
+  ): TBSCertList = {
+    val __obj = js.Dynamic.literal(addRevokedCert = js.Any.fromFunction2(addRevokedCert), getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setIssuerByParam = js.Any.fromFunction1(setIssuerByParam), setNextUpdateByParam = js.Any.fromFunction1(setNextUpdateByParam), setSignatureAlgByParam = js.Any.fromFunction1(setSignatureAlgByParam), setThisUpdateByParam = js.Any.fromFunction1(setThisUpdateByParam))
+    __obj.asInstanceOf[TBSCertList]
+  }
 }
 

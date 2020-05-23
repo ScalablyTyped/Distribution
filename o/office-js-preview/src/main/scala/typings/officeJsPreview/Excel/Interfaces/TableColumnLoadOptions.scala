@@ -25,21 +25,21 @@ trait TableColumnLoadOptions extends js.Object {
   var filter: js.UndefOr[FilterLoadOptions] = js.undefined
   /**
     *
-    * Returns a unique key that identifies the column within the table. Read-only.
+    * Returns a unique key that identifies the column within the table.
     *
     * [Api set: ExcelApi 1.1]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
+    * Returns the index number of the column within the columns collection of the table. Zero-indexed.
     *
     * [Api set: ExcelApi 1.1]
     */
   var index: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the name of the table column.
+    * Specifies the name of the table column.
     *
     * [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.]
     */
@@ -64,12 +64,12 @@ object TableColumnLoadOptions {
     values: js.UndefOr[Boolean] = js.undefined
   ): TableColumnLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(values)) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(values)) __obj.updateDynamic("values")(values.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableColumnLoadOptions]
   }
 }

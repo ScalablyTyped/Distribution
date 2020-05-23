@@ -14,14 +14,14 @@ object SerializeWithBufferAndIndexOptions {
   def apply(
     checkKeys: js.UndefOr[Boolean] = js.undefined,
     ignoreUndefined: js.UndefOr[Boolean] = js.undefined,
-    index: Int | scala.Double = null,
+    index: js.UndefOr[scala.Double] = js.undefined,
     serializeFunctions: js.UndefOr[Boolean] = js.undefined
   ): SerializeWithBufferAndIndexOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkKeys)) __obj.updateDynamic("checkKeys")(checkKeys.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkKeys)) __obj.updateDynamic("checkKeys")(checkKeys.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerializeWithBufferAndIndexOptions]
   }
 }

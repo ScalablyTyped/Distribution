@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.anon.PickISearchBoxPropsdisabl
 import typings.officeUiFabricReact.searchBoxTypesMod.ISearchBoxProps
 import typings.react.mod.FunctionComponent
 import scala.scalajs.js

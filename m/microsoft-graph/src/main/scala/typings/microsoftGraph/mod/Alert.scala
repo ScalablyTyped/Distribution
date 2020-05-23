@@ -119,7 +119,7 @@ object Alert {
     closedDateTime: String = null,
     cloudAppStates: js.Array[CloudAppSecurityState] = null,
     comments: js.Array[String] = null,
-    confidence: Int | Double = null,
+    confidence: js.UndefOr[Double] = js.undefined,
     createdDateTime: String = null,
     description: String = null,
     detectionIds: js.Array[String] = null,
@@ -154,7 +154,7 @@ object Alert {
     if (closedDateTime != null) __obj.updateDynamic("closedDateTime")(closedDateTime.asInstanceOf[js.Any])
     if (cloudAppStates != null) __obj.updateDynamic("cloudAppStates")(cloudAppStates.asInstanceOf[js.Any])
     if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
-    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
     if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (detectionIds != null) __obj.updateDynamic("detectionIds")(detectionIds.asInstanceOf[js.Any])

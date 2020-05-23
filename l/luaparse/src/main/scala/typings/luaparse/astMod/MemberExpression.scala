@@ -1,6 +1,6 @@
 package typings.luaparse.astMod
 
-import typings.luaparse.AnonEnd
+import typings.luaparse.anon.End
 import typings.luaparse.luaparseStrings.Colon
 import typings.luaparse.luaparseStrings.Dot
 import scala.scalajs.js
@@ -22,7 +22,7 @@ object MemberExpression {
     identifier: Identifier,
     indexer: Dot | Colon,
     `type`: typings.luaparse.luaparseStrings.MemberExpression,
-    loc: AnonEnd = null
+    loc: End = null
   ): MemberExpression = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], indexer = indexer.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

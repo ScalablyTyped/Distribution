@@ -1,7 +1,7 @@
 package typings.antdMobile.mod
 
-import typings.antdMobile.PartialListProps
-import typings.antdMobile.TypeofItem
+import typings.antdMobile.anon.PartialListProps
+import typings.antdMobile.anon.TypeofItem
 import typings.antdMobile.listMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`

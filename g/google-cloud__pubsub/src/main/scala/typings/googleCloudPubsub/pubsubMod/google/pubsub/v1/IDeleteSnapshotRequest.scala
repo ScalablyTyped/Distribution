@@ -12,9 +12,9 @@ trait IDeleteSnapshotRequest extends js.Object {
 
 object IDeleteSnapshotRequest {
   @scala.inline
-  def apply(snapshot: String = null): IDeleteSnapshotRequest = {
+  def apply(snapshot: js.UndefOr[Null | String] = js.undefined): IDeleteSnapshotRequest = {
     val __obj = js.Dynamic.literal()
-    if (snapshot != null) __obj.updateDynamic("snapshot")(snapshot.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapshot)) __obj.updateDynamic("snapshot")(snapshot.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDeleteSnapshotRequest]
   }
 }

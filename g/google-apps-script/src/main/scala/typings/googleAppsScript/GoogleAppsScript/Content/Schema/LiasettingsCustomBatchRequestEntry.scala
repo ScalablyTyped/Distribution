@@ -22,7 +22,7 @@ object LiasettingsCustomBatchRequestEntry {
   @scala.inline
   def apply(
     accountId: String = null,
-    batchId: Int | Double = null,
+    batchId: js.UndefOr[Double] = js.undefined,
     contactEmail: String = null,
     contactName: String = null,
     country: String = null,
@@ -35,7 +35,7 @@ object LiasettingsCustomBatchRequestEntry {
   ): LiasettingsCustomBatchRequestEntry = {
     val __obj = js.Dynamic.literal()
     if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchId)) __obj.updateDynamic("batchId")(batchId.get.asInstanceOf[js.Any])
     if (contactEmail != null) __obj.updateDynamic("contactEmail")(contactEmail.asInstanceOf[js.Any])
     if (contactName != null) __obj.updateDynamic("contactName")(contactName.asInstanceOf[js.Any])
     if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])

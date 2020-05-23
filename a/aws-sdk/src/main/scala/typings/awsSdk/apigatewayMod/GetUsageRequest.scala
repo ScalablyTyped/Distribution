@@ -39,12 +39,12 @@ object GetUsageRequest {
     startDate: String,
     usagePlanId: String,
     keyId: String = null,
-    limit: Int | scala.Double = null,
+    limit: js.UndefOr[NullableInteger] = js.undefined,
     position: String = null
   ): GetUsageRequest = {
     val __obj = js.Dynamic.literal(endDate = endDate.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any], usagePlanId = usagePlanId.asInstanceOf[js.Any])
     if (keyId != null) __obj.updateDynamic("keyId")(keyId.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUsageRequest]
   }

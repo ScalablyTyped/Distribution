@@ -64,5 +64,44 @@ trait CodeStarconnections extends Service {
     params: ListConnectionsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListConnectionsOutput, Unit]
   ): Request[ListConnectionsOutput, AWSError] = js.native
+  /**
+    * Gets the set of key-value pairs (metadata) that are used to manage the resource.
+    */
+  def listTagsForResource(): Request[ListTagsForResourceOutput, AWSError] = js.native
+  def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceOutput, Unit]): Request[ListTagsForResourceOutput, AWSError] = js.native
+  /**
+    * Gets the set of key-value pairs (metadata) that are used to manage the resource.
+    */
+  def listTagsForResource(params: ListTagsForResourceInput): Request[ListTagsForResourceOutput, AWSError] = js.native
+  def listTagsForResource(
+    params: ListTagsForResourceInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceOutput, Unit]
+  ): Request[ListTagsForResourceOutput, AWSError] = js.native
+  /**
+    * Adds to or modifies the tags of the given resource. Tags are metadata that can be used to manage a resource.
+    */
+  def tagResource(): Request[TagResourceOutput, AWSError] = js.native
+  def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceOutput, Unit]): Request[TagResourceOutput, AWSError] = js.native
+  /**
+    * Adds to or modifies the tags of the given resource. Tags are metadata that can be used to manage a resource.
+    */
+  def tagResource(params: TagResourceInput): Request[TagResourceOutput, AWSError] = js.native
+  def tagResource(
+    params: TagResourceInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ TagResourceOutput, Unit]
+  ): Request[TagResourceOutput, AWSError] = js.native
+  /**
+    * Removes tags from an AWS resource.
+    */
+  def untagResource(): Request[UntagResourceOutput, AWSError] = js.native
+  def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceOutput, Unit]): Request[UntagResourceOutput, AWSError] = js.native
+  /**
+    * Removes tags from an AWS resource.
+    */
+  def untagResource(params: UntagResourceInput): Request[UntagResourceOutput, AWSError] = js.native
+  def untagResource(
+    params: UntagResourceInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceOutput, Unit]
+  ): Request[UntagResourceOutput, AWSError] = js.native
 }
 

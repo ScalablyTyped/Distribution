@@ -4,10 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Media.Devices.KeypadPressedEventArgs")
-@js.native
-class KeypadPressedEventArgs () extends IKeypadPressedEventArgs {
-  /* CompleteClass */
-  override var telephonyKey: TelephonyKey = js.native
+trait KeypadPressedEventArgs extends IKeypadPressedEventArgs
+
+object KeypadPressedEventArgs {
+  @scala.inline
+  def apply(telephonyKey: TelephonyKey): KeypadPressedEventArgs = {
+    val __obj = js.Dynamic.literal(telephonyKey = telephonyKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KeypadPressedEventArgs]
+  }
 }
 

@@ -23,12 +23,12 @@ trait InstanceResizePolicy extends js.Object {
 object InstanceResizePolicy {
   @scala.inline
   def apply(
-    InstanceTerminationTimeout: Int | Double = null,
+    InstanceTerminationTimeout: js.UndefOr[Integer] = js.undefined,
     InstancesToProtect: EC2InstanceIdsList = null,
     InstancesToTerminate: EC2InstanceIdsList = null
   ): InstanceResizePolicy = {
     val __obj = js.Dynamic.literal()
-    if (InstanceTerminationTimeout != null) __obj.updateDynamic("InstanceTerminationTimeout")(InstanceTerminationTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstanceTerminationTimeout)) __obj.updateDynamic("InstanceTerminationTimeout")(InstanceTerminationTimeout.get.asInstanceOf[js.Any])
     if (InstancesToProtect != null) __obj.updateDynamic("InstancesToProtect")(InstancesToProtect.asInstanceOf[js.Any])
     if (InstancesToTerminate != null) __obj.updateDynamic("InstancesToTerminate")(InstancesToTerminate.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceResizePolicy]

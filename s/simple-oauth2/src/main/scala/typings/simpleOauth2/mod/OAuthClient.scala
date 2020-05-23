@@ -1,27 +1,27 @@
 package typings.simpleOauth2.mod
 
-import typings.simpleOauth2.Anon0
-import typings.simpleOauth2.AnonAuthorizeURL
-import typings.simpleOauth2.AnonCreate
-import typings.simpleOauth2.AnonGetToken
+import typings.simpleOauth2.anon.AuthorizeURL
+import typings.simpleOauth2.anon.Create
+import typings.simpleOauth2.anon.GetToken
+import typings.simpleOauth2.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OAuthClient[ClientIdName /* <: String */] extends js.Object {
-  var accessToken: AnonCreate
-  var authorizationCode: AnonAuthorizeURL[ClientIdName]
-  var clientCredentials: Anon0
-  var ownerPassword: AnonGetToken
+  var accessToken: Create
+  var authorizationCode: AuthorizeURL[ClientIdName]
+  var clientCredentials: `0`
+  var ownerPassword: GetToken
 }
 
 object OAuthClient {
   @scala.inline
-  def apply[ClientIdName /* <: String */](
-    accessToken: AnonCreate,
-    authorizationCode: AnonAuthorizeURL[ClientIdName],
-    clientCredentials: Anon0,
-    ownerPassword: AnonGetToken
+  def apply[ClientIdName](
+    accessToken: Create,
+    authorizationCode: AuthorizeURL[ClientIdName],
+    clientCredentials: `0`,
+    ownerPassword: GetToken
   ): OAuthClient[ClientIdName] = {
     val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], authorizationCode = authorizationCode.asInstanceOf[js.Any], clientCredentials = clientCredentials.asInstanceOf[js.Any], ownerPassword = ownerPassword.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuthClient[ClientIdName]]

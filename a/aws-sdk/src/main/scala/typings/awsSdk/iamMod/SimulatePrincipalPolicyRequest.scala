@@ -64,7 +64,7 @@ object SimulatePrincipalPolicyRequest {
     CallerArn: ResourceNameType = null,
     ContextEntries: ContextEntryListType = null,
     Marker: markerType = null,
-    MaxItems: Int | Double = null,
+    MaxItems: js.UndefOr[maxItemsType] = js.undefined,
     PermissionsBoundaryPolicyInputList: SimulationPolicyListType = null,
     PolicyInputList: SimulationPolicyListType = null,
     ResourceArns: ResourceNameListType = null,
@@ -76,7 +76,7 @@ object SimulatePrincipalPolicyRequest {
     if (CallerArn != null) __obj.updateDynamic("CallerArn")(CallerArn.asInstanceOf[js.Any])
     if (ContextEntries != null) __obj.updateDynamic("ContextEntries")(ContextEntries.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
     if (PermissionsBoundaryPolicyInputList != null) __obj.updateDynamic("PermissionsBoundaryPolicyInputList")(PermissionsBoundaryPolicyInputList.asInstanceOf[js.Any])
     if (PolicyInputList != null) __obj.updateDynamic("PolicyInputList")(PolicyInputList.asInstanceOf[js.Any])
     if (ResourceArns != null) __obj.updateDynamic("ResourceArns")(ResourceArns.asInstanceOf[js.Any])

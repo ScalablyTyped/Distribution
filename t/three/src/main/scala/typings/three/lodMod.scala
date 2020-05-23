@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.anon.Distance
 import typings.three.cameraMod.Camera
 import typings.three.object3DMod.Object3D
 import typings.three.threeBooleans.`true`
@@ -14,7 +15,7 @@ object lodMod extends js.Object {
   class LOD () extends Object3D {
     var autoUpdate: Boolean = js.native
     val isLOD: `true` = js.native
-    var levels: js.Array[AnonDistance] = js.native
+    var levels: js.Array[Distance] = js.native
     /**
     	 * @deprecated Use {@link LOD#levels .levels} instead.
     	 */

@@ -12,11 +12,15 @@ trait ProducerOptions extends js.Object {
 
 object ProducerOptions {
   @scala.inline
-  def apply(routingKey: String = null, rpc: js.UndefOr[Boolean] = js.undefined, timeout: Int | Double = null): ProducerOptions = {
+  def apply(
+    routingKey: String = null,
+    rpc: js.UndefOr[Boolean] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined
+  ): ProducerOptions = {
     val __obj = js.Dynamic.literal()
     if (routingKey != null) __obj.updateDynamic("routingKey")(routingKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(rpc)) __obj.updateDynamic("rpc")(rpc.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(rpc)) __obj.updateDynamic("rpc")(rpc.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProducerOptions]
   }
 }

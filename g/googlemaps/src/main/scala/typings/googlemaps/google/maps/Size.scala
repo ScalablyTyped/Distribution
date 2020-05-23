@@ -4,14 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.maps.Size")
-@js.native
-class Size protected () extends js.Object {
-  def this(width: Double, height: Double) = this()
-  def this(width: Double, height: Double, widthUnit: String) = this()
-  def this(width: Double, height: Double, widthUnit: String, heightUnit: String) = this()
-  var height: Double = js.native
-  var width: Double = js.native
-  def equals(other: Size): Boolean = js.native
+trait Size extends js.Object {
+  var height: Double
+  var width: Double
+  def equals(other: Size): Boolean
+}
+
+object Size {
+  @scala.inline
+  def apply(equals: Size => Boolean, height: Double, width: Double): Size = {
+    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Size]
+  }
 }
 

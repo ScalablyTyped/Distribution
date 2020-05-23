@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,8 +14,4 @@ trait CacheStorage extends js.Object {
   def `match`(request: RequestInfo, options: MultiCacheQueryOptions): js.Promise[js.UndefOr[Response]] = js.native
   def open(cacheName: java.lang.String): js.Promise[Cache] = js.native
 }
-
-@JSGlobal("CacheStorage")
-@js.native
-object CacheStorage extends Instantiable0[CacheStorage]
 

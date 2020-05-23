@@ -3,16 +3,12 @@ package typings.ckeditor.CKEDITOR
 import typings.ckeditor.CKEDITOR.dom.element
 import typings.ckeditor.CKEDITOR.dom.range
 import typings.ckeditor.CKEDITOR.dom.text
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.editable")
 @js.native
-class editable protected () extends element {
-  def this(editor: editor, element: element) = this()
-  def this(editor: editor, element: HTMLElement) = this()
+trait editable extends element {
   var hasFocus: Boolean = js.native
   val status: String = js.native
   def attachClass(className: String): Unit = js.native

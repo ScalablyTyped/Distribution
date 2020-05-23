@@ -12,9 +12,9 @@ trait OnSeekData extends js.Object {
 
 object OnSeekData {
   @scala.inline
-  def apply(currentTime: Double, seekTime: Double, target: Int | Double = null): OnSeekData = {
+  def apply(currentTime: Double, seekTime: Double, target: js.UndefOr[Double] = js.undefined): OnSeekData = {
     val __obj = js.Dynamic.literal(currentTime = currentTime.asInstanceOf[js.Any], seekTime = seekTime.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (!js.isUndefined(target)) __obj.updateDynamic("target")(target.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnSeekData]
   }
 }

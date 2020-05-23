@@ -1,7 +1,7 @@
 package typings.pixiJs.mod
 
-import typings.pixiJs.AnonAlphaMode
 import typings.pixiJs.PIXI.resources.Resource
+import typings.pixiJs.anon.AlphaMode
 import typings.std.Float32Array
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
@@ -47,11 +47,11 @@ class BaseTexture ()
   def this(resource: HTMLCanvasElement) = this()
   def this(resource: HTMLImageElement) = this()
   def this(resource: HTMLVideoElement) = this()
-  def this(resource: String, options: AnonAlphaMode) = this()
-  def this(resource: Resource, options: AnonAlphaMode) = this()
-  def this(resource: HTMLCanvasElement, options: AnonAlphaMode) = this()
-  def this(resource: HTMLImageElement, options: AnonAlphaMode) = this()
-  def this(resource: HTMLVideoElement, options: AnonAlphaMode) = this()
+  def this(resource: String, options: AlphaMode) = this()
+  def this(resource: Resource, options: AlphaMode) = this()
+  def this(resource: HTMLCanvasElement, options: AlphaMode) = this()
+  def this(resource: HTMLImageElement, options: AlphaMode) = this()
+  def this(resource: HTMLVideoElement, options: AlphaMode) = this()
 }
 
 /* static members */

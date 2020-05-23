@@ -18,10 +18,10 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(month: Int | Double = null, year: Int | Double = null): Options = {
+  def apply(month: js.UndefOr[Double] = js.undefined, year: js.UndefOr[Double] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
-    if (year != null) __obj.updateDynamic("year")(year.asInstanceOf[js.Any])
+    if (!js.isUndefined(month)) __obj.updateDynamic("month")(month.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(year)) __obj.updateDynamic("year")(year.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -37,17 +37,17 @@ object CollectionCreateOptions {
     autoIndexId: js.UndefOr[Boolean] = js.undefined,
     capped: js.UndefOr[Boolean] = js.undefined,
     collation: CollationDocument = null,
-    flags: Int | scala.Double = null,
+    flags: js.UndefOr[scala.Double] = js.undefined,
     indexOptionDefaults: js.Object = null,
     j: js.UndefOr[Boolean] = js.undefined,
-    max: Int | scala.Double = null,
+    max: js.UndefOr[scala.Double] = js.undefined,
     pipeline: js.Array[_] = null,
     pkFactory: js.Object = null,
     raw: js.UndefOr[Boolean] = js.undefined,
     readPreference: ReadPreferenceOrMode = null,
     serializeFunctions: js.UndefOr[Boolean] = js.undefined,
     session: ClientSession = null,
-    size: Int | scala.Double = null,
+    size: js.UndefOr[scala.Double] = js.undefined,
     storageEngine: js.Object = null,
     strict: js.UndefOr[Boolean] = js.undefined,
     validationAction: error | warn = null,
@@ -55,31 +55,31 @@ object CollectionCreateOptions {
     validator: js.Object = null,
     viewOn: String = null,
     w: scala.Double | majority | String = null,
-    wtimeout: Int | scala.Double = null
+    wtimeout: js.UndefOr[scala.Double] = js.undefined
   ): CollectionCreateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoIndexId)) __obj.updateDynamic("autoIndexId")(autoIndexId.asInstanceOf[js.Any])
-    if (!js.isUndefined(capped)) __obj.updateDynamic("capped")(capped.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoIndexId)) __obj.updateDynamic("autoIndexId")(autoIndexId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(capped)) __obj.updateDynamic("capped")(capped.get.asInstanceOf[js.Any])
     if (collation != null) __obj.updateDynamic("collation")(collation.asInstanceOf[js.Any])
-    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
+    if (!js.isUndefined(flags)) __obj.updateDynamic("flags")(flags.get.asInstanceOf[js.Any])
     if (indexOptionDefaults != null) __obj.updateDynamic("indexOptionDefaults")(indexOptionDefaults.asInstanceOf[js.Any])
-    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
     if (pipeline != null) __obj.updateDynamic("pipeline")(pipeline.asInstanceOf[js.Any])
     if (pkFactory != null) __obj.updateDynamic("pkFactory")(pkFactory.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
     if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
-    if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions.asInstanceOf[js.Any])
+    if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions.get.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (storageEngine != null) __obj.updateDynamic("storageEngine")(storageEngine.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
     if (validationAction != null) __obj.updateDynamic("validationAction")(validationAction.asInstanceOf[js.Any])
     if (validationLevel != null) __obj.updateDynamic("validationLevel")(validationLevel.asInstanceOf[js.Any])
     if (validator != null) __obj.updateDynamic("validator")(validator.asInstanceOf[js.Any])
     if (viewOn != null) __obj.updateDynamic("viewOn")(viewOn.asInstanceOf[js.Any])
     if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
-    if (wtimeout != null) __obj.updateDynamic("wtimeout")(wtimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(wtimeout)) __obj.updateDynamic("wtimeout")(wtimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionCreateOptions]
   }
 }

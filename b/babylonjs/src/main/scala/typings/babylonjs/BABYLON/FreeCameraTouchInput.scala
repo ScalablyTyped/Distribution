@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.FreeCameraTouchInput")
 @js.native
-class FreeCameraTouchInput () extends ICameraInput[FreeCamera] {
+trait FreeCameraTouchInput extends ICameraInput[FreeCamera] {
   var _observer: js.Any = js.native
   var _offsetX: js.Any = js.native
   var _offsetY: js.Any = js.native

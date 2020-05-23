@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MatterJS.QueryFactory")
 @js.native
-class QueryFactory () extends js.Object {
+trait QueryFactory extends js.Object {
   /**
     * Returns all bodies whose vertices contain the given point, from the given set of bodies.
     * @method point

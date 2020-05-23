@@ -1,6 +1,6 @@
 package typings.awsSdk.elastictranscoderMod
 
-import typings.awsSdk.ReadJobRequestwaiterWaite
+import typings.awsSdk.anon.ReadJobRequestwaiterWaite
 import typings.awsSdk.awsSdkStrings.jobComplete
 import typings.awsSdk.configMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError

@@ -34,14 +34,14 @@ object PipelineExecution {
     artifactRevisions: ArtifactRevisionList = null,
     pipelineExecutionId: PipelineExecutionId = null,
     pipelineName: PipelineName = null,
-    pipelineVersion: Int | Double = null,
+    pipelineVersion: js.UndefOr[PipelineVersion] = js.undefined,
     status: PipelineExecutionStatus = null
   ): PipelineExecution = {
     val __obj = js.Dynamic.literal()
     if (artifactRevisions != null) __obj.updateDynamic("artifactRevisions")(artifactRevisions.asInstanceOf[js.Any])
     if (pipelineExecutionId != null) __obj.updateDynamic("pipelineExecutionId")(pipelineExecutionId.asInstanceOf[js.Any])
     if (pipelineName != null) __obj.updateDynamic("pipelineName")(pipelineName.asInstanceOf[js.Any])
-    if (pipelineVersion != null) __obj.updateDynamic("pipelineVersion")(pipelineVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(pipelineVersion)) __obj.updateDynamic("pipelineVersion")(pipelineVersion.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[PipelineExecution]
   }

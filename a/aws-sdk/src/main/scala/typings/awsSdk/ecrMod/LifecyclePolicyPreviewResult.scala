@@ -32,14 +32,14 @@ object LifecyclePolicyPreviewResult {
   @scala.inline
   def apply(
     action: LifecyclePolicyRuleAction = null,
-    appliedRulePriority: Int | Double = null,
+    appliedRulePriority: js.UndefOr[LifecyclePolicyRulePriority] = js.undefined,
     imageDigest: ImageDigest = null,
     imagePushedAt: PushTimestamp = null,
     imageTags: ImageTagList = null
   ): LifecyclePolicyPreviewResult = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (appliedRulePriority != null) __obj.updateDynamic("appliedRulePriority")(appliedRulePriority.asInstanceOf[js.Any])
+    if (!js.isUndefined(appliedRulePriority)) __obj.updateDynamic("appliedRulePriority")(appliedRulePriority.get.asInstanceOf[js.Any])
     if (imageDigest != null) __obj.updateDynamic("imageDigest")(imageDigest.asInstanceOf[js.Any])
     if (imagePushedAt != null) __obj.updateDynamic("imagePushedAt")(imagePushedAt.asInstanceOf[js.Any])
     if (imageTags != null) __obj.updateDynamic("imageTags")(imageTags.asInstanceOf[js.Any])

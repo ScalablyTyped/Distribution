@@ -12,6 +12,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object dot
   extends TopLevel[
-      js.Function2[/* t1 */ Tensor[Rank] | TensorLike, /* t2 */ Tensor[Rank] | TensorLike, Tensor[Rank]]
+      js.Function2[
+        /* x */ Tensor[Rank] | TensorLike, 
+        /* indices */ Tensor[Rank] | TensorLike, 
+        Tensor[Rank]
+      ]
     ]
 

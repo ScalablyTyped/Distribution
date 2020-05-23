@@ -1,11 +1,10 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.AnonCancelComponentElementModel
-import typings.devextreme.AnonComponentElement
-import typings.devextreme.AnonElement
-import typings.devextreme.AnonElementDxElement
-import typings.devextreme.AnonModel
-import typings.devextreme.AnonName
+import typings.devextreme.anon.CancelComponentElementModel
+import typings.devextreme.anon.ComponentElement
+import typings.devextreme.anon.ElementDxElement
+import typings.devextreme.anon.Model
+import typings.devextreme.anon.Name
 import typings.devextreme.devextremeStrings.`left bottom`
 import typings.devextreme.devextremeStrings.`left top`
 import typings.devextreme.devextremeStrings.`right bottom`
@@ -18,7 +17,7 @@ import typings.devextreme.devextremeStrings.top
 import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.DevExpress.event
 import typings.devextreme.mod.DevExpress.positionConfig
-import typings.devextreme.mod._Global_.JQuery
+import typings.devextreme.mod.global.JQuery
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -58,7 +57,7 @@ object dxLoadPanelOptions {
     container: String | Element | JQuery = null,
     contentTemplate: typings.devextreme.mod.DevExpress.core.template | (js.Function1[/* contentElement */ dxElement, String | Element | JQuery]) = null,
     deferRendering: js.UndefOr[Boolean] = js.undefined,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     dragEnabled: js.UndefOr[Boolean] = js.undefined,
     elementAttr: js.Any = null,
@@ -72,41 +71,41 @@ object dxLoadPanelOptions {
     message: String = null,
     minHeight: Double | String | (js.Function0[Double | String]) = null,
     minWidth: Double | String | (js.Function0[Double | String]) = null,
-    onContentReady: /* e */ AnonComponentElement[dxLoadPanel] => _ = null,
-    onDisposing: /* e */ AnonModel[dxLoadPanel] => _ = null,
-    onHidden: /* e */ AnonElementDxElement[dxLoadPanel] => _ = null,
-    onHiding: /* e */ AnonCancelComponentElementModel[dxLoadPanel] => _ = null,
-    onInitialized: /* e */ AnonElement[dxLoadPanel] => _ = null,
-    onOptionChanged: /* e */ AnonName[dxLoadPanel] => _ = null,
-    onShowing: /* e */ AnonElementDxElement[dxLoadPanel] => _ = null,
-    onShown: /* e */ AnonElementDxElement[dxLoadPanel] => _ = null,
+    onContentReady: /* e */ ComponentElement[dxLoadPanel] => _ = null,
+    onDisposing: /* e */ Model[dxLoadPanel] => _ = null,
+    onHidden: /* e */ ElementDxElement[dxLoadPanel] => _ = null,
+    onHiding: /* e */ CancelComponentElementModel[dxLoadPanel] => _ = null,
+    onInitialized: /* e */ typings.devextreme.anon.Element[dxLoadPanel] => _ = null,
+    onOptionChanged: /* e */ Name[dxLoadPanel] => _ = null,
+    onShowing: /* e */ ElementDxElement[dxLoadPanel] => _ = null,
+    onShown: /* e */ ElementDxElement[dxLoadPanel] => _ = null,
     position: bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | positionConfig | js.Function = null,
     rtlEnabled: js.UndefOr[Boolean] = js.undefined,
     shading: js.UndefOr[Boolean] = js.undefined,
     shadingColor: String = null,
     showIndicator: js.UndefOr[Boolean] = js.undefined,
     showPane: js.UndefOr[Boolean] = js.undefined,
-    tabIndex: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
     width: Double | String | (js.Function0[Double | String]) = null
   ): dxLoadPanelOptions = {
     val __obj = js.Dynamic.literal()
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.get.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
     if (closeOnOutsideClick != null) __obj.updateDynamic("closeOnOutsideClick")(closeOnOutsideClick.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (contentTemplate != null) __obj.updateDynamic("contentTemplate")(contentTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(deferRendering)) __obj.updateDynamic("deferRendering")(deferRendering.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragEnabled)) __obj.updateDynamic("dragEnabled")(dragEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(deferRendering)) __obj.updateDynamic("deferRendering")(deferRendering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragEnabled)) __obj.updateDynamic("dragEnabled")(dragEnabled.get.asInstanceOf[js.Any])
     if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.get.asInstanceOf[js.Any])
     if (indicatorSrc != null) __obj.updateDynamic("indicatorSrc")(indicatorSrc.asInstanceOf[js.Any])
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
@@ -122,13 +121,13 @@ object dxLoadPanelOptions {
     if (onShowing != null) __obj.updateDynamic("onShowing")(js.Any.fromFunction1(onShowing))
     if (onShown != null) __obj.updateDynamic("onShown")(js.Any.fromFunction1(onShown))
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(shading)) __obj.updateDynamic("shading")(shading.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shading)) __obj.updateDynamic("shading")(shading.get.asInstanceOf[js.Any])
     if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(showIndicator)) __obj.updateDynamic("showIndicator")(showIndicator.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPane)) __obj.updateDynamic("showPane")(showPane.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(showIndicator)) __obj.updateDynamic("showIndicator")(showIndicator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPane)) __obj.updateDynamic("showPane")(showPane.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxLoadPanelOptions]
   }

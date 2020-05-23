@@ -7,14 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Predicts Japanese words based on a phonetic characters prefix. */
-@JSGlobal("Windows.Data.Text.TextPredictionGenerator")
 @js.native
-class TextPredictionGenerator protected () extends js.Object {
-  /**
-    * Constructs a TextPredictionGenerator object based on a specific BCP-47 language tag.
-    * @param languageTag The BCP-47 language tag of the language in which the words are to be projected. Only Japanese ("ja") is supported.
-    */
-  def this(languageTag: String) = this()
+trait TextPredictionGenerator extends js.Object {
   /** Determines if the language tag specified is available for generating predictions, but is not installed on the user's device. */
   var languageAvailableButNotInstalled: Boolean = js.native
   /** Gets the language tag of the successfully created TextPredictionGenerator object. */

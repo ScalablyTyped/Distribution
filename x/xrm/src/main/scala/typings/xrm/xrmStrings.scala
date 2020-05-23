@@ -197,6 +197,9 @@ object xrmStrings {
   sealed trait entitylist extends js.Object
   
   @js.native
+  sealed trait entityrecord extends js.Object
+  
+  @js.native
   sealed trait expanded
     extends DisplayState
        with typings.xrm.Xrm.DisplayState
@@ -486,6 +489,8 @@ object xrmStrings {
   def entity: entity = "entity".asInstanceOf[entity]
   @scala.inline
   def entitylist: entitylist = "entitylist".asInstanceOf[entitylist]
+  @scala.inline
+  def entityrecord: entityrecord = "entityrecord".asInstanceOf[entityrecord]
   @scala.inline
   def expanded: expanded = "expanded".asInstanceOf[expanded]
   @scala.inline

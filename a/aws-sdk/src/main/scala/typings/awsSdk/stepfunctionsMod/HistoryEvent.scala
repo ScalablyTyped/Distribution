@@ -132,7 +132,7 @@ object HistoryEvent {
     mapIterationStartedEventDetails: MapIterationEventDetails = null,
     mapIterationSucceededEventDetails: MapIterationEventDetails = null,
     mapStateStartedEventDetails: MapStateStartedEventDetails = null,
-    previousEventId: Int | Double = null,
+    previousEventId: js.UndefOr[EventId] = js.undefined,
     stateEnteredEventDetails: StateEnteredEventDetails = null,
     stateExitedEventDetails: StateExitedEventDetails = null,
     taskFailedEventDetails: TaskFailedEventDetails = null,
@@ -168,7 +168,7 @@ object HistoryEvent {
     if (mapIterationStartedEventDetails != null) __obj.updateDynamic("mapIterationStartedEventDetails")(mapIterationStartedEventDetails.asInstanceOf[js.Any])
     if (mapIterationSucceededEventDetails != null) __obj.updateDynamic("mapIterationSucceededEventDetails")(mapIterationSucceededEventDetails.asInstanceOf[js.Any])
     if (mapStateStartedEventDetails != null) __obj.updateDynamic("mapStateStartedEventDetails")(mapStateStartedEventDetails.asInstanceOf[js.Any])
-    if (previousEventId != null) __obj.updateDynamic("previousEventId")(previousEventId.asInstanceOf[js.Any])
+    if (!js.isUndefined(previousEventId)) __obj.updateDynamic("previousEventId")(previousEventId.get.asInstanceOf[js.Any])
     if (stateEnteredEventDetails != null) __obj.updateDynamic("stateEnteredEventDetails")(stateEnteredEventDetails.asInstanceOf[js.Any])
     if (stateExitedEventDetails != null) __obj.updateDynamic("stateExitedEventDetails")(stateExitedEventDetails.asInstanceOf[js.Any])
     if (taskFailedEventDetails != null) __obj.updateDynamic("taskFailedEventDetails")(taskFailedEventDetails.asInstanceOf[js.Any])

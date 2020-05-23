@@ -34,20 +34,20 @@ trait ScrollSettings extends js.Object {
 object ScrollSettings {
   @scala.inline
   def apply(
-    currentZoom: Int | Double = null,
-    horizontalOffset: Int | Double = null,
+    currentZoom: js.UndefOr[Double] = js.undefined,
+    horizontalOffset: js.UndefOr[Double] = js.undefined,
     padding: js.Any = null,
-    verticalOffset: Int | Double = null,
-    viewPortHeight: Int | Double = null,
-    viewPortWidth: Int | Double = null
+    verticalOffset: js.UndefOr[Double] = js.undefined,
+    viewPortHeight: js.UndefOr[Double] = js.undefined,
+    viewPortWidth: js.UndefOr[Double] = js.undefined
   ): ScrollSettings = {
     val __obj = js.Dynamic.literal()
-    if (currentZoom != null) __obj.updateDynamic("currentZoom")(currentZoom.asInstanceOf[js.Any])
-    if (horizontalOffset != null) __obj.updateDynamic("horizontalOffset")(horizontalOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentZoom)) __obj.updateDynamic("currentZoom")(currentZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalOffset)) __obj.updateDynamic("horizontalOffset")(horizontalOffset.get.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (verticalOffset != null) __obj.updateDynamic("verticalOffset")(verticalOffset.asInstanceOf[js.Any])
-    if (viewPortHeight != null) __obj.updateDynamic("viewPortHeight")(viewPortHeight.asInstanceOf[js.Any])
-    if (viewPortWidth != null) __obj.updateDynamic("viewPortWidth")(viewPortWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalOffset)) __obj.updateDynamic("verticalOffset")(verticalOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewPortHeight)) __obj.updateDynamic("viewPortHeight")(viewPortHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewPortWidth)) __obj.updateDynamic("viewPortWidth")(viewPortWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollSettings]
   }
 }

@@ -6,10 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.drawing.Segment")
 @js.native
-class Segment protected () extends Class {
-  def this(anchor: Point, controlIn: Point, controlOut: Point) = this()
+trait Segment extends Class {
   var options: SegmentOptions = js.native
   def anchor(): Point = js.native
   def anchor(value: Point): Unit = js.native

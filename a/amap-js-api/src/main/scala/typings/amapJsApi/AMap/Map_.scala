@@ -1,35 +1,24 @@
 package typings.amapJsApi.AMap
 
 import typings.amapJsApi.AMap.Map.Feature
-import typings.amapJsApi.AMap.Map.Options
 import typings.amapJsApi.AMap.Map.Status
 import typings.amapJsApi.AMap.Map.ViewMode
-import typings.amapJsApi.AnonCity
-import typings.amapJsApi.AnonLocation
-import typings.amapJsApi.PartialStatus
 import typings.amapJsApi.amapJsApiBooleans.`false`
 import typings.amapJsApi.amapJsApiStrings.all
 import typings.amapJsApi.amapJsApiStrings.circle
 import typings.amapJsApi.amapJsApiStrings.marker
 import typings.amapJsApi.amapJsApiStrings.polygon_
 import typings.amapJsApi.amapJsApiStrings.polyline
+import typings.amapJsApi.anon.City
+import typings.amapJsApi.anon.Location
+import typings.amapJsApi.anon.PartialStatus
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.Map")
 @js.native
-class Map_ protected () extends EventEmitter {
-  /**
-    * 构造一个地图对象
-    * @param container 地图容器的id或者是DOM元素
-    * @param opts 选项
-    */
-  def this(container: String) = this()
-  def this(container: HTMLElement) = this()
-  def this(container: String, opts: Options) = this()
-  def this(container: HTMLElement, opts: Options) = this()
+trait Map_ extends EventEmitter {
   def add(overlay: js.Array[Overlay[_]]): Unit = js.native
   /**
     * 添加覆盖物/图层
@@ -67,7 +56,7 @@ class Map_ protected () extends EventEmitter {
     * 唤起高德地图客户端marker详情页
     * @param obj 唤起参数
     */
-  def detailOnAMAP(obj: AnonLocation): Unit = js.native
+  def detailOnAMAP(obj: Location): Unit = js.native
   def geodeticCoordToLngLat(pixel: Pixel): LngLat = js.native
   /**
     * 返回添加的覆盖物对象
@@ -93,7 +82,7 @@ class Map_ protected () extends EventEmitter {
   /**
     * 获取地图中心点所在区域
     */
-  def getCity(callback: js.Function1[/* cityData */ AnonCity, Unit]): Unit = js.native
+  def getCity(callback: js.Function1[/* cityData */ City, Unit]): Unit = js.native
   /**
     * 返回地图对象的容器
     */
@@ -209,7 +198,7 @@ class Map_ protected () extends EventEmitter {
     * 唤起高德地图客户端marker页
     * @param obj 唤起参数
     */
-  def poiOnAMAP(obj: AnonLocation): Unit = js.native
+  def poiOnAMAP(obj: Location): Unit = js.native
   def remove(overlay: js.Array[Overlay[_]]): Unit = js.native
   /**
     * 删除覆盖物/图层

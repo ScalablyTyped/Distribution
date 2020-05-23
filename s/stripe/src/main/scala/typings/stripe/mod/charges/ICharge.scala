@@ -1,8 +1,8 @@
 package typings.stripe.mod.charges
 
-import typings.stripe.AnonAddress
-import typings.stripe.AnonDestination
-import typings.stripe.AnonStripereport
+import typings.stripe.anon.Address
+import typings.stripe.anon.Destination
+import typings.stripe.anon.Stripereport
 import typings.stripe.mod.IMetadata
 import typings.stripe.mod.IResourceObject
 import typings.stripe.mod.IShippingInformation
@@ -61,7 +61,7 @@ trait ICharge extends IResourceObject {
   /**
     * Billing information associated with the payment method at the time of the transaction.
     */
-  var billing_details: js.UndefOr[AnonAddress | Null] = js.undefined
+  var billing_details: js.UndefOr[Address | Null] = js.undefined
   /**
     * If the charge was created without capturing, this boolean represents whether or not it is
     * still uncaptured or has since been captured.
@@ -101,7 +101,7 @@ trait ICharge extends IResourceObject {
   /**
     * Hash with information on fraud assessments for the charge.
     */
-  var fraud_details: AnonStripereport
+  var fraud_details: Stripereport
   /**
     * ID of the invoice this charge is for if one exists. [Expandable]
     */
@@ -213,7 +213,7 @@ trait ICharge extends IResourceObject {
     * An optional dictionary including the account to automatically transfer
     * to as part of a destination charge. See the Connect documentation for details.
     */
-  var transfer_data: js.UndefOr[AnonDestination | Null] = js.undefined
+  var transfer_data: js.UndefOr[Destination | Null] = js.undefined
   /**
     * A string that identifies this transaction as part of a group.
     * See the [Connect documentation]
@@ -232,7 +232,7 @@ object ICharge {
     captured: Boolean,
     created: Double,
     currency: String,
-    fraud_details: AnonStripereport,
+    fraud_details: Stripereport,
     id: String,
     livemode: Boolean,
     metadata: IMetadata,
@@ -242,18 +242,18 @@ object ICharge {
     refunded: Boolean,
     refunds: IChargeRefunds,
     status: succeeded | pending | failed,
-    application: String | IApplication = null,
-    application_fee: String | IApplicationFee = null,
-    application_fee_amount: Int | Double = null,
-    billing_details: AnonAddress = null,
+    application: js.UndefOr[Null | String | IApplication] = js.undefined,
+    application_fee: js.UndefOr[Null | String | IApplicationFee] = js.undefined,
+    application_fee_amount: js.UndefOr[Null | Double] = js.undefined,
+    billing_details: js.UndefOr[Null | Address] = js.undefined,
     customer: String | ICustomer = null,
     description: String = null,
-    destination: String | IAccount = null,
-    dispute: String | IDispute = null,
+    destination: js.UndefOr[Null | String | IAccount] = js.undefined,
+    dispute: js.UndefOr[Null | String | IDispute] = js.undefined,
     failure_code: String = null,
     failure_message: String = null,
     invoice: String | IInvoice = null,
-    on_behalf_of: String = null,
+    on_behalf_of: js.UndefOr[Null | String] = js.undefined,
     order: String | IOrder = null,
     outcome: IOutcome = null,
     payment_intent: String = null,
@@ -261,46 +261,34 @@ object ICharge {
     payment_method_details: IPaymentMethodDetails = null,
     receipt_email: String = null,
     receipt_number: String = null,
-    review: String | IReview = null,
-    shipping: IShippingInformation = null,
+    review: js.UndefOr[Null | String | IReview] = js.undefined,
+    shipping: js.UndefOr[Null | IShippingInformation] = js.undefined,
     source: IStripeSource = null,
     source_transfer: String | ITransfer = null,
     statement_descriptor: String = null,
-    statement_descriptor_suffix: String = null,
+    statement_descriptor_suffix: js.UndefOr[Null | String] = js.undefined,
     transfer: String | ITransfer = null,
-    transfer_data: AnonDestination = null,
-    transfer_group: String = null
+    transfer_data: js.UndefOr[Null | Destination] = js.undefined,
+    transfer_group: js.UndefOr[Null | String] = js.undefined
   ): ICharge = {
-    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], amount_refunded = amount_refunded.asInstanceOf[js.Any], balance_transaction = balance_transaction.asInstanceOf[js.Any], captured = captured.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], fraud_details = fraud_details.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], paid = paid.asInstanceOf[js.Any], receipt_url = receipt_url.asInstanceOf[js.Any], refunded = refunded.asInstanceOf[js.Any], refunds = refunds.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], amount_refunded = amount_refunded.asInstanceOf[js.Any], balance_transaction = balance_transaction.asInstanceOf[js.Any], captured = captured.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], fraud_details = fraud_details.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], paid = paid.asInstanceOf[js.Any], receipt_url = receipt_url.asInstanceOf[js.Any], refunded = refunded.asInstanceOf[js.Any], refunds = refunds.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], failure_code = failure_code.asInstanceOf[js.Any], failure_message = failure_message.asInstanceOf[js.Any], invoice = invoice.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], payment_method = payment_method.asInstanceOf[js.Any], payment_method_details = payment_method_details.asInstanceOf[js.Any], receipt_email = receipt_email.asInstanceOf[js.Any], receipt_number = receipt_number.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], source_transfer = source_transfer.asInstanceOf[js.Any], statement_descriptor = statement_descriptor.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
-    if (application_fee != null) __obj.updateDynamic("application_fee")(application_fee.asInstanceOf[js.Any])
-    if (application_fee_amount != null) __obj.updateDynamic("application_fee_amount")(application_fee_amount.asInstanceOf[js.Any])
-    if (billing_details != null) __obj.updateDynamic("billing_details")(billing_details.asInstanceOf[js.Any])
-    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
+    if (!js.isUndefined(application)) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
+    if (!js.isUndefined(application_fee)) __obj.updateDynamic("application_fee")(application_fee.asInstanceOf[js.Any])
+    if (!js.isUndefined(application_fee_amount)) __obj.updateDynamic("application_fee_amount")(application_fee_amount.asInstanceOf[js.Any])
+    if (!js.isUndefined(billing_details)) __obj.updateDynamic("billing_details")(billing_details.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    if (dispute != null) __obj.updateDynamic("dispute")(dispute.asInstanceOf[js.Any])
-    if (failure_code != null) __obj.updateDynamic("failure_code")(failure_code.asInstanceOf[js.Any])
-    if (failure_message != null) __obj.updateDynamic("failure_message")(failure_message.asInstanceOf[js.Any])
-    if (invoice != null) __obj.updateDynamic("invoice")(invoice.asInstanceOf[js.Any])
-    if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (!js.isUndefined(destination)) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    if (!js.isUndefined(dispute)) __obj.updateDynamic("dispute")(dispute.asInstanceOf[js.Any])
+    if (!js.isUndefined(on_behalf_of)) __obj.updateDynamic("on_behalf_of")(on_behalf_of.asInstanceOf[js.Any])
     if (outcome != null) __obj.updateDynamic("outcome")(outcome.asInstanceOf[js.Any])
     if (payment_intent != null) __obj.updateDynamic("payment_intent")(payment_intent.asInstanceOf[js.Any])
-    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
-    if (payment_method_details != null) __obj.updateDynamic("payment_method_details")(payment_method_details.asInstanceOf[js.Any])
-    if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email.asInstanceOf[js.Any])
-    if (receipt_number != null) __obj.updateDynamic("receipt_number")(receipt_number.asInstanceOf[js.Any])
-    if (review != null) __obj.updateDynamic("review")(review.asInstanceOf[js.Any])
-    if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (source_transfer != null) __obj.updateDynamic("source_transfer")(source_transfer.asInstanceOf[js.Any])
-    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor.asInstanceOf[js.Any])
-    if (statement_descriptor_suffix != null) __obj.updateDynamic("statement_descriptor_suffix")(statement_descriptor_suffix.asInstanceOf[js.Any])
+    if (!js.isUndefined(review)) __obj.updateDynamic("review")(review.asInstanceOf[js.Any])
+    if (!js.isUndefined(shipping)) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
+    if (!js.isUndefined(statement_descriptor_suffix)) __obj.updateDynamic("statement_descriptor_suffix")(statement_descriptor_suffix.asInstanceOf[js.Any])
     if (transfer != null) __obj.updateDynamic("transfer")(transfer.asInstanceOf[js.Any])
-    if (transfer_data != null) __obj.updateDynamic("transfer_data")(transfer_data.asInstanceOf[js.Any])
-    if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group.asInstanceOf[js.Any])
+    if (!js.isUndefined(transfer_data)) __obj.updateDynamic("transfer_data")(transfer_data.asInstanceOf[js.Any])
+    if (!js.isUndefined(transfer_group)) __obj.updateDynamic("transfer_group")(transfer_group.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICharge]
   }
 }

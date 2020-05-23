@@ -1,6 +1,6 @@
 package typings.antdMobile.progressMod
 
-import typings.antdMobile.AnonAppearTransition
+import typings.antdMobile.anon.AppearTransition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends Progress
 @JSImport("antd-mobile/lib/progress", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonAppearTransition = js.native
+  var defaultProps: AppearTransition = js.native
 }
 

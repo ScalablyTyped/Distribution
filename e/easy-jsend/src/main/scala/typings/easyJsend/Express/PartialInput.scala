@@ -13,9 +13,9 @@ trait PartialInput extends js.Object {
 
 object PartialInput {
   @scala.inline
-  def apply(count: Double, data: js.Any, offset: Double, limit: Int | Double = null): PartialInput = {
+  def apply(count: Double, data: js.Any, offset: Double, limit: js.UndefOr[Double] = js.undefined): PartialInput = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialInput]
   }
 }

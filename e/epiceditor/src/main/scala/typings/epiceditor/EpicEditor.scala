@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("EpicEditor")
 @js.native
-class EpicEditor () extends js.Object {
-  def this(options: EpicEditorOptions) = this()
+trait EpicEditor extends js.Object {
   def edit(): Unit = js.native
   def emit(event: String): Unit = js.native
   def enterFullscreen(): Unit = js.native

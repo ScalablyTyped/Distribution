@@ -63,8 +63,8 @@ object GeoprocessorProperties {
     if (processExtent != null) __obj.updateDynamic("processExtent")(processExtent.asInstanceOf[js.Any])
     if (processSpatialReference != null) __obj.updateDynamic("processSpatialReference")(processSpatialReference.asInstanceOf[js.Any])
     if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnM)) __obj.updateDynamic("returnM")(returnM.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnZ)) __obj.updateDynamic("returnZ")(returnZ.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnM)) __obj.updateDynamic("returnM")(returnM.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnZ)) __obj.updateDynamic("returnZ")(returnZ.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoprocessorProperties]
   }

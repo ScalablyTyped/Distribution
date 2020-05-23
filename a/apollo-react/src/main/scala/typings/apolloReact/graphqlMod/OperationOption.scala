@@ -26,7 +26,7 @@ object OperationOption {
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (props != null) __obj.updateDynamic("props")(js.Any.fromFunction1(props))
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
-    if (!js.isUndefined(withRef)) __obj.updateDynamic("withRef")(withRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(withRef)) __obj.updateDynamic("withRef")(withRef.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationOption]
   }
 }

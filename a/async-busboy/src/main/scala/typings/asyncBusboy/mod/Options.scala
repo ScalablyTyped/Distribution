@@ -1,6 +1,6 @@
 package typings.asyncBusboy.mod
 
-import typings.busboy.AnonFieldNameSize
+import typings.busboy.anon.FieldNameSize
 import typings.busboy.busboy.BusboyConfig
 import typings.node.NodeJS.ReadableStream
 import scala.scalajs.js
@@ -16,19 +16,19 @@ object Options {
   def apply(
     onFile: (String, ReadableStream, String, String, String) => Unit,
     defCharset: String = null,
-    fileHwm: Int | Double = null,
+    fileHwm: js.UndefOr[Double] = js.undefined,
     headers: js.Any = null,
-    highWaterMark: Int | Double = null,
-    limits: AnonFieldNameSize = null,
+    highWaterMark: js.UndefOr[Double] = js.undefined,
+    limits: FieldNameSize = null,
     preservePath: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal(onFile = js.Any.fromFunction5(onFile))
     if (defCharset != null) __obj.updateDynamic("defCharset")(defCharset.asInstanceOf[js.Any])
-    if (fileHwm != null) __obj.updateDynamic("fileHwm")(fileHwm.asInstanceOf[js.Any])
+    if (!js.isUndefined(fileHwm)) __obj.updateDynamic("fileHwm")(fileHwm.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
+    if (!js.isUndefined(highWaterMark)) __obj.updateDynamic("highWaterMark")(highWaterMark.get.asInstanceOf[js.Any])
     if (limits != null) __obj.updateDynamic("limits")(limits.asInstanceOf[js.Any])
-    if (!js.isUndefined(preservePath)) __obj.updateDynamic("preservePath")(preservePath.asInstanceOf[js.Any])
+    if (!js.isUndefined(preservePath)) __obj.updateDynamic("preservePath")(preservePath.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

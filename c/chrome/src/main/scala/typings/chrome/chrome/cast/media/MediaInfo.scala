@@ -4,23 +4,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("chrome.cast.media.MediaInfo")
-@js.native
-class MediaInfo protected () extends js.Object {
-  /**
-    * @param {string} contentId
-    * @param {string} contentType
-    * @constructor
-    * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.MediaInfo
-    */
-  def this(contentId: String, contentType: String) = this()
-  var contentId: String = js.native
-  var contentType: String = js.native
-  var customData: js.Object = js.native
-  var duration: Double = js.native
-  var metadata: js.Object = js.native
-  var streamType: StreamType = js.native
-  var textTrackStyle: TextTrackStyle = js.native
-  var tracks: js.Array[Track] = js.native
+trait MediaInfo extends js.Object {
+  var contentId: String
+  var contentType: String
+  var customData: js.Object
+  var duration: Double
+  var metadata: js.Any
+  var streamType: StreamType
+  var textTrackStyle: TextTrackStyle
+  var tracks: js.Array[Track]
+}
+
+object MediaInfo {
+  @scala.inline
+  def apply(
+    contentId: String,
+    contentType: String,
+    customData: js.Object,
+    duration: Double,
+    metadata: js.Any,
+    streamType: StreamType,
+    textTrackStyle: TextTrackStyle,
+    tracks: js.Array[Track]
+  ): MediaInfo = {
+    val __obj = js.Dynamic.literal(contentId = contentId.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], customData = customData.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], streamType = streamType.asInstanceOf[js.Any], textTrackStyle = textTrackStyle.asInstanceOf[js.Any], tracks = tracks.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MediaInfo]
+  }
 }
 

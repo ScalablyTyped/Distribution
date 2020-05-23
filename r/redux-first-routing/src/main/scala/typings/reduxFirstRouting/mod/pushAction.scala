@@ -15,7 +15,7 @@ trait pushAction[T /* <: Path | LocationDescriptorObject[LocationState] */] exte
 
 object pushAction {
   @scala.inline
-  def apply[T /* <: Path | LocationDescriptorObject[LocationState] */](payload: T, `type`: ROUTERSlashPUSH): pushAction[T] = {
+  def apply[T](payload: T, `type`: ROUTERSlashPUSH): pushAction[T] = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[pushAction[T]]

@@ -1,8 +1,8 @@
 package typings.combokeys.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.combokeys.Combokeys_.Combokeys
-import typings.combokeys.Combokeys_.CombokeysStatic
+import typings.combokeys.Combokeys.Combokeys
+import typings.combokeys.Combokeys.CombokeysStatic
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

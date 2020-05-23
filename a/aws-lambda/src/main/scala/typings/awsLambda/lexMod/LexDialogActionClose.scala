@@ -1,7 +1,7 @@
 package typings.awsLambda.lexMod
 
-import typings.awsLambda.AnonContent
-import typings.awsLambda.AnonContentType
+import typings.awsLambda.anon.Content
+import typings.awsLambda.anon.ContentType
 import typings.awsLambda.awsLambdaStrings.Close
 import typings.awsLambda.awsLambdaStrings.Failed_
 import typings.awsLambda.awsLambdaStrings.Fulfilled
@@ -22,8 +22,8 @@ object LexDialogActionClose {
   def apply(
     fulfillmentState: Fulfilled | Failed_,
     `type`: Close,
-    message: AnonContent = null,
-    responseCard: AnonContentType = null
+    message: Content = null,
+    responseCard: ContentType = null
   ): LexDialogActionClose = {
     val __obj = js.Dynamic.literal(fulfillmentState = fulfillmentState.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

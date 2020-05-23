@@ -1,7 +1,7 @@
 package typings.jupyterlabServices.contentsMod.Contents
 
 import typings.jupyterlabObservables.modeldbMod.ModelDB.IFactory
-import typings.jupyterlabServices.PartialIModel
+import typings.jupyterlabServices.anon.PartialIModel
 import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
 import typings.luminoDisposable.mod.IDisposable
 import typings.luminoSignaling.mod.ISignal

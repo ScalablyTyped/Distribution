@@ -20,10 +20,10 @@ trait ReportedParallelism extends js.Object {
 
 object ReportedParallelism {
   @scala.inline
-  def apply(isInfinite: js.UndefOr[Boolean] = js.undefined, value: Int | Double = null): ReportedParallelism = {
+  def apply(isInfinite: js.UndefOr[Boolean] = js.undefined, value: js.UndefOr[Double] = js.undefined): ReportedParallelism = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isInfinite)) __obj.updateDynamic("isInfinite")(isInfinite.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInfinite)) __obj.updateDynamic("isInfinite")(isInfinite.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportedParallelism]
   }
 }

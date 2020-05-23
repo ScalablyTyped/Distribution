@@ -1,6 +1,6 @@
 package typings.xrm.Xrm.ProcessFlow
 
-import typings.xrm.AnonGetValue
+import typings.xrm.anon.GetValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait Stage extends js.Object {
     * category.
     * @returns The stage category.
     */
-  def getCategory(): AnonGetValue
+  def getCategory(): GetValue
   /**
     * Returns the logical name of the entity associated with the stage.
     * @returns The entity name.
@@ -46,7 +46,7 @@ trait Stage extends js.Object {
 object Stage {
   @scala.inline
   def apply(
-    getCategory: () => AnonGetValue,
+    getCategory: () => GetValue,
     getEntityName: () => String,
     getId: () => String,
     getName: () => String,

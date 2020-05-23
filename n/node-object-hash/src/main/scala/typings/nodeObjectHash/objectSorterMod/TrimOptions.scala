@@ -22,8 +22,8 @@ object TrimOptions {
   @scala.inline
   def apply(function: js.UndefOr[Boolean] = js.undefined, string: js.UndefOr[Boolean] = js.undefined): TrimOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(function)) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
-    if (!js.isUndefined(string)) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
+    if (!js.isUndefined(function)) __obj.updateDynamic("function")(function.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(string)) __obj.updateDynamic("string")(string.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrimOptions]
   }
 }

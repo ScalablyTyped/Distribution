@@ -1,5 +1,6 @@
 package typings.blueprintjsCore
 
+import typings.blueprintjsCore.anon.DisplayName
 import typings.blueprintjsCore.constructorMod.IConstructor
 import typings.react.mod.Component
 import typings.react.mod.ReactElement
@@ -20,6 +21,6 @@ object hotkeysTargetMod extends js.Object {
     def renderHotkeys(): ReactElement = js.native
   }
   
-  def HotkeysTarget[T /* <: IConstructor[IHotkeysTargetComponent] */](WrappedComponent: T): AnonDisplayName with T = js.native
+  def HotkeysTarget[T /* <: IConstructor[IHotkeysTargetComponent] */](WrappedComponent: T): DisplayName with T = js.native
 }
 

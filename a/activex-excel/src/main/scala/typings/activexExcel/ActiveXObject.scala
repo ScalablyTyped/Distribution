@@ -165,6 +165,33 @@ import typings.activexExcel.activexExcelStrings.rgszNames
 import typings.activexExcel.activexExcelStrings.riid
 import typings.activexExcel.activexExcelStrings.x
 import typings.activexExcel.activexExcelStrings.y
+import typings.activexExcel.anon.CNames
+import typings.activexExcel.anon.CancelBoolean
+import typings.activexExcel.anon.CancelIsRefresh
+import typings.activexExcel.anon.CancelMap
+import typings.activexExcel.anon.CancelPvw
+import typings.activexExcel.anon.CancelSaveAsUI
+import typings.activexExcel.anon.CancelTarget
+import typings.activexExcel.anon.CancelTargetPivotTable
+import typings.activexExcel.anon.CancelWb
+import typings.activexExcel.anon.ChChart
+import typings.activexExcel.anon.IsRefreshMap
+import typings.activexExcel.anon.Itinfo
+import typings.activexExcel.anon.MapUrl
+import typings.activexExcel.anon.Pctinfo
+import typings.activexExcel.anon.PpvObj
+import typings.activexExcel.anon.ShTarget
+import typings.activexExcel.anon.ShWb
+import typings.activexExcel.anon.ShWorksheet
+import typings.activexExcel.anon.ShWorksheetTargetPivotTable
+import typings.activexExcel.anon.SuccessBoolean
+import typings.activexExcel.anon.SyncEventTypeMsoSyncEventType
+import typings.activexExcel.anon.TargetHyperlink
+import typings.activexExcel.anon.TargetPivotTableTargetRange
+import typings.activexExcel.anon.TargetPivotTableValueChangeEnd
+import typings.activexExcel.anon.TargetWb
+import typings.activexExcel.anon.WnWindow
+import typings.activexExcel.anon.`0`
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -176,703 +203,731 @@ trait ActiveXObject extends js.Object {
     obj: Application,
     event: GetIDsOfNames,
     argNames: js.Tuple5[riid, rgszNames, cNames, lcid, rgdispid],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonCNames, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ CNames, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: GetTypeInfoCount,
     argNames: js.Array[pctinfo],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonPctinfo, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ Pctinfo, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: GetTypeInfo,
     argNames: js.Tuple3[itinfo, lcid, pptinfo],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonItinfo, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ Itinfo, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: NewWorkbook,
     argNames: js.Array[Wb],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonWb, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexExcel.anon.Wb, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: ProtectedViewWindowActivate,
     argNames: js.Array[Pvw],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonPvw, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexExcel.anon.Pvw, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: ProtectedViewWindowBeforeClose,
     argNames: js.Tuple3[Pvw, Reason, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonCancel, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexExcel.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: ProtectedViewWindowBeforeEdit,
     argNames: js.Tuple2[Pvw, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonCancelPvw, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ CancelPvw, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: ProtectedViewWindowDeactivate,
     argNames: js.Array[Pvw],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonPvw, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexExcel.anon.Pvw, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: ProtectedViewWindowOpen,
     argNames: js.Array[Pvw],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonPvw, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexExcel.anon.Pvw, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: ProtectedViewWindowResize,
     argNames: js.Array[Pvw],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonPvw, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexExcel.anon.Pvw, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: QueryInterface,
     argNames: js.Tuple2[riid, ppvObj],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonPpvObj, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ PpvObj, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: SheetActivate,
     argNames: js.Array[Sh],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonSh, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexExcel.anon.Sh, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: SheetBeforeDoubleClick,
     argNames: js.Tuple3[Sh, Target, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonTarget, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexExcel.anon.Target, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: SheetBeforeRightClick,
     argNames: js.Tuple3[Sh, Target, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonTarget, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexExcel.anon.Target, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: SheetCalculate,
     argNames: js.Array[Sh],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonSh, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexExcel.anon.Sh, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: SheetChange,
     argNames: js.Tuple2[Sh, Target],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonShTarget, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ ShTarget, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: SheetDeactivate,
     argNames: js.Array[Sh],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonSh, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexExcel.anon.Sh, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: SheetFollowHyperlink,
     argNames: js.Tuple2[Sh, Target],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonShWorksheet, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ ShWorksheet, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: SheetPivotTableAfterValueChange,
     argNames: js.Tuple3[Sh, TargetPivotTable, TargetRange],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonTargetPivotTable, Unit]
+    handler: js.ThisFunction1[
+      /* this */ Application, 
+      /* parameter */ typings.activexExcel.anon.TargetPivotTable, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: Application,
     event: SheetPivotTableBeforeAllocateChanges,
     argNames: js.Tuple5[Sh, TargetPivotTable, ValueChangeStart, ValueChangeEnd, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonValueChangeEnd, Unit]
+    handler: js.ThisFunction1[
+      /* this */ Application, 
+      /* parameter */ typings.activexExcel.anon.ValueChangeEnd, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: Application,
     event: SheetPivotTableBeforeCommitChanges,
     argNames: js.Tuple5[Sh, TargetPivotTable, ValueChangeStart, ValueChangeEnd, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonValueChangeEnd, Unit]
+    handler: js.ThisFunction1[
+      /* this */ Application, 
+      /* parameter */ typings.activexExcel.anon.ValueChangeEnd, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: Application,
     event: SheetPivotTableBeforeDiscardChanges,
     argNames: js.Tuple4[Sh, TargetPivotTable, ValueChangeStart, ValueChangeEnd],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonValueChangeStart, Unit]
+    handler: js.ThisFunction1[
+      /* this */ Application, 
+      /* parameter */ typings.activexExcel.anon.ValueChangeStart, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: Application,
     event: SheetPivotTableUpdate,
     argNames: js.Tuple2[Sh, Target],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonShWorksheetTargetPivotTable, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ ShWorksheetTargetPivotTable, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: SheetSelectionChange,
     argNames: js.Tuple2[Sh, Target],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonShTarget, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ ShTarget, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WindowActivate,
     argNames: js.Tuple2[Wb, Wn],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonWn, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexExcel.anon.Wn, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WindowDeactivate,
     argNames: js.Tuple2[Wb, Wn],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonWn, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexExcel.anon.Wn, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WindowResize,
     argNames: js.Tuple2[Wb, Wn],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonWn, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexExcel.anon.Wn, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WorkbookActivate,
     argNames: js.Array[Wb],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonWb, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexExcel.anon.Wb, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WorkbookAddinInstall,
     argNames: js.Array[Wb],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonWb, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexExcel.anon.Wb, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WorkbookAddinUninstall,
     argNames: js.Array[Wb],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonWb, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexExcel.anon.Wb, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WorkbookAfterSave,
     argNames: js.Tuple2[Wb, Success],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonSuccess, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexExcel.anon.Success, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WorkbookAfterXmlExport,
     argNames: js.Tuple4[Wb, Map, Url, Result],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonMap, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexExcel.anon.Map, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WorkbookAfterXmlImport,
     argNames: js.Tuple4[Wb, Map, IsRefresh, Result],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonIsRefresh, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexExcel.anon.IsRefresh, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WorkbookBeforeClose,
     argNames: js.Tuple2[Wb, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonCancelWb, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ CancelWb, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WorkbookBeforePrint,
     argNames: js.Tuple2[Wb, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonCancelWb, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ CancelWb, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WorkbookBeforeSave,
     argNames: js.Tuple3[Wb, SaveAsUI, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonSaveAsUI, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexExcel.anon.SaveAsUI, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WorkbookBeforeXmlExport,
     argNames: js.Tuple4[Wb, Map, Url, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonUrl, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexExcel.anon.Url, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WorkbookBeforeXmlImport,
     argNames: js.Tuple5[Wb, Map, Url, IsRefresh, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonCancelIsRefresh, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ CancelIsRefresh, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WorkbookDeactivate,
     argNames: js.Array[Wb],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonWb, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexExcel.anon.Wb, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WorkbookNewChart,
     argNames: js.Tuple2[Wb, Ch],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonCh, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexExcel.anon.Ch, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WorkbookNewSheet,
     argNames: js.Tuple2[Wb, Sh],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonShWb, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ ShWb, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WorkbookOpen,
     argNames: js.Array[Wb],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonWb, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexExcel.anon.Wb, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WorkbookPivotTableCloseConnection,
     argNames: js.Tuple2[Wb, Target],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonTargetWb, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ TargetWb, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WorkbookPivotTableOpenConnection,
     argNames: js.Tuple2[Wb, Target],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonTargetWb, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ TargetWb, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WorkbookRowsetComplete,
     argNames: js.Tuple4[Wb, Description, Sheet, Success],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonDescription, Unit]
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexExcel.anon.Description, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
     event: WorkbookSync,
     argNames: js.Tuple2[Wb, SyncEventType],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ AnonSyncEventType, Unit]
+    handler: js.ThisFunction1[
+      /* this */ Application, 
+      /* parameter */ typings.activexExcel.anon.SyncEventType, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: Chart,
     event: BeforeDoubleClick,
     argNames: js.Tuple4[ElementID, Arg1, Arg2, Cancel],
-    handler: js.ThisFunction1[/* this */ Chart, /* parameter */ AnonArg1, Unit]
+    handler: js.ThisFunction1[/* this */ Chart, /* parameter */ typings.activexExcel.anon.Arg1, Unit]
   ): Unit = js.native
   def on(
     obj: Chart,
     event: BeforeRightClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ Chart, /* parameter */ AnonCancelBoolean, Unit]
+    handler: js.ThisFunction1[/* this */ Chart, /* parameter */ CancelBoolean, Unit]
   ): Unit = js.native
   def on(
     obj: Chart,
     event: GetIDsOfNames,
     argNames: js.Tuple5[riid, rgszNames, cNames, lcid, rgdispid],
-    handler: js.ThisFunction1[/* this */ Chart, /* parameter */ AnonCNames, Unit]
+    handler: js.ThisFunction1[/* this */ Chart, /* parameter */ CNames, Unit]
   ): Unit = js.native
   def on(
     obj: Chart,
     event: GetTypeInfoCount,
     argNames: js.Array[pctinfo],
-    handler: js.ThisFunction1[/* this */ Chart, /* parameter */ AnonPctinfo, Unit]
+    handler: js.ThisFunction1[/* this */ Chart, /* parameter */ Pctinfo, Unit]
   ): Unit = js.native
   def on(
     obj: Chart,
     event: GetTypeInfo,
     argNames: js.Tuple3[itinfo, lcid, pptinfo],
-    handler: js.ThisFunction1[/* this */ Chart, /* parameter */ AnonItinfo, Unit]
+    handler: js.ThisFunction1[/* this */ Chart, /* parameter */ Itinfo, Unit]
   ): Unit = js.native
   def on(
     obj: Chart,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, x, y],
-    handler: js.ThisFunction1[/* this */ Chart, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ Chart, /* parameter */ typings.activexExcel.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: Chart,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, x, y],
-    handler: js.ThisFunction1[/* this */ Chart, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ Chart, /* parameter */ typings.activexExcel.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: Chart,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, x, y],
-    handler: js.ThisFunction1[/* this */ Chart, /* parameter */ AnonButton, Unit]
+    handler: js.ThisFunction1[/* this */ Chart, /* parameter */ typings.activexExcel.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: Chart,
     event: QueryInterface,
     argNames: js.Tuple2[riid, ppvObj],
-    handler: js.ThisFunction1[/* this */ Chart, /* parameter */ AnonPpvObj, Unit]
+    handler: js.ThisFunction1[/* this */ Chart, /* parameter */ PpvObj, Unit]
   ): Unit = js.native
   def on(
     obj: Chart,
     event: Select,
     argNames: js.Tuple3[ElementID, Arg1, Arg2],
-    handler: js.ThisFunction1[/* this */ Chart, /* parameter */ AnonArg2, Unit]
+    handler: js.ThisFunction1[/* this */ Chart, /* parameter */ typings.activexExcel.anon.Arg2, Unit]
   ): Unit = js.native
   def on(
     obj: Chart,
     event: SeriesChange,
     argNames: js.Tuple2[SeriesIndex, PointIndex],
-    handler: js.ThisFunction1[/* this */ Chart, /* parameter */ AnonPointIndex, Unit]
+    handler: js.ThisFunction1[/* this */ Chart, /* parameter */ typings.activexExcel.anon.PointIndex, Unit]
   ): Unit = js.native
   def on(
     obj: OLEObject,
     event: GetIDsOfNames,
     argNames: js.Tuple5[riid, rgszNames, cNames, lcid, rgdispid],
-    handler: js.ThisFunction1[/* this */ OLEObject, /* parameter */ AnonCNames, Unit]
+    handler: js.ThisFunction1[/* this */ OLEObject, /* parameter */ CNames, Unit]
   ): Unit = js.native
   def on(
     obj: OLEObject,
     event: GetTypeInfoCount,
     argNames: js.Array[pctinfo],
-    handler: js.ThisFunction1[/* this */ OLEObject, /* parameter */ AnonPctinfo, Unit]
+    handler: js.ThisFunction1[/* this */ OLEObject, /* parameter */ Pctinfo, Unit]
   ): Unit = js.native
   def on(
     obj: OLEObject,
     event: GetTypeInfo,
     argNames: js.Tuple3[itinfo, lcid, pptinfo],
-    handler: js.ThisFunction1[/* this */ OLEObject, /* parameter */ AnonItinfo, Unit]
+    handler: js.ThisFunction1[/* this */ OLEObject, /* parameter */ Itinfo, Unit]
   ): Unit = js.native
   def on(
     obj: OLEObject,
     event: QueryInterface,
     argNames: js.Tuple2[riid, ppvObj],
-    handler: js.ThisFunction1[/* this */ OLEObject, /* parameter */ AnonPpvObj, Unit]
+    handler: js.ThisFunction1[/* this */ OLEObject, /* parameter */ PpvObj, Unit]
   ): Unit = js.native
   def on(
     obj: QueryTable,
     event: AfterRefresh,
     argNames: js.Array[Success],
-    handler: js.ThisFunction1[/* this */ QueryTable, /* parameter */ AnonSuccessBoolean, Unit]
+    handler: js.ThisFunction1[/* this */ QueryTable, /* parameter */ SuccessBoolean, Unit]
   ): Unit = js.native
   def on(
     obj: QueryTable,
     event: BeforeRefresh,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ QueryTable, /* parameter */ AnonCancelBoolean, Unit]
+    handler: js.ThisFunction1[/* this */ QueryTable, /* parameter */ CancelBoolean, Unit]
   ): Unit = js.native
   def on(
     obj: QueryTable,
     event: GetIDsOfNames,
     argNames: js.Tuple5[riid, rgszNames, cNames, lcid, rgdispid],
-    handler: js.ThisFunction1[/* this */ QueryTable, /* parameter */ AnonCNames, Unit]
+    handler: js.ThisFunction1[/* this */ QueryTable, /* parameter */ CNames, Unit]
   ): Unit = js.native
   def on(
     obj: QueryTable,
     event: GetTypeInfoCount,
     argNames: js.Array[pctinfo],
-    handler: js.ThisFunction1[/* this */ QueryTable, /* parameter */ AnonPctinfo, Unit]
+    handler: js.ThisFunction1[/* this */ QueryTable, /* parameter */ Pctinfo, Unit]
   ): Unit = js.native
   def on(
     obj: QueryTable,
     event: GetTypeInfo,
     argNames: js.Tuple3[itinfo, lcid, pptinfo],
-    handler: js.ThisFunction1[/* this */ QueryTable, /* parameter */ AnonItinfo, Unit]
+    handler: js.ThisFunction1[/* this */ QueryTable, /* parameter */ Itinfo, Unit]
   ): Unit = js.native
   def on(
     obj: QueryTable,
     event: QueryInterface,
     argNames: js.Tuple2[riid, ppvObj],
-    handler: js.ThisFunction1[/* this */ QueryTable, /* parameter */ AnonPpvObj, Unit]
+    handler: js.ThisFunction1[/* this */ QueryTable, /* parameter */ PpvObj, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: AfterSave,
     argNames: js.Array[Success],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonSuccessBoolean, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ SuccessBoolean, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: AfterXmlExport,
     argNames: js.Tuple3[Map, Url, Result],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonResult, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ typings.activexExcel.anon.Result, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: AfterXmlImport,
     argNames: js.Tuple3[Map, IsRefresh, Result],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonIsRefreshMap, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ IsRefreshMap, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: BeforeClose,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonCancelBoolean, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ CancelBoolean, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: BeforePrint,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonCancelBoolean, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ CancelBoolean, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: BeforeSave,
     argNames: js.Tuple2[SaveAsUI, Cancel],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonCancelSaveAsUI, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ CancelSaveAsUI, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: BeforeXmlExport,
     argNames: js.Tuple3[Map, Url, Cancel],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonCancelMap, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ CancelMap, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: BeforeXmlImport,
     argNames: js.Tuple4[Map, Url, IsRefresh, Cancel],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonMapUrl, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ MapUrl, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: GetIDsOfNames,
     argNames: js.Tuple5[riid, rgszNames, cNames, lcid, rgdispid],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonCNames, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ CNames, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: GetTypeInfoCount,
     argNames: js.Array[pctinfo],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonPctinfo, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ Pctinfo, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: GetTypeInfo,
     argNames: js.Tuple3[itinfo, lcid, pptinfo],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonItinfo, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ Itinfo, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: NewChart,
     argNames: js.Array[Ch],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonChChart, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ ChChart, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: NewSheet,
     argNames: js.Array[Sh],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonSh, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ typings.activexExcel.anon.Sh, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: PivotTableCloseConnection,
     argNames: js.Array[Target],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ Anon0, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ `0`, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: PivotTableOpenConnection,
     argNames: js.Array[Target],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ Anon0, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ `0`, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: QueryInterface,
     argNames: js.Tuple2[riid, ppvObj],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonPpvObj, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ PpvObj, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: RowsetComplete,
     argNames: js.Tuple3[Description, Sheet, Success],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonSheet, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ typings.activexExcel.anon.Sheet, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: SheetActivate,
     argNames: js.Array[Sh],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonSh, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ typings.activexExcel.anon.Sh, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: SheetBeforeDoubleClick,
     argNames: js.Tuple3[Sh, Target, Cancel],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonTarget, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ typings.activexExcel.anon.Target, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: SheetBeforeRightClick,
     argNames: js.Tuple3[Sh, Target, Cancel],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonTarget, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ typings.activexExcel.anon.Target, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: SheetCalculate,
     argNames: js.Array[Sh],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonSh, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ typings.activexExcel.anon.Sh, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: SheetChange,
     argNames: js.Tuple2[Sh, Target],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonShTarget, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ ShTarget, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: SheetDeactivate,
     argNames: js.Array[Sh],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonSh, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ typings.activexExcel.anon.Sh, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: SheetFollowHyperlink,
     argNames: js.Tuple2[Sh, Target],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonShWorksheet, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ ShWorksheet, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: SheetPivotTableAfterValueChange,
     argNames: js.Tuple3[Sh, TargetPivotTable, TargetRange],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonTargetPivotTable, Unit]
+    handler: js.ThisFunction1[
+      /* this */ Workbook, 
+      /* parameter */ typings.activexExcel.anon.TargetPivotTable, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: SheetPivotTableBeforeAllocateChanges,
     argNames: js.Tuple5[Sh, TargetPivotTable, ValueChangeStart, ValueChangeEnd, Cancel],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonValueChangeEnd, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ typings.activexExcel.anon.ValueChangeEnd, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: SheetPivotTableBeforeCommitChanges,
     argNames: js.Tuple5[Sh, TargetPivotTable, ValueChangeStart, ValueChangeEnd, Cancel],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonValueChangeEnd, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ typings.activexExcel.anon.ValueChangeEnd, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: SheetPivotTableBeforeDiscardChanges,
     argNames: js.Tuple4[Sh, TargetPivotTable, ValueChangeStart, ValueChangeEnd],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonValueChangeStart, Unit]
+    handler: js.ThisFunction1[
+      /* this */ Workbook, 
+      /* parameter */ typings.activexExcel.anon.ValueChangeStart, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: SheetPivotTableChangeSync,
     argNames: js.Tuple2[Sh, Target],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonShWorksheetTargetPivotTable, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ ShWorksheetTargetPivotTable, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: SheetPivotTableUpdate,
     argNames: js.Tuple2[Sh, Target],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonShWorksheetTargetPivotTable, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ ShWorksheetTargetPivotTable, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: SheetSelectionChange,
     argNames: js.Tuple2[Sh, Target],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonShTarget, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ ShTarget, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: Sync,
     argNames: js.Array[SyncEventType],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonSyncEventTypeMsoSyncEventType, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ SyncEventTypeMsoSyncEventType, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: WindowActivate,
     argNames: js.Array[Wn],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonWnWindow, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ WnWindow, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: WindowDeactivate,
     argNames: js.Array[Wn],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonWnWindow, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ WnWindow, Unit]
   ): Unit = js.native
   def on(
     obj: Workbook,
     event: WindowResize,
     argNames: js.Array[Wn],
-    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ AnonWnWindow, Unit]
+    handler: js.ThisFunction1[/* this */ Workbook, /* parameter */ WnWindow, Unit]
   ): Unit = js.native
   def on(
     obj: Worksheet,
     event: BeforeDoubleClick,
     argNames: js.Tuple2[Target, Cancel],
-    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ AnonCancelTarget, Unit]
+    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ CancelTarget, Unit]
   ): Unit = js.native
   def on(
     obj: Worksheet,
     event: BeforeRightClick,
     argNames: js.Tuple2[Target, Cancel],
-    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ AnonCancelTarget, Unit]
+    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ CancelTarget, Unit]
   ): Unit = js.native
   def on(
     obj: Worksheet,
     event: Change,
     argNames: js.Array[Target],
-    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ AnonTargetRange, Unit]
+    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ typings.activexExcel.anon.TargetRange, Unit]
   ): Unit = js.native
   def on(
     obj: Worksheet,
     event: FollowHyperlink,
     argNames: js.Array[Target],
-    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ AnonTargetHyperlink, Unit]
+    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ TargetHyperlink, Unit]
   ): Unit = js.native
   def on(
     obj: Worksheet,
     event: GetIDsOfNames,
     argNames: js.Tuple5[riid, rgszNames, cNames, lcid, rgdispid],
-    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ AnonCNames, Unit]
+    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ CNames, Unit]
   ): Unit = js.native
   def on(
     obj: Worksheet,
     event: GetTypeInfoCount,
     argNames: js.Array[pctinfo],
-    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ AnonPctinfo, Unit]
+    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ Pctinfo, Unit]
   ): Unit = js.native
   def on(
     obj: Worksheet,
     event: GetTypeInfo,
     argNames: js.Tuple3[itinfo, lcid, pptinfo],
-    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ AnonItinfo, Unit]
+    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ Itinfo, Unit]
   ): Unit = js.native
   def on(
     obj: Worksheet,
     event: PivotTableAfterValueChange,
     argNames: js.Tuple2[TargetPivotTable, TargetRange],
-    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ AnonTargetPivotTableTargetRange, Unit]
+    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ TargetPivotTableTargetRange, Unit]
   ): Unit = js.native
   def on(
     obj: Worksheet,
     event: PivotTableBeforeAllocateChanges,
     argNames: js.Tuple4[TargetPivotTable, ValueChangeStart, ValueChangeEnd, Cancel],
-    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ AnonCancelTargetPivotTable, Unit]
+    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ CancelTargetPivotTable, Unit]
   ): Unit = js.native
   def on(
     obj: Worksheet,
     event: PivotTableBeforeCommitChanges,
     argNames: js.Tuple4[TargetPivotTable, ValueChangeStart, ValueChangeEnd, Cancel],
-    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ AnonCancelTargetPivotTable, Unit]
+    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ CancelTargetPivotTable, Unit]
   ): Unit = js.native
   def on(
     obj: Worksheet,
     event: PivotTableBeforeDiscardChanges,
     argNames: js.Tuple3[TargetPivotTable, ValueChangeStart, ValueChangeEnd],
-    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ AnonTargetPivotTableValueChangeEnd, Unit]
+    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ TargetPivotTableValueChangeEnd, Unit]
   ): Unit = js.native
   def on(
     obj: Worksheet,
     event: PivotTableChangeSync,
     argNames: js.Array[Target],
-    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ Anon0, Unit]
+    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ `0`, Unit]
   ): Unit = js.native
   def on(
     obj: Worksheet,
     event: PivotTableUpdate,
     argNames: js.Array[Target],
-    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ Anon0, Unit]
+    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ `0`, Unit]
   ): Unit = js.native
   def on(
     obj: Worksheet,
     event: QueryInterface,
     argNames: js.Tuple2[riid, ppvObj],
-    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ AnonPpvObj, Unit]
+    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ PpvObj, Unit]
   ): Unit = js.native
   def on(
     obj: Worksheet,
     event: SelectionChange,
     argNames: js.Array[Target],
-    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ AnonTargetRange, Unit]
+    handler: js.ThisFunction1[/* this */ Worksheet, /* parameter */ typings.activexExcel.anon.TargetRange, Unit]
   ): Unit = js.native
   @JSName("on")
   def on_Activate(

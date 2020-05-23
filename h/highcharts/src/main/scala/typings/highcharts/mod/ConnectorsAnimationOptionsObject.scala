@@ -12,7 +12,7 @@ object ConnectorsAnimationOptionsObject {
   @scala.inline
   def apply(reversed: js.UndefOr[Boolean] = js.undefined): ConnectorsAnimationOptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.asInstanceOf[js.Any])
+    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectorsAnimationOptionsObject]
   }
 }

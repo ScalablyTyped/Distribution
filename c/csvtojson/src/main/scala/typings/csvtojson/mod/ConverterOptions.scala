@@ -112,37 +112,37 @@ object ConverterOptions {
     eol: String = null,
     escape: String = null,
     flatKeys: js.UndefOr[Boolean] = js.undefined,
-    fork: Int | Double = null,
+    fork: js.UndefOr[Double] = js.undefined,
     headers: js.Array[String] = null,
     ignoreColumns: js.Array[Double] = null,
     ignoreEmpty: js.UndefOr[Boolean] = js.undefined,
     includeColumns: js.Array[Double] = null,
-    maxRowLength: Int | Double = null,
+    maxRowLength: js.UndefOr[Double] = js.undefined,
     noheader: js.UndefOr[Boolean] = js.undefined,
     quote: String = null,
     toArrayString: js.UndefOr[Boolean] = js.undefined,
     trim: js.UndefOr[Boolean] = js.undefined,
-    workerNum: Int | Double = null
+    workerNum: js.UndefOr[Double] = js.undefined
   ): ConverterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkColumn)) __obj.updateDynamic("checkColumn")(checkColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkType)) __obj.updateDynamic("checkType")(checkType.asInstanceOf[js.Any])
-    if (!js.isUndefined(constructResult)) __obj.updateDynamic("constructResult")(constructResult.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkColumn)) __obj.updateDynamic("checkColumn")(checkColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkType)) __obj.updateDynamic("checkType")(checkType.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(constructResult)) __obj.updateDynamic("constructResult")(constructResult.get.asInstanceOf[js.Any])
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     if (eol != null) __obj.updateDynamic("eol")(eol.asInstanceOf[js.Any])
     if (escape != null) __obj.updateDynamic("escape")(escape.asInstanceOf[js.Any])
-    if (!js.isUndefined(flatKeys)) __obj.updateDynamic("flatKeys")(flatKeys.asInstanceOf[js.Any])
-    if (fork != null) __obj.updateDynamic("fork")(fork.asInstanceOf[js.Any])
+    if (!js.isUndefined(flatKeys)) __obj.updateDynamic("flatKeys")(flatKeys.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fork)) __obj.updateDynamic("fork")(fork.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (ignoreColumns != null) __obj.updateDynamic("ignoreColumns")(ignoreColumns.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreEmpty)) __obj.updateDynamic("ignoreEmpty")(ignoreEmpty.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreEmpty)) __obj.updateDynamic("ignoreEmpty")(ignoreEmpty.get.asInstanceOf[js.Any])
     if (includeColumns != null) __obj.updateDynamic("includeColumns")(includeColumns.asInstanceOf[js.Any])
-    if (maxRowLength != null) __obj.updateDynamic("maxRowLength")(maxRowLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(noheader)) __obj.updateDynamic("noheader")(noheader.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRowLength)) __obj.updateDynamic("maxRowLength")(maxRowLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noheader)) __obj.updateDynamic("noheader")(noheader.get.asInstanceOf[js.Any])
     if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
-    if (!js.isUndefined(toArrayString)) __obj.updateDynamic("toArrayString")(toArrayString.asInstanceOf[js.Any])
-    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
-    if (workerNum != null) __obj.updateDynamic("workerNum")(workerNum.asInstanceOf[js.Any])
+    if (!js.isUndefined(toArrayString)) __obj.updateDynamic("toArrayString")(toArrayString.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workerNum)) __obj.updateDynamic("workerNum")(workerNum.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConverterOptions]
   }
 }

@@ -109,40 +109,40 @@ object Options {
   @scala.inline
   def apply(
     arithmetic: js.UndefOr[Boolean] = js.undefined,
-    dcScanOpt: Int | Double = null,
+    dcScanOpt: js.UndefOr[Double] = js.undefined,
     dct: int | fast | float = null,
     fastCrush: js.UndefOr[Boolean] = js.undefined,
-    maxMemory: Int | Double = null,
+    maxMemory: js.UndefOr[Double] = js.undefined,
     overshoot: js.UndefOr[Boolean] = js.undefined,
     progressive: js.UndefOr[Boolean] = js.undefined,
-    quality: Int | Double = null,
+    quality: js.UndefOr[Double] = js.undefined,
     quantBaseline: js.UndefOr[Boolean] = js.undefined,
-    quantTable: Int | Double = null,
+    quantTable: js.UndefOr[Double] = js.undefined,
     revert: js.UndefOr[Boolean] = js.undefined,
     sample: js.Array[String] = null,
-    smooth: Int | Double = null,
+    smooth: js.UndefOr[Double] = js.undefined,
     targa: js.UndefOr[Boolean] = js.undefined,
     trellis: js.UndefOr[Boolean] = js.undefined,
     trellisDC: js.UndefOr[Boolean] = js.undefined,
     tune: psnr | `hvs-psnr` | ssim | `ms-ssim` = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arithmetic)) __obj.updateDynamic("arithmetic")(arithmetic.asInstanceOf[js.Any])
-    if (dcScanOpt != null) __obj.updateDynamic("dcScanOpt")(dcScanOpt.asInstanceOf[js.Any])
+    if (!js.isUndefined(arithmetic)) __obj.updateDynamic("arithmetic")(arithmetic.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dcScanOpt)) __obj.updateDynamic("dcScanOpt")(dcScanOpt.get.asInstanceOf[js.Any])
     if (dct != null) __obj.updateDynamic("dct")(dct.asInstanceOf[js.Any])
-    if (!js.isUndefined(fastCrush)) __obj.updateDynamic("fastCrush")(fastCrush.asInstanceOf[js.Any])
-    if (maxMemory != null) __obj.updateDynamic("maxMemory")(maxMemory.asInstanceOf[js.Any])
-    if (!js.isUndefined(overshoot)) __obj.updateDynamic("overshoot")(overshoot.asInstanceOf[js.Any])
-    if (!js.isUndefined(progressive)) __obj.updateDynamic("progressive")(progressive.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (!js.isUndefined(quantBaseline)) __obj.updateDynamic("quantBaseline")(quantBaseline.asInstanceOf[js.Any])
-    if (quantTable != null) __obj.updateDynamic("quantTable")(quantTable.asInstanceOf[js.Any])
-    if (!js.isUndefined(revert)) __obj.updateDynamic("revert")(revert.asInstanceOf[js.Any])
+    if (!js.isUndefined(fastCrush)) __obj.updateDynamic("fastCrush")(fastCrush.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxMemory)) __obj.updateDynamic("maxMemory")(maxMemory.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overshoot)) __obj.updateDynamic("overshoot")(overshoot.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressive)) __obj.updateDynamic("progressive")(progressive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantBaseline)) __obj.updateDynamic("quantBaseline")(quantBaseline.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantTable)) __obj.updateDynamic("quantTable")(quantTable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(revert)) __obj.updateDynamic("revert")(revert.get.asInstanceOf[js.Any])
     if (sample != null) __obj.updateDynamic("sample")(sample.asInstanceOf[js.Any])
-    if (smooth != null) __obj.updateDynamic("smooth")(smooth.asInstanceOf[js.Any])
-    if (!js.isUndefined(targa)) __obj.updateDynamic("targa")(targa.asInstanceOf[js.Any])
-    if (!js.isUndefined(trellis)) __obj.updateDynamic("trellis")(trellis.asInstanceOf[js.Any])
-    if (!js.isUndefined(trellisDC)) __obj.updateDynamic("trellisDC")(trellisDC.asInstanceOf[js.Any])
+    if (!js.isUndefined(smooth)) __obj.updateDynamic("smooth")(smooth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(targa)) __obj.updateDynamic("targa")(targa.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trellis)) __obj.updateDynamic("trellis")(trellis.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trellisDC)) __obj.updateDynamic("trellisDC")(trellisDC.get.asInstanceOf[js.Any])
     if (tune != null) __obj.updateDynamic("tune")(tune.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

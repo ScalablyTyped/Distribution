@@ -1,7 +1,7 @@
 package typings.microsoftLiveConnect.Microsoft.Live
 
-import typings.microsoftLiveConnect.AnonBusiness
-import typings.microsoftLiveConnect.AnonEmployer
+import typings.microsoftLiveConnect.anon.Business
+import typings.microsoftLiveConnect.anon.Employer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait INewContact extends js.Object {
   /**
     * The contact's email addresses.
     */
-  var emails: js.UndefOr[AnonBusiness] = js.undefined
+  var emails: js.UndefOr[Business] = js.undefined
   /**
     * The contact's first name.
     */
@@ -25,16 +25,16 @@ trait INewContact extends js.Object {
   /**
     * An array that contains the contact's work info.
     */
-  var work: js.UndefOr[js.Array[AnonEmployer]] = js.undefined
+  var work: js.UndefOr[js.Array[Employer]] = js.undefined
 }
 
 object INewContact {
   @scala.inline
   def apply(
-    emails: AnonBusiness = null,
+    emails: Business = null,
     first_name: String = null,
     last_name: String = null,
-    work: js.Array[AnonEmployer] = null
+    work: js.Array[Employer] = null
   ): INewContact = {
     val __obj = js.Dynamic.literal()
     if (emails != null) __obj.updateDynamic("emails")(emails.asInstanceOf[js.Any])

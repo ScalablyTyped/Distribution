@@ -27,16 +27,16 @@ trait Radios extends js.Object {
 object Radios {
   @scala.inline
   def apply(
-    bluetooth: js.UndefOr[scala.Boolean] = js.undefined,
-    gps: js.UndefOr[scala.Boolean] = js.undefined,
-    nfc: js.UndefOr[scala.Boolean] = js.undefined,
-    wifi: js.UndefOr[scala.Boolean] = js.undefined
+    bluetooth: js.UndefOr[Boolean] = js.undefined,
+    gps: js.UndefOr[Boolean] = js.undefined,
+    nfc: js.UndefOr[Boolean] = js.undefined,
+    wifi: js.UndefOr[Boolean] = js.undefined
   ): Radios = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bluetooth)) __obj.updateDynamic("bluetooth")(bluetooth.asInstanceOf[js.Any])
-    if (!js.isUndefined(gps)) __obj.updateDynamic("gps")(gps.asInstanceOf[js.Any])
-    if (!js.isUndefined(nfc)) __obj.updateDynamic("nfc")(nfc.asInstanceOf[js.Any])
-    if (!js.isUndefined(wifi)) __obj.updateDynamic("wifi")(wifi.asInstanceOf[js.Any])
+    if (!js.isUndefined(bluetooth)) __obj.updateDynamic("bluetooth")(bluetooth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gps)) __obj.updateDynamic("gps")(gps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nfc)) __obj.updateDynamic("nfc")(nfc.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wifi)) __obj.updateDynamic("wifi")(wifi.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Radios]
   }
 }

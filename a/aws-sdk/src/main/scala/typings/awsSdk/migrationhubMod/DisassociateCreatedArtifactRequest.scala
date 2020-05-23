@@ -30,10 +30,10 @@ object DisassociateCreatedArtifactRequest {
     CreatedArtifactName: CreatedArtifactName,
     MigrationTaskName: MigrationTaskName,
     ProgressUpdateStream: ProgressUpdateStream,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[DryRun] = js.undefined
   ): DisassociateCreatedArtifactRequest = {
     val __obj = js.Dynamic.literal(CreatedArtifactName = CreatedArtifactName.asInstanceOf[js.Any], MigrationTaskName = MigrationTaskName.asInstanceOf[js.Any], ProgressUpdateStream = ProgressUpdateStream.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateCreatedArtifactRequest]
   }
 }

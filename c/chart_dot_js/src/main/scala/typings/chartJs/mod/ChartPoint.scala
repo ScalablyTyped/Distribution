@@ -16,13 +16,13 @@ trait ChartPoint extends js.Object {
 object ChartPoint {
   @scala.inline
   def apply(
-    r: Int | Double = null,
+    r: js.UndefOr[Double] = js.undefined,
     t: Double | String | Date | Moment = null,
     x: Double | String | Date | Moment = null,
     y: Double | String | Date | Moment = null
   ): ChartPoint = {
     val __obj = js.Dynamic.literal()
-    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
+    if (!js.isUndefined(r)) __obj.updateDynamic("r")(r.get.asInstanceOf[js.Any])
     if (t != null) __obj.updateDynamic("t")(t.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])

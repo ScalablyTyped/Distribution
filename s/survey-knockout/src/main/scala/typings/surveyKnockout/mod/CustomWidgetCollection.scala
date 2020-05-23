@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 class CustomWidgetCollection () extends js.Object {
   var onCustomWidgetAdded: Event[js.Function1[/* customWidget */ QuestionCustomWidget, _], _] = js.native
   val widgets: js.Array[QuestionCustomWidget] = js.native
+  def add(widgetJson: js.Any): Unit = js.native
+  def add(widgetJson: js.Any, activatedBy: String): Unit = js.native
   def addCustomWidget(widgetJson: js.Any): Unit = js.native
   def addCustomWidget(widgetJson: js.Any, activatedBy: String): Unit = js.native
   def clear(): Unit = js.native
@@ -17,7 +19,7 @@ class CustomWidgetCollection () extends js.Object {
     * @param widgetName the custom widget name
     * @see setActivatedBy
     */
-  def getActivatedBy(widgetName: String): js.Any = js.native
+  def getActivatedBy(widgetName: String): String = js.native
   def getCustomWidget(question: IQuestion): QuestionCustomWidget = js.native
   def getCustomWidgetByName(name: String): QuestionCustomWidget = js.native
   /**

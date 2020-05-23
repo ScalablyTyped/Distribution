@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.InformationRightsManagementSettings")
 @js.native
-class InformationRightsManagementSettings () extends ClientObject {
+trait InformationRightsManagementSettings extends ClientObject {
   def get_allowPrint(): Boolean = js.native
   def get_allowScript(): Boolean = js.native
   def get_allowWriteCopy(): Boolean = js.native

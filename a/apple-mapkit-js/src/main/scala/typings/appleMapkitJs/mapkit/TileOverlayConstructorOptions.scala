@@ -31,15 +31,15 @@ object TileOverlayConstructorOptions {
   @scala.inline
   def apply(
     data: js.Object = null,
-    maximumZ: Int | Double = null,
-    minimumZ: Int | Double = null,
-    opacity: Int | Double = null
+    maximumZ: js.UndefOr[Double] = js.undefined,
+    minimumZ: js.UndefOr[Double] = js.undefined,
+    opacity: js.UndefOr[Double] = js.undefined
   ): TileOverlayConstructorOptions = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (maximumZ != null) __obj.updateDynamic("maximumZ")(maximumZ.asInstanceOf[js.Any])
-    if (minimumZ != null) __obj.updateDynamic("minimumZ")(minimumZ.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumZ)) __obj.updateDynamic("maximumZ")(maximumZ.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumZ)) __obj.updateDynamic("minimumZ")(minimumZ.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileOverlayConstructorOptions]
   }
 }

@@ -26,11 +26,11 @@ object ICustomAnimationFrameRequester {
   def apply(
     requestAnimationFrame: js.Function,
     renderFunction: js.Function = null,
-    requestID: Int | Double = null
+    requestID: js.UndefOr[Double] = js.undefined
   ): ICustomAnimationFrameRequester = {
     val __obj = js.Dynamic.literal(requestAnimationFrame = requestAnimationFrame.asInstanceOf[js.Any])
     if (renderFunction != null) __obj.updateDynamic("renderFunction")(renderFunction.asInstanceOf[js.Any])
-    if (requestID != null) __obj.updateDynamic("requestID")(requestID.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestID)) __obj.updateDynamic("requestID")(requestID.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomAnimationFrameRequester]
   }
 }

@@ -39,20 +39,20 @@ trait MetricDatapoint extends js.Object {
 object MetricDatapoint {
   @scala.inline
   def apply(
-    average: Int | Double = null,
-    maximum: Int | Double = null,
-    minimum: Int | Double = null,
-    sampleCount: Int | Double = null,
-    sum: Int | Double = null,
+    average: js.UndefOr[double] = js.undefined,
+    maximum: js.UndefOr[double] = js.undefined,
+    minimum: js.UndefOr[double] = js.undefined,
+    sampleCount: js.UndefOr[double] = js.undefined,
+    sum: js.UndefOr[double] = js.undefined,
     timestamp: timestamp = null,
     unit: MetricUnit = null
   ): MetricDatapoint = {
     val __obj = js.Dynamic.literal()
-    if (average != null) __obj.updateDynamic("average")(average.asInstanceOf[js.Any])
-    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
-    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
-    if (sampleCount != null) __obj.updateDynamic("sampleCount")(sampleCount.asInstanceOf[js.Any])
-    if (sum != null) __obj.updateDynamic("sum")(sum.asInstanceOf[js.Any])
+    if (!js.isUndefined(average)) __obj.updateDynamic("average")(average.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximum)) __obj.updateDynamic("maximum")(maximum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimum)) __obj.updateDynamic("minimum")(minimum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleCount)) __obj.updateDynamic("sampleCount")(sampleCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sum)) __obj.updateDynamic("sum")(sum.get.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricDatapoint]

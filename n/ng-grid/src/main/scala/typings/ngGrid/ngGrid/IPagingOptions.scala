@@ -18,16 +18,16 @@ trait IPagingOptions extends js.Object {
 object IPagingOptions {
   @scala.inline
   def apply(
-    currentPage: Int | Double = null,
-    pageSize: Int | Double = null,
+    currentPage: js.UndefOr[Double] = js.undefined,
+    pageSize: js.UndefOr[Double] = js.undefined,
     pageSizes: js.Array[Double] = null,
-    totalServerItems: Int | Double = null
+    totalServerItems: js.UndefOr[Double] = js.undefined
   ): IPagingOptions = {
     val __obj = js.Dynamic.literal()
-    if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentPage)) __obj.updateDynamic("currentPage")(currentPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (pageSizes != null) __obj.updateDynamic("pageSizes")(pageSizes.asInstanceOf[js.Any])
-    if (totalServerItems != null) __obj.updateDynamic("totalServerItems")(totalServerItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalServerItems)) __obj.updateDynamic("totalServerItems")(totalServerItems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPagingOptions]
   }
 }

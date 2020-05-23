@@ -7,9 +7,9 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.TouchEvent
-import typings.reactSelect.AnonClearValue
-import typings.reactSelect.AnonContext
-import typings.reactSelect.AnonEvent
+import typings.reactSelect.anon.ClearValue
+import typings.reactSelect.anon.Context
+import typings.reactSelect.anon.Event
 import typings.reactSelect.componentsMod.PlaceholderOrValue
 import typings.reactSelect.componentsMod.SelectComponents
 import typings.reactSelect.reactSelectStrings.first
@@ -26,7 +26,6 @@ import typings.reactSelect.typesMod.InputActionMeta
 import typings.reactSelect.typesMod.OptionTypeBase
 import typings.reactSelect.typesMod.OptionsType
 import typings.reactSelect.typesMod.ValueType
-import typings.std.Event_
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import scala.scalajs.js
@@ -60,11 +59,11 @@ trait Select[OptionType /* <: OptionTypeBase */]
   var openAfterFocus: Boolean = js.native
   var scrollToFocusedOptionOnUpdate: Boolean = js.native
   var userIsDragging: Boolean | Null = js.native
-  def announceAriaLiveContext(props: AnonEvent): Unit = js.native
+  def announceAriaLiveContext(props: Event): Unit = js.native
   // ==============================
   // Helpers
   // ==============================
-  def announceAriaLiveSelection(props: AnonContext): Unit = js.native
+  def announceAriaLiveSelection(props: Context): Unit = js.native
   def blur(): Unit = js.native
   def blurInput(): Unit = js.native
   // ==============================
@@ -97,7 +96,7 @@ trait Select[OptionType /* <: OptionTypeBase */]
   // ==============================
   // Getters
   // ==============================
-  def getCommonProps(): AnonClearValue[OptionType] = js.native
+  def getCommonProps(): ClearValue[OptionType] = js.native
   def getControlRef(ref: HTMLElement): Unit = js.native
   @JSName("getElementId")
   def getElementId_group(element: group): String = js.native
@@ -148,7 +147,7 @@ trait Select[OptionType /* <: OptionTypeBase */]
   // ==============================
   def onMenuOpen(): Unit = js.native
   def onOptionHover(focusedOption: OptionType): Unit = js.native
-  def onScroll(event: Event_): Unit = js.native
+  def onScroll(event: typings.std.Event): Unit = js.native
   def onTouchEnd(event: typings.std.TouchEvent): Unit = js.native
   def onTouchMove(event: typings.std.TouchEvent): Unit = js.native
   def onTouchStart(event: typings.std.TouchEvent): Unit = js.native

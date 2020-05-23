@@ -20,7 +20,7 @@ object Action {
   @scala.inline
   def apply[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload](
     `type`: js.Any,
-    error: js.UndefOr[Boolean] = js.undefined,
+    error: js.UndefOr[Null | Boolean] = js.undefined,
     meta: (ActionMeta[TFullState, TSuccessPayload, TErrorPayload, TStartPayload]) with TMetaPayload = null,
     payload: TSuccessPayload | TErrorPayload | TStartPayload = null,
     promise: js.Promise[TSuccessPayload] = null

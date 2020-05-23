@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSForms.Page")
 @js.native
-class Page protected () extends js.Object {
+trait Page extends js.Object {
   var Accelerator: String = js.native
   val ActiveControl: Control = js.native
   val CanPaste: Boolean = js.native

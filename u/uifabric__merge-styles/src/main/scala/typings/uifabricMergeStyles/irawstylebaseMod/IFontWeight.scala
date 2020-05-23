@@ -1,14 +1,5 @@
 package typings.uifabricMergeStyles.irawstylebaseMod
 
-import typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`100`
-import typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`300`
-import typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`400`
-import typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`600`
-import typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`700`
-import typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`800`
-import typings.uifabricMergeStyles.uifabricMergeStylesStrings.`200`
-import typings.uifabricMergeStyles.uifabricMergeStylesStrings.`500`
-import typings.uifabricMergeStyles.uifabricMergeStylesStrings.`900`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,50 +35,23 @@ trait IFontWeight extends js.Object
 
 object IFontWeight {
   @scala.inline
-  def `100`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`100` = "100".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`100`]
-  @JSName("100")
-  @scala.inline
-  def `100_100`: `100` = 100.asInstanceOf[`100`]
+  def `100`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`100` = 100.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`100`]
   @scala.inline
   def `200`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`200` = 200.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`200`]
-  @JSName("200")
   @scala.inline
-  def `200_200`: `200` = "200".asInstanceOf[`200`]
+  def `300`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`300` = 300.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`300`]
   @scala.inline
-  def `300`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`300` = "300".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`300`]
-  @JSName("300")
-  @scala.inline
-  def `300_300`: `300` = 300.asInstanceOf[`300`]
-  @scala.inline
-  def `400`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`400` = "400".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`400`]
-  @JSName("400")
-  @scala.inline
-  def `400_400`: `400` = 400.asInstanceOf[`400`]
+  def `400`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`400` = 400.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`400`]
   @scala.inline
   def `500`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`500` = 500.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`500`]
-  @JSName("500")
   @scala.inline
-  def `500_500`: `500` = "500".asInstanceOf[`500`]
+  def `600`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`600` = 600.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`600`]
   @scala.inline
-  def `600`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`600` = "600".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`600`]
-  @JSName("600")
+  def `700`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`700` = 700.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`700`]
   @scala.inline
-  def `600_600`: `600` = 600.asInstanceOf[`600`]
-  @scala.inline
-  def `700`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`700` = "700".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`700`]
-  @JSName("700")
-  @scala.inline
-  def `700_700`: `700` = 700.asInstanceOf[`700`]
-  @scala.inline
-  def `800`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`800` = "800".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`800`]
-  @JSName("800")
-  @scala.inline
-  def `800_800`: `800` = 800.asInstanceOf[`800`]
+  def `800`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`800` = 800.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`800`]
   @scala.inline
   def `900`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`900` = 900.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`900`]
-  @JSName("900")
-  @scala.inline
-  def `900_900`: `900` = "900".asInstanceOf[`900`]
   @scala.inline
   def bold: typings.uifabricMergeStyles.uifabricMergeStylesStrings.bold = "bold".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.bold]
   @scala.inline

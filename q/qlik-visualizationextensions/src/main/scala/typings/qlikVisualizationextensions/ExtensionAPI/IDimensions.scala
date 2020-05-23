@@ -13,10 +13,10 @@ trait IDimensions extends js.Object {
 
 object IDimensions {
   @scala.inline
-  def apply(uses: dimensions, max: Int | Double = null, min: Int | Double = null): IDimensions = {
+  def apply(uses: dimensions, max: js.UndefOr[Double] = js.undefined, min: js.UndefOr[Double] = js.undefined): IDimensions = {
     val __obj = js.Dynamic.literal(uses = uses.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDimensions]
   }
 }

@@ -1,6 +1,6 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.AnonLeft
+import typings.devextreme.anon.Left
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ object dxChartPanes {
   @scala.inline
   def apply(
     backgroundColor: String = null,
-    border: AnonLeft = null,
+    border: Left = null,
     height: Double | String = null,
     name: String = null
   ): dxChartPanes = {

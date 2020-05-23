@@ -27,18 +27,18 @@ object DropdownContainerModifierProps {
     align: right = null,
     as: ReactType[_] = null,
     hoverable: js.UndefOr[Boolean] = js.undefined,
-    innerRef: Ref[HTMLElement | SVGElement | ComponentType[js.Object]] = null,
+    innerRef: js.UndefOr[Null | (Ref[HTMLElement | SVGElement | ComponentType[js.Object]])] = js.undefined,
     managed: js.UndefOr[Boolean] = js.undefined,
     up: js.UndefOr[Boolean] = js.undefined
   ): DropdownContainerModifierProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverable)) __obj.updateDynamic("hoverable")(hoverable.asInstanceOf[js.Any])
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(managed)) __obj.updateDynamic("managed")(managed.asInstanceOf[js.Any])
-    if (!js.isUndefined(up)) __obj.updateDynamic("up")(up.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverable)) __obj.updateDynamic("hoverable")(hoverable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(innerRef)) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(managed)) __obj.updateDynamic("managed")(managed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(up)) __obj.updateDynamic("up")(up.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropdownContainerModifierProps]
   }
 }

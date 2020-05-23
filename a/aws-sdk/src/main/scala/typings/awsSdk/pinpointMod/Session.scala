@@ -26,9 +26,14 @@ trait Session extends js.Object {
 
 object Session {
   @scala.inline
-  def apply(Id: string, StartTimestamp: string, Duration: Int | Double = null, StopTimestamp: string = null): Session = {
+  def apply(
+    Id: string,
+    StartTimestamp: string,
+    Duration: js.UndefOr[integer] = js.undefined,
+    StopTimestamp: string = null
+  ): Session = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], StartTimestamp = StartTimestamp.asInstanceOf[js.Any])
-    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration.get.asInstanceOf[js.Any])
     if (StopTimestamp != null) __obj.updateDynamic("StopTimestamp")(StopTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Session]
   }

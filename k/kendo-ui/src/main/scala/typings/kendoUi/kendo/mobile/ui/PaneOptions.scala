@@ -25,18 +25,18 @@ object PaneOptions {
     loading: String = null,
     name: String = null,
     navigate: /* e */ PaneNavigateEvent => Unit = null,
-    portraitWidth: Int | Double = null,
+    portraitWidth: js.UndefOr[Double] = js.undefined,
     transition: String = null,
     viewShow: /* e */ PaneViewShowEvent => Unit = null
   ): PaneOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible.get.asInstanceOf[js.Any])
     if (initial != null) __obj.updateDynamic("initial")(initial.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (navigate != null) __obj.updateDynamic("navigate")(js.Any.fromFunction1(navigate))
-    if (portraitWidth != null) __obj.updateDynamic("portraitWidth")(portraitWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(portraitWidth)) __obj.updateDynamic("portraitWidth")(portraitWidth.get.asInstanceOf[js.Any])
     if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     if (viewShow != null) __obj.updateDynamic("viewShow")(js.Any.fromFunction1(viewShow))
     __obj.asInstanceOf[PaneOptions]

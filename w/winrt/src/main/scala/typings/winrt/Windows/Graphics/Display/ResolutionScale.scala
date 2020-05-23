@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Graphics.Display
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,20 +21,6 @@ object ResolutionScale extends js.Object {
   
   @js.native
   sealed trait scale180Percent extends ResolutionScale
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ResolutionScale with Double] = js.native
-  /* 0 */ @js.native
-  object invalid extends TopLevel[invalid with Double]
-  
-  /* 1 */ @js.native
-  object scale100Percent extends TopLevel[scale100Percent with Double]
-  
-  /* 2 */ @js.native
-  object scale140Percent extends TopLevel[scale140Percent with Double]
-  
-  /* 3 */ @js.native
-  object scale180Percent extends TopLevel[scale180Percent with Double]
   
 }
 

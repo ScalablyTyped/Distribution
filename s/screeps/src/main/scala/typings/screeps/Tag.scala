@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object Tag extends js.Object {
   @js.native
-  class OpaqueTag[T] () extends js.Object
+  trait OpaqueTag[T] extends js.Object
   
-  val OpaqueTagSymbol: js.Symbol = js.native
 }
 

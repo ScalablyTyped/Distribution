@@ -1,6 +1,6 @@
 package typings.ionicReact.ionActionSheetMod
 
-import typings.ionicReact.AnonIos
+import typings.ionicReact.anon.Ios
 import typings.ionicReact.ionicReactStrings.cancel
 import typings.ionicReact.ionicReactStrings.destructive
 import typings.ionicReact.ionicReactStrings.selected
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait ActionSheetButton extends js.Object {
   var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
   var handler: js.UndefOr[js.Function0[Boolean | Unit | js.Promise[Boolean]]] = js.undefined
-  var icon: js.UndefOr[AnonIos | String] = js.undefined
+  var icon: js.UndefOr[Ios | String] = js.undefined
   var role: js.UndefOr[cancel | destructive | selected | String] = js.undefined
   var text: js.UndefOr[String] = js.undefined
 }
@@ -22,7 +22,7 @@ object ActionSheetButton {
   def apply(
     cssClass: String | js.Array[String] = null,
     handler: () => Boolean | Unit | js.Promise[Boolean] = null,
-    icon: AnonIos | String = null,
+    icon: Ios | String = null,
     role: cancel | destructive | selected | String = null,
     text: String = null
   ): ActionSheetButton = {

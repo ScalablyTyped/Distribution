@@ -74,101 +74,101 @@ object ToBufferOptions {
     bcid: String,
     text: String,
     addontextfont: String = null,
-    addontextsize: Int | Double = null,
-    addontextxoffset: Int | Double = null,
-    addontextyoffset: Int | Double = null,
+    addontextsize: js.UndefOr[Double] = js.undefined,
+    addontextxoffset: js.UndefOr[Double] = js.undefined,
+    addontextyoffset: js.UndefOr[Double] = js.undefined,
     alttext: js.UndefOr[Boolean] = js.undefined,
     backgroundcolor: String = null,
     barcolor: String = null,
-    boraderbottom: Int | Double = null,
+    boraderbottom: js.UndefOr[Double] = js.undefined,
     bordercolor: String = null,
-    borderleft: Int | Double = null,
-    borderright: Int | Double = null,
-    bordertop: Int | Double = null,
-    borderwidth: Int | Double = null,
-    guardheight: Int | Double = null,
-    guardleftpos: Int | Double = null,
-    guardleftypos: Int | Double = null,
-    guardrightpos: Int | Double = null,
-    guardrightypos: Int | Double = null,
+    borderleft: js.UndefOr[Double] = js.undefined,
+    borderright: js.UndefOr[Double] = js.undefined,
+    bordertop: js.UndefOr[Double] = js.undefined,
+    borderwidth: js.UndefOr[Double] = js.undefined,
+    guardheight: js.UndefOr[Double] = js.undefined,
+    guardleftpos: js.UndefOr[Double] = js.undefined,
+    guardleftypos: js.UndefOr[Double] = js.undefined,
+    guardrightpos: js.UndefOr[Double] = js.undefined,
+    guardrightypos: js.UndefOr[Double] = js.undefined,
     guardwhitespace: js.UndefOr[Boolean] = js.undefined,
-    guardwidth: Int | Double = null,
-    height: Int | Double = null,
+    guardwidth: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
     includecheck: js.UndefOr[Boolean] = js.undefined,
     includecheckintext: js.UndefOr[Boolean] = js.undefined,
     includetext: js.UndefOr[Boolean] = js.undefined,
-    inkspread: Int | Double = null,
-    inkspreadh: Int | Double = null,
-    inkspreadv: Int | Double = null,
+    inkspread: js.UndefOr[Double] = js.undefined,
+    inkspreadh: js.UndefOr[Double] = js.undefined,
+    inkspreadv: js.UndefOr[Double] = js.undefined,
     monochrome: js.UndefOr[Boolean] = js.undefined,
-    paddingheight: Int | Double = null,
-    paddingwidth: Int | Double = null,
+    paddingheight: js.UndefOr[Double] = js.undefined,
+    paddingwidth: js.UndefOr[Double] = js.undefined,
     parse: js.UndefOr[Boolean] = js.undefined,
     parsefunc: js.UndefOr[Boolean] = js.undefined,
     rotate: N | R | L | I = null,
-    scale: Int | Double = null,
-    scaleX: Int | Double = null,
-    scaleY: Int | Double = null,
+    scale: js.UndefOr[Double] = js.undefined,
+    scaleX: js.UndefOr[Double] = js.undefined,
+    scaleY: js.UndefOr[Double] = js.undefined,
     showborder: js.UndefOr[Boolean] = js.undefined,
-    sizelimit: Int | Double = null,
+    sizelimit: js.UndefOr[Double] = js.undefined,
     textcolor: String = null,
     textfont: String = null,
-    textgaps: Int | Double = null,
-    textsize: Int | Double = null,
+    textgaps: js.UndefOr[Double] = js.undefined,
+    textsize: js.UndefOr[Double] = js.undefined,
     textxalign: offleft | left | center | right | offright | justify = null,
-    textxoffset: Int | Double = null,
+    textxoffset: js.UndefOr[Double] = js.undefined,
     textyalign: below | center | above = null,
-    textyoffset: Int | Double = null,
-    width: Int | Double = null
+    textyoffset: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): ToBufferOptions = {
     val __obj = js.Dynamic.literal(bcid = bcid.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     if (addontextfont != null) __obj.updateDynamic("addontextfont")(addontextfont.asInstanceOf[js.Any])
-    if (addontextsize != null) __obj.updateDynamic("addontextsize")(addontextsize.asInstanceOf[js.Any])
-    if (addontextxoffset != null) __obj.updateDynamic("addontextxoffset")(addontextxoffset.asInstanceOf[js.Any])
-    if (addontextyoffset != null) __obj.updateDynamic("addontextyoffset")(addontextyoffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(alttext)) __obj.updateDynamic("alttext")(alttext.asInstanceOf[js.Any])
+    if (!js.isUndefined(addontextsize)) __obj.updateDynamic("addontextsize")(addontextsize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(addontextxoffset)) __obj.updateDynamic("addontextxoffset")(addontextxoffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(addontextyoffset)) __obj.updateDynamic("addontextyoffset")(addontextyoffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(alttext)) __obj.updateDynamic("alttext")(alttext.get.asInstanceOf[js.Any])
     if (backgroundcolor != null) __obj.updateDynamic("backgroundcolor")(backgroundcolor.asInstanceOf[js.Any])
     if (barcolor != null) __obj.updateDynamic("barcolor")(barcolor.asInstanceOf[js.Any])
-    if (boraderbottom != null) __obj.updateDynamic("boraderbottom")(boraderbottom.asInstanceOf[js.Any])
+    if (!js.isUndefined(boraderbottom)) __obj.updateDynamic("boraderbottom")(boraderbottom.get.asInstanceOf[js.Any])
     if (bordercolor != null) __obj.updateDynamic("bordercolor")(bordercolor.asInstanceOf[js.Any])
-    if (borderleft != null) __obj.updateDynamic("borderleft")(borderleft.asInstanceOf[js.Any])
-    if (borderright != null) __obj.updateDynamic("borderright")(borderright.asInstanceOf[js.Any])
-    if (bordertop != null) __obj.updateDynamic("bordertop")(bordertop.asInstanceOf[js.Any])
-    if (borderwidth != null) __obj.updateDynamic("borderwidth")(borderwidth.asInstanceOf[js.Any])
-    if (guardheight != null) __obj.updateDynamic("guardheight")(guardheight.asInstanceOf[js.Any])
-    if (guardleftpos != null) __obj.updateDynamic("guardleftpos")(guardleftpos.asInstanceOf[js.Any])
-    if (guardleftypos != null) __obj.updateDynamic("guardleftypos")(guardleftypos.asInstanceOf[js.Any])
-    if (guardrightpos != null) __obj.updateDynamic("guardrightpos")(guardrightpos.asInstanceOf[js.Any])
-    if (guardrightypos != null) __obj.updateDynamic("guardrightypos")(guardrightypos.asInstanceOf[js.Any])
-    if (!js.isUndefined(guardwhitespace)) __obj.updateDynamic("guardwhitespace")(guardwhitespace.asInstanceOf[js.Any])
-    if (guardwidth != null) __obj.updateDynamic("guardwidth")(guardwidth.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(includecheck)) __obj.updateDynamic("includecheck")(includecheck.asInstanceOf[js.Any])
-    if (!js.isUndefined(includecheckintext)) __obj.updateDynamic("includecheckintext")(includecheckintext.asInstanceOf[js.Any])
-    if (!js.isUndefined(includetext)) __obj.updateDynamic("includetext")(includetext.asInstanceOf[js.Any])
-    if (inkspread != null) __obj.updateDynamic("inkspread")(inkspread.asInstanceOf[js.Any])
-    if (inkspreadh != null) __obj.updateDynamic("inkspreadh")(inkspreadh.asInstanceOf[js.Any])
-    if (inkspreadv != null) __obj.updateDynamic("inkspreadv")(inkspreadv.asInstanceOf[js.Any])
-    if (!js.isUndefined(monochrome)) __obj.updateDynamic("monochrome")(monochrome.asInstanceOf[js.Any])
-    if (paddingheight != null) __obj.updateDynamic("paddingheight")(paddingheight.asInstanceOf[js.Any])
-    if (paddingwidth != null) __obj.updateDynamic("paddingwidth")(paddingwidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(parse)) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
-    if (!js.isUndefined(parsefunc)) __obj.updateDynamic("parsefunc")(parsefunc.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderleft)) __obj.updateDynamic("borderleft")(borderleft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderright)) __obj.updateDynamic("borderright")(borderright.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bordertop)) __obj.updateDynamic("bordertop")(bordertop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderwidth)) __obj.updateDynamic("borderwidth")(borderwidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(guardheight)) __obj.updateDynamic("guardheight")(guardheight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(guardleftpos)) __obj.updateDynamic("guardleftpos")(guardleftpos.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(guardleftypos)) __obj.updateDynamic("guardleftypos")(guardleftypos.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(guardrightpos)) __obj.updateDynamic("guardrightpos")(guardrightpos.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(guardrightypos)) __obj.updateDynamic("guardrightypos")(guardrightypos.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(guardwhitespace)) __obj.updateDynamic("guardwhitespace")(guardwhitespace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(guardwidth)) __obj.updateDynamic("guardwidth")(guardwidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includecheck)) __obj.updateDynamic("includecheck")(includecheck.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includecheckintext)) __obj.updateDynamic("includecheckintext")(includecheckintext.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includetext)) __obj.updateDynamic("includetext")(includetext.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inkspread)) __obj.updateDynamic("inkspread")(inkspread.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inkspreadh)) __obj.updateDynamic("inkspreadh")(inkspreadh.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inkspreadv)) __obj.updateDynamic("inkspreadv")(inkspreadv.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(monochrome)) __obj.updateDynamic("monochrome")(monochrome.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingheight)) __obj.updateDynamic("paddingheight")(paddingheight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingwidth)) __obj.updateDynamic("paddingwidth")(paddingwidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parse)) __obj.updateDynamic("parse")(parse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parsefunc)) __obj.updateDynamic("parsefunc")(parsefunc.get.asInstanceOf[js.Any])
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (scaleX != null) __obj.updateDynamic("scaleX")(scaleX.asInstanceOf[js.Any])
-    if (scaleY != null) __obj.updateDynamic("scaleY")(scaleY.asInstanceOf[js.Any])
-    if (!js.isUndefined(showborder)) __obj.updateDynamic("showborder")(showborder.asInstanceOf[js.Any])
-    if (sizelimit != null) __obj.updateDynamic("sizelimit")(sizelimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleX)) __obj.updateDynamic("scaleX")(scaleX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleY)) __obj.updateDynamic("scaleY")(scaleY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showborder)) __obj.updateDynamic("showborder")(showborder.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizelimit)) __obj.updateDynamic("sizelimit")(sizelimit.get.asInstanceOf[js.Any])
     if (textcolor != null) __obj.updateDynamic("textcolor")(textcolor.asInstanceOf[js.Any])
     if (textfont != null) __obj.updateDynamic("textfont")(textfont.asInstanceOf[js.Any])
-    if (textgaps != null) __obj.updateDynamic("textgaps")(textgaps.asInstanceOf[js.Any])
-    if (textsize != null) __obj.updateDynamic("textsize")(textsize.asInstanceOf[js.Any])
+    if (!js.isUndefined(textgaps)) __obj.updateDynamic("textgaps")(textgaps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(textsize)) __obj.updateDynamic("textsize")(textsize.get.asInstanceOf[js.Any])
     if (textxalign != null) __obj.updateDynamic("textxalign")(textxalign.asInstanceOf[js.Any])
-    if (textxoffset != null) __obj.updateDynamic("textxoffset")(textxoffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(textxoffset)) __obj.updateDynamic("textxoffset")(textxoffset.get.asInstanceOf[js.Any])
     if (textyalign != null) __obj.updateDynamic("textyalign")(textyalign.asInstanceOf[js.Any])
-    if (textyoffset != null) __obj.updateDynamic("textyoffset")(textyoffset.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(textyoffset)) __obj.updateDynamic("textyoffset")(textyoffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToBufferOptions]
   }
 }

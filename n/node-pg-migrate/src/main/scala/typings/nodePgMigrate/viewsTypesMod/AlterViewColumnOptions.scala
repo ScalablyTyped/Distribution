@@ -11,9 +11,9 @@ trait AlterViewColumnOptions extends js.Object {
 
 object AlterViewColumnOptions {
   @scala.inline
-  def apply(default: Value = null): AlterViewColumnOptions = {
+  def apply(default: js.UndefOr[Null | Value] = js.undefined): AlterViewColumnOptions = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlterViewColumnOptions]
   }
 }

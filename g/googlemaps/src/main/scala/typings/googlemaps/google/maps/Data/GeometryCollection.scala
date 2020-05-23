@@ -1,17 +1,27 @@
 package typings.googlemaps.google.maps.Data
 
 import typings.googlemaps.google.maps.LatLng
-import typings.googlemaps.google.maps.LatLngLiteral
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.maps.Data.GeometryCollection")
-@js.native
-class GeometryCollection protected () extends Geometry {
-  def this(elements: js.Array[(js.Array[Geometry | LatLng]) | LatLngLiteral]) = this()
-  def getArray(): js.Array[Geometry] = js.native
-  def getAt(n: Double): Geometry = js.native
-  def getLength(): Double = js.native
+trait GeometryCollection extends Geometry {
+  def getArray(): js.Array[Geometry]
+  def getAt(n: Double): Geometry
+  def getLength(): Double
+}
+
+object GeometryCollection {
+  @scala.inline
+  def apply(
+    forEachLatLng: js.Function1[/* latLng */ LatLng, Unit] => Unit,
+    getArray: () => js.Array[Geometry],
+    getAt: Double => Geometry,
+    getLength: () => Double,
+    getType: () => String
+  ): GeometryCollection = {
+    val __obj = js.Dynamic.literal(forEachLatLng = js.Any.fromFunction1(forEachLatLng), getArray = js.Any.fromFunction0(getArray), getAt = js.Any.fromFunction1(getAt), getLength = js.Any.fromFunction0(getLength), getType = js.Any.fromFunction0(getType))
+    __obj.asInstanceOf[GeometryCollection]
+  }
 }
 

@@ -28,12 +28,12 @@ object WorkflowExecutionSignaledEventAttributes {
   @scala.inline
   def apply(
     signalName: SignalName,
-    externalInitiatedEventId: Int | Double = null,
+    externalInitiatedEventId: js.UndefOr[EventId] = js.undefined,
     externalWorkflowExecution: WorkflowExecution = null,
     input: Data = null
   ): WorkflowExecutionSignaledEventAttributes = {
     val __obj = js.Dynamic.literal(signalName = signalName.asInstanceOf[js.Any])
-    if (externalInitiatedEventId != null) __obj.updateDynamic("externalInitiatedEventId")(externalInitiatedEventId.asInstanceOf[js.Any])
+    if (!js.isUndefined(externalInitiatedEventId)) __obj.updateDynamic("externalInitiatedEventId")(externalInitiatedEventId.get.asInstanceOf[js.Any])
     if (externalWorkflowExecution != null) __obj.updateDynamic("externalWorkflowExecution")(externalWorkflowExecution.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkflowExecutionSignaledEventAttributes]

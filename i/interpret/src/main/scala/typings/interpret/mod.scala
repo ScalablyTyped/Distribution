@@ -1,6 +1,8 @@
 package typings.interpret
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.interpret.anon.Dictkey
+import typings.interpret.anon.Extensions
 import typings.node.NodeModule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,10 +21,10 @@ object mod extends js.Object {
   
   @js.native
   trait Hook extends js.Object {
-    def apply(m: AnonExtensions): js.Any = js.native
+    def apply(m: Extensions): js.Any = js.native
     def apply(m: NodeModule): js.Any = js.native
     def install(): Unit = js.native
-    def install(m: AnonDictkey): Unit = js.native
+    def install(m: Dictkey): Unit = js.native
   }
   
   val extensions: Extensions_ = js.native

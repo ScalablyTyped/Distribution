@@ -28,7 +28,7 @@ object ConfigurationAggregatorAccountAggregationSource {
     regions: js.Array[String] = null
   ): ConfigurationAggregatorAccountAggregationSource = {
     val __obj = js.Dynamic.literal(accountIds = accountIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(allRegions)) __obj.updateDynamic("allRegions")(allRegions.asInstanceOf[js.Any])
+    if (!js.isUndefined(allRegions)) __obj.updateDynamic("allRegions")(allRegions.get.asInstanceOf[js.Any])
     if (regions != null) __obj.updateDynamic("regions")(regions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationAggregatorAccountAggregationSource]
   }

@@ -29,13 +29,13 @@ object DescribeHostReservationsRequest {
   def apply(
     Filter: FilterList = null,
     HostReservationIdSet: HostReservationIdSet = null,
-    MaxResults: Int | scala.Double = null,
+    MaxResults: js.UndefOr[Integer] = js.undefined,
     NextToken: String = null
   ): DescribeHostReservationsRequest = {
     val __obj = js.Dynamic.literal()
     if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
     if (HostReservationIdSet != null) __obj.updateDynamic("HostReservationIdSet")(HostReservationIdSet.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeHostReservationsRequest]
   }

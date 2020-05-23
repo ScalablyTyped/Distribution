@@ -19,8 +19,8 @@ object OptionsHash {
     serializer: (ResultHash, /* key */ String, /* value */ String) => ResultHash = null
   ): OptionsHash = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(empty)) __obj.updateDynamic("empty")(empty.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(empty)) __obj.updateDynamic("empty")(empty.get.asInstanceOf[js.Any])
     if (serializer != null) __obj.updateDynamic("serializer")(js.Any.fromFunction3(serializer))
     __obj.asInstanceOf[OptionsHash]
   }

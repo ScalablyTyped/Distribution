@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object default extends js.Object {
   def apply[RecordType](
-    hasPrefixClsColumnsChildrenOnSorterChangeSortDirectionsTableLocaleShowSorterTooltip: SorterConfig[RecordType]
+    hasPrefixClsMergedColumnsOnSorterChangeSortDirectionsTableLocaleShowSorterTooltip: SorterConfig[RecordType]
   ): js.Tuple4[
     TransformColumns[RecordType], 
     js.Array[SortState[RecordType]], 

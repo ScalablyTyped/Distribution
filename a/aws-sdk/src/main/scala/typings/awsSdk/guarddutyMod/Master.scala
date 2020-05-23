@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Master extends js.Object {
   /**
-    * The ID of the account used as the Master account.
+    * The ID of the account used as the master account.
     */
   var AccountId: js.UndefOr[typings.awsSdk.guarddutyMod.AccountId] = js.native
   /**
-    * This value is used to validate the master account to the member account.
+    * The value used to validate the master account to the member account.
     */
   var InvitationId: js.UndefOr[String] = js.native
   /**
-    * Timestamp at which the invitation was sent.
+    * The timestamp when the invitation was sent.
     */
   var InvitedAt: js.UndefOr[String] = js.native
   /**

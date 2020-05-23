@@ -22,9 +22,9 @@ trait GetWorkflowRunRequest extends js.Object {
 
 object GetWorkflowRunRequest {
   @scala.inline
-  def apply(Name: NameString, RunId: IdString, IncludeGraph: js.UndefOr[scala.Boolean] = js.undefined): GetWorkflowRunRequest = {
+  def apply(Name: NameString, RunId: IdString, IncludeGraph: js.UndefOr[NullableBoolean] = js.undefined): GetWorkflowRunRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], RunId = RunId.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeGraph)) __obj.updateDynamic("IncludeGraph")(IncludeGraph.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeGraph)) __obj.updateDynamic("IncludeGraph")(IncludeGraph.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetWorkflowRunRequest]
   }
 }

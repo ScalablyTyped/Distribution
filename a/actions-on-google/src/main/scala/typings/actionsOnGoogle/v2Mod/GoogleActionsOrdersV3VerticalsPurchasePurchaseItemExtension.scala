@@ -65,7 +65,7 @@ object GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtension {
     itemOptions: js.Array[GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionItemOption] = null,
     productDetails: GoogleActionsOrdersV3VerticalsPurchaseProductDetails = null,
     productId: String = null,
-    quantity: Int | Double = null,
+    quantity: js.UndefOr[Double] = js.undefined,
     returnsInfo: GoogleActionsOrdersV3VerticalsPurchasePurchaseReturnsInfo = null,
     status: GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionStatus = null,
     `type`: GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionType = null,
@@ -78,7 +78,7 @@ object GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtension {
     if (itemOptions != null) __obj.updateDynamic("itemOptions")(itemOptions.asInstanceOf[js.Any])
     if (productDetails != null) __obj.updateDynamic("productDetails")(productDetails.asInstanceOf[js.Any])
     if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
     if (returnsInfo != null) __obj.updateDynamic("returnsInfo")(returnsInfo.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

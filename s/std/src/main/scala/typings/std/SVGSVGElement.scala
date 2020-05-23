@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.std.stdStrings.SVGUnload
 import typings.std.stdStrings.SVGZoom
 import scala.scalajs.js
@@ -21,7 +20,7 @@ trait SVGSVGElement
   var currentScale: Double = js.native
   val currentTranslate: SVGPoint = js.native
   val height: SVGAnimatedLength = js.native
-  var onunload: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
+  var onunload: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onzoom: (js.ThisFunction1[/* this */ this.type, /* ev */ SVGZoomEvent, _]) | Null = js.native
   /** @deprecated */
   val pixelUnitToMillimeterX: Double = js.native
@@ -60,17 +59,17 @@ trait SVGSVGElement
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_SVGUnload(`type`: SVGUnload, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
+  def addEventListener_SVGUnload(`type`: SVGUnload, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_SVGUnload(
     `type`: SVGUnload,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_SVGUnload(
     `type`: SVGUnload,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -126,17 +125,17 @@ trait SVGSVGElement
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_SVGUnload(`type`: SVGUnload, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
+  def removeEventListener_SVGUnload(`type`: SVGUnload, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_SVGUnload(
     `type`: SVGUnload,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_SVGUnload(
     `type`: SVGUnload,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
@@ -161,13 +160,5 @@ trait SVGSVGElement
   def unsuspendRedraw(suspendHandleID: Double): Unit = js.native
   /** @deprecated */
   def unsuspendRedrawAll(): Unit = js.native
-}
-
-@JSGlobal("SVGSVGElement")
-@js.native
-object SVGSVGElement extends Instantiable0[SVGSVGElement] {
-  val SVG_ZOOMANDPAN_DISABLE: Double = js.native
-  val SVG_ZOOMANDPAN_MAGNIFY: Double = js.native
-  val SVG_ZOOMANDPAN_UNKNOWN: Double = js.native
 }
 

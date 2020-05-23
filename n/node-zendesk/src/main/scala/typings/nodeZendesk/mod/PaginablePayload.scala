@@ -12,10 +12,12 @@ trait PaginablePayload extends js.Object {
 
 object PaginablePayload {
   @scala.inline
-  def apply(count: Double, next_page: Int | Double = null, previous_page: Int | Double = null): PaginablePayload = {
-    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
-    if (next_page != null) __obj.updateDynamic("next_page")(next_page.asInstanceOf[js.Any])
-    if (previous_page != null) __obj.updateDynamic("previous_page")(previous_page.asInstanceOf[js.Any])
+  def apply(
+    count: Double,
+    next_page: Double = null.asInstanceOf[Double],
+    previous_page: Double = null.asInstanceOf[Double]
+  ): PaginablePayload = {
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], next_page = next_page.asInstanceOf[js.Any], previous_page = previous_page.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginablePayload]
   }
 }

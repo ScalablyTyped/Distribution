@@ -22,10 +22,10 @@ object SpecConfig {
   def apply(
     numClients: Double,
     useGarbageCollection: Boolean,
-    maxConcurrentLimboResolutions: Int | Double = null
+    maxConcurrentLimboResolutions: js.UndefOr[Double] = js.undefined
   ): SpecConfig = {
     val __obj = js.Dynamic.literal(numClients = numClients.asInstanceOf[js.Any], useGarbageCollection = useGarbageCollection.asInstanceOf[js.Any])
-    if (maxConcurrentLimboResolutions != null) __obj.updateDynamic("maxConcurrentLimboResolutions")(maxConcurrentLimboResolutions.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxConcurrentLimboResolutions)) __obj.updateDynamic("maxConcurrentLimboResolutions")(maxConcurrentLimboResolutions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpecConfig]
   }
 }

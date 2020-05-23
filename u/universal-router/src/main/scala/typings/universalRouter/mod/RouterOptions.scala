@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.pathToRegexp.mod.TokensToRegexpOptions because var conflicts: delimiter. Inlined encode, end, endsWith, sensitive, start, strict */ trait RouterOptions[R, C /* <: RouterContext */]
   extends ParseOptions
      with RegexpToFunctionOptions {
@@ -43,7 +43,7 @@ import scala.scalajs.js.annotation._
 
 object RouterOptions {
   @scala.inline
-  def apply[R, C /* <: RouterContext */](
+  def apply[R, C](
     baseUrl: String = null,
     context: C = null,
     decode: (/* value */ String, /* token */ Key) => String = null,
@@ -64,14 +64,14 @@ object RouterOptions {
     if (decode != null) __obj.updateDynamic("decode")(js.Any.fromFunction2(decode))
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     if (encode != null) __obj.updateDynamic("encode")(js.Any.fromFunction1(encode))
-    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
     if (endsWith != null) __obj.updateDynamic("endsWith")(endsWith.asInstanceOf[js.Any])
     if (errorHandler != null) __obj.updateDynamic("errorHandler")(js.Any.fromFunction2(errorHandler))
     if (prefixes != null) __obj.updateDynamic("prefixes")(prefixes.asInstanceOf[js.Any])
     if (resolveRoute != null) __obj.updateDynamic("resolveRoute")(js.Any.fromFunction2(resolveRoute))
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
-    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouterOptions[R, C]]
   }
 }

@@ -13,9 +13,9 @@ trait ColorObject extends js.Object {
 
 object ColorObject {
   @scala.inline
-  def apply(b: Double, g: Double, r: Double, a: Int | Double = null): ColorObject = {
+  def apply(b: Double, g: Double, r: Double, a: js.UndefOr[Double] = js.undefined): ColorObject = {
     val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
-    if (a != null) __obj.updateDynamic("a")(a.asInstanceOf[js.Any])
+    if (!js.isUndefined(a)) __obj.updateDynamic("a")(a.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorObject]
   }
 }

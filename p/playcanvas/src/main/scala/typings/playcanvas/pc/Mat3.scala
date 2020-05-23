@@ -6,110 +6,85 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @class
-  * @name pc.Mat3
-  * @classdesc A 3x3 matrix.
-  * @description Creates a new identity Mat3 object.
-  * @property {Float32Array} data Matrix elements in the form of a flat array.
+  * Creates a new identity Mat3 object.
+  * @property data - Matrix elements in the form of a flat array.
   */
-@JSGlobal("pc.Mat3")
-@js.native
-class Mat3 () extends js.Object {
+trait Mat3 extends js.Object {
   /**
     * Matrix elements in the form of a flat array.
     */
-  var data: Float32Array = js.native
+  var data: Float32Array
   /**
-    * @function
-    * @name pc.Mat3#copy
-    * @description Copies the contents of a source 3x3 matrix to a destination 3x3 matrix.
-    * @param {pc.Mat3} rhs - A 3x3 matrix to be copied.
-    * @returns {pc.Mat3} Self for chaining.
+    * Copies the contents of a source 3x3 matrix to a destination 3x3 matrix.
     * @example
     * var src = new pc.Mat3().translate(10, 20, 30);
-    * var dst = new pc.Mat3();
-    * dst.copy(src);
-    * console.log("The two matrices are " + (src.equals(dst) ? "equal" : "different"));
+    var dst = new pc.Mat3();
+    dst.copy(src);
+    console.log("The two matrices are " + (src.equals(dst) ? "equal" : "different"));
+    * @param rhs - A 3x3 matrix to be copied.
+    * @returns Self for chaining.
     */
-  def copy(rhs: Mat3): Mat3 = js.native
+  def copy(rhs: Mat3): Mat3
   /**
-    * @function
-    * @name pc.Mat3#equals
-    * @param {pc.Mat3} rhs - The other matrix.
-    * @description Reports whether two matrices are equal.
-    * @returns {boolean} True if the matrices are equal and false otherwise.
+    * Reports whether two matrices are equal.
     * @example
     * var a = new pc.Mat3().translate(10, 20, 30);
-    * var b = new pc.Mat3();
-    * console.log("The two matrices are " + (a.equals(b) ? "equal" : "different"));
+    var b = new pc.Mat3();
+    console.log("The two matrices are " + (a.equals(b) ? "equal" : "different"));
+    * @param rhs - The other matrix.
+    * @returns True if the matrices are equal and false otherwise.
     */
-  def equals(rhs: Mat3): Boolean = js.native
+  def equals(rhs: Mat3): Boolean
   /**
-    * @function
-    * @name pc.Mat3#isIdentity
-    * @description Reports whether the specified matrix is the identity matrix.
-    * @returns {boolean} True if the matrix is identity and false otherwise.
+    * Reports whether the specified matrix is the identity matrix.
     * @example
     * var m = new pc.Mat3();
-    * console.log("The matrix is " + (m.isIdentity() ? "identity" : "not identity"));
+    console.log("The matrix is " + (m.isIdentity() ? "identity" : "not identity"));
+    * @returns True if the matrix is identity and false otherwise.
     */
-  def isIdentity(): Boolean = js.native
+  def isIdentity(): Boolean
   /**
-    * @function
-    * @name pc.Mat3#set
-    * @description Copies the contents of a source array[9] to a destination 3x3 matrix.
-    * @param {number[]} src - An array[9] to be copied.
-    * @returns {pc.Mat3} Self for chaining.
+    * Copies the contents of a source array[9] to a destination 3x3 matrix.
     * @example
     * var dst = new pc.Mat3();
-    * dst.set([0, 1, 2, 3, 4, 5, 6, 7, 8]);
+    dst.set([0, 1, 2, 3, 4, 5, 6, 7, 8]);
+    * @param src - An array[9] to be copied.
+    * @returns Self for chaining.
     */
-  def set(src: js.Array[Double]): Mat3 = js.native
+  def set(src: js.Array[Double]): Mat3
   /**
-    * @function
-    * @name pc.Mat3#setIdentity
-    * @description Sets the matrix to the identity matrix.
-    * @returns {pc.Mat3} Self for chaining.
+    * Sets the matrix to the identity matrix.
     * @example
     * m.setIdentity();
-    * console.log("The matrix is " + (m.isIdentity() ? "identity" : "not identity"));
+    console.log("The matrix is " + (m.isIdentity() ? "identity" : "not identity"));
+    * @returns Self for chaining.
     */
-  def setIdentity(): Mat3 = js.native
+  def setIdentity(): Mat3
   /**
-    * @function
-    * @name pc.Mat3#transpose
-    * @description Generates the transpose of the specified 3x3 matrix.
-    * @returns {pc.Mat3} Self for chaining.
+    * Generates the transpose of the specified 3x3 matrix.
     * @example
     * var m = new pc.Mat3();
-    *
-    * // Transpose in place
-    * m.transpose();
+    
+    // Transpose in place
+    m.transpose();
+    * @returns Self for chaining.
     */
-  def transpose(): Mat3 = js.native
+  def transpose(): Mat3
 }
 
-/* static members */
-@JSGlobal("pc.Mat3")
-@js.native
-object Mat3 extends js.Object {
-  /**
-    * @field
-    * @static
-    * @readonly
-    * @name pc.Mat3.IDENTITY
-    * @type {pc.Mat3}
-    * @description A constant matrix set to the identity.
-    */
-  val IDENTITY: Mat3 = js.native
-  /**
-    * @field
-    * @static
-    * @readonly
-    * @name pc.Mat3.ZERO
-    * @type {pc.Mat3}
-    * @description A constant matrix with all elements set to 0.
-    */
-  val ZERO: Mat3 = js.native
+object Mat3 {
+  @scala.inline
+  def apply(
+    copy: Mat3 => Mat3,
+    data: Float32Array,
+    equals: Mat3 => Boolean,
+    isIdentity: () => Boolean,
+    set: js.Array[Double] => Mat3,
+    setIdentity: () => Mat3,
+    transpose: () => Mat3
+  ): Mat3 = {
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction1(copy), data = data.asInstanceOf[js.Any], equals = js.Any.fromFunction1(equals), isIdentity = js.Any.fromFunction0(isIdentity), set = js.Any.fromFunction1(set), setIdentity = js.Any.fromFunction0(setIdentity), transpose = js.Any.fromFunction0(transpose))
+    __obj.asInstanceOf[Mat3]
+  }
 }
 

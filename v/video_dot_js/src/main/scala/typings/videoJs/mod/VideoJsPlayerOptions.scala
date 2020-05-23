@@ -51,11 +51,11 @@ object VideoJsPlayerOptions {
     children: js.Array[Child] = null,
     controlBar: ControlBarOptions | `false` = null,
     controls: js.UndefOr[Boolean] = js.undefined,
-    defaultVolume: Int | Double = null,
+    defaultVolume: js.UndefOr[Double] = js.undefined,
     fluid: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     html5: js.Any = null,
-    inactivityTimeout: Int | Double = null,
+    inactivityTimeout: js.UndefOr[Double] = js.undefined,
     language: String = null,
     languages: StringDictionary[LanguageTranslations] = null,
     liveui: js.UndefOr[Boolean] = js.undefined,
@@ -73,37 +73,37 @@ object VideoJsPlayerOptions {
     techOrder: js.Array[String] = null,
     textTrackSettings: TextTrackSettingsOptions = null,
     tracks: js.Array[TextTrackOptions] = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): VideoJsPlayerOptions = {
     val __obj = js.Dynamic.literal()
     if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio.asInstanceOf[js.Any])
     if (autoplay != null) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (controlBar != null) __obj.updateDynamic("controlBar")(controlBar.asInstanceOf[js.Any])
-    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
-    if (defaultVolume != null) __obj.updateDynamic("defaultVolume")(defaultVolume.asInstanceOf[js.Any])
-    if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultVolume)) __obj.updateDynamic("defaultVolume")(defaultVolume.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (html5 != null) __obj.updateDynamic("html5")(html5.asInstanceOf[js.Any])
-    if (inactivityTimeout != null) __obj.updateDynamic("inactivityTimeout")(inactivityTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(inactivityTimeout)) __obj.updateDynamic("inactivityTimeout")(inactivityTimeout.get.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (languages != null) __obj.updateDynamic("languages")(languages.asInstanceOf[js.Any])
-    if (!js.isUndefined(liveui)) __obj.updateDynamic("liveui")(liveui.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.asInstanceOf[js.Any])
-    if (!js.isUndefined(nativeControlsForTouch)) __obj.updateDynamic("nativeControlsForTouch")(nativeControlsForTouch.asInstanceOf[js.Any])
+    if (!js.isUndefined(liveui)) __obj.updateDynamic("liveui")(liveui.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nativeControlsForTouch)) __obj.updateDynamic("nativeControlsForTouch")(nativeControlsForTouch.get.asInstanceOf[js.Any])
     if (notSupportedMessage != null) __obj.updateDynamic("notSupportedMessage")(notSupportedMessage.asInstanceOf[js.Any])
     if (playbackRates != null) __obj.updateDynamic("playbackRates")(playbackRates.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (poster != null) __obj.updateDynamic("poster")(poster.asInstanceOf[js.Any])
     if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceOrder)) __obj.updateDynamic("sourceOrder")(sourceOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceOrder)) __obj.updateDynamic("sourceOrder")(sourceOrder.get.asInstanceOf[js.Any])
     if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
     if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     if (techOrder != null) __obj.updateDynamic("techOrder")(techOrder.asInstanceOf[js.Any])
     if (textTrackSettings != null) __obj.updateDynamic("textTrackSettings")(textTrackSettings.asInstanceOf[js.Any])
     if (tracks != null) __obj.updateDynamic("tracks")(tracks.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoJsPlayerOptions]
   }
 }

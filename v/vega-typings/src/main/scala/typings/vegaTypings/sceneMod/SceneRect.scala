@@ -1,6 +1,6 @@
 package typings.vegaTypings.sceneMod
 
-import typings.vegaTypings.AnonRole
+import typings.vegaTypings.anon.Role
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait SceneRect extends js.Object {
   var datum: js.UndefOr[js.Object] = js.undefined
   var fill: String
   var height: Double
-  var mark: AnonRole
+  var mark: Role
   var width: Double
   var x: Double
   var y: Double
@@ -23,7 +23,7 @@ object SceneRect {
     bounds: Bounds,
     fill: String,
     height: Double,
-    mark: AnonRole,
+    mark: Role,
     width: Double,
     x: Double,
     y: Double,

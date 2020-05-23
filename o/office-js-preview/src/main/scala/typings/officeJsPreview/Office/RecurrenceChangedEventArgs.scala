@@ -6,17 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RecurrenceChangedEventArgs extends js.Object {
-  /** 
-    * Gets the updated recurrence object. 
-    * 
-    * [Api set: Mailbox 1.7] 
-    */ 
+  /**
+    * Gets the updated recurrence object.
+    *
+    * [Api set: Mailbox 1.7]
+    */
   var recurrence: Recurrence
-  /** 
-    * Gets the type of the event. See `Office.EventType` for details. 
-    * 
-    * [Api set: Mailbox 1.7] 
-    */ 
+  /**
+    * Gets the type of the event. See `Office.EventType` for details.
+    *
+    * [Api set: Mailbox 1.7]
+    */
   var `type`: olkRecurrenceChanged
 }
 

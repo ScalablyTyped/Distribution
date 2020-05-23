@@ -20,8 +20,8 @@ object OrderCreateOptions {
   ): OrderCreateOptions = {
     val __obj = js.Dynamic.literal()
     if (inventory_behavior != null) __obj.updateDynamic("inventory_behavior")(inventory_behavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(send_fulfillment_receipt)) __obj.updateDynamic("send_fulfillment_receipt")(send_fulfillment_receipt.asInstanceOf[js.Any])
-    if (!js.isUndefined(send_receipt)) __obj.updateDynamic("send_receipt")(send_receipt.asInstanceOf[js.Any])
+    if (!js.isUndefined(send_fulfillment_receipt)) __obj.updateDynamic("send_fulfillment_receipt")(send_fulfillment_receipt.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(send_receipt)) __obj.updateDynamic("send_receipt")(send_receipt.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderCreateOptions]
   }
 }

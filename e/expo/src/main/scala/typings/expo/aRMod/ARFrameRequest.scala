@@ -21,9 +21,9 @@ object ARFrameRequest {
   ): ARFrameRequest = {
     val __obj = js.Dynamic.literal()
     if (anchors != null) __obj.updateDynamic("anchors")(anchors.asInstanceOf[js.Any])
-    if (!js.isUndefined(capturedDepthData)) __obj.updateDynamic("capturedDepthData")(capturedDepthData.asInstanceOf[js.Any])
-    if (!js.isUndefined(lightEstimation)) __obj.updateDynamic("lightEstimation")(lightEstimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(rawFeaturePoints)) __obj.updateDynamic("rawFeaturePoints")(rawFeaturePoints.asInstanceOf[js.Any])
+    if (!js.isUndefined(capturedDepthData)) __obj.updateDynamic("capturedDepthData")(capturedDepthData.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lightEstimation)) __obj.updateDynamic("lightEstimation")(lightEstimation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rawFeaturePoints)) __obj.updateDynamic("rawFeaturePoints")(rawFeaturePoints.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ARFrameRequest]
   }
 }

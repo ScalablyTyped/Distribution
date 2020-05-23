@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("gapi.drive.realtime.Model")
 @js.native
-class Model () extends js.Object {
+trait Model extends js.Object {
   // An estimate of the number of bytes used by data stored in the model.
   var bytesUsed: Double = js.native
   // True if the model can currently redo.

@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.ChartTrendlineLabelFormatData
 import typings.officeJs.Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions
 import typings.officeJs.Excel.Interfaces.ChartTrendlineLabelFormatUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,12 +16,11 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.8]
   */
-@JSGlobal("Excel.ChartTrendlineLabelFormat")
 @js.native
-class ChartTrendlineLabelFormat () extends ClientObject {
+trait ChartTrendlineLabelFormat extends ClientObject {
   /**
     *
-    * Represents the border format, which includes color, linestyle, and weight.
+    * Specifies the border format, which includes color, linestyle, and weight.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -31,14 +30,14 @@ class ChartTrendlineLabelFormat () extends ClientObject {
   var context_ChartTrendlineLabelFormat: RequestContext = js.native
   /**
     *
-    * Represents the fill format of the current chart trendline label.
+    * Specifies the fill format of the current chart trendline label.
     *
     * [Api set: ExcelApi 1.8]
     */
   val fill: ChartFill = js.native
   /**
     *
-    * Represents the font attributes (font name, font size, color, etc.) for a chart trendline label.
+    * Specifies the font attributes (font name, font size, color, etc.) for a chart trendline label.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -50,7 +49,7 @@ class ChartTrendlineLabelFormat () extends ClientObject {
     */
   def load(): ChartTrendlineLabelFormat = js.native
   def load(options: ChartTrendlineLabelFormatLoadOptions): ChartTrendlineLabelFormat = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ChartTrendlineLabelFormat = js.native
+  def load(propertyNamesAndPaths: Expand): ChartTrendlineLabelFormat = js.native
   def load(propertyNames: String): ChartTrendlineLabelFormat = js.native
   def load(propertyNames: js.Array[String]): ChartTrendlineLabelFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

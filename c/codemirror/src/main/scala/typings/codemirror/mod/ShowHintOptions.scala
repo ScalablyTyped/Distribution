@@ -32,19 +32,23 @@ object ShowHintOptions {
     closeOnUnfocus: js.UndefOr[Boolean] = js.undefined,
     completeOnSingleClick: js.UndefOr[Boolean] = js.undefined,
     completeSingle: js.UndefOr[Boolean] = js.undefined,
-    container: HTMLElement = null,
-    customKeys: StringDictionary[(js.Function2[/* editor */ Editor, /* handle */ Handle, Unit]) | String] = null,
-    extraKeys: StringDictionary[(js.Function2[/* editor */ Editor, /* handle */ Handle, Unit]) | String] = null
+    container: js.UndefOr[Null | HTMLElement] = js.undefined,
+    customKeys: js.UndefOr[
+      Null | (StringDictionary[(js.Function2[/* editor */ Editor, /* handle */ Handle, Unit]) | String])
+    ] = js.undefined,
+    extraKeys: js.UndefOr[
+      Null | (StringDictionary[(js.Function2[/* editor */ Editor, /* handle */ Handle, Unit]) | String])
+    ] = js.undefined
   ): ShowHintOptions = {
     val __obj = js.Dynamic.literal(hint = hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(alignWithWord)) __obj.updateDynamic("alignWithWord")(alignWithWord.asInstanceOf[js.Any])
+    if (!js.isUndefined(alignWithWord)) __obj.updateDynamic("alignWithWord")(alignWithWord.get.asInstanceOf[js.Any])
     if (closeCharacters != null) __obj.updateDynamic("closeCharacters")(closeCharacters.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnUnfocus)) __obj.updateDynamic("closeOnUnfocus")(closeOnUnfocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(completeOnSingleClick)) __obj.updateDynamic("completeOnSingleClick")(completeOnSingleClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(completeSingle)) __obj.updateDynamic("completeSingle")(completeSingle.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (customKeys != null) __obj.updateDynamic("customKeys")(customKeys.asInstanceOf[js.Any])
-    if (extraKeys != null) __obj.updateDynamic("extraKeys")(extraKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnUnfocus)) __obj.updateDynamic("closeOnUnfocus")(closeOnUnfocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(completeOnSingleClick)) __obj.updateDynamic("completeOnSingleClick")(completeOnSingleClick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(completeSingle)) __obj.updateDynamic("completeSingle")(completeSingle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(container)) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(customKeys)) __obj.updateDynamic("customKeys")(customKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(extraKeys)) __obj.updateDynamic("extraKeys")(extraKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowHintOptions]
   }
 }

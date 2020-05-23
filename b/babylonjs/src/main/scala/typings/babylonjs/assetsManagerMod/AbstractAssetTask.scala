@@ -1,6 +1,6 @@
 package typings.babylonjs.assetsManagerMod
 
-import typings.babylonjs.AnonException
+import typings.babylonjs.anon.Exception
 import typings.babylonjs.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,7 +34,7 @@ abstract class AbstractAssetTask protected () extends js.Object {
   /**
     * Gets the current error object (if task is in error)
     */
-  def errorObject: AnonException = js.native
+  def errorObject: Exception = js.native
   /**
     * Get if the task is completed
     */

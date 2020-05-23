@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.anon.IsSelectedOnFocus
 import typings.officeUiFabricReact.marqueeSelectionTypesMod.IMarqueeSelectionProps
-import typings.officeUiFabricReact.officeUiFabricReactStrings.change
 import typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneProps
 import typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneState
 import typings.react.mod.FunctionComponent
@@ -32,7 +32,7 @@ object libMarqueeSelectionMod extends js.Object {
   }
   
   val MarqueeSelection: FunctionComponent[IMarqueeSelectionProps] = js.native
-  val SELECTION_CHANGE: change = js.native
+  val SELECTION_CHANGE: /* "change" */ String = js.native
   @js.native
   object SelectionDirection extends js.Object {
     /* 0 */ val horizontal: typings.uifabricUtilities.selectionTypesMod.SelectionDirection.horizontal with Double = js.native
@@ -53,7 +53,7 @@ object libMarqueeSelectionMod extends js.Object {
   /* static members */
   @js.native
   object SelectionZone extends js.Object {
-    var defaultProps: AnonIsSelectedOnFocus = js.native
+    var defaultProps: IsSelectedOnFocus = js.native
     def getDerivedStateFromProps(nextProps: ISelectionZoneProps, prevState: ISelectionZoneState): ISelectionZoneState = js.native
   }
   

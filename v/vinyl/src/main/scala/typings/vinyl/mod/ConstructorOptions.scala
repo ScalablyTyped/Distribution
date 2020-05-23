@@ -9,10 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ConstructorOptions
-  extends /**
-  * Any custom option properties will be directly assigned to the new Vinyl object.
-  */
-/* customOption */ StringDictionary[js.Any] {
+  extends /* customProperty */ StringDictionary[js.Any] {
   /**
     * Used for relative pathing. Typically where a glob starts. Default: options.cwd
     */
@@ -49,12 +46,9 @@ trait ConstructorOptions
 object ConstructorOptions {
   @scala.inline
   def apply(
-    StringDictionary: /**
-    * Any custom option properties will be directly assigned to the new Vinyl object.
-    */
-  /* customOption */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     base: String = null,
-    contents: Buffer | ReadableStream = null,
+    contents: js.UndefOr[Null | Buffer | ReadableStream] = js.undefined,
     cwd: String = null,
     history: js.Array[String] = null,
     path: String = null,
@@ -63,7 +57,7 @@ object ConstructorOptions {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
+    if (!js.isUndefined(contents)) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
     if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
     if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])

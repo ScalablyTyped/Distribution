@@ -5,12 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides properties for image information that is displayed by SystemMediaTransportControlsDisplayUpdater class. */
-@JSGlobal("Windows.Media.ImageDisplayProperties")
-@js.native
-abstract class ImageDisplayProperties () extends js.Object {
+trait ImageDisplayProperties extends js.Object {
   /** Gets or sets the subtitle of the image. */
-  var subtitle: String = js.native
+  var subtitle: String
   /** Gets or sets the title of the image. */
-  var title: String = js.native
+  var title: String
+}
+
+object ImageDisplayProperties {
+  @scala.inline
+  def apply(subtitle: String, title: String): ImageDisplayProperties = {
+    val __obj = js.Dynamic.literal(subtitle = subtitle.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ImageDisplayProperties]
+  }
 }
 

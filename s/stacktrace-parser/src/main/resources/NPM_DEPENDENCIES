@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "stacktrace-parser" : "0.1.10"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "stacktrace-parser" : "0.1.10"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

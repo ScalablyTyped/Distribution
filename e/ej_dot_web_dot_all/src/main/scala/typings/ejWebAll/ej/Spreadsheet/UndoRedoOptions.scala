@@ -19,11 +19,11 @@ trait UndoRedoOptions extends js.Object {
 
 object UndoRedoOptions {
   @scala.inline
-  def apply(action: String = null, cell: HTMLElement = null, sheetIndex: Int | Double = null): UndoRedoOptions = {
+  def apply(action: String = null, cell: HTMLElement = null, sheetIndex: js.UndefOr[Double] = js.undefined): UndoRedoOptions = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
-    if (sheetIndex != null) __obj.updateDynamic("sheetIndex")(sheetIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetIndex)) __obj.updateDynamic("sheetIndex")(sheetIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UndoRedoOptions]
   }
 }

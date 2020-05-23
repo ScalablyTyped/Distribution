@@ -30,12 +30,12 @@ object UpdateWebhookInput {
     projectName: ProjectName,
     branchFilter: String = null,
     filterGroups: FilterGroups = null,
-    rotateSecret: js.UndefOr[scala.Boolean] = js.undefined
+    rotateSecret: js.UndefOr[Boolean] = js.undefined
   ): UpdateWebhookInput = {
     val __obj = js.Dynamic.literal(projectName = projectName.asInstanceOf[js.Any])
     if (branchFilter != null) __obj.updateDynamic("branchFilter")(branchFilter.asInstanceOf[js.Any])
     if (filterGroups != null) __obj.updateDynamic("filterGroups")(filterGroups.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotateSecret)) __obj.updateDynamic("rotateSecret")(rotateSecret.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotateSecret)) __obj.updateDynamic("rotateSecret")(rotateSecret.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateWebhookInput]
   }
 }

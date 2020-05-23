@@ -5,10 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Event data for depth frame source added events. */
-@JSGlobal("Windows.Devices.Perception.PerceptionDepthFrameSourceAddedEventArgs")
-@js.native
-abstract class PerceptionDepthFrameSourceAddedEventArgs () extends js.Object {
+trait PerceptionDepthFrameSourceAddedEventArgs extends js.Object {
   /** Gets the depth frame source that was added. */
-  var frameSource: PerceptionDepthFrameSource = js.native
+  var frameSource: PerceptionDepthFrameSource
+}
+
+object PerceptionDepthFrameSourceAddedEventArgs {
+  @scala.inline
+  def apply(frameSource: PerceptionDepthFrameSource): PerceptionDepthFrameSourceAddedEventArgs = {
+    val __obj = js.Dynamic.literal(frameSource = frameSource.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PerceptionDepthFrameSourceAddedEventArgs]
+  }
 }
 

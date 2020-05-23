@@ -12,9 +12,9 @@ trait DnsSdError extends Error {
 
 object DnsSdError {
   @scala.inline
-  def apply(message: String, name: String, errorCode: Int | Double = null, stack: String = null): DnsSdError = {
+  def apply(message: String, name: String, errorCode: js.UndefOr[Double] = js.undefined, stack: String = null): DnsSdError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorCode)) __obj.updateDynamic("errorCode")(errorCode.get.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[DnsSdError]
   }

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.Text.Core
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object CoreTextSelectionUpdatingResult extends js.Object {
   /** The selection update operation completed successfully. */
   @js.native
   sealed trait succeeded extends CoreTextSelectionUpdatingResult
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CoreTextSelectionUpdatingResult with Double] = js.native
-  /* 1 */ @js.native
-  object failed extends TopLevel[failed with Double]
-  
-  /* 0 */ @js.native
-  object succeeded extends TopLevel[succeeded with Double]
   
 }
 

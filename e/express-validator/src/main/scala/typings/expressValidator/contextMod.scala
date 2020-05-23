@@ -1,5 +1,6 @@
 package typings.expressValidator
 
+import typings.expressValidator.anon.RequiredOnly
 import typings.expressValidator.baseMod.FieldInstance
 import typings.expressValidator.baseMod.Location
 import typings.expressValidator.baseMod.Meta
@@ -39,12 +40,12 @@ object contextMod extends js.Object {
     def addFieldInstances(instances: js.Array[FieldInstance]): Unit = js.native
     def errors: js.Array[ValidationError] = js.native
     def getData(): js.Array[FieldInstance] = js.native
-    def getData(options: AnonRequiredOnly): js.Array[FieldInstance] = js.native
+    def getData(options: RequiredOnly): js.Array[FieldInstance] = js.native
     def setData(path: String, value: js.Any, location: Location): Unit = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.expressValidator.AnonNullable
+    - typings.expressValidator.anon.Nullable
     - typings.expressValidator.expressValidatorBooleans.`false`
   */
   trait Optional extends js.Object
@@ -67,14 +68,14 @@ object contextMod extends js.Object {
     var errors_Original: js.Function0[js.Array[ValidationError]] = js.native
     var fields: js.Array[String] = js.native
     @JSName("getData")
-    var getData_Original: js.Function1[/* options */ js.UndefOr[AnonRequiredOnly], js.Array[FieldInstance]] = js.native
+    var getData_Original: js.Function1[/* options */ js.UndefOr[RequiredOnly], js.Array[FieldInstance]] = js.native
     var locations: js.Array[Location] = js.native
     var message: js.UndefOr[js.Any] = js.native
     var optional: Optional = js.native
     var stack: js.Array[ContextItem] = js.native
     def errors(): js.Array[ValidationError] = js.native
     def getData(): js.Array[FieldInstance] = js.native
-    def getData(options: AnonRequiredOnly): js.Array[FieldInstance] = js.native
+    def getData(options: RequiredOnly): js.Array[FieldInstance] = js.native
   }
   
 }

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a provider of asymmetric (public) key algorithms. For more information, see Cryptographic keys. */
-@JSGlobal("Windows.Security.Cryptography.Core.AsymmetricKeyAlgorithmProvider")
 @js.native
-abstract class AsymmetricKeyAlgorithmProvider () extends js.Object {
+trait AsymmetricKeyAlgorithmProvider extends js.Object {
   /** Gets the name of the open asymmetric algorithm. */
   var algorithmName: String = js.native
   /**
@@ -55,17 +54,5 @@ abstract class AsymmetricKeyAlgorithmProvider () extends js.Object {
     * @return Represents the imported key.
     */
   def importPublicKey(keyBlob: IBuffer, BlobType: CryptographicPublicKeyBlobType): CryptographicKey = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Security.Cryptography.Core.AsymmetricKeyAlgorithmProvider")
-@js.native
-object AsymmetricKeyAlgorithmProvider extends js.Object {
-  /**
-    * Creates an instance of the AsymmetricKeyAlgorithmProvider class and opens the specified algorithm for use.
-    * @param algorithm Algorithm name.
-    * @return Represents a public key algorithm provider.
-    */
-  def openAlgorithm(algorithm: String): AsymmetricKeyAlgorithmProvider = js.native
 }
 

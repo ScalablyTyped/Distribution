@@ -50,17 +50,17 @@ object IPositionProps {
     directionalHint: DirectionalHint = null,
     directionalHintFixed: js.UndefOr[Boolean] = js.undefined,
     directionalHintForRTL: DirectionalHint = null,
-    gapSpace: Int | Double = null,
+    gapSpace: js.UndefOr[Double] = js.undefined,
     target: Element | MouseEvent | IPoint = null
   ): IPositionProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alignTargetEdge)) __obj.updateDynamic("alignTargetEdge")(alignTargetEdge.asInstanceOf[js.Any])
+    if (!js.isUndefined(alignTargetEdge)) __obj.updateDynamic("alignTargetEdge")(alignTargetEdge.get.asInstanceOf[js.Any])
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (!js.isUndefined(coverTarget)) __obj.updateDynamic("coverTarget")(coverTarget.asInstanceOf[js.Any])
+    if (!js.isUndefined(coverTarget)) __obj.updateDynamic("coverTarget")(coverTarget.get.asInstanceOf[js.Any])
     if (directionalHint != null) __obj.updateDynamic("directionalHint")(directionalHint.asInstanceOf[js.Any])
-    if (!js.isUndefined(directionalHintFixed)) __obj.updateDynamic("directionalHintFixed")(directionalHintFixed.asInstanceOf[js.Any])
+    if (!js.isUndefined(directionalHintFixed)) __obj.updateDynamic("directionalHintFixed")(directionalHintFixed.get.asInstanceOf[js.Any])
     if (directionalHintForRTL != null) __obj.updateDynamic("directionalHintForRTL")(directionalHintForRTL.asInstanceOf[js.Any])
-    if (gapSpace != null) __obj.updateDynamic("gapSpace")(gapSpace.asInstanceOf[js.Any])
+    if (!js.isUndefined(gapSpace)) __obj.updateDynamic("gapSpace")(gapSpace.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPositionProps]
   }

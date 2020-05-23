@@ -30,11 +30,11 @@ object DescribeProvisioningArtifactInput {
     ProductId: Id,
     ProvisioningArtifactId: Id,
     AcceptLanguage: AcceptLanguage = null,
-    Verbose: js.UndefOr[Boolean] = js.undefined
+    Verbose: js.UndefOr[Verbose] = js.undefined
   ): DescribeProvisioningArtifactInput = {
     val __obj = js.Dynamic.literal(ProductId = ProductId.asInstanceOf[js.Any], ProvisioningArtifactId = ProvisioningArtifactId.asInstanceOf[js.Any])
     if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
-    if (!js.isUndefined(Verbose)) __obj.updateDynamic("Verbose")(Verbose.asInstanceOf[js.Any])
+    if (!js.isUndefined(Verbose)) __obj.updateDynamic("Verbose")(Verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeProvisioningArtifactInput]
   }
 }

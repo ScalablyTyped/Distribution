@@ -35,12 +35,12 @@ object LaunchConfig {
     packageName: Command,
     environmentVariables: EnvironmentVariableMap = null,
     portForwardingConfig: PortForwardingConfig = null,
-    streamUI: js.UndefOr[scala.Boolean] = js.undefined
+    streamUI: js.UndefOr[Boolean] = js.undefined
   ): LaunchConfig = {
     val __obj = js.Dynamic.literal(launchFile = launchFile.asInstanceOf[js.Any], packageName = packageName.asInstanceOf[js.Any])
     if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables.asInstanceOf[js.Any])
     if (portForwardingConfig != null) __obj.updateDynamic("portForwardingConfig")(portForwardingConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(streamUI)) __obj.updateDynamic("streamUI")(streamUI.asInstanceOf[js.Any])
+    if (!js.isUndefined(streamUI)) __obj.updateDynamic("streamUI")(streamUI.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchConfig]
   }
 }

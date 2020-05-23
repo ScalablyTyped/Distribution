@@ -4,11 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.Vector3")
 @js.native
-class Vector3 protected () extends js.Object {
-  def this(elements: js.Tuple3[Double, Double, Double]) = this()
-  def this(elements: Vector3) = this()
+trait Vector3 extends js.Object {
   val elements: js.Tuple3[Double, Double, Double] = js.native
   def add(elements: js.Tuple3[Double, Double, Double]): this.type = js.native
   def add(elements: Vector3): this.type = js.native

@@ -8,24 +8,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		*	Event dispatched if chat room participant presence status was updated
-		*/
+  *    Event dispatched if chat room participant presence status was updated
+  */
 trait ChatRoomPresenceUpdate extends VoxImplantIMEvent {
   /**
-  			* Optional presence message
-  			*/
+    * Optional presence message
+    */
   var message: String
   /**
-  			* Participant info
-  			*/
+    * Participant info
+    */
   var participant: ParticipantInfo
   /**
-  			* Current presence status
-  			*/
+    * Current presence status
+    */
   var presence: UserStatuses
   /**
-  			* Room id
-  			*/
+    * Room id
+    */
   var room: String
 }
 

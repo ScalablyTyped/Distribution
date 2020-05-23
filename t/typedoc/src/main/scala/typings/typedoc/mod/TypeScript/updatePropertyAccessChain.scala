@@ -14,13 +14,7 @@ object updatePropertyAccessChain extends js.Object {
   def apply(
     node: PropertyAccessChain,
     expression: Expression,
-    questionDotToken: js.UndefOr[scala.Nothing],
-    name: Identifier
-  ): PropertyAccessChain = js.native
-  def apply(
-    node: PropertyAccessChain,
-    expression: Expression,
-    questionDotToken: QuestionDotToken,
+    questionDotToken: js.UndefOr[QuestionDotToken],
     name: Identifier
   ): PropertyAccessChain = js.native
 }

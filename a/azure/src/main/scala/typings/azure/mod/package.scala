@@ -96,7 +96,7 @@ package object mod {
   type StorageServiceStatsCallback = typings.azure.mod.StorageCallback[typings.azure.mod.StorageServiceStats]
   type TableRequestCallback = js.Function3[
     /* error */ typings.std.Error, 
-    /* tableResult */ typings.azure.AnonTableName, 
+    /* tableResult */ typings.azure.anon.TableName, 
     /* response */ typings.azure.mod.WebResponse, 
     scala.Unit
   ]

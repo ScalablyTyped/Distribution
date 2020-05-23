@@ -1,6 +1,5 @@
 package typings.babylonjs.BABYLON
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,14 +17,6 @@ object AnimatedInputBlockTypes extends js.Object {
   /** Time based animation. Will only work for floats */
   @js.native
   sealed trait Time extends AnimatedInputBlockTypes
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AnimatedInputBlockTypes with Double] = js.native
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 1 */ @js.native
-  object Time extends TopLevel[Time with Double]
   
 }
 

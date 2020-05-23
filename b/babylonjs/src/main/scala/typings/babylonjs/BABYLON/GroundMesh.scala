@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.GroundMesh")
 @js.native
-class GroundMesh protected () extends Mesh {
-  def this(name: String, scene: Scene) = this()
+trait GroundMesh extends Mesh {
   var _computeHeightQuads: js.Any = js.native
   var _getFacetAt: js.Any = js.native
   /** @hidden */
@@ -83,18 +81,5 @@ class GroundMesh protected () extends Mesh {
     * @returns the GroundMesh.
     */
   def updateCoordinateHeights(): GroundMesh = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.GroundMesh")
-@js.native
-object GroundMesh extends js.Object {
-  /**
-    * Parses a serialized ground mesh
-    * @param parsedMesh the serialized mesh
-    * @param scene the scene to create the ground mesh in
-    * @returns the created ground mesh
-    */
-  def Parse(parsedMesh: js.Any, scene: Scene): GroundMesh = js.native
 }
 

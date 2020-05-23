@@ -3,7 +3,6 @@ package typings.openfin.mod.fin
 import typings.openfin.openfinStrings.maximized
 import typings.openfin.openfinStrings.minimized
 import typings.openfin.openfinStrings.normal
-import typings.std.Window_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -190,7 +189,7 @@ trait OpenFinWindow extends js.Object {
     * Also, will not work with fin.desktop.Window objects created with fin.desktop.Window.wrap().
     * @returns Native window
     */
-  def getNativeWindow(): Window_ = js.native
+  def getNativeWindow(): typings.std.Window = js.native
   /**
     * Gets the current settings of the window.
     */

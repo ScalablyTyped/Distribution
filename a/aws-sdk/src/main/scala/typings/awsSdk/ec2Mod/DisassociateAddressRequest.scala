@@ -24,12 +24,12 @@ object DisassociateAddressRequest {
   @scala.inline
   def apply(
     AssociationId: ElasticIpAssociationId = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     PublicIp: String = null
   ): DisassociateAddressRequest = {
     val __obj = js.Dynamic.literal()
     if (AssociationId != null) __obj.updateDynamic("AssociationId")(AssociationId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (PublicIp != null) __obj.updateDynamic("PublicIp")(PublicIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateAddressRequest]
   }

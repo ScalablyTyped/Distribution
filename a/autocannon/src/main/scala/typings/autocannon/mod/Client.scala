@@ -35,28 +35,26 @@ trait Client extends EventEmitter {
     event: response,
     listener: js.Function3[/* statusCode */ Double, /* resBytes */ Double, /* responseTime */ Double, Unit]
   ): this.type = js.native
-  def setBody(): Unit = js.native
   /**
     * Used to modify the body of the request this client iterator is currently on. body
     * @param body - should be a `String` or `Buffer`, or `undefined` if you want to remove the body.
     */
+  def setBody(): Unit = js.native
   def setBody(body: String): Unit = js.native
   def setBody(body: Buffer): Unit = js.native
-  def setHeaders(): Unit = js.native
   /**
     * Used to modify the headers of the request this client iterator is currently on.
     * @param headers - should be an `Object`, or `undefined` if you want to remove your headers.
     */
+  def setHeaders(): Unit = js.native
   def setHeaders(headers: IncomingHttpHeaders): Unit = js.native
-  def setHeadersAndBody(): Unit = js.native
-  def setHeadersAndBody(headers: js.UndefOr[scala.Nothing], body: String): Unit = js.native
-  def setHeadersAndBody(headers: js.UndefOr[scala.Nothing], body: Buffer): Unit = js.native
-  def setHeadersAndBody(headers: IncomingHttpHeaders): Unit = js.native
   /**
     * Used to modify the both the headers and body this client iterator is currently on.
     * @param headers - should be an `Object`, or `undefined` if you want to remove your headers.
     * @param body - should be a `String` or `Buffer`, or `undefined` if you want to remove the body.
     */
+  def setHeadersAndBody(): Unit = js.native
+  def setHeadersAndBody(headers: IncomingHttpHeaders): Unit = js.native
   def setHeadersAndBody(headers: IncomingHttpHeaders, body: String): Unit = js.native
   def setHeadersAndBody(headers: IncomingHttpHeaders, body: Buffer): Unit = js.native
   /**

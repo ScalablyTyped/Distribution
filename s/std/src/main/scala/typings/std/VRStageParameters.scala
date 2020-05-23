@@ -14,13 +14,13 @@ object VRStageParameters {
   @scala.inline
   def apply(
     sittingToStandingTransform: Float32Array = null,
-    sizeX: Int | Double = null,
-    sizeY: Int | Double = null
+    sizeX: js.UndefOr[Double] = js.undefined,
+    sizeY: js.UndefOr[Double] = js.undefined
   ): VRStageParameters = {
     val __obj = js.Dynamic.literal()
     if (sittingToStandingTransform != null) __obj.updateDynamic("sittingToStandingTransform")(sittingToStandingTransform.asInstanceOf[js.Any])
-    if (sizeX != null) __obj.updateDynamic("sizeX")(sizeX.asInstanceOf[js.Any])
-    if (sizeY != null) __obj.updateDynamic("sizeY")(sizeY.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizeX)) __obj.updateDynamic("sizeX")(sizeX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizeY)) __obj.updateDynamic("sizeY")(sizeY.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VRStageParameters]
   }
 }

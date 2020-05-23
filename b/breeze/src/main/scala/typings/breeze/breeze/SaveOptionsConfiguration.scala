@@ -20,7 +20,7 @@ object SaveOptionsConfiguration {
     tag: js.Object = null
   ): SaveOptionsConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowConcurrentSaves)) __obj.updateDynamic("allowConcurrentSaves")(allowConcurrentSaves.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowConcurrentSaves)) __obj.updateDynamic("allowConcurrentSaves")(allowConcurrentSaves.get.asInstanceOf[js.Any])
     if (dataService != null) __obj.updateDynamic("dataService")(dataService.asInstanceOf[js.Any])
     if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])

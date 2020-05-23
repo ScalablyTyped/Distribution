@@ -1,6 +1,5 @@
 package typings.reactWeui.mod
 
-import typings.reactWeui.AnonRadio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +15,7 @@ class FormCell protected () extends js.Object {
 @JSImport("react-weui", "FormCell")
 @js.native
 object FormCell extends js.Object {
-  var defaultProps: AnonRadio = js.native
+  var defaultProps: typings.reactWeui.anon.Radio = js.native
   @js.native
   object propTypes extends js.Object {
     @js.native

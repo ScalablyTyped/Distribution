@@ -1,6 +1,6 @@
 package typings.libnpmsearch.mod
 
-import typings.libnpmsearch.Optionsdetailedtrue
+import typings.libnpmsearch.anon.Optionsdetailedtrue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

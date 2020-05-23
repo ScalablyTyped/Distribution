@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "icss-utils"
-version := "4.1-dt-20190614Z-8aa7ce"
-scalaVersion := "2.13.1"
+version := "4.1-dt-20190614Z-de1d00"
+scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "postcss" % "7.0.27-cfa4c4",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-61a869",
-  "org.scalablytyped" %%% "std" % "3.8-9b2470")
+  "org.scalablytyped" %%% "postcss" % "7.0.27-fc4b5c",
+  "org.scalablytyped" %%% "source-map" % "0.7.3-f960ba",
+  "org.scalablytyped" %%% "std" % "3.9-18cbeb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

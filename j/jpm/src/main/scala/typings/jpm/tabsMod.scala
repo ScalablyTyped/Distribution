@@ -1,6 +1,7 @@
 package typings.jpm
 
 import typings.jpm.FFAddonSDK.Tab
+import typings.jpm.anon.InBackground
 import typings.jpm.jpmStrings.activate
 import typings.jpm.jpmStrings.close
 import typings.jpm.jpmStrings.deactivate
@@ -35,6 +36,6 @@ object tabsMod extends js.Object {
   @JSName("on")
   def on_ready(event: ready, handler: js.Function1[/* tab */ Tab, _]): Unit = js.native
   def open(options: String): Unit = js.native
-  def open(options: AnonInBackground): Unit = js.native
+  def open(options: InBackground): Unit = js.native
 }
 

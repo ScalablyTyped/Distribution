@@ -144,7 +144,7 @@ object Model {
     allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     beforeActivate: /* e */ BeforeActivateEventArgs => Unit = null,
     beforeInactivate: /* e */ BeforeInactivateEventArgs => Unit = null,
-    collapseSpeed: Int | Double = null,
+    collapseSpeed: js.UndefOr[Double] = js.undefined,
     collapsible: js.UndefOr[Boolean] = js.undefined,
     create: /* e */ CreateEventArgs => Unit = null,
     cssClass: String = null,
@@ -158,13 +158,13 @@ object Model {
     enabled: js.UndefOr[Boolean] = js.undefined,
     enabledItems: js.Array[Double] = null,
     events: String = null,
-    expandSpeed: Int | Double = null,
+    expandSpeed: js.UndefOr[Double] = js.undefined,
     headerSize: Double | String = null,
     height: Double | String = null,
     heightAdjustMode: HeightAdjustMode | String = null,
     htmlAttributes: js.Any = null,
     inActivate: /* e */ InActivateEventArgs => Unit = null,
-    selectedItemIndex: Int | Double = null,
+    selectedItemIndex: js.UndefOr[Double] = js.undefined,
     selectedItems: js.Array[Double] = null,
     showCloseButton: js.UndefOr[Boolean] = js.undefined,
     showRoundedCorner: js.UndefOr[Boolean] = js.undefined,
@@ -177,33 +177,33 @@ object Model {
     if (ajaxLoad != null) __obj.updateDynamic("ajaxLoad")(js.Any.fromFunction1(ajaxLoad))
     if (ajaxSettings != null) __obj.updateDynamic("ajaxSettings")(ajaxSettings.asInstanceOf[js.Any])
     if (ajaxSuccess != null) __obj.updateDynamic("ajaxSuccess")(js.Any.fromFunction1(ajaxSuccess))
-    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation.get.asInstanceOf[js.Any])
     if (beforeActivate != null) __obj.updateDynamic("beforeActivate")(js.Any.fromFunction1(beforeActivate))
     if (beforeInactivate != null) __obj.updateDynamic("beforeInactivate")(js.Any.fromFunction1(beforeInactivate))
-    if (collapseSpeed != null) __obj.updateDynamic("collapseSpeed")(collapseSpeed.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapseSpeed)) __obj.updateDynamic("collapseSpeed")(collapseSpeed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible.get.asInstanceOf[js.Any])
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (customIcon != null) __obj.updateDynamic("customIcon")(customIcon.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (disabledItems != null) __obj.updateDynamic("disabledItems")(disabledItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMultipleOpen)) __obj.updateDynamic("enableMultipleOpen")(enableMultipleOpen.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableMultipleOpen)) __obj.updateDynamic("enableMultipleOpen")(enableMultipleOpen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (enabledItems != null) __obj.updateDynamic("enabledItems")(enabledItems.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (expandSpeed != null) __obj.updateDynamic("expandSpeed")(expandSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandSpeed)) __obj.updateDynamic("expandSpeed")(expandSpeed.get.asInstanceOf[js.Any])
     if (headerSize != null) __obj.updateDynamic("headerSize")(headerSize.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (heightAdjustMode != null) __obj.updateDynamic("heightAdjustMode")(heightAdjustMode.asInstanceOf[js.Any])
     if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes.asInstanceOf[js.Any])
     if (inActivate != null) __obj.updateDynamic("inActivate")(js.Any.fromFunction1(inActivate))
-    if (selectedItemIndex != null) __obj.updateDynamic("selectedItemIndex")(selectedItemIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedItemIndex)) __obj.updateDynamic("selectedItemIndex")(selectedItemIndex.get.asInstanceOf[js.Any])
     if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object noneOf extends js.Object {
   /**
-  	 * Returns a parser that looks for exactly one character NOT from string, and yields that character.
-  	 */
+    * Returns a parser that looks for exactly one character NOT from string, and yields that character.
+    */
   def apply(string: String): Parser[String] = js.native
 }
 

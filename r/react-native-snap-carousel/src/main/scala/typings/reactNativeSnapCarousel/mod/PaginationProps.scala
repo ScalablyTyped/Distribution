@@ -113,46 +113,46 @@ object PaginationProps {
   def apply(
     activeDotIndex: Double,
     dotsLength: Double,
-    activeOpacity: Int | Double = null,
-    animatedDuration: Int | Double = null,
-    animatedFriction: Int | Double = null,
-    animatedTension: Int | Double = null,
+    activeOpacity: js.UndefOr[Double] = js.undefined,
+    animatedDuration: js.UndefOr[Double] = js.undefined,
+    animatedFriction: js.UndefOr[Double] = js.undefined,
+    animatedTension: js.UndefOr[Double] = js.undefined,
     carouselRef: Component[FlatListProps[_], js.Object, _] = null,
-    containerStyle: StyleProp[ViewStyle] = null,
-    delayPressInDot: Int | Double = null,
+    containerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    delayPressInDot: js.UndefOr[Double] = js.undefined,
     dotColor: String = null,
-    dotContainerStyle: StyleProp[ViewStyle] = null,
+    dotContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     dotElement: ReactNode = null,
-    dotStyle: StyleProp[ViewStyle] = null,
+    dotStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     inactiveDotColor: String = null,
     inactiveDotElement: ReactNode = null,
-    inactiveDotOpacity: Int | Double = null,
-    inactiveDotScale: Int | Double = null,
-    inactiveDotStyle: StyleProp[ViewStyle] = null,
+    inactiveDotOpacity: js.UndefOr[Double] = js.undefined,
+    inactiveDotScale: js.UndefOr[Double] = js.undefined,
+    inactiveDotStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     renderDots: (/* activeIndex */ Double, /* total */ Double, /* context */ js.Any) => ReactNode = null,
     tappableDots: js.UndefOr[Boolean] = js.undefined,
     vertical: js.UndefOr[Boolean] = js.undefined
   ): PaginationProps = {
     val __obj = js.Dynamic.literal(activeDotIndex = activeDotIndex.asInstanceOf[js.Any], dotsLength = dotsLength.asInstanceOf[js.Any])
-    if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
-    if (animatedDuration != null) __obj.updateDynamic("animatedDuration")(animatedDuration.asInstanceOf[js.Any])
-    if (animatedFriction != null) __obj.updateDynamic("animatedFriction")(animatedFriction.asInstanceOf[js.Any])
-    if (animatedTension != null) __obj.updateDynamic("animatedTension")(animatedTension.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeOpacity)) __obj.updateDynamic("activeOpacity")(activeOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animatedDuration)) __obj.updateDynamic("animatedDuration")(animatedDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animatedFriction)) __obj.updateDynamic("animatedFriction")(animatedFriction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animatedTension)) __obj.updateDynamic("animatedTension")(animatedTension.get.asInstanceOf[js.Any])
     if (carouselRef != null) __obj.updateDynamic("carouselRef")(carouselRef.asInstanceOf[js.Any])
-    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (delayPressInDot != null) __obj.updateDynamic("delayPressInDot")(delayPressInDot.asInstanceOf[js.Any])
+    if (!js.isUndefined(containerStyle)) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayPressInDot)) __obj.updateDynamic("delayPressInDot")(delayPressInDot.get.asInstanceOf[js.Any])
     if (dotColor != null) __obj.updateDynamic("dotColor")(dotColor.asInstanceOf[js.Any])
-    if (dotContainerStyle != null) __obj.updateDynamic("dotContainerStyle")(dotContainerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(dotContainerStyle)) __obj.updateDynamic("dotContainerStyle")(dotContainerStyle.asInstanceOf[js.Any])
     if (dotElement != null) __obj.updateDynamic("dotElement")(dotElement.asInstanceOf[js.Any])
-    if (dotStyle != null) __obj.updateDynamic("dotStyle")(dotStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(dotStyle)) __obj.updateDynamic("dotStyle")(dotStyle.asInstanceOf[js.Any])
     if (inactiveDotColor != null) __obj.updateDynamic("inactiveDotColor")(inactiveDotColor.asInstanceOf[js.Any])
     if (inactiveDotElement != null) __obj.updateDynamic("inactiveDotElement")(inactiveDotElement.asInstanceOf[js.Any])
-    if (inactiveDotOpacity != null) __obj.updateDynamic("inactiveDotOpacity")(inactiveDotOpacity.asInstanceOf[js.Any])
-    if (inactiveDotScale != null) __obj.updateDynamic("inactiveDotScale")(inactiveDotScale.asInstanceOf[js.Any])
-    if (inactiveDotStyle != null) __obj.updateDynamic("inactiveDotStyle")(inactiveDotStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(inactiveDotOpacity)) __obj.updateDynamic("inactiveDotOpacity")(inactiveDotOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inactiveDotScale)) __obj.updateDynamic("inactiveDotScale")(inactiveDotScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inactiveDotStyle)) __obj.updateDynamic("inactiveDotStyle")(inactiveDotStyle.asInstanceOf[js.Any])
     if (renderDots != null) __obj.updateDynamic("renderDots")(js.Any.fromFunction3(renderDots))
-    if (!js.isUndefined(tappableDots)) __obj.updateDynamic("tappableDots")(tappableDots.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
+    if (!js.isUndefined(tappableDots)) __obj.updateDynamic("tappableDots")(tappableDots.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationProps]
   }
 }

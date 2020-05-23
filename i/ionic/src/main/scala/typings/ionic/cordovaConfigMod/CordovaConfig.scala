@@ -1,7 +1,7 @@
 package typings.ionic.cordovaConfigMod
 
 import typings.elementtree.mod.ElementTree
-import typings.ionic.AnonVersion
+import typings.ionic.anon.Version
 import typings.ionic.definitionsMod.CordovaPackageJson
 import typings.ionic.definitionsMod.ResourcesPlatform
 import scala.scalajs.js
@@ -24,7 +24,7 @@ class CordovaConfig protected () extends js.Object {
   def getBundleId(): js.UndefOr[String] = js.native
   def getConfiguredPlatforms(): js.Array[ConfiguredPlatform] = js.native
   def getPreference(prefName: String): js.UndefOr[String] = js.native
-  def getProjectInfo(): AnonVersion = js.native
+  def getProjectInfo(): Version = js.native
   def pkg: CordovaPackageJson = js.native
   /* protected */ def reload(): js.Promise[Unit] = js.native
   /**

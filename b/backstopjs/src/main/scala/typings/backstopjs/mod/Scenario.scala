@@ -64,21 +64,21 @@ object Scenario {
   def apply(
     label: String,
     url: String,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     clickSelector: String = null,
     clickSelectors: js.Array[String] = null,
     cookiePath: String = null,
-    delay: Int | Double = null,
-    expect: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
+    expect: js.UndefOr[Double] = js.undefined,
     hideSelectors: js.Array[String] = null,
     hoverSelector: String = null,
     hoverSelectors: js.Array[String] = null,
     keyPressSelector: KeypressSelector = null,
     keyPressSelectors: js.Array[KeypressSelector] = null,
-    misMatchThreshold: Int | Double = null,
+    misMatchThreshold: js.UndefOr[Double] = js.undefined,
     onBeforeScript: String = null,
     onReadyScript: String = null,
-    postInteractionWait: Int | Double = null,
+    postInteractionWait: js.UndefOr[Double] = js.undefined,
     readyEvent: String = null,
     readySelector: String = null,
     referenceUrl: String = null,
@@ -94,24 +94,24 @@ object Scenario {
     if (clickSelector != null) __obj.updateDynamic("clickSelector")(clickSelector.asInstanceOf[js.Any])
     if (clickSelectors != null) __obj.updateDynamic("clickSelectors")(clickSelectors.asInstanceOf[js.Any])
     if (cookiePath != null) __obj.updateDynamic("cookiePath")(cookiePath.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (expect != null) __obj.updateDynamic("expect")(expect.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expect)) __obj.updateDynamic("expect")(expect.get.asInstanceOf[js.Any])
     if (hideSelectors != null) __obj.updateDynamic("hideSelectors")(hideSelectors.asInstanceOf[js.Any])
     if (hoverSelector != null) __obj.updateDynamic("hoverSelector")(hoverSelector.asInstanceOf[js.Any])
     if (hoverSelectors != null) __obj.updateDynamic("hoverSelectors")(hoverSelectors.asInstanceOf[js.Any])
     if (keyPressSelector != null) __obj.updateDynamic("keyPressSelector")(keyPressSelector.asInstanceOf[js.Any])
     if (keyPressSelectors != null) __obj.updateDynamic("keyPressSelectors")(keyPressSelectors.asInstanceOf[js.Any])
-    if (misMatchThreshold != null) __obj.updateDynamic("misMatchThreshold")(misMatchThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(misMatchThreshold)) __obj.updateDynamic("misMatchThreshold")(misMatchThreshold.get.asInstanceOf[js.Any])
     if (onBeforeScript != null) __obj.updateDynamic("onBeforeScript")(onBeforeScript.asInstanceOf[js.Any])
     if (onReadyScript != null) __obj.updateDynamic("onReadyScript")(onReadyScript.asInstanceOf[js.Any])
-    if (postInteractionWait != null) __obj.updateDynamic("postInteractionWait")(postInteractionWait.asInstanceOf[js.Any])
+    if (!js.isUndefined(postInteractionWait)) __obj.updateDynamic("postInteractionWait")(postInteractionWait.get.asInstanceOf[js.Any])
     if (readyEvent != null) __obj.updateDynamic("readyEvent")(readyEvent.asInstanceOf[js.Any])
     if (readySelector != null) __obj.updateDynamic("readySelector")(readySelector.asInstanceOf[js.Any])
     if (referenceUrl != null) __obj.updateDynamic("referenceUrl")(referenceUrl.asInstanceOf[js.Any])
     if (removeSelectors != null) __obj.updateDynamic("removeSelectors")(removeSelectors.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireSameDimensions)) __obj.updateDynamic("requireSameDimensions")(requireSameDimensions.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireSameDimensions)) __obj.updateDynamic("requireSameDimensions")(requireSameDimensions.get.asInstanceOf[js.Any])
     if (scrollToSelector != null) __obj.updateDynamic("scrollToSelector")(scrollToSelector.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectorExpansion)) __obj.updateDynamic("selectorExpansion")(selectorExpansion.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectorExpansion)) __obj.updateDynamic("selectorExpansion")(selectorExpansion.get.asInstanceOf[js.Any])
     if (selectors != null) __obj.updateDynamic("selectors")(selectors.asInstanceOf[js.Any])
     if (viewports != null) __obj.updateDynamic("viewports")(viewports.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scenario]

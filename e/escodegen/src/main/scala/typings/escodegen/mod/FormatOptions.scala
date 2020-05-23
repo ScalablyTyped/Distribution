@@ -71,18 +71,18 @@ object FormatOptions {
     space: String = null
   ): FormatOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
-    if (!js.isUndefined(escapeless)) __obj.updateDynamic("escapeless")(escapeless.asInstanceOf[js.Any])
-    if (!js.isUndefined(hexadecimal)) __obj.updateDynamic("hexadecimal")(hexadecimal.asInstanceOf[js.Any])
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(escapeless)) __obj.updateDynamic("escapeless")(escapeless.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hexadecimal)) __obj.updateDynamic("hexadecimal")(hexadecimal.get.asInstanceOf[js.Any])
     if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
-    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
+    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.get.asInstanceOf[js.Any])
     if (newline != null) __obj.updateDynamic("newline")(newline.asInstanceOf[js.Any])
-    if (!js.isUndefined(parentheses)) __obj.updateDynamic("parentheses")(parentheses.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveBlankLines)) __obj.updateDynamic("preserveBlankLines")(preserveBlankLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(parentheses)) __obj.updateDynamic("parentheses")(parentheses.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveBlankLines)) __obj.updateDynamic("preserveBlankLines")(preserveBlankLines.get.asInstanceOf[js.Any])
     if (quotes != null) __obj.updateDynamic("quotes")(quotes.asInstanceOf[js.Any])
-    if (!js.isUndefined(renumber)) __obj.updateDynamic("renumber")(renumber.asInstanceOf[js.Any])
-    if (!js.isUndefined(safeConcatenation)) __obj.updateDynamic("safeConcatenation")(safeConcatenation.asInstanceOf[js.Any])
-    if (!js.isUndefined(semicolons)) __obj.updateDynamic("semicolons")(semicolons.asInstanceOf[js.Any])
+    if (!js.isUndefined(renumber)) __obj.updateDynamic("renumber")(renumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(safeConcatenation)) __obj.updateDynamic("safeConcatenation")(safeConcatenation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(semicolons)) __obj.updateDynamic("semicolons")(semicolons.get.asInstanceOf[js.Any])
     if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatOptions]
   }

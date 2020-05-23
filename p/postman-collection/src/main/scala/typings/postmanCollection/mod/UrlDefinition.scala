@@ -1,12 +1,12 @@
 package typings.postmanCollection.mod
 
-import typings.postmanCollection.AnonPassword
+import typings.postmanCollection.anon.Password
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait UrlDefinition extends PropertyBaseDefinition {
-  var auth: js.UndefOr[AnonPassword] = js.undefined
+  var auth: js.UndefOr[Password] = js.undefined
   var hash: js.UndefOr[String] = js.undefined
   var host: js.UndefOr[js.Array[String] | String] = js.undefined
   var path: js.UndefOr[js.Array[String] | String] = js.undefined
@@ -19,7 +19,7 @@ trait UrlDefinition extends PropertyBaseDefinition {
 object UrlDefinition {
   @scala.inline
   def apply(
-    auth: AnonPassword = null,
+    auth: Password = null,
     description: String | DescriptionDefinition = null,
     hash: String = null,
     host: js.Array[String] | String = null,

@@ -28,7 +28,7 @@ object DeleteLoadBalancerTlsCertificateRequest {
     force: js.UndefOr[Boolean] = js.undefined
   ): DeleteLoadBalancerTlsCertificateRequest = {
     val __obj = js.Dynamic.literal(certificateName = certificateName.asInstanceOf[js.Any], loadBalancerName = loadBalancerName.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLoadBalancerTlsCertificateRequest]
   }
 }

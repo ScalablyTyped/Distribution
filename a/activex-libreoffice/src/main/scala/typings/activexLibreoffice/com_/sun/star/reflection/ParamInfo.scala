@@ -1,0 +1,24 @@
+package typings.activexLibreoffice.com_.sun.star.reflection
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/** Provides information about a formal parameter of a method. */
+trait ParamInfo extends js.Object {
+  /** parameter mode: in, out, inout */
+  var aMode: ParamMode
+  /** name of the parameter */
+  var aName: String
+  /** formal type of the parameter */
+  var aType: XIdlClass[_]
+}
+
+object ParamInfo {
+  @scala.inline
+  def apply(aMode: ParamMode, aName: String, aType: XIdlClass[_]): ParamInfo = {
+    val __obj = js.Dynamic.literal(aMode = aMode.asInstanceOf[js.Any], aName = aName.asInstanceOf[js.Any], aType = aType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ParamInfo]
+  }
+}
+

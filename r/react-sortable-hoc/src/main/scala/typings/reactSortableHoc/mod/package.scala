@@ -17,7 +17,7 @@ package object mod {
     scala.Unit
   ]
   type SortEvent = (typings.react.mod.MouseEvent[js.Any, typings.react.mod.NativeMouseEvent]) | typings.react.mod.TouchEvent[js.Any]
-  type SortEventWithTag = typings.reactSortableHoc.mod.SortEvent with typings.reactSortableHoc.AnonTarget
+  type SortEventWithTag = typings.reactSortableHoc.mod.SortEvent with typings.reactSortableHoc.anon.Target
   type SortMoveHandler = js.Function1[/* event */ typings.reactSortableHoc.mod.SortEvent, scala.Unit]
   type SortOverHandler = js.Function2[
     /* sort */ typings.reactSortableHoc.mod.SortOver, 
@@ -30,5 +30,5 @@ package object mod {
     scala.Unit
   ]
   type WrappedComponent[P] = (typings.react.mod.ComponentClass[P, typings.react.mod.ComponentState]) | typings.react.mod.SFC[P] | typings.reactSortableHoc.mod.WrappedComponentFactory[P]
-  type WrappedComponentFactory[P] = js.Function1[/* props */ P, typings.react.mod._Global_.JSX.Element]
+  type WrappedComponentFactory[P] = js.Function1[/* props */ P, typings.react.mod.global.JSX.Element]
 }

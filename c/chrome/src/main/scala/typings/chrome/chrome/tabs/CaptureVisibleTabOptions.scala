@@ -19,10 +19,10 @@ trait CaptureVisibleTabOptions extends js.Object {
 
 object CaptureVisibleTabOptions {
   @scala.inline
-  def apply(format: String = null, quality: Int | Double = null): CaptureVisibleTabOptions = {
+  def apply(format: String = null, quality: js.UndefOr[Double] = js.undefined): CaptureVisibleTabOptions = {
     val __obj = js.Dynamic.literal()
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptureVisibleTabOptions]
   }
 }

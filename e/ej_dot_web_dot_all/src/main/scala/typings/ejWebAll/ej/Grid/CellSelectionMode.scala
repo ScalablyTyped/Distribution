@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.Grid
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,14 +17,6 @@ object CellSelectionMode extends js.Object {
   ///It selects cells continuously from the start cell to end cell.
   @js.native
   sealed trait Flow extends CellSelectionMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CellSelectionMode with Double] = js.native
-  /* 1 */ @js.native
-  object Box extends TopLevel[Box with Double]
-  
-  /* 0 */ @js.native
-  object Flow extends TopLevel[Flow with Double]
   
 }
 

@@ -1,5 +1,6 @@
 package typings.hardRejection
 
+import typings.hardRejection.anon.Call
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ object mod extends js.Object {
   // declare function hardRejection(log?: (stack?: string) => void): void;
   // export = hardRejection;
   @JSName("default")
-  var default_Original: AnonCall = js.native
+  var default_Original: Call = js.native
   /**
   	Make unhandled promise rejections fail hard right away instead of the default [silent fail](https://gist.github.com/benjamingr/0237932cee84712951a2).
   	@param log - Custom logging function to print the rejected promise. Receives the error stack. Default: `console.error`.

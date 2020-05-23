@@ -32,7 +32,7 @@ trait UseSortByOptions[D /* <: js.Object */] extends js.Object {
 
 object UseSortByOptions {
   @scala.inline
-  def apply[D /* <: js.Object */](
+  def apply[D](
     autoResetSortBy: js.UndefOr[Boolean] = js.undefined,
     defaultCanSort: js.UndefOr[Boolean] = js.undefined,
     disableMultiSort: js.UndefOr[Boolean] = js.undefined,
@@ -41,20 +41,20 @@ object UseSortByOptions {
     disabledMultiRemove: js.UndefOr[Boolean] = js.undefined,
     isMultiSortEvent: /* e */ MouseEvent[Element, NativeMouseEvent] => Boolean = null,
     manualSortBy: js.UndefOr[Boolean] = js.undefined,
-    maxMultiSortColCount: Int | Double = null,
+    maxMultiSortColCount: js.UndefOr[Double] = js.undefined,
     orderByFn: (/* rows */ js.Array[Row[D]], /* sortFns */ js.Array[SortByFn[D]], /* directions */ js.Array[Boolean]) => js.Array[Row[D]] = null,
     sortTypes: Record[String, SortByFn[D]] = null
   ): UseSortByOptions[D] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoResetSortBy)) __obj.updateDynamic("autoResetSortBy")(autoResetSortBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultCanSort)) __obj.updateDynamic("defaultCanSort")(defaultCanSort.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableMultiSort)) __obj.updateDynamic("disableMultiSort")(disableMultiSort.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableSortBy)) __obj.updateDynamic("disableSortBy")(disableSortBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableSortRemove)) __obj.updateDynamic("disableSortRemove")(disableSortRemove.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabledMultiRemove)) __obj.updateDynamic("disabledMultiRemove")(disabledMultiRemove.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoResetSortBy)) __obj.updateDynamic("autoResetSortBy")(autoResetSortBy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultCanSort)) __obj.updateDynamic("defaultCanSort")(defaultCanSort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableMultiSort)) __obj.updateDynamic("disableMultiSort")(disableMultiSort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableSortBy)) __obj.updateDynamic("disableSortBy")(disableSortBy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableSortRemove)) __obj.updateDynamic("disableSortRemove")(disableSortRemove.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabledMultiRemove)) __obj.updateDynamic("disabledMultiRemove")(disabledMultiRemove.get.asInstanceOf[js.Any])
     if (isMultiSortEvent != null) __obj.updateDynamic("isMultiSortEvent")(js.Any.fromFunction1(isMultiSortEvent))
-    if (!js.isUndefined(manualSortBy)) __obj.updateDynamic("manualSortBy")(manualSortBy.asInstanceOf[js.Any])
-    if (maxMultiSortColCount != null) __obj.updateDynamic("maxMultiSortColCount")(maxMultiSortColCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(manualSortBy)) __obj.updateDynamic("manualSortBy")(manualSortBy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxMultiSortColCount)) __obj.updateDynamic("maxMultiSortColCount")(maxMultiSortColCount.get.asInstanceOf[js.Any])
     if (orderByFn != null) __obj.updateDynamic("orderByFn")(js.Any.fromFunction3(orderByFn))
     if (sortTypes != null) __obj.updateDynamic("sortTypes")(sortTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseSortByOptions[D]]

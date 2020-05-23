@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object default extends js.Object {
   def apply(element: HTMLElement): Styler = js.native
-  def apply(element: HTMLElement, hasEnableHardwareAccelerationProps: Props): Styler = js.native
+  def apply(element: HTMLElement, hasEnableHardwareAccelerationAllowTransformNoneProps: Props): Styler = js.native
 }
 

@@ -19,16 +19,16 @@ object RequestOptions {
   @scala.inline
   def apply(
     pattern_id: String,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    amount: Int | Double = null,
-    amount_due: Int | Double = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    amount: js.UndefOr[Double] = js.undefined,
+    amount_due: js.UndefOr[Double] = js.undefined,
     message: String = null,
     to: String = null
   ): RequestOptions = {
     val __obj = js.Dynamic.literal(pattern_id = pattern_id.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (amount_due != null) __obj.updateDynamic("amount_due")(amount_due.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount_due)) __obj.updateDynamic("amount_due")(amount_due.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptions]

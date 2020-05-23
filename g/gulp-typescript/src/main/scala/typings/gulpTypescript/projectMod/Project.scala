@@ -1,6 +1,6 @@
 package typings.gulpTypescript.projectMod
 
-import typings.gulpTypescript.Typeofts
+import typings.gulpTypescript.anon.Typeofts
 import typings.gulpTypescript.reporterMod.Reporter
 import typings.gulpTypescript.typesMod.TsConfig
 import typings.node.NodeJS.ReadWriteStream

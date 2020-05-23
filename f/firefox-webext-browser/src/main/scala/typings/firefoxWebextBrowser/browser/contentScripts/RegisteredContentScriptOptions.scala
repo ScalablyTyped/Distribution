@@ -48,13 +48,13 @@ object RegisteredContentScriptOptions {
     runAt: RunAt = null
   ): RegisteredContentScriptOptions = {
     val __obj = js.Dynamic.literal(matches = matches.asInstanceOf[js.Any])
-    if (!js.isUndefined(allFrames)) __obj.updateDynamic("allFrames")(allFrames.asInstanceOf[js.Any])
+    if (!js.isUndefined(allFrames)) __obj.updateDynamic("allFrames")(allFrames.get.asInstanceOf[js.Any])
     if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (excludeGlobs != null) __obj.updateDynamic("excludeGlobs")(excludeGlobs.asInstanceOf[js.Any])
     if (excludeMatches != null) __obj.updateDynamic("excludeMatches")(excludeMatches.asInstanceOf[js.Any])
     if (includeGlobs != null) __obj.updateDynamic("includeGlobs")(includeGlobs.asInstanceOf[js.Any])
     if (js_ != null) __obj.updateDynamic("js")(js_.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchAboutBlank)) __obj.updateDynamic("matchAboutBlank")(matchAboutBlank.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchAboutBlank)) __obj.updateDynamic("matchAboutBlank")(matchAboutBlank.get.asInstanceOf[js.Any])
     if (runAt != null) __obj.updateDynamic("runAt")(runAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisteredContentScriptOptions]
   }

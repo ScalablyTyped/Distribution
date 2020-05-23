@@ -24,34 +24,34 @@ trait FfprobeStreamDisposition
 object FfprobeStreamDisposition {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    attached_pic: Int | Double = null,
-    clean_effects: Int | Double = null,
-    comment: Int | Double = null,
-    default: Int | Double = null,
-    dub: Int | Double = null,
-    forced: Int | Double = null,
-    hearing_impaired: Int | Double = null,
-    karaoke: Int | Double = null,
-    lyrics: Int | Double = null,
-    original: Int | Double = null,
-    timed_thumbnails: Int | Double = null,
-    visual_impaired: Int | Double = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    attached_pic: js.UndefOr[Double] = js.undefined,
+    clean_effects: js.UndefOr[Double] = js.undefined,
+    comment: js.UndefOr[Double] = js.undefined,
+    default: js.UndefOr[Double] = js.undefined,
+    dub: js.UndefOr[Double] = js.undefined,
+    forced: js.UndefOr[Double] = js.undefined,
+    hearing_impaired: js.UndefOr[Double] = js.undefined,
+    karaoke: js.UndefOr[Double] = js.undefined,
+    lyrics: js.UndefOr[Double] = js.undefined,
+    original: js.UndefOr[Double] = js.undefined,
+    timed_thumbnails: js.UndefOr[Double] = js.undefined,
+    visual_impaired: js.UndefOr[Double] = js.undefined
   ): FfprobeStreamDisposition = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (attached_pic != null) __obj.updateDynamic("attached_pic")(attached_pic.asInstanceOf[js.Any])
-    if (clean_effects != null) __obj.updateDynamic("clean_effects")(clean_effects.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (dub != null) __obj.updateDynamic("dub")(dub.asInstanceOf[js.Any])
-    if (forced != null) __obj.updateDynamic("forced")(forced.asInstanceOf[js.Any])
-    if (hearing_impaired != null) __obj.updateDynamic("hearing_impaired")(hearing_impaired.asInstanceOf[js.Any])
-    if (karaoke != null) __obj.updateDynamic("karaoke")(karaoke.asInstanceOf[js.Any])
-    if (lyrics != null) __obj.updateDynamic("lyrics")(lyrics.asInstanceOf[js.Any])
-    if (original != null) __obj.updateDynamic("original")(original.asInstanceOf[js.Any])
-    if (timed_thumbnails != null) __obj.updateDynamic("timed_thumbnails")(timed_thumbnails.asInstanceOf[js.Any])
-    if (visual_impaired != null) __obj.updateDynamic("visual_impaired")(visual_impaired.asInstanceOf[js.Any])
+    if (!js.isUndefined(attached_pic)) __obj.updateDynamic("attached_pic")(attached_pic.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clean_effects)) __obj.updateDynamic("clean_effects")(clean_effects.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(comment)) __obj.updateDynamic("comment")(comment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dub)) __obj.updateDynamic("dub")(dub.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forced)) __obj.updateDynamic("forced")(forced.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hearing_impaired)) __obj.updateDynamic("hearing_impaired")(hearing_impaired.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(karaoke)) __obj.updateDynamic("karaoke")(karaoke.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lyrics)) __obj.updateDynamic("lyrics")(lyrics.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(original)) __obj.updateDynamic("original")(original.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timed_thumbnails)) __obj.updateDynamic("timed_thumbnails")(timed_thumbnails.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visual_impaired)) __obj.updateDynamic("visual_impaired")(visual_impaired.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FfprobeStreamDisposition]
   }
 }

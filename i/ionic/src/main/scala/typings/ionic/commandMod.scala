@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ionic/lib/command", JSImport.Namespace)
 @js.native
 object commandMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.ionicCliFramework.definitionsMod.ICommand because var conflicts: namespace. Inlined 
   - typings.ionic.definitionsMod.ICommand because var conflicts: namespace. Inlined env, project, execute */ @js.native
   abstract class Command protected () extends BaseCommand[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption] {

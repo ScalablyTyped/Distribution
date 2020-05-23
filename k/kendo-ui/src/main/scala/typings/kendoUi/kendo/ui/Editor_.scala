@@ -3,7 +3,7 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQuery
 import typings.kendoUi.JQueryPromise
 import typings.kendoUi.kendo.ui.editor.Toolbar
-import typings.std.Document_
+import typings.std.Document
 import typings.std.Element
 import typings.std.Range
 import typings.std.Selection
@@ -11,18 +11,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.Editor")
 @js.native
-class Editor_ protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: EditorOptions) = this()
+trait Editor_ extends Widget {
   var body: Element = js.native
   @JSName("options")
   var options_Editor_ : EditorOptions = js.native
   var toolbar: Toolbar = js.native
   var wrapper: JQuery = js.native
   def createRange(): Range = js.native
-  def createRange(document: Document_): Range = js.native
+  def createRange(document: Document): Range = js.native
   def encodedValue(): String = js.native
   def exec(name: String, params: js.Any): Unit = js.native
   def focus(): Unit = js.native
@@ -37,13 +34,5 @@ class Editor_ protected () extends Widget {
   def update(): Unit = js.native
   def value(): String = js.native
   def value(value: String): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.Editor")
-@js.native
-object Editor_ extends js.Object {
-  var fn: Editor_ = js.native
-  def extend(proto: js.Object): Editor_ = js.native
 }
 

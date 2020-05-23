@@ -1,7 +1,7 @@
 package typings.amqpRpc.mod
 
-import typings.amqpRpc.AnonAutoDelete
-import typings.amqpRpc.AnonDefaultExchangeName
+import typings.amqpRpc.anon.AutoDelete
+import typings.amqpRpc.anon.DefaultExchangeName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,8 +11,8 @@ trait Options extends js.Object {
   var connection: js.UndefOr[js.Any] = js.undefined
   var exchange: js.UndefOr[String] = js.undefined
   var exchangeInstance: js.UndefOr[js.Any] = js.undefined
-  var exchange_options: js.UndefOr[AnonAutoDelete] = js.undefined
-  var ipml_options: js.UndefOr[AnonDefaultExchangeName] = js.undefined
+  var exchange_options: js.UndefOr[AutoDelete] = js.undefined
+  var ipml_options: js.UndefOr[DefaultExchangeName] = js.undefined
   var url: js.UndefOr[String] = js.undefined
 }
 
@@ -23,8 +23,8 @@ object Options {
     connection: js.Any = null,
     exchange: String = null,
     exchangeInstance: js.Any = null,
-    exchange_options: AnonAutoDelete = null,
-    ipml_options: AnonDefaultExchangeName = null,
+    exchange_options: AutoDelete = null,
+    ipml_options: DefaultExchangeName = null,
     url: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()

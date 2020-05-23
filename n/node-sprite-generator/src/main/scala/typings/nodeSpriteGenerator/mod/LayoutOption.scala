@@ -11,10 +11,10 @@ trait LayoutOption extends js.Object {
 
 object LayoutOption {
   @scala.inline
-  def apply(padding: Int | Double = null, scaling: Int | Double = null): LayoutOption = {
+  def apply(padding: js.UndefOr[Double] = js.undefined, scaling: js.UndefOr[Double] = js.undefined): LayoutOption = {
     val __obj = js.Dynamic.literal()
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (scaling != null) __obj.updateDynamic("scaling")(scaling.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaling)) __obj.updateDynamic("scaling")(scaling.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutOption]
   }
 }

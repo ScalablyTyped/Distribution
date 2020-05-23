@@ -1,7 +1,7 @@
 package typings.angularCompiler.compileMetadataMod
 
-import typings.angularCompiler.AnonIsInline
-import typings.angularCompiler.AnonType
+import typings.angularCompiler.anon.IsInline
+import typings.angularCompiler.anon.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/src/compile_metadata", "templateSourceUrl")
 @js.native
 object templateSourceUrl extends js.Object {
-  def apply(ngModuleType: CompileIdentifierMetadata, compMeta: AnonType, templateMeta: AnonIsInline): String = js.native
+  def apply(ngModuleType: CompileIdentifierMetadata, compMeta: Type, templateMeta: IsInline): String = js.native
 }
 

@@ -1,19 +1,14 @@
 package typings.baidumapWebSdk.BMap
 
-import typings.baidumapWebSdk.AnonTarget
-import typings.baidumapWebSdk.AnonType
+import typings.baidumapWebSdk.anon.Target
+import typings.baidumapWebSdk.anon.Type
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BMap.InfoWindow")
 @js.native
-class InfoWindow protected () extends Overlay {
-  def this(content: String) = this()
-  def this(content: HTMLElement) = this()
-  def this(content: String, opts: InfoWindowOptions) = this()
-  def this(content: HTMLElement, opts: InfoWindowOptions) = this()
+trait InfoWindow extends Overlay {
   def addEventListener(event: String, handler: Callback): Unit = js.native
   def disableAutoPan(): Unit = js.native
   def disableCloseOnClick(): Unit = js.native
@@ -26,11 +21,11 @@ class InfoWindow protected () extends Overlay {
   def getTitle(): String | HTMLElement = js.native
   def isOpen(): Boolean = js.native
   def maximize(): Unit = js.native
-  def onclickclose(event: AnonTarget): Unit = js.native
-  def onclose(event: AnonType): Unit = js.native
-  def onmaximize(event: AnonTarget): Unit = js.native
-  def onopen(event: AnonType): Unit = js.native
-  def onrestore(event: AnonTarget): Unit = js.native
+  def onclickclose(event: Target): Unit = js.native
+  def onclose(event: Type): Unit = js.native
+  def onmaximize(event: Target): Unit = js.native
+  def onopen(event: Type): Unit = js.native
+  def onrestore(event: Target): Unit = js.native
   def redraw(): Unit = js.native
   def removeEventListener(event: String, handler: Callback): Unit = js.native
   def restore(): Unit = js.native

@@ -16,7 +16,7 @@ object KatexData {
   def apply(data: String, `type`: String, display: js.UndefOr[Boolean] = js.undefined, rawData: String = null): KatexData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
+    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display.get.asInstanceOf[js.Any])
     if (rawData != null) __obj.updateDynamic("rawData")(rawData.asInstanceOf[js.Any])
     __obj.asInstanceOf[KatexData]
   }

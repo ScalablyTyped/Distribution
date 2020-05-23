@@ -49,7 +49,7 @@ trait AndroidVersion extends js.Object {
 object AndroidVersion {
   @scala.inline
   def apply(
-    apiLevel: Int | Double = null,
+    apiLevel: js.UndefOr[Double] = js.undefined,
     codeName: String = null,
     distribution: Distribution = null,
     id: String = null,
@@ -58,7 +58,7 @@ object AndroidVersion {
     versionString: String = null
   ): AndroidVersion = {
     val __obj = js.Dynamic.literal()
-    if (apiLevel != null) __obj.updateDynamic("apiLevel")(apiLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(apiLevel)) __obj.updateDynamic("apiLevel")(apiLevel.get.asInstanceOf[js.Any])
     if (codeName != null) __obj.updateDynamic("codeName")(codeName.asInstanceOf[js.Any])
     if (distribution != null) __obj.updateDynamic("distribution")(distribution.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

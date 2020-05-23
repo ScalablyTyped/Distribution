@@ -1,5 +1,6 @@
 package typings.reactVirtualized
 
+import typings.reactVirtualized.anon.Children
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +15,7 @@ object columnSizerMod extends js.Object {
   /* static members */
   @js.native
   object ColumnSizer extends js.Object {
-    var propTypes: AnonChildren = js.native
+    var propTypes: Children = js.native
   }
   
 }

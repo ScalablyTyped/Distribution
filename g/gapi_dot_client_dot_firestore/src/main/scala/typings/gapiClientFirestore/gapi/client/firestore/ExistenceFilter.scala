@@ -18,10 +18,10 @@ trait ExistenceFilter extends js.Object {
 
 object ExistenceFilter {
   @scala.inline
-  def apply(count: Int | Double = null, targetId: Int | Double = null): ExistenceFilter = {
+  def apply(count: js.UndefOr[Double] = js.undefined, targetId: js.UndefOr[Double] = js.undefined): ExistenceFilter = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (targetId != null) __obj.updateDynamic("targetId")(targetId.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetId)) __obj.updateDynamic("targetId")(targetId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExistenceFilter]
   }
 }

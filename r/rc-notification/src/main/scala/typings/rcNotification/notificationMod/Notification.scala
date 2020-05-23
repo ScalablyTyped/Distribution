@@ -1,6 +1,7 @@
 package typings.rcNotification.notificationMod
 
 import typings.react.mod.Component
+import typings.react.mod.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +13,6 @@ trait Notification
   def add(notice: NoticeContent): Unit = js.native
   def add(notice: NoticeContent, holderCallback: HolderReadyCallback): Unit = js.native
   def getTransitionName(): String = js.native
-  def remove(key: String): Unit = js.native
-  def remove(key: Double): Unit = js.native
+  def remove(key: Key): Unit = js.native
 }
 

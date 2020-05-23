@@ -126,7 +126,7 @@ object Token {
   def Paragraph(text: String, `type`: paragraph, pre: js.UndefOr[Boolean] = js.undefined): Token = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(pre)) __obj.updateDynamic("pre")(pre.asInstanceOf[js.Any])
+    if (!js.isUndefined(pre)) __obj.updateDynamic("pre")(pre.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
   @scala.inline

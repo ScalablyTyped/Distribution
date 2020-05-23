@@ -91,7 +91,7 @@ trait EnvironmentDescription extends js.Object {
 object EnvironmentDescription {
   @scala.inline
   def apply(
-    AbortableOperationInProgress: js.UndefOr[Boolean] = js.undefined,
+    AbortableOperationInProgress: js.UndefOr[AbortableOperationInProgress] = js.undefined,
     ApplicationName: ApplicationName = null,
     CNAME: DNSCname = null,
     DateCreated: CreationDate = null,
@@ -113,7 +113,7 @@ object EnvironmentDescription {
     VersionLabel: VersionLabel = null
   ): EnvironmentDescription = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AbortableOperationInProgress)) __obj.updateDynamic("AbortableOperationInProgress")(AbortableOperationInProgress.asInstanceOf[js.Any])
+    if (!js.isUndefined(AbortableOperationInProgress)) __obj.updateDynamic("AbortableOperationInProgress")(AbortableOperationInProgress.get.asInstanceOf[js.Any])
     if (ApplicationName != null) __obj.updateDynamic("ApplicationName")(ApplicationName.asInstanceOf[js.Any])
     if (CNAME != null) __obj.updateDynamic("CNAME")(CNAME.asInstanceOf[js.Any])
     if (DateCreated != null) __obj.updateDynamic("DateCreated")(DateCreated.asInstanceOf[js.Any])

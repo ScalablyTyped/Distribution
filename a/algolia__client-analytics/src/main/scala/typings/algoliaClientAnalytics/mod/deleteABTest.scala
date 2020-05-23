@@ -1,6 +1,6 @@
 package typings.algoliaClientAnalytics.mod
 
-import typings.algoliaClientAnalytics.ReadonlyPromiseDeleteABTe
+import typings.algoliaClientAnalytics.anon.ReadonlyPromiseDeleteABTe
 import typings.algoliaTransporter.mod.RequestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

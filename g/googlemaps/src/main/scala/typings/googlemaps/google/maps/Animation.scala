@@ -1,6 +1,5 @@
 package typings.googlemaps.google.maps
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,14 +29,6 @@ object Animation extends js.Object {
     */
   @js.native
   sealed trait DROP extends Animation
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Animation with Double] = js.native
-  /* 1 */ @js.native
-  object BOUNCE extends TopLevel[BOUNCE with Double]
-  
-  /* 2 */ @js.native
-  object DROP extends TopLevel[DROP with Double]
   
 }
 

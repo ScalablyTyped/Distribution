@@ -38,18 +38,18 @@ trait LolexInstallOpts extends js.Object {
 object LolexInstallOpts {
   @scala.inline
   def apply(
-    advanceTimeDelta: Int | Double = null,
-    loopLimit: Int | Double = null,
+    advanceTimeDelta: js.UndefOr[Double] = js.undefined,
+    loopLimit: js.UndefOr[Double] = js.undefined,
     now: Double | Date = null,
     shouldAdvanceTime: js.UndefOr[Boolean] = js.undefined,
     target: js.Any = null,
     toFake: js.Array[FakeMethod] = null
   ): LolexInstallOpts = {
     val __obj = js.Dynamic.literal()
-    if (advanceTimeDelta != null) __obj.updateDynamic("advanceTimeDelta")(advanceTimeDelta.asInstanceOf[js.Any])
-    if (loopLimit != null) __obj.updateDynamic("loopLimit")(loopLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(advanceTimeDelta)) __obj.updateDynamic("advanceTimeDelta")(advanceTimeDelta.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loopLimit)) __obj.updateDynamic("loopLimit")(loopLimit.get.asInstanceOf[js.Any])
     if (now != null) __obj.updateDynamic("now")(now.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldAdvanceTime)) __obj.updateDynamic("shouldAdvanceTime")(shouldAdvanceTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldAdvanceTime)) __obj.updateDynamic("shouldAdvanceTime")(shouldAdvanceTime.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (toFake != null) __obj.updateDynamic("toFake")(toFake.asInstanceOf[js.Any])
     __obj.asInstanceOf[LolexInstallOpts]

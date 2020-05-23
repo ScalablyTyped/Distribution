@@ -18,9 +18,9 @@ object WaitOptions {
     waitForWaiters: js.UndefOr[Boolean] = js.undefined
   ): WaitOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(waitForAJAX)) __obj.updateDynamic("waitForAJAX")(waitForAJAX.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForTimers)) __obj.updateDynamic("waitForTimers")(waitForTimers.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForWaiters)) __obj.updateDynamic("waitForWaiters")(waitForWaiters.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForAJAX)) __obj.updateDynamic("waitForAJAX")(waitForAJAX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForTimers)) __obj.updateDynamic("waitForTimers")(waitForTimers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForWaiters)) __obj.updateDynamic("waitForWaiters")(waitForWaiters.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WaitOptions]
   }
 }

@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.PivotGauge
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,29 +37,6 @@ object NumberFormat extends js.Object {
   ///To set text format for label values.
   @js.native
   sealed trait Text extends NumberFormat
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NumberFormat with Double] = js.native
-  /* 1 */ @js.native
-  object Currency extends TopLevel[Currency with Double]
-  
-  /* 0 */ @js.native
-  object Default extends TopLevel[Default with Double]
-  
-  /* 3 */ @js.native
-  object Fraction extends TopLevel[Fraction with Double]
-  
-  /* 6 */ @js.native
-  object Notation extends TopLevel[Notation with Double]
-  
-  /* 2 */ @js.native
-  object Percentage extends TopLevel[Percentage with Double]
-  
-  /* 4 */ @js.native
-  object Scientific extends TopLevel[Scientific with Double]
-  
-  /* 5 */ @js.native
-  object Text extends TopLevel[Text with Double]
   
 }
 

@@ -1,19 +1,12 @@
 package typings.ejWebAll.ej
 
-import typings.ejWebAll.JQuery
 import typings.ejWebAll.ej.TreeGrid.EjPredicate
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.TreeGrid")
 @js.native
-class TreeGrid_ protected () extends Widget_ {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.TreeGrid.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.TreeGrid.Model) = this()
+trait TreeGrid_ extends Widget_ {
   var defaults: typings.ejWebAll.ej.TreeGrid.Model = js.native
   @JSName("model")
   var model_TreeGrid_ : typings.ejWebAll.ej.TreeGrid.Model = js.native

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object Header
   extends TopLevel[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StatelessComponent<{  children  :InkNode}> */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StatelessComponent<TableProps> */ js.Any
     ]
 

@@ -23,7 +23,7 @@ object StackNavigationConfig {
   ): StackNavigationConfig = {
     val __obj = js.Dynamic.literal()
     if (headerMode != null) __obj.updateDynamic("headerMode")(headerMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboardHandlingEnabled)) __obj.updateDynamic("keyboardHandlingEnabled")(keyboardHandlingEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboardHandlingEnabled)) __obj.updateDynamic("keyboardHandlingEnabled")(keyboardHandlingEnabled.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackNavigationConfig]
   }

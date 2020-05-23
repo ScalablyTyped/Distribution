@@ -40,22 +40,22 @@ object SplitChunksOptions {
     automaticNameDelimiter: String = null,
     cacheGroups: `false` | String | (js.Function1[/* repeated */ js.Any, _]) | RegExp | (StringDictionary[CacheGroupsOptions | `false`]) = null,
     chunks: initial | async | all | (js.Function1[/* chunk */ Chunk, Boolean]) = null,
-    maxAsyncRequests: Int | Double = null,
-    maxInitialRequests: Int | Double = null,
-    maxSize: Int | Double = null,
-    minChunks: Int | Double = null,
-    minSize: Int | Double = null,
+    maxAsyncRequests: js.UndefOr[Double] = js.undefined,
+    maxInitialRequests: js.UndefOr[Double] = js.undefined,
+    maxSize: js.UndefOr[Double] = js.undefined,
+    minChunks: js.UndefOr[Double] = js.undefined,
+    minSize: js.UndefOr[Double] = js.undefined,
     name: Boolean | String | (js.Function1[/* repeated */ js.Any, _]) = null
   ): SplitChunksOptions = {
     val __obj = js.Dynamic.literal()
     if (automaticNameDelimiter != null) __obj.updateDynamic("automaticNameDelimiter")(automaticNameDelimiter.asInstanceOf[js.Any])
     if (cacheGroups != null) __obj.updateDynamic("cacheGroups")(cacheGroups.asInstanceOf[js.Any])
     if (chunks != null) __obj.updateDynamic("chunks")(chunks.asInstanceOf[js.Any])
-    if (maxAsyncRequests != null) __obj.updateDynamic("maxAsyncRequests")(maxAsyncRequests.asInstanceOf[js.Any])
-    if (maxInitialRequests != null) __obj.updateDynamic("maxInitialRequests")(maxInitialRequests.asInstanceOf[js.Any])
-    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
-    if (minChunks != null) __obj.updateDynamic("minChunks")(minChunks.asInstanceOf[js.Any])
-    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAsyncRequests)) __obj.updateDynamic("maxAsyncRequests")(maxAsyncRequests.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxInitialRequests)) __obj.updateDynamic("maxInitialRequests")(maxInitialRequests.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSize)) __obj.updateDynamic("maxSize")(maxSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minChunks)) __obj.updateDynamic("minChunks")(minChunks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSize)) __obj.updateDynamic("minSize")(minSize.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitChunksOptions]
   }

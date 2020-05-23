@@ -1,8 +1,8 @@
 package typings.angularCore
 
-import typings.inquirer.AnonBottomBar
-import typings.inquirer.AnonUi
-import typings.inquirer.TypeofSeparator
+import typings.inquirer.anon.BottomBar
+import typings.inquirer.anon.TypeofSeparator
+import typings.inquirer.anon.Ui
 import typings.inquirer.mod.PromptModule
 import typings.inquirer.mod.QuestionCollection
 import typings.inquirer.mod.StreamOptions
@@ -32,7 +32,7 @@ object schematicsPromptMod extends js.Object {
     /**
       * Provides components for the ui.
       */
-    var ui: AnonBottomBar = js.native
+    var ui: BottomBar = js.native
     /**
       * Creates a prompt-module.
       *
@@ -50,7 +50,7 @@ object schematicsPromptMod extends js.Object {
     /**
       * The default prompt-module.
       */
-    def prompt[T](questions: QuestionCollection[T]): js.Promise[T] with AnonUi = js.native
+    def prompt[T](questions: QuestionCollection[T]): js.Promise[T] with Ui = js.native
     /**
       * Registers a new prompt-type.
       *

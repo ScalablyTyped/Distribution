@@ -1,13 +1,13 @@
 package typings.devextreme.mod.DevExpress.data
 
-import typings.devextreme.AnonData
+import typings.devextreme.anon.Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait XmlaStoreOptions extends js.Object {
   /** @name XmlaStore.Options.beforeSend */
-  var beforeSend: js.UndefOr[js.Function1[/* options */ AnonData, _]] = js.undefined
+  var beforeSend: js.UndefOr[js.Function1[/* options */ Data, _]] = js.undefined
   /** @name XmlaStore.Options.catalog */
   var catalog: js.UndefOr[String] = js.undefined
   /** @name XmlaStore.Options.cube */
@@ -19,7 +19,7 @@ trait XmlaStoreOptions extends js.Object {
 object XmlaStoreOptions {
   @scala.inline
   def apply(
-    beforeSend: /* options */ AnonData => _ = null,
+    beforeSend: /* options */ Data => _ = null,
     catalog: String = null,
     cube: String = null,
     url: String = null

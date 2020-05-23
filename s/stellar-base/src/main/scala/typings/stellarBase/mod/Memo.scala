@@ -15,12 +15,8 @@ import scala.scalajs.js.annotation._
 class Memo[T /* <: MemoType */] protected () extends js.Object {
   def this(`type`: None) = this()
   def this(`type`: T, value: MemoValue) = this()
-  def this(`type`: Hash, value: String) = this()
-  def this(`type`: Hash, value: Buffer) = this()
-  def this(`type`: ID, value: String) = this()
-  def this(`type`: Return, value: String) = this()
-  def this(`type`: Return, value: Buffer) = this()
-  def this(`type`: Text, value: String) = this()
+  def this(`type`: Hash | ID | Return | Text, value: String) = this()
+  def this(`type`: Hash | Return, value: Buffer) = this()
   var `type`: T = js.native
   var value: MemoValue | Buffer | String | Null = js.native
   def toXDRObject(): typings.stellarBase.mod.xdr.Memo = js.native

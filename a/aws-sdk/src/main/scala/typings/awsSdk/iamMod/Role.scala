@@ -62,7 +62,7 @@ object Role {
     RoleName: roleNameType,
     AssumeRolePolicyDocument: policyDocumentType = null,
     Description: roleDescriptionType = null,
-    MaxSessionDuration: Int | Double = null,
+    MaxSessionDuration: js.UndefOr[roleMaxSessionDurationType] = js.undefined,
     PermissionsBoundary: AttachedPermissionsBoundary = null,
     RoleLastUsed: RoleLastUsed = null,
     Tags: tagListType = null
@@ -70,7 +70,7 @@ object Role {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], CreateDate = CreateDate.asInstanceOf[js.Any], Path = Path.asInstanceOf[js.Any], RoleId = RoleId.asInstanceOf[js.Any], RoleName = RoleName.asInstanceOf[js.Any])
     if (AssumeRolePolicyDocument != null) __obj.updateDynamic("AssumeRolePolicyDocument")(AssumeRolePolicyDocument.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (MaxSessionDuration != null) __obj.updateDynamic("MaxSessionDuration")(MaxSessionDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxSessionDuration)) __obj.updateDynamic("MaxSessionDuration")(MaxSessionDuration.get.asInstanceOf[js.Any])
     if (PermissionsBoundary != null) __obj.updateDynamic("PermissionsBoundary")(PermissionsBoundary.asInstanceOf[js.Any])
     if (RoleLastUsed != null) __obj.updateDynamic("RoleLastUsed")(RoleLastUsed.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])

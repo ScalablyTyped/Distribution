@@ -12,9 +12,9 @@ trait IIntentBatch extends js.Object {
 
 object IIntentBatch {
   @scala.inline
-  def apply(intents: js.Array[IIntent] = null): IIntentBatch = {
+  def apply(intents: js.UndefOr[Null | js.Array[IIntent]] = js.undefined): IIntentBatch = {
     val __obj = js.Dynamic.literal()
-    if (intents != null) __obj.updateDynamic("intents")(intents.asInstanceOf[js.Any])
+    if (!js.isUndefined(intents)) __obj.updateDynamic("intents")(intents.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIntentBatch]
   }
 }

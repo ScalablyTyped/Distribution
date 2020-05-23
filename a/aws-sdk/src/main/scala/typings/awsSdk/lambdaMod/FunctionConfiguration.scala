@@ -95,7 +95,7 @@ trait FunctionConfiguration extends js.Object {
     */
   var StateReasonCode: js.UndefOr[typings.awsSdk.lambdaMod.StateReasonCode] = js.native
   /**
-    * The amount of time that Lambda allows a function to run before stopping it.
+    * The amount of time in seconds that Lambda allows a function to run before stopping it.
     */
   var Timeout: js.UndefOr[typings.awsSdk.lambdaMod.Timeout] = js.native
   /**
@@ -116,7 +116,7 @@ object FunctionConfiguration {
   @scala.inline
   def apply(
     CodeSha256: String = null,
-    CodeSize: Int | Double = null,
+    CodeSize: js.UndefOr[Long] = js.undefined,
     DeadLetterConfig: DeadLetterConfig = null,
     Description: Description = null,
     Environment: EnvironmentResponse = null,
@@ -130,21 +130,21 @@ object FunctionConfiguration {
     LastUpdateStatusReasonCode: LastUpdateStatusReasonCode = null,
     Layers: LayersReferenceList = null,
     MasterArn: FunctionArn = null,
-    MemorySize: Int | Double = null,
+    MemorySize: js.UndefOr[MemorySize] = js.undefined,
     RevisionId: String = null,
     Role: RoleArn = null,
     Runtime: Runtime = null,
     State: State = null,
     StateReason: StateReason = null,
     StateReasonCode: StateReasonCode = null,
-    Timeout: Int | Double = null,
+    Timeout: js.UndefOr[Timeout] = js.undefined,
     TracingConfig: TracingConfigResponse = null,
     Version: Version = null,
     VpcConfig: VpcConfigResponse = null
   ): FunctionConfiguration = {
     val __obj = js.Dynamic.literal()
     if (CodeSha256 != null) __obj.updateDynamic("CodeSha256")(CodeSha256.asInstanceOf[js.Any])
-    if (CodeSize != null) __obj.updateDynamic("CodeSize")(CodeSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(CodeSize)) __obj.updateDynamic("CodeSize")(CodeSize.get.asInstanceOf[js.Any])
     if (DeadLetterConfig != null) __obj.updateDynamic("DeadLetterConfig")(DeadLetterConfig.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (Environment != null) __obj.updateDynamic("Environment")(Environment.asInstanceOf[js.Any])
@@ -158,14 +158,14 @@ object FunctionConfiguration {
     if (LastUpdateStatusReasonCode != null) __obj.updateDynamic("LastUpdateStatusReasonCode")(LastUpdateStatusReasonCode.asInstanceOf[js.Any])
     if (Layers != null) __obj.updateDynamic("Layers")(Layers.asInstanceOf[js.Any])
     if (MasterArn != null) __obj.updateDynamic("MasterArn")(MasterArn.asInstanceOf[js.Any])
-    if (MemorySize != null) __obj.updateDynamic("MemorySize")(MemorySize.asInstanceOf[js.Any])
+    if (!js.isUndefined(MemorySize)) __obj.updateDynamic("MemorySize")(MemorySize.get.asInstanceOf[js.Any])
     if (RevisionId != null) __obj.updateDynamic("RevisionId")(RevisionId.asInstanceOf[js.Any])
     if (Role != null) __obj.updateDynamic("Role")(Role.asInstanceOf[js.Any])
     if (Runtime != null) __obj.updateDynamic("Runtime")(Runtime.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (StateReason != null) __obj.updateDynamic("StateReason")(StateReason.asInstanceOf[js.Any])
     if (StateReasonCode != null) __obj.updateDynamic("StateReasonCode")(StateReasonCode.asInstanceOf[js.Any])
-    if (Timeout != null) __obj.updateDynamic("Timeout")(Timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(Timeout)) __obj.updateDynamic("Timeout")(Timeout.get.asInstanceOf[js.Any])
     if (TracingConfig != null) __obj.updateDynamic("TracingConfig")(TracingConfig.asInstanceOf[js.Any])
     if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig.asInstanceOf[js.Any])

@@ -50,7 +50,7 @@ object ITimeEntryRegionalOptions {
     if (ampmNames != null) __obj.updateDynamic("ampmNames")(ampmNames.asInstanceOf[js.Any])
     if (ampmPrefix != null) __obj.updateDynamic("ampmPrefix")(ampmPrefix.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (!js.isUndefined(show24Hours)) __obj.updateDynamic("show24Hours")(show24Hours.asInstanceOf[js.Any])
+    if (!js.isUndefined(show24Hours)) __obj.updateDynamic("show24Hours")(show24Hours.get.asInstanceOf[js.Any])
     if (spinnerTexts != null) __obj.updateDynamic("spinnerTexts")(spinnerTexts.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITimeEntryRegionalOptions]
   }

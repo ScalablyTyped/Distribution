@@ -18,18 +18,18 @@ object MappingExecutionOptions {
   @scala.inline
   def apply(
     executionProfile: String = null,
-    fetchSize: Int | Double = null,
+    fetchSize: js.UndefOr[Double] = js.undefined,
     isIdempotent: js.UndefOr[Boolean] = js.undefined,
     logged: js.UndefOr[Boolean] = js.undefined,
-    pageState: Int | Double = null,
+    pageState: js.UndefOr[Double] = js.undefined,
     timestamp: Double | Long = null
   ): MappingExecutionOptions = {
     val __obj = js.Dynamic.literal()
     if (executionProfile != null) __obj.updateDynamic("executionProfile")(executionProfile.asInstanceOf[js.Any])
-    if (fetchSize != null) __obj.updateDynamic("fetchSize")(fetchSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(isIdempotent)) __obj.updateDynamic("isIdempotent")(isIdempotent.asInstanceOf[js.Any])
-    if (!js.isUndefined(logged)) __obj.updateDynamic("logged")(logged.asInstanceOf[js.Any])
-    if (pageState != null) __obj.updateDynamic("pageState")(pageState.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetchSize)) __obj.updateDynamic("fetchSize")(fetchSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isIdempotent)) __obj.updateDynamic("isIdempotent")(isIdempotent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(logged)) __obj.updateDynamic("logged")(logged.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageState)) __obj.updateDynamic("pageState")(pageState.get.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[MappingExecutionOptions]
   }

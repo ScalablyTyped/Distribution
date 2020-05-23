@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait InfragisticsModeSettings
   extends /**
-	 * Option for InfragisticsModeSettings
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   var key: js.UndefOr[String] = js.undefined
   var visibilityTester: js.UndefOr[js.Any] = js.undefined
@@ -17,10 +17,7 @@ trait InfragisticsModeSettings
 object InfragisticsModeSettings {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for InfragisticsModeSettings
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     key: String = null,
     visibilityTester: js.Any = null
   ): InfragisticsModeSettings = {

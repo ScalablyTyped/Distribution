@@ -1,7 +1,7 @@
 package typings.texzilla
 
 import typings.std.DOMParser
-import typings.std.Document_
+import typings.std.Document
 import typings.std.Element
 import typings.std.HTMLImageElement
 import typings.std.XMLSerializer
@@ -26,7 +26,7 @@ object mod extends js.Object {
   def toImage(str: String, rightToLeft: Boolean): HTMLImageElement = js.native
   def toImage(str: String, rightToLeft: Boolean, roundToPowerOfTwo: Boolean): HTMLImageElement = js.native
   def toImage(str: String, rightToLeft: Boolean, roundToPowerOfTwo: Boolean, size: Double): HTMLImageElement = js.native
-  def toImage(str: String, rightToLeft: Boolean, roundToPowerOfTwo: Boolean, size: Double, document: Document_): HTMLImageElement = js.native
+  def toImage(str: String, rightToLeft: Boolean, roundToPowerOfTwo: Boolean, size: Double, document: Document): HTMLImageElement = js.native
   def toMathML(str: String): Element = js.native
   def toMathML(str: String, displayMode: Boolean): Element = js.native
   def toMathML(str: String, displayMode: Boolean, rightToLeft: Boolean): Element = js.native

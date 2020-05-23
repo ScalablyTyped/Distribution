@@ -7,38 +7,35 @@ import scala.scalajs.js.annotation._
 
 trait IgGridColumnFixingLocale
   extends /**
-	 * Option for IgGridColumnFixingLocale
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * Text of the feature chooser button for fixing a currently unfixed column.
-  	 *
-  	 */
+    * Text of the feature chooser button for fixing a currently unfixed column.
+    *
+    */
   var featureChooserTextFixedColumn: js.UndefOr[String] = js.undefined
   /**
-  	 * Text of the feature chooser button for unfixing a currently fixed column.
-  	 *
-  	 */
+    * Text of the feature chooser button for unfixing a currently fixed column.
+    *
+    */
   var featureChooserTextUnfixedColumn: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies the tooltip text on the column fixing header icon when column is not fixed.
-  	 *
-  	 */
+    * Specifies the tooltip text on the column fixing header icon when column is not fixed.
+    *
+    */
   var headerFixButtonText: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies the tooltip text on the column fixing header icon when column is not fixed.
-  	 *
-  	 */
+    * Specifies the tooltip text on the column fixing header icon when column is not fixed.
+    *
+    */
   var headerUnfixButtonText: js.UndefOr[String] = js.undefined
 }
 
 object IgGridColumnFixingLocale {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for IgGridColumnFixingLocale
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     featureChooserTextFixedColumn: String = null,
     featureChooserTextUnfixedColumn: String = null,
     headerFixButtonText: String = null,

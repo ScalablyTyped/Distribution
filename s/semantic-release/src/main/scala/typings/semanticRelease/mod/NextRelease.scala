@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 
 trait NextRelease extends LastRelease {
   /**
-  		 * The release notes of the next release.
-  		 */
+    * The release notes of the next release.
+    */
   var notes: String
   /**
-  		 * The semver type of the release.
-  		 */
+    * The semver type of the release.
+    */
   var `type`: patch | minor | major
 }
 

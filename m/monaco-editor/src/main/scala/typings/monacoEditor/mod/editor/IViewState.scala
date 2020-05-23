@@ -21,12 +21,12 @@ object IViewState {
     firstPosition: IPosition,
     firstPositionDeltaTop: Double,
     scrollLeft: Double,
-    scrollTop: Int | Double = null,
-    scrollTopWithoutViewZones: Int | Double = null
+    scrollTop: js.UndefOr[Double] = js.undefined,
+    scrollTopWithoutViewZones: js.UndefOr[Double] = js.undefined
   ): IViewState = {
     val __obj = js.Dynamic.literal(firstPosition = firstPosition.asInstanceOf[js.Any], firstPositionDeltaTop = firstPositionDeltaTop.asInstanceOf[js.Any], scrollLeft = scrollLeft.asInstanceOf[js.Any])
-    if (scrollTop != null) __obj.updateDynamic("scrollTop")(scrollTop.asInstanceOf[js.Any])
-    if (scrollTopWithoutViewZones != null) __obj.updateDynamic("scrollTopWithoutViewZones")(scrollTopWithoutViewZones.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollTop)) __obj.updateDynamic("scrollTop")(scrollTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollTopWithoutViewZones)) __obj.updateDynamic("scrollTopWithoutViewZones")(scrollTopWithoutViewZones.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IViewState]
   }
 }

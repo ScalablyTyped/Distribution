@@ -22,7 +22,7 @@ object DrawerOptions {
   def apply(
     hide: /* e */ DrawerHideEvent => Unit = null,
     itemClick: /* e */ DrawerEvent => Unit = null,
-    minHeight: Int | Double = null,
+    minHeight: js.UndefOr[Double] = js.undefined,
     mini: Boolean | DrawerMini = null,
     mode: String = null,
     name: String = null,
@@ -34,13 +34,13 @@ object DrawerOptions {
     val __obj = js.Dynamic.literal()
     if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction1(hide))
     if (itemClick != null) __obj.updateDynamic("itemClick")(js.Any.fromFunction1(itemClick))
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.get.asInstanceOf[js.Any])
     if (mini != null) __obj.updateDynamic("mini")(mini.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
-    if (!js.isUndefined(swipeToOpen)) __obj.updateDynamic("swipeToOpen")(swipeToOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(swipeToOpen)) __obj.updateDynamic("swipeToOpen")(swipeToOpen.get.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawerOptions]
   }

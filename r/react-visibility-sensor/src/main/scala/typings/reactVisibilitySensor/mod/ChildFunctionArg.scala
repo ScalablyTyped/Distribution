@@ -11,9 +11,8 @@ trait ChildFunctionArg extends js.Object {
 
 object ChildFunctionArg {
   @scala.inline
-  def apply(visibilityRect: Shape, isVisible: js.UndefOr[Boolean] = js.undefined): ChildFunctionArg = {
-    val __obj = js.Dynamic.literal(visibilityRect = visibilityRect.asInstanceOf[js.Any])
-    if (!js.isUndefined(isVisible)) __obj.updateDynamic("isVisible")(isVisible.asInstanceOf[js.Any])
+  def apply(visibilityRect: Shape, isVisible: Boolean = null.asInstanceOf[Boolean]): ChildFunctionArg = {
+    val __obj = js.Dynamic.literal(visibilityRect = visibilityRect.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChildFunctionArg]
   }
 }

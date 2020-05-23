@@ -21,18 +21,18 @@ trait ILocation extends js.Object {
 object ILocation {
   @scala.inline
   def apply(
-    leadingComments: String = null,
-    leadingDetachedComments: js.Array[String] = null,
-    path: js.Array[Double] = null,
-    span: js.Array[Double] = null,
-    trailingComments: String = null
+    leadingComments: js.UndefOr[Null | String] = js.undefined,
+    leadingDetachedComments: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    path: js.UndefOr[Null | js.Array[Double]] = js.undefined,
+    span: js.UndefOr[Null | js.Array[Double]] = js.undefined,
+    trailingComments: js.UndefOr[Null | String] = js.undefined
   ): ILocation = {
     val __obj = js.Dynamic.literal()
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (leadingDetachedComments != null) __obj.updateDynamic("leadingDetachedComments")(leadingDetachedComments.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    if (!js.isUndefined(leadingComments)) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (!js.isUndefined(leadingDetachedComments)) __obj.updateDynamic("leadingDetachedComments")(leadingDetachedComments.asInstanceOf[js.Any])
+    if (!js.isUndefined(path)) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(span)) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
+    if (!js.isUndefined(trailingComments)) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILocation]
   }
 }

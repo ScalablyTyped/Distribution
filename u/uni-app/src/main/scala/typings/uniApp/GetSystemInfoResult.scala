@@ -172,74 +172,74 @@ object GetSystemInfoResult {
     cacheLocation: js.Any = null,
     cameraAuthorized: js.UndefOr[Boolean] = js.undefined,
     currentBattery: String = null,
-    fontSizeSetting: Int | Double = null,
+    fontSizeSetting: js.UndefOr[Double] = js.undefined,
     host: String = null,
     language: String = null,
     locationAuthorized: js.UndefOr[Boolean] = js.undefined,
     locationEnabled: js.UndefOr[Boolean] = js.undefined,
     microphoneAuthorized: js.UndefOr[Boolean] = js.undefined,
     model: String = null,
-    navigationBarHeight: Int | Double = null,
+    navigationBarHeight: js.UndefOr[Double] = js.undefined,
     notificationAlertAuthorized: js.UndefOr[Boolean] = js.undefined,
     notificationAuthorized: js.UndefOr[Boolean] = js.undefined,
     notificationBadgeAuthorized: js.UndefOr[Boolean] = js.undefined,
     notificationSoundAuthorized: js.UndefOr[Boolean] = js.undefined,
-    pixelRatio: Int | Double = null,
+    pixelRatio: js.UndefOr[Double] = js.undefined,
     platform: String = null,
     safeArea: SafeAreaResult = null,
-    screenHeight: Int | Double = null,
-    screenWidth: Int | Double = null,
-    statusBarHeight: Int | Double = null,
+    screenHeight: js.UndefOr[Double] = js.undefined,
+    screenWidth: js.UndefOr[Double] = js.undefined,
+    statusBarHeight: js.UndefOr[Double] = js.undefined,
     storage: String = null,
     swanNativeVersion: String = null,
     system: String = null,
-    titleBarHeight: Int | Double = null,
-    version: Int | Double = null,
+    titleBarHeight: js.UndefOr[Double] = js.undefined,
+    version: js.UndefOr[Double] = js.undefined,
     wifiEnabled: js.UndefOr[Boolean] = js.undefined,
-    windowBottom: Int | Double = null,
-    windowHeight: Int | Double = null,
-    windowTop: Int | Double = null,
-    windowWidth: Int | Double = null
+    windowBottom: js.UndefOr[Double] = js.undefined,
+    windowHeight: js.UndefOr[Double] = js.undefined,
+    windowTop: js.UndefOr[Double] = js.undefined,
+    windowWidth: js.UndefOr[Double] = js.undefined
   ): GetSystemInfoResult = {
     val __obj = js.Dynamic.literal()
     if (AppPlatform != null) __obj.updateDynamic("AppPlatform")(AppPlatform.asInstanceOf[js.Any])
     if (SDKVersion != null) __obj.updateDynamic("SDKVersion")(SDKVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(albumAuthorized)) __obj.updateDynamic("albumAuthorized")(albumAuthorized.asInstanceOf[js.Any])
+    if (!js.isUndefined(albumAuthorized)) __obj.updateDynamic("albumAuthorized")(albumAuthorized.get.asInstanceOf[js.Any])
     if (app != null) __obj.updateDynamic("app")(app.asInstanceOf[js.Any])
     if (appName != null) __obj.updateDynamic("appName")(appName.asInstanceOf[js.Any])
-    if (!js.isUndefined(bluetoothEnabled)) __obj.updateDynamic("bluetoothEnabled")(bluetoothEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(bluetoothEnabled)) __obj.updateDynamic("bluetoothEnabled")(bluetoothEnabled.get.asInstanceOf[js.Any])
     if (brand != null) __obj.updateDynamic("brand")(brand.asInstanceOf[js.Any])
     if (cacheLocation != null) __obj.updateDynamic("cacheLocation")(cacheLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(cameraAuthorized)) __obj.updateDynamic("cameraAuthorized")(cameraAuthorized.asInstanceOf[js.Any])
+    if (!js.isUndefined(cameraAuthorized)) __obj.updateDynamic("cameraAuthorized")(cameraAuthorized.get.asInstanceOf[js.Any])
     if (currentBattery != null) __obj.updateDynamic("currentBattery")(currentBattery.asInstanceOf[js.Any])
-    if (fontSizeSetting != null) __obj.updateDynamic("fontSizeSetting")(fontSizeSetting.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontSizeSetting)) __obj.updateDynamic("fontSizeSetting")(fontSizeSetting.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (!js.isUndefined(locationAuthorized)) __obj.updateDynamic("locationAuthorized")(locationAuthorized.asInstanceOf[js.Any])
-    if (!js.isUndefined(locationEnabled)) __obj.updateDynamic("locationEnabled")(locationEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(microphoneAuthorized)) __obj.updateDynamic("microphoneAuthorized")(microphoneAuthorized.asInstanceOf[js.Any])
+    if (!js.isUndefined(locationAuthorized)) __obj.updateDynamic("locationAuthorized")(locationAuthorized.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(locationEnabled)) __obj.updateDynamic("locationEnabled")(locationEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(microphoneAuthorized)) __obj.updateDynamic("microphoneAuthorized")(microphoneAuthorized.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (navigationBarHeight != null) __obj.updateDynamic("navigationBarHeight")(navigationBarHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(notificationAlertAuthorized)) __obj.updateDynamic("notificationAlertAuthorized")(notificationAlertAuthorized.asInstanceOf[js.Any])
-    if (!js.isUndefined(notificationAuthorized)) __obj.updateDynamic("notificationAuthorized")(notificationAuthorized.asInstanceOf[js.Any])
-    if (!js.isUndefined(notificationBadgeAuthorized)) __obj.updateDynamic("notificationBadgeAuthorized")(notificationBadgeAuthorized.asInstanceOf[js.Any])
-    if (!js.isUndefined(notificationSoundAuthorized)) __obj.updateDynamic("notificationSoundAuthorized")(notificationSoundAuthorized.asInstanceOf[js.Any])
-    if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigationBarHeight)) __obj.updateDynamic("navigationBarHeight")(navigationBarHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(notificationAlertAuthorized)) __obj.updateDynamic("notificationAlertAuthorized")(notificationAlertAuthorized.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(notificationAuthorized)) __obj.updateDynamic("notificationAuthorized")(notificationAuthorized.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(notificationBadgeAuthorized)) __obj.updateDynamic("notificationBadgeAuthorized")(notificationBadgeAuthorized.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(notificationSoundAuthorized)) __obj.updateDynamic("notificationSoundAuthorized")(notificationSoundAuthorized.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pixelRatio)) __obj.updateDynamic("pixelRatio")(pixelRatio.get.asInstanceOf[js.Any])
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
     if (safeArea != null) __obj.updateDynamic("safeArea")(safeArea.asInstanceOf[js.Any])
-    if (screenHeight != null) __obj.updateDynamic("screenHeight")(screenHeight.asInstanceOf[js.Any])
-    if (screenWidth != null) __obj.updateDynamic("screenWidth")(screenWidth.asInstanceOf[js.Any])
-    if (statusBarHeight != null) __obj.updateDynamic("statusBarHeight")(statusBarHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(screenHeight)) __obj.updateDynamic("screenHeight")(screenHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(screenWidth)) __obj.updateDynamic("screenWidth")(screenWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusBarHeight)) __obj.updateDynamic("statusBarHeight")(statusBarHeight.get.asInstanceOf[js.Any])
     if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
     if (swanNativeVersion != null) __obj.updateDynamic("swanNativeVersion")(swanNativeVersion.asInstanceOf[js.Any])
     if (system != null) __obj.updateDynamic("system")(system.asInstanceOf[js.Any])
-    if (titleBarHeight != null) __obj.updateDynamic("titleBarHeight")(titleBarHeight.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (!js.isUndefined(wifiEnabled)) __obj.updateDynamic("wifiEnabled")(wifiEnabled.asInstanceOf[js.Any])
-    if (windowBottom != null) __obj.updateDynamic("windowBottom")(windowBottom.asInstanceOf[js.Any])
-    if (windowHeight != null) __obj.updateDynamic("windowHeight")(windowHeight.asInstanceOf[js.Any])
-    if (windowTop != null) __obj.updateDynamic("windowTop")(windowTop.asInstanceOf[js.Any])
-    if (windowWidth != null) __obj.updateDynamic("windowWidth")(windowWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(titleBarHeight)) __obj.updateDynamic("titleBarHeight")(titleBarHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wifiEnabled)) __obj.updateDynamic("wifiEnabled")(wifiEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowBottom)) __obj.updateDynamic("windowBottom")(windowBottom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowHeight)) __obj.updateDynamic("windowHeight")(windowHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowTop)) __obj.updateDynamic("windowTop")(windowTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowWidth)) __obj.updateDynamic("windowWidth")(windowWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSystemInfoResult]
   }
 }

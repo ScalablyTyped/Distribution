@@ -1,9 +1,7 @@
 package typings.heredatalens.H.datalens
 
-import typings.heredatalens.H.datalens.ObjectLayer.Options
 import typings.heredatalens.H.datalens.ObjectLayer.StyleState
 import typings.heremaps.H.map.Object
-import typings.heremaps.H.map.provider.RemoteTileProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,19 +12,9 @@ import scala.scalajs.js.annotation._
   * Styles for objects can be parametrized with data rows and zoom level. Allows to create data-driven icons for markers like donuts or bars.
   * Also enables clustering and data domains for visualizing up to 100k points or more.
   */
-@JSGlobal("H.datalens.ObjectLayer")
 @js.native
-class ObjectLayer_ protected ()
+trait ObjectLayer_
   extends typings.heremaps.H.map.layer.ObjectLayer {
-  def this(provider: Provider, options: Options) = this()
-  def this(provider: QueryProvider, options: Options) = this()
-  def this(provider: QueryTileProvider, options: Options) = this()
-  /**
-    * Constructor
-    * @param provider - Data source (tiled or not)
-    * @param options - Defines data processing, clustering and data-driven styling
-    */
-  def this(provider: RemoteTileProvider, options: Options) = this()
   /**
     * Force re-rendering of the layer. In the case where the callbacks passed to the layer options are not pure functions, you can call this method to force re-rendering.
     */

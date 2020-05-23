@@ -39,7 +39,7 @@ class Task protected () extends js.Object {
   var _request: StringDictionary[js.Array[TaskElement]] = js.native
   var _subresponseField: js.UndefOr[String | Null] = js.native
   var callCanceller: js.UndefOr[GRPCCallResult] = js.native
-  def _apiCall(argument: RequestType, callback: APICallback): GRPCCallResult = js.native
+  def _apiCall(request: RequestType, callback: APICallback): GRPCCallResult = js.native
   /**
     * Cancels a part of elements.
     * @param {string} id - The identifier of the part of elements.

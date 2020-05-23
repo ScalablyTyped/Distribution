@@ -1,7 +1,5 @@
 package typings.filewriter
 
-import org.scalablytyped.runtime.Instantiable1
-import typings.std.Blob
 import typings.std.Error
 import typings.std.EventTarget
 import typings.std.ProgressEvent
@@ -80,13 +78,4 @@ trait FileSaver extends EventTarget {
     */
   def onwritestart(event: ProgressEvent[EventTarget]): Unit = js.native
 }
-
-@JSGlobal("FileSaver")
-@js.native
-object FileSaver
-  extends /**
-  * When the FileSaver constructor is called, the user agent must return a new FileSaver object with readyState set to INIT.
-  * This constructor must be visible when the script's global object is either a Window object or an object implementing the WorkerUtils interface.
-  */
-Instantiable1[/* data */ Blob, FileSaver]
 

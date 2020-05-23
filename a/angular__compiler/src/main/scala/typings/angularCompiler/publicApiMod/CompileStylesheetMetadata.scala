@@ -1,6 +1,6 @@
 package typings.angularCompiler.publicApiMod
 
-import typings.angularCompiler.AnonModuleUrl
+import typings.angularCompiler.anon.ModuleUrl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class CompileStylesheetMetadata ()
   extends typings.angularCompiler.srcCompilerMod.CompileStylesheetMetadata {
-  def this(hasModuleUrlStylesStyleUrls: AnonModuleUrl) = this()
+  def this(hasModuleUrlStylesStyleUrls: ModuleUrl) = this()
 }
 

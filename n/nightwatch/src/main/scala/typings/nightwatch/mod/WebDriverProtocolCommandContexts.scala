@@ -1,18 +1,13 @@
 package typings.nightwatch.mod
 
-import typings.nightwatch.AnonHeight
-import typings.nightwatch.AnonX
+import typings.nightwatch.anon.Height
+import typings.nightwatch.anon.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait WebDriverProtocolCommandContexts extends js.Object {
-  def frame(): this.type = js.native
-  def frame(
-    frameId: js.UndefOr[scala.Nothing],
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
   /**
     * Change focus to another frame on the page. If the frame id is missing or null, the server should switch to the page's default content.
     *
@@ -23,6 +18,7 @@ trait WebDriverProtocolCommandContexts extends js.Object {
     *    });
     * }
     */
+  def frame(): this.type = js.native
   def frame(frameId: String): this.type = js.native
   def frame(
     frameId: String,
@@ -129,7 +125,7 @@ trait WebDriverProtocolCommandContexts extends js.Object {
   def windowPosition(windowHandle: String): this.type = js.native
   def windowPosition(
     windowHandle: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[AnonX], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[X], Unit]
   ): this.type = js.native
   /**
     * Change or get the position of the specified window. If the second argument is a function it will be used as a callback and
@@ -179,7 +175,7 @@ trait WebDriverProtocolCommandContexts extends js.Object {
   def windowSize(windowHandle: String): this.type = js.native
   def windowSize(
     windowHandle: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[AnonHeight], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Height], Unit]
   ): this.type = js.native
   /**
     * Change or get the size of the specified window. If the second argument is a function it will be used as a callback and the call will perform a get request to retrieve the existing window size.

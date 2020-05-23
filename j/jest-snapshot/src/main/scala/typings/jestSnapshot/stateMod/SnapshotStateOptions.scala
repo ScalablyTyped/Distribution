@@ -21,7 +21,7 @@ object SnapshotStateOptions {
     expand: js.UndefOr[Boolean] = js.undefined
   ): SnapshotStateOptions = {
     val __obj = js.Dynamic.literal(getBabelTraverse = js.Any.fromFunction0(getBabelTraverse), getPrettier = js.Any.fromFunction0(getPrettier), updateSnapshot = updateSnapshot.asInstanceOf[js.Any])
-    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotStateOptions]
   }
 }

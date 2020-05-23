@@ -67,7 +67,7 @@ object AnyNestedObject {
   ): AnyNestedObject = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group.get.asInstanceOf[js.Any])
     if (nested != null) __obj.updateDynamic("nested")(nested.asInstanceOf[js.Any])
     if (oneofs != null) __obj.updateDynamic("oneofs")(oneofs.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])

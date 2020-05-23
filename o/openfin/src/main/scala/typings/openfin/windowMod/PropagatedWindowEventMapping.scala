@@ -3,6 +3,7 @@ package typings.openfin.windowMod
 import typings.openfin.eventsApplicationMod.CrashedEvent
 import typings.openfin.eventsBaseMod.BaseEventMap
 import typings.openfin.eventsBaseMod.WindowEvent
+import typings.openfin.viewMod.InputEvent
 import typings.openfin.webcontentsMod.WindowResourceLoadFailedEvent
 import typings.openfin.webcontentsMod.WindowResourceResponseReceivedEvent
 import scala.scalajs.js
@@ -26,7 +27,10 @@ trait PropagatedWindowEventMapping[Topic, Type] extends BaseEventMap {
   var `window-focused`: WindowEvent[Topic, Type]
   var `window-group-changed`: WindowGroupChanged[Topic, Type]
   var `window-hidden`: WindowHiddenEvent[Topic, Type]
+  var `window-hotkey`: InputEvent with (WindowEvent[Topic, Type])
   var `window-initialized`: WindowEvent[Topic, Type]
+  var `window-layout-initialized`: WindowEvent[Topic, Type]
+  var `window-layout-ready`: WindowEvent[Topic, Type]
   var `window-maximized`: WindowEvent[Topic, Type]
   var `window-minimized`: WindowEvent[Topic, Type]
   var `window-navigation-rejected`: WindowNavigationRejectedEvent[Topic, Type]
@@ -66,7 +70,10 @@ object PropagatedWindowEventMapping {
     `window-focused`: WindowEvent[Topic, Type],
     `window-group-changed`: WindowGroupChanged[Topic, Type],
     `window-hidden`: WindowHiddenEvent[Topic, Type],
+    `window-hotkey`: InputEvent with (WindowEvent[Topic, Type]),
     `window-initialized`: WindowEvent[Topic, Type],
+    `window-layout-initialized`: WindowEvent[Topic, Type],
+    `window-layout-ready`: WindowEvent[Topic, Type],
     `window-maximized`: WindowEvent[Topic, Type],
     `window-minimized`: WindowEvent[Topic, Type],
     `window-navigation-rejected`: WindowNavigationRejectedEvent[Topic, Type],
@@ -101,7 +108,10 @@ object PropagatedWindowEventMapping {
     __obj.updateDynamic("window-focused")(`window-focused`.asInstanceOf[js.Any])
     __obj.updateDynamic("window-group-changed")(`window-group-changed`.asInstanceOf[js.Any])
     __obj.updateDynamic("window-hidden")(`window-hidden`.asInstanceOf[js.Any])
+    __obj.updateDynamic("window-hotkey")(`window-hotkey`.asInstanceOf[js.Any])
     __obj.updateDynamic("window-initialized")(`window-initialized`.asInstanceOf[js.Any])
+    __obj.updateDynamic("window-layout-initialized")(`window-layout-initialized`.asInstanceOf[js.Any])
+    __obj.updateDynamic("window-layout-ready")(`window-layout-ready`.asInstanceOf[js.Any])
     __obj.updateDynamic("window-maximized")(`window-maximized`.asInstanceOf[js.Any])
     __obj.updateDynamic("window-minimized")(`window-minimized`.asInstanceOf[js.Any])
     __obj.updateDynamic("window-navigation-rejected")(`window-navigation-rejected`.asInstanceOf[js.Any])

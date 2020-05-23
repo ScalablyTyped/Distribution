@@ -17,13 +17,13 @@ object CryptoParameters {
   def apply(
     encryptKey: js.UndefOr[Boolean] = js.undefined,
     keyEncoding: String = null,
-    keyLength: Int | Double = null,
+    keyLength: js.UndefOr[Double] = js.undefined,
     mode: String = null
   ): CryptoParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(encryptKey)) __obj.updateDynamic("encryptKey")(encryptKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(encryptKey)) __obj.updateDynamic("encryptKey")(encryptKey.get.asInstanceOf[js.Any])
     if (keyEncoding != null) __obj.updateDynamic("keyEncoding")(keyEncoding.asInstanceOf[js.Any])
-    if (keyLength != null) __obj.updateDynamic("keyLength")(keyLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyLength)) __obj.updateDynamic("keyLength")(keyLength.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CryptoParameters]
   }

@@ -1,6 +1,5 @@
 package typings.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,23 +24,6 @@ object UrlZone extends js.Object {
   
   @js.native
   sealed trait intranet extends UrlZone
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UrlZone with Double] = js.native
-  /* 3 */ @js.native
-  object custom extends TopLevel[custom with Double]
-  
-  /* 0 */ @js.native
-  object defaultZone extends TopLevel[defaultZone with Double]
-  
-  /* 4 */ @js.native
-  object extranet extends TopLevel[extranet with Double]
-  
-  /* 2 */ @js.native
-  object internet extends TopLevel[internet with Double]
-  
-  /* 1 */ @js.native
-  object intranet extends TopLevel[intranet with Double]
   
 }
 

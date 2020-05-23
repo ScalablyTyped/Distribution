@@ -13,7 +13,7 @@ object ForceReply {
   @scala.inline
   def apply(force_reply: Boolean, selective: js.UndefOr[Boolean] = js.undefined): ForceReply = {
     val __obj = js.Dynamic.literal(force_reply = force_reply.asInstanceOf[js.Any])
-    if (!js.isUndefined(selective)) __obj.updateDynamic("selective")(selective.asInstanceOf[js.Any])
+    if (!js.isUndefined(selective)) __obj.updateDynamic("selective")(selective.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForceReply]
   }
 }

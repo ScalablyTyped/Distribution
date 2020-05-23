@@ -89,30 +89,30 @@ object Discount {
     admin_graphql_api_id: String = null,
     applies_once: js.UndefOr[Boolean] = js.undefined,
     applies_once_per_customer: js.UndefOr[Boolean] = js.undefined,
-    applies_to_id: Int | Double = null,
+    applies_to_id: js.UndefOr[Double] = js.undefined,
     applies_to_resource: applies_to_resource | custom_collection | String = null,
     ends_at: String = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     minimum_order_amount: String = null,
     starts_at: String = null,
     status: String = null,
-    times_used: Int | Double = null,
-    usage_limit: Int | Double = null,
+    times_used: js.UndefOr[Double] = js.undefined,
+    usage_limit: js.UndefOr[Double] = js.undefined,
     value: String = null
   ): Discount = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], discount_type = discount_type.asInstanceOf[js.Any])
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(applies_once)) __obj.updateDynamic("applies_once")(applies_once.asInstanceOf[js.Any])
-    if (!js.isUndefined(applies_once_per_customer)) __obj.updateDynamic("applies_once_per_customer")(applies_once_per_customer.asInstanceOf[js.Any])
-    if (applies_to_id != null) __obj.updateDynamic("applies_to_id")(applies_to_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(applies_once)) __obj.updateDynamic("applies_once")(applies_once.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(applies_once_per_customer)) __obj.updateDynamic("applies_once_per_customer")(applies_once_per_customer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(applies_to_id)) __obj.updateDynamic("applies_to_id")(applies_to_id.get.asInstanceOf[js.Any])
     if (applies_to_resource != null) __obj.updateDynamic("applies_to_resource")(applies_to_resource.asInstanceOf[js.Any])
     if (ends_at != null) __obj.updateDynamic("ends_at")(ends_at.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (minimum_order_amount != null) __obj.updateDynamic("minimum_order_amount")(minimum_order_amount.asInstanceOf[js.Any])
     if (starts_at != null) __obj.updateDynamic("starts_at")(starts_at.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (times_used != null) __obj.updateDynamic("times_used")(times_used.asInstanceOf[js.Any])
-    if (usage_limit != null) __obj.updateDynamic("usage_limit")(usage_limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(times_used)) __obj.updateDynamic("times_used")(times_used.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(usage_limit)) __obj.updateDynamic("usage_limit")(usage_limit.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Discount]
   }

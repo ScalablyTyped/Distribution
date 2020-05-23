@@ -74,31 +74,31 @@ object IEditorScrollbarOptions {
   @scala.inline
   def apply(
     alwaysConsumeMouseWheel: js.UndefOr[Boolean] = js.undefined,
-    arrowSize: Int | Double = null,
+    arrowSize: js.UndefOr[Double] = js.undefined,
     handleMouseWheel: js.UndefOr[Boolean] = js.undefined,
     horizontal: auto | visible | hidden = null,
     horizontalHasArrows: js.UndefOr[Boolean] = js.undefined,
-    horizontalScrollbarSize: Int | Double = null,
-    horizontalSliderSize: Int | Double = null,
+    horizontalScrollbarSize: js.UndefOr[Double] = js.undefined,
+    horizontalSliderSize: js.UndefOr[Double] = js.undefined,
     useShadows: js.UndefOr[Boolean] = js.undefined,
     vertical: auto | visible | hidden = null,
     verticalHasArrows: js.UndefOr[Boolean] = js.undefined,
-    verticalScrollbarSize: Int | Double = null,
-    verticalSliderSize: Int | Double = null
+    verticalScrollbarSize: js.UndefOr[Double] = js.undefined,
+    verticalSliderSize: js.UndefOr[Double] = js.undefined
   ): IEditorScrollbarOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alwaysConsumeMouseWheel)) __obj.updateDynamic("alwaysConsumeMouseWheel")(alwaysConsumeMouseWheel.asInstanceOf[js.Any])
-    if (arrowSize != null) __obj.updateDynamic("arrowSize")(arrowSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleMouseWheel)) __obj.updateDynamic("handleMouseWheel")(handleMouseWheel.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysConsumeMouseWheel)) __obj.updateDynamic("alwaysConsumeMouseWheel")(alwaysConsumeMouseWheel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrowSize)) __obj.updateDynamic("arrowSize")(arrowSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleMouseWheel)) __obj.updateDynamic("handleMouseWheel")(handleMouseWheel.get.asInstanceOf[js.Any])
     if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontalHasArrows)) __obj.updateDynamic("horizontalHasArrows")(horizontalHasArrows.asInstanceOf[js.Any])
-    if (horizontalScrollbarSize != null) __obj.updateDynamic("horizontalScrollbarSize")(horizontalScrollbarSize.asInstanceOf[js.Any])
-    if (horizontalSliderSize != null) __obj.updateDynamic("horizontalSliderSize")(horizontalSliderSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(useShadows)) __obj.updateDynamic("useShadows")(useShadows.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalHasArrows)) __obj.updateDynamic("horizontalHasArrows")(horizontalHasArrows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalScrollbarSize)) __obj.updateDynamic("horizontalScrollbarSize")(horizontalScrollbarSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalSliderSize)) __obj.updateDynamic("horizontalSliderSize")(horizontalSliderSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useShadows)) __obj.updateDynamic("useShadows")(useShadows.get.asInstanceOf[js.Any])
     if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
-    if (!js.isUndefined(verticalHasArrows)) __obj.updateDynamic("verticalHasArrows")(verticalHasArrows.asInstanceOf[js.Any])
-    if (verticalScrollbarSize != null) __obj.updateDynamic("verticalScrollbarSize")(verticalScrollbarSize.asInstanceOf[js.Any])
-    if (verticalSliderSize != null) __obj.updateDynamic("verticalSliderSize")(verticalSliderSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalHasArrows)) __obj.updateDynamic("verticalHasArrows")(verticalHasArrows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalScrollbarSize)) __obj.updateDynamic("verticalScrollbarSize")(verticalScrollbarSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalSliderSize)) __obj.updateDynamic("verticalSliderSize")(verticalSliderSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditorScrollbarOptions]
   }
 }

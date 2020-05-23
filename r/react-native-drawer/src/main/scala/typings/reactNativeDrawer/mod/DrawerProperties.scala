@@ -154,8 +154,8 @@ object DrawerProperties {
     closedDrawerOffset: js.Function0[Double] | Double = null,
     content: ReactNode = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    elevation: Int | Double = null,
-    initializeOpen: Int | Double = null,
+    elevation: js.UndefOr[Double] = js.undefined,
+    initializeOpen: js.UndefOr[Double] = js.undefined,
     negotiatePan: js.UndefOr[Boolean] = js.undefined,
     onClose: () => Unit = null,
     onCloseStart: () => Unit = null,
@@ -164,48 +164,48 @@ object DrawerProperties {
     onOpenStart: () => Unit = null,
     open: js.UndefOr[Boolean] = js.undefined,
     openDrawerOffset: (js.Function1[/* viewport */ ScaledSize, Double]) | Double = null,
-    panCloseMask: Int | Double = null,
-    panOpenMask: Int | Double = null,
-    panThreshold: Int | Double = null,
+    panCloseMask: js.UndefOr[Double] = js.undefined,
+    panOpenMask: js.UndefOr[Double] = js.undefined,
+    panThreshold: js.UndefOr[Double] = js.undefined,
     side: left | right | top | bottom = null,
     styles: DrawerStyles = null,
     tapToClose: js.UndefOr[Boolean] = js.undefined,
-    tweenDuration: Int | Double = null,
+    tweenDuration: js.UndefOr[Double] = js.undefined,
     tweenEasing: TweenFunctions = null,
     tweenHandler: /* ratio */ Double => NestedViewStyles = null,
     `type`: displace | overlay | static = null,
     useInteractionManager: js.UndefOr[Boolean] = js.undefined
   ): DrawerProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(acceptDoubleTap)) __obj.updateDynamic("acceptDoubleTap")(acceptDoubleTap.asInstanceOf[js.Any])
-    if (!js.isUndefined(acceptPan)) __obj.updateDynamic("acceptPan")(acceptPan.asInstanceOf[js.Any])
-    if (!js.isUndefined(acceptPanOnDrawer)) __obj.updateDynamic("acceptPanOnDrawer")(acceptPanOnDrawer.asInstanceOf[js.Any])
-    if (!js.isUndefined(acceptTap)) __obj.updateDynamic("acceptTap")(acceptTap.asInstanceOf[js.Any])
+    if (!js.isUndefined(acceptDoubleTap)) __obj.updateDynamic("acceptDoubleTap")(acceptDoubleTap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(acceptPan)) __obj.updateDynamic("acceptPan")(acceptPan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(acceptPanOnDrawer)) __obj.updateDynamic("acceptPanOnDrawer")(acceptPanOnDrawer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(acceptTap)) __obj.updateDynamic("acceptTap")(acceptTap.get.asInstanceOf[js.Any])
     if (captureGestures != null) __obj.updateDynamic("captureGestures")(captureGestures.asInstanceOf[js.Any])
     if (closedDrawerOffset != null) __obj.updateDynamic("closedDrawerOffset")(closedDrawerOffset.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
-    if (initializeOpen != null) __obj.updateDynamic("initializeOpen")(initializeOpen.asInstanceOf[js.Any])
-    if (!js.isUndefined(negotiatePan)) __obj.updateDynamic("negotiatePan")(negotiatePan.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(elevation)) __obj.updateDynamic("elevation")(elevation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initializeOpen)) __obj.updateDynamic("initializeOpen")(initializeOpen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(negotiatePan)) __obj.updateDynamic("negotiatePan")(negotiatePan.get.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
     if (onCloseStart != null) __obj.updateDynamic("onCloseStart")(js.Any.fromFunction0(onCloseStart))
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction0(onDragStart))
     if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction0(onOpen))
     if (onOpenStart != null) __obj.updateDynamic("onOpenStart")(js.Any.fromFunction0(onOpenStart))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
     if (openDrawerOffset != null) __obj.updateDynamic("openDrawerOffset")(openDrawerOffset.asInstanceOf[js.Any])
-    if (panCloseMask != null) __obj.updateDynamic("panCloseMask")(panCloseMask.asInstanceOf[js.Any])
-    if (panOpenMask != null) __obj.updateDynamic("panOpenMask")(panOpenMask.asInstanceOf[js.Any])
-    if (panThreshold != null) __obj.updateDynamic("panThreshold")(panThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(panCloseMask)) __obj.updateDynamic("panCloseMask")(panCloseMask.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(panOpenMask)) __obj.updateDynamic("panOpenMask")(panOpenMask.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(panThreshold)) __obj.updateDynamic("panThreshold")(panThreshold.get.asInstanceOf[js.Any])
     if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(tapToClose)) __obj.updateDynamic("tapToClose")(tapToClose.asInstanceOf[js.Any])
-    if (tweenDuration != null) __obj.updateDynamic("tweenDuration")(tweenDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(tapToClose)) __obj.updateDynamic("tapToClose")(tapToClose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tweenDuration)) __obj.updateDynamic("tweenDuration")(tweenDuration.get.asInstanceOf[js.Any])
     if (tweenEasing != null) __obj.updateDynamic("tweenEasing")(tweenEasing.asInstanceOf[js.Any])
     if (tweenHandler != null) __obj.updateDynamic("tweenHandler")(js.Any.fromFunction1(tweenHandler))
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(useInteractionManager)) __obj.updateDynamic("useInteractionManager")(useInteractionManager.asInstanceOf[js.Any])
+    if (!js.isUndefined(useInteractionManager)) __obj.updateDynamic("useInteractionManager")(useInteractionManager.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawerProperties]
   }
 }

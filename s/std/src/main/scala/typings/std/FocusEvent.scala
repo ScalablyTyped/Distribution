@@ -1,7 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,10 +9,4 @@ import scala.scalajs.js.annotation._
 trait FocusEvent extends UIEvent {
   val relatedTarget: EventTarget | Null = js.native
 }
-
-@JSGlobal("FocusEvent")
-@js.native
-object FocusEvent
-  extends Instantiable1[/* type */ java.lang.String, FocusEvent]
-     with Instantiable2[/* type */ java.lang.String, /* eventInitDict */ FocusEventInit, FocusEvent]
 

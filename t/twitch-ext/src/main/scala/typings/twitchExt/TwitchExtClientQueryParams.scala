@@ -31,30 +31,30 @@ import scala.scalajs.js.annotation._
   */
 trait TwitchExtClientQueryParams extends js.Object {
   /**
-  	 * The type of the anchor in which the extension is activated.
-  	 */
+    * The type of the anchor in which the extension is activated.
+    */
   var anchor: component | panel | video_overlay
   /**
-  	 * The user’s language setting.
-  	 *
-  	 * @example en
-  	 */
+    * The user’s language setting.
+    *
+    * @example en
+    */
   var language: String
   /**
-  	 * The extension’s mode.
-  	 */
+    * The extension’s mode.
+    */
   var mode: config | dashboard | viewer
   /**
-  	 * The platform on which the Twitch client is running.
-  	 */
+    * The platform on which the Twitch client is running.
+    */
   var platform: mobile | web
   /**
-  	 * Indicates whether the extension is popped out.
-  	 */
+    * Indicates whether the extension is popped out.
+    */
   var popout: `true` | `false`
   /**
-  	 * The release state of the extension.
-  	 */
+    * The release state of the extension.
+    */
   var state: testing | hosted_test | approved | released | ready_for_review | in_review | pending_action | uploading
 }
 

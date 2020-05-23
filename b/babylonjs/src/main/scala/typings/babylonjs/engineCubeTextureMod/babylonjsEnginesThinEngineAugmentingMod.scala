@@ -87,135 +87,6 @@ object babylonjsEnginesThinEngineAugmentingMod extends js.Object {
       * @hidden
       */
     def _setCubeMapTextureParams(loadMipmap: Boolean): Unit = js.native
-    def createCubeTexture(
-      rootUrl: String,
-      scene: Nullable[Scene],
-      files: Nullable[js.Array[String]],
-      noMipmap: js.UndefOr[scala.Nothing],
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-      onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-        ],
-      format: js.UndefOr[scala.Nothing],
-      forcedExtension: js.Any,
-      createPolynomials: Boolean,
-      lodScale: Double,
-      lodOffset: Double,
-      fallback: Nullable[InternalTexture]
-    ): InternalTexture = js.native
-    def createCubeTexture(
-      rootUrl: String,
-      scene: Nullable[Scene],
-      files: Nullable[js.Array[String]],
-      noMipmap: js.UndefOr[scala.Nothing],
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-      onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-        ],
-      format: Double,
-      forcedExtension: js.Any,
-      createPolynomials: Boolean,
-      lodScale: Double,
-      lodOffset: Double,
-      fallback: Nullable[InternalTexture]
-    ): InternalTexture = js.native
-    def createCubeTexture(
-      rootUrl: String,
-      scene: Nullable[Scene],
-      files: Nullable[js.Array[String]],
-      noMipmap: Boolean,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-      onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-        ],
-      format: js.UndefOr[scala.Nothing],
-      forcedExtension: js.Any
-    ): InternalTexture = js.native
-    def createCubeTexture(
-      rootUrl: String,
-      scene: Nullable[Scene],
-      files: Nullable[js.Array[String]],
-      noMipmap: Boolean,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-      onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-        ],
-      format: js.UndefOr[scala.Nothing],
-      forcedExtension: js.Any,
-      createPolynomials: Boolean,
-      lodScale: Double,
-      lodOffset: Double
-    ): InternalTexture = js.native
-    def createCubeTexture(
-      rootUrl: String,
-      scene: Nullable[Scene],
-      files: Nullable[js.Array[String]],
-      noMipmap: Boolean,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-      onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-        ],
-      format: js.UndefOr[scala.Nothing],
-      forcedExtension: js.Any,
-      createPolynomials: Boolean,
-      lodScale: Double,
-      lodOffset: Double,
-      fallback: Nullable[InternalTexture]
-    ): InternalTexture = js.native
-    /**
-      * Creates a cube texture
-      * @param rootUrl defines the url where the files to load is located
-      * @param scene defines the current scene
-      * @param files defines the list of files to load (1 per face)
-      * @param noMipmap defines a boolean indicating that no mipmaps shall be generated (false by default)
-      * @param onLoad defines an optional callback raised when the texture is loaded
-      * @param onError defines an optional callback raised if there is an issue to load the texture
-      * @param format defines the format of the data
-      * @param forcedExtension defines the extension to use to pick the right loader
-      * @returns the cube texture as an InternalTexture
-      */
-    def createCubeTexture(
-      rootUrl: String,
-      scene: Nullable[Scene],
-      files: Nullable[js.Array[String]],
-      noMipmap: Boolean,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-      onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-        ],
-      format: Double,
-      forcedExtension: js.Any
-    ): InternalTexture = js.native
-    /**
-      * Creates a cube texture
-      * @param rootUrl defines the url where the files to load is located
-      * @param scene defines the current scene
-      * @param files defines the list of files to load (1 per face)
-      * @param noMipmap defines a boolean indicating that no mipmaps shall be generated (false by default)
-      * @param onLoad defines an optional callback raised when the texture is loaded
-      * @param onError defines an optional callback raised if there is an issue to load the texture
-      * @param format defines the format of the data
-      * @param forcedExtension defines the extension to use to pick the right loader
-      * @param createPolynomials if a polynomial sphere should be created for the cube texture
-      * @param lodScale defines the scale applied to environment texture. This manages the range of LOD level used for IBL according to the roughness
-      * @param lodOffset defines the offset applied to environment texture. This manages first LOD level used for IBL according to the roughness
-      * @returns the cube texture as an InternalTexture
-      */
-    def createCubeTexture(
-      rootUrl: String,
-      scene: Nullable[Scene],
-      files: Nullable[js.Array[String]],
-      noMipmap: Boolean,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-      onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-        ],
-      format: Double,
-      forcedExtension: js.Any,
-      createPolynomials: Boolean,
-      lodScale: Double,
-      lodOffset: Double
-    ): InternalTexture = js.native
     /**
       * Creates a cube texture
       * @param rootUrl defines the url where the files to load is located
@@ -236,17 +107,71 @@ object babylonjsEnginesThinEngineAugmentingMod extends js.Object {
       rootUrl: String,
       scene: Nullable[Scene],
       files: Nullable[js.Array[String]],
-      noMipmap: Boolean,
+      noMipmap: js.UndefOr[Boolean],
       onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
       onError: Nullable[
           js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
         ],
-      format: Double,
+      format: js.UndefOr[Double],
       forcedExtension: js.Any,
       createPolynomials: Boolean,
       lodScale: Double,
       lodOffset: Double,
       fallback: Nullable[InternalTexture]
+    ): InternalTexture = js.native
+    /**
+      * Creates a cube texture
+      * @param rootUrl defines the url where the files to load is located
+      * @param scene defines the current scene
+      * @param files defines the list of files to load (1 per face)
+      * @param noMipmap defines a boolean indicating that no mipmaps shall be generated (false by default)
+      * @param onLoad defines an optional callback raised when the texture is loaded
+      * @param onError defines an optional callback raised if there is an issue to load the texture
+      * @param format defines the format of the data
+      * @param forcedExtension defines the extension to use to pick the right loader
+      * @returns the cube texture as an InternalTexture
+      */
+    def createCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      files: Nullable[js.Array[String]],
+      noMipmap: Boolean,
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+        ],
+      format: js.UndefOr[Double],
+      forcedExtension: js.Any
+    ): InternalTexture = js.native
+    /**
+      * Creates a cube texture
+      * @param rootUrl defines the url where the files to load is located
+      * @param scene defines the current scene
+      * @param files defines the list of files to load (1 per face)
+      * @param noMipmap defines a boolean indicating that no mipmaps shall be generated (false by default)
+      * @param onLoad defines an optional callback raised when the texture is loaded
+      * @param onError defines an optional callback raised if there is an issue to load the texture
+      * @param format defines the format of the data
+      * @param forcedExtension defines the extension to use to pick the right loader
+      * @param createPolynomials if a polynomial sphere should be created for the cube texture
+      * @param lodScale defines the scale applied to environment texture. This manages the range of LOD level used for IBL according to the roughness
+      * @param lodOffset defines the offset applied to environment texture. This manages first LOD level used for IBL according to the roughness
+      * @returns the cube texture as an InternalTexture
+      */
+    def createCubeTexture(
+      rootUrl: String,
+      scene: Nullable[Scene],
+      files: Nullable[js.Array[String]],
+      noMipmap: Boolean,
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+        ],
+      format: js.UndefOr[Double],
+      forcedExtension: js.Any,
+      createPolynomials: Boolean,
+      lodScale: Double,
+      lodOffset: Double
     ): InternalTexture = js.native
   }
   

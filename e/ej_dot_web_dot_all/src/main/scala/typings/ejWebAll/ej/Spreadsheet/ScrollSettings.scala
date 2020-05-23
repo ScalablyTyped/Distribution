@@ -48,11 +48,11 @@ object ScrollSettings {
     width: Double | String = null
   ): ScrollSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowScrolling)) __obj.updateDynamic("allowScrolling")(allowScrolling.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSheetOnDemand)) __obj.updateDynamic("allowSheetOnDemand")(allowSheetOnDemand.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowVirtualScrolling)) __obj.updateDynamic("allowVirtualScrolling")(allowVirtualScrolling.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowScrolling)) __obj.updateDynamic("allowScrolling")(allowScrolling.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSheetOnDemand)) __obj.updateDynamic("allowSheetOnDemand")(allowSheetOnDemand.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowVirtualScrolling)) __obj.updateDynamic("allowVirtualScrolling")(allowVirtualScrolling.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.get.asInstanceOf[js.Any])
     if (scrollMode != null) __obj.updateDynamic("scrollMode")(scrollMode.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollSettings]

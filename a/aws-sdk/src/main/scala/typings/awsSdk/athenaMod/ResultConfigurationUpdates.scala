@@ -29,14 +29,14 @@ object ResultConfigurationUpdates {
   def apply(
     EncryptionConfiguration: EncryptionConfiguration = null,
     OutputLocation: String = null,
-    RemoveEncryptionConfiguration: js.UndefOr[scala.Boolean] = js.undefined,
-    RemoveOutputLocation: js.UndefOr[scala.Boolean] = js.undefined
+    RemoveEncryptionConfiguration: js.UndefOr[BoxedBoolean] = js.undefined,
+    RemoveOutputLocation: js.UndefOr[BoxedBoolean] = js.undefined
   ): ResultConfigurationUpdates = {
     val __obj = js.Dynamic.literal()
     if (EncryptionConfiguration != null) __obj.updateDynamic("EncryptionConfiguration")(EncryptionConfiguration.asInstanceOf[js.Any])
     if (OutputLocation != null) __obj.updateDynamic("OutputLocation")(OutputLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(RemoveEncryptionConfiguration)) __obj.updateDynamic("RemoveEncryptionConfiguration")(RemoveEncryptionConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(RemoveOutputLocation)) __obj.updateDynamic("RemoveOutputLocation")(RemoveOutputLocation.asInstanceOf[js.Any])
+    if (!js.isUndefined(RemoveEncryptionConfiguration)) __obj.updateDynamic("RemoveEncryptionConfiguration")(RemoveEncryptionConfiguration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RemoveOutputLocation)) __obj.updateDynamic("RemoveOutputLocation")(RemoveOutputLocation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultConfigurationUpdates]
   }
 }

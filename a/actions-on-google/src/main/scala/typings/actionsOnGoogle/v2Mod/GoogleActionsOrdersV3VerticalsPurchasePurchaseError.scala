@@ -32,14 +32,14 @@ trait GoogleActionsOrdersV3VerticalsPurchasePurchaseError extends js.Object {
 object GoogleActionsOrdersV3VerticalsPurchasePurchaseError {
   @scala.inline
   def apply(
-    availableQuantity: Int | Double = null,
+    availableQuantity: js.UndefOr[Double] = js.undefined,
     description: String = null,
     entityId: String = null,
     `type`: GoogleActionsOrdersV3VerticalsPurchasePurchaseErrorType = null,
     updatedPrice: GoogleActionsOrdersV3PriceAttribute = null
   ): GoogleActionsOrdersV3VerticalsPurchasePurchaseError = {
     val __obj = js.Dynamic.literal()
-    if (availableQuantity != null) __obj.updateDynamic("availableQuantity")(availableQuantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(availableQuantity)) __obj.updateDynamic("availableQuantity")(availableQuantity.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (entityId != null) __obj.updateDynamic("entityId")(entityId.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

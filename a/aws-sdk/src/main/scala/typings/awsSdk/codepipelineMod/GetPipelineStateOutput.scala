@@ -33,14 +33,14 @@ object GetPipelineStateOutput {
   def apply(
     created: Timestamp = null,
     pipelineName: PipelineName = null,
-    pipelineVersion: Int | Double = null,
+    pipelineVersion: js.UndefOr[PipelineVersion] = js.undefined,
     stageStates: StageStateList = null,
     updated: Timestamp = null
   ): GetPipelineStateOutput = {
     val __obj = js.Dynamic.literal()
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (pipelineName != null) __obj.updateDynamic("pipelineName")(pipelineName.asInstanceOf[js.Any])
-    if (pipelineVersion != null) __obj.updateDynamic("pipelineVersion")(pipelineVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(pipelineVersion)) __obj.updateDynamic("pipelineVersion")(pipelineVersion.get.asInstanceOf[js.Any])
     if (stageStates != null) __obj.updateDynamic("stageStates")(stageStates.asInstanceOf[js.Any])
     if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPipelineStateOutput]

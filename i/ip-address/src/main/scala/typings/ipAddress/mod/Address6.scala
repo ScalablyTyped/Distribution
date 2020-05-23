@@ -1,6 +1,6 @@
 package typings.ipAddress.mod
 
-import typings.ipAddress.AnonOmitSuffix
+import typings.ipAddress.anon.OmitSuffix
 import typings.jsbn.mod.BigInteger
 import typings.std.RegExp
 import scala.scalajs.js
@@ -92,7 +92,7 @@ class Address6 protected () extends js.Object {
   def regularExpressionString(substring: String): RegExp = js.native
   /** Return the reversed ip6.arpa form of the address */
   def reverseForm(): String = js.native
-  def reverseForm(options: AnonOmitSuffix): String = js.native
+  def reverseForm(options: OmitSuffix): String = js.native
   /**
     * Return an object containing the 6to4 properties of the address
     * @deprecated

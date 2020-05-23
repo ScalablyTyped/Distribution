@@ -55,29 +55,29 @@ object TotpOptions {
   def apply(
     secret: String,
     algorithm: Algorithm = null,
-    counter: Int | Double = null,
+    counter: js.UndefOr[Double] = js.undefined,
     digest: Buffer = null,
-    digits: Int | Double = null,
+    digits: js.UndefOr[Double] = js.undefined,
     encoding: Encoding = null,
-    epoch: Int | Double = null,
-    initial_time: Int | Double = null,
+    epoch: js.UndefOr[Double] = js.undefined,
+    initial_time: js.UndefOr[Double] = js.undefined,
     key: String = null,
-    length: Int | Double = null,
-    step: Int | Double = null,
-    time: Int | Double = null
+    length: js.UndefOr[Double] = js.undefined,
+    step: js.UndefOr[Double] = js.undefined,
+    time: js.UndefOr[Double] = js.undefined
   ): TotpOptions = {
     val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
-    if (counter != null) __obj.updateDynamic("counter")(counter.asInstanceOf[js.Any])
+    if (!js.isUndefined(counter)) __obj.updateDynamic("counter")(counter.get.asInstanceOf[js.Any])
     if (digest != null) __obj.updateDynamic("digest")(digest.asInstanceOf[js.Any])
-    if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
+    if (!js.isUndefined(digits)) __obj.updateDynamic("digits")(digits.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (epoch != null) __obj.updateDynamic("epoch")(epoch.asInstanceOf[js.Any])
-    if (initial_time != null) __obj.updateDynamic("initial_time")(initial_time.asInstanceOf[js.Any])
+    if (!js.isUndefined(epoch)) __obj.updateDynamic("epoch")(epoch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initial_time)) __obj.updateDynamic("initial_time")(initial_time.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TotpOptions]
   }
 }

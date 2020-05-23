@@ -15,9 +15,9 @@ trait VerticalAlignProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] ex
 
 object VerticalAlignProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](verticalAlign: ResponsiveValue[TVal, ThemeType] = null): VerticalAlignProps[ThemeType, TVal] = {
+  def apply[ThemeType, TVal](verticalAlign: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): VerticalAlignProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalAlign)) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerticalAlignProps[ThemeType, TVal]]
   }
 }

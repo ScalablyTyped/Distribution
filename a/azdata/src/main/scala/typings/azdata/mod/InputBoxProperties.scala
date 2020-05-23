@@ -16,9 +16,9 @@ trait InputBoxProperties extends ComponentProperties {
   var required: js.UndefOr[Boolean] = js.undefined
   var rows: js.UndefOr[Double] = js.undefined
   /**
-  		 * Whether to stop key event propagation when enter is pressed in the input box. Leaving this as false
-  		 * means the event will propagate up to any parents that have handlers (such as validate on Dialogs)
-  		 */
+    * Whether to stop key event propagation when enter is pressed in the input box. Leaving this as false
+    * means the event will propagate up to any parents that have handlers (such as validate on Dialogs)
+    */
   var stopEnterPropagation: js.UndefOr[Boolean] = js.undefined
   var value: js.UndefOr[String] = js.undefined
 }
@@ -31,18 +31,18 @@ object InputBoxProperties {
     ariaLive: String = null,
     ariaRole: String = null,
     ariaSelected: js.UndefOr[Boolean] = js.undefined,
-    columns: Int | Double = null,
+    columns: js.UndefOr[Double] = js.undefined,
     display: DisplayType = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     height: Double | String = null,
     inputType: InputBoxInputType = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
     multiline: js.UndefOr[Boolean] = js.undefined,
     placeHolder: String = null,
     position: PositionType = null,
     required: js.UndefOr[Boolean] = js.undefined,
-    rows: Int | Double = null,
+    rows: js.UndefOr[Double] = js.undefined,
     stopEnterPropagation: js.UndefOr[Boolean] = js.undefined,
     value: String = null,
     width: Double | String = null
@@ -52,20 +52,20 @@ object InputBoxProperties {
     if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
     if (ariaLive != null) __obj.updateDynamic("ariaLive")(ariaLive.asInstanceOf[js.Any])
     if (ariaRole != null) __obj.updateDynamic("ariaRole")(ariaRole.asInstanceOf[js.Any])
-    if (!js.isUndefined(ariaSelected)) __obj.updateDynamic("ariaSelected")(ariaSelected.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (!js.isUndefined(ariaSelected)) __obj.updateDynamic("ariaSelected")(ariaSelected.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns.get.asInstanceOf[js.Any])
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (inputType != null) __obj.updateDynamic("inputType")(inputType.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline.get.asInstanceOf[js.Any])
     if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopEnterPropagation)) __obj.updateDynamic("stopEnterPropagation")(stopEnterPropagation.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopEnterPropagation)) __obj.updateDynamic("stopEnterPropagation")(stopEnterPropagation.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputBoxProperties]

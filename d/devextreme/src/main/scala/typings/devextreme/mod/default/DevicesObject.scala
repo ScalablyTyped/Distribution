@@ -1,6 +1,6 @@
 package typings.devextreme.mod.default
 
-import typings.devextreme.AnonWindow
+import typings.devextreme.anon.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class DevicesObject protected ()
   extends typings.devextreme.mod.DevExpress.DevicesObject {
-  def this(options: AnonWindow) = this()
+  def this(options: Window) = this()
 }
 

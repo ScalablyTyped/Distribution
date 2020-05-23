@@ -18,12 +18,12 @@ object Contact {
     first_name: String,
     phone_number: String,
     last_name: String = null,
-    user_id: Int | Double = null,
+    user_id: js.UndefOr[Double] = js.undefined,
     vcard: String = null
   ): Contact = {
     val __obj = js.Dynamic.literal(first_name = first_name.asInstanceOf[js.Any], phone_number = phone_number.asInstanceOf[js.Any])
     if (last_name != null) __obj.updateDynamic("last_name")(last_name.asInstanceOf[js.Any])
-    if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(user_id)) __obj.updateDynamic("user_id")(user_id.get.asInstanceOf[js.Any])
     if (vcard != null) __obj.updateDynamic("vcard")(vcard.asInstanceOf[js.Any])
     __obj.asInstanceOf[Contact]
   }

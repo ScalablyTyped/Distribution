@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side counterpart of the RoundPanel extension.
   */
-@JSGlobal("MVCxClientRoundPanel")
 @js.native
-class MVCxClientRoundPanel () extends ASPxClientRoundPanel {
+trait MVCxClientRoundPanel extends ASPxClientRoundPanel {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -22,16 +21,5 @@ class MVCxClientRoundPanel () extends ASPxClientRoundPanel {
     */
   def PerformCallback(data: js.Any): Unit = js.native
   def PerformCallback(data: js.Any, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("MVCxClientRoundPanel")
-@js.native
-object MVCxClientRoundPanel extends js.Object {
-  /**
-    * Converts the specified object to the MVCxClientRoundPanel type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): MVCxClientRoundPanel = js.native
 }
 

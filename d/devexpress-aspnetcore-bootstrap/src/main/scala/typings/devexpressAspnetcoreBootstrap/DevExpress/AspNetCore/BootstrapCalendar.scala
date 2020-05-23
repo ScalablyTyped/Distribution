@@ -14,9 +14,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapCalendar")
 @js.native
-class BootstrapCalendar () extends BootstrapClientEdit {
+trait BootstrapCalendar extends BootstrapClientEdit {
   def clearSelection(): Unit = js.native
   def deselectDate(date: Date): Unit = js.native
   def deselectRange(start: Date, end: Date): Unit = js.native

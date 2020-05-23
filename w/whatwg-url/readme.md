@@ -1,7 +1,7 @@
 
 # Scala.js typings for whatwg-url
 
-Typings are for version 6.4
+Typings are for version 8.0
 
 ## Library description:
 An implementation of the WHATWG URL Standard's URL API and parsing machinery

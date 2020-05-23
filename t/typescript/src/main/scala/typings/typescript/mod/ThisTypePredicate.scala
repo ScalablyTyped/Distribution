@@ -18,16 +18,9 @@ trait ThisTypePredicate
 
 object ThisTypePredicate {
   @scala.inline
-  def apply(
-    kind: This,
-    `type`: Type,
-    parameterIndex: js.UndefOr[scala.Nothing] = js.undefined,
-    parameterName: js.UndefOr[scala.Nothing] = js.undefined
-  ): ThisTypePredicate = {
+  def apply(kind: This, `type`: Type): ThisTypePredicate = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(parameterIndex)) __obj.updateDynamic("parameterIndex")(parameterIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(parameterName)) __obj.updateDynamic("parameterName")(parameterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThisTypePredicate]
   }
 }

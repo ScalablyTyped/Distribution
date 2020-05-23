@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Capture
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object KnownVideoProfile extends js.Object {
   /** The profile provides hints to the driver to optimize for high-quality video, prioritizing higher resolution and frame rates over power consumption and latency. */
   @js.native
   sealed trait videoRecording extends KnownVideoProfile
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[KnownVideoProfile with Double] = js.native
-  /* 2 */ @js.native
-  object balancedVideoAndPhoto extends TopLevel[balancedVideoAndPhoto with Double]
-  
-  /* 1 */ @js.native
-  object highQualityPhoto extends TopLevel[highQualityPhoto with Double]
-  
-  /* 4 */ @js.native
-  object photoSequence extends TopLevel[photoSequence with Double]
-  
-  /* 3 */ @js.native
-  object videoConferencing extends TopLevel[videoConferencing with Double]
-  
-  /* 0 */ @js.native
-  object videoRecording extends TopLevel[videoRecording with Double]
   
 }
 

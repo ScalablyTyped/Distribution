@@ -5,24 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the tab is selected.
-		 */
+  * Fired when the tab is selected.
+  */
 trait TabSelectedEvent extends TabBaseEvent {
   /**
-  			 * Index of the current active tab.
-  			 */
+    * Index of the current active tab.
+    */
   var index: Double
   /**
-  			 * Index of the previous active tab.
-  			 */
+    * Index of the previous active tab.
+    */
   var previousIndex: Double
   /**
-  			 * Previous active tab object.
-  			 */
+    * Previous active tab object.
+    */
   var previousTab: Tab
   /**
-  			 * Current active tab object.
-  			 */
+    * Current active tab object.
+    */
   var tab: Tab
 }
 

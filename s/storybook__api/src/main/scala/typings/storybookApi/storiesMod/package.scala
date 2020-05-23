@@ -16,7 +16,7 @@ package object storiesMod {
     - typings.storybookApi.storybookApiStrings.story
     - typings.storybookApi.storybookApiStrings.info
     - typings.storybookApi.storybookApiStrings.settings
-    - `js.undefined`
+    - js.UndefOr[scala.Nothing]
   */
   type ViewMode = js.UndefOr[typings.storybookApi.storiesMod._ViewMode]
 }

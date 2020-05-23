@@ -10,9 +10,9 @@ trait IColorizerOptions extends js.Object {
 
 object IColorizerOptions {
   @scala.inline
-  def apply(tabSize: Int | Double = null): IColorizerOptions = {
+  def apply(tabSize: js.UndefOr[Double] = js.undefined): IColorizerOptions = {
     val __obj = js.Dynamic.literal()
-    if (tabSize != null) __obj.updateDynamic("tabSize")(tabSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabSize)) __obj.updateDynamic("tabSize")(tabSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColorizerOptions]
   }
 }

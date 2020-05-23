@@ -14,7 +14,7 @@ object AbstractGetOptions {
   def apply(StringDictionary: StringDictionary[js.Any] = null, asBuffer: js.UndefOr[Boolean] = js.undefined): AbstractGetOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(asBuffer)) __obj.updateDynamic("asBuffer")(asBuffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(asBuffer)) __obj.updateDynamic("asBuffer")(asBuffer.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbstractGetOptions]
   }
 }

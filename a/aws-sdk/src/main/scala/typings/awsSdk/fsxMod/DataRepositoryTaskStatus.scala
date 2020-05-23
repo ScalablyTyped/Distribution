@@ -27,16 +27,16 @@ trait DataRepositoryTaskStatus extends js.Object {
 object DataRepositoryTaskStatus {
   @scala.inline
   def apply(
-    FailedCount: Int | Double = null,
+    FailedCount: js.UndefOr[FailedCount] = js.undefined,
     LastUpdatedTime: LastUpdatedTime = null,
-    SucceededCount: Int | Double = null,
-    TotalCount: Int | Double = null
+    SucceededCount: js.UndefOr[SucceededCount] = js.undefined,
+    TotalCount: js.UndefOr[TotalCount] = js.undefined
   ): DataRepositoryTaskStatus = {
     val __obj = js.Dynamic.literal()
-    if (FailedCount != null) __obj.updateDynamic("FailedCount")(FailedCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(FailedCount)) __obj.updateDynamic("FailedCount")(FailedCount.get.asInstanceOf[js.Any])
     if (LastUpdatedTime != null) __obj.updateDynamic("LastUpdatedTime")(LastUpdatedTime.asInstanceOf[js.Any])
-    if (SucceededCount != null) __obj.updateDynamic("SucceededCount")(SucceededCount.asInstanceOf[js.Any])
-    if (TotalCount != null) __obj.updateDynamic("TotalCount")(TotalCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(SucceededCount)) __obj.updateDynamic("SucceededCount")(SucceededCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalCount)) __obj.updateDynamic("TotalCount")(TotalCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataRepositoryTaskStatus]
   }
 }

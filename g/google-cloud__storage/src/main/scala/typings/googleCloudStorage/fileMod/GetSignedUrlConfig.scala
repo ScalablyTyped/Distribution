@@ -54,7 +54,7 @@ object GetSignedUrlConfig {
     if (responseDisposition != null) __obj.updateDynamic("responseDisposition")(responseDisposition.asInstanceOf[js.Any])
     if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (!js.isUndefined(virtualHostedStyle)) __obj.updateDynamic("virtualHostedStyle")(virtualHostedStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(virtualHostedStyle)) __obj.updateDynamic("virtualHostedStyle")(virtualHostedStyle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSignedUrlConfig]
   }
 }

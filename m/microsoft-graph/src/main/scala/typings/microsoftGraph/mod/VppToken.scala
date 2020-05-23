@@ -59,7 +59,7 @@ object VppToken {
   ): VppToken = {
     val __obj = js.Dynamic.literal()
     if (appleId != null) __obj.updateDynamic("appleId")(appleId.asInstanceOf[js.Any])
-    if (!js.isUndefined(automaticallyUpdateApps)) __obj.updateDynamic("automaticallyUpdateApps")(automaticallyUpdateApps.asInstanceOf[js.Any])
+    if (!js.isUndefined(automaticallyUpdateApps)) __obj.updateDynamic("automaticallyUpdateApps")(automaticallyUpdateApps.get.asInstanceOf[js.Any])
     if (countryOrRegion != null) __obj.updateDynamic("countryOrRegion")(countryOrRegion.asInstanceOf[js.Any])
     if (expirationDateTime != null) __obj.updateDynamic("expirationDateTime")(expirationDateTime.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

@@ -80,12 +80,12 @@ trait Lightsail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AttachStaticIpResult, Unit]
   ): Request[AttachStaticIpResult, AWSError] = js.native
   /**
-    * Closes the public ports on a specific Amazon Lightsail instance. The close instance public ports operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Lightsail Dev Guide.
+    * Closes ports for a specific Amazon Lightsail instance. The CloseInstancePublicPorts action supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
     */
   def closeInstancePublicPorts(): Request[CloseInstancePublicPortsResult, AWSError] = js.native
   def closeInstancePublicPorts(callback: js.Function2[/* err */ AWSError, /* data */ CloseInstancePublicPortsResult, Unit]): Request[CloseInstancePublicPortsResult, AWSError] = js.native
   /**
-    * Closes the public ports on a specific Amazon Lightsail instance. The close instance public ports operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Lightsail Dev Guide.
+    * Closes ports for a specific Amazon Lightsail instance. The CloseInstancePublicPorts action supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
     */
   def closeInstancePublicPorts(params: CloseInstancePublicPortsRequest): Request[CloseInstancePublicPortsResult, AWSError] = js.native
   def closeInstancePublicPorts(
@@ -828,12 +828,12 @@ trait Lightsail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetInstanceMetricDataResult, Unit]
   ): Request[GetInstanceMetricDataResult, AWSError] = js.native
   /**
-    * Returns the port states for a specific virtual private server, or instance.
+    * Returns the firewall port states for a specific Amazon Lightsail instance, the IP addresses allowed to connect to the instance through the ports, and the protocol.
     */
   def getInstancePortStates(): Request[GetInstancePortStatesResult, AWSError] = js.native
   def getInstancePortStates(callback: js.Function2[/* err */ AWSError, /* data */ GetInstancePortStatesResult, Unit]): Request[GetInstancePortStatesResult, AWSError] = js.native
   /**
-    * Returns the port states for a specific virtual private server, or instance.
+    * Returns the firewall port states for a specific Amazon Lightsail instance, the IP addresses allowed to connect to the instance through the ports, and the protocol.
     */
   def getInstancePortStates(params: GetInstancePortStatesRequest): Request[GetInstancePortStatesResult, AWSError] = js.native
   def getInstancePortStates(
@@ -1233,12 +1233,12 @@ trait Lightsail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ IsVpcPeeredResult, Unit]
   ): Request[IsVpcPeeredResult, AWSError] = js.native
   /**
-    * Adds public ports to an Amazon Lightsail instance. The open instance public ports operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Lightsail Dev Guide.
+    * Opens ports for a specific Amazon Lightsail instance, and specifies the IP addresses allowed to connect to the instance through the ports, and the protocol. The OpenInstancePublicPorts action supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
     */
   def openInstancePublicPorts(): Request[OpenInstancePublicPortsResult, AWSError] = js.native
   def openInstancePublicPorts(callback: js.Function2[/* err */ AWSError, /* data */ OpenInstancePublicPortsResult, Unit]): Request[OpenInstancePublicPortsResult, AWSError] = js.native
   /**
-    * Adds public ports to an Amazon Lightsail instance. The open instance public ports operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Lightsail Dev Guide.
+    * Opens ports for a specific Amazon Lightsail instance, and specifies the IP addresses allowed to connect to the instance through the ports, and the protocol. The OpenInstancePublicPorts action supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
     */
   def openInstancePublicPorts(params: OpenInstancePublicPortsRequest): Request[OpenInstancePublicPortsResult, AWSError] = js.native
   def openInstancePublicPorts(
@@ -1269,12 +1269,12 @@ trait Lightsail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PutAlarmResult, Unit]
   ): Request[PutAlarmResult, AWSError] = js.native
   /**
-    * Sets the specified open ports for an Amazon Lightsail instance, and closes all ports for every protocol not included in the current request. The put instance public ports operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Lightsail Dev Guide.
+    * Opens ports for a specific Amazon Lightsail instance, and specifies the IP addresses allowed to connect to the instance through the ports, and the protocol. This action also closes all currently open ports that are not included in the request. Include all of the ports and the protocols you want to open in your PutInstancePublicPortsrequest. Or use the OpenInstancePublicPorts action to open ports without closing currently open ports. The PutInstancePublicPorts action supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
     */
   def putInstancePublicPorts(): Request[PutInstancePublicPortsResult, AWSError] = js.native
   def putInstancePublicPorts(callback: js.Function2[/* err */ AWSError, /* data */ PutInstancePublicPortsResult, Unit]): Request[PutInstancePublicPortsResult, AWSError] = js.native
   /**
-    * Sets the specified open ports for an Amazon Lightsail instance, and closes all ports for every protocol not included in the current request. The put instance public ports operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Lightsail Dev Guide.
+    * Opens ports for a specific Amazon Lightsail instance, and specifies the IP addresses allowed to connect to the instance through the ports, and the protocol. This action also closes all currently open ports that are not included in the request. Include all of the ports and the protocols you want to open in your PutInstancePublicPortsrequest. Or use the OpenInstancePublicPorts action to open ports without closing currently open ports. The PutInstancePublicPorts action supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
     */
   def putInstancePublicPorts(params: PutInstancePublicPortsRequest): Request[PutInstancePublicPortsResult, AWSError] = js.native
   def putInstancePublicPorts(
@@ -1321,12 +1321,12 @@ trait Lightsail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ReleaseStaticIpResult, Unit]
   ): Request[ReleaseStaticIpResult, AWSError] = js.native
   /**
-    * Sends a verification request to an email contact method to ensure it’s owned by the requester. SMS contact methods don’t need to be verified. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each AWS Region. However, SMS text messaging is not supported in some AWS Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail. A verification request is sent to the contact method when you initially create it. Use this action to send another verification request if a previous verification request was deleted, or has expired.  Notifications are not sent to an email contact method until after it is verified, and confirmed as valid. 
+    * Sends a verification request to an email contact method to ensure it's owned by the requester. SMS contact methods don't need to be verified. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each AWS Region. However, SMS text messaging is not supported in some AWS Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail. A verification request is sent to the contact method when you initially create it. Use this action to send another verification request if a previous verification request was deleted, or has expired.  Notifications are not sent to an email contact method until after it is verified, and confirmed as valid. 
     */
   def sendContactMethodVerification(): Request[SendContactMethodVerificationResult, AWSError] = js.native
   def sendContactMethodVerification(callback: js.Function2[/* err */ AWSError, /* data */ SendContactMethodVerificationResult, Unit]): Request[SendContactMethodVerificationResult, AWSError] = js.native
   /**
-    * Sends a verification request to an email contact method to ensure it’s owned by the requester. SMS contact methods don’t need to be verified. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each AWS Region. However, SMS text messaging is not supported in some AWS Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail. A verification request is sent to the contact method when you initially create it. Use this action to send another verification request if a previous verification request was deleted, or has expired.  Notifications are not sent to an email contact method until after it is verified, and confirmed as valid. 
+    * Sends a verification request to an email contact method to ensure it's owned by the requester. SMS contact methods don't need to be verified. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each AWS Region. However, SMS text messaging is not supported in some AWS Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail. A verification request is sent to the contact method when you initially create it. Use this action to send another verification request if a previous verification request was deleted, or has expired.  Notifications are not sent to an email contact method until after it is verified, and confirmed as valid. 
     */
   def sendContactMethodVerification(params: SendContactMethodVerificationRequest): Request[SendContactMethodVerificationResult, AWSError] = js.native
   def sendContactMethodVerification(

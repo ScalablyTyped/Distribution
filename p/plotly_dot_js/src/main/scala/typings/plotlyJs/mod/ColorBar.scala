@@ -1,6 +1,6 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.AnonDtickrange
+import typings.plotlyJs.anon.Dtickrange
 import typings.plotlyJs.plotlyJsStrings.B
 import typings.plotlyJs.plotlyJsStrings.E
 import typings.plotlyJs.plotlyJsStrings.SI
@@ -51,7 +51,7 @@ trait ColorBar extends js.Object {
   var tickcolor: Color
   var tickfont: Font
   var tickformat: String
-  var tickformatstops: AnonDtickrange
+  var tickformatstops: Dtickrange
   var ticklen: Double
   var tickmode: auto | linear | array
   var tickprefix: String
@@ -98,7 +98,7 @@ object ColorBar {
     tickcolor: Color,
     tickfont: Font,
     tickformat: String,
-    tickformatstops: AnonDtickrange,
+    tickformatstops: Dtickrange,
     ticklen: Double,
     tickmode: auto | linear | array,
     tickprefix: String,

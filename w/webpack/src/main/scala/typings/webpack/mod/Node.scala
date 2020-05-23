@@ -36,7 +36,7 @@ object Node {
     if (__dirname != null) __obj.updateDynamic("__dirname")(__dirname.asInstanceOf[js.Any])
     if (__filename != null) __obj.updateDynamic("__filename")(__filename.asInstanceOf[js.Any])
     if (console != null) __obj.updateDynamic("console")(console.asInstanceOf[js.Any])
-    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.get.asInstanceOf[js.Any])
     if (process != null) __obj.updateDynamic("process")(process.asInstanceOf[js.Any])
     if (setImmediate != null) __obj.updateDynamic("setImmediate")(setImmediate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]

@@ -7,35 +7,32 @@ import scala.scalajs.js.annotation._
 
 trait IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimensionMeasure
   extends /**
-	 * Option for IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimensionMeasure
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * Optional="false" An aggregator function called when each cell is evaluated.
-  	 * Returns a value for the cell. If the returned value is null, no cell will be created in for the data source result.
-  	 */
+    * Optional="false" An aggregator function called when each cell is evaluated.
+    * Returns a value for the cell. If the returned value is null, no cell will be created in for the data source result.
+    */
   var aggregator: js.UndefOr[js.Function] = js.undefined
   /**
-  	 * A caption for the measure.
-  	 */
+    * A caption for the measure.
+    */
   var caption: js.UndefOr[String] = js.undefined
   /**
-  	 * The path used when displaying the measure in the user interface. Nested folders are indicated by a backslash (\).
-  	 */
+    * The path used when displaying the measure in the user interface. Nested folders are indicated by a backslash (\).
+    */
   var displayFolder: js.UndefOr[String] = js.undefined
   /**
-  	 * Optional="false" A unique name for the measure.
-  	 */
+    * Optional="false" A unique name for the measure.
+    */
   var name: js.UndefOr[String] = js.undefined
 }
 
 object IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimensionMeasure {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimensionMeasure
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     aggregator: js.Function = null,
     caption: String = null,
     displayFolder: String = null,

@@ -1,6 +1,6 @@
 package typings.antDesignProLayout.baseMenuMod
 
-import typings.antDesignProLayout.MenuDataItemisUrlboolean
+import typings.antDesignProLayout.anon.MenuDataItemisUrlboolean
 import typings.antDesignProLayout.typingsMod.MenuDataItem
 import typings.antDesignProLayout.typingsMod.MessageDescriptor
 import typings.antDesignProLayout.typingsMod.WithFalse
@@ -75,10 +75,10 @@ object BaseMenuProps {
   ): BaseMenuProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.get.asInstanceOf[js.Any])
     if (formatMessage != null) __obj.updateDynamic("formatMessage")(js.Any.fromFunction1(formatMessage))
     if (handleOpenChange != null) __obj.updateDynamic("handleOpenChange")(js.Any.fromFunction1(handleOpenChange))
-    if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile.get.asInstanceOf[js.Any])
     if (menuData != null) __obj.updateDynamic("menuData")(menuData.asInstanceOf[js.Any])
     if (menuItemRender != null) __obj.updateDynamic("menuItemRender")(menuItemRender.asInstanceOf[js.Any])
     if (menuProps != null) __obj.updateDynamic("menuProps")(menuProps.asInstanceOf[js.Any])

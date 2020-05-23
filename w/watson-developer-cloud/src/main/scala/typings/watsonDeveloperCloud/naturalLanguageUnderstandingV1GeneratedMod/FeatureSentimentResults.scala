@@ -12,9 +12,9 @@ trait FeatureSentimentResults extends js.Object {
 
 object FeatureSentimentResults {
   @scala.inline
-  def apply(score: Int | Double = null): FeatureSentimentResults = {
+  def apply(score: js.UndefOr[Double] = js.undefined): FeatureSentimentResults = {
     val __obj = js.Dynamic.literal()
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureSentimentResults]
   }
 }

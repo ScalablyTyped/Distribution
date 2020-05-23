@@ -1,8 +1,8 @@
 package typings.fundamentalReact.mod
 
-import typings.fundamentalReact.PartialActionBarProps
-import typings.fundamentalReact.WeakValidationMapActionBa
 import typings.fundamentalReact.actionBarMod.ActionBarProps
+import typings.fundamentalReact.anon.PartialActionBarProps
+import typings.fundamentalReact.anon.WeakValidationMapActionBa
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap

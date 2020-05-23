@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLProgressElement")
 @js.native
-class HTMLProgressElement protected () extends js.Object {
+trait HTMLProgressElement extends js.Object {
   @JSName("MSHTML.HTMLProgressElement_typekey")
   var MSHTMLDotHTMLProgressElement_typekey: HTMLProgressElement = js.native
   var accessKey: String = js.native

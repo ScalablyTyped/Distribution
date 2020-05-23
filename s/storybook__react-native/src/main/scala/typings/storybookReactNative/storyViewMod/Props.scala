@@ -14,7 +14,7 @@ object Props {
   @scala.inline
   def apply(stories: js.Any, url: String, onDevice: js.UndefOr[Boolean] = js.undefined): Props = {
     val __obj = js.Dynamic.literal(stories = stories.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    if (!js.isUndefined(onDevice)) __obj.updateDynamic("onDevice")(onDevice.asInstanceOf[js.Any])
+    if (!js.isUndefined(onDevice)) __obj.updateDynamic("onDevice")(onDevice.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

@@ -18,7 +18,7 @@ object BulkDocsOptions {
   ): BulkDocsOptions = {
     val __obj = js.Dynamic.literal()
     if (fetch != null) __obj.updateDynamic("fetch")(js.Any.fromFunction2(fetch))
-    if (!js.isUndefined(new_edits)) __obj.updateDynamic("new_edits")(new_edits.asInstanceOf[js.Any])
+    if (!js.isUndefined(new_edits)) __obj.updateDynamic("new_edits")(new_edits.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulkDocsOptions]
   }
 }

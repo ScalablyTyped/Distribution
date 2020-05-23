@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   /**
     * Generates a checksum for the given value
-    * @param value	Any value
-    * @param options	Allows to set the algorithm
-    * @returns	Checksum
+    * @param value    Any value
+    * @param options    Allows to set the algorithm
+    * @returns    Checksum
     */
   def apply(value: js.Any): String = js.native
   def apply(value: js.Any, options: ChecksumOptions): String = js.native

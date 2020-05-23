@@ -1,6 +1,6 @@
 package typings.jupyterlabCodeeditor.widgetMod.CodeEditorWrapper
 
-import typings.jupyterlabCodeeditor.PartialIConfig
+import typings.jupyterlabCodeeditor.anon.PartialIConfig
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.Factory
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IEditor
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IModel
@@ -56,7 +56,7 @@ object IOptions {
     val __obj = js.Dynamic.literal(factory = js.Any.fromFunction1(factory), model = model.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (selectionStyle != null) __obj.updateDynamic("selectionStyle")(selectionStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateOnShow)) __obj.updateDynamic("updateOnShow")(updateOnShow.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateOnShow)) __obj.updateDynamic("updateOnShow")(updateOnShow.get.asInstanceOf[js.Any])
     if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }

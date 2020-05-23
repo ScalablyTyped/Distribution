@@ -62,15 +62,15 @@ object InstrumentPlayOptionsObject {
   def apply(
     duration: Double,
     frequency: Double | js.Function,
-    maxFrequency: Int | Double = null,
-    minFrequency: Int | Double = null,
+    maxFrequency: js.UndefOr[Double] = js.undefined,
+    minFrequency: js.UndefOr[Double] = js.undefined,
     onEnd: js.Function = null,
     pan: Double | js.Function = null,
     volume: Double | js.Function = null
   ): InstrumentPlayOptionsObject = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], frequency = frequency.asInstanceOf[js.Any])
-    if (maxFrequency != null) __obj.updateDynamic("maxFrequency")(maxFrequency.asInstanceOf[js.Any])
-    if (minFrequency != null) __obj.updateDynamic("minFrequency")(minFrequency.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFrequency)) __obj.updateDynamic("maxFrequency")(maxFrequency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minFrequency)) __obj.updateDynamic("minFrequency")(minFrequency.get.asInstanceOf[js.Any])
     if (onEnd != null) __obj.updateDynamic("onEnd")(onEnd.asInstanceOf[js.Any])
     if (pan != null) __obj.updateDynamic("pan")(pan.asInstanceOf[js.Any])
     if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])

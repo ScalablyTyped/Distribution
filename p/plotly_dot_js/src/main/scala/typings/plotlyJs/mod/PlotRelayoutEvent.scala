@@ -1,23 +1,26 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.PartialAnnotationsAlign
-import typings.plotlyJs.PartialAxis
-import typings.plotlyJs.PartialFont
-import typings.plotlyJs.PartialHoverLabel
-import typings.plotlyJs.PartialImage
-import typings.plotlyJs.PartialLayoutAxis
-import typings.plotlyJs.PartialLegend
-import typings.plotlyJs.PartialMargin
-import typings.plotlyJs.PartialPolarLayout
-import typings.plotlyJs.PartialScene
-import typings.plotlyJs.PartialShape
-import typings.plotlyJs.PartialSlider
-import typings.plotlyJs.Partialrowsnumberroworder
-import typings.plotlyJs.PartialtextstringfontPart
+import typings.plotlyJs.anon.PartialAnnotationsAlign
+import typings.plotlyJs.anon.PartialAxis
+import typings.plotlyJs.anon.PartialFont
+import typings.plotlyJs.anon.PartialHoverLabel
+import typings.plotlyJs.anon.PartialImage
+import typings.plotlyJs.anon.PartialLayoutAxis
+import typings.plotlyJs.anon.PartialLegend
+import typings.plotlyJs.anon.PartialMapbox
+import typings.plotlyJs.anon.PartialMargin
+import typings.plotlyJs.anon.PartialPolarLayout
+import typings.plotlyJs.anon.PartialScene
+import typings.plotlyJs.anon.PartialShape
+import typings.plotlyJs.anon.PartialSlider
+import typings.plotlyJs.anon.Partialrowsnumberroworder
+import typings.plotlyJs.anon.PartialtextstringfontPart
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsNumbers.`0`
 import typings.plotlyJs.plotlyJsNumbers.`1`
 import typings.plotlyJs.plotlyJsStrings._empty
+import typings.plotlyJs.plotlyJsStrings.`x unified`
+import typings.plotlyJs.plotlyJsStrings.`y unified`
 import typings.plotlyJs.plotlyJsStrings.any
 import typings.plotlyJs.plotlyJsStrings.closest
 import typings.plotlyJs.plotlyJsStrings.d
@@ -59,11 +62,12 @@ trait PlotRelayoutEvent extends js.Object {
   var height: js.UndefOr[Double] = js.undefined
   var hiddenlabels: js.UndefOr[js.Array[String]] = js.undefined
   var hidesources: js.UndefOr[Boolean] = js.undefined
+  var hoverdistance: js.UndefOr[Double] = js.undefined
   var hoverlabel: js.UndefOr[PartialHoverLabel] = js.undefined
-  var hovermode: js.UndefOr[closest | x | y | `false`] = js.undefined
+  var hovermode: js.UndefOr[closest | x | y | (`x unified`) | (`y unified`) | `false`] = js.undefined
   var images: js.UndefOr[js.Array[PartialImage]] = js.undefined
   var legend: js.UndefOr[PartialLegend] = js.undefined
-  var mapbox: js.UndefOr[js.Object] = js.undefined
+  var mapbox: js.UndefOr[PartialMapbox] = js.undefined
   var margin: js.UndefOr[PartialMargin] = js.undefined
   var orientation: js.UndefOr[Double] = js.undefined
   var paper_bgcolor: js.UndefOr[Color] = js.undefined
@@ -84,6 +88,7 @@ trait PlotRelayoutEvent extends js.Object {
   var shapes: js.UndefOr[js.Array[PartialShape]] = js.undefined
   var showlegend: js.UndefOr[Boolean] = js.undefined
   var sliders: js.UndefOr[js.Array[PartialSlider]] = js.undefined
+  var subplot: js.UndefOr[String] = js.undefined
   var ternary: js.UndefOr[js.Object] = js.undefined
   var title: js.UndefOr[String | PartialtextstringfontPart] = js.undefined
   var titlefont: js.UndefOr[PartialFont] = js.undefined
@@ -150,16 +155,17 @@ object PlotRelayoutEvent {
     font: PartialFont = null,
     geo: js.Object = null,
     grid: Partialrowsnumberroworder = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     hiddenlabels: js.Array[String] = null,
     hidesources: js.UndefOr[Boolean] = js.undefined,
+    hoverdistance: js.UndefOr[Double] = js.undefined,
     hoverlabel: PartialHoverLabel = null,
-    hovermode: closest | x | y | `false` = null,
+    hovermode: closest | x | y | (`x unified`) | (`y unified`) | `false` = null,
     images: js.Array[PartialImage] = null,
     legend: PartialLegend = null,
-    mapbox: js.Object = null,
+    mapbox: PartialMapbox = null,
     margin: PartialMargin = null,
-    orientation: Int | Double = null,
+    orientation: js.UndefOr[Double] = js.undefined,
     paper_bgcolor: Color = null,
     plot_bgcolor: Color = null,
     polar: PartialPolarLayout = null,
@@ -178,12 +184,13 @@ object PlotRelayoutEvent {
     shapes: js.Array[PartialShape] = null,
     showlegend: js.UndefOr[Boolean] = js.undefined,
     sliders: js.Array[PartialSlider] = null,
+    subplot: String = null,
     ternary: js.Object = null,
     title: String | PartialtextstringfontPart = null,
     titlefont: PartialFont = null,
     transition: Transition = null,
     updatemenus: js.Object = null,
-    width: Int | Double = null,
+    width: js.UndefOr[Double] = js.undefined,
     xaxis: PartialLayoutAxis = null,
     xaxis2: PartialLayoutAxis = null,
     xaxis3: PartialLayoutAxis = null,
@@ -195,8 +202,8 @@ object PlotRelayoutEvent {
     xaxis9: PartialLayoutAxis = null,
     xaxisDotautorange: js.UndefOr[Boolean] = js.undefined,
     xaxisDotrange: js.Tuple2[Datum, Datum] = null,
-    `xaxisDotrange[0]`: Int | Double = null,
-    `xaxisDotrange[1]`: Int | Double = null,
+    `xaxisDotrange[0]`: js.UndefOr[Double] = js.undefined,
+    `xaxisDotrange[1]`: js.UndefOr[Double] = js.undefined,
     xaxisDottitle: String = null,
     xaxisDottype: AxisType = null,
     yaxis: PartialLayoutAxis = null,
@@ -210,15 +217,15 @@ object PlotRelayoutEvent {
     yaxis9: PartialLayoutAxis = null,
     yaxisDotautorange: js.UndefOr[Boolean] = js.undefined,
     yaxisDotrange: js.Tuple2[Datum, Datum] = null,
-    `yaxisDotrange[0]`: Int | Double = null,
-    `yaxisDotrange[1]`: Int | Double = null,
+    `yaxisDotrange[0]`: js.UndefOr[Double] = js.undefined,
+    `yaxisDotrange[1]`: js.UndefOr[Double] = js.undefined,
     yaxisDottitle: String = null,
     yaxisDottype: AxisType = null
   ): PlotRelayoutEvent = {
     val __obj = js.Dynamic.literal()
     if (angularaxis != null) __obj.updateDynamic("angularaxis")(angularaxis.asInstanceOf[js.Any])
     if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
-    if (!js.isUndefined(autosize)) __obj.updateDynamic("autosize")(autosize.asInstanceOf[js.Any])
+    if (!js.isUndefined(autosize)) __obj.updateDynamic("autosize")(autosize.get.asInstanceOf[js.Any])
     if (bargap != null) __obj.updateDynamic("bargap")(bargap.asInstanceOf[js.Any])
     if (bargroupgap != null) __obj.updateDynamic("bargroupgap")(bargroupgap.asInstanceOf[js.Any])
     if (barmode != null) __obj.updateDynamic("barmode")(barmode.asInstanceOf[js.Any])
@@ -229,16 +236,17 @@ object PlotRelayoutEvent {
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (geo != null) __obj.updateDynamic("geo")(geo.asInstanceOf[js.Any])
     if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (hiddenlabels != null) __obj.updateDynamic("hiddenlabels")(hiddenlabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidesources)) __obj.updateDynamic("hidesources")(hidesources.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidesources)) __obj.updateDynamic("hidesources")(hidesources.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverdistance)) __obj.updateDynamic("hoverdistance")(hoverdistance.get.asInstanceOf[js.Any])
     if (hoverlabel != null) __obj.updateDynamic("hoverlabel")(hoverlabel.asInstanceOf[js.Any])
     if (hovermode != null) __obj.updateDynamic("hovermode")(hovermode.asInstanceOf[js.Any])
     if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
     if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
     if (mapbox != null) __obj.updateDynamic("mapbox")(mapbox.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (!js.isUndefined(orientation)) __obj.updateDynamic("orientation")(orientation.get.asInstanceOf[js.Any])
     if (paper_bgcolor != null) __obj.updateDynamic("paper_bgcolor")(paper_bgcolor.asInstanceOf[js.Any])
     if (plot_bgcolor != null) __obj.updateDynamic("plot_bgcolor")(plot_bgcolor.asInstanceOf[js.Any])
     if (polar != null) __obj.updateDynamic("polar")(polar.asInstanceOf[js.Any])
@@ -255,14 +263,15 @@ object PlotRelayoutEvent {
     if (selectdirection != null) __obj.updateDynamic("selectdirection")(selectdirection.asInstanceOf[js.Any])
     if (separators != null) __obj.updateDynamic("separators")(separators.asInstanceOf[js.Any])
     if (shapes != null) __obj.updateDynamic("shapes")(shapes.asInstanceOf[js.Any])
-    if (!js.isUndefined(showlegend)) __obj.updateDynamic("showlegend")(showlegend.asInstanceOf[js.Any])
+    if (!js.isUndefined(showlegend)) __obj.updateDynamic("showlegend")(showlegend.get.asInstanceOf[js.Any])
     if (sliders != null) __obj.updateDynamic("sliders")(sliders.asInstanceOf[js.Any])
+    if (subplot != null) __obj.updateDynamic("subplot")(subplot.asInstanceOf[js.Any])
     if (ternary != null) __obj.updateDynamic("ternary")(ternary.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (titlefont != null) __obj.updateDynamic("titlefont")(titlefont.asInstanceOf[js.Any])
     if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     if (updatemenus != null) __obj.updateDynamic("updatemenus")(updatemenus.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     if (xaxis != null) __obj.updateDynamic("xaxis")(xaxis.asInstanceOf[js.Any])
     if (xaxis2 != null) __obj.updateDynamic("xaxis2")(xaxis2.asInstanceOf[js.Any])
     if (xaxis3 != null) __obj.updateDynamic("xaxis3")(xaxis3.asInstanceOf[js.Any])
@@ -272,10 +281,10 @@ object PlotRelayoutEvent {
     if (xaxis7 != null) __obj.updateDynamic("xaxis7")(xaxis7.asInstanceOf[js.Any])
     if (xaxis8 != null) __obj.updateDynamic("xaxis8")(xaxis8.asInstanceOf[js.Any])
     if (xaxis9 != null) __obj.updateDynamic("xaxis9")(xaxis9.asInstanceOf[js.Any])
-    if (!js.isUndefined(xaxisDotautorange)) __obj.updateDynamic("xaxis.autorange")(xaxisDotautorange.asInstanceOf[js.Any])
+    if (!js.isUndefined(xaxisDotautorange)) __obj.updateDynamic("xaxis.autorange")(xaxisDotautorange.get.asInstanceOf[js.Any])
     if (xaxisDotrange != null) __obj.updateDynamic("xaxis.range")(xaxisDotrange.asInstanceOf[js.Any])
-    if (`xaxisDotrange[0]` != null) __obj.updateDynamic("xaxis.range[0]")(`xaxisDotrange[0]`.asInstanceOf[js.Any])
-    if (`xaxisDotrange[1]` != null) __obj.updateDynamic("xaxis.range[1]")(`xaxisDotrange[1]`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`xaxisDotrange[0]`)) __obj.updateDynamic("xaxis.range[0]")(`xaxisDotrange[0]`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`xaxisDotrange[1]`)) __obj.updateDynamic("xaxis.range[1]")(`xaxisDotrange[1]`.get.asInstanceOf[js.Any])
     if (xaxisDottitle != null) __obj.updateDynamic("xaxis.title")(xaxisDottitle.asInstanceOf[js.Any])
     if (xaxisDottype != null) __obj.updateDynamic("xaxis.type")(xaxisDottype.asInstanceOf[js.Any])
     if (yaxis != null) __obj.updateDynamic("yaxis")(yaxis.asInstanceOf[js.Any])
@@ -287,10 +296,10 @@ object PlotRelayoutEvent {
     if (yaxis7 != null) __obj.updateDynamic("yaxis7")(yaxis7.asInstanceOf[js.Any])
     if (yaxis8 != null) __obj.updateDynamic("yaxis8")(yaxis8.asInstanceOf[js.Any])
     if (yaxis9 != null) __obj.updateDynamic("yaxis9")(yaxis9.asInstanceOf[js.Any])
-    if (!js.isUndefined(yaxisDotautorange)) __obj.updateDynamic("yaxis.autorange")(yaxisDotautorange.asInstanceOf[js.Any])
+    if (!js.isUndefined(yaxisDotautorange)) __obj.updateDynamic("yaxis.autorange")(yaxisDotautorange.get.asInstanceOf[js.Any])
     if (yaxisDotrange != null) __obj.updateDynamic("yaxis.range")(yaxisDotrange.asInstanceOf[js.Any])
-    if (`yaxisDotrange[0]` != null) __obj.updateDynamic("yaxis.range[0]")(`yaxisDotrange[0]`.asInstanceOf[js.Any])
-    if (`yaxisDotrange[1]` != null) __obj.updateDynamic("yaxis.range[1]")(`yaxisDotrange[1]`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`yaxisDotrange[0]`)) __obj.updateDynamic("yaxis.range[0]")(`yaxisDotrange[0]`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`yaxisDotrange[1]`)) __obj.updateDynamic("yaxis.range[1]")(`yaxisDotrange[1]`.get.asInstanceOf[js.Any])
     if (yaxisDottitle != null) __obj.updateDynamic("yaxis.title")(yaxisDottitle.asInstanceOf[js.Any])
     if (yaxisDottype != null) __obj.updateDynamic("yaxis.type")(yaxisDottype.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotRelayoutEvent]

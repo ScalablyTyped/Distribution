@@ -22,9 +22,9 @@ trait GetModelRequest extends js.Object {
 
 object GetModelRequest {
   @scala.inline
-  def apply(modelName: String, restApiId: String, flatten: js.UndefOr[scala.Boolean] = js.undefined): GetModelRequest = {
+  def apply(modelName: String, restApiId: String, flatten: js.UndefOr[Boolean] = js.undefined): GetModelRequest = {
     val __obj = js.Dynamic.literal(modelName = modelName.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
-    if (!js.isUndefined(flatten)) __obj.updateDynamic("flatten")(flatten.asInstanceOf[js.Any])
+    if (!js.isUndefined(flatten)) __obj.updateDynamic("flatten")(flatten.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetModelRequest]
   }
 }

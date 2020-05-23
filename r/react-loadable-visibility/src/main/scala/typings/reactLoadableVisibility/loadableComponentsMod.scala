@@ -1,6 +1,6 @@
 package typings.reactLoadableVisibility
 
-import typings.loadableComponent.FnCall
+import typings.loadableComponent.anon.FnCall
 import typings.loadableComponent.mod.DefaultComponent
 import typings.loadableComponent.mod.LoadableComponent
 import typings.loadableComponent.mod.Options

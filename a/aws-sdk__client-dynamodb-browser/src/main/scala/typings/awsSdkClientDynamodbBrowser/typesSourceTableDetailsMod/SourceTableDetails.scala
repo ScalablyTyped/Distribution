@@ -51,14 +51,14 @@ object SourceTableDetails {
     TableCreationDateTime: Date | String | Double,
     TableId: String,
     TableName: String,
-    ItemCount: Int | Double = null,
+    ItemCount: js.UndefOr[Double] = js.undefined,
     TableArn: String = null,
-    TableSizeBytes: Int | Double = null
+    TableSizeBytes: js.UndefOr[Double] = js.undefined
   ): SourceTableDetails = {
     val __obj = js.Dynamic.literal(KeySchema = KeySchema.asInstanceOf[js.Any], ProvisionedThroughput = ProvisionedThroughput.asInstanceOf[js.Any], TableCreationDateTime = TableCreationDateTime.asInstanceOf[js.Any], TableId = TableId.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
-    if (ItemCount != null) __obj.updateDynamic("ItemCount")(ItemCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(ItemCount)) __obj.updateDynamic("ItemCount")(ItemCount.get.asInstanceOf[js.Any])
     if (TableArn != null) __obj.updateDynamic("TableArn")(TableArn.asInstanceOf[js.Any])
-    if (TableSizeBytes != null) __obj.updateDynamic("TableSizeBytes")(TableSizeBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(TableSizeBytes)) __obj.updateDynamic("TableSizeBytes")(TableSizeBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceTableDetails]
   }
 }

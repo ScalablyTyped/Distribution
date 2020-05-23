@@ -1,6 +1,6 @@
 package typings.gtagJs
 
-import typings.gtagJs.Gtag_.EventNames
+import typings.gtagJs.Gtag.EventNames
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -21,14 +21,14 @@ trait CheckboxQuestion[T /* <: Answers */] extends ListQuestionOptionsBase[T, Ch
 
 object CheckboxQuestion {
   @scala.inline
-  def apply[T /* <: Answers */](
+  def apply[T](
     `type`: checkbox,
     choices: AsyncDynamicQuestionProperty[js.Array[DistinctChoice[CheckboxChoiceMap[T]]], T] = null,
     default: AsyncDynamicQuestionProperty[_, T] = null,
     filter: /* input */ js.Any => _ = null,
     message: AsyncDynamicQuestionProperty[String, T] = null,
     name: KeyUnion[T] = null,
-    pageSize: Int | Double = null,
+    pageSize: js.UndefOr[Double] = js.undefined,
     prefix: String = null,
     suffix: String = null,
     validate: (/* input */ js.Any, /* answers */ js.UndefOr[T]) => Boolean | String | (js.Promise[Boolean | String]) = null,
@@ -41,7 +41,7 @@ object CheckboxQuestion {
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction2(validate))

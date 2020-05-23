@@ -1,8 +1,8 @@
 package typings.passport.mod
 
 import typings.node.httpMod.IncomingMessage
-import typings.passport.AnonPauseStream
-import typings.passport.AnonUserProperty
+import typings.passport.anon.PauseStream
+import typings.passport.anon.UserProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,7 +50,7 @@ trait Authenticator[InitializeRet, AuthenticateRet, AuthorizeRet, AuthorizeOptio
   ): Unit = js.native
   def framework[X, Y, Z](fw: Framework[X, Y, Z]): Authenticator[X, Y, Z, AuthenticateOptions] = js.native
   def initialize(): InitializeRet = js.native
-  def initialize(options: AnonUserProperty): InitializeRet = js.native
+  def initialize(options: UserProperty): InitializeRet = js.native
   def serializeUser[TUser, TID](
     fn: js.Function2[
       /* user */ TUser, 
@@ -67,7 +67,7 @@ trait Authenticator[InitializeRet, AuthenticateRet, AuthorizeRet, AuthorizeOptio
     ]
   ): Unit = js.native
   def session(): AuthenticateRet = js.native
-  def session(options: AnonPauseStream): AuthenticateRet = js.native
+  def session(options: PauseStream): AuthenticateRet = js.native
   def transformAuthInfo(
     fn: js.Function2[
       /* info */ js.Any, 

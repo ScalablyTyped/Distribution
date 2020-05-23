@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation._
   * [Api set: Mailbox 1.8]
   *
   * @remarks
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 trait SharedProperties extends js.Object {
@@ -30,14 +30,14 @@ trait SharedProperties extends js.Object {
   var owner: String
   /**
     * The target/owner's mailbox. Use with `targetRestUrl` to construct REST operation's URL.
-    * 
+    *
     * Example usage: `targetRestUrl + "/{api_version}/users/" + targetMailbox + "/{REST_operation}"`
     */
   var targetMailbox: String
   /**
     * The REST API's base URL (currently https://outlook.office.com/api).
     * Use with `targetMailbox` to construct REST operation's URL.
-    * 
+    *
     * Example usage: `targetRestUrl + "/{api_version}/users/" + targetMailbox + "/{REST_operation}"`
     */
   var targetRestUrl: String

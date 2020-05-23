@@ -39,11 +39,11 @@ object EventOptionsBase {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (constraint != null) __obj.updateDynamic("constraint")(constraint.asInstanceOf[js.Any])
-    if (!js.isUndefined(durationEditable)) __obj.updateDynamic("durationEditable")(durationEditable.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    if (!js.isUndefined(overlap)) __obj.updateDynamic("overlap")(overlap.asInstanceOf[js.Any])
+    if (!js.isUndefined(durationEditable)) __obj.updateDynamic("durationEditable")(durationEditable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlap)) __obj.updateDynamic("overlap")(overlap.get.asInstanceOf[js.Any])
     if (rendering != null) __obj.updateDynamic("rendering")(rendering.asInstanceOf[js.Any])
-    if (!js.isUndefined(startEditable)) __obj.updateDynamic("startEditable")(startEditable.asInstanceOf[js.Any])
+    if (!js.isUndefined(startEditable)) __obj.updateDynamic("startEditable")(startEditable.get.asInstanceOf[js.Any])
     if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventOptionsBase]
   }

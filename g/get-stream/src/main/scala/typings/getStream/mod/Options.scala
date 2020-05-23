@@ -14,9 +14,9 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(maxBuffer: Int | Double = null): Options = {
+  def apply(maxBuffer: js.UndefOr[Double] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (maxBuffer != null) __obj.updateDynamic("maxBuffer")(maxBuffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBuffer)) __obj.updateDynamic("maxBuffer")(maxBuffer.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

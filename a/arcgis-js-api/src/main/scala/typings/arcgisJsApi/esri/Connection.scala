@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,8 +44,4 @@ trait Connection extends js.Object {
   def invoke(methodName: String, data: js.Any): js.Promise[_] = js.native
   def invoke(methodName: String, data: js.Any, options: ConnectionInvokeOptions): js.Promise[_] = js.native
 }
-
-@JSGlobal("__esri.Connection")
-@js.native
-object Connection extends TopLevel[ConnectionConstructor]
 

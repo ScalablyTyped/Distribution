@@ -1,5 +1,7 @@
 package typings.nodeWaves
 
+import typings.nodeWaves.anon.Delay
+import typings.nodeWaves.anon.Position
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,9 +15,9 @@ object mod extends js.Object {
   def attach(elements: ElementSelector, classes: js.Array[String]): Unit = js.native
   def calm(elements: ElementSelector): Unit = js.native
   def init(): Unit = js.native
-  def init(config: AnonDelay): Unit = js.native
+  def init(config: Delay): Unit = js.native
   def ripple(elements: ElementSelector): Unit = js.native
-  def ripple(elements: ElementSelector, option: AnonPosition): Unit = js.native
+  def ripple(elements: ElementSelector, option: Position): Unit = js.native
   type ElementSelector = String | HTMLElement | js.Array[HTMLElement]
 }
 

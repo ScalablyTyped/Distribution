@@ -49,8 +49,8 @@ object CacheOptions {
   @scala.inline
   def apply(
     exclude: js.Array[String] = null,
-    expire: Int | Double = null,
-    maxLength: Int | Double = null,
+    expire: js.UndefOr[Double] = js.undefined,
+    maxLength: js.UndefOr[Double] = js.undefined,
     onerror: /* error */ Error => Unit = null,
     passParam: String = null,
     prefix: String | getPrefixCallback = null,
@@ -59,8 +59,8 @@ object CacheOptions {
   ): CacheOptions = {
     val __obj = js.Dynamic.literal()
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (expire != null) __obj.updateDynamic("expire")(expire.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(expire)) __obj.updateDynamic("expire")(expire.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
     if (onerror != null) __obj.updateDynamic("onerror")(js.Any.fromFunction1(onerror))
     if (passParam != null) __obj.updateDynamic("passParam")(passParam.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])

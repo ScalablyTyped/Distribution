@@ -42,14 +42,14 @@ object ServiceObjectConfig {
     createMethod: js.Function = null,
     id: String = null,
     methods: Methods = null,
-    pollIntervalMs: Int | Double = null
+    pollIntervalMs: js.UndefOr[Double] = js.undefined
   ): ServiceObjectConfig = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
     if (createMethod != null) __obj.updateDynamic("createMethod")(createMethod.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
-    if (pollIntervalMs != null) __obj.updateDynamic("pollIntervalMs")(pollIntervalMs.asInstanceOf[js.Any])
+    if (!js.isUndefined(pollIntervalMs)) __obj.updateDynamic("pollIntervalMs")(pollIntervalMs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceObjectConfig]
   }
 }

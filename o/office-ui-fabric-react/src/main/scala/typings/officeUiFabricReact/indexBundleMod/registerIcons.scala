@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.indexBundleMod
 
-import typings.uifabricStyling.PartialIIconOptions
+import typings.uifabricStyling.anon.PartialIIconOptions
 import typings.uifabricStyling.iconsMod.IIconSubset
 import scala.scalajs.js
 import scala.scalajs.js.`|`

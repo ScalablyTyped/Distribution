@@ -1,6 +1,6 @@
 package typings.ckeditorCkeditor5Core.mod
 
-import typings.ckeditorCkeditor5Core.Observablemessagestring
+import typings.ckeditorCkeditor5Core.anon.Observablemessagestring
 import typings.std.Iterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`

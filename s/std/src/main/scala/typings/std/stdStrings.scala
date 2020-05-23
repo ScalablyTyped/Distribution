@@ -1,7 +1,9 @@
 package typings.std
 
 import typings.std.Intl.DateTimeFormatPartTypes
+import typings.std.Intl.LDMLPluralRule
 import typings.std.Intl.NumberFormatPartTypes
+import typings.std.Intl.PluralRuleType
 import typings.std.WebAssembly.ImportExportKind
 import typings.std.WebAssembly.ValueType
 import scala.scalajs.js
@@ -211,15 +213,6 @@ object stdStrings {
   sealed trait MSPointerUp extends js.Object
   
   @js.native
-  sealed trait MSVideoFormatChanged extends js.Object
-  
-  @js.native
-  sealed trait MSVideoFrameStepCompleted extends js.Object
-  
-  @js.native
-  sealed trait MSVideoOptimalLayoutChanged extends js.Object
-  
-  @js.native
   sealed trait MediaEncryptedEvent extends js.Object
   
   @js.native
@@ -421,9 +414,6 @@ object stdStrings {
   sealed trait UIEvents extends js.Object
   
   @js.native
-  sealed trait UInt8Array extends js.Object
-  
-  @js.native
   sealed trait USB extends MSTransportType
   
   @js.native
@@ -431,6 +421,9 @@ object stdStrings {
   
   @js.native
   sealed trait Uint32Array extends js.Object
+  
+  @js.native
+  sealed trait Uint8Array extends js.Object
   
   @js.native
   sealed trait Uint8ClampedArray extends js.Object
@@ -814,7 +807,7 @@ object stdStrings {
   sealed trait captions extends TextTrackKind
   
   @js.native
-  sealed trait cardinal extends js.Object
+  sealed trait cardinal extends PluralRuleType
   
   @js.native
   sealed trait center
@@ -995,7 +988,9 @@ object stdStrings {
   
   @js.native
   sealed trait default
-    extends NotificationPermission
+    extends ColorSpaceConversion
+       with NotificationPermission
+       with PremultiplyAlpha
        with RequestCache
        with ResponseType
        with WebGLPowerPreference
@@ -1297,6 +1292,9 @@ object stdStrings {
   sealed trait feTurbulence extends js.Object
   
   @js.native
+  sealed trait few extends LDMLPluralRule
+  
+  @js.native
   sealed trait fieldset extends js.Object
   
   @js.native
@@ -1318,7 +1316,7 @@ object stdStrings {
   sealed trait finished extends AnimationPlayState
   
   @js.native
-  sealed trait flipY extends js.Object
+  sealed trait flipY extends ImageOrientation
   
   @js.native
   sealed trait focus extends js.Object
@@ -1474,6 +1472,7 @@ object stdStrings {
   sealed trait high
     extends ImageSmoothingQuality
        with RTCPriorityType
+       with ResizeQuality
   
   @js.native
   sealed trait `high-performance` extends WebGLPowerPreference
@@ -1766,6 +1765,7 @@ object stdStrings {
   sealed trait low
     extends ImageSmoothingQuality
        with RTCPriorityType
+       with ResizeQuality
   
   @js.native
   sealed trait `low-power` extends WebGLPowerPreference
@@ -1805,6 +1805,9 @@ object stdStrings {
        with ScrollRestoration
   
   @js.native
+  sealed trait many extends LDMLPluralRule
+  
+  @js.native
   sealed trait map extends js.Object
   
   @js.native
@@ -1838,6 +1841,7 @@ object stdStrings {
   sealed trait medium
     extends ImageSmoothingQuality
        with RTCPriorityType
+       with ResizeQuality
   
   @js.native
   sealed trait memory extends ImportExportKind
@@ -1913,9 +1917,6 @@ object stdStrings {
   
   @js.native
   sealed trait mousewheel extends js.Object
-  
-  @js.native
-  sealed trait msneedkey extends js.Object
   
   @js.native
   sealed trait mute extends js.Object
@@ -1998,8 +1999,11 @@ object stdStrings {
   @js.native
   sealed trait none
     extends AttestationConveyancePreference
+       with ColorSpaceConversion
        with FillMode
+       with ImageOrientation
        with OverSampleType
+       with PremultiplyAlpha
        with ServiceWorkerUpdateViaCache
   
   @js.native
@@ -2056,6 +2060,9 @@ object stdStrings {
   sealed trait omit extends RequestCredentials
   
   @js.native
+  sealed trait one extends LDMLPluralRule
+  
+  @js.native
   sealed trait online extends js.Object
   
   @js.native
@@ -2085,7 +2092,7 @@ object stdStrings {
        with MediaKeysRequirement
   
   @js.native
-  sealed trait ordinal extends js.Object
+  sealed trait ordinal extends PluralRuleType
   
   @js.native
   sealed trait orientationchange extends js.Object
@@ -2095,6 +2102,9 @@ object stdStrings {
   
   @js.native
   sealed trait `origin-when-cross-origin` extends ReferrerPolicy
+  
+  @js.native
+  sealed trait other extends LDMLPluralRule
   
   @js.native
   sealed trait outboundrtp extends RTCStatsType
@@ -2175,7 +2185,7 @@ object stdStrings {
   sealed trait picture extends js.Object
   
   @js.native
-  sealed trait pixelated extends js.Object
+  sealed trait pixelated extends ResizeQuality
   
   @js.native
   sealed trait pkcs8 extends KeyFormat
@@ -2260,7 +2270,7 @@ object stdStrings {
   sealed trait preferred extends UserVerificationRequirement
   
   @js.native
-  sealed trait premultiply extends js.Object
+  sealed trait premultiply extends PremultiplyAlpha
   
   @js.native
   sealed trait prerender extends NavigationType
@@ -2829,6 +2839,9 @@ object stdStrings {
   sealed trait tspan extends js.Object
   
   @js.native
+  sealed trait two extends LDMLPluralRule
+  
+  @js.native
   sealed trait u extends js.Object
   
   @js.native
@@ -3013,6 +3026,9 @@ object stdStrings {
   @js.native
   sealed trait year extends DateTimeFormatPartTypes
   
+  @js.native
+  sealed trait zero extends LDMLPluralRule
+  
   @scala.inline
   def `2d`: `2d` = "2d".asInstanceOf[`2d`]
   @scala.inline
@@ -3148,12 +3164,6 @@ object stdStrings {
   @scala.inline
   def MSPointerUp: MSPointerUp = "MSPointerUp".asInstanceOf[MSPointerUp]
   @scala.inline
-  def MSVideoFormatChanged: MSVideoFormatChanged = "MSVideoFormatChanged".asInstanceOf[MSVideoFormatChanged]
-  @scala.inline
-  def MSVideoFrameStepCompleted: MSVideoFrameStepCompleted = "MSVideoFrameStepCompleted".asInstanceOf[MSVideoFrameStepCompleted]
-  @scala.inline
-  def MSVideoOptimalLayoutChanged: MSVideoOptimalLayoutChanged = "MSVideoOptimalLayoutChanged".asInstanceOf[MSVideoOptimalLayoutChanged]
-  @scala.inline
   def MediaEncryptedEvent: MediaEncryptedEvent = "MediaEncryptedEvent".asInstanceOf[MediaEncryptedEvent]
   @scala.inline
   def MediaKeyMessageEvent: MediaKeyMessageEvent = "MediaKeyMessageEvent".asInstanceOf[MediaKeyMessageEvent]
@@ -3288,13 +3298,13 @@ object stdStrings {
   @scala.inline
   def UIEvents: UIEvents = "UIEvents".asInstanceOf[UIEvents]
   @scala.inline
-  def UInt8Array: UInt8Array = "UInt8Array".asInstanceOf[UInt8Array]
-  @scala.inline
   def USB: USB = "USB".asInstanceOf[USB]
   @scala.inline
   def Uint16Array: Uint16Array = "Uint16Array".asInstanceOf[Uint16Array]
   @scala.inline
   def Uint32Array: Uint32Array = "Uint32Array".asInstanceOf[Uint32Array]
+  @scala.inline
+  def Uint8Array: Uint8Array = "Uint8Array".asInstanceOf[Uint8Array]
   @scala.inline
   def Uint8ClampedArray: Uint8ClampedArray = "Uint8ClampedArray".asInstanceOf[Uint8ClampedArray]
   @scala.inline
@@ -3806,6 +3816,8 @@ object stdStrings {
   @scala.inline
   def feTurbulence: feTurbulence = "feTurbulence".asInstanceOf[feTurbulence]
   @scala.inline
+  def few: few = "few".asInstanceOf[few]
+  @scala.inline
   def fieldset: fieldset = "fieldset".asInstanceOf[fieldset]
   @scala.inline
   def figcaption: figcaption = "figcaption".asInstanceOf[figcaption]
@@ -4122,6 +4134,8 @@ object stdStrings {
   @scala.inline
   def manual: manual = "manual".asInstanceOf[manual]
   @scala.inline
+  def many: many = "many".asInstanceOf[many]
+  @scala.inline
   def map: map = "map".asInstanceOf[map]
   @scala.inline
   def mark: mark = "mark".asInstanceOf[mark]
@@ -4193,8 +4207,6 @@ object stdStrings {
   def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
   @scala.inline
   def mousewheel: mousewheel = "mousewheel".asInstanceOf[mousewheel]
-  @scala.inline
-  def msneedkey: msneedkey = "msneedkey".asInstanceOf[msneedkey]
   @scala.inline
   def mute: mute = "mute".asInstanceOf[mute]
   @scala.inline
@@ -4276,6 +4288,8 @@ object stdStrings {
   @scala.inline
   def omit: omit = "omit".asInstanceOf[omit]
   @scala.inline
+  def one: one = "one".asInstanceOf[one]
+  @scala.inline
   def online: online = "online".asInstanceOf[online]
   @scala.inline
   def `only-if-cached`: `only-if-cached` = "only-if-cached".asInstanceOf[`only-if-cached`]
@@ -4299,6 +4313,8 @@ object stdStrings {
   def origin: origin = "origin".asInstanceOf[origin]
   @scala.inline
   def `origin-when-cross-origin`: `origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[`origin-when-cross-origin`]
+  @scala.inline
+  def other: other = "other".asInstanceOf[other]
   @scala.inline
   def outboundrtp: outboundrtp = "outboundrtp".asInstanceOf[outboundrtp]
   @scala.inline
@@ -4760,6 +4776,8 @@ object stdStrings {
   @scala.inline
   def tspan: tspan = "tspan".asInstanceOf[tspan]
   @scala.inline
+  def two: two = "two".asInstanceOf[two]
+  @scala.inline
   def u: u = "u".asInstanceOf[u]
   @scala.inline
   def udp: udp = "udp".asInstanceOf[udp]
@@ -4875,5 +4893,7 @@ object stdStrings {
   def xslt: xslt = "xslt".asInstanceOf[xslt]
   @scala.inline
   def year: year = "year".asInstanceOf[year]
+  @scala.inline
+  def zero: zero = "zero".asInstanceOf[zero]
 }
 

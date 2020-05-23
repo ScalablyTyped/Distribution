@@ -11,10 +11,10 @@ trait FilterLowercaseDetails extends js.Object {
 
 object FilterLowercaseDetails {
   @scala.inline
-  def apply(field: String = null, fieldIndex: Int | Double = null): FilterLowercaseDetails = {
+  def apply(field: String = null, fieldIndex: js.UndefOr[Double] = js.undefined): FilterLowercaseDetails = {
     val __obj = js.Dynamic.literal()
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (fieldIndex != null) __obj.updateDynamic("fieldIndex")(fieldIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(fieldIndex)) __obj.updateDynamic("fieldIndex")(fieldIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterLowercaseDetails]
   }
 }

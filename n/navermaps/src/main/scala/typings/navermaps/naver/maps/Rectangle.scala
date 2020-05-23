@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("naver.maps.Rectangle")
 @js.native
-class Rectangle () extends OverlayView {
-  def this(options: RectangleOptions) = this()
+trait Rectangle extends OverlayView {
   def getAreaSize(): Double = js.native
   def getBounds(): Bounds = js.native
   def getClickable(): Boolean = js.native

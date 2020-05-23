@@ -18,12 +18,12 @@ object ListDraftsResponse {
   def apply(
     drafts: js.Array[Draft] = null,
     nextPageToken: String = null,
-    resultSizeEstimate: Int | Double = null
+    resultSizeEstimate: js.UndefOr[Double] = js.undefined
   ): ListDraftsResponse = {
     val __obj = js.Dynamic.literal()
     if (drafts != null) __obj.updateDynamic("drafts")(drafts.asInstanceOf[js.Any])
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (resultSizeEstimate != null) __obj.updateDynamic("resultSizeEstimate")(resultSizeEstimate.asInstanceOf[js.Any])
+    if (!js.isUndefined(resultSizeEstimate)) __obj.updateDynamic("resultSizeEstimate")(resultSizeEstimate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDraftsResponse]
   }
 }

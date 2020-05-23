@@ -22,15 +22,6 @@ object jupyterlabServicesStrings {
   sealed trait abort extends js.Object
   
   @js.native
-  sealed trait apiSlashkernels extends js.Object
-  
-  @js.native
-  sealed trait apiSlashsessions extends js.Object
-  
-  @js.native
-  sealed trait apiSlashterminals extends js.Object
-  
-  @js.native
   sealed trait autorestarting extends Status
   
   @js.native
@@ -359,12 +350,6 @@ object jupyterlabServicesStrings {
   def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
   @scala.inline
   def abort: abort = "abort".asInstanceOf[abort]
-  @scala.inline
-  def apiSlashkernels: apiSlashkernels = "api/kernels".asInstanceOf[apiSlashkernels]
-  @scala.inline
-  def apiSlashsessions: apiSlashsessions = "api/sessions".asInstanceOf[apiSlashsessions]
-  @scala.inline
-  def apiSlashterminals: apiSlashterminals = "api/terminals".asInstanceOf[apiSlashterminals]
   @scala.inline
   def autorestarting: autorestarting = "autorestarting".asInstanceOf[autorestarting]
   @scala.inline

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("InfoPath.PermissionObject")
 @js.native
-class PermissionObject protected () extends js.Object {
+trait PermissionObject extends js.Object {
   val Count: Double = js.native
   var DocumentAuthor: String = js.native
   var Enabled: Boolean = js.native

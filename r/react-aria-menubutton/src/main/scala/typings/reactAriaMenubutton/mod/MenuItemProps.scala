@@ -11,27 +11,27 @@ trait MenuItemProps[T /* <: HTMLElement */]
   extends AllHTMLAttributes[T]
      with ClassAttributes[T] {
   /**
-  	 * The HTML tag for this element. Default: 'span'.
-  	 */
+    * The HTML tag for this element. Default: 'span'.
+    */
   var tag: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any
   ] = js.undefined
   /**
-  	 * If `text` has a value, its first letter will be the letter a user can
-  	 * type to navigate to that item.
-  	 */
+    * If `text` has a value, its first letter will be the letter a user can
+    * type to navigate to that item.
+    */
   var text: js.UndefOr[String] = js.undefined
   /**
-  	 * If value has a value, it will be passed to the onSelection handler
-  	 * when the `MenuItem` is selected
-  	 */
+    * If value has a value, it will be passed to the onSelection handler
+    * when the `MenuItem` is selected
+    */
   @JSName("value")
   var value_MenuItemProps: js.UndefOr[js.Any] = js.undefined
 }
 
 object MenuItemProps {
   @scala.inline
-  def apply[T /* <: HTMLElement */](
+  def apply[T](
     AllHTMLAttributes: AllHTMLAttributes[T] = null,
     ClassAttributes: ClassAttributes[T] = null,
     tag: /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any = null,

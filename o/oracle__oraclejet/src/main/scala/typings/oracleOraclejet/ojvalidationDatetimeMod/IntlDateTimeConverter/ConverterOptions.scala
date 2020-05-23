@@ -63,18 +63,18 @@ object ConverterOptions {
     timeFormat: short | medium | long | full = null,
     timeZone: String = null,
     timeZoneName: short | long = null,
-    `two-digit-year-start`: Int | Double = null,
+    `two-digit-year-start`: js.UndefOr[Double] = js.undefined,
     weekday: narrow | short | long = null,
     year: `2-digit` | numeric = null
   ): ConverterOptions = {
     val __obj = js.Dynamic.literal()
     if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
     if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
-    if (!js.isUndefined(dst)) __obj.updateDynamic("dst")(dst.asInstanceOf[js.Any])
+    if (!js.isUndefined(dst)) __obj.updateDynamic("dst")(dst.get.asInstanceOf[js.Any])
     if (era != null) __obj.updateDynamic("era")(era.asInstanceOf[js.Any])
     if (formatType != null) __obj.updateDynamic("formatType")(formatType.asInstanceOf[js.Any])
     if (hour != null) __obj.updateDynamic("hour")(hour.asInstanceOf[js.Any])
-    if (!js.isUndefined(hour12)) __obj.updateDynamic("hour12")(hour12.asInstanceOf[js.Any])
+    if (!js.isUndefined(hour12)) __obj.updateDynamic("hour12")(hour12.get.asInstanceOf[js.Any])
     if (isoStrFormat != null) __obj.updateDynamic("isoStrFormat")(isoStrFormat.asInstanceOf[js.Any])
     if (lenientParse != null) __obj.updateDynamic("lenientParse")(lenientParse.asInstanceOf[js.Any])
     if (millisecond != null) __obj.updateDynamic("millisecond")(millisecond.asInstanceOf[js.Any])
@@ -85,7 +85,7 @@ object ConverterOptions {
     if (timeFormat != null) __obj.updateDynamic("timeFormat")(timeFormat.asInstanceOf[js.Any])
     if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
     if (timeZoneName != null) __obj.updateDynamic("timeZoneName")(timeZoneName.asInstanceOf[js.Any])
-    if (`two-digit-year-start` != null) __obj.updateDynamic("two-digit-year-start")(`two-digit-year-start`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`two-digit-year-start`)) __obj.updateDynamic("two-digit-year-start")(`two-digit-year-start`.get.asInstanceOf[js.Any])
     if (weekday != null) __obj.updateDynamic("weekday")(weekday.asInstanceOf[js.Any])
     if (year != null) __obj.updateDynamic("year")(year.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConverterOptions]

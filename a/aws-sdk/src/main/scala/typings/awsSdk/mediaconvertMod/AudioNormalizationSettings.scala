@@ -37,18 +37,18 @@ object AudioNormalizationSettings {
   def apply(
     Algorithm: AudioNormalizationAlgorithm = null,
     AlgorithmControl: AudioNormalizationAlgorithmControl = null,
-    CorrectionGateLevel: Int | Double = null,
+    CorrectionGateLevel: js.UndefOr[integerMinNegative70Max0] = js.undefined,
     LoudnessLogging: AudioNormalizationLoudnessLogging = null,
     PeakCalculation: AudioNormalizationPeakCalculation = null,
-    TargetLkfs: Int | Double = null
+    TargetLkfs: js.UndefOr[doubleMinNegative59Max0] = js.undefined
   ): AudioNormalizationSettings = {
     val __obj = js.Dynamic.literal()
     if (Algorithm != null) __obj.updateDynamic("Algorithm")(Algorithm.asInstanceOf[js.Any])
     if (AlgorithmControl != null) __obj.updateDynamic("AlgorithmControl")(AlgorithmControl.asInstanceOf[js.Any])
-    if (CorrectionGateLevel != null) __obj.updateDynamic("CorrectionGateLevel")(CorrectionGateLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(CorrectionGateLevel)) __obj.updateDynamic("CorrectionGateLevel")(CorrectionGateLevel.get.asInstanceOf[js.Any])
     if (LoudnessLogging != null) __obj.updateDynamic("LoudnessLogging")(LoudnessLogging.asInstanceOf[js.Any])
     if (PeakCalculation != null) __obj.updateDynamic("PeakCalculation")(PeakCalculation.asInstanceOf[js.Any])
-    if (TargetLkfs != null) __obj.updateDynamic("TargetLkfs")(TargetLkfs.asInstanceOf[js.Any])
+    if (!js.isUndefined(TargetLkfs)) __obj.updateDynamic("TargetLkfs")(TargetLkfs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioNormalizationSettings]
   }
 }

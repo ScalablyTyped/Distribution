@@ -62,7 +62,7 @@ object HelloJSServiceDef {
     if (patch != null) __obj.updateDynamic("patch")(patch.asInstanceOf[js.Any])
     if (post != null) __obj.updateDynamic("post")(post.asInstanceOf[js.Any])
     if (put != null) __obj.updateDynamic("put")(put.asInstanceOf[js.Any])
-    if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh.asInstanceOf[js.Any])
+    if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh.get.asInstanceOf[js.Any])
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (scope_delim != null) __obj.updateDynamic("scope_delim")(scope_delim.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 package typings.sequelize.mod
 
-import typings.sequelize.AnonLengthString
+import typings.sequelize.anon.LengthString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ trait DataTypeBlob extends DataTypeAbstract {
     */
   def apply(): DataTypeBlob = js.native
   def apply(length: String): DataTypeBlob = js.native
-  def apply(options: AnonLengthString): DataTypeBlob = js.native
+  def apply(options: LengthString): DataTypeBlob = js.native
 }
 

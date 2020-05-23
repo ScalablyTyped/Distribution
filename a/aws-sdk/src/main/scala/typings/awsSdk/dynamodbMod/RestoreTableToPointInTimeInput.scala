@@ -60,7 +60,7 @@ object RestoreTableToPointInTimeInput {
     SSESpecificationOverride: SSESpecification = null,
     SourceTableArn: TableArn = null,
     SourceTableName: TableName = null,
-    UseLatestRestorableTime: js.UndefOr[Boolean] = js.undefined
+    UseLatestRestorableTime: js.UndefOr[BooleanObject] = js.undefined
   ): RestoreTableToPointInTimeInput = {
     val __obj = js.Dynamic.literal(TargetTableName = TargetTableName.asInstanceOf[js.Any])
     if (BillingModeOverride != null) __obj.updateDynamic("BillingModeOverride")(BillingModeOverride.asInstanceOf[js.Any])
@@ -71,7 +71,7 @@ object RestoreTableToPointInTimeInput {
     if (SSESpecificationOverride != null) __obj.updateDynamic("SSESpecificationOverride")(SSESpecificationOverride.asInstanceOf[js.Any])
     if (SourceTableArn != null) __obj.updateDynamic("SourceTableArn")(SourceTableArn.asInstanceOf[js.Any])
     if (SourceTableName != null) __obj.updateDynamic("SourceTableName")(SourceTableName.asInstanceOf[js.Any])
-    if (!js.isUndefined(UseLatestRestorableTime)) __obj.updateDynamic("UseLatestRestorableTime")(UseLatestRestorableTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(UseLatestRestorableTime)) __obj.updateDynamic("UseLatestRestorableTime")(UseLatestRestorableTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreTableToPointInTimeInput]
   }
 }

@@ -1,7 +1,7 @@
 package typings.devextreme.mod.default.viz
 
 import typings.devextreme.mod.DevExpress.viz.dxBarGaugeOptions
-import typings.devextreme.mod._Global_.JQuery
+import typings.devextreme.mod.global.JQuery
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,6 +1,6 @@
 package typings.jsreportChromePdf.mod
 
-import typings.jsreportChromePdf.PartialLaunchOptions
+import typings.jsreportChromePdf.anon.PartialLaunchOptions
 import typings.jsreportChromePdf.jsreportChromePdfStrings.`dedicated-process`
 import typings.jsreportChromePdf.jsreportChromePdfStrings.`http-server`
 import typings.jsreportChromePdf.jsreportChromePdfStrings.`in-process`

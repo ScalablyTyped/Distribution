@@ -21,9 +21,9 @@ object SetHeightConfig {
     growOnly: js.UndefOr[Boolean] = js.undefined
   ): SetHeightConfig = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any])
-    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullViewport)) __obj.updateDynamic("fullViewport")(fullViewport.asInstanceOf[js.Any])
-    if (!js.isUndefined(growOnly)) __obj.updateDynamic("growOnly")(growOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullViewport)) __obj.updateDynamic("fullViewport")(fullViewport.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(growOnly)) __obj.updateDynamic("growOnly")(growOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetHeightConfig]
   }
 }

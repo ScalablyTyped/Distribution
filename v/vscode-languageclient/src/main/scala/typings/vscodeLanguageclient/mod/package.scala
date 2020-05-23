@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 package object mod {
   /* Rewritten from type alias, can be one of: 
     - typings.vscodeLanguageclient.mod.Executable
-    - typings.vscodeLanguageclient.AnonDebug
-    - typings.vscodeLanguageclient.AnonRun
+    - typings.vscodeLanguageclient.anon.Debug
+    - typings.vscodeLanguageclient.anon.Run
     - typings.vscodeLanguageclient.mod.NodeModule
     - js.Function0[
   js.Promise[

@@ -38,7 +38,7 @@ object ScriptTag {
     created_at: String = null,
     display_scope: ScriptTagDisplayScope = null,
     event: onload = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     updated_at: String = null
   ): ScriptTag = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
@@ -46,7 +46,7 @@ object ScriptTag {
     if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
     if (display_scope != null) __obj.updateDynamic("display_scope")(display_scope.asInstanceOf[js.Any])
     if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScriptTag]
   }

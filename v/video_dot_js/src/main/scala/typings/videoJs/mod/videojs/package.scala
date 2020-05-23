@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object videojs {
-  type Child = java.lang.String | typings.videoJs.AnonChildren
+  type Child = java.lang.String | typings.videoJs.anon.Children
   type Component = typings.videoJs.mod.videojs.Component_
   type Content = java.lang.String | typings.std.Element | typings.std.Node | (js.Function0[java.lang.String | typings.std.Element | typings.std.Node])
   type Dom = typings.videoJs.mod.videojs.Dom_

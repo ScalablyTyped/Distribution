@@ -11,10 +11,10 @@ trait AudioTimestamp extends js.Object {
 
 object AudioTimestamp {
   @scala.inline
-  def apply(contextTime: Int | Double = null, performanceTime: Int | Double = null): AudioTimestamp = {
+  def apply(contextTime: js.UndefOr[Double] = js.undefined, performanceTime: js.UndefOr[Double] = js.undefined): AudioTimestamp = {
     val __obj = js.Dynamic.literal()
-    if (contextTime != null) __obj.updateDynamic("contextTime")(contextTime.asInstanceOf[js.Any])
-    if (performanceTime != null) __obj.updateDynamic("performanceTime")(performanceTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(contextTime)) __obj.updateDynamic("contextTime")(contextTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(performanceTime)) __obj.updateDynamic("performanceTime")(performanceTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioTimestamp]
   }
 }

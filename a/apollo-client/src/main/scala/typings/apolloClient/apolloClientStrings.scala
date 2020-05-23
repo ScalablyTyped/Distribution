@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 
 object apolloClientStrings {
   @js.native
-  sealed trait `2Dot6Dot8` extends js.Object
-  
-  @js.native
   sealed trait Document extends js.Object
   
   @js.native
@@ -51,8 +48,6 @@ object apolloClientStrings {
     extends FetchPolicy
        with WatchQueryFetchPolicy
   
-  @scala.inline
-  def `2Dot6Dot8`: `2Dot6Dot8` = "2.6.8".asInstanceOf[`2Dot6Dot8`]
   @scala.inline
   def Document: Document = "Document".asInstanceOf[Document]
   @scala.inline

@@ -38,15 +38,15 @@ object ESLintConfig {
     useEslintrc: js.UndefOr[Boolean] = js.undefined
   ): ESLintConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
     if (cacheLocation != null) __obj.updateDynamic("cacheLocation")(cacheLocation.asInstanceOf[js.Any])
     if (configFile != null) __obj.updateDynamic("configFile")(configFile.asInstanceOf[js.Any])
     if (envs != null) __obj.updateDynamic("envs")(envs.asInstanceOf[js.Any])
-    if (!js.isUndefined(fix)) __obj.updateDynamic("fix")(fix.asInstanceOf[js.Any])
+    if (!js.isUndefined(fix)) __obj.updateDynamic("fix")(fix.get.asInstanceOf[js.Any])
     if (globals != null) __obj.updateDynamic("globals")(globals.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignore)) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignore)) __obj.updateDynamic("ignore")(ignore.get.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (!js.isUndefined(useEslintrc)) __obj.updateDynamic("useEslintrc")(useEslintrc.asInstanceOf[js.Any])
+    if (!js.isUndefined(useEslintrc)) __obj.updateDynamic("useEslintrc")(useEslintrc.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ESLintConfig]
   }
 }

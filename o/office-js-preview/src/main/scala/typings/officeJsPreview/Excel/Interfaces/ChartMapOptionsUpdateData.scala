@@ -26,14 +26,14 @@ import scala.scalajs.js.annotation._
 trait ChartMapOptionsUpdateData extends js.Object {
   /**
     *
-    * Returns or sets the series map labels strategy of a region map chart. Read/Write.
+    * Specifies the series map labels strategy of a region map chart.
     *
     * [Api set: ExcelApi 1.9]
     */
   var labelStrategy: js.UndefOr[ChartMapLabelStrategy | None | BestFit | ShowAll] = js.undefined
   /**
     *
-    * Returns or sets the series mapping level of a region map chart. Read/Write.
+    * Specifies the series mapping level of a region map chart.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -42,7 +42,7 @@ trait ChartMapOptionsUpdateData extends js.Object {
   ] = js.undefined
   /**
     *
-    * Returns or sets the series projection type of a region map chart. Read/Write.
+    * Specifies the series projection type of a region map chart.
     *
     * [Api set: ExcelApi 1.9]
     */

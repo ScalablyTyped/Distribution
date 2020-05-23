@@ -53,18 +53,18 @@ object BreakpointsOwnerBreakpoints {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    large: Int | Double = null,
-    medium: Int | Double = null,
-    small: Int | Double = null,
-    xlarge: Int | Double = null,
-    xsmall: Int | Double = null
+    large: js.UndefOr[Double] = js.undefined,
+    medium: js.UndefOr[Double] = js.undefined,
+    small: js.UndefOr[Double] = js.undefined,
+    xlarge: js.UndefOr[Double] = js.undefined,
+    xsmall: js.UndefOr[Double] = js.undefined
   ): BreakpointsOwnerBreakpoints = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (large != null) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
-    if (medium != null) __obj.updateDynamic("medium")(medium.asInstanceOf[js.Any])
-    if (small != null) __obj.updateDynamic("small")(small.asInstanceOf[js.Any])
-    if (xlarge != null) __obj.updateDynamic("xlarge")(xlarge.asInstanceOf[js.Any])
-    if (xsmall != null) __obj.updateDynamic("xsmall")(xsmall.asInstanceOf[js.Any])
+    if (!js.isUndefined(large)) __obj.updateDynamic("large")(large.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(medium)) __obj.updateDynamic("medium")(medium.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(small)) __obj.updateDynamic("small")(small.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xlarge)) __obj.updateDynamic("xlarge")(xlarge.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xsmall)) __obj.updateDynamic("xsmall")(xsmall.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BreakpointsOwnerBreakpoints]
   }
 }

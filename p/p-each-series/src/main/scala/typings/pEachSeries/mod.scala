@@ -1,5 +1,6 @@
 package typings.pEachSeries
 
+import typings.pEachSeries.anon.Call
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +16,7 @@ object mod extends js.Object {
   // ): Promise<ValueType[]>;
   // export = pEachSeries;
   @JSName("default")
-  var default_Original: AnonCall = js.native
+  var default_Original: Call = js.native
   /**
   	Iterate over promises serially.
   	@param input - Iterated over serially in the `iterator` function.

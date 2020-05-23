@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.popoverMod
 
-import typings.blueprintjsCore.IPopoverPropschildrenReac
+import typings.blueprintjsCore.anon.IPopoverPropschildrenReac
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.std.HTMLElement
 import scala.scalajs.js

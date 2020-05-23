@@ -14,23 +14,20 @@ import scala.scalajs.js.annotation._
   * @property y {number} - Tile row
   * @property z {number} - Tile zoom level
   */
-@JSGlobal("H.map.provider.Tile")
-@js.native
-class Tile protected () extends js.Object {
-  /**
-    * Constructor
-    * @param x {number} - x tile coordinate (row)
-    * @param y {number} - y tile coordinate (column)
-    * @param z {number} - tile zoom level
-    * @param data {*} - generic data object which cooresponds to the given coordinates
-    */
-  def this(x: Double, y: Double, z: Double) = this()
-  def this(x: Double, y: Double, z: Double, data: js.Any) = this()
-  var data: js.Any = js.native
-  var key: String = js.native
-  var valid: Boolean = js.native
-  var x: Double = js.native
-  var y: Double = js.native
-  var z: Double = js.native
+trait Tile extends js.Object {
+  var data: js.Any
+  var key: String
+  var valid: Boolean
+  var x: Double
+  var y: Double
+  var z: Double
+}
+
+object Tile {
+  @scala.inline
+  def apply(data: js.Any, key: String, valid: Boolean, x: Double, y: Double, z: Double): Tile = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Tile]
+  }
 }
 

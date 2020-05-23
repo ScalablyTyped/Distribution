@@ -1,14 +1,12 @@
 package typings.kendoUi.kendo.data
 
-import typings.kendoUi.kendo.Observable_
+import typings.kendoUi.kendo.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.data.ObservableObject")
 @js.native
-class ObservableObject () extends Observable_ {
-  def this(value: js.Any) = this()
+trait ObservableObject extends Observable {
   var uid: String = js.native
   def get(name: String): js.Any = js.native
   def init(): Unit = js.native

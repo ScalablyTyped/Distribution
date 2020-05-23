@@ -21,7 +21,7 @@ object TimezoneJsOptions {
     url: String = null
   ): TimezoneJsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])

@@ -1,5 +1,6 @@
 package typings.materialRipple
 
+import typings.materialRipple.anon.X
 import typings.std.ClientRect
 import typings.std.EventListener
 import typings.std.EventTarget
@@ -19,7 +20,7 @@ object adapterMod extends js.Object {
     def deregisterDocumentInteractionHandler(evtType: String, handler: EventListener): Unit = js.native
     def deregisterInteractionHandler(evtType: String, handler: EventListener): Unit = js.native
     def deregisterResizeHandler(handler: EventListener): Unit = js.native
-    def getWindowPageOffset(): AnonX = js.native
+    def getWindowPageOffset(): X = js.native
     def isSurfaceActive(): Boolean = js.native
     def isSurfaceDisabled(): Boolean = js.native
     def isUnbounded(): Boolean = js.native

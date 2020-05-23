@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.anon.Disabled
 import typings.officeUiFabricReact.gridCellTypesMod.IGridCellProps
 import typings.officeUiFabricReact.gridTypesMod.IGridProps
 import typings.react.mod.FunctionComponent
@@ -18,7 +19,7 @@ object gridMod extends js.Object {
   /* static members */
   @js.native
   object GridCell extends js.Object {
-    var defaultProps: AnonDisabled = js.native
+    var defaultProps: Disabled = js.native
   }
   
 }

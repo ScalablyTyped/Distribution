@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Contains members related to the document's layout functionality.
   */
-@JSGlobal("RichEditLayout")
 @js.native
-class RichEditLayout () extends js.Object {
+trait RichEditLayout extends js.Object {
   /**
     * Returns bounds of the specified document model's position. The object that contains position bounds.
     * @param position The position in a document model.

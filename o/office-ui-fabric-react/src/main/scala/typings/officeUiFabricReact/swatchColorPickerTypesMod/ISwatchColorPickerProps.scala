@@ -149,13 +149,13 @@ object ISwatchColorPickerProps {
   def apply(
     colorCells: js.Array[IColorCellProps],
     columnCount: Double,
-    ariaPosInSet: Int | Double = null,
-    ariaSetSize: Int | Double = null,
-    cellBorderWidth: Int | Double = null,
-    cellHeight: Int | Double = null,
-    cellMargin: Int | Double = null,
+    ariaPosInSet: js.UndefOr[Double] = js.undefined,
+    ariaSetSize: js.UndefOr[Double] = js.undefined,
+    cellBorderWidth: js.UndefOr[Double] = js.undefined,
+    cellHeight: js.UndefOr[Double] = js.undefined,
+    cellMargin: js.UndefOr[Double] = js.undefined,
     cellShape: circle | square = null,
-    cellWidth: Int | Double = null,
+    cellWidth: js.UndefOr[Double] = js.undefined,
     className: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     doNotContainWithinFocusZone: js.UndefOr[Boolean] = js.undefined,
@@ -167,36 +167,36 @@ object ISwatchColorPickerProps {
     onCellFocused: (/* id */ js.UndefOr[String], /* color */ js.UndefOr[String]) => Unit = null,
     onCellHovered: (/* id */ js.UndefOr[String], /* color */ js.UndefOr[String]) => Unit = null,
     onColorChanged: (/* id */ js.UndefOr[String], /* color */ js.UndefOr[String]) => Unit = null,
-    positionInSet: Int | Double = null,
+    positionInSet: js.UndefOr[Double] = js.undefined,
     selectedId: String = null,
-    setSize: Int | Double = null,
+    setSize: js.UndefOr[Double] = js.undefined,
     shouldFocusCircularNavigate: js.UndefOr[Boolean] = js.undefined,
     styles: IStyleFunctionOrObject[ISwatchColorPickerStyleProps, ISwatchColorPickerStyles] = null,
     theme: ITheme = null
   ): ISwatchColorPickerProps = {
     val __obj = js.Dynamic.literal(colorCells = colorCells.asInstanceOf[js.Any], columnCount = columnCount.asInstanceOf[js.Any])
-    if (ariaPosInSet != null) __obj.updateDynamic("ariaPosInSet")(ariaPosInSet.asInstanceOf[js.Any])
-    if (ariaSetSize != null) __obj.updateDynamic("ariaSetSize")(ariaSetSize.asInstanceOf[js.Any])
-    if (cellBorderWidth != null) __obj.updateDynamic("cellBorderWidth")(cellBorderWidth.asInstanceOf[js.Any])
-    if (cellHeight != null) __obj.updateDynamic("cellHeight")(cellHeight.asInstanceOf[js.Any])
-    if (cellMargin != null) __obj.updateDynamic("cellMargin")(cellMargin.asInstanceOf[js.Any])
+    if (!js.isUndefined(ariaPosInSet)) __obj.updateDynamic("ariaPosInSet")(ariaPosInSet.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ariaSetSize)) __obj.updateDynamic("ariaSetSize")(ariaSetSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellBorderWidth)) __obj.updateDynamic("cellBorderWidth")(cellBorderWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellHeight)) __obj.updateDynamic("cellHeight")(cellHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellMargin)) __obj.updateDynamic("cellMargin")(cellMargin.get.asInstanceOf[js.Any])
     if (cellShape != null) __obj.updateDynamic("cellShape")(cellShape.asInstanceOf[js.Any])
-    if (cellWidth != null) __obj.updateDynamic("cellWidth")(cellWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellWidth)) __obj.updateDynamic("cellWidth")(cellWidth.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(doNotContainWithinFocusZone)) __obj.updateDynamic("doNotContainWithinFocusZone")(doNotContainWithinFocusZone.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusOnHover)) __obj.updateDynamic("focusOnHover")(focusOnHover.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(doNotContainWithinFocusZone)) __obj.updateDynamic("doNotContainWithinFocusZone")(doNotContainWithinFocusZone.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusOnHover)) __obj.updateDynamic("focusOnHover")(focusOnHover.get.asInstanceOf[js.Any])
     if (getColorGridCellStyles != null) __obj.updateDynamic("getColorGridCellStyles")(getColorGridCellStyles.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isControlled)) __obj.updateDynamic("isControlled")(isControlled.asInstanceOf[js.Any])
+    if (!js.isUndefined(isControlled)) __obj.updateDynamic("isControlled")(isControlled.get.asInstanceOf[js.Any])
     if (mouseLeaveParentSelector != null) __obj.updateDynamic("mouseLeaveParentSelector")(mouseLeaveParentSelector.asInstanceOf[js.Any])
     if (onCellFocused != null) __obj.updateDynamic("onCellFocused")(js.Any.fromFunction2(onCellFocused))
     if (onCellHovered != null) __obj.updateDynamic("onCellHovered")(js.Any.fromFunction2(onCellHovered))
     if (onColorChanged != null) __obj.updateDynamic("onColorChanged")(js.Any.fromFunction2(onColorChanged))
-    if (positionInSet != null) __obj.updateDynamic("positionInSet")(positionInSet.asInstanceOf[js.Any])
+    if (!js.isUndefined(positionInSet)) __obj.updateDynamic("positionInSet")(positionInSet.get.asInstanceOf[js.Any])
     if (selectedId != null) __obj.updateDynamic("selectedId")(selectedId.asInstanceOf[js.Any])
-    if (setSize != null) __obj.updateDynamic("setSize")(setSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldFocusCircularNavigate)) __obj.updateDynamic("shouldFocusCircularNavigate")(shouldFocusCircularNavigate.asInstanceOf[js.Any])
+    if (!js.isUndefined(setSize)) __obj.updateDynamic("setSize")(setSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldFocusCircularNavigate)) __obj.updateDynamic("shouldFocusCircularNavigate")(shouldFocusCircularNavigate.get.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISwatchColorPickerProps]

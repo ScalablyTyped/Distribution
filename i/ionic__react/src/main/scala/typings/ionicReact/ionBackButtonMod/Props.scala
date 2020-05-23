@@ -1,9 +1,9 @@
 package typings.ionicReact.ionBackButtonMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ionicCore.componentsMod._Global_.HTMLIonBackButtonElement
+import typings.ionicCore.componentsMod.global.HTMLIonBackButtonElement
 import typings.ionicCore.mod.Color
-import typings.ionicReact.AnonIos
+import typings.ionicReact.anon.Ios
 import typings.ionicReact.ionicReactStrings.button
 import typings.ionicReact.ionicReactStrings.ios
 import typings.ionicReact.ionicReactStrings.md
@@ -14,14 +14,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Omit<@ionic/core.@ionic/core.JSX.IonBackButton, 'icon'> & @ionic/react.@ionic/react/dist/types/components/IonicReactProps.IonicReactProps & {  icon ? :{  ios  :string,   md  :string} | string,   ref ? :react.react.RefObject<@ionic/core.@ionic/core/dist/types/components._Global_.HTMLIonBackButtonElement>} */
+/* Inlined std.Omit<@ionic/core.@ionic/core.JSX.IonBackButton, 'icon'> & @ionic/react.@ionic/react/dist/types/components/IonicReactProps.IonicReactProps & {  icon ? :{  ios  :string,   md  :string} | string,   ref ? :react.react.RefObject<@ionic/core.@ionic/core/dist/types/components.<global>.HTMLIonBackButtonElement>} */
 trait Props extends js.Object {
   var `class`: js.UndefOr[String] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var color: js.UndefOr[Color] = js.undefined
   var defaultHref: js.UndefOr[String] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var icon: js.UndefOr[AnonIos | String] = js.undefined
+  var icon: js.UndefOr[Ios | String] = js.undefined
   var mode: js.UndefOr[ios | md] = js.undefined
   var ref: js.UndefOr[RefObject[HTMLIonBackButtonElement]] = js.undefined
   var style: js.UndefOr[StringDictionary[js.Any]] = js.undefined
@@ -37,7 +37,7 @@ object Props {
     color: Color = null,
     defaultHref: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    icon: AnonIos | String = null,
+    icon: Ios | String = null,
     mode: ios | md = null,
     ref: RefObject[HTMLIonBackButtonElement] = null,
     style: StringDictionary[js.Any] = null,
@@ -49,7 +49,7 @@ object Props {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (defaultHref != null) __obj.updateDynamic("defaultHref")(defaultHref.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])

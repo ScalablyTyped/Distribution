@@ -29,8 +29,8 @@ object ClientAutoOptions {
     val __obj = js.Dynamic.literal(challengeCreateFn = js.Any.fromFunction3(challengeCreateFn), challengeRemoveFn = js.Any.fromFunction3(challengeRemoveFn), csr = csr.asInstanceOf[js.Any])
     if (challengePriority != null) __obj.updateDynamic("challengePriority")(challengePriority.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipChallengeVerification)) __obj.updateDynamic("skipChallengeVerification")(skipChallengeVerification.asInstanceOf[js.Any])
-    if (!js.isUndefined(termsOfServiceAgreed)) __obj.updateDynamic("termsOfServiceAgreed")(termsOfServiceAgreed.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipChallengeVerification)) __obj.updateDynamic("skipChallengeVerification")(skipChallengeVerification.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(termsOfServiceAgreed)) __obj.updateDynamic("termsOfServiceAgreed")(termsOfServiceAgreed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientAutoOptions]
   }
 }

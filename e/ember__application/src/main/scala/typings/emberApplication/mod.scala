@@ -1,5 +1,6 @@
 package typings.emberApplication
 
+import typings.emberApplication.anon.Instantiate
 import typings.emberApplication.typesMod.EventDispatcherEvents
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -83,7 +84,7 @@ object mod extends js.Object {
       * @param factory (e.g., App.Person)
       */
     def register(fullName: String, factory: js.Any): Unit = js.native
-    def register(fullName: String, factory: js.Any, options: AnonInstantiate): Unit = js.native
+    def register(fullName: String, factory: js.Any, options: Instantiate): Unit = js.native
     /**
       * This removes all helpers that have been registered, and resets and functions
       * that were overridden by the helpers.

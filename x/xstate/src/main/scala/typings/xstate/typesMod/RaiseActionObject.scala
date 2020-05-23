@@ -12,7 +12,7 @@ trait RaiseActionObject[TEvent /* <: EventObject */] extends js.Object {
 
 object RaiseActionObject {
   @scala.inline
-  def apply[TEvent /* <: EventObject */](_event: typings.xstate.typesMod.SCXML.Event[TEvent], `type`: Raise): RaiseActionObject[TEvent] = {
+  def apply[TEvent](_event: typings.xstate.typesMod.SCXML.Event[TEvent], `type`: Raise): RaiseActionObject[TEvent] = {
     val __obj = js.Dynamic.literal(_event = _event.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaiseActionObject[TEvent]]

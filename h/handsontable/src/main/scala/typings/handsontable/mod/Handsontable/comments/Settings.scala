@@ -10,9 +10,9 @@ trait Settings extends js.Object {
 
 object Settings {
   @scala.inline
-  def apply(displayDelay: Int | Double = null): Settings = {
+  def apply(displayDelay: js.UndefOr[Double] = js.undefined): Settings = {
     val __obj = js.Dynamic.literal()
-    if (displayDelay != null) __obj.updateDynamic("displayDelay")(displayDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayDelay)) __obj.updateDynamic("displayDelay")(displayDelay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
 }

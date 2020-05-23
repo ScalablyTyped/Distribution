@@ -5,7 +5,7 @@ import typings.officeUiFabricReact.officeUiFabricReactStrings.alpha
 import typings.officeUiFabricReact.officeUiFabricReactStrings.none
 import typings.officeUiFabricReact.officeUiFabricReactStrings.transparency
 import typings.react.mod.SyntheticEvent
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricStyling.ithemeMod.ITheme
@@ -72,7 +72,7 @@ trait IColorPickerProps extends js.Object {
     * (Not called when the color is changed via props.)
     */
   var onChange: js.UndefOr[
-    js.Function2[/* ev */ SyntheticEvent[HTMLElement, Event_], /* color */ IColor, Unit]
+    js.Function2[/* ev */ SyntheticEvent[HTMLElement, Event], /* color */ IColor, Unit]
   ] = js.undefined
   /**
     * Label for the red text field.
@@ -111,7 +111,7 @@ object IColorPickerProps {
     componentRef: IRefObject[IColorPicker] = null,
     greenLabel: String = null,
     hexLabel: String = null,
-    onChange: (/* ev */ SyntheticEvent[HTMLElement, Event_], /* color */ IColor) => Unit = null,
+    onChange: (/* ev */ SyntheticEvent[HTMLElement, Event], /* color */ IColor) => Unit = null,
     redLabel: String = null,
     showPreview: js.UndefOr[Boolean] = js.undefined,
     strings: IColorPickerStrings = null,
@@ -120,7 +120,7 @@ object IColorPickerProps {
   ): IColorPickerProps = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
     if (alphaLabel != null) __obj.updateDynamic("alphaLabel")(alphaLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(alphaSliderHidden)) __obj.updateDynamic("alphaSliderHidden")(alphaSliderHidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(alphaSliderHidden)) __obj.updateDynamic("alphaSliderHidden")(alphaSliderHidden.get.asInstanceOf[js.Any])
     if (alphaType != null) __obj.updateDynamic("alphaType")(alphaType.asInstanceOf[js.Any])
     if (blueLabel != null) __obj.updateDynamic("blueLabel")(blueLabel.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
@@ -129,7 +129,7 @@ object IColorPickerProps {
     if (hexLabel != null) __obj.updateDynamic("hexLabel")(hexLabel.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (redLabel != null) __obj.updateDynamic("redLabel")(redLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPreview)) __obj.updateDynamic("showPreview")(showPreview.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPreview)) __obj.updateDynamic("showPreview")(showPreview.get.asInstanceOf[js.Any])
     if (strings != null) __obj.updateDynamic("strings")(strings.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])

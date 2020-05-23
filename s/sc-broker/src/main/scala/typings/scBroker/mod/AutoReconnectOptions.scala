@@ -14,16 +14,16 @@ trait AutoReconnectOptions extends js.Object {
 object AutoReconnectOptions {
   @scala.inline
   def apply(
-    initialDelay: Int | Double = null,
-    maxDelay: Int | Double = null,
-    multiplier: Int | Double = null,
-    randomness: Int | Double = null
+    initialDelay: js.UndefOr[Double] = js.undefined,
+    maxDelay: js.UndefOr[Double] = js.undefined,
+    multiplier: js.UndefOr[Double] = js.undefined,
+    randomness: js.UndefOr[Double] = js.undefined
   ): AutoReconnectOptions = {
     val __obj = js.Dynamic.literal()
-    if (initialDelay != null) __obj.updateDynamic("initialDelay")(initialDelay.asInstanceOf[js.Any])
-    if (maxDelay != null) __obj.updateDynamic("maxDelay")(maxDelay.asInstanceOf[js.Any])
-    if (multiplier != null) __obj.updateDynamic("multiplier")(multiplier.asInstanceOf[js.Any])
-    if (randomness != null) __obj.updateDynamic("randomness")(randomness.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialDelay)) __obj.updateDynamic("initialDelay")(initialDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDelay)) __obj.updateDynamic("maxDelay")(maxDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiplier)) __obj.updateDynamic("multiplier")(multiplier.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(randomness)) __obj.updateDynamic("randomness")(randomness.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoReconnectOptions]
   }
 }

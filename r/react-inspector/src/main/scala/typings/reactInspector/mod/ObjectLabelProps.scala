@@ -15,7 +15,7 @@ object ObjectLabelProps {
   def apply(data: js.Any = null, isNonenumerable: js.UndefOr[Boolean] = js.undefined, name: String = null): ObjectLabelProps = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(isNonenumerable)) __obj.updateDynamic("isNonenumerable")(isNonenumerable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNonenumerable)) __obj.updateDynamic("isNonenumerable")(isNonenumerable.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectLabelProps]
   }

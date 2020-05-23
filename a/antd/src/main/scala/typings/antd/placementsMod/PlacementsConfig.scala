@@ -16,17 +16,17 @@ object PlacementsConfig {
   @scala.inline
   def apply(
     arrowPointAtCenter: js.UndefOr[Boolean] = js.undefined,
-    arrowWidth: Int | Double = null,
+    arrowWidth: js.UndefOr[Double] = js.undefined,
     autoAdjustOverflow: Boolean | AdjustOverflow = null,
-    horizontalArrowShift: Int | Double = null,
-    verticalArrowShift: Int | Double = null
+    horizontalArrowShift: js.UndefOr[Double] = js.undefined,
+    verticalArrowShift: js.UndefOr[Double] = js.undefined
   ): PlacementsConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arrowPointAtCenter)) __obj.updateDynamic("arrowPointAtCenter")(arrowPointAtCenter.asInstanceOf[js.Any])
-    if (arrowWidth != null) __obj.updateDynamic("arrowWidth")(arrowWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrowPointAtCenter)) __obj.updateDynamic("arrowPointAtCenter")(arrowPointAtCenter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrowWidth)) __obj.updateDynamic("arrowWidth")(arrowWidth.get.asInstanceOf[js.Any])
     if (autoAdjustOverflow != null) __obj.updateDynamic("autoAdjustOverflow")(autoAdjustOverflow.asInstanceOf[js.Any])
-    if (horizontalArrowShift != null) __obj.updateDynamic("horizontalArrowShift")(horizontalArrowShift.asInstanceOf[js.Any])
-    if (verticalArrowShift != null) __obj.updateDynamic("verticalArrowShift")(verticalArrowShift.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalArrowShift)) __obj.updateDynamic("horizontalArrowShift")(horizontalArrowShift.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalArrowShift)) __obj.updateDynamic("verticalArrowShift")(verticalArrowShift.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlacementsConfig]
   }
 }

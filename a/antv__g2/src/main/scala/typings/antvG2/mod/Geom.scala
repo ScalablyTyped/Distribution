@@ -1,7 +1,6 @@
 package typings.antvG2.mod
 
-import typings.antvG2.AnonAnimate
-import typings.antvG2.AnonDictkey
+import typings.antvG2.anon.Dictkey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +15,7 @@ trait Geom extends js.Object {
   def color(`type`: String, colors: js.Array[String]): this.type = js.native
   def color(`type`: String, fun: js.Function): this.type = js.native
   def label(exe: String, func: js.Function): this.type = js.native
-  def label(exe: String, opt: AnonDictkey): this.type = js.native
+  def label(exe: String, opt: Dictkey): this.type = js.native
   def label(field: String): this.type = js.native
   def opacity(col: String): this.type = js.native
   def opacity(op: Double): this.type = js.native
@@ -24,8 +23,8 @@ trait Geom extends js.Object {
   def position(pos: String): this.type = js.native
   def position(pos: js.Array[String]): this.type = js.native
   def select(open: Boolean): this.type = js.native
-  def select(open: Boolean, opt: AnonAnimate): this.type = js.native
-  def select(opt: AnonAnimate): this.type = js.native
+  def select(open: Boolean, opt: typings.antvG2.anon.Animate): this.type = js.native
+  def select(opt: typings.antvG2.anon.Animate): this.type = js.native
   def shape(shape: String): this.type = js.native
   def shape(`type`: String, colors: js.Array[String]): this.type = js.native
   def shape(`type`: String, fun: js.Function): this.type = js.native

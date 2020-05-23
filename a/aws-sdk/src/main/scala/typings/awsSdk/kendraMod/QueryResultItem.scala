@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait QueryResultItem extends js.Object {
   /**
-    * 
+    * One or more additional attribues associated with the query result.
     */
   var AdditionalAttributes: js.UndefOr[AdditionalResultAttributeList] = js.native
   /**

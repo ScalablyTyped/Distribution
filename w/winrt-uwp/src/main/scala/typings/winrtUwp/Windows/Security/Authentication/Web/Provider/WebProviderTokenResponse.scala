@@ -6,15 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a web provider token response. */
-@JSGlobal("Windows.Security.Authentication.Web.Provider.WebProviderTokenResponse")
-@js.native
-class WebProviderTokenResponse protected () extends js.Object {
-  /**
-    * Creates a new instance of the WebProviderTokenResponse class.
-    * @param webTokenResponse The web token response from the client.
-    */
-  def this(webTokenResponse: WebTokenResponse) = this()
+trait WebProviderTokenResponse extends js.Object {
   /** Gets the response from the provider to the client. */
-  var clientResponse: WebTokenResponse = js.native
+  var clientResponse: WebTokenResponse
+}
+
+object WebProviderTokenResponse {
+  @scala.inline
+  def apply(clientResponse: WebTokenResponse): WebProviderTokenResponse = {
+    val __obj = js.Dynamic.literal(clientResponse = clientResponse.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebProviderTokenResponse]
+  }
 }
 

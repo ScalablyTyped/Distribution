@@ -1,7 +1,7 @@
 package typings.jupyterlabCodemirror.editorMod.CodeMirrorEditor
 
-import typings.jupyterlabCodeeditor.PartialIConfig
-import typings.jupyterlabCodeeditor.PartialISelectionStyle
+import typings.jupyterlabCodeeditor.anon.PartialIConfig
+import typings.jupyterlabCodeeditor.anon.PartialISelectionStyle
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IModel
 import typings.std.HTMLElement
 import scala.scalajs.js

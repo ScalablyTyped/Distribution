@@ -15,7 +15,7 @@ trait MetricTransformation extends js.Object {
     */
   var metricName: MetricName = js.native
   /**
-    * The namespace of the CloudWatch metric.
+    * A custom namespace to contain your metric in CloudWatch. Use namespaces to group together metrics that are similar. For more information, see Namespaces.
     */
   var metricNamespace: MetricNamespace = js.native
   /**
@@ -30,10 +30,10 @@ object MetricTransformation {
     metricName: MetricName,
     metricNamespace: MetricNamespace,
     metricValue: MetricValue,
-    defaultValue: Int | Double = null
+    defaultValue: js.UndefOr[DefaultValue] = js.undefined
   ): MetricTransformation = {
     val __obj = js.Dynamic.literal(metricName = metricName.asInstanceOf[js.Any], metricNamespace = metricNamespace.asInstanceOf[js.Any], metricValue = metricValue.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricTransformation]
   }
 }

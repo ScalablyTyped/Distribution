@@ -1,6 +1,8 @@
 package typings.rmcCascader
 
 import typings.react.mod.Component
+import typings.rmcCascader.anon.Cols
+import typings.rmcCascader.anon.Value
 import typings.rmcCascader.cascaderTypesMod.ICascaderProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +15,7 @@ object cascaderMod extends js.Object {
   trait Cascader
     extends Component[ICascaderProps, js.Any, js.Any] {
     @JSName("state")
-    var state_Cascader: AnonValue = js.native
+    var state_Cascader: Value = js.native
     @JSName("componentWillReceiveProps")
     def componentWillReceiveProps_MCascader(nextProps: js.Any): Unit = js.native
     def getCols(): js.Any = js.native
@@ -27,7 +29,7 @@ object cascaderMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonCols = js.native
+    var defaultProps: Cols = js.native
   }
   
 }

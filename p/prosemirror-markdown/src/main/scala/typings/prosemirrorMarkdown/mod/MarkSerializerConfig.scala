@@ -15,7 +15,7 @@ trait MarkSerializerConfig[S /* <: Schema[_, _] */] extends js.Object {
 
 object MarkSerializerConfig {
   @scala.inline
-  def apply[S /* <: Schema[_, _] */](
+  def apply[S](
     close: String | MarkSerializerMethod[S],
     open: String | MarkSerializerMethod[S],
     escape: js.UndefOr[Boolean] = js.undefined,
@@ -23,9 +23,9 @@ object MarkSerializerConfig {
     mixable: js.UndefOr[Boolean] = js.undefined
   ): MarkSerializerConfig[S] = {
     val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
-    if (!js.isUndefined(escape)) __obj.updateDynamic("escape")(escape.asInstanceOf[js.Any])
-    if (!js.isUndefined(expelEnclosingWhitespace)) __obj.updateDynamic("expelEnclosingWhitespace")(expelEnclosingWhitespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(mixable)) __obj.updateDynamic("mixable")(mixable.asInstanceOf[js.Any])
+    if (!js.isUndefined(escape)) __obj.updateDynamic("escape")(escape.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expelEnclosingWhitespace)) __obj.updateDynamic("expelEnclosingWhitespace")(expelEnclosingWhitespace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mixable)) __obj.updateDynamic("mixable")(mixable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkSerializerConfig[S]]
   }
 }

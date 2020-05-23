@@ -19,7 +19,7 @@ object TooltipSettings {
   @scala.inline
   def apply(enable: js.UndefOr[Boolean] = js.undefined, template: String = null): TooltipSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.get.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipSettings]
   }

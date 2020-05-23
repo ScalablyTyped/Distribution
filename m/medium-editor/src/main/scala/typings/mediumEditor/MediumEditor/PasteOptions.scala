@@ -27,10 +27,10 @@ object PasteOptions {
   ): PasteOptions = {
     val __obj = js.Dynamic.literal()
     if (cleanAttrs != null) __obj.updateDynamic("cleanAttrs")(cleanAttrs.asInstanceOf[js.Any])
-    if (!js.isUndefined(cleanPastedHTML)) __obj.updateDynamic("cleanPastedHTML")(cleanPastedHTML.asInstanceOf[js.Any])
+    if (!js.isUndefined(cleanPastedHTML)) __obj.updateDynamic("cleanPastedHTML")(cleanPastedHTML.get.asInstanceOf[js.Any])
     if (cleanReplacements != null) __obj.updateDynamic("cleanReplacements")(cleanReplacements.asInstanceOf[js.Any])
     if (cleanTags != null) __obj.updateDynamic("cleanTags")(cleanTags.asInstanceOf[js.Any])
-    if (!js.isUndefined(forcePlainText)) __obj.updateDynamic("forcePlainText")(forcePlainText.asInstanceOf[js.Any])
+    if (!js.isUndefined(forcePlainText)) __obj.updateDynamic("forcePlainText")(forcePlainText.get.asInstanceOf[js.Any])
     if (preCleanReplacements != null) __obj.updateDynamic("preCleanReplacements")(preCleanReplacements.asInstanceOf[js.Any])
     if (unwrapTags != null) __obj.updateDynamic("unwrapTags")(unwrapTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[PasteOptions]

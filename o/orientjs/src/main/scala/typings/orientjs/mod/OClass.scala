@@ -1,6 +1,6 @@
 package typings.orientjs.mod
 
-import typings.orientjs.AnonForce
+import typings.orientjs.anon.Force
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,7 +57,7 @@ class OClass () extends js.Object {
     * @promise {Db}         The database instance.
     */
   def drop(name: String): js.Promise[ODB] = js.native
-  def drop(name: String, config: AnonForce): js.Promise[ODB] = js.native
+  def drop(name: String, config: Force): js.Promise[ODB] = js.native
   /**
     * Find a list of records in the class.
     *

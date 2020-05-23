@@ -23,7 +23,6 @@ trait SearchSource extends js.Object {
   def findTestRelatedToChangedFiles(changedFilesInfo: ChangedFiles, collectCoverage: Boolean): SearchResult = js.native
   def findTestsByPaths(paths: js.Array[Path]): SearchResult = js.native
   def getTestPaths(globalConfig: GlobalConfig): js.Promise[SearchResult] = js.native
-  def getTestPaths(globalConfig: GlobalConfig, changedFiles: js.UndefOr[scala.Nothing], filter: Filter): js.Promise[SearchResult] = js.native
   def getTestPaths(globalConfig: GlobalConfig, changedFiles: ChangedFiles): js.Promise[SearchResult] = js.native
   def getTestPaths(globalConfig: GlobalConfig, changedFiles: ChangedFiles, filter: Filter): js.Promise[SearchResult] = js.native
   def isTestFilePath(path: Path): Boolean = js.native

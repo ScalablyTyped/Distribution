@@ -1,6 +1,5 @@
 package typings.es6Collections
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +13,4 @@ trait WeakMap[K /* <: js.Object */, V] extends js.Object {
   def set(key: K): WeakMap[K, V] = js.native
   def set(key: K, value: V): WeakMap[K, V] = js.native
 }
-
-@JSGlobal("WeakMap")
-@js.native
-object WeakMap extends TopLevel[WeakMapConstructor]
 

@@ -1,36 +1,31 @@
 package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.babylonjs.AnonCapture
-import typings.babylonjs.AnonCaptureConstraint
-import typings.babylonjs.AnonFramebufferHeight
-import typings.babylonjs.AnonHeight
-import typings.babylonjs.AnonMag
-import typings.babylonjs.AnonRenderer
 import typings.babylonjs.CanvasRenderingContext2D
 import typings.babylonjs.HTMLCanvasElement
 import typings.babylonjs.HTMLVideoElement
 import typings.babylonjs.ImageBitmap
-import typings.babylonjs.PartialRenderTargetCreati
 import typings.babylonjs.WebGLProgram
 import typings.babylonjs.WebGLRenderingContext
 import typings.babylonjs.WebGLUniformLocation
 import typings.babylonjs.Window
+import typings.babylonjs.anon.FramebufferHeight
+import typings.babylonjs.anon.Height
+import typings.babylonjs.anon.Mag
+import typings.babylonjs.anon.PartialRenderTargetCreati
+import typings.babylonjs.anon.Renderer
 import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import typings.std.Blob
-import typings.std.Document_
-import typings.std.EventTarget
+import typings.std.Document
 import typings.std.Float32Array
 import typings.std.HTMLImageElement
 import typings.std.Int32Array
 import typings.std.OffscreenCanvas
 import typings.std.OffscreenCanvasRenderingContext2D
-import typings.std.ProgressEvent
 import typings.std.Uint16Array
 import typings.std.Uint32Array
 import typings.std.Uint8Array
-import typings.std.WebGL2RenderingContext
 import typings.std.WebGLBuffer
 import typings.std.WebGLContextEvent
 import typings.std.WebGLFramebuffer
@@ -42,32 +37,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.ThinEngine")
 @js.native
-class ThinEngine protected () extends js.Object {
-  /**
-    * Creates a new engine
-    * @param canvasOrContext defines the canvas or WebGL context to use for rendering. If you provide a WebGL context, Babylon.js will not hook events on the canvas (like pointers, keyboards, etc...) so no event observables will be available. This is mostly used when Babylon.js is used as a plugin on a system which alreay used the WebGL context
-    * @param antialias defines enable antialiasing (default: false)
-    * @param options defines further options to be sent to the getContext() function
-    * @param adaptToDeviceRatio defines whether to adapt to the device's viewport characteristics (default: false)
-    */
-  def this(canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext | WebGL2RenderingContext]) = this()
-  def this(
-    canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext | WebGL2RenderingContext],
-    antialias: Boolean
-  ) = this()
-  def this(
-    canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext | WebGL2RenderingContext],
-    antialias: Boolean,
-    options: EngineOptions
-  ) = this()
-  def this(
-    canvasOrContext: Nullable[HTMLCanvasElement | WebGLRenderingContext | WebGL2RenderingContext],
-    antialias: Boolean,
-    options: EngineOptions,
-    adaptToDeviceRatio: Boolean
-  ) = this()
+trait ThinEngine extends js.Object {
   var _activateCurrentTexture: js.Any = js.native
   /** @hidden */
   var _activeChannel: Double = js.native
@@ -296,7 +267,7 @@ class ThinEngine protected () extends js.Object {
   def _createDepthStencilCubeTexture(size: Double, options: DepthTextureCreationOptions): InternalTexture = js.native
   /** @hidden */
   def _createDepthStencilTexture(size: Double, options: DepthTextureCreationOptions): InternalTexture = js.native
-  def _createDepthStencilTexture(size: AnonHeight, options: DepthTextureCreationOptions): InternalTexture = js.native
+  def _createDepthStencilTexture(size: Height, options: DepthTextureCreationOptions): InternalTexture = js.native
   /* protected */ def _createShaderProgram(
     pipelineContext: WebGLPipelineContext,
     vertexShader: WebGLShader,
@@ -327,7 +298,7 @@ class ThinEngine protected () extends js.Object {
   /** @hidden */
   def _getRGBAMultiSampleBufferFormat(`type`: Double): Double = js.native
   /** @hidden */
-  def _getSamplingParameters(samplingMode: Double, generateMipMaps: Boolean): AnonMag = js.native
+  def _getSamplingParameters(samplingMode: Double, generateMipMaps: Boolean): Mag = js.native
   /** @hidden */
   def _getUnpackAlignement(): Double = js.native
   /** @hidden */
@@ -474,7 +445,7 @@ class ThinEngine protected () extends js.Object {
   ): Unit = js.native
   def _setupDepthStencilTexture(
     internalTexture: InternalTexture,
-    size: AnonHeight,
+    size: Height,
     generateStencil: Boolean,
     bilinearFiltering: Boolean,
     comparisonFunction: Double
@@ -677,135 +648,6 @@ class ThinEngine protected () extends js.Object {
     * This can help preventing texture load conflict due to name collision.
     */
   def clearInternalTexturesCache(): Unit = js.native
-  def createCubeTexture(
-    rootUrl: String,
-    scene: Nullable[Scene],
-    files: Nullable[js.Array[String]],
-    noMipmap: js.UndefOr[scala.Nothing],
-    onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-    onError: Nullable[
-      js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-    ],
-    format: js.UndefOr[scala.Nothing],
-    forcedExtension: js.Any,
-    createPolynomials: Boolean,
-    lodScale: Double,
-    lodOffset: Double,
-    fallback: Nullable[InternalTexture]
-  ): InternalTexture = js.native
-  def createCubeTexture(
-    rootUrl: String,
-    scene: Nullable[Scene],
-    files: Nullable[js.Array[String]],
-    noMipmap: js.UndefOr[scala.Nothing],
-    onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-    onError: Nullable[
-      js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-    ],
-    format: Double,
-    forcedExtension: js.Any,
-    createPolynomials: Boolean,
-    lodScale: Double,
-    lodOffset: Double,
-    fallback: Nullable[InternalTexture]
-  ): InternalTexture = js.native
-  def createCubeTexture(
-    rootUrl: String,
-    scene: Nullable[Scene],
-    files: Nullable[js.Array[String]],
-    noMipmap: Boolean,
-    onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-    onError: Nullable[
-      js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-    ],
-    format: js.UndefOr[scala.Nothing],
-    forcedExtension: js.Any
-  ): InternalTexture = js.native
-  def createCubeTexture(
-    rootUrl: String,
-    scene: Nullable[Scene],
-    files: Nullable[js.Array[String]],
-    noMipmap: Boolean,
-    onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-    onError: Nullable[
-      js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-    ],
-    format: js.UndefOr[scala.Nothing],
-    forcedExtension: js.Any,
-    createPolynomials: Boolean,
-    lodScale: Double,
-    lodOffset: Double
-  ): InternalTexture = js.native
-  def createCubeTexture(
-    rootUrl: String,
-    scene: Nullable[Scene],
-    files: Nullable[js.Array[String]],
-    noMipmap: Boolean,
-    onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-    onError: Nullable[
-      js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-    ],
-    format: js.UndefOr[scala.Nothing],
-    forcedExtension: js.Any,
-    createPolynomials: Boolean,
-    lodScale: Double,
-    lodOffset: Double,
-    fallback: Nullable[InternalTexture]
-  ): InternalTexture = js.native
-  /**
-    * Creates a cube texture
-    * @param rootUrl defines the url where the files to load is located
-    * @param scene defines the current scene
-    * @param files defines the list of files to load (1 per face)
-    * @param noMipmap defines a boolean indicating that no mipmaps shall be generated (false by default)
-    * @param onLoad defines an optional callback raised when the texture is loaded
-    * @param onError defines an optional callback raised if there is an issue to load the texture
-    * @param format defines the format of the data
-    * @param forcedExtension defines the extension to use to pick the right loader
-    * @returns the cube texture as an InternalTexture
-    */
-  def createCubeTexture(
-    rootUrl: String,
-    scene: Nullable[Scene],
-    files: Nullable[js.Array[String]],
-    noMipmap: Boolean,
-    onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-    onError: Nullable[
-      js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-    ],
-    format: Double,
-    forcedExtension: js.Any
-  ): InternalTexture = js.native
-  /**
-    * Creates a cube texture
-    * @param rootUrl defines the url where the files to load is located
-    * @param scene defines the current scene
-    * @param files defines the list of files to load (1 per face)
-    * @param noMipmap defines a boolean indicating that no mipmaps shall be generated (false by default)
-    * @param onLoad defines an optional callback raised when the texture is loaded
-    * @param onError defines an optional callback raised if there is an issue to load the texture
-    * @param format defines the format of the data
-    * @param forcedExtension defines the extension to use to pick the right loader
-    * @param createPolynomials if a polynomial sphere should be created for the cube texture
-    * @param lodScale defines the scale applied to environment texture. This manages the range of LOD level used for IBL according to the roughness
-    * @param lodOffset defines the offset applied to environment texture. This manages first LOD level used for IBL according to the roughness
-    * @returns the cube texture as an InternalTexture
-    */
-  def createCubeTexture(
-    rootUrl: String,
-    scene: Nullable[Scene],
-    files: Nullable[js.Array[String]],
-    noMipmap: Boolean,
-    onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
-    onError: Nullable[
-      js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
-    ],
-    format: Double,
-    forcedExtension: js.Any,
-    createPolynomials: Boolean,
-    lodScale: Double,
-    lodOffset: Double
-  ): InternalTexture = js.native
   /**
     * Creates a cube texture
     * @param rootUrl defines the url where the files to load is located
@@ -826,17 +668,71 @@ class ThinEngine protected () extends js.Object {
     rootUrl: String,
     scene: Nullable[Scene],
     files: Nullable[js.Array[String]],
-    noMipmap: Boolean,
+    noMipmap: js.UndefOr[Boolean],
     onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
     onError: Nullable[
       js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
     ],
-    format: Double,
+    format: js.UndefOr[Double],
     forcedExtension: js.Any,
     createPolynomials: Boolean,
     lodScale: Double,
     lodOffset: Double,
     fallback: Nullable[InternalTexture]
+  ): InternalTexture = js.native
+  /**
+    * Creates a cube texture
+    * @param rootUrl defines the url where the files to load is located
+    * @param scene defines the current scene
+    * @param files defines the list of files to load (1 per face)
+    * @param noMipmap defines a boolean indicating that no mipmaps shall be generated (false by default)
+    * @param onLoad defines an optional callback raised when the texture is loaded
+    * @param onError defines an optional callback raised if there is an issue to load the texture
+    * @param format defines the format of the data
+    * @param forcedExtension defines the extension to use to pick the right loader
+    * @returns the cube texture as an InternalTexture
+    */
+  def createCubeTexture(
+    rootUrl: String,
+    scene: Nullable[Scene],
+    files: Nullable[js.Array[String]],
+    noMipmap: Boolean,
+    onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
+    onError: Nullable[
+      js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+    ],
+    format: js.UndefOr[Double],
+    forcedExtension: js.Any
+  ): InternalTexture = js.native
+  /**
+    * Creates a cube texture
+    * @param rootUrl defines the url where the files to load is located
+    * @param scene defines the current scene
+    * @param files defines the list of files to load (1 per face)
+    * @param noMipmap defines a boolean indicating that no mipmaps shall be generated (false by default)
+    * @param onLoad defines an optional callback raised when the texture is loaded
+    * @param onError defines an optional callback raised if there is an issue to load the texture
+    * @param format defines the format of the data
+    * @param forcedExtension defines the extension to use to pick the right loader
+    * @param createPolynomials if a polynomial sphere should be created for the cube texture
+    * @param lodScale defines the scale applied to environment texture. This manages the range of LOD level used for IBL according to the roughness
+    * @param lodOffset defines the offset applied to environment texture. This manages first LOD level used for IBL according to the roughness
+    * @returns the cube texture as an InternalTexture
+    */
+  def createCubeTexture(
+    rootUrl: String,
+    scene: Nullable[Scene],
+    files: Nullable[js.Array[String]],
+    noMipmap: Boolean,
+    onLoad: Nullable[js.Function1[/* data */ js.UndefOr[_], Unit]],
+    onError: Nullable[
+      js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]
+    ],
+    format: js.UndefOr[Double],
+    forcedExtension: js.Any,
+    createPolynomials: Boolean,
+    lodScale: Double,
+    lodOffset: Double
   ): InternalTexture = js.native
   /**
     * Creates a depth stencil texture.
@@ -846,7 +742,7 @@ class ThinEngine protected () extends js.Object {
     * @returns The texture
     */
   def createDepthStencilTexture(size: Double, options: DepthTextureCreationOptions): InternalTexture = js.native
-  def createDepthStencilTexture(size: AnonHeight, options: DepthTextureCreationOptions): InternalTexture = js.native
+  def createDepthStencilTexture(size: Height, options: DepthTextureCreationOptions): InternalTexture = js.native
   /**
     * Creates a dynamic texture
     * @param width defines the width of the texture
@@ -1221,8 +1117,8 @@ class ThinEngine protected () extends js.Object {
     */
   def createRenderTargetTexture(size: Double, options: Boolean): InternalTexture = js.native
   def createRenderTargetTexture(size: Double, options: RenderTargetCreationOptions): InternalTexture = js.native
-  def createRenderTargetTexture(size: AnonHeight, options: Boolean): InternalTexture = js.native
-  def createRenderTargetTexture(size: AnonHeight, options: RenderTargetCreationOptions): InternalTexture = js.native
+  def createRenderTargetTexture(size: Height, options: Boolean): InternalTexture = js.native
+  def createRenderTargetTexture(size: Height, options: RenderTargetCreationOptions): InternalTexture = js.native
   /**
     * Creates a webGL program
     * @param pipelineContext  defines the pipeline context to attach to
@@ -1418,7 +1314,7 @@ class ThinEngine protected () extends js.Object {
     * Will fallback to the gl object
     * @param dimensions the framebuffer width and height that will be used.
     */
-  def framebufferDimensionsObject(dimensions: Nullable[AnonFramebufferHeight]): js.Any = js.native
+  def framebufferDimensionsObject(dimensions: Nullable[FramebufferHeight]): js.Any = js.native
   /**
     * Gets the current alpha equation.
     * @returns the current alpha equation
@@ -1462,7 +1358,7 @@ class ThinEngine protected () extends js.Object {
     * Gets an object containing information about the current webGL context
     * @returns an object containing the vender, the renderer and the version of the current webGL context
     */
-  def getGlInfo(): AnonRenderer = js.native
+  def getGlInfo(): Renderer = js.native
   /**
     * Gets the current hardware scaling level.
     * By default the hardware scaling level is computed from the window device ratio.
@@ -1474,7 +1370,7 @@ class ThinEngine protected () extends js.Object {
     * Gets host document
     * @returns the host document object
     */
-  def getHostDocument(): Nullable[Document_] = js.native
+  def getHostDocument(): Nullable[Document] = js.native
   /**
     * Gets host window
     * @returns the host window object
@@ -1962,183 +1858,5 @@ class ThinEngine protected () extends js.Object {
     */
   def wipeCaches(): Unit = js.native
   def wipeCaches(bruteForce: Boolean): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.ThinEngine")
-@js.native
-object ThinEngine extends js.Object {
-  /**
-    * Gets or sets the epsilon value used by collision engine
-    */
-  var CollisionsEpsilon: Double = js.native
-  /** Use this array to turn off some WebGL2 features on known buggy browsers version */
-  var ExceptionList: js.Array[AnonCapture | AnonCaptureConstraint] = js.native
-  /** @hidden */
-  var _TextureLoaders: js.Array[IInternalTextureLoader] = js.native
-  var _isSupported: js.Any = js.native
-  /**
-    * Find the next highest power of two.
-    * @param x Number to start search from.
-    * @return Next highest power of two.
-    */
-  def CeilingPOT(x: Double): Double = js.native
-  /**
-    * Find the next lowest power of two.
-    * @param x Number to start search from.
-    * @return Next lowest power of two.
-    */
-  def FloorPOT(x: Double): Double = js.native
-  /**
-    * Get the closest exponent of two
-    * @param value defines the value to approximate
-    * @param max defines the maximum value to return
-    * @param mode defines how to define the closest value
-    * @returns closest exponent of two of the given value
-    */
-  def GetExponentOfTwo(value: Double, max: Double): Double = js.native
-  def GetExponentOfTwo(value: Double, max: Double, mode: Double): Double = js.native
-  /**
-    * Find the nearest power of two.
-    * @param x Number to start search from.
-    * @return Next nearest power of two.
-    */
-  def NearestPOT(x: Double): Double = js.native
-  /**
-    * Returns the current npm package of the sdk
-    */
-  def NpmPackage: String = js.native
-  /**
-    * Queue a new function into the requested animation frame pool (ie. this function will be executed byt the browser for the next frame)
-    * @param func - the function to be called
-    * @param requester - the object that will request the next frame. Falls back to window.
-    * @returns frame number
-    */
-  def QueueNewFrame(func: js.Function0[Unit]): Double = js.native
-  def QueueNewFrame(func: js.Function0[Unit], requester: js.Any): Double = js.native
-  /**
-    * Gets or sets the relative url used to load shaders if using the engine in non-minified mode
-    */
-  def ShadersRepository: String = js.native
-  def ShadersRepository(value: String): js.Any = js.native
-  /**
-    * Returns the current version of the framework
-    */
-  def Version: String = js.native
-  /* protected */ def _ConcatenateShader(source: String, defines: Nullable[String]): String = js.native
-  /* protected */ def _ConcatenateShader(source: String, defines: Nullable[String], shaderVersion: String): String = js.native
-  /**
-    * Loads a file from a url
-    * @param url url to load
-    * @param onSuccess callback called when the file successfully loads
-    * @param onProgress callback called while file is loading (if the server supports this mode)
-    * @param offlineProvider defines the offline provider for caching
-    * @param useArrayBuffer defines a boolean indicating that date must be returned as ArrayBuffer
-    * @param onError callback called when the file fails to load
-    * @returns a file request object
-    * @hidden
-    */
-  def _FileToolsLoadFile(
-    url: String,
-    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit]
-  ): IFileRequest = js.native
-  def _FileToolsLoadFile(
-    url: String,
-    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-    onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit]
-  ): IFileRequest = js.native
-  def _FileToolsLoadFile(
-    url: String,
-    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-    onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-    offlineProvider: IOfflineProvider
-  ): IFileRequest = js.native
-  def _FileToolsLoadFile(
-    url: String,
-    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-    onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-    offlineProvider: IOfflineProvider,
-    useArrayBuffer: Boolean
-  ): IFileRequest = js.native
-  def _FileToolsLoadFile(
-    url: String,
-    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-    onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-    offlineProvider: IOfflineProvider,
-    useArrayBuffer: Boolean,
-    onError: js.Function2[
-      /* request */ js.UndefOr[WebRequest], 
-      /* exception */ js.UndefOr[LoadFileError], 
-      Unit
-    ]
-  ): IFileRequest = js.native
-  /**
-    * Loads an image as an HTMLImageElement.
-    * @param input url string, ArrayBuffer, or Blob to load
-    * @param onLoad callback called when the image successfully loads
-    * @param onError callback called when the image fails to load
-    * @param offlineProvider offline provider for caching
-    * @param mimeType optional mime type
-    * @returns the HTMLImageElement of the loaded image
-    * @hidden
-    */
-  def _FileToolsLoadImage(
-    input: String,
-    onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
-    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
-    offlineProvider: Nullable[IOfflineProvider]
-  ): Nullable[HTMLImageElement] = js.native
-  def _FileToolsLoadImage(
-    input: String,
-    onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
-    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
-    offlineProvider: Nullable[IOfflineProvider],
-    mimeType: String
-  ): Nullable[HTMLImageElement] = js.native
-  def _FileToolsLoadImage(
-    input: ArrayBufferView,
-    onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
-    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
-    offlineProvider: Nullable[IOfflineProvider]
-  ): Nullable[HTMLImageElement] = js.native
-  def _FileToolsLoadImage(
-    input: ArrayBufferView,
-    onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
-    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
-    offlineProvider: Nullable[IOfflineProvider],
-    mimeType: String
-  ): Nullable[HTMLImageElement] = js.native
-  def _FileToolsLoadImage(
-    input: ArrayBuffer,
-    onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
-    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
-    offlineProvider: Nullable[IOfflineProvider]
-  ): Nullable[HTMLImageElement] = js.native
-  def _FileToolsLoadImage(
-    input: ArrayBuffer,
-    onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
-    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
-    offlineProvider: Nullable[IOfflineProvider],
-    mimeType: String
-  ): Nullable[HTMLImageElement] = js.native
-  def _FileToolsLoadImage(
-    input: Blob,
-    onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
-    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
-    offlineProvider: Nullable[IOfflineProvider]
-  ): Nullable[HTMLImageElement] = js.native
-  def _FileToolsLoadImage(
-    input: Blob,
-    onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
-    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
-    offlineProvider: Nullable[IOfflineProvider],
-    mimeType: String
-  ): Nullable[HTMLImageElement] = js.native
-  /**
-    * Gets a boolean indicating if the engine can be instanciated (ie. if a webGL context can be found)
-    * @returns true if the engine can be created
-    * @ignorenaming
-    */
-  def isSupported(): Boolean = js.native
 }
 

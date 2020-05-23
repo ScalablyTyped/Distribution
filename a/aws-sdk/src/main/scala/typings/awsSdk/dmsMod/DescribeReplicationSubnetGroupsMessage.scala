@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeReplicationSubnetGroupsMessage extends js.Object {
   /**
-    * Filters applied to the describe action.
+    * Filters applied to the describe action. Valid filter names: replication-subnet-group-id
     */
   var Filters: js.UndefOr[FilterList] = js.native
   /**
@@ -22,11 +22,15 @@ trait DescribeReplicationSubnetGroupsMessage extends js.Object {
 
 object DescribeReplicationSubnetGroupsMessage {
   @scala.inline
-  def apply(Filters: FilterList = null, Marker: String = null, MaxRecords: Int | Double = null): DescribeReplicationSubnetGroupsMessage = {
+  def apply(
+    Filters: FilterList = null,
+    Marker: String = null,
+    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
+  ): DescribeReplicationSubnetGroupsMessage = {
     val __obj = js.Dynamic.literal()
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeReplicationSubnetGroupsMessage]
   }
 }

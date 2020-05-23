@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation._
   */
 trait ListViewMarkerProps extends js.Object {
   /**
-  	 * The itemIndex of the reference item.
-  	 */
+    * The itemIndex of the reference item.
+    */
   var itemIndex: js.UndefOr[Double] = js.undefined
   /**
-  	 * The sectionIndex of the reference item.
-  	 */
+    * The sectionIndex of the reference item.
+    */
   var sectionIndex: js.UndefOr[Double] = js.undefined
 }
 
 object ListViewMarkerProps {
   @scala.inline
-  def apply(itemIndex: Int | Double = null, sectionIndex: Int | Double = null): ListViewMarkerProps = {
+  def apply(itemIndex: js.UndefOr[Double] = js.undefined, sectionIndex: js.UndefOr[Double] = js.undefined): ListViewMarkerProps = {
     val __obj = js.Dynamic.literal()
-    if (itemIndex != null) __obj.updateDynamic("itemIndex")(itemIndex.asInstanceOf[js.Any])
-    if (sectionIndex != null) __obj.updateDynamic("sectionIndex")(sectionIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemIndex)) __obj.updateDynamic("itemIndex")(itemIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sectionIndex)) __obj.updateDynamic("sectionIndex")(sectionIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListViewMarkerProps]
   }
 }

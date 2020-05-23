@@ -25,63 +25,62 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * A tab instance for a [TabGroup](Titanium.UI.TabGroup).
-		 */
-@JSGlobal("Titanium.UI.Tab")
+  * A tab instance for a [TabGroup](Titanium.UI.TabGroup).
+  */
 @js.native
-class Tab () extends View {
+trait Tab extends View {
   /**
-  			 * `true` if this tab is active, `false` if it is not.
-  			 */
+    * `true` if this tab is active, `false` if it is not.
+    */
   var active: Boolean = js.native
   /**
-  			 * Icon URL for this tab when active.
-  			 */
+    * Icon URL for this tab when active.
+    */
   var activeIcon: String = js.native
   /**
-  			 * Defines if the active icon property of the tab must be used as a mask.
-  			 */
+    * Defines if the active icon property of the tab must be used as a mask.
+    */
   var activeIconIsMask: Boolean = js.native
   /**
-  			 * Defines the color of the title of tab when it's active.
-  			 */
+    * Defines the color of the title of tab when it's active.
+    */
   var activeTitleColor: String = js.native
   /**
-  			 * Badge value for this tab. `null` indicates no badge.
-  			 */
+    * Badge value for this tab. `null` indicates no badge.
+    */
   var badge: String = js.native
   /**
-  			 * If this item displays a badge, this color will be used for the badge's background.
-  			 * If set to null, the default background color will be used instead.
-  			 */
+    * If this item displays a badge, this color will be used for the badge's background.
+    * If set to null, the default background color will be used instead.
+    */
   var badgeColor: String = js.native
   /**
-  			 * Icon URL for this tab.
-  			 */
+    * Icon URL for this tab.
+    */
   var icon: String = js.native
   /**
-  			 * The icon inset or outset for each edge.
-  			 */
+    * The icon inset or outset for each edge.
+    */
   var iconInsets: TabIconInsets = js.native
   /**
-  			 * Defines if the icon property of the tab must be used as a mask.
-  			 */
+    * Defines if the icon property of the tab must be used as a mask.
+    */
   var iconIsMask: Boolean = js.native
   /**
-  			 * Title for this tab.
-  			 */
+    * Title for this tab.
+    */
   var title: String = js.native
   /**
-  			 * Defines the color of the title of tab when it's inactive.
-  			 */
+    * Defines the color of the title of tab when it's inactive.
+    */
   var titleColor: String = js.native
   /**
-  			 * Key identifying a string from the locale file to use for the tab title. Only one of `title` or `titleid` should be specified.
-  			 */
+    * Key identifying a string from the locale file to use for the tab title. Only one of `title` or `titleid` should be specified.
+    */
   var titleid: String = js.native
   /**
-  			 * Root-level tab window.  All tabs must have at least one root-level tab window.
-  			 */
+    * Root-level tab window.  All tabs must have at least one root-level tab window.
+    */
   var window: Window = js.native
   @JSName("addEventListener")
   def addEventListener_selected(
@@ -94,8 +93,8 @@ class Tab () extends View {
     callback: js.ThisFunction1[/* this */ this.type, /* event */ TabUnselectedEvent, Unit]
   ): Unit = js.native
   /**
-  			 * Closes the top-level window for this tab.
-  			 */
+    * Closes the top-level window for this tab.
+    */
   def close(window: Window): Unit = js.native
   def close(window: Window, options: js.Any): Unit = js.native
   @JSName("fireEvent")
@@ -137,78 +136,78 @@ class Tab () extends View {
   @JSName("fireEvent")
   def fireEvent_unselected(name: unselected, event: TabUnselectedEvent): Unit = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Tab.active> property.
-  			 * @deprecated Access <Titanium.UI.Tab.active> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Tab.active> property.
+    * @deprecated Access <Titanium.UI.Tab.active> instead.
+    */
   def getActive(): Boolean = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Tab.activeIcon> property.
-  			 * @deprecated Access <Titanium.UI.Tab.activeIcon> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Tab.activeIcon> property.
+    * @deprecated Access <Titanium.UI.Tab.activeIcon> instead.
+    */
   def getActiveIcon(): String = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Tab.activeIconIsMask> property.
-  			 * @deprecated Access <Titanium.UI.Tab.activeIconIsMask> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Tab.activeIconIsMask> property.
+    * @deprecated Access <Titanium.UI.Tab.activeIconIsMask> instead.
+    */
   def getActiveIconIsMask(): Boolean = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Tab.activeTitleColor> property.
-  			 * @deprecated Access <Titanium.UI.Tab.activeTitleColor> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Tab.activeTitleColor> property.
+    * @deprecated Access <Titanium.UI.Tab.activeTitleColor> instead.
+    */
   def getActiveTitleColor(): String = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Tab.badge> property.
-  			 * @deprecated Access <Titanium.UI.Tab.badge> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Tab.badge> property.
+    * @deprecated Access <Titanium.UI.Tab.badge> instead.
+    */
   def getBadge(): String = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Tab.badgeColor> property.
-  			 * @deprecated Access <Titanium.UI.Tab.badgeColor> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Tab.badgeColor> property.
+    * @deprecated Access <Titanium.UI.Tab.badgeColor> instead.
+    */
   def getBadgeColor(): String = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Tab.icon> property.
-  			 * @deprecated Access <Titanium.UI.Tab.icon> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Tab.icon> property.
+    * @deprecated Access <Titanium.UI.Tab.icon> instead.
+    */
   def getIcon(): String = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Tab.iconInsets> property.
-  			 * @deprecated Access <Titanium.UI.Tab.iconInsets> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Tab.iconInsets> property.
+    * @deprecated Access <Titanium.UI.Tab.iconInsets> instead.
+    */
   def getIconInsets(): TabIconInsets = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Tab.iconIsMask> property.
-  			 * @deprecated Access <Titanium.UI.Tab.iconIsMask> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Tab.iconIsMask> property.
+    * @deprecated Access <Titanium.UI.Tab.iconIsMask> instead.
+    */
   def getIconIsMask(): Boolean = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Tab.title> property.
-  			 * @deprecated Access <Titanium.UI.Tab.title> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Tab.title> property.
+    * @deprecated Access <Titanium.UI.Tab.title> instead.
+    */
   def getTitle(): String = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Tab.titleColor> property.
-  			 * @deprecated Access <Titanium.UI.Tab.titleColor> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Tab.titleColor> property.
+    * @deprecated Access <Titanium.UI.Tab.titleColor> instead.
+    */
   def getTitleColor(): String = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Tab.titleid> property.
-  			 * @deprecated Access <Titanium.UI.Tab.titleid> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Tab.titleid> property.
+    * @deprecated Access <Titanium.UI.Tab.titleid> instead.
+    */
   def getTitleid(): String = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Tab.window> property.
-  			 * @deprecated Access <Titanium.UI.Tab.window> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Tab.window> property.
+    * @deprecated Access <Titanium.UI.Tab.window> instead.
+    */
   def getWindow(): Window = js.native
   /**
-  			 * Opens a new window.
-  			 */
+    * Opens a new window.
+    */
   def open(window: Window): Unit = js.native
   def open(window: Window, options: openWindowParams): Unit = js.native
   /**
-  			 * Closes all windows that are currently opened inside the tab.
-  			 */
+    * Closes all windows that are currently opened inside the tab.
+    */
   def popToRootWindow(): Unit = js.native
   def popToRootWindow(options: AnimatedOptions): Unit = js.native
   @JSName("removeEventListener")
@@ -222,68 +221,68 @@ class Tab () extends View {
     callback: js.ThisFunction1[/* this */ this.type, /* event */ TabUnselectedEvent, Unit]
   ): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Tab.active> property.
-  			 * @deprecated Set the value using <Titanium.UI.Tab.active> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Tab.active> property.
+    * @deprecated Set the value using <Titanium.UI.Tab.active> instead.
+    */
   def setActive(active: Boolean): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Tab.activeIcon> property.
-  			 * @deprecated Set the value using <Titanium.UI.Tab.activeIcon> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Tab.activeIcon> property.
+    * @deprecated Set the value using <Titanium.UI.Tab.activeIcon> instead.
+    */
   def setActiveIcon(activeIcon: String): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Tab.activeIconIsMask> property.
-  			 * @deprecated Set the value using <Titanium.UI.Tab.activeIconIsMask> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Tab.activeIconIsMask> property.
+    * @deprecated Set the value using <Titanium.UI.Tab.activeIconIsMask> instead.
+    */
   def setActiveIconIsMask(activeIconIsMask: Boolean): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Tab.activeTitleColor> property.
-  			 * @deprecated Set the value using <Titanium.UI.Tab.activeTitleColor> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Tab.activeTitleColor> property.
+    * @deprecated Set the value using <Titanium.UI.Tab.activeTitleColor> instead.
+    */
   def setActiveTitleColor(activeTitleColor: String): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Tab.badge> property.
-  			 * @deprecated Set the value using <Titanium.UI.Tab.badge> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Tab.badge> property.
+    * @deprecated Set the value using <Titanium.UI.Tab.badge> instead.
+    */
   def setBadge(badge: String): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Tab.badgeColor> property.
-  			 * @deprecated Set the value using <Titanium.UI.Tab.badgeColor> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Tab.badgeColor> property.
+    * @deprecated Set the value using <Titanium.UI.Tab.badgeColor> instead.
+    */
   def setBadgeColor(badgeColor: String): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Tab.icon> property.
-  			 * @deprecated Set the value using <Titanium.UI.Tab.icon> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Tab.icon> property.
+    * @deprecated Set the value using <Titanium.UI.Tab.icon> instead.
+    */
   def setIcon(icon: String): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Tab.iconInsets> property.
-  			 * @deprecated Set the value using <Titanium.UI.Tab.iconInsets> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Tab.iconInsets> property.
+    * @deprecated Set the value using <Titanium.UI.Tab.iconInsets> instead.
+    */
   def setIconInsets(iconInsets: TabIconInsets): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Tab.iconIsMask> property.
-  			 * @deprecated Set the value using <Titanium.UI.Tab.iconIsMask> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Tab.iconIsMask> property.
+    * @deprecated Set the value using <Titanium.UI.Tab.iconIsMask> instead.
+    */
   def setIconIsMask(iconIsMask: Boolean): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Tab.title> property.
-  			 * @deprecated Set the value using <Titanium.UI.Tab.title> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Tab.title> property.
+    * @deprecated Set the value using <Titanium.UI.Tab.title> instead.
+    */
   def setTitle(title: String): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Tab.titleColor> property.
-  			 * @deprecated Set the value using <Titanium.UI.Tab.titleColor> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Tab.titleColor> property.
+    * @deprecated Set the value using <Titanium.UI.Tab.titleColor> instead.
+    */
   def setTitleColor(titleColor: String): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Tab.titleid> property.
-  			 * @deprecated Set the value using <Titanium.UI.Tab.titleid> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Tab.titleid> property.
+    * @deprecated Set the value using <Titanium.UI.Tab.titleid> instead.
+    */
   def setTitleid(titleid: String): Unit = js.native
   /**
-  			 * Sets the root window that appears in the tab.
-  			 */
+    * Sets the root window that appears in the tab.
+    */
   def setWindow(window: Window): Unit = js.native
 }
 

@@ -4,6 +4,7 @@ import typings.phaser.ArcadePhysicsCallback
 import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.Geom.Rectangle
 import typings.phaser.Phaser.Scene
+import typings.phaser.Phaser.Textures.Frame
 import typings.phaser.Phaser.Tilemaps.DynamicTilemapLayer
 import typings.phaser.Phaser.Tilemaps.StaticTilemapLayer
 import typings.phaser.Phaser.Tilemaps.Tile
@@ -102,7 +103,7 @@ object Arcade extends js.Object {
   /**
     * An Arcade Physics Group object.
     * 
-    * All Game Objects created by this Group will automatically be given dynamic Arcade Physics bodies.
+    * All Game Objects created by or added to this Group will automatically be given dynamic Arcade Physics bodies, if they have no body.
     * 
     * Its static counterpart is {@link Phaser.Physics.Arcade.StaticGroup}.
     */
@@ -178,6 +179,250 @@ object Arcade extends js.Object {
     def this(scene: Scene, x: Double, y: Double, texture: String) = this()
     def this(scene: Scene, x: Double, y: Double, texture: String, frame: String) = this()
     def this(scene: Scene, x: Double, y: Double, texture: String, frame: integer) = this()
+    /**
+      * The color of the body outline when it renders to the debug display.
+      */
+    /* CompleteClass */
+    override var debugBodyColor: Double = js.native
+    /**
+      * Set to `true` to have this body render its outline to the debug display.
+      */
+    /* CompleteClass */
+    override var debugShowBody: Boolean = js.native
+    /**
+      * Set to `true` to have this body render a velocity marker to the debug display.
+      */
+    /* CompleteClass */
+    override var debugShowVelocity: Boolean = js.native
+    /**
+      * The depth of this Game Object within the Scene.
+      * 
+      * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
+      * of Game Objects, without actually moving their position in the display list.
+      * 
+      * The depth starts from zero (the default value) and increases from that point. A Game Object with a higher depth
+      * value will always render in front of one with a lower value.
+      * 
+      * Setting the depth will queue a depth sort event within the Scene.
+      */
+    /* CompleteClass */
+    override var depth: Double = js.native
+    /**
+      * The displayed height of this Game Object.
+      * 
+      * This value takes into account the scale factor.
+      * 
+      * Setting this value will adjust the Game Object's scale property.
+      */
+    /* CompleteClass */
+    override var displayHeight: Double = js.native
+    /**
+      * The displayed width of this Game Object.
+      * 
+      * This value takes into account the scale factor.
+      * 
+      * Setting this value will adjust the Game Object's scale property.
+      */
+    /* CompleteClass */
+    override var displayWidth: Double = js.native
+    /**
+      * The horizontally flipped state of the Game Object.
+      * 
+      * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
+      * Flipping always takes place from the middle of the texture and does not impact the scale value.
+      * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
+      */
+    /* CompleteClass */
+    override var flipX: Boolean = js.native
+    /**
+      * The vertically flipped state of the Game Object.
+      * 
+      * A Game Object that is flipped vertically will render inversed on the vertical axis (i.e. upside down)
+      * Flipping always takes place from the middle of the texture and does not impact the scale value.
+      * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
+      */
+    /* CompleteClass */
+    override var flipY: Boolean = js.native
+    /**
+      * The native (un-scaled) height of this Game Object.
+      * 
+      * Changing this value will not change the size that the Game Object is rendered in-game.
+      * For that you need to either set the scale of the Game Object (`setScale`) or use
+      * the `displayHeight` property.
+      */
+    /* CompleteClass */
+    override var height: Double = js.native
+    /**
+      * The visible state of the Game Object.
+      * 
+      * An invisible Game Object will skip rendering, but will still process update logic.
+      */
+    /* CompleteClass */
+    override var visible: Boolean = js.native
+    /**
+      * The native (un-scaled) width of this Game Object.
+      * 
+      * Changing this value will not change the size that the Game Object is rendered in-game.
+      * For that you need to either set the scale of the Game Object (`setScale`) or use
+      * the `displayWidth` property.
+      */
+    /* CompleteClass */
+    override var width: Double = js.native
+    /**
+      * Resets the horizontal and vertical flipped state of this Game Object back to their default un-flipped state.
+      */
+    /* CompleteClass */
+    override def resetFlip(): this.type = js.native
+    /**
+      * Sets the angular acceleration of the body.
+      * 
+      * In Arcade Physics, bodies cannot rotate. They are always axis-aligned.
+      * However, they can have angular motion, which is passed on to the Game Object bound to the body,
+      * causing them to visually rotate, even though the body remains axis-aligned.
+      * @param value The amount of angular acceleration.
+      */
+    /* CompleteClass */
+    override def setAngularAcceleration(value: Double): this.type = js.native
+    /**
+      * Sets the angular drag of the body. Drag is applied to the current velocity, providing a form of deceleration.
+      * @param value The amount of drag.
+      */
+    /* CompleteClass */
+    override def setAngularDrag(value: Double): this.type = js.native
+    /**
+      * Sets the angular velocity of the body.
+      * 
+      * In Arcade Physics, bodies cannot rotate. They are always axis-aligned.
+      * However, they can have angular motion, which is passed on to the Game Object bound to the body,
+      * causing them to visually rotate, even though the body remains axis-aligned.
+      * @param value The amount of angular velocity.
+      */
+    /* CompleteClass */
+    override def setAngularVelocity(value: Double): this.type = js.native
+    /**
+      * Sets the debug values of this body.
+      * 
+      * Bodies will only draw their debug if debug has been enabled for Arcade Physics as a whole.
+      * Note that there is a performance cost in drawing debug displays. It should never be used in production.
+      * @param showBody Set to `true` to have this body render its outline to the debug display.
+      * @param showVelocity Set to `true` to have this body render a velocity marker to the debug display.
+      * @param bodyColor The color of the body outline when rendered to the debug display.
+      */
+    /* CompleteClass */
+    override def setDebug(showBody: Boolean, showVelocity: Boolean, bodyColor: Double): this.type = js.native
+    /**
+      * Sets the color of the body outline when it renders to the debug display.
+      * @param value The color of the body outline when rendered to the debug display.
+      */
+    /* CompleteClass */
+    override def setDebugBodyColor(value: Double): this.type = js.native
+    /**
+      * The depth of this Game Object within the Scene.
+      * 
+      * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
+      * of Game Objects, without actually moving their position in the display list.
+      * 
+      * The depth starts from zero (the default value) and increases from that point. A Game Object with a higher depth
+      * value will always render in front of one with a lower value.
+      * 
+      * Setting the depth will queue a depth sort event within the Scene.
+      * @param value The depth of this Game Object.
+      */
+    /* CompleteClass */
+    override def setDepth(value: integer): this.type = js.native
+    /**
+      * Sets the display size of this Game Object.
+      * 
+      * Calling this will adjust the scale.
+      * @param width The width of this Game Object.
+      * @param height The height of this Game Object.
+      */
+    /* CompleteClass */
+    override def setDisplaySize(width: Double, height: Double): this.type = js.native
+    /**
+      * Sets the horizontal and vertical flipped state of this Game Object.
+      * 
+      * A Game Object that is flipped will render inversed on the flipped axis.
+      * Flipping always takes place from the middle of the texture and does not impact the scale value.
+      * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
+      * @param x The horizontal flipped state. `false` for no flip, or `true` to be flipped.
+      * @param y The horizontal flipped state. `false` for no flip, or `true` to be flipped.
+      */
+    /* CompleteClass */
+    override def setFlip(x: Boolean, y: Boolean): this.type = js.native
+    /**
+      * Sets the horizontal flipped state of this Game Object.
+      * 
+      * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
+      * Flipping always takes place from the middle of the texture and does not impact the scale value.
+      * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
+      * @param value The flipped state. `false` for no flip, or `true` to be flipped.
+      */
+    /* CompleteClass */
+    override def setFlipX(value: Boolean): this.type = js.native
+    /**
+      * Sets the vertical flipped state of this Game Object.
+      * @param value The flipped state. `false` for no flip, or `true` to be flipped.
+      */
+    /* CompleteClass */
+    override def setFlipY(value: Boolean): this.type = js.native
+    /**
+      * Sets the mass of the physics body
+      * @param value New value for the mass of the body.
+      */
+    /* CompleteClass */
+    override def setMass(value: Double): this.type = js.native
+    /**
+      * Sets the internal size of this Game Object, as used for frame or physics body creation.
+      * 
+      * This will not change the size that the Game Object is rendered in-game.
+      * For that you need to either set the scale of the Game Object (`setScale`) or call the
+      * `setDisplaySize` method, which is the same thing as changing the scale but allows you
+      * to do so by giving pixel values.
+      * 
+      * If you have enabled this Game Object for input, changing the size will _not_ change the
+      * size of the hit area. To do this you should adjust the `input.hitArea` object directly.
+      * @param width The width of this Game Object.
+      * @param height The height of this Game Object.
+      */
+    /* CompleteClass */
+    override def setSize(width: Double, height: Double): this.type = js.native
+    /**
+      * Sets the size of this Game Object to be that of the given Frame.
+      * 
+      * This will not change the size that the Game Object is rendered in-game.
+      * For that you need to either set the scale of the Game Object (`setScale`) or call the
+      * `setDisplaySize` method, which is the same thing as changing the scale but allows you
+      * to do so by giving pixel values.
+      * 
+      * If you have enabled this Game Object for input, changing the size will _not_ change the
+      * size of the hit area. To do this you should adjust the `input.hitArea` object directly.
+      * @param frame The frame to base the size of this Game Object on.
+      */
+    /* CompleteClass */
+    override def setSizeToFrame(frame: Frame): this.type = js.native
+    /**
+      * Sets the visibility of this Game Object.
+      * 
+      * An invisible Game Object will skip rendering, but will still process update logic.
+      * @param value The visible state of the Game Object.
+      */
+    /* CompleteClass */
+    override def setVisible(value: Boolean): this.type = js.native
+    /**
+      * Toggles the horizontal flipped state of this Game Object.
+      * 
+      * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
+      * Flipping always takes place from the middle of the texture and does not impact the scale value.
+      * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
+      */
+    /* CompleteClass */
+    override def toggleFlipX(): this.type = js.native
+    /**
+      * Toggles the vertical flipped state of this Game Object.
+      */
+    /* CompleteClass */
+    override def toggleFlipY(): this.type = js.native
   }
   
   /**
@@ -201,13 +446,257 @@ object Arcade extends js.Object {
     def this(scene: Scene, x: Double, y: Double, texture: String) = this()
     def this(scene: Scene, x: Double, y: Double, texture: String, frame: String) = this()
     def this(scene: Scene, x: Double, y: Double, texture: String, frame: integer) = this()
+    /**
+      * The color of the body outline when it renders to the debug display.
+      */
+    /* CompleteClass */
+    override var debugBodyColor: Double = js.native
+    /**
+      * Set to `true` to have this body render its outline to the debug display.
+      */
+    /* CompleteClass */
+    override var debugShowBody: Boolean = js.native
+    /**
+      * Set to `true` to have this body render a velocity marker to the debug display.
+      */
+    /* CompleteClass */
+    override var debugShowVelocity: Boolean = js.native
+    /**
+      * The depth of this Game Object within the Scene.
+      * 
+      * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
+      * of Game Objects, without actually moving their position in the display list.
+      * 
+      * The depth starts from zero (the default value) and increases from that point. A Game Object with a higher depth
+      * value will always render in front of one with a lower value.
+      * 
+      * Setting the depth will queue a depth sort event within the Scene.
+      */
+    /* CompleteClass */
+    override var depth: Double = js.native
+    /**
+      * The displayed height of this Game Object.
+      * 
+      * This value takes into account the scale factor.
+      * 
+      * Setting this value will adjust the Game Object's scale property.
+      */
+    /* CompleteClass */
+    override var displayHeight: Double = js.native
+    /**
+      * The displayed width of this Game Object.
+      * 
+      * This value takes into account the scale factor.
+      * 
+      * Setting this value will adjust the Game Object's scale property.
+      */
+    /* CompleteClass */
+    override var displayWidth: Double = js.native
+    /**
+      * The horizontally flipped state of the Game Object.
+      * 
+      * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
+      * Flipping always takes place from the middle of the texture and does not impact the scale value.
+      * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
+      */
+    /* CompleteClass */
+    override var flipX: Boolean = js.native
+    /**
+      * The vertically flipped state of the Game Object.
+      * 
+      * A Game Object that is flipped vertically will render inversed on the vertical axis (i.e. upside down)
+      * Flipping always takes place from the middle of the texture and does not impact the scale value.
+      * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
+      */
+    /* CompleteClass */
+    override var flipY: Boolean = js.native
+    /**
+      * The native (un-scaled) height of this Game Object.
+      * 
+      * Changing this value will not change the size that the Game Object is rendered in-game.
+      * For that you need to either set the scale of the Game Object (`setScale`) or use
+      * the `displayHeight` property.
+      */
+    /* CompleteClass */
+    override var height: Double = js.native
+    /**
+      * The visible state of the Game Object.
+      * 
+      * An invisible Game Object will skip rendering, but will still process update logic.
+      */
+    /* CompleteClass */
+    override var visible: Boolean = js.native
+    /**
+      * The native (un-scaled) width of this Game Object.
+      * 
+      * Changing this value will not change the size that the Game Object is rendered in-game.
+      * For that you need to either set the scale of the Game Object (`setScale`) or use
+      * the `displayWidth` property.
+      */
+    /* CompleteClass */
+    override var width: Double = js.native
+    /**
+      * Resets the horizontal and vertical flipped state of this Game Object back to their default un-flipped state.
+      */
+    /* CompleteClass */
+    override def resetFlip(): this.type = js.native
+    /**
+      * Sets the angular acceleration of the body.
+      * 
+      * In Arcade Physics, bodies cannot rotate. They are always axis-aligned.
+      * However, they can have angular motion, which is passed on to the Game Object bound to the body,
+      * causing them to visually rotate, even though the body remains axis-aligned.
+      * @param value The amount of angular acceleration.
+      */
+    /* CompleteClass */
+    override def setAngularAcceleration(value: Double): this.type = js.native
+    /**
+      * Sets the angular drag of the body. Drag is applied to the current velocity, providing a form of deceleration.
+      * @param value The amount of drag.
+      */
+    /* CompleteClass */
+    override def setAngularDrag(value: Double): this.type = js.native
+    /**
+      * Sets the angular velocity of the body.
+      * 
+      * In Arcade Physics, bodies cannot rotate. They are always axis-aligned.
+      * However, they can have angular motion, which is passed on to the Game Object bound to the body,
+      * causing them to visually rotate, even though the body remains axis-aligned.
+      * @param value The amount of angular velocity.
+      */
+    /* CompleteClass */
+    override def setAngularVelocity(value: Double): this.type = js.native
+    /**
+      * Sets the debug values of this body.
+      * 
+      * Bodies will only draw their debug if debug has been enabled for Arcade Physics as a whole.
+      * Note that there is a performance cost in drawing debug displays. It should never be used in production.
+      * @param showBody Set to `true` to have this body render its outline to the debug display.
+      * @param showVelocity Set to `true` to have this body render a velocity marker to the debug display.
+      * @param bodyColor The color of the body outline when rendered to the debug display.
+      */
+    /* CompleteClass */
+    override def setDebug(showBody: Boolean, showVelocity: Boolean, bodyColor: Double): this.type = js.native
+    /**
+      * Sets the color of the body outline when it renders to the debug display.
+      * @param value The color of the body outline when rendered to the debug display.
+      */
+    /* CompleteClass */
+    override def setDebugBodyColor(value: Double): this.type = js.native
+    /**
+      * The depth of this Game Object within the Scene.
+      * 
+      * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
+      * of Game Objects, without actually moving their position in the display list.
+      * 
+      * The depth starts from zero (the default value) and increases from that point. A Game Object with a higher depth
+      * value will always render in front of one with a lower value.
+      * 
+      * Setting the depth will queue a depth sort event within the Scene.
+      * @param value The depth of this Game Object.
+      */
+    /* CompleteClass */
+    override def setDepth(value: integer): this.type = js.native
+    /**
+      * Sets the display size of this Game Object.
+      * 
+      * Calling this will adjust the scale.
+      * @param width The width of this Game Object.
+      * @param height The height of this Game Object.
+      */
+    /* CompleteClass */
+    override def setDisplaySize(width: Double, height: Double): this.type = js.native
+    /**
+      * Sets the horizontal and vertical flipped state of this Game Object.
+      * 
+      * A Game Object that is flipped will render inversed on the flipped axis.
+      * Flipping always takes place from the middle of the texture and does not impact the scale value.
+      * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
+      * @param x The horizontal flipped state. `false` for no flip, or `true` to be flipped.
+      * @param y The horizontal flipped state. `false` for no flip, or `true` to be flipped.
+      */
+    /* CompleteClass */
+    override def setFlip(x: Boolean, y: Boolean): this.type = js.native
+    /**
+      * Sets the horizontal flipped state of this Game Object.
+      * 
+      * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
+      * Flipping always takes place from the middle of the texture and does not impact the scale value.
+      * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
+      * @param value The flipped state. `false` for no flip, or `true` to be flipped.
+      */
+    /* CompleteClass */
+    override def setFlipX(value: Boolean): this.type = js.native
+    /**
+      * Sets the vertical flipped state of this Game Object.
+      * @param value The flipped state. `false` for no flip, or `true` to be flipped.
+      */
+    /* CompleteClass */
+    override def setFlipY(value: Boolean): this.type = js.native
+    /**
+      * Sets the mass of the physics body
+      * @param value New value for the mass of the body.
+      */
+    /* CompleteClass */
+    override def setMass(value: Double): this.type = js.native
+    /**
+      * Sets the internal size of this Game Object, as used for frame or physics body creation.
+      * 
+      * This will not change the size that the Game Object is rendered in-game.
+      * For that you need to either set the scale of the Game Object (`setScale`) or call the
+      * `setDisplaySize` method, which is the same thing as changing the scale but allows you
+      * to do so by giving pixel values.
+      * 
+      * If you have enabled this Game Object for input, changing the size will _not_ change the
+      * size of the hit area. To do this you should adjust the `input.hitArea` object directly.
+      * @param width The width of this Game Object.
+      * @param height The height of this Game Object.
+      */
+    /* CompleteClass */
+    override def setSize(width: Double, height: Double): this.type = js.native
+    /**
+      * Sets the size of this Game Object to be that of the given Frame.
+      * 
+      * This will not change the size that the Game Object is rendered in-game.
+      * For that you need to either set the scale of the Game Object (`setScale`) or call the
+      * `setDisplaySize` method, which is the same thing as changing the scale but allows you
+      * to do so by giving pixel values.
+      * 
+      * If you have enabled this Game Object for input, changing the size will _not_ change the
+      * size of the hit area. To do this you should adjust the `input.hitArea` object directly.
+      * @param frame The frame to base the size of this Game Object on.
+      */
+    /* CompleteClass */
+    override def setSizeToFrame(frame: Frame): this.type = js.native
+    /**
+      * Sets the visibility of this Game Object.
+      * 
+      * An invisible Game Object will skip rendering, but will still process update logic.
+      * @param value The visible state of the Game Object.
+      */
+    /* CompleteClass */
+    override def setVisible(value: Boolean): this.type = js.native
+    /**
+      * Toggles the horizontal flipped state of this Game Object.
+      * 
+      * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
+      * Flipping always takes place from the middle of the texture and does not impact the scale value.
+      * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
+      */
+    /* CompleteClass */
+    override def toggleFlipX(): this.type = js.native
+    /**
+      * Toggles the vertical flipped state of this Game Object.
+      */
+    /* CompleteClass */
+    override def toggleFlipY(): this.type = js.native
   }
   
   /**
     * A Static Arcade Physics Body.
     * 
     * A Static Body never moves, and isn't automatically synchronized with its parent Game Object.
-    * That means if you make any change to the parent's origin, position, or scale after creating or adding the body, you'll need to update the Body manually.
+    * That means if you make any change to the parent's origin, position, or scale after creating or adding the body, you'll need to update the Static Body manually.
     * 
     * A Static Body can collide with other Bodies, but is never moved by collisions.
     * 
@@ -227,7 +716,7 @@ object Arcade extends js.Object {
   /**
     * An Arcade Physics Static Group object.
     * 
-    * All Game Objects created by this Group will automatically be given static Arcade Physics bodies.
+    * All Game Objects created by or added to this Group will automatically be given static Arcade Physics bodies, if they have no body.
     * 
     * Its dynamic counterpart is {@link Phaser.Physics.Arcade.Group}.
     */

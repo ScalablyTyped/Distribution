@@ -14,7 +14,7 @@ trait Parameters
 object Parameters {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     fileName: String = null,
     options: OptionsParameter = null
   ): Parameters = {

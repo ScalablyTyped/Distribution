@@ -13,10 +13,10 @@ trait SidePadding extends js.Object {
 
 object SidePadding {
   @scala.inline
-  def apply(left: Int | Double = null, right: Int | Double = null): SidePadding = {
+  def apply(left: js.UndefOr[Double] = js.undefined, right: js.UndefOr[Double] = js.undefined): SidePadding = {
     val __obj = js.Dynamic.literal()
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(right)) __obj.updateDynamic("right")(right.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SidePadding]
   }
 }

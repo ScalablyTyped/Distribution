@@ -17,6 +17,6 @@ class FirebaseError protected ()
   /* CompleteClass */
   override var name: String = js.native
   @JSName("name")
-  val name_FirebaseError: typings.firebaseUtil.firebaseUtilStrings.FirebaseError = js.native
+  val name_FirebaseError: typings.firebaseUtil.firebaseUtilStrings.FirebaseError with (/* "FirebaseError" */ String) = js.native
 }
 

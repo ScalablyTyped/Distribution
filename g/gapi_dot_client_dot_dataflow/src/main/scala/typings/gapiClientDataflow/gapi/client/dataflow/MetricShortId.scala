@@ -16,9 +16,9 @@ trait MetricShortId extends js.Object {
 
 object MetricShortId {
   @scala.inline
-  def apply(metricIndex: Int | Double = null, shortId: String = null): MetricShortId = {
+  def apply(metricIndex: js.UndefOr[Double] = js.undefined, shortId: String = null): MetricShortId = {
     val __obj = js.Dynamic.literal()
-    if (metricIndex != null) __obj.updateDynamic("metricIndex")(metricIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(metricIndex)) __obj.updateDynamic("metricIndex")(metricIndex.get.asInstanceOf[js.Any])
     if (shortId != null) __obj.updateDynamic("shortId")(shortId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricShortId]
   }

@@ -19,15 +19,15 @@ object DimensionRange {
   @scala.inline
   def apply(
     dimension: String = null,
-    endIndex: Int | Double = null,
-    sheetId: Int | Double = null,
-    startIndex: Int | Double = null
+    endIndex: js.UndefOr[Double] = js.undefined,
+    sheetId: js.UndefOr[Double] = js.undefined,
+    startIndex: js.UndefOr[Double] = js.undefined
   ): DimensionRange = {
     val __obj = js.Dynamic.literal()
     if (dimension != null) __obj.updateDynamic("dimension")(dimension.asInstanceOf[js.Any])
-    if (endIndex != null) __obj.updateDynamic("endIndex")(endIndex.asInstanceOf[js.Any])
-    if (sheetId != null) __obj.updateDynamic("sheetId")(sheetId.asInstanceOf[js.Any])
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(endIndex)) __obj.updateDynamic("endIndex")(endIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetId)) __obj.updateDynamic("sheetId")(sheetId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DimensionRange]
   }
 }

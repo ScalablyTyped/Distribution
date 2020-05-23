@@ -1,28 +1,28 @@
 package typings.webrtcAdapter.mod
 
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IFirefoxShim extends js.Object {
-  def shimOnTrack(window: Window_): Unit
-  def shimPeerConnection(window: Window_): Unit
-  def shimRTCDataChannel(window: Window_): Unit
-  def shimReceiverGetStats(window: Window_): Unit
-  def shimRemoveStream(window: Window_): Unit
-  def shimSenderGetStats(window: Window_): Unit
+  def shimOnTrack(window: Window): Unit
+  def shimPeerConnection(window: Window): Unit
+  def shimRTCDataChannel(window: Window): Unit
+  def shimReceiverGetStats(window: Window): Unit
+  def shimRemoveStream(window: Window): Unit
+  def shimSenderGetStats(window: Window): Unit
 }
 
 object IFirefoxShim {
   @scala.inline
   def apply(
-    shimOnTrack: Window_ => Unit,
-    shimPeerConnection: Window_ => Unit,
-    shimRTCDataChannel: Window_ => Unit,
-    shimReceiverGetStats: Window_ => Unit,
-    shimRemoveStream: Window_ => Unit,
-    shimSenderGetStats: Window_ => Unit
+    shimOnTrack: Window => Unit,
+    shimPeerConnection: Window => Unit,
+    shimRTCDataChannel: Window => Unit,
+    shimReceiverGetStats: Window => Unit,
+    shimRemoveStream: Window => Unit,
+    shimSenderGetStats: Window => Unit
   ): IFirefoxShim = {
     val __obj = js.Dynamic.literal(shimOnTrack = js.Any.fromFunction1(shimOnTrack), shimPeerConnection = js.Any.fromFunction1(shimPeerConnection), shimRTCDataChannel = js.Any.fromFunction1(shimRTCDataChannel), shimReceiverGetStats = js.Any.fromFunction1(shimReceiverGetStats), shimRemoveStream = js.Any.fromFunction1(shimRemoveStream), shimSenderGetStats = js.Any.fromFunction1(shimSenderGetStats))
     __obj.asInstanceOf[IFirefoxShim]

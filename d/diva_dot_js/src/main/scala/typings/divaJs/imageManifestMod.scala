@@ -1,5 +1,6 @@
 package typings.divaJs
 
+import typings.divaJs.anon.Cols
 import typings.divaJs.interfacesMod.Dimensions
 import typings.divaJs.interfacesMod.ManifestData
 import typings.divaJs.interfacesMod.Page
@@ -18,7 +19,7 @@ object imageManifestMod extends js.Object {
     var metadata: js.Object = js.native
     var paged: Boolean = js.native
     var pages: js.Array[Page] = js.native
-    def etPageImageTiles(pageIndex: Double, zoomLevel: Double, tileDimensions: Dimensions): AnonCols = js.native
+    def etPageImageTiles(pageIndex: Double, zoomLevel: Double, tileDimensions: Dimensions): Cols = js.native
     def getMaxPageDimensions(pageIndex: Double): Dimensions = js.native
     def getPageDimensionsAtZoomLevel(pageIndex: Double, zoomLevel: Double): Dimensions = js.native
     def getPageImageURL(pageIndex: Double): String = js.native

@@ -2,7 +2,7 @@ package typings.typestyle.typestyleMod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.std.Record
-import typings.typestyle.AnonAutoGenerateTag
+import typings.typestyle.anon.AutoGenerateTag
 import typings.typestyle.typesMod.FontFace
 import typings.typestyle.typesMod.KeyFrames
 import typings.typestyle.typesMod.NestedCSSProperties
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typestyle/lib/internal/typestyle", "TypeStyle")
 @js.native
 class TypeStyle protected () extends js.Object {
-  def this(hasAutoGenerateTag: AnonAutoGenerateTag) = this()
+  def this(hasAutoGenerateTag: AutoGenerateTag) = this()
   /**
     * Only calls cb all sync operations settle
     */

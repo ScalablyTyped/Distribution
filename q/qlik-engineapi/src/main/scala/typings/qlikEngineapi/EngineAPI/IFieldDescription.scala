@@ -107,15 +107,15 @@ object IFieldDescription {
     qIsSystem: js.UndefOr[Boolean] = js.undefined
   ): IFieldDescription = {
     val __obj = js.Dynamic.literal(qCardinal = qCardinal.asInstanceOf[js.Any], qComment = qComment.asInstanceOf[js.Any], qInternalNumber = qInternalNumber.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any], qSrcTables = qSrcTables.asInstanceOf[js.Any], qTags = qTags.asInstanceOf[js.Any], qTotalCount = qTotalCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(qAlwaysOneSelected)) __obj.updateDynamic("qAlwaysOneSelected")(qAlwaysOneSelected.asInstanceOf[js.Any])
-    if (!js.isUndefined(qAndMode)) __obj.updateDynamic("qAndMode")(qAndMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(qDistinctOnly)) __obj.updateDynamic("qDistinctOnly")(qDistinctOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(qIsDefinitionOnly)) __obj.updateDynamic("qIsDefinitionOnly")(qIsDefinitionOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(qIsHidden)) __obj.updateDynamic("qIsHidden")(qIsHidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(qIsLocked)) __obj.updateDynamic("qIsLocked")(qIsLocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(qIsNumeric)) __obj.updateDynamic("qIsNumeric")(qIsNumeric.asInstanceOf[js.Any])
-    if (!js.isUndefined(qIsSemantic)) __obj.updateDynamic("qIsSemantic")(qIsSemantic.asInstanceOf[js.Any])
-    if (!js.isUndefined(qIsSystem)) __obj.updateDynamic("qIsSystem")(qIsSystem.asInstanceOf[js.Any])
+    if (!js.isUndefined(qAlwaysOneSelected)) __obj.updateDynamic("qAlwaysOneSelected")(qAlwaysOneSelected.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qAndMode)) __obj.updateDynamic("qAndMode")(qAndMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qDistinctOnly)) __obj.updateDynamic("qDistinctOnly")(qDistinctOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qIsDefinitionOnly)) __obj.updateDynamic("qIsDefinitionOnly")(qIsDefinitionOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qIsHidden)) __obj.updateDynamic("qIsHidden")(qIsHidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qIsLocked)) __obj.updateDynamic("qIsLocked")(qIsLocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qIsNumeric)) __obj.updateDynamic("qIsNumeric")(qIsNumeric.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qIsSemantic)) __obj.updateDynamic("qIsSemantic")(qIsSemantic.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qIsSystem)) __obj.updateDynamic("qIsSystem")(qIsSystem.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldDescription]
   }
 }

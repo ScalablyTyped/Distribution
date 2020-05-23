@@ -26,7 +26,7 @@ object IMapState {
     controls: js.Array[String] = null,
     margin: js.Array[js.Array[Double] | Double] = null,
     `type`: yandexNumbersignmap | yandexNumbersignsatellite | yandexNumbersignhybrid = null,
-    zoom: Int | Double = null
+    zoom: js.UndefOr[Double] = js.undefined
   ): IMapState = {
     val __obj = js.Dynamic.literal()
     if (behaviors != null) __obj.updateDynamic("behaviors")(behaviors.asInstanceOf[js.Any])
@@ -35,7 +35,7 @@ object IMapState {
     if (controls != null) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMapState]
   }
 }

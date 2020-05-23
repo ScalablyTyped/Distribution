@@ -14,12 +14,12 @@ class SimpleServer () extends EventEmitter {
   def this(options: SmtpServerOptions, callback: js.Function1[/* connection */ SimpleServerConnection, Unit]) = this()
   var server: SMTPServer = js.native
   /**
-  	 * Server starts listening on defined port and hostname
-  	 *
-  	 * @param {Number} port The port number to listen
-  	 * @param {String} [host] The hostname to listen
-  	 * @param {Function} callback The callback function to run when the server is listening
-  	 */
+    * Server starts listening on defined port and hostname
+    *
+    * @param {Number} port The port number to listen
+    * @param {String} [host] The hostname to listen
+    * @param {Function} callback The callback function to run when the server is listening
+    */
   def listen(port: Double, host: String): Unit = js.native
   def listen(port: Double, host: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
 }

@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object blueprintjsTableStrings {
   @js.native
-  sealed trait `bp-table-text-no-measure` extends js.Object
-  
-  @js.native
   sealed trait horizontal extends js.Object
   
   @js.native
@@ -21,8 +18,6 @@ object blueprintjsTableStrings {
   @js.native
   sealed trait vertical extends js.Object
   
-  @scala.inline
-  def `bp-table-text-no-measure`: `bp-table-text-no-measure` = "bp-table-text-no-measure".asInstanceOf[`bp-table-text-no-measure`]
   @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   @scala.inline

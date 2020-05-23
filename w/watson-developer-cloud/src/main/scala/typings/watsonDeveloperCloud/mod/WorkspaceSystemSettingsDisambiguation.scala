@@ -25,7 +25,7 @@ object WorkspaceSystemSettingsDisambiguation {
     sensitivity: String = null
   ): WorkspaceSystemSettingsDisambiguation = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (none_of_the_above_prompt != null) __obj.updateDynamic("none_of_the_above_prompt")(none_of_the_above_prompt.asInstanceOf[js.Any])
     if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
     if (sensitivity != null) __obj.updateDynamic("sensitivity")(sensitivity.asInstanceOf[js.Any])

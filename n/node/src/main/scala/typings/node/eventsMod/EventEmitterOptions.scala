@@ -15,7 +15,7 @@ object EventEmitterOptions {
   @scala.inline
   def apply(captureRejections: js.UndefOr[Boolean] = js.undefined): EventEmitterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(captureRejections)) __obj.updateDynamic("captureRejections")(captureRejections.asInstanceOf[js.Any])
+    if (!js.isUndefined(captureRejections)) __obj.updateDynamic("captureRejections")(captureRejections.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventEmitterOptions]
   }
 }

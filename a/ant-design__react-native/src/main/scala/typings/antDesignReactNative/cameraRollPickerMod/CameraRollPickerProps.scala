@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.cameraRollPickerMod
 
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.CameraRollAssetType
 import typings.reactNative.mod.CameraRollGroupType
 import typings.reactNative.mod.GetPhotosParamType
@@ -31,7 +31,7 @@ object CameraRollPickerProps {
     assetType: CameraRollAssetType = null,
     backgroundColor: String = null,
     callback: /* repeated */ js.Any => _ = null,
-    containerWidth: Int | Double = null,
+    containerWidth: js.UndefOr[Double] = js.undefined,
     groupName: String = null,
     groupTypes: CameraRollGroupType = null,
     mimeTypes: js.Array[String] = null,
@@ -44,11 +44,11 @@ object CameraRollPickerProps {
     if (assetType != null) __obj.updateDynamic("assetType")(assetType.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
-    if (containerWidth != null) __obj.updateDynamic("containerWidth")(containerWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(containerWidth)) __obj.updateDynamic("containerWidth")(containerWidth.get.asInstanceOf[js.Any])
     if (groupName != null) __obj.updateDynamic("groupName")(groupName.asInstanceOf[js.Any])
     if (groupTypes != null) __obj.updateDynamic("groupTypes")(groupTypes.asInstanceOf[js.Any])
     if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectSingleItem)) __obj.updateDynamic("selectSingleItem")(selectSingleItem.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectSingleItem)) __obj.updateDynamic("selectSingleItem")(selectSingleItem.get.asInstanceOf[js.Any])
     if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     if (selectedMarker != null) __obj.updateDynamic("selectedMarker")(selectedMarker.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraRollPickerProps]

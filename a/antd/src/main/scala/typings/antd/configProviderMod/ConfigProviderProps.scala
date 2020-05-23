@@ -1,11 +1,12 @@
 package typings.antd.configProviderMod
 
-import typings.antd.AnonGhost
-import typings.antd.AnonSize
-import typings.antd.AnonValidateMessages
+import typings.antd.anon.AutoComplete
+import typings.antd.anon.Ghost
+import typings.antd.anon.Size
+import typings.antd.anon.ValidateMessages
 import typings.antd.antdStrings.ltr
 import typings.antd.antdStrings.rtl
-import typings.antd.contextMod.CSPConfig
+import typings.antd.configProviderContextMod.CSPConfig
 import typings.antd.localeProviderMod.Locale
 import typings.antd.renderEmptyMod.RenderEmptyHandler
 import typings.antd.sizeContextMod.SizeType
@@ -21,13 +22,15 @@ trait ConfigProviderProps extends js.Object {
   var componentSize: js.UndefOr[SizeType] = js.undefined
   var csp: js.UndefOr[CSPConfig] = js.undefined
   var direction: js.UndefOr[ltr | rtl] = js.undefined
-  var form: js.UndefOr[AnonValidateMessages] = js.undefined
+  var form: js.UndefOr[ValidateMessages] = js.undefined
   var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.undefined
+  var getTargetContainer: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
+  var input: js.UndefOr[AutoComplete] = js.undefined
   var locale: js.UndefOr[Locale] = js.undefined
-  var pageHeader: js.UndefOr[AnonGhost] = js.undefined
+  var pageHeader: js.UndefOr[Ghost] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var renderEmpty: js.UndefOr[RenderEmptyHandler] = js.undefined
-  var space: js.UndefOr[AnonSize] = js.undefined
+  var space: js.UndefOr[Size] = js.undefined
 }
 
 object ConfigProviderProps {
@@ -38,22 +41,26 @@ object ConfigProviderProps {
     componentSize: SizeType = null,
     csp: CSPConfig = null,
     direction: ltr | rtl = null,
-    form: AnonValidateMessages = null,
+    form: ValidateMessages = null,
     getPopupContainer: /* triggerNode */ HTMLElement => HTMLElement = null,
+    getTargetContainer: () => HTMLElement = null,
+    input: AutoComplete = null,
     locale: Locale = null,
-    pageHeader: AnonGhost = null,
+    pageHeader: Ghost = null,
     prefixCls: String = null,
     renderEmpty: /* componentName */ js.UndefOr[String] => ReactNode = null,
-    space: AnonSize = null
+    space: Size = null
   ): ConfigProviderProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoInsertSpaceInButton)) __obj.updateDynamic("autoInsertSpaceInButton")(autoInsertSpaceInButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoInsertSpaceInButton)) __obj.updateDynamic("autoInsertSpaceInButton")(autoInsertSpaceInButton.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (componentSize != null) __obj.updateDynamic("componentSize")(componentSize.asInstanceOf[js.Any])
     if (csp != null) __obj.updateDynamic("csp")(csp.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
+    if (getTargetContainer != null) __obj.updateDynamic("getTargetContainer")(js.Any.fromFunction0(getTargetContainer))
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (pageHeader != null) __obj.updateDynamic("pageHeader")(pageHeader.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])

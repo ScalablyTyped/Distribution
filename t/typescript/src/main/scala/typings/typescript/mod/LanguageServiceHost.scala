@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LanguageServiceHost extends ModuleSpecifierResolutionHost {
+trait LanguageServiceHost extends GetEffectiveTypeRootsHost {
   var error: js.UndefOr[js.Function1[/* s */ java.lang.String, Unit]] = js.undefined
+  var fileExists: js.UndefOr[js.Function1[/* path */ java.lang.String, Boolean]] = js.undefined
   var getCancellationToken: js.UndefOr[js.Function0[HostCancellationToken]] = js.undefined
   /**
     * Gets a set of custom transformers to use during emit.
@@ -40,8 +41,7 @@ trait LanguageServiceHost extends ModuleSpecifierResolutionHost {
       js.Array[java.lang.String]
     ]
   ] = js.undefined
-  @JSName("readFile")
-  var readFile_LanguageServiceHost: js.UndefOr[
+  var readFile: js.UndefOr[
     js.Function2[
       /* path */ java.lang.String, 
       /* encoding */ js.UndefOr[java.lang.String], 
@@ -69,6 +69,7 @@ trait LanguageServiceHost extends ModuleSpecifierResolutionHost {
     ]
   ] = js.undefined
   var trace: js.UndefOr[js.Function1[/* s */ java.lang.String, Unit]] = js.undefined
+  var useCaseSensitiveFileNames: js.UndefOr[js.Function0[Boolean]] = js.undefined
   var writeFile: js.UndefOr[
     js.Function2[/* fileName */ java.lang.String, /* content */ java.lang.String, Unit]
   ] = js.undefined

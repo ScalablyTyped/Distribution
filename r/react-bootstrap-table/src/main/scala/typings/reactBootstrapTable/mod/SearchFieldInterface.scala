@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait SearchFieldInterface extends js.Object {
   /**
-  	 * getValue should return the current search text.
-  	 */
+    * getValue should return the current search text.
+    */
   def getValue(): String
   /**
-  	 * setValue should update the current search text to the given value.
-  	 */
+    * setValue should update the current search text to the given value.
+    */
   def setValue(search: String): Unit
 }
 

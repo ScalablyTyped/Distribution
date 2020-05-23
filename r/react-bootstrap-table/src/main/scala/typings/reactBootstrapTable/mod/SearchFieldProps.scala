@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation._
 
 trait SearchFieldProps extends js.Object {
   /**
-  	 * Custom css class name
-  	 */
+    * Custom css class name
+    */
   var className: js.UndefOr[String] = js.undefined
   /**
-  	 * Default value for the search field
-  	 */
+    * Default value for the search field
+    */
   var defaultValue: js.UndefOr[String] = js.undefined
   /**
-  	 * callback funciton to call when a key is released
-  	 */
+    * callback funciton to call when a key is released
+    */
   var onKeyUp: js.UndefOr[js.Function1[/* e */ KeyboardEvent[_], Unit]] = js.undefined
   /**
-  	 * Placeholder text for the search field
-  	 */
+    * Placeholder text for the search field
+    */
   var placeholder: js.UndefOr[String] = js.undefined
 }
 

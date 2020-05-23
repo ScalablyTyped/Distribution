@@ -9,30 +9,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * Provides support for the built-in iOS dynamic animations
-			 */
-@JSGlobal("Titanium.UI.iOS.Animator")
+  * Provides support for the built-in iOS dynamic animations
+  */
 @js.native
-class Animator () extends Proxy {
+trait Animator extends Proxy {
   /**
-  				 * Behaviors associated with this animator.
-  				 */
+    * Behaviors associated with this animator.
+    */
   var behaviors: js.Array[Proxy] = js.native
   /**
-  				 * Titanium View object to initialize as the reference view for the animator.
-  				 */
+    * Titanium View object to initialize as the reference view for the animator.
+    */
   var referenceView: View = js.native
   /**
-  				 * Returns `true` if the animator is running else `false`.
-  				 */
+    * Returns `true` if the animator is running else `false`.
+    */
   val running: Boolean = js.native
   /**
-  				 * Adds a dynamic behavior to the animator.
-  				 */
+    * Adds a dynamic behavior to the animator.
+    */
   def addBehavior(behavior: Proxy): Unit = js.native
   /**
-  				 * Adds the specified callback as an event listener for the named event.
-  				 */
+    * Adds the specified callback as an event listener for the named event.
+    */
   @JSName("addEventListener")
   def addEventListener_pause(
     name: pause,
@@ -44,8 +43,8 @@ class Animator () extends Proxy {
     callback: js.ThisFunction1[/* this */ this.type, /* event */ AnimatorResumeEvent, Unit]
   ): Unit = js.native
   /**
-  				 * Fires a synthesized event to any registered listeners.
-  				 */
+    * Fires a synthesized event to any registered listeners.
+    */
   @JSName("fireEvent")
   def fireEvent_pause(name: pause): Unit = js.native
   @JSName("fireEvent")
@@ -55,31 +54,31 @@ class Animator () extends Proxy {
   @JSName("fireEvent")
   def fireEvent_resume(name: resume, event: AnimatorResumeEvent): Unit = js.native
   /**
-  				 * Gets the value of the <Titanium.UI.iOS.Animator.behaviors> property.
-  				 * @deprecated Access <Titanium.UI.iOS.Animator.behaviors> instead.
-  				 */
+    * Gets the value of the <Titanium.UI.iOS.Animator.behaviors> property.
+    * @deprecated Access <Titanium.UI.iOS.Animator.behaviors> instead.
+    */
   def getBehaviors(): js.Array[Proxy] = js.native
   /**
-  				 * Gets the value of the <Titanium.UI.iOS.Animator.referenceView> property.
-  				 * @deprecated Access <Titanium.UI.iOS.Animator.referenceView> instead.
-  				 */
+    * Gets the value of the <Titanium.UI.iOS.Animator.referenceView> property.
+    * @deprecated Access <Titanium.UI.iOS.Animator.referenceView> instead.
+    */
   def getReferenceView(): View = js.native
   /**
-  				 * Gets the value of the <Titanium.UI.iOS.Animator.running> property.
-  				 * @deprecated Access <Titanium.UI.iOS.Animator.running> instead.
-  				 */
+    * Gets the value of the <Titanium.UI.iOS.Animator.running> property.
+    * @deprecated Access <Titanium.UI.iOS.Animator.running> instead.
+    */
   def getRunning(): Boolean = js.native
   /**
-  				 * Removes all behaviors from this animator.
-  				 */
+    * Removes all behaviors from this animator.
+    */
   def removeAllBehaviors(): Unit = js.native
   /**
-  				 * Removes the specified behavior from the animator.
-  				 */
+    * Removes the specified behavior from the animator.
+    */
   def removeBehavior(behavior: Proxy): Unit = js.native
   /**
-  				 * Removes the specified callback as an event listener for the named event.
-  				 */
+    * Removes the specified callback as an event listener for the named event.
+    */
   @JSName("removeEventListener")
   def removeEventListener_pause(
     name: pause,
@@ -91,26 +90,26 @@ class Animator () extends Proxy {
     callback: js.ThisFunction1[/* this */ this.type, /* event */ AnimatorResumeEvent, Unit]
   ): Unit = js.native
   /**
-  				 * Sets the value of the <Titanium.UI.iOS.Animator.behaviors> property.
-  				 * @deprecated Set the value using <Titanium.UI.iOS.Animator.behaviors> instead.
-  				 */
+    * Sets the value of the <Titanium.UI.iOS.Animator.behaviors> property.
+    * @deprecated Set the value using <Titanium.UI.iOS.Animator.behaviors> instead.
+    */
   def setBehaviors(behaviors: js.Array[Proxy]): Unit = js.native
   /**
-  				 * Sets the value of the <Titanium.UI.iOS.Animator.referenceView> property.
-  				 * @deprecated Set the value using <Titanium.UI.iOS.Animator.referenceView> instead.
-  				 */
+    * Sets the value of the <Titanium.UI.iOS.Animator.referenceView> property.
+    * @deprecated Set the value using <Titanium.UI.iOS.Animator.referenceView> instead.
+    */
   def setReferenceView(referenceView: View): Unit = js.native
   /**
-  				 * Starts the animation behaviors.
-  				 */
+    * Starts the animation behaviors.
+    */
   def startAnimator(): Unit = js.native
   /**
-  				 * Stops the animation behaviors.
-  				 */
+    * Stops the animation behaviors.
+    */
   def stopAnimator(): Unit = js.native
   /**
-  				 * Updates the animator's state information with the current state of the specified item.
-  				 */
+    * Updates the animator's state information with the current state of the specified item.
+    */
   def updateItemUsingCurrentState(item: View): Unit = js.native
 }
 

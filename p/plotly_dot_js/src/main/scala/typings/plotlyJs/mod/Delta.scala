@@ -1,6 +1,6 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.AnonSymbol
+import typings.plotlyJs.anon.Symbol
 import typings.plotlyJs.plotlyJsStrings.bottom
 import typings.plotlyJs.plotlyJsStrings.left
 import typings.plotlyJs.plotlyJsStrings.right
@@ -10,8 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Delta extends js.Object {
-  var decreasing: AnonSymbol
-  var increasing: AnonSymbol
+  var decreasing: Symbol
+  var increasing: Symbol
   var position: top | bottom | left | right
   var reference: Double
   var relative: Boolean
@@ -21,8 +21,8 @@ trait Delta extends js.Object {
 object Delta {
   @scala.inline
   def apply(
-    decreasing: AnonSymbol,
-    increasing: AnonSymbol,
+    decreasing: Symbol,
+    increasing: Symbol,
     position: top | bottom | left | right,
     reference: Double,
     relative: Boolean,

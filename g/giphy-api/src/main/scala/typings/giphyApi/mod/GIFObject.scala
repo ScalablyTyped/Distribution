@@ -1,6 +1,6 @@
 package typings.giphyApi.mod
 
-import typings.giphyApi.AnonAvatarurl
+import typings.giphyApi.anon.Avatarurl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ trait GIFObject extends js.Object {
   var `type`: String
   var update_datetime: String
   var url: String
-  var user: js.UndefOr[AnonAvatarurl] = js.undefined
+  var user: js.UndefOr[Avatarurl] = js.undefined
   var username: String
 }
 
@@ -48,7 +48,7 @@ object GIFObject {
     update_datetime: String,
     url: String,
     username: String,
-    user: AnonAvatarurl = null
+    user: Avatarurl = null
   ): GIFObject = {
     val __obj = js.Dynamic.literal(bitly_url = bitly_url.asInstanceOf[js.Any], content_url = content_url.asInstanceOf[js.Any], create_datetime = create_datetime.asInstanceOf[js.Any], embed_url = embed_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], import_datetime = import_datetime.asInstanceOf[js.Any], rating = rating.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], source_post_url = source_post_url.asInstanceOf[js.Any], source_tld = source_tld.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], trending_datetime = trending_datetime.asInstanceOf[js.Any], update_datetime = update_datetime.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

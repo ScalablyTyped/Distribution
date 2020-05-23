@@ -24,12 +24,12 @@ object RecommendedOptionProjectedMetric {
   @scala.inline
   def apply(
     projectedMetrics: ProjectedMetrics = null,
-    rank: Int | Double = null,
+    rank: js.UndefOr[Rank] = js.undefined,
     recommendedInstanceType: RecommendedInstanceType = null
   ): RecommendedOptionProjectedMetric = {
     val __obj = js.Dynamic.literal()
     if (projectedMetrics != null) __obj.updateDynamic("projectedMetrics")(projectedMetrics.asInstanceOf[js.Any])
-    if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
+    if (!js.isUndefined(rank)) __obj.updateDynamic("rank")(rank.get.asInstanceOf[js.Any])
     if (recommendedInstanceType != null) __obj.updateDynamic("recommendedInstanceType")(recommendedInstanceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecommendedOptionProjectedMetric]
   }

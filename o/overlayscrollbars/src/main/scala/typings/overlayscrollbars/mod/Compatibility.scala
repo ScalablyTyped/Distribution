@@ -1,7 +1,7 @@
 package typings.overlayscrollbars.mod
 
-import typings.overlayscrollbars.AnonXNumber
-import typings.std.Event_
+import typings.overlayscrollbars.anon.XNumber
+import typings.std.Event
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,11 +15,11 @@ trait Compatibility extends js.Object {
   def mBtn(event: MouseEvent): Double
   def mO(): js.Any
   def now(): Double
-  def page(event: MouseEvent): AnonXNumber
-  def prvD(event: Event_): Unit
+  def page(event: MouseEvent): XNumber
+  def prvD(event: Event): Unit
   def rAF(): js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, _], Double]
   def rO(): js.Any
-  def stpP(event: Event_): Unit
+  def stpP(event: Event): Unit
   def `type`(obj: js.Any): String
   def wH(): Double
   def wW(): Double
@@ -35,11 +35,11 @@ object Compatibility {
     mBtn: MouseEvent => Double,
     mO: () => js.Any,
     now: () => Double,
-    page: MouseEvent => AnonXNumber,
-    prvD: Event_ => Unit,
+    page: MouseEvent => XNumber,
+    prvD: Event => Unit,
     rAF: () => js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, _], Double],
     rO: () => js.Any,
-    stpP: Event_ => Unit,
+    stpP: Event => Unit,
     `type`: js.Any => String,
     wH: () => Double,
     wW: () => Double

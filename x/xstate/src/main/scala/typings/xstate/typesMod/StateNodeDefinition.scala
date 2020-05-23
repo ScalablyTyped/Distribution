@@ -35,7 +35,7 @@ trait StateNodeDefinition[TContext, TStateSchema /* <: StateSchema[_] */, TEvent
 
 object StateNodeDefinition {
   @scala.inline
-  def apply[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */](
+  def apply[TContext, TStateSchema, TEvent](
     activities: js.Array[ActivityDefinition[TContext, TEvent]],
     context: TContext,
     entry: js.Array[ActionObject[TContext, TEvent]],

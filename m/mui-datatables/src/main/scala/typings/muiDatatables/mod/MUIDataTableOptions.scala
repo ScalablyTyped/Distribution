@@ -1,17 +1,17 @@
 package typings.muiDatatables.mod
 
-import typings.muiDatatables.AnonColIndex
-import typings.muiDatatables.AnonDataDataIndex
-import typings.muiDatatables.AnonLookup
-import typings.muiDatatables.AnonRowIndex
-import typings.muiDatatables.AnonXAxis
-import typings.muiDatatables.PartialMUIDataTableTextLaBody
-import typings.muiDatatables.Partialfilenamestringsepa
+import typings.muiDatatables.anon.ColIndex
+import typings.muiDatatables.anon.DataDataIndex
+import typings.muiDatatables.anon.Lookup
+import typings.muiDatatables.anon.PartialMUIDataTableTextLaBody
+import typings.muiDatatables.anon.Partialfilenamestringsepa
+import typings.muiDatatables.anon.RowIndex
+import typings.muiDatatables.anon.XAxis
 import typings.muiDatatables.muiDatatablesStrings.chip
 import typings.muiDatatables.muiDatatablesStrings.reset
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,8 +56,8 @@ trait MUIDataTableOptions extends js.Object {
   var customToolbar: js.UndefOr[js.Function0[ReactNode]] = js.undefined
   var customToolbarSelect: js.UndefOr[
     js.Function3[
-      /* selectedRows */ AnonLookup, 
-      /* displayData */ js.Array[AnonDataDataIndex], 
+      /* selectedRows */ Lookup, 
+      /* displayData */ js.Array[DataDataIndex], 
       /* setSelectedRows */ js.Function1[/* rows */ js.Array[Double], Unit], 
       ReactNode
     ]
@@ -71,7 +71,7 @@ trait MUIDataTableOptions extends js.Object {
   var filter: js.UndefOr[Boolean] = js.undefined
   var filterType: js.UndefOr[FilterType] = js.undefined
   var fixedHeader: js.UndefOr[Boolean] = js.undefined
-  var fixedHeaderOptions: js.UndefOr[AnonXAxis] = js.undefined
+  var fixedHeaderOptions: js.UndefOr[XAxis] = js.undefined
   var isRowExpandable: js.UndefOr[
     js.Function2[
       /* dataIndex */ Double, 
@@ -86,7 +86,7 @@ trait MUIDataTableOptions extends js.Object {
       Boolean
     ]
   ] = js.undefined
-  var onCellClick: js.UndefOr[js.Function2[/* colData */ js.Any, /* cellMeta */ AnonColIndex, Unit]] = js.undefined
+  var onCellClick: js.UndefOr[js.Function2[/* colData */ js.Any, /* cellMeta */ ColIndex, Unit]] = js.undefined
   var onChangePage: js.UndefOr[js.Function1[/* currentPage */ Double, Unit]] = js.undefined
   var onChangeRowsPerPage: js.UndefOr[js.Function1[/* numberOfRows */ Double, Unit]] = js.undefined
   var onColumnSortChange: js.UndefOr[js.Function2[/* changedColumn */ String, /* direction */ String, Unit]] = js.undefined
@@ -115,7 +115,7 @@ trait MUIDataTableOptions extends js.Object {
   ] = js.undefined
   var onFilterDialogClose: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onFilterDialogOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onRowClick: js.UndefOr[js.Function2[/* rowData */ js.Array[String], /* rowMeta */ AnonRowIndex, Unit]] = js.undefined
+  var onRowClick: js.UndefOr[js.Function2[/* rowData */ js.Array[String], /* rowMeta */ RowIndex, Unit]] = js.undefined
   var onRowsDelete: js.UndefOr[js.Function1[/* rowsDeleted */ js.Array[_], Unit]] = js.undefined
   var onRowsExpand: js.UndefOr[
     js.Function2[/* currentRowsExpanded */ js.Array[_], /* allRowsExpanded */ js.Array[_], Unit]
@@ -131,9 +131,7 @@ trait MUIDataTableOptions extends js.Object {
   var page: js.UndefOr[Double] = js.undefined
   var pagination: js.UndefOr[Boolean] = js.undefined
   var print: js.UndefOr[Boolean] = js.undefined
-  var renderExpandableRow: js.UndefOr[
-    js.Function2[/* rowData */ js.Array[String], /* rowMeta */ AnonRowIndex, ReactNode]
-  ] = js.undefined
+  var renderExpandableRow: js.UndefOr[js.Function2[/* rowData */ js.Array[String], /* rowMeta */ RowIndex, ReactNode]] = js.undefined
   var resizableColumns: js.UndefOr[Boolean] = js.undefined
   var responsive: js.UndefOr[Responsive] = js.undefined
   var rowHover: js.UndefOr[Boolean] = js.undefined
@@ -162,7 +160,7 @@ object MUIDataTableOptions {
   @scala.inline
   def apply(
     caseSensitive: js.UndefOr[Boolean] = js.undefined,
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     customFilterDialogFooter: /* filterList */ js.Array[_] => ReactNode = null,
     customFooter: (/* rowCount */ Double, /* page */ Double, /* rowsPerPage */ Double, /* changeRowsPerPage */ js.Function1[/* page */ String | Double, Unit], /* changePage */ js.Function1[/* newPage */ Double, Unit]) => ReactNode = null,
     customRowRender: (/* data */ js.Array[_], /* dataIndex */ Double, /* rowIndex */ Double) => ReactNode = null,
@@ -170,20 +168,20 @@ object MUIDataTableOptions {
     customSearchRender: (/* searchText */ String, /* handleSearch */ js.Any, /* hideSearch */ js.Any, /* options */ js.Any) => (Component[js.Object, js.Object, _]) | Element = null,
     customSort: (/* data */ js.Array[_], /* colIndex */ Double, /* order */ String) => js.Array[_] = null,
     customToolbar: () => ReactNode = null,
-    customToolbarSelect: (/* selectedRows */ AnonLookup, /* displayData */ js.Array[AnonDataDataIndex], /* setSelectedRows */ js.Function1[/* rows */ js.Array[Double], Unit]) => ReactNode = null,
+    customToolbarSelect: (/* selectedRows */ Lookup, /* displayData */ js.Array[DataDataIndex], /* setSelectedRows */ js.Function1[/* rows */ js.Array[Double], Unit]) => ReactNode = null,
     disableToolbarSelect: js.UndefOr[Boolean] = js.undefined,
     download: js.UndefOr[Boolean] = js.undefined,
     downloadOptions: Partialfilenamestringsepa = null,
-    elevation: Int | Double = null,
+    elevation: js.UndefOr[Double] = js.undefined,
     expandableRows: js.UndefOr[Boolean] = js.undefined,
     expandableRowsOnClick: js.UndefOr[Boolean] = js.undefined,
     filter: js.UndefOr[Boolean] = js.undefined,
     filterType: FilterType = null,
     fixedHeader: js.UndefOr[Boolean] = js.undefined,
-    fixedHeaderOptions: AnonXAxis = null,
+    fixedHeaderOptions: XAxis = null,
     isRowExpandable: (/* dataIndex */ Double, /* expandedRows */ js.UndefOr[MUIDataTableIsRowCheck]) => Boolean = null,
     isRowSelectable: (/* dataIndex */ Double, /* selectedRows */ js.UndefOr[MUIDataTableIsRowCheck]) => Boolean = null,
-    onCellClick: (/* colData */ js.Any, /* cellMeta */ AnonColIndex) => Unit = null,
+    onCellClick: (/* colData */ js.Any, /* cellMeta */ ColIndex) => Unit = null,
     onChangePage: /* currentPage */ Double => Unit = null,
     onChangeRowsPerPage: /* numberOfRows */ Double => Unit = null,
     onColumnSortChange: (/* changedColumn */ String, /* direction */ String) => Unit = null,
@@ -192,7 +190,7 @@ object MUIDataTableOptions {
     onFilterChange: (/* changedColumn */ String, /* filterList */ js.Array[_], /* type */ FilterType | chip | reset) => Unit = null,
     onFilterDialogClose: () => Unit = null,
     onFilterDialogOpen: () => Unit = null,
-    onRowClick: (/* rowData */ js.Array[String], /* rowMeta */ AnonRowIndex) => Unit = null,
+    onRowClick: (/* rowData */ js.Array[String], /* rowMeta */ RowIndex) => Unit = null,
     onRowsDelete: /* rowsDeleted */ js.Array[_] => Unit = null,
     onRowsExpand: (/* currentRowsExpanded */ js.Array[_], /* allRowsExpanded */ js.Array[_]) => Unit = null,
     onRowsSelect: (/* currentRowsSelected */ js.Array[_], /* rowsSelected */ js.Array[_]) => Unit = null,
@@ -201,15 +199,15 @@ object MUIDataTableOptions {
     onSearchOpen: () => Unit = null,
     onTableChange: (/* action */ String, /* tableState */ MUIDataTableState) => Unit = null,
     onTableInit: (/* action */ String, /* tableState */ MUIDataTableState) => Unit = null,
-    page: Int | Double = null,
+    page: js.UndefOr[Double] = js.undefined,
     pagination: js.UndefOr[Boolean] = js.undefined,
     print: js.UndefOr[Boolean] = js.undefined,
-    renderExpandableRow: (/* rowData */ js.Array[String], /* rowMeta */ AnonRowIndex) => ReactNode = null,
+    renderExpandableRow: (/* rowData */ js.Array[String], /* rowMeta */ RowIndex) => ReactNode = null,
     resizableColumns: js.UndefOr[Boolean] = js.undefined,
     responsive: Responsive = null,
     rowHover: js.UndefOr[Boolean] = js.undefined,
     rowsExpanded: js.Array[_] = null,
-    rowsPerPage: Int | Double = null,
+    rowsPerPage: js.UndefOr[Double] = js.undefined,
     rowsPerPageOptions: js.Array[Double] = null,
     rowsSelected: js.Array[_] = null,
     search: js.UndefOr[Boolean] = js.undefined,
@@ -229,8 +227,8 @@ object MUIDataTableOptions {
     viewColumns: js.UndefOr[Boolean] = js.undefined
   ): MUIDataTableOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (customFilterDialogFooter != null) __obj.updateDynamic("customFilterDialogFooter")(js.Any.fromFunction1(customFilterDialogFooter))
     if (customFooter != null) __obj.updateDynamic("customFooter")(js.Any.fromFunction5(customFooter))
     if (customRowRender != null) __obj.updateDynamic("customRowRender")(js.Any.fromFunction3(customRowRender))
@@ -239,15 +237,15 @@ object MUIDataTableOptions {
     if (customSort != null) __obj.updateDynamic("customSort")(js.Any.fromFunction3(customSort))
     if (customToolbar != null) __obj.updateDynamic("customToolbar")(js.Any.fromFunction0(customToolbar))
     if (customToolbarSelect != null) __obj.updateDynamic("customToolbarSelect")(js.Any.fromFunction3(customToolbarSelect))
-    if (!js.isUndefined(disableToolbarSelect)) __obj.updateDynamic("disableToolbarSelect")(disableToolbarSelect.asInstanceOf[js.Any])
-    if (!js.isUndefined(download)) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableToolbarSelect)) __obj.updateDynamic("disableToolbarSelect")(disableToolbarSelect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(download)) __obj.updateDynamic("download")(download.get.asInstanceOf[js.Any])
     if (downloadOptions != null) __obj.updateDynamic("downloadOptions")(downloadOptions.asInstanceOf[js.Any])
-    if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandableRows)) __obj.updateDynamic("expandableRows")(expandableRows.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandableRowsOnClick)) __obj.updateDynamic("expandableRowsOnClick")(expandableRowsOnClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (!js.isUndefined(elevation)) __obj.updateDynamic("elevation")(elevation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandableRows)) __obj.updateDynamic("expandableRows")(expandableRows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandableRowsOnClick)) __obj.updateDynamic("expandableRowsOnClick")(expandableRowsOnClick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.get.asInstanceOf[js.Any])
     if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader.get.asInstanceOf[js.Any])
     if (fixedHeaderOptions != null) __obj.updateDynamic("fixedHeaderOptions")(fixedHeaderOptions.asInstanceOf[js.Any])
     if (isRowExpandable != null) __obj.updateDynamic("isRowExpandable")(js.Any.fromFunction2(isRowExpandable))
     if (isRowSelectable != null) __obj.updateDynamic("isRowSelectable")(js.Any.fromFunction2(isRowSelectable))
@@ -269,32 +267,32 @@ object MUIDataTableOptions {
     if (onSearchOpen != null) __obj.updateDynamic("onSearchOpen")(js.Any.fromFunction0(onSearchOpen))
     if (onTableChange != null) __obj.updateDynamic("onTableChange")(js.Any.fromFunction2(onTableChange))
     if (onTableInit != null) __obj.updateDynamic("onTableInit")(js.Any.fromFunction2(onTableInit))
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
-    if (!js.isUndefined(print)) __obj.updateDynamic("print")(print.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(print)) __obj.updateDynamic("print")(print.get.asInstanceOf[js.Any])
     if (renderExpandableRow != null) __obj.updateDynamic("renderExpandableRow")(js.Any.fromFunction2(renderExpandableRow))
-    if (!js.isUndefined(resizableColumns)) __obj.updateDynamic("resizableColumns")(resizableColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizableColumns)) __obj.updateDynamic("resizableColumns")(resizableColumns.get.asInstanceOf[js.Any])
     if (responsive != null) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowHover)) __obj.updateDynamic("rowHover")(rowHover.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowHover)) __obj.updateDynamic("rowHover")(rowHover.get.asInstanceOf[js.Any])
     if (rowsExpanded != null) __obj.updateDynamic("rowsExpanded")(rowsExpanded.asInstanceOf[js.Any])
-    if (rowsPerPage != null) __obj.updateDynamic("rowsPerPage")(rowsPerPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowsPerPage)) __obj.updateDynamic("rowsPerPage")(rowsPerPage.get.asInstanceOf[js.Any])
     if (rowsPerPageOptions != null) __obj.updateDynamic("rowsPerPageOptions")(rowsPerPageOptions.asInstanceOf[js.Any])
     if (rowsSelected != null) __obj.updateDynamic("rowsSelected")(rowsSelected.asInstanceOf[js.Any])
-    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchOpen)) __obj.updateDynamic("searchOpen")(searchOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchOpen)) __obj.updateDynamic("searchOpen")(searchOpen.get.asInstanceOf[js.Any])
     if (searchPlaceholder != null) __obj.updateDynamic("searchPlaceholder")(searchPlaceholder.asInstanceOf[js.Any])
     if (searchText != null) __obj.updateDynamic("searchText")(searchText.asInstanceOf[js.Any])
     if (selectableRows != null) __obj.updateDynamic("selectableRows")(selectableRows.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectableRowsHeader)) __obj.updateDynamic("selectableRowsHeader")(selectableRowsHeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectableRowsOnClick)) __obj.updateDynamic("selectableRowsOnClick")(selectableRowsOnClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(serverSide)) __obj.updateDynamic("serverSide")(serverSide.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectableRowsHeader)) __obj.updateDynamic("selectableRowsHeader")(selectableRowsHeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectableRowsOnClick)) __obj.updateDynamic("selectableRowsOnClick")(selectableRowsOnClick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(serverSide)) __obj.updateDynamic("serverSide")(serverSide.get.asInstanceOf[js.Any])
     if (serverSideFilterList != null) __obj.updateDynamic("serverSideFilterList")(serverSideFilterList.asInstanceOf[js.Any])
     if (setRowProps != null) __obj.updateDynamic("setRowProps")(js.Any.fromFunction2(setRowProps))
     if (setTableProps != null) __obj.updateDynamic("setTableProps")(js.Any.fromFunction0(setTableProps))
-    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortFilterList)) __obj.updateDynamic("sortFilterList")(sortFilterList.asInstanceOf[js.Any])
+    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortFilterList)) __obj.updateDynamic("sortFilterList")(sortFilterList.get.asInstanceOf[js.Any])
     if (textLabels != null) __obj.updateDynamic("textLabels")(textLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(viewColumns)) __obj.updateDynamic("viewColumns")(viewColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewColumns)) __obj.updateDynamic("viewColumns")(viewColumns.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableOptions]
   }
 }

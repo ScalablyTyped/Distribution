@@ -13,9 +13,7 @@ trait PaneProperty extends js.Object {
 object PaneProperty {
   @scala.inline
   def apply(key: PaneKey = null, ref: Element = null): PaneProperty = {
-    val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaneProperty]
   }
 }

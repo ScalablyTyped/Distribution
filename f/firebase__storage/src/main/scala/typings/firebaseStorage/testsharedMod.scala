@@ -6,8 +6,6 @@ import typings.firebaseAuthInteropTypes.mod.FirebaseAuthInternal
 import typings.firebaseComponent.mod.Provider
 import typings.firebaseStorage.errorMod.Code
 import typings.firebaseStorage.errorMod.FirebaseStorageError
-import typings.firebaseStorage.firebaseStorageStrings.`totally-legit-auth-token`
-import typings.firebaseStorage.firebaseStorageStrings.mybucket
 import typings.firebaseStorage.testXhrioMod.SendHook
 import typings.firebaseStorage.xhrioMod.Headers
 import typings.firebaseStorage.xhrioMod.XhrIo
@@ -20,8 +18,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@firebase/storage/dist/test/testshared", JSImport.Namespace)
 @js.native
 object testsharedMod extends js.Object {
-  val authToken: `totally-legit-auth-token` = js.native
-  val bucket: mybucket = js.native
+  val authToken: /* "totally-legit-auth-token" */ String = js.native
+  val bucket: /* "mybucket" */ String = js.native
   val emptyAuthProvider: js.Any = js.native
   val fakeApp: FirebaseApp = js.native
   val fakeAuthProvider: Provider[FirebaseAuthInternal] = js.native

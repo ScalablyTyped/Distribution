@@ -92,7 +92,7 @@ object Product {
     body_html: String = null,
     created_at: String = null,
     handle: String = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     images: js.Array[ProductImage] = null,
     metafields_global_description_tag: String = null,
     metafields_global_title_tag: String = null,
@@ -112,7 +112,7 @@ object Product {
     if (body_html != null) __obj.updateDynamic("body_html")(body_html.asInstanceOf[js.Any])
     if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
     if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
     if (metafields_global_description_tag != null) __obj.updateDynamic("metafields_global_description_tag")(metafields_global_description_tag.asInstanceOf[js.Any])
     if (metafields_global_title_tag != null) __obj.updateDynamic("metafields_global_title_tag")(metafields_global_title_tag.asInstanceOf[js.Any])

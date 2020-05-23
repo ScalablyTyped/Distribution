@@ -4,6 +4,8 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.react.mod.Component
 import typings.react.mod.ComponentProps
 import typings.reactNativeGestureHandler.mod.BaseButton
+import typings.reactNavigationStack.anon.ActiveOpacity
+import typings.reactNavigationStack.anon.ActiveOpacityNumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,9 +26,9 @@ object borderlessButtonMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonActiveOpacity = js.native
+    var defaultProps: ActiveOpacity = js.native
   }
   
-  type Props = ComponentProps[Instantiable0[BaseButton]] with AnonActiveOpacityNumber
+  type Props = ComponentProps[Instantiable0[BaseButton]] with ActiveOpacityNumber
 }
 

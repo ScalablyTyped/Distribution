@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 
 trait IPhoneGap extends IAbstract {
   /** [Method] Vibrates the device
-  		* @param time Object
-  		*/
+    * @param time Object
+    */
   @JSName("vibrate")
   var vibrate_IPhoneGap: js.UndefOr[js.Function1[/* time */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
@@ -53,7 +53,7 @@ object IPhoneGap {
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     if (vibrate != null) __obj.updateDynamic("vibrate")(js.Any.fromFunction1(vibrate))

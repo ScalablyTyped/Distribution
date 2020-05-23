@@ -37,20 +37,20 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    decimalCount: Int | Double = null,
-    frequency: Int | Double = null,
+    decimalCount: js.UndefOr[Double] = js.undefined,
+    frequency: js.UndefOr[Double] = js.undefined,
     gravityNormalized: js.UndefOr[Boolean] = js.undefined,
     logger: /* data */ LoggerData => Unit = null,
     orientationBase: String = null,
     screenAdjusted: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (decimalCount != null) __obj.updateDynamic("decimalCount")(decimalCount.asInstanceOf[js.Any])
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
-    if (!js.isUndefined(gravityNormalized)) __obj.updateDynamic("gravityNormalized")(gravityNormalized.asInstanceOf[js.Any])
+    if (!js.isUndefined(decimalCount)) __obj.updateDynamic("decimalCount")(decimalCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frequency)) __obj.updateDynamic("frequency")(frequency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gravityNormalized)) __obj.updateDynamic("gravityNormalized")(gravityNormalized.get.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(js.Any.fromFunction1(logger))
     if (orientationBase != null) __obj.updateDynamic("orientationBase")(orientationBase.asInstanceOf[js.Any])
-    if (!js.isUndefined(screenAdjusted)) __obj.updateDynamic("screenAdjusted")(screenAdjusted.asInstanceOf[js.Any])
+    if (!js.isUndefined(screenAdjusted)) __obj.updateDynamic("screenAdjusted")(screenAdjusted.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

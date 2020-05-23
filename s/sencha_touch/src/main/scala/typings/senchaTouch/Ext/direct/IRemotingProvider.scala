@@ -15,64 +15,64 @@ trait IRemotingProvider extends IJsonProvider {
   /** [Config Option] (String) */
   var enableUrlEncode: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of actions
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getActions: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of enableBuffer
-  		* @returns Number/Boolean
-  		*/
+    * @returns Number/Boolean
+    */
   var getEnableBuffer: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of enableUrlEncode
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getEnableUrlEncode: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of maxRetries
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMaxRetries: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of namespace
-  		* @returns String/Object
-  		*/
+    * @returns String/Object
+    */
   var getNamespace: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of timeout
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getTimeout: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of url
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getUrl: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (Number) */
   var maxRetries: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String/Object) */
   var namespace: js.UndefOr[js.Any] = js.undefined
   /** [Method] Sets the value of actions
-  		* @param actions Object The new value.
-  		*/
+    * @param actions Object The new value.
+    */
   var setActions: js.UndefOr[js.Function1[/* actions */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of enableBuffer
-  		* @param enableBuffer Number/Boolean The new value.
-  		*/
+    * @param enableBuffer Number/Boolean The new value.
+    */
   var setEnableBuffer: js.UndefOr[js.Function1[/* enableBuffer */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of enableUrlEncode
-  		* @param enableUrlEncode String The new value.
-  		*/
+    * @param enableUrlEncode String The new value.
+    */
   var setEnableUrlEncode: js.UndefOr[js.Function1[/* enableUrlEncode */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of maxRetries
-  		* @param maxRetries Number The new value.
-  		*/
+    * @param maxRetries Number The new value.
+    */
   var setMaxRetries: js.UndefOr[js.Function1[/* maxRetries */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of namespace
-  		* @param namespace String/Object The new value.
-  		*/
+    * @param namespace String/Object The new value.
+    */
   var setNamespace: js.UndefOr[js.Function1[/* namespace */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of timeout
-  		* @param timeout Number The new value.
-  		*/
+    * @param timeout Number The new value.
+    */
   var setTimeout: js.UndefOr[js.Function1[/* timeout */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of url
-  		* @param url String The new value.
-  		*/
+    * @param url String The new value.
+    */
   var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (Number) */
   var timeout: js.UndefOr[Double] = js.undefined
@@ -125,7 +125,7 @@ object IRemotingProvider {
     isConnected: () => Boolean = null,
     isProvider: js.UndefOr[Boolean] = js.undefined,
     listeners: js.Any = null,
-    maxRetries: Int | Double = null,
+    maxRetries: js.UndefOr[Double] = js.undefined,
     mixins: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
@@ -154,7 +154,7 @@ object IRemotingProvider {
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     suspendEvents: () => Unit = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
@@ -202,9 +202,9 @@ object IRemotingProvider {
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (isConnected != null) __obj.updateDynamic("isConnected")(js.Any.fromFunction0(isConnected))
-    if (!js.isUndefined(isProvider)) __obj.updateDynamic("isProvider")(isProvider.asInstanceOf[js.Any])
+    if (!js.isUndefined(isProvider)) __obj.updateDynamic("isProvider")(isProvider.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
     if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
@@ -230,10 +230,10 @@ object IRemotingProvider {
     if (setNamespace != null) __obj.updateDynamic("setNamespace")(js.Any.fromFunction1(setNamespace))
     if (setTimeout != null) __obj.updateDynamic("setTimeout")(js.Any.fromFunction1(setTimeout))
     if (setUrl != null) __obj.updateDynamic("setUrl")(js.Any.fromFunction1(setUrl))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
     if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
     if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))

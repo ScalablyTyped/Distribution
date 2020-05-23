@@ -6,6 +6,10 @@ import typings.std.Element
 import typings.std.Error
 import typings.std.HTMLDocument
 import typings.std.HTMLElement
+import typings.testingLibraryDom.anon.Container
+import typings.testingLibraryDom.anon.Interval
+import typings.testingLibraryDom.anon.MutationObserverOptions
+import typings.testingLibraryDom.anon.PartialConfig
 import typings.testingLibraryDom.configMod.ConfigFn
 import typings.testingLibraryDom.eventsMod.CreateObject
 import typings.testingLibraryDom.eventsMod.FireFunction
@@ -126,17 +130,17 @@ object mod extends js.Object {
   def prettyDOM(dom: HTMLDocument, maxLength: Double): String | `false` = js.native
   def prettyDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): String | `false` = js.native
   def wait(callback: js.Function0[Unit]): js.Promise[Unit] = js.native
-  def wait(callback: js.Function0[Unit], options: AnonInterval): js.Promise[Unit] = js.native
+  def wait(callback: js.Function0[Unit], options: Interval): js.Promise[Unit] = js.native
   def waitFor[T](callback: js.Function0[T]): js.Promise[T] = js.native
-  def waitFor[T](callback: js.Function0[T], options: AnonContainer): js.Promise[T] = js.native
+  def waitFor[T](callback: js.Function0[T], options: Container): js.Promise[T] = js.native
   def waitForDomChange(): js.Promise[_] = js.native
-  def waitForDomChange(options: AnonMutationObserverOptions): js.Promise[_] = js.native
+  def waitForDomChange(options: MutationObserverOptions): js.Promise[_] = js.native
   def waitForElement[T](callback: js.Function0[T]): js.Promise[T] = js.native
   def waitForElement[T](callback: js.Function0[T], options: WaitForElementOptions): js.Promise[T] = js.native
   def waitForElementToBeRemoved[T](callback: T): js.Promise[T] = js.native
-  def waitForElementToBeRemoved[T](callback: T, options: AnonMutationObserverOptions): js.Promise[T] = js.native
+  def waitForElementToBeRemoved[T](callback: T, options: Container): js.Promise[T] = js.native
   def waitForElementToBeRemoved[T](callback: js.Function0[T]): js.Promise[T] = js.native
-  def waitForElementToBeRemoved[T](callback: js.Function0[T], options: AnonMutationObserverOptions): js.Promise[T] = js.native
+  def waitForElementToBeRemoved[T](callback: js.Function0[T], options: Container): js.Promise[T] = js.native
   @js.native
   object queries extends js.Object {
     val findAllByAltText: FindAllByBoundAttribute = js.native

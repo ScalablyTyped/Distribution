@@ -21,13 +21,13 @@ object DragBoxOptions {
     boxEndCondition: (/* event */ MapBrowserEvent, /* pixel1 */ Pixel, /* pixel2 */ Pixel) => Boolean = null,
     className: String = null,
     condition: /* event */ MapBrowserEvent => Boolean = null,
-    minArea: Int | Double = null
+    minArea: js.UndefOr[Double] = js.undefined
   ): DragBoxOptions = {
     val __obj = js.Dynamic.literal()
     if (boxEndCondition != null) __obj.updateDynamic("boxEndCondition")(js.Any.fromFunction3(boxEndCondition))
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (condition != null) __obj.updateDynamic("condition")(js.Any.fromFunction1(condition))
-    if (minArea != null) __obj.updateDynamic("minArea")(minArea.asInstanceOf[js.Any])
+    if (!js.isUndefined(minArea)) __obj.updateDynamic("minArea")(minArea.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragBoxOptions]
   }
 }

@@ -21,5 +21,13 @@ class Subscriber protected () extends Component {
     */
   discoveryOptions: DiscoveryOptions
   ) = this()
+  /**
+    * Subscribes to events emitted from a Publisher.
+    *
+    * @param type Type. May be wildcarded or namespaced like in EventEmitter2.
+    * @param listener Callback. Returns nothing.
+    */
+  def on[T /* <: Event */](`type`: String, listener: js.Function1[/* event */ T, Unit]): this.type = js.native
+  def on[T /* <: Event */](`type`: js.Array[String], listener: js.Function1[/* event */ T, Unit]): this.type = js.native
 }
 

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Gpio
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object GpioOpenStatus extends js.Object {
   /** The pin is currently open in an incompatible sharing mode. For example: */
   @js.native
   sealed trait sharingViolation extends GpioOpenStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[GpioOpenStatus with Double] = js.native
-  /* 0 */ @js.native
-  object pinOpened extends TopLevel[pinOpened with Double]
-  
-  /* 1 */ @js.native
-  object pinUnavailable extends TopLevel[pinUnavailable with Double]
-  
-  /* 2 */ @js.native
-  object sharingViolation extends TopLevel[sharingViolation with Double]
   
 }
 

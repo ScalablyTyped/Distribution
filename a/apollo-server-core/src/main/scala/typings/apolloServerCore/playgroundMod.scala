@@ -1,6 +1,8 @@
 package typings.apolloServerCore
 
 import org.scalablytyped.runtime.TopLevel
+import typings.apolloServerCore.anon.EditorcursorShape
+import typings.apolloServerCore.anon.RecursivePartialRenderPag
 import typings.apollographqlGraphqlPlaygroundHtml.renderPlaygroundPageMod.RenderPageOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +15,7 @@ object playgroundMod extends js.Object {
   def createPlaygroundOptions(playground: PlaygroundConfig): js.UndefOr[RenderPageOptions] = js.native
   @js.native
   object defaultPlaygroundOptions extends js.Object {
-    var settings: AnonEditorcursorShape = js.native
+    var settings: EditorcursorShape = js.native
     var version: String = js.native
   }
   

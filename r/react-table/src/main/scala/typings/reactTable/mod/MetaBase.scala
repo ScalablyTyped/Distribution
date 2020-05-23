@@ -11,7 +11,7 @@ trait MetaBase[D /* <: js.Object */] extends js.Object {
 
 object MetaBase {
   @scala.inline
-  def apply[D /* <: js.Object */](instance: TableInstance[D], userProps: js.Any): MetaBase[D] = {
+  def apply[D](instance: TableInstance[D], userProps: js.Any): MetaBase[D] = {
     val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], userProps = userProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaBase[D]]
   }

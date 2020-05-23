@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("RoomVisual")
 @js.native
-/**
-  * You can create new RoomVisual object using its constructor.
-  * @param roomName The room name. If undefined, visuals will be posted to all rooms simultaneously.
-  */
-class RoomVisual () extends js.Object {
-  def this(roomName: String) = this()
+trait RoomVisual extends js.Object {
   /**
     * The name of the room.
     */

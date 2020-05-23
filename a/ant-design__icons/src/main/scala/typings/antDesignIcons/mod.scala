@@ -1,5 +1,7 @@
 package typings.antDesignIcons
 
+import typings.antDesignIcons.anon.PickAntdIconPropstwoToneC
+import typings.antDesignIcons.anon.PickIconComponentPropsari
 import typings.antDesignIcons.iconFontMod.CustomIconOptions
 import typings.antDesignIcons.iconFontMod.IconFontProps
 import typings.antDesignIcons.twoTonePrimaryColorMod.TwoToneColor

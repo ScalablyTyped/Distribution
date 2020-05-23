@@ -67,13 +67,13 @@ object RaidArray {
     CreatedAt: DateTime = null,
     Device: String = null,
     InstanceId: String = null,
-    Iops: Int | scala.Double = null,
+    Iops: js.UndefOr[Integer] = js.undefined,
     MountPoint: String = null,
     Name: String = null,
-    NumberOfDisks: Int | scala.Double = null,
+    NumberOfDisks: js.UndefOr[Integer] = js.undefined,
     RaidArrayId: String = null,
-    RaidLevel: Int | scala.Double = null,
-    Size: Int | scala.Double = null,
+    RaidLevel: js.UndefOr[Integer] = js.undefined,
+    Size: js.UndefOr[Integer] = js.undefined,
     StackId: String = null,
     VolumeType: String = null
   ): RaidArray = {
@@ -82,13 +82,13 @@ object RaidArray {
     if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
     if (Device != null) __obj.updateDynamic("Device")(Device.asInstanceOf[js.Any])
     if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
-    if (Iops != null) __obj.updateDynamic("Iops")(Iops.asInstanceOf[js.Any])
+    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops.get.asInstanceOf[js.Any])
     if (MountPoint != null) __obj.updateDynamic("MountPoint")(MountPoint.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (NumberOfDisks != null) __obj.updateDynamic("NumberOfDisks")(NumberOfDisks.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfDisks)) __obj.updateDynamic("NumberOfDisks")(NumberOfDisks.get.asInstanceOf[js.Any])
     if (RaidArrayId != null) __obj.updateDynamic("RaidArrayId")(RaidArrayId.asInstanceOf[js.Any])
-    if (RaidLevel != null) __obj.updateDynamic("RaidLevel")(RaidLevel.asInstanceOf[js.Any])
-    if (Size != null) __obj.updateDynamic("Size")(Size.asInstanceOf[js.Any])
+    if (!js.isUndefined(RaidLevel)) __obj.updateDynamic("RaidLevel")(RaidLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size.get.asInstanceOf[js.Any])
     if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
     if (VolumeType != null) __obj.updateDynamic("VolumeType")(VolumeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaidArray]

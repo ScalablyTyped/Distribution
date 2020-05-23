@@ -32,15 +32,15 @@ object GetApiKeysRequest {
   @scala.inline
   def apply(
     customerId: String = null,
-    includeValues: js.UndefOr[scala.Boolean] = js.undefined,
-    limit: Int | scala.Double = null,
+    includeValues: js.UndefOr[NullableBoolean] = js.undefined,
+    limit: js.UndefOr[NullableInteger] = js.undefined,
     nameQuery: String = null,
     position: String = null
   ): GetApiKeysRequest = {
     val __obj = js.Dynamic.literal()
     if (customerId != null) __obj.updateDynamic("customerId")(customerId.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeValues)) __obj.updateDynamic("includeValues")(includeValues.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeValues)) __obj.updateDynamic("includeValues")(includeValues.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (nameQuery != null) __obj.updateDynamic("nameQuery")(nameQuery.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetApiKeysRequest]

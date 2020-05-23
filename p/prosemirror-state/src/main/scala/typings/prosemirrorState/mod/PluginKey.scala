@@ -20,6 +20,6 @@ class PluginKey[T, S /* <: Schema[_, _] */] () extends js.Object {
   /**
     * Get the plugin's state from an editor state.
     */
-  def getState(state: EditorState[S]): js.UndefOr[js.Any | Null] = js.native
+  def getState(state: EditorState[S]): js.UndefOr[T | Null] = js.native
 }
 

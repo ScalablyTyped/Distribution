@@ -4,7 +4,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/***** Map *****/
 trait MapHandlerMap extends js.Object {
   /**
     * This event is fired when the viewport bounds have changed.

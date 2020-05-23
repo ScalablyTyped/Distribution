@@ -8,6 +8,6 @@ package object useSubscriptionMod {
   type SubscriptionHandler[T, R] = js.Function2[/* prev */ js.UndefOr[R], /* data */ T, R]
   type UseSubscriptionResponse[T] = js.Tuple2[
     typings.urql.useSubscriptionMod.UseSubscriptionState[T], 
-    js.Function1[/* opts */ js.UndefOr[typings.urql.PartialOperationContext], scala.Unit]
+    js.Function1[/* opts */ js.UndefOr[typings.urql.anon.PartialOperationContext], scala.Unit]
   ]
 }

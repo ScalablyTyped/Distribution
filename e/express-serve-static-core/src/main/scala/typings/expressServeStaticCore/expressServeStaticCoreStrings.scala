@@ -36,6 +36,9 @@ object expressServeStaticCoreStrings {
   sealed trait put extends js.Object
   
   @js.native
+  sealed trait router extends js.Object
+  
+  @js.native
   sealed trait `set-cookie` extends js.Object
   
   @js.native
@@ -61,6 +64,8 @@ object expressServeStaticCoreStrings {
   def post: post = "post".asInstanceOf[post]
   @scala.inline
   def put: put = "put".asInstanceOf[put]
+  @scala.inline
+  def router: router = "router".asInstanceOf[router]
   @scala.inline
   def `set-cookie`: `set-cookie` = "set-cookie".asInstanceOf[`set-cookie`]
   @scala.inline

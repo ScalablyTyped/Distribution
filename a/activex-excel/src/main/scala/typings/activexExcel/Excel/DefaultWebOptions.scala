@@ -10,9 +10,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.DefaultWebOptions")
 @js.native
-class DefaultWebOptions protected () extends js.Object {
+trait DefaultWebOptions extends js.Object {
   var AllowPNG: Boolean = js.native
   var AlwaysSaveInDefaultEncoding: Boolean = js.native
   val Application: typings.activexExcel.Excel.Application = js.native

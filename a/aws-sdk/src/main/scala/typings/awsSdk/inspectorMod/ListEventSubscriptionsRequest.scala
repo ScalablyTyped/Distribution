@@ -22,9 +22,13 @@ trait ListEventSubscriptionsRequest extends js.Object {
 
 object ListEventSubscriptionsRequest {
   @scala.inline
-  def apply(maxResults: Int | Double = null, nextToken: PaginationToken = null, resourceArn: Arn = null): ListEventSubscriptionsRequest = {
+  def apply(
+    maxResults: js.UndefOr[ListEventSubscriptionsMaxResults] = js.undefined,
+    nextToken: PaginationToken = null,
+    resourceArn: Arn = null
+  ): ListEventSubscriptionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (resourceArn != null) __obj.updateDynamic("resourceArn")(resourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListEventSubscriptionsRequest]

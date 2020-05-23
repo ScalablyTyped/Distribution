@@ -1,5 +1,6 @@
 package typings.typedoc
 
+import typings.typedoc.anon.PickIntersectionTypetype
 import typings.typedoc.modelsMod.IntersectionType
 import typings.typedoc.serializationComponentsMod.TypeSerializerComponent
 import scala.scalajs.js

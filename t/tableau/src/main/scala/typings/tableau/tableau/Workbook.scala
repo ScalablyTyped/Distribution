@@ -6,9 +6,8 @@ import scala.scalajs.js.annotation._
 
 //#endregion
 //#region Workbook Classes
-@JSGlobal("tableau.Workbook")
 @js.native
-class Workbook () extends js.Object {
+trait Workbook extends js.Object {
   /** Activates the sheet, either by name or index, and returns a promise of the sheet that was activated. */
   def activateSheetAsync(sheetNameOrIndex: String): js.Promise[Sheet] = js.native
   def activateSheetAsync(sheetNameOrIndex: Double): js.Promise[Sheet] = js.native

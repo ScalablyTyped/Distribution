@@ -1,6 +1,6 @@
 package typings.pdfjsDist.mod
 
-import typings.pdfjsDist.AnonInfo
+import typings.pdfjsDist.anon.Info
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -44,7 +44,7 @@ trait PDFDocumentProxy extends js.Object {
   /**
     * A promise that is resolved with the info and metadata of the PDF.
     **/
-  def getMetadata(): PDFPromise[AnonInfo]
+  def getMetadata(): PDFPromise[Info]
   /**
     *  A promise that is resolved with an array that is a tree outline (if it has one) of the PDF.  @see PDFTreeNode
     **/
@@ -70,7 +70,7 @@ object PDFDocumentProxy {
     getData: () => PDFPromise[Uint8Array],
     getDestinations: () => PDFPromise[js.Array[_]],
     getJavaScript: () => PDFPromise[js.Array[String]],
-    getMetadata: () => PDFPromise[AnonInfo],
+    getMetadata: () => PDFPromise[Info],
     getOutline: () => PDFPromise[js.Array[PDFTreeNode]],
     getPage: Double => PDFPromise[PDFPageProxy],
     isEncrypted: () => PDFPromise[Boolean],

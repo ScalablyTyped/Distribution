@@ -55,30 +55,30 @@ trait InsertableImage extends js.Object {
 object InsertableImage {
   @scala.inline
   def apply(
-    Duration: Int | Double = null,
-    FadeIn: Int | Double = null,
-    FadeOut: Int | Double = null,
-    Height: Int | Double = null,
+    Duration: js.UndefOr[integerMin0Max2147483647] = js.undefined,
+    FadeIn: js.UndefOr[integerMin0Max2147483647] = js.undefined,
+    FadeOut: js.UndefOr[integerMin0Max2147483647] = js.undefined,
+    Height: js.UndefOr[integerMin0Max2147483647] = js.undefined,
     ImageInserterInput: stringMin14PatternS3BmpBMPPngPNGTgaTGAHttpsBmpBMPPngPNGTgaTGA = null,
-    ImageX: Int | Double = null,
-    ImageY: Int | Double = null,
-    Layer: Int | Double = null,
-    Opacity: Int | Double = null,
+    ImageX: js.UndefOr[integerMin0Max2147483647] = js.undefined,
+    ImageY: js.UndefOr[integerMin0Max2147483647] = js.undefined,
+    Layer: js.UndefOr[integerMin0Max99] = js.undefined,
+    Opacity: js.UndefOr[integerMin0Max100] = js.undefined,
     StartTime: stringPattern01D20305D205D = null,
-    Width: Int | Double = null
+    Width: js.UndefOr[integerMin0Max2147483647] = js.undefined
   ): InsertableImage = {
     val __obj = js.Dynamic.literal()
-    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
-    if (FadeIn != null) __obj.updateDynamic("FadeIn")(FadeIn.asInstanceOf[js.Any])
-    if (FadeOut != null) __obj.updateDynamic("FadeOut")(FadeOut.asInstanceOf[js.Any])
-    if (Height != null) __obj.updateDynamic("Height")(Height.asInstanceOf[js.Any])
+    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(FadeIn)) __obj.updateDynamic("FadeIn")(FadeIn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(FadeOut)) __obj.updateDynamic("FadeOut")(FadeOut.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Height)) __obj.updateDynamic("Height")(Height.get.asInstanceOf[js.Any])
     if (ImageInserterInput != null) __obj.updateDynamic("ImageInserterInput")(ImageInserterInput.asInstanceOf[js.Any])
-    if (ImageX != null) __obj.updateDynamic("ImageX")(ImageX.asInstanceOf[js.Any])
-    if (ImageY != null) __obj.updateDynamic("ImageY")(ImageY.asInstanceOf[js.Any])
-    if (Layer != null) __obj.updateDynamic("Layer")(Layer.asInstanceOf[js.Any])
-    if (Opacity != null) __obj.updateDynamic("Opacity")(Opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(ImageX)) __obj.updateDynamic("ImageX")(ImageX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ImageY)) __obj.updateDynamic("ImageY")(ImageY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Layer)) __obj.updateDynamic("Layer")(Layer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Opacity)) __obj.updateDynamic("Opacity")(Opacity.get.asInstanceOf[js.Any])
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
-    if (Width != null) __obj.updateDynamic("Width")(Width.asInstanceOf[js.Any])
+    if (!js.isUndefined(Width)) __obj.updateDynamic("Width")(Width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertableImage]
   }
 }

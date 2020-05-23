@@ -1,6 +1,5 @@
 package typings.reactCropper.mod
 
-import typings.cropperjs.AnonX
 import typings.cropperjs.Cropper
 import typings.cropperjs.Cropper.CanvasData
 import typings.cropperjs.Cropper.ContainerData
@@ -12,6 +11,7 @@ import typings.cropperjs.Cropper.ImageData
 import typings.cropperjs.Cropper.SetCanvasDataOptions
 import typings.cropperjs.Cropper.SetCropBoxDataOptions
 import typings.cropperjs.Cropper.SetDataOptions
+import typings.cropperjs.anon.X
 import typings.react.mod.Component
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
@@ -19,45 +19,79 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-line no-empty-interface
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.cropperjs.Cropper because Inheritance from two classes. Inlined clear, crop, destroy, disable, enable, getCanvasData, getContainerData, getCropBoxData, getCroppedCanvas, getCroppedCanvas, getData, getData, getImageData, move, move, moveTo, moveTo, replace, replace, reset, rotate, rotateTo, scale, scale, scaleX, scaleY, setAspectRatio, setCanvasData, setCropBoxData, setData, setDragMode, zoom, zoomTo, zoomTo
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.cropperjs.mod.default because Inheritance from two classes. Inlined  */ @js.native
 trait ReactCropper
-  extends Component[ReactCropperProps, js.Object, js.Any] {
-  def clear(): Cropper = js.native
-  def crop(): Cropper = js.native
-  def destroy(): Cropper = js.native
-  def disable(): Cropper = js.native
-  def enable(): Cropper = js.native
-  def getCanvasData(): CanvasData = js.native
-  def getContainerData(): ContainerData = js.native
-  def getCropBoxData(): CropBoxData = js.native
-  def getCroppedCanvas(): HTMLCanvasElement = js.native
-  def getCroppedCanvas(options: GetCroppedCanvasOptions): HTMLCanvasElement = js.native
-  def getData(): Data = js.native
-  def getData(rounded: Boolean): Data = js.native
-  def getImageData(): ImageData = js.native
-  def move(offsetX: Double): Cropper = js.native
-  def move(offsetX: Double, offsetY: Double): Cropper = js.native
-  def moveTo(x: Double): Cropper = js.native
-  def moveTo(x: Double, y: Double): Cropper = js.native
+  extends Component[ReactCropperProps, js.Object, js.Any]
+     with Cropper {
+  /* InferMemberOverrides */
+  override def clear(): Cropper = js.native
+  /* InferMemberOverrides */
+  override def crop(): Cropper = js.native
+  /* InferMemberOverrides */
+  override def destroy(): Cropper = js.native
+  /* InferMemberOverrides */
+  override def disable(): Cropper = js.native
+  /* InferMemberOverrides */
+  override def enable(): Cropper = js.native
+  /* InferMemberOverrides */
+  override def getCanvasData(): CanvasData = js.native
+  /* InferMemberOverrides */
+  override def getContainerData(): ContainerData = js.native
+  /* InferMemberOverrides */
+  override def getCropBoxData(): CropBoxData = js.native
+  /* InferMemberOverrides */
+  override def getCroppedCanvas(): HTMLCanvasElement = js.native
+  /* InferMemberOverrides */
+  override def getCroppedCanvas(options: GetCroppedCanvasOptions): HTMLCanvasElement = js.native
+  /* InferMemberOverrides */
+  override def getData(): Data = js.native
+  /* InferMemberOverrides */
+  override def getData(rounded: Boolean): Data = js.native
+  /* InferMemberOverrides */
+  override def getImageData(): ImageData = js.native
+  /* InferMemberOverrides */
+  override def move(offsetX: Double): Cropper = js.native
+  /* InferMemberOverrides */
+  override def move(offsetX: Double, offsetY: Double): Cropper = js.native
+  /* InferMemberOverrides */
+  override def moveTo(x: Double): Cropper = js.native
+  /* InferMemberOverrides */
+  override def moveTo(x: Double, y: Double): Cropper = js.native
   def on(eventname: String, callback: js.Function0[Unit]): Unit = js.native
-  def replace(url: String): Cropper = js.native
-  def replace(url: String, onlyColorChanged: Boolean): Cropper = js.native
-  def reset(): Cropper = js.native
-  def rotate(degree: Double): Cropper = js.native
-  def rotateTo(degree: Double): Cropper = js.native
-  def scale(scaleX: Double): Cropper = js.native
-  def scale(scaleX: Double, scaleY: Double): Cropper = js.native
-  def scaleX(scaleX: Double): Cropper = js.native
-  def scaleY(scaleY: Double): Cropper = js.native
-  def setAspectRatio(aspectRatio: Double): Cropper = js.native
-  def setCanvasData(data: SetCanvasDataOptions): Cropper = js.native
-  def setCropBoxData(data: SetCropBoxDataOptions): Cropper = js.native
-  def setData(data: SetDataOptions): Cropper = js.native
-  def setDragMode(dragMode: DragMode): Cropper = js.native
-  def zoom(ratio: Double): Cropper = js.native
-  def zoomTo(ratio: Double): Cropper = js.native
-  def zoomTo(ratio: Double, pivot: AnonX): Cropper = js.native
+  /* InferMemberOverrides */
+  override def replace(url: String): Cropper = js.native
+  /* InferMemberOverrides */
+  override def replace(url: String, onlyColorChanged: Boolean): Cropper = js.native
+  /* InferMemberOverrides */
+  override def reset(): Cropper = js.native
+  /* InferMemberOverrides */
+  override def rotate(degree: Double): Cropper = js.native
+  /* InferMemberOverrides */
+  override def rotateTo(degree: Double): Cropper = js.native
+  /* InferMemberOverrides */
+  override def scale(scaleX: Double): Cropper = js.native
+  /* InferMemberOverrides */
+  override def scale(scaleX: Double, scaleY: Double): Cropper = js.native
+  /* InferMemberOverrides */
+  override def scaleX(scaleX: Double): Cropper = js.native
+  /* InferMemberOverrides */
+  override def scaleY(scaleY: Double): Cropper = js.native
+  /* InferMemberOverrides */
+  override def setAspectRatio(aspectRatio: Double): Cropper = js.native
+  /* InferMemberOverrides */
+  override def setCanvasData(data: SetCanvasDataOptions): Cropper = js.native
+  /* InferMemberOverrides */
+  override def setCropBoxData(data: SetCropBoxDataOptions): Cropper = js.native
+  /* InferMemberOverrides */
+  override def setData(data: SetDataOptions): Cropper = js.native
+  /* InferMemberOverrides */
+  override def setDragMode(dragMode: DragMode): Cropper = js.native
+  /* InferMemberOverrides */
+  override def zoom(ratio: Double): Cropper = js.native
+  /* InferMemberOverrides */
+  override def zoomTo(ratio: Double): Cropper = js.native
+  /* InferMemberOverrides */
+  override def zoomTo(ratio: Double, pivot: X): Cropper = js.native
 }
 

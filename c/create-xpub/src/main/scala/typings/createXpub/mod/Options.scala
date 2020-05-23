@@ -35,10 +35,10 @@ object Options {
     childNumber: Double,
     depth: Double,
     publicKey: String,
-    networkVersion: Int | Double = null
+    networkVersion: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal(chainCode = chainCode.asInstanceOf[js.Any], childNumber = childNumber.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
-    if (networkVersion != null) __obj.updateDynamic("networkVersion")(networkVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(networkVersion)) __obj.updateDynamic("networkVersion")(networkVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

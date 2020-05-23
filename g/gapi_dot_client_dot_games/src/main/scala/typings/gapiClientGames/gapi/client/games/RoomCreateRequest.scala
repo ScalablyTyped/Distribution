@@ -36,7 +36,7 @@ object RoomCreateRequest {
     kind: String = null,
     networkDiagnostics: NetworkDiagnostics = null,
     requestId: String = null,
-    variant: Int | Double = null
+    variant: js.UndefOr[Double] = js.undefined
   ): RoomCreateRequest = {
     val __obj = js.Dynamic.literal()
     if (autoMatchingCriteria != null) __obj.updateDynamic("autoMatchingCriteria")(autoMatchingCriteria.asInstanceOf[js.Any])
@@ -46,7 +46,7 @@ object RoomCreateRequest {
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (networkDiagnostics != null) __obj.updateDynamic("networkDiagnostics")(networkDiagnostics.asInstanceOf[js.Any])
     if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
-    if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
+    if (!js.isUndefined(variant)) __obj.updateDynamic("variant")(variant.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoomCreateRequest]
   }
 }

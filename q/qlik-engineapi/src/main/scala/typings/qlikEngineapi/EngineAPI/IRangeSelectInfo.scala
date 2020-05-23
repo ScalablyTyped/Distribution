@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
   */
 trait IRangeSelectInfo extends js.Object {
   /* ToCheck!
-    qRangeLo	Lowest value in the range.	Double
-    qRangeHi	Highest value in the range.	Double
-    qMeasure	Label of the measure.	String
+    qRangeLo    Lowest value in the range.    Double
+    qRangeHi    Highest value in the range.    Double
+    qMeasure    Label of the measure.    String
     */
   /**
     * Range of values.

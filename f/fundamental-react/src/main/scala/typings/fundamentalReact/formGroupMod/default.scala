@@ -1,7 +1,7 @@
 package typings.fundamentalReact.formGroupMod
 
-import typings.fundamentalReact.PartialFormGroupProps
-import typings.fundamentalReact.WeakValidationMapFormGrou
+import typings.fundamentalReact.anon.PartialFormGroupProps
+import typings.fundamentalReact.anon.WeakValidationMapFormGrou
 import typings.fundamentalReact.fundamentalReactStrings.FormGroup
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement

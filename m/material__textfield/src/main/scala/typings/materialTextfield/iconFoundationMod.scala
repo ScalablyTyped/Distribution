@@ -1,7 +1,7 @@
 package typings.materialTextfield
 
 import typings.materialTextfield.iconAdapterMod.MDCTextFieldIconAdapter
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ object iconFoundationMod extends js.Object {
     /**
       * Handles an interaction event
       */
-    def handleInteraction(evt: Event_): Unit = js.native
+    def handleInteraction(evt: Event): Unit = js.native
     /**
       * Sets the content of the helper text field.
       */

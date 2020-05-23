@@ -4,22 +4,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("connect.Endpoint")
-@js.native
-class Endpoint () extends js.Object {
-  var agentLogin: String = js.native
-  var endpointARN: String = js.native
-  var endpointId: String = js.native
-  var name: String = js.native
-  var phoneNumber: String = js.native
-  var queue: String = js.native
-  var `type`: EndpointType = js.native
+trait Endpoint extends js.Object {
+  var agentLogin: String
+  var endpointARN: String
+  var endpointId: String
+  var name: String
+  var phoneNumber: String
+  var queue: String
+  var `type`: EndpointType
 }
 
-/* static members */
-@JSGlobal("connect.Endpoint")
-@js.native
-object Endpoint extends js.Object {
-  def byPhoneNumber(phoneNumber: String): Endpoint = js.native
+object Endpoint {
+  @scala.inline
+  def apply(
+    agentLogin: String,
+    endpointARN: String,
+    endpointId: String,
+    name: String,
+    phoneNumber: String,
+    queue: String,
+    `type`: EndpointType
+  ): Endpoint = {
+    val __obj = js.Dynamic.literal(agentLogin = agentLogin.asInstanceOf[js.Any], endpointARN = endpointARN.asInstanceOf[js.Any], endpointId = endpointId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], phoneNumber = phoneNumber.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Endpoint]
+  }
 }
 

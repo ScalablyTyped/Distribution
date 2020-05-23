@@ -37,34 +37,34 @@ object ParserOptionsArgs {
     headers: Boolean | HeaderTransformFunction | HeaderArray = null,
     ignoreEmpty: js.UndefOr[Boolean] = js.undefined,
     ltrim: js.UndefOr[Boolean] = js.undefined,
-    maxRows: Int | Double = null,
+    maxRows: js.UndefOr[Double] = js.undefined,
     objectMode: js.UndefOr[Boolean] = js.undefined,
-    quote: String = null,
+    quote: js.UndefOr[Null | String] = js.undefined,
     renameHeaders: js.UndefOr[Boolean] = js.undefined,
     rtrim: js.UndefOr[Boolean] = js.undefined,
-    skipLines: Int | Double = null,
-    skipRows: Int | Double = null,
+    skipLines: js.UndefOr[Double] = js.undefined,
+    skipRows: js.UndefOr[Double] = js.undefined,
     strictColumnHandling: js.UndefOr[Boolean] = js.undefined,
     trim: js.UndefOr[Boolean] = js.undefined
   ): ParserOptionsArgs = {
     val __obj = js.Dynamic.literal()
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(discardUnmappedColumns)) __obj.updateDynamic("discardUnmappedColumns")(discardUnmappedColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(discardUnmappedColumns)) __obj.updateDynamic("discardUnmappedColumns")(discardUnmappedColumns.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (escape != null) __obj.updateDynamic("escape")(escape.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreEmpty)) __obj.updateDynamic("ignoreEmpty")(ignoreEmpty.asInstanceOf[js.Any])
-    if (!js.isUndefined(ltrim)) __obj.updateDynamic("ltrim")(ltrim.asInstanceOf[js.Any])
-    if (maxRows != null) __obj.updateDynamic("maxRows")(maxRows.asInstanceOf[js.Any])
-    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.asInstanceOf[js.Any])
-    if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
-    if (!js.isUndefined(renameHeaders)) __obj.updateDynamic("renameHeaders")(renameHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtrim)) __obj.updateDynamic("rtrim")(rtrim.asInstanceOf[js.Any])
-    if (skipLines != null) __obj.updateDynamic("skipLines")(skipLines.asInstanceOf[js.Any])
-    if (skipRows != null) __obj.updateDynamic("skipRows")(skipRows.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictColumnHandling)) __obj.updateDynamic("strictColumnHandling")(strictColumnHandling.asInstanceOf[js.Any])
-    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreEmpty)) __obj.updateDynamic("ignoreEmpty")(ignoreEmpty.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ltrim)) __obj.updateDynamic("ltrim")(ltrim.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRows)) __obj.updateDynamic("maxRows")(maxRows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quote)) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
+    if (!js.isUndefined(renameHeaders)) __obj.updateDynamic("renameHeaders")(renameHeaders.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtrim)) __obj.updateDynamic("rtrim")(rtrim.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipLines)) __obj.updateDynamic("skipLines")(skipLines.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipRows)) __obj.updateDynamic("skipRows")(skipRows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictColumnHandling)) __obj.updateDynamic("strictColumnHandling")(strictColumnHandling.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParserOptionsArgs]
   }
 }

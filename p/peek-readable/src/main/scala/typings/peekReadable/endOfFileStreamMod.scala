@@ -1,6 +1,5 @@
 package typings.peekReadable
 
-import typings.peekReadable.peekReadableStrings.`End-Of-Stream`
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,6 +16,6 @@ object endOfFileStreamMod extends js.Object {
     override var name: String = js.native
   }
   
-  val defaultMessages: `End-Of-Stream` = js.native
+  val defaultMessages: /* "End-Of-Stream" */ String = js.native
 }
 

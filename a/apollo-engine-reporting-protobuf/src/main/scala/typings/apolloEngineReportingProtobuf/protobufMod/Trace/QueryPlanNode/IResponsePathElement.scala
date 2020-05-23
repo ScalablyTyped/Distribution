@@ -14,10 +14,13 @@ trait IResponsePathElement extends js.Object {
 
 object IResponsePathElement {
   @scala.inline
-  def apply(fieldName: String = null, index: Int | Double = null): IResponsePathElement = {
+  def apply(
+    fieldName: js.UndefOr[Null | String] = js.undefined,
+    index: js.UndefOr[Null | Double] = js.undefined
+  ): IResponsePathElement = {
     val __obj = js.Dynamic.literal()
-    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(fieldName)) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResponsePathElement]
   }
 }

@@ -1,10 +1,10 @@
 package typings.sequelize.mod
 
 import typings.node.Buffer
-import typings.sequelize.AnonCount
-import typings.sequelize.UpsertOptionsreturningfal
-import typings.sequelize.UpsertOptionsreturningfalBenchmark
-import typings.sequelize.UpsertOptionsreturningtru
+import typings.sequelize.anon.Count
+import typings.sequelize.anon.UpsertOptionsreturningfal
+import typings.sequelize.anon.UpsertOptionsreturningfalBenchmark
+import typings.sequelize.anon.UpsertOptionsreturningtru
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -226,10 +226,10 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
     * without
     * profiles will be counted
     */
-  def findAndCount[TCustomAttributes](): typings.bluebird.mod.^[AnonCount[TInstance]] = js.native
-  def findAndCount[TCustomAttributes](options: FindOptions[TAttributes with TCustomAttributes]): typings.bluebird.mod.^[AnonCount[TInstance]] = js.native
-  def findAndCountAll[TCustomAttributes](): typings.bluebird.mod.^[AnonCount[TInstance]] = js.native
-  def findAndCountAll[TCustomAttributes](options: FindOptions[TAttributes with TCustomAttributes]): typings.bluebird.mod.^[AnonCount[TInstance]] = js.native
+  def findAndCount[TCustomAttributes](): typings.bluebird.mod.^[Count[TInstance]] = js.native
+  def findAndCount[TCustomAttributes](options: FindOptions[TAttributes with TCustomAttributes]): typings.bluebird.mod.^[Count[TInstance]] = js.native
+  def findAndCountAll[TCustomAttributes](): typings.bluebird.mod.^[Count[TInstance]] = js.native
+  def findAndCountAll[TCustomAttributes](options: FindOptions[TAttributes with TCustomAttributes]): typings.bluebird.mod.^[Count[TInstance]] = js.native
   /**
     * Search for a single instance by its primary key. This applies LIMIT 1, so the listener will
     * always be called with a single instance.

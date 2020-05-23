@@ -28,9 +28,9 @@ object MatterTileOptions {
     isStatic: js.UndefOr[Boolean] = js.undefined
   ): MatterTileOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addToWorld)) __obj.updateDynamic("addToWorld")(addToWorld.asInstanceOf[js.Any])
+    if (!js.isUndefined(addToWorld)) __obj.updateDynamic("addToWorld")(addToWorld.get.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (!js.isUndefined(isStatic)) __obj.updateDynamic("isStatic")(isStatic.asInstanceOf[js.Any])
+    if (!js.isUndefined(isStatic)) __obj.updateDynamic("isStatic")(isStatic.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatterTileOptions]
   }
 }

@@ -15,13 +15,7 @@ object tensorflowTfjsNumbers {
   sealed trait `1` extends js.Object
   
   @js.native
-  sealed trait `10000` extends js.Object
-  
-  @js.native
   sealed trait `2` extends js.Object
-  
-  @js.native
-  sealed trait `30` extends js.Object
   
   @scala.inline
   def `0.001`: `0.001` = 0.001.asInstanceOf[`0.001`]
@@ -30,10 +24,6 @@ object tensorflowTfjsNumbers {
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def `10000`: `10000` = 10000.asInstanceOf[`10000`]
-  @scala.inline
   def `2`: `2` = 2.asInstanceOf[`2`]
-  @scala.inline
-  def `30`: `30` = 30.asInstanceOf[`30`]
 }
 

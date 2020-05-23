@@ -41,16 +41,16 @@ trait CameraProperties extends js.Object {
 object CameraProperties {
   @scala.inline
   def apply(
-    fov: Int | Double = null,
-    heading: Int | Double = null,
+    fov: js.UndefOr[Double] = js.undefined,
+    heading: js.UndefOr[Double] = js.undefined,
     position: PointProperties = null,
-    tilt: Int | Double = null
+    tilt: js.UndefOr[Double] = js.undefined
   ): CameraProperties = {
     val __obj = js.Dynamic.literal()
-    if (fov != null) __obj.updateDynamic("fov")(fov.asInstanceOf[js.Any])
-    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
+    if (!js.isUndefined(fov)) __obj.updateDynamic("fov")(fov.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(heading)) __obj.updateDynamic("heading")(heading.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (tilt != null) __obj.updateDynamic("tilt")(tilt.asInstanceOf[js.Any])
+    if (!js.isUndefined(tilt)) __obj.updateDynamic("tilt")(tilt.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraProperties]
   }
 }

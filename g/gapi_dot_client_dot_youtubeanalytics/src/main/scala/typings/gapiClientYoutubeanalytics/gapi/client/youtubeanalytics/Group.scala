@@ -1,27 +1,27 @@
 package typings.gapiClientYoutubeanalytics.gapi.client.youtubeanalytics
 
-import typings.gapiClientYoutubeanalytics.AnonItemCount
-import typings.gapiClientYoutubeanalytics.AnonPublishedAt
+import typings.gapiClientYoutubeanalytics.anon.ItemCount
+import typings.gapiClientYoutubeanalytics.anon.PublishedAt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Group extends js.Object {
-  var contentDetails: js.UndefOr[AnonItemCount] = js.undefined
+  var contentDetails: js.UndefOr[ItemCount] = js.undefined
   var etag: js.UndefOr[String] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var kind: js.UndefOr[String] = js.undefined
-  var snippet: js.UndefOr[AnonPublishedAt] = js.undefined
+  var snippet: js.UndefOr[PublishedAt] = js.undefined
 }
 
 object Group {
   @scala.inline
   def apply(
-    contentDetails: AnonItemCount = null,
+    contentDetails: ItemCount = null,
     etag: String = null,
     id: String = null,
     kind: String = null,
-    snippet: AnonPublishedAt = null
+    snippet: PublishedAt = null
   ): Group = {
     val __obj = js.Dynamic.literal()
     if (contentDetails != null) __obj.updateDynamic("contentDetails")(contentDetails.asInstanceOf[js.Any])

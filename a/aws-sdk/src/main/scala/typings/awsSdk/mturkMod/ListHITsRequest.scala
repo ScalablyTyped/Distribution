@@ -15,9 +15,9 @@ trait ListHITsRequest extends js.Object {
 
 object ListHITsRequest {
   @scala.inline
-  def apply(MaxResults: Int | Double = null, NextToken: PaginationToken = null): ListHITsRequest = {
+  def apply(MaxResults: js.UndefOr[ResultSize] = js.undefined, NextToken: PaginationToken = null): ListHITsRequest = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListHITsRequest]
   }

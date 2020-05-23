@@ -1,6 +1,6 @@
 package typings.antDesignProLayout.getPageTitleMod
 
-import typings.antDesignProLayout.AnonId
+import typings.antDesignProLayout.anon.Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ object getPageTitleInfo extends js.Object {
     * @param props
     * @param ignoreTile
     */
-  def apply(props: GetPageTitleProps): AnonId = js.native
-  def apply(props: GetPageTitleProps, ignoreTile: Boolean): AnonId = js.native
+  def apply(props: GetPageTitleProps): Id = js.native
+  def apply(props: GetPageTitleProps, ignoreTile: Boolean): Id = js.native
 }
 

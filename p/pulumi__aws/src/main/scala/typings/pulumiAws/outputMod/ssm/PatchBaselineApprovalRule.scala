@@ -35,7 +35,7 @@ object PatchBaselineApprovalRule {
   ): PatchBaselineApprovalRule = {
     val __obj = js.Dynamic.literal(approveAfterDays = approveAfterDays.asInstanceOf[js.Any], patchFilters = patchFilters.asInstanceOf[js.Any])
     if (complianceLevel != null) __obj.updateDynamic("complianceLevel")(complianceLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableNonSecurity)) __obj.updateDynamic("enableNonSecurity")(enableNonSecurity.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableNonSecurity)) __obj.updateDynamic("enableNonSecurity")(enableNonSecurity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchBaselineApprovalRule]
   }
 }

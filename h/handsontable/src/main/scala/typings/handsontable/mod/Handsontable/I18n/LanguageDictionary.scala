@@ -12,10 +12,7 @@ trait LanguageDictionary
 
 object LanguageDictionary {
   @scala.inline
-  def apply(
-    languageCode: String,
-    StringDictionary: /* phraseKey */ StringDictionary[String | js.Array[String]] = null
-  ): LanguageDictionary = {
+  def apply(languageCode: String, StringDictionary: /* p */ StringDictionary[String | js.Array[String]] = null): LanguageDictionary = {
     val __obj = js.Dynamic.literal(languageCode = languageCode.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[LanguageDictionary]

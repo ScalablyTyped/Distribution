@@ -2,6 +2,7 @@ package typings.grpcGrpcJs.resolverMod
 
 import typings.grpcGrpcJs.callStreamMod.StatusObject
 import typings.grpcGrpcJs.serviceConfigMod.ServiceConfig
+import typings.grpcGrpcJs.subchannelMod.SubchannelAddress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,9 +14,9 @@ trait ResolverListener extends js.Object {
     * @param error Describes how resolution failed
     */
   def onError(error: StatusObject): Unit = js.native
-  def onSuccessfulResolution(addressList: js.Array[String]): Unit = js.native
-  def onSuccessfulResolution(addressList: js.Array[String], serviceConfig: Null, serviceConfigError: StatusObject): Unit = js.native
-  def onSuccessfulResolution(addressList: js.Array[String], serviceConfig: ServiceConfig): Unit = js.native
+  def onSuccessfulResolution(addressList: js.Array[SubchannelAddress]): Unit = js.native
+  def onSuccessfulResolution(addressList: js.Array[SubchannelAddress], serviceConfig: Null, serviceConfigError: StatusObject): Unit = js.native
+  def onSuccessfulResolution(addressList: js.Array[SubchannelAddress], serviceConfig: ServiceConfig): Unit = js.native
   /**
     * Called whenever the resolver has new name resolution results to report
     * @param addressList The new list of backend addresses
@@ -25,6 +26,10 @@ trait ResolverListener extends js.Object {
     * @param serviceConfigError If non-`null`, indicates that the retrieved
     *     service configuration was invalid
     */
-  def onSuccessfulResolution(addressList: js.Array[String], serviceConfig: ServiceConfig, serviceConfigError: StatusObject): Unit = js.native
+  def onSuccessfulResolution(
+    addressList: js.Array[SubchannelAddress],
+    serviceConfig: ServiceConfig,
+    serviceConfigError: StatusObject
+  ): Unit = js.native
 }
 

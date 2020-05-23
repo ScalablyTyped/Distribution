@@ -35,11 +35,11 @@ object IList {
     has_more: Boolean,
     `object`: String,
     url: String,
-    total_count: Int | Double = null
+    total_count: js.UndefOr[Double] = js.undefined
   ): IList[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], has_more = has_more.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (total_count != null) __obj.updateDynamic("total_count")(total_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(total_count)) __obj.updateDynamic("total_count")(total_count.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IList[T]]
   }
 }

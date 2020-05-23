@@ -1,6 +1,6 @@
 package typings.cloudmersiveVirusApiClient.mod
 
-import typings.cloudmersiveVirusApiClient.AnonApikey
+import typings.cloudmersiveVirusApiClient.anon.Apikey
 import typings.node.httpMod.Agent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ trait ApiInstance extends js.Object {
   /**
     * @param authentications object - The authentication methods to be included for all API calls.
     */
-  var authentications: AnonApikey
+  var authentications: Apikey
   /**
     * @param basePath string - The base URL against which to resolve every API
     * call's (relative) path.
@@ -56,7 +56,7 @@ object ApiInstance {
   @scala.inline
   def apply(
     agent: Agent,
-    authentications: AnonApikey,
+    authentications: Apikey,
     basePath: String,
     cache: Boolean,
     defaultHeaders: js.Array[String],
@@ -64,8 +64,7 @@ object ApiInstance {
     timeout: Double,
     requestAgent: Agent = null
   ): ApiInstance = {
-    val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], authentications = authentications.asInstanceOf[js.Any], basePath = basePath.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], defaultHeaders = defaultHeaders.asInstanceOf[js.Any], enableCookies = enableCookies.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
-    if (requestAgent != null) __obj.updateDynamic("requestAgent")(requestAgent.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], authentications = authentications.asInstanceOf[js.Any], basePath = basePath.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], defaultHeaders = defaultHeaders.asInstanceOf[js.Any], enableCookies = enableCookies.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any], requestAgent = requestAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiInstance]
   }
 }

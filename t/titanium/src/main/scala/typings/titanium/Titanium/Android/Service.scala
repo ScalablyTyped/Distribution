@@ -11,23 +11,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Android application component that executes in the background.
-		 */
-@JSGlobal("Titanium.Android.Service")
+  * Android application component that executes in the background.
+  */
 @js.native
-class Service () extends Proxy {
+trait Service extends Proxy {
   /**
-  			 * The intent used to start or bind to the Service.
-  			 */
+    * The intent used to start or bind to the Service.
+    */
   val intent: Intent = js.native
   /**
-  			 * A service can be started more than once -- this number (based on an incrementing integer)
-  			 * indicates which "start number" in the sequence the current service instance is.
-  			 */
+    * A service can be started more than once -- this number (based on an incrementing integer)
+    * indicates which "start number" in the sequence the current service instance is.
+    */
   val serviceInstanceId: Double = js.native
   /**
-  			 * Adds the specified callback as an event listener for the named event.
-  			 */
+    * Adds the specified callback as an event listener for the named event.
+    */
   @JSName("addEventListener")
   def addEventListener_pause(name: pause, callback: js.ThisFunction1[/* this */ this.type, /* event */ ServicePauseEvent, Unit]): Unit = js.native
   @JSName("addEventListener")
@@ -45,8 +44,8 @@ class Service () extends Proxy {
     callback: js.ThisFunction1[/* this */ this.type, /* event */ ServiceTaskremovedEvent, Unit]
   ): Unit = js.native
   /**
-  			 * Fires a synthesized event to any registered listeners.
-  			 */
+    * Fires a synthesized event to any registered listeners.
+    */
   @JSName("fireEvent")
   def fireEvent_pause(name: pause): Unit = js.native
   @JSName("fireEvent")
@@ -68,27 +67,27 @@ class Service () extends Proxy {
   @JSName("fireEvent")
   def fireEvent_taskremoved(name: taskremoved, event: ServiceTaskremovedEvent): Unit = js.native
   /**
-  			 * Puts the service into the "background" state and removes its foreground notification.
-  			 */
+    * Puts the service into the "background" state and removes its foreground notification.
+    */
   def foregroundCancel(): Unit = js.native
   /**
-  			 * Puts the service into the "foreground" state and displays a notification.
-  			 */
+    * Puts the service into the "foreground" state and displays a notification.
+    */
   def foregroundNotify(id: Double, notification: Notification): Unit = js.native
   def foregroundNotify(id: Double, notification: Notification, foregroundServiceType: Double): Unit = js.native
   /**
-  			 * Gets the value of the <Titanium.Android.Service.intent> property.
-  			 * @deprecated Access <Titanium.Android.Service.intent> instead.
-  			 */
+    * Gets the value of the <Titanium.Android.Service.intent> property.
+    * @deprecated Access <Titanium.Android.Service.intent> instead.
+    */
   def getIntent(): Intent = js.native
   /**
-  			 * Gets the value of the <Titanium.Android.Service.serviceInstanceId> property.
-  			 * @deprecated Access <Titanium.Android.Service.serviceInstanceId> instead.
-  			 */
+    * Gets the value of the <Titanium.Android.Service.serviceInstanceId> property.
+    * @deprecated Access <Titanium.Android.Service.serviceInstanceId> instead.
+    */
   def getServiceInstanceId(): Double = js.native
   /**
-  			 * Removes the specified callback as an event listener for the named event.
-  			 */
+    * Removes the specified callback as an event listener for the named event.
+    */
   @JSName("removeEventListener")
   def removeEventListener_pause(name: pause, callback: js.ThisFunction1[/* this */ this.type, /* event */ ServicePauseEvent, Unit]): Unit = js.native
   @JSName("removeEventListener")
@@ -106,12 +105,12 @@ class Service () extends Proxy {
     callback: js.ThisFunction1[/* this */ this.type, /* event */ ServiceTaskremovedEvent, Unit]
   ): Unit = js.native
   /**
-  			 * Starts the Service.
-  			 */
+    * Starts the Service.
+    */
   def start(): Unit = js.native
   /**
-  			 * Stops this running instance of the Service.
-  			 */
+    * Stops this running instance of the Service.
+    */
   def stop(): Unit = js.native
 }
 

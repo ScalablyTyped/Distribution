@@ -30,17 +30,17 @@ object GeolocationRequest {
     carrier: String = null,
     cellTowers: js.Array[CellTower] = null,
     considerIp: js.UndefOr[Boolean] = js.undefined,
-    homeMobileCountryCode: Int | Double = null,
-    homeMobileNetworkCode: Int | Double = null,
+    homeMobileCountryCode: js.UndefOr[Double] = js.undefined,
+    homeMobileNetworkCode: js.UndefOr[Double] = js.undefined,
     radioType: RadioType = null,
     wifiAccessPoints: js.Array[WifiAccessPoint] = null
   ): GeolocationRequest = {
     val __obj = js.Dynamic.literal()
     if (carrier != null) __obj.updateDynamic("carrier")(carrier.asInstanceOf[js.Any])
     if (cellTowers != null) __obj.updateDynamic("cellTowers")(cellTowers.asInstanceOf[js.Any])
-    if (!js.isUndefined(considerIp)) __obj.updateDynamic("considerIp")(considerIp.asInstanceOf[js.Any])
-    if (homeMobileCountryCode != null) __obj.updateDynamic("homeMobileCountryCode")(homeMobileCountryCode.asInstanceOf[js.Any])
-    if (homeMobileNetworkCode != null) __obj.updateDynamic("homeMobileNetworkCode")(homeMobileNetworkCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(considerIp)) __obj.updateDynamic("considerIp")(considerIp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(homeMobileCountryCode)) __obj.updateDynamic("homeMobileCountryCode")(homeMobileCountryCode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(homeMobileNetworkCode)) __obj.updateDynamic("homeMobileNetworkCode")(homeMobileNetworkCode.get.asInstanceOf[js.Any])
     if (radioType != null) __obj.updateDynamic("radioType")(radioType.asInstanceOf[js.Any])
     if (wifiAccessPoints != null) __obj.updateDynamic("wifiAccessPoints")(wifiAccessPoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeolocationRequest]

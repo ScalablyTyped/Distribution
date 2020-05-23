@@ -1,7 +1,7 @@
 package typings.gapiClientGenomics.gapi.client.genomics
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientGenomics.AnonAccesstoken
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientGenomics.anon.Accesstoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,12 +33,12 @@ trait ReadsResource extends js.Object {
     * Implements
     * [GlobalAllianceApi.searchReads](https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/readmethods.avdl#L85).
     */
-  def search(request: AnonAccesstoken): Request_[SearchReadsResponse]
+  def search(request: Accesstoken): Request[SearchReadsResponse]
 }
 
 object ReadsResource {
   @scala.inline
-  def apply(search: AnonAccesstoken => Request_[SearchReadsResponse]): ReadsResource = {
+  def apply(search: Accesstoken => Request[SearchReadsResponse]): ReadsResource = {
     val __obj = js.Dynamic.literal(search = js.Any.fromFunction1(search))
     __obj.asInstanceOf[ReadsResource]
   }

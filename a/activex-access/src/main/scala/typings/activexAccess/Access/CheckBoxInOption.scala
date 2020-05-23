@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access._CheckBoxInOption")
 @js.native
-class CheckBoxInOption protected () extends js.Object {
+trait CheckBoxInOption extends js.Object {
   @JSName("Access._CheckBoxInOption_typekey")
   var AccessDot_CheckBoxInOption_typekey: CheckBoxInOption = js.native
   var AddColon: Boolean = js.native

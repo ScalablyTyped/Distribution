@@ -1,16 +1,12 @@
 package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.JQuery
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.Dialog")
 @js.native
-class Dialog protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: DialogOptions) = this()
+trait Dialog extends Widget {
   var wrapper: JQuery = js.native
   def close(): Dialog = js.native
   def content(): String = js.native
@@ -24,13 +20,5 @@ class Dialog protected () extends Widget {
   @JSName("title")
   def title_Dialog(): Dialog = js.native
   def toFront(): Dialog = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.Dialog")
-@js.native
-object Dialog extends js.Object {
-  var fn: Dialog = js.native
-  def extend(proto: js.Object): Dialog = js.native
 }
 

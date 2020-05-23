@@ -18,23 +18,23 @@ trait BulkWriteOpResultObject extends js.Object {
 object BulkWriteOpResultObject {
   @scala.inline
   def apply(
-    deletedCount: Int | scala.Double = null,
-    insertedCount: Int | scala.Double = null,
+    deletedCount: js.UndefOr[scala.Double] = js.undefined,
+    insertedCount: js.UndefOr[scala.Double] = js.undefined,
     insertedIds: js.Any = null,
-    matchedCount: Int | scala.Double = null,
-    modifiedCount: Int | scala.Double = null,
+    matchedCount: js.UndefOr[scala.Double] = js.undefined,
+    modifiedCount: js.UndefOr[scala.Double] = js.undefined,
     result: js.Any = null,
-    upsertedCount: Int | scala.Double = null,
+    upsertedCount: js.UndefOr[scala.Double] = js.undefined,
     upsertedIds: js.Any = null
   ): BulkWriteOpResultObject = {
     val __obj = js.Dynamic.literal()
-    if (deletedCount != null) __obj.updateDynamic("deletedCount")(deletedCount.asInstanceOf[js.Any])
-    if (insertedCount != null) __obj.updateDynamic("insertedCount")(insertedCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(deletedCount)) __obj.updateDynamic("deletedCount")(deletedCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(insertedCount)) __obj.updateDynamic("insertedCount")(insertedCount.get.asInstanceOf[js.Any])
     if (insertedIds != null) __obj.updateDynamic("insertedIds")(insertedIds.asInstanceOf[js.Any])
-    if (matchedCount != null) __obj.updateDynamic("matchedCount")(matchedCount.asInstanceOf[js.Any])
-    if (modifiedCount != null) __obj.updateDynamic("modifiedCount")(modifiedCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchedCount)) __obj.updateDynamic("matchedCount")(matchedCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(modifiedCount)) __obj.updateDynamic("modifiedCount")(modifiedCount.get.asInstanceOf[js.Any])
     if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
-    if (upsertedCount != null) __obj.updateDynamic("upsertedCount")(upsertedCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(upsertedCount)) __obj.updateDynamic("upsertedCount")(upsertedCount.get.asInstanceOf[js.Any])
     if (upsertedIds != null) __obj.updateDynamic("upsertedIds")(upsertedIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulkWriteOpResultObject]
   }

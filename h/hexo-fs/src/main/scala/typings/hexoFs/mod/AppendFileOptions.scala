@@ -12,9 +12,13 @@ trait AppendFileOptions extends js.Object {
 
 object AppendFileOptions {
   @scala.inline
-  def apply(encoding: String = null, flag: String = null, mode: String | Double = null): AppendFileOptions = {
+  def apply(
+    encoding: js.UndefOr[Null | String] = js.undefined,
+    flag: String = null,
+    mode: String | Double = null
+  ): AppendFileOptions = {
     val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (!js.isUndefined(encoding)) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (flag != null) __obj.updateDynamic("flag")(flag.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppendFileOptions]
