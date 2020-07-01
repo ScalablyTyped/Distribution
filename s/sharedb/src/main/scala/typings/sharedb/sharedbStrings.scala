@@ -85,6 +85,9 @@ object sharedbStrings {
   sealed trait insert extends QueryEvent
   
   @js.native
+  sealed trait left extends js.Object
+  
+  @js.native
   sealed trait load extends DocEvent
   
   @js.native
@@ -109,6 +112,9 @@ object sharedbStrings {
   
   @js.native
   sealed trait `ot-json0` extends OTType
+  
+  @js.native
+  sealed trait `ot-json1` extends OTType
   
   @js.native
   sealed trait `ot-text` extends OTType
@@ -157,6 +163,9 @@ object sharedbStrings {
   
   @js.native
   sealed trait `rich-text` extends OTType
+  
+  @js.native
+  sealed trait right extends js.Object
   
   @js.native
   sealed trait s extends RequestAction
@@ -219,6 +228,8 @@ object sharedbStrings {
   @scala.inline
   def insert: insert = "insert".asInstanceOf[insert]
   @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def load: load = "load".asInstanceOf[load]
   @scala.inline
   def move: move = "move".asInstanceOf[move]
@@ -234,6 +245,8 @@ object sharedbStrings {
   def op: op = "op".asInstanceOf[op]
   @scala.inline
   def `ot-json0`: `ot-json0` = "ot-json0".asInstanceOf[`ot-json0`]
+  @scala.inline
+  def `ot-json1`: `ot-json1` = "ot-json1".asInstanceOf[`ot-json1`]
   @scala.inline
   def `ot-text`: `ot-text` = "ot-text".asInstanceOf[`ot-text`]
   @scala.inline
@@ -266,6 +279,8 @@ object sharedbStrings {
   def resume: resume = "resume".asInstanceOf[resume]
   @scala.inline
   def `rich-text`: `rich-text` = "rich-text".asInstanceOf[`rich-text`]
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
   @scala.inline
   def s: s = "s".asInstanceOf[s]
   @scala.inline

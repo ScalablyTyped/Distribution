@@ -142,7 +142,7 @@ object ParamsResourcePlacementsList {
     ids: js.Array[String] = null,
     key: String = null,
     maxEndDate: String = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[Double] = js.undefined,
     maxStartDate: String = null,
     minEndDate: String = null,
     minStartDate: String = null,
@@ -164,7 +164,7 @@ object ParamsResourcePlacementsList {
     val __obj = js.Dynamic.literal()
     if (advertiserIds != null) __obj.updateDynamic("advertiserIds")(advertiserIds.asInstanceOf[js.Any])
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived.asInstanceOf[js.Any])
+    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived.get.asInstanceOf[js.Any])
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (campaignIds != null) __obj.updateDynamic("campaignIds")(campaignIds.asInstanceOf[js.Any])
     if (compatibilities != null) __obj.updateDynamic("compatibilities")(compatibilities.asInstanceOf[js.Any])
@@ -175,7 +175,7 @@ object ParamsResourcePlacementsList {
     if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (maxEndDate != null) __obj.updateDynamic("maxEndDate")(maxEndDate.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (maxStartDate != null) __obj.updateDynamic("maxStartDate")(maxStartDate.asInstanceOf[js.Any])
     if (minEndDate != null) __obj.updateDynamic("minEndDate")(minEndDate.asInstanceOf[js.Any])
     if (minStartDate != null) __obj.updateDynamic("minStartDate")(minStartDate.asInstanceOf[js.Any])
@@ -183,7 +183,7 @@ object ParamsResourcePlacementsList {
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     if (paymentSource != null) __obj.updateDynamic("paymentSource")(paymentSource.asInstanceOf[js.Any])
     if (placementStrategyIds != null) __obj.updateDynamic("placementStrategyIds")(placementStrategyIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (pricingTypes != null) __obj.updateDynamic("pricingTypes")(pricingTypes.asInstanceOf[js.Any])
     if (profileId != null) __obj.updateDynamic("profileId")(profileId.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])

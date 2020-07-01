@@ -20,6 +20,10 @@ trait CommentController extends js.Object {
     */
   val label: String
   /**
+    * Comment controller options
+    */
+  var options: js.UndefOr[CommentOptions] = js.undefined
+  /**
     * Optional reaction handler for creating and deleting reactions on a [comment](#Comment).
     */
   var reactionHandler: js.UndefOr[
@@ -51,10 +55,12 @@ object CommentController {
     id: String,
     label: String,
     commentingRangeProvider: CommentingRangeProvider = null,
+    options: CommentOptions = null,
     reactionHandler: (/* comment */ Comment, /* reaction */ CommentReaction) => js.Promise[Unit] = null
   ): CommentController = {
     val __obj = js.Dynamic.literal(createCommentThread = js.Any.fromFunction3(createCommentThread), dispose = js.Any.fromFunction0(dispose), id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
     if (commentingRangeProvider != null) __obj.updateDynamic("commentingRangeProvider")(commentingRangeProvider.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (reactionHandler != null) __obj.updateDynamic("reactionHandler")(js.Any.fromFunction2(reactionHandler))
     __obj.asInstanceOf[CommentController]
   }

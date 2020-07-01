@@ -2,8 +2,10 @@ package typings.docxTemplates
 
 import typings.docxTemplates.docxTemplatesStrings.JS
 import typings.docxTemplates.docxTemplatesStrings.XML
+import typings.docxTemplates.typesMod.CommandSummary
 import typings.docxTemplates.typesMod.Node
 import typings.docxTemplates.typesMod.UserOptions
+import typings.node.Buffer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +19,7 @@ object mod extends js.Object {
     *
     * example:
     * ```js
-    * createReport({
+    * const report = await createReport({
     *   template,
     *   data: query => graphqlServer.execute(query),
     *   additionalJsContext: {
@@ -52,7 +54,7 @@ object mod extends js.Object {
     *
     * example:
     * ```js
-    * createReport({
+    * const report = await createReport({
     *   template,
     *   data: query => graphqlServer.execute(query),
     *   additionalJsContext: {
@@ -82,5 +84,8 @@ object mod extends js.Object {
     */
   @JSName("default")
   def default_XML(options: UserOptions, _probe: XML): js.Promise[String] = js.native
+  def listCommands(template: Buffer): js.Promise[js.Array[CommandSummary]] = js.native
+  def listCommands(template: Buffer, delimiter: String): js.Promise[js.Array[CommandSummary]] = js.native
+  def listCommands(template: Buffer, delimiter: js.Tuple2[String, String]): js.Promise[js.Array[CommandSummary]] = js.native
 }
 

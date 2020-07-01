@@ -91,8 +91,8 @@ trait Resource extends js.Object {
   /* protected */ def load(): js.Promise[Unit]
   /**
     * Trigger a resize event
-    * @param {number} width X dimension
-    * @param {number} height Y dimension
+    * @param {number} width - X dimension
+    * @param {number} height - Y dimension
     */
   def resize(width: Double, height: Double): Unit
   /**
@@ -114,15 +114,6 @@ trait Resource extends js.Object {
     * Has been updated trigger event
     */
   def update(): Unit
-  /**
-    * Uploads the texture or returns false if it cant for some reason. Override this.
-    *
-    * @param {PIXI.Renderer} renderer - yeah, renderer!
-    * @param {PIXI.BaseTexture} baseTexture - the texture
-    * @param {PIXI.GLTexture} glTexture - texture instance for this webgl context
-    * @returns {boolean} true is success
-    */
-  def upload(renderer: Renderer, baseTexture: BaseTexture, glTexture: GLTexture): Boolean
 }
 
 object Resource {
@@ -141,11 +132,10 @@ object Resource {
     style: (Renderer, BaseTexture, GLTexture) => Boolean,
     unbind: BaseTexture => Unit,
     update: () => Unit,
-    upload: (Renderer, BaseTexture, GLTexture) => Boolean,
     valid: Boolean,
     width: Double
   ): Resource = {
-    val __obj = js.Dynamic.literal(_height = _height.asInstanceOf[js.Any], _width = _width.asInstanceOf[js.Any], bind = js.Any.fromFunction1(bind), destroy = js.Any.fromFunction0(destroy), destroyed = destroyed.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), height = height.asInstanceOf[js.Any], internal = internal.asInstanceOf[js.Any], load = js.Any.fromFunction0(load), resize = js.Any.fromFunction2(resize), style = js.Any.fromFunction3(style), unbind = js.Any.fromFunction1(unbind), update = js.Any.fromFunction0(update), upload = js.Any.fromFunction3(upload), valid = valid.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_height = _height.asInstanceOf[js.Any], _width = _width.asInstanceOf[js.Any], bind = js.Any.fromFunction1(bind), destroy = js.Any.fromFunction0(destroy), destroyed = destroyed.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), height = height.asInstanceOf[js.Any], internal = internal.asInstanceOf[js.Any], load = js.Any.fromFunction0(load), resize = js.Any.fromFunction2(resize), style = js.Any.fromFunction3(style), unbind = js.Any.fromFunction1(unbind), update = js.Any.fromFunction0(update), valid = valid.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resource]
   }
 }

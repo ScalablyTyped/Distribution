@@ -12,7 +12,7 @@ trait `0`[T /* <: GeoTransformPrototype */] extends js.Object {
 
 object `0` {
   @scala.inline
-  def apply[T](stream: GeoStream_ => T with GeoStream_): `0`[T] = {
+  def apply[/* <: typings.d3Geo.mod.GeoTransformPrototype */ T](stream: GeoStream_ => T with GeoStream_): `0`[T] = {
     val __obj = js.Dynamic.literal(stream = js.Any.fromFunction1(stream))
     __obj.asInstanceOf[`0`[T]]
   }

@@ -14,7 +14,7 @@ trait Hash[P /* <: typings.history.mod.Pathname */, S /* <: Search */, H /* <: t
 
 object Hash {
   @scala.inline
-  def apply[P, S, H](hash: H, pathname: P, queries: js.Any, search: S): Hash[P, S, H] = {
+  def apply[/* <: typings.history.mod.Pathname */ P, /* <: typings.history.mod.Search */ S, /* <: typings.history.mod.Hash */ H](hash: H, pathname: P, queries: js.Any, search: S): Hash[P, S, H] = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hash[P, S, H]]
   }

@@ -58,6 +58,10 @@ trait ImportImageRequest extends js.Object {
     * The name of the role to use when not using the default role, 'vmimport'.
     */
   var RoleName: js.UndefOr[String] = js.native
+  /**
+    * The tags to apply to the image being imported.
+    */
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
 }
 
 object ImportImageRequest {
@@ -75,7 +79,8 @@ object ImportImageRequest {
     LicenseSpecifications: ImportImageLicenseSpecificationListRequest = null,
     LicenseType: String = null,
     Platform: String = null,
-    RoleName: String = null
+    RoleName: String = null,
+    TagSpecifications: TagSpecificationList = null
   ): ImportImageRequest = {
     val __obj = js.Dynamic.literal()
     if (Architecture != null) __obj.updateDynamic("Architecture")(Architecture.asInstanceOf[js.Any])
@@ -91,6 +96,7 @@ object ImportImageRequest {
     if (LicenseType != null) __obj.updateDynamic("LicenseType")(LicenseType.asInstanceOf[js.Any])
     if (Platform != null) __obj.updateDynamic("Platform")(Platform.asInstanceOf[js.Any])
     if (RoleName != null) __obj.updateDynamic("RoleName")(RoleName.asInstanceOf[js.Any])
+    if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportImageRequest]
   }
 }

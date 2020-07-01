@@ -29,7 +29,7 @@ trait GraphLevelNodeConfiguration[N /* <: GraphNode */] extends js.Object {
 
 object GraphLevelNodeConfiguration {
   @scala.inline
-  def apply[N](
+  def apply[/* <: typings.reactD3Graph.mod.GraphNode */ N](
     color: String,
     fontColor: String,
     fontSize: Double,

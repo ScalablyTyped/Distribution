@@ -363,12 +363,12 @@ trait Imagebuilder extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListDistributionConfigurationsResponse, Unit]
   ): Request[ListDistributionConfigurationsResponse, AWSError] = js.native
   /**
-    *  Returns a list of distribution configurations. 
+    *  Returns a list of image build versions. 
     */
   def listImageBuildVersions(): Request[ListImageBuildVersionsResponse, AWSError] = js.native
   def listImageBuildVersions(callback: js.Function2[/* err */ AWSError, /* data */ ListImageBuildVersionsResponse, Unit]): Request[ListImageBuildVersionsResponse, AWSError] = js.native
   /**
-    *  Returns a list of distribution configurations. 
+    *  Returns a list of image build versions. 
     */
   def listImageBuildVersions(params: ListImageBuildVersionsRequest): Request[ListImageBuildVersionsResponse, AWSError] = js.native
   def listImageBuildVersions(
@@ -415,12 +415,12 @@ trait Imagebuilder extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListImageRecipesResponse, Unit]
   ): Request[ListImageRecipesResponse, AWSError] = js.native
   /**
-    *  Returns the list of image build versions for the specified semantic version. 
+    *  Returns the list of images that you have access to. 
     */
   def listImages(): Request[ListImagesResponse, AWSError] = js.native
   def listImages(callback: js.Function2[/* err */ AWSError, /* data */ ListImagesResponse, Unit]): Request[ListImagesResponse, AWSError] = js.native
   /**
-    *  Returns the list of image build versions for the specified semantic version. 
+    *  Returns the list of images that you have access to. 
     */
   def listImages(params: ListImagesRequest): Request[ListImagesResponse, AWSError] = js.native
   def listImages(

@@ -151,35 +151,30 @@ trait InlinePicture extends ClientObject {
     */
   var width: Double = js.native
   /**
-    *
     * Deletes the inline picture from the document.
     *
     * [Api set: WordApi 1.2]
     */
   def delete(): Unit = js.native
   /**
-    *
     * Gets the base64 encoded string representation of the inline image.
     *
     * [Api set: WordApi 1.1]
     */
   def getBase64ImageSrc(): ClientResult[String] = js.native
   /**
-    *
     * Gets the next inline image. Throws an error if this inline image is the last one.
     *
     * [Api set: WordApi 1.3]
     */
   def getNext(): InlinePicture = js.native
   /**
-    *
     * Gets the next inline image. Returns a null object if this inline image is the last one.
     *
     * [Api set: WordApi 1.3]
     */
   def getNextOrNullObject(): InlinePicture = js.native
   /**
-    *
     * Gets the picture, or the starting or ending point of the picture, as a range.
     *
     * [Api set: WordApi 1.3]
@@ -201,7 +196,6 @@ trait InlinePicture extends ClientObject {
   @JSName("getRange")
   def getRange_Whole(rangeLocation: Whole): Range = js.native
   /**
-    *
     * Inserts a break at the specified location in the main document.
     *
     * [Api set: WordApi 1.2]
@@ -214,7 +208,6 @@ trait InlinePicture extends ClientObject {
     insertLocation: Before | After | Start | End | Replace
   ): Unit = js.native
   /**
-    *
     * Inserts a break at the specified location in the main document.
     *
     * [Api set: WordApi 1.2]
@@ -224,14 +217,12 @@ trait InlinePicture extends ClientObject {
     */
   def insertBreak(breakType: BreakType, insertLocation: InsertLocation): Unit = js.native
   /**
-    *
     * Wraps the inline picture with a rich text content control.
     *
     * [Api set: WordApi 1.1]
     */
   def insertContentControl(): ContentControl = js.native
   /**
-    *
     * Inserts a document at the specified location.
     *
     * [Api set: WordApi 1.2]
@@ -243,7 +234,6 @@ trait InlinePicture extends ClientObject {
   @JSName("insertFileFromBase64")
   def insertFileFromBase64_After(base64File: String, insertLocation: After): Range = js.native
   /**
-    *
     * Inserts a document at the specified location.
     *
     * [Api set: WordApi 1.2]
@@ -260,7 +250,6 @@ trait InlinePicture extends ClientObject {
   @JSName("insertFileFromBase64")
   def insertFileFromBase64_Start(base64File: String, insertLocation: Start): Range = js.native
   /**
-    *
     * Inserts HTML at the specified location.
     *
     * [Api set: WordApi 1.2]
@@ -272,7 +261,6 @@ trait InlinePicture extends ClientObject {
   @JSName("insertHtml")
   def insertHtml_After(html: String, insertLocation: After): Range = js.native
   /**
-    *
     * Inserts HTML at the specified location.
     *
     * [Api set: WordApi 1.2]
@@ -289,7 +277,6 @@ trait InlinePicture extends ClientObject {
   @JSName("insertHtml")
   def insertHtml_Start(html: String, insertLocation: Start): Range = js.native
   /**
-    *
     * Inserts an inline picture at the specified location.
     *
     * [Api set: WordApi 1.2]
@@ -301,7 +288,6 @@ trait InlinePicture extends ClientObject {
   @JSName("insertInlinePictureFromBase64")
   def insertInlinePictureFromBase64_After(base64EncodedImage: String, insertLocation: After): InlinePicture = js.native
   /**
-    *
     * Inserts an inline picture at the specified location.
     *
     * [Api set: WordApi 1.2]
@@ -318,7 +304,6 @@ trait InlinePicture extends ClientObject {
   @JSName("insertInlinePictureFromBase64")
   def insertInlinePictureFromBase64_Start(base64EncodedImage: String, insertLocation: Start): InlinePicture = js.native
   /**
-    *
     * Inserts OOXML at the specified location.
     *
     * [Api set: WordApi 1.2]
@@ -330,7 +315,6 @@ trait InlinePicture extends ClientObject {
   @JSName("insertOoxml")
   def insertOoxml_After(ooxml: String, insertLocation: After): Range = js.native
   /**
-    *
     * Inserts OOXML at the specified location.
     *
     * [Api set: WordApi 1.2]
@@ -347,7 +331,6 @@ trait InlinePicture extends ClientObject {
   @JSName("insertOoxml")
   def insertOoxml_Start(ooxml: String, insertLocation: Start): Range = js.native
   /**
-    *
     * Inserts a paragraph at the specified location.
     *
     * [Api set: WordApi 1.2]
@@ -359,7 +342,6 @@ trait InlinePicture extends ClientObject {
   @JSName("insertParagraph")
   def insertParagraph_After(paragraphText: String, insertLocation: After): Paragraph = js.native
   /**
-    *
     * Inserts a paragraph at the specified location.
     *
     * [Api set: WordApi 1.2]
@@ -376,7 +358,6 @@ trait InlinePicture extends ClientObject {
   @JSName("insertParagraph")
   def insertParagraph_Start(paragraphText: String, insertLocation: Start): Paragraph = js.native
   /**
-    *
     * Inserts text at the specified location.
     *
     * [Api set: WordApi 1.2]
@@ -388,7 +369,6 @@ trait InlinePicture extends ClientObject {
   @JSName("insertText")
   def insertText_After(text: String, insertLocation: After): Range = js.native
   /**
-    *
     * Inserts text at the specified location.
     *
     * [Api set: WordApi 1.2]
@@ -405,27 +385,16 @@ trait InlinePicture extends ClientObject {
   @JSName("insertText")
   def insertText_Start(text: String, insertLocation: Start): Range = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Word.InlinePicture` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Word.InlinePicture` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.InlinePicture` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): InlinePicture = js.native
-  def load(option: String): InlinePicture = js.native
-  def load(option: js.Array[String]): InlinePicture = js.native
-  def load(option: InlinePictureLoadOptions): InlinePicture = js.native
-  def load(option: Expand): InlinePicture = js.native
+  def load(options: InlinePictureLoadOptions): InlinePicture = js.native
+  def load(propertyNamesAndPaths: Expand): InlinePicture = js.native
+  def load(propertyNames: String): InlinePicture = js.native
+  def load(propertyNames: js.Array[String]): InlinePicture = js.native
   /**
-    *
     * Selects the inline picture. This causes Word to scroll to the selection.
     *
     * [Api set: WordApi 1.2]
@@ -461,11 +430,11 @@ trait InlinePicture extends ClientObject {
     */
   def toJSON(): InlinePictureData = js.native
   /**
-    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
     */
   def track(): InlinePicture = js.native
   /**
-    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
+    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     */
   def untrack(): InlinePicture = js.native
 }

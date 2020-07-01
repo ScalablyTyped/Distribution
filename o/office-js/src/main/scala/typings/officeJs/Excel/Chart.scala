@@ -40,7 +40,7 @@ trait Chart extends ClientObject {
   /**
     *
     * Specifies a ChartCategoryLabelLevel enumeration constant referring to
-    the level of where the category labels are being sourced from. 
+    the level of where the category labels are being sourced from.
     *
     * [Api set: ExcelApi 1.8]
     */

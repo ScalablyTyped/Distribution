@@ -44,14 +44,14 @@ object SchemaCluster {
     defaultStorageType: String = null,
     location: String = null,
     name: String = null,
-    serveNodes: Int | Double = null,
+    serveNodes: js.UndefOr[Double] = js.undefined,
     state: String = null
   ): SchemaCluster = {
     val __obj = js.Dynamic.literal()
     if (defaultStorageType != null) __obj.updateDynamic("defaultStorageType")(defaultStorageType.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (serveNodes != null) __obj.updateDynamic("serveNodes")(serveNodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(serveNodes)) __obj.updateDynamic("serveNodes")(serveNodes.get.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCluster]
   }

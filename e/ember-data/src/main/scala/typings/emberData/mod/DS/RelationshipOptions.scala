@@ -13,7 +13,7 @@ trait RelationshipOptions[M /* <: Model */] extends js.Object {
 
 object RelationshipOptions {
   @scala.inline
-  def apply[M](
+  def apply[/* <: typings.emberData.mod.DS.Model */ M](
     async: js.UndefOr[Boolean] = js.undefined,
     inverse: js.UndefOr[Null | RelationshipsFor[M]] = js.undefined,
     polymorphic: js.UndefOr[Boolean] = js.undefined

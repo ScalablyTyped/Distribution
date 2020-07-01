@@ -106,14 +106,14 @@ object SchemaHttpRequest {
     requestUrl: String = null,
     responseSize: String = null,
     serverIp: String = null,
-    status: Int | Double = null,
+    status: js.UndefOr[Double] = js.undefined,
     userAgent: String = null
   ): SchemaHttpRequest = {
     val __obj = js.Dynamic.literal()
     if (cacheFillBytes != null) __obj.updateDynamic("cacheFillBytes")(cacheFillBytes.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheHit)) __obj.updateDynamic("cacheHit")(cacheHit.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheLookup)) __obj.updateDynamic("cacheLookup")(cacheLookup.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheValidatedWithOriginServer)) __obj.updateDynamic("cacheValidatedWithOriginServer")(cacheValidatedWithOriginServer.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheHit)) __obj.updateDynamic("cacheHit")(cacheHit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheLookup)) __obj.updateDynamic("cacheLookup")(cacheLookup.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheValidatedWithOriginServer)) __obj.updateDynamic("cacheValidatedWithOriginServer")(cacheValidatedWithOriginServer.get.asInstanceOf[js.Any])
     if (latency != null) __obj.updateDynamic("latency")(latency.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (referer != null) __obj.updateDynamic("referer")(referer.asInstanceOf[js.Any])
@@ -123,7 +123,7 @@ object SchemaHttpRequest {
     if (requestUrl != null) __obj.updateDynamic("requestUrl")(requestUrl.asInstanceOf[js.Any])
     if (responseSize != null) __obj.updateDynamic("responseSize")(responseSize.asInstanceOf[js.Any])
     if (serverIp != null) __obj.updateDynamic("serverIp")(serverIp.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHttpRequest]
   }

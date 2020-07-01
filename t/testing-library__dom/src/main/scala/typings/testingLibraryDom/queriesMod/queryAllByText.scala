@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@testing-library/dom/queries", "queryAllByText")
+@JSImport("@testing-library/dom/types/queries", "queryAllByText")
 @js.native
 object queryAllByText extends TopLevel[AllByText]
 

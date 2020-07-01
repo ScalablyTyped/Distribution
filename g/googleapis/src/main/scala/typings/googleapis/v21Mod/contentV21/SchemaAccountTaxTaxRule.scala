@@ -47,8 +47,8 @@ object SchemaAccountTaxTaxRule {
     if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
     if (locationId != null) __obj.updateDynamic("locationId")(locationId.asInstanceOf[js.Any])
     if (ratePercent != null) __obj.updateDynamic("ratePercent")(ratePercent.asInstanceOf[js.Any])
-    if (!js.isUndefined(shippingTaxed)) __obj.updateDynamic("shippingTaxed")(shippingTaxed.asInstanceOf[js.Any])
-    if (!js.isUndefined(useGlobalRate)) __obj.updateDynamic("useGlobalRate")(useGlobalRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(shippingTaxed)) __obj.updateDynamic("shippingTaxed")(shippingTaxed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useGlobalRate)) __obj.updateDynamic("useGlobalRate")(useGlobalRate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAccountTaxTaxRule]
   }
 }

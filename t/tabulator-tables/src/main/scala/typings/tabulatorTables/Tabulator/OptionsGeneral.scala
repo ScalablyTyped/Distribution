@@ -2,8 +2,11 @@ package typings.tabulatorTables.Tabulator
 
 import typings.std.HTMLElement
 import typings.tabulatorTables.tabulatorTablesBooleans.`false`
+import typings.tabulatorTables.tabulatorTablesStrings.blocking
+import typings.tabulatorTables.tabulatorTablesStrings.highlight
 import typings.tabulatorTables.tabulatorTablesStrings.hover
 import typings.tabulatorTables.tabulatorTablesStrings.load
+import typings.tabulatorTables.tabulatorTablesStrings.manual
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -72,6 +75,13 @@ trait OptionsGeneral extends js.Object {
   var tooltipGenerationMode: js.UndefOr[load | hover] = js.undefined
   /** Function to generate tooltips for cells     */
   var tooltips: js.UndefOr[GlobalTooltipOption] = js.undefined
+  /**There are now three different validation modes available to customise the validation experience:
+    blocking - if a user enters an invalid value while editing, they are blocked from leaving the cell until a valid value is entered (default)
+    
+    highlight - if a user enters an invalid value, then the edit will complete as usual and they are allowed to exit the cell but a highlight is applied to the cell using the tabulator-validation-fail class
+    
+    manual - no vaildation is automatically performed on edit, but it can be triggered by calling the validate funtion on the table or any Component Object */
+  var validationMode: js.UndefOr[blocking | highlight | manual] = js.undefined
   /** Enable rendering using the Virtual DOM engine     */
   var virtualDom: js.UndefOr[Boolean] = js.undefined
   /** Manually set the size of the virtual DOM buffer     */
@@ -106,6 +116,7 @@ object OptionsGeneral {
     tableBuilt: () => Unit = null,
     tooltipGenerationMode: load | hover = null,
     tooltips: GlobalTooltipOption = null,
+    validationMode: blocking | highlight | manual = null,
     virtualDom: js.UndefOr[Boolean] = js.undefined,
     virtualDomBuffer: Boolean | Double = null
   ): OptionsGeneral = {
@@ -135,6 +146,7 @@ object OptionsGeneral {
     if (tableBuilt != null) __obj.updateDynamic("tableBuilt")(js.Any.fromFunction0(tableBuilt))
     if (tooltipGenerationMode != null) __obj.updateDynamic("tooltipGenerationMode")(tooltipGenerationMode.asInstanceOf[js.Any])
     if (tooltips != null) __obj.updateDynamic("tooltips")(tooltips.asInstanceOf[js.Any])
+    if (validationMode != null) __obj.updateDynamic("validationMode")(validationMode.asInstanceOf[js.Any])
     if (!js.isUndefined(virtualDom)) __obj.updateDynamic("virtualDom")(virtualDom.get.asInstanceOf[js.Any])
     if (virtualDomBuffer != null) __obj.updateDynamic("virtualDomBuffer")(virtualDomBuffer.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsGeneral]

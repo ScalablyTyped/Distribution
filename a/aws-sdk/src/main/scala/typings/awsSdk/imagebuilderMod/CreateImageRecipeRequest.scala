@@ -38,6 +38,10 @@ trait CreateImageRecipeRequest extends js.Object {
     *  The tags of the image recipe. 
     */
   var tags: js.UndefOr[TagMap] = js.native
+  /**
+    * The working directory to be used during build and test workflows.
+    */
+  var workingDirectory: js.UndefOr[NonEmptyString] = js.native
 }
 
 object CreateImageRecipeRequest {
@@ -50,12 +54,14 @@ object CreateImageRecipeRequest {
     semanticVersion: VersionNumber,
     blockDeviceMappings: InstanceBlockDeviceMappings = null,
     description: NonEmptyString = null,
-    tags: TagMap = null
+    tags: TagMap = null,
+    workingDirectory: NonEmptyString = null
   ): CreateImageRecipeRequest = {
     val __obj = js.Dynamic.literal(clientToken = clientToken.asInstanceOf[js.Any], components = components.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parentImage = parentImage.asInstanceOf[js.Any], semanticVersion = semanticVersion.asInstanceOf[js.Any])
     if (blockDeviceMappings != null) __obj.updateDynamic("blockDeviceMappings")(blockDeviceMappings.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (workingDirectory != null) __obj.updateDynamic("workingDirectory")(workingDirectory.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateImageRecipeRequest]
   }
 }

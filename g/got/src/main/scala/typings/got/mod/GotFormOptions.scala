@@ -26,7 +26,7 @@ trait GotFormOptions[E /* <: String | Null */] extends GotOptions[E] {
 
 object GotFormOptions {
   @scala.inline
-  def apply[E](
+  def apply[/* <: java.lang.String | scala.Null */ E](
     form: `true`,
     _defaultAgent: Agent = null,
     agent: Agent | Boolean | AgentOptions = null,

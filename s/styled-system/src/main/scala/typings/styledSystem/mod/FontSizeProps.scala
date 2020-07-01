@@ -19,7 +19,7 @@ trait FontSizeProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends
 
 object FontSizeProps {
   @scala.inline
-  def apply[ThemeType, TVal](fontSize: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): FontSizeProps[ThemeType, TVal] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType, TVal](fontSize: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): FontSizeProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontSizeProps[ThemeType, TVal]]

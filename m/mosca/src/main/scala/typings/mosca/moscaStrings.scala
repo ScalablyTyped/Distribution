@@ -18,6 +18,9 @@ object moscaStrings {
   sealed trait published extends js.Object
   
   @js.native
+  sealed trait ready extends js.Object
+  
+  @js.native
   sealed trait subscribed extends js.Object
   
   @js.native
@@ -31,6 +34,8 @@ object moscaStrings {
   def clientDisconnecting: clientDisconnecting = "clientDisconnecting".asInstanceOf[clientDisconnecting]
   @scala.inline
   def published: published = "published".asInstanceOf[published]
+  @scala.inline
+  def ready: ready = "ready".asInstanceOf[ready]
   @scala.inline
   def subscribed: subscribed = "subscribed".asInstanceOf[subscribed]
   @scala.inline

@@ -19,7 +19,7 @@ trait Variables[TSingleKey /* <: String */, TVariables /* <: AnyVariables */, TR
 
 object Variables {
   @scala.inline
-  def apply[TSingleKey, TVariables, TResult, TMoreVariable](
+  def apply[/* <: java.lang.String */ TSingleKey, /* <: typings.reactQuery.mod.AnyVariables */ TVariables, TResult, TMoreVariable](
     queryFn: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _.List.Append<_.List.Concat<TKey, TVariables>, TMoreVariable> */ /* keysAndVariablesAndMore */ js.Any => js.Promise[TResult],
     config: InfiniteQueryOptions[TResult, TMoreVariable] = null,
     queryKey: js.UndefOr[

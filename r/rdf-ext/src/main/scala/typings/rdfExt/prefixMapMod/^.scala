@@ -16,7 +16,7 @@ class ^ protected () extends PrefixMap {
   /* CompleteClass */
   override var factory: DataFactory[Quad, Quad] = js.native
   /* CompleteClass */
-  override var map: Record[String, NamedNode] = js.native
+  override var map: Record[String, NamedNode[String]] = js.native
   /* CompleteClass */
   override def addAll(prefixes: PrefixesRecord): this.type = js.native
   /* CompleteClass */
@@ -24,8 +24,8 @@ class ^ protected () extends PrefixMap {
   /* CompleteClass */
   override def `import`(stream: Stream[Quad]): js.Promise[this.type] = js.native
   /* CompleteClass */
-  override def resolve(curie: String): NamedNode = js.native
+  override def resolve(curie: String): NamedNode[String] = js.native
   /* CompleteClass */
-  override def shrink(iri: String): NamedNode = js.native
+  override def shrink(iri: String): NamedNode[String] = js.native
 }
 

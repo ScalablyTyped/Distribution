@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "documentProperties.toJSON()". */
+/** An interface describing the data returned by calling `documentProperties.toJSON()`. */
 trait DocumentPropertiesData extends js.Object {
   /**
     *

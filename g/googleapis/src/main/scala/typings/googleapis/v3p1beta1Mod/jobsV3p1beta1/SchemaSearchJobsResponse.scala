@@ -71,8 +71,8 @@ trait SchemaSearchJobsResponse extends js.Object {
 object SchemaSearchJobsResponse {
   @scala.inline
   def apply(
-    broadenedQueryJobsCount: Int | Double = null,
-    estimatedTotalSize: Int | Double = null,
+    broadenedQueryJobsCount: js.UndefOr[Double] = js.undefined,
+    estimatedTotalSize: js.UndefOr[Double] = js.undefined,
     histogramQueryResults: js.Array[SchemaHistogramQueryResult] = null,
     histogramResults: SchemaHistogramResults = null,
     locationFilters: js.Array[SchemaLocation] = null,
@@ -80,11 +80,11 @@ object SchemaSearchJobsResponse {
     metadata: SchemaResponseMetadata = null,
     nextPageToken: String = null,
     spellCorrection: SchemaSpellingCorrection = null,
-    totalSize: Int | Double = null
+    totalSize: js.UndefOr[Double] = js.undefined
   ): SchemaSearchJobsResponse = {
     val __obj = js.Dynamic.literal()
-    if (broadenedQueryJobsCount != null) __obj.updateDynamic("broadenedQueryJobsCount")(broadenedQueryJobsCount.asInstanceOf[js.Any])
-    if (estimatedTotalSize != null) __obj.updateDynamic("estimatedTotalSize")(estimatedTotalSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(broadenedQueryJobsCount)) __obj.updateDynamic("broadenedQueryJobsCount")(broadenedQueryJobsCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(estimatedTotalSize)) __obj.updateDynamic("estimatedTotalSize")(estimatedTotalSize.get.asInstanceOf[js.Any])
     if (histogramQueryResults != null) __obj.updateDynamic("histogramQueryResults")(histogramQueryResults.asInstanceOf[js.Any])
     if (histogramResults != null) __obj.updateDynamic("histogramResults")(histogramResults.asInstanceOf[js.Any])
     if (locationFilters != null) __obj.updateDynamic("locationFilters")(locationFilters.asInstanceOf[js.Any])
@@ -92,7 +92,7 @@ object SchemaSearchJobsResponse {
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     if (spellCorrection != null) __obj.updateDynamic("spellCorrection")(spellCorrection.asInstanceOf[js.Any])
-    if (totalSize != null) __obj.updateDynamic("totalSize")(totalSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalSize)) __obj.updateDynamic("totalSize")(totalSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSearchJobsResponse]
   }
 }

@@ -168,14 +168,14 @@ object SchemaRequestLog {
   def apply(
     appEngineRelease: String = null,
     appId: String = null,
-    cost: Int | Double = null,
+    cost: js.UndefOr[Double] = js.undefined,
     endTime: String = null,
     finished: js.UndefOr[Boolean] = js.undefined,
     first: js.UndefOr[Boolean] = js.undefined,
     host: String = null,
     httpVersion: String = null,
     instanceId: String = null,
-    instanceIndex: Int | Double = null,
+    instanceIndex: js.UndefOr[Double] = js.undefined,
     ip: String = null,
     latency: String = null,
     line: js.Array[SchemaLogLine] = null,
@@ -190,7 +190,7 @@ object SchemaRequestLog {
     responseSize: String = null,
     sourceReference: js.Array[SchemaSourceReference] = null,
     startTime: String = null,
-    status: Int | Double = null,
+    status: js.UndefOr[Double] = js.undefined,
     taskName: String = null,
     taskQueueName: String = null,
     traceId: String = null,
@@ -203,14 +203,14 @@ object SchemaRequestLog {
     val __obj = js.Dynamic.literal()
     if (appEngineRelease != null) __obj.updateDynamic("appEngineRelease")(appEngineRelease.asInstanceOf[js.Any])
     if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
-    if (cost != null) __obj.updateDynamic("cost")(cost.asInstanceOf[js.Any])
+    if (!js.isUndefined(cost)) __obj.updateDynamic("cost")(cost.get.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(finished)) __obj.updateDynamic("finished")(finished.asInstanceOf[js.Any])
-    if (!js.isUndefined(first)) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
+    if (!js.isUndefined(finished)) __obj.updateDynamic("finished")(finished.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(first)) __obj.updateDynamic("first")(first.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (httpVersion != null) __obj.updateDynamic("httpVersion")(httpVersion.asInstanceOf[js.Any])
     if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
-    if (instanceIndex != null) __obj.updateDynamic("instanceIndex")(instanceIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(instanceIndex)) __obj.updateDynamic("instanceIndex")(instanceIndex.get.asInstanceOf[js.Any])
     if (ip != null) __obj.updateDynamic("ip")(ip.asInstanceOf[js.Any])
     if (latency != null) __obj.updateDynamic("latency")(latency.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
@@ -225,15 +225,15 @@ object SchemaRequestLog {
     if (responseSize != null) __obj.updateDynamic("responseSize")(responseSize.asInstanceOf[js.Any])
     if (sourceReference != null) __obj.updateDynamic("sourceReference")(sourceReference.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     if (taskName != null) __obj.updateDynamic("taskName")(taskName.asInstanceOf[js.Any])
     if (taskQueueName != null) __obj.updateDynamic("taskQueueName")(taskQueueName.asInstanceOf[js.Any])
     if (traceId != null) __obj.updateDynamic("traceId")(traceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(traceSampled)) __obj.updateDynamic("traceSampled")(traceSampled.asInstanceOf[js.Any])
+    if (!js.isUndefined(traceSampled)) __obj.updateDynamic("traceSampled")(traceSampled.get.asInstanceOf[js.Any])
     if (urlMapEntry != null) __obj.updateDynamic("urlMapEntry")(urlMapEntry.asInstanceOf[js.Any])
     if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
     if (versionId != null) __obj.updateDynamic("versionId")(versionId.asInstanceOf[js.Any])
-    if (!js.isUndefined(wasLoadingRequest)) __obj.updateDynamic("wasLoadingRequest")(wasLoadingRequest.asInstanceOf[js.Any])
+    if (!js.isUndefined(wasLoadingRequest)) __obj.updateDynamic("wasLoadingRequest")(wasLoadingRequest.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRequestLog]
   }
 }

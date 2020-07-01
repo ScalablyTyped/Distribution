@@ -28,8 +28,8 @@ trait CustomPropertyCollection extends ClientObject {
     *
     * [Api set: ExcelApi 1.7]
     *
-    * @param key Required. The custom property's key, which is case-insensitive.
-    * @param value Required. The custom property's value.
+    * @param key Required. The custom property's key, which is case-insensitive. The key is limited to 255 characters outside of Excel on the web (larger keys are automatically trimmed to 255 characters on other platforms).
+    * @param value Required. The custom property's value. The value is limited to 255 characters outside of Excel on the web (larger values are automatically trimmed to 255 characters on other platforms).
     */
   def add(key: String, value: js.Any): CustomProperty = js.native
   /**

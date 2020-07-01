@@ -1,5 +1,6 @@
 package typings.gapiClientDrive.anon
 
+import typings.gapiClientDrive.gapi.client.drive.Drive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,67 +10,46 @@ trait QuotaUser extends js.Object {
   var alt: js.UndefOr[String] = js.undefined
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
-  /** The ID of the file or Team Drive. */
-  var fileId: String
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
-  /** The ID of the permission. */
-  var permissionId: String
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-    * Overrides userIp if both are provided.
-    */
+  /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
-  /** Whether to remove the expiration date. */
-  var removeExpiration: js.UndefOr[Boolean] = js.undefined
-  /** Whether the requesting application supports Team Drives. */
-  var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
   /**
-    * Whether to transfer ownership to the specified user and downgrade the current owner to a writer. This parameter is required as an acknowledgement of
-    * the side effect.
+    * An ID, such as a random UUID, which uniquely identifies this user's request for idempotent creation of a shared drive. A repeated request by the same
+    * user and with the same request ID will avoid creating duplicates by attempting to create the same shared drive. If the shared drive already exists a
+    * 409 error will be returned.
     */
-  var transferOwnership: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Whether the request should be treated as if it was issued by a domain administrator; if set to true, then the requester will be granted access if they
-    * are an administrator of the domain to which the item belongs.
-    */
-  var useDomainAdminAccess: js.UndefOr[Boolean] = js.undefined
-  /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
+  var requestId: String
+  /** Request body */
+  var resource: Drive
+  /** Deprecated. Please use quotaUser instead. */
   var userIp: js.UndefOr[String] = js.undefined
 }
 
 object QuotaUser {
   @scala.inline
   def apply(
-    fileId: String,
-    permissionId: String,
+    requestId: String,
+    resource: Drive,
     alt: String = null,
     fields: String = null,
     key: String = null,
     oauth_token: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
     quotaUser: String = null,
-    removeExpiration: js.UndefOr[Boolean] = js.undefined,
-    supportsTeamDrives: js.UndefOr[Boolean] = js.undefined,
-    transferOwnership: js.UndefOr[Boolean] = js.undefined,
-    useDomainAdminAccess: js.UndefOr[Boolean] = js.undefined,
     userIp: String = null
   ): QuotaUser = {
-    val __obj = js.Dynamic.literal(fileId = fileId.asInstanceOf[js.Any], permissionId = permissionId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(requestId = requestId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeExpiration)) __obj.updateDynamic("removeExpiration")(removeExpiration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsTeamDrives)) __obj.updateDynamic("supportsTeamDrives")(supportsTeamDrives.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(transferOwnership)) __obj.updateDynamic("transferOwnership")(transferOwnership.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useDomainAdminAccess)) __obj.updateDynamic("useDomainAdminAccess")(useDomainAdminAccess.get.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaUser]
   }

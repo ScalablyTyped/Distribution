@@ -39,8 +39,8 @@ trait DateSchema[T /* <: js.UndefOr[Date | Null] */] extends Schema[T] {
   def oneOf[U /* <: T */](arrayOfValues: js.Array[U | Ref_]): DateSchema[MaintainOptionality[T, U]] = js.native
   def oneOf[U /* <: T */](arrayOfValues: js.Array[U | Ref_], message: TestOptionsMessage[Values, _]): DateSchema[MaintainOptionality[T, U]] = js.native
   def optional(): DateSchema[js.UndefOr[T]] = js.native
-  def required(): DateSchema[Exclude[T, js.UndefOr[scala.Nothing]]] = js.native
-  def required(message: TestOptionsMessage[js.Object, _]): DateSchema[Exclude[T, js.UndefOr[scala.Nothing]]] = js.native
+  def required(): DateSchema[Exclude[T, js.UndefOr[Null]]] = js.native
+  def required(message: TestOptionsMessage[js.Object, _]): DateSchema[Exclude[T, js.UndefOr[Null]]] = js.native
   def test(name: String, message: TestOptionsMessage[js.Object, _], test: TestFunction): this.type = js.native
   def test(options: TestOptions[Record[String, _]]): this.type = js.native
   def test[U /* <: T */](options: AssertingTestOptions[U, Record[String, _]]): DateSchema[U] = js.native

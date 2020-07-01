@@ -9,12 +9,7 @@ trait PolyglotOptions extends js.Object {
   var interpolation: js.UndefOr[InterpolationTokenOptions] = js.undefined
   var locale: js.UndefOr[String] = js.undefined
   var onMissingKey: js.UndefOr[
-    js.Function3[
-      /* key */ String, 
-      /* options */ js.UndefOr[InterpolationOptions], 
-      /* locale */ js.UndefOr[String], 
-      String
-    ]
+    js.Function3[/* key */ String, /* options */ InterpolationOptions, /* locale */ String, String]
   ] = js.undefined
   var phrases: js.UndefOr[js.Any] = js.undefined
   var warn: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.undefined
@@ -26,7 +21,7 @@ object PolyglotOptions {
     allowMissing: js.UndefOr[Boolean] = js.undefined,
     interpolation: InterpolationTokenOptions = null,
     locale: String = null,
-    onMissingKey: (/* key */ String, /* options */ js.UndefOr[InterpolationOptions], /* locale */ js.UndefOr[String]) => String = null,
+    onMissingKey: (/* key */ String, /* options */ InterpolationOptions, /* locale */ String) => String = null,
     phrases: js.Any = null,
     warn: /* message */ String => Unit = null
   ): PolyglotOptions = {

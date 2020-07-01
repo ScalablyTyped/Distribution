@@ -26,16 +26,16 @@ trait DateFileAppender extends Appender {
   var mode: js.UndefOr[Double] = js.undefined
   // defaults to .yyyy-MM-dd - the pattern to use to determine when to roll the logs.
   /**
-  	 * The following strings are recognised in the pattern:
-  	 *  - yyyy : the full year, use yy for just the last two digits
-  	 *  - MM   : the month
-  	 *  - dd   : the day of the month
-  	 *  - hh   : the hour of the day (24-hour clock)
-  	 *  - mm   : the minute of the hour
-  	 *  - ss   : seconds
-  	 *  - SSS  : milliseconds (although I'm not sure you'd want to roll your logs every millisecond)
-  	 *  - O    : timezone (capital letter o)
-  	 */
+    * The following strings are recognised in the pattern:
+    *  - yyyy : the full year, use yy for just the last two digits
+    *  - MM   : the month
+    *  - dd   : the day of the month
+    *  - hh   : the hour of the day (24-hour clock)
+    *  - mm   : the minute of the hour
+    *  - ss   : seconds
+    *  - SSS  : milliseconds (although I'm not sure you'd want to roll your logs every millisecond)
+    *  - O    : timezone (capital letter o)
+    */
   var pattern: js.UndefOr[String] = js.undefined
   var `type`: dateFile
 }

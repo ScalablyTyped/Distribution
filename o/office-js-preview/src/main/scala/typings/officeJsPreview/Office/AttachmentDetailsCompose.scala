@@ -45,7 +45,7 @@ trait AttachmentDetailsCompose extends js.Object {
   /**
     * Gets the url of the attachment if its type is `MailboxEnums.AttachmentType.Cloud`.
     */
-  var url: String
+  var url: js.UndefOr[String] = js.undefined
 }
 
 object AttachmentDetailsCompose {
@@ -56,9 +56,10 @@ object AttachmentDetailsCompose {
     isInline: Boolean,
     name: String,
     size: Double,
-    url: String
+    url: String = null
   ): AttachmentDetailsCompose = {
-    val __obj = js.Dynamic.literal(attachmentType = attachmentType.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isInline = isInline.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attachmentType = attachmentType.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isInline = isInline.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentDetailsCompose]
   }
 }

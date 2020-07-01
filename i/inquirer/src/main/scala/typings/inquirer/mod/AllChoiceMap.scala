@@ -19,7 +19,7 @@ trait AllChoiceMap[T /* <: Answers */] extends js.Object {
 
 object AllChoiceMap {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.inquirer.mod.Answers */ T](
     BaseChoiceMap: typings.inquirer.choiceMod.^[T] | ChoiceOptions[T] | SeparatorOptions | typings.inquirer.separatorMod.^ ,
     CheckboxChoiceMap: ChoiceOptions[T] | typings.inquirer.separatorMod.^  | SeparatorOptions | CheckboxChoiceOptions[T] | typings.inquirer.choiceMod.^[T],
     ExpandChoiceMap: ChoiceOptions[T] | typings.inquirer.separatorMod.^  | SeparatorOptions | ExpandChoiceOptions[T] | typings.inquirer.choiceMod.^[T],

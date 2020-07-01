@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "arcgis-to-geojson-utils"
-version := "1.0-dt-20200515Z-4906da"
+version := "1.0-dt-20200515Z-26c8c6"
 scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "arcgis-rest-api" % "10.4-dt-20200515Z-1f4794",
-  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20200515Z-0ec701",
-  "org.scalablytyped" %%% "std" % "3.9-18cbeb")
+  "org.scalablytyped" %%% "arcgis-rest-api" % "10.4-dt-20200515Z-883451",
+  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20200515Z-230004",
+  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -15,7 +15,7 @@ trait Key[T /* <: NavigationParams */] extends js.Object {
 
 object Key {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.reactNavigation.mod.NavigationParams */ T](
     routeName: String | Action[T],
     action: NavigationAction = null,
     key: String = null,

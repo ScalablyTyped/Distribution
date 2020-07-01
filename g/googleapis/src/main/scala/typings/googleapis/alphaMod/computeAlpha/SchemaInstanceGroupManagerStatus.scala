@@ -30,7 +30,7 @@ object SchemaInstanceGroupManagerStatus {
     versionTarget: SchemaInstanceGroupManagerStatusVersionTarget = null
   ): SchemaInstanceGroupManagerStatus = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isStable)) __obj.updateDynamic("isStable")(isStable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isStable)) __obj.updateDynamic("isStable")(isStable.get.asInstanceOf[js.Any])
     if (versionTarget != null) __obj.updateDynamic("versionTarget")(versionTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstanceGroupManagerStatus]
   }

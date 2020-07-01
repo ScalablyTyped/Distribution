@@ -14,7 +14,7 @@ trait Visitor[N /* <: Node */] extends js.Object {
 
 object Visitor {
   @scala.inline
-  def apply[N](
+  def apply[/* <: typings.istanbulLibReport.mod.Node */ N](
     onDetail: (N, js.Any) => Unit,
     onEnd: (N, js.Any) => Unit,
     onStart: (N, js.Any) => Unit,

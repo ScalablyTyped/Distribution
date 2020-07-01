@@ -19,7 +19,7 @@ object SchemaClientCertificateConfig {
   @scala.inline
   def apply(issueClientCertificate: js.UndefOr[Boolean] = js.undefined): SchemaClientCertificateConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(issueClientCertificate)) __obj.updateDynamic("issueClientCertificate")(issueClientCertificate.asInstanceOf[js.Any])
+    if (!js.isUndefined(issueClientCertificate)) __obj.updateDynamic("issueClientCertificate")(issueClientCertificate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaClientCertificateConfig]
   }
 }

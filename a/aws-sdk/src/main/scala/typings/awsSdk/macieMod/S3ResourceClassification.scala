@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait S3ResourceClassification extends js.Object {
   /**
-    * The name of the S3 bucket that you want to associate with Amazon Macie.
+    * The name of the S3 bucket that you want to associate with Amazon Macie Classic.
     */
   var bucketName: BucketName = js.native
   /**
-    * The classification type that you want to specify for the resource associated with Amazon Macie. 
+    * The classification type that you want to specify for the resource associated with Amazon Macie Classic. 
     */
   var classificationType: ClassificationType = js.native
   /**
-    * The prefix of the S3 bucket that you want to associate with Amazon Macie.
+    * The prefix of the S3 bucket that you want to associate with Amazon Macie Classic.
     */
   var prefix: js.UndefOr[Prefix] = js.native
 }

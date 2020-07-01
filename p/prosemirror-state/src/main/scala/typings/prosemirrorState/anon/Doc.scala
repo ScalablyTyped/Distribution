@@ -18,7 +18,7 @@ trait Doc[S /* <: typings.prosemirrorModel.mod.Schema[_, _] */] extends js.Objec
 
 object Doc {
   @scala.inline
-  def apply[S](
+  def apply[/* <: typings.prosemirrorModel.mod.Schema[_, _] */ S](
     doc: js.UndefOr[Null | Node[S]] = js.undefined,
     plugins: js.UndefOr[Null | (js.Array[Plugin[_, S]])] = js.undefined,
     schema: js.UndefOr[Null | S] = js.undefined,

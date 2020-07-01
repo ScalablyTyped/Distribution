@@ -58,14 +58,14 @@ object SchemaLocationFilter {
   @scala.inline
   def apply(
     address: String = null,
-    distanceInMiles: Int | Double = null,
+    distanceInMiles: js.UndefOr[Double] = js.undefined,
     latLng: SchemaLatLng = null,
     regionCode: String = null,
     telecommutePreference: String = null
   ): SchemaLocationFilter = {
     val __obj = js.Dynamic.literal()
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (distanceInMiles != null) __obj.updateDynamic("distanceInMiles")(distanceInMiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(distanceInMiles)) __obj.updateDynamic("distanceInMiles")(distanceInMiles.get.asInstanceOf[js.Any])
     if (latLng != null) __obj.updateDynamic("latLng")(latLng.asInstanceOf[js.Any])
     if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode.asInstanceOf[js.Any])
     if (telecommutePreference != null) __obj.updateDynamic("telecommutePreference")(telecommutePreference.asInstanceOf[js.Any])

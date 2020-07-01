@@ -33,13 +33,13 @@ object SchemaGoogleDevtoolsRemotebuildbotCommandEvents {
   @scala.inline
   def apply(
     dockerCacheHit: js.UndefOr[Boolean] = js.undefined,
-    inputCacheMiss: Int | Double = null,
+    inputCacheMiss: js.UndefOr[Double] = js.undefined,
     numErrors: String = null,
     numWarnings: String = null
   ): SchemaGoogleDevtoolsRemotebuildbotCommandEvents = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dockerCacheHit)) __obj.updateDynamic("dockerCacheHit")(dockerCacheHit.asInstanceOf[js.Any])
-    if (inputCacheMiss != null) __obj.updateDynamic("inputCacheMiss")(inputCacheMiss.asInstanceOf[js.Any])
+    if (!js.isUndefined(dockerCacheHit)) __obj.updateDynamic("dockerCacheHit")(dockerCacheHit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputCacheMiss)) __obj.updateDynamic("inputCacheMiss")(inputCacheMiss.get.asInstanceOf[js.Any])
     if (numErrors != null) __obj.updateDynamic("numErrors")(numErrors.asInstanceOf[js.Any])
     if (numWarnings != null) __obj.updateDynamic("numWarnings")(numWarnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemotebuildbotCommandEvents]

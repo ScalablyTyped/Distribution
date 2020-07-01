@@ -64,5 +64,8 @@ object ErrorCodes extends js.Object {
   @js.native
   sealed trait unsupportedOperation extends ErrorCodes
   
+  @js.native
+  sealed trait unsupportedSheet extends ErrorCodes
+  
 }
 

@@ -59,9 +59,9 @@ object SchemaDevicePolicy {
     if (allowedDeviceManagementLevels != null) __obj.updateDynamic("allowedDeviceManagementLevels")(allowedDeviceManagementLevels.asInstanceOf[js.Any])
     if (allowedEncryptionStatuses != null) __obj.updateDynamic("allowedEncryptionStatuses")(allowedEncryptionStatuses.asInstanceOf[js.Any])
     if (osConstraints != null) __obj.updateDynamic("osConstraints")(osConstraints.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireAdminApproval)) __obj.updateDynamic("requireAdminApproval")(requireAdminApproval.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireCorpOwned)) __obj.updateDynamic("requireCorpOwned")(requireCorpOwned.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireScreenlock)) __obj.updateDynamic("requireScreenlock")(requireScreenlock.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireAdminApproval)) __obj.updateDynamic("requireAdminApproval")(requireAdminApproval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireCorpOwned)) __obj.updateDynamic("requireCorpOwned")(requireCorpOwned.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireScreenlock)) __obj.updateDynamic("requireScreenlock")(requireScreenlock.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDevicePolicy]
   }
 }

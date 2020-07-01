@@ -11,7 +11,7 @@ trait UpdateCrawlerRequest extends js.Object {
     */
   var Classifiers: js.UndefOr[ClassifierNameList] = js.native
   /**
-    * The crawler configuration information. This versioned JSON string allows users to specify aspects of a crawler's behavior. For more information, see Configuring a Crawler.
+    * Crawler configuration information. This versioned JSON string allows users to specify aspects of a crawler's behavior. For more information, see Configuring a Crawler.
     */
   var Configuration: js.UndefOr[CrawlerConfiguration] = js.native
   /**
@@ -35,7 +35,7 @@ trait UpdateCrawlerRequest extends js.Object {
     */
   var Role: js.UndefOr[typings.awsSdk.glueMod.Role] = js.native
   /**
-    * A cron expression used to specify the schedule. For more information, see Time-Based Schedules for Jobs and Crawlers. For example, to run something every day at 12:15 UTC, specify cron(15 12 * * ? *).
+    * A cron expression used to specify the schedule (see Time-Based Schedules for Jobs and Crawlers. For example, to run something every day at 12:15 UTC, you would specify: cron(15 12 * * ? *).
     */
   var Schedule: js.UndefOr[CronExpression] = js.native
   /**

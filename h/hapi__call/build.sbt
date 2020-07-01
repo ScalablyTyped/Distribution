@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "hapi__call"
-version := "8.0-dt-20200415Z-9cff39"
+version := "8.0-dt-20200415Z-908ecc"
 scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.9-18cbeb")
+  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

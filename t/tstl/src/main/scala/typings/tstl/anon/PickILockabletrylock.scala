@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Pick<tstl.tstl/thread/ILockable.ILockable, 'try_lock'> */
+/* Inlined std.Pick<tstl.tstl/base/thread/ILockable.ILockable, 'try_lock'> */
 @js.native
 trait PickILockabletrylock extends js.Object {
   @JSName("try_lock")

@@ -4,7 +4,7 @@ import typings.antd.formContextMod.FormProviderProps
 import typings.antd.formFormMod.FormProps
 import typings.antd.formItemMod.FormItemProps
 import typings.antd.formListMod.FormListProps
-import typings.antd.formUtilMod.FormInstance
+import typings.antd.useFormMod.FormInstance
 import typings.react.mod.FC
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactElement

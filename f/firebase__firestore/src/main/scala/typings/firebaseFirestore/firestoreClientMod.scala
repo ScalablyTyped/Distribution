@@ -2,6 +2,7 @@ package typings.firebaseFirestore
 
 import typings.firebaseFirestore.asyncQueueMod.AsyncQueue
 import typings.firebaseFirestore.componentProviderMod.ComponentProvider
+import typings.firebaseFirestore.coreTransactionMod.Transaction
 import typings.firebaseFirestore.credentialsMod.CredentialsProvider
 import typings.firebaseFirestore.databaseInfoMod.DatabaseId
 import typings.firebaseFirestore.databaseInfoMod.DatabaseInfo
@@ -11,9 +12,7 @@ import typings.firebaseFirestore.eventManagerMod.ListenOptions
 import typings.firebaseFirestore.eventManagerMod.Observer
 import typings.firebaseFirestore.eventManagerMod.QueryListener
 import typings.firebaseFirestore.mutationMod.Mutation
-import typings.firebaseFirestore.platformMod.Platform
 import typings.firebaseFirestore.queryMod.Query
-import typings.firebaseFirestore.transactionMod.Transaction
 import typings.firebaseFirestore.viewSnapshotMod.ViewSnapshot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,7 +24,6 @@ object firestoreClientMod extends js.Object {
   @js.native
   class FirestoreClient protected () extends js.Object {
     def this(
-      platform: Platform,
       databaseInfo: DatabaseInfo,
       credentials: CredentialsProvider,
       /**
@@ -57,7 +55,6 @@ object firestoreClientMod extends js.Object {
     var databaseInfo: js.Any = js.native
     var eventMgr: js.Any = js.native
     var gcScheduler: js.Any = js.native
-    var handleCredentialChange: js.Any = js.native
     /**
       * Initializes persistent storage, attempting to use IndexedDB if
       * usePersistence is true or memory-only if false.
@@ -81,7 +78,6 @@ object firestoreClientMod extends js.Object {
     var initializeComponents: js.Any = js.native
     var localStore: js.Any = js.native
     var persistence: js.Any = js.native
-    var platform: js.Any = js.native
     var remoteStore: js.Any = js.native
     var sharedClientState: js.Any = js.native
     var syncEngine: js.Any = js.native

@@ -67,7 +67,7 @@ object SchemaBuildBazelRemoteExecutionV2Action {
   ): SchemaBuildBazelRemoteExecutionV2Action = {
     val __obj = js.Dynamic.literal()
     if (commandDigest != null) __obj.updateDynamic("commandDigest")(commandDigest.asInstanceOf[js.Any])
-    if (!js.isUndefined(doNotCache)) __obj.updateDynamic("doNotCache")(doNotCache.asInstanceOf[js.Any])
+    if (!js.isUndefined(doNotCache)) __obj.updateDynamic("doNotCache")(doNotCache.get.asInstanceOf[js.Any])
     if (inputRootDigest != null) __obj.updateDynamic("inputRootDigest")(inputRootDigest.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2Action]

@@ -1,7 +1,7 @@
 
 # Scala.js typings for strtok3
 
-Typings are for version 6.0.0
+Typings are for version 6.0.3
 
 ## Library description:
 A promise based streaming tokenizer

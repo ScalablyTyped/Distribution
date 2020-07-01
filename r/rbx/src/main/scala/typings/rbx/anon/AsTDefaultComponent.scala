@@ -11,7 +11,7 @@ trait AsTDefaultComponent[TDefaultComponent /* <: ReactType[_] */] extends js.Ob
 
 object AsTDefaultComponent {
   @scala.inline
-  def apply[TDefaultComponent](as: TDefaultComponent): AsTDefaultComponent[TDefaultComponent] = {
+  def apply[/* <: typings.react.mod.ReactType[_] */ TDefaultComponent](as: TDefaultComponent): AsTDefaultComponent[TDefaultComponent] = {
     val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsTDefaultComponent[TDefaultComponent]]
   }

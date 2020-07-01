@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GlobalReplicationGroup extends js.Object {
   /**
+    * The ARN (Amazon Resource Name) of the global replication group.
+    */
+  var ARN: js.UndefOr[String] = js.native
+  /**
     * A flag that enables encryption at rest when set to true. You cannot modify the value of AtRestEncryptionEnabled after the replication group is created. To enable encryption at rest on a replication group you must set AtRestEncryptionEnabled to true when you create the replication group.   Required: Only available when creating a replication group in an Amazon VPC using redis version 3.2.6, 4.x or later.
     */
   var AtRestEncryptionEnabled: js.UndefOr[BooleanOptional] = js.native
@@ -59,6 +63,7 @@ trait GlobalReplicationGroup extends js.Object {
 object GlobalReplicationGroup {
   @scala.inline
   def apply(
+    ARN: String = null,
     AtRestEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined,
     AuthTokenEnabled: js.UndefOr[BooleanOptional] = js.undefined,
     CacheNodeType: String = null,
@@ -73,6 +78,7 @@ object GlobalReplicationGroup {
     TransitEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined
   ): GlobalReplicationGroup = {
     val __obj = js.Dynamic.literal()
+    if (ARN != null) __obj.updateDynamic("ARN")(ARN.asInstanceOf[js.Any])
     if (!js.isUndefined(AtRestEncryptionEnabled)) __obj.updateDynamic("AtRestEncryptionEnabled")(AtRestEncryptionEnabled.get.asInstanceOf[js.Any])
     if (!js.isUndefined(AuthTokenEnabled)) __obj.updateDynamic("AuthTokenEnabled")(AuthTokenEnabled.get.asInstanceOf[js.Any])
     if (CacheNodeType != null) __obj.updateDynamic("CacheNodeType")(CacheNodeType.asInstanceOf[js.Any])

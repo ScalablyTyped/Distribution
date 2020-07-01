@@ -62,6 +62,16 @@ trait AddRepoToInstallation extends js.Object {
     *
     * This example grants the token "Read and write" permission to `issues` and "Read" permission to `contents`, and restricts the token's access to the repository with an `id` of 1296269.
     */
+  @JSName("createInstallationAccessToken")
+  var createInstallationAccessToken_Original: `71` = js.native
+  /**
+    * Creates an installation access token that enables a GitHub App to make authenticated API requests for the app's installation on an organization or individual account. Installation tokens expire one hour from the time you create them. Using an expired token produces a status code of `401 - Unauthorized`, and requires creating a new installation token. By default the installation token has access to all repositories that the installation can access. To restrict the access to specific repositories, you can provide the `repository_ids` when creating the token. When you omit `repository_ids`, the response does not contain the `repositories` key.
+    *
+    * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
+    *
+    * This example grants the token "Read and write" permission to `issues` and "Read" permission to `contents`, and restricts the token's access to the repository with an `id` of 1296269.
+    * @deprecated octokit.apps.createInstallationToken() has been renamed to octokit.apps.createInstallationAccessToken() (2020-06-04)
+    */
   @JSName("createInstallationToken")
   var createInstallationToken_Original: `71` = js.native
   /**
@@ -72,7 +82,7 @@ trait AddRepoToInstallation extends js.Object {
   @JSName("deleteAuthorization")
   var deleteAuthorization_Original: `72` = js.native
   /**
-    * Uninstalls a GitHub App on a user, organization, or business account. If you prefer to temporarily suspend an app's access to your account's resources, then we recommend the "[Suspend an installation](https://developer.github.com/v3/apps/#suspend-an-installation)" endpoint.
+    * Uninstalls a GitHub App on a user, organization, or business account. If you prefer to temporarily suspend an app's access to your account's resources, then we recommend the "[Suspend an app installation](https://developer.github.com/v3/apps/#suspend-an-app-installation)" endpoint.
     *
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
@@ -84,7 +94,7 @@ trait AddRepoToInstallation extends js.Object {
   @JSName("deleteToken")
   var deleteToken_Original: `74` = js.native
   /**
-    * Returns the GitHub App associated with the authentication credentials used. To see how many app installations are associated with this GitHub App, see the `installations_count` in the response. For more details about your app's installations, see the "[List installations](https://developer.github.com/v3/apps/#list-installations)" endpoint.
+    * Returns the GitHub App associated with the authentication credentials used. To see how many app installations are associated with this GitHub App, see the `installations_count` in the response. For more details about your app's installations, see the "[List installations for the authenticated app](https://developer.github.com/v3/apps/#list-installations-for-the-authenticated-app)" endpoint.
     *
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
@@ -98,6 +108,8 @@ trait AddRepoToInstallation extends js.Object {
   @JSName("getBySlug")
   var getBySlug_Original: `76` = js.native
   /**
+    * Enables an authenticated GitHub App to find an installation's information using the installation id. The installation's account type (`target_type`) will be either an organization or a user account, depending which account the repository belongs to.
+    *
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
   @JSName("getInstallation")
@@ -223,9 +235,17 @@ trait AddRepoToInstallation extends js.Object {
   @JSName("listPlans")
   var listPlans_Original: `88` = js.native
   /**
-    * List repositories that an installation can access.
+    * List repositories that an app installation can access.
     *
     * You must use an [installation access token](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-an-installation) to access this endpoint.
+    */
+  @JSName("listReposAccessibleToInstallation")
+  var listReposAccessibleToInstallation_Original: `90` = js.native
+  /**
+    * List repositories that an app installation can access.
+    *
+    * You must use an [installation access token](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-an-installation) to access this endpoint.
+    * @deprecated octokit.apps.listRepos() has been renamed to octokit.apps.listReposAccessibleToInstallation() (2020-06-04)
     */
   @JSName("listRepos")
   var listRepos_Original: `90` = js.native
@@ -254,9 +274,19 @@ trait AddRepoToInstallation extends js.Object {
   /**
     * Revokes the installation token you're using to authenticate as an installation and access this endpoint.
     *
-    * Once an installation token is revoked, the token is invalidated and cannot be used. Other endpoints that require the revoked installation token must have a new installation token to work. You can create a new token using the "[Create a new installation token](https://developer.github.com/v3/apps/#create-a-new-installation-token)" endpoint.
+    * Once an installation token is revoked, the token is invalidated and cannot be used. Other endpoints that require the revoked installation token must have a new installation token to work. You can create a new token using the "[Create an installation access token for an app](https://developer.github.com/v3/apps/#create-an-installation-access-token-for-an-app)" endpoint.
     *
     * You must use an [installation access token](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-an-installation) to access this endpoint.
+    */
+  @JSName("revokeInstallationAccessToken")
+  var revokeInstallationAccessToken_Original: `93` = js.native
+  /**
+    * Revokes the installation token you're using to authenticate as an installation and access this endpoint.
+    *
+    * Once an installation token is revoked, the token is invalidated and cannot be used. Other endpoints that require the revoked installation token must have a new installation token to work. You can create a new token using the "[Create an installation access token for an app](https://developer.github.com/v3/apps/#create-an-installation-access-token-for-an-app)" endpoint.
+    *
+    * You must use an [installation access token](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-an-installation) to access this endpoint.
+    * @deprecated octokit.apps.revokeInstallationToken() has been renamed to octokit.apps.revokeInstallationAccessToken() (2020-06-04)
     */
   @JSName("revokeInstallationToken")
   var revokeInstallationToken_Original: `93` = js.native
@@ -387,6 +417,25 @@ trait AddRepoToInstallation extends js.Object {
     *
     * This example grants the token "Read and write" permission to `issues` and "Read" permission to `contents`, and restricts the token's access to the repository with an `id` of 1296269.
     */
+  def createInstallationAccessToken(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /app/installations/:installation_id/access_tokens']['response'] */ js.Any
+  ] = js.native
+  def createInstallationAccessToken(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /app/installations/:installation_id/access_tokens']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /app/installations/:installation_id/access_tokens']['response'] */ js.Any
+  ] = js.native
+  /**
+    * Creates an installation access token that enables a GitHub App to make authenticated API requests for the app's installation on an organization or individual account. Installation tokens expire one hour from the time you create them. Using an expired token produces a status code of `401 - Unauthorized`, and requires creating a new installation token. By default the installation token has access to all repositories that the installation can access. To restrict the access to specific repositories, you can provide the `repository_ids` when creating the token. When you omit `repository_ids`, the response does not contain the `repositories` key.
+    *
+    * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
+    *
+    * This example grants the token "Read and write" permission to `issues` and "Read" permission to `contents`, and restricts the token's access to the repository with an `id` of 1296269.
+    * @deprecated octokit.apps.createInstallationToken() has been renamed to octokit.apps.createInstallationAccessToken() (2020-06-04)
+    */
   def createInstallationToken(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /app/installations/:installation_id/access_tokens']['response'] */ js.Any
   ] = js.native
@@ -415,7 +464,7 @@ trait AddRepoToInstallation extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /applications/:client_id/grant']['response'] */ js.Any
   ] = js.native
   /**
-    * Uninstalls a GitHub App on a user, organization, or business account. If you prefer to temporarily suspend an app's access to your account's resources, then we recommend the "[Suspend an installation](https://developer.github.com/v3/apps/#suspend-an-installation)" endpoint.
+    * Uninstalls a GitHub App on a user, organization, or business account. If you prefer to temporarily suspend an app's access to your account's resources, then we recommend the "[Suspend an app installation](https://developer.github.com/v3/apps/#suspend-an-app-installation)" endpoint.
     *
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
@@ -445,7 +494,7 @@ trait AddRepoToInstallation extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /applications/:client_id/token']['response'] */ js.Any
   ] = js.native
   /**
-    * Returns the GitHub App associated with the authentication credentials used. To see how many app installations are associated with this GitHub App, see the `installations_count` in the response. For more details about your app's installations, see the "[List installations](https://developer.github.com/v3/apps/#list-installations)" endpoint.
+    * Returns the GitHub App associated with the authentication credentials used. To see how many app installations are associated with this GitHub App, see the `installations_count` in the response. For more details about your app's installations, see the "[List installations for the authenticated app](https://developer.github.com/v3/apps/#list-installations-for-the-authenticated-app)" endpoint.
     *
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
@@ -477,6 +526,8 @@ trait AddRepoToInstallation extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /apps/:app_slug']['response'] */ js.Any
   ] = js.native
   /**
+    * Enables an authenticated GitHub App to find an installation's information using the installation id. The installation's account type (`target_type`) will be either an organization or a user account, depending which account the repository belongs to.
+    *
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
   def getInstallation(): js.Promise[
@@ -755,14 +806,31 @@ trait AddRepoToInstallation extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /marketplace_listing/stubbed/plans']['response'] */ js.Any
   ] = js.native
   /**
-    * List repositories that an installation can access.
+    * List repositories that an app installation can access.
     *
     * You must use an [installation access token](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-an-installation) to access this endpoint.
+    * @deprecated octokit.apps.listRepos() has been renamed to octokit.apps.listReposAccessibleToInstallation() (2020-06-04)
     */
   def listRepos(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /installation/repositories']['response'] */ js.Any
   ] = js.native
   def listRepos(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /installation/repositories']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /installation/repositories']['response'] */ js.Any
+  ] = js.native
+  /**
+    * List repositories that an app installation can access.
+    *
+    * You must use an [installation access token](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-an-installation) to access this endpoint.
+    */
+  def listReposAccessibleToInstallation(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /installation/repositories']['response'] */ js.Any
+  ] = js.native
+  def listReposAccessibleToInstallation(
     params: RequestParameters with (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /installation/repositories']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
@@ -831,9 +899,28 @@ trait AddRepoToInstallation extends js.Object {
   /**
     * Revokes the installation token you're using to authenticate as an installation and access this endpoint.
     *
-    * Once an installation token is revoked, the token is invalidated and cannot be used. Other endpoints that require the revoked installation token must have a new installation token to work. You can create a new token using the "[Create a new installation token](https://developer.github.com/v3/apps/#create-a-new-installation-token)" endpoint.
+    * Once an installation token is revoked, the token is invalidated and cannot be used. Other endpoints that require the revoked installation token must have a new installation token to work. You can create a new token using the "[Create an installation access token for an app](https://developer.github.com/v3/apps/#create-an-installation-access-token-for-an-app)" endpoint.
     *
     * You must use an [installation access token](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-an-installation) to access this endpoint.
+    */
+  def revokeInstallationAccessToken(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /installation/token']['response'] */ js.Any
+  ] = js.native
+  def revokeInstallationAccessToken(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /installation/token']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /installation/token']['response'] */ js.Any
+  ] = js.native
+  /**
+    * Revokes the installation token you're using to authenticate as an installation and access this endpoint.
+    *
+    * Once an installation token is revoked, the token is invalidated and cannot be used. Other endpoints that require the revoked installation token must have a new installation token to work. You can create a new token using the "[Create an installation access token for an app](https://developer.github.com/v3/apps/#create-an-installation-access-token-for-an-app)" endpoint.
+    *
+    * You must use an [installation access token](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-an-installation) to access this endpoint.
+    * @deprecated octokit.apps.revokeInstallationToken() has been renamed to octokit.apps.revokeInstallationAccessToken() (2020-06-04)
     */
   def revokeInstallationToken(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /installation/token']['response'] */ js.Any

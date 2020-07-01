@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Comment extends js.Object {
   /** A region of the document represented as a JSON string. See anchor documentation for details on how to define and interpret anchor properties. */
   var anchor: js.UndefOr[String] = js.undefined
-  /** The user who created the comment. */
+  /** The author of the comment. The author's email address and permission ID will not be populated. */
   var author: js.UndefOr[User] = js.undefined
   /** The plain text content of the comment. This field is used for setting the content, while htmlContent should be displayed. */
   var content: js.UndefOr[String] = js.undefined

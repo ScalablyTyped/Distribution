@@ -65,7 +65,7 @@ trait PivotField extends ClientObject {
     */
   var subtotals: Subtotals = js.native
   /**
-    * Sets one or multiple of the field's current PivotFilters and applies them to the field.
+    * Sets one or more of the field's current PivotFilters and applies them to the field.
     If the provided filters are invalid or cannot be applied, an exception is thrown.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -166,7 +166,7 @@ trait PivotField extends ClientObject {
     *
     * [Api set: ExcelApi 1.8]
     *
-    * @param sortBy Specifies if the sorting is done in ascending or descending order.
+    * @param sortBy Specifies if the sorting is done in ascending or descending order.
     */
   def sortByLabels(sortBy: SortBy): Unit = js.native
   /**
@@ -175,7 +175,7 @@ trait PivotField extends ClientObject {
     *
     * [Api set: ExcelApi 1.9]
     *
-    * @param sortBy Specifies if the sorting is done in ascending or descending order.
+    * @param sortBy Specifies if the sorting is done in ascending or descending order.
     * @param valuesHierarchy Specifies the values hierarchy on the data axis to be used for sorting.
     * @param pivotItemScope The items that should be used for the scope of the sorting. These will be the
     items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,
@@ -190,7 +190,7 @@ trait PivotField extends ClientObject {
     *
     * [Api set: ExcelApi 1.9]
     *
-    * @param sortBy Specifies if the sorting is done in ascending or descending order.
+    * @param sortBy Specifies if the sorting is done in ascending or descending order.
     * @param valuesHierarchy Specifies the values hierarchy on the data axis to be used for sorting.
     * @param pivotItemScope The items that should be used for the scope of the sorting. These will be the
     items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,

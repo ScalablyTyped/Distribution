@@ -15,8 +15,7 @@ object array extends js.Object {
   def Byte_(value: js.Array[Double]): js.Object = js.native
   def Character(value: js.Array[java.lang.String]): js.Object = js.native
   def Class(className: js.Array[java.lang.String]): js.Object = js.native
-  // Note: it doesn't allow [null, "test"], actually it should be allowed
-  def Currency(value: js.Array[typings.jsToJava.mod.Currency | Null | java.lang.String]): js.Object = js.native
+  def Currency(value: js.Array[Null | java.lang.String | typings.jsToJava.mod.Currency]): js.Object = js.native
   def Dictionary(value: js.Array[js.Object]): js.Object = js.native
   @JSName("Double")
   def Double_(value: js.Array[Double]): js.Object = js.native

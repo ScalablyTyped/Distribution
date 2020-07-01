@@ -1,7 +1,7 @@
 
 # Scala.js typings for twitch-ext
 
-Typings are for version 1.20
+Typings are for version 1.24
 
 
 

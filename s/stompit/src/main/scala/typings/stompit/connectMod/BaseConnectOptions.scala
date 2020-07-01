@@ -9,6 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BaseConnectOptions extends SocketOptions {
+  // This connectionListener type comes from @types/node
   var connect: js.UndefOr[
     js.Function2[
       /* options */ ConnectOptions, 

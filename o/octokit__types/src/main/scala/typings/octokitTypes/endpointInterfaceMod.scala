@@ -45,12 +45,12 @@ object endpointInterfaceMod extends js.Object {
       * @param {string} route Request method + URL. Example: `'GET /orgs/:org'`
       * @param {object} [parameters] URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
       */
-    def apply[R /* <: Route */, P /* <: RequestParameters */](route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 611 */ js.Any): (RequestOptions | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) with (Pick[
+    def apply[R /* <: Route */, P /* <: RequestParameters */](route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 608 */ js.Any): (RequestOptions | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) with (Pick[
         P, 
         /* keyof @octokit/types.@octokit/types/dist-types/RequestOptions.RequestOptions */ method | url | headers | body | request
       ]) = js.native
     def apply[R /* <: Route */, P /* <: RequestParameters */](
-      route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 611 */ js.Any,
+      route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 608 */ js.Any,
       parameters: P
     ): (RequestOptions | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) with (Pick[
         P, 
@@ -63,9 +63,9 @@ object endpointInterfaceMod extends js.Object {
     def merge(): D with EndpointDefaults = js.native
     def merge[P /* <: RequestParameters */](options: P): EndpointDefaults with D with P = js.native
     def merge[R /* <: Route */, P /* <: RequestParameters */](route: R, parameters: P): D with (EndpointDefaults | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) with P = js.native
-    def merge[R /* <: Route */, P /* <: RequestParameters */](route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 611 */ js.Any): D with (EndpointDefaults | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) with P = js.native
+    def merge[R /* <: Route */, P /* <: RequestParameters */](route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 608 */ js.Any): D with (EndpointDefaults | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) with P = js.native
     def merge[R /* <: Route */, P /* <: RequestParameters */](
-      route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 611 */ js.Any,
+      route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 608 */ js.Any,
       parameters: P
     ): D with (EndpointDefaults | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) with P = js.native
     @JSName("merge")

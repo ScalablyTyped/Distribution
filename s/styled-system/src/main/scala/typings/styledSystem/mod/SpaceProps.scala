@@ -65,7 +65,7 @@ trait SpaceProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js
 
 object SpaceProps {
   @scala.inline
-  def apply[ThemeType, TVal](
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType, TVal](
     m: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
     margin: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
     marginBottom: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,

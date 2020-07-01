@@ -27,6 +27,10 @@ trait VideoPreprocessor extends js.Object {
     */
   var NoiseReducer: js.UndefOr[typings.awsSdk.mediaconvertMod.NoiseReducer] = js.native
   /**
+    * If you work with a third party video watermarking partner, use the group of settings that correspond with your watermarking partner to include watermarks in your output.
+    */
+  var PartnerWatermarking: js.UndefOr[typings.awsSdk.mediaconvertMod.PartnerWatermarking] = js.native
+  /**
     * Timecode burn-in (TimecodeBurnIn)--Burns the output timecode and specified prefix into the output.
     */
   var TimecodeBurnin: js.UndefOr[typings.awsSdk.mediaconvertMod.TimecodeBurnin] = js.native
@@ -40,6 +44,7 @@ object VideoPreprocessor {
     DolbyVision: DolbyVision = null,
     ImageInserter: ImageInserter = null,
     NoiseReducer: NoiseReducer = null,
+    PartnerWatermarking: PartnerWatermarking = null,
     TimecodeBurnin: TimecodeBurnin = null
   ): VideoPreprocessor = {
     val __obj = js.Dynamic.literal()
@@ -48,6 +53,7 @@ object VideoPreprocessor {
     if (DolbyVision != null) __obj.updateDynamic("DolbyVision")(DolbyVision.asInstanceOf[js.Any])
     if (ImageInserter != null) __obj.updateDynamic("ImageInserter")(ImageInserter.asInstanceOf[js.Any])
     if (NoiseReducer != null) __obj.updateDynamic("NoiseReducer")(NoiseReducer.asInstanceOf[js.Any])
+    if (PartnerWatermarking != null) __obj.updateDynamic("PartnerWatermarking")(PartnerWatermarking.asInstanceOf[js.Any])
     if (TimecodeBurnin != null) __obj.updateDynamic("TimecodeBurnin")(TimecodeBurnin.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoPreprocessor]
   }

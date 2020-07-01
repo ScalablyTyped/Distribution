@@ -54,7 +54,7 @@ object ModuleDeclaration {
   def ExportNamedDeclaration_(
     specifiers: js.Array[ExportSpecifier_ | ExportDefaultSpecifier_ | ExportNamespaceSpecifier_],
     `type`: ExportNamedDeclaration,
-    declaration: js.Any = null,
+    declaration: Declaration = null,
     end: Double = null.asInstanceOf[Double],
     exportKind: `type` | value = null,
     innerComments: js.Array[Comment] = null,

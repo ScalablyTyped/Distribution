@@ -119,7 +119,7 @@ object SchemaStreetSegment {
     if (geographicDivisionOcdIds != null) __obj.updateDynamic("geographicDivisionOcdIds")(geographicDivisionOcdIds.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (judicialDistrict != null) __obj.updateDynamic("judicialDistrict")(judicialDistrict.asInstanceOf[js.Any])
-    if (!js.isUndefined(mailOnly)) __obj.updateDynamic("mailOnly")(mailOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(mailOnly)) __obj.updateDynamic("mailOnly")(mailOnly.get.asInstanceOf[js.Any])
     if (municipalDistrict != null) __obj.updateDynamic("municipalDistrict")(municipalDistrict.asInstanceOf[js.Any])
     if (ncoaAddress != null) __obj.updateDynamic("ncoaAddress")(ncoaAddress.asInstanceOf[js.Any])
     if (oddOrEvens != null) __obj.updateDynamic("oddOrEvens")(oddOrEvens.asInstanceOf[js.Any])
@@ -128,7 +128,7 @@ object SchemaStreetSegment {
     if (precinctName != null) __obj.updateDynamic("precinctName")(precinctName.asInstanceOf[js.Any])
     if (precinctOcdId != null) __obj.updateDynamic("precinctOcdId")(precinctOcdId.asInstanceOf[js.Any])
     if (provenances != null) __obj.updateDynamic("provenances")(provenances.asInstanceOf[js.Any])
-    if (!js.isUndefined(published)) __obj.updateDynamic("published")(published.asInstanceOf[js.Any])
+    if (!js.isUndefined(published)) __obj.updateDynamic("published")(published.get.asInstanceOf[js.Any])
     if (schoolDistrict != null) __obj.updateDynamic("schoolDistrict")(schoolDistrict.asInstanceOf[js.Any])
     if (startHouseNumber != null) __obj.updateDynamic("startHouseNumber")(startHouseNumber.asInstanceOf[js.Any])
     if (startLatE7 != null) __obj.updateDynamic("startLatE7")(startLatE7.asInstanceOf[js.Any])
@@ -146,7 +146,7 @@ object SchemaStreetSegment {
     if (vanPrecinctCode != null) __obj.updateDynamic("vanPrecinctCode")(vanPrecinctCode.asInstanceOf[js.Any])
     if (voterGeographicDivisionOcdIds != null) __obj.updateDynamic("voterGeographicDivisionOcdIds")(voterGeographicDivisionOcdIds.asInstanceOf[js.Any])
     if (wardDistrict != null) __obj.updateDynamic("wardDistrict")(wardDistrict.asInstanceOf[js.Any])
-    if (!js.isUndefined(wildcard)) __obj.updateDynamic("wildcard")(wildcard.asInstanceOf[js.Any])
+    if (!js.isUndefined(wildcard)) __obj.updateDynamic("wildcard")(wildcard.get.asInstanceOf[js.Any])
     if (zip != null) __obj.updateDynamic("zip")(zip.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStreetSegment]
   }

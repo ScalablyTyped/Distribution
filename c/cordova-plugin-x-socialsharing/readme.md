@@ -1,7 +1,7 @@
 
 # Scala.js typings for cordova-plugin-x-socialsharing
 
-Typings are for version 5.6.7
+Typings are for version 5.6.8
 
 ## Library description:
 Share text, images (and other files), or a link via the native sharing widget of your device. Android is fully supported, as well as iOS 6 and up. WP8 has somewhat limited support.

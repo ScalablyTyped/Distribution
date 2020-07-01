@@ -29,6 +29,16 @@ package object workmailMod {
     - java.lang.String
   */
   type EntityState = typings.awsSdk.workmailMod._EntityState | java.lang.String
+  type FolderConfigurations = js.Array[typings.awsSdk.workmailMod.FolderConfiguration]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.INBOX
+    - typings.awsSdk.awsSdkStrings.DELETED_ITEMS
+    - typings.awsSdk.awsSdkStrings.SENT_ITEMS
+    - typings.awsSdk.awsSdkStrings.DRAFTS
+    - typings.awsSdk.awsSdkStrings.JUNK_EMAIL
+    - java.lang.String
+  */
+  type FolderName = typings.awsSdk.workmailMod._FolderName | java.lang.String
   type GroupName = java.lang.String
   type Groups = js.Array[typings.awsSdk.workmailMod.Group]
   type IpAddress = java.lang.String
@@ -58,6 +68,7 @@ package object workmailMod {
   type PermissionType = typings.awsSdk.workmailMod._PermissionType | java.lang.String
   type PermissionValues = js.Array[typings.awsSdk.workmailMod.PermissionType]
   type Permissions = js.Array[typings.awsSdk.workmailMod.Permission]
+  type PolicyDescription = java.lang.String
   type ResourceDelegates = js.Array[typings.awsSdk.workmailMod.Delegate]
   type ResourceId = java.lang.String
   type ResourceName = java.lang.String
@@ -68,6 +79,15 @@ package object workmailMod {
   */
   type ResourceType = typings.awsSdk.workmailMod._ResourceType | java.lang.String
   type Resources = js.Array[typings.awsSdk.workmailMod.Resource]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.NONE
+    - typings.awsSdk.awsSdkStrings.DELETE
+    - typings.awsSdk.awsSdkStrings.PERMANENTLY_DELETE
+    - java.lang.String
+  */
+  type RetentionAction = typings.awsSdk.workmailMod._RetentionAction | java.lang.String
+  type RetentionPeriod = scala.Double
+  type ShortString = java.lang.String
   type String = java.lang.String
   type TagKey = java.lang.String
   type TagKeyList = js.Array[typings.awsSdk.workmailMod.TagKey]

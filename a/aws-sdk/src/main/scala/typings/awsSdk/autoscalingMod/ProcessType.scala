@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ProcessType extends js.Object {
   /**
-    * One of the following processes:    Launch     Terminate     AddToLoadBalancer     AlarmNotification     AZRebalance     HealthCheck     ReplaceUnhealthy     ScheduledActions   
+    * One of the following processes:    Launch     Terminate     AddToLoadBalancer     AlarmNotification     AZRebalance     HealthCheck     InstanceRefresh     ReplaceUnhealthy     ScheduledActions   
     */
   var ProcessName: XmlStringMaxLen255 = js.native
 }

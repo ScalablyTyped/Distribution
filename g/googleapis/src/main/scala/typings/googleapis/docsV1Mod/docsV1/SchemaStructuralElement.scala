@@ -41,18 +41,18 @@ trait SchemaStructuralElement extends js.Object {
 object SchemaStructuralElement {
   @scala.inline
   def apply(
-    endIndex: Int | Double = null,
+    endIndex: js.UndefOr[Double] = js.undefined,
     paragraph: SchemaParagraph = null,
     sectionBreak: SchemaSectionBreak = null,
-    startIndex: Int | Double = null,
+    startIndex: js.UndefOr[Double] = js.undefined,
     table: SchemaTable = null,
     tableOfContents: SchemaTableOfContents = null
   ): SchemaStructuralElement = {
     val __obj = js.Dynamic.literal()
-    if (endIndex != null) __obj.updateDynamic("endIndex")(endIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(endIndex)) __obj.updateDynamic("endIndex")(endIndex.get.asInstanceOf[js.Any])
     if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph.asInstanceOf[js.Any])
     if (sectionBreak != null) __obj.updateDynamic("sectionBreak")(sectionBreak.asInstanceOf[js.Any])
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
     if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     if (tableOfContents != null) __obj.updateDynamic("tableOfContents")(tableOfContents.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStructuralElement]

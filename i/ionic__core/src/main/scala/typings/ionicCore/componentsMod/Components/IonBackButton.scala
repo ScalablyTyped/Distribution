@@ -1,5 +1,7 @@
 package typings.ionicCore.componentsMod.Components
 
+import typings.ionicCore.animationInterfaceMod.Animation
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.ionicCoreStrings.button
 import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
@@ -32,6 +34,10 @@ trait IonBackButton extends js.Object {
     */
   var mode: js.UndefOr[ios | md] = js.undefined
   /**
+    * When using a router, it specifies the transition animation when navigating to another page.
+    */
+  var routerAnimation: js.UndefOr[AnimationBuilder] = js.undefined
+  /**
     * The text to display in the back button.
     */
   var text: js.UndefOr[String | Null] = js.undefined
@@ -50,6 +56,7 @@ object IonBackButton {
     defaultHref: String = null,
     icon: js.UndefOr[Null | String] = js.undefined,
     mode: ios | md = null,
+    routerAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     text: js.UndefOr[Null | String] = js.undefined
   ): IonBackButton = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any])
@@ -58,6 +65,7 @@ object IonBackButton {
     if (defaultHref != null) __obj.updateDynamic("defaultHref")(defaultHref.asInstanceOf[js.Any])
     if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (routerAnimation != null) __obj.updateDynamic("routerAnimation")(js.Any.fromFunction2(routerAnimation))
     if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonBackButton]
   }

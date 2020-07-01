@@ -12,7 +12,7 @@ trait DispatchProp[A /* <: Action[_] */] extends js.Object {
 
 object DispatchProp {
   @scala.inline
-  def apply[A](dispatch: A => A): DispatchProp[A] = {
+  def apply[/* <: typings.redux.mod.Action[_] */ A](dispatch: A => A): DispatchProp[A] = {
     val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch))
     __obj.asInstanceOf[DispatchProp[A]]
   }

@@ -34,6 +34,10 @@ trait CreateBusinessReportScheduleRequest extends js.Object {
     * The name identifier of the schedule.
     */
   var ScheduleName: js.UndefOr[BusinessReportScheduleName] = js.native
+  /**
+    * The tags for the business report schedule.
+    */
+  var Tags: js.UndefOr[TagList] = js.native
 }
 
 object CreateBusinessReportScheduleRequest {
@@ -45,7 +49,8 @@ object CreateBusinessReportScheduleRequest {
     Recurrence: BusinessReportRecurrence = null,
     S3BucketName: CustomerS3BucketName = null,
     S3KeyPrefix: S3KeyPrefix = null,
-    ScheduleName: BusinessReportScheduleName = null
+    ScheduleName: BusinessReportScheduleName = null,
+    Tags: TagList = null
   ): CreateBusinessReportScheduleRequest = {
     val __obj = js.Dynamic.literal(ContentRange = ContentRange.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any])
     if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken.asInstanceOf[js.Any])
@@ -53,6 +58,7 @@ object CreateBusinessReportScheduleRequest {
     if (S3BucketName != null) __obj.updateDynamic("S3BucketName")(S3BucketName.asInstanceOf[js.Any])
     if (S3KeyPrefix != null) __obj.updateDynamic("S3KeyPrefix")(S3KeyPrefix.asInstanceOf[js.Any])
     if (ScheduleName != null) __obj.updateDynamic("ScheduleName")(ScheduleName.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBusinessReportScheduleRequest]
   }
 }

@@ -21,7 +21,7 @@ object NightwatchTestOptions {
     end_session_on_fail: js.UndefOr[Boolean] = js.undefined,
     exclude: js.Array[String] = null,
     filter: String = null,
-    globals: NightwatchGlobals = null,
+    globals: NightwatchTestHooks = null,
     launch_url: String = null,
     log_screenshot_data: js.UndefOr[Boolean] = js.undefined,
     output: js.UndefOr[Boolean] = js.undefined,

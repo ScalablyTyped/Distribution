@@ -11,7 +11,7 @@ trait Bundle[T /* <: String */] extends js.Object {
 
 object Bundle {
   @scala.inline
-  def apply[T](bundle: typings.fhir.fhir.Bundle with Type[T], options: typings.request.mod.Options = null): Bundle[T] = {
+  def apply[/* <: java.lang.String */ T](bundle: typings.fhir.fhir.Bundle with Type[T], options: typings.request.mod.Options = null): Bundle[T] = {
     val __obj = js.Dynamic.literal(bundle = bundle.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bundle[T]]

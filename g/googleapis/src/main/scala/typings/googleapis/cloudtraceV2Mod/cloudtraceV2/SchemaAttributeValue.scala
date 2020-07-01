@@ -31,7 +31,7 @@ object SchemaAttributeValue {
     stringValue: SchemaTruncatableString = null
   ): SchemaAttributeValue = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue.get.asInstanceOf[js.Any])
     if (intValue != null) __obj.updateDynamic("intValue")(intValue.asInstanceOf[js.Any])
     if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAttributeValue]

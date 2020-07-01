@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 /**
   * Interface representing a Remote Config parameter.
-  * At minimum, a `defaultValue` or a `conditionalValues` entry must be present for the 
+  * At minimum, a `defaultValue` or a `conditionalValues` entry must be present for the
   * parameter to have any effect.
   */
 trait RemoteConfigParameter extends js.Object {
   /**
     * A `(condition name, value)` map. The condition name of the highest priority
-    * (the one listed first in the Remote Config template's conditions list) determines the value of 
+    * (the one listed first in the Remote Config template's conditions list) determines the value of
     * this parameter.
     */
   var conditionalValues: js.UndefOr[StringDictionary[RemoteConfigParameterValue]] = js.undefined

@@ -234,6 +234,9 @@ object highchartsReactOfficialStrings {
   sealed trait uniqueKey extends js.Object
   
   @js.native
+  sealed trait useSerialIds extends js.Object
+  
+  @js.native
   sealed trait wrap extends js.Object
   
   @scala.inline
@@ -388,6 +391,8 @@ object highchartsReactOfficialStrings {
   def time_ : time_ = "time".asInstanceOf[time_]
   @scala.inline
   def uniqueKey: uniqueKey = "uniqueKey".asInstanceOf[uniqueKey]
+  @scala.inline
+  def useSerialIds: useSerialIds = "useSerialIds".asInstanceOf[useSerialIds]
   @scala.inline
   def wrap: wrap = "wrap".asInstanceOf[wrap]
 }

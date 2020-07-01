@@ -1,5 +1,6 @@
 package typings.bootstrapSelect
 
+import typings.bootstrapSelect.bootstrapSelectStrings.auto
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,6 +23,7 @@ trait BootstrapSelectOptions extends js.Object {
   var maxOptionsText: js.UndefOr[String | js.Array[_] | js.Function] = js.undefined
   var mobile: js.UndefOr[Boolean] = js.undefined
   var multipleSeparator: js.UndefOr[String] = js.undefined
+  var noneResultsText: js.UndefOr[String] = js.undefined
   var noneSelectedText: js.UndefOr[String] = js.undefined
   var selectAllText: js.UndefOr[String] = js.undefined
   var selectOnTab: js.UndefOr[Boolean] = js.undefined
@@ -30,11 +32,14 @@ trait BootstrapSelectOptions extends js.Object {
   var showIcon: js.UndefOr[Boolean] = js.undefined
   var showSubtext: js.UndefOr[Boolean] = js.undefined
   var showTick: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[String | Double | Boolean] = js.undefined
+  var size: js.UndefOr[auto | Double | Boolean] = js.undefined
   var style: js.UndefOr[String] = js.undefined
+  var styleBase: js.UndefOr[String] = js.undefined
   var tickIcon: js.UndefOr[String] = js.undefined
   var title: js.UndefOr[String] = js.undefined
+  var virtualScroll: js.UndefOr[Boolean | Double] = js.undefined
   var width: js.UndefOr[String | Boolean] = js.undefined
+  var windowPadding: js.UndefOr[Double | js.Array[Double]] = js.undefined
 }
 
 object BootstrapSelectOptions {
@@ -57,6 +62,7 @@ object BootstrapSelectOptions {
     maxOptionsText: String | js.Array[_] | js.Function = null,
     mobile: js.UndefOr[Boolean] = js.undefined,
     multipleSeparator: String = null,
+    noneResultsText: String = null,
     noneSelectedText: String = null,
     selectAllText: String = null,
     selectOnTab: js.UndefOr[Boolean] = js.undefined,
@@ -65,11 +71,14 @@ object BootstrapSelectOptions {
     showIcon: js.UndefOr[Boolean] = js.undefined,
     showSubtext: js.UndefOr[Boolean] = js.undefined,
     showTick: js.UndefOr[Boolean] = js.undefined,
-    size: String | Double | Boolean = null,
+    size: auto | Double | Boolean = null,
     style: String = null,
+    styleBase: String = null,
     tickIcon: String = null,
     title: String = null,
-    width: String | Boolean = null
+    virtualScroll: Boolean | Double = null,
+    width: String | Boolean = null,
+    windowPadding: Double | js.Array[Double] = null
   ): BootstrapSelectOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(actionsBox)) __obj.updateDynamic("actionsBox")(actionsBox.get.asInstanceOf[js.Any])
@@ -89,6 +98,7 @@ object BootstrapSelectOptions {
     if (maxOptionsText != null) __obj.updateDynamic("maxOptionsText")(maxOptionsText.asInstanceOf[js.Any])
     if (!js.isUndefined(mobile)) __obj.updateDynamic("mobile")(mobile.get.asInstanceOf[js.Any])
     if (multipleSeparator != null) __obj.updateDynamic("multipleSeparator")(multipleSeparator.asInstanceOf[js.Any])
+    if (noneResultsText != null) __obj.updateDynamic("noneResultsText")(noneResultsText.asInstanceOf[js.Any])
     if (noneSelectedText != null) __obj.updateDynamic("noneSelectedText")(noneSelectedText.asInstanceOf[js.Any])
     if (selectAllText != null) __obj.updateDynamic("selectAllText")(selectAllText.asInstanceOf[js.Any])
     if (!js.isUndefined(selectOnTab)) __obj.updateDynamic("selectOnTab")(selectOnTab.get.asInstanceOf[js.Any])
@@ -99,9 +109,12 @@ object BootstrapSelectOptions {
     if (!js.isUndefined(showTick)) __obj.updateDynamic("showTick")(showTick.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (styleBase != null) __obj.updateDynamic("styleBase")(styleBase.asInstanceOf[js.Any])
     if (tickIcon != null) __obj.updateDynamic("tickIcon")(tickIcon.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (virtualScroll != null) __obj.updateDynamic("virtualScroll")(virtualScroll.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (windowPadding != null) __obj.updateDynamic("windowPadding")(windowPadding.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapSelectOptions]
   }
 }

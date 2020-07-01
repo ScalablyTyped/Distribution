@@ -139,7 +139,6 @@ trait SystemPreferences extends EventEmitter {
     * Gets the macOS appearance setting that you have declared you want for your
     * application, maps to NSApplication.appearance. You can use the
     * `setAppLevelAppearance` API to set this value.
-  **Deprecated**
     *
     * @deprecated
     * @platform darwin
@@ -162,7 +161,6 @@ trait SystemPreferences extends EventEmitter {
     *
     * Gets the macOS appearance setting that is currently applied to your application,
     * maps to NSApplication.effectiveAppearance
-  **Deprecated**
     *
     * @platform darwin
     */
@@ -267,7 +265,7 @@ trait SystemPreferences extends EventEmitter {
   /**
     * `true` if a high contrast theme is active, `false` otherwise.
     *
-    * **Depreacted:** Should use the new `nativeTheme.shouldUseHighContrastColors`
+    * **Deprecated:** Should use the new `nativeTheme.shouldUseHighContrastColors`
     * API.
     *
     * @deprecated
@@ -417,8 +415,6 @@ trait SystemPreferences extends EventEmitter {
   /**
     * Sets the appearance setting for your application, this should override the
     * system default and override the value of `getEffectiveAppearance`.
-    * 
-  **Deprecated**
     *
     * @deprecated
     * @platform darwin

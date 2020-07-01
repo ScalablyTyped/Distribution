@@ -3,9 +3,6 @@ package typings.webpackSources.mod
 import typings.sourceListMap.mod.SourceListMap
 import typings.sourceMap.mod.RawSourceMap
 import typings.sourceMap.mod.SourceMapGenerator
-import typings.webpackSources.anon.Columns
-import typings.webpackSources.anon.Map
-import typings.webpackSources.anon.Module
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,26 +12,48 @@ import scala.scalajs.js.annotation._
 class SourceMapSource protected ()
   extends Source
      with SourceAndMapMixin {
-  def this(value: String, name: String, sourceMap: RawSourceMap) = this()
-  def this(value: String, name: String, sourceMap: SourceMapGenerator) = this()
-  def this(value: String, name: String, sourceMap: RawSourceMap, originalSource: String) = this()
-  def this(value: String, name: String, sourceMap: SourceMapGenerator, originalSource: String) = this()
+  def this(sourceCode: String, name: String, sourceMap: RawSourceMap) = this()
+  def this(sourceCode: String, name: String, sourceMap: SourceMapGenerator) = this()
+  def this(sourceCode: String, name: String, sourceMap: RawSourceMap, originalSource: String) = this()
+  def this(sourceCode: String, name: String, sourceMap: SourceMapGenerator, originalSource: String) = this()
   def this(
-    value: String,
+    sourceCode: String,
+    name: String,
+    sourceMap: RawSourceMap,
+    originalSource: String,
+    innerSourceMap: String
+  ) = this()
+  def this(
+    sourceCode: String,
     name: String,
     sourceMap: RawSourceMap,
     originalSource: String,
     innerSourceMap: RawSourceMap
   ) = this()
   def this(
-    value: String,
+    sourceCode: String,
+    name: String,
+    sourceMap: SourceMapGenerator,
+    originalSource: String,
+    innerSourceMap: String
+  ) = this()
+  def this(
+    sourceCode: String,
     name: String,
     sourceMap: SourceMapGenerator,
     originalSource: String,
     innerSourceMap: RawSourceMap
   ) = this()
   def this(
-    value: String,
+    sourceCode: String,
+    name: String,
+    sourceMap: RawSourceMap,
+    originalSource: String,
+    innerSourceMap: String,
+    removeOriginalSource: Boolean
+  ) = this()
+  def this(
+    sourceCode: String,
     name: String,
     sourceMap: RawSourceMap,
     originalSource: String,
@@ -42,22 +61,34 @@ class SourceMapSource protected ()
     removeOriginalSource: Boolean
   ) = this()
   def this(
-    value: String,
+    sourceCode: String,
+    name: String,
+    sourceMap: SourceMapGenerator,
+    originalSource: String,
+    innerSourceMap: String,
+    removeOriginalSource: Boolean
+  ) = this()
+  def this(
+    sourceCode: String,
     name: String,
     sourceMap: SourceMapGenerator,
     originalSource: String,
     innerSourceMap: RawSourceMap,
     removeOriginalSource: Boolean
   ) = this()
-  var _innerSourceMap: RawSourceMap = js.native
-  var _name: String = js.native
-  var _originalSource: String = js.native
-  var _sourceMap: SourceMapGenerator | RawSourceMap = js.native
-  var _value: String = js.native
-  def listMap(options: Module): SourceListMap = js.native
-  /* CompleteClass */
-  override def map(options: Columns): RawSourceMap = js.native
-  /* CompleteClass */
-  override def sourceAndMap(options: Columns): Map = js.native
+  def listMap(options: MapOptions): SourceListMap = js.native
+  /**
+    * Returns the SourceMap of the represented source code as JSON.
+    * May return `null` if no SourceMap is available.
+    */
+  /* InferMemberOverrides */
+  override def map(options: MapOptions): RawSourceMap | Null = js.native
+  def source(): String = js.native
+  /**
+    * Returns both, source code (like `Source.prototype.source()` and SourceMap (like `Source.prototype.map()`).
+    * This method could have better performance than calling `source()` and `map()` separately.
+    */
+  /* InferMemberOverrides */
+  override def sourceAndMap(options: MapOptions): SourceAndMapResult = js.native
 }
 

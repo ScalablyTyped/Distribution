@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo-server-env
 
-Typings are for version 2.4.4-alpha.0
+Typings are for version 2.4.5
 
 ## Library description:
 This package is used internally by Apollo Server and not meant to be consumed directly.

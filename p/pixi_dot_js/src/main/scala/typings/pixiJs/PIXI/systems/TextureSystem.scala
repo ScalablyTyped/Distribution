@@ -40,18 +40,18 @@ trait TextureSystem extends System {
     * @readonly
     */
   val unknownTexture: BaseTexture = js.native
-  def bind(texture: BaseTexture): Unit = js.native
-  def bind(texture: BaseTexture, location: Double): Unit = js.native
+  def bind(texture_ : BaseTexture): Unit = js.native
+  def bind(texture_ : BaseTexture, location: Double): Unit = js.native
   /**
     * Bind a texture to a specific location
     *
     * If you want to unbind something, please use `unbind(texture)` instead of `bind(null, textureLocation)`
     *
-    * @param {PIXI.Texture|PIXI.BaseTexture} texture - Texture to bind
+    * @param {PIXI.Texture|PIXI.BaseTexture} texture_ - Texture to bind
     * @param {number} [location=0] - Location to bind at
     */
-  def bind(texture: Texture): Unit = js.native
-  def bind(texture: Texture, location: Double): Unit = js.native
+  def bind(texture_ : Texture): Unit = js.native
+  def bind(texture_ : Texture, location: Double): Unit = js.native
   /**
     * Sets up the renderer context and necessary buffers.
     */
@@ -62,11 +62,10 @@ trait TextureSystem extends System {
     * Actual `bind(null, i)` calls will be performed at next `unbind()` call
     */
   def reset(): Unit = js.native
-  def unbind(texture: BaseTexture): Unit = js.native
   /**
     * Unbind a texture
-    * @param {PIXI.Texture|PIXI.BaseTexture} texture - Texture to bind
+    * @param {PIXI.BaseTexture} texture - Texture to bind
     */
-  def unbind(texture: Texture): Unit = js.native
+  def unbind(texture: BaseTexture): Unit = js.native
 }
 

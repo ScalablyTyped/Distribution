@@ -117,6 +117,8 @@ trait Commands[R] extends js.Object {
   var SUNIONSTORE_Original: OverloadedCommand[String, Double, R] = js.native
   @JSName("SUNION")
   var SUNION_Original: OverloadedCommand[String, js.Array[String], R] = js.native
+  @JSName("UNLINK")
+  var UNLINK_Original: OverloadedCommand[String, Double, R] = js.native
   @JSName("UNSUBSCRIBE")
   var UNSUBSCRIBE_Original: OverloadedListCommand[String, String, R] = js.native
   @JSName("WATCH")
@@ -419,6 +421,13 @@ trait Commands[R] extends js.Object {
     */
   @JSName("sunionstore")
   var sunionstore_Original: OverloadedCommand[String, Double, R] = js.native
+  /**
+    * Deletes a key in a non-blocking manner.
+    * Very similar to DEL, but actual memory reclamation
+    * happens in a different thread, making this non-blocking.
+    */
+  @JSName("unlink")
+  var unlink_Original: OverloadedCommand[String, Double, R] = js.native
   /**
     * Stop listening for messages posted to the given channels.
     */
@@ -3193,6 +3202,31 @@ trait Commands[R] extends js.Object {
   def TTL(key: String, cb: Callback[Double]): R = js.native
   def TYPE(key: String): R = js.native
   def TYPE(key: String, cb: Callback[String]): R = js.native
+  def UNLINK(arg1: String): R = js.native
+  def UNLINK(arg1: String, arg2: String): R = js.native
+  def UNLINK(arg1: String, arg2: String, arg3: String): R = js.native
+  def UNLINK(arg1: String, arg2: String, arg3: String, arg4: String): R = js.native
+  def UNLINK(arg1: String, arg2: String, arg3: String, arg4: String, arg5: String): R = js.native
+  def UNLINK(arg1: String, arg2: String, arg3: String, arg4: String, arg5: String, arg6: String): R = js.native
+  def UNLINK(
+    arg1: String,
+    arg2: String,
+    arg3: String,
+    arg4: String,
+    arg5: String,
+    arg6: String,
+    cb: Callback[Double]
+  ): R = js.native
+  def UNLINK(arg1: String, arg2: String, arg3: String, arg4: String, arg5: String, cb: Callback[Double]): R = js.native
+  def UNLINK(arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[Double]): R = js.native
+  def UNLINK(arg1: String, arg2: String, arg3: String, cb: Callback[Double]): R = js.native
+  def UNLINK(arg1: String, arg2: String, cb: Callback[Double]): R = js.native
+  def UNLINK(arg1: String, arg2: js.Array[String]): R = js.native
+  def UNLINK(arg1: String, arg2: js.Array[String], cb: Callback[Double]): R = js.native
+  def UNLINK(arg1: String, cb: Callback[Double]): R = js.native
+  def UNLINK(arg1: js.Array[String]): R = js.native
+  def UNLINK(arg1: js.Array[String], cb: Callback[Double]): R = js.native
+  def UNLINK(args: (String | Callback[Double])*): R = js.native
   def UNSUBSCRIBE(arg1: String): R = js.native
   def UNSUBSCRIBE(arg1: String, arg2: String): R = js.native
   def UNSUBSCRIBE(arg1: String, arg2: String, arg3: String): R = js.native
@@ -8281,6 +8315,66 @@ trait Commands[R] extends js.Object {
     */
   def `type`(key: String): R = js.native
   def `type`(key: String, cb: Callback[String]): R = js.native
+  /**
+    * Deletes a key in a non-blocking manner.
+    * Very similar to DEL, but actual memory reclamation
+    * happens in a different thread, making this non-blocking.
+    */
+  def unlink(arg1: String): R = js.native
+  /**
+    * Deletes a key in a non-blocking manner.
+    * Very similar to DEL, but actual memory reclamation
+    * happens in a different thread, making this non-blocking.
+    */
+  def unlink(arg1: String, arg2: String): R = js.native
+  /**
+    * Deletes a key in a non-blocking manner.
+    * Very similar to DEL, but actual memory reclamation
+    * happens in a different thread, making this non-blocking.
+    */
+  def unlink(arg1: String, arg2: String, arg3: String): R = js.native
+  /**
+    * Deletes a key in a non-blocking manner.
+    * Very similar to DEL, but actual memory reclamation
+    * happens in a different thread, making this non-blocking.
+    */
+  def unlink(arg1: String, arg2: String, arg3: String, arg4: String): R = js.native
+  /**
+    * Deletes a key in a non-blocking manner.
+    * Very similar to DEL, but actual memory reclamation
+    * happens in a different thread, making this non-blocking.
+    */
+  def unlink(arg1: String, arg2: String, arg3: String, arg4: String, arg5: String): R = js.native
+  /**
+    * Deletes a key in a non-blocking manner.
+    * Very similar to DEL, but actual memory reclamation
+    * happens in a different thread, making this non-blocking.
+    */
+  def unlink(arg1: String, arg2: String, arg3: String, arg4: String, arg5: String, arg6: String): R = js.native
+  def unlink(
+    arg1: String,
+    arg2: String,
+    arg3: String,
+    arg4: String,
+    arg5: String,
+    arg6: String,
+    cb: Callback[Double]
+  ): R = js.native
+  def unlink(arg1: String, arg2: String, arg3: String, arg4: String, arg5: String, cb: Callback[Double]): R = js.native
+  def unlink(arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[Double]): R = js.native
+  def unlink(arg1: String, arg2: String, arg3: String, cb: Callback[Double]): R = js.native
+  def unlink(arg1: String, arg2: String, cb: Callback[Double]): R = js.native
+  def unlink(arg1: String, arg2: js.Array[String]): R = js.native
+  def unlink(arg1: String, arg2: js.Array[String], cb: Callback[Double]): R = js.native
+  def unlink(arg1: String, cb: Callback[Double]): R = js.native
+  def unlink(arg1: js.Array[String]): R = js.native
+  def unlink(arg1: js.Array[String], cb: Callback[Double]): R = js.native
+  /**
+    * Deletes a key in a non-blocking manner.
+    * Very similar to DEL, but actual memory reclamation
+    * happens in a different thread, making this non-blocking.
+    */
+  def unlink(args: (String | Callback[Double])*): R = js.native
   /**
     * Stop listening for messages posted to the given channels.
     */

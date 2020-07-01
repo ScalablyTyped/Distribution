@@ -22,23 +22,23 @@ trait FillStyle extends js.Object {
     * The hex color value used when coloring the Graphics object.
     *
     * @member {number} PIXI.FillStyle#color
-    * @default 1
+    * @default 0xFFFFFF
     */
   var color: Double
   /**
     * The transform aplpied to the texture.
     *
-    * @member {string} PIXI.FillStyle#matrix
-    * @default 0
+    * @member {PIXI.Matrix} PIXI.FillStyle#matrix
+    * @default null
     */
-  var matrix: String
+  var matrix: Matrix
   /**
     * The texture to be used for the fill.
     *
-    * @member {string} PIXI.FillStyle#texture
+    * @member {PIXI.Texture} PIXI.FillStyle#texture
     * @default 0
     */
-  var texture: String
+  var texture: Texture
   /**
     * If the current fill is visible.
     *
@@ -62,9 +62,9 @@ object FillStyle {
     alpha: Double,
     color: Double,
     destroy: () => Unit,
-    matrix: String,
+    matrix: Matrix,
     reset: () => Unit,
-    texture: String,
+    texture: Texture,
     visible: Boolean
   ): FillStyle = {
     val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), matrix = matrix.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), texture = texture.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])

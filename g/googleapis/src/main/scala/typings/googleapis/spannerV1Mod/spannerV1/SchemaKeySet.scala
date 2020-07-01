@@ -40,7 +40,7 @@ object SchemaKeySet {
     ranges: js.Array[SchemaKeyRange] = null
   ): SchemaKeySet = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
+    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all.get.asInstanceOf[js.Any])
     if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
     if (ranges != null) __obj.updateDynamic("ranges")(ranges.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaKeySet]

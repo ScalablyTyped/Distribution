@@ -102,7 +102,7 @@ object SchemaAutoscaler {
     id: String = null,
     kind: String = null,
     name: String = null,
-    recommendedSize: Int | Double = null,
+    recommendedSize: js.UndefOr[Double] = js.undefined,
     region: String = null,
     selfLink: String = null,
     selfLinkWithId: String = null,
@@ -118,7 +118,7 @@ object SchemaAutoscaler {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (recommendedSize != null) __obj.updateDynamic("recommendedSize")(recommendedSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(recommendedSize)) __obj.updateDynamic("recommendedSize")(recommendedSize.get.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     if (selfLinkWithId != null) __obj.updateDynamic("selfLinkWithId")(selfLinkWithId.asInstanceOf[js.Any])

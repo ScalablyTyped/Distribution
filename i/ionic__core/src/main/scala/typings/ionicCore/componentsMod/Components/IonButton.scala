@@ -1,5 +1,7 @@
 package typings.ionicCore.componentsMod.Components
 
+import typings.ionicCore.animationInterfaceMod.Animation
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.interfaceMod.RouterDirection
 import typings.ionicCore.ionicCoreStrings.block
 import typings.ionicCore.ionicCoreStrings.button
@@ -58,6 +60,10 @@ trait IonButton extends js.Object {
     */
   var rel: js.UndefOr[String] = js.undefined
   /**
+    * When using a router, it specifies the transition animation when navigating to another page using `href`.
+    */
+  var routerAnimation: js.UndefOr[AnimationBuilder] = js.undefined
+  /**
     * When using a router, it specifies the transition direction when navigating to another page using `href`.
     */
   var routerDirection: RouterDirection
@@ -98,6 +104,7 @@ object IonButton {
     href: String = null,
     mode: ios | md = null,
     rel: String = null,
+    routerAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     shape: round = null,
     size: small | default | large = null,
     target: String = null
@@ -111,6 +118,7 @@ object IonButton {
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (rel != null) __obj.updateDynamic("rel")(rel.asInstanceOf[js.Any])
+    if (routerAnimation != null) __obj.updateDynamic("routerAnimation")(js.Any.fromFunction2(routerAnimation))
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])

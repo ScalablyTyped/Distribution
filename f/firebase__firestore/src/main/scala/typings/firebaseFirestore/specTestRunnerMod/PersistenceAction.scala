@@ -29,6 +29,7 @@ import scala.scalajs.js.annotation._
   - typings.firebaseFirestore.firebaseFirestoreStrings.`Get new document changes`
   - typings.firebaseFirestore.firebaseFirestoreStrings.`Synchronize last document change read time`
   - typings.firebaseFirestore.firebaseFirestoreStrings.updateClientMetadataAndTryBecomePrimary
+  - typings.firebaseFirestore.firebaseFirestoreStrings.getHighestListenSequenceNumber
 */
 trait PersistenceAction extends js.Object
 
@@ -73,6 +74,8 @@ object PersistenceAction {
   def `Set last stream token`: typings.firebaseFirestore.firebaseFirestoreStrings.`Set last stream token` = ("Set last stream token").asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.`Set last stream token`]
   @scala.inline
   def `Synchronize last document change read time`: typings.firebaseFirestore.firebaseFirestoreStrings.`Synchronize last document change read time` = ("Synchronize last document change read time").asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.`Synchronize last document change read time`]
+  @scala.inline
+  def getHighestListenSequenceNumber: typings.firebaseFirestore.firebaseFirestoreStrings.getHighestListenSequenceNumber = "getHighestListenSequenceNumber".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.getHighestListenSequenceNumber]
   @scala.inline
   def maybeGarbageCollectMultiClientState: typings.firebaseFirestore.firebaseFirestoreStrings.maybeGarbageCollectMultiClientState = "maybeGarbageCollectMultiClientState".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.maybeGarbageCollectMultiClientState]
   @scala.inline

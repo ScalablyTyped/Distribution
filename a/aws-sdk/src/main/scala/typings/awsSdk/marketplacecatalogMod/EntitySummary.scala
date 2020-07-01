@@ -23,11 +23,11 @@ trait EntitySummary extends js.Object {
     */
   var LastModifiedDate: js.UndefOr[StringValue] = js.native
   /**
-    * The name for the entity. This value is not unique. It is defined by the provider.
+    * The name for the entity. This value is not unique. It is defined by the seller.
     */
   var Name: js.UndefOr[StringValue] = js.native
   /**
-    * The visibility status of the entity to subscribers. This value can be Public (everyone can view the entity), Limited (the entity is visible to limited accounts only), or Restricted (the entity was published and then unpublished and only existing subscribers can view it). 
+    * The visibility status of the entity to buyers. This value can be Public (everyone can view the entity), Limited (the entity is visible to limited accounts only), or Restricted (the entity was published and then unpublished and only existing buyers can view it). 
     */
   var Visibility: js.UndefOr[StringValue] = js.native
 }

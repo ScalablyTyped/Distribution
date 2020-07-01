@@ -22,7 +22,7 @@ trait Options[L /* <: TileLayer */] extends js.Object {
 
 object Options {
   @scala.inline
-  def apply[L](
+  def apply[/* <: typings.amapJsApi.AMap.TileLayer */ L](
     isOpen: js.UndefOr[Boolean] = js.undefined,
     tileLayer: L = null,
     visible: js.UndefOr[Boolean] = js.undefined

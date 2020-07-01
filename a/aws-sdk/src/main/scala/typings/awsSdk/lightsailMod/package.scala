@@ -149,6 +149,8 @@ package object lightsailMod {
     - typings.awsSdk.awsSdkStrings.StatusCheckFailed
     - typings.awsSdk.awsSdkStrings.StatusCheckFailed_Instance
     - typings.awsSdk.awsSdkStrings.StatusCheckFailed_System
+    - typings.awsSdk.awsSdkStrings.BurstCapacityTime
+    - typings.awsSdk.awsSdkStrings.BurstCapacityPercentage
     - java.lang.String
   */
   type InstanceMetricName = typings.awsSdk.lightsailMod._InstanceMetricName | java.lang.String
@@ -293,6 +295,8 @@ package object lightsailMod {
     - typings.awsSdk.awsSdkStrings.FreeStorageSpace
     - typings.awsSdk.awsSdkStrings.NetworkReceiveThroughput
     - typings.awsSdk.awsSdkStrings.NetworkTransmitThroughput
+    - typings.awsSdk.awsSdkStrings.BurstCapacityTime
+    - typings.awsSdk.awsSdkStrings.BurstCapacityPercentage
     - java.lang.String
   */
   type MetricName = typings.awsSdk.lightsailMod._MetricName | java.lang.String

@@ -148,6 +148,7 @@ trait RecursivePartialPartialSe extends js.Object {
   var disableFullscreenUI: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   var editable: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   var enablesReturnKeyAutomatically: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
+  var focusable: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   var hasTVPreferredFocus: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   var hitSlop: js.UndefOr[RecursivePartial[js.UndefOr[Insets]]] = js.undefined
   var importantForAccessibility: js.UndefOr[RecursivePartial[js.UndefOr[auto | yes | no | `no-hide-descendants`]]] = js.undefined
@@ -360,6 +361,7 @@ object RecursivePartialPartialSe {
     disableFullscreenUI: RecursivePartial[js.UndefOr[Boolean]] = null,
     editable: RecursivePartial[js.UndefOr[Boolean]] = null,
     enablesReturnKeyAutomatically: RecursivePartial[js.UndefOr[Boolean]] = null,
+    focusable: RecursivePartial[js.UndefOr[Boolean]] = null,
     hasTVPreferredFocus: RecursivePartial[js.UndefOr[Boolean]] = null,
     hitSlop: RecursivePartial[js.UndefOr[Insets]] = null,
     importantForAccessibility: RecursivePartial[js.UndefOr[auto | yes | no | `no-hide-descendants`]] = null,
@@ -511,6 +513,7 @@ object RecursivePartialPartialSe {
     if (disableFullscreenUI != null) __obj.updateDynamic("disableFullscreenUI")(disableFullscreenUI.asInstanceOf[js.Any])
     if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
     if (enablesReturnKeyAutomatically != null) __obj.updateDynamic("enablesReturnKeyAutomatically")(enablesReturnKeyAutomatically.asInstanceOf[js.Any])
+    if (focusable != null) __obj.updateDynamic("focusable")(focusable.asInstanceOf[js.Any])
     if (hasTVPreferredFocus != null) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.asInstanceOf[js.Any])
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])

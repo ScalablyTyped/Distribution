@@ -24,7 +24,7 @@ object SchemaSource {
   def apply(name: String = null, official: js.UndefOr[Boolean] = js.undefined): SchemaSource = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(official)) __obj.updateDynamic("official")(official.asInstanceOf[js.Any])
+    if (!js.isUndefined(official)) __obj.updateDynamic("official")(official.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSource]
   }
 }

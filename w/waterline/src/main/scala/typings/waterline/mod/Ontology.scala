@@ -6,12 +6,13 @@ import scala.scalajs.js.annotation._
 
 trait Ontology extends js.Object {
   var collections: js.Any
+  var datastores: js.Any
 }
 
 object Ontology {
   @scala.inline
-  def apply(collections: js.Any): Ontology = {
-    val __obj = js.Dynamic.literal(collections = collections.asInstanceOf[js.Any])
+  def apply(collections: js.Any, datastores: js.Any): Ontology = {
+    val __obj = js.Dynamic.literal(collections = collections.asInstanceOf[js.Any], datastores = datastores.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ontology]
   }
 }

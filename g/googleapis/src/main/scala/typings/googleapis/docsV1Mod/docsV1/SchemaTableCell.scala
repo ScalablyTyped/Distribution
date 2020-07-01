@@ -47,8 +47,8 @@ object SchemaTableCell {
   @scala.inline
   def apply(
     content: js.Array[SchemaStructuralElement] = null,
-    endIndex: Int | Double = null,
-    startIndex: Int | Double = null,
+    endIndex: js.UndefOr[Double] = js.undefined,
+    startIndex: js.UndefOr[Double] = js.undefined,
     suggestedDeletionIds: js.Array[String] = null,
     suggestedInsertionIds: js.Array[String] = null,
     suggestedTableCellStyleChanges: StringDictionary[SchemaSuggestedTableCellStyle] = null,
@@ -56,8 +56,8 @@ object SchemaTableCell {
   ): SchemaTableCell = {
     val __obj = js.Dynamic.literal()
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (endIndex != null) __obj.updateDynamic("endIndex")(endIndex.asInstanceOf[js.Any])
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(endIndex)) __obj.updateDynamic("endIndex")(endIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
     if (suggestedDeletionIds != null) __obj.updateDynamic("suggestedDeletionIds")(suggestedDeletionIds.asInstanceOf[js.Any])
     if (suggestedInsertionIds != null) __obj.updateDynamic("suggestedInsertionIds")(suggestedInsertionIds.asInstanceOf[js.Any])
     if (suggestedTableCellStyleChanges != null) __obj.updateDynamic("suggestedTableCellStyleChanges")(suggestedTableCellStyleChanges.asInstanceOf[js.Any])

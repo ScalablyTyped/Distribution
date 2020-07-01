@@ -478,12 +478,12 @@ trait CloudFormation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListImportsOutput, Unit]
   ): Request[ListImportsOutput, AWSError] = js.native
   /**
-    * Returns summary information about stack instances that are associated with the specified stack set. You can filter for stack instances that are associated with a specific AWS account name or Region.
+    * Returns summary information about stack instances that are associated with the specified stack set. You can filter for stack instances that are associated with a specific AWS account name or Region, or that have a specific status.
     */
   def listStackInstances(): Request[ListStackInstancesOutput, AWSError] = js.native
   def listStackInstances(callback: js.Function2[/* err */ AWSError, /* data */ ListStackInstancesOutput, Unit]): Request[ListStackInstancesOutput, AWSError] = js.native
   /**
-    * Returns summary information about stack instances that are associated with the specified stack set. You can filter for stack instances that are associated with a specific AWS account name or Region.
+    * Returns summary information about stack instances that are associated with the specified stack set. You can filter for stack instances that are associated with a specific AWS account name or Region, or that have a specific status.
     */
   def listStackInstances(params: ListStackInstancesInput): Request[ListStackInstancesOutput, AWSError] = js.native
   def listStackInstances(

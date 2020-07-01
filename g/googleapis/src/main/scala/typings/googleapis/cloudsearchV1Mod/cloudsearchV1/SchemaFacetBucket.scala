@@ -29,10 +29,14 @@ trait SchemaFacetBucket extends js.Object {
 
 object SchemaFacetBucket {
   @scala.inline
-  def apply(count: Int | Double = null, percentage: Int | Double = null, value: SchemaValue = null): SchemaFacetBucket = {
+  def apply(
+    count: js.UndefOr[Double] = js.undefined,
+    percentage: js.UndefOr[Double] = js.undefined,
+    value: SchemaValue = null
+  ): SchemaFacetBucket = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (percentage != null) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(percentage)) __obj.updateDynamic("percentage")(percentage.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFacetBucket]
   }

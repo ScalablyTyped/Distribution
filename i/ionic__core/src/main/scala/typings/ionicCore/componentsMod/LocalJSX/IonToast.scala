@@ -9,8 +9,8 @@ import typings.ionicCore.ionicCoreStrings.middle
 import typings.ionicCore.ionicCoreStrings.top
 import typings.ionicCore.mod.Color
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
+import typings.ionicCore.sanitizationMod.IonicSafeString
 import typings.ionicCore.toastInterfaceMod.ToastButton
-import typings.ionicCore.typesMod.IonicSafeString
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

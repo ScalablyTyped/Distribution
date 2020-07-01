@@ -1,6 +1,9 @@
 package typings.cesium.anon
 
+import typings.cesium.mod.Cartesian2
+import typings.cesium.mod.LabelStyle
 import typings.cesium.mod.Property
+import typings.cesium.mod.VerticalOrigin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,16 +20,16 @@ trait BackgroundColor extends js.Object {
   var horizontalOrigin: js.UndefOr[Property] = js.undefined
   var outlineColor: js.UndefOr[typings.cesium.mod.Color] = js.undefined
   var outlineWidth: js.UndefOr[Double] = js.undefined
-  var pixelOffset: js.UndefOr[Property] = js.undefined
+  var pixelOffset: js.UndefOr[Cartesian2 | Property] = js.undefined
   var pixelOffsetScaleByDistance: js.UndefOr[Property] = js.undefined
   var scale: js.UndefOr[Property] = js.undefined
   var scaleByDistance: js.UndefOr[Property] = js.undefined
   var show: js.UndefOr[Property] = js.undefined
   var showBackground: js.UndefOr[Property] = js.undefined
-  var style: js.UndefOr[Property] = js.undefined
+  var style: js.UndefOr[LabelStyle | Property] = js.undefined
   var text: js.UndefOr[Property | String] = js.undefined
   var translucencyByDistance: js.UndefOr[Property] = js.undefined
-  var verticalOrigin: js.UndefOr[Property] = js.undefined
+  var verticalOrigin: js.UndefOr[VerticalOrigin | Property] = js.undefined
 }
 
 object BackgroundColor {
@@ -43,16 +46,16 @@ object BackgroundColor {
     horizontalOrigin: Property = null,
     outlineColor: typings.cesium.mod.Color = null,
     outlineWidth: js.UndefOr[Double] = js.undefined,
-    pixelOffset: Property = null,
+    pixelOffset: Cartesian2 | Property = null,
     pixelOffsetScaleByDistance: Property = null,
     scale: Property = null,
     scaleByDistance: Property = null,
     show: Property = null,
     showBackground: Property = null,
-    style: Property = null,
+    style: LabelStyle | Property = null,
     text: Property | String = null,
     translucencyByDistance: Property = null,
-    verticalOrigin: Property = null
+    verticalOrigin: VerticalOrigin | Property = null
   ): BackgroundColor = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])

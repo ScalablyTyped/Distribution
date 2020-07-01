@@ -62,7 +62,7 @@ object ParamsResourceEntitiesSearch {
     indent: js.UndefOr[Boolean] = js.undefined,
     key: String = null,
     languages: js.Array[String] = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     oauth_token: String = null,
     prefix: js.UndefOr[Boolean] = js.undefined,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
@@ -80,13 +80,13 @@ object ParamsResourceEntitiesSearch {
     if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
-    if (!js.isUndefined(indent)) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
+    if (!js.isUndefined(indent)) __obj.updateDynamic("indent")(indent.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (languages != null) __obj.updateDynamic("languages")(languages.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prefix)) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prefix)) __obj.updateDynamic("prefix")(prefix.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])

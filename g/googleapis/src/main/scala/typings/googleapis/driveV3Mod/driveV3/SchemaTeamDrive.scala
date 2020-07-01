@@ -1,8 +1,8 @@
 package typings.googleapis.driveV3Mod.driveV3
 
-import typings.googleapis.AnonAdminManagedRestrictions
-import typings.googleapis.AnonCanChangeCopyRequiresWriterPermissionRestriction
-import typings.googleapis.AnonXCoordinate
+import typings.googleapis.anon.AdminManagedRestrictions
+import typings.googleapis.anon.CanChangeCopyRequiresWriterPermissionRestriction
+import typings.googleapis.anon.XCoordinate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait SchemaTeamDrive extends js.Object {
     * drive.teamdrives.update requests that don&#39;t set themeId. When
     * specified, all fields of the backgroundImageFile must be set.
     */
-  var backgroundImageFile: js.UndefOr[AnonXCoordinate] = js.native
+  var backgroundImageFile: js.UndefOr[XCoordinate] = js.native
   /**
     * A short-lived link to this Team Drive&#39;s background image.
     */
@@ -26,7 +26,7 @@ trait SchemaTeamDrive extends js.Object {
   /**
     * Capabilities the current user has on this Team Drive.
     */
-  var capabilities: js.UndefOr[AnonCanChangeCopyRequiresWriterPermissionRestriction] = js.native
+  var capabilities: js.UndefOr[CanChangeCopyRequiresWriterPermissionRestriction] = js.native
   /**
     * The color of this Team Drive as an RGB hex string. It can only be set on
     * a drive.teamdrives.update request that does not set themeId.
@@ -54,7 +54,7 @@ trait SchemaTeamDrive extends js.Object {
     * A set of restrictions that apply to this Team Drive or items inside this
     * Team Drive.
     */
-  var restrictions: js.UndefOr[AnonAdminManagedRestrictions] = js.native
+  var restrictions: js.UndefOr[AdminManagedRestrictions] = js.native
   /**
     * The ID of the theme from which the background image and color will be
     * set. The set of possible teamDriveThemes can be retrieved from a
@@ -69,15 +69,15 @@ trait SchemaTeamDrive extends js.Object {
 object SchemaTeamDrive {
   @scala.inline
   def apply(
-    backgroundImageFile: AnonXCoordinate = null,
+    backgroundImageFile: XCoordinate = null,
     backgroundImageLink: String = null,
-    capabilities: AnonCanChangeCopyRequiresWriterPermissionRestriction = null,
+    capabilities: CanChangeCopyRequiresWriterPermissionRestriction = null,
     colorRgb: String = null,
     createdTime: String = null,
     id: String = null,
     kind: String = null,
     name: String = null,
-    restrictions: AnonAdminManagedRestrictions = null,
+    restrictions: AdminManagedRestrictions = null,
     themeId: String = null
   ): SchemaTeamDrive = {
     val __obj = js.Dynamic.literal()

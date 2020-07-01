@@ -9,13 +9,12 @@ import typings.cypress.JQueryStatic
 import typings.cypress.Mocha.IRunnable
 import typings.cypress.Mocha.ITest
 import typings.cypress.Nullable
+import typings.cypress.anon.Absolute
 import typings.cypress.anon.Debug
 import typings.cypress.anon.Defaults
 import typings.cypress.anon.GetContainsSelector
-import typings.cypress.anon.Name
 import typings.cypress.anon.OpenMode
 import typings.cypress.anon.Overwrite
-import typings.cypress.anon.PartialBrowser
 import typings.cypress.anon.PartialLogConfig
 import typings.cypress.anon.`3`
 import typings.cypress.cyBlobUtilMod.BlobUtilStatic
@@ -35,6 +34,7 @@ import typings.cypress.cypressStrings.defaultCommandTimeout
 import typings.cypress.cypressStrings.env
 import typings.cypress.cypressStrings.execTimeout
 import typings.cypress.cypressStrings.experimentalGetCookiesSameSite
+import typings.cypress.cypressStrings.experimentalShadowDomSupport
 import typings.cypress.cypressStrings.experimentalSourceRewriting
 import typings.cypress.cypressStrings.fail
 import typings.cypress.cypressStrings.fileServerFolder
@@ -59,6 +59,7 @@ import typings.cypress.cypressStrings.screenshotsFolder
 import typings.cypress.cypressStrings.scrolled
 import typings.cypress.cypressStrings.supportFile
 import typings.cypress.cypressStrings.system
+import typings.cypress.cypressStrings.taskTimeout
 import typings.cypress.cypressStrings.testColonafterColonrun
 import typings.cypress.cypressStrings.testColonbeforeColonrun
 import typings.cypress.cypressStrings.testColonbeforeColonrunColonasync
@@ -253,7 +254,7 @@ trait Cypress extends js.Object {
     // }
     ```
     */
-  var spec: Name = js.native
+  var spec: Absolute = js.native
   /**
     * Cypress version string. i.e. "1.1.2"
     * @see https://on.cypress.io/version
@@ -572,6 +573,10 @@ trait Cypress extends js.Object {
   @JSName("_")
   def _underscore[T](value: T): LoDashImplicitWrapper[T] = js.native
   /**
+    * Fire automation:request event for internal use.
+    */
+  def automation(eventName: String, args: js.Any*): js.Promise[_] = js.native
+  /**
     * Promise wrapper for certain internal tasks.
     */
   @JSName("backend")
@@ -598,8 +603,13 @@ trait Cypress extends js.Object {
     ```
     */
   def config(Object: ConfigOptions): Unit = js.native
+  def config(key: fixturesFolder, value: `false`): Unit = js.native
   def config(key: nodeVersion, value: bundled): Unit = js.native
   def config(key: nodeVersion, value: system): Unit = js.native
+  def config(key: pluginsFile, value: `false`): Unit = js.native
+  def config(key: screenshotsFolder, value: `false`): Unit = js.native
+  def config(key: supportFile, value: `false`): Unit = js.native
+  def config(key: videoCompression, value: `false`): Unit = js.native
   @JSName("config")
   def config_animationDistanceThreshold(key: animationDistanceThreshold): Double = js.native
   @JSName("config")
@@ -631,6 +641,10 @@ trait Cypress extends js.Object {
   @JSName("config")
   def config_experimentalGetCookiesSameSite(key: experimentalGetCookiesSameSite, value: Boolean): Unit = js.native
   @JSName("config")
+  def config_experimentalShadowDomSupport(key: experimentalShadowDomSupport): Boolean = js.native
+  @JSName("config")
+  def config_experimentalShadowDomSupport(key: experimentalShadowDomSupport, value: Boolean): Unit = js.native
+  @JSName("config")
   def config_experimentalSourceRewriting(key: experimentalSourceRewriting): Boolean = js.native
   @JSName("config")
   def config_experimentalSourceRewriting(key: experimentalSourceRewriting, value: Boolean): Unit = js.native
@@ -643,7 +657,7 @@ trait Cypress extends js.Object {
   @JSName("config")
   def config_firefoxGcInterval(key: firefoxGcInterval, value: Nullable[Double | OpenMode]): Unit = js.native
   @JSName("config")
-  def config_fixturesFolder(key: fixturesFolder): String = js.native
+  def config_fixturesFolder(key: fixturesFolder): String | `false` = js.native
   @JSName("config")
   def config_fixturesFolder(key: fixturesFolder, value: String): Unit = js.native
   @JSName("config")
@@ -667,7 +681,7 @@ trait Cypress extends js.Object {
   @JSName("config")
   def config_pageLoadTimeout(key: pageLoadTimeout, value: Double): Unit = js.native
   @JSName("config")
-  def config_pluginsFile(key: pluginsFile): String = js.native
+  def config_pluginsFile(key: pluginsFile): String | `false` = js.native
   @JSName("config")
   def config_pluginsFile(key: pluginsFile, value: String): Unit = js.native
   @JSName("config")
@@ -714,13 +728,17 @@ trait Cypress extends js.Object {
   @JSName("config")
   def config_responseTimeout(key: responseTimeout, value: Double): Unit = js.native
   @JSName("config")
-  def config_screenshotsFolder(key: screenshotsFolder): String = js.native
+  def config_screenshotsFolder(key: screenshotsFolder): String | `false` = js.native
   @JSName("config")
   def config_screenshotsFolder(key: screenshotsFolder, value: String): Unit = js.native
   @JSName("config")
-  def config_supportFile(key: supportFile): String = js.native
+  def config_supportFile(key: supportFile): String | `false` = js.native
   @JSName("config")
   def config_supportFile(key: supportFile, value: String): Unit = js.native
+  @JSName("config")
+  def config_taskTimeout(key: taskTimeout): Double = js.native
+  @JSName("config")
+  def config_taskTimeout(key: taskTimeout, value: Double): Unit = js.native
   @JSName("config")
   def config_trashAssetsBeforeRuns(key: trashAssetsBeforeRuns): Boolean = js.native
   @JSName("config")
@@ -730,7 +748,7 @@ trait Cypress extends js.Object {
   @JSName("config")
   def config_video(key: video, value: Boolean): Unit = js.native
   @JSName("config")
-  def config_videoCompression(key: videoCompression): Double = js.native
+  def config_videoCompression(key: videoCompression): Double | `false` = js.native
   @JSName("config")
   def config_videoCompression(key: videoCompression, value: Double): Unit = js.native
   @JSName("config")
@@ -797,13 +815,15 @@ trait Cypress extends js.Object {
     */
   def getFirefoxGcInterval(): js.UndefOr[Double | Null] = js.native
   /**
-    * Returns true if currently running the supplied browser name or matcher object.
+    * Returns true if currently running the supplied browser name or matcher object. Also accepts an array of matchers.
     * @example isBrowser('chrome') will be true for the browser 'chrome:canary' and 'chrome:stable'
     * @example isBrowser({ name: 'firefox', channel: 'dev' }) will be true only for the browser 'firefox:dev' (Firefox Developer Edition)
+    * @example isBrowser(['firefox', 'edge']) will be true only for the browsers 'firefox' and 'edge'
+    * @example isBrowser('!firefox') will be true for every browser other than 'firefox'
+    * @example isBrowser({ family: '!chromium'}) will be true for every browser not matching { family: 'chromium' }
     * @param matcher browser name or matcher object to check.
     */
-  def isBrowser(name: BrowserName): Boolean = js.native
-  def isBrowser(name: PartialBrowser): Boolean = js.native
+  def isBrowser(name: IsBrowserMatcher): Boolean = js.native
   def isCy(obj: js.Any): /* is cypress.Cypress.Chainable<any> */ Boolean = js.native
   /**
     * Checks if a variable is a valid instance of `cy` or a `cy` chainable.

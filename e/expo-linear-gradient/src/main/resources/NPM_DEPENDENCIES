@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "expo-linear-gradient" : "8.1.0"
+      "expo-linear-gradient" : "8.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "expo-linear-gradient" : "8.1.0"
+      "expo-linear-gradient" : "8.2.1"
     }
   ],
   "compile-devDependencies" : [

@@ -63,6 +63,10 @@ package object worklinkMod {
   type SecurityGroupIds = js.Array[typings.awsSdk.worklinkMod.SecurityGroupId]
   type SubnetId = java.lang.String
   type SubnetIds = js.Array[typings.awsSdk.worklinkMod.SubnetId]
+  type TagKey = java.lang.String
+  type TagKeyList = js.Array[typings.awsSdk.worklinkMod.TagKey]
+  type TagMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.worklinkMod.TagValue]
+  type TagValue = java.lang.String
   type Username = java.lang.String
   type VpcId = java.lang.String
   type WebsiteAuthorizationProvidersSummaryList = js.Array[typings.awsSdk.worklinkMod.WebsiteAuthorizationProviderSummary]

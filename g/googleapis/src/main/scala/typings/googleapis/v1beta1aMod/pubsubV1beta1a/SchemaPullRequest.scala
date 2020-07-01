@@ -27,7 +27,7 @@ object SchemaPullRequest {
   @scala.inline
   def apply(returnImmediately: js.UndefOr[Boolean] = js.undefined, subscription: String = null): SchemaPullRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(returnImmediately)) __obj.updateDynamic("returnImmediately")(returnImmediately.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnImmediately)) __obj.updateDynamic("returnImmediately")(returnImmediately.get.asInstanceOf[js.Any])
     if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPullRequest]
   }

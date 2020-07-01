@@ -38,15 +38,15 @@ object SchemaLineStyle {
   def apply(
     strokeColor: String = null,
     strokeColorStyler: SchemaStyleFunction = null,
-    strokeOpacity: Int | Double = null,
-    strokeWeight: Int | Double = null,
+    strokeOpacity: js.UndefOr[Double] = js.undefined,
+    strokeWeight: js.UndefOr[Double] = js.undefined,
     strokeWeightStyler: SchemaStyleFunction = null
   ): SchemaLineStyle = {
     val __obj = js.Dynamic.literal()
     if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
     if (strokeColorStyler != null) __obj.updateDynamic("strokeColorStyler")(strokeColorStyler.asInstanceOf[js.Any])
-    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
-    if (strokeWeight != null) __obj.updateDynamic("strokeWeight")(strokeWeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(strokeOpacity)) __obj.updateDynamic("strokeOpacity")(strokeOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strokeWeight)) __obj.updateDynamic("strokeWeight")(strokeWeight.get.asInstanceOf[js.Any])
     if (strokeWeightStyler != null) __obj.updateDynamic("strokeWeightStyler")(strokeWeightStyler.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLineStyle]
   }

@@ -26,10 +26,14 @@ trait SchemaCutoffTime extends js.Object {
 
 object SchemaCutoffTime {
   @scala.inline
-  def apply(hour: Int | Double = null, minute: Int | Double = null, timezone: String = null): SchemaCutoffTime = {
+  def apply(
+    hour: js.UndefOr[Double] = js.undefined,
+    minute: js.UndefOr[Double] = js.undefined,
+    timezone: String = null
+  ): SchemaCutoffTime = {
     val __obj = js.Dynamic.literal()
-    if (hour != null) __obj.updateDynamic("hour")(hour.asInstanceOf[js.Any])
-    if (minute != null) __obj.updateDynamic("minute")(minute.asInstanceOf[js.Any])
+    if (!js.isUndefined(hour)) __obj.updateDynamic("hour")(hour.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minute)) __obj.updateDynamic("minute")(minute.get.asInstanceOf[js.Any])
     if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCutoffTime]
   }

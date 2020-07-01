@@ -39,10 +39,14 @@ trait SchemaAttachmentInfo extends js.Object {
 
 object SchemaAttachmentInfo {
   @scala.inline
-  def apply(data: String = null, maxDistanceMeters: Int | Double = null, namespacedType: String = null): SchemaAttachmentInfo = {
+  def apply(
+    data: String = null,
+    maxDistanceMeters: js.UndefOr[Double] = js.undefined,
+    namespacedType: String = null
+  ): SchemaAttachmentInfo = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (maxDistanceMeters != null) __obj.updateDynamic("maxDistanceMeters")(maxDistanceMeters.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDistanceMeters)) __obj.updateDynamic("maxDistanceMeters")(maxDistanceMeters.get.asInstanceOf[js.Any])
     if (namespacedType != null) __obj.updateDynamic("namespacedType")(namespacedType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAttachmentInfo]
   }

@@ -177,6 +177,14 @@ trait AddSelectedRepoToOrgSecret extends js.Object {
     *
     * Call this endpoint using the `-v` flag, which enables verbose output and allows you to see the download URL in the header. To download the file into the current working directory, specify the filename using the `-o` flag.
     */
+  @JSName("downloadJobLogsForWorkflowRun")
+  var downloadJobLogsForWorkflowRun_Original: `4` = js.native
+  /**
+    * Gets a redirect URL to download a plain text file of logs for a workflow job. This link expires after 1 minute. Look for `Location:` in the response header to find the URL for the download. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
+    *
+    * Call this endpoint using the `-v` flag, which enables verbose output and allows you to see the download URL in the header. To download the file into the current working directory, specify the filename using the `-o` flag.
+    * @deprecated octokit.actions.downloadWorkflowJobLogs() has been renamed to octokit.actions.downloadJobLogsForWorkflowRun() (2020-06-04)
+    */
   @JSName("downloadWorkflowJobLogs")
   var downloadWorkflowJobLogs_Original: `4` = js.native
   /**
@@ -192,64 +200,70 @@ trait AddSelectedRepoToOrgSecret extends js.Object {
   @JSName("getArtifact")
   var getArtifact_Original: `6` = js.native
   /**
+    * Gets a specific job in a workflow run. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
+    */
+  @JSName("getJobForWorkflowRun")
+  var getJobForWorkflowRun_Original: `7` = js.native
+  /**
     * Gets your public key, which you need to encrypt secrets. You need to encrypt a secret before you can create or update secrets. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `secrets` organization permission to use this endpoint.
     */
   @JSName("getOrgPublicKey")
-  var getOrgPublicKey_Original: `7` = js.native
+  var getOrgPublicKey_Original: `8` = js.native
   /**
     * Gets a single organization secret without revealing its encrypted value. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `secrets` organization permission to use this endpoint.
     */
   @JSName("getOrgSecret")
-  var getOrgSecret_Original: `8` = js.native
+  var getOrgSecret_Original: `9` = js.native
   /**
     * Gets your public key, which you need to encrypt secrets. You need to encrypt a secret before you can create or update secrets. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `secrets` repository permission to use this endpoint.
     * @deprecated octokit.actions.getPublicKey() has been renamed to octokit.actions.getRepoPublicKey() (2020-05-14)
     */
   @JSName("getPublicKey")
-  var getPublicKey_Original: `9` = js.native
+  var getPublicKey_Original: `10` = js.native
   /**
     * Gets your public key, which you need to encrypt secrets. You need to encrypt a secret before you can create or update secrets. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `secrets` repository permission to use this endpoint.
     */
   @JSName("getRepoPublicKey")
-  var getRepoPublicKey_Original: `9` = js.native
+  var getRepoPublicKey_Original: `10` = js.native
   /**
     * Gets a single repository secret without revealing its encrypted value. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `secrets` repository permission to use this endpoint.
     */
   @JSName("getRepoSecret")
-  var getRepoSecret_Original: `10` = js.native
+  var getRepoSecret_Original: `11` = js.native
   /**
     * Gets a single repository secret without revealing its encrypted value. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `secrets` repository permission to use this endpoint.
     * @deprecated octokit.actions.getSecret() has been renamed to octokit.actions.getRepoSecret() (2020-05-14)
     */
   @JSName("getSecret")
-  var getSecret_Original: `10` = js.native
+  var getSecret_Original: `11` = js.native
   /**
     * **Warning:** The self-hosted runners API for organizations is currently in public beta and subject to change.
     *
     * Gets a specific self-hosted runner for an organization. You must authenticate using an access token with the `admin:org` scope to use this endpoint.
     */
   @JSName("getSelfHostedRunnerForOrg")
-  var getSelfHostedRunnerForOrg_Original: `12` = js.native
+  var getSelfHostedRunnerForOrg_Original: `13` = js.native
   /**
     * Gets a specific self-hosted runner. You must authenticate using an access token with the `repo` scope to use this endpoint.
     */
   @JSName("getSelfHostedRunnerForRepo")
-  var getSelfHostedRunnerForRepo_Original: `11` = js.native
+  var getSelfHostedRunnerForRepo_Original: `12` = js.native
   /**
     * Gets a specific self-hosted runner. You must authenticate using an access token with the `repo` scope to use this endpoint.
     * @deprecated octokit.actions.getSelfHostedRunner() has been renamed to octokit.actions.getSelfHostedRunnerForRepo() (2020-04-22)
     */
   @JSName("getSelfHostedRunner")
-  var getSelfHostedRunner_Original: `11` = js.native
+  var getSelfHostedRunner_Original: `12` = js.native
   /**
     * Gets a specific job in a workflow run. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
+    * @deprecated octokit.actions.getWorkflowJob() has been renamed to octokit.actions.getJobForWorkflowRun() (2020-06-04)
     */
   @JSName("getWorkflowJob")
-  var getWorkflowJob_Original: `14` = js.native
+  var getWorkflowJob_Original: `7` = js.native
   /**
     * **Warning:** This GitHub Actions usage endpoint is currently in public beta and subject to change. For more information, see "[GitHub Actions API workflow usage](https://developer.github.com/changes/2020-05-15-actions-api-workflow-usage)."
     *
-    * Gets the number of billable minutes and total run time for a specific workflow run. Billable minutes only apply to workflows in private repositories that use GitHub-hosted runners. Usage is listed for each GitHub-hosted runner operating system in milliseconds. The usage does not include the multiplier for macOS and Windows runners and is not rounded up to the nearest whole minute. For more information, see "[Managing billing for GitHub Actions](https://help.github.com/github/setting-up-and-managing-billing-and-payments-on-github/managing-billing-for-github-actions)" in the GitHub Help documentation.
+    * Gets the number of billable minutes and total run time for a specific workflow run. Billable minutes only apply to workflows in private repositories that use GitHub-hosted runners. Usage is listed for each GitHub-hosted runner operating system in milliseconds. Any job re-runs are also included in the usage. The usage does not include the multiplier for macOS and Windows runners and is not rounded up to the nearest whole minute. For more information, see "[Managing billing for GitHub Actions](https://help.github.com/github/setting-up-and-managing-billing-and-payments-on-github/managing-billing-for-github-actions)" in the GitHub Help documentation.
     *
     * Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
     */
@@ -263,7 +277,7 @@ trait AddSelectedRepoToOrgSecret extends js.Object {
   /**
     * **Warning:** This GitHub Actions usage endpoint is currently in public beta and subject to change. For more information, see "[GitHub Actions API workflow usage](https://developer.github.com/changes/2020-05-15-actions-api-workflow-usage)."
     *
-    * Gets the number of billable minutes used by a specific workflow during the current billing cycle. Billable minutes only apply to workflows in private repositories that use GitHub-hosted runners. Usage is listed for each GitHub-hosted runner operating system in milliseconds. The usage does not include the multiplier for macOS and Windows runners and is not rounded up to the nearest whole minute. For more information, see "[Managing billing for GitHub Actions](https://help.github.com/github/setting-up-and-managing-billing-and-payments-on-github/managing-billing-for-github-actions)" in the GitHub Help documentation.
+    * Gets the number of billable minutes used by a specific workflow during the current billing cycle. Billable minutes only apply to workflows in private repositories that use GitHub-hosted runners. Usage is listed for each GitHub-hosted runner operating system in milliseconds. Any job re-runs are also included in the usage. The usage does not include the multiplier for macOS and Windows runners and is not rounded up to the nearest whole minute. For more information, see "[Managing billing for GitHub Actions](https://help.github.com/github/setting-up-and-managing-billing-and-payments-on-github/managing-billing-for-github-actions)" in the GitHub Help documentation.
     *
     * You can also replace `:workflow_id` with `:workflow_file_name`. For example, you could use `main.yml`. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
     */
@@ -273,7 +287,7 @@ trait AddSelectedRepoToOrgSecret extends js.Object {
     * Gets a specific workflow. You can also replace `:workflow_id` with `:workflow_file_name`. For example, you could use `main.yml`. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
     */
   @JSName("getWorkflow")
-  var getWorkflow_Original: `13` = js.native
+  var getWorkflow_Original: `14` = js.native
   /**
     * Lists all artifacts for a repository. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
     */
@@ -304,6 +318,7 @@ trait AddSelectedRepoToOrgSecret extends js.Object {
     * Lists all workflow runs for a repository. You can use parameters to narrow the list of results. For more information about using parameters, see [Parameters](https://developer.github.com/v3/#parameters).
     *
     * Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
+    * @deprecated octokit.actions.listRepoWorkflowRuns() has been renamed to octokit.actions.listWorkflowRunsForRepo() (2020-06-04)
     */
   @JSName("listRepoWorkflowRuns")
   var listRepoWorkflowRuns_Original: `23` = js.native
@@ -368,6 +383,13 @@ trait AddSelectedRepoToOrgSecret extends js.Object {
     */
   @JSName("listWorkflowRunLogs")
   var listWorkflowRunLogs_Original: `5` = js.native
+  /**
+    * Lists all workflow runs for a repository. You can use parameters to narrow the list of results. For more information about using parameters, see [Parameters](https://developer.github.com/v3/#parameters).
+    *
+    * Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
+    */
+  @JSName("listWorkflowRunsForRepo")
+  var listWorkflowRunsForRepo_Original: `23` = js.native
   /**
     * List all workflow runs for a workflow. You can also replace `:workflow_id` with `:workflow_file_name`. For example, you could use `main.yml`. You can use parameters to narrow the list of results. For more information about using parameters, see [Parameters](https://developer.github.com/v3/#parameters).
     *
@@ -733,6 +755,23 @@ trait AddSelectedRepoToOrgSecret extends js.Object {
     *
     * Call this endpoint using the `-v` flag, which enables verbose output and allows you to see the download URL in the header. To download the file into the current working directory, specify the filename using the `-o` flag.
     */
+  def downloadJobLogsForWorkflowRun(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/actions/jobs/:job_id/logs']['response'] */ js.Any
+  ] = js.native
+  def downloadJobLogsForWorkflowRun(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/actions/jobs/:job_id/logs']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/actions/jobs/:job_id/logs']['response'] */ js.Any
+  ] = js.native
+  /**
+    * Gets a redirect URL to download a plain text file of logs for a workflow job. This link expires after 1 minute. Look for `Location:` in the response header to find the URL for the download. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
+    *
+    * Call this endpoint using the `-v` flag, which enables verbose output and allows you to see the download URL in the header. To download the file into the current working directory, specify the filename using the `-o` flag.
+    * @deprecated octokit.actions.downloadWorkflowJobLogs() has been renamed to octokit.actions.downloadJobLogsForWorkflowRun() (2020-06-04)
+    */
   def downloadWorkflowJobLogs(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/actions/jobs/:job_id/logs']['response'] */ js.Any
   ] = js.native
@@ -773,6 +812,20 @@ trait AddSelectedRepoToOrgSecret extends js.Object {
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/actions/artifacts/:artifact_id']['response'] */ js.Any
+  ] = js.native
+  /**
+    * Gets a specific job in a workflow run. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
+    */
+  def getJobForWorkflowRun(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/actions/jobs/:job_id']['response'] */ js.Any
+  ] = js.native
+  def getJobForWorkflowRun(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/actions/jobs/:job_id']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/actions/jobs/:job_id']['response'] */ js.Any
   ] = js.native
   /**
     * Gets your public key, which you need to encrypt secrets. You need to encrypt a secret before you can create or update secrets. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `secrets` organization permission to use this endpoint.
@@ -921,6 +974,7 @@ trait AddSelectedRepoToOrgSecret extends js.Object {
   ] = js.native
   /**
     * Gets a specific job in a workflow run. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
+    * @deprecated octokit.actions.getWorkflowJob() has been renamed to octokit.actions.getJobForWorkflowRun() (2020-06-04)
     */
   def getWorkflowJob(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/actions/jobs/:job_id']['response'] */ js.Any
@@ -950,7 +1004,7 @@ trait AddSelectedRepoToOrgSecret extends js.Object {
   /**
     * **Warning:** This GitHub Actions usage endpoint is currently in public beta and subject to change. For more information, see "[GitHub Actions API workflow usage](https://developer.github.com/changes/2020-05-15-actions-api-workflow-usage)."
     *
-    * Gets the number of billable minutes and total run time for a specific workflow run. Billable minutes only apply to workflows in private repositories that use GitHub-hosted runners. Usage is listed for each GitHub-hosted runner operating system in milliseconds. The usage does not include the multiplier for macOS and Windows runners and is not rounded up to the nearest whole minute. For more information, see "[Managing billing for GitHub Actions](https://help.github.com/github/setting-up-and-managing-billing-and-payments-on-github/managing-billing-for-github-actions)" in the GitHub Help documentation.
+    * Gets the number of billable minutes and total run time for a specific workflow run. Billable minutes only apply to workflows in private repositories that use GitHub-hosted runners. Usage is listed for each GitHub-hosted runner operating system in milliseconds. Any job re-runs are also included in the usage. The usage does not include the multiplier for macOS and Windows runners and is not rounded up to the nearest whole minute. For more information, see "[Managing billing for GitHub Actions](https://help.github.com/github/setting-up-and-managing-billing-and-payments-on-github/managing-billing-for-github-actions)" in the GitHub Help documentation.
     *
     * Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
     */
@@ -968,7 +1022,7 @@ trait AddSelectedRepoToOrgSecret extends js.Object {
   /**
     * **Warning:** This GitHub Actions usage endpoint is currently in public beta and subject to change. For more information, see "[GitHub Actions API workflow usage](https://developer.github.com/changes/2020-05-15-actions-api-workflow-usage)."
     *
-    * Gets the number of billable minutes used by a specific workflow during the current billing cycle. Billable minutes only apply to workflows in private repositories that use GitHub-hosted runners. Usage is listed for each GitHub-hosted runner operating system in milliseconds. The usage does not include the multiplier for macOS and Windows runners and is not rounded up to the nearest whole minute. For more information, see "[Managing billing for GitHub Actions](https://help.github.com/github/setting-up-and-managing-billing-and-payments-on-github/managing-billing-for-github-actions)" in the GitHub Help documentation.
+    * Gets the number of billable minutes used by a specific workflow during the current billing cycle. Billable minutes only apply to workflows in private repositories that use GitHub-hosted runners. Usage is listed for each GitHub-hosted runner operating system in milliseconds. Any job re-runs are also included in the usage. The usage does not include the multiplier for macOS and Windows runners and is not rounded up to the nearest whole minute. For more information, see "[Managing billing for GitHub Actions](https://help.github.com/github/setting-up-and-managing-billing-and-payments-on-github/managing-billing-for-github-actions)" in the GitHub Help documentation.
     *
     * You can also replace `:workflow_id` with `:workflow_file_name`. For example, you could use `main.yml`. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
     */
@@ -1058,6 +1112,7 @@ trait AddSelectedRepoToOrgSecret extends js.Object {
     * Lists all workflow runs for a repository. You can use parameters to narrow the list of results. For more information about using parameters, see [Parameters](https://developer.github.com/v3/#parameters).
     *
     * Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
+    * @deprecated octokit.actions.listRepoWorkflowRuns() has been renamed to octokit.actions.listWorkflowRunsForRepo() (2020-06-04)
     */
   def listRepoWorkflowRuns(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/actions/runs']['response'] */ js.Any
@@ -1236,6 +1291,22 @@ trait AddSelectedRepoToOrgSecret extends js.Object {
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/actions/workflows/:workflow_id/runs']['response'] */ js.Any
+  ] = js.native
+  /**
+    * Lists all workflow runs for a repository. You can use parameters to narrow the list of results. For more information about using parameters, see [Parameters](https://developer.github.com/v3/#parameters).
+    *
+    * Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
+    */
+  def listWorkflowRunsForRepo(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/actions/runs']['response'] */ js.Any
+  ] = js.native
+  def listWorkflowRunsForRepo(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/actions/runs']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/actions/runs']['response'] */ js.Any
   ] = js.native
   /**
     * Re-runs your workflow run using its `id`. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `actions:write` permission to use this endpoint.

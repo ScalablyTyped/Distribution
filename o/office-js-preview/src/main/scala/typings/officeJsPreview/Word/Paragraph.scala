@@ -255,7 +255,6 @@ trait Paragraph extends ClientObject {
     */
   val text: String = js.native
   /**
-    *
     * Lets the paragraph join an existing list at the specified level. Fails if the paragraph cannot join the list or if the paragraph is already a list item.
     *
     * [Api set: WordApi 1.3]
@@ -265,70 +264,60 @@ trait Paragraph extends ClientObject {
     */
   def attachToList(listId: Double, level: Double): List = js.native
   /**
-    *
     * Clears the contents of the paragraph object. The user can perform the undo operation on the cleared content.
     *
     * [Api set: WordApi 1.1]
     */
   def clear(): Unit = js.native
   /**
-    *
     * Deletes the paragraph and its content from the document.
     *
     * [Api set: WordApi 1.1]
     */
   def delete(): Unit = js.native
   /**
-    *
     * Moves this paragraph out of its list, if the paragraph is a list item.
     *
     * [Api set: WordApi 1.3]
     */
   def detachFromList(): Unit = js.native
   /**
-    *
     * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
     *
     * [Api set: WordApi 1.1]
     */
   def getHtml(): ClientResult[String] = js.native
   /**
-    *
     * Gets the next paragraph. Throws an error if the paragraph is the last one.
     *
     * [Api set: WordApi 1.3]
     */
   def getNext(): Paragraph = js.native
   /**
-    *
     * Gets the next paragraph. Returns a null object if the paragraph is the last one.
     *
     * [Api set: WordApi 1.3]
     */
   def getNextOrNullObject(): Paragraph = js.native
   /**
-    *
     * Gets the Office Open XML (OOXML) representation of the paragraph object.
     *
     * [Api set: WordApi 1.1]
     */
   def getOoxml(): ClientResult[String] = js.native
   /**
-    *
     * Gets the previous paragraph. Throws an error if the paragraph is the first one.
     *
     * [Api set: WordApi 1.3]
     */
   def getPrevious(): Paragraph = js.native
   /**
-    *
     * Gets the previous paragraph. Returns a null object if the paragraph is the first one.
     *
     * [Api set: WordApi 1.3]
     */
   def getPreviousOrNullObject(): Paragraph = js.native
   /**
-    *
     * Gets the whole paragraph, or the starting or ending point of the paragraph, as a range.
     *
     * [Api set: WordApi 1.3]
@@ -350,7 +339,6 @@ trait Paragraph extends ClientObject {
   @JSName("getRange")
   def getRange_Whole(rangeLocation: Whole): Range = js.native
   /**
-    *
     * Gets the text ranges in the paragraph by using punctuation marks and/or other ending marks.
     *
     * [Api set: WordApi 1.3]
@@ -361,7 +349,6 @@ trait Paragraph extends ClientObject {
   def getTextRanges(endingMarks: js.Array[String]): RangeCollection = js.native
   def getTextRanges(endingMarks: js.Array[String], trimSpacing: Boolean): RangeCollection = js.native
   /**
-    *
     * Inserts a break at the specified location in the main document.
     *
     * [Api set: WordApi 1.1]
@@ -374,7 +361,6 @@ trait Paragraph extends ClientObject {
     insertLocation: Before | After | Start | End | Replace
   ): Unit = js.native
   /**
-    *
     * Inserts a break at the specified location in the main document.
     *
     * [Api set: WordApi 1.1]
@@ -384,14 +370,12 @@ trait Paragraph extends ClientObject {
     */
   def insertBreak(breakType: BreakType, insertLocation: InsertLocation): Unit = js.native
   /**
-    *
     * Wraps the paragraph object with a rich text content control.
     *
     * [Api set: WordApi 1.1]
     */
   def insertContentControl(): ContentControl = js.native
   /**
-    *
     * Inserts a document into the paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -403,7 +387,6 @@ trait Paragraph extends ClientObject {
   @JSName("insertFileFromBase64")
   def insertFileFromBase64_After(base64File: String, insertLocation: After): Range = js.native
   /**
-    *
     * Inserts a document into the paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -420,7 +403,6 @@ trait Paragraph extends ClientObject {
   @JSName("insertFileFromBase64")
   def insertFileFromBase64_Start(base64File: String, insertLocation: Start): Range = js.native
   /**
-    *
     * Inserts HTML into the paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -432,7 +414,6 @@ trait Paragraph extends ClientObject {
   @JSName("insertHtml")
   def insertHtml_After(html: String, insertLocation: After): Range = js.native
   /**
-    *
     * Inserts HTML into the paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -449,7 +430,6 @@ trait Paragraph extends ClientObject {
   @JSName("insertHtml")
   def insertHtml_Start(html: String, insertLocation: Start): Range = js.native
   /**
-    *
     * Inserts a picture into the paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -461,7 +441,6 @@ trait Paragraph extends ClientObject {
   @JSName("insertInlinePictureFromBase64")
   def insertInlinePictureFromBase64_After(base64EncodedImage: String, insertLocation: After): InlinePicture = js.native
   /**
-    *
     * Inserts a picture into the paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -478,7 +457,6 @@ trait Paragraph extends ClientObject {
   @JSName("insertInlinePictureFromBase64")
   def insertInlinePictureFromBase64_Start(base64EncodedImage: String, insertLocation: Start): InlinePicture = js.native
   /**
-    *
     * Inserts OOXML into the paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -490,7 +468,6 @@ trait Paragraph extends ClientObject {
   @JSName("insertOoxml")
   def insertOoxml_After(ooxml: String, insertLocation: After): Range = js.native
   /**
-    *
     * Inserts OOXML into the paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -507,7 +484,6 @@ trait Paragraph extends ClientObject {
   @JSName("insertOoxml")
   def insertOoxml_Start(ooxml: String, insertLocation: Start): Range = js.native
   /**
-    *
     * Inserts a paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -519,7 +495,6 @@ trait Paragraph extends ClientObject {
   @JSName("insertParagraph")
   def insertParagraph_After(paragraphText: String, insertLocation: After): Paragraph = js.native
   /**
-    *
     * Inserts a paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -536,7 +511,6 @@ trait Paragraph extends ClientObject {
   @JSName("insertParagraph")
   def insertParagraph_Start(paragraphText: String, insertLocation: Start): Paragraph = js.native
   /**
-    *
     * Inserts a table with the specified number of rows and columns.
     *
     * [Api set: WordApi 1.3]
@@ -558,7 +532,6 @@ trait Paragraph extends ClientObject {
   @JSName("insertTable")
   def insertTable_After(rowCount: Double, columnCount: Double, insertLocation: After, values: js.Array[js.Array[String]]): Table = js.native
   /**
-    *
     * Inserts a table with the specified number of rows and columns.
     *
     * [Api set: WordApi 1.3]
@@ -585,7 +558,6 @@ trait Paragraph extends ClientObject {
   @JSName("insertTable")
   def insertTable_Start(rowCount: Double, columnCount: Double, insertLocation: Start, values: js.Array[js.Array[String]]): Table = js.native
   /**
-    *
     * Inserts text into the paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -597,7 +569,6 @@ trait Paragraph extends ClientObject {
   @JSName("insertText")
   def insertText_After(text: String, insertLocation: After): Range = js.native
   /**
-    *
     * Inserts text into the paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -614,27 +585,16 @@ trait Paragraph extends ClientObject {
   @JSName("insertText")
   def insertText_Start(text: String, insertLocation: Start): Range = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Word.Paragraph` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Word.Paragraph` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Paragraph` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): Paragraph = js.native
-  def load(option: String): Paragraph = js.native
-  def load(option: js.Array[String]): Paragraph = js.native
-  def load(option: ParagraphLoadOptions): Paragraph = js.native
-  def load(option: Expand): Paragraph = js.native
+  def load(options: ParagraphLoadOptions): Paragraph = js.native
+  def load(propertyNamesAndPaths: Expand): Paragraph = js.native
+  def load(propertyNames: String): Paragraph = js.native
+  def load(propertyNames: js.Array[String]): Paragraph = js.native
   /**
-    *
     * Performs a search with the specified SearchOptions on the scope of the paragraph object. The search results are a collection of range objects.
     *
     * [Api set: WordApi 1.1]
@@ -646,7 +606,6 @@ trait Paragraph extends ClientObject {
   def search(searchText: String, searchOptions: SearchOptions): RangeCollection = js.native
   def search(searchText: String, searchOptions: IgnorePunct): RangeCollection = js.native
   /**
-    *
     * Selects and navigates the Word UI to the paragraph.
     *
     * [Api set: WordApi 1.1]
@@ -677,7 +636,6 @@ trait Paragraph extends ClientObject {
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Paragraph): Unit = js.native
   /**
-    *
     * Splits the paragraph into child ranges by using delimiters.
     *
     * [Api set: WordApi 1.3]
@@ -690,7 +648,6 @@ trait Paragraph extends ClientObject {
   def split(delimiters: js.Array[String], trimDelimiters: Boolean): RangeCollection = js.native
   def split(delimiters: js.Array[String], trimDelimiters: Boolean, trimSpacing: Boolean): RangeCollection = js.native
   /**
-    *
     * Starts a new list with this paragraph. Fails if the paragraph is already a list item.
     *
     * [Api set: WordApi 1.3]
@@ -702,11 +659,11 @@ trait Paragraph extends ClientObject {
     */
   def toJSON(): ParagraphData = js.native
   /**
-    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
     */
   def track(): Paragraph = js.native
   /**
-    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
+    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     */
   def untrack(): Paragraph = js.native
 }

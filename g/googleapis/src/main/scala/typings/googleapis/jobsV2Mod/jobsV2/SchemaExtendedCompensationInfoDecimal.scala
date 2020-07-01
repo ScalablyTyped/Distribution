@@ -25,9 +25,9 @@ trait SchemaExtendedCompensationInfoDecimal extends js.Object {
 
 object SchemaExtendedCompensationInfoDecimal {
   @scala.inline
-  def apply(micros: Int | Double = null, units: String = null): SchemaExtendedCompensationInfoDecimal = {
+  def apply(micros: js.UndefOr[Double] = js.undefined, units: String = null): SchemaExtendedCompensationInfoDecimal = {
     val __obj = js.Dynamic.literal()
-    if (micros != null) __obj.updateDynamic("micros")(micros.asInstanceOf[js.Any])
+    if (!js.isUndefined(micros)) __obj.updateDynamic("micros")(micros.get.asInstanceOf[js.Any])
     if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExtendedCompensationInfoDecimal]
   }

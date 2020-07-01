@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   * Default Constructor.
   */
 class Deque[T] ()
-  extends typings.tstl.tstlMod.Deque[T] {
+  extends typings.tstl.tstlModuleMod.Deque[T] {
   /**
     * Initializer Constructor.
     *

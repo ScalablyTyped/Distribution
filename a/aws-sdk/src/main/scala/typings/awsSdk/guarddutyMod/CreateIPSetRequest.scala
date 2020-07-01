@@ -23,7 +23,7 @@ trait CreateIPSetRequest extends js.Object {
     */
   var Format: IpSetFormat = js.native
   /**
-    * The URI of the file that contains the IPSet. For example: .
+    * The URI of the file that contains the IPSet. For example: https://s3.us-west-2.amazonaws.com/my-bucket/my-object-key.
     */
   var Location: typings.awsSdk.guarddutyMod.Location = js.native
   /**

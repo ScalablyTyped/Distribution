@@ -49,7 +49,7 @@ object LVal {
   def MemberExpression_(
     computed: Boolean,
     `object`: Expression,
-    property: js.Any,
+    property: Expression | Identifier_ | PrivateName_,
     `type`: MemberExpression,
     end: Double = null.asInstanceOf[Double],
     innerComments: js.Array[Comment] = null,
@@ -118,7 +118,7 @@ object LVal {
   }
   @scala.inline
   def Identifier_(
-    name: js.Any,
+    name: String,
     `type`: Identifier,
     decorators: js.Array[Decorator_] = null,
     end: Double = null.asInstanceOf[Double],

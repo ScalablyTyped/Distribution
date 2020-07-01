@@ -69,6 +69,17 @@ trait parseNumberstrueParseOpti extends js.Object {
   	*/
   val parseBooleans: js.UndefOr[Boolean] = js.undefined
   /**
+  	Parse the fragment identifier from the URL and add it to result object.
+  	@default false
+  	@example
+  	```
+  	import queryString = require('query-string');
+  	queryString.parseUrl('https://foo.bar?foo=bar#xyz', {parseFragmentIdentifier: true});
+  	//=> {url: 'https://foo.bar', query: {foo: 'bar'}, fragmentIdentifier: 'xyz'}
+  	```
+  	*/
+  val parseFragmentIdentifier: js.UndefOr[Boolean] = js.undefined
+  /**
   	Parse the value as a number type instead of string type if it's a number.
   	@default false
   	@example
@@ -109,6 +120,7 @@ object parseNumberstrueParseOpti {
     arrayFormatSeparator: String = null,
     decode: js.UndefOr[Boolean] = js.undefined,
     parseBooleans: js.UndefOr[Boolean] = js.undefined,
+    parseFragmentIdentifier: js.UndefOr[Boolean] = js.undefined,
     parseNumbers: js.UndefOr[`true` with Boolean] = js.undefined,
     sort: (js.Function2[/* itemLeft */ String, /* itemRight */ String, Double]) | `false` = null
   ): parseNumberstrueParseOpti = {
@@ -117,6 +129,7 @@ object parseNumberstrueParseOpti {
     if (arrayFormatSeparator != null) __obj.updateDynamic("arrayFormatSeparator")(arrayFormatSeparator.asInstanceOf[js.Any])
     if (!js.isUndefined(decode)) __obj.updateDynamic("decode")(decode.get.asInstanceOf[js.Any])
     if (!js.isUndefined(parseBooleans)) __obj.updateDynamic("parseBooleans")(parseBooleans.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parseFragmentIdentifier)) __obj.updateDynamic("parseFragmentIdentifier")(parseFragmentIdentifier.get.asInstanceOf[js.Any])
     if (!js.isUndefined(parseNumbers)) __obj.updateDynamic("parseNumbers")(parseNumbers.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[parseNumberstrueParseOpti]

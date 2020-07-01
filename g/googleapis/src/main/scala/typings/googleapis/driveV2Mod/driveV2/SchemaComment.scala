@@ -1,6 +1,6 @@
 package typings.googleapis.driveV2Mod.driveV2
 
-import typings.googleapis.AnonValue
+import typings.googleapis.anon.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +33,7 @@ trait SchemaComment extends js.Object {
   /**
     * The context of the file which is being commented on.
     */
-  var context: js.UndefOr[AnonValue] = js.native
+  var context: js.UndefOr[Value] = js.native
   /**
     * The date when this comment was first created.
     */
@@ -88,7 +88,7 @@ object SchemaComment {
     author: SchemaUser = null,
     commentId: String = null,
     content: String = null,
-    context: AnonValue = null,
+    context: Value = null,
     createdDate: String = null,
     deleted: js.UndefOr[Boolean] = js.undefined,
     fileId: String = null,
@@ -107,7 +107,7 @@ object SchemaComment {
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
     if (fileId != null) __obj.updateDynamic("fileId")(fileId.asInstanceOf[js.Any])
     if (fileTitle != null) __obj.updateDynamic("fileTitle")(fileTitle.asInstanceOf[js.Any])
     if (htmlContent != null) __obj.updateDynamic("htmlContent")(htmlContent.asInstanceOf[js.Any])

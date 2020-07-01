@@ -4,17 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-// PHRASES
-//
 // defaultPhrases.js
 trait DateRangePickerPhrases extends js.Object {
   var calendarLabel: js.UndefOr[String] = js.undefined
-  var chooseAvailableEndDate: js.UndefOr[js.Function1[/* date */ String, String]] = js.undefined
-  var chooseAvailableStartDate: js.UndefOr[js.Function1[/* date */ String, String]] = js.undefined
+  var chooseAvailableEndDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
+  var chooseAvailableStartDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
   var clearDates: js.UndefOr[String] = js.undefined
   var closeDatePicker: js.UndefOr[String] = js.undefined
-  var dateIsSelected: js.UndefOr[js.Function1[/* date */ String, String]] = js.undefined
-  var dateIsUnavailable: js.UndefOr[js.Function1[/* date */ String, String]] = js.undefined
+  var dateIsSelected: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
+  var dateIsSelectedAsEndDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
+  var dateIsSelectedAsStartDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
+  var dateIsUnavailable: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
   var enterKey: js.UndefOr[String] = js.undefined
   var escape: js.UndefOr[String] = js.undefined
   var focusStartDate: js.UndefOr[String] = js.undefined
@@ -42,12 +42,14 @@ object DateRangePickerPhrases {
   @scala.inline
   def apply(
     calendarLabel: String = null,
-    chooseAvailableEndDate: /* date */ String => String = null,
-    chooseAvailableStartDate: /* date */ String => String = null,
+    chooseAvailableEndDate: /* phraseArg */ PhraseArg => String = null,
+    chooseAvailableStartDate: /* phraseArg */ PhraseArg => String = null,
     clearDates: String = null,
     closeDatePicker: String = null,
-    dateIsSelected: /* date */ String => String = null,
-    dateIsUnavailable: /* date */ String => String = null,
+    dateIsSelected: /* phraseArg */ PhraseArg => String = null,
+    dateIsSelectedAsEndDate: /* phraseArg */ PhraseArg => String = null,
+    dateIsSelectedAsStartDate: /* phraseArg */ PhraseArg => String = null,
+    dateIsUnavailable: /* phraseArg */ PhraseArg => String = null,
     enterKey: String = null,
     escape: String = null,
     focusStartDate: String = null,
@@ -77,6 +79,8 @@ object DateRangePickerPhrases {
     if (clearDates != null) __obj.updateDynamic("clearDates")(clearDates.asInstanceOf[js.Any])
     if (closeDatePicker != null) __obj.updateDynamic("closeDatePicker")(closeDatePicker.asInstanceOf[js.Any])
     if (dateIsSelected != null) __obj.updateDynamic("dateIsSelected")(js.Any.fromFunction1(dateIsSelected))
+    if (dateIsSelectedAsEndDate != null) __obj.updateDynamic("dateIsSelectedAsEndDate")(js.Any.fromFunction1(dateIsSelectedAsEndDate))
+    if (dateIsSelectedAsStartDate != null) __obj.updateDynamic("dateIsSelectedAsStartDate")(js.Any.fromFunction1(dateIsSelectedAsStartDate))
     if (dateIsUnavailable != null) __obj.updateDynamic("dateIsUnavailable")(js.Any.fromFunction1(dateIsUnavailable))
     if (enterKey != null) __obj.updateDynamic("enterKey")(enterKey.asInstanceOf[js.Any])
     if (escape != null) __obj.updateDynamic("escape")(escape.asInstanceOf[js.Any])

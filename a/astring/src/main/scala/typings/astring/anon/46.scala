@@ -1,17 +1,17 @@
 package typings.astring.anon
 
-import typings.astring.astringStrings.TemplateLiteral
+import typings.astring.astringStrings.RestElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait `46` extends js.Object {
-  var `type`: TemplateLiteral
+  var `type`: RestElement
 }
 
 object `46` {
   @scala.inline
-  def apply(`type`: TemplateLiteral): `46` = {
+  def apply(`type`: RestElement): `46` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`46`]

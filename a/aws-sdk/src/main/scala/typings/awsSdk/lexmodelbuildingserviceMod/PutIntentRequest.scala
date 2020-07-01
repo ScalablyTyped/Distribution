@@ -39,6 +39,10 @@ trait PutIntentRequest extends js.Object {
     */
   var fulfillmentActivity: js.UndefOr[FulfillmentActivity] = js.native
   /**
+    * Configuration information required to use the AMAZON.KendraSearchIntent intent to connect to an Amazon Kendra index. For more information, see  AMAZON.KendraSearchIntent.
+    */
+  var kendraConfiguration: js.UndefOr[KendraConfiguration] = js.native
+  /**
     * The name of the intent. The name is not case sensitive.  The name can't match a built-in intent name, or a built-in intent name with "AMAZON." removed. For example, because there is a built-in intent called AMAZON.HelpIntent, you can't create a custom intent called HelpIntent. For a list of built-in intents, see Standard Built-in Intents in the Alexa Skills Kit.
     */
   var name: IntentName = js.native
@@ -72,6 +76,7 @@ object PutIntentRequest {
     dialogCodeHook: CodeHook = null,
     followUpPrompt: FollowUpPrompt = null,
     fulfillmentActivity: FulfillmentActivity = null,
+    kendraConfiguration: KendraConfiguration = null,
     parentIntentSignature: BuiltinIntentSignature = null,
     rejectionStatement: Statement = null,
     sampleUtterances: IntentUtteranceList = null,
@@ -86,6 +91,7 @@ object PutIntentRequest {
     if (dialogCodeHook != null) __obj.updateDynamic("dialogCodeHook")(dialogCodeHook.asInstanceOf[js.Any])
     if (followUpPrompt != null) __obj.updateDynamic("followUpPrompt")(followUpPrompt.asInstanceOf[js.Any])
     if (fulfillmentActivity != null) __obj.updateDynamic("fulfillmentActivity")(fulfillmentActivity.asInstanceOf[js.Any])
+    if (kendraConfiguration != null) __obj.updateDynamic("kendraConfiguration")(kendraConfiguration.asInstanceOf[js.Any])
     if (parentIntentSignature != null) __obj.updateDynamic("parentIntentSignature")(parentIntentSignature.asInstanceOf[js.Any])
     if (rejectionStatement != null) __obj.updateDynamic("rejectionStatement")(rejectionStatement.asInstanceOf[js.Any])
     if (sampleUtterances != null) __obj.updateDynamic("sampleUtterances")(sampleUtterances.asInstanceOf[js.Any])

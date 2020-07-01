@@ -34,7 +34,12 @@ trait ISuggestProps[T] extends IListItemsProps[T] {
     */
   var inputProps: js.UndefOr[IInputGroupProps with HTMLInputProps] = js.native
   /**
-    * Whether the popover opens on key down or when the input is focused.
+    * If true, the component waits until a keydown event in the TagInput
+    * before opening its popover.
+    *
+    * If false, the popover opens immediately after a mouse click or TAB key
+    * interaction focuses the component's TagInput.
+    *
     * @default false
     */
   var openOnKeyDown: js.UndefOr[Boolean] = js.native

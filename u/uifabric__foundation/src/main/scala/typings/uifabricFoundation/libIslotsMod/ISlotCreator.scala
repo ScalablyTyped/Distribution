@@ -14,7 +14,7 @@ trait ISlotCreator[TProps /* <: ValidProps */, TShorthandProp /* <: ValidShortha
 
 object ISlotCreator {
   @scala.inline
-  def apply[TProps, TShorthandProp](
+  def apply[/* <: typings.uifabricFoundation.libIslotsMod.ValidProps */ TProps, /* <: typings.uifabricFoundation.libIslotsMod.ValidShorthand */ TShorthandProp](
     create: (/* componentProps */ TProps with IProcessedSlotProps, /* userProps */ ISlotProp[TProps, TShorthandProp], /* slotOptions */ js.UndefOr[ISlotOptions[TProps]], /* defaultStyles */ IStyle, /* theme */ js.UndefOr[ITheme]) => ReturnType[FunctionComponent[TProps]] = null
   ): ISlotCreator[TProps, TShorthandProp] = {
     val __obj = js.Dynamic.literal()

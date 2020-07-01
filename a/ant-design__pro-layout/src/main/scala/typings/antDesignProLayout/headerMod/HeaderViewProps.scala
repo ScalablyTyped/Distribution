@@ -6,6 +6,7 @@ import typings.antDesignProLayout.antDesignProLayoutStrings.sidemenu
 import typings.antDesignProLayout.antDesignProLayoutStrings.topmenu
 import typings.antDesignProLayout.defaultSettingsMod.ContentWidth
 import typings.antDesignProLayout.typingsMod.WithFalse
+import typings.antd.menuContextMod.MenuTheme
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import scala.scalajs.js
@@ -44,9 +45,7 @@ trait HeaderViewProps extends js.Object {
   var menuRender: js.UndefOr[
     WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]]
   ] = js.undefined
-  var navTheme: js.UndefOr[
-    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark
-  ] = js.undefined
+  var navTheme: js.UndefOr[MenuTheme | realDark] = js.undefined
   var onCollapse: js.UndefOr[js.Function1[/* collapsed */ Boolean, Unit]] = js.undefined
   var primaryColor: js.UndefOr[String] = js.undefined
   var rightContentRender: js.UndefOr[WithFalse[js.Function1[/* props */ this.type, ReactNode]]] = js.undefined
@@ -81,7 +80,7 @@ object HeaderViewProps {
       ]
     ] = null,
     menuRender: WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]] = null,
-    navTheme: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark = null,
+    navTheme: MenuTheme | realDark = null,
     onCollapse: /* collapsed */ Boolean => Unit = null,
     primaryColor: String = null,
     rightContentRender: WithFalse[js.Function1[HeaderViewProps, ReactNode]] = null,

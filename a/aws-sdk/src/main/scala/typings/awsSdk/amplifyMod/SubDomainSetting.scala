@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SubDomainSetting extends js.Object {
   /**
-    *  Branch name setting for the Subdomain. 
+    *  The branch name setting for the subdomain. 
     */
   var branchName: BranchName = js.native
   /**
-    *  Prefix setting for the Subdomain. 
+    *  The prefix setting for the subdomain. 
     */
   var prefix: DomainPrefix = js.native
 }

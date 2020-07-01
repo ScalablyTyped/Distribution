@@ -79,7 +79,7 @@ trait ComponentOptions[V /* <: Vue */, Data, Methods, Computed, PropsDef, Props]
 
 object ComponentOptions {
   @scala.inline
-  def apply[V, Data, Methods, Computed, PropsDef, Props](
+  def apply[/* <: typings.vue.vueMod.Vue */ V, Data, Methods, Computed, PropsDef, Props](
     activated: () => Unit = null,
     beforeCreate: js.ThisFunction0[/* this */ V, Unit] = null,
     beforeDestroy: () => Unit = null,

@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@testing-library/dom/pretty-dom", JSImport.Namespace)
+@JSImport("@testing-library/dom/types/pretty-dom", JSImport.Namespace)
 @js.native
 object prettyDomMod extends js.Object {
   def logDOM(): Unit = js.native

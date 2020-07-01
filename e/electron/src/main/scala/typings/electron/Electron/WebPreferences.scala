@@ -3,6 +3,10 @@ package typings.electron.Electron
 import typings.electron.electronStrings.`document-user-activation-required`
 import typings.electron.electronStrings.`no-user-gesture-required`
 import typings.electron.electronStrings.`user-gesture-required`
+import typings.electron.electronStrings.bypassHeatCheck
+import typings.electron.electronStrings.bypassHeatCheckAndEagerCompile
+import typings.electron.electronStrings.code
+import typings.electron.electronStrings.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -218,6 +222,10 @@ trait WebPreferences extends js.Object {
     */
   var textAreasAreResizable: js.UndefOr[Boolean] = js.undefined
   /**
+    * Enforces the v8 code caching policy used by blink. Accepted values are
+    */
+  var v8CacheOptions: js.UndefOr[none | code | bypassHeatCheck | bypassHeatCheckAndEagerCompile] = js.undefined
+  /**
     * When `false`, it will disable the same-origin policy (usually using testing
     * websites by people), and set `allowRunningInsecureContent` to `true` if this
     * options has not been set by user. Default is `true`.
@@ -283,6 +291,7 @@ object WebPreferences {
     session: Session_ = null,
     spellcheck: js.UndefOr[Boolean] = js.undefined,
     textAreasAreResizable: js.UndefOr[Boolean] = js.undefined,
+    v8CacheOptions: none | code | bypassHeatCheck | bypassHeatCheckAndEagerCompile = null,
     webSecurity: js.UndefOr[Boolean] = js.undefined,
     webgl: js.UndefOr[Boolean] = js.undefined,
     webviewTag: js.UndefOr[Boolean] = js.undefined,
@@ -327,6 +336,7 @@ object WebPreferences {
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck.get.asInstanceOf[js.Any])
     if (!js.isUndefined(textAreasAreResizable)) __obj.updateDynamic("textAreasAreResizable")(textAreasAreResizable.get.asInstanceOf[js.Any])
+    if (v8CacheOptions != null) __obj.updateDynamic("v8CacheOptions")(v8CacheOptions.asInstanceOf[js.Any])
     if (!js.isUndefined(webSecurity)) __obj.updateDynamic("webSecurity")(webSecurity.get.asInstanceOf[js.Any])
     if (!js.isUndefined(webgl)) __obj.updateDynamic("webgl")(webgl.get.asInstanceOf[js.Any])
     if (!js.isUndefined(webviewTag)) __obj.updateDynamic("webviewTag")(webviewTag.get.asInstanceOf[js.Any])

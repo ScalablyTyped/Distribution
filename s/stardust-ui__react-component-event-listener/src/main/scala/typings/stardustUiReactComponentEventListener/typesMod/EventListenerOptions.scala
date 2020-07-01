@@ -17,7 +17,7 @@ trait EventListenerOptions[T /* <: EventTypes */] extends js.Object {
 
 object EventListenerOptions {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.stardustUiReactComponentEventListener.typesMod.EventTypes */ T](
     listener: /* import warning: importer.ImportType#apply Failed type conversion: std.DocumentEventMap[T] */ /* e */ js.Any => Unit,
     targetRef: TargetRef,
     `type`: T,

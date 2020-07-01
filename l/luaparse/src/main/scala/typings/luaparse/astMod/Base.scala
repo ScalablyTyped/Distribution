@@ -12,7 +12,7 @@ trait Base[TType /* <: String */] extends js.Object {
 
 object Base {
   @scala.inline
-  def apply[TType](`type`: TType, loc: End = null): Base[TType] = {
+  def apply[/* <: java.lang.String */ TType](`type`: TType, loc: End = null): Base[TType] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])

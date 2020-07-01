@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListStackInstancesInput extends js.Object {
   /**
+    * The status that stack instances are filtered by.
+    */
+  var Filters: js.UndefOr[StackInstanceFilters] = js.native
+  /**
     * The maximum number of results to be returned with a single call. If the number of available results exceeds this maximum, the response includes a NextToken value that you can assign to the NextToken request parameter to get the next set of results.
     */
   var MaxResults: js.UndefOr[typings.awsSdk.cloudformationMod.MaxResults] = js.native
@@ -32,12 +36,14 @@ object ListStackInstancesInput {
   @scala.inline
   def apply(
     StackSetName: StackSetName,
+    Filters: StackInstanceFilters = null,
     MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: NextToken = null,
     StackInstanceAccount: Account = null,
     StackInstanceRegion: Region = null
   ): ListStackInstancesInput = {
     val __obj = js.Dynamic.literal(StackSetName = StackSetName.asInstanceOf[js.Any])
+    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (StackInstanceAccount != null) __obj.updateDynamic("StackInstanceAccount")(StackInstanceAccount.asInstanceOf[js.Any])

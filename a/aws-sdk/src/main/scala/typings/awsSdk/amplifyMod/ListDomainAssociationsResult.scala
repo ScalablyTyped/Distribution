@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListDomainAssociationsResult extends js.Object {
   /**
-    *  List of Domain Associations. 
+    *  A list of domain associations. 
     */
   var domainAssociations: DomainAssociations = js.native
   /**
-    *  Pagination token. If non-null pagination token is returned in a result, then pass its value in another request to fetch more entries. 
+    *  A pagination token. If non-null, a pagination token is returned in a result. Pass its value in another request to retrieve more entries. 
     */
   var nextToken: js.UndefOr[NextToken] = js.native
 }

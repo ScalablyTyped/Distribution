@@ -25,7 +25,7 @@ trait Literal extends _Node
 object Literal {
   @scala.inline
   def RegExpLiteral_(
-    flags: js.Any,
+    flags: String,
     pattern: String,
     `type`: RegExpLiteral,
     end: Double = null.asInstanceOf[Double],

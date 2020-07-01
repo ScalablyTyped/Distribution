@@ -18,9 +18,9 @@ trait SchemaMapValue extends js.Object {
 
 object SchemaMapValue {
   @scala.inline
-  def apply(fpVal: Int | Double = null): SchemaMapValue = {
+  def apply(fpVal: js.UndefOr[Double] = js.undefined): SchemaMapValue = {
     val __obj = js.Dynamic.literal()
-    if (fpVal != null) __obj.updateDynamic("fpVal")(fpVal.asInstanceOf[js.Any])
+    if (!js.isUndefined(fpVal)) __obj.updateDynamic("fpVal")(fpVal.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMapValue]
   }
 }

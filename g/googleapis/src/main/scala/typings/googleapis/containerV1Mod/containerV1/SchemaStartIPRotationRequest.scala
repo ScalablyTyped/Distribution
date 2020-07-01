@@ -52,7 +52,7 @@ object SchemaStartIPRotationRequest {
     if (clusterId != null) __obj.updateDynamic("clusterId")(clusterId.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotateCredentials)) __obj.updateDynamic("rotateCredentials")(rotateCredentials.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotateCredentials)) __obj.updateDynamic("rotateCredentials")(rotateCredentials.get.asInstanceOf[js.Any])
     if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStartIPRotationRequest]
   }

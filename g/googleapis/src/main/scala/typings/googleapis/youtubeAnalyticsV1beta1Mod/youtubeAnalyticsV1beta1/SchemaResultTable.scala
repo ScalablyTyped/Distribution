@@ -1,6 +1,6 @@
 package typings.googleapis.youtubeAnalyticsV1beta1Mod.youtubeAnalyticsV1beta1
 
-import typings.googleapis.AnonColumnType
+import typings.googleapis.anon.ColumnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ trait SchemaResultTable extends js.Object {
     * API response will return columns in this order:
     * ageGroup,gender,viewerPercentage.
     */
-  var columnHeaders: js.UndefOr[js.Array[AnonColumnType]] = js.native
+  var columnHeaders: js.UndefOr[js.Array[ColumnType]] = js.native
   /**
     * This value specifies the type of data included in the API response. For
     * the query method, the kind property value will be
@@ -47,7 +47,7 @@ trait SchemaResultTable extends js.Object {
 object SchemaResultTable {
   @scala.inline
   def apply(
-    columnHeaders: js.Array[AnonColumnType] = null,
+    columnHeaders: js.Array[ColumnType] = null,
     kind: String = null,
     rows: js.Array[js.Array[_]] = null
   ): SchemaResultTable = {

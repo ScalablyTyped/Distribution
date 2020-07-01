@@ -78,6 +78,8 @@ trait RequestOptions extends js.Object {
   var headers: js.UndefOr[IncomingHttpHeaders] = js.undefined
   /** HTTPS Agent object. Set false if you does not use agent. */
   var httpsAgent: js.UndefOr[typings.node.httpsMod.Agent] = js.undefined
+  /** by default will convert header keys to lowercase */
+  var keepHeaderCase: js.UndefOr[Boolean] = js.undefined
   /**
     * A string or Buffer containing the private key of the client in PEM format.
     * Notes: This is necessary only if using the client certificate authentication
@@ -158,6 +160,7 @@ object RequestOptions {
     gzip: js.UndefOr[Boolean] = js.undefined,
     headers: IncomingHttpHeaders = null,
     httpsAgent: typings.node.httpsMod.Agent = null,
+    keepHeaderCase: js.UndefOr[Boolean] = js.undefined,
     key: String | Buffer = null,
     lookup: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit = null,
     maxRedirects: js.UndefOr[Double] = js.undefined,
@@ -198,6 +201,7 @@ object RequestOptions {
     if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (httpsAgent != null) __obj.updateDynamic("httpsAgent")(httpsAgent.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepHeaderCase)) __obj.updateDynamic("keepHeaderCase")(keepHeaderCase.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (lookup != null) __obj.updateDynamic("lookup")(js.Any.fromFunction3(lookup))
     if (!js.isUndefined(maxRedirects)) __obj.updateDynamic("maxRedirects")(maxRedirects.get.asInstanceOf[js.Any])

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "remark-stringify" : "8.0.0"
+      "remark-stringify" : "8.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "remark-stringify" : "8.0.0"
+      "remark-stringify" : "8.1.0"
     }
   ],
   "compile-devDependencies" : [

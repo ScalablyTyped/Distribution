@@ -11,7 +11,7 @@ trait IntrinsicTransitionGroupProps[T /* <: /* import warning: LimitUnionLength.
 
 object IntrinsicTransitionGroupProps {
   @scala.inline
-  def apply[T](
+  def apply[/* <: / * import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 * / js.Any */ T](
     appear: js.UndefOr[Boolean] = js.undefined,
     component: js.UndefOr[Null | T] = js.undefined,
     enter: js.UndefOr[Boolean] = js.undefined,

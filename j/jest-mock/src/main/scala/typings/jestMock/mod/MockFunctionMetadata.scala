@@ -18,7 +18,7 @@ trait MockFunctionMetadata[T, Y /* <: js.Array[_] */, Type] extends js.Object {
 
 object MockFunctionMetadata {
   @scala.inline
-  def apply[T, Y, Type](
+  def apply[T, /* <: js.Array[_] */ Y, Type](
     length: js.UndefOr[Double] = js.undefined,
     members: Record[String, MockFunctionMetadata[T, Y, MockFunctionMetadataType]] = null,
     mockImpl: /* args */ Y => T = null,

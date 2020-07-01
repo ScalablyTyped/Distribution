@@ -66,7 +66,7 @@ object SchemaMessage {
     labelIds: js.Array[String] = null,
     payload: SchemaMessagePart = null,
     raw: String = null,
-    sizeEstimate: Int | Double = null,
+    sizeEstimate: js.UndefOr[Double] = js.undefined,
     snippet: String = null,
     threadId: String = null
   ): SchemaMessage = {
@@ -77,7 +77,7 @@ object SchemaMessage {
     if (labelIds != null) __obj.updateDynamic("labelIds")(labelIds.asInstanceOf[js.Any])
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
-    if (sizeEstimate != null) __obj.updateDynamic("sizeEstimate")(sizeEstimate.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizeEstimate)) __obj.updateDynamic("sizeEstimate")(sizeEstimate.get.asInstanceOf[js.Any])
     if (snippet != null) __obj.updateDynamic("snippet")(snippet.asInstanceOf[js.Any])
     if (threadId != null) __obj.updateDynamic("threadId")(threadId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMessage]

@@ -36,9 +36,9 @@ trait SchemaGoogleCloudMlV1AutoScaling extends js.Object {
 
 object SchemaGoogleCloudMlV1AutoScaling {
   @scala.inline
-  def apply(minNodes: Int | Double = null): SchemaGoogleCloudMlV1AutoScaling = {
+  def apply(minNodes: js.UndefOr[Double] = js.undefined): SchemaGoogleCloudMlV1AutoScaling = {
     val __obj = js.Dynamic.literal()
-    if (minNodes != null) __obj.updateDynamic("minNodes")(minNodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(minNodes)) __obj.updateDynamic("minNodes")(minNodes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudMlV1AutoScaling]
   }
 }

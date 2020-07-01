@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object namedNodeMod extends js.Object {
   @js.native
-  trait NamedNodeExt extends NamedNode {
+  trait NamedNodeExt extends NamedNode[String] {
     def toCanonical(): String = js.native
     def toJSON(): TermTypeValue = js.native
   }

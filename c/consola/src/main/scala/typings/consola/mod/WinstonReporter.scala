@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 class WinstonReporter () extends ConsolaReporter {
   def this(logger: Winston) = this()
   /* CompleteClass */
-  override def log(logObj: ConsolaLogObject, args: ConsolaReporterArgs): Unit = js.native
+  override def log(logObj: ConsolaReporterLogObject, args: ConsolaReporterArgs): Unit = js.native
 }
 

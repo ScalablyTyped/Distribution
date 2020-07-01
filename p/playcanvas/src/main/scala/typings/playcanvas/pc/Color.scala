@@ -47,6 +47,16 @@ trait Color extends js.Object {
     */
   def copy(rhs: Color): Color = js.native
   /**
+    * Reports whether two colors are equal.
+    * @example
+    * var a = new pc.Color(1, 0, 0, 1);
+    var b = new pc.Color(1, 1, 0, 1);
+    console.log("The two colors are " + (a.equals(b) ? "equal" : "different"));
+    * @param rhs - The color to compare to the specified color.
+    * @returns True if the colors are equal and false otherwise.
+    */
+  def equals(rhs: Color): Boolean = js.native
+  /**
     * Set the values of the color from a string representation '#11223344' or '#112233'.
     * @param hex - A string representation in the format '#RRGGBBAA' or '#RRGGBB'. Where RR, GG, BB, AA are red, green, blue and alpha values.
     This is the same format used in HTML/CSS.

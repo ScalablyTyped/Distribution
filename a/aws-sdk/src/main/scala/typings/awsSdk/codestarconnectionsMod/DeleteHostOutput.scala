@@ -1,0 +1,9 @@
+package typings.awsSdk.codestarconnectionsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait DeleteHostOutput extends js.Object
+

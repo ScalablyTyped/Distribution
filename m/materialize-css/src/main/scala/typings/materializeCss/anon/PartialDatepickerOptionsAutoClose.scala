@@ -3,6 +3,7 @@ package typings.materializeCss.anon
 import typings.materializeCss.M.Datepicker
 import typings.std.Date
 import typings.std.Element
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +18,11 @@ trait PartialDatepickerOptionsAutoClose extends js.Object {
   var events: js.UndefOr[js.Array[String]] = js.undefined
   var firstDay: js.UndefOr[Double] = js.undefined
   var format: js.UndefOr[String] = js.undefined
-  var i18n: js.UndefOr[PartialInternationalizati] = js.undefined
+  var i18n: js.UndefOr[
+    Partial[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ _
+    ]
+  ] = js.undefined
   var isRTL: js.UndefOr[Boolean] = js.undefined
   var maxDate: js.UndefOr[Date] = js.undefined
   var minDate: js.UndefOr[Date] = js.undefined
@@ -44,7 +49,9 @@ object PartialDatepickerOptionsAutoClose {
     events: js.Array[String] = null,
     firstDay: js.UndefOr[Double] = js.undefined,
     format: String = null,
-    i18n: PartialInternationalizati = null,
+    i18n: Partial[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ _
+    ] = null,
     isRTL: js.UndefOr[Boolean] = js.undefined,
     maxDate: Date = null,
     minDate: Date = null,

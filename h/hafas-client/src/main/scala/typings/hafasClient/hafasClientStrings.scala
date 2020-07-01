@@ -6,6 +6,12 @@ import scala.scalajs.js.annotation._
 
 object hafasClientStrings {
   @js.native
+  sealed trait Feature extends js.Object
+  
+  @js.native
+  sealed trait FeatureCollection extends js.Object
+  
+  @js.native
   sealed trait aircraft extends js.Object
   
   @js.native
@@ -36,6 +42,9 @@ object hafasClientStrings {
   sealed trait operator extends js.Object
   
   @js.native
+  sealed trait point extends js.Object
+  
+  @js.native
   sealed trait region extends js.Object
   
   @js.native
@@ -63,6 +72,10 @@ object hafasClientStrings {
   sealed trait watercraft extends js.Object
   
   @scala.inline
+  def Feature: Feature = "Feature".asInstanceOf[Feature]
+  @scala.inline
+  def FeatureCollection: FeatureCollection = "FeatureCollection".asInstanceOf[FeatureCollection]
+  @scala.inline
   def aircraft: aircraft = "aircraft".asInstanceOf[aircraft]
   @scala.inline
   def bicycle: bicycle = "bicycle".asInstanceOf[bicycle]
@@ -82,6 +95,8 @@ object hafasClientStrings {
   def location: location = "location".asInstanceOf[location]
   @scala.inline
   def operator: operator = "operator".asInstanceOf[operator]
+  @scala.inline
+  def point: point = "point".asInstanceOf[point]
   @scala.inline
   def region: region = "region".asInstanceOf[region]
   @scala.inline

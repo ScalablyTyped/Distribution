@@ -14,7 +14,7 @@ trait BlockEditProps[T /* <: Record[String, _] */] extends BlockSaveProps[T] {
 
 object BlockEditProps {
   @scala.inline
-  def apply[T](attributes: T, className: String, isSelected: Boolean, setAttributes: Partial[T] => Unit): BlockEditProps[T] = {
+  def apply[/* <: typings.std.Record[java.lang.String, _] */ T](attributes: T, className: String, isSelected: Boolean, setAttributes: Partial[T] => Unit): BlockEditProps[T] = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], isSelected = isSelected.asInstanceOf[js.Any], setAttributes = js.Any.fromFunction1(setAttributes))
     __obj.asInstanceOf[BlockEditProps[T]]
   }

@@ -1,6 +1,7 @@
 package typings.reactTooltip.mod
 
 import typings.react.mod.Component
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,9 +16,9 @@ class default ()
 @js.native
 object default extends js.Object {
   def hide(): js.Object = js.native
-  def hide(target: String): js.Object = js.native
+  def hide(target: Element): js.Object = js.native
   def rebuild(): js.Object = js.native
   // static methods
-  def show(target: String): js.Object = js.native
+  def show(target: Element): js.Object = js.native
 }
 

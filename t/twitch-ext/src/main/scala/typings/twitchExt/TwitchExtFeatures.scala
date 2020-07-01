@@ -1,6 +1,8 @@
 package typings.twitchExt
 
+import typings.twitchExt.twitchExtStrings.isBitsEnabled
 import typings.twitchExt.twitchExtStrings.isChatEnabled
+import typings.twitchExt.twitchExtStrings.isSubscriptionStatusAvailable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,17 +18,26 @@ trait TwitchExtFeatures extends TwitchExtFeatureFlags {
     *
     * @param callback The callback is called with an array of feature flags which were updated.
     */
-  @JSName("onChanged")
-  def onChanged_isChatEnabled(callback: js.Function1[/* changed */ js.Array[isChatEnabled], Unit]): Unit
+  def onChanged(
+    callback: js.Function1[
+      /* changed */ js.Array[isBitsEnabled | isChatEnabled | isSubscriptionStatusAvailable], 
+      Unit
+    ]
+  ): Unit
 }
 
 object TwitchExtFeatures {
   @scala.inline
   def apply(
+    isBitsEnabled: Boolean,
     isChatEnabled: Boolean,
-    onChanged: js.Function1[/* changed */ js.Array[isChatEnabled], Unit] => Unit
+    isSubscriptionStatusAvailable: Boolean,
+    onChanged: js.Function1[
+      /* changed */ js.Array[isBitsEnabled | isChatEnabled | isSubscriptionStatusAvailable], 
+      Unit
+    ] => Unit
   ): TwitchExtFeatures = {
-    val __obj = js.Dynamic.literal(isChatEnabled = isChatEnabled.asInstanceOf[js.Any], onChanged = js.Any.fromFunction1(onChanged))
+    val __obj = js.Dynamic.literal(isBitsEnabled = isBitsEnabled.asInstanceOf[js.Any], isChatEnabled = isChatEnabled.asInstanceOf[js.Any], isSubscriptionStatusAvailable = isSubscriptionStatusAvailable.asInstanceOf[js.Any], onChanged = js.Any.fromFunction1(onChanged))
     __obj.asInstanceOf[TwitchExtFeatures]
   }
 }

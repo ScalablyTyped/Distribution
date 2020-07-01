@@ -59,22 +59,22 @@ trait SchemaPose extends js.Object {
 object SchemaPose {
   @scala.inline
   def apply(
-    accuracyMeters: Int | Double = null,
-    altitude: Int | Double = null,
-    heading: Int | Double = null,
+    accuracyMeters: js.UndefOr[Double] = js.undefined,
+    altitude: js.UndefOr[Double] = js.undefined,
+    heading: js.UndefOr[Double] = js.undefined,
     latLngPair: SchemaLatLng = null,
     level: SchemaLevel = null,
-    pitch: Int | Double = null,
-    roll: Int | Double = null
+    pitch: js.UndefOr[Double] = js.undefined,
+    roll: js.UndefOr[Double] = js.undefined
   ): SchemaPose = {
     val __obj = js.Dynamic.literal()
-    if (accuracyMeters != null) __obj.updateDynamic("accuracyMeters")(accuracyMeters.asInstanceOf[js.Any])
-    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
-    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
+    if (!js.isUndefined(accuracyMeters)) __obj.updateDynamic("accuracyMeters")(accuracyMeters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(heading)) __obj.updateDynamic("heading")(heading.get.asInstanceOf[js.Any])
     if (latLngPair != null) __obj.updateDynamic("latLngPair")(latLngPair.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
-    if (roll != null) __obj.updateDynamic("roll")(roll.asInstanceOf[js.Any])
+    if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(roll)) __obj.updateDynamic("roll")(roll.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPose]
   }
 }

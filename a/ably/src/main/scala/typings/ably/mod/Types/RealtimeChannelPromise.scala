@@ -13,6 +13,7 @@ trait RealtimeChannelPromise extends RealtimeChannelBase {
   def history(params: RealtimeHistoryParams): js.Promise[PaginatedResult[Message]] = js.native
   def publish(messagesOrName: js.Any): js.Promise[Unit] = js.native
   def publish(messagesOrName: js.Any, messageData: js.Any): js.Promise[Unit] = js.native
+  def setOptions(options: ChannelOptions): js.Promise[Unit] = js.native
   def subscribe(eventOrCallback: String): js.Promise[Unit] = js.native
   def subscribe(eventOrCallback: String, listener: messageCallback[Message]): js.Promise[Unit] = js.native
   def subscribe(eventOrCallback: js.Array[String]): js.Promise[Unit] = js.native

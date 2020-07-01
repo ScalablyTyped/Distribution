@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
   * Default Constructor.
   */
 abstract class ErrorCategory ()
-  extends typings.tstl.exceptionMod.ErrorCategory
+  extends typings.tstl.tstlModuleMod.ErrorCategory
 

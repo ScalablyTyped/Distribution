@@ -25,6 +25,7 @@ trait Redis
     ], 
     typings.std.global.Promise[js.Object]
   ]) = js.native
+  var options: RedisOptions = js.native
   var status: String = js.native
   def connect(): js.Promise[Unit] = js.native
   def connect(callback: js.Function0[Unit]): js.Promise[Unit] = js.native

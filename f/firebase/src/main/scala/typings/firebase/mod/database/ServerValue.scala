@@ -22,7 +22,7 @@ object ServerValue extends js.Object {
     */
   var TIMESTAMP: js.Object = js.native
   /**
-    * Returns a placeholder value that can be used to atomically increment the 
+    * Returns a placeholder value that can be used to atomically increment the
     * current database value by the provided delta.
     *
     * @param delta the amount to modify the current value atomically.

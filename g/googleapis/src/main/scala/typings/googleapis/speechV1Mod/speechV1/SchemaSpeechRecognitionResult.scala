@@ -27,10 +27,13 @@ trait SchemaSpeechRecognitionResult extends js.Object {
 
 object SchemaSpeechRecognitionResult {
   @scala.inline
-  def apply(alternatives: js.Array[SchemaSpeechRecognitionAlternative] = null, channelTag: Int | Double = null): SchemaSpeechRecognitionResult = {
+  def apply(
+    alternatives: js.Array[SchemaSpeechRecognitionAlternative] = null,
+    channelTag: js.UndefOr[Double] = js.undefined
+  ): SchemaSpeechRecognitionResult = {
     val __obj = js.Dynamic.literal()
     if (alternatives != null) __obj.updateDynamic("alternatives")(alternatives.asInstanceOf[js.Any])
-    if (channelTag != null) __obj.updateDynamic("channelTag")(channelTag.asInstanceOf[js.Any])
+    if (!js.isUndefined(channelTag)) __obj.updateDynamic("channelTag")(channelTag.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSpeechRecognitionResult]
   }
 }

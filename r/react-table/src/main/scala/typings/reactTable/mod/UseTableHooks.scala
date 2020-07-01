@@ -83,7 +83,7 @@ import scala.scalajs.js.annotation._
 
 object UseTableHooks {
   @scala.inline
-  def apply[D](
+  def apply[/* <: js.Object */ D](
     allColumns: js.Array[
       js.Function2[
         /* allColumns */ js.Array[ColumnInstance[D]], 

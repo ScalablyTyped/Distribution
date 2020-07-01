@@ -10,7 +10,7 @@ trait Runner[T /* <: js.Object */, U] extends js.Object {
 
 object Runner {
   @scala.inline
-  def apply[T, U](run: T => js.Promise[U]): Runner[T, U] = {
+  def apply[/* <: js.Object */ T, U](run: T => js.Promise[U]): Runner[T, U] = {
     val __obj = js.Dynamic.literal(run = js.Any.fromFunction1(run))
     __obj.asInstanceOf[Runner[T, U]]
   }

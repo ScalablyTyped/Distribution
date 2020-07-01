@@ -11,10 +11,10 @@ import typings.antd.antdStrings.round
 import typings.antd.antdStrings.square
 import typings.antd.antdStrings.success
 import typings.antd.antdStrings.top
-import typings.antd.progressProgressMod.ProgressGradient
 import typings.antd.progressProgressMod.ProgressProps
 import typings.antd.progressProgressMod.ProgressSize
 import typings.antd.progressProgressMod.ProgressType
+import typings.antd.progressProgressMod.SuccessProps
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import scala.scalajs.js
@@ -24,6 +24,8 @@ import scala.scalajs.js.annotation._
 trait StepsProps extends ProgressProps {
   @JSName("steps")
   var steps_StepsProps: Double
+  @JSName("strokeColor")
+  var strokeColor_StepsProps: js.UndefOr[String] = js.undefined
 }
 
 object StepsProps {
@@ -39,10 +41,11 @@ object StepsProps {
     showInfo: js.UndefOr[Boolean] = js.undefined,
     size: ProgressSize = null,
     status: normal | exception | active | success = null,
-    strokeColor: String | ProgressGradient = null,
+    strokeColor: String = null,
     strokeLinecap: butt | square | round = null,
     strokeWidth: js.UndefOr[Double] = js.undefined,
     style: CSSProperties = null,
+    success: SuccessProps = null,
     successPercent: js.UndefOr[Double] = js.undefined,
     trailColor: String = null,
     `type`: ProgressType = null,
@@ -62,6 +65,7 @@ object StepsProps {
     if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap.asInstanceOf[js.Any])
     if (!js.isUndefined(strokeWidth)) __obj.updateDynamic("strokeWidth")(strokeWidth.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
     if (!js.isUndefined(successPercent)) __obj.updateDynamic("successPercent")(successPercent.get.asInstanceOf[js.Any])
     if (trailColor != null) __obj.updateDynamic("trailColor")(trailColor.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

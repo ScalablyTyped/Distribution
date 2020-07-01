@@ -1,6 +1,5 @@
 package typings.awsLambda.anon
 
-import typings.awsLambda.codepipelineMod.Artifact
 import typings.awsLambda.codepipelineMod.Credentials
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,8 +10,8 @@ trait ActionConfiguration extends js.Object {
   var artifactCredentials: Credentials
   var continuationToken: js.UndefOr[String] = js.undefined
   var encryptionKey: js.UndefOr[EncryptionKeytypeKMS] = js.undefined
-  var inputArtifacts: js.Array[Artifact]
-  var outputArtifacts: js.Array[Artifact]
+  var inputArtifacts: js.Array[typings.awsLambda.codepipelineMod.Artifact]
+  var outputArtifacts: js.Array[typings.awsLambda.codepipelineMod.Artifact]
 }
 
 object ActionConfiguration {
@@ -20,8 +19,8 @@ object ActionConfiguration {
   def apply(
     actionConfiguration: Configuration,
     artifactCredentials: Credentials,
-    inputArtifacts: js.Array[Artifact],
-    outputArtifacts: js.Array[Artifact],
+    inputArtifacts: js.Array[typings.awsLambda.codepipelineMod.Artifact],
+    outputArtifacts: js.Array[typings.awsLambda.codepipelineMod.Artifact],
     continuationToken: String = null,
     encryptionKey: EncryptionKeytypeKMS = null
   ): ActionConfiguration = {

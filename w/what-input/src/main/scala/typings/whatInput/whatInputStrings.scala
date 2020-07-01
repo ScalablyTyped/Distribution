@@ -1,25 +1,37 @@
 package typings.whatInput
 
+import typings.whatInput.mod.InputMethod
+import typings.whatInput.mod.Strategy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object whatInputStrings {
   @js.native
-  sealed trait intent extends js.Object
+  sealed trait initial extends InputMethod
   
   @js.native
-  sealed trait keyboard extends js.Object
+  sealed trait input extends Strategy
   
   @js.native
-  sealed trait mouse extends js.Object
+  sealed trait intent extends Strategy
   
   @js.native
-  sealed trait pointer extends js.Object
+  sealed trait keyboard extends InputMethod
   
   @js.native
-  sealed trait touch extends js.Object
+  sealed trait mouse extends InputMethod
   
+  @js.native
+  sealed trait pointer extends InputMethod
+  
+  @js.native
+  sealed trait touch extends InputMethod
+  
+  @scala.inline
+  def initial: initial = "initial".asInstanceOf[initial]
+  @scala.inline
+  def input: input = "input".asInstanceOf[input]
   @scala.inline
   def intent: intent = "intent".asInstanceOf[intent]
   @scala.inline

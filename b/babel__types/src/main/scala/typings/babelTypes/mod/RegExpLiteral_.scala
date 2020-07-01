@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
      with BaseNode
      with Literal
      with Pureish {
-  var flags: js.Any
+  var flags: String
   var pattern: String
   @JSName("type")
   var type_RegExpLiteral_ : RegExpLiteral
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 object RegExpLiteral_ {
   @scala.inline
   def apply(
-    flags: js.Any,
+    flags: String,
     pattern: String,
     `type`: RegExpLiteral,
     end: Double = null.asInstanceOf[Double],

@@ -1,6 +1,5 @@
 package typings.firebaseFirestore.mutationQueueMod
 
-import typings.firebaseFirestore.byteStringMod.ByteString
 import typings.firebaseFirestore.documentKeyMod.DocumentKey
 import typings.firebaseFirestore.mutationBatchMod.MutationBatch
 import typings.firebaseFirestore.mutationMod.Mutation
@@ -15,10 +14,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MutationQueue extends js.Object {
-  /**
-    * Acknowledges the given batch.
-    */
-  def acknowledgeBatch(transaction: PersistenceTransaction, batch: MutationBatch, streamToken: ByteString): PersistencePromise[Unit]
   /**
     * Creates a new mutation batch and adds it to this mutation queue.
     *
@@ -88,8 +83,6 @@ trait MutationQueue extends js.Object {
     * @return the largest batch id in the mutation queue that is not acknowledged.
     */
   def getHighestUnacknowledgedBatchId(transaction: PersistenceTransaction): PersistencePromise[BatchId]
-  /** Returns the current stream token for this mutation queue. */
-  def getLastStreamToken(transaction: PersistenceTransaction): PersistencePromise[ByteString]
   /**
     * Gets the first unacknowledged mutation batch after the passed in batchId
     * in the mutation queue or null if empty.
@@ -119,14 +112,11 @@ trait MutationQueue extends js.Object {
     * Multi-Tab Note: This operation should only be called by the primary client.
     */
   def removeMutationBatch(transaction: PersistenceTransaction, batch: MutationBatch): PersistencePromise[Unit]
-  /** Sets the stream token for this mutation queue. */
-  def setLastStreamToken(transaction: PersistenceTransaction, streamToken: ByteString): PersistencePromise[Unit]
 }
 
 object MutationQueue {
   @scala.inline
   def apply(
-    acknowledgeBatch: (PersistenceTransaction, MutationBatch, ByteString) => PersistencePromise[Unit],
     addMutationBatch: (PersistenceTransaction, Timestamp, js.Array[Mutation], js.Array[Mutation]) => PersistencePromise[MutationBatch],
     checkEmpty: PersistenceTransaction => PersistencePromise[Boolean],
     getAllMutationBatches: PersistenceTransaction => PersistencePromise[js.Array[MutationBatch]],
@@ -134,14 +124,12 @@ object MutationQueue {
     getAllMutationBatchesAffectingDocumentKeys: (PersistenceTransaction, SortedMap[DocumentKey, _]) => PersistencePromise[js.Array[MutationBatch]],
     getAllMutationBatchesAffectingQuery: (PersistenceTransaction, Query) => PersistencePromise[js.Array[MutationBatch]],
     getHighestUnacknowledgedBatchId: PersistenceTransaction => PersistencePromise[BatchId],
-    getLastStreamToken: PersistenceTransaction => PersistencePromise[ByteString],
     getNextMutationBatchAfterBatchId: (PersistenceTransaction, BatchId) => PersistencePromise[MutationBatch | Null],
     lookupMutationBatch: (PersistenceTransaction, BatchId) => PersistencePromise[MutationBatch | Null],
     performConsistencyCheck: PersistenceTransaction => PersistencePromise[Unit],
-    removeMutationBatch: (PersistenceTransaction, MutationBatch) => PersistencePromise[Unit],
-    setLastStreamToken: (PersistenceTransaction, ByteString) => PersistencePromise[Unit]
+    removeMutationBatch: (PersistenceTransaction, MutationBatch) => PersistencePromise[Unit]
   ): MutationQueue = {
-    val __obj = js.Dynamic.literal(acknowledgeBatch = js.Any.fromFunction3(acknowledgeBatch), addMutationBatch = js.Any.fromFunction4(addMutationBatch), checkEmpty = js.Any.fromFunction1(checkEmpty), getAllMutationBatches = js.Any.fromFunction1(getAllMutationBatches), getAllMutationBatchesAffectingDocumentKey = js.Any.fromFunction2(getAllMutationBatchesAffectingDocumentKey), getAllMutationBatchesAffectingDocumentKeys = js.Any.fromFunction2(getAllMutationBatchesAffectingDocumentKeys), getAllMutationBatchesAffectingQuery = js.Any.fromFunction2(getAllMutationBatchesAffectingQuery), getHighestUnacknowledgedBatchId = js.Any.fromFunction1(getHighestUnacknowledgedBatchId), getLastStreamToken = js.Any.fromFunction1(getLastStreamToken), getNextMutationBatchAfterBatchId = js.Any.fromFunction2(getNextMutationBatchAfterBatchId), lookupMutationBatch = js.Any.fromFunction2(lookupMutationBatch), performConsistencyCheck = js.Any.fromFunction1(performConsistencyCheck), removeMutationBatch = js.Any.fromFunction2(removeMutationBatch), setLastStreamToken = js.Any.fromFunction2(setLastStreamToken))
+    val __obj = js.Dynamic.literal(addMutationBatch = js.Any.fromFunction4(addMutationBatch), checkEmpty = js.Any.fromFunction1(checkEmpty), getAllMutationBatches = js.Any.fromFunction1(getAllMutationBatches), getAllMutationBatchesAffectingDocumentKey = js.Any.fromFunction2(getAllMutationBatchesAffectingDocumentKey), getAllMutationBatchesAffectingDocumentKeys = js.Any.fromFunction2(getAllMutationBatchesAffectingDocumentKeys), getAllMutationBatchesAffectingQuery = js.Any.fromFunction2(getAllMutationBatchesAffectingQuery), getHighestUnacknowledgedBatchId = js.Any.fromFunction1(getHighestUnacknowledgedBatchId), getNextMutationBatchAfterBatchId = js.Any.fromFunction2(getNextMutationBatchAfterBatchId), lookupMutationBatch = js.Any.fromFunction2(lookupMutationBatch), performConsistencyCheck = js.Any.fromFunction1(performConsistencyCheck), removeMutationBatch = js.Any.fromFunction2(removeMutationBatch))
     __obj.asInstanceOf[MutationQueue]
   }
 }

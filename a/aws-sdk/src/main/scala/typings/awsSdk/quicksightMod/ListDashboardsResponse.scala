@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListDashboardsResponse extends js.Object {
   /**
-    * A structure that contains all of the dashboards shared with the user. This structure provides basic information about the dashboards.
+    * A structure that contains all of the dashboards in your AWS account. This structure provides basic information about the dashboards.
     */
   var DashboardSummaryList: js.UndefOr[typings.awsSdk.quicksightMod.DashboardSummaryList] = js.native
   /**

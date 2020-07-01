@@ -12,7 +12,7 @@ trait Plugins[S /* <: typings.prosemirrorModel.mod.Schema[_, _] */] extends js.O
 
 object Plugins {
   @scala.inline
-  def apply[S](
+  def apply[/* <: typings.prosemirrorModel.mod.Schema[_, _] */ S](
     plugins: js.UndefOr[Null | (js.Array[Plugin[_, S]])] = js.undefined,
     schema: js.UndefOr[Null | S] = js.undefined
   ): Plugins[S] = {

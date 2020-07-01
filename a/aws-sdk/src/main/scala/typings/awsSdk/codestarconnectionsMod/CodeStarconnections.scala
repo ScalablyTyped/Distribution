@@ -26,6 +26,19 @@ trait CodeStarconnections extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateConnectionOutput, Unit]
   ): Request[CreateConnectionOutput, AWSError] = js.native
   /**
+    * Creates a resource that represents the infrastructure where a third-party provider is installed. The host is used when you create connections to an installed third-party provider type, such as GitHub Enterprise Server. You create one host for all connections to that provider.  A host created through the CLI or the SDK is in `PENDING` status by default. You can make its status `AVAILABLE` by setting up the host in the console. 
+    */
+  def createHost(): Request[CreateHostOutput, AWSError] = js.native
+  def createHost(callback: js.Function2[/* err */ AWSError, /* data */ CreateHostOutput, Unit]): Request[CreateHostOutput, AWSError] = js.native
+  /**
+    * Creates a resource that represents the infrastructure where a third-party provider is installed. The host is used when you create connections to an installed third-party provider type, such as GitHub Enterprise Server. You create one host for all connections to that provider.  A host created through the CLI or the SDK is in `PENDING` status by default. You can make its status `AVAILABLE` by setting up the host in the console. 
+    */
+  def createHost(params: CreateHostInput): Request[CreateHostOutput, AWSError] = js.native
+  def createHost(
+    params: CreateHostInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateHostOutput, Unit]
+  ): Request[CreateHostOutput, AWSError] = js.native
+  /**
     * The connection to be deleted.
     */
   def deleteConnection(): Request[DeleteConnectionOutput, AWSError] = js.native
@@ -38,6 +51,19 @@ trait CodeStarconnections extends Service {
     params: DeleteConnectionInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteConnectionOutput, Unit]
   ): Request[DeleteConnectionOutput, AWSError] = js.native
+  /**
+    * The host to be deleted. Before you delete a host, all connections associated to the host must be deleted.  A host cannot be deleted if it is in the VPC_CONFIG_INITIALIZING or VPC_CONFIG_DELETING state. 
+    */
+  def deleteHost(): Request[DeleteHostOutput, AWSError] = js.native
+  def deleteHost(callback: js.Function2[/* err */ AWSError, /* data */ DeleteHostOutput, Unit]): Request[DeleteHostOutput, AWSError] = js.native
+  /**
+    * The host to be deleted. Before you delete a host, all connections associated to the host must be deleted.  A host cannot be deleted if it is in the VPC_CONFIG_INITIALIZING or VPC_CONFIG_DELETING state. 
+    */
+  def deleteHost(params: DeleteHostInput): Request[DeleteHostOutput, AWSError] = js.native
+  def deleteHost(
+    params: DeleteHostInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteHostOutput, Unit]
+  ): Request[DeleteHostOutput, AWSError] = js.native
   /**
     * Returns the connection ARN and details such as status, owner, and provider type.
     */
@@ -52,6 +78,16 @@ trait CodeStarconnections extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetConnectionOutput, Unit]
   ): Request[GetConnectionOutput, AWSError] = js.native
   /**
+    * Returns the host ARN and details such as status, provider type, endpoint, and, if applicable, the VPC configuration.
+    */
+  def getHost(): Request[GetHostOutput, AWSError] = js.native
+  def getHost(callback: js.Function2[/* err */ AWSError, /* data */ GetHostOutput, Unit]): Request[GetHostOutput, AWSError] = js.native
+  /**
+    * Returns the host ARN and details such as status, provider type, endpoint, and, if applicable, the VPC configuration.
+    */
+  def getHost(params: GetHostInput): Request[GetHostOutput, AWSError] = js.native
+  def getHost(params: GetHostInput, callback: js.Function2[/* err */ AWSError, /* data */ GetHostOutput, Unit]): Request[GetHostOutput, AWSError] = js.native
+  /**
     * Lists the connections associated with your account.
     */
   def listConnections(): Request[ListConnectionsOutput, AWSError] = js.native
@@ -64,6 +100,19 @@ trait CodeStarconnections extends Service {
     params: ListConnectionsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListConnectionsOutput, Unit]
   ): Request[ListConnectionsOutput, AWSError] = js.native
+  /**
+    * Lists the hosts associated with your account.
+    */
+  def listHosts(): Request[ListHostsOutput, AWSError] = js.native
+  def listHosts(callback: js.Function2[/* err */ AWSError, /* data */ ListHostsOutput, Unit]): Request[ListHostsOutput, AWSError] = js.native
+  /**
+    * Lists the hosts associated with your account.
+    */
+  def listHosts(params: ListHostsInput): Request[ListHostsOutput, AWSError] = js.native
+  def listHosts(
+    params: ListHostsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListHostsOutput, Unit]
+  ): Request[ListHostsOutput, AWSError] = js.native
   /**
     * Gets the set of key-value pairs (metadata) that are used to manage the resource.
     */

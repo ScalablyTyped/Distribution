@@ -17,7 +17,7 @@ trait HeaderGroup[D /* <: js.Object */] extends js.Object {
   var Header: js.UndefOr[Renderer[HeaderProps[D]]] = js.native
   var columns: js.Array[ColumnInstance[D]] = js.native
   var depth: Double = js.native
-  var headers: js.Array[ColumnInstance[D]] = js.native
+  var headers: js.Array[HeaderGroup[D]] = js.native
   var id: IdType[D] = js.native
    // not documented
   var index: Double = js.native

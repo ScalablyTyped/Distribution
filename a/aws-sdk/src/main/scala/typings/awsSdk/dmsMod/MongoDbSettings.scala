@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MongoDbSettings extends js.Object {
   /**
-    *  The authentication mechanism you use to access the MongoDB source endpoint. Valid values: DEFAULT, MONGODB_CR, SCRAM_SHA_1  DEFAULT – For MongoDB version 2.x, use MONGODB_CR. For MongoDB version 3.x, use SCRAM_SHA_1. This setting isn't used when authType=No.
+    *  The authentication mechanism you use to access the MongoDB source endpoint. For the default value, in MongoDB version 2.x, "default" is "mongodb_cr". For MongoDB version 3.x or later, "default" is "scram_sha_1". This setting isn't used when AuthType is set to "no".
     */
   var AuthMechanism: js.UndefOr[AuthMechanismValue] = js.native
   /**
-    *  The MongoDB database name. This setting isn't used when authType=NO.  The default is admin.
+    *  The MongoDB database name. This setting isn't used when AuthType is set to "no".  The default is "admin".
     */
   var AuthSource: js.UndefOr[String] = js.native
   /**
-    *  The authentication type you use to access the MongoDB source endpoint. Valid values: NO, PASSWORD  When NO is selected, user name and password parameters are not used and can be empty. 
+    *  The authentication type you use to access the MongoDB source endpoint. When when set to "no", user name and password parameters are not used and can be empty. 
     */
   var AuthType: js.UndefOr[AuthTypeValue] = js.native
   /**
@@ -23,11 +23,11 @@ trait MongoDbSettings extends js.Object {
     */
   var DatabaseName: js.UndefOr[String] = js.native
   /**
-    *  Indicates the number of documents to preview to determine the document organization. Use this setting when NestingLevel is set to ONE.  Must be a positive value greater than 0. Default value is 1000.
+    *  Indicates the number of documents to preview to determine the document organization. Use this setting when NestingLevel is set to "one".  Must be a positive value greater than 0. Default value is 1000.
     */
   var DocsToInvestigate: js.UndefOr[String] = js.native
   /**
-    *  Specifies the document ID. Use this setting when NestingLevel is set to NONE.  Default value is false. 
+    *  Specifies the document ID. Use this setting when NestingLevel is set to "none".  Default value is "false". 
     */
   var ExtractDocId: js.UndefOr[String] = js.native
   /**
@@ -35,7 +35,7 @@ trait MongoDbSettings extends js.Object {
     */
   var KmsKeyId: js.UndefOr[String] = js.native
   /**
-    *  Specifies either document or table mode.  Valid values: NONE, ONE Default value is NONE. Specify NONE to use document mode. Specify ONE to use table mode.
+    *  Specifies either document or table mode.  Default value is "none". Specify "none" to use document mode. Specify "one" to use table mode.
     */
   var NestingLevel: js.UndefOr[NestingLevelValue] = js.native
   /**

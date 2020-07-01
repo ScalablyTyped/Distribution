@@ -62,6 +62,12 @@ trait PlotFlagsOptions extends js.Object {
     */
   var boostThreshold: js.UndefOr[Double] = js.undefined
   /**
+    * (Highcharts, Highstock, Gantt) When `true`, the columns will center in
+    * the category, ignoring null or missing points. When `false`, space will
+    * be reserved for null or missing points.
+    */
+  var centerInCategory: js.UndefOr[Boolean] = js.undefined
+  /**
     * (Highstock) An additional class name to apply to the series' graphical
     * elements. This option does not replace default class names of the
     * graphical element.
@@ -543,10 +549,13 @@ trait PlotFlagsOptions extends js.Object {
   /**
     * (Highcharts, Highstock) Whether to stack the values of each series on top
     * of each other. Possible values are `undefined` to disable, `"normal"` to
-    * stack by value or `"percent"`. When stacking is enabled, data must be
-    * sorted in ascending X order. A special stacking option is with the
-    * streamgraph series type, where the stacking option is set to `"stream"`.
-    * The second one is `"overlap"`, which only applies to waterfall series.
+    * stack by value or `"percent"`.
+    *
+    * When stacking is enabled, data must be sorted in ascending X order.
+    *
+    * Some stacking options are related to specific series types. In the
+    * streamgraph series type, the stacking option is set to `"stream"`. The
+    * second one is `"overlap"`, which only applies to waterfall series.
     */
   var stacking: js.UndefOr[OptionsStackingValue] = js.undefined
   var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
@@ -646,6 +655,7 @@ object PlotFlagsOptions {
     animationLimit: js.UndefOr[Double] = js.undefined,
     boostBlending: OptionsBoostBlendingValue = null,
     boostThreshold: js.UndefOr[Double] = js.undefined,
+    centerInCategory: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
     color: ColorString | GradientColorObject | PatternObject = null,
@@ -734,6 +744,7 @@ object PlotFlagsOptions {
     if (!js.isUndefined(animationLimit)) __obj.updateDynamic("animationLimit")(animationLimit.get.asInstanceOf[js.Any])
     if (boostBlending != null) __obj.updateDynamic("boostBlending")(boostBlending.asInstanceOf[js.Any])
     if (!js.isUndefined(boostThreshold)) __obj.updateDynamic("boostThreshold")(boostThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(centerInCategory)) __obj.updateDynamic("centerInCategory")(centerInCategory.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])

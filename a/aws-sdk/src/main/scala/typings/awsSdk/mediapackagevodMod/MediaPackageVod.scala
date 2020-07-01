@@ -171,12 +171,12 @@ trait MediaPackageVod extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListPackagingGroupsResponse, Unit]
   ): Request[ListPackagingGroupsResponse, AWSError] = js.native
   /**
-    * List tags for a given MediaPackage VOD resource
+    * Returns a list of the tags assigned to the specified resource.
     */
   def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
-    * List tags for a given MediaPackage VOD resource
+    * Returns a list of the tags assigned to the specified resource.
     */
   def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(
@@ -184,27 +184,40 @@ trait MediaPackageVod extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
-    * Set tags for a given MediaPackage VOD resource
+    * Adds tags to the specified resource. You can specify one or more tags to add.
     */
   def tagResource(): Request[js.Object, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Set tags for a given MediaPackage VOD resource
+    * Adds tags to the specified resource. You can specify one or more tags to add.
     */
   def tagResource(params: TagResourceRequest): Request[js.Object, AWSError] = js.native
   def tagResource(params: TagResourceRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Delete tags for a given MediaPackage VOD resource
+    * Removes tags from the specified resource. You can specify one or more tags to remove.
     */
   def untagResource(): Request[js.Object, AWSError] = js.native
   def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Delete tags for a given MediaPackage VOD resource
+    * Removes tags from the specified resource. You can specify one or more tags to remove.
     */
   def untagResource(params: UntagResourceRequest): Request[js.Object, AWSError] = js.native
   def untagResource(
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  /**
+    * Updates a specific packaging group. You can't change the id attribute or any other system-generated attributes.
+    */
+  def updatePackagingGroup(): Request[UpdatePackagingGroupResponse, AWSError] = js.native
+  def updatePackagingGroup(callback: js.Function2[/* err */ AWSError, /* data */ UpdatePackagingGroupResponse, Unit]): Request[UpdatePackagingGroupResponse, AWSError] = js.native
+  /**
+    * Updates a specific packaging group. You can't change the id attribute or any other system-generated attributes.
+    */
+  def updatePackagingGroup(params: UpdatePackagingGroupRequest): Request[UpdatePackagingGroupResponse, AWSError] = js.native
+  def updatePackagingGroup(
+    params: UpdatePackagingGroupRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdatePackagingGroupResponse, Unit]
+  ): Request[UpdatePackagingGroupResponse, AWSError] = js.native
 }
 

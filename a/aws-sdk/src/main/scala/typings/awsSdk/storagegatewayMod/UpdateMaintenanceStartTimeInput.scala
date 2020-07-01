@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateMaintenanceStartTimeInput extends js.Object {
   /**
-    * The day of the month component of the maintenance start time represented as an ordinal number from 1 to 28, where 1 represents the first day of the month and 28 represents the last day of the month.  This value is only available for tape and volume gateways. 
+    * The day of the month component of the maintenance start time represented as an ordinal number from 1 to 28, where 1 represents the first day of the month and 28 represents the last day of the month.
     */
   var DayOfMonth: js.UndefOr[typings.awsSdk.storagegatewayMod.DayOfMonth] = js.native
   /**

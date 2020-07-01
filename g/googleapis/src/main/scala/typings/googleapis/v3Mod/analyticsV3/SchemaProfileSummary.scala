@@ -45,7 +45,7 @@ object SchemaProfileSummary {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(starred)) __obj.updateDynamic("starred")(starred.asInstanceOf[js.Any])
+    if (!js.isUndefined(starred)) __obj.updateDynamic("starred")(starred.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProfileSummary]
   }

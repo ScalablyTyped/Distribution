@@ -20,7 +20,7 @@ trait Iterator[Key, SourceT /* <: typings.tstl.multiSetMod.MultiSet[Key, SourceT
 
 object Iterator {
   @scala.inline
-  def apply[Key, SourceT, IteratorT, ReverseT](
+  def apply[Key, /* <: typings.tstl.multiSetMod.MultiSet[Key, SourceT, IteratorT, ReverseT] */ SourceT, /* <: typings.tstl.multiSetMod.MultiSet.Iterator[Key, SourceT, IteratorT, ReverseT] */ IteratorT, /* <: typings.tstl.multiSetMod.MultiSet.ReverseIterator[Key, SourceT, IteratorT, ReverseT] */ ReverseT](
     next: () => IteratorT,
     prev: () => IteratorT,
     reverse: () => ReverseT,

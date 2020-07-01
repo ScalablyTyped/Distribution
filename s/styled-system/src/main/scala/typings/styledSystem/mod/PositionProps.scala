@@ -27,7 +27,7 @@ trait PositionProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
 
 object PositionProps {
   @scala.inline
-  def apply[ThemeType](
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](
     bottom: js.UndefOr[Null | (ResponsiveValue[BottomProperty[TLengthStyledSystem], ThemeType])] = js.undefined,
     left: js.UndefOr[Null | (ResponsiveValue[LeftProperty[TLengthStyledSystem], ThemeType])] = js.undefined,
     position: js.UndefOr[Null | (ResponsiveValue[PositionProperty, ThemeType])] = js.undefined,

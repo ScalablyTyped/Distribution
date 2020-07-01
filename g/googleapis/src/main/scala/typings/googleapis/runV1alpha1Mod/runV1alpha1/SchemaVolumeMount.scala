@@ -50,7 +50,7 @@ object SchemaVolumeMount {
     if (mountPath != null) __obj.updateDynamic("mountPath")(mountPath.asInstanceOf[js.Any])
     if (mountPropagation != null) __obj.updateDynamic("mountPropagation")(mountPropagation.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     if (subPath != null) __obj.updateDynamic("subPath")(subPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVolumeMount]
   }

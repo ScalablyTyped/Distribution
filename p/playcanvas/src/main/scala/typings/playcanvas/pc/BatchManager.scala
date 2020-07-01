@@ -77,7 +77,7 @@ trait BatchManager extends js.Object {
     This is useful to keep a balance between the number of draw calls and the number of drawn triangles, because smaller batches can be hidden when not visible in camera.
     * @returns An array of arrays of mesh instances, each valid to pass to {@link pc.BatchManager#create}.
     */
-  def prepare(meshInstances: js.Array[MeshInstance], dynamic: Boolean, maxAabbSize: Double, translucent: Boolean): js.Array[MeshInstance] = js.native
+  def prepare(meshInstances: js.Array[MeshInstance], dynamic: Boolean, maxAabbSize: Double, translucent: Boolean): js.Array[js.Array[MeshInstance]] = js.native
   /**
     * Remove global batch group by id.
     Note, this traverses the entire scene graph and clears the batch group id from all components.

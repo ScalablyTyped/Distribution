@@ -1,7 +1,10 @@
 package typings.baseui.cardMod
 
 import typings.baseui.anon.Thumbnail
+import typings.react.mod.DetailedHTMLProps
+import typings.react.mod.ImgHTMLAttributes
 import typings.react.mod.ReactNode
+import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +14,7 @@ trait CardProps extends js.Object {
   val children: js.UndefOr[ReactNode] = js.undefined
   val hasThumbnail: js.UndefOr[js.Function1[/* props */ Thumbnail, Boolean]] = js.undefined
   val headerImage: js.UndefOr[
-    String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ImagePropsT */ js.Any)
+    String | (DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement])
   ] = js.undefined
   val overrides: js.UndefOr[CardOverrides] = js.undefined
   val thumbnail: js.UndefOr[String] = js.undefined
@@ -24,7 +27,7 @@ object CardProps {
     action: ReactNode = null,
     children: ReactNode = null,
     hasThumbnail: /* props */ Thumbnail => Boolean = null,
-    headerImage: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ImagePropsT */ js.Any) = null,
+    headerImage: String | (DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement]) = null,
     overrides: CardOverrides = null,
     thumbnail: String = null,
     title: ReactNode = null

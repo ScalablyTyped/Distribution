@@ -47,6 +47,12 @@ trait IModalProps
     */
   var dragOptions: js.UndefOr[IDragOptions] = js.undefined
   /**
+    * Puts aria-hidden=true on all non-ancestors of the current modal, for screen readers.
+    * This is an experimental feature that will be graduated to default behavior after testing.
+    * This flag will be removed with the next major release.
+    */
+  var enableAriaHiddenSiblings: js.UndefOr[Boolean] = js.undefined
+  /**
     * Whether the dialog can be light dismissed by clicking outside the dialog (on the overlay).
     * @defaultvalue false
     */
@@ -127,6 +133,7 @@ object IModalProps {
     containerClassName: String = null,
     dragOptions: IDragOptions = null,
     elementToFocusOnDismiss: HTMLElement = null,
+    enableAriaHiddenSiblings: js.UndefOr[Boolean] = js.undefined,
     firstFocusableSelector: String | js.Function0[String] = null,
     forceFocusInsideTrap: js.UndefOr[Boolean] = js.undefined,
     ignoreExternalFocusing: js.UndefOr[Boolean] = js.undefined,
@@ -158,6 +165,7 @@ object IModalProps {
     if (containerClassName != null) __obj.updateDynamic("containerClassName")(containerClassName.asInstanceOf[js.Any])
     if (dragOptions != null) __obj.updateDynamic("dragOptions")(dragOptions.asInstanceOf[js.Any])
     if (elementToFocusOnDismiss != null) __obj.updateDynamic("elementToFocusOnDismiss")(elementToFocusOnDismiss.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAriaHiddenSiblings)) __obj.updateDynamic("enableAriaHiddenSiblings")(enableAriaHiddenSiblings.get.asInstanceOf[js.Any])
     if (firstFocusableSelector != null) __obj.updateDynamic("firstFocusableSelector")(firstFocusableSelector.asInstanceOf[js.Any])
     if (!js.isUndefined(forceFocusInsideTrap)) __obj.updateDynamic("forceFocusInsideTrap")(forceFocusInsideTrap.get.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreExternalFocusing)) __obj.updateDynamic("ignoreExternalFocusing")(ignoreExternalFocusing.get.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 
 # Scala.js typings for date-io__date-fns
 
-Typings are for version 2.6.1
+Typings are for version 2.6.2
 
 ## Library description:
 Abstraction over common javascript date management libraries

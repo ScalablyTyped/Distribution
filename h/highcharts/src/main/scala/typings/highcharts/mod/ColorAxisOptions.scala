@@ -124,7 +124,7 @@ trait ColorAxisOptions extends js.Object {
     * In styled mode, the line stroke is given in the `.highcharts-axis-line`
     * or `.highcharts-xaxis-line` class.
     */
-  var lineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var lineColor: js.UndefOr[ColorType] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps) If there are multiple axes on the same
     * side of the chart, the pixel margin between the axes. Defaults to 0 on
@@ -193,7 +193,7 @@ trait ColorAxisOptions extends js.Object {
     * In styled mode, the stroke width is given in the
     * `.highcharts-minor-grid-line` class.
     */
-  var minorGridLineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var minorGridLineColor: js.UndefOr[ColorType] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps) The dash or dot style of the minor grid
     * lines. For possible values, see this demonstration.
@@ -210,7 +210,7 @@ trait ColorAxisOptions extends js.Object {
   /**
     * (Highcharts, Highstock, Highmaps) Color for the minor tick marks.
     */
-  var minorTickColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var minorTickColor: js.UndefOr[ColorType] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps) Specific tick interval in axis units
     * for the minor ticks. On a linear axis, if `"auto"`, the minor tick
@@ -355,7 +355,7 @@ trait ColorAxisOptions extends js.Object {
     *
     * In styled mode, the stroke is given in the `.highcharts-tick` class.
     */
-  var tickColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var tickColor: js.UndefOr[ColorType] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps) The interval of the tick marks in axis
     * units. When `null`, the tick interval is computed to approximately follow
@@ -461,7 +461,7 @@ object ColorAxisOptions {
     id: String = null,
     labels: ColorAxisLabelsOptions = null,
     layout: String = null,
-    lineColor: ColorString | GradientColorObject | PatternObject = null,
+    lineColor: ColorType = null,
     margin: js.UndefOr[Double] = js.undefined,
     marker: PointMarkerOptionsObject = null,
     max: js.UndefOr[Double] = js.undefined,
@@ -471,10 +471,10 @@ object ColorAxisOptions {
     min: js.UndefOr[Double] = js.undefined,
     minColor: ColorString | GradientColorObject | PatternObject = null,
     minPadding: js.UndefOr[Double] = js.undefined,
-    minorGridLineColor: ColorString | GradientColorObject | PatternObject = null,
+    minorGridLineColor: ColorType = null,
     minorGridLineDashStyle: DashStyleValue = null,
     minorGridLineWidth: js.UndefOr[Double] = js.undefined,
-    minorTickColor: ColorString | GradientColorObject | PatternObject = null,
+    minorTickColor: ColorType = null,
     minorTickInterval: js.UndefOr[Null | Double | String] = js.undefined,
     minorTickLength: js.UndefOr[Double] = js.undefined,
     minorTickPosition: OptionsMinorTickPositionValue = null,
@@ -494,7 +494,7 @@ object ColorAxisOptions {
     startOnTick: js.UndefOr[Boolean] = js.undefined,
     stops: js.Array[js.Tuple2[Double, ColorString]] = null,
     tickAmount: js.UndefOr[Double] = js.undefined,
-    tickColor: ColorString | GradientColorObject | PatternObject = null,
+    tickColor: ColorType = null,
     tickInterval: js.UndefOr[Double] = js.undefined,
     tickLength: js.UndefOr[Double] = js.undefined,
     tickPixelInterval: js.UndefOr[Double] = js.undefined,

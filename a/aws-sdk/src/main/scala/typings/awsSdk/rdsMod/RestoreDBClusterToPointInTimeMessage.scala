@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RestoreDBClusterToPointInTimeMessage extends js.Object {
   /**
-    * The target backtrack window, in seconds. To disable backtracking, set this value to 0. Default: 0 Constraints:   If specified, this value must be set to a number from 0 to 259,200 (72 hours).  
+    * The target backtrack window, in seconds. To disable backtracking, set this value to 0.  Currently, Backtrack is only supported for Aurora MySQL DB clusters.  Default: 0 Constraints:   If specified, this value must be set to a number from 0 to 259,200 (72 hours).  
     */
   var BacktrackWindow: js.UndefOr[LongOptional] = js.native
   /**

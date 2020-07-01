@@ -35,13 +35,13 @@ trait SchemaNetworkEndpointGroupLbNetworkEndpointGroup extends js.Object {
 object SchemaNetworkEndpointGroupLbNetworkEndpointGroup {
   @scala.inline
   def apply(
-    defaultPort: Int | Double = null,
+    defaultPort: js.UndefOr[Double] = js.undefined,
     network: String = null,
     subnetwork: String = null,
     zone: String = null
   ): SchemaNetworkEndpointGroupLbNetworkEndpointGroup = {
     val __obj = js.Dynamic.literal()
-    if (defaultPort != null) __obj.updateDynamic("defaultPort")(defaultPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultPort)) __obj.updateDynamic("defaultPort")(defaultPort.get.asInstanceOf[js.Any])
     if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
     if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork.asInstanceOf[js.Any])
     if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])

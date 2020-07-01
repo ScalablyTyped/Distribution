@@ -15,7 +15,7 @@ trait Action[T /* <: NavigationParams */] extends js.Object {
 
 object Action {
   @scala.inline
-  def apply[T](routeName: String, action: NavigationNavigateAction = null, key: String = null, params: T = null): Action[T] = {
+  def apply[/* <: typings.reactNavigation.mod.NavigationParams */ T](routeName: String, action: NavigationNavigateAction = null, key: String = null, params: T = null): Action[T] = {
     val __obj = js.Dynamic.literal(routeName = routeName.asInstanceOf[js.Any])
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

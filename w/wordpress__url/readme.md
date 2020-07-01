@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__url
 
-Typings are for version 2.15.0
+Typings are for version 2.17.0
 
 ## Library description:
 WordPress URL utilities.

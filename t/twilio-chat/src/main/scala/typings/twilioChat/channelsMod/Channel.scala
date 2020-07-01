@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   * @property {Channel#LastMessage} lastMessage - Last Message sent to this Channel
   * @property {Channel#NotificationLevel} notificationLevel - User Notification level for this Channel
   * @property {String} sid - The Channel's unique system identifier
+  * @property {Channel#State} state - The Channel's state
   * @property {Channel#Status} status - The Channel's status
   * @property {Channel#Type} type - The Channel's type
   * @property {String} uniqueName - The Channel's unique name (tag)
@@ -45,7 +46,7 @@ class Channel protected ()
   /**
     * The update reason for <code>updated</code> event emitted on Channel
     * @typedef {('attributes' | 'createdBy' | 'dateCreated' | 'dateUpdated' |
-    'friendlyName' | 'lastConsumedMessageIndex' | 'status' | 'uniqueName' | 'lastMessage' |
+    'friendlyName' | 'lastConsumedMessageIndex' | 'state' | 'status' | 'uniqueName' | 'lastMessage' |
     'notificationLevel' )} Channel#UpdateReason
     */
   /**
@@ -63,6 +64,12 @@ class Channel protected ()
     * pushes for events in this Channel. Can be either <code>muted</code> or <code>default</code>,
     * where <code>default</code> defers to global Service push configuration.
     * @typedef {('default' | 'muted')} Channel#NotificationLevel
+    */
+  /**
+    * The Channel's state. Set to undefined if the channel is not a conversation.
+    * @typedef {Object | undefined} Channel#State
+    * @property {('active' | 'inactive' | 'closed')} current - the current state
+    * @property {Date} dateUpdated - date at which the latest channel state update happened
     */
   def this(services: ChannelServices, descriptor: ChannelDescriptor, sid: String) = this()
 }

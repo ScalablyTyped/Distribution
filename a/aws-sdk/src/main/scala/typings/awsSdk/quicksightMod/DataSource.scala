@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DataSource extends js.Object {
   /**
+    * A set of alternate data source parameters that you want to share for the credentials stored with this data source. The credentials are applied in tandem with the data source parameters when you copy a data source by using a create or update request. The API compares the DataSourceParameters structure that's in the request with the structures in the AlternateDataSourceParameters allowlist. If the structures are an exact match, the request is allowed to use the credentials from this existing data source. If the AlternateDataSourceParameters list is null, the Credentials originally used with this DataSourceParameters are automatically allowed.
+    */
+  var AlternateDataSourceParameters: js.UndefOr[DataSourceParametersList] = js.native
+  /**
     * The Amazon Resource Name (ARN) of the data source.
     */
   var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.native
@@ -55,6 +59,7 @@ trait DataSource extends js.Object {
 object DataSource {
   @scala.inline
   def apply(
+    AlternateDataSourceParameters: DataSourceParametersList = null,
     Arn: Arn = null,
     CreatedTime: Timestamp_ = null,
     DataSourceId: ResourceId = null,
@@ -68,6 +73,7 @@ object DataSource {
     VpcConnectionProperties: VpcConnectionProperties = null
   ): DataSource = {
     val __obj = js.Dynamic.literal()
+    if (AlternateDataSourceParameters != null) __obj.updateDynamic("AlternateDataSourceParameters")(AlternateDataSourceParameters.asInstanceOf[js.Any])
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
     if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime.asInstanceOf[js.Any])
     if (DataSourceId != null) __obj.updateDynamic("DataSourceId")(DataSourceId.asInstanceOf[js.Any])

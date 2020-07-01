@@ -15,7 +15,7 @@ trait StyledComponentProps[ClassKey /* <: String */] extends js.Object {
 
 object StyledComponentProps {
   @scala.inline
-  def apply[ClassKey](
+  def apply[/* <: java.lang.String */ ClassKey](
     classes: Partial[ClassNameMap[ClassKey]] = null,
     innerRef: js.UndefOr[Null | Ref[_] | RefObject[_]] = js.undefined
   ): StyledComponentProps[ClassKey] = {

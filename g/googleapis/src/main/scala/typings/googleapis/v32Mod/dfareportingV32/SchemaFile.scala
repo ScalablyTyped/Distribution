@@ -1,6 +1,6 @@
 package typings.googleapis.v32Mod.dfareportingV32
 
-import typings.googleapis.AnonApiUrl
+import typings.googleapis.anon.ApiUrl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,7 +54,7 @@ trait SchemaFile extends js.Object {
   /**
     * The URLs where the completed report file can be downloaded.
     */
-  var urls: js.UndefOr[AnonApiUrl] = js.native
+  var urls: js.UndefOr[ApiUrl] = js.native
 }
 
 object SchemaFile {
@@ -69,7 +69,7 @@ object SchemaFile {
     lastModifiedTime: String = null,
     reportId: String = null,
     status: String = null,
-    urls: AnonApiUrl = null
+    urls: ApiUrl = null
   ): SchemaFile = {
     val __obj = js.Dynamic.literal()
     if (dateRange != null) __obj.updateDynamic("dateRange")(dateRange.asInstanceOf[js.Any])

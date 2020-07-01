@@ -3,6 +3,7 @@ package typings.firefoxWebextBrowser.anon
 import typings.firefoxWebextBrowser.WebExtEvent
 import typings.firefoxWebextBrowser.browser.browserAction.ColorArray
 import typings.firefoxWebextBrowser.browser.browserAction.Details
+import typings.firefoxWebextBrowser.browser.browserAction.OnClickData
 import typings.firefoxWebextBrowser.browser.tabs.Tab
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +15,7 @@ trait TypeofbrowserAction extends js.Object {
   /**
     * Fired when a browser action icon is clicked. This event will not fire if the browser action has a popup.
     */
-  val onClicked: WebExtEvent[js.Function1[/* tab */ Tab, Unit]] = js.native
+  val onClicked: WebExtEvent[js.Function2[/* tab */ Tab, /* info */ js.UndefOr[OnClickData], Unit]] = js.native
   /**
     * Disables the browser action for a tab.
     * @param [tabId] The id of the tab for which you want to modify the browser action.
@@ -43,13 +44,13 @@ trait TypeofbrowserAction extends js.Object {
   /** Checks whether the browser action is enabled. */
   def isEnabled(details: Details): js.Promise[_] = js.native
   /** Opens the extension popup window in the active window. */
-  def openPopup(): js.Promise[Unit] = js.native
+  def openPopup(): js.Promise[Boolean] = js.native
   /**
     * Sets the background color for the badge.
     * @param details Specifies to which tab or window the value should be set, or from which one it should be
     *     retrieved. If no tab nor window is specified, the global value is set or retrieved.
     */
-  def setBadgeBackgroundColor(details: ColorTabId): js.Promise[Unit] = js.native
+  def setBadgeBackgroundColor(details: Color): js.Promise[Unit] = js.native
   /**
     * Sets the badge text for the browser action. The badge is displayed on top of the icon.
     * @param details Specifies to which tab or window the value should be set, or from which one it should be
@@ -61,7 +62,7 @@ trait TypeofbrowserAction extends js.Object {
     * @param details Specifies to which tab or window the value should be set, or from which one it should be
     *     retrieved. If no tab nor window is specified, the global value is set or retrieved.
     */
-  def setBadgeTextColor(details: ColorTabId): js.Promise[_] = js.native
+  def setBadgeTextColor(details: Color): js.Promise[_] = js.native
   /**
     * Sets the icon for the browser action. The icon can be specified either as the path to an image file or as the
     * pixel data from a canvas element, or as dictionary of either one of those. Either the **path** or the
@@ -82,6 +83,6 @@ trait TypeofbrowserAction extends js.Object {
     * @param details Specifies to which tab or window the value should be set, or from which one it should be
     *     retrieved. If no tab nor window is specified, the global value is set or retrieved.
     */
-  def setTitle(details: WindowId): js.Promise[Unit] = js.native
+  def setTitle(details: TabId): js.Promise[Unit] = js.native
 }
 

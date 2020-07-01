@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl", "SystemError")
 @js.native
 class SystemError protected ()
-  extends typings.tstl.exceptionMod.SystemError {
+  extends typings.tstl.tstlModuleMod.SystemError {
   /**
     * Initializer Constructor.
     *

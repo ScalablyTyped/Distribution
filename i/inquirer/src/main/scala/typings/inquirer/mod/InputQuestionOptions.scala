@@ -34,7 +34,7 @@ trait InputQuestionOptions[T /* <: Answers */] extends Question[T] {
 
 object InputQuestionOptions {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.inquirer.mod.Answers */ T](
     default: AsyncDynamicQuestionProperty[_, T] = null,
     filter: /* input */ js.Any => _ = null,
     message: AsyncDynamicQuestionProperty[String, T] = null,

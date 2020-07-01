@@ -46,7 +46,7 @@ object SchemaCheckResponse {
     val __obj = js.Dynamic.literal()
     if (debugString != null) __obj.updateDynamic("debugString")(debugString.asInstanceOf[js.Any])
     if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(linked)) __obj.updateDynamic("linked")(linked.asInstanceOf[js.Any])
+    if (!js.isUndefined(linked)) __obj.updateDynamic("linked")(linked.get.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCheckResponse]
   }

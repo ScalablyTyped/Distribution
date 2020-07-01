@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   * Default Constructor.
   */
 class Stack[T] ()
-  extends typings.tstl.tstlMod.Stack[T] {
+  extends typings.tstl.tstlModuleMod.Stack[T] {
   /**
     * Copy Constructor.
     *

@@ -39,7 +39,7 @@ trait PartialPickEventOmittable[TEvents /* <: EventDefinition */] extends js.Obj
 
 object PartialPickEventOmittable {
   @scala.inline
-  def apply[TEvents](
+  def apply[/* <: typings.eventTargetShim.mod.EventTarget.EventDefinition */ TEvents](
     AT_TARGET: js.UndefOr[Double] = js.undefined,
     BUBBLING_PHASE: js.UndefOr[Double] = js.undefined,
     CAPTURING_PHASE: js.UndefOr[Double] = js.undefined,

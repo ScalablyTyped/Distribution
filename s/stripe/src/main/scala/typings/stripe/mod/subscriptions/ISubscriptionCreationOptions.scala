@@ -1,5 +1,6 @@
 package typings.stripe.mod.subscriptions
 
+import typings.stripe.anon.Amountpercent
 import typings.stripe.mod.IOptionsMetadata
 import typings.stripe.mod.cards.ICardSourceCreationOptions
 import typings.stripe.stripeStrings.now
@@ -47,6 +48,7 @@ object ISubscriptionCreationOptions {
     prorate: js.UndefOr[Boolean] = js.undefined,
     quantity: js.UndefOr[Double] = js.undefined,
     tax_percent: js.UndefOr[Double] = js.undefined,
+    transfer_data: Amountpercent = null,
     trial_end: Double | now = null,
     trial_from_plan: js.UndefOr[Boolean] = js.undefined,
     trial_period_days: js.UndefOr[Double] = js.undefined
@@ -72,6 +74,7 @@ object ISubscriptionCreationOptions {
     if (!js.isUndefined(prorate)) __obj.updateDynamic("prorate")(prorate.get.asInstanceOf[js.Any])
     if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
     if (!js.isUndefined(tax_percent)) __obj.updateDynamic("tax_percent")(tax_percent.get.asInstanceOf[js.Any])
+    if (transfer_data != null) __obj.updateDynamic("transfer_data")(transfer_data.asInstanceOf[js.Any])
     if (trial_end != null) __obj.updateDynamic("trial_end")(trial_end.asInstanceOf[js.Any])
     if (!js.isUndefined(trial_from_plan)) __obj.updateDynamic("trial_from_plan")(trial_from_plan.get.asInstanceOf[js.Any])
     if (!js.isUndefined(trial_period_days)) __obj.updateDynamic("trial_period_days")(trial_period_days.get.asInstanceOf[js.Any])

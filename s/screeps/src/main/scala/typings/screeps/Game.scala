@@ -47,7 +47,7 @@ trait Game extends js.Object {
     */
   var powerCreeps: StringDictionary[PowerCreep] = js.native
   /**
-    * An object with your global resources that are bound to the account, like subscription tokens. Each object key is a resource constant, values are resources amounts.
+    * An object with your global resources that are bound to the account, like pixels or cpu unlocks. Each object key is a resource constant, values are resources amounts.
     */
   var resources: StringDictionary[js.Any] = js.native
   /**

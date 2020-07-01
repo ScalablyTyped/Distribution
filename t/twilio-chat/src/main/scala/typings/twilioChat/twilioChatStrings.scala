@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 
 object twilioChatStrings {
   @js.native
+  sealed trait active extends js.Object
+  
+  @js.native
   sealed trait ascending extends ChannelSortingOrder
   
   @js.native
@@ -34,6 +37,9 @@ object twilioChatStrings {
   sealed trait chat
     extends DataSource
        with Type
+  
+  @js.native
+  sealed trait closed extends js.Object
   
   @js.native
   sealed trait createdBy
@@ -67,6 +73,9 @@ object twilioChatStrings {
     extends ChannelSortingCriteria
        with typings.twilioChat.channelMod.Channel.UpdateReason
        with typings.twilioChat.userMod.User.UpdateReason
+  
+  @js.native
+  sealed trait inactive extends js.Object
   
   @js.native
   sealed trait info extends _LogLevel
@@ -138,6 +147,10 @@ object twilioChatStrings {
   sealed trait sms extends Type
   
   @js.native
+  sealed trait state
+    extends typings.twilioChat.channelMod.Channel.UpdateReason
+  
+  @js.native
   sealed trait status
     extends typings.twilioChat.channelMod.Channel.UpdateReason
   
@@ -194,6 +207,8 @@ object twilioChatStrings {
   sealed trait whatsapp extends Type
   
   @scala.inline
+  def active: active = "active".asInstanceOf[active]
+  @scala.inline
   def ascending: ascending = "ascending".asInstanceOf[ascending]
   @scala.inline
   def attributes: attributes = "attributes".asInstanceOf[attributes]
@@ -203,6 +218,8 @@ object twilioChatStrings {
   def body: body = "body".asInstanceOf[body]
   @scala.inline
   def chat: chat = "chat".asInstanceOf[chat]
+  @scala.inline
+  def closed: closed = "closed".asInstanceOf[closed]
   @scala.inline
   def createdBy: createdBy = "createdBy".asInstanceOf[createdBy]
   @scala.inline
@@ -219,6 +236,8 @@ object twilioChatStrings {
   def error: error = "error".asInstanceOf[error]
   @scala.inline
   def friendlyName: friendlyName = "friendlyName".asInstanceOf[friendlyName]
+  @scala.inline
+  def inactive: inactive = "inactive".asInstanceOf[inactive]
   @scala.inline
   def info: info = "info".asInstanceOf[info]
   @scala.inline
@@ -257,6 +276,8 @@ object twilioChatStrings {
   def silent: silent = "silent".asInstanceOf[silent]
   @scala.inline
   def sms: sms = "sms".asInstanceOf[sms]
+  @scala.inline
+  def state: state = "state".asInstanceOf[state]
   @scala.inline
   def status: status = "status".asInstanceOf[status]
   @scala.inline

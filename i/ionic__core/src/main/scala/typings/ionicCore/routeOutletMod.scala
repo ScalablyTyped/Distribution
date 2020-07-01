@@ -2,10 +2,6 @@ package typings.ionicCore
 
 import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.interfaceMod.NavOutlet
-import typings.ionicCore.interfaceMod.RouteID
-import typings.ionicCore.interfaceMod.RouteWrite
-import typings.ionicCore.interfaceMod.RouterDirection
-import typings.ionicCore.mod.ComponentProps
 import typings.ionicCore.mod.FrameworkDelegate
 import typings.ionicCore.mod.Mode
 import typings.ionicCore.navInterfaceMod.RouterOutletOptions
@@ -67,12 +63,8 @@ object routeOutletMod extends js.Object {
     def connectedCallback_MRouterOutlet(): js.Promise[Unit] = js.native
     @JSName("disconnectedCallback")
     def disconnectedCallback_MRouterOutlet(): Unit = js.native
-    /* CompleteClass */
-    override def getRouteId(): js.Promise[js.UndefOr[RouteID]] = js.native
     @JSName("render")
     def render_MRouterOutlet(): js.Any = js.native
-    /* CompleteClass */
-    override def setRouteId(id: String, params: js.UndefOr[ComponentProps[Null]], direction: RouterDirection): js.Promise[RouteWrite] = js.native
     def swipeHandlerChanged(): Unit = js.native
   }
   

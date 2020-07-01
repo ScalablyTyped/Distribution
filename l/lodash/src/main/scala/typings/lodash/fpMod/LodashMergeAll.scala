@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashMergeAll extends js.Object {
+trait LodashMergeAll extends LodashConvertible {
   def apply(`object`: js.Array[_]): js.Any = js.native
   def apply[TObject, TSource](`object`: js.Tuple2[TObject, TSource]): TObject with TSource = js.native
   def apply[TObject, TSource1, TSource2](`object`: js.Tuple3[TObject, TSource1, TSource2]): TObject with TSource1 with TSource2 = js.native

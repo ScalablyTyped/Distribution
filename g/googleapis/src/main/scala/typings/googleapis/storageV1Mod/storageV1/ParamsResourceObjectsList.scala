@@ -73,7 +73,7 @@ object ParamsResourceObjectsList {
     fields: String = null,
     includeTrailingDelimiter: js.UndefOr[Boolean] = js.undefined,
     key: String = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[Double] = js.undefined,
     oauth_token: String = null,
     pageToken: String = null,
     prefix: String = null,
@@ -90,18 +90,18 @@ object ParamsResourceObjectsList {
     if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeTrailingDelimiter)) __obj.updateDynamic("includeTrailingDelimiter")(includeTrailingDelimiter.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeTrailingDelimiter)) __obj.updateDynamic("includeTrailingDelimiter")(includeTrailingDelimiter.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     if (userProject != null) __obj.updateDynamic("userProject")(userProject.asInstanceOf[js.Any])
-    if (!js.isUndefined(versions)) __obj.updateDynamic("versions")(versions.asInstanceOf[js.Any])
+    if (!js.isUndefined(versions)) __obj.updateDynamic("versions")(versions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceObjectsList]
   }
 }

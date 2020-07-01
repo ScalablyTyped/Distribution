@@ -19,6 +19,9 @@ object ecmarkdownStrings {
   sealed trait contents extends js.Object
   
   @js.native
+  sealed trait id extends js.Object
+  
+  @js.native
   sealed trait linebreak extends js.Object
   
   @js.native
@@ -71,6 +74,8 @@ object ecmarkdownStrings {
   def comment: comment = "comment".asInstanceOf[comment]
   @scala.inline
   def contents: contents = "contents".asInstanceOf[contents]
+  @scala.inline
+  def id: id = "id".asInstanceOf[id]
   @scala.inline
   def linebreak: linebreak = "linebreak".asInstanceOf[linebreak]
   @scala.inline

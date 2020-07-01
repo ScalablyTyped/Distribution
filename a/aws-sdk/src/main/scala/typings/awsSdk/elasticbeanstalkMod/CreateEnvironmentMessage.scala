@@ -27,6 +27,10 @@ trait CreateEnvironmentMessage extends js.Object {
     */
   var GroupName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.GroupName] = js.native
   /**
+    * The Amazon Resource Name (ARN) of an existing IAM role to be used as the environment's operations role. If specified, Elastic Beanstalk uses the operations role for permissions to downstream services during this call and during subsequent calls acting on this environment. To specify an operations role, you must have the iam:PassRole permission for the role. For more information, see Operations roles in the AWS Elastic Beanstalk Developer Guide.
+    */
+  var OperationsRole: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.OperationsRole] = js.native
+  /**
     * If specified, AWS Elastic Beanstalk sets the specified configuration options to the requested value in the configuration set for the new environment. These override the values obtained from the solution stack or the configuration template.
     */
   var OptionSettings: js.UndefOr[ConfigurationOptionSettingsList] = js.native
@@ -35,7 +39,7 @@ trait CreateEnvironmentMessage extends js.Object {
     */
   var OptionsToRemove: js.UndefOr[OptionsSpecifierList] = js.native
   /**
-    * The Amazon Resource Name (ARN) of the custom platform to use with the environment. For more information, see  Custom Platforms in the AWS Elastic Beanstalk Developer Guide.  If you specify PlatformArn, don't specify SolutionStackName. 
+    * The Amazon Resource Name (ARN) of the custom platform to use with the environment. For more information, see Custom Platforms in the AWS Elastic Beanstalk Developer Guide.  If you specify PlatformArn, don't specify SolutionStackName. 
     */
   var PlatformArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformArn] = js.native
   /**
@@ -68,6 +72,7 @@ object CreateEnvironmentMessage {
     Description: Description = null,
     EnvironmentName: EnvironmentName = null,
     GroupName: GroupName = null,
+    OperationsRole: OperationsRole = null,
     OptionSettings: ConfigurationOptionSettingsList = null,
     OptionsToRemove: OptionsSpecifierList = null,
     PlatformArn: PlatformArn = null,
@@ -82,6 +87,7 @@ object CreateEnvironmentMessage {
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (EnvironmentName != null) __obj.updateDynamic("EnvironmentName")(EnvironmentName.asInstanceOf[js.Any])
     if (GroupName != null) __obj.updateDynamic("GroupName")(GroupName.asInstanceOf[js.Any])
+    if (OperationsRole != null) __obj.updateDynamic("OperationsRole")(OperationsRole.asInstanceOf[js.Any])
     if (OptionSettings != null) __obj.updateDynamic("OptionSettings")(OptionSettings.asInstanceOf[js.Any])
     if (OptionsToRemove != null) __obj.updateDynamic("OptionsToRemove")(OptionsToRemove.asInstanceOf[js.Any])
     if (PlatformArn != null) __obj.updateDynamic("PlatformArn")(PlatformArn.asInstanceOf[js.Any])

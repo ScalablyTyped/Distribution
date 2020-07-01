@@ -38,14 +38,14 @@ object SchemaNotifications {
     items: js.Array[SchemaNotification] = null,
     kind: String = null,
     nextPageToken: String = null,
-    unreadNotificationsCount: Int | Double = null
+    unreadNotificationsCount: js.UndefOr[Double] = js.undefined
   ): SchemaNotifications = {
     val __obj = js.Dynamic.literal()
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (unreadNotificationsCount != null) __obj.updateDynamic("unreadNotificationsCount")(unreadNotificationsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(unreadNotificationsCount)) __obj.updateDynamic("unreadNotificationsCount")(unreadNotificationsCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNotifications]
   }
 }

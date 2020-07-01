@@ -5,22 +5,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WindowId extends js.Object {
-  /** Sets the sidebar title for the tab specified by tabId. Automatically resets when the tab is closed. */
+  /**
+    * Specify the tab to get the panel from. If no tab nor window is specified, the global panel is returned.
+    */
   var tabId: js.UndefOr[Double] = js.undefined
-  /** The string the sidebar action should display when moused over. */
-  var title: String | Null
-  /** Sets the sidebar title for the window specified by windowId. */
+  /**
+    * Specify the window to get the panel from. If no tab nor window is specified, the global panel is returned.
+    */
   var windowId: js.UndefOr[Double] = js.undefined
 }
 
 object WindowId {
   @scala.inline
-  def apply(
-    tabId: js.UndefOr[Double] = js.undefined,
-    title: String = null,
-    windowId: js.UndefOr[Double] = js.undefined
-  ): WindowId = {
-    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+  def apply(tabId: js.UndefOr[Double] = js.undefined, windowId: js.UndefOr[Double] = js.undefined): WindowId = {
+    val __obj = js.Dynamic.literal()
     if (!js.isUndefined(tabId)) __obj.updateDynamic("tabId")(tabId.get.asInstanceOf[js.Any])
     if (!js.isUndefined(windowId)) __obj.updateDynamic("windowId")(windowId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowId]

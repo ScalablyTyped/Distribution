@@ -37,7 +37,7 @@ trait TypeofDataFactoryExt extends Instantiable0[DataFactoryExt] {
   def graph(quads: js.Any): DatasetExt = js.native
   def literal(value: String): LiteralExt = js.native
   def literal(value: String, languageOrDatatype: String): LiteralExt = js.native
-  def literal(value: String, languageOrDatatype: NamedNode): LiteralExt = js.native
+  def literal(value: String, languageOrDatatype: NamedNode[String]): LiteralExt = js.native
   def namedNode(value: String): NamedNodeExt = js.native
   def prefixMap(prefixes: Prefixes): ^ = js.native
   def quad(subject: QuadSubject, predicate: QuadPredicate, `object`: QuadObject): QuadExt = js.native

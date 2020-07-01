@@ -41,7 +41,7 @@ trait ojSelectEventMap[V, SP /* <: ojSelectSettableProperties[V, SV] */, SV] ext
 
 object ojSelectEventMap {
   @scala.inline
-  def apply[V, SP, SV](
+  def apply[V, /* <: typings.oracleOraclejet.ojselectcomboboxMod.ojSelectSettableProperties[V, SV] */ SP, SV](
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,

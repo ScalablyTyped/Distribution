@@ -55,7 +55,7 @@ trait IWidgetFactoryOptions[T /* <: Widget */] extends js.Object {
 
 object IWidgetFactoryOptions {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.luminoWidgets.mod.Widget */ T](
     fileTypes: js.Array[String],
     name: String,
     canStartKernel: js.UndefOr[Boolean] = js.undefined,

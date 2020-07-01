@@ -13,7 +13,7 @@ trait Error[TOperation /* <: OperationType */] extends js.Object {
 
 object Error {
   @scala.inline
-  def apply[TOperation](
+  def apply[/* <: typings.relayRuntime.relayRuntimeTypesMod.OperationType */ TOperation](
     error: typings.std.Error = null,
     props: /* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any = null,
     retry: () => Unit = null

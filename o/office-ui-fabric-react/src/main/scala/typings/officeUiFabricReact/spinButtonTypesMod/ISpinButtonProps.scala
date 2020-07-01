@@ -206,9 +206,17 @@ trait ISpinButtonProps extends HTMLAttributes[HTMLDivElement] {
   var onBlur_ISpinButtonProps: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
   /**
     * Callback for when the decrement button or down arrow key is pressed.
+    * @param value - The current value to be decremented
+    * @param event - The event that triggered this decrement
     * @returns If a string is returned, it will be used as the new value
     */
-  var onDecrement: js.UndefOr[js.Function1[/* value */ String, String | Unit]] = js.undefined
+  var onDecrement: js.UndefOr[
+    js.Function2[
+      /* value */ String, 
+      /* event */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]], 
+      String | Unit
+    ]
+  ] = js.undefined
   /**
     * Callback for when the user focuses the control.
     */
@@ -216,9 +224,17 @@ trait ISpinButtonProps extends HTMLAttributes[HTMLDivElement] {
   var onFocus_ISpinButtonProps: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
   /**
     * Callback for when the increment button or up arrow key is pressed.
+    * @param value - The current value to be incremented
+    * @param event - The event that triggered this increment
     * @returns If a string is returned, it will be used as the new value
     */
-  var onIncrement: js.UndefOr[js.Function1[/* value */ String, String | Unit]] = js.undefined
+  var onIncrement: js.UndefOr[
+    js.Function2[
+      /* value */ String, 
+      /* event */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]], 
+      String | Unit
+    ]
+  ] = js.undefined
   /**
     * Callback for when the entered value should be validated.
     * @param value - The entered value to validate
@@ -387,7 +403,7 @@ object ISpinButtonProps {
     onContextMenu: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     onCopy: ClipboardEvent[HTMLDivElement] => Unit = null,
     onCut: ClipboardEvent[HTMLDivElement] => Unit = null,
-    onDecrement: /* value */ String => String | Unit = null,
+    onDecrement: (/* value */ String, /* event */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]]) => String | Unit = null,
     onDoubleClick: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     onDrag: DragEvent[HTMLDivElement] => Unit = null,
     onDragEnd: DragEvent[HTMLDivElement] => Unit = null,
@@ -403,7 +419,7 @@ object ISpinButtonProps {
     onEnded: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
     onError: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
     onFocus: FocusEvent[HTMLInputElement] => Unit = null,
-    onIncrement: /* value */ String => String | Unit = null,
+    onIncrement: (/* value */ String, /* event */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]]) => String | Unit = null,
     onInput: FormEvent[HTMLDivElement] => Unit = null,
     onInvalid: FormEvent[HTMLDivElement] => Unit = null,
     onKeyDown: KeyboardEvent[HTMLDivElement] => Unit = null,
@@ -593,7 +609,7 @@ object ISpinButtonProps {
     if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction1(onContextMenu))
     if (onCopy != null) __obj.updateDynamic("onCopy")(js.Any.fromFunction1(onCopy))
     if (onCut != null) __obj.updateDynamic("onCut")(js.Any.fromFunction1(onCut))
-    if (onDecrement != null) __obj.updateDynamic("onDecrement")(js.Any.fromFunction1(onDecrement))
+    if (onDecrement != null) __obj.updateDynamic("onDecrement")(js.Any.fromFunction2(onDecrement))
     if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(js.Any.fromFunction1(onDoubleClick))
     if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1(onDrag))
     if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1(onDragEnd))
@@ -609,7 +625,7 @@ object ISpinButtonProps {
     if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction1(onEnded))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (onIncrement != null) __obj.updateDynamic("onIncrement")(js.Any.fromFunction1(onIncrement))
+    if (onIncrement != null) __obj.updateDynamic("onIncrement")(js.Any.fromFunction2(onIncrement))
     if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
     if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction1(onInvalid))
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))

@@ -34,13 +34,13 @@ object SchemaIdentitytoolkitRelyingpartyDownloadAccountRequest {
   @scala.inline
   def apply(
     delegatedProjectNumber: String = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[Double] = js.undefined,
     nextPageToken: String = null,
     targetProjectId: String = null
   ): SchemaIdentitytoolkitRelyingpartyDownloadAccountRequest = {
     val __obj = js.Dynamic.literal()
     if (delegatedProjectNumber != null) __obj.updateDynamic("delegatedProjectNumber")(delegatedProjectNumber.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     if (targetProjectId != null) __obj.updateDynamic("targetProjectId")(targetProjectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIdentitytoolkitRelyingpartyDownloadAccountRequest]

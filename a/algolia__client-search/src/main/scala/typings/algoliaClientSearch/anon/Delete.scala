@@ -7,9 +7,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Delete extends js.Object {
-  /** Text or patterns to remove from the query string. */
+  /**
+    * Text or patterns to remove from the query string.
+    */
   val delete: js.UndefOr[String] = js.undefined
-  /** Text that should be inserted in place of the removed text inside the query string. */
+  /**
+    * Text that should be inserted in place of the removed text inside the query string.
+    */
   val insert: js.UndefOr[String] = js.undefined
   /**
     * Type of edit.

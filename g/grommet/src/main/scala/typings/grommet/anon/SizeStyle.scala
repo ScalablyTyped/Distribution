@@ -1,16 +1,18 @@
 package typings.grommet.anon
 
 import typings.grommet.utilsMod.BoxSideType
+import typings.grommet.utilsMod.BoxSizeType
 import typings.grommet.utilsMod.BoxStyleType
 import typings.grommet.utilsMod.ColorType
+import typings.grommet.utilsMod._BorderType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SizeStyle extends js.Object {
+trait SizeStyle extends _BorderType {
   var color: js.UndefOr[ColorType] = js.undefined
   var side: js.UndefOr[BoxSideType] = js.undefined
-  var size: js.UndefOr[BoxStyleType] = js.undefined
+  var size: js.UndefOr[BoxSizeType] = js.undefined
   var style: js.UndefOr[BoxStyleType] = js.undefined
 }
 
@@ -19,7 +21,7 @@ object SizeStyle {
   def apply(
     color: ColorType = null,
     side: BoxSideType = null,
-    size: BoxStyleType = null,
+    size: BoxSizeType = null,
     style: BoxStyleType = null
   ): SizeStyle = {
     val __obj = js.Dynamic.literal()

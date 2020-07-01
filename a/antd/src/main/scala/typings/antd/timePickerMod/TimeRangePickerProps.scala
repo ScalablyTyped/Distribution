@@ -44,7 +44,7 @@ import typings.antd.antdStrings.vertical
 import typings.antd.generatePickerMod.PickerLocale
 import typings.antd.sizeContextMod.SizeType
 import typings.moment.mod.Moment
-import typings.rcPicker.dateBodyMod.DateRender
+import typings.rcPicker.anon.Range
 import typings.rcPicker.interfaceMod.DisabledTimes
 import typings.rcPicker.interfaceMod.EventValue
 import typings.rcPicker.interfaceMod.Locale
@@ -52,6 +52,7 @@ import typings.rcPicker.interfaceMod.PanelMode
 import typings.rcPicker.interfaceMod.RangeValue
 import typings.rcPicker.monthBodyMod.MonthCellRender
 import typings.rcPicker.pickerMod.PickerRefConfig
+import typings.rcPicker.rangePickerMod.RangeDateRender
 import typings.react.mod.CSSProperties
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
@@ -127,7 +128,7 @@ trait TimeRangePickerProps extends js.Object {
   var bordered: js.UndefOr[Boolean] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var clearIcon: js.UndefOr[ReactNode] = js.undefined
-  var dateRender: js.UndefOr[DateRender[Moment]] = js.undefined
+  var dateRender: js.UndefOr[RangeDateRender[Moment]] = js.undefined
   var defaultOpen: js.UndefOr[Boolean] = js.undefined
   var defaultOpenValue: js.UndefOr[Moment] = js.undefined
   var defaultPickerValue: js.UndefOr[js.Tuple2[Moment, Moment]] = js.undefined
@@ -194,6 +195,7 @@ trait TimeRangePickerProps extends js.Object {
   var separator: js.UndefOr[ReactNode] = js.undefined
   var showHour: js.UndefOr[Boolean] = js.undefined
   var showMinute: js.UndefOr[Boolean] = js.undefined
+  var showNow: js.UndefOr[Boolean] = js.undefined
   var showSecond: js.UndefOr[Boolean] = js.undefined
   var size: js.UndefOr[SizeType] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
@@ -264,7 +266,7 @@ object TimeRangePickerProps {
     bordered: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     clearIcon: ReactNode = null,
-    dateRender: (Moment, Moment) => ReactNode = null,
+    dateRender: (Moment, Moment, /* info */ Range) => ReactNode = null,
     defaultOpen: js.UndefOr[Boolean] = js.undefined,
     defaultOpenValue: Moment = null,
     defaultPickerValue: js.Tuple2[Moment, Moment] = null,
@@ -318,6 +320,7 @@ object TimeRangePickerProps {
     separator: ReactNode = null,
     showHour: js.UndefOr[Boolean] = js.undefined,
     showMinute: js.UndefOr[Boolean] = js.undefined,
+    showNow: js.UndefOr[Boolean] = js.undefined,
     showSecond: js.UndefOr[Boolean] = js.undefined,
     size: SizeType = null,
     style: CSSProperties = null,
@@ -384,7 +387,7 @@ object TimeRangePickerProps {
     if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon.asInstanceOf[js.Any])
-    if (dateRender != null) __obj.updateDynamic("dateRender")(js.Any.fromFunction2(dateRender))
+    if (dateRender != null) __obj.updateDynamic("dateRender")(js.Any.fromFunction3(dateRender))
     if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen.get.asInstanceOf[js.Any])
     if (defaultOpenValue != null) __obj.updateDynamic("defaultOpenValue")(defaultOpenValue.asInstanceOf[js.Any])
     if (defaultPickerValue != null) __obj.updateDynamic("defaultPickerValue")(defaultPickerValue.asInstanceOf[js.Any])
@@ -435,6 +438,7 @@ object TimeRangePickerProps {
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     if (!js.isUndefined(showHour)) __obj.updateDynamic("showHour")(showHour.get.asInstanceOf[js.Any])
     if (!js.isUndefined(showMinute)) __obj.updateDynamic("showMinute")(showMinute.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNow)) __obj.updateDynamic("showNow")(showNow.get.asInstanceOf[js.Any])
     if (!js.isUndefined(showSecond)) __obj.updateDynamic("showSecond")(showSecond.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

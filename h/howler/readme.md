@@ -1,7 +1,7 @@
 
 # Scala.js typings for howler
 
-Typings are for version v2.1.1
+Typings are for version 2.2
 
 ## Library description:
 Javascript audio library for the modern web.

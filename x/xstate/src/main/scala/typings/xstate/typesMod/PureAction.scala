@@ -13,7 +13,7 @@ trait PureAction[TContext, TEvent /* <: EventObject */] extends ActionObject[TCo
 
 object PureAction {
   @scala.inline
-  def apply[TContext, TEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     get: (TContext, TEvent) => js.UndefOr[SingleOrArray[ActionObject[TContext, TEvent]]],
     `type`: Pure,
     exec: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => js.Any | Unit = null

@@ -3,11 +3,15 @@ package typings.firefoxWebextBrowser.anon
 import typings.firefoxWebextBrowser.WebExtEvent
 import typings.firefoxWebextBrowser.browser.captivePortal.Status
 import typings.firefoxWebextBrowser.browser.captivePortal.UndefinedState
+import typings.firefoxWebextBrowser.browser.types.Setting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TypeofcaptivePortal extends js.Object {
+  /* captivePortal properties */
+  /** Return the canonical captive-portal detection URL. Read-only. */
+  val canonicalURL: Setting
   /**
     * This notification will be emitted when the captive portal service has determined that we can connect to the
     * internet. The service will pass either `captive` if there is an unlocked captive portal present, or `clear` if
@@ -29,12 +33,13 @@ trait TypeofcaptivePortal extends js.Object {
 object TypeofcaptivePortal {
   @scala.inline
   def apply(
+    canonicalURL: Setting,
     getLastChecked: () => js.Promise[Double],
     getState: () => js.Promise[UndefinedState],
     onConnectivityAvailable: WebExtEvent[js.Function1[/* status */ Status, Unit]],
     onStateChanged: WebExtEvent[js.Function1[/* details */ State, Unit]]
   ): TypeofcaptivePortal = {
-    val __obj = js.Dynamic.literal(getLastChecked = js.Any.fromFunction0(getLastChecked), getState = js.Any.fromFunction0(getState), onConnectivityAvailable = onConnectivityAvailable.asInstanceOf[js.Any], onStateChanged = onStateChanged.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(canonicalURL = canonicalURL.asInstanceOf[js.Any], getLastChecked = js.Any.fromFunction0(getLastChecked), getState = js.Any.fromFunction0(getState), onConnectivityAvailable = onConnectivityAvailable.asInstanceOf[js.Any], onStateChanged = onStateChanged.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofcaptivePortal]
   }
 }

@@ -2,14 +2,17 @@ package typings.antd.popconfirmMod
 
 import typings.antd.buttonButtonMod.LegacyButtonType
 import typings.antd.buttonButtonMod.NativeButtonProps
+import typings.antd.colorsMod.PresetColorType
 import typings.antd.getRenderPropValueMod.RenderFunction
 import typings.antd.placementsMod.AdjustOverflow
 import typings.antd.tooltipMod.AbstractTooltipProps
 import typings.antd.tooltipMod.TooltipPlacement
 import typings.react.mod.CSSProperties
+import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
+import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,7 +35,7 @@ trait PopconfirmProps extends AbstractTooltipProps {
   var onVisibleChange: js.UndefOr[
     js.Function2[
       /* visible */ Boolean, 
-      /* e */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], 
+      /* e */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLDivElement]], 
       Unit
     ]
   ] = js.undefined
@@ -48,6 +51,7 @@ object PopconfirmProps {
     cancelButtonProps: NativeButtonProps = null,
     cancelText: ReactNode = null,
     className: String = null,
+    color: PresetColorType = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     getPopupContainer: /* triggerNode */ HTMLElement => HTMLElement = null,
     icon: ReactNode = null,
@@ -56,7 +60,7 @@ object PopconfirmProps {
     okType: LegacyButtonType = null,
     onCancel: /* e */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]] => Unit = null,
     onConfirm: /* e */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]] => Unit = null,
-    onVisibleChange: (/* visible */ Boolean, /* e */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]]) => Unit = null,
+    onVisibleChange: (/* visible */ Boolean, /* e */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLDivElement]]) => Unit = null,
     openClassName: String = null,
     placement: TooltipPlacement = null,
     style: CSSProperties = null,
@@ -69,6 +73,7 @@ object PopconfirmProps {
     if (cancelButtonProps != null) __obj.updateDynamic("cancelButtonProps")(cancelButtonProps.asInstanceOf[js.Any])
     if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])

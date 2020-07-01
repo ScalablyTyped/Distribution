@@ -48,14 +48,14 @@ object SchemaGooglePrivacyDlpV2CharacterMaskConfig {
   def apply(
     charactersToIgnore: js.Array[SchemaGooglePrivacyDlpV2CharsToIgnore] = null,
     maskingCharacter: String = null,
-    numberToMask: Int | Double = null,
+    numberToMask: js.UndefOr[Double] = js.undefined,
     reverseOrder: js.UndefOr[Boolean] = js.undefined
   ): SchemaGooglePrivacyDlpV2CharacterMaskConfig = {
     val __obj = js.Dynamic.literal()
     if (charactersToIgnore != null) __obj.updateDynamic("charactersToIgnore")(charactersToIgnore.asInstanceOf[js.Any])
     if (maskingCharacter != null) __obj.updateDynamic("maskingCharacter")(maskingCharacter.asInstanceOf[js.Any])
-    if (numberToMask != null) __obj.updateDynamic("numberToMask")(numberToMask.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverseOrder)) __obj.updateDynamic("reverseOrder")(reverseOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberToMask)) __obj.updateDynamic("numberToMask")(numberToMask.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverseOrder)) __obj.updateDynamic("reverseOrder")(reverseOrder.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2CharacterMaskConfig]
   }
 }

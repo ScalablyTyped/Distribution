@@ -1,5 +1,6 @@
 package typings.twitchExt
 
+import typings.twitchExt.anon.HostedChannelId
 import typings.twitchExt.twitchExtStrings.`chat-only`
 import typings.twitchExt.twitchExtStrings.audio
 import typings.twitchExt.twitchExtStrings.config
@@ -44,6 +45,10 @@ trait TwitchExtContext extends js.Object {
     * Number of seconds of latency between the broadcaster and viewer.
     */
   var hlsLatencyBroadcaster: Double
+  /**
+    * Information about the current channel’s hosting status, or undefined if the channel is not currently hosting.
+    */
+  var hostingInfo: js.UndefOr[HostedChannelId] = js.undefined
   /**
     * If true, the viewer is watching in fullscreen mode.
     * Do not use this for mobile extensions; it is not sent for mobile.
@@ -106,9 +111,11 @@ object TwitchExtContext {
     playbackMode: video | audio | remote | `chat-only`,
     theme: light | dark,
     videoResolution: String,
-    volume: Double
+    volume: Double,
+    hostingInfo: HostedChannelId = null
   ): TwitchExtContext = {
     val __obj = js.Dynamic.literal(arePlayerControlsVisible = arePlayerControlsVisible.asInstanceOf[js.Any], bitrate = bitrate.asInstanceOf[js.Any], bufferSize = bufferSize.asInstanceOf[js.Any], displayResolution = displayResolution.asInstanceOf[js.Any], game = game.asInstanceOf[js.Any], hlsLatencyBroadcaster = hlsLatencyBroadcaster.asInstanceOf[js.Any], isFullScreen = isFullScreen.asInstanceOf[js.Any], isMuted = isMuted.asInstanceOf[js.Any], isPaused = isPaused.asInstanceOf[js.Any], isTheatreMode = isTheatreMode.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], playbackMode = playbackMode.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any], videoResolution = videoResolution.asInstanceOf[js.Any], volume = volume.asInstanceOf[js.Any])
+    if (hostingInfo != null) __obj.updateDynamic("hostingInfo")(hostingInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[TwitchExtContext]
   }
 }

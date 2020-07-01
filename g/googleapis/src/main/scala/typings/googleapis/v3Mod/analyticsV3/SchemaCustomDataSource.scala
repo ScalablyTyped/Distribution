@@ -1,6 +1,6 @@
 package typings.googleapis.v3Mod.analyticsV3
 
-import typings.googleapis.AnonHref
+import typings.googleapis.anon.Href
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait SchemaCustomDataSource extends js.Object {
     * Account ID to which this custom data source belongs.
     */
   var accountId: js.UndefOr[String] = js.native
-  var childLink: js.UndefOr[AnonHref] = js.native
+  var childLink: js.UndefOr[Href] = js.native
   /**
     * Time this custom data source was created.
     */
@@ -40,7 +40,7 @@ trait SchemaCustomDataSource extends js.Object {
     * Parent link for this custom data source. Points to the web property to
     * which this custom data source belongs.
     */
-  var parentLink: js.UndefOr[AnonHref] = js.native
+  var parentLink: js.UndefOr[Href] = js.native
   /**
     * IDs of views (profiles) linked to the custom data source.
     */
@@ -76,14 +76,14 @@ object SchemaCustomDataSource {
   @scala.inline
   def apply(
     accountId: String = null,
-    childLink: AnonHref = null,
+    childLink: Href = null,
     created: String = null,
     description: String = null,
     id: String = null,
     importBehavior: String = null,
     kind: String = null,
     name: String = null,
-    parentLink: AnonHref = null,
+    parentLink: Href = null,
     profilesLinked: js.Array[String] = null,
     schema: js.Array[String] = null,
     selfLink: String = null,

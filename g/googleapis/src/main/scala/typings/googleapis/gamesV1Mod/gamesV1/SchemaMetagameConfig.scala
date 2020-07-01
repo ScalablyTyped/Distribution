@@ -28,12 +28,12 @@ trait SchemaMetagameConfig extends js.Object {
 object SchemaMetagameConfig {
   @scala.inline
   def apply(
-    currentVersion: Int | Double = null,
+    currentVersion: js.UndefOr[Double] = js.undefined,
     kind: String = null,
     playerLevels: js.Array[SchemaPlayerLevel] = null
   ): SchemaMetagameConfig = {
     val __obj = js.Dynamic.literal()
-    if (currentVersion != null) __obj.updateDynamic("currentVersion")(currentVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentVersion)) __obj.updateDynamic("currentVersion")(currentVersion.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (playerLevels != null) __obj.updateDynamic("playerLevels")(playerLevels.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMetagameConfig]

@@ -40,7 +40,7 @@ trait ConditionalDataBarNegativeFormatLoadOptions extends js.Object {
   var matchPositiveBorderColor: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Specified if the negative DataBar has the same fill color as the positive DataBar.
+    * Specifies if the negative DataBar has the same fill color as the positive DataBar.
     *
     * [Api set: ExcelApi 1.6]
     */

@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the ContentControl object, for use in "contentControl.set({ ... })". */
+/** An interface for updating data on the ContentControl object, for use in `contentControl.set({ ... })`. */
 trait ContentControlUpdateData extends js.Object {
   /**
     *

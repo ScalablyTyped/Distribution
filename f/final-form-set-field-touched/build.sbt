@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "final-form-set-field-touched"
-version := "1.0-dt-20200321Z-b00307"
+version := "1.0-dt-20200601Z-b00307"
 scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

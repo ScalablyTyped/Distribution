@@ -1,7 +1,7 @@
 
 # Scala.js typings for jquery
 
-Typings are for version 3.3
+Typings are for version 3.5
 
 ## Library description:
 JavaScript library for DOM operations

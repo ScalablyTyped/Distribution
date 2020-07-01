@@ -281,6 +281,9 @@ object firebaseFirestoreStrings {
   sealed trait gapi extends js.Object
   
   @js.native
+  sealed trait getHighestListenSequenceNumber extends PersistenceAction
+  
+  @js.native
   sealed trait handshakeComplete extends StreamEventType
   
   @js.native
@@ -549,6 +552,8 @@ object firebaseFirestoreStrings {
   def function: function = "function".asInstanceOf[function]
   @scala.inline
   def gapi: gapi = "gapi".asInstanceOf[gapi]
+  @scala.inline
+  def getHighestListenSequenceNumber: getHighestListenSequenceNumber = "getHighestListenSequenceNumber".asInstanceOf[getHighestListenSequenceNumber]
   @scala.inline
   def handshakeComplete: handshakeComplete = "handshakeComplete".asInstanceOf[handshakeComplete]
   @scala.inline

@@ -17,7 +17,7 @@ trait CreateConfigurationRequest extends js.Object {
     The versions of Apache Kafka with which you can use this MSK configuration.
     
     */
-  var KafkaVersions: listOfString = js.native
+  var KafkaVersions: js.UndefOr[listOfString] = js.native
   /**
     * 
     The name of the configuration.
@@ -35,9 +35,15 @@ trait CreateConfigurationRequest extends js.Object {
 
 object CreateConfigurationRequest {
   @scala.inline
-  def apply(KafkaVersions: listOfString, Name: string, ServerProperties: _Blob, Description: string = null): CreateConfigurationRequest = {
-    val __obj = js.Dynamic.literal(KafkaVersions = KafkaVersions.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], ServerProperties = ServerProperties.asInstanceOf[js.Any])
+  def apply(
+    Name: string,
+    ServerProperties: _Blob,
+    Description: string = null,
+    KafkaVersions: listOfString = null
+  ): CreateConfigurationRequest = {
+    val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], ServerProperties = ServerProperties.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (KafkaVersions != null) __obj.updateDynamic("KafkaVersions")(KafkaVersions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateConfigurationRequest]
   }
 }

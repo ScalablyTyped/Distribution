@@ -84,22 +84,22 @@ object SchemaSecurityPolicyRule {
     kind: String = null,
     `match`: SchemaSecurityPolicyRuleMatcher = null,
     preview: js.UndefOr[Boolean] = js.undefined,
-    priority: Int | Double = null,
+    priority: js.UndefOr[Double] = js.undefined,
     rateLimitOptions: SchemaSecurityPolicyRuleRateLimitOptions = null,
-    ruleTupleCount: Int | Double = null,
+    ruleTupleCount: js.UndefOr[Double] = js.undefined,
     targetResources: js.Array[String] = null
   ): SchemaSecurityPolicyRule = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLogging)) __obj.updateDynamic("enableLogging")(enableLogging.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableLogging)) __obj.updateDynamic("enableLogging")(enableLogging.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
-    if (!js.isUndefined(preview)) __obj.updateDynamic("preview")(preview.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(preview)) __obj.updateDynamic("preview")(preview.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     if (rateLimitOptions != null) __obj.updateDynamic("rateLimitOptions")(rateLimitOptions.asInstanceOf[js.Any])
-    if (ruleTupleCount != null) __obj.updateDynamic("ruleTupleCount")(ruleTupleCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(ruleTupleCount)) __obj.updateDynamic("ruleTupleCount")(ruleTupleCount.get.asInstanceOf[js.Any])
     if (targetResources != null) __obj.updateDynamic("targetResources")(targetResources.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSecurityPolicyRule]
   }

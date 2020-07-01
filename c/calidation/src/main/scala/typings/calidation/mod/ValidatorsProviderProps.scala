@@ -1,24 +1,19 @@
 package typings.calidation.mod
 
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ValidatorsProviderProps extends js.Object {
-  var validators: Dictionary[
-    js.Function1[/* config */ SimpleValidatorConfig, js.Function1[/* value */ _, String | Null]]
-  ]
+trait ValidatorsProviderProps[T /* <: js.Object */] extends js.Object {
+  var validators: Record[String, CustomValidatorFunction[T]]
 }
 
 object ValidatorsProviderProps {
   @scala.inline
-  def apply(
-    validators: Dictionary[
-      js.Function1[/* config */ SimpleValidatorConfig, js.Function1[/* value */ _, String | Null]]
-    ]
-  ): ValidatorsProviderProps = {
+  def apply[/* <: js.Object */ T](validators: Record[String, CustomValidatorFunction[T]]): ValidatorsProviderProps[T] = {
     val __obj = js.Dynamic.literal(validators = validators.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ValidatorsProviderProps]
+    __obj.asInstanceOf[ValidatorsProviderProps[T]]
   }
 }
 

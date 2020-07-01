@@ -1,6 +1,6 @@
 package typings.googleapis.reportsV1Mod.adminReportsV1
 
-import typings.googleapis.AnonCode
+import typings.googleapis.anon.Code
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +29,7 @@ trait SchemaUsageReports extends js.Object {
   /**
     * Warnings if any.
     */
-  var warnings: js.UndefOr[js.Array[AnonCode]] = js.native
+  var warnings: js.UndefOr[js.Array[Code]] = js.native
 }
 
 object SchemaUsageReports {
@@ -39,7 +39,7 @@ object SchemaUsageReports {
     kind: String = null,
     nextPageToken: String = null,
     usageReports: js.Array[SchemaUsageReport] = null,
-    warnings: js.Array[AnonCode] = null
+    warnings: js.Array[Code] = null
   ): SchemaUsageReports = {
     val __obj = js.Dynamic.literal()
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])

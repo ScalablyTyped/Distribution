@@ -193,7 +193,7 @@ trait PlotFunnel3dDataLabelsOptions extends js.Object {
     * depends on the data, for instance in a column chart, the label is above
     * positive values and below negative values.
     */
-  var verticalAlign: js.UndefOr[VerticalAlignValue | Null] = js.undefined
+  var verticalAlign: js.UndefOr[String] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The x position offset of the
     * label relative to the point in pixels.
@@ -241,7 +241,7 @@ object PlotFunnel3dDataLabelsOptions {
     style: CSSObject = null,
     textPath: DataLabelsTextPathOptionsObject = null,
     useHTML: js.UndefOr[Boolean] = js.undefined,
-    verticalAlign: js.UndefOr[Null | VerticalAlignValue] = js.undefined,
+    verticalAlign: String = null,
     x: js.UndefOr[Double] = js.undefined,
     y: js.UndefOr[Double] = js.undefined,
     z: js.UndefOr[Double] = js.undefined
@@ -273,7 +273,7 @@ object PlotFunnel3dDataLabelsOptions {
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (textPath != null) __obj.updateDynamic("textPath")(textPath.asInstanceOf[js.Any])
     if (!js.isUndefined(useHTML)) __obj.updateDynamic("useHTML")(useHTML.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(verticalAlign)) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
+    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
     if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
     if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])

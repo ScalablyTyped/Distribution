@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateWebhookRequest extends js.Object {
   /**
-    *  Unique Id for an Amplify App. 
+    *  The unique ID for an Amplify app. 
     */
   var appId: AppId = js.native
   /**
-    *  Name for a branch, part of an Amplify App. 
+    *  The name for a branch that is part of an Amplify app. 
     */
   var branchName: BranchName = js.native
   /**
-    *  Description for a webhook. 
+    *  The description for a webhook. 
     */
   var description: js.UndefOr[Description] = js.native
 }

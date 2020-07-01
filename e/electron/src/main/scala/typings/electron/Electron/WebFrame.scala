@@ -74,9 +74,13 @@ trait WebFrame extends EventEmitter {
   def executeJavaScript(code: String, userGesture: Boolean): js.Promise[_] = js.native
   /**
     * A promise that resolves with the result of the executed code or is rejected if
-    * the result of the code is a rejected promise.
-    * 
-  Works like `executeJavaScript` but evaluates `scripts` in an isolated context.
+    * execution could not start.
+    *
+    * Works like `executeJavaScript` but evaluates `scripts` in an isolated context.
+    *
+    * Note that when the execution of script fails, the returned promise will not
+    * reject and the `result` would be `undefined`. This is because Chromium does not
+    * dispatch errors of isolated worlds to foreign worlds.
     */
   def executeJavaScriptInIsolatedWorld(worldId: Double, scripts: js.Array[WebSource]): js.Promise[_] = js.native
   def executeJavaScriptInIsolatedWorld(worldId: Double, scripts: js.Array[WebSource], userGesture: Boolean): js.Promise[_] = js.native

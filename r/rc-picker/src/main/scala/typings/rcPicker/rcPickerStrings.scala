@@ -41,6 +41,9 @@ object rcPickerStrings {
        with PickerMode
   
   @js.native
+  sealed trait dateRender extends js.Object
+  
+  @js.native
   sealed trait decade extends PanelMode
   
   @js.native
@@ -247,6 +250,8 @@ object rcPickerStrings {
   def copy: copy = "copy".asInstanceOf[copy]
   @scala.inline
   def date: date = "date".asInstanceOf[date]
+  @scala.inline
+  def dateRender: dateRender = "dateRender".asInstanceOf[dateRender]
   @scala.inline
   def decade: decade = "decade".asInstanceOf[decade]
   @scala.inline

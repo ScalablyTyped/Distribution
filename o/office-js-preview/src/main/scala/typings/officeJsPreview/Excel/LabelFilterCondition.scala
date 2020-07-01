@@ -21,6 +21,7 @@ sealed trait LabelFilterCondition extends js.Object
 object LabelFilterCondition extends js.Object {
   /**
     * Label begins with substring criterion.
+    
     Required Criteria: {`substring`}.
     Optional Criteria: {`exclusive`}.
     *
@@ -30,6 +31,7 @@ object LabelFilterCondition extends js.Object {
   
   /**
     * Between `lowerBound` and `upperBound` criteria.
+    
     Required Criteria: {`lowerBound`, `upperBound`}.
     Optional Criteria: {`exclusive`}.
     *
@@ -39,6 +41,7 @@ object LabelFilterCondition extends js.Object {
   
   /**
     * Label contains substring criterion.
+    
     Required Criteria: {`substring`}.
     Optional Criteria: {`exclusive`}.
     *
@@ -48,6 +51,7 @@ object LabelFilterCondition extends js.Object {
   
   /**
     * Label ends with substring criterion.
+    
     Required Criteria: {`substring`}.
     Optional Criteria: {`exclusive`}.
     *
@@ -57,6 +61,7 @@ object LabelFilterCondition extends js.Object {
   
   /**
     * Equals comparator criterion.
+    
     Required Criteria: {`comparator`}.
     Optional Criteria: {`exclusive`}.
     *
@@ -66,6 +71,7 @@ object LabelFilterCondition extends js.Object {
   
   /**
     * Greater than comparator criterion.
+    
     Required Criteria: {`comparator`}.
     *
     */
@@ -74,6 +80,7 @@ object LabelFilterCondition extends js.Object {
   
   /**
     * Greater than or equal to comparator criterion.
+    
     Required Criteria: {`comparator`}.
     *
     */
@@ -82,6 +89,7 @@ object LabelFilterCondition extends js.Object {
   
   /**
     * Less than comparator criterion.
+    
     Required Criteria: {`comparator`}.
     *
     */
@@ -90,6 +98,7 @@ object LabelFilterCondition extends js.Object {
   
   /**
     * Less than or equal to comparator criterion.
+    
     Required Criteria: {`comparator`}.
     *
     */

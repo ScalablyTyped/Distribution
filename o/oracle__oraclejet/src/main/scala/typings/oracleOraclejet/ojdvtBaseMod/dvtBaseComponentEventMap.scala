@@ -30,7 +30,7 @@ trait dvtBaseComponentEventMap[SP /* <: dvtBaseComponentSettableProperties */] e
 
 object dvtBaseComponentEventMap {
   @scala.inline
-  def apply[SP](
+  def apply[/* <: typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponentSettableProperties */ SP](
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,

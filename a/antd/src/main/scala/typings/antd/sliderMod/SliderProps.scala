@@ -26,7 +26,7 @@ trait SliderProps extends js.Object {
   var reverse: js.UndefOr[Boolean] = js.undefined
   var step: js.UndefOr[Double | Null] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
-  var tipFormatter: js.UndefOr[Null | (js.Function1[/* value */ Double, ReactNode])] = js.undefined
+  var tipFormatter: js.UndefOr[Null | (js.Function1[/* value */ js.UndefOr[Double], ReactNode])] = js.undefined
   var tooltipPlacement: js.UndefOr[TooltipPlacement] = js.undefined
   var tooltipPrefixCls: js.UndefOr[String] = js.undefined
   var tooltipVisible: js.UndefOr[Boolean] = js.undefined
@@ -54,7 +54,7 @@ object SliderProps {
     reverse: js.UndefOr[Boolean] = js.undefined,
     step: js.UndefOr[Null | Double] = js.undefined,
     style: CSSProperties = null,
-    tipFormatter: js.UndefOr[Null | (/* value */ Double => ReactNode)] = js.undefined,
+    tipFormatter: js.UndefOr[Null | (/* value */ js.UndefOr[Double] => ReactNode)] = js.undefined,
     tooltipPlacement: TooltipPlacement = null,
     tooltipPrefixCls: String = null,
     tooltipVisible: js.UndefOr[Boolean] = js.undefined,
@@ -79,7 +79,7 @@ object SliderProps {
     if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.get.asInstanceOf[js.Any])
     if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(tipFormatter)) __obj.updateDynamic("tipFormatter")(if (tipFormatter != null) js.Any.fromFunction1(tipFormatter.asInstanceOf[/* value */ Double => ReactNode]) else null)
+    if (!js.isUndefined(tipFormatter)) __obj.updateDynamic("tipFormatter")(if (tipFormatter != null) js.Any.fromFunction1(tipFormatter.asInstanceOf[/* value */ js.UndefOr[Double] => ReactNode]) else null)
     if (tooltipPlacement != null) __obj.updateDynamic("tooltipPlacement")(tooltipPlacement.asInstanceOf[js.Any])
     if (tooltipPrefixCls != null) __obj.updateDynamic("tooltipPrefixCls")(tooltipPrefixCls.asInstanceOf[js.Any])
     if (!js.isUndefined(tooltipVisible)) __obj.updateDynamic("tooltipVisible")(tooltipVisible.get.asInstanceOf[js.Any])

@@ -15,7 +15,7 @@ trait QuadMapIteratee[Q /* <: BaseQuad */] extends js.Object {
 
 object QuadMapIteratee {
   @scala.inline
-  def apply[Q](map: (Q, Dataset[Q, Q]) => Q): QuadMapIteratee[Q] = {
+  def apply[/* <: typings.rdfJs.mod.BaseQuad */ Q](map: (Q, Dataset[Q, Q]) => Q): QuadMapIteratee[Q] = {
     val __obj = js.Dynamic.literal(map = js.Any.fromFunction2(map))
     __obj.asInstanceOf[QuadMapIteratee[Q]]
   }

@@ -12,7 +12,7 @@ trait Css[TStyles /* <: Styles */] extends js.Object {
 
 object Css {
   @scala.inline
-  def apply[TStyles](css: js.Function, styles: TStyles): Css[TStyles] = {
+  def apply[/* <: typings.reactWithStyles.mod.Styles */ TStyles](css: js.Function, styles: TStyles): Css[TStyles] = {
     val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[Css[TStyles]]
   }

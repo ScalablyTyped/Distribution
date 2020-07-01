@@ -11,11 +11,11 @@ trait UpdateTagsForResourceMessage extends js.Object {
     */
   var ResourceArn: typings.awsSdk.elasticbeanstalkMod.ResourceArn = js.native
   /**
-    * A list of tags to add or update. If a key of an existing tag is added, the tag's value is updated.
+    * A list of tags to add or update. If a key of an existing tag is added, the tag's value is updated. Specify at least one of these parameters: TagsToAdd, TagsToRemove.
     */
   var TagsToAdd: js.UndefOr[TagList] = js.native
   /**
-    * A list of tag keys to remove. If a tag key doesn't exist, it is silently ignored.
+    * A list of tag keys to remove. If a tag key doesn't exist, it is silently ignored. Specify at least one of these parameters: TagsToAdd, TagsToRemove.
     */
   var TagsToRemove: js.UndefOr[TagKeyList] = js.native
 }

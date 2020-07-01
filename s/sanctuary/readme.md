@@ -1,7 +1,7 @@
 
 # Scala.js typings for sanctuary
 
-Typings are for version 0.14
+Typings are for version 3.0
 
 ## Library description:
 Refuge from unsafe JavaScript

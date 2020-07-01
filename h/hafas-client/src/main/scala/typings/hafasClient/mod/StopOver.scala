@@ -4,13 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A stopover represents a vehicle stopping at a stop/station at a specific time.
+  */
 trait StopOver extends js.Object {
+  /** null, if first stopOver of trip */
   var arrival: js.UndefOr[String] = js.undefined
-   // null, if first stopOver of trip
   var arrivalDelay: js.UndefOr[Double] = js.undefined
   var arrivalPlatform: js.UndefOr[String] = js.undefined
+  /** null, if last stopOver of trip */
   var departure: js.UndefOr[String] = js.undefined
-   // null, if last stopOver of trip
   var departureDelay: js.UndefOr[Double] = js.undefined
   var departurePlatform: js.UndefOr[String] = js.undefined
   var plannedArrival: js.UndefOr[String] = js.undefined

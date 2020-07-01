@@ -5,7 +5,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.firefoxWebextBrowser.anon.Apiscript
 import typings.firefoxWebextBrowser.anon.Bookmarks
 import typings.firefoxWebextBrowser.anon.Browserstyle
-import typings.firefoxWebextBrowser.anon.Defaultarea
+import typings.firefoxWebextBrowser.anon.Chromestyle
+import typings.firefoxWebextBrowser.anon.Contentscripts
 import typings.firefoxWebextBrowser.anon.Defaulticon
 import typings.firefoxWebextBrowser.anon.Defaultpanel
 import typings.firefoxWebextBrowser.anon.Edge
@@ -15,6 +16,7 @@ import typings.firefoxWebextBrowser.anon.Keyword
 import typings.firefoxWebextBrowser.anon.NameUrl
 import typings.firefoxWebextBrowser.anon.Page
 import typings.firefoxWebextBrowser.anon.Persistent
+import typings.firefoxWebextBrowser.anon.Pingtype
 import typings.firefoxWebextBrowser.anon.Suggestedkey
 import typings.firefoxWebextBrowser.browser.experiments.ExperimentAPI
 import scala.scalajs.js
@@ -26,13 +28,13 @@ trait WebExtensionManifest extends js.Object {
   var applications: js.UndefOr[Gecko] = js.undefined
   var author: js.UndefOr[String] = js.undefined
   var background: js.UndefOr[Page | Persistent] = js.undefined
-  var browser_action: js.UndefOr[Defaultarea] = js.undefined
+  var browser_action: js.UndefOr[Browserstyle] = js.undefined
   var browser_specific_settings: js.UndefOr[Edge] = js.undefined
   var chrome_settings_overrides: js.UndefOr[Homepage] = js.undefined
   var chrome_url_overrides: js.UndefOr[Bookmarks] = js.undefined
   var commands: js.UndefOr[StringDictionary[Suggestedkey]] = js.undefined
   var content_scripts: js.UndefOr[js.Array[ContentScript]] = js.undefined
-  var content_security_policy: js.UndefOr[String] = js.undefined
+  var content_security_policy: js.UndefOr[String | Contentscripts] = js.undefined
   var default_locale: js.UndefOr[String] = js.undefined
   var description: js.UndefOr[String] = js.undefined
   var developer: js.UndefOr[NameUrl] = js.undefined
@@ -42,19 +44,21 @@ trait WebExtensionManifest extends js.Object {
   var homepage_url: js.UndefOr[String] = js.undefined
   var icons: js.UndefOr[NumberDictionary[ExtensionFileUrl]] = js.undefined
   var incognito: js.UndefOr[WebExtensionManifestIncognito] = js.undefined
+  var l10n_resources: js.UndefOr[js.Array[String]] = js.undefined
   var manifest_version: Double
   var minimum_chrome_version: js.UndefOr[String] = js.undefined
   var minimum_opera_version: js.UndefOr[String] = js.undefined
   var name: String
   var omnibox: js.UndefOr[Keyword] = js.undefined
   var optional_permissions: js.UndefOr[js.Array[OptionalPermissionOrOrigin]] = js.undefined
-  var options_ui: js.UndefOr[Browserstyle] = js.undefined
+  var options_ui: js.UndefOr[Chromestyle] = js.undefined
   var page_action: js.UndefOr[Defaulticon] = js.undefined
   var permissions: js.UndefOr[js.Array[PermissionOrOrigin]] = js.undefined
   /** A list of protocol handler definitions. */
   var protocol_handlers: js.UndefOr[js.Array[ProtocolHandler]] = js.undefined
   var short_name: js.UndefOr[String] = js.undefined
   var sidebar_action: js.UndefOr[Defaultpanel] = js.undefined
+  var telemetry: js.UndefOr[Pingtype] = js.undefined
   var theme_experiment: js.UndefOr[ThemeExperiment] = js.undefined
   var user_scripts: js.UndefOr[Apiscript] = js.undefined
   var version: String
@@ -70,13 +74,13 @@ object WebExtensionManifest {
     applications: Gecko = null,
     author: String = null,
     background: Page | Persistent = null,
-    browser_action: Defaultarea = null,
+    browser_action: Browserstyle = null,
     browser_specific_settings: Edge = null,
     chrome_settings_overrides: Homepage = null,
     chrome_url_overrides: Bookmarks = null,
     commands: StringDictionary[Suggestedkey] = null,
     content_scripts: js.Array[ContentScript] = null,
-    content_security_policy: String = null,
+    content_security_policy: String | Contentscripts = null,
     default_locale: String = null,
     description: String = null,
     developer: NameUrl = null,
@@ -86,16 +90,18 @@ object WebExtensionManifest {
     homepage_url: String = null,
     icons: NumberDictionary[ExtensionFileUrl] = null,
     incognito: WebExtensionManifestIncognito = null,
+    l10n_resources: js.Array[String] = null,
     minimum_chrome_version: String = null,
     minimum_opera_version: String = null,
     omnibox: Keyword = null,
     optional_permissions: js.Array[OptionalPermissionOrOrigin] = null,
-    options_ui: Browserstyle = null,
+    options_ui: Chromestyle = null,
     page_action: Defaulticon = null,
     permissions: js.Array[PermissionOrOrigin] = null,
     protocol_handlers: js.Array[ProtocolHandler] = null,
     short_name: String = null,
     sidebar_action: Defaultpanel = null,
+    telemetry: Pingtype = null,
     theme_experiment: ThemeExperiment = null,
     user_scripts: Apiscript = null,
     web_accessible_resources: js.Array[String] = null
@@ -120,6 +126,7 @@ object WebExtensionManifest {
     if (homepage_url != null) __obj.updateDynamic("homepage_url")(homepage_url.asInstanceOf[js.Any])
     if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
     if (incognito != null) __obj.updateDynamic("incognito")(incognito.asInstanceOf[js.Any])
+    if (l10n_resources != null) __obj.updateDynamic("l10n_resources")(l10n_resources.asInstanceOf[js.Any])
     if (minimum_chrome_version != null) __obj.updateDynamic("minimum_chrome_version")(minimum_chrome_version.asInstanceOf[js.Any])
     if (minimum_opera_version != null) __obj.updateDynamic("minimum_opera_version")(minimum_opera_version.asInstanceOf[js.Any])
     if (omnibox != null) __obj.updateDynamic("omnibox")(omnibox.asInstanceOf[js.Any])
@@ -130,6 +137,7 @@ object WebExtensionManifest {
     if (protocol_handlers != null) __obj.updateDynamic("protocol_handlers")(protocol_handlers.asInstanceOf[js.Any])
     if (short_name != null) __obj.updateDynamic("short_name")(short_name.asInstanceOf[js.Any])
     if (sidebar_action != null) __obj.updateDynamic("sidebar_action")(sidebar_action.asInstanceOf[js.Any])
+    if (telemetry != null) __obj.updateDynamic("telemetry")(telemetry.asInstanceOf[js.Any])
     if (theme_experiment != null) __obj.updateDynamic("theme_experiment")(theme_experiment.asInstanceOf[js.Any])
     if (user_scripts != null) __obj.updateDynamic("user_scripts")(user_scripts.asInstanceOf[js.Any])
     if (web_accessible_resources != null) __obj.updateDynamic("web_accessible_resources")(web_accessible_resources.asInstanceOf[js.Any])

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateDomainRequest extends js.Object {
   /**
-    * The mode of authentication that member use to access the domain.
+    * The mode of authentication that members use to access the domain.
     */
   var AuthMode: typings.awsSdk.sagemakerMod.AuthMode = js.native
   /**
@@ -23,15 +23,15 @@ trait CreateDomainRequest extends js.Object {
     */
   var HomeEfsFileSystemKmsKeyId: js.UndefOr[KmsKeyId] = js.native
   /**
-    * Security setting to limit to a set of subnets.
+    * The VPC subnets to use for communication with the EFS volume.
     */
   var SubnetIds: Subnets = js.native
   /**
-    * Each tag consists of a key and an optional value. Tag keys must be unique per resource.
+    * Tags to associated with the Domain. Each tag consists of a key and an optional value. Tag keys must be unique per resource. Tags are searchable using the Search API.
     */
   var Tags: js.UndefOr[TagList] = js.native
   /**
-    * Security setting to limit the domain's communication to a Amazon Virtual Private Cloud.
+    * The ID of the Amazon Virtual Private Cloud (VPC) to use for communication with the EFS volume.
     */
   var VpcId: typings.awsSdk.sagemakerMod.VpcId = js.native
 }

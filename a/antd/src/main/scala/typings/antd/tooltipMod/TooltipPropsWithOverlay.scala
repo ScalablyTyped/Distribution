@@ -1,5 +1,6 @@
 package typings.antd.tooltipMod
 
+import typings.antd.colorsMod.PresetColorType
 import typings.antd.placementsMod.AdjustOverflow
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
@@ -22,6 +23,7 @@ object TooltipPropsWithOverlay {
     autoAdjustOverflow: Boolean | AdjustOverflow = null,
     builtinPlacements: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BuildInPlacements */ js.Any = null,
     className: String = null,
+    color: PresetColorType = null,
     getPopupContainer: /* triggerNode */ HTMLElement => HTMLElement = null,
     openClassName: String = null,
     overlay: ReactNode | RenderFunction = null,
@@ -34,6 +36,7 @@ object TooltipPropsWithOverlay {
     if (autoAdjustOverflow != null) __obj.updateDynamic("autoAdjustOverflow")(autoAdjustOverflow.asInstanceOf[js.Any])
     if (builtinPlacements != null) __obj.updateDynamic("builtinPlacements")(builtinPlacements.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (openClassName != null) __obj.updateDynamic("openClassName")(openClassName.asInstanceOf[js.Any])
     if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])

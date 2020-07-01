@@ -1,7 +1,7 @@
 
 # Scala.js typings for fluentui__keyboard-key
 
-Typings are for version 0.2.0
+Typings are for version 0.2.3
 
 ## Library description:
 A simple utility for determining the KeyboardEvent.key property from a keyboard event.

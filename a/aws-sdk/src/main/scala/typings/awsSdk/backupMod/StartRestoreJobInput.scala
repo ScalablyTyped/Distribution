@@ -23,7 +23,7 @@ trait StartRestoreJobInput extends js.Object {
     */
   var RecoveryPointArn: ARN = js.native
   /**
-    * Starts a job to restore a recovery point for one of the following resources:    EBS for Amazon Elastic Block Store    Storage Gateway for AWS Storage Gateway    RDS for Amazon Relational Database Service    DDB for Amazon DynamoDB    EFS for Amazon Elastic File System  
+    * Starts a job to restore a recovery point for one of the following resources:    DynamoDB for Amazon DynamoDB    EBS for Amazon Elastic Block Store    EC2 for Amazon Elastic Compute Cloud    EFS for Amazon Elastic File System    RDS for Amazon Relational Database Service    Storage Gateway for AWS Storage Gateway  
     */
   var ResourceType: js.UndefOr[typings.awsSdk.backupMod.ResourceType] = js.native
 }

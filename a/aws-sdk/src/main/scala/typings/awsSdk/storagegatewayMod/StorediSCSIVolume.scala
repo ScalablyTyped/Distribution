@@ -12,7 +12,7 @@ trait StorediSCSIVolume extends js.Object {
   var CreatedDate: js.UndefOr[typings.awsSdk.storagegatewayMod.CreatedDate] = js.native
   var KMSKey: js.UndefOr[typings.awsSdk.storagegatewayMod.KMSKey] = js.native
   /**
-    * Indicates if when the stored volume was created, existing data on the underlying local disk was preserved.  Valid Values: true, false
+    * Indicates if when the stored volume was created, existing data on the underlying local disk was preserved. Valid Values: true | false 
     */
   var PreservedExistingData: js.UndefOr[scala.Boolean] = js.native
   /**
@@ -28,7 +28,7 @@ trait StorediSCSIVolume extends js.Object {
     */
   var VolumeARN: js.UndefOr[typings.awsSdk.storagegatewayMod.VolumeARN] = js.native
   /**
-    * A value that indicates whether a storage volume is attached to, detached from, or is in the process of detaching from a gateway. For more information, see Moving Your Volumes to a Different Gateway.
+    * A value that indicates whether a storage volume is attached to, detached from, or is in the process of detaching from a gateway. For more information, see Moving your volumes to a different gateway.
     */
   var VolumeAttachmentStatus: js.UndefOr[typings.awsSdk.storagegatewayMod.VolumeAttachmentStatus] = js.native
   /**

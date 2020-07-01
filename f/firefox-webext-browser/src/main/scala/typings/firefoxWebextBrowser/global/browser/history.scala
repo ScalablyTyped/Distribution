@@ -4,7 +4,7 @@ import typings.firefoxWebextBrowser.WebExtEvent
 import typings.firefoxWebextBrowser.anon.AllHistory
 import typings.firefoxWebextBrowser.anon.EndTime
 import typings.firefoxWebextBrowser.anon.StartTime
-import typings.firefoxWebextBrowser.anon.TitleString
+import typings.firefoxWebextBrowser.anon.TitleStringUrlString
 import typings.firefoxWebextBrowser.anon.Transition
 import typings.firefoxWebextBrowser.anon.UrlString
 import typings.firefoxWebextBrowser.browser.history.HistoryItem
@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object history extends js.Object {
   /** Fired when the title of a URL is changed in the browser history. */
-  val onTitleChanged: WebExtEvent[js.Function1[/* changed */ TitleString, Unit]] = js.native
+  val onTitleChanged: WebExtEvent[js.Function1[/* changed */ TitleStringUrlString, Unit]] = js.native
   /**
     * Fired when one or more URLs are removed from the history service. When all visits have been removed the URL is
     * purged from history.

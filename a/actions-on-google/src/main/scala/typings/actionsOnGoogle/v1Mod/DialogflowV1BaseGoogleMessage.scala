@@ -12,7 +12,7 @@ trait DialogflowV1BaseGoogleMessage[TType /* <: String */] extends js.Object {
 
 object DialogflowV1BaseGoogleMessage {
   @scala.inline
-  def apply[TType](platform: google, `type`: TType = null): DialogflowV1BaseGoogleMessage[TType] = {
+  def apply[/* <: java.lang.String */ TType](platform: google, `type`: TType = null): DialogflowV1BaseGoogleMessage[TType] = {
     val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogflowV1BaseGoogleMessage[TType]]

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetArtifactUrlResult extends js.Object {
   /**
-    *  Unique Id for a artifact. 
+    *  The unique ID for an artifact. 
     */
   var artifactId: ArtifactId = js.native
   /**
-    *  Presigned url for the artifact. 
+    *  The presigned URL for the artifact. 
     */
   var artifactUrl: ArtifactUrl = js.native
 }

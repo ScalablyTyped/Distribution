@@ -23,6 +23,7 @@ import typings.ionicCore.ionicCoreStrings.send
 import typings.ionicCore.ionicCoreStrings.tel
 import typings.ionicCore.ionicCoreStrings.text
 import typings.ionicCore.ionicCoreStrings.url
+import typings.ionicCore.mod.AutocompleteTypes
 import typings.ionicCore.mod.Color
 import typings.ionicCore.searchbarInterfaceMod.SearchbarChangeEventDetail
 import typings.std.CustomEvent
@@ -39,7 +40,7 @@ trait IonSearchbar extends js.Object {
   /**
     * Set the input's autocomplete property.
     */
-  var autocomplete: js.UndefOr[on | off] = js.undefined
+  var autocomplete: js.UndefOr[AutocompleteTypes] = js.undefined
   /**
     * Set the input's autocorrect property.
     */
@@ -134,7 +135,7 @@ object IonSearchbar {
   @scala.inline
   def apply(
     animated: js.UndefOr[Boolean] = js.undefined,
-    autocomplete: on | off = null,
+    autocomplete: AutocompleteTypes = null,
     autocorrect: on | off = null,
     cancelButtonIcon: String = null,
     cancelButtonText: String = null,

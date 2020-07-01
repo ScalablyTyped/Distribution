@@ -47,6 +47,7 @@ trait RecursivePartialPartialDi extends js.Object {
   var accessibilityViewIsModal: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   var accessible: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   var collapsable: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
+  var focusable: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   var hasTVPreferredFocus: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   var hitSlop: js.UndefOr[RecursivePartial[js.UndefOr[Insets]]] = js.undefined
   var importantForAccessibility: js.UndefOr[RecursivePartial[js.UndefOr[auto | yes | no | `no-hide-descendants`]]] = js.undefined
@@ -141,6 +142,7 @@ object RecursivePartialPartialDi {
     accessibilityViewIsModal: RecursivePartial[js.UndefOr[Boolean]] = null,
     accessible: RecursivePartial[js.UndefOr[Boolean]] = null,
     collapsable: RecursivePartial[js.UndefOr[Boolean]] = null,
+    focusable: RecursivePartial[js.UndefOr[Boolean]] = null,
     hasTVPreferredFocus: RecursivePartial[js.UndefOr[Boolean]] = null,
     hitSlop: RecursivePartial[js.UndefOr[Insets]] = null,
     importantForAccessibility: RecursivePartial[js.UndefOr[auto | yes | no | `no-hide-descendants`]] = null,
@@ -196,6 +198,7 @@ object RecursivePartialPartialDi {
     if (accessibilityViewIsModal != null) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.asInstanceOf[js.Any])
     if (accessible != null) __obj.updateDynamic("accessible")(accessible.asInstanceOf[js.Any])
     if (collapsable != null) __obj.updateDynamic("collapsable")(collapsable.asInstanceOf[js.Any])
+    if (focusable != null) __obj.updateDynamic("focusable")(focusable.asInstanceOf[js.Any])
     if (hasTVPreferredFocus != null) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.asInstanceOf[js.Any])
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])

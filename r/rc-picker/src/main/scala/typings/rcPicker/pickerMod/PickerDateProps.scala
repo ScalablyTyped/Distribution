@@ -301,6 +301,7 @@ trait PickerDateProps[DateType] extends PickerProps[DateType] {
   var prevIcon: js.UndefOr[ReactNode] = js.undefined
   var renderExtraFooter: js.UndefOr[js.Function1[/* mode */ PanelMode, ReactNode]] = js.undefined
   var role: js.UndefOr[String] = js.undefined
+  var showNow: js.UndefOr[Boolean] = js.undefined
   var showTime: js.UndefOr[Boolean | SharedTimeProps[DateType]] = js.undefined
   var showToday: js.UndefOr[Boolean] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
@@ -411,6 +412,7 @@ object PickerDateProps {
     prevIcon: ReactNode = null,
     renderExtraFooter: /* mode */ PanelMode => ReactNode = null,
     role: String = null,
+    showNow: js.UndefOr[Boolean] = js.undefined,
     showTime: Boolean | SharedTimeProps[DateType] = null,
     showToday: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
@@ -516,6 +518,7 @@ object PickerDateProps {
     if (prevIcon != null) __obj.updateDynamic("prevIcon")(prevIcon.asInstanceOf[js.Any])
     if (renderExtraFooter != null) __obj.updateDynamic("renderExtraFooter")(js.Any.fromFunction1(renderExtraFooter))
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNow)) __obj.updateDynamic("showNow")(showNow.get.asInstanceOf[js.Any])
     if (showTime != null) __obj.updateDynamic("showTime")(showTime.asInstanceOf[js.Any])
     if (!js.isUndefined(showToday)) __obj.updateDynamic("showToday")(showToday.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

@@ -5,10 +5,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AsteriskInfo extends js.Object {
-  /* Properties */
+  /**
+    * Info about how Asterisk was built.
+    */
   var build: js.UndefOr[BuildInfo] = js.undefined
+  /**
+    * Info about Asterisk configuration.
+    */
   var config: js.UndefOr[ConfigInfo] = js.undefined
+  /**
+    * Info about Asterisk status.
+    */
   var status: js.UndefOr[StatusInfo] = js.undefined
+  /**
+    * Info about the system running Asterisk.
+    */
   var system: js.UndefOr[SystemInfo] = js.undefined
 }
 

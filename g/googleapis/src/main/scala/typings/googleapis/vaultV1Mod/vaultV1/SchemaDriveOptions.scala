@@ -24,7 +24,7 @@ object SchemaDriveOptions {
   @scala.inline
   def apply(includeTeamDrives: js.UndefOr[Boolean] = js.undefined, versionDate: String = null): SchemaDriveOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeTeamDrives)) __obj.updateDynamic("includeTeamDrives")(includeTeamDrives.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeTeamDrives)) __obj.updateDynamic("includeTeamDrives")(includeTeamDrives.get.asInstanceOf[js.Any])
     if (versionDate != null) __obj.updateDynamic("versionDate")(versionDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDriveOptions]
   }

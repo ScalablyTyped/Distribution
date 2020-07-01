@@ -18,7 +18,7 @@ trait Registries[T /* <: Ractive[T] */] extends js.Object {
 
 object Registries {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.ractive.mod.Ractive[T] */ T](
     adaptors: Registry[Adaptor],
     components: Registry[Component],
     decorators: Registry[Decorator[T]],

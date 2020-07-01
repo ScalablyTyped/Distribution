@@ -41,19 +41,19 @@ object SchemaObjParseError {
   @scala.inline
   def apply(
     code: String = null,
-    endIndex: Int | Double = null,
+    endIndex: js.UndefOr[Double] = js.undefined,
     filePath: String = null,
     line: String = null,
-    lineNumber: Int | Double = null,
-    startIndex: Int | Double = null
+    lineNumber: js.UndefOr[Double] = js.undefined,
+    startIndex: js.UndefOr[Double] = js.undefined
   ): SchemaObjParseError = {
     val __obj = js.Dynamic.literal()
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (endIndex != null) __obj.updateDynamic("endIndex")(endIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(endIndex)) __obj.updateDynamic("endIndex")(endIndex.get.asInstanceOf[js.Any])
     if (filePath != null) __obj.updateDynamic("filePath")(filePath.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber.asInstanceOf[js.Any])
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineNumber)) __obj.updateDynamic("lineNumber")(lineNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaObjParseError]
   }
 }

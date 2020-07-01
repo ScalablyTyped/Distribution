@@ -23,6 +23,18 @@ trait Bookshelf
   def knex[TRecord2, TResult2](tableName: AliasDict, options: TableOptions): QueryBuilder[TRecord2, TResult2] = js.native
   def knex[TRecord2, TResult2](tableName: TableDescriptor): QueryBuilder[TRecord2, TResult2] = js.native
   def knex[TRecord2, TResult2](tableName: TableDescriptor, options: TableOptions): QueryBuilder[TRecord2, TResult2] = js.native
+  def model(name: String): js.Any = js.native
+  def model(
+    name: String,
+    model: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bookshelf.Model */ js.Any
+  ): js.Any = js.native
+  def model(
+    name: String,
+    model: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bookshelf.Model */ js.Any,
+    staticProperties: js.Any
+  ): js.Any = js.native
+  def model(name: String, model: js.Object): js.Any = js.native
+  def model(name: String, model: js.Object, staticProperties: js.Any): js.Any = js.native
   def plugin(name: String): Bookshelf = js.native
   def plugin(name: String, options: js.Any): Bookshelf = js.native
   def plugin(name: js.Array[String]): Bookshelf = js.native

@@ -66,7 +66,7 @@ trait Spritesheet extends js.Object {
   /**
     * Destroy Spritesheet and don't use after this.
     *
-    * @param {boolean} [destroyBase=false] Whether to destroy the base texture as well
+    * @param {boolean} [destroyBase=false] - Whether to destroy the base texture as well
     */
   def destroy(): Unit = js.native
   def destroy(destroyBase: Boolean): Unit = js.native

@@ -3,11 +3,12 @@ package typings.rcRate.rateMod
 import typings.react.mod.Component
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
 import typings.std.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLUListElement
-import typings.std.MouseEvent
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,9 +29,9 @@ trait Rate
   def getStarValue(index: Double, x: Double): Double = js.native
   def onBlur(): Unit = js.native
   def onClick(event: KeyboardEvent[Element], index: Double): Unit = js.native
-  def onClick(event: typings.react.mod.MouseEvent[Element, MouseEvent], index: Double): Unit = js.native
+  def onClick(event: MouseEvent[Element, NativeMouseEvent], index: Double): Unit = js.native
   def onFocus(): Unit = js.native
-  def onHover(event: typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent], index: Double): Unit = js.native
+  def onHover(event: MouseEvent[HTMLDivElement, NativeMouseEvent], index: Double): Unit = js.native
   def onMouseLeave(): Unit = js.native
   def saveRate(node: HTMLUListElement): Unit = js.native
   def saveRef(index: Double): js.Function1[/* node */ typings.rcRate.starMod.default, Unit] = js.native

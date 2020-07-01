@@ -34,7 +34,7 @@ object SchemaCoverPhoto {
     url: String = null
   ): SchemaCoverPhoto = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.get.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCoverPhoto]

@@ -59,7 +59,7 @@ import scala.scalajs.js.annotation._
 
 object ComponentOptions {
   @scala.inline
-  def apply[V](
+  def apply[/* <: typings.vue.vueMod.Vue */ V](
     globalData: AnyObject = null,
     mpType: String = null,
     onBackPress: /* options */ BackPressOption => _ = null,

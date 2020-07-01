@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   @js.native
-  trait IndexedDBStore
-    extends typings.keya.storeMod.default {
-    var index: IDBObjectStore = js.native
+  trait IndexedDBStore[T]
+    extends typings.keya.storeMod.default[T] {
+    var index: IDBObjectStore | Null = js.native
   }
   
   @js.native
-  class default () extends IndexedDBStore
+  class default[T] () extends IndexedDBStore[T]
   
   /* static members */
   @js.native

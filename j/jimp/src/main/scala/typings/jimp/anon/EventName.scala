@@ -16,7 +16,7 @@ trait EventName[T /* <: ListenableName */] extends ListenerData[T] {
 
 object EventName {
   @scala.inline
-  def apply[T](eventName: T, methodName: clone | ChangeName | constructor): EventName[T] = {
+  def apply[/* <: typings.jimp.mod.ListenableName */ T](eventName: T, methodName: clone | ChangeName | constructor): EventName[T] = {
     val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventName[T]]
   }

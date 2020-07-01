@@ -24,7 +24,7 @@ trait AsyncTypeaheadProps[T /* <: TypeaheadModel */] extends TypeaheadProps[T] {
 
 object AsyncTypeaheadProps {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.reactBootstrapTypeahead.mod.TypeaheadModel */ T](
     isLoading: Boolean,
     onSearch: String => Unit,
     options: js.Array[T],

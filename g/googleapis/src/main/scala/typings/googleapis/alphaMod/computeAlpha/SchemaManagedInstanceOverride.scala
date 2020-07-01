@@ -1,6 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
-import typings.googleapis.AnonKey
+import typings.googleapis.anon.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait SchemaManagedInstanceOverride extends js.Object {
     * Metadata overrides defined for this instance. TODO(b/69785416) validate
     * the total length is &lt;9 KB
     */
-  var metadata: js.UndefOr[js.Array[AnonKey]] = js.native
+  var metadata: js.UndefOr[js.Array[Key]] = js.native
   /**
     * [Output Only] Indicates where does the override come from.
     */
@@ -32,7 +32,7 @@ object SchemaManagedInstanceOverride {
   @scala.inline
   def apply(
     disks: js.Array[SchemaManagedInstanceOverrideDiskOverride] = null,
-    metadata: js.Array[AnonKey] = null,
+    metadata: js.Array[Key] = null,
     origin: String = null
   ): SchemaManagedInstanceOverride = {
     val __obj = js.Dynamic.literal()

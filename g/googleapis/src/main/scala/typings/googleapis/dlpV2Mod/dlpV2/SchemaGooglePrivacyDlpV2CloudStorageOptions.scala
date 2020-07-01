@@ -47,18 +47,18 @@ object SchemaGooglePrivacyDlpV2CloudStorageOptions {
   @scala.inline
   def apply(
     bytesLimitPerFile: String = null,
-    bytesLimitPerFilePercent: Int | Double = null,
+    bytesLimitPerFilePercent: js.UndefOr[Double] = js.undefined,
     fileSet: SchemaGooglePrivacyDlpV2FileSet = null,
     fileTypes: js.Array[String] = null,
-    filesLimitPercent: Int | Double = null,
+    filesLimitPercent: js.UndefOr[Double] = js.undefined,
     sampleMethod: String = null
   ): SchemaGooglePrivacyDlpV2CloudStorageOptions = {
     val __obj = js.Dynamic.literal()
     if (bytesLimitPerFile != null) __obj.updateDynamic("bytesLimitPerFile")(bytesLimitPerFile.asInstanceOf[js.Any])
-    if (bytesLimitPerFilePercent != null) __obj.updateDynamic("bytesLimitPerFilePercent")(bytesLimitPerFilePercent.asInstanceOf[js.Any])
+    if (!js.isUndefined(bytesLimitPerFilePercent)) __obj.updateDynamic("bytesLimitPerFilePercent")(bytesLimitPerFilePercent.get.asInstanceOf[js.Any])
     if (fileSet != null) __obj.updateDynamic("fileSet")(fileSet.asInstanceOf[js.Any])
     if (fileTypes != null) __obj.updateDynamic("fileTypes")(fileTypes.asInstanceOf[js.Any])
-    if (filesLimitPercent != null) __obj.updateDynamic("filesLimitPercent")(filesLimitPercent.asInstanceOf[js.Any])
+    if (!js.isUndefined(filesLimitPercent)) __obj.updateDynamic("filesLimitPercent")(filesLimitPercent.get.asInstanceOf[js.Any])
     if (sampleMethod != null) __obj.updateDynamic("sampleMethod")(sampleMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2CloudStorageOptions]
   }

@@ -29,10 +29,14 @@ trait SchemaQueryTestablePermissionsRequest extends js.Object {
 
 object SchemaQueryTestablePermissionsRequest {
   @scala.inline
-  def apply(fullResourceName: String = null, pageSize: Int | Double = null, pageToken: String = null): SchemaQueryTestablePermissionsRequest = {
+  def apply(
+    fullResourceName: String = null,
+    pageSize: js.UndefOr[Double] = js.undefined,
+    pageToken: String = null
+  ): SchemaQueryTestablePermissionsRequest = {
     val __obj = js.Dynamic.literal()
     if (fullResourceName != null) __obj.updateDynamic("fullResourceName")(fullResourceName.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQueryTestablePermissionsRequest]
   }

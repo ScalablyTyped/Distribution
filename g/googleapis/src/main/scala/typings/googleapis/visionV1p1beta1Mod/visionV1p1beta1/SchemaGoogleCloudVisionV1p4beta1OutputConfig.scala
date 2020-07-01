@@ -29,11 +29,11 @@ trait SchemaGoogleCloudVisionV1p4beta1OutputConfig extends js.Object {
 object SchemaGoogleCloudVisionV1p4beta1OutputConfig {
   @scala.inline
   def apply(
-    batchSize: Int | Double = null,
+    batchSize: js.UndefOr[Double] = js.undefined,
     gcsDestination: SchemaGoogleCloudVisionV1p4beta1GcsDestination = null
   ): SchemaGoogleCloudVisionV1p4beta1OutputConfig = {
     val __obj = js.Dynamic.literal()
-    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
     if (gcsDestination != null) __obj.updateDynamic("gcsDestination")(gcsDestination.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p4beta1OutputConfig]
   }

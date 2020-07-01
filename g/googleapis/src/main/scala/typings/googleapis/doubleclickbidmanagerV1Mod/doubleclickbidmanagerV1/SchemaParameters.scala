@@ -43,7 +43,7 @@ object SchemaParameters {
     val __obj = js.Dynamic.literal()
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     if (groupBys != null) __obj.updateDynamic("groupBys")(groupBys.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeInviteData)) __obj.updateDynamic("includeInviteData")(includeInviteData.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeInviteData)) __obj.updateDynamic("includeInviteData")(includeInviteData.get.asInstanceOf[js.Any])
     if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaParameters]

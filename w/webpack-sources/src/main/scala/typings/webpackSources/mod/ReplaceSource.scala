@@ -1,9 +1,7 @@
 package typings.webpackSources.mod
 
+import typings.sourceListMap.mod.SourceListMap
 import typings.sourceMap.mod.RawSourceMap
-import typings.sourceMap.mod.SourceNode
-import typings.webpackSources.anon.Columns
-import typings.webpackSources.anon.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,22 +11,38 @@ import scala.scalajs.js.annotation._
 class ReplaceSource protected ()
   extends Source
      with SourceAndMapMixin {
+  /**
+    * The ReplaceSource supports "identity" mappings for child source.
+    * When original source matches generated source for a mapping it's assumed to be mapped char by char allowing to split mappings at replacements/insertions.
+    */
   def this(source: Source) = this()
   def this(source: Source, name: String) = this()
-  var _name: String = js.native
-  var _source: Source = js.native
-  var replacements: js.Array[js.Array[_]] = js.native
-  def _replaceString(str: String): String = js.native
-  def _replacementToSourceNode(oldNode: SourceNode, newString: String): String | SourceNode = js.native
-  def _sortReplacements(): Unit = js.native
-  def _splitSourceNode(node: String, position: Double): Double = js.native
-  def _splitSourceNode(node: SourceNode, position: js.Array[SourceNode]): js.Array[SourceNode] = js.native
-  def _splitString(str: String, position: Double): js.Array[String] = js.native
-  def insert(pos: Double, newValue: String): Unit = js.native
-  /* CompleteClass */
-  override def map(options: Columns): RawSourceMap = js.native
-  def replace(start: Double, end: Double, newValue: String): Unit = js.native
-  /* CompleteClass */
-  override def sourceAndMap(options: Columns): Map = js.native
+  var replacements: js.Array[Replacement] = js.native
+  /**
+    * Inserts the insertion before char pos (0-indexed).
+    */
+  def insert(pos: Double, newValue: String, name: String): Unit = js.native
+  def listMap(options: MapOptions): SourceListMap = js.native
+  /**
+    * Returns the SourceMap of the represented source code as JSON.
+    * May return `null` if no SourceMap is available.
+    */
+  /* InferMemberOverrides */
+  override def map(options: MapOptions): RawSourceMap | Null = js.native
+  /**
+    * Get decorated Source.
+    */
+  def original(): Source = js.native
+  /**
+    * Replaces chars from start (0-indexed, inclusive) to end (0-indexed, inclusive) with replacement.
+    */
+  def replace(start: Double, end: Double, newValue: String, name: String): Unit = js.native
+  def source(): String = js.native
+  /**
+    * Returns both, source code (like `Source.prototype.source()` and SourceMap (like `Source.prototype.map()`).
+    * This method could have better performance than calling `source()` and `map()` separately.
+    */
+  /* InferMemberOverrides */
+  override def sourceAndMap(options: MapOptions): SourceAndMapResult = js.native
 }
 

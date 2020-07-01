@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateDomainAssociationResult extends js.Object {
   /**
-    *  Domain Association structure. 
+    *  Describes a domain association, which associates a custom domain with an Amplify app. 
     */
   var domainAssociation: DomainAssociation = js.native
 }

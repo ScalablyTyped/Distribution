@@ -10,7 +10,7 @@ trait SimpleFormatElement[T /* <: TYPE */, S /* <: Skeleton */] extends BaseElem
 
 object SimpleFormatElement {
   @scala.inline
-  def apply[T, S](
+  def apply[/* <: typings.intlMessageformatParser.typesMod.TYPE */ T, /* <: typings.intlMessageformatParser.typesMod.Skeleton */ S](
     `type`: T,
     value: String,
     location: Location = null,

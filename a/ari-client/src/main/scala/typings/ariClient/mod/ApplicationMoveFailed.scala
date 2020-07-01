@@ -6,9 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ApplicationMoveFailed extends Event {
+  /**
+    * Arguments to the application.
+    */
   var args: String | js.Array[String]
-  /* Properties */
+  /**
+    * Channel.
+    */
   var channel: Channel
+  /**
+    * Destination.
+    */
   var destination: String
 }
 

@@ -46,14 +46,14 @@ object SchemaPricingInfo {
   @scala.inline
   def apply(
     aggregationInfo: SchemaAggregationInfo = null,
-    currencyConversionRate: Int | Double = null,
+    currencyConversionRate: js.UndefOr[Double] = js.undefined,
     effectiveTime: String = null,
     pricingExpression: SchemaPricingExpression = null,
     summary: String = null
   ): SchemaPricingInfo = {
     val __obj = js.Dynamic.literal()
     if (aggregationInfo != null) __obj.updateDynamic("aggregationInfo")(aggregationInfo.asInstanceOf[js.Any])
-    if (currencyConversionRate != null) __obj.updateDynamic("currencyConversionRate")(currencyConversionRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(currencyConversionRate)) __obj.updateDynamic("currencyConversionRate")(currencyConversionRate.get.asInstanceOf[js.Any])
     if (effectiveTime != null) __obj.updateDynamic("effectiveTime")(effectiveTime.asInstanceOf[js.Any])
     if (pricingExpression != null) __obj.updateDynamic("pricingExpression")(pricingExpression.asInstanceOf[js.Any])
     if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])

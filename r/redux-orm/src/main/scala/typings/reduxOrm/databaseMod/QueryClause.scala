@@ -11,7 +11,7 @@ trait QueryClause[Payload /* <: js.Object */] extends js.Object {
 
 object QueryClause {
   @scala.inline
-  def apply[Payload](payload: Payload, `type`: QueryType): QueryClause[Payload] = {
+  def apply[/* <: js.Object */ Payload](payload: Payload, `type`: QueryType): QueryClause[Payload] = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryClause[Payload]]

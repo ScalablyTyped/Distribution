@@ -11,7 +11,7 @@ trait EventTarget[EventSubscriptionType /* <: String */, EventType /* <: Event *
 
 object EventTarget {
   @scala.inline
-  def apply[EventSubscriptionType, EventType](
+  def apply[/* <: java.lang.String */ EventSubscriptionType, /* <: typings.sipml.SIPml.Event */ EventType](
     addEventListener: (EventSubscriptionType, js.Function1[/* e */ EventType, Unit]) => Unit,
     removeEventListener: EventSubscriptionType => Unit
   ): EventTarget[EventSubscriptionType, EventType] = {

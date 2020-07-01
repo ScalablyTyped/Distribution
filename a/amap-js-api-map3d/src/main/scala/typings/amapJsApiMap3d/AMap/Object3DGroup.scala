@@ -13,7 +13,7 @@ trait Object3DGroup[C /* <: Object3D */] extends Object3D {
 
 object Object3DGroup {
   @scala.inline
-  def apply[C](
+  def apply[/* <: typings.amapJsApiMap3d.AMap.Object3D */ C](
     DEPTH_TEST: Boolean,
     add: C => Unit,
     children: js.Array[C],

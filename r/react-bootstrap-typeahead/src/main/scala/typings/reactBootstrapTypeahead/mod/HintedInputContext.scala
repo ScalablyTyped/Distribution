@@ -14,7 +14,7 @@ trait HintedInputContext[T /* <: TypeaheadModel */] extends js.Object {
 
 object HintedInputContext {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.reactBootstrapTypeahead.mod.TypeaheadModel */ T](
     hintText: String = null,
     initialItem: T = null,
     onAdd: /* option */ T => Unit = null,

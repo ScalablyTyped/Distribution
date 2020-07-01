@@ -1,7 +1,7 @@
 
 # Scala.js typings for headroom
 
-Typings are for version v0.7.0
+Typings are for version v0.11.0
 
 ## Library description:
 Minimal implementation of headroom.js

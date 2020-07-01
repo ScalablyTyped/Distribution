@@ -752,7 +752,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
 
 object RaphaelElementPluginRegistry {
   @scala.inline
-  def apply[TTechnology](
+  def apply[/* <: typings.raphael.mod.RaphaelTechnology */ TTechnology](
     animate: RaphaelElementPluginMethod[
       TTechnology, 
       Parameters[

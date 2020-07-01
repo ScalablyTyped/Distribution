@@ -1,11 +1,11 @@
 package typings.materializeCss.M
 
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Tabs extends Component[TabsOptions] {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<TabsOptions> * / any */ trait Tabs extends js.Object {
   /**
     * The index of tab that is currently shown
     */
@@ -23,15 +23,8 @@ trait Tabs extends Component[TabsOptions] {
 
 object Tabs {
   @scala.inline
-  def apply(
-    destroy: () => Unit,
-    el: Element,
-    index: Double,
-    options: TabsOptions,
-    select: String => Unit,
-    updateTabIndicator: () => Unit
-  ): Tabs = {
-    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), el = el.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], select = js.Any.fromFunction1(select), updateTabIndicator = js.Any.fromFunction0(updateTabIndicator))
+  def apply(index: Double, select: String => Unit, updateTabIndicator: () => Unit): Tabs = {
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], select = js.Any.fromFunction1(select), updateTabIndicator = js.Any.fromFunction0(updateTabIndicator))
     __obj.asInstanceOf[Tabs]
   }
 }

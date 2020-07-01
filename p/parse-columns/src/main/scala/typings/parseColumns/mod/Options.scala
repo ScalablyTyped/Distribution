@@ -31,7 +31,7 @@ trait Options[ValuesType /* <: js.Any */] extends js.Object {
 
 object Options {
   @scala.inline
-  def apply[ValuesType](
+  def apply[/* <: js.Any */ ValuesType](
     headers: js.Array[String] = null,
     separator: String = null,
     transform: (/* element */ String, /* header */ String, /* columnIndex */ Double, /* rowIndex */ Double) => ValuesType = null

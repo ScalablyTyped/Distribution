@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashSortedIndexOf extends js.Object {
+trait LodashSortedIndexOf extends LodashConvertible {
   def apply[T](value: T): LodashSortedIndexOf1x1[T] = js.native
   def apply[T](value: T, array: List[T]): Double = js.native
   def apply[T](value: __): LodashSortedIndexOf1x2[T] = js.native

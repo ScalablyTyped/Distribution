@@ -44,13 +44,13 @@ object SchemaTrafficTarget {
   def apply(
     configurationName: String = null,
     name: String = null,
-    percent: Int | Double = null,
+    percent: js.UndefOr[Double] = js.undefined,
     revisionName: String = null
   ): SchemaTrafficTarget = {
     val __obj = js.Dynamic.literal()
     if (configurationName != null) __obj.updateDynamic("configurationName")(configurationName.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
+    if (!js.isUndefined(percent)) __obj.updateDynamic("percent")(percent.get.asInstanceOf[js.Any])
     if (revisionName != null) __obj.updateDynamic("revisionName")(revisionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTrafficTarget]
   }

@@ -32,7 +32,7 @@ object SchemaAdWordsAccount {
     kind: String = null
   ): SchemaAdWordsAccount = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoTaggingEnabled)) __obj.updateDynamic("autoTaggingEnabled")(autoTaggingEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoTaggingEnabled)) __obj.updateDynamic("autoTaggingEnabled")(autoTaggingEnabled.get.asInstanceOf[js.Any])
     if (customerId != null) __obj.updateDynamic("customerId")(customerId.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAdWordsAccount]

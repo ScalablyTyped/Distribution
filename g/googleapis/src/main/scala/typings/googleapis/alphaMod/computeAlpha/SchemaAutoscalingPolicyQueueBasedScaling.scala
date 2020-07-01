@@ -33,14 +33,14 @@ trait SchemaAutoscalingPolicyQueueBasedScaling extends js.Object {
 object SchemaAutoscalingPolicyQueueBasedScaling {
   @scala.inline
   def apply(
-    acceptableBacklogPerInstance: Int | Double = null,
+    acceptableBacklogPerInstance: js.UndefOr[Double] = js.undefined,
     cloudPubSub: SchemaAutoscalingPolicyQueueBasedScalingCloudPubSub = null,
-    singleWorkerThroughputPerSec: Int | Double = null
+    singleWorkerThroughputPerSec: js.UndefOr[Double] = js.undefined
   ): SchemaAutoscalingPolicyQueueBasedScaling = {
     val __obj = js.Dynamic.literal()
-    if (acceptableBacklogPerInstance != null) __obj.updateDynamic("acceptableBacklogPerInstance")(acceptableBacklogPerInstance.asInstanceOf[js.Any])
+    if (!js.isUndefined(acceptableBacklogPerInstance)) __obj.updateDynamic("acceptableBacklogPerInstance")(acceptableBacklogPerInstance.get.asInstanceOf[js.Any])
     if (cloudPubSub != null) __obj.updateDynamic("cloudPubSub")(cloudPubSub.asInstanceOf[js.Any])
-    if (singleWorkerThroughputPerSec != null) __obj.updateDynamic("singleWorkerThroughputPerSec")(singleWorkerThroughputPerSec.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleWorkerThroughputPerSec)) __obj.updateDynamic("singleWorkerThroughputPerSec")(singleWorkerThroughputPerSec.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAutoscalingPolicyQueueBasedScaling]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashBindKey extends js.Object {
+trait LodashBindKey extends LodashConvertible {
   @JSName("placeholder")
   var placeholder_Original: __ = js.native
   def apply(`object`: js.Object): LodashBindKey1x1 = js.native

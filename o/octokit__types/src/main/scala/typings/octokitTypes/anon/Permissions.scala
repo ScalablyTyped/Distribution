@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait Permissions extends js.Object {
   var access_tokens_url: String
-  var account: Hooksurl
+  var account: Gistsurl
   var app_id: Double
   var events: js.Array[String]
   var html_url: String
   var id: Double
-  var permissions: Contents
+  var permissions: Checks
   var repositories_url: String
   var single_file_name: String
   var target_id: Double
@@ -22,12 +22,12 @@ object Permissions {
   @scala.inline
   def apply(
     access_tokens_url: String,
-    account: Hooksurl,
+    account: Gistsurl,
     app_id: Double,
     events: js.Array[String],
     html_url: String,
     id: Double,
-    permissions: Contents,
+    permissions: Checks,
     repositories_url: String,
     single_file_name: String,
     target_id: Double,

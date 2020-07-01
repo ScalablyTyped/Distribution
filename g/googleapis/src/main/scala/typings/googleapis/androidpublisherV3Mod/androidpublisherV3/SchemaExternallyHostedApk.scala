@@ -87,13 +87,13 @@ object SchemaExternallyHostedApk {
     fileSha256Base64: String = null,
     fileSize: String = null,
     iconBase64: String = null,
-    maximumSdk: Int | Double = null,
-    minimumSdk: Int | Double = null,
+    maximumSdk: js.UndefOr[Double] = js.undefined,
+    minimumSdk: js.UndefOr[Double] = js.undefined,
     nativeCodes: js.Array[String] = null,
     packageName: String = null,
     usesFeatures: js.Array[String] = null,
     usesPermissions: js.Array[SchemaExternallyHostedApkUsesPermission] = null,
-    versionCode: Int | Double = null,
+    versionCode: js.UndefOr[Double] = js.undefined,
     versionName: String = null
   ): SchemaExternallyHostedApk = {
     val __obj = js.Dynamic.literal()
@@ -104,13 +104,13 @@ object SchemaExternallyHostedApk {
     if (fileSha256Base64 != null) __obj.updateDynamic("fileSha256Base64")(fileSha256Base64.asInstanceOf[js.Any])
     if (fileSize != null) __obj.updateDynamic("fileSize")(fileSize.asInstanceOf[js.Any])
     if (iconBase64 != null) __obj.updateDynamic("iconBase64")(iconBase64.asInstanceOf[js.Any])
-    if (maximumSdk != null) __obj.updateDynamic("maximumSdk")(maximumSdk.asInstanceOf[js.Any])
-    if (minimumSdk != null) __obj.updateDynamic("minimumSdk")(minimumSdk.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumSdk)) __obj.updateDynamic("maximumSdk")(maximumSdk.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumSdk)) __obj.updateDynamic("minimumSdk")(minimumSdk.get.asInstanceOf[js.Any])
     if (nativeCodes != null) __obj.updateDynamic("nativeCodes")(nativeCodes.asInstanceOf[js.Any])
     if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
     if (usesFeatures != null) __obj.updateDynamic("usesFeatures")(usesFeatures.asInstanceOf[js.Any])
     if (usesPermissions != null) __obj.updateDynamic("usesPermissions")(usesPermissions.asInstanceOf[js.Any])
-    if (versionCode != null) __obj.updateDynamic("versionCode")(versionCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(versionCode)) __obj.updateDynamic("versionCode")(versionCode.get.asInstanceOf[js.Any])
     if (versionName != null) __obj.updateDynamic("versionName")(versionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExternallyHostedApk]
   }

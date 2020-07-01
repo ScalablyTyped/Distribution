@@ -2,14 +2,15 @@ package typings.firebaseFirestore
 
 import typings.firebaseFirestore.asyncQueueMod.AsyncQueue
 import typings.firebaseFirestore.collectionsMod.DocumentKeySet_
-import typings.firebaseFirestore.connectivityMonitorMod.ConnectivityMonitor
+import typings.firebaseFirestore.coreTransactionMod.Transaction
 import typings.firebaseFirestore.datastoreMod.Datastore
 import typings.firebaseFirestore.localStoreMod.LocalStore
+import typings.firebaseFirestore.remoteConnectivityMonitorMod.ConnectivityMonitor
 import typings.firebaseFirestore.remoteSyncerMod.RemoteSyncer
 import typings.firebaseFirestore.targetDataMod.TargetData
-import typings.firebaseFirestore.transactionMod.Transaction
 import typings.firebaseFirestore.typesMod.OnlineState
 import typings.firebaseFirestore.typesMod.TargetId
+import typings.firebaseFirestore.userMod.User
 import typings.firebaseFirestore.watchChangeMod.TargetMetadataProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -49,22 +50,23 @@ object remoteStoreMod extends js.Object {
     var disableNetworkInternal: js.Any = js.native
     /**
       * Recovery logic for IndexedDB errors that takes the network offline until
-      * IndexedDb probing succeeds. Retries are scheduled with backoff using
-      * `enqueueRetryable()`.
+      * `op` succeeds. Retries are scheduled with backoff using
+      * `enqueueRetryable()`. If `op()` is not provided, IndexedDB access is
+      * validated via a generic operation.
+      *
+      * The returned Promise is resolved once the network is disabled and before
+      * any retry attempt.
       */
     var disableNetworkUntilRecovery: js.Any = js.native
     var enableNetworkInternal: js.Any = js.native
-    var handleHandshakeError: js.Any = js.native
+    /**
+      * Executes `op`. If `op` fails, takes the network offline until `op`
+      * succeeds. Returns after the first attempt.
+      */
+    var executeWithRecovery: js.Any = js.native
     /** Handles an error on a target */
     var handleTargetError: js.Any = js.native
     var handleWriteError: js.Any = js.native
-    /**
-      * When set to `true`, the network was taken offline due to an IndexedDB
-      * failure. The state is flipped to `false` when access becomes available
-      * again.
-      */
-    var indexedDbFailed: js.Any = js.native
-    var isPrimary: js.Any = js.native
     /**
       * A mapping of watched targets that the client cares about tracking and the
       * user has explicitly called a 'listen' for this target.
@@ -80,10 +82,10 @@ object remoteStoreMod extends js.Object {
       */
     var localStore: js.Any = js.native
     /**
-      * Set to true by enableNetwork() and false by disableNetwork() and indicates
-      * the user-preferred network state.
+      * A set of reasons for why the RemoteStore may be offline. If empty, the
+      * RemoteStore may start its network connections.
       */
-    var networkEnabled: js.Any = js.native
+    var offlineCauses: js.Any = js.native
     var onMutationResult: js.Any = js.native
     var onWatchStreamChange: js.Any = js.native
     var onWatchStreamClose: js.Any = js.native
@@ -178,7 +180,7 @@ object remoteStoreMod extends js.Object {
       */
     /* CompleteClass */
     override def getTargetDataForTarget(targetId: TargetId): TargetData | Null = js.native
-    def handleCredentialChange(): js.Promise[Unit] = js.native
+    def handleCredentialChange(user: User): js.Promise[Unit] = js.native
     /**
       * Starts new listen for the given target. Uses resume token if provided. It
       * is a no-op if the target of given `TargetData` is already being listened to.

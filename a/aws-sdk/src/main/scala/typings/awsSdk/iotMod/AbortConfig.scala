@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AbortConfig extends js.Object {
   /**
-    * The list of abort criteria to define rules to abort the job.
+    * The list of criteria that determine when and how to abort the job.
     */
   var criteriaList: AbortCriteriaList = js.native
 }

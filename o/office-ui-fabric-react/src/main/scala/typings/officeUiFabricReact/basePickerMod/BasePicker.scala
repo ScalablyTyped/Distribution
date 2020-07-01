@@ -49,7 +49,6 @@ class BasePicker[T, P /* <: IBasePickerProps[T] */] protected ()
   var _id: js.Any = js.native
   var _onResolveSuggestions: js.Any = js.native
   var _onSelectedItemsUpdated: js.Any = js.native
-  var _requestSuggestionsOnClick: js.Any = js.native
   var _styledSuggestions: js.Any = js.native
   /**
     * Takes in the current updated value and either resolves it with the new suggestions
@@ -61,6 +60,11 @@ class BasePicker[T, P /* <: IBasePickerProps[T] */] protected ()
     * If `selectedItems` is provided, this will act as a controlled component and it will not update its own state.
     */
   var _updateSelectedItems: js.Any = js.native
+  /**
+    * This should be called when the user does something other than use text entry to trigger suggestions.
+    *
+    */
+  var _userTriggeredSuggestions: js.Any = js.native
   var currentPromise: js.UndefOr[js.Thenable[_]] = js.native
   var focusZone: RefObject[IFocusZone] = js.native
   var input: RefObject[IAutofill] = js.native
@@ -97,6 +101,10 @@ class BasePicker[T, P /* <: IBasePickerProps[T] */] protected ()
     * without shifting focus.
     */
   /* protected */ def onClick(ev: typings.react.mod.MouseEvent[HTMLInputElement, MouseEvent]): Unit = js.native
+  /**
+    * Only to be called when there is nothing in the input. Checks to see if the consumer has
+    * provided a function to resolve suggestions
+    */
   /* protected */ def onEmptyInputFocus(): Unit = js.native
   /* protected */ def onGetMoreResults(): Unit = js.native
   /* protected */ def onInputBlur(ev: FocusEvent[HTMLInputElement | Autofill]): Unit = js.native

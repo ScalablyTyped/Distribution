@@ -92,6 +92,7 @@ import scala.scalajs.js.annotation._
 
 trait PasswordProps extends InputProps {
   val action: js.UndefOr[String] = js.undefined
+  var iconRender: js.UndefOr[js.Function1[/* visible */ Boolean, ReactNode]] = js.undefined
   val inputPrefixCls: js.UndefOr[String] = js.undefined
   var visibilityToggle: js.UndefOr[Boolean] = js.undefined
 }
@@ -183,6 +184,7 @@ object PasswordProps {
     formTarget: String = null,
     height: Double | String = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
+    iconRender: /* visible */ Boolean => ReactNode = null,
     id: String = null,
     inlist: js.Any = null,
     inputMode: none | text | tel | url | email | numeric | decimal | search = null,
@@ -401,6 +403,7 @@ object PasswordProps {
     if (formTarget != null) __obj.updateDynamic("formTarget")(formTarget.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
+    if (iconRender != null) __obj.updateDynamic("iconRender")(js.Any.fromFunction1(iconRender))
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])

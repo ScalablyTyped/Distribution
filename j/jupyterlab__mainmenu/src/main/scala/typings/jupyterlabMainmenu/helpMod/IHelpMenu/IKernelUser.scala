@@ -21,7 +21,7 @@ trait IKernelUser[T /* <: Widget */] extends IMenuExtender[T] {
 
 object IKernelUser {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.luminoWidgets.mod.Widget */ T](
     getKernel: T => IKernelConnection | Null,
     tracker: IWidgetTracker[T],
     isEnabled: T => Boolean = null

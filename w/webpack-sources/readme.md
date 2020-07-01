@@ -1,7 +1,7 @@
 
 # Scala.js typings for webpack-sources
 
-Typings are for version 0.1
+Typings are for version 1.4
 
 ## Library description:
 Source code handling classes for webpack

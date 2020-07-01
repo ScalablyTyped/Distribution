@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait Formatters extends js.Object {
   var anchor: js.UndefOr[Formatter[_]] = js.undefined
+  var blockquote: js.UndefOr[Formatter[_]] = js.undefined
   var heading: js.UndefOr[Formatter[_]] = js.undefined
   var horizontalLine: js.UndefOr[Formatter[_]] = js.undefined
   var image: js.UndefOr[LeafFormatter[_]] = js.undefined
@@ -22,6 +23,7 @@ object Formatters {
   @scala.inline
   def apply(
     anchor: (_, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String = null,
+    blockquote: (_, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String = null,
     heading: (_, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String = null,
     horizontalLine: (_, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String = null,
     image: (_, /* options */ HtmlToTextOptions) => String = null,
@@ -35,6 +37,7 @@ object Formatters {
   ): Formatters = {
     val __obj = js.Dynamic.literal()
     if (anchor != null) __obj.updateDynamic("anchor")(js.Any.fromFunction3(anchor))
+    if (blockquote != null) __obj.updateDynamic("blockquote")(js.Any.fromFunction3(blockquote))
     if (heading != null) __obj.updateDynamic("heading")(js.Any.fromFunction3(heading))
     if (horizontalLine != null) __obj.updateDynamic("horizontalLine")(js.Any.fromFunction3(horizontalLine))
     if (image != null) __obj.updateDynamic("image")(js.Any.fromFunction2(image))

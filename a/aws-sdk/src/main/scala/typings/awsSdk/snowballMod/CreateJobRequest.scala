@@ -19,6 +19,10 @@ trait CreateJobRequest extends js.Object {
     */
   var Description: js.UndefOr[String] = js.native
   /**
+    * Defines the device configuration for an AWS Snowcone job.
+    */
+  var DeviceConfiguration: js.UndefOr[typings.awsSdk.snowballMod.DeviceConfiguration] = js.native
+  /**
     * The forwarding address ID for a job. This field is not supported in most regions.
     */
   var ForwardingAddressId: js.UndefOr[AddressId] = js.native
@@ -51,7 +55,7 @@ trait CreateJobRequest extends js.Object {
     */
   var SnowballCapacityPreference: js.UndefOr[SnowballCapacity] = js.native
   /**
-    * The type of AWS Snowball device to use for this job. Currently, the only supported device type for cluster jobs is EDGE. For more information, see Snowball Edge Device Options in the Snowball Edge Developer Guide.
+    * The type of AWS Snowball device to use for this job.   For cluster jobs, AWS Snowball currently supports only the EDGE device type.  The type of AWS Snowball device to use for this job. Currently, the only supported device type for cluster jobs is EDGE. For more information, see Snowball Edge Device Options in the Snowball Edge Developer Guide.
     */
   var SnowballType: js.UndefOr[typings.awsSdk.snowballMod.SnowballType] = js.native
   /**
@@ -66,6 +70,7 @@ object CreateJobRequest {
     AddressId: AddressId = null,
     ClusterId: ClusterId = null,
     Description: String = null,
+    DeviceConfiguration: DeviceConfiguration = null,
     ForwardingAddressId: AddressId = null,
     JobType: JobType = null,
     KmsKeyARN: KmsKeyARN = null,
@@ -81,6 +86,7 @@ object CreateJobRequest {
     if (AddressId != null) __obj.updateDynamic("AddressId")(AddressId.asInstanceOf[js.Any])
     if (ClusterId != null) __obj.updateDynamic("ClusterId")(ClusterId.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (DeviceConfiguration != null) __obj.updateDynamic("DeviceConfiguration")(DeviceConfiguration.asInstanceOf[js.Any])
     if (ForwardingAddressId != null) __obj.updateDynamic("ForwardingAddressId")(ForwardingAddressId.asInstanceOf[js.Any])
     if (JobType != null) __obj.updateDynamic("JobType")(JobType.asInstanceOf[js.Any])
     if (KmsKeyARN != null) __obj.updateDynamic("KmsKeyARN")(KmsKeyARN.asInstanceOf[js.Any])

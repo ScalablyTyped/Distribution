@@ -21,7 +21,7 @@ object SchemaInstanceGroupManagerStatus {
   @scala.inline
   def apply(isStable: js.UndefOr[Boolean] = js.undefined): SchemaInstanceGroupManagerStatus = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isStable)) __obj.updateDynamic("isStable")(isStable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isStable)) __obj.updateDynamic("isStable")(isStable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstanceGroupManagerStatus]
   }
 }

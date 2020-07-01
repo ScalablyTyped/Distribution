@@ -23,7 +23,7 @@ object SchemaDisableServiceRequest {
   @scala.inline
   def apply(disableDependentServices: js.UndefOr[Boolean] = js.undefined): SchemaDisableServiceRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableDependentServices)) __obj.updateDynamic("disableDependentServices")(disableDependentServices.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableDependentServices)) __obj.updateDynamic("disableDependentServices")(disableDependentServices.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDisableServiceRequest]
   }
 }

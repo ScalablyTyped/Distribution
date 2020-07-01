@@ -1,7 +1,7 @@
 
 # Scala.js typings for ember__string
 
-Typings are for version 3.0
+Typings are for version 3.16
 
 ## Library description:
 A set of utilities to transform strings

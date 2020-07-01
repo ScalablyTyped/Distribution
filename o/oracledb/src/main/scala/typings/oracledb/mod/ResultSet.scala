@@ -26,7 +26,7 @@ trait ResultSet[T] extends js.Object {
     * Each column’s name is always given. If the oracledb.extendedMetaData or execute() option
     * extendedMetaData are true then additional information is included.
     */
-  val metaData: js.Array[Metadata] = js.native
+  val metaData: js.Array[Metadata[T]] = js.native
   /**
     * Closes a ResultSet. Applications should always call this at the end of fetch or when no more rows are needed.
     * It should also be called if no rows are ever going to be fetched from the ResultSet.

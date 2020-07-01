@@ -42,7 +42,7 @@ trait WrapperProps[T /* <: HTMLElement */]
 
 object WrapperProps {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.std.HTMLElement */ T](
     AllHTMLAttributes: AllHTMLAttributes[T] = null,
     ClassAttributes: ClassAttributes[T] = null,
     closeOnBlur: js.UndefOr[Boolean] = js.undefined,

@@ -83,13 +83,13 @@ object SchemaAutomaticScaling {
     coolDownPeriod: String = null,
     cpuUtilization: SchemaCpuUtilization = null,
     diskUtilization: SchemaDiskUtilization = null,
-    maxConcurrentRequests: Int | Double = null,
-    maxIdleInstances: Int | Double = null,
+    maxConcurrentRequests: js.UndefOr[Double] = js.undefined,
+    maxIdleInstances: js.UndefOr[Double] = js.undefined,
     maxPendingLatency: String = null,
-    maxTotalInstances: Int | Double = null,
-    minIdleInstances: Int | Double = null,
+    maxTotalInstances: js.UndefOr[Double] = js.undefined,
+    minIdleInstances: js.UndefOr[Double] = js.undefined,
     minPendingLatency: String = null,
-    minTotalInstances: Int | Double = null,
+    minTotalInstances: js.UndefOr[Double] = js.undefined,
     networkUtilization: SchemaNetworkUtilization = null,
     requestUtilization: SchemaRequestUtilization = null,
     standardSchedulerSettings: SchemaStandardSchedulerSettings = null
@@ -98,13 +98,13 @@ object SchemaAutomaticScaling {
     if (coolDownPeriod != null) __obj.updateDynamic("coolDownPeriod")(coolDownPeriod.asInstanceOf[js.Any])
     if (cpuUtilization != null) __obj.updateDynamic("cpuUtilization")(cpuUtilization.asInstanceOf[js.Any])
     if (diskUtilization != null) __obj.updateDynamic("diskUtilization")(diskUtilization.asInstanceOf[js.Any])
-    if (maxConcurrentRequests != null) __obj.updateDynamic("maxConcurrentRequests")(maxConcurrentRequests.asInstanceOf[js.Any])
-    if (maxIdleInstances != null) __obj.updateDynamic("maxIdleInstances")(maxIdleInstances.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxConcurrentRequests)) __obj.updateDynamic("maxConcurrentRequests")(maxConcurrentRequests.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxIdleInstances)) __obj.updateDynamic("maxIdleInstances")(maxIdleInstances.get.asInstanceOf[js.Any])
     if (maxPendingLatency != null) __obj.updateDynamic("maxPendingLatency")(maxPendingLatency.asInstanceOf[js.Any])
-    if (maxTotalInstances != null) __obj.updateDynamic("maxTotalInstances")(maxTotalInstances.asInstanceOf[js.Any])
-    if (minIdleInstances != null) __obj.updateDynamic("minIdleInstances")(minIdleInstances.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTotalInstances)) __obj.updateDynamic("maxTotalInstances")(maxTotalInstances.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minIdleInstances)) __obj.updateDynamic("minIdleInstances")(minIdleInstances.get.asInstanceOf[js.Any])
     if (minPendingLatency != null) __obj.updateDynamic("minPendingLatency")(minPendingLatency.asInstanceOf[js.Any])
-    if (minTotalInstances != null) __obj.updateDynamic("minTotalInstances")(minTotalInstances.asInstanceOf[js.Any])
+    if (!js.isUndefined(minTotalInstances)) __obj.updateDynamic("minTotalInstances")(minTotalInstances.get.asInstanceOf[js.Any])
     if (networkUtilization != null) __obj.updateDynamic("networkUtilization")(networkUtilization.asInstanceOf[js.Any])
     if (requestUtilization != null) __obj.updateDynamic("requestUtilization")(requestUtilization.asInstanceOf[js.Any])
     if (standardSchedulerSettings != null) __obj.updateDynamic("standardSchedulerSettings")(standardSchedulerSettings.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.googleapis.plusDomainsV1Mod.plusDomainsV1
 
-import typings.googleapis.AnonImage
-import typings.googleapis.AnonTime
+import typings.googleapis.anon.Image
+import typings.googleapis.anon.Time
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait SchemaMedia extends js.Object {
   /**
     * The person who uploaded this media.
     */
-  var author: js.UndefOr[AnonImage] = js.native
+  var author: js.UndefOr[Image] = js.native
   /**
     * The display name for this media.
     */
@@ -23,7 +23,7 @@ trait SchemaMedia extends js.Object {
   /**
     * Exif information of the media item.
     */
-  var exif: js.UndefOr[AnonTime] = js.native
+  var exif: js.UndefOr[Time] = js.native
   /**
     * The height in pixels of the original image.
     */
@@ -94,11 +94,11 @@ trait SchemaMedia extends js.Object {
 object SchemaMedia {
   @scala.inline
   def apply(
-    author: AnonImage = null,
+    author: Image = null,
     displayName: String = null,
     etag: String = null,
-    exif: AnonTime = null,
-    height: Int | Double = null,
+    exif: Time = null,
+    height: js.UndefOr[Double] = js.undefined,
     id: String = null,
     kind: String = null,
     mediaCreatedTime: String = null,
@@ -111,14 +111,14 @@ object SchemaMedia {
     url: String = null,
     videoDuration: String = null,
     videoStatus: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): SchemaMedia = {
     val __obj = js.Dynamic.literal()
     if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
     if (exif != null) __obj.updateDynamic("exif")(exif.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (mediaCreatedTime != null) __obj.updateDynamic("mediaCreatedTime")(mediaCreatedTime.asInstanceOf[js.Any])
@@ -131,7 +131,7 @@ object SchemaMedia {
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (videoDuration != null) __obj.updateDynamic("videoDuration")(videoDuration.asInstanceOf[js.Any])
     if (videoStatus != null) __obj.updateDynamic("videoStatus")(videoStatus.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMedia]
   }
 }

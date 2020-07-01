@@ -26,7 +26,7 @@ object SchemaTeardownTag {
   @scala.inline
   def apply(stopTeardownOnFailure: js.UndefOr[Boolean] = js.undefined, tagName: String = null): SchemaTeardownTag = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(stopTeardownOnFailure)) __obj.updateDynamic("stopTeardownOnFailure")(stopTeardownOnFailure.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopTeardownOnFailure)) __obj.updateDynamic("stopTeardownOnFailure")(stopTeardownOnFailure.get.asInstanceOf[js.Any])
     if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTeardownTag]
   }

@@ -30,13 +30,13 @@ object SchemaNumericBucketingResult {
   @scala.inline
   def apply(
     counts: js.Array[SchemaBucketizedCount] = null,
-    maxValue: Int | Double = null,
-    minValue: Int | Double = null
+    maxValue: js.UndefOr[Double] = js.undefined,
+    minValue: js.UndefOr[Double] = js.undefined
   ): SchemaNumericBucketingResult = {
     val __obj = js.Dynamic.literal()
     if (counts != null) __obj.updateDynamic("counts")(counts.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minValue)) __obj.updateDynamic("minValue")(minValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNumericBucketingResult]
   }
 }

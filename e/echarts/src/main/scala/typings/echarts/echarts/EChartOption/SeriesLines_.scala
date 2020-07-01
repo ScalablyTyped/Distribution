@@ -1,11 +1,11 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.anon.AnimationDurationUpdate
 import typings.echarts.anon.AnimationEasing
 import typings.echarts.anon.AnimationEasingUpdate
+import typings.echarts.anon.AnimationThreshold
 import typings.echarts.anon.ConstantSpeed
-import typings.echarts.anon.FontStyle
-import typings.echarts.anon.LabelFontStyle
+import typings.echarts.anon.FontSize
+import typings.echarts.anon.LabelFontSize
 import typings.echarts.anon.ShadowColor
 import typings.echarts.echarts.EChartOption.SeriesLines.DataObject
 import scala.scalajs.js
@@ -182,7 +182,7 @@ trait SeriesLines_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.emphasis
     */
-  var emphasis: js.UndefOr[LabelFontStyle] = js.undefined
+  var emphasis: js.UndefOr[LabelFontSize] = js.undefined
   /**
     * Index of
     * [geographic coordinate](https://echarts.apache.org/en/option.html#geo)
@@ -210,7 +210,7 @@ trait SeriesLines_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.label
     */
-  var label: js.UndefOr[FontStyle] = js.undefined
+  var label: js.UndefOr[FontSize] = js.undefined
   /**
     * Whether to enable the optimization of large-scale lines graph.
     * It could be enabled when there is a particularly large number
@@ -249,21 +249,21 @@ trait SeriesLines_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.markArea
     */
-  var markArea: js.UndefOr[AnimationEasingUpdate] = js.undefined
+  var markArea: js.UndefOr[AnimationThreshold] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.markLine
     */
-  var markLine: js.UndefOr[AnimationEasing] = js.undefined
+  var markLine: js.UndefOr[AnimationEasingUpdate] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.markPoint
     */
-  var markPoint: js.UndefOr[AnimationDurationUpdate] = js.undefined
+  var markPoint: js.UndefOr[AnimationEasing] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -425,16 +425,16 @@ object SeriesLines_ {
     coordinateSystem: String = null,
     data: js.Array[DataObject] = null,
     effect: ConstantSpeed = null,
-    emphasis: LabelFontStyle = null,
+    emphasis: LabelFontSize = null,
     geoIndex: js.UndefOr[Double] = js.undefined,
     id: String = null,
-    label: FontStyle = null,
+    label: FontSize = null,
     large: js.UndefOr[Boolean] = js.undefined,
     largeThreshold: js.UndefOr[Double] = js.undefined,
     lineStyle: ShadowColor = null,
-    markArea: AnimationEasingUpdate = null,
-    markLine: AnimationEasing = null,
-    markPoint: AnimationDurationUpdate = null,
+    markArea: AnimationThreshold = null,
+    markLine: AnimationEasingUpdate = null,
+    markPoint: AnimationEasing = null,
     name: String = null,
     polyline: js.UndefOr[Boolean] = js.undefined,
     progressive: js.UndefOr[Double] = js.undefined,

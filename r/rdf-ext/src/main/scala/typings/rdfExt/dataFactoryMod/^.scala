@@ -43,7 +43,7 @@ object ^ extends js.Object {
   def graph(quads: js.Any): DatasetExt = js.native
   def literal(value: String): LiteralExt = js.native
   def literal(value: String, languageOrDatatype: String): LiteralExt = js.native
-  def literal(value: String, languageOrDatatype: NamedNode): LiteralExt = js.native
+  def literal(value: String, languageOrDatatype: NamedNode[String]): LiteralExt = js.native
   def namedNode(value: String): NamedNodeExt = js.native
   def prefixMap(prefixes: Prefixes): typings.rdfExt.prefixMapMod.^ = js.native
   def quad(subject: QuadSubject, predicate: QuadPredicate, `object`: QuadObject): QuadExt = js.native

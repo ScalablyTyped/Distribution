@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 - typings.babelTypes.mod._Node because Already inherited */ trait RecordExpression_
   extends Expression
      with BaseNode {
-  var properties: js.Array[ObjectProperty_ | ObjectMethod_ | SpreadElement_]
+  var properties: js.Array[ObjectProperty_ | SpreadElement_]
   @JSName("type")
   var type_RecordExpression_ : RecordExpression
 }
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 object RecordExpression_ {
   @scala.inline
   def apply(
-    properties: js.Array[ObjectProperty_ | ObjectMethod_ | SpreadElement_],
+    properties: js.Array[ObjectProperty_ | SpreadElement_],
     `type`: RecordExpression,
     end: Double = null.asInstanceOf[Double],
     innerComments: js.Array[Comment] = null,

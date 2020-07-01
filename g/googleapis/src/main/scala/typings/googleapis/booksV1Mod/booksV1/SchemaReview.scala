@@ -1,7 +1,7 @@
 package typings.googleapis.booksV1Mod.booksV1
 
-import typings.googleapis.AnonDisplayNameString
-import typings.googleapis.AnonExtraDescription
+import typings.googleapis.anon.DisplayNameString
+import typings.googleapis.anon.ExtraDescription
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait SchemaReview extends js.Object {
   /**
     * Author of this review.
     */
-  var author: js.UndefOr[AnonDisplayNameString] = js.native
+  var author: js.UndefOr[DisplayNameString] = js.native
   /**
     * Review text.
     */
@@ -37,7 +37,7 @@ trait SchemaReview extends js.Object {
     * Information regarding the source of this review, when the review is not
     * from a Google Books user.
     */
-  var source: js.UndefOr[AnonExtraDescription] = js.native
+  var source: js.UndefOr[ExtraDescription] = js.native
   /**
     * Title for this review.
     */
@@ -56,13 +56,13 @@ trait SchemaReview extends js.Object {
 object SchemaReview {
   @scala.inline
   def apply(
-    author: AnonDisplayNameString = null,
+    author: DisplayNameString = null,
     content: String = null,
     date: String = null,
     fullTextUrl: String = null,
     kind: String = null,
     rating: String = null,
-    source: AnonExtraDescription = null,
+    source: ExtraDescription = null,
     title: String = null,
     `type`: String = null,
     volumeId: String = null

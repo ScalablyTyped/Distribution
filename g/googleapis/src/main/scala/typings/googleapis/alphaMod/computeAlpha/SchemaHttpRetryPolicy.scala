@@ -44,12 +44,12 @@ trait SchemaHttpRetryPolicy extends js.Object {
 object SchemaHttpRetryPolicy {
   @scala.inline
   def apply(
-    numRetries: Int | Double = null,
+    numRetries: js.UndefOr[Double] = js.undefined,
     perTryTimeout: SchemaDuration = null,
     retryConditions: js.Array[String] = null
   ): SchemaHttpRetryPolicy = {
     val __obj = js.Dynamic.literal()
-    if (numRetries != null) __obj.updateDynamic("numRetries")(numRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined(numRetries)) __obj.updateDynamic("numRetries")(numRetries.get.asInstanceOf[js.Any])
     if (perTryTimeout != null) __obj.updateDynamic("perTryTimeout")(perTryTimeout.asInstanceOf[js.Any])
     if (retryConditions != null) __obj.updateDynamic("retryConditions")(retryConditions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHttpRetryPolicy]

@@ -12,7 +12,7 @@ trait Empty[Finite, Tuple /* <: js.Array[_] */, Infinite] extends js.Object {
 
 object Empty {
   @scala.inline
-  def apply[Finite, Tuple, Infinite](empty: Finite, infinite: Infinite, nonEmpty: js.Any): Empty[Finite, Tuple, Infinite] = {
+  def apply[Finite, /* <: js.Array[_] */ Tuple, Infinite](empty: Finite, infinite: Infinite, nonEmpty: js.Any): Empty[Finite, Tuple, Infinite] = {
     val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any], infinite = infinite.asInstanceOf[js.Any], nonEmpty = nonEmpty.asInstanceOf[js.Any])
     __obj.asInstanceOf[Empty[Finite, Tuple, Infinite]]
   }

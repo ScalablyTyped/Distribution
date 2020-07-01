@@ -13,6 +13,7 @@ trait GraphProps[N /* <: GraphNode */, L /* <: GraphLink */] extends js.Object {
   var config: js.UndefOr[Partial[GraphConfiguration[N, L]]] = js.undefined
   var data: js.UndefOr[GraphData[N, L]] = js.undefined
   var id: String
+  var onClickGraph: js.UndefOr[js.Function1[/* event */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.undefined
   var onClickLink: js.UndefOr[js.Function2[/* source */ String, /* target */ String, Unit]] = js.undefined
   var onClickNode: js.UndefOr[js.Function1[/* nodeId */ String, Unit]] = js.undefined
   var onDoubleClickNode: js.UndefOr[js.Function1[/* nodeId */ String, Unit]] = js.undefined
@@ -36,10 +37,11 @@ trait GraphProps[N /* <: GraphNode */, L /* <: GraphLink */] extends js.Object {
 
 object GraphProps {
   @scala.inline
-  def apply[N, L](
+  def apply[/* <: typings.reactD3Graph.mod.GraphNode */ N, /* <: typings.reactD3Graph.mod.GraphLink */ L](
     id: String,
     config: Partial[GraphConfiguration[N, L]] = null,
     data: GraphData[N, L] = null,
+    onClickGraph: /* event */ MouseEvent[Element, NativeMouseEvent] => Unit = null,
     onClickLink: (/* source */ String, /* target */ String) => Unit = null,
     onClickNode: /* nodeId */ String => Unit = null,
     onDoubleClickNode: /* nodeId */ String => Unit = null,
@@ -54,6 +56,7 @@ object GraphProps {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (onClickGraph != null) __obj.updateDynamic("onClickGraph")(js.Any.fromFunction1(onClickGraph))
     if (onClickLink != null) __obj.updateDynamic("onClickLink")(js.Any.fromFunction2(onClickLink))
     if (onClickNode != null) __obj.updateDynamic("onClickNode")(js.Any.fromFunction1(onClickNode))
     if (onDoubleClickNode != null) __obj.updateDynamic("onDoubleClickNode")(js.Any.fromFunction1(onDoubleClickNode))

@@ -2,6 +2,7 @@ package typings.mongoose.anon
 
 import typings.mongoose.mod.ClientSession
 import typings.mongoose.mongooseBooleans.`true`
+import typings.mongoose.mongooseStrings.`throw`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +25,7 @@ trait rawResulttrueQueryFindOne extends js.Object {
     */
   var sort: js.UndefOr[js.Any] = js.undefined
   /** overwrites the schema's strict mode option for this update */
-  var strict: js.UndefOr[Boolean | String] = js.undefined
+  var strict: js.UndefOr[Boolean | `throw`] = js.undefined
 }
 
 object rawResulttrueQueryFindOne {
@@ -36,7 +37,7 @@ object rawResulttrueQueryFindOne {
     select: js.Any = null,
     session: ClientSession = null,
     sort: js.Any = null,
-    strict: Boolean | String = null
+    strict: Boolean | `throw` = null
   ): rawResulttrueQueryFindOne = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(maxTimeMS)) __obj.updateDynamic("maxTimeMS")(maxTimeMS.get.asInstanceOf[js.Any])

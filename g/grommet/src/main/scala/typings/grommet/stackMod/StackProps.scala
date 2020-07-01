@@ -13,6 +13,7 @@ import typings.grommet.grommetStrings.right
 import typings.grommet.grommetStrings.top
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
+import typings.grommet.utilsMod.FillType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
 import scala.scalajs.js
@@ -25,7 +26,7 @@ trait StackProps extends js.Object {
   var anchor: js.UndefOr[
     center | left | right | top | bottom | `top-left` | `bottom-left` | `top-right` | `bottom-right`
   ] = js.undefined
-  var fill: js.UndefOr[Boolean] = js.undefined
+  var fill: js.UndefOr[FillType] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var guidingChild: js.UndefOr[Double | first | last] = js.undefined
   var interactiveChild: js.UndefOr[Double | first | last] = js.undefined
@@ -38,7 +39,7 @@ object StackProps {
     a11yTitle: A11yTitleType = null,
     alignSelf: AlignSelfType = null,
     anchor: center | left | right | top | bottom | `top-left` | `bottom-left` | `top-right` | `bottom-right` = null,
-    fill: js.UndefOr[Boolean] = js.undefined,
+    fill: FillType = null,
     gridArea: GridAreaType = null,
     guidingChild: Double | first | last = null,
     interactiveChild: Double | first | last = null,
@@ -48,7 +49,7 @@ object StackProps {
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle.asInstanceOf[js.Any])
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.get.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
     if (guidingChild != null) __obj.updateDynamic("guidingChild")(guidingChild.asInstanceOf[js.Any])
     if (interactiveChild != null) __obj.updateDynamic("interactiveChild")(interactiveChild.asInstanceOf[js.Any])

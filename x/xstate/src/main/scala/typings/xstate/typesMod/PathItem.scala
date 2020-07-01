@@ -14,7 +14,7 @@ trait PathItem[TContext, TEvent /* <: EventObject */] extends js.Object {
 
 object PathItem {
   @scala.inline
-  def apply[TContext, TEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     path: js.Array[Segment[TContext, TEvent]],
     state: State[TContext, TEvent, _, Context[TContext]],
     weight: js.UndefOr[Double] = js.undefined

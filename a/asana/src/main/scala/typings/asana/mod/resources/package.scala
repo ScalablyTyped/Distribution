@@ -14,6 +14,8 @@ package object resources {
   type Tags = typings.asana.mod.resources.Tags_
   type Tasks = typings.asana.mod.resources.Tasks_
   type Teams = typings.asana.mod.resources.Teams_
+  type UserTaskLists = typings.asana.mod.resources.UserTaskLists_
   type Users = typings.asana.mod.resources.Users_
+  type Webhooks = typings.asana.mod.resources.Webhooks_
   type Workspaces = typings.asana.mod.resources.Workspaces_
 }

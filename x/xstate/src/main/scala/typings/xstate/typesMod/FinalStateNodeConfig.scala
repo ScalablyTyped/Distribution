@@ -22,7 +22,7 @@ trait FinalStateNodeConfig[TContext, TEvent /* <: EventObject */] extends Atomic
 
 object FinalStateNodeConfig {
   @scala.inline
-  def apply[TContext, TEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     `type`: `final`,
     activities: SingleOrArray[Activity[TContext, TEvent]] = null,
     after: DelayedTransitions[TContext, TEvent] = null,

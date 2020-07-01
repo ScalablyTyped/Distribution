@@ -33,7 +33,7 @@ trait Options[ConfigType /* <: Config */] extends js.Object {
 
 object Options {
   @scala.inline
-  def apply[ConfigType](cwd: String = null, defaults: ConfigType = null, skipOnFalse: js.UndefOr[Boolean] = js.undefined): Options[ConfigType] = {
+  def apply[/* <: typings.pkgConf.mod.Config */ ConfigType](cwd: String = null, defaults: ConfigType = null, skipOnFalse: js.UndefOr[Boolean] = js.undefined): Options[ConfigType] = {
     val __obj = js.Dynamic.literal()
     if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
     if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])

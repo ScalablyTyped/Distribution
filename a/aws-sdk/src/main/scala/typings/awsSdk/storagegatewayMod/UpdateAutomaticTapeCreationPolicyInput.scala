@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateAutomaticTapeCreationPolicyInput extends js.Object {
   /**
-    *  An automatic tape creation policy consists of a list of automatic tape creation rules. The rules determine when and how to automatically create new tapes. 
+    * An automatic tape creation policy consists of a list of automatic tape creation rules. The rules determine when and how to automatically create new tapes.
     */
   var AutomaticTapeCreationRules: typings.awsSdk.storagegatewayMod.AutomaticTapeCreationRules = js.native
   var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN = js.native

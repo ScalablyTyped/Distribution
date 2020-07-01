@@ -66,7 +66,7 @@ object SchemaGroup {
     nonEditableAliases: js.Array[String] = null
   ): SchemaGroup = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adminCreated)) __obj.updateDynamic("adminCreated")(adminCreated.asInstanceOf[js.Any])
+    if (!js.isUndefined(adminCreated)) __obj.updateDynamic("adminCreated")(adminCreated.get.asInstanceOf[js.Any])
     if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (directMembersCount != null) __obj.updateDynamic("directMembersCount")(directMembersCount.asInstanceOf[js.Any])

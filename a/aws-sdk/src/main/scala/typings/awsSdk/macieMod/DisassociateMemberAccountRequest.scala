@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DisassociateMemberAccountRequest extends js.Object {
   /**
-    * The ID of the member account that you want to remove from Amazon Macie.
+    * The ID of the member account that you want to remove from Amazon Macie Classic.
     */
   var memberAccountId: AWSAccountId = js.native
 }

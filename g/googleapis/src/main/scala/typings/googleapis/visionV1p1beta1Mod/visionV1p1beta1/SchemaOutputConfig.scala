@@ -28,9 +28,9 @@ trait SchemaOutputConfig extends js.Object {
 
 object SchemaOutputConfig {
   @scala.inline
-  def apply(batchSize: Int | Double = null, gcsDestination: SchemaGcsDestination = null): SchemaOutputConfig = {
+  def apply(batchSize: js.UndefOr[Double] = js.undefined, gcsDestination: SchemaGcsDestination = null): SchemaOutputConfig = {
     val __obj = js.Dynamic.literal()
-    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
     if (gcsDestination != null) __obj.updateDynamic("gcsDestination")(gcsDestination.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOutputConfig]
   }

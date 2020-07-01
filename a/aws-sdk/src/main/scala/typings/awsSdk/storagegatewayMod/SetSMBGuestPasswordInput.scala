@@ -11,7 +11,7 @@ trait SetSMBGuestPasswordInput extends js.Object {
     */
   var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN = js.native
   /**
-    * The password that you want to set for your SMB Server.
+    * The password that you want to set for your SMB server.
     */
   var Password: SMBGuestPassword = js.native
 }

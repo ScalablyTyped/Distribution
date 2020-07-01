@@ -12,7 +12,7 @@ object mod extends js.Object {
     def clear(): this.type = js.native
     def delete(key: String): this.type = js.native
     def evict(): this.type = js.native
-    def get(key: String): T = js.native
+    def get(key: String): js.UndefOr[T] = js.native
     def has(key: String): Boolean = js.native
     def keys(): js.Array[String] = js.native
     def set(key: String, value: T): this.type = js.native

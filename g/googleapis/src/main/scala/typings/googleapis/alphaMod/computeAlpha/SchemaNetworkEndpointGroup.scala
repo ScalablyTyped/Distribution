@@ -97,7 +97,7 @@ object SchemaNetworkEndpointGroup {
   def apply(
     annotations: StringDictionary[String] = null,
     creationTimestamp: String = null,
-    defaultPort: Int | Double = null,
+    defaultPort: js.UndefOr[Double] = js.undefined,
     description: String = null,
     id: String = null,
     kind: String = null,
@@ -107,7 +107,7 @@ object SchemaNetworkEndpointGroup {
     networkEndpointType: String = null,
     selfLink: String = null,
     selfLinkWithId: String = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     subnetwork: String = null,
     `type`: String = null,
     zone: String = null
@@ -115,7 +115,7 @@ object SchemaNetworkEndpointGroup {
     val __obj = js.Dynamic.literal()
     if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
     if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
-    if (defaultPort != null) __obj.updateDynamic("defaultPort")(defaultPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultPort)) __obj.updateDynamic("defaultPort")(defaultPort.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
@@ -125,7 +125,7 @@ object SchemaNetworkEndpointGroup {
     if (networkEndpointType != null) __obj.updateDynamic("networkEndpointType")(networkEndpointType.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     if (selfLinkWithId != null) __obj.updateDynamic("selfLinkWithId")(selfLinkWithId.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])

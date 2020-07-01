@@ -1,9 +1,9 @@
 package typings.echarts.echarts.EChartOption.SeriesMap
 
 import typings.echarts.anon.AreaColorBorderType
-import typings.echarts.anon.ExtraCssText
 import typings.echarts.anon.ItemStyleAreaColor
 import typings.echarts.anon.Rotate
+import typings.echarts.echarts.EChartOption.BaseTooltip
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,7 +53,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.data.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
   /**
     * The numerical value of this area.
     *
@@ -71,7 +71,7 @@ object DataObject {
     label: Rotate = null,
     name: String = null,
     selected: js.UndefOr[Boolean] = js.undefined,
-    tooltip: ExtraCssText = null,
+    tooltip: BaseTooltip = null,
     value: js.UndefOr[Double] = js.undefined
   ): DataObject = {
     val __obj = js.Dynamic.literal()

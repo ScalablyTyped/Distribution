@@ -39,15 +39,15 @@ object SchemaIosVersion {
   @scala.inline
   def apply(
     id: String = null,
-    majorVersion: Int | Double = null,
-    minorVersion: Int | Double = null,
+    majorVersion: js.UndefOr[Double] = js.undefined,
+    minorVersion: js.UndefOr[Double] = js.undefined,
     supportedXcodeVersionIds: js.Array[String] = null,
     tags: js.Array[String] = null
   ): SchemaIosVersion = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (majorVersion != null) __obj.updateDynamic("majorVersion")(majorVersion.asInstanceOf[js.Any])
-    if (minorVersion != null) __obj.updateDynamic("minorVersion")(minorVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(majorVersion)) __obj.updateDynamic("majorVersion")(majorVersion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minorVersion)) __obj.updateDynamic("minorVersion")(minorVersion.get.asInstanceOf[js.Any])
     if (supportedXcodeVersionIds != null) __obj.updateDynamic("supportedXcodeVersionIds")(supportedXcodeVersionIds.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIosVersion]

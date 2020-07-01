@@ -89,7 +89,7 @@ trait NodeView[S /* <: Schema[_, _] */] extends js.Object {
 
 object NodeView {
   @scala.inline
-  def apply[S](
+  def apply[/* <: typings.prosemirrorModel.mod.Schema[_, _] */ S](
     contentDOM: js.UndefOr[Null | Node] = js.undefined,
     deselectNode: js.UndefOr[Null | (() => Unit)] = js.undefined,
     destroy: js.UndefOr[Null | (() => Unit)] = js.undefined,

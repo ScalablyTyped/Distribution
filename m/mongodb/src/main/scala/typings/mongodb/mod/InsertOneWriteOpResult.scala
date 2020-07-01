@@ -16,7 +16,7 @@ trait InsertOneWriteOpResult[TSchema /* <: `2` */] extends js.Object {
 
 object InsertOneWriteOpResult {
   @scala.inline
-  def apply[TSchema](
+  def apply[/* <: typings.mongodb.anon.`2` */ TSchema](
     connection: js.Any,
     insertedCount: scala.Double,
     insertedId: /* import warning: importer.ImportType#apply Failed type conversion: TSchema['_id'] */ js.Any,

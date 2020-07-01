@@ -11,7 +11,7 @@ trait Raw[T /* <: Commit[String | Double | js.Symbol] */] extends js.Object {
 
 object Raw {
   @scala.inline
-  def apply[T](raw: T): Raw[T] = {
+  def apply[/* <: typings.conventionalCommitsParser.mod.Commit[java.lang.String | scala.Double | js.Symbol] */ T](raw: T): Raw[T] = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[Raw[T]]
   }

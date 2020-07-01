@@ -80,7 +80,7 @@ object SchemaEphemeralIdRegistration {
     beaconIdentityKey: String = null,
     initialClockValue: String = null,
     initialEid: String = null,
-    rotationPeriodExponent: Int | Double = null,
+    rotationPeriodExponent: js.UndefOr[Double] = js.undefined,
     serviceEcdhPublicKey: String = null
   ): SchemaEphemeralIdRegistration = {
     val __obj = js.Dynamic.literal()
@@ -88,7 +88,7 @@ object SchemaEphemeralIdRegistration {
     if (beaconIdentityKey != null) __obj.updateDynamic("beaconIdentityKey")(beaconIdentityKey.asInstanceOf[js.Any])
     if (initialClockValue != null) __obj.updateDynamic("initialClockValue")(initialClockValue.asInstanceOf[js.Any])
     if (initialEid != null) __obj.updateDynamic("initialEid")(initialEid.asInstanceOf[js.Any])
-    if (rotationPeriodExponent != null) __obj.updateDynamic("rotationPeriodExponent")(rotationPeriodExponent.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotationPeriodExponent)) __obj.updateDynamic("rotationPeriodExponent")(rotationPeriodExponent.get.asInstanceOf[js.Any])
     if (serviceEcdhPublicKey != null) __obj.updateDynamic("serviceEcdhPublicKey")(serviceEcdhPublicKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEphemeralIdRegistration]
   }

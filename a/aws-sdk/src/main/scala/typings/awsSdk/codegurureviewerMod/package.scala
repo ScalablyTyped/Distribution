@@ -36,6 +36,7 @@ package object codegurureviewerMod {
     - typings.awsSdk.awsSdkStrings.CodeCommit_
     - typings.awsSdk.awsSdkStrings.GitHub_
     - typings.awsSdk.awsSdkStrings.Bitbucket_
+    - typings.awsSdk.awsSdkStrings.GitHubEnterpriseServer
     - java.lang.String
   */
   type ProviderType = typings.awsSdk.codegurureviewerMod._ProviderType | java.lang.String

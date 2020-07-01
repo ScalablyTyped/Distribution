@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "graphql-playground-html" : "1.6.19"
+      "graphql-playground-html" : "1.6.25"
     }
   ],
   "test-dependencies" : [
     {
-      "graphql-playground-html" : "1.6.19"
+      "graphql-playground-html" : "1.6.25"
     }
   ],
   "compile-devDependencies" : [

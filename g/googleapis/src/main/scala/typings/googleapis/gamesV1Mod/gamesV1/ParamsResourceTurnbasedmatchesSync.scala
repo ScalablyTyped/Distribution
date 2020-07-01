@@ -53,8 +53,8 @@ object ParamsResourceTurnbasedmatchesSync {
     includeMatchData: js.UndefOr[Boolean] = js.undefined,
     key: String = null,
     language: String = null,
-    maxCompletedMatches: Int | Double = null,
-    maxResults: Int | Double = null,
+    maxCompletedMatches: js.UndefOr[Double] = js.undefined,
+    maxResults: js.UndefOr[Double] = js.undefined,
     oauth_token: String = null,
     pageToken: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
@@ -65,14 +65,14 @@ object ParamsResourceTurnbasedmatchesSync {
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeMatchData)) __obj.updateDynamic("includeMatchData")(includeMatchData.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeMatchData)) __obj.updateDynamic("includeMatchData")(includeMatchData.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (maxCompletedMatches != null) __obj.updateDynamic("maxCompletedMatches")(maxCompletedMatches.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxCompletedMatches)) __obj.updateDynamic("maxCompletedMatches")(maxCompletedMatches.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceTurnbasedmatchesSync]

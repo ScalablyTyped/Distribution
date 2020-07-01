@@ -23,7 +23,7 @@ trait BasePostRevision[T /* <: Context */] extends BaseResponse {
 
 object BasePostRevision {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.wordpressApiFetch.mod.Schema.Context */ T](
     _links: Record[String, js.Array[Dictk]],
     author: Double,
     content: Contextual[T, js.Object, js.Object],

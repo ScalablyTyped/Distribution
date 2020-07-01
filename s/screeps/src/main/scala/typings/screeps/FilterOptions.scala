@@ -11,7 +11,7 @@ trait FilterOptions[T /* <: FindConstant */] extends js.Object {
 
 object FilterOptions {
   @scala.inline
-  def apply[T](filter: FilterFunction[T] | FilterObject | String): FilterOptions[T] = {
+  def apply[/* <: typings.screeps.FindConstant */ T](filter: FilterFunction[T] | FilterObject | String): FilterOptions[T] = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterOptions[T]]
   }

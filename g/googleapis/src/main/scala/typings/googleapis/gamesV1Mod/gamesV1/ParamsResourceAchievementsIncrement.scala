@@ -42,7 +42,7 @@ object ParamsResourceAchievementsIncrement {
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
     quotaUser: String = null,
     requestId: String = null,
-    stepsToIncrement: Int | Double = null,
+    stepsToIncrement: js.UndefOr[Double] = js.undefined,
     userIp: String = null
   ): ParamsResourceAchievementsIncrement = {
     val __obj = js.Dynamic.literal()
@@ -52,10 +52,10 @@ object ParamsResourceAchievementsIncrement {
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
-    if (stepsToIncrement != null) __obj.updateDynamic("stepsToIncrement")(stepsToIncrement.asInstanceOf[js.Any])
+    if (!js.isUndefined(stepsToIncrement)) __obj.updateDynamic("stepsToIncrement")(stepsToIncrement.get.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceAchievementsIncrement]
   }

@@ -32,6 +32,10 @@ trait JobOptions extends js.Object {
     */
   var lifo: js.UndefOr[Boolean] = js.undefined
   /**
+    * Prevents JSON data from being parsed.
+    */
+  var preventParsingData: js.UndefOr[Boolean] = js.undefined
+  /**
     * Optional priority value. ranges from 1 (highest priority) to MAX_INT  (lowest priority).
     * Note that using priorities has a slight impact on performance, so do not use it if not required
     */
@@ -70,6 +74,7 @@ object JobOptions {
     delay: js.UndefOr[Double] = js.undefined,
     jobId: JobId = null,
     lifo: js.UndefOr[Boolean] = js.undefined,
+    preventParsingData: js.UndefOr[Boolean] = js.undefined,
     priority: js.UndefOr[Double] = js.undefined,
     removeOnComplete: Boolean | Double = null,
     removeOnFail: Boolean | Double = null,
@@ -83,6 +88,7 @@ object JobOptions {
     if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
     if (!js.isUndefined(lifo)) __obj.updateDynamic("lifo")(lifo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventParsingData)) __obj.updateDynamic("preventParsingData")(preventParsingData.get.asInstanceOf[js.Any])
     if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     if (removeOnComplete != null) __obj.updateDynamic("removeOnComplete")(removeOnComplete.asInstanceOf[js.Any])
     if (removeOnFail != null) __obj.updateDynamic("removeOnFail")(removeOnFail.asInstanceOf[js.Any])

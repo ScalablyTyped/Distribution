@@ -71,11 +71,11 @@ object SchemaNodeType {
     creationTimestamp: String = null,
     deprecated: SchemaDeprecationStatus = null,
     description: String = null,
-    guestCpus: Int | Double = null,
+    guestCpus: js.UndefOr[Double] = js.undefined,
     id: String = null,
     kind: String = null,
-    localSsdGb: Int | Double = null,
-    memoryMb: Int | Double = null,
+    localSsdGb: js.UndefOr[Double] = js.undefined,
+    memoryMb: js.UndefOr[Double] = js.undefined,
     name: String = null,
     selfLink: String = null,
     zone: String = null
@@ -85,11 +85,11 @@ object SchemaNodeType {
     if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
     if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (guestCpus != null) __obj.updateDynamic("guestCpus")(guestCpus.asInstanceOf[js.Any])
+    if (!js.isUndefined(guestCpus)) __obj.updateDynamic("guestCpus")(guestCpus.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (localSsdGb != null) __obj.updateDynamic("localSsdGb")(localSsdGb.asInstanceOf[js.Any])
-    if (memoryMb != null) __obj.updateDynamic("memoryMb")(memoryMb.asInstanceOf[js.Any])
+    if (!js.isUndefined(localSsdGb)) __obj.updateDynamic("localSsdGb")(localSsdGb.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(memoryMb)) __obj.updateDynamic("memoryMb")(memoryMb.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])

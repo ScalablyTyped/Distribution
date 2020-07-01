@@ -46,7 +46,7 @@ object SchemaInvideoPromotion {
     if (defaultTiming != null) __obj.updateDynamic("defaultTiming")(defaultTiming.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSmartTiming)) __obj.updateDynamic("useSmartTiming")(useSmartTiming.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSmartTiming)) __obj.updateDynamic("useSmartTiming")(useSmartTiming.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInvideoPromotion]
   }
 }

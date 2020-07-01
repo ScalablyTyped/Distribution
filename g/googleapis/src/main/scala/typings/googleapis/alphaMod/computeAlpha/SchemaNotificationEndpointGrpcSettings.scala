@@ -40,13 +40,13 @@ object SchemaNotificationEndpointGrpcSettings {
     authority: String = null,
     endpoint: String = null,
     payloadName: String = null,
-    retryDurationSec: Int | Double = null
+    retryDurationSec: js.UndefOr[Double] = js.undefined
   ): SchemaNotificationEndpointGrpcSettings = {
     val __obj = js.Dynamic.literal()
     if (authority != null) __obj.updateDynamic("authority")(authority.asInstanceOf[js.Any])
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
     if (payloadName != null) __obj.updateDynamic("payloadName")(payloadName.asInstanceOf[js.Any])
-    if (retryDurationSec != null) __obj.updateDynamic("retryDurationSec")(retryDurationSec.asInstanceOf[js.Any])
+    if (!js.isUndefined(retryDurationSec)) __obj.updateDynamic("retryDurationSec")(retryDurationSec.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNotificationEndpointGrpcSettings]
   }
 }

@@ -11,7 +11,7 @@ trait PutNotificationConfigurationType extends js.Object {
     */
   var AutoScalingGroupName: ResourceName = js.native
   /**
-    * The type of event that causes the notification to be sent. For more information about notification types supported by Amazon EC2 Auto Scaling, see DescribeAutoScalingNotificationTypes.
+    * The type of event that causes the notification to be sent. To query the notification types supported by Amazon EC2 Auto Scaling, call the DescribeAutoScalingNotificationTypes API.
     */
   var NotificationTypes: AutoScalingNotificationTypes = js.native
   /**

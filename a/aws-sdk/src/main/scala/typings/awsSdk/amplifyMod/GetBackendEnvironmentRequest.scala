@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetBackendEnvironmentRequest extends js.Object {
   /**
-    *  Unique Id for an Amplify App. 
+    *  The unique id for an Amplify app. 
     */
   var appId: AppId = js.native
   /**
-    *  Name for the backend environment. 
+    *  The name for the backend environment. 
     */
   var environmentName: EnvironmentName = js.native
 }

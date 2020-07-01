@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateBatchInferenceJobRequest extends js.Object {
   /**
+    * The ARN of the filter to apply to the batch inference job. For more information on using filters, see Using Filters with Amazon Personalize.
+    */
+  var filterArn: js.UndefOr[Arn] = js.native
+  /**
     * The Amazon S3 path that leads to the input file to base your recommendations on. The input material must be in JSON format.
     */
   var jobInput: BatchInferenceJobInput = js.native
@@ -40,9 +44,11 @@ object CreateBatchInferenceJobRequest {
     jobOutput: BatchInferenceJobOutput,
     roleArn: RoleArn,
     solutionVersionArn: Arn,
+    filterArn: Arn = null,
     numResults: js.UndefOr[NumBatchResults] = js.undefined
   ): CreateBatchInferenceJobRequest = {
     val __obj = js.Dynamic.literal(jobInput = jobInput.asInstanceOf[js.Any], jobName = jobName.asInstanceOf[js.Any], jobOutput = jobOutput.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], solutionVersionArn = solutionVersionArn.asInstanceOf[js.Any])
+    if (filterArn != null) __obj.updateDynamic("filterArn")(filterArn.asInstanceOf[js.Any])
     if (!js.isUndefined(numResults)) __obj.updateDynamic("numResults")(numResults.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBatchInferenceJobRequest]
   }

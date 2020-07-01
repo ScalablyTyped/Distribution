@@ -48,7 +48,7 @@ trait editableValueEventMap[V, SP /* <: editableValueSettableProperties[V, SV, R
 
 object editableValueEventMap {
   @scala.inline
-  def apply[V, SP, SV, RV](
+  def apply[V, /* <: typings.oracleOraclejet.ojeditablevalueMod.editableValueSettableProperties[V, SV, RV] */ SP, SV, RV](
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,

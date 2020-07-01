@@ -1,6 +1,6 @@
 package typings.googleapis.calendarV3Mod.calendarV3
 
-import typings.googleapis.AnonValue
+import typings.googleapis.anon.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +35,7 @@ trait SchemaAclRule extends js.Object {
   /**
     * The scope of the rule.
     */
-  var scope: js.UndefOr[AnonValue] = js.native
+  var scope: js.UndefOr[Value] = js.native
 }
 
 object SchemaAclRule {
@@ -45,7 +45,7 @@ object SchemaAclRule {
     id: String = null,
     kind: String = null,
     role: String = null,
-    scope: AnonValue = null
+    scope: Value = null
   ): SchemaAclRule = {
     val __obj = js.Dynamic.literal()
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("antd/lib/select/utils/iconUtil", JSImport.Namespace)
 @js.native
 object iconUtilMod extends js.Object {
-  def default(hasSuffixIconClearIconMenuItemSelectedIconRemoveIconLoadingMultiple: ClearIcon): ItemIcon = js.native
+  def default(hasSuffixIconClearIconMenuItemSelectedIconRemoveIconLoadingMultiplePrefixCls: ClearIcon): ItemIcon = js.native
 }
 

@@ -22,11 +22,15 @@ trait SchemaLayersummaries extends js.Object {
 
 object SchemaLayersummaries {
   @scala.inline
-  def apply(items: js.Array[SchemaLayersummary] = null, kind: String = null, totalItems: Int | Double = null): SchemaLayersummaries = {
+  def apply(
+    items: js.Array[SchemaLayersummary] = null,
+    kind: String = null,
+    totalItems: js.UndefOr[Double] = js.undefined
+  ): SchemaLayersummaries = {
     val __obj = js.Dynamic.literal()
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (totalItems != null) __obj.updateDynamic("totalItems")(totalItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalItems)) __obj.updateDynamic("totalItems")(totalItems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLayersummaries]
   }
 }

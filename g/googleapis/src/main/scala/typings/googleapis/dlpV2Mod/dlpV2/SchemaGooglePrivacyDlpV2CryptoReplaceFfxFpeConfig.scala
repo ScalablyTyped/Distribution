@@ -84,7 +84,7 @@ object SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfig {
     context: SchemaGooglePrivacyDlpV2FieldId = null,
     cryptoKey: SchemaGooglePrivacyDlpV2CryptoKey = null,
     customAlphabet: String = null,
-    radix: Int | Double = null,
+    radix: js.UndefOr[Double] = js.undefined,
     surrogateInfoType: SchemaGooglePrivacyDlpV2InfoType = null
   ): SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfig = {
     val __obj = js.Dynamic.literal()
@@ -92,7 +92,7 @@ object SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfig {
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (cryptoKey != null) __obj.updateDynamic("cryptoKey")(cryptoKey.asInstanceOf[js.Any])
     if (customAlphabet != null) __obj.updateDynamic("customAlphabet")(customAlphabet.asInstanceOf[js.Any])
-    if (radix != null) __obj.updateDynamic("radix")(radix.asInstanceOf[js.Any])
+    if (!js.isUndefined(radix)) __obj.updateDynamic("radix")(radix.get.asInstanceOf[js.Any])
     if (surrogateInfoType != null) __obj.updateDynamic("surrogateInfoType")(surrogateInfoType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfig]
   }

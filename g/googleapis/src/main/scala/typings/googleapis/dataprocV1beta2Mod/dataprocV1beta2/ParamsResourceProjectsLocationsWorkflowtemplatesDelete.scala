@@ -44,7 +44,7 @@ object ParamsResourceProjectsLocationsWorkflowtemplatesDelete {
     quotaUser: String = null,
     uploadType: String = null,
     upload_protocol: String = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): ParamsResourceProjectsLocationsWorkflowtemplatesDelete = {
     val __obj = js.Dynamic.literal()
     if ($Dotxgafv != null) __obj.updateDynamic("$.xgafv")($Dotxgafv.asInstanceOf[js.Any])
@@ -56,11 +56,11 @@ object ParamsResourceProjectsLocationsWorkflowtemplatesDelete {
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])
     if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceProjectsLocationsWorkflowtemplatesDelete]
   }
 }

@@ -12,7 +12,7 @@ trait Values[TRow /* <: js.Object */] extends js.Object {
 
 object Values {
   @scala.inline
-  def apply[TRow](
+  def apply[/* <: js.Object */ TRow](
     values: EditSelectOptionValue | EditCheckboxOptionValue | (js.Function1[/* row */ TRow, EditCheckboxOptionValue | EditSelectOptionValue])
   ): Values[TRow] = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])

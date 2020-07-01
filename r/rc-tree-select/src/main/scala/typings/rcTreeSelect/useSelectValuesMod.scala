@@ -28,8 +28,10 @@ object useSelectValuesMod extends js.Object {
     var value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DefaultValueType */ js.Any = js.native
     def getEntityByKey(key: Key): FlattenDataNode = js.native
     def getEntityByKey(key: Key, skipType: SkipType): FlattenDataNode = js.native
+    def getEntityByKey(key: Key, skipType: SkipType, ignoreDisabledCheck: Boolean): FlattenDataNode = js.native
     def getEntityByValue(value: RawValueType): FlattenDataNode = js.native
     def getEntityByValue(value: RawValueType, skipType: SkipType): FlattenDataNode = js.native
+    def getEntityByValue(value: RawValueType, skipType: SkipType, ignoreDisabledCheck: Boolean): FlattenDataNode = js.native
     def getLabelProp(node: DataNode): ReactNode = js.native
   }
   

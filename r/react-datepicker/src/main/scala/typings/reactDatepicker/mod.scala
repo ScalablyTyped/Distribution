@@ -40,27 +40,34 @@ object mod extends js.Object {
   trait ReactDatePickerProps extends js.Object {
     var adjustDateOnChange: js.UndefOr[Boolean] = js.native
     var allowSameDay: js.UndefOr[Boolean] = js.native
+    var ariaLabelClose: js.UndefOr[String] = js.native
     var ariaLabelledBy: js.UndefOr[String] = js.native
     var autoComplete: js.UndefOr[String] = js.native
     var autoFocus: js.UndefOr[Boolean] = js.native
     var calendarClassName: js.UndefOr[String] = js.native
     var calendarContainer: js.UndefOr[js.Function1[/* props */ Children, ReactNode]] = js.native
     var children: js.UndefOr[ReactNode] = js.native
+    var chooseDayAriaLabelPrefix: js.UndefOr[String] = js.native
     var className: js.UndefOr[String] = js.native
     var clearButtonTitle: js.UndefOr[String] = js.native
     var customInput: js.UndefOr[ReactNode] = js.native
     var customInputRef: js.UndefOr[String] = js.native
+    var customTimeInput: js.UndefOr[ReactNode] = js.native
     var dateFormat: js.UndefOr[String | js.Array[String]] = js.native
     var dateFormatCalendar: js.UndefOr[String] = js.native
     var dayClassName: js.UndefOr[js.Function1[/* date */ Date, String | Null]] = js.native
     var disabled: js.UndefOr[Boolean] = js.native
+    var disabledDayAriaLabelPrefix: js.UndefOr[String] = js.native
     var disabledKeyboardNavigation: js.UndefOr[Boolean] = js.native
     var dropdownMode: js.UndefOr[scroll | select] = js.native
+    var enableTabLoop: js.UndefOr[Boolean] = js.native
     var endDate: js.UndefOr[Date | Null] = js.native
     var excludeDates: js.UndefOr[js.Array[Date]] = js.native
+    var excludeScrollbar: js.UndefOr[Boolean] = js.native
     var excludeTimes: js.UndefOr[js.Array[Date]] = js.native
     var filterDate: js.UndefOr[js.Function1[/* date */ Date, Boolean]] = js.native
     var fixedHeight: js.UndefOr[Boolean] = js.native
+    var focusSelectedMonth: js.UndefOr[Boolean] = js.native
     var forceShowMonthNavigation: js.UndefOr[Boolean] = js.native
     var formatWeekDay: js.UndefOr[js.Function1[/* formattedDate */ String, String]] = js.native
     var formatWeekNumber: js.UndefOr[js.Function1[/* date */ Date, String | Double]] = js.native
@@ -70,13 +77,13 @@ object mod extends js.Object {
     var includeTimes: js.UndefOr[js.Array[Date]] = js.native
     var injectTimes: js.UndefOr[js.Array[Date]] = js.native
     var `inline`: js.UndefOr[Boolean] = js.native
-    var inlineFocusSelectedMonth: js.UndefOr[Boolean] = js.native
     var isClearable: js.UndefOr[Boolean] = js.native
     var locale: js.UndefOr[String | Locale] = js.native
     var maxDate: js.UndefOr[Date | Null] = js.native
     var maxTime: js.UndefOr[Date] = js.native
     var minDate: js.UndefOr[Date | Null] = js.native
     var minTime: js.UndefOr[Date] = js.native
+    var monthClassName: js.UndefOr[js.Function1[/* date */ Date, String | Null]] = js.native
     var monthsShown: js.UndefOr[Double] = js.native
     var name: js.UndefOr[String] = js.native
     var nextMonthButtonLabel: js.UndefOr[String] = js.native
@@ -114,6 +121,7 @@ object mod extends js.Object {
     var popperModifiers: js.UndefOr[Modifiers] = js.native
     var popperPlacement: js.UndefOr[String] = js.native
     var popperProps: js.UndefOr[js.Object] = js.native
+    var portalId: js.UndefOr[String] = js.native
     var preventOpenOnFocus: js.UndefOr[Boolean] = js.native
     var previousMonthButtonLabel: js.UndefOr[String] = js.native
     var previousYearButtonLabel: js.UndefOr[String] = js.native
@@ -128,6 +136,7 @@ object mod extends js.Object {
     var selectsStart: js.UndefOr[Boolean] = js.native
     var shouldCloseOnSelect: js.UndefOr[Boolean] = js.native
     var showDisabledMonthNavigation: js.UndefOr[Boolean] = js.native
+    var showFullMonthYearPicker: js.UndefOr[Boolean] = js.native
     var showMonthDropdown: js.UndefOr[Boolean] = js.native
     var showMonthYearDropdown: js.UndefOr[Boolean] = js.native
     var showMonthYearPicker: js.UndefOr[Boolean] = js.native
@@ -137,13 +146,16 @@ object mod extends js.Object {
     var showTimeInput: js.UndefOr[Boolean] = js.native
     var showTimeSelect: js.UndefOr[Boolean] = js.native
     var showTimeSelectOnly: js.UndefOr[Boolean] = js.native
+    var showTwoColumnMonthYearPicker: js.UndefOr[Boolean] = js.native
     var showWeekNumbers: js.UndefOr[Boolean] = js.native
     var showYearDropdown: js.UndefOr[Boolean] = js.native
+    var showYearPicker: js.UndefOr[Boolean] = js.native
     var startDate: js.UndefOr[Date | Null] = js.native
     var startOpen: js.UndefOr[Boolean] = js.native
     var strictParsing: js.UndefOr[Boolean] = js.native
     var tabIndex: js.UndefOr[Double] = js.native
     var timeCaption: js.UndefOr[String] = js.native
+    var timeClassName: js.UndefOr[js.Function1[/* date */ Date, String | Null]] = js.native
     var timeFormat: js.UndefOr[String] = js.native
     var timeInputLabel: js.UndefOr[String] = js.native
     var timeIntervals: js.UndefOr[Double] = js.native
@@ -152,6 +164,8 @@ object mod extends js.Object {
     var useShortMonthInDropdown: js.UndefOr[Boolean] = js.native
     var useWeekdaysShort: js.UndefOr[Boolean] = js.native
     var value: js.UndefOr[String] = js.native
+    var weekAriaLabelPrefix: js.UndefOr[String] = js.native
+    var weekDayClassName: js.UndefOr[js.Function1[/* date */ Date, String | Null]] = js.native
     var weekLabel: js.UndefOr[String] = js.native
     var withPortal: js.UndefOr[Boolean] = js.native
     var wrapperClassName: js.UndefOr[String] = js.native
@@ -165,6 +179,7 @@ object mod extends js.Object {
   @js.native
   class default () extends ReactDatePicker
   
+  def CalendarContainer(className: String, children: js.Array[ReactNode], showPopperArrow: Boolean, arrowProps: js.Object): ReactNode = js.native
   def getDefaultLocale(): String = js.native
   def registerLocale(localeName: String, localeData: js.Object): Unit = js.native
   def setDefaultLocale(localeName: String): Unit = js.native

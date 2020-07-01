@@ -27,7 +27,7 @@ trait DescribeProjectVersionsRe extends js.Object {
     */
   var ProjectArn: typings.awsSdk.rekognitionMod.ProjectArn = js.native
   /**
-    * A list of model version names that you want to describe. You can add up to 10 model version names to the list. If you don't specify a value, all model descriptions are returned.
+    * A list of model version names that you want to describe. You can add up to 10 model version names to the list. If you don't specify a value, all model descriptions are returned. A version name is part of a model (ProjectVersion) ARN. For example, my-model.2020-01-21T09.10.15 is the version name in the following ARN. arn:aws:rekognition:us-east-1:123456789012:project/getting-started/version/my-model.2020-01-21T09.10.15/1234567890123.
     */
   var VersionNames: js.UndefOr[typings.awsSdk.rekognitionMod.VersionNames] = js.native
 }

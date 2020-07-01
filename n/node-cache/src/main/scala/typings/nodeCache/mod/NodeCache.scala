@@ -31,6 +31,10 @@ trait NodeCache extends EventEmitter {
   	 */
   def flushAll(): Unit = js.native
   /**
+  	 * flush the stats and reset all counters to 0
+  	 */
+  def flushStats(): Unit = js.native
+  /**
   	 * get a cached key and change the stats
   	 *
   	 * @param key cache key or an array of keys

@@ -65,6 +65,7 @@ object MapPolylineProps {
     accessible: js.UndefOr[Boolean] = js.undefined,
     collapsable: js.UndefOr[Boolean] = js.undefined,
     fillColor: String = null,
+    focusable: js.UndefOr[Boolean] = js.undefined,
     geodesic: js.UndefOr[Boolean] = js.undefined,
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
     hitSlop: Insets = null,
@@ -133,6 +134,7 @@ object MapPolylineProps {
     if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.get.asInstanceOf[js.Any])
     if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable.get.asInstanceOf[js.Any])
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic.get.asInstanceOf[js.Any])
     if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.get.asInstanceOf[js.Any])
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])

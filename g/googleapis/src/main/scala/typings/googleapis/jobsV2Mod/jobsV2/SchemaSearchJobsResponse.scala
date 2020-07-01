@@ -82,7 +82,7 @@ object SchemaSearchJobsResponse {
     matchingJobs: js.Array[SchemaMatchingJob] = null,
     metadata: SchemaResponseMetadata = null,
     nextPageToken: String = null,
-    numJobsFromBroadenedQuery: Int | Double = null,
+    numJobsFromBroadenedQuery: js.UndefOr[Double] = js.undefined,
     spellResult: SchemaSpellingCorrection = null,
     totalSize: String = null
   ): SchemaSearchJobsResponse = {
@@ -95,7 +95,7 @@ object SchemaSearchJobsResponse {
     if (matchingJobs != null) __obj.updateDynamic("matchingJobs")(matchingJobs.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (numJobsFromBroadenedQuery != null) __obj.updateDynamic("numJobsFromBroadenedQuery")(numJobsFromBroadenedQuery.asInstanceOf[js.Any])
+    if (!js.isUndefined(numJobsFromBroadenedQuery)) __obj.updateDynamic("numJobsFromBroadenedQuery")(numJobsFromBroadenedQuery.get.asInstanceOf[js.Any])
     if (spellResult != null) __obj.updateDynamic("spellResult")(spellResult.asInstanceOf[js.Any])
     if (totalSize != null) __obj.updateDynamic("totalSize")(totalSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSearchJobsResponse]

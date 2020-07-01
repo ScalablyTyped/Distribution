@@ -14,12 +14,12 @@ trait TimestampOptions extends js.Object {
     * module or a function that returns a formatted date. If no format is provided `new
     * Date().toISOString()` will be used.
     */
-  var format: js.UndefOr[String] = js.undefined
+  var format: js.UndefOr[String | js.Function0[String]] = js.undefined
 }
 
 object TimestampOptions {
   @scala.inline
-  def apply(alias: String = null, format: String = null): TimestampOptions = {
+  def apply(alias: String = null, format: String | js.Function0[String] = null): TimestampOptions = {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])

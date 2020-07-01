@@ -17,7 +17,7 @@ trait TypeaheadContainerProps[T /* <: TypeaheadModel */] extends js.Object {
 
 object TypeaheadContainerProps {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.reactBootstrapTypeahead.mod.TypeaheadModel */ T](
     isFocused: Boolean,
     selected: js.Array[T],
     showMenu: Boolean,

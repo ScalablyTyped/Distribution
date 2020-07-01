@@ -106,6 +106,16 @@ class ManagementClient[A, U] protected () extends js.Object {
   // Client Grants
   def getClientGrants(): js.Promise[js.Array[ClientGrant]] = js.native
   def getClientGrants(cb: js.Function2[/* err */ Error, /* data */ js.Array[ClientGrant], Unit]): Unit = js.native
+  def getClientGrants(params: GetClientGrantsOptions): js.Promise[js.Array[ClientGrant]] = js.native
+  def getClientGrants(params: GetClientGrantsOptionsPaged): js.Promise[ClientGrantPage] = js.native
+  def getClientGrants(
+    params: GetClientGrantsOptionsPaged,
+    cb: js.Function2[/* err */ Error, /* data */ ClientGrantPage, Unit]
+  ): Unit = js.native
+  def getClientGrants(
+    params: GetClientGrantsOptions,
+    cb: js.Function2[/* err */ Error, /* data */ js.Array[ClientGrant], Unit]
+  ): Unit = js.native
   def getClientInfo(): ClientInfo = js.native
   // Clients
   def getClients(): js.Promise[js.Array[Client]] = js.native

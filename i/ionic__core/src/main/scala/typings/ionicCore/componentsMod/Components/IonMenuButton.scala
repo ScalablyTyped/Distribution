@@ -1,6 +1,8 @@
 package typings.ionicCore.componentsMod.Components
 
 import typings.ionicCore.ionicCoreStrings.button
+import typings.ionicCore.ionicCoreStrings.ios
+import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.ionicCoreStrings.reset
 import typings.ionicCore.ionicCoreStrings.submit
 import typings.ionicCore.mod.Color
@@ -26,6 +28,10 @@ trait IonMenuButton extends js.Object {
     */
   var menu: js.UndefOr[String] = js.undefined
   /**
+    * The mode determines which platform styles to use.
+    */
+  var mode: js.UndefOr[ios | md] = js.undefined
+  /**
     * The type of the button.
     */
   var `type`: submit | reset | button
@@ -38,12 +44,14 @@ object IonMenuButton {
     disabled: Boolean,
     `type`: submit | reset | button,
     color: Color = null,
-    menu: String = null
+    menu: String = null,
+    mode: ios | md = null
   ): IonMenuButton = {
     val __obj = js.Dynamic.literal(autoHide = autoHide.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonMenuButton]
   }
 }

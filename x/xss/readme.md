@@ -1,7 +1,7 @@
 
 # Scala.js typings for xss
 
-Typings are for version 1.0.6
+Typings are for version 1.0.7
 
 ## Library description:
 Sanitize untrusted HTML (to prevent XSS) with a configuration specified by a Whitelist

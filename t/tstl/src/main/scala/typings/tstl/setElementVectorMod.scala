@@ -30,9 +30,9 @@ object setElementVectorMod extends js.Object {
     /**
       * Iterator of set container storing elements in a vector.
       *
-      * @typeParam Key Key type
-      * @typeParam Unique Whether duplicated key is blocked or not
-      * @typeParam Source Source container type
+      * @type Key Key type
+      * @type Unique Whether duplicated key is blocked or not
+      * @type Source Source container type
       *
       * @author Jeongho Nam - https://github.com/samchon
       */
@@ -50,9 +50,9 @@ object setElementVectorMod extends js.Object {
     /**
       * Reverse iterator of set container storing elements in a vector.
       *
-      * @typeParam Key Key type
-      * @typeParam Unique Whether duplicated key is blocked or not
-      * @typeParam Source Source container type
+      * @type Key Key type
+      * @type Unique Whether duplicated key is blocked or not
+      * @type Source Source container type
       *
       * @author Jeongho Nam - https://github.com/samchon
       */

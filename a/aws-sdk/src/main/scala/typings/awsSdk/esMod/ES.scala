@@ -13,6 +13,29 @@ trait ES extends Service {
   @JSName("config")
   var config_ES: ConfigBase with ClientConfiguration = js.native
   /**
+    * Allows the destination domain owner to accept an inbound cross-cluster search connection request.
+    */
+  def acceptInboundCrossClusterSearchConnection(): Request[AcceptInboundCrossClusterSearchConnectionResponse, AWSError] = js.native
+  def acceptInboundCrossClusterSearchConnection(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ AcceptInboundCrossClusterSearchConnectionResponse, 
+      Unit
+    ]
+  ): Request[AcceptInboundCrossClusterSearchConnectionResponse, AWSError] = js.native
+  /**
+    * Allows the destination domain owner to accept an inbound cross-cluster search connection request.
+    */
+  def acceptInboundCrossClusterSearchConnection(params: AcceptInboundCrossClusterSearchConnectionRequest): Request[AcceptInboundCrossClusterSearchConnectionResponse, AWSError] = js.native
+  def acceptInboundCrossClusterSearchConnection(
+    params: AcceptInboundCrossClusterSearchConnectionRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ AcceptInboundCrossClusterSearchConnectionResponse, 
+      Unit
+    ]
+  ): Request[AcceptInboundCrossClusterSearchConnectionResponse, AWSError] = js.native
+  /**
     * Attaches tags to an existing Elasticsearch domain. Tags are a set of case-sensitive key value pairs. An Elasticsearch domain may have up to 10 tags. See  Tagging Amazon Elasticsearch Service Domains for more information.
     */
   def addTags(): Request[js.Object, AWSError] = js.native
@@ -72,6 +95,29 @@ trait ES extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateElasticsearchDomainResponse, Unit]
   ): Request[CreateElasticsearchDomainResponse, AWSError] = js.native
   /**
+    * Creates a new cross-cluster search connection from a source domain to a destination domain.
+    */
+  def createOutboundCrossClusterSearchConnection(): Request[CreateOutboundCrossClusterSearchConnectionResponse, AWSError] = js.native
+  def createOutboundCrossClusterSearchConnection(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ CreateOutboundCrossClusterSearchConnectionResponse, 
+      Unit
+    ]
+  ): Request[CreateOutboundCrossClusterSearchConnectionResponse, AWSError] = js.native
+  /**
+    * Creates a new cross-cluster search connection from a source domain to a destination domain.
+    */
+  def createOutboundCrossClusterSearchConnection(params: CreateOutboundCrossClusterSearchConnectionRequest): Request[CreateOutboundCrossClusterSearchConnectionResponse, AWSError] = js.native
+  def createOutboundCrossClusterSearchConnection(
+    params: CreateOutboundCrossClusterSearchConnectionRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ CreateOutboundCrossClusterSearchConnectionResponse, 
+      Unit
+    ]
+  ): Request[CreateOutboundCrossClusterSearchConnectionResponse, AWSError] = js.native
+  /**
     * Create a package for use with Amazon ES domains.
     */
   def createPackage(): Request[CreatePackageResponse, AWSError] = js.native
@@ -102,6 +148,52 @@ trait ES extends Service {
     */
   def deleteElasticsearchServiceRole(): Request[js.Object, AWSError] = js.native
   def deleteElasticsearchServiceRole(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Allows the destination domain owner to delete an existing inbound cross-cluster search connection.
+    */
+  def deleteInboundCrossClusterSearchConnection(): Request[DeleteInboundCrossClusterSearchConnectionResponse, AWSError] = js.native
+  def deleteInboundCrossClusterSearchConnection(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DeleteInboundCrossClusterSearchConnectionResponse, 
+      Unit
+    ]
+  ): Request[DeleteInboundCrossClusterSearchConnectionResponse, AWSError] = js.native
+  /**
+    * Allows the destination domain owner to delete an existing inbound cross-cluster search connection.
+    */
+  def deleteInboundCrossClusterSearchConnection(params: DeleteInboundCrossClusterSearchConnectionRequest): Request[DeleteInboundCrossClusterSearchConnectionResponse, AWSError] = js.native
+  def deleteInboundCrossClusterSearchConnection(
+    params: DeleteInboundCrossClusterSearchConnectionRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DeleteInboundCrossClusterSearchConnectionResponse, 
+      Unit
+    ]
+  ): Request[DeleteInboundCrossClusterSearchConnectionResponse, AWSError] = js.native
+  /**
+    * Allows the source domain owner to delete an existing outbound cross-cluster search connection.
+    */
+  def deleteOutboundCrossClusterSearchConnection(): Request[DeleteOutboundCrossClusterSearchConnectionResponse, AWSError] = js.native
+  def deleteOutboundCrossClusterSearchConnection(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DeleteOutboundCrossClusterSearchConnectionResponse, 
+      Unit
+    ]
+  ): Request[DeleteOutboundCrossClusterSearchConnectionResponse, AWSError] = js.native
+  /**
+    * Allows the source domain owner to delete an existing outbound cross-cluster search connection.
+    */
+  def deleteOutboundCrossClusterSearchConnection(params: DeleteOutboundCrossClusterSearchConnectionRequest): Request[DeleteOutboundCrossClusterSearchConnectionResponse, AWSError] = js.native
+  def deleteOutboundCrossClusterSearchConnection(
+    params: DeleteOutboundCrossClusterSearchConnectionRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DeleteOutboundCrossClusterSearchConnectionResponse, 
+      Unit
+    ]
+  ): Request[DeleteOutboundCrossClusterSearchConnectionResponse, AWSError] = js.native
   /**
     * Delete the package.
     */
@@ -171,6 +263,52 @@ trait ES extends Service {
     params: DescribeElasticsearchInstanceTypeLimitsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeElasticsearchInstanceTypeLimitsResponse, Unit]
   ): Request[DescribeElasticsearchInstanceTypeLimitsResponse, AWSError] = js.native
+  /**
+    * Lists all the inbound cross-cluster search connections for a destination domain.
+    */
+  def describeInboundCrossClusterSearchConnections(): Request[DescribeInboundCrossClusterSearchConnectionsResponse, AWSError] = js.native
+  def describeInboundCrossClusterSearchConnections(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeInboundCrossClusterSearchConnectionsResponse, 
+      Unit
+    ]
+  ): Request[DescribeInboundCrossClusterSearchConnectionsResponse, AWSError] = js.native
+  /**
+    * Lists all the inbound cross-cluster search connections for a destination domain.
+    */
+  def describeInboundCrossClusterSearchConnections(params: DescribeInboundCrossClusterSearchConnectionsRequest): Request[DescribeInboundCrossClusterSearchConnectionsResponse, AWSError] = js.native
+  def describeInboundCrossClusterSearchConnections(
+    params: DescribeInboundCrossClusterSearchConnectionsRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeInboundCrossClusterSearchConnectionsResponse, 
+      Unit
+    ]
+  ): Request[DescribeInboundCrossClusterSearchConnectionsResponse, AWSError] = js.native
+  /**
+    * Lists all the outbound cross-cluster search connections for a source domain.
+    */
+  def describeOutboundCrossClusterSearchConnections(): Request[DescribeOutboundCrossClusterSearchConnectionsResponse, AWSError] = js.native
+  def describeOutboundCrossClusterSearchConnections(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeOutboundCrossClusterSearchConnectionsResponse, 
+      Unit
+    ]
+  ): Request[DescribeOutboundCrossClusterSearchConnectionsResponse, AWSError] = js.native
+  /**
+    * Lists all the outbound cross-cluster search connections for a source domain.
+    */
+  def describeOutboundCrossClusterSearchConnections(params: DescribeOutboundCrossClusterSearchConnectionsRequest): Request[DescribeOutboundCrossClusterSearchConnectionsResponse, AWSError] = js.native
+  def describeOutboundCrossClusterSearchConnections(
+    params: DescribeOutboundCrossClusterSearchConnectionsRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeOutboundCrossClusterSearchConnectionsResponse, 
+      Unit
+    ]
+  ): Request[DescribeOutboundCrossClusterSearchConnectionsResponse, AWSError] = js.native
   /**
     * Describes all packages available to Amazon ES. Includes options for filtering, limiting the number of results, and pagination.
     */
@@ -371,6 +509,29 @@ trait ES extends Service {
       Unit
     ]
   ): Request[PurchaseReservedElasticsearchInstanceOfferingResponse, AWSError] = js.native
+  /**
+    * Allows the destination domain owner to reject an inbound cross-cluster search connection request.
+    */
+  def rejectInboundCrossClusterSearchConnection(): Request[RejectInboundCrossClusterSearchConnectionResponse, AWSError] = js.native
+  def rejectInboundCrossClusterSearchConnection(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ RejectInboundCrossClusterSearchConnectionResponse, 
+      Unit
+    ]
+  ): Request[RejectInboundCrossClusterSearchConnectionResponse, AWSError] = js.native
+  /**
+    * Allows the destination domain owner to reject an inbound cross-cluster search connection request.
+    */
+  def rejectInboundCrossClusterSearchConnection(params: RejectInboundCrossClusterSearchConnectionRequest): Request[RejectInboundCrossClusterSearchConnectionResponse, AWSError] = js.native
+  def rejectInboundCrossClusterSearchConnection(
+    params: RejectInboundCrossClusterSearchConnectionRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ RejectInboundCrossClusterSearchConnectionResponse, 
+      Unit
+    ]
+  ): Request[RejectInboundCrossClusterSearchConnectionResponse, AWSError] = js.native
   /**
     * Removes the specified set of tags from the specified Elasticsearch domain.
     */

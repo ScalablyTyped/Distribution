@@ -45,19 +45,19 @@ object SchemaBackendRule {
   @scala.inline
   def apply(
     address: String = null,
-    deadline: Int | Double = null,
+    deadline: js.UndefOr[Double] = js.undefined,
     jwtAudience: String = null,
-    minDeadline: Int | Double = null,
-    operationDeadline: Int | Double = null,
+    minDeadline: js.UndefOr[Double] = js.undefined,
+    operationDeadline: js.UndefOr[Double] = js.undefined,
     pathTranslation: String = null,
     selector: String = null
   ): SchemaBackendRule = {
     val __obj = js.Dynamic.literal()
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (deadline != null) __obj.updateDynamic("deadline")(deadline.asInstanceOf[js.Any])
+    if (!js.isUndefined(deadline)) __obj.updateDynamic("deadline")(deadline.get.asInstanceOf[js.Any])
     if (jwtAudience != null) __obj.updateDynamic("jwtAudience")(jwtAudience.asInstanceOf[js.Any])
-    if (minDeadline != null) __obj.updateDynamic("minDeadline")(minDeadline.asInstanceOf[js.Any])
-    if (operationDeadline != null) __obj.updateDynamic("operationDeadline")(operationDeadline.asInstanceOf[js.Any])
+    if (!js.isUndefined(minDeadline)) __obj.updateDynamic("minDeadline")(minDeadline.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(operationDeadline)) __obj.updateDynamic("operationDeadline")(operationDeadline.get.asInstanceOf[js.Any])
     if (pathTranslation != null) __obj.updateDynamic("pathTranslation")(pathTranslation.asInstanceOf[js.Any])
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBackendRule]

@@ -90,9 +90,9 @@ object SchemaAndroidModel {
     lowFpsVideoRecording: js.UndefOr[Boolean] = js.undefined,
     manufacturer: String = null,
     name: String = null,
-    screenDensity: Int | Double = null,
-    screenX: Int | Double = null,
-    screenY: Int | Double = null,
+    screenDensity: js.UndefOr[Double] = js.undefined,
+    screenX: js.UndefOr[Double] = js.undefined,
+    screenY: js.UndefOr[Double] = js.undefined,
     supportedAbis: js.Array[String] = null,
     supportedVersionIds: js.Array[String] = null,
     tags: js.Array[String] = null
@@ -103,12 +103,12 @@ object SchemaAndroidModel {
     if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
     if (formFactor != null) __obj.updateDynamic("formFactor")(formFactor.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(lowFpsVideoRecording)) __obj.updateDynamic("lowFpsVideoRecording")(lowFpsVideoRecording.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowFpsVideoRecording)) __obj.updateDynamic("lowFpsVideoRecording")(lowFpsVideoRecording.get.asInstanceOf[js.Any])
     if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (screenDensity != null) __obj.updateDynamic("screenDensity")(screenDensity.asInstanceOf[js.Any])
-    if (screenX != null) __obj.updateDynamic("screenX")(screenX.asInstanceOf[js.Any])
-    if (screenY != null) __obj.updateDynamic("screenY")(screenY.asInstanceOf[js.Any])
+    if (!js.isUndefined(screenDensity)) __obj.updateDynamic("screenDensity")(screenDensity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(screenX)) __obj.updateDynamic("screenX")(screenX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(screenY)) __obj.updateDynamic("screenY")(screenY.get.asInstanceOf[js.Any])
     if (supportedAbis != null) __obj.updateDynamic("supportedAbis")(supportedAbis.asInstanceOf[js.Any])
     if (supportedVersionIds != null) __obj.updateDynamic("supportedVersionIds")(supportedVersionIds.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

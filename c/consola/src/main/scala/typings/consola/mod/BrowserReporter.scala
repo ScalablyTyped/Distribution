@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class BrowserReporter () extends ConsolaReporter {
   /* CompleteClass */
-  override def log(logObj: ConsolaLogObject, args: ConsolaReporterArgs): Unit = js.native
+  override def log(logObj: ConsolaReporterLogObject, args: ConsolaReporterArgs): Unit = js.native
 }
 

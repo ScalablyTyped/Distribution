@@ -106,7 +106,7 @@ object SchemaAsset {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (formats != null) __obj.updateDynamic("formats")(formats.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCurated)) __obj.updateDynamic("isCurated")(isCurated.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCurated)) __obj.updateDynamic("isCurated")(isCurated.get.asInstanceOf[js.Any])
     if (license != null) __obj.updateDynamic("license")(license.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

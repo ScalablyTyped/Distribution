@@ -36,6 +36,7 @@ class FormStore protected () extends js.Object {
   var isFieldsValidating: js.Any = js.native
   var lastValidatePromise: js.Any = js.native
   var notifyObservers: js.Any = js.native
+  var preserve: js.UndefOr[js.Any] = js.native
   var registerField: js.Any = js.native
   var resetFields: js.Any = js.native
   /**
@@ -50,10 +51,12 @@ class FormStore protected () extends js.Object {
     * First time `setInitialValues` should update store with initial value
     */
   var setInitialValues: js.Any = js.native
+  var setPreserve: js.Any = js.native
   var setValidateMessages: js.Any = js.native
   var store: js.Any = js.native
   var submit: js.Any = js.native
   var subscribable: js.Any = js.native
+  var timeoutId: js.Any = js.native
   var triggerOnFieldsChange: js.Any = js.native
   var updateValue: js.Any = js.native
   var useSubscribe: js.Any = js.native

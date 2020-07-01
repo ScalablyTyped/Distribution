@@ -5,6 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OptionsHTML extends js.Object {
+  var groupHeaderDownload: js.UndefOr[
+    (js.Function4[
+      /* value */ js.Any, 
+      /* count */ Double, 
+      /* data */ js.Any, 
+      /* group */ GroupComponent, 
+      String
+    ]) | (js.Array[js.Function3[/* value */ _, /* count */ Double, /* data */ _, String]])
+  ] = js.undefined
   var htmlOutputConfig: js.UndefOr[AddditionalExportOptions] = js.undefined
   /**By Default when a page is printed that includes a Tabulator it will be rendered on the page exactly as the table is drawn. While this ise useful in most cases, some users prefer tohave more controll over the print output, for example showing all rows of the table, instead of just those visible with the current position of the scroll bar.
     Tabulator provides a print styling mode that will replace the Tabulator with an HTML table for the printout giving you much more control over the look and feel of the table for the print out., to enable this mode, set the printAsHtml option to true in the table constructor. 
@@ -31,6 +40,13 @@ trait OptionsHTML extends js.Object {
 object OptionsHTML {
   @scala.inline
   def apply(
+    groupHeaderDownload: (js.Function4[
+      /* value */ js.Any, 
+      /* count */ Double, 
+      /* data */ js.Any, 
+      /* group */ GroupComponent, 
+      String
+    ]) | (js.Array[js.Function3[/* value */ _, /* count */ Double, /* data */ _, String]]) = null,
     htmlOutputConfig: AddditionalExportOptions = null,
     printAsHtml: js.UndefOr[Boolean] = js.undefined,
     printConfig: AddditionalExportOptions = null,
@@ -41,6 +57,7 @@ object OptionsHTML {
     printStyled: js.UndefOr[Boolean] = js.undefined
   ): OptionsHTML = {
     val __obj = js.Dynamic.literal()
+    if (groupHeaderDownload != null) __obj.updateDynamic("groupHeaderDownload")(groupHeaderDownload.asInstanceOf[js.Any])
     if (htmlOutputConfig != null) __obj.updateDynamic("htmlOutputConfig")(htmlOutputConfig.asInstanceOf[js.Any])
     if (!js.isUndefined(printAsHtml)) __obj.updateDynamic("printAsHtml")(printAsHtml.get.asInstanceOf[js.Any])
     if (printConfig != null) __obj.updateDynamic("printConfig")(printConfig.asInstanceOf[js.Any])

@@ -22,8 +22,6 @@ class TimezonePicker protected ()
   var timezoneItems: js.Any = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MTimezonePicker(prevProps: ITimezonePickerProps, prevState: ITimezonePickerState): Unit = js.native
-  @JSName("componentDidUpdate")
-  def componentDidUpdate_MTimezonePicker(prevProps: ITimezonePickerProps, prevState: ITimezonePickerState, snapshot: js.Object): Unit = js.native
   /* protected */ def validateProps(props: IPopoverPropschildrenReac): Unit = js.native
 }
 

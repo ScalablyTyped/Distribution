@@ -185,6 +185,7 @@ trait WeakValidationMapTimePick extends js.Object {
   var secondStep: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   var showHour: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var showMinute: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var showNow: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var showSecond: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var size: js.UndefOr[Validator[js.UndefOr[Null | SizeType]]] = js.undefined
   var style: js.UndefOr[Validator[js.UndefOr[CSSProperties | Null]]] = js.undefined
@@ -309,6 +310,7 @@ object WeakValidationMapTimePick {
     secondStep: Validator[js.UndefOr[Double | Null]] = null,
     showHour: Validator[js.UndefOr[Boolean | Null]] = null,
     showMinute: Validator[js.UndefOr[Boolean | Null]] = null,
+    showNow: Validator[js.UndefOr[Boolean | Null]] = null,
     showSecond: Validator[js.UndefOr[Boolean | Null]] = null,
     size: Validator[js.UndefOr[Null | SizeType]] = null,
     style: Validator[js.UndefOr[CSSProperties | Null]] = null,
@@ -424,6 +426,7 @@ object WeakValidationMapTimePick {
     if (secondStep != null) __obj.updateDynamic("secondStep")(secondStep.asInstanceOf[js.Any])
     if (showHour != null) __obj.updateDynamic("showHour")(showHour.asInstanceOf[js.Any])
     if (showMinute != null) __obj.updateDynamic("showMinute")(showMinute.asInstanceOf[js.Any])
+    if (showNow != null) __obj.updateDynamic("showNow")(showNow.asInstanceOf[js.Any])
     if (showSecond != null) __obj.updateDynamic("showSecond")(showSecond.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron-osx-sign
 
-Typings are for version 0.4.11
+Typings are for version 0.4.17
 
 ## Library description:
 Codesign Electron macOS apps
@@ -10,9 +10,9 @@ Codesign Electron macOS apps
 | ------------------ | :-------------: |
 | Full name          | electron-osx-sign |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 24 |
-| # downloads        | 3836100 |
+| # releases         | 6 |
+| # dependents       | 31 |
+| # downloads        | 4180047 |
 | # stars            | 6 |
 
 ## Links

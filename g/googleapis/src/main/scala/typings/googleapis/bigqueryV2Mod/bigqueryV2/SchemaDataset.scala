@@ -1,7 +1,7 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.googleapis.AnonDomain
+import typings.googleapis.anon.Domain
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait SchemaDataset extends js.Object {
     * access.specialGroup: projectOwners; access.role: OWNER;
     * access.userByEmail: [dataset creator email]; access.role: OWNER;
     */
-  var access: js.UndefOr[js.Array[AnonDomain]] = js.native
+  var access: js.UndefOr[js.Array[Domain]] = js.native
   /**
     * [Output-only] The time when this dataset was created, in milliseconds
     * since the epoch.
@@ -108,7 +108,7 @@ trait SchemaDataset extends js.Object {
 object SchemaDataset {
   @scala.inline
   def apply(
-    access: js.Array[AnonDomain] = null,
+    access: js.Array[Domain] = null,
     creationTime: String = null,
     datasetReference: SchemaDatasetReference = null,
     defaultPartitionExpirationMs: String = null,

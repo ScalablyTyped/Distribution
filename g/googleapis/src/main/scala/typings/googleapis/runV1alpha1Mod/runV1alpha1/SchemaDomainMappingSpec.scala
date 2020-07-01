@@ -36,7 +36,7 @@ object SchemaDomainMappingSpec {
   ): SchemaDomainMappingSpec = {
     val __obj = js.Dynamic.literal()
     if (certificateMode != null) __obj.updateDynamic("certificateMode")(certificateMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceOverride)) __obj.updateDynamic("forceOverride")(forceOverride.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceOverride)) __obj.updateDynamic("forceOverride")(forceOverride.get.asInstanceOf[js.Any])
     if (routeName != null) __obj.updateDynamic("routeName")(routeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDomainMappingSpec]
   }

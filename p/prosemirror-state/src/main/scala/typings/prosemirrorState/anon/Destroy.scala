@@ -15,7 +15,7 @@ trait Destroy[S /* <: typings.prosemirrorModel.mod.Schema[_, _] */] extends js.O
 
 object Destroy {
   @scala.inline
-  def apply[S](
+  def apply[/* <: typings.prosemirrorModel.mod.Schema[_, _] */ S](
     destroy: js.UndefOr[Null | (() => Unit)] = js.undefined,
     update: js.UndefOr[Null | ((/* view */ EditorView[S], /* prevState */ EditorState[S]) => Unit)] = js.undefined
   ): Destroy[S] = {

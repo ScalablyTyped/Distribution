@@ -5,8 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CallerID extends js.Object {
-  /* Properties */
+  /**
+    * Name.
+    */
   var name: String
+  /**
+    * Number.
+    */
   var number: String
 }
 

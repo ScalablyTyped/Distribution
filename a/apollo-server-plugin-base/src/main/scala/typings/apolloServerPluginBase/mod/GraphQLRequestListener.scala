@@ -1,7 +1,12 @@
 package typings.apolloServerPluginBase.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.apolloServerTypes.mod.AnyFunction
+import typings.apolloServerTypes.mod.AnyFunctionMap
+import typings.apolloServerTypes.mod.BaseContext
 import typings.apolloServerTypes.mod.GraphQLRequestContextDidEncounterErrors
 import typings.apolloServerTypes.mod.GraphQLRequestContextDidResolveOperation
+import typings.apolloServerTypes.mod.GraphQLRequestContextDidResolveSource
 import typings.apolloServerTypes.mod.GraphQLRequestContextExecutionDidStart
 import typings.apolloServerTypes.mod.GraphQLRequestContextParsingDidStart
 import typings.apolloServerTypes.mod.GraphQLRequestContextResponseForOperation
@@ -13,7 +18,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GraphQLRequestListener[TContext] extends js.Object {
+trait GraphQLRequestListener[TContext /* <: BaseContext */] extends AnyFunctionMap {
   var didEncounterErrors: js.UndefOr[
     js.Function1[
       /* requestContext */ GraphQLRequestContextDidEncounterErrors[TContext], 
@@ -26,16 +31,22 @@ trait GraphQLRequestListener[TContext] extends js.Object {
       ValueOrPromise[Unit]
     ]
   ] = js.undefined
+  var didResolveSource: js.UndefOr[
+    js.Function1[
+      /* requestContext */ GraphQLRequestContextDidResolveSource[TContext], 
+      ValueOrPromise[Unit]
+    ]
+  ] = js.undefined
   var executionDidStart: js.UndefOr[
     js.Function1[
       /* requestContext */ GraphQLRequestContextExecutionDidStart[TContext], 
-      GraphQLRequestListenerExecutionDidEnd
+      GraphQLRequestExecutionListener[BaseContext] | GraphQLRequestListenerExecutionDidEnd | Unit
     ]
   ] = js.undefined
   var parsingDidStart: js.UndefOr[
     js.Function1[
       /* requestContext */ GraphQLRequestContextParsingDidStart[TContext], 
-      GraphQLRequestListenerParsingDidEnd
+      GraphQLRequestListenerParsingDidEnd | Unit
     ]
   ] = js.undefined
   var responseForOperation: js.UndefOr[
@@ -47,7 +58,7 @@ trait GraphQLRequestListener[TContext] extends js.Object {
   var validationDidStart: js.UndefOr[
     js.Function1[
       /* requestContext */ GraphQLRequestContextValidationDidStart[TContext], 
-      GraphQLRequestListenerValidationDidEnd
+      GraphQLRequestListenerValidationDidEnd | Unit
     ]
   ] = js.undefined
   var willSendResponse: js.UndefOr[
@@ -60,18 +71,22 @@ trait GraphQLRequestListener[TContext] extends js.Object {
 
 object GraphQLRequestListener {
   @scala.inline
-  def apply[TContext](
+  def apply[/* <: typings.apolloServerTypes.mod.BaseContext */ TContext](
+    StringDictionary: StringDictionary[js.UndefOr[AnyFunction]] = null,
     didEncounterErrors: /* requestContext */ GraphQLRequestContextDidEncounterErrors[TContext] => ValueOrPromise[Unit] = null,
     didResolveOperation: /* requestContext */ GraphQLRequestContextDidResolveOperation[TContext] => ValueOrPromise[Unit] = null,
-    executionDidStart: /* requestContext */ GraphQLRequestContextExecutionDidStart[TContext] => GraphQLRequestListenerExecutionDidEnd = null,
-    parsingDidStart: /* requestContext */ GraphQLRequestContextParsingDidStart[TContext] => GraphQLRequestListenerParsingDidEnd = null,
+    didResolveSource: /* requestContext */ GraphQLRequestContextDidResolveSource[TContext] => ValueOrPromise[Unit] = null,
+    executionDidStart: /* requestContext */ GraphQLRequestContextExecutionDidStart[TContext] => GraphQLRequestExecutionListener[BaseContext] | GraphQLRequestListenerExecutionDidEnd | Unit = null,
+    parsingDidStart: /* requestContext */ GraphQLRequestContextParsingDidStart[TContext] => GraphQLRequestListenerParsingDidEnd | Unit = null,
     responseForOperation: /* requestContext */ GraphQLRequestContextResponseForOperation[TContext] => ValueOrPromise[GraphQLResponse | Null] = null,
-    validationDidStart: /* requestContext */ GraphQLRequestContextValidationDidStart[TContext] => GraphQLRequestListenerValidationDidEnd = null,
+    validationDidStart: /* requestContext */ GraphQLRequestContextValidationDidStart[TContext] => GraphQLRequestListenerValidationDidEnd | Unit = null,
     willSendResponse: /* requestContext */ GraphQLRequestContextWillSendResponse[TContext] => ValueOrPromise[Unit] = null
   ): GraphQLRequestListener[TContext] = {
     val __obj = js.Dynamic.literal()
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (didEncounterErrors != null) __obj.updateDynamic("didEncounterErrors")(js.Any.fromFunction1(didEncounterErrors))
     if (didResolveOperation != null) __obj.updateDynamic("didResolveOperation")(js.Any.fromFunction1(didResolveOperation))
+    if (didResolveSource != null) __obj.updateDynamic("didResolveSource")(js.Any.fromFunction1(didResolveSource))
     if (executionDidStart != null) __obj.updateDynamic("executionDidStart")(js.Any.fromFunction1(executionDidStart))
     if (parsingDidStart != null) __obj.updateDynamic("parsingDidStart")(js.Any.fromFunction1(parsingDidStart))
     if (responseForOperation != null) __obj.updateDynamic("responseForOperation")(js.Any.fromFunction1(responseForOperation))

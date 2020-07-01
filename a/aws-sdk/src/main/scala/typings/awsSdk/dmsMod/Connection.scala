@@ -27,7 +27,7 @@ trait Connection extends js.Object {
     */
   var ReplicationInstanceIdentifier: js.UndefOr[String] = js.native
   /**
-    * The connection status.
+    * The connection status. This parameter can return one of the following values:    "successful"     "testing"     "failed"     "deleting"   
     */
   var Status: js.UndefOr[String] = js.native
 }

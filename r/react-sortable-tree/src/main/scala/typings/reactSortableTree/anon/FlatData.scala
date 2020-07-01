@@ -27,7 +27,7 @@ trait FlatData[T, I /* <: String | Double */, K /* <: /* keyof T */ String */, P
 
 object FlatData {
   @scala.inline
-  def apply[T, I, K, P](
+  def apply[T, /* <: java.lang.String | scala.Double */ I, /* <: / * keyof T * / java.lang.String */ K, /* <: / * keyof T * / java.lang.String */ P](
     flatData: NumberDictionary[T] | StringDictionary[T],
     getKey: /* item */ T => /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = null,
     getParentKey: /* item */ T => /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any = null,

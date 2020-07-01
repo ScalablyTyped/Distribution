@@ -54,6 +54,7 @@ import scala.scalajs.js.annotation._
   - typings.wordpressBlocks.wordpressBlocksStrings.`table-row-delete`
   - typings.wordpressBlocks.wordpressBlocksStrings.heart
   - typings.wordpressBlocks.wordpressBlocksStrings.`media-audio`
+  - typings.wordpressBlocks.wordpressBlocksStrings.key
   - typings.wordpressBlocks.wordpressBlocksStrings.`welcome-write-blog`
   - typings.wordpressBlocks.wordpressBlocksStrings.`index-card`
   - typings.wordpressBlocks.wordpressBlocksStrings.`share-alt2`
@@ -70,6 +71,7 @@ import scala.scalajs.js.annotation._
   - typings.wordpressBlocks.wordpressBlocksStrings.`table-col-delete`
   - typings.wordpressBlocks.wordpressBlocksStrings.archive
   - typings.wordpressBlocks.wordpressBlocksStrings.`editor-code`
+  - typings.wordpressBlocks.wordpressBlocksStrings.props
   - typings.wordpressBlocks.wordpressBlocksStrings.`image-flip-horizontal`
   - typings.wordpressBlocks.wordpressBlocksStrings.`arrow-left-alt2`
   - typings.wordpressBlocks.wordpressBlocksStrings.`controls-back`
@@ -272,6 +274,7 @@ import scala.scalajs.js.annotation._
   - typings.wordpressBlocks.wordpressBlocksStrings.money
   - typings.wordpressBlocks.wordpressBlocksStrings.`editor-break`
   - typings.wordpressBlocks.wordpressBlocksStrings.shortcode
+  - typings.wordpressBlocks.wordpressBlocksStrings.`type`
   - typings.wordpressBlocks.wordpressBlocksStrings.groups
   - typings.wordpressBlocks.wordpressBlocksStrings.`admin-generic`
   - typings.wordpressBlocks.wordpressBlocksStrings.tide
@@ -682,6 +685,8 @@ object BlockIcon {
   @scala.inline
   def instagram: typings.wordpressBlocks.wordpressBlocksStrings.instagram = "instagram".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.instagram]
   @scala.inline
+  def key: typings.wordpressBlocks.wordpressBlocksStrings.key = "key".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.key]
+  @scala.inline
   def `keyboard-hide`: typings.wordpressBlocks.wordpressBlocksStrings.`keyboard-hide` = "keyboard-hide".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`keyboard-hide`]
   @scala.inline
   def laptop: typings.wordpressBlocks.wordpressBlocksStrings.laptop = "laptop".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.laptop]
@@ -771,6 +776,8 @@ object BlockIcon {
   def products: typings.wordpressBlocks.wordpressBlocksStrings.products = "products".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.products]
   @scala.inline
   def propTypes: typings.wordpressBlocks.wordpressBlocksStrings.propTypes = "propTypes".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.propTypes]
+  @scala.inline
+  def props: typings.wordpressBlocks.wordpressBlocksStrings.props = "props".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.props]
   @scala.inline
   def randomize: typings.wordpressBlocks.wordpressBlocksStrings.randomize = "randomize".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.randomize]
   @scala.inline
@@ -863,6 +870,8 @@ object BlockIcon {
   def trash: typings.wordpressBlocks.wordpressBlocksStrings.trash = "trash".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.trash]
   @scala.inline
   def twitter: typings.wordpressBlocks.wordpressBlocksStrings.twitter = "twitter".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.twitter]
+  @scala.inline
+  def `type`: typings.wordpressBlocks.wordpressBlocksStrings.`type` = "type".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`type`]
   @scala.inline
   def undo: typings.wordpressBlocks.wordpressBlocksStrings.undo = "undo".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.undo]
   @scala.inline

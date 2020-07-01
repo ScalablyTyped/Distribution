@@ -74,10 +74,7 @@ import scala.scalajs.js.annotation._
   * @param [options.mipmaps] - When enabled try to generate or use mipmaps for this texture. Default is true
   * @param [options.cubemap] - Specifies whether the texture is to be a cubemap. Defaults to false.
   * @param [options.volume] - Specifies whether the texture is to be a 3D volume (WebGL2 only). Defaults to false.
-  * @param [options.rgbm] - Specifies whether the texture contains RGBM-encoded HDR data. Defaults to false.
-  * @param [options.swizzleGGGR] - Specifies whether the texture contains swizzled GGGR data for use with tangent space normal
-  maps. The R component is stored in alpha and G is stored in RGB. This packing can result in higher quality when the texture data
-  is compressed. Defaults to false.
+  * @param [options.type] - Specifies the image type, see {@link pc.TEXTURETYPE_DEFAULT}
   * @param [options.fixCubemapSeams] - Specifies whether this cubemap texture requires special
   seam fixing shader code to look right. Defaults to false.
   * @param [options.flipY] - Specifies whether the texture should be flipped in the Y-direction. Only affects textures

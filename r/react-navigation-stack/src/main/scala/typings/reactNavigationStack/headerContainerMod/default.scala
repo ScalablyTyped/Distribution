@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object default extends js.Object {
   def apply(
-    hasModeScenesLayoutInsetsGetFocusedRouteGetPreviousRouteOnContentHeightChangeGestureDirectionStyleInterpolatorStyle: Props
+    hasModeScenesLayoutInsetsGetPreviousSceneGetFocusedRouteOnContentHeightChangeGestureDirectionStyleInterpolatorStyle: Props
   ): Element = js.native
 }
 

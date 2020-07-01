@@ -11,7 +11,7 @@ trait ScheduleKeyDeletionResponse extends js.Object {
     */
   var DeletionDate: js.UndefOr[DateType] = js.native
   /**
-    * The unique identifier of the customer master key (CMK) for which deletion is scheduled.
+    * The Amazon Resource Name (key ARN) of the CMK whose deletion is scheduled.
     */
   var KeyId: js.UndefOr[KeyIdType] = js.native
 }

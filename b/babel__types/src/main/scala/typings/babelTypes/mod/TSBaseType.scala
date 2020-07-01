@@ -207,7 +207,7 @@ object TSBaseType {
   }
   @scala.inline
   def TSLiteralType_(
-    literal: NumericLiteral_ | StringLiteral_ | BooleanLiteral_,
+    literal: NumericLiteral_ | StringLiteral_ | BooleanLiteral_ | BigIntLiteral_,
     `type`: TSLiteralType,
     end: Double = null.asInstanceOf[Double],
     innerComments: js.Array[Comment] = null,

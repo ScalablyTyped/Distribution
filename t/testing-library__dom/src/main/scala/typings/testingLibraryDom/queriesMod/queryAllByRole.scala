@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@testing-library/dom/queries", "queryAllByRole")
+@JSImport("@testing-library/dom/types/queries", "queryAllByRole")
 @js.native
 object queryAllByRole extends TopLevel[AllByRole]
 

@@ -1,12 +1,12 @@
 package typings.googleapis.driveV2Mod.driveV2
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.googleapis.AnonAperture
-import typings.googleapis.AnonCanAddChildren
-import typings.googleapis.AnonDurationMillis
-import typings.googleapis.AnonHidden
-import typings.googleapis.AnonMimeType
-import typings.googleapis.AnonText
+import typings.googleapis.anon.Aperture
+import typings.googleapis.anon.CanAddChildren
+import typings.googleapis.anon.DurationMillis
+import typings.googleapis.anon.Hidden
+import typings.googleapis.anon.MimeType
+import typings.googleapis.anon.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +36,7 @@ trait SchemaFile extends js.Object {
     * Capabilities the current user has on this file. Each capability
     * corresponds to a fine-grained action that a user may take.
     */
-  var capabilities: js.UndefOr[AnonCanAddChildren] = js.native
+  var capabilities: js.UndefOr[CanAddChildren] = js.native
   /**
     * Whether the options to copy, print, or download this file, should be
     * disabled for readers and commenters.
@@ -145,11 +145,11 @@ trait SchemaFile extends js.Object {
     * and its contents will depend on what can be parsed from the image
     * content.
     */
-  var imageMediaMetadata: js.UndefOr[AnonAperture] = js.native
+  var imageMediaMetadata: js.UndefOr[Aperture] = js.native
   /**
     * Indexable text attributes for the file (can only be written)
     */
-  var indexableText: js.UndefOr[AnonText] = js.native
+  var indexableText: js.UndefOr[Text] = js.native
   /**
     * Whether the file was created or opened by the requesting app.
     */
@@ -161,7 +161,7 @@ trait SchemaFile extends js.Object {
   /**
     * A group of labels for the file.
     */
-  var labels: js.UndefOr[AnonHidden] = js.native
+  var labels: js.UndefOr[Hidden] = js.native
   /**
     * The last user to modify this file.
     */
@@ -288,7 +288,7 @@ trait SchemaFile extends js.Object {
     * A thumbnail for the file. This will only be used if Drive cannot generate
     * a standard thumbnail.
     */
-  var thumbnail: js.UndefOr[AnonMimeType] = js.native
+  var thumbnail: js.UndefOr[MimeType] = js.native
   /**
     * A short-lived link to the file&#39;s thumbnail. Typically lasts on the
     * order of hours. Only populated when the requesting app can access the
@@ -328,7 +328,7 @@ trait SchemaFile extends js.Object {
   /**
     * Metadata about video media. This will only be present for video types.
     */
-  var videoMediaMetadata: js.UndefOr[AnonDurationMillis] = js.native
+  var videoMediaMetadata: js.UndefOr[DurationMillis] = js.native
   /**
     * A link for downloading the content of the file in a browser using cookie
     * based authentication. In cases where the content is shared publicly, the
@@ -354,7 +354,7 @@ object SchemaFile {
     appDataContents: js.UndefOr[Boolean] = js.undefined,
     canComment: js.UndefOr[Boolean] = js.undefined,
     canReadRevisions: js.UndefOr[Boolean] = js.undefined,
-    capabilities: AnonCanAddChildren = null,
+    capabilities: CanAddChildren = null,
     copyRequiresWriterPermission: js.UndefOr[Boolean] = js.undefined,
     copyable: js.UndefOr[Boolean] = js.undefined,
     createdDate: String = null,
@@ -375,11 +375,11 @@ object SchemaFile {
     headRevisionId: String = null,
     iconLink: String = null,
     id: String = null,
-    imageMediaMetadata: AnonAperture = null,
-    indexableText: AnonText = null,
+    imageMediaMetadata: Aperture = null,
+    indexableText: Text = null,
     isAppAuthorized: js.UndefOr[Boolean] = js.undefined,
     kind: String = null,
-    labels: AnonHidden = null,
+    labels: Hidden = null,
     lastModifyingUser: SchemaUser = null,
     lastModifyingUserName: String = null,
     lastViewedByMeDate: String = null,
@@ -405,7 +405,7 @@ object SchemaFile {
     sharingUser: SchemaUser = null,
     spaces: js.Array[String] = null,
     teamDriveId: String = null,
-    thumbnail: AnonMimeType = null,
+    thumbnail: MimeType = null,
     thumbnailLink: String = null,
     thumbnailVersion: String = null,
     title: String = null,
@@ -413,40 +413,40 @@ object SchemaFile {
     trashingUser: SchemaUser = null,
     userPermission: SchemaPermission = null,
     version: String = null,
-    videoMediaMetadata: AnonDurationMillis = null,
+    videoMediaMetadata: DurationMillis = null,
     webContentLink: String = null,
     webViewLink: String = null,
     writersCanShare: js.UndefOr[Boolean] = js.undefined
   ): SchemaFile = {
     val __obj = js.Dynamic.literal()
     if (alternateLink != null) __obj.updateDynamic("alternateLink")(alternateLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(appDataContents)) __obj.updateDynamic("appDataContents")(appDataContents.asInstanceOf[js.Any])
-    if (!js.isUndefined(canComment)) __obj.updateDynamic("canComment")(canComment.asInstanceOf[js.Any])
-    if (!js.isUndefined(canReadRevisions)) __obj.updateDynamic("canReadRevisions")(canReadRevisions.asInstanceOf[js.Any])
+    if (!js.isUndefined(appDataContents)) __obj.updateDynamic("appDataContents")(appDataContents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(canComment)) __obj.updateDynamic("canComment")(canComment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(canReadRevisions)) __obj.updateDynamic("canReadRevisions")(canReadRevisions.get.asInstanceOf[js.Any])
     if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
-    if (!js.isUndefined(copyRequiresWriterPermission)) __obj.updateDynamic("copyRequiresWriterPermission")(copyRequiresWriterPermission.asInstanceOf[js.Any])
-    if (!js.isUndefined(copyable)) __obj.updateDynamic("copyable")(copyable.asInstanceOf[js.Any])
+    if (!js.isUndefined(copyRequiresWriterPermission)) __obj.updateDynamic("copyRequiresWriterPermission")(copyRequiresWriterPermission.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(copyable)) __obj.updateDynamic("copyable")(copyable.get.asInstanceOf[js.Any])
     if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate.asInstanceOf[js.Any])
     if (defaultOpenWithLink != null) __obj.updateDynamic("defaultOpenWithLink")(defaultOpenWithLink.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (downloadUrl != null) __obj.updateDynamic("downloadUrl")(downloadUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.get.asInstanceOf[js.Any])
     if (embedLink != null) __obj.updateDynamic("embedLink")(embedLink.asInstanceOf[js.Any])
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (!js.isUndefined(explicitlyTrashed)) __obj.updateDynamic("explicitlyTrashed")(explicitlyTrashed.asInstanceOf[js.Any])
+    if (!js.isUndefined(explicitlyTrashed)) __obj.updateDynamic("explicitlyTrashed")(explicitlyTrashed.get.asInstanceOf[js.Any])
     if (exportLinks != null) __obj.updateDynamic("exportLinks")(exportLinks.asInstanceOf[js.Any])
     if (fileExtension != null) __obj.updateDynamic("fileExtension")(fileExtension.asInstanceOf[js.Any])
     if (fileSize != null) __obj.updateDynamic("fileSize")(fileSize.asInstanceOf[js.Any])
     if (folderColorRgb != null) __obj.updateDynamic("folderColorRgb")(folderColorRgb.asInstanceOf[js.Any])
     if (fullFileExtension != null) __obj.updateDynamic("fullFileExtension")(fullFileExtension.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasAugmentedPermissions)) __obj.updateDynamic("hasAugmentedPermissions")(hasAugmentedPermissions.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasThumbnail)) __obj.updateDynamic("hasThumbnail")(hasThumbnail.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasAugmentedPermissions)) __obj.updateDynamic("hasAugmentedPermissions")(hasAugmentedPermissions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasThumbnail)) __obj.updateDynamic("hasThumbnail")(hasThumbnail.get.asInstanceOf[js.Any])
     if (headRevisionId != null) __obj.updateDynamic("headRevisionId")(headRevisionId.asInstanceOf[js.Any])
     if (iconLink != null) __obj.updateDynamic("iconLink")(iconLink.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (imageMediaMetadata != null) __obj.updateDynamic("imageMediaMetadata")(imageMediaMetadata.asInstanceOf[js.Any])
     if (indexableText != null) __obj.updateDynamic("indexableText")(indexableText.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAppAuthorized)) __obj.updateDynamic("isAppAuthorized")(isAppAuthorized.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAppAuthorized)) __obj.updateDynamic("isAppAuthorized")(isAppAuthorized.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (lastModifyingUser != null) __obj.updateDynamic("lastModifyingUser")(lastModifyingUser.asInstanceOf[js.Any])
@@ -459,7 +459,7 @@ object SchemaFile {
     if (modifiedDate != null) __obj.updateDynamic("modifiedDate")(modifiedDate.asInstanceOf[js.Any])
     if (openWithLinks != null) __obj.updateDynamic("openWithLinks")(openWithLinks.asInstanceOf[js.Any])
     if (originalFilename != null) __obj.updateDynamic("originalFilename")(originalFilename.asInstanceOf[js.Any])
-    if (!js.isUndefined(ownedByMe)) __obj.updateDynamic("ownedByMe")(ownedByMe.asInstanceOf[js.Any])
+    if (!js.isUndefined(ownedByMe)) __obj.updateDynamic("ownedByMe")(ownedByMe.get.asInstanceOf[js.Any])
     if (ownerNames != null) __obj.updateDynamic("ownerNames")(ownerNames.asInstanceOf[js.Any])
     if (owners != null) __obj.updateDynamic("owners")(owners.asInstanceOf[js.Any])
     if (parents != null) __obj.updateDynamic("parents")(parents.asInstanceOf[js.Any])
@@ -468,8 +468,8 @@ object SchemaFile {
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (quotaBytesUsed != null) __obj.updateDynamic("quotaBytesUsed")(quotaBytesUsed.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(shareable)) __obj.updateDynamic("shareable")(shareable.asInstanceOf[js.Any])
-    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared.asInstanceOf[js.Any])
+    if (!js.isUndefined(shareable)) __obj.updateDynamic("shareable")(shareable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared.get.asInstanceOf[js.Any])
     if (sharedWithMeDate != null) __obj.updateDynamic("sharedWithMeDate")(sharedWithMeDate.asInstanceOf[js.Any])
     if (sharingUser != null) __obj.updateDynamic("sharingUser")(sharingUser.asInstanceOf[js.Any])
     if (spaces != null) __obj.updateDynamic("spaces")(spaces.asInstanceOf[js.Any])
@@ -485,7 +485,7 @@ object SchemaFile {
     if (videoMediaMetadata != null) __obj.updateDynamic("videoMediaMetadata")(videoMediaMetadata.asInstanceOf[js.Any])
     if (webContentLink != null) __obj.updateDynamic("webContentLink")(webContentLink.asInstanceOf[js.Any])
     if (webViewLink != null) __obj.updateDynamic("webViewLink")(webViewLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(writersCanShare)) __obj.updateDynamic("writersCanShare")(writersCanShare.asInstanceOf[js.Any])
+    if (!js.isUndefined(writersCanShare)) __obj.updateDynamic("writersCanShare")(writersCanShare.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFile]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AliasRoutingConfiguration extends js.Object {
   /**
-    * The name of the second alias, and the percentage of traffic that's routed to it.
+    * The second version, and the percentage of traffic that's routed to it.
     */
   var AdditionalVersionWeights: js.UndefOr[typings.awsSdk.lambdaMod.AdditionalVersionWeights] = js.native
 }

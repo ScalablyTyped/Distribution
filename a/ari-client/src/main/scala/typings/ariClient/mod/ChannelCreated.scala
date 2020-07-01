@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChannelCreated extends Event {
-  /* Properties */
+  /**
+    * Channel.
+    */
   var channel: Channel
 }
 

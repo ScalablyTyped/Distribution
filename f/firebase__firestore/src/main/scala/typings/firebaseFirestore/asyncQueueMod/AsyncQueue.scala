@@ -1,6 +1,5 @@
 package typings.firebaseFirestore.asyncQueueMod
 
-import typings.firebaseFirestore.promiseMod.CancelablePromise
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -44,10 +43,10 @@ class AsyncQueue () extends js.Object {
   def enqueue[T /* <: js.Any */](op: js.Function0[js.Promise[T]]): js.Promise[T] = js.native
   /**
     * Schedules an operation to be queued on the AsyncQueue once the specified
-    * `delayMs` has elapsed. The returned CancelablePromise can be used to cancel
-    * the operation prior to its running.
+    * `delayMs` has elapsed. The returned DelayedOperation can be used to cancel
+    * or fast-forward the operation prior to its running.
     */
-  def enqueueAfterDelay[T /* <: js.Any */](timerId: TimerId, delayMs: Double, op: js.Function0[js.Promise[T]]): CancelablePromise[T] = js.native
+  def enqueueAfterDelay[T /* <: js.Any */](timerId: TimerId, delayMs: Double, op: js.Function0[js.Promise[T]]): DelayedOperation[T] = js.native
   /**
     * Adds a new operation to the queue without waiting for it to complete (i.e.
     * we ignore the Promise result).
@@ -80,11 +79,10 @@ class AsyncQueue () extends js.Object {
     * For Tests: Runs some or all delayed operations early.
     *
     * @param lastTimerId Delayed operations up to and including this TimerId will
-    *  be drained. Throws if no such operation exists. Pass TimerId.All to run
-    *  all delayed operations.
+    *  be drained. Pass TimerId.All to run all delayed operations.
     * @returns a Promise that resolves once all operations have been run.
     */
-  def runDelayedOperationsEarly(lastTimerId: TimerId): js.Promise[Unit] = js.native
+  def runAllDelayedOperationsUntil(lastTimerId: TimerId): js.Promise[Unit] = js.native
   /**
     * For Tests: Skip all subsequent delays for a timer id.
     */

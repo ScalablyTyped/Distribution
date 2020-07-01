@@ -1,7 +1,7 @@
 
 # Scala.js typings for echarts
 
-Typings are for version 4.6.0
+Typings are for version 4.6.1
 
 ## Library description:
 A powerful charting and visualization library for browser

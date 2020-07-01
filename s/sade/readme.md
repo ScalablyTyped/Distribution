@@ -1,7 +1,7 @@
 
 # Scala.js typings for sade
 
-Typings are for version 1.6
+Typings are for version 1.7
 
 ## Library description:
 Smooth (CLI) operator 🎶

@@ -92,7 +92,7 @@ object SchemaNestingLevel {
     glyphType: String = null,
     indentFirstLine: SchemaDimension = null,
     indentStart: SchemaDimension = null,
-    startNumber: Int | Double = null,
+    startNumber: js.UndefOr[Double] = js.undefined,
     textStyle: SchemaTextStyle = null
   ): SchemaNestingLevel = {
     val __obj = js.Dynamic.literal()
@@ -102,7 +102,7 @@ object SchemaNestingLevel {
     if (glyphType != null) __obj.updateDynamic("glyphType")(glyphType.asInstanceOf[js.Any])
     if (indentFirstLine != null) __obj.updateDynamic("indentFirstLine")(indentFirstLine.asInstanceOf[js.Any])
     if (indentStart != null) __obj.updateDynamic("indentStart")(indentStart.asInstanceOf[js.Any])
-    if (startNumber != null) __obj.updateDynamic("startNumber")(startNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(startNumber)) __obj.updateDynamic("startNumber")(startNumber.get.asInstanceOf[js.Any])
     if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNestingLevel]
   }

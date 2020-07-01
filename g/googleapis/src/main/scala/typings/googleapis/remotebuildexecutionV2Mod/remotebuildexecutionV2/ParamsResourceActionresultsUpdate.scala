@@ -64,7 +64,7 @@ object ParamsResourceActionresultsUpdate {
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
     quotaUser: String = null,
     requestBody: SchemaBuildBazelRemoteExecutionV2ActionResult = null,
-    resultsCachePolicyDotpriority: Int | Double = null,
+    resultsCachePolicyDotpriority: js.UndefOr[Double] = js.undefined,
     sizeBytes: String = null,
     uploadType: String = null,
     upload_protocol: String = null
@@ -80,10 +80,10 @@ object ParamsResourceActionresultsUpdate {
     if (instanceName != null) __obj.updateDynamic("instanceName")(instanceName.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (requestBody != null) __obj.updateDynamic("requestBody")(requestBody.asInstanceOf[js.Any])
-    if (resultsCachePolicyDotpriority != null) __obj.updateDynamic("resultsCachePolicy.priority")(resultsCachePolicyDotpriority.asInstanceOf[js.Any])
+    if (!js.isUndefined(resultsCachePolicyDotpriority)) __obj.updateDynamic("resultsCachePolicy.priority")(resultsCachePolicyDotpriority.get.asInstanceOf[js.Any])
     if (sizeBytes != null) __obj.updateDynamic("sizeBytes")(sizeBytes.asInstanceOf[js.Any])
     if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])
     if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol.asInstanceOf[js.Any])

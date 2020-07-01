@@ -22,7 +22,7 @@ object ObjectMember {
     body: BlockStatement_,
     computed: Boolean,
     generator: Boolean,
-    key: js.Any,
+    key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_,
     kind: method | get | set,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     `type`: ObjectMethod,
@@ -43,8 +43,8 @@ object ObjectMember {
   @scala.inline
   def ObjectProperty_(
     computed: Boolean,
-    key: js.Any,
-    shorthand: js.Any,
+    key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_,
+    shorthand: Boolean,
     `type`: ObjectProperty,
     value: Expression | PatternLike,
     decorators: js.Array[Decorator_] = null,

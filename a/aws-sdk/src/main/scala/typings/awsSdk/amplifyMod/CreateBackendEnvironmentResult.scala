@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateBackendEnvironmentResult extends js.Object {
   /**
-    *  Backend environment structure for an amplify App. 
+    *  Describes the backend environment for an Amplify app. 
     */
   var backendEnvironment: BackendEnvironment = js.native
 }

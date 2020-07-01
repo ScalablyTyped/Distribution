@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CipherOption
   extends /* option */ StringDictionary[js.Any] {
-  var iv: js.UndefOr[String | WordArray] = js.undefined
+  var iv: js.UndefOr[String | LibWordArray] = js.undefined
   var mode: js.UndefOr[Mode] = js.undefined
   var padding: js.UndefOr[Padding] = js.undefined
 }
@@ -16,7 +16,7 @@ object CipherOption {
   @scala.inline
   def apply(
     StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    iv: String | WordArray = null,
+    iv: String | LibWordArray = null,
     mode: Mode = null,
     padding: Padding = null
   ): CipherOption = {

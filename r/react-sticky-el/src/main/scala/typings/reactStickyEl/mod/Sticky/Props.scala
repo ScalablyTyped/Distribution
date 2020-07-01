@@ -187,7 +187,7 @@ trait Props[HolderProps /* <: js.Object */] extends HTMLAttributes[HTMLElement] 
 
 object Props {
   @scala.inline
-  def apply[HolderProps](
+  def apply[/* <: js.Object */ HolderProps](
     about: String = null,
     accessKey: String = null,
     `aria-activedescendant`: String = null,

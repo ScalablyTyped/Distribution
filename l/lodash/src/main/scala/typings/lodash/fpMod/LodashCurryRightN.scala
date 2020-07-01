@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashCurryRightN extends js.Object {
+trait LodashCurryRightN extends LodashConvertible {
   @JSName("placeholder")
   var placeholder_Original: __ = js.native
   def apply(arity: Double): LodashCurryRightN1x1 = js.native

@@ -63,17 +63,17 @@ object SchemaCorsPolicy {
     allowOrigins: js.Array[String] = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     exposeHeaders: js.Array[String] = null,
-    maxAge: Int | Double = null
+    maxAge: js.UndefOr[Double] = js.undefined
   ): SchemaCorsPolicy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowCredentials)) __obj.updateDynamic("allowCredentials")(allowCredentials.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCredentials)) __obj.updateDynamic("allowCredentials")(allowCredentials.get.asInstanceOf[js.Any])
     if (allowHeaders != null) __obj.updateDynamic("allowHeaders")(allowHeaders.asInstanceOf[js.Any])
     if (allowMethods != null) __obj.updateDynamic("allowMethods")(allowMethods.asInstanceOf[js.Any])
     if (allowOriginRegexes != null) __obj.updateDynamic("allowOriginRegexes")(allowOriginRegexes.asInstanceOf[js.Any])
     if (allowOrigins != null) __obj.updateDynamic("allowOrigins")(allowOrigins.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (exposeHeaders != null) __obj.updateDynamic("exposeHeaders")(exposeHeaders.asInstanceOf[js.Any])
-    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAge)) __obj.updateDynamic("maxAge")(maxAge.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCorsPolicy]
   }
 }

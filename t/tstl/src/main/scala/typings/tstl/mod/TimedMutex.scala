@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
   * Default Constructor.
   */
 class TimedMutex ()
-  extends typings.tstl.threadMod.TimedMutex
+  extends typings.tstl.tstlModuleMod.TimedMutex
 

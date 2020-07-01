@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl/base", "SetContainer")
 @js.native
 abstract class SetContainer[Key, Unique /* <: Boolean */, SourceT /* <: typings.tstl.setContainerMod.SetContainer[Key, Unique, SourceT, IteratorT, ReverseT] */, IteratorT /* <: Iterator[Key, Unique, SourceT, IteratorT, ReverseT] */, ReverseT /* <: ReverseIterator[Key, Unique, SourceT, IteratorT, ReverseT] */] protected ()
-  extends typings.tstl.containerMod.SetContainer[Key, Unique, SourceT, IteratorT, ReverseT] {
+  extends typings.tstl.moduleMod.SetContainer[Key, Unique, SourceT, IteratorT, ReverseT] {
   /**
     * Default Constructor.
     */

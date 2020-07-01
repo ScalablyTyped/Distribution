@@ -3,9 +3,9 @@ package typings.ionicCore
 import typings.ionicCore.componentsMod.global.HTMLIonLoadingElement
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.overlaysInterfaceMod.OverlayInterface
+import typings.ionicCore.sanitizationMod.IonicSafeString
 import typings.ionicCore.spinnerConfigsMod.SpinnerTypes
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
-import typings.ionicCore.typesMod.IonicSafeString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,11 +57,11 @@ object loadingMod extends js.Object {
     /**
       * Returns a promise that resolves when the loading did dismiss.
       */
-    def onDidDismiss(): js.Promise[OverlayEventDetail[_]] = js.native
+    def onDidDismiss[T](): js.Promise[OverlayEventDetail[T]] = js.native
     /**
       * Returns a promise that resolves when the loading will dismiss.
       */
-    def onWillDismiss(): js.Promise[OverlayEventDetail[_]] = js.native
+    def onWillDismiss[T](): js.Promise[OverlayEventDetail[T]] = js.native
     @JSName("render")
     def render_MLoading(): js.Any = js.native
   }

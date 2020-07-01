@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.convertUnits.convertUnitsStrings.distance
+  - typings.convertUnits.convertUnitsStrings.length
   - typings.convertUnits.convertUnitsStrings.area
   - typings.convertUnits.convertUnitsStrings.mass
   - typings.convertUnits.convertUnitsStrings.volume
@@ -40,8 +40,6 @@ object measure {
   @scala.inline
   def current: typings.convertUnits.convertUnitsStrings.current = "current".asInstanceOf[typings.convertUnits.convertUnitsStrings.current]
   @scala.inline
-  def distance: typings.convertUnits.convertUnitsStrings.distance = "distance".asInstanceOf[typings.convertUnits.convertUnitsStrings.distance]
-  @scala.inline
   def ditgital: typings.convertUnits.convertUnitsStrings.ditgital = "ditgital".asInstanceOf[typings.convertUnits.convertUnitsStrings.ditgital]
   @scala.inline
   def energy: typings.convertUnits.convertUnitsStrings.energy = "energy".asInstanceOf[typings.convertUnits.convertUnitsStrings.energy]
@@ -49,6 +47,8 @@ object measure {
   def frequency: typings.convertUnits.convertUnitsStrings.frequency = "frequency".asInstanceOf[typings.convertUnits.convertUnitsStrings.frequency]
   @scala.inline
   def illuminance: typings.convertUnits.convertUnitsStrings.illuminance = "illuminance".asInstanceOf[typings.convertUnits.convertUnitsStrings.illuminance]
+  @scala.inline
+  def length: typings.convertUnits.convertUnitsStrings.length = "length".asInstanceOf[typings.convertUnits.convertUnitsStrings.length]
   @scala.inline
   def mass: typings.convertUnits.convertUnitsStrings.mass = "mass".asInstanceOf[typings.convertUnits.convertUnitsStrings.mass]
   @scala.inline

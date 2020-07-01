@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait ClassName[H /* <: HTMLAttributes[HTMLElement] */] extends js.Object {
   var className: String
-  var disabled: /* import warning: importer.ImportType#apply Failed type conversion: @blueprintjs/core.@blueprintjs/core/lib/esm/components/button/abstractButton.IButtonProps & H['loading'] */ js.Any
+  var disabled: /* import warning: importer.ImportType#apply Failed type conversion: @blueprintjs/core.@blueprintjs/core/lib/esm/components/button/abstractButton.IButtonProps & H['disabled'] */ js.Any
   var onClick: /* import warning: importer.ImportType#apply Failed type conversion: @blueprintjs/core.@blueprintjs/core/lib/esm/components/button/abstractButton.IButtonProps & H['onClick'] */ js.Any
   var tabIndex: /* import warning: importer.ImportType#apply Failed type conversion: @blueprintjs/core.@blueprintjs/core/lib/esm/components/button/abstractButton.IButtonProps & H['tabIndex'] */ js.Any
   def onKeyDown(e: KeyboardEvent[_]): Unit
@@ -18,9 +18,9 @@ trait ClassName[H /* <: HTMLAttributes[HTMLElement] */] extends js.Object {
 
 object ClassName {
   @scala.inline
-  def apply[H](
+  def apply[/* <: typings.react.mod.HTMLAttributes[typings.std.HTMLElement] */ H](
     className: String,
-    disabled: /* import warning: importer.ImportType#apply Failed type conversion: @blueprintjs/core.@blueprintjs/core/lib/esm/components/button/abstractButton.IButtonProps & H['loading'] */ js.Any,
+    disabled: /* import warning: importer.ImportType#apply Failed type conversion: @blueprintjs/core.@blueprintjs/core/lib/esm/components/button/abstractButton.IButtonProps & H['disabled'] */ js.Any,
     onClick: /* import warning: importer.ImportType#apply Failed type conversion: @blueprintjs/core.@blueprintjs/core/lib/esm/components/button/abstractButton.IButtonProps & H['onClick'] */ js.Any,
     onKeyDown: KeyboardEvent[_] => Unit,
     onKeyUp: KeyboardEvent[_] => Unit,

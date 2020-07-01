@@ -85,7 +85,7 @@ object ParamsResourceVolumesList {
     langRestrict: String = null,
     libraryRestrict: String = null,
     maxAllowedMaturityRating: String = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[Double] = js.undefined,
     oauth_token: String = null,
     orderBy: String = null,
     partner: String = null,
@@ -96,7 +96,7 @@ object ParamsResourceVolumesList {
     quotaUser: String = null,
     showPreorders: js.UndefOr[Boolean] = js.undefined,
     source: String = null,
-    startIndex: Int | Double = null,
+    startIndex: js.UndefOr[Double] = js.undefined,
     userIp: String = null
   ): ParamsResourceVolumesList = {
     val __obj = js.Dynamic.literal()
@@ -109,18 +109,18 @@ object ParamsResourceVolumesList {
     if (langRestrict != null) __obj.updateDynamic("langRestrict")(langRestrict.asInstanceOf[js.Any])
     if (libraryRestrict != null) __obj.updateDynamic("libraryRestrict")(libraryRestrict.asInstanceOf[js.Any])
     if (maxAllowedMaturityRating != null) __obj.updateDynamic("maxAllowedMaturityRating")(maxAllowedMaturityRating.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
     if (partner != null) __obj.updateDynamic("partner")(partner.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (printType != null) __obj.updateDynamic("printType")(printType.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPreorders)) __obj.updateDynamic("showPreorders")(showPreorders.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPreorders)) __obj.updateDynamic("showPreorders")(showPreorders.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceVolumesList]
   }

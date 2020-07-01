@@ -27,6 +27,10 @@ trait FunctionConfiguration extends js.Object {
     */
   var Environment: js.UndefOr[EnvironmentResponse] = js.native
   /**
+    * Connection settings for an Amazon EFS file system.
+    */
+  var FileSystemConfigs: js.UndefOr[FileSystemConfigList] = js.native
+  /**
     * The function's Amazon Resource Name (ARN).
     */
   var FunctionArn: js.UndefOr[NameSpacedFunctionArn] = js.native
@@ -120,6 +124,7 @@ object FunctionConfiguration {
     DeadLetterConfig: DeadLetterConfig = null,
     Description: Description = null,
     Environment: EnvironmentResponse = null,
+    FileSystemConfigs: FileSystemConfigList = null,
     FunctionArn: NameSpacedFunctionArn = null,
     FunctionName: NamespacedFunctionName = null,
     Handler: Handler = null,
@@ -148,6 +153,7 @@ object FunctionConfiguration {
     if (DeadLetterConfig != null) __obj.updateDynamic("DeadLetterConfig")(DeadLetterConfig.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (Environment != null) __obj.updateDynamic("Environment")(Environment.asInstanceOf[js.Any])
+    if (FileSystemConfigs != null) __obj.updateDynamic("FileSystemConfigs")(FileSystemConfigs.asInstanceOf[js.Any])
     if (FunctionArn != null) __obj.updateDynamic("FunctionArn")(FunctionArn.asInstanceOf[js.Any])
     if (FunctionName != null) __obj.updateDynamic("FunctionName")(FunctionName.asInstanceOf[js.Any])
     if (Handler != null) __obj.updateDynamic("Handler")(Handler.asInstanceOf[js.Any])

@@ -79,7 +79,7 @@ object ParamsResourcePromoofferAccept {
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (offerId != null) __obj.updateDynamic("offerId")(offerId.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (serial != null) __obj.updateDynamic("serial")(serial.asInstanceOf[js.Any])

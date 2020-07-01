@@ -37,7 +37,7 @@ trait ChoiceOptions[T /* <: Answers */] extends ChoiceBase {
 
 object ChoiceOptions {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.inquirer.mod.Answers */ T](
     extra: js.Any = null,
     name: String = null,
     short: String = null,

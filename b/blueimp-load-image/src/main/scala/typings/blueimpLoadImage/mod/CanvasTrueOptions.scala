@@ -5,6 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// Some options are only valid if 'canvas' is true.
+// In addition, if 'crop' is true or 'orientation' is set,
+// it automatically enables 'canvas' so in those cases,
+// 'canvas' cannot be false
 trait CanvasTrueOptions extends CanvasOptions {
   var bottom: js.UndefOr[Double] = js.undefined
   var canvas: `true`

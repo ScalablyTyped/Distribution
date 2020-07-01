@@ -12,6 +12,7 @@ package object sqsMod {
   type Binary = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.sqsMod.Blob | java.lang.String
   type BinaryList = js.Array[typings.awsSdk.sqsMod.Binary]
   type Boolean = scala.Boolean
+  type BoxedInteger = scala.Double
   type ChangeMessageVisibilityBatchRequestEntryList = js.Array[typings.awsSdk.sqsMod.ChangeMessageVisibilityBatchRequestEntry]
   type ChangeMessageVisibilityBatchResultEntryList = js.Array[typings.awsSdk.sqsMod.ChangeMessageVisibilityBatchResultEntry]
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.sqsMod.ClientApiVersions
@@ -69,6 +70,7 @@ package object sqsMod {
   type TagKeyList = js.Array[typings.awsSdk.sqsMod.TagKey]
   type TagMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.sqsMod.TagValue]
   type TagValue = java.lang.String
+  type Token = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`2012-11-05`
     - typings.awsSdk.awsSdkStrings.latest_

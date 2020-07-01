@@ -1,6 +1,7 @@
 package typings.chrome.global.chrome
 
 import typings.chrome.chrome.input.ime.ActivateEvent
+import typings.chrome.chrome.input.ime.AssistiveWindowButtonClickedEvent
 import typings.chrome.chrome.input.ime.BlurEvent
 import typings.chrome.chrome.input.ime.CandidateClickedEvent
 import typings.chrome.chrome.input.ime.CandidateWindowParameter
@@ -38,6 +39,7 @@ object input extends js.Object {
   @js.native
   object ime extends js.Object {
     var onActivate: ActivateEvent = js.native
+    var onAssistiveWindowButtonClicked: AssistiveWindowButtonClickedEvent = js.native
     var onBlur: BlurEvent = js.native
     var onCandidateClicked: CandidateClickedEvent = js.native
     var onDeactivated: DeactivatedEvent = js.native
@@ -57,6 +59,8 @@ object input extends js.Object {
     def keyEventHandled(requestId: String, response: Boolean): Unit = js.native
     def sendKeyEvents(parameters: SendKeyEventParameters): Unit = js.native
     def sendKeyEvents(parameters: SendKeyEventParameters, callback: js.Function0[Unit]): Unit = js.native
+    def setAssistiveWindowProperties(parameters: js.Object): Unit = js.native
+    def setAssistiveWindowProperties(parameters: js.Object, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
     def setCandidateWindowProperties(parameters: CandidateWindowParameter): Unit = js.native
     def setCandidateWindowProperties(parameters: CandidateWindowParameter, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
     def setCandidates(parameters: CandidatesParameters): Unit = js.native

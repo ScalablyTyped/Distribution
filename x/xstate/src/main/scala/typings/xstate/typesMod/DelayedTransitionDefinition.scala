@@ -13,7 +13,7 @@ trait DelayedTransitionDefinition[TContext, TEvent /* <: EventObject */] extends
 
 object DelayedTransitionDefinition {
   @scala.inline
-  def apply[TContext, TEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     actions: js.Array[ActionObject[TContext, TEvent]],
     delay: Double | String | (DelayExpr[TContext, TEvent]),
     eventType: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | typings.xstate.typesMod.ActionTypes.NullEvent | Asterisk,

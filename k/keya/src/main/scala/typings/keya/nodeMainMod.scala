@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("keya/out/node/main", JSImport.Namespace)
 @js.native
 object nodeMainMod extends js.Object {
-  def store(name: String): js.Promise[default] = js.native
-  def stores(): js.Promise[js.Array[String]] = js.native
+  val stores: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SQLiteStore.stores */ js.Any = js.native
+  def store[T](name: String): js.Promise[default[T]] = js.native
 }
 

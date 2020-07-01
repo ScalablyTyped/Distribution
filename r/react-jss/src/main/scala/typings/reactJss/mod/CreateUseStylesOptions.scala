@@ -8,13 +8,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CreateUseStylesOptions extends BaseOptions {
+trait CreateUseStylesOptions[Theme] extends BaseOptions[Theme] {
   var name: js.UndefOr[String] = js.undefined
 }
 
 object CreateUseStylesOptions {
   @scala.inline
-  def apply(
+  def apply[Theme](
     classNamePrefix: String = null,
     element: HTMLStyleElement = null,
     generateId: (/* rule */ Rule, /* sheet */ js.UndefOr[StyleSheet[String]]) => String = null,
@@ -23,8 +23,8 @@ object CreateUseStylesOptions {
     media: String = null,
     meta: String = null,
     name: String = null,
-    theming: Theming[js.Object] = null
-  ): CreateUseStylesOptions = {
+    theming: Theming[Theme] = null
+  ): CreateUseStylesOptions[Theme] = {
     val __obj = js.Dynamic.literal()
     if (classNamePrefix != null) __obj.updateDynamic("classNamePrefix")(classNamePrefix.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
@@ -35,7 +35,7 @@ object CreateUseStylesOptions {
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (theming != null) __obj.updateDynamic("theming")(theming.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CreateUseStylesOptions]
+    __obj.asInstanceOf[CreateUseStylesOptions[Theme]]
   }
 }
 

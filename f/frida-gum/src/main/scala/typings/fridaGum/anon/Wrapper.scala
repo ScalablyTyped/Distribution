@@ -38,6 +38,12 @@ trait Wrapper
   @JSName("$new")
   var $new_Original: MethodDispatcher[js.Object] = js.native
   /**
+    * Method and field names exposed by this object’s class, not including
+    * parent classes.
+    */
+  @JSName("$ownMembers")
+  var $ownMembers: js.Array[String] = js.native
+  /**
     * Instance used for chaining up to super-class method implementations.
     */
   @JSName("$super")
@@ -53,6 +59,16 @@ trait Wrapper
     */
   @JSName("$alloc")
   def $alloc(params: js.Any*): js.Any = js.native
+  /**
+    * Eagerly deletes the underlying JNI global reference without having to
+    * wait for the object to become unreachable and the JavaScript
+    * runtime's garbage collector to kick in (or script to be unloaded).
+    *
+    * Useful when a lot of short-lived objects are created in a loop and
+    * there's a risk of running out of global handles.
+    */
+  @JSName("$dispose")
+  def $dispose(): Unit = js.native
   /**
     * Initializes an instance that was allocated but not yet initialized.
     * This wraps the constructor(s).

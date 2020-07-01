@@ -21,7 +21,7 @@ trait ModuleOptions[ClientIdName /* <: String */] extends js.Object {
 
 object ModuleOptions {
   @scala.inline
-  def apply[ClientIdName](
+  def apply[/* <: java.lang.String */ ClientIdName](
     auth: AuthorizeHost,
     client: Id[ClientIdName],
     http: js.Object = null,

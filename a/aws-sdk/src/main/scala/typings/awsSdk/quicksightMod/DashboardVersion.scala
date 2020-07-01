@@ -15,6 +15,10 @@ trait DashboardVersion extends js.Object {
     */
   var CreatedTime: js.UndefOr[Timestamp_] = js.native
   /**
+    * The Amazon Resource Numbers (ARNs) for the datasets that are associated with a version of the dashboard.
+    */
+  var DataSetArns: js.UndefOr[DataSetArnsList] = js.native
+  /**
     * Description.
     */
   var Description: js.UndefOr[VersionDescription] = js.native
@@ -41,6 +45,7 @@ object DashboardVersion {
   def apply(
     Arn: Arn = null,
     CreatedTime: Timestamp_ = null,
+    DataSetArns: DataSetArnsList = null,
     Description: VersionDescription = null,
     Errors: DashboardErrorList = null,
     SourceEntityArn: Arn = null,
@@ -50,6 +55,7 @@ object DashboardVersion {
     val __obj = js.Dynamic.literal()
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
     if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime.asInstanceOf[js.Any])
+    if (DataSetArns != null) __obj.updateDynamic("DataSetArns")(DataSetArns.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (Errors != null) __obj.updateDynamic("Errors")(Errors.asInstanceOf[js.Any])
     if (SourceEntityArn != null) __obj.updateDynamic("SourceEntityArn")(SourceEntityArn.asInstanceOf[js.Any])

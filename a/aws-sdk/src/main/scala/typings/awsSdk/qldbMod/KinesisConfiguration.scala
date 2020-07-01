@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait KinesisConfiguration extends js.Object {
   /**
-    * Enables QLDB to publish multiple stream records in a single Kinesis Data Streams record. To learn more, see KPL Key Concepts in the Amazon Kinesis Data Streams Developer Guide.
+    * Enables QLDB to publish multiple data records in a single Kinesis Data Streams record. To learn more, see KPL Key Concepts in the Amazon Kinesis Data Streams Developer Guide.
     */
   var AggregationEnabled: js.UndefOr[Boolean] = js.native
   /**

@@ -17,7 +17,7 @@ trait AsClassName[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was u
 
 object AsClassName {
   @scala.inline
-  def apply[T](as: T = null, className: String = null): AsClassName[T] = {
+  def apply[/* <: / * import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 * / js.Any */ T](as: T = null, className: String = null): AsClassName[T] = {
     val __obj = js.Dynamic.literal()
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])

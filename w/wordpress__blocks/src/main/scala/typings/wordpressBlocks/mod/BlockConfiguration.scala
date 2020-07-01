@@ -35,7 +35,7 @@ trait BlockConfiguration[T /* <: Record[String, _] */] extends js.Object {
 
 object BlockConfiguration {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.std.Record[java.lang.String, _] */ T](
     attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
     */ typings.wordpressBlocks.wordpressBlocksStrings.BlockConfiguration with TopLevel[js.Any] = null,

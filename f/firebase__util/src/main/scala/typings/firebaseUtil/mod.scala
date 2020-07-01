@@ -63,6 +63,7 @@ object mod extends js.Object {
   def isNode(): Boolean = js.native
   def isNodeSdk(): Boolean = js.native
   def isReactNative(): Boolean = js.native
+  def isSafari(): Boolean = js.native
   def isUWP(): Boolean = js.native
   def isValidFormat(token: String): Boolean = js.native
   def isValidTimestamp(token: String): Boolean = js.native

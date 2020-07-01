@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashPickBy extends js.Object {
+trait LodashPickBy extends LodashConvertible {
   def apply[T](predicate: ValueKeyIteratee[T]): LodashPickBy3x1[T] = js.native
   def apply[T /* <: js.Object */](
     predicate: ValueKeyIteratee[

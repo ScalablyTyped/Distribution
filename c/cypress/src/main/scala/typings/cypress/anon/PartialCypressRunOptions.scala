@@ -20,6 +20,7 @@ trait PartialCypressRunOptions extends js.Object {
   var parallel: js.UndefOr[Boolean] = js.undefined
   var port: js.UndefOr[Double] = js.undefined
   var project: js.UndefOr[String] = js.undefined
+  var quiet: js.UndefOr[Boolean] = js.undefined
   var record: js.UndefOr[Boolean] = js.undefined
   var reporter: js.UndefOr[String] = js.undefined
   var reporterOptions: js.UndefOr[js.Any] = js.undefined
@@ -43,6 +44,7 @@ object PartialCypressRunOptions {
     parallel: js.UndefOr[Boolean] = js.undefined,
     port: js.UndefOr[Double] = js.undefined,
     project: String = null,
+    quiet: js.UndefOr[Boolean] = js.undefined,
     record: js.UndefOr[Boolean] = js.undefined,
     reporter: String = null,
     reporterOptions: js.Any = null,
@@ -63,6 +65,7 @@ object PartialCypressRunOptions {
     if (!js.isUndefined(parallel)) __obj.updateDynamic("parallel")(parallel.get.asInstanceOf[js.Any])
     if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.get.asInstanceOf[js.Any])
     if (!js.isUndefined(record)) __obj.updateDynamic("record")(record.get.asInstanceOf[js.Any])
     if (reporter != null) __obj.updateDynamic("reporter")(reporter.asInstanceOf[js.Any])
     if (reporterOptions != null) __obj.updateDynamic("reporterOptions")(reporterOptions.asInstanceOf[js.Any])

@@ -11,7 +11,7 @@ trait CellState[D /* <: js.Object */] extends js.Object {
 
 object CellState {
   @scala.inline
-  def apply[D](cellState: UseRowStateLocalState[D, _]): CellState[D] = {
+  def apply[/* <: js.Object */ D](cellState: UseRowStateLocalState[D, _]): CellState[D] = {
     val __obj = js.Dynamic.literal(cellState = cellState.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellState[D]]
   }

@@ -2,6 +2,7 @@ package typings.ssri.mod
 
 import typings.ssri.anon.PickAlgorithm
 import typings.ssri.anon.Sep
+import typings.ssri.anon.Single
 import typings.ssri.anon.Strict
 import typings.ssri.anon.`0`
 import typings.ssri.ssriBooleans.`false`
@@ -26,6 +27,16 @@ class Integrity () extends js.Object {
   def `match`(integrity: HashLike, opts: PickAlgorithm): Hash | `false` = js.native
   def `match`(integrity: IntegrityLike): Hash | `false` = js.native
   def `match`(integrity: IntegrityLike, opts: PickAlgorithm): Hash | `false` = js.native
+  /**
+    * Safely merges another IntegrityLike or integrity string into an Integrity object.
+    */
+  def merge(): Unit = js.native
+  def merge(otherIntegrity: String): Unit = js.native
+  def merge(otherIntegrity: String, opts: Single): Unit = js.native
+  def merge(otherIntegrity: HashLike): Unit = js.native
+  def merge(otherIntegrity: HashLike, opts: Single): Unit = js.native
+  def merge(otherIntegrity: IntegrityLike): Unit = js.native
+  def merge(otherIntegrity: IntegrityLike, opts: Single): Unit = js.native
   def pickAlgorithm(): String = js.native
   def pickAlgorithm(opts: `0`): String = js.native
   def toJSON(): String = js.native

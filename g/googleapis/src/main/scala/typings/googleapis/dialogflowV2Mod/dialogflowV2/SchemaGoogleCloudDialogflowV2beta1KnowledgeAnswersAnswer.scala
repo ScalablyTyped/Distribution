@@ -51,14 +51,14 @@ object SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer {
   def apply(
     answer: String = null,
     faqQuestion: String = null,
-    matchConfidence: Int | Double = null,
+    matchConfidence: js.UndefOr[Double] = js.undefined,
     matchConfidenceLevel: String = null,
     source: String = null
   ): SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer = {
     val __obj = js.Dynamic.literal()
     if (answer != null) __obj.updateDynamic("answer")(answer.asInstanceOf[js.Any])
     if (faqQuestion != null) __obj.updateDynamic("faqQuestion")(faqQuestion.asInstanceOf[js.Any])
-    if (matchConfidence != null) __obj.updateDynamic("matchConfidence")(matchConfidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchConfidence)) __obj.updateDynamic("matchConfidence")(matchConfidence.get.asInstanceOf[js.Any])
     if (matchConfidenceLevel != null) __obj.updateDynamic("matchConfidenceLevel")(matchConfidenceLevel.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer]

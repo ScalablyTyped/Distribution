@@ -4,7 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
-import typings.googleapis.AnonBody
+import typings.googleapis.anon.Body
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +30,7 @@ trait ParamsResourceEditsDeobfuscationfilesUpload extends StandardParameters {
   /**
     * Media metadata
     */
-  var media: js.UndefOr[AnonBody] = js.native
+  var media: js.UndefOr[Body] = js.native
   /**
     * Unique identifier of the Android app for which the deobfuscatiuon files
     * are being uploaded; for example, "com.spiffygame".
@@ -42,13 +42,13 @@ object ParamsResourceEditsDeobfuscationfilesUpload {
   @scala.inline
   def apply(
     alt: String = null,
-    apkVersionCode: Int | Double = null,
+    apkVersionCode: js.UndefOr[Double] = js.undefined,
     auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
     deobfuscationFileType: String = null,
     editId: String = null,
     fields: String = null,
     key: String = null,
-    media: AnonBody = null,
+    media: Body = null,
     oauth_token: String = null,
     packageName: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
@@ -57,7 +57,7 @@ object ParamsResourceEditsDeobfuscationfilesUpload {
   ): ParamsResourceEditsDeobfuscationfilesUpload = {
     val __obj = js.Dynamic.literal()
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (apkVersionCode != null) __obj.updateDynamic("apkVersionCode")(apkVersionCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(apkVersionCode)) __obj.updateDynamic("apkVersionCode")(apkVersionCode.get.asInstanceOf[js.Any])
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (deobfuscationFileType != null) __obj.updateDynamic("deobfuscationFileType")(deobfuscationFileType.asInstanceOf[js.Any])
     if (editId != null) __obj.updateDynamic("editId")(editId.asInstanceOf[js.Any])
@@ -66,7 +66,7 @@ object ParamsResourceEditsDeobfuscationfilesUpload {
     if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceEditsDeobfuscationfilesUpload]

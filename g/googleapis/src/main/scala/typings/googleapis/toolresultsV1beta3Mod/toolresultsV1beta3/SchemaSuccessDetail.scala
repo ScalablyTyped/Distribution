@@ -16,7 +16,7 @@ object SchemaSuccessDetail {
   @scala.inline
   def apply(otherNativeCrash: js.UndefOr[Boolean] = js.undefined): SchemaSuccessDetail = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(otherNativeCrash)) __obj.updateDynamic("otherNativeCrash")(otherNativeCrash.asInstanceOf[js.Any])
+    if (!js.isUndefined(otherNativeCrash)) __obj.updateDynamic("otherNativeCrash")(otherNativeCrash.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSuccessDetail]
   }
 }

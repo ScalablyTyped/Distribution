@@ -9,13 +9,14 @@ import scala.scalajs.js.annotation._
 trait CacheSizeBytes extends PersistenceSettings {
   val cacheSizeBytes: Double
   val durable: `true`
+  val forceOwningTab: Boolean
   val synchronizeTabs: Boolean
 }
 
 object CacheSizeBytes {
   @scala.inline
-  def apply(cacheSizeBytes: Double, durable: `true`, synchronizeTabs: Boolean): CacheSizeBytes = {
-    val __obj = js.Dynamic.literal(cacheSizeBytes = cacheSizeBytes.asInstanceOf[js.Any], durable = durable.asInstanceOf[js.Any], synchronizeTabs = synchronizeTabs.asInstanceOf[js.Any])
+  def apply(cacheSizeBytes: Double, durable: `true`, forceOwningTab: Boolean, synchronizeTabs: Boolean): CacheSizeBytes = {
+    val __obj = js.Dynamic.literal(cacheSizeBytes = cacheSizeBytes.asInstanceOf[js.Any], durable = durable.asInstanceOf[js.Any], forceOwningTab = forceOwningTab.asInstanceOf[js.Any], synchronizeTabs = synchronizeTabs.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheSizeBytes]
   }
 }

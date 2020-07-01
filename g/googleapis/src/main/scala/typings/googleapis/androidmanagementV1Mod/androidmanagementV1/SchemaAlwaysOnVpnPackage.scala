@@ -23,7 +23,7 @@ object SchemaAlwaysOnVpnPackage {
   @scala.inline
   def apply(lockdownEnabled: js.UndefOr[Boolean] = js.undefined, packageName: String = null): SchemaAlwaysOnVpnPackage = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(lockdownEnabled)) __obj.updateDynamic("lockdownEnabled")(lockdownEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockdownEnabled)) __obj.updateDynamic("lockdownEnabled")(lockdownEnabled.get.asInstanceOf[js.Any])
     if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAlwaysOnVpnPackage]
   }

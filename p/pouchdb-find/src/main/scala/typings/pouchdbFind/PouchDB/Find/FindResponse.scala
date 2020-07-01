@@ -13,7 +13,7 @@ trait FindResponse[Content /* <: js.Object */] extends js.Object {
 
 object FindResponse {
   @scala.inline
-  def apply[Content](
+  def apply[/* <: js.Object */ Content](
     docs: js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.ExistingDocument<Content> */ _
     ],

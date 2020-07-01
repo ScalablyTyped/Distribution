@@ -134,7 +134,7 @@ object SchemaWorkerPool {
     autoscalingSettings: SchemaAutoscalingSettings = null,
     dataDisks: js.Array[SchemaDisk] = null,
     defaultPackageSet: String = null,
-    diskSizeGb: Int | Double = null,
+    diskSizeGb: js.UndefOr[Double] = js.undefined,
     diskSourceImage: String = null,
     diskType: String = null,
     ipConfiguration: String = null,
@@ -142,8 +142,8 @@ object SchemaWorkerPool {
     machineType: String = null,
     metadata: StringDictionary[String] = null,
     network: String = null,
-    numThreadsPerWorker: Int | Double = null,
-    numWorkers: Int | Double = null,
+    numThreadsPerWorker: js.UndefOr[Double] = js.undefined,
+    numWorkers: js.UndefOr[Double] = js.undefined,
     onHostMaintenance: String = null,
     packages: js.Array[SchemaPackage] = null,
     poolArgs: StringDictionary[js.Any] = null,
@@ -157,7 +157,7 @@ object SchemaWorkerPool {
     if (autoscalingSettings != null) __obj.updateDynamic("autoscalingSettings")(autoscalingSettings.asInstanceOf[js.Any])
     if (dataDisks != null) __obj.updateDynamic("dataDisks")(dataDisks.asInstanceOf[js.Any])
     if (defaultPackageSet != null) __obj.updateDynamic("defaultPackageSet")(defaultPackageSet.asInstanceOf[js.Any])
-    if (diskSizeGb != null) __obj.updateDynamic("diskSizeGb")(diskSizeGb.asInstanceOf[js.Any])
+    if (!js.isUndefined(diskSizeGb)) __obj.updateDynamic("diskSizeGb")(diskSizeGb.get.asInstanceOf[js.Any])
     if (diskSourceImage != null) __obj.updateDynamic("diskSourceImage")(diskSourceImage.asInstanceOf[js.Any])
     if (diskType != null) __obj.updateDynamic("diskType")(diskType.asInstanceOf[js.Any])
     if (ipConfiguration != null) __obj.updateDynamic("ipConfiguration")(ipConfiguration.asInstanceOf[js.Any])
@@ -165,8 +165,8 @@ object SchemaWorkerPool {
     if (machineType != null) __obj.updateDynamic("machineType")(machineType.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
-    if (numThreadsPerWorker != null) __obj.updateDynamic("numThreadsPerWorker")(numThreadsPerWorker.asInstanceOf[js.Any])
-    if (numWorkers != null) __obj.updateDynamic("numWorkers")(numWorkers.asInstanceOf[js.Any])
+    if (!js.isUndefined(numThreadsPerWorker)) __obj.updateDynamic("numThreadsPerWorker")(numThreadsPerWorker.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numWorkers)) __obj.updateDynamic("numWorkers")(numWorkers.get.asInstanceOf[js.Any])
     if (onHostMaintenance != null) __obj.updateDynamic("onHostMaintenance")(onHostMaintenance.asInstanceOf[js.Any])
     if (packages != null) __obj.updateDynamic("packages")(packages.asInstanceOf[js.Any])
     if (poolArgs != null) __obj.updateDynamic("poolArgs")(poolArgs.asInstanceOf[js.Any])

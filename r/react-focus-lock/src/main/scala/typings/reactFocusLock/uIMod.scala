@@ -2,10 +2,12 @@ package typings.reactFocusLock
 
 import typings.react.mod.Component
 import typings.react.mod.FC
+import typings.react.mod.RefObject
 import typings.reactFocusLock.anon.ReactFocusLockPropsReactN
 import typings.reactFocusLock.interfacesMod.AutoFocusProps
 import typings.reactFocusLock.interfacesMod.FreeFocusProps
 import typings.reactFocusLock.interfacesMod.InFocusGuardProps
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,5 +35,6 @@ object uIMod extends js.Object {
     * Traps Focus inside a Lock
     */
   val default: FC[ReactFocusLockPropsReactN] = js.native
+  def useFocusInside(node: RefObject[HTMLElement]): Unit = js.native
 }
 

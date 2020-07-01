@@ -15,7 +15,7 @@ trait LetterSpacingProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] ex
 
 object LetterSpacingProps {
   @scala.inline
-  def apply[ThemeType, TVal](letterSpacing: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): LetterSpacingProps[ThemeType, TVal] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType, TVal](letterSpacing: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): LetterSpacingProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(letterSpacing)) __obj.updateDynamic("letterSpacing")(letterSpacing.asInstanceOf[js.Any])
     __obj.asInstanceOf[LetterSpacingProps[ThemeType, TVal]]

@@ -203,7 +203,7 @@ package object directoryserviceMod {
     - typings.awsSdk.awsSdkStrings.Shared_
     - typings.awsSdk.awsSdkStrings.PendingAcceptance
     - typings.awsSdk.awsSdkStrings.Rejected_
-    - typings.awsSdk.awsSdkStrings.Rejecting
+    - typings.awsSdk.awsSdkStrings.Rejecting_
     - typings.awsSdk.awsSdkStrings.RejectFailed
     - typings.awsSdk.awsSdkStrings.Sharing
     - typings.awsSdk.awsSdkStrings.ShareFailed

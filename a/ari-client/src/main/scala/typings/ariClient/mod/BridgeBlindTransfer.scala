@@ -6,14 +6,37 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BridgeBlindTransfer extends Event {
+  /**
+    * The bridge being transferred.
+    */
   var bridge: Bridge
-  /* Properties */
+  /**
+    * The channel performing the blind transfer.
+    */
   var channel: Channel
+  /**
+    * The context transferred to.
+    */
   var context: String
+  /**
+    * The extension transferred to.
+    */
   var exten: String
+  /**
+    * Whether the transfer was externally initiated or not.
+    */
   var is_external: Boolean
+  /**
+    * The channel that is replacing transferer when the transferee(s) can not be transferred directly.
+    */
   var replace_channel: js.UndefOr[Channel] = js.undefined
+  /**
+    * The result of the transfer attempt.
+    */
   var result: String
+  /**
+    * The channel that is being transferred.
+    */
   var transferee: js.UndefOr[Channel] = js.undefined
 }
 

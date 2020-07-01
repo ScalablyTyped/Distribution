@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashDefaultsAll extends js.Object {
+trait LodashDefaultsAll extends LodashConvertible {
   def apply(`object`: js.Array[_]): js.Any = js.native
   def apply[TObject, TSource](`object`: js.Tuple2[TObject, TSource]): NonNullable[TSource with TObject] = js.native
   def apply[TObject, TSource1, TSource2](`object`: js.Tuple3[TObject, TSource1, TSource2]): NonNullable[TSource2 with TSource1 with TObject] = js.native

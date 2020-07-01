@@ -7,35 +7,35 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StartJobRequest extends js.Object {
   /**
-    *  Unique Id for an Amplify App. 
+    *  The unique ID for an Amplify app. 
     */
   var appId: AppId = js.native
   /**
-    *  Name for the branch, for the Job. 
+    *  The branch name for the job. 
     */
   var branchName: BranchName = js.native
   /**
-    *  Commit Id from 3rd party repository provider for the Job. 
+    *  The commit ID from a third-party repository provider for the job. 
     */
   var commitId: js.UndefOr[CommitId] = js.native
   /**
-    *  Commit message from 3rd party repository provider for the Job. 
+    *  The commit message from a third-party repository provider for the job. 
     */
   var commitMessage: js.UndefOr[CommitMessage] = js.native
   /**
-    *  Commit date / time for the Job. 
+    *  The commit date and time for the job. 
     */
   var commitTime: js.UndefOr[CommitTime] = js.native
   /**
-    *  Unique Id for an existing job. Required for "RETRY" JobType. 
+    *  The unique ID for an existing job. This is required if the value of jobType is RETRY. 
     */
   var jobId: js.UndefOr[JobId] = js.native
   /**
-    *  Descriptive reason for starting this job. 
+    *  A descriptive reason for starting this job. 
     */
   var jobReason: js.UndefOr[JobReason] = js.native
   /**
-    *  Type for the Job. Available JobTypes are: \n "RELEASE": Start a new job with the latest change from the specified branch. Only available for apps that have connected to a repository. "RETRY": Retry an existing job. JobId is required for this type of job. 
+    *  Describes the type for the job. The job type RELEASE starts a new job with the latest change from the specified branch. This value is available only for apps that are connected to a repository. The job type RETRY retries an existing job. If the job type value is RETRY, the jobId is also required. 
     */
   var jobType: JobType = js.native
 }

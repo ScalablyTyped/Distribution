@@ -11,5 +11,11 @@ import scala.scalajs.js.annotation._
   * In version 8.2.0: introduced
   */
 @js.native
-trait IRemoteEntitySourceDocument extends IDocument
+trait IRemoteEntitySourceDocument extends IDocument {
+  /**
+    * In version 8.11.0: added public
+    * In version 8.10.0: introduced
+    */
+  val icon: String | Null = js.native
+}
 

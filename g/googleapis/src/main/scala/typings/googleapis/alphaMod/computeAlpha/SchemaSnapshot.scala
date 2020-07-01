@@ -167,7 +167,7 @@ object SchemaSnapshot {
     storageLocations: js.Array[String] = null
   ): SchemaSnapshot = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoCreated)) __obj.updateDynamic("autoCreated")(autoCreated.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCreated)) __obj.updateDynamic("autoCreated")(autoCreated.get.asInstanceOf[js.Any])
     if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (diskSizeGb != null) __obj.updateDynamic("diskSizeGb")(diskSizeGb.asInstanceOf[js.Any])

@@ -5,38 +5,133 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RTPstat extends js.Object {
+  /**
+    * The Asterisk channels unique ID that owns this instance.
+    */
   var channel_uniqueid: String
+  /**
+    * Maximum jitter on local side.
+    */
   var local_maxjitter: js.UndefOr[Double] = js.undefined
+  /**
+    * Maximum number of packets lost on local side.
+    */
   var local_maxrxploss: js.UndefOr[Double] = js.undefined
+  /**
+    * Minimum jitter on local side.
+    */
   var local_minjitter: js.UndefOr[Double] = js.undefined
+  /**
+    * Minimum number of packets lost on local side.
+    */
   var local_minrxploss: js.UndefOr[Double] = js.undefined
+  /**
+    * Average jitter on local side.
+    */
   var local_normdevjitter: js.UndefOr[Double] = js.undefined
+  /**
+    * Average number of packets lost on local side.
+    */
   var local_normdevrxploss: js.UndefOr[Double] = js.undefined
+  /**
+    * Our SSRC.
+    */
   var local_ssrc: Double
+  /**
+    * Standard deviation jitter on local side.
+    */
   var local_stdevjitter: js.UndefOr[Double] = js.undefined
+  /**
+    * Standard deviation packets lost on local side.
+    */
   var local_stdevrxploss: js.UndefOr[Double] = js.undefined
+  /**
+    * Maximum round trip time.
+    */
   var maxrtt: js.UndefOr[Double] = js.undefined
+  /**
+    * Minimum round trip time.
+    */
   var minrtt: js.UndefOr[Double] = js.undefined
+  /**
+    * Average round trip time.
+    */
   var normdevrtt: js.UndefOr[Double] = js.undefined
+  /**
+    * Maximum jitter on remote side.
+    */
   var remote_maxjitter: js.UndefOr[Double] = js.undefined
+  /**
+    * Maximum number of packets lost on remote side.
+    */
   var remote_maxrxploss: js.UndefOr[Double] = js.undefined
+  /**
+    * Minimum jitter on remote side.
+    */
   var remote_minjitter: js.UndefOr[Double] = js.undefined
+  /**
+    * Minimum number of packets lost on remote side.
+    */
   var remote_minrxploss: js.UndefOr[Double] = js.undefined
+  /**
+    * Average jitter on remote side.
+    */
   var remote_normdevjitter: js.UndefOr[Double] = js.undefined
+  /**
+    * Average number of packets lost on remote side.
+    */
   var remote_normdevrxploss: js.UndefOr[Double] = js.undefined
+  /**
+    * Their SSRC.
+    */
   var remote_ssrc: Double
+  /**
+    * Standard deviation jitter on remote side.
+    */
   var remote_stdevjitter: js.UndefOr[Double] = js.undefined
+  /**
+    * Standard deviation packets lost on remote side.
+    */
   var remote_stdevrxploss: js.UndefOr[Double] = js.undefined
+  /**
+    * Total round trip time.
+    */
   var rtt: js.UndefOr[Double] = js.undefined
+  /**
+    * Number of packets received.
+    */
   var rxcount: Double
+  /**
+    * Jitter on received packets.
+    */
   var rxjitter: js.UndefOr[Double] = js.undefined
+  /**
+    * Number of octets received.
+    */
   var rxoctetcount: Double
+  /**
+    * Number of received packets lost.
+    */
   var rxploss: Double
+  /**
+    * Standard deviation round trip time.
+    */
   var stdevrtt: js.UndefOr[Double] = js.undefined
-  /* Properties */
+  /**
+    * Number of packets transmitted.
+    */
   var txcount: Double
+  /**
+    * Jitter on transmitted packets.
+    */
   var txjitter: js.UndefOr[Double] = js.undefined
+  /**
+    * Number of octets transmitted.
+    */
   var txoctetcount: Double
+  /**
+    * Number of transmitted packets lost.
+    */
   var txploss: Double
 }
 

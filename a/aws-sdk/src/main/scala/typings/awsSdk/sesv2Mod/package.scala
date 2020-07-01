@@ -87,6 +87,7 @@ package object sesv2Mod {
     - typings.awsSdk.awsSdkStrings.OPEN
     - typings.awsSdk.awsSdkStrings.CLICK
     - typings.awsSdk.awsSdkStrings.RENDERING_FAILURE
+    - typings.awsSdk.awsSdkStrings.DELIVERY_DELAY
     - java.lang.String
   */
   type EventType = typings.awsSdk.sesv2Mod._EventType | java.lang.String

@@ -160,6 +160,7 @@ trait MonthPickerProps extends js.Object {
   var prefixCls: js.UndefOr[String] = js.undefined
   var renderExtraFooter: js.UndefOr[js.Function1[/* mode */ PanelMode, ReactNode]] = js.undefined
   var role: js.UndefOr[String] = js.undefined
+  var showNow: js.UndefOr[Boolean] = js.undefined
   var showTime: js.UndefOr[Boolean | SharedTimeProps[Moment]] = js.undefined
   var showToday: js.UndefOr[Boolean] = js.undefined
   var size: js.UndefOr[SizeType] = js.undefined
@@ -265,6 +266,7 @@ object MonthPickerProps {
     prefixCls: String = null,
     renderExtraFooter: /* mode */ PanelMode => ReactNode = null,
     role: String = null,
+    showNow: js.UndefOr[Boolean] = js.undefined,
     showTime: Boolean | SharedTimeProps[Moment] = null,
     showToday: js.UndefOr[Boolean] = js.undefined,
     size: SizeType = null,
@@ -367,6 +369,7 @@ object MonthPickerProps {
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (renderExtraFooter != null) __obj.updateDynamic("renderExtraFooter")(js.Any.fromFunction1(renderExtraFooter))
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNow)) __obj.updateDynamic("showNow")(showNow.get.asInstanceOf[js.Any])
     if (showTime != null) __obj.updateDynamic("showTime")(showTime.asInstanceOf[js.Any])
     if (!js.isUndefined(showToday)) __obj.updateDynamic("showToday")(showToday.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

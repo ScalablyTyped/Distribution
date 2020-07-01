@@ -1,7 +1,7 @@
 package typings.grommet.dropMod
 
+import typings.grommet.anon.Bottom
 import typings.grommet.anon.Horizontal
-import typings.grommet.anon.Left
 import typings.grommet.grommetStrings.auto
 import typings.grommet.grommetStrings.hidden
 import typings.grommet.grommetStrings.scroll
@@ -15,7 +15,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DropProps extends js.Object {
-  var align: js.UndefOr[Left] = js.undefined
+  var align: js.UndefOr[Bottom] = js.undefined
   var elevation: js.UndefOr[ElevationType] = js.undefined
   var onClickOutside: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var onEsc: js.UndefOr[KeyboardType] = js.undefined
@@ -30,7 +30,7 @@ trait DropProps extends js.Object {
 object DropProps {
   @scala.inline
   def apply(
-    align: Left = null,
+    align: Bottom = null,
     elevation: ElevationType = null,
     onClickOutside: /* repeated */ js.Any => _ = null,
     onEsc: /* event */ KeyboardEvent[HTMLElement] => Unit = null,

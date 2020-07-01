@@ -49,20 +49,20 @@ trait SchemaProbe extends js.Object {
 object SchemaProbe {
   @scala.inline
   def apply(
-    failureThreshold: Int | Double = null,
+    failureThreshold: js.UndefOr[Double] = js.undefined,
     handler: SchemaHandler = null,
-    initialDelaySeconds: Int | Double = null,
-    periodSeconds: Int | Double = null,
-    successThreshold: Int | Double = null,
-    timeoutSeconds: Int | Double = null
+    initialDelaySeconds: js.UndefOr[Double] = js.undefined,
+    periodSeconds: js.UndefOr[Double] = js.undefined,
+    successThreshold: js.UndefOr[Double] = js.undefined,
+    timeoutSeconds: js.UndefOr[Double] = js.undefined
   ): SchemaProbe = {
     val __obj = js.Dynamic.literal()
-    if (failureThreshold != null) __obj.updateDynamic("failureThreshold")(failureThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(failureThreshold)) __obj.updateDynamic("failureThreshold")(failureThreshold.get.asInstanceOf[js.Any])
     if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
-    if (initialDelaySeconds != null) __obj.updateDynamic("initialDelaySeconds")(initialDelaySeconds.asInstanceOf[js.Any])
-    if (periodSeconds != null) __obj.updateDynamic("periodSeconds")(periodSeconds.asInstanceOf[js.Any])
-    if (successThreshold != null) __obj.updateDynamic("successThreshold")(successThreshold.asInstanceOf[js.Any])
-    if (timeoutSeconds != null) __obj.updateDynamic("timeoutSeconds")(timeoutSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialDelaySeconds)) __obj.updateDynamic("initialDelaySeconds")(initialDelaySeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(periodSeconds)) __obj.updateDynamic("periodSeconds")(periodSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(successThreshold)) __obj.updateDynamic("successThreshold")(successThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutSeconds)) __obj.updateDynamic("timeoutSeconds")(timeoutSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProbe]
   }
 }

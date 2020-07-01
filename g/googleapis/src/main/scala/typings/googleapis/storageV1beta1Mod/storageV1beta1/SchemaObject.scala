@@ -1,8 +1,8 @@
 package typings.googleapis.storageV1beta1Mod.storageV1beta1
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.googleapis.AnonAlgorithm
-import typings.googleapis.AnonEntity
+import typings.googleapis.anon.Algorithm
+import typings.googleapis.anon.Entity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,7 +48,7 @@ trait SchemaObject extends js.Object {
     * Object media data. Provided on your behalf when uploading raw media or
     * multipart/related with an auxiliary media part.
     */
-  var media: js.UndefOr[AnonAlgorithm] = js.native
+  var media: js.UndefOr[Algorithm] = js.native
   /**
     * User-provided metadata, in key/value pairs.
     */
@@ -60,7 +60,7 @@ trait SchemaObject extends js.Object {
   /**
     * The owner of the object. This will always be the uploader of the object.
     */
-  var owner: js.UndefOr[AnonEntity] = js.native
+  var owner: js.UndefOr[Entity] = js.native
   /**
     * The link to this object.
     */
@@ -78,10 +78,10 @@ object SchemaObject {
     contentLanguage: String = null,
     id: String = null,
     kind: String = null,
-    media: AnonAlgorithm = null,
+    media: Algorithm = null,
     metadata: StringDictionary[String] = null,
     name: String = null,
-    owner: AnonEntity = null,
+    owner: Entity = null,
     selfLink: String = null
   ): SchemaObject = {
     val __obj = js.Dynamic.literal()

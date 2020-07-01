@@ -12,7 +12,9 @@ object FixOptions {
   @scala.inline
   def apply(
     allowInlineConfig: js.UndefOr[Boolean] = js.undefined,
+    disableFixes: js.UndefOr[Boolean] = js.undefined,
     filename: String = null,
+    filterCodeBlock: js.UndefOr[Boolean] = js.undefined,
     fix: js.UndefOr[Boolean] = js.undefined,
     postprocess: /* problemLists */ js.Array[js.Array[LintMessage]] => js.Array[LintMessage] = null,
     preprocess: /* code */ String => js.Array[String] = null,
@@ -20,7 +22,9 @@ object FixOptions {
   ): FixOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowInlineConfig)) __obj.updateDynamic("allowInlineConfig")(allowInlineConfig.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableFixes)) __obj.updateDynamic("disableFixes")(disableFixes.get.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterCodeBlock)) __obj.updateDynamic("filterCodeBlock")(filterCodeBlock.get.asInstanceOf[js.Any])
     if (!js.isUndefined(fix)) __obj.updateDynamic("fix")(fix.get.asInstanceOf[js.Any])
     if (postprocess != null) __obj.updateDynamic("postprocess")(js.Any.fromFunction1(postprocess))
     if (preprocess != null) __obj.updateDynamic("preprocess")(js.Any.fromFunction1(preprocess))

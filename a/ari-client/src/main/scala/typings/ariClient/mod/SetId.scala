@@ -5,8 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SetId extends js.Object {
+  /**
+    * Effective group id.
+    */
   var group: String
-  /* Properties */
+  /**
+    * Effective user id.
+    */
   var user: String
 }
 

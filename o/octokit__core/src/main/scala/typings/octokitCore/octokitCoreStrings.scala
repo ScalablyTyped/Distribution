@@ -186,9 +186,6 @@ object octokitCoreStrings {
   sealed trait `DELETE SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_id` extends js.Object
   
   @js.native
-  sealed trait `DELETE SlashreposSlashColonownerSlashColonrepoSlashdownloadsSlashColondownload_id` extends js.Object
-  
-  @js.native
   sealed trait `DELETE SlashreposSlashColonownerSlashColonrepoSlashgitSlashrefsSlashColonref` extends js.Object
   
   @js.native
@@ -814,12 +811,6 @@ object octokitCoreStrings {
   
   @js.native
   sealed trait `GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatusesSlashColonstatus_id` extends js.Object
-  
-  @js.native
-  sealed trait `GET SlashreposSlashColonownerSlashColonrepoSlashdownloads` extends js.Object
-  
-  @js.native
-  sealed trait `GET SlashreposSlashColonownerSlashColonrepoSlashdownloadsSlashColondownload_id` extends js.Object
   
   @js.native
   sealed trait `GET SlashreposSlashColonownerSlashColonrepoSlashevents` extends js.Object
@@ -1959,8 +1950,6 @@ object octokitCoreStrings {
   @scala.inline
   def `DELETE SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_id`: `DELETE SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_id` = ("DELETE /repos/:owner/:repo/deployments/:deployment_id").asInstanceOf[`DELETE SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_id`]
   @scala.inline
-  def `DELETE SlashreposSlashColonownerSlashColonrepoSlashdownloadsSlashColondownload_id`: `DELETE SlashreposSlashColonownerSlashColonrepoSlashdownloadsSlashColondownload_id` = ("DELETE /repos/:owner/:repo/downloads/:download_id").asInstanceOf[`DELETE SlashreposSlashColonownerSlashColonrepoSlashdownloadsSlashColondownload_id`]
-  @scala.inline
   def `DELETE SlashreposSlashColonownerSlashColonrepoSlashgitSlashrefsSlashColonref`: `DELETE SlashreposSlashColonownerSlashColonrepoSlashgitSlashrefsSlashColonref` = ("DELETE /repos/:owner/:repo/git/refs/:ref").asInstanceOf[`DELETE SlashreposSlashColonownerSlashColonrepoSlashgitSlashrefsSlashColonref`]
   @scala.inline
   def `DELETE SlashreposSlashColonownerSlashColonrepoSlashhooksSlashColonhook_id`: `DELETE SlashreposSlashColonownerSlashColonrepoSlashhooksSlashColonhook_id` = ("DELETE /repos/:owner/:repo/hooks/:hook_id").asInstanceOf[`DELETE SlashreposSlashColonownerSlashColonrepoSlashhooksSlashColonhook_id`]
@@ -2378,10 +2367,6 @@ object octokitCoreStrings {
   def `GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses`: `GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses` = ("GET /repos/:owner/:repo/deployments/:deployment_id/statuses").asInstanceOf[`GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses`]
   @scala.inline
   def `GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatusesSlashColonstatus_id`: `GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatusesSlashColonstatus_id` = ("GET /repos/:owner/:repo/deployments/:deployment_id/statuses/:status_id").asInstanceOf[`GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatusesSlashColonstatus_id`]
-  @scala.inline
-  def `GET SlashreposSlashColonownerSlashColonrepoSlashdownloads`: `GET SlashreposSlashColonownerSlashColonrepoSlashdownloads` = ("GET /repos/:owner/:repo/downloads").asInstanceOf[`GET SlashreposSlashColonownerSlashColonrepoSlashdownloads`]
-  @scala.inline
-  def `GET SlashreposSlashColonownerSlashColonrepoSlashdownloadsSlashColondownload_id`: `GET SlashreposSlashColonownerSlashColonrepoSlashdownloadsSlashColondownload_id` = ("GET /repos/:owner/:repo/downloads/:download_id").asInstanceOf[`GET SlashreposSlashColonownerSlashColonrepoSlashdownloadsSlashColondownload_id`]
   @scala.inline
   def `GET SlashreposSlashColonownerSlashColonrepoSlashevents`: `GET SlashreposSlashColonownerSlashColonrepoSlashevents` = ("GET /repos/:owner/:repo/events").asInstanceOf[`GET SlashreposSlashColonownerSlashColonrepoSlashevents`]
   @scala.inline

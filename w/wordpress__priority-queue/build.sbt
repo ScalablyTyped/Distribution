@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wordpress__priority-queue"
-version := "1.6.0-1f7c39"
+version := "1.7.0-9a892f"
 scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

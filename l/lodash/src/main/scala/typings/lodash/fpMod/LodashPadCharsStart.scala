@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashPadCharsStart extends js.Object {
+trait LodashPadCharsStart extends LodashConvertible {
   def apply(chars: String): LodashPadCharsStart1x1 = js.native
   def apply(chars: String, length: Double): LodashPadCharsStart1x3 = js.native
   def apply(chars: String, length: Double, string: String): String = js.native

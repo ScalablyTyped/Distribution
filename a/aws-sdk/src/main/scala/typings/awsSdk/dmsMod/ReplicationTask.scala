@@ -39,7 +39,7 @@ trait ReplicationTask extends js.Object {
     */
   var ReplicationTaskCreationDate: js.UndefOr[TStamp] = js.native
   /**
-    * The user-assigned replication task identifier or name. Constraints:   Must contain from 1 to 255 alphanumeric characters or hyphens.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.  
+    * The user-assigned replication task identifier or name. Constraints:   Must contain 1-255 alphanumeric characters or hyphens.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.  
     */
   var ReplicationTaskIdentifier: js.UndefOr[String] = js.native
   /**
@@ -63,7 +63,7 @@ trait ReplicationTask extends js.Object {
     */
   var Status: js.UndefOr[String] = js.native
   /**
-    * The reason the replication task was stopped.
+    * The reason the replication task was stopped. This response parameter can return one of the following values:    "STOP_REASON_FULL_LOAD_COMPLETED" – Full-load migration completed.    "STOP_REASON_CACHED_CHANGES_APPLIED" – Change data capture (CDC) load completed.    "STOP_REASON_CACHED_CHANGES_NOT_APPLIED" – In a full-load and CDC migration, the full-load stopped as specified before starting the CDC migration.    "STOP_REASON_SERVER_TIME" – The migration stopped at the specified server time.  
     */
   var StopReason: js.UndefOr[String] = js.native
   /**
@@ -75,7 +75,7 @@ trait ReplicationTask extends js.Object {
     */
   var TargetEndpointArn: js.UndefOr[String] = js.native
   /**
-    * Supplemental information that the task requires to migrate the data for certain source and target endpoints. For more information, see Specifying Supplemental Data for Task Settings in the AWS Database Migration User Guide. 
+    * Supplemental information that the task requires to migrate the data for certain source and target endpoints. For more information, see Specifying Supplemental Data for Task Settings in the AWS Database Migration Service User Guide. 
     */
   var TaskData: js.UndefOr[String] = js.native
 }

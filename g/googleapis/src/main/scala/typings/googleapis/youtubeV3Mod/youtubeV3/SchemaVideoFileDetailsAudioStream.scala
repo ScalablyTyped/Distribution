@@ -32,13 +32,13 @@ object SchemaVideoFileDetailsAudioStream {
   @scala.inline
   def apply(
     bitrateBps: String = null,
-    channelCount: Int | Double = null,
+    channelCount: js.UndefOr[Double] = js.undefined,
     codec: String = null,
     vendor: String = null
   ): SchemaVideoFileDetailsAudioStream = {
     val __obj = js.Dynamic.literal()
     if (bitrateBps != null) __obj.updateDynamic("bitrateBps")(bitrateBps.asInstanceOf[js.Any])
-    if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(channelCount)) __obj.updateDynamic("channelCount")(channelCount.get.asInstanceOf[js.Any])
     if (codec != null) __obj.updateDynamic("codec")(codec.asInstanceOf[js.Any])
     if (vendor != null) __obj.updateDynamic("vendor")(vendor.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVideoFileDetailsAudioStream]

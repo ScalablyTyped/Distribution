@@ -561,7 +561,7 @@ trait PlotBellcurveOptions extends js.Object {
     * graph and the Y axis minimum.
     *
     * * If `Infinity` or `-Infinity`, the area between the graph and the
-    * corresponing Y axis extreme is filled (since v6.1.0).
+    * corresponding Y axis extreme is filled (since v6.1.0).
     */
   var threshold: js.UndefOr[Double | Null] = js.undefined
   /**

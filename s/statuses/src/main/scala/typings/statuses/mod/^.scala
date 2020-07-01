@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("statuses", JSImport.Namespace)
 @js.native
-object ^ extends TopLevel[Status with CodesToMessages with MessagesToCodes]
+object ^ extends TopLevel[Status]
 

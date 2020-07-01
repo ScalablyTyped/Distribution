@@ -12,7 +12,7 @@ trait NamespaceOptions[Value /* <: js.UndefOr[String] */] extends NodeOptions[Va
 
 object NamespaceOptions {
   @scala.inline
-  def apply[Value](
+  def apply[/* <: js.UndefOr[java.lang.String] */ Value](
     value: Value,
     namespace: String | `true` = null,
     source: NodeSource = null,

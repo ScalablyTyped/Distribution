@@ -23,7 +23,7 @@ trait PieChartProps[T /* <: PieChartData */] extends ChartProps[T] {
 
 object PieChartProps {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.reactNativeSvgCharts.mod.PieChartData */ T](
     data: js.Array[T],
     animate: js.UndefOr[Boolean] = js.undefined,
     animationDuration: js.UndefOr[Double] = js.undefined,

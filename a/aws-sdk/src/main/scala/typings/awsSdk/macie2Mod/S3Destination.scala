@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait S3Destination extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) of the bucket. This must be the ARN of an existing bucket.
+    * The name of the bucket.
     */
   var bucketName: string = js.native
   /**
@@ -15,7 +15,7 @@ trait S3Destination extends js.Object {
     */
   var keyPrefix: js.UndefOr[string] = js.native
   /**
-    * The Amazon Resource Name (ARN) of the AWS Key Management Service master key to use for encryption of the exported results. This must be the ARN of an existing KMS key. In addition, the key must be in the same AWS Region as the bucket.
+    * The Amazon Resource Name (ARN) of the AWS Key Management Service customer master key (CMK) to use for encryption of the results. This must be the ARN of an existing CMK that's in the same AWS Region as the bucket.
     */
   var kmsKeyArn: string = js.native
 }

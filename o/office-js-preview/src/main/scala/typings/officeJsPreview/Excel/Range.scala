@@ -330,6 +330,7 @@ trait Range extends ClientObject {
     * Fills range from the current range to the destination range using the specified AutoFill logic.
     The destination range can be null, or can extend the source either horizontally or vertically.
     Discontiguous ranges are not supported.
+    
     For more information, read {@link https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
     *
     * [Api set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`]
@@ -605,6 +606,13 @@ trait Range extends ClientObject {
   def getColumnsBefore(): Range = js.native
   def getColumnsBefore(count: Double): Range = js.native
   /**
+    * Returns a `WorkbookRangeAreas` object that represents the range containing all the direct precedents of a cell in same worksheet or in multiple worksheets.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def getDirectPrecedents(): WorkbookRangeAreas = js.native
+  /**
     * Gets an object that represents the entire column of the range (for example, if the current range represents cells "B4:E11", its `getEntireColumn` is a range that represents columns "B:E").
     *
     * [Api set: ExcelApi 1.1]
@@ -618,7 +626,7 @@ trait Range extends ClientObject {
   def getEntireRow(): Range = js.native
   /**
     * Renders the range as a base64-encoded png image.
-    *
+    * 
     * **Important**: This API is currently unsupported in Excel for Mac. Visit [OfficeDev/office-js Issue #235](https://github.com/OfficeDev/office-js/issues/235) for the current status.
     *
     * [Api set: ExcelApi 1.7]
@@ -661,6 +669,13 @@ trait Range extends ClientObject {
     */
   def getLastRow(): Range = js.native
   /**
+    * Returns a RangeAreas object that represents the merged areas in this range. Note that if the merged areas count in this range is more than 512, the API will fail to return the result.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def getMergedAreas(): RangeAreas = js.native
+  /**
     * Gets an object which represents a range that's offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an error will be thrown.
     *
     * [Api set: ExcelApi 1.1]
@@ -679,6 +694,13 @@ trait Range extends ClientObject {
     */
   def getPivotTables(): PivotTableScopedCollection = js.native
   def getPivotTables(fullyContained: Boolean): PivotTableScopedCollection = js.native
+  /**
+    * Returns a `WorkbookRangeAreas` object that represents the range containing all the precedents of a cell in same worksheet or in multiple worksheets.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def getPrecedents(): WorkbookRangeAreas = js.native
   /**
     * Gets a Range object similar to the current Range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.
     *

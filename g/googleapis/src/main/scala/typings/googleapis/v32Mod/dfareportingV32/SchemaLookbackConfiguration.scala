@@ -29,10 +29,13 @@ trait SchemaLookbackConfiguration extends js.Object {
 
 object SchemaLookbackConfiguration {
   @scala.inline
-  def apply(clickDuration: Int | Double = null, postImpressionActivitiesDuration: Int | Double = null): SchemaLookbackConfiguration = {
+  def apply(
+    clickDuration: js.UndefOr[Double] = js.undefined,
+    postImpressionActivitiesDuration: js.UndefOr[Double] = js.undefined
+  ): SchemaLookbackConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (clickDuration != null) __obj.updateDynamic("clickDuration")(clickDuration.asInstanceOf[js.Any])
-    if (postImpressionActivitiesDuration != null) __obj.updateDynamic("postImpressionActivitiesDuration")(postImpressionActivitiesDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickDuration)) __obj.updateDynamic("clickDuration")(clickDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(postImpressionActivitiesDuration)) __obj.updateDynamic("postImpressionActivitiesDuration")(postImpressionActivitiesDuration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLookbackConfiguration]
   }
 }

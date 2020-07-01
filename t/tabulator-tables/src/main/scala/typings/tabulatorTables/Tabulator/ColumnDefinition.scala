@@ -58,8 +58,6 @@ trait ColumnDefinition
   var cssClass: js.UndefOr[String] = js.undefined
   /** show or hide column in downloaded data */
   var download: js.UndefOr[Boolean] = js.undefined
-  /** set custom title for column in download */
-  var downloadTitle: js.UndefOr[String] = js.undefined
   /**  There are some circumstances where you may want to block editibility of a cell for one reason or another. To meet this need you can use the editable option. This lets you set a callback that is executed before the editor is built, if this callback returns true the editor is added, if it returns false the edit is aborted and the cell remains a non editable cell. The function is passed one parameter, the CellComponent of the cell about to be edited. You can also pass a boolean value instead of a function to this property.*/
   var editable: js.UndefOr[Boolean | (js.Function1[/* cell */ CellComponent, Boolean])] = js.undefined
   /** allows the user to edit the header titles */
@@ -192,10 +190,18 @@ trait ColumnDefinition
   ] = js.undefined
   /** If you want to dynamically generate the sorterParams at the time the sort is called you can pass a function into the property that should return the params object. */
   var sorterParams: js.UndefOr[ColumnDefinitionSorterParams | ColumnSorterParamLookupFunction] = js.undefined
+  /**When copying to clipboard you may want to apply a different columnheader title from the one usualy used in the table. You can now do this using the titleClipboard column definition option, which takes the same inputs as the standard title property. */
+  var titleClipboard: js.UndefOr[String] = js.undefined
+  /** set custom title for column in download */
+  var titleDownload: js.UndefOr[String] = js.undefined
   /**  formatter function for header title */
   var titleFormatter: js.UndefOr[Formatter] = js.undefined
   /** additional parameters you can pass to the header title formatter */
   var titleFormatterParams: js.UndefOr[FormatterParams] = js.undefined
+  /**When the getHtml function is called you may want to apply a different columnheader title from the one usualy used in the table. You can now do this using the titleHtmlOutput column definition option, which takes the same inputs as the standard title property. */
+  var titleHtmlOutput: js.UndefOr[String] = js.undefined
+  /**When printing you may want to apply a different columnheader title from the one usualy used in the table. You can now do this using the titlePrint column definition option, which takes the same inputs as the standard title property. */
+  var titlePrint: js.UndefOr[String] = js.undefined
   /** sets the on hover tooltip for each cell in this column * * The tooltip parameter can take three different types of value
     boolean - a value of false disables the tooltip, a value of true sets the tooltip of the cell to its value
     string - a string that will be displayed for all cells in the matching column/table.
@@ -214,7 +220,7 @@ trait ColumnDefinition
   /** Validators are used to ensure that any user input into your editable cells matches your requirements.
     Validators can be applied by using the validator property in a columns definition object (see Define Columns for more details). */
   var validator: js.UndefOr[
-    StandardValidatorType | (js.Array[StandardValidatorType | Validator]) | Validator
+    StandardValidatorType | (js.Array[StandardValidatorType | Validator]) | Validator | String
   ] = js.undefined
   /** alter the row height to fit the contents of the cell instead of hiding overflow */
   var variableHeight: js.UndefOr[Boolean] = js.undefined
@@ -263,7 +269,6 @@ object ColumnDefinition {
     contextMenu: js.Array[MenuObject[CellComponent] | MenuSeparator] = null,
     cssClass: String = null,
     download: js.UndefOr[Boolean] = js.undefined,
-    downloadTitle: String = null,
     editable: Boolean | (js.Function1[/* cell */ CellComponent, Boolean]) = null,
     editableTitle: js.UndefOr[Boolean] = js.undefined,
     editor: Editor = null,
@@ -330,14 +335,18 @@ object ColumnDefinition {
       Double
     ]) = null,
     sorterParams: ColumnDefinitionSorterParams | ColumnSorterParamLookupFunction = null,
+    titleClipboard: String = null,
+    titleDownload: String = null,
     titleFormatter: Formatter = null,
     titleFormatterParams: FormatterParams = null,
+    titleHtmlOutput: String = null,
+    titlePrint: String = null,
     tooltip: String | GlobalTooltipOption = null,
     topCalc: ColumnCalc = null,
     topCalcFormatter: Formatter = null,
     topCalcFormatterParams: FormatterParams = null,
     topCalcParams: (/* values */ js.Any, /* data */ js.Any) => js.Any = null,
-    validator: StandardValidatorType | (js.Array[StandardValidatorType | Validator]) | Validator = null,
+    validator: StandardValidatorType | (js.Array[StandardValidatorType | Validator]) | Validator | String = null,
     variableHeight: js.UndefOr[Boolean] = js.undefined,
     vertAlign: VerticalAlign = null,
     visible: js.UndefOr[Boolean] = js.undefined,
@@ -379,7 +388,6 @@ object ColumnDefinition {
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (!js.isUndefined(download)) __obj.updateDynamic("download")(download.get.asInstanceOf[js.Any])
-    if (downloadTitle != null) __obj.updateDynamic("downloadTitle")(downloadTitle.asInstanceOf[js.Any])
     if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
     if (!js.isUndefined(editableTitle)) __obj.updateDynamic("editableTitle")(editableTitle.get.asInstanceOf[js.Any])
     if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
@@ -431,8 +439,12 @@ object ColumnDefinition {
     if (!js.isUndefined(rowHandle)) __obj.updateDynamic("rowHandle")(rowHandle.get.asInstanceOf[js.Any])
     if (sorter != null) __obj.updateDynamic("sorter")(sorter.asInstanceOf[js.Any])
     if (sorterParams != null) __obj.updateDynamic("sorterParams")(sorterParams.asInstanceOf[js.Any])
+    if (titleClipboard != null) __obj.updateDynamic("titleClipboard")(titleClipboard.asInstanceOf[js.Any])
+    if (titleDownload != null) __obj.updateDynamic("titleDownload")(titleDownload.asInstanceOf[js.Any])
     if (titleFormatter != null) __obj.updateDynamic("titleFormatter")(titleFormatter.asInstanceOf[js.Any])
     if (titleFormatterParams != null) __obj.updateDynamic("titleFormatterParams")(titleFormatterParams.asInstanceOf[js.Any])
+    if (titleHtmlOutput != null) __obj.updateDynamic("titleHtmlOutput")(titleHtmlOutput.asInstanceOf[js.Any])
+    if (titlePrint != null) __obj.updateDynamic("titlePrint")(titlePrint.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (topCalc != null) __obj.updateDynamic("topCalc")(topCalc.asInstanceOf[js.Any])
     if (topCalcFormatter != null) __obj.updateDynamic("topCalcFormatter")(topCalcFormatter.asInstanceOf[js.Any])

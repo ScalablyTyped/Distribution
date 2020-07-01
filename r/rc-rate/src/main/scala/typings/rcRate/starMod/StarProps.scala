@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 
 trait StarProps extends js.Object {
   var allowHalf: js.UndefOr[Boolean] = js.undefined
-  var character: js.UndefOr[ReactNode] = js.undefined
+  var character: js.UndefOr[js.Function1[/* props */ StarProps, ReactNode]] = js.undefined
   var characterRender: js.UndefOr[js.Function2[/* origin */ ReactElement, /* props */ StarProps, ReactNode]] = js.undefined
   var count: js.UndefOr[Double] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
@@ -36,7 +36,7 @@ object StarProps {
   @scala.inline
   def apply(
     allowHalf: js.UndefOr[Boolean] = js.undefined,
-    character: ReactNode = null,
+    character: /* props */ StarProps => ReactNode = null,
     characterRender: (/* origin */ ReactElement, /* props */ StarProps) => ReactNode = null,
     count: js.UndefOr[Double] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
@@ -49,7 +49,7 @@ object StarProps {
   ): StarProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowHalf)) __obj.updateDynamic("allowHalf")(allowHalf.get.asInstanceOf[js.Any])
-    if (character != null) __obj.updateDynamic("character")(character.asInstanceOf[js.Any])
+    if (character != null) __obj.updateDynamic("character")(js.Any.fromFunction1(character))
     if (characterRender != null) __obj.updateDynamic("characterRender")(js.Any.fromFunction2(characterRender))
     if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])

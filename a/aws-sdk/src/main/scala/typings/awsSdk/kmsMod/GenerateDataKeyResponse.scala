@@ -11,7 +11,7 @@ trait GenerateDataKeyResponse extends js.Object {
     */
   var CiphertextBlob: js.UndefOr[CiphertextType] = js.native
   /**
-    * The identifier of the CMK that encrypted the data key.
+    * The Amazon Resource Name (key ARN) of the CMK that encrypted the data key.
     */
   var KeyId: js.UndefOr[KeyIdType] = js.native
   /**

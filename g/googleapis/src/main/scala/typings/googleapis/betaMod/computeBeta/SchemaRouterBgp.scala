@@ -41,13 +41,13 @@ object SchemaRouterBgp {
     advertiseMode: String = null,
     advertisedGroups: js.Array[String] = null,
     advertisedIpRanges: js.Array[SchemaRouterAdvertisedIpRange] = null,
-    asn: Int | Double = null
+    asn: js.UndefOr[Double] = js.undefined
   ): SchemaRouterBgp = {
     val __obj = js.Dynamic.literal()
     if (advertiseMode != null) __obj.updateDynamic("advertiseMode")(advertiseMode.asInstanceOf[js.Any])
     if (advertisedGroups != null) __obj.updateDynamic("advertisedGroups")(advertisedGroups.asInstanceOf[js.Any])
     if (advertisedIpRanges != null) __obj.updateDynamic("advertisedIpRanges")(advertisedIpRanges.asInstanceOf[js.Any])
-    if (asn != null) __obj.updateDynamic("asn")(asn.asInstanceOf[js.Any])
+    if (!js.isUndefined(asn)) __obj.updateDynamic("asn")(asn.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRouterBgp]
   }
 }

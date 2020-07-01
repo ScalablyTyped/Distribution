@@ -43,16 +43,16 @@ object SchemaAchievementConfigurationDetail {
     iconUrl: String = null,
     kind: String = null,
     name: SchemaLocalizedStringBundle = null,
-    pointValue: Int | Double = null,
-    sortRank: Int | Double = null
+    pointValue: js.UndefOr[Double] = js.undefined,
+    sortRank: js.UndefOr[Double] = js.undefined
   ): SchemaAchievementConfigurationDetail = {
     val __obj = js.Dynamic.literal()
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pointValue != null) __obj.updateDynamic("pointValue")(pointValue.asInstanceOf[js.Any])
-    if (sortRank != null) __obj.updateDynamic("sortRank")(sortRank.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointValue)) __obj.updateDynamic("pointValue")(pointValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortRank)) __obj.updateDynamic("sortRank")(sortRank.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAchievementConfigurationDetail]
   }
 }

@@ -20,6 +20,7 @@ sealed trait DateFilterCondition extends js.Object
 object DateFilterCondition extends js.Object {
   /**
     * Date is after comparator date.
+    
     Required Criteria: {`comparator`}.
     Optional Criteria: {`wholeDays`}.
     *
@@ -29,6 +30,7 @@ object DateFilterCondition extends js.Object {
   
   /**
     * Date is after or equal to comparator date.
+    
     Required Criteria: {`comparator`}.
     Optional Criteria: {`wholeDays`}.
     *
@@ -150,6 +152,7 @@ object DateFilterCondition extends js.Object {
   
   /**
     * Date is before comparator date.
+    
     Required Criteria: {`comparator`}.
     Optional Criteria: {`wholeDays`}.
     *
@@ -159,6 +162,7 @@ object DateFilterCondition extends js.Object {
   
   /**
     * Date is before or equal to comparator date.
+    
     Required Criteria: {`comparator`}.
     Optional Criteria: {`wholeDays`}.
     *
@@ -168,6 +172,7 @@ object DateFilterCondition extends js.Object {
   
   /**
     * Between `lowerBound` and `upperBound` dates.
+    
     Required Criteria: {`lowerBound`, `upperBound`}.
     Optional Criteria: {`wholeDays`, `exclusive`}.
     *
@@ -177,6 +182,7 @@ object DateFilterCondition extends js.Object {
   
   /**
     * Equals comparator criterion.
+    
     Required Criteria: {`comparator`}.
     Optional Criteria: {`wholeDays`, `exclusive`}.
     *

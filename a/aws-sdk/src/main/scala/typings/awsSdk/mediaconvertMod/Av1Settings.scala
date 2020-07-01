@@ -15,7 +15,7 @@ trait Av1Settings extends js.Object {
     */
   var FramerateControl: js.UndefOr[Av1FramerateControl] = js.native
   /**
-    * When set to INTERPOLATE, produces smoother motion during frame rate conversion.
+    * Optional. Specify how the transcoder performs framerate conversion. The default behavior is to use duplicate drop conversion.
     */
   var FramerateConversionAlgorithm: js.UndefOr[Av1FramerateConversionAlgorithm] = js.native
   /**

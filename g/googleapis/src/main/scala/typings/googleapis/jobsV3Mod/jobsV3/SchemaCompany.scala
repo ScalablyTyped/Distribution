@@ -111,12 +111,12 @@ object SchemaCompany {
     if (eeoText != null) __obj.updateDynamic("eeoText")(eeoText.asInstanceOf[js.Any])
     if (externalId != null) __obj.updateDynamic("externalId")(externalId.asInstanceOf[js.Any])
     if (headquartersAddress != null) __obj.updateDynamic("headquartersAddress")(headquartersAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(hiringAgency)) __obj.updateDynamic("hiringAgency")(hiringAgency.asInstanceOf[js.Any])
+    if (!js.isUndefined(hiringAgency)) __obj.updateDynamic("hiringAgency")(hiringAgency.get.asInstanceOf[js.Any])
     if (imageUri != null) __obj.updateDynamic("imageUri")(imageUri.asInstanceOf[js.Any])
     if (keywordSearchableJobCustomAttributes != null) __obj.updateDynamic("keywordSearchableJobCustomAttributes")(keywordSearchableJobCustomAttributes.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(suspended)) __obj.updateDynamic("suspended")(suspended.asInstanceOf[js.Any])
+    if (!js.isUndefined(suspended)) __obj.updateDynamic("suspended")(suspended.get.asInstanceOf[js.Any])
     if (websiteUri != null) __obj.updateDynamic("websiteUri")(websiteUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCompany]
   }

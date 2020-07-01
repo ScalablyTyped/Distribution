@@ -93,7 +93,7 @@ trait Props[T /* <: Boolean */] extends js.Object {
 
 object Props {
   @scala.inline
-  def apply[T](
+  def apply[/* <: scala.Boolean */ T](
     onSelect: Dictk | js.Array[Dictk] => Unit,
     accept: String = null,
     addToGallery: js.UndefOr[Boolean] = js.undefined,

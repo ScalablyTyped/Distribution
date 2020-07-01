@@ -1,6 +1,6 @@
 package typings.googleapis.driveV2Mod.driveV2
 
-import typings.googleapis.AnonCategory
+import typings.googleapis.anon.Category
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +34,7 @@ trait SchemaApp extends js.Object {
   /**
     * The various icons for the app.
     */
-  var icons: js.UndefOr[js.Array[AnonCategory]] = js.native
+  var icons: js.UndefOr[js.Array[Category]] = js.native
   /**
     * The ID of the app.
     */
@@ -124,7 +124,7 @@ object SchemaApp {
     createInFolderTemplate: String = null,
     createUrl: String = null,
     hasDriveWideScope: js.UndefOr[Boolean] = js.undefined,
-    icons: js.Array[AnonCategory] = null,
+    icons: js.Array[Category] = null,
     id: String = null,
     installed: js.UndefOr[Boolean] = js.undefined,
     kind: String = null,
@@ -146,13 +146,13 @@ object SchemaApp {
     useByDefault: js.UndefOr[Boolean] = js.undefined
   ): SchemaApp = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(authorized)) __obj.updateDynamic("authorized")(authorized.asInstanceOf[js.Any])
+    if (!js.isUndefined(authorized)) __obj.updateDynamic("authorized")(authorized.get.asInstanceOf[js.Any])
     if (createInFolderTemplate != null) __obj.updateDynamic("createInFolderTemplate")(createInFolderTemplate.asInstanceOf[js.Any])
     if (createUrl != null) __obj.updateDynamic("createUrl")(createUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasDriveWideScope)) __obj.updateDynamic("hasDriveWideScope")(hasDriveWideScope.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasDriveWideScope)) __obj.updateDynamic("hasDriveWideScope")(hasDriveWideScope.get.asInstanceOf[js.Any])
     if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(installed)) __obj.updateDynamic("installed")(installed.asInstanceOf[js.Any])
+    if (!js.isUndefined(installed)) __obj.updateDynamic("installed")(installed.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (longDescription != null) __obj.updateDynamic("longDescription")(longDescription.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
@@ -165,11 +165,11 @@ object SchemaApp {
     if (secondaryFileExtensions != null) __obj.updateDynamic("secondaryFileExtensions")(secondaryFileExtensions.asInstanceOf[js.Any])
     if (secondaryMimeTypes != null) __obj.updateDynamic("secondaryMimeTypes")(secondaryMimeTypes.asInstanceOf[js.Any])
     if (shortDescription != null) __obj.updateDynamic("shortDescription")(shortDescription.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsCreate)) __obj.updateDynamic("supportsCreate")(supportsCreate.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsImport)) __obj.updateDynamic("supportsImport")(supportsImport.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsMultiOpen)) __obj.updateDynamic("supportsMultiOpen")(supportsMultiOpen.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsOfflineCreate)) __obj.updateDynamic("supportsOfflineCreate")(supportsOfflineCreate.asInstanceOf[js.Any])
-    if (!js.isUndefined(useByDefault)) __obj.updateDynamic("useByDefault")(useByDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsCreate)) __obj.updateDynamic("supportsCreate")(supportsCreate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsImport)) __obj.updateDynamic("supportsImport")(supportsImport.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsMultiOpen)) __obj.updateDynamic("supportsMultiOpen")(supportsMultiOpen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsOfflineCreate)) __obj.updateDynamic("supportsOfflineCreate")(supportsOfflineCreate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useByDefault)) __obj.updateDynamic("useByDefault")(useByDefault.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaApp]
   }
 }

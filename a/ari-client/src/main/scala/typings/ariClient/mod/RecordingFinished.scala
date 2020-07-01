@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RecordingFinished extends Event {
-  /* Properties */
+  /**
+    * Recording control object.
+    */
   var recording: LiveRecording
 }
 

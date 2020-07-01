@@ -135,6 +135,7 @@ import scala.scalajs.js.annotation._
   - typings.fileType.fileTypeStrings.avif
   - typings.fileType.fileTypeStrings.eps
   - typings.fileType.fileTypeStrings.lzh
+  - typings.fileType.fileTypeStrings.pgp
 */
 trait FileExtension extends js.Object
 
@@ -329,6 +330,8 @@ object FileExtension {
   def pcap: typings.fileType.fileTypeStrings.pcap = "pcap".asInstanceOf[typings.fileType.fileTypeStrings.pcap]
   @scala.inline
   def pdf: typings.fileType.fileTypeStrings.pdf = "pdf".asInstanceOf[typings.fileType.fileTypeStrings.pdf]
+  @scala.inline
+  def pgp: typings.fileType.fileTypeStrings.pgp = "pgp".asInstanceOf[typings.fileType.fileTypeStrings.pgp]
   @scala.inline
   def png: typings.fileType.fileTypeStrings.png = "png".asInstanceOf[typings.fileType.fileTypeStrings.png]
   @scala.inline

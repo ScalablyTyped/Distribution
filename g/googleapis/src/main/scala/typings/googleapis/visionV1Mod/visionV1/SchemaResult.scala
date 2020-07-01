@@ -27,11 +27,11 @@ trait SchemaResult extends js.Object {
 
 object SchemaResult {
   @scala.inline
-  def apply(image: String = null, product: SchemaProduct = null, score: Int | Double = null): SchemaResult = {
+  def apply(image: String = null, product: SchemaProduct = null, score: js.UndefOr[Double] = js.undefined): SchemaResult = {
     val __obj = js.Dynamic.literal()
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResult]
   }
 }

@@ -1,6 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
-import typings.googleapis.AnonCode
+import typings.googleapis.anon.Code
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,7 +39,7 @@ trait SchemaOperationList extends js.Object {
   /**
     * [Output Only] Informational warning message.
     */
-  var warning: js.UndefOr[AnonCode] = js.native
+  var warning: js.UndefOr[Code] = js.native
 }
 
 object SchemaOperationList {
@@ -50,7 +50,7 @@ object SchemaOperationList {
     kind: String = null,
     nextPageToken: String = null,
     selfLink: String = null,
-    warning: AnonCode = null
+    warning: Code = null
   ): SchemaOperationList = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

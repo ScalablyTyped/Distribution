@@ -22,7 +22,7 @@ trait HistoryStateNodeConfig[TContext, TEvent /* <: EventObject */] extends Atom
 
 object HistoryStateNodeConfig {
   @scala.inline
-  def apply[TContext, TEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     history: shallow | deep | `true`,
     activities: SingleOrArray[Activity[TContext, TEvent]] = null,
     after: DelayedTransitions[TContext, TEvent] = null,

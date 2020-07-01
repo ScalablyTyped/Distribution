@@ -51,7 +51,7 @@ object SchemaGoogleFirestoreAdminV1beta1IndexOperationMetadata {
     startTime: String = null
   ): SchemaGoogleFirestoreAdminV1beta1IndexOperationMetadata = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancelled)) __obj.updateDynamic("cancelled")(cancelled.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelled)) __obj.updateDynamic("cancelled")(cancelled.get.asInstanceOf[js.Any])
     if (documentProgress != null) __obj.updateDynamic("documentProgress")(documentProgress.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])

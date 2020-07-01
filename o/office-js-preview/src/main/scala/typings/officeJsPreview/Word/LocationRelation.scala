@@ -14,7 +14,6 @@ sealed trait LocationRelation extends js.Object
 @js.native
 object LocationRelation extends js.Object {
   /**
-    *
     * Indicates that this instance occurs after, and is adjacent to, the range.
     *
     */
@@ -22,7 +21,6 @@ object LocationRelation extends js.Object {
   sealed trait adjacentAfter extends LocationRelation
   
   /**
-    *
     * Indicates that this instance occurs before, and is adjacent to, the range.
     *
     */
@@ -30,7 +28,6 @@ object LocationRelation extends js.Object {
   sealed trait adjacentBefore extends LocationRelation
   
   /**
-    *
     * Indicates that this instance occurs after the range.
     *
     */
@@ -38,7 +35,6 @@ object LocationRelation extends js.Object {
   sealed trait after extends LocationRelation
   
   /**
-    *
     * Indicates that this instance occurs before the range.
     *
     */
@@ -46,7 +42,6 @@ object LocationRelation extends js.Object {
   sealed trait before extends LocationRelation
   
   /**
-    *
     * Indicates that this instance contains the range, with the exception of the start and end character of this instance.
     *
     */
@@ -54,7 +49,6 @@ object LocationRelation extends js.Object {
   sealed trait contains extends LocationRelation
   
   /**
-    *
     * Indicates that this instance contains the range and that it shares the same end character. The range does not share the same start character as this instance.
     *
     */
@@ -62,7 +56,6 @@ object LocationRelation extends js.Object {
   sealed trait containsEnd extends LocationRelation
   
   /**
-    *
     * Indicates that this instance contains the range and that it shares the same start character. The range does not share the same end character as this instance.
     *
     */
@@ -70,7 +63,6 @@ object LocationRelation extends js.Object {
   sealed trait containsStart extends LocationRelation
   
   /**
-    *
     * Indicates that this instance and the range represent the same range.
     *
     */
@@ -78,7 +70,6 @@ object LocationRelation extends js.Object {
   sealed trait equal extends LocationRelation
   
   /**
-    *
     * Indicates that this instance is inside the range. The range does not share the same start and end characters as this instance.
     *
     */
@@ -86,7 +77,6 @@ object LocationRelation extends js.Object {
   sealed trait inside extends LocationRelation
   
   /**
-    *
     * Indicates that this instance is inside the range and that it shares the same end character. The range does not share the same start character as this instance.
     *
     */
@@ -94,7 +84,6 @@ object LocationRelation extends js.Object {
   sealed trait insideEnd extends LocationRelation
   
   /**
-    *
     * Indicates that this instance is inside the range and that it shares the same start character. The range does not share the same end character as this instance.
     *
     */
@@ -102,7 +91,6 @@ object LocationRelation extends js.Object {
   sealed trait insideStart extends LocationRelation
   
   /**
-    *
     * Indicates that this instance starts inside the range and overlaps the range’s last character.
     *
     */
@@ -110,7 +98,6 @@ object LocationRelation extends js.Object {
   sealed trait overlapsAfter extends LocationRelation
   
   /**
-    *
     * Indicates that this instance starts before the range and overlaps the range’s first character.
     *
     */
@@ -118,7 +105,6 @@ object LocationRelation extends js.Object {
   sealed trait overlapsBefore extends LocationRelation
   
   /**
-    *
     * Indicates that this instance and the range are in different sub-documents.
     *
     */

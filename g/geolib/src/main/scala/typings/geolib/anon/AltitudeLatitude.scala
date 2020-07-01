@@ -13,7 +13,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AltitudeLatitude extends js.Object {
-  var altitude: AltitudeKeys
+  var altitude: js.UndefOr[AltitudeKeys] = js.undefined
   var latitude: js.UndefOr[lat | typings.geolib.geolibStrings.latitude | `1`] = js.undefined
   var longitude: js.UndefOr[`0` | lng | lon | typings.geolib.geolibStrings.longitude] = js.undefined
 }
@@ -21,11 +21,12 @@ trait AltitudeLatitude extends js.Object {
 object AltitudeLatitude {
   @scala.inline
   def apply(
-    altitude: AltitudeKeys,
+    altitude: AltitudeKeys = null,
     latitude: lat | latitude | `1` = null,
     longitude: `0` | lng | lon | longitude = null
   ): AltitudeLatitude = {
-    val __obj = js.Dynamic.literal(altitude = altitude.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
     if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
     if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
     __obj.asInstanceOf[AltitudeLatitude]

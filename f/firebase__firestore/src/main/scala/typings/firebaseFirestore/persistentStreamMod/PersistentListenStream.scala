@@ -1,9 +1,9 @@
 package typings.firebaseFirestore.persistentStreamMod
 
 import typings.firebaseFirestore.asyncQueueMod.AsyncQueue
-import typings.firebaseFirestore.connectionMod.Connection
 import typings.firebaseFirestore.credentialsMod.CredentialsProvider
-import typings.firebaseFirestore.serializerMod.JsonProtoSerializer
+import typings.firebaseFirestore.remoteConnectionMod.Connection
+import typings.firebaseFirestore.remoteSerializerMod.JsonProtoSerializer
 import typings.firebaseFirestore.targetDataMod.TargetData
 import typings.firebaseFirestore.typesMod.TargetId
 import scala.scalajs.js

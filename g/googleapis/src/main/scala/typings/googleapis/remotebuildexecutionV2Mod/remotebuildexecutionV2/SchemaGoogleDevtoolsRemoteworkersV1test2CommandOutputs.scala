@@ -29,9 +29,12 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandOutputs extends js.Object {
 
 object SchemaGoogleDevtoolsRemoteworkersV1test2CommandOutputs {
   @scala.inline
-  def apply(exitCode: Int | Double = null, outputs: SchemaGoogleDevtoolsRemoteworkersV1test2Digest = null): SchemaGoogleDevtoolsRemoteworkersV1test2CommandOutputs = {
+  def apply(
+    exitCode: js.UndefOr[Double] = js.undefined,
+    outputs: SchemaGoogleDevtoolsRemoteworkersV1test2Digest = null
+  ): SchemaGoogleDevtoolsRemoteworkersV1test2CommandOutputs = {
     val __obj = js.Dynamic.literal()
-    if (exitCode != null) __obj.updateDynamic("exitCode")(exitCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(exitCode)) __obj.updateDynamic("exitCode")(exitCode.get.asInstanceOf[js.Any])
     if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteworkersV1test2CommandOutputs]
   }

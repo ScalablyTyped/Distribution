@@ -17,9 +17,19 @@ trait Shared extends js.Object {
   //Return a function that parses a string representing a date into a JavaScript Date object according to the given options. The default parsing assumes numeric year, month, and day (i.e., { skeleton: "yMd" }).
   def dateParser(): js.Function1[/* value */ String, Date] = js.native
   def dateParser(options: DateFormatterOptions): js.Function1[/* value */ String, Date] = js.native
+  /**
+    * .dateToPartsFormatter( options )
+    * @param {DateFormatterOptions} options see date/expand_pattern for more info.
+    * @returns {Function} Return a function that formats a date into parts tokens according to the given options. The default formatting is numeric year, month, and day (i.e., `{ skeleton: "yMd" }`).
+    */
+  def dateToPartsFormatter(): js.Function1[/* value */ Date, js.Array[DateFormatPart]] = js.native
+  def dateToPartsFormatter(options: DateFormatterOptions): js.Function1[/* value */ Date, js.Array[DateFormatPart]] = js.native
   //Alias for .dateFormatter( [options] )( value ).
   def formatDate(value: Date): String = js.native
   def formatDate(value: Date, options: DateFormatterOptions): String = js.native
+  //Alias for .dateToPartsFormatter( [options] )( value ).
+  def formatDateToParts(value: Date): js.Array[DateFormatPart] = js.native
+  def formatDateToParts(value: Date, options: DateFormatterOptions): js.Array[DateFormatPart] = js.native
   /**
     * Return a number formatted according to the given options or locale's defaults.
     * @param {number} value The number to format

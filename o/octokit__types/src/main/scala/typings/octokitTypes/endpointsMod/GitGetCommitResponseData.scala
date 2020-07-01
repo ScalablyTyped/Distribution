@@ -11,6 +11,7 @@ trait GitGetCommitResponseData extends js.Object {
   var author: DateEmailName
   var committer: DateEmailName
   var message: String
+  var node_id: String
   var parents: js.Array[ShaUrl]
   var sha: String
   var tree: ShaUrl
@@ -24,13 +25,14 @@ object GitGetCommitResponseData {
     author: DateEmailName,
     committer: DateEmailName,
     message: String,
+    node_id: String,
     parents: js.Array[ShaUrl],
     sha: String,
     tree: ShaUrl,
     url: String,
     verification: Payload
   ): GitGetCommitResponseData = {
-    val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], committer = committer.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verification = verification.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], committer = committer.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verification = verification.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitGetCommitResponseData]
   }
 }

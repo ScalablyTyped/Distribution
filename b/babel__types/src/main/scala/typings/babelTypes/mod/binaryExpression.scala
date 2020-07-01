@@ -34,5 +34,10 @@ object binaryExpression extends js.Object {
     left: Expression,
     right: Expression
   ): BinaryExpression_ = js.native
+  def apply(
+    operator: Plussign | `-_` | Slash | Percentsign | Asterisk | AsteriskAsterisk | Ampersand | Verticalline | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | LessthansignLessthansign | ^  | EqualssignEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | in | instanceof | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign,
+    left: PrivateName_,
+    right: Expression
+  ): BinaryExpression_ = js.native
 }
 

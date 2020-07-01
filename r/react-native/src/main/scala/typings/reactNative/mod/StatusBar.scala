@@ -20,6 +20,26 @@ object StatusBar extends js.Object {
     */
   var currentHeight: js.UndefOr[Double] = js.native
   /**
+    * Pop a StatusBar entry from the stack.
+    *
+    * @param entry Entry returned from `pushStackEntry`.
+    */
+  def popStackEntry(entry: StatusBarProps): Unit = js.native
+  /**
+    * Push a StatusBar entry onto the stack.
+    * The return value should be passed to `popStackEntry` when complete.
+    *
+    * @param props Object containing the StatusBar props to use in the stack entry.
+    */
+  def pushStackEntry(props: StatusBarProps): StatusBarProps = js.native
+  /**
+    * Replace an existing StatusBar stack entry with new props.
+    *
+    * @param entry Entry returned from `pushStackEntry` to replace.
+    * @param props Object containing the StatusBar props to use in the replacement stack entry.
+    */
+  def replaceStackEntry(entry: StatusBarProps, props: StatusBarProps): StatusBarProps = js.native
+  /**
     * Set the background color for the status bar
     * @param color Background color.
     * @param animated Animate the style change.

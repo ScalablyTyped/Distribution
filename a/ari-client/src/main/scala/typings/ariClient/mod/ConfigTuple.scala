@@ -5,8 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ConfigTuple extends js.Object {
-  /* Properties */
+  /**
+    * A configuration object attribute.
+    */
   var attribute: String
+  /**
+    * The value for the attribute.
+    */
   var value: String
 }
 

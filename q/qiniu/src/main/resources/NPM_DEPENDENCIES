@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "qiniu" : "7.3.1"
+      "qiniu" : "7.3.2"
     }
   ],
   "test-dependencies" : [
     {
-      "qiniu" : "7.3.1"
+      "qiniu" : "7.3.2"
     }
   ],
   "compile-devDependencies" : [

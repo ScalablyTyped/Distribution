@@ -14,6 +14,12 @@ import scala.scalajs.js.annotation._
 trait IAssociationBase
   extends IElement
      with IByNameReferrable {
+  /**
+    * This property is required and cannot be set to null.
+    *
+    * In version 8.11.0: introduced
+    */
+  val capabilities: IAssociationCapabilities = js.native
   val containerAsDomainModel: IDomainModel = js.native
   @JSName("model")
   val model_IAssociationBase: IModel = js.native

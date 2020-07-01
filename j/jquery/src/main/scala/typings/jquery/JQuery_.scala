@@ -3680,6 +3680,39 @@ trait JQuery_[TElement]
     */
   def eq(index: Double): this.type = js.native
   /**
+    * Reduce the set of matched elements to the even ones in the set, numbered from zero.
+    * @see \`{@link https://api.jquery.com/even/ }\`
+    * @since 3.5
+    * @example ​ ````Highlight the even items in a list.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>even demo</title>
+    <style>
+    .highlight {
+    background-color: yellow;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  </head>
+  <body>
+  <ul>
+    <li>Look:</li>
+    <li>This is some text in a list.</li>
+    <li>This is a note about it.</li>
+    <li>This is another note about it.</li>
+  </ul>
+  <script>
+  $( "ul li" ).even().addClass( "highlight" );
+  </script>
+  </body>
+  </html>
+  ```
+    */
+  def even(): this.type = js.native
+  /**
     * Merge the contents of an object onto the jQuery prototype to provide new jQuery instance methods.
     * @param obj An object to merge onto the jQuery prototype.
     * @see \`{@link https://api.jquery.com/jQuery.fn.extend/ }\`
@@ -8450,6 +8483,39 @@ trait JQuery_[TElement]
     */
   def not(selector_function_selection: Selector): this.type = js.native
   def not(selector_function_selection: TypeOrArray[Element]): this.type = js.native
+  /**
+    * Reduce the set of matched elements to the odd ones in the set, numbered from zero.
+    * @see \`{@link https://api.jquery.com/odd/ }\`
+    * @since 3.5
+    * @example ​ ````Highlight the odd items in a list.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>odd demo</title>
+    <style>
+    .highlight {
+    background-color: yellow;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  </head>
+  <body>
+  <ul>
+    <li>Look:</li>
+    <li>This is some text in a list.</li>
+    <li>This is a note about it.</li>
+    <li>This is another note about it.</li>
+  </ul>
+  <script>
+  $( "ul li" ).odd().addClass( "highlight" );
+  </script>
+  </body>
+  </html>
+  ```
+    */
+  def odd(): this.type = js.native
   /**
     * Remove an event handler.
     * @param event A jQuery.Event object.

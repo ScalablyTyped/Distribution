@@ -34,6 +34,10 @@ trait CreateServiceRequest extends js.Object {
     * The ID of the namespace that you want to use to create the service.
     */
   var NamespaceId: js.UndefOr[ResourceId] = js.native
+  /**
+    * The tags to add to the service. Each tag consists of a key and an optional value, both of which you define. Tag keys can have a maximum character length of 128 characters, and tag values can have a maximum length of 256 characters.
+    */
+  var Tags: js.UndefOr[TagList] = js.native
 }
 
 object CreateServiceRequest {
@@ -45,7 +49,8 @@ object CreateServiceRequest {
     DnsConfig: DnsConfig = null,
     HealthCheckConfig: HealthCheckConfig = null,
     HealthCheckCustomConfig: HealthCheckCustomConfig = null,
-    NamespaceId: ResourceId = null
+    NamespaceId: ResourceId = null,
+    Tags: TagList = null
   ): CreateServiceRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     if (CreatorRequestId != null) __obj.updateDynamic("CreatorRequestId")(CreatorRequestId.asInstanceOf[js.Any])
@@ -54,6 +59,7 @@ object CreateServiceRequest {
     if (HealthCheckConfig != null) __obj.updateDynamic("HealthCheckConfig")(HealthCheckConfig.asInstanceOf[js.Any])
     if (HealthCheckCustomConfig != null) __obj.updateDynamic("HealthCheckCustomConfig")(HealthCheckCustomConfig.asInstanceOf[js.Any])
     if (NamespaceId != null) __obj.updateDynamic("NamespaceId")(NamespaceId.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateServiceRequest]
   }
 }

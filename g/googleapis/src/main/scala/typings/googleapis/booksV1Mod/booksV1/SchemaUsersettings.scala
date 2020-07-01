@@ -1,7 +1,7 @@
 package typings.googleapis.booksV1Mod.booksV1
 
-import typings.googleapis.AnonFolderName
-import typings.googleapis.AnonMatchMyInterests
+import typings.googleapis.anon.FolderName
+import typings.googleapis.anon.MatchMyInterests
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,13 +15,13 @@ trait SchemaUsersettings extends js.Object {
   /**
     * User settings in sub-objects, each for different purposes.
     */
-  var notesExport: js.UndefOr[AnonFolderName] = js.native
-  var notification: js.UndefOr[AnonMatchMyInterests] = js.native
+  var notesExport: js.UndefOr[FolderName] = js.native
+  var notification: js.UndefOr[MatchMyInterests] = js.native
 }
 
 object SchemaUsersettings {
   @scala.inline
-  def apply(kind: String = null, notesExport: AnonFolderName = null, notification: AnonMatchMyInterests = null): SchemaUsersettings = {
+  def apply(kind: String = null, notesExport: FolderName = null, notification: MatchMyInterests = null): SchemaUsersettings = {
     val __obj = js.Dynamic.literal()
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (notesExport != null) __obj.updateDynamic("notesExport")(notesExport.asInstanceOf[js.Any])

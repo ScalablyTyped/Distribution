@@ -1,5 +1,6 @@
 package typings.playcanvas.global.pc
 
+import typings.playcanvas.anon.CrossOrigin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +25,8 @@ import scala.scalajs.js.annotation._
   * @property [file.filename] - The filename of the resource file
   * @property [file.size] - The size of the resource file
   * @property [file.hash] - The MD5 hash of the resource file data and the Asset data field
-  * @property data - JSON data that contains either the complete resource data (e.g. in the case of a material) or additional data (e.g. in the case of a model it contains mappings from mesh to material)
+  * @property [data] - Optional JSON data that contains either the complete resource data (e.g. in the case of a material) or additional data (e.g. in the case of a model it contains mappings from mesh to material)
+  * @property [options] - Optional JSON data that contains the asset handler options.
   * @property resource - A reference to the resource when the asset is loaded. e.g. a {@link pc.Texture} or a {@link pc.Model}
   * @property resources - A reference to the resources of the asset when it's loaded. An asset can hold more runtime resources than one e.g. cubemaps
   * @property preload - If true the asset will be loaded during the preload phase of application set up.
@@ -35,6 +37,8 @@ import scala.scalajs.js.annotation._
   * @param type - Type of asset. One of ["animation", "audio", "binary", "cubemap", "css", "font", "json", "html", "material", "model", "script", "shader", "text", "texture"]
   * @param [file] - Details about the file the asset is made from. At the least must contain the 'url' field. For assets that don't contain file data use null.
   * @param [data] - JSON object with additional data about the asset (e.g. for texture and model assets) or contains the asset data itself (e.g. in the case of materials)
+  * @param [options] - The asset handler options. For container options see {@link pc.ContainerHandler}
+  * @param [options.crossOrigin] - For use with texture resources. For browser-supported image formats only, enable cross origin.
   */
 @JSGlobal("pc.Asset")
 @js.native
@@ -43,5 +47,6 @@ class Asset protected ()
   def this(name: String, `type`: String) = this()
   def this(name: String, `type`: String, file: js.Any) = this()
   def this(name: String, `type`: String, file: js.Any, data: js.Any) = this()
+  def this(name: String, `type`: String, file: js.Any, data: js.Any, options: CrossOrigin) = this()
 }
 

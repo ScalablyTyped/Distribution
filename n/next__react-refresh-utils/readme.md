@@ -1,7 +1,7 @@
 
 # Scala.js typings for next__react-refresh-utils
 
-Typings are for version 9.4.2
+Typings are for version 9.4.4
 
 ## Library description:
 An experimental package providing utilities for React Refresh.

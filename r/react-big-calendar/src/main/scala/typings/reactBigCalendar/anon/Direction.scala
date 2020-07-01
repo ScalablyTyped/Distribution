@@ -18,7 +18,7 @@ trait Direction[TEvent /* <: js.Object */] extends js.Object {
 
 object Direction {
   @scala.inline
-  def apply[TEvent](action: resize | move, direction: UP | DOWN | LEFT | RIGHT, event: TEvent): Direction[TEvent] = {
+  def apply[/* <: js.Object */ TEvent](action: resize | move, direction: UP | DOWN | LEFT | RIGHT, event: TEvent): Direction[TEvent] = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
     __obj.asInstanceOf[Direction[TEvent]]
   }

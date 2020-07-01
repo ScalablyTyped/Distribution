@@ -132,23 +132,27 @@ class Model () extends js.Object {
   @JSName("$toDatabaseJson")
   def $toDatabaseJson(): Pojo = js.native
   @JSName("$toJson")
-  def $toJson(): Pojo = js.native
+  def $toJson(): ModelObject[this.type] = js.native
   @JSName("$toJson")
-  def $toJson(opt: ToJsonOptions): Pojo = js.native
+  def $toJson(opt: ToJsonOptions): ModelObject[this.type] = js.native
   @JSName("$transaction")
   def $transaction(): Knex[_, js.Array[_]] = js.native
   @JSName("$traverse")
   def $traverse(filterConstructor: TypeofModel, traverser: TraverserFunction): this.type = js.native
   @JSName("$traverse")
   def $traverse(traverser: TraverserFunction): this.type = js.native
+  @JSName("$traverseAsync")
+  def $traverseAsync(filterConstructor: TypeofModel, traverser: TraverserFunction): js.Promise[this.type] = js.native
+  @JSName("$traverseAsync")
+  def $traverseAsync(traverser: TraverserFunction): js.Promise[this.type] = js.native
   @JSName("$validate")
   def $validate(): Pojo = js.native
   @JSName("$validate")
   def $validate(json: Pojo): Pojo = js.native
   @JSName("$validate")
   def $validate(json: Pojo, opt: ModelOptions): Pojo = js.native
-  def toJSON(): Pojo = js.native
-  def toJSON(opt: ToJsonOptions): Pojo = js.native
+  def toJSON(): ModelObject[this.type] = js.native
+  def toJSON(opt: ToJsonOptions): ModelObject[this.type] = js.native
 }
 
 /* static members */

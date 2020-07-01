@@ -14,7 +14,6 @@ sealed trait HeaderFooterType extends js.Object
 @js.native
 object HeaderFooterType extends js.Object {
   /**
-    *
     * Returns all headers or footers on even-numbered pages of a section.
     *
     */
@@ -22,7 +21,6 @@ object HeaderFooterType extends js.Object {
   sealed trait evenPages extends HeaderFooterType
   
   /**
-    *
     * Returns the header or footer on the first page of a section.
     *
     */
@@ -30,7 +28,6 @@ object HeaderFooterType extends js.Object {
   sealed trait firstPage extends HeaderFooterType
   
   /**
-    *
     * Returns the header or footer on all pages of a section, but excludes the first page or odd pages if they are different.
     *
     */

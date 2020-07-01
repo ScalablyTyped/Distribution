@@ -34,9 +34,9 @@ trait SchemaEnumValuePair extends js.Object {
 
 object SchemaEnumValuePair {
   @scala.inline
-  def apply(integerValue: Int | Double = null, stringValue: String = null): SchemaEnumValuePair = {
+  def apply(integerValue: js.UndefOr[Double] = js.undefined, stringValue: String = null): SchemaEnumValuePair = {
     val __obj = js.Dynamic.literal()
-    if (integerValue != null) __obj.updateDynamic("integerValue")(integerValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(integerValue)) __obj.updateDynamic("integerValue")(integerValue.get.asInstanceOf[js.Any])
     if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEnumValuePair]
   }

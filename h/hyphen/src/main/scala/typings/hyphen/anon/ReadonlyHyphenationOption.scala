@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Readonly<hyphen.hyphen/common.HyphenationOptions> */
+/* Inlined std.Readonly<hyphen.hyphen.HyphenationOptions> */
 trait ReadonlyHyphenationOption extends js.Object {
   val debug: js.UndefOr[Boolean] = js.undefined
   val hyphenChar: js.UndefOr[String] = js.undefined

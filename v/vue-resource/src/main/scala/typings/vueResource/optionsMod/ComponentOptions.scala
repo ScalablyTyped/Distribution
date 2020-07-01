@@ -14,7 +14,7 @@ trait ComponentOptions[V /* <: Vue */] extends js.Object {
 
 object ComponentOptions {
   @scala.inline
-  def apply[V](
+  def apply[/* <: typings.vue.vueMod.Vue */ V](
     http: Dictkey with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpOptions */ js.Any) = null
   ): ComponentOptions[V] = {
     val __obj = js.Dynamic.literal()

@@ -22,7 +22,12 @@ object valueUtilMod extends js.Object {
   def getRawValueLabeled(
     values: js.Array[RawValueType],
     prevValue: DefaultValueType,
-    getEntityByValue: js.Function2[/* value */ RawValueType, /* skipType */ js.UndefOr[SkipType], FlattenDataNode],
+    getEntityByValue: js.Function3[
+      /* value */ RawValueType, 
+      /* skipType */ js.UndefOr[SkipType], 
+      /* ignoreDisabledCheck */ js.UndefOr[Boolean], 
+      FlattenDataNode
+    ],
     getLabelProp: js.Function1[/* node */ DataNode, ReactNode]
   ): js.Array[LabelValueType] = js.native
   def isCheckDisabled(node: DataNode): Boolean = js.native

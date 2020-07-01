@@ -11,7 +11,7 @@ trait S3ResourceClassificationUpdate extends js.Object {
     */
   var bucketName: BucketName = js.native
   /**
-    * The classification type that you want to update for the resource associated with Amazon Macie. 
+    * The classification type that you want to update for the resource associated with Amazon Macie Classic. 
     */
   var classificationTypeUpdate: ClassificationTypeUpdate = js.native
   /**

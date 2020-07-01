@@ -19,6 +19,7 @@ import typings.reactNativeNavigation.eventsMod.BottomTabPressedEvent
 import typings.reactNativeNavigation.eventsMod.BottomTabSelectedEvent
 import typings.reactNativeNavigation.eventsMod.CommandCompletedEvent
 import typings.reactNativeNavigation.nativeEventsReceiverMod.NativeEventsReceiver
+import typings.reactNativeNavigation.navigationComponentListenerMod.NavigationComponentListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,6 +47,7 @@ object eventsRegistryMod extends js.Object {
     def registerCommandListener(callback: js.Function2[/* name */ String, /* params */ js.Any, Unit]): EventSubscription = js.native
     def registerComponentDidAppearListener(callback: js.Function1[/* event */ ComponentDidAppearEvent, Unit]): EmitterSubscription = js.native
     def registerComponentDidDisappearListener(callback: js.Function1[/* event */ ComponentDidDisappearEvent, Unit]): EmitterSubscription = js.native
+    def registerComponentListener(listener: NavigationComponentListener, componentId: String): EventSubscription = js.native
     def registerModalAttemptedToDismissListener(callback: js.Function1[/* event */ ModalAttemptedToDismissEvent, Unit]): EmitterSubscription = js.native
     def registerModalDismissedListener(callback: js.Function1[/* event */ ModalDismissedEvent, Unit]): EmitterSubscription = js.native
     def registerNavigationButtonPressedListener(callback: js.Function1[/* event */ NavigationButtonPressedEvent, Unit]): EmitterSubscription = js.native

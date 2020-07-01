@@ -214,6 +214,7 @@ object ScrollViewProps {
     disableScrollViewPanResponder: js.UndefOr[Boolean] = js.undefined,
     endFillColor: String = null,
     fadingEdgeLength: js.UndefOr[Double] = js.undefined,
+    focusable: js.UndefOr[Boolean] = js.undefined,
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
     hitSlop: Insets = null,
     horizontal: js.UndefOr[Null | Boolean] = js.undefined,
@@ -322,6 +323,7 @@ object ScrollViewProps {
     if (!js.isUndefined(disableScrollViewPanResponder)) __obj.updateDynamic("disableScrollViewPanResponder")(disableScrollViewPanResponder.get.asInstanceOf[js.Any])
     if (endFillColor != null) __obj.updateDynamic("endFillColor")(endFillColor.asInstanceOf[js.Any])
     if (!js.isUndefined(fadingEdgeLength)) __obj.updateDynamic("fadingEdgeLength")(fadingEdgeLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.get.asInstanceOf[js.Any])
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
     if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])

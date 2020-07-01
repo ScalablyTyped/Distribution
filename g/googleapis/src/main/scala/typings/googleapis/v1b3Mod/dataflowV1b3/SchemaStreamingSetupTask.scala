@@ -37,17 +37,17 @@ object SchemaStreamingSetupTask {
   @scala.inline
   def apply(
     drain: js.UndefOr[Boolean] = js.undefined,
-    receiveWorkPort: Int | Double = null,
+    receiveWorkPort: js.UndefOr[Double] = js.undefined,
     snapshotConfig: SchemaStreamingApplianceSnapshotConfig = null,
     streamingComputationTopology: SchemaTopologyConfig = null,
-    workerHarnessPort: Int | Double = null
+    workerHarnessPort: js.UndefOr[Double] = js.undefined
   ): SchemaStreamingSetupTask = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(drain)) __obj.updateDynamic("drain")(drain.asInstanceOf[js.Any])
-    if (receiveWorkPort != null) __obj.updateDynamic("receiveWorkPort")(receiveWorkPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(drain)) __obj.updateDynamic("drain")(drain.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(receiveWorkPort)) __obj.updateDynamic("receiveWorkPort")(receiveWorkPort.get.asInstanceOf[js.Any])
     if (snapshotConfig != null) __obj.updateDynamic("snapshotConfig")(snapshotConfig.asInstanceOf[js.Any])
     if (streamingComputationTopology != null) __obj.updateDynamic("streamingComputationTopology")(streamingComputationTopology.asInstanceOf[js.Any])
-    if (workerHarnessPort != null) __obj.updateDynamic("workerHarnessPort")(workerHarnessPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(workerHarnessPort)) __obj.updateDynamic("workerHarnessPort")(workerHarnessPort.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStreamingSetupTask]
   }
 }

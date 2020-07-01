@@ -46,20 +46,10 @@ trait Mixpanel extends js.Object {
   def time_event(event_name: String): Unit = js.native
   def track(event_name: String): Unit = js.native
   def track(event_name: String, properties: Dict): Unit = js.native
-  def track(event_name: String, properties: Dict, optionsOrCallback: js.Function0[Unit]): Unit = js.native
-  def track(
-    event_name: String,
-    properties: Dict,
-    optionsOrCallback: js.Function0[Unit],
-    callback: js.Function0[Unit]
-  ): Unit = js.native
+  def track(event_name: String, properties: Dict, optionsOrCallback: Callback): Unit = js.native
+  def track(event_name: String, properties: Dict, optionsOrCallback: Callback, callback: Callback): Unit = js.native
   def track(event_name: String, properties: Dict, optionsOrCallback: RequestOptions): Unit = js.native
-  def track(
-    event_name: String,
-    properties: Dict,
-    optionsOrCallback: RequestOptions,
-    callback: js.Function0[Unit]
-  ): Unit = js.native
+  def track(event_name: String, properties: Dict, optionsOrCallback: RequestOptions, callback: Callback): Unit = js.native
   def track_forms(query: Query, event_name: String): Unit = js.native
   def track_forms(query: Query, event_name: String, properties: js.Function0[Unit]): Unit = js.native
   def track_forms(query: Query, event_name: String, properties: Dict): Unit = js.native

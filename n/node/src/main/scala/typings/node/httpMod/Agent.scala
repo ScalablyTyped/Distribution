@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Agent () extends js.Object {
   def this(opts: AgentOptions) = this()
+  val freeSockets: ReadOnlyDict[js.Array[Socket]] = js.native
   var maxFreeSockets: Double = js.native
   var maxSockets: Double = js.native
   val requests: ReadOnlyDict[js.Array[IncomingMessage]] = js.native

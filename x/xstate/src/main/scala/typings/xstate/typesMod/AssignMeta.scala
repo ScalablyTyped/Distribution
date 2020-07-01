@@ -14,7 +14,7 @@ trait AssignMeta[TContext, TEvent /* <: EventObject */] extends js.Object {
 
 object AssignMeta {
   @scala.inline
-  def apply[TContext, TEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     _event: typings.xstate.typesMod.SCXML.Event[TEvent],
     action: AssignAction[TContext, TEvent],
     state: State[TContext, TEvent, _, Context[TContext]] = null

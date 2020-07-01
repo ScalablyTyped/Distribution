@@ -30,7 +30,7 @@ trait CustomFilter[FParams /* <: js.Object */, FElement /* <: CustomFilterElemen
 
 object CustomFilter {
   @scala.inline
-  def apply[FParams, FElement](
+  def apply[/* <: js.Object */ FParams, /* <: typings.reactBootstrapTable.mod.CustomFilterElement */ FElement](
     customFilterParameters: CustomFilterParameters[FParams],
     getElement: (js.Function2[
       /* value */ js.UndefOr[CustomFilterParameters[FParams]], 

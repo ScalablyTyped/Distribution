@@ -15,7 +15,7 @@ trait ListAccountSettingsRequest extends js.Object {
     */
   var maxResults: js.UndefOr[Integer] = js.native
   /**
-    * The resource name you want to list the account settings for.
+    * The name of the account setting you want to list the settings for.
     */
   var name: js.UndefOr[SettingName] = js.native
   /**

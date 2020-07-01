@@ -6,6 +6,7 @@ import typings.apolloServerCore.typesMod.Config
 import typings.apolloServerCore.typesMod.FileUploadOptions
 import typings.apolloServerCore.typesMod.SubscriptionServerOptions
 import typings.apolloServerPluginBase.mod.ApolloServerPlugin
+import typings.apolloServerTypes.mod.BaseContext
 import typings.apolloServerTypes.mod.GraphQLRequest
 import typings.apolloServerTypes.mod.GraphQLResponse
 import typings.apollographqlGraphqlPlaygroundHtml.renderPlaygroundPageMod.RenderPageOptions
@@ -36,7 +37,7 @@ object apolloServerMod extends js.Object {
     var logger: js.Any = js.native
     var parseOptions: js.Any = js.native
     var playgroundOptions: js.UndefOr[RenderPageOptions] = js.native
-    var plugins: js.Array[ApolloServerPlugin[Record[String, _]]] = js.native
+    var plugins: js.Array[ApolloServerPlugin[BaseContext]] = js.native
     var requestOptions: PartialGraphQLServerOptio = js.native
     var schema: js.UndefOr[GraphQLSchema] = js.native
     var schemaDerivedData: js.Any = js.native

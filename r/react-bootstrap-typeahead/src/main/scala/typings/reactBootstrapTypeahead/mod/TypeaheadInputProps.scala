@@ -26,7 +26,7 @@ trait TypeaheadInputProps[T /* <: TypeaheadModel */] extends js.Object {
 
 object TypeaheadInputProps {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.reactBootstrapTypeahead.mod.TypeaheadModel */ T](
     bsSize: TypeaheadBsSizes = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     inputProps: InputProps = null,

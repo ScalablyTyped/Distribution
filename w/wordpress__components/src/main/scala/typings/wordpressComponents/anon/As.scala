@@ -23,7 +23,7 @@ trait As[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type
 
 object As {
   @scala.inline
-  def apply[T](
+  def apply[/* <: / * import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 * / js.Any */ T](
     as: T = null,
     className: String = null,
     isShady: js.UndefOr[Boolean] = js.undefined,

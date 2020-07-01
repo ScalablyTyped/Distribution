@@ -17,7 +17,7 @@ trait ECKeyPairOptions[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] extend
 
 object ECKeyPairOptions {
   @scala.inline
-  def apply[PubF, PrivF](
+  def apply[/* <: typings.node.cryptoMod.KeyFormat */ PubF, /* <: typings.node.cryptoMod.KeyFormat */ PrivF](
     namedCurve: String,
     privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with `1`,
     publicKeyEncoding: Format[PubF]

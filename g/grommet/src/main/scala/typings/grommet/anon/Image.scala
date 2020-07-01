@@ -7,12 +7,13 @@ import typings.grommet.grommetStrings.medium
 import typings.grommet.grommetStrings.repeat
 import typings.grommet.grommetStrings.strong
 import typings.grommet.grommetStrings.weak
+import typings.grommet.utilsMod.ColorType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Image extends js.Object {
-  var color: js.UndefOr[String] = js.undefined
+  var color: js.UndefOr[ColorType] = js.undefined
   var dark: js.UndefOr[Boolean | String] = js.undefined
   var image: js.UndefOr[String] = js.undefined
   var light: js.UndefOr[String] = js.undefined
@@ -25,7 +26,7 @@ trait Image extends js.Object {
 object Image {
   @scala.inline
   def apply(
-    color: String = null,
+    color: ColorType = null,
     dark: Boolean | String = null,
     image: String = null,
     light: String = null,

@@ -3,6 +3,7 @@ package typings.mongoose.anon
 import org.scalablytyped.runtime.StringDictionary
 import typings.mongoose.mod.ClientSession
 import typings.mongoose.mongooseBooleans.`true`
+import typings.mongoose.mongooseStrings.`throw`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -58,7 +59,7 @@ trait rawResulttrueQueryFindOneArrayFilters extends js.Object {
     */
   var sort: js.UndefOr[js.Any] = js.undefined
   /** overwrites the schema's strict mode option for this update */
-  var strict: js.UndefOr[Boolean | String] = js.undefined
+  var strict: js.UndefOr[Boolean | `throw`] = js.undefined
   /**
     * If set to false and schema-level timestamps are enabled, skip timestamps for this update. Note that this allows you to overwrite timestamps.
     * Does nothing if schema-level timestamps are not set.
@@ -86,7 +87,7 @@ object rawResulttrueQueryFindOneArrayFilters {
     session: ClientSession = null,
     setDefaultsOnInsert: js.UndefOr[Boolean] = js.undefined,
     sort: js.Any = null,
-    strict: Boolean | String = null,
+    strict: Boolean | `throw` = null,
     timestamps: js.UndefOr[Boolean] = js.undefined,
     upsert: js.UndefOr[Boolean] = js.undefined
   ): rawResulttrueQueryFindOneArrayFilters = {

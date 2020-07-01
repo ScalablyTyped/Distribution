@@ -13,7 +13,7 @@ trait ElementNode[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was u
 
 object ElementNode {
   @scala.inline
-  def apply[T, E](content: js.Array[VNode], isSVG: Boolean, props: Props[E], `type`: T, key: Key = null): ElementNode[T, E] = {
+  def apply[/* <: / * import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 * / js.Any */ T, /* <: / * import warning: importer.ImportType#apply Failed type conversion: petit-dom.petit-dom.PetitDom.DomElements[T] * / js.Any */ E](content: js.Array[VNode], isSVG: Boolean, props: Props[E], `type`: T, key: Key = null): ElementNode[T, E] = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], isSVG = isSVG.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementNode[T, E]]

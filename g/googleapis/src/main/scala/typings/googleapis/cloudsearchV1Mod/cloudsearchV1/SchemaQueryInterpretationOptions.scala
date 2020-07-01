@@ -21,7 +21,7 @@ object SchemaQueryInterpretationOptions {
   @scala.inline
   def apply(disableNlInterpretation: js.UndefOr[Boolean] = js.undefined): SchemaQueryInterpretationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableNlInterpretation)) __obj.updateDynamic("disableNlInterpretation")(disableNlInterpretation.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableNlInterpretation)) __obj.updateDynamic("disableNlInterpretation")(disableNlInterpretation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQueryInterpretationOptions]
   }
 }

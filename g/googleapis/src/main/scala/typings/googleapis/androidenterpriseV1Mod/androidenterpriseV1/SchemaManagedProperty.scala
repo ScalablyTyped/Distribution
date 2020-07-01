@@ -55,16 +55,16 @@ object SchemaManagedProperty {
     valueBool: js.UndefOr[Boolean] = js.undefined,
     valueBundle: SchemaManagedPropertyBundle = null,
     valueBundleArray: js.Array[SchemaManagedPropertyBundle] = null,
-    valueInteger: Int | Double = null,
+    valueInteger: js.UndefOr[Double] = js.undefined,
     valueString: String = null,
     valueStringArray: js.Array[String] = null
   ): SchemaManagedProperty = {
     val __obj = js.Dynamic.literal()
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueBool)) __obj.updateDynamic("valueBool")(valueBool.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueBool)) __obj.updateDynamic("valueBool")(valueBool.get.asInstanceOf[js.Any])
     if (valueBundle != null) __obj.updateDynamic("valueBundle")(valueBundle.asInstanceOf[js.Any])
     if (valueBundleArray != null) __obj.updateDynamic("valueBundleArray")(valueBundleArray.asInstanceOf[js.Any])
-    if (valueInteger != null) __obj.updateDynamic("valueInteger")(valueInteger.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueInteger)) __obj.updateDynamic("valueInteger")(valueInteger.get.asInstanceOf[js.Any])
     if (valueString != null) __obj.updateDynamic("valueString")(valueString.asInstanceOf[js.Any])
     if (valueStringArray != null) __obj.updateDynamic("valueStringArray")(valueStringArray.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaManagedProperty]

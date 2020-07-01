@@ -12,7 +12,11 @@ trait Methods[TMethods /* <: StringDictionary[js.Function1[/* base */ SearchInde
 
 object Methods {
   @scala.inline
-  def apply[TMethods](methods: TMethods = null): Methods[TMethods] = {
+  def apply[/* <: org.scalablytyped.runtime.StringDictionary[
+  js.Function1[
+    / * base * / typings.algoliaClientSearch.mod.SearchIndex, 
+    js.Function1[/ * args * / _, _]
+  ]] */ TMethods](methods: TMethods = null): Methods[TMethods] = {
     val __obj = js.Dynamic.literal()
     if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
     __obj.asInstanceOf[Methods[TMethods]]

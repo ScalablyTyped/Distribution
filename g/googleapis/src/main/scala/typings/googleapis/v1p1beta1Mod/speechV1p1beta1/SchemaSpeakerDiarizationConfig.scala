@@ -32,13 +32,13 @@ object SchemaSpeakerDiarizationConfig {
   @scala.inline
   def apply(
     enableSpeakerDiarization: js.UndefOr[Boolean] = js.undefined,
-    maxSpeakerCount: Int | Double = null,
-    minSpeakerCount: Int | Double = null
+    maxSpeakerCount: js.UndefOr[Double] = js.undefined,
+    minSpeakerCount: js.UndefOr[Double] = js.undefined
   ): SchemaSpeakerDiarizationConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableSpeakerDiarization)) __obj.updateDynamic("enableSpeakerDiarization")(enableSpeakerDiarization.asInstanceOf[js.Any])
-    if (maxSpeakerCount != null) __obj.updateDynamic("maxSpeakerCount")(maxSpeakerCount.asInstanceOf[js.Any])
-    if (minSpeakerCount != null) __obj.updateDynamic("minSpeakerCount")(minSpeakerCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSpeakerDiarization)) __obj.updateDynamic("enableSpeakerDiarization")(enableSpeakerDiarization.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSpeakerCount)) __obj.updateDynamic("maxSpeakerCount")(maxSpeakerCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSpeakerCount)) __obj.updateDynamic("minSpeakerCount")(minSpeakerCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSpeakerDiarizationConfig]
   }
 }

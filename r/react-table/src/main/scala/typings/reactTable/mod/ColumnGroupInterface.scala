@@ -10,7 +10,7 @@ trait ColumnGroupInterface[D /* <: js.Object */] extends js.Object {
 
 object ColumnGroupInterface {
   @scala.inline
-  def apply[D](columns: js.Array[Column[D]]): ColumnGroupInterface[D] = {
+  def apply[/* <: js.Object */ D](columns: js.Array[Column[D]]): ColumnGroupInterface[D] = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnGroupInterface[D]]
   }

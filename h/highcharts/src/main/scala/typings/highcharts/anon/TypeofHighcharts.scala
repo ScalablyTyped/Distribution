@@ -40,6 +40,7 @@ import typings.highcharts.mod.TimeFormatCallbackFunction
 import typings.highcharts.mod.TimeOptions
 import typings.highcharts.mod.Time_
 import typings.highcharts.mod.TooltipOptions
+import typings.highcharts.mod.WrapProceedFunction
 import typings.std.Element
 import typings.std.Event
 import typings.std.Record
@@ -111,7 +112,6 @@ trait TypeofHighcharts extends js.Object {
   var dateFormats: Dictionary[TimeFormatCallbackFunction] = js.native
   var defaultOptions: Options = js.native
   var time: Time_ = js.native
-  var wrap: js.Any = js.native
   def addEvent[T](el: T, `type`: String, fn: js.Function): js.Function = js.native
   def addEvent[T](el: T, `type`: String, fn: js.Function, options: EventOptionsObject): js.Function = js.native
   def addEvent[T](el: T, `type`: String, fn: EventCallbackFunction[T]): js.Function = js.native
@@ -278,5 +278,8 @@ trait TypeofHighcharts extends js.Object {
   def syncTimeout(fn: js.Function, delay: Double): Double = js.native
   def syncTimeout(fn: js.Function, delay: Double, context: js.Any): Double = js.native
   def uniqueKey(): String = js.native
+  def useSerialIds(): js.UndefOr[Boolean] = js.native
+  def useSerialIds(mode: Boolean): js.UndefOr[Boolean] = js.native
+  def wrap(obj: js.Any, method: String, func: WrapProceedFunction): Unit = js.native
 }
 

@@ -4,7 +4,7 @@ import typings.ionicCore.animationInterfaceMod.Animation
 import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.mod.Color
 import typings.ionicCore.mod.Mode
-import typings.ionicCore.typesMod.IonicSafeString
+import typings.ionicCore.sanitizationMod.IonicSafeString
 import typings.ionicReact.ionicReactStrings.bottom
 import typings.ionicReact.ionicReactStrings.middle
 import typings.ionicReact.ionicReactStrings.top

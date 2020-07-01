@@ -1,5 +1,6 @@
 package typings.exceljs.mod
 
+import typings.exceljs.anon.PartialHeaderFooter
 import typings.exceljs.anon.PartialPageSetup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait WorksheetModel extends js.Object {
   var autoFilter: AutoFilter
-  var headerFooter: HeaderFooter
+  var headerFooter: PartialHeaderFooter
   var id: Double
   var media: js.Array[Media]
   var name: String
@@ -22,7 +23,7 @@ object WorksheetModel {
   @scala.inline
   def apply(
     autoFilter: AutoFilter,
-    headerFooter: HeaderFooter,
+    headerFooter: PartialHeaderFooter,
     id: Double,
     media: js.Array[Media],
     name: String,

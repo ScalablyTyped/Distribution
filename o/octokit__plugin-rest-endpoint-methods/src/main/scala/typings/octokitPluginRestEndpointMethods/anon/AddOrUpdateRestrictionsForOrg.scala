@@ -13,11 +13,13 @@ import scala.scalajs.js.annotation._
 trait AddOrUpdateRestrictionsForOrg extends js.Object {
   /**
     * Temporarily restricts interactions to certain GitHub users in any public repository in the given organization. You must be an organization owner to set these restrictions.
+    * @deprecated octokit.interactions.addOrUpdateRestrictionsForOrg() has been renamed to octokit.interactions.setRestrictionsForOrg() (2020-06-04)
     */
   @JSName("addOrUpdateRestrictionsForOrg")
   var addOrUpdateRestrictionsForOrg_Original: `148` = js.native
   /**
     * Temporarily restricts interactions to certain GitHub users within the given repository. You must have owner or admin access to set restrictions.
+    * @deprecated octokit.interactions.addOrUpdateRestrictionsForRepo() has been renamed to octokit.interactions.setRestrictionsForRepo() (2020-06-04)
     */
   @JSName("addOrUpdateRestrictionsForRepo")
   var addOrUpdateRestrictionsForRepo_Original: `149` = js.native
@@ -44,6 +46,17 @@ trait AddOrUpdateRestrictionsForOrg extends js.Object {
   /**
     * Temporarily restricts interactions to certain GitHub users in any public repository in the given organization. You must be an organization owner to set these restrictions.
     */
+  @JSName("setRestrictionsForOrg")
+  var setRestrictionsForOrg_Original: `148` = js.native
+  /**
+    * Temporarily restricts interactions to certain GitHub users within the given repository. You must have owner or admin access to set restrictions.
+    */
+  @JSName("setRestrictionsForRepo")
+  var setRestrictionsForRepo_Original: `149` = js.native
+  /**
+    * Temporarily restricts interactions to certain GitHub users in any public repository in the given organization. You must be an organization owner to set these restrictions.
+    * @deprecated octokit.interactions.addOrUpdateRestrictionsForOrg() has been renamed to octokit.interactions.setRestrictionsForOrg() (2020-06-04)
+    */
   def addOrUpdateRestrictionsForOrg(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/:org/interaction-limits']['response'] */ js.Any
   ] = js.native
@@ -57,6 +70,7 @@ trait AddOrUpdateRestrictionsForOrg extends js.Object {
   ] = js.native
   /**
     * Temporarily restricts interactions to certain GitHub users within the given repository. You must have owner or admin access to set restrictions.
+    * @deprecated octokit.interactions.addOrUpdateRestrictionsForRepo() has been renamed to octokit.interactions.setRestrictionsForRepo() (2020-06-04)
     */
   def addOrUpdateRestrictionsForRepo(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/interaction-limits']['response'] */ js.Any
@@ -124,6 +138,34 @@ trait AddOrUpdateRestrictionsForOrg extends js.Object {
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/interaction-limits']['response'] */ js.Any
+  ] = js.native
+  /**
+    * Temporarily restricts interactions to certain GitHub users in any public repository in the given organization. You must be an organization owner to set these restrictions.
+    */
+  def setRestrictionsForOrg(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/:org/interaction-limits']['response'] */ js.Any
+  ] = js.native
+  def setRestrictionsForOrg(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/:org/interaction-limits']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/:org/interaction-limits']['response'] */ js.Any
+  ] = js.native
+  /**
+    * Temporarily restricts interactions to certain GitHub users within the given repository. You must have owner or admin access to set restrictions.
+    */
+  def setRestrictionsForRepo(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/interaction-limits']['response'] */ js.Any
+  ] = js.native
+  def setRestrictionsForRepo(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/interaction-limits']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/interaction-limits']['response'] */ js.Any
   ] = js.native
 }
 

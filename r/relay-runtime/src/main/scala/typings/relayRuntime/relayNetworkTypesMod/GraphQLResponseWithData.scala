@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GraphQLResponseWithData extends GraphQLResponse {
+trait GraphQLResponseWithData extends GraphQLSingularResponse {
   var data: PayloadData
   var errors: js.UndefOr[js.Array[PayloadError]] = js.undefined
   var extensions: js.UndefOr[PayloadExtensions] = js.undefined

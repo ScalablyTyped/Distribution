@@ -24,7 +24,7 @@ object SchemaPivotGroupValueMetadata {
   @scala.inline
   def apply(collapsed: js.UndefOr[Boolean] = js.undefined, value: SchemaExtendedValue = null): SchemaPivotGroupValueMetadata = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPivotGroupValueMetadata]
   }

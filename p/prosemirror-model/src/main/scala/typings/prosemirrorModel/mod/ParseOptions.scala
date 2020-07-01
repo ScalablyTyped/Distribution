@@ -50,7 +50,7 @@ trait ParseOptions[S /* <: Schema[_, _] */] extends js.Object {
 
 object ParseOptions {
   @scala.inline
-  def apply[S](
+  def apply[/* <: typings.prosemirrorModel.mod.Schema[_, _] */ S](
     context: js.UndefOr[Null | ResolvedPos[S]] = js.undefined,
     findPositions: js.UndefOr[Null | js.Array[typings.prosemirrorModel.anon.Node]] = js.undefined,
     from: js.UndefOr[Null | Double] = js.undefined,

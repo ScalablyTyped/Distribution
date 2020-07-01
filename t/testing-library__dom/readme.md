@@ -1,7 +1,7 @@
 
 # Scala.js typings for testing-library__dom
 
-Typings are for version 7.0
+Typings are for version 7.19.0
 
 ## Library description:
 Simple and complete DOM testing utilities that encourage good testing practices.
@@ -24,7 +24,7 @@ Simple and complete DOM testing utilities that encourage good testing practices.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

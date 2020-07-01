@@ -22,9 +22,9 @@ trait SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy extends js.Objec
 
 object SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy {
   @scala.inline
-  def apply(maxRetentionDays: Int | Double = null, onSourceDiskDelete: String = null): SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy = {
+  def apply(maxRetentionDays: js.UndefOr[Double] = js.undefined, onSourceDiskDelete: String = null): SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy = {
     val __obj = js.Dynamic.literal()
-    if (maxRetentionDays != null) __obj.updateDynamic("maxRetentionDays")(maxRetentionDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetentionDays)) __obj.updateDynamic("maxRetentionDays")(maxRetentionDays.get.asInstanceOf[js.Any])
     if (onSourceDiskDelete != null) __obj.updateDynamic("onSourceDiskDelete")(onSourceDiskDelete.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy]
   }

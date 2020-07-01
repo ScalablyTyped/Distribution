@@ -1,8 +1,7 @@
 package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pixiJs.anon.Font
-import typings.std.XMLDocument
+import typings.pixiJs.anon.FontName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,12 +12,11 @@ import scala.scalajs.js.annotation._
   * The primary advantage of this class over Text is that all of your textures are pre-generated and loading,
   * meaning that rendering is fast, and changing text has no performance implications.
   *
-  * The primary disadvantage is that you need to preload the bitmap font assets, and thus the styling is set in stone.
   * Supporting character sets other than latin, such as CJK languages, may be impractical due to the number of characters.
   *
   * To split a line you can use '\n', '\r' or '\r\n' in your string.
   *
-  * You can generate the fnt files using
+  * PixiJS can auto-generate fonts on-the-fly using BitmapFont or use fnt files provided by:
   * http://www.angelcode.com/products/bmfont/ for Windows or
   * http://www.bmglyph.com/ for Mac.
   *
@@ -37,24 +35,30 @@ import scala.scalajs.js.annotation._
 @js.native
 class BitmapText protected ()
   extends typings.pixiJs.PIXI.BitmapText {
-  def this(text: String, style: Font) = this()
+  def this(text: String, style: FontName) = this()
 }
 
 /* static members */
 @JSImport("pixi.js", "BitmapText")
 @js.native
 object BitmapText extends js.Object {
-  def registerFont(xml: XMLDocument, textures: js.Array[typings.pixiJs.PIXI.Texture]): js.Any = js.native
+  /**
+    * Get the list of installed fonts.
+    *
+    * @see PIXI.BitmapFont.available
+    * @deprecated since 5.3.0
+    * @static
+    * @readonly
+    * @member {Object.<string, PIXI.BitmapFont>}
+    */
+  val fonts: StringDictionary[typings.pixiJs.PIXI.BitmapFont] = js.native
   /**
     * Register a bitmap font with data and a texture.
     *
+    * @deprecated since 5.3.0
+    * @see PIXI.BitmapFont.install
     * @static
-    * @param {XMLDocument} xml - The XML document data.
-    * @param {Object.<string, PIXI.Texture>|PIXI.Texture|PIXI.Texture[]} textures - List of textures for each page.
-    *  If providing an object, the key is the `<page>` element's `file` attribute in the FNT file.
-    * @return {Object} Result font object with font, size, lineHeight and char fields.
     */
-  def registerFont(xml: XMLDocument, textures: StringDictionary[typings.pixiJs.PIXI.Texture]): js.Any = js.native
-  def registerFont(xml: XMLDocument, textures: typings.pixiJs.PIXI.Texture): js.Any = js.native
+  def registerFont(): Unit = js.native
 }
 

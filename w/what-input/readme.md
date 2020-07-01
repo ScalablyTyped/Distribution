@@ -1,7 +1,7 @@
 
 # Scala.js typings for what-input
 
-Typings are for version 5.2.9
+Typings are for version 5.2.10
 
 ## Library description:
 A global utility for tracking the current input method (mouse, keyboard or touch).

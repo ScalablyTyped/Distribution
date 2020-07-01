@@ -41,14 +41,14 @@ object SchemaGooglePrivacyDlpV2DateShiftConfig {
   def apply(
     context: SchemaGooglePrivacyDlpV2FieldId = null,
     cryptoKey: SchemaGooglePrivacyDlpV2CryptoKey = null,
-    lowerBoundDays: Int | Double = null,
-    upperBoundDays: Int | Double = null
+    lowerBoundDays: js.UndefOr[Double] = js.undefined,
+    upperBoundDays: js.UndefOr[Double] = js.undefined
   ): SchemaGooglePrivacyDlpV2DateShiftConfig = {
     val __obj = js.Dynamic.literal()
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (cryptoKey != null) __obj.updateDynamic("cryptoKey")(cryptoKey.asInstanceOf[js.Any])
-    if (lowerBoundDays != null) __obj.updateDynamic("lowerBoundDays")(lowerBoundDays.asInstanceOf[js.Any])
-    if (upperBoundDays != null) __obj.updateDynamic("upperBoundDays")(upperBoundDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowerBoundDays)) __obj.updateDynamic("lowerBoundDays")(lowerBoundDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(upperBoundDays)) __obj.updateDynamic("upperBoundDays")(upperBoundDays.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2DateShiftConfig]
   }
 }

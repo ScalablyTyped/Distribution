@@ -43,8 +43,22 @@ package object glueMod {
   type CodeGenIdentifier = java.lang.String
   type CodeGenNodeArgs = js.Array[typings.awsSdk.glueMod.CodeGenNodeArg]
   type CodeGenNodeType = java.lang.String
+  type ColumnErrors = js.Array[typings.awsSdk.glueMod.ColumnError]
   type ColumnList = js.Array[typings.awsSdk.glueMod.Column]
   type ColumnNameString = java.lang.String
+  type ColumnStatisticsErrors = js.Array[typings.awsSdk.glueMod.ColumnStatisticsError]
+  type ColumnStatisticsList = js.Array[typings.awsSdk.glueMod.ColumnStatistics]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.BOOLEAN
+    - typings.awsSdk.awsSdkStrings.DATE
+    - typings.awsSdk.awsSdkStrings.DECIMAL
+    - typings.awsSdk.awsSdkStrings.DOUBLE
+    - typings.awsSdk.awsSdkStrings.LONG
+    - typings.awsSdk.awsSdkStrings.STRING
+    - typings.awsSdk.awsSdkStrings.BINARY
+    - java.lang.String
+  */
+  type ColumnStatisticsType = typings.awsSdk.glueMod._ColumnStatisticsType | java.lang.String
   type ColumnTypeString = java.lang.String
   type ColumnValueStringList = js.Array[typings.awsSdk.glueMod.ColumnValuesString]
   type ColumnValuesString = java.lang.String
@@ -144,6 +158,7 @@ package object glueMod {
   type DevEndpointList = js.Array[typings.awsSdk.glueMod.DevEndpoint]
   type DevEndpointNameList = js.Array[typings.awsSdk.glueMod.NameString]
   type DevEndpointNames = js.Array[typings.awsSdk.glueMod.GenericString]
+  type Double = scala.Double
   type DynamoDBTargetList = js.Array[typings.awsSdk.glueMod.DynamoDBTarget]
   type EdgeList = js.Array[typings.awsSdk.glueMod.Edge]
   type ErrorByName = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.glueMod.ErrorDetail]
@@ -162,6 +177,7 @@ package object glueMod {
   type GenericBoundedDouble = scala.Double
   type GenericMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.glueMod.GenericString]
   type GenericString = java.lang.String
+  type GetColumnNamesList = js.Array[typings.awsSdk.glueMod.NameString]
   type GetTableVersionsList = js.Array[typings.awsSdk.glueMod.TableVersion]
   type GlueResourceArn = java.lang.String
   type GlueTables = js.Array[typings.awsSdk.glueMod.GlueTable]
@@ -223,6 +239,7 @@ package object glueMod {
   */
   type Logical = typings.awsSdk.glueMod._Logical | java.lang.String
   type LogicalOperator = typings.awsSdk.awsSdkStrings.EQUALS | java.lang.String
+  type Long = scala.Double
   type MapValue = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.glueMod.GenericString]
   type MappingList = js.Array[typings.awsSdk.glueMod.MappingEntry]
   type MatchCriteria = js.Array[typings.awsSdk.glueMod.NameString]
@@ -242,6 +259,7 @@ package object glueMod {
   type NodeType = typings.awsSdk.glueMod._NodeType | java.lang.String
   type NonNegativeDouble = scala.Double
   type NonNegativeInteger = scala.Double
+  type NonNegativeLong = scala.Double
   type NotifyDelayAfter = scala.Double
   type NullableBoolean = scala.Boolean
   type NullableDouble = scala.Double
@@ -420,6 +438,7 @@ package object glueMod {
     - java.lang.String
   */
   type TriggerType = typings.awsSdk.glueMod._TriggerType | java.lang.String
+  type TypeString = java.lang.String
   type URI = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.LOG
@@ -427,6 +446,7 @@ package object glueMod {
     - java.lang.String
   */
   type UpdateBehavior = typings.awsSdk.glueMod._UpdateBehavior | java.lang.String
+  type UpdateColumnStatisticsList = js.Array[typings.awsSdk.glueMod.ColumnStatistics]
   type UriString = java.lang.String
   type UserDefinedFunctionList = js.Array[typings.awsSdk.glueMod.UserDefinedFunction]
   type ValueString = java.lang.String
@@ -453,6 +473,7 @@ package object glueMod {
   type WorkflowRunStatus = typings.awsSdk.glueMod._WorkflowRunStatus | java.lang.String
   type WorkflowRuns = js.Array[typings.awsSdk.glueMod.WorkflowRun]
   type Workflows = js.Array[typings.awsSdk.glueMod.Workflow]
+  type _Blob = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.glueMod.Blob | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`2017-03-31`
     - typings.awsSdk.awsSdkStrings.latest_

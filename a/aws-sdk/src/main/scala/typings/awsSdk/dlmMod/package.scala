@@ -12,6 +12,7 @@ package object dlmMod {
   type CopyTags = scala.Boolean
   type CopyTagsNullable = scala.Boolean
   type Count = scala.Double
+  type CronExpression = java.lang.String
   type CrossRegionCopyRules = js.Array[typings.awsSdk.dlmMod.CrossRegionCopyRule]
   type Encrypted = scala.Boolean
   type ExcludeBootVolume = scala.Boolean

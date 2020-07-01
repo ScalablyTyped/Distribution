@@ -147,6 +147,7 @@ trait MenuItemProps extends js.Object {
   var color: js.UndefOr[String] = js.undefined
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   var contextMenu: js.UndefOr[String] = js.undefined
+  var danger: js.UndefOr[Boolean] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   var datatype: js.UndefOr[String] = js.undefined
   var defaultChecked: js.UndefOr[Boolean] = js.undefined
@@ -329,6 +330,7 @@ object MenuItemProps {
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
+    danger: js.UndefOr[Boolean] = js.undefined,
     dangerouslySetInnerHTML: Html = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
@@ -508,6 +510,7 @@ object MenuItemProps {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
+    if (!js.isUndefined(danger)) __obj.updateDynamic("danger")(danger.get.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.get.asInstanceOf[js.Any])

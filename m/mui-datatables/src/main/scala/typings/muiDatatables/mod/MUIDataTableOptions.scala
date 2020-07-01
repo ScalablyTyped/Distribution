@@ -2,6 +2,7 @@ package typings.muiDatatables.mod
 
 import typings.muiDatatables.anon.ColIndex
 import typings.muiDatatables.anon.DataDataIndex
+import typings.muiDatatables.anon.DataLookup
 import typings.muiDatatables.anon.Lookup
 import typings.muiDatatables.anon.PartialMUIDataTableTextLaBody
 import typings.muiDatatables.anon.Partialfilenamestringsepa
@@ -116,7 +117,7 @@ trait MUIDataTableOptions extends js.Object {
   var onFilterDialogClose: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onFilterDialogOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onRowClick: js.UndefOr[js.Function2[/* rowData */ js.Array[String], /* rowMeta */ RowIndex, Unit]] = js.undefined
-  var onRowsDelete: js.UndefOr[js.Function1[/* rowsDeleted */ js.Array[_], Unit]] = js.undefined
+  var onRowsDelete: js.UndefOr[js.Function1[/* rowsDeleted */ DataLookup, Unit]] = js.undefined
   var onRowsExpand: js.UndefOr[
     js.Function2[/* currentRowsExpanded */ js.Array[_], /* allRowsExpanded */ js.Array[_], Unit]
   ] = js.undefined
@@ -191,7 +192,7 @@ object MUIDataTableOptions {
     onFilterDialogClose: () => Unit = null,
     onFilterDialogOpen: () => Unit = null,
     onRowClick: (/* rowData */ js.Array[String], /* rowMeta */ RowIndex) => Unit = null,
-    onRowsDelete: /* rowsDeleted */ js.Array[_] => Unit = null,
+    onRowsDelete: /* rowsDeleted */ DataLookup => Unit = null,
     onRowsExpand: (/* currentRowsExpanded */ js.Array[_], /* allRowsExpanded */ js.Array[_]) => Unit = null,
     onRowsSelect: (/* currentRowsSelected */ js.Array[_], /* rowsSelected */ js.Array[_]) => Unit = null,
     onSearchChange: /* searchText */ String => Unit = null,

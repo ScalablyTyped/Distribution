@@ -1,5 +1,6 @@
 package typings.reactSvg.typesMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ReactType
 import typings.reactSvg.reactSvgStrings.div
 import typings.reactSvg.reactSvgStrings.span
@@ -12,7 +13,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BaseProps extends js.Object {
+trait BaseProps
+  extends /* key */ StringDictionary[js.Any] {
   var afterInjection: js.UndefOr[Errback] = js.undefined
   var beforeInjection: js.UndefOr[BeforeEach] = js.undefined
   var evalScripts: js.UndefOr[EvalScripts] = js.undefined
@@ -27,6 +29,7 @@ object BaseProps {
   @scala.inline
   def apply(
     src: String,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     afterInjection: (/* error */ Error | Null, /* svg */ js.UndefOr[SVGElement]) => Unit = null,
     beforeInjection: /* svg */ SVGElement => Unit = null,
     evalScripts: EvalScripts = null,
@@ -36,6 +39,7 @@ object BaseProps {
     wrapper: div | span = null
   ): BaseProps = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (afterInjection != null) __obj.updateDynamic("afterInjection")(js.Any.fromFunction2(afterInjection))
     if (beforeInjection != null) __obj.updateDynamic("beforeInjection")(js.Any.fromFunction1(beforeInjection))
     if (evalScripts != null) __obj.updateDynamic("evalScripts")(evalScripts.asInstanceOf[js.Any])

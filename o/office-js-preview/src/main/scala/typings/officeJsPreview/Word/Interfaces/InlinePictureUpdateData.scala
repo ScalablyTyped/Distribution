@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the InlinePicture object, for use in "inlinePicture.set({ ... })". */
+/** An interface for updating data on the InlinePicture object, for use in `inlinePicture.set({ ... })`. */
 trait InlinePictureUpdateData extends js.Object {
   /**
     *

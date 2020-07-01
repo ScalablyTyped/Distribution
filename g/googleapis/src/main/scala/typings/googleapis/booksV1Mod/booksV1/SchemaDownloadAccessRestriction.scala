@@ -66,10 +66,10 @@ object SchemaDownloadAccessRestriction {
   @scala.inline
   def apply(
     deviceAllowed: js.UndefOr[Boolean] = js.undefined,
-    downloadsAcquired: Int | Double = null,
+    downloadsAcquired: js.UndefOr[Double] = js.undefined,
     justAcquired: js.UndefOr[Boolean] = js.undefined,
     kind: String = null,
-    maxDownloadDevices: Int | Double = null,
+    maxDownloadDevices: js.UndefOr[Double] = js.undefined,
     message: String = null,
     nonce: String = null,
     reasonCode: String = null,
@@ -79,15 +79,15 @@ object SchemaDownloadAccessRestriction {
     volumeId: String = null
   ): SchemaDownloadAccessRestriction = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deviceAllowed)) __obj.updateDynamic("deviceAllowed")(deviceAllowed.asInstanceOf[js.Any])
-    if (downloadsAcquired != null) __obj.updateDynamic("downloadsAcquired")(downloadsAcquired.asInstanceOf[js.Any])
-    if (!js.isUndefined(justAcquired)) __obj.updateDynamic("justAcquired")(justAcquired.asInstanceOf[js.Any])
+    if (!js.isUndefined(deviceAllowed)) __obj.updateDynamic("deviceAllowed")(deviceAllowed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(downloadsAcquired)) __obj.updateDynamic("downloadsAcquired")(downloadsAcquired.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(justAcquired)) __obj.updateDynamic("justAcquired")(justAcquired.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (maxDownloadDevices != null) __obj.updateDynamic("maxDownloadDevices")(maxDownloadDevices.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDownloadDevices)) __obj.updateDynamic("maxDownloadDevices")(maxDownloadDevices.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
     if (reasonCode != null) __obj.updateDynamic("reasonCode")(reasonCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(restricted)) __obj.updateDynamic("restricted")(restricted.asInstanceOf[js.Any])
+    if (!js.isUndefined(restricted)) __obj.updateDynamic("restricted")(restricted.get.asInstanceOf[js.Any])
     if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId.asInstanceOf[js.Any])

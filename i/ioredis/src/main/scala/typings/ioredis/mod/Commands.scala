@@ -20,6 +20,7 @@ import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Readable
 import typings.std.Error
+import typings.std.Map
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -153,6 +154,9 @@ trait Commands extends js.Object {
   def append(key: KeyType, value: ValueType, callback: Callback[Double]): Unit = js.native
   def auth(password: String): js.Promise[String] = js.native
   def auth(password: String, callback: Callback[String]): Unit = js.native
+  // tslint:disable-next-line unified-signatures
+  def auth(username: String, password: String): js.Promise[String] = js.native
+  def auth(username: String, password: String, callback: Callback[String]): Unit = js.native
   def bgrewriteaof(): js.Promise[String] = js.native
   def bgrewriteaof(callback: Callback[String]): Unit = js.native
   def bgsave(): js.Promise[String] = js.native
@@ -576,6 +580,8 @@ trait Commands extends js.Object {
   def hmset(key: KeyType, data: js.Array[ValueType], cb: Callback[Ok]): Unit = js.native
   def hmset(key: KeyType, data: StringDictionary[ValueType]): js.Promise[Ok] = js.native
   def hmset(key: KeyType, data: StringDictionary[ValueType], cb: Callback[Ok]): Unit = js.native
+  def hmset(key: KeyType, data: Map[String, ValueType]): js.Promise[Ok] = js.native
+  def hmset(key: KeyType, data: Map[String, ValueType], cb: Callback[Ok]): Unit = js.native
   def hscan(key: KeyType, arg1: js.Array[ValueType]): js.Promise[js.Tuple2[String, js.Array[String]]] = js.native
   def hscan(key: KeyType, arg1: js.Array[ValueType], cb: Callback[js.Tuple2[String, js.Array[String]]]): Unit = js.native
   def hscan(
@@ -832,6 +838,8 @@ trait Commands extends js.Object {
   def mset(data: js.Array[ValueType], cb: Callback[Ok]): Unit = js.native
   def mset(data: StringDictionary[ValueType]): js.Promise[Ok] = js.native
   def mset(data: StringDictionary[ValueType], cb: Callback[Ok]): Unit = js.native
+  def mset(data: Map[String, ValueType]): js.Promise[Ok] = js.native
+  def mset(data: Map[String, ValueType], cb: Callback[Ok]): Unit = js.native
   def msetnx(
     arg1: ValueType,
     arg2: ValueType,
@@ -848,6 +856,8 @@ trait Commands extends js.Object {
   def msetnx(data: js.Array[ValueType], cb: Callback[BooleanResponse]): Unit = js.native
   def msetnx(data: StringDictionary[ValueType]): js.Promise[BooleanResponse] = js.native
   def msetnx(data: StringDictionary[ValueType], cb: Callback[BooleanResponse]): Unit = js.native
+  def msetnx(data: Map[String, ValueType]): js.Promise[BooleanResponse] = js.native
+  def msetnx(data: Map[String, ValueType], cb: Callback[BooleanResponse]): Unit = js.native
   def multi(): Pipeline = js.native
   def multi(commands: js.Array[js.Array[String]]): Pipeline = js.native
   def multi(commands: js.Array[js.Array[String]], options: MultiOptions): Pipeline = js.native

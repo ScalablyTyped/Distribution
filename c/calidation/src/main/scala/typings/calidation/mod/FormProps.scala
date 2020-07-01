@@ -73,7 +73,7 @@ import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.FormHTMLAttributes<std.HTMLFormElement>, std.HTMLFormElement>, 'onSubmit'> */
 @js.native
-trait FormProps extends js.Object {
+trait FormProps[T /* <: js.Object */] extends js.Object {
   var about: js.UndefOr[String] = js.native
   var acceptCharset: js.UndefOr[String] = js.native
   var accessKey: js.UndefOr[String] = js.native
@@ -227,7 +227,7 @@ trait FormProps extends js.Object {
   var onSeeking: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.native
   var onSelect: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.native
   var onStalled: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.native
-  var onSubmit: js.UndefOr[js.Function1[/* context */ FormContext, Unit]] = js.native
+  var onSubmit: js.UndefOr[js.Function1[/* context */ FormContext[T], Unit]] = js.native
   var onSuspend: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.native
   var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.native
   var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLFormElement]] = js.native
@@ -235,7 +235,7 @@ trait FormProps extends js.Object {
   var onTouchMove: js.UndefOr[TouchEventHandler[HTMLFormElement]] = js.native
   var onTouchStart: js.UndefOr[TouchEventHandler[HTMLFormElement]] = js.native
   var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLFormElement]] = js.native
-  var onUpdate: js.UndefOr[js.Function1[/* context */ FormContext, Unit]] = js.native
+  var onUpdate: js.UndefOr[js.Function1[/* context */ FormContext[T], Unit]] = js.native
   var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.native
   var onWaiting: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.native
   var onWheel: js.UndefOr[WheelEventHandler[HTMLFormElement]] = js.native

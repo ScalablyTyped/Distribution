@@ -452,7 +452,7 @@ object rechartsStrings {
   sealed trait unicodeBidi extends PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait utcTime extends ScaleType
+  sealed trait utc extends ScaleType
   
   @js.native
   sealed trait vertical extends LayoutType
@@ -739,7 +739,7 @@ object rechartsStrings {
   @scala.inline
   def unicodeBidi: unicodeBidi = "unicodeBidi".asInstanceOf[unicodeBidi]
   @scala.inline
-  def utcTime: utcTime = "utcTime".asInstanceOf[utcTime]
+  def utc: utc = "utc".asInstanceOf[utc]
   @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   @scala.inline

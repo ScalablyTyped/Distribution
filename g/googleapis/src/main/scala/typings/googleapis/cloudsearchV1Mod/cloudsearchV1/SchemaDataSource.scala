@@ -76,8 +76,8 @@ object SchemaDataSource {
     shortName: String = null
   ): SchemaDataSource = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableModifications)) __obj.updateDynamic("disableModifications")(disableModifications.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableServing)) __obj.updateDynamic("disableServing")(disableServing.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableModifications)) __obj.updateDynamic("disableModifications")(disableModifications.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableServing)) __obj.updateDynamic("disableServing")(disableServing.get.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (indexingServiceAccounts != null) __obj.updateDynamic("indexingServiceAccounts")(indexingServiceAccounts.asInstanceOf[js.Any])
     if (itemsVisibility != null) __obj.updateDynamic("itemsVisibility")(itemsVisibility.asInstanceOf[js.Any])

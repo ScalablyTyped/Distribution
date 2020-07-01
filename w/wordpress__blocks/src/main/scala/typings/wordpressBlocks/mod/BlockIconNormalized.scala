@@ -1,6 +1,7 @@
 package typings.wordpressBlocks.mod
 
 import typings.react.mod.ComponentType
+import typings.react.mod.ReactElement
 import typings.wordpressComponents.dashiconMod.Dashicon.Icon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,13 +11,13 @@ trait BlockIconNormalized extends js.Object {
   var background: js.UndefOr[String] = js.undefined
   var foreground: js.UndefOr[String] = js.undefined
   var shadowColor: js.UndefOr[String] = js.undefined
-  var src: Icon | ComponentType[js.Object]
+  var src: Icon | ReactElement | ComponentType[js.Object]
 }
 
 object BlockIconNormalized {
   @scala.inline
   def apply(
-    src: Icon | ComponentType[js.Object],
+    src: Icon | ReactElement | ComponentType[js.Object],
     background: String = null,
     foreground: String = null,
     shadowColor: String = null

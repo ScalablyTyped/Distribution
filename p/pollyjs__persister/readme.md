@@ -1,7 +1,7 @@
 
 # Scala.js typings for pollyjs__persister
 
-Typings are for version 2.0
+Typings are for version 4.3
 
 ## Library description:
 Extendable base persister class used by @pollyjs

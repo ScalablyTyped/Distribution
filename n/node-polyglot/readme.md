@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-polyglot
 
-Typings are for version v0.4.4
+Typings are for version v2.4.0
 
 ## Library description:
 Give your JavaScript the ability to speak many languages.

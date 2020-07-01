@@ -1,5 +1,7 @@
 package typings.kefir.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,6 +47,7 @@ object combine extends js.Object {
     ], 
     _
   ] = js.native
+  def apply[T /* <: StringDictionary[Observable[_, _]] */, K /* <: StringDictionary[Observable[_, _]] */](obss: T, passiveObss: K): Stream_[typings.kefir.kefirStrings.combine with TopLevel[T] with TopLevel[K], _] = js.native
   def apply[T, S, U](obss: js.Array[Observable[T, S]], combinator: js.Function1[/* repeated */ T, U]): Stream_[U, S] = js.native
   def apply[T, S, U](obss: js.Array[Observable[T, S]], passiveObss: js.Array[Observable[T, S]]): Stream_[U, S] = js.native
   def apply[T, S, U](

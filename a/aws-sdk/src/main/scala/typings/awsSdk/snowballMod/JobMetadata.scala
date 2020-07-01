@@ -26,6 +26,7 @@ trait JobMetadata extends js.Object {
     * The description of the job, provided at job creation.
     */
   var Description: js.UndefOr[String] = js.native
+  var DeviceConfiguration: js.UndefOr[typings.awsSdk.snowballMod.DeviceConfiguration] = js.native
   /**
     * The ID of the address that you want a job shipped to, after it will be shipped to its primary address. This field is not supported in most regions.
     */
@@ -88,6 +89,7 @@ object JobMetadata {
     CreationDate: Timestamp = null,
     DataTransferProgress: DataTransfer = null,
     Description: String = null,
+    DeviceConfiguration: DeviceConfiguration = null,
     ForwardingAddressId: AddressId = null,
     JobId: String = null,
     JobLogInfo: JobLogs = null,
@@ -108,6 +110,7 @@ object JobMetadata {
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
     if (DataTransferProgress != null) __obj.updateDynamic("DataTransferProgress")(DataTransferProgress.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (DeviceConfiguration != null) __obj.updateDynamic("DeviceConfiguration")(DeviceConfiguration.asInstanceOf[js.Any])
     if (ForwardingAddressId != null) __obj.updateDynamic("ForwardingAddressId")(ForwardingAddressId.asInstanceOf[js.Any])
     if (JobId != null) __obj.updateDynamic("JobId")(JobId.asInstanceOf[js.Any])
     if (JobLogInfo != null) __obj.updateDynamic("JobLogInfo")(JobLogInfo.asInstanceOf[js.Any])

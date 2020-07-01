@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__hash
 
-Typings are for version 5.0.0-beta.134
+Typings are for version 5.0.1
 
 ## Library description:
 Hash utility functions for Ethereum.

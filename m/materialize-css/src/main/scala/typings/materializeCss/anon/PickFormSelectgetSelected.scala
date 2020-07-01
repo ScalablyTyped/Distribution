@@ -5,13 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Pick<materialize-css.M.FormSelect, 'getSelectedValues' | 'destroy'> */
-@js.native
 trait PickFormSelectgetSelected extends js.Object {
-  @JSName("destroy")
-  var destroy_Original: js.Function0[Unit] = js.native
-  @JSName("getSelectedValues")
-  var getSelectedValues_Original: js.Function0[js.Array[String]] = js.native
-  def destroy(): Unit = js.native
-  def getSelectedValues(): js.Array[String] = js.native
+  var destroy: js.UndefOr[js.Any] = js.undefined
+  var getSelectedValues: js.UndefOr[js.Any] = js.undefined
+}
+
+object PickFormSelectgetSelected {
+  @scala.inline
+  def apply(destroy: js.Any = null, getSelectedValues: js.Any = null): PickFormSelectgetSelected = {
+    val __obj = js.Dynamic.literal()
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
+    if (getSelectedValues != null) __obj.updateDynamic("getSelectedValues")(getSelectedValues.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PickFormSelectgetSelected]
+  }
 }
 

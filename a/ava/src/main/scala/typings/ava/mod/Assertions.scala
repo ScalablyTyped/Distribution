@@ -1,6 +1,7 @@
 package typings.ava.mod
 
 import typings.std.Error
+import typings.std.Record
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,6 +30,9 @@ trait Assertions extends js.Object {
   	 */
   @JSName("is")
   var is_Original: IsAssertion = js.native
+  /** Assert that `actual` is like `expected`. */
+  @JSName("like")
+  var like_Original: LikeAssertion = js.native
   /** Assert that `actual` is not [deeply equal](https://github.com/concordancejs/concordance#comparison-details) to `expected`. */
   @JSName("notDeepEqual")
   var notDeepEqual_Original: NotDeepEqualAssertion = js.native
@@ -107,6 +111,10 @@ trait Assertions extends js.Object {
   	 */
   def is[ValueType](actual: ValueType, expected: ValueType): Unit = js.native
   def is[ValueType](actual: ValueType, expected: ValueType, message: String): Unit = js.native
+  /** Assert that `value` is like `selector`. */
+  /** Assert that `actual` is like `expected`. */
+  def like(value: js.Any, selector: Record[String, _]): Unit = js.native
+  def like(value: js.Any, selector: Record[String, _], message: String): Unit = js.native
   /**
   	 * Assert that `actual` is not [the same
   	 * value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is) as `expected`.

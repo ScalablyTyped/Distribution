@@ -35,6 +35,10 @@ trait JobFlowDetail extends js.Object {
     */
   var JobFlowRole: js.UndefOr[XmlString] = js.native
   /**
+    * The AWS KMS customer master key (CMK) used for encrypting log files. This attribute is only available with EMR version 5.30.0 and later, excluding EMR 6.0.0.
+    */
+  var LogEncryptionKmsKeyId: js.UndefOr[XmlString] = js.native
+  /**
     * The location in Amazon S3 where log files for the job are stored.
     */
   var LogUri: js.UndefOr[XmlString] = js.native
@@ -75,6 +79,7 @@ object JobFlowDetail {
     AutoScalingRole: XmlString = null,
     BootstrapActions: BootstrapActionDetailList = null,
     JobFlowRole: XmlString = null,
+    LogEncryptionKmsKeyId: XmlString = null,
     LogUri: XmlString = null,
     ScaleDownBehavior: ScaleDownBehavior = null,
     ServiceRole: XmlString = null,
@@ -87,6 +92,7 @@ object JobFlowDetail {
     if (AutoScalingRole != null) __obj.updateDynamic("AutoScalingRole")(AutoScalingRole.asInstanceOf[js.Any])
     if (BootstrapActions != null) __obj.updateDynamic("BootstrapActions")(BootstrapActions.asInstanceOf[js.Any])
     if (JobFlowRole != null) __obj.updateDynamic("JobFlowRole")(JobFlowRole.asInstanceOf[js.Any])
+    if (LogEncryptionKmsKeyId != null) __obj.updateDynamic("LogEncryptionKmsKeyId")(LogEncryptionKmsKeyId.asInstanceOf[js.Any])
     if (LogUri != null) __obj.updateDynamic("LogUri")(LogUri.asInstanceOf[js.Any])
     if (ScaleDownBehavior != null) __obj.updateDynamic("ScaleDownBehavior")(ScaleDownBehavior.asInstanceOf[js.Any])
     if (ServiceRole != null) __obj.updateDynamic("ServiceRole")(ServiceRole.asInstanceOf[js.Any])

@@ -49,7 +49,7 @@ trait SankeyLinkMinimal[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraPro
 
 object SankeyLinkMinimal {
   @scala.inline
-  def apply[N, L](
+  def apply[/* <: typings.d3Sankey.mod.SankeyExtraProperties */ N, /* <: typings.d3Sankey.mod.SankeyExtraProperties */ L](
     source: Double | String | (SankeyNode[N, L]),
     target: Double | String | (SankeyNode[N, L]),
     value: Double,

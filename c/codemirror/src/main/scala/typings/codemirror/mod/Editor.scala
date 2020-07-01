@@ -260,7 +260,7 @@ trait Editor extends Doc {
   @JSName("getOption")
   def getOption_lineWrapping(option: lineWrapping): Boolean = js.native
   @JSName("getOption")
-  def getOption_lint(option: lint): Boolean | LintOptions = js.native
+  def getOption_lint(option: lint): Boolean | LintStateOptions | Linter | AsyncLinter = js.native
   @JSName("getOption")
   def getOption_matchBrackets(option: matchBrackets): MatchBrackets | Boolean = js.native
   @JSName("getOption")
@@ -753,7 +753,11 @@ trait Editor extends Doc {
   @JSName("setOption")
   def setOption_lint(option: lint, value: Boolean): Unit = js.native
   @JSName("setOption")
-  def setOption_lint(option: lint, value: LintOptions): Unit = js.native
+  def setOption_lint(option: lint, value: AsyncLinter): Unit = js.native
+  @JSName("setOption")
+  def setOption_lint(option: lint, value: LintStateOptions): Unit = js.native
+  @JSName("setOption")
+  def setOption_lint(option: lint, value: Linter): Unit = js.native
   @JSName("setOption")
   def setOption_matchBrackets(option: matchBrackets, value: Boolean): Unit = js.native
   @JSName("setOption")

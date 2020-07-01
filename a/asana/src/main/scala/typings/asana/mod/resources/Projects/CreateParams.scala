@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait CreateParams extends js.Object {
   var color: js.UndefOr[String] = js.undefined
-  var due_date: String
+  var due_date: js.UndefOr[String] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var notes: js.UndefOr[String] = js.undefined
   var public: js.UndefOr[Boolean] = js.undefined
@@ -16,15 +16,16 @@ trait CreateParams extends js.Object {
 object CreateParams {
   @scala.inline
   def apply(
-    due_date: String,
     color: String = null,
+    due_date: String = null,
     name: String = null,
     notes: String = null,
     public: js.UndefOr[Boolean] = js.undefined,
     team: js.UndefOr[Double] = js.undefined
   ): CreateParams = {
-    val __obj = js.Dynamic.literal(due_date = due_date.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (due_date != null) __obj.updateDynamic("due_date")(due_date.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
     if (!js.isUndefined(public)) __obj.updateDynamic("public")(public.get.asInstanceOf[js.Any])

@@ -15,11 +15,11 @@ trait AxisCrosshairLabelOptions extends js.Object {
     * (Highstock) The background color for the label. Defaults to the related
     * series color, or `#666666` if that is not available.
     */
-  var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var backgroundColor: js.UndefOr[ColorType] = js.undefined
   /**
     * (Highstock) The border color for the crosshair label
     */
-  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var borderColor: js.UndefOr[ColorType] = js.undefined
   /**
     * (Highstock) The border corner radius of the crosshair label.
     */
@@ -59,8 +59,8 @@ object AxisCrosshairLabelOptions {
   @scala.inline
   def apply(
     align: AlignValue = null,
-    backgroundColor: ColorString | GradientColorObject | PatternObject = null,
-    borderColor: ColorString | GradientColorObject | PatternObject = null,
+    backgroundColor: ColorType = null,
+    borderColor: ColorType = null,
     borderRadius: js.UndefOr[Double] = js.undefined,
     borderWidth: js.UndefOr[Double] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,

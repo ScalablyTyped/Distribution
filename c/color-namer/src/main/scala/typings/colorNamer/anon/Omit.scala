@@ -11,7 +11,7 @@ trait Omit[T /* <: Palette */] extends js.Object {
 
 object Omit {
   @scala.inline
-  def apply[T](omit: js.Array[T]): Omit[T] = {
+  def apply[/* <: typings.colorNamer.mod.Palette */ T](omit: js.Array[T]): Omit[T] = {
     val __obj = js.Dynamic.literal(omit = omit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Omit[T]]
   }

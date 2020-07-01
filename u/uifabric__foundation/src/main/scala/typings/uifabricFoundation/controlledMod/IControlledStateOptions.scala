@@ -13,7 +13,7 @@ trait IControlledStateOptions[TProps, TProp /* <: /* keyof TProps */ String */, 
 
 object IControlledStateOptions {
   @scala.inline
-  def apply[TProps, TProp, TDefaultProp](
+  def apply[TProps, /* <: / * keyof TProps * / java.lang.String */ TProp, /* <: / * keyof TProps * / java.lang.String */ TDefaultProp](
     defaultPropName: TDefaultProp = null,
     defaultPropValue: /* import warning: importer.ImportType#apply Failed type conversion: TProps[TProp] */ js.Any = null
   ): IControlledStateOptions[TProps, TProp, TDefaultProp] = {

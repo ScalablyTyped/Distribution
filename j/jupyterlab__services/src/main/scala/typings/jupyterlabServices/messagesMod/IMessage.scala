@@ -57,7 +57,7 @@ trait IMessage[MSGTYPE /* <: MessageType */] extends js.Object {
 
 object IMessage {
   @scala.inline
-  def apply[MSGTYPE](
+  def apply[/* <: typings.jupyterlabServices.messagesMod.MessageType */ MSGTYPE](
     channel: Channel,
     content: Wait | Commid | (ReplyContent[
       ICommInfoReply | ICompleteReply | IHistoryReply | IInfoReply | IInputReply | IInspectReply | IIsCompleteReplyIncomplete | IIsCompleteReplyOther

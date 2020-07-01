@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo-datasource
 
-Typings are for version 0.7.1-alpha.0
+Typings are for version 0.7.2
 
 
 

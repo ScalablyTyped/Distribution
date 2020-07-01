@@ -17,9 +17,9 @@ trait SchemaReplaceAllTextResponse extends js.Object {
 
 object SchemaReplaceAllTextResponse {
   @scala.inline
-  def apply(occurrencesChanged: Int | Double = null): SchemaReplaceAllTextResponse = {
+  def apply(occurrencesChanged: js.UndefOr[Double] = js.undefined): SchemaReplaceAllTextResponse = {
     val __obj = js.Dynamic.literal()
-    if (occurrencesChanged != null) __obj.updateDynamic("occurrencesChanged")(occurrencesChanged.asInstanceOf[js.Any])
+    if (!js.isUndefined(occurrencesChanged)) __obj.updateDynamic("occurrencesChanged")(occurrencesChanged.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReplaceAllTextResponse]
   }
 }

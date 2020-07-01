@@ -14,6 +14,7 @@ trait Listener extends js.Object {
     * The port mapping information for the listener.
     */
   var portMapping: PortMapping = js.native
+  var timeout: js.UndefOr[ListenerTimeout] = js.native
   /**
     * A reference to an object that represents the Transport Layer Security (TLS) properties for a listener.
     */
@@ -22,9 +23,15 @@ trait Listener extends js.Object {
 
 object Listener {
   @scala.inline
-  def apply(portMapping: PortMapping, healthCheck: HealthCheckPolicy = null, tls: ListenerTls = null): Listener = {
+  def apply(
+    portMapping: PortMapping,
+    healthCheck: HealthCheckPolicy = null,
+    timeout: ListenerTimeout = null,
+    tls: ListenerTls = null
+  ): Listener = {
     val __obj = js.Dynamic.literal(portMapping = portMapping.asInstanceOf[js.Any])
     if (healthCheck != null) __obj.updateDynamic("healthCheck")(healthCheck.asInstanceOf[js.Any])
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (tls != null) __obj.updateDynamic("tls")(tls.asInstanceOf[js.Any])
     __obj.asInstanceOf[Listener]
   }

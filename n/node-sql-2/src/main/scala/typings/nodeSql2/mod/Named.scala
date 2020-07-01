@@ -10,7 +10,7 @@ trait Named[Name /* <: String */] extends js.Object {
 
 object Named {
   @scala.inline
-  def apply[Name](name: Name = null): Named[Name] = {
+  def apply[/* <: java.lang.String */ Name](name: Name = null): Named[Name] = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Named[Name]]

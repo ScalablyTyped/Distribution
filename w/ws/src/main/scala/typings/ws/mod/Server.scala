@@ -127,6 +127,6 @@ class Server () extends EventEmitter {
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_listening(event: listening, cb: js.Function0[Unit]): this.type = js.native
-  def shouldHandle(request: IncomingMessage): Boolean = js.native
+  def shouldHandle(request: IncomingMessage): Boolean | js.Promise[Boolean] = js.native
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListTagsForResourceResponse extends js.Object {
   /**
-    *  Tags result for response. 
+    *  A list of tags for the specified The Amazon Resource Name (ARN). 
     */
   var tags: js.UndefOr[TagMap] = js.native
 }

@@ -19,7 +19,7 @@ object SchemaDisplayDevice {
   @scala.inline
   def apply(enableDisplay: js.UndefOr[Boolean] = js.undefined): SchemaDisplayDevice = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableDisplay)) __obj.updateDynamic("enableDisplay")(enableDisplay.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableDisplay)) __obj.updateDynamic("enableDisplay")(enableDisplay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDisplayDevice]
   }
 }

@@ -1,5 +1,6 @@
 package typings.writeFileAtomic.mod
 
+import typings.node.BufferEncoding
 import typings.writeFileAtomic.anon.Gid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -7,7 +8,10 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   var chown: js.UndefOr[Gid] = js.undefined
-  var encoding: js.UndefOr[String] = js.undefined
+  /**
+    * @default 'utf8'
+    */
+  var encoding: js.UndefOr[BufferEncoding] = js.undefined
   var fsync: js.UndefOr[Boolean] = js.undefined
   var mode: js.UndefOr[Double] = js.undefined
 }
@@ -16,7 +20,7 @@ object Options {
   @scala.inline
   def apply(
     chown: Gid = null,
-    encoding: String = null,
+    encoding: BufferEncoding = null,
     fsync: js.UndefOr[Boolean] = js.undefined,
     mode: js.UndefOr[Double] = js.undefined
   ): Options = {

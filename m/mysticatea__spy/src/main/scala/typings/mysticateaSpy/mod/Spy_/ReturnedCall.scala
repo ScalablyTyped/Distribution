@@ -18,7 +18,7 @@ trait ReturnedCall[T /* <: js.Function1[/* repeated */ js.Any, _] */] extends Ca
 
 object ReturnedCall {
   @scala.inline
-  def apply[T](
+  def apply[/* <: js.Function1[/ * repeated * / js.Any, _] */ T](
     arguments: Parameters[T],
     `return`: ReturnType[T],
     `type`: `return`,

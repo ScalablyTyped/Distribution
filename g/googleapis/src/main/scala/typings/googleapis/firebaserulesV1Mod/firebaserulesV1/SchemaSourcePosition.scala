@@ -26,11 +26,15 @@ trait SchemaSourcePosition extends js.Object {
 
 object SchemaSourcePosition {
   @scala.inline
-  def apply(column: Int | Double = null, fileName: String = null, line: Int | Double = null): SchemaSourcePosition = {
+  def apply(
+    column: js.UndefOr[Double] = js.undefined,
+    fileName: String = null,
+    line: js.UndefOr[Double] = js.undefined
+  ): SchemaSourcePosition = {
     val __obj = js.Dynamic.literal()
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.get.asInstanceOf[js.Any])
     if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (!js.isUndefined(line)) __obj.updateDynamic("line")(line.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSourcePosition]
   }
 }

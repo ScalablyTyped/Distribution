@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Endpoint extends js.Object {
-  var agentLogin: String
-  var endpointARN: String
-  var endpointId: String
-  var name: String
-  var phoneNumber: String
-  var queue: String
-  var `type`: EndpointType
+  val agentLogin: String
+  val endpointARN: String
+  val endpointId: String
+  val name: String
+  val phoneNumber: String
+  val queue: String
+  val `type`: EndpointType
 }
 
 object Endpoint {

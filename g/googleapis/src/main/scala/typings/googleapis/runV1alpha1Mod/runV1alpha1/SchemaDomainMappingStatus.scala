@@ -38,13 +38,13 @@ object SchemaDomainMappingStatus {
   def apply(
     conditions: js.Array[SchemaDomainMappingCondition] = null,
     mappedRouteName: String = null,
-    observedGeneration: Int | Double = null,
+    observedGeneration: js.UndefOr[Double] = js.undefined,
     resourceRecords: js.Array[SchemaResourceRecord] = null
   ): SchemaDomainMappingStatus = {
     val __obj = js.Dynamic.literal()
     if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
     if (mappedRouteName != null) __obj.updateDynamic("mappedRouteName")(mappedRouteName.asInstanceOf[js.Any])
-    if (observedGeneration != null) __obj.updateDynamic("observedGeneration")(observedGeneration.asInstanceOf[js.Any])
+    if (!js.isUndefined(observedGeneration)) __obj.updateDynamic("observedGeneration")(observedGeneration.get.asInstanceOf[js.Any])
     if (resourceRecords != null) __obj.updateDynamic("resourceRecords")(resourceRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDomainMappingStatus]
   }

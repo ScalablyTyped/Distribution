@@ -35,7 +35,7 @@ trait Aperture extends js.Object {
   var maxApertureValue: js.UndefOr[Double] = js.undefined
   /** The metering mode used to create the photo. */
   var meteringMode: js.UndefOr[String] = js.undefined
-  /** The rotation in clockwise degrees from the image's original orientation. */
+  /** The number of clockwise 90 degree rotations applied from the image's original orientation. */
   var rotation: js.UndefOr[Double] = js.undefined
   /** The type of sensor used to create the photo. */
   var sensor: js.UndefOr[String] = js.undefined

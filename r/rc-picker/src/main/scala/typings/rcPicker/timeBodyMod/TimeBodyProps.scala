@@ -42,6 +42,7 @@ object TimeBodyProps {
     secondStep: js.UndefOr[Double] = js.undefined,
     showHour: js.UndefOr[Boolean] = js.undefined,
     showMinute: js.UndefOr[Boolean] = js.undefined,
+    showNow: js.UndefOr[Boolean] = js.undefined,
     showSecond: js.UndefOr[Boolean] = js.undefined,
     use12Hours: js.UndefOr[Boolean] = js.undefined,
     value: js.UndefOr[Null | DateType] = js.undefined
@@ -58,6 +59,7 @@ object TimeBodyProps {
     if (!js.isUndefined(secondStep)) __obj.updateDynamic("secondStep")(secondStep.get.asInstanceOf[js.Any])
     if (!js.isUndefined(showHour)) __obj.updateDynamic("showHour")(showHour.get.asInstanceOf[js.Any])
     if (!js.isUndefined(showMinute)) __obj.updateDynamic("showMinute")(showMinute.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNow)) __obj.updateDynamic("showNow")(showNow.get.asInstanceOf[js.Any])
     if (!js.isUndefined(showSecond)) __obj.updateDynamic("showSecond")(showSecond.get.asInstanceOf[js.Any])
     if (!js.isUndefined(use12Hours)) __obj.updateDynamic("use12Hours")(use12Hours.get.asInstanceOf[js.Any])
     if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

@@ -17,7 +17,7 @@ trait QueryRendererProps[TOperation /* <: OperationType */] extends js.Object {
 
 object QueryRendererProps {
   @scala.inline
-  def apply[TOperation](
+  def apply[/* <: typings.relayRuntime.relayRuntimeTypesMod.OperationType */ TOperation](
     environment: typings.relayRuntime.relayStoreTypesMod.Environment,
     render: Error[TOperation] => ReactNode,
     variables: /* import warning: importer.ImportType#apply Failed type conversion: TOperation['variables'] */ js.Any,

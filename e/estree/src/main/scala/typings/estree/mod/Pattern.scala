@@ -70,6 +70,7 @@ object Pattern {
   def MemberExpression(
     computed: Boolean,
     `object`: Expression | Super,
+    optional: Boolean,
     property: Expression,
     `type`: typings.estree.estreeStrings.MemberExpression,
     leadingComments: js.Array[Comment] = null,
@@ -77,7 +78,7 @@ object Pattern {
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Pattern = {
-    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])

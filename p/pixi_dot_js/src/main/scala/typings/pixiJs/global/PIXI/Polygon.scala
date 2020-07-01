@@ -1,5 +1,6 @@
 package typings.pixiJs.global.PIXI
 
+import typings.pixiJs.PIXI.IPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Polygon protected ()
   extends typings.pixiJs.PIXI.Polygon {
-  def this(points: (js.Array[js.Array[Double] | Double | typings.pixiJs.PIXI.Point])*) = this()
+  def this(points: (js.Array[Double | IPoint])*) = this()
   /**
     * `false` after moveTo, `true` after `closePath`. In all other cases it is `true`.
     * @member {boolean} PIXI.Polygon#closeStroke

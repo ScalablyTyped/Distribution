@@ -585,6 +585,24 @@ object officeJsPreviewStrings {
   sealed trait CommandBar extends js.Object
   
   @js.native
+  sealed trait CommentAdded extends js.Object
+  
+  @js.native
+  sealed trait CommentChanged extends js.Object
+  
+  @js.native
+  sealed trait CommentDeleted extends js.Object
+  
+  @js.native
+  sealed trait CommentEdited extends js.Object
+  
+  @js.native
+  sealed trait CommentReopened extends js.Object
+  
+  @js.native
+  sealed trait CommentResolved extends js.Object
+  
+  @js.native
   sealed trait Compact extends js.Object
   
   @js.native
@@ -2619,6 +2637,15 @@ object officeJsPreviewStrings {
   sealed trait Replace extends js.Object
   
   @js.native
+  sealed trait ReplyAdded extends js.Object
+  
+  @js.native
+  sealed trait ReplyDeleted extends js.Object
+  
+  @js.native
+  sealed trait ReplyEdited extends js.Object
+  
+  @js.native
   sealed trait Ribbon extends js.Object
   
   @js.native
@@ -3913,6 +3940,18 @@ object officeJsPreviewStrings {
   def ComboBox: ComboBox = "ComboBox".asInstanceOf[ComboBox]
   @scala.inline
   def CommandBar: CommandBar = "CommandBar".asInstanceOf[CommandBar]
+  @scala.inline
+  def CommentAdded: CommentAdded = "CommentAdded".asInstanceOf[CommentAdded]
+  @scala.inline
+  def CommentChanged: CommentChanged = "CommentChanged".asInstanceOf[CommentChanged]
+  @scala.inline
+  def CommentDeleted: CommentDeleted = "CommentDeleted".asInstanceOf[CommentDeleted]
+  @scala.inline
+  def CommentEdited: CommentEdited = "CommentEdited".asInstanceOf[CommentEdited]
+  @scala.inline
+  def CommentReopened: CommentReopened = "CommentReopened".asInstanceOf[CommentReopened]
+  @scala.inline
+  def CommentResolved: CommentResolved = "CommentResolved".asInstanceOf[CommentResolved]
   @scala.inline
   def Compact: Compact = "Compact".asInstanceOf[Compact]
   @scala.inline
@@ -5269,6 +5308,12 @@ object officeJsPreviewStrings {
   def RepeatingSection: RepeatingSection = "RepeatingSection".asInstanceOf[RepeatingSection]
   @scala.inline
   def Replace: Replace = "Replace".asInstanceOf[Replace]
+  @scala.inline
+  def ReplyAdded: ReplyAdded = "ReplyAdded".asInstanceOf[ReplyAdded]
+  @scala.inline
+  def ReplyDeleted: ReplyDeleted = "ReplyDeleted".asInstanceOf[ReplyDeleted]
+  @scala.inline
+  def ReplyEdited: ReplyEdited = "ReplyEdited".asInstanceOf[ReplyEdited]
   @scala.inline
   def Ribbon: Ribbon = "Ribbon".asInstanceOf[Ribbon]
   @scala.inline

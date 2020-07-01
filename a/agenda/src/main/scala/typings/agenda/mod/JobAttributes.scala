@@ -78,7 +78,7 @@ trait JobAttributes[T /* <: JobAttributesData */] extends js.Object {
 
 object JobAttributes {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.agenda.mod.JobAttributesData */ T](
     _id: ObjectID_,
     data: T,
     disabled: Boolean,

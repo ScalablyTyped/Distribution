@@ -1,5 +1,6 @@
 package typings.ionicCore
 
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.elementInterfaceMod.AnchorInterface
 import typings.ionicCore.elementInterfaceMod.ButtonInterface
 import typings.ionicCore.interfaceMod.RouterDirection
@@ -34,6 +35,11 @@ object cardMod extends js.Object {
     override var disabled: Boolean = js.native
     var isClickable: js.Any = js.native
     var renderCard: js.Any = js.native
+    /**
+      * When using a router, it specifies the transition animation when navigating to
+      * another page using `href`.
+      */
+    var routerAnimation: js.UndefOr[AnimationBuilder] = js.native
     /**
       * When using a router, it specifies the transition direction when navigating to
       * another page using `href`.

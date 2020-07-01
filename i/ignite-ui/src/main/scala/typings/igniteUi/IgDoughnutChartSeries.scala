@@ -36,9 +36,17 @@ trait IgDoughnutChartSeries
     */
   var labelExtent: js.UndefOr[Double] = js.undefined
   /**
+    * Gets or sets the color for labels rendered inside of the pie chart.
+    */
+  var labelInnerColor: js.UndefOr[String] = js.undefined
+  /**
     * Gets or sets the property name that contains the labels.
     */
   var labelMemberPath: js.UndefOr[String] = js.undefined
+  /**
+    * Gets or sets the color for labels rendered outside of the pie chart.
+    */
+  var labelOuterColor: js.UndefOr[String] = js.undefined
   /**
     * Gets or sets the position of chart labels.
     *
@@ -148,7 +156,9 @@ object IgDoughnutChartSeries {
     isSurfaceInteractionDisabled: js.UndefOr[Boolean] = js.undefined,
     itemsSource: js.Any = null,
     labelExtent: js.UndefOr[Double] = js.undefined,
+    labelInnerColor: String = null,
     labelMemberPath: String = null,
+    labelOuterColor: String = null,
     labelsPosition: String = null,
     leaderLineMargin: js.UndefOr[Double] = js.undefined,
     leaderLineStyle: js.Any = null,
@@ -176,7 +186,9 @@ object IgDoughnutChartSeries {
     if (!js.isUndefined(isSurfaceInteractionDisabled)) __obj.updateDynamic("isSurfaceInteractionDisabled")(isSurfaceInteractionDisabled.get.asInstanceOf[js.Any])
     if (itemsSource != null) __obj.updateDynamic("itemsSource")(itemsSource.asInstanceOf[js.Any])
     if (!js.isUndefined(labelExtent)) __obj.updateDynamic("labelExtent")(labelExtent.get.asInstanceOf[js.Any])
+    if (labelInnerColor != null) __obj.updateDynamic("labelInnerColor")(labelInnerColor.asInstanceOf[js.Any])
     if (labelMemberPath != null) __obj.updateDynamic("labelMemberPath")(labelMemberPath.asInstanceOf[js.Any])
+    if (labelOuterColor != null) __obj.updateDynamic("labelOuterColor")(labelOuterColor.asInstanceOf[js.Any])
     if (labelsPosition != null) __obj.updateDynamic("labelsPosition")(labelsPosition.asInstanceOf[js.Any])
     if (!js.isUndefined(leaderLineMargin)) __obj.updateDynamic("leaderLineMargin")(leaderLineMargin.get.asInstanceOf[js.Any])
     if (leaderLineStyle != null) __obj.updateDynamic("leaderLineStyle")(leaderLineStyle.asInstanceOf[js.Any])

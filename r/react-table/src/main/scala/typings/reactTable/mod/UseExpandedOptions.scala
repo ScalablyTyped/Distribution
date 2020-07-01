@@ -14,7 +14,7 @@ trait UseExpandedOptions[D /* <: js.Object */] extends js.Object {
 
 object UseExpandedOptions {
   @scala.inline
-  def apply[D](
+  def apply[/* <: js.Object */ D](
     autoResetExpanded: js.UndefOr[Boolean] = js.undefined,
     expandSubRows: js.UndefOr[Boolean] = js.undefined,
     manualExpandedKey: IdType[D] = null,

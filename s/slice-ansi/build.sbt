@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "slice-ansi"
-version := "2.0-dt-20181119Z-569ead"
+version := "4.0-dt-20200530Z-569ead"
 scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

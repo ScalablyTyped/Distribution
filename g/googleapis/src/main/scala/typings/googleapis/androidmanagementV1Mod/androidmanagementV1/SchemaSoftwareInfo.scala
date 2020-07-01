@@ -60,7 +60,7 @@ object SchemaSoftwareInfo {
   def apply(
     androidBuildNumber: String = null,
     androidBuildTime: String = null,
-    androidDevicePolicyVersionCode: Int | Double = null,
+    androidDevicePolicyVersionCode: js.UndefOr[Double] = js.undefined,
     androidDevicePolicyVersionName: String = null,
     androidVersion: String = null,
     bootloaderVersion: String = null,
@@ -72,7 +72,7 @@ object SchemaSoftwareInfo {
     val __obj = js.Dynamic.literal()
     if (androidBuildNumber != null) __obj.updateDynamic("androidBuildNumber")(androidBuildNumber.asInstanceOf[js.Any])
     if (androidBuildTime != null) __obj.updateDynamic("androidBuildTime")(androidBuildTime.asInstanceOf[js.Any])
-    if (androidDevicePolicyVersionCode != null) __obj.updateDynamic("androidDevicePolicyVersionCode")(androidDevicePolicyVersionCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(androidDevicePolicyVersionCode)) __obj.updateDynamic("androidDevicePolicyVersionCode")(androidDevicePolicyVersionCode.get.asInstanceOf[js.Any])
     if (androidDevicePolicyVersionName != null) __obj.updateDynamic("androidDevicePolicyVersionName")(androidDevicePolicyVersionName.asInstanceOf[js.Any])
     if (androidVersion != null) __obj.updateDynamic("androidVersion")(androidVersion.asInstanceOf[js.Any])
     if (bootloaderVersion != null) __obj.updateDynamic("bootloaderVersion")(bootloaderVersion.asInstanceOf[js.Any])

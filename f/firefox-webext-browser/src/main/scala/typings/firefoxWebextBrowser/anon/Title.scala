@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Title extends js.Object {
-  var title: js.UndefOr[String] = js.undefined
-  var url: js.UndefOr[String] = js.undefined
+  /** The id of the tab for which you want to modify the page action. */
+  var tabId: Double
+  /** The tooltip string. */
+  var title: String | Null
 }
 
 object Title {
   @scala.inline
-  def apply(title: String = null, url: String = null): Title = {
-    val __obj = js.Dynamic.literal()
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+  def apply(tabId: Double, title: String = null): Title = {
+    val __obj = js.Dynamic.literal(tabId = tabId.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Title]
   }
 }

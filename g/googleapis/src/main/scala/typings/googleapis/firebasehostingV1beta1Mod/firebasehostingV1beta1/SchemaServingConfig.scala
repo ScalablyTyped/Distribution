@@ -53,7 +53,7 @@ object SchemaServingConfig {
   ): SchemaServingConfig = {
     val __obj = js.Dynamic.literal()
     if (appAssociation != null) __obj.updateDynamic("appAssociation")(appAssociation.asInstanceOf[js.Any])
-    if (!js.isUndefined(cleanUrls)) __obj.updateDynamic("cleanUrls")(cleanUrls.asInstanceOf[js.Any])
+    if (!js.isUndefined(cleanUrls)) __obj.updateDynamic("cleanUrls")(cleanUrls.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (redirects != null) __obj.updateDynamic("redirects")(redirects.asInstanceOf[js.Any])
     if (rewrites != null) __obj.updateDynamic("rewrites")(rewrites.asInstanceOf[js.Any])

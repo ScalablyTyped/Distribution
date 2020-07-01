@@ -32,15 +32,15 @@ trait SchemaTestOrderPaymentMethod extends js.Object {
 object SchemaTestOrderPaymentMethod {
   @scala.inline
   def apply(
-    expirationMonth: Int | Double = null,
-    expirationYear: Int | Double = null,
+    expirationMonth: js.UndefOr[Double] = js.undefined,
+    expirationYear: js.UndefOr[Double] = js.undefined,
     lastFourDigits: String = null,
     predefinedBillingAddress: String = null,
     `type`: String = null
   ): SchemaTestOrderPaymentMethod = {
     val __obj = js.Dynamic.literal()
-    if (expirationMonth != null) __obj.updateDynamic("expirationMonth")(expirationMonth.asInstanceOf[js.Any])
-    if (expirationYear != null) __obj.updateDynamic("expirationYear")(expirationYear.asInstanceOf[js.Any])
+    if (!js.isUndefined(expirationMonth)) __obj.updateDynamic("expirationMonth")(expirationMonth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expirationYear)) __obj.updateDynamic("expirationYear")(expirationYear.get.asInstanceOf[js.Any])
     if (lastFourDigits != null) __obj.updateDynamic("lastFourDigits")(lastFourDigits.asInstanceOf[js.Any])
     if (predefinedBillingAddress != null) __obj.updateDynamic("predefinedBillingAddress")(predefinedBillingAddress.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

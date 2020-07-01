@@ -43,14 +43,14 @@ object SchemaGoogleCloudVisionV1p1beta1Block {
   def apply(
     blockType: String = null,
     boundingBox: SchemaGoogleCloudVisionV1p1beta1BoundingPoly = null,
-    confidence: Int | Double = null,
+    confidence: js.UndefOr[Double] = js.undefined,
     paragraphs: js.Array[SchemaGoogleCloudVisionV1p1beta1Paragraph] = null,
     property: SchemaGoogleCloudVisionV1p1beta1TextAnnotationTextProperty = null
   ): SchemaGoogleCloudVisionV1p1beta1Block = {
     val __obj = js.Dynamic.literal()
     if (blockType != null) __obj.updateDynamic("blockType")(blockType.asInstanceOf[js.Any])
     if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox.asInstanceOf[js.Any])
-    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
     if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs.asInstanceOf[js.Any])
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p1beta1Block]

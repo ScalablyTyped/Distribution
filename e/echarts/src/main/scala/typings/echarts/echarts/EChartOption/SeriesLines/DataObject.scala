@@ -1,6 +1,6 @@
 package typings.echarts.echarts.EChartOption.SeriesLines
 
-import typings.echarts.anon.FontStyle
+import typings.echarts.anon.FontSize
 import typings.echarts.anon.LineStyleShadowColor
 import typings.echarts.anon.ShadowColor
 import scala.scalajs.js
@@ -27,7 +27,7 @@ trait DataObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-lines.data.label
     */
-  var label: js.UndefOr[FontStyle] = js.undefined
+  var label: js.UndefOr[FontSize] = js.undefined
   /**
     * The line style of this data item.
     *
@@ -49,7 +49,7 @@ object DataObject {
   def apply(
     coords: js.Array[_] = null,
     emphasis: LineStyleShadowColor = null,
-    label: FontStyle = null,
+    label: FontSize = null,
     lineStyle: ShadowColor = null,
     name: String = null
   ): DataObject = {

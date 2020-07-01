@@ -19,7 +19,7 @@ trait OnChange[T /* <: String | js.Array[String] */] extends js.Object {
 
 object OnChange {
   @scala.inline
-  def apply[T](onChange: T => Unit, options: js.Array[Option] = null, value: T = null): OnChange[T] = {
+  def apply[/* <: java.lang.String | js.Array[java.lang.String] */ T](onChange: T => Unit, options: js.Array[Option] = null, value: T = null): OnChange[T] = {
     val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange))
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

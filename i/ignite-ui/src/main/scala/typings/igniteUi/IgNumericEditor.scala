@@ -49,7 +49,7 @@ trait IgNumericEditor
   /**
     * Gets/Sets the character, which is used as decimal separator.
     * Note: this option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option's value should not be equal to the value of [groupSeparator](ui.igNumericEditor#options:groupSeparator) or [negativeSign](ui.igNumericEditor#options:negativeSign) options.
     *
     */
@@ -65,7 +65,7 @@ trait IgNumericEditor
     */
   var dropDownAnimationDuration: js.UndefOr[Double] = js.undefined
   /**
-    * Gets wheather the drop-down list element is attached to the body of the document, or to the editor container element.
+    * Gets whether the drop-down list element is attached to the body of the document, or to the editor container element.
     * If the option is set to false the editor will attach the drop-down list element to the editor container
     * If the option is set to true the editor will attach its drop-down list to as a child of the body.
     * Note! This option can not be set runtime.
@@ -98,7 +98,7 @@ trait IgNumericEditor
   var dropDownListOpening: js.UndefOr[DropDownListOpeningEvent] = js.undefined
   /**
     * Gets the ability to limit the editor to be used only as a dropdown list. When set to true the editor input is not editable.
-    * Note! In case there are no list items - the editor will reamin readonly
+    * Note! In case there are no list items - the editor will remain readonly
     * Note! This option can not be set runtime.
     *
     */
@@ -121,7 +121,7 @@ trait IgNumericEditor
     * Gets/Sets the character, which is used as separator for groups (like thousands).
     * That option has effect only in display mode(no focus).
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option's value should not be equal to the value of [decimalSeparator](ui.igNumericEditor#options:decimalSeparator) or [negativeSign](ui.igNumericEditor#options:negativeSign) options.
     *
     */
@@ -134,7 +134,7 @@ trait IgNumericEditor
     * That option has effect only in display mode(no focus).
     * Note: The numbers in the array must be positive integers.
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     *
     */
   var groups: js.UndefOr[js.Array[_]] = js.undefined
@@ -190,7 +190,7 @@ trait IgNumericEditor
     * Gets/Sets the maximum number of decimal places supported by the editor.
     * Note: this option has priority over possible regional settings.
     * Note: In case of min decimals value higher than max decimals - max decimals are equaled to min decimals property.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option supports values between 0 and 15, when dataMode is 'double' (default) and values between 0 and 7 in 'float' mode.
     *
     */
@@ -209,7 +209,7 @@ trait IgNumericEditor
     * If number of digits in fractional part of number is less than the value of this option, then the "0" characters are used to fill missing digits.
     * Note: This option has priority over possible regional settings.
     * Note: In case of min decimals value higher than max decimals - max decimals are equaled to min decimals property.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option supports values between 0 and 15, when dataMode is 'double' (default) and values between 0 and 7 in 'float' mode.
     *
     */
@@ -222,14 +222,14 @@ trait IgNumericEditor
   /**
     * Gets/Sets the string, which is used as negative pattern. The "n" flag represents the value of number. The "-" and "()" flags are static part of pattern.
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     *
     */
   var negativePattern: js.UndefOr[String] = js.undefined
   /**
     * Gets/Sets the character, which is used as negative sign.
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option's value should not be equal to the value of [groupSeparator](ui.igNumericEditor#options:groupSeparator) or [decimalSeparator](ui.igNumericEditor#options:decimalSeparator) options.
     *
     */
@@ -245,7 +245,7 @@ trait IgNumericEditor
     */
   var placeHolder: js.UndefOr[String] = js.undefined
   /**
-    * Gets/Sets if the editor should prevent form submition when enter key is pressed.
+    * Gets/Sets if the editor should prevent form submit when enter key is pressed.
     *
     */
   var preventSubmitOnEnter: js.UndefOr[Boolean] = js.undefined
@@ -260,7 +260,7 @@ trait IgNumericEditor
     */
   var regional: js.UndefOr[String | js.Object] = js.undefined
   /**
-    * Gets/Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the opiton is set to false, editor calls clear functionality.
+    * Gets/Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the option is set to false, editor calls clear functionality.
     *
     */
   var revertIfNotValid: js.UndefOr[Boolean] = js.undefined
@@ -290,9 +290,9 @@ trait IgNumericEditor
     *
     *
     * Valid values:
-    * "selectAll" Setting this option will select all the text into the editor when the edit mode gets enetered.
-    * "atStart" Setting this option will move the cursor at the begining the text into the editor when the edit mode gets enetered.
-    * "atEnd" Setting this option will move the cursor at the end the text into the editor when the edit mode gets enetered.
+    * "selectAll" Setting this option will select all the text into the editor when the edit mode gets entered.
+    * "atStart" Setting this option will move the cursor at the beginning the text into the editor when the edit mode gets entered.
+    * "atEnd" Setting this option will move the cursor at the end the text into the editor when the edit mode gets entered.
     * "browserDefault" Setting this option won't do any extra logic, but proceed with the browser default behavior.
     */
   var selectionOnFocus: js.UndefOr[String] = js.undefined

@@ -9,38 +9,38 @@ import scala.scalajs.js.annotation._
 class TextureRegion ()
   extends typings.pixiSpine.PIXI.spine.core.TextureRegion {
   /* CompleteClass */
-  override val height: Double = js.native
-  /* CompleteClass */
-  override val offsetX: Double = js.native
-  /* CompleteClass */
-  override val offsetY: Double = js.native
-  /* CompleteClass */
-  override val originalHeight: Double = js.native
-  /* CompleteClass */
-  override val originalWidth: Double = js.native
-  /* CompleteClass */
-  override val pixiOffsetY: Double = js.native
-  /* CompleteClass */
-  override val rotate: Boolean = js.native
-  /* CompleteClass */
   override var size: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Rectangle */ js.Any = js.native
-  /* CompleteClass */
-  override val spineOffsetY: Double = js.native
   /* CompleteClass */
   override var texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any = js.native
   /* CompleteClass */
-  override val u: Double = js.native
+  override def height: Double = js.native
   /* CompleteClass */
-  override val u2: Double = js.native
+  override def offsetX: Double = js.native
   /* CompleteClass */
-  override val v: Double = js.native
+  override def offsetY: Double = js.native
   /* CompleteClass */
-  override val v2: Double = js.native
+  override def originalHeight: Double = js.native
   /* CompleteClass */
-  override val width: Double = js.native
+  override def originalWidth: Double = js.native
   /* CompleteClass */
-  override val x: Double = js.native
+  override def pixiOffsetY: Double = js.native
   /* CompleteClass */
-  override val y: Double = js.native
+  override def rotate: Boolean = js.native
+  /* CompleteClass */
+  override def spineOffsetY: Double = js.native
+  /* CompleteClass */
+  override def u: Double = js.native
+  /* CompleteClass */
+  override def u2: Double = js.native
+  /* CompleteClass */
+  override def v: Double = js.native
+  /* CompleteClass */
+  override def v2: Double = js.native
+  /* CompleteClass */
+  override def width: Double = js.native
+  /* CompleteClass */
+  override def x: Double = js.native
+  /* CompleteClass */
+  override def y: Double = js.native
 }
 

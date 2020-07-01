@@ -1,6 +1,7 @@
 package typings.antd.treeTreeMod
 
 import typings.antd.anon.Checked
+import typings.antd.anon.ShowLeafIcon
 import typings.rcTree.mod.CheckData
 import typings.rcTree.mod.ExpandData
 import typings.rcTree.mod.InternalTreeNode
@@ -21,7 +22,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined parent std.Omit<rc-tree.rc-tree.TreeProps, 'prefixCls'> */
+/* Inlined parent std.Omit<rc-tree.rc-tree.TreeProps, 'prefixCls' | 'showLine'> */
 trait TreeProps extends js.Object {
   /** 是否自动展开父节点 */
   var autoExpandParent: js.UndefOr[Boolean] = js.undefined
@@ -103,7 +104,7 @@ trait TreeProps extends js.Object {
     ]
   ] = js.undefined
   var showIcon: js.UndefOr[Boolean] = js.undefined
-  var showLine: js.UndefOr[Boolean] = js.undefined
+  var showLine: js.UndefOr[Boolean | ShowLeafIcon] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var switcherIcon: js.UndefOr[ReactElement] = js.undefined
 }
@@ -162,7 +163,7 @@ object TreeProps {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
     ] = null,
     showIcon: js.UndefOr[Boolean] = js.undefined,
-    showLine: js.UndefOr[Boolean] = js.undefined,
+    showLine: Boolean | ShowLeafIcon = null,
     style: CSSProperties = null,
     switcherIcon: ReactElement = null
   ): TreeProps = {
@@ -204,7 +205,7 @@ object TreeProps {
     if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.get.asInstanceOf[js.Any])
     if (selectedKeys != null) __obj.updateDynamic("selectedKeys")(selectedKeys.asInstanceOf[js.Any])
     if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLine)) __obj.updateDynamic("showLine")(showLine.get.asInstanceOf[js.Any])
+    if (showLine != null) __obj.updateDynamic("showLine")(showLine.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (switcherIcon != null) __obj.updateDynamic("switcherIcon")(switcherIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeProps]

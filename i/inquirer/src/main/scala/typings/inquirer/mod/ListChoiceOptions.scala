@@ -20,7 +20,7 @@ trait ListChoiceOptions[T /* <: Answers */] extends ChoiceOptions[T] {
 
 object ListChoiceOptions {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.inquirer.mod.Answers */ T](
     disabled: DynamicQuestionProperty[Boolean | String, T] = null,
     extra: js.Any = null,
     name: String = null,

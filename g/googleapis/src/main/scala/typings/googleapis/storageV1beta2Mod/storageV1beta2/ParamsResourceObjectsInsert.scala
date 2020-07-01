@@ -4,7 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
-import typings.googleapis.AnonBody
+import typings.googleapis.anon.Body
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,7 +43,7 @@ trait ParamsResourceObjectsInsert extends StandardParameters {
   /**
     * Media metadata
     */
-  var media: js.UndefOr[AnonBody] = js.native
+  var media: js.UndefOr[Body] = js.native
   /**
     * Name of the object. Required when the object metadata is not otherwise
     * provided. Overrides the object metadata's name value, if any.
@@ -72,7 +72,7 @@ object ParamsResourceObjectsInsert {
     ifMetagenerationMatch: String = null,
     ifMetagenerationNotMatch: String = null,
     key: String = null,
-    media: AnonBody = null,
+    media: Body = null,
     name: String = null,
     oauth_token: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
@@ -94,7 +94,7 @@ object ParamsResourceObjectsInsert {
     if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (requestBody != null) __obj.updateDynamic("requestBody")(requestBody.asInstanceOf[js.Any])

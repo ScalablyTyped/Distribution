@@ -12,7 +12,6 @@ trait ConsequenceQuery extends js.Object {
   val edits: js.UndefOr[js.Array[Delete]] = js.undefined
   /**
     * List of removes.
-    *
     */
   val remove: js.UndefOr[js.Array[String]] = js.undefined
 }

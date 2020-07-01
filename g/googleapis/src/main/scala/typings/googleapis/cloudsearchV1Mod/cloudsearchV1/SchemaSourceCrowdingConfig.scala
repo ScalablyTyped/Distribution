@@ -42,15 +42,15 @@ object SchemaSourceCrowdingConfig {
   @scala.inline
   def apply(
     field: String = null,
-    numResults: Int | Double = null,
-    numSuggestions: Int | Double = null,
+    numResults: js.UndefOr[Double] = js.undefined,
+    numSuggestions: js.UndefOr[Double] = js.undefined,
     source: js.UndefOr[Boolean] = js.undefined
   ): SchemaSourceCrowdingConfig = {
     val __obj = js.Dynamic.literal()
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (numResults != null) __obj.updateDynamic("numResults")(numResults.asInstanceOf[js.Any])
-    if (numSuggestions != null) __obj.updateDynamic("numSuggestions")(numSuggestions.asInstanceOf[js.Any])
-    if (!js.isUndefined(source)) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (!js.isUndefined(numResults)) __obj.updateDynamic("numResults")(numResults.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numSuggestions)) __obj.updateDynamic("numSuggestions")(numSuggestions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(source)) __obj.updateDynamic("source")(source.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSourceCrowdingConfig]
   }
 }

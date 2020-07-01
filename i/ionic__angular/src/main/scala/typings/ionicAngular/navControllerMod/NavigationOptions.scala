@@ -7,6 +7,7 @@ import typings.angularRouter.mod.Params
 import typings.angularRouter.mod.QueryParamsHandling
 import typings.ionicAngular.ionicAngularStrings.back
 import typings.ionicAngular.ionicAngularStrings.forward
+import typings.ionicCore.animationInterfaceMod.Animation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,6 +20,7 @@ object NavigationOptions {
   @scala.inline
   def apply(
     animated: js.UndefOr[Boolean] = js.undefined,
+    animation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     animationDirection: forward | back = null,
     fragment: String = null,
     preserveFragment: js.UndefOr[Boolean] = js.undefined,
@@ -32,6 +34,7 @@ object NavigationOptions {
   ): NavigationOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
+    if (animation != null) __obj.updateDynamic("animation")(js.Any.fromFunction2(animation))
     if (animationDirection != null) __obj.updateDynamic("animationDirection")(animationDirection.asInstanceOf[js.Any])
     if (fragment != null) __obj.updateDynamic("fragment")(fragment.asInstanceOf[js.Any])
     if (!js.isUndefined(preserveFragment)) __obj.updateDynamic("preserveFragment")(preserveFragment.get.asInstanceOf[js.Any])

@@ -90,6 +90,10 @@ trait OrgsUpdateEndpoint extends js.Object {
   var name: js.UndefOr[String] = js.undefined
   @JSName("org")
   var org_ : String
+  /**
+    * The Twitter username of the company.
+    */
+  var twitter_username: js.UndefOr[String] = js.undefined
 }
 
 object OrgsUpdateEndpoint {
@@ -109,7 +113,8 @@ object OrgsUpdateEndpoint {
     members_can_create_private_repositories: js.UndefOr[Boolean] = js.undefined,
     members_can_create_public_repositories: js.UndefOr[Boolean] = js.undefined,
     members_can_create_repositories: js.UndefOr[Boolean] = js.undefined,
-    name: String = null
+    name: String = null,
+    twitter_username: String = null
   ): OrgsUpdateEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
@@ -127,6 +132,7 @@ object OrgsUpdateEndpoint {
     if (!js.isUndefined(members_can_create_public_repositories)) __obj.updateDynamic("members_can_create_public_repositories")(members_can_create_public_repositories.get.asInstanceOf[js.Any])
     if (!js.isUndefined(members_can_create_repositories)) __obj.updateDynamic("members_can_create_repositories")(members_can_create_repositories.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (twitter_username != null) __obj.updateDynamic("twitter_username")(twitter_username.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgsUpdateEndpoint]
   }
 }

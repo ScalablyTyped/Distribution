@@ -11,11 +11,11 @@ trait InputTemplate extends js.Object {
     */
   var AudioSelectorGroups: js.UndefOr[mapOfAudioSelectorGroup] = js.native
   /**
-    * Use Audio selectors (AudioSelectors) to specify a track or set of tracks from the input that you will use in your outputs. You can use mutiple Audio selectors per input.
+    * Use Audio selectors (AudioSelectors) to specify a track or set of tracks from the input that you will use in your outputs. You can use multiple Audio selectors per input.
     */
   var AudioSelectors: js.UndefOr[mapOfAudioSelector] = js.native
   /**
-    * Use Captions selectors (CaptionSelectors) to specify the captions data from the input that you will use in your outputs. You can use mutiple captions selectors per input.
+    * Use captions selectors to specify the captions data from your input that you use in your outputs. You can use up to 20 captions selectors per input.
     */
   var CaptionSelectors: js.UndefOr[mapOfCaptionSelector] = js.native
   /**
@@ -23,7 +23,7 @@ trait InputTemplate extends js.Object {
     */
   var Crop: js.UndefOr[Rectangle] = js.native
   /**
-    * Enable Deblock (InputDeblockFilter) to produce smoother motion in the output. Default is disabled. Only manaully controllable for MPEG2 and uncompressed video inputs.
+    * Enable Deblock (InputDeblockFilter) to produce smoother motion in the output. Default is disabled. Only manually controllable for MPEG2 and uncompressed video inputs.
     */
   var DeblockFilter: js.UndefOr[InputDeblockFilter] = js.native
   /**

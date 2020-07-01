@@ -16,7 +16,7 @@ trait ClassesPartial[Props /* <: /* import warning: importer.ImportType#apply Fa
 
 object ClassesPartial {
   @scala.inline
-  def apply[Props, S, ClassNames](
+  def apply[/* <: / * import warning: importer.ImportType#apply Failed type conversion: {  classes  :S extends (theme : any): jss.jss.Styles<ClassNames> ? jss.jss.Classes<keyof std.ReturnType<S>> : jss.jss.Classes<ClassNames>} * / js.Any */ Props, /* <: typings.jss.mod.Styles[ClassNames] | (js.Function1[/ * theme * / js.Any, typings.jss.mod.Styles[ClassNames]]) */ S, /* <: java.lang.String | scala.Double | js.Symbol */ ClassNames](
     classes: Partial[
       /* import warning: importer.ImportType#apply Failed type conversion: Props['classes'] */ js.Any
     ] = null

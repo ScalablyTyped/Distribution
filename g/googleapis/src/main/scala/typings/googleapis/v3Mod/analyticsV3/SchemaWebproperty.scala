@@ -1,7 +1,7 @@
 package typings.googleapis.v3Mod.analyticsV3
 
-import typings.googleapis.AnonEffective
-import typings.googleapis.AnonHref
+import typings.googleapis.anon.Effective
+import typings.googleapis.anon.Href
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait SchemaWebproperty extends js.Object {
     * Child link for this web property. Points to the list of views (profiles)
     * for this web property.
     */
-  var childLink: js.UndefOr[AnonHref] = js.native
+  var childLink: js.UndefOr[Href] = js.native
   /**
     * Time this web property was created.
     */
@@ -69,11 +69,11 @@ trait SchemaWebproperty extends js.Object {
     * Parent link for this web property. Points to the account to which this
     * web property belongs.
     */
-  var parentLink: js.UndefOr[AnonHref] = js.native
+  var parentLink: js.UndefOr[Href] = js.native
   /**
     * Permissions the user has for this web property.
     */
-  var permissions: js.UndefOr[AnonEffective] = js.native
+  var permissions: js.UndefOr[Effective] = js.native
   /**
     * View (Profile) count for this web property.
     */
@@ -100,7 +100,7 @@ object SchemaWebproperty {
   @scala.inline
   def apply(
     accountId: String = null,
-    childLink: AnonHref = null,
+    childLink: Href = null,
     created: String = null,
     dataRetentionResetOnNewActivity: js.UndefOr[Boolean] = js.undefined,
     dataRetentionTtl: String = null,
@@ -111,9 +111,9 @@ object SchemaWebproperty {
     kind: String = null,
     level: String = null,
     name: String = null,
-    parentLink: AnonHref = null,
-    permissions: AnonEffective = null,
-    profileCount: Int | Double = null,
+    parentLink: Href = null,
+    permissions: Effective = null,
+    profileCount: js.UndefOr[Double] = js.undefined,
     selfLink: String = null,
     starred: js.UndefOr[Boolean] = js.undefined,
     updated: String = null,
@@ -123,7 +123,7 @@ object SchemaWebproperty {
     if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
     if (childLink != null) __obj.updateDynamic("childLink")(childLink.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (!js.isUndefined(dataRetentionResetOnNewActivity)) __obj.updateDynamic("dataRetentionResetOnNewActivity")(dataRetentionResetOnNewActivity.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataRetentionResetOnNewActivity)) __obj.updateDynamic("dataRetentionResetOnNewActivity")(dataRetentionResetOnNewActivity.get.asInstanceOf[js.Any])
     if (dataRetentionTtl != null) __obj.updateDynamic("dataRetentionTtl")(dataRetentionTtl.asInstanceOf[js.Any])
     if (defaultProfileId != null) __obj.updateDynamic("defaultProfileId")(defaultProfileId.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
@@ -134,9 +134,9 @@ object SchemaWebproperty {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (parentLink != null) __obj.updateDynamic("parentLink")(parentLink.asInstanceOf[js.Any])
     if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
-    if (profileCount != null) __obj.updateDynamic("profileCount")(profileCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(profileCount)) __obj.updateDynamic("profileCount")(profileCount.get.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(starred)) __obj.updateDynamic("starred")(starred.asInstanceOf[js.Any])
+    if (!js.isUndefined(starred)) __obj.updateDynamic("starred")(starred.get.asInstanceOf[js.Any])
     if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWebproperty]

@@ -139,7 +139,7 @@ object SchemaSubscriptionPurchase {
   @scala.inline
   def apply(
     autoRenewing: js.UndefOr[Boolean] = js.undefined,
-    cancelReason: Int | Double = null,
+    cancelReason: js.UndefOr[Double] = js.undefined,
     cancelSurveyResult: SchemaSubscriptionCancelSurveyResult = null,
     countryCode: String = null,
     developerPayload: String = null,
@@ -150,19 +150,19 @@ object SchemaSubscriptionPurchase {
     kind: String = null,
     linkedPurchaseToken: String = null,
     orderId: String = null,
-    paymentState: Int | Double = null,
+    paymentState: js.UndefOr[Double] = js.undefined,
     priceAmountMicros: String = null,
     priceChange: SchemaSubscriptionPriceChange = null,
     priceCurrencyCode: String = null,
     profileId: String = null,
     profileName: String = null,
-    purchaseType: Int | Double = null,
+    purchaseType: js.UndefOr[Double] = js.undefined,
     startTimeMillis: String = null,
     userCancellationTimeMillis: String = null
   ): SchemaSubscriptionPurchase = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoRenewing)) __obj.updateDynamic("autoRenewing")(autoRenewing.asInstanceOf[js.Any])
-    if (cancelReason != null) __obj.updateDynamic("cancelReason")(cancelReason.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoRenewing)) __obj.updateDynamic("autoRenewing")(autoRenewing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelReason)) __obj.updateDynamic("cancelReason")(cancelReason.get.asInstanceOf[js.Any])
     if (cancelSurveyResult != null) __obj.updateDynamic("cancelSurveyResult")(cancelSurveyResult.asInstanceOf[js.Any])
     if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode.asInstanceOf[js.Any])
     if (developerPayload != null) __obj.updateDynamic("developerPayload")(developerPayload.asInstanceOf[js.Any])
@@ -173,13 +173,13 @@ object SchemaSubscriptionPurchase {
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (linkedPurchaseToken != null) __obj.updateDynamic("linkedPurchaseToken")(linkedPurchaseToken.asInstanceOf[js.Any])
     if (orderId != null) __obj.updateDynamic("orderId")(orderId.asInstanceOf[js.Any])
-    if (paymentState != null) __obj.updateDynamic("paymentState")(paymentState.asInstanceOf[js.Any])
+    if (!js.isUndefined(paymentState)) __obj.updateDynamic("paymentState")(paymentState.get.asInstanceOf[js.Any])
     if (priceAmountMicros != null) __obj.updateDynamic("priceAmountMicros")(priceAmountMicros.asInstanceOf[js.Any])
     if (priceChange != null) __obj.updateDynamic("priceChange")(priceChange.asInstanceOf[js.Any])
     if (priceCurrencyCode != null) __obj.updateDynamic("priceCurrencyCode")(priceCurrencyCode.asInstanceOf[js.Any])
     if (profileId != null) __obj.updateDynamic("profileId")(profileId.asInstanceOf[js.Any])
     if (profileName != null) __obj.updateDynamic("profileName")(profileName.asInstanceOf[js.Any])
-    if (purchaseType != null) __obj.updateDynamic("purchaseType")(purchaseType.asInstanceOf[js.Any])
+    if (!js.isUndefined(purchaseType)) __obj.updateDynamic("purchaseType")(purchaseType.get.asInstanceOf[js.Any])
     if (startTimeMillis != null) __obj.updateDynamic("startTimeMillis")(startTimeMillis.asInstanceOf[js.Any])
     if (userCancellationTimeMillis != null) __obj.updateDynamic("userCancellationTimeMillis")(userCancellationTimeMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSubscriptionPurchase]

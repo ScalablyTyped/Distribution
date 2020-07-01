@@ -110,7 +110,7 @@ object SchemaSecurityPolicy {
     labelFingerprint: String = null,
     labels: StringDictionary[String] = null,
     name: String = null,
-    ruleTupleCount: Int | Double = null,
+    ruleTupleCount: js.UndefOr[Double] = js.undefined,
     rules: js.Array[SchemaSecurityPolicyRule] = null,
     selfLink: String = null,
     selfLinkWithId: String = null,
@@ -126,7 +126,7 @@ object SchemaSecurityPolicy {
     if (labelFingerprint != null) __obj.updateDynamic("labelFingerprint")(labelFingerprint.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (ruleTupleCount != null) __obj.updateDynamic("ruleTupleCount")(ruleTupleCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(ruleTupleCount)) __obj.updateDynamic("ruleTupleCount")(ruleTupleCount.get.asInstanceOf[js.Any])
     if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     if (selfLinkWithId != null) __obj.updateDynamic("selfLinkWithId")(selfLinkWithId.asInstanceOf[js.Any])

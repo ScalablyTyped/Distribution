@@ -1,6 +1,6 @@
 package typings.googleapis.booksV1Mod.booksV1
 
-import typings.googleapis.AnonBadgeUrl
+import typings.googleapis.anon.BadgeUrl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait SchemaCategory extends js.Object {
   /**
     * A list of onboarding categories.
     */
-  var items: js.UndefOr[js.Array[AnonBadgeUrl]] = js.native
+  var items: js.UndefOr[js.Array[BadgeUrl]] = js.native
   /**
     * Resource type.
     */
@@ -19,7 +19,7 @@ trait SchemaCategory extends js.Object {
 
 object SchemaCategory {
   @scala.inline
-  def apply(items: js.Array[AnonBadgeUrl] = null, kind: String = null): SchemaCategory = {
+  def apply(items: js.Array[BadgeUrl] = null, kind: String = null): SchemaCategory = {
     val __obj = js.Dynamic.literal()
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])

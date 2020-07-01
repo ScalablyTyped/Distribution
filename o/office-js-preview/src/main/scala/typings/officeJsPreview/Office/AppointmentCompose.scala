@@ -378,7 +378,7 @@ trait AppointmentCompose extends Item {
   /**
     * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
     *
-    * To see which event types are supported, see `Office.EventType` for details.
+    * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section} for supported events.
     *
     * [Api set: Mailbox 1.7]
     *
@@ -491,7 +491,7 @@ trait AppointmentCompose extends Item {
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     *
     * @param options - Optional. An object literal that contains one or more of the following properties.
     *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
@@ -771,7 +771,7 @@ trait AppointmentCompose extends Item {
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     *
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                   type `Office.AsyncResult`.
@@ -793,7 +793,7 @@ trait AppointmentCompose extends Item {
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     *
     * @param options - An object literal that contains one or more of the following properties.
     *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
@@ -874,7 +874,7 @@ trait AppointmentCompose extends Item {
   /**
     * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
     *
-    * To see which event types are supported, see `Office.EventType` for details.
+    * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section} for supported events.
     *
     * [Api set: Mailbox 1.7]
     *
@@ -912,13 +912,9 @@ trait AppointmentCompose extends Item {
     * when Outlook is in cached mode, it may take some time before the item is actually synced to the server.
     * Until the item is synced, using the item ID will return an error.
     *
-    * **Note**: The following clients have different behavior for `saveAsync` on appointments in compose mode:
-    *
-    * - In Outlook on Mac, only build 16.35.308 or later supports saving a meeting.
+    * **Note**: In Outlook on Mac, only build 16.35.308 or later supports saving a meeting.
     * Otherwise, the `saveAsync` method fails when called from a meeting in compose mode.
     * For a workaround, see {@link https://support.microsoft.com/help/4505745 | Cannot save a meeting as a draft in Outlook for Mac by using Office JS API}.
-    *
-    * - Outlook on the web always sends an invitation or update when `saveAsync` is called on an appointment in compose mode.
     *
     * [Api set: Mailbox 1.3]
     *
@@ -951,13 +947,9 @@ trait AppointmentCompose extends Item {
     * that when Outlook is in cached mode, it may take some time before the item is actually synced to the server.
     * Until the item is synced, using the item ID will return an error.
     *
-    * **Note**: The following clients have different behavior for `saveAsync` on appointments in compose mode:
-    *
-    * - In Outlook on Mac, only build 16.35.308 or later supports saving a meeting.
+    * **Note**: In Outlook on Mac, only build 16.35.308 or later supports saving a meeting.
     * Otherwise, the `saveAsync` method fails when called from a meeting in compose mode.
     * For a workaround, see {@link https://support.microsoft.com/help/4505745 | Cannot save a meeting as a draft in Outlook for Mac by using Office JS API}.
-    *
-    * - Outlook on the web always sends an invitation or update when `saveAsync` is called on an appointment in compose mode.
     *
     * [Api set: Mailbox 1.3]
     *

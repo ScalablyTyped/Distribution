@@ -68,6 +68,8 @@ trait Expect
     * Returns the DOM Element
     */
   def element(property: String): this.type = js.native
+  def endWith(value: String): this.type = js.native
+  def endsWith(value: String): this.type = js.native
   /**
     * These methods will perform assertions on the specified target on the current element.
     * The targets can be an attribute value, the element's inner text and a css property.
@@ -76,5 +78,7 @@ trait Expect
   def equals(value: String): this.type = js.native
   def `match`(value: String): this.type = js.native
   def `match`(value: RegExp): this.type = js.native
+  def startWith(value: String): this.type = js.native
+  def startsWith(value: String): this.type = js.native
 }
 

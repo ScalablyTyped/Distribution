@@ -12,8 +12,15 @@ object jsxElement extends js.Object {
     closingElement: js.UndefOr[JSXClosingElement_ | Null],
     children: js.Array[
       JSXElement_ | JSXExpressionContainer_ | JSXFragment_ | JSXSpreadChild_ | JSXText_
+    ]
+  ): JSXElement_ = js.native
+  def apply(
+    openingElement: JSXOpeningElement_,
+    closingElement: js.UndefOr[JSXClosingElement_ | Null],
+    children: js.Array[
+      JSXElement_ | JSXExpressionContainer_ | JSXFragment_ | JSXSpreadChild_ | JSXText_
     ],
-    selfClosing: js.Any
+    selfClosing: Boolean
   ): JSXElement_ = js.native
 }
 

@@ -12,7 +12,7 @@ package object mod {
   type RedomElQuery = java.lang.String | typings.std.Node | typings.redom.mod.RedomComponentCreator
   type RedomElement = typings.std.Node | typings.redom.mod.RedomComponent
   type RedomElementOfElQuery[Q /* <: typings.redom.mod.RedomElQuery */] = typings.redom.mod.HTMLElementOfStringLiteral[Q] | typings.std.ReturnType[Q] | typings.std.InstanceType[Q] | Q
-  type RedomMiddleware = js.Function1[/* el */ typings.std.HTMLElement, scala.Unit]
+  type RedomMiddleware = js.Function1[/* el */ typings.std.HTMLElement | typings.std.SVGElement, scala.Unit]
   type RedomQuery = java.lang.String | typings.redom.mod.RedomElement
   type RedomQueryArgument = typings.redom.mod.RedomQueryArgumentValue | js.Array[typings.redom.mod.RedomQueryArgumentValue]
   type RedomQueryArgumentValue = typings.redom.mod.RedomElement | java.lang.String | scala.Double | org.scalablytyped.runtime.StringDictionary[js.Any] | typings.redom.mod.RedomMiddleware

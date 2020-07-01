@@ -2,6 +2,7 @@ package typings.swiper
 
 import typings.swiper.mod.AutoplayEvent
 import typings.swiper.mod.CommonEvent
+import typings.swiper.mod.HashNavigationEvent
 import typings.swiper.mod.LazyLoadingEvent
 import typings.swiper.mod.PaginationEvent
 import typings.swiper.mod.SwiperEvent
@@ -78,6 +79,16 @@ object swiperStrings {
   @js.native
   sealed trait fromEdge
     extends CommonEvent
+       with SwiperEvent
+  
+  @js.native
+  sealed trait hashChange
+    extends HashNavigationEvent
+       with SwiperEvent
+  
+  @js.native
+  sealed trait hashSet
+    extends HashNavigationEvent
        with SwiperEvent
   
   @js.native
@@ -279,6 +290,10 @@ object swiperStrings {
   def fraction: fraction = "fraction".asInstanceOf[fraction]
   @scala.inline
   def fromEdge: fromEdge = "fromEdge".asInstanceOf[fromEdge]
+  @scala.inline
+  def hashChange: hashChange = "hashChange".asInstanceOf[hashChange]
+  @scala.inline
+  def hashSet: hashSet = "hashSet".asInstanceOf[hashSet]
   @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   @scala.inline

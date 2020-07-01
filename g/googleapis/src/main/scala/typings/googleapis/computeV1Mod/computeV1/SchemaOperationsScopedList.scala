@@ -1,6 +1,6 @@
 package typings.googleapis.computeV1Mod.computeV1
 
-import typings.googleapis.AnonCode
+import typings.googleapis.anon.Code
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,12 +15,12 @@ trait SchemaOperationsScopedList extends js.Object {
     * [Output Only] Informational warning which replaces the list of operations
     * when the list is empty.
     */
-  var warning: js.UndefOr[AnonCode] = js.native
+  var warning: js.UndefOr[Code] = js.native
 }
 
 object SchemaOperationsScopedList {
   @scala.inline
-  def apply(operations: js.Array[SchemaOperation] = null, warning: AnonCode = null): SchemaOperationsScopedList = {
+  def apply(operations: js.Array[SchemaOperation] = null, warning: Code = null): SchemaOperationsScopedList = {
     val __obj = js.Dynamic.literal()
     if (operations != null) __obj.updateDynamic("operations")(operations.asInstanceOf[js.Any])
     if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])

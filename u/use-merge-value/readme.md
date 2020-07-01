@@ -1,7 +1,7 @@
 
 # Scala.js typings for use-merge-value
 
-Typings are for version 1.0.1
+Typings are for version 1.0.2
 
 ## Library description:
 Easier to write a controlled component

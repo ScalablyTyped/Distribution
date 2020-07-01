@@ -160,7 +160,7 @@ object SchemaParagraphStyle {
     indentStart: SchemaDimension = null,
     keepLinesTogether: js.UndefOr[Boolean] = js.undefined,
     keepWithNext: js.UndefOr[Boolean] = js.undefined,
-    lineSpacing: Int | Double = null,
+    lineSpacing: js.UndefOr[Double] = js.undefined,
     namedStyleType: String = null,
     shading: SchemaShading = null,
     spaceAbove: SchemaDimension = null,
@@ -170,7 +170,7 @@ object SchemaParagraphStyle {
   ): SchemaParagraphStyle = {
     val __obj = js.Dynamic.literal()
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(avoidWidowAndOrphan)) __obj.updateDynamic("avoidWidowAndOrphan")(avoidWidowAndOrphan.asInstanceOf[js.Any])
+    if (!js.isUndefined(avoidWidowAndOrphan)) __obj.updateDynamic("avoidWidowAndOrphan")(avoidWidowAndOrphan.get.asInstanceOf[js.Any])
     if (borderBetween != null) __obj.updateDynamic("borderBetween")(borderBetween.asInstanceOf[js.Any])
     if (borderBottom != null) __obj.updateDynamic("borderBottom")(borderBottom.asInstanceOf[js.Any])
     if (borderLeft != null) __obj.updateDynamic("borderLeft")(borderLeft.asInstanceOf[js.Any])
@@ -181,9 +181,9 @@ object SchemaParagraphStyle {
     if (indentEnd != null) __obj.updateDynamic("indentEnd")(indentEnd.asInstanceOf[js.Any])
     if (indentFirstLine != null) __obj.updateDynamic("indentFirstLine")(indentFirstLine.asInstanceOf[js.Any])
     if (indentStart != null) __obj.updateDynamic("indentStart")(indentStart.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepLinesTogether)) __obj.updateDynamic("keepLinesTogether")(keepLinesTogether.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepWithNext)) __obj.updateDynamic("keepWithNext")(keepWithNext.asInstanceOf[js.Any])
-    if (lineSpacing != null) __obj.updateDynamic("lineSpacing")(lineSpacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepLinesTogether)) __obj.updateDynamic("keepLinesTogether")(keepLinesTogether.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepWithNext)) __obj.updateDynamic("keepWithNext")(keepWithNext.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineSpacing)) __obj.updateDynamic("lineSpacing")(lineSpacing.get.asInstanceOf[js.Any])
     if (namedStyleType != null) __obj.updateDynamic("namedStyleType")(namedStyleType.asInstanceOf[js.Any])
     if (shading != null) __obj.updateDynamic("shading")(shading.asInstanceOf[js.Any])
     if (spaceAbove != null) __obj.updateDynamic("spaceAbove")(spaceAbove.asInstanceOf[js.Any])

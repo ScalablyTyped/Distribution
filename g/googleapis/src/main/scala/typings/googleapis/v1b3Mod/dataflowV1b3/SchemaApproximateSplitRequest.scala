@@ -29,13 +29,13 @@ trait SchemaApproximateSplitRequest extends js.Object {
 object SchemaApproximateSplitRequest {
   @scala.inline
   def apply(
-    fractionConsumed: Int | Double = null,
-    fractionOfRemainder: Int | Double = null,
+    fractionConsumed: js.UndefOr[Double] = js.undefined,
+    fractionOfRemainder: js.UndefOr[Double] = js.undefined,
     position: SchemaPosition = null
   ): SchemaApproximateSplitRequest = {
     val __obj = js.Dynamic.literal()
-    if (fractionConsumed != null) __obj.updateDynamic("fractionConsumed")(fractionConsumed.asInstanceOf[js.Any])
-    if (fractionOfRemainder != null) __obj.updateDynamic("fractionOfRemainder")(fractionOfRemainder.asInstanceOf[js.Any])
+    if (!js.isUndefined(fractionConsumed)) __obj.updateDynamic("fractionConsumed")(fractionConsumed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fractionOfRemainder)) __obj.updateDynamic("fractionOfRemainder")(fractionOfRemainder.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaApproximateSplitRequest]
   }

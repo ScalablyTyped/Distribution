@@ -19,7 +19,7 @@ object SchemaWebDetectionParams {
   @scala.inline
   def apply(includeGeoResults: js.UndefOr[Boolean] = js.undefined): SchemaWebDetectionParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeGeoResults)) __obj.updateDynamic("includeGeoResults")(includeGeoResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeGeoResults)) __obj.updateDynamic("includeGeoResults")(includeGeoResults.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWebDetectionParams]
   }
 }

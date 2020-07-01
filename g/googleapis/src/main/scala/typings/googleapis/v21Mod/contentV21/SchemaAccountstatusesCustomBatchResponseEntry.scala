@@ -28,12 +28,12 @@ object SchemaAccountstatusesCustomBatchResponseEntry {
   @scala.inline
   def apply(
     accountStatus: SchemaAccountStatus = null,
-    batchId: Int | Double = null,
+    batchId: js.UndefOr[Double] = js.undefined,
     errors: SchemaErrors = null
   ): SchemaAccountstatusesCustomBatchResponseEntry = {
     val __obj = js.Dynamic.literal()
     if (accountStatus != null) __obj.updateDynamic("accountStatus")(accountStatus.asInstanceOf[js.Any])
-    if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchId)) __obj.updateDynamic("batchId")(batchId.get.asInstanceOf[js.Any])
     if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAccountstatusesCustomBatchResponseEntry]
   }

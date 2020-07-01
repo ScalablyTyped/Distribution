@@ -115,12 +115,6 @@ object mod extends js.Object {
   // https://github.com/DefinitelyTyped/DefinitelyTyped/pull/24509#issuecomment-382213106
   defaultValue: T
   ): Context[T] = js.native
-  def createContext[T](
-    // If you thought this should be optional, see
-  // https://github.com/DefinitelyTyped/DefinitelyTyped/pull/24509#issuecomment-382213106
-  defaultValue: T,
-    calculateChangedBits: js.Function2[/* prev */ T, /* next */ T, Double]
-  ): Context[T] = js.native
   def createElement[P /* <: js.Object */](`type`: String): ReactElement = js.native
   def createElement[P /* <: js.Object */](`type`: String, children: ReactNode*): ReactElement = js.native
   def createElement[P /* <: js.Object */](`type`: String, props: Attributes with P, children: ReactNode*): ReactElement = js.native
@@ -187,9 +181,6 @@ object mod extends js.Object {
     props: InputHTMLAttributes[HTMLInputElement] with ClassAttributes[HTMLInputElement],
     children: ReactNode*
   ): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
-  /**
-    * The stack frame tracking parse progress.
-    */
   def createInterpolateElement(interpolatedString: String, conversionMap: js.Any): ReactElement = js.native
   def createPortal(children: ReactNode, container: typings.std.Element): ReactPortal = js.native
   def createPortal(children: ReactNode, container: typings.std.Element, key: String): ReactPortal = js.native

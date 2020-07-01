@@ -41,7 +41,7 @@ class TileSource protected () extends EventSource {
   def getTileWidth(level: Double): Double = js.native
   def raiseEvent(eventName: String, eventArgs: js.Object): Unit = js.native
   def removeAllHandlers(eventName: String): Unit = js.native
-  def removeHandler(eventName: String, handler: js.Function1[/* event */ Event, Unit]): Unit = js.native
+  def removeHandler(eventName: String, handler: EventHandler[TileSourceEvent]): Unit = js.native
   def supports(data: String, url: String): Boolean = js.native
   def supports(data: js.Array[_], url: String): Boolean = js.native
   def supports(data: js.Object, url: String): Boolean = js.native

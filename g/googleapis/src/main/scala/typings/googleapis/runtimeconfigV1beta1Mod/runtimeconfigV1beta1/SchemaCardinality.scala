@@ -31,9 +31,9 @@ trait SchemaCardinality extends js.Object {
 
 object SchemaCardinality {
   @scala.inline
-  def apply(number: Int | Double = null, path: String = null): SchemaCardinality = {
+  def apply(number: js.UndefOr[Double] = js.undefined, path: String = null): SchemaCardinality = {
     val __obj = js.Dynamic.literal()
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.get.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCardinality]
   }

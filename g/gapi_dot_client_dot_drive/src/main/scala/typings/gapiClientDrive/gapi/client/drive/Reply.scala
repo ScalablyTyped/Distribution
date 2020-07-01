@@ -11,7 +11,7 @@ trait Reply extends js.Object {
     * - reopen
     */
   var action: js.UndefOr[String] = js.undefined
-  /** The user who created the reply. */
+  /** The author of the reply. The author's email address and permission ID will not be populated. */
   var author: js.UndefOr[User] = js.undefined
   /**
     * The plain text content of the reply. This field is used for setting the content, while htmlContent should be displayed. This is required on creates if

@@ -62,7 +62,12 @@ package object organizationsMod {
   type CreateAccountStatuses = js.Array[typings.awsSdk.organizationsMod.CreateAccountStatus]
   type DelegatedAdministrators = js.Array[typings.awsSdk.organizationsMod.DelegatedAdministrator]
   type DelegatedServices = js.Array[typings.awsSdk.organizationsMod.DelegatedService]
-  type EffectivePolicyType = typings.awsSdk.awsSdkStrings.TAG_POLICY | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.TAG_POLICY
+    - typings.awsSdk.awsSdkStrings.BACKUP_POLICY
+    - java.lang.String
+  */
+  type EffectivePolicyType = typings.awsSdk.organizationsMod._EffectivePolicyType | java.lang.String
   type Email = java.lang.String
   type EnabledServicePrincipals = js.Array[typings.awsSdk.organizationsMod.EnabledServicePrincipal]
   type GenericArn = java.lang.String
@@ -142,6 +147,7 @@ package object organizationsMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.SERVICE_CONTROL_POLICY
     - typings.awsSdk.awsSdkStrings.TAG_POLICY
+    - typings.awsSdk.awsSdkStrings.BACKUP_POLICY
     - java.lang.String
   */
   type PolicyType = typings.awsSdk.organizationsMod._PolicyType | java.lang.String

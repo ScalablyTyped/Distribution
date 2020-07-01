@@ -55,16 +55,16 @@ object ParamsResourceStatsGetindex {
     auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
     callback: String = null,
     fields: String = null,
-    fromDateDotday: Int | Double = null,
-    fromDateDotmonth: Int | Double = null,
-    fromDateDotyear: Int | Double = null,
+    fromDateDotday: js.UndefOr[Double] = js.undefined,
+    fromDateDotmonth: js.UndefOr[Double] = js.undefined,
+    fromDateDotyear: js.UndefOr[Double] = js.undefined,
     key: String = null,
     oauth_token: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
     quotaUser: String = null,
-    toDateDotday: Int | Double = null,
-    toDateDotmonth: Int | Double = null,
-    toDateDotyear: Int | Double = null,
+    toDateDotday: js.UndefOr[Double] = js.undefined,
+    toDateDotmonth: js.UndefOr[Double] = js.undefined,
+    toDateDotyear: js.UndefOr[Double] = js.undefined,
     uploadType: String = null,
     upload_protocol: String = null
   ): ParamsResourceStatsGetindex = {
@@ -75,16 +75,16 @@ object ParamsResourceStatsGetindex {
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (fromDateDotday != null) __obj.updateDynamic("fromDate.day")(fromDateDotday.asInstanceOf[js.Any])
-    if (fromDateDotmonth != null) __obj.updateDynamic("fromDate.month")(fromDateDotmonth.asInstanceOf[js.Any])
-    if (fromDateDotyear != null) __obj.updateDynamic("fromDate.year")(fromDateDotyear.asInstanceOf[js.Any])
+    if (!js.isUndefined(fromDateDotday)) __obj.updateDynamic("fromDate.day")(fromDateDotday.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fromDateDotmonth)) __obj.updateDynamic("fromDate.month")(fromDateDotmonth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fromDateDotyear)) __obj.updateDynamic("fromDate.year")(fromDateDotyear.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (toDateDotday != null) __obj.updateDynamic("toDate.day")(toDateDotday.asInstanceOf[js.Any])
-    if (toDateDotmonth != null) __obj.updateDynamic("toDate.month")(toDateDotmonth.asInstanceOf[js.Any])
-    if (toDateDotyear != null) __obj.updateDynamic("toDate.year")(toDateDotyear.asInstanceOf[js.Any])
+    if (!js.isUndefined(toDateDotday)) __obj.updateDynamic("toDate.day")(toDateDotday.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(toDateDotmonth)) __obj.updateDynamic("toDate.month")(toDateDotmonth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(toDateDotyear)) __obj.updateDynamic("toDate.year")(toDateDotyear.get.asInstanceOf[js.Any])
     if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])
     if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceStatsGetindex]

@@ -39,7 +39,7 @@ trait BorderColorProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] exte
 
 object BorderColorProps {
   @scala.inline
-  def apply[ThemeType, TVal](
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType, TVal](
     borderBottomColor: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
     borderColor: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
     borderLeftColor: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,

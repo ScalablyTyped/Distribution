@@ -15,7 +15,7 @@ trait Del[V /* <: HTTPVersion */] extends js.Object {
 
 object Del {
   @scala.inline
-  def apply[V](
+  def apply[/* <: typings.findMyWay.mod.HTTPVersion */ V](
     del: String => Unit,
     empty: () => Unit,
     get: String => Handler[V] | Null,

@@ -16,7 +16,7 @@ trait TransformPrefix[T /* <: Record[String, _] */] extends Transform[T] {
 
 object TransformPrefix {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.std.Record[java.lang.String, _] */ T](
     prefix: String,
     transform: String => BlockInstance[Partial[T]],
     `type`: prefix,

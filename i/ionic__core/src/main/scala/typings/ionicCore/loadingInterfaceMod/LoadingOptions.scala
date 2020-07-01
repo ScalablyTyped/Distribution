@@ -3,8 +3,8 @@ package typings.ionicCore.loadingInterfaceMod
 import typings.ionicCore.animationInterfaceMod.Animation
 import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.mod.Mode
+import typings.ionicCore.sanitizationMod.IonicSafeString
 import typings.ionicCore.spinnerConfigsMod.SpinnerTypes
-import typings.ionicCore.typesMod.IonicSafeString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

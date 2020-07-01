@@ -52,6 +52,14 @@ trait Graphics extends Container {
     */
   var _matrix: Matrix = js.native
   /**
+    * Update dirty for limiting calculating batches.
+    *
+    * @protected
+    * @member {number} PIXI.Graphics#batchDirty
+    * @default -1
+    */
+  var batchDirty: Double = js.native
+  /**
     * Update dirty for limiting calculating tints for batches.
     *
     * @protected
@@ -93,7 +101,8 @@ trait Graphics extends Container {
     * Includes vertex positions, face indices, normals, colors, UVs, and
     * custom attributes within buffers, reducing the cost of passing all
     * this data to the GPU. Can be shared between multiple Mesh or Graphics objects.
-    * @member {PIXI.GraphicsGeometry} PIXI.Graphics#geometry
+    *
+    * @member {PIXI.GraphicsGeometry}
     * @readonly
     */
   val geometry: GraphicsGeometry = js.native
@@ -114,12 +123,14 @@ trait Graphics extends Container {
   /**
     * Represents the vertex and fragment shaders that processes the geometry and runs on the GPU.
     * Can be shared between multiple Graphics objects.
+    *
     * @member {PIXI.Shader} PIXI.Graphics#shader
     */
   var shader: Shader = js.native
   /**
     * Represents the WebGL state the Graphics required to render, excludes shader and geometry. E.g.,
     * blend mode, culling, depth testing, direction of rendering triangles, backface, etc.
+    *
     * @member {PIXI.State} PIXI.Graphics#state
     */
   var state: State = js.native
@@ -288,10 +299,24 @@ trait Graphics extends Container {
   /**
     * Tests if a point is inside this graphics object
     *
-    * @param {PIXI.Point} point - the point to test
+    * @param {PIXI.IPointData} point - the point to test
     * @return {boolean} the result of the test
     */
-  def containsPoint(point: Point): Boolean = js.native
+  def containsPoint(point: IPointData): Boolean = js.native
+  /**
+    * Draw Rectangle with chamfer corners.
+    *
+    * _Note: Only available with **@pixi/graphics-extras**._
+    *
+    * @method PIXI.Graphics#drawChamferRect
+    * @param {number} x - Upper left corner of rect
+    * @param {number} y - Upper right corner of rect
+    * @param {number} width - Width of rect
+    * @param {number} height - Height of rect
+    * @param {number} chamfer - accept negative or positive values
+    * @return {PIXI.Graphics} Returns self.
+    */
+  def drawChamferRect(x: Double, y: Double, width: Double, height: Double, chamfer: Double): Graphics = js.native
   /**
     * Draws a circle.
     *
@@ -312,13 +337,26 @@ trait Graphics extends Container {
     */
   def drawEllipse(x: Double, y: Double, width: Double, height: Double): Graphics = js.native
   /**
+    * Draw Rectangle with fillet corners.
+    *
+    * _Note: Only available with **@pixi/graphics-extras**._
+    *
+    * @method PIXI.Graphics#drawFilletRect
+    * @param {number} x - Upper left corner of rect
+    * @param {number} y - Upper right corner of rect
+    * @param {number} width - Width of rect
+    * @param {number} height - Height of rect
+    * @param {number} fillet - non-zero real number, size of corner cutout
+    * @return {PIXI.Graphics} Returns self.
+    */
+  def drawFilletRect(x: Double, y: Double, width: Double, height: Double, fillet: Double): Graphics = js.native
+  /**
     * Draws a polygon using the given path.
     *
     * @param {number[]|PIXI.Point[]|PIXI.Polygon} path - The path data used to construct the polygon.
     * @return {PIXI.Graphics} This Graphics object. Good for chaining method calls
     */
-  def drawPolygon(path: js.Array[Double | Point]): Graphics = js.native
-  def drawPolygon(path: Polygon): Graphics = js.native
+  def drawPolygon(path: ((js.Array[Double | Point]) | Polygon)*): Graphics = js.native
   /**
     * Draws a rectangle shape.
     *
@@ -329,6 +367,20 @@ trait Graphics extends Container {
     * @return {PIXI.Graphics} This Graphics object. Good for chaining method calls
     */
   def drawRect(x: Double, y: Double, width: Double, height: Double): Graphics = js.native
+  /**
+    * Draw a regular polygon where all sides are the same length.
+    *
+    * _Note: Only available with **@pixi/graphics-extras**._
+    *
+    * @method PIXI.Graphics#drawRegularPolygon
+    * @param {number} x - X position
+    * @param {number} y - Y position
+    * @param {number} radius - Polygon radius
+    * @param {number} sides - Minimum value is 3
+    * @param {number} rotation - Starting rotation values in radians..
+    * @return {PIXI.Graphics}
+    */
+  def drawRegularPolygon(x: Double, y: Double, radius: Double, sides: Double, rotation: Double): Graphics = js.native
   /**
     * Draw a rectangle shape with rounded/beveled corners.
     *
@@ -365,6 +417,20 @@ trait Graphics extends Container {
   def drawStar(x: Double, y: Double, points: Double, radius: Double): Graphics = js.native
   def drawStar(x: Double, y: Double, points: Double, radius: Double, innerRadius: Double): Graphics = js.native
   def drawStar(x: Double, y: Double, points: Double, radius: Double, innerRadius: Double, rotation: Double): Graphics = js.native
+  /**
+    * Draw a torus shape, like a donut. Can be used for something like a circle loader.
+    *
+    * _Note: Only available with **@pixi/graphics-extras**._
+    *
+    * @method PIXI.Graphics#drawTorus
+    * @param {number} x - X position
+    * @param {number} y - Y position
+    * @param {number} innerRadius - Inner circle radius
+    * @param {number} outerRadius - Outer circle radius
+    * @param {number} sweep - How much of the circle to fill, in radius
+    * @return {PIXI.Graphics}
+    */
+  def drawTorus(x: Double, y: Double, innerRadius: Double, outerRadius: Double, sweep: Double): Graphics = js.native
   /**
     * Applies a fill to the lines and shapes that were added since the last call to the beginFill() method.
     *
@@ -415,9 +481,12 @@ trait Graphics extends Container {
     * @param {number} [options.color=0x0] - color of the line to draw, will update the objects stored style.
     *  Default 0xFFFFFF if texture present.
     * @param {number} [options.alpha=1] - alpha of the line to draw, will update the objects stored style
-    * @param {PIXI.Matrix} [options.matrix=null] Texture matrix to transform texture
+    * @param {PIXI.Matrix} [options.matrix=null] - Texture matrix to transform texture
     * @param {number} [options.alignment=0.5] - alignment of the line to draw, (0 = inner, 0.5 = middle, 1 = outter)
     * @param {boolean} [options.native=false] - If true the lines will be draw using LINES instead of TRIANGLE_STRIP
+    * @param {PIXI.LINE_CAP}[options.cap=PIXI.LINE_CAP.BUTT] - line cap style
+    * @param {PIXI.LINE_JOIN}[options.join=PIXI.LINE_JOIN.MITER] - line join style
+    * @param {number}[options.miterLimit=10] - miter limit ratio
     * @return {PIXI.Graphics} This Graphics object. Good for chaining method calls
     */
   def lineTextureStyle(): Graphics = js.native

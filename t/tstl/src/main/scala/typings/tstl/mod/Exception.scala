@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl", "Exception")
 @js.native
 class Exception protected ()
-  extends typings.tstl.exceptionMod.Exception {
+  extends typings.tstl.tstlModuleMod.Exception {
   /**
     * Initializer Constructor.
     *

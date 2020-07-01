@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-table/lib", JSImport.Namespace)
+@JSImport("rc-table", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
   val INTERNAL_COL_DEFINE: /* "RC_TABLE_INTERNAL_COL_DEFINE" */ String = js.native

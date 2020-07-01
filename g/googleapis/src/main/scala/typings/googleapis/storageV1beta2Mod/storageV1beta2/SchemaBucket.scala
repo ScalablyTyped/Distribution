@@ -1,11 +1,11 @@
 package typings.googleapis.storageV1beta2Mod.storageV1beta2
 
-import typings.googleapis.AnonEnabledBoolean
-import typings.googleapis.AnonEntity
-import typings.googleapis.AnonLogBucket
-import typings.googleapis.AnonMainPageSuffix
-import typings.googleapis.AnonMaxAgeSeconds
-import typings.googleapis.AnonRuleArray
+import typings.googleapis.anon.EnabledBoolean
+import typings.googleapis.anon.Entity
+import typings.googleapis.anon.LogBucket
+import typings.googleapis.anon.MainPageSuffix
+import typings.googleapis.anon.MaxAgeSeconds
+import typings.googleapis.anon.RuleArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ trait SchemaBucket extends js.Object {
   /**
     * The bucket&#39;s Cross-Origin Resource Sharing (CORS) configuration.
     */
-  var cors: js.UndefOr[js.Array[AnonMaxAgeSeconds]] = js.native
+  var cors: js.UndefOr[js.Array[MaxAgeSeconds]] = js.native
   /**
     * Default access controls to apply to new objects when no ACL is provided.
     */
@@ -43,7 +43,7 @@ trait SchemaBucket extends js.Object {
     * The bucket&#39;s lifecycle configuration. See object lifecycle management
     * for more information.
     */
-  var lifecycle: js.UndefOr[AnonRuleArray] = js.native
+  var lifecycle: js.UndefOr[RuleArray] = js.native
   /**
     * The location of the bucket. Object data for objects in the bucket resides
     * in physical storage within this region. Typical values are US and EU.
@@ -54,7 +54,7 @@ trait SchemaBucket extends js.Object {
     * The bucket&#39;s logging configuration, which defines the destination
     * bucket and optional name prefix for the current bucket&#39;s logs.
     */
-  var logging: js.UndefOr[AnonLogBucket] = js.native
+  var logging: js.UndefOr[LogBucket] = js.native
   /**
     * The metadata generation of this bucket.
     */
@@ -67,7 +67,7 @@ trait SchemaBucket extends js.Object {
     * The owner of the bucket. This is always the project team&#39;s owner
     * group.
     */
-  var owner: js.UndefOr[AnonEntity] = js.native
+  var owner: js.UndefOr[Entity] = js.native
   /**
     * The URI of this bucket.
     */
@@ -86,33 +86,33 @@ trait SchemaBucket extends js.Object {
   /**
     * The bucket&#39;s versioning configuration.
     */
-  var versioning: js.UndefOr[AnonEnabledBoolean] = js.native
+  var versioning: js.UndefOr[EnabledBoolean] = js.native
   /**
     * The bucket&#39;s website configuration.
     */
-  var website: js.UndefOr[AnonMainPageSuffix] = js.native
+  var website: js.UndefOr[MainPageSuffix] = js.native
 }
 
 object SchemaBucket {
   @scala.inline
   def apply(
     acl: js.Array[SchemaBucketAccessControl] = null,
-    cors: js.Array[AnonMaxAgeSeconds] = null,
+    cors: js.Array[MaxAgeSeconds] = null,
     defaultObjectAcl: js.Array[SchemaObjectAccessControl] = null,
     etag: String = null,
     id: String = null,
     kind: String = null,
-    lifecycle: AnonRuleArray = null,
+    lifecycle: RuleArray = null,
     location: String = null,
-    logging: AnonLogBucket = null,
+    logging: LogBucket = null,
     metageneration: String = null,
     name: String = null,
-    owner: AnonEntity = null,
+    owner: Entity = null,
     selfLink: String = null,
     storageClass: String = null,
     timeCreated: String = null,
-    versioning: AnonEnabledBoolean = null,
-    website: AnonMainPageSuffix = null
+    versioning: EnabledBoolean = null,
+    website: MainPageSuffix = null
   ): SchemaBucket = {
     val __obj = js.Dynamic.literal()
     if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])

@@ -1,8 +1,8 @@
 package typings.firebaseFirestore.sharedClientStateMod
 
 import typings.firebaseFirestore.asyncQueueMod.AsyncQueue
-import typings.firebaseFirestore.platformMod.Platform
 import typings.firebaseFirestore.userMod.User
+import typings.firebaseFirestore.utilTypesMod.WindowLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebStorageSharedClientState protected () extends SharedClientState {
   def this(
+    window: WindowLike,
     queue: AsyncQueue,
-    platform: Platform,
     persistenceKey: String,
     localClientId: ClientId,
     initialUser: User
@@ -66,7 +66,6 @@ class WebStorageSharedClientState protected () extends SharedClientState {
   var persistOnlineState: js.Any = js.native
   var persistQueryTargetState: js.Any = js.native
   val persistenceKey: js.Any = js.native
-  val platform: js.Any = js.native
   val queryTargetKeyRe: js.Any = js.native
   val queue: js.Any = js.native
   var removeItem: js.Any = js.native
@@ -76,6 +75,7 @@ class WebStorageSharedClientState protected () extends SharedClientState {
   var started: js.Any = js.native
   val storage: js.Any = js.native
   val storageListener: js.Any = js.native
+  val window: js.Any = js.native
   /* private */ def localClientState: js.Any = js.native
 }
 
@@ -83,7 +83,8 @@ class WebStorageSharedClientState protected () extends SharedClientState {
 @JSImport("@firebase/firestore/dist/packages/firestore/src/local/shared_client_state", "WebStorageSharedClientState")
 @js.native
 object WebStorageSharedClientState extends js.Object {
+  def isAvailable(): /* is @firebase/firestore.@firebase/firestore/dist/packages/firestore/src/util/types.WindowLike */ Boolean = js.native
   /** Returns 'true' if WebStorage is available in the current environment. */
-  def isAvailable(platform: Platform): Boolean = js.native
+  def isAvailable(window: WindowLike): /* is @firebase/firestore.@firebase/firestore/dist/packages/firestore/src/util/types.WindowLike */ Boolean = js.native
 }
 

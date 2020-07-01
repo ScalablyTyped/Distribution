@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateBranchRequest extends js.Object {
   /**
-    *  Unique Id for an Amplify App. 
+    *  The unique ID for an Amplify app. 
     */
   var appId: AppId = js.native
   /**
-    *  ARN for a Backend Environment, part of an Amplify App. 
+    *  The Amazon Resource Name (ARN) for a backend environment that is part of an Amplify app. 
     */
   var backendEnvironmentArn: js.UndefOr[BackendEnvironmentArn] = js.native
   /**
-    *  Basic Authorization credentials for the branch. 
+    *  The basic authorization credentials for the branch. 
     */
   var basicAuthCredentials: js.UndefOr[BasicAuthCredentials] = js.native
   /**
-    *  Name for the branch. 
+    *  The name for the branch. 
     */
   var branchName: BranchName = js.native
   /**
-    *  BuildSpec for the branch. 
+    *  The build specification (build spec) for the branch. 
     */
   var buildSpec: js.UndefOr[BuildSpec] = js.native
   /**
-    *  Description for the branch. 
+    *  The description for the branch. 
     */
   var description: js.UndefOr[Description] = js.native
   /**
-    *  Display name for a branch, will use as the default domain prefix. 
+    *  The display name for a branch. This is used as the default domain prefix. 
     */
   var displayName: js.UndefOr[DisplayName] = js.native
   /**
@@ -39,7 +39,7 @@ trait CreateBranchRequest extends js.Object {
     */
   var enableAutoBuild: js.UndefOr[EnableAutoBuild] = js.native
   /**
-    *  Enables Basic Auth for the branch. 
+    *  Enables basic authorization for the branch. 
     */
   var enableBasicAuth: js.UndefOr[EnableBasicAuth] = js.native
   /**
@@ -47,31 +47,31 @@ trait CreateBranchRequest extends js.Object {
     */
   var enableNotification: js.UndefOr[EnableNotification] = js.native
   /**
-    *  Enables Pull Request Preview for this branch. 
+    *  Enables pull request preview for this branch. 
     */
   var enablePullRequestPreview: js.UndefOr[EnablePullRequestPreview] = js.native
   /**
-    *  Environment Variables for the branch. 
+    *  The environment variables for the branch. 
     */
   var environmentVariables: js.UndefOr[EnvironmentVariables] = js.native
   /**
-    *  Framework for the branch. 
+    *  The framework for the branch. 
     */
   var framework: js.UndefOr[Framework] = js.native
   /**
-    *  The Amplify Environment name for the pull request. 
+    *  The Amplify environment name for the pull request. 
     */
   var pullRequestEnvironmentName: js.UndefOr[PullRequestEnvironmentName] = js.native
   /**
-    *  Stage for the branch. 
+    *  Describes the current stage for the branch. 
     */
   var stage: js.UndefOr[Stage] = js.native
   /**
-    *  Tag for the branch. 
+    *  The tag for the branch. 
     */
   var tags: js.UndefOr[TagMap] = js.native
   /**
-    *  The content TTL for the website in seconds. 
+    *  The content Time To Live (TTL) for the website in seconds. 
     */
   var ttl: js.UndefOr[TTL] = js.native
 }

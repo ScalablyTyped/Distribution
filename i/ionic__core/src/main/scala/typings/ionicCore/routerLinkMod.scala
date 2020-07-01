@@ -1,5 +1,6 @@
 package typings.ionicCore
 
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.interfaceMod.RouterDirection
 import typings.ionicCore.mod.Color
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
@@ -29,6 +30,11 @@ object routerLinkMod extends js.Object {
       * The value is a space-separated list of [link types](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types).
       */
     var rel: js.UndefOr[String] = js.native
+    /**
+      * When using a router, it specifies the transition animation when navigating to
+      * another page using `href`.
+      */
+    var routerAnimation: js.UndefOr[AnimationBuilder] = js.native
     /**
       * When using a router, it specifies the transition direction when navigating to
       * another page using `href`.

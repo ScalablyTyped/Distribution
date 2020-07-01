@@ -1,16 +1,14 @@
 package typings.electronPackager
 
-import typings.electronPackager.mod.arch
-import typings.electronPackager.mod.platform
+import typings.electronPackager.mod.OfficialArch
+import typings.electronPackager.mod.OfficialPlatform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object electronPackagerStrings {
   @js.native
-  sealed trait all
-    extends arch
-       with platform
+  sealed trait all extends js.Object
   
   @js.native
   sealed trait appBundleId extends js.Object
@@ -19,40 +17,40 @@ object electronPackagerStrings {
   sealed trait appPath extends js.Object
   
   @js.native
-  sealed trait arm64 extends arch
+  sealed trait arm64 extends OfficialArch
   
   @js.native
-  sealed trait armv7l extends arch
+  sealed trait armv7l extends OfficialArch
   
   @js.native
   sealed trait asInvoker extends js.Object
   
   @js.native
-  sealed trait darwin extends platform
+  sealed trait darwin extends OfficialPlatform
   
   @js.native
   sealed trait highestAvailable extends js.Object
   
   @js.native
-  sealed trait ia32 extends arch
+  sealed trait ia32 extends OfficialArch
   
   @js.native
-  sealed trait linux extends platform
+  sealed trait linux extends OfficialPlatform
   
   @js.native
-  sealed trait mas extends platform
+  sealed trait mas extends OfficialPlatform
   
   @js.native
-  sealed trait mips64el extends arch
+  sealed trait mips64el extends OfficialArch
   
   @js.native
   sealed trait requireAdministrator extends js.Object
   
   @js.native
-  sealed trait win32 extends platform
+  sealed trait win32 extends OfficialPlatform
   
   @js.native
-  sealed trait x64 extends arch
+  sealed trait x64 extends OfficialArch
   
   @scala.inline
   def all: all = "all".asInstanceOf[all]

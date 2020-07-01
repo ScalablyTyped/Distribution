@@ -12,7 +12,8 @@ trait StateField[T, S /* <: Schema[_, _] */] extends js.Object {
     * `state` argument is again a half-initialized state.
     */
   var fromJSON: js.UndefOr[
-    (js.Function3[
+    (js.ThisFunction3[
+      /* this */ Plugin[T, S], 
       /* config */ StringDictionary[js.Any], 
       /* value */ js.Any, 
       /* state */ EditorState[S], 
@@ -23,7 +24,7 @@ trait StateField[T, S /* <: Schema[_, _] */] extends js.Object {
     * Convert this field to JSON. Optional, can be left off to disable
     * JSON serialization for the field.
     */
-  var toJSON: js.UndefOr[(js.Function1[/* value */ T, _]) | Null] = js.undefined
+  var toJSON: js.UndefOr[(js.ThisFunction1[/* this */ Plugin[T, S], /* value */ T, _]) | Null] = js.undefined
   /**
     * Apply the given transaction to this state field, producing a new
     * field value. Note that the `newState` argument is again a partially
@@ -43,17 +44,23 @@ trait StateField[T, S /* <: Schema[_, _] */] extends js.Object {
 
 object StateField {
   @scala.inline
-  def apply[T, S](
+  def apply[T, /* <: typings.prosemirrorModel.mod.Schema[_, _] */ S](
     apply: (Transaction[S], T, EditorState[S], EditorState[S]) => T,
     init: (StringDictionary[js.Any], EditorState[S]) => T,
     fromJSON: js.UndefOr[
-      Null | ((/* config */ StringDictionary[js.Any], /* value */ js.Any, /* state */ EditorState[S]) => T)
+      Null | (js.ThisFunction3[
+        /* this */ Plugin[T, S], 
+        /* config */ StringDictionary[js.Any], 
+        /* value */ js.Any, 
+        /* state */ EditorState[S], 
+        T
+      ])
     ] = js.undefined,
-    toJSON: js.UndefOr[Null | (/* value */ T => _)] = js.undefined
+    toJSON: js.UndefOr[Null | (js.ThisFunction1[/* this */ Plugin[T, S], /* value */ T, _])] = js.undefined
   ): StateField[T, S] = {
     val __obj = js.Dynamic.literal(apply = js.Any.fromFunction4(apply), init = js.Any.fromFunction2(init))
-    if (!js.isUndefined(fromJSON)) __obj.updateDynamic("fromJSON")(if (fromJSON != null) js.Any.fromFunction3(fromJSON.asInstanceOf[(/* config */ StringDictionary[js.Any], /* value */ js.Any, /* state */ EditorState[S]) => T]) else null)
-    if (!js.isUndefined(toJSON)) __obj.updateDynamic("toJSON")(if (toJSON != null) js.Any.fromFunction1(toJSON.asInstanceOf[/* value */ T => _]) else null)
+    if (!js.isUndefined(fromJSON)) __obj.updateDynamic("fromJSON")(fromJSON.asInstanceOf[js.Any])
+    if (!js.isUndefined(toJSON)) __obj.updateDynamic("toJSON")(toJSON.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateField[T, S]]
   }
 }

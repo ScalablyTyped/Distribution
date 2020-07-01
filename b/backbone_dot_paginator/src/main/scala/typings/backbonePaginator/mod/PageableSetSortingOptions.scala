@@ -14,7 +14,7 @@ trait PageableSetSortingOptions[TModel /* <: Model[_, ModelSetOptions] */] exten
 
 object PageableSetSortingOptions {
   @scala.inline
-  def apply[TModel](
+  def apply[/* <: typings.backbone.mod.Model[_, typings.backbone.mod.ModelSetOptions] */ TModel](
     full: js.UndefOr[Boolean] = js.undefined,
     side: String = null,
     sortValue: (/* model */ TModel, /* sortKey */ String) => _ | String = null

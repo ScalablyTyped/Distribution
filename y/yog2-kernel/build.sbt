@@ -1,24 +1,24 @@
 organization := "org.scalablytyped"
 name := "yog2-kernel"
-version := "1.9-dt-20200515Z-592658"
+version := "1.9-dt-20200515Z-792a8b"
 scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "body-parser" % "1.19-dt-20200210Z-5329e6",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20200515Z-4db3c4",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20200515Z-9eb2b7",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20200515Z-c2bfc2",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20200519Z-0dc149",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20200515Z-593c89",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200521Z-3aabb7",
-  "org.scalablytyped" %%% "node-ral" % "0.18-dt-20200515Z-f29850",
-  "org.scalablytyped" %%% "qs" % "6.9-dt-20200519Z-7ad812",
-  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-cd197c",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20200519Z-9da187",
-  "org.scalablytyped" %%% "std" % "3.9-18cbeb",
-  "org.scalablytyped" %%% "yog-bigpipe" % "0.4-dt-20200515Z-cb2e63",
-  "org.scalablytyped" %%% "yog-log" % "0.1-dt-20200515Z-dfe5a4")
+  "org.scalablytyped" %%% "body-parser" % "1.19-dt-20200210Z-8ef17f",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20200515Z-72dac4",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20200515Z-d9cc4e",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20200624Z-cd1cc0",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20200624Z-697568",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20200515Z-a16f63",
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200624Z-2fcd45",
+  "org.scalablytyped" %%% "node-ral" % "0.18-dt-20200515Z-38be44",
+  "org.scalablytyped" %%% "qs" % "6.9-dt-20200519Z-7b3798",
+  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-c5e2e8",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20200519Z-9b0303",
+  "org.scalablytyped" %%% "std" % "3.9-c9f1f8",
+  "org.scalablytyped" %%% "yog-bigpipe" % "0.4-dt-20200515Z-1b493e",
+  "org.scalablytyped" %%% "yog-log" % "0.1-dt-20200515Z-e05d68")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

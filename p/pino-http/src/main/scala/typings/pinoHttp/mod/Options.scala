@@ -5,6 +5,7 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.pino.anon.AsObject
 import typings.pino.anon.Bindings
+import typings.pino.anon.LogMethod
 import typings.pino.mod.DestinationStream
 import typings.pino.mod.Level
 import typings.pino.mod.LevelWithSilent
@@ -27,11 +28,12 @@ import scala.scalajs.js.annotation._
 trait Options extends LoggerOptions {
   var autoLogging: js.UndefOr[Boolean | AutoLoggingOptions] = js.undefined
   var customAttributeKeys: js.UndefOr[CustomAttributeKeys] = js.undefined
-  var customErrorMessage: js.UndefOr[js.Function1[/* req */ IncomingMessage, String]] = js.undefined
+  var customErrorMessage: js.UndefOr[js.Function2[/* error */ Error, /* res */ ServerResponse, String]] = js.undefined
   var customLogLevel: js.UndefOr[js.Function2[/* res */ ServerResponse, /* error */ Error, Level]] = js.undefined
-  var customSuccessMessage: js.UndefOr[js.Function1[/* req */ IncomingMessage, String]] = js.undefined
+  var customSuccessMessage: js.UndefOr[js.Function1[/* res */ ServerResponse, String]] = js.undefined
   var genReqId: js.UndefOr[GenReqId] = js.undefined
   var logger: js.UndefOr[Logger] = js.undefined
+  var reqCustomProps: js.UndefOr[js.Function1[/* req */ IncomingMessage, js.Object]] = js.undefined
   var stream: js.UndefOr[DestinationStream] = js.undefined
   var useLevel: js.UndefOr[Level] = js.undefined
 }
@@ -44,13 +46,14 @@ object Options {
     browser: AsObject = null,
     changeLevelName: String = null,
     customAttributeKeys: CustomAttributeKeys = null,
-    customErrorMessage: /* req */ IncomingMessage => String = null,
+    customErrorMessage: (/* error */ Error, /* res */ ServerResponse) => String = null,
     customLevels: StringDictionary[Double] = null,
     customLogLevel: (/* res */ ServerResponse, /* error */ Error) => Level = null,
-    customSuccessMessage: /* req */ IncomingMessage => String = null,
+    customSuccessMessage: /* res */ ServerResponse => String = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     formatters: Bindings = null,
     genReqId: /* req */ IncomingMessage => ReqId = null,
+    hooks: LogMethod = null,
     level: LevelWithSilent | String = null,
     levelKey: String = null,
     levelVal: js.UndefOr[Double] = js.undefined,
@@ -63,6 +66,7 @@ object Options {
     prettifier: js.Any = null,
     prettyPrint: Boolean | PrettyOptions = null,
     redact: js.Array[String] | redactOptions = null,
+    reqCustomProps: /* req */ IncomingMessage => js.Object = null,
     safe: js.UndefOr[Boolean] = js.undefined,
     serializers: StringDictionary[SerializerFn] = null,
     stream: DestinationStream = null,
@@ -77,13 +81,14 @@ object Options {
     if (browser != null) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
     if (changeLevelName != null) __obj.updateDynamic("changeLevelName")(changeLevelName.asInstanceOf[js.Any])
     if (customAttributeKeys != null) __obj.updateDynamic("customAttributeKeys")(customAttributeKeys.asInstanceOf[js.Any])
-    if (customErrorMessage != null) __obj.updateDynamic("customErrorMessage")(js.Any.fromFunction1(customErrorMessage))
+    if (customErrorMessage != null) __obj.updateDynamic("customErrorMessage")(js.Any.fromFunction2(customErrorMessage))
     if (customLevels != null) __obj.updateDynamic("customLevels")(customLevels.asInstanceOf[js.Any])
     if (customLogLevel != null) __obj.updateDynamic("customLogLevel")(js.Any.fromFunction2(customLogLevel))
     if (customSuccessMessage != null) __obj.updateDynamic("customSuccessMessage")(js.Any.fromFunction1(customSuccessMessage))
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (formatters != null) __obj.updateDynamic("formatters")(formatters.asInstanceOf[js.Any])
     if (genReqId != null) __obj.updateDynamic("genReqId")(js.Any.fromFunction1(genReqId))
+    if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (levelKey != null) __obj.updateDynamic("levelKey")(levelKey.asInstanceOf[js.Any])
     if (!js.isUndefined(levelVal)) __obj.updateDynamic("levelVal")(levelVal.get.asInstanceOf[js.Any])
@@ -96,6 +101,7 @@ object Options {
     if (prettifier != null) __obj.updateDynamic("prettifier")(prettifier.asInstanceOf[js.Any])
     if (prettyPrint != null) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
     if (redact != null) __obj.updateDynamic("redact")(redact.asInstanceOf[js.Any])
+    if (reqCustomProps != null) __obj.updateDynamic("reqCustomProps")(js.Any.fromFunction1(reqCustomProps))
     if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe.get.asInstanceOf[js.Any])
     if (serializers != null) __obj.updateDynamic("serializers")(serializers.asInstanceOf[js.Any])
     if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])

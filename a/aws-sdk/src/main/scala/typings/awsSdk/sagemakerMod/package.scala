@@ -562,6 +562,8 @@ package object sagemakerMod {
   */
   type InstanceType = typings.awsSdk.sagemakerMod._InstanceType | java.lang.String
   type IntegerParameterRanges = js.Array[typings.awsSdk.sagemakerMod.IntegerParameterRange]
+  type InvocationsMaxRetries = scala.Double
+  type InvocationsTimeoutInSeconds = scala.Double
   type JobReferenceCode = java.lang.String
   type JobReferenceCodeContains = java.lang.String
   /* Rewritten from type alias, can be one of: 

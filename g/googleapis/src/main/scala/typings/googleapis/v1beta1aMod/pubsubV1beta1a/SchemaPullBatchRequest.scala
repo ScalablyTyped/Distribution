@@ -31,13 +31,13 @@ trait SchemaPullBatchRequest extends js.Object {
 object SchemaPullBatchRequest {
   @scala.inline
   def apply(
-    maxEvents: Int | Double = null,
+    maxEvents: js.UndefOr[Double] = js.undefined,
     returnImmediately: js.UndefOr[Boolean] = js.undefined,
     subscription: String = null
   ): SchemaPullBatchRequest = {
     val __obj = js.Dynamic.literal()
-    if (maxEvents != null) __obj.updateDynamic("maxEvents")(maxEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnImmediately)) __obj.updateDynamic("returnImmediately")(returnImmediately.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxEvents)) __obj.updateDynamic("maxEvents")(maxEvents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnImmediately)) __obj.updateDynamic("returnImmediately")(returnImmediately.get.asInstanceOf[js.Any])
     if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPullBatchRequest]
   }

@@ -14,7 +14,7 @@ trait StartTagForOptions[O /* <: SaxesOptions */] extends js.Object
 
 object StartTagForOptions {
   @scala.inline
-  def SaxesStartTag[O](
+  def SaxesStartTag[/* <: typings.saxes.mod.SaxesOptions */ O](
     attributes: Record[String, SaxesAttributeNS | String],
     name: String,
     ns: Record[String, String] = null
@@ -24,12 +24,12 @@ object StartTagForOptions {
     __obj.asInstanceOf[StartTagForOptions[O]]
   }
   @scala.inline
-  def SaxesStartTagPlain[O](attributes: Record[String, SaxesAttributeNS | String], name: String): StartTagForOptions[O] = {
+  def SaxesStartTagPlain[/* <: typings.saxes.mod.SaxesOptions */ O](attributes: Record[String, SaxesAttributeNS | String], name: String): StartTagForOptions[O] = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartTagForOptions[O]]
   }
   @scala.inline
-  def SaxesStartTagNS[O](attributes: Record[String, SaxesAttributeNS | String], name: String, ns: Record[String, String]): StartTagForOptions[O] = {
+  def SaxesStartTagNS[/* <: typings.saxes.mod.SaxesOptions */ O](attributes: Record[String, SaxesAttributeNS | String], name: String, ns: Record[String, String]): StartTagForOptions[O] = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartTagForOptions[O]]
   }

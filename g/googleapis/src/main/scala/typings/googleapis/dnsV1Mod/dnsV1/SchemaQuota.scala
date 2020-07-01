@@ -26,29 +26,29 @@ trait SchemaQuota extends js.Object {
 object SchemaQuota {
   @scala.inline
   def apply(
-    dnsKeysPerManagedZone: Int | Double = null,
+    dnsKeysPerManagedZone: js.UndefOr[Double] = js.undefined,
     kind: String = null,
-    managedZones: Int | Double = null,
-    managedZonesPerNetwork: Int | Double = null,
-    networksPerManagedZone: Int | Double = null,
-    resourceRecordsPerRrset: Int | Double = null,
-    rrsetAdditionsPerChange: Int | Double = null,
-    rrsetDeletionsPerChange: Int | Double = null,
-    rrsetsPerManagedZone: Int | Double = null,
-    totalRrdataSizePerChange: Int | Double = null,
+    managedZones: js.UndefOr[Double] = js.undefined,
+    managedZonesPerNetwork: js.UndefOr[Double] = js.undefined,
+    networksPerManagedZone: js.UndefOr[Double] = js.undefined,
+    resourceRecordsPerRrset: js.UndefOr[Double] = js.undefined,
+    rrsetAdditionsPerChange: js.UndefOr[Double] = js.undefined,
+    rrsetDeletionsPerChange: js.UndefOr[Double] = js.undefined,
+    rrsetsPerManagedZone: js.UndefOr[Double] = js.undefined,
+    totalRrdataSizePerChange: js.UndefOr[Double] = js.undefined,
     whitelistedKeySpecs: js.Array[SchemaDnsKeySpec] = null
   ): SchemaQuota = {
     val __obj = js.Dynamic.literal()
-    if (dnsKeysPerManagedZone != null) __obj.updateDynamic("dnsKeysPerManagedZone")(dnsKeysPerManagedZone.asInstanceOf[js.Any])
+    if (!js.isUndefined(dnsKeysPerManagedZone)) __obj.updateDynamic("dnsKeysPerManagedZone")(dnsKeysPerManagedZone.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (managedZones != null) __obj.updateDynamic("managedZones")(managedZones.asInstanceOf[js.Any])
-    if (managedZonesPerNetwork != null) __obj.updateDynamic("managedZonesPerNetwork")(managedZonesPerNetwork.asInstanceOf[js.Any])
-    if (networksPerManagedZone != null) __obj.updateDynamic("networksPerManagedZone")(networksPerManagedZone.asInstanceOf[js.Any])
-    if (resourceRecordsPerRrset != null) __obj.updateDynamic("resourceRecordsPerRrset")(resourceRecordsPerRrset.asInstanceOf[js.Any])
-    if (rrsetAdditionsPerChange != null) __obj.updateDynamic("rrsetAdditionsPerChange")(rrsetAdditionsPerChange.asInstanceOf[js.Any])
-    if (rrsetDeletionsPerChange != null) __obj.updateDynamic("rrsetDeletionsPerChange")(rrsetDeletionsPerChange.asInstanceOf[js.Any])
-    if (rrsetsPerManagedZone != null) __obj.updateDynamic("rrsetsPerManagedZone")(rrsetsPerManagedZone.asInstanceOf[js.Any])
-    if (totalRrdataSizePerChange != null) __obj.updateDynamic("totalRrdataSizePerChange")(totalRrdataSizePerChange.asInstanceOf[js.Any])
+    if (!js.isUndefined(managedZones)) __obj.updateDynamic("managedZones")(managedZones.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(managedZonesPerNetwork)) __obj.updateDynamic("managedZonesPerNetwork")(managedZonesPerNetwork.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(networksPerManagedZone)) __obj.updateDynamic("networksPerManagedZone")(networksPerManagedZone.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resourceRecordsPerRrset)) __obj.updateDynamic("resourceRecordsPerRrset")(resourceRecordsPerRrset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rrsetAdditionsPerChange)) __obj.updateDynamic("rrsetAdditionsPerChange")(rrsetAdditionsPerChange.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rrsetDeletionsPerChange)) __obj.updateDynamic("rrsetDeletionsPerChange")(rrsetDeletionsPerChange.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rrsetsPerManagedZone)) __obj.updateDynamic("rrsetsPerManagedZone")(rrsetsPerManagedZone.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalRrdataSizePerChange)) __obj.updateDynamic("totalRrdataSizePerChange")(totalRrdataSizePerChange.get.asInstanceOf[js.Any])
     if (whitelistedKeySpecs != null) __obj.updateDynamic("whitelistedKeySpecs")(whitelistedKeySpecs.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQuota]
   }

@@ -11,7 +11,7 @@ trait AnimationThreshold extends js.Object {
     *
     * @default
     * "true"
-    * @see https://echarts.apache.org/en/option.html#series-line.markLine.animation
+    * @see https://echarts.apache.org/en/option.html#series-pie.markArea.animation
     */
   var animation: js.UndefOr[Boolean] = js.undefined
   /**
@@ -21,14 +21,14 @@ trait AnimationThreshold extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-line.line.markLine)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markArea)
     *
     * See
     * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-line.markLine.animationDelay
+    * @see https://echarts.apache.org/en/option.html#series-pie.markArea.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
   /**
@@ -37,38 +37,38 @@ trait AnimationThreshold extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-line.line.markLine)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markArea)
     *
     * See
     * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-line.markLine.animationDelayUpdate
+    * @see https://echarts.apache.org/en/option.html#series-pie.markArea.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Duration of the first animation, which supports callback
     * function for different data to have different animation effect:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-line.line.markLine)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markArea)
     *
     *
     * @default
     * 1000
-    * @see https://echarts.apache.org/en/option.html#series-line.markLine.animationDuration
+    * @see https://echarts.apache.org/en/option.html#series-pie.markArea.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-line.line.markLine)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markArea)
     *
     *
     * @default
     * 300
-    * @see https://echarts.apache.org/en/option.html#series-line.markLine.animationDurationUpdate
+    * @see https://echarts.apache.org/en/option.html#series-pie.markArea.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
@@ -80,7 +80,7 @@ trait AnimationThreshold extends js.Object {
     *
     * @default
     * "cubicOut"
-    * @see https://echarts.apache.org/en/option.html#series-line.markLine.animationEasing
+    * @see https://echarts.apache.org/en/option.html#series-pie.markArea.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.undefined
   /**
@@ -89,7 +89,7 @@ trait AnimationThreshold extends js.Object {
     *
     * @default
     * "cubicOut"
-    * @see https://echarts.apache.org/en/option.html#series-line.markLine.animationEasingUpdate
+    * @see https://echarts.apache.org/en/option.html#series-pie.markArea.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[String] = js.undefined
   /**
@@ -100,112 +100,56 @@ trait AnimationThreshold extends js.Object {
     *
     * @default
     * 2000
-    * @see https://echarts.apache.org/en/option.html#series-line.markLine.animationThreshold
+    * @see https://echarts.apache.org/en/option.html#series-pie.markArea.animationThreshold
     */
   var animationThreshold: js.UndefOr[Double] = js.undefined
   /**
-    * Data array of marking line.
-    * Every array item can be an array of one or two values, representing
-    * starting and ending point of the line, and every item is
-    * an object.
-    * Here are several ways to assign the positions of starting
-    * and ending point.
+    * The scope of the area is defined by `data`, which is an array
+    * with two item, representing the left-top point and the right-bottom
+    * point of rectangle area.
+    * Each item can be defined as follows:
     *
-    * 1. Assign coordinate according to container with
-    * [x](https://echarts.apache.org/en/option.html#series-line.markLine.data.0.x)
+    * 1.
+    * Specify the coordinate in screen coordinate system using
+    * [x](https://echarts.apache.org/en/option.html#series-pie.markArea.data.0.x)
     * ,
-    * [y](https://echarts.apache.org/en/option.html#series-line.markLine.data.0.y)
-    * attribute, in which pixel values and percentage are supported.
+    * [y](https://echarts.apache.org/en/option.html#series-pie.markArea.data.0.y)
+    * , where the unit is pixel (e.g.,
+    * the value is `5`), or percent (e.g.,
+    * the value is `'35%'`).
     *
-    * 2. Assign coordinate position with
-    * [coord](https://echarts.apache.org/en/option.html#series-line.markLine.data.0.coord)
-    * attribute, in which `'min'`, `'max'`, `'average'` are supported
-    * for each dimension.
+    * The priority follows as above if more than one above definition
+    * used.
     *
-    * 3. Use
-    * [type](https://echarts.apache.org/en/option.html#series-line.markLine.data.0.type)
-    * attribute to mark the maximum and minimum values in the series,
-    * in which
-    * [valueIndex](https://echarts.apache.org/en/option.html#series-line.markLine.data.0.valueIndex)
-    * or
-    * [valueDim](https://echarts.apache.org/en/option.html#series-line.markLine.data.0.valueDim)
-    * can be used to assign the dimension.
-    *
-    * 4.
-    * You may also create a mark line in Cartesian coordinate at
-    * a specific position in X or Y axis by assigning `xAxis` or
-    * `yAxis`. See
-    * [scatter-weight](https://echarts.apache.org/examples/en/editor.html?c=scatter-weight)
-    * for example.
-    *
-    * When multiple attributes exist, priority is as the above
-    * order.
-    *
-    * You may also set the type of mark line through `type`, stating
-    * whether it is for the maximum value or average value.
-    * Likewise, dimensions can be assigned through `valueIndex`.
-    *
-    * [see doc](https://echarts.apache.org/en/option.html#series-line.line.markLine)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markArea)
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-line.markLine.data
+    * @see https://echarts.apache.org/en/option.html#series-pie.markArea.data
     */
-  var data: js.UndefOr[`0SymbolOffset`] = js.undefined
+  var data: js.UndefOr[`0Value`] = js.undefined
   /**
-    * Mark line text.
+    * Style of the mark area.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-line.markLine.label
+    * @see https://echarts.apache.org/en/option.html#series-pie.markArea.itemStyle
     */
-  var label: js.UndefOr[Position] = js.undefined
+  var itemStyle: js.UndefOr[Emphasis] = js.undefined
   /**
-    * Mark line style.
+    * Label in mark area.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-line.markLine.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-pie.markArea.label
     */
-  var lineStyle: js.UndefOr[ColorCurveness] = js.undefined
-  /**
-    * Precison of marking line value, which is useful when displaying
-    * average value mark line.
-    *
-    *
-    * @default
-    * 2
-    * @see https://echarts.apache.org/en/option.html#series-line.markLine.precision
-    */
-  var precision: js.UndefOr[Double] = js.undefined
+  var label: js.UndefOr[FontFamily] = js.undefined
   /**
     * Whether to ignore mouse events.
     * Default value is false, for triggering and responding to
     * mouse events.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-line.markLine.silent
+    * @see https://echarts.apache.org/en/option.html#series-pie.markArea.silent
     */
   var silent: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Symbol type at the two ends of the mark line.
-    * It can be an array for two ends, or assigned seperately.
-    * See
-    * [data.symbol](https://echarts.apache.org/en/option.html#series-line.markLine.data.0.symbol)
-    * for more format information.
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-line.markLine.symbol
-    */
-  var symbol: js.UndefOr[js.Array[_] | String] = js.undefined
-  /**
-    * Symbol size at the two ends of the mark line.
-    * It can be an array for two ends, or assigned seperately.
-    *
-    * **Attention:** You cannot assgin width and height seperately
-    * as normal `symbolSize`.
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-line.markLine.symbolSize
-    */
-  var symbolSize: js.UndefOr[js.Array[_] | Double] = js.undefined
 }
 
 object AnimationThreshold {
@@ -219,13 +163,10 @@ object AnimationThreshold {
     animationEasing: String = null,
     animationEasingUpdate: String = null,
     animationThreshold: js.UndefOr[Double] = js.undefined,
-    data: `0SymbolOffset` = null,
-    label: Position = null,
-    lineStyle: ColorCurveness = null,
-    precision: js.UndefOr[Double] = js.undefined,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    symbol: js.Array[_] | String = null,
-    symbolSize: js.Array[_] | Double = null
+    data: `0Value` = null,
+    itemStyle: Emphasis = null,
+    label: FontFamily = null,
+    silent: js.UndefOr[Boolean] = js.undefined
   ): AnimationThreshold = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
@@ -237,12 +178,9 @@ object AnimationThreshold {
     if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate.asInstanceOf[js.Any])
     if (!js.isUndefined(animationThreshold)) __obj.updateDynamic("animationThreshold")(animationThreshold.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
     if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationThreshold]
   }
 }

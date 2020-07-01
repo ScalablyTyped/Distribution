@@ -6,8 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ContactStatusChange extends Event {
+  /**
+    * Contact_info.
+    */
   var contact_info: ContactInfo
-  /* Properties */
+  /**
+    * Endpoint.
+    */
   var endpoint: Endpoint
 }
 

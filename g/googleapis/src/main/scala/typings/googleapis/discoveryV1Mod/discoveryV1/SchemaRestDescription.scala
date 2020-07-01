@@ -1,8 +1,8 @@
 package typings.googleapis.discoveryV1Mod.discoveryV1
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.googleapis.AnonOauth2
-import typings.googleapis.AnonX16
+import typings.googleapis.anon.Oauth2
+import typings.googleapis.anon.X16
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait SchemaRestDescription extends js.Object {
   /**
     * Authentication information.
     */
-  var auth: js.UndefOr[AnonOauth2] = js.native
+  var auth: js.UndefOr[Oauth2] = js.native
   /**
     * [DEPRECATED] The base path for REST requests.
     */
@@ -57,7 +57,7 @@ trait SchemaRestDescription extends js.Object {
   /**
     * Links to 16x16 and 32x32 icons representing the API.
     */
-  var icons: js.UndefOr[AnonX16] = js.native
+  var icons: js.UndefOr[X16] = js.native
   /**
     * The ID of this API.
     */
@@ -134,7 +134,7 @@ trait SchemaRestDescription extends js.Object {
 object SchemaRestDescription {
   @scala.inline
   def apply(
-    auth: AnonOauth2 = null,
+    auth: Oauth2 = null,
     basePath: String = null,
     baseUrl: String = null,
     batchPath: String = null,
@@ -145,7 +145,7 @@ object SchemaRestDescription {
     etag: String = null,
     exponentialBackoffDefault: js.UndefOr[Boolean] = js.undefined,
     features: js.Array[String] = null,
-    icons: AnonX16 = null,
+    icons: X16 = null,
     id: String = null,
     kind: String = null,
     labels: js.Array[String] = null,
@@ -175,7 +175,7 @@ object SchemaRestDescription {
     if (discoveryVersion != null) __obj.updateDynamic("discoveryVersion")(discoveryVersion.asInstanceOf[js.Any])
     if (documentationLink != null) __obj.updateDynamic("documentationLink")(documentationLink.asInstanceOf[js.Any])
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (!js.isUndefined(exponentialBackoffDefault)) __obj.updateDynamic("exponentialBackoffDefault")(exponentialBackoffDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(exponentialBackoffDefault)) __obj.updateDynamic("exponentialBackoffDefault")(exponentialBackoffDefault.get.asInstanceOf[js.Any])
     if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
     if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
@@ -195,7 +195,7 @@ object SchemaRestDescription {
     if (servicePath != null) __obj.updateDynamic("servicePath")(servicePath.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (!js.isUndefined(version_module)) __obj.updateDynamic("version_module")(version_module.asInstanceOf[js.Any])
+    if (!js.isUndefined(version_module)) __obj.updateDynamic("version_module")(version_module.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRestDescription]
   }
 }

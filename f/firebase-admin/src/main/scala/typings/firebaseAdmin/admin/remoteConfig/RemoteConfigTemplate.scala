@@ -28,6 +28,10 @@ trait RemoteConfigTemplate extends js.Object {
     * Map of parameter keys to their optional default values and optional conditional values.
     */
   var parameters: StringDictionary[RemoteConfigParameter]
+  /**
+    * Version information for the current Remote Config template.
+    */
+  var version: js.UndefOr[Version] = js.undefined
 }
 
 object RemoteConfigTemplate {
@@ -36,9 +40,11 @@ object RemoteConfigTemplate {
     conditions: js.Array[RemoteConfigCondition],
     etag: String,
     parameterGroups: StringDictionary[RemoteConfigParameterGroup],
-    parameters: StringDictionary[RemoteConfigParameter]
+    parameters: StringDictionary[RemoteConfigParameter],
+    version: Version = null
   ): RemoteConfigTemplate = {
     val __obj = js.Dynamic.literal(conditions = conditions.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], parameterGroups = parameterGroups.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteConfigTemplate]
   }
 }

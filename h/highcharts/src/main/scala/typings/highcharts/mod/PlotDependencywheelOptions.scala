@@ -73,6 +73,12 @@ trait PlotDependencywheelOptions extends js.Object {
     */
   var center: js.UndefOr[js.Array[Double | String | Null]] = js.undefined
   /**
+    * (Highcharts, Highstock, Gantt) When `true`, the columns will center in
+    * the category, ignoring null or missing points. When `false`, space will
+    * be reserved for null or missing points.
+    */
+  var centerInCategory: js.UndefOr[Boolean] = js.undefined
+  /**
     * (Highcharts) An additional class name to apply to the series' graphical
     * elements. This option does not replace default class names of the
     * graphical element.
@@ -427,6 +433,7 @@ object PlotDependencywheelOptions {
     borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderWidth: js.UndefOr[Double] = js.undefined,
     center: js.Array[Double | String | Null] = null,
+    centerInCategory: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
     color: ColorString | GradientColorObject | PatternObject = null,
@@ -485,6 +492,7 @@ object PlotDependencywheelOptions {
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (!js.isUndefined(centerInCategory)) __obj.updateDynamic("centerInCategory")(centerInCategory.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])

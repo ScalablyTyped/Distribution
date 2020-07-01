@@ -1,5 +1,6 @@
 package typings.reactI18next.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.i18next.mod.TFunction
 import typings.i18next.mod.i18n
 import typings.react.anon.Html
@@ -311,7 +312,7 @@ trait TransProps[E /* <: Element */] extends js.Object {
   var colSpan: js.UndefOr[Double] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var cols: js.UndefOr[Double] = js.undefined
-  var components: js.UndefOr[js.Array[ReactNode]] = js.undefined
+  var components: js.UndefOr[js.Array[ReactNode] | StringDictionary[ReactNode]] = js.undefined
   var content: js.UndefOr[String] = js.undefined
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   var contextMenu: js.UndefOr[String] = js.undefined
@@ -558,7 +559,7 @@ trait TransProps[E /* <: Element */] extends js.Object {
 
 object TransProps {
   @scala.inline
-  def apply[E](
+  def apply[/* <: typings.std.Element */ E](
     about: String = null,
     accept: String = null,
     acceptCharset: String = null,
@@ -636,7 +637,7 @@ object TransProps {
     colSpan: js.UndefOr[Double] = js.undefined,
     color: String = null,
     cols: js.UndefOr[Double] = js.undefined,
-    components: js.Array[ReactNode] = null,
+    components: js.Array[ReactNode] | StringDictionary[ReactNode] = null,
     content: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,

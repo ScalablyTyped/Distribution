@@ -5,11 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Slider extends Component[SliderOptions] {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<SliderOptions> * / any */ trait Slider extends js.Object {
   /**
     * Index of current slide
     */
   var activeIndex: Double
+  /**
+    * ID of the dropdown element
+    */
+  var el: Element
+  /**
+    * ID of the dropdown element
+    */
+  var options: SliderOptions
   /**
     * Move to next slider
     */
@@ -32,7 +41,6 @@ object Slider {
   @scala.inline
   def apply(
     activeIndex: Double,
-    destroy: () => Unit,
     el: Element,
     next: () => Unit,
     options: SliderOptions,
@@ -40,7 +48,7 @@ object Slider {
     prev: () => Unit,
     start: () => Unit
   ): Slider = {
-    val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), el = el.asInstanceOf[js.Any], next = js.Any.fromFunction0(next), options = options.asInstanceOf[js.Any], pause = js.Any.fromFunction0(pause), prev = js.Any.fromFunction0(prev), start = js.Any.fromFunction0(start))
+    val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], el = el.asInstanceOf[js.Any], next = js.Any.fromFunction0(next), options = options.asInstanceOf[js.Any], pause = js.Any.fromFunction0(pause), prev = js.Any.fromFunction0(prev), start = js.Any.fromFunction0(start))
     __obj.asInstanceOf[Slider]
   }
 }

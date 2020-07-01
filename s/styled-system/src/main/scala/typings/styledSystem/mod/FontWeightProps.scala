@@ -17,7 +17,7 @@ trait FontWeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] exten
 
 object FontWeightProps {
   @scala.inline
-  def apply[ThemeType, TVal](fontWeight: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): FontWeightProps[ThemeType, TVal] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType, TVal](fontWeight: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): FontWeightProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(fontWeight)) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontWeightProps[ThemeType, TVal]]

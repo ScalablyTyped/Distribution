@@ -17,9 +17,9 @@ trait SchemaDuplicateFilterViewRequest extends js.Object {
 
 object SchemaDuplicateFilterViewRequest {
   @scala.inline
-  def apply(filterId: Int | Double = null): SchemaDuplicateFilterViewRequest = {
+  def apply(filterId: js.UndefOr[Double] = js.undefined): SchemaDuplicateFilterViewRequest = {
     val __obj = js.Dynamic.literal()
-    if (filterId != null) __obj.updateDynamic("filterId")(filterId.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterId)) __obj.updateDynamic("filterId")(filterId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDuplicateFilterViewRequest]
   }
 }

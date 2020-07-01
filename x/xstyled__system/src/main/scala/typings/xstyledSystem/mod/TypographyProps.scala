@@ -2,6 +2,7 @@ package typings.xstyledSystem.mod
 
 import typings.csstype.mod.FontFamilyProperty
 import typings.csstype.mod.FontSizeProperty
+import typings.csstype.mod.FontStyleProperty
 import typings.csstype.mod.FontWeightProperty
 import typings.csstype.mod.LetterSpacingProperty
 import typings.csstype.mod.LineHeightProperty
@@ -16,6 +17,7 @@ trait TypographyProps
      with FontSizeProps[StyledSystemLength]
      with LineHeightProps[StyledSystemLength]
      with FontWeightProps
+     with FontStyleProps
      with TextAlignProps
      with LetterSpacingProps[StyledSystemLength]
      with ColorProps
@@ -27,6 +29,7 @@ object TypographyProps {
     color: js.Any = null,
     fontFamily: ResponsiveValue[FontFamilyProperty | Double] = null,
     fontSize: ResponsiveValue[FontSizeProperty[StyledSystemLength]] = null,
+    fontStyle: ResponsiveValue[FontStyleProperty] = null,
     fontWeight: ResponsiveValue[FontWeightProperty | AliasKey] = null,
     letterSpacing: ResponsiveValue[LetterSpacingProperty[StyledSystemLength]] = null,
     lineHeight: ResponsiveValue[LineHeightProperty[StyledSystemLength]] = null,
@@ -37,6 +40,7 @@ object TypographyProps {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing.asInstanceOf[js.Any])
     if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])

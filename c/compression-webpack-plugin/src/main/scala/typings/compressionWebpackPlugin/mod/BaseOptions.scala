@@ -5,13 +5,42 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BaseOptions extends js.Object {
+  /**
+    * Enable file caching
+    * ⚠ Ignored in webpack 5! Please use webpack.js.org/configuration/other-options/#cache.
+    * @default true
+    */
   var cache: js.UndefOr[Boolean | String] = js.undefined
+  /**
+    * @default false
+    */
   var deleteOriginalAssets: js.UndefOr[Boolean] = js.undefined
-  var exclude: js.UndefOr[Pattern] = js.undefined
-  var filename: js.UndefOr[String] = js.undefined
-  var include: js.UndefOr[Pattern] = js.undefined
+  /**
+    * Exclude all assets matching any of these conditions
+    */
+  var exclude: js.UndefOr[Rules] = js.undefined
+  /**
+    * The target asset filename.
+    * @default '[path].gz[query]'
+    */
+  var filename: js.UndefOr[String | FilenameFunction] = js.undefined
+  /**
+    * Include all assets matching any of these conditions
+    */
+  var include: js.UndefOr[Rules] = js.undefined
+  /**
+    * Only assets that compress better than this ratio are processed (minRatio = Compressed Size / Original Size)
+    * @default 0.8
+    */
   var minRatio: js.UndefOr[Double] = js.undefined
-  var test: js.UndefOr[Pattern] = js.undefined
+  /**
+    * Include all assets that pass test assertion
+    */
+  var test: js.UndefOr[Rules] = js.undefined
+  /**
+    * Only assets bigger than this size are processed (in bytes)
+    * @default 0
+    */
   var threshold: js.UndefOr[Double] = js.undefined
 }
 
@@ -20,11 +49,11 @@ object BaseOptions {
   def apply(
     cache: Boolean | String = null,
     deleteOriginalAssets: js.UndefOr[Boolean] = js.undefined,
-    exclude: Pattern = null,
-    filename: String = null,
-    include: Pattern = null,
+    exclude: Rules = null,
+    filename: String | FilenameFunction = null,
+    include: Rules = null,
     minRatio: js.UndefOr[Double] = js.undefined,
-    test: Pattern = null,
+    test: Rules = null,
     threshold: js.UndefOr[Double] = js.undefined
   ): BaseOptions = {
     val __obj = js.Dynamic.literal()

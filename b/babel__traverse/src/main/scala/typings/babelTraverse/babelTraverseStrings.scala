@@ -237,6 +237,9 @@ object babelTraverseStrings {
   sealed trait Import extends js.Object
   
   @js.native
+  sealed trait ImportAttribute extends js.Object
+  
+  @js.native
   sealed trait ImportDeclaration extends js.Object
   
   @js.native
@@ -885,6 +888,8 @@ object babelTraverseStrings {
   def IfStatement: IfStatement = "IfStatement".asInstanceOf[IfStatement]
   @scala.inline
   def Import: Import = "Import".asInstanceOf[Import]
+  @scala.inline
+  def ImportAttribute: ImportAttribute = "ImportAttribute".asInstanceOf[ImportAttribute]
   @scala.inline
   def ImportDeclaration: ImportDeclaration = "ImportDeclaration".asInstanceOf[ImportDeclaration]
   @scala.inline

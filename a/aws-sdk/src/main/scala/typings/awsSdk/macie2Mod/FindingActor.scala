@@ -15,7 +15,7 @@ trait FindingActor extends js.Object {
     */
   var ipAddressDetails: js.UndefOr[IpAddressDetails] = js.native
   /**
-    * The name and type of entity who performed the action on the affected resource.
+    * The name and type of entity that performed the action on the affected resource.
     */
   var userIdentity: js.UndefOr[UserIdentity] = js.native
 }

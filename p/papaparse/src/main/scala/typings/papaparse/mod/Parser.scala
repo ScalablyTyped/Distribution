@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("papaparse", "Parser")
 @js.native
 class Parser protected () extends js.Object {
-  def this(config: ParseConfig) = this()
+  def this(config: ParseConfig[_]) = this()
   // Sets the abort flag
   def abort(): Unit = js.native
   // Gets the cursor position

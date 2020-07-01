@@ -1,6 +1,6 @@
 package typings.grommet.worldMapMod
 
-import typings.grommet.anon.Light
+import typings.grommet.anon.Dark
 import typings.grommet.anon.Location
 import typings.grommet.anon.Name
 import typings.grommet.utilsMod.A11yTitleType
@@ -20,7 +20,7 @@ trait WorldMapProps extends js.Object {
   var continents: js.UndefOr[js.Array[Name]] = js.undefined
   var fill: js.UndefOr[FillType] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
-  var hoverColor: js.UndefOr[String | Light] = js.undefined
+  var hoverColor: js.UndefOr[String | Dark] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
   var onSelectPlace: js.UndefOr[js.Function1[/* place */ js.Array[Double], Unit]] = js.undefined
   var places: js.UndefOr[js.Array[Location]] = js.undefined
@@ -35,7 +35,7 @@ object WorldMapProps {
     continents: js.Array[Name] = null,
     fill: FillType = null,
     gridArea: GridAreaType = null,
-    hoverColor: String | Light = null,
+    hoverColor: String | Dark = null,
     margin: MarginType = null,
     onSelectPlace: /* place */ js.Array[Double] => Unit = null,
     places: js.Array[Location] = null

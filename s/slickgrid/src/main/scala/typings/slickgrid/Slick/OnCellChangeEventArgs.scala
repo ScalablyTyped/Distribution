@@ -12,7 +12,7 @@ trait OnCellChangeEventArgs[T /* <: SlickData */] extends GridEventArgs[T] {
 
 object OnCellChangeEventArgs {
   @scala.inline
-  def apply[T](cell: Double, grid: Grid[T], item: T, row: Double): OnCellChangeEventArgs[T] = {
+  def apply[/* <: typings.slickgrid.Slick.SlickData */ T](cell: Double, grid: Grid[T], item: T, row: Double): OnCellChangeEventArgs[T] = {
     val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnCellChangeEventArgs[T]]
   }

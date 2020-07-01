@@ -11,7 +11,7 @@ trait DOMElement[P /* <: HTMLAttributes[T] | SVGAttributes[T] */, T /* <: Elemen
 
 object DOMElement {
   @scala.inline
-  def apply[P, T](props: P, `type`: String, key: Key = null, ref: LegacyRef[T] = null): DOMElement[P, T] = {
+  def apply[/* <: typings.rax.mod.HTMLAttributes[T] | typings.rax.mod.SVGAttributes[T] */ P, /* <: typings.rax.mod.Element */ T](props: P, `type`: String, key: Key = null, ref: LegacyRef[T] = null): DOMElement[P, T] = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOMElement[P, T]]

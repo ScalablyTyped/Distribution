@@ -1,5 +1,6 @@
 package typings.algoliaClientSearch.mod
 
+import typings.algoliaClientSearch.anon.Indexname
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,6 +22,10 @@ trait Log extends js.Object {
     * Index name of the log
     */
   val index: js.UndefOr[String] = js.undefined
+  /**
+    * Internal queries performed for this query.
+    */
+  val inner_queries: js.Array[Indexname]
   /**
     * Client ip of the call.
     */
@@ -68,6 +73,7 @@ object Log {
   def apply(
     answer: String,
     answer_code: String,
+    inner_queries: js.Array[Indexname],
     ip: String,
     method: String,
     processing_time_ms: String,
@@ -81,7 +87,7 @@ object Log {
     nb_api_calls: String = null,
     query_nb_hits: String = null
   ): Log = {
-    val __obj = js.Dynamic.literal(answer = answer.asInstanceOf[js.Any], answer_code = answer_code.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], processing_time_ms = processing_time_ms.asInstanceOf[js.Any], query_body = query_body.asInstanceOf[js.Any], query_headers = query_headers.asInstanceOf[js.Any], sha1 = sha1.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(answer = answer.asInstanceOf[js.Any], answer_code = answer_code.asInstanceOf[js.Any], inner_queries = inner_queries.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], processing_time_ms = processing_time_ms.asInstanceOf[js.Any], query_body = query_body.asInstanceOf[js.Any], query_headers = query_headers.asInstanceOf[js.Any], sha1 = sha1.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (!js.isUndefined(exhaustive)) __obj.updateDynamic("exhaustive")(exhaustive.get.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (nb_api_calls != null) __obj.updateDynamic("nb_api_calls")(nb_api_calls.asInstanceOf[js.Any])

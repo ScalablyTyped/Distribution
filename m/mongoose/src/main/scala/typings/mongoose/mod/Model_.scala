@@ -114,20 +114,26 @@ Instantiable0[T]
   def countDocuments(callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): Query[Double] with QueryHelpers = js.native
   def countDocuments(criteria: FilterQuery[T]): Query[Double] with QueryHelpers = js.native
   def countDocuments(criteria: FilterQuery[T], callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): Query[Double] with QueryHelpers = js.native
-  def create(docs: js.Any*): js.Promise[T] = js.native
+  def create[TCreate](docs: CreateQuery[TCreate]*): js.Promise[T] = js.native
+  def create[TCreate](docs: js.Array[CreateQuery[TCreate]]): js.Promise[js.Array[T]] = js.native
+  def create[TCreate](
+    docs: js.Array[CreateQuery[TCreate]],
+    callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]
+  ): js.Promise[js.Array[T]] = js.native
+  def create[TCreate](docs: js.Array[CreateQuery[TCreate]], options: SaveOptions): js.Promise[js.Array[T]] = js.native
+  def create[TCreate](
+    docs: js.Array[CreateQuery[TCreate]],
+    options: SaveOptions,
+    callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]
+  ): js.Promise[js.Array[T]] = js.native
   /**
     * Shortcut for saving one or more documents to the database. MyModel.create(docs)
     * does new MyModel(doc).save() for every doc in docs.
     * Triggers the save() hook.
     */
-  def create(docs: js.Array[_]): js.Promise[js.Array[T]] = js.native
-  def create(docs: js.Array[_], callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]): js.Promise[js.Array[T]] = js.native
-  def create(docs: js.Array[_], options: SaveOptions): js.Promise[js.Array[T]] = js.native
-  def create(
-    docs: js.Array[_],
-    options: SaveOptions,
-    callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]
-  ): js.Promise[js.Array[T]] = js.native
+  def create[TCreate](doc: CreateQuery[TCreate]): js.Promise[T] = js.native
+  def create[TCreate](doc: CreateQuery[TCreate], callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]): js.Promise[T] = js.native
+  def create[TCreate](doc: CreateQuery[TCreate], options: SaveOptions): js.Promise[T] = js.native
   /**
     * Create the collection for this model. By default, if no indexes are specified, mongoose will not create the
     * collection for the model until any documents are created. Use this method to create the collection explicitly.

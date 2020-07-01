@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Hover extends js.Object {
-  var active: js.UndefOr[`0`] = js.undefined
+  var active: js.UndefOr[`1`] = js.undefined
   var color: js.UndefOr[ColorType] = js.undefined
   var hover: js.UndefOr[ColorExtend] = js.undefined
   var side: js.UndefOr[String] = js.undefined
@@ -16,7 +16,7 @@ trait Hover extends js.Object {
 object Hover {
   @scala.inline
   def apply(
-    active: `0` = null,
+    active: `1` = null,
     color: ColorType = null,
     hover: ColorExtend = null,
     side: String = null,

@@ -19,8 +19,22 @@ package object queryHelpersMod {
     typings.testingLibraryDom.queryHelpersMod.FindAllBy[Arguments], 
     typings.testingLibraryDom.queryHelpersMod.FindBy[Arguments]
   ]
-  type FindAllBy[Arguments /* <: js.Array[_] */] = typings.testingLibraryDom.queryHelpersMod.QueryMethod[Arguments, js.Promise[js.Array[typings.std.HTMLElement]]]
-  type FindBy[Arguments /* <: js.Array[_] */] = typings.testingLibraryDom.queryHelpersMod.QueryMethod[Arguments, js.Promise[typings.std.HTMLElement]]
+  type FindAllBy[Arguments /* <: js.Array[_] */] = typings.testingLibraryDom.queryHelpersMod.QueryMethod[
+    js.Tuple3[
+      /* import warning: importer.ImportType#apply Failed type conversion: Arguments[0] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: Arguments[1] */ js.Any, 
+      typings.testingLibraryDom.waitForMod.waitForOptions
+    ], 
+    js.Promise[js.Array[typings.std.HTMLElement]]
+  ]
+  type FindBy[Arguments /* <: js.Array[_] */] = typings.testingLibraryDom.queryHelpersMod.QueryMethod[
+    js.Tuple3[
+      /* import warning: importer.ImportType#apply Failed type conversion: Arguments[0] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: Arguments[1] */ js.Any, 
+      typings.testingLibraryDom.waitForMod.waitForOptions
+    ], 
+    js.Promise[typings.std.HTMLElement]
+  ]
   type GetAllBy[Arguments /* <: js.Array[_] */] = typings.testingLibraryDom.queryHelpersMod.QueryMethod[Arguments, js.Array[typings.std.HTMLElement]]
   type GetBy[Arguments /* <: js.Array[_] */] = typings.testingLibraryDom.queryHelpersMod.QueryMethod[Arguments, typings.std.HTMLElement]
   type QueryBy[Arguments /* <: js.Array[_] */] = typings.testingLibraryDom.queryHelpersMod.QueryMethod[Arguments, typings.std.HTMLElement | scala.Null]

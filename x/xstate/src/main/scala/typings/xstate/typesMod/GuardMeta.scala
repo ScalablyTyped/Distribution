@@ -12,7 +12,7 @@ trait GuardMeta[TContext, TEvent /* <: EventObject */] extends StateMeta[TContex
 
 object GuardMeta {
   @scala.inline
-  def apply[TContext, TEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     _event: typings.xstate.typesMod.SCXML.Event[TEvent],
     cond: Guard[TContext, TEvent],
     state: State[TContext, TEvent, _, Context[TContext]]

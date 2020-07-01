@@ -29,6 +29,6 @@ class ^[Q /* <: BaseQuad */] ()
     * @return A quad from the internal buffer, or null if none is available.
     */
   /* InferMemberOverrides */
-  override def read(): Q with (String | Buffer) = js.native
+  override def read(): (Q | Null) with (String | Buffer) = js.native
 }
 

@@ -14,7 +14,7 @@ trait UsePaginationOptions[D /* <: js.Object */] extends js.Object {
 
 object UsePaginationOptions {
   @scala.inline
-  def apply[D](
+  def apply[/* <: js.Object */ D](
     autoResetPage: js.UndefOr[Boolean] = js.undefined,
     manualPagination: js.UndefOr[Boolean] = js.undefined,
     pageCount: js.UndefOr[Double] = js.undefined,

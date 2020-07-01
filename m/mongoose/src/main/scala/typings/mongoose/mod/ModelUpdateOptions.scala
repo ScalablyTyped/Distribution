@@ -1,6 +1,7 @@
 package typings.mongoose.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.mongoose.mongooseStrings.`throw`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +37,7 @@ trait ModelUpdateOptions
     */
   var setDefaultsOnInsert: js.UndefOr[Boolean] = js.undefined
   /** overrides the strict option for this update */
-  var strict: js.UndefOr[Boolean] = js.undefined
+  var strict: js.UndefOr[Boolean | `throw`] = js.undefined
   /** whether to create the doc if it doesn't match (false) */
   var upsert: js.UndefOr[Boolean] = js.undefined
 }
@@ -54,7 +55,7 @@ object ModelUpdateOptions {
     safe: js.UndefOr[Boolean] = js.undefined,
     session: js.UndefOr[Null | ClientSession] = js.undefined,
     setDefaultsOnInsert: js.UndefOr[Boolean] = js.undefined,
-    strict: js.UndefOr[Boolean] = js.undefined,
+    strict: Boolean | `throw` = null,
     upsert: js.UndefOr[Boolean] = js.undefined
   ): ModelUpdateOptions = {
     val __obj = js.Dynamic.literal()
@@ -67,7 +68,7 @@ object ModelUpdateOptions {
     if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe.get.asInstanceOf[js.Any])
     if (!js.isUndefined(session)) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     if (!js.isUndefined(setDefaultsOnInsert)) __obj.updateDynamic("setDefaultsOnInsert")(setDefaultsOnInsert.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
+    if (strict != null) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     if (!js.isUndefined(upsert)) __obj.updateDynamic("upsert")(upsert.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelUpdateOptions]
   }

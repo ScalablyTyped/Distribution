@@ -24,7 +24,7 @@ trait InitOpts[T /* <: Ractive[T] */] extends BaseInitOpts[T] {
 
 object InitOpts {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.ractive.mod.Ractive[T] */ T](
     adapt: js.Array[Adaptor | String] = null,
     adaptors: Registry[Adaptor] = null,
     allowExpressions: js.UndefOr[Boolean] = js.undefined,

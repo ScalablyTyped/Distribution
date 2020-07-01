@@ -53,7 +53,7 @@ trait Options[QueueType /* <: Queue[RunFunction, QueueOptions] */, QueueOptions 
 
 object Options {
   @scala.inline
-  def apply[QueueType, QueueOptions](
+  def apply[/* <: typings.pQueue.queueMod.Queue[typings.pQueue.queueMod.RunFunction, QueueOptions] */ QueueType, /* <: typings.pQueue.optionsMod.QueueAddOptions */ QueueOptions](
     autoStart: js.UndefOr[Boolean] = js.undefined,
     carryoverConcurrencyCount: js.UndefOr[Boolean] = js.undefined,
     concurrency: js.UndefOr[Double] = js.undefined,

@@ -10,7 +10,7 @@ trait ContentKeyName[contentKeyName /* <: String */] extends js.Object {
 
 object ContentKeyName {
   @scala.inline
-  def apply[contentKeyName](contentKeyName: contentKeyName): ContentKeyName[contentKeyName] = {
+  def apply[/* <: java.lang.String */ contentKeyName](contentKeyName: contentKeyName): ContentKeyName[contentKeyName] = {
     val __obj = js.Dynamic.literal(contentKeyName = contentKeyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentKeyName[contentKeyName]]
   }

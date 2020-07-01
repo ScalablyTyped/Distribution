@@ -6,22 +6,19 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Image extends js.Object {
+  var file: js.UndefOr[ImageFile] = js.native
   /**
-    * The date the image was last updated, in Unix epoch time.
+    * The ID of an existing image. Specify this parameter to keep an existing image.
     */
-  var lastUpdateDate: js.UndefOr[Timestamp] = js.native
-  /**
-    * A URL at which the image is available. The URL is valid for 15 minutes for you to view and download the image.
-    */
-  var locationUrl: js.UndefOr[Url] = js.native
+  var id: js.UndefOr[ID] = js.native
 }
 
 object Image {
   @scala.inline
-  def apply(lastUpdateDate: Timestamp = null, locationUrl: Url = null): Image = {
+  def apply(file: ImageFile = null, id: ID = null): Image = {
     val __obj = js.Dynamic.literal()
-    if (lastUpdateDate != null) __obj.updateDynamic("lastUpdateDate")(lastUpdateDate.asInstanceOf[js.Any])
-    if (locationUrl != null) __obj.updateDynamic("locationUrl")(locationUrl.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]
   }
 }

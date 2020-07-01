@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GenerateAccessLogsResult extends js.Object {
   /**
-    *  Pre-signed URL for the requested access logs. 
+    *  The pre-signed URL for the requested access logs. 
     */
   var logUrl: js.UndefOr[LogUrl] = js.native
 }

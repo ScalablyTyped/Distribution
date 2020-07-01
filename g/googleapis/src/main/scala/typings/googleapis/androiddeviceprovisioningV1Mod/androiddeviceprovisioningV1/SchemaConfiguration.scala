@@ -99,7 +99,7 @@ object SchemaConfiguration {
     if (customMessage != null) __obj.updateDynamic("customMessage")(customMessage.asInstanceOf[js.Any])
     if (dpcExtras != null) __obj.updateDynamic("dpcExtras")(dpcExtras.asInstanceOf[js.Any])
     if (dpcResourcePath != null) __obj.updateDynamic("dpcResourcePath")(dpcResourcePath.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaConfiguration]
   }

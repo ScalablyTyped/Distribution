@@ -1,25 +1,30 @@
 package typings.materializeCss.M
 
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FloatingActionButton
-  extends Component[FloatingActionButtonOptions]
-     with Openable
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<FloatingActionButtonOptions> * / any
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Openable * / any */ trait FloatingActionButton extends js.Object {
+  /**
+    * Describes open/close state of FAB.
+    */
+  var isOpen: Boolean
+  /**
+    * Close FAB
+    */
+  def close(): Unit
+  /**
+    * Open FAB
+    */
+  def open(): Unit
+}
 
 object FloatingActionButton {
   @scala.inline
-  def apply(
-    close: () => Unit,
-    destroy: () => Unit,
-    el: Element,
-    isOpen: Boolean,
-    open: () => Unit,
-    options: FloatingActionButtonOptions
-  ): FloatingActionButton = {
-    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), destroy = js.Any.fromFunction0(destroy), el = el.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], open = js.Any.fromFunction0(open), options = options.asInstanceOf[js.Any])
+  def apply(close: () => Unit, isOpen: Boolean, open: () => Unit): FloatingActionButton = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), isOpen = isOpen.asInstanceOf[js.Any], open = js.Any.fromFunction0(open))
     __obj.asInstanceOf[FloatingActionButton]
   }
 }

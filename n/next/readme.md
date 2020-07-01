@@ -1,7 +1,7 @@
 
 # Scala.js typings for next
 
-Typings are for version 9.4.2
+Typings are for version 9.4.4
 
 ## Library description:
 The React Framework

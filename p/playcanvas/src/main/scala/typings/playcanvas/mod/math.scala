@@ -62,6 +62,12 @@ object math extends js.Object {
     */
   def clamp(value: Double, min: Double, max: Double): Double = js.native
   /**
+    * Converts float number to half float representation.
+    * @param val - The float number.
+    * @returns A 16 bit number representing half float representation as used by GPU.
+    */
+  def float2Half(`val`: Double): Double = js.native
+  /**
     * Convert an 24 bit integer into an array of 3 bytes.
     * @example
     * // Set bytes to [0x11, 0x22, 0x33]

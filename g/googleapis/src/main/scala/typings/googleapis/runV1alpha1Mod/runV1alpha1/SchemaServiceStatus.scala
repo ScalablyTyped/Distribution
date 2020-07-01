@@ -62,7 +62,7 @@ object SchemaServiceStatus {
     domain: String = null,
     latestCreatedRevisionName: String = null,
     latestReadyRevisionName: String = null,
-    observedGeneration: Int | Double = null,
+    observedGeneration: js.UndefOr[Double] = js.undefined,
     traffic: js.Array[SchemaTrafficTarget] = null
   ): SchemaServiceStatus = {
     val __obj = js.Dynamic.literal()
@@ -71,7 +71,7 @@ object SchemaServiceStatus {
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (latestCreatedRevisionName != null) __obj.updateDynamic("latestCreatedRevisionName")(latestCreatedRevisionName.asInstanceOf[js.Any])
     if (latestReadyRevisionName != null) __obj.updateDynamic("latestReadyRevisionName")(latestReadyRevisionName.asInstanceOf[js.Any])
-    if (observedGeneration != null) __obj.updateDynamic("observedGeneration")(observedGeneration.asInstanceOf[js.Any])
+    if (!js.isUndefined(observedGeneration)) __obj.updateDynamic("observedGeneration")(observedGeneration.get.asInstanceOf[js.Any])
     if (traffic != null) __obj.updateDynamic("traffic")(traffic.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaServiceStatus]
   }

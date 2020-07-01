@@ -70,7 +70,7 @@ object ParamsResourceProjectsJobsMessagesList {
     location: String = null,
     minimumImportance: String = null,
     oauth_token: String = null,
-    pageSize: Int | Double = null,
+    pageSize: js.UndefOr[Double] = js.undefined,
     pageToken: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
     projectId: String = null,
@@ -92,9 +92,9 @@ object ParamsResourceProjectsJobsMessagesList {
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (minimumImportance != null) __obj.updateDynamic("minimumImportance")(minimumImportance.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])

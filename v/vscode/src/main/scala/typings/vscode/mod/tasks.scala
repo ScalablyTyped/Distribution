@@ -16,6 +16,6 @@ object tasks extends js.Object {
   def executeTask(task: Task): Thenable[TaskExecution] = js.native
   def fetchTasks(): Thenable[js.Array[Task]] = js.native
   def fetchTasks(filter: TaskFilter): Thenable[js.Array[Task]] = js.native
-  def registerTaskProvider(`type`: String, provider: TaskProvider): Disposable = js.native
+  def registerTaskProvider(`type`: String, provider: TaskProvider[Task]): Disposable = js.native
 }
 

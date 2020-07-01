@@ -1,7 +1,7 @@
 
 # Scala.js typings for webidl-conversions
 
-Typings are for version 6.0
+Typings are for version 6.1
 
 ## Library description:
 Implements the WebIDL algorithms for converting to and from JavaScript values

@@ -17,7 +17,7 @@ trait HydratedNamespaceMetadata[C /* <: ICommand[C, N, M, I, O] */, N /* <: INam
 
 object HydratedNamespaceMetadata {
   @scala.inline
-  def apply[C, N, M, I, O](
+  def apply[/* <: typings.ionicCliFramework.definitionsMod.ICommand[C, N, M, I, O] */ C, /* <: typings.ionicCliFramework.definitionsMod.INamespace[C, N, M, I, O] */ N, /* <: typings.ionicCliFramework.definitionsMod.CommandMetadata[I, O] */ M, /* <: typings.ionicCliFramework.definitionsMod.CommandMetadataInput */ I, /* <: typings.ionicCliFramework.definitionsMod.CommandMetadataOption */ O](
     aliases: js.Array[String],
     description: String,
     footnotes: js.Array[Footnote],

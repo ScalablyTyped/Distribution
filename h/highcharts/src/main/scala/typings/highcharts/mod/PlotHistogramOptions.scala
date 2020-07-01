@@ -97,6 +97,12 @@ trait PlotHistogramOptions extends js.Object {
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   /**
+    * (Highcharts, Highstock, Gantt) When `true`, the columns will center in
+    * the category, ignoring null or missing points. When `false`, space will
+    * be reserved for null or missing points.
+    */
+  var centerInCategory: js.UndefOr[Boolean] = js.undefined
+  /**
     * (Highcharts) An additional class name to apply to the series' graphical
     * elements. This option does not replace default class names of the
     * graphical element.
@@ -614,6 +620,7 @@ object PlotHistogramOptions {
     borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderRadius: js.UndefOr[Double] = js.undefined,
     borderWidth: js.UndefOr[Double] = js.undefined,
+    centerInCategory: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
     color: ColorString | GradientColorObject | PatternObject = null,
@@ -693,6 +700,7 @@ object PlotHistogramOptions {
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (!js.isUndefined(borderRadius)) __obj.updateDynamic("borderRadius")(borderRadius.get.asInstanceOf[js.Any])
     if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(centerInCategory)) __obj.updateDynamic("centerInCategory")(centerInCategory.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])

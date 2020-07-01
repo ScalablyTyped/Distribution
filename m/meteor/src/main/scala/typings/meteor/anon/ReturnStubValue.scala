@@ -23,7 +23,7 @@ trait ReturnStubValue[Result /* <: EJSONable | (js.Array[EJSONable | EJSONablePr
 
 object ReturnStubValue {
   @scala.inline
-  def apply[Result](
+  def apply[/* <: typings.meteor.EJSONable | (js.Array[typings.meteor.EJSONable | typings.meteor.EJSONableProperty]) | typings.meteor.EJSONableProperty */ Result](
     onResultReceived: (/* error */ js.UndefOr[globalError | typings.meteor.Meteor.Error], /* result */ js.UndefOr[Result]) => Unit = null,
     returnStubValue: js.UndefOr[Boolean] = js.undefined,
     throwStubExceptions: js.UndefOr[Boolean] = js.undefined,

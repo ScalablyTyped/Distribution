@@ -58,7 +58,7 @@ object SchemaAchievementConfiguration {
     initialState: String = null,
     kind: String = null,
     published: SchemaAchievementConfigurationDetail = null,
-    stepsToUnlock: Int | Double = null,
+    stepsToUnlock: js.UndefOr[Double] = js.undefined,
     token: String = null
   ): SchemaAchievementConfiguration = {
     val __obj = js.Dynamic.literal()
@@ -68,7 +68,7 @@ object SchemaAchievementConfiguration {
     if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (published != null) __obj.updateDynamic("published")(published.asInstanceOf[js.Any])
-    if (stepsToUnlock != null) __obj.updateDynamic("stepsToUnlock")(stepsToUnlock.asInstanceOf[js.Any])
+    if (!js.isUndefined(stepsToUnlock)) __obj.updateDynamic("stepsToUnlock")(stepsToUnlock.get.asInstanceOf[js.Any])
     if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAchievementConfiguration]
   }

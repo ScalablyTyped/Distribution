@@ -31,11 +31,15 @@ trait SchemaSourceLocation extends js.Object {
 
 object SchemaSourceLocation {
   @scala.inline
-  def apply(filePath: String = null, functionName: String = null, lineNumber: Int | Double = null): SchemaSourceLocation = {
+  def apply(
+    filePath: String = null,
+    functionName: String = null,
+    lineNumber: js.UndefOr[Double] = js.undefined
+  ): SchemaSourceLocation = {
     val __obj = js.Dynamic.literal()
     if (filePath != null) __obj.updateDynamic("filePath")(filePath.asInstanceOf[js.Any])
     if (functionName != null) __obj.updateDynamic("functionName")(functionName.asInstanceOf[js.Any])
-    if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineNumber)) __obj.updateDynamic("lineNumber")(lineNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSourceLocation]
   }
 }

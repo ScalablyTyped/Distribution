@@ -45,12 +45,6 @@ trait MaskSystem extends System {
     */
   val maskDataPool: js.Array[MaskData] = js.native
   /**
-    * Target to mask
-    * @member {PIXI.DisplayObject} PIXI.systems.MaskSystem#scissorRenderTarget
-    * @readonly
-    */
-  val scissorRenderTarget: DisplayObject = js.native
-  /**
     * Sets type of MaskData based on its maskObject
     * @param {PIXI.MaskData} maskData
     */

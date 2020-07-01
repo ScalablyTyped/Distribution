@@ -112,31 +112,31 @@ object SchemaBackend {
   @scala.inline
   def apply(
     balancingMode: String = null,
-    capacityScaler: Int | Double = null,
+    capacityScaler: js.UndefOr[Double] = js.undefined,
     description: String = null,
     failover: js.UndefOr[Boolean] = js.undefined,
     group: String = null,
-    maxConnections: Int | Double = null,
-    maxConnectionsPerEndpoint: Int | Double = null,
-    maxConnectionsPerInstance: Int | Double = null,
-    maxRate: Int | Double = null,
-    maxRatePerEndpoint: Int | Double = null,
-    maxRatePerInstance: Int | Double = null,
-    maxUtilization: Int | Double = null
+    maxConnections: js.UndefOr[Double] = js.undefined,
+    maxConnectionsPerEndpoint: js.UndefOr[Double] = js.undefined,
+    maxConnectionsPerInstance: js.UndefOr[Double] = js.undefined,
+    maxRate: js.UndefOr[Double] = js.undefined,
+    maxRatePerEndpoint: js.UndefOr[Double] = js.undefined,
+    maxRatePerInstance: js.UndefOr[Double] = js.undefined,
+    maxUtilization: js.UndefOr[Double] = js.undefined
   ): SchemaBackend = {
     val __obj = js.Dynamic.literal()
     if (balancingMode != null) __obj.updateDynamic("balancingMode")(balancingMode.asInstanceOf[js.Any])
-    if (capacityScaler != null) __obj.updateDynamic("capacityScaler")(capacityScaler.asInstanceOf[js.Any])
+    if (!js.isUndefined(capacityScaler)) __obj.updateDynamic("capacityScaler")(capacityScaler.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(failover)) __obj.updateDynamic("failover")(failover.asInstanceOf[js.Any])
+    if (!js.isUndefined(failover)) __obj.updateDynamic("failover")(failover.get.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (maxConnections != null) __obj.updateDynamic("maxConnections")(maxConnections.asInstanceOf[js.Any])
-    if (maxConnectionsPerEndpoint != null) __obj.updateDynamic("maxConnectionsPerEndpoint")(maxConnectionsPerEndpoint.asInstanceOf[js.Any])
-    if (maxConnectionsPerInstance != null) __obj.updateDynamic("maxConnectionsPerInstance")(maxConnectionsPerInstance.asInstanceOf[js.Any])
-    if (maxRate != null) __obj.updateDynamic("maxRate")(maxRate.asInstanceOf[js.Any])
-    if (maxRatePerEndpoint != null) __obj.updateDynamic("maxRatePerEndpoint")(maxRatePerEndpoint.asInstanceOf[js.Any])
-    if (maxRatePerInstance != null) __obj.updateDynamic("maxRatePerInstance")(maxRatePerInstance.asInstanceOf[js.Any])
-    if (maxUtilization != null) __obj.updateDynamic("maxUtilization")(maxUtilization.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxConnections)) __obj.updateDynamic("maxConnections")(maxConnections.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxConnectionsPerEndpoint)) __obj.updateDynamic("maxConnectionsPerEndpoint")(maxConnectionsPerEndpoint.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxConnectionsPerInstance)) __obj.updateDynamic("maxConnectionsPerInstance")(maxConnectionsPerInstance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRate)) __obj.updateDynamic("maxRate")(maxRate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRatePerEndpoint)) __obj.updateDynamic("maxRatePerEndpoint")(maxRatePerEndpoint.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRatePerInstance)) __obj.updateDynamic("maxRatePerInstance")(maxRatePerInstance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxUtilization)) __obj.updateDynamic("maxUtilization")(maxUtilization.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBackend]
   }
 }

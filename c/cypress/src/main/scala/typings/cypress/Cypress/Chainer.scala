@@ -55,8 +55,10 @@ import typings.cypress.cypressStrings.eq
 import typings.cypress.cypressStrings.eql
 import typings.cypress.cypressStrings.equal
 import typings.cypress.cypressStrings.exist
+import typings.cypress.cypressStrings.haveDotallDotkey
 import typings.cypress.cypressStrings.haveDotallDotkeys
 import typings.cypress.cypressStrings.haveDotalwaysDotthrown
+import typings.cypress.cypressStrings.haveDotanyDotkey
 import typings.cypress.cypressStrings.haveDotanyDotkeys
 import typings.cypress.cypressStrings.haveDotattr
 import typings.cypress.cypressStrings.haveDotcallCount
@@ -727,6 +729,14 @@ trait Chainer[Subject] extends js.Object {
     */
   def apply(chainer: haveDotallDotkeys, value: String*): Chainable[Subject] = js.native
   /**
+    * Causes all `.key` assertions that follow in the chain to require that the target have all of the given keys. This is the opposite of `.any`, which only requires that the target have at least one of the given keys.
+    * @example
+    *    cy.wrap({ a: 1, b: 2 }).should('have.all.key', 'a', 'b')
+    * @see http://chaijs.com/api/bdd/#method_all
+    * @see https://on.cypress.io/assertions
+    */
+  def apply(chainer: haveDotallDotkey, value: String*): Chainable[Subject] = js.native
+  /**
     * Assert spy always threw an exception.
     * @see http://sinonjs.org/releases/v4.1.3/spies/#spyalwaysthrew
     * @see https://on.cypress.io/assertions
@@ -746,6 +756,14 @@ trait Chainer[Subject] extends js.Object {
     * @see https://on.cypress.io/assertions
     */
   def apply(chainer: haveDotanyDotkeys, value: String*): Chainable[Subject] = js.native
+  /**
+    * Causes all `.key` assertions that follow in the chain to only require that the target have at least one of the given keys. This is the opposite of `.all`, which requires that the target have all of the given keys.
+    * @example
+    *    cy.wrap({ a: 1, b: 2 }).should('have.any.key', 'a')
+    * @see http://chaijs.com/api/bdd/#method_any
+    * @see https://on.cypress.io/assertions
+    */
+  def apply(chainer: haveDotanyDotkey, value: String*): Chainable[Subject] = js.native
   /**
     * Assert that the first element of the selection has the given attribute, using `.attr()`. Optionally, assert a particular value as well. The return value is available for chaining.
     * @example

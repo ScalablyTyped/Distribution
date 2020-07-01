@@ -18,7 +18,7 @@ trait APIBaseContract[PROMISE_RETURN, CALLBACK_RETURN, PARAM /* <: IAPIParam[_] 
 
 object APIBaseContract {
   @scala.inline
-  def apply[PROMISE_RETURN, CALLBACK_RETURN, PARAM, CONTEXT](
+  def apply[PROMISE_RETURN, CALLBACK_RETURN, /* <: typings.minappEnv.IAPIParam[_] */ PARAM, CONTEXT](
     getCallbackReturn: (PARAM, CONTEXT) => CALLBACK_RETURN,
     getContext: PARAM => CONTEXT,
     getFinalParam: (PARAM, CONTEXT) => js.Any,

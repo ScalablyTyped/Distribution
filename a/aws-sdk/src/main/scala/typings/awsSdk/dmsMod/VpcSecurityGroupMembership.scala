@@ -11,7 +11,7 @@ trait VpcSecurityGroupMembership extends js.Object {
     */
   var Status: js.UndefOr[String] = js.native
   /**
-    * The VPC security group Id.
+    * The VPC security group ID.
     */
   var VpcSecurityGroupId: js.UndefOr[String] = js.native
 }

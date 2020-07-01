@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object usePickerInputMod extends js.Object {
   def default(
-    hasOpenIsClickOutsideTriggerOpenForwardKeyDownBlurToCancelOnSubmitOnCancelOnFocusOnBlur: BlurToCancel
+    hasOpenValueIsClickOutsideTriggerOpenForwardKeyDownBlurToCancelOnSubmitOnCancelOnFocusOnBlur: BlurToCancel
   ): js.Tuple2[DOMAttributes[HTMLInputElement], Focused] = js.native
 }
 

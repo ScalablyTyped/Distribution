@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListMemberAccountsResult extends js.Object {
   /**
-    * A list of the Amazon Macie member accounts returned by the action. The current master account is also included in this list. 
+    * A list of the Amazon Macie Classic member accounts returned by the action. The current master account is also included in this list. 
     */
   var memberAccounts: js.UndefOr[MemberAccounts] = js.native
   /**

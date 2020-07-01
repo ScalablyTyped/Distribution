@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-calendar
 
-Typings are for version 3.0
+Typings are for version 3.1
 
 ## Library description:
 Ultimate calendar for your React app.

@@ -2,14 +2,14 @@ package typings.next.loadComponentsMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.next.anon.Paths
-import typings.next.anon.Props
-import typings.next.anon.PropsP
 import typings.next.getPageFilesMod.BuildManifest
 import typings.next.mod.GetServerSideProps
 import typings.next.mod.GetServerSidePropsContext
+import typings.next.mod.GetServerSidePropsResult
 import typings.next.mod.GetStaticPaths
 import typings.next.mod.GetStaticProps
 import typings.next.mod.GetStaticPropsContext
+import typings.next.mod.GetStaticPropsResult
 import typings.next.mod.PageConfig
 import typings.next.utilsMod.AppType
 import typings.next.utilsMod.DocumentType
@@ -39,9 +39,9 @@ object LoadComponentsReturnType {
     Document: DocumentType,
     buildManifest: BuildManifest,
     reactLoadableManifest: ReactLoadableManifest,
-    getServerSideProps: /* context */ GetServerSidePropsContext[ParsedUrlQuery] => js.Promise[PropsP[StringDictionary[_]]] = null,
+    getServerSideProps: /* context */ GetServerSidePropsContext[ParsedUrlQuery] => js.Promise[GetServerSidePropsResult[StringDictionary[_]]] = null,
     getStaticPaths: () => js.Promise[Paths[ParsedUrlQuery]] = null,
-    getStaticProps: /* ctx */ GetStaticPropsContext[ParsedUrlQuery] => js.Promise[Props[StringDictionary[_]]] = null,
+    getStaticProps: /* context */ GetStaticPropsContext[ParsedUrlQuery] => js.Promise[GetStaticPropsResult[StringDictionary[_]]] = null,
     pageConfig: PageConfig = null
   ): LoadComponentsReturnType = {
     val __obj = js.Dynamic.literal(App = App.asInstanceOf[js.Any], Component = Component.asInstanceOf[js.Any], Document = Document.asInstanceOf[js.Any], buildManifest = buildManifest.asInstanceOf[js.Any], reactLoadableManifest = reactLoadableManifest.asInstanceOf[js.Any])

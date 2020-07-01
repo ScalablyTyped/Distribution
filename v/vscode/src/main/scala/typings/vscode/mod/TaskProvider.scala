@@ -5,14 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait TaskProvider extends js.Object {
+trait TaskProvider[T] extends js.Object {
   /**
     * Provides tasks.
     * @param token A cancellation token.
     * @return an array of tasks
     */
-  def provideTasks(): ProviderResult[js.Array[Task]] = js.native
-  def provideTasks(token: CancellationToken): ProviderResult[js.Array[Task]] = js.native
+  def provideTasks(): ProviderResult[js.Array[T]] = js.native
+  def provideTasks(token: CancellationToken): ProviderResult[js.Array[T]] = js.native
   /**
     * Resolves a task that has no [`execution`](#Task.execution) set. Tasks are
     * often created from information found in the `tasks.json`-file. Such tasks miss
@@ -26,7 +26,7 @@ trait TaskProvider extends js.Object {
     * @param token A cancellation token.
     * @return The resolved task
     */
-  def resolveTask(task: Task): ProviderResult[Task] = js.native
-  def resolveTask(task: Task, token: CancellationToken): ProviderResult[Task] = js.native
+  def resolveTask(task: T): ProviderResult[T] = js.native
+  def resolveTask(task: T, token: CancellationToken): ProviderResult[T] = js.native
 }
 

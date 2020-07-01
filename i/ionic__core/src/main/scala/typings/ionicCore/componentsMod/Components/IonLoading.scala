@@ -4,8 +4,8 @@ import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
+import typings.ionicCore.sanitizationMod.IonicSafeString
 import typings.ionicCore.spinnerConfigsMod.SpinnerTypes
-import typings.ionicCore.typesMod.IonicSafeString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -72,11 +72,11 @@ trait IonLoading extends js.Object {
   /**
     * Returns a promise that resolves when the loading did dismiss.
     */
-  def onDidDismiss(): js.Promise[OverlayEventDetail[_]] = js.native
+  def onDidDismiss[T](): js.Promise[OverlayEventDetail[T]] = js.native
   /**
     * Returns a promise that resolves when the loading will dismiss.
     */
-  def onWillDismiss(): js.Promise[OverlayEventDetail[_]] = js.native
+  def onWillDismiss[T](): js.Promise[OverlayEventDetail[T]] = js.native
   /**
     * Present the loading overlay after it has been created.
     */

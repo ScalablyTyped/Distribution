@@ -31,7 +31,7 @@ trait MenuItemProps[T /* <: HTMLElement */]
 
 object MenuItemProps {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.std.HTMLElement */ T](
     AllHTMLAttributes: AllHTMLAttributes[T] = null,
     ClassAttributes: ClassAttributes[T] = null,
     tag: /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any = null,

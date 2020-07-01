@@ -17,7 +17,7 @@ trait FlexDirectionProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends 
 
 object FlexDirectionProps {
   @scala.inline
-  def apply[ThemeType](
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](
     flexDirection: js.UndefOr[Null | (ResponsiveValue[FlexDirectionProperty, ThemeType])] = js.undefined
   ): FlexDirectionProps[ThemeType] = {
     val __obj = js.Dynamic.literal()

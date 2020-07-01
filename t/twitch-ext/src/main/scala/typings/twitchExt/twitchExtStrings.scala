@@ -63,7 +63,13 @@ object twitchExtStrings {
   sealed trait hosted_test extends js.Object
   
   @js.native
+  sealed trait hostingInfo extends js.Object
+  
+  @js.native
   sealed trait in_review extends js.Object
+  
+  @js.native
+  sealed trait isBitsEnabled extends js.Object
   
   @js.native
   sealed trait isChatEnabled extends js.Object
@@ -76,6 +82,9 @@ object twitchExtStrings {
   
   @js.native
   sealed trait isPaused extends js.Object
+  
+  @js.native
+  sealed trait isSubscriptionStatusAvailable extends js.Object
   
   @js.native
   sealed trait isTheatreMode extends js.Object
@@ -182,7 +191,11 @@ object twitchExtStrings {
   @scala.inline
   def hosted_test: hosted_test = "hosted_test".asInstanceOf[hosted_test]
   @scala.inline
+  def hostingInfo: hostingInfo = "hostingInfo".asInstanceOf[hostingInfo]
+  @scala.inline
   def in_review: in_review = "in_review".asInstanceOf[in_review]
+  @scala.inline
+  def isBitsEnabled: isBitsEnabled = "isBitsEnabled".asInstanceOf[isBitsEnabled]
   @scala.inline
   def isChatEnabled: isChatEnabled = "isChatEnabled".asInstanceOf[isChatEnabled]
   @scala.inline
@@ -191,6 +204,8 @@ object twitchExtStrings {
   def isMuted: isMuted = "isMuted".asInstanceOf[isMuted]
   @scala.inline
   def isPaused: isPaused = "isPaused".asInstanceOf[isPaused]
+  @scala.inline
+  def isSubscriptionStatusAvailable: isSubscriptionStatusAvailable = "isSubscriptionStatusAvailable".asInstanceOf[isSubscriptionStatusAvailable]
   @scala.inline
   def isTheatreMode: isTheatreMode = "isTheatreMode".asInstanceOf[isTheatreMode]
   @scala.inline

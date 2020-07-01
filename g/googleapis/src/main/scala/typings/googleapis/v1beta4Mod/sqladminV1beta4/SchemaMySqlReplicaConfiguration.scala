@@ -69,7 +69,7 @@ object SchemaMySqlReplicaConfiguration {
     caCertificate: String = null,
     clientCertificate: String = null,
     clientKey: String = null,
-    connectRetryInterval: Int | Double = null,
+    connectRetryInterval: js.UndefOr[Double] = js.undefined,
     dumpFilePath: String = null,
     kind: String = null,
     masterHeartbeatPeriod: String = null,
@@ -82,14 +82,14 @@ object SchemaMySqlReplicaConfiguration {
     if (caCertificate != null) __obj.updateDynamic("caCertificate")(caCertificate.asInstanceOf[js.Any])
     if (clientCertificate != null) __obj.updateDynamic("clientCertificate")(clientCertificate.asInstanceOf[js.Any])
     if (clientKey != null) __obj.updateDynamic("clientKey")(clientKey.asInstanceOf[js.Any])
-    if (connectRetryInterval != null) __obj.updateDynamic("connectRetryInterval")(connectRetryInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectRetryInterval)) __obj.updateDynamic("connectRetryInterval")(connectRetryInterval.get.asInstanceOf[js.Any])
     if (dumpFilePath != null) __obj.updateDynamic("dumpFilePath")(dumpFilePath.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (masterHeartbeatPeriod != null) __obj.updateDynamic("masterHeartbeatPeriod")(masterHeartbeatPeriod.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (sslCipher != null) __obj.updateDynamic("sslCipher")(sslCipher.asInstanceOf[js.Any])
     if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
-    if (!js.isUndefined(verifyServerCertificate)) __obj.updateDynamic("verifyServerCertificate")(verifyServerCertificate.asInstanceOf[js.Any])
+    if (!js.isUndefined(verifyServerCertificate)) __obj.updateDynamic("verifyServerCertificate")(verifyServerCertificate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMySqlReplicaConfiguration]
   }
 }

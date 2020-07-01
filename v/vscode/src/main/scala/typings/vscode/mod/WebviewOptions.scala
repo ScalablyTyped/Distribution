@@ -18,7 +18,7 @@ trait WebviewOptions extends js.Object {
     */
   val enableScripts: js.UndefOr[Boolean] = js.undefined
   /**
-    * Root paths from which the webview can load local (filesystem) resources using the `vscode-resource:` scheme.
+    * Root paths from which the webview can load local (filesystem) resources using uris from `asWebviewUri`
     *
     * Default to the root folders of the current workspace plus the extension's install directory.
     *

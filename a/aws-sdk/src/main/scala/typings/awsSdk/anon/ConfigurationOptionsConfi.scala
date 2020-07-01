@@ -72,6 +72,7 @@ trait ConfigurationOptionsConfi
   var cloudwatch: js.UndefOr[typings.awsSdk.cloudwatchMod.ClientConfiguration] = js.native
   var cloudwatchevents: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.ClientConfiguration] = js.native
   var cloudwatchlogs: js.UndefOr[typings.awsSdk.cloudwatchlogsMod.ClientConfiguration] = js.native
+  var codeartifact: js.UndefOr[typings.awsSdk.codeartifactMod.ClientConfiguration] = js.native
   var codebuild: js.UndefOr[typings.awsSdk.codebuildMod.ClientConfiguration] = js.native
   var codecommit: js.UndefOr[typings.awsSdk.codecommitMod.ClientConfiguration] = js.native
   var codedeploy: js.UndefOr[typings.awsSdk.codedeployMod.ClientConfiguration] = js.native
@@ -179,8 +180,9 @@ trait ConfigurationOptionsConfi
   var groundstation: js.UndefOr[typings.awsSdk.groundstationMod.ClientConfiguration] = js.native
   var guardduty: js.UndefOr[typings.awsSdk.guarddutyMod.ClientConfiguration] = js.native
   var health: js.UndefOr[typings.awsSdk.healthMod.ClientConfiguration] = js.native
+  var honeycode: js.UndefOr[typings.awsSdk.honeycodeMod.ClientConfiguration] = js.native
   /**
-    *  whether to marshal request parameters to the prefix of hostname.
+    * Whether to marshal request parameters to the prefix of hostname.
     */
   var hostPrefixEnabled: js.UndefOr[Boolean] = js.native
   /**
@@ -310,13 +312,13 @@ trait ConfigurationOptionsConfi
     */
   var s3ForcePathStyle: js.UndefOr[Boolean] = js.native
   /**
-    * when region is set to 'us-east-1', whether to send s3 request to global endpoints
+    * When region is set to 'us-east-1', whether to send s3 request to global endpoints
     * or 'us-east-1' regional endpoints. This config is only applicable to S3 client;
     * Defaults to 'legacy'
     */
   var s3UsEast1RegionalEndpoint: js.UndefOr[regional_ | legacy_] = js.native
   /**
-    * whether to override the request region with the region inferred
+    * Whether to override the request region with the region inferred
     * from requested resource's ARN. Only available for S3 buckets
     * Defaults to `true`
     */
@@ -373,7 +375,7 @@ trait ConfigurationOptionsConfi
   var storagegateway: js.UndefOr[typings.awsSdk.storagegatewayMod.ClientConfiguration] = js.native
   var sts: js.UndefOr[typings.awsSdk.stsMod.ClientConfiguration] = js.native
   /**
-    * whether to send sts request to global endpoints or
+    * Whether to send sts request to global endpoints or
     * regional endpoints. 
     */
   var stsRegionalEndpoints: js.UndefOr[legacy_ | regional_] = js.native
@@ -444,6 +446,7 @@ object ConfigurationOptionsConfi {
     cloudwatch: typings.awsSdk.cloudwatchMod.ClientConfiguration = null,
     cloudwatchevents: typings.awsSdk.cloudwatcheventsMod.ClientConfiguration = null,
     cloudwatchlogs: typings.awsSdk.cloudwatchlogsMod.ClientConfiguration = null,
+    codeartifact: typings.awsSdk.codeartifactMod.ClientConfiguration = null,
     codebuild: typings.awsSdk.codebuildMod.ClientConfiguration = null,
     codecommit: typings.awsSdk.codecommitMod.ClientConfiguration = null,
     codedeploy: typings.awsSdk.codedeployMod.ClientConfiguration = null,
@@ -517,6 +520,7 @@ object ConfigurationOptionsConfi {
     groundstation: typings.awsSdk.groundstationMod.ClientConfiguration = null,
     guardduty: typings.awsSdk.guarddutyMod.ClientConfiguration = null,
     health: typings.awsSdk.healthMod.ClientConfiguration = null,
+    honeycode: typings.awsSdk.honeycodeMod.ClientConfiguration = null,
     hostPrefixEnabled: js.UndefOr[Boolean] = js.undefined,
     httpOptions: HTTPOptions = null,
     iam: typings.awsSdk.iamMod.ClientConfiguration = null,
@@ -657,9 +661,7 @@ object ConfigurationOptionsConfi {
     waf: typings.awsSdk.wafMod.ClientConfiguration = null,
     wafregional: typings.awsSdk.wafregionalMod.ClientConfiguration = null,
     wafv2: typings.awsSdk.wafv2Mod.ClientConfiguration = null,
-    workdocs: typings.awsSdk.workdocsMod.ClientConfiguration = null,
-    worklink: typings.awsSdk.worklinkMod.ClientConfiguration = null,
-    workmail: typings.awsSdk.workmailMod.ClientConfiguration = null
+    workdocs: typings.awsSdk.workdocsMod.ClientConfiguration = null
   ): ConfigurationOptionsConfi = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
@@ -700,6 +702,7 @@ object ConfigurationOptionsConfi {
     if (cloudwatch != null) __obj.updateDynamic("cloudwatch")(cloudwatch.asInstanceOf[js.Any])
     if (cloudwatchevents != null) __obj.updateDynamic("cloudwatchevents")(cloudwatchevents.asInstanceOf[js.Any])
     if (cloudwatchlogs != null) __obj.updateDynamic("cloudwatchlogs")(cloudwatchlogs.asInstanceOf[js.Any])
+    if (codeartifact != null) __obj.updateDynamic("codeartifact")(codeartifact.asInstanceOf[js.Any])
     if (codebuild != null) __obj.updateDynamic("codebuild")(codebuild.asInstanceOf[js.Any])
     if (codecommit != null) __obj.updateDynamic("codecommit")(codecommit.asInstanceOf[js.Any])
     if (codedeploy != null) __obj.updateDynamic("codedeploy")(codedeploy.asInstanceOf[js.Any])
@@ -773,6 +776,7 @@ object ConfigurationOptionsConfi {
     if (groundstation != null) __obj.updateDynamic("groundstation")(groundstation.asInstanceOf[js.Any])
     if (guardduty != null) __obj.updateDynamic("guardduty")(guardduty.asInstanceOf[js.Any])
     if (health != null) __obj.updateDynamic("health")(health.asInstanceOf[js.Any])
+    if (honeycode != null) __obj.updateDynamic("honeycode")(honeycode.asInstanceOf[js.Any])
     if (!js.isUndefined(hostPrefixEnabled)) __obj.updateDynamic("hostPrefixEnabled")(hostPrefixEnabled.get.asInstanceOf[js.Any])
     if (httpOptions != null) __obj.updateDynamic("httpOptions")(httpOptions.asInstanceOf[js.Any])
     if (iam != null) __obj.updateDynamic("iam")(iam.asInstanceOf[js.Any])
@@ -914,8 +918,6 @@ object ConfigurationOptionsConfi {
     if (wafregional != null) __obj.updateDynamic("wafregional")(wafregional.asInstanceOf[js.Any])
     if (wafv2 != null) __obj.updateDynamic("wafv2")(wafv2.asInstanceOf[js.Any])
     if (workdocs != null) __obj.updateDynamic("workdocs")(workdocs.asInstanceOf[js.Any])
-    if (worklink != null) __obj.updateDynamic("worklink")(worklink.asInstanceOf[js.Any])
-    if (workmail != null) __obj.updateDynamic("workmail")(workmail.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationOptionsConfi]
   }
 }

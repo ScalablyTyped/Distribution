@@ -11,7 +11,7 @@ trait UseResizeColumnsState[D /* <: js.Object */] extends js.Object {
 
 object UseResizeColumnsState {
   @scala.inline
-  def apply[D](columnResizing: ColumnWidth): UseResizeColumnsState[D] = {
+  def apply[/* <: js.Object */ D](columnResizing: ColumnWidth): UseResizeColumnsState[D] = {
     val __obj = js.Dynamic.literal(columnResizing = columnResizing.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseResizeColumnsState[D]]
   }

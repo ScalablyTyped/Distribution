@@ -67,9 +67,9 @@ object SchemaFhirStore {
     notificationConfig: SchemaNotificationConfig = null
   ): SchemaFhirStore = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableReferentialIntegrity)) __obj.updateDynamic("disableReferentialIntegrity")(disableReferentialIntegrity.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableResourceVersioning)) __obj.updateDynamic("disableResourceVersioning")(disableResourceVersioning.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableUpdateCreate)) __obj.updateDynamic("enableUpdateCreate")(enableUpdateCreate.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableReferentialIntegrity)) __obj.updateDynamic("disableReferentialIntegrity")(disableReferentialIntegrity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableResourceVersioning)) __obj.updateDynamic("disableResourceVersioning")(disableResourceVersioning.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableUpdateCreate)) __obj.updateDynamic("enableUpdateCreate")(enableUpdateCreate.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (notificationConfig != null) __obj.updateDynamic("notificationConfig")(notificationConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFhirStore]

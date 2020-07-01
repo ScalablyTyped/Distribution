@@ -18,7 +18,7 @@ trait Desktop[TAsComponent /* <: ElementType[_] */] extends js.Object {
 
 object Desktop {
   @scala.inline
-  def apply[TAsComponent](
+  def apply[/* <: typings.react.mod.ElementType[_] */ TAsComponent](
     as: TAsComponent = null,
     desktop: ColumnBreakpointOptions = null,
     fullhd: ColumnBreakpointOptions = null,

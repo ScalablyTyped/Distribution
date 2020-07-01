@@ -13,8 +13,6 @@ object promiseMod extends js.Object {
     // Extensions specific to then/promise
     /**
       * Attaches callbacks for the resolution and/or rejection of the PricingPromise, without returning a new promise.
-      * @param onfulfilled The callback to execute when the PricingPromise is resolved.
-      * @param onrejected The callback to execute when the PricingPromise is rejected.
       */
     def done(): T = js.native
     def done(onfulfilled: js.Function1[/* value */ T, _]): T = js.native

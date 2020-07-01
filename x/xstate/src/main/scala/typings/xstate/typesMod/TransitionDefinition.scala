@@ -21,7 +21,7 @@ trait TransitionDefinition[TContext, TEvent /* <: EventObject */] extends Transi
 
 object TransitionDefinition {
   @scala.inline
-  def apply[TContext, TEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     actions: js.Array[ActionObject[TContext, TEvent]],
     eventType: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | typings.xstate.typesMod.ActionTypes.NullEvent | Asterisk,
     source: StateNode[TContext, _, TEvent, _],

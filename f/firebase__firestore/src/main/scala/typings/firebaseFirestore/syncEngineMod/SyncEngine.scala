@@ -3,6 +3,8 @@ package typings.firebaseFirestore.syncEngineMod
 import typings.firebaseFirestore.asyncQueueMod.AsyncQueue
 import typings.firebaseFirestore.collectionsMod.DocumentKeySet_
 import typings.firebaseFirestore.collectionsMod.MaybeDocumentMap_
+import typings.firebaseFirestore.coreTransactionMod.Transaction
+import typings.firebaseFirestore.datastoreMod.Datastore
 import typings.firebaseFirestore.documentKeyMod.DocumentKey
 import typings.firebaseFirestore.errorMod.FirestoreError
 import typings.firebaseFirestore.localStoreMod.LocalStore
@@ -17,7 +19,6 @@ import typings.firebaseFirestore.remoteStoreMod.RemoteStore
 import typings.firebaseFirestore.remoteSyncerMod.RemoteSyncer
 import typings.firebaseFirestore.sharedClientStateMod.SharedClientState
 import typings.firebaseFirestore.sortedMapMod.SortedMap
-import typings.firebaseFirestore.transactionMod.Transaction
 import typings.firebaseFirestore.typesMod.BatchId
 import typings.firebaseFirestore.typesMod.OnlineState
 import typings.firebaseFirestore.typesMod.OnlineStateSource
@@ -37,6 +38,7 @@ class SyncEngine protected () extends RemoteSyncer {
   def this(
     localStore: LocalStore,
     remoteStore: RemoteStore,
+    datastore: Datastore,
     sharedClientState: SharedClientState,
     currentUser: User,
     maxConcurrentLimboResolutions: Double
@@ -53,6 +55,7 @@ class SyncEngine protected () extends RemoteSyncer {
   var activeLimboTargetsByKey: SortedMap[DocumentKey, Double] = js.native
   var addMutationCallback: js.Any = js.native
   var currentUser: js.Any = js.native
+  var datastore: Datastore = js.native
   /**
     * The keys of documents that are in limbo for which we haven't yet started a
     * limbo resolution query.
@@ -123,7 +126,12 @@ class SyncEngine protected () extends RemoteSyncer {
     */
   /* CompleteClass */
   override def getRemoteKeysForTarget(targetId: TargetId): DocumentKeySet_ = js.native
-  def handleCredentialChange(user: User): js.Promise[Unit] = js.native
+  /**
+    * Updates all local state to match the pending mutations for the given user.
+    * May be called repeatedly for the same user.
+    */
+  /* CompleteClass */
+  override def handleCredentialChange(user: User): js.Promise[Unit] = js.native
   /**
     * Registers a view for a previously unknown query and computes its initial
     * snapshot.

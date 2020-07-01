@@ -1,5 +1,6 @@
 package typings.pEvent.mod
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.std.AsyncIterableIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,6 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("p-event", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  var TimeoutError: Instantiable1[js.UndefOr[/* message */ String], TimeoutErrorClass] = js.native
   // TODO: Remove this for the next major release
   var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pEvent */ js.Any = js.native
   def apply[EventName /* <: String | js.Symbol */, EmittedType](emitter: Emitter[EventName, js.Array[EmittedType]], event: String): CancelablePromise[EmittedType] = js.native
@@ -92,7 +94,7 @@ object ^ extends js.Object {
     filter: FilterFunction[js.Array[EmittedType]]
   ): AsyncIterableIterator[EmittedType] = js.native
   /**
-  	@returns An [async iterator](http://2ality.com/2016/10/asynchronous-iteration.html) that lets you asynchronously iterate over events of `event` emitted from `emitter`. The iterator ends when `emitter` emits an event matching any of the events defined in `resolutionEvents`, or rejects if `emitter` emits any of the events defined in the `rejectionEvents` option.
+  	@returns An [async iterator](https://2ality.com/2016/10/asynchronous-iteration.html) that lets you asynchronously iterate over events of `event` emitted from `emitter`. The iterator ends when `emitter` emits an event matching any of the events defined in `resolutionEvents`, or rejects if `emitter` emits any of the events defined in the `rejectionEvents` option.
   	@example
   	```
   	import pEvent = require('p-event');

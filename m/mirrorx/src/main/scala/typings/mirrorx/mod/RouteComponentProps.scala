@@ -20,7 +20,9 @@ trait RouteComponentProps[Params /* <: /* import warning: importer.ImportType#ap
 
 object RouteComponentProps {
   @scala.inline
-  def apply[Params](
+  def apply[/* <: / * import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    * / typings.mirrorx.mirrorxStrings.RouteComponentProps with org.scalablytyped.runtime.TopLevel[js.Any] */ Params](
     history: History[LocationState],
     location: Location[LocationState],
     `match`: `match`[Params],

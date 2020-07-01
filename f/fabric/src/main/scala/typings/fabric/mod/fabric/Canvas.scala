@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("fabric", "fabric.Canvas")
 @js.native
-class Canvas protected ()
+class Canvas ()
   extends typings.fabric.fabricImplMod.Canvas {
   def this(element: String) = this()
   /**
@@ -22,6 +22,7 @@ class Canvas protected ()
     */
   def this(element: HTMLCanvasElement) = this()
   def this(element: String, options: ICanvasOptions) = this()
+  def this(element: Null, options: ICanvasOptions) = this()
   def this(element: HTMLCanvasElement, options: ICanvasOptions) = this()
 }
 

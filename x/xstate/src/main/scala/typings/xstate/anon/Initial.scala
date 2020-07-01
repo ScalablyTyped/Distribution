@@ -14,7 +14,7 @@ trait Initial[TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */]
 
 object Initial {
   @scala.inline
-  def apply[TStateSchema, TEvent](
+  def apply[/* <: typings.xstate.typesMod.StateSchema[_] */ TStateSchema, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     initial: /* import warning: importer.ImportType#apply Failed type conversion: keyof TStateSchema['states'] */ js.Any,
     states: StatesConfig[_, TStateSchema, TEvent]
   ): Initial[TStateSchema, TEvent] = {

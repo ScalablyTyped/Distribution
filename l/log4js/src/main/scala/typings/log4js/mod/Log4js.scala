@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Log4js extends js.Object {
-  	// express.Handler;
+    // express.Handler;
   var levels: Levels_ = js.native
   def addLayout(
     name: String,

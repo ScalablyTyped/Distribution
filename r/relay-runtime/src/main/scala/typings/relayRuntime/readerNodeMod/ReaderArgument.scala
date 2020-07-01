@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 /* Rewritten from type alias, can be one of: 
   - typings.relayRuntime.readerNodeMod.ReaderLiteral
   - typings.relayRuntime.readerNodeMod.ReaderVariable
+  - typings.relayRuntime.readerNodeMod.ReaderObjectValue
+  - typings.relayRuntime.readerNodeMod.ReaderListValue
 */
 trait ReaderArgument extends js.Object
 
@@ -20,6 +22,16 @@ object ReaderArgument {
   def ReaderVariable(kind: String, name: String, variableName: String, `type`: js.UndefOr[Null | String] = js.undefined): ReaderArgument = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], variableName = variableName.asInstanceOf[js.Any])
     if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReaderArgument]
+  }
+  @scala.inline
+  def ReaderObjectValue(fields: js.Array[ReaderArgument], kind: String, name: String): ReaderArgument = {
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReaderArgument]
+  }
+  @scala.inline
+  def ReaderListValue(items: js.Array[ReaderArgument | Null], kind: String, name: String): ReaderArgument = {
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaderArgument]
   }
 }

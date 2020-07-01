@@ -63,7 +63,7 @@ object SchemaOrgPolicy {
     listPolicy: SchemaListPolicy = null,
     restoreDefault: SchemaRestoreDefault = null,
     updateTime: String = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): SchemaOrgPolicy = {
     val __obj = js.Dynamic.literal()
     if (booleanPolicy != null) __obj.updateDynamic("booleanPolicy")(booleanPolicy.asInstanceOf[js.Any])
@@ -72,7 +72,7 @@ object SchemaOrgPolicy {
     if (listPolicy != null) __obj.updateDynamic("listPolicy")(listPolicy.asInstanceOf[js.Any])
     if (restoreDefault != null) __obj.updateDynamic("restoreDefault")(restoreDefault.asInstanceOf[js.Any])
     if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOrgPolicy]
   }
 }

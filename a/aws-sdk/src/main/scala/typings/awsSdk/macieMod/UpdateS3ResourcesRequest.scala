@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateS3ResourcesRequest extends js.Object {
   /**
-    * The AWS ID of the Amazon Macie member account whose S3 resources' classification types you want to update. 
+    * The AWS ID of the Amazon Macie Classic member account whose S3 resources' classification types you want to update. 
     */
   var memberAccountId: js.UndefOr[AWSAccountId] = js.native
   /**

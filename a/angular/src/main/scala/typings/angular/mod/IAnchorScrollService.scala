@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 ///////////////////////////////////////////////////////////////////////////
 // AnchorScrollService
-// see http://docs.angularjs.org/api/ng.$anchorScroll
+// see http://docs.angularjs.org/api/ng/service/$anchorScroll
 ///////////////////////////////////////////////////////////////////////////
 @js.native
 trait IAnchorScrollService extends js.Object {

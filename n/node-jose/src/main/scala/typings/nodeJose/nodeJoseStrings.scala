@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object nodeJoseStrings {
   @js.native
+  sealed trait DEF extends js.Object
+  
+  @js.native
   sealed trait JWE extends js.Object
   
   @js.native
@@ -23,6 +26,9 @@ object nodeJoseStrings {
   
   @js.native
   sealed trait flattened extends js.Object
+  
+  @js.native
+  sealed trait general extends js.Object
   
   @js.native
   sealed trait json extends js.Object
@@ -52,6 +58,8 @@ object nodeJoseStrings {
   sealed trait x509 extends js.Object
   
   @scala.inline
+  def DEF: DEF = "DEF".asInstanceOf[DEF]
+  @scala.inline
   def JWE: JWE = "JWE".asInstanceOf[JWE]
   @scala.inline
   def JWS: JWS = "JWS".asInstanceOf[JWS]
@@ -63,6 +71,8 @@ object nodeJoseStrings {
   def enc: enc = "enc".asInstanceOf[enc]
   @scala.inline
   def flattened: flattened = "flattened".asInstanceOf[flattened]
+  @scala.inline
+  def general: general = "general".asInstanceOf[general]
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   @scala.inline

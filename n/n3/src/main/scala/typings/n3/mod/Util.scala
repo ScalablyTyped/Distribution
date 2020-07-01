@@ -23,14 +23,14 @@ object Util extends js.Object {
     iri: String,
     factory: typings.rdfJs.mod.DataFactory[typings.rdfJs.mod.Quad, typings.rdfJs.mod.Quad]
   ): PrefixedToIri = js.native
-  def prefix(iri: typings.rdfJs.mod.NamedNode): PrefixedToIri = js.native
+  def prefix(iri: typings.rdfJs.mod.NamedNode[String]): PrefixedToIri = js.native
   def prefix(
-    iri: typings.rdfJs.mod.NamedNode,
+    iri: typings.rdfJs.mod.NamedNode[String],
     factory: typings.rdfJs.mod.DataFactory[typings.rdfJs.mod.Quad, typings.rdfJs.mod.Quad]
   ): PrefixedToIri = js.native
-  def prefixes(defaultPrefixes: Prefixes[typings.rdfJs.mod.NamedNode | String]): js.Function1[/* prefix */ String, PrefixedToIri] = js.native
+  def prefixes(defaultPrefixes: Prefixes[typings.rdfJs.mod.NamedNode[String] | String]): js.Function1[/* prefix */ String, PrefixedToIri] = js.native
   def prefixes(
-    defaultPrefixes: Prefixes[typings.rdfJs.mod.NamedNode | String],
+    defaultPrefixes: Prefixes[typings.rdfJs.mod.NamedNode[String] | String],
     factory: typings.rdfJs.mod.DataFactory[typings.rdfJs.mod.Quad, typings.rdfJs.mod.Quad]
   ): js.Function1[/* prefix */ String, PrefixedToIri] = js.native
 }

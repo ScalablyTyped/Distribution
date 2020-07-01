@@ -49,7 +49,7 @@ object SchemaAccount {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(premium)) __obj.updateDynamic("premium")(premium.asInstanceOf[js.Any])
+    if (!js.isUndefined(premium)) __obj.updateDynamic("premium")(premium.get.asInstanceOf[js.Any])
     if (subAccounts != null) __obj.updateDynamic("subAccounts")(subAccounts.asInstanceOf[js.Any])
     if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAccount]

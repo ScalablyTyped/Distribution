@@ -27,7 +27,7 @@ object SchemaDeleteJobsByFilterRequest {
   @scala.inline
   def apply(disableFastProcess: js.UndefOr[Boolean] = js.undefined, filter: SchemaFilter = null): SchemaDeleteJobsByFilterRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableFastProcess)) __obj.updateDynamic("disableFastProcess")(disableFastProcess.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableFastProcess)) __obj.updateDynamic("disableFastProcess")(disableFastProcess.get.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeleteJobsByFilterRequest]
   }

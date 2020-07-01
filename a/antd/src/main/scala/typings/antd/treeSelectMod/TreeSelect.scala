@@ -16,6 +16,8 @@ trait TreeSelect[T]
   ] = js.native
   def blur(): Unit = js.native
   def focus(): Unit = js.native
-  def renderTreeSelect(hasGetPopupContainerGetPrefixClsRenderEmptyDirection: ConfigConsumerProps): Element = js.native
+  def renderTreeSelect(
+    hasGetPopupContainerGetPrefixClsRenderEmptyDirectionVirtualDropdownMatchSelectWidth: ConfigConsumerProps
+  ): Element = js.native
 }
 

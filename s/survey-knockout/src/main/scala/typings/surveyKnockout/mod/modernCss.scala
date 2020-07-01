@@ -1,12 +1,11 @@
 package typings.surveyKnockout.mod
 
-import typings.surveyKnockout.anon.AsCell
 import typings.surveyKnockout.anon.Body
 import typings.surveyKnockout.anon.ButtonPrev
-import typings.surveyKnockout.anon.Cell
 import typings.surveyKnockout.anon.CellTextDisabled
 import typings.surveyKnockout.anon.ClearButtonControls
 import typings.surveyKnockout.anon.Complete
+import typings.surveyKnockout.anon.ContentLeft
 import typings.surveyKnockout.anon.Description
 import typings.surveyKnockout.anon.Disabled
 import typings.surveyKnockout.anon.DisabledLabel
@@ -21,6 +20,7 @@ import typings.surveyKnockout.anon.ItemDisabled
 import typings.surveyKnockout.anon.ItemHover
 import typings.surveyKnockout.anon.ItemInline
 import typings.surveyKnockout.anon.OnError
+import typings.surveyKnockout.anon.Row
 import typings.surveyKnockout.anon.SelectWrapper
 import typings.surveyKnockout.anon.Small
 import scala.scalajs.js
@@ -52,7 +52,7 @@ object modernCss extends js.Object {
   var matrix: CellTextDisabled = js.native
   var matrixdropdown: HeaderCell = js.native
   var matrixdynamic: IconAdd = js.native
-  var multipletext: Cell = js.native
+  var multipletext: Row = js.native
   var navigation: Complete = js.native
   var navigationButton: String = js.native
   var page: Description = js.native
@@ -64,7 +64,7 @@ object modernCss extends js.Object {
   var progressBar: String = js.native
   var progressText: String = js.native
   var progressTextInBar: String = js.native
-  var question: AsCell = js.native
+  var question: ContentLeft = js.native
   var radiogroup: ItemHover = js.native
   var rating: Disabled = js.native
   var root: String = js.native

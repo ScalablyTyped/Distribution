@@ -27,11 +27,11 @@ trait SchemaGamesAchievementIncrement extends js.Object {
 
 object SchemaGamesAchievementIncrement {
   @scala.inline
-  def apply(kind: String = null, requestId: String = null, steps: Int | Double = null): SchemaGamesAchievementIncrement = {
+  def apply(kind: String = null, requestId: String = null, steps: js.UndefOr[Double] = js.undefined): SchemaGamesAchievementIncrement = {
     val __obj = js.Dynamic.literal()
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
-    if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
+    if (!js.isUndefined(steps)) __obj.updateDynamic("steps")(steps.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGamesAchievementIncrement]
   }
 }

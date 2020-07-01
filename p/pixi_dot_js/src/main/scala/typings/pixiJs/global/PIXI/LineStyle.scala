@@ -31,21 +31,45 @@ class LineStyle ()
   /* CompleteClass */
   override var alpha: Double = js.native
   /**
+    * Line cap style.
+    *
+    * @member {PIXI.LINE_CAP} PIXI.LineStyle#cap
+    * @default PIXI.LINE_CAP.BUTT
+    */
+  /* CompleteClass */
+  override var cap: typings.pixiJs.PIXI.LINE_CAP = js.native
+  /**
     * The hex color value used when coloring the Graphics object.
     *
     * @member {number} PIXI.FillStyle#color
-    * @default 1
+    * @default 0xFFFFFF
     */
   /* CompleteClass */
   override var color: Double = js.native
   /**
-    * The transform aplpied to the texture.
+    * Line join style.
     *
-    * @member {string} PIXI.FillStyle#matrix
-    * @default 0
+    * @member {PIXI.LINE_JOIN} PIXI.LineStyle#join
+    * @default PIXI.LINE_JOIN.MITER
     */
   /* CompleteClass */
-  override var matrix: String = js.native
+  override var join: typings.pixiJs.PIXI.LINE_JOIN = js.native
+  /**
+    * The transform aplpied to the texture.
+    *
+    * @member {PIXI.Matrix} PIXI.FillStyle#matrix
+    * @default null
+    */
+  /* CompleteClass */
+  override var matrix: typings.pixiJs.PIXI.Matrix = js.native
+  /**
+    * Miter limit.
+    *
+    * @member {number} PIXI.LineStyle#miterLimit
+    * @default 10
+    */
+  /* CompleteClass */
+  override var miterLimit: Double = js.native
   /**
     * If true the lines will be draw using LINES instead of TRIANGLE_STRIP
     *
@@ -57,11 +81,11 @@ class LineStyle ()
   /**
     * The texture to be used for the fill.
     *
-    * @member {string} PIXI.FillStyle#texture
+    * @member {PIXI.Texture} PIXI.FillStyle#texture
     * @default 0
     */
   /* CompleteClass */
-  override var texture: String = js.native
+  override var texture: typings.pixiJs.PIXI.Texture = js.native
   /**
     * If the current fill is visible.
     *

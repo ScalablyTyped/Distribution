@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@wordpress/html-entities" : "2.7.0"
+      "@wordpress/html-entities" : "2.8.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@wordpress/html-entities" : "2.7.0"
+      "@wordpress/html-entities" : "2.8.0"
     }
   ],
   "compile-devDependencies" : [

@@ -42,7 +42,7 @@ trait IKernelUser[T /* <: Widget */] extends IMenuExtender[T] {
 
 object IKernelUser {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.luminoWidgets.mod.Widget */ T](
     tracker: IWidgetTracker[T],
     changeKernel: /* widget */ T => js.Promise[Unit] = null,
     interruptKernel: /* widget */ T => js.Promise[Unit] = null,

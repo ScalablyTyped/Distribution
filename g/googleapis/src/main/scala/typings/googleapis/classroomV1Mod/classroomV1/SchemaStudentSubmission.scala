@@ -99,14 +99,14 @@ object SchemaStudentSubmission {
   @scala.inline
   def apply(
     alternateLink: String = null,
-    assignedGrade: Int | Double = null,
+    assignedGrade: js.UndefOr[Double] = js.undefined,
     assignmentSubmission: SchemaAssignmentSubmission = null,
     associatedWithDeveloper: js.UndefOr[Boolean] = js.undefined,
     courseId: String = null,
     courseWorkId: String = null,
     courseWorkType: String = null,
     creationTime: String = null,
-    draftGrade: Int | Double = null,
+    draftGrade: js.UndefOr[Double] = js.undefined,
     id: String = null,
     late: js.UndefOr[Boolean] = js.undefined,
     multipleChoiceSubmission: SchemaMultipleChoiceSubmission = null,
@@ -118,16 +118,16 @@ object SchemaStudentSubmission {
   ): SchemaStudentSubmission = {
     val __obj = js.Dynamic.literal()
     if (alternateLink != null) __obj.updateDynamic("alternateLink")(alternateLink.asInstanceOf[js.Any])
-    if (assignedGrade != null) __obj.updateDynamic("assignedGrade")(assignedGrade.asInstanceOf[js.Any])
+    if (!js.isUndefined(assignedGrade)) __obj.updateDynamic("assignedGrade")(assignedGrade.get.asInstanceOf[js.Any])
     if (assignmentSubmission != null) __obj.updateDynamic("assignmentSubmission")(assignmentSubmission.asInstanceOf[js.Any])
-    if (!js.isUndefined(associatedWithDeveloper)) __obj.updateDynamic("associatedWithDeveloper")(associatedWithDeveloper.asInstanceOf[js.Any])
+    if (!js.isUndefined(associatedWithDeveloper)) __obj.updateDynamic("associatedWithDeveloper")(associatedWithDeveloper.get.asInstanceOf[js.Any])
     if (courseId != null) __obj.updateDynamic("courseId")(courseId.asInstanceOf[js.Any])
     if (courseWorkId != null) __obj.updateDynamic("courseWorkId")(courseWorkId.asInstanceOf[js.Any])
     if (courseWorkType != null) __obj.updateDynamic("courseWorkType")(courseWorkType.asInstanceOf[js.Any])
     if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (draftGrade != null) __obj.updateDynamic("draftGrade")(draftGrade.asInstanceOf[js.Any])
+    if (!js.isUndefined(draftGrade)) __obj.updateDynamic("draftGrade")(draftGrade.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(late)) __obj.updateDynamic("late")(late.asInstanceOf[js.Any])
+    if (!js.isUndefined(late)) __obj.updateDynamic("late")(late.get.asInstanceOf[js.Any])
     if (multipleChoiceSubmission != null) __obj.updateDynamic("multipleChoiceSubmission")(multipleChoiceSubmission.asInstanceOf[js.Any])
     if (shortAnswerSubmission != null) __obj.updateDynamic("shortAnswerSubmission")(shortAnswerSubmission.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])

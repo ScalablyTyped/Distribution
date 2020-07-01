@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * An instance of pc.Morph. Contains weights to assign to every pc.MorphTarget, holds morphed buffer and associated data.
+  * An instance of pc.Morph. Contains weights to assign to every pc.MorphTarget, manages selection of active morph targets.
   * @param morph - The pc.Morph to instance.
   */
 @JSImport("playcanvas", "MorphInstance")
@@ -33,16 +33,9 @@ class MorphInstance protected ()
   /* CompleteClass */
   override def setWeight(index: Double, weight: Double): Unit = js.native
   /**
-    * Performs morphing. Called automatically by renderer.
-    * @param mesh - Base mesh for the morph.
+    * Selects active morph targets and prepares morph for rendering. Called automatically by renderer.
     */
   /* CompleteClass */
-  override def update(mesh: typings.playcanvas.pc.Mesh): Unit = js.native
-  /**
-    * Calculates AABB for this morph instance. Called automatically by renderer.
-    * @param mesh - Base mesh for the morph.
-    */
-  /* CompleteClass */
-  override def updateBounds(mesh: typings.playcanvas.pc.Mesh): Unit = js.native
+  override def update(): Unit = js.native
 }
 

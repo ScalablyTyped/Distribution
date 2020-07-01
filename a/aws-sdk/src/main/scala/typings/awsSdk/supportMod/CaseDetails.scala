@@ -51,7 +51,7 @@ trait CaseDetails extends js.Object {
     */
   var submittedBy: js.UndefOr[SubmittedBy] = js.native
   /**
-    * The time that the case was case created in the AWS Support Center.
+    * The time that the case was created in the AWS Support Center.
     */
   var timeCreated: js.UndefOr[TimeCreated] = js.native
 }

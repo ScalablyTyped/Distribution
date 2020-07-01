@@ -43,9 +43,9 @@ object SchemaCheckRequest {
   ): SchemaCheckRequest = {
     val __obj = js.Dynamic.literal()
     if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestProjectSettings)) __obj.updateDynamic("requestProjectSettings")(requestProjectSettings.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestProjectSettings)) __obj.updateDynamic("requestProjectSettings")(requestProjectSettings.get.asInstanceOf[js.Any])
     if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipActivationCheck)) __obj.updateDynamic("skipActivationCheck")(skipActivationCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipActivationCheck)) __obj.updateDynamic("skipActivationCheck")(skipActivationCheck.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCheckRequest]
   }
 }

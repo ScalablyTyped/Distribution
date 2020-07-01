@@ -119,8 +119,9 @@ trait URI extends js.Object {
   def protocol(protocol: String): URI = js.native
   def query(): String = js.native
   def query(qry: String): URI = js.native
-  def query(qry: js.Object): URI = js.native
+  def query(qry: js.Function1[/* qryObject */ QueryDataMap, QueryDataMap]): URI = js.native
   def query(qry: Boolean): js.Object = js.native
+  def query(qry: QueryDataMap): URI = js.native
   def readable(): String = js.native
   def relativeTo(path: String): URI = js.native
   // tslint:disable-next-line:unified-signatures
@@ -137,8 +138,9 @@ trait URI extends js.Object {
   def scheme(protocol: String): URI = js.native
   def search(): String = js.native
   def search(qry: String): URI = js.native
-  def search(qry: js.Object): URI = js.native
+  def search(qry: js.Function1[/* qryObject */ QueryDataMap, QueryDataMap]): URI = js.native
   def search(qry: Boolean): js.Any = js.native
+  def search(qry: QueryDataMap): URI = js.native
   def segment(): js.Array[String] = js.native
   def segment(position: Double): js.UndefOr[String] = js.native
   def segment(position: Double, level: String): URI = js.native

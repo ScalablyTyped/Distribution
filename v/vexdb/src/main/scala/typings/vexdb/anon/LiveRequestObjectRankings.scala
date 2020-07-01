@@ -1,58 +1,58 @@
 package typings.vexdb.anon
 
 import typings.vexdb.requestObjectsMod.NumberRequest
+import typings.vexdb.requestObjectsMod.Seasons
 import typings.vexdb.requestObjectsMod.StringRequest
+import typings.vexdb.responseObjectsMod.RankingsResponseObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined vexdb.vexdb/out/methods/live.LiveRequestObject<vexdb.vexdb/out/constants/RequestObjects.RankingsRequestObject> */
 trait LiveRequestObjectRankings extends js.Object {
-  var ap: js.UndefOr[NumberRequest] = js.undefined
-  var ccwm: js.UndefOr[NumberRequest] = js.undefined
-  var division: js.UndefOr[StringRequest] = js.undefined
-  var dpr: js.UndefOr[NumberRequest] = js.undefined
+  var ap: js.UndefOr[NumberRequest[RankingsResponseObject, Double]] = js.undefined
+  var ccwm: js.UndefOr[NumberRequest[RankingsResponseObject, Double]] = js.undefined
+  var division: js.UndefOr[StringRequest[RankingsResponseObject, String]] = js.undefined
+  var dpr: js.UndefOr[NumberRequest[RankingsResponseObject, Double]] = js.undefined
   var limit_number: js.UndefOr[Double] = js.undefined
   var limit_start: js.UndefOr[Double] = js.undefined
-  var losses: js.UndefOr[NumberRequest] = js.undefined
-  var max_score: js.UndefOr[NumberRequest] = js.undefined
-  var opr: js.UndefOr[NumberRequest] = js.undefined
+  var losses: js.UndefOr[NumberRequest[RankingsResponseObject, Double]] = js.undefined
+  var max_score: js.UndefOr[NumberRequest[RankingsResponseObject, Double]] = js.undefined
+  var opr: js.UndefOr[NumberRequest[RankingsResponseObject, Double]] = js.undefined
   var prefetch: js.UndefOr[Boolean] = js.undefined
-  var rank: js.UndefOr[StringRequest] = js.undefined
-  var season: js.UndefOr[StringRequest] = js.undefined
-  var single: js.UndefOr[Boolean] = js.undefined
-  var sku: js.UndefOr[StringRequest] = js.undefined
-  var sp: js.UndefOr[NumberRequest] = js.undefined
-  var team: js.UndefOr[StringRequest] = js.undefined
-  var ties: js.UndefOr[NumberRequest] = js.undefined
-  var trsp: js.UndefOr[NumberRequest] = js.undefined
-  var wins: js.UndefOr[NumberRequest] = js.undefined
-  var wp: js.UndefOr[NumberRequest] = js.undefined
+  var rank: js.UndefOr[StringRequest[RankingsResponseObject, String]] = js.undefined
+  var season: js.UndefOr[StringRequest[RankingsResponseObject, Seasons]] = js.undefined
+  var sku: js.UndefOr[StringRequest[RankingsResponseObject, String]] = js.undefined
+  var sp: js.UndefOr[NumberRequest[RankingsResponseObject, Double]] = js.undefined
+  var team: js.UndefOr[StringRequest[RankingsResponseObject, String]] = js.undefined
+  var ties: js.UndefOr[NumberRequest[RankingsResponseObject, Double]] = js.undefined
+  var trsp: js.UndefOr[NumberRequest[RankingsResponseObject, Double]] = js.undefined
+  var wins: js.UndefOr[NumberRequest[RankingsResponseObject, Double]] = js.undefined
+  var wp: js.UndefOr[NumberRequest[RankingsResponseObject, Double]] = js.undefined
 }
 
 object LiveRequestObjectRankings {
   @scala.inline
   def apply(
-    ap: NumberRequest = null,
-    ccwm: NumberRequest = null,
-    division: StringRequest = null,
-    dpr: NumberRequest = null,
+    ap: NumberRequest[RankingsResponseObject, Double] = null,
+    ccwm: NumberRequest[RankingsResponseObject, Double] = null,
+    division: StringRequest[RankingsResponseObject, String] = null,
+    dpr: NumberRequest[RankingsResponseObject, Double] = null,
     limit_number: js.UndefOr[Double] = js.undefined,
     limit_start: js.UndefOr[Double] = js.undefined,
-    losses: NumberRequest = null,
-    max_score: NumberRequest = null,
-    opr: NumberRequest = null,
+    losses: NumberRequest[RankingsResponseObject, Double] = null,
+    max_score: NumberRequest[RankingsResponseObject, Double] = null,
+    opr: NumberRequest[RankingsResponseObject, Double] = null,
     prefetch: js.UndefOr[Boolean] = js.undefined,
-    rank: StringRequest = null,
-    season: StringRequest = null,
-    single: js.UndefOr[Boolean] = js.undefined,
-    sku: StringRequest = null,
-    sp: NumberRequest = null,
-    team: StringRequest = null,
-    ties: NumberRequest = null,
-    trsp: NumberRequest = null,
-    wins: NumberRequest = null,
-    wp: NumberRequest = null
+    rank: StringRequest[RankingsResponseObject, String] = null,
+    season: StringRequest[RankingsResponseObject, Seasons] = null,
+    sku: StringRequest[RankingsResponseObject, String] = null,
+    sp: NumberRequest[RankingsResponseObject, Double] = null,
+    team: StringRequest[RankingsResponseObject, String] = null,
+    ties: NumberRequest[RankingsResponseObject, Double] = null,
+    trsp: NumberRequest[RankingsResponseObject, Double] = null,
+    wins: NumberRequest[RankingsResponseObject, Double] = null,
+    wp: NumberRequest[RankingsResponseObject, Double] = null
   ): LiveRequestObjectRankings = {
     val __obj = js.Dynamic.literal()
     if (ap != null) __obj.updateDynamic("ap")(ap.asInstanceOf[js.Any])
@@ -67,7 +67,6 @@ object LiveRequestObjectRankings {
     if (!js.isUndefined(prefetch)) __obj.updateDynamic("prefetch")(prefetch.get.asInstanceOf[js.Any])
     if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
     if (season != null) __obj.updateDynamic("season")(season.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.get.asInstanceOf[js.Any])
     if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
     if (sp != null) __obj.updateDynamic("sp")(sp.asInstanceOf[js.Any])
     if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])

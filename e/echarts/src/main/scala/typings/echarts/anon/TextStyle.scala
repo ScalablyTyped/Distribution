@@ -105,7 +105,7 @@ trait TextStyle extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle
     */
-  var textStyle: js.UndefOr[TextShadowOffsetY] = js.undefined
+  var textStyle: js.UndefOr[TextShadowOffsetX] = js.undefined
 }
 
 object TextStyle {
@@ -120,7 +120,7 @@ object TextStyle {
     shadowColor: String = null,
     shadowOffsetX: js.UndefOr[Double] = js.undefined,
     shadowOffsetY: js.UndefOr[Double] = js.undefined,
-    textStyle: TextShadowOffsetY = null
+    textStyle: TextShadowOffsetX = null
   ): TextStyle = {
     val __obj = js.Dynamic.literal()
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])

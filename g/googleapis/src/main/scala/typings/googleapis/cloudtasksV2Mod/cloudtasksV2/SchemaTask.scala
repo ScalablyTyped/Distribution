@@ -98,24 +98,24 @@ object SchemaTask {
   def apply(
     appEngineHttpRequest: SchemaAppEngineHttpRequest = null,
     createTime: String = null,
-    dispatchCount: Int | Double = null,
+    dispatchCount: js.UndefOr[Double] = js.undefined,
     dispatchDeadline: String = null,
     firstAttempt: SchemaAttempt = null,
     lastAttempt: SchemaAttempt = null,
     name: String = null,
-    responseCount: Int | Double = null,
+    responseCount: js.UndefOr[Double] = js.undefined,
     scheduleTime: String = null,
     view: String = null
   ): SchemaTask = {
     val __obj = js.Dynamic.literal()
     if (appEngineHttpRequest != null) __obj.updateDynamic("appEngineHttpRequest")(appEngineHttpRequest.asInstanceOf[js.Any])
     if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (dispatchCount != null) __obj.updateDynamic("dispatchCount")(dispatchCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(dispatchCount)) __obj.updateDynamic("dispatchCount")(dispatchCount.get.asInstanceOf[js.Any])
     if (dispatchDeadline != null) __obj.updateDynamic("dispatchDeadline")(dispatchDeadline.asInstanceOf[js.Any])
     if (firstAttempt != null) __obj.updateDynamic("firstAttempt")(firstAttempt.asInstanceOf[js.Any])
     if (lastAttempt != null) __obj.updateDynamic("lastAttempt")(lastAttempt.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (responseCount != null) __obj.updateDynamic("responseCount")(responseCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(responseCount)) __obj.updateDynamic("responseCount")(responseCount.get.asInstanceOf[js.Any])
     if (scheduleTime != null) __obj.updateDynamic("scheduleTime")(scheduleTime.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTask]

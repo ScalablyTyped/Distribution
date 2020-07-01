@@ -2,8 +2,8 @@ package typings.grommet.listMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.grommet.anon.Border
-import typings.grommet.anon.DarkLight
 import typings.grommet.anon.Index
+import typings.grommet.anon.Light
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.GridAreaType
@@ -19,7 +19,7 @@ trait ListProps extends js.Object {
   var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
   var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
   var as: js.UndefOr[String] = js.undefined
-  var background: js.UndefOr[String | js.Array[String] | DarkLight] = js.undefined
+  var background: js.UndefOr[String | js.Array[String] | Light] = js.undefined
   var border: js.UndefOr[BorderType] = js.undefined
   var data: js.UndefOr[js.Array[js.Object | String]] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
@@ -41,7 +41,7 @@ object ListProps {
     a11yTitle: A11yTitleType = null,
     alignSelf: AlignSelfType = null,
     as: String = null,
-    background: String | js.Array[String] | DarkLight = null,
+    background: String | js.Array[String] | Light = null,
     border: BorderType = null,
     data: js.Array[js.Object | String] = null,
     gridArea: GridAreaType = null,

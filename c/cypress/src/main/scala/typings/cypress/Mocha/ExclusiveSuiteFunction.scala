@@ -1,5 +1,6 @@
 package typings.cypress.Mocha
 
+import typings.cypress.Cypress.TestConfigOverrides
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +14,11 @@ trait ExclusiveSuiteFunction extends js.Object {
     * - _Only available when invoked via the mocha CLI._
     */
   def apply(title: String): Suite = js.native
+  /**
+    * Describe a "suite" with the given `title`, TestCptions, and callback `fn` containing
+    * nested suites. Indicates this suite should be executed exclusively.
+    */
+  def apply(title: String, config: TestConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite = js.native
   /**
     * [bdd, tdd] Describe a "suite" with the given `title` and callback `fn` containing
     * nested suites. Indicates this suite should be executed exclusively.

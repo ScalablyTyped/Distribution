@@ -13,6 +13,7 @@ trait DrawerProps extends js.Object {
   var bodyStyle: js.UndefOr[CSSProperties] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var closable: js.UndefOr[Boolean] = js.undefined
+  var closeIcon: js.UndefOr[ReactNode] = js.undefined
   var destroyOnClose: js.UndefOr[Boolean] = js.undefined
   /** wrapper dom node style of header and body */
   var drawerStyle: js.UndefOr[CSSProperties] = js.undefined
@@ -45,6 +46,7 @@ object DrawerProps {
     bodyStyle: CSSProperties = null,
     className: String = null,
     closable: js.UndefOr[Boolean] = js.undefined,
+    closeIcon: ReactNode = null,
     destroyOnClose: js.UndefOr[Boolean] = js.undefined,
     drawerStyle: CSSProperties = null,
     footer: ReactNode = null,
@@ -73,6 +75,7 @@ object DrawerProps {
     if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.get.asInstanceOf[js.Any])
+    if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyOnClose)) __obj.updateDynamic("destroyOnClose")(destroyOnClose.get.asInstanceOf[js.Any])
     if (drawerStyle != null) __obj.updateDynamic("drawerStyle")(drawerStyle.asInstanceOf[js.Any])
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.googleapis.AnonCode
+import typings.googleapis.anon.Code
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,7 +39,7 @@ trait SchemaResourcePolicyAggregatedList extends js.Object {
   /**
     * [Output Only] Informational warning message.
     */
-  var warning: js.UndefOr[AnonCode] = js.native
+  var warning: js.UndefOr[Code] = js.native
 }
 
 object SchemaResourcePolicyAggregatedList {
@@ -51,7 +51,7 @@ object SchemaResourcePolicyAggregatedList {
     kind: String = null,
     nextPageToken: String = null,
     selfLink: String = null,
-    warning: AnonCode = null
+    warning: Code = null
   ): SchemaResourcePolicyAggregatedList = {
     val __obj = js.Dynamic.literal()
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])

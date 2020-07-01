@@ -1,7 +1,7 @@
 package typings.oracledb.mod
 
+import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   * @since 4.0
   */
 @js.native
-trait DBObjectClass
-  extends Instantiable1[/* data */ Record[String, js.Any], DBObject]
+trait DBObjectClass[T]
+  extends Instantiable0[DBObjectIN[T]]
+     with Instantiable1[/* data */ T, DBObjectIN[T]]
 

@@ -25,10 +25,10 @@ trait SchemaGooglePrivacyDlpV2InfoTypeLimit extends js.Object {
 
 object SchemaGooglePrivacyDlpV2InfoTypeLimit {
   @scala.inline
-  def apply(infoType: SchemaGooglePrivacyDlpV2InfoType = null, maxFindings: Int | Double = null): SchemaGooglePrivacyDlpV2InfoTypeLimit = {
+  def apply(infoType: SchemaGooglePrivacyDlpV2InfoType = null, maxFindings: js.UndefOr[Double] = js.undefined): SchemaGooglePrivacyDlpV2InfoTypeLimit = {
     val __obj = js.Dynamic.literal()
     if (infoType != null) __obj.updateDynamic("infoType")(infoType.asInstanceOf[js.Any])
-    if (maxFindings != null) __obj.updateDynamic("maxFindings")(maxFindings.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFindings)) __obj.updateDynamic("maxFindings")(maxFindings.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2InfoTypeLimit]
   }
 }

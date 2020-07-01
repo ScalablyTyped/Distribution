@@ -29,12 +29,12 @@ object SchemaGoogleCloudVisionV1p4beta1AnnotateFileResponse {
   def apply(
     inputConfig: SchemaGoogleCloudVisionV1p4beta1InputConfig = null,
     responses: js.Array[SchemaGoogleCloudVisionV1p4beta1AnnotateImageResponse] = null,
-    totalPages: Int | Double = null
+    totalPages: js.UndefOr[Double] = js.undefined
   ): SchemaGoogleCloudVisionV1p4beta1AnnotateFileResponse = {
     val __obj = js.Dynamic.literal()
     if (inputConfig != null) __obj.updateDynamic("inputConfig")(inputConfig.asInstanceOf[js.Any])
     if (responses != null) __obj.updateDynamic("responses")(responses.asInstanceOf[js.Any])
-    if (totalPages != null) __obj.updateDynamic("totalPages")(totalPages.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalPages)) __obj.updateDynamic("totalPages")(totalPages.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p4beta1AnnotateFileResponse]
   }
 }

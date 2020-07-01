@@ -92,7 +92,7 @@ object SchemaBuildTrigger {
     if (build != null) __obj.updateDynamic("build")(build.asInstanceOf[js.Any])
     if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (github != null) __obj.updateDynamic("github")(github.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

@@ -12,7 +12,7 @@ trait OptionsTypeKnob[T /* <: OptionsTypeKnobValue[OptionsTypeKnobSingleValue] *
 
 object OptionsTypeKnob {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.storybookAddonKnobs.optionsMod.OptionsTypeKnobValue[typings.storybookAddonKnobs.optionsMod.OptionsTypeKnobSingleValue] */ T](
     name: String,
     options: OptionsTypeOptionsProp[T],
     optionsObj: OptionsKnobOptions,

@@ -54,6 +54,7 @@ package object transferMod {
   type Response = java.lang.String
   type Role = java.lang.String
   type ServerId = java.lang.String
+  type SourceIp = java.lang.String
   type SshPublicKeyBody = java.lang.String
   type SshPublicKeyCount = scala.Double
   type SshPublicKeyId = java.lang.String

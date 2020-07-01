@@ -8,9 +8,10 @@ import scala.scalajs.js.annotation._
 trait CreateFileSystemFromBackupRequest extends js.Object {
   var BackupId: typings.awsSdk.fsxMod.BackupId = js.native
   /**
-    * (Optional) A string of up to 64 ASCII characters that Amazon FSx uses to ensure idempotent creation. This string is automatically filled on your behalf when you use the AWS Command Line Interface (AWS CLI) or an AWS SDK.
+    * A string of up to 64 ASCII characters that Amazon FSx uses to ensure idempotent creation. This string is automatically filled on your behalf when you use the AWS Command Line Interface (AWS CLI) or an AWS SDK.
     */
   var ClientRequestToken: js.UndefOr[typings.awsSdk.fsxMod.ClientRequestToken] = js.native
+  var LustreConfiguration: js.UndefOr[CreateFileSystemLustreConfiguration] = js.native
   /**
     * A list of IDs for the security groups that apply to the specified network interfaces created for file system access. These security groups apply to all network interfaces. This value isn't returned in later DescribeFileSystem requests.
     */
@@ -39,6 +40,7 @@ object CreateFileSystemFromBackupRequest {
     BackupId: BackupId,
     SubnetIds: SubnetIds,
     ClientRequestToken: ClientRequestToken = null,
+    LustreConfiguration: CreateFileSystemLustreConfiguration = null,
     SecurityGroupIds: SecurityGroupIds = null,
     StorageType: StorageType = null,
     Tags: Tags = null,
@@ -46,6 +48,7 @@ object CreateFileSystemFromBackupRequest {
   ): CreateFileSystemFromBackupRequest = {
     val __obj = js.Dynamic.literal(BackupId = BackupId.asInstanceOf[js.Any], SubnetIds = SubnetIds.asInstanceOf[js.Any])
     if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken.asInstanceOf[js.Any])
+    if (LustreConfiguration != null) __obj.updateDynamic("LustreConfiguration")(LustreConfiguration.asInstanceOf[js.Any])
     if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds.asInstanceOf[js.Any])
     if (StorageType != null) __obj.updateDynamic("StorageType")(StorageType.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])

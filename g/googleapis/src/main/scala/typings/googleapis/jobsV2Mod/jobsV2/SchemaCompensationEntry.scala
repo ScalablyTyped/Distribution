@@ -50,7 +50,7 @@ object SchemaCompensationEntry {
   def apply(
     amount: SchemaMoney = null,
     description: String = null,
-    expectedUnitsPerYear: Int | Double = null,
+    expectedUnitsPerYear: js.UndefOr[Double] = js.undefined,
     range: SchemaCompensationRange = null,
     `type`: String = null,
     unit: String = null
@@ -58,7 +58,7 @@ object SchemaCompensationEntry {
     val __obj = js.Dynamic.literal()
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (expectedUnitsPerYear != null) __obj.updateDynamic("expectedUnitsPerYear")(expectedUnitsPerYear.asInstanceOf[js.Any])
+    if (!js.isUndefined(expectedUnitsPerYear)) __obj.updateDynamic("expectedUnitsPerYear")(expectedUnitsPerYear.get.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])

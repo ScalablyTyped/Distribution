@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "icheck"
-version := "v0.8-dt-20200515Z-6d8f81"
+version := "1.0-dt-20200622Z-0cbd5a"
 scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

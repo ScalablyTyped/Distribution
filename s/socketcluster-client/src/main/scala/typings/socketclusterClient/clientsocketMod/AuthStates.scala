@@ -4,7 +4,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-// type WatcherFunction = (data: any) => void;
 /* Rewritten from type alias, can be one of: 
   - typings.socketclusterClient.socketclusterClientStrings.authenticated
   - typings.socketclusterClient.socketclusterClientStrings.unauthenticated

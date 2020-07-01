@@ -143,7 +143,7 @@ object ParamsResourceAdsList {
     ids: js.Array[String] = null,
     key: String = null,
     landingPageIds: js.Array[String] = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[Double] = js.undefined,
     oauth_token: String = null,
     overriddenEventTagId: String = null,
     pageToken: String = null,
@@ -162,27 +162,27 @@ object ParamsResourceAdsList {
     userIp: String = null
   ): ParamsResourceAdsList = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived.asInstanceOf[js.Any])
+    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived.get.asInstanceOf[js.Any])
     if (audienceSegmentIds != null) __obj.updateDynamic("audienceSegmentIds")(audienceSegmentIds.asInstanceOf[js.Any])
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (campaignIds != null) __obj.updateDynamic("campaignIds")(campaignIds.asInstanceOf[js.Any])
     if (compatibility != null) __obj.updateDynamic("compatibility")(compatibility.asInstanceOf[js.Any])
     if (creativeIds != null) __obj.updateDynamic("creativeIds")(creativeIds.asInstanceOf[js.Any])
     if (creativeOptimizationConfigurationIds != null) __obj.updateDynamic("creativeOptimizationConfigurationIds")(creativeOptimizationConfigurationIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(dynamicClickTracker)) __obj.updateDynamic("dynamicClickTracker")(dynamicClickTracker.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamicClickTracker)) __obj.updateDynamic("dynamicClickTracker")(dynamicClickTracker.get.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (landingPageIds != null) __obj.updateDynamic("landingPageIds")(landingPageIds.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (overriddenEventTagId != null) __obj.updateDynamic("overriddenEventTagId")(overriddenEventTagId.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     if (placementIds != null) __obj.updateDynamic("placementIds")(placementIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (profileId != null) __obj.updateDynamic("profileId")(profileId.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (remarketingListIds != null) __obj.updateDynamic("remarketingListIds")(remarketingListIds.asInstanceOf[js.Any])
@@ -190,8 +190,8 @@ object ParamsResourceAdsList {
     if (sizeIds != null) __obj.updateDynamic("sizeIds")(sizeIds.asInstanceOf[js.Any])
     if (sortField != null) __obj.updateDynamic("sortField")(sortField.asInstanceOf[js.Any])
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(sslCompliant)) __obj.updateDynamic("sslCompliant")(sslCompliant.asInstanceOf[js.Any])
-    if (!js.isUndefined(sslRequired)) __obj.updateDynamic("sslRequired")(sslRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(sslCompliant)) __obj.updateDynamic("sslCompliant")(sslCompliant.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sslRequired)) __obj.updateDynamic("sslRequired")(sslRequired.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceAdsList]

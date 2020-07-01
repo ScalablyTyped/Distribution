@@ -43,7 +43,7 @@ trait Endpoint extends js.Object {
     */
   var EngineDisplayName: js.UndefOr[String] = js.native
   /**
-    * The database engine name. Valid values, depending on the EndpointType, include "mysql", "oracle", "postgres", "mariadb", "aurora", "aurora-postgresql", "redshift", "s3", "db2", "azuredb", "sybase", "dynamodb", "mongodb", "kinesis", "kafka", "elasticsearch", "documentdb", and "sqlserver".
+    * The database engine name. Valid values, depending on the EndpointType, include "mysql", "oracle", "postgres", "mariadb", "aurora", "aurora-postgresql", "redshift", "s3", "db2", "azuredb", "sybase", "dynamodb", "mongodb", "kinesis", "kafka", "elasticsearch", "documentdb", "sqlserver", and "neptune".
     */
   var EngineName: js.UndefOr[String] = js.native
   /**
@@ -75,7 +75,7 @@ trait Endpoint extends js.Object {
     */
   var MongoDbSettings: js.UndefOr[typings.awsSdk.dmsMod.MongoDbSettings] = js.native
   /**
-    * The settings for the MongoDB source endpoint. For more information, see the NeptuneSettings structure.
+    * The settings for the Amazon Neptune target endpoint. For more information, see the NeptuneSettings structure.
     */
   var NeptuneSettings: js.UndefOr[typings.awsSdk.dmsMod.NeptuneSettings] = js.native
   /**

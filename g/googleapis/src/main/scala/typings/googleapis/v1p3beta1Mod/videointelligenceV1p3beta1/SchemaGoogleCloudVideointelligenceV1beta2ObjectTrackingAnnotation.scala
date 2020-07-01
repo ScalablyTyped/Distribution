@@ -42,14 +42,14 @@ trait SchemaGoogleCloudVideointelligenceV1beta2ObjectTrackingAnnotation extends 
 object SchemaGoogleCloudVideointelligenceV1beta2ObjectTrackingAnnotation {
   @scala.inline
   def apply(
-    confidence: Int | Double = null,
+    confidence: js.UndefOr[Double] = js.undefined,
     entity: SchemaGoogleCloudVideointelligenceV1beta2Entity = null,
     frames: js.Array[SchemaGoogleCloudVideointelligenceV1beta2ObjectTrackingFrame] = null,
     segment: SchemaGoogleCloudVideointelligenceV1beta2VideoSegment = null,
     trackId: String = null
   ): SchemaGoogleCloudVideointelligenceV1beta2ObjectTrackingAnnotation = {
     val __obj = js.Dynamic.literal()
-    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
     if (entity != null) __obj.updateDynamic("entity")(entity.asInstanceOf[js.Any])
     if (frames != null) __obj.updateDynamic("frames")(frames.asInstanceOf[js.Any])
     if (segment != null) __obj.updateDynamic("segment")(segment.asInstanceOf[js.Any])

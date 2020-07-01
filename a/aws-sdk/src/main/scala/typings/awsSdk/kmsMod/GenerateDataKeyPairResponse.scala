@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GenerateDataKeyPairResponse extends js.Object {
   /**
-    * The identifier of the CMK that encrypted the private key.
+    * The Amazon Resource Name (key ARN) of the CMK that encrypted the private key.
     */
   var KeyId: js.UndefOr[KeyIdType] = js.native
   /**

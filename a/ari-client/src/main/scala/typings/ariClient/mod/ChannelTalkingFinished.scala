@@ -6,8 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChannelTalkingFinished extends Event {
-  /* Properties */
+  /**
+    * The channel on which talking completed.
+    */
   var channel: Channel
+  /**
+    * The length of time, in milliseconds, that talking was detected on the channel.
+    */
   var duration: Double
 }
 

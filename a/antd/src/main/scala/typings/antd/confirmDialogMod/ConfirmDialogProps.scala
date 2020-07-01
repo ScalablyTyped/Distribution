@@ -30,6 +30,7 @@ object ConfirmDialogProps {
     centered: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     content: ReactNode = null,
+    direction: String = null,
     getContainer: js.UndefOr[Null | String | HTMLElement | getContainerFunc | `false`] = js.undefined,
     icon: ReactNode = null,
     keyboard: js.UndefOr[Boolean] = js.undefined,
@@ -60,6 +61,7 @@ object ConfirmDialogProps {
     if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (!js.isUndefined(getContainer)) __obj.updateDynamic("getContainer")(getContainer.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.get.asInstanceOf[js.Any])

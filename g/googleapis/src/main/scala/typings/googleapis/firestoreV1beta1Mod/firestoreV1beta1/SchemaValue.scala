@@ -67,7 +67,7 @@ object SchemaValue {
     arrayValue: SchemaArrayValue = null,
     booleanValue: js.UndefOr[Boolean] = js.undefined,
     bytesValue: String = null,
-    doubleValue: Int | Double = null,
+    doubleValue: js.UndefOr[Double] = js.undefined,
     geoPointValue: SchemaLatLng = null,
     integerValue: String = null,
     mapValue: SchemaMapValue = null,
@@ -78,9 +78,9 @@ object SchemaValue {
   ): SchemaValue = {
     val __obj = js.Dynamic.literal()
     if (arrayValue != null) __obj.updateDynamic("arrayValue")(arrayValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(booleanValue)) __obj.updateDynamic("booleanValue")(booleanValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(booleanValue)) __obj.updateDynamic("booleanValue")(booleanValue.get.asInstanceOf[js.Any])
     if (bytesValue != null) __obj.updateDynamic("bytesValue")(bytesValue.asInstanceOf[js.Any])
-    if (doubleValue != null) __obj.updateDynamic("doubleValue")(doubleValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleValue)) __obj.updateDynamic("doubleValue")(doubleValue.get.asInstanceOf[js.Any])
     if (geoPointValue != null) __obj.updateDynamic("geoPointValue")(geoPointValue.asInstanceOf[js.Any])
     if (integerValue != null) __obj.updateDynamic("integerValue")(integerValue.asInstanceOf[js.Any])
     if (mapValue != null) __obj.updateDynamic("mapValue")(mapValue.asInstanceOf[js.Any])

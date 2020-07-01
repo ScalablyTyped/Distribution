@@ -42,7 +42,7 @@ class DbMutationBatch protected () extends js.Object {
     /**
     * A list of mutations to apply. All mutations will be applied atomically.
     *
-    * Mutations are serialized via JsonProtoSerializer.toMutation().
+    * Mutations are serialized via toMutation().
     */
   mutations: js.Array[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Write */ _
@@ -77,7 +77,7 @@ class DbMutationBatch protected () extends js.Object {
   /**
     * A list of mutations to apply. All mutations will be applied atomically.
     *
-    * Mutations are serialized via JsonProtoSerializer.toMutation().
+    * Mutations are serialized via toMutation().
     */
   var mutations: js.Array[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Write */ _

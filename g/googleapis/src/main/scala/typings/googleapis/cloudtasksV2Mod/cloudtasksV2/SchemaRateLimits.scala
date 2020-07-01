@@ -58,14 +58,14 @@ trait SchemaRateLimits extends js.Object {
 object SchemaRateLimits {
   @scala.inline
   def apply(
-    maxBurstSize: Int | Double = null,
-    maxConcurrentDispatches: Int | Double = null,
-    maxDispatchesPerSecond: Int | Double = null
+    maxBurstSize: js.UndefOr[Double] = js.undefined,
+    maxConcurrentDispatches: js.UndefOr[Double] = js.undefined,
+    maxDispatchesPerSecond: js.UndefOr[Double] = js.undefined
   ): SchemaRateLimits = {
     val __obj = js.Dynamic.literal()
-    if (maxBurstSize != null) __obj.updateDynamic("maxBurstSize")(maxBurstSize.asInstanceOf[js.Any])
-    if (maxConcurrentDispatches != null) __obj.updateDynamic("maxConcurrentDispatches")(maxConcurrentDispatches.asInstanceOf[js.Any])
-    if (maxDispatchesPerSecond != null) __obj.updateDynamic("maxDispatchesPerSecond")(maxDispatchesPerSecond.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBurstSize)) __obj.updateDynamic("maxBurstSize")(maxBurstSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxConcurrentDispatches)) __obj.updateDynamic("maxConcurrentDispatches")(maxConcurrentDispatches.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDispatchesPerSecond)) __obj.updateDynamic("maxDispatchesPerSecond")(maxDispatchesPerSecond.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRateLimits]
   }
 }

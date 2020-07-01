@@ -28,12 +28,12 @@ trait SchemaGetReportsResponse extends js.Object {
 object SchemaGetReportsResponse {
   @scala.inline
   def apply(
-    queryCost: Int | Double = null,
+    queryCost: js.UndefOr[Double] = js.undefined,
     reports: js.Array[SchemaReport] = null,
     resourceQuotasRemaining: SchemaResourceQuotasRemaining = null
   ): SchemaGetReportsResponse = {
     val __obj = js.Dynamic.literal()
-    if (queryCost != null) __obj.updateDynamic("queryCost")(queryCost.asInstanceOf[js.Any])
+    if (!js.isUndefined(queryCost)) __obj.updateDynamic("queryCost")(queryCost.get.asInstanceOf[js.Any])
     if (reports != null) __obj.updateDynamic("reports")(reports.asInstanceOf[js.Any])
     if (resourceQuotasRemaining != null) __obj.updateDynamic("resourceQuotasRemaining")(resourceQuotasRemaining.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGetReportsResponse]

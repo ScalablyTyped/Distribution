@@ -6,9 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChannelDialplan extends Event {
-  /* Properties */
+  /**
+    * The channel that changed dialplan location.
+    */
   var channel: Channel
+  /**
+    * The application about to be executed.
+    */
   var dialplan_app: String
+  /**
+    * The data to be passed to the application.
+    */
   var dialplan_app_data: String
 }
 

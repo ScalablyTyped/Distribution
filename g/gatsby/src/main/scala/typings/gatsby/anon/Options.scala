@@ -1,19 +1,18 @@
 package typings.gatsby.anon
 
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var options: Record[String, _]
-  var resolve: String
+  var name: String
+  var options: js.Object
 }
 
 object Options {
   @scala.inline
-  def apply(options: Record[String, _], resolve: String): Options = {
-    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], resolve = resolve.asInstanceOf[js.Any])
+  def apply(name: String, options: js.Object): Options = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

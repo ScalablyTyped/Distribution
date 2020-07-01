@@ -5,8 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Message extends js.Object {
+  /**
+    * The unique ID for the Asterisk instance that raised this event.
+    */
   var asterisk_id: js.UndefOr[String] = js.undefined
-  /* Properties */
+  /**
+    * Indicates the type of this message.
+    */
   var `type`: String
 }
 

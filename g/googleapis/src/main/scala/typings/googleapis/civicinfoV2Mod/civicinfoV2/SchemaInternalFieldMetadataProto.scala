@@ -14,7 +14,7 @@ object SchemaInternalFieldMetadataProto {
   @scala.inline
   def apply(isAuto: js.UndefOr[Boolean] = js.undefined, sourceSummary: SchemaInternalSourceSummaryProto = null): SchemaInternalFieldMetadataProto = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isAuto)) __obj.updateDynamic("isAuto")(isAuto.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAuto)) __obj.updateDynamic("isAuto")(isAuto.get.asInstanceOf[js.Any])
     if (sourceSummary != null) __obj.updateDynamic("sourceSummary")(sourceSummary.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInternalFieldMetadataProto]
   }

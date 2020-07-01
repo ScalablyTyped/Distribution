@@ -1,6 +1,6 @@
 package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
-import typings.googleapis.AnonColumns
+import typings.googleapis.anon.Columns
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait SchemaImportContext extends js.Object {
   /**
     * Options for importing data as CSV.
     */
-  var csvImportOptions: js.UndefOr[AnonColumns] = js.native
+  var csvImportOptions: js.UndefOr[Columns] = js.native
   /**
     * The target database for the import. If fileType is SQL, this field is
     * required only if the import file does not specify a database, and is
@@ -46,7 +46,7 @@ trait SchemaImportContext extends js.Object {
 object SchemaImportContext {
   @scala.inline
   def apply(
-    csvImportOptions: AnonColumns = null,
+    csvImportOptions: Columns = null,
     database: String = null,
     fileType: String = null,
     importUser: String = null,

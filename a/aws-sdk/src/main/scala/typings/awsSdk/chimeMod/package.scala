@@ -48,6 +48,7 @@ package object chimeMod {
   type CountryList = js.Array[typings.awsSdk.chimeMod.Country]
   type CpsLimit = scala.Double
   type CreateAttendeeRequestItemList = js.Array[typings.awsSdk.chimeMod.CreateAttendeeRequestItem]
+  type CreateMeetingWithAttendeesRequestItemList = js.Array[typings.awsSdk.chimeMod.CreateAttendeeRequestItem]
   type CredentialList = js.Array[typings.awsSdk.chimeMod.Credential]
   type DataRetentionInHours = scala.Double
   type E164PhoneNumber = java.lang.String

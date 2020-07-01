@@ -2,10 +2,10 @@ package typings.blueprintjsCore.handleMod
 
 import typings.blueprintjsCore.anon.IsMoving
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
+import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.TouchEvent
 import typings.std.HTMLElement
-import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,8 +33,8 @@ class Handle ()
   var removeDocumentEventListeners: js.Any = js.native
   @JSName("state")
   var state_Handle: IsMoving = js.native
-  def beginHandleMovement(event: typings.react.mod.MouseEvent[HTMLElement, MouseEvent]): Unit = js.native
-  def beginHandleMovement(event: MouseEvent): Unit = js.native
+  def beginHandleMovement(event: MouseEvent[HTMLElement, NativeMouseEvent]): Unit = js.native
+  def beginHandleMovement(event: typings.std.MouseEvent): Unit = js.native
   def beginHandleTouchMovement(event: TouchEvent[HTMLElement]): Unit = js.native
   def beginHandleTouchMovement(event: typings.std.TouchEvent): Unit = js.native
   /** Convert client pixel to value between min and max. */
@@ -43,8 +43,8 @@ class Handle ()
   def componentDidMount_MHandle(): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MHandle(): Unit = js.native
-  def mouseEventClientOffset(event: typings.react.mod.MouseEvent[HTMLElement, NativeMouseEvent]): Double = js.native
-  def mouseEventClientOffset(event: MouseEvent): Double = js.native
+  def mouseEventClientOffset(event: MouseEvent[HTMLElement, NativeMouseEvent]): Double = js.native
+  def mouseEventClientOffset(event: typings.std.MouseEvent): Double = js.native
   def touchEventClientOffset(event: TouchEvent[HTMLElement]): Double = js.native
   def touchEventClientOffset(event: typings.std.TouchEvent): Double = js.native
 }

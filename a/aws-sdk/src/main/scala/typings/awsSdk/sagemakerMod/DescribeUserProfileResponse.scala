@@ -11,7 +11,7 @@ trait DescribeUserProfileResponse extends js.Object {
     */
   var CreationTime: js.UndefOr[typings.awsSdk.sagemakerMod.CreationTime] = js.native
   /**
-    * The domain ID.
+    * The ID of the domain that contains the profile.
     */
   var DomainId: js.UndefOr[typings.awsSdk.sagemakerMod.DomainId] = js.native
   /**
@@ -19,7 +19,7 @@ trait DescribeUserProfileResponse extends js.Object {
     */
   var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.native
   /**
-    * The home Amazon Elastic File System (EFS) Uid.
+    * The ID of the user's profile in the Amazon Elastic File System (EFS) volume.
     */
   var HomeEfsFileSystemUid: js.UndefOr[EfsUid] = js.native
   /**

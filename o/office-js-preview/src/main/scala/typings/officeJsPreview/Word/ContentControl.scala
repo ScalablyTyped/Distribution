@@ -279,14 +279,12 @@ trait ContentControl extends ClientObject {
     */
   val `type`: ContentControlType | Unknown_ | RichTextInline | RichTextParagraphs | RichTextTableCell | RichTextTableRow | RichTextTable | PlainTextInline | PlainTextParagraph | Picture | BuildingBlockGallery | CheckBox | ComboBox | DropDownList | DatePicker | RepeatingSection | RichText | PlainText = js.native
   /**
-    *
     * Clears the contents of the content control. The user can perform the undo operation on the cleared content.
     *
     * [Api set: WordApi 1.1]
     */
   def clear(): Unit = js.native
   /**
-    *
     * Deletes the content control and its content. If keepContent is set to true, the content is not deleted.
     *
     * [Api set: WordApi 1.1]
@@ -295,21 +293,18 @@ trait ContentControl extends ClientObject {
     */
   def delete(keepContent: Boolean): Unit = js.native
   /**
-    *
     * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.
     *
     * [Api set: WordApi 1.1]
     */
   def getHtml(): ClientResult[String] = js.native
   /**
-    *
     * Gets the Office Open XML (OOXML) representation of the content control object.
     *
     * [Api set: WordApi 1.1]
     */
   def getOoxml(): ClientResult[String] = js.native
   /**
-    *
     * Gets the whole content control, or the starting or ending point of the content control, as a range.
     *
     * [Api set: WordApi 1.3]
@@ -331,7 +326,6 @@ trait ContentControl extends ClientObject {
   @JSName("getRange")
   def getRange_Whole(rangeLocation: Whole): Range = js.native
   /**
-    *
     * Gets the text ranges in the content control by using punctuation marks and/or other ending marks.
     *
     * [Api set: WordApi 1.3]
@@ -342,7 +336,6 @@ trait ContentControl extends ClientObject {
   def getTextRanges(endingMarks: js.Array[String]): RangeCollection = js.native
   def getTextRanges(endingMarks: js.Array[String], trimSpacing: Boolean): RangeCollection = js.native
   /**
-    *
     * Inserts a break at the specified location in the main document. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
     *
     * [Api set: WordApi 1.1]
@@ -355,7 +348,6 @@ trait ContentControl extends ClientObject {
     insertLocation: Before | After | Start | End | Replace
   ): Unit = js.native
   /**
-    *
     * Inserts a break at the specified location in the main document. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
     *
     * [Api set: WordApi 1.1]
@@ -365,7 +357,6 @@ trait ContentControl extends ClientObject {
     */
   def insertBreak(breakType: BreakType, insertLocation: InsertLocation): Unit = js.native
   /**
-    *
     * Inserts a document into the content control at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -377,7 +368,6 @@ trait ContentControl extends ClientObject {
   @JSName("insertFileFromBase64")
   def insertFileFromBase64_After(base64File: String, insertLocation: After): Range = js.native
   /**
-    *
     * Inserts a document into the content control at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -394,7 +384,6 @@ trait ContentControl extends ClientObject {
   @JSName("insertFileFromBase64")
   def insertFileFromBase64_Start(base64File: String, insertLocation: Start): Range = js.native
   /**
-    *
     * Inserts HTML into the content control at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -406,7 +395,6 @@ trait ContentControl extends ClientObject {
   @JSName("insertHtml")
   def insertHtml_After(html: String, insertLocation: After): Range = js.native
   /**
-    *
     * Inserts HTML into the content control at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -423,7 +411,6 @@ trait ContentControl extends ClientObject {
   @JSName("insertHtml")
   def insertHtml_Start(html: String, insertLocation: Start): Range = js.native
   /**
-    *
     * Inserts an inline picture into the content control at the specified location.
     *
     * [Api set: WordApi 1.2]
@@ -435,7 +422,6 @@ trait ContentControl extends ClientObject {
   @JSName("insertInlinePictureFromBase64")
   def insertInlinePictureFromBase64_After(base64EncodedImage: String, insertLocation: After): InlinePicture = js.native
   /**
-    *
     * Inserts an inline picture into the content control at the specified location.
     *
     * [Api set: WordApi 1.2]
@@ -452,7 +438,6 @@ trait ContentControl extends ClientObject {
   @JSName("insertInlinePictureFromBase64")
   def insertInlinePictureFromBase64_Start(base64EncodedImage: String, insertLocation: Start): InlinePicture = js.native
   /**
-    *
     * Inserts OOXML into the content control at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -464,7 +449,6 @@ trait ContentControl extends ClientObject {
   @JSName("insertOoxml")
   def insertOoxml_After(ooxml: String, insertLocation: After): Range = js.native
   /**
-    *
     * Inserts OOXML into the content control at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -481,7 +465,6 @@ trait ContentControl extends ClientObject {
   @JSName("insertOoxml")
   def insertOoxml_Start(ooxml: String, insertLocation: Start): Range = js.native
   /**
-    *
     * Inserts a paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -493,7 +476,6 @@ trait ContentControl extends ClientObject {
   @JSName("insertParagraph")
   def insertParagraph_After(paragraphText: String, insertLocation: After): Paragraph = js.native
   /**
-    *
     * Inserts a paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -510,7 +492,6 @@ trait ContentControl extends ClientObject {
   @JSName("insertParagraph")
   def insertParagraph_Start(paragraphText: String, insertLocation: Start): Paragraph = js.native
   /**
-    *
     * Inserts a table with the specified number of rows and columns into, or next to, a content control.
     *
     * [Api set: WordApi 1.3]
@@ -532,7 +513,6 @@ trait ContentControl extends ClientObject {
   @JSName("insertTable")
   def insertTable_After(rowCount: Double, columnCount: Double, insertLocation: After, values: js.Array[js.Array[String]]): Table = js.native
   /**
-    *
     * Inserts a table with the specified number of rows and columns into, or next to, a content control.
     *
     * [Api set: WordApi 1.3]
@@ -559,7 +539,6 @@ trait ContentControl extends ClientObject {
   @JSName("insertTable")
   def insertTable_Start(rowCount: Double, columnCount: Double, insertLocation: Start, values: js.Array[js.Array[String]]): Table = js.native
   /**
-    *
     * Inserts text into the content control at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -571,7 +550,6 @@ trait ContentControl extends ClientObject {
   @JSName("insertText")
   def insertText_After(text: String, insertLocation: After): Range = js.native
   /**
-    *
     * Inserts text into the content control at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -588,27 +566,16 @@ trait ContentControl extends ClientObject {
   @JSName("insertText")
   def insertText_Start(text: String, insertLocation: Start): Range = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Word.ContentControl` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Word.ContentControl` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ContentControl` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): ContentControl = js.native
-  def load(option: String): ContentControl = js.native
-  def load(option: js.Array[String]): ContentControl = js.native
-  def load(option: ContentControlLoadOptions): ContentControl = js.native
-  def load(option: Expand): ContentControl = js.native
+  def load(options: ContentControlLoadOptions): ContentControl = js.native
+  def load(propertyNamesAndPaths: Expand): ContentControl = js.native
+  def load(propertyNames: String): ContentControl = js.native
+  def load(propertyNames: js.Array[String]): ContentControl = js.native
   /**
-    *
     * Performs a search with the specified SearchOptions on the scope of the content control object. The search results are a collection of range objects.
     *
     * [Api set: WordApi 1.1]
@@ -620,7 +587,6 @@ trait ContentControl extends ClientObject {
   def search(searchText: String, searchOptions: SearchOptions): RangeCollection = js.native
   def search(searchText: String, searchOptions: IgnorePunct): RangeCollection = js.native
   /**
-    *
     * Selects the content control. This causes Word to scroll to the selection.
     *
     * [Api set: WordApi 1.1]
@@ -651,7 +617,6 @@ trait ContentControl extends ClientObject {
   def set(properties: ContentControlUpdateData): Unit = js.native
   def set(properties: ContentControlUpdateData, options: UpdateOptions): Unit = js.native
   /**
-    *
     * Splits the content control into child ranges by using delimiters.
     *
     * [Api set: WordApi 1.3]
@@ -676,11 +641,11 @@ trait ContentControl extends ClientObject {
     */
   def toJSON(): ContentControlData = js.native
   /**
-    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
     */
   def track(): ContentControl = js.native
   /**
-    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
+    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     */
   def untrack(): ContentControl = js.native
 }

@@ -43,7 +43,7 @@ object SchemaProductTax {
     country: String = null,
     locationId: String = null,
     postalCode: String = null,
-    rate: Int | Double = null,
+    rate: js.UndefOr[Double] = js.undefined,
     region: String = null,
     taxShip: js.UndefOr[Boolean] = js.undefined
   ): SchemaProductTax = {
@@ -51,9 +51,9 @@ object SchemaProductTax {
     if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
     if (locationId != null) __obj.updateDynamic("locationId")(locationId.asInstanceOf[js.Any])
     if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
-    if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
+    if (!js.isUndefined(rate)) __obj.updateDynamic("rate")(rate.get.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (!js.isUndefined(taxShip)) __obj.updateDynamic("taxShip")(taxShip.asInstanceOf[js.Any])
+    if (!js.isUndefined(taxShip)) __obj.updateDynamic("taxShip")(taxShip.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProductTax]
   }
 }

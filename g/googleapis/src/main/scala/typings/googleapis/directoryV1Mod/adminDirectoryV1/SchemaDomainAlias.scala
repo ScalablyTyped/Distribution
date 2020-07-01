@@ -52,7 +52,7 @@ object SchemaDomainAlias {
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (parentDomainName != null) __obj.updateDynamic("parentDomainName")(parentDomainName.asInstanceOf[js.Any])
-    if (!js.isUndefined(verified)) __obj.updateDynamic("verified")(verified.asInstanceOf[js.Any])
+    if (!js.isUndefined(verified)) __obj.updateDynamic("verified")(verified.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDomainAlias]
   }
 }

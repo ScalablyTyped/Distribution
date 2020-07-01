@@ -36,10 +36,10 @@ trait SchemaWeightedFontFamily extends js.Object {
 
 object SchemaWeightedFontFamily {
   @scala.inline
-  def apply(fontFamily: String = null, weight: Int | Double = null): SchemaWeightedFontFamily = {
+  def apply(fontFamily: String = null, weight: js.UndefOr[Double] = js.undefined): SchemaWeightedFontFamily = {
     val __obj = js.Dynamic.literal()
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWeightedFontFamily]
   }
 }

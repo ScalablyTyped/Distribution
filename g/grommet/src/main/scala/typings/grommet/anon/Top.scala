@@ -1,33 +1,35 @@
 package typings.grommet.anon
 
-import typings.grommet.grommetStrings.bottom
-import typings.grommet.grommetStrings.left
-import typings.grommet.grommetStrings.right
-import typings.grommet.grommetStrings.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Top extends js.Object {
-  var bottom: js.UndefOr[top | typings.grommet.grommetStrings.bottom] = js.undefined
-  var left: js.UndefOr[right | typings.grommet.grommetStrings.left] = js.undefined
-  var right: js.UndefOr[typings.grommet.grommetStrings.right | left] = js.undefined
-  var top: js.UndefOr[typings.grommet.grommetStrings.top | bottom] = js.undefined
+  var bottom: js.UndefOr[String] = js.undefined
+  var horizontal: js.UndefOr[String] = js.undefined
+  var left: js.UndefOr[String] = js.undefined
+  var right: js.UndefOr[String] = js.undefined
+  var top: js.UndefOr[String] = js.undefined
+  var vertical: js.UndefOr[String] = js.undefined
 }
 
 object Top {
   @scala.inline
   def apply(
-    bottom: top | bottom = null,
-    left: right | left = null,
-    right: right | left = null,
-    top: top | bottom = null
+    bottom: String = null,
+    horizontal: String = null,
+    left: String = null,
+    right: String = null,
+    top: String = null,
+    vertical: String = null
   ): Top = {
     val __obj = js.Dynamic.literal()
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[Top]
   }
 }

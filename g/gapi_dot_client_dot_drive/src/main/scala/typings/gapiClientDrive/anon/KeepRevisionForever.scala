@@ -1,5 +1,6 @@
 package typings.gapiClientDrive.anon
 
+import typings.gapiClientDrive.gapi.client.drive.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,6 +8,11 @@ import scala.scalajs.js.annotation._
 trait KeepRevisionForever extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[String] = js.undefined
+  /**
+    * Set to true to opt in to API behavior that aims for all items to have exactly one parent. This parameter only takes effect if the item is not in a
+    * shared drive. Requests that specify more than one parent fail.
+    */
+  var enforceSingleParent: js.UndefOr[Boolean] = js.undefined
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   /**
@@ -14,7 +20,10 @@ trait KeepRevisionForever extends js.Object {
     * the domain by default; this parameter bypasses that behavior for the request. Permissions are still inherited from parent folders.
     */
   var ignoreDefaultVisibility: js.UndefOr[Boolean] = js.undefined
-  /** Whether to set the 'keepForever' field in the new head revision. This is only applicable to files with binary content in Drive. */
+  /**
+    * Whether to set the 'keepForever' field in the new head revision. This is only applicable to files with binary content in Google Drive. Only 200
+    * revisions for the file can be kept forever. If the limit is reached, try deleting pinned revisions.
+    */
   var keepRevisionForever: js.UndefOr[Boolean] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
@@ -24,25 +33,26 @@ trait KeepRevisionForever extends js.Object {
   var ocrLanguage: js.UndefOr[String] = js.undefined
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-    * Overrides userIp if both are provided.
-    */
+  /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
-  /** Resource Parameter for folder creation */
-  var resource: js.UndefOr[js.Any] = js.undefined
-  /** Whether the requesting application supports Team Drives. */
+  /** Request body */
+  var resource: File
+  /** Whether the requesting application supports both My Drives and shared drives. */
+  var supportsAllDrives: js.UndefOr[Boolean] = js.undefined
+  /** Deprecated use supportsAllDrives instead. */
   var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
   /** Whether to use the uploaded content as indexable text. */
   var useContentAsIndexableText: js.UndefOr[Boolean] = js.undefined
-  /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
+  /** Deprecated. Please use quotaUser instead. */
   var userIp: js.UndefOr[String] = js.undefined
 }
 
 object KeepRevisionForever {
   @scala.inline
   def apply(
+    resource: File,
     alt: String = null,
+    enforceSingleParent: js.UndefOr[Boolean] = js.undefined,
     fields: String = null,
     ignoreDefaultVisibility: js.UndefOr[Boolean] = js.undefined,
     keepRevisionForever: js.UndefOr[Boolean] = js.undefined,
@@ -51,13 +61,14 @@ object KeepRevisionForever {
     ocrLanguage: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
     quotaUser: String = null,
-    resource: js.Any = null,
+    supportsAllDrives: js.UndefOr[Boolean] = js.undefined,
     supportsTeamDrives: js.UndefOr[Boolean] = js.undefined,
     useContentAsIndexableText: js.UndefOr[Boolean] = js.undefined,
     userIp: String = null
   ): KeepRevisionForever = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (!js.isUndefined(enforceSingleParent)) __obj.updateDynamic("enforceSingleParent")(enforceSingleParent.get.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreDefaultVisibility)) __obj.updateDynamic("ignoreDefaultVisibility")(ignoreDefaultVisibility.get.asInstanceOf[js.Any])
     if (!js.isUndefined(keepRevisionForever)) __obj.updateDynamic("keepRevisionForever")(keepRevisionForever.get.asInstanceOf[js.Any])
@@ -66,7 +77,7 @@ object KeepRevisionForever {
     if (ocrLanguage != null) __obj.updateDynamic("ocrLanguage")(ocrLanguage.asInstanceOf[js.Any])
     if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsAllDrives)) __obj.updateDynamic("supportsAllDrives")(supportsAllDrives.get.asInstanceOf[js.Any])
     if (!js.isUndefined(supportsTeamDrives)) __obj.updateDynamic("supportsTeamDrives")(supportsTeamDrives.get.asInstanceOf[js.Any])
     if (!js.isUndefined(useContentAsIndexableText)) __obj.updateDynamic("useContentAsIndexableText")(useContentAsIndexableText.get.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])

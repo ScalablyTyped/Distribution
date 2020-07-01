@@ -140,7 +140,7 @@ object SchemaAddress {
     name: String = null,
     network: String = null,
     networkTier: String = null,
-    prefixLength: Int | Double = null,
+    prefixLength: js.UndefOr[Double] = js.undefined,
     purpose: String = null,
     region: String = null,
     selfLink: String = null,
@@ -161,7 +161,7 @@ object SchemaAddress {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
     if (networkTier != null) __obj.updateDynamic("networkTier")(networkTier.asInstanceOf[js.Any])
-    if (prefixLength != null) __obj.updateDynamic("prefixLength")(prefixLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(prefixLength)) __obj.updateDynamic("prefixLength")(prefixLength.get.asInstanceOf[js.Any])
     if (purpose != null) __obj.updateDynamic("purpose")(purpose.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])

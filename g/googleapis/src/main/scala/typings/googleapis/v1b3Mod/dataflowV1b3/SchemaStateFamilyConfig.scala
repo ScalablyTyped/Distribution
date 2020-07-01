@@ -23,7 +23,7 @@ object SchemaStateFamilyConfig {
   @scala.inline
   def apply(isRead: js.UndefOr[Boolean] = js.undefined, stateFamily: String = null): SchemaStateFamilyConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isRead)) __obj.updateDynamic("isRead")(isRead.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRead)) __obj.updateDynamic("isRead")(isRead.get.asInstanceOf[js.Any])
     if (stateFamily != null) __obj.updateDynamic("stateFamily")(stateFamily.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStateFamilyConfig]
   }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "numbro" : "2.2.0"
+      "numbro" : "2.3.1"
     }
   ],
   "test-dependencies" : [
     {
-      "numbro" : "2.2.0"
+      "numbro" : "2.3.1"
     }
   ],
   "compile-devDependencies" : [

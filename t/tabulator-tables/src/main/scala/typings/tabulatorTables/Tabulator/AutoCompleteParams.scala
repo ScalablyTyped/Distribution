@@ -30,14 +30,14 @@ trait AutoCompleteParams
     You can customise this placeholder using the searchingPlaceholder option. */
   var searchingPlaceholder: js.UndefOr[String | HTMLElement] = js.undefined
   var showListOnEmpty: js.UndefOr[Boolean] = js.undefined
-  var values: `true` | js.Array[String] | JSONRecord | String
+  var values: `true` | (js.Array[_ | String]) | JSONRecord | String
   var verticalNavigation: js.UndefOr[editor | table | hybrid] = js.undefined
 }
 
 object AutoCompleteParams {
   @scala.inline
   def apply(
-    values: `true` | js.Array[String] | JSONRecord | String,
+    values: `true` | (js.Array[_ | String]) | JSONRecord | String,
     allowEmpty: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String = null,
     elementAttributes: JSONRecord = null,

@@ -29,12 +29,12 @@ object SchemaListVendorsResponse {
   @scala.inline
   def apply(
     nextPageToken: String = null,
-    totalSize: Int | Double = null,
+    totalSize: js.UndefOr[Double] = js.undefined,
     vendors: js.Array[SchemaCompany] = null
   ): SchemaListVendorsResponse = {
     val __obj = js.Dynamic.literal()
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (totalSize != null) __obj.updateDynamic("totalSize")(totalSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalSize)) __obj.updateDynamic("totalSize")(totalSize.get.asInstanceOf[js.Any])
     if (vendors != null) __obj.updateDynamic("vendors")(vendors.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListVendorsResponse]
   }

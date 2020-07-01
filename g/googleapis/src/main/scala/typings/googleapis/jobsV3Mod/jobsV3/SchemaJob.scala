@@ -261,7 +261,7 @@ object SchemaJob {
     postingRegion: String = null,
     postingUpdateTime: String = null,
     processingOptions: SchemaProcessingOptions = null,
-    promotionValue: Int | Double = null,
+    promotionValue: js.UndefOr[Double] = js.undefined,
     qualifications: String = null,
     requisitionId: String = null,
     responsibilities: String = null,
@@ -293,7 +293,7 @@ object SchemaJob {
     if (postingRegion != null) __obj.updateDynamic("postingRegion")(postingRegion.asInstanceOf[js.Any])
     if (postingUpdateTime != null) __obj.updateDynamic("postingUpdateTime")(postingUpdateTime.asInstanceOf[js.Any])
     if (processingOptions != null) __obj.updateDynamic("processingOptions")(processingOptions.asInstanceOf[js.Any])
-    if (promotionValue != null) __obj.updateDynamic("promotionValue")(promotionValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(promotionValue)) __obj.updateDynamic("promotionValue")(promotionValue.get.asInstanceOf[js.Any])
     if (qualifications != null) __obj.updateDynamic("qualifications")(qualifications.asInstanceOf[js.Any])
     if (requisitionId != null) __obj.updateDynamic("requisitionId")(requisitionId.asInstanceOf[js.Any])
     if (responsibilities != null) __obj.updateDynamic("responsibilities")(responsibilities.asInstanceOf[js.Any])

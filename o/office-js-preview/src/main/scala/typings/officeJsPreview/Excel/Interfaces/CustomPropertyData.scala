@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 trait CustomPropertyData extends js.Object {
   /**
     *
-    * The key of the custom property.
+    * The key of the custom property. The key is limited to 255 characters outside of Excel on the web (larger keys are automatically trimmed to 255 characters on other platforms).
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -29,7 +29,7 @@ trait CustomPropertyData extends js.Object {
   ] = js.undefined
   /**
     *
-    * The value of the custom property.
+    * The value of the custom property. The value is limited to 255 characters outside of Excel on the web (larger values are automatically trimmed to 255 characters on other platforms).
     *
     * [Api set: ExcelApi 1.7]
     */

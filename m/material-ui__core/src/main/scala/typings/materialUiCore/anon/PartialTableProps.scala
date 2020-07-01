@@ -273,6 +273,7 @@ trait PartialTableProps extends js.Object {
   var typeof: js.UndefOr[String] = js.native
   var unselectable: js.UndefOr[on | off] = js.native
   var vocab: js.UndefOr[String] = js.native
+  var width: js.UndefOr[Double | String] = js.native
 }
 
 object PartialTableProps {
@@ -457,7 +458,8 @@ object PartialTableProps {
     translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,
-    vocab: String = null
+    vocab: String = null,
+    width: Double | String = null
   ): PartialTableProps = {
     val __obj = js.Dynamic.literal()
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
@@ -640,6 +642,7 @@ object PartialTableProps {
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialTableProps]
   }
 }

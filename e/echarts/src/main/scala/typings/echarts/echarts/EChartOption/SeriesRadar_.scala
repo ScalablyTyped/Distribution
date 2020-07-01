@@ -2,7 +2,6 @@ package typings.echarts.echarts.EChartOption
 
 import typings.echarts.anon.AreaStyle
 import typings.echarts.anon.BorderRadius
-import typings.echarts.anon.ExtraCssText
 import typings.echarts.anon.Opacity
 import typings.echarts.anon.ShadowBlur
 import typings.echarts.anon.ShadowOffsetY
@@ -325,7 +324,7 @@ trait SeriesRadar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
   /**
     * @default
     * "radar"
@@ -393,7 +392,7 @@ object SeriesRadar_ {
     symbolOffset: js.Array[_] = null,
     symbolRotate: js.UndefOr[Double] = js.undefined,
     symbolSize: js.Array[_] | js.Function | Double = null,
-    tooltip: ExtraCssText = null,
+    tooltip: BaseTooltip = null,
     `type`: String = null,
     z: js.UndefOr[Double] = js.undefined,
     zlevel: js.UndefOr[Double] = js.undefined

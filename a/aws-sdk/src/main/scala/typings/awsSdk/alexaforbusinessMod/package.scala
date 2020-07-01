@@ -109,6 +109,7 @@ package object alexaforbusinessMod {
   type DeviceEventValue = java.lang.String
   type DeviceLocale = java.lang.String
   type DeviceName = java.lang.String
+  type DeviceRoomName = java.lang.String
   type DeviceSerialNumber = java.lang.String
   type DeviceSerialNumberForAVS = java.lang.String
   /* Rewritten from type alias, can be one of: 
@@ -136,6 +137,8 @@ package object alexaforbusinessMod {
     - typings.awsSdk.awsSdkStrings.NETWORK_PROFILE_NOT_FOUND
     - typings.awsSdk.awsSdkStrings.INVALID_PASSWORD_STATE
     - typings.awsSdk.awsSdkStrings.PASSWORD_NOT_FOUND
+    - typings.awsSdk.awsSdkStrings.PASSWORD_MANAGER_ACCESS_DENIED
+    - typings.awsSdk.awsSdkStrings.CERTIFICATE_AUTHORITY_ACCESS_DENIED
     - java.lang.String
   */
   type DeviceStatusDetailCode = typings.awsSdk.alexaforbusinessMod._DeviceStatusDetailCode | java.lang.String

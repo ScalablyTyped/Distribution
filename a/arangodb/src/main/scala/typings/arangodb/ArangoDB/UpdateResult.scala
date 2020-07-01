@@ -11,7 +11,7 @@ trait UpdateResult[T /* <: js.Object */] extends UpdateMetadata {
 
 object UpdateResult {
   @scala.inline
-  def apply[T](
+  def apply[/* <: js.Object */ T](
     _id: String,
     _key: String,
     _oldRev: String,

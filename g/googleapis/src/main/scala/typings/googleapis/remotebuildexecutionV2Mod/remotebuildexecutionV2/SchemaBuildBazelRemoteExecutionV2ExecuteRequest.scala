@@ -44,7 +44,7 @@ object SchemaBuildBazelRemoteExecutionV2ExecuteRequest {
     if (actionDigest != null) __obj.updateDynamic("actionDigest")(actionDigest.asInstanceOf[js.Any])
     if (executionPolicy != null) __obj.updateDynamic("executionPolicy")(executionPolicy.asInstanceOf[js.Any])
     if (resultsCachePolicy != null) __obj.updateDynamic("resultsCachePolicy")(resultsCachePolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipCacheLookup)) __obj.updateDynamic("skipCacheLookup")(skipCacheLookup.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipCacheLookup)) __obj.updateDynamic("skipCacheLookup")(skipCacheLookup.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2ExecuteRequest]
   }
 }

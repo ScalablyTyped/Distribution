@@ -70,7 +70,7 @@ object SchemaIPAllocationPolicy {
     if (clusterSecondaryRangeName != null) __obj.updateDynamic("clusterSecondaryRangeName")(clusterSecondaryRangeName.asInstanceOf[js.Any])
     if (servicesIpv4CidrBlock != null) __obj.updateDynamic("servicesIpv4CidrBlock")(servicesIpv4CidrBlock.asInstanceOf[js.Any])
     if (servicesSecondaryRangeName != null) __obj.updateDynamic("servicesSecondaryRangeName")(servicesSecondaryRangeName.asInstanceOf[js.Any])
-    if (!js.isUndefined(useIpAliases)) __obj.updateDynamic("useIpAliases")(useIpAliases.asInstanceOf[js.Any])
+    if (!js.isUndefined(useIpAliases)) __obj.updateDynamic("useIpAliases")(useIpAliases.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIPAllocationPolicy]
   }
 }

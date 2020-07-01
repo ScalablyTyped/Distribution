@@ -39,6 +39,7 @@ package object quicksightMod {
   type ColumnName = java.lang.String
   type ColumnSchemaList = js.Array[typings.awsSdk.quicksightMod.ColumnSchema]
   type ColumnTagList = js.Array[typings.awsSdk.quicksightMod.ColumnTag]
+  type CopySourceArn = java.lang.String
   type CustomSqlName = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ENABLED
@@ -48,6 +49,8 @@ package object quicksightMod {
   type DashboardBehavior = typings.awsSdk.quicksightMod._DashboardBehavior | java.lang.String
   type DashboardErrorList = js.Array[typings.awsSdk.quicksightMod.DashboardError]
   /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ACCESS_DENIED
+    - typings.awsSdk.awsSdkStrings.SOURCE_NOT_FOUND
     - typings.awsSdk.awsSdkStrings.DATA_SET_NOT_FOUND
     - typings.awsSdk.awsSdkStrings.INTERNAL_FAILURE
     - typings.awsSdk.awsSdkStrings.PARAMETER_VALUE_INCOMPATIBLE
@@ -70,6 +73,7 @@ package object quicksightMod {
   */
   type DashboardUIState = typings.awsSdk.quicksightMod._DashboardUIState | java.lang.String
   type DashboardVersionSummaryList = js.Array[typings.awsSdk.quicksightMod.DashboardVersionSummary]
+  type DataSetArnsList = js.Array[typings.awsSdk.quicksightMod.Arn]
   type DataSetConfigurationList = js.Array[typings.awsSdk.quicksightMod.DataSetConfiguration]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.SPICE
@@ -81,6 +85,8 @@ package object quicksightMod {
   type DataSetReferenceList = js.Array[typings.awsSdk.quicksightMod.DataSetReference]
   type DataSetSummaryList = js.Array[typings.awsSdk.quicksightMod.DataSetSummary]
   /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ACCESS_DENIED
+    - typings.awsSdk.awsSdkStrings.COPY_SOURCE_NOT_FOUND
     - typings.awsSdk.awsSdkStrings.TIMEOUT
     - typings.awsSdk.awsSdkStrings.ENGINE_VERSION_NOT_SUPPORTED
     - typings.awsSdk.awsSdkStrings.UNKNOWN_HOST
@@ -91,6 +97,7 @@ package object quicksightMod {
   */
   type DataSourceErrorInfoType = typings.awsSdk.quicksightMod._DataSourceErrorInfoType | java.lang.String
   type DataSourceList = js.Array[typings.awsSdk.quicksightMod.DataSource]
+  type DataSourceParametersList = js.Array[typings.awsSdk.quicksightMod.DataSourceParameters]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ADOBE_ANALYTICS
     - typings.awsSdk.awsSdkStrings.AMAZON_ELASTICSEARCH
@@ -316,6 +323,7 @@ package object quicksightMod {
   type TemplateAliasList = js.Array[typings.awsSdk.quicksightMod.TemplateAlias]
   type TemplateErrorList = js.Array[typings.awsSdk.quicksightMod.TemplateError]
   /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.SOURCE_NOT_FOUND
     - typings.awsSdk.awsSdkStrings.DATA_SET_NOT_FOUND
     - typings.awsSdk.awsSdkStrings.INTERNAL_FAILURE
     - java.lang.String

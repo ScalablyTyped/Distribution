@@ -9,20 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object promiseMod extends js.Object {
   @js.native
-  trait CancelablePromise[T] extends js.Object {
-    def cancel(): Unit = js.native
-    def `catch`[TResult](): js.Promise[T | TResult] = js.native
-    def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): js.Promise[T | TResult] = js.native
-    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](
-      onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],
-      onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
-    ): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
-  }
-  
-  @js.native
   class Deferred[R] () extends js.Object {
     var promise: js.Promise[R] = js.native
     @JSName("reject")

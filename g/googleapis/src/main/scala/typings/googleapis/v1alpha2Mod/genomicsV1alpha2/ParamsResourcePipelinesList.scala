@@ -48,7 +48,7 @@ object ParamsResourcePipelinesList {
     key: String = null,
     namePrefix: String = null,
     oauth_token: String = null,
-    pageSize: Int | Double = null,
+    pageSize: js.UndefOr[Double] = js.undefined,
     pageToken: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
     projectId: String = null,
@@ -66,9 +66,9 @@ object ParamsResourcePipelinesList {
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])

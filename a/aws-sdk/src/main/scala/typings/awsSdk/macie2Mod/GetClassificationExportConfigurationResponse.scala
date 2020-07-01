@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetClassificationExportConfigurationResponse extends js.Object {
   /**
-    * The location that data classification results are exported to, and the encryption settings that are used when storing results in that location.
+    * The location where data classification results are stored, and the encryption settings that are used when storing results in that location.
     */
   var configuration: js.UndefOr[ClassificationExportConfiguration] = js.native
 }

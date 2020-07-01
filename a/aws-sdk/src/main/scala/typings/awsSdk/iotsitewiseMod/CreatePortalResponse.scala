@@ -19,7 +19,7 @@ trait CreatePortalResponse extends js.Object {
     */
   var portalStartUrl: Url = js.native
   /**
-    * The status of the portal, which contains a state (CREATING after successfully calling this action) and any error message.
+    * The status of the portal, which contains a state (CREATING after successfully calling this operation) and any error message.
     */
   var portalStatus: PortalStatus = js.native
   /**

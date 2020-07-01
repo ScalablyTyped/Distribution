@@ -187,7 +187,7 @@ class PanelModelBase ()
     */
   def getComments(): js.Any = js.native
   /**
-    * Retuns the element by its name. It works recursively.
+    * Returns the element by its name. It works recursively.
     * @param name the element name
     */
   def getElementByName(name: String): IElement = js.native

@@ -23,7 +23,7 @@ object SchemaSpellingCorrection {
   @scala.inline
   def apply(corrected: js.UndefOr[Boolean] = js.undefined, correctedText: String = null): SchemaSpellingCorrection = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(corrected)) __obj.updateDynamic("corrected")(corrected.asInstanceOf[js.Any])
+    if (!js.isUndefined(corrected)) __obj.updateDynamic("corrected")(corrected.get.asInstanceOf[js.Any])
     if (correctedText != null) __obj.updateDynamic("correctedText")(correctedText.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSpellingCorrection]
   }

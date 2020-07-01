@@ -238,9 +238,9 @@ object settings extends js.Object {
     */
   var SPRITE_MAX_TEXTURES: Double = js.native
   /**
-    * If set to `true`, Textures and BaseTexture objects stored
+    * If set to `true`, *only* Textures and BaseTexture objects stored
     * in the caches ({@link PIXI.utils.TextureCache TextureCache} and
-    * {@link PIXI.utils.BaseTextureCache BaseTextureCache}) can *only* be
+    * {@link PIXI.utils.BaseTextureCache BaseTextureCache}) can be
     * used when calling {@link PIXI.Texture.from Texture.from} or
     * {@link PIXI.BaseTexture.from BaseTexture.from}.
     * Otherwise, these `from` calls throw an exception. Using this property
@@ -295,7 +295,6 @@ object settings extends js.Object {
     * @property {HTMLCanvasElement} view=null
     * @property {number} resolution=1
     * @property {boolean} antialias=false
-    * @property {boolean} forceFXAA=false
     * @property {boolean} autoDensity=false
     * @property {boolean} transparent=false
     * @property {number} backgroundColor=0x000000
@@ -311,7 +310,6 @@ object settings extends js.Object {
     var autoDensity: Boolean = js.native
     var backgroundColor: Double = js.native
     var clearBeforeRender: Boolean = js.native
-    var forceFXAA: Boolean = js.native
     var height: Double = js.native
     var legacy: Boolean = js.native
     var preserveDrawingBuffer: Boolean = js.native

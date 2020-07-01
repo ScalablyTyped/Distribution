@@ -142,7 +142,7 @@ object SchemaGdataMedia {
     contentType: String = null,
     contentTypeInfo: SchemaGdataContentTypeInfo = null,
     cosmoBinaryReference: String = null,
-    crc32cHash: Int | Double = null,
+    crc32cHash: js.UndefOr[Double] = js.undefined,
     diffChecksumsResponse: SchemaGdataDiffChecksumsResponse = null,
     diffDownloadResponse: SchemaGdataDiffDownloadResponse = null,
     diffUploadRequest: SchemaGdataDiffUploadRequest = null,
@@ -174,7 +174,7 @@ object SchemaGdataMedia {
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (contentTypeInfo != null) __obj.updateDynamic("contentTypeInfo")(contentTypeInfo.asInstanceOf[js.Any])
     if (cosmoBinaryReference != null) __obj.updateDynamic("cosmoBinaryReference")(cosmoBinaryReference.asInstanceOf[js.Any])
-    if (crc32cHash != null) __obj.updateDynamic("crc32cHash")(crc32cHash.asInstanceOf[js.Any])
+    if (!js.isUndefined(crc32cHash)) __obj.updateDynamic("crc32cHash")(crc32cHash.get.asInstanceOf[js.Any])
     if (diffChecksumsResponse != null) __obj.updateDynamic("diffChecksumsResponse")(diffChecksumsResponse.asInstanceOf[js.Any])
     if (diffDownloadResponse != null) __obj.updateDynamic("diffDownloadResponse")(diffDownloadResponse.asInstanceOf[js.Any])
     if (diffUploadRequest != null) __obj.updateDynamic("diffUploadRequest")(diffUploadRequest.asInstanceOf[js.Any])
@@ -183,9 +183,9 @@ object SchemaGdataMedia {
     if (downloadParameters != null) __obj.updateDynamic("downloadParameters")(downloadParameters.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    if (!js.isUndefined(hashVerified)) __obj.updateDynamic("hashVerified")(hashVerified.asInstanceOf[js.Any])
+    if (!js.isUndefined(hashVerified)) __obj.updateDynamic("hashVerified")(hashVerified.get.asInstanceOf[js.Any])
     if (`inline` != null) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPotentialRetry)) __obj.updateDynamic("isPotentialRetry")(isPotentialRetry.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPotentialRetry)) __obj.updateDynamic("isPotentialRetry")(isPotentialRetry.get.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (md5Hash != null) __obj.updateDynamic("md5Hash")(md5Hash.asInstanceOf[js.Any])
     if (mediaId != null) __obj.updateDynamic("mediaId")(mediaId.asInstanceOf[js.Any])

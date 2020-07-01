@@ -383,7 +383,6 @@ object Style extends js.Object {
   sealed trait noSpacing extends Style
   
   /**
-    *
     * Reset character and paragraph style to default.
     *
     */
@@ -391,7 +390,6 @@ object Style extends js.Object {
   sealed trait normal extends Style
   
   /**
-    *
     * Mixed styles or other style not in this list.
     *
     */
@@ -438,7 +436,6 @@ object Style extends js.Object {
   sealed trait title extends Style
   
   /**
-    *
     * Table-of-content level 1.
     *
     */
@@ -446,7 +443,6 @@ object Style extends js.Object {
   sealed trait toc1 extends Style
   
   /**
-    *
     * Table-of-content level 2.
     *
     */
@@ -454,7 +450,6 @@ object Style extends js.Object {
   sealed trait toc2 extends Style
   
   /**
-    *
     * Table-of-content level 3.
     *
     */
@@ -462,7 +457,6 @@ object Style extends js.Object {
   sealed trait toc3 extends Style
   
   /**
-    *
     * Table-of-content level 4.
     *
     */
@@ -470,7 +464,6 @@ object Style extends js.Object {
   sealed trait toc4 extends Style
   
   /**
-    *
     * Table-of-content level 5.
     *
     */
@@ -478,7 +471,6 @@ object Style extends js.Object {
   sealed trait toc5 extends Style
   
   /**
-    *
     * Table-of-content level 6.
     *
     */
@@ -486,7 +478,6 @@ object Style extends js.Object {
   sealed trait toc6 extends Style
   
   /**
-    *
     * Table-of-content level 7.
     *
     */
@@ -494,7 +485,6 @@ object Style extends js.Object {
   sealed trait toc7 extends Style
   
   /**
-    *
     * Table-of-content level 8.
     *
     */
@@ -502,7 +492,6 @@ object Style extends js.Object {
   sealed trait toc8 extends Style
   
   /**
-    *
     * Table-of-content level 9.
     *
     */
@@ -510,7 +499,6 @@ object Style extends js.Object {
   sealed trait toc9 extends Style
   
   /**
-    *
     * Table-of-content heading.
     *
     */

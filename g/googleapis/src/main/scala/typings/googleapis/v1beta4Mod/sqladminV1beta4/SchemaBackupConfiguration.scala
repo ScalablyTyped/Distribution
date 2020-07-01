@@ -43,10 +43,10 @@ object SchemaBackupConfiguration {
     startTime: String = null
   ): SchemaBackupConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(binaryLogEnabled)) __obj.updateDynamic("binaryLogEnabled")(binaryLogEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(binaryLogEnabled)) __obj.updateDynamic("binaryLogEnabled")(binaryLogEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(replicationLogArchivingEnabled)) __obj.updateDynamic("replicationLogArchivingEnabled")(replicationLogArchivingEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(replicationLogArchivingEnabled)) __obj.updateDynamic("replicationLogArchivingEnabled")(replicationLogArchivingEnabled.get.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBackupConfiguration]
   }

@@ -12,7 +12,7 @@ trait PromiseImplementation[P /* <: js.Thenable[_] */] extends js.Object {
 
 object PromiseImplementation {
   @scala.inline
-  def apply[P](all: js.Array[_] => P, reject: js.Any => P, resolve: js.Any => P): PromiseImplementation[P] = {
+  def apply[/* <: js.Thenable[_] */ P](all: js.Array[_] => P, reject: js.Any => P, resolve: js.Any => P): PromiseImplementation[P] = {
     val __obj = js.Dynamic.literal(all = js.Any.fromFunction1(all), reject = js.Any.fromFunction1(reject), resolve = js.Any.fromFunction1(resolve))
     __obj.asInstanceOf[PromiseImplementation[P]]
   }

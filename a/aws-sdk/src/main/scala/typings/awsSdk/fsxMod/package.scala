@@ -7,6 +7,13 @@ import scala.scalajs.js.annotation._
 package object fsxMod {
   type AWSAccountId = java.lang.String
   type ActiveDirectoryFullyQualifiedName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.FILE_SYSTEM_UPDATE
+    - typings.awsSdk.awsSdkStrings.STORAGE_OPTIMIZATION
+    - java.lang.String
+  */
+  type AdministrativeActionType = typings.awsSdk.fsxMod._AdministrativeActionType | java.lang.String
+  type AdministrativeActions = js.Array[typings.awsSdk.fsxMod.AdministrativeAction]
   type ArchivePath = java.lang.String
   type AutomaticBackupRetentionDays = scala.Double
   type BackupId = java.lang.String
@@ -91,6 +98,7 @@ package object fsxMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`file-system-id`
     - typings.awsSdk.awsSdkStrings.`backup-type`
+    - typings.awsSdk.awsSdkStrings.`file-system-type`
     - java.lang.String
   */
   type FilterName = typings.awsSdk.fsxMod._FilterName | java.lang.String
@@ -120,10 +128,20 @@ package object fsxMod {
   type ProgressPercent = scala.Double
   type ReportFormat = typings.awsSdk.awsSdkStrings.REPORT_CSV_20191124 | java.lang.String
   type ReportScope = typings.awsSdk.awsSdkStrings.FAILED_FILES_ONLY | java.lang.String
+  type RequestTime = typings.std.Date
   type ResourceARN = java.lang.String
   type SecurityGroupId = java.lang.String
   type SecurityGroupIds = js.Array[typings.awsSdk.fsxMod.SecurityGroupId]
   type StartTime = typings.std.Date
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.FAILED
+    - typings.awsSdk.awsSdkStrings.IN_PROGRESS
+    - typings.awsSdk.awsSdkStrings.PENDING
+    - typings.awsSdk.awsSdkStrings.COMPLETED
+    - typings.awsSdk.awsSdkStrings.UPDATED_OPTIMIZING
+    - java.lang.String
+  */
+  type Status = typings.awsSdk.fsxMod._Status | java.lang.String
   type StorageCapacity = scala.Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.SSD

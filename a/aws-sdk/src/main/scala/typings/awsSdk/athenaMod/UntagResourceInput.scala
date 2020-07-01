@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UntagResourceInput extends js.Object {
   /**
-    * Removes one or more tags from the workgroup resource for the specified ARN.
+    * Specifies the ARN of the resource from which tags are to be removed.
     */
   var ResourceARN: AmazonResourceName = js.native
   /**
-    * Removes the tags associated with one or more tag keys from the workgroup resource.
+    * A comma-separated list of one or more tag keys whose tags are to be removed from the specified resource.
     */
   var TagKeys: TagKeyList = js.native
 }

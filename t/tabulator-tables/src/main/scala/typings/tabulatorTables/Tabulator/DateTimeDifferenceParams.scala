@@ -30,6 +30,7 @@ object DateTimeDifferenceParams {
     invalidPlaceholder: `true` | String | Double | ValueStringCallback = null,
     outputFormat: String = null,
     suffix: js.UndefOr[Boolean] = js.undefined,
+    timezone: String = null,
     unit: years | months | weeks | days | hours | minutes | seconds = null
   ): DateTimeDifferenceParams = {
     val __obj = js.Dynamic.literal()
@@ -39,6 +40,7 @@ object DateTimeDifferenceParams {
     if (invalidPlaceholder != null) __obj.updateDynamic("invalidPlaceholder")(invalidPlaceholder.asInstanceOf[js.Any])
     if (outputFormat != null) __obj.updateDynamic("outputFormat")(outputFormat.asInstanceOf[js.Any])
     if (!js.isUndefined(suffix)) __obj.updateDynamic("suffix")(suffix.get.asInstanceOf[js.Any])
+    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateTimeDifferenceParams]
   }

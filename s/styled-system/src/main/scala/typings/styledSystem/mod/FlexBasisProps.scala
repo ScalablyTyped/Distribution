@@ -14,7 +14,7 @@ trait FlexBasisProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extend
 
 object FlexBasisProps {
   @scala.inline
-  def apply[ThemeType, TVal](flexBasis: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): FlexBasisProps[ThemeType, TVal] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType, TVal](flexBasis: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): FlexBasisProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(flexBasis)) __obj.updateDynamic("flexBasis")(flexBasis.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlexBasisProps[ThemeType, TVal]]

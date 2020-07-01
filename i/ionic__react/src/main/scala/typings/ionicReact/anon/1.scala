@@ -12,7 +12,7 @@ trait `1`[OverlayType /* <: OverlayElement */] extends js.Object {
 
 object `1` {
   @scala.inline
-  def apply[OverlayType](forwardedRef: RefObject[OverlayType] = null): `1`[OverlayType] = {
+  def apply[/* <: typings.ionicReact.createOverlayComponentMod.OverlayElement */ OverlayType](forwardedRef: RefObject[OverlayType] = null): `1`[OverlayType] = {
     val __obj = js.Dynamic.literal()
     if (forwardedRef != null) __obj.updateDynamic("forwardedRef")(forwardedRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[`1`[OverlayType]]

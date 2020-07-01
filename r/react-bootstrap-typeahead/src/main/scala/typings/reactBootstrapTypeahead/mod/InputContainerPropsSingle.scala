@@ -32,7 +32,7 @@ trait InputContainerPropsSingle[T /* <: TypeaheadModel */] extends js.Object {
 
 object InputContainerPropsSingle {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.reactBootstrapTypeahead.mod.TypeaheadModel */ T](
     `aria-activedescendant`: String,
     `aria-autocomplete`: list | both,
     `aria-expanded`: Boolean,

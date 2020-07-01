@@ -24,6 +24,7 @@ trait PickerPanelDateProps[DateType]
      with PickerPanelProps[DateType] {
   var disabledTime: js.UndefOr[DisabledTime[DateType]] = js.undefined
   var picker: js.UndefOr[date] = js.undefined
+  var showNow: js.UndefOr[Boolean] = js.undefined
   var showTime: js.UndefOr[Boolean | SharedTimeProps[DateType]] = js.undefined
   var showToday: js.UndefOr[Boolean] = js.undefined
 }
@@ -54,6 +55,7 @@ object PickerPanelDateProps {
     pickerValue: DateType = null,
     prefixCls: String = null,
     renderExtraFooter: /* mode */ PanelMode => ReactNode = null,
+    showNow: js.UndefOr[Boolean] = js.undefined,
     showTime: Boolean | SharedTimeProps[DateType] = null,
     showToday: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
@@ -82,6 +84,7 @@ object PickerPanelDateProps {
     if (pickerValue != null) __obj.updateDynamic("pickerValue")(pickerValue.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (renderExtraFooter != null) __obj.updateDynamic("renderExtraFooter")(js.Any.fromFunction1(renderExtraFooter))
+    if (!js.isUndefined(showNow)) __obj.updateDynamic("showNow")(showNow.get.asInstanceOf[js.Any])
     if (showTime != null) __obj.updateDynamic("showTime")(showTime.asInstanceOf[js.Any])
     if (!js.isUndefined(showToday)) __obj.updateDynamic("showToday")(showToday.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

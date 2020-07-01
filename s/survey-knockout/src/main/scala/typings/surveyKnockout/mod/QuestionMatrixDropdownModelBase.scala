@@ -30,7 +30,7 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
     */
   var columnLayout: String = js.native
   /**
-    * Use this property to set the mimimum column width.
+    * Use this property to set the minimum column width.
     */
   var columnMinWidth: String = js.native
   var columnsLocation: String = js.native
@@ -71,7 +71,7 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
   /* protected */ def generateTotalRow(): MatrixDropdownRowModelBase = js.native
   def getCellType(): String = js.native
   /**
-    * Returns the column by it's name. Retuns null if a column with this name doesn't exist.
+    * Returns the column by it's name. Returns null if a column with this name doesn't exist.
     * @param column
     */
   def getColumnByName(columnName: String): MatrixDropdownColumn = js.native
@@ -104,7 +104,7 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
   /* protected */ def onCellValueChanged(row: MatrixDropdownRowModelBase, columnName: String, rowValue: js.Any): Unit = js.native
   def onCellValueChangedCallback(options: js.Any): Unit = js.native
   def onColumnCellTypeChanged(column: MatrixDropdownColumn): Unit = js.native
-  def onColumnPropertiesChanged(column: MatrixDropdownColumn): Unit = js.native
+  def onColumnPropertyChanged(column: MatrixDropdownColumn, name: String, newValue: js.Any): Unit = js.native
   /* protected */ def onEndRowAdding(): Unit = js.native
   /* protected */ def onEndRowRemoving(index: Double): Unit = js.native
   /* protected */ def onMatrixRowCreated(row: MatrixDropdownRowModelBase): Unit = js.native

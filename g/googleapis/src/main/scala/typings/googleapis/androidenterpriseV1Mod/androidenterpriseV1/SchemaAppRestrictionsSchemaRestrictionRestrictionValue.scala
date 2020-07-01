@@ -38,14 +38,14 @@ object SchemaAppRestrictionsSchemaRestrictionRestrictionValue {
   def apply(
     `type`: String = null,
     valueBool: js.UndefOr[Boolean] = js.undefined,
-    valueInteger: Int | Double = null,
+    valueInteger: js.UndefOr[Double] = js.undefined,
     valueMultiselect: js.Array[String] = null,
     valueString: String = null
   ): SchemaAppRestrictionsSchemaRestrictionRestrictionValue = {
     val __obj = js.Dynamic.literal()
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueBool)) __obj.updateDynamic("valueBool")(valueBool.asInstanceOf[js.Any])
-    if (valueInteger != null) __obj.updateDynamic("valueInteger")(valueInteger.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueBool)) __obj.updateDynamic("valueBool")(valueBool.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueInteger)) __obj.updateDynamic("valueInteger")(valueInteger.get.asInstanceOf[js.Any])
     if (valueMultiselect != null) __obj.updateDynamic("valueMultiselect")(valueMultiselect.asInstanceOf[js.Any])
     if (valueString != null) __obj.updateDynamic("valueString")(valueString.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAppRestrictionsSchemaRestrictionRestrictionValue]

@@ -12,7 +12,7 @@ trait MultiArgumentsOptions[EmittedType /* <: js.Array[_] */] extends Options[Em
 
 object MultiArgumentsOptions {
   @scala.inline
-  def apply[EmittedType](
+  def apply[/* <: js.Array[_] */ EmittedType](
     multiArgs: `true`,
     filter: EmittedType => Boolean = null,
     rejectionEvents: js.Array[String | js.Symbol] = null,

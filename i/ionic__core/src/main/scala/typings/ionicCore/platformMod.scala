@@ -48,6 +48,9 @@ object platformMod extends js.Object {
   trait Platforms extends js.Object
   
   val isPlatform: IsPlatformSignature = js.native
+  def getPlatforms(): js.Array[
+    ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
+  ] = js.native
   def getPlatforms(win: js.Any): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = js.native

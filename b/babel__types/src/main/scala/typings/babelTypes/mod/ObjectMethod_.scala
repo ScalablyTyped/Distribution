@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
   var computed: Boolean
   var decorators: js.Array[Decorator_] | Null
   var generator: Boolean
-  var key: js.Any
+  var key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_
   var kind: method | get | set
   var params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
   var returnType: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null
@@ -39,7 +39,7 @@ object ObjectMethod_ {
     body: BlockStatement_,
     computed: Boolean,
     generator: Boolean,
-    key: js.Any,
+    key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_,
     kind: method | get | set,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     `type`: ObjectMethod,

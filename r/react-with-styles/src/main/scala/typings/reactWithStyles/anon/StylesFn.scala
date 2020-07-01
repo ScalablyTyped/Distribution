@@ -11,7 +11,7 @@ trait StylesFn[TStyles /* <: Styles */] extends js.Object {
 
 object StylesFn {
   @scala.inline
-  def apply[TStyles](stylesFn: /* repeated */ js.Any => TStyles): StylesFn[TStyles] = {
+  def apply[/* <: typings.reactWithStyles.mod.Styles */ TStyles](stylesFn: /* repeated */ js.Any => TStyles): StylesFn[TStyles] = {
     val __obj = js.Dynamic.literal(stylesFn = js.Any.fromFunction1(stylesFn))
     __obj.asInstanceOf[StylesFn[TStyles]]
   }

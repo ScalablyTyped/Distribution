@@ -221,7 +221,7 @@ object SchemaForwardingRule {
     val __obj = js.Dynamic.literal()
     if (IPAddress != null) __obj.updateDynamic("IPAddress")(IPAddress.asInstanceOf[js.Any])
     if (IPProtocol != null) __obj.updateDynamic("IPProtocol")(IPProtocol.asInstanceOf[js.Any])
-    if (!js.isUndefined(allPorts)) __obj.updateDynamic("allPorts")(allPorts.asInstanceOf[js.Any])
+    if (!js.isUndefined(allPorts)) __obj.updateDynamic("allPorts")(allPorts.get.asInstanceOf[js.Any])
     if (backendService != null) __obj.updateDynamic("backendService")(backendService.asInstanceOf[js.Any])
     if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])

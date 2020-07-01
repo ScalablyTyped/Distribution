@@ -4,15 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BulkWriteDeleteManyOperation[T] extends BulkWriteOperation[T] {
-  var deleteMany: BulkWriteDeleteOperation[T]
+trait BulkWriteDeleteManyOperation[TSchema] extends BulkWriteOperation[TSchema] {
+  var deleteMany: BulkWriteDeleteOperation[TSchema]
 }
 
 object BulkWriteDeleteManyOperation {
   @scala.inline
-  def apply[T](deleteMany: BulkWriteDeleteOperation[T]): BulkWriteDeleteManyOperation[T] = {
+  def apply[TSchema](deleteMany: BulkWriteDeleteOperation[TSchema]): BulkWriteDeleteManyOperation[TSchema] = {
     val __obj = js.Dynamic.literal(deleteMany = deleteMany.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BulkWriteDeleteManyOperation[T]]
+    __obj.asInstanceOf[BulkWriteDeleteManyOperation[TSchema]]
   }
 }
 

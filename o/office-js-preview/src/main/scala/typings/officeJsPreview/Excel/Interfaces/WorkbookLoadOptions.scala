@@ -84,7 +84,7 @@ trait WorkbookLoadOptions extends js.Object {
   var properties: js.UndefOr[DocumentPropertiesLoadOptions] = js.undefined
   /**
     *
-    * Returns workbook protection object for a workbook.
+    * Returns the protection object for a workbook.
     *
     * [Api set: ExcelApi 1.7]
     */

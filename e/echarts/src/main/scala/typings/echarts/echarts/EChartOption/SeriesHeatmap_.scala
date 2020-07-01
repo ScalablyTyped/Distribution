@@ -1,11 +1,10 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.anon.AnimationDurationUpdate
 import typings.echarts.anon.AnimationEasing
 import typings.echarts.anon.AnimationEasingUpdate
+import typings.echarts.anon.AnimationThreshold
 import typings.echarts.anon.BorderType
 import typings.echarts.anon.Distance
-import typings.echarts.anon.ExtraCssText
 import typings.echarts.anon.ItemStyleBorderTypeLabelDistance
 import typings.echarts.echarts.EChartOption.SeriesHeatmap.DataObject
 import scala.scalajs.js
@@ -273,21 +272,21 @@ trait SeriesHeatmap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-heatmap.markArea
     */
-  var markArea: js.UndefOr[AnimationEasingUpdate] = js.undefined
+  var markArea: js.UndefOr[AnimationThreshold] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-heatmap.markLine
     */
-  var markLine: js.UndefOr[AnimationEasing] = js.undefined
+  var markLine: js.UndefOr[AnimationEasingUpdate] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-heatmap.markPoint
     */
-  var markPoint: js.UndefOr[AnimationDurationUpdate] = js.undefined
+  var markPoint: js.UndefOr[AnimationEasing] = js.undefined
   /**
     * Maximum opacity. It is valid with
     * [coordinateSystem](https://echarts.apache.org/en/option.html#series-heatmap.coordinateSystem)
@@ -334,7 +333,7 @@ trait SeriesHeatmap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-heatmap.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
   /**
     * @default
     * "heatmap"
@@ -408,14 +407,14 @@ object SeriesHeatmap_ {
     id: String = null,
     itemStyle: BorderType = null,
     label: Distance = null,
-    markArea: AnimationEasingUpdate = null,
-    markLine: AnimationEasing = null,
-    markPoint: AnimationDurationUpdate = null,
+    markArea: AnimationThreshold = null,
+    markLine: AnimationEasingUpdate = null,
+    markPoint: AnimationEasing = null,
     maxOpacity: js.UndefOr[Double] = js.undefined,
     minOpacity: js.UndefOr[Double] = js.undefined,
     name: String = null,
     silent: js.UndefOr[Boolean] = js.undefined,
-    tooltip: ExtraCssText = null,
+    tooltip: BaseTooltip = null,
     `type`: String = null,
     xAxisIndex: js.UndefOr[Double] = js.undefined,
     yAxisIndex: js.UndefOr[Double] = js.undefined,

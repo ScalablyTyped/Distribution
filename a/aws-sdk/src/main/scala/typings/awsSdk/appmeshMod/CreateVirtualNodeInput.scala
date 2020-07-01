@@ -18,7 +18,7 @@ trait CreateVirtualNodeInput extends js.Object {
   /**
     * The AWS IAM account ID of the service mesh owner. If the account ID is not your own, then
     the account that you specify must share the mesh with your account before you can create 
-    the resource in the service mesh. For more information about mesh sharing, see Working with Shared Meshes.
+    the resource in the service mesh. For more information about mesh sharing, see Working with shared meshes.
     */
   var meshOwner: js.UndefOr[AccountId] = js.native
   /**

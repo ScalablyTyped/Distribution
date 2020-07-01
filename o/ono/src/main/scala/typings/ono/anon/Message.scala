@@ -13,7 +13,7 @@ trait Message[E /* <: ErrorLike */, P /* <: js.Object */] extends js.Object {
 
 object Message {
   @scala.inline
-  def apply[E, P](message: String, originalError: E = null, props: P = null): Message[E, P] = {
+  def apply[/* <: typings.ono.typesMod.ErrorLike */ E, /* <: js.Object */ P](message: String, originalError: E = null, props: P = null): Message[E, P] = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     if (originalError != null) __obj.updateDynamic("originalError")(originalError.asInstanceOf[js.Any])
     if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])

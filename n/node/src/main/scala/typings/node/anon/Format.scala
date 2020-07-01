@@ -14,7 +14,7 @@ trait Format[PubF /* <: KeyFormat */] extends js.Object {
 
 object Format {
   @scala.inline
-  def apply[PubF](format: PubF, `type`: pkcs1 | spki): Format[PubF] = {
+  def apply[/* <: typings.node.cryptoMod.KeyFormat */ PubF](format: PubF, `type`: pkcs1 | spki): Format[PubF] = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Format[PubF]]

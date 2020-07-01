@@ -6,6 +6,7 @@ import typings.react.mod.global.JSX.Element
 import typings.reactNativeTabView.anon.Bounces
 import typings.reactNativeTabView.anon.GestureHandlerProps
 import typings.reactNativeTabView.anon.GetAccessibilityLabel
+import typings.reactNativeTabView.anon.SceneRendererPropsroutean
 import typings.reactNativeTabView.scrollPagerMod.default
 import typings.reactNativeTabView.typesMod.Route
 import scala.scalajs.js
@@ -30,7 +31,7 @@ object mod extends js.Object {
   class TabView[T /* <: Route */] ()
     extends typings.reactNativeTabView.tabViewMod.default[T]
   
-  def SceneMap[T /* <: js.Any */](scenes: StringDictionary[ComponentType[T]]): js.Function1[/* hasRouteJumpToPosition */ T, Element] = js.native
+  def SceneMap[T /* <: js.Any */](scenes: StringDictionary[ComponentType[T]]): js.Function1[/* hasRouteJumpToPosition */ SceneRendererPropsroutean, Element] = js.native
   /* static members */
   @js.native
   object ScrollPager extends js.Object {

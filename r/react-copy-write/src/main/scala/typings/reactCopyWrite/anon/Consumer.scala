@@ -19,7 +19,7 @@ trait Consumer[T /* <: js.Object */] extends js.Object {
 
 object Consumer {
   @scala.inline
-  def apply[T](
+  def apply[/* <: js.Object */ T](
     Consumer: Instantiable0[typings.reactCopyWrite.mod.Consumer[T]],
     Provider: Instantiable0[Provider[T]],
     createSelector: T => AnyDeepMemberOfState[T],

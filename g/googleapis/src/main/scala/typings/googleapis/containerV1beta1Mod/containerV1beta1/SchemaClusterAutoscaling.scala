@@ -29,7 +29,7 @@ object SchemaClusterAutoscaling {
     resourceLimits: js.Array[SchemaResourceLimit] = null
   ): SchemaClusterAutoscaling = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableNodeAutoprovisioning)) __obj.updateDynamic("enableNodeAutoprovisioning")(enableNodeAutoprovisioning.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableNodeAutoprovisioning)) __obj.updateDynamic("enableNodeAutoprovisioning")(enableNodeAutoprovisioning.get.asInstanceOf[js.Any])
     if (resourceLimits != null) __obj.updateDynamic("resourceLimits")(resourceLimits.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaClusterAutoscaling]
   }

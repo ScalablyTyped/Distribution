@@ -20,7 +20,7 @@ object SchemaQueryItem {
   @scala.inline
   def apply(isSynthetic: js.UndefOr[Boolean] = js.undefined): SchemaQueryItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isSynthetic)) __obj.updateDynamic("isSynthetic")(isSynthetic.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSynthetic)) __obj.updateDynamic("isSynthetic")(isSynthetic.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQueryItem]
   }
 }

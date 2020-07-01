@@ -62,7 +62,7 @@ object SchemaKeyValue {
     if (bottomLabel != null) __obj.updateDynamic("bottomLabel")(bottomLabel.asInstanceOf[js.Any])
     if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentMultiline)) __obj.updateDynamic("contentMultiline")(contentMultiline.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentMultiline)) __obj.updateDynamic("contentMultiline")(contentMultiline.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo-cache-control
 
-Typings are for version 0.10.1-alpha.0
+Typings are for version 0.11.1
 
 ## Library description:
 A GraphQL extension for cache control

@@ -22,7 +22,7 @@ trait PaddingTopProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.
 
 object PaddingTopProps {
   @scala.inline
-  def apply[ThemeType](
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](
     paddingTop: js.UndefOr[
       Null | (ResponsiveValue[
         ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 

@@ -15,7 +15,7 @@ trait Point[P /* <: Properties */]
 
 object Point {
   @scala.inline
-  def apply[P](
+  def apply[/* <: typings.topojsonSpecification.mod.Properties */ P](
     coordinates: Positions,
     `type`: typings.topojsonSpecification.topojsonSpecificationStrings.Point,
     bbox: BBox = null,

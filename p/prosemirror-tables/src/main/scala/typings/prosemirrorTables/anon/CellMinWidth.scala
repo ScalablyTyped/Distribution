@@ -14,7 +14,7 @@ trait CellMinWidth[S /* <: Schema[_, _] */] extends js.Object {
 
 object CellMinWidth {
   @scala.inline
-  def apply[S](
+  def apply[/* <: typings.prosemirrorModel.mod.Schema[_, _] */ S](
     View: NodeView[S] = null,
     cellMinWidth: js.UndefOr[Double] = js.undefined,
     handleWidth: js.UndefOr[Double] = js.undefined

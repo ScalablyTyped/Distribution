@@ -1,7 +1,8 @@
 package typings.antd.transferMod
 
 import typings.antd.anon.PartialTransferLocale
-import typings.antd.renderListBodyMod.TransferListBodyProps
+import typings.antd.listBodyMod.TransferListBodyProps
+import typings.antd.transferInterfaceMod.PaginationType
 import typings.antd.transferListMod.TransferListProps
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
@@ -44,8 +45,10 @@ trait TransferProps extends js.Object {
       Unit
     ]
   ] = js.undefined
+  var oneWay: js.UndefOr[Boolean] = js.undefined
   var operationStyle: js.UndefOr[CSSProperties] = js.undefined
   var operations: js.UndefOr[js.Array[String]] = js.undefined
+  var pagination: js.UndefOr[PaginationType] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var render: js.UndefOr[TransferRender] = js.undefined
   var rowKey: js.UndefOr[js.Function1[/* record */ TransferItem, String]] = js.undefined
@@ -73,8 +76,10 @@ object TransferProps {
     onScroll: (/* direction */ TransferDirection, /* e */ SyntheticEvent[HTMLUListElement, Event]) => Unit = null,
     onSearch: (/* direction */ TransferDirection, /* value */ String) => Unit = null,
     onSelectChange: (/* sourceSelectedKeys */ js.Array[String], /* targetSelectedKeys */ js.Array[String]) => Unit = null,
+    oneWay: js.UndefOr[Boolean] = js.undefined,
     operationStyle: CSSProperties = null,
     operations: js.Array[String] = null,
+    pagination: PaginationType = null,
     prefixCls: String = null,
     render: /* item */ TransferItem => RenderResult = null,
     rowKey: /* record */ TransferItem => String = null,
@@ -97,8 +102,10 @@ object TransferProps {
     if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction2(onScroll))
     if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction2(onSearch))
     if (onSelectChange != null) __obj.updateDynamic("onSelectChange")(js.Any.fromFunction2(onSelectChange))
+    if (!js.isUndefined(oneWay)) __obj.updateDynamic("oneWay")(oneWay.get.asInstanceOf[js.Any])
     if (operationStyle != null) __obj.updateDynamic("operationStyle")(operationStyle.asInstanceOf[js.Any])
     if (operations != null) __obj.updateDynamic("operations")(operations.asInstanceOf[js.Any])
+    if (pagination != null) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (rowKey != null) __obj.updateDynamic("rowKey")(js.Any.fromFunction1(rowKey))

@@ -23,7 +23,7 @@ trait CustomEditorProps[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String
 
 object CustomEditorProps {
   @scala.inline
-  def apply[TRow, K](
+  def apply[/* <: js.Object */ TRow, /* <: / * keyof TRow * / java.lang.String */ K](
     defaultValue: /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ js.Any,
     row: TRow,
     StringDictionary: /**

@@ -5,18 +5,10 @@ import typings.tstl.anon.PickISharedLockablelocksh
 import typings.tstl.anon.PickISharedLockabletryloc
 import typings.tstl.anon.PickISharedTimedLockablet
 import typings.tstl.anon.PickISharedTimedLockabletTrylockshareduntil
-import typings.tstl.sharedLockMod.Closure
-import typings.tstl.sharedLockMod.IMutex
+import typings.tstl.sharedLockMod.SharedLock.Closure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
-
-@JSImport("tstl", "SharedLock")
-@js.native
-class SharedLock[Mutex /* <: IMutex */] protected ()
-  extends typings.tstl.threadMod.SharedLock[Mutex] {
-  def this(mutex: Mutex) = this()
-}
 
 @JSImport("tstl", "SharedLock")
 @js.native

@@ -73,9 +73,9 @@ object SchemaPricingSchedule {
   ): SchemaPricingSchedule = {
     val __obj = js.Dynamic.literal()
     if (capCostOption != null) __obj.updateDynamic("capCostOption")(capCostOption.asInstanceOf[js.Any])
-    if (!js.isUndefined(disregardOverdelivery)) __obj.updateDynamic("disregardOverdelivery")(disregardOverdelivery.asInstanceOf[js.Any])
+    if (!js.isUndefined(disregardOverdelivery)) __obj.updateDynamic("disregardOverdelivery")(disregardOverdelivery.get.asInstanceOf[js.Any])
     if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(flighted)) __obj.updateDynamic("flighted")(flighted.asInstanceOf[js.Any])
+    if (!js.isUndefined(flighted)) __obj.updateDynamic("flighted")(flighted.get.asInstanceOf[js.Any])
     if (floodlightActivityId != null) __obj.updateDynamic("floodlightActivityId")(floodlightActivityId.asInstanceOf[js.Any])
     if (pricingPeriods != null) __obj.updateDynamic("pricingPeriods")(pricingPeriods.asInstanceOf[js.Any])
     if (pricingType != null) __obj.updateDynamic("pricingType")(pricingType.asInstanceOf[js.Any])

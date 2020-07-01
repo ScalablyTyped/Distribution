@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
      with PatternLike
      with TSEntityName {
   var decorators: js.Array[Decorator_] | Null
-  var name: js.Any
+  var name: String
   var optional: Boolean | Null
   var typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null
   @JSName("type")
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
 object Identifier_ {
   @scala.inline
   def apply(
-    name: js.Any,
+    name: String,
     `type`: Identifier,
     decorators: js.Array[Decorator_] = null,
     end: Double = null.asInstanceOf[Double],

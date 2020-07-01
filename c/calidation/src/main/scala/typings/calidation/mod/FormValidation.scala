@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("calidation", "FormValidation")
 @js.native
-class FormValidation ()
-  extends Component[FormValidationProps, js.Object, js.Any]
+class FormValidation[T /* <: js.Object */] ()
+  extends Component[FormValidationProps[T], js.Object, js.Any]
 

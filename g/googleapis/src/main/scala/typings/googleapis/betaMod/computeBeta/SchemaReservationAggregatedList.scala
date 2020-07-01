@@ -1,7 +1,7 @@
 package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.googleapis.AnonCode
+import typings.googleapis.anon.Code
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,7 +38,7 @@ trait SchemaReservationAggregatedList extends js.Object {
   /**
     * [Output Only] Informational warning message.
     */
-  var warning: js.UndefOr[AnonCode] = js.native
+  var warning: js.UndefOr[Code] = js.native
 }
 
 object SchemaReservationAggregatedList {
@@ -49,7 +49,7 @@ object SchemaReservationAggregatedList {
     kind: String = null,
     nextPageToken: String = null,
     selfLink: String = null,
-    warning: AnonCode = null
+    warning: Code = null
   ): SchemaReservationAggregatedList = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

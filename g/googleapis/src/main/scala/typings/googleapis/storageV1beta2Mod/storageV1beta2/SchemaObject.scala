@@ -1,7 +1,7 @@
 package typings.googleapis.storageV1beta2Mod.storageV1beta2
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.googleapis.AnonEntity
+import typings.googleapis.anon.Entity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -90,7 +90,7 @@ trait SchemaObject extends js.Object {
   /**
     * The owner of the object. This will always be the uploader of the object.
     */
-  var owner: js.UndefOr[AnonEntity] = js.native
+  var owner: js.UndefOr[Entity] = js.native
   /**
     * The link to this object.
     */
@@ -120,7 +120,7 @@ object SchemaObject {
     acl: js.Array[SchemaObjectAccessControl] = null,
     bucket: String = null,
     cacheControl: String = null,
-    componentCount: Int | Double = null,
+    componentCount: js.UndefOr[Double] = js.undefined,
     contentDisposition: String = null,
     contentEncoding: String = null,
     contentLanguage: String = null,
@@ -135,7 +135,7 @@ object SchemaObject {
     metadata: StringDictionary[String] = null,
     metageneration: String = null,
     name: String = null,
-    owner: AnonEntity = null,
+    owner: Entity = null,
     selfLink: String = null,
     size: String = null,
     storageClass: String = null,
@@ -146,7 +146,7 @@ object SchemaObject {
     if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
     if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
     if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl.asInstanceOf[js.Any])
-    if (componentCount != null) __obj.updateDynamic("componentCount")(componentCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(componentCount)) __obj.updateDynamic("componentCount")(componentCount.get.asInstanceOf[js.Any])
     if (contentDisposition != null) __obj.updateDynamic("contentDisposition")(contentDisposition.asInstanceOf[js.Any])
     if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding.asInstanceOf[js.Any])
     if (contentLanguage != null) __obj.updateDynamic("contentLanguage")(contentLanguage.asInstanceOf[js.Any])

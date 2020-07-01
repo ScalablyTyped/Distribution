@@ -1,5 +1,6 @@
 package typings.ionicCore.componentsMod.Components
 
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.interfaceMod.RouterDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,5 +29,6 @@ trait IonRouter extends js.Object {
     */
   def push(url: String): js.Promise[Boolean] = js.native
   def push(url: String, direction: RouterDirection): js.Promise[Boolean] = js.native
+  def push(url: String, direction: RouterDirection, animation: AnimationBuilder): js.Promise[Boolean] = js.native
 }
 

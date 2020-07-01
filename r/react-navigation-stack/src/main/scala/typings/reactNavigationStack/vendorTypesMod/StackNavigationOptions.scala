@@ -1,6 +1,7 @@
 package typings.reactNavigationStack.vendorTypesMod
 
 import typings.react.mod.ReactNode
+import typings.reactNative.mod.Animated.WithAnimatedValue
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
@@ -86,7 +87,8 @@ trait StackNavigationOptions extends js.Object {
     */
   var headerBackImage: js.UndefOr[js.Function1[/* props */ TintColorString, ReactNode]] = js.undefined
   /**
-    * Title string used by the back button on iOS, or `null` to disable label. Defaults to the previous scene's `headerTitle`.
+    * Title string used by the back button on iOS. Defaults to the previous scene's `headerTitle`.
+    * Use `headerBackTitleVisible: false` to hide it.
     */
   var headerBackTitle: js.UndefOr[String] = js.undefined
   /**
@@ -112,7 +114,7 @@ trait StackNavigationOptions extends js.Object {
   /**
     * Style object for the container of the `headerLeft` component, for example to add padding.
     */
-  var headerLeftContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var headerLeftContainerStyle: js.UndefOr[WithAnimatedValue[StyleProp[ViewStyle]]] = js.undefined
   /**
     * Color for material ripple (Android >= 5.0 only).
     */
@@ -124,7 +126,7 @@ trait StackNavigationOptions extends js.Object {
   /**
     * Style object for the container of the `headerRight` component, for example to add padding.
     */
-  var headerRightContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var headerRightContainerStyle: js.UndefOr[WithAnimatedValue[StyleProp[ViewStyle]]] = js.undefined
   /**
     * Whether to show the header. The header is shown by default unless `headerMode` was set to `none`.
     * Setting this to `false` hides the header.
@@ -139,7 +141,7 @@ trait StackNavigationOptions extends js.Object {
   /**
     * Style object for the header. You can specify a custom background color here, for example.
     */
-  var headerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var headerStyle: js.UndefOr[WithAnimatedValue[StyleProp[ViewStyle]]] = js.undefined
   var headerStyleInterpolator: js.UndefOr[StackHeaderStyleInterpolator] = js.undefined
   /**
     * Tint color for the header.
@@ -167,7 +169,7 @@ trait StackNavigationOptions extends js.Object {
     * This may lead to white space or overlap between `headerLeft` and `headerTitle` if a customized `headerLeft` is used.
     * It can be solved by adjusting `left` and `right` style in `headerTitleContainerStyle` and `marginHorizontal` in `headerTitleStyle`.
     */
-  var headerTitleContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var headerTitleContainerStyle: js.UndefOr[WithAnimatedValue[StyleProp[ViewStyle]]] = js.undefined
   /**
     * Style object for the title component.
     */
@@ -221,19 +223,19 @@ object StackNavigationOptions {
     headerBackTitleVisible: js.UndefOr[Boolean] = js.undefined,
     headerBackground: /* props */ Style => ReactNode = null,
     headerLeft: /* props */ StackHeaderLeftButtonProps => ReactNode = null,
-    headerLeftContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    headerLeftContainerStyle: WithAnimatedValue[StyleProp[ViewStyle]] = null,
     headerPressColorAndroid: String = null,
     headerRight: /* props */ TintColor => ReactNode = null,
-    headerRightContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    headerRightContainerStyle: WithAnimatedValue[StyleProp[ViewStyle]] = null,
     headerShown: js.UndefOr[Boolean] = js.undefined,
     headerStatusBarHeight: js.UndefOr[Double] = js.undefined,
-    headerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    headerStyle: WithAnimatedValue[StyleProp[ViewStyle]] = null,
     headerStyleInterpolator: /* props */ StackHeaderInterpolationProps => StackHeaderInterpolatedStyle = null,
     headerTintColor: String = null,
     headerTitle: String | (js.Function1[/* props */ StackHeaderTitleProps, ReactNode]) = null,
     headerTitleAlign: left | center = null,
     headerTitleAllowFontScaling: js.UndefOr[Boolean] = js.undefined,
-    headerTitleContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    headerTitleContainerStyle: WithAnimatedValue[StyleProp[ViewStyle]] = null,
     headerTitleStyle: /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react-native.react-native.Animated.AnimatedComponent<new (): react-native.react-native.Text>>['style'] */ js.Any = null,
     headerTransparent: js.UndefOr[Boolean] = js.undefined,
     headerTruncatedBackTitle: String = null,
@@ -263,19 +265,19 @@ object StackNavigationOptions {
     if (!js.isUndefined(headerBackTitleVisible)) __obj.updateDynamic("headerBackTitleVisible")(headerBackTitleVisible.get.asInstanceOf[js.Any])
     if (headerBackground != null) __obj.updateDynamic("headerBackground")(js.Any.fromFunction1(headerBackground))
     if (headerLeft != null) __obj.updateDynamic("headerLeft")(js.Any.fromFunction1(headerLeft))
-    if (!js.isUndefined(headerLeftContainerStyle)) __obj.updateDynamic("headerLeftContainerStyle")(headerLeftContainerStyle.asInstanceOf[js.Any])
+    if (headerLeftContainerStyle != null) __obj.updateDynamic("headerLeftContainerStyle")(headerLeftContainerStyle.asInstanceOf[js.Any])
     if (headerPressColorAndroid != null) __obj.updateDynamic("headerPressColorAndroid")(headerPressColorAndroid.asInstanceOf[js.Any])
     if (headerRight != null) __obj.updateDynamic("headerRight")(js.Any.fromFunction1(headerRight))
-    if (!js.isUndefined(headerRightContainerStyle)) __obj.updateDynamic("headerRightContainerStyle")(headerRightContainerStyle.asInstanceOf[js.Any])
+    if (headerRightContainerStyle != null) __obj.updateDynamic("headerRightContainerStyle")(headerRightContainerStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(headerShown)) __obj.updateDynamic("headerShown")(headerShown.get.asInstanceOf[js.Any])
     if (!js.isUndefined(headerStatusBarHeight)) __obj.updateDynamic("headerStatusBarHeight")(headerStatusBarHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(headerStyle)) __obj.updateDynamic("headerStyle")(headerStyle.asInstanceOf[js.Any])
+    if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle.asInstanceOf[js.Any])
     if (headerStyleInterpolator != null) __obj.updateDynamic("headerStyleInterpolator")(js.Any.fromFunction1(headerStyleInterpolator))
     if (headerTintColor != null) __obj.updateDynamic("headerTintColor")(headerTintColor.asInstanceOf[js.Any])
     if (headerTitle != null) __obj.updateDynamic("headerTitle")(headerTitle.asInstanceOf[js.Any])
     if (headerTitleAlign != null) __obj.updateDynamic("headerTitleAlign")(headerTitleAlign.asInstanceOf[js.Any])
     if (!js.isUndefined(headerTitleAllowFontScaling)) __obj.updateDynamic("headerTitleAllowFontScaling")(headerTitleAllowFontScaling.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(headerTitleContainerStyle)) __obj.updateDynamic("headerTitleContainerStyle")(headerTitleContainerStyle.asInstanceOf[js.Any])
+    if (headerTitleContainerStyle != null) __obj.updateDynamic("headerTitleContainerStyle")(headerTitleContainerStyle.asInstanceOf[js.Any])
     if (headerTitleStyle != null) __obj.updateDynamic("headerTitleStyle")(headerTitleStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(headerTransparent)) __obj.updateDynamic("headerTransparent")(headerTransparent.get.asInstanceOf[js.Any])
     if (headerTruncatedBackTitle != null) __obj.updateDynamic("headerTruncatedBackTitle")(headerTruncatedBackTitle.asInstanceOf[js.Any])

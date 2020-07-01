@@ -33,6 +33,7 @@ trait StatefulDatepickerPropsDa extends js.Object {
   var children: js.UndefOr[js.Function1[/* args */ DatepickerProps, ReactNode]] = js.undefined
   var clearable: js.UndefOr[Boolean] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
+  var displayValueAtRangeIndex: js.UndefOr[Double] = js.undefined
   var error: js.UndefOr[Boolean] = js.undefined
   var excludeDates: js.UndefOr[js.Array[typings.std.Date]] = js.undefined
   var filterDate: js.UndefOr[js.Function1[/* day */ typings.std.Date, Boolean]] = js.undefined
@@ -88,6 +89,7 @@ object StatefulDatepickerPropsDa {
     children: /* args */ DatepickerProps => ReactNode = null,
     clearable: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
+    displayValueAtRangeIndex: js.UndefOr[Double] = js.undefined,
     error: js.UndefOr[Boolean] = js.undefined,
     excludeDates: js.Array[typings.std.Date] = null,
     filterDate: /* day */ typings.std.Date => Boolean = null,
@@ -133,6 +135,7 @@ object StatefulDatepickerPropsDa {
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (!js.isUndefined(clearable)) __obj.updateDynamic("clearable")(clearable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayValueAtRangeIndex)) __obj.updateDynamic("displayValueAtRangeIndex")(displayValueAtRangeIndex.get.asInstanceOf[js.Any])
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.get.asInstanceOf[js.Any])
     if (excludeDates != null) __obj.updateDynamic("excludeDates")(excludeDates.asInstanceOf[js.Any])
     if (filterDate != null) __obj.updateDynamic("filterDate")(js.Any.fromFunction1(filterDate))

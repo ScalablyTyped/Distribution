@@ -1,6 +1,6 @@
 package typings.firebaseFirestore
 
-import typings.firebaseFirestore.serializerMod.JsonProtoSerializer
+import typings.firebaseFirestore.remoteSerializerMod.JsonProtoSerializer
 import typings.firebaseFirestore.timestampMod.Timestamp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

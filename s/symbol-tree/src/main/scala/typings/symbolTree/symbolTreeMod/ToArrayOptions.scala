@@ -29,7 +29,7 @@ trait ToArrayOptions[T /* <: js.Object */] extends js.Object {
 
 object ToArrayOptions {
   @scala.inline
-  def apply[T](array: js.Array[T] = null, filter: /* object */ T => _ = null, thisArg: js.Any = null): ToArrayOptions[T] = {
+  def apply[/* <: js.Object */ T](array: js.Array[T] = null, filter: /* object */ T => _ = null, thisArg: js.Any = null): ToArrayOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (array != null) __obj.updateDynamic("array")(array.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))

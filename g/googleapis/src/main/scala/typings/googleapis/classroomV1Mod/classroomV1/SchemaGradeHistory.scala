@@ -38,15 +38,15 @@ object SchemaGradeHistory {
     actorUserId: String = null,
     gradeChangeType: String = null,
     gradeTimestamp: String = null,
-    maxPoints: Int | Double = null,
-    pointsEarned: Int | Double = null
+    maxPoints: js.UndefOr[Double] = js.undefined,
+    pointsEarned: js.UndefOr[Double] = js.undefined
   ): SchemaGradeHistory = {
     val __obj = js.Dynamic.literal()
     if (actorUserId != null) __obj.updateDynamic("actorUserId")(actorUserId.asInstanceOf[js.Any])
     if (gradeChangeType != null) __obj.updateDynamic("gradeChangeType")(gradeChangeType.asInstanceOf[js.Any])
     if (gradeTimestamp != null) __obj.updateDynamic("gradeTimestamp")(gradeTimestamp.asInstanceOf[js.Any])
-    if (maxPoints != null) __obj.updateDynamic("maxPoints")(maxPoints.asInstanceOf[js.Any])
-    if (pointsEarned != null) __obj.updateDynamic("pointsEarned")(pointsEarned.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPoints)) __obj.updateDynamic("maxPoints")(maxPoints.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointsEarned)) __obj.updateDynamic("pointsEarned")(pointsEarned.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGradeHistory]
   }
 }

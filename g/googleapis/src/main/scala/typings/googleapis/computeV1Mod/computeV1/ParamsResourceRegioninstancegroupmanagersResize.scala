@@ -58,7 +58,7 @@ object ParamsResourceRegioninstancegroupmanagersResize {
     quotaUser: String = null,
     region: String = null,
     requestId: String = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     userIp: String = null
   ): ParamsResourceRegioninstancegroupmanagersResize = {
     val __obj = js.Dynamic.literal()
@@ -68,12 +68,12 @@ object ParamsResourceRegioninstancegroupmanagersResize {
     if (instanceGroupManager != null) __obj.updateDynamic("instanceGroupManager")(instanceGroupManager.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceRegioninstancegroupmanagersResize]
   }

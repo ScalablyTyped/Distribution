@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "plottable" : "3.8.6"
+      "plottable" : "3.9.0"
     }
   ],
   "test-dependencies" : [
     {
-      "plottable" : "3.8.6"
+      "plottable" : "3.9.0"
     }
   ],
   "compile-devDependencies" : [

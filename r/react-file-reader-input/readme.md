@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-file-reader-input
 
-Typings are for version 1.1
+Typings are for version 2.0
 
 ## Library description:
 React file input component for complete control over styling and abstraction from file reading.

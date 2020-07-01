@@ -114,7 +114,7 @@ object SchemaAttachedDisk {
     deviceName: String = null,
     diskEncryptionKey: SchemaCustomerEncryptionKey = null,
     guestOsFeatures: js.Array[SchemaGuestOsFeature] = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     initializeParams: SchemaAttachedDiskInitializeParams = null,
     interface: String = null,
     kind: String = null,
@@ -124,12 +124,12 @@ object SchemaAttachedDisk {
     `type`: String = null
   ): SchemaAttachedDisk = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoDelete)) __obj.updateDynamic("autoDelete")(autoDelete.asInstanceOf[js.Any])
-    if (!js.isUndefined(boot)) __obj.updateDynamic("boot")(boot.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDelete)) __obj.updateDynamic("autoDelete")(autoDelete.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(boot)) __obj.updateDynamic("boot")(boot.get.asInstanceOf[js.Any])
     if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName.asInstanceOf[js.Any])
     if (diskEncryptionKey != null) __obj.updateDynamic("diskEncryptionKey")(diskEncryptionKey.asInstanceOf[js.Any])
     if (guestOsFeatures != null) __obj.updateDynamic("guestOsFeatures")(guestOsFeatures.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (initializeParams != null) __obj.updateDynamic("initializeParams")(initializeParams.asInstanceOf[js.Any])
     if (interface != null) __obj.updateDynamic("interface")(interface.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])

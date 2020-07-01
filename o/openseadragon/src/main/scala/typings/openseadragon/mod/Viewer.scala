@@ -112,7 +112,7 @@ class Viewer protected () extends ControlDock {
   def raiseEvent(eventName: String): Unit = js.native
   def raiseEvent(eventName: String, eventArgs: js.Object): Unit = js.native
   def removeAllHandlers(eventName: String): Unit = js.native
-  def removeHandler(eventName: String, handler: js.Function1[/* event */ Event, Unit]): Unit = js.native
+  def removeHandler(eventName: String, handler: EventHandler[ViewerEvent]): Unit = js.native
   def removeOverlay(overlay: String): Viewer = js.native
   def removeOverlay(overlay: Element): Viewer = js.native
   def removeReferenceStrip(): Unit = js.native

@@ -17,6 +17,7 @@ import typings.mongoose.mongooseStrings.capped
 import typings.mongoose.mongooseStrings.collation
 import typings.mongoose.mongooseStrings.collection
 import typings.mongoose.mongooseStrings.count
+import typings.mongoose.mongooseStrings.deleteOne
 import typings.mongoose.mongooseStrings.discriminatorKey
 import typings.mongoose.mongooseStrings.emitIndexErrors
 import typings.mongoose.mongooseStrings.excludeIndexes
@@ -162,6 +163,8 @@ trait Schema[T] extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("post")
+  def post_deleteOne[T /* <: Document */](method: deleteOne, hasDocumentQuery: HookOptions, fn: js.Function1[/* doc */ T, Unit]): this.type = js.native
+  @JSName("post")
   def post_insertMany[T /* <: Document */](
     method: insertMany,
     fn: js.ThisFunction2[
@@ -189,6 +192,8 @@ trait Schema[T] extends EventEmitter {
       Unit
     ]
   ): this.type = js.native
+  @JSName("post")
+  def post_remove[T /* <: Document */](method: remove, hasDocumentQuery: HookOptions, fn: js.Function1[/* doc */ T, Unit]): this.type = js.native
   def pre[T /* <: Document | (Model_[Document, js.Object]) | Query[_] | Aggregate[_] */](method: String, fn: HookSyncCallback[T]): this.type = js.native
   def pre[T /* <: Document | (Model_[Document, js.Object]) | Query[_] | Aggregate[_] */](method: String, fn: HookSyncCallback[T], errorCb: HookErrorCallback): this.type = js.native
   def pre[T /* <: Document | (Model_[Document, js.Object]) | Query[_] | Aggregate[_] */](method: String, parallel: Boolean, fn: HookAsyncCallback[T]): this.type = js.native

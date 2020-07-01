@@ -112,7 +112,7 @@ object SchemaPublisherProfileApiProto {
     mediaKitLink: String = null,
     name: String = null,
     overview: String = null,
-    profileId: Int | Double = null,
+    profileId: js.UndefOr[Double] = js.undefined,
     programmaticContact: String = null,
     publisherDomains: js.Array[String] = null,
     publisherProfileId: String = null,
@@ -129,14 +129,14 @@ object SchemaPublisherProfileApiProto {
     if (directContact != null) __obj.updateDynamic("directContact")(directContact.asInstanceOf[js.Any])
     if (exchange != null) __obj.updateDynamic("exchange")(exchange.asInstanceOf[js.Any])
     if (googlePlusLink != null) __obj.updateDynamic("googlePlusLink")(googlePlusLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(isParent)) __obj.updateDynamic("isParent")(isParent.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPublished)) __obj.updateDynamic("isPublished")(isPublished.asInstanceOf[js.Any])
+    if (!js.isUndefined(isParent)) __obj.updateDynamic("isParent")(isParent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPublished)) __obj.updateDynamic("isPublished")(isPublished.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (logoUrl != null) __obj.updateDynamic("logoUrl")(logoUrl.asInstanceOf[js.Any])
     if (mediaKitLink != null) __obj.updateDynamic("mediaKitLink")(mediaKitLink.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (overview != null) __obj.updateDynamic("overview")(overview.asInstanceOf[js.Any])
-    if (profileId != null) __obj.updateDynamic("profileId")(profileId.asInstanceOf[js.Any])
+    if (!js.isUndefined(profileId)) __obj.updateDynamic("profileId")(profileId.get.asInstanceOf[js.Any])
     if (programmaticContact != null) __obj.updateDynamic("programmaticContact")(programmaticContact.asInstanceOf[js.Any])
     if (publisherDomains != null) __obj.updateDynamic("publisherDomains")(publisherDomains.asInstanceOf[js.Any])
     if (publisherProfileId != null) __obj.updateDynamic("publisherProfileId")(publisherProfileId.asInstanceOf[js.Any])

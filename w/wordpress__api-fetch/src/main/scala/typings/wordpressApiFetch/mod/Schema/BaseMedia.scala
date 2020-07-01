@@ -41,7 +41,7 @@ trait BaseMedia[T /* <: Context */] extends BaseResponse {
 
 object BaseMedia {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.wordpressApiFetch.mod.Schema.Context */ T](
     _links: Record[String, js.Array[Dictk]],
     alt_text: String,
     author: Double,

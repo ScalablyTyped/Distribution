@@ -11,7 +11,7 @@ trait RecommendationSummary extends js.Object {
     */
   var Description: js.UndefOr[Text] = js.native
   /**
-    *  Last line where the recommendation is applicable in the source commit or source branch. For a single line comment the start line and end line values will be the same. 
+    *  Last line where the recommendation is applicable in the source commit or source branch. For a single line comment the start line and end line values are the same. 
     */
   var EndLine: js.UndefOr[LineNumber] = js.native
   /**

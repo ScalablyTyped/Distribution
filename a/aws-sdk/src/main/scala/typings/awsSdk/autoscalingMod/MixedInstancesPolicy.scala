@@ -11,7 +11,7 @@ trait MixedInstancesPolicy extends js.Object {
     */
   var InstancesDistribution: js.UndefOr[typings.awsSdk.autoscalingMod.InstancesDistribution] = js.native
   /**
-    * The launch template and instance types (overrides). This parameter must be specified when creating a mixed instances policy.
+    * The launch template and instance types (overrides). Required when creating a mixed instances policy.
     */
   var LaunchTemplate: js.UndefOr[typings.awsSdk.autoscalingMod.LaunchTemplate] = js.native
 }

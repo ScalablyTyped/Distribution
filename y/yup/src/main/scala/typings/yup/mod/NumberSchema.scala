@@ -54,8 +54,8 @@ trait NumberSchema[T /* <: js.UndefOr[Double | Null] */] extends Schema[T] {
   def optional(): NumberSchema[js.UndefOr[T]] = js.native
   def positive(): NumberSchema[T] = js.native
   def positive(message: TestOptionsMessage[More, _]): NumberSchema[T] = js.native
-  def required(): NumberSchema[Exclude[T, js.UndefOr[scala.Nothing]]] = js.native
-  def required(message: TestOptionsMessage[js.Object, _]): NumberSchema[Exclude[T, js.UndefOr[scala.Nothing]]] = js.native
+  def required(): NumberSchema[Exclude[T, js.UndefOr[Null]]] = js.native
+  def required(message: TestOptionsMessage[js.Object, _]): NumberSchema[Exclude[T, js.UndefOr[Null]]] = js.native
   @JSName("round")
   def round_ceil(`type`: ceil): NumberSchema[T] = js.native
   @JSName("round")

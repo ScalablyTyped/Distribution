@@ -16,7 +16,7 @@ trait ExtendedFeature[GeometryType /* <: GeoGeometryObjects | Null */, Propertie
 
 object ExtendedFeature {
   @scala.inline
-  def apply[GeometryType, Properties](
+  def apply[/* <: typings.d3Geo.mod.GeoGeometryObjects | scala.Null */ GeometryType, /* <: typings.geojson.mod.GeoJsonProperties */ Properties](
     geometry: GeometryType,
     properties: Properties,
     `type`: GeoJsonTypes,

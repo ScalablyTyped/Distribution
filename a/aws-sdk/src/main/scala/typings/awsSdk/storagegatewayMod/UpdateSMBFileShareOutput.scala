@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateSMBFileShareOutput extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) of the updated SMB file share. 
+    * The Amazon Resource Name (ARN) of the updated SMB file share.
     */
   var FileShareARN: js.UndefOr[typings.awsSdk.storagegatewayMod.FileShareARN] = js.native
 }

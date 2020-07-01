@@ -32,14 +32,14 @@ trait SchemaExponentialBuckets extends js.Object {
 object SchemaExponentialBuckets {
   @scala.inline
   def apply(
-    growthFactor: Int | Double = null,
-    numFiniteBuckets: Int | Double = null,
-    scale: Int | Double = null
+    growthFactor: js.UndefOr[Double] = js.undefined,
+    numFiniteBuckets: js.UndefOr[Double] = js.undefined,
+    scale: js.UndefOr[Double] = js.undefined
   ): SchemaExponentialBuckets = {
     val __obj = js.Dynamic.literal()
-    if (growthFactor != null) __obj.updateDynamic("growthFactor")(growthFactor.asInstanceOf[js.Any])
-    if (numFiniteBuckets != null) __obj.updateDynamic("numFiniteBuckets")(numFiniteBuckets.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(growthFactor)) __obj.updateDynamic("growthFactor")(growthFactor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numFiniteBuckets)) __obj.updateDynamic("numFiniteBuckets")(numFiniteBuckets.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExponentialBuckets]
   }
 }

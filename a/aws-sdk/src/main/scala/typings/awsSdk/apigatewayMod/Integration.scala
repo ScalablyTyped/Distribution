@@ -11,7 +11,7 @@ trait Integration extends js.Object {
     */
   var cacheKeyParameters: js.UndefOr[ListOfString] = js.native
   /**
-    * An API-specific tag group of related cached parameters. To be valid values for cacheKeyParameters, these parameters must also be specified for Method requestParameters.
+    * Specifies a group of related cached parameters. By default, API Gateway uses the resource ID as the cacheNamespace. You can specify the same cacheNamespace across resources to return the same cached data for requests to different resources.
     */
   var cacheNamespace: js.UndefOr[String] = js.native
   /**
@@ -55,6 +55,10 @@ trait Integration extends js.Object {
     */
   var timeoutInMillis: js.UndefOr[Integer] = js.native
   /**
+    * Specifies the TLS configuration for an integration.
+    */
+  var tlsConfig: js.UndefOr[TlsConfig] = js.native
+  /**
     * Specifies an API method integration type. The valid value is one of the following:  AWS: for integrating the API method request with an AWS service action, including the Lambda function-invoking action. With the Lambda function-invoking action, this is referred to as the Lambda custom integration. With any other AWS service action, this is known as AWS integration. AWS_PROXY: for integrating the API method request with the Lambda function-invoking action with the client request passed through as-is. This integration is also referred to as the Lambda proxy integration. HTTP: for integrating the API method request with an HTTP endpoint, including a private HTTP endpoint within a VPC. This integration is also referred to as the HTTP custom integration. HTTP_PROXY: for integrating the API method request with an HTTP endpoint, including a private HTTP endpoint within a VPC, with the client request passed through as-is. This is also referred to as the HTTP proxy integration. MOCK: for integrating the API method request with API Gateway as a "loop-back" endpoint without invoking any backend.  For the HTTP and HTTP proxy integrations, each integration can specify a protocol (http/https), port and path. Standard 80 and 443 ports are supported as well as custom ports above 1024. An HTTP or HTTP proxy integration with a connectionType of VPC_LINK is referred to as a private integration and uses a VpcLink to connect API Gateway to a network load balancer of a VPC.
     */
   var `type`: js.UndefOr[IntegrationType] = js.native
@@ -79,6 +83,7 @@ object Integration {
     requestParameters: MapOfStringToString = null,
     requestTemplates: MapOfStringToString = null,
     timeoutInMillis: js.UndefOr[Integer] = js.undefined,
+    tlsConfig: TlsConfig = null,
     `type`: IntegrationType = null,
     uri: String = null
   ): Integration = {
@@ -95,6 +100,7 @@ object Integration {
     if (requestParameters != null) __obj.updateDynamic("requestParameters")(requestParameters.asInstanceOf[js.Any])
     if (requestTemplates != null) __obj.updateDynamic("requestTemplates")(requestTemplates.asInstanceOf[js.Any])
     if (!js.isUndefined(timeoutInMillis)) __obj.updateDynamic("timeoutInMillis")(timeoutInMillis.get.asInstanceOf[js.Any])
+    if (tlsConfig != null) __obj.updateDynamic("tlsConfig")(tlsConfig.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Integration]

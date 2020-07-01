@@ -20,8 +20,8 @@ trait DrilldownEventObject extends js.Object {
     */
   var point: Point
   /**
-    * If a category label was clicked, this array holds all points corresponing
-    * to the category. Otherwise it is set to false.
+    * If a category label was clicked, this array holds all points
+    * corresponding to the category. Otherwise it is set to false.
     */
   var points: js.UndefOr[Boolean | js.Array[Point]] = js.undefined
   /**

@@ -61,7 +61,7 @@ object SchemaRecognitionMetadata {
   @scala.inline
   def apply(
     audioTopic: String = null,
-    industryNaicsCodeOfAudio: Int | Double = null,
+    industryNaicsCodeOfAudio: js.UndefOr[Double] = js.undefined,
     interactionType: String = null,
     microphoneDistance: String = null,
     obfuscatedId: String = null,
@@ -72,7 +72,7 @@ object SchemaRecognitionMetadata {
   ): SchemaRecognitionMetadata = {
     val __obj = js.Dynamic.literal()
     if (audioTopic != null) __obj.updateDynamic("audioTopic")(audioTopic.asInstanceOf[js.Any])
-    if (industryNaicsCodeOfAudio != null) __obj.updateDynamic("industryNaicsCodeOfAudio")(industryNaicsCodeOfAudio.asInstanceOf[js.Any])
+    if (!js.isUndefined(industryNaicsCodeOfAudio)) __obj.updateDynamic("industryNaicsCodeOfAudio")(industryNaicsCodeOfAudio.get.asInstanceOf[js.Any])
     if (interactionType != null) __obj.updateDynamic("interactionType")(interactionType.asInstanceOf[js.Any])
     if (microphoneDistance != null) __obj.updateDynamic("microphoneDistance")(microphoneDistance.asInstanceOf[js.Any])
     if (obfuscatedId != null) __obj.updateDynamic("obfuscatedId")(obfuscatedId.asInstanceOf[js.Any])

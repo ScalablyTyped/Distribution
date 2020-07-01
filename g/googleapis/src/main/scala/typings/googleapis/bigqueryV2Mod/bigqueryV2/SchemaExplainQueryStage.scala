@@ -131,8 +131,8 @@ object SchemaExplainQueryStage {
     completedParallelInputs: String = null,
     computeMsAvg: String = null,
     computeMsMax: String = null,
-    computeRatioAvg: Int | Double = null,
-    computeRatioMax: Int | Double = null,
+    computeRatioAvg: js.UndefOr[Double] = js.undefined,
+    computeRatioMax: js.UndefOr[Double] = js.undefined,
     endMs: String = null,
     id: String = null,
     inputStages: js.Array[String] = null,
@@ -140,8 +140,8 @@ object SchemaExplainQueryStage {
     parallelInputs: String = null,
     readMsAvg: String = null,
     readMsMax: String = null,
-    readRatioAvg: Int | Double = null,
-    readRatioMax: Int | Double = null,
+    readRatioAvg: js.UndefOr[Double] = js.undefined,
+    readRatioMax: js.UndefOr[Double] = js.undefined,
     recordsRead: String = null,
     recordsWritten: String = null,
     shuffleOutputBytes: String = null,
@@ -151,19 +151,19 @@ object SchemaExplainQueryStage {
     steps: js.Array[SchemaExplainQueryStep] = null,
     waitMsAvg: String = null,
     waitMsMax: String = null,
-    waitRatioAvg: Int | Double = null,
-    waitRatioMax: Int | Double = null,
+    waitRatioAvg: js.UndefOr[Double] = js.undefined,
+    waitRatioMax: js.UndefOr[Double] = js.undefined,
     writeMsAvg: String = null,
     writeMsMax: String = null,
-    writeRatioAvg: Int | Double = null,
-    writeRatioMax: Int | Double = null
+    writeRatioAvg: js.UndefOr[Double] = js.undefined,
+    writeRatioMax: js.UndefOr[Double] = js.undefined
   ): SchemaExplainQueryStage = {
     val __obj = js.Dynamic.literal()
     if (completedParallelInputs != null) __obj.updateDynamic("completedParallelInputs")(completedParallelInputs.asInstanceOf[js.Any])
     if (computeMsAvg != null) __obj.updateDynamic("computeMsAvg")(computeMsAvg.asInstanceOf[js.Any])
     if (computeMsMax != null) __obj.updateDynamic("computeMsMax")(computeMsMax.asInstanceOf[js.Any])
-    if (computeRatioAvg != null) __obj.updateDynamic("computeRatioAvg")(computeRatioAvg.asInstanceOf[js.Any])
-    if (computeRatioMax != null) __obj.updateDynamic("computeRatioMax")(computeRatioMax.asInstanceOf[js.Any])
+    if (!js.isUndefined(computeRatioAvg)) __obj.updateDynamic("computeRatioAvg")(computeRatioAvg.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(computeRatioMax)) __obj.updateDynamic("computeRatioMax")(computeRatioMax.get.asInstanceOf[js.Any])
     if (endMs != null) __obj.updateDynamic("endMs")(endMs.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inputStages != null) __obj.updateDynamic("inputStages")(inputStages.asInstanceOf[js.Any])
@@ -171,8 +171,8 @@ object SchemaExplainQueryStage {
     if (parallelInputs != null) __obj.updateDynamic("parallelInputs")(parallelInputs.asInstanceOf[js.Any])
     if (readMsAvg != null) __obj.updateDynamic("readMsAvg")(readMsAvg.asInstanceOf[js.Any])
     if (readMsMax != null) __obj.updateDynamic("readMsMax")(readMsMax.asInstanceOf[js.Any])
-    if (readRatioAvg != null) __obj.updateDynamic("readRatioAvg")(readRatioAvg.asInstanceOf[js.Any])
-    if (readRatioMax != null) __obj.updateDynamic("readRatioMax")(readRatioMax.asInstanceOf[js.Any])
+    if (!js.isUndefined(readRatioAvg)) __obj.updateDynamic("readRatioAvg")(readRatioAvg.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(readRatioMax)) __obj.updateDynamic("readRatioMax")(readRatioMax.get.asInstanceOf[js.Any])
     if (recordsRead != null) __obj.updateDynamic("recordsRead")(recordsRead.asInstanceOf[js.Any])
     if (recordsWritten != null) __obj.updateDynamic("recordsWritten")(recordsWritten.asInstanceOf[js.Any])
     if (shuffleOutputBytes != null) __obj.updateDynamic("shuffleOutputBytes")(shuffleOutputBytes.asInstanceOf[js.Any])
@@ -182,12 +182,12 @@ object SchemaExplainQueryStage {
     if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
     if (waitMsAvg != null) __obj.updateDynamic("waitMsAvg")(waitMsAvg.asInstanceOf[js.Any])
     if (waitMsMax != null) __obj.updateDynamic("waitMsMax")(waitMsMax.asInstanceOf[js.Any])
-    if (waitRatioAvg != null) __obj.updateDynamic("waitRatioAvg")(waitRatioAvg.asInstanceOf[js.Any])
-    if (waitRatioMax != null) __obj.updateDynamic("waitRatioMax")(waitRatioMax.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitRatioAvg)) __obj.updateDynamic("waitRatioAvg")(waitRatioAvg.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitRatioMax)) __obj.updateDynamic("waitRatioMax")(waitRatioMax.get.asInstanceOf[js.Any])
     if (writeMsAvg != null) __obj.updateDynamic("writeMsAvg")(writeMsAvg.asInstanceOf[js.Any])
     if (writeMsMax != null) __obj.updateDynamic("writeMsMax")(writeMsMax.asInstanceOf[js.Any])
-    if (writeRatioAvg != null) __obj.updateDynamic("writeRatioAvg")(writeRatioAvg.asInstanceOf[js.Any])
-    if (writeRatioMax != null) __obj.updateDynamic("writeRatioMax")(writeRatioMax.asInstanceOf[js.Any])
+    if (!js.isUndefined(writeRatioAvg)) __obj.updateDynamic("writeRatioAvg")(writeRatioAvg.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(writeRatioMax)) __obj.updateDynamic("writeRatioMax")(writeRatioMax.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExplainQueryStage]
   }
 }

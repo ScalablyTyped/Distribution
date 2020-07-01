@@ -43,7 +43,7 @@ trait KnockoutBindingHandler[E /* <: Node */, V, VM]
 
 object KnockoutBindingHandler {
   @scala.inline
-  def apply[E, V, VM](
+  def apply[/* <: typings.std.Node */ E, V, VM](
     StringDictionary: /* name */ StringDictionary[js.Any] = null,
     after: js.Array[String] = null,
     init: (/* element */ E, /* valueAccessor */ js.Function0[V], /* allBindingsAccessor */ KnockoutAllBindingsAccessor, /* viewModel */ VM, /* bindingContext */ KnockoutBindingContext) => Unit | ControlsDescendantBindings = null,

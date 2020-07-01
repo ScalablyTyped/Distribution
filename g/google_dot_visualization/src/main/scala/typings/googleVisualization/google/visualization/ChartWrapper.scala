@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ChartWrapper extends js.Object {
   def draw(): Unit = js.native
   def draw(container_ref: HTMLElement): Unit = js.native
-  def getChart(): js.Any = js.native
+  def getChart(): ChartBase | Null = js.native
   def getChartName(): String = js.native
   def getChartType(): String = js.native
   def getContainerId(): String = js.native

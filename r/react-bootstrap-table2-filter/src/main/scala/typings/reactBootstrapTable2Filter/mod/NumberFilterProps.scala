@@ -31,7 +31,7 @@ trait NumberFilterProps[T /* <: js.Object */] extends js.Object {
 
 object NumberFilterProps {
   @scala.inline
-  def apply[T](
+  def apply[/* <: js.Object */ T](
     className: String = null,
     comparatorClassName: String = null,
     comparatorStyle: CSSProperties = null,

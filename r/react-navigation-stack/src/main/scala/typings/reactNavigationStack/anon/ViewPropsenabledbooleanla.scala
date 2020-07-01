@@ -111,6 +111,10 @@ trait ViewPropsenabledbooleanla extends js.Object {
   var collapsable: js.UndefOr[Boolean] = js.undefined
   var enabled: Boolean
   /**
+    * Whether this `View` should be focusable with a non-touch input device, eg. receive focus with a hardware keyboard.
+    */
+  var focusable: js.UndefOr[Boolean] = js.undefined
+  /**
     * *(Apple TV only)* May be set to true to force the Apple TV focus engine to move focus to this view.
     *
     * @platform ios
@@ -381,6 +385,7 @@ object ViewPropsenabledbooleanla {
     accessible: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     collapsable: js.UndefOr[Boolean] = js.undefined,
+    focusable: js.UndefOr[Boolean] = js.undefined,
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
     hitSlop: Insets = null,
     importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
@@ -439,6 +444,7 @@ object ViewPropsenabledbooleanla {
     if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.get.asInstanceOf[js.Any])
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])

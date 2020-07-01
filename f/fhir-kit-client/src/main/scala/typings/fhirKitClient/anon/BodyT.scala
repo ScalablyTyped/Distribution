@@ -15,7 +15,7 @@ trait BodyT[T /* <: CustomResource */] extends js.Object {
 
 object BodyT {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.fhirKitClient.mod.CustomResource */ T](
     body: T,
     resourceType: CustomResourceType,
     headers: typings.request.mod.Headers = null,

@@ -19,7 +19,7 @@ trait AlignSelfProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.O
 
 object AlignSelfProps {
   @scala.inline
-  def apply[ThemeType](alignSelf: js.UndefOr[Null | (ResponsiveValue[AlignSelfProperty, ThemeType])] = js.undefined): AlignSelfProps[ThemeType] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](alignSelf: js.UndefOr[Null | (ResponsiveValue[AlignSelfProperty, ThemeType])] = js.undefined): AlignSelfProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(alignSelf)) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlignSelfProps[ThemeType]]

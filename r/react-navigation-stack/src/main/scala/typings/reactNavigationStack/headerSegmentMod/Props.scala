@@ -1,6 +1,7 @@
 package typings.reactNavigationStack.headerSegmentMod
 
 import typings.react.mod.ReactNode
+import typings.reactNative.mod.Animated.WithAnimatedValue
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
@@ -34,7 +35,8 @@ trait Props extends js.Object {
     */
   var headerBackImage: js.UndefOr[js.Function1[/* props */ TintColorString, ReactNode]] = js.native
   /**
-    * Title string used by the back button on iOS, or `null` to disable label. Defaults to the previous scene's `headerTitle`.
+    * Title string used by the back button on iOS. Defaults to the previous scene's `headerTitle`.
+    * Use `headerBackTitleVisible: false` to hide it.
     */
   var headerBackTitle: js.UndefOr[String] = js.native
   /**
@@ -60,7 +62,7 @@ trait Props extends js.Object {
   /**
     * Style object for the container of the `headerLeft` component, for example to add padding.
     */
-  var headerLeftContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var headerLeftContainerStyle: js.UndefOr[WithAnimatedValue[StyleProp[ViewStyle]]] = js.native
   /**
     * Color for material ripple (Android >= 5.0 only).
     */
@@ -72,7 +74,7 @@ trait Props extends js.Object {
   /**
     * Style object for the container of the `headerRight` component, for example to add padding.
     */
-  var headerRightContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var headerRightContainerStyle: js.UndefOr[WithAnimatedValue[StyleProp[ViewStyle]]] = js.native
   /**
     * Extra padding to add at the top of header to account for translucent status bar.
     * By default, it uses the top value from the safe area insets of the device.
@@ -82,7 +84,7 @@ trait Props extends js.Object {
   /**
     * Style object for the header. You can specify a custom background color here, for example.
     */
-  var headerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var headerStyle: js.UndefOr[WithAnimatedValue[StyleProp[ViewStyle]]] = js.native
   /**
     * Tint color for the header.
     */
@@ -109,7 +111,7 @@ trait Props extends js.Object {
     * This may lead to white space or overlap between `headerLeft` and `headerTitle` if a customized `headerLeft` is used.
     * It can be solved by adjusting `left` and `right` style in `headerTitleContainerStyle` and `marginHorizontal` in `headerTitleStyle`.
     */
-  var headerTitleContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var headerTitleContainerStyle: js.UndefOr[WithAnimatedValue[StyleProp[ViewStyle]]] = js.native
   /**
     * Style object for the title component.
     */

@@ -31,7 +31,7 @@ object SchemaHttpHeaderOption {
     val __obj = js.Dynamic.literal()
     if (headerName != null) __obj.updateDynamic("headerName")(headerName.asInstanceOf[js.Any])
     if (headerValue != null) __obj.updateDynamic("headerValue")(headerValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
+    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHttpHeaderOption]
   }
 }

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AddCollaborator extends js.Object {
   /**
-    * Adds a collaborator to a an organization project and sets their permission level. You must be an organization owner or a project `admin` to add a collaborator.
+    * Adds a collaborator to an organization project and sets their permission level. You must be an organization owner or a project `admin` to add a collaborator.
     */
   @JSName("addCollaborator")
   var addCollaborator_Original: `256` = js.native
@@ -51,47 +51,53 @@ trait AddCollaborator extends js.Object {
   @JSName("getColumn")
   var getColumn_Original: `267` = js.native
   /**
+    * Returns the collaborator's permission level for an organization project. Possible values for the `permission` key: `admin`, `write`, `read`, `none`. You must be an organization owner or a project `admin` to review a user's permission level.
+    */
+  @JSName("getPermissionForUser")
+  var getPermissionForUser_Original: `268` = js.native
+  /**
     * Gets a project by its `id`. Returns a `404 Not Found` status if projects are disabled. If you do not have sufficient privileges to perform this action, a `401 Unauthorized` or `410 Gone` status is returned.
     */
   @JSName("get")
   var get_Original: `265` = js.native
   @JSName("listCards")
-  var listCards_Original: `268` = js.native
+  var listCards_Original: `269` = js.native
   /**
     * Lists the collaborators for an organization project. For a project, the list of collaborators includes outside collaborators, organization members that are direct collaborators, organization members with access through team memberships, organization members with access through default organization permissions, and organization owners. You must be an organization owner or a project `admin` to list collaborators.
     */
   @JSName("listCollaborators")
-  var listCollaborators_Original: `269` = js.native
+  var listCollaborators_Original: `270` = js.native
   @JSName("listColumns")
-  var listColumns_Original: `270` = js.native
+  var listColumns_Original: `271` = js.native
   /**
     * Lists the projects in an organization. Returns a `404 Not Found` status if projects are disabled in the organization. If you do not have sufficient privileges to perform this action, a `401 Unauthorized` or `410 Gone` status is returned.
     *
     * s
     */
   @JSName("listForOrg")
-  var listForOrg_Original: `271` = js.native
+  var listForOrg_Original: `272` = js.native
   /**
     * Lists the projects in a repository. Returns a `404 Not Found` status if projects are disabled in the repository. If you do not have sufficient privileges to perform this action, a `401 Unauthorized` or `410 Gone` status is returned.
     */
   @JSName("listForRepo")
-  var listForRepo_Original: `272` = js.native
+  var listForRepo_Original: `273` = js.native
   @JSName("listForUser")
-  var listForUser_Original: `273` = js.native
+  var listForUser_Original: `274` = js.native
   @JSName("moveCard")
-  var moveCard_Original: `274` = js.native
+  var moveCard_Original: `275` = js.native
   @JSName("moveColumn")
-  var moveColumn_Original: `275` = js.native
+  var moveColumn_Original: `276` = js.native
   /**
     * Removes a collaborator from an organization project. You must be an organization owner or a project `admin` to remove a collaborator.
     */
   @JSName("removeCollaborator")
-  var removeCollaborator_Original: `276` = js.native
+  var removeCollaborator_Original: `277` = js.native
   /**
     * Returns the collaborator's permission level for an organization project. Possible values for the `permission` key: `admin`, `write`, `read`, `none`. You must be an organization owner or a project `admin` to review a user's permission level.
+    * @deprecated octokit.projects.reviewUserPermissionLevel() has been renamed to octokit.projects.getPermissionForUser() (2020-06-05)
     */
   @JSName("reviewUserPermissionLevel")
-  var reviewUserPermissionLevel_Original: `277` = js.native
+  var reviewUserPermissionLevel_Original: `268` = js.native
   @JSName("updateCard")
   var updateCard_Original: `279` = js.native
   @JSName("updateColumn")
@@ -102,7 +108,7 @@ trait AddCollaborator extends js.Object {
   @JSName("update")
   var update_Original: `278` = js.native
   /**
-    * Adds a collaborator to a an organization project and sets their permission level. You must be an organization owner or a project `admin` to add a collaborator.
+    * Adds a collaborator to an organization project and sets their permission level. You must be an organization owner or a project `admin` to add a collaborator.
     */
   def addCollaborator(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /projects/:project_id/collaborators/:username']['response'] */ js.Any
@@ -253,6 +259,20 @@ trait AddCollaborator extends js.Object {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /projects/columns/:column_id']['response'] */ js.Any
   ] = js.native
+  /**
+    * Returns the collaborator's permission level for an organization project. Possible values for the `permission` key: `admin`, `write`, `read`, `none`. You must be an organization owner or a project `admin` to review a user's permission level.
+    */
+  def getPermissionForUser(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /projects/:project_id/collaborators/:username/permission']['response'] */ js.Any
+  ] = js.native
+  def getPermissionForUser(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /projects/:project_id/collaborators/:username/permission']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /projects/:project_id/collaborators/:username/permission']['response'] */ js.Any
+  ] = js.native
   def listCards(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /projects/columns/:column_id/cards']['response'] */ js.Any
   ] = js.native
@@ -368,6 +388,7 @@ trait AddCollaborator extends js.Object {
   ] = js.native
   /**
     * Returns the collaborator's permission level for an organization project. Possible values for the `permission` key: `admin`, `write`, `read`, `none`. You must be an organization owner or a project `admin` to review a user's permission level.
+    * @deprecated octokit.projects.reviewUserPermissionLevel() has been renamed to octokit.projects.getPermissionForUser() (2020-06-05)
     */
   def reviewUserPermissionLevel(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /projects/:project_id/collaborators/:username/permission']['response'] */ js.Any

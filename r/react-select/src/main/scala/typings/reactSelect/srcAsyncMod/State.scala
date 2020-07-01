@@ -17,7 +17,7 @@ trait State[OptionType /* <: OptionTypeBase */] extends js.Object {
 
 object State {
   @scala.inline
-  def apply[OptionType](
+  def apply[/* <: typings.reactSelect.typesMod.OptionTypeBase */ OptionType](
     inputValue: String,
     isLoading: Boolean,
     loadedOptions: OptionsType[OptionType],

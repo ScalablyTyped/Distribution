@@ -53,17 +53,16 @@ import typings.react.mod.DragEvent
 import typings.react.mod.FocusEvent
 import typings.react.mod.FormEvent
 import typings.react.mod.KeyboardEvent
-import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TransitionEvent
-import typings.react.mod.UIEvent
 import typings.react.mod.WheelEvent
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.MouseEvent
+import typings.std.UIEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -100,7 +99,7 @@ trait About extends js.Object {
   var `aria-modal`: js.UndefOr[Boolean] = js.undefined
   var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
   var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
-  var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+  var `aria-orientation`: js.UndefOr[vertical | horizontal] = js.undefined
   var `aria-owns`: js.UndefOr[String] = js.undefined
   var `aria-placeholder`: js.UndefOr[String] = js.undefined
   var `aria-posinset`: js.UndefOr[Double] = js.undefined
@@ -312,8 +311,8 @@ trait About extends js.Object {
   var onRateChangeCapture: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.undefined
   var onReset: js.UndefOr[js.Function1[/* event */ FormEvent[HTMLElement], Unit]] = js.undefined
   var onResetCapture: js.UndefOr[js.Function1[/* event */ FormEvent[HTMLElement], Unit]] = js.undefined
-  var onScroll: js.UndefOr[js.Function1[/* event */ UIEvent[HTMLElement, NativeUIEvent], Unit]] = js.undefined
-  var onScrollCapture: js.UndefOr[js.Function1[/* event */ UIEvent[HTMLElement, NativeUIEvent], Unit]] = js.undefined
+  var onScroll: js.UndefOr[js.Function1[/* event */ typings.react.mod.UIEvent[HTMLElement, UIEvent], Unit]] = js.undefined
+  var onScrollCapture: js.UndefOr[js.Function1[/* event */ typings.react.mod.UIEvent[HTMLElement, UIEvent], Unit]] = js.undefined
   var onSeeked: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.undefined
   var onSeekedCapture: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.undefined
   var onSeeking: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.undefined
@@ -400,7 +399,7 @@ object About {
     `aria-modal`: js.UndefOr[Boolean] = js.undefined,
     `aria-multiline`: js.UndefOr[Boolean] = js.undefined,
     `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined,
-    `aria-orientation`: horizontal | vertical = null,
+    `aria-orientation`: vertical | horizontal = null,
     `aria-owns`: String = null,
     `aria-placeholder`: String = null,
     `aria-posinset`: js.UndefOr[Double] = js.undefined,
@@ -571,8 +570,8 @@ object About {
     onRateChangeCapture: /* event */ SyntheticEvent[HTMLElement, Event] => Unit = null,
     onReset: /* event */ FormEvent[HTMLElement] => Unit = null,
     onResetCapture: /* event */ FormEvent[HTMLElement] => Unit = null,
-    onScroll: /* event */ UIEvent[HTMLElement, NativeUIEvent] => Unit = null,
-    onScrollCapture: /* event */ UIEvent[HTMLElement, NativeUIEvent] => Unit = null,
+    onScroll: /* event */ typings.react.mod.UIEvent[HTMLElement, UIEvent] => Unit = null,
+    onScrollCapture: /* event */ typings.react.mod.UIEvent[HTMLElement, UIEvent] => Unit = null,
     onSeeked: /* event */ SyntheticEvent[HTMLElement, Event] => Unit = null,
     onSeekedCapture: /* event */ SyntheticEvent[HTMLElement, Event] => Unit = null,
     onSeeking: /* event */ SyntheticEvent[HTMLElement, Event] => Unit = null,

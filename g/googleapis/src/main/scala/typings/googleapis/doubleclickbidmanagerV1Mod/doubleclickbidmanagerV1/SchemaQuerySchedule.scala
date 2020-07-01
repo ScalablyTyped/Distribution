@@ -35,13 +35,13 @@ object SchemaQuerySchedule {
   def apply(
     endTimeMs: String = null,
     frequency: String = null,
-    nextRunMinuteOfDay: Int | Double = null,
+    nextRunMinuteOfDay: js.UndefOr[Double] = js.undefined,
     nextRunTimezoneCode: String = null
   ): SchemaQuerySchedule = {
     val __obj = js.Dynamic.literal()
     if (endTimeMs != null) __obj.updateDynamic("endTimeMs")(endTimeMs.asInstanceOf[js.Any])
     if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
-    if (nextRunMinuteOfDay != null) __obj.updateDynamic("nextRunMinuteOfDay")(nextRunMinuteOfDay.asInstanceOf[js.Any])
+    if (!js.isUndefined(nextRunMinuteOfDay)) __obj.updateDynamic("nextRunMinuteOfDay")(nextRunMinuteOfDay.get.asInstanceOf[js.Any])
     if (nextRunTimezoneCode != null) __obj.updateDynamic("nextRunTimezoneCode")(nextRunTimezoneCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQuerySchedule]
   }

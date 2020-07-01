@@ -13,7 +13,7 @@ trait AssignAction[TContext, TEvent /* <: EventObject */] extends ActionObject[T
 
 object AssignAction {
   @scala.inline
-  def apply[TContext, TEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     assignment: (Assigner[TContext, TEvent]) | (PropertyAssigner[TContext, TEvent]),
     `type`: Assign,
     exec: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => js.Any | Unit = null

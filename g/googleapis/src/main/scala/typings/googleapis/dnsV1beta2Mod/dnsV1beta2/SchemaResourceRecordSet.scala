@@ -25,7 +25,7 @@ object SchemaResourceRecordSet {
     name: String = null,
     rrdatas: js.Array[String] = null,
     signatureRrdatas: js.Array[String] = null,
-    ttl: Int | Double = null,
+    ttl: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): SchemaResourceRecordSet = {
     val __obj = js.Dynamic.literal()
@@ -33,7 +33,7 @@ object SchemaResourceRecordSet {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (rrdatas != null) __obj.updateDynamic("rrdatas")(rrdatas.asInstanceOf[js.Any])
     if (signatureRrdatas != null) __obj.updateDynamic("signatureRrdatas")(signatureRrdatas.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResourceRecordSet]
   }

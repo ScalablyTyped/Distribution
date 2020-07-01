@@ -1,6 +1,5 @@
 package typings.firefoxWebextBrowser.browser.tabs
 
-import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.isarticle_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation._
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.discarded
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.favIconUrl
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.hidden
-  - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.isarticle_
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.isArticle
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mutedInfo
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.pinned
@@ -35,8 +33,6 @@ object UpdatePropertyName {
   def hidden: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.hidden = "hidden".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.hidden]
   @scala.inline
   def isArticle: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.isArticle = "isArticle".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.isArticle]
-  @scala.inline
-  def isarticle: isarticle_ = "isarticle".asInstanceOf[isarticle_]
   @scala.inline
   def mutedInfo: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mutedInfo = "mutedInfo".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mutedInfo]
   @scala.inline

@@ -59,7 +59,7 @@ object SchemaContactGroup {
     etag: String = null,
     formattedName: String = null,
     groupType: String = null,
-    memberCount: Int | Double = null,
+    memberCount: js.UndefOr[Double] = js.undefined,
     memberResourceNames: js.Array[String] = null,
     metadata: SchemaContactGroupMetadata = null,
     name: String = null,
@@ -69,7 +69,7 @@ object SchemaContactGroup {
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
     if (formattedName != null) __obj.updateDynamic("formattedName")(formattedName.asInstanceOf[js.Any])
     if (groupType != null) __obj.updateDynamic("groupType")(groupType.asInstanceOf[js.Any])
-    if (memberCount != null) __obj.updateDynamic("memberCount")(memberCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(memberCount)) __obj.updateDynamic("memberCount")(memberCount.get.asInstanceOf[js.Any])
     if (memberResourceNames != null) __obj.updateDynamic("memberResourceNames")(memberResourceNames.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

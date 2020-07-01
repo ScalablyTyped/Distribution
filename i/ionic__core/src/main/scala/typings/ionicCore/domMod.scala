@@ -1,5 +1,6 @@
 package typings.ionicCore
 
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.anon.Ids
 import typings.ionicCore.interfaceMod.RouteChain
 import typings.ionicCore.interfaceMod.RouterDirection
@@ -21,6 +22,14 @@ object domMod extends js.Object {
     direction: RouterDirection,
     index: Double,
     changed: Boolean
+  ): js.Promise[Boolean] = js.native
+  def writeNavState(
+    root: js.UndefOr[HTMLElement],
+    chain: RouteChain,
+    direction: RouterDirection,
+    index: Double,
+    changed: Boolean,
+    animation: AnimationBuilder
   ): js.Promise[Boolean] = js.native
 }
 

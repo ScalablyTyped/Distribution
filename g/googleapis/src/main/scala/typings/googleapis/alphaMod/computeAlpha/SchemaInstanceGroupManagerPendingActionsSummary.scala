@@ -31,16 +31,16 @@ trait SchemaInstanceGroupManagerPendingActionsSummary extends js.Object {
 object SchemaInstanceGroupManagerPendingActionsSummary {
   @scala.inline
   def apply(
-    creating: Int | Double = null,
-    deleting: Int | Double = null,
-    recreating: Int | Double = null,
-    restarting: Int | Double = null
+    creating: js.UndefOr[Double] = js.undefined,
+    deleting: js.UndefOr[Double] = js.undefined,
+    recreating: js.UndefOr[Double] = js.undefined,
+    restarting: js.UndefOr[Double] = js.undefined
   ): SchemaInstanceGroupManagerPendingActionsSummary = {
     val __obj = js.Dynamic.literal()
-    if (creating != null) __obj.updateDynamic("creating")(creating.asInstanceOf[js.Any])
-    if (deleting != null) __obj.updateDynamic("deleting")(deleting.asInstanceOf[js.Any])
-    if (recreating != null) __obj.updateDynamic("recreating")(recreating.asInstanceOf[js.Any])
-    if (restarting != null) __obj.updateDynamic("restarting")(restarting.asInstanceOf[js.Any])
+    if (!js.isUndefined(creating)) __obj.updateDynamic("creating")(creating.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleting)) __obj.updateDynamic("deleting")(deleting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(recreating)) __obj.updateDynamic("recreating")(recreating.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(restarting)) __obj.updateDynamic("restarting")(restarting.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstanceGroupManagerPendingActionsSummary]
   }
 }

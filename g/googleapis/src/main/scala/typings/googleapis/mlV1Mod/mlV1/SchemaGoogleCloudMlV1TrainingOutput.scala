@@ -43,7 +43,7 @@ object SchemaGoogleCloudMlV1TrainingOutput {
   def apply(
     builtInAlgorithmOutput: SchemaGoogleCloudMlV1BuiltInAlgorithmOutput = null,
     completedTrialCount: String = null,
-    consumedMLUnits: Int | Double = null,
+    consumedMLUnits: js.UndefOr[Double] = js.undefined,
     isBuiltInAlgorithmJob: js.UndefOr[Boolean] = js.undefined,
     isHyperparameterTuningJob: js.UndefOr[Boolean] = js.undefined,
     trials: js.Array[SchemaGoogleCloudMlV1HyperparameterOutput] = null
@@ -51,9 +51,9 @@ object SchemaGoogleCloudMlV1TrainingOutput {
     val __obj = js.Dynamic.literal()
     if (builtInAlgorithmOutput != null) __obj.updateDynamic("builtInAlgorithmOutput")(builtInAlgorithmOutput.asInstanceOf[js.Any])
     if (completedTrialCount != null) __obj.updateDynamic("completedTrialCount")(completedTrialCount.asInstanceOf[js.Any])
-    if (consumedMLUnits != null) __obj.updateDynamic("consumedMLUnits")(consumedMLUnits.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBuiltInAlgorithmJob)) __obj.updateDynamic("isBuiltInAlgorithmJob")(isBuiltInAlgorithmJob.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHyperparameterTuningJob)) __obj.updateDynamic("isHyperparameterTuningJob")(isHyperparameterTuningJob.asInstanceOf[js.Any])
+    if (!js.isUndefined(consumedMLUnits)) __obj.updateDynamic("consumedMLUnits")(consumedMLUnits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBuiltInAlgorithmJob)) __obj.updateDynamic("isBuiltInAlgorithmJob")(isBuiltInAlgorithmJob.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHyperparameterTuningJob)) __obj.updateDynamic("isHyperparameterTuningJob")(isHyperparameterTuningJob.get.asInstanceOf[js.Any])
     if (trials != null) __obj.updateDynamic("trials")(trials.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudMlV1TrainingOutput]
   }

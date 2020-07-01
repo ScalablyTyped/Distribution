@@ -18,7 +18,7 @@ trait Buffer extends js.Object {
   /**
     * The data in the buffer, as a typed array
     *
-    * @member {ArrayBuffer| SharedArrayBuffer|ArrayBufferView} PIXI.Buffer#data
+    * @member {ArrayBuffer| SharedArrayBuffer | ArrayBufferView} PIXI.Buffer#data
     */
   var data: ArrayBuffer | SharedArrayBuffer | ArrayBufferView = js.native
   /**
@@ -31,7 +31,7 @@ trait Buffer extends js.Object {
   def dispose(): Unit = js.native
   /**
     * flags this buffer as requiring an upload to the GPU
-    * @param {ArrayBuffer|SharedArrayBuffer|ArrayBufferView} [data] the data to update in the buffer.
+    * @param {ArrayBuffer|SharedArrayBuffer|ArrayBufferView} [data] - the data to update in the buffer.
     */
   def update(): Unit = js.native
   def update(data: ArrayBuffer): Unit = js.native

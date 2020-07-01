@@ -17,9 +17,9 @@ trait SchemaDeleteSheetRequest extends js.Object {
 
 object SchemaDeleteSheetRequest {
   @scala.inline
-  def apply(sheetId: Int | Double = null): SchemaDeleteSheetRequest = {
+  def apply(sheetId: js.UndefOr[Double] = js.undefined): SchemaDeleteSheetRequest = {
     val __obj = js.Dynamic.literal()
-    if (sheetId != null) __obj.updateDynamic("sheetId")(sheetId.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetId)) __obj.updateDynamic("sheetId")(sheetId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeleteSheetRequest]
   }
 }

@@ -4,6 +4,7 @@ import typings.firefoxWebextBrowser.WebExtEvent
 import typings.firefoxWebextBrowser.anon.State
 import typings.firefoxWebextBrowser.browser.captivePortal.Status
 import typings.firefoxWebextBrowser.browser.captivePortal.UndefinedState
+import typings.firefoxWebextBrowser.browser.types.Setting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,6 +19,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("browser.captivePortal")
 @js.native
 object captivePortal extends js.Object {
+  /* captivePortal properties */
+  /** Return the canonical captive-portal detection URL. Read-only. */
+  val canonicalURL: Setting = js.native
   /**
     * This notification will be emitted when the captive portal service has determined that we can connect to the
     * internet. The service will pass either `captive` if there is an unlocked captive portal present, or `clear` if

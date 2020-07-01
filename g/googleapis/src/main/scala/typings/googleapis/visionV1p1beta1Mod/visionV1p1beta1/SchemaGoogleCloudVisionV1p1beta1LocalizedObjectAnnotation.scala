@@ -40,14 +40,14 @@ object SchemaGoogleCloudVisionV1p1beta1LocalizedObjectAnnotation {
     languageCode: String = null,
     mid: String = null,
     name: String = null,
-    score: Int | Double = null
+    score: js.UndefOr[Double] = js.undefined
   ): SchemaGoogleCloudVisionV1p1beta1LocalizedObjectAnnotation = {
     val __obj = js.Dynamic.literal()
     if (boundingPoly != null) __obj.updateDynamic("boundingPoly")(boundingPoly.asInstanceOf[js.Any])
     if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
     if (mid != null) __obj.updateDynamic("mid")(mid.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p1beta1LocalizedObjectAnnotation]
   }
 }

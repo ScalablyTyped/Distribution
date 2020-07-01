@@ -5,11 +5,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Module extends js.Object {
+  /**
+    * The description of this module.
+    */
   var description: String
-  /* Properties */
+  /**
+    * The name of this module.
+    */
   var name: String
+  /**
+    * The running status of this module.
+    */
   var status: String
+  /**
+    * The support state of this module.
+    */
   var support_level: String
+  /**
+    * The number of times this module is being used.
+    */
   var use_count: Double
 }
 

@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait Chips extends Component[ChipsOptions] {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<ChipsOptions> * / any */ @js.native
+trait Chips extends js.Object {
   /**
     * Autocomplete instance, if any
     */

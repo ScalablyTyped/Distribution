@@ -21,6 +21,8 @@ trait ClientInstance extends js.Object {
   @JSName("create")
   def create_WebRtcEndpoint(`type`: typings.kurentoClient.kurentoClientStrings.WebRtcEndpoint): js.Promise[WebRtcEndpoint] = js.native
   def getMediaobjectById(objectId: String): js.Promise[MediaPipeline | WebRtcEndpoint | RecorderEndpoint] = js.native
+  def getServerManager(): js.Promise[MediaServer] = js.native
+  def getServerManager(callback: Callback[MediaServer]): js.Promise[MediaServer] = js.native
   @JSName("on")
   def on_Error(
     event: typings.kurentoClient.kurentoClientStrings.Error,

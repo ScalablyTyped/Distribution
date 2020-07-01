@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl", "InvalidArgument")
 @js.native
 class InvalidArgument protected ()
-  extends typings.tstl.exceptionMod.InvalidArgument {
+  extends typings.tstl.tstlModuleMod.InvalidArgument {
   /**
     * Initializer Constructor.
     *

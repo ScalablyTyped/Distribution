@@ -90,7 +90,7 @@ trait IFuture[REQUEST /* <: IShellControlMessage */, REPLY /* <: IShellControlMe
 
 object IFuture {
   @scala.inline
-  def apply[REQUEST, REPLY](
+  def apply[/* <: typings.jupyterlabServices.messagesMod.IShellControlMessage */ REQUEST, /* <: typings.jupyterlabServices.messagesMod.IShellControlMessage */ REPLY](
     dispose: () => Unit,
     done: js.Promise[REPLY],
     isDisposed: Boolean,

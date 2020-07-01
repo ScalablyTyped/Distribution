@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DeleteBackendEnvironmentResult extends js.Object {
   /**
-    *  Backend environment structure for an Amplify App. 
+    *  Describes the backend environment for an Amplify app. 
     */
   var backendEnvironment: BackendEnvironment = js.native
 }

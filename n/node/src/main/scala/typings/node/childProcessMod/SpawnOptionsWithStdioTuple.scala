@@ -12,7 +12,7 @@ trait SpawnOptionsWithStdioTuple[Stdin /* <: StdioNull | StdioPipe */, Stdout /*
 
 object SpawnOptionsWithStdioTuple {
   @scala.inline
-  def apply[Stdin, Stdout, Stderr](
+  def apply[/* <: typings.node.childProcessMod.StdioNull | typings.node.childProcessMod.StdioPipe */ Stdin, /* <: typings.node.childProcessMod.StdioNull | typings.node.childProcessMod.StdioPipe */ Stdout, /* <: typings.node.childProcessMod.StdioNull | typings.node.childProcessMod.StdioPipe */ Stderr](
     stdio: js.Tuple3[Stdin, Stdout, Stderr],
     argv0: String = null,
     cwd: String = null,

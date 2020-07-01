@@ -40,7 +40,7 @@ trait TimeoutProps[RefElement /* <: js.UndefOr[HTMLElement] */]
 
 object TimeoutProps {
   @scala.inline
-  def apply[RefElement](
+  def apply[/* <: js.UndefOr[typings.std.HTMLElement] */ RefElement](
     timeout: Double | Appear,
     addEndListener: EndHandler[RefElement] = null,
     children: TransitionChildren = null,

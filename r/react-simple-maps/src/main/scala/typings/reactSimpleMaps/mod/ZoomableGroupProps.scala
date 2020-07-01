@@ -31,6 +31,7 @@ trait ZoomableGroupProps extends SVGAttributes[SVGGElement] {
   var onMoveStart: js.UndefOr[js.Function2[/* event */ js.Any, /* position */ Position, Unit]] = js.undefined
   var onZoomEnd: js.UndefOr[js.Function2[/* event */ js.Any, /* position */ Position, Unit]] = js.undefined
   var onZoomStart: js.UndefOr[js.Function2[/* event */ js.Any, /* position */ Position, Unit]] = js.undefined
+  var translateExtent: js.UndefOr[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]] = js.undefined
   /**
     * @default 1
     */
@@ -54,6 +55,7 @@ object ZoomableGroupProps {
     onMoveStart: (/* event */ js.Any, /* position */ Position) => Unit = null,
     onZoomEnd: (/* event */ js.Any, /* position */ Position) => Unit = null,
     onZoomStart: (/* event */ js.Any, /* position */ Position) => Unit = null,
+    translateExtent: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = null,
     zoom: js.UndefOr[Double] = js.undefined,
     zoomSensitivity: js.UndefOr[Double] = js.undefined
   ): ZoomableGroupProps = {
@@ -68,6 +70,7 @@ object ZoomableGroupProps {
     if (onMoveStart != null) __obj.updateDynamic("onMoveStart")(js.Any.fromFunction2(onMoveStart))
     if (onZoomEnd != null) __obj.updateDynamic("onZoomEnd")(js.Any.fromFunction2(onZoomEnd))
     if (onZoomStart != null) __obj.updateDynamic("onZoomStart")(js.Any.fromFunction2(onZoomStart))
+    if (translateExtent != null) __obj.updateDynamic("translateExtent")(translateExtent.asInstanceOf[js.Any])
     if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     if (!js.isUndefined(zoomSensitivity)) __obj.updateDynamic("zoomSensitivity")(zoomSensitivity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomableGroupProps]

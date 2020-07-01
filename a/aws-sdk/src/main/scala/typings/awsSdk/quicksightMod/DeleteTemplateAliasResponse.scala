@@ -11,7 +11,7 @@ trait DeleteTemplateAliasResponse extends js.Object {
     */
   var AliasName: js.UndefOr[typings.awsSdk.quicksightMod.AliasName] = js.native
   /**
-    * The Amazon Resource Name (ARN) of the resource.
+    * The Amazon Resource Name (ARN) of the template you want to delete.
     */
   var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.native
   /**

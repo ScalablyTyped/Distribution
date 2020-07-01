@@ -61,16 +61,16 @@ object SchemaHttpCheck {
     headers: StringDictionary[String] = null,
     maskHeaders: js.UndefOr[Boolean] = js.undefined,
     path: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     useSsl: js.UndefOr[Boolean] = js.undefined
   ): SchemaHttpCheck = {
     val __obj = js.Dynamic.literal()
     if (authInfo != null) __obj.updateDynamic("authInfo")(authInfo.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(maskHeaders)) __obj.updateDynamic("maskHeaders")(maskHeaders.asInstanceOf[js.Any])
+    if (!js.isUndefined(maskHeaders)) __obj.updateDynamic("maskHeaders")(maskHeaders.get.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSsl)) __obj.updateDynamic("useSsl")(useSsl.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSsl)) __obj.updateDynamic("useSsl")(useSsl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHttpCheck]
   }
 }

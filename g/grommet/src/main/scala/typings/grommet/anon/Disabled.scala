@@ -9,13 +9,13 @@ trait Disabled extends js.Object {
   var disabled: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var label: js.UndefOr[String | ReactNode] = js.undefined
-  var value: String
+  var value: String | Double | Boolean
 }
 
 object Disabled {
   @scala.inline
   def apply(
-    value: String,
+    value: String | Double | Boolean,
     disabled: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     label: String | ReactNode = null

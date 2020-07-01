@@ -127,6 +127,10 @@ class Model () extends default {
     */
   var isValid: ComputedProperty[Boolean, Boolean] = js.native
   /**
+    * A reference to DS.Store service instance.
+    */
+  var store: Store = js.native
+  /**
     * Fired when the record enters the error state.
     */
   def becameError(): Unit = js.native

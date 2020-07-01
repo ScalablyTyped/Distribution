@@ -55,6 +55,7 @@ package object storagegatewayMod {
   type DoubleObject = scala.Double
   type Ec2InstanceId = java.lang.String
   type Ec2InstanceRegion = java.lang.String
+  type EndpointType = java.lang.String
   type FileShareARN = java.lang.String
   type FileShareARNList = js.Array[typings.awsSdk.storagegatewayMod.FileShareARN]
   type FileShareClientList = js.Array[typings.awsSdk.storagegatewayMod.IPV4AddressCIDR]

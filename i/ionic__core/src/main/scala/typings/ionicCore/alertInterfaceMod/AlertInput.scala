@@ -9,7 +9,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AlertInput extends js.Object {
+  var attributes: js.UndefOr[AlertInputAttributes | AlertTextareaAttributes] = js.undefined
   var checked: js.UndefOr[Boolean] = js.undefined
+  var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var handler: js.UndefOr[js.Function1[/* input */ AlertInput, Unit]] = js.undefined
   var id: js.UndefOr[String] = js.undefined
@@ -25,7 +27,9 @@ trait AlertInput extends js.Object {
 object AlertInput {
   @scala.inline
   def apply(
+    attributes: AlertInputAttributes | AlertTextareaAttributes = null,
     checked: js.UndefOr[Boolean] = js.undefined,
+    cssClass: String | js.Array[String] = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     handler: /* input */ AlertInput => Unit = null,
     id: String = null,
@@ -38,7 +42,9 @@ object AlertInput {
     value: js.Any = null
   ): AlertInput = {
     val __obj = js.Dynamic.literal()
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (handler != null) __obj.updateDynamic("handler")(js.Any.fromFunction1(handler))
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

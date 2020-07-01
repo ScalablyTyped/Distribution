@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PaginateResult[T]
-  extends /* customLabel */ StringDictionary[js.UndefOr[js.Array[T] | Double | Boolean]] {
+  extends /* customLabel */ StringDictionary[js.UndefOr[js.Array[T] | Double | Boolean | Null]] {
   var docs: js.Array[T]
   var hasNextPage: Boolean
   var hasPrevPage: Boolean
@@ -30,7 +30,7 @@ object PaginateResult {
     pagingCounter: Double,
     totalDocs: Double,
     totalPages: Double,
-    StringDictionary: /* customLabel */ StringDictionary[js.UndefOr[js.Array[T] | Double | Boolean]] = null,
+    StringDictionary: /* customLabel */ StringDictionary[js.UndefOr[js.Array[T] | Double | Boolean | Null]] = null,
     meta: js.Any = null,
     nextPage: js.UndefOr[Null | Double] = js.undefined,
     page: js.UndefOr[Double] = js.undefined,

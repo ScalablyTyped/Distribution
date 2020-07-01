@@ -66,7 +66,8 @@ trait MessageRead extends Item {
     * current item.
     *
     * The `cc` property returns an array that contains an `EmailAddressDetails` object for each recipient listed on the Cc line of the message.
-    * By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can get 500 members maximum.
+    * By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, you can get 20 members maximum, while
+    * on Windows and Mac, you can get 500 members maximum.
     *
     * @remarks
     *
@@ -355,7 +356,8 @@ trait MessageRead extends Item {
     * current item.
     *
     * The `to` property returns an array that contains an `EmailAddressDetails` object for each recipient listed on the To line of the message.
-    * By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can get 500 members maximum.
+    * By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, you can get 20 members maximum, while
+    * on Windows and Mac, you can get 500 members maximum.
     *
     * @remarks
     *
@@ -380,7 +382,7 @@ trait MessageRead extends Item {
   /**
     * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
     *
-    * To see which event types are supported, see `Office.EventType` for details.
+    * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section} for supported events.
     *
     * [Api set: Mailbox 1.7]
     *
@@ -412,16 +414,15 @@ trait MessageRead extends Item {
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   /**
-    * Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the
+    * Displays a reply form that includes either the sender and all recipients of the selected message or the organizer and all attendees of the
     * selected appointment.
     *
-    * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.
+    * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
     *
     * If any of the string parameters exceed their limits, `displayReplyAllForm` throws an exception.
     *
-    * When attachments are specified in the `formData.attachments` parameter, Outlook on the web and desktop clients attempt to download
-    * all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI.
-    * If this isn't possible, then no error message is thrown.
+    * When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
+    * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
     *
@@ -437,15 +438,58 @@ trait MessageRead extends Item {
   def displayReplyAllForm(formData: String): Unit = js.native
   def displayReplyAllForm(formData: ReplyFormData): Unit = js.native
   /**
+    * Displays a reply form that includes either the sender and all recipients of the selected message or the organizer and all attendees of the
+    * selected appointment.
+    *
+    * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
+    *
+    * If any of the string parameters exceed their limits, `displayReplyAllFormAsync` throws an exception.
+    *
+    * When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
+    * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
+    *
+    * **Note**: This method is not supported in Outlook on iOS or Android.
+    *
+    * [Api set: Mailbox Preview]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+    *
+    * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
+    *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
+    *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+    *                `asyncResult`, which is an `Office.AsyncResult` object.
+    *
+    * @beta
+    */
+  def displayReplyAllFormAsync(formData: String): Unit = js.native
+  def displayReplyAllFormAsync(formData: String, options: AsyncContextOptions): Unit = js.native
+  def displayReplyAllFormAsync(
+    formData: String,
+    options: AsyncContextOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  def displayReplyAllFormAsync(formData: ReplyFormData): Unit = js.native
+  def displayReplyAllFormAsync(formData: ReplyFormData, options: AsyncContextOptions): Unit = js.native
+  def displayReplyAllFormAsync(
+    formData: ReplyFormData,
+    options: AsyncContextOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  /**
     * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
     *
-    * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.
+    * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
     *
     * If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.
     *
-    * When attachments are specified in the `formData.attachments` parameter, Outlook on the web and desktop clients attempt to download
-    * all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI.
-    * If this isn't possible, then no error message is thrown.
+    * When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
+    * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
     *
@@ -460,6 +504,49 @@ trait MessageRead extends Item {
     */
   def displayReplyForm(formData: String): Unit = js.native
   def displayReplyForm(formData: ReplyFormData): Unit = js.native
+  /**
+    * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
+    *
+    * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
+    *
+    * If any of the string parameters exceed their limits, `displayReplyFormAsync` throws an exception.
+    *
+    * When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
+    * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
+    *
+    * **Note**: This method is not supported in Outlook on iOS or Android.
+    *
+    * [Api set: Mailbox Preview]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+    *
+    * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
+    *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
+    *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+    *                `asyncResult`, which is an `Office.AsyncResult` object.
+    *
+    * @beta
+    */
+  def displayReplyFormAsync(formData: String): Unit = js.native
+  def displayReplyFormAsync(formData: String, options: AsyncContextOptions): Unit = js.native
+  def displayReplyFormAsync(
+    formData: String,
+    options: AsyncContextOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  def displayReplyFormAsync(formData: ReplyFormData): Unit = js.native
+  def displayReplyFormAsync(formData: ReplyFormData, options: AsyncContextOptions): Unit = js.native
+  def displayReplyFormAsync(
+    formData: ReplyFormData,
+    options: AsyncContextOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   /**
     * Gets all the internet headers for the message as a string.
     *
@@ -824,7 +911,7 @@ trait MessageRead extends Item {
   /**
     * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
     *
-    * To see which event types are supported, see `Office.EventType` for details.
+    * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section} for supported events.
     *
     * [Api set: Mailbox 1.7]
     *

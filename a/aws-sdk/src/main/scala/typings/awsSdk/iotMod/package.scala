@@ -151,6 +151,22 @@ package object iotMod {
   type AwsIotJobArn = java.lang.String
   type AwsIotJobId = java.lang.String
   type AwsIotSqlVersion = java.lang.String
+  type AwsJobAbortCriteriaAbortAction = typings.awsSdk.awsSdkStrings.CANCEL | java.lang.String
+  type AwsJobAbortCriteriaAbortThresholdPercentage = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.FAILED
+    - typings.awsSdk.awsSdkStrings.REJECTED
+    - typings.awsSdk.awsSdkStrings.TIMED_OUT
+    - typings.awsSdk.awsSdkStrings.ALL
+    - java.lang.String
+  */
+  type AwsJobAbortCriteriaFailureType = typings.awsSdk.iotMod._AwsJobAbortCriteriaFailureType | java.lang.String
+  type AwsJobAbortCriteriaList = js.Array[typings.awsSdk.iotMod.AwsJobAbortCriteria]
+  type AwsJobAbortCriteriaMinimumNumberOfExecutedThings = scala.Double
+  type AwsJobRateIncreaseCriteriaNumberOfThings = scala.Double
+  type AwsJobRolloutIncrementFactor = scala.Double
+  type AwsJobRolloutRatePerMinute = scala.Double
+  type AwsJobTimeoutInProgressTimeoutInMinutes = scala.Double
   type BehaviorMetric = java.lang.String
   type BehaviorName = java.lang.String
   type Behaviors = js.Array[typings.awsSdk.iotMod.Behavior]

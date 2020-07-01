@@ -7,7 +7,15 @@ import scala.scalajs.js.annotation._
 trait ZlibOptions
   extends BaseOptions
      with Options[js.Any] {
+  /**
+    * The compression algorithm/function
+    * @default 'gzip'
+    */
   var algorithm: js.UndefOr[ZlibAlgorithm] = js.undefined
+  /**
+    * Compression options for algorithm
+    * @default { level: 9 }
+    */
   var compressionOptions: js.UndefOr[typings.node.zlibMod.ZlibOptions] = js.undefined
 }
 
@@ -18,11 +26,11 @@ object ZlibOptions {
     cache: Boolean | String = null,
     compressionOptions: typings.node.zlibMod.ZlibOptions = null,
     deleteOriginalAssets: js.UndefOr[Boolean] = js.undefined,
-    exclude: Pattern = null,
-    filename: String = null,
-    include: Pattern = null,
+    exclude: Rules = null,
+    filename: String | FilenameFunction = null,
+    include: Rules = null,
     minRatio: js.UndefOr[Double] = js.undefined,
-    test: Pattern = null,
+    test: Rules = null,
     threshold: js.UndefOr[Double] = js.undefined
   ): ZlibOptions = {
     val __obj = js.Dynamic.literal()

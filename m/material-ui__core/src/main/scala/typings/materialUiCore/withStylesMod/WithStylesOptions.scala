@@ -14,7 +14,7 @@ trait WithStylesOptions[ClassKey /* <: String */] extends js.Object {
 
 object WithStylesOptions {
   @scala.inline
-  def apply[ClassKey](
+  def apply[/* <: java.lang.String */ ClassKey](
     flip: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     withTheme: js.UndefOr[Boolean] = js.undefined

@@ -23,11 +23,15 @@ trait SchemaVolumes extends js.Object {
 
 object SchemaVolumes {
   @scala.inline
-  def apply(items: js.Array[SchemaVolume] = null, kind: String = null, totalItems: Int | Double = null): SchemaVolumes = {
+  def apply(
+    items: js.Array[SchemaVolume] = null,
+    kind: String = null,
+    totalItems: js.UndefOr[Double] = js.undefined
+  ): SchemaVolumes = {
     val __obj = js.Dynamic.literal()
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (totalItems != null) __obj.updateDynamic("totalItems")(totalItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalItems)) __obj.updateDynamic("totalItems")(totalItems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVolumes]
   }
 }

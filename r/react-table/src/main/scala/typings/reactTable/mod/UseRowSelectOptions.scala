@@ -13,7 +13,7 @@ trait UseRowSelectOptions[D /* <: js.Object */] extends js.Object {
 
 object UseRowSelectOptions {
   @scala.inline
-  def apply[D](
+  def apply[/* <: js.Object */ D](
     autoResetSelectedRows: js.UndefOr[Boolean] = js.undefined,
     manualRowSelectedKey: IdType[D] = null,
     selectSubRows: js.UndefOr[Boolean] = js.undefined

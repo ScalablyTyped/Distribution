@@ -14,7 +14,7 @@ trait FinalizeHandlerArguments[Input /* <: js.Object */, Stream] extends Handler
 
 object FinalizeHandlerArguments {
   @scala.inline
-  def apply[Input, Stream](input: Input, request: HttpRequest[Stream]): FinalizeHandlerArguments[Input, Stream] = {
+  def apply[/* <: js.Object */ Input, Stream](input: Input, request: HttpRequest[Stream]): FinalizeHandlerArguments[Input, Stream] = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[FinalizeHandlerArguments[Input, Stream]]
   }

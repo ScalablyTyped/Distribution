@@ -47,7 +47,7 @@ trait SchemaQuery extends js.Object {
 object SchemaQuery {
   @scala.inline
   def apply(
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     cr: String = null,
     cx: String = null,
     dateRestrict: String = null,
@@ -79,13 +79,13 @@ object SchemaQuery {
     siteSearch: String = null,
     siteSearchFilter: String = null,
     sort: String = null,
-    startIndex: Int | Double = null,
-    startPage: Int | Double = null,
+    startIndex: js.UndefOr[Double] = js.undefined,
+    startPage: js.UndefOr[Double] = js.undefined,
     title: String = null,
     totalResults: String = null
   ): SchemaQuery = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (cr != null) __obj.updateDynamic("cr")(cr.asInstanceOf[js.Any])
     if (cx != null) __obj.updateDynamic("cx")(cx.asInstanceOf[js.Any])
     if (dateRestrict != null) __obj.updateDynamic("dateRestrict")(dateRestrict.asInstanceOf[js.Any])
@@ -117,8 +117,8 @@ object SchemaQuery {
     if (siteSearch != null) __obj.updateDynamic("siteSearch")(siteSearch.asInstanceOf[js.Any])
     if (siteSearchFilter != null) __obj.updateDynamic("siteSearchFilter")(siteSearchFilter.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
-    if (startPage != null) __obj.updateDynamic("startPage")(startPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startPage)) __obj.updateDynamic("startPage")(startPage.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (totalResults != null) __obj.updateDynamic("totalResults")(totalResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQuery]

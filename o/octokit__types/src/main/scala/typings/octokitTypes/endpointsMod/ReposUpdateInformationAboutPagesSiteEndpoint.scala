@@ -1,8 +1,8 @@
 package typings.octokitTypes.endpointsMod
 
-import typings.octokitTypes.octokitTypesStrings.QuotationmarkmasterQuotationmark
-import typings.octokitTypes.octokitTypesStrings.`Quotationmarkgh-pagesQuotationmark`
-import typings.octokitTypes.octokitTypesStrings.`Quotationmarkmaster SlashdocsQuotationmark`
+import typings.octokitTypes.octokitTypesStrings.`gh-pages`
+import typings.octokitTypes.octokitTypesStrings.`master Slashdocs`
+import typings.octokitTypes.octokitTypesStrings.master
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,9 +17,7 @@ trait ReposUpdateInformationAboutPagesSiteEndpoint extends js.Object {
   /**
     * Update the source for the repository. Must include the branch name, and may optionally specify the subdirectory `/docs`. Possible values are `"gh-pages"`, `"master"`, and `"master /docs"`.
     */
-  var source: js.UndefOr[
-    `Quotationmarkgh-pagesQuotationmark` | QuotationmarkmasterQuotationmark | (`Quotationmarkmaster SlashdocsQuotationmark`)
-  ] = js.undefined
+  var source: js.UndefOr[`gh-pages` | master | (`master Slashdocs`)] = js.undefined
 }
 
 object ReposUpdateInformationAboutPagesSiteEndpoint {
@@ -28,7 +26,7 @@ object ReposUpdateInformationAboutPagesSiteEndpoint {
     owner: String,
     repo: String,
     cname: String = null,
-    source: `Quotationmarkgh-pagesQuotationmark` | QuotationmarkmasterQuotationmark | (`Quotationmarkmaster SlashdocsQuotationmark`) = null
+    source: `gh-pages` | master | (`master Slashdocs`) = null
   ): ReposUpdateInformationAboutPagesSiteEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     if (cname != null) __obj.updateDynamic("cname")(cname.asInstanceOf[js.Any])

@@ -13,7 +13,7 @@ trait ColumnPicker[T /* <: SlickData */] extends js.Object {
 
 object ColumnPicker {
   @scala.inline
-  def apply[T](destroy: () => Unit, getAllColumns: () => js.Array[Column[T]]): ColumnPicker[T] = {
+  def apply[/* <: typings.slickgrid.Slick.SlickData */ T](destroy: () => Unit, getAllColumns: () => js.Array[Column[T]]): ColumnPicker[T] = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getAllColumns = js.Any.fromFunction0(getAllColumns))
     __obj.asInstanceOf[ColumnPicker[T]]
   }

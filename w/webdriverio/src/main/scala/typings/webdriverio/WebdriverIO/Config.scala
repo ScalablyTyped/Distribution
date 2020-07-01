@@ -160,6 +160,7 @@ trait Config extends js.Object {
   var protocol: js.UndefOr[String] = js.undefined
   var queryParams: js.UndefOr[StringDictionary[String]] = js.undefined
   var reporters: js.UndefOr[js.Array[String | js.Object]] = js.undefined
+  var requestedCapabilities: js.UndefOr[DesiredCapabilities] = js.undefined
   var runner: js.UndefOr[String] = js.undefined
   var services: js.UndefOr[js.Array[String | js.Object]] = js.undefined
   var specFileRetries: js.UndefOr[Double] = js.undefined
@@ -261,6 +262,7 @@ object Config {
     protocol: String = null,
     queryParams: StringDictionary[String] = null,
     reporters: js.Array[String | js.Object] = null,
+    requestedCapabilities: DesiredCapabilities = null,
     runner: String = null,
     services: js.Array[String | js.Object] = null,
     specFileRetries: js.UndefOr[Double] = js.undefined,
@@ -313,6 +315,7 @@ object Config {
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
     if (reporters != null) __obj.updateDynamic("reporters")(reporters.asInstanceOf[js.Any])
+    if (requestedCapabilities != null) __obj.updateDynamic("requestedCapabilities")(requestedCapabilities.asInstanceOf[js.Any])
     if (runner != null) __obj.updateDynamic("runner")(runner.asInstanceOf[js.Any])
     if (services != null) __obj.updateDynamic("services")(services.asInstanceOf[js.Any])
     if (!js.isUndefined(specFileRetries)) __obj.updateDynamic("specFileRetries")(specFileRetries.get.asInstanceOf[js.Any])

@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait MediaRecorder extends EventTarget {
+  val audioBitrateMode: BitrateMode = js.native
   val audioBitsPerSecond: Double = js.native
   val mimeType: String = js.native
   var ondataavailable: (js.Function1[/* event */ BlobEvent, Unit]) | Null = js.native

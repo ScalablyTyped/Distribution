@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @see https://developer.knuddels.de/docs/classes/KnuddelTransferDisplayType.html
-  */
+	 * @see https://developer.knuddels.de/docs/classes/KnuddelTransferDisplayType.html
+	 */
 @JSGlobal("KnuddelTransferDisplayType")
 @js.native
 class KnuddelTransferDisplayType () extends js.Object
@@ -16,20 +16,20 @@ class KnuddelTransferDisplayType () extends js.Object
 @js.native
 object KnuddelTransferDisplayType extends js.Object {
   /**
-    * @see https://developer.knuddels.de/docs/classes/KnuddelTransferDisplayType.html#property_Post
-    */
+  		 * @see https://developer.knuddels.de/docs/classes/KnuddelTransferDisplayType.html#property_Post
+  		 */
   val Post: KnuddelTransferDisplayType = js.native
   /**
-    * @see https://developer.knuddels.de/docs/classes/KnuddelTransferDisplayType.html#property_Private
-    */
+  		 * @see https://developer.knuddels.de/docs/classes/KnuddelTransferDisplayType.html#property_Private
+  		 */
   val Private: KnuddelTransferDisplayType = js.native
   /**
-    * @see https://developer.knuddels.de/docs/classes/KnuddelTransferDisplayType.html#property_Public
-    */
+  		 * @see https://developer.knuddels.de/docs/classes/KnuddelTransferDisplayType.html#property_Public
+  		 */
   val Public: KnuddelTransferDisplayType = js.native
   /**
-    * @see https://developer.knuddels.de/docs/classes/KnuddelTransferDisplayType.html#property_Silent
-    */
+  		 * @see https://developer.knuddels.de/docs/classes/KnuddelTransferDisplayType.html#property_Silent
+  		 */
   val Silent: KnuddelTransferDisplayType = js.native
 }
 

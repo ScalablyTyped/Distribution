@@ -15,9 +15,9 @@ trait SchemaGooglePrivacyDlpV2TimeZone extends js.Object {
 
 object SchemaGooglePrivacyDlpV2TimeZone {
   @scala.inline
-  def apply(offsetMinutes: Int | Double = null): SchemaGooglePrivacyDlpV2TimeZone = {
+  def apply(offsetMinutes: js.UndefOr[Double] = js.undefined): SchemaGooglePrivacyDlpV2TimeZone = {
     val __obj = js.Dynamic.literal()
-    if (offsetMinutes != null) __obj.updateDynamic("offsetMinutes")(offsetMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetMinutes)) __obj.updateDynamic("offsetMinutes")(offsetMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2TimeZone]
   }
 }

@@ -11,7 +11,7 @@ trait TooltipFormatter[T /* <: js.Object */] extends js.Object {
 
 object TooltipFormatter {
   @scala.inline
-  def apply[T](tooltipFormatter: /* row */ T => Element = null): TooltipFormatter[T] = {
+  def apply[/* <: js.Object */ T](tooltipFormatter: /* row */ T => Element = null): TooltipFormatter[T] = {
     val __obj = js.Dynamic.literal()
     if (tooltipFormatter != null) __obj.updateDynamic("tooltipFormatter")(js.Any.fromFunction1(tooltipFormatter))
     __obj.asInstanceOf[TooltipFormatter[T]]

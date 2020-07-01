@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "octokit__plugin-rest-endpoint-methods"
-version := "3.12.2-6ed21b"
+version := "3.17.0-e13d43"
 scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "before-after-hook" % "2.1.0-b55912",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200521Z-3aabb7",
-  "org.scalablytyped" %%% "octokit__core" % "2.5.3-b00227",
-  "org.scalablytyped" %%% "octokit__graphql" % "4.5.0-4d3aa9",
-  "org.scalablytyped" %%% "octokit__types" % "4.0.1-ee174c",
-  "org.scalablytyped" %%% "std" % "3.9-18cbeb")
+  "org.scalablytyped" %%% "before-after-hook" % "2.1.0-d84276",
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200624Z-2fcd45",
+  "org.scalablytyped" %%% "octokit__core" % "2.5.4-52302a",
+  "org.scalablytyped" %%% "octokit__graphql" % "4.5.1-663980",
+  "org.scalablytyped" %%% "octokit__types" % "5.0.1-3cfb71",
+  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

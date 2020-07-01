@@ -94,6 +94,8 @@ trait ObjectSchema[TSchema] extends AnySchema {
     */
   def rename(from: String, to: String): this.type = js.native
   def rename(from: String, to: String, options: RenameOptions): this.type = js.native
+  def rename(from: RegExp, to: String): this.type = js.native
+  def rename(from: RegExp, to: String, options: RenameOptions): this.type = js.native
   /**
     * Requires the object to be a Joi schema instance.
     */

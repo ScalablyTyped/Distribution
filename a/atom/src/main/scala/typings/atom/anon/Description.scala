@@ -15,7 +15,7 @@ trait Description[TargetType /* <: EventTarget */] extends js.Object {
 
 object Description {
   @scala.inline
-  def apply[TargetType](
+  def apply[/* <: typings.std.EventTarget */ TargetType](
     didDispatch: CommandEvent[TargetType] => Unit | js.Promise[Unit],
     description: String = null,
     displayName: String = null,

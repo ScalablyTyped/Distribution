@@ -61,11 +61,14 @@ object CalendarListBaseProps {
     calendarWidth: js.UndefOr[Double] = js.undefined,
     current: TCalendarDate = null,
     dayComponent: (Component[DayComponentProps, js.Object, _]) | SFC[DayComponentProps] = null,
+    disableArrowLeft: js.UndefOr[Boolean] = js.undefined,
+    disableArrowRight: js.UndefOr[Boolean] = js.undefined,
     disableMonthChange: js.UndefOr[Boolean] = js.undefined,
     disabledByDefault: js.UndefOr[Boolean] = js.undefined,
     displayLoadingIndicator: js.UndefOr[Boolean] = js.undefined,
     firstDay: js.UndefOr[Double] = js.undefined,
     futureScrollRange: js.UndefOr[Double] = js.undefined,
+    headerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     hideArrows: js.UndefOr[Boolean] = js.undefined,
     hideDayNames: js.UndefOr[Boolean] = js.undefined,
     hideExtraDays: js.UndefOr[Boolean] = js.undefined,
@@ -88,18 +91,22 @@ object CalendarListBaseProps {
     showScrollIndicator: js.UndefOr[Boolean] = js.undefined,
     showWeekNumbers: js.UndefOr[Boolean] = js.undefined,
     style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    theme: CalendarTheme = null
+    theme: CalendarTheme = null,
+    webAriaLevel: js.UndefOr[Double] = js.undefined
   ): CalendarListBaseProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(calendarHeight)) __obj.updateDynamic("calendarHeight")(calendarHeight.get.asInstanceOf[js.Any])
     if (!js.isUndefined(calendarWidth)) __obj.updateDynamic("calendarWidth")(calendarWidth.get.asInstanceOf[js.Any])
     if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
     if (dayComponent != null) __obj.updateDynamic("dayComponent")(dayComponent.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableArrowLeft)) __obj.updateDynamic("disableArrowLeft")(disableArrowLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableArrowRight)) __obj.updateDynamic("disableArrowRight")(disableArrowRight.get.asInstanceOf[js.Any])
     if (!js.isUndefined(disableMonthChange)) __obj.updateDynamic("disableMonthChange")(disableMonthChange.get.asInstanceOf[js.Any])
     if (!js.isUndefined(disabledByDefault)) __obj.updateDynamic("disabledByDefault")(disabledByDefault.get.asInstanceOf[js.Any])
     if (!js.isUndefined(displayLoadingIndicator)) __obj.updateDynamic("displayLoadingIndicator")(displayLoadingIndicator.get.asInstanceOf[js.Any])
     if (!js.isUndefined(firstDay)) __obj.updateDynamic("firstDay")(firstDay.get.asInstanceOf[js.Any])
     if (!js.isUndefined(futureScrollRange)) __obj.updateDynamic("futureScrollRange")(futureScrollRange.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerStyle)) __obj.updateDynamic("headerStyle")(headerStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(hideArrows)) __obj.updateDynamic("hideArrows")(hideArrows.get.asInstanceOf[js.Any])
     if (!js.isUndefined(hideDayNames)) __obj.updateDynamic("hideDayNames")(hideDayNames.get.asInstanceOf[js.Any])
     if (!js.isUndefined(hideExtraDays)) __obj.updateDynamic("hideExtraDays")(hideExtraDays.get.asInstanceOf[js.Any])
@@ -123,6 +130,7 @@ object CalendarListBaseProps {
     if (!js.isUndefined(showWeekNumbers)) __obj.updateDynamic("showWeekNumbers")(showWeekNumbers.get.asInstanceOf[js.Any])
     if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (!js.isUndefined(webAriaLevel)) __obj.updateDynamic("webAriaLevel")(webAriaLevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarListBaseProps]
   }
 }

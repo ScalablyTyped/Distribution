@@ -43,6 +43,10 @@ trait InfrastructureConfiguration extends js.Object {
     */
   var name: js.UndefOr[ResourceName] = js.native
   /**
+    * The tags attached to the resource created by Image Builder.
+    */
+  var resourceTags: js.UndefOr[ResourceTagMap] = js.native
+  /**
     * The security group IDs of the infrastructure configuration.
     */
   var securityGroupIds: js.UndefOr[SecurityGroupIds] = js.native
@@ -76,6 +80,7 @@ object InfrastructureConfiguration {
     keyPair: NonEmptyString = null,
     logging: Logging = null,
     name: ResourceName = null,
+    resourceTags: ResourceTagMap = null,
     securityGroupIds: SecurityGroupIds = null,
     snsTopicArn: NonEmptyString = null,
     subnetId: NonEmptyString = null,
@@ -92,6 +97,7 @@ object InfrastructureConfiguration {
     if (keyPair != null) __obj.updateDynamic("keyPair")(keyPair.asInstanceOf[js.Any])
     if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (resourceTags != null) __obj.updateDynamic("resourceTags")(resourceTags.asInstanceOf[js.Any])
     if (securityGroupIds != null) __obj.updateDynamic("securityGroupIds")(securityGroupIds.asInstanceOf[js.Any])
     if (snsTopicArn != null) __obj.updateDynamic("snsTopicArn")(snsTopicArn.asInstanceOf[js.Any])
     if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])

@@ -143,13 +143,13 @@ trait CloseJob extends js.Object {
     options: TransportRequestOptions,
     callback: callbackFn[TResponse, TContext]
   ): TransportRequestCallback = js.native
-  def deleteExpiredData[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
-  def deleteExpiredData[TResponse, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
-  def deleteExpiredData[TResponse, TContext](params: MlDeleteExpiredData): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
-  def deleteExpiredData[TResponse, TContext](params: MlDeleteExpiredData, callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
-  def deleteExpiredData[TResponse, TContext](params: MlDeleteExpiredData, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
-  def deleteExpiredData[TResponse, TContext](
-    params: MlDeleteExpiredData,
+  def deleteExpiredData[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def deleteExpiredData[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def deleteExpiredData[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: MlDeleteExpiredData[TRequestBody]): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def deleteExpiredData[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: MlDeleteExpiredData[TRequestBody], callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def deleteExpiredData[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: MlDeleteExpiredData[TRequestBody], options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def deleteExpiredData[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](
+    params: MlDeleteExpiredData[TRequestBody],
     options: TransportRequestOptions,
     callback: callbackFn[TResponse, TContext]
   ): TransportRequestCallback = js.native
@@ -249,13 +249,13 @@ trait CloseJob extends js.Object {
     options: TransportRequestOptions,
     callback: callbackFn[TResponse, TContext]
   ): TransportRequestCallback = js.native
-  def delete_expired_data[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
-  def delete_expired_data[TResponse, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
-  def delete_expired_data[TResponse, TContext](params: MlDeleteExpiredData): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
-  def delete_expired_data[TResponse, TContext](params: MlDeleteExpiredData, callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
-  def delete_expired_data[TResponse, TContext](params: MlDeleteExpiredData, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
-  def delete_expired_data[TResponse, TContext](
-    params: MlDeleteExpiredData,
+  def delete_expired_data[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def delete_expired_data[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def delete_expired_data[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: MlDeleteExpiredData[TRequestBody]): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def delete_expired_data[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: MlDeleteExpiredData[TRequestBody], callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def delete_expired_data[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: MlDeleteExpiredData[TRequestBody], options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def delete_expired_data[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](
+    params: MlDeleteExpiredData[TRequestBody],
     options: TransportRequestOptions,
     callback: callbackFn[TResponse, TContext]
   ): TransportRequestCallback = js.native

@@ -22,9 +22,9 @@ trait SchemaSheetsChartReference extends js.Object {
 
 object SchemaSheetsChartReference {
   @scala.inline
-  def apply(chartId: Int | Double = null, spreadsheetId: String = null): SchemaSheetsChartReference = {
+  def apply(chartId: js.UndefOr[Double] = js.undefined, spreadsheetId: String = null): SchemaSheetsChartReference = {
     val __obj = js.Dynamic.literal()
-    if (chartId != null) __obj.updateDynamic("chartId")(chartId.asInstanceOf[js.Any])
+    if (!js.isUndefined(chartId)) __obj.updateDynamic("chartId")(chartId.get.asInstanceOf[js.Any])
     if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSheetsChartReference]
   }

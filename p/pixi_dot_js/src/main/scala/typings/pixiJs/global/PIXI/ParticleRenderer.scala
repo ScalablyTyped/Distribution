@@ -62,7 +62,7 @@ class ParticleRenderer protected ()
     offset: Double
   ): Unit = js.native
   /**
-    * Uploads the rotiation.
+    * Uploads the rotation.
     *
     * @param {PIXI.DisplayObject[]} children - the array of display objects to render
     * @param {number} startIndex - the index to start from in the children array

@@ -5,6 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// Setting 'aspectRatio' automatically enables 'crop', so setting 'crop' to
+// 'false' in that case is not valid
 trait CropTrueOptions extends CropOptions {
   var aspectRatio: js.UndefOr[AspectRatio] = js.undefined
   var crop: js.UndefOr[`true`] = js.undefined

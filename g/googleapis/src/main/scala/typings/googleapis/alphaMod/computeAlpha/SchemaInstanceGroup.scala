@@ -99,7 +99,7 @@ object SchemaInstanceGroup {
     region: String = null,
     selfLink: String = null,
     selfLinkWithId: String = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     subnetwork: String = null,
     zone: String = null
   ): SchemaInstanceGroup = {
@@ -115,7 +115,7 @@ object SchemaInstanceGroup {
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     if (selfLinkWithId != null) __obj.updateDynamic("selfLinkWithId")(selfLinkWithId.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork.asInstanceOf[js.Any])
     if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstanceGroup]

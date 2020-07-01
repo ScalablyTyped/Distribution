@@ -69,7 +69,7 @@ trait Editable[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */] exte
 
 object Editable {
   @scala.inline
-  def apply[TRow, K](
+  def apply[/* <: js.Object */ TRow, /* <: / * keyof TRow * / java.lang.String */ K](
     attrs: EditableAttrs = null,
     className: String = null,
     cols: js.UndefOr[Double] = js.undefined,

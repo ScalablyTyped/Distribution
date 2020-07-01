@@ -139,7 +139,7 @@ trait Mailbox extends js.Object {
   /**
     * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
     *
-    * To see which event types are supported, see `Office.EventType` for details.
+    * Refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox#events | events section} for supported events.
     *
     * [Api set: Mailbox 1.5]
     *
@@ -262,14 +262,14 @@ trait Mailbox extends js.Object {
     * The `displayAppointmentForm` method opens an existing calendar appointment in a new window on the desktop or in a dialog box on 
     * mobile devices.
     *
-    * In Outlook on Mac, you can use this method to display a single appointment that is not part of a recurring series, or the 
-    * master appointment of a recurring series, but you cannot display an instance of the series. 
-    * This is because in Outlook on Mac, you cannot access the properties (including the item ID) of instances of a recurring series.
+    * In Outlook on Mac, you can use this method to display a single appointment that is not part of a recurring series, or the master appointment
+    * of a recurring series. However, you can't display an instance of the series because you can't access the properties
+    * (including the item ID) of instances of a recurring series.
     *
-    * In Outlook on the web, this method opens the specified form only if the body of the form is less than or equal to 32KB number of characters.
+    * In Outlook on the web, this method opens the specified form only if the body of the form is less than or equal to 32K characters.
     *
     * If the specified item identifier does not identify an existing appointment, a blank pane opens on the client computer or device, and 
-    * no error message will be returned.
+    * no error message is returned.
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
     *
@@ -287,10 +287,10 @@ trait Mailbox extends js.Object {
     *
     * The `displayMessageForm` method opens an existing message in a new window on the desktop or in a dialog box on mobile devices.
     *
-    * In Outlook on the web, this method opens the specified form only if the body of the form is less than or equal to 32 KB number of characters.
+    * In Outlook on the web, this method opens the specified form only if the body of the form is less than or equal to 32K characters.
     *
     * If the specified item identifier does not identify an existing message, no message will be displayed on the client computer, and
-    * no error message will be returned.
+    * no error message is returned.
     *
     * Do not use the `displayMessageForm` with an itemId that represents an appointment. Use the `displayAppointmentForm` method to display
     * an existing appointment, and `displayNewAppointmentForm` to display a form to create a new appointment.
@@ -399,6 +399,9 @@ trait Mailbox extends js.Object {
     * Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item.
     * The `saveAsync` method requires a minimum permission level of `ReadWriteItem`.
     *
+    * **Important**: For guidance on delegate or shared scenarios, see the
+    * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+    *
     * [Api set: All support Read mode; Mailbox 1.3 introduced Compose mode support]
     *
     * @remarks
@@ -423,7 +426,7 @@ trait Mailbox extends js.Object {
   def getCallbackTokenAsync(callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
   def getCallbackTokenAsync(callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit], userContext: js.Any): Unit = js.native
   /**
-    * Gets a string that contains a token used to call REST APIs or Exchange Web Services.
+    * Gets a string that contains a token used to call REST APIs or Exchange Web Services (EWS).
     *
     * The `getCallbackTokenAsync` method makes an asynchronous call to get an opaque token from the Exchange Server that hosts the user's mailbox. 
     * The lifetime of the callback token is 5 minutes.
@@ -435,9 +438,12 @@ trait Mailbox extends js.Object {
     * Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item.
     * The `saveAsync` method requires a minimum permission level of `ReadWriteItem`.
     *
+    * **Important**: For guidance on delegate or shared scenarios, see the
+    * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+    *
     * *REST Tokens*
     *
-    * When a REST token is requested (`options.isRest` = `true`), the resulting token will not work to authenticate Exchange Web Services calls.
+    * When a REST token is requested (`options.isRest` = `true`), the resulting token will not work to authenticate EWS calls.
     * The token will be limited in scope to read-only access to the current item and its attachments, unless the add-in has specified the
     * `ReadWriteMailbox` permission in its manifest.
     * If the `ReadWriteMailbox` permission is specified, the resulting token will grant read/write access to mail, calendar, and contacts,
@@ -596,7 +602,7 @@ trait Mailbox extends js.Object {
   /**
     * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
     *
-    * To see which event types are supported, see `Office.EventType` for details.
+    * Refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox#events | events section} for supported events.
     *
     * [Api set: Mailbox 1.5]
     *

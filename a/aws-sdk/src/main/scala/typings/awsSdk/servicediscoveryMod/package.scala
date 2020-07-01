@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object servicediscoveryMod {
+  type AmazonResourceName = java.lang.String
   type Arn = java.lang.String
   type AttrKey = java.lang.String
   type AttrValue = java.lang.String
@@ -17,6 +18,7 @@ package object servicediscoveryMod {
     - java.lang.String
   */
   type CustomHealthStatus = typings.awsSdk.servicediscoveryMod._CustomHealthStatus | java.lang.String
+  type DiscoverMaxResults = scala.Double
   type DnsRecordList = js.Array[typings.awsSdk.servicediscoveryMod.DnsRecord]
   type FailureThreshold = scala.Double
   /* Rewritten from type alias, can be one of: 
@@ -127,6 +129,10 @@ package object servicediscoveryMod {
   type ServiceFilters = js.Array[typings.awsSdk.servicediscoveryMod.ServiceFilter]
   type ServiceName = java.lang.String
   type ServiceSummariesList = js.Array[typings.awsSdk.servicediscoveryMod.ServiceSummary]
+  type TagKey = java.lang.String
+  type TagKeyList = js.Array[typings.awsSdk.servicediscoveryMod.TagKey]
+  type TagList = js.Array[typings.awsSdk.servicediscoveryMod.Tag]
+  type TagValue = java.lang.String
   type Timestamp = typings.std.Date
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`2017-03-14`

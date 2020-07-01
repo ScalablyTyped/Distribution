@@ -22,11 +22,11 @@ trait SchemaGoogleCloudVideointelligenceV1beta2LabelSegment extends js.Object {
 object SchemaGoogleCloudVideointelligenceV1beta2LabelSegment {
   @scala.inline
   def apply(
-    confidence: Int | Double = null,
+    confidence: js.UndefOr[Double] = js.undefined,
     segment: SchemaGoogleCloudVideointelligenceV1beta2VideoSegment = null
   ): SchemaGoogleCloudVideointelligenceV1beta2LabelSegment = {
     val __obj = js.Dynamic.literal()
-    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
     if (segment != null) __obj.updateDynamic("segment")(segment.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1beta2LabelSegment]
   }

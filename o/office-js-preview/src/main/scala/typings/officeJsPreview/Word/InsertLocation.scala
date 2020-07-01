@@ -9,7 +9,7 @@ sealed trait InsertLocation extends js.Object
 
 /**
   *
-  * The insertion location types
+  * The insertion location types.
   *
   * [Api set: WordApi]
   */
@@ -17,7 +17,6 @@ sealed trait InsertLocation extends js.Object
 @js.native
 object InsertLocation extends js.Object {
   /**
-    *
     * Add content after the contents of the calling object.
     *
     */
@@ -25,7 +24,6 @@ object InsertLocation extends js.Object {
   sealed trait after extends InsertLocation
   
   /**
-    *
     * Add content before the contents of the calling object.
     *
     */
@@ -33,7 +31,6 @@ object InsertLocation extends js.Object {
   sealed trait before extends InsertLocation
   
   /**
-    *
     * Append content to the contents of the calling object.
     *
     */
@@ -41,7 +38,6 @@ object InsertLocation extends js.Object {
   sealed trait end extends InsertLocation
   
   /**
-    *
     * Replace the contents of the current object.
     *
     */
@@ -49,7 +45,6 @@ object InsertLocation extends js.Object {
   sealed trait replace extends InsertLocation
   
   /**
-    *
     * Prepend content to the contents of the calling object.
     *
     */

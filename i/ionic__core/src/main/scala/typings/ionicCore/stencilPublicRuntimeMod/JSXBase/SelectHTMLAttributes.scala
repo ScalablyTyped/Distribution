@@ -1,6 +1,8 @@
 package typings.ionicCore.stencilPublicRuntimeMod.JSXBase
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.ionicCore.ionicCoreStrings.`false`
+import typings.ionicCore.ionicCoreStrings.`true`
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.CompositionEvent
@@ -52,6 +54,7 @@ object SelectHTMLAttributes {
     draggable: js.UndefOr[Boolean] = js.undefined,
     enterKeyHint: String = null,
     enterkeyhint: String = null,
+    exportparts: String = null,
     form: String = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
@@ -121,6 +124,10 @@ object SelectHTMLAttributes {
     onErrorCapture: /* event */ Event => Unit = null,
     onFocus: /* event */ FocusEvent => Unit = null,
     onFocusCapture: /* event */ FocusEvent => Unit = null,
+    onFocusIn: /* event */ FocusEvent => Unit = null,
+    onFocusInCapture: /* event */ FocusEvent => Unit = null,
+    onFocusOut: /* event */ FocusEvent => Unit = null,
+    onFocusOutCapture: /* event */ FocusEvent => Unit = null,
     onGotPointerCapture: /* event */ PointerEvent => Unit = null,
     onGotPointerCaptureCapture: /* event */ PointerEvent => Unit = null,
     onInput: /* event */ Event => Unit = null,
@@ -198,8 +205,7 @@ object SelectHTMLAttributes {
     security: String = null,
     size: js.UndefOr[Double] = js.undefined,
     slot: String = null,
-    spellCheck: js.UndefOr[Boolean] = js.undefined,
-    spellcheck: Boolean | String = null,
+    spellcheck: `true` | `false` | js.Any = null,
     style: StringDictionary[js.UndefOr[String]] = null,
     tabIndex: js.UndefOr[Double] = js.undefined,
     tabindex: Double | String = null,
@@ -230,6 +236,7 @@ object SelectHTMLAttributes {
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
     if (enterKeyHint != null) __obj.updateDynamic("enterKeyHint")(enterKeyHint.asInstanceOf[js.Any])
     if (enterkeyhint != null) __obj.updateDynamic("enterkeyhint")(enterkeyhint.asInstanceOf[js.Any])
+    if (exportparts != null) __obj.updateDynamic("exportparts")(exportparts.asInstanceOf[js.Any])
     if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
@@ -299,6 +306,10 @@ object SelectHTMLAttributes {
     if (onErrorCapture != null) __obj.updateDynamic("onErrorCapture")(js.Any.fromFunction1(onErrorCapture))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onFocusCapture != null) __obj.updateDynamic("onFocusCapture")(js.Any.fromFunction1(onFocusCapture))
+    if (onFocusIn != null) __obj.updateDynamic("onFocusIn")(js.Any.fromFunction1(onFocusIn))
+    if (onFocusInCapture != null) __obj.updateDynamic("onFocusInCapture")(js.Any.fromFunction1(onFocusInCapture))
+    if (onFocusOut != null) __obj.updateDynamic("onFocusOut")(js.Any.fromFunction1(onFocusOut))
+    if (onFocusOutCapture != null) __obj.updateDynamic("onFocusOutCapture")(js.Any.fromFunction1(onFocusOutCapture))
     if (onGotPointerCapture != null) __obj.updateDynamic("onGotPointerCapture")(js.Any.fromFunction1(onGotPointerCapture))
     if (onGotPointerCaptureCapture != null) __obj.updateDynamic("onGotPointerCaptureCapture")(js.Any.fromFunction1(onGotPointerCaptureCapture))
     if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
@@ -376,7 +387,6 @@ object SelectHTMLAttributes {
     if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
     if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.get.asInstanceOf[js.Any])
     if (spellcheck != null) __obj.updateDynamic("spellcheck")(spellcheck.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])

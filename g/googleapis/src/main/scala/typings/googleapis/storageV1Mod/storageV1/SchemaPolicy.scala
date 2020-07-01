@@ -1,6 +1,6 @@
 package typings.googleapis.storageV1Mod.storageV1
 
-import typings.googleapis.AnonCondition
+import typings.googleapis.anon.Condition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait SchemaPolicy extends js.Object {
     * An association between a role, which comes with a set of permissions, and
     * members who may assume that role.
     */
-  var bindings: js.UndefOr[js.Array[AnonCondition]] = js.native
+  var bindings: js.UndefOr[js.Array[Condition]] = js.native
   /**
     * HTTP 1.1  Entity tag for the policy.
     */
@@ -39,7 +39,7 @@ trait SchemaPolicy extends js.Object {
 object SchemaPolicy {
   @scala.inline
   def apply(
-    bindings: js.Array[AnonCondition] = null,
+    bindings: js.Array[Condition] = null,
     etag: String = null,
     kind: String = null,
     resourceId: String = null

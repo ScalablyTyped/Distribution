@@ -1,7 +1,7 @@
 
 # Scala.js typings for algolia__requester-node-http
 
-Typings are for version 4.2.0
+Typings are for version 4.3.0
 
 ## Library description:
 Promise-based request library for node using the native http module.

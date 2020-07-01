@@ -1,9 +1,9 @@
 package typings.googleapis.discoveryV1Mod.discoveryV1
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.googleapis.AnonAccept
-import typings.googleapis.AnonParameterName
-import typings.googleapis.AnonRefString
+import typings.googleapis.anon.Accept
+import typings.googleapis.anon.ParameterName
+import typings.googleapis.anon.RefString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,7 +31,7 @@ trait SchemaRestMethod extends js.Object {
   /**
     * Media upload parameters.
     */
-  var mediaUpload: js.UndefOr[AnonAccept] = js.native
+  var mediaUpload: js.UndefOr[Accept] = js.native
   /**
     * Ordered list of required parameters, serves as a hint to clients on how
     * to structure their method signatures. The array is ordered such that the
@@ -50,11 +50,11 @@ trait SchemaRestMethod extends js.Object {
   /**
     * The schema for the request.
     */
-  var request: js.UndefOr[AnonParameterName] = js.native
+  var request: js.UndefOr[ParameterName] = js.native
   /**
     * The schema for the response.
     */
-  var response: js.UndefOr[AnonRefString] = js.native
+  var response: js.UndefOr[RefString] = js.native
   /**
     * OAuth 2.0 scopes applicable to this method.
     */
@@ -86,12 +86,12 @@ object SchemaRestMethod {
     etagRequired: js.UndefOr[Boolean] = js.undefined,
     httpMethod: String = null,
     id: String = null,
-    mediaUpload: AnonAccept = null,
+    mediaUpload: Accept = null,
     parameterOrder: js.Array[String] = null,
     parameters: StringDictionary[SchemaJsonSchema] = null,
     path: String = null,
-    request: AnonParameterName = null,
-    response: AnonRefString = null,
+    request: ParameterName = null,
+    response: RefString = null,
     scopes: js.Array[String] = null,
     supportsMediaDownload: js.UndefOr[Boolean] = js.undefined,
     supportsMediaUpload: js.UndefOr[Boolean] = js.undefined,
@@ -100,7 +100,7 @@ object SchemaRestMethod {
   ): SchemaRestMethod = {
     val __obj = js.Dynamic.literal()
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(etagRequired)) __obj.updateDynamic("etagRequired")(etagRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(etagRequired)) __obj.updateDynamic("etagRequired")(etagRequired.get.asInstanceOf[js.Any])
     if (httpMethod != null) __obj.updateDynamic("httpMethod")(httpMethod.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (mediaUpload != null) __obj.updateDynamic("mediaUpload")(mediaUpload.asInstanceOf[js.Any])
@@ -110,10 +110,10 @@ object SchemaRestMethod {
     if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
     if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsMediaDownload)) __obj.updateDynamic("supportsMediaDownload")(supportsMediaDownload.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsMediaUpload)) __obj.updateDynamic("supportsMediaUpload")(supportsMediaUpload.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsSubscription)) __obj.updateDynamic("supportsSubscription")(supportsSubscription.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMediaDownloadService)) __obj.updateDynamic("useMediaDownloadService")(useMediaDownloadService.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsMediaDownload)) __obj.updateDynamic("supportsMediaDownload")(supportsMediaDownload.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsMediaUpload)) __obj.updateDynamic("supportsMediaUpload")(supportsMediaUpload.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsSubscription)) __obj.updateDynamic("supportsSubscription")(supportsSubscription.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useMediaDownloadService)) __obj.updateDynamic("useMediaDownloadService")(useMediaDownloadService.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRestMethod]
   }
 }

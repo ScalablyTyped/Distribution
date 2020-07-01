@@ -34,6 +34,14 @@ trait VideoCodecSettings extends js.Object {
     * Required when you set (Codec) under (VideoDescription)>(CodecSettings) to the value PRORES.
     */
   var ProresSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.ProresSettings] = js.native
+  /**
+    * Required when you set (Codec) under (VideoDescription)>(CodecSettings) to the value VP8.
+    */
+  var Vp8Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.Vp8Settings] = js.native
+  /**
+    * Required when you set (Codec) under (VideoDescription)>(CodecSettings) to the value VP9.
+    */
+  var Vp9Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.Vp9Settings] = js.native
 }
 
 object VideoCodecSettings {
@@ -45,7 +53,9 @@ object VideoCodecSettings {
     H264Settings: H264Settings = null,
     H265Settings: H265Settings = null,
     Mpeg2Settings: Mpeg2Settings = null,
-    ProresSettings: ProresSettings = null
+    ProresSettings: ProresSettings = null,
+    Vp8Settings: Vp8Settings = null,
+    Vp9Settings: Vp9Settings = null
   ): VideoCodecSettings = {
     val __obj = js.Dynamic.literal()
     if (Av1Settings != null) __obj.updateDynamic("Av1Settings")(Av1Settings.asInstanceOf[js.Any])
@@ -55,6 +65,8 @@ object VideoCodecSettings {
     if (H265Settings != null) __obj.updateDynamic("H265Settings")(H265Settings.asInstanceOf[js.Any])
     if (Mpeg2Settings != null) __obj.updateDynamic("Mpeg2Settings")(Mpeg2Settings.asInstanceOf[js.Any])
     if (ProresSettings != null) __obj.updateDynamic("ProresSettings")(ProresSettings.asInstanceOf[js.Any])
+    if (Vp8Settings != null) __obj.updateDynamic("Vp8Settings")(Vp8Settings.asInstanceOf[js.Any])
+    if (Vp9Settings != null) __obj.updateDynamic("Vp9Settings")(Vp9Settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoCodecSettings]
   }
 }

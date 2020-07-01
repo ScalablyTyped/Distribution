@@ -1,6 +1,5 @@
 package typings.appleMusicApi.anon
 
-import typings.appleMusicApi.AppleMusicApi.Artwork
 import typings.appleMusicApi.AppleMusicApi.PlayParameters
 import typings.appleMusicApi.AppleMusicApi.Preview
 import scala.scalajs.js
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait AlbumName extends js.Object {
   var albumName: String
   var artistName: String
-  var artwork: js.UndefOr[Artwork] = js.undefined
+  var artwork: js.UndefOr[typings.appleMusicApi.AppleMusicApi.Artwork] = js.undefined
   var composerName: js.UndefOr[String] = js.undefined
   var contentRating: js.UndefOr[String] = js.undefined
   var discNumber: Double
@@ -46,7 +45,7 @@ object AlbumName {
     releaseDate: String,
     trackNumber: Double,
     url: String,
-    artwork: Artwork = null,
+    artwork: typings.appleMusicApi.AppleMusicApi.Artwork = null,
     composerName: String = null,
     contentRating: String = null,
     editorialNotes: typings.appleMusicApi.AppleMusicApi.EditorialNotes = null,

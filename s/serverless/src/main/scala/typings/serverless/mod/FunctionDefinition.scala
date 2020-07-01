@@ -14,6 +14,7 @@ trait FunctionDefinition extends js.Object {
   var memorySize: js.UndefOr[Double] = js.undefined
   var name: String
   var runtime: js.UndefOr[String] = js.undefined
+  var tags: js.UndefOr[StringDictionary[String]] = js.undefined
   var timeout: js.UndefOr[Double] = js.undefined
 }
 
@@ -27,6 +28,7 @@ object FunctionDefinition {
     environment: StringDictionary[String] = null,
     memorySize: js.UndefOr[Double] = js.undefined,
     runtime: String = null,
+    tags: StringDictionary[String] = null,
     timeout: js.UndefOr[Double] = js.undefined
   ): FunctionDefinition = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], handler = handler.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
@@ -34,6 +36,7 @@ object FunctionDefinition {
     if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
     if (!js.isUndefined(memorySize)) __obj.updateDynamic("memorySize")(memorySize.get.asInstanceOf[js.Any])
     if (runtime != null) __obj.updateDynamic("runtime")(runtime.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionDefinition]
   }

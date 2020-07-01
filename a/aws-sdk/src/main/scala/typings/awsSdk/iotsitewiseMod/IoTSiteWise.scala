@@ -166,12 +166,12 @@ trait IoTSiteWise extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateProjectResponse, Unit]
   ): Request[CreateProjectResponse, AWSError] = js.native
   /**
-    * Deletes an access policy that grants the specified AWS Single Sign-On identity access to the specified AWS IoT SiteWise Monitor resource. You can use this action to revoke access to an AWS IoT SiteWise Monitor resource.
+    * Deletes an access policy that grants the specified AWS Single Sign-On identity access to the specified AWS IoT SiteWise Monitor resource. You can use this operation to revoke access to an AWS IoT SiteWise Monitor resource.
     */
   def deleteAccessPolicy(): Request[DeleteAccessPolicyResponse, AWSError] = js.native
   def deleteAccessPolicy(callback: js.Function2[/* err */ AWSError, /* data */ DeleteAccessPolicyResponse, Unit]): Request[DeleteAccessPolicyResponse, AWSError] = js.native
   /**
-    * Deletes an access policy that grants the specified AWS Single Sign-On identity access to the specified AWS IoT SiteWise Monitor resource. You can use this action to revoke access to an AWS IoT SiteWise Monitor resource.
+    * Deletes an access policy that grants the specified AWS Single Sign-On identity access to the specified AWS IoT SiteWise Monitor resource. You can use this operation to revoke access to an AWS IoT SiteWise Monitor resource.
     */
   def deleteAccessPolicy(params: DeleteAccessPolicyRequest): Request[DeleteAccessPolicyResponse, AWSError] = js.native
   def deleteAccessPolicy(
@@ -636,12 +636,12 @@ trait IoTSiteWise extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateAssetResponse, Unit]
   ): Request[UpdateAssetResponse, AWSError] = js.native
   /**
-    * Updates an asset model and all of the assets that were created from the model. Each asset created from the model inherits the updated asset model's property and hierarchy definitions. For more information, see Updating Assets and Models in the AWS IoT SiteWise User Guide.  This action overwrites the existing model with the provided model. To avoid deleting your asset model's properties or hierarchies, you must include their IDs and definitions in the updated asset model payload. For more information, see DescribeAssetModel. If you remove a property from an asset model or update a property's formula expression, AWS IoT SiteWise deletes all previous data for that property. If you remove a hierarchy definition from an asset model, AWS IoT SiteWise disassociates every asset associated with that hierarchy. You can't change the type or data type of an existing property. 
+    * Updates an asset model and all of the assets that were created from the model. Each asset created from the model inherits the updated asset model's property and hierarchy definitions. For more information, see Updating Assets and Models in the AWS IoT SiteWise User Guide.  This operation overwrites the existing model with the provided model. To avoid deleting your asset model's properties or hierarchies, you must include their IDs and definitions in the updated asset model payload. For more information, see DescribeAssetModel. If you remove a property from an asset model or update a property's formula expression, AWS IoT SiteWise deletes all previous data for that property. If you remove a hierarchy definition from an asset model, AWS IoT SiteWise disassociates every asset associated with that hierarchy. You can't change the type or data type of an existing property. 
     */
   def updateAssetModel(): Request[UpdateAssetModelResponse, AWSError] = js.native
   def updateAssetModel(callback: js.Function2[/* err */ AWSError, /* data */ UpdateAssetModelResponse, Unit]): Request[UpdateAssetModelResponse, AWSError] = js.native
   /**
-    * Updates an asset model and all of the assets that were created from the model. Each asset created from the model inherits the updated asset model's property and hierarchy definitions. For more information, see Updating Assets and Models in the AWS IoT SiteWise User Guide.  This action overwrites the existing model with the provided model. To avoid deleting your asset model's properties or hierarchies, you must include their IDs and definitions in the updated asset model payload. For more information, see DescribeAssetModel. If you remove a property from an asset model or update a property's formula expression, AWS IoT SiteWise deletes all previous data for that property. If you remove a hierarchy definition from an asset model, AWS IoT SiteWise disassociates every asset associated with that hierarchy. You can't change the type or data type of an existing property. 
+    * Updates an asset model and all of the assets that were created from the model. Each asset created from the model inherits the updated asset model's property and hierarchy definitions. For more information, see Updating Assets and Models in the AWS IoT SiteWise User Guide.  This operation overwrites the existing model with the provided model. To avoid deleting your asset model's properties or hierarchies, you must include their IDs and definitions in the updated asset model payload. For more information, see DescribeAssetModel. If you remove a property from an asset model or update a property's formula expression, AWS IoT SiteWise deletes all previous data for that property. If you remove a hierarchy definition from an asset model, AWS IoT SiteWise disassociates every asset associated with that hierarchy. You can't change the type or data type of an existing property. 
     */
   def updateAssetModel(params: UpdateAssetModelRequest): Request[UpdateAssetModelResponse, AWSError] = js.native
   def updateAssetModel(

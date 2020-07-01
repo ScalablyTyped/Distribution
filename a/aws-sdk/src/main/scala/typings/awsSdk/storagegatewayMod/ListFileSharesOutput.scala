@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListFileSharesOutput extends js.Object {
   /**
-    * An array of information about the file gateway's file shares. 
+    * An array of information about the file gateway's file shares.
     */
   var FileShareInfoList: js.UndefOr[typings.awsSdk.storagegatewayMod.FileShareInfoList] = js.native
   /**
-    * If the request includes Marker, the response returns that value in this field. 
+    * If the request includes Marker, the response returns that value in this field.
     */
   var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.native
   /**
-    * If a value is present, there are more file shares to return. In a subsequent request, use NextMarker as the value for Marker to retrieve the next set of file shares. 
+    * If a value is present, there are more file shares to return. In a subsequent request, use NextMarker as the value for Marker to retrieve the next set of file shares.
     */
   var NextMarker: js.UndefOr[Marker] = js.native
 }

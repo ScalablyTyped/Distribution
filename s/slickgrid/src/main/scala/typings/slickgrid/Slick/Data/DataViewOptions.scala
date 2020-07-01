@@ -12,7 +12,7 @@ trait DataViewOptions[T /* <: SlickData */] extends js.Object {
 
 object DataViewOptions {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.slickgrid.Slick.SlickData */ T](
     groupItemMetadataProvider: GroupItemMetadataProvider[T] = null,
     inlineFilters: js.UndefOr[Boolean] = js.undefined
   ): DataViewOptions[T] = {

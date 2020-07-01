@@ -11,7 +11,7 @@ trait IntrospectionNamedTypeRef[T /* <: IntrospectionType */] extends js.Object 
 
 object IntrospectionNamedTypeRef {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.graphql.introspectionQueryMod.IntrospectionType */ T](
     kind: /* import warning: importer.ImportType#apply Failed type conversion: T['kind'] */ js.Any,
     name: String
   ): IntrospectionNamedTypeRef[T] = {

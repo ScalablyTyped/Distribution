@@ -153,7 +153,7 @@ trait SchemaBackendService extends js.Object {
 object SchemaBackendService {
   @scala.inline
   def apply(
-    affinityCookieTtlSec: Int | Double = null,
+    affinityCookieTtlSec: js.UndefOr[Double] = js.undefined,
     backends: js.Array[SchemaBackend] = null,
     cdnPolicy: SchemaBackendServiceCdnPolicy = null,
     connectionDraining: SchemaConnectionDraining = null,
@@ -170,24 +170,24 @@ object SchemaBackendService {
     loadBalancingScheme: String = null,
     logConfig: SchemaBackendServiceLogConfig = null,
     name: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     portName: String = null,
     protocol: String = null,
     region: String = null,
     securityPolicy: String = null,
     selfLink: String = null,
     sessionAffinity: String = null,
-    timeoutSec: Int | Double = null
+    timeoutSec: js.UndefOr[Double] = js.undefined
   ): SchemaBackendService = {
     val __obj = js.Dynamic.literal()
-    if (affinityCookieTtlSec != null) __obj.updateDynamic("affinityCookieTtlSec")(affinityCookieTtlSec.asInstanceOf[js.Any])
+    if (!js.isUndefined(affinityCookieTtlSec)) __obj.updateDynamic("affinityCookieTtlSec")(affinityCookieTtlSec.get.asInstanceOf[js.Any])
     if (backends != null) __obj.updateDynamic("backends")(backends.asInstanceOf[js.Any])
     if (cdnPolicy != null) __obj.updateDynamic("cdnPolicy")(cdnPolicy.asInstanceOf[js.Any])
     if (connectionDraining != null) __obj.updateDynamic("connectionDraining")(connectionDraining.asInstanceOf[js.Any])
     if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
     if (customRequestHeaders != null) __obj.updateDynamic("customRequestHeaders")(customRequestHeaders.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCDN)) __obj.updateDynamic("enableCDN")(enableCDN.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCDN)) __obj.updateDynamic("enableCDN")(enableCDN.get.asInstanceOf[js.Any])
     if (failoverPolicy != null) __obj.updateDynamic("failoverPolicy")(failoverPolicy.asInstanceOf[js.Any])
     if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
     if (healthChecks != null) __obj.updateDynamic("healthChecks")(healthChecks.asInstanceOf[js.Any])
@@ -197,14 +197,14 @@ object SchemaBackendService {
     if (loadBalancingScheme != null) __obj.updateDynamic("loadBalancingScheme")(loadBalancingScheme.asInstanceOf[js.Any])
     if (logConfig != null) __obj.updateDynamic("logConfig")(logConfig.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (portName != null) __obj.updateDynamic("portName")(portName.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (securityPolicy != null) __obj.updateDynamic("securityPolicy")(securityPolicy.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     if (sessionAffinity != null) __obj.updateDynamic("sessionAffinity")(sessionAffinity.asInstanceOf[js.Any])
-    if (timeoutSec != null) __obj.updateDynamic("timeoutSec")(timeoutSec.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutSec)) __obj.updateDynamic("timeoutSec")(timeoutSec.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBackendService]
   }
 }

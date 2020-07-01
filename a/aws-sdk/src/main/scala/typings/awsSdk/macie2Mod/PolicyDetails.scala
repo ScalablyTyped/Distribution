@@ -11,7 +11,7 @@ trait PolicyDetails extends js.Object {
     */
   var action: js.UndefOr[FindingAction] = js.native
   /**
-    * The entity who performed the action that produced the finding.
+    * The entity that performed the action that produced the finding.
     */
   var actor: js.UndefOr[FindingActor] = js.native
 }

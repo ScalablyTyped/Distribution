@@ -20,7 +20,7 @@ trait AttributeMeta[Model /* <: Model */] extends js.Object {
 
 object AttributeMeta {
   @scala.inline
-  def apply[Model](
+  def apply[/* <: typings.emberData.mod.DS.Model */ Model](
     isAttribute: `true`,
     name: AttributesFor[Model],
     options: js.Object,

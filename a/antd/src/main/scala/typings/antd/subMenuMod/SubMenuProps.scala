@@ -10,6 +10,7 @@ trait SubMenuProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var icon: js.UndefOr[ReactNode] = js.undefined
+  var level: js.UndefOr[Double] = js.undefined
   var onTitleClick: js.UndefOr[js.Function1[/* e */ TitleEventEntity, Unit]] = js.undefined
   var onTitleMouseEnter: js.UndefOr[js.Function1[/* e */ TitleEventEntity, Unit]] = js.undefined
   var onTitleMouseLeave: js.UndefOr[js.Function1[/* e */ TitleEventEntity, Unit]] = js.undefined
@@ -26,6 +27,7 @@ object SubMenuProps {
     className: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     icon: ReactNode = null,
+    level: js.UndefOr[Double] = js.undefined,
     onTitleClick: /* e */ TitleEventEntity => Unit = null,
     onTitleMouseEnter: /* e */ TitleEventEntity => Unit = null,
     onTitleMouseLeave: /* e */ TitleEventEntity => Unit = null,
@@ -39,6 +41,7 @@ object SubMenuProps {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
     if (onTitleClick != null) __obj.updateDynamic("onTitleClick")(js.Any.fromFunction1(onTitleClick))
     if (onTitleMouseEnter != null) __obj.updateDynamic("onTitleMouseEnter")(js.Any.fromFunction1(onTitleMouseEnter))
     if (onTitleMouseLeave != null) __obj.updateDynamic("onTitleMouseLeave")(js.Any.fromFunction1(onTitleMouseLeave))

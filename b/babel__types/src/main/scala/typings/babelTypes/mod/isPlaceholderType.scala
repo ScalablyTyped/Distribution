@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object isPlaceholderType extends js.Object {
   def apply(
-    placeholderType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 237 */ js.Any,
-    targetType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 237 */ js.Any
+    placeholderType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 238 */ js.Any,
+    targetType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 238 */ js.Any
   ): Boolean = js.native
 }
 

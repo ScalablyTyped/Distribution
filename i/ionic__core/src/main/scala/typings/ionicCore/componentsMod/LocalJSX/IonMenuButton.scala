@@ -1,6 +1,8 @@
 package typings.ionicCore.componentsMod.LocalJSX
 
 import typings.ionicCore.ionicCoreStrings.button
+import typings.ionicCore.ionicCoreStrings.ios
+import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.ionicCoreStrings.reset
 import typings.ionicCore.ionicCoreStrings.submit
 import typings.ionicCore.mod.Color
@@ -26,6 +28,10 @@ trait IonMenuButton extends js.Object {
     */
   var menu: js.UndefOr[String] = js.undefined
   /**
+    * The mode determines which platform styles to use.
+    */
+  var mode: js.UndefOr[ios | md] = js.undefined
+  /**
     * The type of the button.
     */
   var `type`: js.UndefOr[submit | reset | button] = js.undefined
@@ -38,6 +44,7 @@ object IonMenuButton {
     color: Color = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     menu: String = null,
+    mode: ios | md = null,
     `type`: submit | reset | button = null
   ): IonMenuButton = {
     val __obj = js.Dynamic.literal()
@@ -45,6 +52,7 @@ object IonMenuButton {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonMenuButton]
   }

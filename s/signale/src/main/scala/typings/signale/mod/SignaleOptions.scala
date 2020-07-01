@@ -34,7 +34,7 @@ trait SignaleOptions[TTypes /* <: String */] extends js.Object {
 
 object SignaleOptions {
   @scala.inline
-  def apply[TTypes](
+  def apply[/* <: java.lang.String */ TTypes](
     config: SignaleConfig = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     interactive: js.UndefOr[Boolean] = js.undefined,

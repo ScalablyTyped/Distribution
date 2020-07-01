@@ -69,26 +69,26 @@ trait SchemaInstanceGroupManagerActionsSummary extends js.Object {
 object SchemaInstanceGroupManagerActionsSummary {
   @scala.inline
   def apply(
-    abandoning: Int | Double = null,
-    creating: Int | Double = null,
-    creatingWithoutRetries: Int | Double = null,
-    deleting: Int | Double = null,
-    none: Int | Double = null,
-    recreating: Int | Double = null,
-    refreshing: Int | Double = null,
-    restarting: Int | Double = null,
-    verifying: Int | Double = null
+    abandoning: js.UndefOr[Double] = js.undefined,
+    creating: js.UndefOr[Double] = js.undefined,
+    creatingWithoutRetries: js.UndefOr[Double] = js.undefined,
+    deleting: js.UndefOr[Double] = js.undefined,
+    none: js.UndefOr[Double] = js.undefined,
+    recreating: js.UndefOr[Double] = js.undefined,
+    refreshing: js.UndefOr[Double] = js.undefined,
+    restarting: js.UndefOr[Double] = js.undefined,
+    verifying: js.UndefOr[Double] = js.undefined
   ): SchemaInstanceGroupManagerActionsSummary = {
     val __obj = js.Dynamic.literal()
-    if (abandoning != null) __obj.updateDynamic("abandoning")(abandoning.asInstanceOf[js.Any])
-    if (creating != null) __obj.updateDynamic("creating")(creating.asInstanceOf[js.Any])
-    if (creatingWithoutRetries != null) __obj.updateDynamic("creatingWithoutRetries")(creatingWithoutRetries.asInstanceOf[js.Any])
-    if (deleting != null) __obj.updateDynamic("deleting")(deleting.asInstanceOf[js.Any])
-    if (none != null) __obj.updateDynamic("none")(none.asInstanceOf[js.Any])
-    if (recreating != null) __obj.updateDynamic("recreating")(recreating.asInstanceOf[js.Any])
-    if (refreshing != null) __obj.updateDynamic("refreshing")(refreshing.asInstanceOf[js.Any])
-    if (restarting != null) __obj.updateDynamic("restarting")(restarting.asInstanceOf[js.Any])
-    if (verifying != null) __obj.updateDynamic("verifying")(verifying.asInstanceOf[js.Any])
+    if (!js.isUndefined(abandoning)) __obj.updateDynamic("abandoning")(abandoning.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(creating)) __obj.updateDynamic("creating")(creating.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(creatingWithoutRetries)) __obj.updateDynamic("creatingWithoutRetries")(creatingWithoutRetries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleting)) __obj.updateDynamic("deleting")(deleting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(none)) __obj.updateDynamic("none")(none.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(recreating)) __obj.updateDynamic("recreating")(recreating.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshing)) __obj.updateDynamic("refreshing")(refreshing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(restarting)) __obj.updateDynamic("restarting")(restarting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verifying)) __obj.updateDynamic("verifying")(verifying.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstanceGroupManagerActionsSummary]
   }
 }

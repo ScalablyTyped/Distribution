@@ -41,6 +41,8 @@ trait ParseStream extends js.Object {
   ] = js.native
   var destroyed: Boolean = js.native
   var readable: Boolean = js.native
+  val readableEncoding: BufferEncoding | Null = js.native
+  val readableEnded: Boolean = js.native
   val readableHighWaterMark: Double = js.native
   val readableLength: Double = js.native
   val readableObjectMode: Boolean = js.native

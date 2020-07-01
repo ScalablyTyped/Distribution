@@ -1,11 +1,11 @@
 package typings.materializeCss.M
 
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Toast extends ComponentBase[ToastOptions] {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentBase<ToastOptions> * / any */ trait Toast extends js.Object {
   /**
     * Describes the current pan state of the Toast.
     */
@@ -22,8 +22,8 @@ trait Toast extends ComponentBase[ToastOptions] {
 
 object Toast {
   @scala.inline
-  def apply(dismiss: () => Unit, el: Element, options: ToastOptions, panning: Boolean, timeRemaining: Double): Toast = {
-    val __obj = js.Dynamic.literal(dismiss = js.Any.fromFunction0(dismiss), el = el.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], panning = panning.asInstanceOf[js.Any], timeRemaining = timeRemaining.asInstanceOf[js.Any])
+  def apply(dismiss: () => Unit, panning: Boolean, timeRemaining: Double): Toast = {
+    val __obj = js.Dynamic.literal(dismiss = js.Any.fromFunction0(dismiss), panning = panning.asInstanceOf[js.Any], timeRemaining = timeRemaining.asInstanceOf[js.Any])
     __obj.asInstanceOf[Toast]
   }
 }

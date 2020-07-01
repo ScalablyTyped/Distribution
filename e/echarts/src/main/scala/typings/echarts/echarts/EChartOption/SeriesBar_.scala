@@ -5,7 +5,6 @@ import typings.echarts.anon.AnimationDelay
 import typings.echarts.anon.AnimationDelayUpdate
 import typings.echarts.anon.BarBorderColor
 import typings.echarts.anon.DictunknownProperty
-import typings.echarts.anon.ExtraCssText
 import typings.echarts.anon.ItemStyle
 import typings.echarts.echarts.EChartOption.SeriesBar.DataObject
 import typings.echarts.echartsStrings.bar
@@ -659,7 +658,7 @@ trait SeriesBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-bar.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
   /**
     * @default
     * "bar"
@@ -760,7 +759,7 @@ object SeriesBar_ {
     progressiveThreshold: js.UndefOr[Double] = js.undefined,
     seriesLayoutBy: String = null,
     stack: String = null,
-    tooltip: ExtraCssText = null,
+    tooltip: BaseTooltip = null,
     `type`: bar = null,
     xAxisIndex: js.UndefOr[Double] = js.undefined,
     yAxisIndex: js.UndefOr[Double] = js.undefined,

@@ -1,31 +1,34 @@
 package typings.materializeCss.M
 
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Tooltip
-  extends Component[TooltipOptions]
-     with Openable {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<TooltipOptions> * / any
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Openable * / any */ trait Tooltip extends js.Object {
   /**
     * If tooltip is hovered.
     */
   var isHovered: Boolean
+  /**
+    * If tooltip is open.
+    */
+  var isOpen: Boolean
+  /**
+    * Hide tooltip.
+    */
+  def close(): Unit
+  /**
+    * Show tooltip.
+    */
+  def open(): Unit
 }
 
 object Tooltip {
   @scala.inline
-  def apply(
-    close: () => Unit,
-    destroy: () => Unit,
-    el: Element,
-    isHovered: Boolean,
-    isOpen: Boolean,
-    open: () => Unit,
-    options: TooltipOptions
-  ): Tooltip = {
-    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), destroy = js.Any.fromFunction0(destroy), el = el.asInstanceOf[js.Any], isHovered = isHovered.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], open = js.Any.fromFunction0(open), options = options.asInstanceOf[js.Any])
+  def apply(close: () => Unit, isHovered: Boolean, isOpen: Boolean, open: () => Unit): Tooltip = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), isHovered = isHovered.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], open = js.Any.fromFunction0(open))
     __obj.asInstanceOf[Tooltip]
   }
 }

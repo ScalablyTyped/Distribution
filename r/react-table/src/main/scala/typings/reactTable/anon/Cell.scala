@@ -10,7 +10,7 @@ trait Cell[D /* <: js.Object */] extends js.Object {
 
 object Cell {
   @scala.inline
-  def apply[D](cell: typings.reactTable.mod.Cell[D, _]): Cell[D] = {
+  def apply[/* <: js.Object */ D](cell: typings.reactTable.mod.Cell[D, _]): Cell[D] = {
     val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cell[D]]
   }

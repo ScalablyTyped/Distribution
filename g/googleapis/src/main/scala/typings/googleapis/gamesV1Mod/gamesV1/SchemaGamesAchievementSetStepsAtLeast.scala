@@ -23,10 +23,10 @@ trait SchemaGamesAchievementSetStepsAtLeast extends js.Object {
 
 object SchemaGamesAchievementSetStepsAtLeast {
   @scala.inline
-  def apply(kind: String = null, steps: Int | Double = null): SchemaGamesAchievementSetStepsAtLeast = {
+  def apply(kind: String = null, steps: js.UndefOr[Double] = js.undefined): SchemaGamesAchievementSetStepsAtLeast = {
     val __obj = js.Dynamic.literal()
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
+    if (!js.isUndefined(steps)) __obj.updateDynamic("steps")(steps.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGamesAchievementSetStepsAtLeast]
   }
 }

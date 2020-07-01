@@ -43,13 +43,13 @@ object SchemaSubnetworkLogConfig {
   def apply(
     aggregationInterval: String = null,
     enable: js.UndefOr[Boolean] = js.undefined,
-    flowSampling: Int | Double = null,
+    flowSampling: js.UndefOr[Double] = js.undefined,
     metadata: String = null
   ): SchemaSubnetworkLogConfig = {
     val __obj = js.Dynamic.literal()
     if (aggregationInterval != null) __obj.updateDynamic("aggregationInterval")(aggregationInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
-    if (flowSampling != null) __obj.updateDynamic("flowSampling")(flowSampling.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flowSampling)) __obj.updateDynamic("flowSampling")(flowSampling.get.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSubnetworkLogConfig]
   }

@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 
 trait DropDownProps extends js.Object {
   var align: js.UndefOr[Align] = js.undefined
+  var arrow: js.UndefOr[Boolean] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var forceRender: js.UndefOr[Boolean] = js.undefined
@@ -35,6 +36,7 @@ object DropDownProps {
   def apply(
     overlay: ReactElement | OverlayFunc,
     align: Align = null,
+    arrow: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     forceRender: js.UndefOr[Boolean] = js.undefined,
@@ -53,6 +55,7 @@ object DropDownProps {
   ): DropDownProps = {
     val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrow)) __obj.updateDynamic("arrow")(arrow.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender.get.asInstanceOf[js.Any])

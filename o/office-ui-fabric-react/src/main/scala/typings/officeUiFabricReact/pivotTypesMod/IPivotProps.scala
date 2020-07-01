@@ -94,6 +94,8 @@ trait IPivotProps
     * otherwise, use the `selectedKey` property.
     *
     * This property is also mutually exclusive with `defaultSelectedKey`.
+    *
+    * @deprecated Use `defaultSelectedKey`
     */
   var defaultSelectedIndex: js.UndefOr[Double] = js.undefined
   /**
@@ -118,7 +120,7 @@ trait IPivotProps
     * Index of the pivot item initially selected. Mutually exclusive with `initialSelectedKey`.
     * Only provide this if the pivot is an uncontrolled component; otherwise, use `selectedKey`.
     *
-    * @deprecated Use `defaultSelectedIndex`
+    * @deprecated Use `defaultSelectedKey`
     */
   var initialSelectedIndex: js.UndefOr[Double] = js.undefined
   /**

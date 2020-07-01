@@ -40,7 +40,8 @@ trait Application_ extends js.Object {
     */
   var renderer: Renderer = js.native
   /**
-    * The element or window to resize the application to.
+    * The HTML element or window to automatically resize the
+    * renderer's view element to match width and height.
     * @type {Window|HTMLElement}
     * @name resizeTo
     * @memberof PIXI.Application#
@@ -74,7 +75,7 @@ trait Application_ extends js.Object {
   val view: HTMLCanvasElement = js.native
   /**
     * Destroy and don't use after this.
-    * @param {Boolean} [removeView=false] Automatically remove canvas from DOM.
+    * @param {Boolean} [removeView=false] - Automatically remove canvas from DOM.
     * @param {object|boolean} [stageOptions] - Options parameter. A boolean will act as if all options
     *  have been set to that value
     * @param {boolean} [stageOptions.children=false] - if set to true, all the children will have their destroy
@@ -88,12 +89,20 @@ trait Application_ extends js.Object {
   def destroy(removeView: Boolean): Unit = js.native
   def destroy(removeView: Boolean, stageOptions: typings.pixiJs.anon.BaseTexture): Unit = js.native
   /**
+    * Resize is throttled, so it's
+    * safe to call this multiple times per frame and it'll
+    * only be called once.
+    * @method PIXI.Application#queueResize
+    */
+  def queueResize(): Unit = js.native
+  /**
     * Render the current stage.
     */
   def render(): Unit = js.native
   /**
-    * If `resizeTo` is set, calling this function
-    * will resize to the width and height of that element.
+    * Execute an immediate resize on the renderer, this is not
+    * throttled and can be expensive to call many times in a row.
+    * Will resize only if `resizeTo` property is set.
     * @method PIXI.Application#resize
     */
   def resize(): Unit = js.native

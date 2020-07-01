@@ -10,7 +10,7 @@ package object routerMod {
   type Subscription = js.Function2[
     /* data */ typings.next.routerMod.RouteInfo, 
     /* App */ js.UndefOr[typings.react.mod.ComponentType[js.Object]], 
-    scala.Unit
+    js.Promise[scala.Unit]
   ]
   type Url = typings.node.urlMod.UrlObject | java.lang.String
 }

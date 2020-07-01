@@ -12,7 +12,7 @@ trait Buffer[TBuffer /* <: Uint8Array */] extends js.Object {
 
 object Buffer {
   @scala.inline
-  def apply[TBuffer](buffer: TBuffer, bytesRead: Double): Buffer[TBuffer] = {
+  def apply[/* <: typings.std.Uint8Array */ TBuffer](buffer: TBuffer, bytesRead: Double): Buffer[TBuffer] = {
     val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesRead = bytesRead.asInstanceOf[js.Any])
     __obj.asInstanceOf[Buffer[TBuffer]]
   }

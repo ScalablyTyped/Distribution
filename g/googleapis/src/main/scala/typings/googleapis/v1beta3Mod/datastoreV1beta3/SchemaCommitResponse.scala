@@ -23,9 +23,12 @@ trait SchemaCommitResponse extends js.Object {
 
 object SchemaCommitResponse {
   @scala.inline
-  def apply(indexUpdates: Int | Double = null, mutationResults: js.Array[SchemaMutationResult] = null): SchemaCommitResponse = {
+  def apply(
+    indexUpdates: js.UndefOr[Double] = js.undefined,
+    mutationResults: js.Array[SchemaMutationResult] = null
+  ): SchemaCommitResponse = {
     val __obj = js.Dynamic.literal()
-    if (indexUpdates != null) __obj.updateDynamic("indexUpdates")(indexUpdates.asInstanceOf[js.Any])
+    if (!js.isUndefined(indexUpdates)) __obj.updateDynamic("indexUpdates")(indexUpdates.get.asInstanceOf[js.Any])
     if (mutationResults != null) __obj.updateDynamic("mutationResults")(mutationResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCommitResponse]
   }

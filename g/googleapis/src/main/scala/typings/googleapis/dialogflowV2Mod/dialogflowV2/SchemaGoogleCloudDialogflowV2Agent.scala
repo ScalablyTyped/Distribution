@@ -73,7 +73,7 @@ object SchemaGoogleCloudDialogflowV2Agent {
   @scala.inline
   def apply(
     avatarUri: String = null,
-    classificationThreshold: Int | Double = null,
+    classificationThreshold: js.UndefOr[Double] = js.undefined,
     defaultLanguageCode: String = null,
     description: String = null,
     displayName: String = null,
@@ -85,11 +85,11 @@ object SchemaGoogleCloudDialogflowV2Agent {
   ): SchemaGoogleCloudDialogflowV2Agent = {
     val __obj = js.Dynamic.literal()
     if (avatarUri != null) __obj.updateDynamic("avatarUri")(avatarUri.asInstanceOf[js.Any])
-    if (classificationThreshold != null) __obj.updateDynamic("classificationThreshold")(classificationThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(classificationThreshold)) __obj.updateDynamic("classificationThreshold")(classificationThreshold.get.asInstanceOf[js.Any])
     if (defaultLanguageCode != null) __obj.updateDynamic("defaultLanguageCode")(defaultLanguageCode.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLogging)) __obj.updateDynamic("enableLogging")(enableLogging.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableLogging)) __obj.updateDynamic("enableLogging")(enableLogging.get.asInstanceOf[js.Any])
     if (matchMode != null) __obj.updateDynamic("matchMode")(matchMode.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     if (supportedLanguageCodes != null) __obj.updateDynamic("supportedLanguageCodes")(supportedLanguageCodes.asInstanceOf[js.Any])

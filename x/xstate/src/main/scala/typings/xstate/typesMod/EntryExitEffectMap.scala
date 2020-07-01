@@ -11,7 +11,7 @@ trait EntryExitEffectMap[TContext, TEvent /* <: EventObject */] extends js.Objec
 
 object EntryExitEffectMap {
   @scala.inline
-  def apply[TContext, TEvent](entry: js.Array[ActionObject[TContext, TEvent]], exit: js.Array[ActionObject[TContext, TEvent]]): EntryExitEffectMap[TContext, TEvent] = {
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](entry: js.Array[ActionObject[TContext, TEvent]], exit: js.Array[ActionObject[TContext, TEvent]]): EntryExitEffectMap[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(entry = entry.asInstanceOf[js.Any], exit = exit.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntryExitEffectMap[TContext, TEvent]]
   }

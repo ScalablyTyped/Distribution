@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@testing-library/react" : "10.4.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@testing-library/react" : "10.4.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

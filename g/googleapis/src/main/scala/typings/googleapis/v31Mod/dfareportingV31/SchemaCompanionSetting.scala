@@ -38,9 +38,9 @@ object SchemaCompanionSetting {
     kind: String = null
   ): SchemaCompanionSetting = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(companionsDisabled)) __obj.updateDynamic("companionsDisabled")(companionsDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(companionsDisabled)) __obj.updateDynamic("companionsDisabled")(companionsDisabled.get.asInstanceOf[js.Any])
     if (enabledSizes != null) __obj.updateDynamic("enabledSizes")(enabledSizes.asInstanceOf[js.Any])
-    if (!js.isUndefined(imageOnly)) __obj.updateDynamic("imageOnly")(imageOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageOnly)) __obj.updateDynamic("imageOnly")(imageOnly.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCompanionSetting]
   }

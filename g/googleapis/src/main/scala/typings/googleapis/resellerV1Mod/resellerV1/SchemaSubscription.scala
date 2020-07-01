@@ -1,8 +1,8 @@
 package typings.googleapis.resellerV1Mod.resellerV1
 
-import typings.googleapis.AnonCommitmentInterval
-import typings.googleapis.AnonIsInTrial
-import typings.googleapis.AnonMinimumTransferableSeats
+import typings.googleapis.anon.CommitmentInterval
+import typings.googleapis.anon.IsInTrial
+import typings.googleapis.anon.MinimumTransferableSeats
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,7 +50,7 @@ trait SchemaSubscription extends js.Object {
     * trial plan. For more information about the API&quot;s payment plans, see
     * the API concepts.
     */
-  var plan: js.UndefOr[AnonCommitmentInterval] = js.native
+  var plan: js.UndefOr[CommitmentInterval] = js.native
   /**
     * This is an optional property. This purchase order (PO) information is for
     * resellers to use for their company tracking usage. If a purchaseOrderId
@@ -120,12 +120,12 @@ trait SchemaSubscription extends js.Object {
     * Read-only transfer related information for the subscription. For more
     * information, see retrieve transferable subscriptions for a customer.
     */
-  var transferInfo: js.UndefOr[AnonMinimumTransferableSeats] = js.native
+  var transferInfo: js.UndefOr[MinimumTransferableSeats] = js.native
   /**
     * The G Suite annual commitment and flexible payment plans can be in a
     * 30-day free trial. For more information, see the API concepts.
     */
-  var trialSettings: js.UndefOr[AnonIsInTrial] = js.native
+  var trialSettings: js.UndefOr[IsInTrial] = js.native
 }
 
 object SchemaSubscription {
@@ -137,7 +137,7 @@ object SchemaSubscription {
     customerId: String = null,
     dealCode: String = null,
     kind: String = null,
-    plan: AnonCommitmentInterval = null,
+    plan: CommitmentInterval = null,
     purchaseOrderId: String = null,
     renewalSettings: SchemaRenewalSettings = null,
     resourceUiUrl: String = null,
@@ -147,8 +147,8 @@ object SchemaSubscription {
     status: String = null,
     subscriptionId: String = null,
     suspensionReasons: js.Array[String] = null,
-    transferInfo: AnonMinimumTransferableSeats = null,
-    trialSettings: AnonIsInTrial = null
+    transferInfo: MinimumTransferableSeats = null,
+    trialSettings: IsInTrial = null
   ): SchemaSubscription = {
     val __obj = js.Dynamic.literal()
     if (billingMethod != null) __obj.updateDynamic("billingMethod")(billingMethod.asInstanceOf[js.Any])

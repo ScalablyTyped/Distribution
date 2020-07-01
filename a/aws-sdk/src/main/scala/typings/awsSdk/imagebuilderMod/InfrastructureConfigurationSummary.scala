@@ -27,6 +27,10 @@ trait InfrastructureConfigurationSummary extends js.Object {
     */
   var name: js.UndefOr[ResourceName] = js.native
   /**
+    * The tags attached to the image created by Image Builder.
+    */
+  var resourceTags: js.UndefOr[ResourceTagMap] = js.native
+  /**
     * The tags of the infrastructure configuration.
     */
   var tags: js.UndefOr[TagMap] = js.native
@@ -40,6 +44,7 @@ object InfrastructureConfigurationSummary {
     dateUpdated: DateTime = null,
     description: NonEmptyString = null,
     name: ResourceName = null,
+    resourceTags: ResourceTagMap = null,
     tags: TagMap = null
   ): InfrastructureConfigurationSummary = {
     val __obj = js.Dynamic.literal()
@@ -48,6 +53,7 @@ object InfrastructureConfigurationSummary {
     if (dateUpdated != null) __obj.updateDynamic("dateUpdated")(dateUpdated.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (resourceTags != null) __obj.updateDynamic("resourceTags")(resourceTags.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[InfrastructureConfigurationSummary]
   }

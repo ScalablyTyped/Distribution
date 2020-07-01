@@ -107,7 +107,7 @@ trait EditorConfiguration extends js.Object {
   /** Whether CodeMirror should scroll or wrap for long lines. Defaults to false (scroll). */
   var lineWrapping: js.UndefOr[Boolean] = js.undefined
   /** Optional lint configuration to be used in conjunction with CodeMirror's linter addon. */
-  var lint: js.UndefOr[Boolean | LintOptions] = js.undefined
+  var lint: js.UndefOr[Boolean | LintStateOptions | Linter | AsyncLinter] = js.undefined
   //  When set to true or an options object, causes matching brackets to be highlighted whenever the cursor is next to them.
   var matchBrackets: js.UndefOr[MatchBrackets | Boolean] = js.undefined
   /**
@@ -243,7 +243,7 @@ object EditorConfiguration {
     lineNumbers: js.UndefOr[Boolean] = js.undefined,
     lineWiseCopyCut: js.UndefOr[Boolean] = js.undefined,
     lineWrapping: js.UndefOr[Boolean] = js.undefined,
-    lint: Boolean | LintOptions = null,
+    lint: Boolean | LintStateOptions | Linter | AsyncLinter = null,
     matchBrackets: MatchBrackets | Boolean = null,
     matchTags: MatchTags | Boolean = null,
     maxHighlightLength: js.UndefOr[Double] = js.undefined,

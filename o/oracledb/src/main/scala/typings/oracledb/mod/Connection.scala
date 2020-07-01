@@ -302,15 +302,18 @@ trait Connection extends js.Object {
     * @see https://oracle.github.io/node-oracledb/doc/api.html#objects
     * @since 4.0
     */
-  def getDbObjectClass(className: String): js.Promise[DBObjectClass] = js.native
-  def getDbObjectClass(className: String, callback: js.Function2[/* error */ DBError, /* dbObject */ DBObjectClass, Unit]): Unit = js.native
-  def getQueue(name: String): js.Promise[AdvancedQueue] = js.native
-  def getQueue(name: String, callback: js.Function2[/* error */ DBError, /* queue */ AdvancedQueue, Unit]): Unit = js.native
-  def getQueue(name: String, options: GetAdvancedQueueOptions): js.Promise[AdvancedQueue] = js.native
-  def getQueue(
+  def getDbObjectClass[T](className: String): js.Promise[DBObjectClass[T]] = js.native
+  def getDbObjectClass[T](
+    className: String,
+    callback: js.Function2[/* error */ DBError, /* dbObject */ DBObjectClass[T], Unit]
+  ): Unit = js.native
+  def getQueue[T](name: String): js.Promise[AdvancedQueue[T]] = js.native
+  def getQueue[T](name: String, callback: js.Function2[/* error */ DBError, /* queue */ AdvancedQueue[T], Unit]): Unit = js.native
+  def getQueue[T](name: String, options: GetAdvancedQueueOptions): js.Promise[AdvancedQueue[T]] = js.native
+  def getQueue[T](
     name: String,
     options: GetAdvancedQueueOptions,
-    callback: js.Function2[/* error */ DBError, /* queue */ AdvancedQueue, Unit]
+    callback: js.Function2[/* error */ DBError, /* queue */ AdvancedQueue[T], Unit]
   ): Unit = js.native
   /**
     * Returns a parent SodaDatabase object for use with Simple Oracle Document Access (SODA).
@@ -334,8 +337,11 @@ trait Connection extends js.Object {
     *
     * @since 2.2
     */
-  def getStatementInfo(sql: String): js.Promise[StatementInfo] = js.native
-  def getStatementInfo(sql: String, callback: js.Function2[/* error */ DBError, /* info */ StatementInfo, Unit]): Unit = js.native
+  def getStatementInfo(sql: String): js.Promise[StatementInfo[js.Object]] = js.native
+  def getStatementInfo(
+    sql: String,
+    callback: js.Function2[/* error */ DBError, /* info */ StatementInfo[js.Object], Unit]
+  ): Unit = js.native
   /**
     * This method checks that a connection is currently usable and the network to the database is valid.
     * This call can be useful for system health checks. A ping only confirms that a single connection

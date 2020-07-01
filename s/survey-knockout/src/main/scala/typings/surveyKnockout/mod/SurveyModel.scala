@@ -66,7 +66,7 @@ class SurveyModel ()
   var clearValueOnDisableItems: Boolean = js.native
   /**
     * Gets or sets user's identifier (e.g., e-mail or unique customer id) in your web application.
-    * If you load survey or post survey results from/to [dxsurvey.com](http://www.dxsurvey.com) service, then the library do not allow users to run the same survey the second time.
+    * If you load survey or post survey results from/to [api.surveyjs.io](https://api.surveyjs.io) service, then the library do not allow users to run the same survey the second time.
     * On the second run, the user will see the survey complete page.
     */
   var clientId: String = js.native
@@ -136,6 +136,7 @@ class SurveyModel ()
     * > If you set the `data` property after creating the survey, you may need to set the `currentPageNo` to `0`, if you are using `visibleIf` properties for questions/pages/panels to ensure that you are starting from the first page.
     * @see setValue
     * @see getValue
+    * @see mergeData
     * @see currentPageNo
     */
   var data: js.Any = js.native
@@ -265,7 +266,7 @@ class SurveyModel ()
     */
   var jsonErrors: js.Array[JsonError] = js.native
   /**
-    * The HTML that shows on loading survey Json from the [dxsurvey.com](http://www.dxsurvey.com) service.
+    * The HTML that shows on loading survey Json from the [api.surveyjs.io](https://api.surveyjs.io) service.
     * @see surveyId
     * @see locale
     */
@@ -539,11 +540,11 @@ class SurveyModel ()
     */
   var onGetQuestionTitle: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
   /**
-    * Use it to get results after calling the `getResult` method. It returns a simple analytics from [dxsurvey.com](http://www.dxsurvey.com) service.
+    * Use it to get results after calling the `getResult` method. It returns a simple analytics from [api.surveyjs.io](https://api.surveyjs.io) service.
     * <br/> `sender` - the survey object that fires the event.
     * <br/> `options.success` - it is `true` if the results were got from the service successfully.
     * <br/> `options.data` - the object `{AnswersCount, QuestionResult : {} }`. `AnswersCount` is the number of posted survey results. `QuestionResult` is an object with all possible unique answers to the question and number of these answers.
-    * <br/> `options.dataList` - an array of objects `{name, value}`, where `name` is an unique value/answer to the question and `value` is a number/count of such answers.
+    * <br/> `options.dataList` - an array of objects `{name, value}`, where `name` is a unique value/answer to the question and `value` is a number/count of such answers.
     * <br/> `options.response` - the server response.
     * @see getResult
     */
@@ -575,6 +576,7 @@ class SurveyModel ()
     * @see loadSurveyFromService
     */
   var onLoadedSurveyFromService: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
+  var onLocaleChangedEvent: Event[js.Function2[/* sender */ this.type, /* value */ String, _], _] = js.native
   /**
     * The event is fired for every cell after is has been rendered in DOM.
     * <br/> `sender` - the survey object that fires the event.
@@ -807,7 +809,7 @@ class SurveyModel ()
     */
   var onScrollingElementToTop: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
   /**
-    * The event fires when it gets response from the [dxsurvey.com](http://www.dxsurvey.com) service on saving survey results. Use it to find out if the results have been saved successfully.
+    * The event fires when it gets response from the [api.surveyjs.io](https://api.surveyjs.io) service on saving survey results. Use it to find out if the results have been saved successfully.
     * <br/> `sender` - the survey object that fires the event.
     * <br/> `options.success` - it is `true` if the results has been sent to the service successfully.
     * <br/> `options.response` - a response from the service.
@@ -1217,19 +1219,19 @@ class SurveyModel ()
     */
   var storeOthersAsComment: Boolean = js.native
   /**
-    * Gets or sets an identifier of a survey model loaded from the [dxsurvey.com](http://www.dxsurvey.com) service. When specified, the survey JSON is automatically loaded from [dxsurvey.com](http://www.dxsurvey.com) service.
+    * Gets or sets an identifier of a survey model loaded from the [api.surveyjs.io](https://api.surveyjs.io) service. When specified, the survey JSON is automatically loaded from [api.surveyjs.io](https://api.surveyjs.io) service.
     * @see loadSurveyFromService
     * @see onLoadedSurveyFromService
     */
   var surveyId: String = js.native
   /**
-    * Gets or sets an identifier of a survey model saved to the [dxsurvey.com](http://www.dxsurvey.com) service. When specified, the survey data is automatically saved to the [dxsurvey.com](http://www.dxsurvey.com) service.
+    * Gets or sets an identifier of a survey model saved to the [api.surveyjs.io](https://api.surveyjs.io) service. When specified, the survey data is automatically saved to the [api.surveyjs.io](https://api.surveyjs.io) service.
     * @see onComplete
     * @see surveyShowDataSaving
     */
   var surveyPostId: String = js.native
   /**
-    * Gets or sets whether to show the progress on saving/sending data into the [dxsurvey.com](http://www.dxsurvey.com) service.
+    * Gets or sets whether to show the progress on saving/sending data into the [api.surveyjs.io](https://api.surveyjs.io) service.
     * @see surveyPostId
     */
   var surveyShowDataSaving: Boolean = js.native
@@ -1358,7 +1360,7 @@ class SurveyModel ()
     */
   def clearValue(name: String): Unit = js.native
   /**
-    * Completes the survey, if the current page is the last one. It returns `false` if the last page has no errors.
+    * Completes the survey, if the current page is the last one. It returns `false` if the last page has errors.
     * If the last page has no errors, `completeLastPage` calls `doComplete` and returns `true`.
     * @see isCurrentPageHasErrors
     * @see nextPage
@@ -1396,6 +1398,7 @@ class SurveyModel ()
     * Calling the `doComplete` function does not perform any validation, unlike the `completeLastPage` function.
     * It calls `navigateToUrl` after calling `onComplete` event.
     * In case calling `options.showDataSaving` callback in the `onComplete` event, `navigateToUrl` is used on calling `options.showDataSavingSuccess` callback.
+    * @see completeLastPage
     * @see cookieName
     * @see state
     * @see onComplete
@@ -1564,8 +1567,8 @@ class SurveyModel ()
     */
   def getQuizQuestions(): js.Array[IQuestion] = js.native
   /**
-    * Calls the [dxsurvey.com](http://www.dxsurvey.com) service and, on callback, fires the `onGetResult` event with all answers that your users made for a question.
-    * @param resultId [dxsurvey.com](http://www.dxsurvey.com) service resultId
+    * Calls the [api.surveyjs.io](https://api.surveyjs.io) service and, on callback, fires the `onGetResult` event with all answers that your users made for a question.
+    * @param resultId [api.surveyjs.io](https://api.surveyjs.io) service resultId
     * @param name The question name
     * @see onGetResult
     */
@@ -1592,9 +1595,9 @@ class SurveyModel ()
   def hasVisibleQuestionByValueName(valueName: String): Boolean = js.native
   def isPageStarted(page: IPage): Boolean = js.native
   /**
-    * Loads the survey JSON from the [dxsurvey.com](http://www.dxsurvey.com) service.
+    * Loads the survey JSON from the [api.surveyjs.io](https://api.surveyjs.io) service.
     * If `clientId` is not `null` and a user had completed a survey before, the survey switches to `completedbefore` state.
-    * @param surveyId [dxsurvey.com](http://www.dxsurvey.com) service surveyId
+    * @param surveyId [api.surveyjs.io](https://api.surveyjs.io) service surveyId
     * @param clientId users' indentifier, for example an e-mail or a unique customer id in your web application.
     * @see state
     * @see onLoadedSurveyFromService
@@ -1624,6 +1627,13 @@ class SurveyModel ()
   def matrixRowRemoved(question: IQuestion, rowIndex: Double, row: js.Any): js.Any = js.native
   @JSName("matrixRowRemoved")
   def matrixRowRemoved_Unit(question: IQuestion, rowIndex: Double, row: js.Any): Unit = js.native
+  /**
+    * Merge the values into survey.data. It works as survey.data, except it doesn't clean the existing data, but overrides them.
+    * @param data data to merge. It should be an object {keyValue: Value, ...}
+    * @see data
+    * @see setValue
+    */
+  def mergeData(data: js.Any): Unit = js.native
   def mergeValues(src: js.Any, dest: js.Any): Unit = js.native
   /**
     * Navigates user to the next page.
@@ -1699,8 +1709,8 @@ class SurveyModel ()
   def scrollElementToTop(element: ISurveyElement, question: IQuestion, page: IPage, id: String): js.Any = js.native
   def scrollToTopOnPageChange(): Unit = js.native
   /**
-    * Sends a survey result to the [dxsurvey.com](http://www.dxsurvey.com) service.
-    * @param postId [dxsurvey.com](http://www.dxsurvey.com) service postId
+    * Sends a survey result to the [api.surveyjs.io](https://api.surveyjs.io) service.
+    * @param postId [api.surveyjs.io](https://api.surveyjs.io) service postId
     * @param clientId Typically a customer e-mail or an identifier
     * @param isPartialCompleted Set it to `true` if the survey is not completed yet and the results are intermediate
     * @see surveyPostId
@@ -1727,6 +1737,7 @@ class SurveyModel ()
     * @see deleteCookie
     */
   def setCookie(): Unit = js.native
+  def setDataCore(data: js.Any): Unit = js.native
   def setDataValueCore(valuesHash: js.Any, key: String, value: js.Any): Unit = js.native
   /**
     * Sets the survey into design mode.

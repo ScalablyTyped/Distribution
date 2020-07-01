@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@wordpress/element/raw-html", JSImport.Default)
+@JSImport("@wordpress/element/build-types/raw-html", JSImport.Default)
 @js.native
 object default extends js.Object {
   def apply(hasChildrenProps: childrenstringPickDetaile): Element = js.native

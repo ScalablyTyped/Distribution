@@ -52,22 +52,22 @@ trait SchemaInappPurchase extends js.Object {
 object SchemaInappPurchase {
   @scala.inline
   def apply(
-    consumptionState: Int | Double = null,
+    consumptionState: js.UndefOr[Double] = js.undefined,
     developerPayload: String = null,
     kind: String = null,
     orderId: String = null,
-    purchaseState: Int | Double = null,
+    purchaseState: js.UndefOr[Double] = js.undefined,
     purchaseTime: String = null,
-    purchaseType: Int | Double = null
+    purchaseType: js.UndefOr[Double] = js.undefined
   ): SchemaInappPurchase = {
     val __obj = js.Dynamic.literal()
-    if (consumptionState != null) __obj.updateDynamic("consumptionState")(consumptionState.asInstanceOf[js.Any])
+    if (!js.isUndefined(consumptionState)) __obj.updateDynamic("consumptionState")(consumptionState.get.asInstanceOf[js.Any])
     if (developerPayload != null) __obj.updateDynamic("developerPayload")(developerPayload.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (orderId != null) __obj.updateDynamic("orderId")(orderId.asInstanceOf[js.Any])
-    if (purchaseState != null) __obj.updateDynamic("purchaseState")(purchaseState.asInstanceOf[js.Any])
+    if (!js.isUndefined(purchaseState)) __obj.updateDynamic("purchaseState")(purchaseState.get.asInstanceOf[js.Any])
     if (purchaseTime != null) __obj.updateDynamic("purchaseTime")(purchaseTime.asInstanceOf[js.Any])
-    if (purchaseType != null) __obj.updateDynamic("purchaseType")(purchaseType.asInstanceOf[js.Any])
+    if (!js.isUndefined(purchaseType)) __obj.updateDynamic("purchaseType")(purchaseType.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInappPurchase]
   }
 }

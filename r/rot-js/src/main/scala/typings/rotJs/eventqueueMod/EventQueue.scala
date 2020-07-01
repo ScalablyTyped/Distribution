@@ -1,18 +1,13 @@
 package typings.rotJs.eventqueueMod
 
+import typings.rotJs.minHeapMod.MinHeap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EventQueue[T] extends js.Object {
-  var _eventTimes: js.Array[Double]
-  var _events: js.Array[T]
+  var _events: MinHeap[T]
   var _time: Double
-  /**
-    * Remove an event from the queue
-    * @param {int} index
-    */
-  def _remove(index: Double): Unit
   /**
     * @param {?} event
     * @param {number} time
@@ -48,9 +43,7 @@ trait EventQueue[T] extends js.Object {
 object EventQueue {
   @scala.inline
   def apply[T](
-    _eventTimes: js.Array[Double],
-    _events: js.Array[T],
-    _remove: Double => Unit,
+    _events: MinHeap[T],
     _time: Double,
     add: (T, Double) => Unit,
     clear: () => EventQueue[T],
@@ -59,7 +52,7 @@ object EventQueue {
     getTime: () => Double,
     remove: T => Boolean
   ): EventQueue[T] = {
-    val __obj = js.Dynamic.literal(_eventTimes = _eventTimes.asInstanceOf[js.Any], _events = _events.asInstanceOf[js.Any], _remove = js.Any.fromFunction1(_remove), _time = _time.asInstanceOf[js.Any], add = js.Any.fromFunction2(add), clear = js.Any.fromFunction0(clear), get = js.Any.fromFunction0(get), getEventTime = js.Any.fromFunction1(getEventTime), getTime = js.Any.fromFunction0(getTime), remove = js.Any.fromFunction1(remove))
+    val __obj = js.Dynamic.literal(_events = _events.asInstanceOf[js.Any], _time = _time.asInstanceOf[js.Any], add = js.Any.fromFunction2(add), clear = js.Any.fromFunction0(clear), get = js.Any.fromFunction0(get), getEventTime = js.Any.fromFunction1(getEventTime), getTime = js.Any.fromFunction0(getTime), remove = js.Any.fromFunction1(remove))
     __obj.asInstanceOf[EventQueue[T]]
   }
 }

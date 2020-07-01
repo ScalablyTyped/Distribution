@@ -24,7 +24,8 @@ trait MessageCompose extends Item {
   /**
     * Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a message.
     *
-    * By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
+    * By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, Windows, and Mac,
+    * the following limits apply.
     *
     * - Get 500 members maximum.
     *
@@ -69,8 +70,9 @@ trait MessageCompose extends Item {
     * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the
     * current item.
     *
-    * The `cc` property returns a {@link Office.Recipients | Recipients} object that provides methods to get or update the recipients on the Cc line of
-    * the message. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
+    * The `cc` property returns a {@link Office.Recipients | Recipients} object that provides methods to get or update the recipients on the
+    * **Cc** line of the message. By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, Windows,
+    * and Mac, the following limits apply.
     *
     * - Get 500 members maximum.
     *
@@ -197,8 +199,9 @@ trait MessageCompose extends Item {
     * Provides access to the recipients on the To line of a message. The type of object and level of access depends on the mode of the
     * current item.
     *
-    * The `to` property returns a `Recipients` object that provides methods to get or update the recipients on the To line of the message.
-    * By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
+    * The `to` property returns a {@link Office.Recipients | Recipients} object that provides methods to get or update the recipients on the
+    * **To** line of the message. By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, Windows,
+    * and Mac, the following limits apply.
     *
     * - Get 500 members maximum.
     *
@@ -327,7 +330,7 @@ trait MessageCompose extends Item {
   /**
     * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
     *
-    * To see which event types are supported, see `Office.EventType` for details.
+    * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section} for supported events.
     *
     * [Api set: Mailbox 1.7]
     *
@@ -439,7 +442,7 @@ trait MessageCompose extends Item {
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points | Applicable Outlook mode}**: Message Compose
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
     *
     * @param options - Optional. An object literal that contains one or more of the following properties.
     *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
@@ -528,7 +531,7 @@ trait MessageCompose extends Item {
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points | Applicable Outlook mode}**: Message Compose
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
     *
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`. On success, the `asyncResult.value` property contains an object with the item's compose type
@@ -550,7 +553,7 @@ trait MessageCompose extends Item {
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points | Applicable Outlook mode}**: Message Compose
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
     *
     * @param options - An object literal that contains one or more of the following properties.
     *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
@@ -762,7 +765,7 @@ trait MessageCompose extends Item {
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points | Applicable Outlook mode}**: Message Compose
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
     *
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                   type `Office.AsyncResult`.
@@ -784,7 +787,7 @@ trait MessageCompose extends Item {
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points | Applicable Outlook mode}**: Message Compose
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
     *
     * @param options - An object literal that contains one or more of the following properties.
     *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
@@ -865,7 +868,7 @@ trait MessageCompose extends Item {
   /**
     * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
     *
-    * To see which event types are supported, see `Office.EventType` for details.
+    * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section} for supported events.
     *
     * [Api set: Mailbox 1.7]
     *

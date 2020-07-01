@@ -1,11 +1,11 @@
 package typings.googleapis.driveV2Mod.driveV2
 
-import typings.googleapis.AnonBackgroundImageLink
-import typings.googleapis.AnonBytesUsed
-import typings.googleapis.AnonFeatureName
-import typings.googleapis.AnonRoleSets
-import typings.googleapis.AnonSizeType
-import typings.googleapis.AnonTargets
+import typings.googleapis.anon.BackgroundImageLink
+import typings.googleapis.anon.BytesUsed
+import typings.googleapis.anon.FeatureName
+import typings.googleapis.anon.RoleSets
+import typings.googleapis.anon.SizeType
+import typings.googleapis.anon.Targets
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait SchemaAbout extends js.Object {
     * Information about supported additional roles per file type. The most
     * specific type takes precedence.
     */
-  var additionalRoleInfo: js.UndefOr[js.Array[AnonRoleSets]] = js.native
+  var additionalRoleInfo: js.UndefOr[js.Array[RoleSets]] = js.native
   /**
     * Whether the user can create Team Drives.
     */
@@ -36,11 +36,11 @@ trait SchemaAbout extends js.Object {
   /**
     * The allowable export formats.
     */
-  var exportFormats: js.UndefOr[js.Array[AnonTargets]] = js.native
+  var exportFormats: js.UndefOr[js.Array[Targets]] = js.native
   /**
     * List of additional features enabled on this account.
     */
-  var features: js.UndefOr[js.Array[AnonFeatureName]] = js.native
+  var features: js.UndefOr[js.Array[FeatureName]] = js.native
   /**
     * The palette of allowable folder colors as RGB hex strings.
     */
@@ -48,7 +48,7 @@ trait SchemaAbout extends js.Object {
   /**
     * The allowable import formats.
     */
-  var importFormats: js.UndefOr[js.Array[AnonTargets]] = js.native
+  var importFormats: js.UndefOr[js.Array[Targets]] = js.native
   /**
     * A boolean indicating whether the authenticated app is installed by the
     * authenticated user.
@@ -72,7 +72,7 @@ trait SchemaAbout extends js.Object {
     * List of max upload sizes for each file type. The most specific type takes
     * precedence.
     */
-  var maxUploadSizes: js.UndefOr[js.Array[AnonSizeType]] = js.native
+  var maxUploadSizes: js.UndefOr[js.Array[SizeType]] = js.native
   /**
     * The name of the current user.
     */
@@ -84,7 +84,7 @@ trait SchemaAbout extends js.Object {
   /**
     * The amount of storage quota used by different Google services.
     */
-  var quotaBytesByService: js.UndefOr[js.Array[AnonBytesUsed]] = js.native
+  var quotaBytesByService: js.UndefOr[js.Array[BytesUsed]] = js.native
   /**
     * The total number of quota bytes.
     */
@@ -121,7 +121,7 @@ trait SchemaAbout extends js.Object {
   /**
     * A list of themes that are supported for Team Drives.
     */
-  var teamDriveThemes: js.UndefOr[js.Array[AnonBackgroundImageLink]] = js.native
+  var teamDriveThemes: js.UndefOr[js.Array[BackgroundImageLink]] = js.native
   /**
     * The authenticated user.
     */
@@ -131,22 +131,22 @@ trait SchemaAbout extends js.Object {
 object SchemaAbout {
   @scala.inline
   def apply(
-    additionalRoleInfo: js.Array[AnonRoleSets] = null,
+    additionalRoleInfo: js.Array[RoleSets] = null,
     canCreateTeamDrives: js.UndefOr[Boolean] = js.undefined,
     domainSharingPolicy: String = null,
     etag: String = null,
-    exportFormats: js.Array[AnonTargets] = null,
-    features: js.Array[AnonFeatureName] = null,
+    exportFormats: js.Array[Targets] = null,
+    features: js.Array[FeatureName] = null,
     folderColorPalette: js.Array[String] = null,
-    importFormats: js.Array[AnonTargets] = null,
+    importFormats: js.Array[Targets] = null,
     isCurrentAppInstalled: js.UndefOr[Boolean] = js.undefined,
     kind: String = null,
     languageCode: String = null,
     largestChangeId: String = null,
-    maxUploadSizes: js.Array[AnonSizeType] = null,
+    maxUploadSizes: js.Array[SizeType] = null,
     name: String = null,
     permissionId: String = null,
-    quotaBytesByService: js.Array[AnonBytesUsed] = null,
+    quotaBytesByService: js.Array[BytesUsed] = null,
     quotaBytesTotal: String = null,
     quotaBytesUsed: String = null,
     quotaBytesUsedAggregate: String = null,
@@ -155,19 +155,19 @@ object SchemaAbout {
     remainingChangeIds: String = null,
     rootFolderId: String = null,
     selfLink: String = null,
-    teamDriveThemes: js.Array[AnonBackgroundImageLink] = null,
+    teamDriveThemes: js.Array[BackgroundImageLink] = null,
     user: SchemaUser = null
   ): SchemaAbout = {
     val __obj = js.Dynamic.literal()
     if (additionalRoleInfo != null) __obj.updateDynamic("additionalRoleInfo")(additionalRoleInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(canCreateTeamDrives)) __obj.updateDynamic("canCreateTeamDrives")(canCreateTeamDrives.asInstanceOf[js.Any])
+    if (!js.isUndefined(canCreateTeamDrives)) __obj.updateDynamic("canCreateTeamDrives")(canCreateTeamDrives.get.asInstanceOf[js.Any])
     if (domainSharingPolicy != null) __obj.updateDynamic("domainSharingPolicy")(domainSharingPolicy.asInstanceOf[js.Any])
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
     if (exportFormats != null) __obj.updateDynamic("exportFormats")(exportFormats.asInstanceOf[js.Any])
     if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
     if (folderColorPalette != null) __obj.updateDynamic("folderColorPalette")(folderColorPalette.asInstanceOf[js.Any])
     if (importFormats != null) __obj.updateDynamic("importFormats")(importFormats.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCurrentAppInstalled)) __obj.updateDynamic("isCurrentAppInstalled")(isCurrentAppInstalled.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCurrentAppInstalled)) __obj.updateDynamic("isCurrentAppInstalled")(isCurrentAppInstalled.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
     if (largestChangeId != null) __obj.updateDynamic("largestChangeId")(largestChangeId.asInstanceOf[js.Any])

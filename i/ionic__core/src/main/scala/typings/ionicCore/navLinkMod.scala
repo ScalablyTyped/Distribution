@@ -1,5 +1,6 @@
 package typings.ionicCore
 
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.interfaceMod.RouterDirection
 import typings.ionicCore.mod.ComponentProps
 import typings.ionicCore.navInterfaceMod.NavComponent
@@ -24,6 +25,10 @@ object navLinkMod extends js.Object {
     var componentProps: js.UndefOr[ComponentProps[Null]] = js.native
     var el: HTMLElement = js.native
     var onClick: js.Any = js.native
+    /**
+      * The transition animation when navigating to another page.
+      */
+    var routerAnimation: js.UndefOr[AnimationBuilder] = js.native
     /**
       * The transition direction when navigating to another page.
       */

@@ -11,7 +11,7 @@ trait Classes[S /* <: Styles[ClassNames] | (js.Function1[/* theme */ js.Any, Sty
 
 object Classes {
   @scala.inline
-  def apply[S, ClassNames](classes: typings.jss.mod.Classes[ClassNames | (/* keyof std.ReturnType<S> */ String)]): Classes[S, ClassNames] = {
+  def apply[/* <: typings.jss.mod.Styles[ClassNames] | (js.Function1[/ * theme * / js.Any, typings.jss.mod.Styles[ClassNames]]) */ S, /* <: java.lang.String | scala.Double | js.Symbol */ ClassNames](classes: typings.jss.mod.Classes[ClassNames | (/* keyof std.ReturnType<S> */ String)]): Classes[S, ClassNames] = {
     val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Classes[S, ClassNames]]
   }

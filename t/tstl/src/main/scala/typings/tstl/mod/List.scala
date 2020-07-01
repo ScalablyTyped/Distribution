@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Default Constructor.
   */
 class List[T] ()
-  extends typings.tstl.tstlMod.List[T] {
+  extends typings.tstl.tstlModuleMod.List[T] {
   /**
     * Initializer Constructor.
     *
@@ -53,7 +53,7 @@ object List extends js.Object {
     */
   @js.native
   class Iterator[T] protected ()
-    extends typings.tstl.tstlMod.List.Iterator[T]
+    extends typings.tstl.tstlModuleMod.List.Iterator[T]
   
   /**
     * Reverse iterator of {@link List}

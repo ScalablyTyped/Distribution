@@ -82,7 +82,7 @@ object SchemaAlert {
     if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
     if (customerId != null) __obj.updateDynamic("customerId")(customerId.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
     if (securityInvestigationToolLink != null) __obj.updateDynamic("securityInvestigationToolLink")(securityInvestigationToolLink.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])

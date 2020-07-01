@@ -51,7 +51,7 @@ trait SelectComponents[OptionType /* <: OptionTypeBase */] extends js.Object {
 
 object SelectComponents {
   @scala.inline
-  def apply[OptionType](
+  def apply[/* <: typings.reactSelect.typesMod.OptionTypeBase */ OptionType](
     Control: ComponentType[ControlProps[OptionType]],
     CrossIcon: ComponentType[_],
     DownChevron: ComponentType[_],

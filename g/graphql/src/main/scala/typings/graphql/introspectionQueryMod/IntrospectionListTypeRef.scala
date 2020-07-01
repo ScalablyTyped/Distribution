@@ -12,7 +12,7 @@ trait IntrospectionListTypeRef[T /* <: IntrospectionTypeRef */] extends js.Objec
 
 object IntrospectionListTypeRef {
   @scala.inline
-  def apply[T](kind: LIST, ofType: T): IntrospectionListTypeRef[T] = {
+  def apply[/* <: typings.graphql.introspectionQueryMod.IntrospectionTypeRef */ T](kind: LIST, ofType: T): IntrospectionListTypeRef[T] = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], ofType = ofType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionListTypeRef[T]]
   }

@@ -19,7 +19,7 @@ trait LongText[T /* <: SlickData */] extends Editor[T] {
 
 object LongText {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.slickgrid.Slick.SlickData */ T](
     applyValue: (T, String) => Unit,
     cancel: () => Unit,
     destroy: () => Unit,

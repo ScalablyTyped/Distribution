@@ -13,6 +13,10 @@ trait GeoJSONSourceOptions extends js.Object {
   var buffer: js.UndefOr[Double] = js.undefined
   var cluster: js.UndefOr[Double | Boolean] = js.undefined
   var clusterMaxZoom: js.UndefOr[Double] = js.undefined
+  /**
+    * Minimum number of points necessary to form a cluster if clustering is enabled. Defaults to `2`.
+    */
+  var clusterMinPoints: js.UndefOr[Double] = js.undefined
   var clusterProperties: js.UndefOr[js.Object] = js.undefined
   var clusterRadius: js.UndefOr[Double] = js.undefined
   var data: js.UndefOr[
@@ -32,6 +36,7 @@ object GeoJSONSourceOptions {
     buffer: js.UndefOr[Double] = js.undefined,
     cluster: Double | Boolean = null,
     clusterMaxZoom: js.UndefOr[Double] = js.undefined,
+    clusterMinPoints: js.UndefOr[Double] = js.undefined,
     clusterProperties: js.Object = null,
     clusterRadius: js.UndefOr[Double] = js.undefined,
     data: (Feature[Geometry, GeoJsonProperties]) | (FeatureCollection[Geometry, GeoJsonProperties]) | String = null,
@@ -46,6 +51,7 @@ object GeoJSONSourceOptions {
     if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.get.asInstanceOf[js.Any])
     if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
     if (!js.isUndefined(clusterMaxZoom)) __obj.updateDynamic("clusterMaxZoom")(clusterMaxZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clusterMinPoints)) __obj.updateDynamic("clusterMinPoints")(clusterMinPoints.get.asInstanceOf[js.Any])
     if (clusterProperties != null) __obj.updateDynamic("clusterProperties")(clusterProperties.asInstanceOf[js.Any])
     if (!js.isUndefined(clusterRadius)) __obj.updateDynamic("clusterRadius")(clusterRadius.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])

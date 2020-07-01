@@ -57,7 +57,7 @@ object SchemaSiteSummaryResponse {
     if (lastChangeTime != null) __obj.updateDynamic("lastChangeTime")(lastChangeTime.asInstanceOf[js.Any])
     if (reportUrl != null) __obj.updateDynamic("reportUrl")(reportUrl.asInstanceOf[js.Any])
     if (reviewedSite != null) __obj.updateDynamic("reviewedSite")(reviewedSite.asInstanceOf[js.Any])
-    if (!js.isUndefined(underReview)) __obj.updateDynamic("underReview")(underReview.asInstanceOf[js.Any])
+    if (!js.isUndefined(underReview)) __obj.updateDynamic("underReview")(underReview.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSiteSummaryResponse]
   }
 }

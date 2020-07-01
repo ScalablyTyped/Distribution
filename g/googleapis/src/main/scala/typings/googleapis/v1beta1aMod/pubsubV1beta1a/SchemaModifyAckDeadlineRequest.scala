@@ -37,13 +37,13 @@ trait SchemaModifyAckDeadlineRequest extends js.Object {
 object SchemaModifyAckDeadlineRequest {
   @scala.inline
   def apply(
-    ackDeadlineSeconds: Int | Double = null,
+    ackDeadlineSeconds: js.UndefOr[Double] = js.undefined,
     ackId: String = null,
     ackIds: js.Array[String] = null,
     subscription: String = null
   ): SchemaModifyAckDeadlineRequest = {
     val __obj = js.Dynamic.literal()
-    if (ackDeadlineSeconds != null) __obj.updateDynamic("ackDeadlineSeconds")(ackDeadlineSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(ackDeadlineSeconds)) __obj.updateDynamic("ackDeadlineSeconds")(ackDeadlineSeconds.get.asInstanceOf[js.Any])
     if (ackId != null) __obj.updateDynamic("ackId")(ackId.asInstanceOf[js.Any])
     if (ackIds != null) __obj.updateDynamic("ackIds")(ackIds.asInstanceOf[js.Any])
     if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])

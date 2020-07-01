@@ -15,7 +15,7 @@ trait UseFiltersOptions[D /* <: js.Object */] extends js.Object {
 
 object UseFiltersOptions {
   @scala.inline
-  def apply[D](
+  def apply[/* <: js.Object */ D](
     autoResetFilters: js.UndefOr[Boolean] = js.undefined,
     defaultCanFilter: js.UndefOr[Boolean] = js.undefined,
     disableFilters: js.UndefOr[Boolean] = js.undefined,

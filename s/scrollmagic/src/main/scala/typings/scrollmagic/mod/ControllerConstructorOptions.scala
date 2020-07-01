@@ -1,11 +1,12 @@
 package typings.scrollmagic.mod
 
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ControllerConstructorOptions extends js.Object {
-  var container: js.UndefOr[String] = js.undefined
+  var container: js.UndefOr[String | Element] = js.undefined
   var globalSceneOptions: js.UndefOr[SceneConstructorOptions] = js.undefined
   var loglevel: js.UndefOr[Double] = js.undefined
   var refreshInterval: js.UndefOr[Double] = js.undefined
@@ -15,7 +16,7 @@ trait ControllerConstructorOptions extends js.Object {
 object ControllerConstructorOptions {
   @scala.inline
   def apply(
-    container: String = null,
+    container: String | Element = null,
     globalSceneOptions: SceneConstructorOptions = null,
     loglevel: js.UndefOr[Double] = js.undefined,
     refreshInterval: js.UndefOr[Double] = js.undefined,

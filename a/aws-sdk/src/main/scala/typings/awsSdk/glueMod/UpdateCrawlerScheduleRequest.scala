@@ -11,7 +11,7 @@ trait UpdateCrawlerScheduleRequest extends js.Object {
     */
   var CrawlerName: NameString = js.native
   /**
-    * The updated cron expression used to specify the schedule. For more information, see Time-Based Schedules for Jobs and Crawlers. For example, to run something every day at 12:15 UTC, specify cron(15 12 * * ? *).
+    * The updated cron expression used to specify the schedule (see Time-Based Schedules for Jobs and Crawlers. For example, to run something every day at 12:15 UTC, you would specify: cron(15 12 * * ? *).
     */
   var Schedule: js.UndefOr[CronExpression] = js.native
 }

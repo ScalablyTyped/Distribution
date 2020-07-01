@@ -13,7 +13,7 @@ trait `0Object`[TN /* <: js.Array[_] */, I /* <: js.Array[_] */, T2 /* <: js.Arr
 
 object `0Object` {
   @scala.inline
-  def apply[TN, I, T2](
+  def apply[/* <: js.Array[_] */ TN, /* <: js.Array[_] */ I, /* <: js.Array[_] */ T2](
     `0`: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias curriable.curriable.GapsOf<T1, T2, curriable.curriable.GapOf<T1, T2, TN, I> extends infer G ? curriable.curriable.Cast<G, std.Array<any>> : never, curriable.curriable.Next<I>> */ js.Object,
     `1`: Concat[TN, Cast[_, js.Array[_]]]
   ): `0Object`[TN, I, T2] = {

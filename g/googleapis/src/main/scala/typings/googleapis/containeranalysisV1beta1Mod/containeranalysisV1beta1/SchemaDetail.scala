@@ -73,7 +73,7 @@ object SchemaDetail {
     if (cpeUri != null) __obj.updateDynamic("cpeUri")(cpeUri.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (fixedLocation != null) __obj.updateDynamic("fixedLocation")(fixedLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(isObsolete)) __obj.updateDynamic("isObsolete")(isObsolete.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObsolete)) __obj.updateDynamic("isObsolete")(isObsolete.get.asInstanceOf[js.Any])
     if (maxAffectedVersion != null) __obj.updateDynamic("maxAffectedVersion")(maxAffectedVersion.asInstanceOf[js.Any])
     if (minAffectedVersion != null) __obj.updateDynamic("minAffectedVersion")(minAffectedVersion.asInstanceOf[js.Any])
     if (packageType != null) __obj.updateDynamic("packageType")(packageType.asInstanceOf[js.Any])

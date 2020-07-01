@@ -1,9 +1,12 @@
 package typings.reactNavigationMaterialBottomTabs
 
 import typings.reactNavigation.mod.CreateNavigatorConfig
+import typings.reactNavigation.mod.NavigationNavigator
 import typings.reactNavigation.mod.NavigationParams
+import typings.reactNavigation.mod.NavigationProp
 import typings.reactNavigation.mod.NavigationRoute
 import typings.reactNavigation.mod.NavigationRouteConfigMap
+import typings.reactNavigation.mod.NavigationState
 import typings.reactNavigation.mod.NavigationTabRouterConfig
 import typings.reactNavigationMaterialBottomTabs.typesMod.NavigationMaterialBottomTabConfig
 import typings.reactNavigationMaterialBottomTabs.typesMod.NavigationMaterialBottomTabOptions
@@ -21,7 +24,7 @@ object mod extends js.Object {
       NavigationTabProp[NavigationRoute[NavigationParams], _], 
       _
     ]
-  ): js.Any = js.native
+  ): NavigationNavigator[_, NavigationProp[NavigationState]] = js.native
   def createMaterialBottomTabNavigator(
     routes: NavigationRouteConfigMap[
       NavigationMaterialBottomTabOptions, 
@@ -34,6 +37,6 @@ object mod extends js.Object {
       NavigationMaterialBottomTabOptions, 
       NavigationTabProp[NavigationRoute[NavigationParams], _]
     ]
-  ): js.Any = js.native
+  ): NavigationNavigator[_, NavigationProp[NavigationState]] = js.native
 }
 

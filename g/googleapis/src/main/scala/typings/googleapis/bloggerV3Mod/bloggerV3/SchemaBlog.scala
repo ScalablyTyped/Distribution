@@ -1,8 +1,8 @@
 package typings.googleapis.bloggerV3Mod.bloggerV3
 
-import typings.googleapis.AnonCountry
-import typings.googleapis.AnonItems
-import typings.googleapis.AnonSelfLink
+import typings.googleapis.anon.Country
+import typings.googleapis.anon.Items
+import typings.googleapis.anon.SelfLink
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ trait SchemaBlog extends js.Object {
   /**
     * The locale this Blog is set to.
     */
-  var locale: js.UndefOr[AnonCountry] = js.native
+  var locale: js.UndefOr[Country] = js.native
   /**
     * The name of this blog. This is displayed as the title.
     */
@@ -36,11 +36,11 @@ trait SchemaBlog extends js.Object {
   /**
     * The container of pages in this blog.
     */
-  var pages: js.UndefOr[AnonSelfLink] = js.native
+  var pages: js.UndefOr[SelfLink] = js.native
   /**
     * The container of posts in this blog.
     */
-  var posts: js.UndefOr[AnonItems] = js.native
+  var posts: js.UndefOr[Items] = js.native
   /**
     * RFC 3339 date-time when this blog was published.
     */
@@ -70,10 +70,10 @@ object SchemaBlog {
     description: String = null,
     id: String = null,
     kind: String = null,
-    locale: AnonCountry = null,
+    locale: Country = null,
     name: String = null,
-    pages: AnonSelfLink = null,
-    posts: AnonItems = null,
+    pages: SelfLink = null,
+    posts: Items = null,
     published: String = null,
     selfLink: String = null,
     status: String = null,

@@ -85,7 +85,7 @@ trait IWidgetTracker[T /* <: Widget */] extends IDisposable {
 
 object IWidgetTracker {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.luminoWidgets.mod.Widget */ T](
     currentChanged: ISignal[IWidgetTracker[T], T | Null],
     dispose: () => Unit,
     filter: js.Function1[/* obj */ T, Boolean] => js.Array[T],

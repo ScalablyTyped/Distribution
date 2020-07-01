@@ -356,7 +356,7 @@ object SchemaJob {
     level: String = null,
     locations: js.Array[String] = null,
     name: String = null,
-    promotionValue: Int | Double = null,
+    promotionValue: js.UndefOr[Double] = js.undefined,
     publishDate: SchemaDate = null,
     qualifications: String = null,
     referenceUrl: String = null,
@@ -396,7 +396,7 @@ object SchemaJob {
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (promotionValue != null) __obj.updateDynamic("promotionValue")(promotionValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(promotionValue)) __obj.updateDynamic("promotionValue")(promotionValue.get.asInstanceOf[js.Any])
     if (publishDate != null) __obj.updateDynamic("publishDate")(publishDate.asInstanceOf[js.Any])
     if (qualifications != null) __obj.updateDynamic("qualifications")(qualifications.asInstanceOf[js.Any])
     if (referenceUrl != null) __obj.updateDynamic("referenceUrl")(referenceUrl.asInstanceOf[js.Any])

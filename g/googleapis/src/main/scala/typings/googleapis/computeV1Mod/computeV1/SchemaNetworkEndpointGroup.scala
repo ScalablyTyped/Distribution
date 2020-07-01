@@ -77,7 +77,7 @@ object SchemaNetworkEndpointGroup {
   @scala.inline
   def apply(
     creationTimestamp: String = null,
-    defaultPort: Int | Double = null,
+    defaultPort: js.UndefOr[Double] = js.undefined,
     description: String = null,
     id: String = null,
     kind: String = null,
@@ -85,13 +85,13 @@ object SchemaNetworkEndpointGroup {
     network: String = null,
     networkEndpointType: String = null,
     selfLink: String = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     subnetwork: String = null,
     zone: String = null
   ): SchemaNetworkEndpointGroup = {
     val __obj = js.Dynamic.literal()
     if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
-    if (defaultPort != null) __obj.updateDynamic("defaultPort")(defaultPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultPort)) __obj.updateDynamic("defaultPort")(defaultPort.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
@@ -99,7 +99,7 @@ object SchemaNetworkEndpointGroup {
     if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
     if (networkEndpointType != null) __obj.updateDynamic("networkEndpointType")(networkEndpointType.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork.asInstanceOf[js.Any])
     if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNetworkEndpointGroup]

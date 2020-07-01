@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SliderProps extends js.Object {
+  var className: js.UndefOr[String] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var format: js.UndefOr[js.Function1[/* value */ Double, js.UndefOr[String | Double]]] = js.undefined
   var handleLabel: js.UndefOr[String] = js.undefined
@@ -26,6 +27,7 @@ object SliderProps {
   @scala.inline
   def apply(
     value: Double,
+    className: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     format: /* value */ Double => js.UndefOr[String | Double] = null,
     handleLabel: String = null,
@@ -41,6 +43,7 @@ object SliderProps {
     tooltip: js.UndefOr[Boolean] = js.undefined
   ): SliderProps = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction1(format))
     if (handleLabel != null) __obj.updateDynamic("handleLabel")(handleLabel.asInstanceOf[js.Any])

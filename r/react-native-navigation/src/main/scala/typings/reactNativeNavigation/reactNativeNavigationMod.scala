@@ -1,6 +1,9 @@
 package typings.reactNativeNavigation
 
+import typings.reactNativeNavigation.commandsObserverMod.CommandsObserver
+import typings.reactNativeNavigation.componentEventsObserverMod.ComponentEventsObserver
 import typings.reactNativeNavigation.constantsMod.NavigationConstants
+import typings.reactNativeNavigation.nativeEventsReceiverMod.NativeEventsReceiver
 import typings.reactNativeNavigation.navigationMod.NavigationRoot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,6 +15,20 @@ object reactNativeNavigationMod extends js.Object {
   @js.native
   class Constants protected ()
     extends typings.reactNativeNavigation.constantsMod.Constants
+  
+  @js.native
+  class EventsRegistry protected ()
+    extends typings.reactNativeNavigation.eventsRegistryMod.EventsRegistry {
+    def this(
+      nativeEventsReceiver: NativeEventsReceiver,
+      commandsObserver: CommandsObserver,
+      componentEventsObserver: ComponentEventsObserver
+    ) = this()
+  }
+  
+  @js.native
+  class NavigationComponent[Props, State, Snapshot] ()
+    extends typings.reactNativeNavigation.navigationComponentMod.NavigationComponent[Props, State, Snapshot]
   
   val Navigation: NavigationRoot = js.native
   /* static members */

@@ -19,7 +19,7 @@ trait ContentProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was 
 
 object ContentProps {
   @scala.inline
-  def apply[T](
+  def apply[/* <: / * import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 * / js.Any */ T](
     value: String,
     AllHTMLAttributes: AllHTMLAttributes[T] = null,
     ClassAttributes: ClassAttributes[T] = null,

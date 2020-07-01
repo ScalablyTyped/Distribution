@@ -21,7 +21,7 @@ trait NullableArraySchema[T]
   def nullable_true(isNullable: `true`): NullableArraySchema[T] = js.native
   def of[U](`type`: Schema[U]): NullableArraySchema[U] = js.native
   def optional(): NotRequiredNullableArraySchema[T] = js.native
-  def required(): NullableArraySchema[T] = js.native
-  def required(message: TestOptionsMessage[js.Object, _]): NullableArraySchema[T] = js.native
+  def required(): ArraySchema[T] = js.native
+  def required(message: TestOptionsMessage[js.Object, _]): ArraySchema[T] = js.native
 }
 

@@ -14,6 +14,8 @@ trait keyinSwiperEventvoid extends js.Object {
   var click: js.UndefOr[js.Function0[Unit]] = js.undefined
   var doubleTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   var fromEdge: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var hashChange: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var hashSet: js.UndefOr[js.Function0[Unit]] = js.undefined
   var imagesReady: js.UndefOr[js.Function0[Unit]] = js.undefined
   var init: js.UndefOr[js.Function0[Unit]] = js.undefined
   var lazyImageLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -56,6 +58,8 @@ object keyinSwiperEventvoid {
     click: () => Unit = null,
     doubleTap: () => Unit = null,
     fromEdge: () => Unit = null,
+    hashChange: () => Unit = null,
+    hashSet: () => Unit = null,
     imagesReady: () => Unit = null,
     init: () => Unit = null,
     lazyImageLoad: () => Unit = null,
@@ -95,6 +99,8 @@ object keyinSwiperEventvoid {
     if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction0(click))
     if (doubleTap != null) __obj.updateDynamic("doubleTap")(js.Any.fromFunction0(doubleTap))
     if (fromEdge != null) __obj.updateDynamic("fromEdge")(js.Any.fromFunction0(fromEdge))
+    if (hashChange != null) __obj.updateDynamic("hashChange")(js.Any.fromFunction0(hashChange))
+    if (hashSet != null) __obj.updateDynamic("hashSet")(js.Any.fromFunction0(hashSet))
     if (imagesReady != null) __obj.updateDynamic("imagesReady")(js.Any.fromFunction0(imagesReady))
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction0(init))
     if (lazyImageLoad != null) __obj.updateDynamic("lazyImageLoad")(js.Any.fromFunction0(lazyImageLoad))

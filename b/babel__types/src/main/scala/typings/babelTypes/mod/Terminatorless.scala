@@ -53,7 +53,7 @@ object Terminatorless {
   }
   @scala.inline
   def YieldExpression_(
-    delegate: js.Any,
+    delegate: Boolean,
     `type`: YieldExpression,
     argument: Expression = null,
     end: Double = null.asInstanceOf[Double],

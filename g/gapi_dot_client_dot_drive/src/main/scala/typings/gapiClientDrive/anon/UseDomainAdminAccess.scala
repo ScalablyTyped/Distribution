@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 trait UseDomainAdminAccess extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[String] = js.undefined
+  /** The ID of the shared drive. */
+  var driveId: String
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
@@ -15,26 +17,21 @@ trait UseDomainAdminAccess extends js.Object {
   var oauth_token: js.UndefOr[String] = js.undefined
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-    * Overrides userIp if both are provided.
-    */
+  /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
-  /** The ID of the Team Drive */
-  var teamDriveId: String
   /**
-    * Whether the request should be treated as if it was issued by a domain administrator; if set to true, then the requester will be granted access if they
-    * are an administrator of the domain to which the Team Drive belongs.
+    * Issue the request as a domain administrator; if set to true, then the requester will be granted access if they are an administrator of the domain to
+    * which the shared drive belongs.
     */
   var useDomainAdminAccess: js.UndefOr[Boolean] = js.undefined
-  /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
+  /** Deprecated. Please use quotaUser instead. */
   var userIp: js.UndefOr[String] = js.undefined
 }
 
 object UseDomainAdminAccess {
   @scala.inline
   def apply(
-    teamDriveId: String,
+    driveId: String,
     alt: String = null,
     fields: String = null,
     key: String = null,
@@ -44,7 +41,7 @@ object UseDomainAdminAccess {
     useDomainAdminAccess: js.UndefOr[Boolean] = js.undefined,
     userIp: String = null
   ): UseDomainAdminAccess = {
-    val __obj = js.Dynamic.literal(teamDriveId = teamDriveId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(driveId = driveId.asInstanceOf[js.Any])
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

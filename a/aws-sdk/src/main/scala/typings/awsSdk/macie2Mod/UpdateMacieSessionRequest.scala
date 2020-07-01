@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateMacieSessionRequest extends js.Object {
   /**
-    * Specifies how often to publish findings for the account. This includes adding findings to AWS Security Hub and exporting finding events to Amazon CloudWatch.
+    * Specifies how often to publish updates to policy findings for the account. This includes publishing updates to AWS Security Hub and Amazon EventBridge (formerly called Amazon CloudWatch Events).
     */
   var findingPublishingFrequency: js.UndefOr[FindingPublishingFrequency] = js.native
   /**

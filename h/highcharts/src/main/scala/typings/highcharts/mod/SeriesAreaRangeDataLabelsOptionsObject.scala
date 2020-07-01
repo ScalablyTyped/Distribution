@@ -12,7 +12,7 @@ trait SeriesAreaRangeDataLabelsOptionsObject extends js.Object {
     * dictates how to align it inside the box, as given with the inside option.
     * Can be one of `left`, `center` or `right`.
     */
-  var align: js.UndefOr[AlignValue | Null] = js.undefined
+  var align: js.UndefOr[String] = js.undefined
   /**
     * (Highcharts, Highstock) Whether to allow data labels to overlap. To make
     * the labels less sensitive for overlapping, the dataLabels.padding can be
@@ -187,7 +187,7 @@ trait SeriesAreaRangeDataLabelsOptionsObject extends js.Object {
     * data, for instance in a column chart, the label is above positive values
     * and below negative values.
     */
-  var verticalAlign: js.UndefOr[VerticalAlignValue | Null] = js.undefined
+  var verticalAlign: js.UndefOr[String] = js.undefined
   /**
     * (Highcharts, Highstock) The x position offset of the label relative to
     * the point in pixels.
@@ -229,7 +229,7 @@ trait SeriesAreaRangeDataLabelsOptionsObject extends js.Object {
 object SeriesAreaRangeDataLabelsOptionsObject {
   @scala.inline
   def apply(
-    align: js.UndefOr[Null | AlignValue] = js.undefined,
+    align: String = null,
     allowOverlap: js.UndefOr[Boolean] = js.undefined,
     backgroundColor: ColorString | GradientColorObject | PatternObject = null,
     borderColor: ColorString | GradientColorObject | PatternObject = null,
@@ -255,7 +255,7 @@ object SeriesAreaRangeDataLabelsOptionsObject {
     style: CSSObject = null,
     textPath: DataLabelsTextPathOptionsObject = null,
     useHTML: js.UndefOr[Boolean] = js.undefined,
-    verticalAlign: js.UndefOr[Null | VerticalAlignValue] = js.undefined,
+    verticalAlign: String = null,
     x: js.UndefOr[Double] = js.undefined,
     xHigh: js.UndefOr[Double] = js.undefined,
     xLow: js.UndefOr[Double] = js.undefined,
@@ -265,7 +265,7 @@ object SeriesAreaRangeDataLabelsOptionsObject {
     z: js.UndefOr[Double] = js.undefined
   ): SeriesAreaRangeDataLabelsOptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(align)) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (!js.isUndefined(allowOverlap)) __obj.updateDynamic("allowOverlap")(allowOverlap.get.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
@@ -291,7 +291,7 @@ object SeriesAreaRangeDataLabelsOptionsObject {
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (textPath != null) __obj.updateDynamic("textPath")(textPath.asInstanceOf[js.Any])
     if (!js.isUndefined(useHTML)) __obj.updateDynamic("useHTML")(useHTML.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(verticalAlign)) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
+    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
     if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
     if (!js.isUndefined(xHigh)) __obj.updateDynamic("xHigh")(xHigh.get.asInstanceOf[js.Any])
     if (!js.isUndefined(xLow)) __obj.updateDynamic("xLow")(xLow.get.asInstanceOf[js.Any])

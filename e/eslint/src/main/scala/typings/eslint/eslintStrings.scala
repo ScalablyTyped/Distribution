@@ -45,6 +45,9 @@ object eslintStrings {
   sealed trait CatchClause extends NodeTypes
   
   @js.native
+  sealed trait ChainExpression extends NodeTypes
+  
+  @js.native
   sealed trait ClassBody extends NodeTypes
   
   @js.native
@@ -340,6 +343,8 @@ object eslintStrings {
   def CallExpression: CallExpression = "CallExpression".asInstanceOf[CallExpression]
   @scala.inline
   def CatchClause: CatchClause = "CatchClause".asInstanceOf[CatchClause]
+  @scala.inline
+  def ChainExpression: ChainExpression = "ChainExpression".asInstanceOf[ChainExpression]
   @scala.inline
   def ClassBody: ClassBody = "ClassBody".asInstanceOf[ClassBody]
   @scala.inline

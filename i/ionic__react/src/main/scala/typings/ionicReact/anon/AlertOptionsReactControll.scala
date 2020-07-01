@@ -7,7 +7,7 @@ import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.componentsMod.global.HTMLIonAlertElement
 import typings.ionicCore.mod.Mode
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
-import typings.ionicCore.typesMod.IonicSafeString
+import typings.ionicCore.sanitizationMod.IonicSafeString
 import typings.react.mod.Key
 import typings.react.mod.Ref
 import typings.react.mod.RefObject

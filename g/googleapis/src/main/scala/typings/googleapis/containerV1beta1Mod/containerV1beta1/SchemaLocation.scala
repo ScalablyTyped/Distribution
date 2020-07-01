@@ -30,7 +30,7 @@ object SchemaLocation {
   def apply(name: String = null, recommended: js.UndefOr[Boolean] = js.undefined, `type`: String = null): SchemaLocation = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(recommended)) __obj.updateDynamic("recommended")(recommended.asInstanceOf[js.Any])
+    if (!js.isUndefined(recommended)) __obj.updateDynamic("recommended")(recommended.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLocation]
   }

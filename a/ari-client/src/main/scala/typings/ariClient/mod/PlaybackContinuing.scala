@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PlaybackContinuing extends Event {
-  /* Properties */
+  /**
+    * Playback control object.
+    */
   var playback: Playback
 }
 

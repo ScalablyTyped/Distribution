@@ -13,7 +13,7 @@ trait ActionMeta[OptionType /* <: OptionTypeBase */] extends js.Object {
 
 object ActionMeta {
   @scala.inline
-  def apply[OptionType](
+  def apply[/* <: typings.reactSelect.typesMod.OptionTypeBase */ OptionType](
     action: ActionTypes,
     name: String = null,
     option: OptionType = null,

@@ -21,9 +21,9 @@ trait SchemaManualScaling extends js.Object {
 
 object SchemaManualScaling {
   @scala.inline
-  def apply(instances: Int | Double = null): SchemaManualScaling = {
+  def apply(instances: js.UndefOr[Double] = js.undefined): SchemaManualScaling = {
     val __obj = js.Dynamic.literal()
-    if (instances != null) __obj.updateDynamic("instances")(instances.asInstanceOf[js.Any])
+    if (!js.isUndefined(instances)) __obj.updateDynamic("instances")(instances.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaManualScaling]
   }
 }

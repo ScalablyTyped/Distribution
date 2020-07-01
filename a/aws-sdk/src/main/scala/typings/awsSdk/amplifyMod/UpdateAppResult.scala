@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateAppResult extends js.Object {
   /**
-    *  App structure for the updated App. 
+    *  Represents the updated Amplify app. 
     */
   var app: App = js.native
 }

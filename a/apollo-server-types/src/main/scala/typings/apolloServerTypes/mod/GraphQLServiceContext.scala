@@ -12,7 +12,7 @@ trait GraphQLServiceContext extends js.Object {
   var logger: Logger
   var persistedQueries: js.UndefOr[Cache] = js.undefined
   var schema: GraphQLSchema
-  var schemaHash: String
+  var schemaHash: SchemaHash
 }
 
 object GraphQLServiceContext {
@@ -21,7 +21,7 @@ object GraphQLServiceContext {
     engine: ApiKeyHash,
     logger: Logger,
     schema: GraphQLSchema,
-    schemaHash: String,
+    schemaHash: SchemaHash,
     persistedQueries: Cache = null
   ): GraphQLServiceContext = {
     val __obj = js.Dynamic.literal(engine = engine.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], schemaHash = schemaHash.asInstanceOf[js.Any])

@@ -6,6 +6,7 @@ import typings.angularCore.mod.EventEmitter
 import typings.angularCore.mod.NgZone
 import typings.ionicCore.ionicCoreStrings.off
 import typings.ionicCore.ionicCoreStrings.on
+import typings.ionicCore.mod.AutocompleteTypes
 import typings.ionicCore.mod.TextFieldTypes
 import typings.std.CustomEvent
 import typings.std.HTMLElement
@@ -28,7 +29,7 @@ class IonInput protected ()
     * Indicates whether the value of the control can be automatically completed by the browser.
     */
   /* CompleteClass */
-  override var autocomplete: on | off = js.native
+  override var autocomplete: AutocompleteTypes = js.native
   /**
     * Whether auto correction should be enabled when the user is entering/editing the text value.
     */

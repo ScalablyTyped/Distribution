@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashPartition extends js.Object {
+trait LodashPartition extends LodashConvertible {
   def apply[T](callback: ValueIteratee[T]): js.Tuple2[js.Array[T], js.Array[T]] = js.native
   def apply[T /* <: js.Object */](
     callback: ValueIteratee[

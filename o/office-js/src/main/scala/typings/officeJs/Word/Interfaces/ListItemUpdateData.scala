@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the ListItem object, for use in "listItem.set({ ... })". */
+/** An interface for updating data on the ListItem object, for use in `listItem.set({ ... })`. */
 trait ListItemUpdateData extends js.Object {
   /**
     *

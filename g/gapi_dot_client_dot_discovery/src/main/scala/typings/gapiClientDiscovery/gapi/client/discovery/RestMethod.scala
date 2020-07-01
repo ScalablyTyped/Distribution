@@ -1,9 +1,9 @@
 package typings.gapiClientDiscovery.gapi.client.discovery
 
+import org.scalablytyped.runtime.TopLevel
 import typings.gapiClientDiscovery.anon.Accept
 import typings.gapiClientDiscovery.anon.ParameterName
 import typings.gapiClientDiscovery.anon.RefString
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,11 @@ trait RestMethod extends js.Object {
     */
   var parameterOrder: js.UndefOr[js.Array[String]] = js.undefined
   /** Details for all parameters in this method. */
-  var parameters: js.UndefOr[Record[String, JsonSchema]] = js.undefined
+  var parameters: js.UndefOr[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: gapi.client.discovery.gapi.client.discovery.JsonSchema}
+    */ typings.gapiClientDiscovery.gapiClientDiscoveryStrings.RestMethod with TopLevel[js.Any]
+  ] = js.undefined
   /** The URI path of this REST method. Should be used in conjunction with the basePath property at the api-level. */
   var path: js.UndefOr[String] = js.undefined
   /** The schema for the request. */
@@ -53,7 +57,9 @@ object RestMethod {
     id: String = null,
     mediaUpload: Accept = null,
     parameterOrder: js.Array[String] = null,
-    parameters: Record[String, JsonSchema] = null,
+    parameters: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: gapi.client.discovery.gapi.client.discovery.JsonSchema}
+    */ typings.gapiClientDiscovery.gapiClientDiscoveryStrings.RestMethod with TopLevel[js.Any] = null,
     path: String = null,
     request: ParameterName = null,
     response: RefString = null,

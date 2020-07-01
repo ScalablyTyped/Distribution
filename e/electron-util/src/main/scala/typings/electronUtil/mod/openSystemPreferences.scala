@@ -13,9 +13,12 @@ import typings.electronUtil.electronUtilStrings.Media_Descriptions
 import typings.electronUtil.electronUtilStrings.Mouse
 import typings.electronUtil.electronUtilStrings.Privacy
 import typings.electronUtil.electronUtilStrings.Privacy_Accessibility
+import typings.electronUtil.electronUtilStrings.Privacy_Advertising
 import typings.electronUtil.electronUtilStrings.Privacy_AllFiles
-import typings.electronUtil.electronUtilStrings.Privacy_Assistice
+import typings.electronUtil.electronUtilStrings.Privacy_Assistive
+import typings.electronUtil.electronUtilStrings.Privacy_Automation
 import typings.electronUtil.electronUtilStrings.Privacy_Calendars
+import typings.electronUtil.electronUtilStrings.Privacy_Camera
 import typings.electronUtil.electronUtilStrings.Privacy_Contacts
 import typings.electronUtil.electronUtilStrings.Privacy_DesktopFolder
 import typings.electronUtil.electronUtilStrings.Privacy_Diagnostics
@@ -23,6 +26,7 @@ import typings.electronUtil.electronUtilStrings.Privacy_DocumentsFolder
 import typings.electronUtil.electronUtilStrings.Privacy_DownloadsFolder
 import typings.electronUtil.electronUtilStrings.Privacy_LocationServices
 import typings.electronUtil.electronUtilStrings.Privacy_Microphone
+import typings.electronUtil.electronUtilStrings.Privacy_Photos
 import typings.electronUtil.electronUtilStrings.Privacy_Reminders
 import typings.electronUtil.electronUtilStrings.Privacy_ScreenCapture
 import typings.electronUtil.electronUtilStrings.Seeing_Display
@@ -30,7 +34,7 @@ import typings.electronUtil.electronUtilStrings.Seeing_VoiceOver
 import typings.electronUtil.electronUtilStrings.Seeing_Zoom
 import typings.electronUtil.electronUtilStrings.Services_ARDService
 import typings.electronUtil.electronUtilStrings.Services_BluetoothSharing
-import typings.electronUtil.electronUtilStrings.Services_PersonalFileSHaring
+import typings.electronUtil.electronUtilStrings.Services_PersonalFileSharing
 import typings.electronUtil.electronUtilStrings.Services_PrinterSharing
 import typings.electronUtil.electronUtilStrings.Services_RemoteAppleEvent
 import typings.electronUtil.electronUtilStrings.Services_RemoteLogin
@@ -52,12 +56,12 @@ object openSystemPreferences extends js.Object {
   def apply(): js.Promise[Unit] = js.native
   def apply(
     pane: security,
-    section: Advanced | FDE | Firewall | General | Privacy | Privacy_Accessibility | Privacy_Assistice | Privacy_Calendars | Privacy_Contacts | Privacy_Diagnostics | Privacy_LocationServices | Privacy_Microphone | Privacy_Reminders | Privacy_ScreenCapture | Privacy_DesktopFolder | Privacy_DocumentsFolder | Privacy_DownloadsFolder | Privacy_AllFiles
+    section: Advanced | FDE | Firewall | General | Privacy | Privacy_Accessibility | Privacy_Advertising | Privacy_AllFiles | Privacy_Assistive | Privacy_Automation | Privacy_Calendars | Privacy_Camera | Privacy_Contacts | Privacy_DesktopFolder | Privacy_Diagnostics | Privacy_DocumentsFolder | Privacy_DownloadsFolder | Privacy_LocationServices | Privacy_Microphone | Privacy_Photos | Privacy_Reminders | Privacy_ScreenCapture
   ): js.Promise[Unit] = js.native
   def apply(pane: sharing, section: Internet): js.Promise[Unit] = js.native
   def apply(pane: sharing, section: Services_ARDService): js.Promise[Unit] = js.native
   def apply(pane: sharing, section: Services_BluetoothSharing): js.Promise[Unit] = js.native
-  def apply(pane: sharing, section: Services_PersonalFileSHaring): js.Promise[Unit] = js.native
+  def apply(pane: sharing, section: Services_PersonalFileSharing): js.Promise[Unit] = js.native
   def apply(pane: sharing, section: Services_PrinterSharing): js.Promise[Unit] = js.native
   def apply(pane: sharing, section: Services_RemoteAppleEvent): js.Promise[Unit] = js.native
   def apply(pane: sharing, section: Services_RemoteLogin): js.Promise[Unit] = js.native

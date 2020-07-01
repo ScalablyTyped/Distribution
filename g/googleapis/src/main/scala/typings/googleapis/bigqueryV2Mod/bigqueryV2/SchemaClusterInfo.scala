@@ -26,10 +26,14 @@ trait SchemaClusterInfo extends js.Object {
 
 object SchemaClusterInfo {
   @scala.inline
-  def apply(centroidId: String = null, clusterRadius: Int | Double = null, clusterSize: String = null): SchemaClusterInfo = {
+  def apply(
+    centroidId: String = null,
+    clusterRadius: js.UndefOr[Double] = js.undefined,
+    clusterSize: String = null
+  ): SchemaClusterInfo = {
     val __obj = js.Dynamic.literal()
     if (centroidId != null) __obj.updateDynamic("centroidId")(centroidId.asInstanceOf[js.Any])
-    if (clusterRadius != null) __obj.updateDynamic("clusterRadius")(clusterRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(clusterRadius)) __obj.updateDynamic("clusterRadius")(clusterRadius.get.asInstanceOf[js.Any])
     if (clusterSize != null) __obj.updateDynamic("clusterSize")(clusterSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaClusterInfo]
   }

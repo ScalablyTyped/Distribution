@@ -11,7 +11,9 @@ import typings.asana.mod.resources.Stories
 import typings.asana.mod.resources.Tags
 import typings.asana.mod.resources.Tasks
 import typings.asana.mod.resources.Teams
+import typings.asana.mod.resources.UserTaskLists
 import typings.asana.mod.resources.Users
+import typings.asana.mod.resources.Webhooks
 import typings.asana.mod.resources.Workspaces
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -71,10 +73,20 @@ trait Client extends js.Object {
     */
   var teams: Teams = js.native
   /**
+    * An instance of the UserTaskLists resource.
+    * @type {UserTaskLists}
+    */
+  var userTaskLists: UserTaskLists = js.native
+  /**
     * An instance of the Users resource.
     * @type {Users}
     */
   var users: Users = js.native
+  /**
+    * An instance of the Webhooks resource.
+    * @type {Webhooks}
+    */
+  var webhooks: Webhooks = js.native
   /**
     * An instance of the Workspaces resource.
     * @type {Workspaces}

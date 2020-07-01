@@ -27,11 +27,15 @@ trait SchemaColorStop extends js.Object {
 
 object SchemaColorStop {
   @scala.inline
-  def apply(alpha: Int | Double = null, color: SchemaOpaqueColor = null, position: Int | Double = null): SchemaColorStop = {
+  def apply(
+    alpha: js.UndefOr[Double] = js.undefined,
+    color: SchemaOpaqueColor = null,
+    position: js.UndefOr[Double] = js.undefined
+  ): SchemaColorStop = {
     val __obj = js.Dynamic.literal()
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaColorStop]
   }
 }

@@ -26,10 +26,13 @@ trait SchemaDevicesLongRunningOperationResponse extends js.Object {
 
 object SchemaDevicesLongRunningOperationResponse {
   @scala.inline
-  def apply(perDeviceStatus: js.Array[SchemaOperationPerDevice] = null, successCount: Int | Double = null): SchemaDevicesLongRunningOperationResponse = {
+  def apply(
+    perDeviceStatus: js.Array[SchemaOperationPerDevice] = null,
+    successCount: js.UndefOr[Double] = js.undefined
+  ): SchemaDevicesLongRunningOperationResponse = {
     val __obj = js.Dynamic.literal()
     if (perDeviceStatus != null) __obj.updateDynamic("perDeviceStatus")(perDeviceStatus.asInstanceOf[js.Any])
-    if (successCount != null) __obj.updateDynamic("successCount")(successCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(successCount)) __obj.updateDynamic("successCount")(successCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDevicesLongRunningOperationResponse]
   }
 }

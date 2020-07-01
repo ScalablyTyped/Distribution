@@ -15,7 +15,7 @@ object SchemaCountryTargeting {
   def apply(countries: js.Array[String] = null, includeRestOfWorld: js.UndefOr[Boolean] = js.undefined): SchemaCountryTargeting = {
     val __obj = js.Dynamic.literal()
     if (countries != null) __obj.updateDynamic("countries")(countries.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeRestOfWorld)) __obj.updateDynamic("includeRestOfWorld")(includeRestOfWorld.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeRestOfWorld)) __obj.updateDynamic("includeRestOfWorld")(includeRestOfWorld.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCountryTargeting]
   }
 }

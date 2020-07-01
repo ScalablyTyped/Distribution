@@ -1,10 +1,10 @@
 package typings.googleapis.bloggerV3Mod.bloggerV3
 
-import typings.googleapis.AnonIdString
-import typings.googleapis.AnonImage
-import typings.googleapis.AnonItemsSelfLink
-import typings.googleapis.AnonLat
-import typings.googleapis.AnonUrl
+import typings.googleapis.anon.IdString
+import typings.googleapis.anon.Image
+import typings.googleapis.anon.ItemsSelfLink
+import typings.googleapis.anon.Lat
+import typings.googleapis.anon.Url
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,11 +14,11 @@ trait SchemaPost extends js.Object {
   /**
     * The author of this Post.
     */
-  var author: js.UndefOr[AnonImage] = js.native
+  var author: js.UndefOr[Image] = js.native
   /**
     * Data about the blog containing this Post.
     */
-  var blog: js.UndefOr[AnonIdString] = js.native
+  var blog: js.UndefOr[IdString] = js.native
   /**
     * The content of the Post. May contain HTML markup.
     */
@@ -38,7 +38,7 @@ trait SchemaPost extends js.Object {
   /**
     * Display image for the Post.
     */
-  var images: js.UndefOr[js.Array[AnonUrl]] = js.native
+  var images: js.UndefOr[js.Array[Url]] = js.native
   /**
     * The kind of this entity. Always blogger#post
     */
@@ -50,7 +50,7 @@ trait SchemaPost extends js.Object {
   /**
     * The location for geotagged posts.
     */
-  var location: js.UndefOr[AnonLat] = js.native
+  var location: js.UndefOr[Lat] = js.native
   /**
     * RFC 3339 date-time when this Post was published.
     */
@@ -62,7 +62,7 @@ trait SchemaPost extends js.Object {
   /**
     * The container of comments on this Post.
     */
-  var replies: js.UndefOr[AnonItemsSelfLink] = js.native
+  var replies: js.UndefOr[ItemsSelfLink] = js.native
   /**
     * The API REST URL to fetch this resource from.
     */
@@ -92,19 +92,19 @@ trait SchemaPost extends js.Object {
 object SchemaPost {
   @scala.inline
   def apply(
-    author: AnonImage = null,
-    blog: AnonIdString = null,
+    author: Image = null,
+    blog: IdString = null,
     content: String = null,
     customMetaData: String = null,
     etag: String = null,
     id: String = null,
-    images: js.Array[AnonUrl] = null,
+    images: js.Array[Url] = null,
     kind: String = null,
     labels: js.Array[String] = null,
-    location: AnonLat = null,
+    location: Lat = null,
     published: String = null,
     readerComments: String = null,
-    replies: AnonItemsSelfLink = null,
+    replies: ItemsSelfLink = null,
     selfLink: String = null,
     status: String = null,
     title: String = null,

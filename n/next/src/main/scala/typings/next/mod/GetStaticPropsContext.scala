@@ -13,7 +13,7 @@ trait GetStaticPropsContext[Q /* <: ParsedUrlQuery */] extends js.Object {
 
 object GetStaticPropsContext {
   @scala.inline
-  def apply[Q](params: Q = null, preview: js.UndefOr[Boolean] = js.undefined, previewData: js.Any = null): GetStaticPropsContext[Q] = {
+  def apply[/* <: typings.node.querystringMod.ParsedUrlQuery */ Q](params: Q = null, preview: js.UndefOr[Boolean] = js.undefined, previewData: js.Any = null): GetStaticPropsContext[Q] = {
     val __obj = js.Dynamic.literal()
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (!js.isUndefined(preview)) __obj.updateDynamic("preview")(preview.get.asInstanceOf[js.Any])

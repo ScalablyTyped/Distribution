@@ -1,6 +1,12 @@
 package typings.antDesignProLayout.topNavHeaderMod
 
 import typings.antDesignProLayout.antDesignProLayoutBooleans.`false`
+import typings.antDesignProLayout.antDesignProLayoutStrings.lg
+import typings.antDesignProLayout.antDesignProLayoutStrings.md
+import typings.antDesignProLayout.antDesignProLayoutStrings.sm
+import typings.antDesignProLayout.antDesignProLayoutStrings.xl
+import typings.antDesignProLayout.antDesignProLayoutStrings.xs
+import typings.antDesignProLayout.antDesignProLayoutStrings.xxl
 import typings.antDesignProLayout.siderMenuSiderMenuMod.SiderMenuProps
 import typings.antDesignProLayout.typingsMod.WithFalse
 import typings.react.mod.CSSProperties
@@ -20,7 +26,7 @@ trait TopNavHeaderProps extends SiderMenuProps {
 object TopNavHeaderProps {
   @scala.inline
   def apply(
-    breakpoint: (/* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SiderProps * / any['breakpoint'] */ js.Any) | `false` = null,
+    breakpoint: xs | sm | md | lg | xl | xxl | `false` = null,
     className: String = null,
     hide: js.UndefOr[Boolean] = js.undefined,
     links: js.Array[ReactNode] = null,

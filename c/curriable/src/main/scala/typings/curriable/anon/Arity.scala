@@ -12,7 +12,7 @@ trait Arity[Fn /* <: Handler */] extends js.Object {
 
 object Arity {
   @scala.inline
-  def apply[Fn](arity: Double, fn: Fn): Arity[Fn] = {
+  def apply[/* <: typings.curriable.mod.Handler */ Fn](arity: Double, fn: Fn): Arity[Fn] = {
     val __obj = js.Dynamic.literal(arity = arity.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arity[Fn]]
   }

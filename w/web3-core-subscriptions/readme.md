@@ -1,7 +1,7 @@
 
 # Scala.js typings for web3-core-subscriptions
 
-Typings are for version 1.2.8
+Typings are for version 1.2.9
 
 ## Library description:
 Manages web3 subscriptions. This is an internal package.

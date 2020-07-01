@@ -1,7 +1,7 @@
 
 # Scala.js typings for typeform__embed
 
-Typings are for version 0.16
+Typings are for version 0.22
 
 ## Library description:
 Library to embed Typeforms in your website

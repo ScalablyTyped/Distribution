@@ -1,6 +1,6 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
-import typings.googleapis.AnonLabels
+import typings.googleapis.anon.Labels
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait SchemaModelDefinition extends js.Object {
     * options are immutable for subsequent training runs. Default values are
     * used for any options not specified in the input query.
     */
-  var modelOptions: js.UndefOr[AnonLabels] = js.native
+  var modelOptions: js.UndefOr[Labels] = js.native
   /**
     * [Output-only, Beta] Information about ml training runs, each training run
     * comprises of multiple iterations and there may be multiple training runs
@@ -24,7 +24,7 @@ trait SchemaModelDefinition extends js.Object {
 
 object SchemaModelDefinition {
   @scala.inline
-  def apply(modelOptions: AnonLabels = null, trainingRuns: js.Array[SchemaBqmlTrainingRun] = null): SchemaModelDefinition = {
+  def apply(modelOptions: Labels = null, trainingRuns: js.Array[SchemaBqmlTrainingRun] = null): SchemaModelDefinition = {
     val __obj = js.Dynamic.literal()
     if (modelOptions != null) __obj.updateDynamic("modelOptions")(modelOptions.asInstanceOf[js.Any])
     if (trainingRuns != null) __obj.updateDynamic("trainingRuns")(trainingRuns.asInstanceOf[js.Any])

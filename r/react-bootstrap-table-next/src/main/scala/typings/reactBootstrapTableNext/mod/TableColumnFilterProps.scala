@@ -19,7 +19,7 @@ trait TableColumnFilterProps[FT, T /* <: js.Object */] extends js.Object {
 
 object TableColumnFilterProps {
   @scala.inline
-  def apply[FT, T](
+  def apply[FT, /* <: js.Object */ T](
     className: String = null,
     defaultValue: js.Any = null,
     delay: js.UndefOr[Double] = js.undefined,

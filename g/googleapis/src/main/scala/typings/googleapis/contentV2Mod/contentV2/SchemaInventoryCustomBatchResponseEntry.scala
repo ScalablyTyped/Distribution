@@ -26,9 +26,9 @@ trait SchemaInventoryCustomBatchResponseEntry extends js.Object {
 
 object SchemaInventoryCustomBatchResponseEntry {
   @scala.inline
-  def apply(batchId: Int | Double = null, errors: SchemaErrors = null, kind: String = null): SchemaInventoryCustomBatchResponseEntry = {
+  def apply(batchId: js.UndefOr[Double] = js.undefined, errors: SchemaErrors = null, kind: String = null): SchemaInventoryCustomBatchResponseEntry = {
     val __obj = js.Dynamic.literal()
-    if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchId)) __obj.updateDynamic("batchId")(batchId.get.asInstanceOf[js.Any])
     if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInventoryCustomBatchResponseEntry]

@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 /**
   * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
   *
+  * In version 8.11.0: deleted
   * In version 8.9.0: added public
   * In version 7.18.0: introduced
   */
@@ -47,7 +48,7 @@ object ODataEntity extends js.Object {
     * of the parent ConsumedODataService element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.18.0 and higher
+    *  7.18.0 to 8.10.0
     */
   def createIn(container: typings.mendixmodelsdk.restMod.rest.ConsumedODataService): typings.mendixmodelsdk.restMod.rest.ODataEntity = js.native
 }

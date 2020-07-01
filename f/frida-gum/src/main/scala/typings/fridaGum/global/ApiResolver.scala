@@ -31,7 +31,8 @@ class ApiResolver protected ()
   /**
     * Performs the resolver-specific query.
     *
-    * @param query Resolver-specific query.
+    * @param query Resolver-specific query, optionally suffixed with `/i` to
+    *              perform case-insensitive matching.
     */
   /* CompleteClass */
   override def enumerateMatches(query: String): js.Array[ApiResolverMatch] = js.native

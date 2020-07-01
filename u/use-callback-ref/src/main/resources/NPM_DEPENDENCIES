@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "use-callback-ref" : "1.2.1"
+      "use-callback-ref" : "1.2.4"
     }
   ],
   "test-dependencies" : [
     {
-      "use-callback-ref" : "1.2.1"
+      "use-callback-ref" : "1.2.4"
     }
   ],
   "compile-devDependencies" : [

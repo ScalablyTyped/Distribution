@@ -1,7 +1,5 @@
 package typings.firebaseAdmin.admin.auth
 
-import typings.firebaseAdmin.authMod.admin.auth.DeleteUsersResult
-import typings.firebaseAdmin.authMod.admin.auth.GetUsersResult
 import typings.firebaseAdmin.authMod.admin.auth.UserIdentifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -121,7 +119,7 @@ trait BaseAuth extends js.Object {
     *     deletions, as well as the array of errors that corresponds to the
     *     failed deletions.
     */
-  def deleteUsers(uids: js.Array[String]): js.Promise[DeleteUsersResult] = js.native
+  def deleteUsers(uids: js.Array[String]): js.Promise[typings.firebaseAdmin.authMod.admin.auth.DeleteUsersResult] = js.native
   /**
     * Generates the out of band email action link to verify the user's ownership
     * of the specified email. The
@@ -344,7 +342,7 @@ trait BaseAuth extends js.Object {
     * @throws FirebaseAuthError If any of the identifiers are invalid or if more than 100
     *     identifiers are specified.
     */
-  def getUsers(identifiers: js.Array[UserIdentifier]): js.Promise[GetUsersResult] = js.native
+  def getUsers(identifiers: js.Array[UserIdentifier]): js.Promise[typings.firebaseAdmin.authMod.admin.auth.GetUsersResult] = js.native
   /**
     * Imports the provided list of users into Firebase Auth.
     * A maximum of 1000 users are allowed to be imported one at a time.

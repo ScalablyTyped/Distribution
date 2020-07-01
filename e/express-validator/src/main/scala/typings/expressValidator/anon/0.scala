@@ -31,7 +31,7 @@ trait `0`[K /* <: /* keyof express-validator.express-validator/src/chain/sanitiz
 
 object `0` {
   @scala.inline
-  def apply[K](
+  def apply[/* <: / * keyof express-validator.express-validator/src/chain/sanitizers.Sanitizers<any> * / typings.expressValidator.expressValidatorStrings.customSanitizer | typings.expressValidator.expressValidatorStrings.blacklist | typings.expressValidator.expressValidatorStrings.escape | typings.expressValidator.expressValidatorStrings.unescape | typings.expressValidator.expressValidatorStrings.ltrim | typings.expressValidator.expressValidatorStrings.normalizeEmail | typings.expressValidator.expressValidatorStrings.rtrim | typings.expressValidator.expressValidatorStrings.stripLow | typings.expressValidator.expressValidatorStrings.toArray | typings.expressValidator.expressValidatorStrings.toBoolean | typings.expressValidator.expressValidatorStrings.toDate | typings.expressValidator.expressValidatorStrings.toFloat | typings.expressValidator.expressValidatorStrings.toInt | typings.expressValidator.expressValidatorStrings.trim | typings.expressValidator.expressValidatorStrings.whitelist */ K](
     options: (Parameters[
       /* import warning: importer.ImportType#apply Failed type conversion: express-validator.express-validator/src/chain/sanitizers.Sanitizers<any>[K] */ js.Any
     ]) | (/* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<express-validator.express-validator/src/chain/sanitizers.Sanitizers<any>[K]>[0] */ js.Any) = null

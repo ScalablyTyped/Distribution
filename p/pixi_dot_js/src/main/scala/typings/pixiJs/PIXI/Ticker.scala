@@ -36,11 +36,12 @@ trait Ticker extends js.Object {
     */
   var autoStart: Boolean = js.native
   /**
-    * Counts the number of listeners on this ticker.
+    * The number of listeners on this ticker, calculated by walking through linked list
     *
-    * @returns {number} The number of listeners on this ticker
+    * @readonly
+    * @member {number}
     */
-  var count: js.Any = js.native
+  val count: Double = js.native
   /**
     * Scaler time elapsed in milliseconds from last frame to this frame.
     * This value is capped by setting {@link PIXI.Ticker#minFPS}

@@ -28,6 +28,10 @@ trait CreateTransformJobRequest extends js.Object {
     */
   var MaxPayloadInMB: js.UndefOr[typings.awsSdk.sagemakerMod.MaxPayloadInMB] = js.native
   /**
+    * Configures the timeout and maximum number of retries for processing a transform job invocation.
+    */
+  var ModelClientConfig: js.UndefOr[typings.awsSdk.sagemakerMod.ModelClientConfig] = js.native
+  /**
     * The name of the model that you want to use for the transform job. ModelName must be the name of an existing Amazon SageMaker model within an AWS Region in an AWS account.
     */
   var ModelName: typings.awsSdk.sagemakerMod.ModelName = js.native
@@ -67,6 +71,7 @@ object CreateTransformJobRequest {
     ExperimentConfig: ExperimentConfig = null,
     MaxConcurrentTransforms: js.UndefOr[MaxConcurrentTransforms] = js.undefined,
     MaxPayloadInMB: js.UndefOr[MaxPayloadInMB] = js.undefined,
+    ModelClientConfig: ModelClientConfig = null,
     Tags: TagList = null
   ): CreateTransformJobRequest = {
     val __obj = js.Dynamic.literal(ModelName = ModelName.asInstanceOf[js.Any], TransformInput = TransformInput.asInstanceOf[js.Any], TransformJobName = TransformJobName.asInstanceOf[js.Any], TransformOutput = TransformOutput.asInstanceOf[js.Any], TransformResources = TransformResources.asInstanceOf[js.Any])
@@ -76,6 +81,7 @@ object CreateTransformJobRequest {
     if (ExperimentConfig != null) __obj.updateDynamic("ExperimentConfig")(ExperimentConfig.asInstanceOf[js.Any])
     if (!js.isUndefined(MaxConcurrentTransforms)) __obj.updateDynamic("MaxConcurrentTransforms")(MaxConcurrentTransforms.get.asInstanceOf[js.Any])
     if (!js.isUndefined(MaxPayloadInMB)) __obj.updateDynamic("MaxPayloadInMB")(MaxPayloadInMB.get.asInstanceOf[js.Any])
+    if (ModelClientConfig != null) __obj.updateDynamic("ModelClientConfig")(ModelClientConfig.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTransformJobRequest]
   }

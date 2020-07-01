@@ -30,7 +30,7 @@ object SchemaInternalIpOwner {
     val __obj = js.Dynamic.literal()
     if (ipCidrRange != null) __obj.updateDynamic("ipCidrRange")(ipCidrRange.asInstanceOf[js.Any])
     if (owners != null) __obj.updateDynamic("owners")(owners.asInstanceOf[js.Any])
-    if (!js.isUndefined(systemOwned)) __obj.updateDynamic("systemOwned")(systemOwned.asInstanceOf[js.Any])
+    if (!js.isUndefined(systemOwned)) __obj.updateDynamic("systemOwned")(systemOwned.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInternalIpOwner]
   }
 }

@@ -6,9 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChannelDestroyed extends Event {
-  /* Properties */
+  /**
+    * Integer representation of the cause of the hangup.
+    */
   var cause: Double
+  /**
+    * Text representation of the cause of the hangup.
+    */
   var cause_txt: String
+  /**
+    * Channel.
+    */
   var channel: Channel
 }
 

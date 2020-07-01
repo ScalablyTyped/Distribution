@@ -1,7 +1,7 @@
 
 # Scala.js typings for statuses
 
-Typings are for version 1.5
+Typings are for version 2.0
 
 ## Library description:
 HTTP status utility

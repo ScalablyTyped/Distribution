@@ -113,7 +113,7 @@ trait ChartSeries extends ClientObject {
   var filtered: Boolean = js.native
   /**
     *
-    * Specifies the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360.Specifies if the negative DataBar has the same fill color as the positive DataBar.
+    * Specifies the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -296,7 +296,7 @@ trait ChartSeries extends ClientObject {
   val points: ChartPointsCollection = js.native
   /**
     *
-    * Specifies the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200.
+    * Specifies the size of the secondary section of either a pie-of-pie chart or a bar-of-pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200.
     *
     * [Api set: ExcelApi 1.8]
     */

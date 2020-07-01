@@ -127,7 +127,7 @@ object SchemaPostalAddress {
     postalCode: String = null,
     recipients: js.Array[String] = null,
     regionCode: String = null,
-    revision: Int | Double = null,
+    revision: js.UndefOr[Double] = js.undefined,
     sortingCode: String = null,
     sublocality: String = null
   ): SchemaPostalAddress = {
@@ -140,7 +140,7 @@ object SchemaPostalAddress {
     if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
     if (recipients != null) __obj.updateDynamic("recipients")(recipients.asInstanceOf[js.Any])
     if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode.asInstanceOf[js.Any])
-    if (revision != null) __obj.updateDynamic("revision")(revision.asInstanceOf[js.Any])
+    if (!js.isUndefined(revision)) __obj.updateDynamic("revision")(revision.get.asInstanceOf[js.Any])
     if (sortingCode != null) __obj.updateDynamic("sortingCode")(sortingCode.asInstanceOf[js.Any])
     if (sublocality != null) __obj.updateDynamic("sublocality")(sublocality.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPostalAddress]

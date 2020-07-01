@@ -31,16 +31,16 @@ trait SchemaQuota extends js.Object {
 object SchemaQuota {
   @scala.inline
   def apply(
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     metric: String = null,
     owner: String = null,
-    usage: Int | Double = null
+    usage: js.UndefOr[Double] = js.undefined
   ): SchemaQuota = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (metric != null) __obj.updateDynamic("metric")(metric.asInstanceOf[js.Any])
     if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (usage != null) __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])
+    if (!js.isUndefined(usage)) __obj.updateDynamic("usage")(usage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQuota]
   }
 }

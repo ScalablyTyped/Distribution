@@ -51,6 +51,10 @@ trait UserOptions extends js.Object {
     */
   var queryVars: js.UndefOr[js.Any] = js.undefined
   /**
+    * When set to `true`, this setting ensures `createReport` throws a `NullishCommandResultError` when the result of an INS, HTML, IMAGE, or LINK command is `null` or `undefined`. This is useful as nullish return values usually indicate a mistake in the template or the invoking code. Defaults to `false`.
+    */
+  var rejectNullish: js.UndefOr[Boolean] = js.undefined
+  /**
     * Custom sandbox. See documentation for details.
     */
   var runJs: js.UndefOr[RunJSFunc] = js.undefined
@@ -72,6 +76,7 @@ object UserOptions {
     noSandbox: js.UndefOr[Boolean] = js.undefined,
     processLineBreaks: js.UndefOr[Boolean] = js.undefined,
     queryVars: js.Any = null,
+    rejectNullish: js.UndefOr[Boolean] = js.undefined,
     runJs: /* o */ Ctx => ModifiedSandbox = null
   ): UserOptions = {
     val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
@@ -83,6 +88,7 @@ object UserOptions {
     if (!js.isUndefined(noSandbox)) __obj.updateDynamic("noSandbox")(noSandbox.get.asInstanceOf[js.Any])
     if (!js.isUndefined(processLineBreaks)) __obj.updateDynamic("processLineBreaks")(processLineBreaks.get.asInstanceOf[js.Any])
     if (queryVars != null) __obj.updateDynamic("queryVars")(queryVars.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectNullish)) __obj.updateDynamic("rejectNullish")(rejectNullish.get.asInstanceOf[js.Any])
     if (runJs != null) __obj.updateDynamic("runJs")(js.Any.fromFunction1(runJs))
     __obj.asInstanceOf[UserOptions]
   }

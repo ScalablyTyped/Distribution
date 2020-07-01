@@ -65,6 +65,12 @@ object googlemapsStrings {
   sealed trait clickable_changed extends MarkerChangeOptionEventNames
   
   @js.native
+  sealed trait closeclick extends js.Object
+  
+  @js.native
+  sealed trait content_changed extends js.Object
+  
+  @js.native
   sealed trait cooperative extends GestureHandlingOptions
   
   @js.native
@@ -72,6 +78,9 @@ object googlemapsStrings {
   
   @js.native
   sealed trait dblclick extends MarkerMouseEventNames
+  
+  @js.native
+  sealed trait domready extends js.Object
   
   @js.native
   sealed trait drag extends MarkerMouseEventNames
@@ -303,11 +312,17 @@ object googlemapsStrings {
   @scala.inline
   def clickable_changed: clickable_changed = "clickable_changed".asInstanceOf[clickable_changed]
   @scala.inline
+  def closeclick: closeclick = "closeclick".asInstanceOf[closeclick]
+  @scala.inline
+  def content_changed: content_changed = "content_changed".asInstanceOf[content_changed]
+  @scala.inline
   def cooperative: cooperative = "cooperative".asInstanceOf[cooperative]
   @scala.inline
   def cursor_changed: cursor_changed = "cursor_changed".asInstanceOf[cursor_changed]
   @scala.inline
   def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
+  @scala.inline
+  def domready: domready = "domready".asInstanceOf[domready]
   @scala.inline
   def drag: drag = "drag".asInstanceOf[drag]
   @scala.inline

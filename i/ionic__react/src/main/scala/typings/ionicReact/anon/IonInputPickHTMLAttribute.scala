@@ -3,6 +3,7 @@ package typings.ionicReact.anon
 import org.scalablytyped.runtime.StringDictionary
 import typings.ionicCore.componentsMod.global.HTMLIonInputElement
 import typings.ionicCore.inputInterfaceMod.InputChangeEventDetail
+import typings.ionicCore.mod.AutocompleteTypes
 import typings.ionicCore.mod.Color
 import typings.ionicCore.mod.TextFieldTypes
 import typings.ionicReact.ionicReactStrings.`additions text`
@@ -164,7 +165,7 @@ trait IonInputPickHTMLAttribute extends js.Object {
   /**
     * Indicates whether the value of the control can be automatically completed by the browser.
     */
-  var autocomplete: js.UndefOr[on | off] = js.undefined
+  var autocomplete: js.UndefOr[AutocompleteTypes] = js.undefined
   /**
     * Whether auto correction should be enabled when the user is entering/editing the text value.
     */
@@ -543,7 +544,7 @@ object IonInputPickHTMLAttribute {
     autoCorrect: String = null,
     autoSave: String = null,
     autocapitalize: String = null,
-    autocomplete: on | off = null,
+    autocomplete: AutocompleteTypes = null,
     autocorrect: on | off = null,
     autofocus: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,

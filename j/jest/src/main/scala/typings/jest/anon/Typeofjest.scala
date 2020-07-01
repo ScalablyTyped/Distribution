@@ -1,6 +1,8 @@
 package typings.jest.anon
 
 import typings.jest.jestStrings.get
+import typings.jest.jestStrings.legacy
+import typings.jest.jestStrings.modern
 import typings.jest.jestStrings.set
 import typings.jest.mod.jasmine.CustomMatcherFactories
 import typings.jest.mod.jest.ArgsType
@@ -11,6 +13,7 @@ import typings.jest.mod.jest.MockOptions
 import typings.jest.mod.jest.Mock_
 import typings.jest.mod.jest.NonFunctionPropertyNames
 import typings.jest.mod.jest.SpyInstance
+import typings.std.Date
 import typings.std.InstanceType
 import typings.std.Required
 import typings.std.ReturnType
@@ -94,6 +97,15 @@ trait Typeofjest extends js.Object {
     * Use the automatic mocking system to generate a mocked version of the given module.
     */
   def genMockFromModule[T](moduleName: String): T = js.native
+  /**
+    * When mocking time, Date.now() will also be mocked. If you for some
+    * reason need access to the real current time, you can invoke this
+    * function.
+    *
+    * > Note: This function is only available when using modern fake timers
+    * > implementation
+    */
+  def getRealSystemTime(): Double = js.native
   /**
     * Returns the number of fake timers still left to run.
     */
@@ -181,6 +193,19 @@ trait Typeofjest extends js.Object {
     */
   def setMock[T](moduleName: String, moduleExports: T): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
   /**
+    * Set the current system time used by fake timers. Simulates a user
+    * changing the system clock while your program is running. It affects the
+    * current time but it does not in itself cause e.g. timers to fire; they
+    * will fire exactly as they would have done without the call to
+    * jest.setSystemTime().
+    *
+    * > Note: This function is only available when using modern fake timers
+    * > implementation
+    */
+  def setSystemTime(): Unit = js.native
+  def setSystemTime(now: Double): Unit = js.native
+  def setSystemTime(now: Date): Unit = js.native
+  /**
     * Set the default timeout interval for tests and before/after hooks in milliseconds.
     * Note: The default timeout interval is 5 seconds if this method is not called.
     */
@@ -244,6 +269,10 @@ trait Typeofjest extends js.Object {
     * Instructs Jest to use fake versions of the standard timer functions.
     */
   def useFakeTimers(): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
+  @JSName("useFakeTimers")
+  def useFakeTimers_legacy(implementation: legacy): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
+  @JSName("useFakeTimers")
+  def useFakeTimers_modern(implementation: modern): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
   /**
     * Instructs Jest to use the real versions of the standard timer functions.
     */

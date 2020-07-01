@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl", "DomainError")
 @js.native
 class DomainError protected ()
-  extends typings.tstl.exceptionMod.DomainError {
+  extends typings.tstl.tstlModuleMod.DomainError {
   /**
     * Initializer Constructor.
     *

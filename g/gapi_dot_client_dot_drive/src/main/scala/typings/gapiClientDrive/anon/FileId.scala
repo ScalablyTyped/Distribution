@@ -1,5 +1,6 @@
 package typings.gapiClientDrive.anon
 
+import typings.gapiClientDrive.gapi.client.drive.Comment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,12 +18,11 @@ trait FileId extends js.Object {
   var oauth_token: js.UndefOr[String] = js.undefined
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-    * Overrides userIp if both are provided.
-    */
+  /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
-  /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
+  /** Request body */
+  var resource: Comment
+  /** Deprecated. Please use quotaUser instead. */
   var userIp: js.UndefOr[String] = js.undefined
 }
 
@@ -30,6 +30,7 @@ object FileId {
   @scala.inline
   def apply(
     fileId: String,
+    resource: Comment,
     alt: String = null,
     fields: String = null,
     key: String = null,
@@ -38,7 +39,7 @@ object FileId {
     quotaUser: String = null,
     userIp: String = null
   ): FileId = {
-    val __obj = js.Dynamic.literal(fileId = fileId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fileId = fileId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

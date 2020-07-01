@@ -1,5 +1,6 @@
 package typings.ffiNapi.mod
 
+import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
@@ -17,15 +18,21 @@ trait Library
   * @param lib hash that will be extended
   */
 Instantiable1[/* libFile */ String, js.Any]
-     with Instantiable2[/* libFile */ String, /* funcs */ StringDictionary[js.Array[js.Any]], js.Any]
+     with Instantiable0[js.Any]
+     with Instantiable2[
+      (/* libFile */ Null) | (/* libFile */ String), 
+      /* funcs */ StringDictionary[js.Array[js.Any]], 
+      js.Any
+    ]
      with Instantiable3[
-      /* libFile */ String, 
+      (/* libFile */ Null) | (/* libFile */ String), 
       /* funcs */ StringDictionary[js.Array[js.Any]], 
       /* lib */ js.Object, 
       js.Any
     ] {
   /** The extension to use on libraries. */
   var EXT: String = js.native
+  def apply(): js.Any = js.native
   /**
     * @param libFile name of library
     * @param funcs hash of [retType, [...argType], opts?: {abi?, async?, varargs?}]
@@ -34,6 +41,8 @@ Instantiable1[/* libFile */ String, js.Any]
   def apply(libFile: String): js.Any = js.native
   def apply(libFile: String, funcs: StringDictionary[js.Array[_]]): js.Any = js.native
   def apply(libFile: String, funcs: StringDictionary[js.Array[_]], lib: js.Object): js.Any = js.native
+  def apply(libFile: Null, funcs: StringDictionary[js.Array[_]]): js.Any = js.native
+  def apply(libFile: Null, funcs: StringDictionary[js.Array[_]], lib: js.Object): js.Any = js.native
 }
 
 @JSImport("ffi-napi", "Library")

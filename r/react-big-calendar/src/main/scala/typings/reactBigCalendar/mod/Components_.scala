@@ -45,7 +45,7 @@ trait Components_[TEvent /* <: js.Object */] extends js.Object {
 
 object Components_ {
   @scala.inline
-  def apply[TEvent](
+  def apply[/* <: js.Object */ TEvent](
     agenda: Date = null,
     dateCellWrapper: SFC[js.Object] | (Component[js.Object, js.Object, _]) | (ComponentClass[js.Object, ComponentState]) | Element = null,
     day: Header = null,

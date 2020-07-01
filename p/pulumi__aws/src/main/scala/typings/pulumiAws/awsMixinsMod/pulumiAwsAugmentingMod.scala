@@ -47,6 +47,7 @@ import typings.pulumiAws.anon.TypeofCloudTrail
 import typings.pulumiAws.anon.TypeofCloudWatch
 import typings.pulumiAws.anon.TypeofCloudWatchEvents
 import typings.pulumiAws.anon.TypeofCloudWatchLogs
+import typings.pulumiAws.anon.TypeofCodeArtifact
 import typings.pulumiAws.anon.TypeofCodeBuild
 import typings.pulumiAws.anon.TypeofCodeCommit
 import typings.pulumiAws.anon.TypeofCodeDeploy
@@ -113,6 +114,7 @@ import typings.pulumiAws.anon.TypeofGreengrass
 import typings.pulumiAws.anon.TypeofGroundStation
 import typings.pulumiAws.anon.TypeofGuardDuty
 import typings.pulumiAws.anon.TypeofHealth
+import typings.pulumiAws.anon.TypeofHoneycode
 import typings.pulumiAws.anon.TypeofIAM
 import typings.pulumiAws.anon.TypeofImagebuilder
 import typings.pulumiAws.anon.TypeofImportExport
@@ -307,6 +309,7 @@ object pulumiAwsAugmentingMod extends js.Object {
     var CloudWatch: Instantiable0[typings.awsSdk.mod.CloudWatch] | TypeofCloudWatch = js.native
     var CloudWatchEvents: Instantiable0[typings.awsSdk.mod.CloudWatchEvents] | TypeofCloudWatchEvents = js.native
     var CloudWatchLogs: Instantiable0[typings.awsSdk.mod.CloudWatchLogs] | TypeofCloudWatchLogs = js.native
+    var CodeArtifact: Instantiable0[typings.awsSdk.mod.CodeArtifact] | TypeofCodeArtifact = js.native
     var CodeBuild: Instantiable0[typings.awsSdk.mod.CodeBuild] | TypeofCodeBuild = js.native
     var CodeCommit: Instantiable0[typings.awsSdk.mod.CodeCommit] | TypeofCodeCommit = js.native
     var CodeDeploy: Instantiable0[typings.awsSdk.mod.CodeDeploy] | TypeofCodeDeploy = js.native
@@ -384,6 +387,7 @@ object pulumiAwsAugmentingMod extends js.Object {
     var GroundStation: Instantiable0[typings.awsSdk.mod.GroundStation] | TypeofGroundStation = js.native
     var GuardDuty: Instantiable0[typings.awsSdk.mod.GuardDuty] | TypeofGuardDuty = js.native
     var Health: Instantiable0[typings.awsSdk.mod.Health] | TypeofHealth = js.native
+    var Honeycode: Instantiable0[typings.awsSdk.mod.Honeycode] | TypeofHoneycode = js.native
     var HttpRequest: Instantiable2[/* endpoint */ Endpoint, /* region */ String, typings.awsSdk.mod.HttpRequest] = js.native
     var HttpResponse: Instantiable0[typings.awsSdk.mod.HttpResponse] = js.native
     var IAM: Instantiable0[typings.awsSdk.mod.IAM] | TypeofIAM = js.native

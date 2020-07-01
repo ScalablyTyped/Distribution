@@ -1,12 +1,11 @@
 package typings.echarts.echarts.EChartOption
 
 import typings.echarts.anon.AnimationAnimationDelay
+import typings.echarts.anon.AnimationDelayAnimationDelayUpdate
+import typings.echarts.anon.AnimationDelayUpdateAnimationDuration
 import typings.echarts.anon.AreaColorEmphasis
 import typings.echarts.anon.BorderWidth
-import typings.echarts.anon.ExtraCssText
 import typings.echarts.anon.Min
-import typings.echarts.anon.Precision
-import typings.echarts.anon.SymbolSize
 import typings.echarts.echarts.EChartOption.SeriesMap.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -304,21 +303,21 @@ trait SeriesMap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.markArea
     */
-  var markArea: js.UndefOr[AnimationAnimationDelay] = js.undefined
+  var markArea: js.UndefOr[AnimationDelayUpdateAnimationDuration] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-map.markLine
     */
-  var markLine: js.UndefOr[Precision] = js.undefined
+  var markLine: js.UndefOr[AnimationDelayAnimationDelayUpdate] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-map.markPoint
     */
-  var markPoint: js.UndefOr[SymbolSize] = js.undefined
+  var markPoint: js.UndefOr[AnimationAnimationDelay] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -433,7 +432,7 @@ trait SeriesMap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
   /**
     * Distance between component and the top side of the container.
     *
@@ -518,9 +517,9 @@ object SeriesMap_ {
     left: Double | String = null,
     map: String = null,
     mapValueCalculation: String = null,
-    markArea: AnimationAnimationDelay = null,
-    markLine: Precision = null,
-    markPoint: SymbolSize = null,
+    markArea: AnimationDelayUpdateAnimationDuration = null,
+    markLine: AnimationDelayAnimationDelayUpdate = null,
+    markPoint: AnimationAnimationDelay = null,
     name: String = null,
     nameMap: js.Object = null,
     right: Double | String = null,
@@ -530,7 +529,7 @@ object SeriesMap_ {
     seriesLayoutBy: String = null,
     showLegendSymbol: js.UndefOr[Boolean] = js.undefined,
     silent: js.UndefOr[Boolean] = js.undefined,
-    tooltip: ExtraCssText = null,
+    tooltip: BaseTooltip = null,
     top: Double | String = null,
     `type`: String = null,
     z: js.UndefOr[Double] = js.undefined,

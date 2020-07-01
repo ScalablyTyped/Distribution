@@ -50,6 +50,7 @@ package object appconfigMod {
     - java.lang.String
   */
   type GrowthType = typings.awsSdk.appconfigMod._GrowthType | java.lang.String
+  type HostedConfigurationVersionSummaryList = js.Array[typings.awsSdk.appconfigMod.HostedConfigurationVersionSummary]
   type Id = java.lang.String
   type Integer = scala.Double
   type Iso8601DateTime = typings.std.Date
@@ -65,8 +66,10 @@ package object appconfigMod {
     - java.lang.String
   */
   type ReplicateTo = typings.awsSdk.appconfigMod._ReplicateTo | java.lang.String
+  type RoleArn = java.lang.String
   type String = java.lang.String
   type StringWithLengthBetween0And32768 = java.lang.String
+  type StringWithLengthBetween1And255 = java.lang.String
   type StringWithLengthBetween1And64 = java.lang.String
   type TagKey = java.lang.String
   type TagKeyList = js.Array[typings.awsSdk.appconfigMod.TagKey]

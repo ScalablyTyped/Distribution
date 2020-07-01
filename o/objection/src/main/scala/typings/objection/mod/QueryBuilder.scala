@@ -97,6 +97,8 @@ class QueryBuilder[M /* <: Model */, R] () extends Promise[R] {
   var debug_Original: IdentityMethod[this.type] = js.native
   @JSName("decrement")
   var decrement_Original: IncrementDecrementMethod[this.type] = js.native
+  @JSName("distinctOn")
+  var distinctOn_Original: SelectMethod[this.type] = js.native
   @JSName("distinct")
   var distinct_Original: SelectMethod[this.type] = js.native
   // Deprecated
@@ -146,23 +148,23 @@ class QueryBuilder[M /* <: Model */, R] () extends Promise[R] {
   @JSName("has")
   var has_Original: HasMethod = js.native
   @JSName("havingBetween")
-  var havingBetween_Original: WhereMethod[this.type] = js.native
+  var havingBetween_Original: WhereBetweenMethod[this.type] = js.native
   @JSName("havingExists")
-  var havingExists_Original: WhereMethod[this.type] = js.native
+  var havingExists_Original: WhereExistsMethod[this.type] = js.native
   @JSName("havingIn")
-  var havingIn_Original: WhereMethod[this.type] = js.native
+  var havingIn_Original: WhereInMethod[this.type] = js.native
   @JSName("havingNotBetween")
-  var havingNotBetween_Original: WhereMethod[this.type] = js.native
+  var havingNotBetween_Original: WhereBetweenMethod[this.type] = js.native
   @JSName("havingNotExists")
-  var havingNotExists_Original: WhereMethod[this.type] = js.native
+  var havingNotExists_Original: WhereExistsMethod[this.type] = js.native
   @JSName("havingNotIn")
-  var havingNotIn_Original: WhereMethod[this.type] = js.native
+  var havingNotIn_Original: WhereInMethod[this.type] = js.native
   @JSName("havingNotNull")
-  var havingNotNull_Original: WhereMethod[this.type] = js.native
+  var havingNotNull_Original: WhereNullMethod[this.type] = js.native
   @JSName("havingNull")
-  var havingNull_Original: WhereMethod[this.type] = js.native
+  var havingNull_Original: WhereNullMethod[this.type] = js.native
   @JSName("havingRaw")
-  var havingRaw_Original: WhereMethod[this.type] = js.native
+  var havingRaw_Original: WhereRawMethod[this.type] = js.native
   @JSName("havingWrapped")
   var havingWrapped_Original: WhereWrappedMethod[this.type] = js.native
   @JSName("having")
@@ -270,23 +272,23 @@ class QueryBuilder[M /* <: Model */, R] () extends Promise[R] {
   @JSName("onError")
   var onError_Original: OnErrorMethod[this.type] = js.native
   @JSName("orHavingBetween")
-  var orHavingBetween_Original: WhereMethod[this.type] = js.native
+  var orHavingBetween_Original: WhereBetweenMethod[this.type] = js.native
   @JSName("orHavingExists")
-  var orHavingExists_Original: WhereMethod[this.type] = js.native
+  var orHavingExists_Original: WhereExistsMethod[this.type] = js.native
   @JSName("orHavingIn")
-  var orHavingIn_Original: WhereMethod[this.type] = js.native
+  var orHavingIn_Original: WhereInMethod[this.type] = js.native
   @JSName("orHavingNotBetween")
-  var orHavingNotBetween_Original: WhereMethod[this.type] = js.native
+  var orHavingNotBetween_Original: WhereBetweenMethod[this.type] = js.native
   @JSName("orHavingNotExists")
-  var orHavingNotExists_Original: WhereMethod[this.type] = js.native
+  var orHavingNotExists_Original: WhereExistsMethod[this.type] = js.native
   @JSName("orHavingNotIn")
-  var orHavingNotIn_Original: WhereMethod[this.type] = js.native
+  var orHavingNotIn_Original: WhereInMethod[this.type] = js.native
   @JSName("orHavingNotNull")
-  var orHavingNotNull_Original: WhereMethod[this.type] = js.native
+  var orHavingNotNull_Original: WhereNullMethod[this.type] = js.native
   @JSName("orHavingNull")
-  var orHavingNull_Original: WhereMethod[this.type] = js.native
+  var orHavingNull_Original: WhereNullMethod[this.type] = js.native
   @JSName("orHavingRaw")
-  var orHavingRaw_Original: WhereMethod[this.type] = js.native
+  var orHavingRaw_Original: WhereRawMethod[this.type] = js.native
   @JSName("orHaving")
   var orHaving_Original: WhereMethod[this.type] = js.native
   @JSName("orWhereBetween")
@@ -450,6 +452,8 @@ class QueryBuilder[M /* <: Model */, R] () extends Promise[R] {
   var whereWrapped_Original: WhereWrappedMethod[this.type] = js.native
   @JSName("where")
   var where_Original: WhereMethod[this.type] = js.native
+  @JSName("withRecursive")
+  var withRecursive_Original: WithMethod[this.type] = js.native
   @JSName("withSchema")
   var withSchema_Original: OneArgMethod[String, this.type] = js.native
   @JSName("withWrapped")
@@ -574,6 +578,10 @@ class QueryBuilder[M /* <: Model */, R] () extends Promise[R] {
   // Allows things like `select(1)`, not sure if we should be more specific here?
   def distinct[QBP /* <: this.type */](columns: (js.Any | ModelProps[ModelType[QBP]] | Selection[QBP])*): this.type = js.native
   def distinct[QBP /* <: this.type */](columns: js.Array[ModelProps[ModelType[QBP]] | Selection[QBP]]): this.type = js.native
+  // These must come first so that we get autocomplete.
+  // Allows things like `select(1)`, not sure if we should be more specific here?
+  def distinctOn[QBP /* <: this.type */](columns: (js.Any | ModelProps[ModelType[QBP]] | Selection[QBP])*): this.type = js.native
+  def distinctOn[QBP /* <: this.type */](columns: js.Array[ModelProps[ModelType[QBP]] | Selection[QBP]]): this.type = js.native
   // Deprecated
   def eager(expr: RelationExpression[ModelType[this.type]]): this.type = js.native
   def eager(expr: RelationExpression[ModelType[this.type]], modifiers: Modifiers[AnyQueryBuilder]): this.type = js.native
@@ -644,132 +652,37 @@ class QueryBuilder[M /* <: Model */, R] () extends Promise[R] {
   // These must come first so that we get autocomplete.
   def having[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
   def having[QBA /* <: AnyQueryBuilder */](qb: QBA): this.type = js.native
-  def havingBetween(cb: CallbackVoid[this.type]): this.type = js.native
-  def havingBetween(col: ColumnRef, expr: Expression[PrimitiveValue]): this.type = js.native
-  def havingBetween(col: ColumnRef, op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def havingBetween(condition: Boolean): this.type = js.native
-  // We must allow any keys in the object. The previous type
-  // is kind of useless, but maybe one day vscode and other
-  // tools can autocomplete using it.
-  def havingBetween(obj: js.Object): this.type = js.native
-  def havingBetween(obj: PartialModelObject[ModelType[this.type]]): this.type = js.native
-  def havingBetween(raw: Raw_): this.type = js.native
-  def havingBetween[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], expr: Expression[PrimitiveValue]): this.type = js.native
-  // These must come first so that we get autocomplete.
-  def havingBetween[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def havingBetween[QBA /* <: AnyQueryBuilder */](qb: QBA): this.type = js.native
+  def havingBetween(column: ColumnRef, range: js.Tuple2[Expression[PrimitiveValue], Expression[PrimitiveValue]]): this.type = js.native
   def havingExists(cb: CallbackVoid[this.type]): this.type = js.native
-  def havingExists(col: ColumnRef, expr: Expression[PrimitiveValue]): this.type = js.native
-  def havingExists(col: ColumnRef, op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def havingExists(condition: Boolean): this.type = js.native
-  // We must allow any keys in the object. The previous type
-  // is kind of useless, but maybe one day vscode and other
-  // tools can autocomplete using it.
-  def havingExists(obj: js.Object): this.type = js.native
-  def havingExists(obj: PartialModelObject[ModelType[this.type]]): this.type = js.native
   def havingExists(raw: Raw_): this.type = js.native
-  def havingExists[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], expr: Expression[PrimitiveValue]): this.type = js.native
-  // These must come first so that we get autocomplete.
-  def havingExists[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
   def havingExists[QBA /* <: AnyQueryBuilder */](qb: QBA): this.type = js.native
-  def havingIn(cb: CallbackVoid[this.type]): this.type = js.native
-  def havingIn(col: ColumnRef, expr: Expression[PrimitiveValue]): this.type = js.native
-  def havingIn(col: ColumnRef, op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def havingIn(condition: Boolean): this.type = js.native
-  // We must allow any keys in the object. The previous type
-  // is kind of useless, but maybe one day vscode and other
-  // tools can autocomplete using it.
-  def havingIn(obj: js.Object): this.type = js.native
-  def havingIn(obj: PartialModelObject[ModelType[this.type]]): this.type = js.native
-  def havingIn(raw: Raw_): this.type = js.native
+  def havingIn(col: js.Array[ColumnRef], cb: CallbackVoid[this.type]): this.type = js.native
+  def havingIn(col: js.Array[ColumnRef], expr: js.Array[Expression[PrimitiveValue]]): this.type = js.native
+  def havingIn(col: js.Array[ColumnRef], qb: AnyQueryBuilder): this.type = js.native
+  def havingIn(col: ColumnRef, cb: CallbackVoid[this.type]): this.type = js.native
+  def havingIn(col: ColumnRef, expr: js.Array[Expression[PrimitiveValue]]): this.type = js.native
+  def havingIn(col: ColumnRef, qb: AnyQueryBuilder): this.type = js.native
+  def havingIn[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], cb: CallbackVoid[this.type]): this.type = js.native
+  // These must come first so that we get autocomplete.
   def havingIn[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], expr: Expression[PrimitiveValue]): this.type = js.native
-  // These must come first so that we get autocomplete.
-  def havingIn[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def havingIn[QBA /* <: AnyQueryBuilder */](qb: QBA): this.type = js.native
-  def havingNotBetween(cb: CallbackVoid[this.type]): this.type = js.native
-  def havingNotBetween(col: ColumnRef, expr: Expression[PrimitiveValue]): this.type = js.native
-  def havingNotBetween(col: ColumnRef, op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def havingNotBetween(condition: Boolean): this.type = js.native
-  // We must allow any keys in the object. The previous type
-  // is kind of useless, but maybe one day vscode and other
-  // tools can autocomplete using it.
-  def havingNotBetween(obj: js.Object): this.type = js.native
-  def havingNotBetween(obj: PartialModelObject[ModelType[this.type]]): this.type = js.native
-  def havingNotBetween(raw: Raw_): this.type = js.native
-  def havingNotBetween[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], expr: Expression[PrimitiveValue]): this.type = js.native
-  // These must come first so that we get autocomplete.
-  def havingNotBetween[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def havingNotBetween[QBA /* <: AnyQueryBuilder */](qb: QBA): this.type = js.native
+  def havingIn[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], qb: AnyQueryBuilder): this.type = js.native
+  def havingNotBetween(column: ColumnRef, range: js.Tuple2[Expression[PrimitiveValue], Expression[PrimitiveValue]]): this.type = js.native
   def havingNotExists(cb: CallbackVoid[this.type]): this.type = js.native
-  def havingNotExists(col: ColumnRef, expr: Expression[PrimitiveValue]): this.type = js.native
-  def havingNotExists(col: ColumnRef, op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def havingNotExists(condition: Boolean): this.type = js.native
-  // We must allow any keys in the object. The previous type
-  // is kind of useless, but maybe one day vscode and other
-  // tools can autocomplete using it.
-  def havingNotExists(obj: js.Object): this.type = js.native
-  def havingNotExists(obj: PartialModelObject[ModelType[this.type]]): this.type = js.native
   def havingNotExists(raw: Raw_): this.type = js.native
-  def havingNotExists[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], expr: Expression[PrimitiveValue]): this.type = js.native
-  // These must come first so that we get autocomplete.
-  def havingNotExists[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
   def havingNotExists[QBA /* <: AnyQueryBuilder */](qb: QBA): this.type = js.native
-  def havingNotIn(cb: CallbackVoid[this.type]): this.type = js.native
-  def havingNotIn(col: ColumnRef, expr: Expression[PrimitiveValue]): this.type = js.native
-  def havingNotIn(col: ColumnRef, op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def havingNotIn(condition: Boolean): this.type = js.native
-  // We must allow any keys in the object. The previous type
-  // is kind of useless, but maybe one day vscode and other
-  // tools can autocomplete using it.
-  def havingNotIn(obj: js.Object): this.type = js.native
-  def havingNotIn(obj: PartialModelObject[ModelType[this.type]]): this.type = js.native
-  def havingNotIn(raw: Raw_): this.type = js.native
+  def havingNotIn(col: js.Array[ColumnRef], cb: CallbackVoid[this.type]): this.type = js.native
+  def havingNotIn(col: js.Array[ColumnRef], expr: js.Array[Expression[PrimitiveValue]]): this.type = js.native
+  def havingNotIn(col: js.Array[ColumnRef], qb: AnyQueryBuilder): this.type = js.native
+  def havingNotIn(col: ColumnRef, cb: CallbackVoid[this.type]): this.type = js.native
+  def havingNotIn(col: ColumnRef, expr: js.Array[Expression[PrimitiveValue]]): this.type = js.native
+  def havingNotIn(col: ColumnRef, qb: AnyQueryBuilder): this.type = js.native
+  def havingNotIn[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], cb: CallbackVoid[this.type]): this.type = js.native
+  // These must come first so that we get autocomplete.
   def havingNotIn[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], expr: Expression[PrimitiveValue]): this.type = js.native
-  // These must come first so that we get autocomplete.
-  def havingNotIn[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def havingNotIn[QBA /* <: AnyQueryBuilder */](qb: QBA): this.type = js.native
-  def havingNotNull(cb: CallbackVoid[this.type]): this.type = js.native
-  def havingNotNull(col: ColumnRef, expr: Expression[PrimitiveValue]): this.type = js.native
-  def havingNotNull(col: ColumnRef, op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def havingNotNull(condition: Boolean): this.type = js.native
-  // We must allow any keys in the object. The previous type
-  // is kind of useless, but maybe one day vscode and other
-  // tools can autocomplete using it.
-  def havingNotNull(obj: js.Object): this.type = js.native
-  def havingNotNull(obj: PartialModelObject[ModelType[this.type]]): this.type = js.native
-  def havingNotNull(raw: Raw_): this.type = js.native
-  def havingNotNull[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], expr: Expression[PrimitiveValue]): this.type = js.native
-  // These must come first so that we get autocomplete.
-  def havingNotNull[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def havingNotNull[QBA /* <: AnyQueryBuilder */](qb: QBA): this.type = js.native
-  def havingNull(cb: CallbackVoid[this.type]): this.type = js.native
-  def havingNull(col: ColumnRef, expr: Expression[PrimitiveValue]): this.type = js.native
-  def havingNull(col: ColumnRef, op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def havingNull(condition: Boolean): this.type = js.native
-  // We must allow any keys in the object. The previous type
-  // is kind of useless, but maybe one day vscode and other
-  // tools can autocomplete using it.
-  def havingNull(obj: js.Object): this.type = js.native
-  def havingNull(obj: PartialModelObject[ModelType[this.type]]): this.type = js.native
-  def havingNull(raw: Raw_): this.type = js.native
-  def havingNull[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], expr: Expression[PrimitiveValue]): this.type = js.native
-  // These must come first so that we get autocomplete.
-  def havingNull[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def havingNull[QBA /* <: AnyQueryBuilder */](qb: QBA): this.type = js.native
-  def havingRaw(cb: CallbackVoid[this.type]): this.type = js.native
-  def havingRaw(col: ColumnRef, expr: Expression[PrimitiveValue]): this.type = js.native
-  def havingRaw(col: ColumnRef, op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def havingRaw(condition: Boolean): this.type = js.native
-  // We must allow any keys in the object. The previous type
-  // is kind of useless, but maybe one day vscode and other
-  // tools can autocomplete using it.
-  def havingRaw(obj: js.Object): this.type = js.native
-  def havingRaw(obj: PartialModelObject[ModelType[this.type]]): this.type = js.native
-  def havingRaw(raw: Raw_): this.type = js.native
-  def havingRaw[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], expr: Expression[PrimitiveValue]): this.type = js.native
-  // These must come first so that we get autocomplete.
-  def havingRaw[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def havingRaw[QBA /* <: AnyQueryBuilder */](qb: QBA): this.type = js.native
+  def havingNotIn[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], qb: AnyQueryBuilder): this.type = js.native
+  def havingNotNull(column: ColumnRef): this.type = js.native
+  def havingNull(column: ColumnRef): this.type = js.native
+  def havingRaw(sql: String, bindings: js.Any*): this.type = js.native
   def havingWrapped(cb: CallbackVoid[this.type]): this.type = js.native
   def increment(column: String): this.type = js.native
   def increment(column: String, amount: Double): this.type = js.native
@@ -907,132 +820,37 @@ class QueryBuilder[M /* <: Model */, R] () extends Promise[R] {
   // These must come first so that we get autocomplete.
   def orHaving[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
   def orHaving[QBA /* <: AnyQueryBuilder */](qb: QBA): this.type = js.native
-  def orHavingBetween(cb: CallbackVoid[this.type]): this.type = js.native
-  def orHavingBetween(col: ColumnRef, expr: Expression[PrimitiveValue]): this.type = js.native
-  def orHavingBetween(col: ColumnRef, op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def orHavingBetween(condition: Boolean): this.type = js.native
-  // We must allow any keys in the object. The previous type
-  // is kind of useless, but maybe one day vscode and other
-  // tools can autocomplete using it.
-  def orHavingBetween(obj: js.Object): this.type = js.native
-  def orHavingBetween(obj: PartialModelObject[ModelType[this.type]]): this.type = js.native
-  def orHavingBetween(raw: Raw_): this.type = js.native
-  def orHavingBetween[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], expr: Expression[PrimitiveValue]): this.type = js.native
-  // These must come first so that we get autocomplete.
-  def orHavingBetween[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def orHavingBetween[QBA /* <: AnyQueryBuilder */](qb: QBA): this.type = js.native
+  def orHavingBetween(column: ColumnRef, range: js.Tuple2[Expression[PrimitiveValue], Expression[PrimitiveValue]]): this.type = js.native
   def orHavingExists(cb: CallbackVoid[this.type]): this.type = js.native
-  def orHavingExists(col: ColumnRef, expr: Expression[PrimitiveValue]): this.type = js.native
-  def orHavingExists(col: ColumnRef, op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def orHavingExists(condition: Boolean): this.type = js.native
-  // We must allow any keys in the object. The previous type
-  // is kind of useless, but maybe one day vscode and other
-  // tools can autocomplete using it.
-  def orHavingExists(obj: js.Object): this.type = js.native
-  def orHavingExists(obj: PartialModelObject[ModelType[this.type]]): this.type = js.native
   def orHavingExists(raw: Raw_): this.type = js.native
-  def orHavingExists[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], expr: Expression[PrimitiveValue]): this.type = js.native
-  // These must come first so that we get autocomplete.
-  def orHavingExists[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
   def orHavingExists[QBA /* <: AnyQueryBuilder */](qb: QBA): this.type = js.native
-  def orHavingIn(cb: CallbackVoid[this.type]): this.type = js.native
-  def orHavingIn(col: ColumnRef, expr: Expression[PrimitiveValue]): this.type = js.native
-  def orHavingIn(col: ColumnRef, op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def orHavingIn(condition: Boolean): this.type = js.native
-  // We must allow any keys in the object. The previous type
-  // is kind of useless, but maybe one day vscode and other
-  // tools can autocomplete using it.
-  def orHavingIn(obj: js.Object): this.type = js.native
-  def orHavingIn(obj: PartialModelObject[ModelType[this.type]]): this.type = js.native
-  def orHavingIn(raw: Raw_): this.type = js.native
+  def orHavingIn(col: js.Array[ColumnRef], cb: CallbackVoid[this.type]): this.type = js.native
+  def orHavingIn(col: js.Array[ColumnRef], expr: js.Array[Expression[PrimitiveValue]]): this.type = js.native
+  def orHavingIn(col: js.Array[ColumnRef], qb: AnyQueryBuilder): this.type = js.native
+  def orHavingIn(col: ColumnRef, cb: CallbackVoid[this.type]): this.type = js.native
+  def orHavingIn(col: ColumnRef, expr: js.Array[Expression[PrimitiveValue]]): this.type = js.native
+  def orHavingIn(col: ColumnRef, qb: AnyQueryBuilder): this.type = js.native
+  def orHavingIn[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], cb: CallbackVoid[this.type]): this.type = js.native
+  // These must come first so that we get autocomplete.
   def orHavingIn[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], expr: Expression[PrimitiveValue]): this.type = js.native
-  // These must come first so that we get autocomplete.
-  def orHavingIn[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def orHavingIn[QBA /* <: AnyQueryBuilder */](qb: QBA): this.type = js.native
-  def orHavingNotBetween(cb: CallbackVoid[this.type]): this.type = js.native
-  def orHavingNotBetween(col: ColumnRef, expr: Expression[PrimitiveValue]): this.type = js.native
-  def orHavingNotBetween(col: ColumnRef, op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def orHavingNotBetween(condition: Boolean): this.type = js.native
-  // We must allow any keys in the object. The previous type
-  // is kind of useless, but maybe one day vscode and other
-  // tools can autocomplete using it.
-  def orHavingNotBetween(obj: js.Object): this.type = js.native
-  def orHavingNotBetween(obj: PartialModelObject[ModelType[this.type]]): this.type = js.native
-  def orHavingNotBetween(raw: Raw_): this.type = js.native
-  def orHavingNotBetween[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], expr: Expression[PrimitiveValue]): this.type = js.native
-  // These must come first so that we get autocomplete.
-  def orHavingNotBetween[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def orHavingNotBetween[QBA /* <: AnyQueryBuilder */](qb: QBA): this.type = js.native
+  def orHavingIn[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], qb: AnyQueryBuilder): this.type = js.native
+  def orHavingNotBetween(column: ColumnRef, range: js.Tuple2[Expression[PrimitiveValue], Expression[PrimitiveValue]]): this.type = js.native
   def orHavingNotExists(cb: CallbackVoid[this.type]): this.type = js.native
-  def orHavingNotExists(col: ColumnRef, expr: Expression[PrimitiveValue]): this.type = js.native
-  def orHavingNotExists(col: ColumnRef, op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def orHavingNotExists(condition: Boolean): this.type = js.native
-  // We must allow any keys in the object. The previous type
-  // is kind of useless, but maybe one day vscode and other
-  // tools can autocomplete using it.
-  def orHavingNotExists(obj: js.Object): this.type = js.native
-  def orHavingNotExists(obj: PartialModelObject[ModelType[this.type]]): this.type = js.native
   def orHavingNotExists(raw: Raw_): this.type = js.native
-  def orHavingNotExists[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], expr: Expression[PrimitiveValue]): this.type = js.native
-  // These must come first so that we get autocomplete.
-  def orHavingNotExists[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
   def orHavingNotExists[QBA /* <: AnyQueryBuilder */](qb: QBA): this.type = js.native
-  def orHavingNotIn(cb: CallbackVoid[this.type]): this.type = js.native
-  def orHavingNotIn(col: ColumnRef, expr: Expression[PrimitiveValue]): this.type = js.native
-  def orHavingNotIn(col: ColumnRef, op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def orHavingNotIn(condition: Boolean): this.type = js.native
-  // We must allow any keys in the object. The previous type
-  // is kind of useless, but maybe one day vscode and other
-  // tools can autocomplete using it.
-  def orHavingNotIn(obj: js.Object): this.type = js.native
-  def orHavingNotIn(obj: PartialModelObject[ModelType[this.type]]): this.type = js.native
-  def orHavingNotIn(raw: Raw_): this.type = js.native
+  def orHavingNotIn(col: js.Array[ColumnRef], cb: CallbackVoid[this.type]): this.type = js.native
+  def orHavingNotIn(col: js.Array[ColumnRef], expr: js.Array[Expression[PrimitiveValue]]): this.type = js.native
+  def orHavingNotIn(col: js.Array[ColumnRef], qb: AnyQueryBuilder): this.type = js.native
+  def orHavingNotIn(col: ColumnRef, cb: CallbackVoid[this.type]): this.type = js.native
+  def orHavingNotIn(col: ColumnRef, expr: js.Array[Expression[PrimitiveValue]]): this.type = js.native
+  def orHavingNotIn(col: ColumnRef, qb: AnyQueryBuilder): this.type = js.native
+  def orHavingNotIn[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], cb: CallbackVoid[this.type]): this.type = js.native
+  // These must come first so that we get autocomplete.
   def orHavingNotIn[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], expr: Expression[PrimitiveValue]): this.type = js.native
-  // These must come first so that we get autocomplete.
-  def orHavingNotIn[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def orHavingNotIn[QBA /* <: AnyQueryBuilder */](qb: QBA): this.type = js.native
-  def orHavingNotNull(cb: CallbackVoid[this.type]): this.type = js.native
-  def orHavingNotNull(col: ColumnRef, expr: Expression[PrimitiveValue]): this.type = js.native
-  def orHavingNotNull(col: ColumnRef, op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def orHavingNotNull(condition: Boolean): this.type = js.native
-  // We must allow any keys in the object. The previous type
-  // is kind of useless, but maybe one day vscode and other
-  // tools can autocomplete using it.
-  def orHavingNotNull(obj: js.Object): this.type = js.native
-  def orHavingNotNull(obj: PartialModelObject[ModelType[this.type]]): this.type = js.native
-  def orHavingNotNull(raw: Raw_): this.type = js.native
-  def orHavingNotNull[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], expr: Expression[PrimitiveValue]): this.type = js.native
-  // These must come first so that we get autocomplete.
-  def orHavingNotNull[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def orHavingNotNull[QBA /* <: AnyQueryBuilder */](qb: QBA): this.type = js.native
-  def orHavingNull(cb: CallbackVoid[this.type]): this.type = js.native
-  def orHavingNull(col: ColumnRef, expr: Expression[PrimitiveValue]): this.type = js.native
-  def orHavingNull(col: ColumnRef, op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def orHavingNull(condition: Boolean): this.type = js.native
-  // We must allow any keys in the object. The previous type
-  // is kind of useless, but maybe one day vscode and other
-  // tools can autocomplete using it.
-  def orHavingNull(obj: js.Object): this.type = js.native
-  def orHavingNull(obj: PartialModelObject[ModelType[this.type]]): this.type = js.native
-  def orHavingNull(raw: Raw_): this.type = js.native
-  def orHavingNull[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], expr: Expression[PrimitiveValue]): this.type = js.native
-  // These must come first so that we get autocomplete.
-  def orHavingNull[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def orHavingNull[QBA /* <: AnyQueryBuilder */](qb: QBA): this.type = js.native
-  def orHavingRaw(cb: CallbackVoid[this.type]): this.type = js.native
-  def orHavingRaw(col: ColumnRef, expr: Expression[PrimitiveValue]): this.type = js.native
-  def orHavingRaw(col: ColumnRef, op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def orHavingRaw(condition: Boolean): this.type = js.native
-  // We must allow any keys in the object. The previous type
-  // is kind of useless, but maybe one day vscode and other
-  // tools can autocomplete using it.
-  def orHavingRaw(obj: js.Object): this.type = js.native
-  def orHavingRaw(obj: PartialModelObject[ModelType[this.type]]): this.type = js.native
-  def orHavingRaw(raw: Raw_): this.type = js.native
-  def orHavingRaw[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], expr: Expression[PrimitiveValue]): this.type = js.native
-  // These must come first so that we get autocomplete.
-  def orHavingRaw[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
-  def orHavingRaw[QBA /* <: AnyQueryBuilder */](qb: QBA): this.type = js.native
+  def orHavingNotIn[QBP /* <: this.type */](col: ModelProps[ModelType[QBP]], qb: AnyQueryBuilder): this.type = js.native
+  def orHavingNotNull(column: ColumnRef): this.type = js.native
+  def orHavingNull(column: ColumnRef): this.type = js.native
+  def orHavingRaw(sql: String, bindings: js.Any*): this.type = js.native
   def orWhere(cb: CallbackVoid[this.type]): this.type = js.native
   def orWhere(col: ColumnRef, expr: Expression[PrimitiveValue]): this.type = js.native
   def orWhere(col: ColumnRef, op: Operator, expr: Expression[PrimitiveValue]): this.type = js.native
@@ -1189,10 +1007,10 @@ class QueryBuilder[M /* <: Model */, R] () extends Promise[R] {
   def timeout(ms: Double, options: TimeoutOptions): this.type = js.native
   def toKnexQuery[T](): typings.knex.mod.QueryBuilder[T, js.Array[T]] = js.native
   def transacting(arg: TransactionOrKnex): this.type = js.native
-  // Deprecated
   def traverse(filterConstructor: TypeofModel, traverser: TraverserFunction): R = js.native
-  // Deprecated
   def traverse(traverser: TraverserFunction): R = js.native
+  def traverseAsync(filterConstructor: TypeofModel, traverser: TraverserFunction): js.Promise[R] = js.native
+  def traverseAsync(traverser: TraverserFunction): js.Promise[R] = js.native
   def truncate(): js.Promise[Unit] = js.native
   def union(arg1: QBOrCallback[this.type]): this.type = js.native
   def union(arg1: QBOrCallback[this.type], arg2: QBOrCallback[this.type]): this.type = js.native
@@ -1459,6 +1277,9 @@ class QueryBuilder[M /* <: Model */, R] () extends Promise[R] {
   def withGraphFetched(expr: RelationExpression[M], options: GraphOptions): this.type = js.native
   def withGraphJoined(expr: RelationExpression[M]): this.type = js.native
   def withGraphJoined(expr: RelationExpression[M], options: GraphOptions): this.type = js.native
+  def withRecursive(alias: String, expr: AnyQueryBuilder): this.type = js.native
+  def withRecursive(alias: String, expr: CallbackVoid[this.type]): this.type = js.native
+  def withRecursive(alias: String, expr: Raw_): this.type = js.native
   def withSchema(arg: String): this.type = js.native
   def withWrapped(alias: String, expr: AnyQueryBuilder): this.type = js.native
   def withWrapped(alias: String, expr: CallbackVoid[this.type]): this.type = js.native

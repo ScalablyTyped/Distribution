@@ -11,7 +11,7 @@ trait ReactCalendarGroupRendererProps[CustomGroup /* <: TimelineGroupBase */] ex
 
 object ReactCalendarGroupRendererProps {
   @scala.inline
-  def apply[CustomGroup](group: CustomGroup, isRightSidebar: js.UndefOr[Boolean] = js.undefined): ReactCalendarGroupRendererProps[CustomGroup] = {
+  def apply[/* <: typings.reactCalendarTimeline.mod.TimelineGroupBase */ CustomGroup](group: CustomGroup, isRightSidebar: js.UndefOr[Boolean] = js.undefined): ReactCalendarGroupRendererProps[CustomGroup] = {
     val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any])
     if (!js.isUndefined(isRightSidebar)) __obj.updateDynamic("isRightSidebar")(isRightSidebar.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactCalendarGroupRendererProps[CustomGroup]]

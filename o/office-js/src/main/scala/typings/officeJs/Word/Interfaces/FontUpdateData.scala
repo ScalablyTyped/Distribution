@@ -25,7 +25,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the Font object, for use in "font.set({ ... })". */
+/** An interface for updating data on the Font object, for use in `font.set({ ... })`. */
 trait FontUpdateData extends js.Object {
   /**
     *

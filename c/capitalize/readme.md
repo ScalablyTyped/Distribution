@@ -1,7 +1,7 @@
 
 # Scala.js typings for capitalize
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 capitalize the first letter of a string, or all words in a string

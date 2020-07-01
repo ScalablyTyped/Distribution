@@ -16,7 +16,7 @@ trait VnodeDOM[Attrs, State /* <: Lifecycle[Attrs, State] */] extends Vnode[Attr
 
 object VnodeDOM {
   @scala.inline
-  def apply[Attrs, State](
+  def apply[Attrs, /* <: typings.mithril.mod.Lifecycle[Attrs, State] */ State](
     attrs: Attrs,
     dom: Element,
     state: State,

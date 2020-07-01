@@ -14,6 +14,8 @@ import scala.scalajs.js.annotation._
   - typings.tabulatorTables.tabulatorTablesStrings.GreaterthansignEqualssign
   - typings.tabulatorTables.tabulatorTablesStrings.in
   - typings.tabulatorTables.tabulatorTablesStrings.regex
+  - typings.tabulatorTables.tabulatorTablesStrings.starts
+  - typings.tabulatorTables.tabulatorTablesStrings.ends
 */
 trait FilterType extends js.Object
 
@@ -31,10 +33,14 @@ object FilterType {
   @scala.inline
   def LessthansignEqualssign: typings.tabulatorTables.tabulatorTablesStrings.LessthansignEqualssign = "<=".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.LessthansignEqualssign]
   @scala.inline
+  def ends: typings.tabulatorTables.tabulatorTablesStrings.ends = "ends".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.ends]
+  @scala.inline
   def in: typings.tabulatorTables.tabulatorTablesStrings.in = "in".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.in]
   @scala.inline
   def like: typings.tabulatorTables.tabulatorTablesStrings.like = "like".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.like]
   @scala.inline
   def regex: typings.tabulatorTables.tabulatorTablesStrings.regex = "regex".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.regex]
+  @scala.inline
+  def starts: typings.tabulatorTables.tabulatorTablesStrings.starts = "starts".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.starts]
 }
 

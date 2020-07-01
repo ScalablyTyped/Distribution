@@ -13,6 +13,8 @@ trait StateCommon extends ObjectCommon {
   var custom: js.UndefOr[Record[String, _]] = js.undefined
   /** the default value */
   var `def`: js.UndefOr[js.Any] = js.undefined
+  /** the default status of the ack flag */
+  var defAck: js.UndefOr[Boolean] = js.undefined
   /** description of this state */
   var desc: js.UndefOr[String] = js.undefined
   /** attached history information */
@@ -59,6 +61,7 @@ object StateCommon {
     alias: Id = null,
     custom: Record[String, _] = null,
     `def`: js.Any = null,
+    defAck: js.UndefOr[Boolean] = js.undefined,
     desc: String = null,
     history: js.Any = null,
     icon: String = null,
@@ -73,6 +76,7 @@ object StateCommon {
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
     if (`def` != null) __obj.updateDynamic("def")(`def`.asInstanceOf[js.Any])
+    if (!js.isUndefined(defAck)) __obj.updateDynamic("defAck")(defAck.get.asInstanceOf[js.Any])
     if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
     if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])

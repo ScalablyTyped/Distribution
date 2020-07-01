@@ -2,13 +2,14 @@ package typings.webdriverio.WebdriverIO
 
 import typings.node.Buffer
 import typings.std.RegExp
+import typings.webdriver.WebDriver.BaseClient
 import typings.webdriver.WebDriver.RectReturn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Browser extends js.Object {
+trait Browser extends BaseClient {
   var config: Config = js.native
   var options: RemoteOptions = js.native
   /**

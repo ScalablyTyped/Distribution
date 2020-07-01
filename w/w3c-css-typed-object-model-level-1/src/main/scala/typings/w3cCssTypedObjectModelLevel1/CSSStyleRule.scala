@@ -12,7 +12,6 @@ object CSSStyleRule {
   @scala.inline
   def apply(styleMap: StylePropertyMap): CSSStyleRule = {
     val __obj = js.Dynamic.literal(styleMap = styleMap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CSSStyleRule]
   }
 }

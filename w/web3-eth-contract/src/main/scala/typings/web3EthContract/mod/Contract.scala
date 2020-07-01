@@ -24,6 +24,7 @@ class Contract protected () extends js.Object {
   var defaultCommon: Common = js.native
   var defaultHardfork: hardfork = js.native
   var events: js.Any = js.native
+  var handleRevert: Boolean = js.native
   var methods: js.Any = js.native
   var options: Options = js.native
   var transactionBlockTimeout: Double = js.native

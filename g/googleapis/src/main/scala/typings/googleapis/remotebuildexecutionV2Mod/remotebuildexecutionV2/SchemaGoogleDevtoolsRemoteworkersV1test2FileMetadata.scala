@@ -45,7 +45,7 @@ object SchemaGoogleDevtoolsRemoteworkersV1test2FileMetadata {
     val __obj = js.Dynamic.literal()
     if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
     if (digest != null) __obj.updateDynamic("digest")(digest.asInstanceOf[js.Any])
-    if (!js.isUndefined(isExecutable)) __obj.updateDynamic("isExecutable")(isExecutable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExecutable)) __obj.updateDynamic("isExecutable")(isExecutable.get.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteworkersV1test2FileMetadata]
   }

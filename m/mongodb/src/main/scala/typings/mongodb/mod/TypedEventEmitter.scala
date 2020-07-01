@@ -58,6 +58,7 @@ trait TypedEventEmitter[Events] extends js.Object {
     event: E,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: Events[E] */ js.Any
   ): this.type = js.native
+  def rawListeners[E /* <: /* keyof Events */ String */](event: E): js.Array[js.Function] = js.native
   def removeAllListeners[E /* <: /* keyof Events */ String */](): this.type = js.native
   def removeAllListeners[E /* <: /* keyof Events */ String */](event: E): this.type = js.native
   def removeListener[E /* <: /* keyof Events */ String */](

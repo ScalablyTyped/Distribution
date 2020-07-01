@@ -60,20 +60,20 @@ object SchemaRevisionSpec {
   def apply(
     concurrencyModel: String = null,
     container: SchemaContainer = null,
-    containerConcurrency: Int | Double = null,
-    generation: Int | Double = null,
+    containerConcurrency: js.UndefOr[Double] = js.undefined,
+    generation: js.UndefOr[Double] = js.undefined,
     serviceAccountName: String = null,
     servingState: String = null,
-    timeoutSeconds: Int | Double = null
+    timeoutSeconds: js.UndefOr[Double] = js.undefined
   ): SchemaRevisionSpec = {
     val __obj = js.Dynamic.literal()
     if (concurrencyModel != null) __obj.updateDynamic("concurrencyModel")(concurrencyModel.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (containerConcurrency != null) __obj.updateDynamic("containerConcurrency")(containerConcurrency.asInstanceOf[js.Any])
-    if (generation != null) __obj.updateDynamic("generation")(generation.asInstanceOf[js.Any])
+    if (!js.isUndefined(containerConcurrency)) __obj.updateDynamic("containerConcurrency")(containerConcurrency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(generation)) __obj.updateDynamic("generation")(generation.get.asInstanceOf[js.Any])
     if (serviceAccountName != null) __obj.updateDynamic("serviceAccountName")(serviceAccountName.asInstanceOf[js.Any])
     if (servingState != null) __obj.updateDynamic("servingState")(servingState.asInstanceOf[js.Any])
-    if (timeoutSeconds != null) __obj.updateDynamic("timeoutSeconds")(timeoutSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutSeconds)) __obj.updateDynamic("timeoutSeconds")(timeoutSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRevisionSpec]
   }
 }

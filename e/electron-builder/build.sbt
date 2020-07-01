@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "electron-builder"
-version := "22.6.1-583ab2"
+version := "22.7.0-2af58b"
 scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "app-builder-lib" % "22.6.1-5cfa99",
-  "org.scalablytyped" %%% "builder-util" % "22.6.1-35892a",
-  "org.scalablytyped" %%% "builder-util-runtime" % "8.7.0-fce4a6",
-  "org.scalablytyped" %%% "debug" % "4.1-dt-20200226Z-b4ce56",
-  "org.scalablytyped" %%% "electron-publish" % "22.6.1-fdb26a",
-  "org.scalablytyped" %%% "fs-extra" % "9.0-dt-20200519Z-ccebd9",
-  "org.scalablytyped" %%% "lazy-val" % "1.0.4-067d8b",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200521Z-3aabb7",
-  "org.scalablytyped" %%% "std" % "3.9-18cbeb",
-  "org.scalablytyped" %%% "temp-file" % "3.3.7-116d48",
-  "org.scalablytyped" %%% "yargs" % "15.0-dt-20200515Z-fe917d",
-  "org.scalablytyped" %%% "yargs-parser" % "15.0-dt-20200113Z-2f9616")
+  "org.scalablytyped" %%% "app-builder-lib" % "22.7.0-8bd390",
+  "org.scalablytyped" %%% "builder-util" % "22.7.0-9f904b",
+  "org.scalablytyped" %%% "builder-util-runtime" % "8.7.1-200947",
+  "org.scalablytyped" %%% "debug" % "4.1-dt-20200226Z-70bc6c",
+  "org.scalablytyped" %%% "electron-publish" % "22.7.0-2b27eb",
+  "org.scalablytyped" %%% "fs-extra" % "9.0-dt-20200519Z-e4b55e",
+  "org.scalablytyped" %%% "lazy-val" % "1.0.4-0707f4",
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200624Z-2fcd45",
+  "org.scalablytyped" %%% "std" % "3.9-c9f1f8",
+  "org.scalablytyped" %%% "temp-file" % "3.3.7-386723",
+  "org.scalablytyped" %%% "yargs" % "15.0-dt-20200515Z-e2ceef",
+  "org.scalablytyped" %%% "yargs-parser" % "15.0-dt-20200113Z-fe4cc1")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

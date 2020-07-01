@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@angular/router" : "9.1.9"
+      "@angular/router" : "9.1.11"
     }
   ],
   "test-dependencies" : [
     {
-      "@angular/router" : "9.1.9"
+      "@angular/router" : "9.1.11"
     }
   ],
   "compile-devDependencies" : [

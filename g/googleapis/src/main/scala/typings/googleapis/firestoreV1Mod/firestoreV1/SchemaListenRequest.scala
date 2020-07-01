@@ -29,12 +29,12 @@ object SchemaListenRequest {
   def apply(
     addTarget: SchemaTarget = null,
     labels: StringDictionary[String] = null,
-    removeTarget: Int | Double = null
+    removeTarget: js.UndefOr[Double] = js.undefined
   ): SchemaListenRequest = {
     val __obj = js.Dynamic.literal()
     if (addTarget != null) __obj.updateDynamic("addTarget")(addTarget.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (removeTarget != null) __obj.updateDynamic("removeTarget")(removeTarget.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeTarget)) __obj.updateDynamic("removeTarget")(removeTarget.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListenRequest]
   }
 }

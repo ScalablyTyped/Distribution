@@ -1,5 +1,7 @@
 package typings.morgan.mod
 
+import typings.node.httpMod.IncomingMessage
+import typings.node.httpMod.ServerResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +12,7 @@ object compile extends js.Object {
   /**
     * Compile a format string in token notation into a format function.
     */
-  def apply(format: String): FormatFn = js.native
+  // tslint:disable-next-line
+  def apply[Request /* <: IncomingMessage */, Response /* <: ServerResponse */](format: String): FormatFn[Request, Response] = js.native
 }
 

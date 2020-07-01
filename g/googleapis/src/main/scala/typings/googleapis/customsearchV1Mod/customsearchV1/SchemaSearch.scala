@@ -1,9 +1,9 @@
 package typings.googleapis.customsearchV1Mod.customsearchV1
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.googleapis.AnonCorrectedQuery
-import typings.googleapis.AnonFormattedSearchTime
-import typings.googleapis.AnonTemplate
+import typings.googleapis.anon.CorrectedQuery
+import typings.googleapis.anon.FormattedSearchTime
+import typings.googleapis.anon.Template
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,9 +15,9 @@ trait SchemaSearch extends js.Object {
   var kind: js.UndefOr[String] = js.native
   var promotions: js.UndefOr[js.Array[SchemaPromotion]] = js.native
   var queries: js.UndefOr[StringDictionary[js.Array[SchemaQuery]]] = js.native
-  var searchInformation: js.UndefOr[AnonFormattedSearchTime] = js.native
-  var spelling: js.UndefOr[AnonCorrectedQuery] = js.native
-  var url: js.UndefOr[AnonTemplate] = js.native
+  var searchInformation: js.UndefOr[FormattedSearchTime] = js.native
+  var spelling: js.UndefOr[CorrectedQuery] = js.native
+  var url: js.UndefOr[Template] = js.native
 }
 
 object SchemaSearch {
@@ -28,9 +28,9 @@ object SchemaSearch {
     kind: String = null,
     promotions: js.Array[SchemaPromotion] = null,
     queries: StringDictionary[js.Array[SchemaQuery]] = null,
-    searchInformation: AnonFormattedSearchTime = null,
-    spelling: AnonCorrectedQuery = null,
-    url: AnonTemplate = null
+    searchInformation: FormattedSearchTime = null,
+    spelling: CorrectedQuery = null,
+    url: Template = null
   ): SchemaSearch = {
     val __obj = js.Dynamic.literal()
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])

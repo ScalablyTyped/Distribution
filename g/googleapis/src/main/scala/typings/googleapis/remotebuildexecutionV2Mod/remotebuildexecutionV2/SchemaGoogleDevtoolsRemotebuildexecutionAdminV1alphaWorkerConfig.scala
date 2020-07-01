@@ -55,7 +55,7 @@ object SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig {
     if (diskType != null) __obj.updateDynamic("diskType")(diskType.asInstanceOf[js.Any])
     if (machineType != null) __obj.updateDynamic("machineType")(machineType.asInstanceOf[js.Any])
     if (minCpuPlatform != null) __obj.updateDynamic("minCpuPlatform")(minCpuPlatform.asInstanceOf[js.Any])
-    if (!js.isUndefined(reserved)) __obj.updateDynamic("reserved")(reserved.asInstanceOf[js.Any])
+    if (!js.isUndefined(reserved)) __obj.updateDynamic("reserved")(reserved.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig]
   }
 }

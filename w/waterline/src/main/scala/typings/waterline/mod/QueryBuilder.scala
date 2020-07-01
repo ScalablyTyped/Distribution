@@ -20,7 +20,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined waterline.waterline.WaterlinePromise<T> & {where (condition : any): waterline.waterline.QueryBuilder<T>, limit (lim : number): waterline.waterline.QueryBuilder<T>, skip (num : number): waterline.waterline.QueryBuilder<T>, sort (criteria : string | {[attribute: string] : string}): waterline.waterline.QueryBuilder<T>, paginate (pagination ? : {  page  :number,   limit  :number}): waterline.waterline.QueryBuilder<T>, populate (association : string): waterline.waterline.QueryBuilder<T>, populate (association : string, filter : any): waterline.waterline.QueryBuilder<T>, groupBy (attrOrExpr : string): waterline.waterline.QueryBuilder<T>, max (attribute : string): waterline.waterline.QueryBuilder<T>, min (attribute : string): waterline.waterline.QueryBuilder<T>, sum (attribute : string): waterline.waterline.QueryBuilder<T>, average (attribute : string): waterline.waterline.QueryBuilder<T>} */
+/* Inlined waterline.waterline.WaterlinePromise<T> & {where (condition : any): waterline.waterline.QueryBuilder<T>, limit (lim : number): waterline.waterline.QueryBuilder<T>, skip (num : number): waterline.waterline.QueryBuilder<T>, sort (criteria : string | {[attribute: string] : string} | std.Array<{[attribute: string] : string}>): waterline.waterline.QueryBuilder<T>, paginate (pagination ? : {  page  :number,   limit  :number}): waterline.waterline.QueryBuilder<T>, populate (association : string): waterline.waterline.QueryBuilder<T>, populate (association : string, filter : any): waterline.waterline.QueryBuilder<T>, groupBy (attrOrExpr : string): waterline.waterline.QueryBuilder<T>, max (attribute : string): waterline.waterline.QueryBuilder<T>, min (attribute : string): waterline.waterline.QueryBuilder<T>, sum (attribute : string): waterline.waterline.QueryBuilder<T>, average (attribute : string): waterline.waterline.QueryBuilder<T>, meta (options : any): waterline.waterline.QueryBuilder<T>} */
 @js.native
 trait QueryBuilder[T] extends js.Object {
   /**
@@ -1202,6 +1202,7 @@ trait QueryBuilder[T] extends js.Object {
     */
   def mapSeries[U, Q](iterator: IterateFunction[Q, U]): Bluebird[js.Array[U]] = js.native
   def max(attribute: String): QueryBuilder[T] = js.native
+  def meta(options: js.Any): QueryBuilder[T] = js.native
   def min(attribute: String): QueryBuilder[T] = js.native
   /**
     * Register a node-style callback on this promise.
@@ -1284,6 +1285,7 @@ trait QueryBuilder[T] extends js.Object {
   @JSName("some")
   def some_Q[Q](count: Double): Bluebird[T] = js.native
   def sort(criteria: String): QueryBuilder[T] = js.native
+  def sort(criteria: js.Array[StringDictionary[String]]): QueryBuilder[T] = js.native
   def sort(criteria: StringDictionary[String]): QueryBuilder[T] = js.native
   /**
     * Like calling `.then`, but the fulfillment value or rejection reason is assumed to be an array, which is flattened to the formal parameters of the handlers.

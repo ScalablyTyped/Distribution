@@ -19,6 +19,7 @@ object linkBaseMod extends js.Object {
     var _getRootType: js.Any = js.native
     var _link: js.Any = js.native
     var _onClick: js.Any = js.native
+    var _renderContent: js.Any = js.native
     /** Sets focus to the link. */
     /* CompleteClass */
     override def focus(): Unit = js.native

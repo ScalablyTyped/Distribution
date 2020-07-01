@@ -17,7 +17,7 @@ trait IonDatetime extends js.Object {
     */
   var dayNames: js.UndefOr[js.Array[String] | String] = js.undefined
   /**
-    * Short abbreviated day of the week names. This can be used to provide locale names for each day in the week. Defaults to English.
+    * Short abbreviated day of the week names. This can be used to provide locale names for each day in the week. Defaults to English. Defaults to: `['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']`
     */
   var dayShortNames: js.UndefOr[js.Array[String] | String] = js.undefined
   /**

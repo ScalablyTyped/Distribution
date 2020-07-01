@@ -170,7 +170,7 @@ trait HTMLAttributes[RefType /* <: EventTarget */]
 
 object HTMLAttributes {
   @scala.inline
-  def apply[RefType](
+  def apply[/* <: typings.std.EventTarget */ RefType](
     DOMAttributes: typings.preact.jsxMod.JSXInternal.DOMAttributes[RefType] = null,
     about: String = null,
     accept: String = null,

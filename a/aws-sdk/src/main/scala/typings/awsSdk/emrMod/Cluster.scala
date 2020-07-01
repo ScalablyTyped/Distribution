@@ -51,6 +51,10 @@ trait Cluster extends js.Object {
     */
   var KerberosAttributes: js.UndefOr[typings.awsSdk.emrMod.KerberosAttributes] = js.native
   /**
+    *  The AWS KMS customer master key (CMK) used for encrypting log files. This attribute is only available with EMR version 5.30.0 and later, excluding EMR 6.0.0. 
+    */
+  var LogEncryptionKmsKeyId: js.UndefOr[String] = js.native
+  /**
     * The path to the Amazon S3 location where logs for this cluster are stored.
     */
   var LogUri: js.UndefOr[String] = js.native
@@ -134,6 +138,7 @@ object Cluster {
     Id: ClusterId = null,
     InstanceCollectionType: InstanceCollectionType = null,
     KerberosAttributes: KerberosAttributes = null,
+    LogEncryptionKmsKeyId: String = null,
     LogUri: String = null,
     MasterPublicDnsName: String = null,
     Name: String = null,
@@ -164,6 +169,7 @@ object Cluster {
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     if (InstanceCollectionType != null) __obj.updateDynamic("InstanceCollectionType")(InstanceCollectionType.asInstanceOf[js.Any])
     if (KerberosAttributes != null) __obj.updateDynamic("KerberosAttributes")(KerberosAttributes.asInstanceOf[js.Any])
+    if (LogEncryptionKmsKeyId != null) __obj.updateDynamic("LogEncryptionKmsKeyId")(LogEncryptionKmsKeyId.asInstanceOf[js.Any])
     if (LogUri != null) __obj.updateDynamic("LogUri")(LogUri.asInstanceOf[js.Any])
     if (MasterPublicDnsName != null) __obj.updateDynamic("MasterPublicDnsName")(MasterPublicDnsName.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])

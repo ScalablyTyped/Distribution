@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl", "RuntimeError")
 @js.native
 class RuntimeError protected ()
-  extends typings.tstl.exceptionMod.RuntimeError {
+  extends typings.tstl.tstlModuleMod.RuntimeError {
   /**
     * Initializer Constructor.
     *

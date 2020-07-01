@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@angular/platform-browser" : "9.1.9"
+      "@angular/platform-browser" : "9.1.11"
     }
   ],
   "test-dependencies" : [
     {
-      "@angular/platform-browser" : "9.1.9"
+      "@angular/platform-browser" : "9.1.11"
     }
   ],
   "compile-devDependencies" : [

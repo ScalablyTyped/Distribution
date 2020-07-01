@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@ethersproject/keccak256/lib/_version", JSImport.Namespace)
 @js.native
 object versionMod extends js.Object {
-  val version: /* "keccak256/5.0.0-beta.132" */ String = js.native
+  val version: /* "keccak256/5.0.1" */ String = js.native
 }
 

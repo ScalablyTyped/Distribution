@@ -49,6 +49,8 @@ trait FromCache extends js.Object {
   var statusLine: String
   /** The ID of the tab in which the request takes place. Set to -1 if the request isn't related to a tab. */
   var tabId: Double
+  /** Indicates if this request and its content window hierarchy is third party. */
+  var thirdParty: Boolean
   /** The time when this signal is triggered, in milliseconds since the epoch. */
   var timeStamp: Double
   /** How the requested resource will be used. */
@@ -69,6 +71,7 @@ object FromCache {
     statusCode: Double,
     statusLine: String,
     tabId: Double,
+    thirdParty: Boolean,
     timeStamp: Double,
     `type`: ResourceType,
     url: String,
@@ -80,7 +83,7 @@ object FromCache {
     responseHeaders: HttpHeaders = null,
     urlClassification: UrlClassification = null
   ): FromCache = {
-    val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], fromCache = fromCache.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], parentFrameId = parentFrameId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusLine = statusLine.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], fromCache = fromCache.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], parentFrameId = parentFrameId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusLine = statusLine.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], thirdParty = thirdParty.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (cookieStoreId != null) __obj.updateDynamic("cookieStoreId")(cookieStoreId.asInstanceOf[js.Any])
     if (documentUrl != null) __obj.updateDynamic("documentUrl")(documentUrl.asInstanceOf[js.Any])

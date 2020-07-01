@@ -1,5 +1,6 @@
 package typings.uniApp
 
+import typings.std.CanvasPattern
 import typings.uniApp.uniAppStrings.`no-repeat`
 import typings.uniApp.uniAppStrings.`repeat-x`
 import typings.uniApp.uniAppStrings.`repeat-y`
@@ -25,7 +26,7 @@ trait CanvasContext extends js.Object {
   /**
     * 填充色
     */
-  var fillStyle: js.UndefOr[String] = js.native
+  var fillStyle: js.UndefOr[String | CanvasGradient | CanvasPattern] = js.native
   /**
     * 字体样式
     */
@@ -83,13 +84,7 @@ trait CanvasContext extends js.Object {
   /**
     * 边框颜色
     */
-  var strokeStyle: js.UndefOr[String] = js.native
-  /**
-    * 创建一个颜色的渐变点
-    */
-  def addColorStop(): Unit = js.native
-  def addColorStop(stop: Double): Unit = js.native
-  def addColorStop(stop: Double, color: String): Unit = js.native
+  var strokeStyle: js.UndefOr[String | CanvasGradient | CanvasPattern] = js.native
   /**
     * 画一条弧线
     */
@@ -144,31 +139,31 @@ trait CanvasContext extends js.Object {
   /**
     * 创建一个圆形的渐变颜色
     */
-  def createCircularGradient(): CanvasContext = js.native
-  def createCircularGradient(x: Double): CanvasContext = js.native
-  def createCircularGradient(x: Double, y: Double): CanvasContext = js.native
-  def createCircularGradient(x: Double, y: Double, r: Double): CanvasContext = js.native
+  def createCircularGradient(): CanvasGradient = js.native
+  def createCircularGradient(x: Double): CanvasGradient = js.native
+  def createCircularGradient(x: Double, y: Double): CanvasGradient = js.native
+  def createCircularGradient(x: Double, y: Double, r: Double): CanvasGradient = js.native
   /**
     * 创建一个线性的渐变颜色
     */
-  def createLinearGradient(): CanvasContext = js.native
-  def createLinearGradient(x0: Double): CanvasContext = js.native
-  def createLinearGradient(x0: Double, y0: Double): CanvasContext = js.native
-  def createLinearGradient(x0: Double, y0: Double, x1: Double): CanvasContext = js.native
-  def createLinearGradient(x0: Double, y0: Double, x1: Double, y1: String): CanvasContext = js.native
+  def createLinearGradient(): CanvasGradient = js.native
+  def createLinearGradient(x0: Double): CanvasGradient = js.native
+  def createLinearGradient(x0: Double, y0: Double): CanvasGradient = js.native
+  def createLinearGradient(x0: Double, y0: Double, x1: Double): CanvasGradient = js.native
+  def createLinearGradient(x0: Double, y0: Double, x1: Double, y1: Double): CanvasGradient = js.native
   /**
     * 对指定的图像创建模式的方法，可在指定的方向上重复元图像
     */
-  def createPattern(): Unit = js.native
-  def createPattern(image: String): Unit = js.native
+  def createPattern(): CanvasPattern | Null = js.native
+  def createPattern(image: String): CanvasPattern | Null = js.native
   @JSName("createPattern")
-  def createPattern_norepeat(image: String, repetition: `no-repeat`): Unit = js.native
+  def createPattern_norepeat(image: String, repetition: `no-repeat`): CanvasPattern | Null = js.native
   @JSName("createPattern")
-  def createPattern_repeat(image: String, repetition: repeat): Unit = js.native
+  def createPattern_repeat(image: String, repetition: repeat): CanvasPattern | Null = js.native
   @JSName("createPattern")
-  def createPattern_repeatx(image: String, repetition: `repeat-x`): Unit = js.native
+  def createPattern_repeatx(image: String, repetition: `repeat-x`): CanvasPattern | Null = js.native
   @JSName("createPattern")
-  def createPattern_repeaty(image: String, repetition: `repeat-y`): Unit = js.native
+  def createPattern_repeaty(image: String, repetition: `repeat-y`): CanvasPattern | Null = js.native
   /**
     * 将之前在绘图上下文中的描述（路径、变形、样式）画到 canvas 中
     */
@@ -268,6 +263,8 @@ trait CanvasContext extends js.Object {
     */
   def setFillStyle(): Unit = js.native
   def setFillStyle(color: String): Unit = js.native
+  def setFillStyle(color: CanvasPattern): Unit = js.native
+  def setFillStyle(color: CanvasGradient): Unit = js.native
   /**
     * 设置字体的字号
     */
@@ -327,6 +324,8 @@ trait CanvasContext extends js.Object {
     */
   def setStrokeStyle(): Unit = js.native
   def setStrokeStyle(color: String): Unit = js.native
+  def setStrokeStyle(color: CanvasPattern): Unit = js.native
+  def setStrokeStyle(color: CanvasGradient): Unit = js.native
   /**
     * 设置文字的对齐
     */

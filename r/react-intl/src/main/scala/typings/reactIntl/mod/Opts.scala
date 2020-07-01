@@ -12,7 +12,7 @@ trait Opts[IntlPropName /* <: String */, ForwardRef /* <: Boolean */] extends js
 
 object Opts {
   @scala.inline
-  def apply[IntlPropName, ForwardRef](
+  def apply[/* <: java.lang.String */ IntlPropName, /* <: scala.Boolean */ ForwardRef](
     enforceContext: js.UndefOr[Boolean] = js.undefined,
     forwardRef: ForwardRef = null,
     intlPropName: IntlPropName = null

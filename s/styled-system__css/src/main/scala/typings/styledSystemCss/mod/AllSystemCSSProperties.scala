@@ -399,11 +399,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * Map of all available CSS properties (including aliases) and their raw value.
-  * Only used internally to map CCS properties to input types (responsive value,
-  * theme function or nested) in `SystemCssProperties`.
-  */
 /* Inlined parent @styled-system/css.@styled-system/css.Omit<@styled-system/css.@styled-system/css.CSSProperties, 'boxShadow' | 'fontWeight' | 'zIndex'> */
 /* Inlined parent @styled-system/css.@styled-system/css.AliasesCSSProperties */
 /* Inlined parent @styled-system/css.@styled-system/css.OverwriteCSSProperties */

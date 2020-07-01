@@ -19,9 +19,9 @@ trait SchemaAutoscalingPolicyLoadBalancingUtilization extends js.Object {
 
 object SchemaAutoscalingPolicyLoadBalancingUtilization {
   @scala.inline
-  def apply(utilizationTarget: Int | Double = null): SchemaAutoscalingPolicyLoadBalancingUtilization = {
+  def apply(utilizationTarget: js.UndefOr[Double] = js.undefined): SchemaAutoscalingPolicyLoadBalancingUtilization = {
     val __obj = js.Dynamic.literal()
-    if (utilizationTarget != null) __obj.updateDynamic("utilizationTarget")(utilizationTarget.asInstanceOf[js.Any])
+    if (!js.isUndefined(utilizationTarget)) __obj.updateDynamic("utilizationTarget")(utilizationTarget.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAutoscalingPolicyLoadBalancingUtilization]
   }
 }

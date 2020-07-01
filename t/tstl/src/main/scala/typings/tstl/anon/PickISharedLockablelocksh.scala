@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Pick<tstl.tstl/internal/thread/ISharedLockable.ISharedLockable, 'lock_shared' | 'unlock_shared'> */
+/* Inlined std.Pick<tstl.tstl/base/thread/ISharedLockable.ISharedLockable, 'lock_shared' | 'unlock_shared'> */
 @js.native
 trait PickISharedLockablelocksh extends js.Object {
   @JSName("lock_shared")

@@ -21,7 +21,7 @@ trait InnerRef[T /* <: Is[_] */] extends js.Object {
 
 object InnerRef {
   @scala.inline
-  def apply[T](innerRef: (js.Function1[/* ref */ RefType[T], Unit]) | RefObject[RefType[T]] = null, is: T = null): InnerRef[T] = {
+  def apply[/* <: typings.uiBox.boxTypesMod.Is[_] */ T](innerRef: (js.Function1[/* ref */ RefType[T], Unit]) | RefObject[RefType[T]] = null, is: T = null): InnerRef[T] = {
     val __obj = js.Dynamic.literal()
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])

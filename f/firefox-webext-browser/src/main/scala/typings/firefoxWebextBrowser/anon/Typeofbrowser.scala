@@ -264,8 +264,8 @@ trait Typeofbrowser extends js.Object {
     */
   val privacy: Typeofprivacy
   /**
-    * Use the browser.proxy API to register proxy scripts in Firefox. Proxy scripts in Firefox are proxy auto-config files
-    * with extra contextual information and support for additional return types.
+    * Provides access to global proxy settings for Firefox and proxy event listeners to handle dynamic proxy
+    * implementations.
     *
     * Permissions: `proxy`
     *
@@ -276,8 +276,6 @@ trait Typeofbrowser extends js.Object {
     * Use the `browser.runtime` API to retrieve the background page, return details about the manifest, and listen for and
     * respond to events in the app or extension lifecycle. You can also use this API to convert the relative path of URLs
     * to fully-qualified URLs.
-    *
-    * Allowed in: Proxy scripts
     */
   val runtime: Typeofruntime
   /**

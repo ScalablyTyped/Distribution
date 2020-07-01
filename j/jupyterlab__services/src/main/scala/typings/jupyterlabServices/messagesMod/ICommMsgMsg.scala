@@ -20,7 +20,7 @@ trait ICommMsgMsg[T /* <: iopub | shell */] extends IMessage[comm_msg] {
 
 object ICommMsgMsg {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.jupyterlabServices.jupyterlabServicesStrings.iopub | typings.jupyterlabServices.jupyterlabServicesStrings.shell */ T](
     channel: T,
     content: Commid,
     header: IHeader[comm_msg],

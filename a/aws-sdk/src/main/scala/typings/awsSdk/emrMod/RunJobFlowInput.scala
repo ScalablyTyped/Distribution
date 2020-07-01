@@ -51,6 +51,10 @@ trait RunJobFlowInput extends js.Object {
     */
   var KerberosAttributes: js.UndefOr[typings.awsSdk.emrMod.KerberosAttributes] = js.native
   /**
+    * The AWS KMS customer master key (CMK) used for encrypting log files. If a value is not provided, the logs will remain encrypted by AES-256. This attribute is only available with EMR version 5.30.0 and later, excluding EMR 6.0.0.
+    */
+  var LogEncryptionKmsKeyId: js.UndefOr[XmlString] = js.native
+  /**
     * The location in Amazon S3 to write the log files of the job flow. If a value is not provided, logs are not created.
     */
   var LogUri: js.UndefOr[XmlString] = js.native
@@ -123,6 +127,7 @@ object RunJobFlowInput {
     EbsRootVolumeSize: js.UndefOr[Integer] = js.undefined,
     JobFlowRole: XmlString = null,
     KerberosAttributes: KerberosAttributes = null,
+    LogEncryptionKmsKeyId: XmlString = null,
     LogUri: XmlString = null,
     ManagedScalingPolicy: ManagedScalingPolicy = null,
     NewSupportedProducts: NewSupportedProductsList = null,
@@ -148,6 +153,7 @@ object RunJobFlowInput {
     if (!js.isUndefined(EbsRootVolumeSize)) __obj.updateDynamic("EbsRootVolumeSize")(EbsRootVolumeSize.get.asInstanceOf[js.Any])
     if (JobFlowRole != null) __obj.updateDynamic("JobFlowRole")(JobFlowRole.asInstanceOf[js.Any])
     if (KerberosAttributes != null) __obj.updateDynamic("KerberosAttributes")(KerberosAttributes.asInstanceOf[js.Any])
+    if (LogEncryptionKmsKeyId != null) __obj.updateDynamic("LogEncryptionKmsKeyId")(LogEncryptionKmsKeyId.asInstanceOf[js.Any])
     if (LogUri != null) __obj.updateDynamic("LogUri")(LogUri.asInstanceOf[js.Any])
     if (ManagedScalingPolicy != null) __obj.updateDynamic("ManagedScalingPolicy")(ManagedScalingPolicy.asInstanceOf[js.Any])
     if (NewSupportedProducts != null) __obj.updateDynamic("NewSupportedProducts")(NewSupportedProducts.asInstanceOf[js.Any])

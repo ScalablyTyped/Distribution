@@ -171,6 +171,7 @@ trait TablePaginationProps extends js.Object {
   var dir: js.UndefOr[String] = js.native
   var draggable: js.UndefOr[Booleanish] = js.native
   var headers: js.UndefOr[String] = js.native
+  var height: js.UndefOr[Double | String] = js.native
   var hidden: js.UndefOr[Boolean] = js.native
   var id: js.UndefOr[String] = js.native
   var inlist: js.UndefOr[js.Any] = js.native
@@ -295,6 +296,7 @@ trait TablePaginationProps extends js.Object {
   var valign: js.UndefOr[top | middle | bottom | baseline] = js.native
   var variant: js.UndefOr[head | body | footer] = js.native
   var vocab: js.UndefOr[String] = js.native
+  var width: js.UndefOr[Double | String] = js.native
   def onChangePage(event: Null, page: Double): Unit = js.native
   def onChangePage(event: MouseEvent[HTMLButtonElement, NativeMouseEvent], page: Double): Unit = js.native
 }

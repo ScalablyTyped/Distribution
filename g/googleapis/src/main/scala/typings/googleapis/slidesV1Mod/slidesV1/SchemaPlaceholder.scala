@@ -28,9 +28,9 @@ trait SchemaPlaceholder extends js.Object {
 
 object SchemaPlaceholder {
   @scala.inline
-  def apply(index: Int | Double = null, parentObjectId: String = null, `type`: String = null): SchemaPlaceholder = {
+  def apply(index: js.UndefOr[Double] = js.undefined, parentObjectId: String = null, `type`: String = null): SchemaPlaceholder = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (parentObjectId != null) __obj.updateDynamic("parentObjectId")(parentObjectId.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPlaceholder]

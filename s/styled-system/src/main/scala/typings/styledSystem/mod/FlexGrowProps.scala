@@ -17,7 +17,7 @@ trait FlexGrowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Ob
 
 object FlexGrowProps {
   @scala.inline
-  def apply[ThemeType](flexGrow: js.UndefOr[Null | (ResponsiveValue[GlobalsNumber, ThemeType])] = js.undefined): FlexGrowProps[ThemeType] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](flexGrow: js.UndefOr[Null | (ResponsiveValue[GlobalsNumber, ThemeType])] = js.undefined): FlexGrowProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(flexGrow)) __obj.updateDynamic("flexGrow")(flexGrow.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlexGrowProps[ThemeType]]

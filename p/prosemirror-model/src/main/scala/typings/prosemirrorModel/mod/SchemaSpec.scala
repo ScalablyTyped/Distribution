@@ -38,7 +38,7 @@ trait SchemaSpec[N /* <: String */, M /* <: String */] extends js.Object {
 
 object SchemaSpec {
   @scala.inline
-  def apply[N, M](
+  def apply[/* <: java.lang.String */ N, /* <: java.lang.String */ M](
     nodes: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in N ]: prosemirror-model.prosemirror-model.NodeSpec}
     */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec with TopLevel[js.Any]) | ^[NodeSpec],

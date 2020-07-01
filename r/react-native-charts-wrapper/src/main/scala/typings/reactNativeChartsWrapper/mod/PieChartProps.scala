@@ -75,6 +75,7 @@ object PieChartProps {
     drawEntryLabels: js.UndefOr[Boolean] = js.undefined,
     entryLabelColor: js.UndefOr[Color] = js.undefined,
     entryLabelTextSize: js.UndefOr[Double] = js.undefined,
+    focusable: js.UndefOr[Boolean] = js.undefined,
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
     highlightPerTapEnabled: js.UndefOr[Boolean] = js.undefined,
     highlights: js.Array[DataIndex] = null,
@@ -161,6 +162,7 @@ object PieChartProps {
     if (!js.isUndefined(drawEntryLabels)) __obj.updateDynamic("drawEntryLabels")(drawEntryLabels.get.asInstanceOf[js.Any])
     if (!js.isUndefined(entryLabelColor)) __obj.updateDynamic("entryLabelColor")(entryLabelColor.get.asInstanceOf[js.Any])
     if (!js.isUndefined(entryLabelTextSize)) __obj.updateDynamic("entryLabelTextSize")(entryLabelTextSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.get.asInstanceOf[js.Any])
     if (!js.isUndefined(highlightPerTapEnabled)) __obj.updateDynamic("highlightPerTapEnabled")(highlightPerTapEnabled.get.asInstanceOf[js.Any])
     if (highlights != null) __obj.updateDynamic("highlights")(highlights.asInstanceOf[js.Any])

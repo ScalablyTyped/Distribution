@@ -47,7 +47,7 @@ object SchemaDemoteMasterContext {
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (masterInstanceName != null) __obj.updateDynamic("masterInstanceName")(masterInstanceName.asInstanceOf[js.Any])
     if (replicaConfiguration != null) __obj.updateDynamic("replicaConfiguration")(replicaConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(verifyGtidConsistency)) __obj.updateDynamic("verifyGtidConsistency")(verifyGtidConsistency.asInstanceOf[js.Any])
+    if (!js.isUndefined(verifyGtidConsistency)) __obj.updateDynamic("verifyGtidConsistency")(verifyGtidConsistency.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDemoteMasterContext]
   }
 }

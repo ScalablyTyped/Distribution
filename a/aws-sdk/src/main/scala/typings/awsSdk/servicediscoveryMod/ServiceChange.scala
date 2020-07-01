@@ -13,19 +13,20 @@ trait ServiceChange extends js.Object {
   /**
     * A complex type that contains information about the Route 53 DNS records that you want AWS Cloud Map to create when you register an instance.
     */
-  var DnsConfig: DnsConfigChange = js.native
+  var DnsConfig: js.UndefOr[DnsConfigChange] = js.native
   var HealthCheckConfig: js.UndefOr[typings.awsSdk.servicediscoveryMod.HealthCheckConfig] = js.native
 }
 
 object ServiceChange {
   @scala.inline
   def apply(
-    DnsConfig: DnsConfigChange,
     Description: ResourceDescription = null,
+    DnsConfig: DnsConfigChange = null,
     HealthCheckConfig: HealthCheckConfig = null
   ): ServiceChange = {
-    val __obj = js.Dynamic.literal(DnsConfig = DnsConfig.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (DnsConfig != null) __obj.updateDynamic("DnsConfig")(DnsConfig.asInstanceOf[js.Any])
     if (HealthCheckConfig != null) __obj.updateDynamic("HealthCheckConfig")(HealthCheckConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceChange]
   }

@@ -41,7 +41,7 @@ trait ConstructionSite[T /* <: BuildableStructureConstant */] extends RoomObject
 
 object ConstructionSite {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.screeps.BuildableStructureConstant */ T](
     effects: js.Array[RoomObjectEffect],
     id: Id[ConstructionSite[T]],
     my: Boolean,

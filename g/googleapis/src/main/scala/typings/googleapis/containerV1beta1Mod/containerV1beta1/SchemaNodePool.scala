@@ -78,7 +78,7 @@ object SchemaNodePool {
     autoscaling: SchemaNodePoolAutoscaling = null,
     conditions: js.Array[SchemaStatusCondition] = null,
     config: SchemaNodeConfig = null,
-    initialNodeCount: Int | Double = null,
+    initialNodeCount: js.UndefOr[Double] = js.undefined,
     instanceGroupUrls: js.Array[String] = null,
     management: SchemaNodeManagement = null,
     maxPodsConstraint: SchemaMaxPodsConstraint = null,
@@ -92,7 +92,7 @@ object SchemaNodePool {
     if (autoscaling != null) __obj.updateDynamic("autoscaling")(autoscaling.asInstanceOf[js.Any])
     if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (initialNodeCount != null) __obj.updateDynamic("initialNodeCount")(initialNodeCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialNodeCount)) __obj.updateDynamic("initialNodeCount")(initialNodeCount.get.asInstanceOf[js.Any])
     if (instanceGroupUrls != null) __obj.updateDynamic("instanceGroupUrls")(instanceGroupUrls.asInstanceOf[js.Any])
     if (management != null) __obj.updateDynamic("management")(management.asInstanceOf[js.Any])
     if (maxPodsConstraint != null) __obj.updateDynamic("maxPodsConstraint")(maxPodsConstraint.asInstanceOf[js.Any])

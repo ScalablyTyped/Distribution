@@ -15,7 +15,7 @@ trait MarkSerializerConfig[S /* <: Schema[_, _] */] extends js.Object {
 
 object MarkSerializerConfig {
   @scala.inline
-  def apply[S](
+  def apply[/* <: typings.prosemirrorModel.mod.Schema[_, _] */ S](
     close: String | MarkSerializerMethod[S],
     open: String | MarkSerializerMethod[S],
     escape: js.UndefOr[Boolean] = js.undefined,

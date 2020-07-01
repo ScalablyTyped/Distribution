@@ -35,6 +35,7 @@ trait InternalFieldProps extends js.Object {
     js.Function3[/* value */ StoreValue, /* prevValue */ StoreValue, /* allValues */ Store, StoreValue]
   ] = js.undefined
   var onReset: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var preserve: js.UndefOr[Boolean] = js.undefined
   var rules: js.UndefOr[js.Array[Rule]] = js.undefined
   var shouldUpdate: js.UndefOr[ShouldUpdate] = js.undefined
   var trigger: js.UndefOr[String] = js.undefined
@@ -55,6 +56,7 @@ object InternalFieldProps {
     name: InternalNamePath = null,
     normalize: (/* value */ StoreValue, /* prevValue */ StoreValue, /* allValues */ Store) => StoreValue = null,
     onReset: () => Unit = null,
+    preserve: js.UndefOr[Boolean] = js.undefined,
     rules: js.Array[Rule] = null,
     shouldUpdate: ShouldUpdate = null,
     trigger: String = null,
@@ -72,6 +74,7 @@ object InternalFieldProps {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (normalize != null) __obj.updateDynamic("normalize")(js.Any.fromFunction3(normalize))
     if (onReset != null) __obj.updateDynamic("onReset")(js.Any.fromFunction0(onReset))
+    if (!js.isUndefined(preserve)) __obj.updateDynamic("preserve")(preserve.get.asInstanceOf[js.Any])
     if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     if (shouldUpdate != null) __obj.updateDynamic("shouldUpdate")(shouldUpdate.asInstanceOf[js.Any])
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])

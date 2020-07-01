@@ -11,7 +11,7 @@ trait GetParametersForImportResponse extends js.Object {
     */
   var ImportToken: js.UndefOr[CiphertextType] = js.native
   /**
-    * The identifier of the CMK to use in a subsequent ImportKeyMaterial request. This is the same CMK specified in the GetParametersForImport request.
+    * The Amazon Resource Name (key ARN) of the CMK to use in a subsequent ImportKeyMaterial request. This is the same CMK specified in the GetParametersForImport request.
     */
   var KeyId: js.UndefOr[KeyIdType] = js.native
   /**

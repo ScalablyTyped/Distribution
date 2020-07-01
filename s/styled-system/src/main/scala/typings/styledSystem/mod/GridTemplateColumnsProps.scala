@@ -15,7 +15,7 @@ trait GridTemplateColumnsProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TV
 
 object GridTemplateColumnsProps {
   @scala.inline
-  def apply[ThemeType, TVal](gridTemplateColumns: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): GridTemplateColumnsProps[ThemeType, TVal] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType, TVal](gridTemplateColumns: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): GridTemplateColumnsProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(gridTemplateColumns)) __obj.updateDynamic("gridTemplateColumns")(gridTemplateColumns.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridTemplateColumnsProps[ThemeType, TVal]]

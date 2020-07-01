@@ -5,19 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CascaderState extends js.Object {
-  var activeValue: js.UndefOr[js.Array[String]] = js.undefined
+  var activeValue: js.UndefOr[CascaderValueType] = js.undefined
   var popupVisible: js.UndefOr[Boolean] = js.undefined
   var prevProps: js.UndefOr[CascaderProps] = js.undefined
-  var value: js.UndefOr[js.Array[String]] = js.undefined
+  var value: js.UndefOr[CascaderValueType] = js.undefined
 }
 
 object CascaderState {
   @scala.inline
   def apply(
-    activeValue: js.Array[String] = null,
+    activeValue: CascaderValueType = null,
     popupVisible: js.UndefOr[Boolean] = js.undefined,
     prevProps: CascaderProps = null,
-    value: js.Array[String] = null
+    value: CascaderValueType = null
   ): CascaderState = {
     val __obj = js.Dynamic.literal()
     if (activeValue != null) __obj.updateDynamic("activeValue")(activeValue.asInstanceOf[js.Any])

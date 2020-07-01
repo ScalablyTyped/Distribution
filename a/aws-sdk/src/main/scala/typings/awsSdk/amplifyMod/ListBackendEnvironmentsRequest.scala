@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListBackendEnvironmentsRequest extends js.Object {
   /**
-    *  Unique Id for an amplify App. 
+    *  The unique ID for an Amplify app. 
     */
   var appId: AppId = js.native
   /**
-    *  Name of the backend environment 
+    *  The name of the backend environment 
     */
   var environmentName: js.UndefOr[EnvironmentName] = js.native
   /**
-    *  Maximum number of records to list in a single response. 
+    *  The maximum number of records to list in a single response. 
     */
   var maxResults: js.UndefOr[MaxResults] = js.native
   /**
-    *  Pagination token. Set to null to start listing backen environments from start. If a non-null pagination token is returned in a result, then pass its value in here to list more backend environments. 
+    *  A pagination token. Set to null to start listing backend environments from the start. If a non-null pagination token is returned in a result, pass its value in here to list more backend environments. 
     */
   var nextToken: js.UndefOr[NextToken] = js.native
 }

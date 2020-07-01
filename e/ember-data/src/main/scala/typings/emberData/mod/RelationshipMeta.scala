@@ -20,7 +20,7 @@ trait RelationshipMeta[Model /* <: Model */] extends js.Object {
 
 object RelationshipMeta {
   @scala.inline
-  def apply[Model](
+  def apply[/* <: typings.emberData.mod.DS.Model */ Model](
     isRelationship: `true`,
     key: RelationshipsFor[Model],
     kind: belongsTo | hasMany,

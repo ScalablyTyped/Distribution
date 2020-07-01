@@ -1,6 +1,6 @@
 package typings.googleapis.computeV1Mod.computeV1
 
-import typings.googleapis.AnonDiskGb
+import typings.googleapis.anon.DiskGb
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -68,7 +68,7 @@ trait SchemaMachineType extends js.Object {
   /**
     * [Output Only] A list of extended scratch disks assigned to the instance.
     */
-  var scratchDisks: js.UndefOr[js.Array[AnonDiskGb]] = js.native
+  var scratchDisks: js.UndefOr[js.Array[DiskGb]] = js.native
   /**
     * [Output Only] Server-defined URL for the resource.
     */
@@ -86,16 +86,16 @@ object SchemaMachineType {
     creationTimestamp: String = null,
     deprecated: SchemaDeprecationStatus = null,
     description: String = null,
-    guestCpus: Int | Double = null,
+    guestCpus: js.UndefOr[Double] = js.undefined,
     id: String = null,
-    imageSpaceGb: Int | Double = null,
+    imageSpaceGb: js.UndefOr[Double] = js.undefined,
     isSharedCpu: js.UndefOr[Boolean] = js.undefined,
     kind: String = null,
-    maximumPersistentDisks: Int | Double = null,
+    maximumPersistentDisks: js.UndefOr[Double] = js.undefined,
     maximumPersistentDisksSizeGb: String = null,
-    memoryMb: Int | Double = null,
+    memoryMb: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    scratchDisks: js.Array[AnonDiskGb] = null,
+    scratchDisks: js.Array[DiskGb] = null,
     selfLink: String = null,
     zone: String = null
   ): SchemaMachineType = {
@@ -103,14 +103,14 @@ object SchemaMachineType {
     if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
     if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (guestCpus != null) __obj.updateDynamic("guestCpus")(guestCpus.asInstanceOf[js.Any])
+    if (!js.isUndefined(guestCpus)) __obj.updateDynamic("guestCpus")(guestCpus.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (imageSpaceGb != null) __obj.updateDynamic("imageSpaceGb")(imageSpaceGb.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSharedCpu)) __obj.updateDynamic("isSharedCpu")(isSharedCpu.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageSpaceGb)) __obj.updateDynamic("imageSpaceGb")(imageSpaceGb.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSharedCpu)) __obj.updateDynamic("isSharedCpu")(isSharedCpu.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (maximumPersistentDisks != null) __obj.updateDynamic("maximumPersistentDisks")(maximumPersistentDisks.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumPersistentDisks)) __obj.updateDynamic("maximumPersistentDisks")(maximumPersistentDisks.get.asInstanceOf[js.Any])
     if (maximumPersistentDisksSizeGb != null) __obj.updateDynamic("maximumPersistentDisksSizeGb")(maximumPersistentDisksSizeGb.asInstanceOf[js.Any])
-    if (memoryMb != null) __obj.updateDynamic("memoryMb")(memoryMb.asInstanceOf[js.Any])
+    if (!js.isUndefined(memoryMb)) __obj.updateDynamic("memoryMb")(memoryMb.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (scratchDisks != null) __obj.updateDynamic("scratchDisks")(scratchDisks.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])

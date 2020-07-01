@@ -40,7 +40,7 @@ object SchemaAccount {
     if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
     if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(shareData)) __obj.updateDynamic("shareData")(shareData.asInstanceOf[js.Any])
+    if (!js.isUndefined(shareData)) __obj.updateDynamic("shareData")(shareData.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAccount]
   }
 }

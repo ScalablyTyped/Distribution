@@ -32,7 +32,7 @@ object SchemaGoogleDevtoolsRemoteexecutionV1testFileNode {
   ): SchemaGoogleDevtoolsRemoteexecutionV1testFileNode = {
     val __obj = js.Dynamic.literal()
     if (digest != null) __obj.updateDynamic("digest")(digest.asInstanceOf[js.Any])
-    if (!js.isUndefined(isExecutable)) __obj.updateDynamic("isExecutable")(isExecutable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExecutable)) __obj.updateDynamic("isExecutable")(isExecutable.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteexecutionV1testFileNode]
   }

@@ -37,12 +37,12 @@ trait SchemaGoogleCloudDialogflowV2Context extends js.Object {
 object SchemaGoogleCloudDialogflowV2Context {
   @scala.inline
   def apply(
-    lifespanCount: Int | Double = null,
+    lifespanCount: js.UndefOr[Double] = js.undefined,
     name: String = null,
     parameters: StringDictionary[js.Any] = null
   ): SchemaGoogleCloudDialogflowV2Context = {
     val __obj = js.Dynamic.literal()
-    if (lifespanCount != null) __obj.updateDynamic("lifespanCount")(lifespanCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(lifespanCount)) __obj.updateDynamic("lifespanCount")(lifespanCount.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2Context]

@@ -1,7 +1,5 @@
 package typings.schemaUtils.validationErrorMod
 
-import typings.jsonSchema.mod.JSONSchema4
-import typings.schemaUtils.anon.ErrorObjectchildrenArrayE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,23 +12,11 @@ class default protected () extends ValidationError {
     * @param {Schema} schema
     * @param {ValidationErrorConfiguration} configuration
     */
-  def this(errors: js.Array[ErrorObjectchildrenArrayE], schema: JSONSchema4) = this()
-  def this(errors: js.Array[ErrorObjectchildrenArrayE], schema: typings.jsonSchema.mod.JSONSchema6) = this()
-  def this(errors: js.Array[ErrorObjectchildrenArrayE], schema: typings.jsonSchema.mod.JSONSchema7) = this()
+  def this(errors: js.Array[SchemaUtilErrorObject], schema: Schema) = this()
   def this(
-    errors: js.Array[ErrorObjectchildrenArrayE],
-    schema: JSONSchema4,
-    configuration: typings.schemaUtils.validateMod.ValidationErrorConfiguration
-  ) = this()
-  def this(
-    errors: js.Array[ErrorObjectchildrenArrayE],
-    schema: typings.jsonSchema.mod.JSONSchema6,
-    configuration: typings.schemaUtils.validateMod.ValidationErrorConfiguration
-  ) = this()
-  def this(
-    errors: js.Array[ErrorObjectchildrenArrayE],
-    schema: typings.jsonSchema.mod.JSONSchema7,
-    configuration: typings.schemaUtils.validateMod.ValidationErrorConfiguration
+    errors: js.Array[SchemaUtilErrorObject],
+    schema: Schema,
+    configuration: ValidationErrorConfiguration
   ) = this()
   /* CompleteClass */
   override var message: String = js.native

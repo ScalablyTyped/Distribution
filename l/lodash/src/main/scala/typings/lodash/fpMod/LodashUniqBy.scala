@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashUniqBy extends js.Object {
+trait LodashUniqBy extends LodashConvertible {
   def apply[T](iteratee: ValueIteratee[T]): js.Array[T] = js.native
   def apply[T](iteratee: ValueIteratee[T], array: List[T]): js.Array[T] = js.native
   def apply[T](iteratee: __): LodashUniqBy1x2[T] = js.native

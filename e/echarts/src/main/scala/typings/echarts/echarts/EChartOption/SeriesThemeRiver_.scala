@@ -1,9 +1,8 @@
 package typings.echarts.echarts.EChartOption
 
 import typings.echarts.anon.BorderType
-import typings.echarts.anon.ExtraCssText
-import typings.echarts.anon.LabelTextShadowColor
-import typings.echarts.anon.TextShadowBlur
+import typings.echarts.anon.LabelTextShadowBlur
+import typings.echarts.anon.TextBorderWidth
 import typings.echarts.echarts.EChartOption.SeriesThemeRiver.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -206,7 +205,7 @@ trait SeriesThemeRiver_ extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis
     */
-  var emphasis: js.UndefOr[LabelTextShadowColor] = js.undefined
+  var emphasis: js.UndefOr[LabelTextShadowBlur] = js.undefined
   /**
     * Height of thmemRiver component.
     *
@@ -241,7 +240,7 @@ trait SeriesThemeRiver_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.label
     */
-  var label: js.UndefOr[TextShadowBlur] = js.undefined
+  var label: js.UndefOr[TextBorderWidth] = js.undefined
   /**
     * Distance between thmemRiver component and the left side of the
     * container.
@@ -259,6 +258,14 @@ trait SeriesThemeRiver_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.left
     */
   var left: js.UndefOr[Double | String] = js.undefined
+  /**
+    * Series name used for displaying in
+    * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.name
+    */
+  var name: js.UndefOr[String] = js.undefined
   /**
     * Distance between thmemRiver component and the right side of the
     * container.
@@ -286,7 +293,7 @@ trait SeriesThemeRiver_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
   /**
     * Distance between thmemRiver component and the top side of the
     * container.
@@ -333,7 +340,7 @@ trait SeriesThemeRiver_ extends js.Object {
     */
   var z: js.UndefOr[Double] = js.undefined
   /**
-    * `zlevel` value of all graghical elements in .
+    * `zlevel` value of all graphical elements in the series.
     *
     * `zlevel` is used to make layers with Canvas.
     * Graphical elements with different `zlevel` values will be placed
@@ -361,15 +368,16 @@ object SeriesThemeRiver_ {
     data: js.Array[
       (js.Array[Unit | Double | String | DataObject]) | DataObject | Double | String | Unit
     ] = null,
-    emphasis: LabelTextShadowColor = null,
+    emphasis: LabelTextShadowBlur = null,
     height: Double | String = null,
     id: String = null,
     itemStyle: BorderType = null,
-    label: TextShadowBlur = null,
+    label: TextBorderWidth = null,
     left: Double | String = null,
+    name: String = null,
     right: Double | String = null,
     singleAxisIndex: js.UndefOr[Double] = js.undefined,
-    tooltip: ExtraCssText = null,
+    tooltip: BaseTooltip = null,
     top: Double | String = null,
     `type`: String = null,
     width: Double | String = null,
@@ -387,6 +395,7 @@ object SeriesThemeRiver_ {
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
     if (!js.isUndefined(singleAxisIndex)) __obj.updateDynamic("singleAxisIndex")(singleAxisIndex.get.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])

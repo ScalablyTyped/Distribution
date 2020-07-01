@@ -33,7 +33,7 @@ trait OverflowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Ob
 
 object OverflowProps {
   @scala.inline
-  def apply[ThemeType](
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](
     overflow: js.UndefOr[Null | (ResponsiveValue[OverflowProperty, ThemeType])] = js.undefined,
     overflowX: js.UndefOr[Null | (ResponsiveValue[OverflowXProperty, ThemeType])] = js.undefined,
     overflowY: js.UndefOr[Null | (ResponsiveValue[OverflowYProperty, ThemeType])] = js.undefined

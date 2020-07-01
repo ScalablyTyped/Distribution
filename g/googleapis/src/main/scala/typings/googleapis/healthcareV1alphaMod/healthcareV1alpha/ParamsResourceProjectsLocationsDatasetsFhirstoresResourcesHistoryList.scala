@@ -58,7 +58,7 @@ object ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesHistoryList {
     at: String = null,
     auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
     callback: String = null,
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     fields: String = null,
     key: String = null,
     name: String = null,
@@ -77,13 +77,13 @@ object ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesHistoryList {
     if (at != null) __obj.updateDynamic("at")(at.asInstanceOf[js.Any])
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
     if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])

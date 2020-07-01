@@ -33,13 +33,13 @@ object SchemaTurnBasedMatchResults {
   def apply(
     data: SchemaTurnBasedMatchDataRequest = null,
     kind: String = null,
-    matchVersion: Int | Double = null,
+    matchVersion: js.UndefOr[Double] = js.undefined,
     results: js.Array[SchemaParticipantResult] = null
   ): SchemaTurnBasedMatchResults = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (matchVersion != null) __obj.updateDynamic("matchVersion")(matchVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchVersion)) __obj.updateDynamic("matchVersion")(matchVersion.get.asInstanceOf[js.Any])
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTurnBasedMatchResults]
   }

@@ -218,7 +218,22 @@ class MatrixClient () extends EventEmitter {
     atEventId: String,
     callback: MatrixCallback
   ): js.Promise[js.Object] = js.native
+  def mxcUrlToHttp(mxcUrl: String): Null | String = js.native
+  def mxcUrlToHttp(mxcUrl: String, width: Double): Null | String = js.native
+  def mxcUrlToHttp(mxcUrl: String, width: Double, height: Double): Null | String = js.native
+  def mxcUrlToHttp(mxcUrl: String, width: Double, height: Double, resizeMethod: String): Null | String = js.native
   def mxcUrlToHttp(mxcUrl: String, width: Double, height: Double, resizeMethod: String, allowDirectLinks: Boolean): Null | String = js.native
+  def mxcUrlToHttp(mxcUrl: String, width: Double, height: Double, resizeMethod: Null, allowDirectLinks: Boolean): Null | String = js.native
+  def mxcUrlToHttp(mxcUrl: String, width: Double, height: Null, resizeMethod: String): Null | String = js.native
+  def mxcUrlToHttp(mxcUrl: String, width: Double, height: Null, resizeMethod: String, allowDirectLinks: Boolean): Null | String = js.native
+  def mxcUrlToHttp(mxcUrl: String, width: Double, height: Null, resizeMethod: Null, allowDirectLinks: Boolean): Null | String = js.native
+  def mxcUrlToHttp(mxcUrl: String, width: Null, height: Double): Null | String = js.native
+  def mxcUrlToHttp(mxcUrl: String, width: Null, height: Double, resizeMethod: String): Null | String = js.native
+  def mxcUrlToHttp(mxcUrl: String, width: Null, height: Double, resizeMethod: String, allowDirectLinks: Boolean): Null | String = js.native
+  def mxcUrlToHttp(mxcUrl: String, width: Null, height: Double, resizeMethod: Null, allowDirectLinks: Boolean): Null | String = js.native
+  def mxcUrlToHttp(mxcUrl: String, width: Null, height: Null, resizeMethod: String): Null | String = js.native
+  def mxcUrlToHttp(mxcUrl: String, width: Null, height: Null, resizeMethod: String, allowDirectLinks: Boolean): Null | String = js.native
+  def mxcUrlToHttp(mxcUrl: String, width: Null, height: Null, resizeMethod: Null, allowDirectLinks: Boolean): Null | String = js.native
   def paginateEventTimeline(eventTimeline: EventTimeline): js.Promise[Boolean] = js.native
   def paginateEventTimeline(eventTimeline: EventTimeline, opts: js.Object): js.Promise[Boolean] = js.native
   def peekInRoom(roomId: String): js.Promise[js.Object] = js.native

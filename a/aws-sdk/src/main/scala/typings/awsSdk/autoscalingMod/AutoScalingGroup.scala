@@ -23,7 +23,7 @@ trait AutoScalingGroup extends js.Object {
     */
   var CreatedTime: TimestampType = js.native
   /**
-    * The amount of time, in seconds, after a scaling activity completes before another scaling activity can start.
+    * The duration of the default cooldown period, in seconds.
     */
   var DefaultCooldown: Cooldown = js.native
   /**
@@ -59,7 +59,7 @@ trait AutoScalingGroup extends js.Object {
     */
   var LoadBalancerNames: js.UndefOr[typings.awsSdk.autoscalingMod.LoadBalancerNames] = js.native
   /**
-    * The maximum amount of time, in seconds, that an instance can be in service. Valid Range: Minimum value of 604800.
+    * The maximum amount of time, in seconds, that an instance can be in service. Valid Range: Minimum value of 0.
     */
   var MaxInstanceLifetime: js.UndefOr[typings.awsSdk.autoscalingMod.MaxInstanceLifetime] = js.native
   /**
@@ -87,7 +87,7 @@ trait AutoScalingGroup extends js.Object {
     */
   var ServiceLinkedRoleARN: js.UndefOr[ResourceName] = js.native
   /**
-    * The current state of the group when DeleteAutoScalingGroup is in progress.
+    * The current state of the group when the DeleteAutoScalingGroup operation is in progress.
     */
   var Status: js.UndefOr[XmlStringMaxLen255] = js.native
   /**

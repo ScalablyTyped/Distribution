@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "odata" : "1.0.4"
+      "odata" : "1.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "odata" : "1.0.4"
+      "odata" : "1.1.0"
     }
   ],
   "compile-devDependencies" : [

@@ -50,18 +50,18 @@ trait SchemaCropProperties extends js.Object {
 object SchemaCropProperties {
   @scala.inline
   def apply(
-    angle: Int | Double = null,
-    offsetBottom: Int | Double = null,
-    offsetLeft: Int | Double = null,
-    offsetRight: Int | Double = null,
-    offsetTop: Int | Double = null
+    angle: js.UndefOr[Double] = js.undefined,
+    offsetBottom: js.UndefOr[Double] = js.undefined,
+    offsetLeft: js.UndefOr[Double] = js.undefined,
+    offsetRight: js.UndefOr[Double] = js.undefined,
+    offsetTop: js.UndefOr[Double] = js.undefined
   ): SchemaCropProperties = {
     val __obj = js.Dynamic.literal()
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (offsetBottom != null) __obj.updateDynamic("offsetBottom")(offsetBottom.asInstanceOf[js.Any])
-    if (offsetLeft != null) __obj.updateDynamic("offsetLeft")(offsetLeft.asInstanceOf[js.Any])
-    if (offsetRight != null) __obj.updateDynamic("offsetRight")(offsetRight.asInstanceOf[js.Any])
-    if (offsetTop != null) __obj.updateDynamic("offsetTop")(offsetTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetBottom)) __obj.updateDynamic("offsetBottom")(offsetBottom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetLeft)) __obj.updateDynamic("offsetLeft")(offsetLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetRight)) __obj.updateDynamic("offsetRight")(offsetRight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetTop)) __obj.updateDynamic("offsetTop")(offsetTop.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCropProperties]
   }
 }

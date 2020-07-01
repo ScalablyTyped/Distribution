@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation._
 
 trait LabelFontStyle extends js.Object {
   /**
-    * @see https://echarts.apache.org/en/option.html#series-lines.emphasis.label
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.itemStyle
+    */
+  var itemStyle: js.UndefOr[BorderType] = js.undefined
+  /**
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label
     */
   var label: js.UndefOr[FontStyle] = js.undefined
-  /**
-    * @see https://echarts.apache.org/en/option.html#series-lines.emphasis.lineStyle
-    */
-  var lineStyle: js.UndefOr[ShadowBlur] = js.undefined
 }
 
 object LabelFontStyle {
   @scala.inline
-  def apply(label: FontStyle = null, lineStyle: ShadowBlur = null): LabelFontStyle = {
+  def apply(itemStyle: BorderType = null, label: FontStyle = null): LabelFontStyle = {
     val __obj = js.Dynamic.literal()
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelFontStyle]
   }
 }

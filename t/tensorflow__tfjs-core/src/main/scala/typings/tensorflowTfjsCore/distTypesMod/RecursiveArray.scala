@@ -9,7 +9,7 @@ trait RecursiveArray[T /* <: js.Any */] extends /* index */ NumberDictionary[T |
 
 object RecursiveArray {
   @scala.inline
-  def apply[T](NumberDictionary: /* index */ NumberDictionary[T | RecursiveArray[T]] = null): RecursiveArray[T] = {
+  def apply[/* <: js.Any */ T](NumberDictionary: /* index */ NumberDictionary[T | RecursiveArray[T]] = null): RecursiveArray[T] = {
     val __obj = js.Dynamic.literal()
     if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[RecursiveArray[T]]

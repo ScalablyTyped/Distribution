@@ -1,6 +1,6 @@
 package typings.googleapis.fusiontablesV2Mod.fusiontablesV2
 
-import typings.googleapis.AnonColors
+import typings.googleapis.anon.Colors
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ trait SchemaStyleFunction extends js.Object {
     * Gradient function that interpolates a range of colors based on column
     * value.
     */
-  var gradient: js.UndefOr[AnonColors] = js.native
+  var gradient: js.UndefOr[Colors] = js.native
   /**
     * Stylers can be one of three kinds: &quot;fusiontables#fromColumn if the
     * column value is to be used as is, i.e., the column values can have colors
@@ -41,7 +41,7 @@ object SchemaStyleFunction {
   def apply(
     buckets: js.Array[SchemaBucket] = null,
     columnName: String = null,
-    gradient: AnonColors = null,
+    gradient: Colors = null,
     kind: String = null
   ): SchemaStyleFunction = {
     val __obj = js.Dynamic.literal()

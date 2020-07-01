@@ -22,6 +22,10 @@ trait PostmateOptions extends js.Object {
     */
   var model: js.UndefOr[js.Any] = js.undefined
   /**
+    * A name which is used for the name attribute of the created iFrame
+    */
+  var name: js.UndefOr[String] = js.undefined
+  /**
     * A URL to load in the iFrame. The origin of this URL will also be used for securing message transport
     */
   var url: String
@@ -33,12 +37,14 @@ object PostmateOptions {
     url: String,
     classListArray: js.Array[String] = null,
     container: js.UndefOr[Null | HTMLElement] = js.undefined,
-    model: js.Any = null
+    model: js.Any = null,
+    name: String = null
   ): PostmateOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (classListArray != null) __obj.updateDynamic("classListArray")(classListArray.asInstanceOf[js.Any])
     if (!js.isUndefined(container)) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostmateOptions]
   }
 }

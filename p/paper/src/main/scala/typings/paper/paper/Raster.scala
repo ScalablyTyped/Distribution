@@ -1,5 +1,6 @@
 package typings.paper.paper
 
+import typings.std.CanvasImageSource
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
@@ -92,14 +93,13 @@ trait Raster extends Item {
     */
   def clear(): Unit = js.native
   def createImageData(size: Size): ImageData = js.native
-  def drawImage(image: HTMLCanvasElement, point: Point): Unit = js.native
   /** 
     * Draws an image on the raster.
     * 
     * @param point - the offset of the image as a point in pixel
     * coordinates
     */
-  def drawImage(image: HTMLImageElement, point: Point): Unit = js.native
+  def drawImage(image: CanvasImageSource, point: Point): Unit = js.native
   /** 
     * Calculates the average color of the image within the given path,
     * rectangle or point. This can be used for creating raster image

@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait WithStylesOptions extends BaseOptions {
+trait WithStylesOptions extends BaseOptions[DefaultTheme] {
   var injectTheme: js.UndefOr[Boolean] = js.undefined
   var jss: js.UndefOr[Jss] = js.undefined
 }
@@ -26,7 +26,7 @@ object WithStylesOptions {
     link: js.UndefOr[Boolean] = js.undefined,
     media: String = null,
     meta: String = null,
-    theming: Theming[js.Object] = null
+    theming: Theming[DefaultTheme] = null
   ): WithStylesOptions = {
     val __obj = js.Dynamic.literal()
     if (classNamePrefix != null) __obj.updateDynamic("classNamePrefix")(classNamePrefix.asInstanceOf[js.Any])

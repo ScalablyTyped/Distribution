@@ -23,7 +23,7 @@ trait BootstrapTableRef[T /* <: js.Object */] extends js.Object {
 
 object BootstrapTableRef {
   @scala.inline
-  def apply[T](
+  def apply[/* <: js.Object */ T](
     table: Props[T],
     cellEditContext: StartEditing = null,
     filterContext: CurrFilters = null,

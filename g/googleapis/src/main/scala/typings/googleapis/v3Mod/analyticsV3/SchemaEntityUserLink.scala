@@ -1,7 +1,7 @@
 package typings.googleapis.v3Mod.analyticsV3
 
-import typings.googleapis.AnonAccountRef
-import typings.googleapis.AnonLocal
+import typings.googleapis.anon.AccountRef
+import typings.googleapis.anon.Local
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait SchemaEntityUserLink extends js.Object {
     * Entity for this link. It can be an account, a web property, or a view
     * (profile).
     */
-  var entity: js.UndefOr[AnonAccountRef] = js.native
+  var entity: js.UndefOr[AccountRef] = js.native
   /**
     * Entity user link ID
     */
@@ -28,7 +28,7 @@ trait SchemaEntityUserLink extends js.Object {
   /**
     * Permissions the user has for this entity.
     */
-  var permissions: js.UndefOr[AnonLocal] = js.native
+  var permissions: js.UndefOr[Local] = js.native
   /**
     * Self link for this resource.
     */
@@ -42,10 +42,10 @@ trait SchemaEntityUserLink extends js.Object {
 object SchemaEntityUserLink {
   @scala.inline
   def apply(
-    entity: AnonAccountRef = null,
+    entity: AccountRef = null,
     id: String = null,
     kind: String = null,
-    permissions: AnonLocal = null,
+    permissions: Local = null,
     selfLink: String = null,
     userRef: SchemaUserRef = null
   ): SchemaEntityUserLink = {

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateAppResponse extends js.Object {
   /**
-    * The app's Amazon Resource Name (ARN).
+    * The App's Amazon Resource Name (ARN).
     */
   var AppArn: js.UndefOr[typings.awsSdk.sagemakerMod.AppArn] = js.native
 }

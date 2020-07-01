@@ -12,6 +12,9 @@ import scala.scalajs.js.annotation._
 
 object pollyjsCoreStrings {
   @js.native
+  sealed trait abort extends js.Object
+  
+  @js.native
   sealed trait beforePersist extends RecordingRouteEvent
   
   @js.native
@@ -63,6 +66,8 @@ object pollyjsCoreStrings {
   @js.native
   sealed trait warn extends EXPIRY_STRATEGY
   
+  @scala.inline
+  def abort: abort = "abort".asInstanceOf[abort]
   @scala.inline
   def beforePersist: beforePersist = "beforePersist".asInstanceOf[beforePersist]
   @scala.inline

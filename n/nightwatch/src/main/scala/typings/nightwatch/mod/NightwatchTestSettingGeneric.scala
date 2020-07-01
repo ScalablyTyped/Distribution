@@ -45,7 +45,7 @@ trait NightwatchTestSettingGeneric extends js.Object {
   /**
     * An object which will be made available within the test and can be overwritten per environment. Example:"globals" : {  "myGlobal" : "some_global" }
     */
-  var globals: js.UndefOr[NightwatchGlobals] = js.undefined
+  var globals: js.UndefOr[NightwatchTestHooks] = js.undefined
   /**
     * A url which can be used later in the tests as the main url to load. Can be useful if your tests will run on different environments, each one with a different url.
     */
@@ -99,7 +99,7 @@ object NightwatchTestSettingGeneric {
     end_session_on_fail: js.UndefOr[Boolean] = js.undefined,
     exclude: js.Array[String] = null,
     filter: String = null,
-    globals: NightwatchGlobals = null,
+    globals: NightwatchTestHooks = null,
     launch_url: String = null,
     log_screenshot_data: js.UndefOr[Boolean] = js.undefined,
     output: js.UndefOr[Boolean] = js.undefined,

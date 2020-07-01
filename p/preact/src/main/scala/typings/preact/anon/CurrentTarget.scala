@@ -11,7 +11,7 @@ trait CurrentTarget[Target /* <: EventTarget */] extends js.Object {
 
 object CurrentTarget {
   @scala.inline
-  def apply[Target](currentTarget: Target): CurrentTarget[Target] = {
+  def apply[/* <: typings.std.EventTarget */ Target](currentTarget: Target): CurrentTarget[Target] = {
     val __obj = js.Dynamic.literal(currentTarget = currentTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrentTarget[Target]]
   }

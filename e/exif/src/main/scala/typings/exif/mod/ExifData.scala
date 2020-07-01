@@ -12,6 +12,10 @@ import scala.scalajs.js.annotation._
 
 trait ExifData extends js.Object {
   var exif: ApertureValue
+  /**
+    * Entire GPS Tags from https://exiftool.org/TagNames/GPS.html are listed.
+    * And their types are determined from http://www.exif.org/Exif2-2.PDF.
+    */
   var gps: GPSAltitude
   var image: Copyright
   var interoperability: InteropIndex

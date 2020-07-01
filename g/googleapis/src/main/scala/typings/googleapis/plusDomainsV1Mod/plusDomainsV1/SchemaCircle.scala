@@ -1,6 +1,6 @@
 package typings.googleapis.plusDomainsV1Mod.plusDomainsV1
 
-import typings.googleapis.AnonTotalItemsNumber
+import typings.googleapis.anon.TotalItemsNumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +30,7 @@ trait SchemaCircle extends js.Object {
   /**
     * The people in this circle.
     */
-  var people: js.UndefOr[AnonTotalItemsNumber] = js.native
+  var people: js.UndefOr[TotalItemsNumber] = js.native
   /**
     * Link to this circle resource
     */
@@ -45,7 +45,7 @@ object SchemaCircle {
     etag: String = null,
     id: String = null,
     kind: String = null,
-    people: AnonTotalItemsNumber = null,
+    people: TotalItemsNumber = null,
     selfLink: String = null
   ): SchemaCircle = {
     val __obj = js.Dynamic.literal()

@@ -10,7 +10,7 @@ trait Route[T /* <: typings.reactNativeTabView.typesMod.Route */] extends js.Obj
 
 object Route {
   @scala.inline
-  def apply[T](route: T): Route[T] = {
+  def apply[/* <: typings.reactNativeTabView.typesMod.Route */ T](route: T): Route[T] = {
     val __obj = js.Dynamic.literal(route = route.asInstanceOf[js.Any])
     __obj.asInstanceOf[Route[T]]
   }

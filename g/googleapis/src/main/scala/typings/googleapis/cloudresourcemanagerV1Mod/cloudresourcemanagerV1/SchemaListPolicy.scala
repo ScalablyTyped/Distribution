@@ -130,7 +130,7 @@ object SchemaListPolicy {
     if (allValues != null) __obj.updateDynamic("allValues")(allValues.asInstanceOf[js.Any])
     if (allowedValues != null) __obj.updateDynamic("allowedValues")(allowedValues.asInstanceOf[js.Any])
     if (deniedValues != null) __obj.updateDynamic("deniedValues")(deniedValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(inheritFromParent)) __obj.updateDynamic("inheritFromParent")(inheritFromParent.asInstanceOf[js.Any])
+    if (!js.isUndefined(inheritFromParent)) __obj.updateDynamic("inheritFromParent")(inheritFromParent.get.asInstanceOf[js.Any])
     if (suggestedValue != null) __obj.updateDynamic("suggestedValue")(suggestedValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListPolicy]
   }

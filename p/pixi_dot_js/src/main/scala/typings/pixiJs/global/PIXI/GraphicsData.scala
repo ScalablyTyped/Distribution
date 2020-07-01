@@ -18,10 +18,12 @@ class GraphicsData protected ()
   def this(shape: typings.pixiJs.PIXI.Ellipse) = this()
   def this(shape: typings.pixiJs.PIXI.Polygon) = this()
   def this(shape: typings.pixiJs.PIXI.Rectangle) = this()
+  def this(shape: typings.pixiJs.PIXI.RoundedRectangle) = this()
   def this(shape: typings.pixiJs.PIXI.Circle, fillStyle: typings.pixiJs.PIXI.FillStyle) = this()
   def this(shape: typings.pixiJs.PIXI.Ellipse, fillStyle: typings.pixiJs.PIXI.FillStyle) = this()
   def this(shape: typings.pixiJs.PIXI.Polygon, fillStyle: typings.pixiJs.PIXI.FillStyle) = this()
   def this(shape: typings.pixiJs.PIXI.Rectangle, fillStyle: typings.pixiJs.PIXI.FillStyle) = this()
+  def this(shape: typings.pixiJs.PIXI.RoundedRectangle, fillStyle: typings.pixiJs.PIXI.FillStyle) = this()
   def this(
     shape: typings.pixiJs.PIXI.Circle,
     fillStyle: typings.pixiJs.PIXI.FillStyle,
@@ -43,6 +45,11 @@ class GraphicsData protected ()
     lineStyle: typings.pixiJs.PIXI.LineStyle
   ) = this()
   def this(
+    shape: typings.pixiJs.PIXI.RoundedRectangle,
+    fillStyle: typings.pixiJs.PIXI.FillStyle,
+    lineStyle: typings.pixiJs.PIXI.LineStyle
+  ) = this()
+  def this(
     shape: typings.pixiJs.PIXI.Circle,
     fillStyle: typings.pixiJs.PIXI.FillStyle,
     lineStyle: typings.pixiJs.PIXI.LineStyle,
@@ -62,6 +69,12 @@ class GraphicsData protected ()
   ) = this()
   def this(
     shape: typings.pixiJs.PIXI.Rectangle,
+    fillStyle: typings.pixiJs.PIXI.FillStyle,
+    lineStyle: typings.pixiJs.PIXI.LineStyle,
+    matrix: typings.pixiJs.PIXI.Matrix
+  ) = this()
+  def this(
+    shape: typings.pixiJs.PIXI.RoundedRectangle,
     fillStyle: typings.pixiJs.PIXI.FillStyle,
     lineStyle: typings.pixiJs.PIXI.LineStyle,
     matrix: typings.pixiJs.PIXI.Matrix
@@ -110,6 +123,7 @@ class GraphicsData protected ()
   override var `type`: Double = js.native
   /**
     * Destroys the Graphics data.
+    *
     */
   /* CompleteClass */
   override def destroy(): Unit = js.native

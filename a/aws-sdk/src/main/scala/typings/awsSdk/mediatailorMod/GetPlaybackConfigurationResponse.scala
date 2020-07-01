@@ -15,6 +15,10 @@ trait GetPlaybackConfigurationResponse extends js.Object {
     */
   var AvailSuppression: js.UndefOr[typings.awsSdk.mediatailorMod.AvailSuppression] = js.native
   /**
+    * The configuration for bumpers. Bumpers are short audio or video clips that play at the start or before the end of an ad break. 
+    */
+  var Bumper: js.UndefOr[typings.awsSdk.mediatailorMod.Bumper] = js.native
+  /**
     * The configuration for using a content delivery network (CDN), like Amazon CloudFront, for content and ad segment management. 
     */
   var CdnConfiguration: js.UndefOr[typings.awsSdk.mediatailorMod.CdnConfiguration] = js.native
@@ -73,6 +77,7 @@ object GetPlaybackConfigurationResponse {
   def apply(
     AdDecisionServerUrl: string = null,
     AvailSuppression: AvailSuppression = null,
+    Bumper: Bumper = null,
     CdnConfiguration: CdnConfiguration = null,
     DashConfiguration: DashConfiguration = null,
     HlsConfiguration: HlsConfiguration = null,
@@ -90,6 +95,7 @@ object GetPlaybackConfigurationResponse {
     val __obj = js.Dynamic.literal()
     if (AdDecisionServerUrl != null) __obj.updateDynamic("AdDecisionServerUrl")(AdDecisionServerUrl.asInstanceOf[js.Any])
     if (AvailSuppression != null) __obj.updateDynamic("AvailSuppression")(AvailSuppression.asInstanceOf[js.Any])
+    if (Bumper != null) __obj.updateDynamic("Bumper")(Bumper.asInstanceOf[js.Any])
     if (CdnConfiguration != null) __obj.updateDynamic("CdnConfiguration")(CdnConfiguration.asInstanceOf[js.Any])
     if (DashConfiguration != null) __obj.updateDynamic("DashConfiguration")(DashConfiguration.asInstanceOf[js.Any])
     if (HlsConfiguration != null) __obj.updateDynamic("HlsConfiguration")(HlsConfiguration.asInstanceOf[js.Any])

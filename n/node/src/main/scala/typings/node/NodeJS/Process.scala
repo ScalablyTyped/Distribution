@@ -3,6 +3,7 @@ package typings.node.NodeJS
 import typings.node.anon.Debug
 import typings.node.anon.SwallowErrors
 import typings.node.anon.Targetdefaults
+import typings.node.nodeBooleans.`true`
 import typings.node.nodeStrings.beforeExit
 import typings.node.nodeStrings.disconnect
 import typings.node.nodeStrings.exit
@@ -64,12 +65,12 @@ trait Process extends EventEmitter {
     ]
   ] = js.native
   /**
-    * Can also be a tty.WriteStream, not typed due to limitation.s
+    * Can also be a tty.WriteStream, not typed due to limitations.
     */
   var stderr: WriteStream = js.native
   var stdin: ReadStream = js.native
   /**
-    * Can also be a tty.WriteStream, not typed due to limitation.s
+    * Can also be a tty.WriteStream, not typed due to limitations.
     */
   var stdout: WriteStream = js.native
   var title: String = js.native
@@ -150,9 +151,9 @@ trait Process extends EventEmitter {
   def hasUncaughtExceptionCaptureCallback(): Boolean = js.native
   def hrtime(): js.Tuple2[Double, Double] = js.native
   def hrtime(time: js.Tuple2[Double, Double]): js.Tuple2[Double, Double] = js.native
-  def kill(pid: Double): Unit = js.native
-  def kill(pid: Double, signal: String): Unit = js.native
-  def kill(pid: Double, signal: Double): Unit = js.native
+  def kill(pid: Double): `true` = js.native
+  def kill(pid: Double, signal: String): `true` = js.native
+  def kill(pid: Double, signal: Double): `true` = js.native
   def listeners(event: Signals): js.Array[SignalsListener] = js.native
   @JSName("listeners")
   def listeners_beforeExit(event: beforeExit): js.Array[BeforeExitListener] = js.native

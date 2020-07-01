@@ -11,19 +11,19 @@ trait DescribedServer extends js.Object {
     */
   var Arn: typings.awsSdk.transferMod.Arn = js.native
   /**
-    * The Amazon Resource Name (ARN) of the AWS Certificate Manager (ACM) certificate. Required when Protocols is set to FTPS.
+    * Specifies the ARN of the AWS Certificate Manager (ACM) certificate. Required when Protocols is set to FTPS.
     */
   var Certificate: js.UndefOr[typings.awsSdk.transferMod.Certificate] = js.native
   /**
-    * The virtual private cloud (VPC) endpoint settings that you configured for your file transfer protocol-enabled server.
+    * Specifies the virtual private cloud (VPC) endpoint settings that you configured for your file transfer protocol-enabled server.
     */
   var EndpointDetails: js.UndefOr[typings.awsSdk.transferMod.EndpointDetails] = js.native
   /**
-    * The type of endpoint that your file transfer protocol-enabled server is connected to. If your server is connected to a VPC endpoint, your server isn't accessible over the public internet.
+    * Defines the type of endpoint that your file transfer protocol-enabled server is connected to. If your server is connected to a VPC endpoint, your server isn't accessible over the public internet.
     */
   var EndpointType: js.UndefOr[typings.awsSdk.transferMod.EndpointType] = js.native
   /**
-    * Contains the message-digest algorithm (MD5) hash of a file transfer protocol-enabled server's host key. This value is equivalent to the output of the ssh-keygen -l -E md5 -f my-new-server-key command.
+    * Specifies the Base64-encoded SHA256 fingerprint of the server's host key. This value is equivalent to the output of the ssh-keygen -l -f my-new-server-key command.
     */
   var HostKeyFingerprint: js.UndefOr[typings.awsSdk.transferMod.HostKeyFingerprint] = js.native
   /**
@@ -31,31 +31,31 @@ trait DescribedServer extends js.Object {
     */
   var IdentityProviderDetails: js.UndefOr[typings.awsSdk.transferMod.IdentityProviderDetails] = js.native
   /**
-    * Defines the mode of authentication method enabled for this service. A value of SERVICE_MANAGED means that you are using this file transfer protocol-enabled server to store and access user credentials within the service. A value of API_GATEWAY indicates that you have integrated an API Gateway endpoint that will be invoked for authenticating your user into the service.
+    * Specifies the mode of authentication method enabled for this service. A value of SERVICE_MANAGED means that you are using this file transfer protocol-enabled server to store and access user credentials within the service. A value of API_GATEWAY indicates that you have integrated an API Gateway endpoint that will be invoked for authenticating your user into the service.
     */
   var IdentityProviderType: js.UndefOr[typings.awsSdk.transferMod.IdentityProviderType] = js.native
   /**
-    * An AWS Identity and Access Management (IAM) entity that allows a file transfer protocol-enabled server to turn on Amazon CloudWatch logging for Amazon S3 events. When set, user activity can be viewed in your CloudWatch logs.
+    * Specifies the AWS Identity and Access Management (IAM) role that allows a file transfer protocol-enabled server to turn on Amazon CloudWatch logging for Amazon S3 events. When set, user activity can be viewed in your CloudWatch logs.
     */
   var LoggingRole: js.UndefOr[Role] = js.native
   /**
-    * Specifies the file transfer protocol or protocols over which your file transfer protocol client can connect to your server's endpoint. The available protocols are:   Secure Shell (SSH) File Transfer Protocol (SFTP): File transfer over SSH   File Transfer Protocol Secure (FTPS): File transfer with TLS encryption   File Transfer Protocol (FTP): Unencrypted file transfer  
+    * Specifies the file transfer protocol or protocols over which your file transfer protocol client can connect to your server's endpoint. The available protocols are:    SFTP (Secure Shell (SSH) File Transfer Protocol): File transfer over SSH    FTPS (File Transfer Protocol Secure): File transfer with TLS encryption    FTP (File Transfer Protocol): Unencrypted file transfer  
     */
   var Protocols: js.UndefOr[typings.awsSdk.transferMod.Protocols] = js.native
   /**
-    * Unique system-assigned identifier for a file transfer protocol-enabled server that you instantiate.
+    * Specifies the unique system-assigned identifier for a file transfer protocol-enabled server that you instantiate.
     */
   var ServerId: js.UndefOr[typings.awsSdk.transferMod.ServerId] = js.native
   /**
-    * The condition of a file transfer protocol-enabled server for the server that was described. A value of ONLINE indicates that the server can accept jobs and transfer files. A State value of OFFLINE means that the server cannot perform file transfer operations. The states of STARTING and STOPPING indicate that the server is in an intermediate state, either not fully able to respond, or not fully offline. The values of START_FAILED or STOP_FAILED can indicate an error condition.
+    * Specifies the condition of a file transfer protocol-enabled server for the server that was described. A value of ONLINE indicates that the server can accept jobs and transfer files. A State value of OFFLINE means that the server cannot perform file transfer operations. The states of STARTING and STOPPING indicate that the server is in an intermediate state, either not fully able to respond, or not fully offline. The values of START_FAILED or STOP_FAILED can indicate an error condition.
     */
   var State: js.UndefOr[typings.awsSdk.transferMod.State] = js.native
   /**
-    * Contains the key-value pairs that you can use to search for and group file transfer protocol-enabled servers that were assigned to the server that was described.
+    * Specifies the key-value pairs that you can use to search for and group file transfer protocol-enabled servers that were assigned to the server that was described.
     */
   var Tags: js.UndefOr[typings.awsSdk.transferMod.Tags] = js.native
   /**
-    * The number of users that are assigned to a file transfer protocol-enabled server you specified with the ServerId.
+    * Specifies the number of users that are assigned to a file transfer protocol-enabled server you specified with the ServerId.
     */
   var UserCount: js.UndefOr[typings.awsSdk.transferMod.UserCount] = js.native
 }

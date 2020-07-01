@@ -94,6 +94,10 @@ trait IDocumentCardProps
     */
   var onClickHref: js.UndefOr[String] = js.undefined
   /**
+    * A target browser context for opening the link. If not specified, will open in the same tab/window.
+    */
+  var onClickTarget: js.UndefOr[String] = js.undefined
+  /**
     * Function to call when the card is clicked or keyboard Enter/Space is pushed.
     */
   @JSName("onClick")
@@ -205,6 +209,7 @@ object IDocumentCardProps {
     onChange: FormEvent[HTMLDivElement] => Unit = null,
     onClick: /* ev */ js.UndefOr[SyntheticEvent[HTMLElement, Event]] => Unit = null,
     onClickHref: String = null,
+    onClickTarget: String = null,
     onCompositionEnd: CompositionEvent[HTMLDivElement] => Unit = null,
     onCompositionStart: CompositionEvent[HTMLDivElement] => Unit = null,
     onCompositionUpdate: CompositionEvent[HTMLDivElement] => Unit = null,
@@ -386,6 +391,7 @@ object IDocumentCardProps {
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onClickHref != null) __obj.updateDynamic("onClickHref")(onClickHref.asInstanceOf[js.Any])
+    if (onClickTarget != null) __obj.updateDynamic("onClickTarget")(onClickTarget.asInstanceOf[js.Any])
     if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(js.Any.fromFunction1(onCompositionEnd))
     if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(js.Any.fromFunction1(onCompositionStart))
     if (onCompositionUpdate != null) __obj.updateDynamic("onCompositionUpdate")(js.Any.fromFunction1(onCompositionUpdate))

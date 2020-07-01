@@ -1,5 +1,7 @@
 package typings.ionicCore.componentsMod.LocalJSX
 
+import typings.ionicCore.animationInterfaceMod.Animation
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.interfaceMod.RouterDirection
 import typings.ionicCore.ionicCoreStrings.button
 import typings.ionicCore.ionicCoreStrings.ios
@@ -18,6 +20,10 @@ trait IonFabButton extends js.Object {
     * If `true`, the fab button will be show a close icon.
     */
   var activated: js.UndefOr[Boolean] = js.undefined
+  /**
+    * The icon name to use for the close icon. This will appear when the fab button is pressed. Only applies if it is the main button inside of a fab containing a fab list.
+    */
+  var closeIcon: js.UndefOr[String] = js.undefined
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
@@ -51,6 +57,10 @@ trait IonFabButton extends js.Object {
     */
   var rel: js.UndefOr[String] = js.undefined
   /**
+    * When using a router, it specifies the transition animation when navigating to another page using `href`.
+    */
+  var routerAnimation: js.UndefOr[AnimationBuilder] = js.undefined
+  /**
     * When using a router, it specifies the transition direction when navigating to another page using `href`.
     */
   var routerDirection: js.UndefOr[RouterDirection] = js.undefined
@@ -59,7 +69,7 @@ trait IonFabButton extends js.Object {
     */
   var show: js.UndefOr[Boolean] = js.undefined
   /**
-    * The size of the button. Set this to `small` in order to have a mini fab.
+    * The size of the button. Set this to `small` in order to have a mini fab button.
     */
   var size: js.UndefOr[small] = js.undefined
   /**
@@ -80,6 +90,7 @@ object IonFabButton {
   @scala.inline
   def apply(
     activated: js.UndefOr[Boolean] = js.undefined,
+    closeIcon: String = null,
     color: Color = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     download: String = null,
@@ -88,6 +99,7 @@ object IonFabButton {
     onIonBlur: /* event */ CustomEvent[Unit] => Unit = null,
     onIonFocus: /* event */ CustomEvent[Unit] => Unit = null,
     rel: String = null,
+    routerAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     routerDirection: RouterDirection = null,
     show: js.UndefOr[Boolean] = js.undefined,
     size: small = null,
@@ -97,6 +109,7 @@ object IonFabButton {
   ): IonFabButton = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(activated)) __obj.updateDynamic("activated")(activated.get.asInstanceOf[js.Any])
+    if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (download != null) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
@@ -105,6 +118,7 @@ object IonFabButton {
     if (onIonBlur != null) __obj.updateDynamic("onIonBlur")(js.Any.fromFunction1(onIonBlur))
     if (onIonFocus != null) __obj.updateDynamic("onIonFocus")(js.Any.fromFunction1(onIonFocus))
     if (rel != null) __obj.updateDynamic("rel")(rel.asInstanceOf[js.Any])
+    if (routerAnimation != null) __obj.updateDynamic("routerAnimation")(js.Any.fromFunction2(routerAnimation))
     if (routerDirection != null) __obj.updateDynamic("routerDirection")(routerDirection.asInstanceOf[js.Any])
     if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

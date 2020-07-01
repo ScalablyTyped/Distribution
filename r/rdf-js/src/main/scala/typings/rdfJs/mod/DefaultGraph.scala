@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DefaultGraph
-  extends QuadGraph
-     with Term {
+  extends _QuadGraph
+     with _Term {
   /**
     * Contains the constant "DefaultGraph".
     */

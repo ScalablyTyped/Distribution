@@ -15,6 +15,15 @@ import scala.scalajs.js.annotation._
 
 trait ColumnDescription[T /* <: js.Object */, E] extends js.Object {
   var align: js.UndefOr[CellAlignment] = js.undefined
+  var classes: js.UndefOr[
+    String | (js.Function4[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* cell */ js.Any, 
+      /* row */ T, 
+      /* rowIndex */ Double, 
+      /* colIndex */ Double, 
+      String
+    ])
+  ] = js.undefined
   /**
     * Toggle column display in CSV export
     */
@@ -80,6 +89,15 @@ trait ColumnDescription[T /* <: js.Object */, E] extends js.Object {
   var searchable: js.UndefOr[Boolean] = js.undefined
   var sort: js.UndefOr[Boolean] = js.undefined
   var sortFunc: js.UndefOr[ColumnSortFunc[T, _]] = js.undefined
+  var style: js.UndefOr[
+    CSSProperties | (js.Function4[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* cell */ js.Any, 
+      /* row */ T, 
+      /* rowIndex */ Double, 
+      /* colIndex */ Double, 
+      CSSProperties
+    ])
+  ] = js.undefined
   /**
     * Column header field
     */
@@ -90,10 +108,17 @@ trait ColumnDescription[T /* <: js.Object */, E] extends js.Object {
 
 object ColumnDescription {
   @scala.inline
-  def apply[T, E](
+  def apply[/* <: js.Object */ T, E](
     dataField: js.Any,
     text: String,
     align: CellAlignment = null,
+    classes: String | (js.Function4[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* cell */ js.Any, 
+      /* row */ T, 
+      /* rowIndex */ Double, 
+      /* colIndex */ Double, 
+      String
+    ]) = null,
     csvExport: js.UndefOr[Boolean] = js.undefined,
     csvFormatter: (_, T, /* rowIndex */ Double, E) => Element | String | Boolean | ReactText = null,
     csvText: String = null,
@@ -124,11 +149,19 @@ object ColumnDescription {
     searchable: js.UndefOr[Boolean] = js.undefined,
     sort: js.UndefOr[Boolean] = js.undefined,
     sortFunc: (/* import warning: importer.ImportType#apply Failed type conversion: T[E] */ /* a */ js.Any, /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ /* b */ js.Any, /* order */ asc | desc, /* dataField */ js.Any, T, T) => Double = null,
+    style: CSSProperties | (js.Function4[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* cell */ js.Any, 
+      /* row */ T, 
+      /* rowIndex */ Double, 
+      /* colIndex */ Double, 
+      CSSProperties
+    ]) = null,
     tooltipDataField: String = null,
     width: js.UndefOr[Double] = js.undefined
   ): ColumnDescription[T, E] = {
     val __obj = js.Dynamic.literal(dataField = dataField.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (!js.isUndefined(csvExport)) __obj.updateDynamic("csvExport")(csvExport.get.asInstanceOf[js.Any])
     if (csvFormatter != null) __obj.updateDynamic("csvFormatter")(js.Any.fromFunction4(csvFormatter))
     if (csvText != null) __obj.updateDynamic("csvText")(csvText.asInstanceOf[js.Any])
@@ -154,6 +187,7 @@ object ColumnDescription {
     if (!js.isUndefined(searchable)) __obj.updateDynamic("searchable")(searchable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.get.asInstanceOf[js.Any])
     if (sortFunc != null) __obj.updateDynamic("sortFunc")(js.Any.fromFunction6(sortFunc))
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tooltipDataField != null) __obj.updateDynamic("tooltipDataField")(tooltipDataField.asInstanceOf[js.Any])
     if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnDescription[T, E]]

@@ -1,5 +1,14 @@
 package typings.awsLambda
 
+import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildCacheType
+import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildEnvironmentComputeType
+import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildEnvironmentPullCredentialsType
+import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildEnvironmentType
+import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildEnvironmentVariableType
+import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildPhaseStatusType
+import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildPhaseType
+import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildSourceLocationType
+import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildStateType
 import typings.awsLambda.codepipelineCloudwatchActionMod.CodePipelineActionCategory
 import typings.awsLambda.codepipelineCloudwatchActionMod.CodePipelineActionState
 import typings.awsLambda.codepipelineCloudwatchPipelineMod.CodePipelineState
@@ -19,22 +28,58 @@ object awsLambdaStrings {
   sealed trait ADMIN_NO_SRP_AUTH extends js.Object
   
   @js.native
+  sealed trait ARM_CONTAINER extends CodeBuildEnvironmentType
+  
+  @js.native
   sealed trait AWS extends js.Object
   
   @js.native
   sealed trait Approval extends CodePipelineActionCategory
   
   @js.native
+  sealed trait BITBUCKET extends CodeBuildSourceLocationType
+  
+  @js.native
+  sealed trait BUILD extends CodeBuildPhaseType
+  
+  @js.native
+  sealed trait BUILD_GENERAL1_2XLARGE extends CodeBuildEnvironmentComputeType
+  
+  @js.native
+  sealed trait BUILD_GENERAL1_LARGE extends CodeBuildEnvironmentComputeType
+  
+  @js.native
+  sealed trait BUILD_GENERAL1_MEDIUM extends CodeBuildEnvironmentComputeType
+  
+  @js.native
+  sealed trait BUILD_GENERAL1_SMALL extends CodeBuildEnvironmentComputeType
+  
+  @js.native
   sealed trait Binary extends _SQSMessageAttributeDataType
   
   @js.native
-  sealed trait Build extends CodePipelineActionCategory
+  sealed trait Build_ extends CodePipelineActionCategory
   
   @js.native
   sealed trait CANCELED
     extends CodePipelineActionState
        with CodePipelineStageState
        with CodePipelineState
+  
+  @js.native
+  sealed trait CLIENT_ERROR extends CodeBuildPhaseStatusType
+  
+  @js.native
+  sealed trait CODEBUILD extends CodeBuildEnvironmentPullCredentialsType
+  
+  @js.native
+  sealed trait CODECOMMIT extends CodeBuildSourceLocationType
+  
+  @js.native
+  sealed trait CODEPIPELINE extends CodeBuildSourceLocationType
+  
+  @js.native
+  sealed trait COMPLETED extends CodeBuildPhaseType
   
   @js.native
   sealed trait CONFIRMED extends js.Object
@@ -44,6 +89,9 @@ object awsLambdaStrings {
   
   @js.native
   sealed trait Close extends js.Object
+  
+  @js.native
+  sealed trait `CodeBuild Build State Change` extends js.Object
   
   @js.native
   sealed trait `CodePipeline Action Execution State Change` extends js.Object
@@ -100,6 +148,9 @@ object awsLambdaStrings {
   sealed trait DEVICE_SRP_AUTH extends js.Object
   
   @js.native
+  sealed trait DOWNLOAD_SOURCE extends CodeBuildPhaseType
+  
+  @js.native
   sealed trait DefineAuthChallenge_Authentication extends js.Object
   
   @js.native
@@ -131,9 +182,17 @@ object awsLambdaStrings {
   
   @js.native
   sealed trait FAILED
-    extends CodePipelineActionState
+    extends CodeBuildPhaseStatusType
+       with CodeBuildStateType
+       with CodePipelineActionState
        with CodePipelineStageState
        with CodePipelineState
+  
+  @js.native
+  sealed trait FAULT extends CodeBuildPhaseStatusType
+  
+  @js.native
+  sealed trait FINALIZING extends CodeBuildPhaseType
   
   @js.native
   sealed trait Failed_ extends js.Object
@@ -145,7 +204,19 @@ object awsLambdaStrings {
   sealed trait FulfillmentCodeHook extends js.Object
   
   @js.native
+  sealed trait GITHUB extends CodeBuildSourceLocationType
+  
+  @js.native
+  sealed trait GITHUB_ENTERPRISE extends CodeBuildSourceLocationType
+  
+  @js.native
   sealed trait INSERT extends js.Object
+  
+  @js.native
+  sealed trait INSTALL extends CodeBuildPhaseType
+  
+  @js.native
+  sealed trait IN_PROGRESS extends CodeBuildStateType
   
   @js.native
   sealed trait Invoke extends CodePipelineActionCategory
@@ -157,6 +228,15 @@ object awsLambdaStrings {
   sealed trait KMS extends js.Object
   
   @js.native
+  sealed trait LINUX_CONTAINER extends CodeBuildEnvironmentType
+  
+  @js.native
+  sealed trait LINUX_GPU_CONTAINER extends CodeBuildEnvironmentType
+  
+  @js.native
+  sealed trait LOCAL extends CodeBuildCacheType
+  
+  @js.native
   sealed trait MODIFY extends js.Object
   
   @js.native
@@ -164,6 +244,12 @@ object awsLambdaStrings {
   
   @js.native
   sealed trait NEW_IMAGE extends js.Object
+  
+  @js.native
+  sealed trait NO_CACHE extends CodeBuildCacheType
+  
+  @js.native
+  sealed trait NO_SOURCE extends CodeBuildSourceLocationType
   
   @js.native
   sealed trait None extends js.Object
@@ -178,13 +264,28 @@ object awsLambdaStrings {
   sealed trait Ok extends FirehoseRecordTransformationStatus
   
   @js.native
+  sealed trait PARAMETER_STORE extends CodeBuildEnvironmentVariableType
+  
+  @js.native
   sealed trait PASSWORD_VERIFIER extends js.Object
+  
+  @js.native
+  sealed trait PLAINTEXT extends CodeBuildEnvironmentVariableType
+  
+  @js.native
+  sealed trait POST_BUILD extends CodeBuildPhaseType
+  
+  @js.native
+  sealed trait PRE_BUILD extends CodeBuildPhaseType
+  
+  @js.native
+  sealed trait PROVISIONING extends CodeBuildPhaseType
   
   @js.native
   sealed trait PermanentFailure extends S3BatchResultResultCode
   
   @js.native
-  sealed trait PlainText extends js.Object
+  sealed trait PlainText_ extends js.Object
   
   @js.native
   sealed trait PostAuthentication_Authentication extends js.Object
@@ -211,6 +312,9 @@ object awsLambdaStrings {
   sealed trait ProcessingFailed extends FirehoseRecordTransformationStatus
   
   @js.native
+  sealed trait QUEUED extends CodeBuildPhaseType
+  
+  @js.native
   sealed trait REMOVE extends js.Object
   
   @js.native
@@ -225,7 +329,15 @@ object awsLambdaStrings {
        with CodePipelineState
   
   @js.native
-  sealed trait S3 extends js.Object
+  sealed trait S3
+    extends CodeBuildCacheType
+       with CodeBuildSourceLocationType
+  
+  @js.native
+  sealed trait SECRETS_MANAGER extends CodeBuildEnvironmentVariableType
+  
+  @js.native
+  sealed trait SERVICE_ROLE extends CodeBuildEnvironmentPullCredentialsType
   
   @js.native
   sealed trait SMS extends js.Object
@@ -246,8 +358,18 @@ object awsLambdaStrings {
        with CodePipelineState
   
   @js.native
+  sealed trait STOPPED
+    extends CodeBuildPhaseStatusType
+       with CodeBuildStateType
+  
+  @js.native
+  sealed trait SUBMITTED extends CodeBuildPhaseType
+  
+  @js.native
   sealed trait SUCCEEDED
-    extends CodePipelineActionState
+    extends CodeBuildPhaseStatusType
+       with CodeBuildStateType
+       with CodePipelineActionState
        with CodePipelineStageState
        with CodePipelineState
   
@@ -271,6 +393,9 @@ object awsLambdaStrings {
   
   @js.native
   sealed trait Succeeded_ extends S3BatchResultResultCode
+  
+  @js.native
+  sealed trait TIMED_OUT extends CodeBuildPhaseStatusType
   
   @js.native
   sealed trait TOKEN extends js.Object
@@ -303,6 +428,9 @@ object awsLambdaStrings {
   sealed trait TokenGeneration_RefreshTokens extends js.Object
   
   @js.native
+  sealed trait UPLOAD_ARTIFACTS extends CodeBuildPhaseType
+  
+  @js.native
   sealed trait Update extends js.Object
   
   @js.native
@@ -318,7 +446,13 @@ object awsLambdaStrings {
   sealed trait Voice extends js.Object
   
   @js.native
+  sealed trait WINDOWS_CONTAINER extends CodeBuildEnvironmentType
+  
+  @js.native
   sealed trait applicationSlashvndDotamazonawsDotcardDotgeneric extends js.Object
+  
+  @js.native
+  sealed trait awsDotcodebuild extends js.Object
   
   @js.native
   sealed trait awsDotcodepipeline extends js.Object
@@ -364,21 +498,47 @@ object awsLambdaStrings {
   @scala.inline
   def ADMIN_NO_SRP_AUTH: ADMIN_NO_SRP_AUTH = "ADMIN_NO_SRP_AUTH".asInstanceOf[ADMIN_NO_SRP_AUTH]
   @scala.inline
+  def ARM_CONTAINER: ARM_CONTAINER = "ARM_CONTAINER".asInstanceOf[ARM_CONTAINER]
+  @scala.inline
   def AWS: AWS = "AWS".asInstanceOf[AWS]
   @scala.inline
   def Approval: Approval = "Approval".asInstanceOf[Approval]
   @scala.inline
+  def BITBUCKET: BITBUCKET = "BITBUCKET".asInstanceOf[BITBUCKET]
+  @scala.inline
+  def BUILD: BUILD = "BUILD".asInstanceOf[BUILD]
+  @scala.inline
+  def BUILD_GENERAL1_2XLARGE: BUILD_GENERAL1_2XLARGE = "BUILD_GENERAL1_2XLARGE".asInstanceOf[BUILD_GENERAL1_2XLARGE]
+  @scala.inline
+  def BUILD_GENERAL1_LARGE: BUILD_GENERAL1_LARGE = "BUILD_GENERAL1_LARGE".asInstanceOf[BUILD_GENERAL1_LARGE]
+  @scala.inline
+  def BUILD_GENERAL1_MEDIUM: BUILD_GENERAL1_MEDIUM = "BUILD_GENERAL1_MEDIUM".asInstanceOf[BUILD_GENERAL1_MEDIUM]
+  @scala.inline
+  def BUILD_GENERAL1_SMALL: BUILD_GENERAL1_SMALL = "BUILD_GENERAL1_SMALL".asInstanceOf[BUILD_GENERAL1_SMALL]
+  @scala.inline
   def Binary: Binary = "Binary".asInstanceOf[Binary]
   @scala.inline
-  def Build: Build = "Build".asInstanceOf[Build]
+  def Build_ : Build_ = "Build".asInstanceOf[Build_]
   @scala.inline
   def CANCELED: CANCELED = "CANCELED".asInstanceOf[CANCELED]
+  @scala.inline
+  def CLIENT_ERROR: CLIENT_ERROR = "CLIENT_ERROR".asInstanceOf[CLIENT_ERROR]
+  @scala.inline
+  def CODEBUILD: CODEBUILD = "CODEBUILD".asInstanceOf[CODEBUILD]
+  @scala.inline
+  def CODECOMMIT: CODECOMMIT = "CODECOMMIT".asInstanceOf[CODECOMMIT]
+  @scala.inline
+  def CODEPIPELINE: CODEPIPELINE = "CODEPIPELINE".asInstanceOf[CODEPIPELINE]
+  @scala.inline
+  def COMPLETED: COMPLETED = "COMPLETED".asInstanceOf[COMPLETED]
   @scala.inline
   def CONFIRMED: CONFIRMED = "CONFIRMED".asInstanceOf[CONFIRMED]
   @scala.inline
   def CUSTOM_CHALLENGE: CUSTOM_CHALLENGE = "CUSTOM_CHALLENGE".asInstanceOf[CUSTOM_CHALLENGE]
   @scala.inline
   def Close: Close = "Close".asInstanceOf[Close]
+  @scala.inline
+  def `CodeBuild Build State Change`: `CodeBuild Build State Change` = ("CodeBuild Build State Change").asInstanceOf[`CodeBuild Build State Change`]
   @scala.inline
   def `CodePipeline Action Execution State Change`: `CodePipeline Action Execution State Change` = ("CodePipeline Action Execution State Change").asInstanceOf[`CodePipeline Action Execution State Change`]
   @scala.inline
@@ -416,6 +576,8 @@ object awsLambdaStrings {
   @scala.inline
   def DEVICE_SRP_AUTH: DEVICE_SRP_AUTH = "DEVICE_SRP_AUTH".asInstanceOf[DEVICE_SRP_AUTH]
   @scala.inline
+  def DOWNLOAD_SOURCE: DOWNLOAD_SOURCE = "DOWNLOAD_SOURCE".asInstanceOf[DOWNLOAD_SOURCE]
+  @scala.inline
   def DefineAuthChallenge_Authentication: DefineAuthChallenge_Authentication = "DefineAuthChallenge_Authentication".asInstanceOf[DefineAuthChallenge_Authentication]
   @scala.inline
   def Delegate: Delegate = "Delegate".asInstanceOf[Delegate]
@@ -438,13 +600,25 @@ object awsLambdaStrings {
   @scala.inline
   def FAILED: FAILED = "FAILED".asInstanceOf[FAILED]
   @scala.inline
+  def FAULT: FAULT = "FAULT".asInstanceOf[FAULT]
+  @scala.inline
+  def FINALIZING: FINALIZING = "FINALIZING".asInstanceOf[FINALIZING]
+  @scala.inline
   def Failed_ : Failed_ = "Failed".asInstanceOf[Failed_]
   @scala.inline
   def Fulfilled: Fulfilled = "Fulfilled".asInstanceOf[Fulfilled]
   @scala.inline
   def FulfillmentCodeHook: FulfillmentCodeHook = "FulfillmentCodeHook".asInstanceOf[FulfillmentCodeHook]
   @scala.inline
+  def GITHUB: GITHUB = "GITHUB".asInstanceOf[GITHUB]
+  @scala.inline
+  def GITHUB_ENTERPRISE: GITHUB_ENTERPRISE = "GITHUB_ENTERPRISE".asInstanceOf[GITHUB_ENTERPRISE]
+  @scala.inline
   def INSERT: INSERT = "INSERT".asInstanceOf[INSERT]
+  @scala.inline
+  def INSTALL: INSTALL = "INSTALL".asInstanceOf[INSTALL]
+  @scala.inline
+  def IN_PROGRESS: IN_PROGRESS = "IN_PROGRESS".asInstanceOf[IN_PROGRESS]
   @scala.inline
   def Invoke: Invoke = "Invoke".asInstanceOf[Invoke]
   @scala.inline
@@ -452,11 +626,21 @@ object awsLambdaStrings {
   @scala.inline
   def KMS: KMS = "KMS".asInstanceOf[KMS]
   @scala.inline
+  def LINUX_CONTAINER: LINUX_CONTAINER = "LINUX_CONTAINER".asInstanceOf[LINUX_CONTAINER]
+  @scala.inline
+  def LINUX_GPU_CONTAINER: LINUX_GPU_CONTAINER = "LINUX_GPU_CONTAINER".asInstanceOf[LINUX_GPU_CONTAINER]
+  @scala.inline
+  def LOCAL: LOCAL = "LOCAL".asInstanceOf[LOCAL]
+  @scala.inline
   def MODIFY: MODIFY = "MODIFY".asInstanceOf[MODIFY]
   @scala.inline
   def NEW_AND_OLD_IMAGES: NEW_AND_OLD_IMAGES = "NEW_AND_OLD_IMAGES".asInstanceOf[NEW_AND_OLD_IMAGES]
   @scala.inline
   def NEW_IMAGE: NEW_IMAGE = "NEW_IMAGE".asInstanceOf[NEW_IMAGE]
+  @scala.inline
+  def NO_CACHE: NO_CACHE = "NO_CACHE".asInstanceOf[NO_CACHE]
+  @scala.inline
+  def NO_SOURCE: NO_SOURCE = "NO_SOURCE".asInstanceOf[NO_SOURCE]
   @scala.inline
   def None: None = "None".asInstanceOf[None]
   @scala.inline
@@ -466,11 +650,21 @@ object awsLambdaStrings {
   @scala.inline
   def Ok: Ok = "Ok".asInstanceOf[Ok]
   @scala.inline
+  def PARAMETER_STORE: PARAMETER_STORE = "PARAMETER_STORE".asInstanceOf[PARAMETER_STORE]
+  @scala.inline
   def PASSWORD_VERIFIER: PASSWORD_VERIFIER = "PASSWORD_VERIFIER".asInstanceOf[PASSWORD_VERIFIER]
+  @scala.inline
+  def PLAINTEXT: PLAINTEXT = "PLAINTEXT".asInstanceOf[PLAINTEXT]
+  @scala.inline
+  def POST_BUILD: POST_BUILD = "POST_BUILD".asInstanceOf[POST_BUILD]
+  @scala.inline
+  def PRE_BUILD: PRE_BUILD = "PRE_BUILD".asInstanceOf[PRE_BUILD]
+  @scala.inline
+  def PROVISIONING: PROVISIONING = "PROVISIONING".asInstanceOf[PROVISIONING]
   @scala.inline
   def PermanentFailure: PermanentFailure = "PermanentFailure".asInstanceOf[PermanentFailure]
   @scala.inline
-  def PlainText: PlainText = "PlainText".asInstanceOf[PlainText]
+  def PlainText_ : PlainText_ = "PlainText".asInstanceOf[PlainText_]
   @scala.inline
   def PostAuthentication_Authentication: PostAuthentication_Authentication = "PostAuthentication_Authentication".asInstanceOf[PostAuthentication_Authentication]
   @scala.inline
@@ -488,6 +682,8 @@ object awsLambdaStrings {
   @scala.inline
   def ProcessingFailed: ProcessingFailed = "ProcessingFailed".asInstanceOf[ProcessingFailed]
   @scala.inline
+  def QUEUED: QUEUED = "QUEUED".asInstanceOf[QUEUED]
+  @scala.inline
   def REMOVE: REMOVE = "REMOVE".asInstanceOf[REMOVE]
   @scala.inline
   def REQUEST: REQUEST = "REQUEST".asInstanceOf[REQUEST]
@@ -498,6 +694,10 @@ object awsLambdaStrings {
   @scala.inline
   def S3: S3 = "S3".asInstanceOf[S3]
   @scala.inline
+  def SECRETS_MANAGER: SECRETS_MANAGER = "SECRETS_MANAGER".asInstanceOf[SECRETS_MANAGER]
+  @scala.inline
+  def SERVICE_ROLE: SERVICE_ROLE = "SERVICE_ROLE".asInstanceOf[SERVICE_ROLE]
+  @scala.inline
   def SMS: SMS = "SMS".asInstanceOf[SMS]
   @scala.inline
   def SMS_MFA: SMS_MFA = "SMS_MFA".asInstanceOf[SMS_MFA]
@@ -507,6 +707,10 @@ object awsLambdaStrings {
   def SSML: SSML = "SSML".asInstanceOf[SSML]
   @scala.inline
   def STARTED: STARTED = "STARTED".asInstanceOf[STARTED]
+  @scala.inline
+  def STOPPED: STOPPED = "STOPPED".asInstanceOf[STOPPED]
+  @scala.inline
+  def SUBMITTED: SUBMITTED = "SUBMITTED".asInstanceOf[SUBMITTED]
   @scala.inline
   def SUCCEEDED: SUCCEEDED = "SUCCEEDED".asInstanceOf[SUCCEEDED]
   @scala.inline
@@ -523,6 +727,8 @@ object awsLambdaStrings {
   def String: String = "String".asInstanceOf[String]
   @scala.inline
   def Succeeded_ : Succeeded_ = "Succeeded".asInstanceOf[Succeeded_]
+  @scala.inline
+  def TIMED_OUT: TIMED_OUT = "TIMED_OUT".asInstanceOf[TIMED_OUT]
   @scala.inline
   def TOKEN: TOKEN = "TOKEN".asInstanceOf[TOKEN]
   @scala.inline
@@ -544,6 +750,8 @@ object awsLambdaStrings {
   @scala.inline
   def TokenGeneration_RefreshTokens: TokenGeneration_RefreshTokens = "TokenGeneration_RefreshTokens".asInstanceOf[TokenGeneration_RefreshTokens]
   @scala.inline
+  def UPLOAD_ARTIFACTS: UPLOAD_ARTIFACTS = "UPLOAD_ARTIFACTS".asInstanceOf[UPLOAD_ARTIFACTS]
+  @scala.inline
   def Update: Update = "Update".asInstanceOf[Update]
   @scala.inline
   def UserMigration_Authentication: UserMigration_Authentication = "UserMigration_Authentication".asInstanceOf[UserMigration_Authentication]
@@ -554,7 +762,11 @@ object awsLambdaStrings {
   @scala.inline
   def Voice: Voice = "Voice".asInstanceOf[Voice]
   @scala.inline
+  def WINDOWS_CONTAINER: WINDOWS_CONTAINER = "WINDOWS_CONTAINER".asInstanceOf[WINDOWS_CONTAINER]
+  @scala.inline
   def applicationSlashvndDotamazonawsDotcardDotgeneric: applicationSlashvndDotamazonawsDotcardDotgeneric = "application/vnd.amazonaws.card.generic".asInstanceOf[applicationSlashvndDotamazonawsDotcardDotgeneric]
+  @scala.inline
+  def awsDotcodebuild: awsDotcodebuild = "aws.codebuild".asInstanceOf[awsDotcodebuild]
   @scala.inline
   def awsDotcodepipeline: awsDotcodepipeline = "aws.codepipeline".asInstanceOf[awsDotcodepipeline]
   @scala.inline

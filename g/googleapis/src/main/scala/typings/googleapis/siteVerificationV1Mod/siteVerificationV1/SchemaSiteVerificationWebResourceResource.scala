@@ -1,6 +1,6 @@
 package typings.googleapis.siteVerificationV1Mod.siteVerificationV1
 
-import typings.googleapis.AnonIdentifier
+import typings.googleapis.anon.Identifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,12 +20,12 @@ trait SchemaSiteVerificationWebResourceResource extends js.Object {
   /**
     * The address and type of a site that is verified or will be verified.
     */
-  var site: js.UndefOr[AnonIdentifier] = js.native
+  var site: js.UndefOr[Identifier] = js.native
 }
 
 object SchemaSiteVerificationWebResourceResource {
   @scala.inline
-  def apply(id: String = null, owners: js.Array[String] = null, site: AnonIdentifier = null): SchemaSiteVerificationWebResourceResource = {
+  def apply(id: String = null, owners: js.Array[String] = null, site: Identifier = null): SchemaSiteVerificationWebResourceResource = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (owners != null) __obj.updateDynamic("owners")(owners.asInstanceOf[js.Any])

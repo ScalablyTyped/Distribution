@@ -7,7 +7,7 @@ import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
-import typings.ionicCore.typesMod.IonicSafeString
+import typings.ionicCore.sanitizationMod.IonicSafeString
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

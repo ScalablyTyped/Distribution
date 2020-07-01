@@ -2,12 +2,11 @@ package typings.surveyKnockout.mod
 
 import typings.surveyKnockout.anon.Body
 import typings.surveyKnockout.anon.ButtonNext
-import typings.surveyKnockout.anon.ButtonRemove
 import typings.surveyKnockout.anon.CellText
 import typings.surveyKnockout.anon.ClearButton
 import typings.surveyKnockout.anon.Complete
 import typings.surveyKnockout.anon.Container
-import typings.surveyKnockout.anon.ContentLeft
+import typings.surveyKnockout.anon.Content
 import typings.surveyKnockout.anon.Control
 import typings.surveyKnockout.anon.ControlOther
 import typings.surveyKnockout.anon.Controls
@@ -15,6 +14,7 @@ import typings.surveyKnockout.anon.Description
 import typings.surveyKnockout.anon.Disabled
 import typings.surveyKnockout.anon.Error
 import typings.surveyKnockout.anon.FileDecorator
+import typings.surveyKnockout.anon.FlowRoot
 import typings.surveyKnockout.anon.Icon
 import typings.surveyKnockout.anon.Image
 import typings.surveyKnockout.anon.ItemControl
@@ -51,7 +51,7 @@ object defaultBootstrapMaterialCss extends js.Object {
   var logoImage: String = js.native
   var matrix: CellText = js.native
   var matrixdropdown: ItemValueRoot = js.native
-  var matrixdynamic: ButtonRemove = js.native
+  var matrixdynamic: FlowRoot = js.native
   var multipletext: ItemTitle = js.native
   var navigation: Complete = js.native
   var navigationButton: String = js.native
@@ -63,7 +63,7 @@ object defaultBootstrapMaterialCss extends js.Object {
   var progress: String = js.native
   var progressBar: String = js.native
   var progressTextUnderBar: String = js.native
-  var question: ContentLeft = js.native
+  var question: Content = js.native
   var radiogroup: ClearButton = js.native
   var rating: Disabled = js.native
   var root: String = js.native

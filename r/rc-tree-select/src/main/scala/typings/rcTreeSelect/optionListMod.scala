@@ -37,6 +37,7 @@ object optionListMod extends js.Object {
     var virtual: js.UndefOr[Boolean] = js.native
     /** Tell Select that some value is now active to make accessibility work */
     def onActiveValue(value: RawValueType, index: Double): Unit = js.native
+    def onMouseEnter(): Unit = js.native
     def onSelect(value: RawValueType, option: Selected): Unit = js.native
     def onToggleOpen(): Unit = js.native
     def onToggleOpen(open: Boolean): Unit = js.native

@@ -16,7 +16,7 @@ trait AppPropsType[R /* <: NextRouter */, P] extends js.Object {
 
 object AppPropsType {
   @scala.inline
-  def apply[R, P](
+  def apply[/* <: typings.next.routerMod.NextRouter */ R, P](
     Component: NextComponentType[NextPageContext, _, P],
     pageProps: js.Any,
     router: R,

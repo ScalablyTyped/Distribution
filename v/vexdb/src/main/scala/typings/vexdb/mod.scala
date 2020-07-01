@@ -9,7 +9,8 @@ import typings.vexdb.anon.LiveRequestObjectRankings
 import typings.vexdb.anon.LiveRequestObjectSeasonRa
 import typings.vexdb.anon.LiveRequestObjectSkillsRe
 import typings.vexdb.anon.LiveRequestObjectTeamsReq
-import typings.vexdb.cacheMod.CacheEntry
+import typings.vexdb.anon.Result
+import typings.vexdb.cacheMod.APIResponse
 import typings.vexdb.liveMod.LiveEventEmitter
 import typings.vexdb.liveMod.LiveRequestObject
 import typings.vexdb.requestObjectsMod.AwardsRequestObject
@@ -43,7 +44,6 @@ import scala.scalajs.js.annotation._
 @JSImport("vexdb", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  def get(endpoint: String, params: RequestObject): js.Promise[js.Array[ResponseObject]] = js.native
   @JSName("get")
   def get_awards(endpoint: awards, params: AwardsRequestObject): js.Promise[js.Array[AwardsResponseObject]] = js.native
   @JSName("get")
@@ -73,7 +73,7 @@ object mod extends js.Object {
   def live_skills(endpoint: skills, params: LiveRequestObjectSkillsRe): LiveEventEmitter[SkillsRequestObject, SkillsResponseObject] = js.native
   @JSName("live")
   def live_teams(endpoint: teams, params: LiveRequestObjectTeamsReq): LiveEventEmitter[TeamsRequestObject, TeamsResponseObject] = js.native
-  def size(endpoint: String, params: RequestObject): js.Promise[Double] = js.native
+  def request(endpoint: js.Any, params: js.Any): js.Promise[Result] = js.native
   @JSName("size")
   def size_awards(endpoint: awards, params: AwardsRequestObject): js.Promise[Double] = js.native
   @JSName("size")
@@ -90,48 +90,38 @@ object mod extends js.Object {
   def size_teams(endpoint: teams, params: TeamsRequestObject): js.Promise[Double] = js.native
   @js.native
   object cache extends js.Object {
-    def apply(endpoint: awards, params: AwardsRequestObject, value: js.Array[AwardsResponseObject]): js.Promise[CacheEntry[AwardsResponseObject]] = js.native
-    def apply(endpoint: events, params: EventsRequestObject, value: js.Array[EventsResponseObject]): js.Promise[CacheEntry[EventsResponseObject]] = js.native
-    def apply(endpoint: matches, params: MatchesRequestObject, value: js.Array[MatchesResponseObject]): js.Promise[CacheEntry[MatchesResponseObject]] = js.native
-    def apply(endpoint: rankings, params: RankingsRequestObject, value: js.Array[RankingsResponseObject]): js.Promise[CacheEntry[RankingsResponseObject]] = js.native
-    def apply(
+    @JSName("resolve")
+    def resolve_awards(endpoint: awards, params: AwardsRequestObject): js.Promise[APIResponse[AwardsRequestObject]] = js.native
+    @JSName("resolve")
+    def resolve_events(endpoint: events, params: EventsRequestObject): js.Promise[APIResponse[EventsRequestObject]] = js.native
+    @JSName("resolve")
+    def resolve_matches(endpoint: matches, params: MatchesRequestObject): js.Promise[APIResponse[MatchesRequestObject]] = js.native
+    @JSName("resolve")
+    def resolve_rankings(endpoint: rankings, params: RankingsRequestObject): js.Promise[APIResponse[RankingsRequestObject]] = js.native
+    @JSName("resolve")
+    def resolve_seasonrankings(endpoint: season_rankings, params: SeasonRankingsRequestObject): js.Promise[APIResponse[SeasonRankingsRequestObject]] = js.native
+    @JSName("resolve")
+    def resolve_skills(endpoint: skills, params: SkillsRequestObject): js.Promise[APIResponse[SkillsRequestObject]] = js.native
+    @JSName("resolve")
+    def resolve_teams(endpoint: teams, params: TeamsRequestObject): js.Promise[APIResponse[TeamsRequestObject]] = js.native
+    @JSName("store")
+    def store_awards(endpoint: awards, params: AwardsRequestObject, data: APIResponse[AwardsResponseObject]): js.Promise[Boolean] = js.native
+    @JSName("store")
+    def store_events(endpoint: events, params: EventsRequestObject, data: APIResponse[EventsResponseObject]): js.Promise[Boolean] = js.native
+    @JSName("store")
+    def store_matches(endpoint: matches, params: MatchesRequestObject, data: APIResponse[MatchesResponseObject]): js.Promise[Boolean] = js.native
+    @JSName("store")
+    def store_rankings(endpoint: rankings, params: RankingsRequestObject, data: APIResponse[RankingsResponseObject]): js.Promise[Boolean] = js.native
+    @JSName("store")
+    def store_seasonrankings(
       endpoint: season_rankings,
       params: SeasonRankingsRequestObject,
-      value: js.Array[SeasonRankingsResponseObject]
-    ): js.Promise[CacheEntry[SeasonRankingsResponseObject]] = js.native
-    def apply(endpoint: skills, params: SkillsRequestObject, value: js.Array[SkillsResponseObject]): js.Promise[CacheEntry[SkillsResponseObject]] = js.native
-    def apply(endpoint: teams, params: TeamsRequestObject, value: js.Array[TeamsResponseObject]): js.Promise[CacheEntry[TeamsResponseObject]] = js.native
-    def clear(): js.Promise[Unit] = js.native
-    @JSName("has")
-    def has_awards(endpoint: awards, params: AwardsRequestObject): js.Promise[Boolean] = js.native
-    @JSName("has")
-    def has_events(endpoint: events, params: EventsRequestObject): js.Promise[Boolean] = js.native
-    @JSName("has")
-    def has_matches(endpoint: matches, params: MatchesRequestObject): js.Promise[Boolean] = js.native
-    @JSName("has")
-    def has_rankings(endpoint: rankings, params: RankingsRequestObject): js.Promise[Boolean] = js.native
-    @JSName("has")
-    def has_seasonrankings(endpoint: season_rankings, params: SeasonRankingsRequestObject): js.Promise[Boolean] = js.native
-    @JSName("has")
-    def has_skills(endpoint: skills, params: SkillsRequestObject): js.Promise[Boolean] = js.native
-    @JSName("has")
-    def has_teams(endpoint: teams, params: TeamsRequestObject): js.Promise[Boolean] = js.native
-    @JSName("resolve")
-    def resolve_awards(endpoint: awards, params: AwardsRequestObject): js.Promise[CacheEntry[AwardsResponseObject]] = js.native
-    @JSName("resolve")
-    def resolve_events(endpoint: events, params: EventsRequestObject): js.Promise[CacheEntry[EventsResponseObject]] = js.native
-    @JSName("resolve")
-    def resolve_matches(endpoint: matches, params: MatchesRequestObject): js.Promise[CacheEntry[MatchesResponseObject]] = js.native
-    @JSName("resolve")
-    def resolve_rankings(endpoint: rankings, params: RankingsRequestObject): js.Promise[CacheEntry[RankingsResponseObject]] = js.native
-    @JSName("resolve")
-    def resolve_seasonrankings(endpoint: season_rankings, params: SeasonRankingsRequestObject): js.Promise[CacheEntry[SeasonRankingsResponseObject]] = js.native
-    @JSName("resolve")
-    def resolve_skills(endpoint: skills, params: SkillsRequestObject): js.Promise[CacheEntry[SkillsResponseObject]] = js.native
-    @JSName("resolve")
-    def resolve_teams(endpoint: teams, params: TeamsRequestObject): js.Promise[CacheEntry[TeamsResponseObject]] = js.native
-    def sanitize(endpoint: js.Any, params: js.Any): String = js.native
-    def serialize(url: js.Any, params: js.Any): String = js.native
+      data: APIResponse[SeasonRankingsResponseObject]
+    ): js.Promise[Boolean] = js.native
+    @JSName("store")
+    def store_skills(endpoint: skills, params: SkillsRequestObject, data: APIResponse[SkillsResponseObject]): js.Promise[Boolean] = js.native
+    @JSName("store")
+    def store_teams(endpoint: teams, params: TeamsRequestObject, data: APIResponse[TeamsResponseObject]): js.Promise[Boolean] = js.native
   }
   
   @js.native

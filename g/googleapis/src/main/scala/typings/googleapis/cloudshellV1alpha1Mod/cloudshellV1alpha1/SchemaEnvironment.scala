@@ -67,7 +67,7 @@ object SchemaEnvironment {
     name: String = null,
     publicKeys: js.Array[SchemaPublicKey] = null,
     sshHost: String = null,
-    sshPort: Int | Double = null,
+    sshPort: js.UndefOr[Double] = js.undefined,
     sshUsername: String = null,
     state: String = null
   ): SchemaEnvironment = {
@@ -77,7 +77,7 @@ object SchemaEnvironment {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (publicKeys != null) __obj.updateDynamic("publicKeys")(publicKeys.asInstanceOf[js.Any])
     if (sshHost != null) __obj.updateDynamic("sshHost")(sshHost.asInstanceOf[js.Any])
-    if (sshPort != null) __obj.updateDynamic("sshPort")(sshPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(sshPort)) __obj.updateDynamic("sshPort")(sshPort.get.asInstanceOf[js.Any])
     if (sshUsername != null) __obj.updateDynamic("sshUsername")(sshUsername.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEnvironment]

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 ///////////////////////////////////////////////////////////////////////////
 // SCEProvider
-// see http://docs.angularjs.org/api/ng.$sceProvider
+// see http://docs.angularjs.org/api/ng/provider/$sceProvider
 ///////////////////////////////////////////////////////////////////////////
 trait ISCEProvider extends IServiceProvider {
   def enabled(value: Boolean): Unit

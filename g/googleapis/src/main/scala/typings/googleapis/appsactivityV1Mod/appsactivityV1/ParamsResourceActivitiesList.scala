@@ -63,7 +63,7 @@ object ParamsResourceActivitiesList {
     groupingStrategy: String = null,
     key: String = null,
     oauth_token: String = null,
-    pageSize: Int | Double = null,
+    pageSize: js.UndefOr[Double] = js.undefined,
     pageToken: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
     quotaUser: String = null,
@@ -80,9 +80,9 @@ object ParamsResourceActivitiesList {
     if (groupingStrategy != null) __obj.updateDynamic("groupingStrategy")(groupingStrategy.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateNetworkAclEntryRequest extends js.Object {
   /**
-    * The IPv4 network range to allow or deny, in CIDR notation (for example 172.16.0.0/24).
+    * The IPv4 network range to allow or deny, in CIDR notation (for example 172.16.0.0/24). We modify the specified CIDR block to its canonical form; for example, if you specify 100.68.0.18/18, we modify it to 100.68.0.0/18.
     */
   var CidrBlock: js.UndefOr[String] = js.native
   /**

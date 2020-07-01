@@ -42,8 +42,6 @@ class DateRangePicker protected ()
   var updateRightView: js.Any = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MDateRangePicker(prevProps: IDateRangePickerProps, prevState: IDateRangePickerState): Unit = js.native
-  @JSName("componentDidUpdate")
-  def componentDidUpdate_MDateRangePicker(prevProps: IDateRangePickerProps, prevState: IDateRangePickerState, snapshot: js.Object): Unit = js.native
 }
 
 /* static members */

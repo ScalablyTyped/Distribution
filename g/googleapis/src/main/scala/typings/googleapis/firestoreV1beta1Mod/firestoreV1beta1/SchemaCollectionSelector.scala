@@ -25,7 +25,7 @@ object SchemaCollectionSelector {
   @scala.inline
   def apply(allDescendants: js.UndefOr[Boolean] = js.undefined, collectionId: String = null): SchemaCollectionSelector = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allDescendants)) __obj.updateDynamic("allDescendants")(allDescendants.asInstanceOf[js.Any])
+    if (!js.isUndefined(allDescendants)) __obj.updateDynamic("allDescendants")(allDescendants.get.asInstanceOf[js.Any])
     if (collectionId != null) __obj.updateDynamic("collectionId")(collectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCollectionSelector]
   }

@@ -24,7 +24,7 @@ object SchemaMailExportOptions {
   def apply(exportFormat: String = null, showConfidentialModeContent: js.UndefOr[Boolean] = js.undefined): SchemaMailExportOptions = {
     val __obj = js.Dynamic.literal()
     if (exportFormat != null) __obj.updateDynamic("exportFormat")(exportFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(showConfidentialModeContent)) __obj.updateDynamic("showConfidentialModeContent")(showConfidentialModeContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(showConfidentialModeContent)) __obj.updateDynamic("showConfidentialModeContent")(showConfidentialModeContent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMailExportOptions]
   }
 }

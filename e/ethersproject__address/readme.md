@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__address
 
-Typings are for version 5.0.0-beta.135
+Typings are for version 5.0.1
 
 ## Library description:
 Utilities for handling Ethereum Addresses for ethers.

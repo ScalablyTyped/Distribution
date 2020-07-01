@@ -94,7 +94,7 @@ trait MarginProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Obje
 
 object MarginProps {
   @scala.inline
-  def apply[ThemeType](
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](
     m: js.UndefOr[
       Null | (ResponsiveValue[
         ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 

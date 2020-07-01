@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashAt extends js.Object {
+trait LodashAt extends LodashConvertible {
   def apply(props: PropertyPath): LodashAt1x1 = js.native
   def apply[T /* <: js.Object */](props: Many[/* keyof T */ String], `object`: T): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any

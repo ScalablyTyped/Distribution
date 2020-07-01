@@ -50,18 +50,18 @@ trait SchemaGoogleCloudVideointelligenceV1beta2LabelDetectionConfig extends js.O
 object SchemaGoogleCloudVideointelligenceV1beta2LabelDetectionConfig {
   @scala.inline
   def apply(
-    frameConfidenceThreshold: Int | Double = null,
+    frameConfidenceThreshold: js.UndefOr[Double] = js.undefined,
     labelDetectionMode: String = null,
     model: String = null,
     stationaryCamera: js.UndefOr[Boolean] = js.undefined,
-    videoConfidenceThreshold: Int | Double = null
+    videoConfidenceThreshold: js.UndefOr[Double] = js.undefined
   ): SchemaGoogleCloudVideointelligenceV1beta2LabelDetectionConfig = {
     val __obj = js.Dynamic.literal()
-    if (frameConfidenceThreshold != null) __obj.updateDynamic("frameConfidenceThreshold")(frameConfidenceThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(frameConfidenceThreshold)) __obj.updateDynamic("frameConfidenceThreshold")(frameConfidenceThreshold.get.asInstanceOf[js.Any])
     if (labelDetectionMode != null) __obj.updateDynamic("labelDetectionMode")(labelDetectionMode.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (!js.isUndefined(stationaryCamera)) __obj.updateDynamic("stationaryCamera")(stationaryCamera.asInstanceOf[js.Any])
-    if (videoConfidenceThreshold != null) __obj.updateDynamic("videoConfidenceThreshold")(videoConfidenceThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(stationaryCamera)) __obj.updateDynamic("stationaryCamera")(stationaryCamera.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(videoConfidenceThreshold)) __obj.updateDynamic("videoConfidenceThreshold")(videoConfidenceThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1beta2LabelDetectionConfig]
   }
 }

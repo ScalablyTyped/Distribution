@@ -15,7 +15,7 @@ trait TransitionProps[RefElement /* <: js.UndefOr[HTMLElement] */] extends js.Ob
 
 object TransitionProps {
   @scala.inline
-  def TimeoutProps[RefElement](
+  def TimeoutProps[/* <: js.UndefOr[typings.std.HTMLElement] */ RefElement](
     timeout: Double | Appear,
     addEndListener: EndHandler[RefElement] = null,
     children: TransitionChildren = null,
@@ -46,7 +46,7 @@ object TransitionProps {
     __obj.asInstanceOf[TransitionProps[RefElement]]
   }
   @scala.inline
-  def EndListenerProps[RefElement](
+  def EndListenerProps[/* <: js.UndefOr[typings.std.HTMLElement] */ RefElement](
     addEndListener: EndHandler[RefElement],
     children: TransitionChildren = null,
     in: js.UndefOr[Boolean] = js.undefined,

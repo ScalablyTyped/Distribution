@@ -38,14 +38,14 @@ object SchemaVolumeannotations {
     items: js.Array[SchemaVolumeannotation] = null,
     kind: String = null,
     nextPageToken: String = null,
-    totalItems: Int | Double = null,
+    totalItems: js.UndefOr[Double] = js.undefined,
     version: String = null
   ): SchemaVolumeannotations = {
     val __obj = js.Dynamic.literal()
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (totalItems != null) __obj.updateDynamic("totalItems")(totalItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalItems)) __obj.updateDynamic("totalItems")(totalItems.get.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVolumeannotations]
   }

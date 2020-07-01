@@ -24,7 +24,7 @@ object SchemaDealTermsNonGuaranteedAuctionTerms {
     reservePricePerBuyers: js.Array[SchemaPricePerBuyer] = null
   ): SchemaDealTermsNonGuaranteedAuctionTerms = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoOptimizePrivateAuction)) __obj.updateDynamic("autoOptimizePrivateAuction")(autoOptimizePrivateAuction.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoOptimizePrivateAuction)) __obj.updateDynamic("autoOptimizePrivateAuction")(autoOptimizePrivateAuction.get.asInstanceOf[js.Any])
     if (reservePricePerBuyers != null) __obj.updateDynamic("reservePricePerBuyers")(reservePricePerBuyers.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDealTermsNonGuaranteedAuctionTerms]
   }

@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChannelConnectedLine extends Event {
-  /* Properties */
+  /**
+    * The channel whose connected line has changed.
+    */
   var channel: Channel
 }
 

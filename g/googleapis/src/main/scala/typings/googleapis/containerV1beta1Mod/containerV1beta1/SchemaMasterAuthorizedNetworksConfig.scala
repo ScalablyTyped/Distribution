@@ -28,7 +28,7 @@ object SchemaMasterAuthorizedNetworksConfig {
   def apply(cidrBlocks: js.Array[SchemaCidrBlock] = null, enabled: js.UndefOr[Boolean] = js.undefined): SchemaMasterAuthorizedNetworksConfig = {
     val __obj = js.Dynamic.literal()
     if (cidrBlocks != null) __obj.updateDynamic("cidrBlocks")(cidrBlocks.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMasterAuthorizedNetworksConfig]
   }
 }

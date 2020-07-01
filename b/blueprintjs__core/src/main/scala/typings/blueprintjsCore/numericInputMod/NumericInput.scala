@@ -18,6 +18,8 @@ class NumericInput ()
   var getIncrementDelta: js.Any = js.native
   var getSanitizedValue: js.Any = js.native
   var handleButtonClick: js.Any = js.native
+  var handleCompositionEnd: js.Any = js.native
+  var handleCompositionUpdate: js.Any = js.native
   var handleContinuousChange: js.Any = js.native
   var handleInputBlur: js.Any = js.native
   var handleInputChange: js.Any = js.native

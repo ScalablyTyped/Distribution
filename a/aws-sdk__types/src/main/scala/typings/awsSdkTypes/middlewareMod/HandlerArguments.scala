@@ -14,7 +14,7 @@ trait HandlerArguments[Input /* <: js.Object */] extends js.Object {
 
 object HandlerArguments {
   @scala.inline
-  def apply[Input](input: Input): HandlerArguments[Input] = {
+  def apply[/* <: js.Object */ Input](input: Input): HandlerArguments[Input] = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandlerArguments[Input]]
   }

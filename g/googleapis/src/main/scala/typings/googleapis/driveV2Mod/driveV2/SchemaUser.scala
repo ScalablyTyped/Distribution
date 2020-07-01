@@ -1,6 +1,6 @@
 package typings.googleapis.driveV2Mod.driveV2
 
-import typings.googleapis.AnonUrl
+import typings.googleapis.anon.Url
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +34,7 @@ trait SchemaUser extends js.Object {
   /**
     * The user&#39;s profile picture.
     */
-  var picture: js.UndefOr[AnonUrl] = js.native
+  var picture: js.UndefOr[Url] = js.native
 }
 
 object SchemaUser {
@@ -45,12 +45,12 @@ object SchemaUser {
     isAuthenticatedUser: js.UndefOr[Boolean] = js.undefined,
     kind: String = null,
     permissionId: String = null,
-    picture: AnonUrl = null
+    picture: Url = null
   ): SchemaUser = {
     val __obj = js.Dynamic.literal()
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAuthenticatedUser)) __obj.updateDynamic("isAuthenticatedUser")(isAuthenticatedUser.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAuthenticatedUser)) __obj.updateDynamic("isAuthenticatedUser")(isAuthenticatedUser.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (permissionId != null) __obj.updateDynamic("permissionId")(permissionId.asInstanceOf[js.Any])
     if (picture != null) __obj.updateDynamic("picture")(picture.asInstanceOf[js.Any])

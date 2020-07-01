@@ -66,10 +66,11 @@ object Node {
   def OrderedListItemNode(
     contents: js.Array[FragmentNode],
     name: `ordered-list-item`,
+    id: String = null,
     location: LocationRange = null,
     sublist: ListNode = null
   ): Node = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sublist = sublist.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], sublist = sublist.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
@@ -95,10 +96,11 @@ object Node {
   def UnorderedListItemNode(
     contents: js.Array[FragmentNode],
     name: `unordered-list-item`,
+    id: String = null,
     location: LocationRange = null,
     sublist: ListNode = null
   ): Node = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sublist = sublist.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], sublist = sublist.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }

@@ -28,7 +28,7 @@ object SchemaResourceUsageExportConfig {
   ): SchemaResourceUsageExportConfig = {
     val __obj = js.Dynamic.literal()
     if (bigqueryDestination != null) __obj.updateDynamic("bigqueryDestination")(bigqueryDestination.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableNetworkEgressMetering)) __obj.updateDynamic("enableNetworkEgressMetering")(enableNetworkEgressMetering.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableNetworkEgressMetering)) __obj.updateDynamic("enableNetworkEgressMetering")(enableNetworkEgressMetering.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResourceUsageExportConfig]
   }
 }

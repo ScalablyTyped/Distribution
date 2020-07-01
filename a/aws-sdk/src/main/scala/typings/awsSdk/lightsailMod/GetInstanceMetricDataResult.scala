@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetInstanceMetricDataResult extends js.Object {
   /**
-    * An array of key-value pairs containing information about the results of your get instance metric data request.
+    * An array of objects that describe the metric data returned.
     */
   var metricData: js.UndefOr[MetricDatapointList] = js.native
   /**
-    * The metric name to return data for.
+    * The name of the metric returned.
     */
   var metricName: js.UndefOr[InstanceMetricName] = js.native
 }

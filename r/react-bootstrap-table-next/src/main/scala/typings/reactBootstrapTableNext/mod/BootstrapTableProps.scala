@@ -72,7 +72,7 @@ trait BootstrapTableProps[T /* <: js.Object */] extends js.Object {
 
 object BootstrapTableProps {
   @scala.inline
-  def apply[T](
+  def apply[/* <: js.Object */ T](
     columns: js.Array[ColumnDescription[_, _]],
     data: js.Array[_],
     keyField: String,

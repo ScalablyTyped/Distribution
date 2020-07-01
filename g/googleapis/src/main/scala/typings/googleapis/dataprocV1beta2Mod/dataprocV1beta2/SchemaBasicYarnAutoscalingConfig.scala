@@ -57,17 +57,17 @@ object SchemaBasicYarnAutoscalingConfig {
   @scala.inline
   def apply(
     gracefulDecommissionTimeout: String = null,
-    scaleDownFactor: Int | Double = null,
-    scaleDownMinWorkerFraction: Int | Double = null,
-    scaleUpFactor: Int | Double = null,
-    scaleUpMinWorkerFraction: Int | Double = null
+    scaleDownFactor: js.UndefOr[Double] = js.undefined,
+    scaleDownMinWorkerFraction: js.UndefOr[Double] = js.undefined,
+    scaleUpFactor: js.UndefOr[Double] = js.undefined,
+    scaleUpMinWorkerFraction: js.UndefOr[Double] = js.undefined
   ): SchemaBasicYarnAutoscalingConfig = {
     val __obj = js.Dynamic.literal()
     if (gracefulDecommissionTimeout != null) __obj.updateDynamic("gracefulDecommissionTimeout")(gracefulDecommissionTimeout.asInstanceOf[js.Any])
-    if (scaleDownFactor != null) __obj.updateDynamic("scaleDownFactor")(scaleDownFactor.asInstanceOf[js.Any])
-    if (scaleDownMinWorkerFraction != null) __obj.updateDynamic("scaleDownMinWorkerFraction")(scaleDownMinWorkerFraction.asInstanceOf[js.Any])
-    if (scaleUpFactor != null) __obj.updateDynamic("scaleUpFactor")(scaleUpFactor.asInstanceOf[js.Any])
-    if (scaleUpMinWorkerFraction != null) __obj.updateDynamic("scaleUpMinWorkerFraction")(scaleUpMinWorkerFraction.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleDownFactor)) __obj.updateDynamic("scaleDownFactor")(scaleDownFactor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleDownMinWorkerFraction)) __obj.updateDynamic("scaleDownMinWorkerFraction")(scaleDownMinWorkerFraction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleUpFactor)) __obj.updateDynamic("scaleUpFactor")(scaleUpFactor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleUpMinWorkerFraction)) __obj.updateDynamic("scaleUpMinWorkerFraction")(scaleUpMinWorkerFraction.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBasicYarnAutoscalingConfig]
   }
 }

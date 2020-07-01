@@ -13,7 +13,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MenusProps extends js.Object {
-  var activeValue: js.UndefOr[js.Array[String]] = js.undefined
+  var activeValue: js.UndefOr[js.Array[String | Double]] = js.undefined
   var defaultFieldNames: js.UndefOr[CascaderFieldNames] = js.undefined
   var dropdownMenuColumnStyle: js.UndefOr[CSSProperties] = js.undefined
   var expandIcon: js.UndefOr[ReactNode] = js.undefined
@@ -38,14 +38,14 @@ trait MenusProps extends js.Object {
   ] = js.undefined
   var options: js.UndefOr[js.Array[CascaderOption]] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[js.Array[String]] = js.undefined
+  var value: js.UndefOr[js.Array[String | Double]] = js.undefined
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 
 object MenusProps {
   @scala.inline
   def apply(
-    activeValue: js.Array[String] = null,
+    activeValue: js.Array[String | Double] = null,
     defaultFieldNames: CascaderFieldNames = null,
     dropdownMenuColumnStyle: CSSProperties = null,
     expandIcon: ReactNode = null,
@@ -56,7 +56,7 @@ object MenusProps {
     onSelect: (/* targetOption */ js.Array[String], /* index */ Double, /* e */ KeyboardEvent[HTMLElement]) => Unit = null,
     options: js.Array[CascaderOption] = null,
     prefixCls: String = null,
-    value: js.Array[String] = null,
+    value: js.Array[String | Double] = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): MenusProps = {
     val __obj = js.Dynamic.literal()

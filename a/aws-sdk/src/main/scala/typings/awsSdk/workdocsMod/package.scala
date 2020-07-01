@@ -126,7 +126,7 @@ package object workdocsMod {
     - typings.awsSdk.awsSdkStrings.zh_CN
     - typings.awsSdk.awsSdkStrings.zh_TW
     - typings.awsSdk.awsSdkStrings.pt_BR
-    - typings.awsSdk.awsSdkStrings.default_
+    - typings.awsSdk.awsSdkStrings.default__
     - java.lang.String
   */
   type LocaleType = typings.awsSdk.workdocsMod._LocaleType | java.lang.String

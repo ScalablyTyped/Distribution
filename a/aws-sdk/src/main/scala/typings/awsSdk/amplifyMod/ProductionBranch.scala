@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ProductionBranch extends js.Object {
   /**
-    *  Branch Name for Production Branch. 
+    *  The branch name for the production branch. 
     */
   var branchName: js.UndefOr[BranchName] = js.native
   /**
-    *  Last Deploy Time of Production Branch. 
+    *  The last deploy time of the production branch. 
     */
   var lastDeployTime: js.UndefOr[LastDeployTime] = js.native
   /**
-    *  Status of Production Branch. 
+    *  The status of the production branch. 
     */
   var status: js.UndefOr[Status] = js.native
   /**
-    *  Thumbnail URL for Production Branch. 
+    *  The thumbnail URL for the production branch. 
     */
   var thumbnailUrl: js.UndefOr[ThumbnailUrl] = js.native
 }

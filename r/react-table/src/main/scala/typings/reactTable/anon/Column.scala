@@ -11,7 +11,7 @@ trait Column[D /* <: js.Object */] extends js.Object {
 
 object Column {
   @scala.inline
-  def apply[D](column: HeaderGroup[D]): Column[D] = {
+  def apply[/* <: js.Object */ D](column: HeaderGroup[D]): Column[D] = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any])
     __obj.asInstanceOf[Column[D]]
   }

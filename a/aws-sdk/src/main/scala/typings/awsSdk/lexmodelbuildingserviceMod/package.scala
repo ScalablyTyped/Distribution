@@ -87,6 +87,7 @@ package object lexmodelbuildingserviceMod {
   type IntentMetadataList = js.Array[typings.awsSdk.lexmodelbuildingserviceMod.IntentMetadata]
   type IntentName = java.lang.String
   type IntentUtteranceList = js.Array[typings.awsSdk.lexmodelbuildingserviceMod.Utterance]
+  type KendraIndexArn = java.lang.String
   type KmsKeyArn = java.lang.String
   type LambdaARN = java.lang.String
   type ListOfUtterance = js.Array[typings.awsSdk.lexmodelbuildingserviceMod.UtteranceData]
@@ -133,6 +134,7 @@ package object lexmodelbuildingserviceMod {
   */
   type ProcessBehavior = typings.awsSdk.lexmodelbuildingserviceMod._ProcessBehavior | java.lang.String
   type PromptMaxAttempts = scala.Double
+  type QueryFilterString = java.lang.String
   type RegexPattern = java.lang.String
   type ResourceArn = java.lang.String
   type ResourcePrefix = java.lang.String
@@ -198,4 +200,5 @@ package object lexmodelbuildingserviceMod {
     - java.lang.String
   */
   type apiVersion = typings.awsSdk.lexmodelbuildingserviceMod._apiVersion | java.lang.String
+  type roleArn = java.lang.String
 }

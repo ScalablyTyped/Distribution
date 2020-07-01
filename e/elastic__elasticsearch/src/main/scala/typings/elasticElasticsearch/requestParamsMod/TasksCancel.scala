@@ -9,6 +9,7 @@ trait TasksCancel extends Generic {
   var nodes: js.UndefOr[String | js.Array[String]] = js.undefined
   var parent_task_id: js.UndefOr[String] = js.undefined
   var task_id: js.UndefOr[String] = js.undefined
+  var wait_for_completion: js.UndefOr[Boolean] = js.undefined
 }
 
 object TasksCancel {
@@ -24,7 +25,8 @@ object TasksCancel {
     parent_task_id: String = null,
     pretty: js.UndefOr[Boolean] = js.undefined,
     source: String = null,
-    task_id: String = null
+    task_id: String = null,
+    wait_for_completion: js.UndefOr[Boolean] = js.undefined
   ): TasksCancel = {
     val __obj = js.Dynamic.literal()
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
@@ -38,6 +40,7 @@ object TasksCancel {
     if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (task_id != null) __obj.updateDynamic("task_id")(task_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(wait_for_completion)) __obj.updateDynamic("wait_for_completion")(wait_for_completion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TasksCancel]
   }
 }

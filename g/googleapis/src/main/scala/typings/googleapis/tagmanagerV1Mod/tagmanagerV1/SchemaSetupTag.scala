@@ -22,7 +22,7 @@ object SchemaSetupTag {
   @scala.inline
   def apply(stopOnSetupFailure: js.UndefOr[Boolean] = js.undefined, tagName: String = null): SchemaSetupTag = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(stopOnSetupFailure)) __obj.updateDynamic("stopOnSetupFailure")(stopOnSetupFailure.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopOnSetupFailure)) __obj.updateDynamic("stopOnSetupFailure")(stopOnSetupFailure.get.asInstanceOf[js.Any])
     if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSetupTag]
   }

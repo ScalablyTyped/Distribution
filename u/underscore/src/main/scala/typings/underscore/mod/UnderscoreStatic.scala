@@ -23,14 +23,13 @@ trait UnderscoreStatic extends js.Object {
     * following template settings to use alternative delimiters.
     **/
   var templateSettings: TemplateSettings = js.native
-  def apply[T](value: T): Underscore[T, T] = js.native
-  def apply[T](value: js.Array[T]): Underscore[T, js.Array[T]] = js.native
   /**
     * Underscore OOP Wrapper, all Underscore functions that take an object
     * as the first parameter can be invoked through this function.
-    * @param key First argument to Underscore object functions.
+    * @param value First argument to Underscore object functions.
+    * @returns An Underscore wrapper around the supplied value.
     **/
-  def apply[T](value: List[T]): Underscore[T, List[T]] = js.native
+  def apply[V](value: V): Underscore[TypeOfCollection[V], V] = js.native
   /**
     * Creates a version of the function that will only be run after first being called count times. Useful
     * for grouping asynchronous responses, where you want to be sure that all the async calls have finished,
@@ -105,26 +104,23 @@ trait UnderscoreStatic extends js.Object {
     * methods are bound.
     **/
   def bindAll(`object`: js.Any, methodNames: String*): js.Any = js.native
-  def chain[T /* <: js.Object */](obj: T): Chain[T, T] = js.native
   /* **********
     * Chaining *
     *********** */
   /**
     * Returns a wrapped object. Calling methods on this object will continue to return wrapped objects
     * until value() is used.
-    * @param obj Object to chain.
-    * @return Wrapped `obj`.
+    * @param value The object to chain.
+    * @returns An underscore chain wrapper around the supplied value.
     **/
-  def chain[T](obj: js.Array[T]): Chain[T, js.Array[T]] = js.native
-  @JSName("chain")
-  def chain_T_TypeOfDictionaryVV_DictionaryWildcard[T /* <: TypeOfDictionary[V] */, V /* <: Dictionary[_] */](obj: V): Chain[T, V] = js.native
+  def chain[V](value: V): Chain[TypeOfCollection[V], V] = js.native
   /**
-    * Split an **array** into several arrays containing **count** or less elements
-    * of initial array.
-    * @param array The array to split
-    * @param count The maximum size of the inner arrays.
-    */
-  def chunk[T](array: Collection[T], count: Double): js.Array[Collection[T]] = js.native
+    * Chunks a list into multiple arrays, each containing length or fewer items.
+    * @param list The list to split.
+    * @param length The maximum size of the inner arrays.
+    * @returns The chunked list.
+    **/
+  def chunk[T](list: List[T], length: Double): js.Array[js.Array[T]] = js.native
   /**
     * Create a shallow-copied clone of the object.
     * Any nested objects or arrays will be copied by reference, not duplicated.

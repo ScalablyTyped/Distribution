@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FileSystem extends js.Object {
   /**
+    * A list of administrative actions for the file system that are in process or waiting to be processed. Administrative actions describe changes to the Windows file system that you have initiated using the UpdateFileSystem action. 
+    */
+  var AdministrativeActions: js.UndefOr[typings.awsSdk.fsxMod.AdministrativeActions] = js.native
+  /**
     * The time that the file system was created, in seconds (since 1970-01-01T00:00:00Z), also known as Unix time.
     */
   var CreationTime: js.UndefOr[typings.awsSdk.fsxMod.CreationTime] = js.native
@@ -73,6 +77,7 @@ trait FileSystem extends js.Object {
 object FileSystem {
   @scala.inline
   def apply(
+    AdministrativeActions: AdministrativeActions = null,
     CreationTime: CreationTime = null,
     DNSName: DNSName = null,
     FailureDetails: FileSystemFailureDetails = null,
@@ -92,6 +97,7 @@ object FileSystem {
     WindowsConfiguration: WindowsFileSystemConfiguration = null
   ): FileSystem = {
     val __obj = js.Dynamic.literal()
+    if (AdministrativeActions != null) __obj.updateDynamic("AdministrativeActions")(AdministrativeActions.asInstanceOf[js.Any])
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
     if (DNSName != null) __obj.updateDynamic("DNSName")(DNSName.asInstanceOf[js.Any])
     if (FailureDetails != null) __obj.updateDynamic("FailureDetails")(FailureDetails.asInstanceOf[js.Any])

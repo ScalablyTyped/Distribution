@@ -61,19 +61,19 @@ object SchemaSheetProperties {
   def apply(
     gridProperties: SchemaGridProperties = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     rightToLeft: js.UndefOr[Boolean] = js.undefined,
-    sheetId: Int | Double = null,
+    sheetId: js.UndefOr[Double] = js.undefined,
     sheetType: String = null,
     tabColor: SchemaColor = null,
     title: String = null
   ): SchemaSheetProperties = {
     val __obj = js.Dynamic.literal()
     if (gridProperties != null) __obj.updateDynamic("gridProperties")(gridProperties.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(rightToLeft)) __obj.updateDynamic("rightToLeft")(rightToLeft.asInstanceOf[js.Any])
-    if (sheetId != null) __obj.updateDynamic("sheetId")(sheetId.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightToLeft)) __obj.updateDynamic("rightToLeft")(rightToLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetId)) __obj.updateDynamic("sheetId")(sheetId.get.asInstanceOf[js.Any])
     if (sheetType != null) __obj.updateDynamic("sheetType")(sheetType.asInstanceOf[js.Any])
     if (tabColor != null) __obj.updateDynamic("tabColor")(tabColor.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

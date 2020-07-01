@@ -31,11 +31,15 @@ trait SchemaRange extends js.Object {
 
 object SchemaRange {
   @scala.inline
-  def apply(endIndex: Int | Double = null, segmentId: String = null, startIndex: Int | Double = null): SchemaRange = {
+  def apply(
+    endIndex: js.UndefOr[Double] = js.undefined,
+    segmentId: String = null,
+    startIndex: js.UndefOr[Double] = js.undefined
+  ): SchemaRange = {
     val __obj = js.Dynamic.literal()
-    if (endIndex != null) __obj.updateDynamic("endIndex")(endIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(endIndex)) __obj.updateDynamic("endIndex")(endIndex.get.asInstanceOf[js.Any])
     if (segmentId != null) __obj.updateDynamic("segmentId")(segmentId.asInstanceOf[js.Any])
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRange]
   }
 }

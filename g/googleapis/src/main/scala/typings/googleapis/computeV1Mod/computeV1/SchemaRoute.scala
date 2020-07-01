@@ -1,6 +1,6 @@
 package typings.googleapis.computeV1Mod.computeV1
 
-import typings.googleapis.AnonCode
+import typings.googleapis.anon.Code
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -111,7 +111,7 @@ trait SchemaRoute extends js.Object {
     * [Output Only] If potential misconfigurations are detected for this route,
     * this field will be populated with warning messages.
     */
-  var warnings: js.UndefOr[js.Array[AnonCode]] = js.native
+  var warnings: js.UndefOr[js.Array[Code]] = js.native
 }
 
 object SchemaRoute {
@@ -130,10 +130,10 @@ object SchemaRoute {
     nextHopNetwork: String = null,
     nextHopPeering: String = null,
     nextHopVpnTunnel: String = null,
-    priority: Int | Double = null,
+    priority: js.UndefOr[Double] = js.undefined,
     selfLink: String = null,
     tags: js.Array[String] = null,
-    warnings: js.Array[AnonCode] = null
+    warnings: js.Array[Code] = null
   ): SchemaRoute = {
     val __obj = js.Dynamic.literal()
     if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
@@ -149,7 +149,7 @@ object SchemaRoute {
     if (nextHopNetwork != null) __obj.updateDynamic("nextHopNetwork")(nextHopNetwork.asInstanceOf[js.Any])
     if (nextHopPeering != null) __obj.updateDynamic("nextHopPeering")(nextHopPeering.asInstanceOf[js.Any])
     if (nextHopVpnTunnel != null) __obj.updateDynamic("nextHopVpnTunnel")(nextHopVpnTunnel.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])

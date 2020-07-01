@@ -10,7 +10,7 @@ trait Authentication[UserType /* <: js.Object */, ListNames /* <: String */] ext
 
 object Authentication {
   @scala.inline
-  def apply[UserType, ListNames](authentication: Item[UserType, ListNames]): Authentication[UserType, ListNames] = {
+  def apply[/* <: js.Object */ UserType, /* <: java.lang.String */ ListNames](authentication: Item[UserType, ListNames]): Authentication[UserType, ListNames] = {
     val __obj = js.Dynamic.literal(authentication = authentication.asInstanceOf[js.Any])
     __obj.asInstanceOf[Authentication[UserType, ListNames]]
   }

@@ -18,7 +18,7 @@ trait KeyExportOptions[T /* <: KeyFormat */] extends js.Object {
 
 object KeyExportOptions {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.node.cryptoMod.KeyFormat */ T](
     format: T,
     `type`: pkcs1 | spki | pkcs8 | sec1,
     cipher: String = null,

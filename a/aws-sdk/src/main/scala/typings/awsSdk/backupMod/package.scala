@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object backupMod {
   type ARN = java.lang.String
+  type AccountId = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.CREATED
     - typings.awsSdk.awsSdkStrings.PENDING

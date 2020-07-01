@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BridgeDestroyed extends Event {
-  /* Properties */
+  /**
+    * Bridge.
+    */
   var bridge: Bridge
 }
 

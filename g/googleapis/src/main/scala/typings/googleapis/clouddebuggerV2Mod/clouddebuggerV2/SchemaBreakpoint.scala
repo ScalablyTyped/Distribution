@@ -140,7 +140,7 @@ object SchemaBreakpoint {
     if (expressions != null) __obj.updateDynamic("expressions")(expressions.asInstanceOf[js.Any])
     if (finalTime != null) __obj.updateDynamic("finalTime")(finalTime.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFinalState)) __obj.updateDynamic("isFinalState")(isFinalState.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFinalState)) __obj.updateDynamic("isFinalState")(isFinalState.get.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])

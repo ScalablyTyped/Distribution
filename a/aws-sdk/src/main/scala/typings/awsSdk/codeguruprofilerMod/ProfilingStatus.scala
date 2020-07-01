@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ProfilingStatus extends js.Object {
   /**
-    * The time, in milliseconds since the epoch, when the latest agent was orchestrated.
+    * The date and time when the profiling agent most recently pinged back. Specify using the ISO 8601 format. For example, 2020-06-01T13:15:02.001Z represents 1 millisecond past June 1, 2020 1:15:02 PM UTC.
     */
   var latestAgentOrchestratedAt: js.UndefOr[Timestamp] = js.native
   /**
-    * The time, in milliseconds since the epoch, when the latest agent was reported..
+    * The date and time when the most recent profile was received. Specify using the ISO 8601 format. For example, 2020-06-01T13:15:02.001Z represents 1 millisecond past June 1, 2020 1:15:02 PM UTC.
     */
   var latestAgentProfileReportedAt: js.UndefOr[Timestamp] = js.native
   /**
-    * The latest aggregated profile
+    *  An  AggregatedProfileTime  object that contains the aggregation period and start time for an aggregated profile. 
     */
   var latestAggregatedProfile: js.UndefOr[AggregatedProfileTime] = js.native
 }

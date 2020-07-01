@@ -159,9 +159,9 @@ object SchemaSearchJobsRequest {
     histogramQueries: js.Array[SchemaHistogramQuery] = null,
     jobQuery: SchemaJobQuery = null,
     jobView: String = null,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     orderBy: String = null,
-    pageSize: Int | Double = null,
+    pageSize: js.UndefOr[Double] = js.undefined,
     pageToken: String = null,
     requestMetadata: SchemaRequestMetadata = null,
     requirePreciseResultSize: js.UndefOr[Boolean] = js.undefined,
@@ -169,19 +169,19 @@ object SchemaSearchJobsRequest {
   ): SchemaSearchJobsRequest = {
     val __obj = js.Dynamic.literal()
     if (customRankingInfo != null) __obj.updateDynamic("customRankingInfo")(customRankingInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableKeywordMatch)) __obj.updateDynamic("disableKeywordMatch")(disableKeywordMatch.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableKeywordMatch)) __obj.updateDynamic("disableKeywordMatch")(disableKeywordMatch.get.asInstanceOf[js.Any])
     if (diversificationLevel != null) __obj.updateDynamic("diversificationLevel")(diversificationLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableBroadening)) __obj.updateDynamic("enableBroadening")(enableBroadening.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableBroadening)) __obj.updateDynamic("enableBroadening")(enableBroadening.get.asInstanceOf[js.Any])
     if (histogramFacets != null) __obj.updateDynamic("histogramFacets")(histogramFacets.asInstanceOf[js.Any])
     if (histogramQueries != null) __obj.updateDynamic("histogramQueries")(histogramQueries.asInstanceOf[js.Any])
     if (jobQuery != null) __obj.updateDynamic("jobQuery")(jobQuery.asInstanceOf[js.Any])
     if (jobView != null) __obj.updateDynamic("jobView")(jobView.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     if (requestMetadata != null) __obj.updateDynamic("requestMetadata")(requestMetadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(requirePreciseResultSize)) __obj.updateDynamic("requirePreciseResultSize")(requirePreciseResultSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(requirePreciseResultSize)) __obj.updateDynamic("requirePreciseResultSize")(requirePreciseResultSize.get.asInstanceOf[js.Any])
     if (searchMode != null) __obj.updateDynamic("searchMode")(searchMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSearchJobsRequest]
   }

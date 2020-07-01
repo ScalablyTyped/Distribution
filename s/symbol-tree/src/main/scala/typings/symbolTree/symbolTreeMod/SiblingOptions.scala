@@ -23,7 +23,7 @@ trait SiblingOptions[T /* <: js.Object */] extends js.Object {
 
 object SiblingOptions {
   @scala.inline
-  def apply[T](root: js.UndefOr[Null | T] = js.undefined, skipChildren: js.UndefOr[Boolean] = js.undefined): SiblingOptions[T] = {
+  def apply[/* <: js.Object */ T](root: js.UndefOr[Null | T] = js.undefined, skipChildren: js.UndefOr[Boolean] = js.undefined): SiblingOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     if (!js.isUndefined(skipChildren)) __obj.updateDynamic("skipChildren")(skipChildren.get.asInstanceOf[js.Any])

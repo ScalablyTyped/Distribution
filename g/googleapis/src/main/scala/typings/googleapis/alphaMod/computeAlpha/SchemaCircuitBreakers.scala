@@ -46,19 +46,19 @@ object SchemaCircuitBreakers {
   @scala.inline
   def apply(
     connectTimeout: SchemaDuration = null,
-    maxConnections: Int | Double = null,
-    maxPendingRequests: Int | Double = null,
-    maxRequests: Int | Double = null,
-    maxRequestsPerConnection: Int | Double = null,
-    maxRetries: Int | Double = null
+    maxConnections: js.UndefOr[Double] = js.undefined,
+    maxPendingRequests: js.UndefOr[Double] = js.undefined,
+    maxRequests: js.UndefOr[Double] = js.undefined,
+    maxRequestsPerConnection: js.UndefOr[Double] = js.undefined,
+    maxRetries: js.UndefOr[Double] = js.undefined
   ): SchemaCircuitBreakers = {
     val __obj = js.Dynamic.literal()
     if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
-    if (maxConnections != null) __obj.updateDynamic("maxConnections")(maxConnections.asInstanceOf[js.Any])
-    if (maxPendingRequests != null) __obj.updateDynamic("maxPendingRequests")(maxPendingRequests.asInstanceOf[js.Any])
-    if (maxRequests != null) __obj.updateDynamic("maxRequests")(maxRequests.asInstanceOf[js.Any])
-    if (maxRequestsPerConnection != null) __obj.updateDynamic("maxRequestsPerConnection")(maxRequestsPerConnection.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxConnections)) __obj.updateDynamic("maxConnections")(maxConnections.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPendingRequests)) __obj.updateDynamic("maxPendingRequests")(maxPendingRequests.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRequests)) __obj.updateDynamic("maxRequests")(maxRequests.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRequestsPerConnection)) __obj.updateDynamic("maxRequestsPerConnection")(maxRequestsPerConnection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCircuitBreakers]
   }
 }

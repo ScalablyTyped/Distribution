@@ -2,8 +2,8 @@ package typings.echarts.echarts.EChartOption.SeriesSankey
 
 import typings.echarts.anon.BorderType
 import typings.echarts.anon.Distance
-import typings.echarts.anon.ExtraCssText
 import typings.echarts.anon.ItemStyleBorderTypeLabelDistance
+import typings.echarts.echarts.EChartOption.BaseTooltip
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,7 +40,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sankey.data.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
   /**
     * The value of data item.
     *
@@ -57,7 +57,7 @@ object DataObject {
     itemStyle: BorderType = null,
     label: Distance = null,
     name: String = null,
-    tooltip: ExtraCssText = null,
+    tooltip: BaseTooltip = null,
     value: js.Array[_] | Double = null
   ): DataObject = {
     val __obj = js.Dynamic.literal()

@@ -11,7 +11,7 @@ trait EmptyLongest[Longest, TupleSet /* <: js.Array[js.Array[_]] */] extends js.
 
 object EmptyLongest {
   @scala.inline
-  def apply[Longest, TupleSet](
+  def apply[Longest, /* <: js.Array[js.Array[_]] */ TupleSet](
     empty: Longest,
     nonEmpty: /* import warning: importer.ImportType#apply Failed type conversion: typescript-tuple.typescript-tuple/lib/utils.SortTwoTuple<Longest, any, [Longest, any]>[1] */ js.Any
   ): EmptyLongest[Longest, TupleSet] = {

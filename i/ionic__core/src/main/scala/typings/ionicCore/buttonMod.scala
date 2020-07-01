@@ -1,5 +1,6 @@
 package typings.ionicCore
 
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.elementInterfaceMod.AnchorInterface
 import typings.ionicCore.elementInterfaceMod.ButtonInterface
 import typings.ionicCore.interfaceMod.RouterDirection
@@ -69,6 +70,11 @@ object buttonMod extends js.Object {
     var ionFocus: EventEmitter[Unit] = js.native
     var onBlur: js.Any = js.native
     var onFocus: js.Any = js.native
+    /**
+      * When using a router, it specifies the transition animation when navigating to
+      * another page using `href`.
+      */
+    var routerAnimation: js.UndefOr[AnimationBuilder] = js.native
     /**
       * When using a router, it specifies the transition direction when navigating to
       * another page using `href`.

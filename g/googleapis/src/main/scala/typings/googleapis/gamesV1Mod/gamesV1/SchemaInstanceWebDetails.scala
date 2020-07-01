@@ -30,7 +30,7 @@ object SchemaInstanceWebDetails {
     val __obj = js.Dynamic.literal()
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (launchUrl != null) __obj.updateDynamic("launchUrl")(launchUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferred)) __obj.updateDynamic("preferred")(preferred.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferred)) __obj.updateDynamic("preferred")(preferred.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstanceWebDetails]
   }
 }

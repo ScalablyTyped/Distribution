@@ -4,99 +4,51 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TrackEntry extends js.Object {
-  var alpha: Double
-  var animation: Animation
-  var animationEnd: Double
-  var animationLast: Double
-  var animationStart: Double
-  var attachmentThreshold: Double
-  var delay: Double
-  var drawOrderThreshold: Double
-  var endTime: Double
-  var eventThreshold: Double
-  var holdPrevious: Boolean
-  var interruptAlpha: Double
-  var listener: AnimationStateListener
-  var loop: Boolean
-  var mixBlend: MixBlend
-  var mixDuration: Double
-  var mixTime: Double
-  var mixingFrom: TrackEntry
-  var mixingTo: TrackEntry
-  var next: TrackEntry
-  var nextAnimationLast: Double
-  var nextTrackLast: Double
-  var time: Double
-  var timeScale: Double
-  var timelineHoldMix: js.Array[TrackEntry]
-  var timelineMode: js.Array[Double]
-  var timelinesRotation: js.Array[Double]
-  var totalAlpha: Double
-  var trackEnd: Double
-  var trackIndex: Double
-  var trackLast: Double
-  var trackTime: Double
-  def getAnimationTime(): Double
-  def isComplete(): Boolean
-  def loopsCount(): Double
-  def onComplete(trackIndex: Double, loopCount: Double): js.Any
-  def onEnd(trackIndex: Double): js.Any
-  def onEvent(trackIndex: Double, event: Event): js.Any
-  def onStart(trackIndex: Double): js.Any
-  def reset(): Unit
-  def resetRotationDirections(): Unit
-  def setAnimationLast(animationLast: Double): Unit
-}
-
-object TrackEntry {
-  @scala.inline
-  def apply(
-    alpha: Double,
-    animation: Animation,
-    animationEnd: Double,
-    animationLast: Double,
-    animationStart: Double,
-    attachmentThreshold: Double,
-    delay: Double,
-    drawOrderThreshold: Double,
-    endTime: Double,
-    eventThreshold: Double,
-    getAnimationTime: () => Double,
-    holdPrevious: Boolean,
-    interruptAlpha: Double,
-    isComplete: () => Boolean,
-    listener: AnimationStateListener,
-    loop: Boolean,
-    loopsCount: () => Double,
-    mixBlend: MixBlend,
-    mixDuration: Double,
-    mixTime: Double,
-    mixingFrom: TrackEntry,
-    mixingTo: TrackEntry,
-    next: TrackEntry,
-    nextAnimationLast: Double,
-    nextTrackLast: Double,
-    onComplete: (Double, Double) => js.Any,
-    onEnd: Double => js.Any,
-    onEvent: (Double, Event) => js.Any,
-    onStart: Double => js.Any,
-    reset: () => Unit,
-    resetRotationDirections: () => Unit,
-    setAnimationLast: Double => Unit,
-    time: Double,
-    timeScale: Double,
-    timelineHoldMix: js.Array[TrackEntry],
-    timelineMode: js.Array[Double],
-    timelinesRotation: js.Array[Double],
-    totalAlpha: Double,
-    trackEnd: Double,
-    trackIndex: Double,
-    trackLast: Double,
-    trackTime: Double
-  ): TrackEntry = {
-    val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], animation = animation.asInstanceOf[js.Any], animationEnd = animationEnd.asInstanceOf[js.Any], animationLast = animationLast.asInstanceOf[js.Any], animationStart = animationStart.asInstanceOf[js.Any], attachmentThreshold = attachmentThreshold.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], drawOrderThreshold = drawOrderThreshold.asInstanceOf[js.Any], endTime = endTime.asInstanceOf[js.Any], eventThreshold = eventThreshold.asInstanceOf[js.Any], getAnimationTime = js.Any.fromFunction0(getAnimationTime), holdPrevious = holdPrevious.asInstanceOf[js.Any], interruptAlpha = interruptAlpha.asInstanceOf[js.Any], isComplete = js.Any.fromFunction0(isComplete), listener = listener.asInstanceOf[js.Any], loop = loop.asInstanceOf[js.Any], loopsCount = js.Any.fromFunction0(loopsCount), mixBlend = mixBlend.asInstanceOf[js.Any], mixDuration = mixDuration.asInstanceOf[js.Any], mixTime = mixTime.asInstanceOf[js.Any], mixingFrom = mixingFrom.asInstanceOf[js.Any], mixingTo = mixingTo.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], nextAnimationLast = nextAnimationLast.asInstanceOf[js.Any], nextTrackLast = nextTrackLast.asInstanceOf[js.Any], onComplete = js.Any.fromFunction2(onComplete), onEnd = js.Any.fromFunction1(onEnd), onEvent = js.Any.fromFunction2(onEvent), onStart = js.Any.fromFunction1(onStart), reset = js.Any.fromFunction0(reset), resetRotationDirections = js.Any.fromFunction0(resetRotationDirections), setAnimationLast = js.Any.fromFunction1(setAnimationLast), time = time.asInstanceOf[js.Any], timeScale = timeScale.asInstanceOf[js.Any], timelineHoldMix = timelineHoldMix.asInstanceOf[js.Any], timelineMode = timelineMode.asInstanceOf[js.Any], timelinesRotation = timelinesRotation.asInstanceOf[js.Any], totalAlpha = totalAlpha.asInstanceOf[js.Any], trackEnd = trackEnd.asInstanceOf[js.Any], trackIndex = trackIndex.asInstanceOf[js.Any], trackLast = trackLast.asInstanceOf[js.Any], trackTime = trackTime.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TrackEntry]
-  }
+  var alpha: Double = js.native
+  var animation: Animation = js.native
+  var animationEnd: Double = js.native
+  var animationLast: Double = js.native
+  var animationStart: Double = js.native
+  var attachmentThreshold: Double = js.native
+  var delay: Double = js.native
+  var drawOrderThreshold: Double = js.native
+  var eventThreshold: Double = js.native
+  var holdPrevious: Boolean = js.native
+  var interruptAlpha: Double = js.native
+  var listener: AnimationStateListener = js.native
+  var loop: Boolean = js.native
+  var mixBlend: MixBlend = js.native
+  var mixDuration: Double = js.native
+  var mixTime: Double = js.native
+  var mixingFrom: TrackEntry = js.native
+  var mixingTo: TrackEntry = js.native
+  var next: TrackEntry = js.native
+  var nextAnimationLast: Double = js.native
+  var nextTrackLast: Double = js.native
+  var timeScale: Double = js.native
+  var timelineHoldMix: js.Array[TrackEntry] = js.native
+  var timelineMode: js.Array[Double] = js.native
+  var timelinesRotation: js.Array[Double] = js.native
+  var totalAlpha: Double = js.native
+  var trackEnd: Double = js.native
+  var trackIndex: Double = js.native
+  var trackLast: Double = js.native
+  var trackTime: Double = js.native
+  def endTime: Double = js.native
+  def endTime(value: Double): js.Any = js.native
+  def getAnimationTime(): Double = js.native
+  def isComplete(): Boolean = js.native
+  def loopsCount(): Double = js.native
+  def onComplete(trackIndex: Double, loopCount: Double): js.Any = js.native
+  def onEnd(trackIndex: Double): js.Any = js.native
+  def onEvent(trackIndex: Double, event: Event): js.Any = js.native
+  def onStart(trackIndex: Double): js.Any = js.native
+  def reset(): Unit = js.native
+  def resetRotationDirections(): Unit = js.native
+  def setAnimationLast(animationLast: Double): Unit = js.native
+  def time: Double = js.native
+  def time(value: Double): js.Any = js.native
 }
 

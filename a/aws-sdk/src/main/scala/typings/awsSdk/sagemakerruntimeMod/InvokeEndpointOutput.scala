@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait InvokeEndpointOutput extends js.Object {
   /**
-    * Includes the inference provided by the model. For information about the format of the response body, see Common Data Formats—Inference.
+    * Includes the inference provided by the model. For information about the format of the response body, see Common Data Formats-Inference.
     */
   var Body: BodyBlob = js.native
   /**

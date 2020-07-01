@@ -45,7 +45,7 @@ trait Options[EmittedType /* <: js.Array[_] */] extends js.Object {
 
 object Options {
   @scala.inline
-  def apply[EmittedType](
+  def apply[/* <: js.Array[_] */ EmittedType](
     filter: EmittedType => Boolean = null,
     multiArgs: js.UndefOr[Boolean] = js.undefined,
     rejectionEvents: js.Array[String | js.Symbol] = null,

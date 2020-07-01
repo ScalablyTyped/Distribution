@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListRecommendationsRequest extends js.Object {
   /**
-    *  The Amazon Resource Name (ARN) of the code review to describe. 
+    * The Amazon Resource Name (ARN) of the  CodeReview  object. 
     */
   var CodeReviewArn: Arn = js.native
   /**

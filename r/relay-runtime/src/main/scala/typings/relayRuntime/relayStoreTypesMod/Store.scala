@@ -1,11 +1,9 @@
 package typings.relayRuntime.relayStoreTypesMod
 
-import typings.relayRuntime.relayConnectionMod.ConnectionID
-import typings.relayRuntime.relayConnectionMod.ConnectionInternalEvent
-import typings.relayRuntime.relayConnectionMod.ConnectionReference
-import typings.relayRuntime.relayConnectionMod.ConnectionResolver
-import typings.relayRuntime.relayConnectionMod.ConnectionSnapshot
+import typings.relayRuntime.relayModernStoreMod.InvalidationState
+import typings.relayRuntime.relayRuntimeTypesMod.DataID
 import typings.relayRuntime.relayRuntimeTypesMod.Disposable
+import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +17,13 @@ trait Store extends js.Object {
   def check(operation: OperationDescriptor): OperationAvailability = js.native
   def check(operation: OperationDescriptor, options: CheckOptions): OperationAvailability = js.native
   /**
-    * Get a read-only view of the store's internal connection events for a given
-    * connection.
+    * Given the previous invalidation state for those
+    * ids, this function will return:
+    *   - false, if the invalidation state for those ids is the same, meaning
+    *     **it has not changed**
+    *   - true, if the invalidation state for the given ids has changed
     */
-  def getConnectionEvents_UNSTABLE(connectionID: ConnectionID): js.Array[ConnectionInternalEvent] = js.native
+  def checkInvalidationState(previousInvalidationState: InvalidationState): Boolean = js.native
   /**
     * Get a read-only view of the store's internal RecordSource.
     */
@@ -38,18 +39,20 @@ trait Store extends js.Object {
     * owns this selector (fragment).
     */
   def lookup(selector: SingularReaderSelector): Snapshot = js.native
-  def lookupConnection_UNSTABLE[TEdge, TState](connectionReference: ConnectionReference[TEdge], resolver: ConnectionResolver[TEdge, TState]): ConnectionSnapshot[TEdge, TState] = js.native
+  /**
+    * Will return an opaque snapshot of the current invalidation state of
+    * the data ids that were provided.
+    */
+  def lookupInvalidationState(dataIDs: js.Array[DataID]): InvalidationState = js.native
+  def notify(sourceOperation: OperationDescriptor): js.Array[RequestDescriptor] = js.native
+  def notify(sourceOperation: OperationDescriptor, invalidateStore: Boolean): js.Array[RequestDescriptor] = js.native
   /**
     * Publish new information (e.g. from the network) to the store, updating its
     * internal record source. Subscribers are not immediately notified - this
     * occurs when `notify()` is called.
     */
   def publish(source: RecordSource): Unit = js.native
-  /**
-    * Publish connection events, updating the store's list of events. As with
-    * publish(), subscribers are only notified after notify() is called.
-    */
-  def publishConnectionEvents_UNSTABLE(events: js.Array[ConnectionInternalEvent], `final`: Boolean): Unit = js.native
+  def publish(source: RecordSource, idsMarkedForInvalidation: Set[DataID]): Unit = js.native
   /**
     * Reset the state of the store to the point that snapshot() was last called.
     */
@@ -72,10 +75,13 @@ trait Store extends js.Object {
     * selector results relative to the last `notify()`.
     */
   def subscribe(snapshot: Snapshot, callback: js.Function1[/* snapshot */ Snapshot, Unit]): Disposable = js.native
-  def subscribeConnection_UNSTABLE[TEdge, TState](
-    snapshot: ConnectionSnapshot[TEdge, TState],
-    resolver: ConnectionResolver[TEdge, TState],
-    callback: js.Function1[/* state */ TState, Unit]
-  ): Disposable = js.native
+  /**
+    * Will subscribe the provided callback to the invalidation state of the
+    * given data ids. Whenever the invalidation state for any of the provided
+    * ids changes, the callback will be called, and provide the latest
+    * invalidation state.
+    * Disposing of the returned disposable will remove the subscription.
+    */
+  def subscribeToInvalidationState(invalidationState: InvalidationState, callback: js.Function0[Unit]): Disposable = js.native
 }
 

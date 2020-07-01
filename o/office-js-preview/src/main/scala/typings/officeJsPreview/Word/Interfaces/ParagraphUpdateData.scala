@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the Paragraph object, for use in "paragraph.set({ ... })". */
+/** An interface for updating data on the Paragraph object, for use in `paragraph.set({ ... })`. */
 trait ParagraphUpdateData extends js.Object {
   /**
     *

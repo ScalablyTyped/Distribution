@@ -1,6 +1,7 @@
 package typings.redom.mod
 
 import typings.std.HTMLElement
+import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +13,9 @@ class List_ protected () extends RedomComponent {
   def this(parent: RedomQuery, View: RedomComponentCreator, key: String) = this()
   def this(parent: RedomQuery, View: RedomComponentCreator, key: String, initData: js.Any) = this()
   /* CompleteClass */
-  override var el: HTMLElement = js.native
+  override var el: HTMLElement | SVGElement | RedomComponent = js.native
+  @JSName("el")
+  var el_List_ : HTMLElement | SVGElement = js.native
   @JSName("update")
   def update_MList_(data: js.Array[_]): Unit = js.native
   @JSName("update")

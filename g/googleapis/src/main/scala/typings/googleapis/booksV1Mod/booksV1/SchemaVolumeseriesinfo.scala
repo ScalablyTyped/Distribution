@@ -1,6 +1,6 @@
 package typings.googleapis.booksV1Mod.booksV1
 
-import typings.googleapis.AnonIssue
+import typings.googleapis.anon.Issue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ trait SchemaVolumeseriesinfo extends js.Object {
     * Short book title in the context of the series.
     */
   var shortSeriesBookTitle: js.UndefOr[String] = js.native
-  var volumeSeries: js.UndefOr[js.Array[AnonIssue]] = js.native
+  var volumeSeries: js.UndefOr[js.Array[Issue]] = js.native
 }
 
 object SchemaVolumeseriesinfo {
@@ -29,7 +29,7 @@ object SchemaVolumeseriesinfo {
     bookDisplayNumber: String = null,
     kind: String = null,
     shortSeriesBookTitle: String = null,
-    volumeSeries: js.Array[AnonIssue] = null
+    volumeSeries: js.Array[Issue] = null
   ): SchemaVolumeseriesinfo = {
     val __obj = js.Dynamic.literal()
     if (bookDisplayNumber != null) __obj.updateDynamic("bookDisplayNumber")(bookDisplayNumber.asInstanceOf[js.Any])

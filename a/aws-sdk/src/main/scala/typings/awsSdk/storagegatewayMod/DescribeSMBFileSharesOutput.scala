@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeSMBFileSharesOutput extends js.Object {
   /**
-    * An array containing a description for each requested file share. 
+    * An array containing a description for each requested file share.
     */
   var SMBFileShareInfoList: js.UndefOr[typings.awsSdk.storagegatewayMod.SMBFileShareInfoList] = js.native
 }

@@ -1,6 +1,6 @@
 package typings.rcPicker.rangePickerMod
 
-import typings.rcPicker.dateBodyMod.DateRender
+import typings.rcPicker.anon.Range
 import typings.rcPicker.generateMod.GenerateConfig
 import typings.rcPicker.interfaceMod.Components
 import typings.rcPicker.interfaceMod.DisabledTimes
@@ -129,7 +129,7 @@ trait RangePickerBaseProps[DateType] extends RangePickerProps[DateType] {
   var className: js.UndefOr[String] = js.undefined
   var clearIcon: js.UndefOr[ReactNode] = js.undefined
   var components: js.UndefOr[Components] = js.undefined
-  var dateRender: js.UndefOr[DateRender[DateType]] = js.undefined
+  var dateRender: js.UndefOr[RangeDateRender[DateType]] = js.undefined
   var defaultOpen: js.UndefOr[Boolean] = js.undefined
   var defaultPickerValue: js.UndefOr[js.Tuple2[DateType, DateType]] = js.undefined
   var defaultValue: js.UndefOr[RangeValue[DateType]] = js.undefined
@@ -267,7 +267,7 @@ object RangePickerBaseProps {
     className: String = null,
     clearIcon: ReactNode = null,
     components: Components = null,
-    dateRender: (DateType, DateType) => ReactNode = null,
+    dateRender: (DateType, DateType, /* info */ Range) => ReactNode = null,
     defaultOpen: js.UndefOr[Boolean] = js.undefined,
     defaultPickerValue: js.Tuple2[DateType, DateType] = null,
     defaultValue: js.UndefOr[Null | RangeValue[DateType]] = js.undefined,
@@ -376,7 +376,7 @@ object RangePickerBaseProps {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon.asInstanceOf[js.Any])
     if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
-    if (dateRender != null) __obj.updateDynamic("dateRender")(js.Any.fromFunction2(dateRender))
+    if (dateRender != null) __obj.updateDynamic("dateRender")(js.Any.fromFunction3(dateRender))
     if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen.get.asInstanceOf[js.Any])
     if (defaultPickerValue != null) __obj.updateDynamic("defaultPickerValue")(defaultPickerValue.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])

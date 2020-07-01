@@ -18,9 +18,9 @@ trait SchemaConnectionDraining extends js.Object {
 
 object SchemaConnectionDraining {
   @scala.inline
-  def apply(drainingTimeoutSec: Int | Double = null): SchemaConnectionDraining = {
+  def apply(drainingTimeoutSec: js.UndefOr[Double] = js.undefined): SchemaConnectionDraining = {
     val __obj = js.Dynamic.literal()
-    if (drainingTimeoutSec != null) __obj.updateDynamic("drainingTimeoutSec")(drainingTimeoutSec.asInstanceOf[js.Any])
+    if (!js.isUndefined(drainingTimeoutSec)) __obj.updateDynamic("drainingTimeoutSec")(drainingTimeoutSec.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaConnectionDraining]
   }
 }

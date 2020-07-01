@@ -15,7 +15,7 @@ trait ThemeContextValue[TTransformProps /* <: js.Object */, TNewProps /* <: js.O
 
 object ThemeContextValue {
   @scala.inline
-  def apply[TTransformProps, TNewProps](
+  def apply[/* <: js.Object */ TTransformProps, /* <: js.Object */ TNewProps](
     transform: (/* props */ ClassName with Partial[TTransformProps], /* componentName */ String, /* location */ js.UndefOr[String]) => ReturnType[TransformFunction[TTransformProps, TNewProps]]
   ): ThemeContextValue[TTransformProps, TNewProps] = {
     val __obj = js.Dynamic.literal(transform = js.Any.fromFunction3(transform))

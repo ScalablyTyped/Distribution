@@ -60,7 +60,7 @@ object SchemaPostalAddress {
     if (dependentLocalityName != null) __obj.updateDynamic("dependentLocalityName")(dependentLocalityName.asInstanceOf[js.Any])
     if (dependentThoroughfareName != null) __obj.updateDynamic("dependentThoroughfareName")(dependentThoroughfareName.asInstanceOf[js.Any])
     if (firmName != null) __obj.updateDynamic("firmName")(firmName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDisputed)) __obj.updateDynamic("isDisputed")(isDisputed.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDisputed)) __obj.updateDynamic("isDisputed")(isDisputed.get.asInstanceOf[js.Any])
     if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
     if (localityName != null) __obj.updateDynamic("localityName")(localityName.asInstanceOf[js.Any])
     if (postBoxNumber != null) __obj.updateDynamic("postBoxNumber")(postBoxNumber.asInstanceOf[js.Any])

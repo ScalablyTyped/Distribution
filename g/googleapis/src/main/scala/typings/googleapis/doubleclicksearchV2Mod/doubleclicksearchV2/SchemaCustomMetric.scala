@@ -21,10 +21,10 @@ trait SchemaCustomMetric extends js.Object {
 
 object SchemaCustomMetric {
   @scala.inline
-  def apply(name: String = null, value: Int | Double = null): SchemaCustomMetric = {
+  def apply(name: String = null, value: js.UndefOr[Double] = js.undefined): SchemaCustomMetric = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCustomMetric]
   }
 }

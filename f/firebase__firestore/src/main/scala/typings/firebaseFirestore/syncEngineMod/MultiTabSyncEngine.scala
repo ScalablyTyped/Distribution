@@ -1,5 +1,6 @@
 package typings.firebaseFirestore.syncEngineMod
 
+import typings.firebaseFirestore.datastoreMod.Datastore
 import typings.firebaseFirestore.localStoreMod.MultiTabLocalStore
 import typings.firebaseFirestore.remoteStoreMod.RemoteStore
 import typings.firebaseFirestore.sharedClientStateMod.SharedClientState
@@ -17,6 +18,7 @@ class MultiTabSyncEngine protected ()
   def this(
     localStore: MultiTabLocalStore,
     remoteStore: RemoteStore,
+    datastore: Datastore,
     sharedClientState: SharedClientState,
     currentUser: User,
     maxConcurrentLimboResolutions: Double

@@ -73,7 +73,7 @@ trait ComponentOptions[Instance /* <: Component[Data, Props] */, Data, Methods, 
 
 object ComponentOptions {
   @scala.inline
-  def apply[Instance, Data, Methods, Props](
+  def apply[/* <: typings.baiduApp.swan.Component[Data, Props] */ Instance, Data, Methods, Props](
     attached: () => Unit = null,
     behaviors: js.Array[
       (ComponentOptions[

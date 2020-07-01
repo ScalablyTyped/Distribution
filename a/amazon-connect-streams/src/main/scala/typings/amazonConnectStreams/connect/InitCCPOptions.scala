@@ -5,32 +5,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait InitCCPOptions extends js.Object {
-  /*
-    * The URL for the Connect CCP.
-    */
-  var ccpUrl: String
-  /*
-    * Whether to display the login view.
-    */
-  var loginPopup: js.UndefOr[Boolean] = js.undefined
   /**
-    * Defaults to false.
-    * Set to true to automatically close the loginPopup window after authentication.
+    * The URL of the CCP.
+    * This is the page you would normally navigate to in order to use the CCP in a standalone page, it is different for each instance.
     */
-  var loginPopupAutoClose: js.UndefOr[Boolean] = js.undefined
+  val ccpUrl: String
   /**
-    * Allows custom URL to be used to initiate the ccp, as in the case of SAML authentication.
+    * Set to `false` to disable the login popup which is shown when the user's authentication expires.
+    * @default true
     */
-  var loginUrl: js.UndefOr[String] = js.undefined
+  val loginPopup: js.UndefOr[Boolean] = js.undefined
   /**
-    * Amazon connect instance region
-    * Only required for chat channel
+    * Set to `true` in conjunction with the `loginPopup` parameter to automatically close the login Popup window once the authentication step has completed.
+    * If the login page opened in a new tab, this parameter will also auto-close that tab.
+    * @default false
     */
-  var region: js.UndefOr[String] = js.undefined
-  /*
-    * Options specifying softphone configuration.
+  val loginPopupAutoClose: js.UndefOr[Boolean] = js.undefined
+  /** Allows custom URL to be used to initiate the ccp, as in the case of SAML authentication. */
+  val loginUrl: js.UndefOr[String] = js.undefined
+  /**
+    * Amazon connect instance region. Only required for chat channel.
+    * @example "us-west-2"
     */
-  var softphone: js.UndefOr[SoftPhoneOptions] = js.undefined
+  val region: js.UndefOr[String] = js.undefined
+  /** Allows you to specify some settings surrounding the softphone feature of Connect. */
+  val softphone: js.UndefOr[SoftPhoneOptions] = js.undefined
 }
 
 object InitCCPOptions {

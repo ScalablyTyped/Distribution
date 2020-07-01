@@ -1,6 +1,6 @@
 package typings.googleapis.driveV3Mod.driveV3
 
-import typings.googleapis.AnonInheritedFrom
+import typings.googleapis.anon.InheritedFrom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -65,7 +65,7 @@ trait SchemaPermission extends js.Object {
     * or directly on this item. This is an output-only field which is present
     * only for Team Drive items.
     */
-  var teamDrivePermissionDetails: js.UndefOr[js.Array[AnonInheritedFrom]] = js.native
+  var teamDrivePermissionDetails: js.UndefOr[js.Array[InheritedFrom]] = js.native
   /**
     * The type of the grantee. Valid values are:   - user  - group  - domain  -
     * anyone
@@ -86,12 +86,12 @@ object SchemaPermission {
     kind: String = null,
     photoLink: String = null,
     role: String = null,
-    teamDrivePermissionDetails: js.Array[AnonInheritedFrom] = null,
+    teamDrivePermissionDetails: js.Array[InheritedFrom] = null,
     `type`: String = null
   ): SchemaPermission = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowFileDiscovery)) __obj.updateDynamic("allowFileDiscovery")(allowFileDiscovery.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFileDiscovery)) __obj.updateDynamic("allowFileDiscovery")(allowFileDiscovery.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])

@@ -68,7 +68,7 @@ object SchemaApplicationReport {
     packageSha256Hash: String = null,
     signingKeyCertFingerprints: js.Array[String] = null,
     state: String = null,
-    versionCode: Int | Double = null,
+    versionCode: js.UndefOr[Double] = js.undefined,
     versionName: String = null
   ): SchemaApplicationReport = {
     val __obj = js.Dynamic.literal()
@@ -80,7 +80,7 @@ object SchemaApplicationReport {
     if (packageSha256Hash != null) __obj.updateDynamic("packageSha256Hash")(packageSha256Hash.asInstanceOf[js.Any])
     if (signingKeyCertFingerprints != null) __obj.updateDynamic("signingKeyCertFingerprints")(signingKeyCertFingerprints.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (versionCode != null) __obj.updateDynamic("versionCode")(versionCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(versionCode)) __obj.updateDynamic("versionCode")(versionCode.get.asInstanceOf[js.Any])
     if (versionName != null) __obj.updateDynamic("versionName")(versionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaApplicationReport]
   }

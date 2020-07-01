@@ -11,7 +11,7 @@ trait ResolvedData[FieldNames /* <: String */] extends js.Object {
 
 object ResolvedData {
   @scala.inline
-  def apply[FieldNames](resolvedData: KeyValues[FieldNames, _]): ResolvedData[FieldNames] = {
+  def apply[/* <: java.lang.String */ FieldNames](resolvedData: KeyValues[FieldNames, _]): ResolvedData[FieldNames] = {
     val __obj = js.Dynamic.literal(resolvedData = resolvedData.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedData[FieldNames]]
   }

@@ -1,5 +1,8 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.keytipDataTypesMod.IKeytipDataProps
+import typings.react.mod.FunctionComponent
+import typings.uifabricUtilities.irendercomponentMod.IRenderComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,9 +10,6 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/KeytipData", JSImport.Namespace)
 @js.native
 object libKeytipDataMod extends js.Object {
-  @js.native
-  class KeytipData ()
-    extends typings.officeUiFabricReact.keytipDataKeytipDataMod.KeytipData
-  
+  val KeytipData: FunctionComponent[IKeytipDataProps with IRenderComponent[js.Object]] = js.native
 }
 

@@ -42,7 +42,7 @@ trait IOptions[T /* <: NotebookPanel */] extends IWidgetFactoryOptions[T] {
 
 object IOptions {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.jupyterlabNotebook.panelMod.NotebookPanel */ T](
     contentFactory: IContentFactory,
     fileTypes: js.Array[String],
     mimeTypeService: IEditorMimeTypeService,

@@ -54,6 +54,7 @@ class QueryList[T] protected ()
     */
   var isEnterKeyPressed: js.Any = js.native
   var itemsParentRef: js.UndefOr[js.Any] = js.native
+  var maybeResetQuery: js.Any = js.native
   var refHandlers: js.Any = js.native
   var renderCreateItemMenuItem: js.Any = js.native
   /** wrapper around `itemRenderer` to inject props */

@@ -99,7 +99,7 @@ object SchemaMetricThreshold {
     denominatorFilter: String = null,
     duration: String = null,
     filter: String = null,
-    thresholdValue: Int | Double = null,
+    thresholdValue: js.UndefOr[Double] = js.undefined,
     trigger: SchemaTrigger = null
   ): SchemaMetricThreshold = {
     val __obj = js.Dynamic.literal()
@@ -109,7 +109,7 @@ object SchemaMetricThreshold {
     if (denominatorFilter != null) __obj.updateDynamic("denominatorFilter")(denominatorFilter.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (thresholdValue != null) __obj.updateDynamic("thresholdValue")(thresholdValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(thresholdValue)) __obj.updateDynamic("thresholdValue")(thresholdValue.get.asInstanceOf[js.Any])
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMetricThreshold]
   }

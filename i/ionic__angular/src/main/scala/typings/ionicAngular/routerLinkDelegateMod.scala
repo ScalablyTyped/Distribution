@@ -5,6 +5,7 @@ import typings.angularCore.mod.ElementRef
 import typings.angularRouter.mod.Router
 import typings.angularRouter.mod.RouterLink
 import typings.ionicAngular.navControllerMod.NavController
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.interfaceMod.RouterDirection
 import typings.std.UIEvent
 import scala.scalajs.js
@@ -33,6 +34,7 @@ object routerLinkDelegateMod extends js.Object {
     var locationStrategy: js.Any = js.native
     var navCtrl: js.Any = js.native
     var router: js.Any = js.native
+    var routerAnimation: js.UndefOr[AnimationBuilder] = js.native
     var routerDirection: RouterDirection = js.native
     var routerLink: js.UndefOr[js.Any] = js.native
     var subscription: js.UndefOr[js.Any] = js.native

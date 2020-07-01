@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AssociationDescription extends js.Object {
   /**
+    * By default, when you create a new associations, the system runs it immediately after it is created and then according to the schedule you specified. Specify this option if you don't want an association to run immediately after you create it.
+    */
+  var ApplyOnlyAtCronInterval: js.UndefOr[typings.awsSdk.ssmMod.ApplyOnlyAtCronInterval] = js.native
+  /**
     * The association ID.
     */
   var AssociationId: js.UndefOr[typings.awsSdk.ssmMod.AssociationId] = js.native
@@ -95,6 +99,7 @@ trait AssociationDescription extends js.Object {
 object AssociationDescription {
   @scala.inline
   def apply(
+    ApplyOnlyAtCronInterval: js.UndefOr[ApplyOnlyAtCronInterval] = js.undefined,
     AssociationId: AssociationId = null,
     AssociationName: AssociationName = null,
     AssociationVersion: AssociationVersion = null,
@@ -118,6 +123,7 @@ object AssociationDescription {
     Targets: Targets = null
   ): AssociationDescription = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(ApplyOnlyAtCronInterval)) __obj.updateDynamic("ApplyOnlyAtCronInterval")(ApplyOnlyAtCronInterval.get.asInstanceOf[js.Any])
     if (AssociationId != null) __obj.updateDynamic("AssociationId")(AssociationId.asInstanceOf[js.Any])
     if (AssociationName != null) __obj.updateDynamic("AssociationName")(AssociationName.asInstanceOf[js.Any])
     if (AssociationVersion != null) __obj.updateDynamic("AssociationVersion")(AssociationVersion.asInstanceOf[js.Any])

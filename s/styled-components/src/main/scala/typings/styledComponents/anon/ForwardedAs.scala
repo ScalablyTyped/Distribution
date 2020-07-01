@@ -11,7 +11,7 @@ trait ForwardedAs[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was u
 
 object ForwardedAs {
   @scala.inline
-  def apply[C](as: C = null, forwardedAs: C = null): ForwardedAs[C] = {
+  def apply[/* <: / * import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 * / js.Any */ C](as: C = null, forwardedAs: C = null): ForwardedAs[C] = {
     val __obj = js.Dynamic.literal()
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (forwardedAs != null) __obj.updateDynamic("forwardedAs")(forwardedAs.asInstanceOf[js.Any])

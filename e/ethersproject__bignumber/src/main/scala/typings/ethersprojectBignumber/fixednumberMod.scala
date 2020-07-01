@@ -31,6 +31,7 @@ object fixednumberMod extends js.Object {
     def _checkFormat(other: FixedNumber): Unit = js.native
     def addUnsafe(other: FixedNumber): FixedNumber = js.native
     def divUnsafe(other: FixedNumber): FixedNumber = js.native
+    def isZero(): Boolean = js.native
     def mulUnsafe(other: FixedNumber): FixedNumber = js.native
     def round(): FixedNumber = js.native
     def round(decimals: Double): FixedNumber = js.native

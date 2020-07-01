@@ -5,8 +5,8 @@ import typings.ionicCore.alertInterfaceMod.AlertInput
 import typings.ionicCore.componentsMod.global.HTMLIonAlertElement
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.overlaysInterfaceMod.OverlayInterface
+import typings.ionicCore.sanitizationMod.IonicSafeString
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
-import typings.ionicCore.typesMod.IonicSafeString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,6 +38,7 @@ object alertMod extends js.Object {
     var dispatchCancelHandler: js.Any = js.native
     @JSName("el")
     var el_Alert: HTMLIonAlertElement = js.native
+    var gesture: js.UndefOr[js.Any] = js.native
     var getValues: js.Any = js.native
     /**
       * The main title in the heading of the alert.
@@ -77,18 +78,22 @@ object alertMod extends js.Object {
       * [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).
       */
     var translucent: Boolean = js.native
+    var wrapperEl: js.UndefOr[js.Any] = js.native
     def buttonsChanged(): Unit = js.native
+    @JSName("componentDidLoad")
+    def componentDidLoad_MAlert(): Unit = js.native
+    def componentDidUnload(): Unit = js.native
     @JSName("componentWillLoad")
     def componentWillLoad_MAlert(): Unit = js.native
     def inputsChanged(): Unit = js.native
     /**
       * Returns a promise that resolves when the alert did dismiss.
       */
-    def onDidDismiss(): js.Promise[OverlayEventDetail[_]] = js.native
+    def onDidDismiss[T](): js.Promise[OverlayEventDetail[T]] = js.native
     /**
       * Returns a promise that resolves when the alert will dismiss.
       */
-    def onWillDismiss(): js.Promise[OverlayEventDetail[_]] = js.native
+    def onWillDismiss[T](): js.Promise[OverlayEventDetail[T]] = js.native
     @JSName("render")
     def render_MAlert(): js.Any = js.native
   }

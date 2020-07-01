@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 class JSONReporter () extends ConsolaReporter {
   def this(options: JSONReporterOptions) = this()
   /* CompleteClass */
-  override def log(logObj: ConsolaLogObject, args: ConsolaReporterArgs): Unit = js.native
+  override def log(logObj: ConsolaReporterLogObject, args: ConsolaReporterArgs): Unit = js.native
 }
 

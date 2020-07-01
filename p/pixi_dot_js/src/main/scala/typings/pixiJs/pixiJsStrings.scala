@@ -1,10 +1,10 @@
 package typings.pixiJs
 
-import typings.pixiJs.PIXI.interaction.InteractionEventTypes
-import typings.pixiJs.PIXI.interaction.InteractionMouseEvents
-import typings.pixiJs.PIXI.interaction.InteractionPixiEvents
-import typings.pixiJs.PIXI.interaction.InteractionPointerEvents
-import typings.pixiJs.PIXI.interaction.InteractionTouchEvents
+import typings.pixiJs.PIXI.InteractionEventTypes
+import typings.pixiJs.PIXI.InteractionMouseEvents
+import typings.pixiJs.PIXI.InteractionPixiEvents
+import typings.pixiJs.PIXI.InteractionPointerEvents
+import typings.pixiJs.PIXI.InteractionTouchEvents
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,15 +19,6 @@ object pixiJsStrings {
   sealed trait click
     extends InteractionEventTypes
        with InteractionMouseEvents
-  
-  @js.native
-  sealed trait complete extends js.Object
-  
-  @js.native
-  sealed trait error extends js.Object
-  
-  @js.native
-  sealed trait load extends js.Object
   
   @js.native
   sealed trait mousedown
@@ -100,9 +91,6 @@ object pixiJsStrings {
        with InteractionPointerEvents
   
   @js.native
-  sealed trait progress extends js.Object
-  
-  @js.native
   sealed trait removed
     extends InteractionEventTypes
        with InteractionPixiEvents
@@ -126,9 +114,6 @@ object pixiJsStrings {
   sealed trait rightupoutside
     extends InteractionEventTypes
        with InteractionMouseEvents
-  
-  @js.native
-  sealed trait start extends js.Object
   
   @js.native
   sealed trait tap
@@ -165,12 +150,6 @@ object pixiJsStrings {
   @scala.inline
   def click: click = "click".asInstanceOf[click]
   @scala.inline
-  def complete: complete = "complete".asInstanceOf[complete]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def load: load = "load".asInstanceOf[load]
-  @scala.inline
   def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
   @scala.inline
   def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
@@ -199,8 +178,6 @@ object pixiJsStrings {
   @scala.inline
   def pointerupoutside: pointerupoutside = "pointerupoutside".asInstanceOf[pointerupoutside]
   @scala.inline
-  def progress: progress = "progress".asInstanceOf[progress]
-  @scala.inline
   def removed: removed = "removed".asInstanceOf[removed]
   @scala.inline
   def rightclick: rightclick = "rightclick".asInstanceOf[rightclick]
@@ -210,8 +187,6 @@ object pixiJsStrings {
   def rightup: rightup = "rightup".asInstanceOf[rightup]
   @scala.inline
   def rightupoutside: rightupoutside = "rightupoutside".asInstanceOf[rightupoutside]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
   @scala.inline
   def tap: tap = "tap".asInstanceOf[tap]
   @scala.inline

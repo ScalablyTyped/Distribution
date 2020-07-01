@@ -114,7 +114,7 @@ trait MapboxOptions extends js.Object {
   var logoPosition: js.UndefOr[`top-left` | `top-right` | `bottom-left` | `bottom-right`] = js.undefined
   /** If set, the map is constrained to the given bounds. */
   var maxBounds: js.UndefOr[LngLatBoundsLike] = js.undefined
-  /** Maximum pitch of the map */
+  /** Maximum pitch of the map. */
   var maxPitch: js.UndefOr[Double] = js.undefined
   /**
     * The maximum number of tiles stored in the tile cache for a given source. If omitted, the
@@ -123,11 +123,11 @@ trait MapboxOptions extends js.Object {
     * @default null
     */
   var maxTileCacheSize: js.UndefOr[Double] = js.undefined
-  /** Maximum zoom of the map */
+  /** Maximum zoom of the map. */
   var maxZoom: js.UndefOr[Double] = js.undefined
-  /** Minimum pitch of the map */
+  /** Minimum pitch of the map. */
   var minPitch: js.UndefOr[Double] = js.undefined
-  /** Minimum zoom of the map */
+  /** Minimum zoom of the map. */
   var minZoom: js.UndefOr[Double] = js.undefined
   /**
     * The initial pitch (tilt) of the map, measured in degrees away from the plane of the

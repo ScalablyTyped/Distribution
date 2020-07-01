@@ -1,7 +1,7 @@
 
 # Scala.js typings for new-relic-browser
 
-Typings are for version 0.1072
+Typings are for version 0.1118
 
 
 

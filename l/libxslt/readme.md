@@ -1,7 +1,7 @@
 
 # Scala.js typings for libxslt
 
-Typings are for version 0.7
+Typings are for version 0.9
 
 ## Library description:
 Node.js bindings for libxslt compatible with libxmljs

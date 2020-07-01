@@ -18,6 +18,7 @@ import typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownEscape
 import typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownHome
 import typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownSpaceButton
 import typings.downshift.mod.UseSelectStateChangeTypes.MenuMouseLeave
+import typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonClick
 import typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownArrowDown
 import typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownArrowUp
 import typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownCharacter
@@ -45,6 +46,7 @@ trait FunctionCloseMenu extends js.Object {
   var MenuKeyDownHome: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownHome
   var MenuKeyDownSpaceButton: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownSpaceButton
   var MenuMouseLeave: typings.downshift.mod.UseSelectStateChangeTypes.MenuMouseLeave
+  var ToggleButtonClick: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonClick
   var ToggleButtonKeyDownArrowDown: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownArrowDown
   var ToggleButtonKeyDownArrowUp: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownArrowUp
   var ToggleButtonKeyDownCharacter: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownCharacter
@@ -72,11 +74,12 @@ object FunctionCloseMenu {
     MenuKeyDownHome: MenuKeyDownHome,
     MenuKeyDownSpaceButton: MenuKeyDownSpaceButton,
     MenuMouseLeave: MenuMouseLeave,
+    ToggleButtonClick: ToggleButtonClick,
     ToggleButtonKeyDownArrowDown: ToggleButtonKeyDownArrowDown,
     ToggleButtonKeyDownArrowUp: ToggleButtonKeyDownArrowUp,
     ToggleButtonKeyDownCharacter: ToggleButtonKeyDownCharacter
   ): FunctionCloseMenu = {
-    val __obj = js.Dynamic.literal(FunctionCloseMenu = FunctionCloseMenu.asInstanceOf[js.Any], FunctionOpenMenu = FunctionOpenMenu.asInstanceOf[js.Any], FunctionReset = FunctionReset.asInstanceOf[js.Any], FunctionSelectItem = FunctionSelectItem.asInstanceOf[js.Any], FunctionSetHighlightedIndex = FunctionSetHighlightedIndex.asInstanceOf[js.Any], FunctionSetInputValue = FunctionSetInputValue.asInstanceOf[js.Any], FunctionToggleMenu = FunctionToggleMenu.asInstanceOf[js.Any], ItemClick = ItemClick.asInstanceOf[js.Any], ItemMouseMove = ItemMouseMove.asInstanceOf[js.Any], MenuBlur = MenuBlur.asInstanceOf[js.Any], MenuKeyDownArrowDown = MenuKeyDownArrowDown.asInstanceOf[js.Any], MenuKeyDownArrowUp = MenuKeyDownArrowUp.asInstanceOf[js.Any], MenuKeyDownCharacter = MenuKeyDownCharacter.asInstanceOf[js.Any], MenuKeyDownEnd = MenuKeyDownEnd.asInstanceOf[js.Any], MenuKeyDownEnter = MenuKeyDownEnter.asInstanceOf[js.Any], MenuKeyDownEscape = MenuKeyDownEscape.asInstanceOf[js.Any], MenuKeyDownHome = MenuKeyDownHome.asInstanceOf[js.Any], MenuKeyDownSpaceButton = MenuKeyDownSpaceButton.asInstanceOf[js.Any], MenuMouseLeave = MenuMouseLeave.asInstanceOf[js.Any], ToggleButtonKeyDownArrowDown = ToggleButtonKeyDownArrowDown.asInstanceOf[js.Any], ToggleButtonKeyDownArrowUp = ToggleButtonKeyDownArrowUp.asInstanceOf[js.Any], ToggleButtonKeyDownCharacter = ToggleButtonKeyDownCharacter.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(FunctionCloseMenu = FunctionCloseMenu.asInstanceOf[js.Any], FunctionOpenMenu = FunctionOpenMenu.asInstanceOf[js.Any], FunctionReset = FunctionReset.asInstanceOf[js.Any], FunctionSelectItem = FunctionSelectItem.asInstanceOf[js.Any], FunctionSetHighlightedIndex = FunctionSetHighlightedIndex.asInstanceOf[js.Any], FunctionSetInputValue = FunctionSetInputValue.asInstanceOf[js.Any], FunctionToggleMenu = FunctionToggleMenu.asInstanceOf[js.Any], ItemClick = ItemClick.asInstanceOf[js.Any], ItemMouseMove = ItemMouseMove.asInstanceOf[js.Any], MenuBlur = MenuBlur.asInstanceOf[js.Any], MenuKeyDownArrowDown = MenuKeyDownArrowDown.asInstanceOf[js.Any], MenuKeyDownArrowUp = MenuKeyDownArrowUp.asInstanceOf[js.Any], MenuKeyDownCharacter = MenuKeyDownCharacter.asInstanceOf[js.Any], MenuKeyDownEnd = MenuKeyDownEnd.asInstanceOf[js.Any], MenuKeyDownEnter = MenuKeyDownEnter.asInstanceOf[js.Any], MenuKeyDownEscape = MenuKeyDownEscape.asInstanceOf[js.Any], MenuKeyDownHome = MenuKeyDownHome.asInstanceOf[js.Any], MenuKeyDownSpaceButton = MenuKeyDownSpaceButton.asInstanceOf[js.Any], MenuMouseLeave = MenuMouseLeave.asInstanceOf[js.Any], ToggleButtonClick = ToggleButtonClick.asInstanceOf[js.Any], ToggleButtonKeyDownArrowDown = ToggleButtonKeyDownArrowDown.asInstanceOf[js.Any], ToggleButtonKeyDownArrowUp = ToggleButtonKeyDownArrowUp.asInstanceOf[js.Any], ToggleButtonKeyDownCharacter = ToggleButtonKeyDownCharacter.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionCloseMenu]
   }
 }

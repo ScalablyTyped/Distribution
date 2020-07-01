@@ -21,6 +21,13 @@ trait ISelectionZoneProps extends ClassAttributes[SelectionZone] {
     */
   var disableAutoSelectOnInputElements: js.UndefOr[Boolean] = js.undefined
   /**
+    * Determines whether elements with the attribute `data-selection-touch-invoke` should be used as invocation targets
+    * for an item if the user is using touch.
+    *
+    * @defaultvalue false
+    */
+  var enableTouchInvocationTarget: js.UndefOr[Boolean] = js.undefined
+  /**
     * If true, modal selection is enabled on touch event.
     */
   var enterModalOnTouch: js.UndefOr[Boolean] = js.undefined
@@ -81,6 +88,7 @@ object ISelectionZoneProps {
     selection: ISelection[IObjectWithKey],
     componentRef: () => Unit = null,
     disableAutoSelectOnInputElements: js.UndefOr[Boolean] = js.undefined,
+    enableTouchInvocationTarget: js.UndefOr[Boolean] = js.undefined,
     enterModalOnTouch: js.UndefOr[Boolean] = js.undefined,
     isSelectedOnFocus: js.UndefOr[Boolean] = js.undefined,
     key: Key = null,
@@ -94,6 +102,7 @@ object ISelectionZoneProps {
     val __obj = js.Dynamic.literal(selection = selection.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(js.Any.fromFunction0(componentRef))
     if (!js.isUndefined(disableAutoSelectOnInputElements)) __obj.updateDynamic("disableAutoSelectOnInputElements")(disableAutoSelectOnInputElements.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTouchInvocationTarget)) __obj.updateDynamic("enableTouchInvocationTarget")(enableTouchInvocationTarget.get.asInstanceOf[js.Any])
     if (!js.isUndefined(enterModalOnTouch)) __obj.updateDynamic("enterModalOnTouch")(enterModalOnTouch.get.asInstanceOf[js.Any])
     if (!js.isUndefined(isSelectedOnFocus)) __obj.updateDynamic("isSelectedOnFocus")(isSelectedOnFocus.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

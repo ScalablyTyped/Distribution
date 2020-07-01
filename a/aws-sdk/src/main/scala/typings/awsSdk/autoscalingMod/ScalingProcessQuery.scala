@@ -11,7 +11,7 @@ trait ScalingProcessQuery extends js.Object {
     */
   var AutoScalingGroupName: ResourceName = js.native
   /**
-    * One or more of the following processes. If you omit this parameter, all processes are specified.    Launch     Terminate     HealthCheck     ReplaceUnhealthy     AZRebalance     AlarmNotification     ScheduledActions     AddToLoadBalancer   
+    * One or more of the following processes:    Launch     Terminate     AddToLoadBalancer     AlarmNotification     AZRebalance     HealthCheck     InstanceRefresh     ReplaceUnhealthy     ScheduledActions    If you omit this parameter, all processes are specified.
     */
   var ScalingProcesses: js.UndefOr[ProcessNames] = js.native
 }

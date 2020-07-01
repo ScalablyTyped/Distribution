@@ -44,6 +44,7 @@ object RequestOptions2 {
     headers: IncomingHttpHeaders = null,
     httpsAgent: typings.node.httpsMod.Agent = null,
     isRetry: /* res */ HttpClientResponse[_] => Boolean = null,
+    keepHeaderCase: js.UndefOr[Boolean] = js.undefined,
     key: String | Buffer = null,
     lookup: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit = null,
     maxRedirects: js.UndefOr[Double] = js.undefined,
@@ -87,6 +88,7 @@ object RequestOptions2 {
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (httpsAgent != null) __obj.updateDynamic("httpsAgent")(httpsAgent.asInstanceOf[js.Any])
     if (isRetry != null) __obj.updateDynamic("isRetry")(js.Any.fromFunction1(isRetry))
+    if (!js.isUndefined(keepHeaderCase)) __obj.updateDynamic("keepHeaderCase")(keepHeaderCase.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (lookup != null) __obj.updateDynamic("lookup")(js.Any.fromFunction3(lookup))
     if (!js.isUndefined(maxRedirects)) __obj.updateDynamic("maxRedirects")(maxRedirects.get.asInstanceOf[js.Any])

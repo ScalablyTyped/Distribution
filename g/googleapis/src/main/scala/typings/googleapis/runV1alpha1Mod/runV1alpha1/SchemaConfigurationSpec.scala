@@ -32,9 +32,9 @@ trait SchemaConfigurationSpec extends js.Object {
 
 object SchemaConfigurationSpec {
   @scala.inline
-  def apply(generation: Int | Double = null, revisionTemplate: SchemaRevisionTemplate = null): SchemaConfigurationSpec = {
+  def apply(generation: js.UndefOr[Double] = js.undefined, revisionTemplate: SchemaRevisionTemplate = null): SchemaConfigurationSpec = {
     val __obj = js.Dynamic.literal()
-    if (generation != null) __obj.updateDynamic("generation")(generation.asInstanceOf[js.Any])
+    if (!js.isUndefined(generation)) __obj.updateDynamic("generation")(generation.get.asInstanceOf[js.Any])
     if (revisionTemplate != null) __obj.updateDynamic("revisionTemplate")(revisionTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaConfigurationSpec]
   }

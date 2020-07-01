@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashFromPairs extends js.Object {
+trait LodashFromPairs extends LodashConvertible {
   def apply(): Dictionary[_] = js.native
   def apply(pairs: List[js.Array[_]]): Dictionary[_] = js.native
 }

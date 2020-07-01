@@ -35,7 +35,7 @@ object SchemaResourcePolicySnapshotSchedulePolicySnapshotProperties {
     storageLocations: js.Array[String] = null
   ): SchemaResourcePolicySnapshotSchedulePolicySnapshotProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(guestFlush)) __obj.updateDynamic("guestFlush")(guestFlush.asInstanceOf[js.Any])
+    if (!js.isUndefined(guestFlush)) __obj.updateDynamic("guestFlush")(guestFlush.get.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (storageLocations != null) __obj.updateDynamic("storageLocations")(storageLocations.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResourcePolicySnapshotSchedulePolicySnapshotProperties]

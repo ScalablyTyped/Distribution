@@ -1,6 +1,7 @@
 package typings.consola.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.WritableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,8 +12,8 @@ trait ConsolaOptions extends js.Object {
   var level: js.UndefOr[LogLevel] = js.undefined
   var mockFn: js.UndefOr[ConsolaMockFn] = js.undefined
   var reporters: js.UndefOr[js.Array[ConsolaReporter]] = js.undefined
-  var stderr: js.UndefOr[js.Any] = js.undefined
-  var stdout: js.UndefOr[js.Any] = js.undefined
+  var stderr: js.UndefOr[WritableStream] = js.undefined
+  var stdout: js.UndefOr[WritableStream] = js.undefined
   var throttle: js.UndefOr[Double] = js.undefined
   var types: js.UndefOr[StringDictionary[ConsolaLogObject]] = js.undefined
 }
@@ -25,8 +26,8 @@ object ConsolaOptions {
     level: LogLevel = null,
     mockFn: (/* type */ String, /* defaults */ ConsolaLogObject) => ConsolaMock = null,
     reporters: js.Array[ConsolaReporter] = null,
-    stderr: js.Any = null,
-    stdout: js.Any = null,
+    stderr: WritableStream = null,
+    stdout: WritableStream = null,
     throttle: js.UndefOr[Double] = js.undefined,
     types: StringDictionary[ConsolaLogObject] = null
   ): ConsolaOptions = {

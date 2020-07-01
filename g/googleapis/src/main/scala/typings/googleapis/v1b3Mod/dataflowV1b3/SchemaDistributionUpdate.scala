@@ -44,7 +44,7 @@ object SchemaDistributionUpdate {
     max: SchemaSplitInt64 = null,
     min: SchemaSplitInt64 = null,
     sum: SchemaSplitInt64 = null,
-    sumOfSquares: Int | Double = null
+    sumOfSquares: js.UndefOr[Double] = js.undefined
   ): SchemaDistributionUpdate = {
     val __obj = js.Dynamic.literal()
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
@@ -52,7 +52,7 @@ object SchemaDistributionUpdate {
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (sum != null) __obj.updateDynamic("sum")(sum.asInstanceOf[js.Any])
-    if (sumOfSquares != null) __obj.updateDynamic("sumOfSquares")(sumOfSquares.asInstanceOf[js.Any])
+    if (!js.isUndefined(sumOfSquares)) __obj.updateDynamic("sumOfSquares")(sumOfSquares.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDistributionUpdate]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait RelationThrough[M /* <: Model */] extends js.Object {
   var beforeInsert: js.UndefOr[RelationMappingHook[M]] = js.undefined
-  var extra: js.UndefOr[js.Array[String] | (Record[String, String])] = js.undefined
+  var extra: js.UndefOr[String | js.Array[String] | (Record[String, String])] = js.undefined
   var from: RelationMappingColumnRef
   var modelClass: js.UndefOr[ModelClassSpecifier] = js.undefined
   var to: RelationMappingColumnRef
@@ -15,11 +15,11 @@ trait RelationThrough[M /* <: Model */] extends js.Object {
 
 object RelationThrough {
   @scala.inline
-  def apply[M](
+  def apply[/* <: typings.objection.mod.Model */ M](
     from: RelationMappingColumnRef,
     to: RelationMappingColumnRef,
     beforeInsert: (M, /* context */ QueryContext) => js.Promise[Unit] | Unit = null,
-    extra: js.Array[String] | (Record[String, String]) = null,
+    extra: String | js.Array[String] | (Record[String, String]) = null,
     modelClass: ModelClassSpecifier = null
   ): RelationThrough[M] = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])

@@ -15,6 +15,10 @@ trait UserDefinedFunction extends js.Object {
     */
   var CreateTime: js.UndefOr[Timestamp] = js.native
   /**
+    * The name of the database where the function resides.
+    */
+  var DatabaseName: js.UndefOr[NameString] = js.native
+  /**
     * The name of the function.
     */
   var FunctionName: js.UndefOr[NameString] = js.native
@@ -37,6 +41,7 @@ object UserDefinedFunction {
   def apply(
     ClassName: NameString = null,
     CreateTime: Timestamp = null,
+    DatabaseName: NameString = null,
     FunctionName: NameString = null,
     OwnerName: NameString = null,
     OwnerType: PrincipalType = null,
@@ -45,6 +50,7 @@ object UserDefinedFunction {
     val __obj = js.Dynamic.literal()
     if (ClassName != null) __obj.updateDynamic("ClassName")(ClassName.asInstanceOf[js.Any])
     if (CreateTime != null) __obj.updateDynamic("CreateTime")(CreateTime.asInstanceOf[js.Any])
+    if (DatabaseName != null) __obj.updateDynamic("DatabaseName")(DatabaseName.asInstanceOf[js.Any])
     if (FunctionName != null) __obj.updateDynamic("FunctionName")(FunctionName.asInstanceOf[js.Any])
     if (OwnerName != null) __obj.updateDynamic("OwnerName")(OwnerName.asInstanceOf[js.Any])
     if (OwnerType != null) __obj.updateDynamic("OwnerType")(OwnerType.asInstanceOf[js.Any])

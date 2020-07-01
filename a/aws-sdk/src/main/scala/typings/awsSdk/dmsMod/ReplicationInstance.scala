@@ -19,7 +19,7 @@ trait ReplicationInstance extends js.Object {
     */
   var AvailabilityZone: js.UndefOr[String] = js.native
   /**
-    * The DNS name servers for the replication instance.
+    * The DNS name servers supported for the replication instance to access your on-premise source or target database.
     */
   var DnsNameServers: js.UndefOr[String] = js.native
   /**
@@ -59,11 +59,11 @@ trait ReplicationInstance extends js.Object {
     */
   var ReplicationInstanceArn: js.UndefOr[String] = js.native
   /**
-    * The compute and memory capacity of the replication instance.  Valid Values: dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge  
+    * The compute and memory capacity of the replication instance as defined for the specified replication instance class. For more information on the settings and capacities for the available replication instance classes, see  Selecting the right AWS DMS replication instance for your migration. 
     */
   var ReplicationInstanceClass: js.UndefOr[String] = js.native
   /**
-    * The replication instance identifier. This parameter is stored as a lowercase string. Constraints:   Must contain from 1 to 63 alphanumeric characters or hyphens.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.   Example: myrepinstance 
+    * The replication instance identifier. This parameter is stored as a lowercase string. Constraints:   Must contain 1-63 alphanumeric characters or hyphens.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.   Example: myrepinstance 
     */
   var ReplicationInstanceIdentifier: js.UndefOr[String] = js.native
   /**
@@ -83,7 +83,7 @@ trait ReplicationInstance extends js.Object {
     */
   var ReplicationInstancePublicIpAddresses: js.UndefOr[ReplicationInstancePublicIpAddressList] = js.native
   /**
-    * The status of the replication instance.
+    * The status of the replication instance. The possible return values include:    "available"     "creating"     "deleted"     "deleting"     "failed"     "modifying"     "upgrading"     "rebooting"     "resetting-master-credentials"     "storage-full"     "incompatible-credentials"     "incompatible-network"     "maintenance"   
     */
   var ReplicationInstanceStatus: js.UndefOr[String] = js.native
   /**

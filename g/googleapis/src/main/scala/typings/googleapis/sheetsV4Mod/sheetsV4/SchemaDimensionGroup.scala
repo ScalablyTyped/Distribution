@@ -36,12 +36,12 @@ object SchemaDimensionGroup {
   @scala.inline
   def apply(
     collapsed: js.UndefOr[Boolean] = js.undefined,
-    depth: Int | Double = null,
+    depth: js.UndefOr[Double] = js.undefined,
     range: SchemaDimensionRange = null
   ): SchemaDimensionGroup = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
-    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDimensionGroup]
   }

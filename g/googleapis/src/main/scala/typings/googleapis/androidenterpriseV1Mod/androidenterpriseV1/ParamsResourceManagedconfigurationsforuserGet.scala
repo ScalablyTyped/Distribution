@@ -52,7 +52,7 @@ object ParamsResourceManagedconfigurationsforuserGet {
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (managedConfigurationForUserId != null) __obj.updateDynamic("managedConfigurationForUserId")(managedConfigurationForUserId.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])

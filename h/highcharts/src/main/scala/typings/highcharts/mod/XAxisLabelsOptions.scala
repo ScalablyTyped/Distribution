@@ -55,7 +55,7 @@ trait XAxisLabelsOptions extends js.Object {
     *
     * Defaults to: (see online documentation for example)
     */
-  var formatter: js.UndefOr[FormatterCallbackFunction[AxisLabelsFormatterContextObject]] = js.undefined
+  var formatter: js.UndefOr[AxisLabelsFormatterCallbackFunction] = js.undefined
   /**
     * (Gantt) The number of pixels to indent the labels per level in a treegrid
     * axis.
@@ -180,7 +180,7 @@ object XAxisLabelsOptions {
     distance: js.UndefOr[Double] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
     format: String = null,
-    formatter: FormatterCallbackFunction[AxisLabelsFormatterContextObject] = null,
+    formatter: AxisLabelsFormatterCallbackFunction = null,
     indentation: js.UndefOr[Double] = js.undefined,
     overflow: OptionsOverflowValue = null,
     padding: js.UndefOr[Double] = js.undefined,

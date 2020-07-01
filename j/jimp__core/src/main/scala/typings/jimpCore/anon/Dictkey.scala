@@ -18,7 +18,7 @@ trait Dictkey[T /* <: ListenableName */]
 
 object Dictkey {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.jimpCore.etcMod.ListenableName */ T](
     eventName: `before-change` | changed,
     methodName: T,
     StringDictionary: /* key */ StringDictionary[js.Any] = null

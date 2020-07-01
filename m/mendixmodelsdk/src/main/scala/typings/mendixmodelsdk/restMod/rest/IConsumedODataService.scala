@@ -21,6 +21,7 @@ trait IConsumedODataService extends IRemoteEntitySourceDocument {
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
+    * In version 8.11.0: deleted
     * In version 8.9.0: added public
     */
   val entities: IList[IODataEntity] = js.native

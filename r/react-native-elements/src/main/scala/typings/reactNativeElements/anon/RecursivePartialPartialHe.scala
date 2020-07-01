@@ -65,6 +65,7 @@ trait RecursivePartialPartialHe extends js.Object {
   var centerContainerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   var collapsable: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   var containerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
+  var focusable: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   var hasTVPreferredFocus: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   var hitSlop: js.UndefOr[RecursivePartial[js.UndefOr[Insets]]] = js.undefined
   var importantForAccessibility: js.UndefOr[RecursivePartial[js.UndefOr[auto | yes | no | `no-hide-descendants`]]] = js.undefined
@@ -174,6 +175,7 @@ object RecursivePartialPartialHe {
     centerContainerStyle: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]] = null,
     collapsable: RecursivePartial[js.UndefOr[Boolean]] = null,
     containerStyle: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]] = null,
+    focusable: RecursivePartial[js.UndefOr[Boolean]] = null,
     hasTVPreferredFocus: RecursivePartial[js.UndefOr[Boolean]] = null,
     hitSlop: RecursivePartial[js.UndefOr[Insets]] = null,
     importantForAccessibility: RecursivePartial[js.UndefOr[auto | yes | no | `no-hide-descendants`]] = null,
@@ -244,6 +246,7 @@ object RecursivePartialPartialHe {
     if (centerContainerStyle != null) __obj.updateDynamic("centerContainerStyle")(centerContainerStyle.asInstanceOf[js.Any])
     if (collapsable != null) __obj.updateDynamic("collapsable")(collapsable.asInstanceOf[js.Any])
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (focusable != null) __obj.updateDynamic("focusable")(focusable.asInstanceOf[js.Any])
     if (hasTVPreferredFocus != null) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.asInstanceOf[js.Any])
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])

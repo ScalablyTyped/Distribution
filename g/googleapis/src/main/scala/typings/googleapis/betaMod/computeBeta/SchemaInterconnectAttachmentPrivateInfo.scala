@@ -19,9 +19,9 @@ trait SchemaInterconnectAttachmentPrivateInfo extends js.Object {
 
 object SchemaInterconnectAttachmentPrivateInfo {
   @scala.inline
-  def apply(tag8021q: Int | Double = null): SchemaInterconnectAttachmentPrivateInfo = {
+  def apply(tag8021q: js.UndefOr[Double] = js.undefined): SchemaInterconnectAttachmentPrivateInfo = {
     val __obj = js.Dynamic.literal()
-    if (tag8021q != null) __obj.updateDynamic("tag8021q")(tag8021q.asInstanceOf[js.Any])
+    if (!js.isUndefined(tag8021q)) __obj.updateDynamic("tag8021q")(tag8021q.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInterconnectAttachmentPrivateInfo]
   }
 }

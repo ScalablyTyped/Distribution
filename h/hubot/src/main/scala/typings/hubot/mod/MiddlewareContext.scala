@@ -12,7 +12,7 @@ trait MiddlewareContext[T /* <: Adapter */]
 
 object MiddlewareContext {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.hubot.mod.Adapter */ T](
     StringDictionary: /* name */ StringDictionary[js.Any] = null,
     response: Response[T, Message] = null
   ): MiddlewareContext[T] = {

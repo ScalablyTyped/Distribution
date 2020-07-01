@@ -431,8 +431,8 @@ object cypressStrings {
   
   @js.native
   sealed trait chromium
-    extends BrowserFamily
-       with _BrowserName
+    extends _BrowserName
+       with BrowserFamily
   
   @js.native
   sealed trait cite extends js.Object
@@ -638,6 +638,9 @@ object cypressStrings {
   sealed trait experimentalGetCookiesSameSite extends js.Object
   
   @js.native
+  sealed trait experimentalShadowDomSupport extends js.Object
+  
+  @js.native
   sealed trait experimentalSourceRewriting extends js.Object
   
   @js.native
@@ -669,8 +672,8 @@ object cypressStrings {
   
   @js.native
   sealed trait firefox
-    extends BrowserFamily
-       with _BrowserName
+    extends _BrowserName
+       with BrowserFamily
   
   @js.native
   sealed trait firefoxColonforceColongc extends js.Object
@@ -748,10 +751,16 @@ object cypressStrings {
   sealed trait hash extends js.Object
   
   @js.native
+  sealed trait haveDotallDotkey extends js.Object
+  
+  @js.native
   sealed trait haveDotallDotkeys extends js.Object
   
   @js.native
   sealed trait haveDotalwaysDotthrown extends js.Object
+  
+  @js.native
+  sealed trait haveDotanyDotkey extends js.Object
   
   @js.native
   sealed trait haveDotanyDotkeys extends js.Object
@@ -1722,6 +1731,9 @@ object cypressStrings {
   sealed trait task extends js.Object
   
   @js.native
+  sealed trait taskTimeout extends js.Object
+  
+  @js.native
   sealed trait tbody extends js.Object
   
   @js.native
@@ -2346,6 +2358,8 @@ object cypressStrings {
   @scala.inline
   def experimentalGetCookiesSameSite: experimentalGetCookiesSameSite = "experimentalGetCookiesSameSite".asInstanceOf[experimentalGetCookiesSameSite]
   @scala.inline
+  def experimentalShadowDomSupport: experimentalShadowDomSupport = "experimentalShadowDomSupport".asInstanceOf[experimentalShadowDomSupport]
+  @scala.inline
   def experimentalSourceRewriting: experimentalSourceRewriting = "experimentalSourceRewriting".asInstanceOf[experimentalSourceRewriting]
   @scala.inline
   def exports: exports = "exports".asInstanceOf[exports]
@@ -2418,9 +2432,13 @@ object cypressStrings {
   @scala.inline
   def hash: hash = "hash".asInstanceOf[hash]
   @scala.inline
+  def haveDotallDotkey: haveDotallDotkey = "have.all.key".asInstanceOf[haveDotallDotkey]
+  @scala.inline
   def haveDotallDotkeys: haveDotallDotkeys = "have.all.keys".asInstanceOf[haveDotallDotkeys]
   @scala.inline
   def haveDotalwaysDotthrown: haveDotalwaysDotthrown = "have.always.thrown".asInstanceOf[haveDotalwaysDotthrown]
+  @scala.inline
+  def haveDotanyDotkey: haveDotanyDotkey = "have.any.key".asInstanceOf[haveDotanyDotkey]
   @scala.inline
   def haveDotanyDotkeys: haveDotanyDotkeys = "have.any.keys".asInstanceOf[haveDotanyDotkeys]
   @scala.inline
@@ -3061,6 +3079,8 @@ object cypressStrings {
   def tap_ : tap_ = "tap".asInstanceOf[tap_]
   @scala.inline
   def task: task = "task".asInstanceOf[task]
+  @scala.inline
+  def taskTimeout: taskTimeout = "taskTimeout".asInstanceOf[taskTimeout]
   @scala.inline
   def tbody: tbody = "tbody".asInstanceOf[tbody]
   @scala.inline

@@ -33,7 +33,7 @@ trait ProxySpec[D /* <: ProxyData */, T, S] extends js.Object {
 
 object ProxySpec {
   @scala.inline
-  def apply[D, T, S](
+  def apply[/* <: typings.fridaGum.ObjC.ProxyData */ D, T, S](
     events: ProxyEventCallbacks[D, T, S] = null,
     methods: StringDictionary[
       (UserMethodImplementation[D, T, S]) | (MethodSpec[UserMethodImplementation[D, T, S]])

@@ -14,7 +14,7 @@ trait DomUpdate[S /* <: Schema[_, _] */] extends js.Object {
 
 object DomUpdate {
   @scala.inline
-  def apply[S](update: EditorState[S] => Boolean, dom: js.UndefOr[Null | DocumentFragment] = js.undefined): DomUpdate[S] = {
+  def apply[/* <: typings.prosemirrorModel.mod.Schema[_, _] */ S](update: EditorState[S] => Boolean, dom: js.UndefOr[Null | DocumentFragment] = js.undefined): DomUpdate[S] = {
     val __obj = js.Dynamic.literal(update = js.Any.fromFunction1(update))
     if (!js.isUndefined(dom)) __obj.updateDynamic("dom")(dom.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomUpdate[S]]

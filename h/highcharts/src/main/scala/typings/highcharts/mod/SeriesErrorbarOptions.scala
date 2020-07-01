@@ -105,6 +105,7 @@ object SeriesErrorbarOptions {
     boostBlending: OptionsBoostBlendingValue = null,
     boostThreshold: js.UndefOr[Double] = js.undefined,
     boxDashStyle: DashStyleValue = null,
+    centerInCategory: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
     color: ColorString | GradientColorObject | PatternObject = null,
@@ -206,6 +207,7 @@ object SeriesErrorbarOptions {
     if (boostBlending != null) __obj.updateDynamic("boostBlending")(boostBlending.asInstanceOf[js.Any])
     if (!js.isUndefined(boostThreshold)) __obj.updateDynamic("boostThreshold")(boostThreshold.get.asInstanceOf[js.Any])
     if (boxDashStyle != null) __obj.updateDynamic("boxDashStyle")(boxDashStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(centerInCategory)) __obj.updateDynamic("centerInCategory")(centerInCategory.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])

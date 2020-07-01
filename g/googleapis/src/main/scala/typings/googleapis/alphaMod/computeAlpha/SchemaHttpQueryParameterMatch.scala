@@ -46,7 +46,7 @@ object SchemaHttpQueryParameterMatch {
     val __obj = js.Dynamic.literal()
     if (exactMatch != null) __obj.updateDynamic("exactMatch")(exactMatch.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(presentMatch)) __obj.updateDynamic("presentMatch")(presentMatch.asInstanceOf[js.Any])
+    if (!js.isUndefined(presentMatch)) __obj.updateDynamic("presentMatch")(presentMatch.get.asInstanceOf[js.Any])
     if (regexMatch != null) __obj.updateDynamic("regexMatch")(regexMatch.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHttpQueryParameterMatch]
   }

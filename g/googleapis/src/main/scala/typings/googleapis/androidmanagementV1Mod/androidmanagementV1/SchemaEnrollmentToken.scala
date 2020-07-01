@@ -88,7 +88,7 @@ object SchemaEnrollmentToken {
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (expirationTimestamp != null) __obj.updateDynamic("expirationTimestamp")(expirationTimestamp.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(oneTimeOnly)) __obj.updateDynamic("oneTimeOnly")(oneTimeOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(oneTimeOnly)) __obj.updateDynamic("oneTimeOnly")(oneTimeOnly.get.asInstanceOf[js.Any])
     if (policyName != null) __obj.updateDynamic("policyName")(policyName.asInstanceOf[js.Any])
     if (qrCode != null) __obj.updateDynamic("qrCode")(qrCode.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])

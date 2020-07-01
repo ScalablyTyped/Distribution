@@ -21,5 +21,19 @@ class ObservablePoint protected ()
   def this(cb: js.Function1[/* repeated */ js.Any, _], scope: js.Any) = this()
   def this(cb: js.Function1[/* repeated */ js.Any, _], scope: js.Any, x: Double) = this()
   def this(cb: js.Function1[/* repeated */ js.Any, _], scope: js.Any, x: Double, y: Double) = this()
+  /**
+    * X coord
+    * @memberof PIXI.IPointData#
+    * @member {number} x
+    */
+  /* CompleteClass */
+  override var x: Double = js.native
+  /**
+    * Y coord
+    * @memberof PIXI.IPointData#
+    * @member {number} y
+    */
+  /* CompleteClass */
+  override var y: Double = js.native
 }
 

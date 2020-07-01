@@ -11,6 +11,7 @@ class Lexer_ () extends js.Object {
   var options: MarkedOptions = js.native
   var rules: Rules = js.native
   var tokens: TokensList = js.native
+  def `inline`(tokens: TokensList): TokensList = js.native
   def lex(src: String): TokensList = js.native
   def token(src: String, top: Boolean): TokensList = js.native
 }

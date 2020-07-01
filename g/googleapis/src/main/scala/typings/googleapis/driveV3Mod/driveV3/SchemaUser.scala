@@ -52,7 +52,7 @@ object SchemaUser {
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(me)) __obj.updateDynamic("me")(me.asInstanceOf[js.Any])
+    if (!js.isUndefined(me)) __obj.updateDynamic("me")(me.get.asInstanceOf[js.Any])
     if (permissionId != null) __obj.updateDynamic("permissionId")(permissionId.asInstanceOf[js.Any])
     if (photoLink != null) __obj.updateDynamic("photoLink")(photoLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUser]

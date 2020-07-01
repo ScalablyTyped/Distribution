@@ -14,7 +14,7 @@ trait Directive[DirectiveT /* <: DirectiveMeta */] extends js.Object {
 
 object Directive {
   @scala.inline
-  def apply[DirectiveT](directive: DirectiveT, node: Element | Template): Directive[DirectiveT] = {
+  def apply[/* <: typings.angularCompiler.t2ApiMod.DirectiveMeta */ DirectiveT](directive: DirectiveT, node: Element | Template): Directive[DirectiveT] = {
     val __obj = js.Dynamic.literal(directive = directive.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
     __obj.asInstanceOf[Directive[DirectiveT]]
   }

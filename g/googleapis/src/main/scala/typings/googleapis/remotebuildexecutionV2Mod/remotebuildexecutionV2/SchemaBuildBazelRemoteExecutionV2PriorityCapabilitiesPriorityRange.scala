@@ -15,10 +15,10 @@ trait SchemaBuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange extends
 
 object SchemaBuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange {
   @scala.inline
-  def apply(maxPriority: Int | Double = null, minPriority: Int | Double = null): SchemaBuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange = {
+  def apply(maxPriority: js.UndefOr[Double] = js.undefined, minPriority: js.UndefOr[Double] = js.undefined): SchemaBuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange = {
     val __obj = js.Dynamic.literal()
-    if (maxPriority != null) __obj.updateDynamic("maxPriority")(maxPriority.asInstanceOf[js.Any])
-    if (minPriority != null) __obj.updateDynamic("minPriority")(minPriority.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPriority)) __obj.updateDynamic("maxPriority")(maxPriority.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minPriority)) __obj.updateDynamic("minPriority")(minPriority.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange]
   }
 }

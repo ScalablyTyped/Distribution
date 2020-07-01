@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation._
 
 object AtomicStateNodeConfig {
   @scala.inline
-  def apply[TContext, TEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     activities: SingleOrArray[Activity[TContext, TEvent]] = null,
     after: DelayedTransitions[TContext, TEvent] = null,
     context: TContext | js.Function0[TContext] = null,

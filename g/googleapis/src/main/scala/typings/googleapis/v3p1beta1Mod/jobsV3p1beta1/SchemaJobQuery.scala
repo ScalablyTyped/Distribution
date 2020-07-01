@@ -144,7 +144,7 @@ object SchemaJobQuery {
     if (companyNames != null) __obj.updateDynamic("companyNames")(companyNames.asInstanceOf[js.Any])
     if (compensationFilter != null) __obj.updateDynamic("compensationFilter")(compensationFilter.asInstanceOf[js.Any])
     if (customAttributeFilter != null) __obj.updateDynamic("customAttributeFilter")(customAttributeFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableSpellCheck)) __obj.updateDynamic("disableSpellCheck")(disableSpellCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableSpellCheck)) __obj.updateDynamic("disableSpellCheck")(disableSpellCheck.get.asInstanceOf[js.Any])
     if (employmentTypes != null) __obj.updateDynamic("employmentTypes")(employmentTypes.asInstanceOf[js.Any])
     if (excludedJobs != null) __obj.updateDynamic("excludedJobs")(excludedJobs.asInstanceOf[js.Any])
     if (jobCategories != null) __obj.updateDynamic("jobCategories")(jobCategories.asInstanceOf[js.Any])

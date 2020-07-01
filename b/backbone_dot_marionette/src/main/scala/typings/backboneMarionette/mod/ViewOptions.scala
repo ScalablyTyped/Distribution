@@ -34,7 +34,7 @@ trait ViewOptions[TModel /* <: Model[_, ModelSetOptions] */]
 
 object ViewOptions {
   @scala.inline
-  def apply[TModel](
+  def apply[/* <: typings.backbone.mod.Model[_, typings.backbone.mod.ModelSetOptions] */ TModel](
     attributes: StringDictionary[js.Any] = null,
     behaviors: js.Array[Behavior] = null,
     childViewEventPrefix: String | `false` = null,

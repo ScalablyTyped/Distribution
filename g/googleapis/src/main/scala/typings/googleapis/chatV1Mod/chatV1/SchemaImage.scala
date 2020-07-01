@@ -25,9 +25,13 @@ trait SchemaImage extends js.Object {
 
 object SchemaImage {
   @scala.inline
-  def apply(aspectRatio: Int | Double = null, imageUrl: String = null, onClick: SchemaOnClick = null): SchemaImage = {
+  def apply(
+    aspectRatio: js.UndefOr[Double] = js.undefined,
+    imageUrl: String = null,
+    onClick: SchemaOnClick = null
+  ): SchemaImage = {
     val __obj = js.Dynamic.literal()
-    if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(aspectRatio)) __obj.updateDynamic("aspectRatio")(aspectRatio.get.asInstanceOf[js.Any])
     if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaImage]

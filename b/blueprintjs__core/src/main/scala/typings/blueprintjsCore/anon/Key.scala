@@ -12,7 +12,7 @@ trait Key[T /* <: js.Object */] extends js.Object {
 
 object Key {
   @scala.inline
-  def apply[T](
+  def apply[/* <: js.Object */ T](
     key: /* keyof T */ String,
     valueA: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any,
     valueB: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any

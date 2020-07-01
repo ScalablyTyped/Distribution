@@ -24,6 +24,7 @@ object ICreateWorkingCopyParameters {
     projectId: String = null,
     setAsDefault: js.UndefOr[Boolean] = js.undefined,
     teamServerBaseBranch: String = null,
+    teamServerBaseCommitHash: String = null,
     teamServerBaseRevision: js.UndefOr[Double] = js.undefined
   ): ICreateWorkingCopyParameters = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
@@ -35,6 +36,7 @@ object ICreateWorkingCopyParameters {
     if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     if (!js.isUndefined(setAsDefault)) __obj.updateDynamic("setAsDefault")(setAsDefault.get.asInstanceOf[js.Any])
     if (teamServerBaseBranch != null) __obj.updateDynamic("teamServerBaseBranch")(teamServerBaseBranch.asInstanceOf[js.Any])
+    if (teamServerBaseCommitHash != null) __obj.updateDynamic("teamServerBaseCommitHash")(teamServerBaseCommitHash.asInstanceOf[js.Any])
     if (!js.isUndefined(teamServerBaseRevision)) __obj.updateDynamic("teamServerBaseRevision")(teamServerBaseRevision.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICreateWorkingCopyParameters]
   }

@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.resizeObserverPolyfill.mod.ResizeObserver
 import typings.resizeObserverPolyfill.mod.global.ResizeObserverCallback
 import typings.std.Element
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,8 +26,6 @@ trait ReactResizeObserver
   def componentWillUnmount_MReactResizeObserver(): Unit = js.native
   def destroyObserver(): Unit = js.native
   def onComponentUpdated(): Unit = js.native
-  def setChildNode(node: Component[_, js.Object, _]): Unit = js.native
-  def setChildNode(node: Element): Unit = js.native
-  def setChildNode(node: HTMLElement): Unit = js.native
+  def setChildNode(node: RefNode): Unit = js.native
 }
 

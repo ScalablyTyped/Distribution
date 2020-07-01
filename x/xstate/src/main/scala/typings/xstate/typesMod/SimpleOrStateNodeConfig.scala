@@ -21,7 +21,7 @@ trait SimpleOrStateNodeConfig[TContext, TStateSchema /* <: StateSchema[_] */, TE
 
 object SimpleOrStateNodeConfig {
   @scala.inline
-  def AtomicStateNodeConfig[TContext, TStateSchema, TEvent](
+  def AtomicStateNodeConfig[TContext, /* <: typings.xstate.typesMod.StateSchema[_] */ TStateSchema, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     activities: SingleOrArray[Activity[TContext, TEvent]] = null,
     after: DelayedTransitions[TContext, TEvent] = null,
     context: TContext | js.Function0[TContext] = null,
@@ -73,7 +73,7 @@ object SimpleOrStateNodeConfig {
     __obj.asInstanceOf[SimpleOrStateNodeConfig[TContext, TStateSchema, TEvent]]
   }
   @scala.inline
-  def StateNodeConfig[TContext, TStateSchema, TEvent](
+  def StateNodeConfig[TContext, /* <: typings.xstate.typesMod.StateSchema[_] */ TStateSchema, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     activities: SingleOrArray[Activity[TContext, TEvent]] = null,
     after: DelayedTransitions[TContext, TEvent] = null,
     context: TContext | js.Function0[TContext] = null,

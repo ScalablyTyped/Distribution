@@ -2,8 +2,8 @@ package typings.ionicReact.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.ionicCore.componentsMod.global.HTMLIonInfiniteScrollContentElement
+import typings.ionicCore.sanitizationMod.IonicSafeString
 import typings.ionicCore.spinnerConfigsMod.SpinnerTypes
-import typings.ionicCore.typesMod.IonicSafeString
 import typings.ionicReact.ionicReactStrings.`additions text`
 import typings.ionicReact.ionicReactStrings.`inline`
 import typings.ionicReact.ionicReactStrings.additions

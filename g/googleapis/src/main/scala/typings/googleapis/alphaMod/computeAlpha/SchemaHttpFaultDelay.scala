@@ -24,10 +24,10 @@ trait SchemaHttpFaultDelay extends js.Object {
 
 object SchemaHttpFaultDelay {
   @scala.inline
-  def apply(fixedDelay: SchemaDuration = null, percentage: Int | Double = null): SchemaHttpFaultDelay = {
+  def apply(fixedDelay: SchemaDuration = null, percentage: js.UndefOr[Double] = js.undefined): SchemaHttpFaultDelay = {
     val __obj = js.Dynamic.literal()
     if (fixedDelay != null) __obj.updateDynamic("fixedDelay")(fixedDelay.asInstanceOf[js.Any])
-    if (percentage != null) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(percentage)) __obj.updateDynamic("percentage")(percentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHttpFaultDelay]
   }
 }

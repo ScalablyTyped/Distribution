@@ -52,7 +52,7 @@ object SchemaGoogleCloudRedisV1OperationMetadata {
   ): SchemaGoogleCloudRedisV1OperationMetadata = {
     val __obj = js.Dynamic.literal()
     if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelRequested)) __obj.updateDynamic("cancelRequested")(cancelRequested.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelRequested)) __obj.updateDynamic("cancelRequested")(cancelRequested.get.asInstanceOf[js.Any])
     if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
     if (statusDetail != null) __obj.updateDynamic("statusDetail")(statusDetail.asInstanceOf[js.Any])

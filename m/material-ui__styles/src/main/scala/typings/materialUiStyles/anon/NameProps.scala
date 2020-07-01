@@ -13,7 +13,7 @@ trait NameProps[Props, Name /* <: /* keyof any */ String */, Theme /* <: ThemeWi
 
 object NameProps {
   @scala.inline
-  def apply[Props, Name, Theme](name: Name, props: Props, theme: Theme = null): NameProps[Props, Name, Theme] = {
+  def apply[Props, /* <: / * keyof any * / java.lang.String */ Name, /* <: typings.materialUiStyles.getThemePropsGetThemePropsMod.ThemeWithProps[_] */ Theme](name: Name, props: Props, theme: Theme = null): NameProps[Props, Name, Theme] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[NameProps[Props, Name, Theme]]

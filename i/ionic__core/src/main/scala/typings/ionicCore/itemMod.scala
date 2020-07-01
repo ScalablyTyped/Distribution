@@ -1,5 +1,6 @@
 package typings.ionicCore
 
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.componentsMod.global.HTMLIonItemElement
 import typings.ionicCore.elementInterfaceMod.AnchorInterface
 import typings.ionicCore.elementInterfaceMod.ButtonInterface
@@ -57,6 +58,11 @@ object itemMod extends js.Object {
       */
     var lines: js.UndefOr[full | inset | none] = js.native
     var multipleInputs: Boolean = js.native
+    /**
+      * When using a router, it specifies the transition animation when navigating to
+      * another page using `href`.
+      */
+    var routerAnimation: js.UndefOr[AnimationBuilder] = js.native
     /**
       * When using a router, it specifies the transition direction when navigating to
       * another page using `href`.

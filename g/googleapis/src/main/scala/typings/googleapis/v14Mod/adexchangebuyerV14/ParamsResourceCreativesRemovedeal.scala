@@ -31,7 +31,7 @@ trait ParamsResourceCreativesRemovedeal extends StandardParameters {
 object ParamsResourceCreativesRemovedeal {
   @scala.inline
   def apply(
-    accountId: Int | Double = null,
+    accountId: js.UndefOr[Double] = js.undefined,
     alt: String = null,
     auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
     buyerCreativeId: String = null,
@@ -44,7 +44,7 @@ object ParamsResourceCreativesRemovedeal {
     userIp: String = null
   ): ParamsResourceCreativesRemovedeal = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (!js.isUndefined(accountId)) __obj.updateDynamic("accountId")(accountId.get.asInstanceOf[js.Any])
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (buyerCreativeId != null) __obj.updateDynamic("buyerCreativeId")(buyerCreativeId.asInstanceOf[js.Any])
@@ -52,7 +52,7 @@ object ParamsResourceCreativesRemovedeal {
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceCreativesRemovedeal]

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@google-cloud/firestore" : "3.8.0"
+      "@google-cloud/firestore" : "3.8.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@google-cloud/firestore" : "3.8.0"
+      "@google-cloud/firestore" : "3.8.6"
     }
   ],
   "compile-devDependencies" : [

@@ -1,7 +1,7 @@
 
 # Scala.js typings for octokit__core
 
-Typings are for version 2.5.3
+Typings are for version 2.5.4
 
 ## Library description:
 Extendable client for GitHub's REST & GraphQL APIs

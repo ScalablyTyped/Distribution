@@ -19,7 +19,7 @@ object SchemaImageConfig {
   @scala.inline
   def apply(redactAllText: js.UndefOr[Boolean] = js.undefined): SchemaImageConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(redactAllText)) __obj.updateDynamic("redactAllText")(redactAllText.asInstanceOf[js.Any])
+    if (!js.isUndefined(redactAllText)) __obj.updateDynamic("redactAllText")(redactAllText.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaImageConfig]
   }
 }

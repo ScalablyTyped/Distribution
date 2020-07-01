@@ -10,7 +10,7 @@ trait ActivityDefinition[TContext, TEvent /* <: EventObject */] extends ActionOb
 
 object ActivityDefinition {
   @scala.inline
-  def apply[TContext, TEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     id: String,
     `type`: String,
     exec: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => js.Any | Unit = null

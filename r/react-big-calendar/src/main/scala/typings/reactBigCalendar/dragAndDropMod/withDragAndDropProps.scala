@@ -36,7 +36,7 @@ trait withDragAndDropProps[TEvent /* <: js.Object */] extends js.Object {
 
 object withDragAndDropProps {
   @scala.inline
-  def apply[TEvent](
+  def apply[/* <: js.Object */ TEvent](
     components: Components_[TEvent] = null,
     dragFromOutsideItem: () => (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Date]) = null,
     draggableAccessor: (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Boolean]) = null,

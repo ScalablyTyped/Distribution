@@ -15,7 +15,7 @@ trait PutLifecycleHookType extends js.Object {
     */
   var DefaultResult: js.UndefOr[LifecycleActionResult] = js.native
   /**
-    * The maximum time, in seconds, that can elapse before the lifecycle hook times out. The range is from 30 to 7200 seconds. The default value is 3600 seconds (1 hour). If the lifecycle hook times out, Amazon EC2 Auto Scaling performs the action that you specified in the DefaultResult parameter. You can prevent the lifecycle hook from timing out by calling RecordLifecycleActionHeartbeat.
+    * The maximum time, in seconds, that can elapse before the lifecycle hook times out. The range is from 30 to 7200 seconds. The default value is 3600 seconds (1 hour). If the lifecycle hook times out, Amazon EC2 Auto Scaling performs the action that you specified in the DefaultResult parameter. You can prevent the lifecycle hook from timing out by calling the RecordLifecycleActionHeartbeat API.
     */
   var HeartbeatTimeout: js.UndefOr[typings.awsSdk.autoscalingMod.HeartbeatTimeout] = js.native
   /**
@@ -23,7 +23,7 @@ trait PutLifecycleHookType extends js.Object {
     */
   var LifecycleHookName: AsciiStringMaxLen255 = js.native
   /**
-    * The instance state to which you want to attach the lifecycle hook. The valid values are:   autoscaling:EC2_INSTANCE_LAUNCHING   autoscaling:EC2_INSTANCE_TERMINATING   Conditional: This parameter is required for new lifecycle hooks, but optional when updating existing hooks.
+    * The instance state to which you want to attach the lifecycle hook. The valid values are:   autoscaling:EC2_INSTANCE_LAUNCHING   autoscaling:EC2_INSTANCE_TERMINATING   Required for new lifecycle hooks, but optional when updating existing hooks.
     */
   var LifecycleTransition: js.UndefOr[typings.awsSdk.autoscalingMod.LifecycleTransition] = js.native
   /**
@@ -35,7 +35,7 @@ trait PutLifecycleHookType extends js.Object {
     */
   var NotificationTargetARN: js.UndefOr[NotificationTargetResourceName] = js.native
   /**
-    * The ARN of the IAM role that allows the Auto Scaling group to publish to the specified notification target, for example, an Amazon SNS topic or an Amazon SQS queue. Conditional: This parameter is required for new lifecycle hooks, but optional when updating existing hooks.
+    * The ARN of the IAM role that allows the Auto Scaling group to publish to the specified notification target, for example, an Amazon SNS topic or an Amazon SQS queue. Required for new lifecycle hooks, but optional when updating existing hooks.
     */
   var RoleARN: js.UndefOr[ResourceName] = js.native
 }

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@testing-library/dom/queries", "getByTestId")
+@JSImport("@testing-library/dom/types/queries", "getByTestId")
 @js.native
 object getByTestId extends TopLevel[GetByBoundAttribute]
 

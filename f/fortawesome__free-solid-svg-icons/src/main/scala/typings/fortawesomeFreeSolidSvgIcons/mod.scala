@@ -63,6 +63,8 @@ object mod extends js.Object {
   val faBackspace: IconDefinition = js.native
   val faBackward: IconDefinition = js.native
   val faBacon: IconDefinition = js.native
+  val faBacteria: IconDefinition = js.native
+  val faBacterium: IconDefinition = js.native
   val faBahai: IconDefinition = js.native
   val faBalanceScale: IconDefinition = js.native
   val faBalanceScaleLeft: IconDefinition = js.native
@@ -770,6 +772,7 @@ object mod extends js.Object {
   val faSignal: IconDefinition = js.native
   val faSignature: IconDefinition = js.native
   val faSimCard: IconDefinition = js.native
+  val faSink: IconDefinition = js.native
   val faSitemap: IconDefinition = js.native
   val faSkating: IconDefinition = js.native
   val faSkiing: IconDefinition = js.native
@@ -962,6 +965,7 @@ object mod extends js.Object {
   val faUserTimes: IconDefinition = js.native
   val faUsers: IconDefinition = js.native
   val faUsersCog: IconDefinition = js.native
+  val faUsersSlash: IconDefinition = js.native
   val faUtensilSpoon: IconDefinition = js.native
   val faUtensils: IconDefinition = js.native
   val faVectorSquare: IconDefinition = js.native

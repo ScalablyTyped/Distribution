@@ -16,7 +16,7 @@ trait Exact[E /* <: js.Object */] extends js.Object {
 
 object Exact {
   @scala.inline
-  def apply[E](
+  def apply[/* <: js.Object */ E](
     exact: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof E ]: lokijs.ExactIndex<E>}
     */ typings.lokijs.lokijsStrings.Exact with TopLevel[js.Any],

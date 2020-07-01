@@ -28,7 +28,7 @@ trait EventWrapperProps[TEvent /* <: js.Object */] extends js.Object {
 
 object EventWrapperProps {
   @scala.inline
-  def apply[TEvent](
+  def apply[/* <: js.Object */ TEvent](
     accessors: End[TEvent],
     className: String,
     continuesEarlier: Boolean,

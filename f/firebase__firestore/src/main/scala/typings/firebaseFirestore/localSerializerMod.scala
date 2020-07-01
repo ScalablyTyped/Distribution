@@ -6,7 +6,7 @@ import typings.firebaseFirestore.indexeddbSchemaMod.DbRemoteDocument
 import typings.firebaseFirestore.indexeddbSchemaMod.DbTarget
 import typings.firebaseFirestore.indexeddbSchemaMod.DbTimestampKey
 import typings.firebaseFirestore.mutationBatchMod.MutationBatch
-import typings.firebaseFirestore.serializerMod.JsonProtoSerializer
+import typings.firebaseFirestore.remoteSerializerMod.JsonProtoSerializer
 import typings.firebaseFirestore.snapshotVersionMod.SnapshotVersion
 import typings.firebaseFirestore.targetDataMod.TargetData
 import scala.scalajs.js
@@ -19,24 +19,16 @@ object localSerializerMod extends js.Object {
   @js.native
   class LocalSerializer protected () extends js.Object {
     def this(remoteSerializer: JsonProtoSerializer) = this()
-    var fromDbTimestamp: js.Any = js.native
-    var remoteSerializer: js.Any = js.native
-    var toDbTimestamp: js.Any = js.native
-    /** Decodes a DbMutationBatch into a MutationBatch */
-    def fromDbMutationBatch(dbBatch: DbMutationBatch): MutationBatch = js.native
-    /** Decodes a remote document from storage locally to a Document. */
-    def fromDbRemoteDocument(remoteDoc: DbRemoteDocument): MaybeDocument = js.native
-    /** Decodes a DbTarget into TargetData */
-    def fromDbTarget(dbTarget: DbTarget): TargetData = js.native
-    def fromDbTimestampKey(dbTimestampKey: DbTimestampKey): SnapshotVersion = js.native
-    /** Encodes a batch of mutations into a DbMutationBatch for local storage. */
-    def toDbMutationBatch(userId: String, batch: MutationBatch): DbMutationBatch = js.native
-    /** Encodes a document for storage locally. */
-    def toDbRemoteDocument(maybeDoc: MaybeDocument, readTime: SnapshotVersion): DbRemoteDocument = js.native
-    /** Encodes TargetData into a DbTarget for storage locally. */
-    def toDbTarget(targetData: TargetData): DbTarget = js.native
-    def toDbTimestampKey(snapshotVersion: SnapshotVersion): DbTimestampKey = js.native
+    val remoteSerializer: JsonProtoSerializer = js.native
   }
   
+  def fromDbMutationBatch(localSerializer: LocalSerializer, dbBatch: DbMutationBatch): MutationBatch = js.native
+  def fromDbRemoteDocument(localSerializer: LocalSerializer, remoteDoc: DbRemoteDocument): MaybeDocument = js.native
+  def fromDbTarget(dbTarget: DbTarget): TargetData = js.native
+  def fromDbTimestampKey(dbTimestampKey: DbTimestampKey): SnapshotVersion = js.native
+  def toDbMutationBatch(localSerializer: LocalSerializer, userId: String, batch: MutationBatch): DbMutationBatch = js.native
+  def toDbRemoteDocument(localSerializer: LocalSerializer, maybeDoc: MaybeDocument, readTime: SnapshotVersion): DbRemoteDocument = js.native
+  def toDbTarget(localSerializer: LocalSerializer, targetData: TargetData): DbTarget = js.native
+  def toDbTimestampKey(snapshotVersion: SnapshotVersion): DbTimestampKey = js.native
 }
 

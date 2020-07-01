@@ -1,5 +1,6 @@
 package typings.pixiJs.PIXI.systems
 
+import typings.pixiJs.PIXI.BUFFER_BITS
 import typings.pixiJs.PIXI.Graphics
 import typings.pixiJs.PIXI.Rectangle
 import typings.pixiJs.PIXI.RenderTexture
@@ -63,10 +64,13 @@ trait RenderTextureSystem extends System {
     * Erases the render texture and fills the drawing area with a colour
     *
     * @param {number[]} [clearColor] - The color as rgba, default to use the renderer backgroundColor
+    * @param {PIXI.BUFFER_BITS} [mask=BUFFER_BITS.COLOR | BUFFER_BITS.DEPTH] - Bitwise OR of masks
+    *  that indicate the buffers to be cleared, by default COLOR and DEPTH buffers.
     * @return {PIXI.Renderer} Returns itself.
     */
   def clear(): Renderer = js.native
   def clear(clearColor: js.Array[Double]): Renderer = js.native
+  def clear(clearColor: js.Array[Double], mask: BUFFER_BITS): Renderer = js.native
   /**
     * Resets renderTexture state
     */

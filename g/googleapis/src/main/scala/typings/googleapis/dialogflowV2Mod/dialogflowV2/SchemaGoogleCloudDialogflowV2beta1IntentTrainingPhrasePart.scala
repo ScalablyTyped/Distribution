@@ -45,7 +45,7 @@ object SchemaGoogleCloudDialogflowV2beta1IntentTrainingPhrasePart {
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (entityType != null) __obj.updateDynamic("entityType")(entityType.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(userDefined)) __obj.updateDynamic("userDefined")(userDefined.asInstanceOf[js.Any])
+    if (!js.isUndefined(userDefined)) __obj.updateDynamic("userDefined")(userDefined.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1IntentTrainingPhrasePart]
   }
 }

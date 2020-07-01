@@ -10,7 +10,7 @@ trait GestureEnabled extends js.Object {
   var gestureVelocityImpact: Double
   var overlayEnabled: Boolean
   var shadowEnabled: Boolean
-  def overlay(hasStyle: Style): Element | Null
+  def overlay(hasStyle: StyleWithAnimatedValue): Element | Null
 }
 
 object GestureEnabled {
@@ -18,7 +18,7 @@ object GestureEnabled {
   def apply(
     gestureEnabled: Boolean,
     gestureVelocityImpact: Double,
-    overlay: Style => Element | Null,
+    overlay: StyleWithAnimatedValue => Element | Null,
     overlayEnabled: Boolean,
     shadowEnabled: Boolean
   ): GestureEnabled = {

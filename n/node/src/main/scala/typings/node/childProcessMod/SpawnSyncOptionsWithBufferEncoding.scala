@@ -1,24 +1,24 @@
 package typings.node.childProcessMod
 
-import typings.node.BufferEncoding
 import typings.node.NodeJS.ArrayBufferView
 import typings.node.NodeJS.ProcessEnv
 import typings.node.NodeJS.Signals
+import typings.node.nodeStrings.buffer_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SpawnSyncOptionsWithBufferEncoding extends SpawnSyncOptions {
   @JSName("encoding")
-  var encoding_SpawnSyncOptionsWithBufferEncoding: BufferEncoding
+  var encoding_SpawnSyncOptionsWithBufferEncoding: js.UndefOr[buffer_ | Null] = js.undefined
 }
 
 object SpawnSyncOptionsWithBufferEncoding {
   @scala.inline
   def apply(
-    encoding: BufferEncoding,
     argv0: String = null,
     cwd: String = null,
+    encoding: js.UndefOr[Null | buffer_] = js.undefined,
     env: ProcessEnv = null,
     gid: js.UndefOr[Double] = js.undefined,
     input: String | ArrayBufferView = null,
@@ -32,9 +32,10 @@ object SpawnSyncOptionsWithBufferEncoding {
     windowsHide: js.UndefOr[Boolean] = js.undefined,
     windowsVerbatimArguments: js.UndefOr[Boolean] = js.undefined
   ): SpawnSyncOptionsWithBufferEncoding = {
-    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (argv0 != null) __obj.updateDynamic("argv0")(argv0.asInstanceOf[js.Any])
     if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (!js.isUndefined(encoding)) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (!js.isUndefined(gid)) __obj.updateDynamic("gid")(gid.get.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])

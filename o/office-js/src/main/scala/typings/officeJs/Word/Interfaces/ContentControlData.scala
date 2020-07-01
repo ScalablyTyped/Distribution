@@ -26,7 +26,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "contentControl.toJSON()". */
+/** An interface describing the data returned by calling `contentControl.toJSON()`. */
 trait ContentControlData extends js.Object {
   /**
     *

@@ -1,8 +1,8 @@
 package typings.googleapis.storageV1Mod.storageV1
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.googleapis.AnonEncryptionAlgorithm
-import typings.googleapis.AnonEntity
+import typings.googleapis.anon.EncryptionAlgorithm
+import typings.googleapis.anon.Entity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -58,7 +58,7 @@ trait SchemaObject extends js.Object {
     * Metadata of customer-supplied encryption key, if the object is encrypted
     * by such a key.
     */
-  var customerEncryption: js.UndefOr[AnonEncryptionAlgorithm] = js.native
+  var customerEncryption: js.UndefOr[EncryptionAlgorithm] = js.native
   /**
     * HTTP 1.1 Entity tag for the object.
     */
@@ -123,7 +123,7 @@ trait SchemaObject extends js.Object {
   /**
     * The owner of the object. This will always be the uploader of the object.
     */
-  var owner: js.UndefOr[AnonEntity] = js.native
+  var owner: js.UndefOr[Entity] = js.native
   /**
     * A server-determined value that specifies the earliest time that the
     * object&#39;s retention period expires. This value is in RFC 3339 format.
@@ -181,13 +181,13 @@ object SchemaObject {
     acl: js.Array[SchemaObjectAccessControl] = null,
     bucket: String = null,
     cacheControl: String = null,
-    componentCount: Int | Double = null,
+    componentCount: js.UndefOr[Double] = js.undefined,
     contentDisposition: String = null,
     contentEncoding: String = null,
     contentLanguage: String = null,
     contentType: String = null,
     crc32c: String = null,
-    customerEncryption: AnonEncryptionAlgorithm = null,
+    customerEncryption: EncryptionAlgorithm = null,
     etag: String = null,
     eventBasedHold: js.UndefOr[Boolean] = js.undefined,
     generation: String = null,
@@ -199,7 +199,7 @@ object SchemaObject {
     metadata: StringDictionary[String] = null,
     metageneration: String = null,
     name: String = null,
-    owner: AnonEntity = null,
+    owner: Entity = null,
     retentionExpirationTime: String = null,
     selfLink: String = null,
     size: String = null,
@@ -214,7 +214,7 @@ object SchemaObject {
     if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
     if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
     if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl.asInstanceOf[js.Any])
-    if (componentCount != null) __obj.updateDynamic("componentCount")(componentCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(componentCount)) __obj.updateDynamic("componentCount")(componentCount.get.asInstanceOf[js.Any])
     if (contentDisposition != null) __obj.updateDynamic("contentDisposition")(contentDisposition.asInstanceOf[js.Any])
     if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding.asInstanceOf[js.Any])
     if (contentLanguage != null) __obj.updateDynamic("contentLanguage")(contentLanguage.asInstanceOf[js.Any])
@@ -222,7 +222,7 @@ object SchemaObject {
     if (crc32c != null) __obj.updateDynamic("crc32c")(crc32c.asInstanceOf[js.Any])
     if (customerEncryption != null) __obj.updateDynamic("customerEncryption")(customerEncryption.asInstanceOf[js.Any])
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (!js.isUndefined(eventBasedHold)) __obj.updateDynamic("eventBasedHold")(eventBasedHold.asInstanceOf[js.Any])
+    if (!js.isUndefined(eventBasedHold)) __obj.updateDynamic("eventBasedHold")(eventBasedHold.get.asInstanceOf[js.Any])
     if (generation != null) __obj.updateDynamic("generation")(generation.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
@@ -237,7 +237,7 @@ object SchemaObject {
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (storageClass != null) __obj.updateDynamic("storageClass")(storageClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(temporaryHold)) __obj.updateDynamic("temporaryHold")(temporaryHold.asInstanceOf[js.Any])
+    if (!js.isUndefined(temporaryHold)) __obj.updateDynamic("temporaryHold")(temporaryHold.get.asInstanceOf[js.Any])
     if (timeCreated != null) __obj.updateDynamic("timeCreated")(timeCreated.asInstanceOf[js.Any])
     if (timeDeleted != null) __obj.updateDynamic("timeDeleted")(timeDeleted.asInstanceOf[js.Any])
     if (timeStorageClassUpdated != null) __obj.updateDynamic("timeStorageClassUpdated")(timeStorageClassUpdated.asInstanceOf[js.Any])

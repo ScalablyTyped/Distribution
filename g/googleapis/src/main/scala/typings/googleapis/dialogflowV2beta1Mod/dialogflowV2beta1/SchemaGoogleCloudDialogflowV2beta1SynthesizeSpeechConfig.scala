@@ -49,17 +49,17 @@ object SchemaGoogleCloudDialogflowV2beta1SynthesizeSpeechConfig {
   @scala.inline
   def apply(
     effectsProfileId: js.Array[String] = null,
-    pitch: Int | Double = null,
-    speakingRate: Int | Double = null,
+    pitch: js.UndefOr[Double] = js.undefined,
+    speakingRate: js.UndefOr[Double] = js.undefined,
     voice: SchemaGoogleCloudDialogflowV2beta1VoiceSelectionParams = null,
-    volumeGainDb: Int | Double = null
+    volumeGainDb: js.UndefOr[Double] = js.undefined
   ): SchemaGoogleCloudDialogflowV2beta1SynthesizeSpeechConfig = {
     val __obj = js.Dynamic.literal()
     if (effectsProfileId != null) __obj.updateDynamic("effectsProfileId")(effectsProfileId.asInstanceOf[js.Any])
-    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
-    if (speakingRate != null) __obj.updateDynamic("speakingRate")(speakingRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(speakingRate)) __obj.updateDynamic("speakingRate")(speakingRate.get.asInstanceOf[js.Any])
     if (voice != null) __obj.updateDynamic("voice")(voice.asInstanceOf[js.Any])
-    if (volumeGainDb != null) __obj.updateDynamic("volumeGainDb")(volumeGainDb.asInstanceOf[js.Any])
+    if (!js.isUndefined(volumeGainDb)) __obj.updateDynamic("volumeGainDb")(volumeGainDb.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1SynthesizeSpeechConfig]
   }
 }

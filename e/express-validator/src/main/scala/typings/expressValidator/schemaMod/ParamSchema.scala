@@ -26,6 +26,7 @@ import typings.expressValidator.expressValidatorStrings.isByteLength
 import typings.expressValidator.expressValidatorStrings.isCreditCard
 import typings.expressValidator.expressValidatorStrings.isCurrency
 import typings.expressValidator.expressValidatorStrings.isDataURI
+import typings.expressValidator.expressValidatorStrings.isDate
 import typings.expressValidator.expressValidatorStrings.isDecimal
 import typings.expressValidator.expressValidatorStrings.isDivisibleBy
 import typings.expressValidator.expressValidatorStrings.isEAN
@@ -41,6 +42,7 @@ import typings.expressValidator.expressValidatorStrings.isHash
 import typings.expressValidator.expressValidatorStrings.isHexColor
 import typings.expressValidator.expressValidatorStrings.isHexadecimal
 import typings.expressValidator.expressValidatorStrings.isIBAN
+import typings.expressValidator.expressValidatorStrings.isIMEI
 import typings.expressValidator.expressValidatorStrings.isIP
 import typings.expressValidator.expressValidatorStrings.isIPRange
 import typings.expressValidator.expressValidatorStrings.isISBN
@@ -77,6 +79,7 @@ import typings.expressValidator.expressValidatorStrings.isSemVer
 import typings.expressValidator.expressValidatorStrings.isSlug
 import typings.expressValidator.expressValidatorStrings.isString
 import typings.expressValidator.expressValidatorStrings.isSurrogatePair
+import typings.expressValidator.expressValidatorStrings.isTaxID
 import typings.expressValidator.expressValidatorStrings.isURL
 import typings.expressValidator.expressValidatorStrings.isUUID
 import typings.expressValidator.expressValidatorStrings.isUppercase
@@ -155,6 +158,7 @@ trait ParamSchema extends js.Object {
   var isDataURI: js.UndefOr[
     ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isDataURI]
   ] = js.undefined
+  var isDate: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isDate]] = js.undefined
   var isDecimal: js.UndefOr[
     ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isDecimal]
   ] = js.undefined
@@ -184,6 +188,7 @@ trait ParamSchema extends js.Object {
     ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHexadecimal]
   ] = js.undefined
   var isIBAN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIBAN]] = js.undefined
+  var isIMEI: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIMEI]] = js.undefined
   var isIP: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIP]] = js.undefined
   var isIPRange: js.UndefOr[
     ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIPRange]
@@ -266,6 +271,7 @@ trait ParamSchema extends js.Object {
   var isSurrogatePair: js.UndefOr[
     ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isSurrogatePair]
   ] = js.undefined
+  var isTaxID: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isTaxID]] = js.undefined
   var isURL: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isURL]] = js.undefined
   var isUUID: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isUUID]] = js.undefined
   var isUppercase: js.UndefOr[
@@ -337,6 +343,7 @@ object ParamSchema {
     isCreditCard: ValidatorSchemaOptions[isCreditCard] = null,
     isCurrency: ValidatorSchemaOptions[isCurrency] = null,
     isDataURI: ValidatorSchemaOptions[isDataURI] = null,
+    isDate: ValidatorSchemaOptions[isDate] = null,
     isDecimal: ValidatorSchemaOptions[isDecimal] = null,
     isDivisibleBy: ValidatorSchemaOptions[isDivisibleBy] = null,
     isEAN: ValidatorSchemaOptions[isEAN] = null,
@@ -352,6 +359,7 @@ object ParamSchema {
     isHexColor: ValidatorSchemaOptions[isHexColor] = null,
     isHexadecimal: ValidatorSchemaOptions[isHexadecimal] = null,
     isIBAN: ValidatorSchemaOptions[isIBAN] = null,
+    isIMEI: ValidatorSchemaOptions[isIMEI] = null,
     isIP: ValidatorSchemaOptions[isIP] = null,
     isIPRange: ValidatorSchemaOptions[isIPRange] = null,
     isISBN: ValidatorSchemaOptions[isISBN] = null,
@@ -388,6 +396,7 @@ object ParamSchema {
     isSlug: ValidatorSchemaOptions[isSlug] = null,
     isString: ValidatorSchemaOptions[isString] = null,
     isSurrogatePair: ValidatorSchemaOptions[isSurrogatePair] = null,
+    isTaxID: ValidatorSchemaOptions[isTaxID] = null,
     isURL: ValidatorSchemaOptions[isURL] = null,
     isUUID: ValidatorSchemaOptions[isUUID] = null,
     isUppercase: ValidatorSchemaOptions[isUppercase] = null,
@@ -436,6 +445,7 @@ object ParamSchema {
     if (isCreditCard != null) __obj.updateDynamic("isCreditCard")(isCreditCard.asInstanceOf[js.Any])
     if (isCurrency != null) __obj.updateDynamic("isCurrency")(isCurrency.asInstanceOf[js.Any])
     if (isDataURI != null) __obj.updateDynamic("isDataURI")(isDataURI.asInstanceOf[js.Any])
+    if (isDate != null) __obj.updateDynamic("isDate")(isDate.asInstanceOf[js.Any])
     if (isDecimal != null) __obj.updateDynamic("isDecimal")(isDecimal.asInstanceOf[js.Any])
     if (isDivisibleBy != null) __obj.updateDynamic("isDivisibleBy")(isDivisibleBy.asInstanceOf[js.Any])
     if (isEAN != null) __obj.updateDynamic("isEAN")(isEAN.asInstanceOf[js.Any])
@@ -451,6 +461,7 @@ object ParamSchema {
     if (isHexColor != null) __obj.updateDynamic("isHexColor")(isHexColor.asInstanceOf[js.Any])
     if (isHexadecimal != null) __obj.updateDynamic("isHexadecimal")(isHexadecimal.asInstanceOf[js.Any])
     if (isIBAN != null) __obj.updateDynamic("isIBAN")(isIBAN.asInstanceOf[js.Any])
+    if (isIMEI != null) __obj.updateDynamic("isIMEI")(isIMEI.asInstanceOf[js.Any])
     if (isIP != null) __obj.updateDynamic("isIP")(isIP.asInstanceOf[js.Any])
     if (isIPRange != null) __obj.updateDynamic("isIPRange")(isIPRange.asInstanceOf[js.Any])
     if (isISBN != null) __obj.updateDynamic("isISBN")(isISBN.asInstanceOf[js.Any])
@@ -487,6 +498,7 @@ object ParamSchema {
     if (isSlug != null) __obj.updateDynamic("isSlug")(isSlug.asInstanceOf[js.Any])
     if (isString != null) __obj.updateDynamic("isString")(isString.asInstanceOf[js.Any])
     if (isSurrogatePair != null) __obj.updateDynamic("isSurrogatePair")(isSurrogatePair.asInstanceOf[js.Any])
+    if (isTaxID != null) __obj.updateDynamic("isTaxID")(isTaxID.asInstanceOf[js.Any])
     if (isURL != null) __obj.updateDynamic("isURL")(isURL.asInstanceOf[js.Any])
     if (isUUID != null) __obj.updateDynamic("isUUID")(isUUID.asInstanceOf[js.Any])
     if (isUppercase != null) __obj.updateDynamic("isUppercase")(isUppercase.asInstanceOf[js.Any])

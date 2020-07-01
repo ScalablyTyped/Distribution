@@ -21,6 +21,9 @@ object webpackBundleAnalyzerStrings {
   sealed trait info extends js.Object
   
   @js.native
+  sealed trait json extends js.Object
+  
+  @js.native
   sealed trait parsed extends js.Object
   
   @js.native
@@ -48,6 +51,8 @@ object webpackBundleAnalyzerStrings {
   def gzip: gzip = "gzip".asInstanceOf[gzip]
   @scala.inline
   def info: info = "info".asInstanceOf[info]
+  @scala.inline
+  def json: json = "json".asInstanceOf[json]
   @scala.inline
   def parsed: parsed = "parsed".asInstanceOf[parsed]
   @scala.inline

@@ -35,6 +35,7 @@ trait PartialRemarkStringifyOptions extends js.Object {
   var strong: js.UndefOr[_underscore | Asterisk] = js.undefined
   var tableCellPadding: js.UndefOr[Boolean] = js.undefined
   var tablePipeAlign: js.UndefOr[Boolean] = js.undefined
+  var tightDefinitions: js.UndefOr[Boolean] = js.undefined
 }
 
 object PartialRemarkStringifyOptions {
@@ -57,7 +58,8 @@ object PartialRemarkStringifyOptions {
     stringLength: /* s */ String => Double = null,
     strong: _underscore | Asterisk = null,
     tableCellPadding: js.UndefOr[Boolean] = js.undefined,
-    tablePipeAlign: js.UndefOr[Boolean] = js.undefined
+    tablePipeAlign: js.UndefOr[Boolean] = js.undefined,
+    tightDefinitions: js.UndefOr[Boolean] = js.undefined
   ): PartialRemarkStringifyOptions = {
     val __obj = js.Dynamic.literal()
     if (bullet != null) __obj.updateDynamic("bullet")(bullet.asInstanceOf[js.Any])
@@ -78,6 +80,7 @@ object PartialRemarkStringifyOptions {
     if (strong != null) __obj.updateDynamic("strong")(strong.asInstanceOf[js.Any])
     if (!js.isUndefined(tableCellPadding)) __obj.updateDynamic("tableCellPadding")(tableCellPadding.get.asInstanceOf[js.Any])
     if (!js.isUndefined(tablePipeAlign)) __obj.updateDynamic("tablePipeAlign")(tablePipeAlign.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tightDefinitions)) __obj.updateDynamic("tightDefinitions")(tightDefinitions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialRemarkStringifyOptions]
   }
 }

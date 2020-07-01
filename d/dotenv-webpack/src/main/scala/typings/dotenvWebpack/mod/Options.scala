@@ -6,6 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   /**
+    * Whether to allow empty strings in safe mode.
+    * If false, will throw an error if any env variables are empty (but only if safe mode is enabled).
+    * @default false
+    */
+  var allowEmptyValues: js.UndefOr[Boolean] = js.undefined
+  /**
     * Adds support for dotenv-defaults. If set to `true`, uses `./.env.defaults`. If a `string`, uses that location for a defaults file.
     * Read more at https://www.npmjs.com/package/dotenv-defaults. Default: `false`.
     */
@@ -35,6 +41,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
+    allowEmptyValues: js.UndefOr[Boolean] = js.undefined,
     defaults: Boolean | String = null,
     expand: js.UndefOr[Boolean] = js.undefined,
     path: String = null,
@@ -43,6 +50,7 @@ object Options {
     systemvars: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowEmptyValues)) __obj.updateDynamic("allowEmptyValues")(allowEmptyValues.get.asInstanceOf[js.Any])
     if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
     if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand.get.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])

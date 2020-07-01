@@ -31,12 +31,12 @@ trait SchemaGoogleCloudVideointelligenceV1SpeechRecognitionAlternative extends j
 object SchemaGoogleCloudVideointelligenceV1SpeechRecognitionAlternative {
   @scala.inline
   def apply(
-    confidence: Int | Double = null,
+    confidence: js.UndefOr[Double] = js.undefined,
     transcript: String = null,
     words: js.Array[SchemaGoogleCloudVideointelligenceV1WordInfo] = null
   ): SchemaGoogleCloudVideointelligenceV1SpeechRecognitionAlternative = {
     val __obj = js.Dynamic.literal()
-    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
     if (transcript != null) __obj.updateDynamic("transcript")(transcript.asInstanceOf[js.Any])
     if (words != null) __obj.updateDynamic("words")(words.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1SpeechRecognitionAlternative]

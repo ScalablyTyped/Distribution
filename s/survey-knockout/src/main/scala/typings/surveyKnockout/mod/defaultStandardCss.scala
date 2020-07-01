@@ -1,13 +1,14 @@
 package typings.surveyKnockout.mod
 
+import typings.surveyKnockout.anon.AsCell
 import typings.surveyKnockout.anon.Body
 import typings.surveyKnockout.anon.Button
 import typings.surveyKnockout.anon.ButtonAdd
+import typings.surveyKnockout.anon.Cell
 import typings.surveyKnockout.anon.CellLabel
 import typings.surveyKnockout.anon.ChooseFile
 import typings.surveyKnockout.anon.ClearButton
 import typings.surveyKnockout.anon.Column
-import typings.surveyKnockout.anon.Comment
 import typings.surveyKnockout.anon.Complete
 import typings.surveyKnockout.anon.Container
 import typings.surveyKnockout.anon.Control
@@ -49,7 +50,7 @@ object defaultStandardCss extends js.Object {
   var logo: String = js.native
   var logoImage: String = js.native
   var matrix: CellLabel = js.native
-  var matrixdropdown: Root = js.native
+  var matrixdropdown: Cell = js.native
   var matrixdynamic: Button = js.native
   var multipletext: ItemTitle = js.native
   var navigation: Complete = js.native
@@ -62,7 +63,7 @@ object defaultStandardCss extends js.Object {
   var progress: String = js.native
   var progressBar: String = js.native
   var progressTextInBar: String = js.native
-  var question: Comment = js.native
+  var question: AsCell = js.native
   var radiogroup: ClearButton = js.native
   var rating: Disabled = js.native
   var root: String = js.native

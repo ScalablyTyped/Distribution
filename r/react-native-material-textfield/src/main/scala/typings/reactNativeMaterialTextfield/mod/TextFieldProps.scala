@@ -182,6 +182,7 @@ object TextFieldProps {
     enablesReturnKeyAutomatically: js.UndefOr[Boolean] = js.undefined,
     error: String = null,
     errorColor: String = null,
+    focusable: js.UndefOr[Boolean] = js.undefined,
     fontSize: js.UndefOr[Double] = js.undefined,
     formatText: /* text */ String => String = null,
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
@@ -320,6 +321,7 @@ object TextFieldProps {
     if (!js.isUndefined(enablesReturnKeyAutomatically)) __obj.updateDynamic("enablesReturnKeyAutomatically")(enablesReturnKeyAutomatically.get.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (errorColor != null) __obj.updateDynamic("errorColor")(errorColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
     if (formatText != null) __obj.updateDynamic("formatText")(js.Any.fromFunction1(formatText))
     if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.get.asInstanceOf[js.Any])

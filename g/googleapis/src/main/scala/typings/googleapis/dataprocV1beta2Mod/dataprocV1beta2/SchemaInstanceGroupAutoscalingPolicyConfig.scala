@@ -29,11 +29,15 @@ trait SchemaInstanceGroupAutoscalingPolicyConfig extends js.Object {
 
 object SchemaInstanceGroupAutoscalingPolicyConfig {
   @scala.inline
-  def apply(maxInstances: Int | Double = null, minInstances: Int | Double = null, weight: Int | Double = null): SchemaInstanceGroupAutoscalingPolicyConfig = {
+  def apply(
+    maxInstances: js.UndefOr[Double] = js.undefined,
+    minInstances: js.UndefOr[Double] = js.undefined,
+    weight: js.UndefOr[Double] = js.undefined
+  ): SchemaInstanceGroupAutoscalingPolicyConfig = {
     val __obj = js.Dynamic.literal()
-    if (maxInstances != null) __obj.updateDynamic("maxInstances")(maxInstances.asInstanceOf[js.Any])
-    if (minInstances != null) __obj.updateDynamic("minInstances")(minInstances.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxInstances)) __obj.updateDynamic("maxInstances")(maxInstances.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minInstances)) __obj.updateDynamic("minInstances")(minInstances.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstanceGroupAutoscalingPolicyConfig]
   }
 }

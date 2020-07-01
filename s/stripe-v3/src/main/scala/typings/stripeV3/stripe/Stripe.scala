@@ -70,6 +70,7 @@ trait Stripe extends js.Object {
   // tslint:disable-next-line unified-signatures
   def redirectToCheckout(options: StripeServerCheckoutOptions): js.Promise[StripeRedirectResponse] = js.native
   def retrievePaymentIntent(clientSecret: String): js.Promise[PaymentIntentResponse] = js.native
+  def retrieveSetupIntent(clientSecret: String): js.Promise[SetupIntentResponse] = js.native
   def retrieveSource(options: RetrieveSourceOptions): js.Promise[SourceResponse] = js.native
 }
 

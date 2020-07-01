@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl", "BackInsertIterator")
 @js.native
 class BackInsertIterator[Source /* <: IPushBack[ValueType[Source]] */] protected ()
-  extends typings.tstl.iteratorMod.BackInsertIterator[Source] {
+  extends typings.tstl.tstlModuleMod.BackInsertIterator[Source] {
   /**
     * Initializer Constructor.
     *

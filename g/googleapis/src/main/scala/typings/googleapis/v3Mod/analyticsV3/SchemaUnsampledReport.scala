@@ -1,7 +1,7 @@
 package typings.googleapis.v3Mod.analyticsV3
 
-import typings.googleapis.AnonBucketId
-import typings.googleapis.AnonDocumentId
+import typings.googleapis.anon.BucketId
+import typings.googleapis.anon.DocumentId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait SchemaUnsampledReport extends js.Object {
   /**
     * Download details for a file stored in Google Cloud Storage.
     */
-  var cloudStorageDownloadDetails: js.UndefOr[AnonBucketId] = js.native
+  var cloudStorageDownloadDetails: js.UndefOr[BucketId] = js.native
   /**
     * Time this unsampled report was created.
     */
@@ -37,7 +37,7 @@ trait SchemaUnsampledReport extends js.Object {
   /**
     * Download details for a file stored in Google Drive.
     */
-  var driveDownloadDetails: js.UndefOr[AnonDocumentId] = js.native
+  var driveDownloadDetails: js.UndefOr[DocumentId] = js.native
   /**
     * The end date for the unsampled report.
     */
@@ -98,11 +98,11 @@ object SchemaUnsampledReport {
   @scala.inline
   def apply(
     accountId: String = null,
-    cloudStorageDownloadDetails: AnonBucketId = null,
+    cloudStorageDownloadDetails: BucketId = null,
     created: String = null,
     dimensions: String = null,
     downloadType: String = null,
-    driveDownloadDetails: AnonDocumentId = null,
+    driveDownloadDetails: DocumentId = null,
     `end-date`: String = null,
     filters: String = null,
     id: String = null,

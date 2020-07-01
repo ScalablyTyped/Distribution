@@ -35,14 +35,14 @@ object SchemaThumbnail {
   def apply(
     contentType: String = null,
     data: String = null,
-    heightPx: Int | Double = null,
-    widthPx: Int | Double = null
+    heightPx: js.UndefOr[Double] = js.undefined,
+    widthPx: js.UndefOr[Double] = js.undefined
   ): SchemaThumbnail = {
     val __obj = js.Dynamic.literal()
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (heightPx != null) __obj.updateDynamic("heightPx")(heightPx.asInstanceOf[js.Any])
-    if (widthPx != null) __obj.updateDynamic("widthPx")(widthPx.asInstanceOf[js.Any])
+    if (!js.isUndefined(heightPx)) __obj.updateDynamic("heightPx")(heightPx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(widthPx)) __obj.updateDynamic("widthPx")(widthPx.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaThumbnail]
   }
 }

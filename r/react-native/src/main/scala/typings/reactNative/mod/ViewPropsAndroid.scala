@@ -12,6 +12,10 @@ trait ViewPropsAndroid extends js.Object {
     */
   var collapsable: js.UndefOr[Boolean] = js.undefined
   /**
+    * Whether this `View` should be focusable with a non-touch input device, eg. receive focus with a hardware keyboard.
+    */
+  var focusable: js.UndefOr[Boolean] = js.undefined
+  /**
     * Whether this view needs to rendered offscreen and composited with an alpha in order to preserve 100% correct colors and blending behavior.
     * The default (false) falls back to drawing the component and its children
     * with an alpha applied to the paint used to draw each element instead of rendering the full component offscreen and compositing it back with an alpha value.
@@ -40,11 +44,13 @@ object ViewPropsAndroid {
   @scala.inline
   def apply(
     collapsable: js.UndefOr[Boolean] = js.undefined,
+    focusable: js.UndefOr[Boolean] = js.undefined,
     needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined,
     renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined
   ): ViewPropsAndroid = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing.get.asInstanceOf[js.Any])
     if (!js.isUndefined(renderToHardwareTextureAndroid)) __obj.updateDynamic("renderToHardwareTextureAndroid")(renderToHardwareTextureAndroid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewPropsAndroid]

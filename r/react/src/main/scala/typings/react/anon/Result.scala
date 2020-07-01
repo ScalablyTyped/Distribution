@@ -11,7 +11,7 @@ trait Result[T /* <: ComponentType[_] */] extends js.Object {
 
 object Result {
   @scala.inline
-  def apply[T](_result: T): Result[T] = {
+  def apply[/* <: typings.react.mod.ComponentType[_] */ T](_result: T): Result[T] = {
     val __obj = js.Dynamic.literal(_result = _result.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result[T]]
   }

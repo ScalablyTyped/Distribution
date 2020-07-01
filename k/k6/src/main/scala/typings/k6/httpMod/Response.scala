@@ -45,7 +45,7 @@ trait Response extends js.Object {
   var url: String = js.native
   /**
     * Click link on page.
-    * https://docs.k6.io/docs/responseclicklink-params
+    * https://k6.io/docs/javascript-api/k6-http/response-k6-http/response-clicklink-params
     * @param selector - Selector expression locating link to click.
     * @param params - Parameters for link click request.
     * @returns Link click response.
@@ -57,6 +57,9 @@ trait Response extends js.Object {
     * https://docs.k6.io/docs/response-k6http
     * @param selector - Selector expression.
     * @returns Document node or selected elements.
+    * @example
+    * let res = http.get("https://stackoverflow.com");
+    * let doc = res.html();
     */
   def html(): Selection = js.native
   def html(selector: String): Selection = js.native
@@ -65,12 +68,15 @@ trait Response extends js.Object {
     * https://docs.k6.io/docs/response-k6http
     * @param selector - GJSON expression.
     * @returns Parse result if successful, `undefined` if unsuccessful.
+    * @example
+    * let res = http.get(url);
+    * res.json();
     */
   def json(): js.UndefOr[JSONValue] = js.native
   def json(selector: String): js.UndefOr[JSONValue] = js.native
   /**
     * Submit form on page.
-    * https://docs.k6.io/docs/responsesubmitform-params
+    * https://k6.io/docs/javascript-api/k6-http/response-k6-http/response-submitform-params
     * @param formSelector - Selector expression locating form to submit.
     * @param fields - Form field values.
     * @param submitSelector - Selector expression locating submit button.

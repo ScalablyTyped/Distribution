@@ -54,10 +54,6 @@ class Bone protected ()
   /* CompleteClass */
   override var sorted: Boolean = js.native
   /* CompleteClass */
-  override val worldX: Double = js.native
-  /* CompleteClass */
-  override val worldY: Double = js.native
-  /* CompleteClass */
   override var x: Double = js.native
   /* CompleteClass */
   override var y: Double = js.native
@@ -99,6 +95,10 @@ class Bone protected ()
   override def worldToLocal(world: typings.pixiSpine.PIXI.spine.core.Vector2): typings.pixiSpine.PIXI.spine.core.Vector2 = js.native
   /* CompleteClass */
   override def worldToLocalRotation(worldRotation: Double): Double = js.native
+  /* CompleteClass */
+  override def worldX: Double = js.native
+  /* CompleteClass */
+  override def worldY: Double = js.native
 }
 
 /* static members */

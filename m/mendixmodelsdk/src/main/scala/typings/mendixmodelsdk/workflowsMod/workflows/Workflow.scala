@@ -4,6 +4,8 @@ import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.domainmodelsMod.domainmodels.IEntity
 import typings.mendixmodelsdk.instancesMod.IList
 import typings.mendixmodelsdk.internalMod.AbstractModel
+import typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate
+import typings.mendixmodelsdk.pagesMod.pages.IPage
 import typings.mendixmodelsdk.projectsMod.projects.Document
 import typings.mendixmodelsdk.projectsMod.projects.FolderBase
 import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
@@ -64,6 +66,19 @@ class Workflow protected () extends Document {
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
   def flows: IList[Flow] = js.native
+  def overviewPage(): js.Any = js.native
+  def overviewPage(newValue: IPage): js.Any = js.native
+  def overviewPageQualifiedName: String | Null = js.native
+  /**
+    * In version 8.11.0: introduced
+    */
+  @JSName("overviewPage")
+  def overviewPage_Union: IPage | Null = js.native
+  /**
+    * In version 8.11.0: introduced
+    */
+  def subject: StringTemplate = js.native
+  def subject(newValue: StringTemplate): js.Any = js.native
   def title: String = js.native
   def title(newValue: String): js.Any = js.native
 }

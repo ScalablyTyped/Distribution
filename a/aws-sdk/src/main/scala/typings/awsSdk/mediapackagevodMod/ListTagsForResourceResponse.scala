@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ListTagsForResourceResponse extends js.Object {
+  /**
+    * A collection of tags associated with a resource
+    */
   var Tags: js.UndefOr[mapOfString] = js.native
 }
 

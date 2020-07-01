@@ -15,7 +15,7 @@ trait ModifyDBClusterMessage extends js.Object {
     */
   var ApplyImmediately: js.UndefOr[Boolean] = js.native
   /**
-    * The target backtrack window, in seconds. To disable backtracking, set this value to 0. Default: 0 Constraints:   If specified, this value must be set to a number from 0 to 259,200 (72 hours).  
+    * The target backtrack window, in seconds. To disable backtracking, set this value to 0.  Currently, Backtrack is only supported for Aurora MySQL DB clusters.  Default: 0 Constraints:   If specified, this value must be set to a number from 0 to 259,200 (72 hours).  
     */
   var BacktrackWindow: js.UndefOr[LongOptional] = js.native
   /**
@@ -54,6 +54,10 @@ trait ModifyDBClusterMessage extends js.Object {
     * Specify the name of the IAM role to be used when making API calls to the Directory Service.
     */
   var DomainIAMRoleName: js.UndefOr[String] = js.native
+  /**
+    * A value that indicates whether to enable write operations to be forwarded from this cluster to the primary cluster in an Aurora global database. The resulting changes are replicated back to this cluster. This parameter only applies to DB clusters that are secondary clusters in an Aurora global database. By default, Aurora disallows write operations for secondary clusters.
+    */
+  var EnableGlobalWriteForwarding: js.UndefOr[BooleanOptional] = js.native
   /**
     * A value that indicates whether to enable the HTTP endpoint for an Aurora Serverless DB cluster. By default, the HTTP endpoint is disabled. When enabled, the HTTP endpoint provides a connectionless web service API for running SQL queries on the Aurora Serverless DB cluster. You can also query your database from inside the RDS console with the query editor. For more information, see Using the Data API for Aurora Serverless in the Amazon Aurora User Guide.
     */
@@ -115,6 +119,7 @@ object ModifyDBClusterMessage {
     DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
     Domain: String = null,
     DomainIAMRoleName: String = null,
+    EnableGlobalWriteForwarding: js.UndefOr[BooleanOptional] = js.undefined,
     EnableHttpEndpoint: js.UndefOr[BooleanOptional] = js.undefined,
     EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined,
     EngineVersion: String = null,
@@ -139,6 +144,7 @@ object ModifyDBClusterMessage {
     if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection.get.asInstanceOf[js.Any])
     if (Domain != null) __obj.updateDynamic("Domain")(Domain.asInstanceOf[js.Any])
     if (DomainIAMRoleName != null) __obj.updateDynamic("DomainIAMRoleName")(DomainIAMRoleName.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableGlobalWriteForwarding)) __obj.updateDynamic("EnableGlobalWriteForwarding")(EnableGlobalWriteForwarding.get.asInstanceOf[js.Any])
     if (!js.isUndefined(EnableHttpEndpoint)) __obj.updateDynamic("EnableHttpEndpoint")(EnableHttpEndpoint.get.asInstanceOf[js.Any])
     if (!js.isUndefined(EnableIAMDatabaseAuthentication)) __obj.updateDynamic("EnableIAMDatabaseAuthentication")(EnableIAMDatabaseAuthentication.get.asInstanceOf[js.Any])
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])

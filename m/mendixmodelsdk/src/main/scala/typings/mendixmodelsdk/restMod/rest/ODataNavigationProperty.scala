@@ -1,7 +1,6 @@
 package typings.mendixmodelsdk.restMod.rest
 
 import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAssociationBase
 import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.Element
@@ -14,6 +13,7 @@ import scala.scalajs.js.annotation._
 /**
   * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
   *
+  * In version 8.11.0: deleted
   * In version 7.22.0: introduced
   */
 @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataNavigationProperty")
@@ -29,20 +29,6 @@ class ODataNavigationProperty protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FODataNavigationProperty: IModel = js.native
-  /**
-    * In version 8.10.0: deleted
-    */
-  def association: IAssociationBase = js.native
-  def association(newValue: IAssociationBase): js.Any = js.native
-  def associationQualifiedName: String = js.native
-  def containerAsODataEntity: ODataEntity = js.native
-  def name: String = js.native
-  def name(newValue: String): js.Any = js.native
-  /**
-    * In version 8.10.0: deleted
-    */
-  def thisSideIsParent: Boolean = js.native
-  def thisSideIsParent(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */
@@ -57,14 +43,5 @@ object ODataNavigationProperty extends js.Object {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): ODataNavigationProperty = js.native
-  /**
-    * Creates and returns a new ODataNavigationProperty instance in the SDK and on the server.
-    * The new ODataNavigationProperty will be automatically stored in the 'navigationProperties' property
-    * of the parent ODataEntity element passed as argument.
-    *
-    * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.22.0 and higher
-    */
-  def createIn(container: ODataEntity): ODataNavigationProperty = js.native
 }
 

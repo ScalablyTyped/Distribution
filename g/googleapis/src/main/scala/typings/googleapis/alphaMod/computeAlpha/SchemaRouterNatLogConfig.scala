@@ -24,7 +24,7 @@ object SchemaRouterNatLogConfig {
   @scala.inline
   def apply(enable: js.UndefOr[Boolean] = js.undefined, filter: String = null): SchemaRouterNatLogConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.get.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRouterNatLogConfig]
   }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@blueprintjs/select" : "3.13.1"
+      "@blueprintjs/select" : "3.13.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@blueprintjs/select" : "3.13.1"
+      "@blueprintjs/select" : "3.13.4"
     }
   ],
   "compile-devDependencies" : [

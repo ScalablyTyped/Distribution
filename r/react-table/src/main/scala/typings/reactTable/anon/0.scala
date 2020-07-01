@@ -11,7 +11,7 @@ trait `0`[D /* <: js.Object */] extends js.Object {
 
 object `0` {
   @scala.inline
-  def apply[D](accessor: IdType[D]): `0`[D] = {
+  def apply[/* <: js.Object */ D](accessor: IdType[D]): `0`[D] = {
     val __obj = js.Dynamic.literal(accessor = accessor.asInstanceOf[js.Any])
     __obj.asInstanceOf[`0`[D]]
   }

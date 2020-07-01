@@ -17,7 +17,7 @@ object SchemaIndexItemOptions {
   @scala.inline
   def apply(allowUnknownGsuitePrincipals: js.UndefOr[Boolean] = js.undefined): SchemaIndexItemOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowUnknownGsuitePrincipals)) __obj.updateDynamic("allowUnknownGsuitePrincipals")(allowUnknownGsuitePrincipals.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowUnknownGsuitePrincipals)) __obj.updateDynamic("allowUnknownGsuitePrincipals")(allowUnknownGsuitePrincipals.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIndexItemOptions]
   }
 }

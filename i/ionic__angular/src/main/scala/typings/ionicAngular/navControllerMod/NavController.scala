@@ -9,6 +9,7 @@ import typings.ionicAngular.ionRouterOutletMod.IonRouterOutlet
 import typings.ionicAngular.ionicAngularStrings.back
 import typings.ionicAngular.ionicAngularStrings.forward
 import typings.ionicAngular.platformMod.Platform
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.interfaceMod.RouterDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,6 +21,7 @@ class NavController protected () extends js.Object {
   def this(platform: Platform, location: Location, serializer: UrlSerializer) = this()
   def this(platform: Platform, location: Location, serializer: UrlSerializer, router: Router) = this()
   var animated: js.UndefOr[js.Any] = js.native
+  var animationBuilder: js.UndefOr[js.Any] = js.native
   var direction: js.Any = js.native
   var guessAnimation: js.UndefOr[js.Any] = js.native
   var guessDirection: js.Any = js.native
@@ -126,7 +128,21 @@ class NavController protected () extends js.Object {
   @JSName("setDirection")
   def setDirection_back(direction: RouterDirection, animated: Boolean, animationDirection: back): Unit = js.native
   @JSName("setDirection")
+  def setDirection_back(
+    direction: RouterDirection,
+    animated: Boolean,
+    animationDirection: back,
+    animationBuilder: AnimationBuilder
+  ): Unit = js.native
+  @JSName("setDirection")
   def setDirection_forward(direction: RouterDirection, animated: Boolean, animationDirection: forward): Unit = js.native
+  @JSName("setDirection")
+  def setDirection_forward(
+    direction: RouterDirection,
+    animated: Boolean,
+    animationDirection: forward,
+    animationBuilder: AnimationBuilder
+  ): Unit = js.native
   /**
     * @internal
     */

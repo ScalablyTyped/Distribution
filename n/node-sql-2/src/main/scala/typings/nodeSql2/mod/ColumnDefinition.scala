@@ -16,7 +16,7 @@ trait ColumnDefinition[Name /* <: String */, Type] extends Named[Name] {
 
 object ColumnDefinition {
   @scala.inline
-  def apply[Name, Type](
+  def apply[/* <: java.lang.String */ Name, Type](
     dataType: String,
     defaultValue: Type = null,
     jsType: Type = null,

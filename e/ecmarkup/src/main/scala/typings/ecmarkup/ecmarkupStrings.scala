@@ -42,6 +42,9 @@ object ecmarkupStrings {
   sealed trait standard extends js.Object
   
   @js.native
+  sealed trait step extends js.Object
+  
+  @js.native
   sealed trait table extends js.Object
   
   @js.native
@@ -71,6 +74,8 @@ object ecmarkupStrings {
   def proposal: proposal = "proposal".asInstanceOf[proposal]
   @scala.inline
   def standard: standard = "standard".asInstanceOf[standard]
+  @scala.inline
+  def step: step = "step".asInstanceOf[step]
   @scala.inline
   def table: table = "table".asInstanceOf[table]
   @scala.inline

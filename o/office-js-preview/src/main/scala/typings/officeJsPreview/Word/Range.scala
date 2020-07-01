@@ -165,14 +165,12 @@ trait Range extends ClientObject {
     */
   val text: String = js.native
   /**
-    *
     * Clears the contents of the range object. The user can perform the undo operation on the cleared content.
     *
     * [Api set: WordApi 1.1]
     */
   def clear(): Unit = js.native
   /**
-    *
     * Compares this range's location with another range's location.
     *
     * [Api set: WordApi 1.3]
@@ -181,14 +179,12 @@ trait Range extends ClientObject {
     */
   def compareLocationWith(range: Range): ClientResult[LocationRelation] = js.native
   /**
-    *
     * Deletes the range and its content from the document.
     *
     * [Api set: WordApi 1.1]
     */
   def delete(): Unit = js.native
   /**
-    *
     * Returns a new range that extends from this range in either direction to cover another range. This range is not changed. Throws an error if the two ranges do not have a union.
     *
     * [Api set: WordApi 1.3]
@@ -197,7 +193,6 @@ trait Range extends ClientObject {
     */
   def expandTo(range: Range): Range = js.native
   /**
-    *
     * Returns a new range that extends from this range in either direction to cover another range. This range is not changed. Returns a null object if the two ranges do not have a union.
     *
     * [Api set: WordApi 1.3]
@@ -206,7 +201,6 @@ trait Range extends ClientObject {
     */
   def expandToOrNullObject(range: Range): Range = js.native
   /**
-    *
     * Gets the names all bookmarks in or overlapping the range. A bookmark is hidden if its name starts with the underscore character.
     *
     * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -219,21 +213,18 @@ trait Range extends ClientObject {
   def getBookmarks(includeHidden: Boolean): ClientResult[js.Array[String]] = js.native
   def getBookmarks(includeHidden: Boolean, includeAdjacent: Boolean): ClientResult[js.Array[String]] = js.native
   /**
-    *
     * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
     *
     * [Api set: WordApi 1.1]
     */
   def getHtml(): ClientResult[String] = js.native
   /**
-    *
     * Gets hyperlink child ranges within the range.
     *
     * [Api set: WordApi 1.3]
     */
   def getHyperlinkRanges(): RangeCollection = js.native
   /**
-    *
     * Gets the next text range by using punctuation marks and/or other ending marks. Throws an error if this text range is the last one.
     *
     * [Api set: WordApi 1.3]
@@ -244,7 +235,6 @@ trait Range extends ClientObject {
   def getNextTextRange(endingMarks: js.Array[String]): Range = js.native
   def getNextTextRange(endingMarks: js.Array[String], trimSpacing: Boolean): Range = js.native
   /**
-    *
     * Gets the next text range by using punctuation marks and/or other ending marks. Returns a null object if this text range is the last one.
     *
     * [Api set: WordApi 1.3]
@@ -255,14 +245,12 @@ trait Range extends ClientObject {
   def getNextTextRangeOrNullObject(endingMarks: js.Array[String]): Range = js.native
   def getNextTextRangeOrNullObject(endingMarks: js.Array[String], trimSpacing: Boolean): Range = js.native
   /**
-    *
     * Gets the OOXML representation of the range object.
     *
     * [Api set: WordApi 1.1]
     */
   def getOoxml(): ClientResult[String] = js.native
   /**
-    *
     * Clones the range, or gets the starting or ending point of the range as a new range.
     *
     * [Api set: WordApi 1.3]
@@ -284,7 +272,6 @@ trait Range extends ClientObject {
   @JSName("getRange")
   def getRange_Whole(rangeLocation: Whole): Range = js.native
   /**
-    *
     * Gets the text child ranges in the range by using punctuation marks and/or other ending marks.
     *
     * [Api set: WordApi 1.3]
@@ -295,7 +282,6 @@ trait Range extends ClientObject {
   def getTextRanges(endingMarks: js.Array[String]): RangeCollection = js.native
   def getTextRanges(endingMarks: js.Array[String], trimSpacing: Boolean): RangeCollection = js.native
   /**
-    *
     * Inserts a bookmark on the range. If a bookmark of the same name exists somewhere, it is deleted first.
     *
     * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -305,7 +291,6 @@ trait Range extends ClientObject {
     */
   def insertBookmark(name: String): Unit = js.native
   /**
-    *
     * Inserts a break at the specified location in the main document.
     *
     * [Api set: WordApi 1.1]
@@ -318,7 +303,6 @@ trait Range extends ClientObject {
     insertLocation: Before | After | Start | End | Replace
   ): Unit = js.native
   /**
-    *
     * Inserts a break at the specified location in the main document.
     *
     * [Api set: WordApi 1.1]
@@ -328,14 +312,12 @@ trait Range extends ClientObject {
     */
   def insertBreak(breakType: BreakType, insertLocation: InsertLocation): Unit = js.native
   /**
-    *
     * Wraps the range object with a rich text content control.
     *
     * [Api set: WordApi 1.1]
     */
   def insertContentControl(): ContentControl = js.native
   /**
-    *
     * Inserts a document at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -347,7 +329,6 @@ trait Range extends ClientObject {
   @JSName("insertFileFromBase64")
   def insertFileFromBase64_After(base64File: String, insertLocation: After): Range = js.native
   /**
-    *
     * Inserts a document at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -364,7 +345,6 @@ trait Range extends ClientObject {
   @JSName("insertFileFromBase64")
   def insertFileFromBase64_Start(base64File: String, insertLocation: Start): Range = js.native
   /**
-    *
     * Inserts HTML at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -376,7 +356,6 @@ trait Range extends ClientObject {
   @JSName("insertHtml")
   def insertHtml_After(html: String, insertLocation: After): Range = js.native
   /**
-    *
     * Inserts HTML at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -393,7 +372,6 @@ trait Range extends ClientObject {
   @JSName("insertHtml")
   def insertHtml_Start(html: String, insertLocation: Start): Range = js.native
   /**
-    *
     * Inserts a picture at the specified location.
     *
     * [Api set: WordApi 1.2]
@@ -405,7 +383,6 @@ trait Range extends ClientObject {
   @JSName("insertInlinePictureFromBase64")
   def insertInlinePictureFromBase64_After(base64EncodedImage: String, insertLocation: After): InlinePicture = js.native
   /**
-    *
     * Inserts a picture at the specified location.
     *
     * [Api set: WordApi 1.2]
@@ -422,7 +399,6 @@ trait Range extends ClientObject {
   @JSName("insertInlinePictureFromBase64")
   def insertInlinePictureFromBase64_Start(base64EncodedImage: String, insertLocation: Start): InlinePicture = js.native
   /**
-    *
     * Inserts OOXML at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -434,7 +410,6 @@ trait Range extends ClientObject {
   @JSName("insertOoxml")
   def insertOoxml_After(ooxml: String, insertLocation: After): Range = js.native
   /**
-    *
     * Inserts OOXML at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -451,7 +426,6 @@ trait Range extends ClientObject {
   @JSName("insertOoxml")
   def insertOoxml_Start(ooxml: String, insertLocation: Start): Range = js.native
   /**
-    *
     * Inserts a paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -463,7 +437,6 @@ trait Range extends ClientObject {
   @JSName("insertParagraph")
   def insertParagraph_After(paragraphText: String, insertLocation: After): Paragraph = js.native
   /**
-    *
     * Inserts a paragraph at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -480,7 +453,6 @@ trait Range extends ClientObject {
   @JSName("insertParagraph")
   def insertParagraph_Start(paragraphText: String, insertLocation: Start): Paragraph = js.native
   /**
-    *
     * Inserts a table with the specified number of rows and columns.
     *
     * [Api set: WordApi 1.3]
@@ -502,7 +474,6 @@ trait Range extends ClientObject {
   @JSName("insertTable")
   def insertTable_After(rowCount: Double, columnCount: Double, insertLocation: After, values: js.Array[js.Array[String]]): Table = js.native
   /**
-    *
     * Inserts a table with the specified number of rows and columns.
     *
     * [Api set: WordApi 1.3]
@@ -529,7 +500,6 @@ trait Range extends ClientObject {
   @JSName("insertTable")
   def insertTable_Start(rowCount: Double, columnCount: Double, insertLocation: Start, values: js.Array[js.Array[String]]): Table = js.native
   /**
-    *
     * Inserts text at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -541,7 +511,6 @@ trait Range extends ClientObject {
   @JSName("insertText")
   def insertText_After(text: String, insertLocation: After): Range = js.native
   /**
-    *
     * Inserts text at the specified location.
     *
     * [Api set: WordApi 1.1]
@@ -558,7 +527,6 @@ trait Range extends ClientObject {
   @JSName("insertText")
   def insertText_Start(text: String, insertLocation: Start): Range = js.native
   /**
-    *
     * Returns a new range as the intersection of this range with another range. This range is not changed. Throws an error if the two ranges are not overlapped or adjacent.
     *
     * [Api set: WordApi 1.3]
@@ -567,7 +535,6 @@ trait Range extends ClientObject {
     */
   def intersectWith(range: Range): Range = js.native
   /**
-    *
     * Returns a new range as the intersection of this range with another range. This range is not changed. Returns a null object if the two ranges are not overlapped or adjacent.
     *
     * [Api set: WordApi 1.3]
@@ -576,27 +543,16 @@ trait Range extends ClientObject {
     */
   def intersectWithOrNullObject(range: Range): Range = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Word.Range` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Word.Range` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Range` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): Range = js.native
-  def load(option: String): Range = js.native
-  def load(option: js.Array[String]): Range = js.native
-  def load(option: RangeLoadOptions): Range = js.native
-  def load(option: Expand): Range = js.native
+  def load(options: RangeLoadOptions): Range = js.native
+  def load(propertyNamesAndPaths: Expand): Range = js.native
+  def load(propertyNames: String): Range = js.native
+  def load(propertyNames: js.Array[String]): Range = js.native
   /**
-    *
     * Performs a search with the specified SearchOptions on the scope of the range object. The search results are a collection of range objects.
     *
     * [Api set: WordApi 1.1]
@@ -608,7 +564,6 @@ trait Range extends ClientObject {
   def search(searchText: String, searchOptions: SearchOptions): RangeCollection = js.native
   def search(searchText: String, searchOptions: IgnorePunct): RangeCollection = js.native
   /**
-    *
     * Selects and navigates the Word UI to the range.
     *
     * [Api set: WordApi 1.1]
@@ -639,7 +594,6 @@ trait Range extends ClientObject {
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Range): Unit = js.native
   /**
-    *
     * Splits the range into child ranges by using delimiters.
     *
     * [Api set: WordApi 1.3]
@@ -664,11 +618,11 @@ trait Range extends ClientObject {
     */
   def toJSON(): RangeData = js.native
   /**
-    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
     */
   def track(): Range = js.native
   /**
-    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
+    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     */
   def untrack(): Range = js.native
 }

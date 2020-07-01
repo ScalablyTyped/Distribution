@@ -11,7 +11,7 @@ trait UseSortByHooks[D /* <: js.Object */] extends js.Object {
 
 object UseSortByHooks {
   @scala.inline
-  def apply[D](
+  def apply[/* <: js.Object */ D](
     getSortByToggleProps: js.Array[PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps]]
   ): UseSortByHooks[D] = {
     val __obj = js.Dynamic.literal(getSortByToggleProps = getSortByToggleProps.asInstanceOf[js.Any])

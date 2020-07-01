@@ -49,7 +49,6 @@ trait NativeImage_ extends js.Object {
   def isEmpty(): Boolean = js.native
   /**
     * Whether the image is a template image.
-  **Deprecated**
     */
   def isTemplateImage(): Boolean = js.native
   /**
@@ -61,7 +60,6 @@ trait NativeImage_ extends js.Object {
   def resize(options: ResizeOptions): NativeImage_ = js.native
   /**
     * Marks the image as a template image.
-  **Deprecated**
     */
   def setTemplateImage(option: Boolean): Unit = js.native
   /**

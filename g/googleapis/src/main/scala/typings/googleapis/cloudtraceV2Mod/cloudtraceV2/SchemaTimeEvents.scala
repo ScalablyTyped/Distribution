@@ -30,13 +30,13 @@ trait SchemaTimeEvents extends js.Object {
 object SchemaTimeEvents {
   @scala.inline
   def apply(
-    droppedAnnotationsCount: Int | Double = null,
-    droppedMessageEventsCount: Int | Double = null,
+    droppedAnnotationsCount: js.UndefOr[Double] = js.undefined,
+    droppedMessageEventsCount: js.UndefOr[Double] = js.undefined,
     timeEvent: js.Array[SchemaTimeEvent] = null
   ): SchemaTimeEvents = {
     val __obj = js.Dynamic.literal()
-    if (droppedAnnotationsCount != null) __obj.updateDynamic("droppedAnnotationsCount")(droppedAnnotationsCount.asInstanceOf[js.Any])
-    if (droppedMessageEventsCount != null) __obj.updateDynamic("droppedMessageEventsCount")(droppedMessageEventsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(droppedAnnotationsCount)) __obj.updateDynamic("droppedAnnotationsCount")(droppedAnnotationsCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(droppedMessageEventsCount)) __obj.updateDynamic("droppedMessageEventsCount")(droppedMessageEventsCount.get.asInstanceOf[js.Any])
     if (timeEvent != null) __obj.updateDynamic("timeEvent")(timeEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTimeEvents]
   }

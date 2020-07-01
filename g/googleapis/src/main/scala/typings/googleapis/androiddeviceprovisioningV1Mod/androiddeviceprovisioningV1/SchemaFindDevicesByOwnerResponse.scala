@@ -29,12 +29,12 @@ object SchemaFindDevicesByOwnerResponse {
   def apply(
     devices: js.Array[SchemaDevice] = null,
     nextPageToken: String = null,
-    totalSize: Int | Double = null
+    totalSize: js.UndefOr[Double] = js.undefined
   ): SchemaFindDevicesByOwnerResponse = {
     val __obj = js.Dynamic.literal()
     if (devices != null) __obj.updateDynamic("devices")(devices.asInstanceOf[js.Any])
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (totalSize != null) __obj.updateDynamic("totalSize")(totalSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalSize)) __obj.updateDynamic("totalSize")(totalSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFindDevicesByOwnerResponse]
   }
 }

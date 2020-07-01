@@ -95,6 +95,7 @@ import typings.babelTypes.babelTypesStrings.GreaterthansignGreaterthansignGreate
 import typings.babelTypes.babelTypesStrings.Identifier
 import typings.babelTypes.babelTypesStrings.IfStatement
 import typings.babelTypes.babelTypesStrings.Import
+import typings.babelTypes.babelTypesStrings.ImportAttribute
 import typings.babelTypes.babelTypesStrings.ImportDeclaration
 import typings.babelTypes.babelTypesStrings.ImportDefaultSpecifier
 import typings.babelTypes.babelTypesStrings.ImportNamespaceSpecifier
@@ -785,7 +786,7 @@ object _Node {
     body: BlockStatement_,
     computed: Boolean,
     generator: Boolean,
-    key: js.Any,
+    key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_,
     kind: method | get | set,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     `type`: ObjectMethod,
@@ -897,7 +898,7 @@ object _Node {
   }
   @scala.inline
   def TryStatement_(
-    block: js.Any,
+    block: BlockStatement_,
     `type`: TryStatement,
     end: Double = null.asInstanceOf[Double],
     finalizer: BlockStatement_ = null,
@@ -975,6 +976,22 @@ object _Node {
     __obj.asInstanceOf[_Node]
   }
   @scala.inline
+  def ImportAttribute_(
+    key: Identifier_,
+    `type`: ImportAttribute,
+    value: StringLiteral_,
+    end: Double = null.asInstanceOf[Double],
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    start: Double = null.asInstanceOf[Double],
+    trailingComments: js.Array[Comment] = null
+  ): _Node = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[_Node]
+  }
+  @scala.inline
   def DeclaredPredicate_(
     `type`: DeclaredPredicate,
     value: Flow,
@@ -1025,7 +1042,7 @@ object _Node {
   }
   @scala.inline
   def BinaryExpression_(
-    left: Expression,
+    left: Expression | PrivateName_,
     operator: Plussign | `-_` | Slash | Percentsign | Asterisk | AsteriskAsterisk | Ampersand | Verticalline | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | LessthansignLessthansign | ^  | EqualssignEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | in | instanceof | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign,
     right: Expression,
     `type`: BinaryExpression,
@@ -1092,7 +1109,7 @@ object _Node {
   }
   @scala.inline
   def RegExpLiteral_(
-    flags: js.Any,
+    flags: String,
     pattern: String,
     `type`: RegExpLiteral,
     end: Double = null.asInstanceOf[Double],
@@ -1544,10 +1561,8 @@ object _Node {
     key: PrivateName_,
     kind: get | set | method | constructor,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-    returnType: js.Any,
     static: Boolean,
     `type`: ClassPrivateMethod,
-    typeParameters: js.Any,
     `abstract`: Boolean = null.asInstanceOf[Boolean],
     access: public | `private` | `protected` = null,
     accessibility: public | `private` | `protected` = null,
@@ -1557,17 +1572,19 @@ object _Node {
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
     optional: Boolean = null.asInstanceOf[Boolean],
+    returnType: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ = null,
     start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
+    trailingComments: js.Array[Comment] = null,
+    typeParameters: TypeParameterDeclaration_ | TSTypeParameterDeclaration_ | Noop_ = null
   ): _Node = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any], access = access.asInstanceOf[js.Any], accessibility = accessibility.asInstanceOf[js.Any], decorators = decorators.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], access = access.asInstanceOf[js.Any], accessibility = accessibility.asInstanceOf[js.Any], decorators = decorators.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.updateDynamic("abstract")(`abstract`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Node]
   }
   @scala.inline
   def MetaProperty_(
-    meta: js.Any,
+    meta: Identifier_,
     property: Identifier_,
     `type`: MetaProperty,
     end: Double = null.asInstanceOf[Double],
@@ -1648,7 +1665,7 @@ object _Node {
   def ExportNamedDeclaration_(
     specifiers: js.Array[ExportSpecifier_ | ExportDefaultSpecifier_ | ExportNamespaceSpecifier_],
     `type`: ExportNamedDeclaration,
-    declaration: js.Any = null,
+    declaration: Declaration = null,
     end: Double = null.asInstanceOf[Double],
     exportKind: `type` | value = null,
     innerComments: js.Array[Comment] = null,
@@ -1852,18 +1869,18 @@ object _Node {
   }
   @scala.inline
   def File_(
-    comments: js.Any,
     program: Program_,
-    tokens: js.Any,
     `type`: File,
+    comments: js.Array[CommentBlock | CommentLine] = null,
     end: Double = null.asInstanceOf[Double],
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
     start: Double = null.asInstanceOf[Double],
+    tokens: js.Array[_] = null,
     trailingComments: js.Array[Comment] = null
   ): _Node = {
-    val __obj = js.Dynamic.literal(comments = comments.asInstanceOf[js.Any], program = program.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(program = program.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Node]
   }
@@ -2011,7 +2028,7 @@ object _Node {
     computed: Boolean,
     `object`: Expression,
     optional: Boolean,
-    property: js.Any,
+    property: Expression | Identifier_,
     `type`: OptionalMemberExpression,
     end: Double = null.asInstanceOf[Double],
     innerComments: js.Array[Comment] = null,
@@ -2043,7 +2060,6 @@ object _Node {
   @scala.inline
   def ClassExpression_(
     body: ClassBody_,
-    mixins: js.Any,
     `type`: ClassExpression,
     decorators: js.Array[Decorator_] = null,
     end: Double = null.asInstanceOf[Double],
@@ -2052,13 +2068,14 @@ object _Node {
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
+    mixins: InterfaceExtends_ = null,
     start: Double = null.asInstanceOf[Double],
     superClass: Expression = null,
     superTypeParameters: TypeParameterInstantiation_ | TSTypeParameterInstantiation_ = null,
     trailingComments: js.Array[Comment] = null,
     typeParameters: TypeParameterDeclaration_ | TSTypeParameterDeclaration_ | Noop_ = null
   ): _Node = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], mixins = mixins.asInstanceOf[js.Any], decorators = decorators.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], implements = implements.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], superClass = superClass.asInstanceOf[js.Any], superTypeParameters = superTypeParameters.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], decorators = decorators.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], implements = implements.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], mixins = mixins.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], superClass = superClass.asInstanceOf[js.Any], superTypeParameters = superTypeParameters.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Node]
   }
@@ -2098,7 +2115,7 @@ object _Node {
   def MemberExpression_(
     computed: Boolean,
     `object`: Expression,
-    property: js.Any,
+    property: Expression | Identifier_ | PrivateName_,
     `type`: MemberExpression,
     end: Double = null.asInstanceOf[Double],
     innerComments: js.Array[Comment] = null,
@@ -2149,8 +2166,8 @@ object _Node {
   @scala.inline
   def ObjectProperty_(
     computed: Boolean,
-    key: js.Any,
-    shorthand: js.Any,
+    key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_,
+    shorthand: Boolean,
     `type`: ObjectProperty,
     value: Expression | PatternLike,
     decorators: js.Array[Decorator_] = null,
@@ -2650,8 +2667,8 @@ object _Node {
   }
   @scala.inline
   def BindExpression_(
-    callee: js.Any,
-    `object`: js.Any,
+    callee: Expression,
+    `object`: Expression,
     `type`: BindExpression,
     end: Double = null.asInstanceOf[Double],
     innerComments: js.Array[Comment] = null,
@@ -2754,7 +2771,7 @@ object _Node {
   }
   @scala.inline
   def RecordExpression_(
-    properties: js.Array[ObjectProperty_ | ObjectMethod_ | SpreadElement_],
+    properties: js.Array[ObjectProperty_ | SpreadElement_],
     `type`: RecordExpression,
     end: Double = null.asInstanceOf[Double],
     innerComments: js.Array[Comment] = null,
@@ -3027,7 +3044,7 @@ object _Node {
   }
   @scala.inline
   def TupleExpression_(
-    elements: js.Array[Null | Expression | SpreadElement_],
+    elements: js.Array[Expression | SpreadElement_],
     `type`: TupleExpression,
     end: Double = null.asInstanceOf[Double],
     innerComments: js.Array[Comment] = null,
@@ -3075,7 +3092,7 @@ object _Node {
   }
   @scala.inline
   def YieldExpression_(
-    delegate: js.Any,
+    delegate: Boolean,
     `type`: YieldExpression,
     argument: Expression = null,
     end: Double = null.asInstanceOf[Double],
@@ -3409,7 +3426,7 @@ object _Node {
   }
   @scala.inline
   def Identifier_(
-    name: js.Any,
+    name: String,
     `type`: Identifier,
     decorators: js.Array[Decorator_] = null,
     end: Double = null.asInstanceOf[Double],
@@ -3716,7 +3733,7 @@ object _Node {
   }
   @scala.inline
   def TSLiteralType_(
-    literal: NumericLiteral_ | StringLiteral_ | BooleanLiteral_,
+    literal: NumericLiteral_ | StringLiteral_ | BooleanLiteral_ | BigIntLiteral_,
     `type`: TSLiteralType,
     end: Double = null.asInstanceOf[Double],
     innerComments: js.Array[Comment] = null,
@@ -3946,17 +3963,17 @@ object _Node {
       JSXText_ | JSXExpressionContainer_ | JSXSpreadChild_ | typings.babelTypes.mod.JSXElement_ | JSXFragment_
     ],
     openingElement: JSXOpeningElement_,
-    selfClosing: js.Any,
     `type`: JSXElement,
     closingElement: JSXClosingElement_ = null,
     end: Double = null.asInstanceOf[Double],
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
+    selfClosing: Boolean = null.asInstanceOf[Boolean],
     start: Double = null.asInstanceOf[Double],
     trailingComments: js.Array[Comment] = null
   ): _Node = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], openingElement = openingElement.asInstanceOf[js.Any], selfClosing = selfClosing.asInstanceOf[js.Any], closingElement = closingElement.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], openingElement = openingElement.asInstanceOf[js.Any], closingElement = closingElement.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], selfClosing = selfClosing.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Node]
   }
@@ -4125,25 +4142,25 @@ object _Node {
   }
   @scala.inline
   def ClassDeclaration_(
-    body: js.Any,
-    decorators: js.Any,
-    id: js.Any,
-    implements: js.Any,
-    mixins: js.Any,
-    superClass: js.Any,
-    superTypeParameters: js.Any,
+    body: ClassBody_,
+    id: Identifier_,
     `type`: ClassDeclaration,
-    typeParameters: js.Any,
     `abstract`: Boolean = null.asInstanceOf[Boolean],
     declare: Boolean = null.asInstanceOf[Boolean],
+    decorators: js.Array[Decorator_] = null,
     end: Double = null.asInstanceOf[Double],
+    implements: js.Array[TSExpressionWithTypeArguments_ | ClassImplements_] = null,
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
+    mixins: InterfaceExtends_ = null,
     start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
+    superClass: Expression = null,
+    superTypeParameters: TypeParameterInstantiation_ | TSTypeParameterInstantiation_ = null,
+    trailingComments: js.Array[Comment] = null,
+    typeParameters: TypeParameterDeclaration_ | TSTypeParameterDeclaration_ | Noop_ = null
   ): _Node = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], decorators = decorators.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], implements = implements.asInstanceOf[js.Any], mixins = mixins.asInstanceOf[js.Any], superClass = superClass.asInstanceOf[js.Any], superTypeParameters = superTypeParameters.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any], declare = declare.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], declare = declare.asInstanceOf[js.Any], decorators = decorators.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], implements = implements.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], mixins = mixins.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], superClass = superClass.asInstanceOf[js.Any], superTypeParameters = superTypeParameters.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.updateDynamic("abstract")(`abstract`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Node]

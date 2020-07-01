@@ -16,7 +16,7 @@ trait ActivityActionObject[TContext, TEvent /* <: EventObject */] extends Action
 
 object ActivityActionObject {
   @scala.inline
-  def apply[TContext, TEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     activity: ActivityDefinition[TContext, TEvent],
     `type`: Start | Stop,
     exec: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => js.Any | Unit = null

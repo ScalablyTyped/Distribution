@@ -377,6 +377,36 @@ trait Glue extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteClassifierResponse, Unit]
   ): Request[DeleteClassifierResponse, AWSError] = js.native
   /**
+    * Delete the partition column statistics of a column.
+    */
+  def deleteColumnStatisticsForPartition(): Request[DeleteColumnStatisticsForPartitionResponse, AWSError] = js.native
+  def deleteColumnStatisticsForPartition(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteColumnStatisticsForPartitionResponse, Unit]
+  ): Request[DeleteColumnStatisticsForPartitionResponse, AWSError] = js.native
+  /**
+    * Delete the partition column statistics of a column.
+    */
+  def deleteColumnStatisticsForPartition(params: DeleteColumnStatisticsForPartitionRequest): Request[DeleteColumnStatisticsForPartitionResponse, AWSError] = js.native
+  def deleteColumnStatisticsForPartition(
+    params: DeleteColumnStatisticsForPartitionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteColumnStatisticsForPartitionResponse, Unit]
+  ): Request[DeleteColumnStatisticsForPartitionResponse, AWSError] = js.native
+  /**
+    * Retrieves table statistics of columns.
+    */
+  def deleteColumnStatisticsForTable(): Request[DeleteColumnStatisticsForTableResponse, AWSError] = js.native
+  def deleteColumnStatisticsForTable(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteColumnStatisticsForTableResponse, Unit]
+  ): Request[DeleteColumnStatisticsForTableResponse, AWSError] = js.native
+  /**
+    * Retrieves table statistics of columns.
+    */
+  def deleteColumnStatisticsForTable(params: DeleteColumnStatisticsForTableRequest): Request[DeleteColumnStatisticsForTableResponse, AWSError] = js.native
+  def deleteColumnStatisticsForTable(
+    params: DeleteColumnStatisticsForTableRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteColumnStatisticsForTableResponse, Unit]
+  ): Request[DeleteColumnStatisticsForTableResponse, AWSError] = js.native
+  /**
     * Deletes a connection from the Data Catalog.
     */
   def deleteConnection(): Request[DeleteConnectionResponse, AWSError] = js.native
@@ -597,6 +627,34 @@ trait Glue extends Service {
     params: GetClassifiersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetClassifiersResponse, Unit]
   ): Request[GetClassifiersResponse, AWSError] = js.native
+  /**
+    * Retrieves partition statistics of columns.
+    */
+  def getColumnStatisticsForPartition(): Request[GetColumnStatisticsForPartitionResponse, AWSError] = js.native
+  def getColumnStatisticsForPartition(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetColumnStatisticsForPartitionResponse, Unit]
+  ): Request[GetColumnStatisticsForPartitionResponse, AWSError] = js.native
+  /**
+    * Retrieves partition statistics of columns.
+    */
+  def getColumnStatisticsForPartition(params: GetColumnStatisticsForPartitionRequest): Request[GetColumnStatisticsForPartitionResponse, AWSError] = js.native
+  def getColumnStatisticsForPartition(
+    params: GetColumnStatisticsForPartitionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetColumnStatisticsForPartitionResponse, Unit]
+  ): Request[GetColumnStatisticsForPartitionResponse, AWSError] = js.native
+  /**
+    * Retrieves table statistics of columns.
+    */
+  def getColumnStatisticsForTable(): Request[GetColumnStatisticsForTableResponse, AWSError] = js.native
+  def getColumnStatisticsForTable(callback: js.Function2[/* err */ AWSError, /* data */ GetColumnStatisticsForTableResponse, Unit]): Request[GetColumnStatisticsForTableResponse, AWSError] = js.native
+  /**
+    * Retrieves table statistics of columns.
+    */
+  def getColumnStatisticsForTable(params: GetColumnStatisticsForTableRequest): Request[GetColumnStatisticsForTableResponse, AWSError] = js.native
+  def getColumnStatisticsForTable(
+    params: GetColumnStatisticsForTableRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetColumnStatisticsForTableResponse, Unit]
+  ): Request[GetColumnStatisticsForTableResponse, AWSError] = js.native
   /**
     * Retrieves a connection definition from the Data Catalog.
     */
@@ -1484,6 +1542,36 @@ trait Glue extends Service {
     params: UpdateClassifierRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateClassifierResponse, Unit]
   ): Request[UpdateClassifierResponse, AWSError] = js.native
+  /**
+    * Creates or updates partition statistics of columns.
+    */
+  def updateColumnStatisticsForPartition(): Request[UpdateColumnStatisticsForPartitionResponse, AWSError] = js.native
+  def updateColumnStatisticsForPartition(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateColumnStatisticsForPartitionResponse, Unit]
+  ): Request[UpdateColumnStatisticsForPartitionResponse, AWSError] = js.native
+  /**
+    * Creates or updates partition statistics of columns.
+    */
+  def updateColumnStatisticsForPartition(params: UpdateColumnStatisticsForPartitionRequest): Request[UpdateColumnStatisticsForPartitionResponse, AWSError] = js.native
+  def updateColumnStatisticsForPartition(
+    params: UpdateColumnStatisticsForPartitionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateColumnStatisticsForPartitionResponse, Unit]
+  ): Request[UpdateColumnStatisticsForPartitionResponse, AWSError] = js.native
+  /**
+    * Creates or updates table statistics of columns.
+    */
+  def updateColumnStatisticsForTable(): Request[UpdateColumnStatisticsForTableResponse, AWSError] = js.native
+  def updateColumnStatisticsForTable(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateColumnStatisticsForTableResponse, Unit]
+  ): Request[UpdateColumnStatisticsForTableResponse, AWSError] = js.native
+  /**
+    * Creates or updates table statistics of columns.
+    */
+  def updateColumnStatisticsForTable(params: UpdateColumnStatisticsForTableRequest): Request[UpdateColumnStatisticsForTableResponse, AWSError] = js.native
+  def updateColumnStatisticsForTable(
+    params: UpdateColumnStatisticsForTableRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateColumnStatisticsForTableResponse, Unit]
+  ): Request[UpdateColumnStatisticsForTableResponse, AWSError] = js.native
   /**
     * Updates a connection definition in the Data Catalog.
     */

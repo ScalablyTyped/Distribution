@@ -1,18 +1,21 @@
 package typings.grommet.anon
 
+import typings.grommet.utilsMod.BackgroundType
+import typings.grommet.utilsMod.BorderType
+import typings.grommet.utilsMod.PadType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Background extends js.Object {
-  var background: js.UndefOr[js.Object] = js.undefined
-  var border: js.UndefOr[js.Object] = js.undefined
-  var pad: js.UndefOr[js.Object] = js.undefined
+  var background: js.UndefOr[BackgroundType] = js.undefined
+  var border: js.UndefOr[BorderType] = js.undefined
+  var pad: js.UndefOr[PadType] = js.undefined
 }
 
 object Background {
   @scala.inline
-  def apply(background: js.Object = null, border: js.Object = null, pad: js.Object = null): Background = {
+  def apply(background: BackgroundType = null, border: BorderType = null, pad: PadType = null): Background = {
     val __obj = js.Dynamic.literal()
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])

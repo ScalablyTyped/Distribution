@@ -17,7 +17,7 @@ trait OpacityProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Obj
 
 object OpacityProps {
   @scala.inline
-  def apply[ThemeType](opacity: js.UndefOr[Null | (ResponsiveValue[GlobalsNumber, ThemeType])] = js.undefined): OpacityProps[ThemeType] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](opacity: js.UndefOr[Null | (ResponsiveValue[GlobalsNumber, ThemeType])] = js.undefined): OpacityProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpacityProps[ThemeType]]

@@ -20,8 +20,8 @@ object Route {
     key: String = null,
     locale: String | `false` = null,
     name: String = null,
-    parentKeys: js.Array[String] = null,
     path: String = null,
+    pro_layout_parentKeys: js.Array[String] = null,
     routes: js.Array[Route] = null
   ): Route = {
     val __obj = js.Dynamic.literal()
@@ -32,8 +32,8 @@ object Route {
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parentKeys != null) __obj.updateDynamic("parentKeys")(parentKeys.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (pro_layout_parentKeys != null) __obj.updateDynamic("pro_layout_parentKeys")(pro_layout_parentKeys.asInstanceOf[js.Any])
     if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Route]
   }

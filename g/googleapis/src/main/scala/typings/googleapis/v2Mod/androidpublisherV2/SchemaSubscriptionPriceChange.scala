@@ -31,10 +31,10 @@ trait SchemaSubscriptionPriceChange extends js.Object {
 
 object SchemaSubscriptionPriceChange {
   @scala.inline
-  def apply(newPrice: SchemaPrice = null, state: Int | Double = null): SchemaSubscriptionPriceChange = {
+  def apply(newPrice: SchemaPrice = null, state: js.UndefOr[Double] = js.undefined): SchemaSubscriptionPriceChange = {
     val __obj = js.Dynamic.literal()
     if (newPrice != null) __obj.updateDynamic("newPrice")(newPrice.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (!js.isUndefined(state)) __obj.updateDynamic("state")(state.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSubscriptionPriceChange]
   }
 }

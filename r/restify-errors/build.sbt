@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "restify-errors"
-version := "4.3-dt-20200515Z-73bd64"
+version := "4.3-dt-20200515Z-0a7306"
 scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.9-18cbeb",
-  "org.scalablytyped" %%% "verror" % "1.10-dt-20200515Z-b08061")
+  "org.scalablytyped" %%% "std" % "3.9-c9f1f8",
+  "org.scalablytyped" %%% "verror" % "1.10-dt-20200515Z-cf3ea8")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -35,7 +35,7 @@ trait BlockInstance[T /* <: Record[String, _] */] extends js.Object {
 
 object BlockInstance {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.std.Record[java.lang.String, _] */ T](
     attributes: T,
     clientId: String,
     innerBlocks: js.Array[BlockInstance[StringDictionary[_]]],

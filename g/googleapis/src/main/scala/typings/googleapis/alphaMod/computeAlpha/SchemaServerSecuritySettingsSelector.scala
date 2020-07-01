@@ -23,10 +23,13 @@ trait SchemaServerSecuritySettingsSelector extends js.Object {
 
 object SchemaServerSecuritySettingsSelector {
   @scala.inline
-  def apply(labelMatches: js.Array[SchemaMetadataFilterLabelMatch] = null, port: Int | Double = null): SchemaServerSecuritySettingsSelector = {
+  def apply(
+    labelMatches: js.Array[SchemaMetadataFilterLabelMatch] = null,
+    port: js.UndefOr[Double] = js.undefined
+  ): SchemaServerSecuritySettingsSelector = {
     val __obj = js.Dynamic.literal()
     if (labelMatches != null) __obj.updateDynamic("labelMatches")(labelMatches.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaServerSecuritySettingsSelector]
   }
 }

@@ -11,7 +11,7 @@ trait Value[T /* <: String */] extends js.Object {
 
 object Value {
   @scala.inline
-  def apply[T](`type`: T, value: String): Value[T] = {
+  def apply[/* <: java.lang.String */ T](`type`: T, value: String): Value[T] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value[T]]

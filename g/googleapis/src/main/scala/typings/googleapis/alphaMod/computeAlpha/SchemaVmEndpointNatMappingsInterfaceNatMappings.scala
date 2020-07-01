@@ -51,16 +51,16 @@ object SchemaVmEndpointNatMappingsInterfaceNatMappings {
   def apply(
     drainNatIpPortRanges: js.Array[String] = null,
     natIpPortRanges: js.Array[String] = null,
-    numTotalDrainNatPorts: Int | Double = null,
-    numTotalNatPorts: Int | Double = null,
+    numTotalDrainNatPorts: js.UndefOr[Double] = js.undefined,
+    numTotalNatPorts: js.UndefOr[Double] = js.undefined,
     sourceAliasIpRange: String = null,
     sourceVirtualIp: String = null
   ): SchemaVmEndpointNatMappingsInterfaceNatMappings = {
     val __obj = js.Dynamic.literal()
     if (drainNatIpPortRanges != null) __obj.updateDynamic("drainNatIpPortRanges")(drainNatIpPortRanges.asInstanceOf[js.Any])
     if (natIpPortRanges != null) __obj.updateDynamic("natIpPortRanges")(natIpPortRanges.asInstanceOf[js.Any])
-    if (numTotalDrainNatPorts != null) __obj.updateDynamic("numTotalDrainNatPorts")(numTotalDrainNatPorts.asInstanceOf[js.Any])
-    if (numTotalNatPorts != null) __obj.updateDynamic("numTotalNatPorts")(numTotalNatPorts.asInstanceOf[js.Any])
+    if (!js.isUndefined(numTotalDrainNatPorts)) __obj.updateDynamic("numTotalDrainNatPorts")(numTotalDrainNatPorts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numTotalNatPorts)) __obj.updateDynamic("numTotalNatPorts")(numTotalNatPorts.get.asInstanceOf[js.Any])
     if (sourceAliasIpRange != null) __obj.updateDynamic("sourceAliasIpRange")(sourceAliasIpRange.asInstanceOf[js.Any])
     if (sourceVirtualIp != null) __obj.updateDynamic("sourceVirtualIp")(sourceVirtualIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVmEndpointNatMappingsInterfaceNatMappings]

@@ -2,7 +2,6 @@ package typings.echarts.echarts.EChartOption
 
 import typings.echarts.anon.Arguments
 import typings.echarts.anon.BorderType
-import typings.echarts.anon.ExtraCssText
 import typings.echarts.anon.ItemStyleBorderType
 import typings.echarts.echarts.EChartOption.SeriesCustom.DataObject
 import scala.scalajs.js
@@ -685,7 +684,7 @@ trait SeriesCustom_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
   /**
     * @default
     * "custom"
@@ -774,7 +773,7 @@ object SeriesCustom_ {
     renderItem: Arguments = null,
     seriesLayoutBy: String = null,
     silent: js.UndefOr[Boolean] = js.undefined,
-    tooltip: ExtraCssText = null,
+    tooltip: BaseTooltip = null,
     `type`: String = null,
     xAxisIndex: js.UndefOr[Double] = js.undefined,
     yAxisIndex: js.UndefOr[Double] = js.undefined,

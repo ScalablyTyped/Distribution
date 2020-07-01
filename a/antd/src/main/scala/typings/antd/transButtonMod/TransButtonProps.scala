@@ -74,6 +74,7 @@ import scala.scalajs.js.annotation._
 
 trait TransButtonProps extends HTMLAttributes[HTMLDivElement] {
   var autoFocus: js.UndefOr[Boolean] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.undefined
   var noStyle: js.UndefOr[Boolean] = js.undefined
   @JSName("onClick")
   var onClick_TransButtonProps: js.UndefOr[
@@ -148,6 +149,7 @@ object TransButtonProps {
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String | Double | js.Array[String] = null,
     dir: String = null,
+    disabled: js.UndefOr[Boolean] = js.undefined,
     draggable: js.UndefOr[Booleanish] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
@@ -325,6 +327,7 @@ object TransButtonProps {
     if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.get.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

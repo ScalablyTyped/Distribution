@@ -76,20 +76,20 @@ object SchemaGoogleCloudMlV1HyperparameterSpec {
     enableTrialEarlyStopping: js.UndefOr[Boolean] = js.undefined,
     goal: String = null,
     hyperparameterMetricTag: String = null,
-    maxFailedTrials: Int | Double = null,
-    maxParallelTrials: Int | Double = null,
-    maxTrials: Int | Double = null,
+    maxFailedTrials: js.UndefOr[Double] = js.undefined,
+    maxParallelTrials: js.UndefOr[Double] = js.undefined,
+    maxTrials: js.UndefOr[Double] = js.undefined,
     params: js.Array[SchemaGoogleCloudMlV1ParameterSpec] = null,
     resumePreviousJobId: String = null
   ): SchemaGoogleCloudMlV1HyperparameterSpec = {
     val __obj = js.Dynamic.literal()
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTrialEarlyStopping)) __obj.updateDynamic("enableTrialEarlyStopping")(enableTrialEarlyStopping.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTrialEarlyStopping)) __obj.updateDynamic("enableTrialEarlyStopping")(enableTrialEarlyStopping.get.asInstanceOf[js.Any])
     if (goal != null) __obj.updateDynamic("goal")(goal.asInstanceOf[js.Any])
     if (hyperparameterMetricTag != null) __obj.updateDynamic("hyperparameterMetricTag")(hyperparameterMetricTag.asInstanceOf[js.Any])
-    if (maxFailedTrials != null) __obj.updateDynamic("maxFailedTrials")(maxFailedTrials.asInstanceOf[js.Any])
-    if (maxParallelTrials != null) __obj.updateDynamic("maxParallelTrials")(maxParallelTrials.asInstanceOf[js.Any])
-    if (maxTrials != null) __obj.updateDynamic("maxTrials")(maxTrials.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFailedTrials)) __obj.updateDynamic("maxFailedTrials")(maxFailedTrials.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxParallelTrials)) __obj.updateDynamic("maxParallelTrials")(maxParallelTrials.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTrials)) __obj.updateDynamic("maxTrials")(maxTrials.get.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (resumePreviousJobId != null) __obj.updateDynamic("resumePreviousJobId")(resumePreviousJobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudMlV1HyperparameterSpec]

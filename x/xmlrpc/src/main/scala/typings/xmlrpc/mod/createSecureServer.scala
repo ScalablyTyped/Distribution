@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("xmlrpc", "createSecureServer")
 @js.native
 object createSecureServer extends js.Object {
+  def apply(options: String): Server = js.native
   def apply(options: String, callback: js.Function0[Unit]): Server = js.native
+  def apply(options: TlsOptions): Server = js.native
   def apply(options: TlsOptions, callback: js.Function0[Unit]): Server = js.native
 }
 

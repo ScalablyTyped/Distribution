@@ -1,7 +1,7 @@
 package typings.googleapis.v5Mod.pagespeedonlineV5
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.googleapis.AnonPercentile
+import typings.googleapis.anon.Percentile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait SchemaPagespeedApiLoadingExperienceV5 extends js.Object {
     */
   var id: js.UndefOr[String] = js.native
   var initial_url: js.UndefOr[String] = js.native
-  var metrics: js.UndefOr[StringDictionary[AnonPercentile]] = js.native
+  var metrics: js.UndefOr[StringDictionary[Percentile]] = js.native
   var overall_category: js.UndefOr[String] = js.native
 }
 
@@ -22,7 +22,7 @@ object SchemaPagespeedApiLoadingExperienceV5 {
   def apply(
     id: String = null,
     initial_url: String = null,
-    metrics: StringDictionary[AnonPercentile] = null,
+    metrics: StringDictionary[Percentile] = null,
     overall_category: String = null
   ): SchemaPagespeedApiLoadingExperienceV5 = {
     val __obj = js.Dynamic.literal()

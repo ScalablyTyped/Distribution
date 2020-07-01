@@ -53,7 +53,7 @@ object SchemaEnvironmentConfig {
     dagGcsPrefix: String = null,
     gkeCluster: String = null,
     nodeConfig: SchemaNodeConfig = null,
-    nodeCount: Int | Double = null,
+    nodeCount: js.UndefOr[Double] = js.undefined,
     privateEnvironmentConfig: SchemaPrivateEnvironmentConfig = null,
     softwareConfig: SchemaSoftwareConfig = null
   ): SchemaEnvironmentConfig = {
@@ -62,7 +62,7 @@ object SchemaEnvironmentConfig {
     if (dagGcsPrefix != null) __obj.updateDynamic("dagGcsPrefix")(dagGcsPrefix.asInstanceOf[js.Any])
     if (gkeCluster != null) __obj.updateDynamic("gkeCluster")(gkeCluster.asInstanceOf[js.Any])
     if (nodeConfig != null) __obj.updateDynamic("nodeConfig")(nodeConfig.asInstanceOf[js.Any])
-    if (nodeCount != null) __obj.updateDynamic("nodeCount")(nodeCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeCount)) __obj.updateDynamic("nodeCount")(nodeCount.get.asInstanceOf[js.Any])
     if (privateEnvironmentConfig != null) __obj.updateDynamic("privateEnvironmentConfig")(privateEnvironmentConfig.asInstanceOf[js.Any])
     if (softwareConfig != null) __obj.updateDynamic("softwareConfig")(softwareConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEnvironmentConfig]

@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollographql__graphql-playground-html
 
-Typings are for version 1.6.24
+Typings are for version 1.6.26
 
 ## Library description:
 GraphQL IDE for better development workflows (GraphQL Subscriptions, interactive docs & collaboration).

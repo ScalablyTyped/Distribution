@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetArtifactUrlRequest extends js.Object {
   /**
-    *  Unique Id for a artifact. 
+    *  The unique ID for an artifact. 
     */
   var artifactId: ArtifactId = js.native
 }

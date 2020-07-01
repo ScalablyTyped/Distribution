@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ExtendedAttributeRightHandSideIntegerList extends ExtendedAttributeRightHandSide {
+trait ExtendedAttributeRightHandSideIntegerList extends ExtendedAttributeRightHandSideList {
   var `type`: `integer-list`
   var value: js.Array[ExtendedAttributeRightHandSideInteger]
 }

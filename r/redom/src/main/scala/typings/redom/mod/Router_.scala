@@ -1,6 +1,7 @@
 package typings.redom.mod
 
 import typings.std.HTMLElement
+import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,9 @@ class Router_ protected () extends RedomComponent {
   def this(parent: RedomQuery, Views: RouterDictionary) = this()
   def this(parent: RedomQuery, Views: RouterDictionary, initData: js.Any) = this()
   /* CompleteClass */
-  override var el: HTMLElement = js.native
+  override var el: HTMLElement | SVGElement | RedomComponent = js.native
+  @JSName("el")
+  var el_Router_ : HTMLElement | SVGElement = js.native
   @JSName("update")
   def update_MRouter_(route: String): Unit = js.native
   @JSName("update")

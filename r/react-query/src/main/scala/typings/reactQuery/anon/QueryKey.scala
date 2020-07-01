@@ -18,7 +18,7 @@ trait QueryKey[TKey /* <: AnyQueryKey */, TVariables /* <: AnyVariables */, TRes
 
 object QueryKey {
   @scala.inline
-  def apply[TKey, TVariables, TResult, TMoreVariable](
+  def apply[/* <: typings.reactQuery.mod.AnyQueryKey */ TKey, /* <: typings.reactQuery.mod.AnyVariables */ TVariables, TResult, TMoreVariable](
     queryFn: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _.List.Append<_.List.Concat<TKey, TVariables>, TMoreVariable> */ /* keysAndVariablesAndMore */ js.Any => js.Promise[TResult],
     config: InfiniteQueryOptions[TResult, TMoreVariable] = null,
     queryKey: js.UndefOr[Null | TKey | `false` | (js.Function0[js.UndefOr[TKey | `false` | Null]])] = js.undefined,

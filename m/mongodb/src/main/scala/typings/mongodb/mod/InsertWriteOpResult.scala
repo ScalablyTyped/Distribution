@@ -19,7 +19,7 @@ trait InsertWriteOpResult[TSchema /* <: `2` */] extends js.Object {
 
 object InsertWriteOpResult {
   @scala.inline
-  def apply[TSchema](
+  def apply[/* <: typings.mongodb.anon.`2` */ TSchema](
     connection: js.Any,
     insertedCount: scala.Double,
     insertedIds: NumberDictionary[

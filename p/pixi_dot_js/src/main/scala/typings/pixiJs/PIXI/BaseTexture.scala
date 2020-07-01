@@ -119,6 +119,12 @@ trait BaseTexture extends EventEmitter {
     */
   var mipmap: MIPMAP_MODES = js.native
   /**
+    * Whether its a part of another texture, handled by ArrayResource or CubeResource
+    *
+    * @member {PIXI.BaseTexture} PIXI.BaseTexture#parentTextureArray
+    */
+  var parentTextureArray: BaseTexture = js.native
+  /**
     * Pixel height of the source of this texture
     *
     * @readonly
@@ -187,10 +193,10 @@ trait BaseTexture extends EventEmitter {
   /**
     * Global unique identifier for this BaseTexture
     *
-    * @member {string} PIXI.BaseTexture#uid
+    * @member {number} PIXI.BaseTexture#uid
     * @protected
     */
-  var uid: String = js.native
+  var uid: Double = js.native
   /**
     * Generally speaking means when resource is loaded.
     * @readonly
@@ -210,6 +216,10 @@ trait BaseTexture extends EventEmitter {
     */
   var wrapMode: Double = js.native
   /**
+    * Utility function for BaseTexture|Texture cast
+    */
+  def castToBaseTexture(): Unit = js.native
+  /**
     * Destroys this base texture.
     * The method stops if resource doesn't want this texture to be destroyed.
     * Removes texture from all caches.
@@ -226,9 +236,9 @@ trait BaseTexture extends EventEmitter {
   /**
     * Sets real size of baseTexture, preserves current resolution.
     *
-    * @param {number} realWidth Full rendered width
-    * @param {number} realHeight Full rendered height
-    * @param {number} [resolution] Optionally set resolution
+    * @param {number} realWidth - Full rendered width
+    * @param {number} realHeight - Full rendered height
+    * @param {number} [resolution] - Optionally set resolution
     * @returns {PIXI.BaseTexture} this
     */
   def setRealSize(realWidth: Double, realHeight: Double): BaseTexture = js.native
@@ -236,10 +246,9 @@ trait BaseTexture extends EventEmitter {
   /**
     * Changes resolution
     *
-    * @param {number} [resolution] res
+    * @param {number} resolution - res
     * @returns {PIXI.BaseTexture} this
     */
-  def setResolution(): BaseTexture = js.native
   def setResolution(resolution: Double): BaseTexture = js.native
   /**
     * Sets the resource if it wasn't set. Throws error if resource already present
@@ -251,9 +260,9 @@ trait BaseTexture extends EventEmitter {
   /**
     * Changes w/h/resolution. Texture becomes valid if width and height are greater than zero.
     *
-    * @param {number} width Visual width
-    * @param {number} height Visual height
-    * @param {number} [resolution] Optionally set resolution
+    * @param {number} width - Visual width
+    * @param {number} height - Visual height
+    * @param {number} [resolution] - Optionally set resolution
     * @returns {PIXI.BaseTexture} this
     */
   def setSize(width: Double, height: Double): BaseTexture = js.native

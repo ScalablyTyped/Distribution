@@ -25,7 +25,7 @@ object SchemaDropRowRangeRequest {
   @scala.inline
   def apply(deleteAllDataFromTable: js.UndefOr[Boolean] = js.undefined, rowKeyPrefix: String = null): SchemaDropRowRangeRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deleteAllDataFromTable)) __obj.updateDynamic("deleteAllDataFromTable")(deleteAllDataFromTable.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleteAllDataFromTable)) __obj.updateDynamic("deleteAllDataFromTable")(deleteAllDataFromTable.get.asInstanceOf[js.Any])
     if (rowKeyPrefix != null) __obj.updateDynamic("rowKeyPrefix")(rowKeyPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDropRowRangeRequest]
   }

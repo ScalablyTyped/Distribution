@@ -16,9 +16,8 @@ import typings.firebaseFirestore.persistenceMod.PersistenceTransactionMode
 import typings.firebaseFirestore.persistenceMod.PrimaryStateListener
 import typings.firebaseFirestore.persistenceMod.ReferenceDelegate
 import typings.firebaseFirestore.persistencePromiseMod.PersistencePromise
-import typings.firebaseFirestore.platformMod.Platform
 import typings.firebaseFirestore.remoteDocumentCacheMod.RemoteDocumentCache
-import typings.firebaseFirestore.serializerMod.JsonProtoSerializer
+import typings.firebaseFirestore.remoteSerializerMod.JsonProtoSerializer
 import typings.firebaseFirestore.sharedClientStateMod.ClientId
 import typings.firebaseFirestore.simpleDbMod.SimpleDbStore
 import typings.firebaseFirestore.simpleDbMod.SimpleDbTransaction
@@ -27,6 +26,8 @@ import typings.firebaseFirestore.targetDataMod.TargetData
 import typings.firebaseFirestore.typesMod.ListenSequenceNumber
 import typings.firebaseFirestore.typesMod.TargetId
 import typings.firebaseFirestore.userMod.User
+import typings.firebaseFirestore.utilTypesMod.DocumentLike
+import typings.firebaseFirestore.utilTypesMod.WindowLike
 import typings.std.IDBValidKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -113,14 +114,84 @@ object indexeddbPersistenceMod extends js.Object {
   @js.native
   class IndexedDbPersistence protected () extends Persistence {
     def this(
-      allowTabSynchronization: Boolean,
+      /**
+      * Whether to synchronize the in-memory state of multiple tabs and share
+      * access to local persistence.
+      */
+    allowTabSynchronization: Boolean,
       persistenceKey: String,
       clientId: ClientId,
-      platform: Platform,
       lruParams: LruParams,
       queue: AsyncQueue,
+      window: Null,
+      document: Null,
       serializer: JsonProtoSerializer,
-      sequenceNumberSyncer: SequenceNumberSyncer
+      sequenceNumberSyncer: SequenceNumberSyncer,
+      /**
+      * If set to true, forcefully obtains database access. Existing tabs will
+      * no longer be able to access IndexedDB.
+      */
+    forceOwningTab: Boolean
+    ) = this()
+    def this(
+      /**
+      * Whether to synchronize the in-memory state of multiple tabs and share
+      * access to local persistence.
+      */
+    allowTabSynchronization: Boolean,
+      persistenceKey: String,
+      clientId: ClientId,
+      lruParams: LruParams,
+      queue: AsyncQueue,
+      window: Null,
+      document: DocumentLike,
+      serializer: JsonProtoSerializer,
+      sequenceNumberSyncer: SequenceNumberSyncer,
+      /**
+      * If set to true, forcefully obtains database access. Existing tabs will
+      * no longer be able to access IndexedDB.
+      */
+    forceOwningTab: Boolean
+    ) = this()
+    def this(
+      /**
+      * Whether to synchronize the in-memory state of multiple tabs and share
+      * access to local persistence.
+      */
+    allowTabSynchronization: Boolean,
+      persistenceKey: String,
+      clientId: ClientId,
+      lruParams: LruParams,
+      queue: AsyncQueue,
+      window: WindowLike,
+      document: Null,
+      serializer: JsonProtoSerializer,
+      sequenceNumberSyncer: SequenceNumberSyncer,
+      /**
+      * If set to true, forcefully obtains database access. Existing tabs will
+      * no longer be able to access IndexedDB.
+      */
+    forceOwningTab: Boolean
+    ) = this()
+    def this(
+      /**
+      * Whether to synchronize the in-memory state of multiple tabs and share
+      * access to local persistence.
+      */
+    allowTabSynchronization: Boolean,
+      persistenceKey: String,
+      clientId: ClientId,
+      lruParams: LruParams,
+      queue: AsyncQueue,
+      window: WindowLike,
+      document: DocumentLike,
+      serializer: JsonProtoSerializer,
+      sequenceNumberSyncer: SequenceNumberSyncer,
+      /**
+      * If set to true, forcefully obtains database access. Existing tabs will
+      * no longer be able to access IndexedDB.
+      */
+    forceOwningTab: Boolean
     ) = this()
     var _started: js.Any = js.native
     /**
@@ -128,6 +199,10 @@ object indexeddbPersistenceMod extends js.Object {
       * method does not verify that the client is eligible for this lease.
       */
     var acquireOrExtendPrimaryLease: js.Any = js.native
+    /**
+      * Whether to synchronize the in-memory state of multiple tabs and share
+      * access to local persistence.
+      */
     val allowTabSynchronization: js.Any = js.native
     var attachVisibilityHandler: js.Any = js.native
     /**
@@ -163,6 +238,11 @@ object indexeddbPersistenceMod extends js.Object {
       * provided threshold.
       */
     var filterActiveClients: js.Any = js.native
+    /**
+      * If set to true, forcefully obtains database access. Existing tabs will
+      * no longer be able to access IndexedDB.
+      */
+    val forceOwningTab: js.Any = js.native
     var inForeground: js.Any = js.native
     val indexManager: js.Any = js.native
     /**

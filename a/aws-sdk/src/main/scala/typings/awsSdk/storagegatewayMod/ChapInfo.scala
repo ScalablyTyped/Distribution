@@ -19,7 +19,7 @@ trait ChapInfo extends js.Object {
     */
   var SecretToAuthenticateTarget: js.UndefOr[ChapSecret] = js.native
   /**
-    * The Amazon Resource Name (ARN) of the volume.  Valid Values: 50 to 500 lowercase letters, numbers, periods (.), and hyphens (-).
+    * The Amazon Resource Name (ARN) of the volume. Valid Values: 50 to 500 lowercase letters, numbers, periods (.), and hyphens (-).
     */
   var TargetARN: js.UndefOr[typings.awsSdk.storagegatewayMod.TargetARN] = js.native
 }

@@ -132,14 +132,14 @@ trait SchemaCloudFunction extends js.Object {
 object SchemaCloudFunction {
   @scala.inline
   def apply(
-    availableMemoryMb: Int | Double = null,
+    availableMemoryMb: js.UndefOr[Double] = js.undefined,
     description: String = null,
     entryPoint: String = null,
     environmentVariables: StringDictionary[String] = null,
     eventTrigger: SchemaEventTrigger = null,
     httpsTrigger: SchemaHttpsTrigger = null,
     labels: StringDictionary[String] = null,
-    maxInstances: Int | Double = null,
+    maxInstances: js.UndefOr[Double] = js.undefined,
     name: String = null,
     network: String = null,
     runtime: String = null,
@@ -154,14 +154,14 @@ object SchemaCloudFunction {
     vpcConnector: String = null
   ): SchemaCloudFunction = {
     val __obj = js.Dynamic.literal()
-    if (availableMemoryMb != null) __obj.updateDynamic("availableMemoryMb")(availableMemoryMb.asInstanceOf[js.Any])
+    if (!js.isUndefined(availableMemoryMb)) __obj.updateDynamic("availableMemoryMb")(availableMemoryMb.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (entryPoint != null) __obj.updateDynamic("entryPoint")(entryPoint.asInstanceOf[js.Any])
     if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables.asInstanceOf[js.Any])
     if (eventTrigger != null) __obj.updateDynamic("eventTrigger")(eventTrigger.asInstanceOf[js.Any])
     if (httpsTrigger != null) __obj.updateDynamic("httpsTrigger")(httpsTrigger.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (maxInstances != null) __obj.updateDynamic("maxInstances")(maxInstances.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxInstances)) __obj.updateDynamic("maxInstances")(maxInstances.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
     if (runtime != null) __obj.updateDynamic("runtime")(runtime.asInstanceOf[js.Any])

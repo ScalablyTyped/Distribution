@@ -1457,6 +1457,8 @@ import typings.igniteUi.igniteUiStrings.nullTexts
 import typings.igniteUi.igniteUiStrings.nullValue
 import typings.igniteUi.igniteUiStrings.number
 import typings.igniteUi.igniteUiStrings.odata
+import typings.igniteUi.igniteUiStrings.onAttachedToUI
+import typings.igniteUi.igniteUiStrings.onDetachedFromUI
 import typings.igniteUi.igniteUiStrings.onError
 import typings.igniteUi.igniteUiStrings.onFormDataSubmit
 import typings.igniteUi.igniteUiStrings.onXHRLoad
@@ -7666,7 +7668,7 @@ trait JQuery extends js.Object {
   /**
     * Gets/Sets the character, which is used as decimal separator.
     * Note: this option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option's value should not be equal to the value of [groupSeparator](ui.igNumericEditor#options:groupSeparator) or [negativeSign](ui.igNumericEditor#options:negativeSign) options.
     *
     */
@@ -7674,7 +7676,7 @@ trait JQuery extends js.Object {
   /**
     * /Sets the character, which is used as decimal separator.
     * Note: this option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option's value should not be equal to the value of [groupSeparator](ui.igNumericEditor#options:groupSeparator) or [negativeSign](ui.igNumericEditor#options:negativeSign) options.
     *
     *
@@ -7706,7 +7708,7 @@ trait JQuery extends js.Object {
     */
   def igCurrencyEditor(optionLiteral: option, optionName: dropDownAnimationDuration, optionValue: Double): Unit = js.native
   /**
-    * Gets wheather the drop-down list element is attached to the body of the document, or to the editor container element.
+    * Gets whether the drop-down list element is attached to the body of the document, or to the editor container element.
     * If the option is set to false the editor will attach the drop-down list element to the editor container
     * If the option is set to true the editor will attach its drop-down list to as a child of the body.
     * Note! This option can not be set runtime.
@@ -7714,7 +7716,7 @@ trait JQuery extends js.Object {
     */
   def igCurrencyEditor(optionLiteral: option, optionName: dropDownAttachedToBody): Boolean = js.native
   /**
-    * Wheather the drop-down list element is attached to the body of the document, or to the editor container element.
+    * Whether the drop-down list element is attached to the body of the document, or to the editor container element.
     * If the option is set to false the editor will attach the drop-down list element to the editor container
     * If the option is set to true the editor will attach its drop-down list to as a child of the body.
     * Note! This option can not be set runtime.
@@ -7725,14 +7727,14 @@ trait JQuery extends js.Object {
   def igCurrencyEditor(optionLiteral: option, optionName: dropDownAttachedToBody, optionValue: Boolean): Unit = js.native
   /**
     * Gets the ability to limit the editor to be used only as a dropdown list. When set to true the editor input is not editable.
-    * Note! In case there are no list items - the editor will reamin readonly
+    * Note! In case there are no list items - the editor will remain readonly
     * Note! This option can not be set runtime.
     *
     */
   def igCurrencyEditor(optionLiteral: option, optionName: dropDownOnReadOnly): Boolean = js.native
   /**
     * The ability to limit the editor to be used only as a dropdown list. When set to true the editor input is not editable.
-    * Note! In case there are no list items - the editor will reamin readonly
+    * Note! In case there are no list items - the editor will remain readonly
     * Note! This option can not be set runtime.
     *
     *
@@ -7765,7 +7767,7 @@ trait JQuery extends js.Object {
     * Gets/Sets the character, which is used as separator for groups (like thousands).
     * That option has effect only in display mode(no focus).
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option's value should not be equal to the value of [decimalSeparator](ui.igNumericEditor#options:decimalSeparator) or [negativeSign](ui.igNumericEditor#options:negativeSign) options.
     *
     */
@@ -7774,7 +7776,7 @@ trait JQuery extends js.Object {
     * /Sets the character, which is used as separator for groups (like thousands).
     * That option has effect only in display mode(no focus).
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option's value should not be equal to the value of [decimalSeparator](ui.igNumericEditor#options:decimalSeparator) or [negativeSign](ui.igNumericEditor#options:negativeSign) options.
     *
     *
@@ -7789,7 +7791,7 @@ trait JQuery extends js.Object {
     * That option has effect only in display mode(no focus).
     * Note: The numbers in the array must be positive integers.
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     *
     */
   def igCurrencyEditor(optionLiteral: option, optionName: groups): js.Array[_] = js.native
@@ -7801,7 +7803,7 @@ trait JQuery extends js.Object {
     * That option has effect only in display mode(no focus).
     * Note: The numbers in the array must be positive integers.
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     *
     *
     * @optionValue New value to be set.
@@ -7920,7 +7922,7 @@ trait JQuery extends js.Object {
     * Gets/Sets the maximum number of decimal places supported by the editor.
     * Note: this option has priority over possible regional settings.
     * Note: In case of min decimals value higher than max decimals - max decimals are equaled to min decimals property.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option supports values between 0 and 15, when dataMode is 'double' (default) and values between 0 and 7 in 'float' mode.
     *
     */
@@ -7929,7 +7931,7 @@ trait JQuery extends js.Object {
     * /Sets the maximum number of decimal places supported by the editor.
     * Note: this option has priority over possible regional settings.
     * Note: In case of min decimals value higher than max decimals - max decimals are equaled to min decimals property.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option supports values between 0 and 15, when dataMode is 'double' (default) and values between 0 and 7 in 'float' mode.
     *
     *
@@ -7963,7 +7965,7 @@ trait JQuery extends js.Object {
     * If number of digits in fractional part of number is less than the value of this option, then the "0" characters are used to fill missing digits.
     * Note: This option has priority over possible regional settings.
     * Note: In case of min decimals value higher than max decimals - max decimals are equaled to min decimals property.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option supports values between 0 and 15, when dataMode is 'double' (default) and values between 0 and 7 in 'float' mode.
     *
     */
@@ -7973,7 +7975,7 @@ trait JQuery extends js.Object {
     * If number of digits in fractional part of number is less than the value of this option, then the "0" characters are used to fill missing digits.
     * Note: This option has priority over possible regional settings.
     * Note: In case of min decimals value higher than max decimals - max decimals are equaled to min decimals property.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option supports values between 0 and 15, when dataMode is 'double' (default) and values between 0 and 7 in 'float' mode.
     *
     *
@@ -7995,14 +7997,14 @@ trait JQuery extends js.Object {
   /**
     * Gets/Sets the string, which is used as negative pattern. The "n" flag represents the value of number. The "-" and "()" flags are static part of pattern.
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     *
     */
   def igCurrencyEditor(optionLiteral: option, optionName: negativePattern): String = js.native
   /**
     * /Sets the string, which is used as negative pattern. The "n" flag represents the value of number. The "-" and "()" flags are static part of pattern.
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     *
     *
     * @optionValue New value to be set.
@@ -8011,7 +8013,7 @@ trait JQuery extends js.Object {
   /**
     * Gets/Sets the character, which is used as negative sign.
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option's value should not be equal to the value of [groupSeparator](ui.igNumericEditor#options:groupSeparator) or [decimalSeparator](ui.igNumericEditor#options:decimalSeparator) options.
     *
     */
@@ -8019,7 +8021,7 @@ trait JQuery extends js.Object {
   /**
     * /Sets the character, which is used as negative sign.
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option's value should not be equal to the value of [groupSeparator](ui.igNumericEditor#options:groupSeparator) or [decimalSeparator](ui.igNumericEditor#options:decimalSeparator) options.
     *
     *
@@ -8054,26 +8056,26 @@ trait JQuery extends js.Object {
   /**
     * Gets/Sets the string, which is used as positive pattern. The "n" flag represents the value of number.
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     *
     */
   def igCurrencyEditor(optionLiteral: option, optionName: positivePattern): String = js.native
   /**
     * /Sets the string, which is used as positive pattern. The "n" flag represents the value of number.
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     *
     *
     * @optionValue New value to be set.
     */
   def igCurrencyEditor(optionLiteral: option, optionName: positivePattern, optionValue: String): Unit = js.native
   /**
-    * Gets/Sets if the editor should prevent form submition when enter key is pressed.
+    * Gets/Sets if the editor should prevent form submit when enter key is pressed.
     *
     */
   def igCurrencyEditor(optionLiteral: option, optionName: preventSubmitOnEnter): Boolean = js.native
   /**
-    * /Sets if the editor should prevent form submition when enter key is pressed.
+    * /Sets if the editor should prevent form submit when enter key is pressed.
     *
     *
     * @optionValue New value to be set.
@@ -8105,12 +8107,12 @@ trait JQuery extends js.Object {
   def igCurrencyEditor(optionLiteral: option, optionName: regional, optionValue: String): Unit = js.native
   def igCurrencyEditor(optionLiteral: option, optionName: regional, optionValue: js.Object): Unit = js.native
   /**
-    * Gets/Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the opiton is set to false, editor calls clear functionality.
+    * Gets/Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the option is set to false, editor calls clear functionality.
     *
     */
   def igCurrencyEditor(optionLiteral: option, optionName: revertIfNotValid): Boolean = js.native
   /**
-    * /Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the opiton is set to false, editor calls clear functionality.
+    * /Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the option is set to false, editor calls clear functionality.
     *
     *
     * @optionValue New value to be set.
@@ -10616,12 +10618,12 @@ trait JQuery extends js.Object {
     */
   def igDateEditor(optionLiteral: option, optionName: placeHolder, optionValue: String): Unit = js.native
   /**
-    * Gets/Sets if the editor should prevent form submition when enter key is pressed.
+    * Gets/Sets if the editor should prevent form submit when enter key is pressed.
     *
     */
   def igDateEditor(optionLiteral: option, optionName: preventSubmitOnEnter): Boolean = js.native
   /**
-    * /Sets if the editor should prevent form submition when enter key is pressed.
+    * /Sets if the editor should prevent form submit when enter key is pressed.
     *
     *
     * @optionValue New value to be set.
@@ -10653,12 +10655,12 @@ trait JQuery extends js.Object {
   def igDateEditor(optionLiteral: option, optionName: regional, optionValue: String): Unit = js.native
   def igDateEditor(optionLiteral: option, optionName: regional, optionValue: js.Object): Unit = js.native
   /**
-    * Gets/Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the opiton is set to false, editor calls clear functionality.
+    * Gets/Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the option is set to false, editor calls clear functionality.
     *
     */
   def igDateEditor(optionLiteral: option, optionName: revertIfNotValid): Boolean = js.native
   /**
-    * /Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the opiton is set to false, editor calls clear functionality.
+    * /Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the option is set to false, editor calls clear functionality.
     *
     *
     * @optionValue New value to be set.
@@ -10714,11 +10716,11 @@ trait JQuery extends js.Object {
     */
   def igDateEditor(optionLiteral: option, optionName: spinDelta, optionValue: Double): Unit = js.native
   /**
-    * Gets/Sets the ability of the editor to automatically change the hoverd item into the opened dropdown list to its oposide side.
+    * Gets/Sets the ability of the editor to automatically change the hovered item into the opened dropdown list to its opposite side.
     */
   def igDateEditor(optionLiteral: option, optionName: spinWrapAround): Boolean = js.native
   /**
-    * /Sets the ability of the editor to automatically change the hoverd item into the opened dropdown list to its oposide side.
+    * /Sets the ability of the editor to automatically change the hovered item into the opened dropdown list to its opposite side.
     *
     * @optionValue New value to be set.
     */
@@ -11522,12 +11524,12 @@ trait JQuery extends js.Object {
     */
   def igDatePicker(optionLiteral: option, optionName: placeHolder, optionValue: String): Unit = js.native
   /**
-    * Gets/Sets if the editor should prevent form submition when enter key is pressed.
+    * Gets/Sets if the editor should prevent form submit when enter key is pressed.
     *
     */
   def igDatePicker(optionLiteral: option, optionName: preventSubmitOnEnter): Boolean = js.native
   /**
-    * /Sets if the editor should prevent form submition when enter key is pressed.
+    * /Sets if the editor should prevent form submit when enter key is pressed.
     *
     *
     * @optionValue New value to be set.
@@ -11559,12 +11561,12 @@ trait JQuery extends js.Object {
   def igDatePicker(optionLiteral: option, optionName: regional, optionValue: String): Unit = js.native
   def igDatePicker(optionLiteral: option, optionName: regional, optionValue: js.Object): Unit = js.native
   /**
-    * Gets/Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the opiton is set to false, editor calls clear functionality.
+    * Gets/Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the option is set to false, editor calls clear functionality.
     *
     */
   def igDatePicker(optionLiteral: option, optionName: revertIfNotValid): Boolean = js.native
   /**
-    * /Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the opiton is set to false, editor calls clear functionality.
+    * /Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the option is set to false, editor calls clear functionality.
     *
     *
     * @optionValue New value to be set.
@@ -11620,11 +11622,11 @@ trait JQuery extends js.Object {
     */
   def igDatePicker(optionLiteral: option, optionName: spinDelta, optionValue: Double): Unit = js.native
   /**
-    * Gets/Sets the ability of the editor to automatically change the hoverd item into the opened dropdown list to its oposide side.
+    * Gets/Sets the ability of the editor to automatically change the hovered item into the opened dropdown list to its opposite side.
     */
   def igDatePicker(optionLiteral: option, optionName: spinWrapAround): Boolean = js.native
   /**
-    * /Sets the ability of the editor to automatically change the hoverd item into the opened dropdown list to its oposide side.
+    * /Sets the ability of the editor to automatically change the hovered item into the opened dropdown list to its opposite side.
     *
     * @optionValue New value to be set.
     */
@@ -27713,11 +27715,11 @@ trait JQuery extends js.Object {
     */
   def igMaskEditor(optionLiteral: option, optionName: inputName, optionValue: String): Unit = js.native
   /**
-    * Sets the ability to allow values only set into the list items. This validation is done only when the editor is blured, or enter key is pressed
+    * Sets the ability to allow values only set into the list items. This validation is done only when the editor is blurred, or enter key is pressed
     */
   def igMaskEditor(optionLiteral: option, optionName: isLimitedToListValues): Boolean = js.native
   /**
-    * Sets the ability to allow values only set into the list items. This validation is done only when the editor is blured, or enter key is pressed
+    * Sets the ability to allow values only set into the list items. This validation is done only when the editor is blurred, or enter key is pressed
     *
     * @optionValue New value to be set.
     */
@@ -27826,12 +27828,12 @@ trait JQuery extends js.Object {
     */
   def igMaskEditor(optionLiteral: option, optionName: placeHolder, optionValue: String): Unit = js.native
   /**
-    * Gets/Sets if the editor should prevent form submition when enter key is pressed.
+    * Gets/Sets if the editor should prevent form submit when enter key is pressed.
     *
     */
   def igMaskEditor(optionLiteral: option, optionName: preventSubmitOnEnter): Boolean = js.native
   /**
-    * /Sets if the editor should prevent form submition when enter key is pressed.
+    * /Sets if the editor should prevent form submit when enter key is pressed.
     *
     *
     * @optionValue New value to be set.
@@ -27863,12 +27865,12 @@ trait JQuery extends js.Object {
   def igMaskEditor(optionLiteral: option, optionName: regional, optionValue: String): Unit = js.native
   def igMaskEditor(optionLiteral: option, optionName: regional, optionValue: js.Object): Unit = js.native
   /**
-    * Gets/Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the opiton is set to false, editor calls clear functionality.
+    * Gets/Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the option is set to false, editor calls clear functionality.
     *
     */
   def igMaskEditor(optionLiteral: option, optionName: revertIfNotValid): Boolean = js.native
   /**
-    * /Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the opiton is set to false, editor calls clear functionality.
+    * /Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the option is set to false, editor calls clear functionality.
     *
     *
     * @optionValue New value to be set.
@@ -27887,11 +27889,11 @@ trait JQuery extends js.Object {
     */
   def igMaskEditor(optionLiteral: option, optionName: selectionOnFocus, optionValue: String): Unit = js.native
   /**
-    * Gets/Sets the ability of the editor to automatically change the hoverd item into the opened dropdown list to its oposide side.
+    * Gets/Sets the ability of the editor to automatically change the hovered item into the opened dropdown list to its opposite side.
     */
   def igMaskEditor(optionLiteral: option, optionName: spinWrapAround): Boolean = js.native
   /**
-    * /Sets the ability of the editor to automatically change the hoverd item into the opened dropdown list to its oposide side.
+    * /Sets the ability of the editor to automatically change the hovered item into the opened dropdown list to its opposite side.
     *
     * @optionValue New value to be set.
     */
@@ -28495,7 +28497,7 @@ trait JQuery extends js.Object {
   /**
     * Gets/Sets the character, which is used as decimal separator.
     * Note: this option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option's value should not be equal to the value of [groupSeparator](ui.igNumericEditor#options:groupSeparator) or [negativeSign](ui.igNumericEditor#options:negativeSign) options.
     *
     */
@@ -28503,7 +28505,7 @@ trait JQuery extends js.Object {
   /**
     * /Sets the character, which is used as decimal separator.
     * Note: this option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option's value should not be equal to the value of [groupSeparator](ui.igNumericEditor#options:groupSeparator) or [negativeSign](ui.igNumericEditor#options:negativeSign) options.
     *
     *
@@ -28535,7 +28537,7 @@ trait JQuery extends js.Object {
     */
   def igNumericEditor(optionLiteral: option, optionName: dropDownAnimationDuration, optionValue: Double): Unit = js.native
   /**
-    * Gets wheather the drop-down list element is attached to the body of the document, or to the editor container element.
+    * Gets whether the drop-down list element is attached to the body of the document, or to the editor container element.
     * If the option is set to false the editor will attach the drop-down list element to the editor container
     * If the option is set to true the editor will attach its drop-down list to as a child of the body.
     * Note! This option can not be set runtime.
@@ -28543,7 +28545,7 @@ trait JQuery extends js.Object {
     */
   def igNumericEditor(optionLiteral: option, optionName: dropDownAttachedToBody): Boolean = js.native
   /**
-    * Wheather the drop-down list element is attached to the body of the document, or to the editor container element.
+    * Whether the drop-down list element is attached to the body of the document, or to the editor container element.
     * If the option is set to false the editor will attach the drop-down list element to the editor container
     * If the option is set to true the editor will attach its drop-down list to as a child of the body.
     * Note! This option can not be set runtime.
@@ -28614,14 +28616,14 @@ trait JQuery extends js.Object {
   def igNumericEditor(optionLiteral: option, optionName: dropDownListOpening, optionValue: DropDownListOpeningEvent): Unit = js.native
   /**
     * Gets the ability to limit the editor to be used only as a dropdown list. When set to true the editor input is not editable.
-    * Note! In case there are no list items - the editor will reamin readonly
+    * Note! In case there are no list items - the editor will remain readonly
     * Note! This option can not be set runtime.
     *
     */
   def igNumericEditor(optionLiteral: option, optionName: dropDownOnReadOnly): Boolean = js.native
   /**
     * The ability to limit the editor to be used only as a dropdown list. When set to true the editor input is not editable.
-    * Note! In case there are no list items - the editor will reamin readonly
+    * Note! In case there are no list items - the editor will remain readonly
     * Note! This option can not be set runtime.
     *
     *
@@ -28654,7 +28656,7 @@ trait JQuery extends js.Object {
     * Gets/Sets the character, which is used as separator for groups (like thousands).
     * That option has effect only in display mode(no focus).
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option's value should not be equal to the value of [decimalSeparator](ui.igNumericEditor#options:decimalSeparator) or [negativeSign](ui.igNumericEditor#options:negativeSign) options.
     *
     */
@@ -28663,7 +28665,7 @@ trait JQuery extends js.Object {
     * /Sets the character, which is used as separator for groups (like thousands).
     * That option has effect only in display mode(no focus).
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option's value should not be equal to the value of [decimalSeparator](ui.igNumericEditor#options:decimalSeparator) or [negativeSign](ui.igNumericEditor#options:negativeSign) options.
     *
     *
@@ -28678,7 +28680,7 @@ trait JQuery extends js.Object {
     * That option has effect only in display mode(no focus).
     * Note: The numbers in the array must be positive integers.
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     *
     */
   def igNumericEditor(optionLiteral: option, optionName: groups): js.Array[_] = js.native
@@ -28690,7 +28692,7 @@ trait JQuery extends js.Object {
     * That option has effect only in display mode(no focus).
     * Note: The numbers in the array must be positive integers.
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     *
     *
     * @optionValue New value to be set.
@@ -28809,7 +28811,7 @@ trait JQuery extends js.Object {
     * Gets/Sets the maximum number of decimal places supported by the editor.
     * Note: this option has priority over possible regional settings.
     * Note: In case of min decimals value higher than max decimals - max decimals are equaled to min decimals property.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option supports values between 0 and 15, when dataMode is 'double' (default) and values between 0 and 7 in 'float' mode.
     *
     */
@@ -28818,7 +28820,7 @@ trait JQuery extends js.Object {
     * /Sets the maximum number of decimal places supported by the editor.
     * Note: this option has priority over possible regional settings.
     * Note: In case of min decimals value higher than max decimals - max decimals are equaled to min decimals property.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option supports values between 0 and 15, when dataMode is 'double' (default) and values between 0 and 7 in 'float' mode.
     *
     *
@@ -28852,7 +28854,7 @@ trait JQuery extends js.Object {
     * If number of digits in fractional part of number is less than the value of this option, then the "0" characters are used to fill missing digits.
     * Note: This option has priority over possible regional settings.
     * Note: In case of min decimals value higher than max decimals - max decimals are equaled to min decimals property.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option supports values between 0 and 15, when dataMode is 'double' (default) and values between 0 and 7 in 'float' mode.
     *
     */
@@ -28862,7 +28864,7 @@ trait JQuery extends js.Object {
     * If number of digits in fractional part of number is less than the value of this option, then the "0" characters are used to fill missing digits.
     * Note: This option has priority over possible regional settings.
     * Note: In case of min decimals value higher than max decimals - max decimals are equaled to min decimals property.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option supports values between 0 and 15, when dataMode is 'double' (default) and values between 0 and 7 in 'float' mode.
     *
     *
@@ -28884,14 +28886,14 @@ trait JQuery extends js.Object {
   /**
     * Gets/Sets the string, which is used as negative pattern. The "n" flag represents the value of number. The "-" and "()" flags are static part of pattern.
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     *
     */
   def igNumericEditor(optionLiteral: option, optionName: negativePattern): String = js.native
   /**
     * /Sets the string, which is used as negative pattern. The "n" flag represents the value of number. The "-" and "()" flags are static part of pattern.
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     *
     *
     * @optionValue New value to be set.
@@ -28900,7 +28902,7 @@ trait JQuery extends js.Object {
   /**
     * Gets/Sets the character, which is used as negative sign.
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option's value should not be equal to the value of [groupSeparator](ui.igNumericEditor#options:groupSeparator) or [decimalSeparator](ui.igNumericEditor#options:decimalSeparator) options.
     *
     */
@@ -28908,7 +28910,7 @@ trait JQuery extends js.Object {
   /**
     * /Sets the character, which is used as negative sign.
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option's value should not be equal to the value of [groupSeparator](ui.igNumericEditor#options:groupSeparator) or [decimalSeparator](ui.igNumericEditor#options:decimalSeparator) options.
     *
     *
@@ -28941,12 +28943,12 @@ trait JQuery extends js.Object {
     */
   def igNumericEditor(optionLiteral: option, optionName: placeHolder, optionValue: String): Unit = js.native
   /**
-    * Gets/Sets if the editor should prevent form submition when enter key is pressed.
+    * Gets/Sets if the editor should prevent form submit when enter key is pressed.
     *
     */
   def igNumericEditor(optionLiteral: option, optionName: preventSubmitOnEnter): Boolean = js.native
   /**
-    * /Sets if the editor should prevent form submition when enter key is pressed.
+    * /Sets if the editor should prevent form submit when enter key is pressed.
     *
     *
     * @optionValue New value to be set.
@@ -28978,12 +28980,12 @@ trait JQuery extends js.Object {
   def igNumericEditor(optionLiteral: option, optionName: regional, optionValue: String): Unit = js.native
   def igNumericEditor(optionLiteral: option, optionName: regional, optionValue: js.Object): Unit = js.native
   /**
-    * Gets/Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the opiton is set to false, editor calls clear functionality.
+    * Gets/Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the option is set to false, editor calls clear functionality.
     *
     */
   def igNumericEditor(optionLiteral: option, optionName: revertIfNotValid): Boolean = js.native
   /**
-    * /Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the opiton is set to false, editor calls clear functionality.
+    * /Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the option is set to false, editor calls clear functionality.
     *
     *
     * @optionValue New value to be set.
@@ -29327,7 +29329,7 @@ trait JQuery extends js.Object {
   /**
     * Gets/Sets the character, which is used as decimal separator.
     * Note: this option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option's value should not be equal to the value of [groupSeparator](ui.igNumericEditor#options:groupSeparator) or [negativeSign](ui.igNumericEditor#options:negativeSign) options.
     *
     */
@@ -29335,7 +29337,7 @@ trait JQuery extends js.Object {
   /**
     * /Sets the character, which is used as decimal separator.
     * Note: this option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option's value should not be equal to the value of [groupSeparator](ui.igNumericEditor#options:groupSeparator) or [negativeSign](ui.igNumericEditor#options:negativeSign) options.
     *
     *
@@ -29387,7 +29389,7 @@ trait JQuery extends js.Object {
     */
   def igPercentEditor(optionLiteral: option, optionName: dropDownAnimationDuration, optionValue: Double): Unit = js.native
   /**
-    * Gets wheather the drop-down list element is attached to the body of the document, or to the editor container element.
+    * Gets whether the drop-down list element is attached to the body of the document, or to the editor container element.
     * If the option is set to false the editor will attach the drop-down list element to the editor container
     * If the option is set to true the editor will attach its drop-down list to as a child of the body.
     * Note! This option can not be set runtime.
@@ -29395,7 +29397,7 @@ trait JQuery extends js.Object {
     */
   def igPercentEditor(optionLiteral: option, optionName: dropDownAttachedToBody): Boolean = js.native
   /**
-    * Wheather the drop-down list element is attached to the body of the document, or to the editor container element.
+    * Whether the drop-down list element is attached to the body of the document, or to the editor container element.
     * If the option is set to false the editor will attach the drop-down list element to the editor container
     * If the option is set to true the editor will attach its drop-down list to as a child of the body.
     * Note! This option can not be set runtime.
@@ -29406,14 +29408,14 @@ trait JQuery extends js.Object {
   def igPercentEditor(optionLiteral: option, optionName: dropDownAttachedToBody, optionValue: Boolean): Unit = js.native
   /**
     * Gets the ability to limit the editor to be used only as a dropdown list. When set to true the editor input is not editable.
-    * Note! In case there are no list items - the editor will reamin readonly
+    * Note! In case there are no list items - the editor will remain readonly
     * Note! This option can not be set runtime.
     *
     */
   def igPercentEditor(optionLiteral: option, optionName: dropDownOnReadOnly): Boolean = js.native
   /**
     * The ability to limit the editor to be used only as a dropdown list. When set to true the editor input is not editable.
-    * Note! In case there are no list items - the editor will reamin readonly
+    * Note! In case there are no list items - the editor will remain readonly
     * Note! This option can not be set runtime.
     *
     *
@@ -29446,7 +29448,7 @@ trait JQuery extends js.Object {
     * Gets/Sets the character, which is used as separator for groups (like thousands).
     * That option has effect only in display mode(no focus).
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option's value should not be equal to the value of [decimalSeparator](ui.igNumericEditor#options:decimalSeparator) or [negativeSign](ui.igNumericEditor#options:negativeSign) options.
     *
     */
@@ -29455,7 +29457,7 @@ trait JQuery extends js.Object {
     * /Sets the character, which is used as separator for groups (like thousands).
     * That option has effect only in display mode(no focus).
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option's value should not be equal to the value of [decimalSeparator](ui.igNumericEditor#options:decimalSeparator) or [negativeSign](ui.igNumericEditor#options:negativeSign) options.
     *
     *
@@ -29470,7 +29472,7 @@ trait JQuery extends js.Object {
     * That option has effect only in display mode(no focus).
     * Note: The numbers in the array must be positive integers.
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     *
     */
   def igPercentEditor(optionLiteral: option, optionName: groups): js.Array[_] = js.native
@@ -29482,7 +29484,7 @@ trait JQuery extends js.Object {
     * That option has effect only in display mode(no focus).
     * Note: The numbers in the array must be positive integers.
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     *
     *
     * @optionValue New value to be set.
@@ -29601,7 +29603,7 @@ trait JQuery extends js.Object {
     * Gets/Sets the maximum number of decimal places supported by the editor.
     * Note: this option has priority over possible regional settings.
     * Note: In case of min decimals value higher than max decimals - max decimals are equaled to min decimals property.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option supports values between 0 and 15, when dataMode is 'double' (default) and values between 0 and 7 in 'float' mode.
     *
     */
@@ -29610,7 +29612,7 @@ trait JQuery extends js.Object {
     * /Sets the maximum number of decimal places supported by the editor.
     * Note: this option has priority over possible regional settings.
     * Note: In case of min decimals value higher than max decimals - max decimals are equaled to min decimals property.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option supports values between 0 and 15, when dataMode is 'double' (default) and values between 0 and 7 in 'float' mode.
     *
     *
@@ -29644,7 +29646,7 @@ trait JQuery extends js.Object {
     * If number of digits in fractional part of number is less than the value of this option, then the "0" characters are used to fill missing digits.
     * Note: This option has priority over possible regional settings.
     * Note: In case of min decimals value higher than max decimals - max decimals are equaled to min decimals property.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option supports values between 0 and 15, when dataMode is 'double' (default) and values between 0 and 7 in 'float' mode.
     *
     */
@@ -29654,7 +29656,7 @@ trait JQuery extends js.Object {
     * If number of digits in fractional part of number is less than the value of this option, then the "0" characters are used to fill missing digits.
     * Note: This option has priority over possible regional settings.
     * Note: In case of min decimals value higher than max decimals - max decimals are equaled to min decimals property.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option supports values between 0 and 15, when dataMode is 'double' (default) and values between 0 and 7 in 'float' mode.
     *
     *
@@ -29676,14 +29678,14 @@ trait JQuery extends js.Object {
   /**
     * Gets/Sets the string, which is used as negative pattern. The "n" flag represents the value of number. The "-" and "()" flags are static part of pattern.
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     *
     */
   def igPercentEditor(optionLiteral: option, optionName: negativePattern): String = js.native
   /**
     * /Sets the string, which is used as negative pattern. The "n" flag represents the value of number. The "-" and "()" flags are static part of pattern.
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     *
     *
     * @optionValue New value to be set.
@@ -29692,7 +29694,7 @@ trait JQuery extends js.Object {
   /**
     * Gets/Sets the character, which is used as negative sign.
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option's value should not be equal to the value of [groupSeparator](ui.igNumericEditor#options:groupSeparator) or [decimalSeparator](ui.igNumericEditor#options:decimalSeparator) options.
     *
     */
@@ -29700,7 +29702,7 @@ trait JQuery extends js.Object {
   /**
     * /Sets the character, which is used as negative sign.
     * Note: This option has priority over possible regional settings.
-    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     * Note: This option's value should not be equal to the value of [groupSeparator](ui.igNumericEditor#options:groupSeparator) or [decimalSeparator](ui.igNumericEditor#options:decimalSeparator) options.
     *
     *
@@ -29763,12 +29765,12 @@ trait JQuery extends js.Object {
     */
   def igPercentEditor(optionLiteral: option, optionName: positivePattern, optionValue: String): Unit = js.native
   /**
-    * Gets/Sets if the editor should prevent form submition when enter key is pressed.
+    * Gets/Sets if the editor should prevent form submit when enter key is pressed.
     *
     */
   def igPercentEditor(optionLiteral: option, optionName: preventSubmitOnEnter): Boolean = js.native
   /**
-    * /Sets if the editor should prevent form submition when enter key is pressed.
+    * /Sets if the editor should prevent form submit when enter key is pressed.
     *
     *
     * @optionValue New value to be set.
@@ -29800,12 +29802,12 @@ trait JQuery extends js.Object {
   def igPercentEditor(optionLiteral: option, optionName: regional, optionValue: String): Unit = js.native
   def igPercentEditor(optionLiteral: option, optionName: regional, optionValue: js.Object): Unit = js.native
   /**
-    * Gets/Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the opiton is set to false, editor calls clear functionality.
+    * Gets/Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the option is set to false, editor calls clear functionality.
     *
     */
   def igPercentEditor(optionLiteral: option, optionName: revertIfNotValid): Boolean = js.native
   /**
-    * /Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the opiton is set to false, editor calls clear functionality.
+    * /Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the option is set to false, editor calls clear functionality.
     *
     *
     * @optionValue New value to be set.
@@ -39179,7 +39181,7 @@ trait JQuery extends js.Object {
     */
   def igTextEditor(optionLiteral: option, optionName: dropDownAnimationDuration, optionValue: Double): Unit = js.native
   /**
-    * Gets wheather the drop-down list element is attached to the body of the document, or to the editor container element.
+    * Gets whether the drop-down list element is attached to the body of the document, or to the editor container element.
     * If the option is set to false the editor will attach the drop-down list element to the editor container
     * If the option is set to true the editor will attach its drop-down list to as a child of the body.
     * Note! This option can not be set runtime.
@@ -39187,7 +39189,7 @@ trait JQuery extends js.Object {
     */
   def igTextEditor(optionLiteral: option, optionName: dropDownAttachedToBody): Boolean = js.native
   /**
-    * Wheather the drop-down list element is attached to the body of the document, or to the editor container element.
+    * Whether the drop-down list element is attached to the body of the document, or to the editor container element.
     * If the option is set to false the editor will attach the drop-down list element to the editor container
     * If the option is set to true the editor will attach its drop-down list to as a child of the body.
     * Note! This option can not be set runtime.
@@ -39258,14 +39260,14 @@ trait JQuery extends js.Object {
   def igTextEditor(optionLiteral: option, optionName: dropDownListOpening, optionValue: DropDownListOpeningEvent): Unit = js.native
   /**
     * Gets the ability to limit the editor to be used only as a dropdown list. When set to true the editor input is not editable.
-    * Note! In case there are no list items - the editor will reamin readonly
+    * Note! In case there are no list items - the editor will remain readonly
     * Note! This option can not be set runtime.
     *
     */
   def igTextEditor(optionLiteral: option, optionName: dropDownOnReadOnly): Boolean = js.native
   /**
     * The ability to limit the editor to be used only as a dropdown list. When set to true the editor input is not editable.
-    * Note! In case there are no list items - the editor will reamin readonly
+    * Note! In case there are no list items - the editor will remain readonly
     * Note! This option can not be set runtime.
     *
     *
@@ -39465,13 +39467,13 @@ trait JQuery extends js.Object {
   def igTextEditor(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
   /**
     * Gets/Sets the maximum length of a text which can be entered by the user.
-    * Negative values or 0 disables that behavior. If set at runtime the editor doesn't apply the option to the cuurent value.
+    * Negative values or 0 disables that behavior. If set at runtime the editor doesn't apply the option to the current value.
     *
     */
   def igTextEditor(optionLiteral: option, optionName: maxLength): Double = js.native
   /**
     * /Sets the maximum length of a text which can be entered by the user.
-    * Negative values or 0 disables that behavior. If set at runtime the editor doesn't apply the option to the cuurent value.
+    * Negative values or 0 disables that behavior. If set at runtime the editor doesn't apply the option to the current value.
     *
     *
     * @optionValue New value to be set.
@@ -39553,12 +39555,12 @@ trait JQuery extends js.Object {
     */
   def igTextEditor(optionLiteral: option, optionName: placeHolder, optionValue: String): Unit = js.native
   /**
-    * Gets/Sets if the editor should prevent form submition when enter key is pressed.
+    * Gets/Sets if the editor should prevent form submit when enter key is pressed.
     *
     */
   def igTextEditor(optionLiteral: option, optionName: preventSubmitOnEnter): Boolean = js.native
   /**
-    * /Sets if the editor should prevent form submition when enter key is pressed.
+    * /Sets if the editor should prevent form submit when enter key is pressed.
     *
     *
     * @optionValue New value to be set.
@@ -39610,12 +39612,12 @@ trait JQuery extends js.Object {
     */
   def igTextEditor(optionLiteral: option, optionName: rendering, optionValue: RenderingEvent): Unit = js.native
   /**
-    * Gets/Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the opiton is set to false, editor calls clear functionality.
+    * Gets/Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the option is set to false, editor calls clear functionality.
     *
     */
   def igTextEditor(optionLiteral: option, optionName: revertIfNotValid): Boolean = js.native
   /**
-    * /Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the opiton is set to false, editor calls clear functionality.
+    * /Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the option is set to false, editor calls clear functionality.
     *
     *
     * @optionValue New value to be set.
@@ -40634,7 +40636,7 @@ trait JQuery extends js.Object {
     */
   def igTimePicker(optionLiteral: option, optionName: dropDownAnimationDuration, optionValue: Double): Unit = js.native
   /**
-    * Gets wheather the drop-down list element is attached to the body of the document, or to the timepicker container element.
+    * Gets whether the drop-down list element is attached to the body of the document, or to the timepicker container element.
     * If the option is set to false the timepicker will attach the drop-down list element to the timepicker container
     * If the option is set to true the timepicker will attach its drop-down list to as a child of the body.
     * Note! This option can not be set runtime.
@@ -40642,7 +40644,7 @@ trait JQuery extends js.Object {
     */
   def igTimePicker(optionLiteral: option, optionName: dropDownAttachedToBody): Boolean = js.native
   /**
-    * Wheather the drop-down list element is attached to the body of the document, or to the timepicker container element.
+    * Whether the drop-down list element is attached to the body of the document, or to the timepicker container element.
     * If the option is set to false the timepicker will attach the drop-down list element to the timepicker container
     * If the option is set to true the timepicker will attach its drop-down list to as a child of the body.
     * Note! This option can not be set runtime.
@@ -41015,12 +41017,12 @@ trait JQuery extends js.Object {
     */
   def igTimePicker(optionLiteral: option, optionName: placeHolder, optionValue: String): Unit = js.native
   /**
-    * Gets/Sets if the editor should prevent form submition when enter key is pressed.
+    * Gets/Sets if the editor should prevent form submit when enter key is pressed.
     *
     */
   def igTimePicker(optionLiteral: option, optionName: preventSubmitOnEnter): Boolean = js.native
   /**
-    * /Sets if the editor should prevent form submition when enter key is pressed.
+    * /Sets if the editor should prevent form submit when enter key is pressed.
     *
     *
     * @optionValue New value to be set.
@@ -41052,12 +41054,12 @@ trait JQuery extends js.Object {
   def igTimePicker(optionLiteral: option, optionName: regional, optionValue: String): Unit = js.native
   def igTimePicker(optionLiteral: option, optionName: regional, optionValue: js.Object): Unit = js.native
   /**
-    * Gets/Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the opiton is set to false, editor calls clear functionality.
+    * Gets/Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the option is set to false, editor calls clear functionality.
     *
     */
   def igTimePicker(optionLiteral: option, optionName: revertIfNotValid): Boolean = js.native
   /**
-    * /Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the opiton is set to false, editor calls clear functionality.
+    * /Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the option is set to false, editor calls clear functionality.
     *
     *
     * @optionValue New value to be set.
@@ -50693,6 +50695,10 @@ trait JQuery extends js.Object {
   def igZoomSlider_flush(methodName: flush): Unit = js.native
   @JSName("igZoomSlider")
   def igZoomSlider_notifySizeChanged(methodName: notifySizeChanged): Unit = js.native
+  @JSName("igZoomSlider")
+  def igZoomSlider_onAttachedToUI(methodName: onAttachedToUI): Unit = js.native
+  @JSName("igZoomSlider")
+  def igZoomSlider_onDetachedFromUI(methodName: onDetachedFromUI): Unit = js.native
   @JSName("igZoomSlider")
   def igZoomSlider_option(optionLiteral: option, optionName: String): js.Any = js.native
   @JSName("igZoomSlider")

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the Setting object, for use in "setting.set({ ... })". */
+/** An interface for updating data on the Setting object, for use in `setting.set({ ... })`. */
 trait SettingUpdateData extends js.Object {
   /**
     *

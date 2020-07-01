@@ -11,7 +11,7 @@ trait Get[T /* <: js.Object */, V] extends js.Object {
 
 object Get {
   @scala.inline
-  def apply[T, V](get: T => js.UndefOr[V], has: T => Boolean): Get[T, V] = {
+  def apply[/* <: js.Object */ T, V](get: T => js.UndefOr[V], has: T => Boolean): Get[T, V] = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has))
     __obj.asInstanceOf[Get[T, V]]
   }

@@ -51,16 +51,16 @@ trait SchemaGoogleCloudVideointelligenceV1p2beta1WordInfo extends js.Object {
 object SchemaGoogleCloudVideointelligenceV1p2beta1WordInfo {
   @scala.inline
   def apply(
-    confidence: Int | Double = null,
+    confidence: js.UndefOr[Double] = js.undefined,
     endTime: String = null,
-    speakerTag: Int | Double = null,
+    speakerTag: js.UndefOr[Double] = js.undefined,
     startTime: String = null,
     word: String = null
   ): SchemaGoogleCloudVideointelligenceV1p2beta1WordInfo = {
     val __obj = js.Dynamic.literal()
-    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (speakerTag != null) __obj.updateDynamic("speakerTag")(speakerTag.asInstanceOf[js.Any])
+    if (!js.isUndefined(speakerTag)) __obj.updateDynamic("speakerTag")(speakerTag.get.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     if (word != null) __obj.updateDynamic("word")(word.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1p2beta1WordInfo]

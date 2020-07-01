@@ -14,7 +14,7 @@ trait Tag_[T /* <: TagType */] extends TagMetadata {
 
 object Tag_ {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.ebml.mod.TagType */ T](
     data: Buffer,
     dataSize: Double,
     end: Double,

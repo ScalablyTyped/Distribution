@@ -1,6 +1,6 @@
 package typings.googleapis.pagespeedonlineV4Mod.pagespeedonlineV4
 
-import typings.googleapis.AnonLeft
+import typings.googleapis.anon.Left
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ trait SchemaPagespeedApiImageV4 extends js.Object {
     * Mime type of image data (e.g. &quot;image/jpeg&quot;).
     */
   var mime_type: js.UndefOr[String] = js.native
-  var page_rect: js.UndefOr[AnonLeft] = js.native
+  var page_rect: js.UndefOr[Left] = js.native
   /**
     * Width of screenshot in pixels.
     */
@@ -34,19 +34,19 @@ object SchemaPagespeedApiImageV4 {
   @scala.inline
   def apply(
     data: String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     key: String = null,
     mime_type: String = null,
-    page_rect: AnonLeft = null,
-    width: Int | Double = null
+    page_rect: Left = null,
+    width: js.UndefOr[Double] = js.undefined
   ): SchemaPagespeedApiImageV4 = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (mime_type != null) __obj.updateDynamic("mime_type")(mime_type.asInstanceOf[js.Any])
     if (page_rect != null) __obj.updateDynamic("page_rect")(page_rect.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPagespeedApiImageV4]
   }
 }

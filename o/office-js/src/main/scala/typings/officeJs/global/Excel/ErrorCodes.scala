@@ -25,6 +25,7 @@ object ErrorCodes extends js.Object {
   /* "RangeExceedsLimit" */ val rangeExceedsLimit: typings.officeJs.Excel.ErrorCodes.rangeExceedsLimit with String = js.native
   /* "RequestAborted" */ val requestAborted: typings.officeJs.Excel.ErrorCodes.requestAborted with String = js.native
   /* "UnsupportedOperation" */ val unsupportedOperation: typings.officeJs.Excel.ErrorCodes.unsupportedOperation with String = js.native
+  /* "UnsupportedSheet" */ val unsupportedSheet: typings.officeJs.Excel.ErrorCodes.unsupportedSheet with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.officeJs.Excel.ErrorCodes with String] = js.native
 }

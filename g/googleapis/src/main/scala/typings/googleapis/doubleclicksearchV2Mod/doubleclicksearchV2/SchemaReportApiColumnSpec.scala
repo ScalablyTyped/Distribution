@@ -93,7 +93,7 @@ object SchemaReportApiColumnSpec {
     if (customDimensionName != null) __obj.updateDynamic("customDimensionName")(customDimensionName.asInstanceOf[js.Any])
     if (customMetricName != null) __obj.updateDynamic("customMetricName")(customMetricName.asInstanceOf[js.Any])
     if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupByColumn)) __obj.updateDynamic("groupByColumn")(groupByColumn.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupByColumn)) __obj.updateDynamic("groupByColumn")(groupByColumn.get.asInstanceOf[js.Any])
     if (headerText != null) __obj.updateDynamic("headerText")(headerText.asInstanceOf[js.Any])
     if (platformSource != null) __obj.updateDynamic("platformSource")(platformSource.asInstanceOf[js.Any])
     if (productReportPerspective != null) __obj.updateDynamic("productReportPerspective")(productReportPerspective.asInstanceOf[js.Any])

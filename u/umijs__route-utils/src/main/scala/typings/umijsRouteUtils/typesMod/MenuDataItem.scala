@@ -16,8 +16,8 @@ trait MenuDataItem
   var key: js.UndefOr[String] = js.undefined
   var locale: js.UndefOr[String | `false`] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var parentKeys: js.UndefOr[js.Array[String]] = js.undefined
   var path: js.UndefOr[String] = js.undefined
+  var pro_layout_parentKeys: js.UndefOr[js.Array[String]] = js.undefined
 }
 
 object MenuDataItem {
@@ -31,8 +31,8 @@ object MenuDataItem {
     key: String = null,
     locale: String | `false` = null,
     name: String = null,
-    parentKeys: js.Array[String] = null,
-    path: String = null
+    path: String = null,
+    pro_layout_parentKeys: js.Array[String] = null
   ): MenuDataItem = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
@@ -43,8 +43,8 @@ object MenuDataItem {
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parentKeys != null) __obj.updateDynamic("parentKeys")(parentKeys.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (pro_layout_parentKeys != null) __obj.updateDynamic("pro_layout_parentKeys")(pro_layout_parentKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuDataItem]
   }
 }

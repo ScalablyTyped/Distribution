@@ -79,7 +79,7 @@ object SchemaErrorGroupStats {
     firstSeenTime: String = null,
     group: SchemaErrorGroup = null,
     lastSeenTime: String = null,
-    numAffectedServices: Int | Double = null,
+    numAffectedServices: js.UndefOr[Double] = js.undefined,
     representative: SchemaErrorEvent = null,
     timedCounts: js.Array[SchemaTimedCount] = null
   ): SchemaErrorGroupStats = {
@@ -90,7 +90,7 @@ object SchemaErrorGroupStats {
     if (firstSeenTime != null) __obj.updateDynamic("firstSeenTime")(firstSeenTime.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (lastSeenTime != null) __obj.updateDynamic("lastSeenTime")(lastSeenTime.asInstanceOf[js.Any])
-    if (numAffectedServices != null) __obj.updateDynamic("numAffectedServices")(numAffectedServices.asInstanceOf[js.Any])
+    if (!js.isUndefined(numAffectedServices)) __obj.updateDynamic("numAffectedServices")(numAffectedServices.get.asInstanceOf[js.Any])
     if (representative != null) __obj.updateDynamic("representative")(representative.asInstanceOf[js.Any])
     if (timedCounts != null) __obj.updateDynamic("timedCounts")(timedCounts.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaErrorGroupStats]

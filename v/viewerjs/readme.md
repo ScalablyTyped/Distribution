@@ -1,7 +1,7 @@
 
 # Scala.js typings for viewerjs
 
-Typings are for version 1.5.0
+Typings are for version 1.6.1
 
 ## Library description:
 JavaScript image viewer.

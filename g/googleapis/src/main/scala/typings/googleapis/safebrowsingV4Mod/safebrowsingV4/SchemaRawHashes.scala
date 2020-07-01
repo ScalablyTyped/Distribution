@@ -29,9 +29,9 @@ trait SchemaRawHashes extends js.Object {
 
 object SchemaRawHashes {
   @scala.inline
-  def apply(prefixSize: Int | Double = null, rawHashes: String = null): SchemaRawHashes = {
+  def apply(prefixSize: js.UndefOr[Double] = js.undefined, rawHashes: String = null): SchemaRawHashes = {
     val __obj = js.Dynamic.literal()
-    if (prefixSize != null) __obj.updateDynamic("prefixSize")(prefixSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(prefixSize)) __obj.updateDynamic("prefixSize")(prefixSize.get.asInstanceOf[js.Any])
     if (rawHashes != null) __obj.updateDynamic("rawHashes")(rawHashes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRawHashes]
   }

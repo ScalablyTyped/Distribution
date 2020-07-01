@@ -8,15 +8,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ParseConfig extends js.Object {
+trait ParseConfig[T] extends js.Object {
    // default: undefined
   var beforeFirstChunk: js.UndefOr[js.Function1[/* chunk */ String, String | Unit]] = js.undefined
    // default: undefined
-  var chunk: js.UndefOr[js.Function2[/* results */ ParseResult, /* parser */ Parser, Unit]] = js.undefined
+  var chunk: js.UndefOr[js.Function2[/* results */ ParseResult[T], /* parser */ Parser, Unit]] = js.undefined
    // default: false
   var comments: js.UndefOr[Boolean | String] = js.undefined
    // default: undefined
-  var complete: js.UndefOr[js.Function2[/* results */ ParseResult, /* file */ js.UndefOr[File], Unit]] = js.undefined
+  var complete: js.UndefOr[js.Function2[/* results */ ParseResult[T], /* file */ js.UndefOr[File], Unit]] = js.undefined
   var delimiter: js.UndefOr[String] = js.undefined
    // default: undefined
   var delimitersToGuess: js.UndefOr[js.Array[GuessableDelimiters]] = js.undefined
@@ -48,7 +48,7 @@ trait ParseConfig extends js.Object {
   var skipEmptyLines: js.UndefOr[Boolean | greedy] = js.undefined
    // default: [',', '\t', '|', ';', Papa.RECORD_SEP, Papa.UNIT_SEP]
   // Callbacks
-  var step: js.UndefOr[js.Function2[/* results */ ParseResult, /* parser */ Parser, Unit]] = js.undefined
+  var step: js.UndefOr[js.Function2[/* results */ ParseResult[T], /* parser */ Parser, Unit]] = js.undefined
    // default: undefined
   var transform: js.UndefOr[js.Function2[/* value */ String, /* field */ String | Double, _]] = js.undefined
    // default: undefined
@@ -63,11 +63,11 @@ trait ParseConfig extends js.Object {
 
 object ParseConfig {
   @scala.inline
-  def apply(
+  def apply[T](
     beforeFirstChunk: /* chunk */ String => String | Unit = null,
-    chunk: (/* results */ ParseResult, /* parser */ Parser) => Unit = null,
+    chunk: (/* results */ ParseResult[T], /* parser */ Parser) => Unit = null,
     comments: Boolean | String = null,
-    complete: (/* results */ ParseResult, /* file */ js.UndefOr[File]) => Unit = null,
+    complete: (/* results */ ParseResult[T], /* file */ js.UndefOr[File]) => Unit = null,
     delimiter: String = null,
     delimitersToGuess: js.Array[GuessableDelimiters] = null,
     download: js.UndefOr[Boolean] = js.undefined,
@@ -82,13 +82,13 @@ object ParseConfig {
     preview: js.UndefOr[Double] = js.undefined,
     quoteChar: String = null,
     skipEmptyLines: Boolean | greedy = null,
-    step: (/* results */ ParseResult, /* parser */ Parser) => Unit = null,
+    step: (/* results */ ParseResult[T], /* parser */ Parser) => Unit = null,
     transform: (/* value */ String, /* field */ String | Double) => _ = null,
     transformHeader: /* header */ String => String = null,
     trimHeaders: js.UndefOr[Boolean] = js.undefined,
     withCredentials: js.UndefOr[Boolean] = js.undefined,
     worker: js.UndefOr[Boolean] = js.undefined
-  ): ParseConfig = {
+  ): ParseConfig[T] = {
     val __obj = js.Dynamic.literal()
     if (beforeFirstChunk != null) __obj.updateDynamic("beforeFirstChunk")(js.Any.fromFunction1(beforeFirstChunk))
     if (chunk != null) __obj.updateDynamic("chunk")(js.Any.fromFunction2(chunk))
@@ -114,7 +114,7 @@ object ParseConfig {
     if (!js.isUndefined(trimHeaders)) __obj.updateDynamic("trimHeaders")(trimHeaders.get.asInstanceOf[js.Any])
     if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.get.asInstanceOf[js.Any])
     if (!js.isUndefined(worker)) __obj.updateDynamic("worker")(worker.get.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ParseConfig]
+    __obj.asInstanceOf[ParseConfig[T]]
   }
 }
 

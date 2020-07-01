@@ -37,8 +37,6 @@ class DatePicker protected ()
   var updateValue: js.Any = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MDatePicker(prevProps: IDatePickerProps, prevState: IDatePickerState): Unit = js.native
-  @JSName("componentDidUpdate")
-  def componentDidUpdate_MDatePicker(prevProps: IDatePickerProps, prevState: IDatePickerState, snapshot: js.Object): Unit = js.native
 }
 
 /* static members */

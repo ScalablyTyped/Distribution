@@ -47,21 +47,21 @@ trait SchemaAffineTransform extends js.Object {
 object SchemaAffineTransform {
   @scala.inline
   def apply(
-    scaleX: Int | Double = null,
-    scaleY: Int | Double = null,
-    shearX: Int | Double = null,
-    shearY: Int | Double = null,
-    translateX: Int | Double = null,
-    translateY: Int | Double = null,
+    scaleX: js.UndefOr[Double] = js.undefined,
+    scaleY: js.UndefOr[Double] = js.undefined,
+    shearX: js.UndefOr[Double] = js.undefined,
+    shearY: js.UndefOr[Double] = js.undefined,
+    translateX: js.UndefOr[Double] = js.undefined,
+    translateY: js.UndefOr[Double] = js.undefined,
     unit: String = null
   ): SchemaAffineTransform = {
     val __obj = js.Dynamic.literal()
-    if (scaleX != null) __obj.updateDynamic("scaleX")(scaleX.asInstanceOf[js.Any])
-    if (scaleY != null) __obj.updateDynamic("scaleY")(scaleY.asInstanceOf[js.Any])
-    if (shearX != null) __obj.updateDynamic("shearX")(shearX.asInstanceOf[js.Any])
-    if (shearY != null) __obj.updateDynamic("shearY")(shearY.asInstanceOf[js.Any])
-    if (translateX != null) __obj.updateDynamic("translateX")(translateX.asInstanceOf[js.Any])
-    if (translateY != null) __obj.updateDynamic("translateY")(translateY.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleX)) __obj.updateDynamic("scaleX")(scaleX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleY)) __obj.updateDynamic("scaleY")(scaleY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shearX)) __obj.updateDynamic("shearX")(shearX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shearY)) __obj.updateDynamic("shearY")(shearY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(translateX)) __obj.updateDynamic("translateX")(translateX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(translateY)) __obj.updateDynamic("translateY")(translateY.get.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAffineTransform]
   }

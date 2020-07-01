@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait StyleOptions extends js.Object {
+  var backgroundColor: js.UndefOr[String] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var fontFamily: js.UndefOr[String] = js.undefined
   var fontSize: js.UndefOr[String] = js.undefined
@@ -24,6 +25,7 @@ trait StyleOptions extends js.Object {
 object StyleOptions {
   @scala.inline
   def apply(
+    backgroundColor: String = null,
     color: String = null,
     fontFamily: String = null,
     fontSize: String = null,
@@ -40,6 +42,7 @@ object StyleOptions {
     textTransform: String = null
   ): StyleOptions = {
     val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])

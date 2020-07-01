@@ -1,10 +1,12 @@
 package typings.grommet.anon
 
+import typings.grommet.baseMod.ExtendType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Small extends js.Object {
+  var extend: js.UndefOr[ExtendType] = js.undefined
   var large: js.UndefOr[MaxWidth] = js.undefined
   var medium: js.UndefOr[MaxWidth] = js.undefined
   var small: js.UndefOr[MaxWidth] = js.undefined
@@ -16,6 +18,7 @@ trait Small extends js.Object {
 object Small {
   @scala.inline
   def apply(
+    extend: ExtendType = null,
     large: MaxWidth = null,
     medium: MaxWidth = null,
     small: MaxWidth = null,
@@ -24,6 +27,7 @@ object Small {
     xxlarge: MaxWidth = null
   ): Small = {
     val __obj = js.Dynamic.literal()
+    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (large != null) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
     if (medium != null) __obj.updateDynamic("medium")(medium.asInstanceOf[js.Any])
     if (small != null) __obj.updateDynamic("small")(small.asInstanceOf[js.Any])

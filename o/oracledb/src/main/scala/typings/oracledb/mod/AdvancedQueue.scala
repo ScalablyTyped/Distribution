@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * @since 4.0
   */
 @js.native
-trait AdvancedQueue extends js.Object {
+trait AdvancedQueue[T] extends js.Object {
   /** Options to use when dequeuing messages. Attributes can be set before each queue.deqOne() or queue.deqMany(). */
   var deqOptions: DequeueOptions = js.native
   /** Options to use when enqueuing messages. Attributes can be set before each queue.enqOne() or queue.denqMany(). */
@@ -25,7 +25,7 @@ trait AdvancedQueue extends js.Object {
     * 
     * This is defined only if payloadType has the value oracledb.DB_TYPE_OBJECT.
     */
-  val payloadTypeClass: js.UndefOr[DBObjectClass] = js.native
+  val payloadTypeClass: js.UndefOr[DBObjectClass[T]] = js.native
   /** Either the string “RAW” or the name of the Oracle Database object type identified when the queue was created. */
   val payloadTypeName: String = js.native
   /**
@@ -33,16 +33,18 @@ trait AdvancedQueue extends js.Object {
     * 
     * @param maxMessages Maximum number of messages to dequeue.
     */
-  def deqMany(maxMessages: Double): js.Promise[js.Array[AdvancedQueueMessage]] = js.native
+  def deqMany(maxMessages: Double): js.Promise[js.Array[AdvancedQueueMessage[T]]] = js.native
   def deqMany(
     maxMessages: Double,
-    callback: js.Function2[/* error */ DBError, /* messages */ js.Array[AdvancedQueueMessage], Unit]
+    callback: js.Function2[/* error */ DBError, /* messages */ js.Array[AdvancedQueueMessage[T]], Unit]
   ): Unit = js.native
   /**
     * Dequeues a single message. Depending on the dequeue options, the message may also be returned as undefined if no message is available.
     */
-  def deqOne(): js.Promise[js.UndefOr[AdvancedQueueMessage]] = js.native
-  def deqOne(callback: js.Function2[/* error */ DBError, /* message */ js.UndefOr[AdvancedQueueMessage], Unit]): Unit = js.native
+  def deqOne(): js.Promise[js.UndefOr[AdvancedQueueMessage[T]]] = js.native
+  def deqOne(
+    callback: js.Function2[/* error */ DBError, /* message */ js.UndefOr[AdvancedQueueMessage[T]], Unit]
+  ): Unit = js.native
   /**
     * Enqueues multiple messages.
     * 
@@ -52,14 +54,14 @@ trait AdvancedQueue extends js.Object {
     * 
     * @param messages Messages to enqueue.
     */
-  def enqMany(messages: js.Array[EnqueueMessage]): js.Promise[Unit] = js.native
-  def enqMany(messages: js.Array[EnqueueMessage], callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
+  def enqMany(messages: js.Array[EnqueueMessage[T]]): js.Promise[Unit] = js.native
+  def enqMany(messages: js.Array[EnqueueMessage[T]], callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
   /**
     * Enqueues a single message.
     * 
     * @param message 
     */
-  def enqOne(message: EnqueueMessage): js.Promise[Unit] = js.native
-  def enqOne(message: EnqueueMessage, callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
+  def enqOne(message: EnqueueMessage[T]): js.Promise[Unit] = js.native
+  def enqOne(message: EnqueueMessage[T], callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
 }
 

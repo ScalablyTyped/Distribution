@@ -1,16 +1,45 @@
 package typings.testingLibraryDom
 
 import typings.testingLibraryDom.eventsMod.EventType
+import typings.testingLibraryDom.suggestionsMod.Method
+import typings.testingLibraryDom.suggestionsMod.Variant
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object testingLibraryDomStrings {
   @js.native
+  sealed trait AltText extends Method
+  
+  @js.native
   sealed trait BoundFunctions extends js.Object
   
   @js.native
+  sealed trait DisplayValue extends Method
+  
+  @js.native
+  sealed trait LabelText extends Method
+  
+  @js.native
+  sealed trait PlaceholderText extends Method
+  
+  @js.native
+  sealed trait Role extends Method
+  
+  @js.native
+  sealed trait TestId extends Method
+  
+  @js.native
+  sealed trait Text extends Method
+  
+  @js.native
+  sealed trait Title extends Method
+  
+  @js.native
   sealed trait abort extends EventType
+  
+  @js.native
+  sealed trait alttext_ extends Method
   
   @js.native
   sealed trait animationEnd extends EventType
@@ -58,6 +87,9 @@ object testingLibraryDomStrings {
   sealed trait dblClick extends EventType
   
   @js.native
+  sealed trait displayvalue_ extends Method
+  
+  @js.native
   sealed trait doubleClick extends EventType
   
   @js.native
@@ -100,6 +132,12 @@ object testingLibraryDomStrings {
   sealed trait error extends EventType
   
   @js.native
+  sealed trait find extends Variant
+  
+  @js.native
+  sealed trait findAll extends Variant
+  
+  @js.native
   sealed trait focus extends EventType
   
   @js.native
@@ -107,6 +145,12 @@ object testingLibraryDomStrings {
   
   @js.native
   sealed trait focusOut extends EventType
+  
+  @js.native
+  sealed trait get extends Variant
+  
+  @js.native
+  sealed trait getAll extends Variant
   
   @js.native
   sealed trait gotPointerCapture extends EventType
@@ -125,6 +169,9 @@ object testingLibraryDomStrings {
   
   @js.native
   sealed trait keyUp extends EventType
+  
+  @js.native
+  sealed trait labeltext_ extends Method
   
   @js.native
   sealed trait load extends EventType
@@ -169,6 +216,9 @@ object testingLibraryDomStrings {
   sealed trait pause extends EventType
   
   @js.native
+  sealed trait placeholdertext_ extends Method
+  
+  @js.native
   sealed trait play extends EventType
   
   @js.native
@@ -205,10 +255,19 @@ object testingLibraryDomStrings {
   sealed trait progress extends EventType
   
   @js.native
+  sealed trait query extends Variant
+  
+  @js.native
+  sealed trait queryAll extends Variant
+  
+  @js.native
   sealed trait rateChange extends EventType
   
   @js.native
   sealed trait reset extends EventType
+  
+  @js.native
+  sealed trait role_ extends Method
   
   @js.native
   sealed trait scroll extends EventType
@@ -232,7 +291,16 @@ object testingLibraryDomStrings {
   sealed trait suspend extends EventType
   
   @js.native
+  sealed trait testid_ extends Method
+  
+  @js.native
+  sealed trait text_ extends Method
+  
+  @js.native
   sealed trait timeUpdate extends EventType
+  
+  @js.native
+  sealed trait title_ extends Method
   
   @js.native
   sealed trait touchCancel extends EventType
@@ -259,9 +327,27 @@ object testingLibraryDomStrings {
   sealed trait wheel extends EventType
   
   @scala.inline
+  def AltText: AltText = "AltText".asInstanceOf[AltText]
+  @scala.inline
   def BoundFunctions: BoundFunctions = "BoundFunctions".asInstanceOf[BoundFunctions]
   @scala.inline
+  def DisplayValue: DisplayValue = "DisplayValue".asInstanceOf[DisplayValue]
+  @scala.inline
+  def LabelText: LabelText = "LabelText".asInstanceOf[LabelText]
+  @scala.inline
+  def PlaceholderText: PlaceholderText = "PlaceholderText".asInstanceOf[PlaceholderText]
+  @scala.inline
+  def Role: Role = "Role".asInstanceOf[Role]
+  @scala.inline
+  def TestId: TestId = "TestId".asInstanceOf[TestId]
+  @scala.inline
+  def Text: Text = "Text".asInstanceOf[Text]
+  @scala.inline
+  def Title: Title = "Title".asInstanceOf[Title]
+  @scala.inline
   def abort: abort = "abort".asInstanceOf[abort]
+  @scala.inline
+  def alttext_ : alttext_ = "alttext".asInstanceOf[alttext_]
   @scala.inline
   def animationEnd: animationEnd = "animationEnd".asInstanceOf[animationEnd]
   @scala.inline
@@ -293,6 +379,8 @@ object testingLibraryDomStrings {
   @scala.inline
   def dblClick: dblClick = "dblClick".asInstanceOf[dblClick]
   @scala.inline
+  def displayvalue_ : displayvalue_ = "displayvalue".asInstanceOf[displayvalue_]
+  @scala.inline
   def doubleClick: doubleClick = "doubleClick".asInstanceOf[doubleClick]
   @scala.inline
   def drag: drag = "drag".asInstanceOf[drag]
@@ -321,11 +409,19 @@ object testingLibraryDomStrings {
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
+  def find: find = "find".asInstanceOf[find]
+  @scala.inline
+  def findAll: findAll = "findAll".asInstanceOf[findAll]
+  @scala.inline
   def focus: focus = "focus".asInstanceOf[focus]
   @scala.inline
   def focusIn: focusIn = "focusIn".asInstanceOf[focusIn]
   @scala.inline
   def focusOut: focusOut = "focusOut".asInstanceOf[focusOut]
+  @scala.inline
+  def get: get = "get".asInstanceOf[get]
+  @scala.inline
+  def getAll: getAll = "getAll".asInstanceOf[getAll]
   @scala.inline
   def gotPointerCapture: gotPointerCapture = "gotPointerCapture".asInstanceOf[gotPointerCapture]
   @scala.inline
@@ -338,6 +434,8 @@ object testingLibraryDomStrings {
   def keyPress: keyPress = "keyPress".asInstanceOf[keyPress]
   @scala.inline
   def keyUp: keyUp = "keyUp".asInstanceOf[keyUp]
+  @scala.inline
+  def labeltext_ : labeltext_ = "labeltext".asInstanceOf[labeltext_]
   @scala.inline
   def load: load = "load".asInstanceOf[load]
   @scala.inline
@@ -367,6 +465,8 @@ object testingLibraryDomStrings {
   @scala.inline
   def pause: pause = "pause".asInstanceOf[pause]
   @scala.inline
+  def placeholdertext_ : placeholdertext_ = "placeholdertext".asInstanceOf[placeholdertext_]
+  @scala.inline
   def play: play = "play".asInstanceOf[play]
   @scala.inline
   def playing: playing = "playing".asInstanceOf[playing]
@@ -391,9 +491,15 @@ object testingLibraryDomStrings {
   @scala.inline
   def progress: progress = "progress".asInstanceOf[progress]
   @scala.inline
+  def query: query = "query".asInstanceOf[query]
+  @scala.inline
+  def queryAll: queryAll = "queryAll".asInstanceOf[queryAll]
+  @scala.inline
   def rateChange: rateChange = "rateChange".asInstanceOf[rateChange]
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
+  @scala.inline
+  def role_ : role_ = "role".asInstanceOf[role_]
   @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
   @scala.inline
@@ -409,7 +515,13 @@ object testingLibraryDomStrings {
   @scala.inline
   def suspend: suspend = "suspend".asInstanceOf[suspend]
   @scala.inline
+  def testid_ : testid_ = "testid".asInstanceOf[testid_]
+  @scala.inline
+  def text_ : text_ = "text".asInstanceOf[text_]
+  @scala.inline
   def timeUpdate: timeUpdate = "timeUpdate".asInstanceOf[timeUpdate]
+  @scala.inline
+  def title_ : title_ = "title".asInstanceOf[title_]
   @scala.inline
   def touchCancel: touchCancel = "touchCancel".asInstanceOf[touchCancel]
   @scala.inline

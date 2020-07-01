@@ -10,7 +10,7 @@ trait LineItem extends GraphModel {
     * previously before the product went on sale.
     * If no compareAtPrice is set then this value will be null. An example value: "5.00".
     */
-  var compare_at_price: String | Null
+  var compareAtPrice: String | Null
   /**
     * Variant's weight in grams. If no weight is set then 0 is returned.
     */
@@ -27,7 +27,7 @@ trait LineItem extends GraphModel {
     * The total price for this line item. For instance if the variant costs 1.50 and you have a
     * quantity of 2 then line_price will be 3.00.
     */
-  var line_price: String
+  var linePrice: String
   /**
     * Price of the variant. For example: "5.00".
     */
@@ -35,7 +35,7 @@ trait LineItem extends GraphModel {
   /**
     * ID of variant's product.
     */
-  var product_id: String | Double
+  var productId: String | Double
   /**
     * Count of variants to order.
     */
@@ -47,11 +47,11 @@ trait LineItem extends GraphModel {
   /**
     * ID of line item variant.
     */
-  var variant_id: String | Double
+  var variantId: String | Double
   /**
     * Title of variant.
     */
-  var variant_title: String
+  var variantTitle: String
 }
 
 object LineItem {
@@ -60,18 +60,18 @@ object LineItem {
     grams: Double,
     id: String | Double,
     image: Image,
-    line_price: String,
+    linePrice: String,
     price: String,
-    product_id: String | Double,
+    productId: String | Double,
     quantity: Double,
     title: String,
-    variant_id: String | Double,
-    variant_title: String,
+    variantId: String | Double,
+    variantTitle: String,
     attrs: js.Any = null,
-    compare_at_price: String = null,
+    compareAtPrice: String = null,
     onlineStoreUrl: String = null
   ): LineItem = {
-    val __obj = js.Dynamic.literal(grams = grams.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], line_price = line_price.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], product_id = product_id.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], variant_id = variant_id.asInstanceOf[js.Any], variant_title = variant_title.asInstanceOf[js.Any], compare_at_price = compare_at_price.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(grams = grams.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], linePrice = linePrice.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], variantId = variantId.asInstanceOf[js.Any], variantTitle = variantTitle.asInstanceOf[js.Any], compareAtPrice = compareAtPrice.asInstanceOf[js.Any])
     if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
     if (onlineStoreUrl != null) __obj.updateDynamic("onlineStoreUrl")(onlineStoreUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineItem]

@@ -5,9 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait UrlClassification extends js.Object {
-  /** First party classification flags if the request has been classified. */
+  /** Classification flags if the request has been classified and it is first party. */
   var firstParty: UrlClassificationParty
-  /** Third party classification flags if the request has been classified. */
+  /**
+    * Classification flags if the request has been classified and it or its window hierarchy is third party.
+    */
   var thirdParty: UrlClassificationParty
 }
 

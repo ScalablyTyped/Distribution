@@ -14,7 +14,7 @@ trait `0`[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] extends
 
 object `0` {
   @scala.inline
-  def apply[TBase, TImpl, TArgs](get: (Container, PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]) => TImpl): `0`[TBase, TImpl, TArgs] = {
+  def apply[TBase, /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */ TImpl, /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */ TArgs](get: (Container, PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]) => TImpl): `0`[TBase, TImpl, TArgs] = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
     __obj.asInstanceOf[`0`[TBase, TImpl, TArgs]]
   }

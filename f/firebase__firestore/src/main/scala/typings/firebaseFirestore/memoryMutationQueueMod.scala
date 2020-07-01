@@ -1,6 +1,5 @@
 package typings.firebaseFirestore
 
-import typings.firebaseFirestore.byteStringMod.ByteString
 import typings.firebaseFirestore.documentKeyMod.DocumentKey
 import typings.firebaseFirestore.indexManagerMod.IndexManager
 import typings.firebaseFirestore.mutationBatchMod.MutationBatch
@@ -51,11 +50,6 @@ object memoryMutationQueueMod extends js.Object {
       * form (e.g. "acknowledged" in a routine that acknowledges batches).
       */
     var indexOfExistingBatchId: js.Any = js.native
-    /** The last received stream token from the server, used to acknowledge which
-      * responses the client has processed. Stream tokens are opaque checkpoint
-      * markers whose only real value is their inclusion in the next request.
-      */
-    var lastStreamToken: js.Any = js.native
     /**
       * The set of all mutations that have been sent but not yet been applied to
       * the backend.
@@ -64,11 +58,6 @@ object memoryMutationQueueMod extends js.Object {
     /** Next value to use when assigning sequential IDs to each mutation batch. */
     var nextBatchId: js.Any = js.native
     val referenceDelegate: js.Any = js.native
-    /**
-      * Acknowledges the given batch.
-      */
-    /* CompleteClass */
-    override def acknowledgeBatch(transaction: PersistenceTransaction, batch: MutationBatch, streamToken: ByteString): PersistencePromise[Unit] = js.native
     /**
       * Creates a new mutation batch and adds it to this mutation queue.
       *
@@ -147,9 +136,6 @@ object memoryMutationQueueMod extends js.Object {
       */
     /* CompleteClass */
     override def getHighestUnacknowledgedBatchId(transaction: PersistenceTransaction): PersistencePromise[BatchId] = js.native
-    /** Returns the current stream token for this mutation queue. */
-    /* CompleteClass */
-    override def getLastStreamToken(transaction: PersistenceTransaction): PersistencePromise[ByteString] = js.native
     /**
       * Gets the first unacknowledged mutation batch after the passed in batchId
       * in the mutation queue or null if empty.
@@ -184,9 +170,6 @@ object memoryMutationQueueMod extends js.Object {
       */
     /* CompleteClass */
     override def removeMutationBatch(transaction: PersistenceTransaction, batch: MutationBatch): PersistencePromise[Unit] = js.native
-    /** Sets the stream token for this mutation queue. */
-    /* CompleteClass */
-    override def setLastStreamToken(transaction: PersistenceTransaction, streamToken: ByteString): PersistencePromise[Unit] = js.native
   }
   
 }

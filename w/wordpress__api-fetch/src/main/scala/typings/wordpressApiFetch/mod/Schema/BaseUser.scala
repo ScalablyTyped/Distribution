@@ -28,7 +28,7 @@ trait BaseUser[T /* <: Context */] extends BaseResponse {
 
 object BaseUser {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.wordpressApiFetch.mod.Schema.Context */ T](
     _links: Record[String, js.Array[Dictk]],
     avatar_urls: Record[Double, String],
     capabilities: Record[String, Boolean],

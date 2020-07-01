@@ -67,7 +67,7 @@ object SchemaScanConfig {
     blacklistPatterns: js.Array[String] = null,
     displayName: String = null,
     latestRun: SchemaScanRun = null,
-    maxQps: Int | Double = null,
+    maxQps: js.UndefOr[Double] = js.undefined,
     name: String = null,
     schedule: SchemaSchedule = null,
     startingUrls: js.Array[String] = null,
@@ -79,7 +79,7 @@ object SchemaScanConfig {
     if (blacklistPatterns != null) __obj.updateDynamic("blacklistPatterns")(blacklistPatterns.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (latestRun != null) __obj.updateDynamic("latestRun")(latestRun.asInstanceOf[js.Any])
-    if (maxQps != null) __obj.updateDynamic("maxQps")(maxQps.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxQps)) __obj.updateDynamic("maxQps")(maxQps.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
     if (startingUrls != null) __obj.updateDynamic("startingUrls")(startingUrls.asInstanceOf[js.Any])

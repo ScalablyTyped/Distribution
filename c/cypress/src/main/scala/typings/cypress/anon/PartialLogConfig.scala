@@ -13,7 +13,7 @@ trait PartialLogConfig extends js.Object {
   var $el: js.UndefOr[JQuery[HTMLElement]] = js.undefined
   var consoleProps: js.UndefOr[js.Function0[ObjectLike]] = js.undefined
   var displayName: js.UndefOr[String] = js.undefined
-  var message: js.UndefOr[js.Array[_]] = js.undefined
+  var message: js.UndefOr[js.Any] = js.undefined
   var name: js.UndefOr[String] = js.undefined
 }
 
@@ -23,7 +23,7 @@ object PartialLogConfig {
     $el: JQuery[HTMLElement] = null,
     consoleProps: () => ObjectLike = null,
     displayName: String = null,
-    message: js.Array[_] = null,
+    message: js.Any = null,
     name: String = null
   ): PartialLogConfig = {
     val __obj = js.Dynamic.literal()

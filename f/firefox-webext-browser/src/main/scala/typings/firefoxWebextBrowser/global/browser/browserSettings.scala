@@ -27,6 +27,8 @@ object browserSettings extends js.Object {
     * which has possible values of `mouseup` and `mousedown`.
     */
   val contextMenuShowEvent: Setting = js.native
+  /** This boolean setting controls whether the FTP protocol is enabled. */
+  val ftpProtocolEnabled: Setting = js.native
   /** Returns the value of the overridden home page. Read-only. */
   val homepageOverride: Setting = js.native
   /**
@@ -54,5 +56,12 @@ object browserSettings extends js.Object {
   val useDocumentFonts: Setting = js.native
   /** Disables webAPI notifications. */
   val webNotificationsDisabled: Setting = js.native
+  /** This boolean setting controls whether zoom is applied to the full page or to text only. */
+  val zoomFullPage: Setting = js.native
+  /**
+    * This boolean setting controls whether zoom is applied on a per-site basis or to the current tab only. If
+    * privacy.resistFingerprinting is true, this setting has no effect and zoom is applied to the current tab only.
+    */
+  val zoomSiteSpecific: Setting = js.native
 }
 

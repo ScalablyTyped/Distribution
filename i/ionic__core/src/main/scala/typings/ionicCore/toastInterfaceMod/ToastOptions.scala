@@ -7,7 +7,7 @@ import typings.ionicCore.ionicCoreStrings.middle
 import typings.ionicCore.ionicCoreStrings.top
 import typings.ionicCore.mod.Color
 import typings.ionicCore.mod.Mode
-import typings.ionicCore.typesMod.IonicSafeString
+import typings.ionicCore.sanitizationMod.IonicSafeString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

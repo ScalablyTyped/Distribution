@@ -1,7 +1,7 @@
 package typings.googleapis.v2betaMod.deploymentmanagerV2beta
 
-import typings.googleapis.AnonCode
-import typings.googleapis.AnonErrorsArray
+import typings.googleapis.anon.Code
+import typings.googleapis.anon.ErrorsArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait SchemaResourceUpdate extends js.Object {
     * Output only. If errors are generated during update of the resource, this
     * field will be populated.
     */
-  var error: js.UndefOr[AnonErrorsArray] = js.native
+  var error: js.UndefOr[ErrorsArray] = js.native
   /**
     * Output only. The expanded properties of the resource with reference
     * values expanded. Returned as serialized YAML.
@@ -45,20 +45,20 @@ trait SchemaResourceUpdate extends js.Object {
     * Output only. If warning messages are generated during processing of this
     * resource, this field will be populated.
     */
-  var warnings: js.UndefOr[js.Array[AnonCode]] = js.native
+  var warnings: js.UndefOr[js.Array[Code]] = js.native
 }
 
 object SchemaResourceUpdate {
   @scala.inline
   def apply(
     accessControl: SchemaResourceAccessControl = null,
-    error: AnonErrorsArray = null,
+    error: ErrorsArray = null,
     finalProperties: String = null,
     intent: String = null,
     manifest: String = null,
     properties: String = null,
     state: String = null,
-    warnings: js.Array[AnonCode] = null
+    warnings: js.Array[Code] = null
   ): SchemaResourceUpdate = {
     val __obj = js.Dynamic.literal()
     if (accessControl != null) __obj.updateDynamic("accessControl")(accessControl.asInstanceOf[js.Any])

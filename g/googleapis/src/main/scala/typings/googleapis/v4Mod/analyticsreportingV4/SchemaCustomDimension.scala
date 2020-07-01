@@ -22,9 +22,9 @@ trait SchemaCustomDimension extends js.Object {
 
 object SchemaCustomDimension {
   @scala.inline
-  def apply(index: Int | Double = null, value: String = null): SchemaCustomDimension = {
+  def apply(index: js.UndefOr[Double] = js.undefined, value: String = null): SchemaCustomDimension = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCustomDimension]
   }

@@ -16,6 +16,7 @@ object SelectorMatcherOptions {
     exact: js.UndefOr[Boolean] = js.undefined,
     normalizer: /* text */ String => String = null,
     selector: String = null,
+    suggest: js.UndefOr[Boolean] = js.undefined,
     trim: js.UndefOr[Boolean] = js.undefined
   ): SelectorMatcherOptions = {
     val __obj = js.Dynamic.literal()
@@ -23,6 +24,7 @@ object SelectorMatcherOptions {
     if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact.get.asInstanceOf[js.Any])
     if (normalizer != null) __obj.updateDynamic("normalizer")(js.Any.fromFunction1(normalizer))
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
+    if (!js.isUndefined(suggest)) __obj.updateDynamic("suggest")(suggest.get.asInstanceOf[js.Any])
     if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectorMatcherOptions]
   }

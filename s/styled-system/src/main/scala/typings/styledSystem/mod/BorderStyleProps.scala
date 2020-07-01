@@ -44,7 +44,7 @@ trait BorderStyleProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js
 
 object BorderStyleProps {
   @scala.inline
-  def apply[ThemeType](
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](
     borderBottomStyle: js.UndefOr[Null | (ResponsiveValue[BorderBottomStyleProperty, ThemeType])] = js.undefined,
     borderLeftStyle: js.UndefOr[Null | (ResponsiveValue[BorderLeftStyleProperty, ThemeType])] = js.undefined,
     borderRightStyle: js.UndefOr[Null | (ResponsiveValue[BorderRightStyleProperty, ThemeType])] = js.undefined,

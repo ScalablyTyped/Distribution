@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 object ReducerTableState {
   @scala.inline
-  def apply[D](hiddenColumns: js.Array[IdType[D]] = null): ReducerTableState[D] = {
+  def apply[/* <: js.Object */ D](hiddenColumns: js.Array[IdType[D]] = null): ReducerTableState[D] = {
     val __obj = js.Dynamic.literal()
     if (hiddenColumns != null) __obj.updateDynamic("hiddenColumns")(hiddenColumns.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReducerTableState[D]]

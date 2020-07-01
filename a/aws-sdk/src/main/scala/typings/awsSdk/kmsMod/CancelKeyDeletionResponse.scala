@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CancelKeyDeletionResponse extends js.Object {
   /**
-    * The unique identifier of the master key for which deletion is canceled.
+    * The Amazon Resource Name (key ARN) of the CMK whose deletion is canceled.
     */
   var KeyId: js.UndefOr[KeyIdType] = js.native
 }

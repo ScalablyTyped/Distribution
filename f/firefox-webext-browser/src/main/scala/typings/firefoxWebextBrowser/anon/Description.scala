@@ -1,6 +1,5 @@
 package typings.firefoxWebextBrowser.anon
 
-import typings.firefoxWebextBrowser.browser.manifest.KeyName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,12 +9,12 @@ trait Description extends js.Object {
   var description: js.UndefOr[String] = js.undefined
   /** The name of the command. */
   var name: String
-  var shortcut: js.UndefOr[KeyName] = js.undefined
+  var shortcut: js.UndefOr[String] = js.undefined
 }
 
 object Description {
   @scala.inline
-  def apply(name: String, description: String = null, shortcut: KeyName = null): Description = {
+  def apply(name: String, description: String = null, shortcut: String = null): Description = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (shortcut != null) __obj.updateDynamic("shortcut")(shortcut.asInstanceOf[js.Any])

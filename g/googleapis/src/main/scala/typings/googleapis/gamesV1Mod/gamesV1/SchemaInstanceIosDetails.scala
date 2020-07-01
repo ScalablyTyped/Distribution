@@ -57,10 +57,10 @@ object SchemaInstanceIosDetails {
     if (bundleIdentifier != null) __obj.updateDynamic("bundleIdentifier")(bundleIdentifier.asInstanceOf[js.Any])
     if (itunesAppId != null) __obj.updateDynamic("itunesAppId")(itunesAppId.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferredForIpad)) __obj.updateDynamic("preferredForIpad")(preferredForIpad.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferredForIphone)) __obj.updateDynamic("preferredForIphone")(preferredForIphone.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportIpad)) __obj.updateDynamic("supportIpad")(supportIpad.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportIphone)) __obj.updateDynamic("supportIphone")(supportIphone.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferredForIpad)) __obj.updateDynamic("preferredForIpad")(preferredForIpad.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferredForIphone)) __obj.updateDynamic("preferredForIphone")(preferredForIphone.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportIpad)) __obj.updateDynamic("supportIpad")(supportIpad.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportIphone)) __obj.updateDynamic("supportIphone")(supportIphone.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstanceIosDetails]
   }
 }

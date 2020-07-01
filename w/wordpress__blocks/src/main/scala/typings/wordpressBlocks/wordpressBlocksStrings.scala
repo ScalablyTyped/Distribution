@@ -1039,6 +1039,9 @@ object wordpressBlocksStrings {
     extends _SourceReturnValue[js.Any]
   
   @js.native
+  sealed trait key extends BlockIcon
+  
+  @js.native
   sealed trait `keyboard-hide` extends BlockIcon
   
   @js.native
@@ -1338,6 +1341,9 @@ object wordpressBlocksStrings {
   
   @js.native
   sealed trait propTypes extends BlockIcon
+  
+  @js.native
+  sealed trait props extends BlockIcon
   
   @js.native
   sealed trait q
@@ -1674,7 +1680,7 @@ object wordpressBlocksStrings {
   sealed trait twitter extends BlockIcon
   
   @js.native
-  sealed trait `type` extends js.Object
+  sealed trait `type` extends BlockIcon
   
   @js.native
   sealed trait u
@@ -2396,6 +2402,8 @@ object wordpressBlocksStrings {
   @scala.inline
   def kbd: kbd = "kbd".asInstanceOf[kbd]
   @scala.inline
+  def key: key = "key".asInstanceOf[key]
+  @scala.inline
   def `keyboard-hide`: `keyboard-hide` = "keyboard-hide".asInstanceOf[`keyboard-hide`]
   @scala.inline
   def label: label = "label".asInstanceOf[label]
@@ -2573,6 +2581,8 @@ object wordpressBlocksStrings {
   def progress: progress = "progress".asInstanceOf[progress]
   @scala.inline
   def propTypes: propTypes = "propTypes".asInstanceOf[propTypes]
+  @scala.inline
+  def props: props = "props".asInstanceOf[props]
   @scala.inline
   def q: q = "q".asInstanceOf[q]
   @scala.inline

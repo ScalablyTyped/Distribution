@@ -20,7 +20,7 @@ trait CheckboxChoiceOptions[T /* <: Answers */] extends ListChoiceOptions[T] {
 
 object CheckboxChoiceOptions {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.inquirer.mod.Answers */ T](
     checked: js.UndefOr[Boolean] = js.undefined,
     disabled: DynamicQuestionProperty[Boolean | String, T] = null,
     extra: js.Any = null,

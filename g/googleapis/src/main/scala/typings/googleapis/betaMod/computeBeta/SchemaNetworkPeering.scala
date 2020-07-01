@@ -75,10 +75,10 @@ object SchemaNetworkPeering {
     stateDetails: String = null
   ): SchemaNetworkPeering = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoCreateRoutes)) __obj.updateDynamic("autoCreateRoutes")(autoCreateRoutes.asInstanceOf[js.Any])
-    if (!js.isUndefined(exchangeSubnetRoutes)) __obj.updateDynamic("exchangeSubnetRoutes")(exchangeSubnetRoutes.asInstanceOf[js.Any])
-    if (!js.isUndefined(exportCustomRoutes)) __obj.updateDynamic("exportCustomRoutes")(exportCustomRoutes.asInstanceOf[js.Any])
-    if (!js.isUndefined(importCustomRoutes)) __obj.updateDynamic("importCustomRoutes")(importCustomRoutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCreateRoutes)) __obj.updateDynamic("autoCreateRoutes")(autoCreateRoutes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exchangeSubnetRoutes)) __obj.updateDynamic("exchangeSubnetRoutes")(exchangeSubnetRoutes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exportCustomRoutes)) __obj.updateDynamic("exportCustomRoutes")(exportCustomRoutes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(importCustomRoutes)) __obj.updateDynamic("importCustomRoutes")(importCustomRoutes.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])

@@ -5,10 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Pick<materialize-css.M.Tabs, 'destroy'> */
-@js.native
 trait PickTabsdestroy extends js.Object {
-  @JSName("destroy")
-  var destroy_Original: js.Function0[Unit] = js.native
-  def destroy(): Unit = js.native
+  var destroy: js.UndefOr[js.Any] = js.undefined
+}
+
+object PickTabsdestroy {
+  @scala.inline
+  def apply(destroy: js.Any = null): PickTabsdestroy = {
+    val __obj = js.Dynamic.literal()
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PickTabsdestroy]
+  }
 }
 

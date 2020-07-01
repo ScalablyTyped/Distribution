@@ -23,9 +23,9 @@ trait SchemaImageAnnotationContext extends js.Object {
 
 object SchemaImageAnnotationContext {
   @scala.inline
-  def apply(pageNumber: Int | Double = null, uri: String = null): SchemaImageAnnotationContext = {
+  def apply(pageNumber: js.UndefOr[Double] = js.undefined, uri: String = null): SchemaImageAnnotationContext = {
     val __obj = js.Dynamic.literal()
-    if (pageNumber != null) __obj.updateDynamic("pageNumber")(pageNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageNumber)) __obj.updateDynamic("pageNumber")(pageNumber.get.asInstanceOf[js.Any])
     if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaImageAnnotationContext]
   }

@@ -6,11 +6,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChannelUserevent extends Event {
+  /**
+    * A bridge that is signaled with the user event.
+    */
   var bridge: js.UndefOr[Bridge] = js.undefined
+  /**
+    * A channel that is signaled with the user event.
+    */
   var channel: js.UndefOr[Channel] = js.undefined
+  /**
+    * A endpoint that is signaled with the user event.
+    */
   var endpoint: js.UndefOr[Endpoint] = js.undefined
-  /* Properties */
+  /**
+    * The name of the user event.
+    */
   var eventname: String
+  /**
+    * Custom Userevent data.
+    */
   var userevent: IndexableObject
 }
 

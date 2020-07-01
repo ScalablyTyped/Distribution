@@ -73,18 +73,18 @@ object SchemaInstanceGroupConfig {
     machineTypeUri: String = null,
     managedGroupConfig: SchemaManagedGroupConfig = null,
     minCpuPlatform: String = null,
-    numInstances: Int | Double = null
+    numInstances: js.UndefOr[Double] = js.undefined
   ): SchemaInstanceGroupConfig = {
     val __obj = js.Dynamic.literal()
     if (accelerators != null) __obj.updateDynamic("accelerators")(accelerators.asInstanceOf[js.Any])
     if (diskConfig != null) __obj.updateDynamic("diskConfig")(diskConfig.asInstanceOf[js.Any])
     if (imageUri != null) __obj.updateDynamic("imageUri")(imageUri.asInstanceOf[js.Any])
     if (instanceNames != null) __obj.updateDynamic("instanceNames")(instanceNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPreemptible)) __obj.updateDynamic("isPreemptible")(isPreemptible.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPreemptible)) __obj.updateDynamic("isPreemptible")(isPreemptible.get.asInstanceOf[js.Any])
     if (machineTypeUri != null) __obj.updateDynamic("machineTypeUri")(machineTypeUri.asInstanceOf[js.Any])
     if (managedGroupConfig != null) __obj.updateDynamic("managedGroupConfig")(managedGroupConfig.asInstanceOf[js.Any])
     if (minCpuPlatform != null) __obj.updateDynamic("minCpuPlatform")(minCpuPlatform.asInstanceOf[js.Any])
-    if (numInstances != null) __obj.updateDynamic("numInstances")(numInstances.asInstanceOf[js.Any])
+    if (!js.isUndefined(numInstances)) __obj.updateDynamic("numInstances")(numInstances.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstanceGroupConfig]
   }
 }

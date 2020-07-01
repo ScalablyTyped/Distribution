@@ -7,19 +7,11 @@ import scala.scalajs.js.annotation._
 /**
   * Configures how to poll for an element.
   */
-trait ExpectTimingActions extends js.Object {
+trait ExpectTimingActions extends ExpectDefaultOptions {
   /**
     * delay to pass to the puppeteer element.type API
     */
   var delay: js.UndefOr[Double] = js.undefined
-  /**
-    * An interval at which the pageFunction is executed. Defaults to "raf".
-    */
-  var polling: js.UndefOr[ExpectPolling] = js.undefined
-  /**
-    * Maximum time to wait for in milliseconds. Defaults to 500.
-    */
-  var timeout: js.UndefOr[Double] = js.undefined
 }
 
 object ExpectTimingActions {

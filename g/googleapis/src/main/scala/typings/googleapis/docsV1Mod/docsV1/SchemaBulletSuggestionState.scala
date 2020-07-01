@@ -34,8 +34,8 @@ object SchemaBulletSuggestionState {
     textStyleSuggestionState: SchemaTextStyleSuggestionState = null
   ): SchemaBulletSuggestionState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(listIdSuggested)) __obj.updateDynamic("listIdSuggested")(listIdSuggested.asInstanceOf[js.Any])
-    if (!js.isUndefined(nestingLevelSuggested)) __obj.updateDynamic("nestingLevelSuggested")(nestingLevelSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(listIdSuggested)) __obj.updateDynamic("listIdSuggested")(listIdSuggested.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nestingLevelSuggested)) __obj.updateDynamic("nestingLevelSuggested")(nestingLevelSuggested.get.asInstanceOf[js.Any])
     if (textStyleSuggestionState != null) __obj.updateDynamic("textStyleSuggestionState")(textStyleSuggestionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBulletSuggestionState]
   }

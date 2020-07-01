@@ -17,9 +17,9 @@ trait SchemaDeleteProtectedRangeRequest extends js.Object {
 
 object SchemaDeleteProtectedRangeRequest {
   @scala.inline
-  def apply(protectedRangeId: Int | Double = null): SchemaDeleteProtectedRangeRequest = {
+  def apply(protectedRangeId: js.UndefOr[Double] = js.undefined): SchemaDeleteProtectedRangeRequest = {
     val __obj = js.Dynamic.literal()
-    if (protectedRangeId != null) __obj.updateDynamic("protectedRangeId")(protectedRangeId.asInstanceOf[js.Any])
+    if (!js.isUndefined(protectedRangeId)) __obj.updateDynamic("protectedRangeId")(protectedRangeId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeleteProtectedRangeRequest]
   }
 }

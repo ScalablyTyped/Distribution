@@ -29,7 +29,7 @@ trait IInitOptions[Ext, C /* <: IClient */] extends js.Object {
 
 object IInitOptions {
   @scala.inline
-  def apply[Ext, C](
+  def apply[Ext, /* <: typings.pgPromise.pgSubsetMod.IClient */ C](
     capSQL: js.UndefOr[Boolean] = js.undefined,
     connect: (/* client */ C, /* dc */ js.Any, /* useCount */ Double) => Unit = null,
     disconnect: (/* client */ C, /* dc */ js.Any) => Unit = null,

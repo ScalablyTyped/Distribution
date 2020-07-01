@@ -182,7 +182,7 @@ object ParamsResourceCseSiterestrictList {
     linkSite: String = null,
     lowRange: String = null,
     lr: String = null,
-    num: Int | Double = null,
+    num: js.UndefOr[Double] = js.undefined,
     oauth_token: String = null,
     orTerms: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
@@ -195,7 +195,7 @@ object ParamsResourceCseSiterestrictList {
     siteSearch: String = null,
     siteSearchFilter: String = null,
     sort: String = null,
-    start: Int | Double = null,
+    start: js.UndefOr[Double] = js.undefined,
     userIp: String = null
   ): ParamsResourceCseSiterestrictList = {
     val __obj = js.Dynamic.literal()
@@ -223,10 +223,10 @@ object ParamsResourceCseSiterestrictList {
     if (linkSite != null) __obj.updateDynamic("linkSite")(linkSite.asInstanceOf[js.Any])
     if (lowRange != null) __obj.updateDynamic("lowRange")(lowRange.asInstanceOf[js.Any])
     if (lr != null) __obj.updateDynamic("lr")(lr.asInstanceOf[js.Any])
-    if (num != null) __obj.updateDynamic("num")(num.asInstanceOf[js.Any])
+    if (!js.isUndefined(num)) __obj.updateDynamic("num")(num.get.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (orTerms != null) __obj.updateDynamic("orTerms")(orTerms.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (relatedSite != null) __obj.updateDynamic("relatedSite")(relatedSite.asInstanceOf[js.Any])
@@ -236,7 +236,7 @@ object ParamsResourceCseSiterestrictList {
     if (siteSearch != null) __obj.updateDynamic("siteSearch")(siteSearch.asInstanceOf[js.Any])
     if (siteSearchFilter != null) __obj.updateDynamic("siteSearchFilter")(siteSearchFilter.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceCseSiterestrictList]
   }

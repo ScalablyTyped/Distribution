@@ -41,7 +41,7 @@ trait MultipleOptions[EmittedType /* <: js.Array[_] */] extends Options[EmittedT
 
 object MultipleOptions {
   @scala.inline
-  def apply[EmittedType](
+  def apply[/* <: js.Array[_] */ EmittedType](
     count: Double,
     filter: EmittedType => Boolean = null,
     multiArgs: js.UndefOr[Boolean] = js.undefined,

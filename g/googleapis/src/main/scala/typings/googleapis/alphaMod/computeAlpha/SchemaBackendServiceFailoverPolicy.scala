@@ -41,12 +41,12 @@ object SchemaBackendServiceFailoverPolicy {
   def apply(
     disableConnectionDrainOnFailover: js.UndefOr[Boolean] = js.undefined,
     dropTrafficIfUnhealthy: js.UndefOr[Boolean] = js.undefined,
-    failoverRatio: Int | Double = null
+    failoverRatio: js.UndefOr[Double] = js.undefined
   ): SchemaBackendServiceFailoverPolicy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableConnectionDrainOnFailover)) __obj.updateDynamic("disableConnectionDrainOnFailover")(disableConnectionDrainOnFailover.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropTrafficIfUnhealthy)) __obj.updateDynamic("dropTrafficIfUnhealthy")(dropTrafficIfUnhealthy.asInstanceOf[js.Any])
-    if (failoverRatio != null) __obj.updateDynamic("failoverRatio")(failoverRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableConnectionDrainOnFailover)) __obj.updateDynamic("disableConnectionDrainOnFailover")(disableConnectionDrainOnFailover.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropTrafficIfUnhealthy)) __obj.updateDynamic("dropTrafficIfUnhealthy")(dropTrafficIfUnhealthy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(failoverRatio)) __obj.updateDynamic("failoverRatio")(failoverRatio.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBackendServiceFailoverPolicy]
   }
 }

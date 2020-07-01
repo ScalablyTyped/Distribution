@@ -7,14 +7,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CSSTransformValue")
 @js.native
-class CSSTransformValue protected ()
+trait CSSTransformValue
   extends CSSStyleValue
      with /* index */ NumberDictionary[CSSTransformComponent] {
-  def this(transforms: js.Array[CSSTransformComponent]) = this()
   val is2D: Boolean = js.native
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[CSSTransformComponent]] = js.native
   val length: Double = js.native
   def toMatrix(): DOMMatrix = js.native

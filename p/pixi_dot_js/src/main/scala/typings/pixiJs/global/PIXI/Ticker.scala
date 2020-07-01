@@ -67,7 +67,7 @@ object Ticker extends js.Object {
     */
   var shared: typings.pixiJs.PIXI.Ticker = js.native
   /**
-    * The system ticker instance used by {@link PIXI.interaction.InteractionManager} and by
+    * The system ticker instance used by {@link PIXI.InteractionManager} and by
     * {@link PIXI.BasePrepare} for core timing functionality that shouldn't usually need to be paused,
     * unlike the `shared` ticker which drives visual animations and rendering which may want to be paused.
     *

@@ -78,7 +78,7 @@ object SchemaCalendarResource {
   @scala.inline
   def apply(
     buildingId: String = null,
-    capacity: Int | Double = null,
+    capacity: js.UndefOr[Double] = js.undefined,
     etags: String = null,
     featureInstances: js.Any = null,
     floorName: String = null,
@@ -95,7 +95,7 @@ object SchemaCalendarResource {
   ): SchemaCalendarResource = {
     val __obj = js.Dynamic.literal()
     if (buildingId != null) __obj.updateDynamic("buildingId")(buildingId.asInstanceOf[js.Any])
-    if (capacity != null) __obj.updateDynamic("capacity")(capacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(capacity)) __obj.updateDynamic("capacity")(capacity.get.asInstanceOf[js.Any])
     if (etags != null) __obj.updateDynamic("etags")(etags.asInstanceOf[js.Any])
     if (featureInstances != null) __obj.updateDynamic("featureInstances")(featureInstances.asInstanceOf[js.Any])
     if (floorName != null) __obj.updateDynamic("floorName")(floorName.asInstanceOf[js.Any])

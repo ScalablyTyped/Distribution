@@ -15,7 +15,7 @@ trait PolicyDetails extends js.Object {
     */
   var PolicyType: js.UndefOr[PolicyTypeValues] = js.native
   /**
-    * The resource type.
+    * The resource type. Use VOLUME to create snapshots of individual volumes or use INSTANCE to create multi-volume snapshots from the volumes for an instance.
     */
   var ResourceTypes: js.UndefOr[ResourceTypeValuesList] = js.native
   /**

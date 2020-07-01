@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListAppsResult extends js.Object {
   /**
-    *  List of Amplify Apps. 
+    *  A list of Amplify apps. 
     */
   var apps: Apps = js.native
   /**
-    *  Pagination token. Set to null to start listing Apps from start. If non-null pagination token is returned in a result, then pass its value in here to list more projects. 
+    *  A pagination token. Set to null to start listing apps from start. If non-null, the pagination token is returned in a result. Pass its value in here to list more projects. 
     */
   var nextToken: js.UndefOr[NextToken] = js.native
 }

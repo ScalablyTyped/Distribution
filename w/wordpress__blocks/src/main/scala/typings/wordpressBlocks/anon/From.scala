@@ -19,7 +19,7 @@ trait From[T /* <: Record[String, _] */] extends js.Object {
 
 object From {
   @scala.inline
-  def apply[T](from: js.Array[Transform[T]] = null, to: js.Array[Transform[Record[String, _]]] = null): From[T] = {
+  def apply[/* <: typings.std.Record[java.lang.String, _] */ T](from: js.Array[Transform[T]] = null, to: js.Array[Transform[Record[String, _]]] = null): From[T] = {
     val __obj = js.Dynamic.literal()
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])

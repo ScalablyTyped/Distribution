@@ -1,7 +1,9 @@
 package typings.dropzone.mod
 
+import typings.dropzone.dropzoneStrings.`use-credentials`
 import typings.dropzone.dropzoneStrings.addedfile
 import typings.dropzone.dropzoneStrings.addedfiles
+import typings.dropzone.dropzoneStrings.anonymous
 import typings.dropzone.dropzoneStrings.canceled
 import typings.dropzone.dropzoneStrings.canceledmultiple
 import typings.dropzone.dropzoneStrings.complete
@@ -29,6 +31,7 @@ import typings.dropzone.dropzoneStrings.successmultiple
 import typings.dropzone.dropzoneStrings.thumbnail
 import typings.dropzone.dropzoneStrings.totaluploadprogress
 import typings.dropzone.dropzoneStrings.uploadprogress
+import typings.dropzone.mod.global.HTMLElement
 import typings.std.DragEvent
 import typings.std.Error
 import typings.std.FormData
@@ -40,8 +43,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Dropzone extends js.Object {
   var defaultOptions: DropzoneOptions = js.native
+  var element: HTMLElement = js.native
   var files: js.Array[DropzoneFile] = js.native
+  var listeners: js.Array[DropzoneListener] = js.native
   var options: DropzoneOptions = js.native
+  var previewsContainer: HTMLElement = js.native
+  var version: String = js.native
   def accept(file: DropzoneFile, done: js.Function1[/* error */ js.UndefOr[String | Error], Unit]): Unit = js.native
   def addFile(file: DropzoneFile): Unit = js.native
   def cancelUpload(file: DropzoneFile): Unit = js.native
@@ -72,6 +79,33 @@ trait Dropzone extends js.Object {
   ): js.Any = js.native
   def destroy(): Dropzone = js.native
   def disable(): Unit = js.native
+  def displayExistingFile(mockFile: DropzoneMockFile, imageUrl: String): js.Any = js.native
+  def displayExistingFile(mockFile: DropzoneMockFile, imageUrl: String, callback: js.Function0[Unit]): js.Any = js.native
+  @JSName("displayExistingFile")
+  def displayExistingFile_anonymous(mockFile: DropzoneMockFile, imageUrl: String, callback: js.Function0[Unit], crossOrigin: anonymous): js.Any = js.native
+  @JSName("displayExistingFile")
+  def displayExistingFile_anonymous(
+    mockFile: DropzoneMockFile,
+    imageUrl: String,
+    callback: js.Function0[Unit],
+    crossOrigin: anonymous,
+    resizeThumbnail: Boolean
+  ): js.Any = js.native
+  @JSName("displayExistingFile")
+  def displayExistingFile_usecredentials(
+    mockFile: DropzoneMockFile,
+    imageUrl: String,
+    callback: js.Function0[Unit],
+    crossOrigin: `use-credentials`
+  ): js.Any = js.native
+  @JSName("displayExistingFile")
+  def displayExistingFile_usecredentials(
+    mockFile: DropzoneMockFile,
+    imageUrl: String,
+    callback: js.Function0[Unit],
+    crossOrigin: `use-credentials`,
+    resizeThumbnail: Boolean
+  ): js.Any = js.native
   def emit(eventName: String, args: js.Any*): Dropzone = js.native
   @JSName("emit")
   def emit_addedfile(eventName: addedfile, file: DropzoneFile): Dropzone = js.native

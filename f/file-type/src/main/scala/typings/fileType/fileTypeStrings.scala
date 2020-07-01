@@ -65,6 +65,9 @@ object fileTypeStrings {
   sealed trait applicationSlashpdf extends MimeType
   
   @js.native
+  sealed trait `applicationSlashpgp-encrypted` extends MimeType
+  
+  @js.native
   sealed trait applicationSlashpostscript extends MimeType
   
   @js.native
@@ -629,6 +632,9 @@ object fileTypeStrings {
   sealed trait pdf extends FileExtension
   
   @js.native
+  sealed trait pgp extends FileExtension
+  
+  @js.native
   sealed trait png extends FileExtension
   
   @js.native
@@ -825,6 +831,8 @@ object fileTypeStrings {
   def applicationSlashogg: applicationSlashogg = "application/ogg".asInstanceOf[applicationSlashogg]
   @scala.inline
   def applicationSlashpdf: applicationSlashpdf = "application/pdf".asInstanceOf[applicationSlashpdf]
+  @scala.inline
+  def `applicationSlashpgp-encrypted`: `applicationSlashpgp-encrypted` = "application/pgp-encrypted".asInstanceOf[`applicationSlashpgp-encrypted`]
   @scala.inline
   def applicationSlashpostscript: applicationSlashpostscript = "application/postscript".asInstanceOf[applicationSlashpostscript]
   @scala.inline
@@ -1201,6 +1209,8 @@ object fileTypeStrings {
   def pcap: pcap = "pcap".asInstanceOf[pcap]
   @scala.inline
   def pdf: pdf = "pdf".asInstanceOf[pdf]
+  @scala.inline
+  def pgp: pgp = "pgp".asInstanceOf[pgp]
   @scala.inline
   def png: png = "png".asInstanceOf[png]
   @scala.inline

@@ -42,7 +42,7 @@ object uploadUploadMod extends js.Object {
     def onSuccess(response: js.Any, file: UploadFile[_], xhr: js.Any): Unit = js.native
     def renderUpload(hasGetPrefixClsDirection: ConfigConsumerProps): Element = js.native
     def renderUploadList(locale: UploadLocale): Element = js.native
-    def saveUpload(node: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RcUpload */ js.Any): Unit = js.native
+    def saveUpload(node: js.Any): Unit = js.native
   }
   
   @js.native

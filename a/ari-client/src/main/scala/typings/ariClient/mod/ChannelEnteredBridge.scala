@@ -6,8 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChannelEnteredBridge extends Event {
-  /* Properties */
+  /**
+    * Bridge.
+    */
   var bridge: Bridge
+  /**
+    * Channel.
+    */
   var channel: Channel
 }
 

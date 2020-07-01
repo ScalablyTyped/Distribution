@@ -1,6 +1,6 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
-import typings.googleapis.AnonNameSlotMs
+import typings.googleapis.anon.NameSlotMs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -69,7 +69,7 @@ trait SchemaJobStatistics2 extends js.Object {
   /**
     * [Output-only] Job resource usage breakdown by reservation.
     */
-  var reservationUsage: js.UndefOr[js.Array[AnonNameSlotMs]] = js.native
+  var reservationUsage: js.UndefOr[js.Array[NameSlotMs]] = js.native
   /**
     * [Output-only] The schema of the results. Present only for successful dry
     * run of non-legacy SQL queries.
@@ -135,19 +135,19 @@ trait SchemaJobStatistics2 extends js.Object {
 object SchemaJobStatistics2 {
   @scala.inline
   def apply(
-    billingTier: Int | Double = null,
+    billingTier: js.UndefOr[Double] = js.undefined,
     cacheHit: js.UndefOr[Boolean] = js.undefined,
     ddlOperationPerformed: String = null,
     ddlTargetRoutine: SchemaRoutineReference = null,
     ddlTargetTable: SchemaTableReference = null,
     estimatedBytesProcessed: String = null,
     modelTraining: SchemaBigQueryModelTraining = null,
-    modelTrainingCurrentIteration: Int | Double = null,
+    modelTrainingCurrentIteration: js.UndefOr[Double] = js.undefined,
     modelTrainingExpectedTotalIteration: String = null,
     numDmlAffectedRows: String = null,
     queryPlan: js.Array[SchemaExplainQueryStage] = null,
     referencedTables: js.Array[SchemaTableReference] = null,
-    reservationUsage: js.Array[AnonNameSlotMs] = null,
+    reservationUsage: js.Array[NameSlotMs] = null,
     schema: SchemaTableSchema = null,
     statementType: String = null,
     timeline: js.Array[SchemaQueryTimelineSample] = null,
@@ -159,14 +159,14 @@ object SchemaJobStatistics2 {
     undeclaredQueryParameters: js.Array[SchemaQueryParameter] = null
   ): SchemaJobStatistics2 = {
     val __obj = js.Dynamic.literal()
-    if (billingTier != null) __obj.updateDynamic("billingTier")(billingTier.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheHit)) __obj.updateDynamic("cacheHit")(cacheHit.asInstanceOf[js.Any])
+    if (!js.isUndefined(billingTier)) __obj.updateDynamic("billingTier")(billingTier.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheHit)) __obj.updateDynamic("cacheHit")(cacheHit.get.asInstanceOf[js.Any])
     if (ddlOperationPerformed != null) __obj.updateDynamic("ddlOperationPerformed")(ddlOperationPerformed.asInstanceOf[js.Any])
     if (ddlTargetRoutine != null) __obj.updateDynamic("ddlTargetRoutine")(ddlTargetRoutine.asInstanceOf[js.Any])
     if (ddlTargetTable != null) __obj.updateDynamic("ddlTargetTable")(ddlTargetTable.asInstanceOf[js.Any])
     if (estimatedBytesProcessed != null) __obj.updateDynamic("estimatedBytesProcessed")(estimatedBytesProcessed.asInstanceOf[js.Any])
     if (modelTraining != null) __obj.updateDynamic("modelTraining")(modelTraining.asInstanceOf[js.Any])
-    if (modelTrainingCurrentIteration != null) __obj.updateDynamic("modelTrainingCurrentIteration")(modelTrainingCurrentIteration.asInstanceOf[js.Any])
+    if (!js.isUndefined(modelTrainingCurrentIteration)) __obj.updateDynamic("modelTrainingCurrentIteration")(modelTrainingCurrentIteration.get.asInstanceOf[js.Any])
     if (modelTrainingExpectedTotalIteration != null) __obj.updateDynamic("modelTrainingExpectedTotalIteration")(modelTrainingExpectedTotalIteration.asInstanceOf[js.Any])
     if (numDmlAffectedRows != null) __obj.updateDynamic("numDmlAffectedRows")(numDmlAffectedRows.asInstanceOf[js.Any])
     if (queryPlan != null) __obj.updateDynamic("queryPlan")(queryPlan.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 package typings.rcPicker.rangePickerMod
 
-import typings.rcPicker.dateBodyMod.DateRender
+import typings.rcPicker.anon.Range
 import typings.rcPicker.generateMod.GenerateConfig
 import typings.rcPicker.interfaceMod.Components
 import typings.rcPicker.interfaceMod.DisabledTimes
@@ -128,7 +128,7 @@ trait RangePickerTimeProps[DateType] extends RangePickerProps[DateType] {
   var className: js.UndefOr[String] = js.undefined
   var clearIcon: js.UndefOr[ReactNode] = js.undefined
   var components: js.UndefOr[Components] = js.undefined
-  var dateRender: js.UndefOr[DateRender[DateType]] = js.undefined
+  var dateRender: js.UndefOr[RangeDateRender[DateType]] = js.undefined
   var defaultOpen: js.UndefOr[Boolean] = js.undefined
   var defaultOpenValue: js.UndefOr[DateType] = js.undefined
   var defaultPickerValue: js.UndefOr[js.Tuple2[DateType, DateType]] = js.undefined
@@ -206,6 +206,7 @@ trait RangePickerTimeProps[DateType] extends RangePickerProps[DateType] {
   var separator: js.UndefOr[ReactNode] = js.undefined
   var showHour: js.UndefOr[Boolean] = js.undefined
   var showMinute: js.UndefOr[Boolean] = js.undefined
+  var showNow: js.UndefOr[Boolean] = js.undefined
   var showSecond: js.UndefOr[Boolean] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var suffixIcon: js.UndefOr[ReactNode] = js.undefined
@@ -279,7 +280,7 @@ object RangePickerTimeProps {
     className: String = null,
     clearIcon: ReactNode = null,
     components: Components = null,
-    dateRender: (DateType, DateType) => ReactNode = null,
+    dateRender: (DateType, DateType, /* info */ Range) => ReactNode = null,
     defaultOpen: js.UndefOr[Boolean] = js.undefined,
     defaultOpenValue: DateType = null,
     defaultPickerValue: js.Tuple2[DateType, DateType] = null,
@@ -334,6 +335,7 @@ object RangePickerTimeProps {
     separator: ReactNode = null,
     showHour: js.UndefOr[Boolean] = js.undefined,
     showMinute: js.UndefOr[Boolean] = js.undefined,
+    showNow: js.UndefOr[Boolean] = js.undefined,
     showSecond: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
     suffixIcon: ReactNode = null,
@@ -401,7 +403,7 @@ object RangePickerTimeProps {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon.asInstanceOf[js.Any])
     if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
-    if (dateRender != null) __obj.updateDynamic("dateRender")(js.Any.fromFunction2(dateRender))
+    if (dateRender != null) __obj.updateDynamic("dateRender")(js.Any.fromFunction3(dateRender))
     if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen.get.asInstanceOf[js.Any])
     if (defaultOpenValue != null) __obj.updateDynamic("defaultOpenValue")(defaultOpenValue.asInstanceOf[js.Any])
     if (defaultPickerValue != null) __obj.updateDynamic("defaultPickerValue")(defaultPickerValue.asInstanceOf[js.Any])
@@ -453,6 +455,7 @@ object RangePickerTimeProps {
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     if (!js.isUndefined(showHour)) __obj.updateDynamic("showHour")(showHour.get.asInstanceOf[js.Any])
     if (!js.isUndefined(showMinute)) __obj.updateDynamic("showMinute")(showMinute.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNow)) __obj.updateDynamic("showNow")(showNow.get.asInstanceOf[js.Any])
     if (!js.isUndefined(showSecond)) __obj.updateDynamic("showSecond")(showSecond.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (suffixIcon != null) __obj.updateDynamic("suffixIcon")(suffixIcon.asInstanceOf[js.Any])

@@ -14,7 +14,7 @@ trait NotificationFeature[T /* <: js.Function */] extends js.Object {
 
 object NotificationFeature {
   @scala.inline
-  def apply[T](getProvider: typings.vscode.mod.TextDocument => Send[T]): NotificationFeature[T] = {
+  def apply[/* <: js.Function */ T](getProvider: typings.vscode.mod.TextDocument => Send[T]): NotificationFeature[T] = {
     val __obj = js.Dynamic.literal(getProvider = js.Any.fromFunction1(getProvider))
     __obj.asInstanceOf[NotificationFeature[T]]
   }

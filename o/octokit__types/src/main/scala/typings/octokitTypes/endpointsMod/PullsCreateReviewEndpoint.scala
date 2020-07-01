@@ -21,7 +21,7 @@ trait PullsCreateReviewEndpoint extends js.Object {
     */
   var commit_id: js.UndefOr[String] = js.undefined
   /**
-    * The review action you want to perform. The review actions include: `APPROVE`, `REQUEST_CHANGES`, or `COMMENT`. By leaving this blank, you set the review action state to `PENDING`, which means you will need to [submit the pull request review](https://developer.github.com/v3/pulls/reviews/#submit-a-pull-request-review) when you are ready.
+    * The review action you want to perform. The review actions include: `APPROVE`, `REQUEST_CHANGES`, or `COMMENT`. By leaving this blank, you set the review action state to `PENDING`, which means you will need to [submit the pull request review](https://developer.github.com/v3/pulls/reviews/#submit-a-review-for-a-pull-request) when you are ready.
     */
   var event: js.UndefOr[APPROVE | REQUEST_CHANGES | COMMENT] = js.undefined
   var owner: String

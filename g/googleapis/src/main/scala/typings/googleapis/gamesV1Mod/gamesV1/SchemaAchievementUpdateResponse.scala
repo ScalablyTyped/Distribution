@@ -45,7 +45,7 @@ object SchemaAchievementUpdateResponse {
   def apply(
     achievementId: String = null,
     currentState: String = null,
-    currentSteps: Int | Double = null,
+    currentSteps: js.UndefOr[Double] = js.undefined,
     kind: String = null,
     newlyUnlocked: js.UndefOr[Boolean] = js.undefined,
     updateOccurred: js.UndefOr[Boolean] = js.undefined
@@ -53,10 +53,10 @@ object SchemaAchievementUpdateResponse {
     val __obj = js.Dynamic.literal()
     if (achievementId != null) __obj.updateDynamic("achievementId")(achievementId.asInstanceOf[js.Any])
     if (currentState != null) __obj.updateDynamic("currentState")(currentState.asInstanceOf[js.Any])
-    if (currentSteps != null) __obj.updateDynamic("currentSteps")(currentSteps.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentSteps)) __obj.updateDynamic("currentSteps")(currentSteps.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(newlyUnlocked)) __obj.updateDynamic("newlyUnlocked")(newlyUnlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateOccurred)) __obj.updateDynamic("updateOccurred")(updateOccurred.asInstanceOf[js.Any])
+    if (!js.isUndefined(newlyUnlocked)) __obj.updateDynamic("newlyUnlocked")(newlyUnlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateOccurred)) __obj.updateDynamic("updateOccurred")(updateOccurred.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAchievementUpdateResponse]
   }
 }

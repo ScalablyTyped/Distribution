@@ -60,16 +60,16 @@ object SchemaPivot {
   def apply(
     dimensionFilterClauses: js.Array[SchemaDimensionFilterClause] = null,
     dimensions: js.Array[SchemaDimension] = null,
-    maxGroupCount: Int | Double = null,
+    maxGroupCount: js.UndefOr[Double] = js.undefined,
     metrics: js.Array[SchemaMetric] = null,
-    startGroup: Int | Double = null
+    startGroup: js.UndefOr[Double] = js.undefined
   ): SchemaPivot = {
     val __obj = js.Dynamic.literal()
     if (dimensionFilterClauses != null) __obj.updateDynamic("dimensionFilterClauses")(dimensionFilterClauses.asInstanceOf[js.Any])
     if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
-    if (maxGroupCount != null) __obj.updateDynamic("maxGroupCount")(maxGroupCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxGroupCount)) __obj.updateDynamic("maxGroupCount")(maxGroupCount.get.asInstanceOf[js.Any])
     if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
-    if (startGroup != null) __obj.updateDynamic("startGroup")(startGroup.asInstanceOf[js.Any])
+    if (!js.isUndefined(startGroup)) __obj.updateDynamic("startGroup")(startGroup.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPivot]
   }
 }

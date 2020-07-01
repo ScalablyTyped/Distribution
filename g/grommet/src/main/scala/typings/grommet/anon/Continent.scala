@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 trait Continent extends js.Object {
   var color: js.UndefOr[ColorType] = js.undefined
   var continent: js.UndefOr[Base] = js.undefined
-  var hover: js.UndefOr[`0`] = js.undefined
+  var hover: js.UndefOr[`1`] = js.undefined
   var place: js.UndefOr[Base] = js.undefined
 }
 
 object Continent {
   @scala.inline
-  def apply(color: ColorType = null, continent: Base = null, hover: `0` = null, place: Base = null): Continent = {
+  def apply(color: ColorType = null, continent: Base = null, hover: `1` = null, place: Base = null): Continent = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (continent != null) __obj.updateDynamic("continent")(continent.asInstanceOf[js.Any])

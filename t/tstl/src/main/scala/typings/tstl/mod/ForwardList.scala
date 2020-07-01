@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Default Constructor.
   */
 class ForwardList[T] ()
-  extends typings.tstl.tstlMod.ForwardList[T] {
+  extends typings.tstl.tstlModuleMod.ForwardList[T] {
   /**
     * Initializer Constructor.
     *
@@ -53,7 +53,7 @@ object ForwardList extends js.Object {
     */
   @js.native
   class Iterator[T] protected ()
-    extends typings.tstl.tstlMod.ForwardList.Iterator[T]
+    extends typings.tstl.tstlModuleMod.ForwardList.Iterator[T]
   
 }
 

@@ -5,15 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Captions extends js.Object {
-  var captions: js.UndefOr[`1`] = js.undefined
-  var controls: js.UndefOr[`1`] = js.undefined
+  var captions: js.UndefOr[`2`] = js.undefined
+  var controls: js.UndefOr[`2`] = js.undefined
   var icons: js.UndefOr[ClosedCaption] = js.undefined
-  var scrubber: js.UndefOr[`0`] = js.undefined
+  var scrubber: js.UndefOr[`1`] = js.undefined
 }
 
 object Captions {
   @scala.inline
-  def apply(captions: `1` = null, controls: `1` = null, icons: ClosedCaption = null, scrubber: `0` = null): Captions = {
+  def apply(captions: `2` = null, controls: `2` = null, icons: ClosedCaption = null, scrubber: `1` = null): Captions = {
     val __obj = js.Dynamic.literal()
     if (captions != null) __obj.updateDynamic("captions")(captions.asInstanceOf[js.Any])
     if (controls != null) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])

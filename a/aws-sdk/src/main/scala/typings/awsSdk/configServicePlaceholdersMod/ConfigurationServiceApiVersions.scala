@@ -41,6 +41,7 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var cloudwatch: js.UndefOr[typings.awsSdk.cloudwatchMod.apiVersion] = js.native
   var cloudwatchevents: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.apiVersion] = js.native
   var cloudwatchlogs: js.UndefOr[typings.awsSdk.cloudwatchlogsMod.apiVersion] = js.native
+  var codeartifact: js.UndefOr[typings.awsSdk.codeartifactMod.apiVersion] = js.native
   var codebuild: js.UndefOr[typings.awsSdk.codebuildMod.apiVersion] = js.native
   var codecommit: js.UndefOr[typings.awsSdk.codecommitMod.apiVersion] = js.native
   var codedeploy: js.UndefOr[typings.awsSdk.codedeployMod.apiVersion] = js.native
@@ -105,6 +106,7 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var groundstation: js.UndefOr[typings.awsSdk.groundstationMod.apiVersion] = js.native
   var guardduty: js.UndefOr[typings.awsSdk.guarddutyMod.apiVersion] = js.native
   var health: js.UndefOr[typings.awsSdk.healthMod.apiVersion] = js.native
+  var honeycode: js.UndefOr[typings.awsSdk.honeycodeMod.apiVersion] = js.native
   var iam: js.UndefOr[typings.awsSdk.iamMod.apiVersion] = js.native
   var imagebuilder: js.UndefOr[typings.awsSdk.imagebuilderMod.apiVersion] = js.native
   var importexport: js.UndefOr[typings.awsSdk.importexportMod.apiVersion] = js.native
@@ -269,6 +271,7 @@ object ConfigurationServiceApiVersions {
     cloudwatch: typings.awsSdk.cloudwatchMod.apiVersion = null,
     cloudwatchevents: typings.awsSdk.cloudwatcheventsMod.apiVersion = null,
     cloudwatchlogs: typings.awsSdk.cloudwatchlogsMod.apiVersion = null,
+    codeartifact: typings.awsSdk.codeartifactMod.apiVersion = null,
     codebuild: typings.awsSdk.codebuildMod.apiVersion = null,
     codecommit: typings.awsSdk.codecommitMod.apiVersion = null,
     codedeploy: typings.awsSdk.codedeployMod.apiVersion = null,
@@ -333,6 +336,7 @@ object ConfigurationServiceApiVersions {
     groundstation: typings.awsSdk.groundstationMod.apiVersion = null,
     guardduty: typings.awsSdk.guarddutyMod.apiVersion = null,
     health: typings.awsSdk.healthMod.apiVersion = null,
+    honeycode: typings.awsSdk.honeycodeMod.apiVersion = null,
     iam: typings.awsSdk.iamMod.apiVersion = null,
     imagebuilder: typings.awsSdk.imagebuilderMod.apiVersion = null,
     importexport: typings.awsSdk.importexportMod.apiVersion = null,
@@ -494,6 +498,7 @@ object ConfigurationServiceApiVersions {
     if (cloudwatch != null) __obj.updateDynamic("cloudwatch")(cloudwatch.asInstanceOf[js.Any])
     if (cloudwatchevents != null) __obj.updateDynamic("cloudwatchevents")(cloudwatchevents.asInstanceOf[js.Any])
     if (cloudwatchlogs != null) __obj.updateDynamic("cloudwatchlogs")(cloudwatchlogs.asInstanceOf[js.Any])
+    if (codeartifact != null) __obj.updateDynamic("codeartifact")(codeartifact.asInstanceOf[js.Any])
     if (codebuild != null) __obj.updateDynamic("codebuild")(codebuild.asInstanceOf[js.Any])
     if (codecommit != null) __obj.updateDynamic("codecommit")(codecommit.asInstanceOf[js.Any])
     if (codedeploy != null) __obj.updateDynamic("codedeploy")(codedeploy.asInstanceOf[js.Any])
@@ -558,6 +563,7 @@ object ConfigurationServiceApiVersions {
     if (groundstation != null) __obj.updateDynamic("groundstation")(groundstation.asInstanceOf[js.Any])
     if (guardduty != null) __obj.updateDynamic("guardduty")(guardduty.asInstanceOf[js.Any])
     if (health != null) __obj.updateDynamic("health")(health.asInstanceOf[js.Any])
+    if (honeycode != null) __obj.updateDynamic("honeycode")(honeycode.asInstanceOf[js.Any])
     if (iam != null) __obj.updateDynamic("iam")(iam.asInstanceOf[js.Any])
     if (imagebuilder != null) __obj.updateDynamic("imagebuilder")(imagebuilder.asInstanceOf[js.Any])
     if (importexport != null) __obj.updateDynamic("importexport")(importexport.asInstanceOf[js.Any])

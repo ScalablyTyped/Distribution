@@ -25,9 +25,9 @@ trait SchemaSubscriptionCancelSurveyResult extends js.Object {
 
 object SchemaSubscriptionCancelSurveyResult {
   @scala.inline
-  def apply(cancelSurveyReason: Int | Double = null, userInputCancelReason: String = null): SchemaSubscriptionCancelSurveyResult = {
+  def apply(cancelSurveyReason: js.UndefOr[Double] = js.undefined, userInputCancelReason: String = null): SchemaSubscriptionCancelSurveyResult = {
     val __obj = js.Dynamic.literal()
-    if (cancelSurveyReason != null) __obj.updateDynamic("cancelSurveyReason")(cancelSurveyReason.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelSurveyReason)) __obj.updateDynamic("cancelSurveyReason")(cancelSurveyReason.get.asInstanceOf[js.Any])
     if (userInputCancelReason != null) __obj.updateDynamic("userInputCancelReason")(userInputCancelReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSubscriptionCancelSurveyResult]
   }

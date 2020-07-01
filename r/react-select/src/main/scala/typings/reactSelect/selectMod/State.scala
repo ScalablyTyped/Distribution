@@ -20,7 +20,7 @@ trait State[OptionType /* <: OptionTypeBase */] extends js.Object {
 
 object State {
   @scala.inline
-  def apply[OptionType](
+  def apply[/* <: typings.reactSelect.typesMod.OptionTypeBase */ OptionType](
     ariaLiveContext: String,
     ariaLiveSelection: String,
     inputIsHidden: Boolean,

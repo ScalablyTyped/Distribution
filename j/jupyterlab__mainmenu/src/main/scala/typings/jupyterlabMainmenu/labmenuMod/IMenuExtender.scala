@@ -23,7 +23,7 @@ trait IMenuExtender[T /* <: Widget */] extends js.Object {
 
 object IMenuExtender {
   @scala.inline
-  def apply[T](tracker: IWidgetTracker[T], isEnabled: /* widget */ T => Boolean = null): IMenuExtender[T] = {
+  def apply[/* <: typings.luminoWidgets.mod.Widget */ T](tracker: IWidgetTracker[T], isEnabled: /* widget */ T => Boolean = null): IMenuExtender[T] = {
     val __obj = js.Dynamic.literal(tracker = tracker.asInstanceOf[js.Any])
     if (isEnabled != null) __obj.updateDynamic("isEnabled")(js.Any.fromFunction1(isEnabled))
     __obj.asInstanceOf[IMenuExtender[T]]

@@ -3,8 +3,8 @@ package typings.urqlCore
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Map
 import typings.std.Set
+import typings.urqlCore.anon.FnCallT
 import typings.urqlCore.clientMod.Client
-import typings.urqlCore.typesMod.DebugEventArg
 import typings.urqlCore.typesMod.Exchange
 import typings.urqlCore.typesMod.OperationResult
 import scala.scalajs.js
@@ -15,12 +15,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object cacheMod extends js.Object {
   val cacheExchange: Exchange = js.native
-  def afterMutation(
-    resultCache: ResultCache,
-    operationCache: OperationCache,
-    client: Client,
-    dispatchDebug: js.Function1[/* t */ DebugEventArg[String], Unit]
-  ): js.Function1[/* response */ OperationResult[_], Unit] = js.native
+  def afterMutation(resultCache: ResultCache, operationCache: OperationCache, client: Client, dispatchDebug: FnCallT): js.Function1[/* response */ OperationResult[_], Unit] = js.native
   type OperationCache = StringDictionary[Set[Double]]
   type ResultCache = Map[Double, OperationResult[js.Any]]
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetSupportedResourceTypesOutput extends js.Object {
   /**
-    * Contains a string with the supported AWS resource types:    EBS for Amazon Elastic Block Store    Storage Gateway for AWS Storage Gateway    RDS for Amazon Relational Database Service    DDB for Amazon DynamoDB    EFS for Amazon Elastic File System  
+    * Contains a string with the supported AWS resource types:    DynamoDB for Amazon DynamoDB    EBS for Amazon Elastic Block Store    EC2 for Amazon Elastic Compute Cloud    EFS for Amazon Elastic File System    RDS for Amazon Relational Database Service    Storage Gateway for AWS Storage Gateway  
     */
   var ResourceTypes: js.UndefOr[typings.awsSdk.backupMod.ResourceTypes] = js.native
 }

@@ -17,7 +17,7 @@ trait JustifyContentProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends
 
 object JustifyContentProps {
   @scala.inline
-  def apply[ThemeType](
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](
     justifyContent: js.UndefOr[Null | (ResponsiveValue[JustifyContentProperty, ThemeType])] = js.undefined
   ): JustifyContentProps[ThemeType] = {
     val __obj = js.Dynamic.literal()

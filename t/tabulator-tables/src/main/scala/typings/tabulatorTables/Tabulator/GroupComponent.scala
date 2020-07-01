@@ -21,10 +21,10 @@ trait GroupComponent extends js.Object {
   def getSubGroups(): js.Array[GroupComponent]
   /** The getTable function returns the Tabulator object for the table containing the group */
   def getTable(): typings.tabulatorTables.Tabulator
-  /**  The getVisibility function returns a boolean to show if the group is visible, a value of true means it is visible.*/
-  def getVisibility(): Boolean
   /** The hide function hides the group if it is visible. */
   def hide(): Unit
+  /**  The isVisible function returns a boolean to show if the group is visible, a value of true means it is visible.*/
+  def isVisible(): Boolean
   /** The show function shows the group if it is hidden. */
   def show(): Unit
   /** The toggle function toggles the visibility of the group, switching between hidden and visible. */
@@ -41,12 +41,12 @@ object GroupComponent {
     getRows: () => js.Array[RowComponent],
     getSubGroups: () => js.Array[GroupComponent],
     getTable: () => typings.tabulatorTables.Tabulator,
-    getVisibility: () => Boolean,
     hide: () => Unit,
+    isVisible: () => Boolean,
     show: () => Unit,
     toggle: () => Unit
   ): GroupComponent = {
-    val __obj = js.Dynamic.literal(getElement = js.Any.fromFunction0(getElement), getField = js.Any.fromFunction0(getField), getKey = js.Any.fromFunction0(getKey), getParentGroup = js.Any.fromFunction0(getParentGroup), getRows = js.Any.fromFunction0(getRows), getSubGroups = js.Any.fromFunction0(getSubGroups), getTable = js.Any.fromFunction0(getTable), getVisibility = js.Any.fromFunction0(getVisibility), hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show), toggle = js.Any.fromFunction0(toggle))
+    val __obj = js.Dynamic.literal(getElement = js.Any.fromFunction0(getElement), getField = js.Any.fromFunction0(getField), getKey = js.Any.fromFunction0(getKey), getParentGroup = js.Any.fromFunction0(getParentGroup), getRows = js.Any.fromFunction0(getRows), getSubGroups = js.Any.fromFunction0(getSubGroups), getTable = js.Any.fromFunction0(getTable), hide = js.Any.fromFunction0(hide), isVisible = js.Any.fromFunction0(isVisible), show = js.Any.fromFunction0(show), toggle = js.Any.fromFunction0(toggle))
     __obj.asInstanceOf[GroupComponent]
   }
 }

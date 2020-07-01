@@ -70,7 +70,7 @@ object SchemaWebApp {
     val __obj = js.Dynamic.literal()
     if (displayMode != null) __obj.updateDynamic("displayMode")(displayMode.asInstanceOf[js.Any])
     if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPublished)) __obj.updateDynamic("isPublished")(isPublished.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPublished)) __obj.updateDynamic("isPublished")(isPublished.get.asInstanceOf[js.Any])
     if (startUrl != null) __obj.updateDynamic("startUrl")(startUrl.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (versionCode != null) __obj.updateDynamic("versionCode")(versionCode.asInstanceOf[js.Any])

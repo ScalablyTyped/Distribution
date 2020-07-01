@@ -11,7 +11,7 @@ trait ValueTSV[TSV /* <: /* import warning: importer.ImportType#apply Failed typ
 
 object ValueTSV {
   @scala.inline
-  def apply[TSV, TTypestate](value: TSV): ValueTSV[TSV, TTypestate] = {
+  def apply[/* <: / * import warning: importer.ImportType#apply Failed type conversion: TTypestate['value'] * / js.Any */ TSV, /* <: typings.xstate.typesMod.Typestate[TContext] */ TTypestate](value: TSV): ValueTSV[TSV, TTypestate] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueTSV[TSV, TTypestate]]
   }

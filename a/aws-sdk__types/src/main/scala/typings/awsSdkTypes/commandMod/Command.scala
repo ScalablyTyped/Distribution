@@ -17,7 +17,7 @@ trait Command[ClientInput /* <: CommandInput */, InputType /* <: ClientInput */,
 
 object Command {
   @scala.inline
-  def apply[ClientInput, InputType, ClientOutput, OutputType, ResolvedConfiguration, StreamType](
+  def apply[/* <: typings.awsSdkTypes.commandMod.CommandInput */ ClientInput, /* <: ClientInput */ InputType, /* <: typings.awsSdkTypes.responseMod.MetadataBearer */ ClientOutput, /* <: ClientOutput */ OutputType, ResolvedConfiguration, StreamType](
     input: InputType,
     resolveMiddleware: (MiddlewareStack[ClientInput, ClientOutput, StreamType], ResolvedConfiguration) => Handler[InputType, OutputType]
   ): Command[ClientInput, InputType, ClientOutput, OutputType, ResolvedConfiguration, StreamType] = {

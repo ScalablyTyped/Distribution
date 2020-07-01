@@ -18,9 +18,6 @@ object googleapisStrings {
   sealed trait directory_v1 extends js.Object
   
   @js.native
-  sealed trait httpsColonSlashSlashoauth2DotgoogleapisDotcomSlashtokeninfo extends js.Object
-  
-  @js.native
   sealed trait reports_v1 extends js.Object
   
   @js.native
@@ -169,8 +166,6 @@ object googleapisStrings {
   def datatransfer_v1: datatransfer_v1 = "datatransfer_v1".asInstanceOf[datatransfer_v1]
   @scala.inline
   def directory_v1: directory_v1 = "directory_v1".asInstanceOf[directory_v1]
-  @scala.inline
-  def httpsColonSlashSlashoauth2DotgoogleapisDotcomSlashtokeninfo: httpsColonSlashSlashoauth2DotgoogleapisDotcomSlashtokeninfo = "https://oauth2.googleapis.com/tokeninfo".asInstanceOf[httpsColonSlashSlashoauth2DotgoogleapisDotcomSlashtokeninfo]
   @scala.inline
   def reports_v1: reports_v1 = "reports_v1".asInstanceOf[reports_v1]
   @scala.inline

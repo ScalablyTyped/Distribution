@@ -20,10 +20,13 @@ trait SchemaLicenseResourceRequirements extends js.Object {
 
 object SchemaLicenseResourceRequirements {
   @scala.inline
-  def apply(minGuestCpuCount: Int | Double = null, minMemoryMb: Int | Double = null): SchemaLicenseResourceRequirements = {
+  def apply(
+    minGuestCpuCount: js.UndefOr[Double] = js.undefined,
+    minMemoryMb: js.UndefOr[Double] = js.undefined
+  ): SchemaLicenseResourceRequirements = {
     val __obj = js.Dynamic.literal()
-    if (minGuestCpuCount != null) __obj.updateDynamic("minGuestCpuCount")(minGuestCpuCount.asInstanceOf[js.Any])
-    if (minMemoryMb != null) __obj.updateDynamic("minMemoryMb")(minMemoryMb.asInstanceOf[js.Any])
+    if (!js.isUndefined(minGuestCpuCount)) __obj.updateDynamic("minGuestCpuCount")(minGuestCpuCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minMemoryMb)) __obj.updateDynamic("minMemoryMb")(minMemoryMb.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLicenseResourceRequirements]
   }
 }

@@ -16,6 +16,7 @@ object mod extends js.Object {
   def getAuthority(url: String): String | Unit = js.native
   def getFragment(url: String): String | Unit = js.native
   def getPath(url: String): String | Unit = js.native
+  def getPathAndQueryString(url: String): String = js.native
   def getProtocol(url: String): String | Unit = js.native
   def getQueryArg(url: String, arg: String): js.UndefOr[
     String | js.Array[String] | (StringDictionary[String | js.Array[String] | js.Any])

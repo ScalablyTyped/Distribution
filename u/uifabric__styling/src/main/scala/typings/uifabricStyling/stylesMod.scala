@@ -1,6 +1,5 @@
 package typings.uifabricStyling
 
-import typings.std.Partial
 import typings.uifabricMergeStyles.irawstylebaseMod.IFontWeight
 import typings.uifabricMergeStyles.istyleMod.IRawStyle
 import typings.uifabricMergeStyles.istyleMod.IStyle
@@ -352,8 +351,8 @@ object stylesMod extends js.Object {
     outlineColor: js.UndefOr[String],
     isFocusedOnly: js.UndefOr[Boolean]
   ): IRawStyle = js.native
-  def getGlobalClassNames[T](classNames: GlobalClassNames[T], theme: ITheme): Partial[GlobalClassNames[T]] = js.native
-  def getGlobalClassNames[T](classNames: GlobalClassNames[T], theme: ITheme, disableGlobalClassNames: Boolean): Partial[GlobalClassNames[T]] = js.native
+  def getGlobalClassNames[T](classNames: GlobalClassNames[T], theme: ITheme): GlobalClassNames[T] = js.native
+  def getGlobalClassNames[T](classNames: GlobalClassNames[T], theme: ITheme, disableGlobalClassNames: Boolean): GlobalClassNames[T] = js.native
   def getInputFocusStyle(borderColor: String, borderRadius: String): IRawStyle = js.native
   def getInputFocusStyle(borderColor: String, borderRadius: Double): IRawStyle = js.native
   @JSName("getInputFocusStyle")

@@ -10,9 +10,11 @@ import typings.elasticElasticsearch.requestParamsMod.IndicesCreateDataStream
 import typings.elasticElasticsearch.requestParamsMod.IndicesDelete
 import typings.elasticElasticsearch.requestParamsMod.IndicesDeleteAlias
 import typings.elasticElasticsearch.requestParamsMod.IndicesDeleteDataStream
+import typings.elasticElasticsearch.requestParamsMod.IndicesDeleteIndexTemplate
 import typings.elasticElasticsearch.requestParamsMod.IndicesDeleteTemplate
 import typings.elasticElasticsearch.requestParamsMod.IndicesExists
 import typings.elasticElasticsearch.requestParamsMod.IndicesExistsAlias
+import typings.elasticElasticsearch.requestParamsMod.IndicesExistsIndexTemplate
 import typings.elasticElasticsearch.requestParamsMod.IndicesExistsTemplate
 import typings.elasticElasticsearch.requestParamsMod.IndicesExistsType
 import typings.elasticElasticsearch.requestParamsMod.IndicesFlush
@@ -23,12 +25,14 @@ import typings.elasticElasticsearch.requestParamsMod.IndicesGet
 import typings.elasticElasticsearch.requestParamsMod.IndicesGetAlias
 import typings.elasticElasticsearch.requestParamsMod.IndicesGetDataStreams
 import typings.elasticElasticsearch.requestParamsMod.IndicesGetFieldMapping
+import typings.elasticElasticsearch.requestParamsMod.IndicesGetIndexTemplate
 import typings.elasticElasticsearch.requestParamsMod.IndicesGetMapping
 import typings.elasticElasticsearch.requestParamsMod.IndicesGetSettings
 import typings.elasticElasticsearch.requestParamsMod.IndicesGetTemplate
 import typings.elasticElasticsearch.requestParamsMod.IndicesGetUpgrade
 import typings.elasticElasticsearch.requestParamsMod.IndicesOpen
 import typings.elasticElasticsearch.requestParamsMod.IndicesPutAlias
+import typings.elasticElasticsearch.requestParamsMod.IndicesPutIndexTemplate
 import typings.elasticElasticsearch.requestParamsMod.IndicesPutMapping
 import typings.elasticElasticsearch.requestParamsMod.IndicesPutSettings
 import typings.elasticElasticsearch.requestParamsMod.IndicesPutTemplate
@@ -39,6 +43,7 @@ import typings.elasticElasticsearch.requestParamsMod.IndicesRollover
 import typings.elasticElasticsearch.requestParamsMod.IndicesSegments
 import typings.elasticElasticsearch.requestParamsMod.IndicesShardStores
 import typings.elasticElasticsearch.requestParamsMod.IndicesShrink
+import typings.elasticElasticsearch.requestParamsMod.IndicesSimulateIndexTemplate
 import typings.elasticElasticsearch.requestParamsMod.IndicesSplit
 import typings.elasticElasticsearch.requestParamsMod.IndicesStats
 import typings.elasticElasticsearch.requestParamsMod.IndicesUnfreeze
@@ -158,6 +163,16 @@ trait Analyze extends js.Object {
     options: TransportRequestOptions,
     callback: callbackFn[TResponse, TContext]
   ): TransportRequestCallback = js.native
+  def deleteIndexTemplate[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def deleteIndexTemplate[TResponse, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def deleteIndexTemplate[TResponse, TContext](params: IndicesDeleteIndexTemplate): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def deleteIndexTemplate[TResponse, TContext](params: IndicesDeleteIndexTemplate, callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def deleteIndexTemplate[TResponse, TContext](params: IndicesDeleteIndexTemplate, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def deleteIndexTemplate[TResponse, TContext](
+    params: IndicesDeleteIndexTemplate,
+    options: TransportRequestOptions,
+    callback: callbackFn[TResponse, TContext]
+  ): TransportRequestCallback = js.native
   def deleteTemplate[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def deleteTemplate[TResponse, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
   def deleteTemplate[TResponse, TContext](params: IndicesDeleteTemplate): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
@@ -188,6 +203,16 @@ trait Analyze extends js.Object {
     options: TransportRequestOptions,
     callback: callbackFn[TResponse, TContext]
   ): TransportRequestCallback = js.native
+  def delete_index_template[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def delete_index_template[TResponse, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def delete_index_template[TResponse, TContext](params: IndicesDeleteIndexTemplate): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def delete_index_template[TResponse, TContext](params: IndicesDeleteIndexTemplate, callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def delete_index_template[TResponse, TContext](params: IndicesDeleteIndexTemplate, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def delete_index_template[TResponse, TContext](
+    params: IndicesDeleteIndexTemplate,
+    options: TransportRequestOptions,
+    callback: callbackFn[TResponse, TContext]
+  ): TransportRequestCallback = js.native
   def delete_template[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def delete_template[TResponse, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
   def delete_template[TResponse, TContext](params: IndicesDeleteTemplate): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
@@ -211,6 +236,16 @@ trait Analyze extends js.Object {
   def existsAlias[TResponse, TContext](params: IndicesExistsAlias, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def existsAlias[TResponse, TContext](
     params: IndicesExistsAlias,
+    options: TransportRequestOptions,
+    callback: callbackFn[TResponse, TContext]
+  ): TransportRequestCallback = js.native
+  def existsIndexTemplate[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def existsIndexTemplate[TResponse, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def existsIndexTemplate[TResponse, TContext](params: IndicesExistsIndexTemplate): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def existsIndexTemplate[TResponse, TContext](params: IndicesExistsIndexTemplate, callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def existsIndexTemplate[TResponse, TContext](params: IndicesExistsIndexTemplate, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def existsIndexTemplate[TResponse, TContext](
+    params: IndicesExistsIndexTemplate,
     options: TransportRequestOptions,
     callback: callbackFn[TResponse, TContext]
   ): TransportRequestCallback = js.native
@@ -241,6 +276,16 @@ trait Analyze extends js.Object {
   def exists_alias[TResponse, TContext](params: IndicesExistsAlias, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def exists_alias[TResponse, TContext](
     params: IndicesExistsAlias,
+    options: TransportRequestOptions,
+    callback: callbackFn[TResponse, TContext]
+  ): TransportRequestCallback = js.native
+  def exists_index_template[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def exists_index_template[TResponse, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def exists_index_template[TResponse, TContext](params: IndicesExistsIndexTemplate): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def exists_index_template[TResponse, TContext](params: IndicesExistsIndexTemplate, callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def exists_index_template[TResponse, TContext](params: IndicesExistsIndexTemplate, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def exists_index_template[TResponse, TContext](
+    params: IndicesExistsIndexTemplate,
     options: TransportRequestOptions,
     callback: callbackFn[TResponse, TContext]
   ): TransportRequestCallback = js.native
@@ -342,6 +387,16 @@ trait Analyze extends js.Object {
     options: TransportRequestOptions,
     callback: callbackFn[TResponse, TContext]
   ): TransportRequestCallback = js.native
+  def getIndexTemplate[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def getIndexTemplate[TResponse, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def getIndexTemplate[TResponse, TContext](params: IndicesGetIndexTemplate): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def getIndexTemplate[TResponse, TContext](params: IndicesGetIndexTemplate, callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def getIndexTemplate[TResponse, TContext](params: IndicesGetIndexTemplate, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def getIndexTemplate[TResponse, TContext](
+    params: IndicesGetIndexTemplate,
+    options: TransportRequestOptions,
+    callback: callbackFn[TResponse, TContext]
+  ): TransportRequestCallback = js.native
   def getMapping[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def getMapping[TResponse, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
   def getMapping[TResponse, TContext](params: IndicesGetMapping): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
@@ -412,6 +467,16 @@ trait Analyze extends js.Object {
     options: TransportRequestOptions,
     callback: callbackFn[TResponse, TContext]
   ): TransportRequestCallback = js.native
+  def get_index_template[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def get_index_template[TResponse, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def get_index_template[TResponse, TContext](params: IndicesGetIndexTemplate): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def get_index_template[TResponse, TContext](params: IndicesGetIndexTemplate, callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def get_index_template[TResponse, TContext](params: IndicesGetIndexTemplate, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def get_index_template[TResponse, TContext](
+    params: IndicesGetIndexTemplate,
+    options: TransportRequestOptions,
+    callback: callbackFn[TResponse, TContext]
+  ): TransportRequestCallback = js.native
   def get_mapping[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def get_mapping[TResponse, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
   def get_mapping[TResponse, TContext](params: IndicesGetMapping): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
@@ -468,6 +533,16 @@ trait Analyze extends js.Object {
     options: TransportRequestOptions,
     callback: callbackFn[TResponse, TContext]
   ): TransportRequestCallback = js.native
+  def putIndexTemplate[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def putIndexTemplate[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def putIndexTemplate[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: IndicesPutIndexTemplate[TRequestBody]): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def putIndexTemplate[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: IndicesPutIndexTemplate[TRequestBody], callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def putIndexTemplate[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: IndicesPutIndexTemplate[TRequestBody], options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def putIndexTemplate[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](
+    params: IndicesPutIndexTemplate[TRequestBody],
+    options: TransportRequestOptions,
+    callback: callbackFn[TResponse, TContext]
+  ): TransportRequestCallback = js.native
   def putMapping[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def putMapping[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
   def putMapping[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: IndicesPutMapping[TRequestBody]): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
@@ -505,6 +580,16 @@ trait Analyze extends js.Object {
   def put_alias[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: IndicesPutAlias[TRequestBody], options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def put_alias[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](
     params: IndicesPutAlias[TRequestBody],
+    options: TransportRequestOptions,
+    callback: callbackFn[TResponse, TContext]
+  ): TransportRequestCallback = js.native
+  def put_index_template[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def put_index_template[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def put_index_template[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: IndicesPutIndexTemplate[TRequestBody]): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def put_index_template[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: IndicesPutIndexTemplate[TRequestBody], callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def put_index_template[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: IndicesPutIndexTemplate[TRequestBody], options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def put_index_template[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](
+    params: IndicesPutIndexTemplate[TRequestBody],
     options: TransportRequestOptions,
     callback: callbackFn[TResponse, TContext]
   ): TransportRequestCallback = js.native
@@ -625,6 +710,26 @@ trait Analyze extends js.Object {
   def shrink[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: IndicesShrink[TRequestBody], options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def shrink[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](
     params: IndicesShrink[TRequestBody],
+    options: TransportRequestOptions,
+    callback: callbackFn[TResponse, TContext]
+  ): TransportRequestCallback = js.native
+  def simulateIndexTemplate[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def simulateIndexTemplate[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def simulateIndexTemplate[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: IndicesSimulateIndexTemplate[TRequestBody]): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def simulateIndexTemplate[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: IndicesSimulateIndexTemplate[TRequestBody], callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def simulateIndexTemplate[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: IndicesSimulateIndexTemplate[TRequestBody], options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def simulateIndexTemplate[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](
+    params: IndicesSimulateIndexTemplate[TRequestBody],
+    options: TransportRequestOptions,
+    callback: callbackFn[TResponse, TContext]
+  ): TransportRequestCallback = js.native
+  def simulate_index_template[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def simulate_index_template[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def simulate_index_template[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: IndicesSimulateIndexTemplate[TRequestBody]): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def simulate_index_template[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: IndicesSimulateIndexTemplate[TRequestBody], callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def simulate_index_template[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: IndicesSimulateIndexTemplate[TRequestBody], options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def simulate_index_template[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](
+    params: IndicesSimulateIndexTemplate[TRequestBody],
     options: TransportRequestOptions,
     callback: callbackFn[TResponse, TContext]
   ): TransportRequestCallback = js.native

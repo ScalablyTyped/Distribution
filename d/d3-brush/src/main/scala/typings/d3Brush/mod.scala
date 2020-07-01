@@ -201,8 +201,9 @@ object mod extends js.Object {
      // Leave failsafe string type for cases like 'brush.foo'
     /**
       * The current brush selection associated with the event.
+      * This is null when the selection is empty.
       */
-    var selection: BrushSelection_ = js.native
+    var selection: BrushSelection_ | Null = js.native
     /**
       * The underlying input event, such as mousemove or touchmove.
       */

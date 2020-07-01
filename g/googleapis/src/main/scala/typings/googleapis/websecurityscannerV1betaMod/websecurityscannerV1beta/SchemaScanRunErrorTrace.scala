@@ -32,12 +32,12 @@ object SchemaScanRunErrorTrace {
   @scala.inline
   def apply(
     code: String = null,
-    mostCommonHttpErrorCode: Int | Double = null,
+    mostCommonHttpErrorCode: js.UndefOr[Double] = js.undefined,
     scanConfigError: SchemaScanConfigError = null
   ): SchemaScanRunErrorTrace = {
     val __obj = js.Dynamic.literal()
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (mostCommonHttpErrorCode != null) __obj.updateDynamic("mostCommonHttpErrorCode")(mostCommonHttpErrorCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(mostCommonHttpErrorCode)) __obj.updateDynamic("mostCommonHttpErrorCode")(mostCommonHttpErrorCode.get.asInstanceOf[js.Any])
     if (scanConfigError != null) __obj.updateDynamic("scanConfigError")(scanConfigError.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaScanRunErrorTrace]
   }

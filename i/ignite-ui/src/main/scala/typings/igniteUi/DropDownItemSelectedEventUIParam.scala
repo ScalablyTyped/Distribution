@@ -14,7 +14,7 @@ trait DropDownItemSelectedEventUIParam extends js.Object {
     */
   var item: js.UndefOr[js.Any] = js.undefined
   /**
-    * Gets a reference to the list contaier.
+    * Gets a reference to the list container.
     */
   var list: js.UndefOr[js.Any] = js.undefined
   /**

@@ -40,7 +40,7 @@ trait BorderRadiusProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] ext
 
 object BorderRadiusProps {
   @scala.inline
-  def apply[ThemeType, TVal](
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType, TVal](
     borderBottomLeftRadius: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
     borderBottomRightRadius: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
     borderRadius: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,

@@ -1,11 +1,11 @@
 package typings.materializeCss.M
 
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Materialbox extends Component[MaterialboxOptions] {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<MaterialboxOptions> * / any */ trait Materialbox extends js.Object {
   /**
     * Caption if specified
     */
@@ -41,16 +41,13 @@ object Materialbox {
   def apply(
     caption: String,
     close: () => Unit,
-    destroy: () => Unit,
     doneAnimating: Boolean,
-    el: Element,
     open: () => Unit,
-    options: MaterialboxOptions,
     originalHeight: Double,
     originalWidth: Double,
     overlayActive: Boolean
   ): Materialbox = {
-    val __obj = js.Dynamic.literal(caption = caption.asInstanceOf[js.Any], close = js.Any.fromFunction0(close), destroy = js.Any.fromFunction0(destroy), doneAnimating = doneAnimating.asInstanceOf[js.Any], el = el.asInstanceOf[js.Any], open = js.Any.fromFunction0(open), options = options.asInstanceOf[js.Any], originalHeight = originalHeight.asInstanceOf[js.Any], originalWidth = originalWidth.asInstanceOf[js.Any], overlayActive = overlayActive.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(caption = caption.asInstanceOf[js.Any], close = js.Any.fromFunction0(close), doneAnimating = doneAnimating.asInstanceOf[js.Any], open = js.Any.fromFunction0(open), originalHeight = originalHeight.asInstanceOf[js.Any], originalWidth = originalWidth.asInstanceOf[js.Any], overlayActive = overlayActive.asInstanceOf[js.Any])
     __obj.asInstanceOf[Materialbox]
   }
 }

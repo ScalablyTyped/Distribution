@@ -10,7 +10,7 @@ trait BuildOptions[T /* <: ProjectType */] extends BaseBuildOptions {
 
 object BuildOptions {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.ionic.definitionsMod.ProjectType */ T](
     `--`: js.Array[String],
     engine: String,
     `type`: T,

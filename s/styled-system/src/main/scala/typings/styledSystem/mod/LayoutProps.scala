@@ -29,7 +29,7 @@ trait LayoutProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
 
 object LayoutProps {
   @scala.inline
-  def apply[ThemeType](
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](
     display: js.UndefOr[Null | (ResponsiveValue[DisplayProperty, ThemeType])] = js.undefined,
     height: js.UndefOr[Null | (ResponsiveValue[HeightProperty[TLengthStyledSystem], ThemeType])] = js.undefined,
     maxHeight: js.UndefOr[Null | (ResponsiveValue[MaxHeightProperty[TLengthStyledSystem], ThemeType])] = js.undefined,

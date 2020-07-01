@@ -14,7 +14,9 @@ trait Fn[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported ty
 
 object Fn {
   @scala.inline
-  def apply[Ctx, Name](context: Ctx, fn: Name): Fn[Ctx, Name] = {
+  def apply[/* <: / * import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in Name ]: (this : Ctx, args : ...any): void}
+    * / typings.reduxSagaCore.reduxSagaCoreStrings.Fn with org.scalablytyped.runtime.TopLevel[js.Any] */ Ctx, /* <: java.lang.String */ Name](context: Ctx, fn: Name): Fn[Ctx, Name] = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fn[Ctx, Name]]
   }

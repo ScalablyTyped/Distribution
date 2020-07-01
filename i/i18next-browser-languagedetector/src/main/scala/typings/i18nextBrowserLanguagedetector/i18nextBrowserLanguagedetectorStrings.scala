@@ -23,6 +23,9 @@ object i18nextBrowserLanguagedetectorStrings {
   @js.native
   sealed trait querystring extends js.Object
   
+  @js.native
+  sealed trait sessionStorage extends js.Object
+  
   @scala.inline
   def cookie: cookie = "cookie".asInstanceOf[cookie]
   @scala.inline
@@ -35,5 +38,7 @@ object i18nextBrowserLanguagedetectorStrings {
   def navigator: navigator = "navigator".asInstanceOf[navigator]
   @scala.inline
   def querystring: querystring = "querystring".asInstanceOf[querystring]
+  @scala.inline
+  def sessionStorage: sessionStorage = "sessionStorage".asInstanceOf[sessionStorage]
 }
 

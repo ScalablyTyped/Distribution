@@ -147,7 +147,7 @@ object SchemaReportRequest {
     metricFilterClauses: js.Array[SchemaMetricFilterClause] = null,
     metrics: js.Array[SchemaMetric] = null,
     orderBys: js.Array[SchemaOrderBy] = null,
-    pageSize: Int | Double = null,
+    pageSize: js.UndefOr[Double] = js.undefined,
     pageToken: String = null,
     pivots: js.Array[SchemaPivot] = null,
     samplingLevel: String = null,
@@ -160,13 +160,13 @@ object SchemaReportRequest {
     if (dimensionFilterClauses != null) __obj.updateDynamic("dimensionFilterClauses")(dimensionFilterClauses.asInstanceOf[js.Any])
     if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
     if (filtersExpression != null) __obj.updateDynamic("filtersExpression")(filtersExpression.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideTotals)) __obj.updateDynamic("hideTotals")(hideTotals.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideValueRanges)) __obj.updateDynamic("hideValueRanges")(hideValueRanges.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeEmptyRows)) __obj.updateDynamic("includeEmptyRows")(includeEmptyRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideTotals)) __obj.updateDynamic("hideTotals")(hideTotals.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideValueRanges)) __obj.updateDynamic("hideValueRanges")(hideValueRanges.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeEmptyRows)) __obj.updateDynamic("includeEmptyRows")(includeEmptyRows.get.asInstanceOf[js.Any])
     if (metricFilterClauses != null) __obj.updateDynamic("metricFilterClauses")(metricFilterClauses.asInstanceOf[js.Any])
     if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
     if (orderBys != null) __obj.updateDynamic("orderBys")(orderBys.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     if (pivots != null) __obj.updateDynamic("pivots")(pivots.asInstanceOf[js.Any])
     if (samplingLevel != null) __obj.updateDynamic("samplingLevel")(samplingLevel.asInstanceOf[js.Any])

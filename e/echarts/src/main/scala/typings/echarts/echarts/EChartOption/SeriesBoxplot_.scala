@@ -1,10 +1,9 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.anon.AnimationDelay
 import typings.echarts.anon.AnimationDelayUpdate
 import typings.echarts.anon.AnimationDuration
+import typings.echarts.anon.AnimationDurationUpdate
 import typings.echarts.anon.BorderType
-import typings.echarts.anon.ExtraCssText
 import typings.echarts.anon.ItemStyleBorderType
 import typings.echarts.echarts.EChartOption.SeriesBoxplot.DataObject
 import scala.scalajs.js
@@ -286,7 +285,7 @@ trait SeriesBoxplot_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-boxplot.markLine
     */
-  var markLine: js.UndefOr[AnimationDelay] = js.undefined
+  var markLine: js.UndefOr[AnimationDurationUpdate] = js.undefined
   /**
     * Mark point in a chart.
     *
@@ -320,7 +319,7 @@ trait SeriesBoxplot_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-boxplot.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
   /**
     * @default
     * "boxplot"
@@ -398,11 +397,11 @@ object SeriesBoxplot_ {
     layout: String = null,
     legendHoverLink: js.UndefOr[Boolean] = js.undefined,
     markArea: AnimationDelayUpdate = null,
-    markLine: AnimationDelay = null,
+    markLine: AnimationDurationUpdate = null,
     markPoint: AnimationDuration = null,
     name: String = null,
     silent: js.UndefOr[Boolean] = js.undefined,
-    tooltip: ExtraCssText = null,
+    tooltip: BaseTooltip = null,
     `type`: String = null,
     xAxisIndex: js.UndefOr[Double] = js.undefined,
     yAxisIndex: js.UndefOr[Double] = js.undefined,

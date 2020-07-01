@@ -43,7 +43,7 @@ object SchemaDayPartTargeting {
     val __obj = js.Dynamic.literal()
     if (daysOfWeek != null) __obj.updateDynamic("daysOfWeek")(daysOfWeek.asInstanceOf[js.Any])
     if (hoursOfDay != null) __obj.updateDynamic("hoursOfDay")(hoursOfDay.asInstanceOf[js.Any])
-    if (!js.isUndefined(userLocalTime)) __obj.updateDynamic("userLocalTime")(userLocalTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(userLocalTime)) __obj.updateDynamic("userLocalTime")(userLocalTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDayPartTargeting]
   }
 }

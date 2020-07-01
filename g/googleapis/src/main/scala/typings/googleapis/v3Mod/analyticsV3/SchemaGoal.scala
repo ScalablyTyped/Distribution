@@ -1,9 +1,9 @@
 package typings.googleapis.v3Mod.analyticsV3
 
-import typings.googleapis.AnonComparisonValue
-import typings.googleapis.AnonEventConditions
-import typings.googleapis.AnonFirstStepRequired
-import typings.googleapis.AnonHref
+import typings.googleapis.anon.ComparisonValue
+import typings.googleapis.anon.EventConditions
+import typings.googleapis.anon.FirstStepRequired
+import typings.googleapis.anon.Href
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ trait SchemaGoal extends js.Object {
   /**
     * Details for the goal of the type EVENT.
     */
-  var eventDetails: js.UndefOr[AnonEventConditions] = js.native
+  var eventDetails: js.UndefOr[EventConditions] = js.native
   /**
     * Goal ID.
     */
@@ -49,7 +49,7 @@ trait SchemaGoal extends js.Object {
     * Parent link for a goal. Points to the view (profile) to which this goal
     * belongs.
     */
-  var parentLink: js.UndefOr[AnonHref] = js.native
+  var parentLink: js.UndefOr[Href] = js.native
   /**
     * View (Profile) ID to which this goal belongs.
     */
@@ -70,7 +70,7 @@ trait SchemaGoal extends js.Object {
   /**
     * Details for the goal of the type URL_DESTINATION.
     */
-  var urlDestinationDetails: js.UndefOr[AnonFirstStepRequired] = js.native
+  var urlDestinationDetails: js.UndefOr[FirstStepRequired] = js.native
   /**
     * Goal value.
     */
@@ -78,11 +78,11 @@ trait SchemaGoal extends js.Object {
   /**
     * Details for the goal of the type VISIT_NUM_PAGES.
     */
-  var visitNumPagesDetails: js.UndefOr[AnonComparisonValue] = js.native
+  var visitNumPagesDetails: js.UndefOr[ComparisonValue] = js.native
   /**
     * Details for the goal of the type VISIT_TIME_ON_SITE.
     */
-  var visitTimeOnSiteDetails: js.UndefOr[AnonComparisonValue] = js.native
+  var visitTimeOnSiteDetails: js.UndefOr[ComparisonValue] = js.native
   /**
     * Web property ID to which this goal belongs. The web property ID is of the
     * form UA-XXXXX-YY.
@@ -96,25 +96,25 @@ object SchemaGoal {
     accountId: String = null,
     active: js.UndefOr[Boolean] = js.undefined,
     created: String = null,
-    eventDetails: AnonEventConditions = null,
+    eventDetails: EventConditions = null,
     id: String = null,
     internalWebPropertyId: String = null,
     kind: String = null,
     name: String = null,
-    parentLink: AnonHref = null,
+    parentLink: Href = null,
     profileId: String = null,
     selfLink: String = null,
     `type`: String = null,
     updated: String = null,
-    urlDestinationDetails: AnonFirstStepRequired = null,
-    value: Int | Double = null,
-    visitNumPagesDetails: AnonComparisonValue = null,
-    visitTimeOnSiteDetails: AnonComparisonValue = null,
+    urlDestinationDetails: FirstStepRequired = null,
+    value: js.UndefOr[Double] = js.undefined,
+    visitNumPagesDetails: ComparisonValue = null,
+    visitTimeOnSiteDetails: ComparisonValue = null,
     webPropertyId: String = null
   ): SchemaGoal = {
     val __obj = js.Dynamic.literal()
     if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (eventDetails != null) __obj.updateDynamic("eventDetails")(eventDetails.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
@@ -127,7 +127,7 @@ object SchemaGoal {
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     if (urlDestinationDetails != null) __obj.updateDynamic("urlDestinationDetails")(urlDestinationDetails.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     if (visitNumPagesDetails != null) __obj.updateDynamic("visitNumPagesDetails")(visitNumPagesDetails.asInstanceOf[js.Any])
     if (visitTimeOnSiteDetails != null) __obj.updateDynamic("visitTimeOnSiteDetails")(visitTimeOnSiteDetails.asInstanceOf[js.Any])
     if (webPropertyId != null) __obj.updateDynamic("webPropertyId")(webPropertyId.asInstanceOf[js.Any])

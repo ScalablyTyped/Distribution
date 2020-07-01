@@ -2,9 +2,10 @@ package typings.blueprintjsTable.tableBodyMod
 
 import typings.blueprintjsCore.mod.AbstractComponent2
 import typings.blueprintjsTable.anon.Loading
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
-import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +18,7 @@ class TableBody ()
   var handleSelectionEnd: js.Any = js.native
   var locateClick: js.Any = js.native
   var locateDrag: js.Any = js.native
-  def renderContextMenu(e: typings.react.mod.MouseEvent[HTMLElement, MouseEvent]): Element = js.native
+  def renderContextMenu(e: MouseEvent[HTMLElement, NativeMouseEvent]): Element = js.native
   @JSName("shouldComponentUpdate")
   def shouldComponentUpdate_MTableBody(nextProps: ITableBodyProps): Boolean = js.native
 }

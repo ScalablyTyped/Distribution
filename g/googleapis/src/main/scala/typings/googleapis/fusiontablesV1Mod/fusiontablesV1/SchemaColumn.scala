@@ -1,6 +1,6 @@
 package typings.googleapis.fusiontablesV1Mod.fusiontablesV1
 
-import typings.googleapis.AnonColumnId
+import typings.googleapis.anon.ColumnId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait SchemaColumn extends js.Object {
     * Optional identifier of the base column. If present, this column is
     * derived from the specified base column.
     */
-  var baseColumn: js.UndefOr[AnonColumnId] = js.native
+  var baseColumn: js.UndefOr[ColumnId] = js.native
   /**
     * Identifier for the column.
     */
@@ -46,8 +46,8 @@ trait SchemaColumn extends js.Object {
 object SchemaColumn {
   @scala.inline
   def apply(
-    baseColumn: AnonColumnId = null,
-    columnId: Int | Double = null,
+    baseColumn: ColumnId = null,
+    columnId: js.UndefOr[Double] = js.undefined,
     description: String = null,
     graph_predicate: String = null,
     kind: String = null,
@@ -56,7 +56,7 @@ object SchemaColumn {
   ): SchemaColumn = {
     val __obj = js.Dynamic.literal()
     if (baseColumn != null) __obj.updateDynamic("baseColumn")(baseColumn.asInstanceOf[js.Any])
-    if (columnId != null) __obj.updateDynamic("columnId")(columnId.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnId)) __obj.updateDynamic("columnId")(columnId.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (graph_predicate != null) __obj.updateDynamic("graph_predicate")(graph_predicate.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])

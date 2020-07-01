@@ -15,6 +15,7 @@ trait Hero extends js.Object {
   var misc: js.UndefOr[Statistic] = js.undefined
   var name: String
   var rawName: String
+  var raw_name: String
 }
 
 object Hero {
@@ -22,6 +23,7 @@ object Hero {
   def apply(
     name: String,
     rawName: String,
+    raw_name: String,
     assists: Statistic = null,
     average: Statistic = null,
     awards: Statistic = null,
@@ -31,7 +33,7 @@ object Hero {
     hero: Statistic = null,
     misc: Statistic = null
   ): Hero = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], raw_name = raw_name.asInstanceOf[js.Any])
     if (assists != null) __obj.updateDynamic("assists")(assists.asInstanceOf[js.Any])
     if (average != null) __obj.updateDynamic("average")(average.asInstanceOf[js.Any])
     if (awards != null) __obj.updateDynamic("awards")(awards.asInstanceOf[js.Any])

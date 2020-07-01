@@ -20,7 +20,7 @@ object SchemaDebugOptions {
   @scala.inline
   def apply(enableDebugging: js.UndefOr[Boolean] = js.undefined): SchemaDebugOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableDebugging)) __obj.updateDynamic("enableDebugging")(enableDebugging.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableDebugging)) __obj.updateDynamic("enableDebugging")(enableDebugging.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDebugOptions]
   }
 }

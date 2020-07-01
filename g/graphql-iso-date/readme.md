@@ -1,7 +1,7 @@
 
 # Scala.js typings for graphql-iso-date
 
-Typings are for version 3.3
+Typings are for version 3.4
 
 ## Library description:
 A set of RFC 3339 compliant date/time GraphQL scalar types.

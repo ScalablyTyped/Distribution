@@ -6,9 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait StasisStart extends Event {
-  /* Properties */
+  /**
+    * Arguments to the application.
+    */
   var args: String | js.Array[String]
+  /**
+    * Channel.
+    */
   var channel: Channel
+  /**
+    * Replace_channel.
+    */
   var replace_channel: js.UndefOr[Channel] = js.undefined
 }
 

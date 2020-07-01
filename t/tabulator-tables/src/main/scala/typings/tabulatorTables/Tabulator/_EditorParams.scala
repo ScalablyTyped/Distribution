@@ -71,6 +71,7 @@ object _EditorParams {
     maskLetterChar: String = null,
     maskNumberChar: String = null,
     maskWildcardChar: String = null,
+    multiselect: Boolean | Double = null,
     sortValuesList: asc | desc = null,
     verticalNavigation: editor | table | hybrid = null
   ): _EditorParams = {
@@ -83,6 +84,7 @@ object _EditorParams {
     if (maskLetterChar != null) __obj.updateDynamic("maskLetterChar")(maskLetterChar.asInstanceOf[js.Any])
     if (maskNumberChar != null) __obj.updateDynamic("maskNumberChar")(maskNumberChar.asInstanceOf[js.Any])
     if (maskWildcardChar != null) __obj.updateDynamic("maskWildcardChar")(maskWildcardChar.asInstanceOf[js.Any])
+    if (multiselect != null) __obj.updateDynamic("multiselect")(multiselect.asInstanceOf[js.Any])
     if (sortValuesList != null) __obj.updateDynamic("sortValuesList")(sortValuesList.asInstanceOf[js.Any])
     if (verticalNavigation != null) __obj.updateDynamic("verticalNavigation")(verticalNavigation.asInstanceOf[js.Any])
     __obj.asInstanceOf[_EditorParams]
@@ -111,7 +113,7 @@ object _EditorParams {
   }
   @scala.inline
   def AutoCompleteParams(
-    values: `true` | js.Array[String] | JSONRecord | String,
+    values: `true` | (js.Array[_ | String]) | JSONRecord | String,
     allowEmpty: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String = null,
     elementAttributes: JSONRecord = null,

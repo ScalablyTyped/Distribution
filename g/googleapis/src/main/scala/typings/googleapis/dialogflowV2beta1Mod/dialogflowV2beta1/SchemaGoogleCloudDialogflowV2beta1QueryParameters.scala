@@ -73,7 +73,7 @@ object SchemaGoogleCloudDialogflowV2beta1QueryParameters {
     if (geoLocation != null) __obj.updateDynamic("geoLocation")(geoLocation.asInstanceOf[js.Any])
     if (knowledgeBaseNames != null) __obj.updateDynamic("knowledgeBaseNames")(knowledgeBaseNames.asInstanceOf[js.Any])
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetContexts)) __obj.updateDynamic("resetContexts")(resetContexts.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetContexts)) __obj.updateDynamic("resetContexts")(resetContexts.get.asInstanceOf[js.Any])
     if (sentimentAnalysisRequestConfig != null) __obj.updateDynamic("sentimentAnalysisRequestConfig")(sentimentAnalysisRequestConfig.asInstanceOf[js.Any])
     if (sessionEntityTypes != null) __obj.updateDynamic("sessionEntityTypes")(sessionEntityTypes.asInstanceOf[js.Any])
     if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])

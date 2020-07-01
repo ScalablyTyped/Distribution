@@ -18,7 +18,6 @@ trait Application extends ClientObject {
   @JSName("context")
   var context_Application: RequestContext = js.native
   /**
-    *
     * Creates a new document by using an optional base64 encoded .docx file.
     *
     * [Api set: WordApi 1.3]

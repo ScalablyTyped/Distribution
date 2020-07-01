@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateEnrollmentStatusRequest extends js.Object {
   /**
-    * Indicates whether to enroll member accounts within the organization, if the account is a master account of an organization.
+    * Indicates whether to enroll member accounts of the organization if the your account is the master account of an organization.
     */
   var includeMemberAccounts: js.UndefOr[IncludeMemberAccounts] = js.native
   /**

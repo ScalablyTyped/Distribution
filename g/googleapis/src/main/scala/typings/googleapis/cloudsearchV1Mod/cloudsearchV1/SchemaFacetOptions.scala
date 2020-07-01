@@ -35,13 +35,13 @@ trait SchemaFacetOptions extends js.Object {
 object SchemaFacetOptions {
   @scala.inline
   def apply(
-    numFacetBuckets: Int | Double = null,
+    numFacetBuckets: js.UndefOr[Double] = js.undefined,
     objectType: String = null,
     operatorName: String = null,
     sourceName: String = null
   ): SchemaFacetOptions = {
     val __obj = js.Dynamic.literal()
-    if (numFacetBuckets != null) __obj.updateDynamic("numFacetBuckets")(numFacetBuckets.asInstanceOf[js.Any])
+    if (!js.isUndefined(numFacetBuckets)) __obj.updateDynamic("numFacetBuckets")(numFacetBuckets.get.asInstanceOf[js.Any])
     if (objectType != null) __obj.updateDynamic("objectType")(objectType.asInstanceOf[js.Any])
     if (operatorName != null) __obj.updateDynamic("operatorName")(operatorName.asInstanceOf[js.Any])
     if (sourceName != null) __obj.updateDynamic("sourceName")(sourceName.asInstanceOf[js.Any])

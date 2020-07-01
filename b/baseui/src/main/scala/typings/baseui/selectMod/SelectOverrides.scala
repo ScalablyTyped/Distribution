@@ -65,6 +65,9 @@ trait SelectOverrides extends js.Object {
   var StatefulMenu: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
   ] = js.undefined
+  var Tag: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
+  ] = js.undefined
   var ValueContainer: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
   ] = js.undefined
@@ -93,6 +96,7 @@ object SelectOverrides {
     SelectArrow: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null,
     SingleValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null,
     StatefulMenu: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null,
+    Tag: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null,
     ValueContainer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null
   ): SelectOverrides = {
     val __obj = js.Dynamic.literal()
@@ -116,6 +120,7 @@ object SelectOverrides {
     if (SelectArrow != null) __obj.updateDynamic("SelectArrow")(SelectArrow.asInstanceOf[js.Any])
     if (SingleValue != null) __obj.updateDynamic("SingleValue")(SingleValue.asInstanceOf[js.Any])
     if (StatefulMenu != null) __obj.updateDynamic("StatefulMenu")(StatefulMenu.asInstanceOf[js.Any])
+    if (Tag != null) __obj.updateDynamic("Tag")(Tag.asInstanceOf[js.Any])
     if (ValueContainer != null) __obj.updateDynamic("ValueContainer")(ValueContainer.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectOverrides]
   }

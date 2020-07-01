@@ -15,7 +15,7 @@ trait CreateRoomRequest extends js.Object {
     */
   var Description: js.UndefOr[RoomDescription] = js.native
   /**
-    * The profile ARN for the room.
+    * The profile ARN for the room. This is required.
     */
   var ProfileArn: js.UndefOr[Arn] = js.native
   /**

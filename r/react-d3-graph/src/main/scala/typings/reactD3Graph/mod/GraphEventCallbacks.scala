@@ -8,6 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GraphEventCallbacks extends js.Object {
+  def onClickGraph(event: MouseEvent[Element, NativeMouseEvent]): Unit
   def onClickLink(source: String, target: String): Unit
   def onClickNode(nodeId: String): Unit
   def onDoubleClickNode(nodeId: String): Unit
@@ -23,6 +24,7 @@ trait GraphEventCallbacks extends js.Object {
 object GraphEventCallbacks {
   @scala.inline
   def apply(
+    onClickGraph: MouseEvent[Element, NativeMouseEvent] => Unit,
     onClickLink: (String, String) => Unit,
     onClickNode: String => Unit,
     onDoubleClickNode: String => Unit,
@@ -34,7 +36,7 @@ object GraphEventCallbacks {
     onRightClickLink: (MouseEvent[Element, NativeMouseEvent], String, String) => Unit,
     onRightClickNode: (MouseEvent[Element, NativeMouseEvent], String) => Unit
   ): GraphEventCallbacks = {
-    val __obj = js.Dynamic.literal(onClickLink = js.Any.fromFunction2(onClickLink), onClickNode = js.Any.fromFunction1(onClickNode), onDoubleClickNode = js.Any.fromFunction1(onDoubleClickNode), onMouseOutLink = js.Any.fromFunction2(onMouseOutLink), onMouseOutNode = js.Any.fromFunction1(onMouseOutNode), onMouseOverLink = js.Any.fromFunction2(onMouseOverLink), onMouseOverNode = js.Any.fromFunction1(onMouseOverNode), onNodePositionChange = js.Any.fromFunction3(onNodePositionChange), onRightClickLink = js.Any.fromFunction3(onRightClickLink), onRightClickNode = js.Any.fromFunction2(onRightClickNode))
+    val __obj = js.Dynamic.literal(onClickGraph = js.Any.fromFunction1(onClickGraph), onClickLink = js.Any.fromFunction2(onClickLink), onClickNode = js.Any.fromFunction1(onClickNode), onDoubleClickNode = js.Any.fromFunction1(onDoubleClickNode), onMouseOutLink = js.Any.fromFunction2(onMouseOutLink), onMouseOutNode = js.Any.fromFunction1(onMouseOutNode), onMouseOverLink = js.Any.fromFunction2(onMouseOverLink), onMouseOverNode = js.Any.fromFunction1(onMouseOverNode), onNodePositionChange = js.Any.fromFunction3(onNodePositionChange), onRightClickLink = js.Any.fromFunction3(onRightClickLink), onRightClickNode = js.Any.fromFunction2(onRightClickNode))
     __obj.asInstanceOf[GraphEventCallbacks]
   }
 }

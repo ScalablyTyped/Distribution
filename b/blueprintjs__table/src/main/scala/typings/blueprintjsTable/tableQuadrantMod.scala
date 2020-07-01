@@ -142,7 +142,7 @@ object tableQuadrantMod extends js.Object {
   /* static members */
   @js.native
   object TableQuadrant extends js.Object {
-    var defaultProps: PartialITableQuadrantProp with js.Object = js.native
+    var defaultProps: PartialITableQuadrantProp = js.native
   }
   
 }

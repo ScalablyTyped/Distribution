@@ -40,13 +40,13 @@ object SchemaDisk {
   @scala.inline
   def apply(
     name: String = null,
-    sizeGb: Int | Double = null,
+    sizeGb: js.UndefOr[Double] = js.undefined,
     sourceImage: String = null,
     `type`: String = null
   ): SchemaDisk = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (sizeGb != null) __obj.updateDynamic("sizeGb")(sizeGb.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizeGb)) __obj.updateDynamic("sizeGb")(sizeGb.get.asInstanceOf[js.Any])
     if (sourceImage != null) __obj.updateDynamic("sourceImage")(sourceImage.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDisk]

@@ -88,6 +88,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
+import typings.react.mod.RefObject
 import typings.react.mod.TouchEventHandler
 import typings.react.mod.TransitionEventHandler
 import typings.react.mod.UIEventHandler
@@ -225,6 +226,7 @@ trait FontAwesomeIconProps extends js.Object {
   var fontVariant: js.UndefOr[Double | String] = js.undefined
   var fontWeight: js.UndefOr[Double | String] = js.undefined
   var format: js.UndefOr[Double | String] = js.undefined
+  var forwardedRef: js.UndefOr[(js.Function1[/* e */ js.Any, Unit]) | RefObject[_]] = js.undefined
   var from: js.UndefOr[Double | String] = js.undefined
   var fx: js.UndefOr[Double | String] = js.undefined
   var fy: js.UndefOr[Double | String] = js.undefined

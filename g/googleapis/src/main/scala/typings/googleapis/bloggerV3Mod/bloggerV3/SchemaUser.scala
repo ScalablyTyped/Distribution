@@ -1,7 +1,7 @@
 package typings.googleapis.bloggerV3Mod.bloggerV3
 
-import typings.googleapis.AnonCountry
-import typings.googleapis.AnonSelfLinkString
+import typings.googleapis.anon.Country
+import typings.googleapis.anon.SelfLinkString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait SchemaUser extends js.Object {
   /**
     * The container of blogs for this user.
     */
-  var blogs: js.UndefOr[AnonSelfLinkString] = js.native
+  var blogs: js.UndefOr[SelfLinkString] = js.native
   /**
     * The timestamp of when this profile was created, in seconds since epoch.
     */
@@ -35,7 +35,7 @@ trait SchemaUser extends js.Object {
   /**
     * This user&#39;s locale
     */
-  var locale: js.UndefOr[AnonCountry] = js.native
+  var locale: js.UndefOr[Country] = js.native
   /**
     * The API REST URL to fetch this resource from.
     */
@@ -50,12 +50,12 @@ object SchemaUser {
   @scala.inline
   def apply(
     about: String = null,
-    blogs: AnonSelfLinkString = null,
+    blogs: SelfLinkString = null,
     created: String = null,
     displayName: String = null,
     id: String = null,
     kind: String = null,
-    locale: AnonCountry = null,
+    locale: Country = null,
     selfLink: String = null,
     url: String = null
   ): SchemaUser = {

@@ -49,7 +49,7 @@ object SchemaProjectBillingInfo {
   ): SchemaProjectBillingInfo = {
     val __obj = js.Dynamic.literal()
     if (billingAccountName != null) __obj.updateDynamic("billingAccountName")(billingAccountName.asInstanceOf[js.Any])
-    if (!js.isUndefined(billingEnabled)) __obj.updateDynamic("billingEnabled")(billingEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(billingEnabled)) __obj.updateDynamic("billingEnabled")(billingEnabled.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProjectBillingInfo]

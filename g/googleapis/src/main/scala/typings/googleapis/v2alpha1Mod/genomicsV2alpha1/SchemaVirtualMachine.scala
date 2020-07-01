@@ -93,7 +93,7 @@ object SchemaVirtualMachine {
   @scala.inline
   def apply(
     accelerators: js.Array[SchemaAccelerator] = null,
-    bootDiskSizeGb: Int | Double = null,
+    bootDiskSizeGb: js.UndefOr[Double] = js.undefined,
     bootImage: String = null,
     cpuPlatform: String = null,
     disks: js.Array[SchemaDisk] = null,
@@ -106,7 +106,7 @@ object SchemaVirtualMachine {
   ): SchemaVirtualMachine = {
     val __obj = js.Dynamic.literal()
     if (accelerators != null) __obj.updateDynamic("accelerators")(accelerators.asInstanceOf[js.Any])
-    if (bootDiskSizeGb != null) __obj.updateDynamic("bootDiskSizeGb")(bootDiskSizeGb.asInstanceOf[js.Any])
+    if (!js.isUndefined(bootDiskSizeGb)) __obj.updateDynamic("bootDiskSizeGb")(bootDiskSizeGb.get.asInstanceOf[js.Any])
     if (bootImage != null) __obj.updateDynamic("bootImage")(bootImage.asInstanceOf[js.Any])
     if (cpuPlatform != null) __obj.updateDynamic("cpuPlatform")(cpuPlatform.asInstanceOf[js.Any])
     if (disks != null) __obj.updateDynamic("disks")(disks.asInstanceOf[js.Any])
@@ -114,7 +114,7 @@ object SchemaVirtualMachine {
     if (machineType != null) __obj.updateDynamic("machineType")(machineType.asInstanceOf[js.Any])
     if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
     if (nvidiaDriverVersion != null) __obj.updateDynamic("nvidiaDriverVersion")(nvidiaDriverVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(preemptible)) __obj.updateDynamic("preemptible")(preemptible.asInstanceOf[js.Any])
+    if (!js.isUndefined(preemptible)) __obj.updateDynamic("preemptible")(preemptible.get.asInstanceOf[js.Any])
     if (serviceAccount != null) __obj.updateDynamic("serviceAccount")(serviceAccount.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVirtualMachine]
   }

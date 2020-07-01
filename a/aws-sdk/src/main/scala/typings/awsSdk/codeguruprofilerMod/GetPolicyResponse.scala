@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetPolicyResponse extends js.Object {
   /**
-    * The resource-based policy attached to the ProfilingGroup.
+    * The JSON-formatted resource-based policy attached to the ProfilingGroup.
     */
   var policy: String = js.native
   /**
-    * A unique identifier for the current revision of the policy.
+    * A unique identifier for the current revision of the returned policy.
     */
   var revisionId: RevisionId = js.native
 }

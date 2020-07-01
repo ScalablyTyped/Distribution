@@ -1,6 +1,6 @@
 package typings.googleapis.booksV1Mod.booksV1
 
-import typings.googleapis.AnonContentVersion
+import typings.googleapis.anon.ContentVersion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ trait SchemaVolumeannotation extends js.Object {
   /**
     * The content ranges to identify the selected text.
     */
-  var contentRanges: js.UndefOr[AnonContentVersion] = js.native
+  var contentRanges: js.UndefOr[ContentVersion] = js.native
   /**
     * Data for this annotation.
     */
@@ -72,7 +72,7 @@ object SchemaVolumeannotation {
     annotationDataId: String = null,
     annotationDataLink: String = null,
     annotationType: String = null,
-    contentRanges: AnonContentVersion = null,
+    contentRanges: ContentVersion = null,
     data: String = null,
     deleted: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
@@ -90,7 +90,7 @@ object SchemaVolumeannotation {
     if (annotationType != null) __obj.updateDynamic("annotationType")(annotationType.asInstanceOf[js.Any])
     if (contentRanges != null) __obj.updateDynamic("contentRanges")(contentRanges.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])

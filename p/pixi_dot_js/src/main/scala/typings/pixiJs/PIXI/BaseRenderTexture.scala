@@ -47,13 +47,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BaseRenderTexture extends BaseTexture {
   /**
-    * A reference to the canvas render target (we only need one as this can be shared across renderers)
-    *
-    * @protected
-    * @member {object} PIXI.BaseRenderTexture#_canvasRenderTarget
-    */
-  var _canvasRenderTarget: js.Any = js.native
-  /**
     * The data structure for the filters.
     *
     * @member {Object[]} PIXI.BaseRenderTexture#filterStack

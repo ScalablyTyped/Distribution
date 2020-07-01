@@ -48,11 +48,15 @@ trait SchemaHistogramRule extends js.Object {
 
 object SchemaHistogramRule {
   @scala.inline
-  def apply(end: Int | Double = null, interval: Int | Double = null, start: Int | Double = null): SchemaHistogramRule = {
+  def apply(
+    end: js.UndefOr[Double] = js.undefined,
+    interval: js.UndefOr[Double] = js.undefined,
+    start: js.UndefOr[Double] = js.undefined
+  ): SchemaHistogramRule = {
     val __obj = js.Dynamic.literal()
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHistogramRule]
   }
 }

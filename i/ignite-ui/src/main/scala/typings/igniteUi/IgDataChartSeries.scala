@@ -730,6 +730,7 @@ trait IgDataChartSeries
     * "categoryItemHighlightLayer" Specify the series as a category item highlight layer.
     * "itemToolTipLayer" Specify the series as an item tooltip layer.
     * "categoryToolTipLayer" Specify the series as a category tooltip layer.
+    * "calloutLayer" Specify the series as a callout layer.
     */
   var `type`: js.UndefOr[String] = js.undefined
   /**

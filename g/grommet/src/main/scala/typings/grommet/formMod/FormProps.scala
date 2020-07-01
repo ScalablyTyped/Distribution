@@ -3,7 +3,6 @@ package typings.grommet.formMod
 import typings.grommet.anon.Invalid
 import typings.grommet.grommetStrings.blur
 import typings.grommet.grommetStrings.submit
-import typings.react.mod.ChangeEvent
 import typings.react.mod.FormEvent
 import typings.react.mod.SyntheticEvent
 import typings.std.Element
@@ -12,11 +11,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FormProps extends js.Object {
+trait FormProps[T] extends js.Object {
   var errors: js.UndefOr[js.Object] = js.undefined
   var infos: js.UndefOr[js.Object] = js.undefined
   var messages: js.UndefOr[Invalid] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* event */ ChangeEvent[Element], Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.undefined
   var onReset: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], _]] = js.undefined
   var onSubmit: js.UndefOr[js.Function1[/* event */ FormEvent[Element], Unit]] = js.undefined
   var validate: js.UndefOr[blur | submit] = js.undefined
@@ -25,16 +24,16 @@ trait FormProps extends js.Object {
 
 object FormProps {
   @scala.inline
-  def apply(
+  def apply[T](
     errors: js.Object = null,
     infos: js.Object = null,
     messages: Invalid = null,
-    onChange: /* event */ ChangeEvent[Element] => Unit = null,
+    onChange: /* value */ T => Unit = null,
     onReset: /* event */ SyntheticEvent[Element, Event] => _ = null,
     onSubmit: /* event */ FormEvent[Element] => Unit = null,
     validate: blur | submit = null,
     value: js.Object = null
-  ): FormProps = {
+  ): FormProps[T] = {
     val __obj = js.Dynamic.literal()
     if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     if (infos != null) __obj.updateDynamic("infos")(infos.asInstanceOf[js.Any])
@@ -44,7 +43,7 @@ object FormProps {
     if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1(onSubmit))
     if (validate != null) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FormProps]
+    __obj.asInstanceOf[FormProps[T]]
   }
 }
 

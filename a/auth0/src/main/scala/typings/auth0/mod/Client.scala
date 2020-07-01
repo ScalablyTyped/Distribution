@@ -53,6 +53,7 @@ trait Client extends js.Object {
     * A set of grant types that the client is authorized to use
     */
   var grant_types: js.UndefOr[js.Array[Grant]] = js.undefined
+  var initiate_login_uri: js.UndefOr[String] = js.undefined
   /**
     * Whether this client a first party client or not.
     */
@@ -109,6 +110,7 @@ object Client {
     encryption_key: Cert = null,
     form_template: String = null,
     grant_types: js.Array[Grant] = null,
+    initiate_login_uri: String = null,
     is_first_party: js.UndefOr[Boolean] = js.undefined,
     jwt_configuration: Alg = null,
     logo_uri: String = null,
@@ -141,6 +143,7 @@ object Client {
     if (encryption_key != null) __obj.updateDynamic("encryption_key")(encryption_key.asInstanceOf[js.Any])
     if (form_template != null) __obj.updateDynamic("form_template")(form_template.asInstanceOf[js.Any])
     if (grant_types != null) __obj.updateDynamic("grant_types")(grant_types.asInstanceOf[js.Any])
+    if (initiate_login_uri != null) __obj.updateDynamic("initiate_login_uri")(initiate_login_uri.asInstanceOf[js.Any])
     if (!js.isUndefined(is_first_party)) __obj.updateDynamic("is_first_party")(is_first_party.get.asInstanceOf[js.Any])
     if (jwt_configuration != null) __obj.updateDynamic("jwt_configuration")(jwt_configuration.asInstanceOf[js.Any])
     if (logo_uri != null) __obj.updateDynamic("logo_uri")(logo_uri.asInstanceOf[js.Any])

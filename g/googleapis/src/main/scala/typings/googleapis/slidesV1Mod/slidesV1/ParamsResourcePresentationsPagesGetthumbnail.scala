@@ -67,7 +67,7 @@ object ParamsResourcePresentationsPagesGetthumbnail {
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (pageObjectId != null) __obj.updateDynamic("pageObjectId")(pageObjectId.asInstanceOf[js.Any])
     if (presentationId != null) __obj.updateDynamic("presentationId")(presentationId.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (thumbnailPropertiesDotmimeType != null) __obj.updateDynamic("thumbnailProperties.mimeType")(thumbnailPropertiesDotmimeType.asInstanceOf[js.Any])
     if (thumbnailPropertiesDotthumbnailSize != null) __obj.updateDynamic("thumbnailProperties.thumbnailSize")(thumbnailPropertiesDotthumbnailSize.asInstanceOf[js.Any])

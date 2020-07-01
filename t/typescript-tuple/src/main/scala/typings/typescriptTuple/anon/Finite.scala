@@ -12,7 +12,7 @@ trait Finite[Holder /* <: js.Array[_] */, Tuple /* <: js.Array[_] */] extends js
 
 object Finite {
   @scala.inline
-  def apply[Holder, Tuple](finite: js.Tuple2[Tuple, js.Array[js.Any]], matched: js.Tuple2[Holder, Tuple], unmatched: js.Any): Finite[Holder, Tuple] = {
+  def apply[/* <: js.Array[_] */ Holder, /* <: js.Array[_] */ Tuple](finite: js.Tuple2[Tuple, js.Array[js.Any]], matched: js.Tuple2[Holder, Tuple], unmatched: js.Any): Finite[Holder, Tuple] = {
     val __obj = js.Dynamic.literal(finite = finite.asInstanceOf[js.Any], matched = matched.asInstanceOf[js.Any], unmatched = unmatched.asInstanceOf[js.Any])
     __obj.asInstanceOf[Finite[Holder, Tuple]]
   }

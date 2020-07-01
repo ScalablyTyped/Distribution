@@ -66,6 +66,12 @@ object web3CoreStrings {
   sealed trait ropsten extends chain
   
   @js.native
+  sealed trait sending extends js.Object
+  
+  @js.native
+  sealed trait sent extends js.Object
+  
+  @js.native
   sealed trait spuriousDragon extends hardfork
   
   @js.native
@@ -112,6 +118,10 @@ object web3CoreStrings {
   def rinkeby: rinkeby = "rinkeby".asInstanceOf[rinkeby]
   @scala.inline
   def ropsten: ropsten = "ropsten".asInstanceOf[ropsten]
+  @scala.inline
+  def sending: sending = "sending".asInstanceOf[sending]
+  @scala.inline
+  def sent: sent = "sent".asInstanceOf[sent]
   @scala.inline
   def spuriousDragon: spuriousDragon = "spuriousDragon".asInstanceOf[spuriousDragon]
   @scala.inline

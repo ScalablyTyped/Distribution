@@ -74,6 +74,10 @@ trait GraphicsDevice extends EventHandler {
     */
   var textureHalfFloatRenderable: Boolean = js.native
   /**
+    * Check if texture with half float format can be updated with data.
+    */
+  val textureHalfFloatUpdatable: Double = js.native
+  /**
     * Width of the back buffer in pixels.
     */
   val width: Double = js.native

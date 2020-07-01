@@ -65,7 +65,7 @@ object SchemaCounterStructuredName {
   def apply(
     componentStepName: String = null,
     executionStepName: String = null,
-    inputIndex: Int | Double = null,
+    inputIndex: js.UndefOr[Double] = js.undefined,
     name: String = null,
     origin: String = null,
     originNamespace: String = null,
@@ -77,7 +77,7 @@ object SchemaCounterStructuredName {
     val __obj = js.Dynamic.literal()
     if (componentStepName != null) __obj.updateDynamic("componentStepName")(componentStepName.asInstanceOf[js.Any])
     if (executionStepName != null) __obj.updateDynamic("executionStepName")(executionStepName.asInstanceOf[js.Any])
-    if (inputIndex != null) __obj.updateDynamic("inputIndex")(inputIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputIndex)) __obj.updateDynamic("inputIndex")(inputIndex.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     if (originNamespace != null) __obj.updateDynamic("originNamespace")(originNamespace.asInstanceOf[js.Any])

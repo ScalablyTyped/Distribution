@@ -35,12 +35,12 @@ object SchemaSpeechRecognitionResult {
   @scala.inline
   def apply(
     alternatives: js.Array[SchemaSpeechRecognitionAlternative] = null,
-    channelTag: Int | Double = null,
+    channelTag: js.UndefOr[Double] = js.undefined,
     languageCode: String = null
   ): SchemaSpeechRecognitionResult = {
     val __obj = js.Dynamic.literal()
     if (alternatives != null) __obj.updateDynamic("alternatives")(alternatives.asInstanceOf[js.Any])
-    if (channelTag != null) __obj.updateDynamic("channelTag")(channelTag.asInstanceOf[js.Any])
+    if (!js.isUndefined(channelTag)) __obj.updateDynamic("channelTag")(channelTag.get.asInstanceOf[js.Any])
     if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSpeechRecognitionResult]
   }

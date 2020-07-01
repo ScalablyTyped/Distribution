@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   var computed: Boolean
   var `object`: Expression
   var optional: Boolean
-  var property: js.Any
+  var property: Expression | Identifier_
   @JSName("type")
   var type_OptionalMemberExpression_ : OptionalMemberExpression
 }
@@ -23,7 +23,7 @@ object OptionalMemberExpression_ {
     computed: Boolean,
     `object`: Expression,
     optional: Boolean,
-    property: js.Any,
+    property: Expression | Identifier_,
     `type`: OptionalMemberExpression,
     end: Double = null.asInstanceOf[Double],
     innerComments: js.Array[Comment] = null,

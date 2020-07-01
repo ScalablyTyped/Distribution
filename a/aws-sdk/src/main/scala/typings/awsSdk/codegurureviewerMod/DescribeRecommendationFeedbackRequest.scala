@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeRecommendationFeedbackRequest extends js.Object {
   /**
-    *  The Amazon Resource Name (ARN) that identifies the code review. 
+    * The Amazon Resource Name (ARN) of the  CodeReview  object. 
     */
   var CodeReviewArn: Arn = js.native
   /**
@@ -15,7 +15,7 @@ trait DescribeRecommendationFeedbackRequest extends js.Object {
     */
   var RecommendationId: typings.awsSdk.codegurureviewerMod.RecommendationId = js.native
   /**
-    *  Optional parameter to describe the feedback for a given user. If this is not supplied, it defaults to the user making the request. 
+    *  Optional parameter to describe the feedback for a given user. If this is not supplied, it defaults to the user making the request.   The UserId is an IAM principal that can be specified as an AWS account ID or an Amazon Resource Name (ARN). For more information, see  Specifying a Principal in the AWS Identity and Access Management User Guide. 
     */
   var UserId: js.UndefOr[typings.awsSdk.codegurureviewerMod.UserId] = js.native
 }

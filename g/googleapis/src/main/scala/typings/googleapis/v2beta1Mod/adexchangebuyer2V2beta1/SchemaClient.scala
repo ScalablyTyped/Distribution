@@ -98,7 +98,7 @@ object SchemaClient {
     if (partnerClientId != null) __obj.updateDynamic("partnerClientId")(partnerClientId.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibleToSeller)) __obj.updateDynamic("visibleToSeller")(visibleToSeller.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibleToSeller)) __obj.updateDynamic("visibleToSeller")(visibleToSeller.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaClient]
   }
 }

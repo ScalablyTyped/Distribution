@@ -8,6 +8,7 @@ import typings.mendixmodelsdk.internalMod.Element
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.workflowsMod.workflows.UserTask
+import typings.mendixmodelsdk.workflowsMod.workflows.Workflow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,6 +34,7 @@ abstract class Template protected () extends Element {
   def containerAsStringTemplateParameterValue: StringTemplateParameterValue = js.native
   def containerAsUserTask: UserTask = js.native
   def containerAsValidationFeedbackAction: ValidationFeedbackAction = js.native
+  def containerAsWorkflow: Workflow = js.native
 }
 
 /* static members */

@@ -113,6 +113,9 @@ object filters extends js.Object {
   @js.native
   class BlurFilterPass protected ()
     extends typings.pixiJs.PIXI.filters.BlurFilterPass {
+    def this(horizontal: Boolean) = this()
+    def this(horizontal: Boolean, strength: Double) = this()
+    def this(horizontal: Boolean, strength: Double, quality: Double) = this()
     def this(horizontal: Boolean, strength: Double, quality: Double, resolution: Double) = this()
     def this(horizontal: Boolean, strength: Double, quality: Double, resolution: Double, kernelSize: Double) = this()
     /**

@@ -45,7 +45,7 @@ import scala.scalajs.js.annotation._
   - typings.ariaQuery.ariaQueryStrings.`doc-tip`
   - typings.ariaQuery.ariaQueryStrings.`doc-toc`
 */
-trait ARIADPubRole extends js.Object
+trait ARIADPubRole extends _ARIARoleDefintionKey
 
 object ARIADPubRole {
   @scala.inline

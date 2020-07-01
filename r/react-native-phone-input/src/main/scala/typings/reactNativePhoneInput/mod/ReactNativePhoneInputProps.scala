@@ -99,7 +99,7 @@ trait ReactNativePhoneInputProps[TextComponentType /* <: ComponentType[js.Object
 
 object ReactNativePhoneInputProps {
   @scala.inline
-  def apply[TextComponentType](
+  def apply[/* <: typings.react.mod.ComponentType[js.Object] */ TextComponentType](
     allowZeroAfterCountryCode: js.UndefOr[Boolean] = js.undefined,
     buttonTextStyle: js.UndefOr[Null | TextStyle] = js.undefined,
     cancelText: String = null,

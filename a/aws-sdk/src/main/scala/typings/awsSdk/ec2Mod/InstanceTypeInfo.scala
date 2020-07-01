@@ -91,6 +91,10 @@ trait InstanceTypeInfo extends js.Object {
     */
   var SupportedUsageClasses: js.UndefOr[UsageClassTypeList] = js.native
   /**
+    * The supported virtualization types.
+    */
+  var SupportedVirtualizationTypes: js.UndefOr[VirtualizationTypeList] = js.native
+  /**
     * Describes the vCPU configurations for the instance type.
     */
   var VCpuInfo: js.UndefOr[typings.awsSdk.ec2Mod.VCpuInfo] = js.native
@@ -120,6 +124,7 @@ object InstanceTypeInfo {
     ProcessorInfo: ProcessorInfo = null,
     SupportedRootDeviceTypes: RootDeviceTypeList = null,
     SupportedUsageClasses: UsageClassTypeList = null,
+    SupportedVirtualizationTypes: VirtualizationTypeList = null,
     VCpuInfo: VCpuInfo = null
   ): InstanceTypeInfo = {
     val __obj = js.Dynamic.literal()
@@ -144,6 +149,7 @@ object InstanceTypeInfo {
     if (ProcessorInfo != null) __obj.updateDynamic("ProcessorInfo")(ProcessorInfo.asInstanceOf[js.Any])
     if (SupportedRootDeviceTypes != null) __obj.updateDynamic("SupportedRootDeviceTypes")(SupportedRootDeviceTypes.asInstanceOf[js.Any])
     if (SupportedUsageClasses != null) __obj.updateDynamic("SupportedUsageClasses")(SupportedUsageClasses.asInstanceOf[js.Any])
+    if (SupportedVirtualizationTypes != null) __obj.updateDynamic("SupportedVirtualizationTypes")(SupportedVirtualizationTypes.asInstanceOf[js.Any])
     if (VCpuInfo != null) __obj.updateDynamic("VCpuInfo")(VCpuInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceTypeInfo]
   }

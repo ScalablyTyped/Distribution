@@ -23,7 +23,7 @@ object SchemaRunMobileFriendlyTestRequest {
   @scala.inline
   def apply(requestScreenshot: js.UndefOr[Boolean] = js.undefined, url: String = null): SchemaRunMobileFriendlyTestRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(requestScreenshot)) __obj.updateDynamic("requestScreenshot")(requestScreenshot.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestScreenshot)) __obj.updateDynamic("requestScreenshot")(requestScreenshot.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRunMobileFriendlyTestRequest]
   }

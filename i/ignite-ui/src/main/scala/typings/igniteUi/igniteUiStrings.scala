@@ -4374,6 +4374,12 @@ object igniteUiStrings {
   sealed trait odata extends js.Object
   
   @js.native
+  sealed trait onAttachedToUI extends js.Object
+  
+  @js.native
+  sealed trait onDetachedFromUI extends js.Object
+  
+  @js.native
   sealed trait onError extends js.Object
   
   @js.native
@@ -9867,6 +9873,10 @@ object igniteUiStrings {
   def number: number = "number".asInstanceOf[number]
   @scala.inline
   def odata: odata = "odata".asInstanceOf[odata]
+  @scala.inline
+  def onAttachedToUI: onAttachedToUI = "onAttachedToUI".asInstanceOf[onAttachedToUI]
+  @scala.inline
+  def onDetachedFromUI: onDetachedFromUI = "onDetachedFromUI".asInstanceOf[onDetachedFromUI]
   @scala.inline
   def onError: onError = "onError".asInstanceOf[onError]
   @scala.inline

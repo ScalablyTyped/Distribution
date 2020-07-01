@@ -10,7 +10,7 @@ trait Data[T /* <: js.Object */] extends js.Object {
 
 object Data {
   @scala.inline
-  def apply[T](data: js.Array[T]): Data[T] = {
+  def apply[/* <: js.Object */ T](data: js.Array[T]): Data[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[Data[T]]
   }

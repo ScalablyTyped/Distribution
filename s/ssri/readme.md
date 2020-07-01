@@ -1,7 +1,7 @@
 
 # Scala.js typings for ssri
 
-Typings are for version 6.0
+Typings are for version 7.1
 
 ## Library description:
 Standard Subresource Integrity library -- parses, serializes, generates, and verifies integrity metadata according to the SRI spec.

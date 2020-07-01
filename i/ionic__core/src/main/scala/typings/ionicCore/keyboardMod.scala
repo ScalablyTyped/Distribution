@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ionic/core/dist/types/utils/keyboard", JSImport.Namespace)
+@JSImport("@ionic/core/dist/types/utils/keyboard/keyboard", JSImport.Namespace)
 @js.native
 object keyboardMod extends js.Object {
   val KEYBOARD_DID_CLOSE: /* "ionKeyboardDidHide" */ String = js.native

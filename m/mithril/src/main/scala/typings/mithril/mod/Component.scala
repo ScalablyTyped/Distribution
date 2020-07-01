@@ -18,7 +18,7 @@ trait Component[Attrs, State /* <: Lifecycle[Attrs, State] */]
 
 object Component {
   @scala.inline
-  def apply[Attrs, State](
+  def apply[Attrs, /* <: typings.mithril.mod.Lifecycle[Attrs, State] */ State](
     view: Vnode[Attrs, State] => Children | Null | Unit,
     onbeforeremove: js.ThisFunction1[State, /* vnode */ VnodeDOM[Attrs, State], js.Promise[_] | Unit] = null,
     onbeforeupdate: js.ThisFunction2[

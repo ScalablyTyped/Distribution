@@ -15,6 +15,7 @@ object mod extends js.Object {
   val CAMERA_ROLL: /* "cameraRoll" */ String = js.native
   val CONTACTS: /* "contacts" */ String = js.native
   val LOCATION: /* "location" */ String = js.native
+  val MOTION: /* "motion" */ String = js.native
   val NOTIFICATIONS: /* "notifications" */ String = js.native
   val REMINDERS: /* "reminders" */ String = js.native
   val SYSTEM_BRIGHTNESS: /* "systemBrightness" */ String = js.native

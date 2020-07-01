@@ -20,19 +20,5 @@ package object Mocha {
   ]
   /** @deprecated use `Mocha.Stats` instead. */
   type IStats = typings.cypress.Mocha.Stats
-  /**
-    * [bdd, tdd] Describe a "suite" with the given `title` and callback `fn` containing
-    * nested suites. Indicates this suite should not be executed.
-    *
-    * - _Only available when invoked via the mocha CLI._
-    *
-    * @returns [bdd] `Suite`
-    * @returns [tdd] `void`
-    */
-  type PendingSuiteFunction = js.Function2[
-    /* title */ java.lang.String, 
-    /* fn */ js.ThisFunction0[/* this */ typings.cypress.Mocha.Suite, scala.Unit], 
-    typings.cypress.Mocha.Suite | scala.Unit
-  ]
   type TestInterface = js.Function1[/* suite */ typings.cypress.Mocha.Suite, scala.Unit]
 }

@@ -15,7 +15,7 @@ trait GeometryObjectA[P /* <: Properties */] extends TopoJSON {
 
 object GeometryObjectA {
   @scala.inline
-  def apply[P](
+  def apply[/* <: typings.topojsonSpecification.mod.Properties */ P](
     bbox: BBox = null,
     id: Double | String = null,
     properties: P = null,

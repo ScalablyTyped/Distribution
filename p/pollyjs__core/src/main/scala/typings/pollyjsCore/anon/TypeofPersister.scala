@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofPersister extends Instantiable0[default] {
-  val name: String = js.native
+  val id: String = js.native
   val `type`: String = js.native
 }
 

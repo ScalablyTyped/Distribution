@@ -8,27 +8,27 @@ trait _SvgProperties[T /* <: SvgElements */] extends js.Object
 
 object _SvgProperties {
   @scala.inline
-  def LineProps[T](x1: Double, x2: Double, y1: Double, y2: Double): _SvgProperties[T] = {
+  def LineProps[/* <: typings.svgIntersections.mod.SvgElements */ T](x1: Double, x2: Double, y1: Double, y2: Double): _SvgProperties[T] = {
     val __obj = js.Dynamic.literal(x1 = x1.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
     __obj.asInstanceOf[_SvgProperties[T]]
   }
   @scala.inline
-  def PolygonProps[T](points: String): _SvgProperties[T] = {
+  def PolygonProps[/* <: typings.svgIntersections.mod.SvgElements */ T](points: String): _SvgProperties[T] = {
     val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
     __obj.asInstanceOf[_SvgProperties[T]]
   }
   @scala.inline
-  def PathProps[T](d: String): _SvgProperties[T] = {
+  def PathProps[/* <: typings.svgIntersections.mod.SvgElements */ T](d: String): _SvgProperties[T] = {
     val __obj = js.Dynamic.literal(d = d.asInstanceOf[js.Any])
     __obj.asInstanceOf[_SvgProperties[T]]
   }
   @scala.inline
-  def CircleProps[T](cx: Double, cy: Double, r: Double): _SvgProperties[T] = {
+  def CircleProps[/* <: typings.svgIntersections.mod.SvgElements */ T](cx: Double, cy: Double, r: Double): _SvgProperties[T] = {
     val __obj = js.Dynamic.literal(cx = cx.asInstanceOf[js.Any], cy = cy.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
     __obj.asInstanceOf[_SvgProperties[T]]
   }
   @scala.inline
-  def RectProps[T](
+  def RectProps[/* <: typings.svgIntersections.mod.SvgElements */ T](
     height: Double,
     width: Double,
     x: Double,
@@ -42,7 +42,7 @@ object _SvgProperties {
     __obj.asInstanceOf[_SvgProperties[T]]
   }
   @scala.inline
-  def EllipseProps[T](cx: Double, cy: Double, rx: Double, ry: Double): _SvgProperties[T] = {
+  def EllipseProps[/* <: typings.svgIntersections.mod.SvgElements */ T](cx: Double, cy: Double, rx: Double, ry: Double): _SvgProperties[T] = {
     val __obj = js.Dynamic.literal(cx = cx.asInstanceOf[js.Any], cy = cy.asInstanceOf[js.Any], rx = rx.asInstanceOf[js.Any], ry = ry.asInstanceOf[js.Any])
     __obj.asInstanceOf[_SvgProperties[T]]
   }

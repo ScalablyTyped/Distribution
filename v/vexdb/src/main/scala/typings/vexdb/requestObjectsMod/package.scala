@@ -5,16 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object requestObjectsMod {
-  type NumberRequest = scala.Double | js.Array[scala.Double] | typings.vexdb.requestObjectsMod.NumberRequestValidatorFunction
-  type NumberRequestValidatorFunction = js.Function2[
-    /* itemValue */ scala.Double, 
-    /* item */ typings.vexdb.responseObjectsMod.ResponseObject, 
-    js.Promise[scala.Boolean] | scala.Boolean
-  ]
-  type StringRequest = java.lang.String | js.Array[java.lang.String] | typings.std.RegExp | typings.vexdb.requestObjectsMod.StringRequestValidatorFunction
-  type StringRequestValidatorFunction = js.Function2[
-    /* itemValue */ java.lang.String, 
-    /* item */ typings.vexdb.responseObjectsMod.ResponseObject, 
-    js.Promise[scala.Boolean] | scala.Boolean
-  ]
+  type NumberRequest[T, S] = S | js.Array[S] | (typings.vexdb.requestObjectsMod.NumberRequestValidatorFunction[T, S])
+  type NumberRequestValidatorFunction[T, S] = js.Function2[/* itemValue */ S, /* item */ T, js.Promise[scala.Boolean] | scala.Boolean]
+  type StringRequest[T, S] = S | js.Array[S] | typings.std.RegExp | (typings.vexdb.requestObjectsMod.StringRequestValidatorFunction[T, S])
+  type StringRequestValidatorFunction[T, S] = js.Function2[/* itemValue */ S, /* item */ T, js.Promise[scala.Boolean] | scala.Boolean]
 }

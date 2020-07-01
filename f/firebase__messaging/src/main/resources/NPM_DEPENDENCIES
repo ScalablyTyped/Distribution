@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/messaging" : "0.6.16"
+      "@firebase/messaging" : "0.6.19"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/messaging" : "0.6.16"
+      "@firebase/messaging" : "0.6.19"
     }
   ],
   "compile-devDependencies" : [

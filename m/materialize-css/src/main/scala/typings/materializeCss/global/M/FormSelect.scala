@@ -1,7 +1,5 @@
 package typings.materializeCss.global.M
 
-import typings.materializeCss.M.FormSelectOptions
-import typings.materializeCss.MElements
 import typings.materializeCss.anon.PartialFormSelectOptions
 import typings.std.Element
 import typings.std.HTMLInputElement
@@ -25,11 +23,6 @@ class FormSelect ()
   /* CompleteClass */
   override var dropdownOptions: HTMLUListElement = js.native
   /**
-    * The DOM element the plugin was initialized with
-    */
-  /* CompleteClass */
-  override var el: Element = js.native
-  /**
     * Text input that shows current selected option
     */
   /* CompleteClass */
@@ -40,20 +33,10 @@ class FormSelect ()
   /* CompleteClass */
   override var isMultiple: Boolean = js.native
   /**
-    * The options the instance was initialized with
-    */
-  /* CompleteClass */
-  override var options: FormSelectOptions = js.native
-  /**
     * The select wrapper element
     */
   /* CompleteClass */
   override var wrapper: Element = js.native
-  /**
-    * Destroy plugin instance and teardown
-    */
-  /* CompleteClass */
-  override def destroy(): Unit = js.native
   /**
     * Get selected values in an array
     */
@@ -72,8 +55,13 @@ object FormSelect extends js.Object {
   /**
     * Init FormSelects
     */
-  def init(els: MElements): js.Array[typings.materializeCss.M.FormSelect] = js.native
-  def init(els: MElements, options: PartialFormSelectOptions): js.Array[typings.materializeCss.M.FormSelect] = js.native
+  def init(
+    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any
+  ): js.Array[typings.materializeCss.M.FormSelect] = js.native
+  def init(
+    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any,
+    options: PartialFormSelectOptions
+  ): js.Array[typings.materializeCss.M.FormSelect] = js.native
   /**
     * Init FormSelect
     */

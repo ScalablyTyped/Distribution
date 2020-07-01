@@ -1,6 +1,6 @@
 package typings.googleapis.deploymentmanagerAlphaMod.deploymentmanagerAlpha
 
-import typings.googleapis.AnonCode
+import typings.googleapis.anon.Code
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -67,7 +67,7 @@ trait SchemaResource extends js.Object {
     * Output only. If warning messages are generated during processing of this
     * resource, this field will be populated.
     */
-  var warnings: js.UndefOr[js.Array[AnonCode]] = js.native
+  var warnings: js.UndefOr[js.Array[Code]] = js.native
 }
 
 object SchemaResource {
@@ -86,7 +86,7 @@ object SchemaResource {
     update: SchemaResourceUpdate = null,
     updateTime: String = null,
     url: String = null,
-    warnings: js.Array[AnonCode] = null
+    warnings: js.Array[Code] = null
   ): SchemaResource = {
     val __obj = js.Dynamic.literal()
     if (accessControl != null) __obj.updateDynamic("accessControl")(accessControl.asInstanceOf[js.Any])

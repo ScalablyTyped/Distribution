@@ -8,6 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 object remoteConfigServiceMod extends js.Object {
   def getConfig(iid: String): js.Promise[Unit] = js.native
-  def isDestFl(iid: String, rolloutPercent: Double): Boolean = js.native
 }
 

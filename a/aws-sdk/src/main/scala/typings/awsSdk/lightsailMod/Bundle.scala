@@ -35,7 +35,7 @@ trait Bundle extends js.Object {
     */
   var power: js.UndefOr[integer] = js.native
   /**
-    * The price in US dollars (e.g., 5.0).
+    * The price in US dollars (e.g., 5.0) of the bundle.
     */
   var price: js.UndefOr[float] = js.native
   /**

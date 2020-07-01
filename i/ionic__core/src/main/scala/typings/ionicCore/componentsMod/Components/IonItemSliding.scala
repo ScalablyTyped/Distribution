@@ -1,7 +1,6 @@
 package typings.ionicCore.componentsMod.Components
 
-import typings.ionicCore.ionicCoreStrings.end
-import typings.ionicCore.ionicCoreStrings.start
+import typings.ionicCore.mod.Side
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,9 +32,6 @@ trait IonItemSliding extends js.Object {
     * @param side The side of the options to open. If a side is not provided, it will open the first set of options it finds within the item.
     */
   def open(): js.Promise[Unit] = js.native
-  @JSName("open")
-  def open_end(side: end): js.Promise[Unit] = js.native
-  @JSName("open")
-  def open_start(side: start): js.Promise[Unit] = js.native
+  def open(side: Side): js.Promise[Unit] = js.native
 }
 

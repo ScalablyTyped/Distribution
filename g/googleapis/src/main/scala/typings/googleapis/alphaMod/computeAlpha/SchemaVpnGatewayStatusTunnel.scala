@@ -27,13 +27,13 @@ trait SchemaVpnGatewayStatusTunnel extends js.Object {
 object SchemaVpnGatewayStatusTunnel {
   @scala.inline
   def apply(
-    localGatewayInterface: Int | Double = null,
-    peerGatewayInterface: Int | Double = null,
+    localGatewayInterface: js.UndefOr[Double] = js.undefined,
+    peerGatewayInterface: js.UndefOr[Double] = js.undefined,
     tunnelUrl: String = null
   ): SchemaVpnGatewayStatusTunnel = {
     val __obj = js.Dynamic.literal()
-    if (localGatewayInterface != null) __obj.updateDynamic("localGatewayInterface")(localGatewayInterface.asInstanceOf[js.Any])
-    if (peerGatewayInterface != null) __obj.updateDynamic("peerGatewayInterface")(peerGatewayInterface.asInstanceOf[js.Any])
+    if (!js.isUndefined(localGatewayInterface)) __obj.updateDynamic("localGatewayInterface")(localGatewayInterface.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(peerGatewayInterface)) __obj.updateDynamic("peerGatewayInterface")(peerGatewayInterface.get.asInstanceOf[js.Any])
     if (tunnelUrl != null) __obj.updateDynamic("tunnelUrl")(tunnelUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVpnGatewayStatusTunnel]
   }

@@ -58,9 +58,11 @@ class JsonObjectProperty protected () extends IObject {
   def isVisible(layout: String, obj: js.Any): Boolean = js.native
   def mergeWith(prop: JsonObjectProperty): Unit = js.native
   def onGetValue(obj: js.Any): js.Any = js.native
+  def onPropertyEditorUpdate(obj: js.Any, propEditor: js.Any): js.Any = js.native
   def onSetValue(obj: js.Any, value: js.Any, jsonConv: JsonObject): js.Any = js.native
   def setBaseValue(`val`: js.Any): Unit = js.native
-  def setChoices(value: js.Array[_], valueFunc: js.Function0[js.Array[_]]): Unit = js.native
+  def setChoices(value: js.Array[_]): Unit = js.native
+  def setChoices(value: js.Array[_], valueFunc: js.Function1[/* obj */ js.Any, js.Array[_]]): Unit = js.native
   def setValue(obj: js.Any, value: js.Any, jsonConv: JsonObject): Unit = js.native
   def visibleIf(obj: js.Any): Boolean = js.native
 }

@@ -3,6 +3,7 @@ package typings.vuex.mod.default
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.TopLevel
 import typings.std.Record
+import typings.vuex.anon.FnCall
 import typings.vuex.helpersMod.ActionMethod
 import typings.vuex.helpersMod.Computed
 import typings.vuex.helpersMod.CustomVue
@@ -16,8 +17,10 @@ import typings.vuex.helpersMod.MapperForStateWithNamespace
 import typings.vuex.helpersMod.MapperWithNamespace
 import typings.vuex.helpersMod.MutationMethod
 import typings.vuex.helpersMod.NamespacedMappers
+import typings.vuex.loggerMod.LoggerOption
 import typings.vuex.mod.Commit
 import typings.vuex.mod.Dispatch
+import typings.vuex.mod.Plugin
 import typings.vuex.mod.StoreOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,6 +33,8 @@ object ^ extends js.Object {
     /* options */ StoreOptions[/* import warning: RewrittenClass.unapply cls was tparam S */ js.Any], 
     typings.vuex.mod.Store[js.Object]
   ] = js.native
+  @JSName("createLogger")
+  var createLogger_Original: FnCall = js.native
   @JSName("createNamespacedHelpers")
   var createNamespacedHelpers_Original: js.Function1[/* namespace */ String, NamespacedMappers] = js.native
   @JSName("install")
@@ -45,6 +50,8 @@ object ^ extends js.Object {
   var mapMutations_Original: Mapper[MutationMethod] with MapperWithNamespace[MutationMethod] with MapperForMutation with MapperForMutationWithNamespace = js.native
   @JSName("mapState")
   var mapState_Original: Mapper[Computed] with MapperWithNamespace[Computed] with MapperForState with MapperForStateWithNamespace = js.native
+  def createLogger[S](): Plugin[S] = js.native
+  def createLogger[S](option: LoggerOption[S]): Plugin[S] = js.native
   def createNamespacedHelpers(namespace: String): NamespacedMappers = js.native
   def install(Vue: /* import warning: importer.ImportType#apply Failed type conversion: typeof _Vue */ js.Any): Unit = js.native
   def mapActions[Map /* <: Record[String, String] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 

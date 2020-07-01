@@ -42,7 +42,7 @@ object SchemaTextOperatorOptions {
   @scala.inline
   def apply(exactMatchWithOperator: js.UndefOr[Boolean] = js.undefined, operatorName: String = null): SchemaTextOperatorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(exactMatchWithOperator)) __obj.updateDynamic("exactMatchWithOperator")(exactMatchWithOperator.asInstanceOf[js.Any])
+    if (!js.isUndefined(exactMatchWithOperator)) __obj.updateDynamic("exactMatchWithOperator")(exactMatchWithOperator.get.asInstanceOf[js.Any])
     if (operatorName != null) __obj.updateDynamic("operatorName")(operatorName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTextOperatorOptions]
   }

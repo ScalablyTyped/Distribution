@@ -22,14 +22,14 @@ class MenuItem ()
   @JSName("componentDidMount")
   def componentDidMount_MMenuItem(): Unit = js.native
   @JSName("componentDidUpdate")
-  def componentDidUpdate_MMenuItem(prevProps: MenuItemProps): Unit = js.native
+  def componentDidUpdate_MMenuItem(): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MMenuItem(): Unit = js.native
   def getActiveClassName(): String = js.native
   def getDisabledClassName(): String = js.native
   def getPrefixCls(): String = js.native
   def getSelectedClassName(): String = js.native
-  def onKeyDown(e: KeyboardEvent[HTMLElement]): Boolean = js.native
+  def onKeyDown(e: KeyboardEvent[HTMLElement]): js.UndefOr[Boolean] = js.native
   def saveNode(node: HTMLLIElement): Unit = js.native
 }
 

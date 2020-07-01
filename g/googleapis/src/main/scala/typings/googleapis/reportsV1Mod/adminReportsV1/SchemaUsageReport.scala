@@ -1,7 +1,7 @@
 package typings.googleapis.reportsV1Mod.adminReportsV1
 
-import typings.googleapis.AnonCustomerId
-import typings.googleapis.AnonDatetimeValue
+import typings.googleapis.anon.CustomerId
+import typings.googleapis.anon.DatetimeValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait SchemaUsageReport extends js.Object {
   /**
     * Information about the type of the item.
     */
-  var entity: js.UndefOr[AnonCustomerId] = js.native
+  var entity: js.UndefOr[CustomerId] = js.native
   /**
     * ETag of the resource.
     */
@@ -30,17 +30,17 @@ trait SchemaUsageReport extends js.Object {
   /**
     * Parameter value pairs for various applications.
     */
-  var parameters: js.UndefOr[js.Array[AnonDatetimeValue]] = js.native
+  var parameters: js.UndefOr[js.Array[DatetimeValue]] = js.native
 }
 
 object SchemaUsageReport {
   @scala.inline
   def apply(
     date: String = null,
-    entity: AnonCustomerId = null,
+    entity: CustomerId = null,
     etag: String = null,
     kind: String = null,
-    parameters: js.Array[AnonDatetimeValue] = null
+    parameters: js.Array[DatetimeValue] = null
   ): SchemaUsageReport = {
     val __obj = js.Dynamic.literal()
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])

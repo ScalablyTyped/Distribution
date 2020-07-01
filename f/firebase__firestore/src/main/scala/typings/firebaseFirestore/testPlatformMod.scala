@@ -1,18 +1,11 @@
 package typings.firebaseFirestore
 
-import typings.firebaseFirestore.connectionMod.Connection
-import typings.firebaseFirestore.connectivityMonitorMod.ConnectivityMonitor
-import typings.firebaseFirestore.databaseInfoMod.DatabaseId
-import typings.firebaseFirestore.databaseInfoMod.DatabaseInfo
-import typings.firebaseFirestore.platformMod.Platform
-import typings.firebaseFirestore.serializerMod.JsonProtoSerializer
-import typings.std.Document
+import typings.firebaseFirestore.utilTypesMod.DocumentLike
+import typings.firebaseFirestore.utilTypesMod.WindowLike
 import typings.std.EventListener
 import typings.std.IDBFactory
 import typings.std.Storage
-import typings.std.Uint8Array
 import typings.std.VisibilityState
-import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,26 +14,39 @@ import scala.scalajs.js.annotation._
 @js.native
 object testPlatformMod extends js.Object {
   @js.native
-  class FakeDocument () extends js.Object {
+  class FakeDocument () extends DocumentLike {
     var _visibilityState: js.Any = js.native
     var visibilityListener: js.Any = js.native
-    def addEventListener(`type`: String, listener: EventListener): Unit = js.native
+    /* CompleteClass */
+    override val visibilityState: VisibilityState = js.native
+    /* CompleteClass */
+    override def addEventListener(`type`: String, listener: EventListener): Unit = js.native
     def raiseVisibilityEvent(visibility: VisibilityState): Unit = js.native
-    def removeEventListener(`type`: String, listener: EventListener): Unit = js.native
-    def visibilityState: VisibilityState = js.native
+    /* CompleteClass */
+    override def removeEventListener(`type`: String, listener: EventListener): Unit = js.native
+    @JSName("visibilityState")
+    def visibilityState_MFakeDocument: VisibilityState = js.native
   }
   
   @js.native
-  class FakeWindow protected () extends js.Object {
+  class FakeWindow protected () extends WindowLike {
     def this(sharedFakeStorage: SharedFakeWebStorage) = this()
     def this(sharedFakeStorage: SharedFakeWebStorage, fakeIndexedDb: IDBFactory) = this()
     val fakeIndexedDb: js.Any = js.native
     val fakeStorageArea: js.Any = js.native
+    /* CompleteClass */
+    override val indexedDB: IDBFactory | Null = js.native
+    /* CompleteClass */
+    override val localStorage: Storage = js.native
     var storageListeners: js.Any = js.native
-    def addEventListener(`type`: String, listener: EventListener): Unit = js.native
-    def indexedDB: IDBFactory | Null = js.native
-    def localStorage: Storage = js.native
-    def removeEventListener(`type`: String, listener: EventListener): Unit = js.native
+    /* CompleteClass */
+    override def addEventListener(`type`: String, listener: EventListener): Unit = js.native
+    @JSName("indexedDB")
+    def indexedDB_MFakeWindow: IDBFactory | Null = js.native
+    @JSName("localStorage")
+    def localStorage_MFakeWindow: Storage = js.native
+    /* CompleteClass */
+    override def removeEventListener(`type`: String, listener: EventListener): Unit = js.native
   }
   
   @js.native
@@ -57,53 +63,8 @@ object testPlatformMod extends js.Object {
     /* private */ def length: js.Any = js.native
   }
   
-  @js.native
-  class TestPlatform protected () extends Platform {
-    def this(basePlatform: Platform, mockStorage: SharedFakeWebStorage) = this()
-    /** True if and only if the Base64 conversion functions are available. */
-    /* CompleteClass */
-    override val base64Available: Boolean = js.native
-    val basePlatform: js.Any = js.native
-    /** The Platform's 'document' implementation or null if not available. */
-    /* CompleteClass */
-    override val document: Document | Null = js.native
-    val mockDocument: FakeDocument | Null = js.native
-    val mockStorage: js.Any = js.native
-    val mockWindow: FakeWindow | Null = js.native
-    /** The Platform's 'window' implementation or null if not available. */
-    /* CompleteClass */
-    override val window: Window | Null = js.native
-    /** Converts a Base64 encoded string to a binary string. */
-    /* CompleteClass */
-    override def atob(encoded: String): String = js.native
-    @JSName("base64Available")
-    def base64Available_MTestPlatform: Boolean = js.native
-    /** Converts a binary string to a Base64 encoded string. */
-    /* CompleteClass */
-    override def btoa(raw: String): String = js.native
-    @JSName("document")
-    def document_MTestPlatform: Document | Null = js.native
-    /** Formats an object as a JSON string, suitable for logging. */
-    /* CompleteClass */
-    override def formatJSON(value: js.Any): String = js.native
-    /* CompleteClass */
-    override def loadConnection(databaseInfo: DatabaseInfo): js.Promise[Connection] = js.native
-    /* CompleteClass */
-    override def newConnectivityMonitor(): ConnectivityMonitor = js.native
-    /* CompleteClass */
-    override def newSerializer(databaseId: DatabaseId): JsonProtoSerializer = js.native
-    def raiseVisibilityEvent(visibility: VisibilityState): Unit = js.native
-    /**
-      * Generates `nBytes` of random bytes.
-      *
-      * If `nBytes < 0` , an error will be thrown.
-      */
-    /* CompleteClass */
-    override def randomBytes(nBytes: Double): Uint8Array = js.native
-    @JSName("window")
-    def window_MTestPlatform: Window | Null = js.native
-  }
-  
-  def isNode(): Boolean = js.native
+  def testDocument(): FakeDocument = js.native
+  def testWindow(): FakeWindow = js.native
+  def testWindow(sharedWebStorage: SharedFakeWebStorage): FakeWindow = js.native
 }
 

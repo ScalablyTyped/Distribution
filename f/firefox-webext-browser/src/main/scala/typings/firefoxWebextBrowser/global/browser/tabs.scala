@@ -2,6 +2,7 @@ package typings.firefoxWebextBrowser.global.browser
 
 import typings.firefoxWebextBrowser.WebExtEvent
 import typings.firefoxWebextBrowser.anon.Active
+import typings.firefoxWebextBrowser.anon.ActiveIndex
 import typings.firefoxWebextBrowser.anon.Append
 import typings.firefoxWebextBrowser.anon.Attention
 import typings.firefoxWebextBrowser.anon.Audible
@@ -139,6 +140,7 @@ object tabs extends js.Object {
     * @param tabId The ID of the tab which is to be duplicated.
     */
   def duplicate(tabId: Double): js.Promise[Tab] = js.native
+  def duplicate(tabId: Double, duplicateProperties: ActiveIndex): js.Promise[Tab] = js.native
   /**
     * Injects JavaScript code into a page. For details, see the programmatic injection section of the content scripts
     * doc.
@@ -188,6 +190,18 @@ object tabs extends js.Object {
     */
   def getZoomSettings(): js.Promise[ZoomSettings] = js.native
   def getZoomSettings(tabId: Double): js.Promise[ZoomSettings] = js.native
+  /**
+    * Navigate to previous page in tab's history, if available.
+    * @param [tabId] The ID of the tab to navigate backward.
+    */
+  def goBack(): js.Promise[Unit] = js.native
+  def goBack(tabId: Double): js.Promise[Unit] = js.native
+  /**
+    * Navigate to next page in tab's history, if available
+    * @param [tabId] The ID of the tab to navigate forward.
+    */
+  def goForward(): js.Promise[Unit] = js.native
+  def goForward(tabId: Double): js.Promise[Unit] = js.native
   def hide(tabIds: js.Array[Double]): js.Promise[js.Array[Double]] = js.native
   /**
     * Hides one or more tabs. The `"tabHide"` permission is required to hide tabs. Not all tabs are hidable. Returns

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateWebhookResult extends js.Object {
   /**
-    *  Webhook structure. 
+    *  Describes a webhook that connects repository events to an Amplify app. 
     */
   var webhook: Webhook = js.native
 }

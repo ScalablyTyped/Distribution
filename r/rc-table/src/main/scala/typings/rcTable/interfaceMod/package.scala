@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object interfaceMod {
+  type CellEllipsisType = typings.rcTable.anon.ShowTitle | scala.Boolean
   type ColumnsType[RecordType] = js.Array[
     typings.rcTable.interfaceMod.ColumnGroupType[RecordType] | typings.rcTable.interfaceMod.ColumnType[RecordType]
   ]

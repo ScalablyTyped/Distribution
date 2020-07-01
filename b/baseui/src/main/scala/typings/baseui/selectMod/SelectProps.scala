@@ -13,7 +13,9 @@ import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
 import typings.react.mod.ReactNode
+import typings.react.mod.Ref
 import typings.std.Event
+import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import scala.scalajs.js
@@ -29,6 +31,7 @@ trait SelectProps extends js.Object {
   var backspaceRemoves: js.UndefOr[Boolean] = js.undefined
   var clearable: js.UndefOr[Boolean] = js.undefined
   var closeOnSelect: js.UndefOr[Boolean] = js.undefined
+  var controlRef: js.UndefOr[Ref[HTMLInputElement | HTMLDivElement]] = js.undefined
   var creatable: js.UndefOr[Boolean] = js.undefined
   var deleteRemoves: js.UndefOr[Boolean] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
@@ -87,6 +90,7 @@ object SelectProps {
     backspaceRemoves: js.UndefOr[Boolean] = js.undefined,
     clearable: js.UndefOr[Boolean] = js.undefined,
     closeOnSelect: js.UndefOr[Boolean] = js.undefined,
+    controlRef: js.UndefOr[Null | (Ref[HTMLInputElement | HTMLDivElement])] = js.undefined,
     creatable: js.UndefOr[Boolean] = js.undefined,
     deleteRemoves: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
@@ -134,6 +138,7 @@ object SelectProps {
     if (!js.isUndefined(backspaceRemoves)) __obj.updateDynamic("backspaceRemoves")(backspaceRemoves.get.asInstanceOf[js.Any])
     if (!js.isUndefined(clearable)) __obj.updateDynamic("clearable")(clearable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(closeOnSelect)) __obj.updateDynamic("closeOnSelect")(closeOnSelect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(controlRef)) __obj.updateDynamic("controlRef")(controlRef.asInstanceOf[js.Any])
     if (!js.isUndefined(creatable)) __obj.updateDynamic("creatable")(creatable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(deleteRemoves)) __obj.updateDynamic("deleteRemoves")(deleteRemoves.get.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])

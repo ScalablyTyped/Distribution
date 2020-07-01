@@ -176,7 +176,7 @@ trait GridOptions[T /* <: SlickData */] extends js.Object {
 
 object GridOptions {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.slickgrid.Slick.SlickData */ T](
     addNewRowCssClass: String = null,
     alwaysAllowHorizontalScroll: js.UndefOr[Boolean] = js.undefined,
     alwaysShowVerticalScroll: js.UndefOr[Boolean] = js.undefined,

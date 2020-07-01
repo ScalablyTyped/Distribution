@@ -36,6 +36,16 @@ trait OptionsRowGrouping extends js.Object {
       String
     ]) | (js.Array[js.Function3[/* value */ _, /* count */ Double, /* data */ _, String]])
   ] = js.undefined
+  /**When printing you may want to apply a different group header from the one usualy used in the table. You can now do this using the groupHeaderPrint table option, which takes the same inputs as the standard groupHeader property. */
+  var groupHeaderPrint: js.UndefOr[
+    (js.Function4[
+      /* value */ js.Any, 
+      /* count */ Double, 
+      /* data */ js.Any, 
+      /* group */ GroupComponent, 
+      String
+    ]) | (js.Array[js.Function3[/* value */ _, /* count */ Double, /* data */ _, String]])
+  ] = js.undefined
   /** You can set the default open state of groups using the groupStartOpen property* * This can take one of three possible values:
     true - all groups start open (default value)
     false - all groups start closed
@@ -87,6 +97,13 @@ object OptionsRowGrouping {
       /* group */ GroupComponent, 
       String
     ]) | (js.Array[js.Function3[/* value */ _, /* count */ Double, /* data */ _, String]]) = null,
+    groupHeaderPrint: (js.Function4[
+      /* value */ js.Any, 
+      /* count */ Double, 
+      /* data */ js.Any, 
+      /* group */ GroupComponent, 
+      String
+    ]) | (js.Array[js.Function3[/* value */ _, /* count */ Double, /* data */ _, String]]) = null,
     groupStartOpen: Boolean | (js.Function4[
       /* value */ js.Any, 
       /* count */ Double, 
@@ -110,6 +127,7 @@ object OptionsRowGrouping {
     if (groupDblClick != null) __obj.updateDynamic("groupDblClick")(js.Any.fromFunction2(groupDblClick))
     if (groupDblTap != null) __obj.updateDynamic("groupDblTap")(js.Any.fromFunction2(groupDblTap))
     if (groupHeader != null) __obj.updateDynamic("groupHeader")(groupHeader.asInstanceOf[js.Any])
+    if (groupHeaderPrint != null) __obj.updateDynamic("groupHeaderPrint")(groupHeaderPrint.asInstanceOf[js.Any])
     if (groupStartOpen != null) __obj.updateDynamic("groupStartOpen")(groupStartOpen.asInstanceOf[js.Any])
     if (groupTap != null) __obj.updateDynamic("groupTap")(js.Any.fromFunction2(groupTap))
     if (groupTapHold != null) __obj.updateDynamic("groupTapHold")(js.Any.fromFunction2(groupTapHold))

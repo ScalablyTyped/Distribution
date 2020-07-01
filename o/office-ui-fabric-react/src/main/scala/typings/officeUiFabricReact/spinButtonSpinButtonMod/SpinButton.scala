@@ -71,11 +71,12 @@ class SpinButton protected ()
     * @param shouldSpin - should we fire off another updateValue when we are done here? This should be true
     * when spinning in response to a mouseDown
     * @param stepFunction - function to use to step by
+    * @param event - The event that triggered the updateValue
     */
   var _updateValue: js.Any = js.native
   /**
-    * This is used when validating text entry
-    * in the input (not when changed via the buttons)
+    * This is used when validating text entry in the input on blur or when enter key is pressed
+    * (not when changed via the buttons).
     * @param event - the event that fired
     */
   var _validate: js.Any = js.native

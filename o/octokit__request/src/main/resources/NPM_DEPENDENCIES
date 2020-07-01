@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@octokit/request" : "5.4.3"
+      "@octokit/request" : "5.4.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@octokit/request" : "5.4.3"
+      "@octokit/request" : "5.4.5"
     }
   ],
   "compile-devDependencies" : [

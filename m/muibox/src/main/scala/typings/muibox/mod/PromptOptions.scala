@@ -1,5 +1,6 @@
 package typings.muibox.mod
 
+import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,10 +13,10 @@ trait PromptOptions extends ConfirmOptions {
 object PromptOptions {
   @scala.inline
   def apply(
-    cancel: String = null,
+    cancel: DialogButtonOptions = null,
     defaultValue: String | Double = null,
-    message: String = null,
-    ok: String = null,
+    message: String | ReactNode = null,
+    ok: DialogButtonOptions = null,
     required: js.UndefOr[Boolean] = js.undefined,
     title: String = null
   ): PromptOptions = {

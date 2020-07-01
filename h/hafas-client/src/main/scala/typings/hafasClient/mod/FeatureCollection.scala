@@ -1,0 +1,20 @@
+package typings.hafasClient.mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait FeatureCollection extends js.Object {
+  var features: js.Array[Feature]
+  var `type`: typings.hafasClient.hafasClientStrings.FeatureCollection
+}
+
+object FeatureCollection {
+  @scala.inline
+  def apply(features: js.Array[Feature], `type`: typings.hafasClient.hafasClientStrings.FeatureCollection): FeatureCollection = {
+    val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FeatureCollection]
+  }
+}
+

@@ -38,14 +38,14 @@ object SchemaParDoInstruction {
   def apply(
     input: SchemaInstructionInput = null,
     multiOutputInfos: js.Array[SchemaMultiOutputInfo] = null,
-    numOutputs: Int | Double = null,
+    numOutputs: js.UndefOr[Double] = js.undefined,
     sideInputs: js.Array[SchemaSideInputInfo] = null,
     userFn: StringDictionary[js.Any] = null
   ): SchemaParDoInstruction = {
     val __obj = js.Dynamic.literal()
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     if (multiOutputInfos != null) __obj.updateDynamic("multiOutputInfos")(multiOutputInfos.asInstanceOf[js.Any])
-    if (numOutputs != null) __obj.updateDynamic("numOutputs")(numOutputs.asInstanceOf[js.Any])
+    if (!js.isUndefined(numOutputs)) __obj.updateDynamic("numOutputs")(numOutputs.get.asInstanceOf[js.Any])
     if (sideInputs != null) __obj.updateDynamic("sideInputs")(sideInputs.asInstanceOf[js.Any])
     if (userFn != null) __obj.updateDynamic("userFn")(userFn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaParDoInstruction]

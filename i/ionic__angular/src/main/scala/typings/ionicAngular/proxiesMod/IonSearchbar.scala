@@ -16,6 +16,7 @@ import typings.ionicCore.ionicCoreStrings.search
 import typings.ionicCore.ionicCoreStrings.tel
 import typings.ionicCore.ionicCoreStrings.text
 import typings.ionicCore.ionicCoreStrings.url
+import typings.ionicCore.mod.AutocompleteTypes
 import typings.std.CustomEvent
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
@@ -37,7 +38,7 @@ class IonSearchbar protected ()
     * Set the input's autocomplete property.
     */
   /* CompleteClass */
-  override var autocomplete: on | off = js.native
+  override var autocomplete: AutocompleteTypes = js.native
   /**
     * Set the input's autocorrect property.
     */

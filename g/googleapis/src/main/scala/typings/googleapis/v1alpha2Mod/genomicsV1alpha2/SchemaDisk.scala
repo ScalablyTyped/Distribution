@@ -60,16 +60,16 @@ object SchemaDisk {
     mountPoint: String = null,
     name: String = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
-    sizeGb: Int | Double = null,
+    sizeGb: js.UndefOr[Double] = js.undefined,
     source: String = null,
     `type`: String = null
   ): SchemaDisk = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoDelete)) __obj.updateDynamic("autoDelete")(autoDelete.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDelete)) __obj.updateDynamic("autoDelete")(autoDelete.get.asInstanceOf[js.Any])
     if (mountPoint != null) __obj.updateDynamic("mountPoint")(mountPoint.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (sizeGb != null) __obj.updateDynamic("sizeGb")(sizeGb.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizeGb)) __obj.updateDynamic("sizeGb")(sizeGb.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDisk]

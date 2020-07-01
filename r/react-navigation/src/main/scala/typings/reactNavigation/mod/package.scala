@@ -46,7 +46,7 @@ package object mod {
   type NavigationSwitchAction = typings.reactNavigation.mod.NavigationJumpToAction
   type NavigationSwitchScreenComponent[Params, ScreenProps] = (typings.react.mod.ComponentType[typings.reactNavigation.mod.NavigationSwitchScreenProps[Params, ScreenProps]]) with (typings.reactNavigation.anon.NavigationOptionsNavigationScreenConfig[Params, ScreenProps])
   type NavigationView[Options, State, ScreenProps] = typings.react.mod.ComponentType[
-    (typings.reactNavigation.anon.Descriptors[Options, ScreenProps]) with typings.reactNavigation.mod.NavigationInjectedProps[typings.reactNavigation.mod.NavigationParams]
+    ((typings.reactNavigation.anon.Descriptors[Options, ScreenProps]) with typings.reactNavigation.mod.NavigationInjectedProps[typings.reactNavigation.mod.NavigationParams]) | js.Any
   ]
   type Omit[T, K /* <: /* keyof any */ java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
   // Themed components

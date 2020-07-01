@@ -31,10 +31,14 @@ trait SchemaContainerStoppedEvent extends js.Object {
 
 object SchemaContainerStoppedEvent {
   @scala.inline
-  def apply(actionId: Int | Double = null, exitStatus: Int | Double = null, stderr: String = null): SchemaContainerStoppedEvent = {
+  def apply(
+    actionId: js.UndefOr[Double] = js.undefined,
+    exitStatus: js.UndefOr[Double] = js.undefined,
+    stderr: String = null
+  ): SchemaContainerStoppedEvent = {
     val __obj = js.Dynamic.literal()
-    if (actionId != null) __obj.updateDynamic("actionId")(actionId.asInstanceOf[js.Any])
-    if (exitStatus != null) __obj.updateDynamic("exitStatus")(exitStatus.asInstanceOf[js.Any])
+    if (!js.isUndefined(actionId)) __obj.updateDynamic("actionId")(actionId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exitStatus)) __obj.updateDynamic("exitStatus")(exitStatus.get.asInstanceOf[js.Any])
     if (stderr != null) __obj.updateDynamic("stderr")(stderr.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaContainerStoppedEvent]
   }

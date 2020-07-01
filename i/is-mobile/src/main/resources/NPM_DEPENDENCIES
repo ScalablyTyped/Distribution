@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "is-mobile" : "2.2.1"
+      "is-mobile" : "2.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "is-mobile" : "2.2.1"
+      "is-mobile" : "2.2.2"
     }
   ],
   "compile-devDependencies" : [

@@ -216,6 +216,12 @@ object electronStrings {
   sealed trait buttons extends js.Object
   
   @js.native
+  sealed trait bypassHeatCheck extends js.Object
+  
+  @js.native
+  sealed trait bypassHeatCheckAndEagerCompile extends js.Object
+  
+  @js.native
   sealed trait cache extends js.Object
   
   @js.native
@@ -283,6 +289,9 @@ object electronStrings {
   
   @js.native
   sealed trait cmd extends js.Object
+  
+  @js.native
+  sealed trait code extends js.Object
   
   @js.native
   sealed trait `color-changed` extends js.Object
@@ -1895,6 +1904,10 @@ object electronStrings {
   @scala.inline
   def buttons: buttons = "buttons".asInstanceOf[buttons]
   @scala.inline
+  def bypassHeatCheck: bypassHeatCheck = "bypassHeatCheck".asInstanceOf[bypassHeatCheck]
+  @scala.inline
+  def bypassHeatCheckAndEagerCompile: bypassHeatCheckAndEagerCompile = "bypassHeatCheckAndEagerCompile".asInstanceOf[bypassHeatCheckAndEagerCompile]
+  @scala.inline
   def cache: cache = "cache".asInstanceOf[cache]
   @scala.inline
   def camera: camera = "camera".asInstanceOf[camera]
@@ -1940,6 +1953,8 @@ object electronStrings {
   def closed: closed = "closed".asInstanceOf[closed]
   @scala.inline
   def cmd: cmd = "cmd".asInstanceOf[cmd]
+  @scala.inline
+  def code: code = "code".asInstanceOf[code]
   @scala.inline
   def `color-changed`: `color-changed` = "color-changed".asInstanceOf[`color-changed`]
   @scala.inline

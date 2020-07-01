@@ -1,5 +1,7 @@
 package typings.ionicCore.componentsMod.Components
 
+import typings.ionicCore.animationInterfaceMod.Animation
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.interfaceMod.RouterDirection
 import typings.ionicCore.mod.ComponentProps
 import typings.ionicCore.navInterfaceMod.NavComponent
@@ -17,6 +19,10 @@ trait IonNavLink extends js.Object {
     */
   var componentProps: js.UndefOr[ComponentProps[Null]] = js.undefined
   /**
+    * The transition animation when navigating to another page.
+    */
+  var routerAnimation: js.UndefOr[AnimationBuilder] = js.undefined
+  /**
     * The transition direction when navigating to another page.
     */
   var routerDirection: RouterDirection
@@ -27,11 +33,13 @@ object IonNavLink {
   def apply(
     routerDirection: RouterDirection,
     component: js.UndefOr[Null | NavComponent] = js.undefined,
-    componentProps: ComponentProps[Null] = null
+    componentProps: ComponentProps[Null] = null,
+    routerAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null
   ): IonNavLink = {
     val __obj = js.Dynamic.literal(routerDirection = routerDirection.asInstanceOf[js.Any])
     if (!js.isUndefined(component)) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (componentProps != null) __obj.updateDynamic("componentProps")(componentProps.asInstanceOf[js.Any])
+    if (routerAnimation != null) __obj.updateDynamic("routerAnimation")(js.Any.fromFunction2(routerAnimation))
     __obj.asInstanceOf[IonNavLink]
   }
 }

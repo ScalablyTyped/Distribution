@@ -6,9 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChannelCallerId extends Event {
-  /* Properties */
+  /**
+    * The integer representation of the Caller Presentation value.
+    */
   var caller_presentation: Double
+  /**
+    * The text representation of the Caller Presentation value.
+    */
   var caller_presentation_txt: String
+  /**
+    * The channel that changed Caller ID.
+    */
   var channel: Channel
 }
 

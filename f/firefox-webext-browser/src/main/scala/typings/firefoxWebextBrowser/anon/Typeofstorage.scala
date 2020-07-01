@@ -3,6 +3,7 @@ package typings.firefoxWebextBrowser.anon
 import org.scalablytyped.runtime.StringDictionary
 import typings.firefoxWebextBrowser.WebExtEvent
 import typings.firefoxWebextBrowser.browser.storage.StorageArea
+import typings.firefoxWebextBrowser.browser.storage.StorageAreaSync
 import typings.firefoxWebextBrowser.browser.storage.StorageChange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,7 +28,7 @@ trait Typeofstorage extends js.Object {
   ]
   /* storage properties */
   /** Items in the `sync` storage area are synced by the browser. */
-  val sync: StorageArea
+  val sync: StorageAreaSync
 }
 
 object Typeofstorage {
@@ -38,7 +39,7 @@ object Typeofstorage {
     onChanged: WebExtEvent[
       js.Function2[/* changes */ StringDictionary[StorageChange], /* areaName */ String, Unit]
     ],
-    sync: StorageArea
+    sync: StorageAreaSync
   ): Typeofstorage = {
     val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any], managed = managed.asInstanceOf[js.Any], onChanged = onChanged.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofstorage]

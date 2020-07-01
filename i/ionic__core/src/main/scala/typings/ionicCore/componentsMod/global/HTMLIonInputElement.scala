@@ -19,6 +19,7 @@ import typings.ionicCore.ionicCoreStrings.send
 import typings.ionicCore.ionicCoreStrings.tel
 import typings.ionicCore.ionicCoreStrings.text
 import typings.ionicCore.ionicCoreStrings.url
+import typings.ionicCore.mod.AutocompleteTypes
 import typings.ionicCore.mod.Color
 import typings.ionicCore.mod.TextFieldTypes
 import typings.ionicCore.stencilPublicRuntimeMod.HTMLStencilElement
@@ -37,7 +38,7 @@ trait HTMLIonInputElement extends HTMLStencilElement {
   /**
     * Indicates whether the value of the control can be automatically completed by the browser.
     */
-  var autocomplete: on | off = js.native
+  var autocomplete: AutocompleteTypes = js.native
   /**
     * Whether auto correction should be enabled when the user is entering/editing the text value.
     */

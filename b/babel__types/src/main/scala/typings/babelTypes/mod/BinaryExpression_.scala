@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation._
   extends Binary
      with BaseNode
      with Expression {
-  var left: Expression
+  var left: Expression | PrivateName_
   var operator: Plussign | `-_` | Slash | Percentsign | Asterisk | AsteriskAsterisk | Ampersand | Verticalline | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | LessthansignLessthansign | ^  | EqualssignEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | in | instanceof | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign
   var right: Expression
   @JSName("type")
@@ -42,7 +42,7 @@ import scala.scalajs.js.annotation._
 object BinaryExpression_ {
   @scala.inline
   def apply(
-    left: Expression,
+    left: Expression | PrivateName_,
     operator: Plussign | `-_` | Slash | Percentsign | Asterisk | AsteriskAsterisk | Ampersand | Verticalline | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | LessthansignLessthansign | ^  | EqualssignEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | in | instanceof | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign,
     right: Expression,
     `type`: BinaryExpression,

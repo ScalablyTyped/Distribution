@@ -17,7 +17,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait EditorProps[S /* <: Schema[_, _] */] extends js.Object {
+trait EditorProps[ThisT, S /* <: Schema[_, _] */] extends js.Object {
   /**
     * Control the DOM attributes of the editable element. May be either
     * an object or a function going from an editor state to an object.
@@ -29,7 +29,8 @@ trait EditorProps[S /* <: Schema[_, _] */] extends js.Object {
     * [`someProp`](#view.EditorView.someProp)) will be used.
     */
   var attributes: js.UndefOr[
-    StringDictionary[String] | (js.Function1[
+    StringDictionary[String] | (js.ThisFunction1[
+      /* this */ ThisT, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ /* p */ js.Any, 
       js.UndefOr[StringDictionary[String] | Null | Unit]
     ]) | Null
@@ -54,9 +55,17 @@ trait EditorProps[S /* <: Schema[_, _] */] extends js.Object {
     * The default behavior is to split the text into lines, wrap them
     * in `<p>` tags, and call
     * [`clipboardParser`](#view.EditorProps.clipboardParser) on it.
+    * The `plain` flag will be true when the text is pasted as plain
+    * text.
     */
   var clipboardTextParser: js.UndefOr[
-    (js.Function2[/* text */ String, /* $context */ ResolvedPos[S], Slice[S]]) | Null
+    (js.ThisFunction3[
+      /* this */ ThisT, 
+      /* text */ String, 
+      /* $context */ ResolvedPos[S], 
+      /* plain */ Boolean, 
+      Slice[S]
+    ]) | Null
   ] = js.undefined
   /**
     * A function that will be called to get the text for the current
@@ -64,13 +73,14 @@ trait EditorProps[S /* <: Schema[_, _] */] extends js.Object {
     * editor will use [`textBetween`](#model.Node.textBetween) on the
     * selected range.
     */
-  var clipboardTextSerializer: js.UndefOr[(js.Function1[/* p */ Slice[S], String]) | Null] = js.undefined
+  var clipboardTextSerializer: js.UndefOr[(js.ThisFunction1[/* this */ ThisT, /* p */ Slice[S], String]) | Null] = js.undefined
   /**
     * Can be used to override the way a selection is created when
     * reading a DOM selection between the given anchor and head.
     */
   var createSelectionBetween: js.UndefOr[
-    (js.Function3[
+    (js.ThisFunction3[
+      /* this */ ThisT, 
       /* view */ EditorView[S], 
       /* anchor */ ResolvedPos[S], 
       /* head */ ResolvedPos[S], 
@@ -82,7 +92,8 @@ trait EditorProps[S /* <: Schema[_, _] */] extends js.Object {
     * view.
     */
   var decorations: js.UndefOr[
-    (js.Function1[
+    (js.ThisFunction1[
+      /* this */ ThisT, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ /* state */ js.Any, 
       js.UndefOr[DecorationSet[S] | Null]
     ]) | Null
@@ -99,7 +110,8 @@ trait EditorProps[S /* <: Schema[_, _] */] extends js.Object {
     * editable.
     */
   var editable: js.UndefOr[
-    (js.Function1[
+    (js.ThisFunction1[
+      /* this */ ThisT, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ /* state */ js.Any, 
       Boolean
     ]) | Null
@@ -109,14 +121,21 @@ trait EditorProps[S /* <: Schema[_, _] */] extends js.Object {
     * have been called.
     */
   var handleClick: js.UndefOr[
-    (js.Function3[/* view */ EditorView[S], /* pos */ Double, /* event */ MouseEvent, Boolean]) | Null
+    (js.ThisFunction3[
+      /* this */ ThisT, 
+      /* view */ EditorView[S], 
+      /* pos */ Double, 
+      /* event */ MouseEvent, 
+      Boolean
+    ]) | Null
   ] = js.undefined
   /**
     * Called for each node around a click, from the inside out. The
     * `direct` flag will be true for the inner node.
     */
   var handleClickOn: js.UndefOr[
-    (js.Function6[
+    (js.ThisFunction6[
+      /* this */ ThisT, 
       /* view */ EditorView[S], 
       /* pos */ Double, 
       /* node */ Node[S], 
@@ -136,19 +155,28 @@ trait EditorProps[S /* <: Schema[_, _] */] extends js.Object {
     * default behavior).
     */
   var handleDOMEvents: js.UndefOr[
-    (StringDictionary[js.Function2[/* view */ EditorView[S], /* event */ Event, Boolean]]) | Null
+    (StringDictionary[
+      js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
+    ]) | Null
   ] = js.undefined
   /**
     * Called when the editor is double-clicked, after `handleDoubleClickOn`.
     */
   var handleDoubleClick: js.UndefOr[
-    (js.Function3[/* view */ EditorView[S], /* pos */ Double, /* event */ MouseEvent, Boolean]) | Null
+    (js.ThisFunction3[
+      /* this */ ThisT, 
+      /* view */ EditorView[S], 
+      /* pos */ Double, 
+      /* event */ MouseEvent, 
+      Boolean
+    ]) | Null
   ] = js.undefined
   /**
     * Called for each node around a double click.
     */
   var handleDoubleClickOn: js.UndefOr[
-    (js.Function6[
+    (js.ThisFunction6[
+      /* this */ ThisT, 
       /* view */ EditorView[S], 
       /* pos */ Double, 
       /* node */ Node[S], 
@@ -164,7 +192,8 @@ trait EditorProps[S /* <: Schema[_, _] */] extends js.Object {
     * thus be deleted).
     */
   var handleDrop: js.UndefOr[
-    (js.Function4[
+    (js.ThisFunction4[
+      /* this */ ThisT, 
       /* view */ EditorView[S], 
       /* event */ Event, 
       /* slice */ Slice[S], 
@@ -176,13 +205,13 @@ trait EditorProps[S /* <: Schema[_, _] */] extends js.Object {
     * Called when the editor receives a `keydown` event.
     */
   var handleKeyDown: js.UndefOr[
-    (js.Function2[/* view */ EditorView[S], /* event */ KeyboardEvent, Boolean]) | Null
+    (js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ KeyboardEvent, Boolean]) | Null
   ] = js.undefined
   /**
     * Handler for `keypress` events.
     */
   var handleKeyPress: js.UndefOr[
-    (js.Function2[/* view */ EditorView[S], /* event */ KeyboardEvent, Boolean]) | Null
+    (js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ KeyboardEvent, Boolean]) | Null
   ] = js.undefined
   /**
     * Can be used to override the behavior of pasting. `slice` is the
@@ -190,7 +219,13 @@ trait EditorProps[S /* <: Schema[_, _] */] extends js.Object {
     * the event to get at the raw content.
     */
   var handlePaste: js.UndefOr[
-    (js.Function3[/* view */ EditorView[S], /* event */ ClipboardEvent, /* slice */ Slice[S], Boolean]) | Null
+    (js.ThisFunction3[
+      /* this */ ThisT, 
+      /* view */ EditorView[S], 
+      /* event */ ClipboardEvent, 
+      /* slice */ Slice[S], 
+      Boolean
+    ]) | Null
   ] = js.undefined
   /**
     * Called when the view, after updating its state, tries to scroll
@@ -198,26 +233,40 @@ trait EditorProps[S /* <: Schema[_, _] */] extends js.Object {
     * indicate that it did not handle the scrolling and further
     * handlers or the default behavior should be tried.
     */
-  var handleScrollToSelection: js.UndefOr[(js.Function1[/* view */ EditorView[S], Boolean]) | Null] = js.undefined
+  var handleScrollToSelection: js.UndefOr[(js.ThisFunction1[/* this */ ThisT, /* view */ EditorView[S], Boolean]) | Null] = js.undefined
   /**
     * Whenever the user directly input text, this handler is called
     * before the input is applied. If it returns `true`, the default
     * behavior of actually inserting the text is suppressed.
     */
   var handleTextInput: js.UndefOr[
-    (js.Function4[/* view */ EditorView[S], /* from */ Double, /* to */ Double, /* text */ String, Boolean]) | Null
+    (js.ThisFunction4[
+      /* this */ ThisT, 
+      /* view */ EditorView[S], 
+      /* from */ Double, 
+      /* to */ Double, 
+      /* text */ String, 
+      Boolean
+    ]) | Null
   ] = js.undefined
   /**
     * Called when the editor is triple-clicked, after `handleTripleClickOn`.
     */
   var handleTripleClick: js.UndefOr[
-    (js.Function3[/* view */ EditorView[S], /* pos */ Double, /* event */ MouseEvent, Boolean]) | Null
+    (js.ThisFunction3[
+      /* this */ ThisT, 
+      /* view */ EditorView[S], 
+      /* pos */ Double, 
+      /* event */ MouseEvent, 
+      Boolean
+    ]) | Null
   ] = js.undefined
   /**
     * Called for each node around a triple click.
     */
   var handleTripleClickOn: js.UndefOr[
-    (js.Function6[
+    (js.ThisFunction6[
+      /* this */ ThisT, 
       /* view */ EditorView[S], 
       /* pos */ Double, 
       /* node */ Node[S], 
@@ -269,73 +318,170 @@ trait EditorProps[S /* <: Schema[_, _] */] extends js.Object {
     * Can be used to transform pasted content before it is applied to
     * the document.
     */
-  var transformPasted: js.UndefOr[(js.Function1[/* p */ Slice[S], Slice[S]]) | Null] = js.undefined
+  var transformPasted: js.UndefOr[(js.ThisFunction1[/* this */ ThisT, /* p */ Slice[S], Slice[S]]) | Null] = js.undefined
   /**
     * Can be used to transform pasted HTML text, _before_ it is parsed,
     * for example to clean it up.
     */
-  var transformPastedHTML: js.UndefOr[(js.Function1[/* html */ String, String]) | Null] = js.undefined
+  var transformPastedHTML: js.UndefOr[(js.ThisFunction1[/* this */ ThisT, /* html */ String, String]) | Null] = js.undefined
   /**
-    * Transform pasted plain text.
+    * Transform pasted plain text. The `plain` flag will be true when
+    * the text is pasted as plain text.
     */
-  var transformPastedText: js.UndefOr[(js.Function1[/* text */ String, String]) | Null] = js.undefined
+  var transformPastedText: js.UndefOr[
+    (js.ThisFunction2[/* this */ ThisT, /* text */ String, /* plain */ Boolean, String]) | Null
+  ] = js.undefined
 }
 
 object EditorProps {
   @scala.inline
-  def apply[S](
+  def apply[ThisT, /* <: typings.prosemirrorModel.mod.Schema[_, _] */ S](
     attributes: js.UndefOr[
-      Null | StringDictionary[String] | (js.Function1[
+      Null | StringDictionary[String] | (js.ThisFunction1[
+        /* this */ ThisT, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ /* p */ js.Any, 
         js.UndefOr[StringDictionary[String] | Null | Unit]
       ])
     ] = js.undefined,
     clipboardParser: js.UndefOr[Null | DOMParser[S]] = js.undefined,
     clipboardSerializer: js.UndefOr[Null | DOMSerializer[S]] = js.undefined,
-    clipboardTextParser: js.UndefOr[Null | ((/* text */ String, /* $context */ ResolvedPos[S]) => Slice[S])] = js.undefined,
-    clipboardTextSerializer: js.UndefOr[Null | (/* p */ Slice[S] => String)] = js.undefined,
+    clipboardTextParser: js.UndefOr[
+      Null | (js.ThisFunction3[
+        /* this */ ThisT, 
+        /* text */ String, 
+        /* $context */ ResolvedPos[S], 
+        /* plain */ Boolean, 
+        Slice[S]
+      ])
+    ] = js.undefined,
+    clipboardTextSerializer: js.UndefOr[Null | (js.ThisFunction1[/* this */ ThisT, /* p */ Slice[S], String])] = js.undefined,
     createSelectionBetween: js.UndefOr[
-      Null | ((/* view */ EditorView[S], /* anchor */ ResolvedPos[S], /* head */ ResolvedPos[S]) => js.UndefOr[Selection | Null])
+      Null | (js.ThisFunction3[
+        /* this */ ThisT, 
+        /* view */ EditorView[S], 
+        /* anchor */ ResolvedPos[S], 
+        /* head */ ResolvedPos[S], 
+        js.UndefOr[Selection | Null]
+      ])
     ] = js.undefined,
     decorations: js.UndefOr[
-      Null | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ /* state */ js.Any => js.UndefOr[DecorationSet[S] | Null])
+      Null | (js.ThisFunction1[
+        /* this */ ThisT, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ /* state */ js.Any, 
+        js.UndefOr[DecorationSet[S] | Null]
+      ])
     ] = js.undefined,
     domParser: js.UndefOr[Null | DOMParser[S]] = js.undefined,
     editable: js.UndefOr[
-      Null | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ /* state */ js.Any => Boolean)
+      Null | (js.ThisFunction1[
+        /* this */ ThisT, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ /* state */ js.Any, 
+        Boolean
+      ])
     ] = js.undefined,
     handleClick: js.UndefOr[
-      Null | ((/* view */ EditorView[S], /* pos */ Double, /* event */ MouseEvent) => Boolean)
+      Null | (js.ThisFunction3[
+        /* this */ ThisT, 
+        /* view */ EditorView[S], 
+        /* pos */ Double, 
+        /* event */ MouseEvent, 
+        Boolean
+      ])
     ] = js.undefined,
     handleClickOn: js.UndefOr[
-      Null | ((/* view */ EditorView[S], /* pos */ Double, /* node */ Node[S], /* nodePos */ Double, /* event */ MouseEvent, /* direct */ Boolean) => Boolean)
+      Null | (js.ThisFunction6[
+        /* this */ ThisT, 
+        /* view */ EditorView[S], 
+        /* pos */ Double, 
+        /* node */ Node[S], 
+        /* nodePos */ Double, 
+        /* event */ MouseEvent, 
+        /* direct */ Boolean, 
+        Boolean
+      ])
     ] = js.undefined,
     handleDOMEvents: js.UndefOr[
-      Null | (StringDictionary[js.Function2[/* view */ EditorView[S], /* event */ Event, Boolean]])
+      Null | (StringDictionary[
+        js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
+      ])
     ] = js.undefined,
     handleDoubleClick: js.UndefOr[
-      Null | ((/* view */ EditorView[S], /* pos */ Double, /* event */ MouseEvent) => Boolean)
+      Null | (js.ThisFunction3[
+        /* this */ ThisT, 
+        /* view */ EditorView[S], 
+        /* pos */ Double, 
+        /* event */ MouseEvent, 
+        Boolean
+      ])
     ] = js.undefined,
     handleDoubleClickOn: js.UndefOr[
-      Null | ((/* view */ EditorView[S], /* pos */ Double, /* node */ Node[S], /* nodePos */ Double, /* event */ MouseEvent, /* direct */ Boolean) => Boolean)
+      Null | (js.ThisFunction6[
+        /* this */ ThisT, 
+        /* view */ EditorView[S], 
+        /* pos */ Double, 
+        /* node */ Node[S], 
+        /* nodePos */ Double, 
+        /* event */ MouseEvent, 
+        /* direct */ Boolean, 
+        Boolean
+      ])
     ] = js.undefined,
     handleDrop: js.UndefOr[
-      Null | ((/* view */ EditorView[S], /* event */ Event, /* slice */ Slice[S], /* moved */ Boolean) => Boolean)
+      Null | (js.ThisFunction4[
+        /* this */ ThisT, 
+        /* view */ EditorView[S], 
+        /* event */ Event, 
+        /* slice */ Slice[S], 
+        /* moved */ Boolean, 
+        Boolean
+      ])
     ] = js.undefined,
-    handleKeyDown: js.UndefOr[Null | ((/* view */ EditorView[S], /* event */ KeyboardEvent) => Boolean)] = js.undefined,
-    handleKeyPress: js.UndefOr[Null | ((/* view */ EditorView[S], /* event */ KeyboardEvent) => Boolean)] = js.undefined,
+    handleKeyDown: js.UndefOr[
+      Null | (js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ KeyboardEvent, Boolean])
+    ] = js.undefined,
+    handleKeyPress: js.UndefOr[
+      Null | (js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ KeyboardEvent, Boolean])
+    ] = js.undefined,
     handlePaste: js.UndefOr[
-      Null | ((/* view */ EditorView[S], /* event */ ClipboardEvent, /* slice */ Slice[S]) => Boolean)
+      Null | (js.ThisFunction3[
+        /* this */ ThisT, 
+        /* view */ EditorView[S], 
+        /* event */ ClipboardEvent, 
+        /* slice */ Slice[S], 
+        Boolean
+      ])
     ] = js.undefined,
-    handleScrollToSelection: js.UndefOr[Null | (/* view */ EditorView[S] => Boolean)] = js.undefined,
+    handleScrollToSelection: js.UndefOr[Null | (js.ThisFunction1[/* this */ ThisT, /* view */ EditorView[S], Boolean])] = js.undefined,
     handleTextInput: js.UndefOr[
-      Null | ((/* view */ EditorView[S], /* from */ Double, /* to */ Double, /* text */ String) => Boolean)
+      Null | (js.ThisFunction4[
+        /* this */ ThisT, 
+        /* view */ EditorView[S], 
+        /* from */ Double, 
+        /* to */ Double, 
+        /* text */ String, 
+        Boolean
+      ])
     ] = js.undefined,
     handleTripleClick: js.UndefOr[
-      Null | ((/* view */ EditorView[S], /* pos */ Double, /* event */ MouseEvent) => Boolean)
+      Null | (js.ThisFunction3[
+        /* this */ ThisT, 
+        /* view */ EditorView[S], 
+        /* pos */ Double, 
+        /* event */ MouseEvent, 
+        Boolean
+      ])
     ] = js.undefined,
     handleTripleClickOn: js.UndefOr[
-      Null | ((/* view */ EditorView[S], /* pos */ Double, /* node */ Node[S], /* nodePos */ Double, /* event */ MouseEvent, /* direct */ Boolean) => Boolean)
+      Null | (js.ThisFunction6[
+        /* this */ ThisT, 
+        /* view */ EditorView[S], 
+        /* pos */ Double, 
+        /* node */ Node[S], 
+        /* nodePos */ Double, 
+        /* event */ MouseEvent, 
+        /* direct */ Boolean, 
+        Boolean
+      ])
     ] = js.undefined,
     nodeViews: js.UndefOr[
       Null | (StringDictionary[
@@ -350,40 +496,42 @@ object EditorProps {
     ] = js.undefined,
     scrollMargin: js.UndefOr[Null | Double | Right] = js.undefined,
     scrollThreshold: js.UndefOr[Null | Double | Right] = js.undefined,
-    transformPasted: js.UndefOr[Null | (/* p */ Slice[S] => Slice[S])] = js.undefined,
-    transformPastedHTML: js.UndefOr[Null | (/* html */ String => String)] = js.undefined,
-    transformPastedText: js.UndefOr[Null | (/* text */ String => String)] = js.undefined
-  ): EditorProps[S] = {
+    transformPasted: js.UndefOr[Null | (js.ThisFunction1[/* this */ ThisT, /* p */ Slice[S], Slice[S]])] = js.undefined,
+    transformPastedHTML: js.UndefOr[Null | (js.ThisFunction1[/* this */ ThisT, /* html */ String, String])] = js.undefined,
+    transformPastedText: js.UndefOr[
+      Null | (js.ThisFunction2[/* this */ ThisT, /* text */ String, /* plain */ Boolean, String])
+    ] = js.undefined
+  ): EditorProps[ThisT, S] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(attributes)) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (!js.isUndefined(clipboardParser)) __obj.updateDynamic("clipboardParser")(clipboardParser.asInstanceOf[js.Any])
     if (!js.isUndefined(clipboardSerializer)) __obj.updateDynamic("clipboardSerializer")(clipboardSerializer.asInstanceOf[js.Any])
-    if (!js.isUndefined(clipboardTextParser)) __obj.updateDynamic("clipboardTextParser")(if (clipboardTextParser != null) js.Any.fromFunction2(clipboardTextParser.asInstanceOf[(/* text */ String, /* $context */ ResolvedPos[S]) => Slice[S]]) else null)
-    if (!js.isUndefined(clipboardTextSerializer)) __obj.updateDynamic("clipboardTextSerializer")(if (clipboardTextSerializer != null) js.Any.fromFunction1(clipboardTextSerializer.asInstanceOf[/* p */ Slice[S] => String]) else null)
-    if (!js.isUndefined(createSelectionBetween)) __obj.updateDynamic("createSelectionBetween")(if (createSelectionBetween != null) js.Any.fromFunction3(createSelectionBetween.asInstanceOf[(/* view */ EditorView[S], /* anchor */ ResolvedPos[S], /* head */ ResolvedPos[S]) => js.UndefOr[Selection | Null]]) else null)
-    if (!js.isUndefined(decorations)) __obj.updateDynamic("decorations")(if (decorations != null) js.Any.fromFunction1(decorations.asInstanceOf[/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ /* state */ js.Any => js.UndefOr[DecorationSet[S] | Null]]) else null)
+    if (!js.isUndefined(clipboardTextParser)) __obj.updateDynamic("clipboardTextParser")(clipboardTextParser.asInstanceOf[js.Any])
+    if (!js.isUndefined(clipboardTextSerializer)) __obj.updateDynamic("clipboardTextSerializer")(clipboardTextSerializer.asInstanceOf[js.Any])
+    if (!js.isUndefined(createSelectionBetween)) __obj.updateDynamic("createSelectionBetween")(createSelectionBetween.asInstanceOf[js.Any])
+    if (!js.isUndefined(decorations)) __obj.updateDynamic("decorations")(decorations.asInstanceOf[js.Any])
     if (!js.isUndefined(domParser)) __obj.updateDynamic("domParser")(domParser.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(if (editable != null) js.Any.fromFunction1(editable.asInstanceOf[/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ /* state */ js.Any => Boolean]) else null)
-    if (!js.isUndefined(handleClick)) __obj.updateDynamic("handleClick")(if (handleClick != null) js.Any.fromFunction3(handleClick.asInstanceOf[(/* view */ EditorView[S], /* pos */ Double, /* event */ MouseEvent) => Boolean]) else null)
-    if (!js.isUndefined(handleClickOn)) __obj.updateDynamic("handleClickOn")(if (handleClickOn != null) js.Any.fromFunction6(handleClickOn.asInstanceOf[(/* view */ EditorView[S], /* pos */ Double, /* node */ Node[S], /* nodePos */ Double, /* event */ MouseEvent, /* direct */ Boolean) => Boolean]) else null)
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleClick)) __obj.updateDynamic("handleClick")(handleClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleClickOn)) __obj.updateDynamic("handleClickOn")(handleClickOn.asInstanceOf[js.Any])
     if (!js.isUndefined(handleDOMEvents)) __obj.updateDynamic("handleDOMEvents")(handleDOMEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleDoubleClick)) __obj.updateDynamic("handleDoubleClick")(if (handleDoubleClick != null) js.Any.fromFunction3(handleDoubleClick.asInstanceOf[(/* view */ EditorView[S], /* pos */ Double, /* event */ MouseEvent) => Boolean]) else null)
-    if (!js.isUndefined(handleDoubleClickOn)) __obj.updateDynamic("handleDoubleClickOn")(if (handleDoubleClickOn != null) js.Any.fromFunction6(handleDoubleClickOn.asInstanceOf[(/* view */ EditorView[S], /* pos */ Double, /* node */ Node[S], /* nodePos */ Double, /* event */ MouseEvent, /* direct */ Boolean) => Boolean]) else null)
-    if (!js.isUndefined(handleDrop)) __obj.updateDynamic("handleDrop")(if (handleDrop != null) js.Any.fromFunction4(handleDrop.asInstanceOf[(/* view */ EditorView[S], /* event */ Event, /* slice */ Slice[S], /* moved */ Boolean) => Boolean]) else null)
-    if (!js.isUndefined(handleKeyDown)) __obj.updateDynamic("handleKeyDown")(if (handleKeyDown != null) js.Any.fromFunction2(handleKeyDown.asInstanceOf[(/* view */ EditorView[S], /* event */ KeyboardEvent) => Boolean]) else null)
-    if (!js.isUndefined(handleKeyPress)) __obj.updateDynamic("handleKeyPress")(if (handleKeyPress != null) js.Any.fromFunction2(handleKeyPress.asInstanceOf[(/* view */ EditorView[S], /* event */ KeyboardEvent) => Boolean]) else null)
-    if (!js.isUndefined(handlePaste)) __obj.updateDynamic("handlePaste")(if (handlePaste != null) js.Any.fromFunction3(handlePaste.asInstanceOf[(/* view */ EditorView[S], /* event */ ClipboardEvent, /* slice */ Slice[S]) => Boolean]) else null)
-    if (!js.isUndefined(handleScrollToSelection)) __obj.updateDynamic("handleScrollToSelection")(if (handleScrollToSelection != null) js.Any.fromFunction1(handleScrollToSelection.asInstanceOf[/* view */ EditorView[S] => Boolean]) else null)
-    if (!js.isUndefined(handleTextInput)) __obj.updateDynamic("handleTextInput")(if (handleTextInput != null) js.Any.fromFunction4(handleTextInput.asInstanceOf[(/* view */ EditorView[S], /* from */ Double, /* to */ Double, /* text */ String) => Boolean]) else null)
-    if (!js.isUndefined(handleTripleClick)) __obj.updateDynamic("handleTripleClick")(if (handleTripleClick != null) js.Any.fromFunction3(handleTripleClick.asInstanceOf[(/* view */ EditorView[S], /* pos */ Double, /* event */ MouseEvent) => Boolean]) else null)
-    if (!js.isUndefined(handleTripleClickOn)) __obj.updateDynamic("handleTripleClickOn")(if (handleTripleClickOn != null) js.Any.fromFunction6(handleTripleClickOn.asInstanceOf[(/* view */ EditorView[S], /* pos */ Double, /* node */ Node[S], /* nodePos */ Double, /* event */ MouseEvent, /* direct */ Boolean) => Boolean]) else null)
+    if (!js.isUndefined(handleDoubleClick)) __obj.updateDynamic("handleDoubleClick")(handleDoubleClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleDoubleClickOn)) __obj.updateDynamic("handleDoubleClickOn")(handleDoubleClickOn.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleDrop)) __obj.updateDynamic("handleDrop")(handleDrop.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleKeyDown)) __obj.updateDynamic("handleKeyDown")(handleKeyDown.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleKeyPress)) __obj.updateDynamic("handleKeyPress")(handleKeyPress.asInstanceOf[js.Any])
+    if (!js.isUndefined(handlePaste)) __obj.updateDynamic("handlePaste")(handlePaste.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleScrollToSelection)) __obj.updateDynamic("handleScrollToSelection")(handleScrollToSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleTextInput)) __obj.updateDynamic("handleTextInput")(handleTextInput.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleTripleClick)) __obj.updateDynamic("handleTripleClick")(handleTripleClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleTripleClickOn)) __obj.updateDynamic("handleTripleClickOn")(handleTripleClickOn.asInstanceOf[js.Any])
     if (!js.isUndefined(nodeViews)) __obj.updateDynamic("nodeViews")(nodeViews.asInstanceOf[js.Any])
     if (!js.isUndefined(scrollMargin)) __obj.updateDynamic("scrollMargin")(scrollMargin.asInstanceOf[js.Any])
     if (!js.isUndefined(scrollThreshold)) __obj.updateDynamic("scrollThreshold")(scrollThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(transformPasted)) __obj.updateDynamic("transformPasted")(if (transformPasted != null) js.Any.fromFunction1(transformPasted.asInstanceOf[/* p */ Slice[S] => Slice[S]]) else null)
-    if (!js.isUndefined(transformPastedHTML)) __obj.updateDynamic("transformPastedHTML")(if (transformPastedHTML != null) js.Any.fromFunction1(transformPastedHTML.asInstanceOf[/* html */ String => String]) else null)
-    if (!js.isUndefined(transformPastedText)) __obj.updateDynamic("transformPastedText")(if (transformPastedText != null) js.Any.fromFunction1(transformPastedText.asInstanceOf[/* text */ String => String]) else null)
-    __obj.asInstanceOf[EditorProps[S]]
+    if (!js.isUndefined(transformPasted)) __obj.updateDynamic("transformPasted")(transformPasted.asInstanceOf[js.Any])
+    if (!js.isUndefined(transformPastedHTML)) __obj.updateDynamic("transformPastedHTML")(transformPastedHTML.asInstanceOf[js.Any])
+    if (!js.isUndefined(transformPastedText)) __obj.updateDynamic("transformPastedText")(transformPastedText.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EditorProps[ThisT, S]]
   }
 }
 

@@ -386,7 +386,6 @@ trait App extends EventEmitter {
   def getApplicationNameForProtocol(url: String): String = js.native
   /**
     * The current value displayed in the counter badge.
-  **Deprecated**
     *
     * @platform linux,darwin
     */
@@ -496,7 +495,6 @@ trait App extends EventEmitter {
     * to the npm modules spec. You should usually also specify a `productName` field,
     * which is your application's full capitalized name, and which will be preferred
     * over `name` by Electron.
-  **Deprecated**
     */
   def getName(): String = js.native
   /**
@@ -550,7 +548,6 @@ trait App extends EventEmitter {
     * has been detected. See
     * https://www.chromium.org/developers/design-documents/accessibility for more
     * details.
-  **Deprecated**
     *
     * @platform darwin,win32
     */
@@ -1454,7 +1451,6 @@ trait App extends EventEmitter {
     *
     * **Note:** Rendering accessibility tree can significantly affect the performance
     * of your app. It should not be enabled by default.
-  **Deprecated**
     *
     * @platform darwin,win32
     */
@@ -1512,8 +1508,6 @@ trait App extends EventEmitter {
     *
     * **Note:** Unity launcher requires the existence of a `.desktop` file to work,
     * for more information please read Desktop Environment Integration.
-    * 
-  **Deprecated**
     *
     * @platform linux,darwin
     */
@@ -1569,7 +1563,6 @@ trait App extends EventEmitter {
     *
     * **Note:** This function overrides the name used internally by Electron; it does
     * not affect the name that the OS uses.
-  **Deprecated**
     */
   def setName(name: String): Unit = js.native
   /**

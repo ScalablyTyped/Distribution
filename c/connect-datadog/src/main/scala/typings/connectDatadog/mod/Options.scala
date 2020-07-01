@@ -1,13 +1,14 @@
 package typings.connectDatadog.mod
 
-import typings.nodeDogstatsd.mod.StatsDClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   var base_url: js.UndefOr[Boolean] = js.undefined
-  var dogstatsd: js.UndefOr[StatsDClient] = js.undefined
+  var dogstatsd: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify hotShots.StatsD */ js.Any
+  ] = js.undefined
   var method: js.UndefOr[Boolean] = js.undefined
   var path: js.UndefOr[Boolean] = js.undefined
   var protocol: js.UndefOr[Boolean] = js.undefined
@@ -20,7 +21,7 @@ object Options {
   @scala.inline
   def apply(
     base_url: js.UndefOr[Boolean] = js.undefined,
-    dogstatsd: StatsDClient = null,
+    dogstatsd: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify hotShots.StatsD */ js.Any = null,
     method: js.UndefOr[Boolean] = js.undefined,
     path: js.UndefOr[Boolean] = js.undefined,
     protocol: js.UndefOr[Boolean] = js.undefined,

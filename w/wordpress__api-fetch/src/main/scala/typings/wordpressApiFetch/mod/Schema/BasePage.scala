@@ -40,7 +40,7 @@ trait BasePage[T /* <: Context */] extends js.Object {
 
 object BasePage {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.wordpressApiFetch.mod.Schema.Context */ T](
     _links: Record[String, js.Array[Dictk]],
     author: Double,
     comment_status: OpenOrClosed,

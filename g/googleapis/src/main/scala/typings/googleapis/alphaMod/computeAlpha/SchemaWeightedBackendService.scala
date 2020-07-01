@@ -43,12 +43,12 @@ object SchemaWeightedBackendService {
   def apply(
     backendService: String = null,
     headerAction: SchemaHttpHeaderAction = null,
-    weight: Int | Double = null
+    weight: js.UndefOr[Double] = js.undefined
   ): SchemaWeightedBackendService = {
     val __obj = js.Dynamic.literal()
     if (backendService != null) __obj.updateDynamic("backendService")(backendService.asInstanceOf[js.Any])
     if (headerAction != null) __obj.updateDynamic("headerAction")(headerAction.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWeightedBackendService]
   }
 }

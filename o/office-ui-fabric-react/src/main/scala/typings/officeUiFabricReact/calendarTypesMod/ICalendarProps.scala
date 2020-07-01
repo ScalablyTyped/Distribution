@@ -96,7 +96,7 @@ trait ICalendarProps
     * selects days
     * @defaultvalue DateRangeType.Day
     */
-  var dateRangeType: js.UndefOr[typings.officeUiFabricReact.dateValuesMod.DateRangeType] = js.undefined
+  var dateRangeType: js.UndefOr[typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType] = js.undefined
   /**
     * Apply additional formating to dates, for example localized date formatting.
     */
@@ -105,13 +105,13 @@ trait ICalendarProps
     * The first day of the week for your locale.
     * @defaultvalue DayOfWeek.Sunday
     */
-  var firstDayOfWeek: js.UndefOr[typings.officeUiFabricReact.dateValuesMod.DayOfWeek] = js.undefined
+  var firstDayOfWeek: js.UndefOr[typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek] = js.undefined
   /**
     * Defines when the first week of the year should start, FirstWeekOfYear.FirstDay,
     * FirstWeekOfYear.FirstFullWeek or FirstWeekOfYear.FirstFourDayWeek are the possible values
     * @defaultvalue FirstWeekOfYear.FirstDay
     */
-  var firstWeekOfYear: js.UndefOr[typings.officeUiFabricReact.dateValuesMod.FirstWeekOfYear] = js.undefined
+  var firstWeekOfYear: js.UndefOr[typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear] = js.undefined
   /**
     * Whether the month picker should highlight the current month
     * @defaultvalue false
@@ -212,7 +212,7 @@ trait ICalendarProps
     * If dateRangeType is not WorkWeek this property does nothing.
     * @defaultvalue [Monday,Tuesday,Wednesday,Thursday,Friday]
     */
-  var workWeekDays: js.UndefOr[js.Array[typings.officeUiFabricReact.dateValuesMod.DayOfWeek]] = js.undefined
+  var workWeekDays: js.UndefOr[js.Array[typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek]] = js.undefined
   /**
     * Whether the year picker is enabled
     * @defaultvalue false
@@ -286,14 +286,14 @@ object ICalendarProps {
     contextMenu: String = null,
     dangerouslySetInnerHTML: Html = null,
     datatype: String = null,
-    dateRangeType: typings.officeUiFabricReact.dateValuesMod.DateRangeType = null,
+    dateRangeType: typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType = null,
     dateTimeFormatter: ICalendarFormatDateCallbacks = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String | Double | js.Array[String] = null,
     dir: String = null,
     draggable: js.UndefOr[Booleanish] = js.undefined,
-    firstDayOfWeek: typings.officeUiFabricReact.dateValuesMod.DayOfWeek = null,
-    firstWeekOfYear: typings.officeUiFabricReact.dateValuesMod.FirstWeekOfYear = null,
+    firstDayOfWeek: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek = null,
+    firstWeekOfYear: typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     highlightCurrentMonth: js.UndefOr[Boolean] = js.undefined,
     highlightSelectedMonth: js.UndefOr[Boolean] = js.undefined,
@@ -423,7 +423,7 @@ object ICalendarProps {
     unselectable: on | off = null,
     value: Date = null,
     vocab: String = null,
-    workWeekDays: js.Array[typings.officeUiFabricReact.dateValuesMod.DayOfWeek] = null,
+    workWeekDays: js.Array[typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek] = null,
     yearPickerHidden: js.UndefOr[Boolean] = js.undefined
   ): ICalendarProps = {
     val __obj = js.Dynamic.literal(strings = strings.asInstanceOf[js.Any])

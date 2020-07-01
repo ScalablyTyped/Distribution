@@ -13,7 +13,7 @@ trait CommitGroup[T /* <: Commit[String | Double | js.Symbol] */] extends js.Obj
 
 object CommitGroup {
   @scala.inline
-  def apply[T](commits: js.Array[TransformedCommit[T]], title: String | `false`): CommitGroup[T] = {
+  def apply[/* <: typings.conventionalCommitsParser.mod.Commit[java.lang.String | scala.Double | js.Symbol] */ T](commits: js.Array[TransformedCommit[T]], title: String | `false`): CommitGroup[T] = {
     val __obj = js.Dynamic.literal(commits = commits.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommitGroup[T]]
   }

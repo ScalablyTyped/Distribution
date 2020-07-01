@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@testing-library/dom/query-helpers", "buildQueries")
+@JSImport("@testing-library/dom/types/query-helpers", "buildQueries")
 @js.native
 object buildQueries extends js.Object {
   def apply[Arguments /* <: js.Array[_] */](

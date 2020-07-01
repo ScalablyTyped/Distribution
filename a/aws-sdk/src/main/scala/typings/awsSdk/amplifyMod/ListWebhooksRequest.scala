@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListWebhooksRequest extends js.Object {
   /**
-    *  Unique Id for an Amplify App. 
+    *  The unique ID for an Amplify app. 
     */
   var appId: AppId = js.native
   /**
-    *  Maximum number of records to list in a single response. 
+    *  The maximum number of records to list in a single response. 
     */
   var maxResults: js.UndefOr[MaxResults] = js.native
   /**
-    *  Pagination token. Set to null to start listing webhooks from start. If non-null pagination token is returned in a result, then pass its value in here to list more webhooks. 
+    *  A pagination token. Set to null to start listing webhooks from the start. If non-null,the pagination token is returned in a result. Pass its value in here to list more webhooks. 
     */
   var nextToken: js.UndefOr[NextToken] = js.native
 }

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("calidation", "Form")
 @js.native
-class Form ()
-  extends Component[FormProps, js.Object, js.Any]
+class Form[T /* <: js.Object */] ()
+  extends Component[FormProps[T], js.Object, js.Any]
 

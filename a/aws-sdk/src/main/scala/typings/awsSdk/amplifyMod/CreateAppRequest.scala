@@ -7,71 +7,75 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateAppRequest extends js.Object {
   /**
-    *  Personal Access token for 3rd party source control system for an Amplify App, used to create webhook and read-only deploy key. Token is not stored. 
+    *  The personal access token for a third-party source control system for an Amplify app. The personal access token is used to create a webhook and a read-only deploy key. The token is not stored. 
     */
   var accessToken: js.UndefOr[AccessToken] = js.native
   /**
-    *  Automated branch creation config for the Amplify App. 
+    *  The automated branch creation configuration for the Amplify app. 
     */
   var autoBranchCreationConfig: js.UndefOr[AutoBranchCreationConfig] = js.native
   /**
-    *  Automated branch creation glob patterns for the Amplify App. 
+    *  The automated branch creation glob patterns for the Amplify app. 
     */
   var autoBranchCreationPatterns: js.UndefOr[AutoBranchCreationPatterns] = js.native
   /**
-    *  Credentials for Basic Authorization for an Amplify App. 
+    *  The credentials for basic authorization for an Amplify app. 
     */
   var basicAuthCredentials: js.UndefOr[BasicAuthCredentials] = js.native
   /**
-    *  BuildSpec for an Amplify App 
+    *  The build specification (build spec) for an Amplify app. 
     */
   var buildSpec: js.UndefOr[BuildSpec] = js.native
   /**
-    *  Custom rewrite / redirect rules for an Amplify App. 
+    *  The custom rewrite and redirect rules for an Amplify app. 
     */
   var customRules: js.UndefOr[CustomRules] = js.native
   /**
-    *  Description for an Amplify App 
+    *  The description for an Amplify app. 
     */
   var description: js.UndefOr[Description] = js.native
   /**
-    *  Enables automated branch creation for the Amplify App. 
+    *  Enables automated branch creation for the Amplify app. 
     */
   var enableAutoBranchCreation: js.UndefOr[EnableAutoBranchCreation] = js.native
   /**
-    *  Enable Basic Authorization for an Amplify App, this will apply to all branches part of this App. 
+    *  Enables basic authorization for an Amplify app. This will apply to all branches that are part of this app. 
     */
   var enableBasicAuth: js.UndefOr[EnableBasicAuth] = js.native
   /**
-    *  Enable the auto building of branches for an Amplify App. 
+    *  Enables the auto building of branches for an Amplify app. 
     */
   var enableBranchAutoBuild: js.UndefOr[EnableBranchAutoBuild] = js.native
   /**
-    *  Environment variables map for an Amplify App. 
+    *  Automatically disconnects a branch in the Amplify Console when you delete a branch from your Git repository. 
+    */
+  var enableBranchAutoDeletion: js.UndefOr[EnableBranchAutoDeletion] = js.native
+  /**
+    *  The environment variables map for an Amplify app. 
     */
   var environmentVariables: js.UndefOr[EnvironmentVariables] = js.native
   /**
-    *  AWS IAM service role for an Amplify App 
+    *  The AWS Identity and Access Management (IAM) service role for an Amplify app. 
     */
   var iamServiceRoleArn: js.UndefOr[ServiceRoleArn] = js.native
   /**
-    *  Name for the Amplify App 
+    *  The name for the Amplify app. 
     */
   var name: Name = js.native
   /**
-    *  OAuth token for 3rd party source control system for an Amplify App, used to create webhook and read-only deploy key. OAuth token is not stored. 
+    *  The OAuth token for a third-party source control system for an Amplify app. The OAuth token is used to create a webhook and a read-only deploy key. The OAuth token is not stored. 
     */
   var oauthToken: js.UndefOr[OauthToken] = js.native
   /**
-    *  Platform / framework for an Amplify App 
+    *  The platform or framework for an Amplify app. 
     */
   var platform: js.UndefOr[Platform] = js.native
   /**
-    *  Repository for an Amplify App 
+    *  The repository for an Amplify app. 
     */
   var repository: js.UndefOr[Repository] = js.native
   /**
-    *  Tag for an Amplify App 
+    *  The tag for an Amplify app. 
     */
   var tags: js.UndefOr[TagMap] = js.native
 }
@@ -90,6 +94,7 @@ object CreateAppRequest {
     enableAutoBranchCreation: js.UndefOr[EnableAutoBranchCreation] = js.undefined,
     enableBasicAuth: js.UndefOr[EnableBasicAuth] = js.undefined,
     enableBranchAutoBuild: js.UndefOr[EnableBranchAutoBuild] = js.undefined,
+    enableBranchAutoDeletion: js.UndefOr[EnableBranchAutoDeletion] = js.undefined,
     environmentVariables: EnvironmentVariables = null,
     iamServiceRoleArn: ServiceRoleArn = null,
     oauthToken: OauthToken = null,
@@ -108,6 +113,7 @@ object CreateAppRequest {
     if (!js.isUndefined(enableAutoBranchCreation)) __obj.updateDynamic("enableAutoBranchCreation")(enableAutoBranchCreation.get.asInstanceOf[js.Any])
     if (!js.isUndefined(enableBasicAuth)) __obj.updateDynamic("enableBasicAuth")(enableBasicAuth.get.asInstanceOf[js.Any])
     if (!js.isUndefined(enableBranchAutoBuild)) __obj.updateDynamic("enableBranchAutoBuild")(enableBranchAutoBuild.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableBranchAutoDeletion)) __obj.updateDynamic("enableBranchAutoDeletion")(enableBranchAutoDeletion.get.asInstanceOf[js.Any])
     if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables.asInstanceOf[js.Any])
     if (iamServiceRoleArn != null) __obj.updateDynamic("iamServiceRoleArn")(iamServiceRoleArn.asInstanceOf[js.Any])
     if (oauthToken != null) __obj.updateDynamic("oauthToken")(oauthToken.asInstanceOf[js.Any])

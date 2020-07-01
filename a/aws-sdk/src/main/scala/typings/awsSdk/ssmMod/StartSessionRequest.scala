@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StartSessionRequest extends js.Object {
   /**
-    * The name of the SSM document to define the parameters and plugin settings for the session. For example, SSM-SessionManagerRunShell. If no document name is provided, a shell to the instance is launched by default.
+    * The name of the SSM document to define the parameters and plugin settings for the session. For example, SSM-SessionManagerRunShell. You can call the GetDocument API to verify the document exists before attempting to start a session. If no document name is provided, a shell to the instance is launched by default.
     */
   var DocumentName: js.UndefOr[DocumentARN] = js.native
   /**

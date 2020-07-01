@@ -1,8 +1,8 @@
 package typings.grommet.selectMod
 
-import typings.grommet.anon.Key
-import typings.grommet.anon.Left
+import typings.grommet.anon.Bottom
 import typings.grommet.anon.Multiple
+import typings.grommet.anon.Reduce
 import typings.grommet.dropMod.DropProps
 import typings.grommet.grommetStrings.large
 import typings.grommet.grommetStrings.medium
@@ -27,7 +27,7 @@ trait SelectProps extends js.Object {
   var closeOnChange: js.UndefOr[Boolean] = js.undefined
   var disabled: js.UndefOr[Boolean | (js.Array[Double | String | js.Object])] = js.undefined
   var disabledKey: js.UndefOr[String | (js.Function1[/* repeated */ js.Any, _])] = js.undefined
-  var dropAlign: js.UndefOr[Left] = js.undefined
+  var dropAlign: js.UndefOr[Bottom] = js.undefined
   var dropHeight: js.UndefOr[xsmall | small | medium | large | xlarge | String] = js.undefined
   var dropProps: js.UndefOr[DropProps] = js.undefined
   var dropTarget: js.UndefOr[js.Object] = js.undefined
@@ -55,7 +55,7 @@ trait SelectProps extends js.Object {
   var selected: js.UndefOr[Double | js.Array[Double]] = js.undefined
   var size: js.UndefOr[small | medium | large | xlarge | String] = js.undefined
   var value: js.UndefOr[String | Element | js.Object | (js.Array[String | js.Object])] = js.undefined
-  var valueKey: js.UndefOr[String | Key | (js.Function1[/* repeated */ js.Any, _])] = js.undefined
+  var valueKey: js.UndefOr[String | Reduce | (js.Function1[/* repeated */ js.Any, _])] = js.undefined
   var valueLabel: js.UndefOr[ReactNode] = js.undefined
 }
 
@@ -69,7 +69,7 @@ object SelectProps {
     closeOnChange: js.UndefOr[Boolean] = js.undefined,
     disabled: Boolean | (js.Array[Double | String | js.Object]) = null,
     disabledKey: String | (js.Function1[/* repeated */ js.Any, _]) = null,
-    dropAlign: Left = null,
+    dropAlign: Bottom = null,
     dropHeight: xsmall | small | medium | large | xlarge | String = null,
     dropProps: DropProps = null,
     dropTarget: js.Object = null,
@@ -96,7 +96,7 @@ object SelectProps {
     selected: Double | js.Array[Double] = null,
     size: small | medium | large | xlarge | String = null,
     value: String | Element | js.Object | (js.Array[String | js.Object]) = null,
-    valueKey: String | Key | (js.Function1[/* repeated */ js.Any, _]) = null,
+    valueKey: String | Reduce | (js.Function1[/* repeated */ js.Any, _]) = null,
     valueLabel: ReactNode = null
   ): SelectProps = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])

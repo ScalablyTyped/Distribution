@@ -11,7 +11,7 @@ trait SearchDashboardsRequest extends js.Object {
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
   /**
-    * The filters to apply to the search. Currently, you can search only by user name. For example, "Filters": [ { "Name": "QUICKSIGHT_USER", "Operator": "StringEquals", "Value": "arn:aws:quicksight:us-east-1:1:user/default/UserName1" } ] 
+    * The filters to apply to the search. Currently, you can search only by user name, for example, "Filters": [ { "Name": "QUICKSIGHT_USER", "Operator": "StringEquals", "Value": "arn:aws:quicksight:us-east-1:1:user/default/UserName1" } ] 
     */
   var Filters: DashboardSearchFilterList = js.native
   /**

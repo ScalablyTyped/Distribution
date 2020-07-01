@@ -41,7 +41,7 @@ trait TextOptions[T /* <: MultilineText */] extends ShapeOptions {
 
 object TextOptions {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.zfont.mod.zdogAugmentingMod.MultilineText */ T](
     font: Font,
     addTo: Anchor = null,
     backface: Boolean | String = null,

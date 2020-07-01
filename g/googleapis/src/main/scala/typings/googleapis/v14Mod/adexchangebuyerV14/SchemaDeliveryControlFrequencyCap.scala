@@ -14,13 +14,13 @@ trait SchemaDeliveryControlFrequencyCap extends js.Object {
 object SchemaDeliveryControlFrequencyCap {
   @scala.inline
   def apply(
-    maxImpressions: Int | Double = null,
-    numTimeUnits: Int | Double = null,
+    maxImpressions: js.UndefOr[Double] = js.undefined,
+    numTimeUnits: js.UndefOr[Double] = js.undefined,
     timeUnitType: String = null
   ): SchemaDeliveryControlFrequencyCap = {
     val __obj = js.Dynamic.literal()
-    if (maxImpressions != null) __obj.updateDynamic("maxImpressions")(maxImpressions.asInstanceOf[js.Any])
-    if (numTimeUnits != null) __obj.updateDynamic("numTimeUnits")(numTimeUnits.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxImpressions)) __obj.updateDynamic("maxImpressions")(maxImpressions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numTimeUnits)) __obj.updateDynamic("numTimeUnits")(numTimeUnits.get.asInstanceOf[js.Any])
     if (timeUnitType != null) __obj.updateDynamic("timeUnitType")(timeUnitType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeliveryControlFrequencyCap]
   }

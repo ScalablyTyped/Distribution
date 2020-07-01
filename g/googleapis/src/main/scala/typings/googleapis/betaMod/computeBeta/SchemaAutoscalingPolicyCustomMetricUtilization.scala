@@ -77,15 +77,15 @@ object SchemaAutoscalingPolicyCustomMetricUtilization {
   def apply(
     filter: String = null,
     metric: String = null,
-    singleInstanceAssignment: Int | Double = null,
-    utilizationTarget: Int | Double = null,
+    singleInstanceAssignment: js.UndefOr[Double] = js.undefined,
+    utilizationTarget: js.UndefOr[Double] = js.undefined,
     utilizationTargetType: String = null
   ): SchemaAutoscalingPolicyCustomMetricUtilization = {
     val __obj = js.Dynamic.literal()
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (metric != null) __obj.updateDynamic("metric")(metric.asInstanceOf[js.Any])
-    if (singleInstanceAssignment != null) __obj.updateDynamic("singleInstanceAssignment")(singleInstanceAssignment.asInstanceOf[js.Any])
-    if (utilizationTarget != null) __obj.updateDynamic("utilizationTarget")(utilizationTarget.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleInstanceAssignment)) __obj.updateDynamic("singleInstanceAssignment")(singleInstanceAssignment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(utilizationTarget)) __obj.updateDynamic("utilizationTarget")(utilizationTarget.get.asInstanceOf[js.Any])
     if (utilizationTargetType != null) __obj.updateDynamic("utilizationTargetType")(utilizationTargetType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAutoscalingPolicyCustomMetricUtilization]
   }

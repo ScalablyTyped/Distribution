@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
 trait TabsProps extends js.Object {
   var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
   var activeIndex: js.UndefOr[Double] = js.undefined
+  var alignControls: js.UndefOr[AlignSelfType] = js.undefined
   var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
   var children: ReactNode
   var flex: js.UndefOr[grow | shrink | Boolean] = js.undefined
@@ -33,6 +34,7 @@ object TabsProps {
   def apply(
     a11yTitle: A11yTitleType = null,
     activeIndex: js.UndefOr[Double] = js.undefined,
+    alignControls: AlignSelfType = null,
     alignSelf: AlignSelfType = null,
     children: ReactNode = null,
     flex: grow | shrink | Boolean = null,
@@ -45,6 +47,7 @@ object TabsProps {
     val __obj = js.Dynamic.literal()
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle.asInstanceOf[js.Any])
     if (!js.isUndefined(activeIndex)) __obj.updateDynamic("activeIndex")(activeIndex.get.asInstanceOf[js.Any])
+    if (alignControls != null) __obj.updateDynamic("alignControls")(alignControls.asInstanceOf[js.Any])
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])

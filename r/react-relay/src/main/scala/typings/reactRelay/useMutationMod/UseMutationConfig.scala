@@ -33,7 +33,7 @@ trait UseMutationConfig[TMutation /* <: MutationParameters */] extends js.Object
 
 object UseMutationConfig {
   @scala.inline
-  def apply[TMutation](
+  def apply[/* <: typings.relayRuntime.commitMutationMod.MutationParameters */ TMutation](
     variables: /* import warning: importer.ImportType#apply Failed type conversion: TMutation['variables'] */ js.Any,
     configs: js.Array[DeclarativeMutationConfig] = null,
     onCompleted: (/* import warning: importer.ImportType#apply Failed type conversion: TMutation['response'] */ /* response */ js.Any, /* errors */ js.Array[PayloadError]) => Unit = null,

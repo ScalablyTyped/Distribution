@@ -79,24 +79,24 @@ object SchemaGoogleCloudVideointelligenceV1p3beta1SpeechTranscriptionConfig {
   @scala.inline
   def apply(
     audioTracks: js.Array[Double] = null,
-    diarizationSpeakerCount: Int | Double = null,
+    diarizationSpeakerCount: js.UndefOr[Double] = js.undefined,
     enableAutomaticPunctuation: js.UndefOr[Boolean] = js.undefined,
     enableSpeakerDiarization: js.UndefOr[Boolean] = js.undefined,
     enableWordConfidence: js.UndefOr[Boolean] = js.undefined,
     filterProfanity: js.UndefOr[Boolean] = js.undefined,
     languageCode: String = null,
-    maxAlternatives: Int | Double = null,
+    maxAlternatives: js.UndefOr[Double] = js.undefined,
     speechContexts: js.Array[SchemaGoogleCloudVideointelligenceV1p3beta1SpeechContext] = null
   ): SchemaGoogleCloudVideointelligenceV1p3beta1SpeechTranscriptionConfig = {
     val __obj = js.Dynamic.literal()
     if (audioTracks != null) __obj.updateDynamic("audioTracks")(audioTracks.asInstanceOf[js.Any])
-    if (diarizationSpeakerCount != null) __obj.updateDynamic("diarizationSpeakerCount")(diarizationSpeakerCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAutomaticPunctuation)) __obj.updateDynamic("enableAutomaticPunctuation")(enableAutomaticPunctuation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSpeakerDiarization)) __obj.updateDynamic("enableSpeakerDiarization")(enableSpeakerDiarization.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableWordConfidence)) __obj.updateDynamic("enableWordConfidence")(enableWordConfidence.asInstanceOf[js.Any])
-    if (!js.isUndefined(filterProfanity)) __obj.updateDynamic("filterProfanity")(filterProfanity.asInstanceOf[js.Any])
+    if (!js.isUndefined(diarizationSpeakerCount)) __obj.updateDynamic("diarizationSpeakerCount")(diarizationSpeakerCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAutomaticPunctuation)) __obj.updateDynamic("enableAutomaticPunctuation")(enableAutomaticPunctuation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSpeakerDiarization)) __obj.updateDynamic("enableSpeakerDiarization")(enableSpeakerDiarization.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableWordConfidence)) __obj.updateDynamic("enableWordConfidence")(enableWordConfidence.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterProfanity)) __obj.updateDynamic("filterProfanity")(filterProfanity.get.asInstanceOf[js.Any])
     if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (maxAlternatives != null) __obj.updateDynamic("maxAlternatives")(maxAlternatives.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAlternatives)) __obj.updateDynamic("maxAlternatives")(maxAlternatives.get.asInstanceOf[js.Any])
     if (speechContexts != null) __obj.updateDynamic("speechContexts")(speechContexts.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1p3beta1SpeechTranscriptionConfig]
   }

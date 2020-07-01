@@ -1,6 +1,7 @@
 package typings.wavesurferJs.mod
 
 import typings.std.AudioContext
+import typings.std.CanvasGradient
 import typings.std.HTMLElement
 import typings.std.ScriptProcessorNode
 import typings.wavesurferJs.anon.Instantiable
@@ -53,7 +54,7 @@ trait WaveSurferParams extends js.Object {
   var scrollParent: js.UndefOr[Boolean] = js.undefined
   var skipLength: js.UndefOr[Double] = js.undefined
   var splitChannels: js.UndefOr[Boolean] = js.undefined
-  var waveColor: js.UndefOr[String] = js.undefined
+  var waveColor: js.UndefOr[String | CanvasGradient] = js.undefined
   var xhr: js.UndefOr[XHROptions] = js.undefined
 }
 
@@ -101,7 +102,7 @@ object WaveSurferParams {
     scrollParent: js.UndefOr[Boolean] = js.undefined,
     skipLength: js.UndefOr[Double] = js.undefined,
     splitChannels: js.UndefOr[Boolean] = js.undefined,
-    waveColor: String = null,
+    waveColor: String | CanvasGradient = null,
     xhr: XHROptions = null
   ): WaveSurferParams = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])

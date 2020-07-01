@@ -74,18 +74,18 @@ object SchemaDistribution {
     bucketOptions: SchemaBucketOptions = null,
     count: String = null,
     exemplars: js.Array[SchemaExemplar] = null,
-    mean: Int | Double = null,
+    mean: js.UndefOr[Double] = js.undefined,
     range: SchemaRange = null,
-    sumOfSquaredDeviation: Int | Double = null
+    sumOfSquaredDeviation: js.UndefOr[Double] = js.undefined
   ): SchemaDistribution = {
     val __obj = js.Dynamic.literal()
     if (bucketCounts != null) __obj.updateDynamic("bucketCounts")(bucketCounts.asInstanceOf[js.Any])
     if (bucketOptions != null) __obj.updateDynamic("bucketOptions")(bucketOptions.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (exemplars != null) __obj.updateDynamic("exemplars")(exemplars.asInstanceOf[js.Any])
-    if (mean != null) __obj.updateDynamic("mean")(mean.asInstanceOf[js.Any])
+    if (!js.isUndefined(mean)) __obj.updateDynamic("mean")(mean.get.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (sumOfSquaredDeviation != null) __obj.updateDynamic("sumOfSquaredDeviation")(sumOfSquaredDeviation.asInstanceOf[js.Any])
+    if (!js.isUndefined(sumOfSquaredDeviation)) __obj.updateDynamic("sumOfSquaredDeviation")(sumOfSquaredDeviation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDistribution]
   }
 }

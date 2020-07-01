@@ -15,7 +15,7 @@ trait ChangesResponseChange[Content /* <: js.Object */] extends js.Object {
 
 object ChangesResponseChange {
   @scala.inline
-  def apply[Content](
+  def apply[/* <: js.Object */ Content](
     changes: js.Array[RevString],
     id: String,
     seq: Double | String,

@@ -18,7 +18,7 @@ trait DayProp[TEvent /* <: js.Object */] extends js.Object {
 
 object DayProp {
   @scala.inline
-  def apply[TEvent](
+  def apply[/* <: js.Object */ TEvent](
     dayProp: (/* date */ typings.std.Date, /* resourceId */ js.UndefOr[Double | String]) => HTMLAttributes[HTMLDivElement] = null,
     eventProp: (TEvent, /* start */ stringOrDate, /* end */ stringOrDate, /* isSelected */ Boolean) => HTMLAttributes[HTMLDivElement] = null,
     slotProp: (/* date */ typings.std.Date, /* resourceId */ js.UndefOr[Double | String]) => HTMLAttributes[HTMLDivElement] = null

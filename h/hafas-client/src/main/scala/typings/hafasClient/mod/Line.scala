@@ -25,10 +25,10 @@ trait Line extends js.Object {
   var name: js.UndefOr[String] = js.undefined
   var night: js.UndefOr[Boolean] = js.undefined
   var nr: js.UndefOr[Double] = js.undefined
-   // routes ids
   var operator: js.UndefOr[Operator] = js.undefined
   var product: js.UndefOr[String] = js.undefined
   var public: js.UndefOr[Boolean] = js.undefined
+  /** routes ids */
   var routes: js.UndefOr[js.Array[String]] = js.undefined
   var symbol: js.UndefOr[String] = js.undefined
   var `type`: line

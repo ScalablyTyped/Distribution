@@ -31,14 +31,14 @@ trait SchemaDatafeedsCustomBatchRequestEntry extends js.Object {
 object SchemaDatafeedsCustomBatchRequestEntry {
   @scala.inline
   def apply(
-    batchId: Int | Double = null,
+    batchId: js.UndefOr[Double] = js.undefined,
     datafeed: SchemaDatafeed = null,
     datafeedId: String = null,
     merchantId: String = null,
     method: String = null
   ): SchemaDatafeedsCustomBatchRequestEntry = {
     val __obj = js.Dynamic.literal()
-    if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchId)) __obj.updateDynamic("batchId")(batchId.get.asInstanceOf[js.Any])
     if (datafeed != null) __obj.updateDynamic("datafeed")(datafeed.asInstanceOf[js.Any])
     if (datafeedId != null) __obj.updateDynamic("datafeedId")(datafeedId.asInstanceOf[js.Any])
     if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId.asInstanceOf[js.Any])

@@ -32,7 +32,7 @@ trait IsElevated[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was un
 
 object IsElevated {
   @scala.inline
-  def apply[T](
+  def apply[/* <: / * import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 * / js.Any */ T](
     as: T = null,
     className: String = null,
     isBorderless: js.UndefOr[Boolean] = js.undefined,

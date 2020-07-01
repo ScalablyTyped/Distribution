@@ -1,6 +1,6 @@
 package typings.googleapis.betaMod.computeBeta
 
-import typings.googleapis.AnonCode
+import typings.googleapis.anon.Code
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,12 +15,12 @@ trait SchemaDiskTypesScopedList extends js.Object {
     * [Output Only] Informational warning which replaces the list of disk types
     * when the list is empty.
     */
-  var warning: js.UndefOr[AnonCode] = js.native
+  var warning: js.UndefOr[Code] = js.native
 }
 
 object SchemaDiskTypesScopedList {
   @scala.inline
-  def apply(diskTypes: js.Array[SchemaDiskType] = null, warning: AnonCode = null): SchemaDiskTypesScopedList = {
+  def apply(diskTypes: js.Array[SchemaDiskType] = null, warning: Code = null): SchemaDiskTypesScopedList = {
     val __obj = js.Dynamic.literal()
     if (diskTypes != null) __obj.updateDynamic("diskTypes")(diskTypes.asInstanceOf[js.Any])
     if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])

@@ -70,7 +70,7 @@ object SchemaWorkflowMetadata {
     startTime: String = null,
     state: String = null,
     template: String = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): SchemaWorkflowMetadata = {
     val __obj = js.Dynamic.literal()
     if (clusterName != null) __obj.updateDynamic("clusterName")(clusterName.asInstanceOf[js.Any])
@@ -83,7 +83,7 @@ object SchemaWorkflowMetadata {
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWorkflowMetadata]
   }
 }

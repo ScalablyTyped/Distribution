@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ScalingPolicy extends js.Object {
   /**
-    * The adjustment type, which specifies how ScalingAdjustment is interpreted. The valid values are ChangeInCapacity, ExactCapacity, and PercentChangeInCapacity.
+    * Specifies how the scaling adjustment is interpreted (either an absolute number or a percentage). The valid values are ChangeInCapacity, ExactCapacity, and PercentChangeInCapacity.
     */
   var AdjustmentType: js.UndefOr[XmlStringMaxLen255] = js.native
   /**
@@ -19,7 +19,7 @@ trait ScalingPolicy extends js.Object {
     */
   var AutoScalingGroupName: js.UndefOr[XmlStringMaxLen255] = js.native
   /**
-    * The amount of time, in seconds, after a scaling activity completes before any further dynamic scaling activities can start.
+    * The duration of the policy's cooldown period, in seconds.
     */
   var Cooldown: js.UndefOr[typings.awsSdk.autoscalingMod.Cooldown] = js.native
   /**
@@ -35,7 +35,7 @@ trait ScalingPolicy extends js.Object {
     */
   var MetricAggregationType: js.UndefOr[XmlStringMaxLen32] = js.native
   /**
-    * The minimum number of instances to scale. If the value of AdjustmentType is PercentChangeInCapacity, the scaling policy changes the DesiredCapacity of the Auto Scaling group by at least this many instances. Otherwise, the error is ValidationError.
+    * The minimum value to scale by when the adjustment type is PercentChangeInCapacity. 
     */
   var MinAdjustmentMagnitude: js.UndefOr[typings.awsSdk.autoscalingMod.MinAdjustmentMagnitude] = js.native
   /**
@@ -51,7 +51,7 @@ trait ScalingPolicy extends js.Object {
     */
   var PolicyName: js.UndefOr[XmlStringMaxLen255] = js.native
   /**
-    * The policy type. The valid values are SimpleScaling, StepScaling, and TargetTrackingScaling.
+    * One of the following policy types:     TargetTrackingScaling     StepScaling     SimpleScaling (default)   For more information, see Target Tracking Scaling Policies and Step and Simple Scaling Policies in the Amazon EC2 Auto Scaling User Guide.
     */
   var PolicyType: js.UndefOr[XmlStringMaxLen64] = js.native
   /**

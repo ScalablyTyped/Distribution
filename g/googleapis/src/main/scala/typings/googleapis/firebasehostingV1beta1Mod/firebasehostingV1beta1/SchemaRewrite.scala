@@ -47,7 +47,7 @@ object SchemaRewrite {
     run: SchemaCloudRunRewrite = null
   ): SchemaRewrite = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dynamicLinks)) __obj.updateDynamic("dynamicLinks")(dynamicLinks.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamicLinks)) __obj.updateDynamic("dynamicLinks")(dynamicLinks.get.asInstanceOf[js.Any])
     if (function != null) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
     if (glob != null) __obj.updateDynamic("glob")(glob.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])

@@ -17,9 +17,9 @@ trait SchemaDeleteEmbeddedObjectRequest extends js.Object {
 
 object SchemaDeleteEmbeddedObjectRequest {
   @scala.inline
-  def apply(objectId: Int | Double = null): SchemaDeleteEmbeddedObjectRequest = {
+  def apply(objectId: js.UndefOr[Double] = js.undefined): SchemaDeleteEmbeddedObjectRequest = {
     val __obj = js.Dynamic.literal()
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectId)) __obj.updateDynamic("objectId")(objectId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeleteEmbeddedObjectRequest]
   }
 }

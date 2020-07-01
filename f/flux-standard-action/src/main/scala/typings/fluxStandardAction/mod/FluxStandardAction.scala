@@ -34,7 +34,7 @@ trait FluxStandardAction[Type /* <: String */, Payload, Meta] extends _FluxStand
 
 object FluxStandardAction {
   @scala.inline
-  def apply[Type, Payload, Meta](
+  def apply[/* <: java.lang.String */ Type, Payload, Meta](
     `type`: Type,
     error: js.UndefOr[Boolean] = js.undefined,
     meta: Meta = null,

@@ -130,8 +130,8 @@ trait StateSystem extends System {
     * or if polygon fill is activated then we need to check if the polygon offset changes.
     * The idea is that we only check what we have too.
     *
-    * @param {Function} func  the checking function to add or remove
-    * @param {boolean} value  should the check function be added or removed.
+    * @param {Function} func - the checking function to add or remove
+    * @param {boolean} value - should the check function be added or removed.
     */
   def updateCheck(func: js.Function1[/* repeated */ js.Any, _], value: Boolean): Unit
 }

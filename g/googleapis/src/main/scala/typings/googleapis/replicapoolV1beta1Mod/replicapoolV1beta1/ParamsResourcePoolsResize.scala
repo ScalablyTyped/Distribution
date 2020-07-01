@@ -41,7 +41,7 @@ object ParamsResourcePoolsResize {
     auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
     fields: String = null,
     key: String = null,
-    numReplicas: Int | Double = null,
+    numReplicas: js.UndefOr[Double] = js.undefined,
     oauth_token: String = null,
     poolName: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
@@ -55,10 +55,10 @@ object ParamsResourcePoolsResize {
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (numReplicas != null) __obj.updateDynamic("numReplicas")(numReplicas.asInstanceOf[js.Any])
+    if (!js.isUndefined(numReplicas)) __obj.updateDynamic("numReplicas")(numReplicas.get.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (poolName != null) __obj.updateDynamic("poolName")(poolName.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (projectName != null) __obj.updateDynamic("projectName")(projectName.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])

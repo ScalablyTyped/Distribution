@@ -15,14 +15,14 @@ trait SchemaPointProto extends js.Object {
 object SchemaPointProto {
   @scala.inline
   def apply(
-    latE7: Int | Double = null,
-    lngE7: Int | Double = null,
+    latE7: js.UndefOr[Double] = js.undefined,
+    lngE7: js.UndefOr[Double] = js.undefined,
     metadata: SchemaFieldMetadataProto = null,
     temporaryData: SchemaMessageSet = null
   ): SchemaPointProto = {
     val __obj = js.Dynamic.literal()
-    if (latE7 != null) __obj.updateDynamic("latE7")(latE7.asInstanceOf[js.Any])
-    if (lngE7 != null) __obj.updateDynamic("lngE7")(lngE7.asInstanceOf[js.Any])
+    if (!js.isUndefined(latE7)) __obj.updateDynamic("latE7")(latE7.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lngE7)) __obj.updateDynamic("lngE7")(lngE7.get.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (temporaryData != null) __obj.updateDynamic("temporaryData")(temporaryData.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPointProto]

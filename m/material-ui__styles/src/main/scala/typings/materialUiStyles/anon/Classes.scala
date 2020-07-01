@@ -15,7 +15,7 @@ trait Classes[StylesType /* <: ClassKeyInferable[_, _] */] extends js.Object {
 
 object Classes {
   @scala.inline
-  def apply[StylesType](
+  def apply[/* <: typings.materialUiStyles.withStylesWithStylesMod.ClassKeyInferable[_, _] */ StylesType](
     classes: ClassNameMap[ClassKeyOfStyles[StylesType]],
     innerRef: js.UndefOr[Null | Ref[_]] = js.undefined
   ): Classes[StylesType] = {

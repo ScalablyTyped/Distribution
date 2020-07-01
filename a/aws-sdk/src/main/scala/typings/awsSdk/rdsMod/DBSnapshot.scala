@@ -47,7 +47,7 @@ trait DBSnapshot extends js.Object {
     */
   var IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.native
   /**
-    * Specifies the time when the snapshot was taken, in Universal Coordinated Time (UTC).
+    * Specifies the time in Coordinated Universal Time (UTC) when the DB instance, from which the snapshot was taken, was created.
     */
   var InstanceCreateTime: js.UndefOr[TStamp] = js.native
   /**
@@ -83,7 +83,7 @@ trait DBSnapshot extends js.Object {
     */
   var ProcessorFeatures: js.UndefOr[ProcessorFeatureList] = js.native
   /**
-    * Provides the time when the snapshot was taken, in Universal Coordinated Time (UTC).
+    * Specifies when the snapshot was taken in Coodinated Universal Time (UTC).
     */
   var SnapshotCreateTime: js.UndefOr[TStamp] = js.native
   /**

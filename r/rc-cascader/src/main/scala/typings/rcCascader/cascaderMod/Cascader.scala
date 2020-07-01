@@ -13,7 +13,7 @@ trait Cascader
   extends Component[CascaderProps, CascaderState, js.Any] {
   var defaultFieldNames: js.Object = js.native
   var trigger: js.Any = js.native
-  def getActiveOptions(activeValue: js.Array[String]): js.Array[CascaderOption] = js.native
+  def getActiveOptions(activeValue: CascaderValueType): js.Array[CascaderOption] = js.native
   def getCurrentLevelOptions(): js.Array[CascaderOption] = js.native
   def getFieldName(name: String): String = js.native
   def getFieldNames(): CascaderFieldNames = js.native

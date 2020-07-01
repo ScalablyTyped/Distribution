@@ -29,7 +29,7 @@ trait NodeInfoCommon[T /* <: NodeType */] extends js.Object {
 
 object NodeInfoCommon {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.broccoliNodeApi.mod.NodeType */ T](
     instantiationStack: String,
     name: String,
     nodeType: T,

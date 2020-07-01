@@ -1,6 +1,5 @@
 package typings.pixiJs.PIXI.systems
 
-import org.scalablytyped.runtime.NumberDictionary
 import typings.pixiJs.PIXI.Buffer
 import typings.pixiJs.PIXI.Geometry
 import typings.pixiJs.PIXI.Program
@@ -19,13 +18,6 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait GeometrySystem extends System {
-  /**
-    * A cache of currently bound buffer,
-    * contains only two members with keys ARRAY_BUFFER and ELEMENT_ARRAY_BUFFER
-    * @member {Object.<number, PIXI.Buffer>} PIXI.systems.GeometrySystem#boundBuffers
-    * @readonly
-    */
-  val boundBuffers: NumberDictionary[Buffer] = js.native
   /**
     * `true` if support `gl.UNSIGNED_INT` in `gl.drawElements` or `gl.drawElementsInstanced`
     * @member {boolean} PIXI.systems.GeometrySystem#canUseUInt32ElementIndex
@@ -67,8 +59,8 @@ trait GeometrySystem extends System {
   /**
     * Binds geometry so that is can be drawn. Creating a Vao if required
     *
-    * @param {PIXI.Geometry} geometry instance of geometry to bind
-    * @param {PIXI.Shader} [shader] instance of shader to use vao for
+    * @param {PIXI.Geometry} geometry - instance of geometry to bind
+    * @param {PIXI.Shader} [shader] - instance of shader to use vao for
     */
   def bind(geometry: Geometry): Unit = js.native
   def bind(geometry: Geometry, shader: Shader): Unit = js.native
@@ -85,21 +77,21 @@ trait GeometrySystem extends System {
   def contextChange(): Unit = js.native
   /**
     * dispose all WebGL resources of all managed geometries and buffers
-    * @param {boolean} [contextLost=false] If context was lost, we suppress `gl.delete` calls
+    * @param {boolean} [contextLost=false] - If context was lost, we suppress `gl.delete` calls
     */
   def disposeAll(): Unit = js.native
   def disposeAll(contextLost: Boolean): Unit = js.native
   /**
     * Disposes buffer
-    * @param {PIXI.Buffer} buffer buffer with data
-    * @param {boolean} [contextLost=false] If context was lost, we suppress deleteVertexArray
+    * @param {PIXI.Buffer} buffer - buffer with data
+    * @param {boolean} [contextLost=false] - If context was lost, we suppress deleteVertexArray
     */
   def disposeBuffer(buffer: Buffer): Unit = js.native
   def disposeBuffer(buffer: Buffer, contextLost: Boolean): Unit = js.native
   /**
     * Disposes geometry
-    * @param {PIXI.Geometry} geometry Geometry with buffers. Only VAO will be disposed
-    * @param {boolean} [contextLost=false] If context was lost, we suppress deleteVertexArray
+    * @param {PIXI.Geometry} geometry - Geometry with buffers. Only VAO will be disposed
+    * @param {boolean} [contextLost=false] - If context was lost, we suppress deleteVertexArray
     */
   def disposeGeometry(geometry: Geometry): Unit = js.native
   def disposeGeometry(geometry: Geometry, contextLost: Boolean): Unit = js.native
@@ -118,8 +110,8 @@ trait GeometrySystem extends System {
   /**
     * Takes a geometry and program and generates a unique signature for them.
     *
-    * @param {PIXI.Geometry} geometry to get signature from
-    * @param {PIXI.Program} program to test geometry against
+    * @param {PIXI.Geometry} geometry - to get signature from
+    * @param {PIXI.Program} program - to test geometry against
     * @returns {String} Unique signature of the geometry and program
     * @protected
     */

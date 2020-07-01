@@ -76,7 +76,7 @@ object ParamsResourcePeopleConnectionsList {
     fields: String = null,
     key: String = null,
     oauth_token: String = null,
-    pageSize: Int | Double = null,
+    pageSize: js.UndefOr[Double] = js.undefined,
     pageToken: String = null,
     personFields: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
@@ -98,13 +98,13 @@ object ParamsResourcePeopleConnectionsList {
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     if (personFields != null) __obj.updateDynamic("personFields")(personFields.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (requestMaskDotincludeField != null) __obj.updateDynamic("requestMask.includeField")(requestMaskDotincludeField.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestSyncToken)) __obj.updateDynamic("requestSyncToken")(requestSyncToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestSyncToken)) __obj.updateDynamic("requestSyncToken")(requestSyncToken.get.asInstanceOf[js.Any])
     if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName.asInstanceOf[js.Any])
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     if (syncToken != null) __obj.updateDynamic("syncToken")(syncToken.asInstanceOf[js.Any])

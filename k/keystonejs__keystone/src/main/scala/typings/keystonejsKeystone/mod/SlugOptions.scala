@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 
 object SlugOptions {
   @scala.inline
-  def apply[FieldNames](
+  def apply[/* <: java.lang.String */ FieldNames](
     from: String,
     generate: ResolvedData[FieldNames] => String,
     `type`: FieldType,

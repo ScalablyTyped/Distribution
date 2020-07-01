@@ -1,6 +1,6 @@
 package typings.gapiClientCalendar.anon
 
-import typings.std.Record
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,11 @@ trait Display extends js.Object {
   /** The gadget's URL. The URL scheme must be HTTPS. */
   var link: js.UndefOr[String] = js.undefined
   /** Preferences. */
-  var preferences: js.UndefOr[Record[String, String]] = js.undefined
+  var preferences: js.UndefOr[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: string}
+    */ typings.gapiClientCalendar.gapiClientCalendarStrings.Display with TopLevel[js.Any]
+  ] = js.undefined
   /** The gadget's title. */
   var title: js.UndefOr[String] = js.undefined
   /** The gadget's type. */
@@ -35,7 +39,9 @@ object Display {
     height: js.UndefOr[Double] = js.undefined,
     iconLink: String = null,
     link: String = null,
-    preferences: Record[String, String] = null,
+    preferences: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: string}
+    */ typings.gapiClientCalendar.gapiClientCalendarStrings.Display with TopLevel[js.Any] = null,
     title: String = null,
     `type`: String = null,
     width: js.UndefOr[Double] = js.undefined

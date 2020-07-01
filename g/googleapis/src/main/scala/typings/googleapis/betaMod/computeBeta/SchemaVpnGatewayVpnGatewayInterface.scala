@@ -21,9 +21,9 @@ trait SchemaVpnGatewayVpnGatewayInterface extends js.Object {
 
 object SchemaVpnGatewayVpnGatewayInterface {
   @scala.inline
-  def apply(id: Int | Double = null, ipAddress: String = null): SchemaVpnGatewayVpnGatewayInterface = {
+  def apply(id: js.UndefOr[Double] = js.undefined, ipAddress: String = null): SchemaVpnGatewayVpnGatewayInterface = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVpnGatewayVpnGatewayInterface]
   }

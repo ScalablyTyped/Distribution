@@ -68,7 +68,7 @@ trait CollectionViewOptions[TModel /* <: Model[_, ModelSetOptions] */, TCollecti
 
 object CollectionViewOptions {
   @scala.inline
-  def apply[TModel, TCollection](
+  def apply[/* <: typings.backbone.mod.Model[_, typings.backbone.mod.ModelSetOptions] */ TModel, /* <: typings.backbone.mod.Collection[TModel] */ TCollection](
     attributes: StringDictionary[js.Any] = null,
     behaviors: js.Array[Behavior] = null,
     childView: (js.Function1[/* model */ TModel, TypeofView]) | TypeofView = null,

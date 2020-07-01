@@ -91,7 +91,7 @@ trait FileManager_ extends js.Object {
   /**
     * _Copies a file._
     *
-    * Copies the file from the source path to the destination path. Caution: This operation will replace any existing file at the the destination.
+    * Copies the file from the source path to the destination path. If a file already exists at the destination file path, the operation will fail and the file will not be copied.
     * @param sourceFilePath - Path of the file to copy.
     * @param destinationFilePath - Path to copy the file to.
     * @see https://docs.scriptable.app/filemanager/#-copy
@@ -120,8 +120,7 @@ trait FileManager_ extends js.Object {
     *
     * Used to retrieve the path to the documents directory. Your scripts are stored in this directory. If you have iCloud enabled, your scripts will be stored in the documents directory
     * in iCloud otherwise they will be stored in the local documents directory. The directory can be used for long time storage. Documents stored in this directory can be accessed using
-    * the Files app. Note that files stored in the local documents directory will not appear in the Files app unless you enable the "Scriptable Local" file provider. Visit the Files app
-    * to enable the file provider.
+    * the Files app. Files stored in the local documents directory will not appear in the Files app.
     * @see https://docs.scriptable.app/filemanager/#-documentsdirectory
     */
   def documentsDirectory(): String = js.native

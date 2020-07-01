@@ -57,7 +57,7 @@ object SchemaExecutionRequest {
     sessionState: String = null
   ): SchemaExecutionRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(devMode)) __obj.updateDynamic("devMode")(devMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(devMode)) __obj.updateDynamic("devMode")(devMode.get.asInstanceOf[js.Any])
     if (function != null) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
     if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     if (sessionState != null) __obj.updateDynamic("sessionState")(sessionState.asInstanceOf[js.Any])

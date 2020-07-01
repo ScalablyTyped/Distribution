@@ -17,7 +17,16 @@ import typings.octokitPluginPaginateRest.anon.`0`
 import typings.octokitPluginPaginateRest.anon.`10`
 import typings.octokitPluginPaginateRest.anon.`11`
 import typings.octokitPluginPaginateRest.anon.`12`
+import typings.octokitPluginPaginateRest.anon.`13`
+import typings.octokitPluginPaginateRest.anon.`14`
+import typings.octokitPluginPaginateRest.anon.`15`
+import typings.octokitPluginPaginateRest.anon.`16`
+import typings.octokitPluginPaginateRest.anon.`17`
+import typings.octokitPluginPaginateRest.anon.`18`
+import typings.octokitPluginPaginateRest.anon.`19`
 import typings.octokitPluginPaginateRest.anon.`1`
+import typings.octokitPluginPaginateRest.anon.`20`
+import typings.octokitPluginPaginateRest.anon.`21`
 import typings.octokitPluginPaginateRest.anon.`2`
 import typings.octokitPluginPaginateRest.anon.`3`
 import typings.octokitPluginPaginateRest.anon.`4`
@@ -39,10 +48,8 @@ import typings.octokitRest.octokitRestStrings.`GET SlashgistsSlashColongist_idSl
 import typings.octokitRest.octokitRestStrings.`GET SlashgistsSlashpublic`
 import typings.octokitRest.octokitRestStrings.`GET SlashgistsSlashstarred`
 import typings.octokitRest.octokitRestStrings.`GET Slashgists`
-import typings.octokitRest.octokitRestStrings.`GET SlashgitignoreSlashtemplates`
 import typings.octokitRest.octokitRestStrings.`GET SlashinstallationSlashrepositories`
 import typings.octokitRest.octokitRestStrings.`GET Slashissues`
-import typings.octokitRest.octokitRestStrings.`GET Slashlicenses`
 import typings.octokitRest.octokitRestStrings.`GET Slashmarketplace_listingSlashplansSlashColonplan_idSlashaccounts`
 import typings.octokitRest.octokitRestStrings.`GET Slashmarketplace_listingSlashplans`
 import typings.octokitRest.octokitRestStrings.`GET Slashmarketplace_listingSlashstubbedSlashplansSlashColonplan_idSlashaccounts`
@@ -51,6 +58,8 @@ import typings.octokitRest.octokitRestStrings.`GET Slashnotifications`
 import typings.octokitRest.octokitRestStrings.`GET Slashorganizations`
 import typings.octokitRest.octokitRestStrings.`GET SlashorgsSlashColonorgSlashactionsSlashrunnersSlashdownloads`
 import typings.octokitRest.octokitRestStrings.`GET SlashorgsSlashColonorgSlashactionsSlashrunners`
+import typings.octokitRest.octokitRestStrings.`GET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`
+import typings.octokitRest.octokitRestStrings.`GET SlashorgsSlashColonorgSlashactionsSlashsecrets`
 import typings.octokitRest.octokitRestStrings.`GET SlashorgsSlashColonorgSlashblocks`
 import typings.octokitRest.octokitRestStrings.`GET SlashorgsSlashColonorgSlashcredential-authorizations`
 import typings.octokitRest.octokitRestStrings.`GET SlashorgsSlashColonorgSlashhooks`
@@ -90,10 +99,10 @@ import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlas
 import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`
 import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`
 import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashassignees`
-import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_status_checksSlashcontexts`
 import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashbranches`
 import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashcheck-runsSlashColoncheck_run_idSlashannotations`
 import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`
+import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`
 import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashcollaborators`
 import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_idSlashreactions`
 import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashcomments`
@@ -107,7 +116,6 @@ import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlas
 import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashcontributors`
 import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses`
 import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashdeployments`
-import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashdownloads`
 import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashforks`
 import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashgitSlashmatching-refsSlashColonref`
 import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashhooks`
@@ -133,6 +141,7 @@ import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlas
 import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcommits`
 import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashfiles`
 import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`
+import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashcomments`
 import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviews`
 import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_idSlashreactions`
 import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcomments`
@@ -145,6 +154,13 @@ import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlas
 import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashteams`
 import typings.octokitRest.octokitRestStrings.`GET Slashrepositories`
 import typings.octokitRest.octokitRestStrings.`GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`
+import typings.octokitRest.octokitRestStrings.`GET SlashsearchSlashcode`
+import typings.octokitRest.octokitRestStrings.`GET SlashsearchSlashcommits`
+import typings.octokitRest.octokitRestStrings.`GET SlashsearchSlashissues`
+import typings.octokitRest.octokitRestStrings.`GET SlashsearchSlashlabels`
+import typings.octokitRest.octokitRestStrings.`GET SlashsearchSlashrepositories`
+import typings.octokitRest.octokitRestStrings.`GET SlashsearchSlashtopics`
+import typings.octokitRest.octokitRestStrings.`GET SlashsearchSlashusers`
 import typings.octokitRest.octokitRestStrings.`GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`
 import typings.octokitRest.octokitRestStrings.`GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcomments`
 import typings.octokitRest.octokitRestStrings.`GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashreactions`
@@ -190,16 +206,18 @@ import typings.octokitTypes.endpointsMod.ActionsListArtifactsForRepoEndpoint
 import typings.octokitTypes.endpointsMod.ActionsListArtifactsForRepoResponseData
 import typings.octokitTypes.endpointsMod.ActionsListJobsForWorkflowRunEndpoint
 import typings.octokitTypes.endpointsMod.ActionsListJobsForWorkflowRunResponseData
+import typings.octokitTypes.endpointsMod.ActionsListOrgSecretsEndpoint
+import typings.octokitTypes.endpointsMod.ActionsListOrgSecretsResponseData
 import typings.octokitTypes.endpointsMod.ActionsListRepoSecretsEndpoint
 import typings.octokitTypes.endpointsMod.ActionsListRepoSecretsResponseData
-import typings.octokitTypes.endpointsMod.ActionsListRepoWorkflowRunsEndpoint
-import typings.octokitTypes.endpointsMod.ActionsListRepoWorkflowRunsResponseData
 import typings.octokitTypes.endpointsMod.ActionsListRepoWorkflowsEndpoint
 import typings.octokitTypes.endpointsMod.ActionsListRepoWorkflowsResponseData
 import typings.octokitTypes.endpointsMod.ActionsListRunnerApplicationsForOrgEndpoint
 import typings.octokitTypes.endpointsMod.ActionsListRunnerApplicationsForOrgResponseData
 import typings.octokitTypes.endpointsMod.ActionsListRunnerApplicationsForRepoEndpoint
 import typings.octokitTypes.endpointsMod.ActionsListRunnerApplicationsForRepoResponseData
+import typings.octokitTypes.endpointsMod.ActionsListSelectedReposForOrgSecretEndpoint
+import typings.octokitTypes.endpointsMod.ActionsListSelectedReposForOrgSecretResponseData
 import typings.octokitTypes.endpointsMod.ActionsListSelfHostedRunnersForOrgEndpoint
 import typings.octokitTypes.endpointsMod.ActionsListSelfHostedRunnersForOrgResponseData
 import typings.octokitTypes.endpointsMod.ActionsListSelfHostedRunnersForRepoEndpoint
@@ -207,6 +225,8 @@ import typings.octokitTypes.endpointsMod.ActionsListSelfHostedRunnersForRepoResp
 import typings.octokitTypes.endpointsMod.ActionsListWorkflowRunArtifactsEndpoint
 import typings.octokitTypes.endpointsMod.ActionsListWorkflowRunArtifactsResponseData
 import typings.octokitTypes.endpointsMod.ActionsListWorkflowRunsEndpoint
+import typings.octokitTypes.endpointsMod.ActionsListWorkflowRunsForRepoEndpoint
+import typings.octokitTypes.endpointsMod.ActionsListWorkflowRunsForRepoResponseData
 import typings.octokitTypes.endpointsMod.ActionsListWorkflowRunsResponseData
 import typings.octokitTypes.endpointsMod.ActivityListNotificationsForAuthenticatedUserEndpoint
 import typings.octokitTypes.endpointsMod.ActivityListNotificationsForAuthenticatedUserResponseData
@@ -241,8 +261,8 @@ import typings.octokitTypes.endpointsMod.AppsListPlansEndpoint
 import typings.octokitTypes.endpointsMod.AppsListPlansResponseData
 import typings.octokitTypes.endpointsMod.AppsListPlansStubbedEndpoint
 import typings.octokitTypes.endpointsMod.AppsListPlansStubbedResponseData
-import typings.octokitTypes.endpointsMod.AppsListReposEndpoint
-import typings.octokitTypes.endpointsMod.AppsListReposResponseData
+import typings.octokitTypes.endpointsMod.AppsListReposAccessibleToInstallationEndpoint
+import typings.octokitTypes.endpointsMod.AppsListReposAccessibleToInstallationResponseData
 import typings.octokitTypes.endpointsMod.AppsListSubscriptionsForAuthenticatedUserEndpoint
 import typings.octokitTypes.endpointsMod.AppsListSubscriptionsForAuthenticatedUserResponseData
 import typings.octokitTypes.endpointsMod.AppsListSubscriptionsForAuthenticatedUserStubbedEndpoint
@@ -255,6 +275,8 @@ import typings.octokitTypes.endpointsMod.ChecksListForSuiteEndpoint
 import typings.octokitTypes.endpointsMod.ChecksListForSuiteResponseData
 import typings.octokitTypes.endpointsMod.ChecksListSuitesForRefEndpoint
 import typings.octokitTypes.endpointsMod.ChecksListSuitesForRefResponseData
+import typings.octokitTypes.endpointsMod.CodeScanningListAlertsForRepoEndpoint
+import typings.octokitTypes.endpointsMod.CodeScanningListAlertsForRepoResponseData
 import typings.octokitTypes.endpointsMod.GistsListCommentsEndpoint
 import typings.octokitTypes.endpointsMod.GistsListCommentsResponseData
 import typings.octokitTypes.endpointsMod.GistsListCommitsEndpoint
@@ -271,8 +293,6 @@ import typings.octokitTypes.endpointsMod.GistsListStarredEndpoint
 import typings.octokitTypes.endpointsMod.GistsListStarredResponseData
 import typings.octokitTypes.endpointsMod.GitListMatchingRefsEndpoint
 import typings.octokitTypes.endpointsMod.GitListMatchingRefsResponseData
-import typings.octokitTypes.endpointsMod.GitignoreListTemplatesEndpoint
-import typings.octokitTypes.endpointsMod.GitignoreListTemplatesResponseData
 import typings.octokitTypes.endpointsMod.IssuesListAssigneesEndpoint
 import typings.octokitTypes.endpointsMod.IssuesListAssigneesResponseData
 import typings.octokitTypes.endpointsMod.IssuesListCommentsEndpoint
@@ -298,11 +318,9 @@ import typings.octokitTypes.endpointsMod.IssuesListLabelsForRepoEndpoint
 import typings.octokitTypes.endpointsMod.IssuesListLabelsForRepoResponseData
 import typings.octokitTypes.endpointsMod.IssuesListLabelsOnIssueEndpoint
 import typings.octokitTypes.endpointsMod.IssuesListLabelsOnIssueResponseData
-import typings.octokitTypes.endpointsMod.IssuesListMilestonesForRepoEndpoint
-import typings.octokitTypes.endpointsMod.IssuesListMilestonesForRepoResponseData
+import typings.octokitTypes.endpointsMod.IssuesListMilestonesEndpoint
+import typings.octokitTypes.endpointsMod.IssuesListMilestonesResponseData
 import typings.octokitTypes.endpointsMod.IssuesListResponseData
-import typings.octokitTypes.endpointsMod.LicensesListCommonlyUsedEndpoint
-import typings.octokitTypes.endpointsMod.LicensesListCommonlyUsedResponseData
 import typings.octokitTypes.endpointsMod.MigrationsListForAuthenticatedUserEndpoint
 import typings.octokitTypes.endpointsMod.MigrationsListForAuthenticatedUserResponseData
 import typings.octokitTypes.endpointsMod.MigrationsListForOrgEndpoint
@@ -315,25 +333,21 @@ import typings.octokitTypes.endpointsMod.OauthAuthorizationsListAuthorizationsEn
 import typings.octokitTypes.endpointsMod.OauthAuthorizationsListAuthorizationsResponseData
 import typings.octokitTypes.endpointsMod.OauthAuthorizationsListGrantsEndpoint
 import typings.octokitTypes.endpointsMod.OauthAuthorizationsListGrantsResponseData
+import typings.octokitTypes.endpointsMod.OrgsListAppInstallationsEndpoint
+import typings.octokitTypes.endpointsMod.OrgsListAppInstallationsResponseData
 import typings.octokitTypes.endpointsMod.OrgsListBlockedUsersEndpoint
 import typings.octokitTypes.endpointsMod.OrgsListBlockedUsersResponseData
-import typings.octokitTypes.endpointsMod.OrgsListCredentialAuthorizationsEndpoint
-import typings.octokitTypes.endpointsMod.OrgsListCredentialAuthorizationsResponseData
 import typings.octokitTypes.endpointsMod.OrgsListEndpoint
 import typings.octokitTypes.endpointsMod.OrgsListForAuthenticatedUserEndpoint
 import typings.octokitTypes.endpointsMod.OrgsListForAuthenticatedUserResponseData
 import typings.octokitTypes.endpointsMod.OrgsListForUserEndpoint
 import typings.octokitTypes.endpointsMod.OrgsListForUserResponseData
-import typings.octokitTypes.endpointsMod.OrgsListHooksEndpoint
-import typings.octokitTypes.endpointsMod.OrgsListHooksResponseData
-import typings.octokitTypes.endpointsMod.OrgsListInstallationsEndpoint
-import typings.octokitTypes.endpointsMod.OrgsListInstallationsResponseData
 import typings.octokitTypes.endpointsMod.OrgsListInvitationTeamsEndpoint
 import typings.octokitTypes.endpointsMod.OrgsListInvitationTeamsResponseData
 import typings.octokitTypes.endpointsMod.OrgsListMembersEndpoint
 import typings.octokitTypes.endpointsMod.OrgsListMembersResponseData
-import typings.octokitTypes.endpointsMod.OrgsListMembershipsEndpoint
-import typings.octokitTypes.endpointsMod.OrgsListMembershipsResponseData
+import typings.octokitTypes.endpointsMod.OrgsListMembershipsForAuthenticatedUserEndpoint
+import typings.octokitTypes.endpointsMod.OrgsListMembershipsForAuthenticatedUserResponseData
 import typings.octokitTypes.endpointsMod.OrgsListOutsideCollaboratorsEndpoint
 import typings.octokitTypes.endpointsMod.OrgsListOutsideCollaboratorsResponseData
 import typings.octokitTypes.endpointsMod.OrgsListPendingInvitationsEndpoint
@@ -341,6 +355,10 @@ import typings.octokitTypes.endpointsMod.OrgsListPendingInvitationsResponseData
 import typings.octokitTypes.endpointsMod.OrgsListPublicMembersEndpoint
 import typings.octokitTypes.endpointsMod.OrgsListPublicMembersResponseData
 import typings.octokitTypes.endpointsMod.OrgsListResponseData
+import typings.octokitTypes.endpointsMod.OrgsListSamlSsoAuthorizationsEndpoint
+import typings.octokitTypes.endpointsMod.OrgsListSamlSsoAuthorizationsResponseData
+import typings.octokitTypes.endpointsMod.OrgsListWebhooksEndpoint
+import typings.octokitTypes.endpointsMod.OrgsListWebhooksResponseData
 import typings.octokitTypes.endpointsMod.ProjectsListCardsEndpoint
 import typings.octokitTypes.endpointsMod.ProjectsListCardsResponseData
 import typings.octokitTypes.endpointsMod.ProjectsListCollaboratorsEndpoint
@@ -353,18 +371,20 @@ import typings.octokitTypes.endpointsMod.ProjectsListForRepoEndpoint
 import typings.octokitTypes.endpointsMod.ProjectsListForRepoResponseData
 import typings.octokitTypes.endpointsMod.ProjectsListForUserEndpoint
 import typings.octokitTypes.endpointsMod.ProjectsListForUserResponseData
-import typings.octokitTypes.endpointsMod.PullsListCommentsEndpoint
-import typings.octokitTypes.endpointsMod.PullsListCommentsForRepoEndpoint
-import typings.octokitTypes.endpointsMod.PullsListCommentsForRepoResponseData
-import typings.octokitTypes.endpointsMod.PullsListCommentsResponseData
+import typings.octokitTypes.endpointsMod.PullsListCommentsForReviewEndpoint
+import typings.octokitTypes.endpointsMod.PullsListCommentsForReviewResponseData
 import typings.octokitTypes.endpointsMod.PullsListCommitsEndpoint
 import typings.octokitTypes.endpointsMod.PullsListCommitsResponseData
 import typings.octokitTypes.endpointsMod.PullsListEndpoint
 import typings.octokitTypes.endpointsMod.PullsListFilesEndpoint
 import typings.octokitTypes.endpointsMod.PullsListFilesResponseData
+import typings.octokitTypes.endpointsMod.PullsListRequestedReviewersEndpoint
+import typings.octokitTypes.endpointsMod.PullsListRequestedReviewersResponseData
 import typings.octokitTypes.endpointsMod.PullsListResponseData
-import typings.octokitTypes.endpointsMod.PullsListReviewRequestsEndpoint
-import typings.octokitTypes.endpointsMod.PullsListReviewRequestsResponseData
+import typings.octokitTypes.endpointsMod.PullsListReviewCommentsEndpoint
+import typings.octokitTypes.endpointsMod.PullsListReviewCommentsForRepoEndpoint
+import typings.octokitTypes.endpointsMod.PullsListReviewCommentsForRepoResponseData
+import typings.octokitTypes.endpointsMod.PullsListReviewCommentsResponseData
 import typings.octokitTypes.endpointsMod.PullsListReviewsEndpoint
 import typings.octokitTypes.endpointsMod.PullsListReviewsResponseData
 import typings.octokitTypes.endpointsMod.ReactionsListForCommitCommentEndpoint
@@ -383,8 +403,6 @@ import typings.octokitTypes.endpointsMod.ReactionsListForTeamDiscussionInOrgEndp
 import typings.octokitTypes.endpointsMod.ReactionsListForTeamDiscussionInOrgResponseData
 import typings.octokitTypes.endpointsMod.ReactionsListForTeamDiscussionLegacyEndpoint
 import typings.octokitTypes.endpointsMod.ReactionsListForTeamDiscussionLegacyResponseData
-import typings.octokitTypes.endpointsMod.ReposListAssetsForReleaseEndpoint
-import typings.octokitTypes.endpointsMod.ReposListAssetsForReleaseResponseData
 import typings.octokitTypes.endpointsMod.ReposListBranchesEndpoint
 import typings.octokitTypes.endpointsMod.ReposListBranchesForHeadCommitEndpoint
 import typings.octokitTypes.endpointsMod.ReposListBranchesForHeadCommitResponseData
@@ -393,8 +411,10 @@ import typings.octokitTypes.endpointsMod.ReposListCollaboratorsEndpoint
 import typings.octokitTypes.endpointsMod.ReposListCollaboratorsResponseData
 import typings.octokitTypes.endpointsMod.ReposListCommentsForCommitEndpoint
 import typings.octokitTypes.endpointsMod.ReposListCommentsForCommitResponseData
-import typings.octokitTypes.endpointsMod.ReposListCommitCommentsEndpoint
-import typings.octokitTypes.endpointsMod.ReposListCommitCommentsResponseData
+import typings.octokitTypes.endpointsMod.ReposListCommitCommentsForRepoEndpoint
+import typings.octokitTypes.endpointsMod.ReposListCommitCommentsForRepoResponseData
+import typings.octokitTypes.endpointsMod.ReposListCommitStatusesForRefEndpoint
+import typings.octokitTypes.endpointsMod.ReposListCommitStatusesForRefResponseData
 import typings.octokitTypes.endpointsMod.ReposListCommitsEndpoint
 import typings.octokitTypes.endpointsMod.ReposListCommitsResponseData
 import typings.octokitTypes.endpointsMod.ReposListContributorsEndpoint
@@ -405,14 +425,10 @@ import typings.octokitTypes.endpointsMod.ReposListDeploymentStatusesEndpoint
 import typings.octokitTypes.endpointsMod.ReposListDeploymentStatusesResponseData
 import typings.octokitTypes.endpointsMod.ReposListDeploymentsEndpoint
 import typings.octokitTypes.endpointsMod.ReposListDeploymentsResponseData
-import typings.octokitTypes.endpointsMod.ReposListDownloadsEndpoint
-import typings.octokitTypes.endpointsMod.ReposListDownloadsResponseData
 import typings.octokitTypes.endpointsMod.ReposListForOrgEndpoint
 import typings.octokitTypes.endpointsMod.ReposListForOrgResponseData
 import typings.octokitTypes.endpointsMod.ReposListForksEndpoint
 import typings.octokitTypes.endpointsMod.ReposListForksResponseData
-import typings.octokitTypes.endpointsMod.ReposListHooksEndpoint
-import typings.octokitTypes.endpointsMod.ReposListHooksResponseData
 import typings.octokitTypes.endpointsMod.ReposListInvitationsEndpoint
 import typings.octokitTypes.endpointsMod.ReposListInvitationsForAuthenticatedUserEndpoint
 import typings.octokitTypes.endpointsMod.ReposListInvitationsForAuthenticatedUserResponseData
@@ -421,22 +437,36 @@ import typings.octokitTypes.endpointsMod.ReposListLanguagesEndpoint
 import typings.octokitTypes.endpointsMod.ReposListLanguagesResponseData
 import typings.octokitTypes.endpointsMod.ReposListPagesBuildsEndpoint
 import typings.octokitTypes.endpointsMod.ReposListPagesBuildsResponseData
-import typings.octokitTypes.endpointsMod.ReposListProtectedBranchRequiredStatusChecksContextsEndpoint
-import typings.octokitTypes.endpointsMod.ReposListProtectedBranchRequiredStatusChecksContextsResponseData
 import typings.octokitTypes.endpointsMod.ReposListPublicEndpoint
 import typings.octokitTypes.endpointsMod.ReposListPublicResponseData
 import typings.octokitTypes.endpointsMod.ReposListPullRequestsAssociatedWithCommitEndpoint
 import typings.octokitTypes.endpointsMod.ReposListPullRequestsAssociatedWithCommitResponseData
+import typings.octokitTypes.endpointsMod.ReposListReleaseAssetsEndpoint
+import typings.octokitTypes.endpointsMod.ReposListReleaseAssetsResponseData
 import typings.octokitTypes.endpointsMod.ReposListReleasesEndpoint
 import typings.octokitTypes.endpointsMod.ReposListReleasesResponseData
-import typings.octokitTypes.endpointsMod.ReposListStatusesForRefEndpoint
-import typings.octokitTypes.endpointsMod.ReposListStatusesForRefResponseData
 import typings.octokitTypes.endpointsMod.ReposListTagsEndpoint
 import typings.octokitTypes.endpointsMod.ReposListTagsResponseData
 import typings.octokitTypes.endpointsMod.ReposListTeamsEndpoint
 import typings.octokitTypes.endpointsMod.ReposListTeamsResponseData
+import typings.octokitTypes.endpointsMod.ReposListWebhooksEndpoint
+import typings.octokitTypes.endpointsMod.ReposListWebhooksResponseData
 import typings.octokitTypes.endpointsMod.ScimListProvisionedIdentitiesEndpoint
 import typings.octokitTypes.endpointsMod.ScimListProvisionedIdentitiesResponseData
+import typings.octokitTypes.endpointsMod.SearchCodeEndpoint
+import typings.octokitTypes.endpointsMod.SearchCodeResponseData
+import typings.octokitTypes.endpointsMod.SearchCommitsEndpoint
+import typings.octokitTypes.endpointsMod.SearchCommitsResponseData
+import typings.octokitTypes.endpointsMod.SearchIssuesAndPullRequestsEndpoint
+import typings.octokitTypes.endpointsMod.SearchIssuesAndPullRequestsResponseData
+import typings.octokitTypes.endpointsMod.SearchLabelsEndpoint
+import typings.octokitTypes.endpointsMod.SearchLabelsResponseData
+import typings.octokitTypes.endpointsMod.SearchReposEndpoint
+import typings.octokitTypes.endpointsMod.SearchReposResponseData
+import typings.octokitTypes.endpointsMod.SearchTopicsEndpoint
+import typings.octokitTypes.endpointsMod.SearchTopicsResponseData
+import typings.octokitTypes.endpointsMod.SearchUsersEndpoint
+import typings.octokitTypes.endpointsMod.SearchUsersResponseData
 import typings.octokitTypes.endpointsMod.TeamsListChildInOrgEndpoint
 import typings.octokitTypes.endpointsMod.TeamsListChildInOrgResponseData
 import typings.octokitTypes.endpointsMod.TeamsListChildLegacyEndpoint
@@ -475,10 +505,10 @@ import typings.octokitTypes.endpointsMod.TeamsListReposInOrgResponseData
 import typings.octokitTypes.endpointsMod.TeamsListReposLegacyEndpoint
 import typings.octokitTypes.endpointsMod.TeamsListReposLegacyResponseData
 import typings.octokitTypes.endpointsMod.TeamsListResponseData
-import typings.octokitTypes.endpointsMod.UsersListBlockedEndpoint
-import typings.octokitTypes.endpointsMod.UsersListBlockedResponseData
-import typings.octokitTypes.endpointsMod.UsersListEmailsEndpoint
-import typings.octokitTypes.endpointsMod.UsersListEmailsResponseData
+import typings.octokitTypes.endpointsMod.UsersListBlockedByAuthenticatedEndpoint
+import typings.octokitTypes.endpointsMod.UsersListBlockedByAuthenticatedResponseData
+import typings.octokitTypes.endpointsMod.UsersListEmailsForAuthenticatedEndpoint
+import typings.octokitTypes.endpointsMod.UsersListEmailsForAuthenticatedResponseData
 import typings.octokitTypes.endpointsMod.UsersListEndpoint
 import typings.octokitTypes.endpointsMod.UsersListFollowedByAuthenticatedEndpoint
 import typings.octokitTypes.endpointsMod.UsersListFollowedByAuthenticatedResponseData
@@ -488,16 +518,16 @@ import typings.octokitTypes.endpointsMod.UsersListFollowersForUserEndpoint
 import typings.octokitTypes.endpointsMod.UsersListFollowersForUserResponseData
 import typings.octokitTypes.endpointsMod.UsersListFollowingForUserEndpoint
 import typings.octokitTypes.endpointsMod.UsersListFollowingForUserResponseData
-import typings.octokitTypes.endpointsMod.UsersListGpgKeysEndpoint
+import typings.octokitTypes.endpointsMod.UsersListGpgKeysForAuthenticatedEndpoint
+import typings.octokitTypes.endpointsMod.UsersListGpgKeysForAuthenticatedResponseData
 import typings.octokitTypes.endpointsMod.UsersListGpgKeysForUserEndpoint
 import typings.octokitTypes.endpointsMod.UsersListGpgKeysForUserResponseData
-import typings.octokitTypes.endpointsMod.UsersListGpgKeysResponseData
-import typings.octokitTypes.endpointsMod.UsersListPublicEmailsEndpoint
-import typings.octokitTypes.endpointsMod.UsersListPublicEmailsResponseData
-import typings.octokitTypes.endpointsMod.UsersListPublicKeysEndpoint
+import typings.octokitTypes.endpointsMod.UsersListPublicEmailsForAuthenticatedEndpoint
+import typings.octokitTypes.endpointsMod.UsersListPublicEmailsForAuthenticatedResponseData
 import typings.octokitTypes.endpointsMod.UsersListPublicKeysForUserEndpoint
 import typings.octokitTypes.endpointsMod.UsersListPublicKeysForUserResponseData
-import typings.octokitTypes.endpointsMod.UsersListPublicKeysResponseData
+import typings.octokitTypes.endpointsMod.UsersListPublicSshKeysForAuthenticatedEndpoint
+import typings.octokitTypes.endpointsMod.UsersListPublicSshKeysForAuthenticatedResponseData
 import typings.octokitTypes.endpointsMod.UsersListResponseData
 import typings.octokitTypes.getResponseTypeFromEndpointMethodMod.GetResponseTypeFromEndpointMethod
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
@@ -812,41 +842,21 @@ object anon extends js.Object {
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
-    def paginate_GETgitignoretemplates(route: `GET SlashgitignoreSlashtemplates`): js.Promise[GitignoreListTemplatesResponseData] = js.native
-    @JSName("paginate")
-    def paginate_GETgitignoretemplates(route: `GET SlashgitignoreSlashtemplates`, parameters: GitignoreListTemplatesEndpoint): js.Promise[GitignoreListTemplatesResponseData] = js.native
-    @JSName("paginate")
-    def paginate_GETgitignoretemplates[MR /* <: js.Array[_] */](
-      route: `GET SlashgitignoreSlashtemplates`,
-      mapFn: js.Function2[
-          /* response */ OctokitResponse[GitignoreListTemplatesResponseData], 
-          /* done */ js.Function0[Unit], 
-          MR
-        ]
-    ): js.Promise[MR] = js.native
-    @JSName("paginate")
-    def paginate_GETgitignoretemplates[MR /* <: js.Array[_] */](
-      route: `GET SlashgitignoreSlashtemplates`,
-      parameters: GitignoreListTemplatesEndpoint,
-      mapFn: js.Function2[
-          /* response */ OctokitResponse[GitignoreListTemplatesResponseData], 
-          /* done */ js.Function0[Unit], 
-          MR
-        ]
-    ): js.Promise[MR] = js.native
-    @JSName("paginate")
     def paginate_GETinstallationrepositories(route: `GET SlashinstallationSlashrepositories`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListReposResponseData> & @octokit/plugin-paginate-rest.anon.Data['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListReposAccessibleToInstallationResponseData> & @octokit/plugin-paginate-rest.anon.Data['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
-    def paginate_GETinstallationrepositories(route: `GET SlashinstallationSlashrepositories`, parameters: AppsListReposEndpoint): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListReposResponseData> & @octokit/plugin-paginate-rest.anon.Data['data'] */ js.Any
+    def paginate_GETinstallationrepositories(
+      route: `GET SlashinstallationSlashrepositories`,
+      parameters: AppsListReposAccessibleToInstallationEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListReposAccessibleToInstallationResponseData> & @octokit/plugin-paginate-rest.anon.Data['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETinstallationrepositories[MR /* <: js.Array[_] */](
       route: `GET SlashinstallationSlashrepositories`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[AppsListReposResponseData] with Data, 
+          /* response */ OctokitResponse[AppsListReposAccessibleToInstallationResponseData] with Data, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -854,9 +864,9 @@ object anon extends js.Object {
     @JSName("paginate")
     def paginate_GETinstallationrepositories[MR /* <: js.Array[_] */](
       route: `GET SlashinstallationSlashrepositories`,
-      parameters: AppsListReposEndpoint,
+      parameters: AppsListReposAccessibleToInstallationEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[AppsListReposResponseData] with Data, 
+          /* response */ OctokitResponse[AppsListReposAccessibleToInstallationResponseData] with Data, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -880,29 +890,6 @@ object anon extends js.Object {
       parameters: IssuesListEndpoint,
       mapFn: js.Function2[
           /* response */ OctokitResponse[IssuesListResponseData], 
-          /* done */ js.Function0[Unit], 
-          MR
-        ]
-    ): js.Promise[MR] = js.native
-    @JSName("paginate")
-    def paginate_GETlicenses(route: `GET Slashlicenses`): js.Promise[LicensesListCommonlyUsedResponseData] = js.native
-    @JSName("paginate")
-    def paginate_GETlicenses(route: `GET Slashlicenses`, parameters: LicensesListCommonlyUsedEndpoint): js.Promise[LicensesListCommonlyUsedResponseData] = js.native
-    @JSName("paginate")
-    def paginate_GETlicenses[MR /* <: js.Array[_] */](
-      route: `GET Slashlicenses`,
-      mapFn: js.Function2[
-          /* response */ OctokitResponse[LicensesListCommonlyUsedResponseData], 
-          /* done */ js.Function0[Unit], 
-          MR
-        ]
-    ): js.Promise[MR] = js.native
-    @JSName("paginate")
-    def paginate_GETlicenses[MR /* <: js.Array[_] */](
-      route: `GET Slashlicenses`,
-      parameters: LicensesListCommonlyUsedEndpoint,
-      mapFn: js.Function2[
-          /* response */ OctokitResponse[LicensesListCommonlyUsedResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -1111,6 +1098,66 @@ object anon extends js.Object {
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
+    def paginate_GETorgsorgactionssecrets(route: `GET SlashorgsSlashColonorgSlashactionsSlashsecrets`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListOrgSecretsResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+      ] = js.native
+    @JSName("paginate")
+    def paginate_GETorgsorgactionssecrets(
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashsecrets`,
+      parameters: ActionsListOrgSecretsEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListOrgSecretsResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+      ] = js.native
+    @JSName("paginate")
+    def paginate_GETorgsorgactionssecrets[MR /* <: js.Array[_] */](
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashsecrets`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListOrgSecretsResponseData] with `0`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
+    def paginate_GETorgsorgactionssecrets[MR /* <: js.Array[_] */](
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashsecrets`,
+      parameters: ActionsListOrgSecretsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListOrgSecretsResponseData] with `0`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
+    def paginate_GETorgsorgactionssecretssecretnamerepositories(route: `GET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelectedReposForOrgSecretResponseData> & @octokit/plugin-paginate-rest.anon.1['data'] */ js.Any
+      ] = js.native
+    @JSName("paginate")
+    def paginate_GETorgsorgactionssecretssecretnamerepositories(
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`,
+      parameters: ActionsListSelectedReposForOrgSecretEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListSelectedReposForOrgSecretResponseData> & @octokit/plugin-paginate-rest.anon.1['data'] */ js.Any
+      ] = js.native
+    @JSName("paginate")
+    def paginate_GETorgsorgactionssecretssecretnamerepositories[MR /* <: js.Array[_] */](
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListSelectedReposForOrgSecretResponseData] with `1`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
+    def paginate_GETorgsorgactionssecretssecretnamerepositories[MR /* <: js.Array[_] */](
+      route: `GET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`,
+      parameters: ActionsListSelectedReposForOrgSecretEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[ActionsListSelectedReposForOrgSecretResponseData] with `1`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
     def paginate_GETorgsorgblocks(route: `GET SlashorgsSlashColonorgSlashblocks`): js.Promise[OrgsListBlockedUsersResponseData] = js.native
     @JSName("paginate")
     def paginate_GETorgsorgblocks(route: `GET SlashorgsSlashColonorgSlashblocks`, parameters: OrgsListBlockedUsersEndpoint): js.Promise[OrgsListBlockedUsersResponseData] = js.native
@@ -1134,17 +1181,17 @@ object anon extends js.Object {
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
-    def paginate_GETorgsorgcredentialauthorizations(route: `GET SlashorgsSlashColonorgSlashcredential-authorizations`): js.Promise[OrgsListCredentialAuthorizationsResponseData] = js.native
+    def paginate_GETorgsorgcredentialauthorizations(route: `GET SlashorgsSlashColonorgSlashcredential-authorizations`): js.Promise[OrgsListSamlSsoAuthorizationsResponseData] = js.native
     @JSName("paginate")
     def paginate_GETorgsorgcredentialauthorizations(
       route: `GET SlashorgsSlashColonorgSlashcredential-authorizations`,
-      parameters: OrgsListCredentialAuthorizationsEndpoint
-    ): js.Promise[OrgsListCredentialAuthorizationsResponseData] = js.native
+      parameters: OrgsListSamlSsoAuthorizationsEndpoint
+    ): js.Promise[OrgsListSamlSsoAuthorizationsResponseData] = js.native
     @JSName("paginate")
     def paginate_GETorgsorgcredentialauthorizations[MR /* <: js.Array[_] */](
       route: `GET SlashorgsSlashColonorgSlashcredential-authorizations`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[OrgsListCredentialAuthorizationsResponseData], 
+          /* response */ OctokitResponse[OrgsListSamlSsoAuthorizationsResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -1152,22 +1199,22 @@ object anon extends js.Object {
     @JSName("paginate")
     def paginate_GETorgsorgcredentialauthorizations[MR /* <: js.Array[_] */](
       route: `GET SlashorgsSlashColonorgSlashcredential-authorizations`,
-      parameters: OrgsListCredentialAuthorizationsEndpoint,
+      parameters: OrgsListSamlSsoAuthorizationsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[OrgsListCredentialAuthorizationsResponseData], 
+          /* response */ OctokitResponse[OrgsListSamlSsoAuthorizationsResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
-    def paginate_GETorgsorghooks(route: `GET SlashorgsSlashColonorgSlashhooks`): js.Promise[OrgsListHooksResponseData] = js.native
+    def paginate_GETorgsorghooks(route: `GET SlashorgsSlashColonorgSlashhooks`): js.Promise[OrgsListWebhooksResponseData] = js.native
     @JSName("paginate")
-    def paginate_GETorgsorghooks(route: `GET SlashorgsSlashColonorgSlashhooks`, parameters: OrgsListHooksEndpoint): js.Promise[OrgsListHooksResponseData] = js.native
+    def paginate_GETorgsorghooks(route: `GET SlashorgsSlashColonorgSlashhooks`, parameters: OrgsListWebhooksEndpoint): js.Promise[OrgsListWebhooksResponseData] = js.native
     @JSName("paginate")
     def paginate_GETorgsorghooks[MR /* <: js.Array[_] */](
       route: `GET SlashorgsSlashColonorgSlashhooks`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[OrgsListHooksResponseData], 
+          /* response */ OctokitResponse[OrgsListWebhooksResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -1175,26 +1222,29 @@ object anon extends js.Object {
     @JSName("paginate")
     def paginate_GETorgsorghooks[MR /* <: js.Array[_] */](
       route: `GET SlashorgsSlashColonorgSlashhooks`,
-      parameters: OrgsListHooksEndpoint,
+      parameters: OrgsListWebhooksEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[OrgsListHooksResponseData], 
+          /* response */ OctokitResponse[OrgsListWebhooksResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
     def paginate_GETorgsorginstallations(route: `GET SlashorgsSlashColonorgSlashinstallations`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.OrgsListInstallationsResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.OrgsListAppInstallationsResponseData> & @octokit/plugin-paginate-rest.anon.2['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
-    def paginate_GETorgsorginstallations(route: `GET SlashorgsSlashColonorgSlashinstallations`, parameters: OrgsListInstallationsEndpoint): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.OrgsListInstallationsResponseData> & @octokit/plugin-paginate-rest.anon.0['data'] */ js.Any
+    def paginate_GETorgsorginstallations(
+      route: `GET SlashorgsSlashColonorgSlashinstallations`,
+      parameters: OrgsListAppInstallationsEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.OrgsListAppInstallationsResponseData> & @octokit/plugin-paginate-rest.anon.2['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETorgsorginstallations[MR /* <: js.Array[_] */](
       route: `GET SlashorgsSlashColonorgSlashinstallations`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[OrgsListInstallationsResponseData] with `0`, 
+          /* response */ OctokitResponse[OrgsListAppInstallationsResponseData] with `2`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -1202,9 +1252,9 @@ object anon extends js.Object {
     @JSName("paginate")
     def paginate_GETorgsorginstallations[MR /* <: js.Array[_] */](
       route: `GET SlashorgsSlashColonorgSlashinstallations`,
-      parameters: OrgsListInstallationsEndpoint,
+      parameters: OrgsListAppInstallationsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[OrgsListInstallationsResponseData] with `0`, 
+          /* response */ OctokitResponse[OrgsListAppInstallationsResponseData] with `2`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -1716,20 +1766,20 @@ object anon extends js.Object {
     ): js.Promise[MR] = js.native
     @JSName("paginate")
     def paginate_GETorgsorgteamsteamslugteamsyncgroupmappings(route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsInOrgResponseData> & @octokit/plugin-paginate-rest.anon.1['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsInOrgResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETorgsorgteamsteamslugteamsyncgroupmappings(
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`,
       parameters: TeamsListIdPGroupsInOrgEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsInOrgResponseData> & @octokit/plugin-paginate-rest.anon.1['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsInOrgResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETorgsorgteamsteamslugteamsyncgroupmappings[MR /* <: js.Array[_] */](
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[TeamsListIdPGroupsInOrgResponseData] with `1`, 
+          /* response */ OctokitResponse[TeamsListIdPGroupsInOrgResponseData] with `3`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -1739,27 +1789,27 @@ object anon extends js.Object {
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`,
       parameters: TeamsListIdPGroupsInOrgEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[TeamsListIdPGroupsInOrgResponseData] with `1`, 
+          /* response */ OctokitResponse[TeamsListIdPGroupsInOrgResponseData] with `3`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
     def paginate_GETorgsorgteamsyncgroups(route: `GET SlashorgsSlashColonorgSlashteam-syncSlashgroups`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForOrgResponseData> & @octokit/plugin-paginate-rest.anon.1['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForOrgResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETorgsorgteamsyncgroups(
       route: `GET SlashorgsSlashColonorgSlashteam-syncSlashgroups`,
       parameters: TeamsListIdPGroupsForOrgEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForOrgResponseData> & @octokit/plugin-paginate-rest.anon.1['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForOrgResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETorgsorgteamsyncgroups[MR /* <: js.Array[_] */](
       route: `GET SlashorgsSlashColonorgSlashteam-syncSlashgroups`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[TeamsListIdPGroupsForOrgResponseData] with `1`, 
+          /* response */ OctokitResponse[TeamsListIdPGroupsForOrgResponseData] with `3`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -1769,7 +1819,7 @@ object anon extends js.Object {
       route: `GET SlashorgsSlashColonorgSlashteam-syncSlashgroups`,
       parameters: TeamsListIdPGroupsForOrgEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[TeamsListIdPGroupsForOrgResponseData] with `1`, 
+          /* response */ OctokitResponse[TeamsListIdPGroupsForOrgResponseData] with `3`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -1877,20 +1927,20 @@ object anon extends js.Object {
     ): js.Promise[MR] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepoactionsartifacts(route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListArtifactsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.2['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListArtifactsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.4['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepoactionsartifacts(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`,
       parameters: ActionsListArtifactsForRepoEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListArtifactsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.2['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListArtifactsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.4['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepoactionsartifacts[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListArtifactsForRepoResponseData] with `2`, 
+          /* response */ OctokitResponse[ActionsListArtifactsForRepoResponseData] with `4`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -1900,7 +1950,7 @@ object anon extends js.Object {
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`,
       parameters: ActionsListArtifactsForRepoEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListArtifactsForRepoResponseData] with `2`, 
+          /* response */ OctokitResponse[ActionsListArtifactsForRepoResponseData] with `4`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -1963,20 +2013,20 @@ object anon extends js.Object {
     ): js.Promise[MR] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepoactionsruns(route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoWorkflowRunsResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.5['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepoactionsruns(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`,
-      parameters: ActionsListRepoWorkflowRunsEndpoint
+      parameters: ActionsListWorkflowRunsForRepoEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoWorkflowRunsResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsForRepoResponseData> & @octokit/plugin-paginate-rest.anon.5['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepoactionsruns[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListRepoWorkflowRunsResponseData] with `3`, 
+          /* response */ OctokitResponse[ActionsListWorkflowRunsForRepoResponseData] with `5`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -1984,9 +2034,9 @@ object anon extends js.Object {
     @JSName("paginate")
     def paginate_GETreposownerrepoactionsruns[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`,
-      parameters: ActionsListRepoWorkflowRunsEndpoint,
+      parameters: ActionsListWorkflowRunsForRepoEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListRepoWorkflowRunsResponseData] with `3`, 
+          /* response */ OctokitResponse[ActionsListWorkflowRunsForRepoResponseData] with `5`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -1995,20 +2045,20 @@ object anon extends js.Object {
     def paginate_GETreposownerrepoactionsrunsrunidartifacts(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunArtifactsResponseData> & @octokit/plugin-paginate-rest.anon.2['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunArtifactsResponseData> & @octokit/plugin-paginate-rest.anon.4['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepoactionsrunsrunidartifacts(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`,
       parameters: ActionsListWorkflowRunArtifactsEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunArtifactsResponseData> & @octokit/plugin-paginate-rest.anon.2['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunArtifactsResponseData> & @octokit/plugin-paginate-rest.anon.4['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepoactionsrunsrunidartifacts[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListWorkflowRunArtifactsResponseData] with `2`, 
+          /* response */ OctokitResponse[ActionsListWorkflowRunArtifactsResponseData] with `4`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2018,27 +2068,27 @@ object anon extends js.Object {
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`,
       parameters: ActionsListWorkflowRunArtifactsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListWorkflowRunArtifactsResponseData] with `2`, 
+          /* response */ OctokitResponse[ActionsListWorkflowRunArtifactsResponseData] with `4`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepoactionsrunsrunidjobs(route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListJobsForWorkflowRunResponseData> & @octokit/plugin-paginate-rest.anon.4['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListJobsForWorkflowRunResponseData> & @octokit/plugin-paginate-rest.anon.6['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepoactionsrunsrunidjobs(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`,
       parameters: ActionsListJobsForWorkflowRunEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListJobsForWorkflowRunResponseData> & @octokit/plugin-paginate-rest.anon.4['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListJobsForWorkflowRunResponseData> & @octokit/plugin-paginate-rest.anon.6['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepoactionsrunsrunidjobs[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListJobsForWorkflowRunResponseData] with `4`, 
+          /* response */ OctokitResponse[ActionsListJobsForWorkflowRunResponseData] with `6`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2048,27 +2098,27 @@ object anon extends js.Object {
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`,
       parameters: ActionsListJobsForWorkflowRunEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListJobsForWorkflowRunResponseData] with `4`, 
+          /* response */ OctokitResponse[ActionsListJobsForWorkflowRunResponseData] with `6`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepoactionssecrets(route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoSecretsResponseData> & @octokit/plugin-paginate-rest.anon.5['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoSecretsResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepoactionssecrets(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`,
       parameters: ActionsListRepoSecretsEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoSecretsResponseData> & @octokit/plugin-paginate-rest.anon.5['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoSecretsResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepoactionssecrets[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListRepoSecretsResponseData] with `5`, 
+          /* response */ OctokitResponse[ActionsListRepoSecretsResponseData] with `7`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2078,27 +2128,27 @@ object anon extends js.Object {
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`,
       parameters: ActionsListRepoSecretsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListRepoSecretsResponseData] with `5`, 
+          /* response */ OctokitResponse[ActionsListRepoSecretsResponseData] with `7`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepoactionsworkflows(route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoWorkflowsResponseData> & @octokit/plugin-paginate-rest.anon.6['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoWorkflowsResponseData> & @octokit/plugin-paginate-rest.anon.8['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepoactionsworkflows(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`,
       parameters: ActionsListRepoWorkflowsEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoWorkflowsResponseData> & @octokit/plugin-paginate-rest.anon.6['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListRepoWorkflowsResponseData> & @octokit/plugin-paginate-rest.anon.8['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepoactionsworkflows[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListRepoWorkflowsResponseData] with `6`, 
+          /* response */ OctokitResponse[ActionsListRepoWorkflowsResponseData] with `8`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2108,7 +2158,7 @@ object anon extends js.Object {
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`,
       parameters: ActionsListRepoWorkflowsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListRepoWorkflowsResponseData] with `6`, 
+          /* response */ OctokitResponse[ActionsListRepoWorkflowsResponseData] with `8`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2117,20 +2167,20 @@ object anon extends js.Object {
     def paginate_GETreposownerrepoactionsworkflowsworkflowidruns(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsResponseData> & @octokit/plugin-paginate-rest.anon.5['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepoactionsworkflowsworkflowidruns(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`,
       parameters: ActionsListWorkflowRunsEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ActionsListWorkflowRunsResponseData> & @octokit/plugin-paginate-rest.anon.5['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepoactionsworkflowsworkflowidruns[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListWorkflowRunsResponseData] with `3`, 
+          /* response */ OctokitResponse[ActionsListWorkflowRunsResponseData] with `5`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2140,7 +2190,7 @@ object anon extends js.Object {
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`,
       parameters: ActionsListWorkflowRunsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListWorkflowRunsResponseData] with `3`, 
+          /* response */ OctokitResponse[ActionsListWorkflowRunsResponseData] with `5`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2198,34 +2248,6 @@ object anon extends js.Object {
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
-    def paginate_GETreposownerrepobranchesbranchprotectionrequiredstatuscheckscontexts(
-      route: `GET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_status_checksSlashcontexts`
-    ): js.Promise[ReposListProtectedBranchRequiredStatusChecksContextsResponseData] = js.native
-    @JSName("paginate")
-    def paginate_GETreposownerrepobranchesbranchprotectionrequiredstatuscheckscontexts(
-      route: `GET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_status_checksSlashcontexts`,
-      parameters: ReposListProtectedBranchRequiredStatusChecksContextsEndpoint
-    ): js.Promise[ReposListProtectedBranchRequiredStatusChecksContextsResponseData] = js.native
-    @JSName("paginate")
-    def paginate_GETreposownerrepobranchesbranchprotectionrequiredstatuscheckscontexts[MR /* <: js.Array[_] */](
-      route: `GET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_status_checksSlashcontexts`,
-      mapFn: js.Function2[
-          /* response */ OctokitResponse[ReposListProtectedBranchRequiredStatusChecksContextsResponseData], 
-          /* done */ js.Function0[Unit], 
-          MR
-        ]
-    ): js.Promise[MR] = js.native
-    @JSName("paginate")
-    def paginate_GETreposownerrepobranchesbranchprotectionrequiredstatuscheckscontexts[MR /* <: js.Array[_] */](
-      route: `GET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_status_checksSlashcontexts`,
-      parameters: ReposListProtectedBranchRequiredStatusChecksContextsEndpoint,
-      mapFn: js.Function2[
-          /* response */ OctokitResponse[ReposListProtectedBranchRequiredStatusChecksContextsResponseData], 
-          /* done */ js.Function0[Unit], 
-          MR
-        ]
-    ): js.Promise[MR] = js.native
-    @JSName("paginate")
     def paginate_GETreposownerrepocheckrunscheckrunidannotations(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-runsSlashColoncheck_run_idSlashannotations`
     ): js.Promise[ChecksListAnnotationsResponseData] = js.native
@@ -2257,20 +2279,20 @@ object anon extends js.Object {
     def paginate_GETreposownerrepochecksuiteschecksuiteidcheckruns(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForSuiteResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForSuiteResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepochecksuiteschecksuiteidcheckruns(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`,
       parameters: ChecksListForSuiteEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForSuiteResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForSuiteResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepochecksuiteschecksuiteidcheckruns[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ChecksListForSuiteResponseData] with `7`, 
+          /* response */ OctokitResponse[ChecksListForSuiteResponseData] with `9`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2280,7 +2302,33 @@ object anon extends js.Object {
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`,
       parameters: ChecksListForSuiteEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ChecksListForSuiteResponseData] with `7`, 
+          /* response */ OctokitResponse[ChecksListForSuiteResponseData] with `9`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
+    def paginate_GETreposownerrepocodescanningalerts(route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`): js.Promise[CodeScanningListAlertsForRepoResponseData] = js.native
+    @JSName("paginate")
+    def paginate_GETreposownerrepocodescanningalerts(
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`,
+      parameters: CodeScanningListAlertsForRepoEndpoint
+    ): js.Promise[CodeScanningListAlertsForRepoResponseData] = js.native
+    @JSName("paginate")
+    def paginate_GETreposownerrepocodescanningalerts[MR /* <: js.Array[_] */](
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[CodeScanningListAlertsForRepoResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
+    def paginate_GETreposownerrepocodescanningalerts[MR /* <: js.Array[_] */](
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`,
+      parameters: CodeScanningListAlertsForRepoEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[CodeScanningListAlertsForRepoResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2312,17 +2360,17 @@ object anon extends js.Object {
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
-    def paginate_GETreposownerrepocomments(route: `GET SlashreposSlashColonownerSlashColonrepoSlashcomments`): js.Promise[ReposListCommitCommentsResponseData] = js.native
+    def paginate_GETreposownerrepocomments(route: `GET SlashreposSlashColonownerSlashColonrepoSlashcomments`): js.Promise[ReposListCommitCommentsForRepoResponseData] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepocomments(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcomments`,
-      parameters: ReposListCommitCommentsEndpoint
-    ): js.Promise[ReposListCommitCommentsResponseData] = js.native
+      parameters: ReposListCommitCommentsForRepoEndpoint
+    ): js.Promise[ReposListCommitCommentsForRepoResponseData] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepocomments[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcomments`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ReposListCommitCommentsResponseData], 
+          /* response */ OctokitResponse[ReposListCommitCommentsForRepoResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2330,9 +2378,9 @@ object anon extends js.Object {
     @JSName("paginate")
     def paginate_GETreposownerrepocomments[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcomments`,
-      parameters: ReposListCommitCommentsEndpoint,
+      parameters: ReposListCommitCommentsForRepoEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ReposListCommitCommentsResponseData], 
+          /* response */ OctokitResponse[ReposListCommitCommentsForRepoResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2473,20 +2521,20 @@ object anon extends js.Object {
     ): js.Promise[MR] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepocommitsrefcheckruns(route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForRefResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForRefResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepocommitsrefcheckruns(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`,
       parameters: ChecksListForRefEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForRefResponseData> & @octokit/plugin-paginate-rest.anon.7['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListForRefResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepocommitsrefcheckruns[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ChecksListForRefResponseData] with `7`, 
+          /* response */ OctokitResponse[ChecksListForRefResponseData] with `9`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2496,27 +2544,27 @@ object anon extends js.Object {
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`,
       parameters: ChecksListForRefEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ChecksListForRefResponseData] with `7`, 
+          /* response */ OctokitResponse[ChecksListForRefResponseData] with `9`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepocommitsrefchecksuites(route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListSuitesForRefResponseData> & @octokit/plugin-paginate-rest.anon.8['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListSuitesForRefResponseData> & @octokit/plugin-paginate-rest.anon.10['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepocommitsrefchecksuites(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`,
       parameters: ChecksListSuitesForRefEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListSuitesForRefResponseData> & @octokit/plugin-paginate-rest.anon.8['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksListSuitesForRefResponseData> & @octokit/plugin-paginate-rest.anon.10['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepocommitsrefchecksuites[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ChecksListSuitesForRefResponseData] with `8`, 
+          /* response */ OctokitResponse[ChecksListSuitesForRefResponseData] with `10`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2526,23 +2574,23 @@ object anon extends js.Object {
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`,
       parameters: ChecksListSuitesForRefEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ChecksListSuitesForRefResponseData] with `8`, 
+          /* response */ OctokitResponse[ChecksListSuitesForRefResponseData] with `10`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
-    def paginate_GETreposownerrepocommitsrefstatuses(route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashstatuses`): js.Promise[ReposListStatusesForRefResponseData] = js.native
+    def paginate_GETreposownerrepocommitsrefstatuses(route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashstatuses`): js.Promise[ReposListCommitStatusesForRefResponseData] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepocommitsrefstatuses(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashstatuses`,
-      parameters: ReposListStatusesForRefEndpoint
-    ): js.Promise[ReposListStatusesForRefResponseData] = js.native
+      parameters: ReposListCommitStatusesForRefEndpoint
+    ): js.Promise[ReposListCommitStatusesForRefResponseData] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepocommitsrefstatuses[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashstatuses`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ReposListStatusesForRefResponseData], 
+          /* response */ OctokitResponse[ReposListCommitStatusesForRefResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2550,9 +2598,9 @@ object anon extends js.Object {
     @JSName("paginate")
     def paginate_GETreposownerrepocommitsrefstatuses[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashstatuses`,
-      parameters: ReposListStatusesForRefEndpoint,
+      parameters: ReposListCommitStatusesForRefEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ReposListStatusesForRefResponseData], 
+          /* response */ OctokitResponse[ReposListCommitStatusesForRefResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2638,32 +2686,6 @@ object anon extends js.Object {
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
-    def paginate_GETreposownerrepodownloads(route: `GET SlashreposSlashColonownerSlashColonrepoSlashdownloads`): js.Promise[ReposListDownloadsResponseData] = js.native
-    @JSName("paginate")
-    def paginate_GETreposownerrepodownloads(
-      route: `GET SlashreposSlashColonownerSlashColonrepoSlashdownloads`,
-      parameters: ReposListDownloadsEndpoint
-    ): js.Promise[ReposListDownloadsResponseData] = js.native
-    @JSName("paginate")
-    def paginate_GETreposownerrepodownloads[MR /* <: js.Array[_] */](
-      route: `GET SlashreposSlashColonownerSlashColonrepoSlashdownloads`,
-      mapFn: js.Function2[
-          /* response */ OctokitResponse[ReposListDownloadsResponseData], 
-          /* done */ js.Function0[Unit], 
-          MR
-        ]
-    ): js.Promise[MR] = js.native
-    @JSName("paginate")
-    def paginate_GETreposownerrepodownloads[MR /* <: js.Array[_] */](
-      route: `GET SlashreposSlashColonownerSlashColonrepoSlashdownloads`,
-      parameters: ReposListDownloadsEndpoint,
-      mapFn: js.Function2[
-          /* response */ OctokitResponse[ReposListDownloadsResponseData], 
-          /* done */ js.Function0[Unit], 
-          MR
-        ]
-    ): js.Promise[MR] = js.native
-    @JSName("paginate")
     def paginate_GETreposownerrepoforks(route: `GET SlashreposSlashColonownerSlashColonrepoSlashforks`): js.Promise[ReposListForksResponseData] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepoforks(route: `GET SlashreposSlashColonownerSlashColonrepoSlashforks`, parameters: ReposListForksEndpoint): js.Promise[ReposListForksResponseData] = js.native
@@ -2713,14 +2735,17 @@ object anon extends js.Object {
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
-    def paginate_GETreposownerrepohooks(route: `GET SlashreposSlashColonownerSlashColonrepoSlashhooks`): js.Promise[ReposListHooksResponseData] = js.native
+    def paginate_GETreposownerrepohooks(route: `GET SlashreposSlashColonownerSlashColonrepoSlashhooks`): js.Promise[ReposListWebhooksResponseData] = js.native
     @JSName("paginate")
-    def paginate_GETreposownerrepohooks(route: `GET SlashreposSlashColonownerSlashColonrepoSlashhooks`, parameters: ReposListHooksEndpoint): js.Promise[ReposListHooksResponseData] = js.native
+    def paginate_GETreposownerrepohooks(
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashhooks`,
+      parameters: ReposListWebhooksEndpoint
+    ): js.Promise[ReposListWebhooksResponseData] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepohooks[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashhooks`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ReposListHooksResponseData], 
+          /* response */ OctokitResponse[ReposListWebhooksResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -2728,9 +2753,9 @@ object anon extends js.Object {
     @JSName("paginate")
     def paginate_GETreposownerrepohooks[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashhooks`,
-      parameters: ReposListHooksEndpoint,
+      parameters: ReposListWebhooksEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ReposListHooksResponseData], 
+          /* response */ OctokitResponse[ReposListWebhooksResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3078,17 +3103,17 @@ object anon extends js.Object {
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
-    def paginate_GETreposownerrepomilestones(route: `GET SlashreposSlashColonownerSlashColonrepoSlashmilestones`): js.Promise[IssuesListMilestonesForRepoResponseData] = js.native
+    def paginate_GETreposownerrepomilestones(route: `GET SlashreposSlashColonownerSlashColonrepoSlashmilestones`): js.Promise[IssuesListMilestonesResponseData] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepomilestones(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashmilestones`,
-      parameters: IssuesListMilestonesForRepoEndpoint
-    ): js.Promise[IssuesListMilestonesForRepoResponseData] = js.native
+      parameters: IssuesListMilestonesEndpoint
+    ): js.Promise[IssuesListMilestonesResponseData] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepomilestones[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashmilestones`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[IssuesListMilestonesForRepoResponseData], 
+          /* response */ OctokitResponse[IssuesListMilestonesResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3096,9 +3121,9 @@ object anon extends js.Object {
     @JSName("paginate")
     def paginate_GETreposownerrepomilestones[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashmilestones`,
-      parameters: IssuesListMilestonesForRepoEndpoint,
+      parameters: IssuesListMilestonesEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[IssuesListMilestonesForRepoResponseData], 
+          /* response */ OctokitResponse[IssuesListMilestonesResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3233,17 +3258,17 @@ object anon extends js.Object {
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
-    def paginate_GETreposownerrepopullscomments(route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcomments`): js.Promise[PullsListCommentsForRepoResponseData] = js.native
+    def paginate_GETreposownerrepopullscomments(route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcomments`): js.Promise[PullsListReviewCommentsForRepoResponseData] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepopullscomments(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcomments`,
-      parameters: PullsListCommentsForRepoEndpoint
-    ): js.Promise[PullsListCommentsForRepoResponseData] = js.native
+      parameters: PullsListReviewCommentsForRepoEndpoint
+    ): js.Promise[PullsListReviewCommentsForRepoResponseData] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepopullscomments[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcomments`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[PullsListCommentsForRepoResponseData], 
+          /* response */ OctokitResponse[PullsListReviewCommentsForRepoResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3251,9 +3276,9 @@ object anon extends js.Object {
     @JSName("paginate")
     def paginate_GETreposownerrepopullscomments[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcomments`,
-      parameters: PullsListCommentsForRepoEndpoint,
+      parameters: PullsListReviewCommentsForRepoEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[PullsListCommentsForRepoResponseData], 
+          /* response */ OctokitResponse[PullsListReviewCommentsForRepoResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3287,17 +3312,17 @@ object anon extends js.Object {
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
-    def paginate_GETreposownerrepopullspullnumbercomments(route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcomments`): js.Promise[PullsListCommentsResponseData] = js.native
+    def paginate_GETreposownerrepopullspullnumbercomments(route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcomments`): js.Promise[PullsListReviewCommentsResponseData] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepopullspullnumbercomments(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcomments`,
-      parameters: PullsListCommentsEndpoint
-    ): js.Promise[PullsListCommentsResponseData] = js.native
+      parameters: PullsListReviewCommentsEndpoint
+    ): js.Promise[PullsListReviewCommentsResponseData] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepopullspullnumbercomments[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcomments`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[PullsListCommentsResponseData], 
+          /* response */ OctokitResponse[PullsListReviewCommentsResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3305,9 +3330,9 @@ object anon extends js.Object {
     @JSName("paginate")
     def paginate_GETreposownerrepopullspullnumbercomments[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcomments`,
-      parameters: PullsListCommentsEndpoint,
+      parameters: PullsListReviewCommentsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[PullsListCommentsResponseData], 
+          /* response */ OctokitResponse[PullsListReviewCommentsResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3368,20 +3393,20 @@ object anon extends js.Object {
     def paginate_GETreposownerrepopullspullnumberrequestedreviewers(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.PullsListReviewRequestsResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.PullsListRequestedReviewersResponseData> & @octokit/plugin-paginate-rest.anon.11['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepopullspullnumberrequestedreviewers(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`,
-      parameters: PullsListReviewRequestsEndpoint
+      parameters: PullsListRequestedReviewersEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.PullsListReviewRequestsResponseData> & @octokit/plugin-paginate-rest.anon.9['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.PullsListRequestedReviewersResponseData> & @octokit/plugin-paginate-rest.anon.11['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETreposownerrepopullspullnumberrequestedreviewers[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[PullsListReviewRequestsResponseData] with `9`, 
+          /* response */ OctokitResponse[PullsListRequestedReviewersResponseData] with `11`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3389,9 +3414,9 @@ object anon extends js.Object {
     @JSName("paginate")
     def paginate_GETreposownerrepopullspullnumberrequestedreviewers[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`,
-      parameters: PullsListReviewRequestsEndpoint,
+      parameters: PullsListRequestedReviewersEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[PullsListReviewRequestsResponseData] with `9`, 
+          /* response */ OctokitResponse[PullsListRequestedReviewersResponseData] with `11`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3423,6 +3448,34 @@ object anon extends js.Object {
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
+    def paginate_GETreposownerrepopullspullnumberreviewsreviewidcomments(
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashcomments`
+    ): js.Promise[PullsListCommentsForReviewResponseData] = js.native
+    @JSName("paginate")
+    def paginate_GETreposownerrepopullspullnumberreviewsreviewidcomments(
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashcomments`,
+      parameters: PullsListCommentsForReviewEndpoint
+    ): js.Promise[PullsListCommentsForReviewResponseData] = js.native
+    @JSName("paginate")
+    def paginate_GETreposownerrepopullspullnumberreviewsreviewidcomments[MR /* <: js.Array[_] */](
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashcomments`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[PullsListCommentsForReviewResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
+    def paginate_GETreposownerrepopullspullnumberreviewsreviewidcomments[MR /* <: js.Array[_] */](
+      route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashcomments`,
+      parameters: PullsListCommentsForReviewEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[PullsListCommentsForReviewResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
     def paginate_GETreposownerreporeleases(route: `GET SlashreposSlashColonownerSlashColonrepoSlashreleases`): js.Promise[ReposListReleasesResponseData] = js.native
     @JSName("paginate")
     def paginate_GETreposownerreporeleases(
@@ -3449,17 +3502,17 @@ object anon extends js.Object {
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
-    def paginate_GETreposownerreporeleasesreleaseidassets(route: `GET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_idSlashassets`): js.Promise[ReposListAssetsForReleaseResponseData] = js.native
+    def paginate_GETreposownerreporeleasesreleaseidassets(route: `GET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_idSlashassets`): js.Promise[ReposListReleaseAssetsResponseData] = js.native
     @JSName("paginate")
     def paginate_GETreposownerreporeleasesreleaseidassets(
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_idSlashassets`,
-      parameters: ReposListAssetsForReleaseEndpoint
-    ): js.Promise[ReposListAssetsForReleaseResponseData] = js.native
+      parameters: ReposListReleaseAssetsEndpoint
+    ): js.Promise[ReposListReleaseAssetsResponseData] = js.native
     @JSName("paginate")
     def paginate_GETreposownerreporeleasesreleaseidassets[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_idSlashassets`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ReposListAssetsForReleaseResponseData], 
+          /* response */ OctokitResponse[ReposListReleaseAssetsResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3467,9 +3520,9 @@ object anon extends js.Object {
     @JSName("paginate")
     def paginate_GETreposownerreporeleasesreleaseidassets[MR /* <: js.Array[_] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_idSlashassets`,
-      parameters: ReposListAssetsForReleaseEndpoint,
+      parameters: ReposListReleaseAssetsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ReposListAssetsForReleaseResponseData], 
+          /* response */ OctokitResponse[ReposListReleaseAssetsResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3582,20 +3635,20 @@ object anon extends js.Object {
     ): js.Promise[MR] = js.native
     @JSName("paginate")
     def paginate_GETscimv2organizationsorgUsers(route: `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ScimListProvisionedIdentitiesResponseData> & @octokit/plugin-paginate-rest.anon.10['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ScimListProvisionedIdentitiesResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETscimv2organizationsorgUsers(
       route: `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`,
       parameters: ScimListProvisionedIdentitiesEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ScimListProvisionedIdentitiesResponseData> & @octokit/plugin-paginate-rest.anon.10['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ScimListProvisionedIdentitiesResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETscimv2organizationsorgUsers[MR /* <: js.Array[_] */](
       route: `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ScimListProvisionedIdentitiesResponseData] with `10`, 
+          /* response */ OctokitResponse[ScimListProvisionedIdentitiesResponseData] with `12`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3605,7 +3658,196 @@ object anon extends js.Object {
       route: `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`,
       parameters: ScimListProvisionedIdentitiesEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ScimListProvisionedIdentitiesResponseData] with `10`, 
+          /* response */ OctokitResponse[ScimListProvisionedIdentitiesResponseData] with `12`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchcode(route: `GET SlashsearchSlashcode`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCodeResponseData> & @octokit/plugin-paginate-rest.anon.13['data'] */ js.Any
+      ] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchcode(route: `GET SlashsearchSlashcode`, parameters: SearchCodeEndpoint): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCodeResponseData> & @octokit/plugin-paginate-rest.anon.13['data'] */ js.Any
+      ] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchcode[MR /* <: js.Array[_] */](
+      route: `GET SlashsearchSlashcode`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchCodeResponseData] with `13`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchcode[MR /* <: js.Array[_] */](
+      route: `GET SlashsearchSlashcode`,
+      parameters: SearchCodeEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchCodeResponseData] with `13`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchcommits(route: `GET SlashsearchSlashcommits`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCommitsResponseData> & @octokit/plugin-paginate-rest.anon.14['data'] */ js.Any
+      ] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchcommits(route: `GET SlashsearchSlashcommits`, parameters: SearchCommitsEndpoint): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchCommitsResponseData> & @octokit/plugin-paginate-rest.anon.14['data'] */ js.Any
+      ] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchcommits[MR /* <: js.Array[_] */](
+      route: `GET SlashsearchSlashcommits`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchCommitsResponseData] with `14`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchcommits[MR /* <: js.Array[_] */](
+      route: `GET SlashsearchSlashcommits`,
+      parameters: SearchCommitsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchCommitsResponseData] with `14`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchissues(route: `GET SlashsearchSlashissues`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchIssuesAndPullRequestsResponseData> & @octokit/plugin-paginate-rest.anon.15['data'] */ js.Any
+      ] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchissues(route: `GET SlashsearchSlashissues`, parameters: SearchIssuesAndPullRequestsEndpoint): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchIssuesAndPullRequestsResponseData> & @octokit/plugin-paginate-rest.anon.15['data'] */ js.Any
+      ] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchissues[MR /* <: js.Array[_] */](
+      route: `GET SlashsearchSlashissues`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchIssuesAndPullRequestsResponseData] with `15`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchissues[MR /* <: js.Array[_] */](
+      route: `GET SlashsearchSlashissues`,
+      parameters: SearchIssuesAndPullRequestsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchIssuesAndPullRequestsResponseData] with `15`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchlabels(route: `GET SlashsearchSlashlabels`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchLabelsResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
+      ] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchlabels(route: `GET SlashsearchSlashlabels`, parameters: SearchLabelsEndpoint): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchLabelsResponseData> & @octokit/plugin-paginate-rest.anon.16['data'] */ js.Any
+      ] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchlabels[MR /* <: js.Array[_] */](
+      route: `GET SlashsearchSlashlabels`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchLabelsResponseData] with `16`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchlabels[MR /* <: js.Array[_] */](
+      route: `GET SlashsearchSlashlabels`,
+      parameters: SearchLabelsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchLabelsResponseData] with `16`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchrepositories(route: `GET SlashsearchSlashrepositories`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchReposResponseData> & @octokit/plugin-paginate-rest.anon.17['data'] */ js.Any
+      ] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchrepositories(route: `GET SlashsearchSlashrepositories`, parameters: SearchReposEndpoint): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchReposResponseData> & @octokit/plugin-paginate-rest.anon.17['data'] */ js.Any
+      ] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchrepositories[MR /* <: js.Array[_] */](
+      route: `GET SlashsearchSlashrepositories`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchReposResponseData] with `17`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchrepositories[MR /* <: js.Array[_] */](
+      route: `GET SlashsearchSlashrepositories`,
+      parameters: SearchReposEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchReposResponseData] with `17`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchtopics(route: `GET SlashsearchSlashtopics`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchTopicsResponseData> & @octokit/plugin-paginate-rest.anon.18['data'] */ js.Any
+      ] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchtopics(route: `GET SlashsearchSlashtopics`, parameters: SearchTopicsEndpoint): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchTopicsResponseData> & @octokit/plugin-paginate-rest.anon.18['data'] */ js.Any
+      ] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchtopics[MR /* <: js.Array[_] */](
+      route: `GET SlashsearchSlashtopics`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchTopicsResponseData] with `18`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchtopics[MR /* <: js.Array[_] */](
+      route: `GET SlashsearchSlashtopics`,
+      parameters: SearchTopicsEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchTopicsResponseData] with `18`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchusers(route: `GET SlashsearchSlashusers`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchUsersResponseData> & @octokit/plugin-paginate-rest.anon.19['data'] */ js.Any
+      ] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchusers(route: `GET SlashsearchSlashusers`, parameters: SearchUsersEndpoint): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.SearchUsersResponseData> & @octokit/plugin-paginate-rest.anon.19['data'] */ js.Any
+      ] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchusers[MR /* <: js.Array[_] */](
+      route: `GET SlashsearchSlashusers`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchUsersResponseData] with `19`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
+    def paginate_GETsearchusers[MR /* <: js.Array[_] */](
+      route: `GET SlashsearchSlashusers`,
+      parameters: SearchUsersEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[SearchUsersResponseData] with `19`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3836,20 +4078,20 @@ object anon extends js.Object {
     ): js.Promise[MR] = js.native
     @JSName("paginate")
     def paginate_GETteamsteamidteamsyncgroupmappings(route: `GET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForLegacyResponseData> & @octokit/plugin-paginate-rest.anon.1['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForLegacyResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETteamsteamidteamsyncgroupmappings(
       route: `GET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`,
       parameters: TeamsListIdPGroupsForLegacyEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForLegacyResponseData> & @octokit/plugin-paginate-rest.anon.1['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.TeamsListIdPGroupsForLegacyResponseData> & @octokit/plugin-paginate-rest.anon.3['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETteamsteamidteamsyncgroupmappings[MR /* <: js.Array[_] */](
       route: `GET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[TeamsListIdPGroupsForLegacyResponseData] with `1`, 
+          /* response */ OctokitResponse[TeamsListIdPGroupsForLegacyResponseData] with `3`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3859,20 +4101,20 @@ object anon extends js.Object {
       route: `GET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`,
       parameters: TeamsListIdPGroupsForLegacyEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[TeamsListIdPGroupsForLegacyResponseData] with `1`, 
+          /* response */ OctokitResponse[TeamsListIdPGroupsForLegacyResponseData] with `3`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
-    def paginate_GETuserblocks(route: `GET SlashuserSlashblocks`): js.Promise[UsersListBlockedResponseData] = js.native
+    def paginate_GETuserblocks(route: `GET SlashuserSlashblocks`): js.Promise[UsersListBlockedByAuthenticatedResponseData] = js.native
     @JSName("paginate")
-    def paginate_GETuserblocks(route: `GET SlashuserSlashblocks`, parameters: UsersListBlockedEndpoint): js.Promise[UsersListBlockedResponseData] = js.native
+    def paginate_GETuserblocks(route: `GET SlashuserSlashblocks`, parameters: UsersListBlockedByAuthenticatedEndpoint): js.Promise[UsersListBlockedByAuthenticatedResponseData] = js.native
     @JSName("paginate")
     def paginate_GETuserblocks[MR /* <: js.Array[_] */](
       route: `GET SlashuserSlashblocks`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[UsersListBlockedResponseData], 
+          /* response */ OctokitResponse[UsersListBlockedByAuthenticatedResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3880,22 +4122,22 @@ object anon extends js.Object {
     @JSName("paginate")
     def paginate_GETuserblocks[MR /* <: js.Array[_] */](
       route: `GET SlashuserSlashblocks`,
-      parameters: UsersListBlockedEndpoint,
+      parameters: UsersListBlockedByAuthenticatedEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[UsersListBlockedResponseData], 
+          /* response */ OctokitResponse[UsersListBlockedByAuthenticatedResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
-    def paginate_GETuseremails(route: `GET SlashuserSlashemails`): js.Promise[UsersListEmailsResponseData] = js.native
+    def paginate_GETuseremails(route: `GET SlashuserSlashemails`): js.Promise[UsersListEmailsForAuthenticatedResponseData] = js.native
     @JSName("paginate")
-    def paginate_GETuseremails(route: `GET SlashuserSlashemails`, parameters: UsersListEmailsEndpoint): js.Promise[UsersListEmailsResponseData] = js.native
+    def paginate_GETuseremails(route: `GET SlashuserSlashemails`, parameters: UsersListEmailsForAuthenticatedEndpoint): js.Promise[UsersListEmailsForAuthenticatedResponseData] = js.native
     @JSName("paginate")
     def paginate_GETuseremails[MR /* <: js.Array[_] */](
       route: `GET SlashuserSlashemails`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[UsersListEmailsResponseData], 
+          /* response */ OctokitResponse[UsersListEmailsForAuthenticatedResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3903,9 +4145,9 @@ object anon extends js.Object {
     @JSName("paginate")
     def paginate_GETuseremails[MR /* <: js.Array[_] */](
       route: `GET SlashuserSlashemails`,
-      parameters: UsersListEmailsEndpoint,
+      parameters: UsersListEmailsForAuthenticatedEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[UsersListEmailsResponseData], 
+          /* response */ OctokitResponse[UsersListEmailsForAuthenticatedResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3957,14 +4199,14 @@ object anon extends js.Object {
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
-    def paginate_GETusergpgkeys(route: `GET SlashuserSlashgpg_keys`): js.Promise[UsersListGpgKeysResponseData] = js.native
+    def paginate_GETusergpgkeys(route: `GET SlashuserSlashgpg_keys`): js.Promise[UsersListGpgKeysForAuthenticatedResponseData] = js.native
     @JSName("paginate")
-    def paginate_GETusergpgkeys(route: `GET SlashuserSlashgpg_keys`, parameters: UsersListGpgKeysEndpoint): js.Promise[UsersListGpgKeysResponseData] = js.native
+    def paginate_GETusergpgkeys(route: `GET SlashuserSlashgpg_keys`, parameters: UsersListGpgKeysForAuthenticatedEndpoint): js.Promise[UsersListGpgKeysForAuthenticatedResponseData] = js.native
     @JSName("paginate")
     def paginate_GETusergpgkeys[MR /* <: js.Array[_] */](
       route: `GET SlashuserSlashgpg_keys`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[UsersListGpgKeysResponseData], 
+          /* response */ OctokitResponse[UsersListGpgKeysForAuthenticatedResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -3972,29 +4214,29 @@ object anon extends js.Object {
     @JSName("paginate")
     def paginate_GETusergpgkeys[MR /* <: js.Array[_] */](
       route: `GET SlashuserSlashgpg_keys`,
-      parameters: UsersListGpgKeysEndpoint,
+      parameters: UsersListGpgKeysForAuthenticatedEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[UsersListGpgKeysResponseData], 
+          /* response */ OctokitResponse[UsersListGpgKeysForAuthenticatedResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
     def paginate_GETuserinstallations(route: `GET SlashuserSlashinstallations`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationsForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.11['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationsForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.20['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETuserinstallations(
       route: `GET SlashuserSlashinstallations`,
       parameters: AppsListInstallationsForAuthenticatedUserEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationsForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.11['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationsForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.20['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETuserinstallations[MR /* <: js.Array[_] */](
       route: `GET SlashuserSlashinstallations`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[AppsListInstallationsForAuthenticatedUserResponseData] with `11`, 
+          /* response */ OctokitResponse[AppsListInstallationsForAuthenticatedUserResponseData] with `20`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -4004,27 +4246,27 @@ object anon extends js.Object {
       route: `GET SlashuserSlashinstallations`,
       parameters: AppsListInstallationsForAuthenticatedUserEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[AppsListInstallationsForAuthenticatedUserResponseData] with `11`, 
+          /* response */ OctokitResponse[AppsListInstallationsForAuthenticatedUserResponseData] with `20`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
     def paginate_GETuserinstallationsinstallationidrepositories(route: `GET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationReposForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationReposForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.21['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETuserinstallationsinstallationidrepositories(
       route: `GET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`,
       parameters: AppsListInstallationReposForAuthenticatedUserEndpoint
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationReposForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.AppsListInstallationReposForAuthenticatedUserResponseData> & @octokit/plugin-paginate-rest.anon.21['data'] */ js.Any
       ] = js.native
     @JSName("paginate")
     def paginate_GETuserinstallationsinstallationidrepositories[MR /* <: js.Array[_] */](
       route: `GET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[AppsListInstallationReposForAuthenticatedUserResponseData] with `12`, 
+          /* response */ OctokitResponse[AppsListInstallationReposForAuthenticatedUserResponseData] with `21`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -4034,7 +4276,7 @@ object anon extends js.Object {
       route: `GET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`,
       parameters: AppsListInstallationReposForAuthenticatedUserEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[AppsListInstallationReposForAuthenticatedUserResponseData] with `12`, 
+          /* response */ OctokitResponse[AppsListInstallationReposForAuthenticatedUserResponseData] with `21`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -4063,14 +4305,14 @@ object anon extends js.Object {
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
-    def paginate_GETuserkeys(route: `GET SlashuserSlashkeys`): js.Promise[UsersListPublicKeysResponseData] = js.native
+    def paginate_GETuserkeys(route: `GET SlashuserSlashkeys`): js.Promise[UsersListPublicSshKeysForAuthenticatedResponseData] = js.native
     @JSName("paginate")
-    def paginate_GETuserkeys(route: `GET SlashuserSlashkeys`, parameters: UsersListPublicKeysEndpoint): js.Promise[UsersListPublicKeysResponseData] = js.native
+    def paginate_GETuserkeys(route: `GET SlashuserSlashkeys`, parameters: UsersListPublicSshKeysForAuthenticatedEndpoint): js.Promise[UsersListPublicSshKeysForAuthenticatedResponseData] = js.native
     @JSName("paginate")
     def paginate_GETuserkeys[MR /* <: js.Array[_] */](
       route: `GET SlashuserSlashkeys`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[UsersListPublicKeysResponseData], 
+          /* response */ OctokitResponse[UsersListPublicSshKeysForAuthenticatedResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -4078,9 +4320,9 @@ object anon extends js.Object {
     @JSName("paginate")
     def paginate_GETuserkeys[MR /* <: js.Array[_] */](
       route: `GET SlashuserSlashkeys`,
-      parameters: UsersListPublicKeysEndpoint,
+      parameters: UsersListPublicSshKeysForAuthenticatedEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[UsersListPublicKeysResponseData], 
+          /* response */ OctokitResponse[UsersListPublicSshKeysForAuthenticatedResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -4138,14 +4380,17 @@ object anon extends js.Object {
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
-    def paginate_GETusermembershipsorgs(route: `GET SlashuserSlashmembershipsSlashorgs`): js.Promise[OrgsListMembershipsResponseData] = js.native
+    def paginate_GETusermembershipsorgs(route: `GET SlashuserSlashmembershipsSlashorgs`): js.Promise[OrgsListMembershipsForAuthenticatedUserResponseData] = js.native
     @JSName("paginate")
-    def paginate_GETusermembershipsorgs(route: `GET SlashuserSlashmembershipsSlashorgs`, parameters: OrgsListMembershipsEndpoint): js.Promise[OrgsListMembershipsResponseData] = js.native
+    def paginate_GETusermembershipsorgs(
+      route: `GET SlashuserSlashmembershipsSlashorgs`,
+      parameters: OrgsListMembershipsForAuthenticatedUserEndpoint
+    ): js.Promise[OrgsListMembershipsForAuthenticatedUserResponseData] = js.native
     @JSName("paginate")
     def paginate_GETusermembershipsorgs[MR /* <: js.Array[_] */](
       route: `GET SlashuserSlashmembershipsSlashorgs`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[OrgsListMembershipsResponseData], 
+          /* response */ OctokitResponse[OrgsListMembershipsForAuthenticatedUserResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -4153,9 +4398,9 @@ object anon extends js.Object {
     @JSName("paginate")
     def paginate_GETusermembershipsorgs[MR /* <: js.Array[_] */](
       route: `GET SlashuserSlashmembershipsSlashorgs`,
-      parameters: OrgsListMembershipsEndpoint,
+      parameters: OrgsListMembershipsForAuthenticatedUserEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[OrgsListMembershipsResponseData], 
+          /* response */ OctokitResponse[OrgsListMembershipsForAuthenticatedUserResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -4233,14 +4478,17 @@ object anon extends js.Object {
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
-    def paginate_GETuserpublicemails(route: `GET SlashuserSlashpublic_emails`): js.Promise[UsersListPublicEmailsResponseData] = js.native
+    def paginate_GETuserpublicemails(route: `GET SlashuserSlashpublic_emails`): js.Promise[UsersListPublicEmailsForAuthenticatedResponseData] = js.native
     @JSName("paginate")
-    def paginate_GETuserpublicemails(route: `GET SlashuserSlashpublic_emails`, parameters: UsersListPublicEmailsEndpoint): js.Promise[UsersListPublicEmailsResponseData] = js.native
+    def paginate_GETuserpublicemails(
+      route: `GET SlashuserSlashpublic_emails`,
+      parameters: UsersListPublicEmailsForAuthenticatedEndpoint
+    ): js.Promise[UsersListPublicEmailsForAuthenticatedResponseData] = js.native
     @JSName("paginate")
     def paginate_GETuserpublicemails[MR /* <: js.Array[_] */](
       route: `GET SlashuserSlashpublic_emails`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[UsersListPublicEmailsResponseData], 
+          /* response */ OctokitResponse[UsersListPublicEmailsForAuthenticatedResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -4248,9 +4496,9 @@ object anon extends js.Object {
     @JSName("paginate")
     def paginate_GETuserpublicemails[MR /* <: js.Array[_] */](
       route: `GET SlashuserSlashpublic_emails`,
-      parameters: UsersListPublicEmailsEndpoint,
+      parameters: UsersListPublicEmailsForAuthenticatedEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[UsersListPublicEmailsResponseData], 
+          /* response */ OctokitResponse[UsersListPublicEmailsForAuthenticatedResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]

@@ -18,6 +18,10 @@ trait CreateSkillGroupRequest extends js.Object {
     * The name for the skill group.
     */
   var SkillGroupName: typings.awsSdk.alexaforbusinessMod.SkillGroupName = js.native
+  /**
+    * The tags for the skill group.
+    */
+  var Tags: js.UndefOr[TagList] = js.native
 }
 
 object CreateSkillGroupRequest {
@@ -25,11 +29,13 @@ object CreateSkillGroupRequest {
   def apply(
     SkillGroupName: SkillGroupName,
     ClientRequestToken: ClientRequestToken = null,
-    Description: SkillGroupDescription = null
+    Description: SkillGroupDescription = null,
+    Tags: TagList = null
   ): CreateSkillGroupRequest = {
     val __obj = js.Dynamic.literal(SkillGroupName = SkillGroupName.asInstanceOf[js.Any])
     if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSkillGroupRequest]
   }
 }

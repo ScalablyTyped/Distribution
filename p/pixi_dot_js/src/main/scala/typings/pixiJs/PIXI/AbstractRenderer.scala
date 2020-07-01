@@ -46,13 +46,6 @@ trait AbstractRenderer extends EventEmitter {
     */
   var _lastObjectRendered: DisplayObject = js.native
   /**
-    * This temporary display object used as the parent of the currently being rendered item.
-    *
-    * @member {PIXI.DisplayObject} PIXI.AbstractRenderer#_tempDisplayObjectParent
-    * @protected
-    */
-  var _tempDisplayObjectParent: DisplayObject = js.native
-  /**
     * Whether CSS dimensions of canvas view should be resized to screen dimensions automatically.
     *
     * @member {boolean} PIXI.AbstractRenderer#autoDensity

@@ -1,6 +1,5 @@
 package typings.next.nextServerMod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.next.anon.AmpOptimizerConfig
 import typings.next.anon.CatchAllRoute
 import typings.next.anon.Headers
@@ -8,6 +7,7 @@ import typings.next.anon.Match
 import typings.next.anon.defaultloadStaticPathsdis
 import typings.next.apiUtilsMod.ApiPreviewProps
 import typings.next.buildMod.PrerenderManifest
+import typings.next.pagesManifestPluginMod.PagesManifest
 import typings.next.serverRouterMod.DynamicRoutes
 import typings.next.serverRouterMod.Params
 import typings.next.serverRouterMod.Route_
@@ -49,7 +49,7 @@ trait Server extends js.Object {
   var nextConfig: NextConfig = js.native
   var onErrorMiddleware: js.UndefOr[js.Any] = js.native
   var pagesDir: js.UndefOr[String] = js.native
-  var pagesManifest: js.UndefOr[StringDictionary[String]] = js.native
+  var pagesManifest: js.UndefOr[PagesManifest] = js.native
   var publicDir: String = js.native
   var quiet: Boolean = js.native
   var renderOpts: AmpOptimizerConfig = js.native

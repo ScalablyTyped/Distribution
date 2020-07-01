@@ -37,14 +37,14 @@ object SchemaAccountsCustomBatchResponseEntry {
   @scala.inline
   def apply(
     account: SchemaAccount = null,
-    batchId: Int | Double = null,
+    batchId: js.UndefOr[Double] = js.undefined,
     errors: SchemaErrors = null,
     kind: String = null,
     linkStatus: String = null
   ): SchemaAccountsCustomBatchResponseEntry = {
     val __obj = js.Dynamic.literal()
     if (account != null) __obj.updateDynamic("account")(account.asInstanceOf[js.Any])
-    if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchId)) __obj.updateDynamic("batchId")(batchId.get.asInstanceOf[js.Any])
     if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (linkStatus != null) __obj.updateDynamic("linkStatus")(linkStatus.asInstanceOf[js.Any])

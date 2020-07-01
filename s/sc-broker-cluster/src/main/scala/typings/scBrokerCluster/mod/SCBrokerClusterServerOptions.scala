@@ -1,14 +1,13 @@
 package typings.scBrokerCluster.mod
 
+import typings.socketclusterServer.serverMod.AGServerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SCBrokerClusterServerOptions extends js.Object {
   var appBrokerControllerPath: js.UndefOr[String] = js.undefined
-  var brokerOptions: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AGServerOptions */ js.Any
-  ] = js.undefined
+  var brokerOptions: js.UndefOr[AGServerOptions] = js.undefined
   var brokers: js.Array[String]
   var debug: js.UndefOr[Boolean] = js.undefined
   var downgradeToUser: Double | String
@@ -26,7 +25,7 @@ object SCBrokerClusterServerOptions {
     brokers: js.Array[String],
     downgradeToUser: Double | String,
     appBrokerControllerPath: String = null,
-    brokerOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AGServerOptions */ js.Any = null,
+    brokerOptions: AGServerOptions = null,
     debug: js.UndefOr[Boolean] = js.undefined,
     expiryAccuracy: js.UndefOr[Double] = js.undefined,
     inspect: js.UndefOr[Boolean] = js.undefined,

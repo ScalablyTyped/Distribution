@@ -1,7 +1,7 @@
 
 # Scala.js typings for plottable
 
-Typings are for version 3.8.6
+Typings are for version 3.9.0
 
 ## Library description:
 A modular charting library built on D3

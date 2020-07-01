@@ -11,7 +11,7 @@ trait Tooltip[E /* <: Tooltip_ */] extends js.Object {
 
 object Tooltip {
   @scala.inline
-  def apply[E](tooltip: E): Tooltip[E] = {
+  def apply[/* <: typings.leaflet.mod.Tooltip_ */ E](tooltip: E): Tooltip[E] = {
     val __obj = js.Dynamic.literal(tooltip = tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tooltip[E]]
   }

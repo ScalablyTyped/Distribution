@@ -35,6 +35,7 @@ object CheckboxProps {
     prefixCls: String = null,
     style: CSSProperties = null,
     tabIndex: js.UndefOr[Double] = js.undefined,
+    `type`: String = null,
     value: js.Any = null
   ): CheckboxProps = {
     val __obj = js.Dynamic.literal()
@@ -56,6 +57,7 @@ object CheckboxProps {
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckboxProps]
   }

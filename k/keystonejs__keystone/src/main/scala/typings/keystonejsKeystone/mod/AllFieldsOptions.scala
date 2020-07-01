@@ -31,7 +31,7 @@ trait AllFieldsOptions[FieldNames /* <: String */] extends js.Object
 
 object AllFieldsOptions {
   @scala.inline
-  def RelationshipOptions[FieldNames](
+  def RelationshipOptions[/* <: java.lang.String */ FieldNames](
     many: Boolean,
     ref: String,
     `type`: FieldType,
@@ -55,7 +55,7 @@ object AllFieldsOptions {
     __obj.asInstanceOf[AllFieldsOptions[FieldNames]]
   }
   @scala.inline
-  def SelectOptions[FieldNames](
+  def SelectOptions[/* <: java.lang.String */ FieldNames](
     options: String | (js.Array[Label | String]),
     `type`: FieldType,
     access: Access = null,
@@ -78,7 +78,7 @@ object AllFieldsOptions {
     __obj.asInstanceOf[AllFieldsOptions[FieldNames]]
   }
   @scala.inline
-  def UuidOptions[FieldNames](
+  def UuidOptions[/* <: java.lang.String */ FieldNames](
     caseTo: upper | lower,
     `type`: FieldType,
     access: Access = null,
@@ -101,7 +101,7 @@ object AllFieldsOptions {
     __obj.asInstanceOf[AllFieldsOptions[FieldNames]]
   }
   @scala.inline
-  def ContentOptions[FieldNames](
+  def ContentOptions[/* <: java.lang.String */ FieldNames](
     blocks: js.Array[_],
     `type`: FieldType,
     access: Access = null,
@@ -124,7 +124,7 @@ object AllFieldsOptions {
     __obj.asInstanceOf[AllFieldsOptions[FieldNames]]
   }
   @scala.inline
-  def SlugOptions[FieldNames](
+  def SlugOptions[/* <: java.lang.String */ FieldNames](
     from: String,
     generate: ResolvedData[FieldNames] => String,
     `type`: FieldType,
@@ -148,7 +148,7 @@ object AllFieldsOptions {
     __obj.asInstanceOf[AllFieldsOptions[FieldNames]]
   }
   @scala.inline
-  def FileOptions[FieldNames](
+  def FileOptions[/* <: java.lang.String */ FieldNames](
     `type`: FieldType,
     access: Access = null,
     adapter: js.Any = null,
@@ -174,7 +174,7 @@ object AllFieldsOptions {
     __obj.asInstanceOf[AllFieldsOptions[FieldNames]]
   }
   @scala.inline
-  def UnsplashOptions[FieldNames](
+  def UnsplashOptions[/* <: java.lang.String */ FieldNames](
     accessKey: String,
     secretKey: String,
     `type`: FieldType,
@@ -198,7 +198,7 @@ object AllFieldsOptions {
     __obj.asInstanceOf[AllFieldsOptions[FieldNames]]
   }
   @scala.inline
-  def AutoIncrementOptions[FieldNames](
+  def AutoIncrementOptions[/* <: java.lang.String */ FieldNames](
     `type`: FieldType,
     access: Access = null,
     defaultValue: Boolean | DefaultValueFunction = null,
@@ -222,7 +222,7 @@ object AllFieldsOptions {
     __obj.asInstanceOf[AllFieldsOptions[FieldNames]]
   }
   @scala.inline
-  def LocationOptions[FieldNames](
+  def LocationOptions[/* <: java.lang.String */ FieldNames](
     googleMapsKey: String,
     `type`: FieldType,
     access: Access = null,
@@ -245,7 +245,7 @@ object AllFieldsOptions {
     __obj.asInstanceOf[AllFieldsOptions[FieldNames]]
   }
   @scala.inline
-  def OEmbedOptions[FieldNames](
+  def OEmbedOptions[/* <: java.lang.String */ FieldNames](
     adapter: js.Any,
     `type`: FieldType,
     access: Access = null,
@@ -268,7 +268,7 @@ object AllFieldsOptions {
     __obj.asInstanceOf[AllFieldsOptions[FieldNames]]
   }
   @scala.inline
-  def PasswordOptions[FieldNames](
+  def PasswordOptions[/* <: java.lang.String */ FieldNames](
     minLength: Double,
     rejectCommon: Boolean,
     `type`: FieldType,
@@ -293,7 +293,7 @@ object AllFieldsOptions {
     __obj.asInstanceOf[AllFieldsOptions[FieldNames]]
   }
   @scala.inline
-  def BaseFieldOptions[FieldNames](
+  def BaseFieldOptions[/* <: java.lang.String */ FieldNames](
     `type`: FieldType,
     access: Access = null,
     defaultValue: Boolean | DefaultValueFunction = null,
@@ -315,7 +315,7 @@ object AllFieldsOptions {
     __obj.asInstanceOf[AllFieldsOptions[FieldNames]]
   }
   @scala.inline
-  def CalendarDayOptions[FieldNames](
+  def CalendarDayOptions[/* <: java.lang.String */ FieldNames](
     `type`: FieldType,
     access: Access = null,
     defaultValue: Boolean | DefaultValueFunction = null,
@@ -345,7 +345,7 @@ object AllFieldsOptions {
     __obj.asInstanceOf[AllFieldsOptions[FieldNames]]
   }
   @scala.inline
-  def DateTimeOptions[FieldNames](
+  def DateTimeOptions[/* <: java.lang.String */ FieldNames](
     knexOptions: js.Any,
     `type`: FieldType,
     access: Access = null,

@@ -32,16 +32,16 @@ trait SchemaStandardSchedulerSettings extends js.Object {
 object SchemaStandardSchedulerSettings {
   @scala.inline
   def apply(
-    maxInstances: Int | Double = null,
-    minInstances: Int | Double = null,
-    targetCpuUtilization: Int | Double = null,
-    targetThroughputUtilization: Int | Double = null
+    maxInstances: js.UndefOr[Double] = js.undefined,
+    minInstances: js.UndefOr[Double] = js.undefined,
+    targetCpuUtilization: js.UndefOr[Double] = js.undefined,
+    targetThroughputUtilization: js.UndefOr[Double] = js.undefined
   ): SchemaStandardSchedulerSettings = {
     val __obj = js.Dynamic.literal()
-    if (maxInstances != null) __obj.updateDynamic("maxInstances")(maxInstances.asInstanceOf[js.Any])
-    if (minInstances != null) __obj.updateDynamic("minInstances")(minInstances.asInstanceOf[js.Any])
-    if (targetCpuUtilization != null) __obj.updateDynamic("targetCpuUtilization")(targetCpuUtilization.asInstanceOf[js.Any])
-    if (targetThroughputUtilization != null) __obj.updateDynamic("targetThroughputUtilization")(targetThroughputUtilization.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxInstances)) __obj.updateDynamic("maxInstances")(maxInstances.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minInstances)) __obj.updateDynamic("minInstances")(minInstances.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetCpuUtilization)) __obj.updateDynamic("targetCpuUtilization")(targetCpuUtilization.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetThroughputUtilization)) __obj.updateDynamic("targetThroughputUtilization")(targetThroughputUtilization.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStandardSchedulerSettings]
   }
 }

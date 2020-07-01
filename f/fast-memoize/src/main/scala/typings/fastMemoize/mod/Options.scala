@@ -13,7 +13,7 @@ trait Options[F /* <: Func */] extends js.Object {
 
 object Options {
   @scala.inline
-  def apply[F](
+  def apply[/* <: typings.fastMemoize.mod.Func */ F](
     cache: Cache[String, ReturnType[F]] = null,
     serializer: /* args */ js.Array[js.Any] => String = null,
     strategy: (/* fn */ Func, /* options */ js.UndefOr[Options[Func]]) => Func = null

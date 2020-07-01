@@ -168,14 +168,6 @@ class Filter ()
 @js.native
 object Filter extends js.Object {
   /**
-    * Used for caching shader IDs
-    *
-    * @static
-    * @type {object}
-    * @protected
-    */
-  var SOURCE_KEY_MAP: js.Any = js.native
-  /**
     * The default fragment shader source
     *
     * @static

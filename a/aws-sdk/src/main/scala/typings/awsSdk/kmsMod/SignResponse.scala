@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SignResponse extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) of the asymmetric CMK that was used to sign the message.
+    * The Amazon Resource Name (key ARN) of the asymmetric CMK that was used to sign the message.
     */
   var KeyId: js.UndefOr[KeyIdType] = js.native
   /**

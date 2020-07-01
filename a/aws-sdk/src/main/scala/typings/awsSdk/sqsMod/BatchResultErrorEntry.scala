@@ -19,7 +19,7 @@ trait BatchResultErrorEntry extends js.Object {
     */
   var Message: js.UndefOr[String] = js.native
   /**
-    * Specifies whether the error happened due to the producer.
+    * Specifies whether the error happened due to the caller of the batch API action.
     */
   var SenderFault: Boolean = js.native
 }

@@ -16,7 +16,7 @@ trait Config[T /* <: Client */] extends PoolConfig {
 
 object Config {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.pg.mod.Client */ T](
     Client: ClientLikeCtr[T] = null,
     Promise: PromiseConstructorLike = null,
     application_name: String = null,

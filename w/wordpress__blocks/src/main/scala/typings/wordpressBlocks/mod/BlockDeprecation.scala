@@ -45,7 +45,7 @@ trait BlockDeprecation[T /* <: Record[String, _] */] extends js.Object {
 
 object BlockDeprecation {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.std.Record[java.lang.String, _] */ T](
     attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
     */ typings.wordpressBlocks.wordpressBlocksStrings.BlockDeprecation with TopLevel[js.Any],

@@ -53,7 +53,7 @@ trait Data[TContext, TEvent /* <: EventObject */] extends js.Object {
 
 object Data {
   @scala.inline
-  def apply[TContext, TEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     src: String | (StateMachine[_, _, _, _]) | (InvokeCreator[TContext, TEvent, _]),
     autoForward: js.UndefOr[Boolean] = js.undefined,
     data: (Mapper[TContext, TEvent]) | (PropertyMapper[TContext, TEvent]) = null,

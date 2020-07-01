@@ -1,6 +1,5 @@
 package typings.pixiJs.PIXI
 
-import typings.pixiJs.PIXI.systems.FilterSystem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -105,19 +104,10 @@ object filters extends js.Object {
     /**
       * If set to true the edge of the target will be clamped
       *
-      * @member {bool}
+      * @member {boolean}
       * @default false
       */
     var repeatEdgePixels: Boolean = js.native
-    /**
-      * Applies the filter.
-      *
-      * @param {PIXI.systems.FilterSystem} filterManager - The manager.
-      * @param {PIXI.RenderTexture} input - The input target.
-      * @param {PIXI.RenderTexture} output - The output target.
-      */
-    @JSName("apply")
-    def apply(filterManager: FilterSystem, input: RenderTexture, output: RenderTexture): Unit = js.native
   }
   
   /**
@@ -216,12 +206,12 @@ object filters extends js.Object {
       *
       * @param {number} desaturation - Tone values.
       * @param {number} toned - Tone values.
-      * @param {string} lightColor - Tone values, example: `0xFFE580`
-      * @param {string} darkColor - Tone values, example: `0xFFE580`
+      * @param {number} lightColor - Tone values, example: `0xFFE580`
+      * @param {number} darkColor - Tone values, example: `0xFFE580`
       * @param {boolean} multiply - if true, current matrix and matrix are multiplied. If false,
       *  just set the current matrix with @param matrix
       */
-    def colorTone(desaturation: Double, toned: Double, lightColor: String, darkColor: String, multiply: Boolean): Unit = js.native
+    def colorTone(desaturation: Double, toned: Double, lightColor: Double, darkColor: Double, multiply: Boolean): Unit = js.native
     /**
       * Set the contrast matrix, increase the separation between dark and bright
       * Increase contrast : shadows darker and highlights brighter
@@ -313,9 +303,10 @@ object filters extends js.Object {
       * Increase saturation : increase contrast, brightness, and sharpness
       *
       * @param {number} amount - The saturation amount (0-1)
-      * @param {boolean} multiply - if true, current matrix and matrix are multiplied. If false,
+      * @param {boolean} [multiply] - if true, current matrix and matrix are multiplied. If false,
       *  just set the current matrix with @param matrix
       */
+    def saturate(amount: Double): Unit = js.native
     def saturate(amount: Double, multiply: Boolean): Unit = js.native
     /**
       * Sepia image

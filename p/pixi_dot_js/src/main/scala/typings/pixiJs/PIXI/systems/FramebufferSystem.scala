@@ -1,6 +1,9 @@
 package typings.pixiJs.PIXI.systems
 
+import typings.pixiJs.PIXI.BUFFER_BITS
 import typings.pixiJs.PIXI.Framebuffer
+import typings.pixiJs.PIXI.GLFramebuffer
+import typings.pixiJs.PIXI.MSAA_QUALITY
 import typings.pixiJs.PIXI.Rectangle
 import typings.pixiJs.PIXI.System
 import scala.scalajs.js
@@ -44,38 +47,65 @@ trait FramebufferSystem extends System {
   def bind(framebuffer: Framebuffer): Unit = js.native
   def bind(framebuffer: Framebuffer, frame: Rectangle): Unit = js.native
   /**
+    * Only works with WebGL2
+    *
+    * blits framebuffer to another of the same or bigger size
+    * after that target framebuffer is bound
+    *
+    * Fails with WebGL warning if blits multisample framebuffer to different size
+    *
+    * @param {PIXI.Framebuffer} [framebuffer] - by default it blits "into itself", from renderBuffer to texture.
+    * @param {PIXI.Rectangle} [sourcePixels] - source rectangle in pixels
+    * @param {PIXI.Rectangle} [destPixels] - dest rectangle in pixels, assumed to be the same as sourcePixels
+    */
+  def blit(): Unit = js.native
+  def blit(framebuffer: Framebuffer): Unit = js.native
+  def blit(framebuffer: Framebuffer, sourcePixels: Rectangle): Unit = js.native
+  def blit(framebuffer: Framebuffer, sourcePixels: Rectangle, destPixels: Rectangle): Unit = js.native
+  /**
     * Clear the color of the context
     *
     * @param {Number} r - Red value from 0 to 1
     * @param {Number} g - Green value from 0 to 1
     * @param {Number} b - Blue value from 0 to 1
     * @param {Number} a - Alpha value from 0 to 1
+    * @param {PIXI.BUFFER_BITS} [mask=BUFFER_BITS.COLOR | BUFFER_BITS.DEPTH] - Bitwise OR of masks
+    *  that indicate the buffers to be cleared, by default COLOR and DEPTH buffers.
     */
   def clear(r: Double, g: Double, b: Double, a: Double): Unit = js.native
+  def clear(r: Double, g: Double, b: Double, a: Double, mask: BUFFER_BITS): Unit = js.native
   /**
     * Sets up the renderer context and necessary buffers.
     */
   def contextChange(): Unit = js.native
   /**
+    * Detects number of samples that is not more than a param but as close to it as possible
+    *
+    * @param {PIXI.MSAA_QUALITY} samples - number of samples
+    * @returns {PIXI.MSAA_QUALITY} - recommended number of samples
+    */
+  def detectSamples(samples: MSAA_QUALITY): MSAA_QUALITY = js.native
+  /**
     * Disposes all framebuffers, but not textures bound to them
-    * @param {boolean} [contextLost=false] If context was lost, we suppress all delete function calls
+    * @param {boolean} [contextLost=false] - If context was lost, we suppress all delete function calls
     */
   def disposeAll(): Unit = js.native
   def disposeAll(contextLost: Boolean): Unit = js.native
   /**
     * Disposes framebuffer
-    * @param {PIXI.Framebuffer} framebuffer framebuffer that has to be disposed of
-    * @param {boolean} [contextLost=false] If context was lost, we suppress all delete function calls
+    * @param {PIXI.Framebuffer} framebuffer - framebuffer that has to be disposed of
+    * @param {boolean} [contextLost=false] - If context was lost, we suppress all delete function calls
     */
   def disposeFramebuffer(framebuffer: Framebuffer): Unit = js.native
   def disposeFramebuffer(framebuffer: Framebuffer, contextLost: Boolean): Unit = js.native
   /**
-    * Initialize framebuffer
+    * Initialize framebuffer for this context
     *
     * @protected
     * @param {PIXI.Framebuffer} framebuffer
+    * @returns {PIXI.GLFramebuffer} created GLFramebuffer
     */
-  /* protected */ def initFramebuffer(framebuffer: Framebuffer): Unit = js.native
+  /* protected */ def initFramebuffer(framebuffer: Framebuffer): GLFramebuffer = js.native
   /**
     * resets framebuffer stored state, binds screen framebuffer
     *

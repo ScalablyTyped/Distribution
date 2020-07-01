@@ -55,7 +55,7 @@ trait ClusterMetadata extends js.Object {
     */
   var ShippingOption: js.UndefOr[typings.awsSdk.snowballMod.ShippingOption] = js.native
   /**
-    * The type of AWS Snowball device to use for this cluster. Currently, the only supported device type for cluster jobs is EDGE. For more information, see Snowball Edge Device Options in the Snowball Edge Developer Guide.
+    * The type of AWS Snowball device to use for this cluster.   For cluster jobs, AWS Snowball currently supports only the EDGE device type. 
     */
   var SnowballType: js.UndefOr[typings.awsSdk.snowballMod.SnowballType] = js.native
   /**

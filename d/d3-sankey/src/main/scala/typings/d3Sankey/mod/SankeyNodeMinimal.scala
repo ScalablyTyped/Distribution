@@ -52,7 +52,7 @@ trait SankeyNodeMinimal[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraPro
 
 object SankeyNodeMinimal {
   @scala.inline
-  def apply[N, L](
+  def apply[/* <: typings.d3Sankey.mod.SankeyExtraProperties */ N, /* <: typings.d3Sankey.mod.SankeyExtraProperties */ L](
     depth: js.UndefOr[Double] = js.undefined,
     height: js.UndefOr[Double] = js.undefined,
     index: js.UndefOr[Double] = js.undefined,

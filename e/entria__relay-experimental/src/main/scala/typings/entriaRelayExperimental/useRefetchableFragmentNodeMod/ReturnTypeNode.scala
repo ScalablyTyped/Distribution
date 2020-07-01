@@ -16,7 +16,7 @@ trait ReturnTypeNode[TQuery /* <: OperationType */, TKey /* <: StringDictionary[
 
 object ReturnTypeNode {
   @scala.inline
-  def apply[TQuery, TKey, TOptions](
+  def apply[/* <: typings.relayRuntime.relayRuntimeTypesMod.OperationType */ TQuery, /* <: org.scalablytyped.runtime.StringDictionary[js.Any] | scala.Null */ TKey, TOptions](
     disableStoreUpdates: () => Unit,
     enableStoreUpdates: () => Unit,
     fragmentData: js.Any,

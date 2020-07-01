@@ -28,13 +28,13 @@ object SchemaSubscriptionContentDetails {
   @scala.inline
   def apply(
     activityType: String = null,
-    newItemCount: Int | Double = null,
-    totalItemCount: Int | Double = null
+    newItemCount: js.UndefOr[Double] = js.undefined,
+    totalItemCount: js.UndefOr[Double] = js.undefined
   ): SchemaSubscriptionContentDetails = {
     val __obj = js.Dynamic.literal()
     if (activityType != null) __obj.updateDynamic("activityType")(activityType.asInstanceOf[js.Any])
-    if (newItemCount != null) __obj.updateDynamic("newItemCount")(newItemCount.asInstanceOf[js.Any])
-    if (totalItemCount != null) __obj.updateDynamic("totalItemCount")(totalItemCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(newItemCount)) __obj.updateDynamic("newItemCount")(newItemCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalItemCount)) __obj.updateDynamic("totalItemCount")(totalItemCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSubscriptionContentDetails]
   }
 }

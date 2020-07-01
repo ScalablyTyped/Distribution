@@ -178,11 +178,17 @@ trait Element extends js.Object {
     */
   @JSName("doubleClick")
   def doubleClick_Promise(): js.Promise[Unit] = js.native
+  def dragAndDrop(target: DragAndDropCoordinate): Unit = js.native
+  def dragAndDrop(target: DragAndDropCoordinate, duration: Double): Unit = js.native
   /**
     * Drag an item to a destination element.
     */
   def dragAndDrop(target: Element): Unit = js.native
   def dragAndDrop(target: Element, duration: Double): Unit = js.native
+  @JSName("dragAndDrop")
+  def dragAndDrop_Promise(target: DragAndDropCoordinate): js.Promise[Unit] = js.native
+  @JSName("dragAndDrop")
+  def dragAndDrop_Promise(target: DragAndDropCoordinate, duration: Double): js.Promise[Unit] = js.native
   /**
     * Drag an item to a destination element.
     */

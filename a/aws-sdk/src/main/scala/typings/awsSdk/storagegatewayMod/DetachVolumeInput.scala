@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DetachVolumeInput extends js.Object {
   /**
-    * Set to true to forcibly remove the iSCSI connection of the target volume and detach the volume. The default is false. If this value is set to false, you must manually disconnect the iSCSI connection from the target volume.
+    * Set to true to forcibly remove the iSCSI connection of the target volume and detach the volume. The default is false. If this value is set to false, you must manually disconnect the iSCSI connection from the target volume. Valid Values: true | false 
     */
   var ForceDetach: js.UndefOr[Boolean] = js.native
   /**

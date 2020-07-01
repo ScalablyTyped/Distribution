@@ -1,7 +1,7 @@
 
 # Scala.js typings for net-keepalive
 
-Typings are for version 0.4
+Typings are for version 1.3.1
 
 ## Library description:
 Provides high-level access to socket options like TCP_KEEPIDLE, TCP_KEEPINTVL, TCP_KEEPCNT
@@ -24,7 +24,7 @@ Provides high-level access to socket options like TCP_KEEPIDLE, TCP_KEEPINTVL, T
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

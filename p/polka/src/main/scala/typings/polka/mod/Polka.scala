@@ -1,5 +1,8 @@
 package typings.polka.mod
 
+import typings.express.mod.RequestHandler
+import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.node.httpMod.ServerResponse
 import typings.node.urlMod.Url
 import typings.std.RegExp
@@ -12,7 +15,8 @@ import scala.scalajs.js.annotation._
   * An instance of the Polka router.
   */
 @js.native
-trait Polka extends Trouter[Middleware] {
+trait Polka
+  extends Trouter[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] {
   /**
     * The main Polka `IncomingMessage` handler.
     * It receives all requests and tries to match the incoming URL against known routes.
@@ -38,18 +42,18 @@ trait Polka extends Trouter[Middleware] {
     * Attach middleware(s) and/or sub-application(s) to the server.
     * These will execute before your routes' handlers.
     */
-  def use(handlers: Middleware*): this.type = js.native
+  def use(handlers: (RequestHandler[ParamsDictionary, _, _, Query])*): this.type = js.native
   /**
     * Attach middleware(s) and/or sub-application(s) to the server.
     * These will execute before your routes' handlers.
     */
   def use(
     pattern: String,
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param handlers because its type Array<Middleware> | Array<Polka> is not an array type */ handlers: js.Array[Middleware | Polka]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param handlers because its type Array<RequestHandler> | Array<Polka> is not an array type */ handlers: js.Array[Polka | (RequestHandler[ParamsDictionary, _, _, Query])]
   ): this.type = js.native
   def use(
     pattern: RegExp,
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param handlers because its type Array<Middleware> | Array<Polka> is not an array type */ handlers: js.Array[Middleware | Polka]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param handlers because its type Array<RequestHandler> | Array<Polka> is not an array type */ handlers: js.Array[Polka | (RequestHandler[ParamsDictionary, _, _, Query])]
   ): this.type = js.native
 }
 

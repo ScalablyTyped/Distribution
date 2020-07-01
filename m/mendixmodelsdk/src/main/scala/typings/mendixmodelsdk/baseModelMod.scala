@@ -26,6 +26,7 @@ import typings.mendixmodelsdk.javaactionsMod.javaactions.IJavaActionParameter
 import typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.IJavaScriptAction
 import typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.IJavaScriptActionParameter
 import typings.mendixmodelsdk.jsonstructuresMod.jsonstructures.IJsonStructure
+import typings.mendixmodelsdk.kafkaMod.kafka.IConsumedKafkaService
 import typings.mendixmodelsdk.mappingsMod.mappings.IMappingDocument
 import typings.mendixmodelsdk.menusMod.menus.IMenuDocument
 import typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.IMessageDefinition
@@ -86,12 +87,13 @@ import scala.scalajs.js.annotation._
 object baseModelMod extends js.Object {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.mendixmodelsdk.abstractModelMod.IAbstractModel because Already inherited
-  - typings.mendixmodelsdk.baseModelMod.IBaseModel because var conflicts: id, metaModelVersion, mxVersionForModel, workingCopy. Inlined allBuildingBlocks, allCodeActions, allConstants, allConsumedAppServices, allConsumedODataServices, allDataSets, allDocuments, allDocumentTemplates, allDomainModels, allEnumerations, allExportMappings, allFolders, allFolderBases, allFormBases, allImageCollections, allImportMappings, allImportedWebServices, allJavaActions, allJavaScriptActions, allJsonStructures, allLayouts, allMappingDocuments, allMenuDocuments, allMessageDefinitionCollections, allMicroflows, allMicroflowBases, allModules, allModuleDocuments, allModuleSecurities, allMxSchemas, allNanoflows, allNativeLayouts, allNativePages, allNavigationDocuments, allPages, allPageTemplates, allProjects, allProjectConversions, allProjectDocuments, allProjectSecurities, allProjectSettings, allPublishedAppServices, allPublishedODataServices, allPublishedRestServices, allPublishedServiceBases, allPublishedWebServices, allRegularExpressions, allRemoteEntitySourceDocuments, allRules, allScheduledEvents, allServerSideMicroflows, allSnippets, allSystemTextCollections, allTemplateFormBases, allWorkflows, allXmlSchemas, findAppServiceActionByQualifiedName, findAppServiceActionParameterByQualifiedName, findConstantByQualifiedName, findDataSetByQualifiedName, findDataSetParameterByQualifiedName, findDocumentTemplateByQualifiedName, findAssociationBaseByQualifiedName, findAttributeByQualifiedName, findEntityByQualifiedName, findRemoteEntitySourceDocumentByQualifiedName, findEnumerationByQualifiedName, findEnumerationValueByQualifiedName, findExportMappingByQualifiedName, findImageByQualifiedName, findImportMappingByQualifiedName, findJavaActionByQualifiedName, findJavaActionParameterByQualifiedName, findJavaScriptActionByQualifiedName, findJavaScriptActionParameterByQualifiedName, findJsonStructureByQualifiedName, findMenuDocumentByQualifiedName, findMessageDefinitionByQualifiedName, findMicroflowByQualifiedName, findMicroflowParameterByQualifiedName, findNanoflowByQualifiedName, findNanoflowParameterByQualifiedName, findRuleByQualifiedName, findRuleParameterByQualifiedName, findNativeLayoutByQualifiedName, findNativePageByQualifiedName, findNavigationProfileByQualifiedName, findLayoutByQualifiedName, findLayoutParameterByQualifiedName, findPageByQualifiedName, findSnippetByQualifiedName, findRegularExpressionByQualifiedName, findConsumedODataServiceByQualifiedName, findModuleRoleByQualifiedName, findUserRoleByQualifiedName, findImportedWebServiceByQualifiedName, findWorkflowByQualifiedName, findWorkflowTaskOutcomeByQualifiedName, findXmlSchemaByQualifiedName */ @js.native
+  - typings.mendixmodelsdk.baseModelMod.IBaseModel because var conflicts: id, metaModelVersion, mxVersionForModel, workingCopy. Inlined allBuildingBlocks, allCodeActions, allConstants, allConsumedAppServices, allConsumedKafkaServices, allConsumedODataServices, allDataSets, allDocuments, allDocumentTemplates, allDomainModels, allEnumerations, allExportMappings, allFolders, allFolderBases, allFormBases, allImageCollections, allImportMappings, allImportedWebServices, allJavaActions, allJavaScriptActions, allJsonStructures, allLayouts, allMappingDocuments, allMenuDocuments, allMessageDefinitionCollections, allMicroflows, allMicroflowBases, allModules, allModuleDocuments, allModuleSecurities, allMxSchemas, allNanoflows, allNativeLayouts, allNativePages, allNavigationDocuments, allPages, allPageTemplates, allProjects, allProjectConversions, allProjectDocuments, allProjectSecurities, allProjectSettings, allPublishedAppServices, allPublishedODataServices, allPublishedRestServices, allPublishedServiceBases, allPublishedWebServices, allRegularExpressions, allRemoteEntitySourceDocuments, allRules, allScheduledEvents, allServerSideMicroflows, allSnippets, allSystemTextCollections, allTemplateFormBases, allWorkflows, allXmlSchemas, findAppServiceActionByQualifiedName, findAppServiceActionParameterByQualifiedName, findConstantByQualifiedName, findDataSetByQualifiedName, findDataSetParameterByQualifiedName, findDocumentTemplateByQualifiedName, findAssociationBaseByQualifiedName, findAttributeByQualifiedName, findEntityByQualifiedName, findRemoteEntitySourceDocumentByQualifiedName, findEnumerationByQualifiedName, findEnumerationValueByQualifiedName, findExportMappingByQualifiedName, findImageByQualifiedName, findImportMappingByQualifiedName, findJavaActionByQualifiedName, findJavaActionParameterByQualifiedName, findJavaScriptActionByQualifiedName, findJavaScriptActionParameterByQualifiedName, findJsonStructureByQualifiedName, findConsumedKafkaServiceByQualifiedName, findMenuDocumentByQualifiedName, findMessageDefinitionByQualifiedName, findMicroflowByQualifiedName, findMicroflowParameterByQualifiedName, findNanoflowByQualifiedName, findNanoflowParameterByQualifiedName, findRuleByQualifiedName, findRuleParameterByQualifiedName, findNativeLayoutByQualifiedName, findNativePageByQualifiedName, findNavigationProfileByQualifiedName, findLayoutByQualifiedName, findLayoutParameterByQualifiedName, findPageByQualifiedName, findSnippetByQualifiedName, findRegularExpressionByQualifiedName, findConsumedODataServiceByQualifiedName, findModuleRoleByQualifiedName, findUserRoleByQualifiedName, findImportedWebServiceByQualifiedName, findWorkflowByQualifiedName, findWorkflowTaskOutcomeByQualifiedName, findXmlSchemaByQualifiedName */ @js.native
   abstract class BaseModel () extends AbstractModel {
     def allBuildingBlocks(): js.Array[IBuildingBlock] = js.native
     def allCodeActions(): js.Array[ICodeAction] = js.native
     def allConstants(): js.Array[IConstant] = js.native
     def allConsumedAppServices(): js.Array[IConsumedAppService] = js.native
+    def allConsumedKafkaServices(): js.Array[IConsumedKafkaService] = js.native
     def allConsumedODataServices(): js.Array[IConsumedODataService] = js.native
     def allDataSets(): js.Array[IDataSet] = js.native
     def allDocumentTemplates(): js.Array[IDocumentTemplate] = js.native
@@ -149,6 +151,7 @@ object baseModelMod extends js.Object {
     def findAssociationBaseByQualifiedName(qname: String): IAssociationBase | Null = js.native
     def findAttributeByQualifiedName(qname: String): IAttribute | Null = js.native
     def findConstantByQualifiedName(qname: String): IConstant | Null = js.native
+    def findConsumedKafkaServiceByQualifiedName(qname: String): IConsumedKafkaService | Null = js.native
     def findConsumedODataServiceByQualifiedName(qname: String): IConsumedODataService | Null = js.native
     def findDataSetByQualifiedName(qname: String): IDataSet | Null = js.native
     def findDataSetParameterByQualifiedName(qname: String): IDataSetParameter | Null = js.native
@@ -195,6 +198,7 @@ object baseModelMod extends js.Object {
     def allCodeActions(): js.Array[ICodeAction] = js.native
     def allConstants(): js.Array[IConstant] = js.native
     def allConsumedAppServices(): js.Array[IConsumedAppService] = js.native
+    def allConsumedKafkaServices(): js.Array[IConsumedKafkaService] = js.native
     def allConsumedODataServices(): js.Array[IConsumedODataService] = js.native
     def allDataSets(): js.Array[IDataSet] = js.native
     def allDocumentTemplates(): js.Array[IDocumentTemplate] = js.native
@@ -252,6 +256,7 @@ object baseModelMod extends js.Object {
     def findAssociationBaseByQualifiedName(qname: String): IAssociationBase | Null = js.native
     def findAttributeByQualifiedName(qname: String): IAttribute | Null = js.native
     def findConstantByQualifiedName(qname: String): IConstant | Null = js.native
+    def findConsumedKafkaServiceByQualifiedName(qname: String): IConsumedKafkaService | Null = js.native
     def findConsumedODataServiceByQualifiedName(qname: String): IConsumedODataService | Null = js.native
     def findDataSetByQualifiedName(qname: String): IDataSet | Null = js.native
     def findDataSetParameterByQualifiedName(qname: String): IDataSetParameter | Null = js.native

@@ -58,6 +58,7 @@ trait Static extends js.Object {
   /**
     * Return a url() function with the given `options`.
     */
+  def url(): LiteralFunction = js.native
   def url(options: UrlOptions): LiteralFunction = js.native
 }
 

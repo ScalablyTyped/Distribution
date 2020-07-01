@@ -83,8 +83,8 @@ import scala.scalajs.js.annotation._
 
 trait IDropdownProps extends ISelectableDroppableTextProps[IDropdown, HTMLDivElement] {
   /**
-    * Keys that will be initially used to set selected items. This prop is used for `multiSelect`
-    * scenarios. In other cases, `defaultSelectedKey` should be used.
+    * Keys that will be initially used to set selected items. This prop is only used when `multiSelect`
+    * is true (use `defaultSelectedKey` for single select). Mutually exclusive with `selectedKeys`.
     */
   var defaultSelectedKeys: js.UndefOr[js.Array[Double | String]] = js.undefined
   /**
@@ -102,19 +102,18 @@ trait IDropdownProps extends ISelectableDroppableTextProps[IDropdown, HTMLDivEle
     */
   var keytipProps: js.UndefOr[IKeytipProps] = js.undefined
   /**
-    * When multiple items are selected, this still will be used to separate values in
-    * the dropdown title.
+    * When multiple items are selected, this will be used to separate values in the dropdown input.
     *
     * @defaultvalue ", "
     */
   var multiSelectDelimiter: js.UndefOr[String] = js.undefined
   /**
-    * Optional preference to have onChanged still be called when an already selected item is
-    * clicked in single select mode.  Default to false
+    * If true, `onChange` will still be called when an already-selected item is clicked again in
+    * single select mode. (Normally it would not be called in this case.)
     */
   var notifyOnReselect: js.UndefOr[Boolean] = js.undefined
   /**
-    * Callback issued when the selected option changes.
+    * Callback for when the selected option changes.
     */
   @JSName("onChange")
   var onChange_IDropdownProps: js.UndefOr[
@@ -130,24 +129,24 @@ trait IDropdownProps extends ISelectableDroppableTextProps[IDropdown, HTMLDivEle
     */
   var onChanged: js.UndefOr[js.Function2[/* option */ IDropdownOption, /* index */ js.UndefOr[Double], Unit]] = js.undefined
   /**
-    * Optional custom renderer for chevron icon
+    * Custom renderer for chevron icon
     */
   var onRenderCaretDown: js.UndefOr[IRenderFunction[IDropdownProps]] = js.undefined
   /**
-    * Custom render function for the label.
+    * Custom renderer for the label.
     */
   var onRenderLabel: js.UndefOr[IRenderFunction[IDropdownProps]] = js.undefined
   /**
-    * Optional custom renderer for placeholder text
+    * Custom renderer for placeholder text
     * @deprecated Use `onRenderPlaceholder`
     */
   var onRenderPlaceHolder: js.UndefOr[IRenderFunction[IDropdownProps]] = js.undefined
   /**
-    * Optional custom renderer for placeholder text
+    * Custom renderer for placeholder text
     */
   var onRenderPlaceholder: js.UndefOr[IRenderFunction[IDropdownProps]] = js.undefined
   /**
-    * Optional custom renderer for selected option displayed in input
+    * Custom renderer for selected option displayed in input
     */
   var onRenderTitle: js.UndefOr[IRenderFunction[js.Array[IDropdownOption]]] = js.undefined
   /**
@@ -157,21 +156,19 @@ trait IDropdownProps extends ISelectableDroppableTextProps[IDropdown, HTMLDivEle
   @JSName("options")
   var options_IDropdownProps: js.Array[IDropdownOption]
   /**
-    * Input placeholder text. Displayed until option is selected.
+    * Input placeholder text. Displayed until an option is selected.
     * @deprecated Use `placeholder`
     */
   var placeHolder: js.UndefOr[String] = js.undefined
   /**
-    * Pass in ResponsiveMode to manually overwrite the way the Dropdown renders.
-    * ResponsiveMode.Large would, for instance, disable the behavior where Dropdown options
-    * get rendered into a Panel while ResponsiveMode.Small would result in the Dropdown
-    * options always getting rendered in a Panel.
+    * By default, the dropdown will render the standard way for screen sizes `large` and above, or
+    * in a panel on `small` and `medium` screens. Manually set this prop to override this behavior.
     */
   var responsiveMode: js.UndefOr[typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode] = js.undefined
   /**
-    * Keys of the selected items. If you provide this, you must maintain selection
-    * state by observing onChange events and passing a new value in when changed.
-    * Passing null in will clear the selection.
+    * Keys of the selected items, only used when `multiSelect` is true (use `selectedKey` for single
+    * select). If you provide this, you must maintain selection state by observing onChange events
+    * and passing a new prop value in when changed. Passing null will clear the selection.
     * Mutually exclusive with `defaultSelectedKeys`.
     */
   var selectedKeys: js.UndefOr[(js.Array[Double | String]) | Null] = js.undefined

@@ -13,7 +13,7 @@ trait PathsItem[TContext, TEvent /* <: EventObject */] extends js.Object {
 
 object PathsItem {
   @scala.inline
-  def apply[TContext, TEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     paths: js.Array[js.Array[Segment[TContext, TEvent]]],
     state: State[TContext, TEvent, _, Context[TContext]]
   ): PathsItem[TContext, TEvent] = {

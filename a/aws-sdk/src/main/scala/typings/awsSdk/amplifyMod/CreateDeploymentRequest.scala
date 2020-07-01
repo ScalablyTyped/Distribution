@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateDeploymentRequest extends js.Object {
   /**
-    *  Unique Id for an Amplify App. 
+    *  The unique ID for an Amplify app. 
     */
   var appId: AppId = js.native
   /**
-    *  Name for the branch, for the Job. 
+    *  The name for the branch, for the job. 
     */
   var branchName: BranchName = js.native
   /**
-    *  Optional file map that contains file name as the key and file content md5 hash as the value. If this argument is provided, the service will generate different upload url per file. Otherwise, the service will only generate a single upload url for the zipped files. 
+    *  An optional file map that contains the file name as the key and the file content md5 hash as the value. If this argument is provided, the service will generate a unique upload URL per file. Otherwise, the service will only generate a single upload URL for the zipped files. 
     */
   var fileMap: js.UndefOr[FileMap] = js.native
 }

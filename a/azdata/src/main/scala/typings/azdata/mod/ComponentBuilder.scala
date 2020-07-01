@@ -12,7 +12,7 @@ trait ComponentBuilder[T /* <: Component */] extends js.Object {
 
 object ComponentBuilder {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.azdata.mod.Component */ T](
     component: () => T,
     withProperties: js.Any => ComponentBuilder[T],
     withValidation: js.Function1[/* component */ T, Boolean] => ComponentBuilder[T]

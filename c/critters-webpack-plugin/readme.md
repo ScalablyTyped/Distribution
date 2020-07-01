@@ -1,7 +1,7 @@
 
 # Scala.js typings for critters-webpack-plugin
 
-Typings are for version 2.0
+Typings are for version 2.5
 
 ## Library description:
 Webpack plugin to inline critical CSS and lazy-load the rest.

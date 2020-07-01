@@ -11,7 +11,7 @@ trait Records[T /* <: BaseResponse[scala.Nothing] */] extends js.Object {
 
 object Records {
   @scala.inline
-  def apply[T](records: js.Array[T]): Records[T] = {
+  def apply[/* <: typings.stellarSdk.horizonApiMod.Horizon.BaseResponse[scala.Nothing] */ T](records: js.Array[T]): Records[T] = {
     val __obj = js.Dynamic.literal(records = records.asInstanceOf[js.Any])
     __obj.asInstanceOf[Records[T]]
   }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 - typings.babelTypes.mod._Node because Already inherited */ trait MetaProperty_
   extends Expression
      with BaseNode {
-  var meta: js.Any
+  var meta: Identifier_
   var property: Identifier_
   @JSName("type")
   var type_MetaProperty_ : MetaProperty
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 object MetaProperty_ {
   @scala.inline
   def apply(
-    meta: js.Any,
+    meta: Identifier_,
     property: Identifier_,
     `type`: MetaProperty,
     end: Double = null.asInstanceOf[Double],

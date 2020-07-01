@@ -16,7 +16,7 @@ trait MockFunctionState[T, Y /* <: js.Array[_] */] extends js.Object {
 
 object MockFunctionState {
   @scala.inline
-  def apply[T, Y](
+  def apply[T, /* <: js.Array[_] */ Y](
     calls: js.Array[Y],
     instances: js.Array[T],
     invocationCallOrder: js.Array[Double],

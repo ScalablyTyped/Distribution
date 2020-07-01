@@ -1,14 +1,14 @@
 package typings.apolloServerPluginBase.mod
 
+import typings.apolloServerTypes.mod.BaseContext
 import typings.apolloServerTypes.mod.GraphQLRequestContext
 import typings.apolloServerTypes.mod.GraphQLServiceContext
 import typings.apolloServerTypes.mod.ValueOrPromise
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ApolloServerPlugin[TContext /* <: Record[String, _] */] extends js.Object {
+trait ApolloServerPlugin[TContext /* <: BaseContext */] extends js.Object {
   var requestDidStart: js.UndefOr[
     js.Function1[
       /* requestContext */ GraphQLRequestContext[TContext], 
@@ -20,7 +20,7 @@ trait ApolloServerPlugin[TContext /* <: Record[String, _] */] extends js.Object 
 
 object ApolloServerPlugin {
   @scala.inline
-  def apply[TContext](
+  def apply[/* <: typings.apolloServerTypes.mod.BaseContext */ TContext](
     requestDidStart: /* requestContext */ GraphQLRequestContext[TContext] => GraphQLRequestListener[TContext] | Unit = null,
     serverWillStart: /* service */ GraphQLServiceContext => ValueOrPromise[Unit] = null
   ): ApolloServerPlugin[TContext] = {

@@ -14,9 +14,9 @@ trait SchemaNodeGroupsAddNodesRequest extends js.Object {
 
 object SchemaNodeGroupsAddNodesRequest {
   @scala.inline
-  def apply(additionalNodeCount: Int | Double = null): SchemaNodeGroupsAddNodesRequest = {
+  def apply(additionalNodeCount: js.UndefOr[Double] = js.undefined): SchemaNodeGroupsAddNodesRequest = {
     val __obj = js.Dynamic.literal()
-    if (additionalNodeCount != null) __obj.updateDynamic("additionalNodeCount")(additionalNodeCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(additionalNodeCount)) __obj.updateDynamic("additionalNodeCount")(additionalNodeCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNodeGroupsAddNodesRequest]
   }
 }

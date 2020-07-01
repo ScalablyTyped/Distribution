@@ -3,7 +3,11 @@ package typings.antd.anon
 import typings.antd.statisticUtilsMod.Formatter
 import typings.antd.statisticUtilsMod.countdownValueType
 import typings.react.mod.CSSProperties
+import typings.react.mod.MouseEvent
+import typings.react.mod.MouseEventHandler
+import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
+import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +20,8 @@ trait PartialCountdownProps extends js.Object {
   var formatter: js.UndefOr[Formatter] = js.undefined
   var groupSeparator: js.UndefOr[String] = js.undefined
   var onFinish: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   var precision: js.UndefOr[Double] = js.undefined
   var prefix: js.UndefOr[ReactNode] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
@@ -36,6 +42,8 @@ object PartialCountdownProps {
     formatter: Formatter = null,
     groupSeparator: String = null,
     onFinish: () => Unit = null,
+    onMouseEnter: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
+    onMouseLeave: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     precision: js.UndefOr[Double] = js.undefined,
     prefix: ReactNode = null,
     prefixCls: String = null,
@@ -53,6 +61,8 @@ object PartialCountdownProps {
     if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
     if (groupSeparator != null) __obj.updateDynamic("groupSeparator")(groupSeparator.asInstanceOf[js.Any])
     if (onFinish != null) __obj.updateDynamic("onFinish")(js.Any.fromFunction0(onFinish))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
     if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])

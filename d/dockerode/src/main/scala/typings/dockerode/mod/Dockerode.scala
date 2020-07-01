@@ -33,8 +33,8 @@ trait Dockerode extends js.Object {
   def createImage(auth: js.Any, options: js.Object, callback: Callback[ReadableStream]): Unit = js.native
   def createImage(options: js.Object): js.Promise[ReadableStream] = js.native
   def createImage(options: js.Object, callback: Callback[ReadableStream]): Unit = js.native
-  def createNetwork(options: js.Object): js.Promise[_] = js.native
-  def createNetwork(options: js.Object, callback: Callback[_]): Unit = js.native
+  def createNetwork(options: NetworkCreateOptions): js.Promise[Network] = js.native
+  def createNetwork(options: NetworkCreateOptions, callback: Callback[Network]): Unit = js.native
   def createPlugin(options: js.Object): js.Promise[_] = js.native
   def createPlugin(options: js.Object, callback: Callback[_]): Unit = js.native
   def createSecret(options: js.Object): js.Promise[_] = js.native
@@ -136,8 +136,8 @@ trait Dockerode extends js.Object {
   def pruneVolumes(callback: Callback[PruneVolumesInfo]): Unit = js.native
   def pruneVolumes(options: js.Object): js.Promise[PruneVolumesInfo] = js.native
   def pruneVolumes(options: js.Object, callback: Callback[PruneVolumesInfo]): Unit = js.native
+  def pull(repoTag: String): js.Promise[_] = js.native
   def pull(repoTag: String, options: js.Object): js.Promise[_] = js.native
-  def pull(repoTag: String, options: js.Object, auth: js.Object): js.Promise[_] = js.native
   def pull(repoTag: String, options: js.Object, callback: Callback[_]): Image = js.native
   def pull(repoTag: String, options: js.Object, callback: Callback[_], auth: js.Object): Image = js.native
   def run(image: String, cmd: js.Array[String], outputStream: js.Array[WritableStream]): js.Promise[_] = js.native

@@ -30,7 +30,7 @@ trait CallInformation[T /* <: js.Function1[/* repeated */ js.Any, _] */] extends
 
 object CallInformation {
   @scala.inline
-  def apply[T](
+  def apply[/* <: js.Function1[/ * repeated * / js.Any, _] */ T](
     calls: js.Array[Call[T]],
     reset: () => Unit,
     returnedCalls: js.Array[ReturnedCall[T]],

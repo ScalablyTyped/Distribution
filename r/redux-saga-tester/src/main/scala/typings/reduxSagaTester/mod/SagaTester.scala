@@ -43,10 +43,11 @@ trait SagaTester[StateType /* <: js.Object */] extends js.Object {
   def updateState(state: StateType): Unit = js.native
   /**
     * Returns a promise that will resolve if the specified action is dispatched to the store.
+    * @param actionType Action name.
     * @param futureOnly Causes waitFor to only resolve if the action is called in the future.
     */
-  def waitFor(actionType: String): js.Thenable[Unit] = js.native
-  def waitFor(actionType: String, futureOnly: Boolean): js.Thenable[Unit] = js.native
+  def waitFor(actionType: String): js.Thenable[AnyAction] = js.native
+  def waitFor(actionType: String, futureOnly: Boolean): js.Thenable[AnyAction] = js.native
   /**
     * Returns whether the specified was dispatched in the past.
     */

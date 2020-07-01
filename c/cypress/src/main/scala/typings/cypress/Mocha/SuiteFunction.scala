@@ -1,5 +1,6 @@
 package typings.cypress.Mocha
 
+import typings.cypress.Cypress.TestConfigOverrides
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,6 +28,11 @@ trait SuiteFunction extends js.Object {
     */
   def apply(title: String): Suite = js.native
   /**
+    * Describe a "suite" with the given `title`, TestCptions, and callback `fn` containing
+    * nested suites.
+    */
+  def apply(title: String, config: TestConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite = js.native
+  /**
     * [bdd, tdd] Describe a "suite" with the given `title` and callback `fn` containing
     * nested suites.
     *
@@ -46,6 +52,16 @@ trait SuiteFunction extends js.Object {
     */
   def only(title: String): Suite = js.native
   /**
+    * Describe a "suite" with the given `title`, TestCptions, and callback `fn` containing
+    * nested suites. Indicates this suite should be executed exclusively.
+    */
+  /**
+    * [bdd, tdd, qunit] Indicates this suite should be executed exclusively.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  def only(title: String, config: TestConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite = js.native
+  /**
     * [bdd, tdd] Describe a "suite" with the given `title` and callback `fn` containing
     * nested suites. Indicates this suite should be executed exclusively.
     *
@@ -57,6 +73,12 @@ trait SuiteFunction extends js.Object {
     * - _Only available when invoked via the mocha CLI._
     */
   def only(title: String, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite = js.native
+  /**
+    * [bdd, tdd] Indicates this suite should not be executed.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  def skip(title: String, config: TestConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite | Unit = js.native
   /**
     * [bdd, tdd] Indicates this suite should not be executed.
     *

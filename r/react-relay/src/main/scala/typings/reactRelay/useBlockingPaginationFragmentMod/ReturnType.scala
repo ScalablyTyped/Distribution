@@ -21,7 +21,7 @@ trait ReturnType[TQuery /* <: OperationType */, TKey, TFragmentData] extends js.
 
 object ReturnType {
   @scala.inline
-  def apply[TQuery, TKey, TFragmentData](
+  def apply[/* <: typings.relayRuntime.relayRuntimeTypesMod.OperationType */ TQuery, TKey, TFragmentData](
     data: TFragmentData,
     hasNext: Boolean,
     hasPrevious: Boolean,

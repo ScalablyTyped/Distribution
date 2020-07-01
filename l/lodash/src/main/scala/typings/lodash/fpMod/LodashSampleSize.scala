@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashSampleSize extends js.Object {
+trait LodashSampleSize extends LodashConvertible {
   def apply(n: Double): LodashSampleSize1x1 = js.native
   def apply[T /* <: js.Object */](n: Double, collection: T): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any

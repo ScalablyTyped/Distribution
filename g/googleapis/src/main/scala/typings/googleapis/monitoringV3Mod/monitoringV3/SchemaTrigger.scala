@@ -24,10 +24,10 @@ trait SchemaTrigger extends js.Object {
 
 object SchemaTrigger {
   @scala.inline
-  def apply(count: Int | Double = null, percent: Int | Double = null): SchemaTrigger = {
+  def apply(count: js.UndefOr[Double] = js.undefined, percent: js.UndefOr[Double] = js.undefined): SchemaTrigger = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(percent)) __obj.updateDynamic("percent")(percent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTrigger]
   }
 }

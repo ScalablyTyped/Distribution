@@ -12,7 +12,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Browser commands that should be wrapper with Promise
-/* Inlined std.Omit<webdriverio.WebdriverIO.Browser, 'addCommand' | 'overwriteCommand' | 'options' | 'config' | '$' | '$$' | 'touchAction'> */
+/* Inlined std.Omit<webdriverio.WebdriverIO.Browser, 'addCommand' | 'overwriteCommand' | 'options' | 'config' | '$' | '$$' | 'touchAction' | 'sessionId' | 'capabilities' | 'requestedCapabilities' | 'isMobile' | 'isIOS' | 'isAndroid'> */
 @js.native
 trait BrowserPromise extends js.Object {
   @JSName("addLocatorStrategy")

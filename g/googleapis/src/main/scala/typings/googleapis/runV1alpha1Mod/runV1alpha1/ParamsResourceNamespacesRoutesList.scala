@@ -67,7 +67,7 @@ object ParamsResourceNamespacesRoutesList {
     includeUninitialized: js.UndefOr[Boolean] = js.undefined,
     key: String = null,
     labelSelector: String = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     oauth_token: String = null,
     parent: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
@@ -86,18 +86,18 @@ object ParamsResourceNamespacesRoutesList {
     if (continue != null) __obj.updateDynamic("continue")(continue.asInstanceOf[js.Any])
     if (fieldSelector != null) __obj.updateDynamic("fieldSelector")(fieldSelector.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeUninitialized)) __obj.updateDynamic("includeUninitialized")(includeUninitialized.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeUninitialized)) __obj.updateDynamic("includeUninitialized")(includeUninitialized.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (labelSelector != null) __obj.updateDynamic("labelSelector")(labelSelector.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (resourceVersion != null) __obj.updateDynamic("resourceVersion")(resourceVersion.asInstanceOf[js.Any])
     if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])
     if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol.asInstanceOf[js.Any])
-    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
+    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceNamespacesRoutesList]
   }
 }

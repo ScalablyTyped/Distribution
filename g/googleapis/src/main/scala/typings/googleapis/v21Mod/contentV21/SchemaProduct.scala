@@ -360,7 +360,7 @@ object SchemaProduct {
     displayAdsLink: String = null,
     displayAdsSimilarIds: js.Array[String] = null,
     displayAdsTitle: String = null,
-    displayAdsValue: Int | Double = null,
+    displayAdsValue: js.UndefOr[Double] = js.undefined,
     energyEfficiencyClass: String = null,
     excludedDestinations: js.Array[String] = null,
     expirationDate: String = null,
@@ -414,7 +414,7 @@ object SchemaProduct {
     if (adsGrouping != null) __obj.updateDynamic("adsGrouping")(adsGrouping.asInstanceOf[js.Any])
     if (adsLabels != null) __obj.updateDynamic("adsLabels")(adsLabels.asInstanceOf[js.Any])
     if (adsRedirect != null) __obj.updateDynamic("adsRedirect")(adsRedirect.asInstanceOf[js.Any])
-    if (!js.isUndefined(adult)) __obj.updateDynamic("adult")(adult.asInstanceOf[js.Any])
+    if (!js.isUndefined(adult)) __obj.updateDynamic("adult")(adult.get.asInstanceOf[js.Any])
     if (ageGroup != null) __obj.updateDynamic("ageGroup")(ageGroup.asInstanceOf[js.Any])
     if (availability != null) __obj.updateDynamic("availability")(availability.asInstanceOf[js.Any])
     if (availabilityDate != null) __obj.updateDynamic("availabilityDate")(availabilityDate.asInstanceOf[js.Any])
@@ -435,7 +435,7 @@ object SchemaProduct {
     if (displayAdsLink != null) __obj.updateDynamic("displayAdsLink")(displayAdsLink.asInstanceOf[js.Any])
     if (displayAdsSimilarIds != null) __obj.updateDynamic("displayAdsSimilarIds")(displayAdsSimilarIds.asInstanceOf[js.Any])
     if (displayAdsTitle != null) __obj.updateDynamic("displayAdsTitle")(displayAdsTitle.asInstanceOf[js.Any])
-    if (displayAdsValue != null) __obj.updateDynamic("displayAdsValue")(displayAdsValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayAdsValue)) __obj.updateDynamic("displayAdsValue")(displayAdsValue.get.asInstanceOf[js.Any])
     if (energyEfficiencyClass != null) __obj.updateDynamic("energyEfficiencyClass")(energyEfficiencyClass.asInstanceOf[js.Any])
     if (excludedDestinations != null) __obj.updateDynamic("excludedDestinations")(excludedDestinations.asInstanceOf[js.Any])
     if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
@@ -443,11 +443,11 @@ object SchemaProduct {
     if (googleProductCategory != null) __obj.updateDynamic("googleProductCategory")(googleProductCategory.asInstanceOf[js.Any])
     if (gtin != null) __obj.updateDynamic("gtin")(gtin.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(identifierExists)) __obj.updateDynamic("identifierExists")(identifierExists.asInstanceOf[js.Any])
+    if (!js.isUndefined(identifierExists)) __obj.updateDynamic("identifierExists")(identifierExists.get.asInstanceOf[js.Any])
     if (imageLink != null) __obj.updateDynamic("imageLink")(imageLink.asInstanceOf[js.Any])
     if (includedDestinations != null) __obj.updateDynamic("includedDestinations")(includedDestinations.asInstanceOf[js.Any])
     if (installment != null) __obj.updateDynamic("installment")(installment.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBundle)) __obj.updateDynamic("isBundle")(isBundle.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBundle)) __obj.updateDynamic("isBundle")(isBundle.get.asInstanceOf[js.Any])
     if (itemGroupId != null) __obj.updateDynamic("itemGroupId")(itemGroupId.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])

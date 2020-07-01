@@ -79,7 +79,7 @@ object SchemaUserinfoplus {
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (picture != null) __obj.updateDynamic("picture")(picture.asInstanceOf[js.Any])
-    if (!js.isUndefined(verified_email)) __obj.updateDynamic("verified_email")(verified_email.asInstanceOf[js.Any])
+    if (!js.isUndefined(verified_email)) __obj.updateDynamic("verified_email")(verified_email.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUserinfoplus]
   }
 }

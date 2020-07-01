@@ -24,7 +24,7 @@ trait TransformRaw[T /* <: Record[String, _] */] extends Transform[T] {
 
 object TransformRaw {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.std.Record[java.lang.String, _] */ T](
     `type`: raw,
     isMatch: /* node */ Node => Boolean = null,
     priority: js.UndefOr[Double] = js.undefined,

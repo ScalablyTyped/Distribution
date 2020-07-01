@@ -51,9 +51,9 @@ trait Mesh extends Container {
   val geometry: Geometry = js.native
   /**
     * Alias for {@link PIXI.Mesh#shader}.
-    * @member {PIXI.Shader|PIXI.MeshMaterial}
+    * @member {PIXI.MeshMaterial}
     */
-  var material: Shader | MeshMaterial = js.native
+  var material: MeshMaterial = js.native
   /**
     * If true PixiJS will Math.floor() x/y values when rendering, stopping pixel interpolation.
     * Advantages can include sharper image quality (like text) and faster rendering on canvas.
@@ -138,10 +138,10 @@ trait Mesh extends Container {
   /**
     * Tests if a point is inside this mesh. Works only for PIXI.DRAW_MODES.TRIANGLES.
     *
-    * @param {PIXI.Point} point the point to test
+    * @param {PIXI.IPointData} point - the point to test
     * @return {boolean} the result of the test
     */
-  def containsPoint(point: Point): Boolean = js.native
+  def containsPoint(point: IPointData): Boolean = js.native
   def destroy(options: Children): Unit = js.native
 }
 

@@ -42,7 +42,7 @@ object SchemaNetworksAddPeeringRequest {
     peerNetwork: String = null
   ): SchemaNetworksAddPeeringRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoCreateRoutes)) __obj.updateDynamic("autoCreateRoutes")(autoCreateRoutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCreateRoutes)) __obj.updateDynamic("autoCreateRoutes")(autoCreateRoutes.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (networkPeering != null) __obj.updateDynamic("networkPeering")(networkPeering.asInstanceOf[js.Any])
     if (peerNetwork != null) __obj.updateDynamic("peerNetwork")(peerNetwork.asInstanceOf[js.Any])

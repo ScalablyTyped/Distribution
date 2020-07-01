@@ -1,13 +1,13 @@
 package typings.googleapis.v5Mod.pagespeedonlineV5
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.googleapis.AnonAccessibility
-import typings.googleapis.AnonBenchmarkIndex
-import typings.googleapis.AnonCodeMessage
-import typings.googleapis.AnonDescriptionTitle
-import typings.googleapis.AnonEmulatedFormFactor
-import typings.googleapis.AnonRendererFormattedStrings
-import typings.googleapis.AnonTotal
+import typings.googleapis.anon.Accessibility
+import typings.googleapis.anon.BenchmarkIndex
+import typings.googleapis.anon.CodeMessage
+import typings.googleapis.anon.DescriptionTitle
+import typings.googleapis.anon.EmulatedFormFactor
+import typings.googleapis.anon.RendererFormattedStrings
+import typings.googleapis.anon.Total
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,19 +21,19 @@ trait SchemaLighthouseResultV5 extends js.Object {
   /**
     * Map of categories in the LHR.
     */
-  var categories: js.UndefOr[AnonAccessibility] = js.native
+  var categories: js.UndefOr[Accessibility] = js.native
   /**
     * Map of category groups in the LHR.
     */
-  var categoryGroups: js.UndefOr[StringDictionary[AnonDescriptionTitle]] = js.native
+  var categoryGroups: js.UndefOr[StringDictionary[DescriptionTitle]] = js.native
   /**
     * The configuration settings for this LHR.
     */
-  var configSettings: js.UndefOr[AnonEmulatedFormFactor] = js.native
+  var configSettings: js.UndefOr[EmulatedFormFactor] = js.native
   /**
     * Environment settings that were used when making this LHR.
     */
-  var environment: js.UndefOr[AnonBenchmarkIndex] = js.native
+  var environment: js.UndefOr[BenchmarkIndex] = js.native
   /**
     * The time that this run was fetched.
     */
@@ -45,7 +45,7 @@ trait SchemaLighthouseResultV5 extends js.Object {
   /**
     * The internationalization strings that are required to render the LHR.
     */
-  var i18n: js.UndefOr[AnonRendererFormattedStrings] = js.native
+  var i18n: js.UndefOr[RendererFormattedStrings] = js.native
   /**
     * The lighthouse version that was used to generate this LHR.
     */
@@ -62,11 +62,11 @@ trait SchemaLighthouseResultV5 extends js.Object {
     * A top-level error message that, if present, indicates a serious enough
     * problem that this Lighthouse result may need to be discarded.
     */
-  var runtimeError: js.UndefOr[AnonCodeMessage] = js.native
+  var runtimeError: js.UndefOr[CodeMessage] = js.native
   /**
     * Timing information for this LHR.
     */
-  var timing: js.UndefOr[AnonTotal] = js.native
+  var timing: js.UndefOr[Total] = js.native
   /**
     * The user agent that was used to run this LHR.
     */
@@ -77,18 +77,18 @@ object SchemaLighthouseResultV5 {
   @scala.inline
   def apply(
     audits: StringDictionary[SchemaLighthouseAuditResultV5] = null,
-    categories: AnonAccessibility = null,
-    categoryGroups: StringDictionary[AnonDescriptionTitle] = null,
-    configSettings: AnonEmulatedFormFactor = null,
-    environment: AnonBenchmarkIndex = null,
+    categories: Accessibility = null,
+    categoryGroups: StringDictionary[DescriptionTitle] = null,
+    configSettings: EmulatedFormFactor = null,
+    environment: BenchmarkIndex = null,
     fetchTime: String = null,
     finalUrl: String = null,
-    i18n: AnonRendererFormattedStrings = null,
+    i18n: RendererFormattedStrings = null,
     lighthouseVersion: String = null,
     requestedUrl: String = null,
     runWarnings: js.Array[_] = null,
-    runtimeError: AnonCodeMessage = null,
-    timing: AnonTotal = null,
+    runtimeError: CodeMessage = null,
+    timing: Total = null,
     userAgent: String = null
   ): SchemaLighthouseResultV5 = {
     val __obj = js.Dynamic.literal()

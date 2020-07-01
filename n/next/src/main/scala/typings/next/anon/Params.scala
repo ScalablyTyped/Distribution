@@ -11,7 +11,7 @@ trait Params[P /* <: ParsedUrlQuery */] extends js.Object {
 
 object Params {
   @scala.inline
-  def apply[P](params: P): Params[P] = {
+  def apply[/* <: typings.node.querystringMod.ParsedUrlQuery */ P](params: P): Params[P] = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
     __obj.asInstanceOf[Params[P]]
   }

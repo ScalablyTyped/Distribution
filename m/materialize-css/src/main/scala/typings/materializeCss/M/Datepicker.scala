@@ -6,10 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait Datepicker
-  extends Component[DatepickerOptions]
-     with Openable {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<DatepickerOptions> * / any
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Openable * / any */ @js.native
+trait Datepicker extends js.Object {
   /**
     * CLEAR button instance (undocumented!).
     */
@@ -23,10 +23,22 @@ trait Datepicker
     */
   var doneBtn: HTMLButtonElement = js.native
   /**
+    * If the picker is open.
+    */
+  var isOpen: Boolean = js.native
+  /**
+    * Close datepicker
+    */
+  def close(): Unit = js.native
+  /**
     * Change date view to a specific date on the datepicker
     * @param date Date to show on the datepicker.
     */
   def gotoDate(date: Date): Unit = js.native
+  /**
+    * Open datepicker
+    */
+  def open(): Unit = js.native
   /**
     * Set a date on the datepicker
     * @param date Date to set on the datepicker.

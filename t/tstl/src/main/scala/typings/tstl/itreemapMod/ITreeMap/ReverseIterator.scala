@@ -29,7 +29,7 @@ trait ReverseIterator[Key, T, Unique /* <: Boolean */, Source /* <: typings.tstl
 
 object ReverseIterator {
   @scala.inline
-  def apply[Key, T, Unique, Source, IteratorT, ReverseT](
+  def apply[Key, T, /* <: scala.Boolean */ Unique, /* <: typings.tstl.itreemapMod.ITreeMap[Key, T, Unique, Source, IteratorT, ReverseT] */ Source, /* <: typings.tstl.itreemapMod.ITreeMap.Iterator[Key, T, Unique, Source, IteratorT, ReverseT] */ IteratorT, /* <: typings.tstl.itreemapMod.ITreeMap.ReverseIterator[Key, T, Unique, Source, IteratorT, ReverseT] */ ReverseT](
     base: () => IteratorT,
     first: Key,
     next: () => ReverseT,

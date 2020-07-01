@@ -66,7 +66,7 @@ trait BaseHeatmapConfiguration[V /* <: String */] extends js.Object {
 
 object BaseHeatmapConfiguration {
   @scala.inline
-  def apply[V](
+  def apply[/* <: java.lang.String */ V](
     backgroundColor: String = null,
     blur: js.UndefOr[Double] = js.undefined,
     gradient: StringDictionary[String] = null,

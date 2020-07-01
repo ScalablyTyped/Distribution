@@ -21,6 +21,6 @@ class ^[KeyType, ValueType] protected () extends QuickLRU[KeyType, ValueType] {
   	//=> '🌈'
   	```
   	*/
-  def this(options: Options) = this()
+  def this(options: Options[KeyType, ValueType]) = this()
 }
 

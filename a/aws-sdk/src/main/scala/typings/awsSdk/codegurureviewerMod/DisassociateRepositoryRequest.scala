@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DisassociateRepositoryRequest extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) identifying the association.
+    * The Amazon Resource Name (ARN) of the  RepositoryAssociation  object. 
     */
   var AssociationArn: Arn = js.native
 }

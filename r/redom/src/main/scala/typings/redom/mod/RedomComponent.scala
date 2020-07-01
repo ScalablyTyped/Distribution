@@ -1,12 +1,13 @@
 package typings.redom.mod
 
 import typings.std.HTMLElement
+import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RedomComponent extends js.Object {
-  var el: HTMLElement
+  var el: HTMLElement | SVGElement | RedomComponent
   var onmount: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onremount: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onunmount: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -24,7 +25,7 @@ trait RedomComponent extends js.Object {
 object RedomComponent {
   @scala.inline
   def apply(
-    el: HTMLElement,
+    el: HTMLElement | SVGElement | RedomComponent,
     onmount: () => Unit = null,
     onremount: () => Unit = null,
     onunmount: () => Unit = null,

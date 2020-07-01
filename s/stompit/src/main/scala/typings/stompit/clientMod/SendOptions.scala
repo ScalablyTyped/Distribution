@@ -21,7 +21,7 @@ object SendOptions {
     onReceipt: () => Unit,
     autoDestroy: js.UndefOr[Boolean] = js.undefined,
     decodeStrings: js.UndefOr[Boolean] = js.undefined,
-    defaultencoding: BufferEncoding = null,
+    defaultEncoding: BufferEncoding = null,
     destroy: js.ThisFunction2[
       /* this */ Writable, 
       /* error */ Error | Null, 
@@ -53,7 +53,7 @@ object SendOptions {
     val __obj = js.Dynamic.literal(onError = js.Any.fromFunction1(onError), onReceipt = js.Any.fromFunction0(onReceipt))
     if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy.get.asInstanceOf[js.Any])
     if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings.get.asInstanceOf[js.Any])
-    if (defaultencoding != null) __obj.updateDynamic("defaultencoding")(defaultencoding.asInstanceOf[js.Any])
+    if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
     if (!js.isUndefined(emitClose)) __obj.updateDynamic("emitClose")(emitClose.get.asInstanceOf[js.Any])
     if (`final` != null) __obj.updateDynamic("final")(`final`.asInstanceOf[js.Any])

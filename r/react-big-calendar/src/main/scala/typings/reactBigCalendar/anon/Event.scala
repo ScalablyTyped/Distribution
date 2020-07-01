@@ -12,7 +12,7 @@ trait Event[TEvent /* <: js.Object */] extends js.Object {
 
 object Event {
   @scala.inline
-  def apply[TEvent](event: TEvent, style: CSSProperties): Event[TEvent] = {
+  def apply[/* <: js.Object */ TEvent](event: TEvent, style: CSSProperties): Event[TEvent] = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event[TEvent]]
   }

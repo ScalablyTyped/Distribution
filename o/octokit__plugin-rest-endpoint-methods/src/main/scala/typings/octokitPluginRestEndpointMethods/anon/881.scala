@@ -3,8 +3,8 @@ package typings.octokitPluginRestEndpointMethods.anon
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.baseUrl
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.headers
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
-import typings.octokitTypes.endpointsMod.ReposAddProtectedBranchUserRestrictionsEndpoint
-import typings.octokitTypes.endpointsMod.ReposAddProtectedBranchUserRestrictionsResponseData
+import typings.octokitTypes.endpointsMod.ReposAddUserAccessRestrictionsEndpoint
+import typings.octokitTypes.endpointsMod.ReposAddUserAccessRestrictionsResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
@@ -13,15 +13,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait `881` extends js.Object {
-  var parameters: RequestParameters with (Omit[ReposAddProtectedBranchUserRestrictionsEndpoint, baseUrl | headers | mediaType])
-  var response: OctokitResponse[ReposAddProtectedBranchUserRestrictionsResponseData]
+  var parameters: RequestParameters with (Omit[ReposAddUserAccessRestrictionsEndpoint, baseUrl | headers | mediaType])
+  var response: OctokitResponse[ReposAddUserAccessRestrictionsResponseData]
 }
 
 object `881` {
   @scala.inline
   def apply(
-    parameters: RequestParameters with (Omit[ReposAddProtectedBranchUserRestrictionsEndpoint, baseUrl | headers | mediaType]),
-    response: OctokitResponse[ReposAddProtectedBranchUserRestrictionsResponseData]
+    parameters: RequestParameters with (Omit[ReposAddUserAccessRestrictionsEndpoint, baseUrl | headers | mediaType]),
+    response: OctokitResponse[ReposAddUserAccessRestrictionsResponseData]
   ): `881` = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[`881`]

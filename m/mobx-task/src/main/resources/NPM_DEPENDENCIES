@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mobx-task" : "2.0.0"
+      "mobx-task" : "2.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "mobx-task" : "2.0.0"
+      "mobx-task" : "2.0.1"
     }
   ],
   "compile-devDependencies" : [

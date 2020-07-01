@@ -13,7 +13,7 @@ trait Value[D /* <: js.Object */] extends js.Object {
 
 object Value {
   @scala.inline
-  def apply[D](id: IdType[D], value: FilterValue): Value[D] = {
+  def apply[/* <: js.Object */ D](id: IdType[D], value: FilterValue): Value[D] = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value[D]]
   }

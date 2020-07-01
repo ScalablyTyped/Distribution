@@ -1,12 +1,12 @@
 package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
-import typings.googleapis.AnonActiveTime
-import typings.googleapis.AnonCpuTemperatureInfo
-import typings.googleapis.AnonCreateTime
-import typings.googleapis.AnonEmail
-import typings.googleapis.AnonFamily
-import typings.googleapis.AnonReportTime
-import typings.googleapis.AnonVolumeInfo
+import typings.googleapis.anon.ActiveTime
+import typings.googleapis.anon.CpuTemperatureInfo
+import typings.googleapis.anon.CreateTime
+import typings.googleapis.anon.Email
+import typings.googleapis.anon.Family
+import typings.googleapis.anon.ReportTime
+import typings.googleapis.anon.VolumeInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait SchemaChromeOsDevice extends js.Object {
   /**
     * List of active time ranges (Read-only)
     */
-  var activeTimeRanges: js.UndefOr[js.Array[AnonActiveTime]] = js.native
+  var activeTimeRanges: js.UndefOr[js.Array[ActiveTime]] = js.native
   /**
     * AssetId specified during enrollment or through later annotation
     */
@@ -39,11 +39,11 @@ trait SchemaChromeOsDevice extends js.Object {
   /**
     * Reports of CPU utilization and temperature (Read-only)
     */
-  var cpuStatusReports: js.UndefOr[js.Array[AnonCpuTemperatureInfo]] = js.native
+  var cpuStatusReports: js.UndefOr[js.Array[CpuTemperatureInfo]] = js.native
   /**
     * List of device files to download (Read-only)
     */
-  var deviceFiles: js.UndefOr[js.Array[AnonCreateTime]] = js.native
+  var deviceFiles: js.UndefOr[js.Array[CreateTime]] = js.native
   /**
     * Unique identifier of Chrome OS Device (Read-only)
     */
@@ -51,7 +51,7 @@ trait SchemaChromeOsDevice extends js.Object {
   /**
     * Reports of disk space and other info about mounted/connected volumes.
     */
-  var diskVolumeReports: js.UndefOr[js.Array[AnonVolumeInfo]] = js.native
+  var diskVolumeReports: js.UndefOr[js.Array[VolumeInfo]] = js.native
   /**
     * ETag of the resource.
     */
@@ -114,7 +114,7 @@ trait SchemaChromeOsDevice extends js.Object {
     * List of recent device users, in descending order by last login time
     * (Read-only)
     */
-  var recentUsers: js.UndefOr[js.Array[AnonEmail]] = js.native
+  var recentUsers: js.UndefOr[js.Array[Email]] = js.native
   /**
     * Chromebook serial number (Read-only)
     */
@@ -130,7 +130,7 @@ trait SchemaChromeOsDevice extends js.Object {
   /**
     * Reports of amounts of available RAM memory (Read-only)
     */
-  var systemRamFreeReports: js.UndefOr[js.Array[AnonReportTime]] = js.native
+  var systemRamFreeReports: js.UndefOr[js.Array[ReportTime]] = js.native
   /**
     * Total RAM on the device [in bytes] (Read-only)
     */
@@ -138,7 +138,7 @@ trait SchemaChromeOsDevice extends js.Object {
   /**
     * Trusted Platform Module (TPM) (Read-only)
     */
-  var tpmVersionInfo: js.UndefOr[AnonFamily] = js.native
+  var tpmVersionInfo: js.UndefOr[Family] = js.native
   /**
     * Will Chromebook auto renew after support end date (Read-only)
     */
@@ -148,15 +148,15 @@ trait SchemaChromeOsDevice extends js.Object {
 object SchemaChromeOsDevice {
   @scala.inline
   def apply(
-    activeTimeRanges: js.Array[AnonActiveTime] = null,
+    activeTimeRanges: js.Array[ActiveTime] = null,
     annotatedAssetId: String = null,
     annotatedLocation: String = null,
     annotatedUser: String = null,
     bootMode: String = null,
-    cpuStatusReports: js.Array[AnonCpuTemperatureInfo] = null,
-    deviceFiles: js.Array[AnonCreateTime] = null,
+    cpuStatusReports: js.Array[CpuTemperatureInfo] = null,
+    deviceFiles: js.Array[CreateTime] = null,
     deviceId: String = null,
-    diskVolumeReports: js.Array[AnonVolumeInfo] = null,
+    diskVolumeReports: js.Array[VolumeInfo] = null,
     etag: String = null,
     ethernetMacAddress: String = null,
     firmwareVersion: String = null,
@@ -171,13 +171,13 @@ object SchemaChromeOsDevice {
     orgUnitPath: String = null,
     osVersion: String = null,
     platformVersion: String = null,
-    recentUsers: js.Array[AnonEmail] = null,
+    recentUsers: js.Array[Email] = null,
     serialNumber: String = null,
     status: String = null,
     supportEndDate: String = null,
-    systemRamFreeReports: js.Array[AnonReportTime] = null,
+    systemRamFreeReports: js.Array[ReportTime] = null,
     systemRamTotal: String = null,
-    tpmVersionInfo: AnonFamily = null,
+    tpmVersionInfo: Family = null,
     willAutoRenew: js.UndefOr[Boolean] = js.undefined
   ): SchemaChromeOsDevice = {
     val __obj = js.Dynamic.literal()
@@ -211,7 +211,7 @@ object SchemaChromeOsDevice {
     if (systemRamFreeReports != null) __obj.updateDynamic("systemRamFreeReports")(systemRamFreeReports.asInstanceOf[js.Any])
     if (systemRamTotal != null) __obj.updateDynamic("systemRamTotal")(systemRamTotal.asInstanceOf[js.Any])
     if (tpmVersionInfo != null) __obj.updateDynamic("tpmVersionInfo")(tpmVersionInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(willAutoRenew)) __obj.updateDynamic("willAutoRenew")(willAutoRenew.asInstanceOf[js.Any])
+    if (!js.isUndefined(willAutoRenew)) __obj.updateDynamic("willAutoRenew")(willAutoRenew.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaChromeOsDevice]
   }
 }

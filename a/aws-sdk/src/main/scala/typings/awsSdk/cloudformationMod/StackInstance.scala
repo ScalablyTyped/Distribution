@@ -19,7 +19,7 @@ trait StackInstance extends js.Object {
     */
   var LastDriftCheckTimestamp: js.UndefOr[Timestamp] = js.native
   /**
-    * Reserved for internal use. No data returned.
+    * [Service-managed permissions] The organization root ID or organizational unit (OU) IDs that you specified for DeploymentTargets.
     */
   var OrganizationalUnitId: js.UndefOr[typings.awsSdk.cloudformationMod.OrganizationalUnitId] = js.native
   /**
@@ -34,6 +34,10 @@ trait StackInstance extends js.Object {
     * The ID of the stack instance.
     */
   var StackId: js.UndefOr[typings.awsSdk.cloudformationMod.StackId] = js.native
+  /**
+    * The detailed status of the stack instance.
+    */
+  var StackInstanceStatus: js.UndefOr[StackInstanceComprehensiveStatus] = js.native
   /**
     * The name or unique ID of the stack set that the stack instance is associated with.
     */
@@ -58,6 +62,7 @@ object StackInstance {
     ParameterOverrides: Parameters = null,
     Region: Region = null,
     StackId: StackId = null,
+    StackInstanceStatus: StackInstanceComprehensiveStatus = null,
     StackSetId: StackSetId = null,
     Status: StackInstanceStatus = null,
     StatusReason: Reason = null
@@ -70,6 +75,7 @@ object StackInstance {
     if (ParameterOverrides != null) __obj.updateDynamic("ParameterOverrides")(ParameterOverrides.asInstanceOf[js.Any])
     if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
     if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
+    if (StackInstanceStatus != null) __obj.updateDynamic("StackInstanceStatus")(StackInstanceStatus.asInstanceOf[js.Any])
     if (StackSetId != null) __obj.updateDynamic("StackSetId")(StackSetId.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (StatusReason != null) __obj.updateDynamic("StatusReason")(StatusReason.asInstanceOf[js.Any])

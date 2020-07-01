@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the Body object, for use in "body.set({ ... })". */
+/** An interface for updating data on the Body object, for use in `body.set({ ... })`. */
 trait BodyUpdateData extends js.Object {
   /**
     *

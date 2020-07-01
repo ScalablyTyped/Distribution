@@ -17,7 +17,7 @@ trait FlexWrapProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Ob
 
 object FlexWrapProps {
   @scala.inline
-  def apply[ThemeType](flexWrap: js.UndefOr[Null | (ResponsiveValue[FlexWrapProperty, ThemeType])] = js.undefined): FlexWrapProps[ThemeType] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](flexWrap: js.UndefOr[Null | (ResponsiveValue[FlexWrapProperty, ThemeType])] = js.undefined): FlexWrapProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(flexWrap)) __obj.updateDynamic("flexWrap")(flexWrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlexWrapProps[ThemeType]]

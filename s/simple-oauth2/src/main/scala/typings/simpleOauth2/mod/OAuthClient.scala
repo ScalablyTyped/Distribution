@@ -17,7 +17,7 @@ trait OAuthClient[ClientIdName /* <: String */] extends js.Object {
 
 object OAuthClient {
   @scala.inline
-  def apply[ClientIdName](
+  def apply[/* <: java.lang.String */ ClientIdName](
     accessToken: Create,
     authorizationCode: AuthorizeURL[ClientIdName],
     clientCredentials: `0`,

@@ -15,7 +15,7 @@ trait CreateAssetModelResponse extends js.Object {
     */
   var assetModelId: ID = js.native
   /**
-    * The status of the asset model, which contains a state (CREATING after successfully calling this action) and any error message.
+    * The status of the asset model, which contains a state (CREATING after successfully calling this operation) and any error message.
     */
   var assetModelStatus: AssetModelStatus = js.native
 }

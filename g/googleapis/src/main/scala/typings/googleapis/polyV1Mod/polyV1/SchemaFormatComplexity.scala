@@ -24,9 +24,9 @@ trait SchemaFormatComplexity extends js.Object {
 
 object SchemaFormatComplexity {
   @scala.inline
-  def apply(lodHint: Int | Double = null, triangleCount: String = null): SchemaFormatComplexity = {
+  def apply(lodHint: js.UndefOr[Double] = js.undefined, triangleCount: String = null): SchemaFormatComplexity = {
     val __obj = js.Dynamic.literal()
-    if (lodHint != null) __obj.updateDynamic("lodHint")(lodHint.asInstanceOf[js.Any])
+    if (!js.isUndefined(lodHint)) __obj.updateDynamic("lodHint")(lodHint.get.asInstanceOf[js.Any])
     if (triangleCount != null) __obj.updateDynamic("triangleCount")(triangleCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFormatComplexity]
   }

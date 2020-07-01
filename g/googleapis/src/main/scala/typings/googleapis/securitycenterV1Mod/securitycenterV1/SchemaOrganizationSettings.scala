@@ -38,7 +38,7 @@ object SchemaOrganizationSettings {
   ): SchemaOrganizationSettings = {
     val __obj = js.Dynamic.literal()
     if (assetDiscoveryConfig != null) __obj.updateDynamic("assetDiscoveryConfig")(assetDiscoveryConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAssetDiscovery)) __obj.updateDynamic("enableAssetDiscovery")(enableAssetDiscovery.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAssetDiscovery)) __obj.updateDynamic("enableAssetDiscovery")(enableAssetDiscovery.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOrganizationSettings]
   }

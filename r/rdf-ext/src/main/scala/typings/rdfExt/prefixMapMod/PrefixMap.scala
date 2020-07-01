@@ -11,12 +11,12 @@ import scala.scalajs.js.annotation._
 
 trait PrefixMap extends js.Object {
   var factory: DataFactory[Quad, Quad]
-  var map: Record[String, NamedNode]
+  var map: Record[String, NamedNode[String]]
   def addAll(prefixes: PrefixesRecord): this.type
   def export(stream: Stream[Quad]): this.type
   def `import`(stream: Stream[Quad]): js.Promise[this.type]
-  def resolve(curie: String): NamedNode
-  def shrink(iri: String): NamedNode
+  def resolve(curie: String): NamedNode[String]
+  def shrink(iri: String): NamedNode[String]
 }
 
 object PrefixMap {
@@ -26,9 +26,9 @@ object PrefixMap {
     export: Stream[Quad] => PrefixMap,
     factory: DataFactory[Quad, Quad],
     `import`: Stream[Quad] => js.Promise[PrefixMap],
-    map: Record[String, NamedNode],
-    resolve: String => NamedNode,
-    shrink: String => NamedNode
+    map: Record[String, NamedNode[String]],
+    resolve: String => NamedNode[String],
+    shrink: String => NamedNode[String]
   ): PrefixMap = {
     val __obj = js.Dynamic.literal(addAll = js.Any.fromFunction1(addAll), export = js.Any.fromFunction1(export), factory = factory.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], resolve = js.Any.fromFunction1(resolve), shrink = js.Any.fromFunction1(shrink))
     __obj.updateDynamic("import")(js.Any.fromFunction1(`import`))

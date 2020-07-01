@@ -6,8 +6,7 @@ import typings.echarts.anon.AnimationDuration
 import typings.echarts.anon.BorderRadius
 import typings.echarts.anon.EdgeLabel
 import typings.echarts.anon.EdgeLength
-import typings.echarts.anon.ExtraCssText
-import typings.echarts.anon.FontStyle
+import typings.echarts.anon.FontSize
 import typings.echarts.anon.RotateLabel
 import typings.echarts.anon.ShadowColor
 import typings.echarts.anon.ShadowOffsetY
@@ -251,7 +250,7 @@ trait SeriesGraph_ extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-graph.edgeLabel
     */
-  var edgeLabel: js.UndefOr[FontStyle] = js.undefined
+  var edgeLabel: js.UndefOr[FontSize] = js.undefined
   /**
     * Symbol of two ends of edge line.
     *
@@ -657,7 +656,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
   /**
     * Distance between component and the top side of the container.
     *
@@ -761,7 +760,7 @@ object SeriesGraph_ {
     cursor: String = null,
     data: js.Array[DataObject] = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
-    edgeLabel: FontStyle = null,
+    edgeLabel: FontSize = null,
     edgeSymbol: js.Array[_] | String = null,
     edgeSymbolSize: js.Array[_] | Double = null,
     edges: js.Array[_] = null,
@@ -794,7 +793,7 @@ object SeriesGraph_ {
     symbolOffset: js.Array[_] = null,
     symbolRotate: js.UndefOr[Double] = js.undefined,
     symbolSize: js.Array[_] | js.Function | Double = null,
-    tooltip: ExtraCssText = null,
+    tooltip: BaseTooltip = null,
     top: Double | String = null,
     `type`: String = null,
     width: Double | String = null,

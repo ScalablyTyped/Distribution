@@ -14,7 +14,7 @@ trait APIGatewayAuthorizerWithContextResult[TAuthorizerContext /* <: APIGatewayA
 
 object APIGatewayAuthorizerWithContextResult {
   @scala.inline
-  def apply[TAuthorizerContext](
+  def apply[/* <: typings.awsLambda.apiGatewayMod.APIGatewayAuthorizerResultContext */ TAuthorizerContext](
     context: TAuthorizerContext,
     policyDocument: PolicyDocument,
     principalId: String,

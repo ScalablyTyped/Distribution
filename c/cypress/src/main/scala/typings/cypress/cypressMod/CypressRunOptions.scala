@@ -64,6 +64,10 @@ trait CypressRunOptions extends CypressCommonOptions {
     */
   var port: Double
   /**
+    * Run quietly, using only the configured reporter
+    */
+  var quiet: Boolean
+  /**
     * Whether to record the test run
     */
   var record: Boolean
@@ -101,13 +105,14 @@ object CypressRunOptions {
     parallel: Boolean,
     port: Double,
     project: String,
+    quiet: Boolean,
     record: Boolean,
     reporter: String,
     reporterOptions: js.Any,
     spec: String,
     tag: String
   ): CypressRunOptions = {
-    val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], ciBuildId = ciBuildId.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], configFile = configFile.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], headed = headed.asInstanceOf[js.Any], headless = headless.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], noExit = noExit.asInstanceOf[js.Any], parallel = parallel.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], record = record.asInstanceOf[js.Any], reporter = reporter.asInstanceOf[js.Any], reporterOptions = reporterOptions.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], ciBuildId = ciBuildId.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], configFile = configFile.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], headed = headed.asInstanceOf[js.Any], headless = headless.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], noExit = noExit.asInstanceOf[js.Any], parallel = parallel.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], quiet = quiet.asInstanceOf[js.Any], record = record.asInstanceOf[js.Any], reporter = reporter.asInstanceOf[js.Any], reporterOptions = reporterOptions.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[CypressRunOptions]
   }
 }

@@ -46,14 +46,16 @@ trait Geometry extends js.Object {
   /**
     *
     * Adds an attribute to the geometry
+    * Note: `stride` and `start` should be `undefined` if you dont know them, not 0!
     *
     * @param {String} id - the name of the attribute (matching up to a shader)
-    * @param {PIXI.Buffer|number[]} [buffer] the buffer that holds the data of the attribute . You can also provide an Array and a buffer will be created from it.
-    * @param {Number} [size=0] the size of the attribute. If you have 2 floats per vertex (eg position x and y) this would be 2
-    * @param {Boolean} [normalized=false] should the data be normalized.
-    * @param {Number} [type=PIXI.TYPES.FLOAT] what type of number is the attribute. Check {PIXI.TYPES} to see the ones available
-    * @param {Number} [stride=0] How far apart (in floats) the start of each value is. (used for interleaving data)
-    * @param {Number} [start=0] How far into the array to start reading values (used for interleaving data)
+    * @param {PIXI.Buffer|number[]} [buffer] - the buffer that holds the data of the attribute . You can also provide an Array and a buffer will be created from it.
+    * @param {Number} [size=0] - the size of the attribute. If you have 2 floats per vertex (eg position x and y) this would be 2
+    * @param {Boolean} [normalized=false] - should the data be normalized.
+    * @param {Number} [type=PIXI.TYPES.FLOAT] - what type of number is the attribute. Check {PIXI.TYPES} to see the ones available
+    * @param {Number} [stride] - How far apart (in floats) the start of each value is. (used for interleaving data)
+    * @param {Number} [start] - How far into the array to start reading values (used for interleaving data)
+    * @param {boolean} [instance=false] - Instancing flag
     *
     * @return {PIXI.Geometry} returns self, useful for chaining.
     */
@@ -64,14 +66,15 @@ trait Geometry extends js.Object {
     normalized: js.UndefOr[Boolean],
     `type`: js.UndefOr[Double],
     stride: js.UndefOr[Double],
-    start: js.UndefOr[Double]
+    start: js.UndefOr[Double],
+    instance: js.UndefOr[Boolean]
   ): Geometry = js.native
   /**
     *
     * Adds an index buffer to the geometry
     * The index buffer contains integers, three for each triangle in the geometry, which reference the various attribute buffers (position, colour, UV coordinates, other UV coordinates, normal, …). There is only ONE index buffer.
     *
-    * @param {PIXI.Buffer|number[]} [buffer] the buffer that holds the data of the index buffer. You can also provide an Array and a buffer will be created from it.
+    * @param {PIXI.Buffer|number[]} [buffer] - the buffer that holds the data of the index buffer. You can also provide an Array and a buffer will be created from it.
     * @return {PIXI.Geometry} returns self, useful for chaining.
     */
   def addIndex(): Geometry = js.native
@@ -88,14 +91,14 @@ trait Geometry extends js.Object {
   /**
     * returns the requested attribute
     *
-    * @param {String} id  the name of the attribute required
+    * @param {String} id - the name of the attribute required
     * @return {PIXI.Attribute} the attribute requested.
     */
   def getAttribute(id: String): Attribute = js.native
   /**
     * returns the requested buffer
     *
-    * @param {String} id  the name of the buffer required
+    * @param {String} id - the name of the buffer required
     * @return {PIXI.Buffer} the buffer requested.
     */
   def getBuffer(id: String): Buffer = js.native

@@ -1,28 +1,28 @@
 organization := "org.scalablytyped"
 name := "express-openapi"
-version := "6.0.0-6cb87b"
+version := "6.0.0-88b708"
 scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ajv" % "6.12.2-e8ea47",
-  "org.scalablytyped" %%% "body-parser" % "1.19-dt-20200210Z-5329e6",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20200515Z-4db3c4",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20200515Z-9eb2b7",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20200515Z-c2bfc2",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20200515Z-593c89",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200521Z-3aabb7",
-  "org.scalablytyped" %%% "openapi-default-setter" % "2.1.0-d99225",
-  "org.scalablytyped" %%% "openapi-framework" % "0.26.0-e1f71a",
-  "org.scalablytyped" %%% "openapi-request-coercer" % "2.4.0-0f341d",
-  "org.scalablytyped" %%% "openapi-request-validator" % "4.2.0-7a6e91",
-  "org.scalablytyped" %%% "openapi-response-validator" % "4.0.0-d59c33",
-  "org.scalablytyped" %%% "openapi-security-handler" % "2.0.4-c443a0",
-  "org.scalablytyped" %%% "openapi-types" % "1.3.5-668cad",
-  "org.scalablytyped" %%% "qs" % "6.9-dt-20200519Z-7ad812",
-  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-cd197c",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20200519Z-9da187",
-  "org.scalablytyped" %%% "std" % "3.9-18cbeb",
+  "org.scalablytyped" %%% "ajv" % "6.12.2-620863",
+  "org.scalablytyped" %%% "body-parser" % "1.19-dt-20200210Z-8ef17f",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20200515Z-72dac4",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20200515Z-d9cc4e",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20200624Z-cd1cc0",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20200515Z-a16f63",
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200624Z-2fcd45",
+  "org.scalablytyped" %%% "openapi-default-setter" % "2.1.0-1d367d",
+  "org.scalablytyped" %%% "openapi-framework" % "0.26.0-33e757",
+  "org.scalablytyped" %%% "openapi-request-coercer" % "2.4.0-4b263e",
+  "org.scalablytyped" %%% "openapi-request-validator" % "4.2.0-d17542",
+  "org.scalablytyped" %%% "openapi-response-validator" % "4.0.0-96debc",
+  "org.scalablytyped" %%% "openapi-security-handler" % "2.0.4-c5ecf2",
+  "org.scalablytyped" %%% "openapi-types" % "1.3.5-28c53a",
+  "org.scalablytyped" %%% "qs" % "6.9-dt-20200519Z-7b3798",
+  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-c5e2e8",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20200519Z-9b0303",
+  "org.scalablytyped" %%% "std" % "3.9-c9f1f8",
   "org.scalablytyped" %%% "ts-log" % "2.1.4-50c9fe")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")

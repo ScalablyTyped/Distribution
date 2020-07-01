@@ -1,16 +1,16 @@
 package typings.googleapis.storageV1Mod.storageV1
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.googleapis.AnonBucketPolicyOnly
-import typings.googleapis.AnonDefaultKmsKeyName
-import typings.googleapis.AnonEffectiveTime
-import typings.googleapis.AnonEnabledBoolean
-import typings.googleapis.AnonEntity
-import typings.googleapis.AnonLogBucket
-import typings.googleapis.AnonMainPageSuffix
-import typings.googleapis.AnonMaxAgeSeconds
-import typings.googleapis.AnonRequesterPays
-import typings.googleapis.AnonRule
+import typings.googleapis.anon.BucketPolicyOnly
+import typings.googleapis.anon.DefaultKmsKeyName
+import typings.googleapis.anon.EffectiveTime
+import typings.googleapis.anon.EnabledBoolean
+import typings.googleapis.anon.Entity
+import typings.googleapis.anon.LogBucket
+import typings.googleapis.anon.MainPageSuffix
+import typings.googleapis.anon.MaxAgeSeconds
+import typings.googleapis.anon.RequesterPays
+import typings.googleapis.anon.Rule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +27,11 @@ trait SchemaBucket extends js.Object {
   /**
     * The bucket&#39;s billing configuration.
     */
-  var billing: js.UndefOr[AnonRequesterPays] = js.native
+  var billing: js.UndefOr[RequesterPays] = js.native
   /**
     * The bucket&#39;s Cross-Origin Resource Sharing (CORS) configuration.
     */
-  var cors: js.UndefOr[js.Array[AnonMaxAgeSeconds]] = js.native
+  var cors: js.UndefOr[js.Array[MaxAgeSeconds]] = js.native
   /**
     * The default value for event-based hold on newly created objects in this
     * bucket. Event-based hold is a way to retain objects indefinitely until an
@@ -55,7 +55,7 @@ trait SchemaBucket extends js.Object {
   /**
     * Encryption configuration for a bucket.
     */
-  var encryption: js.UndefOr[AnonDefaultKmsKeyName] = js.native
+  var encryption: js.UndefOr[DefaultKmsKeyName] = js.native
   /**
     * HTTP 1.1 Entity tag for the bucket.
     */
@@ -63,7 +63,7 @@ trait SchemaBucket extends js.Object {
   /**
     * The bucket&#39;s IAM configuration.
     */
-  var iamConfiguration: js.UndefOr[AnonBucketPolicyOnly] = js.native
+  var iamConfiguration: js.UndefOr[BucketPolicyOnly] = js.native
   /**
     * The ID of the bucket. For buckets, the id and name properties are the
     * same.
@@ -81,7 +81,7 @@ trait SchemaBucket extends js.Object {
     * The bucket&#39;s lifecycle configuration. See lifecycle management for
     * more information.
     */
-  var lifecycle: js.UndefOr[AnonRule] = js.native
+  var lifecycle: js.UndefOr[Rule] = js.native
   /**
     * The location of the bucket. Object data for objects in the bucket resides
     * in physical storage within this region. Defaults to US. See the
@@ -92,7 +92,7 @@ trait SchemaBucket extends js.Object {
     * The bucket&#39;s logging configuration, which defines the destination
     * bucket and optional name prefix for the current bucket&#39;s logs.
     */
-  var logging: js.UndefOr[AnonLogBucket] = js.native
+  var logging: js.UndefOr[LogBucket] = js.native
   /**
     * The metadata generation of this bucket.
     */
@@ -105,7 +105,7 @@ trait SchemaBucket extends js.Object {
     * The owner of the bucket. This is always the project team&#39;s owner
     * group.
     */
-  var owner: js.UndefOr[AnonEntity] = js.native
+  var owner: js.UndefOr[Entity] = js.native
   /**
     * The project number of the project the bucket belongs to.
     */
@@ -121,7 +121,7 @@ trait SchemaBucket extends js.Object {
     * Attempting to remove or decrease period of a locked retention policy will
     * result in a PERMISSION_DENIED error.
     */
-  var retentionPolicy: js.UndefOr[AnonEffectiveTime] = js.native
+  var retentionPolicy: js.UndefOr[EffectiveTime] = js.native
   /**
     * The URI of this bucket.
     */
@@ -147,49 +147,49 @@ trait SchemaBucket extends js.Object {
   /**
     * The bucket&#39;s versioning configuration.
     */
-  var versioning: js.UndefOr[AnonEnabledBoolean] = js.native
+  var versioning: js.UndefOr[EnabledBoolean] = js.native
   /**
     * The bucket&#39;s website configuration, controlling how the service
     * behaves when accessing bucket contents as a web site. See the Static
     * Website Examples for more information.
     */
-  var website: js.UndefOr[AnonMainPageSuffix] = js.native
+  var website: js.UndefOr[MainPageSuffix] = js.native
 }
 
 object SchemaBucket {
   @scala.inline
   def apply(
     acl: js.Array[SchemaBucketAccessControl] = null,
-    billing: AnonRequesterPays = null,
-    cors: js.Array[AnonMaxAgeSeconds] = null,
+    billing: RequesterPays = null,
+    cors: js.Array[MaxAgeSeconds] = null,
     defaultEventBasedHold: js.UndefOr[Boolean] = js.undefined,
     defaultObjectAcl: js.Array[SchemaObjectAccessControl] = null,
-    encryption: AnonDefaultKmsKeyName = null,
+    encryption: DefaultKmsKeyName = null,
     etag: String = null,
-    iamConfiguration: AnonBucketPolicyOnly = null,
+    iamConfiguration: BucketPolicyOnly = null,
     id: String = null,
     kind: String = null,
     labels: StringDictionary[String] = null,
-    lifecycle: AnonRule = null,
+    lifecycle: Rule = null,
     location: String = null,
-    logging: AnonLogBucket = null,
+    logging: LogBucket = null,
     metageneration: String = null,
     name: String = null,
-    owner: AnonEntity = null,
+    owner: Entity = null,
     projectNumber: String = null,
-    retentionPolicy: AnonEffectiveTime = null,
+    retentionPolicy: EffectiveTime = null,
     selfLink: String = null,
     storageClass: String = null,
     timeCreated: String = null,
     updated: String = null,
-    versioning: AnonEnabledBoolean = null,
-    website: AnonMainPageSuffix = null
+    versioning: EnabledBoolean = null,
+    website: MainPageSuffix = null
   ): SchemaBucket = {
     val __obj = js.Dynamic.literal()
     if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
     if (billing != null) __obj.updateDynamic("billing")(billing.asInstanceOf[js.Any])
     if (cors != null) __obj.updateDynamic("cors")(cors.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultEventBasedHold)) __obj.updateDynamic("defaultEventBasedHold")(defaultEventBasedHold.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultEventBasedHold)) __obj.updateDynamic("defaultEventBasedHold")(defaultEventBasedHold.get.asInstanceOf[js.Any])
     if (defaultObjectAcl != null) __obj.updateDynamic("defaultObjectAcl")(defaultObjectAcl.asInstanceOf[js.Any])
     if (encryption != null) __obj.updateDynamic("encryption")(encryption.asInstanceOf[js.Any])
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])

@@ -17,9 +17,9 @@ trait SchemaDeleteAttachmentsResponse extends js.Object {
 
 object SchemaDeleteAttachmentsResponse {
   @scala.inline
-  def apply(numDeleted: Int | Double = null): SchemaDeleteAttachmentsResponse = {
+  def apply(numDeleted: js.UndefOr[Double] = js.undefined): SchemaDeleteAttachmentsResponse = {
     val __obj = js.Dynamic.literal()
-    if (numDeleted != null) __obj.updateDynamic("numDeleted")(numDeleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(numDeleted)) __obj.updateDynamic("numDeleted")(numDeleted.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeleteAttachmentsResponse]
   }
 }

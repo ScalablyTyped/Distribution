@@ -20,7 +20,7 @@ trait HeatmapOverlayConfiguration[V /* <: String */, TLat /* <: String */, TLong
 
 object HeatmapOverlayConfiguration {
   @scala.inline
-  def apply[V, TLat, TLong](
+  def apply[/* <: java.lang.String */ V, /* <: java.lang.String */ TLat, /* <: java.lang.String */ TLong](
     backgroundColor: String = null,
     blur: js.UndefOr[Double] = js.undefined,
     gradient: StringDictionary[String] = null,

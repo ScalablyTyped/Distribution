@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateAssociationRequest extends js.Object {
   /**
+    * By default, when you update an association, the system runs it immediately after it is updated and then according to the schedule you specified. Specify this option if you don't want an association to run immediately after you update it. Also, if you specified this option when you created the association, you can reset it. To do so, specify the no-apply-only-at-cron-interval parameter when you update the association from the command line. This parameter forces the association to run immediately after updating it and according to the interval specified.
+    */
+  var ApplyOnlyAtCronInterval: js.UndefOr[typings.awsSdk.ssmMod.ApplyOnlyAtCronInterval] = js.native
+  /**
     * The ID of the association you want to update. 
     */
   var AssociationId: typings.awsSdk.ssmMod.AssociationId = js.native
@@ -68,6 +72,7 @@ object UpdateAssociationRequest {
   @scala.inline
   def apply(
     AssociationId: AssociationId,
+    ApplyOnlyAtCronInterval: js.UndefOr[ApplyOnlyAtCronInterval] = js.undefined,
     AssociationName: AssociationName = null,
     AssociationVersion: AssociationVersion = null,
     AutomationTargetParameterName: AutomationTargetParameterName = null,
@@ -83,6 +88,7 @@ object UpdateAssociationRequest {
     Targets: Targets = null
   ): UpdateAssociationRequest = {
     val __obj = js.Dynamic.literal(AssociationId = AssociationId.asInstanceOf[js.Any])
+    if (!js.isUndefined(ApplyOnlyAtCronInterval)) __obj.updateDynamic("ApplyOnlyAtCronInterval")(ApplyOnlyAtCronInterval.get.asInstanceOf[js.Any])
     if (AssociationName != null) __obj.updateDynamic("AssociationName")(AssociationName.asInstanceOf[js.Any])
     if (AssociationVersion != null) __obj.updateDynamic("AssociationVersion")(AssociationVersion.asInstanceOf[js.Any])
     if (AutomationTargetParameterName != null) __obj.updateDynamic("AutomationTargetParameterName")(AutomationTargetParameterName.asInstanceOf[js.Any])

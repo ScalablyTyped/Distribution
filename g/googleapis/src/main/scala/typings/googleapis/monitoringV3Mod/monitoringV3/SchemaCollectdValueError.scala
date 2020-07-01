@@ -22,10 +22,10 @@ trait SchemaCollectdValueError extends js.Object {
 
 object SchemaCollectdValueError {
   @scala.inline
-  def apply(error: SchemaStatus = null, index: Int | Double = null): SchemaCollectdValueError = {
+  def apply(error: SchemaStatus = null, index: js.UndefOr[Double] = js.undefined): SchemaCollectdValueError = {
     val __obj = js.Dynamic.literal()
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCollectdValueError]
   }
 }

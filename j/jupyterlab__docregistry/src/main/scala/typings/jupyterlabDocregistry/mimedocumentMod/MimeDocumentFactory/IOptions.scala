@@ -35,7 +35,7 @@ trait IOptions[T /* <: MimeDocument */] extends IWidgetFactoryOptions[T] {
 
 object IOptions {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.jupyterlabDocregistry.mimedocumentMod.MimeDocument */ T](
     fileTypes: js.Array[String],
     name: String,
     rendermime: IRenderMimeRegistry,

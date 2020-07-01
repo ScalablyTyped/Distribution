@@ -13,7 +13,7 @@ trait Rich extends js.Object {
     *
     * Or image can be used, for example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-gauge.gauge.axisLabel)
+    * [see doc](https://echarts.apache.org/en/option.html#series-gauge.gauge.detail)
     *
     * `width` or `height` can be specified when using background
     * image, or auto adapted by default.
@@ -21,7 +21,7 @@ trait Rich extends js.Object {
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.backgroundColor
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.backgroundColor
     */
   var backgroundColor: js.UndefOr[js.Object | String] = js.undefined
   /**
@@ -30,21 +30,21 @@ trait Rich extends js.Object {
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.borderColor
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.borderColor
     */
   var borderColor: js.UndefOr[String] = js.undefined
   /**
     * Border radius of the text fregment.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.borderRadius
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.borderRadius
     */
   var borderRadius: js.UndefOr[Double] = js.undefined
   /**
     * Border width of the text fregment.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.borderWidth
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.borderWidth
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   /**
@@ -52,8 +52,8 @@ trait Rich extends js.Object {
     *
     *
     * @default
-    * ""#fff""
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.color
+    * "auto"
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.color
     */
   var color: js.UndefOr[String] = js.undefined
   /**
@@ -64,7 +64,7 @@ trait Rich extends js.Object {
     *
     * @default
     * "sans-serif"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.fontFamily
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.fontFamily
     */
   var fontFamily: js.UndefOr[String] = js.undefined
   /**
@@ -72,8 +72,8 @@ trait Rich extends js.Object {
     *
     *
     * @default
-    * 12
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.fontSize
+    * 15
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.fontSize
     */
   var fontSize: js.UndefOr[Double] = js.undefined
   /**
@@ -88,7 +88,7 @@ trait Rich extends js.Object {
     *
     * @default
     * "normal"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.fontStyle
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.fontStyle
     */
   var fontStyle: js.UndefOr[String] = js.undefined
   /**
@@ -105,19 +105,9 @@ trait Rich extends js.Object {
     *
     * @default
     * "normal"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.fontWeight
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.fontWeight
     */
   var fontWeight: js.UndefOr[String] = js.undefined
-  /**
-    * The content formatter of scale label, which supports both
-    * string template and callback function. Example:
-    *
-    * [see doc](https://echarts.apache.org/en/option.html#series-gauge.gauge.axisLabel)
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.formatter
-    */
-  var formatter: js.UndefOr[js.Function | String] = js.undefined
   /**
     * Height of the text block.
     * It is the width of the text by default.
@@ -130,7 +120,7 @@ trait Rich extends js.Object {
     * Notice, `width` and `height` only work when `rich` specified.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.height
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.height
     */
   var height: js.UndefOr[Double | String] = js.undefined
   /**
@@ -139,12 +129,25 @@ trait Rich extends js.Object {
     * If `lineHeight` is not set in `rich`, `lineHeight` in parent
     * level will be used. For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-gauge.gauge.axisLabel)
+    * [see doc](https://echarts.apache.org/en/option.html#series-gauge.gauge.detail)
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.lineHeight
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.lineHeight
     */
   var lineHeight: js.UndefOr[Double] = js.undefined
+  /**
+    * The offset position relative to the center of gauge chart.
+    * The first item of array is the horizontal offset; the second
+    * item of array is the vertical offset.
+    * It could be absolute value and also the percentage relative
+    * to the radius of gauge chart.
+    *
+    *
+    * @default
+    * [0, '40%']
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.offsetCenter
+    */
+  var offsetCenter: js.UndefOr[js.Array[_]] = js.undefined
   /**
     * Padding of the text fregment, for example:
     *
@@ -157,25 +160,37 @@ trait Rich extends js.Object {
     * of the content, without `padding`.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.padding
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.padding
     */
   var padding: js.UndefOr[js.Array[_] | Double] = js.undefined
   /**
     * "Rich text styles" can be defined in this `rich` property.
     * For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-gauge.gauge.axisLabel)
+    * [see doc](https://echarts.apache.org/en/option.html#series-gauge.gauge.detail)
     *
     * For more details, see
     * [Rich Text](https://echarts.apache.org/en/option.htmltutorial.html#Rich%20Text)
     * please.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.rich
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.rich
     */
   var rich: js.UndefOr[
     /**
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.rich.%3Cuser%20defined%20style%20name%3E
+    * The text color. Defaults to use
+    * [the color of section](https://echarts.apache.org/en/option.html#series-gauge.axisLine.lineStyle.color)
+    * where the numerical value belongs to.
+    *
+    *
+    * @todo check that the option is valid and should be here
+    * @default
+    * "auto"
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.rich.color
+    */
+  // color?: string;
+  /**
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.rich.%3Cuser%20defined%20style%20name%3E
     */
   StringDictionary[Align]
   ] = js.undefined
@@ -183,7 +198,7 @@ trait Rich extends js.Object {
     * Show blur of the text block.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.shadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   /**
@@ -192,30 +207,30 @@ trait Rich extends js.Object {
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.shadowColor
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   /**
     * Shadow X offset of the text block.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.shadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Shadow Y offset of the text block.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.shadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
   /**
-    * Whether to show the label.
+    * Whether to show the details.
     *
     *
     * @default
     * "true"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.show
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.show
     */
   var show: js.UndefOr[Boolean] = js.undefined
   /**
@@ -224,21 +239,21 @@ trait Rich extends js.Object {
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.textBorderColor
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.textBorderColor
     */
   var textBorderColor: js.UndefOr[String] = js.undefined
   /**
     * Storke line width of the text.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.textBorderWidth
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.textBorderWidth
     */
   var textBorderWidth: js.UndefOr[Double] = js.undefined
   /**
     * Shadow blue of the text itself.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.textShadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.textShadowBlur
     */
   var textShadowBlur: js.UndefOr[Double] = js.undefined
   /**
@@ -247,21 +262,21 @@ trait Rich extends js.Object {
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.textShadowColor
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.textShadowColor
     */
   var textShadowColor: js.UndefOr[String] = js.undefined
   /**
     * Shadow X offset of the text itself.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.textShadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.textShadowOffsetX
     */
   var textShadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Shadow Y offset of the text itself.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.textShadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.textShadowOffsetY
     */
   var textShadowOffsetY: js.UndefOr[Double] = js.undefined
   /**
@@ -284,7 +299,7 @@ trait Rich extends js.Object {
     * Notice, `width` and `height` only work when `rich` specified.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.width
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.width
     */
   var width: js.UndefOr[Double | String] = js.undefined
 }
@@ -301,12 +316,24 @@ object Rich {
     fontSize: js.UndefOr[Double] = js.undefined,
     fontStyle: String = null,
     fontWeight: String = null,
-    formatter: js.Function | String = null,
     height: Double | String = null,
     lineHeight: js.UndefOr[Double] = js.undefined,
+    offsetCenter: js.Array[_] = null,
     padding: js.Array[_] | Double = null,
     rich: /**
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.rich.%3Cuser%20defined%20style%20name%3E
+    * The text color. Defaults to use
+    * [the color of section](https://echarts.apache.org/en/option.html#series-gauge.axisLine.lineStyle.color)
+    * where the numerical value belongs to.
+    *
+    *
+    * @todo check that the option is valid and should be here
+    * @default
+    * "auto"
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.rich.color
+    */
+  // color?: string;
+  /**
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.rich.%3Cuser%20defined%20style%20name%3E
     */
   StringDictionary[Align] = null,
     shadowBlur: js.UndefOr[Double] = js.undefined,
@@ -332,9 +359,9 @@ object Rich {
     if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
     if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(lineHeight)) __obj.updateDynamic("lineHeight")(lineHeight.get.asInstanceOf[js.Any])
+    if (offsetCenter != null) __obj.updateDynamic("offsetCenter")(offsetCenter.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (rich != null) __obj.updateDynamic("rich")(rich.asInstanceOf[js.Any])
     if (!js.isUndefined(shadowBlur)) __obj.updateDynamic("shadowBlur")(shadowBlur.get.asInstanceOf[js.Any])

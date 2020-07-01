@@ -1,7 +1,7 @@
 
 # Scala.js typings for socketio-jwt
 
-Typings are for version 0.0
+Typings are for version 0.2
 
 ## Library description:
 authenticate socket.io connections using JWTs

@@ -94,7 +94,7 @@ object SchemaMetricUpdate {
     updateTime: String = null
   ): SchemaMetricUpdate = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cumulative)) __obj.updateDynamic("cumulative")(cumulative.asInstanceOf[js.Any])
+    if (!js.isUndefined(cumulative)) __obj.updateDynamic("cumulative")(cumulative.get.asInstanceOf[js.Any])
     if (distribution != null) __obj.updateDynamic("distribution")(distribution.asInstanceOf[js.Any])
     if (gauge != null) __obj.updateDynamic("gauge")(gauge.asInstanceOf[js.Any])
     if (internal != null) __obj.updateDynamic("internal")(internal.asInstanceOf[js.Any])

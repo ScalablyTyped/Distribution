@@ -27,10 +27,10 @@ trait SchemaResourcePolicyHourlyCycle extends js.Object {
 
 object SchemaResourcePolicyHourlyCycle {
   @scala.inline
-  def apply(duration: String = null, hoursInCycle: Int | Double = null, startTime: String = null): SchemaResourcePolicyHourlyCycle = {
+  def apply(duration: String = null, hoursInCycle: js.UndefOr[Double] = js.undefined, startTime: String = null): SchemaResourcePolicyHourlyCycle = {
     val __obj = js.Dynamic.literal()
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (hoursInCycle != null) __obj.updateDynamic("hoursInCycle")(hoursInCycle.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoursInCycle)) __obj.updateDynamic("hoursInCycle")(hoursInCycle.get.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResourcePolicyHourlyCycle]
   }

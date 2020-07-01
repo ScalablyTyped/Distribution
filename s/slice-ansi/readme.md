@@ -1,7 +1,7 @@
 
 # Scala.js typings for slice-ansi
 
-Typings are for version 2.0
+Typings are for version 4.0
 
 ## Library description:
 Slice a string with ANSI escape codes

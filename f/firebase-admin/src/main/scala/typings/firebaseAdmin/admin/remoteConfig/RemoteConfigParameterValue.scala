@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * Type representing a Remote Config parameter value.
-  * A `RemoteConfigParameterValue` could be either an `ExplicitParameterValue` or 
+  * A `RemoteConfigParameterValue` could be either an `ExplicitParameterValue` or
   * an `InAppDefaultValue`.
   */
 /* Rewritten from type alias, can be one of: 

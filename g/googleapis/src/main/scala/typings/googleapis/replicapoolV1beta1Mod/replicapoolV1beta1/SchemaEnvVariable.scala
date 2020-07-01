@@ -27,7 +27,7 @@ object SchemaEnvVariable {
   @scala.inline
   def apply(hidden: js.UndefOr[Boolean] = js.undefined, name: String = null, value: String = null): SchemaEnvVariable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEnvVariable]

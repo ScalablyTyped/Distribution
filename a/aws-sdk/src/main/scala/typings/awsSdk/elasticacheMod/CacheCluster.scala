@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CacheCluster extends js.Object {
   /**
+    * The ARN (Amazon Resource Name) of the cache cluster.
+    */
+  var ARN: js.UndefOr[String] = js.native
+  /**
     * A flag that enables encryption at-rest when set to true. You cannot modify the value of AtRestEncryptionEnabled after the cluster is created. To enable at-rest encryption on a cluster you must set AtRestEncryptionEnabled to true when you create a cluster.  Required: Only available when creating a replication group in an Amazon VPC using redis version 3.2.6, 4.x or later. Default: false 
     */
   var AtRestEncryptionEnabled: js.UndefOr[BooleanOptional] = js.native
@@ -112,6 +116,7 @@ trait CacheCluster extends js.Object {
 object CacheCluster {
   @scala.inline
   def apply(
+    ARN: String = null,
     AtRestEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined,
     AuthTokenEnabled: js.UndefOr[BooleanOptional] = js.undefined,
     AuthTokenLastModifiedDate: TStamp = null,
@@ -140,6 +145,7 @@ object CacheCluster {
     TransitEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined
   ): CacheCluster = {
     val __obj = js.Dynamic.literal()
+    if (ARN != null) __obj.updateDynamic("ARN")(ARN.asInstanceOf[js.Any])
     if (!js.isUndefined(AtRestEncryptionEnabled)) __obj.updateDynamic("AtRestEncryptionEnabled")(AtRestEncryptionEnabled.get.asInstanceOf[js.Any])
     if (!js.isUndefined(AuthTokenEnabled)) __obj.updateDynamic("AuthTokenEnabled")(AuthTokenEnabled.get.asInstanceOf[js.Any])
     if (AuthTokenLastModifiedDate != null) __obj.updateDynamic("AuthTokenLastModifiedDate")(AuthTokenLastModifiedDate.asInstanceOf[js.Any])

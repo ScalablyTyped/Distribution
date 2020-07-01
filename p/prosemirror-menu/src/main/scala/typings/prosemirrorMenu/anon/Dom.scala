@@ -14,7 +14,7 @@ trait Dom[S /* <: Schema[_, _] */] extends js.Object {
 
 object Dom {
   @scala.inline
-  def apply[S](dom: Node, update: EditorState[S] => Boolean): Dom[S] = {
+  def apply[/* <: typings.prosemirrorModel.mod.Schema[_, _] */ S](dom: Node, update: EditorState[S] => Boolean): Dom[S] = {
     val __obj = js.Dynamic.literal(dom = dom.asInstanceOf[js.Any], update = js.Any.fromFunction1(update))
     __obj.asInstanceOf[Dom[S]]
   }

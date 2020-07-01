@@ -19,6 +19,7 @@ import typings.ionicCore.ionicCoreStrings.send
 import typings.ionicCore.ionicCoreStrings.tel
 import typings.ionicCore.ionicCoreStrings.text
 import typings.ionicCore.ionicCoreStrings.url
+import typings.ionicCore.mod.AutocompleteTypes
 import typings.ionicCore.mod.Color
 import typings.ionicCore.mod.TextFieldTypes
 import typings.std.CustomEvent
@@ -39,7 +40,7 @@ trait IonInput extends js.Object {
   /**
     * Indicates whether the value of the control can be automatically completed by the browser.
     */
-  var autocomplete: js.UndefOr[on | off] = js.undefined
+  var autocomplete: js.UndefOr[AutocompleteTypes] = js.undefined
   /**
     * Whether auto correction should be enabled when the user is entering/editing the text value.
     */
@@ -163,7 +164,7 @@ object IonInput {
   def apply(
     accept: String = null,
     autocapitalize: String = null,
-    autocomplete: on | off = null,
+    autocomplete: AutocompleteTypes = null,
     autocorrect: on | off = null,
     autofocus: js.UndefOr[Boolean] = js.undefined,
     clearInput: js.UndefOr[Boolean] = js.undefined,

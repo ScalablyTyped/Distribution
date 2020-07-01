@@ -14,6 +14,7 @@ object ^ extends js.Object {
   var ExceptionHandler: typings.winston.mod.ExceptionHandler = js.native
   var add: js.Function1[/* transport */ typings.winstonTransport.mod.^, Logger] = js.native
   var addColors: js.Function1[/* target */ AbstractConfigSetColors, js.Any] = js.native
+  var child: js.Function1[/* options */ js.Object, Logger] = js.native
   var clear: js.Function0[Logger] = js.native
   var configure: js.Function1[/* options */ LoggerOptions, Unit] = js.native
   var createLogger: js.Function1[/* options */ js.UndefOr[LoggerOptions], Logger] = js.native

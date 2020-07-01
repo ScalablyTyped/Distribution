@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 
 trait ParametersActionsListWorkflowRunsEndpoint extends js.Object {
   var parameters: ActionsListWorkflowRunsEndpoint
-  var response: OctokitResponse[ActionsListWorkflowRunsResponseData] with `3`
+  var response: OctokitResponse[ActionsListWorkflowRunsResponseData] with `5`
 }
 
 object ParametersActionsListWorkflowRunsEndpoint {
   @scala.inline
   def apply(
     parameters: ActionsListWorkflowRunsEndpoint,
-    response: OctokitResponse[ActionsListWorkflowRunsResponseData] with `3`
+    response: OctokitResponse[ActionsListWorkflowRunsResponseData] with `5`
   ): ParametersActionsListWorkflowRunsEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersActionsListWorkflowRunsEndpoint]

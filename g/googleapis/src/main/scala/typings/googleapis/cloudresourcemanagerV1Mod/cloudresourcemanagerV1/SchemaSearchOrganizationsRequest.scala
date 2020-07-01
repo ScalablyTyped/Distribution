@@ -35,10 +35,10 @@ trait SchemaSearchOrganizationsRequest extends js.Object {
 
 object SchemaSearchOrganizationsRequest {
   @scala.inline
-  def apply(filter: String = null, pageSize: Int | Double = null, pageToken: String = null): SchemaSearchOrganizationsRequest = {
+  def apply(filter: String = null, pageSize: js.UndefOr[Double] = js.undefined, pageToken: String = null): SchemaSearchOrganizationsRequest = {
     val __obj = js.Dynamic.literal()
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSearchOrganizationsRequest]
   }

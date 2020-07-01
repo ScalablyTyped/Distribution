@@ -16,7 +16,7 @@ trait Acl[T /* <: AnyObject */] extends js.Object {
 
 object Acl {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.iobroker.mod.global.ioBroker.AnyObject */ T](
     _id: /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any = null,
     acl: /* import warning: importer.ImportType#apply Failed type conversion: T['acl'] */ js.Any = null
   ): Acl[T] = {

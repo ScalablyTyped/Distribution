@@ -38,13 +38,16 @@ trait DataFactory[OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */] extends j
     */
   def literal(value: String): Literal = js.native
   def literal(value: String, languageOrDatatype: String): Literal = js.native
-  def literal(value: String, languageOrDatatype: NamedNode): Literal = js.native
+  def literal(value: String, languageOrDatatype: NamedNode[String]): Literal = js.native
   /**
     * @param value The IRI for the named node.
     * @return A new instance of NamedNode.
     * @see NamedNode
     */
-  def namedNode(value: String): NamedNode = js.native
+  // TODO: This could be changed into a Generic method that returns a NamedNode constained to the
+  //       given `value` - but note that that would be a breaking change. See commit
+  //       16d29e86cd6fe34e6ac6f53bba6ba1a1988d7401.
+  def namedNode(value: String): NamedNode[String] = js.native
   /**
     * @param subject   The quad subject term.
     * @param predicate The quad predicate term.

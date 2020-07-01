@@ -67,25 +67,25 @@ object SchemaGoogleCloudVisionV1p3beta1EntityAnnotation {
   @scala.inline
   def apply(
     boundingPoly: SchemaGoogleCloudVisionV1p3beta1BoundingPoly = null,
-    confidence: Int | Double = null,
+    confidence: js.UndefOr[Double] = js.undefined,
     description: String = null,
     locale: String = null,
     locations: js.Array[SchemaGoogleCloudVisionV1p3beta1LocationInfo] = null,
     mid: String = null,
     properties: js.Array[SchemaGoogleCloudVisionV1p3beta1Property] = null,
-    score: Int | Double = null,
-    topicality: Int | Double = null
+    score: js.UndefOr[Double] = js.undefined,
+    topicality: js.UndefOr[Double] = js.undefined
   ): SchemaGoogleCloudVisionV1p3beta1EntityAnnotation = {
     val __obj = js.Dynamic.literal()
     if (boundingPoly != null) __obj.updateDynamic("boundingPoly")(boundingPoly.asInstanceOf[js.Any])
-    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
     if (mid != null) __obj.updateDynamic("mid")(mid.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
-    if (topicality != null) __obj.updateDynamic("topicality")(topicality.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(topicality)) __obj.updateDynamic("topicality")(topicality.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p3beta1EntityAnnotation]
   }
 }

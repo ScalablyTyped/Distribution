@@ -1,5 +1,6 @@
 package typings.newman.mod
 
+import typings.newman.anon.Http
 import typings.newman.newmanStrings.auto
 import typings.newman.newmanStrings.failure
 import typings.newman.newmanStrings.folder
@@ -87,6 +88,10 @@ trait NewmanRunOptions extends js.Object {
   /** Available reporters: cli, json, html and junit. */
   var reporters: js.UndefOr[String | js.Array[String]] = js.undefined
   /**
+    * Custom HTTP(S) agents which will be used for making the requests. This allows for use of various proxies (e.g. socks)
+    */
+  var requestAgents: js.UndefOr[Http] = js.undefined
+  /**
     * The path to the public client certificate file.
     */
   var sslClientCert: js.UndefOr[String] = js.undefined
@@ -149,6 +154,7 @@ object NewmanRunOptions {
     iterationData: js.Any = null,
     reporter: js.Any = null,
     reporters: String | js.Array[String] = null,
+    requestAgents: Http = null,
     sslClientCert: String = null,
     sslClientKey: String = null,
     sslClientPassphrase: String = null,
@@ -172,6 +178,7 @@ object NewmanRunOptions {
     if (iterationData != null) __obj.updateDynamic("iterationData")(iterationData.asInstanceOf[js.Any])
     if (reporter != null) __obj.updateDynamic("reporter")(reporter.asInstanceOf[js.Any])
     if (reporters != null) __obj.updateDynamic("reporters")(reporters.asInstanceOf[js.Any])
+    if (requestAgents != null) __obj.updateDynamic("requestAgents")(requestAgents.asInstanceOf[js.Any])
     if (sslClientCert != null) __obj.updateDynamic("sslClientCert")(sslClientCert.asInstanceOf[js.Any])
     if (sslClientKey != null) __obj.updateDynamic("sslClientKey")(sslClientKey.asInstanceOf[js.Any])
     if (sslClientPassphrase != null) __obj.updateDynamic("sslClientPassphrase")(sslClientPassphrase.asInstanceOf[js.Any])

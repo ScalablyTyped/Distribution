@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * An instance of pc.Morph. Contains weights to assign to every pc.MorphTarget, holds morphed buffer and associated data.
+  * An instance of pc.Morph. Contains weights to assign to every pc.MorphTarget, manages selection of active morph targets.
   * @param morph - The pc.Morph to instance.
   */
 trait MorphInstance extends js.Object {
@@ -26,15 +26,9 @@ trait MorphInstance extends js.Object {
     */
   def setWeight(index: Double, weight: Double): Unit
   /**
-    * Performs morphing. Called automatically by renderer.
-    * @param mesh - Base mesh for the morph.
+    * Selects active morph targets and prepares morph for rendering. Called automatically by renderer.
     */
-  def update(mesh: Mesh): Unit
-  /**
-    * Calculates AABB for this morph instance. Called automatically by renderer.
-    * @param mesh - Base mesh for the morph.
-    */
-  def updateBounds(mesh: Mesh): Unit
+  def update(): Unit
 }
 
 object MorphInstance {
@@ -43,10 +37,9 @@ object MorphInstance {
     destroy: () => Unit,
     getWeight: Double => Double,
     setWeight: (Double, Double) => Unit,
-    update: Mesh => Unit,
-    updateBounds: Mesh => Unit
+    update: () => Unit
   ): MorphInstance = {
-    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getWeight = js.Any.fromFunction1(getWeight), setWeight = js.Any.fromFunction2(setWeight), update = js.Any.fromFunction1(update), updateBounds = js.Any.fromFunction1(updateBounds))
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getWeight = js.Any.fromFunction1(getWeight), setWeight = js.Any.fromFunction2(setWeight), update = js.Any.fromFunction0(update))
     __obj.asInstanceOf[MorphInstance]
   }
 }

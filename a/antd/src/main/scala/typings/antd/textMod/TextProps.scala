@@ -28,6 +28,7 @@ object TextProps {
     editable: Boolean | EditConfig = null,
     ellipsis: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
+    keyboard: js.UndefOr[Boolean] = js.undefined,
     mark: js.UndefOr[Boolean] = js.undefined,
     prefixCls: String = null,
     strong: js.UndefOr[Boolean] = js.undefined,
@@ -47,6 +48,7 @@ object TextProps {
     if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
     if (!js.isUndefined(ellipsis)) __obj.updateDynamic("ellipsis")(ellipsis.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.get.asInstanceOf[js.Any])
     if (!js.isUndefined(mark)) __obj.updateDynamic("mark")(mark.get.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (!js.isUndefined(strong)) __obj.updateDynamic("strong")(strong.get.asInstanceOf[js.Any])

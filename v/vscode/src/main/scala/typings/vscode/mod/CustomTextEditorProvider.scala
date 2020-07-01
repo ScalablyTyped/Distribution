@@ -12,12 +12,15 @@ trait CustomTextEditorProvider extends js.Object {
     * This is called when a user first opens a resource for a `CustomTextEditorProvider`, or if they reopen an
     * existing editor using this `CustomTextEditorProvider`.
     *
-    * To resolve a custom editor, the provider must fill in its initial html content and hook up all
-    * the event listeners it is interested it. The provider can also hold onto the `WebviewPanel` to use later,
-    * for example in a command. See [`WebviewPanel`](#WebviewPanel) for additional details.
     *
     * @param document Document for the resource to resolve.
-    * @param webviewPanel Webview to resolve.
+    *
+    * @param webviewPanel The webview panel used to display the editor UI for this resource.
+    *
+    * During resolve, the provider must fill in the initial html for the content webview panel and hook up all
+    * the event listeners on it that it is interested in. The provider can also hold onto the `WebviewPanel` to
+    * use later for example in a command. See [`WebviewPanel`](#WebviewPanel) for additional details.
+    *
     * @param token A cancellation token that indicates the result is no longer needed.
     *
     * @return Thenable indicating that the custom editor has been resolved.

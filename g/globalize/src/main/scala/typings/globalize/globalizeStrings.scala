@@ -1,5 +1,6 @@
 package typings.globalize
 
+import typings.globalize.globalizeMod.DateFormatPartTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +19,22 @@ object globalizeStrings {
   sealed trait code extends js.Object
   
   @js.native
+  sealed trait day
+    extends DateFormatPartTypes
+       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
+  
+  @js.native
+  sealed trait dayperiod
+    extends DateFormatPartTypes
+       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
+  
+  @js.native
   sealed trait decimal extends js.Object
+  
+  @js.native
+  sealed trait era
+    extends DateFormatPartTypes
+       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
   
   @js.native
   sealed trait floor extends js.Object
@@ -27,10 +43,30 @@ object globalizeStrings {
   sealed trait full extends js.Object
   
   @js.native
+  sealed trait hour
+    extends DateFormatPartTypes
+       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
+  
+  @js.native
+  sealed trait literal
+    extends DateFormatPartTypes
+       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
+  
+  @js.native
   sealed trait long extends js.Object
   
   @js.native
   sealed trait medium extends js.Object
+  
+  @js.native
+  sealed trait minute
+    extends DateFormatPartTypes
+       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
+  
+  @js.native
+  sealed trait month
+    extends DateFormatPartTypes
+       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
   
   @js.native
   sealed trait name extends js.Object
@@ -48,6 +84,11 @@ object globalizeStrings {
   sealed trait round extends js.Object
   
   @js.native
+  sealed trait second
+    extends DateFormatPartTypes
+       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
+  
+  @js.native
   sealed trait short extends js.Object
   
   @js.native
@@ -55,6 +96,21 @@ object globalizeStrings {
   
   @js.native
   sealed trait truncate extends js.Object
+  
+  @js.native
+  sealed trait weekday
+    extends DateFormatPartTypes
+       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
+  
+  @js.native
+  sealed trait year
+    extends DateFormatPartTypes
+       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
+  
+  @js.native
+  sealed trait zone
+    extends DateFormatPartTypes
+       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
   
   @scala.inline
   def accounting: accounting = "accounting".asInstanceOf[accounting]
@@ -65,15 +121,29 @@ object globalizeStrings {
   @scala.inline
   def code: code = "code".asInstanceOf[code]
   @scala.inline
+  def day: day = "day".asInstanceOf[day]
+  @scala.inline
+  def dayperiod: dayperiod = "dayperiod".asInstanceOf[dayperiod]
+  @scala.inline
   def decimal: decimal = "decimal".asInstanceOf[decimal]
+  @scala.inline
+  def era: era = "era".asInstanceOf[era]
   @scala.inline
   def floor: floor = "floor".asInstanceOf[floor]
   @scala.inline
   def full: full = "full".asInstanceOf[full]
   @scala.inline
+  def hour: hour = "hour".asInstanceOf[hour]
+  @scala.inline
+  def literal: literal = "literal".asInstanceOf[literal]
+  @scala.inline
   def long: long = "long".asInstanceOf[long]
   @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
+  @scala.inline
+  def minute: minute = "minute".asInstanceOf[minute]
+  @scala.inline
+  def month: month = "month".asInstanceOf[month]
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   @scala.inline
@@ -85,10 +155,18 @@ object globalizeStrings {
   @scala.inline
   def round: round = "round".asInstanceOf[round]
   @scala.inline
+  def second: second = "second".asInstanceOf[second]
+  @scala.inline
   def short: short = "short".asInstanceOf[short]
   @scala.inline
   def symbol: symbol = "symbol".asInstanceOf[symbol]
   @scala.inline
   def truncate: truncate = "truncate".asInstanceOf[truncate]
+  @scala.inline
+  def weekday: weekday = "weekday".asInstanceOf[weekday]
+  @scala.inline
+  def year: year = "year".asInstanceOf[year]
+  @scala.inline
+  def zone: zone = "zone".asInstanceOf[zone]
 }
 

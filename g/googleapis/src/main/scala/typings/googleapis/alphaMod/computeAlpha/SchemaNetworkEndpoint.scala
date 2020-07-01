@@ -50,14 +50,14 @@ object SchemaNetworkEndpoint {
     fqdn: String = null,
     instance: String = null,
     ipAddress: String = null,
-    port: Int | Double = null
+    port: js.UndefOr[Double] = js.undefined
   ): SchemaNetworkEndpoint = {
     val __obj = js.Dynamic.literal()
     if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
     if (fqdn != null) __obj.updateDynamic("fqdn")(fqdn.asInstanceOf[js.Any])
     if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
     if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNetworkEndpoint]
   }
 }

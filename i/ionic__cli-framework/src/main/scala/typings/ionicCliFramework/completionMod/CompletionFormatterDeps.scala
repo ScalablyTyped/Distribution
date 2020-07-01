@@ -15,7 +15,7 @@ trait CompletionFormatterDeps[C /* <: ICommand[C, N, M, I, O] */, N /* <: INames
 
 object CompletionFormatterDeps {
   @scala.inline
-  def apply[C, N, M, I, O](namespace: N): CompletionFormatterDeps[C, N, M, I, O] = {
+  def apply[/* <: typings.ionicCliFramework.definitionsMod.ICommand[C, N, M, I, O] */ C, /* <: typings.ionicCliFramework.definitionsMod.INamespace[C, N, M, I, O] */ N, /* <: typings.ionicCliFramework.definitionsMod.CommandMetadata[I, O] */ M, /* <: typings.ionicCliFramework.definitionsMod.CommandMetadataInput */ I, /* <: typings.ionicCliFramework.definitionsMod.CommandMetadataOption */ O](namespace: N): CompletionFormatterDeps[C, N, M, I, O] = {
     val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletionFormatterDeps[C, N, M, I, O]]
   }

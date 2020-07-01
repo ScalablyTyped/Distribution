@@ -17,9 +17,10 @@ class Upload protected () extends js.Object {
   var file: File | Blob | PickReadableStreamDefault = js.native
   var options: UploadOptions = js.native
   var url: String | Null = js.native
-  def abort(): Unit = js.native
-  def abort(shouldTerminate: Boolean): Unit = js.native
-  def abort(shouldTerminate: Boolean, callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
+  def abort(): js.Promise[Unit] = js.native
+  def abort(shouldTerminate: Boolean): js.Promise[Unit] = js.native
+  def findPreviousUploads(): js.Promise[js.Array[PreviousUpload]] = js.native
+  def resumeFromPreviousUpload(previousUpload: PreviousUpload): Unit = js.native
   def start(): Unit = js.native
 }
 

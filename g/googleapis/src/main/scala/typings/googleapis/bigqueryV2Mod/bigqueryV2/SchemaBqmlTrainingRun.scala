@@ -1,6 +1,6 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
-import typings.googleapis.AnonEarlyStop
+import typings.googleapis.anon.EarlyStop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,7 +31,7 @@ trait SchemaBqmlTrainingRun extends js.Object {
     * explicitly specified in the input query will be copied from the previous
     * training run.
     */
-  var trainingOptions: js.UndefOr[AnonEarlyStop] = js.native
+  var trainingOptions: js.UndefOr[EarlyStop] = js.native
 }
 
 object SchemaBqmlTrainingRun {
@@ -40,7 +40,7 @@ object SchemaBqmlTrainingRun {
     iterationResults: js.Array[SchemaBqmlIterationResult] = null,
     startTime: String = null,
     state: String = null,
-    trainingOptions: AnonEarlyStop = null
+    trainingOptions: EarlyStop = null
   ): SchemaBqmlTrainingRun = {
     val __obj = js.Dynamic.literal()
     if (iterationResults != null) __obj.updateDynamic("iterationResults")(iterationResults.asInstanceOf[js.Any])

@@ -12,7 +12,7 @@ trait Rules[S /* <: Schema[_, _] */] extends js.Object {
 
 object Rules {
   @scala.inline
-  def apply[S](rules: js.Array[InputRule[S]]): Rules[S] = {
+  def apply[/* <: typings.prosemirrorModel.mod.Schema[_, _] */ S](rules: js.Array[InputRule[S]]): Rules[S] = {
     val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rules[S]]
   }

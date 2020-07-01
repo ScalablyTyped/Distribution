@@ -181,7 +181,7 @@ object SchemaInstanceGroupManager {
     statefulPolicy: SchemaStatefulPolicy = null,
     status: SchemaInstanceGroupManagerStatus = null,
     targetPools: js.Array[String] = null,
-    targetSize: Int | Double = null,
+    targetSize: js.UndefOr[Double] = js.undefined,
     updatePolicy: SchemaInstanceGroupManagerUpdatePolicy = null,
     versions: js.Array[SchemaInstanceGroupManagerVersion] = null,
     zone: String = null
@@ -209,7 +209,7 @@ object SchemaInstanceGroupManager {
     if (statefulPolicy != null) __obj.updateDynamic("statefulPolicy")(statefulPolicy.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (targetPools != null) __obj.updateDynamic("targetPools")(targetPools.asInstanceOf[js.Any])
-    if (targetSize != null) __obj.updateDynamic("targetSize")(targetSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetSize)) __obj.updateDynamic("targetSize")(targetSize.get.asInstanceOf[js.Any])
     if (updatePolicy != null) __obj.updateDynamic("updatePolicy")(updatePolicy.asInstanceOf[js.Any])
     if (versions != null) __obj.updateDynamic("versions")(versions.asInstanceOf[js.Any])
     if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])

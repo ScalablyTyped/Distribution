@@ -22,6 +22,7 @@ trait RadioGroupProps extends AbstractCheckboxGroupProps {
   var onChange: js.UndefOr[js.Function1[/* e */ RadioChangeEvent, Unit]] = js.undefined
   var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+  var optionType: js.UndefOr[RadioGroupOptionType] = js.undefined
   var size: js.UndefOr[SizeType] = js.undefined
   var value: js.UndefOr[js.Any] = js.undefined
 }
@@ -39,6 +40,7 @@ object RadioGroupProps {
     onChange: /* e */ RadioChangeEvent => Unit = null,
     onMouseEnter: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     onMouseLeave: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
+    optionType: RadioGroupOptionType = null,
     options: js.Array[CheckboxOptionType | String] = null,
     prefixCls: String = null,
     size: SizeType = null,
@@ -56,6 +58,7 @@ object RadioGroupProps {
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
+    if (optionType != null) __obj.updateDynamic("optionType")(optionType.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

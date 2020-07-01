@@ -20,7 +20,7 @@ trait ResolveInputHooksOptions[Record /* <: js.Object */] extends js.Object {
 
 object ResolveInputHooksOptions {
   @scala.inline
-  def apply[Record](
+  def apply[/* <: js.Object */ Record](
     addFieldValidationError: String => js.Any,
     context: js.Any,
     existingItem: Record,

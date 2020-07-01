@@ -3,6 +3,7 @@ package typings.antd.tableInterfaceMod
 import typings.antd.anon.Compare
 import typings.antd.responsiveObserveMod.Breakpoint
 import typings.rcTable.interfaceMod.AlignType
+import typings.rcTable.interfaceMod.CellEllipsisType
 import typings.rcTable.interfaceMod.DataIndex
 import typings.rcTable.interfaceMod.FixedType
 import typings.rcTable.interfaceMod.RenderedCell
@@ -46,7 +47,7 @@ object ColumnType {
     dataIndex: DataIndex = null,
     defaultFilteredValue: js.UndefOr[Null | js.Array[Key]] = js.undefined,
     defaultSortOrder: js.UndefOr[Null | SortOrder] = js.undefined,
-    ellipsis: js.UndefOr[Boolean] = js.undefined,
+    ellipsis: CellEllipsisType = null,
     filterDropdown: ReactNode | (js.Function1[/* props */ FilterDropdownProps, ReactNode]) = null,
     filterDropdownVisible: js.UndefOr[Boolean] = js.undefined,
     filterIcon: ReactNode | (js.Function1[/* filtered */ Boolean, ReactNode]) = null,
@@ -64,6 +65,7 @@ object ColumnType {
     render: (/* value */ js.Any, RecordType, /* index */ Double) => ReactNode | RenderedCell[RecordType] = null,
     responsive: js.Array[Breakpoint] = null,
     rowSpan: js.UndefOr[Double] = js.undefined,
+    shouldCellUpdate: (RecordType, RecordType) => Boolean = null,
     showSorterTooltip: js.UndefOr[Boolean] = js.undefined,
     sortDirections: js.Array[SortOrder] = null,
     sortOrder: js.UndefOr[Null | SortOrder] = js.undefined,
@@ -78,7 +80,7 @@ object ColumnType {
     if (dataIndex != null) __obj.updateDynamic("dataIndex")(dataIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultFilteredValue)) __obj.updateDynamic("defaultFilteredValue")(defaultFilteredValue.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultSortOrder)) __obj.updateDynamic("defaultSortOrder")(defaultSortOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(ellipsis)) __obj.updateDynamic("ellipsis")(ellipsis.get.asInstanceOf[js.Any])
+    if (ellipsis != null) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
     if (filterDropdown != null) __obj.updateDynamic("filterDropdown")(filterDropdown.asInstanceOf[js.Any])
     if (!js.isUndefined(filterDropdownVisible)) __obj.updateDynamic("filterDropdownVisible")(filterDropdownVisible.get.asInstanceOf[js.Any])
     if (filterIcon != null) __obj.updateDynamic("filterIcon")(filterIcon.asInstanceOf[js.Any])
@@ -96,6 +98,7 @@ object ColumnType {
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction3(render))
     if (responsive != null) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
     if (!js.isUndefined(rowSpan)) __obj.updateDynamic("rowSpan")(rowSpan.get.asInstanceOf[js.Any])
+    if (shouldCellUpdate != null) __obj.updateDynamic("shouldCellUpdate")(js.Any.fromFunction2(shouldCellUpdate))
     if (!js.isUndefined(showSorterTooltip)) __obj.updateDynamic("showSorterTooltip")(showSorterTooltip.get.asInstanceOf[js.Any])
     if (sortDirections != null) __obj.updateDynamic("sortDirections")(sortDirections.asInstanceOf[js.Any])
     if (!js.isUndefined(sortOrder)) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])

@@ -1,13 +1,10 @@
 package typings.screeps.global
 
 import org.scalablytyped.runtime.TopLevel
-import typings.screeps.AnyCreep
 import typings.screeps.Id
 import typings.screeps.RoomObjectEffect
 import typings.screeps.ScreepsReturnCode
-import typings.screeps.StructureConstant
 import typings.screeps.StructureTowerConstructor
-import typings.screeps.anon.StoreRESOURCEENERGYfalse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,18 +19,6 @@ class StructureTower protected ()
     */
   /* CompleteClass */
   override var effects: js.Array[RoomObjectEffect] = js.native
-  /**
-    * The amount of energy containing in this structure.
-    * @deprecated An alias for .store[RESOURCE_ENERGY].
-    */
-  /* CompleteClass */
-  override var energy: Double = js.native
-  /**
-    * The total amount of energy this structure can contain.
-    * @deprecated An alias for .store.getCapacity(RESOURCE_ENERGY).
-    */
-  /* CompleteClass */
-  override var energyCapacity: Double = js.native
   /**
     * The current amount of hit points of the structure.
     */
@@ -67,32 +52,15 @@ class StructureTower protected ()
   @JSName("room")
   override var room_Structure: typings.screeps.Room = js.native
   /**
-    * A Store object that contains cargo of this structure.
-    */
-  /* CompleteClass */
-  override var store: StoreRESOURCEENERGYfalse = js.native
-  /**
     * One of the STRUCTURE_* constants.
     */
   /* CompleteClass */
   override var structureType: typings.screeps.STRUCTURE_TOWER = js.native
   /**
-    * Remotely attack any creep in the room. Consumes 10 energy units per tick. Attack power depends on the distance to the target: from 600 hits at range 10 to 300 hits at range 40.
-    * @param target The target creep.
-    */
-  /* CompleteClass */
-  override def attack(target: AnyCreep): ScreepsReturnCode = js.native
-  /**
     * Destroy this structure immediately.
     */
   /* CompleteClass */
   override def destroy(): ScreepsReturnCode = js.native
-  /**
-    * Remotely heal any creep in the room. Consumes 10 energy units per tick. Heal power depends on the distance to the target: from 400 hits at range 10 to 200 hits at range 40.
-    * @param target The target creep.
-    */
-  /* CompleteClass */
-  override def heal(target: AnyCreep): ScreepsReturnCode = js.native
   /**
     * Check whether this structure can be used. If the room controller level is not enough, then this method will return false, and the structure will be highlighted with red in the game.
     */
@@ -104,12 +72,6 @@ class StructureTower protected ()
     */
   /* CompleteClass */
   override def notifyWhenAttacked(enabled: Boolean): ScreepsReturnCode = js.native
-  /**
-    * Remotely repair any structure in the room. Consumes 10 energy units per tick. Repair power depends on the distance to the target: from 600 hits at range 10 to 300 hits at range 40.
-    * @param target The target structure.
-    */
-  /* CompleteClass */
-  override def repair(target: typings.screeps.Structure[StructureConstant]): ScreepsReturnCode = js.native
 }
 
 @JSGlobal("StructureTower")

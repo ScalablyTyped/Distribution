@@ -11,6 +11,8 @@ trait AddOrUpdateRestrictionsForRepo extends js.Object {
   var getRestrictionsForRepo: `696`
   var removeRestrictionsForOrg: `697`
   var removeRestrictionsForRepo: `698`
+  var setRestrictionsForOrg: `693`
+  var setRestrictionsForRepo: `694`
 }
 
 object AddOrUpdateRestrictionsForRepo {
@@ -21,9 +23,11 @@ object AddOrUpdateRestrictionsForRepo {
     getRestrictionsForOrg: `695`,
     getRestrictionsForRepo: `696`,
     removeRestrictionsForOrg: `697`,
-    removeRestrictionsForRepo: `698`
+    removeRestrictionsForRepo: `698`,
+    setRestrictionsForOrg: `693`,
+    setRestrictionsForRepo: `694`
   ): AddOrUpdateRestrictionsForRepo = {
-    val __obj = js.Dynamic.literal(addOrUpdateRestrictionsForOrg = addOrUpdateRestrictionsForOrg.asInstanceOf[js.Any], addOrUpdateRestrictionsForRepo = addOrUpdateRestrictionsForRepo.asInstanceOf[js.Any], getRestrictionsForOrg = getRestrictionsForOrg.asInstanceOf[js.Any], getRestrictionsForRepo = getRestrictionsForRepo.asInstanceOf[js.Any], removeRestrictionsForOrg = removeRestrictionsForOrg.asInstanceOf[js.Any], removeRestrictionsForRepo = removeRestrictionsForRepo.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addOrUpdateRestrictionsForOrg = addOrUpdateRestrictionsForOrg.asInstanceOf[js.Any], addOrUpdateRestrictionsForRepo = addOrUpdateRestrictionsForRepo.asInstanceOf[js.Any], getRestrictionsForOrg = getRestrictionsForOrg.asInstanceOf[js.Any], getRestrictionsForRepo = getRestrictionsForRepo.asInstanceOf[js.Any], removeRestrictionsForOrg = removeRestrictionsForOrg.asInstanceOf[js.Any], removeRestrictionsForRepo = removeRestrictionsForRepo.asInstanceOf[js.Any], setRestrictionsForOrg = setRestrictionsForOrg.asInstanceOf[js.Any], setRestrictionsForRepo = setRestrictionsForRepo.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddOrUpdateRestrictionsForRepo]
   }
 }

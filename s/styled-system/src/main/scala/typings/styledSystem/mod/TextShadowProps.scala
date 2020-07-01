@@ -18,7 +18,7 @@ trait TextShadowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.
 
 object TextShadowProps {
   @scala.inline
-  def apply[ThemeType](
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](
     textShadow: js.UndefOr[Null | (ResponsiveValue[TextShadowProperty | Double, ThemeType])] = js.undefined
   ): TextShadowProps[ThemeType] = {
     val __obj = js.Dynamic.literal()

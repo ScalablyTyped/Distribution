@@ -17,9 +17,9 @@ trait SchemaClearBasicFilterRequest extends js.Object {
 
 object SchemaClearBasicFilterRequest {
   @scala.inline
-  def apply(sheetId: Int | Double = null): SchemaClearBasicFilterRequest = {
+  def apply(sheetId: js.UndefOr[Double] = js.undefined): SchemaClearBasicFilterRequest = {
     val __obj = js.Dynamic.literal()
-    if (sheetId != null) __obj.updateDynamic("sheetId")(sheetId.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetId)) __obj.updateDynamic("sheetId")(sheetId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaClearBasicFilterRequest]
   }
 }

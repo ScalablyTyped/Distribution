@@ -70,10 +70,10 @@ object SchemaDistribution {
     explicitBuckets: SchemaExplicitBuckets = null,
     exponentialBuckets: SchemaExponentialBuckets = null,
     linearBuckets: SchemaLinearBuckets = null,
-    maximum: Int | Double = null,
-    mean: Int | Double = null,
-    minimum: Int | Double = null,
-    sumOfSquaredDeviation: Int | Double = null
+    maximum: js.UndefOr[Double] = js.undefined,
+    mean: js.UndefOr[Double] = js.undefined,
+    minimum: js.UndefOr[Double] = js.undefined,
+    sumOfSquaredDeviation: js.UndefOr[Double] = js.undefined
   ): SchemaDistribution = {
     val __obj = js.Dynamic.literal()
     if (bucketCounts != null) __obj.updateDynamic("bucketCounts")(bucketCounts.asInstanceOf[js.Any])
@@ -81,10 +81,10 @@ object SchemaDistribution {
     if (explicitBuckets != null) __obj.updateDynamic("explicitBuckets")(explicitBuckets.asInstanceOf[js.Any])
     if (exponentialBuckets != null) __obj.updateDynamic("exponentialBuckets")(exponentialBuckets.asInstanceOf[js.Any])
     if (linearBuckets != null) __obj.updateDynamic("linearBuckets")(linearBuckets.asInstanceOf[js.Any])
-    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
-    if (mean != null) __obj.updateDynamic("mean")(mean.asInstanceOf[js.Any])
-    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
-    if (sumOfSquaredDeviation != null) __obj.updateDynamic("sumOfSquaredDeviation")(sumOfSquaredDeviation.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximum)) __obj.updateDynamic("maximum")(maximum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mean)) __obj.updateDynamic("mean")(mean.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimum)) __obj.updateDynamic("minimum")(minimum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sumOfSquaredDeviation)) __obj.updateDynamic("sumOfSquaredDeviation")(sumOfSquaredDeviation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDistribution]
   }
 }

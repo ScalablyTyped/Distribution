@@ -25,6 +25,12 @@ trait Document
   /** Override whether mongoose thinks this doc is deleted or not */
   @JSName("$isDeleted")
   def $isDeleted(isDeleted: Boolean): Unit = js.native
+  /**
+    * Deletes the document from the db.
+    * @param fn optional callback
+    */
+  def deleteOne(): js.Promise[this.type] = js.native
+  def deleteOne(fn: js.Function2[/* err */ js.Any, /* product */ this.type, Unit]): js.Promise[this.type] = js.native
   /** Signal that we desire an increment of this documents version. */
   def increment(): this.type = js.native
   /**

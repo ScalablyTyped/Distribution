@@ -12,7 +12,7 @@ trait TargetTransitionConfig[TContext, TEvent /* <: EventObject */] extends Tran
 
 object TargetTransitionConfig {
   @scala.inline
-  def apply[TContext, TEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     target: TransitionTarget[TContext, TEvent],
     actions: Actions[TContext, TEvent] = null,
     cond: Condition[TContext, TEvent] = null,

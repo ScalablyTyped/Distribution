@@ -130,6 +130,7 @@ trait GraphNode extends EventHandler {
     * @returns A list of all graph nodes that match the query.
     */
   def findByTag(query: String): js.Array[GraphNode] = js.native
+  def findByTag(query: js.Array[String]): js.Array[GraphNode] = js.native
   def findOne(attr: String): GraphNode = js.native
   def findOne(attr: String, value: js.Any): GraphNode = js.native
   /**
@@ -285,18 +286,17 @@ trait GraphNode extends EventHandler {
     * @returns If node is descendant of another node.
     */
   def isDescendantOf(node: GraphNode): Boolean = js.native
+  def lookAt(x: Double): Unit = js.native
+  def lookAt(x: Double, y: Double): Unit = js.native
   def lookAt(x: Double, y: Double, z: Double): Unit = js.native
   def lookAt(x: Double, y: Double, z: Double, ux: Double): Unit = js.native
   def lookAt(x: Double, y: Double, z: Double, ux: Double, uy: Double): Unit = js.native
   def lookAt(x: Double, y: Double, z: Double, ux: Double, uy: Double, uz: Double): Unit = js.native
+  def lookAt(x: Double, y: Vec3): Unit = js.native
   def lookAt(x: Double, y: Vec3, z: Double): Unit = js.native
   def lookAt(x: Double, y: Vec3, z: Double, ux: Double): Unit = js.native
   def lookAt(x: Double, y: Vec3, z: Double, ux: Double, uy: Double): Unit = js.native
   def lookAt(x: Double, y: Vec3, z: Double, ux: Double, uy: Double, uz: Double): Unit = js.native
-  def lookAt(x: Vec3, y: Double, z: Double): Unit = js.native
-  def lookAt(x: Vec3, y: Double, z: Double, ux: Double): Unit = js.native
-  def lookAt(x: Vec3, y: Double, z: Double, ux: Double, uy: Double): Unit = js.native
-  def lookAt(x: Vec3, y: Double, z: Double, ux: Double, uy: Double, uz: Double): Unit = js.native
   /**
     * Reorients the graph node so that the negative z-axis points towards the target.
     This function has two valid signatures. Either pass 3D vectors for the look at coordinate and up
@@ -317,13 +317,20 @@ trait GraphNode extends EventHandler {
     this.entity.lookAt(10, 10, 10, 0, -1, 0);
     * @param x - If passing a 3D vector, this is the world-space coordinate to look at.
     Otherwise, it is the x-component of the world-space coordinate to look at.
-    * @param y - If passing a 3D vector, this is the world-space up vector for look at
+    * @param [y] - If passing a 3D vector, this is the world-space up vector for look at
     transform. Otherwise, it is the y-component of the world-space coordinate to look at.
-    * @param z - Z-component of the world-space coordinate to look at.
+    * @param [z] - Z-component of the world-space coordinate to look at.
     * @param [ux = 0] - X-component of the up vector for the look at transform.
     * @param [uy = 1] - Y-component of the up vector for the look at transform.
     * @param [uz = 0] - Z-component of the up vector for the look at transform.
     */
+  def lookAt(x: Vec3): Unit = js.native
+  def lookAt(x: Vec3, y: Double): Unit = js.native
+  def lookAt(x: Vec3, y: Double, z: Double): Unit = js.native
+  def lookAt(x: Vec3, y: Double, z: Double, ux: Double): Unit = js.native
+  def lookAt(x: Vec3, y: Double, z: Double, ux: Double, uy: Double): Unit = js.native
+  def lookAt(x: Vec3, y: Double, z: Double, ux: Double, uy: Double, uz: Double): Unit = js.native
+  def lookAt(x: Vec3, y: Vec3): Unit = js.native
   def lookAt(x: Vec3, y: Vec3, z: Double): Unit = js.native
   def lookAt(x: Vec3, y: Vec3, z: Double, ux: Double): Unit = js.native
   def lookAt(x: Vec3, y: Vec3, z: Double, ux: Double, uy: Double): Unit = js.native

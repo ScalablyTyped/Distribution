@@ -22,9 +22,9 @@ trait SchemaBucketizedCount extends js.Object {
 
 object SchemaBucketizedCount {
   @scala.inline
-  def apply(count: Int | Double = null, range: SchemaBucketRange = null): SchemaBucketizedCount = {
+  def apply(count: js.UndefOr[Double] = js.undefined, range: SchemaBucketRange = null): SchemaBucketizedCount = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBucketizedCount]
   }

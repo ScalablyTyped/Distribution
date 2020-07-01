@@ -19,7 +19,7 @@ trait TableToolkitProps[T /* <: js.Object */] extends js.Object {
 
 object TableToolkitProps {
   @scala.inline
-  def apply[T](
+  def apply[/* <: js.Object */ T](
     children: ToolkitContextType => Element,
     columns: js.Array[ColumnDescription[T, _]],
     data: js.Array[T],

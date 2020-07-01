@@ -13,12 +13,12 @@ trait Monitor extends js.Object {
   /**
     * ARN of an IAM role for AppConfig to monitor AlarmArn.
     */
-  var AlarmRoleArn: js.UndefOr[Arn] = js.native
+  var AlarmRoleArn: js.UndefOr[RoleArn] = js.native
 }
 
 object Monitor {
   @scala.inline
-  def apply(AlarmArn: Arn = null, AlarmRoleArn: Arn = null): Monitor = {
+  def apply(AlarmArn: Arn = null, AlarmRoleArn: RoleArn = null): Monitor = {
     val __obj = js.Dynamic.literal()
     if (AlarmArn != null) __obj.updateDynamic("AlarmArn")(AlarmArn.asInstanceOf[js.Any])
     if (AlarmRoleArn != null) __obj.updateDynamic("AlarmRoleArn")(AlarmRoleArn.asInstanceOf[js.Any])

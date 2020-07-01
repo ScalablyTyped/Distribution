@@ -15,7 +15,7 @@ trait UseSortByColumnOptions[D /* <: js.Object */] extends js.Object {
 
 object UseSortByColumnOptions {
   @scala.inline
-  def apply[D](
+  def apply[/* <: js.Object */ D](
     defaultCanSort: js.UndefOr[Boolean] = js.undefined,
     disableSortBy: js.UndefOr[Boolean] = js.undefined,
     sortDescFirst: js.UndefOr[Boolean] = js.undefined,

@@ -1,8 +1,8 @@
 package typings.firebaseFirestore
 
-import typings.firebaseFirestore.connectivityMonitorMod.NetworkStatus
 import typings.firebaseFirestore.mutationMod.MutationType
 import typings.firebaseFirestore.objectValueMod.TypeOrder
+import typings.firebaseFirestore.remoteConnectivityMonitorMod.NetworkStatus
 import typings.firebaseFirestore.targetDataMod.TargetPurpose
 import typings.firebaseFirestore.typesMod.OnlineStateSource
 import typings.firebaseFirestore.userDataReaderMod.UserDataSource

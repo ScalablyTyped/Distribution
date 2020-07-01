@@ -25,11 +25,15 @@ trait SchemaGridCoordinate extends js.Object {
 
 object SchemaGridCoordinate {
   @scala.inline
-  def apply(columnIndex: Int | Double = null, rowIndex: Int | Double = null, sheetId: Int | Double = null): SchemaGridCoordinate = {
+  def apply(
+    columnIndex: js.UndefOr[Double] = js.undefined,
+    rowIndex: js.UndefOr[Double] = js.undefined,
+    sheetId: js.UndefOr[Double] = js.undefined
+  ): SchemaGridCoordinate = {
     val __obj = js.Dynamic.literal()
-    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
-    if (sheetId != null) __obj.updateDynamic("sheetId")(sheetId.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnIndex)) __obj.updateDynamic("columnIndex")(columnIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetId)) __obj.updateDynamic("sheetId")(sheetId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGridCoordinate]
   }
 }

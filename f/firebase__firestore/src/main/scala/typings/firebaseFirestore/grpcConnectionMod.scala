@@ -1,13 +1,13 @@
 package typings.firebaseFirestore
 
-import typings.firebaseFirestore.connectionMod.Connection
 import typings.firebaseFirestore.databaseInfoMod.DatabaseInfo
+import typings.firebaseFirestore.remoteConnectionMod.Connection
 import typings.grpcGrpcJs.makeClientMod.GrpcObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/platform_node/grpc_connection", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/platform/node/grpc_connection", JSImport.Namespace)
 @js.native
 object grpcConnectionMod extends js.Object {
   @js.native

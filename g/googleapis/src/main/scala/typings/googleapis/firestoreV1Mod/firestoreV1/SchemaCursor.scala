@@ -26,7 +26,7 @@ object SchemaCursor {
   @scala.inline
   def apply(before: js.UndefOr[Boolean] = js.undefined, values: js.Array[SchemaValue] = null): SchemaCursor = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(before)) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
+    if (!js.isUndefined(before)) __obj.updateDynamic("before")(before.get.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCursor]
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl", "LengthError")
 @js.native
 class LengthError protected ()
-  extends typings.tstl.exceptionMod.LengthError {
+  extends typings.tstl.tstlModuleMod.LengthError {
   /**
     * Initializer Constructor.
     *

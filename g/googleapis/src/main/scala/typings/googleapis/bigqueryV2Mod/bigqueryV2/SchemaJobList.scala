@@ -1,6 +1,6 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
-import typings.googleapis.AnonConfiguration
+import typings.googleapis.anon.Configuration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait SchemaJobList extends js.Object {
   /**
     * List of jobs that were requested.
     */
-  var jobs: js.UndefOr[js.Array[AnonConfiguration]] = js.native
+  var jobs: js.UndefOr[js.Array[Configuration]] = js.native
   /**
     * The resource type of the response.
     */
@@ -29,7 +29,7 @@ object SchemaJobList {
   @scala.inline
   def apply(
     etag: String = null,
-    jobs: js.Array[AnonConfiguration] = null,
+    jobs: js.Array[Configuration] = null,
     kind: String = null,
     nextPageToken: String = null
   ): SchemaJobList = {

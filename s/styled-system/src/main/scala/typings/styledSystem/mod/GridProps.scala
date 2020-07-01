@@ -32,7 +32,7 @@ trait GridProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
 
 object GridProps {
   @scala.inline
-  def apply[ThemeType](
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](
     gridArea: js.UndefOr[Null | (ResponsiveValue[GridAreaProperty, ThemeType])] = js.undefined,
     gridAutoColumns: js.UndefOr[
       Null | (ResponsiveValue[GridAutoColumnsProperty[TLengthStyledSystem], ThemeType])

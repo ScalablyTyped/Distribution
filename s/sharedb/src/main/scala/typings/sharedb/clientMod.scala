@@ -1,6 +1,7 @@
 package typings.sharedb
 
 import typings.sharedb.anon.ResultsArray
+import typings.sharedb.sharedbMod.Types
 import typings.std.WebSocket
 import typings.ws.mod.^
 import scala.scalajs.js
@@ -33,6 +34,7 @@ object clientMod extends js.Object {
     def get(collectionName: String, documentID: String): Doc = js.native
   }
   
+  val types: Types = js.native
   type AddNumOp = typings.sharedb.sharedbMod.AddNumOp
   type Doc = typings.sharedb.sharedbMod.Doc
   type Error = typings.sharedb.sharedbMod.Error

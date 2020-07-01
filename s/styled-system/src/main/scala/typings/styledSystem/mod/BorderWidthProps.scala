@@ -39,7 +39,7 @@ trait BorderWidthProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] exte
 
 object BorderWidthProps {
   @scala.inline
-  def apply[ThemeType, TVal](
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType, TVal](
     borderBottomWidth: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
     borderLeftWidth: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
     borderRightWidth: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,

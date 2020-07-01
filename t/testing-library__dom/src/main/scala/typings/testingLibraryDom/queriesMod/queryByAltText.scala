@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@testing-library/dom/queries", "queryByAltText")
+@JSImport("@testing-library/dom/types/queries", "queryByAltText")
 @js.native
 object queryByAltText extends TopLevel[QueryByBoundAttribute]
 

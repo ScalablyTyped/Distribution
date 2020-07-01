@@ -191,13 +191,6 @@ package object mod {
   type ValueKeyIterateeTypeGuard[T, S /* <: T */] = js.Function2[/* value */ T, /* key */ java.lang.String, /* is S */ scala.Boolean]
   /** The placeholder, to be used in curried functions */
   type __ = typings.lodash.mod.LoDashStatic
-  // isMatch
-  type isMatchCustomizer = js.Function3[
-    /* value */ js.Any, 
-    /* other */ js.Any, 
-    /* indexOrKey */ js.UndefOr[typings.lodash.mod.PropertyName], 
-    scala.Boolean
-  ]
   // isMatchWith
   type isMatchWithCustomizer = js.Function5[
     /* value */ js.Any, 

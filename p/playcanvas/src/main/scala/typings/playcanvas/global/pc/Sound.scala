@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   * @property audio - If the Web Audio API is not supported this contains the audio data.
   * @property duration - Returns the duration of the sound. If the sound is not loaded it returns 0.
   * @param resource - If the Web Audio API is supported, pass an AudioBuffer object, otherwise
-  * an Audio object.
+  an Audio object.
   */
 @JSGlobal("pc.Sound")
 @js.native

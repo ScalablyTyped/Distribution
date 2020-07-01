@@ -41,17 +41,17 @@ object SchemaBqmlIterationResult {
   @scala.inline
   def apply(
     durationMs: String = null,
-    evalLoss: Int | Double = null,
-    index: Int | Double = null,
-    learnRate: Int | Double = null,
-    trainingLoss: Int | Double = null
+    evalLoss: js.UndefOr[Double] = js.undefined,
+    index: js.UndefOr[Double] = js.undefined,
+    learnRate: js.UndefOr[Double] = js.undefined,
+    trainingLoss: js.UndefOr[Double] = js.undefined
   ): SchemaBqmlIterationResult = {
     val __obj = js.Dynamic.literal()
     if (durationMs != null) __obj.updateDynamic("durationMs")(durationMs.asInstanceOf[js.Any])
-    if (evalLoss != null) __obj.updateDynamic("evalLoss")(evalLoss.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (learnRate != null) __obj.updateDynamic("learnRate")(learnRate.asInstanceOf[js.Any])
-    if (trainingLoss != null) __obj.updateDynamic("trainingLoss")(trainingLoss.asInstanceOf[js.Any])
+    if (!js.isUndefined(evalLoss)) __obj.updateDynamic("evalLoss")(evalLoss.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(learnRate)) __obj.updateDynamic("learnRate")(learnRate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trainingLoss)) __obj.updateDynamic("trainingLoss")(trainingLoss.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBqmlIterationResult]
   }
 }

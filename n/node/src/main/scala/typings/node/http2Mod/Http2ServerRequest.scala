@@ -21,8 +21,12 @@ class Http2ServerRequest protected () extends Readable {
   ) = this()
   val aborted: Boolean = js.native
   val authority: String = js.native
+  val complete: Boolean = js.native
+  val connection: Socket | TLSSocket = js.native
   val headers: IncomingHttpHeaders = js.native
   val httpVersion: String = js.native
+  val httpVersionMajor: Double = js.native
+  val httpVersionMinor: Double = js.native
   val method: String = js.native
   val rawHeaders: js.Array[String] = js.native
   val rawTrailers: js.Array[String] = js.native

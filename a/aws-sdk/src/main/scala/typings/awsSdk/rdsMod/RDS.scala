@@ -102,12 +102,12 @@ trait RDS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AuthorizeDBSecurityGroupIngressResult, Unit]
   ): Request[AuthorizeDBSecurityGroupIngressResult, AWSError] = js.native
   /**
-    * Backtracks a DB cluster to a specific time, without creating a new DB cluster. For more information on backtracking, see  Backtracking an Aurora DB Cluster in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
+    * Backtracks a DB cluster to a specific time, without creating a new DB cluster. For more information on backtracking, see  Backtracking an Aurora DB Cluster in the Amazon Aurora User Guide.   This action only applies to Aurora MySQL DB clusters. 
     */
   def backtrackDBCluster(): Request[DBClusterBacktrack, AWSError] = js.native
   def backtrackDBCluster(callback: js.Function2[/* err */ AWSError, /* data */ DBClusterBacktrack, Unit]): Request[DBClusterBacktrack, AWSError] = js.native
   /**
-    * Backtracks a DB cluster to a specific time, without creating a new DB cluster. For more information on backtracking, see  Backtracking an Aurora DB Cluster in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
+    * Backtracks a DB cluster to a specific time, without creating a new DB cluster. For more information on backtracking, see  Backtracking an Aurora DB Cluster in the Amazon Aurora User Guide.   This action only applies to Aurora MySQL DB clusters. 
     */
   def backtrackDBCluster(params: BacktrackDBClusterMessage): Request[DBClusterBacktrack, AWSError] = js.native
   def backtrackDBCluster(
@@ -297,12 +297,12 @@ trait RDS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDBParameterGroupResult, Unit]
   ): Request[CreateDBParameterGroupResult, AWSError] = js.native
   /**
-    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Creates a new DB proxy.
+    * Creates a new DB proxy.
     */
   def createDBProxy(): Request[CreateDBProxyResponse, AWSError] = js.native
   def createDBProxy(callback: js.Function2[/* err */ AWSError, /* data */ CreateDBProxyResponse, Unit]): Request[CreateDBProxyResponse, AWSError] = js.native
   /**
-    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Creates a new DB proxy.
+    * Creates a new DB proxy.
     */
   def createDBProxy(params: CreateDBProxyRequest): Request[CreateDBProxyResponse, AWSError] = js.native
   def createDBProxy(
@@ -362,12 +362,12 @@ trait RDS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateEventSubscriptionResult, Unit]
   ): Request[CreateEventSubscriptionResult, AWSError] = js.native
   /**
-    *    Creates an Aurora global database spread across multiple regions. The global database contains a single primary cluster with read-write capability, and a read-only secondary cluster that receives data from the primary cluster through high-speed replication performed by the Aurora storage subsystem.   You can create a global database that is initially empty, and then add a primary cluster and a secondary cluster to it. Or you can specify an existing Aurora cluster during the create operation, and this cluster becomes the primary cluster of the global database.   This action only applies to Aurora DB clusters. 
+    *  Creates an Aurora global database spread across multiple regions. The global database contains a single primary cluster with read-write capability, and a read-only secondary cluster that receives data from the primary cluster through high-speed replication performed by the Aurora storage subsystem.   You can create a global database that is initially empty, and then add a primary cluster and a secondary cluster to it. Or you can specify an existing Aurora cluster during the create operation, and this cluster becomes the primary cluster of the global database.   This action only applies to Aurora DB clusters. 
     */
   def createGlobalCluster(): Request[CreateGlobalClusterResult, AWSError] = js.native
   def createGlobalCluster(callback: js.Function2[/* err */ AWSError, /* data */ CreateGlobalClusterResult, Unit]): Request[CreateGlobalClusterResult, AWSError] = js.native
   /**
-    *    Creates an Aurora global database spread across multiple regions. The global database contains a single primary cluster with read-write capability, and a read-only secondary cluster that receives data from the primary cluster through high-speed replication performed by the Aurora storage subsystem.   You can create a global database that is initially empty, and then add a primary cluster and a secondary cluster to it. Or you can specify an existing Aurora cluster during the create operation, and this cluster becomes the primary cluster of the global database.   This action only applies to Aurora DB clusters. 
+    *  Creates an Aurora global database spread across multiple regions. The global database contains a single primary cluster with read-write capability, and a read-only secondary cluster that receives data from the primary cluster through high-speed replication performed by the Aurora storage subsystem.   You can create a global database that is initially empty, and then add a primary cluster and a secondary cluster to it. Or you can specify an existing Aurora cluster during the create operation, and this cluster becomes the primary cluster of the global database.   This action only applies to Aurora DB clusters. 
     */
   def createGlobalCluster(params: CreateGlobalClusterMessage): Request[CreateGlobalClusterResult, AWSError] = js.native
   def createGlobalCluster(
@@ -492,12 +492,12 @@ trait RDS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Deletes an existing proxy.
+    * Deletes an existing proxy.
     */
   def deleteDBProxy(): Request[DeleteDBProxyResponse, AWSError] = js.native
   def deleteDBProxy(callback: js.Function2[/* err */ AWSError, /* data */ DeleteDBProxyResponse, Unit]): Request[DeleteDBProxyResponse, AWSError] = js.native
   /**
-    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Deletes an existing proxy.
+    * Deletes an existing proxy.
     */
   def deleteDBProxy(params: DeleteDBProxyRequest): Request[DeleteDBProxyResponse, AWSError] = js.native
   def deleteDBProxy(
@@ -596,12 +596,12 @@ trait RDS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Remove the association between one or more DBProxyTarget data structures and a DBProxyTargetGroup.
+    * Remove the association between one or more DBProxyTarget data structures and a DBProxyTargetGroup.
     */
   def deregisterDBProxyTargets(): Request[DeregisterDBProxyTargetsResponse, AWSError] = js.native
   def deregisterDBProxyTargets(callback: js.Function2[/* err */ AWSError, /* data */ DeregisterDBProxyTargetsResponse, Unit]): Request[DeregisterDBProxyTargetsResponse, AWSError] = js.native
   /**
-    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Remove the association between one or more DBProxyTarget data structures and a DBProxyTargetGroup.
+    * Remove the association between one or more DBProxyTarget data structures and a DBProxyTargetGroup.
     */
   def deregisterDBProxyTargets(params: DeregisterDBProxyTargetsRequest): Request[DeregisterDBProxyTargetsResponse, AWSError] = js.native
   def deregisterDBProxyTargets(
@@ -648,12 +648,12 @@ trait RDS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CustomAvailabilityZoneMessage, Unit]
   ): Request[CustomAvailabilityZoneMessage, AWSError] = js.native
   /**
-    * Returns information about backtracks for a DB cluster. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
+    * Returns information about backtracks for a DB cluster. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora MySQL DB clusters. 
     */
   def describeDBClusterBacktracks(): Request[DBClusterBacktrackMessage, AWSError] = js.native
   def describeDBClusterBacktracks(callback: js.Function2[/* err */ AWSError, /* data */ DBClusterBacktrackMessage, Unit]): Request[DBClusterBacktrackMessage, AWSError] = js.native
   /**
-    * Returns information about backtracks for a DB cluster. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
+    * Returns information about backtracks for a DB cluster. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora MySQL DB clusters. 
     */
   def describeDBClusterBacktracks(params: DescribeDBClusterBacktracksMessage): Request[DBClusterBacktrackMessage, AWSError] = js.native
   def describeDBClusterBacktracks(
@@ -819,12 +819,12 @@ trait RDS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DBParameterGroupDetails, Unit]
   ): Request[DBParameterGroupDetails, AWSError] = js.native
   /**
-    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Returns information about DB proxies.
+    * Returns information about DB proxies.
     */
   def describeDBProxies(): Request[DescribeDBProxiesResponse, AWSError] = js.native
   def describeDBProxies(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDBProxiesResponse, Unit]): Request[DescribeDBProxiesResponse, AWSError] = js.native
   /**
-    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Returns information about DB proxies.
+    * Returns information about DB proxies.
     */
   def describeDBProxies(params: DescribeDBProxiesRequest): Request[DescribeDBProxiesResponse, AWSError] = js.native
   def describeDBProxies(
@@ -832,12 +832,12 @@ trait RDS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDBProxiesResponse, Unit]
   ): Request[DescribeDBProxiesResponse, AWSError] = js.native
   /**
-    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Returns information about DB proxy target groups, represented by DBProxyTargetGroup data structures.
+    * Returns information about DB proxy target groups, represented by DBProxyTargetGroup data structures.
     */
   def describeDBProxyTargetGroups(): Request[DescribeDBProxyTargetGroupsResponse, AWSError] = js.native
   def describeDBProxyTargetGroups(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDBProxyTargetGroupsResponse, Unit]): Request[DescribeDBProxyTargetGroupsResponse, AWSError] = js.native
   /**
-    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Returns information about DB proxy target groups, represented by DBProxyTargetGroup data structures.
+    * Returns information about DB proxy target groups, represented by DBProxyTargetGroup data structures.
     */
   def describeDBProxyTargetGroups(params: DescribeDBProxyTargetGroupsRequest): Request[DescribeDBProxyTargetGroupsResponse, AWSError] = js.native
   def describeDBProxyTargetGroups(
@@ -845,12 +845,12 @@ trait RDS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDBProxyTargetGroupsResponse, Unit]
   ): Request[DescribeDBProxyTargetGroupsResponse, AWSError] = js.native
   /**
-    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Returns information about DBProxyTarget objects. This API supports pagination.
+    * Returns information about DBProxyTarget objects. This API supports pagination.
     */
   def describeDBProxyTargets(): Request[DescribeDBProxyTargetsResponse, AWSError] = js.native
   def describeDBProxyTargets(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDBProxyTargetsResponse, Unit]): Request[DescribeDBProxyTargetsResponse, AWSError] = js.native
   /**
-    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Returns information about DBProxyTarget objects. This API supports pagination.
+    * Returns information about DBProxyTarget objects. This API supports pagination.
     */
   def describeDBProxyTargets(params: DescribeDBProxyTargetsRequest): Request[DescribeDBProxyTargetsResponse, AWSError] = js.native
   def describeDBProxyTargets(
@@ -1239,14 +1239,14 @@ trait RDS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DBClusterParameterGroupNameMessage, Unit]
   ): Request[DBClusterParameterGroupNameMessage, AWSError] = js.native
   /**
-    * Adds an attribute and values to, or removes an attribute and values from, a manual DB cluster snapshot. To share a manual DB cluster snapshot with other AWS accounts, specify restore as the AttributeName and use the ValuesToAdd parameter to add a list of IDs of the AWS accounts that are authorized to restore the manual DB cluster snapshot. Use the value all to make the manual DB cluster snapshot public, which means that it can be copied or restored by all AWS accounts. Do not add the all value for any manual DB cluster snapshots that contain private information that you don't want available to all AWS accounts. If a manual DB cluster snapshot is encrypted, it can be shared, but only by specifying a list of authorized AWS account IDs for the ValuesToAdd parameter. You can't use all as a value for that parameter in this case. To view which AWS accounts have access to copy or restore a manual DB cluster snapshot, or whether a manual DB cluster snapshot public or private, use the DescribeDBClusterSnapshotAttributes API action.  This action only applies to Aurora DB clusters. 
+    * Adds an attribute and values to, or removes an attribute and values from, a manual DB cluster snapshot. To share a manual DB cluster snapshot with other AWS accounts, specify restore as the AttributeName and use the ValuesToAdd parameter to add a list of IDs of the AWS accounts that are authorized to restore the manual DB cluster snapshot. Use the value all to make the manual DB cluster snapshot public, which means that it can be copied or restored by all AWS accounts.  Don't add the all value for any manual DB cluster snapshots that contain private information that you don't want available to all AWS accounts.  If a manual DB cluster snapshot is encrypted, it can be shared, but only by specifying a list of authorized AWS account IDs for the ValuesToAdd parameter. You can't use all as a value for that parameter in this case. To view which AWS accounts have access to copy or restore a manual DB cluster snapshot, or whether a manual DB cluster snapshot is public or private, use the DescribeDBClusterSnapshotAttributes API action. The accounts are returned as values for the restore attribute.  This action only applies to Aurora DB clusters. 
     */
   def modifyDBClusterSnapshotAttribute(): Request[ModifyDBClusterSnapshotAttributeResult, AWSError] = js.native
   def modifyDBClusterSnapshotAttribute(
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyDBClusterSnapshotAttributeResult, Unit]
   ): Request[ModifyDBClusterSnapshotAttributeResult, AWSError] = js.native
   /**
-    * Adds an attribute and values to, or removes an attribute and values from, a manual DB cluster snapshot. To share a manual DB cluster snapshot with other AWS accounts, specify restore as the AttributeName and use the ValuesToAdd parameter to add a list of IDs of the AWS accounts that are authorized to restore the manual DB cluster snapshot. Use the value all to make the manual DB cluster snapshot public, which means that it can be copied or restored by all AWS accounts. Do not add the all value for any manual DB cluster snapshots that contain private information that you don't want available to all AWS accounts. If a manual DB cluster snapshot is encrypted, it can be shared, but only by specifying a list of authorized AWS account IDs for the ValuesToAdd parameter. You can't use all as a value for that parameter in this case. To view which AWS accounts have access to copy or restore a manual DB cluster snapshot, or whether a manual DB cluster snapshot public or private, use the DescribeDBClusterSnapshotAttributes API action.  This action only applies to Aurora DB clusters. 
+    * Adds an attribute and values to, or removes an attribute and values from, a manual DB cluster snapshot. To share a manual DB cluster snapshot with other AWS accounts, specify restore as the AttributeName and use the ValuesToAdd parameter to add a list of IDs of the AWS accounts that are authorized to restore the manual DB cluster snapshot. Use the value all to make the manual DB cluster snapshot public, which means that it can be copied or restored by all AWS accounts.  Don't add the all value for any manual DB cluster snapshots that contain private information that you don't want available to all AWS accounts.  If a manual DB cluster snapshot is encrypted, it can be shared, but only by specifying a list of authorized AWS account IDs for the ValuesToAdd parameter. You can't use all as a value for that parameter in this case. To view which AWS accounts have access to copy or restore a manual DB cluster snapshot, or whether a manual DB cluster snapshot is public or private, use the DescribeDBClusterSnapshotAttributes API action. The accounts are returned as values for the restore attribute.  This action only applies to Aurora DB clusters. 
     */
   def modifyDBClusterSnapshotAttribute(params: ModifyDBClusterSnapshotAttributeMessage): Request[ModifyDBClusterSnapshotAttributeResult, AWSError] = js.native
   def modifyDBClusterSnapshotAttribute(
@@ -1280,12 +1280,12 @@ trait RDS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DBParameterGroupNameMessage, Unit]
   ): Request[DBParameterGroupNameMessage, AWSError] = js.native
   /**
-    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Changes the settings for an existing DB proxy.
+    * Changes the settings for an existing DB proxy.
     */
   def modifyDBProxy(): Request[ModifyDBProxyResponse, AWSError] = js.native
   def modifyDBProxy(callback: js.Function2[/* err */ AWSError, /* data */ ModifyDBProxyResponse, Unit]): Request[ModifyDBProxyResponse, AWSError] = js.native
   /**
-    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Changes the settings for an existing DB proxy.
+    * Changes the settings for an existing DB proxy.
     */
   def modifyDBProxy(params: ModifyDBProxyRequest): Request[ModifyDBProxyResponse, AWSError] = js.native
   def modifyDBProxy(
@@ -1293,12 +1293,12 @@ trait RDS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyDBProxyResponse, Unit]
   ): Request[ModifyDBProxyResponse, AWSError] = js.native
   /**
-    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Modifies the properties of a DBProxyTargetGroup.
+    * Modifies the properties of a DBProxyTargetGroup.
     */
   def modifyDBProxyTargetGroup(): Request[ModifyDBProxyTargetGroupResponse, AWSError] = js.native
   def modifyDBProxyTargetGroup(callback: js.Function2[/* err */ AWSError, /* data */ ModifyDBProxyTargetGroupResponse, Unit]): Request[ModifyDBProxyTargetGroupResponse, AWSError] = js.native
   /**
-    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Modifies the properties of a DBProxyTargetGroup.
+    * Modifies the properties of a DBProxyTargetGroup.
     */
   def modifyDBProxyTargetGroup(params: ModifyDBProxyTargetGroupRequest): Request[ModifyDBProxyTargetGroupResponse, AWSError] = js.native
   def modifyDBProxyTargetGroup(
@@ -1319,12 +1319,12 @@ trait RDS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyDBSnapshotResult, Unit]
   ): Request[ModifyDBSnapshotResult, AWSError] = js.native
   /**
-    * Adds an attribute and values to, or removes an attribute and values from, a manual DB snapshot. To share a manual DB snapshot with other AWS accounts, specify restore as the AttributeName and use the ValuesToAdd parameter to add a list of IDs of the AWS accounts that are authorized to restore the manual DB snapshot. Uses the value all to make the manual DB snapshot public, which means it can be copied or restored by all AWS accounts. Do not add the all value for any manual DB snapshots that contain private information that you don't want available to all AWS accounts. If the manual DB snapshot is encrypted, it can be shared, but only by specifying a list of authorized AWS account IDs for the ValuesToAdd parameter. You can't use all as a value for that parameter in this case. To view which AWS accounts have access to copy or restore a manual DB snapshot, or whether a manual DB snapshot public or private, use the DescribeDBSnapshotAttributes API action.
+    * Adds an attribute and values to, or removes an attribute and values from, a manual DB snapshot. To share a manual DB snapshot with other AWS accounts, specify restore as the AttributeName and use the ValuesToAdd parameter to add a list of IDs of the AWS accounts that are authorized to restore the manual DB snapshot. Uses the value all to make the manual DB snapshot public, which means it can be copied or restored by all AWS accounts.  Don't add the all value for any manual DB snapshots that contain private information that you don't want available to all AWS accounts.  If the manual DB snapshot is encrypted, it can be shared, but only by specifying a list of authorized AWS account IDs for the ValuesToAdd parameter. You can't use all as a value for that parameter in this case. To view which AWS accounts have access to copy or restore a manual DB snapshot, or whether a manual DB snapshot public or private, use the DescribeDBSnapshotAttributes API action. The accounts are returned as values for the restore attribute.
     */
   def modifyDBSnapshotAttribute(): Request[ModifyDBSnapshotAttributeResult, AWSError] = js.native
   def modifyDBSnapshotAttribute(callback: js.Function2[/* err */ AWSError, /* data */ ModifyDBSnapshotAttributeResult, Unit]): Request[ModifyDBSnapshotAttributeResult, AWSError] = js.native
   /**
-    * Adds an attribute and values to, or removes an attribute and values from, a manual DB snapshot. To share a manual DB snapshot with other AWS accounts, specify restore as the AttributeName and use the ValuesToAdd parameter to add a list of IDs of the AWS accounts that are authorized to restore the manual DB snapshot. Uses the value all to make the manual DB snapshot public, which means it can be copied or restored by all AWS accounts. Do not add the all value for any manual DB snapshots that contain private information that you don't want available to all AWS accounts. If the manual DB snapshot is encrypted, it can be shared, but only by specifying a list of authorized AWS account IDs for the ValuesToAdd parameter. You can't use all as a value for that parameter in this case. To view which AWS accounts have access to copy or restore a manual DB snapshot, or whether a manual DB snapshot public or private, use the DescribeDBSnapshotAttributes API action.
+    * Adds an attribute and values to, or removes an attribute and values from, a manual DB snapshot. To share a manual DB snapshot with other AWS accounts, specify restore as the AttributeName and use the ValuesToAdd parameter to add a list of IDs of the AWS accounts that are authorized to restore the manual DB snapshot. Uses the value all to make the manual DB snapshot public, which means it can be copied or restored by all AWS accounts.  Don't add the all value for any manual DB snapshots that contain private information that you don't want available to all AWS accounts.  If the manual DB snapshot is encrypted, it can be shared, but only by specifying a list of authorized AWS account IDs for the ValuesToAdd parameter. You can't use all as a value for that parameter in this case. To view which AWS accounts have access to copy or restore a manual DB snapshot, or whether a manual DB snapshot public or private, use the DescribeDBSnapshotAttributes API action. The accounts are returned as values for the restore attribute.
     */
   def modifyDBSnapshotAttribute(params: ModifyDBSnapshotAttributeMessage): Request[ModifyDBSnapshotAttributeResult, AWSError] = js.native
   def modifyDBSnapshotAttribute(
@@ -1438,12 +1438,12 @@ trait RDS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ RebootDBInstanceResult, Unit]
   ): Request[RebootDBInstanceResult, AWSError] = js.native
   /**
-    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Associate one or more DBProxyTarget data structures with a DBProxyTargetGroup.
+    * Associate one or more DBProxyTarget data structures with a DBProxyTargetGroup.
     */
   def registerDBProxyTargets(): Request[RegisterDBProxyTargetsResponse, AWSError] = js.native
   def registerDBProxyTargets(callback: js.Function2[/* err */ AWSError, /* data */ RegisterDBProxyTargetsResponse, Unit]): Request[RegisterDBProxyTargetsResponse, AWSError] = js.native
   /**
-    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Associate one or more DBProxyTarget data structures with a DBProxyTargetGroup.
+    * Associate one or more DBProxyTarget data structures with a DBProxyTargetGroup.
     */
   def registerDBProxyTargets(params: RegisterDBProxyTargetsRequest): Request[RegisterDBProxyTargetsResponse, AWSError] = js.native
   def registerDBProxyTargets(

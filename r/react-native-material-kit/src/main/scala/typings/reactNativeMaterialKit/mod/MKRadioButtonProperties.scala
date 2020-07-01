@@ -118,6 +118,7 @@ object MKRadioButtonProperties {
     disabled: js.UndefOr[Boolean] = js.undefined,
     extraRippleRadius: js.UndefOr[Double] = js.undefined,
     fillColor: String = null,
+    focusable: js.UndefOr[Boolean] = js.undefined,
     group: MKRadioButtonGroup = null,
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
     hitSlop: Insets = null,
@@ -200,6 +201,7 @@ object MKRadioButtonProperties {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (!js.isUndefined(extraRippleRadius)) __obj.updateDynamic("extraRippleRadius")(extraRippleRadius.get.asInstanceOf[js.Any])
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.get.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.get.asInstanceOf[js.Any])
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])

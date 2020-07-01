@@ -23,11 +23,11 @@ trait RunInstancesRequest extends js.Object {
     */
   var ClientToken: js.UndefOr[String] = js.native
   /**
-    * The CPU options for the instance. For more information, see Optimizing CPU Options in the Amazon Elastic Compute Cloud User Guide.
+    * The CPU options for the instance. For more information, see Optimizing CPU options in the Amazon Elastic Compute Cloud User Guide.
     */
   var CpuOptions: js.UndefOr[CpuOptionsRequest] = js.native
   /**
-    * The credit option for CPU usage of the burstable performance instance. Valid values are standard and unlimited. To change this attribute after launch, use  ModifyInstanceCreditSpecification. For more information, see Burstable Performance Instances in the Amazon Elastic Compute Cloud User Guide. Default: standard (T2 instances) or unlimited (T3/T3a instances)
+    * The credit option for CPU usage of the burstable performance instance. Valid values are standard and unlimited. To change this attribute after launch, use  ModifyInstanceCreditSpecification. For more information, see Burstable performance instances in the Amazon Elastic Compute Cloud User Guide. Default: standard (T2 instances) or unlimited (T3/T3a instances)
     */
   var CreditSpecification: js.UndefOr[CreditSpecificationRequest] = js.native
   /**
@@ -47,11 +47,11 @@ trait RunInstancesRequest extends js.Object {
     */
   var ElasticGpuSpecification: js.UndefOr[ElasticGpuSpecifications] = js.native
   /**
-    * An elastic inference accelerator to associate with the instance. Elastic inference accelerators are a resource you can attach to your Amazon EC2 instances to accelerate your Deep Learning (DL) inference workloads.
+    * An elastic inference accelerator to associate with the instance. Elastic inference accelerators are a resource you can attach to your Amazon EC2 instances to accelerate your Deep Learning (DL) inference workloads. You cannot specify accelerators from different generations in the same request.
     */
   var ElasticInferenceAccelerators: js.UndefOr[typings.awsSdk.ec2Mod.ElasticInferenceAccelerators] = js.native
   /**
-    * Indicates whether an instance is enabled for hibernation. For more information, see Hibernate Your Instance in the Amazon Elastic Compute Cloud User Guide.
+    * Indicates whether an instance is enabled for hibernation. For more information, see Hibernate your instance in the Amazon Elastic Compute Cloud User Guide.
     */
   var HibernationOptions: js.UndefOr[HibernationOptionsRequest] = js.native
   /**
@@ -71,7 +71,7 @@ trait RunInstancesRequest extends js.Object {
     */
   var InstanceMarketOptions: js.UndefOr[InstanceMarketOptionsRequest] = js.native
   /**
-    * The instance type. For more information, see Instance Types in the Amazon Elastic Compute Cloud User Guide. Default: m1.small 
+    * The instance type. For more information, see Instance types in the Amazon Elastic Compute Cloud User Guide. Default: m1.small 
     */
   var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.native
   /**
@@ -103,7 +103,7 @@ trait RunInstancesRequest extends js.Object {
     */
   var MaxCount: Integer = js.native
   /**
-    * The metadata options for the instance. For more information, see Instance Metadata and User Data.
+    * The metadata options for the instance. For more information, see Instance metadata and user data.
     */
   var MetadataOptions: js.UndefOr[InstanceMetadataOptionsRequest] = js.native
   /**
@@ -147,7 +147,7 @@ trait RunInstancesRequest extends js.Object {
     */
   var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
   /**
-    * The user data to make available to the instance. For more information, see Running Commands on Your Linux Instance at Launch (Linux) and Adding User Data (Windows). If you are using a command line tool, base64-encoding is performed for you, and you can load the text from a file. Otherwise, you must provide base64-encoded text. User data is limited to 16 KB.
+    * The user data to make available to the instance. For more information, see Running commands on your Linux instance at launch (Linux) and Adding User Data (Windows). If you are using a command line tool, base64-encoding is performed for you, and you can load the text from a file. Otherwise, you must provide base64-encoded text. User data is limited to 16 KB.
     */
   var UserData: js.UndefOr[String] = js.native
 }

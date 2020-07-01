@@ -14,6 +14,8 @@ import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TVParallaxProperties
 import typings.reactNative.mod.ViewStyle
+import typings.reactNavigationStack.reactNavigationStackNumbers.`0`
+import typings.reactNavigationStack.reactNavigationStackNumbers.`1`
 import typings.reactNavigationStack.reactNavigationStackStrings.`box-none`
 import typings.reactNavigationStack.reactNavigationStackStrings.`box-only`
 import typings.reactNavigationStack.reactNavigationStackStrings.`no-hide-descendants`
@@ -30,7 +32,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react-native.react-native.ViewProps & {  enabled  :boolean,   active  :number | react-native.react-native.Animated.AnimatedInterpolation,   children  :react.react.ReactNode} */
+/* Inlined react-native.react-native.ViewProps & {  enabled  :boolean,   active  :0 | 1 | react-native.react-native.Animated.AnimatedInterpolation,   children  :react.react.ReactNode} */
 trait ViewPropsenabledbooleanac extends js.Object {
   /**
     * Provides an array of custom actions available for accessibility.
@@ -100,7 +102,7 @@ trait ViewPropsenabledbooleanac extends js.Object {
     * By default, all the touchable elements are accessible.
     */
   var accessible: js.UndefOr[Boolean] = js.undefined
-  var active: Double | AnimatedInterpolation
+  var active: `0` | `1` | AnimatedInterpolation
   var children: ReactNode
   /**
     * Views that are only used to layout their children or otherwise don't draw anything
@@ -109,6 +111,10 @@ trait ViewPropsenabledbooleanac extends js.Object {
     */
   var collapsable: js.UndefOr[Boolean] = js.undefined
   var enabled: Boolean
+  /**
+    * Whether this `View` should be focusable with a non-touch input device, eg. receive focus with a hardware keyboard.
+    */
+  var focusable: js.UndefOr[Boolean] = js.undefined
   /**
     * *(Apple TV only)* May be set to true to force the Apple TV focus engine to move focus to this view.
     *
@@ -360,7 +366,7 @@ trait ViewPropsenabledbooleanac extends js.Object {
 object ViewPropsenabledbooleanac {
   @scala.inline
   def apply(
-    active: Double | AnimatedInterpolation,
+    active: `0` | `1` | AnimatedInterpolation,
     enabled: Boolean,
     accessibilityActions: js.Array[AccessibilityActionInfo] = null,
     accessibilityComponentType: none | button | radiobutton_checked | radiobutton_unchecked = null,
@@ -377,6 +383,7 @@ object ViewPropsenabledbooleanac {
     accessible: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     collapsable: js.UndefOr[Boolean] = js.undefined,
+    focusable: js.UndefOr[Boolean] = js.undefined,
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
     hitSlop: Insets = null,
     importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
@@ -433,6 +440,7 @@ object ViewPropsenabledbooleanac {
     if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.get.asInstanceOf[js.Any])
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])

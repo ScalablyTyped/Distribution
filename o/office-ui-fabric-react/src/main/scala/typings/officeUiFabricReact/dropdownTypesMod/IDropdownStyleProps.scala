@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 /* Inlined std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/Dropdown/Dropdown.types.IDropdownProps, 'theme' | 'className' | 'disabled' | 'required'> & {  hasError  :boolean,   hasLabel  :boolean,   isOpen  :boolean,   isRenderingPlaceholder  :boolean,   panelClassName ? :string,   calloutClassName ? :string,   calloutRenderEdge ? :office-ui-fabric-react.office-ui-fabric-react/lib/utilities/positioning.RectangleEdge} */
 trait IDropdownStyleProps extends js.Object {
   /**
-    * Optional custom className for the callout that displays in larger viewports, hosting the Dropdown options.
+    * Custom className for the callout that displays in larger viewports, hosting the Dropdown options.
     * This is primarily provided for backwards compatibility.
     */
   var calloutClassName: js.UndefOr[String] = js.undefined
   /**
-    * Prop to notify on what edge the dropdown callout was positioned respective to the title.
+    * Which edge the dropdown callout was positioned on relative to the title.
     */
   var calloutRenderEdge: js.UndefOr[RectangleEdge] = js.undefined
   var className: js.UndefOr[String] = js.undefined
@@ -32,11 +32,11 @@ trait IDropdownStyleProps extends js.Object {
     */
   var isOpen: Boolean
   /**
-    * Whether the dropdown is presently rendering a placeholder.
+    * Whether the dropdown is currently rendering placeholder text instead of a selected option.
     */
   var isRenderingPlaceholder: Boolean
   /**
-    * Optional custom className for the panel that displays in small viewports, hosting the Dropdown options.
+    * Custom className for the panel that displays in small viewports, hosting the Dropdown options.
     * This is primarily provided for backwards compatibility.
     */
   var panelClassName: js.UndefOr[String] = js.undefined

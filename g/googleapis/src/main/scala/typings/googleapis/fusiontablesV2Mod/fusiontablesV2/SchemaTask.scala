@@ -45,7 +45,7 @@ object SchemaTask {
     val __obj = js.Dynamic.literal()
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
-    if (!js.isUndefined(started)) __obj.updateDynamic("started")(started.asInstanceOf[js.Any])
+    if (!js.isUndefined(started)) __obj.updateDynamic("started")(started.get.asInstanceOf[js.Any])
     if (taskId != null) __obj.updateDynamic("taskId")(taskId.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTask]

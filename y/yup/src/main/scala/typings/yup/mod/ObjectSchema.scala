@@ -36,8 +36,8 @@ trait ObjectSchema[T /* <: js.UndefOr[js.Object | Null] */] extends Schema[T] {
   def oneOf[U /* <: T */](arrayOfValues: js.Array[U | Ref_]): ObjectSchema[U] = js.native
   def oneOf[U /* <: T */](arrayOfValues: js.Array[U | Ref_], message: TestOptionsMessage[Values, _]): ObjectSchema[U] = js.native
   def optional(): ObjectSchema[js.UndefOr[T]] = js.native
-  def required(): ObjectSchema[Exclude[T, js.UndefOr[scala.Nothing]]] = js.native
-  def required(message: TestOptionsMessage[js.Object, _]): ObjectSchema[Exclude[T, js.UndefOr[scala.Nothing]]] = js.native
+  def required(): ObjectSchema[Exclude[T, js.UndefOr[Null]]] = js.native
+  def required(message: TestOptionsMessage[js.Object, _]): ObjectSchema[Exclude[T, js.UndefOr[Null]]] = js.native
   def shape[U /* <: js.Object */](fields: ObjectSchemaDefinition[U]): ObjectSchema[Shape[T, U]] = js.native
   def shape[U /* <: js.Object */](fields: ObjectSchemaDefinition[U], noSortEdges: js.Array[js.Tuple2[String, String]]): ObjectSchema[Shape[T, U]] = js.native
   def snakeCase(): ObjectSchema[T] = js.native

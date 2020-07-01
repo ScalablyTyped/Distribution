@@ -1,6 +1,6 @@
 package typings.googleapis.v5Mod.pagespeedonlineV5
 
-import typings.googleapis.AnonGroup
+import typings.googleapis.anon.Group
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait SchemaLighthouseCategoryV5 extends js.Object {
   /**
     * An array of references to all the audit members of this category.
     */
-  var auditRefs: js.UndefOr[js.Array[AnonGroup]] = js.native
+  var auditRefs: js.UndefOr[js.Array[Group]] = js.native
   /**
     * A more detailed description of the category and its importance.
     */
@@ -33,7 +33,7 @@ trait SchemaLighthouseCategoryV5 extends js.Object {
 object SchemaLighthouseCategoryV5 {
   @scala.inline
   def apply(
-    auditRefs: js.Array[AnonGroup] = null,
+    auditRefs: js.Array[Group] = null,
     description: String = null,
     id: String = null,
     manualDescription: String = null,

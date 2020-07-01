@@ -25,7 +25,7 @@ object SchemaContactGroupMetadata {
   @scala.inline
   def apply(deleted: js.UndefOr[Boolean] = js.undefined, updateTime: String = null): SchemaContactGroupMetadata = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
     if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaContactGroupMetadata]
   }

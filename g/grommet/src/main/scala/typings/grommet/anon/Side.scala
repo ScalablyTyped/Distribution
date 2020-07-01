@@ -1,34 +1,21 @@
 package typings.grommet.anon
 
-import typings.grommet.grommetStrings.all
-import typings.grommet.grommetStrings.bottom
-import typings.grommet.grommetStrings.horizontal
-import typings.grommet.grommetStrings.large
-import typings.grommet.grommetStrings.left
-import typings.grommet.grommetStrings.medium
-import typings.grommet.grommetStrings.right
-import typings.grommet.grommetStrings.small
-import typings.grommet.grommetStrings.top
-import typings.grommet.grommetStrings.vertical
-import typings.grommet.grommetStrings.xlarge
-import typings.grommet.grommetStrings.xsmall
+import typings.grommet.listMod.SideType
+import typings.grommet.listMod.SizeType
+import typings.grommet.listMod._BorderType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Side extends js.Object {
-  var color: js.UndefOr[String | Light] = js.undefined
-  var side: js.UndefOr[top | left | bottom | right | horizontal | vertical | all] = js.undefined
-  var size: js.UndefOr[xsmall | small | medium | large | xlarge | String] = js.undefined
+trait Side extends _BorderType {
+  var color: js.UndefOr[String | Dark] = js.undefined
+  var side: js.UndefOr[SideType] = js.undefined
+  var size: js.UndefOr[SizeType] = js.undefined
 }
 
 object Side {
   @scala.inline
-  def apply(
-    color: String | Light = null,
-    side: top | left | bottom | right | horizontal | vertical | all = null,
-    size: xsmall | small | medium | large | xlarge | String = null
-  ): Side = {
+  def apply(color: String | Dark = null, side: SideType = null, size: SizeType = null): Side = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])

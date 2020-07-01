@@ -11,6 +11,7 @@ package object mod {
     - typings.waterline.mod.StringAttribute
     - typings.waterline.mod.EmailAttribute
     - typings.waterline.mod.IntegerAttribute
+    - typings.waterline.mod.NumberAttribute
     - typings.waterline.mod.FloatAttribute
     - typings.waterline.mod.DateAttribute
     - typings.waterline.mod.TimeAttribute

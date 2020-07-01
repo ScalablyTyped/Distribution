@@ -12,7 +12,7 @@ trait StylesCreator[Theme, Props /* <: js.Object */, ClassKey /* <: String */] e
 
 object StylesCreator {
   @scala.inline
-  def apply[Theme, Props, ClassKey](create: (Theme, String) => StyleRules[Props, ClassKey], themingEnabled: Boolean): StylesCreator[Theme, Props, ClassKey] = {
+  def apply[Theme, /* <: js.Object */ Props, /* <: java.lang.String */ ClassKey](create: (Theme, String) => StyleRules[Props, ClassKey], themingEnabled: Boolean): StylesCreator[Theme, Props, ClassKey] = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create), themingEnabled = themingEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[StylesCreator[Theme, Props, ClassKey]]
   }

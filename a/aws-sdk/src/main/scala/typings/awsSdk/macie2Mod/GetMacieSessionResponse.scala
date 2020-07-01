@@ -11,7 +11,7 @@ trait GetMacieSessionResponse extends js.Object {
     */
   var createdAt: js.UndefOr[timestampIso8601] = js.native
   /**
-    * The frequency with which Amazon Macie publishes findings for the account. This includes adding findings to AWS Security Hub and exporting finding events to Amazon CloudWatch.
+    * The frequency with which Amazon Macie publishes updates to policy findings for the account. This includes publishing updates to AWS Security Hub and Amazon EventBridge (formerly called Amazon CloudWatch Events).
     */
   var findingPublishingFrequency: js.UndefOr[FindingPublishingFrequency] = js.native
   /**

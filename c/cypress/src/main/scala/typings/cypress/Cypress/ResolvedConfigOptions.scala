@@ -3,6 +3,7 @@ package typings.cypress.Cypress
 import org.scalablytyped.runtime.StringDictionary
 import typings.cypress.Nullable
 import typings.cypress.anon.OpenMode
+import typings.cypress.cypressBooleans.`false`
 import typings.cypress.cypressStrings.bundled
 import typings.cypress.cypressStrings.system
 import scala.scalajs.js
@@ -47,6 +48,11 @@ trait ResolvedConfigOptions extends js.Object {
     */
   var experimentalGetCookiesSameSite: Boolean
   /**
+    * Enables shadow DOM support. Adds the `cy.shadow()` command and
+    * the `includeShadowDom` option to some DOM commands.
+    */
+  var experimentalShadowDomSupport: Boolean
+  /**
     * Enables AST-based JS/HTML rewriting. This may fix issues caused by the existing regex-based JS/HTML replacement
     * algorithm.
     * @default false
@@ -68,7 +74,7 @@ trait ResolvedConfigOptions extends js.Object {
     * Path to folder containing fixture files (Pass false to disable)
     * @default "cypress/fixtures"
     */
-  var fixturesFolder: String
+  var fixturesFolder: String | `false`
   /**
     * A String or Array of glob patterns used to ignore test files that would otherwise be shown in your list of tests. Cypress uses minimatch with the options: {dot: true, matchBase: true}. We suggest using http://globtester.com to test what files would match.
     * @default "*.hot-update.js"
@@ -98,7 +104,7 @@ trait ResolvedConfigOptions extends js.Object {
     * Path to plugins file. (Pass false to disable)
     * @default "cypress/plugins/index.js"
     */
-  var pluginsFile: String
+  var pluginsFile: String | `false`
   /**
     * Port used to host Cypress. Normally this is a randomly generated port
     * @default null
@@ -133,12 +139,17 @@ trait ResolvedConfigOptions extends js.Object {
     * Path to folder where screenshots will be saved from [cy.screenshot()](https://on.cypress.io/screenshot) command or after a headless or CI run’s test failure
     * @default "cypress/screenshots"
     */
-  var screenshotsFolder: String
+  var screenshotsFolder: String | `false`
   /**
     * Path to file to load before test files load. This file is compiled and bundled. (Pass false to disable)
     * @default "cypress/support/index.js"
     */
-  var supportFile: String
+  var supportFile: String | `false`
+  /**
+    * Time, in milliseconds, to wait for a task to finish executing during a cy.task() command
+    * @default 60000
+    */
+  var taskTimeout: Double
   /**
     * Whether Cypress will trash assets within the screenshotsFolder and videosFolder before headless test runs.
     * @default true
@@ -153,7 +164,7 @@ trait ResolvedConfigOptions extends js.Object {
     * The quality setting for the video compression, in Constant Rate Factor (CRF). The value can be false to disable compression or a value between 0 and 51, where a lower value results in better quality (at the expense of a higher file size).
     * @default 32
     */
-  var videoCompression: Double
+  var videoCompression: Double | `false`
   /**
     * Whether Cypress will upload the video to the Dashboard even if all tests are passing. This applies only when recording your runs to the Dashboard. Turn this off if you’d like the video uploaded only when there are failing tests.
     * @default true
@@ -195,25 +206,27 @@ object ResolvedConfigOptions {
     env: StringDictionary[js.Any],
     execTimeout: Double,
     experimentalGetCookiesSameSite: Boolean,
+    experimentalShadowDomSupport: Boolean,
     experimentalSourceRewriting: Boolean,
     fileServerFolder: String,
-    fixturesFolder: String,
+    fixturesFolder: String | `false`,
     ignoreTestFiles: String | js.Array[String],
     integrationFolder: String,
     nodeVersion: system | bundled,
     numTestsKeptInMemory: Double,
     pageLoadTimeout: Double,
-    pluginsFile: String,
+    pluginsFile: String | `false`,
     reporter: String,
     requestTimeout: Double,
     resolvedNodePath: String,
     resolvedNodeVersion: String,
     responseTimeout: Double,
-    screenshotsFolder: String,
-    supportFile: String,
+    screenshotsFolder: String | `false`,
+    supportFile: String | `false`,
+    taskTimeout: Double,
     trashAssetsBeforeRuns: Boolean,
     video: Boolean,
-    videoCompression: Double,
+    videoCompression: Double | `false`,
     videoUploadOnPasses: Boolean,
     videosFolder: String,
     viewportHeight: Double,
@@ -224,7 +237,7 @@ object ResolvedConfigOptions {
     firefoxGcInterval: Nullable[Double | OpenMode] = null,
     port: Double = null.asInstanceOf[Double]
   ): ResolvedConfigOptions = {
-    val __obj = js.Dynamic.literal(animationDistanceThreshold = animationDistanceThreshold.asInstanceOf[js.Any], chromeWebSecurity = chromeWebSecurity.asInstanceOf[js.Any], defaultCommandTimeout = defaultCommandTimeout.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], execTimeout = execTimeout.asInstanceOf[js.Any], experimentalGetCookiesSameSite = experimentalGetCookiesSameSite.asInstanceOf[js.Any], experimentalSourceRewriting = experimentalSourceRewriting.asInstanceOf[js.Any], fileServerFolder = fileServerFolder.asInstanceOf[js.Any], fixturesFolder = fixturesFolder.asInstanceOf[js.Any], ignoreTestFiles = ignoreTestFiles.asInstanceOf[js.Any], integrationFolder = integrationFolder.asInstanceOf[js.Any], nodeVersion = nodeVersion.asInstanceOf[js.Any], numTestsKeptInMemory = numTestsKeptInMemory.asInstanceOf[js.Any], pageLoadTimeout = pageLoadTimeout.asInstanceOf[js.Any], pluginsFile = pluginsFile.asInstanceOf[js.Any], reporter = reporter.asInstanceOf[js.Any], requestTimeout = requestTimeout.asInstanceOf[js.Any], resolvedNodePath = resolvedNodePath.asInstanceOf[js.Any], resolvedNodeVersion = resolvedNodeVersion.asInstanceOf[js.Any], responseTimeout = responseTimeout.asInstanceOf[js.Any], screenshotsFolder = screenshotsFolder.asInstanceOf[js.Any], supportFile = supportFile.asInstanceOf[js.Any], trashAssetsBeforeRuns = trashAssetsBeforeRuns.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], videoCompression = videoCompression.asInstanceOf[js.Any], videoUploadOnPasses = videoUploadOnPasses.asInstanceOf[js.Any], videosFolder = videosFolder.asInstanceOf[js.Any], viewportHeight = viewportHeight.asInstanceOf[js.Any], viewportWidth = viewportWidth.asInstanceOf[js.Any], waitForAnimations = waitForAnimations.asInstanceOf[js.Any], watchForFileChanges = watchForFileChanges.asInstanceOf[js.Any], baseUrl = baseUrl.asInstanceOf[js.Any], firefoxGcInterval = firefoxGcInterval.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(animationDistanceThreshold = animationDistanceThreshold.asInstanceOf[js.Any], chromeWebSecurity = chromeWebSecurity.asInstanceOf[js.Any], defaultCommandTimeout = defaultCommandTimeout.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], execTimeout = execTimeout.asInstanceOf[js.Any], experimentalGetCookiesSameSite = experimentalGetCookiesSameSite.asInstanceOf[js.Any], experimentalShadowDomSupport = experimentalShadowDomSupport.asInstanceOf[js.Any], experimentalSourceRewriting = experimentalSourceRewriting.asInstanceOf[js.Any], fileServerFolder = fileServerFolder.asInstanceOf[js.Any], fixturesFolder = fixturesFolder.asInstanceOf[js.Any], ignoreTestFiles = ignoreTestFiles.asInstanceOf[js.Any], integrationFolder = integrationFolder.asInstanceOf[js.Any], nodeVersion = nodeVersion.asInstanceOf[js.Any], numTestsKeptInMemory = numTestsKeptInMemory.asInstanceOf[js.Any], pageLoadTimeout = pageLoadTimeout.asInstanceOf[js.Any], pluginsFile = pluginsFile.asInstanceOf[js.Any], reporter = reporter.asInstanceOf[js.Any], requestTimeout = requestTimeout.asInstanceOf[js.Any], resolvedNodePath = resolvedNodePath.asInstanceOf[js.Any], resolvedNodeVersion = resolvedNodeVersion.asInstanceOf[js.Any], responseTimeout = responseTimeout.asInstanceOf[js.Any], screenshotsFolder = screenshotsFolder.asInstanceOf[js.Any], supportFile = supportFile.asInstanceOf[js.Any], taskTimeout = taskTimeout.asInstanceOf[js.Any], trashAssetsBeforeRuns = trashAssetsBeforeRuns.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], videoCompression = videoCompression.asInstanceOf[js.Any], videoUploadOnPasses = videoUploadOnPasses.asInstanceOf[js.Any], videosFolder = videosFolder.asInstanceOf[js.Any], viewportHeight = viewportHeight.asInstanceOf[js.Any], viewportWidth = viewportWidth.asInstanceOf[js.Any], waitForAnimations = waitForAnimations.asInstanceOf[js.Any], watchForFileChanges = watchForFileChanges.asInstanceOf[js.Any], baseUrl = baseUrl.asInstanceOf[js.Any], firefoxGcInterval = firefoxGcInterval.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedConfigOptions]
   }
 }

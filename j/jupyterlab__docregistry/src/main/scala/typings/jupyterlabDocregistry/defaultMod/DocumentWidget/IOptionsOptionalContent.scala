@@ -16,7 +16,7 @@ trait IOptionsOptionalContent[T /* <: Widget */, U /* <: IModel */]
 
 object IOptionsOptionalContent {
   @scala.inline
-  def apply[T, U](
+  def apply[/* <: typings.luminoWidgets.mod.Widget */ T, /* <: typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel */ U](
     context: IContext[U],
     content: T = null,
     node: HTMLElement = null,

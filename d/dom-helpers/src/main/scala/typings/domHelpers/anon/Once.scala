@@ -11,7 +11,7 @@ trait Once[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitU
 
 object Once {
   @scala.inline
-  def apply[K](__once: EventHandler[K] = null): Once[K] = {
+  def apply[/* <: / * keyof std.HTMLElementEventMap * / / * import warning: LimitUnionLength.leaveTypeRef Was union type with length 92 * / js.Any */ K](__once: EventHandler[K] = null): Once[K] = {
     val __obj = js.Dynamic.literal()
     if (__once != null) __obj.updateDynamic("__once")(__once.asInstanceOf[js.Any])
     __obj.asInstanceOf[Once[K]]

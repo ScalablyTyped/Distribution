@@ -24,7 +24,7 @@ trait Hooks[Options, Body /* <: Buffer | String | js.Object */] extends js.Objec
 
 object Hooks {
   @scala.inline
-  def apply[Options, Body](
+  def apply[Options, /* <: typings.node.Buffer | java.lang.String | js.Object */ Body](
     afterResponse: js.Array[AfterResponseHook[Options, Body]] = null,
     beforeError: js.Array[BeforeErrorHook] = null,
     beforeRedirect: js.Array[BeforeRedirectHook[Options]] = null,

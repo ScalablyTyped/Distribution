@@ -470,7 +470,7 @@ trait ThemedStyledComponentFactories[T /* <: js.Object */] extends js.Object {
 
 object ThemedStyledComponentFactories {
   @scala.inline
-  def apply[T](
+  def apply[/* <: js.Object */ T](
     a: ThemedStyledFunction[a, T, js.Object, scala.Nothing],
     abbr: ThemedStyledFunction[abbr, T, js.Object, scala.Nothing],
     address: ThemedStyledFunction[address, T, js.Object, scala.Nothing],

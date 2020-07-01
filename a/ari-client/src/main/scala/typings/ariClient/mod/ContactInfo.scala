@@ -5,10 +5,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ContactInfo extends js.Object {
+  /**
+    * The Address of Record this contact belongs to.
+    */
   var aor: String
+  /**
+    * The current status of the contact.
+    */
   var contact_status: String
+  /**
+    * Current round trip time, in microseconds, for the contact.
+    */
   var roundtrip_usec: js.UndefOr[String] = js.undefined
-  /* Properties */
+  /**
+    * The location of the contact.
+    */
   var uri: String
 }
 

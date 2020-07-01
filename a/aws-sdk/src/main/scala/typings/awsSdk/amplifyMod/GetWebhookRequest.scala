@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetWebhookRequest extends js.Object {
   /**
-    *  Unique Id for a webhook. 
+    *  The unique ID for a webhook. 
     */
   var webhookId: WebhookId = js.native
 }

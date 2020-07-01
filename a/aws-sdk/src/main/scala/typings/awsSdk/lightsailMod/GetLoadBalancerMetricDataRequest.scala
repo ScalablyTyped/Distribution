@@ -31,7 +31,7 @@ trait GetLoadBalancerMetricDataRequest extends js.Object {
     */
   var statistics: MetricStatisticList = js.native
   /**
-    * The unit for the metric data request. Valid units depend on the metric data being required. For the valid units with each available metric, see the metricName parameter.
+    * The unit for the metric data request. Valid units depend on the metric data being requested. For the valid units with each available metric, see the metricName parameter.
     */
   var unit: MetricUnit = js.native
 }

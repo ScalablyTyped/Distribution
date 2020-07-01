@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Filter extends js.Object {
   /**
-    * The name of the filter. The valid values are: "auto-scaling-group", "key", "value", and "propagate-at-launch".
+    * The name of the filter. The valid values are: auto-scaling-group, key, value, and propagate-at-launch.
     */
   var Name: js.UndefOr[XmlString] = js.native
   /**
-    * The value of the filter.
+    * One or more filter values. Filter values are case-sensitive.
     */
   var Values: js.UndefOr[typings.awsSdk.autoscalingMod.Values] = js.native
 }

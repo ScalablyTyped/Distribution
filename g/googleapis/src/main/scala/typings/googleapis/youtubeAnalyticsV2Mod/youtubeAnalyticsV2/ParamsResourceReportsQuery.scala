@@ -113,14 +113,14 @@ object ParamsResourceReportsQuery {
     ids: String = null,
     includeHistoricalChannelData: js.UndefOr[Boolean] = js.undefined,
     key: String = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[Double] = js.undefined,
     metrics: String = null,
     oauth_token: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
     quotaUser: String = null,
     sort: String = null,
     startDate: String = null,
-    startIndex: Int | Double = null,
+    startIndex: js.UndefOr[Double] = js.undefined,
     uploadType: String = null,
     upload_protocol: String = null
   ): ParamsResourceReportsQuery = {
@@ -136,16 +136,16 @@ object ParamsResourceReportsQuery {
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeHistoricalChannelData)) __obj.updateDynamic("includeHistoricalChannelData")(includeHistoricalChannelData.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeHistoricalChannelData)) __obj.updateDynamic("includeHistoricalChannelData")(includeHistoricalChannelData.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
     if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])
     if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceReportsQuery]

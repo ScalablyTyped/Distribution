@@ -9,14 +9,53 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Mailboxes extends js.Object {
+  /**
+    * Destroy a mailbox.
+    *
+    * @param params.mailboxName - Name of the mailbox.
+    */
   def delete(params: MailboxName): js.Promise[Unit] = js.native
+  /**
+    * Destroy a mailbox.
+    *
+    * @param params.mailboxName - Name of the mailbox.
+    */
   def delete(params: MailboxName, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  /**
+    * Retrieve the current state of a mailbox.
+    *
+    * @param params.mailboxName - Name of the mailbox.
+    */
   def get(params: MailboxName): js.Promise[Mailbox] = js.native
+  /**
+    * Retrieve the current state of a mailbox.
+    *
+    * @param params.mailboxName - Name of the mailbox.
+    */
   def get(params: MailboxName, callback: js.Function2[/* err */ Error, /* mailbox */ Mailbox, Unit]): Unit = js.native
+  /**
+    * List all mailboxes.
+    */
   def list(): js.Promise[js.Array[Mailbox]] = js.native
-  /* Methods */
+  /**
+    * List all mailboxes.
+    */
   def list(callback: js.Function2[/* err */ Error, /* mailboxs */ js.Array[Mailbox], Unit]): Unit = js.native
+  /**
+    * Change the state of a mailbox. (Note - implicitly creates the mailbox).
+    *
+    * @param params.mailboxName - Name of the mailbox.
+    * @param params.oldMessages - Count of old messages in the mailbox.
+    * @param params.newMessages - Count of new messages in the mailbox.
+    */
   def update(params: NewMessages): js.Promise[Unit] = js.native
+  /**
+    * Change the state of a mailbox. (Note - implicitly creates the mailbox).
+    *
+    * @param params.mailboxName - Name of the mailbox.
+    * @param params.oldMessages - Count of old messages in the mailbox.
+    * @param params.newMessages - Count of new messages in the mailbox.
+    */
   def update(params: NewMessages, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
 }
 

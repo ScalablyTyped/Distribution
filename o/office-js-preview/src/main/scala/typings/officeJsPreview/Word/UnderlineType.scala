@@ -9,7 +9,7 @@ sealed trait UnderlineType extends js.Object
 
 /**
   *
-  * Underline types
+  * The supported styles for underline format.
   *
   * [Api set: WordApi]
   */
@@ -17,7 +17,6 @@ sealed trait UnderlineType extends js.Object
 @js.native
 object UnderlineType extends js.Object {
   /**
-    *
     * A single dash underline.
     *
     */
@@ -34,7 +33,6 @@ object UnderlineType extends js.Object {
   sealed trait dashLineLongHeavy extends UnderlineType
   
   /**
-    *
     * An alternating dot-dash underline.
     *
     */
@@ -45,14 +43,12 @@ object UnderlineType extends js.Object {
   sealed trait dotDashLineHeavy extends UnderlineType
   
   /**
-    *
     * @deprecated DotLine is no longer supported.
     */
   @js.native
   sealed trait dotLine extends UnderlineType
   
   /**
-    *
     * A dotted underline.
     *
     */
@@ -63,7 +59,6 @@ object UnderlineType extends js.Object {
   sealed trait dottedHeavy extends UnderlineType
   
   /**
-    *
     * A double underline.
     *
     */
@@ -71,7 +66,6 @@ object UnderlineType extends js.Object {
   sealed trait double extends UnderlineType
   
   /**
-    *
     * @deprecated Hidden is no longer supported.
     */
   @js.native
@@ -81,7 +75,6 @@ object UnderlineType extends js.Object {
   sealed trait mixed extends UnderlineType
   
   /**
-    *
     * No underline.
     *
     */
@@ -89,7 +82,6 @@ object UnderlineType extends js.Object {
   sealed trait none extends UnderlineType
   
   /**
-    *
     * A single underline. This is the default value.
     *
     */
@@ -97,7 +89,6 @@ object UnderlineType extends js.Object {
   sealed trait single extends UnderlineType
   
   /**
-    *
     * A single thick underline.
     *
     */
@@ -105,7 +96,6 @@ object UnderlineType extends js.Object {
   sealed trait thick extends UnderlineType
   
   /**
-    *
     * An alternating dot-dot-dash underline.
     *
     */
@@ -116,7 +106,6 @@ object UnderlineType extends js.Object {
   sealed trait twoDotDashLineHeavy extends UnderlineType
   
   /**
-    *
     * A single wavy underline.
     *
     */
@@ -130,7 +119,6 @@ object UnderlineType extends js.Object {
   sealed trait waveHeavy extends UnderlineType
   
   /**
-    *
     * Only underline individual words.
     *
     */

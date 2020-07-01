@@ -25,11 +25,11 @@ trait SchemaBundle extends js.Object {
 
 object SchemaBundle {
   @scala.inline
-  def apply(sha1: String = null, sha256: String = null, versionCode: Int | Double = null): SchemaBundle = {
+  def apply(sha1: String = null, sha256: String = null, versionCode: js.UndefOr[Double] = js.undefined): SchemaBundle = {
     val __obj = js.Dynamic.literal()
     if (sha1 != null) __obj.updateDynamic("sha1")(sha1.asInstanceOf[js.Any])
     if (sha256 != null) __obj.updateDynamic("sha256")(sha256.asInstanceOf[js.Any])
-    if (versionCode != null) __obj.updateDynamic("versionCode")(versionCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(versionCode)) __obj.updateDynamic("versionCode")(versionCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBundle]
   }
 }

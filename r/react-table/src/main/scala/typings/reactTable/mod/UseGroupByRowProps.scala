@@ -18,7 +18,7 @@ trait UseGroupByRowProps[D /* <: js.Object */] extends js.Object {
 
 object UseGroupByRowProps {
   @scala.inline
-  def apply[D](
+  def apply[/* <: js.Object */ D](
     depth: Double,
     groupByID: IdType[D],
     groupByVal: String,

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   *
   * A scoped collection of custom XML parts.
-  A scoped collection is the result of some operation, e.g., filtering by namespace.
+  A scoped collection is the result of some operation (e.g., filtering by namespace).
   A scoped collection cannot be scoped any further.
   *
   * [Api set: ExcelApi 1.5]

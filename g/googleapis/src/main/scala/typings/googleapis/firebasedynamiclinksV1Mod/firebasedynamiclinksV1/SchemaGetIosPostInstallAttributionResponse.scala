@@ -112,7 +112,7 @@ object SchemaGetIosPostInstallAttributionResponse {
     if (externalBrowserDestinationLink != null) __obj.updateDynamic("externalBrowserDestinationLink")(externalBrowserDestinationLink.asInstanceOf[js.Any])
     if (fallbackLink != null) __obj.updateDynamic("fallbackLink")(fallbackLink.asInstanceOf[js.Any])
     if (invitationId != null) __obj.updateDynamic("invitationId")(invitationId.asInstanceOf[js.Any])
-    if (!js.isUndefined(isStrongMatchExecutable)) __obj.updateDynamic("isStrongMatchExecutable")(isStrongMatchExecutable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isStrongMatchExecutable)) __obj.updateDynamic("isStrongMatchExecutable")(isStrongMatchExecutable.get.asInstanceOf[js.Any])
     if (matchMessage != null) __obj.updateDynamic("matchMessage")(matchMessage.asInstanceOf[js.Any])
     if (requestIpVersion != null) __obj.updateDynamic("requestIpVersion")(requestIpVersion.asInstanceOf[js.Any])
     if (requestedLink != null) __obj.updateDynamic("requestedLink")(requestedLink.asInstanceOf[js.Any])

@@ -52,7 +52,7 @@ trait WithFormikConfig[Props, Values /* <: FormikValues */, DeprecatedPayload] e
 
 object WithFormikConfig {
   @scala.inline
-  def apply[Props, Values, DeprecatedPayload](
+  def apply[Props, /* <: typings.formik.typesMod.FormikValues */ Values, DeprecatedPayload](
     handleSubmit: (Values, FormikBag[Props, Values]) => Unit,
     displayName: String = null,
     enableReinitialize: js.UndefOr[Boolean] = js.undefined,

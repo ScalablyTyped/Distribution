@@ -23,7 +23,7 @@ trait ExportImageTask extends js.Object {
     */
   var Progress: js.UndefOr[String] = js.native
   /**
-    * Information about the destination S3 bucket.
+    * Information about the destination Amazon S3 bucket.
     */
   var S3ExportLocation: js.UndefOr[ExportTaskS3Location] = js.native
   /**
@@ -34,6 +34,10 @@ trait ExportImageTask extends js.Object {
     * The status message for the export image task.
     */
   var StatusMessage: js.UndefOr[String] = js.native
+  /**
+    * Any tags assigned to the image being exported.
+    */
+  var Tags: js.UndefOr[TagList] = js.native
 }
 
 object ExportImageTask {
@@ -45,7 +49,8 @@ object ExportImageTask {
     Progress: String = null,
     S3ExportLocation: ExportTaskS3Location = null,
     Status: String = null,
-    StatusMessage: String = null
+    StatusMessage: String = null,
+    Tags: TagList = null
   ): ExportImageTask = {
     val __obj = js.Dynamic.literal()
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
@@ -55,6 +60,7 @@ object ExportImageTask {
     if (S3ExportLocation != null) __obj.updateDynamic("S3ExportLocation")(S3ExportLocation.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (StatusMessage != null) __obj.updateDynamic("StatusMessage")(StatusMessage.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportImageTask]
   }
 }

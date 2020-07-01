@@ -36,6 +36,9 @@ object howlerStrings {
   sealed trait loading extends js.Object
   
   @js.native
+  sealed trait metadata extends js.Object
+  
+  @js.native
   sealed trait mute extends js.Object
   
   @js.native
@@ -85,6 +88,8 @@ object howlerStrings {
   def loaderror: loaderror = "loaderror".asInstanceOf[loaderror]
   @scala.inline
   def loading: loading = "loading".asInstanceOf[loading]
+  @scala.inline
+  def metadata: metadata = "metadata".asInstanceOf[metadata]
   @scala.inline
   def mute: mute = "mute".asInstanceOf[mute]
   @scala.inline

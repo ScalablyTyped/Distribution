@@ -17,7 +17,7 @@ class JsonMetadata () extends js.Object {
     parentName: String
   ): JsonMetadataClass = js.native
   def addProperties(className: String, propertiesInfos: js.Array[_]): Unit = js.native
-  def addProperty(className: String, propertyInfo: js.Any): Unit = js.native
+  def addProperty(className: String, propertyInfo: js.Any): JsonObjectProperty = js.native
   def createClass(name: String): js.Any = js.native
   def createClass(name: String, json: js.Any): js.Any = js.native
   def findClass(name: String): JsonMetadataClass = js.native
@@ -25,6 +25,8 @@ class JsonMetadata () extends js.Object {
   def findProperty(className: String, propertyName: String): JsonObjectProperty = js.native
   def getChildrenClasses(name: String): js.Array[JsonMetadataClass] = js.native
   def getChildrenClasses(name: String, canBeCreated: Boolean): js.Array[JsonMetadataClass] = js.native
+  def getDynamicPropertiesByObj(obj: js.Any): js.Array[JsonObjectProperty] = js.native
+  def getDynamicPropertiesByObj(obj: js.Any, dynamicType: String): js.Array[JsonObjectProperty] = js.native
   def getProperties(className: String): js.Array[JsonObjectProperty] = js.native
   def getPropertiesByObj(obj: js.Any): js.Array[JsonObjectProperty] = js.native
   def getRequiredProperties(name: String): js.Array[String] = js.native

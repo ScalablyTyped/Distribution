@@ -85,7 +85,7 @@ trait `1`[T /* <: js.Array[_] */] extends js.Object {
 
 object `1` {
   @scala.inline
-  def apply[T](
+  def apply[/* <: js.Array[_] */ T](
     `1`: js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
     ],

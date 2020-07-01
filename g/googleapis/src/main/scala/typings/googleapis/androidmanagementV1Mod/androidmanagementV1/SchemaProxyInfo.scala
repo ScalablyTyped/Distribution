@@ -36,13 +36,13 @@ object SchemaProxyInfo {
     excludedHosts: js.Array[String] = null,
     host: String = null,
     pacUri: String = null,
-    port: Int | Double = null
+    port: js.UndefOr[Double] = js.undefined
   ): SchemaProxyInfo = {
     val __obj = js.Dynamic.literal()
     if (excludedHosts != null) __obj.updateDynamic("excludedHosts")(excludedHosts.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (pacUri != null) __obj.updateDynamic("pacUri")(pacUri.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProxyInfo]
   }
 }

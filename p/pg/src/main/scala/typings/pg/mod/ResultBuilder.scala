@@ -10,7 +10,7 @@ trait ResultBuilder[R /* <: QueryResultRow */] extends QueryResult[R] {
 
 object ResultBuilder {
   @scala.inline
-  def apply[R](
+  def apply[/* <: typings.pg.mod.QueryResultRow */ R](
     addRow: R => Unit,
     command: String,
     fields: js.Array[FieldDef],

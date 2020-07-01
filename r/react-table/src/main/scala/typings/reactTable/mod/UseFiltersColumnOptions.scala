@@ -14,7 +14,7 @@ trait UseFiltersColumnOptions[D /* <: js.Object */] extends js.Object {
 
 object UseFiltersColumnOptions {
   @scala.inline
-  def apply[D](
+  def apply[/* <: js.Object */ D](
     Filter: Renderer[FilterProps[D]] = null,
     defaultCanFilter: js.UndefOr[Boolean] = js.undefined,
     disableFilters: js.UndefOr[Boolean] = js.undefined,

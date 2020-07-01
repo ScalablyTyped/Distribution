@@ -12,7 +12,7 @@ trait RaiseAction[TEvent /* <: EventObject */] extends js.Object {
 
 object RaiseAction {
   @scala.inline
-  def apply[TEvent](
+  def apply[/* <: typings.xstate.typesMod.EventObject */ TEvent](
     event: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any,
     `type`: Raise
   ): RaiseAction[TEvent] = {

@@ -14,16 +14,25 @@ object webSocketConnectionMod extends js.Object {
   @js.native
   class WebSocketConnection protected () extends Transport {
     /**
-      * @param {string} connId identifier for this transport
-      * @param {RepoInfo} repoInfo The info for the websocket endpoint.
-      * @param {string=} transportSessionId Optional transportSessionId if this is connecting to an existing transport
+      * @param connId identifier for this transport
+      * @param repoInfo The info for the websocket endpoint.
+      * @param applicationId The Firebase App ID for this project.
+      * @param transportSessionId Optional transportSessionId if this is connecting to an existing transport
       *                                         session
-      * @param {string=} lastSessionId Optional lastSessionId if there was a previous connection
+      * @param lastSessionId Optional lastSessionId if there was a previous connection
       */
     def this(connId: String, repoInfo: RepoInfo) = this()
-    def this(connId: String, repoInfo: RepoInfo, transportSessionId: String) = this()
-    def this(connId: String, repoInfo: RepoInfo, transportSessionId: String, lastSessionId: String) = this()
+    def this(connId: String, repoInfo: RepoInfo, applicationId: String) = this()
+    def this(connId: String, repoInfo: RepoInfo, applicationId: String, transportSessionId: String) = this()
+    def this(
+      connId: String,
+      repoInfo: RepoInfo,
+      applicationId: String,
+      transportSessionId: String,
+      lastSessionId: String
+    ) = this()
     var appendFrame_ : js.Any = js.native
+    var applicationId: js.UndefOr[js.Any] = js.native
     var connURL: String = js.native
     var everConnected_ : js.Any = js.native
     /**

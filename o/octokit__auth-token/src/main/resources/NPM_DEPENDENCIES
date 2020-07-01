@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@octokit/auth-token" : "2.4.1"
+      "@octokit/auth-token" : "2.4.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@octokit/auth-token" : "2.4.1"
+      "@octokit/auth-token" : "2.4.2"
     }
   ],
   "compile-devDependencies" : [

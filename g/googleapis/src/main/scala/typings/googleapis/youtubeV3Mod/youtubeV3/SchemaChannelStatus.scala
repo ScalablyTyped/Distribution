@@ -32,7 +32,7 @@ object SchemaChannelStatus {
     privacyStatus: String = null
   ): SchemaChannelStatus = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isLinked)) __obj.updateDynamic("isLinked")(isLinked.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLinked)) __obj.updateDynamic("isLinked")(isLinked.get.asInstanceOf[js.Any])
     if (longUploadsStatus != null) __obj.updateDynamic("longUploadsStatus")(longUploadsStatus.asInstanceOf[js.Any])
     if (privacyStatus != null) __obj.updateDynamic("privacyStatus")(privacyStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaChannelStatus]

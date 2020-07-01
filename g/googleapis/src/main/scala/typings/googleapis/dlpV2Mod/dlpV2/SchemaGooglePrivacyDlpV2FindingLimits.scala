@@ -29,13 +29,13 @@ object SchemaGooglePrivacyDlpV2FindingLimits {
   @scala.inline
   def apply(
     maxFindingsPerInfoType: js.Array[SchemaGooglePrivacyDlpV2InfoTypeLimit] = null,
-    maxFindingsPerItem: Int | Double = null,
-    maxFindingsPerRequest: Int | Double = null
+    maxFindingsPerItem: js.UndefOr[Double] = js.undefined,
+    maxFindingsPerRequest: js.UndefOr[Double] = js.undefined
   ): SchemaGooglePrivacyDlpV2FindingLimits = {
     val __obj = js.Dynamic.literal()
     if (maxFindingsPerInfoType != null) __obj.updateDynamic("maxFindingsPerInfoType")(maxFindingsPerInfoType.asInstanceOf[js.Any])
-    if (maxFindingsPerItem != null) __obj.updateDynamic("maxFindingsPerItem")(maxFindingsPerItem.asInstanceOf[js.Any])
-    if (maxFindingsPerRequest != null) __obj.updateDynamic("maxFindingsPerRequest")(maxFindingsPerRequest.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFindingsPerItem)) __obj.updateDynamic("maxFindingsPerItem")(maxFindingsPerItem.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFindingsPerRequest)) __obj.updateDynamic("maxFindingsPerRequest")(maxFindingsPerRequest.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2FindingLimits]
   }
 }

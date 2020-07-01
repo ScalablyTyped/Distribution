@@ -11,10 +11,10 @@ import scala.scalajs.js.annotation._
   * @memberof PIXI.resources
   * @param {string} source - Base64 encoded SVG element or URL for SVG file.
   * @param {object} [options] - Options to use
-  * @param {number} [options.scale=1] Scale to apply to SVG. Overridden by...
-  * @param {number} [options.width] Rasterize SVG this wide. Aspect ratio preserved if height not specified.
-  * @param {number} [options.height] Rasterize SVG this high. Aspect ratio preserved if width not specified.
-  * @param {boolean} [options.autoLoad=true] Start loading right away.
+  * @param {number} [options.scale=1] - Scale to apply to SVG. Overridden by...
+  * @param {number} [options.width] - Rasterize SVG this wide. Aspect ratio preserved if height not specified.
+  * @param {number} [options.height] - Rasterize SVG this high. Aspect ratio preserved if width not specified.
+  * @param {boolean} [options.autoLoad=true] - Start loading right away.
   */
 @js.native
 trait SVGResource extends BaseImageResource {

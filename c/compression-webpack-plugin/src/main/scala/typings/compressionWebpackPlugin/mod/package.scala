@@ -16,6 +16,13 @@ package object mod {
     /* result */ typings.node.Buffer, 
     scala.Unit
   ]
+  /**
+    * Prepare compressed versions of assets to serve them with Content-Encoding.
+    */
   type CompressionPlugin[O] = typings.webpack.mod.Plugin
-  type Pattern = java.lang.String | typings.std.RegExp | (js.Array[typings.std.RegExp | java.lang.String])
+  type FilenameFunction = js.Function1[/* info */ typings.compressionWebpackPlugin.mod.FileInfo, java.lang.String]
+  /** Filtering rule as regex or string */
+  type Rule = java.lang.String | typings.std.RegExp
+  /** Filtering rules. */
+  type Rules = typings.compressionWebpackPlugin.mod.Rule | js.Array[typings.compressionWebpackPlugin.mod.Rule]
 }

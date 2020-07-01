@@ -5,7 +5,6 @@ import typings.echarts.anon.AnimationDelayUpdate
 import typings.echarts.anon.AnimationDuration
 import typings.echarts.anon.BorderRadius
 import typings.echarts.anon.BrushType
-import typings.echarts.anon.ExtraCssText
 import typings.echarts.anon.ItemStyleLabel
 import typings.echarts.anon.ShadowOffsetY
 import typings.echarts.echarts.EChartOption.SeriesEffectScatter.DataObject
@@ -659,7 +658,7 @@ trait SeriesEffectScatter_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-effectScatter.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
   /**
     * @default
     * "effectScatter"
@@ -759,7 +758,7 @@ object SeriesEffectScatter_ {
     symbolOffset: js.Array[_] = null,
     symbolRotate: js.UndefOr[Double] = js.undefined,
     symbolSize: js.Array[_] | Double = null,
-    tooltip: ExtraCssText = null,
+    tooltip: BaseTooltip = null,
     `type`: String = null,
     xAxisIndex: js.UndefOr[Double] = js.undefined,
     yAxisIndex: js.UndefOr[Double] = js.undefined,

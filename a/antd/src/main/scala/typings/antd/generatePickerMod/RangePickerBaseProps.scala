@@ -42,7 +42,7 @@ import typings.antd.antdStrings.time
 import typings.antd.antdStrings.tree
 import typings.antd.antdStrings.vertical
 import typings.antd.sizeContextMod.SizeType
-import typings.rcPicker.dateBodyMod.DateRender
+import typings.rcPicker.anon.Range
 import typings.rcPicker.interfaceMod.DisabledTimes
 import typings.rcPicker.interfaceMod.EventValue
 import typings.rcPicker.interfaceMod.Locale
@@ -51,6 +51,7 @@ import typings.rcPicker.interfaceMod.PickerMode
 import typings.rcPicker.interfaceMod.RangeValue
 import typings.rcPicker.monthBodyMod.MonthCellRender
 import typings.rcPicker.pickerMod.PickerRefConfig
+import typings.rcPicker.rangePickerMod.RangeDateRender
 import typings.react.mod.CSSProperties
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
@@ -126,7 +127,7 @@ trait RangePickerBaseProps[DateType] extends RangePickerProps[DateType] {
   var bordered: js.UndefOr[Boolean] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var clearIcon: js.UndefOr[ReactNode] = js.undefined
-  var dateRender: js.UndefOr[DateRender[DateType]] = js.undefined
+  var dateRender: js.UndefOr[RangeDateRender[DateType]] = js.undefined
   var defaultOpen: js.UndefOr[Boolean] = js.undefined
   var defaultPickerValue: js.UndefOr[js.Tuple2[DateType, DateType]] = js.undefined
   var defaultValue: js.UndefOr[RangeValue[DateType]] = js.undefined
@@ -258,7 +259,7 @@ object RangePickerBaseProps {
     bordered: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     clearIcon: ReactNode = null,
-    dateRender: (DateType, DateType) => ReactNode = null,
+    dateRender: (DateType, DateType, /* info */ Range) => ReactNode = null,
     defaultOpen: js.UndefOr[Boolean] = js.undefined,
     defaultPickerValue: js.Tuple2[DateType, DateType] = null,
     defaultValue: js.UndefOr[Null | RangeValue[DateType]] = js.undefined,
@@ -365,7 +366,7 @@ object RangePickerBaseProps {
     if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon.asInstanceOf[js.Any])
-    if (dateRender != null) __obj.updateDynamic("dateRender")(js.Any.fromFunction2(dateRender))
+    if (dateRender != null) __obj.updateDynamic("dateRender")(js.Any.fromFunction3(dateRender))
     if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen.get.asInstanceOf[js.Any])
     if (defaultPickerValue != null) __obj.updateDynamic("defaultPickerValue")(defaultPickerValue.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])

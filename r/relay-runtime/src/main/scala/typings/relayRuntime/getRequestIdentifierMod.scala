@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("relay-runtime/lib/util/getRequestIdentifier", JSImport.Namespace)
 @js.native
 object getRequestIdentifierMod extends js.Object {
-  def getRequestIdentifier(parameters: RequestParameters, variables: Variables): RequestIdentifier = js.native
+  def default(parameters: RequestParameters, variables: Variables): RequestIdentifier = js.native
   type RequestIdentifier = String
 }
 

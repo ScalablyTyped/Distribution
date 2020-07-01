@@ -26,12 +26,12 @@ object SchemaListThreadsResponse {
   @scala.inline
   def apply(
     nextPageToken: String = null,
-    resultSizeEstimate: Int | Double = null,
+    resultSizeEstimate: js.UndefOr[Double] = js.undefined,
     threads: js.Array[SchemaThread] = null
   ): SchemaListThreadsResponse = {
     val __obj = js.Dynamic.literal()
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (resultSizeEstimate != null) __obj.updateDynamic("resultSizeEstimate")(resultSizeEstimate.asInstanceOf[js.Any])
+    if (!js.isUndefined(resultSizeEstimate)) __obj.updateDynamic("resultSizeEstimate")(resultSizeEstimate.get.asInstanceOf[js.Any])
     if (threads != null) __obj.updateDynamic("threads")(threads.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListThreadsResponse]
   }

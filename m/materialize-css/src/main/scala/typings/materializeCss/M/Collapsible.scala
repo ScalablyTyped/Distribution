@@ -1,11 +1,11 @@
 package typings.materializeCss.M
 
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Collapsible extends Component[CollapsibleOptions] {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<CollapsibleOptions> * / any */ trait Collapsible extends js.Object {
   /**
     * Close collapsible section
     * @param n Nth section to close
@@ -20,14 +20,8 @@ trait Collapsible extends Component[CollapsibleOptions] {
 
 object Collapsible {
   @scala.inline
-  def apply(
-    close: Double => Unit,
-    destroy: () => Unit,
-    el: Element,
-    open: Double => Unit,
-    options: CollapsibleOptions
-  ): Collapsible = {
-    val __obj = js.Dynamic.literal(close = js.Any.fromFunction1(close), destroy = js.Any.fromFunction0(destroy), el = el.asInstanceOf[js.Any], open = js.Any.fromFunction1(open), options = options.asInstanceOf[js.Any])
+  def apply(close: Double => Unit, open: Double => Unit): Collapsible = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction1(close), open = js.Any.fromFunction1(open))
     __obj.asInstanceOf[Collapsible]
   }
 }

@@ -30,7 +30,7 @@ object SchemaUpdateSchemaRequest {
     val __obj = js.Dynamic.literal()
     if (debugOptions != null) __obj.updateDynamic("debugOptions")(debugOptions.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateOnly)) __obj.updateDynamic("validateOnly")(validateOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateOnly)) __obj.updateDynamic("validateOnly")(validateOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUpdateSchemaRequest]
   }
 }

@@ -22,10 +22,10 @@ trait SchemaDiskAttachment extends js.Object {
 
 object SchemaDiskAttachment {
   @scala.inline
-  def apply(deviceName: String = null, index: Int | Double = null): SchemaDiskAttachment = {
+  def apply(deviceName: String = null, index: js.UndefOr[Double] = js.undefined): SchemaDiskAttachment = {
     val __obj = js.Dynamic.literal()
     if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDiskAttachment]
   }
 }

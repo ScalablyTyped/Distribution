@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   ]
   var closingElement: JSXClosingElement_ | Null
   var openingElement: JSXOpeningElement_
-  var selfClosing: js.Any
+  var selfClosing: Boolean | Null
   @JSName("type")
   var type_JSXElement_ : JSXElement
 }
@@ -28,17 +28,17 @@ object JSXElement_ {
       JSXText_ | JSXExpressionContainer_ | JSXSpreadChild_ | JSXElement_ | JSXFragment_
     ],
     openingElement: JSXOpeningElement_,
-    selfClosing: js.Any,
     `type`: JSXElement,
     closingElement: JSXClosingElement_ = null,
     end: Double = null.asInstanceOf[Double],
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
+    selfClosing: Boolean = null.asInstanceOf[Boolean],
     start: Double = null.asInstanceOf[Double],
     trailingComments: js.Array[Comment] = null
   ): JSXElement_ = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], openingElement = openingElement.asInstanceOf[js.Any], selfClosing = selfClosing.asInstanceOf[js.Any], closingElement = closingElement.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], openingElement = openingElement.asInstanceOf[js.Any], closingElement = closingElement.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], selfClosing = selfClosing.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSXElement_]
   }

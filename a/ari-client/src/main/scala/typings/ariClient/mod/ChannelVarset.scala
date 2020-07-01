@@ -6,9 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChannelVarset extends Event {
+  /**
+    * The channel on which the variable was set. If missing, the variable is a global variable.
+    */
   var channel: js.UndefOr[Channel] = js.undefined
+  /**
+    * The new value of the variable.
+    */
   var value: String
-  /* Properties */
+  /**
+    * The variable that changed.
+    */
   var variable: String
 }
 

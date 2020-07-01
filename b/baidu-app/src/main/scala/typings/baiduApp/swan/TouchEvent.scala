@@ -12,7 +12,7 @@ trait TouchEvent[T /* <: TouchEventType */] extends BaseEvent[T, X] {
 
 object TouchEvent {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.baiduApp.swan.TouchEventType */ T](
     changedTouches: js.Array[Touch],
     currentTarget: EventTarget,
     detail: X,

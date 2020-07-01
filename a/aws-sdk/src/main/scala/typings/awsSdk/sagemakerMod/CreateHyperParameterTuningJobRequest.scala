@@ -23,7 +23,7 @@ trait CreateHyperParameterTuningJobRequest extends js.Object {
     */
   var TrainingJobDefinition: js.UndefOr[HyperParameterTrainingJobDefinition] = js.native
   /**
-    * 
+    * A list of the HyperParameterTrainingJobDefinition objects launched for this tuning job.
     */
   var TrainingJobDefinitions: js.UndefOr[HyperParameterTrainingJobDefinitions] = js.native
   /**

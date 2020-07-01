@@ -2,7 +2,7 @@ package typings.ionicons.componentsMod.stencilCoreAugmentingMod.JSX
 
 import typings.ionicons.componentsMod.LocalJSX.IonIcon
 import typings.ionicons.componentsMod.global.HTMLIonIconElement
-import typings.ionicons.stencilCoreMod.JSXBase.HTMLAttributes
+import typings.ionicons.stencilPublicRuntimeMod.JSXBase.HTMLAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

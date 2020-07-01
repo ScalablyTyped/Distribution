@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * @property element - The target Element that the event was fired from.
   * @property touches - A list of all touches currently in contact with the device.
   * @property changedTouches - A list of touches that have changed since the last event.
+  * @property event - The original browser TouchEvent.
   * @param device - The source device of the touch events.
   * @param event - The original browser TouchEvent.
   */
@@ -22,6 +23,10 @@ trait TouchEvent extends js.Object {
     * The target Element that the event was fired from.
     */
   var element: Element
+  /**
+    * The original browser TouchEvent.
+    */
+  var event: TouchEvent
   /**
     * A list of all touches currently in contact with the device.
     */
@@ -41,10 +46,11 @@ object TouchEvent {
   def apply(
     changedTouches: js.Array[Touch],
     element: Element,
+    event: TouchEvent,
     getTouchById: (Double, js.Array[Touch]) => Touch,
     touches: js.Array[Touch]
   ): TouchEvent = {
-    val __obj = js.Dynamic.literal(changedTouches = changedTouches.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], getTouchById = js.Any.fromFunction2(getTouchById), touches = touches.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(changedTouches = changedTouches.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], getTouchById = js.Any.fromFunction2(getTouchById), touches = touches.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchEvent]
   }
 }

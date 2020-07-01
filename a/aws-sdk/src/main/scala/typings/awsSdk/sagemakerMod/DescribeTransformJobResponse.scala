@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeTransformJobResponse extends js.Object {
   /**
-    * 
+    * The Amazon Resource Name (ARN) of the AutoML transform job.
     */
   var AutoMLJobArn: js.UndefOr[typings.awsSdk.sagemakerMod.AutoMLJobArn] = js.native
   /**
@@ -40,6 +40,10 @@ trait DescribeTransformJobResponse extends js.Object {
     * The maximum payload size, in MB, used in the transform job.
     */
   var MaxPayloadInMB: js.UndefOr[typings.awsSdk.sagemakerMod.MaxPayloadInMB] = js.native
+  /**
+    * The timeout and maximum number of retries for processing a transform job invocation.
+    */
+  var ModelClientConfig: js.UndefOr[typings.awsSdk.sagemakerMod.ModelClientConfig] = js.native
   /**
     * The name of the model used in the transform job.
     */
@@ -97,6 +101,7 @@ object DescribeTransformJobResponse {
     LabelingJobArn: LabelingJobArn = null,
     MaxConcurrentTransforms: js.UndefOr[MaxConcurrentTransforms] = js.undefined,
     MaxPayloadInMB: js.UndefOr[MaxPayloadInMB] = js.undefined,
+    ModelClientConfig: ModelClientConfig = null,
     TransformEndTime: Timestamp = null,
     TransformOutput: TransformOutput = null,
     TransformStartTime: Timestamp = null
@@ -111,6 +116,7 @@ object DescribeTransformJobResponse {
     if (LabelingJobArn != null) __obj.updateDynamic("LabelingJobArn")(LabelingJobArn.asInstanceOf[js.Any])
     if (!js.isUndefined(MaxConcurrentTransforms)) __obj.updateDynamic("MaxConcurrentTransforms")(MaxConcurrentTransforms.get.asInstanceOf[js.Any])
     if (!js.isUndefined(MaxPayloadInMB)) __obj.updateDynamic("MaxPayloadInMB")(MaxPayloadInMB.get.asInstanceOf[js.Any])
+    if (ModelClientConfig != null) __obj.updateDynamic("ModelClientConfig")(ModelClientConfig.asInstanceOf[js.Any])
     if (TransformEndTime != null) __obj.updateDynamic("TransformEndTime")(TransformEndTime.asInstanceOf[js.Any])
     if (TransformOutput != null) __obj.updateDynamic("TransformOutput")(TransformOutput.asInstanceOf[js.Any])
     if (TransformStartTime != null) __obj.updateDynamic("TransformStartTime")(TransformStartTime.asInstanceOf[js.Any])

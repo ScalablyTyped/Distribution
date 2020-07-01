@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ThirdPartySourceRepository extends js.Object {
   /**
-    *  The Amazon Resource Name (ARN) identifying the repository connection. 
+    *  The Amazon Resource Name (ARN) of an AWS CodeStar Connections connection. Its format is arn:aws:codestar-connections:region-id:aws-account_id:connection/connection-id. For more information, see Connection in the AWS CodeStar Connections API Reference. 
     */
   var ConnectionArn: typings.awsSdk.codegurureviewerMod.ConnectionArn = js.native
   /**
@@ -15,7 +15,7 @@ trait ThirdPartySourceRepository extends js.Object {
     */
   var Name: typings.awsSdk.codegurureviewerMod.Name = js.native
   /**
-    *  The username of the owner of the repository. 
+    *  The owner of the repository. For a GitHub, GitHub Enterprise, or Bitbucket repository, this is the username for the account that owns the repository. 
     */
   var Owner: typings.awsSdk.codegurureviewerMod.Owner = js.native
 }

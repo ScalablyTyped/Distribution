@@ -1,7 +1,7 @@
 package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
-import typings.googleapis.AnonMysqlExportOptions
-import typings.googleapis.AnonSelectQuery
+import typings.googleapis.anon.MysqlExportOptions
+import typings.googleapis.anon.SelectQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait SchemaExportContext extends js.Object {
   /**
     * Options for exporting data as CSV.
     */
-  var csvExportOptions: js.UndefOr[AnonSelectQuery] = js.native
+  var csvExportOptions: js.UndefOr[SelectQuery] = js.native
   /**
     * Databases to be exported. MySQL instances: If fileType is SQL and no
     * database is specified, all databases are exported, except for the mysql
@@ -38,7 +38,7 @@ trait SchemaExportContext extends js.Object {
   /**
     * Options for exporting data as SQL statements.
     */
-  var sqlExportOptions: js.UndefOr[AnonMysqlExportOptions] = js.native
+  var sqlExportOptions: js.UndefOr[MysqlExportOptions] = js.native
   /**
     * The path to the file in Google Cloud Storage where the export will be
     * stored. The URI is in the form gs://bucketName/fileName. If the file
@@ -52,11 +52,11 @@ trait SchemaExportContext extends js.Object {
 object SchemaExportContext {
   @scala.inline
   def apply(
-    csvExportOptions: AnonSelectQuery = null,
+    csvExportOptions: SelectQuery = null,
     databases: js.Array[String] = null,
     fileType: String = null,
     kind: String = null,
-    sqlExportOptions: AnonMysqlExportOptions = null,
+    sqlExportOptions: MysqlExportOptions = null,
     uri: String = null
   ): SchemaExportContext = {
     val __obj = js.Dynamic.literal()

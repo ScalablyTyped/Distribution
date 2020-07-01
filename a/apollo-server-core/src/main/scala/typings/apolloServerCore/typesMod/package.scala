@@ -10,8 +10,8 @@ package object typesMod {
     /* context */ FunctionParams, 
     typings.apolloServerTypes.mod.ValueOrPromise[typings.apolloServerCore.typesMod.Context[ProducedContext]]
   ]
-  type PluginDefinition = (typings.apolloServerPluginBase.mod.ApolloServerPlugin[typings.std.Record[java.lang.String, js.Any]]) | (js.Function0[
-    typings.apolloServerPluginBase.mod.ApolloServerPlugin[typings.std.Record[java.lang.String, js.Any]]
+  type PluginDefinition = typings.apolloServerPluginBase.mod.ApolloServerPlugin[typings.apolloServerTypes.mod.BaseContext] | (js.Function0[
+    typings.apolloServerPluginBase.mod.ApolloServerPlugin[typings.apolloServerTypes.mod.BaseContext]
   ])
   type SchemaChangeCallback = js.Function1[/* schema */ typings.graphql.mod.GraphQLSchema, scala.Unit]
   type Unsubscriber = js.Function0[scala.Unit]

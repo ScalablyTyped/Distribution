@@ -17,7 +17,8 @@ trait IncludeBlocked extends js.Object {
   var limit: js.UndefOr[Double] = js.undefined
   /**
     * Return the sites that exactly appear on the user's new-tab page. When true, all other options are ignored
-    * except limit and includeFavicon.
+    * except limit and includeFavicon. If the user disabled newtab Top Sites, the newtab parameter will be
+    * ignored.
     */
   var newtab: js.UndefOr[Boolean] = js.undefined
   /** Limit the result to a single top site link per domain */

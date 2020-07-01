@@ -43,7 +43,7 @@ trait PluginSpec[T, S /* <: Schema[_, _] */] extends js.Object {
     * that are functions will be bound to have the plugin instance as
     * their `this` binding.
     */
-  var props: js.UndefOr[EditorProps[S] | Null] = js.undefined
+  var props: js.UndefOr[(EditorProps[Plugin[T, S], S]) | Null] = js.undefined
   /**
     * Allows a plugin to define a [state field](#state.StateField), an
     * extra slot in the state object in which it can keep its own data.
@@ -60,13 +60,13 @@ trait PluginSpec[T, S /* <: Schema[_, _] */] extends js.Object {
 
 object PluginSpec {
   @scala.inline
-  def apply[T, S](
+  def apply[T, /* <: typings.prosemirrorModel.mod.Schema[_, _] */ S](
     appendTransaction: js.UndefOr[
       Null | ((/* transactions */ js.Array[Transaction[S]], /* oldState */ EditorState[S], /* newState */ EditorState[S]) => js.UndefOr[Transaction[S] | Null | Unit])
     ] = js.undefined,
     filterTransaction: js.UndefOr[Null | ((/* p1 */ Transaction[S], /* p2 */ EditorState[S]) => Boolean)] = js.undefined,
     key: js.UndefOr[Null | (PluginKey[T, S])] = js.undefined,
-    props: js.UndefOr[Null | EditorProps[S]] = js.undefined,
+    props: js.UndefOr[Null | (EditorProps[Plugin[T, S], S])] = js.undefined,
     state: js.UndefOr[Null | (StateField[T, S])] = js.undefined,
     view: js.UndefOr[Null | (/* p */ EditorView[S] => Destroy[S])] = js.undefined
   ): PluginSpec[T, S] = {

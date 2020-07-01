@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ChoicesRestfull () extends Base {
   var allowEmptyResponse: Boolean = js.native
+  var attachOriginalItems: Boolean = js.native
   var error: SurveyError = js.native
   val isEmpty: Boolean = js.native
   val isRunning: Boolean = js.native
@@ -23,12 +24,14 @@ class ChoicesRestfull () extends Base {
   var valueName: String = js.native
   /* protected */ def beforeSendRequest(): Unit = js.native
   def beforeSendRequestCallback(): Unit = js.native
+  /* protected */ def callResultCallback(items: js.Array[ItemValue], loadingObjHash: String): Unit = js.native
   def clear(): Unit = js.native
   def getCustomPropertiesNames(): js.Array[String] = js.native
   def getData(): js.Any = js.native
   def getItemValueCallback(item: js.Any): js.Any = js.native
   def getResultCallback(items: js.Array[ItemValue]): Unit = js.native
   /* protected */ def onLoad(result: js.Any): Unit = js.native
+  /* protected */ def onLoad(result: js.Any, loadingObjHash: String): Unit = js.native
   /* protected */ def parseResponse(response: js.Any): js.Any = js.native
   def run(): Unit = js.native
   def run(textProcessor: ITextProcessor): Unit = js.native

@@ -3,6 +3,7 @@ package typings.reactNavigation.anon
 import org.scalablytyped.runtime.Instantiable0
 import typings.reactNative.mod.StatusBar
 import typings.reactNative.mod.StatusBarAnimation
+import typings.reactNative.mod.StatusBarProps
 import typings.reactNative.mod.StatusBarStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,6 +16,26 @@ trait TypeofStatusBar extends Instantiable0[StatusBar] {
     * @platform android
     */
   var currentHeight: js.UndefOr[Double] = js.native
+  /**
+    * Pop a StatusBar entry from the stack.
+    *
+    * @param entry Entry returned from `pushStackEntry`.
+    */
+  def popStackEntry(entry: StatusBarProps): Unit = js.native
+  /**
+    * Push a StatusBar entry onto the stack.
+    * The return value should be passed to `popStackEntry` when complete.
+    *
+    * @param props Object containing the StatusBar props to use in the stack entry.
+    */
+  def pushStackEntry(props: StatusBarProps): StatusBarProps = js.native
+  /**
+    * Replace an existing StatusBar stack entry with new props.
+    *
+    * @param entry Entry returned from `pushStackEntry` to replace.
+    * @param props Object containing the StatusBar props to use in the replacement stack entry.
+    */
+  def replaceStackEntry(entry: StatusBarProps, props: StatusBarProps): StatusBarProps = js.native
   /**
     * Set the background color for the status bar
     * @param color Background color.

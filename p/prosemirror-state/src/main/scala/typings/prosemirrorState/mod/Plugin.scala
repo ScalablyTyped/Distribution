@@ -16,7 +16,7 @@ class Plugin[T, S /* <: Schema[_, _] */] protected () extends js.Object {
   /**
     * The [props](#view.EditorProps) exported by this plugin.
     */
-  var props: EditorProps[S] = js.native
+  var props: EditorProps[Plugin[T, S], S] = js.native
   /**
     * The plugin's [spec object](#state.PluginSpec).
     */

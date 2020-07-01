@@ -28,9 +28,9 @@ trait SchemaIntOrString extends js.Object {
 
 object SchemaIntOrString {
   @scala.inline
-  def apply(intVal: Int | Double = null, strVal: String = null, `type`: String = null): SchemaIntOrString = {
+  def apply(intVal: js.UndefOr[Double] = js.undefined, strVal: String = null, `type`: String = null): SchemaIntOrString = {
     val __obj = js.Dynamic.literal()
-    if (intVal != null) __obj.updateDynamic("intVal")(intVal.asInstanceOf[js.Any])
+    if (!js.isUndefined(intVal)) __obj.updateDynamic("intVal")(intVal.get.asInstanceOf[js.Any])
     if (strVal != null) __obj.updateDynamic("strVal")(strVal.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIntOrString]

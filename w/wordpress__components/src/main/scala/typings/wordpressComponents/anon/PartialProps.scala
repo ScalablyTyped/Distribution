@@ -198,6 +198,7 @@ trait PartialProps extends js.Object {
   var isLarge: js.UndefOr[Boolean] = js.undefined
   var isLink: js.UndefOr[Boolean] = js.undefined
   var isPrimary: js.UndefOr[Boolean] = js.undefined
+  var isSecondary: js.UndefOr[Boolean] = js.undefined
   var isSmall: js.UndefOr[Boolean] = js.undefined
   var isTertiary: js.UndefOr[Boolean] = js.undefined
   var isToggled: js.UndefOr[Boolean] = js.undefined

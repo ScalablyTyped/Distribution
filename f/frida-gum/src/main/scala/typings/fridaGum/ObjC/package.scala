@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ObjC {
-  type BlockMethodImplementation = js.ThisFunction1[/* this */ typings.fridaGum.ObjC.Block, /* repeated */ js.Any, js.Any]
+  type BlockImplementation = js.ThisFunction1[/* this */ typings.fridaGum.ObjC.Block, /* repeated */ js.Any, js.Any]
   type ChooseSpecifier = typings.fridaGum.ObjC.SimpleChooseSpecifier | typings.fridaGum.ObjC.DetailedChooseSpecifier
   type EnumerateLoadedClassesResult = /**
     * Class names grouped by name of owner module.

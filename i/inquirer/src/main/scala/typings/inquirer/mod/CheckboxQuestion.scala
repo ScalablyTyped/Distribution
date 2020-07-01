@@ -21,7 +21,7 @@ trait CheckboxQuestion[T /* <: Answers */] extends ListQuestionOptionsBase[T, Ch
 
 object CheckboxQuestion {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.inquirer.mod.Answers */ T](
     `type`: checkbox,
     choices: AsyncDynamicQuestionProperty[js.Array[DistinctChoice[CheckboxChoiceMap[T]]], T] = null,
     default: AsyncDynamicQuestionProperty[_, T] = null,

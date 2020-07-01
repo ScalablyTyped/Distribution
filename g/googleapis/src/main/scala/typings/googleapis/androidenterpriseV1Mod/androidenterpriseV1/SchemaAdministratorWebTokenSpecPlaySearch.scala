@@ -20,8 +20,8 @@ object SchemaAdministratorWebTokenSpecPlaySearch {
   @scala.inline
   def apply(approveApps: js.UndefOr[Boolean] = js.undefined, enabled: js.UndefOr[Boolean] = js.undefined): SchemaAdministratorWebTokenSpecPlaySearch = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(approveApps)) __obj.updateDynamic("approveApps")(approveApps.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(approveApps)) __obj.updateDynamic("approveApps")(approveApps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAdministratorWebTokenSpecPlaySearch]
   }
 }

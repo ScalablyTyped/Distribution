@@ -11,6 +11,7 @@ trait MaximumCount extends js.Object {
   var minimumValue: js.UndefOr[Double] = js.undefined
   var onEnd: js.UndefOr[js.Function2[/* totalCount */ Double, /* key */ String, Unit]] = js.undefined
   var onStart: js.UndefOr[js.Function2[/* totalCount */ Double, /* key */ String, Unit]] = js.undefined
+  var online: js.UndefOr[Boolean] = js.undefined
 }
 
 object MaximumCount {
@@ -21,7 +22,8 @@ object MaximumCount {
     maximumValue: js.UndefOr[Double] = js.undefined,
     minimumValue: js.UndefOr[Double] = js.undefined,
     onEnd: (/* totalCount */ Double, /* key */ String) => Unit = null,
-    onStart: (/* totalCount */ Double, /* key */ String) => Unit = null
+    onStart: (/* totalCount */ Double, /* key */ String) => Unit = null,
+    online: js.UndefOr[Boolean] = js.undefined
   ): MaximumCount = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(ascending)) __obj.updateDynamic("ascending")(ascending.get.asInstanceOf[js.Any])
@@ -30,6 +32,7 @@ object MaximumCount {
     if (!js.isUndefined(minimumValue)) __obj.updateDynamic("minimumValue")(minimumValue.get.asInstanceOf[js.Any])
     if (onEnd != null) __obj.updateDynamic("onEnd")(js.Any.fromFunction2(onEnd))
     if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction2(onStart))
+    if (!js.isUndefined(online)) __obj.updateDynamic("online")(online.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaximumCount]
   }
 }

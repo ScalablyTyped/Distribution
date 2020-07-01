@@ -19,7 +19,7 @@ object SchemaMailOptions {
   @scala.inline
   def apply(excludeDrafts: js.UndefOr[Boolean] = js.undefined): SchemaMailOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(excludeDrafts)) __obj.updateDynamic("excludeDrafts")(excludeDrafts.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludeDrafts)) __obj.updateDynamic("excludeDrafts")(excludeDrafts.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMailOptions]
   }
 }

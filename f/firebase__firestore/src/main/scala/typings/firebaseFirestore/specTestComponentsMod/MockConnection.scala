@@ -2,9 +2,9 @@ package typings.firebaseFirestore.specTestComponentsMod
 
 import org.scalablytyped.runtime.NumberDictionary
 import typings.firebaseFirestore.asyncQueueMod.AsyncQueue
-import typings.firebaseFirestore.connectionMod.Connection
 import typings.firebaseFirestore.errorMod.FirestoreError
 import typings.firebaseFirestore.promiseMod.Deferred
+import typings.firebaseFirestore.remoteConnectionMod.Connection
 import typings.firebaseFirestore.streamBridgeMod.StreamBridge
 import scala.scalajs.js
 import scala.scalajs.js.`|`

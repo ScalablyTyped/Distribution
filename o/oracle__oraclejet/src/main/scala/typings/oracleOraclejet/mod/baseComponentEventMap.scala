@@ -32,7 +32,7 @@ trait baseComponentEventMap[SP /* <: baseComponentSettableProperties */]
 
 object baseComponentEventMap {
   @scala.inline
-  def apply[SP](
+  def apply[/* <: typings.oracleOraclejet.mod.baseComponentSettableProperties */ SP](
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,

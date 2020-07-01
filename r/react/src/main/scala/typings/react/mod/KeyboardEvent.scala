@@ -19,6 +19,7 @@ trait KeyboardEvent[T] extends BaseSyntheticEvent[NativeKeyboardEvent, EventTarg
   var metaKey: Boolean
   var repeat: Boolean
   var shiftKey: Boolean
+  /** @deprecated */
   var which: Double
   /**
     * See [DOM Level 3 Events spec](https://www.w3.org/TR/uievents-key/#keys-modifier). for a list of valid (case-sensitive) arguments to this method.

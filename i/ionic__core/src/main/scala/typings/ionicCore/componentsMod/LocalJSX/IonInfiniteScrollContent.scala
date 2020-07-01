@@ -1,7 +1,7 @@
 package typings.ionicCore.componentsMod.LocalJSX
 
+import typings.ionicCore.sanitizationMod.IonicSafeString
 import typings.ionicCore.spinnerConfigsMod.SpinnerTypes
-import typings.ionicCore.typesMod.IonicSafeString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

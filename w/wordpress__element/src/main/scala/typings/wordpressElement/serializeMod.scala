@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@wordpress/element/serialize", JSImport.Namespace)
+@JSImport("@wordpress/element/build-types/serialize", JSImport.Namespace)
 @js.native
 object serializeMod extends js.Object {
   def default(element: ReactNode): String = js.native

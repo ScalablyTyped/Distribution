@@ -18,6 +18,7 @@ trait NodeListener extends js.Object {
   var BreakStatement: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.undefined
   var CallExpression: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.undefined
   var CatchClause: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.undefined
+  var ChainExpression: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.undefined
   var ClassBody: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.undefined
   var ClassDeclaration: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.undefined
   var ClassExpression: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.undefined

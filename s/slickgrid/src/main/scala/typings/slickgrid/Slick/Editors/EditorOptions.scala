@@ -22,7 +22,7 @@ trait EditorOptions[T /* <: SlickData */] extends js.Object {
 
 object EditorOptions {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.slickgrid.Slick.SlickData */ T](
     column: Column[T],
     container: HTMLElement,
     grid: Grid[T],

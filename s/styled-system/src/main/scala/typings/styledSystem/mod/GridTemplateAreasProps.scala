@@ -16,7 +16,7 @@ trait GridTemplateAreasProps[ThemeType /* <: Theme[TLengthStyledSystem] */] exte
 
 object GridTemplateAreasProps {
   @scala.inline
-  def apply[ThemeType](
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](
     gridTemplateAreas: js.UndefOr[Null | (ResponsiveValue[GridTemplateAreasProperty, ThemeType])] = js.undefined
   ): GridTemplateAreasProps[ThemeType] = {
     val __obj = js.Dynamic.literal()

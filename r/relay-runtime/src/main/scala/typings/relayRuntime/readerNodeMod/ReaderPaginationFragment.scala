@@ -18,10 +18,12 @@ object ReaderPaginationFragment {
     metadata: ConnectionRefetch,
     name: String,
     selections: js.Array[ReaderSelection],
-    `type`: String
+    `type`: String,
+    abstractKey: js.UndefOr[Null | String] = js.undefined
   ): ReaderPaginationFragment = {
     val __obj = js.Dynamic.literal(argumentDefinitions = argumentDefinitions.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(abstractKey)) __obj.updateDynamic("abstractKey")(abstractKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaderPaginationFragment]
   }
 }

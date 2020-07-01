@@ -1,6 +1,6 @@
 package typings.googleapis.youtubeAnalyticsV1Mod.youtubeAnalyticsV1
 
-import typings.googleapis.AnonKind
+import typings.googleapis.anon.Kind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait SchemaGroupItem extends js.Object {
   var groupId: js.UndefOr[String] = js.native
   var id: js.UndefOr[String] = js.native
   var kind: js.UndefOr[String] = js.native
-  var resource: js.UndefOr[AnonKind] = js.native
+  var resource: js.UndefOr[Kind] = js.native
 }
 
 object SchemaGroupItem {
@@ -21,7 +21,7 @@ object SchemaGroupItem {
     groupId: String = null,
     id: String = null,
     kind: String = null,
-    resource: AnonKind = null
+    resource: Kind = null
   ): SchemaGroupItem = {
     val __obj = js.Dynamic.literal()
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])

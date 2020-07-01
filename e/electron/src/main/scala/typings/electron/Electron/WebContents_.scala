@@ -567,8 +567,6 @@ trait WebContents_ extends EventEmitter {
   def getAllSharedWorkers(): js.Array[SharedWorkerInfo] = js.native
   /**
     * If *offscreen rendering* is enabled returns the current frame rate.
-    * 
-  **Deprecated**
     */
   def getFrameRate(): Double = js.native
   /**
@@ -600,7 +598,6 @@ trait WebContents_ extends EventEmitter {
   def getURL(): String = js.native
   /**
     * The user agent for this web page.
-  **Deprecated**
     */
   def getUserAgent(): String = js.native
   /**
@@ -609,12 +606,10 @@ trait WebContents_ extends EventEmitter {
   def getWebRTCIPHandlingPolicy(): String = js.native
   /**
     * the current zoom factor.
-  **Deprecated**
     */
   def getZoomFactor(): Double = js.native
   /**
     * the current zoom level.
-  **Deprecated**
     */
   def getZoomLevel(): Double = js.native
   /**
@@ -681,7 +676,6 @@ trait WebContents_ extends EventEmitter {
   def invalidate(): Unit = js.native
   /**
     * Whether this page has been muted.
-  **Deprecated**
     */
   def isAudioMuted(): Boolean = js.native
   /**
@@ -2150,7 +2144,6 @@ trait WebContents_ extends EventEmitter {
   def sendToFrame(frameId: Double, channel: String, args: js.Any*): Unit = js.native
   /**
     * Mute the audio on the current web page.
-  **Deprecated**
     */
   def setAudioMuted(muted: Boolean): Unit = js.native
   /**
@@ -2181,7 +2174,6 @@ trait WebContents_ extends EventEmitter {
   /**
     * If *offscreen rendering* is enabled sets the frame rate to the specified number.
     * Only values between 1 and 60 are accepted.
-  **Deprecated**
     */
   def setFrameRate(fps: Double): Unit = js.native
   /**
@@ -2200,7 +2192,6 @@ trait WebContents_ extends EventEmitter {
   def setLayoutZoomLevelLimits(minimumLevel: Double, maximumLevel: Double): js.Promise[Unit] = js.native
   /**
     * Overrides the user agent for this web page.
-  **Deprecated**
     */
   def setUserAgent(userAgent: String): Unit = js.native
   /**
@@ -2225,9 +2216,7 @@ trait WebContents_ extends EventEmitter {
   /**
     * Changes the zoom factor to the specified factor. Zoom factor is zoom percent
     * divided by 100, so 300% = 3.0.
-    * 
   The factor must be greater than 0.0.
-  **Deprecated**
     */
   def setZoomFactor(factor: Double): Unit = js.native
   /**
@@ -2235,7 +2224,6 @@ trait WebContents_ extends EventEmitter {
     * increment above or below represents zooming 20% larger or smaller to default
     * limits of 300% and 50% of original size, respectively. The formula for this is
     * `scale := 1.2 ^ level`.
-  **Deprecated**
     */
   def setZoomLevel(level: Double): Unit = js.native
   /**

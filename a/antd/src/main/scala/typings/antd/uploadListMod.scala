@@ -22,8 +22,8 @@ object uploadListMod extends js.Object {
     extends Component[UploadListProps[js.Any], js.Any, js.Any] {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MUploadList(): Unit = js.native
-    def handleActionIconRender(customIcon: ReactNode, callback: js.Function0[Unit]): Element = js.native
-    def handleActionIconRender(customIcon: ReactNode, callback: js.Function0[Unit], title: String): Element = js.native
+    def handleActionIconRender(customIcon: ReactNode, callback: js.Function0[Unit], prefixCls: String): Element = js.native
+    def handleActionIconRender(customIcon: ReactNode, callback: js.Function0[Unit], prefixCls: String, title: String): Element = js.native
     def handleClose(file: UploadFile[_]): Unit = js.native
     def handleDownload(file: UploadFile[_]): Unit = js.native
     def handleIconRender(file: UploadFile[_]): js.UndefOr[js.Object | Null] = js.native

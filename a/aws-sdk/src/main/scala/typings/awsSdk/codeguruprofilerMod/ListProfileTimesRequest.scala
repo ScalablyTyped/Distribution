@@ -23,7 +23,7 @@ trait ListProfileTimesRequest extends js.Object {
     */
   var orderBy: js.UndefOr[OrderBy] = js.native
   /**
-    * The aggregation period.
+    *  The aggregation period. This specifies the period during which an aggregation profile collects posted agent profiles for a profiling group. There are 3 valid values.     P1D — 1 day     PT1H — 1 hour     PT5M — 5 minutes   
     */
   var period: AggregationPeriod = js.native
   /**

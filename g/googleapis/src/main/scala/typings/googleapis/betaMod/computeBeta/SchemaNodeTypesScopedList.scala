@@ -1,6 +1,6 @@
 package typings.googleapis.betaMod.computeBeta
 
-import typings.googleapis.AnonCode
+import typings.googleapis.anon.Code
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,12 +15,12 @@ trait SchemaNodeTypesScopedList extends js.Object {
     * [Output Only] An informational warning that appears when the node types
     * list is empty.
     */
-  var warning: js.UndefOr[AnonCode] = js.native
+  var warning: js.UndefOr[Code] = js.native
 }
 
 object SchemaNodeTypesScopedList {
   @scala.inline
-  def apply(nodeTypes: js.Array[SchemaNodeType] = null, warning: AnonCode = null): SchemaNodeTypesScopedList = {
+  def apply(nodeTypes: js.Array[SchemaNodeType] = null, warning: Code = null): SchemaNodeTypesScopedList = {
     val __obj = js.Dynamic.literal()
     if (nodeTypes != null) __obj.updateDynamic("nodeTypes")(nodeTypes.asInstanceOf[js.Any])
     if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])

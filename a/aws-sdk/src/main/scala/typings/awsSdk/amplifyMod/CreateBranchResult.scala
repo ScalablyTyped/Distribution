@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateBranchResult extends js.Object {
   /**
-    *  Branch structure for an Amplify App. 
+    *  Describes the branch for an Amplify app, which maps to a third-party repository branch. 
     */
   var branch: Branch = js.native
 }

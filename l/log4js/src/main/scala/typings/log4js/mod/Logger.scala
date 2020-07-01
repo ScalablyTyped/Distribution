@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Logger ()
   extends Instantiable2[/* dispatch */ js.Function, /* name */ String, Logger] {
+  val category: String = js.native
   var level: String = js.native
   def _log(level: String, data: js.Any): Unit = js.native
   def addContext(key: String, value: js.Any): Unit = js.native

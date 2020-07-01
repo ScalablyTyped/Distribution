@@ -2,7 +2,7 @@ package typings.ionicons.componentsMod.global
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.ionicons.componentsMod.Components.IonIcon
-import typings.ionicons.stencilCoreMod.HTMLStencilElement
+import typings.ionicons.stencilPublicRuntimeMod.HTMLStencilElement
 import typings.std.AddEventListenerOptions
 import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject

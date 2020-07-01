@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "logform" : "2.1.2"
+      "logform" : "2.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "logform" : "2.1.2"
+      "logform" : "2.2.0"
     }
   ],
   "compile-devDependencies" : [

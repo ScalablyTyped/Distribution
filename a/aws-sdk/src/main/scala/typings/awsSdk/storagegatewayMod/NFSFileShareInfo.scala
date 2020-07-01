@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait NFSFileShareInfo extends js.Object {
   var ClientList: js.UndefOr[FileShareClientList] = js.native
   /**
-    * The default storage class for objects put into an Amazon S3 bucket by the file gateway. Possible values are S3_STANDARD, S3_STANDARD_IA, or S3_ONEZONE_IA. If this field is not populated, the default value S3_STANDARD is used. Optional.
+    * The default storage class for objects put into an Amazon S3 bucket by the file gateway. The default value is S3_INTELLIGENT_TIERING. Optional. Valid Values: S3_STANDARD | S3_INTELLIGENT_TIERING | S3_STANDARD_IA | S3_ONEZONE_IA 
     */
   var DefaultStorageClass: js.UndefOr[StorageClass] = js.native
   var FileShareARN: js.UndefOr[typings.awsSdk.storagegatewayMod.FileShareARN] = js.native
@@ -16,11 +16,11 @@ trait NFSFileShareInfo extends js.Object {
   var FileShareStatus: js.UndefOr[typings.awsSdk.storagegatewayMod.FileShareStatus] = js.native
   var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.native
   /**
-    * A value that enables guessing of the MIME type for uploaded objects based on file extensions. Set this value to true to enable MIME type guessing, and otherwise to false. The default value is true.
+    * A value that enables guessing of the MIME type for uploaded objects based on file extensions. Set this value to true to enable MIME type guessing, otherwise set to false. The default value is true. Valid Values: true | false 
     */
   var GuessMIMETypeEnabled: js.UndefOr[Boolean] = js.native
   /**
-    * True to use Amazon S3 server-side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional. 
+    * Set to true to use Amazon S3 server-side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional. Valid Values: true | false 
     */
   var KMSEncrypted: js.UndefOr[scala.Boolean] = js.native
   var KMSKey: js.UndefOr[typings.awsSdk.storagegatewayMod.KMSKey] = js.native
@@ -29,11 +29,11 @@ trait NFSFileShareInfo extends js.Object {
   var ObjectACL: js.UndefOr[typings.awsSdk.storagegatewayMod.ObjectACL] = js.native
   var Path: js.UndefOr[typings.awsSdk.storagegatewayMod.Path] = js.native
   /**
-    * A value that sets the write status of a file share. This value is true if the write status is read-only, and otherwise false.
+    * A value that sets the write status of a file share. Set this value to true to set the write status to read-only, otherwise set to false. Valid Values: true | false 
     */
   var ReadOnly: js.UndefOr[Boolean] = js.native
   /**
-    * A value that sets who pays the cost of the request and the cost associated with data download from the S3 bucket. If this value is set to true, the requester pays the costs. Otherwise the S3 bucket owner pays. However, the S3 bucket owner always pays the cost of storing data.   RequesterPays is a configuration for the S3 bucket that backs the file share, so make sure that the configuration on the file share is the same as the S3 bucket configuration. 
+    * A value that sets who pays the cost of the request and the cost associated with data download from the S3 bucket. If this value is set to true, the requester pays the costs; otherwise, the S3 bucket owner pays. However, the S3 bucket owner always pays the cost of storing data.   RequesterPays is a configuration for the S3 bucket that backs the file share, so make sure that the configuration on the file share is the same as the S3 bucket configuration.  Valid Values: true | false 
     */
   var RequesterPays: js.UndefOr[Boolean] = js.native
   var Role: js.UndefOr[typings.awsSdk.storagegatewayMod.Role] = js.native

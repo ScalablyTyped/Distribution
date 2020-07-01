@@ -29,7 +29,7 @@ trait ColumnMetadata[T /* <: SlickData */] extends js.Object {
 
 object ColumnMetadata {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.slickgrid.Slick.SlickData */ T](
     colspan: Double | String = null,
     editor: js.Any = null,
     focusable: js.UndefOr[Boolean] = js.undefined,

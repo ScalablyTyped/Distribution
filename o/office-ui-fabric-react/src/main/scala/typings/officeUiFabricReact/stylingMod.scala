@@ -62,7 +62,6 @@ import typings.officeUiFabricReact.officeUiFabricReactStrings.whiteTranslucent40
 import typings.officeUiFabricReact.officeUiFabricReactStrings.yellow
 import typings.officeUiFabricReact.officeUiFabricReactStrings.yellowDark
 import typings.officeUiFabricReact.officeUiFabricReactStrings.yellowLight
-import typings.std.Partial
 import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
 import typings.uifabricMergeStyles.irawstylebaseMod.IFontFace
 import typings.uifabricMergeStyles.irawstylebaseMod.IFontWeight
@@ -674,8 +673,8 @@ object stylingMod extends js.Object {
     outlineColor: js.UndefOr[String],
     isFocusedOnly: js.UndefOr[Boolean]
   ): IRawStyle = js.native
-  def getGlobalClassNames[T](classNames: GlobalClassNames[T], theme: ITheme): Partial[GlobalClassNames[T]] = js.native
-  def getGlobalClassNames[T](classNames: GlobalClassNames[T], theme: ITheme, disableGlobalClassNames: Boolean): Partial[GlobalClassNames[T]] = js.native
+  def getGlobalClassNames[T](classNames: GlobalClassNames[T], theme: ITheme): GlobalClassNames[T] = js.native
+  def getGlobalClassNames[T](classNames: GlobalClassNames[T], theme: ITheme, disableGlobalClassNames: Boolean): GlobalClassNames[T] = js.native
   def getIcon(): js.UndefOr[IIconRecord] = js.native
   def getIcon(name: String): js.UndefOr[IIconRecord] = js.native
   def getIconClassName(name: String): String = js.native

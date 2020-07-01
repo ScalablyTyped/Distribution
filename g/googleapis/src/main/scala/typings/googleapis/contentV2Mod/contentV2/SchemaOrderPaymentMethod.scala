@@ -38,16 +38,16 @@ object SchemaOrderPaymentMethod {
   @scala.inline
   def apply(
     billingAddress: SchemaOrderAddress = null,
-    expirationMonth: Int | Double = null,
-    expirationYear: Int | Double = null,
+    expirationMonth: js.UndefOr[Double] = js.undefined,
+    expirationYear: js.UndefOr[Double] = js.undefined,
     lastFourDigits: String = null,
     phoneNumber: String = null,
     `type`: String = null
   ): SchemaOrderPaymentMethod = {
     val __obj = js.Dynamic.literal()
     if (billingAddress != null) __obj.updateDynamic("billingAddress")(billingAddress.asInstanceOf[js.Any])
-    if (expirationMonth != null) __obj.updateDynamic("expirationMonth")(expirationMonth.asInstanceOf[js.Any])
-    if (expirationYear != null) __obj.updateDynamic("expirationYear")(expirationYear.asInstanceOf[js.Any])
+    if (!js.isUndefined(expirationMonth)) __obj.updateDynamic("expirationMonth")(expirationMonth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expirationYear)) __obj.updateDynamic("expirationYear")(expirationYear.get.asInstanceOf[js.Any])
     if (lastFourDigits != null) __obj.updateDynamic("lastFourDigits")(lastFourDigits.asInstanceOf[js.Any])
     if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

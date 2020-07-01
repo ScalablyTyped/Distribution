@@ -8,12 +8,7 @@ package object mod {
   /**
     * A middleware function
     */
-  type Middleware = js.Function3[
-    /* req */ typings.node.httpMod.IncomingMessage, 
-    /* res */ typings.node.httpMod.ServerResponse, 
-    /* next */ typings.polka.mod.Next, 
-    scala.Unit | js.Promise[scala.Unit]
-  ]
+  type Middleware[P /* <: typings.expressServeStaticCore.mod.Params */, ResBody, ReqBody, ReqQuery] = typings.express.mod.RequestHandler[P, ResBody, ReqBody, ReqQuery]
   /**
     * Calls the next middleware function in the chain, or throws an error.
     */

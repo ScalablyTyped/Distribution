@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
   * @param equal A binary function predicates two arguments are equal. Default is {@link equal_to}.
   */
 class HashMultiMap[Key, T] ()
-  extends typings.tstl.tstlMod.HashMultiMap[Key, T] {
+  extends typings.tstl.tstlModuleMod.HashMultiMap[Key, T] {
   def this(hash: Hasher[Key]) = this()
   /**
     * Initializer Constructor.

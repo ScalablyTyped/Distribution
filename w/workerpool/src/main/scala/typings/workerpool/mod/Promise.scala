@@ -13,7 +13,7 @@ class Promise[T, E] () extends js.Object {
   val resolved: Boolean = js.native
   def always[TT](handler: js.Function0[Promise[TT, Error]]): Promise[TT, Error] = js.native
   def cancel(): this.type = js.native
-  def `catch`[TT](err: js.Function1[/* error */ E, TT]): Promise[TT, Error] = js.native
+  def `catch`[TT](err: js.Function1[/* error */ E, TT]): Promise[T | TT, Error] = js.native
   def `then`[TT, EE](result: js.Function1[/* r */ T, TT]): Promise[TT, EE] = js.native
   def `then`[TT, EE](result: js.Function1[/* r */ T, TT], err: js.Function1[/* r */ E, EE]): Promise[TT, EE] = js.native
   def timeout(delay: Double): this.type = js.native

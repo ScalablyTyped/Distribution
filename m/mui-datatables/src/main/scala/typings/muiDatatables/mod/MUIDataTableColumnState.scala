@@ -21,6 +21,7 @@ object MUIDataTableColumnState {
   def apply(
     name: String,
     customBodyRender: (/* value */ js.Any, /* tableMeta */ MUIDataTableMeta, /* updateValue */ js.Function1[/* value */ String, Unit]) => String | ReactNode = null,
+    customFilterListOptions: MUIDataTableCustomFilterListOptions = null,
     customFilterListRender: /* value */ js.Any => String = null,
     customHeadRender: (/* columnMeta */ MUIDataTableCustomHeadRenderer, /* updateDirection */ js.Function1[/* params */ js.Any, _]) => String | ReactNode = null,
     display: `true` | `false` | excluded = null,
@@ -42,6 +43,7 @@ object MUIDataTableColumnState {
   ): MUIDataTableColumnState = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (customBodyRender != null) __obj.updateDynamic("customBodyRender")(js.Any.fromFunction3(customBodyRender))
+    if (customFilterListOptions != null) __obj.updateDynamic("customFilterListOptions")(customFilterListOptions.asInstanceOf[js.Any])
     if (customFilterListRender != null) __obj.updateDynamic("customFilterListRender")(js.Any.fromFunction1(customFilterListRender))
     if (customHeadRender != null) __obj.updateDynamic("customHeadRender")(js.Any.fromFunction2(customHeadRender))
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])

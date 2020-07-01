@@ -14,7 +14,9 @@ trait RouterChildContext[Params /* <: /* import warning: importer.ImportType#app
 
 object RouterChildContext {
   @scala.inline
-  def apply[Params](router: History[Params]): RouterChildContext[Params] = {
+  def apply[/* <: / * import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    * / typings.reactRouter.reactRouterStrings.RouterChildContext with org.scalablytyped.runtime.TopLevel[js.Any] */ Params](router: History[Params]): RouterChildContext[Params] = {
     val __obj = js.Dynamic.literal(router = router.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouterChildContext[Params]]
   }

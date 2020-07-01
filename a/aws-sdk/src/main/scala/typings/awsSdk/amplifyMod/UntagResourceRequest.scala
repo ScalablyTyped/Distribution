@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UntagResourceRequest extends js.Object {
   /**
-    *  Resource arn used to untag resource. 
+    *  The Amazon Resource Name (ARN) to use to untag a resource. 
     */
   var resourceArn: ResourceArn = js.native
   /**
-    *  Tag keys used to untag resource. 
+    *  The tag keys to use to untag a resource. 
     */
   var tagKeys: TagKeyList = js.native
 }

@@ -71,9 +71,9 @@ object SchemaRuntimeEnvironment {
     additionalUserLabels: StringDictionary[String] = null,
     bypassTempDirValidation: js.UndefOr[Boolean] = js.undefined,
     machineType: String = null,
-    maxWorkers: Int | Double = null,
+    maxWorkers: js.UndefOr[Double] = js.undefined,
     network: String = null,
-    numWorkers: Int | Double = null,
+    numWorkers: js.UndefOr[Double] = js.undefined,
     serviceAccountEmail: String = null,
     subnetwork: String = null,
     tempLocation: String = null,
@@ -82,11 +82,11 @@ object SchemaRuntimeEnvironment {
     val __obj = js.Dynamic.literal()
     if (additionalExperiments != null) __obj.updateDynamic("additionalExperiments")(additionalExperiments.asInstanceOf[js.Any])
     if (additionalUserLabels != null) __obj.updateDynamic("additionalUserLabels")(additionalUserLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(bypassTempDirValidation)) __obj.updateDynamic("bypassTempDirValidation")(bypassTempDirValidation.asInstanceOf[js.Any])
+    if (!js.isUndefined(bypassTempDirValidation)) __obj.updateDynamic("bypassTempDirValidation")(bypassTempDirValidation.get.asInstanceOf[js.Any])
     if (machineType != null) __obj.updateDynamic("machineType")(machineType.asInstanceOf[js.Any])
-    if (maxWorkers != null) __obj.updateDynamic("maxWorkers")(maxWorkers.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWorkers)) __obj.updateDynamic("maxWorkers")(maxWorkers.get.asInstanceOf[js.Any])
     if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
-    if (numWorkers != null) __obj.updateDynamic("numWorkers")(numWorkers.asInstanceOf[js.Any])
+    if (!js.isUndefined(numWorkers)) __obj.updateDynamic("numWorkers")(numWorkers.get.asInstanceOf[js.Any])
     if (serviceAccountEmail != null) __obj.updateDynamic("serviceAccountEmail")(serviceAccountEmail.asInstanceOf[js.Any])
     if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork.asInstanceOf[js.Any])
     if (tempLocation != null) __obj.updateDynamic("tempLocation")(tempLocation.asInstanceOf[js.Any])

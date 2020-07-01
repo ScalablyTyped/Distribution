@@ -15,7 +15,7 @@ trait TransformShortcode[T /* <: Record[String, _] */] extends Transform[T] {
 
 object TransformShortcode {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.std.Record[java.lang.String, _] */ T](
     tag: String,
     `type`: shortcode,
     attributes: js.Any = null,

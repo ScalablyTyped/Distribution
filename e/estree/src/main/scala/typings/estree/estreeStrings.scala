@@ -79,6 +79,9 @@ object estreeStrings {
   sealed trait CatchClause extends js.Object
   
   @js.native
+  sealed trait ChainExpression extends js.Object
+  
+  @js.native
   sealed trait ClassBody extends js.Object
   
   @js.native
@@ -255,6 +258,9 @@ object estreeStrings {
   sealed trait Property extends js.Object
   
   @js.native
+  sealed trait QuestionmarkQuestionmark extends LogicalOperator
+  
+  @js.native
   sealed trait RestElement extends js.Object
   
   @js.native
@@ -428,6 +434,8 @@ object estreeStrings {
   @scala.inline
   def CatchClause: CatchClause = "CatchClause".asInstanceOf[CatchClause]
   @scala.inline
+  def ChainExpression: ChainExpression = "ChainExpression".asInstanceOf[ChainExpression]
+  @scala.inline
   def ClassBody: ClassBody = "ClassBody".asInstanceOf[ClassBody]
   @scala.inline
   def ClassDeclaration: ClassDeclaration = "ClassDeclaration".asInstanceOf[ClassDeclaration]
@@ -543,6 +551,8 @@ object estreeStrings {
   def Program: Program = "Program".asInstanceOf[Program]
   @scala.inline
   def Property: Property = "Property".asInstanceOf[Property]
+  @scala.inline
+  def QuestionmarkQuestionmark: QuestionmarkQuestionmark = "??".asInstanceOf[QuestionmarkQuestionmark]
   @scala.inline
   def RestElement: RestElement = "RestElement".asInstanceOf[RestElement]
   @scala.inline

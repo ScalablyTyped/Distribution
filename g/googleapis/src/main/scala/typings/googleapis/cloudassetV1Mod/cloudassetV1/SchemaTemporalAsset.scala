@@ -33,7 +33,7 @@ object SchemaTemporalAsset {
   ): SchemaTemporalAsset = {
     val __obj = js.Dynamic.literal()
     if (asset != null) __obj.updateDynamic("asset")(asset.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
     if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTemporalAsset]
   }

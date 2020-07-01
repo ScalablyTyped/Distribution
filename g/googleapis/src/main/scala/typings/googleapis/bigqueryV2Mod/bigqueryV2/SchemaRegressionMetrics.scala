@@ -34,18 +34,18 @@ trait SchemaRegressionMetrics extends js.Object {
 object SchemaRegressionMetrics {
   @scala.inline
   def apply(
-    meanAbsoluteError: Int | Double = null,
-    meanSquaredError: Int | Double = null,
-    meanSquaredLogError: Int | Double = null,
-    medianAbsoluteError: Int | Double = null,
-    rSquared: Int | Double = null
+    meanAbsoluteError: js.UndefOr[Double] = js.undefined,
+    meanSquaredError: js.UndefOr[Double] = js.undefined,
+    meanSquaredLogError: js.UndefOr[Double] = js.undefined,
+    medianAbsoluteError: js.UndefOr[Double] = js.undefined,
+    rSquared: js.UndefOr[Double] = js.undefined
   ): SchemaRegressionMetrics = {
     val __obj = js.Dynamic.literal()
-    if (meanAbsoluteError != null) __obj.updateDynamic("meanAbsoluteError")(meanAbsoluteError.asInstanceOf[js.Any])
-    if (meanSquaredError != null) __obj.updateDynamic("meanSquaredError")(meanSquaredError.asInstanceOf[js.Any])
-    if (meanSquaredLogError != null) __obj.updateDynamic("meanSquaredLogError")(meanSquaredLogError.asInstanceOf[js.Any])
-    if (medianAbsoluteError != null) __obj.updateDynamic("medianAbsoluteError")(medianAbsoluteError.asInstanceOf[js.Any])
-    if (rSquared != null) __obj.updateDynamic("rSquared")(rSquared.asInstanceOf[js.Any])
+    if (!js.isUndefined(meanAbsoluteError)) __obj.updateDynamic("meanAbsoluteError")(meanAbsoluteError.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(meanSquaredError)) __obj.updateDynamic("meanSquaredError")(meanSquaredError.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(meanSquaredLogError)) __obj.updateDynamic("meanSquaredLogError")(meanSquaredLogError.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(medianAbsoluteError)) __obj.updateDynamic("medianAbsoluteError")(medianAbsoluteError.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rSquared)) __obj.updateDynamic("rSquared")(rSquared.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRegressionMetrics]
   }
 }

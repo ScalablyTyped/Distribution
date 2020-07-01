@@ -59,7 +59,7 @@ object SchemaPrestoJob {
   ): SchemaPrestoJob = {
     val __obj = js.Dynamic.literal()
     if (clientTags != null) __obj.updateDynamic("clientTags")(clientTags.asInstanceOf[js.Any])
-    if (!js.isUndefined(continueOnFailure)) __obj.updateDynamic("continueOnFailure")(continueOnFailure.asInstanceOf[js.Any])
+    if (!js.isUndefined(continueOnFailure)) __obj.updateDynamic("continueOnFailure")(continueOnFailure.get.asInstanceOf[js.Any])
     if (loggingConfig != null) __obj.updateDynamic("loggingConfig")(loggingConfig.asInstanceOf[js.Any])
     if (outputFormat != null) __obj.updateDynamic("outputFormat")(outputFormat.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])

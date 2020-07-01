@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-//#endregion         
+//#endregion
 //#region Events
 @JSGlobal("google.visualization.events")
 @js.native

@@ -36,7 +36,7 @@ object SchemaStatusMessage {
   ): SchemaStatusMessage = {
     val __obj = js.Dynamic.literal()
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(isError)) __obj.updateDynamic("isError")(isError.asInstanceOf[js.Any])
+    if (!js.isUndefined(isError)) __obj.updateDynamic("isError")(isError.get.asInstanceOf[js.Any])
     if (refersTo != null) __obj.updateDynamic("refersTo")(refersTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStatusMessage]
   }

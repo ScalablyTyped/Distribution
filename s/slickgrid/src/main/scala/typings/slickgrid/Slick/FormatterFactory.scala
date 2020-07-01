@@ -10,7 +10,7 @@ trait FormatterFactory[T /* <: SlickData */] extends js.Object {
 
 object FormatterFactory {
   @scala.inline
-  def apply[T](getFormatter: Column[T] => Formatter[_]): FormatterFactory[T] = {
+  def apply[/* <: typings.slickgrid.Slick.SlickData */ T](getFormatter: Column[T] => Formatter[_]): FormatterFactory[T] = {
     val __obj = js.Dynamic.literal(getFormatter = js.Any.fromFunction1(getFormatter))
     __obj.asInstanceOf[FormatterFactory[T]]
   }

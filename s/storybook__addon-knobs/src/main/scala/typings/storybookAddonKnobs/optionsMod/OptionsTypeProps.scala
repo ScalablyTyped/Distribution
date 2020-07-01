@@ -13,7 +13,7 @@ trait OptionsTypeProps[T /* <: OptionsTypeKnobValue[OptionsTypeKnobSingleValue] 
 
 object OptionsTypeProps {
   @scala.inline
-  def apply[T](display: OptionsKnobOptionsDisplay, knob: OptionsTypeKnob[T], onChange: T => T): OptionsTypeProps[T] = {
+  def apply[/* <: typings.storybookAddonKnobs.optionsMod.OptionsTypeKnobValue[typings.storybookAddonKnobs.optionsMod.OptionsTypeKnobSingleValue] */ T](display: OptionsKnobOptionsDisplay, knob: OptionsTypeKnob[T], onChange: T => T): OptionsTypeProps[T] = {
     val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any], knob = knob.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[OptionsTypeProps[T]]
   }

@@ -79,7 +79,7 @@ object SchemaVmParams {
   ): SchemaVmParams = {
     val __obj = js.Dynamic.literal()
     if (baseInstanceName != null) __obj.updateDynamic("baseInstanceName")(baseInstanceName.asInstanceOf[js.Any])
-    if (!js.isUndefined(canIpForward)) __obj.updateDynamic("canIpForward")(canIpForward.asInstanceOf[js.Any])
+    if (!js.isUndefined(canIpForward)) __obj.updateDynamic("canIpForward")(canIpForward.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (disksToAttach != null) __obj.updateDynamic("disksToAttach")(disksToAttach.asInstanceOf[js.Any])
     if (disksToCreate != null) __obj.updateDynamic("disksToCreate")(disksToCreate.asInstanceOf[js.Any])

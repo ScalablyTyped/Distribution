@@ -8,7 +8,7 @@ trait LineStyleShadowColor extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label
     */
-  var label: js.UndefOr[FontStyle] = js.undefined
+  var label: js.UndefOr[FontSize] = js.undefined
   /**
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.lineStyle
     */
@@ -17,7 +17,7 @@ trait LineStyleShadowColor extends js.Object {
 
 object LineStyleShadowColor {
   @scala.inline
-  def apply(label: FontStyle = null, lineStyle: ShadowColor = null): LineStyleShadowColor = {
+  def apply(label: FontSize = null, lineStyle: ShadowColor = null): LineStyleShadowColor = {
     val __obj = js.Dynamic.literal()
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])

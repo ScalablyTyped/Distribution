@@ -18,8 +18,9 @@ object EventType extends js.Object {
   /* "CommentAdded" */ val commentAdded: typings.officeJs.Excel.EventType.commentAdded with String = js.native
   /* "CommentChanged" */ val commentChanged: typings.officeJs.Excel.EventType.commentChanged with String = js.native
   /* "CommentDeleted" */ val commentDeleted: typings.officeJs.Excel.EventType.commentDeleted with String = js.native
+  /* "LinkedDataTypeLinkedDataTypeAdded" */ val linkedDataTypeLinkedDataTypeAdded: typings.officeJs.Excel.EventType.linkedDataTypeLinkedDataTypeAdded with String = js.native
+  /* "LinkedDataTypeRefreshModeChanged" */ val linkedDataTypeRefreshModeChanged: typings.officeJs.Excel.EventType.linkedDataTypeRefreshModeChanged with String = js.native
   /* "LinkedDataTypeRefreshRequestCompleted" */ val linkedDataTypeRefreshRequestCompleted: typings.officeJs.Excel.EventType.linkedDataTypeRefreshRequestCompleted with String = js.native
-  /* "RecordingStateChangedEvent" */ val recordingStateChangedEvent: typings.officeJs.Excel.EventType.recordingStateChangedEvent with String = js.native
   /* "RibbonCommandExecuted" */ val ribbonCommandExecuted: typings.officeJs.Excel.EventType.ribbonCommandExecuted with String = js.native
   /* "ShapeActivated" */ val shapeActivated: typings.officeJs.Excel.EventType.shapeActivated with String = js.native
   /* "ShapeDeactivated" */ val shapeDeactivated: typings.officeJs.Excel.EventType.shapeDeactivated with String = js.native
@@ -30,7 +31,6 @@ object EventType extends js.Object {
   /* "TableSelectionChanged" */ val tableSelectionChanged: typings.officeJs.Excel.EventType.tableSelectionChanged with String = js.native
   /* "VisualChange" */ val visualChange: typings.officeJs.Excel.EventType.visualChange with String = js.native
   /* "VisualSelectionChanged" */ val visualSelectionChanged: typings.officeJs.Excel.EventType.visualSelectionChanged with String = js.native
-  /* "WACOperationEvent" */ val wacoperationEvent: typings.officeJs.Excel.EventType.wacoperationEvent with String = js.native
   /* "WorkbookAutoSaveSettingChanged" */ val workbookAutoSaveSettingChanged: typings.officeJs.Excel.EventType.workbookAutoSaveSettingChanged with String = js.native
   /* "WorksheetActivated" */ val worksheetActivated: typings.officeJs.Excel.EventType.worksheetActivated with String = js.native
   /* "WorksheetAdded" */ val worksheetAdded: typings.officeJs.Excel.EventType.worksheetAdded with String = js.native

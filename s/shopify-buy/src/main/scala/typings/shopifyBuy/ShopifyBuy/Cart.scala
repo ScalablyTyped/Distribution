@@ -10,6 +10,10 @@ trait Cart extends GraphModel {
     */
   var checkoutUrl: String
   /**
+    * Get completed at date.
+    */
+  var completedAt: String | Null
+  /**
     * get ID for current cart
     */
   var id: String | Double
@@ -38,9 +42,10 @@ object Cart {
     lineItems: js.Array[LineItem],
     subtotalPrice: String,
     attrs: js.Any = null,
+    completedAt: String = null,
     onlineStoreUrl: String = null
   ): Cart = {
-    val __obj = js.Dynamic.literal(checkoutUrl = checkoutUrl.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lineItemCount = lineItemCount.asInstanceOf[js.Any], lineItems = lineItems.asInstanceOf[js.Any], subtotalPrice = subtotalPrice.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(checkoutUrl = checkoutUrl.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lineItemCount = lineItemCount.asInstanceOf[js.Any], lineItems = lineItems.asInstanceOf[js.Any], subtotalPrice = subtotalPrice.asInstanceOf[js.Any], completedAt = completedAt.asInstanceOf[js.Any])
     if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
     if (onlineStoreUrl != null) __obj.updateDynamic("onlineStoreUrl")(onlineStoreUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cart]

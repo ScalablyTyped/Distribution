@@ -52,7 +52,7 @@ class TilingSpriteRenderer protected ()
   override def render(`object`: typings.pixiJs.PIXI.DisplayObject): Unit = js.native
   /**
     *
-    * @param {PIXI.TilingSprite} ts tilingSprite to be rendered
+    * @param {PIXI.TilingSprite} ts - tilingSprite to be rendered
     */
   /* CompleteClass */
   override def render(ts: typings.pixiJs.PIXI.TilingSprite): Unit = js.native

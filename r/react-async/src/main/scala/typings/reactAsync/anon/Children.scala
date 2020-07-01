@@ -18,7 +18,7 @@ trait Children[T /* <: js.Object */] extends js.Object {
 
 object Children {
   @scala.inline
-  def apply[T](
+  def apply[/* <: js.Object */ T](
     state: (AsyncInitial[T, AbstractState[T]]) | (AsyncPending[T, AbstractState[T]]) | (AsyncFulfilled[T, AbstractState[T]]) | (AsyncRejected[T, AbstractState[T]]),
     children: FulfilledChildren[T] = null,
     persist: js.UndefOr[Boolean] = js.undefined

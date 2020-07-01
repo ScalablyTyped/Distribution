@@ -15,6 +15,7 @@ trait SkeletonProps extends js.Object {
   var loading: js.UndefOr[Boolean] = js.undefined
   var paragraph: js.UndefOr[SkeletonParagraphProps | Boolean] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
+  var round: js.UndefOr[Boolean] = js.undefined
   var title: js.UndefOr[SkeletonTitleProps | Boolean] = js.undefined
 }
 
@@ -28,6 +29,7 @@ object SkeletonProps {
     loading: js.UndefOr[Boolean] = js.undefined,
     paragraph: SkeletonParagraphProps | Boolean = null,
     prefixCls: String = null,
+    round: js.UndefOr[Boolean] = js.undefined,
     title: SkeletonTitleProps | Boolean = null
   ): SkeletonProps = {
     val __obj = js.Dynamic.literal()
@@ -38,6 +40,7 @@ object SkeletonProps {
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.get.asInstanceOf[js.Any])
     if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
+    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SkeletonProps]
   }

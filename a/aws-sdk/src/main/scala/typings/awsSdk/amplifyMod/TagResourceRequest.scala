@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TagResourceRequest extends js.Object {
   /**
-    *  Resource arn used to tag resource. 
+    *  The Amazon Resource Name (ARN) to use to tag a resource. 
     */
   var resourceArn: ResourceArn = js.native
   /**
-    *  Tags used to tag resource. 
+    *  The tags used to tag the resource. 
     */
   var tags: TagMap = js.native
 }

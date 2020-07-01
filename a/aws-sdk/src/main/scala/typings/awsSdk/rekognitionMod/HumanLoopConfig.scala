@@ -11,7 +11,7 @@ trait HumanLoopConfig extends js.Object {
     */
   var DataAttributes: js.UndefOr[HumanLoopDataAttributes] = js.native
   /**
-    * The Amazon Resource Name (ARN) of the flow definition.
+    * The Amazon Resource Name (ARN) of the flow definition. You can create a flow definition by using the Amazon Sagemaker CreateFlowDefinition Operation. 
     */
   var FlowDefinitionArn: typings.awsSdk.rekognitionMod.FlowDefinitionArn = js.native
   /**

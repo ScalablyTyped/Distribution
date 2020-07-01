@@ -6,8 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BridgeMerged extends Event {
-  /* Properties */
+  /**
+    * Bridge.
+    */
   var bridge: Bridge
+  /**
+    * Bridge_from.
+    */
   var bridge_from: Bridge
 }
 

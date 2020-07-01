@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StreamJournalToKinesisRequest extends js.Object {
   /**
-    * The exclusive date and time that specifies when the stream ends. If you keep this parameter blank, the stream runs indefinitely until you cancel it. The ExclusiveEndTime must be in ISO 8601 date and time format and in Universal Coordinated Time (UTC). For example: 2019-06-13T21:36:34Z 
+    * The exclusive date and time that specifies when the stream ends. If you don't define this parameter, the stream runs indefinitely until you cancel it. The ExclusiveEndTime must be in ISO 8601 date and time format and in Universal Coordinated Time (UTC). For example: 2019-06-13T21:36:34Z 
     */
   var ExclusiveEndTime: js.UndefOr[Timestamp] = js.native
   /**
@@ -27,7 +27,7 @@ trait StreamJournalToKinesisRequest extends js.Object {
     */
   var RoleArn: Arn = js.native
   /**
-    * The name that you want to assign to the QLDB journal stream. User-defined names can help identify and indicate the purpose of a stream. Your stream name must be unique among other active streams for a given ledger. If you try to create a stream with the same name and configuration of an active, existing stream for the same ledger, QLDB simply returns the existing stream. Stream names have the same naming constraints as ledger names, as defined in Quotas in Amazon QLDB in the Amazon QLDB Developer Guide.
+    * The name that you want to assign to the QLDB journal stream. User-defined names can help identify and indicate the purpose of a stream. Your stream name must be unique among other active streams for a given ledger. Stream names have the same naming constraints as ledger names, as defined in Quotas in Amazon QLDB in the Amazon QLDB Developer Guide.
     */
   var StreamName: typings.awsSdk.qldbMod.StreamName = js.native
   /**

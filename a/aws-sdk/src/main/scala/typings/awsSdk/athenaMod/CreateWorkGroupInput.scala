@@ -19,7 +19,7 @@ trait CreateWorkGroupInput extends js.Object {
     */
   var Name: WorkGroupName = js.native
   /**
-    * One or more tags, separated by commas, that you want to attach to the workgroup as you create it.
+    * A list of comma separated tags to add to the workgroup that is created.
     */
   var Tags: js.UndefOr[TagList] = js.native
 }

@@ -11,15 +11,15 @@ trait CreateTapeWithBarcodeInput extends js.Object {
     */
   var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN = js.native
   /**
-    * True to use Amazon S3 server-side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional.
+    * Set to true to use Amazon S3 server-side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional. Valid Values: true | false 
     */
   var KMSEncrypted: js.UndefOr[Boolean] = js.native
   /**
-    * The Amazon Resource Name (ARN) of the AWS KMS key used for Amazon S3 server-side encryption. This value can only be set when KMSEncrypted is true. Optional.
+    * The Amazon Resource Name (ARN) of a symmetric customer master key (CMK) used for Amazon S3 server-side encryption. Storage Gateway does not support asymmetric CMKs. This value can only be set when KMSEncrypted is true. Optional.
     */
   var KMSKey: js.UndefOr[typings.awsSdk.storagegatewayMod.KMSKey] = js.native
   /**
-    * The ID of the pool that you want to add your tape to for archiving. The tape in this pool is archived in the S3 storage class that is associated with the pool. When you use your backup application to eject the tape, the tape is archived directly into the storage class (S3 Glacier or S3 Glacier Deep Archive) that corresponds to the pool. Valid values: "GLACIER", "DEEP_ARCHIVE"
+    * The ID of the pool that you want to add your tape to for archiving. The tape in this pool is archived in the S3 storage class that is associated with the pool. When you use your backup application to eject the tape, the tape is archived directly into the storage class (S3 Glacier or S3 Deep Archive) that corresponds to the pool. Valid Values: GLACIER | DEEP_ARCHIVE 
     */
   var PoolId: js.UndefOr[typings.awsSdk.storagegatewayMod.PoolId] = js.native
   /**

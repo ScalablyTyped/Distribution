@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   var assertion: js.UndefOr[typings.empower.mod.Options] = js.undefined
-  var output: js.UndefOr[typings.powerAssertFormatter.powerAssertFormatter.Options] = js.undefined
+  var output: js.UndefOr[typings.powerAssertFormatter.mod.Options] = js.undefined
 }
 
 object Options {
   @scala.inline
   def apply(
     assertion: typings.empower.mod.Options = null,
-    output: typings.powerAssertFormatter.powerAssertFormatter.Options = null
+    output: typings.powerAssertFormatter.mod.Options = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (assertion != null) __obj.updateDynamic("assertion")(assertion.asInstanceOf[js.Any])

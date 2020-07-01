@@ -120,6 +120,12 @@ trait Props extends js.Object {
     */
   var playButtonEnabled: js.UndefOr[Boolean] = js.undefined
   /**
+    * Preserve current slide position when resize event fired
+    *
+    * Default: false.
+    */
+  var preservePosition: js.UndefOr[Boolean] = js.undefined
+  /**
     * Prevent the browser's touchmove event when carousel is swiping
     *
     * Default: false.
@@ -177,6 +183,12 @@ trait Props extends js.Object {
     * Default: false.
     */
   var touchTrackingEnabled: js.UndefOr[Boolean] = js.undefined
+  /** Sets how intermediate values are calculated for CSS properties being affected by a transition effect.
+    *
+    * Default: 'ease-out'
+    *
+    */
+  var transitionTimingFunction: js.UndefOr[String] = js.undefined
 }
 
 object Props {
@@ -202,6 +214,7 @@ object Props {
     onSlideChange: /* e */ EventObject => Unit = null,
     onSlideChanged: /* e */ EventObject => Unit = null,
     playButtonEnabled: js.UndefOr[Boolean] = js.undefined,
+    preservePosition: js.UndefOr[Boolean] = js.undefined,
     preventEventOnTouchMove: js.UndefOr[Boolean] = js.undefined,
     responsive: js.Object = null,
     shouldHandleResizeEvent: /* e */ js.Any => Boolean = null,
@@ -211,7 +224,8 @@ object Props {
     startIndex: js.UndefOr[Double] = js.undefined,
     stopAutoPlayOnHover: js.UndefOr[Boolean] = js.undefined,
     swipeDisabled: js.UndefOr[Boolean] = js.undefined,
-    touchTrackingEnabled: js.UndefOr[Boolean] = js.undefined
+    touchTrackingEnabled: js.UndefOr[Boolean] = js.undefined,
+    transitionTimingFunction: String = null
   ): Props = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight.get.asInstanceOf[js.Any])
@@ -234,6 +248,7 @@ object Props {
     if (onSlideChange != null) __obj.updateDynamic("onSlideChange")(js.Any.fromFunction1(onSlideChange))
     if (onSlideChanged != null) __obj.updateDynamic("onSlideChanged")(js.Any.fromFunction1(onSlideChanged))
     if (!js.isUndefined(playButtonEnabled)) __obj.updateDynamic("playButtonEnabled")(playButtonEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preservePosition)) __obj.updateDynamic("preservePosition")(preservePosition.get.asInstanceOf[js.Any])
     if (!js.isUndefined(preventEventOnTouchMove)) __obj.updateDynamic("preventEventOnTouchMove")(preventEventOnTouchMove.get.asInstanceOf[js.Any])
     if (responsive != null) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
     if (shouldHandleResizeEvent != null) __obj.updateDynamic("shouldHandleResizeEvent")(js.Any.fromFunction1(shouldHandleResizeEvent))
@@ -244,6 +259,7 @@ object Props {
     if (!js.isUndefined(stopAutoPlayOnHover)) __obj.updateDynamic("stopAutoPlayOnHover")(stopAutoPlayOnHover.get.asInstanceOf[js.Any])
     if (!js.isUndefined(swipeDisabled)) __obj.updateDynamic("swipeDisabled")(swipeDisabled.get.asInstanceOf[js.Any])
     if (!js.isUndefined(touchTrackingEnabled)) __obj.updateDynamic("touchTrackingEnabled")(touchTrackingEnabled.get.asInstanceOf[js.Any])
+    if (transitionTimingFunction != null) __obj.updateDynamic("transitionTimingFunction")(transitionTimingFunction.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

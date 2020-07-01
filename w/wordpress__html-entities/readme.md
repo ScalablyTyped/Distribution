@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__html-entities
 
-Typings are for version 2.7.0
+Typings are for version 2.8.0
 
 ## Library description:
 HTML entity utilities for WordPress.

@@ -33,7 +33,7 @@ object SchemaHttp {
     rules: js.Array[SchemaHttpRule] = null
   ): SchemaHttp = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fullyDecodeReservedExpansion)) __obj.updateDynamic("fullyDecodeReservedExpansion")(fullyDecodeReservedExpansion.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullyDecodeReservedExpansion)) __obj.updateDynamic("fullyDecodeReservedExpansion")(fullyDecodeReservedExpansion.get.asInstanceOf[js.Any])
     if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHttp]
   }

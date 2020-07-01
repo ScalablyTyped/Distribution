@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Webhook extends js.Object {
   /**
-    *  Name for a branch, part of an Amplify App. 
+    *  The name for a branch that is part of an Amplify app. 
     */
   var branchName: BranchName = js.native
   /**
-    *  Create date / time for a webhook. 
+    *  The create date and time for a webhook. 
     */
   var createTime: CreateTime = js.native
   /**
-    *  Description for a webhook. 
+    *  The description for a webhook. 
     */
   var description: Description = js.native
   /**
-    *  Update date / time for a webhook. 
+    *  Updates the date and time for a webhook. 
     */
   var updateTime: UpdateTime = js.native
   /**
-    *  ARN for the webhook. 
+    *  The Amazon Resource Name (ARN) for the webhook. 
     */
   var webhookArn: WebhookArn = js.native
   /**
-    *  Id of the webhook. 
+    *  The ID of the webhook. 
     */
   var webhookId: WebhookId = js.native
   /**
-    *  Url of the webhook. 
+    *  The URL of the webhook. 
     */
   var webhookUrl: WebhookUrl = js.native
 }

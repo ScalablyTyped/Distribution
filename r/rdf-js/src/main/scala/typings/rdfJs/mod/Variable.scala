@@ -6,11 +6,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Variable
-  extends QuadGraph
-     with QuadObject
-     with QuadPredicate
-     with QuadSubject
-     with Term {
+  extends _QuadGraph
+     with _QuadObject
+     with _QuadSubject
+     with _Term {
   /**
     * Contains the constant "Variable".
     */

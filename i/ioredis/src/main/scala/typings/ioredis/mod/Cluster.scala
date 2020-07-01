@@ -10,7 +10,7 @@ trait Cluster
   extends EventEmitter
      with Commander
      with Commands {
-  def connect(callback: js.Function0[Unit]): js.Promise[Unit] = js.native
+  def connect(): js.Promise[Unit] = js.native
   def disconnect(): Unit = js.native
   def nodes(): js.Array[Redis] = js.native
   def nodes(role: NodeRole): js.Array[Redis] = js.native

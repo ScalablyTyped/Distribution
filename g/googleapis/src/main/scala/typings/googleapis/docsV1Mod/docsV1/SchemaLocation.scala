@@ -23,9 +23,9 @@ trait SchemaLocation extends js.Object {
 
 object SchemaLocation {
   @scala.inline
-  def apply(index: Int | Double = null, segmentId: String = null): SchemaLocation = {
+  def apply(index: js.UndefOr[Double] = js.undefined, segmentId: String = null): SchemaLocation = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (segmentId != null) __obj.updateDynamic("segmentId")(segmentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLocation]
   }

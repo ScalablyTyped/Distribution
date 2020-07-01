@@ -34,6 +34,8 @@ trait ProgressProps extends js.Object {
   var strokeLinecap: js.UndefOr[butt | square | round] = js.undefined
   var strokeWidth: js.UndefOr[Double] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
+  var success: js.UndefOr[SuccessProps] = js.undefined
+  /** @deprecated Use `success` instead */
   var successPercent: js.UndefOr[Double] = js.undefined
   var trailColor: js.UndefOr[String] = js.undefined
   var `type`: js.UndefOr[ProgressType] = js.undefined
@@ -57,6 +59,7 @@ object ProgressProps {
     strokeLinecap: butt | square | round = null,
     strokeWidth: js.UndefOr[Double] = js.undefined,
     style: CSSProperties = null,
+    success: SuccessProps = null,
     successPercent: js.UndefOr[Double] = js.undefined,
     trailColor: String = null,
     `type`: ProgressType = null,
@@ -77,6 +80,7 @@ object ProgressProps {
     if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap.asInstanceOf[js.Any])
     if (!js.isUndefined(strokeWidth)) __obj.updateDynamic("strokeWidth")(strokeWidth.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
     if (!js.isUndefined(successPercent)) __obj.updateDynamic("successPercent")(successPercent.get.asInstanceOf[js.Any])
     if (trailColor != null) __obj.updateDynamic("trailColor")(trailColor.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

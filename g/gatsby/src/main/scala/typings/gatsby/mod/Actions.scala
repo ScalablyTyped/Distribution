@@ -5,8 +5,8 @@ import typings.gatsby.anon.Child
 import typings.gatsby.anon.Dictkey
 import typings.gatsby.anon.FieldName
 import typings.gatsby.anon.Id
-import typings.gatsby.anon.NameOptions
 import typings.gatsby.anon.NodeIdString
+import typings.gatsby.anon.Options
 import typings.gatsby.anon.Path
 import typings.gatsby.anon.Schema
 import typings.graphql.definitionMod.GraphQLOutputType
@@ -88,11 +88,11 @@ trait Actions extends js.Object {
   def setBabelOptions(options: js.Object): Unit = js.native
   def setBabelOptions(options: js.Object, plugin: ActionPlugin): Unit = js.native
   /** @see https://www.gatsbyjs.org/docs/actions/#setBabelPlugin */
-  def setBabelPlugin(config: NameOptions): Unit = js.native
-  def setBabelPlugin(config: NameOptions, plugin: ActionPlugin): Unit = js.native
+  def setBabelPlugin(config: Options): Unit = js.native
+  def setBabelPlugin(config: Options, plugin: ActionPlugin): Unit = js.native
   /** @see https://www.gatsbyjs.org/docs/actions/#setBabelPreset */
-  def setBabelPreset(config: NameOptions): Unit = js.native
-  def setBabelPreset(config: NameOptions, plugin: ActionPlugin): Unit = js.native
+  def setBabelPreset(config: Options): Unit = js.native
+  def setBabelPreset(config: Options, plugin: ActionPlugin): Unit = js.native
   /** @see https://www.gatsbyjs.org/docs/actions/#setJob */
   def setJob(job: (Record[String, _]) with Id): Unit = js.native
   def setJob(job: (Record[String, _]) with Id, plugin: ActionPlugin): Unit = js.native

@@ -20,7 +20,7 @@ trait BaseExecutorDeps[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C,
 
 object BaseExecutorDeps {
   @scala.inline
-  def apply[C, N, M, I, O](namespace: N, colors: Colors = null, stderr: WriteStream = null, stdout: WriteStream = null): BaseExecutorDeps[C, N, M, I, O] = {
+  def apply[/* <: typings.ionicCliFramework.definitionsMod.ICommand[C, N, M, I, O] */ C, /* <: typings.ionicCliFramework.definitionsMod.INamespace[C, N, M, I, O] */ N, /* <: typings.ionicCliFramework.definitionsMod.CommandMetadata[I, O] */ M, /* <: typings.ionicCliFramework.definitionsMod.CommandMetadataInput */ I, /* <: typings.ionicCliFramework.definitionsMod.CommandMetadataOption */ O](namespace: N, colors: Colors = null, stderr: WriteStream = null, stdout: WriteStream = null): BaseExecutorDeps[C, N, M, I, O] = {
     val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     if (stderr != null) __obj.updateDynamic("stderr")(stderr.asInstanceOf[js.Any])

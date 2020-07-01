@@ -37,7 +37,7 @@ object ParamsResourceBloguserinfosGet {
     blogId: String = null,
     fields: String = null,
     key: String = null,
-    maxPosts: Int | Double = null,
+    maxPosts: js.UndefOr[Double] = js.undefined,
     oauth_token: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
     quotaUser: String = null,
@@ -50,9 +50,9 @@ object ParamsResourceBloguserinfosGet {
     if (blogId != null) __obj.updateDynamic("blogId")(blogId.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (maxPosts != null) __obj.updateDynamic("maxPosts")(maxPosts.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPosts)) __obj.updateDynamic("maxPosts")(maxPosts.get.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])

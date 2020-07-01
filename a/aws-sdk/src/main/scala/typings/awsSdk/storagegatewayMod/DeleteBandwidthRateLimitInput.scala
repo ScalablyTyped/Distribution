@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DeleteBandwidthRateLimitInput extends js.Object {
   /**
-    * One of the BandwidthType values that indicates the gateway bandwidth rate limit to delete. Valid Values: Upload, Download, All.
+    * One of the BandwidthType values that indicates the gateway bandwidth rate limit to delete. Valid Values: Upload | Download | All 
     */
   var BandwidthType: typings.awsSdk.storagegatewayMod.BandwidthType = js.native
   var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN = js.native

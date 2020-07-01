@@ -10,7 +10,8 @@ trait WidgetOptions extends js.Object {
   var hideFooter: js.UndefOr[Boolean] = js.undefined
   var hideHeaders: js.UndefOr[Boolean] = js.undefined
   var hideScrollbars: js.UndefOr[Boolean] = js.undefined
-  var onSubmit: js.UndefOr[js.Function0[_]] = js.undefined
+  var onReady: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onSubmit: js.UndefOr[js.Function1[/* event */ OnSubmitEvent, Unit]] = js.undefined
   var opacity: js.UndefOr[Double] = js.undefined
 }
 
@@ -22,7 +23,8 @@ object WidgetOptions {
     hideFooter: js.UndefOr[Boolean] = js.undefined,
     hideHeaders: js.UndefOr[Boolean] = js.undefined,
     hideScrollbars: js.UndefOr[Boolean] = js.undefined,
-    onSubmit: () => _ = null,
+    onReady: () => Unit = null,
+    onSubmit: /* event */ OnSubmitEvent => Unit = null,
     opacity: js.UndefOr[Double] = js.undefined
   ): WidgetOptions = {
     val __obj = js.Dynamic.literal()
@@ -31,7 +33,8 @@ object WidgetOptions {
     if (!js.isUndefined(hideFooter)) __obj.updateDynamic("hideFooter")(hideFooter.get.asInstanceOf[js.Any])
     if (!js.isUndefined(hideHeaders)) __obj.updateDynamic("hideHeaders")(hideHeaders.get.asInstanceOf[js.Any])
     if (!js.isUndefined(hideScrollbars)) __obj.updateDynamic("hideScrollbars")(hideScrollbars.get.asInstanceOf[js.Any])
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction0(onSubmit))
+    if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction0(onReady))
+    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1(onSubmit))
     if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WidgetOptions]
   }

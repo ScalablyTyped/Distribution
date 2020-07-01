@@ -35,9 +35,9 @@ trait DescribePortalResponse extends js.Object {
     */
   var portalLastUpdateDate: Timestamp = js.native
   /**
-    * The portal's logo image.
+    * The portal's logo image, which is available at a URL.
     */
-  var portalLogoImage: js.UndefOr[Image] = js.native
+  var portalLogoImageLocation: js.UndefOr[ImageLocation] = js.native
   /**
     * The name of the portal.
     */
@@ -69,12 +69,12 @@ object DescribePortalResponse {
     portalStartUrl: Url,
     portalStatus: PortalStatus,
     portalDescription: Description = null,
-    portalLogoImage: Image = null,
+    portalLogoImageLocation: ImageLocation = null,
     roleArn: ARN = null
   ): DescribePortalResponse = {
     val __obj = js.Dynamic.literal(portalArn = portalArn.asInstanceOf[js.Any], portalClientId = portalClientId.asInstanceOf[js.Any], portalContactEmail = portalContactEmail.asInstanceOf[js.Any], portalCreationDate = portalCreationDate.asInstanceOf[js.Any], portalId = portalId.asInstanceOf[js.Any], portalLastUpdateDate = portalLastUpdateDate.asInstanceOf[js.Any], portalName = portalName.asInstanceOf[js.Any], portalStartUrl = portalStartUrl.asInstanceOf[js.Any], portalStatus = portalStatus.asInstanceOf[js.Any])
     if (portalDescription != null) __obj.updateDynamic("portalDescription")(portalDescription.asInstanceOf[js.Any])
-    if (portalLogoImage != null) __obj.updateDynamic("portalLogoImage")(portalLogoImage.asInstanceOf[js.Any])
+    if (portalLogoImageLocation != null) __obj.updateDynamic("portalLogoImageLocation")(portalLogoImageLocation.asInstanceOf[js.Any])
     if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePortalResponse]
   }

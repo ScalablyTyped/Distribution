@@ -33,8 +33,8 @@ object SchemaVideoAgeGating {
     videoGameRating: String = null
   ): SchemaVideoAgeGating = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alcoholContent)) __obj.updateDynamic("alcoholContent")(alcoholContent.asInstanceOf[js.Any])
-    if (!js.isUndefined(restricted)) __obj.updateDynamic("restricted")(restricted.asInstanceOf[js.Any])
+    if (!js.isUndefined(alcoholContent)) __obj.updateDynamic("alcoholContent")(alcoholContent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(restricted)) __obj.updateDynamic("restricted")(restricted.get.asInstanceOf[js.Any])
     if (videoGameRating != null) __obj.updateDynamic("videoGameRating")(videoGameRating.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVideoAgeGating]
   }

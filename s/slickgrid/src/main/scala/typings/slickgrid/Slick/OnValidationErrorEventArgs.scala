@@ -17,7 +17,7 @@ trait OnValidationErrorEventArgs[T /* <: SlickData */] extends GridEventArgs[T] 
 
 object OnValidationErrorEventArgs {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.slickgrid.Slick.SlickData */ T](
     cell: Double,
     cellNode: HTMLElement,
     column: Column[T],

@@ -37,7 +37,7 @@ trait CreateServerRequest extends js.Object {
   /**
     *  The configuration management engine to use. Valid values include ChefAutomate and Puppet. 
     */
-  var Engine: js.UndefOr[String] = js.native
+  var Engine: String = js.native
   /**
     * Optional engine attributes on a specified server.   Attributes accepted in a Chef createServer request:     CHEF_AUTOMATE_PIVOTAL_KEY: A base64-encoded RSA public key. The corresponding private key is required to access the Chef API. When no CHEF_AUTOMATE_PIVOTAL_KEY is set, a private key is generated and returned in the response.     CHEF_AUTOMATE_ADMIN_PASSWORD: The password for the administrative user in the Chef Automate web-based dashboard. The password length is a minimum of eight characters, and a maximum of 32. The password can contain letters, numbers, and special characters (!/@#$%^&amp;+=_). The password must contain at least one lower case letter, one upper case letter, one number, and one special character. When no CHEF_AUTOMATE_ADMIN_PASSWORD is set, one is generated and returned in the response.    Attributes accepted in a Puppet createServer request:     PUPPET_ADMIN_PASSWORD: To work with the Puppet Enterprise console, a password must use ASCII characters.    PUPPET_R10K_REMOTE: The r10k remote is the URL of your control repository (for example, ssh://git@your.git-repo.com:user/control-repo.git). Specifying an r10k remote opens TCP port 8170.    PUPPET_R10K_PRIVATE_KEY: If you are using a private Git repository, add PUPPET_R10K_PRIVATE_KEY to specify a PEM-encoded private SSH key.  
     */
@@ -47,7 +47,7 @@ trait CreateServerRequest extends js.Object {
     */
   var EngineModel: js.UndefOr[String] = js.native
   /**
-    *  The major release version of the engine that you want to use. For a Chef server, the valid value for EngineVersion is currently 12. For a Puppet server, the valid value is 2017. 
+    *  The major release version of the engine that you want to use. For a Chef server, the valid value for EngineVersion is currently 2. For a Puppet server, the valid value is 2017. 
     */
   var EngineVersion: js.UndefOr[String] = js.native
   /**
@@ -63,11 +63,11 @@ trait CreateServerRequest extends js.Object {
     */
   var KeyPair: js.UndefOr[typings.awsSdk.opsworkscmMod.KeyPair] = js.native
   /**
-    *  The start time for a one-hour period during which AWS OpsWorks CM backs up application-level data on your server if automated backups are enabled. Valid values must be specified in one of the following formats:     HH:MM for daily backups    DDD:HH:MM for weekly backups   The specified time is in coordinated universal time (UTC). The default value is a random, daily start time.  Example: 08:00, which represents a daily start time of 08:00 UTC.  Example: Mon:08:00, which represents a start time of every Monday at 08:00 UTC. (8:00 a.m.)
+    *  The start time for a one-hour period during which AWS OpsWorks CM backs up application-level data on your server if automated backups are enabled. Valid values must be specified in one of the following formats:     HH:MM for daily backups    DDD:HH:MM for weekly backups    MM must be specified as 00. The specified time is in coordinated universal time (UTC). The default value is a random, daily start time.  Example: 08:00, which represents a daily start time of 08:00 UTC.  Example: Mon:08:00, which represents a start time of every Monday at 08:00 UTC. (8:00 a.m.)
     */
   var PreferredBackupWindow: js.UndefOr[TimeWindowDefinition] = js.native
   /**
-    *  The start time for a one-hour period each week during which AWS OpsWorks CM performs maintenance on the instance. Valid values must be specified in the following format: DDD:HH:MM. The specified time is in coordinated universal time (UTC). The default value is a random one-hour period on Tuesday, Wednesday, or Friday. See TimeWindowDefinition for more information.   Example: Mon:08:00, which represents a start time of every Monday at 08:00 UTC. (8:00 a.m.) 
+    *  The start time for a one-hour period each week during which AWS OpsWorks CM performs maintenance on the instance. Valid values must be specified in the following format: DDD:HH:MM. MM must be specified as 00. The specified time is in coordinated universal time (UTC). The default value is a random one-hour period on Tuesday, Wednesday, or Friday. See TimeWindowDefinition for more information.   Example: Mon:08:00, which represents a start time of every Monday at 08:00 UTC. (8:00 a.m.) 
     */
   var PreferredMaintenanceWindow: js.UndefOr[TimeWindowDefinition] = js.native
   /**
@@ -95,6 +95,7 @@ trait CreateServerRequest extends js.Object {
 object CreateServerRequest {
   @scala.inline
   def apply(
+    Engine: String,
     InstanceProfileArn: InstanceProfileArn,
     InstanceType: String,
     ServerName: ServerName,
@@ -106,7 +107,6 @@ object CreateServerRequest {
     CustomDomain: CustomDomain = null,
     CustomPrivateKey: CustomPrivateKey = null,
     DisableAutomatedBackup: js.UndefOr[Boolean] = js.undefined,
-    Engine: String = null,
     EngineAttributes: EngineAttributes = null,
     EngineModel: String = null,
     EngineVersion: String = null,
@@ -117,7 +117,7 @@ object CreateServerRequest {
     SubnetIds: Strings = null,
     Tags: TagList = null
   ): CreateServerRequest = {
-    val __obj = js.Dynamic.literal(InstanceProfileArn = InstanceProfileArn.asInstanceOf[js.Any], InstanceType = InstanceType.asInstanceOf[js.Any], ServerName = ServerName.asInstanceOf[js.Any], ServiceRoleArn = ServiceRoleArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Engine = Engine.asInstanceOf[js.Any], InstanceProfileArn = InstanceProfileArn.asInstanceOf[js.Any], InstanceType = InstanceType.asInstanceOf[js.Any], ServerName = ServerName.asInstanceOf[js.Any], ServiceRoleArn = ServiceRoleArn.asInstanceOf[js.Any])
     if (!js.isUndefined(AssociatePublicIpAddress)) __obj.updateDynamic("AssociatePublicIpAddress")(AssociatePublicIpAddress.get.asInstanceOf[js.Any])
     if (BackupId != null) __obj.updateDynamic("BackupId")(BackupId.asInstanceOf[js.Any])
     if (!js.isUndefined(BackupRetentionCount)) __obj.updateDynamic("BackupRetentionCount")(BackupRetentionCount.get.asInstanceOf[js.Any])
@@ -125,7 +125,6 @@ object CreateServerRequest {
     if (CustomDomain != null) __obj.updateDynamic("CustomDomain")(CustomDomain.asInstanceOf[js.Any])
     if (CustomPrivateKey != null) __obj.updateDynamic("CustomPrivateKey")(CustomPrivateKey.asInstanceOf[js.Any])
     if (!js.isUndefined(DisableAutomatedBackup)) __obj.updateDynamic("DisableAutomatedBackup")(DisableAutomatedBackup.get.asInstanceOf[js.Any])
-    if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
     if (EngineAttributes != null) __obj.updateDynamic("EngineAttributes")(EngineAttributes.asInstanceOf[js.Any])
     if (EngineModel != null) __obj.updateDynamic("EngineModel")(EngineModel.asInstanceOf[js.Any])
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])

@@ -100,6 +100,12 @@ trait IFocusTrapZoneProps extends HTMLAttributes[HTMLDivElement] {
     */
   var elementToFocusOnDismiss: js.UndefOr[HTMLElement] = js.undefined
   /**
+    * Puts aria-hidden=true on all non-ancestors of the current element, for screen readers.
+    * This is an experimental feature that will be graduated to default behavior after testing.
+    * This flag will be removed with the next major release.
+    */
+  var enableAriaHiddenSiblings: js.UndefOr[Boolean] = js.undefined
+  /**
     * Class name (not actual selector) for first focusable item. Do not append a dot.
     * Only applies if `focusPreviouslyFocusedInnerElement` is false.
     */
@@ -202,6 +208,7 @@ object IFocusTrapZoneProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     draggable: js.UndefOr[Booleanish] = js.undefined,
     elementToFocusOnDismiss: HTMLElement = null,
+    enableAriaHiddenSiblings: js.UndefOr[Boolean] = js.undefined,
     firstFocusableSelector: String | js.Function0[String] = null,
     focusPreviouslyFocusedInnerElement: js.UndefOr[Boolean] = js.undefined,
     forceFocusInsideTrap: js.UndefOr[Boolean] = js.undefined,
@@ -387,6 +394,7 @@ object IFocusTrapZoneProps {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
     if (elementToFocusOnDismiss != null) __obj.updateDynamic("elementToFocusOnDismiss")(elementToFocusOnDismiss.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAriaHiddenSiblings)) __obj.updateDynamic("enableAriaHiddenSiblings")(enableAriaHiddenSiblings.get.asInstanceOf[js.Any])
     if (firstFocusableSelector != null) __obj.updateDynamic("firstFocusableSelector")(firstFocusableSelector.asInstanceOf[js.Any])
     if (!js.isUndefined(focusPreviouslyFocusedInnerElement)) __obj.updateDynamic("focusPreviouslyFocusedInnerElement")(focusPreviouslyFocusedInnerElement.get.asInstanceOf[js.Any])
     if (!js.isUndefined(forceFocusInsideTrap)) __obj.updateDynamic("forceFocusInsideTrap")(forceFocusInsideTrap.get.asInstanceOf[js.Any])

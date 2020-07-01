@@ -27,6 +27,8 @@ trait MediaObject extends js.Object {
   def getTag(key: String, callback: Callback[String]): js.Promise[String] = js.native
   def getTags(): js.Promise[js.Array[Tag]] = js.native
   def getTags(callback: Callback[js.Array[Tag]]): js.Promise[js.Array[Tag]] = js.native
+  def release(): js.Promise[Unit] = js.native
+  def release(callback: Callback[Unit]): js.Promise[Unit] = js.native
   def removeTag(key: String): js.Promise[Unit] = js.native
   def removeTag(key: String, callback: Callback[Unit]): js.Promise[Unit] = js.native
   def setName(name: String): js.Promise[Unit] = js.native

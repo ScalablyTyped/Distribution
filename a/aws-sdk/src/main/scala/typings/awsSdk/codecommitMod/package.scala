@@ -37,6 +37,7 @@ package object codecommitMod {
   type BatchGetCommitsErrorsList = js.Array[typings.awsSdk.codecommitMod.BatchGetCommitsError]
   type BranchName = java.lang.String
   type BranchNameList = js.Array[typings.awsSdk.codecommitMod.BranchName]
+  type CallerReactions = js.Array[typings.awsSdk.codecommitMod.ReactionValue]
   type CapitalBoolean = scala.Boolean
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.A
@@ -74,6 +75,7 @@ package object codecommitMod {
   type ConflictResolutionStrategyTypeEnum = typings.awsSdk.codecommitMod._ConflictResolutionStrategyTypeEnum | java.lang.String
   type Conflicts = js.Array[typings.awsSdk.codecommitMod.Conflict]
   type Content = java.lang.String
+  type Count = scala.Double
   type CreationDate = typings.std.Date
   type Date = java.lang.String
   type DeleteFileEntries = js.Array[typings.awsSdk.codecommitMod.DeleteFileEntry]
@@ -175,6 +177,13 @@ package object codecommitMod {
   type PullRequestStatusEnum = typings.awsSdk.codecommitMod._PullRequestStatusEnum | java.lang.String
   type PullRequestTargetList = js.Array[typings.awsSdk.codecommitMod.PullRequestTarget]
   type PutFileEntries = js.Array[typings.awsSdk.codecommitMod.PutFileEntry]
+  type ReactionCountsMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.codecommitMod.Count]
+  type ReactionEmoji = java.lang.String
+  type ReactionShortCode = java.lang.String
+  type ReactionUnicode = java.lang.String
+  type ReactionUsersList = js.Array[typings.awsSdk.codecommitMod.Arn]
+  type ReactionValue = java.lang.String
+  type ReactionsForCommentList = js.Array[typings.awsSdk.codecommitMod.ReactionForComment]
   type ReferenceName = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.BEFORE

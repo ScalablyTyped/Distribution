@@ -30,9 +30,9 @@ trait SchemaGoogleCloudVisionV1p1beta1Feature extends js.Object {
 
 object SchemaGoogleCloudVisionV1p1beta1Feature {
   @scala.inline
-  def apply(maxResults: Int | Double = null, model: String = null, `type`: String = null): SchemaGoogleCloudVisionV1p1beta1Feature = {
+  def apply(maxResults: js.UndefOr[Double] = js.undefined, model: String = null, `type`: String = null): SchemaGoogleCloudVisionV1p1beta1Feature = {
     val __obj = js.Dynamic.literal()
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p1beta1Feature]

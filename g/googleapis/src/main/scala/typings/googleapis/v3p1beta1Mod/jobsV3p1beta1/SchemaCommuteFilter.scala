@@ -56,7 +56,7 @@ object SchemaCommuteFilter {
     travelDuration: String = null
   ): SchemaCommuteFilter = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowImpreciseAddresses)) __obj.updateDynamic("allowImpreciseAddresses")(allowImpreciseAddresses.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowImpreciseAddresses)) __obj.updateDynamic("allowImpreciseAddresses")(allowImpreciseAddresses.get.asInstanceOf[js.Any])
     if (commuteMethod != null) __obj.updateDynamic("commuteMethod")(commuteMethod.asInstanceOf[js.Any])
     if (departureTime != null) __obj.updateDynamic("departureTime")(departureTime.asInstanceOf[js.Any])
     if (roadTraffic != null) __obj.updateDynamic("roadTraffic")(roadTraffic.asInstanceOf[js.Any])

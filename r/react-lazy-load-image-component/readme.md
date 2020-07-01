@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-lazy-load-image-component
 
-Typings are for version 1.3
+Typings are for version 1.5
 
 ## Library description:
 React Component to lazy load images using a HOC to track window scroll position.

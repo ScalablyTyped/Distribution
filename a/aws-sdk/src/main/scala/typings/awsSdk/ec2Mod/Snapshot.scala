@@ -23,7 +23,7 @@ trait Snapshot extends js.Object {
     */
   var KmsKeyId: js.UndefOr[String] = js.native
   /**
-    *  Value from an Amazon-maintained list (amazon | self | all | aws-marketplace | microsoft) of snapshot owners. Not to be confused with the user-configured AWS account alias, which is set from the IAM console. 
+    * The AWS owner alias, as maintained by Amazon. The possible values are: amazon | self | all | aws-marketplace | microsoft. This AWS owner alias is not to be confused with the user-configured AWS account alias, which is set from the IAM console.
     */
   var OwnerAlias: js.UndefOr[String] = js.native
   /**

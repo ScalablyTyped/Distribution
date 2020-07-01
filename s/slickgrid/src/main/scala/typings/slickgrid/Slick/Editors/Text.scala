@@ -13,7 +13,7 @@ trait Text[T /* <: SlickData */] extends Editor[T] {
 
 object Text {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.slickgrid.Slick.SlickData */ T](
     applyValue: (T, String) => Unit,
     destroy: () => Unit,
     focus: () => Unit,

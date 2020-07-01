@@ -55,7 +55,7 @@ object SchemaGetHistogramRequest {
     searchTypes: js.Array[String] = null
   ): SchemaGetHistogramRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowBroadening)) __obj.updateDynamic("allowBroadening")(allowBroadening.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowBroadening)) __obj.updateDynamic("allowBroadening")(allowBroadening.get.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (requestMetadata != null) __obj.updateDynamic("requestMetadata")(requestMetadata.asInstanceOf[js.Any])

@@ -12,7 +12,7 @@ trait ComponentDescriptor[T /* <: Component[_, System[_]] */] extends js.Object 
 
 object ComponentDescriptor {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.aframe.mod.Component[_, typings.aframe.mod.System[_]] */ T](
     Component: ComponentConstructor[T],
     dependencies: js.Array[String] = null,
     multiple: js.UndefOr[Boolean] = js.undefined

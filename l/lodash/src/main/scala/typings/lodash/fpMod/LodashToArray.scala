@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashToArray extends js.Object {
+trait LodashToArray extends LodashConvertible {
   def apply(): js.Array[_] = js.native
   def apply[T](value: T): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any

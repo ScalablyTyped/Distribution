@@ -9,14 +9,14 @@ trait `0SymbolOffset` extends js.Object {
     * Data of the starting point.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-line.markLine.data.0
+    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.0
     */
   var `0`: js.UndefOr[SymbolOffset] = js.undefined
   /**
     * Data of the ending point.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-line.markLine.data.1
+    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1
     */
   var `1`: js.UndefOr[SymbolOffset] = js.undefined
 }

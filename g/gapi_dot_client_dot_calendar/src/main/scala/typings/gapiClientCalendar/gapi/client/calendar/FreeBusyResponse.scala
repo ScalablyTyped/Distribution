@@ -1,15 +1,23 @@
 package typings.gapiClientCalendar.gapi.client.calendar
 
-import typings.std.Record
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FreeBusyResponse extends js.Object {
   /** List of free/busy information for calendars. */
-  var calendars: js.UndefOr[Record[String, FreeBusyCalendar]] = js.undefined
+  var calendars: js.UndefOr[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: gapi.client.calendar.gapi.client.calendar.FreeBusyCalendar}
+    */ typings.gapiClientCalendar.gapiClientCalendarStrings.FreeBusyResponse with TopLevel[js.Any]
+  ] = js.undefined
   /** Expansion of groups. */
-  var groups: js.UndefOr[Record[String, FreeBusyGroup]] = js.undefined
+  var groups: js.UndefOr[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: gapi.client.calendar.gapi.client.calendar.FreeBusyGroup}
+    */ typings.gapiClientCalendar.gapiClientCalendarStrings.FreeBusyResponse with TopLevel[js.Any]
+  ] = js.undefined
   /** Type of the resource ("calendar#freeBusy"). */
   var kind: js.UndefOr[String] = js.undefined
   /** The end of the interval. */
@@ -21,8 +29,12 @@ trait FreeBusyResponse extends js.Object {
 object FreeBusyResponse {
   @scala.inline
   def apply(
-    calendars: Record[String, FreeBusyCalendar] = null,
-    groups: Record[String, FreeBusyGroup] = null,
+    calendars: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: gapi.client.calendar.gapi.client.calendar.FreeBusyCalendar}
+    */ typings.gapiClientCalendar.gapiClientCalendarStrings.FreeBusyResponse with TopLevel[js.Any] = null,
+    groups: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: gapi.client.calendar.gapi.client.calendar.FreeBusyGroup}
+    */ typings.gapiClientCalendar.gapiClientCalendarStrings.FreeBusyResponse with TopLevel[js.Any] = null,
     kind: String = null,
     timeMax: String = null,
     timeMin: String = null

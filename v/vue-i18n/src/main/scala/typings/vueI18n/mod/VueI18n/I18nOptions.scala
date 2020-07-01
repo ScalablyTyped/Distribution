@@ -2,12 +2,14 @@ package typings.vueI18n.mod.VueI18n
 
 import typings.std.RegExp
 import typings.vue.vueMod.Vue
+import typings.vueI18n.mod.IVueI18n
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line:interface-name
 trait I18nOptions extends js.Object {
+  var componentInstanceCreatedListener: js.UndefOr[ComponentInstanceCreatedListener] = js.undefined
   var dateTimeFormats: js.UndefOr[DateTimeFormats] = js.undefined
   var fallbackLocale: js.UndefOr[FallbackLocale] = js.undefined
   var fallbackRoot: js.UndefOr[Boolean] = js.undefined
@@ -31,6 +33,7 @@ trait I18nOptions extends js.Object {
 object I18nOptions {
   @scala.inline
   def apply(
+    componentInstanceCreatedListener: (/* newVm */ typings.vueI18n.mod.VueI18n with IVueI18n, /* rootVm */ typings.vueI18n.mod.VueI18n with IVueI18n) => Unit = null,
     dateTimeFormats: DateTimeFormats = null,
     fallbackLocale: FallbackLocale = null,
     fallbackRoot: js.UndefOr[Boolean] = js.undefined,
@@ -51,6 +54,7 @@ object I18nOptions {
     warnHtmlInMessage: WarnHtmlInMessageLevel = null
   ): I18nOptions = {
     val __obj = js.Dynamic.literal()
+    if (componentInstanceCreatedListener != null) __obj.updateDynamic("componentInstanceCreatedListener")(js.Any.fromFunction2(componentInstanceCreatedListener))
     if (dateTimeFormats != null) __obj.updateDynamic("dateTimeFormats")(dateTimeFormats.asInstanceOf[js.Any])
     if (fallbackLocale != null) __obj.updateDynamic("fallbackLocale")(fallbackLocale.asInstanceOf[js.Any])
     if (!js.isUndefined(fallbackRoot)) __obj.updateDynamic("fallbackRoot")(fallbackRoot.get.asInstanceOf[js.Any])

@@ -85,28 +85,28 @@ object SchemaRouterBgpPeer {
     advertiseMode: String = null,
     advertisedGroups: js.Array[String] = null,
     advertisedIpRanges: js.Array[SchemaRouterAdvertisedIpRange] = null,
-    advertisedRoutePriority: Int | Double = null,
+    advertisedRoutePriority: js.UndefOr[Double] = js.undefined,
     bfd: SchemaRouterBgpPeerBfd = null,
     enable: String = null,
     interfaceName: String = null,
     ipAddress: String = null,
     managementType: String = null,
     name: String = null,
-    peerAsn: Int | Double = null,
+    peerAsn: js.UndefOr[Double] = js.undefined,
     peerIpAddress: String = null
   ): SchemaRouterBgpPeer = {
     val __obj = js.Dynamic.literal()
     if (advertiseMode != null) __obj.updateDynamic("advertiseMode")(advertiseMode.asInstanceOf[js.Any])
     if (advertisedGroups != null) __obj.updateDynamic("advertisedGroups")(advertisedGroups.asInstanceOf[js.Any])
     if (advertisedIpRanges != null) __obj.updateDynamic("advertisedIpRanges")(advertisedIpRanges.asInstanceOf[js.Any])
-    if (advertisedRoutePriority != null) __obj.updateDynamic("advertisedRoutePriority")(advertisedRoutePriority.asInstanceOf[js.Any])
+    if (!js.isUndefined(advertisedRoutePriority)) __obj.updateDynamic("advertisedRoutePriority")(advertisedRoutePriority.get.asInstanceOf[js.Any])
     if (bfd != null) __obj.updateDynamic("bfd")(bfd.asInstanceOf[js.Any])
     if (enable != null) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
     if (interfaceName != null) __obj.updateDynamic("interfaceName")(interfaceName.asInstanceOf[js.Any])
     if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
     if (managementType != null) __obj.updateDynamic("managementType")(managementType.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (peerAsn != null) __obj.updateDynamic("peerAsn")(peerAsn.asInstanceOf[js.Any])
+    if (!js.isUndefined(peerAsn)) __obj.updateDynamic("peerAsn")(peerAsn.get.asInstanceOf[js.Any])
     if (peerIpAddress != null) __obj.updateDynamic("peerIpAddress")(peerIpAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRouterBgpPeer]
   }

@@ -12,7 +12,7 @@ trait `3`[TSchema /* <: StringDictionary[js.Any] */] extends js.Object {
 
 object `3` {
   @scala.inline
-  def apply[TSchema](_id: ExtractIdType[TSchema]): `3`[TSchema] = {
+  def apply[/* <: org.scalablytyped.runtime.StringDictionary[js.Any] */ TSchema](_id: ExtractIdType[TSchema]): `3`[TSchema] = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any])
     __obj.asInstanceOf[`3`[TSchema]]
   }

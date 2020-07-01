@@ -10,6 +10,7 @@ trait Method extends js.Object {
   var defaultAccount: js.UndefOr[String | Null] = js.undefined
   var defaultBlock: js.UndefOr[String] = js.undefined
   var extraFormatters: js.UndefOr[js.Any] = js.undefined
+  var handleRevert: js.UndefOr[Boolean] = js.undefined
   var inputFormatter: js.UndefOr[js.Array[js.Function0[Unit] | Null]] = js.undefined
   var name: String
   var outputFormatter: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -26,6 +27,7 @@ object Method {
     defaultAccount: js.UndefOr[Null | String] = js.undefined,
     defaultBlock: String = null,
     extraFormatters: js.Any = null,
+    handleRevert: js.UndefOr[Boolean] = js.undefined,
     inputFormatter: js.Array[js.Function0[Unit] | Null] = null,
     outputFormatter: () => Unit = null,
     params: js.UndefOr[Double] = js.undefined,
@@ -36,6 +38,7 @@ object Method {
     if (!js.isUndefined(defaultAccount)) __obj.updateDynamic("defaultAccount")(defaultAccount.asInstanceOf[js.Any])
     if (defaultBlock != null) __obj.updateDynamic("defaultBlock")(defaultBlock.asInstanceOf[js.Any])
     if (extraFormatters != null) __obj.updateDynamic("extraFormatters")(extraFormatters.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleRevert)) __obj.updateDynamic("handleRevert")(handleRevert.get.asInstanceOf[js.Any])
     if (inputFormatter != null) __obj.updateDynamic("inputFormatter")(inputFormatter.asInstanceOf[js.Any])
     if (outputFormatter != null) __obj.updateDynamic("outputFormatter")(js.Any.fromFunction0(outputFormatter))
     if (!js.isUndefined(params)) __obj.updateDynamic("params")(params.get.asInstanceOf[js.Any])

@@ -10,7 +10,7 @@ trait TextStyleProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.O
 
 object TextStyleProps {
   @scala.inline
-  def apply[ThemeType](textStyle: js.UndefOr[Null | (ResponsiveValue[String, ThemeType])] = js.undefined): TextStyleProps[ThemeType] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](textStyle: js.UndefOr[Null | (ResponsiveValue[String, ThemeType])] = js.undefined): TextStyleProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(textStyle)) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextStyleProps[ThemeType]]

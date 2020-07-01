@@ -77,7 +77,7 @@ object SchemaReportData {
     isDataGolden: js.UndefOr[Boolean] = js.undefined,
     maximums: js.Array[SchemaDateRangeValues] = null,
     minimums: js.Array[SchemaDateRangeValues] = null,
-    rowCount: Int | Double = null,
+    rowCount: js.UndefOr[Double] = js.undefined,
     rows: js.Array[SchemaReportRow] = null,
     samplesReadCounts: js.Array[String] = null,
     samplingSpaceSizes: js.Array[String] = null,
@@ -85,10 +85,10 @@ object SchemaReportData {
   ): SchemaReportData = {
     val __obj = js.Dynamic.literal()
     if (dataLastRefreshed != null) __obj.updateDynamic("dataLastRefreshed")(dataLastRefreshed.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDataGolden)) __obj.updateDynamic("isDataGolden")(isDataGolden.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDataGolden)) __obj.updateDynamic("isDataGolden")(isDataGolden.get.asInstanceOf[js.Any])
     if (maximums != null) __obj.updateDynamic("maximums")(maximums.asInstanceOf[js.Any])
     if (minimums != null) __obj.updateDynamic("minimums")(minimums.asInstanceOf[js.Any])
-    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.get.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (samplesReadCounts != null) __obj.updateDynamic("samplesReadCounts")(samplesReadCounts.asInstanceOf[js.Any])
     if (samplingSpaceSizes != null) __obj.updateDynamic("samplingSpaceSizes")(samplingSpaceSizes.asInstanceOf[js.Any])

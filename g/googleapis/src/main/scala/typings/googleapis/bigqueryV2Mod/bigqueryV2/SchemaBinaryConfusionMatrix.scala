@@ -44,18 +44,18 @@ object SchemaBinaryConfusionMatrix {
   def apply(
     falseNegatives: String = null,
     falsePositives: String = null,
-    positiveClassThreshold: Int | Double = null,
-    precision: Int | Double = null,
-    recall: Int | Double = null,
+    positiveClassThreshold: js.UndefOr[Double] = js.undefined,
+    precision: js.UndefOr[Double] = js.undefined,
+    recall: js.UndefOr[Double] = js.undefined,
     trueNegatives: String = null,
     truePositives: String = null
   ): SchemaBinaryConfusionMatrix = {
     val __obj = js.Dynamic.literal()
     if (falseNegatives != null) __obj.updateDynamic("falseNegatives")(falseNegatives.asInstanceOf[js.Any])
     if (falsePositives != null) __obj.updateDynamic("falsePositives")(falsePositives.asInstanceOf[js.Any])
-    if (positiveClassThreshold != null) __obj.updateDynamic("positiveClassThreshold")(positiveClassThreshold.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (recall != null) __obj.updateDynamic("recall")(recall.asInstanceOf[js.Any])
+    if (!js.isUndefined(positiveClassThreshold)) __obj.updateDynamic("positiveClassThreshold")(positiveClassThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(recall)) __obj.updateDynamic("recall")(recall.get.asInstanceOf[js.Any])
     if (trueNegatives != null) __obj.updateDynamic("trueNegatives")(trueNegatives.asInstanceOf[js.Any])
     if (truePositives != null) __obj.updateDynamic("truePositives")(truePositives.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBinaryConfusionMatrix]

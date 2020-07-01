@@ -24,5 +24,6 @@ trait EggCookies extends js.Object {
   def set(name: String): this.type = js.native
   def set(name: String, value: String): this.type = js.native
   def set(name: String, value: String, opts: CookieSetOptions): this.type = js.native
+  def set(name: String, value: Null, opts: CookieSetOptions): this.type = js.native
 }
 

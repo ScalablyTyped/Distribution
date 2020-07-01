@@ -34,7 +34,7 @@ object SchemaRichMediaExitOverride {
   ): SchemaRichMediaExitOverride = {
     val __obj = js.Dynamic.literal()
     if (clickThroughUrl != null) __obj.updateDynamic("clickThroughUrl")(clickThroughUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (exitId != null) __obj.updateDynamic("exitId")(exitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRichMediaExitOverride]
   }

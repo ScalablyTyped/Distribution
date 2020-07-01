@@ -16,7 +16,7 @@ trait pellConfig[T /* <: HTMLElement */] extends js.Object {
 
 object pellConfig {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.std.HTMLElement */ T](
     actions: js.Array[pellAction],
     element: T,
     onChange: String => Unit,

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The page settings including: orientation, scale, background, margins, headers, footers. */
+/** Defines the page settings to be used when saving a page as a pdf file. */
 trait PageSettings extends js.Object {
   /** The spacing between the bottom of the footers and the bottom edge of the paper (inches). Default: 0. */
   var edgeBottom: js.UndefOr[Double] = js.undefined
@@ -50,6 +50,8 @@ trait PageSettings extends js.Object {
   var showBackgroundImages: js.UndefOr[Boolean] = js.undefined
   /** Whether the page content should shrink to fit the page width (overrides scaling). Default: true. */
   var shrinkToFit: js.UndefOr[Boolean] = js.undefined
+  /** The name of the file. May include optional .pdf extension. */
+  var toFileName: js.UndefOr[String] = js.undefined
 }
 
 object PageSettings {
@@ -76,7 +78,8 @@ object PageSettings {
     scaling: js.UndefOr[Double] = js.undefined,
     showBackgroundColors: js.UndefOr[Boolean] = js.undefined,
     showBackgroundImages: js.UndefOr[Boolean] = js.undefined,
-    shrinkToFit: js.UndefOr[Boolean] = js.undefined
+    shrinkToFit: js.UndefOr[Boolean] = js.undefined,
+    toFileName: String = null
   ): PageSettings = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(edgeBottom)) __obj.updateDynamic("edgeBottom")(edgeBottom.get.asInstanceOf[js.Any])
@@ -101,6 +104,7 @@ object PageSettings {
     if (!js.isUndefined(showBackgroundColors)) __obj.updateDynamic("showBackgroundColors")(showBackgroundColors.get.asInstanceOf[js.Any])
     if (!js.isUndefined(showBackgroundImages)) __obj.updateDynamic("showBackgroundImages")(showBackgroundImages.get.asInstanceOf[js.Any])
     if (!js.isUndefined(shrinkToFit)) __obj.updateDynamic("shrinkToFit")(shrinkToFit.get.asInstanceOf[js.Any])
+    if (toFileName != null) __obj.updateDynamic("toFileName")(toFileName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageSettings]
   }
 }

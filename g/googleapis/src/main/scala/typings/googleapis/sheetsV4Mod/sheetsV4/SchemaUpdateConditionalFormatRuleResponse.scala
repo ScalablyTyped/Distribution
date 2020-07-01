@@ -33,15 +33,15 @@ trait SchemaUpdateConditionalFormatRuleResponse extends js.Object {
 object SchemaUpdateConditionalFormatRuleResponse {
   @scala.inline
   def apply(
-    newIndex: Int | Double = null,
+    newIndex: js.UndefOr[Double] = js.undefined,
     newRule: SchemaConditionalFormatRule = null,
-    oldIndex: Int | Double = null,
+    oldIndex: js.UndefOr[Double] = js.undefined,
     oldRule: SchemaConditionalFormatRule = null
   ): SchemaUpdateConditionalFormatRuleResponse = {
     val __obj = js.Dynamic.literal()
-    if (newIndex != null) __obj.updateDynamic("newIndex")(newIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(newIndex)) __obj.updateDynamic("newIndex")(newIndex.get.asInstanceOf[js.Any])
     if (newRule != null) __obj.updateDynamic("newRule")(newRule.asInstanceOf[js.Any])
-    if (oldIndex != null) __obj.updateDynamic("oldIndex")(oldIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(oldIndex)) __obj.updateDynamic("oldIndex")(oldIndex.get.asInstanceOf[js.Any])
     if (oldRule != null) __obj.updateDynamic("oldRule")(oldRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUpdateConditionalFormatRuleResponse]
   }

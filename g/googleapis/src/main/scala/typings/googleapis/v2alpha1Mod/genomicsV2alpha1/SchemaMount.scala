@@ -29,7 +29,7 @@ object SchemaMount {
     val __obj = js.Dynamic.literal()
     if (disk != null) __obj.updateDynamic("disk")(disk.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMount]
   }
 }

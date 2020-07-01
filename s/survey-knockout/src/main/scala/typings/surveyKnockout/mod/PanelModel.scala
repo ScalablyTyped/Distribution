@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.surveyKnockout.mod.ISurveyElement because Already inherited
 - typings.surveyKnockout.mod.IConditionRunner because Already inherited
-- typings.surveyKnockout.mod.IElement because var conflicts: containsErrors, isPage, isPanel, isReadOnly, isVisible, name, parent, visible. Inlined renderWidth, width, rightIndent, startWithNewLine */ @JSImport("survey-knockout", "PanelModel")
+- typings.surveyKnockout.mod.IElement because var conflicts: containsErrors, isPage, isPanel, isReadOnly, isVisible, name, parent, visible. Inlined renderWidth, width, minWidth, maxWidth, rightIndent, startWithNewLine */ @JSImport("survey-knockout", "PanelModel")
 @js.native
 class PanelModel () extends PanelModelBase {
   def this(name: String) = this()
@@ -35,6 +35,8 @@ class PanelModel () extends PanelModelBase {
     * @see isCollapsed
     */
   val isExpanded: Boolean = js.native
+  var maxWidth: js.UndefOr[String] = js.native
+  var minWidth: js.UndefOr[String] = js.native
   /**
     * The property returns the question number. If question is invisible then it returns empty string.
     * If visibleIndex is 1, then no is 2, or 'B' if survey.questionStartIndex is 'A'.

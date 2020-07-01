@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeBackupJobOutput extends js.Object {
   /**
+    * Returns the account ID that owns the backup job.
+    */
+  var AccountId: js.UndefOr[typings.awsSdk.backupMod.AccountId] = js.native
+  /**
     * Uniquely identifies a request to AWS Backup to back up a resource.
     */
   var BackupJobId: js.UndefOr[String] = js.native
@@ -27,7 +31,7 @@ trait DescribeBackupJobOutput extends js.Object {
     */
   var BytesTransferred: js.UndefOr[Long_] = js.native
   /**
-    * The date and time that a job to create a backup job is completed, in Unix format and Coordinated Universal Time (UTC). The value of CreationDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
+    * The date and time that a job to create a backup job is completed, in Unix format and Coordinated Universal Time (UTC). The value of CompletionDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
   var CompletionDate: js.UndefOr[timestamp] = js.native
   /**
@@ -79,6 +83,7 @@ trait DescribeBackupJobOutput extends js.Object {
 object DescribeBackupJobOutput {
   @scala.inline
   def apply(
+    AccountId: AccountId = null,
     BackupJobId: String = null,
     BackupSizeInBytes: js.UndefOr[Long_] = js.undefined,
     BackupVaultArn: ARN = null,
@@ -98,6 +103,7 @@ object DescribeBackupJobOutput {
     StatusMessage: String = null
   ): DescribeBackupJobOutput = {
     val __obj = js.Dynamic.literal()
+    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
     if (BackupJobId != null) __obj.updateDynamic("BackupJobId")(BackupJobId.asInstanceOf[js.Any])
     if (!js.isUndefined(BackupSizeInBytes)) __obj.updateDynamic("BackupSizeInBytes")(BackupSizeInBytes.get.asInstanceOf[js.Any])
     if (BackupVaultArn != null) __obj.updateDynamic("BackupVaultArn")(BackupVaultArn.asInstanceOf[js.Any])

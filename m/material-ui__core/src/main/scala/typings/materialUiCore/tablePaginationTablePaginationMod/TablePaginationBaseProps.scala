@@ -176,6 +176,7 @@ trait TablePaginationBaseProps extends js.Object {
   var dir: js.UndefOr[String] = js.native
   var draggable: js.UndefOr[Booleanish] = js.native
   var headers: js.UndefOr[String] = js.native
+  var height: js.UndefOr[Double | String] = js.native
   var hidden: js.UndefOr[Boolean] = js.native
   var id: js.UndefOr[String] = js.native
   var inlist: js.UndefOr[js.Any] = js.native
@@ -293,6 +294,7 @@ trait TablePaginationBaseProps extends js.Object {
   var valign: js.UndefOr[top | middle | bottom | baseline] = js.native
   var variant: js.UndefOr[head | body | footer] = js.native
   var vocab: js.UndefOr[String] = js.native
+  var width: js.UndefOr[Double | String] = js.native
 }
 
 object TablePaginationBaseProps {
@@ -368,6 +370,7 @@ object TablePaginationBaseProps {
     dir: String = null,
     draggable: js.UndefOr[Booleanish] = js.undefined,
     headers: String = null,
+    height: Double | String = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     inlist: js.Any = null,
@@ -484,7 +487,8 @@ object TablePaginationBaseProps {
     unselectable: on | off = null,
     valign: top | middle | bottom | baseline = null,
     variant: head | body | footer = null,
-    vocab: String = null
+    vocab: String = null,
+    width: Double | String = null
   ): TablePaginationBaseProps = {
     val __obj = js.Dynamic.literal()
     if (abbr != null) __obj.updateDynamic("abbr")(abbr.asInstanceOf[js.Any])
@@ -557,6 +561,7 @@ object TablePaginationBaseProps {
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
@@ -674,6 +679,7 @@ object TablePaginationBaseProps {
     if (valign != null) __obj.updateDynamic("valign")(valign.asInstanceOf[js.Any])
     if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[TablePaginationBaseProps]
   }
 }

@@ -18,7 +18,7 @@ trait VNode[P] extends js.Object {
   var key: Key
   var props: P with Children
   /**
-  		 * ref is not guaranteed by React.ReactElement, for compatiblity reasons
+  		 * ref is not guaranteed by React.ReactElement, for compatibility reasons
   		 * with popular react libs we define it as optional too
   		 */
   var ref: js.UndefOr[Ref[_] | Null] = js.undefined

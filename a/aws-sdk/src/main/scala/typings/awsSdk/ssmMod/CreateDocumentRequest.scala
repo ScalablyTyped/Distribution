@@ -23,7 +23,7 @@ trait CreateDocumentRequest extends js.Object {
     */
   var DocumentType: js.UndefOr[typings.awsSdk.ssmMod.DocumentType] = js.native
   /**
-    * A name for the Systems Manager document.  You can't use the following strings as document name prefixes. These are reserved by AWS for use as document name prefixes:    aws     amazon     amzn    
+    * A name for the Systems Manager document.  You can't use the following strings as document name prefixes. These are reserved by AWS for use as document name prefixes:    aws-     amazon     amzn    
     */
   var Name: DocumentName = js.native
   /**

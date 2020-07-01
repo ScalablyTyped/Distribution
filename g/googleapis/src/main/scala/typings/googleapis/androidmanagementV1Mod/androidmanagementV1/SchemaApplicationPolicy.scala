@@ -93,19 +93,19 @@ object SchemaApplicationPolicy {
     lockTaskAllowed: js.UndefOr[Boolean] = js.undefined,
     managedConfiguration: StringDictionary[js.Any] = null,
     managedConfigurationTemplate: SchemaManagedConfigurationTemplate = null,
-    minimumVersionCode: Int | Double = null,
+    minimumVersionCode: js.UndefOr[Double] = js.undefined,
     packageName: String = null,
     permissionGrants: js.Array[SchemaPermissionGrant] = null
   ): SchemaApplicationPolicy = {
     val __obj = js.Dynamic.literal()
     if (defaultPermissionPolicy != null) __obj.updateDynamic("defaultPermissionPolicy")(defaultPermissionPolicy.asInstanceOf[js.Any])
     if (delegatedScopes != null) __obj.updateDynamic("delegatedScopes")(delegatedScopes.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (installType != null) __obj.updateDynamic("installType")(installType.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockTaskAllowed)) __obj.updateDynamic("lockTaskAllowed")(lockTaskAllowed.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockTaskAllowed)) __obj.updateDynamic("lockTaskAllowed")(lockTaskAllowed.get.asInstanceOf[js.Any])
     if (managedConfiguration != null) __obj.updateDynamic("managedConfiguration")(managedConfiguration.asInstanceOf[js.Any])
     if (managedConfigurationTemplate != null) __obj.updateDynamic("managedConfigurationTemplate")(managedConfigurationTemplate.asInstanceOf[js.Any])
-    if (minimumVersionCode != null) __obj.updateDynamic("minimumVersionCode")(minimumVersionCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumVersionCode)) __obj.updateDynamic("minimumVersionCode")(minimumVersionCode.get.asInstanceOf[js.Any])
     if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
     if (permissionGrants != null) __obj.updateDynamic("permissionGrants")(permissionGrants.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaApplicationPolicy]

@@ -24,6 +24,10 @@ trait EncoderSettings extends js.Object {
     */
   var CaptionDescriptions: js.UndefOr[listOfCaptionDescription] = js.native
   /**
+    * Feature Activations
+    */
+  var FeatureActivations: js.UndefOr[typings.awsSdk.medialiveMod.FeatureActivations] = js.native
+  /**
     * Configuration settings that apply to the event as a whole.
     */
   var GlobalConfiguration: js.UndefOr[typings.awsSdk.medialiveMod.GlobalConfiguration] = js.native
@@ -50,6 +54,7 @@ object EncoderSettings {
     AvailConfiguration: AvailConfiguration = null,
     BlackoutSlate: BlackoutSlate = null,
     CaptionDescriptions: listOfCaptionDescription = null,
+    FeatureActivations: FeatureActivations = null,
     GlobalConfiguration: GlobalConfiguration = null,
     NielsenConfiguration: NielsenConfiguration = null
   ): EncoderSettings = {
@@ -58,6 +63,7 @@ object EncoderSettings {
     if (AvailConfiguration != null) __obj.updateDynamic("AvailConfiguration")(AvailConfiguration.asInstanceOf[js.Any])
     if (BlackoutSlate != null) __obj.updateDynamic("BlackoutSlate")(BlackoutSlate.asInstanceOf[js.Any])
     if (CaptionDescriptions != null) __obj.updateDynamic("CaptionDescriptions")(CaptionDescriptions.asInstanceOf[js.Any])
+    if (FeatureActivations != null) __obj.updateDynamic("FeatureActivations")(FeatureActivations.asInstanceOf[js.Any])
     if (GlobalConfiguration != null) __obj.updateDynamic("GlobalConfiguration")(GlobalConfiguration.asInstanceOf[js.Any])
     if (NielsenConfiguration != null) __obj.updateDynamic("NielsenConfiguration")(NielsenConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncoderSettings]

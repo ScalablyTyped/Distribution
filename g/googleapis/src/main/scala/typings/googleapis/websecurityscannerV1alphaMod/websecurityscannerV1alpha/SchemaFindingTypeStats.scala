@@ -22,9 +22,9 @@ trait SchemaFindingTypeStats extends js.Object {
 
 object SchemaFindingTypeStats {
   @scala.inline
-  def apply(findingCount: Int | Double = null, findingType: String = null): SchemaFindingTypeStats = {
+  def apply(findingCount: js.UndefOr[Double] = js.undefined, findingType: String = null): SchemaFindingTypeStats = {
     val __obj = js.Dynamic.literal()
-    if (findingCount != null) __obj.updateDynamic("findingCount")(findingCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(findingCount)) __obj.updateDynamic("findingCount")(findingCount.get.asInstanceOf[js.Any])
     if (findingType != null) __obj.updateDynamic("findingType")(findingType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFindingTypeStats]
   }

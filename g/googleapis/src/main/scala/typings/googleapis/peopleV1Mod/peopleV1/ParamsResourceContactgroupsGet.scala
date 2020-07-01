@@ -34,7 +34,7 @@ object ParamsResourceContactgroupsGet {
     callback: String = null,
     fields: String = null,
     key: String = null,
-    maxMembers: Int | Double = null,
+    maxMembers: js.UndefOr[Double] = js.undefined,
     oauth_token: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
     quotaUser: String = null,
@@ -50,9 +50,9 @@ object ParamsResourceContactgroupsGet {
     if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (maxMembers != null) __obj.updateDynamic("maxMembers")(maxMembers.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxMembers)) __obj.updateDynamic("maxMembers")(maxMembers.get.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName.asInstanceOf[js.Any])
     if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])

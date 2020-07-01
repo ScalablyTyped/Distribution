@@ -17,7 +17,7 @@ trait SelectInputProps[T /* <: ItemOfSelectInput */] extends js.Object {
 
 object SelectInputProps {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.inkSelectInput.mod.ItemOfSelectInput */ T](
     focus: js.UndefOr[Boolean] = js.undefined,
     indicatorComponent: Component[js.Object, js.Object, _] = null,
     initialIndex: js.UndefOr[Double] = js.undefined,

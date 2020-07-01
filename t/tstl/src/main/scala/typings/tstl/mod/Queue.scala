@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   * Default Constructor.
   */
 class Queue[T] ()
-  extends typings.tstl.tstlMod.Queue[T] {
+  extends typings.tstl.tstlModuleMod.Queue[T] {
   /**
     * Copy Constructor.
     *

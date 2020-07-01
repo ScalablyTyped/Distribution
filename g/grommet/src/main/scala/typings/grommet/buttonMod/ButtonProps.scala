@@ -44,6 +44,7 @@ trait ButtonProps extends js.Object {
   var plain: js.UndefOr[Boolean] = js.undefined
   var primary: js.UndefOr[Boolean] = js.undefined
   var reverse: js.UndefOr[Boolean] = js.undefined
+  var secondary: js.UndefOr[Boolean] = js.undefined
   var size: js.UndefOr[small | medium | large] = js.undefined
   var target: js.UndefOr[_self | _blank | _parent | _top] = js.undefined
   var `type`: js.UndefOr[button | reset | submit] = js.undefined
@@ -70,6 +71,7 @@ object ButtonProps {
     plain: js.UndefOr[Boolean] = js.undefined,
     primary: js.UndefOr[Boolean] = js.undefined,
     reverse: js.UndefOr[Boolean] = js.undefined,
+    secondary: js.UndefOr[Boolean] = js.undefined,
     size: small | medium | large = null,
     target: _self | _blank | _parent | _top = null,
     `type`: button | reset | submit = null
@@ -93,6 +95,7 @@ object ButtonProps {
     if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.get.asInstanceOf[js.Any])
     if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.get.asInstanceOf[js.Any])
     if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondary)) __obj.updateDynamic("secondary")(secondary.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

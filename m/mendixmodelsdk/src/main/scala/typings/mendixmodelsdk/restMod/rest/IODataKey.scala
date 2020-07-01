@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IODataKey extends IElement {
-  val containerAsODataEntity: IODataEntity = js.native
+  val containerAsODataRemoteEntitySource: IODataRemoteEntitySource = js.native
   @JSName("model")
   val model_IODataKey: IModel = js.native
   /**

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListProfilingGroupsRequest extends js.Object {
   /**
-    * A Boolean value indicating whether to include a description.
+    * A Boolean value indicating whether to include a description. If true, then a list of  ProfilingGroupDescription  objects that contain detailed information about profiling groups is returned. If false, then a list of profiling group names is returned.
     */
   var includeDescription: js.UndefOr[Boolean] = js.native
   /**

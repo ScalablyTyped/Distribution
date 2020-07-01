@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetWebhookResult extends js.Object {
   /**
-    *  Webhook structure. 
+    *  Describes the structure of a webhook. 
     */
   var webhook: Webhook = js.native
 }

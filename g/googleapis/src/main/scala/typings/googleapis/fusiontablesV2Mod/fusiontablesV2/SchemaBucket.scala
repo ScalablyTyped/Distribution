@@ -43,18 +43,18 @@ object SchemaBucket {
   def apply(
     color: String = null,
     icon: String = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    opacity: Int | Double = null,
-    weight: Int | Double = null
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
+    opacity: js.UndefOr[Double] = js.undefined,
+    weight: js.UndefOr[Double] = js.undefined
   ): SchemaBucket = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBucket]
   }
 }

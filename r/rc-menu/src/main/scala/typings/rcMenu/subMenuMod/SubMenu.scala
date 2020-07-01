@@ -11,11 +11,12 @@ import typings.rcMenu.subPopupMenuMod.SubPopupMenuProps
 import typings.react.mod.Component
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
+import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
+import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
-import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -72,7 +73,7 @@ class SubMenu protected ()
   def onPopupVisibleChange(visible: Boolean): Unit = js.native
   def onSubMenuClick(info: MenuInfo): Unit = js.native
   def onTitleClick(e: KeyboardEvent[HTMLElement]): Unit = js.native
-  def onTitleClick(e: typings.react.mod.MouseEvent[HTMLElement, MouseEvent]): Unit = js.native
+  def onTitleClick(e: MouseEvent[HTMLElement, NativeMouseEvent]): Unit = js.native
   def renderChildren(children: ReactNode): Element = js.native
   def saveMenuInstance(c: MenuItem): Unit = js.native
   def saveSubMenuTitle(subMenuTitle: HTMLElement): Unit = js.native

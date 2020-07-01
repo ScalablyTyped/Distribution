@@ -12,7 +12,7 @@ trait DynamsoftStatic[TElement /* <: Node */] extends js.Object {
 
 object DynamsoftStatic {
   @scala.inline
-  def apply[TElement](Lib: DynamsoftLib, WebTwainEnv: dwtEnv): DynamsoftStatic[TElement] = {
+  def apply[/* <: typings.std.Node */ TElement](Lib: DynamsoftLib, WebTwainEnv: dwtEnv): DynamsoftStatic[TElement] = {
     val __obj = js.Dynamic.literal(Lib = Lib.asInstanceOf[js.Any], WebTwainEnv = WebTwainEnv.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamsoftStatic[TElement]]
   }

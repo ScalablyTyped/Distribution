@@ -1,6 +1,6 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
-import typings.googleapis.AnonSlotMs
+import typings.googleapis.anon.SlotMs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,7 +49,7 @@ trait SchemaJobStatistics extends js.Object {
   /**
     * [Output-only] Job resource usage breakdown by reservation.
     */
-  var reservationUsage: js.UndefOr[js.Array[AnonSlotMs]] = js.native
+  var reservationUsage: js.UndefOr[js.Array[SlotMs]] = js.native
   /**
     * [Output-only] Start time of this job, in milliseconds since the epoch.
     * This field will be present when the job transitions from the PENDING
@@ -70,7 +70,7 @@ trait SchemaJobStatistics extends js.Object {
 object SchemaJobStatistics {
   @scala.inline
   def apply(
-    completionRatio: Int | Double = null,
+    completionRatio: js.UndefOr[Double] = js.undefined,
     creationTime: String = null,
     endTime: String = null,
     extract: SchemaJobStatistics4 = null,
@@ -79,13 +79,13 @@ object SchemaJobStatistics {
     parentJobId: String = null,
     query: SchemaJobStatistics2 = null,
     quotaDeferments: js.Array[String] = null,
-    reservationUsage: js.Array[AnonSlotMs] = null,
+    reservationUsage: js.Array[SlotMs] = null,
     startTime: String = null,
     totalBytesProcessed: String = null,
     totalSlotMs: String = null
   ): SchemaJobStatistics = {
     val __obj = js.Dynamic.literal()
-    if (completionRatio != null) __obj.updateDynamic("completionRatio")(completionRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(completionRatio)) __obj.updateDynamic("completionRatio")(completionRatio.get.asInstanceOf[js.Any])
     if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
     if (extract != null) __obj.updateDynamic("extract")(extract.asInstanceOf[js.Any])

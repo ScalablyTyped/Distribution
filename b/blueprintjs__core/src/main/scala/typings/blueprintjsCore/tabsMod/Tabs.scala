@@ -4,7 +4,7 @@ import typings.blueprintjsCore.anon.PartialITabsProps
 import typings.blueprintjsCore.anon.SelectedTabId
 import typings.blueprintjsCore.anon.TypeofTab
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
-import typings.react.mod.SFC
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,7 +44,7 @@ class Tabs ()
 @js.native
 object Tabs extends js.Object {
   /** Insert a `Tabs.Expander` between any two children to right-align all subsequent children. */
-  var Expander: SFC[js.Object] = js.native
+  var Expander: FunctionComponent[js.Object] = js.native
   var Tab: TypeofTab = js.native
   var defaultProps: PartialITabsProps = js.native
   var displayName: String = js.native

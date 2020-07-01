@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StartTransactionResult extends js.Object {
   /**
-    * The transaction id of the started transaction.
+    * The transaction ID of the started transaction.
     */
   var TransactionId: js.UndefOr[typings.awsSdk.qldbsessionMod.TransactionId] = js.native
 }

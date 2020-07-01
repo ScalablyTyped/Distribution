@@ -25,6 +25,7 @@ package object mod {
     - typings.babelParser.babelParserStrings.importMeta
     - typings.babelParser.babelParserStrings.jsx
     - typings.babelParser.babelParserStrings.logicalAssignment
+    - typings.babelParser.babelParserStrings.moduleAttributes
     - typings.babelParser.babelParserStrings.nullishCoalescingOperator
     - typings.babelParser.babelParserStrings.numericSeparator
     - typings.babelParser.babelParserStrings.objectRestSpread
@@ -33,6 +34,7 @@ package object mod {
     - typings.babelParser.babelParserStrings.partialApplication
     - typings.babelParser.babelParserStrings.pipelineOperator
     - typings.babelParser.babelParserStrings.placeholders
+    - typings.babelParser.babelParserStrings.privateIn
     - typings.babelParser.babelParserStrings.throwExpressions
     - typings.babelParser.babelParserStrings.topLevelAwait
     - typings.babelParser.babelParserStrings.typescript

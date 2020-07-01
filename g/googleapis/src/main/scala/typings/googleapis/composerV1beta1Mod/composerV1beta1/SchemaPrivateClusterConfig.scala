@@ -30,7 +30,7 @@ object SchemaPrivateClusterConfig {
   @scala.inline
   def apply(enablePrivateEndpoint: js.UndefOr[Boolean] = js.undefined, masterIpv4CidrBlock: String = null): SchemaPrivateClusterConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enablePrivateEndpoint)) __obj.updateDynamic("enablePrivateEndpoint")(enablePrivateEndpoint.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePrivateEndpoint)) __obj.updateDynamic("enablePrivateEndpoint")(enablePrivateEndpoint.get.asInstanceOf[js.Any])
     if (masterIpv4CidrBlock != null) __obj.updateDynamic("masterIpv4CidrBlock")(masterIpv4CidrBlock.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPrivateClusterConfig]
   }

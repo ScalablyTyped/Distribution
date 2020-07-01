@@ -18,7 +18,7 @@ trait CustomPropertyCollectionLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: The key of the custom property.
+    * For EACH ITEM in the collection: The key of the custom property. The key is limited to 255 characters outside of Excel on the web (larger keys are automatically trimmed to 255 characters on other platforms).
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -32,7 +32,7 @@ trait CustomPropertyCollectionLoadOptions extends js.Object {
   var `type`: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: The value of the custom property.
+    * For EACH ITEM in the collection: The value of the custom property. The value is limited to 255 characters outside of Excel on the web (larger values are automatically trimmed to 255 characters on other platforms).
     *
     * [Api set: ExcelApi 1.7]
     */

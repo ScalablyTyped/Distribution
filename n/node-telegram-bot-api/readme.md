@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-telegram-bot-api
 
-Typings are for version 0.40
+Typings are for version 0.50
 
 ## Library description:
 Telegram Bot API

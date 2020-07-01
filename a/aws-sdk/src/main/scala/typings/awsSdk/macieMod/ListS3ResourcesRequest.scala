@@ -11,7 +11,7 @@ trait ListS3ResourcesRequest extends js.Object {
     */
   var maxResults: js.UndefOr[MaxResults] = js.native
   /**
-    * The Amazon Macie member account ID whose associated S3 resources you want to list. 
+    * The Amazon Macie Classic member account ID whose associated S3 resources you want to list. 
     */
   var memberAccountId: js.UndefOr[AWSAccountId] = js.native
   /**

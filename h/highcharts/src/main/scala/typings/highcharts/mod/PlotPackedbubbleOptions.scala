@@ -426,6 +426,10 @@ trait PlotPackedbubbleOptions extends js.Object {
     */
   var opacity: js.UndefOr[Double] = js.undefined
   /**
+    * (Highcharts) Series options for parent nodes.
+    */
+  var parentNode: js.UndefOr[PlotPackedbubbleParentNodeOptions] = js.undefined
+  /**
     * (Highcharts) Properties for each single point.
     */
   var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
@@ -524,10 +528,13 @@ trait PlotPackedbubbleOptions extends js.Object {
   /**
     * (Highcharts, Highstock) Whether to stack the values of each series on top
     * of each other. Possible values are `undefined` to disable, `"normal"` to
-    * stack by value or `"percent"`. When stacking is enabled, data must be
-    * sorted in ascending X order. A special stacking option is with the
-    * streamgraph series type, where the stacking option is set to `"stream"`.
-    * The second one is `"overlap"`, which only applies to waterfall series.
+    * stack by value or `"percent"`.
+    *
+    * When stacking is enabled, data must be sorted in ascending X order.
+    *
+    * Some stacking options are related to specific series types. In the
+    * streamgraph series type, the stacking option is set to `"stream"`. The
+    * second one is `"overlap"`, which only applies to waterfall series.
     */
   var stacking: js.UndefOr[OptionsStackingValue] = js.undefined
   var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
@@ -661,6 +668,7 @@ object PlotPackedbubbleOptions {
     navigatorOptions: PlotSeriesOptions = null,
     negativeColor: ColorString | GradientColorObject | PatternObject = null,
     opacity: js.UndefOr[Double] = js.undefined,
+    parentNode: PlotPackedbubbleParentNodeOptions = null,
     point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointInterval: js.UndefOr[Double] = js.undefined,
@@ -738,6 +746,7 @@ object PlotPackedbubbleOptions {
     if (navigatorOptions != null) __obj.updateDynamic("navigatorOptions")(navigatorOptions.asInstanceOf[js.Any])
     if (negativeColor != null) __obj.updateDynamic("negativeColor")(negativeColor.asInstanceOf[js.Any])
     if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (parentNode != null) __obj.updateDynamic("parentNode")(parentNode.asInstanceOf[js.Any])
     if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
     if (pointDescriptionFormatter != null) __obj.updateDynamic("pointDescriptionFormatter")(pointDescriptionFormatter.asInstanceOf[js.Any])
     if (!js.isUndefined(pointInterval)) __obj.updateDynamic("pointInterval")(pointInterval.get.asInstanceOf[js.Any])

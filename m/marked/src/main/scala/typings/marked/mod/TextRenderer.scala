@@ -11,6 +11,7 @@ class TextRenderer () extends js.Object {
   def codespan(text: String): String = js.native
   def del(text: String): String = js.native
   def em(text: String): String = js.native
+  def html(text: String): String = js.native
   def image(href: String, title: String, text: String): String = js.native
   def image(href: String, title: Null, text: String): String = js.native
   def image(href: Null, title: String, text: String): String = js.native

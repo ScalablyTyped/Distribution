@@ -14,7 +14,7 @@ trait Props[Name /* <: /* keyof any */ String */] extends js.Object {
 
 object Props {
   @scala.inline
-  def apply[Name](
+  def apply[/* <: / * keyof any * / java.lang.String */ Name](
     props: Record[
       Name, 
       /* import warning: importer.ImportType#apply Failed type conversion: infer Props */ js.Any

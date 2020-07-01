@@ -28,7 +28,7 @@ package object mod {
   type ExternalsFunctionElement = js.Function3[
     /* context */ js.Any, 
     /* request */ js.Any, 
-    /* callback */ js.Function2[/* error */ js.Any, /* result */ js.Any, scala.Unit], 
+    /* callback */ typings.webpack.mod.ExternalsFunctionCallback, 
     js.Any
   ]
   type ExternalsObjectElement = org.scalablytyped.runtime.StringDictionary[

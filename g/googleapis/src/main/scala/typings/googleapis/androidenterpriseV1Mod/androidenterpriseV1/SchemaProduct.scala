@@ -143,7 +143,7 @@ object SchemaProduct {
     iconUrl: String = null,
     kind: String = null,
     lastUpdatedTimestampMillis: String = null,
-    minAndroidSdkVersion: Int | Double = null,
+    minAndroidSdkVersion: js.UndefOr[Double] = js.undefined,
     permissions: js.Array[SchemaProductPermission] = null,
     productId: String = null,
     productPricing: String = null,
@@ -169,12 +169,12 @@ object SchemaProduct {
     if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (lastUpdatedTimestampMillis != null) __obj.updateDynamic("lastUpdatedTimestampMillis")(lastUpdatedTimestampMillis.asInstanceOf[js.Any])
-    if (minAndroidSdkVersion != null) __obj.updateDynamic("minAndroidSdkVersion")(minAndroidSdkVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(minAndroidSdkVersion)) __obj.updateDynamic("minAndroidSdkVersion")(minAndroidSdkVersion.get.asInstanceOf[js.Any])
     if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
     if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
     if (productPricing != null) __obj.updateDynamic("productPricing")(productPricing.asInstanceOf[js.Any])
     if (recentChanges != null) __obj.updateDynamic("recentChanges")(recentChanges.asInstanceOf[js.Any])
-    if (!js.isUndefined(requiresContainerApp)) __obj.updateDynamic("requiresContainerApp")(requiresContainerApp.asInstanceOf[js.Any])
+    if (!js.isUndefined(requiresContainerApp)) __obj.updateDynamic("requiresContainerApp")(requiresContainerApp.get.asInstanceOf[js.Any])
     if (screenshotUrls != null) __obj.updateDynamic("screenshotUrls")(screenshotUrls.asInstanceOf[js.Any])
     if (signingCertificate != null) __obj.updateDynamic("signingCertificate")(signingCertificate.asInstanceOf[js.Any])
     if (smallIconUrl != null) __obj.updateDynamic("smallIconUrl")(smallIconUrl.asInstanceOf[js.Any])

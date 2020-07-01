@@ -30,12 +30,12 @@ trait SchemaCalloutStatusRow extends js.Object {
 object SchemaCalloutStatusRow {
   @scala.inline
   def apply(
-    calloutStatusId: Int | Double = null,
+    calloutStatusId: js.UndefOr[Double] = js.undefined,
     impressionCount: SchemaMetricValue = null,
     rowDimensions: SchemaRowDimensions = null
   ): SchemaCalloutStatusRow = {
     val __obj = js.Dynamic.literal()
-    if (calloutStatusId != null) __obj.updateDynamic("calloutStatusId")(calloutStatusId.asInstanceOf[js.Any])
+    if (!js.isUndefined(calloutStatusId)) __obj.updateDynamic("calloutStatusId")(calloutStatusId.get.asInstanceOf[js.Any])
     if (impressionCount != null) __obj.updateDynamic("impressionCount")(impressionCount.asInstanceOf[js.Any])
     if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCalloutStatusRow]

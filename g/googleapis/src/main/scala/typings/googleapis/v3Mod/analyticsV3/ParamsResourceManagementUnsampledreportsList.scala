@@ -48,12 +48,12 @@ object ParamsResourceManagementUnsampledreportsList {
     auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
     fields: String = null,
     key: String = null,
-    `max-results`: Int | Double = null,
+    `max-results`: js.UndefOr[Double] = js.undefined,
     oauth_token: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
     profileId: String = null,
     quotaUser: String = null,
-    `start-index`: Int | Double = null,
+    `start-index`: js.UndefOr[Double] = js.undefined,
     userIp: String = null,
     webPropertyId: String = null
   ): ParamsResourceManagementUnsampledreportsList = {
@@ -63,12 +63,12 @@ object ParamsResourceManagementUnsampledreportsList {
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (`max-results` != null) __obj.updateDynamic("max-results")(`max-results`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`max-results`)) __obj.updateDynamic("max-results")(`max-results`.get.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (profileId != null) __obj.updateDynamic("profileId")(profileId.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (`start-index` != null) __obj.updateDynamic("start-index")(`start-index`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`start-index`)) __obj.updateDynamic("start-index")(`start-index`.get.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     if (webPropertyId != null) __obj.updateDynamic("webPropertyId")(webPropertyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceManagementUnsampledreportsList]

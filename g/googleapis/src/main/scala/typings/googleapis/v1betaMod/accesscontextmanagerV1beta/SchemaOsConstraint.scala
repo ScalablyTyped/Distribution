@@ -38,7 +38,7 @@ object SchemaOsConstraint {
     val __obj = js.Dynamic.literal()
     if (minimumVersion != null) __obj.updateDynamic("minimumVersion")(minimumVersion.asInstanceOf[js.Any])
     if (osType != null) __obj.updateDynamic("osType")(osType.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireVerifiedChromeOs)) __obj.updateDynamic("requireVerifiedChromeOs")(requireVerifiedChromeOs.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireVerifiedChromeOs)) __obj.updateDynamic("requireVerifiedChromeOs")(requireVerifiedChromeOs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOsConstraint]
   }
 }

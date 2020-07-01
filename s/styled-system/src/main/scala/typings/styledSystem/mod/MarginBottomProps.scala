@@ -22,7 +22,7 @@ trait MarginBottomProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends j
 
 object MarginBottomProps {
   @scala.inline
-  def apply[ThemeType](
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](
     marginBottom: js.UndefOr[
       Null | (ResponsiveValue[
         ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 

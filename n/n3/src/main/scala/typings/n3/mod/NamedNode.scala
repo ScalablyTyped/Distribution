@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("n3", "NamedNode")
 @js.native
 class NamedNode protected ()
-  extends typings.rdfJs.mod.NamedNode
+  extends typings.rdfJs.mod.NamedNode[String]
      with QuadGraph
      with QuadObject
      with QuadSubject

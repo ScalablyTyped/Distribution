@@ -32,6 +32,11 @@ object privacy extends js.Object {
     /** Allow users to enable and disable RTCPeerConnections (aka WebRTC). */
     val peerConnectionEnabled: Setting = js.native
     /**
+      * This property controls the minimum and maximum TLS versions. This setting's value is an object of
+      * `tlsVersionRestrictionConfig`.
+      */
+    val tlsVersionRestriction: Setting = js.native
+    /**
       * Allow users to specify the media performance/privacy tradeoffs which impacts how WebRTC traffic will be routed
       * and how much local address information is exposed. This preference's value is of type IPHandlingPolicy,
       * defaulting to `default`.

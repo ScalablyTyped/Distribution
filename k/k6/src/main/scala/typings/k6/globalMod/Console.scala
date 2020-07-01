@@ -4,7 +4,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** @public */
 @js.native
 trait Console extends js.Object {
   /** Log debug message. */

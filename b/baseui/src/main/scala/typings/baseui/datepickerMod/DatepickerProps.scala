@@ -15,7 +15,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined baseui.baseui/datepicker.CalendarProps & {  aria-label ? :string,   aria-labelledby ? :string,   aria-describedby ? :string,   disabled ? :boolean,   clearable ? :boolean,   size ? :baseui.baseui/input.SIZE[keyof baseui.baseui/input.SIZE],   error ? :boolean,   positive ? :boolean,   placeholder ? :string,   required ? :boolean, formatDisplayValue ? (date : std.Date | std.Array<std.Date>, formatString : string): string,   formatString ? :string,   mask ? :string | null,   mountNode ? :std.HTMLElement, onClose ? (): any} */
+/* Inlined baseui.baseui/datepicker.CalendarProps & {  aria-label ? :string,   aria-labelledby ? :string,   aria-describedby ? :string,   disabled ? :boolean,   clearable ? :boolean,   size ? :baseui.baseui/input.SIZE[keyof baseui.baseui/input.SIZE],   error ? :boolean,   positive ? :boolean,   placeholder ? :string,   required ? :boolean,   displayValueAtRangeIndex ? :number, formatDisplayValue ? (date : std.Date | std.Array<std.Date>, formatString : string): string,   formatString ? :string,   mask ? :string | null,   mountNode ? :std.HTMLElement, onClose ? (): any} */
 trait DatepickerProps extends js.Object {
   var `aria-describedby`: js.UndefOr[String] = js.undefined
   var `aria-label`: js.UndefOr[String] = js.undefined
@@ -23,6 +23,7 @@ trait DatepickerProps extends js.Object {
   var autoFocusCalendar: js.UndefOr[Boolean] = js.undefined
   var clearable: js.UndefOr[Boolean] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
+  var displayValueAtRangeIndex: js.UndefOr[Double] = js.undefined
   var error: js.UndefOr[Boolean] = js.undefined
   var excludeDates: js.UndefOr[js.Array[Date]] = js.undefined
   var filterDate: js.UndefOr[js.Function1[/* day */ Date, Boolean]] = js.undefined
@@ -71,6 +72,7 @@ object DatepickerProps {
     autoFocusCalendar: js.UndefOr[Boolean] = js.undefined,
     clearable: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
+    displayValueAtRangeIndex: js.UndefOr[Double] = js.undefined,
     error: js.UndefOr[Boolean] = js.undefined,
     excludeDates: js.Array[Date] = null,
     filterDate: /* day */ Date => Boolean = null,
@@ -113,6 +115,7 @@ object DatepickerProps {
     if (!js.isUndefined(autoFocusCalendar)) __obj.updateDynamic("autoFocusCalendar")(autoFocusCalendar.get.asInstanceOf[js.Any])
     if (!js.isUndefined(clearable)) __obj.updateDynamic("clearable")(clearable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayValueAtRangeIndex)) __obj.updateDynamic("displayValueAtRangeIndex")(displayValueAtRangeIndex.get.asInstanceOf[js.Any])
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.get.asInstanceOf[js.Any])
     if (excludeDates != null) __obj.updateDynamic("excludeDates")(excludeDates.asInstanceOf[js.Any])
     if (filterDate != null) __obj.updateDynamic("filterDate")(js.Any.fromFunction1(filterDate))

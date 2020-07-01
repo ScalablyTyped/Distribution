@@ -1,18 +1,16 @@
 package typings.antd.searchMod
 
-import typings.antd.anon.EnterButton
+import org.scalablytyped.runtime.TopLevel
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.RefAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("antd/lib/input/Search", JSImport.Default)
 @js.native
-class default () extends Search
-
-/* static members */
-@JSImport("antd/lib/input/Search", JSImport.Default)
-@js.native
-object default extends js.Object {
-  var defaultProps: EnterButton = js.native
-}
+object default
+  extends TopLevel[
+      ForwardRefExoticComponent[SearchProps with RefAttributes[typings.antd.inputInputMod.default]]
+    ]
 

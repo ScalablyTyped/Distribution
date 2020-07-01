@@ -1,6 +1,6 @@
 package typings.antd
 
-import typings.react.mod.Component
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,17 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object miniSelectMod extends js.Object {
   @js.native
-  trait MiniSelect
-    extends Component[js.Any, js.Any, js.Any]
-  
-  @js.native
-  class default () extends MiniSelect
-  
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    var Option: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_Option.OptionFC */ js.Any = js.native
+  trait MiniSelectInterface
+    extends FunctionComponent[js.Any] {
+    var Option: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Select.Option */ js.Any = js.native
   }
   
+  val default: MiniSelectInterface = js.native
 }
 

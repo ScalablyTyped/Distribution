@@ -5,7 +5,7 @@ import typings.fridaGum.AnyFunction
 import typings.fridaGum.EnumerateCallbacks
 import typings.fridaGum.NativeFunctionOptions
 import typings.fridaGum.NativePointerValue
-import typings.fridaGum.ObjC.BlockMethodImplementation
+import typings.fridaGum.ObjC.BlockImplementation
 import typings.fridaGum.ObjC.ChooseSpecifier
 import typings.fridaGum.ObjC.ClassSpec
 import typings.fridaGum.ObjC.EnumerateLoadedClassesCallbacks
@@ -37,9 +37,9 @@ object ObjC extends js.Object {
   class Block protected ()
     extends typings.fridaGum.ObjC.Block {
     def this(target: typings.fridaGum.NativePointer) = this()
-    def this(target: MethodSpec[BlockMethodImplementation]) = this()
+    def this(target: MethodSpec[BlockImplementation]) = this()
     def this(target: typings.fridaGum.NativePointer, options: NativeFunctionOptions) = this()
-    def this(target: MethodSpec[BlockMethodImplementation], options: NativeFunctionOptions) = this()
+    def this(target: MethodSpec[BlockImplementation], options: NativeFunctionOptions) = this()
     /* CompleteClass */
     override var handle: typings.fridaGum.NativePointer = js.native
   }

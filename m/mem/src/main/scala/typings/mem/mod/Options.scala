@@ -39,7 +39,7 @@ trait Options[ArgumentsType /* <: js.Array[_] */, CacheKeyType, ReturnType] exte
 
 object Options {
   @scala.inline
-  def apply[ArgumentsType, CacheKeyType, ReturnType](
+  def apply[/* <: js.Array[_] */ ArgumentsType, CacheKeyType, ReturnType](
     cache: CacheStorage[CacheKeyType, Data[ReturnType]] = null,
     cacheKey: /* arguments */ ArgumentsType => CacheKeyType = null,
     maxAge: js.UndefOr[Double] = js.undefined

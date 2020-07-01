@@ -17,7 +17,7 @@ trait TransformEnter[T /* <: Record[String, _] */] extends Transform[T] {
 
 object TransformEnter {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.std.Record[java.lang.String, _] */ T](
     regExp: RegExp,
     transform: () => BlockInstance[Partial[T]],
     `type`: enter,

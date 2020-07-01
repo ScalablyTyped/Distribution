@@ -10,7 +10,7 @@ trait GridEventArgs[T /* <: SlickData */] extends js.Object {
 
 object GridEventArgs {
   @scala.inline
-  def apply[T](grid: Grid[T]): GridEventArgs[T] = {
+  def apply[/* <: typings.slickgrid.Slick.SlickData */ T](grid: Grid[T]): GridEventArgs[T] = {
     val __obj = js.Dynamic.literal(grid = grid.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridEventArgs[T]]
   }

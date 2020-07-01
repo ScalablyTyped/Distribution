@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object getPlatforms extends js.Object {
   def apply(): js.Array[
-    ipad | iphone | ios | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
+    ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = js.native
 }
 

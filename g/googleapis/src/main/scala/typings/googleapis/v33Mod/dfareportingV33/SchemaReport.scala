@@ -1,12 +1,12 @@
 package typings.googleapis.v33Mod.dfareportingV33
 
-import typings.googleapis.AnonActive
-import typings.googleapis.AnonCustomFloodlightVariables
-import typings.googleapis.AnonMessage
-import typings.googleapis.AnonMetricNames
-import typings.googleapis.AnonOverlapMetricNames
-import typings.googleapis.AnonReachByFrequencyMetricNames
-import typings.googleapis.AnonReportProperties
+import typings.googleapis.anon.Active
+import typings.googleapis.anon.CustomFloodlightVariables
+import typings.googleapis.anon.Message
+import typings.googleapis.anon.MetricNames
+import typings.googleapis.anon.OverlapMetricNames
+import typings.googleapis.anon.ReachByFrequencyMetricNames
+import typings.googleapis.anon.ReportProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,16 +23,16 @@ trait SchemaReport extends js.Object {
   /**
     * The report criteria for a report of type &quot;STANDARD&quot;.
     */
-  var criteria: js.UndefOr[AnonMetricNames] = js.native
+  var criteria: js.UndefOr[MetricNames] = js.native
   /**
     * The report criteria for a report of type
     * &quot;CROSS_DIMENSION_REACH&quot;.
     */
-  var crossDimensionReachCriteria: js.UndefOr[AnonOverlapMetricNames] = js.native
+  var crossDimensionReachCriteria: js.UndefOr[OverlapMetricNames] = js.native
   /**
     * The report&#39;s email delivery settings.
     */
-  var delivery: js.UndefOr[AnonMessage] = js.native
+  var delivery: js.UndefOr[Message] = js.native
   /**
     * The eTag of this response for caching purposes.
     */
@@ -44,7 +44,7 @@ trait SchemaReport extends js.Object {
   /**
     * The report criteria for a report of type &quot;FLOODLIGHT&quot;.
     */
-  var floodlightCriteria: js.UndefOr[AnonReportProperties] = js.native
+  var floodlightCriteria: js.UndefOr[ReportProperties] = js.native
   /**
     * The output format of the report. If not specified, default format is
     * &quot;CSV&quot;. Note that the actual format in the completed report file
@@ -77,17 +77,17 @@ trait SchemaReport extends js.Object {
   /**
     * The report criteria for a report of type &quot;PATH_TO_CONVERSION&quot;.
     */
-  var pathToConversionCriteria: js.UndefOr[AnonCustomFloodlightVariables] = js.native
+  var pathToConversionCriteria: js.UndefOr[CustomFloodlightVariables] = js.native
   /**
     * The report criteria for a report of type &quot;REACH&quot;.
     */
-  var reachCriteria: js.UndefOr[AnonReachByFrequencyMetricNames] = js.native
+  var reachCriteria: js.UndefOr[ReachByFrequencyMetricNames] = js.native
   /**
     * The report&#39;s schedule. Can only be set if the report&#39;s
     * &#39;dateRange&#39; is a relative date range and the relative date range
     * is not &quot;TODAY&quot;.
     */
-  var schedule: js.UndefOr[AnonActive] = js.native
+  var schedule: js.UndefOr[Active] = js.native
   /**
     * The subaccount ID to which this report belongs if applicable.
     */
@@ -102,21 +102,21 @@ object SchemaReport {
   @scala.inline
   def apply(
     accountId: String = null,
-    criteria: AnonMetricNames = null,
-    crossDimensionReachCriteria: AnonOverlapMetricNames = null,
-    delivery: AnonMessage = null,
+    criteria: MetricNames = null,
+    crossDimensionReachCriteria: OverlapMetricNames = null,
+    delivery: Message = null,
     etag: String = null,
     fileName: String = null,
-    floodlightCriteria: AnonReportProperties = null,
+    floodlightCriteria: ReportProperties = null,
     format: String = null,
     id: String = null,
     kind: String = null,
     lastModifiedTime: String = null,
     name: String = null,
     ownerProfileId: String = null,
-    pathToConversionCriteria: AnonCustomFloodlightVariables = null,
-    reachCriteria: AnonReachByFrequencyMetricNames = null,
-    schedule: AnonActive = null,
+    pathToConversionCriteria: CustomFloodlightVariables = null,
+    reachCriteria: ReachByFrequencyMetricNames = null,
+    schedule: Active = null,
     subAccountId: String = null,
     `type`: String = null
   ): SchemaReport = {

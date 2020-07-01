@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
      with UserWhitespacable {
   var computed: Boolean
   var decorators: js.Array[Decorator_] | Null
-  var key: js.Any
-  var shorthand: js.Any
+  var key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_
+  var shorthand: Boolean
   @JSName("type")
   var type_ObjectProperty_ : ObjectProperty
   var value: Expression | PatternLike
@@ -24,8 +24,8 @@ object ObjectProperty_ {
   @scala.inline
   def apply(
     computed: Boolean,
-    key: js.Any,
-    shorthand: js.Any,
+    key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_,
+    shorthand: Boolean,
     `type`: ObjectProperty,
     value: Expression | PatternLike,
     decorators: js.Array[Decorator_] = null,

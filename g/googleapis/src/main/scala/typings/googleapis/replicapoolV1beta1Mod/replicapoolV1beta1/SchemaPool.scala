@@ -91,13 +91,13 @@ object SchemaPool {
   def apply(
     autoRestart: js.UndefOr[Boolean] = js.undefined,
     baseInstanceName: String = null,
-    currentNumReplicas: Int | Double = null,
+    currentNumReplicas: js.UndefOr[Double] = js.undefined,
     description: String = null,
     healthChecks: js.Array[SchemaHealthCheck] = null,
-    initialNumReplicas: Int | Double = null,
+    initialNumReplicas: js.UndefOr[Double] = js.undefined,
     labels: js.Array[SchemaLabel] = null,
     name: String = null,
-    numReplicas: Int | Double = null,
+    numReplicas: js.UndefOr[Double] = js.undefined,
     resourceViews: js.Array[String] = null,
     selfLink: String = null,
     targetPool: String = null,
@@ -106,15 +106,15 @@ object SchemaPool {
     `type`: String = null
   ): SchemaPool = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoRestart)) __obj.updateDynamic("autoRestart")(autoRestart.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoRestart)) __obj.updateDynamic("autoRestart")(autoRestart.get.asInstanceOf[js.Any])
     if (baseInstanceName != null) __obj.updateDynamic("baseInstanceName")(baseInstanceName.asInstanceOf[js.Any])
-    if (currentNumReplicas != null) __obj.updateDynamic("currentNumReplicas")(currentNumReplicas.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentNumReplicas)) __obj.updateDynamic("currentNumReplicas")(currentNumReplicas.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (healthChecks != null) __obj.updateDynamic("healthChecks")(healthChecks.asInstanceOf[js.Any])
-    if (initialNumReplicas != null) __obj.updateDynamic("initialNumReplicas")(initialNumReplicas.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialNumReplicas)) __obj.updateDynamic("initialNumReplicas")(initialNumReplicas.get.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (numReplicas != null) __obj.updateDynamic("numReplicas")(numReplicas.asInstanceOf[js.Any])
+    if (!js.isUndefined(numReplicas)) __obj.updateDynamic("numReplicas")(numReplicas.get.asInstanceOf[js.Any])
     if (resourceViews != null) __obj.updateDynamic("resourceViews")(resourceViews.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     if (targetPool != null) __obj.updateDynamic("targetPool")(targetPool.asInstanceOf[js.Any])

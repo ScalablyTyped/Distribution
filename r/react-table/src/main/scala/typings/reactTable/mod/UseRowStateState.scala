@@ -12,7 +12,7 @@ trait UseRowStateState[D /* <: js.Object */] extends js.Object {
 
 object UseRowStateState {
   @scala.inline
-  def apply[D](rowState: Record[String, CellState[D]]): UseRowStateState[D] = {
+  def apply[/* <: js.Object */ D](rowState: Record[String, CellState[D]]): UseRowStateState[D] = {
     val __obj = js.Dynamic.literal(rowState = rowState.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseRowStateState[D]]
   }

@@ -136,6 +136,7 @@ object backoffMod extends js.Object {
       * RESOURCE_EXHAUSTED error).
       */
     def resetToMax(): Unit = js.native
+    def skipBackoff(): Unit = js.native
   }
   
 }

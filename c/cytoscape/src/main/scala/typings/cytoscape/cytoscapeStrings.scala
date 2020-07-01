@@ -275,6 +275,9 @@ object cytoscapeStrings {
   sealed trait hollow extends ArrowFill
   
   @js.native
+  sealed trait `inside-to-node` extends js.Object
+  
+  @js.native
   sealed trait intersection extends js.Object
   
   @js.native
@@ -352,6 +355,18 @@ object cytoscapeStrings {
   
   @js.native
   sealed trait octagon extends NodeShape
+  
+  @js.native
+  sealed trait `outside-to-line` extends js.Object
+  
+  @js.native
+  sealed trait `outside-to-line-or-label` extends js.Object
+  
+  @js.native
+  sealed trait `outside-to-node` extends js.Object
+  
+  @js.native
+  sealed trait `outside-to-node-or-label` extends js.Object
   
   @js.native
   sealed trait pan extends GraphEventName
@@ -736,6 +751,8 @@ object cytoscapeStrings {
   @scala.inline
   def hollow: hollow = "hollow".asInstanceOf[hollow]
   @scala.inline
+  def `inside-to-node`: `inside-to-node` = "inside-to-node".asInstanceOf[`inside-to-node`]
+  @scala.inline
   def intersection: intersection = "intersection".asInstanceOf[intersection]
   @scala.inline
   def italic: italic = "italic".asInstanceOf[italic]
@@ -785,6 +802,14 @@ object cytoscapeStrings {
   def oblique: oblique = "oblique".asInstanceOf[oblique]
   @scala.inline
   def octagon: octagon = "octagon".asInstanceOf[octagon]
+  @scala.inline
+  def `outside-to-line`: `outside-to-line` = "outside-to-line".asInstanceOf[`outside-to-line`]
+  @scala.inline
+  def `outside-to-line-or-label`: `outside-to-line-or-label` = "outside-to-line-or-label".asInstanceOf[`outside-to-line-or-label`]
+  @scala.inline
+  def `outside-to-node`: `outside-to-node` = "outside-to-node".asInstanceOf[`outside-to-node`]
+  @scala.inline
+  def `outside-to-node-or-label`: `outside-to-node-or-label` = "outside-to-node-or-label".asInstanceOf[`outside-to-node-or-label`]
   @scala.inline
   def pan: pan = "pan".asInstanceOf[pan]
   @scala.inline

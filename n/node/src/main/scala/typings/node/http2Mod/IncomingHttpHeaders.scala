@@ -33,6 +33,8 @@ object IncomingHttpHeaders {
     `access-control-allow-origin`: String = null,
     `access-control-expose-headers`: String = null,
     `access-control-max-age`: String = null,
+    `access-control-request-headers`: String = null,
+    `access-control-request-method`: String = null,
     age: String = null,
     allow: String = null,
     `alt-svc`: String = null,
@@ -59,6 +61,7 @@ object IncomingHttpHeaders {
     `if-unmodified-since`: String = null,
     `last-modified`: String = null,
     location: String = null,
+    origin: String = null,
     pragma: String = null,
     `proxy-authenticate`: String = null,
     `proxy-authorization`: String = null,
@@ -93,6 +96,8 @@ object IncomingHttpHeaders {
     if (`access-control-allow-origin` != null) __obj.updateDynamic("access-control-allow-origin")(`access-control-allow-origin`.asInstanceOf[js.Any])
     if (`access-control-expose-headers` != null) __obj.updateDynamic("access-control-expose-headers")(`access-control-expose-headers`.asInstanceOf[js.Any])
     if (`access-control-max-age` != null) __obj.updateDynamic("access-control-max-age")(`access-control-max-age`.asInstanceOf[js.Any])
+    if (`access-control-request-headers` != null) __obj.updateDynamic("access-control-request-headers")(`access-control-request-headers`.asInstanceOf[js.Any])
+    if (`access-control-request-method` != null) __obj.updateDynamic("access-control-request-method")(`access-control-request-method`.asInstanceOf[js.Any])
     if (age != null) __obj.updateDynamic("age")(age.asInstanceOf[js.Any])
     if (allow != null) __obj.updateDynamic("allow")(allow.asInstanceOf[js.Any])
     if (`alt-svc` != null) __obj.updateDynamic("alt-svc")(`alt-svc`.asInstanceOf[js.Any])
@@ -119,6 +124,7 @@ object IncomingHttpHeaders {
     if (`if-unmodified-since` != null) __obj.updateDynamic("if-unmodified-since")(`if-unmodified-since`.asInstanceOf[js.Any])
     if (`last-modified` != null) __obj.updateDynamic("last-modified")(`last-modified`.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     if (pragma != null) __obj.updateDynamic("pragma")(pragma.asInstanceOf[js.Any])
     if (`proxy-authenticate` != null) __obj.updateDynamic("proxy-authenticate")(`proxy-authenticate`.asInstanceOf[js.Any])
     if (`proxy-authorization` != null) __obj.updateDynamic("proxy-authorization")(`proxy-authorization`.asInstanceOf[js.Any])

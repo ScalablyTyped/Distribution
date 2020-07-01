@@ -6,8 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BridgeVideoSourceChanged extends Event {
-  /* Properties */
+  /**
+    * Bridge.
+    */
   var bridge: Bridge
+  /**
+    * Old_video_source_id.
+    */
   var old_video_source_id: js.UndefOr[String] = js.undefined
 }
 

@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListCopyJobsInput extends js.Object {
   /**
+    * The account ID to list the jobs from. Returns only copy jobs associated with the specified account ID.
+    */
+  var ByAccountId: js.UndefOr[AccountId] = js.native
+  /**
     * Returns only copy jobs that were created after the specified date.
     */
   var ByCreatedAfter: js.UndefOr[timestamp] = js.native
@@ -23,7 +27,7 @@ trait ListCopyJobsInput extends js.Object {
     */
   var ByResourceArn: js.UndefOr[ARN] = js.native
   /**
-    * Returns only backup jobs for the specified resources:    EBS for Amazon Elastic Block Store    EFS for Amazon Elastic File System    RDS for Amazon Relational Database Service    Storage Gateway for AWS Storage Gateway  
+    * Returns only backup jobs for the specified resources:    DynamoDB for Amazon DynamoDB    EBS for Amazon Elastic Block Store    EC2 for Amazon Elastic Compute Cloud    EFS for Amazon Elastic File System    RDS for Amazon Relational Database Service    Storage Gateway for AWS Storage Gateway  
     */
   var ByResourceType: js.UndefOr[ResourceType] = js.native
   /**
@@ -43,6 +47,7 @@ trait ListCopyJobsInput extends js.Object {
 object ListCopyJobsInput {
   @scala.inline
   def apply(
+    ByAccountId: AccountId = null,
     ByCreatedAfter: timestamp = null,
     ByCreatedBefore: timestamp = null,
     ByDestinationVaultArn: String = null,
@@ -53,6 +58,7 @@ object ListCopyJobsInput {
     NextToken: String = null
   ): ListCopyJobsInput = {
     val __obj = js.Dynamic.literal()
+    if (ByAccountId != null) __obj.updateDynamic("ByAccountId")(ByAccountId.asInstanceOf[js.Any])
     if (ByCreatedAfter != null) __obj.updateDynamic("ByCreatedAfter")(ByCreatedAfter.asInstanceOf[js.Any])
     if (ByCreatedBefore != null) __obj.updateDynamic("ByCreatedBefore")(ByCreatedBefore.asInstanceOf[js.Any])
     if (ByDestinationVaultArn != null) __obj.updateDynamic("ByDestinationVaultArn")(ByDestinationVaultArn.asInstanceOf[js.Any])

@@ -12,7 +12,7 @@ trait Delay[TContext, TEvent /* <: EventObject */] extends js.Object {
 
 object Delay {
   @scala.inline
-  def apply[TContext, TEvent](delay: Double | String | (Expr[TContext, TEvent, Double])): Delay[TContext, TEvent] = {
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](delay: Double | String | (Expr[TContext, TEvent, Double])): Delay[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any])
     __obj.asInstanceOf[Delay[TContext, TEvent]]
   }

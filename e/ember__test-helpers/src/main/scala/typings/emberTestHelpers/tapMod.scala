@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object tapMod extends js.Object {
   def default(target: Target): js.Promise[Unit] = js.native
+  def default(target: Target, options: js.Object): js.Promise[Unit] = js.native
 }
 

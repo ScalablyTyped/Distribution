@@ -82,10 +82,6 @@ trait All extends js.Object {
     */
   var selectorsSortingMethod: js.UndefOr[standard | natural | none] = js.undefined
   /**
-    * Controls removing trailing semicolons in rule; defaults to `false` - means remove
-    */
-  var semicolonAfterLastProperty: js.UndefOr[Boolean] = js.undefined
-  /**
     * denotes a number of / *! ... * / comments preserved; defaults to `all`
     */
   var specialComments: js.UndefOr[String] = js.undefined
@@ -135,7 +131,6 @@ object All {
     replaceZeroUnits: js.UndefOr[Boolean] = js.undefined,
     roundingPrecision: js.UndefOr[Boolean] = js.undefined,
     selectorsSortingMethod: standard | natural | none = null,
-    semicolonAfterLastProperty: js.UndefOr[Boolean] = js.undefined,
     specialComments: String = null,
     tidyAtRules: js.UndefOr[Boolean] = js.undefined,
     tidyBlockScopes: js.UndefOr[Boolean] = js.undefined,
@@ -161,7 +156,6 @@ object All {
     if (!js.isUndefined(replaceZeroUnits)) __obj.updateDynamic("replaceZeroUnits")(replaceZeroUnits.get.asInstanceOf[js.Any])
     if (!js.isUndefined(roundingPrecision)) __obj.updateDynamic("roundingPrecision")(roundingPrecision.get.asInstanceOf[js.Any])
     if (selectorsSortingMethod != null) __obj.updateDynamic("selectorsSortingMethod")(selectorsSortingMethod.asInstanceOf[js.Any])
-    if (!js.isUndefined(semicolonAfterLastProperty)) __obj.updateDynamic("semicolonAfterLastProperty")(semicolonAfterLastProperty.get.asInstanceOf[js.Any])
     if (specialComments != null) __obj.updateDynamic("specialComments")(specialComments.asInstanceOf[js.Any])
     if (!js.isUndefined(tidyAtRules)) __obj.updateDynamic("tidyAtRules")(tidyAtRules.get.asInstanceOf[js.Any])
     if (!js.isUndefined(tidyBlockScopes)) __obj.updateDynamic("tidyBlockScopes")(tidyBlockScopes.get.asInstanceOf[js.Any])

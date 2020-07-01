@@ -1,5 +1,24 @@
 package typings.vexdb.requestObjectsMod
 
+import typings.vexdb.responseObjectsMod.AwardsResponseObject
+import typings.vexdb.responseObjectsMod.EventsResponseObject
+import typings.vexdb.responseObjectsMod.MatchesResponseObject
+import typings.vexdb.responseObjectsMod.RankingsResponseObject
+import typings.vexdb.responseObjectsMod.SeasonRankingsResponseObject
+import typings.vexdb.responseObjectsMod.SkillsResponseObject
+import typings.vexdb.responseObjectsMod.TeamsResponseObject
+import typings.vexdb.vexdbNumbers.`0`
+import typings.vexdb.vexdbNumbers.`16`
+import typings.vexdb.vexdbNumbers.`1`
+import typings.vexdb.vexdbNumbers.`2`
+import typings.vexdb.vexdbNumbers.`3`
+import typings.vexdb.vexdbNumbers.`4`
+import typings.vexdb.vexdbNumbers.`5`
+import typings.vexdb.vexdbStrings.College
+import typings.vexdb.vexdbStrings.VEXU
+import typings.vexdb.vexdbStrings.VRC
+import typings.vexdb.vexdbStrings.`High School`
+import typings.vexdb.vexdbStrings.`Middle School`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,21 +37,20 @@ trait RequestObject extends js.Object
 object RequestObject {
   @scala.inline
   def TeamsRequestObject(
-    city: StringRequest = null,
-    country: StringRequest = null,
-    grade: StringRequest = null,
-    is_registered: NumberRequest = null,
+    city: StringRequest[TeamsResponseObject, String] = null,
+    country: StringRequest[TeamsResponseObject, String] = null,
+    grade: StringRequest[TeamsResponseObject, College | (`High School`) | (`Middle School`)] = null,
+    is_registered: NumberRequest[TeamsResponseObject, `0` | `1`] = null,
     limit_number: js.UndefOr[Double] = js.undefined,
     limit_start: js.UndefOr[Double] = js.undefined,
-    number: StringRequest = null,
-    organisation: StringRequest = null,
-    program: StringRequest = null,
-    region: StringRequest = null,
-    robot_name: StringRequest = null,
-    single: js.UndefOr[Boolean] = js.undefined,
-    sku: StringRequest = null,
-    team: StringRequest = null,
-    team_name: StringRequest = null
+    number: StringRequest[TeamsResponseObject, String] = null,
+    organisation: StringRequest[TeamsResponseObject, String] = null,
+    program: StringRequest[TeamsResponseObject, VRC | VEXU] = null,
+    region: StringRequest[TeamsResponseObject, String] = null,
+    robot_name: StringRequest[TeamsResponseObject, String] = null,
+    sku: StringRequest[TeamsResponseObject, String] = null,
+    team: StringRequest[TeamsResponseObject, String] = null,
+    team_name: StringRequest[TeamsResponseObject, String] = null
   ): RequestObject = {
     val __obj = js.Dynamic.literal()
     if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
@@ -46,7 +64,6 @@ object RequestObject {
     if (program != null) __obj.updateDynamic("program")(program.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (robot_name != null) __obj.updateDynamic("robot_name")(robot_name.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.get.asInstanceOf[js.Any])
     if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
     if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
     if (team_name != null) __obj.updateDynamic("team_name")(team_name.asInstanceOf[js.Any])
@@ -54,25 +71,24 @@ object RequestObject {
   }
   @scala.inline
   def RankingsRequestObject(
-    ap: NumberRequest = null,
-    ccwm: NumberRequest = null,
-    division: StringRequest = null,
-    dpr: NumberRequest = null,
+    ap: NumberRequest[RankingsResponseObject, Double] = null,
+    ccwm: NumberRequest[RankingsResponseObject, Double] = null,
+    division: StringRequest[RankingsResponseObject, String] = null,
+    dpr: NumberRequest[RankingsResponseObject, Double] = null,
     limit_number: js.UndefOr[Double] = js.undefined,
     limit_start: js.UndefOr[Double] = js.undefined,
-    losses: NumberRequest = null,
-    max_score: NumberRequest = null,
-    opr: NumberRequest = null,
-    rank: StringRequest = null,
-    season: StringRequest = null,
-    single: js.UndefOr[Boolean] = js.undefined,
-    sku: StringRequest = null,
-    sp: NumberRequest = null,
-    team: StringRequest = null,
-    ties: NumberRequest = null,
-    trsp: NumberRequest = null,
-    wins: NumberRequest = null,
-    wp: NumberRequest = null
+    losses: NumberRequest[RankingsResponseObject, Double] = null,
+    max_score: NumberRequest[RankingsResponseObject, Double] = null,
+    opr: NumberRequest[RankingsResponseObject, Double] = null,
+    rank: StringRequest[RankingsResponseObject, String] = null,
+    season: StringRequest[RankingsResponseObject, Seasons] = null,
+    sku: StringRequest[RankingsResponseObject, String] = null,
+    sp: NumberRequest[RankingsResponseObject, Double] = null,
+    team: StringRequest[RankingsResponseObject, String] = null,
+    ties: NumberRequest[RankingsResponseObject, Double] = null,
+    trsp: NumberRequest[RankingsResponseObject, Double] = null,
+    wins: NumberRequest[RankingsResponseObject, Double] = null,
+    wp: NumberRequest[RankingsResponseObject, Double] = null
   ): RequestObject = {
     val __obj = js.Dynamic.literal()
     if (ap != null) __obj.updateDynamic("ap")(ap.asInstanceOf[js.Any])
@@ -86,7 +102,6 @@ object RequestObject {
     if (opr != null) __obj.updateDynamic("opr")(opr.asInstanceOf[js.Any])
     if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
     if (season != null) __obj.updateDynamic("season")(season.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.get.asInstanceOf[js.Any])
     if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
     if (sp != null) __obj.updateDynamic("sp")(sp.asInstanceOf[js.Any])
     if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
@@ -98,29 +113,28 @@ object RequestObject {
   }
   @scala.inline
   def MatchesRequestObject(
-    blue1: StringRequest = null,
-    blue2: StringRequest = null,
-    blue3: StringRequest = null,
-    bluescore: NumberRequest = null,
-    bluesit: StringRequest = null,
-    division: StringRequest = null,
-    field: StringRequest = null,
-    instance: NumberRequest = null,
+    blue1: StringRequest[MatchesResponseObject, String] = null,
+    blue2: StringRequest[MatchesResponseObject, String] = null,
+    blue3: StringRequest[MatchesResponseObject, String] = null,
+    bluescore: NumberRequest[MatchesResponseObject, Double] = null,
+    bluesit: StringRequest[MatchesResponseObject, String] = null,
+    division: StringRequest[MatchesResponseObject, String] = null,
+    field: StringRequest[MatchesResponseObject, String] = null,
+    instance: NumberRequest[MatchesResponseObject, Double] = null,
     limit_number: js.UndefOr[Double] = js.undefined,
     limit_start: js.UndefOr[Double] = js.undefined,
-    matchnum: NumberRequest = null,
-    red1: StringRequest = null,
-    red2: StringRequest = null,
-    red3: StringRequest = null,
-    redscore: NumberRequest = null,
-    redsit: StringRequest = null,
-    round: NumberRequest = null,
-    scheduled: NumberRequest = null,
-    scored: NumberRequest = null,
-    season: StringRequest = null,
-    single: js.UndefOr[Boolean] = js.undefined,
-    sku: StringRequest = null,
-    team: StringRequest = null
+    matchnum: NumberRequest[MatchesResponseObject, Double] = null,
+    red1: StringRequest[MatchesResponseObject, String] = null,
+    red2: StringRequest[MatchesResponseObject, String] = null,
+    red3: StringRequest[MatchesResponseObject, String] = null,
+    redscore: NumberRequest[MatchesResponseObject, Double] = null,
+    redsit: StringRequest[MatchesResponseObject, String] = null,
+    round: NumberRequest[MatchesResponseObject, `1` | `2` | `3` | `4` | `5` | `16`] = null,
+    scheduled: NumberRequest[MatchesResponseObject, Double] = null,
+    scored: NumberRequest[MatchesResponseObject, `0` | `1`] = null,
+    season: StringRequest[MatchesResponseObject, Seasons] = null,
+    sku: StringRequest[MatchesResponseObject, String] = null,
+    team: StringRequest[MatchesResponseObject, String] = null
   ): RequestObject = {
     val __obj = js.Dynamic.literal()
     if (blue1 != null) __obj.updateDynamic("blue1")(blue1.asInstanceOf[js.Any])
@@ -143,25 +157,23 @@ object RequestObject {
     if (scheduled != null) __obj.updateDynamic("scheduled")(scheduled.asInstanceOf[js.Any])
     if (scored != null) __obj.updateDynamic("scored")(scored.asInstanceOf[js.Any])
     if (season != null) __obj.updateDynamic("season")(season.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.get.asInstanceOf[js.Any])
     if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
     if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestObject]
   }
   @scala.inline
   def SkillsRequestObject(
-    attempts: NumberRequest = null,
+    attempts: NumberRequest[SkillsResponseObject, Double] = null,
     limit_number: js.UndefOr[Double] = js.undefined,
     limit_start: js.UndefOr[Double] = js.undefined,
-    program: StringRequest = null,
-    rank: NumberRequest = null,
-    score: NumberRequest = null,
-    season: StringRequest = null,
-    season_rank: NumberRequest = null,
-    single: js.UndefOr[Boolean] = js.undefined,
-    sku: StringRequest = null,
-    team: StringRequest = null,
-    `type`: NumberRequest = null
+    program: StringRequest[SkillsResponseObject, VRC | VEXU] = null,
+    rank: NumberRequest[SkillsResponseObject, Double] = null,
+    score: NumberRequest[SkillsResponseObject, Double] = null,
+    season: StringRequest[SkillsResponseObject, Seasons] = null,
+    season_rank: NumberRequest[SkillsResponseObject, Double] = null,
+    sku: StringRequest[SkillsResponseObject, String] = null,
+    team: StringRequest[SkillsResponseObject, String] = null,
+    `type`: NumberRequest[SkillsResponseObject, `0` | `1` | `2`] = null
   ): RequestObject = {
     val __obj = js.Dynamic.literal()
     if (attempts != null) __obj.updateDynamic("attempts")(attempts.asInstanceOf[js.Any])
@@ -172,7 +184,6 @@ object RequestObject {
     if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
     if (season != null) __obj.updateDynamic("season")(season.asInstanceOf[js.Any])
     if (season_rank != null) __obj.updateDynamic("season_rank")(season_rank.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.get.asInstanceOf[js.Any])
     if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
     if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -182,12 +193,11 @@ object RequestObject {
   def AwardsRequestObject(
     limit_number: js.UndefOr[Double] = js.undefined,
     limit_start: js.UndefOr[Double] = js.undefined,
-    name: StringRequest = null,
-    order: NumberRequest = null,
-    season: StringRequest = null,
-    single: js.UndefOr[Boolean] = js.undefined,
-    sku: StringRequest = null,
-    team: StringRequest = null
+    name: StringRequest[AwardsResponseObject, String] = null,
+    order: NumberRequest[AwardsResponseObject, Double] = null,
+    season: StringRequest[AwardsResponseObject, Seasons] = null,
+    sku: StringRequest[AwardsResponseObject, String] = null,
+    team: StringRequest[AwardsResponseObject, String] = null
   ): RequestObject = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(limit_number)) __obj.updateDynamic("limit_number")(limit_number.get.asInstanceOf[js.Any])
@@ -195,35 +205,33 @@ object RequestObject {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (season != null) __obj.updateDynamic("season")(season.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.get.asInstanceOf[js.Any])
     if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
     if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestObject]
   }
   @scala.inline
   def EventsRequestObject(
-    city: StringRequest = null,
-    country: StringRequest = null,
-    date: StringRequest = null,
-    end: StringRequest = null,
-    key: StringRequest = null,
+    city: StringRequest[EventsResponseObject, String] = null,
+    country: StringRequest[EventsResponseObject, String] = null,
+    date: StringRequest[EventsResponseObject, String] = null,
+    end: StringRequest[EventsResponseObject, String] = null,
+    key: StringRequest[EventsResponseObject, String] = null,
     limit_number: js.UndefOr[Double] = js.undefined,
     limit_start: js.UndefOr[Double] = js.undefined,
-    loc_address1: StringRequest = null,
-    loc_address2: StringRequest = null,
-    loc_city: StringRequest = null,
-    loc_country: StringRequest = null,
-    loc_postcode: StringRequest = null,
-    loc_region: StringRequest = null,
-    loc_venue: StringRequest = null,
-    name: StringRequest = null,
-    program: StringRequest = null,
-    region: StringRequest = null,
-    season: StringRequest = null,
-    single: js.UndefOr[Boolean] = js.undefined,
-    sku: StringRequest = null,
-    start: StringRequest = null,
-    status: StringRequest = null,
+    loc_address1: StringRequest[EventsResponseObject, String] = null,
+    loc_address2: StringRequest[EventsResponseObject, String] = null,
+    loc_city: StringRequest[EventsResponseObject, String] = null,
+    loc_country: StringRequest[EventsResponseObject, String] = null,
+    loc_postcode: StringRequest[EventsResponseObject, String] = null,
+    loc_region: StringRequest[EventsResponseObject, String] = null,
+    loc_venue: StringRequest[EventsResponseObject, String] = null,
+    name: StringRequest[EventsResponseObject, String] = null,
+    program: StringRequest[EventsResponseObject, VRC | VEXU] = null,
+    region: StringRequest[EventsResponseObject, String] = null,
+    season: StringRequest[EventsResponseObject, Seasons] = null,
+    sku: StringRequest[EventsResponseObject, String] = null,
+    start: StringRequest[EventsResponseObject, String] = null,
+    status: StringRequest[EventsResponseObject, String] = null,
     team: String = null
   ): RequestObject = {
     val __obj = js.Dynamic.literal()
@@ -245,7 +253,6 @@ object RequestObject {
     if (program != null) __obj.updateDynamic("program")(program.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (season != null) __obj.updateDynamic("season")(season.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.get.asInstanceOf[js.Any])
     if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
@@ -256,19 +263,17 @@ object RequestObject {
   def SeasonRankingsRequestObject(
     limit_number: js.UndefOr[Double] = js.undefined,
     limit_start: js.UndefOr[Double] = js.undefined,
-    program: StringRequest = null,
-    season: StringRequest = null,
-    single: js.UndefOr[Boolean] = js.undefined,
-    team: StringRequest = null,
-    vrating: NumberRequest = null,
-    vrating_rank: NumberRequest = null
+    program: StringRequest[SeasonRankingsResponseObject, VRC | VEXU] = null,
+    season: StringRequest[SeasonRankingsResponseObject, Seasons] = null,
+    team: StringRequest[SeasonRankingsResponseObject, String] = null,
+    vrating: NumberRequest[SeasonRankingsResponseObject, Double] = null,
+    vrating_rank: NumberRequest[SeasonRankingsResponseObject, Double] = null
   ): RequestObject = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(limit_number)) __obj.updateDynamic("limit_number")(limit_number.get.asInstanceOf[js.Any])
     if (!js.isUndefined(limit_start)) __obj.updateDynamic("limit_start")(limit_start.get.asInstanceOf[js.Any])
     if (program != null) __obj.updateDynamic("program")(program.asInstanceOf[js.Any])
     if (season != null) __obj.updateDynamic("season")(season.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.get.asInstanceOf[js.Any])
     if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
     if (vrating != null) __obj.updateDynamic("vrating")(vrating.asInstanceOf[js.Any])
     if (vrating_rank != null) __obj.updateDynamic("vrating_rank")(vrating_rank.asInstanceOf[js.Any])

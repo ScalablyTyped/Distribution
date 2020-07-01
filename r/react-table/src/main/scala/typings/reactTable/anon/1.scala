@@ -11,7 +11,7 @@ trait `1`[D /* <: js.Object */] extends js.Object {
 
 object `1` {
   @scala.inline
-  def apply[D](accessor: typings.reactTable.mod.Accessor[D] | IdType[D] = null): `1`[D] = {
+  def apply[/* <: js.Object */ D](accessor: typings.reactTable.mod.Accessor[D] | IdType[D] = null): `1`[D] = {
     val __obj = js.Dynamic.literal()
     if (accessor != null) __obj.updateDynamic("accessor")(accessor.asInstanceOf[js.Any])
     __obj.asInstanceOf[`1`[D]]

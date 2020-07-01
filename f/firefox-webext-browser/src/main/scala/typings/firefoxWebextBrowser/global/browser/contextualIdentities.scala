@@ -1,7 +1,7 @@
 package typings.firefoxWebextBrowser.global.browser
 
 import typings.firefoxWebextBrowser.WebExtEvent
-import typings.firefoxWebextBrowser.anon.Color
+import typings.firefoxWebextBrowser.anon.ColorIcon
 import typings.firefoxWebextBrowser.anon.ContextualIdentity
 import typings.firefoxWebextBrowser.anon.Icon
 import typings.firefoxWebextBrowser.anon.Name
@@ -30,7 +30,7 @@ object contextualIdentities extends js.Object {
     * Creates a contextual identity with the given data.
     * @param details Details about the contextual identity being created.
     */
-  def create(details: Color): js.Promise[typings.firefoxWebextBrowser.browser.contextualIdentities.ContextualIdentity] = js.native
+  def create(details: Icon): js.Promise[typings.firefoxWebextBrowser.browser.contextualIdentities.ContextualIdentity] = js.native
   /* contextualIdentities functions */
   /**
     * Retrieves information about a single contextual identity.
@@ -54,6 +54,6 @@ object contextualIdentities extends js.Object {
     * @param cookieStoreId The ID of the contextual identity cookie store.
     * @param details Details about the contextual identity being created.
     */
-  def update(cookieStoreId: String, details: Icon): js.Promise[typings.firefoxWebextBrowser.browser.contextualIdentities.ContextualIdentity] = js.native
+  def update(cookieStoreId: String, details: ColorIcon): js.Promise[typings.firefoxWebextBrowser.browser.contextualIdentities.ContextualIdentity] = js.native
 }
 

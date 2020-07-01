@@ -18,7 +18,7 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNavigationStack.anon.Close
 import typings.reactNavigationStack.anon.Closing
 import typings.reactNavigationStack.anon.Horizontal
-import typings.reactNavigationStack.anon.Style
+import typings.reactNavigationStack.anon.StyleWithAnimatedValue
 import typings.reactNavigationStack.reactNavigationStackStrings.`box-none`
 import typings.reactNavigationStack.reactNavigationStackStrings.`box-only`
 import typings.reactNavigationStack.reactNavigationStackStrings.`no-hide-descendants`
@@ -40,7 +40,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react-native.react-native.ViewProps & {  index  :number,   closing  :boolean,   next ? :react-native.react-native.Animated.AnimatedInterpolation,   current  :react-native.react-native.Animated.AnimatedInterpolation,   gesture  :react-native.react-native.Animated.Value,   layout  :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.Layout,   insets  :/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EdgeInsets * / any,   pageOverflowEnabled  :boolean,   gestureDirection  :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.GestureDirection, onOpen (): void, onClose (): void, onTransitionStart ? (props : {  closing  :boolean}): void, onGestureBegin ? (): void, onGestureCanceled ? (): void, onGestureEnd ? (): void,   children  :react.react.ReactNode, overlay (props : {  style  :react-native.react-native.StyleProp<react-native.react-native.ViewStyle>}): react.react.ReactNode,   overlayEnabled  :boolean,   shadowEnabled  :boolean,   gestureEnabled  :boolean,   gestureResponseDistance ? :{  vertical ? :number,   horizontal ? :number},   gestureVelocityImpact  :number,   transitionSpec  :{  open  :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.TransitionSpec,   close  :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.TransitionSpec},   styleInterpolator  :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.StackCardStyleInterpolator,   containerStyle ? :react-native.react-native.StyleProp<react-native.react-native.ViewStyle>,   contentStyle ? :react-native.react-native.StyleProp<react-native.react-native.ViewStyle>} */
+/* Inlined react-native.react-native.ViewProps & {  index  :number,   closing  :boolean,   next ? :react-native.react-native.Animated.AnimatedInterpolation,   current  :react-native.react-native.Animated.AnimatedInterpolation,   gesture  :react-native.react-native.Animated.Value,   layout  :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.Layout,   insets  :/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EdgeInsets * / any,   pageOverflowEnabled  :boolean,   gestureDirection  :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.GestureDirection, onOpen (): void, onClose (): void, onTransitionStart ? (props : {  closing  :boolean}): void, onGestureBegin ? (): void, onGestureCanceled ? (): void, onGestureEnd ? (): void,   children  :react.react.ReactNode, overlay (props : {  style  :react-native.react-native.Animated.WithAnimatedValue<react-native.react-native.StyleProp<react-native.react-native.ViewStyle>>}): react.react.ReactNode,   overlayEnabled  :boolean,   shadowEnabled  :boolean,   gestureEnabled  :boolean,   gestureResponseDistance ? :{  vertical ? :number,   horizontal ? :number},   gestureVelocityImpact  :number,   transitionSpec  :{  open  :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.TransitionSpec,   close  :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.TransitionSpec},   styleInterpolator  :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.StackCardStyleInterpolator,   containerStyle ? :react-native.react-native.StyleProp<react-native.react-native.ViewStyle>,   contentStyle ? :react-native.react-native.StyleProp<react-native.react-native.ViewStyle>} */
 trait Props extends js.Object {
   /**
     * Provides an array of custom actions available for accessibility.
@@ -121,6 +121,10 @@ trait Props extends js.Object {
   var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   var contentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   var current: AnimatedInterpolation
+  /**
+    * Whether this `View` should be focusable with a non-touch input device, eg. receive focus with a hardware keyboard.
+    */
+  var focusable: js.UndefOr[Boolean] = js.undefined
   var gesture: Value
   var gestureDirection: GestureDirection
   var gestureEnabled: Boolean
@@ -387,7 +391,7 @@ trait Props extends js.Object {
   var tvParallaxTiltAngle: js.UndefOr[Double] = js.undefined
   def onClose(): Unit
   def onOpen(): Unit
-  def overlay(props: Style): ReactNode
+  def overlay(props: StyleWithAnimatedValue): ReactNode
 }
 
 object Props {
@@ -404,7 +408,7 @@ object Props {
     layout: Layout,
     onClose: () => Unit,
     onOpen: () => Unit,
-    overlay: Style => ReactNode,
+    overlay: StyleWithAnimatedValue => ReactNode,
     overlayEnabled: Boolean,
     pageOverflowEnabled: Boolean,
     shadowEnabled: Boolean,
@@ -427,6 +431,7 @@ object Props {
     collapsable: js.UndefOr[Boolean] = js.undefined,
     containerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     contentStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    focusable: js.UndefOr[Boolean] = js.undefined,
     gestureResponseDistance: Horizontal = null,
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
     hitSlop: Insets = null,
@@ -491,6 +496,7 @@ object Props {
     if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(containerStyle)) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(contentStyle)) __obj.updateDynamic("contentStyle")(contentStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.get.asInstanceOf[js.Any])
     if (gestureResponseDistance != null) __obj.updateDynamic("gestureResponseDistance")(gestureResponseDistance.asInstanceOf[js.Any])
     if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.get.asInstanceOf[js.Any])
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])

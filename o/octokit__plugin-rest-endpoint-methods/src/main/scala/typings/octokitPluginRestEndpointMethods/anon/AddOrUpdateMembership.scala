@@ -14,13 +14,14 @@ trait AddOrUpdateMembership extends js.Object {
   /**
     * Only authenticated organization owners can add a member to the organization or update the member's role.
     *
-    * *   If the authenticated user is _adding_ a member to the organization, the invited user will receive an email inviting them to the organization. The user's [membership status](https://developer.github.com/v3/orgs/members/#get-organization-membership) will be `pending` until they accept the invitation.
+    * *   If the authenticated user is _adding_ a member to the organization, the invited user will receive an email inviting them to the organization. The user's [membership status](https://developer.github.com/v3/orgs/members/#get-organization-membership-for-a-user) will be `pending` until they accept the invitation.
     *
     * *   Authenticated users can _update_ a user's membership by passing the `role` parameter. If the authenticated user changes a member's role to `admin`, the affected user will receive an email notifying them that they've been made an organization owner. If the authenticated user changes an owner's role to `member`, no email will be sent.
     *
     * **Rate limits**
     *
     * To prevent abuse, the authenticated user is limited to 50 organization invitations per 24 hour period. If the organization is more than one month old or on a paid plan, the limit is 500 invitations per 24 hour period.
+    * @deprecated octokit.orgs.addOrUpdateMembership() has been renamed to octokit.orgs.setMembershipForUser() (2020-06-04)
     */
   @JSName("addOrUpdateMembership")
   var addOrUpdateMembership_Original: `221` = js.native
@@ -36,10 +37,24 @@ trait AddOrUpdateMembership extends js.Object {
   /**
     * Check if a user is, publicly or privately, a member of the organization.
     */
+  @JSName("checkMembershipForUser")
+  var checkMembershipForUser_Original: `224` = js.native
+  /**
+    * Check if a user is, publicly or privately, a member of the organization.
+    * @deprecated octokit.orgs.checkMembership() has been renamed to octokit.orgs.checkMembershipForUser() (2020-06-04)
+    */
   @JSName("checkMembership")
   var checkMembership_Original: `224` = js.native
+  @JSName("checkPublicMembershipForUser")
+  var checkPublicMembershipForUser_Original: `225` = js.native
+  /**
+    * @deprecated octokit.orgs.checkPublicMembership() has been renamed to octokit.orgs.checkPublicMembershipForUser() (2020-06-04)
+    */
   @JSName("checkPublicMembership")
   var checkPublicMembership_Original: `225` = js.native
+  /**
+    * @deprecated octokit.orgs.concealMembership() has been renamed to octokit.orgs.removePublicMembershipForAuthenticatedUser() (2020-06-04)
+    */
   @JSName("concealMembership")
   var concealMembership_Original: `226` = js.native
   /**
@@ -49,6 +64,7 @@ trait AddOrUpdateMembership extends js.Object {
   var convertMemberToOutsideCollaborator_Original: `227` = js.native
   /**
     * Here's how you can create a hook that posts payloads in JSON format:
+    * @deprecated octokit.orgs.createHook() has been renamed to octokit.orgs.createWebhook() (2020-06-04)
     */
   @JSName("createHook")
   var createHook_Original: `228` = js.native
@@ -59,8 +75,21 @@ trait AddOrUpdateMembership extends js.Object {
     */
   @JSName("createInvitation")
   var createInvitation_Original: `229` = js.native
+  /**
+    * Here's how you can create a hook that posts payloads in JSON format:
+    */
+  @JSName("createWebhook")
+  var createWebhook_Original: `228` = js.native
+  /**
+    * @deprecated octokit.orgs.deleteHook() has been renamed to octokit.orgs.deleteWebhook() (2020-06-04)
+    */
   @JSName("deleteHook")
   var deleteHook_Original: `230` = js.native
+  @JSName("deleteWebhook")
+  var deleteWebhook_Original: `230` = js.native
+  /**
+    * @deprecated octokit.orgs.getHook() has been renamed to octokit.orgs.getWebhook() (2020-06-04)
+    */
   @JSName("getHook")
   var getHook_Original: `232` = js.native
   @JSName("getMembershipForAuthenticatedUser")
@@ -68,8 +97,16 @@ trait AddOrUpdateMembership extends js.Object {
   /**
     * In order to get a user's membership with an organization, the authenticated user must be an organization member.
     */
+  @JSName("getMembershipForUser")
+  var getMembershipForUser_Original: `233` = js.native
+  /**
+    * In order to get a user's membership with an organization, the authenticated user must be an organization member.
+    * @deprecated octokit.orgs.getMembership() has been renamed to octokit.orgs.getMembershipForUser() (2020-06-04)
+    */
   @JSName("getMembership")
   var getMembership_Original: `233` = js.native
+  @JSName("getWebhook")
+  var getWebhook_Original: `232` = js.native
   /**
     * To see many of the organization response values, you need to be an authenticated organization owner with the `admin:org` scope. When the value of `two_factor_requirement_enabled` is `true`, the organization requires all members, billing managers, and outside collaborators to enable [two-factor authentication](https://help.github.com/articles/securing-your-account-with-two-factor-authentication-2fa/).
     *
@@ -78,10 +115,15 @@ trait AddOrUpdateMembership extends js.Object {
   @JSName("get")
   var get_Original: `231` = js.native
   /**
+    * Lists all GitHub Apps in an organization. The installation count includes all GitHub Apps installed on repositories in the organization. You must be an organization owner with `admin:read` scope to use this endpoint.
+    */
+  @JSName("listAppInstallations")
+  var listAppInstallations_Original: `236` = js.native
+  /**
     * List the users blocked by an organization.
     */
   @JSName("listBlockedUsers")
-  var listBlockedUsers_Original: `236` = js.native
+  var listBlockedUsers_Original: `237` = js.native
   /**
     * List organizations for the authenticated user.
     *
@@ -90,21 +132,25 @@ trait AddOrUpdateMembership extends js.Object {
     * This only lists organizations that your authorization allows you to operate on in some way (e.g., you can list teams with `read:org` scope, you can publicize your organization membership with `user` scope, etc.). Therefore, this API requires at least `user` or `read:org` scope. OAuth requests with insufficient scope receive a `403 Forbidden` response.
     */
   @JSName("listForAuthenticatedUser")
-  var listForAuthenticatedUser_Original: `237` = js.native
+  var listForAuthenticatedUser_Original: `238` = js.native
   /**
     * List [public organization memberships](https://help.github.com/articles/publicizing-or-concealing-organization-membership) for the specified user.
     *
-    * This method only lists _public_ memberships, regardless of authentication. If you need to fetch all of the organization memberships (public and private) for the authenticated user, use the [List your organizations](https://developer.github.com/v3/orgs/#list-your-organizations) API instead.
+    * This method only lists _public_ memberships, regardless of authentication. If you need to fetch all of the organization memberships (public and private) for the authenticated user, use the [List organizations for the authenticated user](https://developer.github.com/v3/orgs/#list-organizations-for-the-authenticated-user) API instead.
     */
   @JSName("listForUser")
-  var listForUser_Original: `238` = js.native
+  var listForUser_Original: `239` = js.native
+  /**
+    * @deprecated octokit.orgs.listHooks() has been renamed to octokit.orgs.listWebhooks() (2020-06-04)
+    */
   @JSName("listHooks")
-  var listHooks_Original: `239` = js.native
+  var listHooks_Original: `240` = js.native
   /**
     * Lists all GitHub Apps in an organization. The installation count includes all GitHub Apps installed on repositories in the organization. You must be an organization owner with `admin:read` scope to use this endpoint.
+    * @deprecated octokit.orgs.listInstallations() has been renamed to octokit.orgs.listAppInstallations() (2020-06-04)
     */
   @JSName("listInstallations")
-  var listInstallations_Original: `240` = js.native
+  var listInstallations_Original: `236` = js.native
   /**
     * List all teams associated with an invitation. In order to see invitations in an organization, the authenticated user must be an organization owner.
     */
@@ -115,6 +161,11 @@ trait AddOrUpdateMembership extends js.Object {
     */
   @JSName("listMembers")
   var listMembers_Original: `242` = js.native
+  @JSName("listMembershipsForAuthenticatedUser")
+  var listMembershipsForAuthenticatedUser_Original: `243` = js.native
+  /**
+    * @deprecated octokit.orgs.listMemberships() has been renamed to octokit.orgs.listMembershipsForAuthenticatedUser() (2020-06-04)
+    */
   @JSName("listMemberships")
   var listMemberships_Original: `243` = js.native
   /**
@@ -132,6 +183,8 @@ trait AddOrUpdateMembership extends js.Object {
     */
   @JSName("listPublicMembers")
   var listPublicMembers_Original: `246` = js.native
+  @JSName("listWebhooks")
+  var listWebhooks_Original: `240` = js.native
   /**
     * Lists all organizations, in the order that they were created on GitHub.
     *
@@ -141,13 +194,20 @@ trait AddOrUpdateMembership extends js.Object {
   var list_Original: `235` = js.native
   /**
     * This will trigger a [ping event](https://developer.github.com/webhooks/#ping-event) to be sent to the hook.
+    * @deprecated octokit.orgs.pingHook() has been renamed to octokit.orgs.pingWebhook() (2020-06-04)
     */
   @JSName("pingHook")
   var pingHook_Original: `247` = js.native
   /**
+    * This will trigger a [ping event](https://developer.github.com/webhooks/#ping-event) to be sent to the hook.
+    */
+  @JSName("pingWebhook")
+  var pingWebhook_Original: `247` = js.native
+  /**
     * The user can publicize their own membership. (A user cannot publicize the membership for another user.)
     *
     * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
+    * @deprecated octokit.orgs.publicizeMembership() has been renamed to octokit.orgs.setPublicMembershipForAuthenticatedUser() (2020-06-04)
     */
   @JSName("publicizeMembership")
   var publicizeMembership_Original: `248` = js.native
@@ -161,6 +221,14 @@ trait AddOrUpdateMembership extends js.Object {
     *
     * If the specified user is an active member of the organization, this will remove them from the organization. If the specified user has been invited to the organization, this will cancel their invitation. The specified user will receive an email notification in both cases.
     */
+  @JSName("removeMembershipForUser")
+  var removeMembershipForUser_Original: `250` = js.native
+  /**
+    * In order to remove a user's membership with an organization, the authenticated user must be an organization owner.
+    *
+    * If the specified user is an active member of the organization, this will remove them from the organization. If the specified user has been invited to the organization, this will cancel their invitation. The specified user will receive an email notification in both cases.
+    * @deprecated octokit.orgs.removeMembership() has been renamed to octokit.orgs.removeMembershipForUser() (2020-06-04)
+    */
   @JSName("removeMembership")
   var removeMembership_Original: `250` = js.native
   /**
@@ -168,12 +236,44 @@ trait AddOrUpdateMembership extends js.Object {
     */
   @JSName("removeOutsideCollaborator")
   var removeOutsideCollaborator_Original: `251` = js.native
+  @JSName("removePublicMembershipForAuthenticatedUser")
+  var removePublicMembershipForAuthenticatedUser_Original: `226` = js.native
+  /**
+    * Only authenticated organization owners can add a member to the organization or update the member's role.
+    *
+    * *   If the authenticated user is _adding_ a member to the organization, the invited user will receive an email inviting them to the organization. The user's [membership status](https://developer.github.com/v3/orgs/members/#get-organization-membership-for-a-user) will be `pending` until they accept the invitation.
+    *
+    * *   Authenticated users can _update_ a user's membership by passing the `role` parameter. If the authenticated user changes a member's role to `admin`, the affected user will receive an email notifying them that they've been made an organization owner. If the authenticated user changes an owner's role to `member`, no email will be sent.
+    *
+    * **Rate limits**
+    *
+    * To prevent abuse, the authenticated user is limited to 50 organization invitations per 24 hour period. If the organization is more than one month old or on a paid plan, the limit is 500 invitations per 24 hour period.
+    */
+  @JSName("setMembershipForUser")
+  var setMembershipForUser_Original: `221` = js.native
+  /**
+    * The user can publicize their own membership. (A user cannot publicize the membership for another user.)
+    *
+    * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
+    */
+  @JSName("setPublicMembershipForAuthenticatedUser")
+  var setPublicMembershipForAuthenticatedUser_Original: `248` = js.native
   @JSName("unblockUser")
   var unblockUser_Original: `252` = js.native
+  /**
+    * @deprecated octokit.orgs.updateHook() has been renamed to octokit.orgs.updateWebhook() (2020-06-04)
+    */
   @JSName("updateHook")
   var updateHook_Original: `254` = js.native
+  @JSName("updateMembershipForAuthenticatedUser")
+  var updateMembershipForAuthenticatedUser_Original: `255` = js.native
+  /**
+    * @deprecated octokit.orgs.updateMembership() has been renamed to octokit.orgs.updateMembershipForAuthenticatedUser() (2020-06-04)
+    */
   @JSName("updateMembership")
   var updateMembership_Original: `255` = js.native
+  @JSName("updateWebhook")
+  var updateWebhook_Original: `254` = js.native
   /**
     * **Parameter Deprecation Notice:** GitHub will replace and discontinue `members_allowed_repository_creation_type` in favor of more granular permissions. The new input parameters are `members_can_create_public_repositories`, `members_can_create_private_repositories` for all organizations and `members_can_create_internal_repositories` for organizations associated with an enterprise account using GitHub Enterprise Cloud or GitHub Enterprise Server 2.20+. For more information, see the [blog post](https://developer.github.com/changes/2019-12-03-internal-visibility-changes).
     *
@@ -184,13 +284,14 @@ trait AddOrUpdateMembership extends js.Object {
   /**
     * Only authenticated organization owners can add a member to the organization or update the member's role.
     *
-    * *   If the authenticated user is _adding_ a member to the organization, the invited user will receive an email inviting them to the organization. The user's [membership status](https://developer.github.com/v3/orgs/members/#get-organization-membership) will be `pending` until they accept the invitation.
+    * *   If the authenticated user is _adding_ a member to the organization, the invited user will receive an email inviting them to the organization. The user's [membership status](https://developer.github.com/v3/orgs/members/#get-organization-membership-for-a-user) will be `pending` until they accept the invitation.
     *
     * *   Authenticated users can _update_ a user's membership by passing the `role` parameter. If the authenticated user changes a member's role to `admin`, the affected user will receive an email notifying them that they've been made an organization owner. If the authenticated user changes an owner's role to `member`, no email will be sent.
     *
     * **Rate limits**
     *
     * To prevent abuse, the authenticated user is limited to 50 organization invitations per 24 hour period. If the organization is more than one month old or on a paid plan, the limit is 500 invitations per 24 hour period.
+    * @deprecated octokit.orgs.addOrUpdateMembership() has been renamed to octokit.orgs.setMembershipForUser() (2020-06-04)
     */
   def addOrUpdateMembership(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/:org/memberships/:username']['response'] */ js.Any
@@ -232,6 +333,7 @@ trait AddOrUpdateMembership extends js.Object {
   ] = js.native
   /**
     * Check if a user is, publicly or privately, a member of the organization.
+    * @deprecated octokit.orgs.checkMembership() has been renamed to octokit.orgs.checkMembershipForUser() (2020-06-04)
     */
   def checkMembership(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/members/:username']['response'] */ js.Any
@@ -244,6 +346,23 @@ trait AddOrUpdateMembership extends js.Object {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/members/:username']['response'] */ js.Any
   ] = js.native
+  /**
+    * Check if a user is, publicly or privately, a member of the organization.
+    */
+  def checkMembershipForUser(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/members/:username']['response'] */ js.Any
+  ] = js.native
+  def checkMembershipForUser(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/members/:username']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/members/:username']['response'] */ js.Any
+  ] = js.native
+  /**
+    * @deprecated octokit.orgs.checkPublicMembership() has been renamed to octokit.orgs.checkPublicMembershipForUser() (2020-06-04)
+    */
   def checkPublicMembership(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/public_members/:username']['response'] */ js.Any
   ] = js.native
@@ -255,6 +374,20 @@ trait AddOrUpdateMembership extends js.Object {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/public_members/:username']['response'] */ js.Any
   ] = js.native
+  def checkPublicMembershipForUser(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/public_members/:username']['response'] */ js.Any
+  ] = js.native
+  def checkPublicMembershipForUser(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/public_members/:username']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/public_members/:username']['response'] */ js.Any
+  ] = js.native
+  /**
+    * @deprecated octokit.orgs.concealMembership() has been renamed to octokit.orgs.removePublicMembershipForAuthenticatedUser() (2020-06-04)
+    */
   def concealMembership(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/public_members/:username']['response'] */ js.Any
   ] = js.native
@@ -282,6 +415,7 @@ trait AddOrUpdateMembership extends js.Object {
   ] = js.native
   /**
     * Here's how you can create a hook that posts payloads in JSON format:
+    * @deprecated octokit.orgs.createHook() has been renamed to octokit.orgs.createWebhook() (2020-06-04)
     */
   def createHook(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/:org/hooks']['response'] */ js.Any
@@ -310,10 +444,38 @@ trait AddOrUpdateMembership extends js.Object {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/:org/invitations']['response'] */ js.Any
   ] = js.native
+  /**
+    * Here's how you can create a hook that posts payloads in JSON format:
+    */
+  def createWebhook(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/:org/hooks']['response'] */ js.Any
+  ] = js.native
+  def createWebhook(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/:org/hooks']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/:org/hooks']['response'] */ js.Any
+  ] = js.native
+  /**
+    * @deprecated octokit.orgs.deleteHook() has been renamed to octokit.orgs.deleteWebhook() (2020-06-04)
+    */
   def deleteHook(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/hooks/:hook_id']['response'] */ js.Any
   ] = js.native
   def deleteHook(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/hooks/:hook_id']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/hooks/:hook_id']['response'] */ js.Any
+  ] = js.native
+  def deleteWebhook(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/hooks/:hook_id']['response'] */ js.Any
+  ] = js.native
+  def deleteWebhook(
     params: RequestParameters with (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/hooks/:hook_id']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
@@ -337,6 +499,9 @@ trait AddOrUpdateMembership extends js.Object {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org']['response'] */ js.Any
   ] = js.native
+  /**
+    * @deprecated octokit.orgs.getHook() has been renamed to octokit.orgs.getWebhook() (2020-06-04)
+    */
   def getHook(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/hooks/:hook_id']['response'] */ js.Any
   ] = js.native
@@ -350,6 +515,7 @@ trait AddOrUpdateMembership extends js.Object {
   ] = js.native
   /**
     * In order to get a user's membership with an organization, the authenticated user must be an organization member.
+    * @deprecated octokit.orgs.getMembership() has been renamed to octokit.orgs.getMembershipForUser() (2020-06-04)
     */
   def getMembership(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/memberships/:username']['response'] */ js.Any
@@ -374,6 +540,31 @@ trait AddOrUpdateMembership extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/memberships/orgs/:org']['response'] */ js.Any
   ] = js.native
   /**
+    * In order to get a user's membership with an organization, the authenticated user must be an organization member.
+    */
+  def getMembershipForUser(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/memberships/:username']['response'] */ js.Any
+  ] = js.native
+  def getMembershipForUser(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/memberships/:username']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/memberships/:username']['response'] */ js.Any
+  ] = js.native
+  def getWebhook(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/hooks/:hook_id']['response'] */ js.Any
+  ] = js.native
+  def getWebhook(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/hooks/:hook_id']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/hooks/:hook_id']['response'] */ js.Any
+  ] = js.native
+  /**
     * Lists all organizations, in the order that they were created on GitHub.
     *
     * **Note:** Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://developer.github.com/v3/#link-header) to get the URL for the next page of organizations.
@@ -388,6 +579,20 @@ trait AddOrUpdateMembership extends js.Object {
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /organizations']['response'] */ js.Any
+  ] = js.native
+  /**
+    * Lists all GitHub Apps in an organization. The installation count includes all GitHub Apps installed on repositories in the organization. You must be an organization owner with `admin:read` scope to use this endpoint.
+    */
+  def listAppInstallations(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/installations']['response'] */ js.Any
+  ] = js.native
+  def listAppInstallations(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/installations']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/installations']['response'] */ js.Any
   ] = js.native
   /**
     * List the users blocked by an organization.
@@ -424,7 +629,7 @@ trait AddOrUpdateMembership extends js.Object {
   /**
     * List [public organization memberships](https://help.github.com/articles/publicizing-or-concealing-organization-membership) for the specified user.
     *
-    * This method only lists _public_ memberships, regardless of authentication. If you need to fetch all of the organization memberships (public and private) for the authenticated user, use the [List your organizations](https://developer.github.com/v3/orgs/#list-your-organizations) API instead.
+    * This method only lists _public_ memberships, regardless of authentication. If you need to fetch all of the organization memberships (public and private) for the authenticated user, use the [List organizations for the authenticated user](https://developer.github.com/v3/orgs/#list-organizations-for-the-authenticated-user) API instead.
     */
   def listForUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /users/:username/orgs']['response'] */ js.Any
@@ -437,6 +642,9 @@ trait AddOrUpdateMembership extends js.Object {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /users/:username/orgs']['response'] */ js.Any
   ] = js.native
+  /**
+    * @deprecated octokit.orgs.listHooks() has been renamed to octokit.orgs.listWebhooks() (2020-06-04)
+    */
   def listHooks(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/hooks']['response'] */ js.Any
   ] = js.native
@@ -450,6 +658,7 @@ trait AddOrUpdateMembership extends js.Object {
   ] = js.native
   /**
     * Lists all GitHub Apps in an organization. The installation count includes all GitHub Apps installed on repositories in the organization. You must be an organization owner with `admin:read` scope to use this endpoint.
+    * @deprecated octokit.orgs.listInstallations() has been renamed to octokit.orgs.listAppInstallations() (2020-06-04)
     */
   def listInstallations(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/installations']['response'] */ js.Any
@@ -490,10 +699,24 @@ trait AddOrUpdateMembership extends js.Object {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/members']['response'] */ js.Any
   ] = js.native
+  /**
+    * @deprecated octokit.orgs.listMemberships() has been renamed to octokit.orgs.listMembershipsForAuthenticatedUser() (2020-06-04)
+    */
   def listMemberships(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/memberships/orgs']['response'] */ js.Any
   ] = js.native
   def listMemberships(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/memberships/orgs']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/memberships/orgs']['response'] */ js.Any
+  ] = js.native
+  def listMembershipsForAuthenticatedUser(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/memberships/orgs']['response'] */ js.Any
+  ] = js.native
+  def listMembershipsForAuthenticatedUser(
     params: RequestParameters with (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/memberships/orgs']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
@@ -543,8 +766,20 @@ trait AddOrUpdateMembership extends js.Object {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/public_members']['response'] */ js.Any
   ] = js.native
+  def listWebhooks(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/hooks']['response'] */ js.Any
+  ] = js.native
+  def listWebhooks(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/hooks']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/hooks']['response'] */ js.Any
+  ] = js.native
   /**
     * This will trigger a [ping event](https://developer.github.com/webhooks/#ping-event) to be sent to the hook.
+    * @deprecated octokit.orgs.pingHook() has been renamed to octokit.orgs.pingWebhook() (2020-06-04)
     */
   def pingHook(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/:org/hooks/:hook_id/pings']['response'] */ js.Any
@@ -558,9 +793,24 @@ trait AddOrUpdateMembership extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/:org/hooks/:hook_id/pings']['response'] */ js.Any
   ] = js.native
   /**
+    * This will trigger a [ping event](https://developer.github.com/webhooks/#ping-event) to be sent to the hook.
+    */
+  def pingWebhook(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/:org/hooks/:hook_id/pings']['response'] */ js.Any
+  ] = js.native
+  def pingWebhook(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/:org/hooks/:hook_id/pings']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/:org/hooks/:hook_id/pings']['response'] */ js.Any
+  ] = js.native
+  /**
     * The user can publicize their own membership. (A user cannot publicize the membership for another user.)
     *
     * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
+    * @deprecated octokit.orgs.publicizeMembership() has been renamed to octokit.orgs.setPublicMembershipForAuthenticatedUser() (2020-06-04)
     */
   def publicizeMembership(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/:org/public_members/:username']['response'] */ js.Any
@@ -591,11 +841,28 @@ trait AddOrUpdateMembership extends js.Object {
     * In order to remove a user's membership with an organization, the authenticated user must be an organization owner.
     *
     * If the specified user is an active member of the organization, this will remove them from the organization. If the specified user has been invited to the organization, this will cancel their invitation. The specified user will receive an email notification in both cases.
+    * @deprecated octokit.orgs.removeMembership() has been renamed to octokit.orgs.removeMembershipForUser() (2020-06-04)
     */
   def removeMembership(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/memberships/:username']['response'] */ js.Any
   ] = js.native
   def removeMembership(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/memberships/:username']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/memberships/:username']['response'] */ js.Any
+  ] = js.native
+  /**
+    * In order to remove a user's membership with an organization, the authenticated user must be an organization owner.
+    *
+    * If the specified user is an active member of the organization, this will remove them from the organization. If the specified user has been invited to the organization, this will cancel their invitation. The specified user will receive an email notification in both cases.
+    */
+  def removeMembershipForUser(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/memberships/:username']['response'] */ js.Any
+  ] = js.native
+  def removeMembershipForUser(
     params: RequestParameters with (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/memberships/:username']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
@@ -616,6 +883,55 @@ trait AddOrUpdateMembership extends js.Object {
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/outside_collaborators/:username']['response'] */ js.Any
+  ] = js.native
+  def removePublicMembershipForAuthenticatedUser(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/public_members/:username']['response'] */ js.Any
+  ] = js.native
+  def removePublicMembershipForAuthenticatedUser(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/public_members/:username']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/public_members/:username']['response'] */ js.Any
+  ] = js.native
+  /**
+    * Only authenticated organization owners can add a member to the organization or update the member's role.
+    *
+    * *   If the authenticated user is _adding_ a member to the organization, the invited user will receive an email inviting them to the organization. The user's [membership status](https://developer.github.com/v3/orgs/members/#get-organization-membership-for-a-user) will be `pending` until they accept the invitation.
+    *
+    * *   Authenticated users can _update_ a user's membership by passing the `role` parameter. If the authenticated user changes a member's role to `admin`, the affected user will receive an email notifying them that they've been made an organization owner. If the authenticated user changes an owner's role to `member`, no email will be sent.
+    *
+    * **Rate limits**
+    *
+    * To prevent abuse, the authenticated user is limited to 50 organization invitations per 24 hour period. If the organization is more than one month old or on a paid plan, the limit is 500 invitations per 24 hour period.
+    */
+  def setMembershipForUser(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/:org/memberships/:username']['response'] */ js.Any
+  ] = js.native
+  def setMembershipForUser(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/:org/memberships/:username']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/:org/memberships/:username']['response'] */ js.Any
+  ] = js.native
+  /**
+    * The user can publicize their own membership. (A user cannot publicize the membership for another user.)
+    *
+    * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
+    */
+  def setPublicMembershipForAuthenticatedUser(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/:org/public_members/:username']['response'] */ js.Any
+  ] = js.native
+  def setPublicMembershipForAuthenticatedUser(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/:org/public_members/:username']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/:org/public_members/:username']['response'] */ js.Any
   ] = js.native
   def unblockUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/blocks/:username']['response'] */ js.Any
@@ -644,6 +960,9 @@ trait AddOrUpdateMembership extends js.Object {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /orgs/:org']['response'] */ js.Any
   ] = js.native
+  /**
+    * @deprecated octokit.orgs.updateHook() has been renamed to octokit.orgs.updateWebhook() (2020-06-04)
+    */
   def updateHook(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /orgs/:org/hooks/:hook_id']['response'] */ js.Any
   ] = js.native
@@ -655,6 +974,9 @@ trait AddOrUpdateMembership extends js.Object {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /orgs/:org/hooks/:hook_id']['response'] */ js.Any
   ] = js.native
+  /**
+    * @deprecated octokit.orgs.updateMembership() has been renamed to octokit.orgs.updateMembershipForAuthenticatedUser() (2020-06-04)
+    */
   def updateMembership(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /user/memberships/orgs/:org']['response'] */ js.Any
   ] = js.native
@@ -665,6 +987,28 @@ trait AddOrUpdateMembership extends js.Object {
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /user/memberships/orgs/:org']['response'] */ js.Any
+  ] = js.native
+  def updateMembershipForAuthenticatedUser(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /user/memberships/orgs/:org']['response'] */ js.Any
+  ] = js.native
+  def updateMembershipForAuthenticatedUser(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /user/memberships/orgs/:org']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /user/memberships/orgs/:org']['response'] */ js.Any
+  ] = js.native
+  def updateWebhook(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /orgs/:org/hooks/:hook_id']['response'] */ js.Any
+  ] = js.native
+  def updateWebhook(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /orgs/:org/hooks/:hook_id']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /orgs/:org/hooks/:hook_id']['response'] */ js.Any
   ] = js.native
 }
 

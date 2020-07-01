@@ -74,13 +74,14 @@ object screen extends js.Object {
   var queryByTestId: BoundFunction[QueryByBoundAttribute] = js.native
   var queryByText: BoundFunction[QueryByText_] = js.native
   var queryByTitle: BoundFunction[QueryByBoundAttribute] = js.native
-  def debug(element: js.Array[Element | HTMLDocument]): Unit = js.native
-  def debug(element: js.Array[Element | HTMLDocument], maxLength: Double): Unit = js.native
-  def debug(element: js.Array[Element | HTMLDocument], maxLength: Double, options: OptionsReceived): Unit = js.native
   /**
     * Convenience function for `pretty-dom` which also allows an array
     * of elements
     */
+  def debug(): Unit = js.native
+  def debug(element: js.Array[Element | HTMLDocument]): Unit = js.native
+  def debug(element: js.Array[Element | HTMLDocument], maxLength: Double): Unit = js.native
+  def debug(element: js.Array[Element | HTMLDocument], maxLength: Double, options: OptionsReceived): Unit = js.native
   def debug(element: Element): Unit = js.native
   def debug(element: Element, maxLength: Double): Unit = js.native
   def debug(element: Element, maxLength: Double, options: OptionsReceived): Unit = js.native

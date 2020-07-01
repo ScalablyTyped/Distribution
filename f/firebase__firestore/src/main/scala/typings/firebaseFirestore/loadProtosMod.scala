@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/platform_node/load_protos", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/platform/node/load_protos", JSImport.Namespace)
 @js.native
 object loadProtosMod extends js.Object {
   val protoLoaderOptions: IConversionOptions = js.native

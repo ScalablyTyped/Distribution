@@ -28,6 +28,7 @@ trait Moment
     */
   def add(unit: DurationConstructor, amount: Double): Moment = js.native
   def calendar(): String = js.native
+  def calendar(formats: CalendarSpec): String = js.native
   def calendar(time: MomentInput): String = js.native
   def calendar(time: MomentInput, formats: CalendarSpec): String = js.native
   def creationData(): MomentCreationData = js.native

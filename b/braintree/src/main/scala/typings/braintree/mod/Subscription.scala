@@ -24,7 +24,7 @@ class Subscription () extends js.Object {
   var merchantAccountId: String = js.native
   var neverExpires: js.UndefOr[Boolean] = js.native
   var nextBillAmount: String = js.native
-  var nextBillingDate: Date = js.native
+  var nextBillingDate: String = js.native
   var nextBillingPeriodAmount: String = js.native
   var numberOfBillingCycles: js.UndefOr[Double] = js.native
   var paidThroughDate: Date = js.native

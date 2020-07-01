@@ -1,17 +1,17 @@
 package typings.googleapis.customsearchV1Mod.customsearchV1
 
-import typings.googleapis.AnonHeightSource
-import typings.googleapis.AnonHtmlTitle
+import typings.googleapis.anon.HeightSource
+import typings.googleapis.anon.HtmlTitle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait SchemaPromotion extends js.Object {
-  var bodyLines: js.UndefOr[js.Array[AnonHtmlTitle]] = js.native
+  var bodyLines: js.UndefOr[js.Array[HtmlTitle]] = js.native
   var displayLink: js.UndefOr[String] = js.native
   var htmlTitle: js.UndefOr[String] = js.native
-  var image: js.UndefOr[AnonHeightSource] = js.native
+  var image: js.UndefOr[HeightSource] = js.native
   var link: js.UndefOr[String] = js.native
   var title: js.UndefOr[String] = js.native
 }
@@ -19,10 +19,10 @@ trait SchemaPromotion extends js.Object {
 object SchemaPromotion {
   @scala.inline
   def apply(
-    bodyLines: js.Array[AnonHtmlTitle] = null,
+    bodyLines: js.Array[HtmlTitle] = null,
     displayLink: String = null,
     htmlTitle: String = null,
-    image: AnonHeightSource = null,
+    image: HeightSource = null,
     link: String = null,
     title: String = null
   ): SchemaPromotion = {

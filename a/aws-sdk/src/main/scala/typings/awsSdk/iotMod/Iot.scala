@@ -2216,12 +2216,12 @@ trait Iot extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ RemoveThingFromBillingGroupResponse, Unit]
   ): Request[RemoveThingFromBillingGroupResponse, AWSError] = js.native
   /**
-    * Remove the specified thing from the specified group.
+    * Remove the specified thing from the specified group. You must specify either a thingGroupArn or a thingGroupName to identify the thing group and either a thingArn or a thingName to identify the thing to remove from the thing group. 
     */
   def removeThingFromThingGroup(): Request[RemoveThingFromThingGroupResponse, AWSError] = js.native
   def removeThingFromThingGroup(callback: js.Function2[/* err */ AWSError, /* data */ RemoveThingFromThingGroupResponse, Unit]): Request[RemoveThingFromThingGroupResponse, AWSError] = js.native
   /**
-    * Remove the specified thing from the specified group.
+    * Remove the specified thing from the specified group. You must specify either a thingGroupArn or a thingGroupName to identify the thing group and either a thingArn or a thingName to identify the thing to remove from the thing group. 
     */
   def removeThingFromThingGroup(params: RemoveThingFromThingGroupRequest): Request[RemoveThingFromThingGroupResponse, AWSError] = js.native
   def removeThingFromThingGroup(

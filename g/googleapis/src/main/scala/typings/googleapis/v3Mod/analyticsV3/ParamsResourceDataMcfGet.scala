@@ -78,7 +78,7 @@ object ParamsResourceDataMcfGet {
     filters: String = null,
     ids: String = null,
     key: String = null,
-    `max-results`: Int | Double = null,
+    `max-results`: js.UndefOr[Double] = js.undefined,
     metrics: String = null,
     oauth_token: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
@@ -86,7 +86,7 @@ object ParamsResourceDataMcfGet {
     samplingLevel: String = null,
     sort: String = null,
     `start-date`: String = null,
-    `start-index`: Int | Double = null,
+    `start-index`: js.UndefOr[Double] = js.undefined,
     userIp: String = null
   ): ParamsResourceDataMcfGet = {
     val __obj = js.Dynamic.literal()
@@ -98,15 +98,15 @@ object ParamsResourceDataMcfGet {
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (`max-results` != null) __obj.updateDynamic("max-results")(`max-results`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`max-results`)) __obj.updateDynamic("max-results")(`max-results`.get.asInstanceOf[js.Any])
     if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (samplingLevel != null) __obj.updateDynamic("samplingLevel")(samplingLevel.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (`start-date` != null) __obj.updateDynamic("start-date")(`start-date`.asInstanceOf[js.Any])
-    if (`start-index` != null) __obj.updateDynamic("start-index")(`start-index`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`start-index`)) __obj.updateDynamic("start-index")(`start-index`.get.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceDataMcfGet]
   }

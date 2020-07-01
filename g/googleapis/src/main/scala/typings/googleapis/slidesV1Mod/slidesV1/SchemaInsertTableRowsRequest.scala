@@ -36,13 +36,13 @@ object SchemaInsertTableRowsRequest {
   def apply(
     cellLocation: SchemaTableCellLocation = null,
     insertBelow: js.UndefOr[Boolean] = js.undefined,
-    number: Int | Double = null,
+    number: js.UndefOr[Double] = js.undefined,
     tableObjectId: String = null
   ): SchemaInsertTableRowsRequest = {
     val __obj = js.Dynamic.literal()
     if (cellLocation != null) __obj.updateDynamic("cellLocation")(cellLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertBelow)) __obj.updateDynamic("insertBelow")(insertBelow.asInstanceOf[js.Any])
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (!js.isUndefined(insertBelow)) __obj.updateDynamic("insertBelow")(insertBelow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.get.asInstanceOf[js.Any])
     if (tableObjectId != null) __obj.updateDynamic("tableObjectId")(tableObjectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInsertTableRowsRequest]
   }

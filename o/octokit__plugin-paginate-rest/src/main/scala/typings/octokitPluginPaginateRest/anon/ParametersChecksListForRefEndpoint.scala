@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 
 trait ParametersChecksListForRefEndpoint extends js.Object {
   var parameters: ChecksListForRefEndpoint
-  var response: OctokitResponse[ChecksListForRefResponseData] with `7`
+  var response: OctokitResponse[ChecksListForRefResponseData] with `9`
 }
 
 object ParametersChecksListForRefEndpoint {
   @scala.inline
   def apply(
     parameters: ChecksListForRefEndpoint,
-    response: OctokitResponse[ChecksListForRefResponseData] with `7`
+    response: OctokitResponse[ChecksListForRefResponseData] with `9`
   ): ParametersChecksListForRefEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersChecksListForRefEndpoint]

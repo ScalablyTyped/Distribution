@@ -13,7 +13,7 @@ trait SortColumn[T /* <: js.Object */] extends js.Object {
 
 object SortColumn {
   @scala.inline
-  def apply[T](sortColumn: ColumnDescription[T, _], sortOrder: SortOrder): SortColumn[T] = {
+  def apply[/* <: js.Object */ T](sortColumn: ColumnDescription[T, _], sortOrder: SortOrder): SortColumn[T] = {
     val __obj = js.Dynamic.literal(sortColumn = sortColumn.asInstanceOf[js.Any], sortOrder = sortOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortColumn[T]]
   }

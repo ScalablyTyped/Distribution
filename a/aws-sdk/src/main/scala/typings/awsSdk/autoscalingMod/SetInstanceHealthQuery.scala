@@ -15,7 +15,7 @@ trait SetInstanceHealthQuery extends js.Object {
     */
   var InstanceId: XmlStringMaxLen19 = js.native
   /**
-    * If the Auto Scaling group of the specified instance has a HealthCheckGracePeriod specified for the group, by default, this call respects the grace period. Set this to False, to have the call not respect the grace period associated with the group. For more information about the health check grace period, see CreateAutoScalingGroup.
+    * If the Auto Scaling group of the specified instance has a HealthCheckGracePeriod specified for the group, by default, this call respects the grace period. Set this to False, to have the call not respect the grace period associated with the group. For more information about the health check grace period, see CreateAutoScalingGroup in the Amazon EC2 Auto Scaling API Reference.
     */
   var ShouldRespectGracePeriod: js.UndefOr[typings.awsSdk.autoscalingMod.ShouldRespectGracePeriod] = js.native
 }

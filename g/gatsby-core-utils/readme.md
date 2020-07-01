@@ -1,7 +1,7 @@
 
 # Scala.js typings for gatsby-core-utils
 
-Typings are for version 1.3.2
+Typings are for version 1.3.8
 
 ## Library description:
 A collection of gatsby utils used in different gatsby packages

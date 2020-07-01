@@ -6,7 +6,7 @@ import typings.ionicCore.componentsMod.global.HTMLIonToastElement
 import typings.ionicCore.mod.Color
 import typings.ionicCore.mod.Mode
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
-import typings.ionicCore.typesMod.IonicSafeString
+import typings.ionicCore.sanitizationMod.IonicSafeString
 import typings.ionicReact.ionToastMod.ToastButton
 import typings.ionicReact.ionicReactStrings.bottom
 import typings.ionicReact.ionicReactStrings.middle

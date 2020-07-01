@@ -23,7 +23,7 @@ trait IOptions[T /* <: Message */] extends js.Object {
 
 object IOptions {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.jupyterlabServices.messagesMod.Message */ T](
     channel: /* import warning: importer.ImportType#apply Failed type conversion: T['channel'] */ js.Any,
     content: /* import warning: importer.ImportType#apply Failed type conversion: T['content'] */ js.Any,
     msgType: /* import warning: importer.ImportType#apply Failed type conversion: T['header']['msg_type'] */ js.Any,

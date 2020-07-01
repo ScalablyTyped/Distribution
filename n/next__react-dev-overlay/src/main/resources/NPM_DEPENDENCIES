@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@next/react-dev-overlay" : "9.4.2"
+      "@next/react-dev-overlay" : "9.4.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@next/react-dev-overlay" : "9.4.2"
+      "@next/react-dev-overlay" : "9.4.4"
     }
   ],
   "compile-devDependencies" : [

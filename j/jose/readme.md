@@ -1,7 +1,7 @@
 
 # Scala.js typings for jose
 
-Typings are for version 1.27.0
+Typings are for version 1.27.1
 
 ## Library description:
 JSON Web Almost Everything - JWA, JWS, JWE, JWK, JWT, JWKS for Node.js with minimal dependencies

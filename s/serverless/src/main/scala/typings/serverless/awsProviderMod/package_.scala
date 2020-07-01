@@ -9,6 +9,7 @@ package object awsProviderMod {
     typings.serverless.awsProviderMod.CognitoAuthorizer | typings.serverless.awsProviderMod.OidcAuthorizer | typings.serverless.awsProviderMod.JwtAuthorizer
   ]
   type CloudFormationResources = org.scalablytyped.runtime.StringDictionary[typings.serverless.awsProviderMod.CloudFormationResource]
+  type Custom = org.scalablytyped.runtime.StringDictionary[js.Any]
   type Detail = org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
   type Environment = org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type Functions = org.scalablytyped.runtime.StringDictionary[typings.serverless.awsProviderMod.AwsFunction]

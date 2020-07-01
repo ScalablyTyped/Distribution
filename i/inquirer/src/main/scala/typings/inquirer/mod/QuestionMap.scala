@@ -51,7 +51,7 @@ trait QuestionMap[T /* <: Answers */] extends js.Object {
 
 object QuestionMap {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.inquirer.mod.Answers */ T](
     checkbox: CheckboxQuestion[T],
     confirm: ConfirmQuestion[T],
     editor: EditorQuestion[T],

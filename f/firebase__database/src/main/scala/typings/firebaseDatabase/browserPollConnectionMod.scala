@@ -17,16 +17,25 @@ object browserPollConnectionMod extends js.Object {
   @js.native
   class BrowserPollConnection protected () extends Transport {
     /**
-      * @param {string} connId An identifier for this connection, used for logging
-      * @param {RepoInfo} repoInfo The info for the endpoint to send data to.
-      * @param {string=} transportSessionId Optional transportSessionid if we are reconnecting for an existing
+      * @param connId An identifier for this connection, used for logging
+      * @param repoInfo The info for the endpoint to send data to.
+      * @param applicationId The Firebase App ID for this project.
+      * @param transportSessionId Optional transportSessionid if we are reconnecting for an existing
       *                                         transport session
-      * @param {string=}  lastSessionId Optional lastSessionId if the PersistentConnection has already created a
+      * @param lastSessionId Optional lastSessionId if the PersistentConnection has already created a
       *                                     connection previously
       */
     def this(connId: String, repoInfo: RepoInfo) = this()
-    def this(connId: String, repoInfo: RepoInfo, transportSessionId: String) = this()
-    def this(connId: String, repoInfo: RepoInfo, transportSessionId: String, lastSessionId: String) = this()
+    def this(connId: String, repoInfo: RepoInfo, applicationId: String) = this()
+    def this(connId: String, repoInfo: RepoInfo, applicationId: String, transportSessionId: String) = this()
+    def this(
+      connId: String,
+      repoInfo: RepoInfo,
+      applicationId: String,
+      transportSessionId: String,
+      lastSessionId: String
+    ) = this()
+    var applicationId: js.UndefOr[js.Any] = js.native
     var connectTimeoutTimer_ : js.Any = js.native
     var curSegmentNum: Double = js.native
     var everConnected_ : js.Any = js.native

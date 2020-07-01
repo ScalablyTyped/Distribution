@@ -36,7 +36,7 @@ object SchemaSourceResultCount {
     source: SchemaSource = null
   ): SchemaSourceResultCount = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasMoreResults)) __obj.updateDynamic("hasMoreResults")(hasMoreResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasMoreResults)) __obj.updateDynamic("hasMoreResults")(hasMoreResults.get.asInstanceOf[js.Any])
     if (resultCountEstimate != null) __obj.updateDynamic("resultCountEstimate")(resultCountEstimate.asInstanceOf[js.Any])
     if (resultCountExact != null) __obj.updateDynamic("resultCountExact")(resultCountExact.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])

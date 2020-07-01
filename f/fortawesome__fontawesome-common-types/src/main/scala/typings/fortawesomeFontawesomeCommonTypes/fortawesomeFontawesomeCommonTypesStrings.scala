@@ -1811,6 +1811,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   sealed trait `deer-rudolph` extends IconName
   
   @js.native
+  sealed trait deezer extends IconName
+  
+  @js.native
   sealed trait delicious extends IconName
   
   @js.native
@@ -2076,6 +2079,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   
   @js.native
   sealed trait edge extends IconName
+  
+  @js.native
+  sealed trait `edge-legacy` extends IconName
   
   @js.native
   sealed trait edit extends IconName
@@ -2820,6 +2826,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   
   @js.native
   sealed trait `google-drive` extends IconName
+  
+  @js.native
+  sealed trait `google-pay` extends IconName
   
   @js.native
   sealed trait `google-play` extends IconName
@@ -4919,6 +4928,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   sealed trait `rupee-sign` extends IconName
   
   @js.native
+  sealed trait rust extends IconName
+  
+  @js.native
   sealed trait rv extends IconName
   
   @js.native
@@ -6017,6 +6029,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   sealed trait `ticket-alt` extends IconName
   
   @js.native
+  sealed trait tiktok extends IconName
+  
+  @js.native
   sealed trait tilde extends IconName
   
   @js.native
@@ -6351,6 +6366,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   
   @js.native
   sealed trait `unlock-alt` extends IconName
+  
+  @js.native
+  sealed trait unsplash extends IconName
   
   @js.native
   sealed trait untappd extends IconName
@@ -8102,6 +8120,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   @scala.inline
   def `deer-rudolph`: `deer-rudolph` = "deer-rudolph".asInstanceOf[`deer-rudolph`]
   @scala.inline
+  def deezer: deezer = "deezer".asInstanceOf[deezer]
+  @scala.inline
   def delicious: delicious = "delicious".asInstanceOf[delicious]
   @scala.inline
   def democrat: democrat = "democrat".asInstanceOf[democrat]
@@ -8279,6 +8299,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   def `eclipse-alt`: `eclipse-alt` = "eclipse-alt".asInstanceOf[`eclipse-alt`]
   @scala.inline
   def edge: edge = "edge".asInstanceOf[edge]
+  @scala.inline
+  def `edge-legacy`: `edge-legacy` = "edge-legacy".asInstanceOf[`edge-legacy`]
   @scala.inline
   def edit: edit = "edit".asInstanceOf[edit]
   @scala.inline
@@ -8775,6 +8797,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   def google: google = "google".asInstanceOf[google]
   @scala.inline
   def `google-drive`: `google-drive` = "google-drive".asInstanceOf[`google-drive`]
+  @scala.inline
+  def `google-pay`: `google-pay` = "google-pay".asInstanceOf[`google-pay`]
   @scala.inline
   def `google-play`: `google-play` = "google-play".asInstanceOf[`google-play`]
   @scala.inline
@@ -10174,6 +10198,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   @scala.inline
   def `rupee-sign`: `rupee-sign` = "rupee-sign".asInstanceOf[`rupee-sign`]
   @scala.inline
+  def rust: rust = "rust".asInstanceOf[rust]
+  @scala.inline
   def rv: rv = "rv".asInstanceOf[rv]
   @scala.inline
   def sack: sack = "sack".asInstanceOf[sack]
@@ -10906,6 +10932,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   @scala.inline
   def `ticket-alt`: `ticket-alt` = "ticket-alt".asInstanceOf[`ticket-alt`]
   @scala.inline
+  def tiktok: tiktok = "tiktok".asInstanceOf[tiktok]
+  @scala.inline
   def tilde: tilde = "tilde".asInstanceOf[tilde]
   @scala.inline
   def times: times = "times".asInstanceOf[times]
@@ -11129,6 +11157,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   def unlock: unlock = "unlock".asInstanceOf[unlock]
   @scala.inline
   def `unlock-alt`: `unlock-alt` = "unlock-alt".asInstanceOf[`unlock-alt`]
+  @scala.inline
+  def unsplash: unsplash = "unsplash".asInstanceOf[unsplash]
   @scala.inline
   def untappd: untappd = "untappd".asInstanceOf[untappd]
   @scala.inline

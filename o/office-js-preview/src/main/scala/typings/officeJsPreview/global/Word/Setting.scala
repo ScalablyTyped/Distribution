@@ -27,13 +27,3 @@ class Setting ()
   override var isNullObject: Boolean = js.native
 }
 
-/* static members */
-@JSGlobal("Word.Setting")
-@js.native
-object Setting extends js.Object {
-  var DateJSONPrefix: js.Any = js.native
-  var DateJSONSuffix: js.Any = js.native
-  def _replaceDateWithStringDate(value: js.Any): js.Any = js.native
-  /* private */ def replaceStringDateWithDate(value: js.Any): js.Any = js.native
-}
-

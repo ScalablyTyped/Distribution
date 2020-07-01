@@ -2,6 +2,7 @@ package typings.antd.anon
 
 import typings.antd.cascaderMod.CascaderOptionType
 import typings.antd.cascaderMod.CascaderProps
+import typings.antd.cascaderMod.CascaderValueType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +14,7 @@ trait PartialCascaderState extends js.Object {
   var inputValue: js.UndefOr[String] = js.undefined
   var popupVisible: js.UndefOr[Boolean] = js.undefined
   var prevProps: js.UndefOr[CascaderProps] = js.undefined
-  var value: js.UndefOr[js.Array[String]] = js.undefined
+  var value: js.UndefOr[CascaderValueType] = js.undefined
 }
 
 object PartialCascaderState {
@@ -24,7 +25,7 @@ object PartialCascaderState {
     inputValue: String = null,
     popupVisible: js.UndefOr[Boolean] = js.undefined,
     prevProps: CascaderProps = null,
-    value: js.Array[String] = null
+    value: CascaderValueType = null
   ): PartialCascaderState = {
     val __obj = js.Dynamic.literal()
     if (flattenOptions != null) __obj.updateDynamic("flattenOptions")(flattenOptions.asInstanceOf[js.Any])

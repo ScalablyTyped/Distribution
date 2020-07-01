@@ -14,7 +14,7 @@ trait As[T /* <: ElementType[_] */] extends js.Object {
 
 object As {
   @scala.inline
-  def apply[T](as: T = null): As[T] = {
+  def apply[/* <: typings.react.mod.ElementType[_] */ T](as: T = null): As[T] = {
     val __obj = js.Dynamic.literal()
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     __obj.asInstanceOf[As[T]]

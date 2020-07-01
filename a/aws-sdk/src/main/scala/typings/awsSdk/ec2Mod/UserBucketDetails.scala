@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UserBucketDetails extends js.Object {
   /**
-    * The S3 bucket from which the disk image was created.
+    * The Amazon S3 bucket from which the disk image was created.
     */
   var S3Bucket: js.UndefOr[String] = js.native
   /**

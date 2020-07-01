@@ -11,7 +11,7 @@ trait CreateLedgerRequest extends js.Object {
     */
   var DeletionProtection: js.UndefOr[typings.awsSdk.qldbMod.DeletionProtection] = js.native
   /**
-    * The name of the ledger that you want to create. The name must be unique among all of your ledgers in the current AWS Region.
+    * The name of the ledger that you want to create. The name must be unique among all of your ledgers in the current AWS Region. Naming constraints for ledger names are defined in Quotas in Amazon QLDB in the Amazon QLDB Developer Guide.
     */
   var Name: LedgerName = js.native
   /**

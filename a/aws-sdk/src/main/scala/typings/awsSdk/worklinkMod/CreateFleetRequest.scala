@@ -18,6 +18,10 @@ trait CreateFleetRequest extends js.Object {
     * The option to optimize for better performance by routing traffic through the closest AWS Region to users, which may be outside of your home Region.
     */
   var OptimizeForEndUserLocation: js.UndefOr[Boolean] = js.native
+  /**
+    *  The tags to add to the resource. A tag is a key-value pair.
+    */
+  var Tags: js.UndefOr[TagMap] = js.native
 }
 
 object CreateFleetRequest {
@@ -25,11 +29,13 @@ object CreateFleetRequest {
   def apply(
     FleetName: FleetName,
     DisplayName: DisplayName = null,
-    OptimizeForEndUserLocation: js.UndefOr[Boolean] = js.undefined
+    OptimizeForEndUserLocation: js.UndefOr[Boolean] = js.undefined,
+    Tags: TagMap = null
   ): CreateFleetRequest = {
     val __obj = js.Dynamic.literal(FleetName = FleetName.asInstanceOf[js.Any])
     if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
     if (!js.isUndefined(OptimizeForEndUserLocation)) __obj.updateDynamic("OptimizeForEndUserLocation")(OptimizeForEndUserLocation.get.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFleetRequest]
   }
 }

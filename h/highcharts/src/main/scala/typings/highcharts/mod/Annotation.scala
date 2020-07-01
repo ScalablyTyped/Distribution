@@ -21,10 +21,6 @@ class Annotation protected () extends js.Object {
     */
   def this(chart: Chart_, userOptions: AnnotationsOptions) = this()
   /**
-    * The chart that the annotation belongs to.
-    */
-  var chart: Chart_ = js.native
-  /**
     * The group svg element.
     */
   var group: SVGElement = js.native
@@ -36,10 +32,6 @@ class Annotation protected () extends js.Object {
     * The options for the annotations.
     */
   var options: AnnotationsOptions = js.native
-  /**
-    * The array of points which defines the annotation.
-    */
-  var points: js.Array[Point] = js.native
   /**
     * The group svg element of the annotation's shapes.
     */

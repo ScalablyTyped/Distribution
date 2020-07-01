@@ -16,6 +16,7 @@ trait DropdownProps extends js.Object {
   var animation: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnimationType */ js.Any
   ] = js.undefined
+  var arrow: js.UndefOr[Boolean] = js.undefined
   var children: js.UndefOr[js.Any] = js.undefined
   var getPopupContainer: js.UndefOr[js.Any] = js.undefined
   var hideAction: js.UndefOr[
@@ -55,6 +56,7 @@ object DropdownProps {
     align: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any = null,
     alignPoint: js.UndefOr[Boolean] = js.undefined,
     animation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnimationType */ js.Any = null,
+    arrow: js.UndefOr[Boolean] = js.undefined,
     children: js.Any = null,
     getPopupContainer: js.Any = null,
     hideAction: js.Array[
@@ -83,6 +85,7 @@ object DropdownProps {
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (!js.isUndefined(alignPoint)) __obj.updateDynamic("alignPoint")(alignPoint.get.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrow)) __obj.updateDynamic("arrow")(arrow.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(getPopupContainer.asInstanceOf[js.Any])
     if (hideAction != null) __obj.updateDynamic("hideAction")(hideAction.asInstanceOf[js.Any])

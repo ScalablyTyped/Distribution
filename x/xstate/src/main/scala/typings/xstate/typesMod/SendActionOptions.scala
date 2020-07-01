@@ -15,7 +15,7 @@ trait SendActionOptions[TContext, TEvent /* <: EventObject */] extends js.Object
 
 object SendActionOptions {
   @scala.inline
-  def apply[TContext, TEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     delay: Double | String | (DelayExpr[TContext, TEvent]) = null,
     id: String | Double = null,
     to: String | (ExprWithMeta[TContext, TEvent, String | Double | (Actor[_, AnyEventObject])]) = null

@@ -1,7 +1,7 @@
 
 # Scala.js typings for winston
 
-Typings are for version 3.2.1
+Typings are for version 3.3.3
 
 ## Library description:
 A logger for just about everything.

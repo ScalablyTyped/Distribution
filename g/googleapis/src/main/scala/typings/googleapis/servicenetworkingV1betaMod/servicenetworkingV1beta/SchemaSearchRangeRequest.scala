@@ -28,9 +28,9 @@ trait SchemaSearchRangeRequest extends js.Object {
 
 object SchemaSearchRangeRequest {
   @scala.inline
-  def apply(ipPrefixLength: Int | Double = null, network: String = null): SchemaSearchRangeRequest = {
+  def apply(ipPrefixLength: js.UndefOr[Double] = js.undefined, network: String = null): SchemaSearchRangeRequest = {
     val __obj = js.Dynamic.literal()
-    if (ipPrefixLength != null) __obj.updateDynamic("ipPrefixLength")(ipPrefixLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(ipPrefixLength)) __obj.updateDynamic("ipPrefixLength")(ipPrefixLength.get.asInstanceOf[js.Any])
     if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSearchRangeRequest]
   }

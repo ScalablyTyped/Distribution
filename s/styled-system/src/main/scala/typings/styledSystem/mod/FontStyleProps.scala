@@ -17,7 +17,7 @@ trait FontStyleProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.O
 
 object FontStyleProps {
   @scala.inline
-  def apply[ThemeType](fontStyle: js.UndefOr[Null | (ResponsiveValue[FontStyleProperty, ThemeType])] = js.undefined): FontStyleProps[ThemeType] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](fontStyle: js.UndefOr[Null | (ResponsiveValue[FontStyleProperty, ThemeType])] = js.undefined): FontStyleProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(fontStyle)) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontStyleProps[ThemeType]]

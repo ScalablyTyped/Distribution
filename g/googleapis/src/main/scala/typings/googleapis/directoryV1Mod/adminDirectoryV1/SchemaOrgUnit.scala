@@ -61,7 +61,7 @@ object SchemaOrgUnit {
     parentOrgUnitPath: String = null
   ): SchemaOrgUnit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(blockInheritance)) __obj.updateDynamic("blockInheritance")(blockInheritance.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockInheritance)) __obj.updateDynamic("blockInheritance")(blockInheritance.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])

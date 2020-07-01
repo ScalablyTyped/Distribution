@@ -9,16 +9,10 @@ import scala.scalajs.js.annotation._
 
 trait Typeofpermissions extends js.Object {
   /* permissions events */
-  /**
-    * Fired when the extension acquires new permissions.
-    * @deprecated Unsupported on Firefox at this time.
-    */
-  val onAdded: js.UndefOr[WebExtEvent[js.Function1[/* permissions */ Permissions, Unit]]] = js.undefined
-  /**
-    * Fired when permissions are removed from the extension.
-    * @deprecated Unsupported on Firefox at this time.
-    */
-  val onRemoved: js.UndefOr[WebExtEvent[js.Function1[/* permissions */ Permissions, Unit]]] = js.undefined
+  /** Fired when the extension acquires new permissions. */
+  val onAdded: WebExtEvent[js.Function1[/* permissions */ Permissions, Unit]]
+  /** Fired when permissions are removed from the extension. */
+  val onRemoved: WebExtEvent[js.Function1[/* permissions */ Permissions, Unit]]
   /** Check if the extension has the given permissions. */
   def contains(permissions: AnyPermissions): js.Promise[Boolean]
   /* permissions functions */
@@ -39,14 +33,12 @@ object Typeofpermissions {
   def apply(
     contains: AnyPermissions => js.Promise[Boolean],
     getAll: () => js.Promise[AnyPermissions],
+    onAdded: WebExtEvent[js.Function1[/* permissions */ Permissions, Unit]],
+    onRemoved: WebExtEvent[js.Function1[/* permissions */ Permissions, Unit]],
     remove: Permissions => js.Promise[Boolean],
-    request: Permissions => js.Promise[Boolean],
-    onAdded: WebExtEvent[js.Function1[/* permissions */ Permissions, Unit]] = null,
-    onRemoved: WebExtEvent[js.Function1[/* permissions */ Permissions, Unit]] = null
+    request: Permissions => js.Promise[Boolean]
   ): Typeofpermissions = {
-    val __obj = js.Dynamic.literal(contains = js.Any.fromFunction1(contains), getAll = js.Any.fromFunction0(getAll), remove = js.Any.fromFunction1(remove), request = js.Any.fromFunction1(request))
-    if (onAdded != null) __obj.updateDynamic("onAdded")(onAdded.asInstanceOf[js.Any])
-    if (onRemoved != null) __obj.updateDynamic("onRemoved")(onRemoved.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(contains = js.Any.fromFunction1(contains), getAll = js.Any.fromFunction0(getAll), onAdded = onAdded.asInstanceOf[js.Any], onRemoved = onRemoved.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove), request = js.Any.fromFunction1(request))
     __obj.asInstanceOf[Typeofpermissions]
   }
 }

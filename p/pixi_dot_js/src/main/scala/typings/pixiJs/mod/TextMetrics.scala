@@ -140,11 +140,11 @@ object TextMetrics extends js.Object {
     * For example certain characters in CJK langs or numbers.
     * It must return a boolean.
     *
-    * @param  {string}  char      The character
-    * @param  {string}  nextChar  The next character
-    * @param  {string}  token     The token/word the characters are from
-    * @param  {number}  index     The index in the token of the char
-    * @param  {boolean}  breakWords  The style attr break words
+    * @param  {string}  char        - The character
+    * @param  {string}  nextChar    - The next character
+    * @param  {string}  token       - The token/word the characters are from
+    * @param  {number}  index       - The index in the token of the char
+    * @param  {boolean}  breakWords - The style attr break words
     * @return {boolean} whether to break word or not
     */
   def canBreakChars(char: String, nextChar: String, token: String, index: Double, breakWords: Boolean): Boolean = js.native
@@ -155,8 +155,8 @@ object TextMetrics extends js.Object {
     * Examples are if the token is CJK or numbers.
     * It must return a boolean.
     *
-    * @param  {string}  token       The token
-    * @param  {boolean}  breakWords  The style attr break words
+    * @param  {string}  token       - The token
+    * @param  {boolean}  breakWords - The style attr break words
     * @return {boolean} whether to break word or not
     */
   def canBreakWords(token: String, breakWords: Boolean): Boolean = js.native
@@ -199,7 +199,7 @@ object TextMetrics extends js.Object {
     * // Correctly splits emojis, eg "🤪🤪" will result in two element array, each with one emoji.
     * TextMetrics.wordWrapSplit = (token) => [...token];
     *
-    * @param  {string}  token The token to split
+    * @param  {string}  token - The token to split
     * @return {string[]} The characters of the token
     */
   def wordWrapSplit(token: String): js.Array[String] = js.native

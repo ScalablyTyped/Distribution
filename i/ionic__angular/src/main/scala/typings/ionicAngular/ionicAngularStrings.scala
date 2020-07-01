@@ -27,6 +27,9 @@ object ionicAngularStrings {
   sealed trait alertLeave extends js.Object
   
   @js.native
+  sealed trait android extends js.Object
+  
+  @js.native
   sealed trait animated extends js.Object
   
   @js.native
@@ -42,6 +45,18 @@ object ionicAngularStrings {
   sealed trait backButtonText extends js.Object
   
   @js.native
+  sealed trait capacitor extends js.Object
+  
+  @js.native
+  sealed trait cordova extends js.Object
+  
+  @js.native
+  sealed trait desktop extends js.Object
+  
+  @js.native
+  sealed trait electron extends js.Object
+  
+  @js.native
   sealed trait experimentalTransitionShadow extends js.Object
   
   @js.native
@@ -54,6 +69,9 @@ object ionicAngularStrings {
   sealed trait hideCaretOnScroll extends js.Object
   
   @js.native
+  sealed trait hybrid extends js.Object
+  
+  @js.native
   sealed trait infiniteLoadingSpinner extends js.Object
   
   @js.native
@@ -61,6 +79,15 @@ object ionicAngularStrings {
   
   @js.native
   sealed trait inputShims extends js.Object
+  
+  @js.native
+  sealed trait ios extends js.Object
+  
+  @js.native
+  sealed trait ipad extends js.Object
+  
+  @js.native
+  sealed trait iphone extends js.Object
   
   @js.native
   sealed trait keyboardHeight extends js.Object
@@ -81,6 +108,12 @@ object ionicAngularStrings {
   sealed trait menuType extends js.Object
   
   @js.native
+  sealed trait mobile extends js.Object
+  
+  @js.native
+  sealed trait mobileweb extends js.Object
+  
+  @js.native
   sealed trait modalEnter extends js.Object
   
   @js.native
@@ -96,6 +129,9 @@ object ionicAngularStrings {
   sealed trait persistConfig extends js.Object
   
   @js.native
+  sealed trait phablet extends js.Object
+  
+  @js.native
   sealed trait pickerEnter extends js.Object
   
   @js.native
@@ -106,6 +142,9 @@ object ionicAngularStrings {
   
   @js.native
   sealed trait popoverLeave extends js.Object
+  
+  @js.native
+  sealed trait pwa extends js.Object
   
   @js.native
   sealed trait refreshingIcon extends js.Object
@@ -138,6 +177,9 @@ object ionicAngularStrings {
   sealed trait tabButtonLayout extends js.Object
   
   @js.native
+  sealed trait tablet extends js.Object
+  
+  @js.native
   sealed trait toastEnter extends js.Object
   
   @js.native
@@ -158,6 +200,8 @@ object ionicAngularStrings {
   @scala.inline
   def alertLeave: alertLeave = "alertLeave".asInstanceOf[alertLeave]
   @scala.inline
+  def android: android = "android".asInstanceOf[android]
+  @scala.inline
   def animated: animated = "animated".asInstanceOf[animated]
   @scala.inline
   def back: back = "back".asInstanceOf[back]
@@ -168,6 +212,14 @@ object ionicAngularStrings {
   @scala.inline
   def backButtonText: backButtonText = "backButtonText".asInstanceOf[backButtonText]
   @scala.inline
+  def capacitor: capacitor = "capacitor".asInstanceOf[capacitor]
+  @scala.inline
+  def cordova: cordova = "cordova".asInstanceOf[cordova]
+  @scala.inline
+  def desktop: desktop = "desktop".asInstanceOf[desktop]
+  @scala.inline
+  def electron: electron = "electron".asInstanceOf[electron]
+  @scala.inline
   def experimentalTransitionShadow: experimentalTransitionShadow = "experimentalTransitionShadow".asInstanceOf[experimentalTransitionShadow]
   @scala.inline
   def forward: forward = "forward".asInstanceOf[forward]
@@ -176,11 +228,19 @@ object ionicAngularStrings {
   @scala.inline
   def hideCaretOnScroll: hideCaretOnScroll = "hideCaretOnScroll".asInstanceOf[hideCaretOnScroll]
   @scala.inline
+  def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
+  @scala.inline
   def infiniteLoadingSpinner: infiniteLoadingSpinner = "infiniteLoadingSpinner".asInstanceOf[infiniteLoadingSpinner]
   @scala.inline
   def inputBlurring: inputBlurring = "inputBlurring".asInstanceOf[inputBlurring]
   @scala.inline
   def inputShims: inputShims = "inputShims".asInstanceOf[inputShims]
+  @scala.inline
+  def ios: ios = "ios".asInstanceOf[ios]
+  @scala.inline
+  def ipad: ipad = "ipad".asInstanceOf[ipad]
+  @scala.inline
+  def iphone: iphone = "iphone".asInstanceOf[iphone]
   @scala.inline
   def keyboardHeight: keyboardHeight = "keyboardHeight".asInstanceOf[keyboardHeight]
   @scala.inline
@@ -194,6 +254,10 @@ object ionicAngularStrings {
   @scala.inline
   def menuType: menuType = "menuType".asInstanceOf[menuType]
   @scala.inline
+  def mobile: mobile = "mobile".asInstanceOf[mobile]
+  @scala.inline
+  def mobileweb: mobileweb = "mobileweb".asInstanceOf[mobileweb]
+  @scala.inline
   def modalEnter: modalEnter = "modalEnter".asInstanceOf[modalEnter]
   @scala.inline
   def modalLeave: modalLeave = "modalLeave".asInstanceOf[modalLeave]
@@ -204,6 +268,8 @@ object ionicAngularStrings {
   @scala.inline
   def persistConfig: persistConfig = "persistConfig".asInstanceOf[persistConfig]
   @scala.inline
+  def phablet: phablet = "phablet".asInstanceOf[phablet]
+  @scala.inline
   def pickerEnter: pickerEnter = "pickerEnter".asInstanceOf[pickerEnter]
   @scala.inline
   def pickerLeave: pickerLeave = "pickerLeave".asInstanceOf[pickerLeave]
@@ -211,6 +277,8 @@ object ionicAngularStrings {
   def popoverEnter: popoverEnter = "popoverEnter".asInstanceOf[popoverEnter]
   @scala.inline
   def popoverLeave: popoverLeave = "popoverLeave".asInstanceOf[popoverLeave]
+  @scala.inline
+  def pwa: pwa = "pwa".asInstanceOf[pwa]
   @scala.inline
   def refreshingIcon: refreshingIcon = "refreshingIcon".asInstanceOf[refreshingIcon]
   @scala.inline
@@ -231,6 +299,8 @@ object ionicAngularStrings {
   def swipeBackEnabled: swipeBackEnabled = "swipeBackEnabled".asInstanceOf[swipeBackEnabled]
   @scala.inline
   def tabButtonLayout: tabButtonLayout = "tabButtonLayout".asInstanceOf[tabButtonLayout]
+  @scala.inline
+  def tablet: tablet = "tablet".asInstanceOf[tablet]
   @scala.inline
   def toastEnter: toastEnter = "toastEnter".asInstanceOf[toastEnter]
   @scala.inline

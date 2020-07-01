@@ -27,7 +27,7 @@ trait NodeGroup extends js.Object {
     */
   var Slots: js.UndefOr[String] = js.native
   /**
-    * The current state of this replication group - creating, available, etc.
+    * The current state of this replication group - creating, available, modifying, deleting.
     */
   var Status: js.UndefOr[String] = js.native
 }

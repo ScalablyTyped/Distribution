@@ -30,15 +30,15 @@ trait RenderTexturePool extends js.Object {
   /**
     * Clears the pool
     *
-    * @param {boolean} [destroyTextures=true] destroy all stored textures
+    * @param {boolean} [destroyTextures=true] - destroy all stored textures
     */
   def clear(): Unit = js.native
   def clear(destroyTextures: Boolean): Unit = js.native
   /**
     * creates of texture with params that were specified in pool constructor
     *
-    * @param {number} realWidth width of texture in pixels
-    * @param {number} realHeight height of texture in pixels
+    * @param {number} realWidth - width of texture in pixels
+    * @param {number} realHeight - height of texture in pixels
     * @returns {RenderTexture}
     */
   def createTexture(realWidth: Double, realHeight: Double): RenderTexture = js.native
@@ -47,8 +47,8 @@ trait RenderTexturePool extends js.Object {
     *
     * `getFilterTexture(input, 0.5)` or `getFilterTexture(0.5, input)`
     *
-    * @param {PIXI.RenderTexture} input renderTexture from which size and resolution will be copied
-    * @param {number} [resolution] override resolution of the renderTexture
+    * @param {PIXI.RenderTexture} input - renderTexture from which size and resolution will be copied
+    * @param {number} [resolution] - override resolution of the renderTexture
     *  It overrides, it does not multiply
     * @returns {PIXI.RenderTexture}
     */

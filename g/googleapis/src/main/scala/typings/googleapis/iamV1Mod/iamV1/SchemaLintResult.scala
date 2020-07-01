@@ -57,20 +57,20 @@ trait SchemaLintResult extends js.Object {
 object SchemaLintResult {
   @scala.inline
   def apply(
-    bindingOrdinal: Int | Double = null,
+    bindingOrdinal: js.UndefOr[Double] = js.undefined,
     debugMessage: String = null,
     fieldName: String = null,
     level: String = null,
-    locationOffset: Int | Double = null,
+    locationOffset: js.UndefOr[Double] = js.undefined,
     severity: String = null,
     validationUnitName: String = null
   ): SchemaLintResult = {
     val __obj = js.Dynamic.literal()
-    if (bindingOrdinal != null) __obj.updateDynamic("bindingOrdinal")(bindingOrdinal.asInstanceOf[js.Any])
+    if (!js.isUndefined(bindingOrdinal)) __obj.updateDynamic("bindingOrdinal")(bindingOrdinal.get.asInstanceOf[js.Any])
     if (debugMessage != null) __obj.updateDynamic("debugMessage")(debugMessage.asInstanceOf[js.Any])
     if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (locationOffset != null) __obj.updateDynamic("locationOffset")(locationOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(locationOffset)) __obj.updateDynamic("locationOffset")(locationOffset.get.asInstanceOf[js.Any])
     if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
     if (validationUnitName != null) __obj.updateDynamic("validationUnitName")(validationUnitName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLintResult]

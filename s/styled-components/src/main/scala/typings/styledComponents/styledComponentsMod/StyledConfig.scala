@@ -17,7 +17,7 @@ trait StyledConfig[O /* <: js.Object */] extends js.Object {
 
 object StyledConfig {
   @scala.inline
-  def apply[O](
+  def apply[/* <: js.Object */ O](
     shouldForwardProp: (/* keyof O */ /* prop */ String, /* defaultValidatorFn */ js.Function1[/* keyof O */ /* prop */ String, Boolean]) => Boolean = null
   ): StyledConfig[O] = {
     val __obj = js.Dynamic.literal()

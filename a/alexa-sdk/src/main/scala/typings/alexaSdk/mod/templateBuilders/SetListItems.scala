@@ -11,7 +11,7 @@ trait SetListItems[T /* <: TemplateBuilder[T] */] extends js.Object {
 
 object SetListItems {
   @scala.inline
-  def apply[T](setListItems: js.Array[ListItem] => T): SetListItems[T] = {
+  def apply[/* <: typings.alexaSdk.mod.templateBuilders.TemplateBuilder[T] */ T](setListItems: js.Array[ListItem] => T): SetListItems[T] = {
     val __obj = js.Dynamic.literal(setListItems = js.Any.fromFunction1(setListItems))
     __obj.asInstanceOf[SetListItems[T]]
   }

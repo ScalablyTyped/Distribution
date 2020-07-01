@@ -17,7 +17,7 @@ trait UpdateVirtualServiceInput extends js.Object {
   var meshName: ResourceName = js.native
   /**
     * The AWS IAM account ID of the service mesh owner. If the account ID is not your own, then it's
-    the ID of the account that shared the mesh with your account. For more information about mesh sharing, see Working with Shared Meshes.
+    the ID of the account that shared the mesh with your account. For more information about mesh sharing, see Working with shared meshes.
     */
   var meshOwner: js.UndefOr[AccountId] = js.native
   /**

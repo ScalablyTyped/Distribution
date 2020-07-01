@@ -49,9 +49,15 @@ object ReaderSelection {
     __obj.asInstanceOf[ReaderSelection]
   }
   @scala.inline
-  def ReaderInlineFragment(kind: String, selections: js.Array[ReaderSelection], `type`: String): ReaderSelection = {
+  def ReaderInlineFragment(
+    kind: String,
+    selections: js.Array[ReaderSelection],
+    `type`: String,
+    abstractKey: js.UndefOr[Null | String] = js.undefined
+  ): ReaderSelection = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(abstractKey)) __obj.updateDynamic("abstractKey")(abstractKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaderSelection]
   }
   @scala.inline

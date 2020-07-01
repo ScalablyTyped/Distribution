@@ -58,8 +58,6 @@ class DateRangeInput protected ()
   var startInputRef: js.Any = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MDateRangeInput(prevProps: IDateRangeInputProps, prevState: IDateRangeInputState): Unit = js.native
-  @JSName("componentDidUpdate")
-  def componentDidUpdate_MDateRangeInput(prevProps: IDateRangeInputProps, prevState: IDateRangeInputState, snapshot: js.Object): Unit = js.native
   /**
     * Public method intended for unit testing only. Do not use in feature work!
     */

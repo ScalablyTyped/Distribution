@@ -27,7 +27,7 @@ object SchemaClusterOperation {
   @scala.inline
   def apply(done: js.UndefOr[Boolean] = js.undefined, error: String = null, operationId: String = null): SchemaClusterOperation = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done.asInstanceOf[js.Any])
+    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done.get.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaClusterOperation]

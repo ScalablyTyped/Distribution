@@ -211,7 +211,7 @@ object SchemaTable {
     if (numPhysicalBytes != null) __obj.updateDynamic("numPhysicalBytes")(numPhysicalBytes.asInstanceOf[js.Any])
     if (numRows != null) __obj.updateDynamic("numRows")(numRows.asInstanceOf[js.Any])
     if (rangePartitioning != null) __obj.updateDynamic("rangePartitioning")(rangePartitioning.asInstanceOf[js.Any])
-    if (!js.isUndefined(requirePartitionFilter)) __obj.updateDynamic("requirePartitionFilter")(requirePartitionFilter.asInstanceOf[js.Any])
+    if (!js.isUndefined(requirePartitionFilter)) __obj.updateDynamic("requirePartitionFilter")(requirePartitionFilter.get.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     if (streamingBuffer != null) __obj.updateDynamic("streamingBuffer")(streamingBuffer.asInstanceOf[js.Any])

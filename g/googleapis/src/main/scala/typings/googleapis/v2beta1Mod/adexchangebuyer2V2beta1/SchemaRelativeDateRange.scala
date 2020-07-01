@@ -26,10 +26,10 @@ trait SchemaRelativeDateRange extends js.Object {
 
 object SchemaRelativeDateRange {
   @scala.inline
-  def apply(durationDays: Int | Double = null, offsetDays: Int | Double = null): SchemaRelativeDateRange = {
+  def apply(durationDays: js.UndefOr[Double] = js.undefined, offsetDays: js.UndefOr[Double] = js.undefined): SchemaRelativeDateRange = {
     val __obj = js.Dynamic.literal()
-    if (durationDays != null) __obj.updateDynamic("durationDays")(durationDays.asInstanceOf[js.Any])
-    if (offsetDays != null) __obj.updateDynamic("offsetDays")(offsetDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(durationDays)) __obj.updateDynamic("durationDays")(durationDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetDays)) __obj.updateDynamic("offsetDays")(offsetDays.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRelativeDateRange]
   }
 }

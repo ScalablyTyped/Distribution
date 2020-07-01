@@ -15,6 +15,7 @@ trait PullsDismissReviewResponseData extends js.Object {
   var node_id: String
   var pull_request_url: String
   var state: String
+  var submitted_at: String
   var user: Eventsurl
 }
 
@@ -29,9 +30,10 @@ object PullsDismissReviewResponseData {
     node_id: String,
     pull_request_url: String,
     state: String,
+    submitted_at: String,
     user: Eventsurl
   ): PullsDismissReviewResponseData = {
-    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], commit_id = commit_id.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], pull_request_url = pull_request_url.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], commit_id = commit_id.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], pull_request_url = pull_request_url.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], submitted_at = submitted_at.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullsDismissReviewResponseData]
   }
 }

@@ -86,7 +86,7 @@ object SchemaTargetHttpProxy {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(proxyBind)) __obj.updateDynamic("proxyBind")(proxyBind.asInstanceOf[js.Any])
+    if (!js.isUndefined(proxyBind)) __obj.updateDynamic("proxyBind")(proxyBind.get.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     if (selfLinkWithId != null) __obj.updateDynamic("selfLinkWithId")(selfLinkWithId.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 package typings.googleapis.v3Mod.analyticsV3
 
-import typings.googleapis.AnonWebPropertyRef
+import typings.googleapis.anon.WebPropertyRef
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait SchemaEntityAdWordsLink extends js.Object {
   /**
     * Web property being linked.
     */
-  var entity: js.UndefOr[AnonWebPropertyRef] = js.native
+  var entity: js.UndefOr[WebPropertyRef] = js.native
   /**
     * Entity Google Ads link ID
     */
@@ -45,7 +45,7 @@ object SchemaEntityAdWordsLink {
   @scala.inline
   def apply(
     adWordsAccounts: js.Array[SchemaAdWordsAccount] = null,
-    entity: AnonWebPropertyRef = null,
+    entity: WebPropertyRef = null,
     id: String = null,
     kind: String = null,
     name: String = null,

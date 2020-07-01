@@ -424,7 +424,7 @@ trait Resolvers[Schema /* <: JSONSchema */] extends js.Object {
 
 object Resolvers {
   @scala.inline
-  def apply[Schema](
+  def apply[/* <: typings.jsonSchemaMergeAllof.mod.JSONSchema */ Schema](
     $id: (js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.anon.Id>['$id'] */ js.Any
     ], js.Array[String], MergeSchemas, Options_[Schema]) => NonNullable[

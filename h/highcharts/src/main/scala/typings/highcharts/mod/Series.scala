@@ -124,6 +124,10 @@ class Series protected () extends js.Object {
     */
   var `type`: String = js.native
   /**
+    * Contains series options by the user without defaults.
+    */
+  var userOptions: SeriesOptionsType = js.native
+  /**
     * Read only. The series' visibility state as set by Series#show,
     * Series#hide, or in the initial configuration.
     */

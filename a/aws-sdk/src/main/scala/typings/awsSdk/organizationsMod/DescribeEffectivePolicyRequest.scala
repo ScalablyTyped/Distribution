@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeEffectivePolicyRequest extends js.Object {
   /**
-    * The type of policy that you want information about.
+    * The type of policy that you want information about. You can specify one of the following values:    BACKUP_POLICY     TAG_POLICY   
     */
   var PolicyType: EffectivePolicyType = js.native
   /**
-    * When you're signed in as the master account, specify the ID of the account that you want details about. Specifying an organization root or OU as the target is not supported. 
+    * When you're signed in as the master account, specify the ID of the account that you want details about. Specifying an organization root or organizational unit (OU) as the target is not supported. 
     */
   var TargetId: js.UndefOr[PolicyTargetId] = js.native
 }

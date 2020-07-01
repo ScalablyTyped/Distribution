@@ -110,7 +110,7 @@ trait Column[T /* <: SlickData */] extends js.Object {
 
 object Column {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.slickgrid.Slick.SlickData */ T](
     asyncPostRender: (/* cellNode */ js.Any, /* row */ js.Any, /* dataContext */ js.Any, /* colDef */ js.Any) => Unit = null,
     behavior: js.Any = null,
     cannotTriggerInsert: js.UndefOr[Boolean] = js.undefined,

@@ -128,6 +128,7 @@ import scala.scalajs.js.annotation._
   - typings.fileType.fileTypeStrings.applicationSlashvndDotsketchupDotskp
   - typings.fileType.fileTypeStrings.imageSlashavif
   - typings.fileType.fileTypeStrings.`applicationSlashx-lzh-compressed`
+  - typings.fileType.fileTypeStrings.`applicationSlashpgp-encrypted`
 */
 trait MimeType extends js.Object
 
@@ -146,6 +147,8 @@ object MimeType {
   def applicationSlashogg: typings.fileType.fileTypeStrings.applicationSlashogg = "application/ogg".asInstanceOf[typings.fileType.fileTypeStrings.applicationSlashogg]
   @scala.inline
   def applicationSlashpdf: typings.fileType.fileTypeStrings.applicationSlashpdf = "application/pdf".asInstanceOf[typings.fileType.fileTypeStrings.applicationSlashpdf]
+  @scala.inline
+  def `applicationSlashpgp-encrypted`: typings.fileType.fileTypeStrings.`applicationSlashpgp-encrypted` = "application/pgp-encrypted".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashpgp-encrypted`]
   @scala.inline
   def applicationSlashpostscript: typings.fileType.fileTypeStrings.applicationSlashpostscript = "application/postscript".asInstanceOf[typings.fileType.fileTypeStrings.applicationSlashpostscript]
   @scala.inline

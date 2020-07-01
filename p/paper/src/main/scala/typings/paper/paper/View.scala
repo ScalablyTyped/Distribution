@@ -347,7 +347,7 @@ trait View extends js.Object {
     * 
     * @see Matrix#shear(shear[, center])
     * 
-    * @param shear - the horziontal and vertical shear factors as a point
+    * @param shear - the horizontal and vertical shear factors as a point
     */
   def shear(shear: Point): Unit = js.native
   def shear(shear: Point, center: Point): Unit = js.native
@@ -368,7 +368,7 @@ trait View extends js.Object {
     * 
     * @see Matrix#shear(skew[, center])
     * 
-    * @param skew - the horziontal and vertical skew angles in degrees
+    * @param skew - the horizontal and vertical skew angles in degrees
     */
   def skew(skew: Point): Unit = js.native
   def skew(skew: Point, center: Point): Unit = js.native

@@ -21,6 +21,8 @@ trait ISettings extends js.Object {
   var requestDotcredentials: String
   @JSName("tracing.hideTracingResponse")
   var tracingDothideTracingResponse: Boolean
+  @JSName("tracing.tracingSupported")
+  var tracingDottracingSupported: Boolean
 }
 
 object ISettings {
@@ -33,7 +35,8 @@ object ISettings {
     editorDottheme: Theme,
     generalDotbetaUpdates: Boolean,
     requestDotcredentials: String,
-    tracingDothideTracingResponse: Boolean
+    tracingDothideTracingResponse: Boolean,
+    tracingDottracingSupported: Boolean
   ): ISettings = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("editor.cursorShape")(editorDotcursorShape.asInstanceOf[js.Any])
@@ -44,6 +47,7 @@ object ISettings {
     __obj.updateDynamic("general.betaUpdates")(generalDotbetaUpdates.asInstanceOf[js.Any])
     __obj.updateDynamic("request.credentials")(requestDotcredentials.asInstanceOf[js.Any])
     __obj.updateDynamic("tracing.hideTracingResponse")(tracingDothideTracingResponse.asInstanceOf[js.Any])
+    __obj.updateDynamic("tracing.tracingSupported")(tracingDottracingSupported.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISettings]
   }
 }

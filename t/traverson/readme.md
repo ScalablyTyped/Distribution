@@ -1,7 +1,7 @@
 
 # Scala.js typings for traverson
 
-Typings are for version v2.0.1
+Typings are for version v6.1.1
 
 ## Library description:
 Hypermedia API/HATEOAS client for Node.js and the browser

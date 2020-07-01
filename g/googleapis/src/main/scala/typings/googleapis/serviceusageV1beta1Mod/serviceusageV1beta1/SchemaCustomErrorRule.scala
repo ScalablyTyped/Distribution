@@ -25,7 +25,7 @@ object SchemaCustomErrorRule {
   @scala.inline
   def apply(isErrorType: js.UndefOr[Boolean] = js.undefined, selector: String = null): SchemaCustomErrorRule = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isErrorType)) __obj.updateDynamic("isErrorType")(isErrorType.asInstanceOf[js.Any])
+    if (!js.isUndefined(isErrorType)) __obj.updateDynamic("isErrorType")(isErrorType.get.asInstanceOf[js.Any])
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCustomErrorRule]
   }

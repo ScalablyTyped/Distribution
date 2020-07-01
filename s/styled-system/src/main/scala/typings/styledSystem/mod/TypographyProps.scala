@@ -22,7 +22,7 @@ trait TypographyProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
 
 object TypographyProps {
   @scala.inline
-  def apply[ThemeType](
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](
     fontFamily: js.UndefOr[Null | (ResponsiveValue[FontFamilyProperty, ThemeType])] = js.undefined,
     fontSize: js.UndefOr[Null | (ResponsiveValue[ThemeValue[fontSizes, ThemeType, js.Any], ThemeType])] = js.undefined,
     fontStyle: js.UndefOr[Null | (ResponsiveValue[FontStyleProperty, ThemeType])] = js.undefined,

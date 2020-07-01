@@ -396,6 +396,7 @@ object iconNamesMod extends js.Object {
   val SEGMENTED_CONTROL: /* "segmented-control" */ String = js.native
   val SELECT: /* "select" */ String = js.native
   val SELECTION: /* "selection" */ String = js.native
+  val SEND_MESSAGE: /* "send-message" */ String = js.native
   val SEND_TO: /* "send-to" */ String = js.native
   val SEND_TO_GRAPH: /* "send-to-graph" */ String = js.native
   val SEND_TO_MAP: /* "send-to-map" */ String = js.native

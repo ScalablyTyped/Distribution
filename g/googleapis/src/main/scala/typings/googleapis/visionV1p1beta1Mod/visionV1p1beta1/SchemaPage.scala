@@ -37,17 +37,17 @@ object SchemaPage {
   @scala.inline
   def apply(
     blocks: js.Array[SchemaBlock] = null,
-    confidence: Int | Double = null,
-    height: Int | Double = null,
+    confidence: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
     property: SchemaTextProperty = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): SchemaPage = {
     val __obj = js.Dynamic.literal()
     if (blocks != null) __obj.updateDynamic("blocks")(blocks.asInstanceOf[js.Any])
-    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPage]
   }
 }

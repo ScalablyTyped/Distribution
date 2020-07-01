@@ -20,6 +20,11 @@ trait Options extends js.Object {
   var collapseWhitespace: js.UndefOr[Boolean] = js.undefined
   // Always collapse to 1 space (never remove it entirely). Must be used in conjunction with collapseWhitespace=true
   var conservativeCollapse: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Handle parse errors instead of aborting
+    * @default false
+    */
+  var continueOnParseError: js.UndefOr[Boolean] = js.undefined
   // Arrays of regex'es that allow to support custom attribute assign expressions (e.g. '<div flex?="{{mode != cover}}"></div>')
   var customAttrAssign: js.UndefOr[js.Array[RegExp]] = js.undefined
   // Regex that specifies custom attribute to strip newlines from (e.g. /ng-class/)
@@ -137,6 +142,7 @@ object Options {
     collapseInlineTagWhitespace: js.UndefOr[Boolean] = js.undefined,
     collapseWhitespace: js.UndefOr[Boolean] = js.undefined,
     conservativeCollapse: js.UndefOr[Boolean] = js.undefined,
+    continueOnParseError: js.UndefOr[Boolean] = js.undefined,
     customAttrAssign: js.Array[RegExp] = null,
     customAttrCollapse: RegExp = null,
     customAttrSurround: js.Array[RegExp] = null,
@@ -176,6 +182,7 @@ object Options {
     if (!js.isUndefined(collapseInlineTagWhitespace)) __obj.updateDynamic("collapseInlineTagWhitespace")(collapseInlineTagWhitespace.get.asInstanceOf[js.Any])
     if (!js.isUndefined(collapseWhitespace)) __obj.updateDynamic("collapseWhitespace")(collapseWhitespace.get.asInstanceOf[js.Any])
     if (!js.isUndefined(conservativeCollapse)) __obj.updateDynamic("conservativeCollapse")(conservativeCollapse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(continueOnParseError)) __obj.updateDynamic("continueOnParseError")(continueOnParseError.get.asInstanceOf[js.Any])
     if (customAttrAssign != null) __obj.updateDynamic("customAttrAssign")(customAttrAssign.asInstanceOf[js.Any])
     if (customAttrCollapse != null) __obj.updateDynamic("customAttrCollapse")(customAttrCollapse.asInstanceOf[js.Any])
     if (customAttrSurround != null) __obj.updateDynamic("customAttrSurround")(customAttrSurround.asInstanceOf[js.Any])

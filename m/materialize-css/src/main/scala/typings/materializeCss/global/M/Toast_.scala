@@ -1,7 +1,6 @@
 package typings.materializeCss.global.M
 
 import typings.materializeCss.M.Toast
-import typings.materializeCss.M.ToastOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,16 +9,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("M.Toast")
 @js.native
 class Toast_ () extends Toast {
-  /**
-    * The DOM element the plugin was initialized with
-    */
-  /* CompleteClass */
-  override var el: Element = js.native
-  /**
-    * The options the instance was initialized with
-    */
-  /* CompleteClass */
-  override var options: ToastOptions = js.native
   /**
     * Describes the current pan state of the Toast.
     */

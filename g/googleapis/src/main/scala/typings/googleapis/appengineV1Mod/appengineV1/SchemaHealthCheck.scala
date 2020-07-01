@@ -50,20 +50,20 @@ object SchemaHealthCheck {
   def apply(
     checkInterval: String = null,
     disableHealthCheck: js.UndefOr[Boolean] = js.undefined,
-    healthyThreshold: Int | Double = null,
+    healthyThreshold: js.UndefOr[Double] = js.undefined,
     host: String = null,
-    restartThreshold: Int | Double = null,
+    restartThreshold: js.UndefOr[Double] = js.undefined,
     timeout: String = null,
-    unhealthyThreshold: Int | Double = null
+    unhealthyThreshold: js.UndefOr[Double] = js.undefined
   ): SchemaHealthCheck = {
     val __obj = js.Dynamic.literal()
     if (checkInterval != null) __obj.updateDynamic("checkInterval")(checkInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableHealthCheck)) __obj.updateDynamic("disableHealthCheck")(disableHealthCheck.asInstanceOf[js.Any])
-    if (healthyThreshold != null) __obj.updateDynamic("healthyThreshold")(healthyThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableHealthCheck)) __obj.updateDynamic("disableHealthCheck")(disableHealthCheck.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(healthyThreshold)) __obj.updateDynamic("healthyThreshold")(healthyThreshold.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (restartThreshold != null) __obj.updateDynamic("restartThreshold")(restartThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(restartThreshold)) __obj.updateDynamic("restartThreshold")(restartThreshold.get.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (unhealthyThreshold != null) __obj.updateDynamic("unhealthyThreshold")(unhealthyThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(unhealthyThreshold)) __obj.updateDynamic("unhealthyThreshold")(unhealthyThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHealthCheck]
   }
 }

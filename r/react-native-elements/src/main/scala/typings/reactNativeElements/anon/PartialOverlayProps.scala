@@ -39,6 +39,7 @@ trait PartialOverlayProps extends js.Object {
   var overlayBackgroundColor: js.UndefOr[String] = js.undefined
   var overlayStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   var presentationStyle: js.UndefOr[fullScreen | pageSheet | formSheet | overFullScreen] = js.undefined
+  var statusBarTranslucent: js.UndefOr[Boolean] = js.undefined
   var supportedOrientations: js.UndefOr[
     js.Array[
       portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`
@@ -70,6 +71,7 @@ object PartialOverlayProps {
     overlayBackgroundColor: String = null,
     overlayStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     presentationStyle: fullScreen | pageSheet | formSheet | overFullScreen = null,
+    statusBarTranslucent: js.UndefOr[Boolean] = js.undefined,
     supportedOrientations: js.Array[
       portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`
     ] = null,
@@ -96,6 +98,7 @@ object PartialOverlayProps {
     if (overlayBackgroundColor != null) __obj.updateDynamic("overlayBackgroundColor")(overlayBackgroundColor.asInstanceOf[js.Any])
     if (!js.isUndefined(overlayStyle)) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
     if (presentationStyle != null) __obj.updateDynamic("presentationStyle")(presentationStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusBarTranslucent)) __obj.updateDynamic("statusBarTranslucent")(statusBarTranslucent.get.asInstanceOf[js.Any])
     if (supportedOrientations != null) __obj.updateDynamic("supportedOrientations")(supportedOrientations.asInstanceOf[js.Any])
     if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.get.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])

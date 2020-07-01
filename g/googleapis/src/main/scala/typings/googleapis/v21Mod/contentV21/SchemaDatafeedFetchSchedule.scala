@@ -57,10 +57,10 @@ trait SchemaDatafeedFetchSchedule extends js.Object {
 object SchemaDatafeedFetchSchedule {
   @scala.inline
   def apply(
-    dayOfMonth: Int | Double = null,
+    dayOfMonth: js.UndefOr[Double] = js.undefined,
     fetchUrl: String = null,
-    hour: Int | Double = null,
-    minuteOfHour: Int | Double = null,
+    hour: js.UndefOr[Double] = js.undefined,
+    minuteOfHour: js.UndefOr[Double] = js.undefined,
     password: String = null,
     paused: js.UndefOr[Boolean] = js.undefined,
     timeZone: String = null,
@@ -68,12 +68,12 @@ object SchemaDatafeedFetchSchedule {
     weekday: String = null
   ): SchemaDatafeedFetchSchedule = {
     val __obj = js.Dynamic.literal()
-    if (dayOfMonth != null) __obj.updateDynamic("dayOfMonth")(dayOfMonth.asInstanceOf[js.Any])
+    if (!js.isUndefined(dayOfMonth)) __obj.updateDynamic("dayOfMonth")(dayOfMonth.get.asInstanceOf[js.Any])
     if (fetchUrl != null) __obj.updateDynamic("fetchUrl")(fetchUrl.asInstanceOf[js.Any])
-    if (hour != null) __obj.updateDynamic("hour")(hour.asInstanceOf[js.Any])
-    if (minuteOfHour != null) __obj.updateDynamic("minuteOfHour")(minuteOfHour.asInstanceOf[js.Any])
+    if (!js.isUndefined(hour)) __obj.updateDynamic("hour")(hour.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minuteOfHour)) __obj.updateDynamic("minuteOfHour")(minuteOfHour.get.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused.asInstanceOf[js.Any])
+    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused.get.asInstanceOf[js.Any])
     if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
     if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     if (weekday != null) __obj.updateDynamic("weekday")(weekday.asInstanceOf[js.Any])

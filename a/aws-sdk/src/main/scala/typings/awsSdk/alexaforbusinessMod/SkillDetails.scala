@@ -39,7 +39,7 @@ trait SkillDetails extends js.Object {
     */
   var ReleaseDate: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ReleaseDate] = js.native
   /**
-    * The list of reviews for the skill, including Key and Value pair.
+    *  This member has been deprecated.  The list of reviews for the skill, including Key and Value pair.
     */
   var Reviews: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Reviews] = js.native
   /**

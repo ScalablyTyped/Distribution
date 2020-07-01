@@ -11,6 +11,10 @@ trait CreateNetworkAclRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.native
   /**
+    * The tags to assign to the network ACL.
+    */
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
+  /**
     * The ID of the VPC.
     */
   var VpcId: typings.awsSdk.ec2Mod.VpcId = js.native
@@ -18,9 +22,14 @@ trait CreateNetworkAclRequest extends js.Object {
 
 object CreateNetworkAclRequest {
   @scala.inline
-  def apply(VpcId: VpcId, DryRun: js.UndefOr[Boolean] = js.undefined): CreateNetworkAclRequest = {
+  def apply(
+    VpcId: VpcId,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
+    TagSpecifications: TagSpecificationList = null
+  ): CreateNetworkAclRequest = {
     val __obj = js.Dynamic.literal(VpcId = VpcId.asInstanceOf[js.Any])
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
+    if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateNetworkAclRequest]
   }
 }

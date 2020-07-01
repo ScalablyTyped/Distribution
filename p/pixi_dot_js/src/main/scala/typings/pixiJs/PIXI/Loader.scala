@@ -1,12 +1,6 @@
 package typings.pixiJs.PIXI
 
-import typings.pixiJs.PIXI.utils.EventEmitter
-import typings.pixiJs.pixiJsStrings.complete
-import typings.pixiJs.pixiJsStrings.error
-import typings.pixiJs.pixiJsStrings.load
-import typings.pixiJs.pixiJsStrings.progress
-import typings.pixiJs.pixiJsStrings.start
-import typings.std.Error
+import typings.pixiJs.PIXI.Loader.ILoaderSignal
 import typings.std.Partial
 import typings.std.Record
 import scala.scalajs.js
@@ -65,36 +59,41 @@ import scala.scalajs.js.annotation._
   * @param {number} [concurrency=10] - The number of resources to load concurrently.
   */
 @js.native
-trait Loader extends EventEmitter {
+trait Loader extends js.Object {
   var baseUrl: String = js.native
   var concurrency: Double = js.native
   var defaultQueryString: String = js.native
   var loading: Boolean = js.native
   /**
     * @memberof PIXI.Loader#
-    * @member {object} onComplete
+    * @description Dispatched when completely loaded all resources.
+    * @member {PIXI.Loader.ILoaderSignal} onComplete
     */
-  var onComplete: js.Any = js.native
+  var onComplete: ILoaderSignal = js.native
   /**
     * @memberof PIXI.Loader#
-    * @member {object} onError
+    * @description Dispatched once per errored resource.
+    * @member {PIXI.Loader.ILoaderSignal} onError
     */
-  var onError: js.Any = js.native
+  var onError: ILoaderSignal = js.native
   /**
     * @memberof PIXI.Loader#
-    * @member {object} onLoad
+    * @description Dispatched once per loaded resource.
+    * @member {PIXI.Loader.ILoaderSignal} onLoad
     */
-  var onLoad: js.Any = js.native
+  var onLoad: ILoaderSignal = js.native
   /**
     * @memberof PIXI.Loader#
-    * @member {object} onProgress
+    * @description Dispatched once per loaded or errored resource.
+    * @member {PIXI.Loader.ILoaderSignal} onProgress
     */
-  var onProgress: js.Any = js.native
+  var onProgress: ILoaderSignal = js.native
   /**
     * @memberof PIXI.Loader#
-    * @member {object} onStart
+    * @description Dispatched when the loader begins to loading process.
+    * @member {PIXI.Loader.ILoaderSignal} onStart
     */
-  var onStart: js.Any = js.native
+  var onStart: ILoaderSignal = js.native
   var progress: Double = js.native
   var resources: IResourceDictionary = js.native
   //tslint:disable-next-line:ban-types forbidden-types
@@ -123,116 +122,6 @@ trait Loader extends EventEmitter {
     ]
   ): this.type = js.native
   //tslint:disable-next-line:ban-types forbidden-types
-  @JSName("off")
-  def off_complete(event: complete): this.type = js.native
-  @JSName("off")
-  def off_complete(event: complete, fn: js.Function): this.type = js.native
-  @JSName("off")
-  def off_complete(event: complete, fn: js.Function, context: js.Any): this.type = js.native
-  @JSName("off")
-  def off_error(event: error): this.type = js.native
-  @JSName("off")
-  def off_error(event: error, fn: js.Function): this.type = js.native
-  @JSName("off")
-  def off_error(event: error, fn: js.Function, context: js.Any): this.type = js.native
-  @JSName("off")
-  def off_load(event: load): this.type = js.native
-  @JSName("off")
-  def off_load(event: load, fn: js.Function): this.type = js.native
-  @JSName("off")
-  def off_load(event: load, fn: js.Function, context: js.Any): this.type = js.native
-  @JSName("off")
-  def off_progress(event: progress): this.type = js.native
-  @JSName("off")
-  def off_progress(event: progress, fn: js.Function): this.type = js.native
-  @JSName("off")
-  def off_progress(event: progress, fn: js.Function, context: js.Any): this.type = js.native
-  @JSName("off")
-  def off_start(event: start): this.type = js.native
-  @JSName("off")
-  def off_start(event: start, fn: js.Function): this.type = js.native
-  @JSName("off")
-  def off_start(event: start, fn: js.Function, context: js.Any): this.type = js.native
-  // depreciation
-  @JSName("on")
-  def on_complete(event: complete, fn: js.Function2[/* loader */ this.type, /* object */ js.Any, Unit]): this.type = js.native
-  @JSName("on")
-  def on_complete(
-    event: complete,
-    fn: js.Function2[/* loader */ this.type, /* object */ js.Any, Unit],
-    context: js.Any
-  ): this.type = js.native
-  @JSName("on")
-  def on_error(
-    event: error,
-    fn: js.Function3[/* error */ Error, /* loader */ this.type, /* resource */ LoaderResource, Unit]
-  ): this.type = js.native
-  @JSName("on")
-  def on_error(
-    event: error,
-    fn: js.Function3[/* error */ Error, /* loader */ this.type, /* resource */ LoaderResource, Unit],
-    context: js.Any
-  ): this.type = js.native
-  @JSName("on")
-  def on_load(event: load, fn: js.Function2[/* loader */ this.type, /* resource */ LoaderResource, Unit]): this.type = js.native
-  @JSName("on")
-  def on_load(
-    event: load,
-    fn: js.Function2[/* loader */ this.type, /* resource */ LoaderResource, Unit],
-    context: js.Any
-  ): this.type = js.native
-  @JSName("on")
-  def on_progress(event: progress, fn: js.Function2[/* loader */ this.type, /* resource */ LoaderResource, Unit]): this.type = js.native
-  @JSName("on")
-  def on_progress(
-    event: progress,
-    fn: js.Function2[/* loader */ this.type, /* resource */ LoaderResource, Unit],
-    context: js.Any
-  ): this.type = js.native
-  @JSName("on")
-  def on_start(event: start, fn: js.Function1[/* loader */ this.type, Unit]): this.type = js.native
-  @JSName("on")
-  def on_start(event: start, fn: js.Function1[/* loader */ this.type, Unit], context: js.Any): this.type = js.native
-  @JSName("once")
-  def once_complete(event: complete, fn: js.Function2[/* loader */ this.type, /* object */ js.Any, Unit]): this.type = js.native
-  @JSName("once")
-  def once_complete(
-    event: complete,
-    fn: js.Function2[/* loader */ this.type, /* object */ js.Any, Unit],
-    context: js.Any
-  ): this.type = js.native
-  @JSName("once")
-  def once_error(
-    event: error,
-    fn: js.Function3[/* error */ Error, /* loader */ this.type, /* resource */ LoaderResource, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_error(
-    event: error,
-    fn: js.Function3[/* error */ Error, /* loader */ this.type, /* resource */ LoaderResource, Unit],
-    context: js.Any
-  ): this.type = js.native
-  @JSName("once")
-  def once_load(event: load, fn: js.Function2[/* loader */ this.type, /* resource */ LoaderResource, Unit]): this.type = js.native
-  @JSName("once")
-  def once_load(
-    event: load,
-    fn: js.Function2[/* loader */ this.type, /* resource */ LoaderResource, Unit],
-    context: js.Any
-  ): this.type = js.native
-  @JSName("once")
-  def once_progress(event: progress, fn: js.Function2[/* loader */ this.type, /* resource */ LoaderResource, Unit]): this.type = js.native
-  @JSName("once")
-  def once_progress(
-    event: progress,
-    fn: js.Function2[/* loader */ this.type, /* resource */ LoaderResource, Unit],
-    context: js.Any
-  ): this.type = js.native
-  @JSName("once")
-  def once_start(event: start, fn: js.Function1[/* loader */ this.type, Unit]): this.type = js.native
-  @JSName("once")
-  def once_start(event: start, fn: js.Function1[/* loader */ this.type, Unit], context: js.Any): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def pre(fn: js.Function): this.type = js.native
   def reset(): this.type = js.native
   //tslint:disable-next-line:ban-types forbidden-types
@@ -242,6 +131,51 @@ trait Loader extends EventEmitter {
 @JSGlobal("PIXI.Loader")
 @js.native
 object Loader extends js.Object {
+  /**
+    * @memberof PIXI.Loader
+    * @typedef ILoaderSignal
+    * @property {ISignalCallback} add - Register callback
+    * @property {ISignalCallback} once - Register oneshot callback
+    * @property {ISignalDetach} detach - Detach specific callback by ID
+    */
+  @js.native
+  trait ILoaderSignal extends js.Object {
+    @JSName("add")
+    var add_Original: ISignalCallback = js.native
+    @JSName("detach")
+    var detach_Original: ISignalDetach = js.native
+    @JSName("once")
+    var once_Original: ISignalCallback = js.native
+    def add(callback: js.Function1[/* repeated */ js.Any, _]): ICallbackID = js.native
+    def add(callback: js.Function1[/* repeated */ js.Any, _], context: js.Any): ICallbackID = js.native
+    def detach(id: ICallbackID): Unit = js.native
+    def once(callback: js.Function1[/* repeated */ js.Any, _]): ICallbackID = js.native
+    def once(callback: js.Function1[/* repeated */ js.Any, _], context: js.Any): ICallbackID = js.native
+  }
+  
+  /**
+    * @memberof PIXI.Loader
+    * @typedef {object} ICallbackID
+    */
+  type ICallbackID = js.Any
+  /**
+    * @memberof PIXI.Loader
+    * @typedef {function} ISignalCallback
+    * @param {function} callback - Callback function
+    * @param {object} [context] - Context
+    * @returns {ICallbackID} - CallbackID
+    */
+  type ISignalCallback = js.Function2[
+    /* callback */ js.Function1[/* repeated */ js.Any, js.Any], 
+    /* context */ js.UndefOr[js.Any], 
+    ICallbackID
+  ]
+  /**
+    * @memberof PIXI.Loader
+    * @typedef {function} ISignalDetach
+    * @param {ICallbackID} id - CallbackID returned by `add`/`once` methods
+    */
+  type ISignalDetach = js.Function1[/* id */ ICallbackID, Unit]
   /**
     * @memberof PIXI.Loader
     * @callback loaderMiddleware

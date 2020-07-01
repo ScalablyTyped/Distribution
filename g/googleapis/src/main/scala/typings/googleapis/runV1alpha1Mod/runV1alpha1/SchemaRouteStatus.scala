@@ -57,7 +57,7 @@ object SchemaRouteStatus {
     conditions: js.Array[SchemaRouteCondition] = null,
     domain: String = null,
     domainInternal: String = null,
-    observedGeneration: Int | Double = null,
+    observedGeneration: js.UndefOr[Double] = js.undefined,
     traffic: js.Array[SchemaTrafficTarget] = null
   ): SchemaRouteStatus = {
     val __obj = js.Dynamic.literal()
@@ -65,7 +65,7 @@ object SchemaRouteStatus {
     if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (domainInternal != null) __obj.updateDynamic("domainInternal")(domainInternal.asInstanceOf[js.Any])
-    if (observedGeneration != null) __obj.updateDynamic("observedGeneration")(observedGeneration.asInstanceOf[js.Any])
+    if (!js.isUndefined(observedGeneration)) __obj.updateDynamic("observedGeneration")(observedGeneration.get.asInstanceOf[js.Any])
     if (traffic != null) __obj.updateDynamic("traffic")(traffic.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRouteStatus]
   }

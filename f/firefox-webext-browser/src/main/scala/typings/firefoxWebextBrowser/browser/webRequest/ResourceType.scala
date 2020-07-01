@@ -14,7 +14,6 @@ import scala.scalajs.js.annotation._
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`object`
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.object_subrequest
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.xmlhttprequest
-  - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.xbl
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.xslt
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ping
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.beacon
@@ -65,8 +64,6 @@ object ResourceType {
   def web_manifest: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.web_manifest = "web_manifest".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.web_manifest]
   @scala.inline
   def websocket: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.websocket = "websocket".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.websocket]
-  @scala.inline
-  def xbl: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.xbl = "xbl".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.xbl]
   @scala.inline
   def xml_dtd: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.xml_dtd = "xml_dtd".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.xml_dtd]
   @scala.inline

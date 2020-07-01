@@ -26,11 +26,11 @@ trait SchemaWebEntity extends js.Object {
 
 object SchemaWebEntity {
   @scala.inline
-  def apply(description: String = null, entityId: String = null, score: Int | Double = null): SchemaWebEntity = {
+  def apply(description: String = null, entityId: String = null, score: js.UndefOr[Double] = js.undefined): SchemaWebEntity = {
     val __obj = js.Dynamic.literal()
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (entityId != null) __obj.updateDynamic("entityId")(entityId.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWebEntity]
   }
 }

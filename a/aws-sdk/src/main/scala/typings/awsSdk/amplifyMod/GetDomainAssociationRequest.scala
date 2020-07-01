@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetDomainAssociationRequest extends js.Object {
   /**
-    *  Unique Id for an Amplify App. 
+    *  The unique id for an Amplify app. 
     */
   var appId: AppId = js.native
   /**
-    *  Name of the domain. 
+    *  The name of the domain. 
     */
   var domainName: DomainName = js.native
 }

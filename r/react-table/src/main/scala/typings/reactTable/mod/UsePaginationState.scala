@@ -11,7 +11,7 @@ trait UsePaginationState[D /* <: js.Object */] extends js.Object {
 
 object UsePaginationState {
   @scala.inline
-  def apply[D](pageIndex: Double, pageSize: Double): UsePaginationState[D] = {
+  def apply[/* <: js.Object */ D](pageIndex: Double, pageSize: Double): UsePaginationState[D] = {
     val __obj = js.Dynamic.literal(pageIndex = pageIndex.asInstanceOf[js.Any], pageSize = pageSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsePaginationState[D]]
   }

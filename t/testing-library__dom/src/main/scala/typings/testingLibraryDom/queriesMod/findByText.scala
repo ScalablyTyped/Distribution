@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@testing-library/dom/queries", "findByText")
+@JSImport("@testing-library/dom/types/queries", "findByText")
 @js.native
 object findByText extends TopLevel[FindByText_]
 

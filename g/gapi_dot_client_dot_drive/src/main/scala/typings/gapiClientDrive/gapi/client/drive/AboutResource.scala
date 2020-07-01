@@ -6,16 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AboutResource extends js.Object {
   /** Gets information about the user, the user's Drive, and system capabilities. */
-  def get(request: Alt): Request[About]
-}
-
-object AboutResource {
-  @scala.inline
-  def apply(get: Alt => Request[About]): AboutResource = {
-    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-    __obj.asInstanceOf[AboutResource]
-  }
+  def get(): Request[About] = js.native
+  def get(request: Alt): Request[About] = js.native
 }
 

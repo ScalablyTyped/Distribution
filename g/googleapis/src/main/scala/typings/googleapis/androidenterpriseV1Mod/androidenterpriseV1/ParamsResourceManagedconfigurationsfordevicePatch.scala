@@ -63,7 +63,7 @@ object ParamsResourceManagedconfigurationsfordevicePatch {
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (managedConfigurationForDeviceId != null) __obj.updateDynamic("managedConfigurationForDeviceId")(managedConfigurationForDeviceId.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (requestBody != null) __obj.updateDynamic("requestBody")(requestBody.asInstanceOf[js.Any])
     if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])

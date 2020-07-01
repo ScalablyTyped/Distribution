@@ -84,7 +84,7 @@ object SchemaEnvironment {
     if (containerId != null) __obj.updateDynamic("containerId")(containerId.asInstanceOf[js.Any])
     if (containerVersionId != null) __obj.updateDynamic("containerVersionId")(containerVersionId.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableDebug)) __obj.updateDynamic("enableDebug")(enableDebug.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableDebug)) __obj.updateDynamic("enableDebug")(enableDebug.get.asInstanceOf[js.Any])
     if (environmentId != null) __obj.updateDynamic("environmentId")(environmentId.asInstanceOf[js.Any])
     if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.googleapis.v3Mod.analyticsV3
 
-import typings.googleapis.AnonEffective
-import typings.googleapis.AnonHref
+import typings.googleapis.anon.Effective
+import typings.googleapis.anon.Href
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait SchemaAccount extends js.Object {
     * Child link for an account entry. Points to the list of web properties for
     * this account.
     */
-  var childLink: js.UndefOr[AnonHref] = js.native
+  var childLink: js.UndefOr[Href] = js.native
   /**
     * Time the account was created.
     */
@@ -35,7 +35,7 @@ trait SchemaAccount extends js.Object {
   /**
     * Permissions the user has for this account.
     */
-  var permissions: js.UndefOr[AnonEffective] = js.native
+  var permissions: js.UndefOr[Effective] = js.native
   /**
     * Link for this account.
     */
@@ -53,12 +53,12 @@ trait SchemaAccount extends js.Object {
 object SchemaAccount {
   @scala.inline
   def apply(
-    childLink: AnonHref = null,
+    childLink: Href = null,
     created: String = null,
     id: String = null,
     kind: String = null,
     name: String = null,
-    permissions: AnonEffective = null,
+    permissions: Effective = null,
     selfLink: String = null,
     starred: js.UndefOr[Boolean] = js.undefined,
     updated: String = null
@@ -71,7 +71,7 @@ object SchemaAccount {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(starred)) __obj.updateDynamic("starred")(starred.asInstanceOf[js.Any])
+    if (!js.isUndefined(starred)) __obj.updateDynamic("starred")(starred.get.asInstanceOf[js.Any])
     if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAccount]
   }

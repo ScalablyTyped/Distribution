@@ -35,15 +35,15 @@ object SchemaListConnectionsResponse {
     connections: js.Array[SchemaPerson] = null,
     nextPageToken: String = null,
     nextSyncToken: String = null,
-    totalItems: Int | Double = null,
-    totalPeople: Int | Double = null
+    totalItems: js.UndefOr[Double] = js.undefined,
+    totalPeople: js.UndefOr[Double] = js.undefined
   ): SchemaListConnectionsResponse = {
     val __obj = js.Dynamic.literal()
     if (connections != null) __obj.updateDynamic("connections")(connections.asInstanceOf[js.Any])
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     if (nextSyncToken != null) __obj.updateDynamic("nextSyncToken")(nextSyncToken.asInstanceOf[js.Any])
-    if (totalItems != null) __obj.updateDynamic("totalItems")(totalItems.asInstanceOf[js.Any])
-    if (totalPeople != null) __obj.updateDynamic("totalPeople")(totalPeople.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalItems)) __obj.updateDynamic("totalItems")(totalItems.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalPeople)) __obj.updateDynamic("totalPeople")(totalPeople.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListConnectionsResponse]
   }
 }

@@ -61,7 +61,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@wordpress/element/react", JSImport.Namespace)
+@JSImport("@wordpress/element/build-types/react", JSImport.Namespace)
 @js.native
 object reactMod extends js.Object {
   // Base component for plain JS classes
@@ -108,12 +108,6 @@ object reactMod extends js.Object {
     // If you thought this should be optional, see
   // https://github.com/DefinitelyTyped/DefinitelyTyped/pull/24509#issuecomment-382213106
   defaultValue: T
-  ): Context[T] = js.native
-  def createContext[T](
-    // If you thought this should be optional, see
-  // https://github.com/DefinitelyTyped/DefinitelyTyped/pull/24509#issuecomment-382213106
-  defaultValue: T,
-    calculateChangedBits: js.Function2[/* prev */ T, /* next */ T, Double]
   ): Context[T] = js.native
   def createElement[P /* <: js.Object */](`type`: String): ReactElement = js.native
   def createElement[P /* <: js.Object */](`type`: String, children: ReactNode*): ReactElement = js.native

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   * Plugin to be installed for handling specific Loader resources.
   *
   * @memberof PIXI
-  * @typedef ILoaderPlugin
+  * @typedef {object} ILoaderPlugin
   * @property {function} [add] - Function to call immediate after registering plugin.
   * @property {PIXI.Loader.loaderMiddleware} [pre] - Middleware function to run before load, the
   *           arguments for this are `(resource, next)`

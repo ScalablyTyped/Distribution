@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Included in the result of a query execution to describe details of the columns involved.
   */
-trait Metadata extends js.Object {
+trait Metadata[T] extends js.Object {
   /**
     * Database byte size. This is only set for DB_TYPE_VARCHAR, DB_TYPE_CHAR and DB_TYPE_RAW column types.
     */
@@ -21,7 +21,7 @@ trait Metadata extends js.Object {
   /**
     * The class associated with the database type. This is only set if the database type is an object type.
     */
-  var dbTypeClass: js.UndefOr[DBObjectClass] = js.undefined
+  var dbTypeClass: js.UndefOr[DBObjectClass[T]] = js.undefined
   /**
     * Name of the database type, such as “NUMBER” or “VARCHAR2”. For object types, this will be the object name.
     */
@@ -53,17 +53,17 @@ trait Metadata extends js.Object {
 
 object Metadata {
   @scala.inline
-  def apply(
+  def apply[T](
     name: String,
     byteSize: js.UndefOr[Double] = js.undefined,
     dbType: js.UndefOr[Double] = js.undefined,
-    dbTypeClass: DBObjectClass = null,
+    dbTypeClass: DBObjectClass[T] = null,
     dbTypeName: String = null,
     fetchType: js.UndefOr[Double] = js.undefined,
     nullable: js.UndefOr[Boolean] = js.undefined,
     precision: js.UndefOr[Double] = js.undefined,
     scale: js.UndefOr[Double] = js.undefined
-  ): Metadata = {
+  ): Metadata[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (!js.isUndefined(byteSize)) __obj.updateDynamic("byteSize")(byteSize.get.asInstanceOf[js.Any])
     if (!js.isUndefined(dbType)) __obj.updateDynamic("dbType")(dbType.get.asInstanceOf[js.Any])
@@ -73,7 +73,7 @@ object Metadata {
     if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
     if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Metadata]
+    __obj.asInstanceOf[Metadata[T]]
   }
 }
 

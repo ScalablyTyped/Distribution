@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait ColumnSharedType[RecordType] extends js.Object {
   var align: js.UndefOr[AlignType] = js.undefined
   var className: js.UndefOr[String] = js.undefined
-  var ellipsis: js.UndefOr[Boolean] = js.undefined
+  var ellipsis: js.UndefOr[CellEllipsisType] = js.undefined
   var fixed: js.UndefOr[FixedType] = js.undefined
   var key: js.UndefOr[Key] = js.undefined
   var onHeaderCell: js.UndefOr[
@@ -26,7 +26,7 @@ object ColumnSharedType {
   def apply[RecordType](
     align: AlignType = null,
     className: String = null,
-    ellipsis: js.UndefOr[Boolean] = js.undefined,
+    ellipsis: CellEllipsisType = null,
     fixed: FixedType = null,
     key: Key = null,
     onHeaderCell: (/* import warning: importer.ImportType#apply Failed type conversion: rc-table.rc-table/lib/interface.ColumnsType<RecordType>[number] */ js.Any, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement] = null,
@@ -35,7 +35,7 @@ object ColumnSharedType {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(ellipsis)) __obj.updateDynamic("ellipsis")(ellipsis.get.asInstanceOf[js.Any])
+    if (ellipsis != null) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
     if (fixed != null) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (onHeaderCell != null) __obj.updateDynamic("onHeaderCell")(js.Any.fromFunction2(onHeaderCell))

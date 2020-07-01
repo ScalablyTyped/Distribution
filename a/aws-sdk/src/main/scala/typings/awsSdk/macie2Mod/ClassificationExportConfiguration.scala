@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ClassificationExportConfiguration extends js.Object {
   /**
-    * The S3 bucket to export data classification results to, and the encryption settings to use when storing results in that bucket.
+    * The S3 bucket to store data classification results in, and the encryption settings to use when storing results in that bucket.
     */
   var s3Destination: js.UndefOr[S3Destination] = js.native
 }

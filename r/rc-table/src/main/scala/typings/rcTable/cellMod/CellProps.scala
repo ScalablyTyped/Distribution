@@ -1,11 +1,15 @@
 package typings.rcTable.cellMod
 
 import typings.rcTable.interfaceMod.AlignType
+import typings.rcTable.interfaceMod.CellEllipsisType
 import typings.rcTable.interfaceMod.CustomizeComponent
 import typings.rcTable.interfaceMod.DataIndex
 import typings.rcTable.interfaceMod.DefaultRecordType
 import typings.rcTable.interfaceMod.RenderedCell
 import typings.rcTable.rcTableBooleans.`false`
+import typings.rcTable.rcTableStrings.body
+import typings.rcTable.rcTableStrings.footer
+import typings.rcTable.rcTableStrings.header
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
@@ -23,7 +27,7 @@ trait CellProps[RecordType /* <: DefaultRecordType */] extends js.Object {
   var colSpan: js.UndefOr[Double] = js.undefined
   var component: js.UndefOr[CustomizeComponent] = js.undefined
   var dataIndex: js.UndefOr[DataIndex] = js.undefined
-  var ellipsis: js.UndefOr[Boolean] = js.undefined
+  var ellipsis: js.UndefOr[CellEllipsisType] = js.undefined
   var firstFixLeft: js.UndefOr[Boolean] = js.undefined
   var firstFixRight: js.UndefOr[Boolean] = js.undefined
   var fixLeft: js.UndefOr[Double | `false`] = js.undefined
@@ -43,11 +47,13 @@ trait CellProps[RecordType /* <: DefaultRecordType */] extends js.Object {
     ]
   ] = js.undefined
   var rowSpan: js.UndefOr[Double] = js.undefined
+  var rowType: js.UndefOr[header | body | footer] = js.undefined
+  var shouldCellUpdate: js.UndefOr[js.Function2[/* record */ RecordType, /* prevRecord */ RecordType, Boolean]] = js.undefined
 }
 
 object CellProps {
   @scala.inline
-  def apply[RecordType](
+  def apply[/* <: typings.rcTable.interfaceMod.DefaultRecordType */ RecordType](
     additionalProps: HTMLAttributes[HTMLElement] = null,
     align: AlignType = null,
     appendNode: ReactNode = null,
@@ -56,7 +62,7 @@ object CellProps {
     colSpan: js.UndefOr[Double] = js.undefined,
     component: CustomizeComponent = null,
     dataIndex: DataIndex = null,
-    ellipsis: js.UndefOr[Boolean] = js.undefined,
+    ellipsis: CellEllipsisType = null,
     firstFixLeft: js.UndefOr[Boolean] = js.undefined,
     firstFixRight: js.UndefOr[Boolean] = js.undefined,
     fixLeft: Double | `false` = null,
@@ -67,7 +73,9 @@ object CellProps {
     prefixCls: String = null,
     record: RecordType = null,
     render: (/* value */ js.Any, /* record */ RecordType, /* index */ Double) => ReactNode | RenderedCell[RecordType] = null,
-    rowSpan: js.UndefOr[Double] = js.undefined
+    rowSpan: js.UndefOr[Double] = js.undefined,
+    rowType: header | body | footer = null,
+    shouldCellUpdate: (/* record */ RecordType, /* prevRecord */ RecordType) => Boolean = null
   ): CellProps[RecordType] = {
     val __obj = js.Dynamic.literal()
     if (additionalProps != null) __obj.updateDynamic("additionalProps")(additionalProps.asInstanceOf[js.Any])
@@ -78,7 +86,7 @@ object CellProps {
     if (!js.isUndefined(colSpan)) __obj.updateDynamic("colSpan")(colSpan.get.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (dataIndex != null) __obj.updateDynamic("dataIndex")(dataIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(ellipsis)) __obj.updateDynamic("ellipsis")(ellipsis.get.asInstanceOf[js.Any])
+    if (ellipsis != null) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
     if (!js.isUndefined(firstFixLeft)) __obj.updateDynamic("firstFixLeft")(firstFixLeft.get.asInstanceOf[js.Any])
     if (!js.isUndefined(firstFixRight)) __obj.updateDynamic("firstFixRight")(firstFixRight.get.asInstanceOf[js.Any])
     if (fixLeft != null) __obj.updateDynamic("fixLeft")(fixLeft.asInstanceOf[js.Any])
@@ -90,6 +98,8 @@ object CellProps {
     if (record != null) __obj.updateDynamic("record")(record.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction3(render))
     if (!js.isUndefined(rowSpan)) __obj.updateDynamic("rowSpan")(rowSpan.get.asInstanceOf[js.Any])
+    if (rowType != null) __obj.updateDynamic("rowType")(rowType.asInstanceOf[js.Any])
+    if (shouldCellUpdate != null) __obj.updateDynamic("shouldCellUpdate")(js.Any.fromFunction2(shouldCellUpdate))
     __obj.asInstanceOf[CellProps[RecordType]]
   }
 }

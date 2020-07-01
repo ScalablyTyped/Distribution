@@ -20,7 +20,7 @@ trait Index[T /* <: js.Object */] extends js.Object {
 
 object Index {
   @scala.inline
-  def apply[T](
+  def apply[/* <: js.Object */ T](
     code: Double,
     deduplicate: Boolean,
     fields: js.Array[/* keyof T */ String],

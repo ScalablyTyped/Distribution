@@ -1,5 +1,6 @@
 package typings.ionicCore
 
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.interfaceMod.RouterDirection
 import typings.ionicCore.mod.ComponentProps
 import typings.ionicCore.viewControllerMod.ViewController
@@ -19,6 +20,13 @@ object navLinkUtilsMod extends js.Object {
     component: String,
     componentProps: ComponentProps[Null]
   ): js.Promise[Boolean] = js.native
+  def navLink(
+    el: HTMLElement,
+    routerDirection: RouterDirection,
+    component: String,
+    componentProps: ComponentProps[Null],
+    routerAnimation: AnimationBuilder
+  ): js.Promise[Boolean] = js.native
   def navLink(el: HTMLElement, routerDirection: RouterDirection, component: js.Function): js.Promise[Boolean] = js.native
   def navLink(
     el: HTMLElement,
@@ -29,8 +37,22 @@ object navLinkUtilsMod extends js.Object {
   def navLink(
     el: HTMLElement,
     routerDirection: RouterDirection,
+    component: js.Function,
+    componentProps: ComponentProps[Null],
+    routerAnimation: AnimationBuilder
+  ): js.Promise[Boolean] = js.native
+  def navLink(
+    el: HTMLElement,
+    routerDirection: RouterDirection,
     component: Null,
     componentProps: ComponentProps[Null]
+  ): js.Promise[Boolean] = js.native
+  def navLink(
+    el: HTMLElement,
+    routerDirection: RouterDirection,
+    component: Null,
+    componentProps: ComponentProps[Null],
+    routerAnimation: AnimationBuilder
   ): js.Promise[Boolean] = js.native
   def navLink(el: HTMLElement, routerDirection: RouterDirection, component: ViewController): js.Promise[Boolean] = js.native
   def navLink(
@@ -39,12 +61,26 @@ object navLinkUtilsMod extends js.Object {
     component: ViewController,
     componentProps: ComponentProps[Null]
   ): js.Promise[Boolean] = js.native
+  def navLink(
+    el: HTMLElement,
+    routerDirection: RouterDirection,
+    component: ViewController,
+    componentProps: ComponentProps[Null],
+    routerAnimation: AnimationBuilder
+  ): js.Promise[Boolean] = js.native
   def navLink(el: HTMLElement, routerDirection: RouterDirection, component: HTMLElement): js.Promise[Boolean] = js.native
   def navLink(
     el: HTMLElement,
     routerDirection: RouterDirection,
     component: HTMLElement,
     componentProps: ComponentProps[Null]
+  ): js.Promise[Boolean] = js.native
+  def navLink(
+    el: HTMLElement,
+    routerDirection: RouterDirection,
+    component: HTMLElement,
+    componentProps: ComponentProps[Null],
+    routerAnimation: AnimationBuilder
   ): js.Promise[Boolean] = js.native
 }
 

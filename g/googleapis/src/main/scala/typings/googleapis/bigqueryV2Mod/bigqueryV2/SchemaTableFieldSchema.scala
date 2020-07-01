@@ -1,6 +1,6 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
-import typings.googleapis.AnonNames
+import typings.googleapis.anon.Names
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait SchemaTableFieldSchema extends js.Object {
     * [Optional] The categories attached to this field, used for field-level
     * access control.
     */
-  var categories: js.UndefOr[AnonNames] = js.native
+  var categories: js.UndefOr[Names] = js.native
   /**
     * [Optional] The field description. The maximum length is 1,024 characters.
     */
@@ -45,7 +45,7 @@ trait SchemaTableFieldSchema extends js.Object {
 object SchemaTableFieldSchema {
   @scala.inline
   def apply(
-    categories: AnonNames = null,
+    categories: Names = null,
     description: String = null,
     fields: js.Array[SchemaTableFieldSchema] = null,
     mode: String = null,

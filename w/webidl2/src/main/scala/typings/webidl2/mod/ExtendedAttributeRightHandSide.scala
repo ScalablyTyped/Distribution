@@ -13,14 +13,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.webidl2.mod.ExtendedAttributeRightHandSideIdentifier
-  - typings.webidl2.mod.ExtendedAttributeRightHandSideIdentifierList
-  - typings.webidl2.mod.ExtendedAttributeRightHandSideString
-  - typings.webidl2.mod.ExtendedAttributeRightHandSideStringList
-  - typings.webidl2.mod.ExtendedAttributeRightHandSideDecimal
-  - typings.webidl2.mod.ExtendedAttributeRightHandSideDecimalList
-  - typings.webidl2.mod.ExtendedAttributeRightHandSideInteger
-  - typings.webidl2.mod.ExtendedAttributeRightHandSideIntegerList
+  - typings.webidl2.mod.ExtendedAttributeRightHandSideBase
+  - typings.webidl2.mod.ExtendedAttributeRightHandSideList
 */
 trait ExtendedAttributeRightHandSide extends js.Object
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for js-captcha
 
-Typings are for version 1.1
+Typings are for version 1.3
 
 ## Library description:
 Simple captcha component written in pure JavaScript with no dependencies based on canvas element

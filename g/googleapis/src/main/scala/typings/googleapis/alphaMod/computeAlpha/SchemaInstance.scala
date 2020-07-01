@@ -252,10 +252,10 @@ object SchemaInstance {
     zone: String = null
   ): SchemaInstance = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canIpForward)) __obj.updateDynamic("canIpForward")(canIpForward.asInstanceOf[js.Any])
+    if (!js.isUndefined(canIpForward)) __obj.updateDynamic("canIpForward")(canIpForward.get.asInstanceOf[js.Any])
     if (cpuPlatform != null) __obj.updateDynamic("cpuPlatform")(cpuPlatform.asInstanceOf[js.Any])
     if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(deletionProtection)) __obj.updateDynamic("deletionProtection")(deletionProtection.asInstanceOf[js.Any])
+    if (!js.isUndefined(deletionProtection)) __obj.updateDynamic("deletionProtection")(deletionProtection.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (disks != null) __obj.updateDynamic("disks")(disks.asInstanceOf[js.Any])
     if (displayDevice != null) __obj.updateDynamic("displayDevice")(displayDevice.asInstanceOf[js.Any])
@@ -284,7 +284,7 @@ object SchemaInstance {
     if (shieldedVmIntegrityPolicy != null) __obj.updateDynamic("shieldedVmIntegrityPolicy")(shieldedVmIntegrityPolicy.asInstanceOf[js.Any])
     if (sourceMachineImage != null) __obj.updateDynamic("sourceMachineImage")(sourceMachineImage.asInstanceOf[js.Any])
     if (sourceMachineImageEncryptionKey != null) __obj.updateDynamic("sourceMachineImageEncryptionKey")(sourceMachineImageEncryptionKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(startRestricted)) __obj.updateDynamic("startRestricted")(startRestricted.asInstanceOf[js.Any])
+    if (!js.isUndefined(startRestricted)) __obj.updateDynamic("startRestricted")(startRestricted.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

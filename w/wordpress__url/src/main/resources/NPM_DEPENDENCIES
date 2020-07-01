@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@wordpress/url" : "2.15.0"
+      "@wordpress/url" : "2.17.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@wordpress/url" : "2.15.0"
+      "@wordpress/url" : "2.17.0"
     }
   ],
   "compile-devDependencies" : [

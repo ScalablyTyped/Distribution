@@ -48,7 +48,7 @@ object ParamsResourceInstancesGetserialportoutput {
     instance: String = null,
     key: String = null,
     oauth_token: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
     project: String = null,
     quotaUser: String = null,
@@ -63,8 +63,8 @@ object ParamsResourceInstancesGetserialportoutput {
     if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])

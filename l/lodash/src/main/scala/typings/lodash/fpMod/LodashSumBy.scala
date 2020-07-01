@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashSumBy extends js.Object {
+trait LodashSumBy extends LodashConvertible {
   def apply[T](iteratee: String): LodashSumBy1x1[T] = js.native
   def apply[T](iteratee: String, collection: List[T]): Double = js.native
   def apply[T](iteratee: js.Function1[/* value */ T, Double]): LodashSumBy1x1[T] = js.native

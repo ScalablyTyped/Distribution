@@ -28,8 +28,8 @@ object SchemaSizeSuggestionState {
     widthSuggested: js.UndefOr[Boolean] = js.undefined
   ): SchemaSizeSuggestionState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(heightSuggested)) __obj.updateDynamic("heightSuggested")(heightSuggested.asInstanceOf[js.Any])
-    if (!js.isUndefined(widthSuggested)) __obj.updateDynamic("widthSuggested")(widthSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(heightSuggested)) __obj.updateDynamic("heightSuggested")(heightSuggested.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(widthSuggested)) __obj.updateDynamic("widthSuggested")(widthSuggested.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSizeSuggestionState]
   }
 }

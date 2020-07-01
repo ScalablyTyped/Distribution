@@ -3,11 +3,11 @@ package typings.firebaseFirestore.persistentStreamMod
 import typings.firebaseFirestore.asyncQueueMod.AsyncQueue
 import typings.firebaseFirestore.asyncQueueMod.TimerId
 import typings.firebaseFirestore.backoffMod.ExponentialBackoff
-import typings.firebaseFirestore.connectionMod.Connection
-import typings.firebaseFirestore.connectionMod.Stream
 import typings.firebaseFirestore.credentialsMod.CredentialsProvider
 import typings.firebaseFirestore.credentialsMod.Token
 import typings.firebaseFirestore.errorMod.FirestoreError
+import typings.firebaseFirestore.remoteConnectionMod.Connection
+import typings.firebaseFirestore.remoteConnectionMod.Stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

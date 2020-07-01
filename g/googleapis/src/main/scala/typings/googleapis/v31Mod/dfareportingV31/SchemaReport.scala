@@ -1,12 +1,12 @@
 package typings.googleapis.v31Mod.dfareportingV31
 
-import typings.googleapis.AnonActive
-import typings.googleapis.AnonActivities
-import typings.googleapis.AnonActivityFilters
-import typings.googleapis.AnonBreakdown
-import typings.googleapis.AnonCustomRichMediaEvents
-import typings.googleapis.AnonDateRange
-import typings.googleapis.AnonEmailOwner
+import typings.googleapis.anon.Active
+import typings.googleapis.anon.Activities
+import typings.googleapis.anon.ActivityFilters
+import typings.googleapis.anon.Breakdown
+import typings.googleapis.anon.CustomRichMediaEvents
+import typings.googleapis.anon.DateRange
+import typings.googleapis.anon.EmailOwner
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,16 +23,16 @@ trait SchemaReport extends js.Object {
   /**
     * The report criteria for a report of type &quot;STANDARD&quot;.
     */
-  var criteria: js.UndefOr[AnonActivities] = js.native
+  var criteria: js.UndefOr[Activities] = js.native
   /**
     * The report criteria for a report of type
     * &quot;CROSS_DIMENSION_REACH&quot;.
     */
-  var crossDimensionReachCriteria: js.UndefOr[AnonBreakdown] = js.native
+  var crossDimensionReachCriteria: js.UndefOr[Breakdown] = js.native
   /**
     * The report&#39;s email delivery settings.
     */
-  var delivery: js.UndefOr[AnonEmailOwner] = js.native
+  var delivery: js.UndefOr[EmailOwner] = js.native
   /**
     * The eTag of this response for caching purposes.
     */
@@ -44,7 +44,7 @@ trait SchemaReport extends js.Object {
   /**
     * The report criteria for a report of type &quot;FLOODLIGHT&quot;.
     */
-  var floodlightCriteria: js.UndefOr[AnonCustomRichMediaEvents] = js.native
+  var floodlightCriteria: js.UndefOr[CustomRichMediaEvents] = js.native
   /**
     * The output format of the report. If not specified, default format is
     * &quot;CSV&quot;. Note that the actual format in the completed report file
@@ -77,17 +77,17 @@ trait SchemaReport extends js.Object {
   /**
     * The report criteria for a report of type &quot;PATH_TO_CONVERSION&quot;.
     */
-  var pathToConversionCriteria: js.UndefOr[AnonActivityFilters] = js.native
+  var pathToConversionCriteria: js.UndefOr[ActivityFilters] = js.native
   /**
     * The report criteria for a report of type &quot;REACH&quot;.
     */
-  var reachCriteria: js.UndefOr[AnonDateRange] = js.native
+  var reachCriteria: js.UndefOr[DateRange] = js.native
   /**
     * The report&#39;s schedule. Can only be set if the report&#39;s
     * &#39;dateRange&#39; is a relative date range and the relative date range
     * is not &quot;TODAY&quot;.
     */
-  var schedule: js.UndefOr[AnonActive] = js.native
+  var schedule: js.UndefOr[Active] = js.native
   /**
     * The subaccount ID to which this report belongs if applicable.
     */
@@ -102,21 +102,21 @@ object SchemaReport {
   @scala.inline
   def apply(
     accountId: String = null,
-    criteria: AnonActivities = null,
-    crossDimensionReachCriteria: AnonBreakdown = null,
-    delivery: AnonEmailOwner = null,
+    criteria: Activities = null,
+    crossDimensionReachCriteria: Breakdown = null,
+    delivery: EmailOwner = null,
     etag: String = null,
     fileName: String = null,
-    floodlightCriteria: AnonCustomRichMediaEvents = null,
+    floodlightCriteria: CustomRichMediaEvents = null,
     format: String = null,
     id: String = null,
     kind: String = null,
     lastModifiedTime: String = null,
     name: String = null,
     ownerProfileId: String = null,
-    pathToConversionCriteria: AnonActivityFilters = null,
-    reachCriteria: AnonDateRange = null,
-    schedule: AnonActive = null,
+    pathToConversionCriteria: ActivityFilters = null,
+    reachCriteria: DateRange = null,
+    schedule: Active = null,
     subAccountId: String = null,
     `type`: String = null
   ): SchemaReport = {

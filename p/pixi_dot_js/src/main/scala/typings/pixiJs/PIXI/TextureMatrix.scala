@@ -82,7 +82,7 @@ trait TextureMatrix extends js.Object {
   val uClampOffset: Float32Array = js.native
   /**
     * Multiplies uvs array to transform
-    * @param {Float32Array} uvs mesh uvs
+    * @param {Float32Array} uvs - mesh uvs
     * @param {Float32Array} [out=uvs] output
     * @returns {Float32Array} output
     */
@@ -90,7 +90,7 @@ trait TextureMatrix extends js.Object {
   def multiplyUvs(uvs: Float32Array, out: Float32Array): Float32Array = js.native
   /**
     * updates matrices if texture was changed
-    * @param {boolean} [forceUpdate=false] if true, matrices will be updated any case
+    * @param {boolean} [forceUpdate=false] - if true, matrices will be updated any case
     * @returns {boolean} whether or not it was updated
     */
   def update(): Boolean = js.native

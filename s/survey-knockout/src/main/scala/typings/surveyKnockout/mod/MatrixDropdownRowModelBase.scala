@@ -14,7 +14,6 @@ class MatrixDropdownRowModelBase protected ()
   def this(data: IMatrixDropdownData, value: js.Any) = this()
   var cells: js.Array[MatrixDropdownCell] = js.native
   var data: IMatrixDropdownData = js.native
-  val hasCondition: Boolean = js.native
   val id: String = js.native
   val isEmpty: Boolean = js.native
   var isSettingValue: Boolean = js.native
@@ -51,8 +50,8 @@ class MatrixDropdownRowModelBase protected ()
   override def processTextEx(text: String, returnDisplayValue: Boolean, doEncoding: Boolean): js.Any = js.native
   def runCondition(values: HashTable[_], properties: HashTable[_]): Unit = js.native
   def setValue(name: String, newColumnValue: js.Any): Unit = js.native
-  /* protected */ def updateCellOnColumnChanged(cell: MatrixDropdownCell): Unit = js.native
-  def updateCellQuestionOnColumnChanged(column: MatrixDropdownColumn): Unit = js.native
+  /* protected */ def updateCellOnColumnChanged(cell: MatrixDropdownCell, name: String, newValue: js.Any): Unit = js.native
+  def updateCellQuestionOnColumnChanged(column: MatrixDropdownColumn, name: String, newValue: js.Any): Unit = js.native
 }
 
 /* static members */

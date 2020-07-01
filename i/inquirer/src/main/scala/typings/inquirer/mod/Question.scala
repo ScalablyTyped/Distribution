@@ -69,7 +69,7 @@ trait Question[T /* <: Answers */] extends js.Object {
 
 object Question {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.inquirer.mod.Answers */ T](
     default: AsyncDynamicQuestionProperty[_, T] = null,
     filter: /* input */ js.Any => _ = null,
     message: AsyncDynamicQuestionProperty[String, T] = null,

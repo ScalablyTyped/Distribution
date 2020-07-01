@@ -16,7 +16,7 @@ trait LeftProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js.
 
 object LeftProps {
   @scala.inline
-  def apply[ThemeType, TVal](left: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): LeftProps[ThemeType, TVal] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType, TVal](left: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): LeftProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeftProps[ThemeType, TVal]]

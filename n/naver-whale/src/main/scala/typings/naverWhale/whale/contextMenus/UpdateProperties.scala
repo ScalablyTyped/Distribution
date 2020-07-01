@@ -16,6 +16,12 @@ trait UpdateProperties extends js.Object {
   var targetUrlPatterns: js.UndefOr[js.Array[String]] = js.undefined
   var title: js.UndefOr[String] = js.undefined
   var `type`: js.UndefOr[String] = js.undefined
+  /**
+    * Optional.
+    * @since Chrome 62.
+    * Whether the item is visible in the menu.
+    */
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 
 object UpdateProperties {
@@ -29,7 +35,8 @@ object UpdateProperties {
     parentId: js.Any = null,
     targetUrlPatterns: js.Array[String] = null,
     title: String = null,
-    `type`: String = null
+    `type`: String = null,
+    visible: js.UndefOr[Boolean] = js.undefined
   ): UpdateProperties = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
@@ -41,6 +48,7 @@ object UpdateProperties {
     if (targetUrlPatterns != null) __obj.updateDynamic("targetUrlPatterns")(targetUrlPatterns.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateProperties]
   }
 }

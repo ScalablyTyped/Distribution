@@ -18,6 +18,11 @@ package object mod {
     typings.highcharts.mod.PositionObject
   ]
   type AxisEventCallbackFunction = js.ThisFunction0[/* this */ typings.highcharts.mod.Axis, scala.Unit]
+  type AxisLabelsFormatterCallbackFunction = js.ThisFunction1[
+    /* this */ typings.highcharts.mod.AxisLabelsFormatterContextObject[scala.Double], 
+    /* that */ typings.highcharts.mod.AxisLabelsFormatterContextObject[java.lang.String], 
+    java.lang.String
+  ]
   type AxisPointBreakEventCallbackFunction = js.ThisFunction1[
     /* this */ typings.highcharts.mod.Axis, 
     /* evt */ typings.highcharts.mod.AxisPointBreakEventObject, 
@@ -28,7 +33,10 @@ package object mod {
     /* evt */ typings.highcharts.mod.AxisSetExtremesEventObject, 
     scala.Unit
   ]
-  type AxisTickPositionerCallbackFunction = js.ThisFunction0[/* this */ typings.highcharts.mod.Axis, js.Array[scala.Double]]
+  type AxisTickPositionerCallbackFunction = js.ThisFunction0[
+    /* this */ typings.highcharts.mod.Axis, 
+    typings.highcharts.mod.AxisTickPositionsArray
+  ]
   type ChartAddSeriesCallbackFunction = js.ThisFunction1[
     /* this */ typings.highcharts.mod.Chart_, 
     /* event */ typings.highcharts.mod.ChartAddSeriesEventObject, 
@@ -185,7 +193,18 @@ package object mod {
   type RelativeSize = scala.Double | java.lang.String
   type ResponsiveCallbackFunction = js.ThisFunction0[/* this */ typings.highcharts.mod.Chart_, scala.Boolean]
   type SVGDOMElement = typings.highcharts.globalsMod.GlobalSVGElement
-  type SVGPathArray = js.Array[scala.Double | typings.highcharts.mod.SVGPathCommand]
+  type SVGPathArray = js.Array[
+    js.Tuple8[
+      typings.highcharts.mod.SVGPathCommand, 
+      js.UndefOr[scala.Double], 
+      js.UndefOr[scala.Double], 
+      js.UndefOr[scala.Double], 
+      js.UndefOr[scala.Double], 
+      js.UndefOr[scala.Double], 
+      js.UndefOr[scala.Double], 
+      js.UndefOr[scala.Double]
+    ]
+  ]
   type ScreenReaderClickCallbackFunction = js.Function1[/* evt */ typings.std.MouseEvent, scala.Unit]
   type ScreenReaderFormatterCallbackFunction[T] = js.Function1[/* context */ T, java.lang.String]
   type SeriesAfterAnimateCallbackFunction = js.ThisFunction1[
@@ -252,10 +271,11 @@ package object mod {
       typings.highcharts.highchartsBooleans.`false` | java.lang.String | (js.Array[js.UndefOr[java.lang.String | scala.Null]]) | scala.Null
     ]
   ]
-  type TooltipPositionerCallbackFunction = js.Function3[
+  type TooltipPositionerCallbackFunction = js.ThisFunction3[
+    /* this */ typings.highcharts.mod.Tooltip, 
     /* labelWidth */ scala.Double, 
     /* labelHeight */ scala.Double, 
-    /* point */ typings.highcharts.mod.Point, 
+    /* point */ typings.highcharts.mod.Point | typings.highcharts.mod.TooltipPositionerPointObject, 
     typings.highcharts.mod.PositionObject
   ]
   type WrapProceedFunction = js.Function3[

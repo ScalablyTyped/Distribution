@@ -47,8 +47,8 @@ object SchemaGoogleFirestoreAdminV1beta2IndexConfig {
     val __obj = js.Dynamic.literal()
     if (ancestorField != null) __obj.updateDynamic("ancestorField")(ancestorField.asInstanceOf[js.Any])
     if (indexes != null) __obj.updateDynamic("indexes")(indexes.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverting)) __obj.updateDynamic("reverting")(reverting.asInstanceOf[js.Any])
-    if (!js.isUndefined(usesAncestorConfig)) __obj.updateDynamic("usesAncestorConfig")(usesAncestorConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverting)) __obj.updateDynamic("reverting")(reverting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(usesAncestorConfig)) __obj.updateDynamic("usesAncestorConfig")(usesAncestorConfig.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleFirestoreAdminV1beta2IndexConfig]
   }
 }

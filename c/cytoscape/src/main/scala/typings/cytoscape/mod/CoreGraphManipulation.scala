@@ -89,6 +89,10 @@ trait CoreGraphManipulation extends js.Object {
     */
   def getElementById(id: String): CollectionReturnValue = js.native
   /**
+    * check whether the specified id is in the collection
+    */
+  def hasElementWithId(id: String): Boolean = js.native
+  /**
     * Attaches the instance to the specified container for visualisation.
     * http://js.cytoscape.org/#cy.mount
     *

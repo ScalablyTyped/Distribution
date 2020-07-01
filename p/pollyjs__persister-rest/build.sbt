@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "pollyjs__persister-rest"
-version := "4.0-dt-20200128Z-4d2037"
+version := "4.0-dt-20200128Z-0ab273"
 scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "pollyjs__persister" % "2.0-dt-20200515Z-15f81f",
-  "org.scalablytyped" %%% "std" % "3.9-18cbeb")
+  "org.scalablytyped" %%% "pollyjs__persister" % "4.3-dt-20200526Z-aa3bd0",
+  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

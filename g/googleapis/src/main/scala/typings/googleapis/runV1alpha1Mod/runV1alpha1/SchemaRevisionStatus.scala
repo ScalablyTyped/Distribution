@@ -52,14 +52,14 @@ object SchemaRevisionStatus {
     conditions: js.Array[SchemaRevisionCondition] = null,
     imageDigest: String = null,
     logUrl: String = null,
-    observedGeneration: Int | Double = null,
+    observedGeneration: js.UndefOr[Double] = js.undefined,
     serviceName: String = null
   ): SchemaRevisionStatus = {
     val __obj = js.Dynamic.literal()
     if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
     if (imageDigest != null) __obj.updateDynamic("imageDigest")(imageDigest.asInstanceOf[js.Any])
     if (logUrl != null) __obj.updateDynamic("logUrl")(logUrl.asInstanceOf[js.Any])
-    if (observedGeneration != null) __obj.updateDynamic("observedGeneration")(observedGeneration.asInstanceOf[js.Any])
+    if (!js.isUndefined(observedGeneration)) __obj.updateDynamic("observedGeneration")(observedGeneration.get.asInstanceOf[js.Any])
     if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRevisionStatus]
   }

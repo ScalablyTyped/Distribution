@@ -86,7 +86,7 @@ trait SchemaDirectDeal extends js.Object {
 object SchemaDirectDeal {
   @scala.inline
   def apply(
-    accountId: Int | Double = null,
+    accountId: js.UndefOr[Double] = js.undefined,
     advertiser: String = null,
     allowsAlcohol: js.UndefOr[Boolean] = js.undefined,
     buyerAccountId: String = null,
@@ -103,9 +103,9 @@ object SchemaDirectDeal {
     startTime: String = null
   ): SchemaDirectDeal = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (!js.isUndefined(accountId)) __obj.updateDynamic("accountId")(accountId.get.asInstanceOf[js.Any])
     if (advertiser != null) __obj.updateDynamic("advertiser")(advertiser.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowsAlcohol)) __obj.updateDynamic("allowsAlcohol")(allowsAlcohol.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowsAlcohol)) __obj.updateDynamic("allowsAlcohol")(allowsAlcohol.get.asInstanceOf[js.Any])
     if (buyerAccountId != null) __obj.updateDynamic("buyerAccountId")(buyerAccountId.asInstanceOf[js.Any])
     if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode.asInstanceOf[js.Any])
     if (dealTier != null) __obj.updateDynamic("dealTier")(dealTier.asInstanceOf[js.Any])
@@ -115,7 +115,7 @@ object SchemaDirectDeal {
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (privateExchangeMinCpm != null) __obj.updateDynamic("privateExchangeMinCpm")(privateExchangeMinCpm.asInstanceOf[js.Any])
-    if (!js.isUndefined(publisherBlocksOverriden)) __obj.updateDynamic("publisherBlocksOverriden")(publisherBlocksOverriden.asInstanceOf[js.Any])
+    if (!js.isUndefined(publisherBlocksOverriden)) __obj.updateDynamic("publisherBlocksOverriden")(publisherBlocksOverriden.get.asInstanceOf[js.Any])
     if (sellerNetwork != null) __obj.updateDynamic("sellerNetwork")(sellerNetwork.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDirectDeal]

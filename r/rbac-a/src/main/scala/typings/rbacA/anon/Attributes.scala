@@ -13,7 +13,7 @@ trait Attributes[P /* <: Provider */, AM /* <: AttributesManager */] extends js.
 
 object Attributes {
   @scala.inline
-  def apply[P, AM](provider: P, attributes: AM = null): Attributes[P, AM] = {
+  def apply[/* <: typings.rbacA.mod.Provider */ P, /* <: typings.rbacA.mod.AttributesManager */ AM](provider: P, attributes: AM = null): Attributes[P, AM] = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attributes[P, AM]]

@@ -37,30 +37,38 @@ trait Bounds extends js.Object {
     */
   var minY: Double = js.native
   /**
-    * Adds other Bounds
+    * It is updated to _boundsID of corresponding object to keep bounds in sync with content.
+    * Updated from outside, thus public modifier.
     *
-    * @param {PIXI.Bounds} bounds - TODO
+    * @member {number} PIXI.Bounds#updateID
+    * @public
+    */
+  var updateID: Double = js.native
+  /**
+    * Adds other Bounds.
+    *
+    * @param {PIXI.Bounds} bounds - The Bounds to be added
     */
   def addBounds(bounds: Bounds): Unit = js.native
   /**
-    * Adds other Bounds, masked with Rectangle
+    * Adds other Bounds, masked with Rectangle.
     *
     * @param {PIXI.Bounds} bounds - TODO
     * @param {PIXI.Rectangle} area - TODO
     */
   def addBoundsArea(bounds: Bounds, area: Rectangle): Unit = js.native
   /**
-    * Adds other Bounds, masked with Bounds
+    * Adds other Bounds, masked with Bounds.
     *
-    * @param {PIXI.Bounds} bounds - TODO
+    * @param {PIXI.Bounds} bounds - The Bounds to be added.
     * @param {PIXI.Bounds} mask - TODO
     */
   def addBoundsMask(bounds: Bounds, mask: Bounds): Unit = js.native
   /**
-    * Adds other Bounds, multiplied by matrix. Bounds shouldn't be empty
+    * Adds other Bounds, multiplied by matrix. Bounds shouldn't be empty.
     *
-    * @param {PIXI.Bounds} bounds other bounds
-    * @param {PIXI.Matrix} matrix multiplicator
+    * @param {PIXI.Bounds} bounds - other bounds
+    * @param {PIXI.Matrix} matrix - multiplicator
     */
   def addBoundsMatrix(bounds: Bounds, matrix: Matrix): Unit = js.native
   /**
@@ -97,9 +105,9 @@ trait Bounds extends js.Object {
   /**
     * This function should be inlined when its possible.
     *
-    * @param {PIXI.Point} point - The point to add.
+    * @param {PIXI.IPointData} point - The point to add.
     */
-  def addPoint(point: Point): Unit = js.native
+  def addPoint(point: IPointData): Unit = js.native
   /**
     * Adds a quad, not transformed
     *
@@ -124,14 +132,14 @@ trait Bounds extends js.Object {
     */
   def addVertices(transform: Transform, vertices: Float32Array, beginOffset: Double, endOffset: Double): Unit = js.native
   /**
-    * Add an array of mesh vertices
+    * Add an array of mesh vertices.
     *
     * @param {PIXI.Matrix} matrix - mesh matrix
     * @param {Float32Array} vertices - mesh coordinates in array
     * @param {number} beginOffset - begin offset
     * @param {number} endOffset - end offset, excluded
-    * @param {number} [padX] - x padding
-    * @param {number} [padY] - y padding
+    * @param {number} [padX=0] - x padding
+    * @param {number} [padY=0] - y padding
     */
   def addVerticesMatrix(matrix: Matrix, vertices: Float32Array, beginOffset: Double, endOffset: Double): Unit = js.native
   def addVerticesMatrix(matrix: Matrix, vertices: Float32Array, beginOffset: Double, endOffset: Double, padX: Double): Unit = js.native

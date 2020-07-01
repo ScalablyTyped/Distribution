@@ -24,10 +24,10 @@ trait SchemaUnexpectedExitStatusEvent extends js.Object {
 
 object SchemaUnexpectedExitStatusEvent {
   @scala.inline
-  def apply(actionId: Int | Double = null, exitStatus: Int | Double = null): SchemaUnexpectedExitStatusEvent = {
+  def apply(actionId: js.UndefOr[Double] = js.undefined, exitStatus: js.UndefOr[Double] = js.undefined): SchemaUnexpectedExitStatusEvent = {
     val __obj = js.Dynamic.literal()
-    if (actionId != null) __obj.updateDynamic("actionId")(actionId.asInstanceOf[js.Any])
-    if (exitStatus != null) __obj.updateDynamic("exitStatus")(exitStatus.asInstanceOf[js.Any])
+    if (!js.isUndefined(actionId)) __obj.updateDynamic("actionId")(actionId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exitStatus)) __obj.updateDynamic("exitStatus")(exitStatus.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUnexpectedExitStatusEvent]
   }
 }

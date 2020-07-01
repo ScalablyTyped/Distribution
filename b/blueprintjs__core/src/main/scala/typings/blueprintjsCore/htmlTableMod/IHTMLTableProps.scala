@@ -275,7 +275,8 @@ object IHTMLTableProps {
     translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,
-    vocab: String = null
+    vocab: String = null,
+    width: Double | String = null
   ): IHTMLTableProps = {
     val __obj = js.Dynamic.literal()
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
@@ -460,6 +461,7 @@ object IHTMLTableProps {
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHTMLTableProps]
   }
 }

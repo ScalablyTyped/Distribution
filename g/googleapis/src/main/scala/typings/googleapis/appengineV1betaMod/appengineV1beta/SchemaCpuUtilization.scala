@@ -22,10 +22,10 @@ trait SchemaCpuUtilization extends js.Object {
 
 object SchemaCpuUtilization {
   @scala.inline
-  def apply(aggregationWindowLength: String = null, targetUtilization: Int | Double = null): SchemaCpuUtilization = {
+  def apply(aggregationWindowLength: String = null, targetUtilization: js.UndefOr[Double] = js.undefined): SchemaCpuUtilization = {
     val __obj = js.Dynamic.literal()
     if (aggregationWindowLength != null) __obj.updateDynamic("aggregationWindowLength")(aggregationWindowLength.asInstanceOf[js.Any])
-    if (targetUtilization != null) __obj.updateDynamic("targetUtilization")(targetUtilization.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetUtilization)) __obj.updateDynamic("targetUtilization")(targetUtilization.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCpuUtilization]
   }
 }

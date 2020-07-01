@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
   * @param comp A binary function predicates *x* element would be placed before *y*. When returns `true`, then *x* precedes *y*. Note that, because *equality* is predicated by `!comp(x, y) && !comp(y, x)`, the function must not cover the *equality* like `<=` or `>=`. It must exclude the *equality* like `<` or `>`. Default is {@link less}.
   */
 class TreeSet[Key] ()
-  extends typings.tstl.tstlMod.TreeSet[Key] {
+  extends typings.tstl.tstlModuleMod.TreeSet[Key] {
   def this(comp: Comparator[Key, Key]) = this()
   /**
     * Copy Constructor.

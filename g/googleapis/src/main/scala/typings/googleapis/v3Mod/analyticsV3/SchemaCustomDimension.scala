@@ -1,6 +1,6 @@
 package typings.googleapis.v3Mod.analyticsV3
 
-import typings.googleapis.AnonHref
+import typings.googleapis.anon.Href
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,7 +43,7 @@ trait SchemaCustomDimension extends js.Object {
     * Parent link for the custom dimension. Points to the property to which the
     * custom dimension belongs.
     */
-  var parentLink: js.UndefOr[AnonHref] = js.native
+  var parentLink: js.UndefOr[Href] = js.native
   /**
     * Scope of the custom dimension: HIT, SESSION, USER or PRODUCT.
     */
@@ -69,10 +69,10 @@ object SchemaCustomDimension {
     active: js.UndefOr[Boolean] = js.undefined,
     created: String = null,
     id: String = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     kind: String = null,
     name: String = null,
-    parentLink: AnonHref = null,
+    parentLink: Href = null,
     scope: String = null,
     selfLink: String = null,
     updated: String = null,
@@ -80,10 +80,10 @@ object SchemaCustomDimension {
   ): SchemaCustomDimension = {
     val __obj = js.Dynamic.literal()
     if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (parentLink != null) __obj.updateDynamic("parentLink")(parentLink.asInstanceOf[js.Any])

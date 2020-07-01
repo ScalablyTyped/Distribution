@@ -12,7 +12,7 @@ trait ComponentOptions[V /* <: Vue */] extends js.Object {
 
 object ComponentOptions {
   @scala.inline
-  def apply[V](store: Store[_] = null): ComponentOptions[V] = {
+  def apply[/* <: typings.vue.vueMod.Vue */ V](store: Store[_] = null): ComponentOptions[V] = {
     val __obj = js.Dynamic.literal()
     if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentOptions[V]]

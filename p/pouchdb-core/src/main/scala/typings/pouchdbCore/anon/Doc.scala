@@ -18,7 +18,7 @@ trait Doc[Content /* <: js.Object */] extends js.Object {
 
 object Doc {
   @scala.inline
-  def apply[Content](
+  def apply[/* <: js.Object */ Content](
     id: DocumentId,
     key: DocumentKey,
     value: Deleted,

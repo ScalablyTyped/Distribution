@@ -1,6 +1,7 @@
 package typings.redom.mod
 
 import typings.std.HTMLElement
+import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,9 @@ class Place_ protected () extends RedomComponent {
   def this(View: RedomComponentConstructor) = this()
   def this(View: RedomComponentConstructor, initData: js.Any) = this()
   /* CompleteClass */
-  override var el: HTMLElement = js.native
+  override var el: HTMLElement | SVGElement | RedomComponent = js.native
+  @JSName("el")
+  var el_Place_ : HTMLElement | SVGElement = js.native
   @JSName("update")
   def update_MPlace_(visible: Boolean): Unit = js.native
   @JSName("update")

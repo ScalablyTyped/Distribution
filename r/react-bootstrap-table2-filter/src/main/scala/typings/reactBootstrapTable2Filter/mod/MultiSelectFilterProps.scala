@@ -25,7 +25,7 @@ trait MultiSelectFilterProps[T /* <: js.Object */] extends js.Object {
 
 object MultiSelectFilterProps {
   @scala.inline
-  def apply[T](
+  def apply[/* <: js.Object */ T](
     options: MultiSelectFilterOptions | js.Function0[MultiSelectFilterOptions],
     className: String = null,
     comparator: Comparator = null,

@@ -52,12 +52,12 @@ trait ServiceCatalog extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AssociatePrincipalWithPortfolioOutput, Unit]
   ): Request[AssociatePrincipalWithPortfolioOutput, AWSError] = js.native
   /**
-    * Associates the specified product with the specified portfolio.
+    * Associates the specified product with the specified portfolio. A delegated admin is authorized to invoke this command.
     */
   def associateProductWithPortfolio(): Request[AssociateProductWithPortfolioOutput, AWSError] = js.native
   def associateProductWithPortfolio(callback: js.Function2[/* err */ AWSError, /* data */ AssociateProductWithPortfolioOutput, Unit]): Request[AssociateProductWithPortfolioOutput, AWSError] = js.native
   /**
-    * Associates the specified product with the specified portfolio.
+    * Associates the specified product with the specified portfolio. A delegated admin is authorized to invoke this command.
     */
   def associateProductWithPortfolio(params: AssociateProductWithPortfolioInput): Request[AssociateProductWithPortfolioOutput, AWSError] = js.native
   def associateProductWithPortfolio(
@@ -160,12 +160,12 @@ trait ServiceCatalog extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CopyProductOutput, Unit]
   ): Request[CopyProductOutput, AWSError] = js.native
   /**
-    * Creates a constraint.
+    * Creates a constraint. A delegated admin is authorized to invoke this command.
     */
   def createConstraint(): Request[CreateConstraintOutput, AWSError] = js.native
   def createConstraint(callback: js.Function2[/* err */ AWSError, /* data */ CreateConstraintOutput, Unit]): Request[CreateConstraintOutput, AWSError] = js.native
   /**
-    * Creates a constraint.
+    * Creates a constraint. A delegated admin is authorized to invoke this command.
     */
   def createConstraint(params: CreateConstraintInput): Request[CreateConstraintOutput, AWSError] = js.native
   def createConstraint(
@@ -173,12 +173,12 @@ trait ServiceCatalog extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateConstraintOutput, Unit]
   ): Request[CreateConstraintOutput, AWSError] = js.native
   /**
-    * Creates a portfolio.
+    * Creates a portfolio. A delegated admin is authorized to invoke this command.
     */
   def createPortfolio(): Request[CreatePortfolioOutput, AWSError] = js.native
   def createPortfolio(callback: js.Function2[/* err */ AWSError, /* data */ CreatePortfolioOutput, Unit]): Request[CreatePortfolioOutput, AWSError] = js.native
   /**
-    * Creates a portfolio.
+    * Creates a portfolio. A delegated admin is authorized to invoke this command.
     */
   def createPortfolio(params: CreatePortfolioInput): Request[CreatePortfolioOutput, AWSError] = js.native
   def createPortfolio(
@@ -186,12 +186,12 @@ trait ServiceCatalog extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePortfolioOutput, Unit]
   ): Request[CreatePortfolioOutput, AWSError] = js.native
   /**
-    * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the master account of an Organization. AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node.
+    * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the master account of an organization or by a delegated administrator. You can share portfolios to an organization, an organizational unit, or a specific account. Note that if a delegated admin is de-registered, they can no longer create portfolio shares.  AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node.
     */
   def createPortfolioShare(): Request[CreatePortfolioShareOutput, AWSError] = js.native
   def createPortfolioShare(callback: js.Function2[/* err */ AWSError, /* data */ CreatePortfolioShareOutput, Unit]): Request[CreatePortfolioShareOutput, AWSError] = js.native
   /**
-    * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the master account of an Organization. AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node.
+    * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the master account of an organization or by a delegated administrator. You can share portfolios to an organization, an organizational unit, or a specific account. Note that if a delegated admin is de-registered, they can no longer create portfolio shares.  AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node.
     */
   def createPortfolioShare(params: CreatePortfolioShareInput): Request[CreatePortfolioShareOutput, AWSError] = js.native
   def createPortfolioShare(
@@ -199,12 +199,12 @@ trait ServiceCatalog extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePortfolioShareOutput, Unit]
   ): Request[CreatePortfolioShareOutput, AWSError] = js.native
   /**
-    * Creates a product.
+    * Creates a product. A delegated admin is authorized to invoke this command.
     */
   def createProduct(): Request[CreateProductOutput, AWSError] = js.native
   def createProduct(callback: js.Function2[/* err */ AWSError, /* data */ CreateProductOutput, Unit]): Request[CreateProductOutput, AWSError] = js.native
   /**
-    * Creates a product.
+    * Creates a product. A delegated admin is authorized to invoke this command.
     */
   def createProduct(params: CreateProductInput): Request[CreateProductOutput, AWSError] = js.native
   def createProduct(
@@ -264,12 +264,12 @@ trait ServiceCatalog extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateTagOptionOutput, Unit]
   ): Request[CreateTagOptionOutput, AWSError] = js.native
   /**
-    * Deletes the specified constraint.
+    * Deletes the specified constraint. A delegated admin is authorized to invoke this command.
     */
   def deleteConstraint(): Request[DeleteConstraintOutput, AWSError] = js.native
   def deleteConstraint(callback: js.Function2[/* err */ AWSError, /* data */ DeleteConstraintOutput, Unit]): Request[DeleteConstraintOutput, AWSError] = js.native
   /**
-    * Deletes the specified constraint.
+    * Deletes the specified constraint. A delegated admin is authorized to invoke this command.
     */
   def deleteConstraint(params: DeleteConstraintInput): Request[DeleteConstraintOutput, AWSError] = js.native
   def deleteConstraint(
@@ -277,12 +277,12 @@ trait ServiceCatalog extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteConstraintOutput, Unit]
   ): Request[DeleteConstraintOutput, AWSError] = js.native
   /**
-    * Deletes the specified portfolio. You cannot delete a portfolio if it was shared with you or if it has associated products, users, constraints, or shared accounts.
+    * Deletes the specified portfolio. You cannot delete a portfolio if it was shared with you or if it has associated products, users, constraints, or shared accounts. A delegated admin is authorized to invoke this command.
     */
   def deletePortfolio(): Request[DeletePortfolioOutput, AWSError] = js.native
   def deletePortfolio(callback: js.Function2[/* err */ AWSError, /* data */ DeletePortfolioOutput, Unit]): Request[DeletePortfolioOutput, AWSError] = js.native
   /**
-    * Deletes the specified portfolio. You cannot delete a portfolio if it was shared with you or if it has associated products, users, constraints, or shared accounts.
+    * Deletes the specified portfolio. You cannot delete a portfolio if it was shared with you or if it has associated products, users, constraints, or shared accounts. A delegated admin is authorized to invoke this command.
     */
   def deletePortfolio(params: DeletePortfolioInput): Request[DeletePortfolioOutput, AWSError] = js.native
   def deletePortfolio(
@@ -290,12 +290,12 @@ trait ServiceCatalog extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeletePortfolioOutput, Unit]
   ): Request[DeletePortfolioOutput, AWSError] = js.native
   /**
-    * Stops sharing the specified portfolio with the specified account or organization node. Shares to an organization node can only be deleted by the master account of an Organization.
+    * Stops sharing the specified portfolio with the specified account or organization node. Shares to an organization node can only be deleted by the master account of an organization or by a delegated administrator. Note that if a delegated admin is de-registered, portfolio shares created from that account are removed.
     */
   def deletePortfolioShare(): Request[DeletePortfolioShareOutput, AWSError] = js.native
   def deletePortfolioShare(callback: js.Function2[/* err */ AWSError, /* data */ DeletePortfolioShareOutput, Unit]): Request[DeletePortfolioShareOutput, AWSError] = js.native
   /**
-    * Stops sharing the specified portfolio with the specified account or organization node. Shares to an organization node can only be deleted by the master account of an Organization.
+    * Stops sharing the specified portfolio with the specified account or organization node. Shares to an organization node can only be deleted by the master account of an organization or by a delegated administrator. Note that if a delegated admin is de-registered, portfolio shares created from that account are removed.
     */
   def deletePortfolioShare(params: DeletePortfolioShareInput): Request[DeletePortfolioShareOutput, AWSError] = js.native
   def deletePortfolioShare(
@@ -303,12 +303,12 @@ trait ServiceCatalog extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeletePortfolioShareOutput, Unit]
   ): Request[DeletePortfolioShareOutput, AWSError] = js.native
   /**
-    * Deletes the specified product. You cannot delete a product if it was shared with you or is associated with a portfolio.
+    * Deletes the specified product. You cannot delete a product if it was shared with you or is associated with a portfolio. A delegated admin is authorized to invoke this command.
     */
   def deleteProduct(): Request[DeleteProductOutput, AWSError] = js.native
   def deleteProduct(callback: js.Function2[/* err */ AWSError, /* data */ DeleteProductOutput, Unit]): Request[DeleteProductOutput, AWSError] = js.native
   /**
-    * Deletes the specified product. You cannot delete a product if it was shared with you or is associated with a portfolio.
+    * Deletes the specified product. You cannot delete a product if it was shared with you or is associated with a portfolio. A delegated admin is authorized to invoke this command.
     */
   def deleteProduct(params: DeleteProductInput): Request[DeleteProductOutput, AWSError] = js.native
   def deleteProduct(
@@ -394,12 +394,12 @@ trait ServiceCatalog extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeCopyProductStatusOutput, Unit]
   ): Request[DescribeCopyProductStatusOutput, AWSError] = js.native
   /**
-    * Gets information about the specified portfolio.
+    * Gets information about the specified portfolio. A delegated admin is authorized to invoke this command.
     */
   def describePortfolio(): Request[DescribePortfolioOutput, AWSError] = js.native
   def describePortfolio(callback: js.Function2[/* err */ AWSError, /* data */ DescribePortfolioOutput, Unit]): Request[DescribePortfolioOutput, AWSError] = js.native
   /**
-    * Gets information about the specified portfolio.
+    * Gets information about the specified portfolio. A delegated admin is authorized to invoke this command.
     */
   def describePortfolio(params: DescribePortfolioInput): Request[DescribePortfolioOutput, AWSError] = js.native
   def describePortfolio(
@@ -407,12 +407,12 @@ trait ServiceCatalog extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribePortfolioOutput, Unit]
   ): Request[DescribePortfolioOutput, AWSError] = js.native
   /**
-    * Gets the status of the specified portfolio share operation. This API can only be called by the master account in the organization.
+    * Gets the status of the specified portfolio share operation. This API can only be called by the master account in the organization or by a delegated admin.
     */
   def describePortfolioShareStatus(): Request[DescribePortfolioShareStatusOutput, AWSError] = js.native
   def describePortfolioShareStatus(callback: js.Function2[/* err */ AWSError, /* data */ DescribePortfolioShareStatusOutput, Unit]): Request[DescribePortfolioShareStatusOutput, AWSError] = js.native
   /**
-    * Gets the status of the specified portfolio share operation. This API can only be called by the master account in the organization.
+    * Gets the status of the specified portfolio share operation. This API can only be called by the master account in the organization or by a delegated admin.
     */
   def describePortfolioShareStatus(params: DescribePortfolioShareStatusInput): Request[DescribePortfolioShareStatusOutput, AWSError] = js.native
   def describePortfolioShareStatus(
@@ -565,12 +565,12 @@ trait ServiceCatalog extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeTagOptionOutput, Unit]
   ): Request[DescribeTagOptionOutput, AWSError] = js.native
   /**
-    * Disable portfolio sharing through AWS Organizations feature. This feature will not delete your current shares but it will prevent you from creating new shares throughout your organization. Current shares will not be in sync with your organization structure if it changes after calling this API. This API can only be called by the master account in the organization.
+    * Disable portfolio sharing through AWS Organizations feature. This feature will not delete your current shares but it will prevent you from creating new shares throughout your organization. Current shares will not be in sync with your organization structure if it changes after calling this API. This API can only be called by the master account in the organization. This API can't be invoked if there are active delegated administrators in the organization. Note that a delegated administrator is not authorized to invoke DisableAWSOrganizationsAccess.
     */
   def disableAWSOrganizationsAccess(): Request[DisableAWSOrganizationsAccessOutput, AWSError] = js.native
   def disableAWSOrganizationsAccess(callback: js.Function2[/* err */ AWSError, /* data */ DisableAWSOrganizationsAccessOutput, Unit]): Request[DisableAWSOrganizationsAccessOutput, AWSError] = js.native
   /**
-    * Disable portfolio sharing through AWS Organizations feature. This feature will not delete your current shares but it will prevent you from creating new shares throughout your organization. Current shares will not be in sync with your organization structure if it changes after calling this API. This API can only be called by the master account in the organization.
+    * Disable portfolio sharing through AWS Organizations feature. This feature will not delete your current shares but it will prevent you from creating new shares throughout your organization. Current shares will not be in sync with your organization structure if it changes after calling this API. This API can only be called by the master account in the organization. This API can't be invoked if there are active delegated administrators in the organization. Note that a delegated administrator is not authorized to invoke DisableAWSOrganizationsAccess.
     */
   def disableAWSOrganizationsAccess(params: DisableAWSOrganizationsAccessInput): Request[DisableAWSOrganizationsAccessOutput, AWSError] = js.native
   def disableAWSOrganizationsAccess(
@@ -606,14 +606,14 @@ trait ServiceCatalog extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociatePrincipalFromPortfolioOutput, Unit]
   ): Request[DisassociatePrincipalFromPortfolioOutput, AWSError] = js.native
   /**
-    * Disassociates the specified product from the specified portfolio. 
+    * Disassociates the specified product from the specified portfolio.  A delegated admin is authorized to invoke this command.
     */
   def disassociateProductFromPortfolio(): Request[DisassociateProductFromPortfolioOutput, AWSError] = js.native
   def disassociateProductFromPortfolio(
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateProductFromPortfolioOutput, Unit]
   ): Request[DisassociateProductFromPortfolioOutput, AWSError] = js.native
   /**
-    * Disassociates the specified product from the specified portfolio. 
+    * Disassociates the specified product from the specified portfolio.  A delegated admin is authorized to invoke this command.
     */
   def disassociateProductFromPortfolio(params: DisassociateProductFromPortfolioInput): Request[DisassociateProductFromPortfolioOutput, AWSError] = js.native
   def disassociateProductFromPortfolio(
@@ -659,12 +659,12 @@ trait ServiceCatalog extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateTagOptionFromResourceOutput, Unit]
   ): Request[DisassociateTagOptionFromResourceOutput, AWSError] = js.native
   /**
-    * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the master account in the organization. By calling this API Service Catalog will make a call to organizations:EnableAWSServiceAccess on your behalf so that your shares can be in sync with any changes in your AWS Organizations structure.
+    * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the master account in the organization. By calling this API Service Catalog will make a call to organizations:EnableAWSServiceAccess on your behalf so that your shares can be in sync with any changes in your AWS Organizations structure. Note that a delegated administrator is not authorized to invoke EnableAWSOrganizationsAccess.
     */
   def enableAWSOrganizationsAccess(): Request[EnableAWSOrganizationsAccessOutput, AWSError] = js.native
   def enableAWSOrganizationsAccess(callback: js.Function2[/* err */ AWSError, /* data */ EnableAWSOrganizationsAccessOutput, Unit]): Request[EnableAWSOrganizationsAccessOutput, AWSError] = js.native
   /**
-    * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the master account in the organization. By calling this API Service Catalog will make a call to organizations:EnableAWSServiceAccess on your behalf so that your shares can be in sync with any changes in your AWS Organizations structure.
+    * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the master account in the organization. By calling this API Service Catalog will make a call to organizations:EnableAWSServiceAccess on your behalf so that your shares can be in sync with any changes in your AWS Organizations structure. Note that a delegated administrator is not authorized to invoke EnableAWSOrganizationsAccess.
     */
   def enableAWSOrganizationsAccess(params: EnableAWSOrganizationsAccessInput): Request[EnableAWSOrganizationsAccessOutput, AWSError] = js.native
   def enableAWSOrganizationsAccess(
@@ -700,12 +700,12 @@ trait ServiceCatalog extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ExecuteProvisionedProductServiceActionOutput, Unit]
   ): Request[ExecuteProvisionedProductServiceActionOutput, AWSError] = js.native
   /**
-    * Get the Access Status for AWS Organization portfolio share feature. This API can only be called by the master account in the organization.
+    * Get the Access Status for AWS Organization portfolio share feature. This API can only be called by the master account in the organization or by a delegated admin.
     */
   def getAWSOrganizationsAccessStatus(): Request[GetAWSOrganizationsAccessStatusOutput, AWSError] = js.native
   def getAWSOrganizationsAccessStatus(callback: js.Function2[/* err */ AWSError, /* data */ GetAWSOrganizationsAccessStatusOutput, Unit]): Request[GetAWSOrganizationsAccessStatusOutput, AWSError] = js.native
   /**
-    * Get the Access Status for AWS Organization portfolio share feature. This API can only be called by the master account in the organization.
+    * Get the Access Status for AWS Organization portfolio share feature. This API can only be called by the master account in the organization or by a delegated admin.
     */
   def getAWSOrganizationsAccessStatus(params: GetAWSOrganizationsAccessStatusInput): Request[GetAWSOrganizationsAccessStatusOutput, AWSError] = js.native
   def getAWSOrganizationsAccessStatus(
@@ -765,12 +765,12 @@ trait ServiceCatalog extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListLaunchPathsOutput, Unit]
   ): Request[ListLaunchPathsOutput, AWSError] = js.native
   /**
-    * Lists the organization nodes that have access to the specified portfolio. This API can only be called by the master account in the organization.
+    * Lists the organization nodes that have access to the specified portfolio. This API can only be called by the master account in the organization or by a delegated admin. If a delegated admin is de-registered, they can no longer perform this operation.
     */
   def listOrganizationPortfolioAccess(): Request[ListOrganizationPortfolioAccessOutput, AWSError] = js.native
   def listOrganizationPortfolioAccess(callback: js.Function2[/* err */ AWSError, /* data */ ListOrganizationPortfolioAccessOutput, Unit]): Request[ListOrganizationPortfolioAccessOutput, AWSError] = js.native
   /**
-    * Lists the organization nodes that have access to the specified portfolio. This API can only be called by the master account in the organization.
+    * Lists the organization nodes that have access to the specified portfolio. This API can only be called by the master account in the organization or by a delegated admin. If a delegated admin is de-registered, they can no longer perform this operation.
     */
   def listOrganizationPortfolioAccess(params: ListOrganizationPortfolioAccessInput): Request[ListOrganizationPortfolioAccessOutput, AWSError] = js.native
   def listOrganizationPortfolioAccess(
@@ -778,12 +778,12 @@ trait ServiceCatalog extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListOrganizationPortfolioAccessOutput, Unit]
   ): Request[ListOrganizationPortfolioAccessOutput, AWSError] = js.native
   /**
-    * Lists the account IDs that have access to the specified portfolio.
+    * Lists the account IDs that have access to the specified portfolio. A delegated admin can list the accounts that have access to the shared portfolio. Note that if a delegated admin is de-registered, they can no longer perform this operation.
     */
   def listPortfolioAccess(): Request[ListPortfolioAccessOutput, AWSError] = js.native
   def listPortfolioAccess(callback: js.Function2[/* err */ AWSError, /* data */ ListPortfolioAccessOutput, Unit]): Request[ListPortfolioAccessOutput, AWSError] = js.native
   /**
-    * Lists the account IDs that have access to the specified portfolio.
+    * Lists the account IDs that have access to the specified portfolio. A delegated admin can list the accounts that have access to the shared portfolio. Note that if a delegated admin is de-registered, they can no longer perform this operation.
     */
   def listPortfolioAccess(params: ListPortfolioAccessInput): Request[ListPortfolioAccessOutput, AWSError] = js.native
   def listPortfolioAccess(

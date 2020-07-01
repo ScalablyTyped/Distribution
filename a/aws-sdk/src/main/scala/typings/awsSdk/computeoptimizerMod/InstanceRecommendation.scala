@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait InstanceRecommendation extends js.Object {
   /**
-    * The AWS account ID of the instance recommendation.
+    * The AWS account ID of the instance.
     */
   var accountId: js.UndefOr[AccountId] = js.native
   /**

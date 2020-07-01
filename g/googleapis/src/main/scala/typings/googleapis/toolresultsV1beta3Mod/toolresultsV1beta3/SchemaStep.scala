@@ -179,7 +179,7 @@ object SchemaStep {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (deviceUsageDuration != null) __obj.updateDynamic("deviceUsageDuration")(deviceUsageDuration.asInstanceOf[js.Any])
     if (dimensionValue != null) __obj.updateDynamic("dimensionValue")(dimensionValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasImages)) __obj.updateDynamic("hasImages")(hasImages.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasImages)) __obj.updateDynamic("hasImages")(hasImages.get.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (multiStep != null) __obj.updateDynamic("multiStep")(multiStep.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

@@ -21,10 +21,14 @@ trait SchemaTrack extends js.Object {
 
 object SchemaTrack {
   @scala.inline
-  def apply(track: String = null, userFraction: Int | Double = null, versionCodes: js.Array[Double] = null): SchemaTrack = {
+  def apply(
+    track: String = null,
+    userFraction: js.UndefOr[Double] = js.undefined,
+    versionCodes: js.Array[Double] = null
+  ): SchemaTrack = {
     val __obj = js.Dynamic.literal()
     if (track != null) __obj.updateDynamic("track")(track.asInstanceOf[js.Any])
-    if (userFraction != null) __obj.updateDynamic("userFraction")(userFraction.asInstanceOf[js.Any])
+    if (!js.isUndefined(userFraction)) __obj.updateDynamic("userFraction")(userFraction.get.asInstanceOf[js.Any])
     if (versionCodes != null) __obj.updateDynamic("versionCodes")(versionCodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTrack]
   }

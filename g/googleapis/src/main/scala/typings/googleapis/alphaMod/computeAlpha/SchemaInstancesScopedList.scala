@@ -1,6 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
-import typings.googleapis.AnonCode
+import typings.googleapis.anon.Code
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,12 +15,12 @@ trait SchemaInstancesScopedList extends js.Object {
     * [Output Only] Informational warning which replaces the list of instances
     * when the list is empty.
     */
-  var warning: js.UndefOr[AnonCode] = js.native
+  var warning: js.UndefOr[Code] = js.native
 }
 
 object SchemaInstancesScopedList {
   @scala.inline
-  def apply(instances: js.Array[SchemaInstance] = null, warning: AnonCode = null): SchemaInstancesScopedList = {
+  def apply(instances: js.Array[SchemaInstance] = null, warning: Code = null): SchemaInstancesScopedList = {
     val __obj = js.Dynamic.literal()
     if (instances != null) __obj.updateDynamic("instances")(instances.asInstanceOf[js.Any])
     if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])

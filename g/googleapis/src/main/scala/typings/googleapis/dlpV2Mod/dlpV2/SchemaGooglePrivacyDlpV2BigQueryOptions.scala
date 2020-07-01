@@ -47,7 +47,7 @@ object SchemaGooglePrivacyDlpV2BigQueryOptions {
     excludedFields: js.Array[SchemaGooglePrivacyDlpV2FieldId] = null,
     identifyingFields: js.Array[SchemaGooglePrivacyDlpV2FieldId] = null,
     rowsLimit: String = null,
-    rowsLimitPercent: Int | Double = null,
+    rowsLimitPercent: js.UndefOr[Double] = js.undefined,
     sampleMethod: String = null,
     tableReference: SchemaGooglePrivacyDlpV2BigQueryTable = null
   ): SchemaGooglePrivacyDlpV2BigQueryOptions = {
@@ -55,7 +55,7 @@ object SchemaGooglePrivacyDlpV2BigQueryOptions {
     if (excludedFields != null) __obj.updateDynamic("excludedFields")(excludedFields.asInstanceOf[js.Any])
     if (identifyingFields != null) __obj.updateDynamic("identifyingFields")(identifyingFields.asInstanceOf[js.Any])
     if (rowsLimit != null) __obj.updateDynamic("rowsLimit")(rowsLimit.asInstanceOf[js.Any])
-    if (rowsLimitPercent != null) __obj.updateDynamic("rowsLimitPercent")(rowsLimitPercent.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowsLimitPercent)) __obj.updateDynamic("rowsLimitPercent")(rowsLimitPercent.get.asInstanceOf[js.Any])
     if (sampleMethod != null) __obj.updateDynamic("sampleMethod")(sampleMethod.asInstanceOf[js.Any])
     if (tableReference != null) __obj.updateDynamic("tableReference")(tableReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2BigQueryOptions]

@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashMergeWith extends js.Object {
+trait LodashMergeWith extends LodashConvertible {
   def apply(customizer: MergeWithCustomizer): LodashMergeWith1x1 = js.native
   def apply[TObject](customizer: MergeWithCustomizer, `object`: TObject): LodashMergeWith1x3[TObject] = js.native
   def apply[TSource](customizer: MergeWithCustomizer, `object`: __, source: TSource): LodashMergeWith1x5[TSource] = js.native

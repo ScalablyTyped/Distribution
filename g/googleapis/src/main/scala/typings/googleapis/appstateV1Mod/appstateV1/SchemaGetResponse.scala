@@ -34,13 +34,13 @@ object SchemaGetResponse {
     currentStateVersion: String = null,
     data: String = null,
     kind: String = null,
-    stateKey: Int | Double = null
+    stateKey: js.UndefOr[Double] = js.undefined
   ): SchemaGetResponse = {
     val __obj = js.Dynamic.literal()
     if (currentStateVersion != null) __obj.updateDynamic("currentStateVersion")(currentStateVersion.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (stateKey != null) __obj.updateDynamic("stateKey")(stateKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(stateKey)) __obj.updateDynamic("stateKey")(stateKey.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGetResponse]
   }
 }

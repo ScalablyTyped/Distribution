@@ -1,7 +1,7 @@
 
 # Scala.js typings for validator
 
-Typings are for version 13.0
+Typings are for version 13.1
 
 ## Library description:
 String validation and sanitization

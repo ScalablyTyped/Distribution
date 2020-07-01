@@ -117,6 +117,7 @@ object ^ extends js.Object {
     ], 
     _
   ] = js.native
+  def combine[T /* <: StringDictionary[typings.kefir.mod.Observable[_, _]] */, K /* <: StringDictionary[typings.kefir.mod.Observable[_, _]] */](obss: T, passiveObss: K): Stream_[typings.kefir.kefirStrings.^  with TopLevel[T] with TopLevel[K], _] = js.native
   def combine[T, S, U](obss: js.Array[typings.kefir.mod.Observable[T, S]], combinator: js.Function1[/* repeated */ T, U]): Stream_[U, S] = js.native
   def combine[T, S, U](
     obss: js.Array[typings.kefir.mod.Observable[T, S]],

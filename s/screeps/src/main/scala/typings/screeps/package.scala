@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object screeps {
+  type ACCESS_KEY = typings.screeps.screepsStrings.accessKey
   type ATTACK = typings.screeps.screepsStrings.attack
   type BOTTOM = typings.screeps.screepsNumbers.`5`
   type BOTTOM_LEFT = typings.screeps.screepsNumbers.`6`
@@ -30,6 +31,7 @@ package object screeps {
   type COLOR_WHITE = typings.screeps.screepsNumbers.`10`
   type COLOR_YELLOW = typings.screeps.screepsNumbers.`6`
   type CPUShardLimits = org.scalablytyped.runtime.StringDictionary[scala.Double]
+  type CPU_UNLOCK = typings.screeps.screepsStrings.cpuUnlock
   // Color Constants
   type ColorConstant = typings.screeps.COLOR_RED | typings.screeps.COLOR_PURPLE | typings.screeps.COLOR_BLUE | typings.screeps.COLOR_CYAN | typings.screeps.COLOR_GREEN | typings.screeps.COLOR_YELLOW | typings.screeps.COLOR_ORANGE | typings.screeps.COLOR_BROWN | typings.screeps.COLOR_GREY | typings.screeps.COLOR_WHITE
   /** The commodities, produced by the Factory */
@@ -161,6 +163,7 @@ package object screeps {
   type OK = typings.screeps.screepsNumbers.`0`
   type ORDER_BUY = typings.screeps.screepsStrings.buy
   type ORDER_SELL = typings.screeps.screepsStrings.sell
+  type PIXEL = typings.screeps.screepsStrings.pixel
   type PWR_DISRUPT_SOURCE = typings.screeps.screepsNumbers.`11`
   type PWR_DISRUPT_SPAWN = typings.screeps.screepsNumbers.`9`
   type PWR_DISRUPT_TERMINAL = typings.screeps.screepsNumbers.`15`

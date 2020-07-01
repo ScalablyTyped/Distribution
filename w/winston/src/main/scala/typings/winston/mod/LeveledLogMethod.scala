@@ -10,5 +10,6 @@ trait LeveledLogMethod extends js.Object {
   def apply(message: String, callback: LogCallback): Logger = js.native
   def apply(message: String, meta: js.Any*): Logger = js.native
   def apply(message: String, meta: js.Any, callback: LogCallback): Logger = js.native
+  def apply(message: js.Any): Logger = js.native
 }
 

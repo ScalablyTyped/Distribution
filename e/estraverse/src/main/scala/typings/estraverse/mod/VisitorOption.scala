@@ -22,13 +22,13 @@ object VisitorOption extends js.Object {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VisitorOption with Double] = js.native
-  /* 1 */ @js.native
+  /* 0 */ @js.native
   object Break extends TopLevel[Break with Double]
   
   /* 2 */ @js.native
   object Remove extends TopLevel[Remove with Double]
   
-  /* 0 */ @js.native
+  /* 1 */ @js.native
   object Skip extends TopLevel[Skip with Double]
   
 }

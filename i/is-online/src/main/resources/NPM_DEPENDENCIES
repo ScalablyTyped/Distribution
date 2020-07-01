@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "is-online" : "8.3.1"
+      "is-online" : "8.4.0"
     }
   ],
   "test-dependencies" : [
     {
-      "is-online" : "8.3.1"
+      "is-online" : "8.4.0"
     }
   ],
   "compile-devDependencies" : [

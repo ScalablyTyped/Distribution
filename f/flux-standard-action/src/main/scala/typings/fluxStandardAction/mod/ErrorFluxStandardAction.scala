@@ -16,7 +16,7 @@ trait ErrorFluxStandardAction[Type /* <: String */, CustomError /* <: Error */, 
 
 object ErrorFluxStandardAction {
   @scala.inline
-  def apply[Type, CustomError, Meta](error: `true`, `type`: Type, meta: Meta = null, payload: CustomError = null): ErrorFluxStandardAction[Type, CustomError, Meta] = {
+  def apply[/* <: java.lang.String */ Type, /* <: typings.std.Error */ CustomError, Meta](error: `true`, `type`: Type, meta: Meta = null, payload: CustomError = null): ErrorFluxStandardAction[Type, CustomError, Meta] = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])

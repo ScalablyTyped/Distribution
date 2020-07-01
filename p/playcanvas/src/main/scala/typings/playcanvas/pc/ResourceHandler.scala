@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import typings.playcanvas.anon.Load
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,12 +20,16 @@ trait ResourceHandler extends js.Object {
   /**
     * Load a resource from a remote URL. When loaded (or failed),
     use the callback to return an the raw resource data (or error).
-    * @param url - The URL of the resource to load.
+    * @param url - Either the URL of the resource to load or a structure containing the
+    load and original URL.
+    * @param [url.load] - The URL to be used for loading the resource.
+    * @param [url.original] - The original URL to be used for identifying the resource
+    format. This is necessary when loading, for example from blob.
     * @param callback - The callback used when the resource is loaded or an error occurs.
     * @param [asset] - Optional asset that is passed by ResourceLoader.
     */
-  def load(url: String, callback: typings.playcanvas.pc.callbacks.ResourceHandler): Unit = js.native
-  def load(url: String, callback: typings.playcanvas.pc.callbacks.ResourceHandler, asset: Asset): Unit = js.native
+  def load(url: Load, callback: typings.playcanvas.pc.callbacks.ResourceHandler): Unit = js.native
+  def load(url: Load, callback: typings.playcanvas.pc.callbacks.ResourceHandler, asset: Asset): Unit = js.native
   /**
     * Convert raw resource data into a resource instance. E.g. Take 3D model format JSON and return a pc.Model.
     * @param url - The URL of the resource to open.

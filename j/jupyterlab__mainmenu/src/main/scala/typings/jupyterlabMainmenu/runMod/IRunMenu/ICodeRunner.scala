@@ -34,7 +34,7 @@ trait ICodeRunner[T /* <: Widget */] extends IMenuExtender[T] {
 
 object ICodeRunner {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.luminoWidgets.mod.Widget */ T](
     noun: String,
     tracker: IWidgetTracker[T],
     isEnabled: T => Boolean = null,

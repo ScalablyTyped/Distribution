@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DeleteAssetResponse extends js.Object {
   /**
-    * The status of the asset, which contains a state (DELETING after successfully calling this action) and any error message.
+    * The status of the asset, which contains a state (DELETING after successfully calling this operation) and any error message.
     */
   var assetStatus: AssetStatus = js.native
 }

@@ -1,8 +1,8 @@
 package typings.googleapis.v13Mod.adexchangebuyerV13
 
-import typings.googleapis.AnonAdvertiser
-import typings.googleapis.AnonDate
-import typings.googleapis.AnonDetails
+import typings.googleapis.anon.Advertiser
+import typings.googleapis.anon.Date
+import typings.googleapis.anon.Details
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,7 +56,7 @@ trait SchemaCreative extends js.Object {
     * Shows any corrections that were applied to this creative. Read-only. This
     * field should not be set in requests.
     */
-  var corrections: js.UndefOr[js.Array[AnonDetails]] = js.native
+  var corrections: js.UndefOr[js.Array[Details]] = js.native
   /**
     * The reasons for disapproval, if any. Note that not all disapproval
     * reasons may be categorized, so it is possible for the creative to have a
@@ -64,12 +64,12 @@ trait SchemaCreative extends js.Object {
     * case, please reach out to your TAM to help debug the issue. Read-only.
     * This field should not be set in requests.
     */
-  var disapprovalReasons: js.UndefOr[js.Array[AnonDetails]] = js.native
+  var disapprovalReasons: js.UndefOr[js.Array[Details]] = js.native
   /**
     * The filtering reasons for the creative. Read-only. This field should not
     * be set in requests.
     */
-  var filteringReasons: js.UndefOr[AnonDate] = js.native
+  var filteringReasons: js.UndefOr[Date] = js.native
   /**
     * Ad height.
     */
@@ -85,7 +85,7 @@ trait SchemaCreative extends js.Object {
   /**
     * If nativeAd is set, HTMLSnippet and videoURL should not be set.
     */
-  var nativeAd: js.UndefOr[AnonAdvertiser] = js.native
+  var nativeAd: js.UndefOr[Advertiser] = js.native
   /**
     * Detected product categories, if any. Read-only. This field should not be
     * set in requests.
@@ -130,7 +130,7 @@ object SchemaCreative {
   @scala.inline
   def apply(
     HTMLSnippet: String = null,
-    accountId: Int | Double = null,
+    accountId: js.UndefOr[Double] = js.undefined,
     advertiserId: js.Array[String] = null,
     advertiserName: String = null,
     agencyId: String = null,
@@ -138,25 +138,25 @@ object SchemaCreative {
     attribute: js.Array[Double] = null,
     buyerCreativeId: String = null,
     clickThroughUrl: js.Array[String] = null,
-    corrections: js.Array[AnonDetails] = null,
-    disapprovalReasons: js.Array[AnonDetails] = null,
-    filteringReasons: AnonDate = null,
-    height: Int | Double = null,
+    corrections: js.Array[Details] = null,
+    disapprovalReasons: js.Array[Details] = null,
+    filteringReasons: Date = null,
+    height: js.UndefOr[Double] = js.undefined,
     impressionTrackingUrl: js.Array[String] = null,
     kind: String = null,
-    nativeAd: AnonAdvertiser = null,
+    nativeAd: Advertiser = null,
     productCategories: js.Array[Double] = null,
     restrictedCategories: js.Array[Double] = null,
     sensitiveCategories: js.Array[Double] = null,
     status: String = null,
     vendorType: js.Array[Double] = null,
-    version: Int | Double = null,
+    version: js.UndefOr[Double] = js.undefined,
     videoURL: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): SchemaCreative = {
     val __obj = js.Dynamic.literal()
     if (HTMLSnippet != null) __obj.updateDynamic("HTMLSnippet")(HTMLSnippet.asInstanceOf[js.Any])
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (!js.isUndefined(accountId)) __obj.updateDynamic("accountId")(accountId.get.asInstanceOf[js.Any])
     if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
     if (advertiserName != null) __obj.updateDynamic("advertiserName")(advertiserName.asInstanceOf[js.Any])
     if (agencyId != null) __obj.updateDynamic("agencyId")(agencyId.asInstanceOf[js.Any])
@@ -167,7 +167,7 @@ object SchemaCreative {
     if (corrections != null) __obj.updateDynamic("corrections")(corrections.asInstanceOf[js.Any])
     if (disapprovalReasons != null) __obj.updateDynamic("disapprovalReasons")(disapprovalReasons.asInstanceOf[js.Any])
     if (filteringReasons != null) __obj.updateDynamic("filteringReasons")(filteringReasons.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (impressionTrackingUrl != null) __obj.updateDynamic("impressionTrackingUrl")(impressionTrackingUrl.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (nativeAd != null) __obj.updateDynamic("nativeAd")(nativeAd.asInstanceOf[js.Any])
@@ -176,9 +176,9 @@ object SchemaCreative {
     if (sensitiveCategories != null) __obj.updateDynamic("sensitiveCategories")(sensitiveCategories.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (vendorType != null) __obj.updateDynamic("vendorType")(vendorType.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     if (videoURL != null) __obj.updateDynamic("videoURL")(videoURL.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreative]
   }
 }

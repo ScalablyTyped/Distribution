@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-waypoint
 
-Typings are for version 9.0.2
+Typings are for version 9.0.3
 
 ## Library description:
 A React component to execute a function whenever you scroll to an element.

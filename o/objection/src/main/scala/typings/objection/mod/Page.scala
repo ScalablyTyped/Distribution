@@ -11,7 +11,7 @@ trait Page[M /* <: Model */] extends js.Object {
 
 object Page {
   @scala.inline
-  def apply[M](results: js.Array[M], total: Double): Page[M] = {
+  def apply[/* <: typings.objection.mod.Model */ M](results: js.Array[M], total: Double): Page[M] = {
     val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[Page[M]]
   }

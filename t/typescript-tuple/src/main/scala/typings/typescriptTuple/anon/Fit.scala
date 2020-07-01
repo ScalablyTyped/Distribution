@@ -12,7 +12,7 @@ trait Fit[Holder /* <: js.Array[_] */, Count /* <: Double */] extends js.Object 
 
 object Fit {
   @scala.inline
-  def apply[Holder, Count](
+  def apply[/* <: js.Array[_] */ Holder, /* <: scala.Double */ Count](
     fit: Holder,
     unfit: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias typescript-tuple.typescript-tuple/lib/utils.Repeat<Type, Count, typescript-tuple.typescript-tuple/lib/utils.Prepend<Holder, Type>> */ js.Object,
     union: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias typescript-tuple.typescript-tuple/lib/utils.Repeat<Type, Holder['length'], []> */ js.Object

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DeleteProfilingGroupRequest extends js.Object {
   /**
-    * The profiling group name to delete.
+    * The name of the profiling group to delete.
     */
   var profilingGroupName: ProfilingGroupName = js.native
 }

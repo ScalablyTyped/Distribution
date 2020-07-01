@@ -11,15 +11,15 @@ trait BlockDeviceMapping extends js.Object {
     */
   var DeviceName: XmlStringMaxLen255 = js.native
   /**
-    * The information about the Amazon EBS volume.
+    * Parameters used to automatically set up EBS volumes when an instance is launched. You can specify either VirtualName or Ebs, but not both.
     */
   var Ebs: js.UndefOr[typings.awsSdk.autoscalingMod.Ebs] = js.native
   /**
-    * Suppresses a device mapping. If this parameter is true for the root device, the instance might fail the EC2 health check. In that case, Amazon EC2 Auto Scaling launches a replacement instance.
+    * Setting this value to true suppresses the specified device included in the block device mapping of the AMI. If NoDevice is true for the root device, instances might fail the EC2 health check. In that case, Amazon EC2 Auto Scaling launches replacement instances. If you specify NoDevice, you cannot specify Ebs.
     */
   var NoDevice: js.UndefOr[typings.awsSdk.autoscalingMod.NoDevice] = js.native
   /**
-    * The name of the virtual device (for example, ephemeral0).
+    * The name of the virtual device (for example, ephemeral0). You can specify either VirtualName or Ebs, but not both.
     */
   var VirtualName: js.UndefOr[XmlStringMaxLen255] = js.native
 }

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DeleteBackendEnvironmentRequest extends js.Object {
   /**
-    *  Unique Id of an Amplify App. 
+    *  The unique ID of an Amplify app. 
     */
   var appId: AppId = js.native
   /**
-    *  Name of a backend environment of an Amplify App. 
+    *  The name of a backend environment of an Amplify app. 
     */
   var environmentName: EnvironmentName = js.native
 }

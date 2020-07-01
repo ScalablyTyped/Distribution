@@ -33,7 +33,7 @@ object SchemaBackendServiceIAP {
     oauth2ClientSecretSha256: String = null
   ): SchemaBackendServiceIAP = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (oauth2ClientId != null) __obj.updateDynamic("oauth2ClientId")(oauth2ClientId.asInstanceOf[js.Any])
     if (oauth2ClientInfo != null) __obj.updateDynamic("oauth2ClientInfo")(oauth2ClientInfo.asInstanceOf[js.Any])
     if (oauth2ClientSecret != null) __obj.updateDynamic("oauth2ClientSecret")(oauth2ClientSecret.asInstanceOf[js.Any])

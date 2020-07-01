@@ -1,7 +1,7 @@
 
 # Scala.js typings for waterline
 
-Typings are for version 0.11
+Typings are for version 0.13
 
 ## Library description:
 An ORM for Node.js and the Sails framework

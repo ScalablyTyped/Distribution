@@ -11,7 +11,7 @@ trait GetInitialProps[C /* <: BaseContext */, IP] extends js.Object {
 
 object GetInitialProps {
   @scala.inline
-  def apply[C, IP](getInitialProps: /* context */ C => IP | js.Promise[IP] = null): GetInitialProps[C, IP] = {
+  def apply[/* <: typings.nextServer.libUtilsMod.BaseContext */ C, IP](getInitialProps: /* context */ C => IP | js.Promise[IP] = null): GetInitialProps[C, IP] = {
     val __obj = js.Dynamic.literal()
     if (getInitialProps != null) __obj.updateDynamic("getInitialProps")(js.Any.fromFunction1(getInitialProps))
     __obj.asInstanceOf[GetInitialProps[C, IP]]

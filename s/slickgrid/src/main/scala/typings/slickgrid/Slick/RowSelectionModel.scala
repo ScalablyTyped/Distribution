@@ -13,7 +13,7 @@ trait RowSelectionModel[T /* <: SlickData */, E] extends SelectionModel[T, E] {
 
 object RowSelectionModel {
   @scala.inline
-  def apply[T, E](
+  def apply[/* <: typings.slickgrid.Slick.SlickData */ T, E](
     destroy: () => Unit,
     getSelectedRanges: () => js.Array[Double],
     getSelectedRows: () => js.Array[Double],

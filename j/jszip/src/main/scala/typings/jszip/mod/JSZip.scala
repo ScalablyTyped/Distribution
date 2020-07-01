@@ -12,6 +12,7 @@ import typings.jszip.jszipStrings.base64
 import typings.jszip.jszipStrings.binarystring
 import typings.jszip.jszipStrings.blob
 import typings.jszip.jszipStrings.nodebuffer
+import typings.jszip.jszipStrings.string
 import typings.jszip.jszipStrings.text
 import typings.jszip.jszipStrings.uint8array
 import typings.node.Buffer
@@ -89,7 +90,7 @@ Instantiable0[JSZip]
     * @return File matching path, null if no file found
     */
   @JSName("file")
-  def file_JSZipObject(path: String): JSZipObject = js.native
+  def file_Union(path: String): JSZipObject | Null = js.native
   /**
     * Get all files which match the given filter function
     *
@@ -103,7 +104,7 @@ Instantiable0[JSZip]
     * @param name Name of the folder
     * @return New JSZip object with the given folder as root or null
     */
-  def folder(name: String): JSZip = js.native
+  def folder(name: String): JSZip | Null = js.native
   /**
     * Returns new JSZip instances with the matching folders as root
     *
@@ -149,6 +150,10 @@ Instantiable0[JSZip]
   def generateAsync_nodebuffer(options: JSZipGeneratorOptions[nodebuffer]): js.Promise[Buffer] = js.native
   @JSName("generateAsync")
   def generateAsync_nodebuffer(options: JSZipGeneratorOptions[nodebuffer], onUpdate: OnUpdateCallback): js.Promise[Buffer] = js.native
+  @JSName("generateAsync")
+  def generateAsync_string(options: JSZipGeneratorOptions[string]): js.Promise[String] = js.native
+  @JSName("generateAsync")
+  def generateAsync_string(options: JSZipGeneratorOptions[string], onUpdate: OnUpdateCallback): js.Promise[String] = js.native
   @JSName("generateAsync")
   def generateAsync_text(options: JSZipGeneratorOptions[text]): js.Promise[String] = js.native
   @JSName("generateAsync")

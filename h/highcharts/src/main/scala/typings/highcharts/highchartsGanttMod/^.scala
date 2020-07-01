@@ -14,6 +14,5 @@ object ^ extends js.Object {
   var dateFormats: Dictionary[TimeFormatCallbackFunction] = js.native
   var defaultOptions: Options = js.native
   var time: typings.highcharts.mod.Time_ = js.native
-  var wrap: js.Any = js.native
 }
 

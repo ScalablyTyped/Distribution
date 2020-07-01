@@ -16,7 +16,7 @@ trait InfiniteCODENAMEERROR[TupleSet /* <: js.Array[js.Array[_]] */] extends js.
 
 object InfiniteCODENAMEERROR {
   @scala.inline
-  def apply[TupleSet](
+  def apply[/* <: js.Array[js.Array[_]] */ TupleSet](
     empty: js.Array[js.Any],
     infinite: CODENAMEERROR,
     nonEmpty: Concat[

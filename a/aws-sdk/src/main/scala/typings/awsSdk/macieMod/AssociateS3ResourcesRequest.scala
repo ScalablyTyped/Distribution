@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AssociateS3ResourcesRequest extends js.Object {
   /**
-    * The ID of the Amazon Macie member account whose resources you want to associate with Macie. 
+    * The ID of the Amazon Macie Classic member account whose resources you want to associate with Macie Classic. 
     */
   var memberAccountId: js.UndefOr[AWSAccountId] = js.native
   /**
-    * The S3 resources that you want to associate with Amazon Macie for monitoring and data classification. 
+    * The S3 resources that you want to associate with Amazon Macie Classic for monitoring and data classification. 
     */
   var s3Resources: S3ResourcesClassification = js.native
 }

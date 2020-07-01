@@ -29,6 +29,8 @@ class DbMutationQueue protected () extends js.Object {
     *
     * After sending this token, earlier tokens may not be used anymore so
     * only a single stream token is retained.
+    *
+    * NOTE: this is deprecated and no longer used by the code.
     */
   lastStreamToken: String
   ) = this()
@@ -49,6 +51,8 @@ class DbMutationQueue protected () extends js.Object {
     *
     * After sending this token, earlier tokens may not be used anymore so
     * only a single stream token is retained.
+    *
+    * NOTE: this is deprecated and no longer used by the code.
     */
   var lastStreamToken: String = js.native
   /**

@@ -38,7 +38,7 @@ trait State[T, U, V /* <: String */] extends js.Object {
 
 object State {
   @scala.inline
-  def apply[T, U, V](interval: Double, phase: Phase[V], timestamp: Double, payload: T | U = null): State[T, U, V] = {
+  def apply[T, U, /* <: java.lang.String */ V](interval: Double, phase: Phase[V], timestamp: Double, payload: T | U = null): State[T, U, V] = {
     val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[State[T, U, V]]
   }

@@ -20,8 +20,10 @@ trait Connection_ extends ConnectionBase {
   /**
     * Switches to a different database using the same connection pool.
     * @param name The database name
+    * @param options Additional options
     * @returns New Connection Object
     */
   def useDb(name: String): Connection_ = js.native
+  def useDb(name: String, options: ConnectionUseDbOptions): Connection_ = js.native
 }
 

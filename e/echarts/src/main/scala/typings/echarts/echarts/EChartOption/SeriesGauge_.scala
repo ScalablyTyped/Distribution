@@ -1,18 +1,17 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.anon.AnimationDurationUpdate
 import typings.echarts.anon.AnimationEasing
 import typings.echarts.anon.AnimationEasingUpdate
+import typings.echarts.anon.AnimationThreshold
 import typings.echarts.anon.BorderType
-import typings.echarts.anon.ExtraCssText
 import typings.echarts.anon.ItemStyleBorderType
 import typings.echarts.anon.LengthLineStyle
 import typings.echarts.anon.LengthShow
 import typings.echarts.anon.LineStyleShow
 import typings.echarts.anon.OffsetCenter
+import typings.echarts.anon.Padding
 import typings.echarts.anon.Rich
 import typings.echarts.anon.SplitNumber
-import typings.echarts.anon.TextBorderColor
 import typings.echarts.echarts.EChartOption.SeriesGauge.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -132,7 +131,7 @@ trait SeriesGauge_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel
     */
-  var axisLabel: js.UndefOr[Rich] = js.undefined
+  var axisLabel: js.UndefOr[Padding] = js.undefined
   /**
     * The related configuration about the axis line of gauge chart.
     *
@@ -181,7 +180,7 @@ trait SeriesGauge_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.detail
     */
-  var detail: js.UndefOr[TextBorderColor] = js.undefined
+  var detail: js.UndefOr[Rich] = js.undefined
   /**
     * @see https://echarts.apache.org/en/option.html#series-gauge.emphasis
     */
@@ -218,21 +217,21 @@ trait SeriesGauge_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.markArea
     */
-  var markArea: js.UndefOr[AnimationEasingUpdate] = js.undefined
+  var markArea: js.UndefOr[AnimationThreshold] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.markLine
     */
-  var markLine: js.UndefOr[AnimationEasing] = js.undefined
+  var markLine: js.UndefOr[AnimationEasingUpdate] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.markPoint
     */
-  var markPoint: js.UndefOr[AnimationDurationUpdate] = js.undefined
+  var markPoint: js.UndefOr[AnimationEasing] = js.undefined
   /**
     * The maximum data value which map to
     * [maxAngle](https://echarts.apache.org/en/option.html#series-gauge.maxAngle)
@@ -325,7 +324,7 @@ trait SeriesGauge_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
   /**
     * @default
     * "gauge"
@@ -345,21 +344,21 @@ object SeriesGauge_ {
     animationEasing: String = null,
     animationEasingUpdate: String = null,
     animationThreshold: js.UndefOr[Double] = js.undefined,
-    axisLabel: Rich = null,
+    axisLabel: Padding = null,
     axisLine: LineStyleShow = null,
     axisTick: SplitNumber = null,
     clockwise: js.UndefOr[Boolean] = js.undefined,
     data: js.Array[
       (js.Array[Unit | String | Double | DataObject]) | DataObject | Double | String | Unit
     ] = null,
-    detail: TextBorderColor = null,
+    detail: Rich = null,
     emphasis: ItemStyleBorderType = null,
     endAngle: js.UndefOr[Double] = js.undefined,
     id: String = null,
     itemStyle: BorderType = null,
-    markArea: AnimationEasingUpdate = null,
-    markLine: AnimationEasing = null,
-    markPoint: AnimationDurationUpdate = null,
+    markArea: AnimationThreshold = null,
+    markLine: AnimationEasingUpdate = null,
+    markPoint: AnimationEasing = null,
     max: js.UndefOr[Double] = js.undefined,
     min: js.UndefOr[Double] = js.undefined,
     name: String = null,
@@ -369,7 +368,7 @@ object SeriesGauge_ {
     splitNumber: js.UndefOr[Double] = js.undefined,
     startAngle: js.UndefOr[Double] = js.undefined,
     title: OffsetCenter = null,
-    tooltip: ExtraCssText = null,
+    tooltip: BaseTooltip = null,
     `type`: String = null
   ): SeriesGauge_ = {
     val __obj = js.Dynamic.literal()

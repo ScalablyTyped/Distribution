@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ExportTaskS3LocationRequest extends js.Object {
   /**
-    * The destination S3 bucket.
+    * The destination Amazon S3 bucket.
     */
   var S3Bucket: String = js.native
   /**

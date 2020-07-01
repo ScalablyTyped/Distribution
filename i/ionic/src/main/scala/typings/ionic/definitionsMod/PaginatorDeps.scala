@@ -16,7 +16,7 @@ trait PaginatorDeps[T /* <: Response[js.Array[js.Object]] */, S] extends js.Obje
 
 object PaginatorDeps {
   @scala.inline
-  def apply[T, S](
+  def apply[/* <: typings.ionic.definitionsMod.Response[js.Array[js.Object]] */ T, S](
     client: IClient,
     guard: APIResponseSuccess => /* is T */ Boolean,
     reqgen: () => js.Promise[Req],

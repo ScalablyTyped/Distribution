@@ -40,7 +40,7 @@ trait Descriptor[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */] extends js.Object
 
 object Descriptor {
   @scala.inline
-  def apply[Obj, S̤t̤a̤m̤p̤](
+  def apply[Obj, /* <: typings.stampit.mod.StampSignature */ S̤t̤a̤m̤p̤](
     composers: js.Array[Composer[S̤t̤a̤m̤p̤]] = null,
     configuration: PropertyMap = null,
     deepConfiguration: PropertyMap = null,

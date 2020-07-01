@@ -30,6 +30,7 @@ object AttachSessionOptions {
     port: js.UndefOr[Double] = js.undefined,
     protocol: String = null,
     queryParams: StringDictionary[String] = null,
+    requestedCapabilities: DesiredCapabilities = null,
     transformRequest: /* requestOptions */ HTTPRequestOptions => HTTPRequestOptions = null,
     transformResponse: (/* response */ HTTPResponse, /* requestOptions */ HTTPRequestOptions) => HTTPResponse = null,
     user: String = null
@@ -48,6 +49,7 @@ object AttachSessionOptions {
     if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
+    if (requestedCapabilities != null) __obj.updateDynamic("requestedCapabilities")(requestedCapabilities.asInstanceOf[js.Any])
     if (transformRequest != null) __obj.updateDynamic("transformRequest")(js.Any.fromFunction1(transformRequest))
     if (transformResponse != null) __obj.updateDynamic("transformResponse")(js.Any.fromFunction2(transformResponse))
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])

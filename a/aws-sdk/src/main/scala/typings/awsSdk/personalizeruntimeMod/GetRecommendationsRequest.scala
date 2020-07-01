@@ -15,6 +15,10 @@ trait GetRecommendationsRequest extends js.Object {
     */
   var context: js.UndefOr[Context] = js.native
   /**
+    * The ARN of the filter to apply to the returned recommendations. For more information, see Using Filters with Amazon Personalize.
+    */
+  var filterArn: js.UndefOr[Arn] = js.native
+  /**
     * The item ID to provide recommendations for. Required for RELATED_ITEMS recipe type.
     */
   var itemId: js.UndefOr[ItemID] = js.native
@@ -33,12 +37,14 @@ object GetRecommendationsRequest {
   def apply(
     campaignArn: Arn,
     context: Context = null,
+    filterArn: Arn = null,
     itemId: ItemID = null,
     numResults: js.UndefOr[NumResults] = js.undefined,
     userId: UserID = null
   ): GetRecommendationsRequest = {
     val __obj = js.Dynamic.literal(campaignArn = campaignArn.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (filterArn != null) __obj.updateDynamic("filterArn")(filterArn.asInstanceOf[js.Any])
     if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
     if (!js.isUndefined(numResults)) __obj.updateDynamic("numResults")(numResults.get.asInstanceOf[js.Any])
     if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])

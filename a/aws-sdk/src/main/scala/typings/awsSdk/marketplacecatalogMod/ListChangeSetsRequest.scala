@@ -23,7 +23,7 @@ trait ListChangeSetsRequest extends js.Object {
     */
   var NextToken: js.UndefOr[typings.awsSdk.marketplacecatalogMod.NextToken] = js.native
   /**
-    * An object that contains two attributes, sortBy and sortOrder.
+    * An object that contains two attributes, SortBy and SortOrder.
     */
   var Sort: js.UndefOr[typings.awsSdk.marketplacecatalogMod.Sort] = js.native
 }

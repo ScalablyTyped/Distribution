@@ -11,9 +11,13 @@ trait CreateConnectionInput extends js.Object {
     */
   var ConnectionName: typings.awsSdk.codestarconnectionsMod.ConnectionName = js.native
   /**
-    * The name of the external provider where your third-party code repository is configured. Currently, the valid provider type is Bitbucket.
+    * The Amazon Resource Name (ARN) of the host associated with the connection to be created.
     */
-  var ProviderType: typings.awsSdk.codestarconnectionsMod.ProviderType = js.native
+  var HostArn: js.UndefOr[typings.awsSdk.codestarconnectionsMod.HostArn] = js.native
+  /**
+    * The name of the external provider where your third-party code repository is configured. The valid provider type is Bitbucket.
+    */
+  var ProviderType: js.UndefOr[typings.awsSdk.codestarconnectionsMod.ProviderType] = js.native
   /**
     * The key-value pair to use when tagging the resource.
     */
@@ -22,8 +26,15 @@ trait CreateConnectionInput extends js.Object {
 
 object CreateConnectionInput {
   @scala.inline
-  def apply(ConnectionName: ConnectionName, ProviderType: ProviderType, Tags: TagList = null): CreateConnectionInput = {
-    val __obj = js.Dynamic.literal(ConnectionName = ConnectionName.asInstanceOf[js.Any], ProviderType = ProviderType.asInstanceOf[js.Any])
+  def apply(
+    ConnectionName: ConnectionName,
+    HostArn: HostArn = null,
+    ProviderType: ProviderType = null,
+    Tags: TagList = null
+  ): CreateConnectionInput = {
+    val __obj = js.Dynamic.literal(ConnectionName = ConnectionName.asInstanceOf[js.Any])
+    if (HostArn != null) __obj.updateDynamic("HostArn")(HostArn.asInstanceOf[js.Any])
+    if (ProviderType != null) __obj.updateDynamic("ProviderType")(ProviderType.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateConnectionInput]
   }

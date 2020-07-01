@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 ///////////////////////////////////////////////////////////////////////////
 // ControllerService
-// see http://docs.angularjs.org/api/ng.$controller
-// see http://docs.angularjs.org/api/ng.$controllerProvider
+// see http://docs.angularjs.org/api/ng/service/$controller
+// see http://docs.angularjs.org/api/ng/provider/$controllerProvider
 ///////////////////////////////////////////////////////////////////////////
 /**
   * The minimal local definitions required by $controller(ctrl, locals) calls.

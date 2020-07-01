@@ -45,13 +45,13 @@ trait SchemaSubscription extends js.Object {
 object SchemaSubscription {
   @scala.inline
   def apply(
-    ackDeadlineSeconds: Int | Double = null,
+    ackDeadlineSeconds: js.UndefOr[Double] = js.undefined,
     name: String = null,
     pushConfig: SchemaPushConfig = null,
     topic: String = null
   ): SchemaSubscription = {
     val __obj = js.Dynamic.literal()
-    if (ackDeadlineSeconds != null) __obj.updateDynamic("ackDeadlineSeconds")(ackDeadlineSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(ackDeadlineSeconds)) __obj.updateDynamic("ackDeadlineSeconds")(ackDeadlineSeconds.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (pushConfig != null) __obj.updateDynamic("pushConfig")(pushConfig.asInstanceOf[js.Any])
     if (topic != null) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])

@@ -9,8 +9,8 @@ trait PluginObj[S] extends js.Object {
   var inherits: js.UndefOr[js.Any] = js.undefined
   var manipulateOptions: js.UndefOr[js.Function2[/* opts */ js.Any, /* parserOpts */ js.Any, Unit]] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var post: js.UndefOr[js.ThisFunction1[/* this */ S, /* state */ js.Any, Unit]] = js.undefined
-  var pre: js.UndefOr[js.ThisFunction1[/* this */ S, /* state */ js.Any, Unit]] = js.undefined
+  var post: js.UndefOr[js.ThisFunction1[/* this */ S, /* state */ S, Unit]] = js.undefined
+  var pre: js.UndefOr[js.ThisFunction1[/* this */ S, /* state */ S, Unit]] = js.undefined
   var visitor: Visitor[S]
 }
 
@@ -21,8 +21,8 @@ object PluginObj {
     inherits: js.Any = null,
     manipulateOptions: (/* opts */ js.Any, /* parserOpts */ js.Any) => Unit = null,
     name: String = null,
-    post: js.ThisFunction1[/* this */ S, /* state */ js.Any, Unit] = null,
-    pre: js.ThisFunction1[/* this */ S, /* state */ js.Any, Unit] = null
+    post: js.ThisFunction1[/* this */ S, /* state */ S, Unit] = null,
+    pre: js.ThisFunction1[/* this */ S, /* state */ S, Unit] = null
   ): PluginObj[S] = {
     val __obj = js.Dynamic.literal(visitor = visitor.asInstanceOf[js.Any])
     if (inherits != null) __obj.updateDynamic("inherits")(inherits.asInstanceOf[js.Any])

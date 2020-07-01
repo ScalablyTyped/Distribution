@@ -132,7 +132,7 @@ abstract class BaseLanguageClient protected () extends js.Object {
   @JSName("getFeature")
   def getFeature_textDocumentcodeAction(request: textDocumentSlashcodeAction): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[CodeActionProvider] = js.native
   @JSName("getFeature")
-  def getFeature_textDocumentcompletion(request: textDocumentSlashcompletion): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[CompletionItemProvider] = js.native
+  def getFeature_textDocumentcompletion(request: textDocumentSlashcompletion): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[CompletionItemProvider[typings.vscode.mod.CompletionItem]] = js.native
   @JSName("getFeature")
   def getFeature_textDocumentdeclaration(request: textDocumentSlashdeclaration): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[DeclarationProvider] = js.native
   @JSName("getFeature")
@@ -150,7 +150,7 @@ abstract class BaseLanguageClient protected () extends js.Object {
   @JSName("getFeature")
   def getFeature_textDocumentdocumentHighlight(request: textDocumentSlashdocumentHighlight): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[DocumentHighlightProvider] = js.native
   @JSName("getFeature")
-  def getFeature_textDocumentdocumentLink(request: textDocumentSlashdocumentLink): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[DocumentLinkProvider] = js.native
+  def getFeature_textDocumentdocumentLink(request: textDocumentSlashdocumentLink): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[DocumentLinkProvider[typings.vscode.mod.DocumentLink]] = js.native
   @JSName("getFeature")
   def getFeature_textDocumentfoldingRange(request: textDocumentSlashfoldingRange): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[FoldingRangeProvider] = js.native
   @JSName("getFeature")
@@ -185,7 +185,7 @@ abstract class BaseLanguageClient protected () extends js.Object {
     ]
   ]) = js.native
   @JSName("getFeature")
-  def getFeature_workspacesymbol(request: workspaceSlashsymbol): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with WorkspaceProviderFeature[WorkspaceSymbolProvider] = js.native
+  def getFeature_workspacesymbol(request: workspaceSlashsymbol): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with WorkspaceProviderFeature[WorkspaceSymbolProvider[typings.vscode.mod.SymbolInformation]] = js.native
   /* protected */ def handleConnectionClosed(): Unit = js.native
   def info(message: String): Unit = js.native
   def info(message: String, data: js.Any): Unit = js.native

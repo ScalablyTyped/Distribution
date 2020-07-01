@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TabIdNumber extends js.Object {
-  /** Specify the tab to get the popup from. */
+  /** The ID of the tab. */
   var tabId: Double
 }
 

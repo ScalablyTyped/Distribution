@@ -36,7 +36,7 @@ object SchemaBuildBazelRemoteExecutionV2OutputFile {
   ): SchemaBuildBazelRemoteExecutionV2OutputFile = {
     val __obj = js.Dynamic.literal()
     if (digest != null) __obj.updateDynamic("digest")(digest.asInstanceOf[js.Any])
-    if (!js.isUndefined(isExecutable)) __obj.updateDynamic("isExecutable")(isExecutable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExecutable)) __obj.updateDynamic("isExecutable")(isExecutable.get.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2OutputFile]
   }

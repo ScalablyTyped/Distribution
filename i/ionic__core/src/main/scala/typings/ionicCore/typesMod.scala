@@ -63,6 +63,9 @@ object typesMod extends js.Object {
   def createAnimation(animationId: String): Animation = js.native
   def createGesture(config: GestureConfig): Gesture = js.native
   def getMode(): Mode = js.native
+  def getPlatforms(): js.Array[
+    ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
+  ] = js.native
   def getPlatforms(win: js.Any): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = js.native

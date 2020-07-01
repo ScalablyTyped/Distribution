@@ -1,6 +1,7 @@
 package typings.antd.directoryTreeMod
 
 import typings.antd.anon.Checked
+import typings.antd.anon.ShowLeafIcon
 import typings.antd.treeTreeMod.AntTreeNode
 import typings.antd.treeTreeMod.AntdTreeNodeAttribute
 import typings.antd.treeTreeMod.TreeProps
@@ -83,7 +84,7 @@ object DirectoryTreeProps {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
     ] = null,
     showIcon: js.UndefOr[Boolean] = js.undefined,
-    showLine: js.UndefOr[Boolean] = js.undefined,
+    showLine: Boolean | ShowLeafIcon = null,
     style: CSSProperties = null,
     switcherIcon: ReactElement = null
   ): DirectoryTreeProps = {
@@ -126,7 +127,7 @@ object DirectoryTreeProps {
     if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.get.asInstanceOf[js.Any])
     if (selectedKeys != null) __obj.updateDynamic("selectedKeys")(selectedKeys.asInstanceOf[js.Any])
     if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLine)) __obj.updateDynamic("showLine")(showLine.get.asInstanceOf[js.Any])
+    if (showLine != null) __obj.updateDynamic("showLine")(showLine.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (switcherIcon != null) __obj.updateDynamic("switcherIcon")(switcherIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectoryTreeProps]

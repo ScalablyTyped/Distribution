@@ -66,7 +66,7 @@ object SchemaExtendedCompensationInfoCompensationEntry {
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (!js.isUndefined(unspecified)) __obj.updateDynamic("unspecified")(unspecified.asInstanceOf[js.Any])
+    if (!js.isUndefined(unspecified)) __obj.updateDynamic("unspecified")(unspecified.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExtendedCompensationInfoCompensationEntry]
   }
 }

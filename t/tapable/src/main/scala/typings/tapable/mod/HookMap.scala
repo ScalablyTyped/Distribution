@@ -1,5 +1,8 @@
 package typings.tapable.mod
 
+import typings.tapable.tapableStrings.async
+import typings.tapable.tapableStrings.promise
+import typings.tapable.tapableStrings.sync
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,30 +19,33 @@ class HookMap[T1, T2, T3] protected () extends js.Object {
     name: String,
     fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */ js.Any, _]
   ): Unit = js.native
-  def tap(
+  def tapAsync(
     key: js.Any,
-    name: Tap,
+    name: String,
+    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */ js.Any, Unit]
+  ): Unit = js.native
+  @JSName("tapAsync")
+  def tapAsync_async(
+    key: js.Any,
+    name: TapOptions[async, T1, T2, T3, _],
+    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */ js.Any, Unit]
+  ): Unit = js.native
+  def tapPromise(
+    key: js.Any,
+    name: String,
+    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */ js.Any, js.Promise[_]]
+  ): Unit = js.native
+  @JSName("tapPromise")
+  def tapPromise_promise(
+    key: js.Any,
+    name: TapOptions[promise, T1, T2, T3, _],
+    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */ js.Any, js.Promise[_]]
+  ): Unit = js.native
+  @JSName("tap")
+  def tap_sync(
+    key: js.Any,
+    name: TapOptions[sync, T1, T2, T3, _],
     fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */ js.Any, _]
-  ): Unit = js.native
-  def tapAsync(
-    key: js.Any,
-    name: String,
-    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */ js.Any, Unit]
-  ): Unit = js.native
-  def tapAsync(
-    key: js.Any,
-    name: Tap,
-    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */ js.Any, Unit]
-  ): Unit = js.native
-  def tapPromise(
-    key: js.Any,
-    name: String,
-    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */ js.Any, js.Promise[_]]
-  ): Unit = js.native
-  def tapPromise(
-    key: js.Any,
-    name: Tap,
-    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */ js.Any, js.Promise[_]]
   ): Unit = js.native
 }
 

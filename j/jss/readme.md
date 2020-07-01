@@ -1,7 +1,7 @@
 
 # Scala.js typings for jss
 
-Typings are for version 10.1.1
+Typings are for version 10.3.0
 
 ## Library description:
 A lib for generating Style Sheets with JavaScript.

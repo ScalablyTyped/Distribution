@@ -17,9 +17,9 @@ import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fabric.fabricImplMod.IStaticCanvasOptions because Already inherited
-- typings.fabric.fabricImplMod.ICanvasOptions because var conflicts: allowTouchScrolling, backgroundColor, backgroundImage, backgroundVpt, clipPath, clipTo, controlsAboveOverlay, enableRetinaScaling, imageSmoothingEnabled, includeDefaultValues, overlayColor, overlayImage, overlayVpt, renderOnAddRemove, skipOffscreen, stateful, svgViewportTransformation, viewportTransform, vptCoords. Inlined uniScaleTransform, uniScaleKey, centeredScaling, centeredRotation, fill, centeredKey, altActionKey, interactive, selection, selectionKey, altSelectionKey, selectionColor, selectionDashArray, selectionBorderColor, selectionLineWidth, selectionFullyContained, hoverCursor, moveCursor, defaultCursor, freeDrawingCursor, rotationCursor, notAllowedCursor, containerClass, perPixelTargetFind, targetFindTolerance, skipTargetFind, isDrawingMode, preserveObjectStacking, snapAngle, snapThreshold, stopContextMenu, fireRightClick, fireMiddleClick, targets */ @JSImport("fabric/fabric-impl", "Canvas")
+- typings.fabric.fabricImplMod.ICanvasOptions because var conflicts: allowTouchScrolling, backgroundColor, backgroundImage, backgroundVpt, clipPath, clipTo, controlsAboveOverlay, enableRetinaScaling, imageSmoothingEnabled, includeDefaultValues, overlayColor, overlayImage, overlayVpt, renderOnAddRemove, skipOffscreen, stateful, svgViewportTransformation, viewportTransform, vptCoords. Inlined uniScaleTransform, uniScaleKey, centeredScaling, centeredRotation, fill, centeredKey, altActionKey, interactive, selection, selectionKey, altSelectionKey, selectionColor, selectionDashArray, selectionBorderColor, selectionLineWidth, selectionFullyContained, hoverCursor, moveCursor, defaultCursor, freeDrawingCursor, rotationCursor, notAllowedCursor, containerClass, perPixelTargetFind, targetFindTolerance, skipTargetFind, isDrawingMode, preserveObjectStacking, snapAngle, snapThreshold, stopContextMenu, fireRightClick, fireMiddleClick, targets, width, height */ @JSImport("fabric/fabric-impl", "Canvas")
 @js.native
-class Canvas protected () extends StaticCanvas {
+class Canvas () extends StaticCanvas {
   def this(element: String) = this()
   /**
     * Constructor
@@ -28,6 +28,7 @@ class Canvas protected () extends StaticCanvas {
     */
   def this(element: HTMLCanvasElement) = this()
   def this(element: String, options: ICanvasOptions) = this()
+  def this(element: Null, options: ICanvasOptions) = this()
   def this(element: HTMLCanvasElement, options: ICanvasOptions) = this()
   @JSName("_activeObject")
   var _activeObject_Canvas: Object = js.native
@@ -104,6 +105,12 @@ class Canvas protected () extends StaticCanvas {
     * Cursor value used during free drawing
     */
   var freeDrawingCursor: js.UndefOr[String] = js.native
+  /**
+    * Canvas height
+    * @type number
+    * @default
+    */
+  var height: js.UndefOr[Double] = js.native
   /**
     * Default cursor value used when hovering over an object on canvas
     */
@@ -227,6 +234,12 @@ class Canvas protected () extends StaticCanvas {
     * @type Boolean
     */
   var uniScaleTransform: js.UndefOr[Boolean] = js.native
+  /**
+    * Canvas width
+    * @type number
+    * @default
+    */
+  var width: js.UndefOr[Double] = js.native
   /**
     * @private
     * Compares the old activeObject with the current one and fires correct events

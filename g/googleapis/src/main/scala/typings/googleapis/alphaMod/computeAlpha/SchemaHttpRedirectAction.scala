@@ -66,11 +66,11 @@ object SchemaHttpRedirectAction {
   ): SchemaHttpRedirectAction = {
     val __obj = js.Dynamic.literal()
     if (hostRedirect != null) __obj.updateDynamic("hostRedirect")(hostRedirect.asInstanceOf[js.Any])
-    if (!js.isUndefined(httpsRedirect)) __obj.updateDynamic("httpsRedirect")(httpsRedirect.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpsRedirect)) __obj.updateDynamic("httpsRedirect")(httpsRedirect.get.asInstanceOf[js.Any])
     if (pathRedirect != null) __obj.updateDynamic("pathRedirect")(pathRedirect.asInstanceOf[js.Any])
     if (prefixRedirect != null) __obj.updateDynamic("prefixRedirect")(prefixRedirect.asInstanceOf[js.Any])
     if (redirectResponseCode != null) __obj.updateDynamic("redirectResponseCode")(redirectResponseCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripQuery)) __obj.updateDynamic("stripQuery")(stripQuery.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripQuery)) __obj.updateDynamic("stripQuery")(stripQuery.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHttpRedirectAction]
   }
 }

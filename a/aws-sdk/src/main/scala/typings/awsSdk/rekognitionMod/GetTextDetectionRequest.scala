@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetTextDetectionRequest extends js.Object {
   /**
-    * Job identifier for the label detection operation for which you want results returned. You get the job identifer from an initial call to StartTextDetection.
+    * Job identifier for the text detection operation for which you want results returned. You get the job identifer from an initial call to StartTextDetection.
     */
   var JobId: typings.awsSdk.rekognitionMod.JobId = js.native
   /**

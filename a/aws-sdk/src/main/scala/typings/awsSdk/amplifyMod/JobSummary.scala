@@ -7,39 +7,39 @@ import scala.scalajs.js.annotation._
 @js.native
 trait JobSummary extends js.Object {
   /**
-    *  Commit Id from 3rd party repository provider for the Job. 
+    *  The commit ID from a third-party repository provider for the job. 
     */
   var commitId: CommitId = js.native
   /**
-    *  Commit message from 3rd party repository provider for the Job. 
+    *  The commit message from a third-party repository provider for the job. 
     */
   var commitMessage: CommitMessage = js.native
   /**
-    *  Commit date / time for the Job. 
+    *  The commit date and time for the job. 
     */
   var commitTime: CommitTime = js.native
   /**
-    *  End date / time for the Job. 
+    *  The end date and time for the job. 
     */
   var endTime: js.UndefOr[EndTime] = js.native
   /**
-    *  Arn for the Job. 
+    *  The Amazon Resource Name (ARN) for the job. 
     */
   var jobArn: JobArn = js.native
   /**
-    *  Unique Id for the Job. 
+    *  The unique ID for the job. 
     */
   var jobId: JobId = js.native
   /**
-    *  Type for the Job. \n "RELEASE": Manually released from source by using StartJob API. "RETRY": Manually retried by using StartJob API. "WEB_HOOK": Automatically triggered by WebHooks. 
+    *  The type for the job. If the value is RELEASE, the job was manually released from its source by using the StartJob API. If the value is RETRY, the job was manually retried using the StartJob API. If the value is WEB_HOOK, the job was automatically triggered by webhooks. 
     */
   var jobType: JobType = js.native
   /**
-    *  Start date / time for the Job. 
+    *  The start date and time for the job. 
     */
   var startTime: StartTime = js.native
   /**
-    *  Status for the Job. 
+    *  The current status for the job. 
     */
   var status: JobStatus = js.native
 }

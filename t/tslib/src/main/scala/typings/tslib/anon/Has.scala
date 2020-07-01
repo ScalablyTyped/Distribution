@@ -11,7 +11,7 @@ trait Has[T /* <: js.Object */, V] extends js.Object {
 
 object Has {
   @scala.inline
-  def apply[T, V](has: T => Boolean, set: (T, V) => js.Any): Has[T, V] = {
+  def apply[/* <: js.Object */ T, V](has: T => Boolean, set: (T, V) => js.Any): Has[T, V] = {
     val __obj = js.Dynamic.literal(has = js.Any.fromFunction1(has), set = js.Any.fromFunction2(set))
     __obj.asInstanceOf[Has[T, V]]
   }

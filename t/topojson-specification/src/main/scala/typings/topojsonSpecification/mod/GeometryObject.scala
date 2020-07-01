@@ -19,7 +19,7 @@ trait GeometryObject[P /* <: Properties */] extends js.Object
 
 object GeometryObject {
   @scala.inline
-  def MultiPoint[P](
+  def MultiPoint[/* <: typings.topojsonSpecification.mod.Properties */ P](
     coordinates: js.Array[Positions],
     `type`: typings.topojsonSpecification.topojsonSpecificationStrings.MultiPoint,
     bbox: BBox = null,
@@ -34,7 +34,7 @@ object GeometryObject {
     __obj.asInstanceOf[GeometryObject[P]]
   }
   @scala.inline
-  def NullObject[P](`type`: Null, bbox: BBox = null, id: Double | String = null, properties: js.Object = null): GeometryObject[P] = {
+  def NullObject[/* <: typings.topojsonSpecification.mod.Properties */ P](`type`: Null, bbox: BBox = null, id: Double | String = null, properties: js.Object = null): GeometryObject[P] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
@@ -43,7 +43,7 @@ object GeometryObject {
     __obj.asInstanceOf[GeometryObject[P]]
   }
   @scala.inline
-  def GeometryCollection[P](
+  def GeometryCollection[/* <: typings.topojsonSpecification.mod.Properties */ P](
     geometries: js.Array[GeometryObject[P]],
     `type`: typings.topojsonSpecification.topojsonSpecificationStrings.GeometryCollection,
     bbox: BBox = null,
@@ -58,7 +58,7 @@ object GeometryObject {
     __obj.asInstanceOf[GeometryObject[P]]
   }
   @scala.inline
-  def Polygon[P](
+  def Polygon[/* <: typings.topojsonSpecification.mod.Properties */ P](
     arcs: js.Array[ArcIndexes],
     `type`: typings.topojsonSpecification.topojsonSpecificationStrings.Polygon,
     bbox: BBox = null,
@@ -73,7 +73,7 @@ object GeometryObject {
     __obj.asInstanceOf[GeometryObject[P]]
   }
   @scala.inline
-  def MultiLineString[P](
+  def MultiLineString[/* <: typings.topojsonSpecification.mod.Properties */ P](
     arcs: js.Array[ArcIndexes],
     `type`: typings.topojsonSpecification.topojsonSpecificationStrings.MultiLineString,
     bbox: BBox = null,
@@ -88,7 +88,7 @@ object GeometryObject {
     __obj.asInstanceOf[GeometryObject[P]]
   }
   @scala.inline
-  def LineString[P](
+  def LineString[/* <: typings.topojsonSpecification.mod.Properties */ P](
     arcs: ArcIndexes,
     `type`: typings.topojsonSpecification.topojsonSpecificationStrings.LineString,
     bbox: BBox = null,
@@ -103,7 +103,7 @@ object GeometryObject {
     __obj.asInstanceOf[GeometryObject[P]]
   }
   @scala.inline
-  def Point[P](
+  def Point[/* <: typings.topojsonSpecification.mod.Properties */ P](
     coordinates: Positions,
     `type`: typings.topojsonSpecification.topojsonSpecificationStrings.Point,
     bbox: BBox = null,
@@ -118,7 +118,7 @@ object GeometryObject {
     __obj.asInstanceOf[GeometryObject[P]]
   }
   @scala.inline
-  def MultiPolygon[P](
+  def MultiPolygon[/* <: typings.topojsonSpecification.mod.Properties */ P](
     arcs: js.Array[js.Array[ArcIndexes]],
     `type`: typings.topojsonSpecification.topojsonSpecificationStrings.MultiPolygon,
     bbox: BBox = null,

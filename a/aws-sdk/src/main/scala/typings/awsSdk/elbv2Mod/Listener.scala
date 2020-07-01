@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Listener extends js.Object {
   /**
+    * [TLS listener] The name of the Application-Layer Protocol Negotiation (ALPN) policy.
+    */
+  var AlpnPolicy: js.UndefOr[AlpnPolicyName] = js.native
+  /**
     * [HTTPS or TLS listener] The default certificate for the listener.
     */
   var Certificates: js.UndefOr[CertificateList] = js.native
@@ -39,6 +43,7 @@ trait Listener extends js.Object {
 object Listener {
   @scala.inline
   def apply(
+    AlpnPolicy: AlpnPolicyName = null,
     Certificates: CertificateList = null,
     DefaultActions: Actions = null,
     ListenerArn: ListenerArn = null,
@@ -48,6 +53,7 @@ object Listener {
     SslPolicy: SslPolicyName = null
   ): Listener = {
     val __obj = js.Dynamic.literal()
+    if (AlpnPolicy != null) __obj.updateDynamic("AlpnPolicy")(AlpnPolicy.asInstanceOf[js.Any])
     if (Certificates != null) __obj.updateDynamic("Certificates")(Certificates.asInstanceOf[js.Any])
     if (DefaultActions != null) __obj.updateDynamic("DefaultActions")(DefaultActions.asInstanceOf[js.Any])
     if (ListenerArn != null) __obj.updateDynamic("ListenerArn")(ListenerArn.asInstanceOf[js.Any])

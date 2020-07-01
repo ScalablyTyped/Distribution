@@ -16,7 +16,7 @@ trait IFloatingFilterWrapperComp[M, F /* <: FloatingFilterChange */, PC /* <: IF
 
 object IFloatingFilterWrapperComp {
   @scala.inline
-  def apply[M, F, PC, P](
+  def apply[M, /* <: typings.agGrid.floatingFilterMod.FloatingFilterChange */ F, /* <: typings.agGrid.floatingFilterMod.IFloatingFilterParams[M, F] */ PC, /* <: typings.agGrid.floatingFilterWrapperMod.IFloatingFilterWrapperParams[M, F, PC] */ P](
     getGui: () => HTMLElement,
     onParentModelChanged: M => Unit,
     afterGuiAttached: /* params */ js.UndefOr[IAfterGuiAttachedParams] => Unit = null,

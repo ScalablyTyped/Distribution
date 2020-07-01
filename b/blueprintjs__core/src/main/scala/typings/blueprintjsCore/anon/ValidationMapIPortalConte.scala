@@ -1,20 +1,24 @@
 package typings.blueprintjsCore.anon
 
-import typings.propTypes.mod.Validator
+import org.scalablytyped.runtime.StringDictionary
+import typings.blueprintjsCore.contextMod.Validator
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined prop-types.prop-types.ValidationMap<@blueprintjs/core.@blueprintjs/core/lib/esm/components/portal/portal.IPortalContext> */
+/* Inlined @blueprintjs/core.@blueprintjs/core/lib/esm/common/context.ValidationMap<@blueprintjs/core.@blueprintjs/core/lib/esm/components/portal/portal.IPortalContext> */
 trait ValidationMapIPortalConte extends js.Object {
-  var blueprintPortalClassName: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
+  var blueprintPortalClassName: js.UndefOr[Validator] = js.undefined
 }
 
 object ValidationMapIPortalConte {
   @scala.inline
-  def apply(blueprintPortalClassName: Validator[js.UndefOr[String]] = null): ValidationMapIPortalConte = {
+  def apply(
+    blueprintPortalClassName: (/* props */ StringDictionary[js.Any], /* propName */ String, /* componentName */ String, /* location */ String, /* propFullName */ String) => Error | Null = null
+  ): ValidationMapIPortalConte = {
     val __obj = js.Dynamic.literal()
-    if (blueprintPortalClassName != null) __obj.updateDynamic("blueprintPortalClassName")(blueprintPortalClassName.asInstanceOf[js.Any])
+    if (blueprintPortalClassName != null) __obj.updateDynamic("blueprintPortalClassName")(js.Any.fromFunction5(blueprintPortalClassName))
     __obj.asInstanceOf[ValidationMapIPortalConte]
   }
 }

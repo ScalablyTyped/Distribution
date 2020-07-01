@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl", "InsertIterator")
 @js.native
 class InsertIterator[Container /* <: IInsert[Iterator] */, Iterator /* <: IForwardIterator[ValueType[Iterator], Iterator] */] protected ()
-  extends typings.tstl.iteratorMod.InsertIterator[Container, Iterator] {
+  extends typings.tstl.tstlModuleMod.InsertIterator[Container, Iterator] {
   /**
     * Initializer Constructor.
     *

@@ -38,7 +38,7 @@ trait SpecStep extends js.Object {
     */
   var expectedState: js.UndefOr[StateExpectation] = js.undefined
   /** Fails the listed database actions. */
-  var failDatabase: js.UndefOr[`false` | SpecDatabaseFailures] = js.undefined
+  var failDatabase: js.UndefOr[`false` | js.Array[PersistenceAction]] = js.undefined
   /** Fail a write */
   var failWrite: js.UndefOr[SpecWriteFailure] = js.undefined
   /** Unlistens from a SnapshotsInSync event. */
@@ -99,7 +99,7 @@ object SpecStep {
     expectedSnapshotEvents: js.Array[SnapshotEvent] = null,
     expectedSnapshotsInSyncEvents: js.UndefOr[Double] = js.undefined,
     expectedState: StateExpectation = null,
-    failDatabase: `false` | SpecDatabaseFailures = null,
+    failDatabase: `false` | js.Array[PersistenceAction] = null,
     failWrite: SpecWriteFailure = null,
     removeSnapshotsInSyncListener: `true` = null,
     restart: `true` = null,

@@ -94,6 +94,15 @@ trait NotificationMessagePayload
     */
   var icon: js.UndefOr[String] = js.undefined
   /**
+    * The sound to be played when the device receives a notification. Supports
+    * "default" for the default notification sound of the device or the filename of a 
+    * sound resource bundled in the app. 
+    * Sound files must reside in `/res/raw/`.
+    * 
+    * **Platforms:** Android
+    */
+  var sound: js.UndefOr[String] = js.undefined
+  /**
     * Identifier used to replace existing notifications in the notification drawer.
     *
     * If not specified, each request creates a new notification.
@@ -103,7 +112,6 @@ trait NotificationMessagePayload
     *
     * **Platforms:** Android
     */
-  var sound: js.UndefOr[String] = js.undefined
   var tag: js.UndefOr[String] = js.undefined
   /**
     * The notification's title.

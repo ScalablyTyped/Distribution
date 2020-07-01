@@ -9,9 +9,9 @@ import typings.ionicCore.ionicCoreStrings.top
 import typings.ionicCore.mod.Color
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.overlaysInterfaceMod.OverlayInterface
+import typings.ionicCore.sanitizationMod.IonicSafeString
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.toastInterfaceMod.ToastButton
-import typings.ionicCore.typesMod.IonicSafeString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -71,11 +71,11 @@ object toastMod extends js.Object {
     /**
       * Returns a promise that resolves when the toast did dismiss.
       */
-    def onDidDismiss(): js.Promise[OverlayEventDetail[_]] = js.native
+    def onDidDismiss[T](): js.Promise[OverlayEventDetail[T]] = js.native
     /**
       * Returns a promise that resolves when the toast will dismiss.
       */
-    def onWillDismiss(): js.Promise[OverlayEventDetail[_]] = js.native
+    def onWillDismiss[T](): js.Promise[OverlayEventDetail[T]] = js.native
     @JSName("renderButtons")
     def renderButtons_end(buttons: js.Array[ToastButton], side: end): js.Any = js.native
     @JSName("renderButtons")

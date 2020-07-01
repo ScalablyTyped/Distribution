@@ -56,9 +56,9 @@ object SchemaRouterStatusNatStatus {
     autoAllocatedNatIps: js.Array[String] = null,
     drainAutoAllocatedNatIps: js.Array[String] = null,
     drainUserAllocatedNatIps: js.Array[String] = null,
-    minExtraNatIpsNeeded: Int | Double = null,
+    minExtraNatIpsNeeded: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    numVmEndpointsWithNatMappings: Int | Double = null,
+    numVmEndpointsWithNatMappings: js.UndefOr[Double] = js.undefined,
     userAllocatedNatIpResources: js.Array[String] = null,
     userAllocatedNatIps: js.Array[String] = null
   ): SchemaRouterStatusNatStatus = {
@@ -66,9 +66,9 @@ object SchemaRouterStatusNatStatus {
     if (autoAllocatedNatIps != null) __obj.updateDynamic("autoAllocatedNatIps")(autoAllocatedNatIps.asInstanceOf[js.Any])
     if (drainAutoAllocatedNatIps != null) __obj.updateDynamic("drainAutoAllocatedNatIps")(drainAutoAllocatedNatIps.asInstanceOf[js.Any])
     if (drainUserAllocatedNatIps != null) __obj.updateDynamic("drainUserAllocatedNatIps")(drainUserAllocatedNatIps.asInstanceOf[js.Any])
-    if (minExtraNatIpsNeeded != null) __obj.updateDynamic("minExtraNatIpsNeeded")(minExtraNatIpsNeeded.asInstanceOf[js.Any])
+    if (!js.isUndefined(minExtraNatIpsNeeded)) __obj.updateDynamic("minExtraNatIpsNeeded")(minExtraNatIpsNeeded.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (numVmEndpointsWithNatMappings != null) __obj.updateDynamic("numVmEndpointsWithNatMappings")(numVmEndpointsWithNatMappings.asInstanceOf[js.Any])
+    if (!js.isUndefined(numVmEndpointsWithNatMappings)) __obj.updateDynamic("numVmEndpointsWithNatMappings")(numVmEndpointsWithNatMappings.get.asInstanceOf[js.Any])
     if (userAllocatedNatIpResources != null) __obj.updateDynamic("userAllocatedNatIpResources")(userAllocatedNatIpResources.asInstanceOf[js.Any])
     if (userAllocatedNatIps != null) __obj.updateDynamic("userAllocatedNatIps")(userAllocatedNatIps.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRouterStatusNatStatus]

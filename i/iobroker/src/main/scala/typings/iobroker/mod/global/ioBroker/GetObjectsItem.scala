@@ -13,7 +13,7 @@ trait GetObjectsItem[T /* <: BaseObject */] extends js.Object {
 
 object GetObjectsItem {
   @scala.inline
-  def apply[T](id: String, value: T): GetObjectsItem[T] = {
+  def apply[/* <: typings.iobroker.mod.global.ioBroker.BaseObject */ T](id: String, value: T): GetObjectsItem[T] = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectsItem[T]]
   }

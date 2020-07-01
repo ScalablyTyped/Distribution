@@ -24,7 +24,7 @@ trait BackgroundProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal]
 
 object BackgroundProps {
   @scala.inline
-  def apply[ThemeType, TVal](
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType, TVal](
     background: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
     backgroundImage: js.UndefOr[Null | (ResponsiveValue[BackgroundImageProperty, ThemeType])] = js.undefined,
     backgroundPosition: js.UndefOr[

@@ -37,7 +37,7 @@ object SchemaNetworkConfig {
     subnetwork: String = null
   ): SchemaNetworkConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableIntraNodeVisibility)) __obj.updateDynamic("enableIntraNodeVisibility")(enableIntraNodeVisibility.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableIntraNodeVisibility)) __obj.updateDynamic("enableIntraNodeVisibility")(enableIntraNodeVisibility.get.asInstanceOf[js.Any])
     if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
     if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNetworkConfig]

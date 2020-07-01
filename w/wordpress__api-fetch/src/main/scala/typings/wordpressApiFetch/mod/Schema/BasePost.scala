@@ -42,7 +42,7 @@ trait BasePost[T /* <: Context */]
 
 object BasePost {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.wordpressApiFetch.mod.Schema.Context */ T](
     _links: Record[String, js.Array[Dictk]],
     author: Double,
     categories: js.Array[Double],

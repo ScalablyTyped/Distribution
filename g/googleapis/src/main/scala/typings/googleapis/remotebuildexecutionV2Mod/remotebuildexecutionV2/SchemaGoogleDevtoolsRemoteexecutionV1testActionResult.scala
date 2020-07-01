@@ -84,7 +84,7 @@ trait SchemaGoogleDevtoolsRemoteexecutionV1testActionResult extends js.Object {
 object SchemaGoogleDevtoolsRemoteexecutionV1testActionResult {
   @scala.inline
   def apply(
-    exitCode: Int | Double = null,
+    exitCode: js.UndefOr[Double] = js.undefined,
     outputDirectories: js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testOutputDirectory] = null,
     outputFiles: js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testOutputFile] = null,
     stderrDigest: SchemaGoogleDevtoolsRemoteexecutionV1testDigest = null,
@@ -93,7 +93,7 @@ object SchemaGoogleDevtoolsRemoteexecutionV1testActionResult {
     stdoutRaw: String = null
   ): SchemaGoogleDevtoolsRemoteexecutionV1testActionResult = {
     val __obj = js.Dynamic.literal()
-    if (exitCode != null) __obj.updateDynamic("exitCode")(exitCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(exitCode)) __obj.updateDynamic("exitCode")(exitCode.get.asInstanceOf[js.Any])
     if (outputDirectories != null) __obj.updateDynamic("outputDirectories")(outputDirectories.asInstanceOf[js.Any])
     if (outputFiles != null) __obj.updateDynamic("outputFiles")(outputFiles.asInstanceOf[js.Any])
     if (stderrDigest != null) __obj.updateDynamic("stderrDigest")(stderrDigest.asInstanceOf[js.Any])

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListAccessPoliciesRequest extends js.Object {
   /**
-    * The ID of the identity.
+    * The ID of the identity. This parameter is required if you specify identityType.
     */
   var identityId: js.UndefOr[IdentityId] = js.native
   /**
-    * The type of identity (user or group).
+    * The type of identity (user or group). This parameter is required if you specify identityId.
     */
   var identityType: js.UndefOr[IdentityType] = js.native
   /**
@@ -23,11 +23,11 @@ trait ListAccessPoliciesRequest extends js.Object {
     */
   var nextToken: js.UndefOr[NextToken] = js.native
   /**
-    * The ID of the resource.
+    * The ID of the resource. This parameter is required if you specify resourceType.
     */
   var resourceId: js.UndefOr[ID] = js.native
   /**
-    * The type of resource (portal or project).
+    * The type of resource (portal or project). This parameter is required if you specify resourceId.
     */
   var resourceType: js.UndefOr[ResourceType] = js.native
 }

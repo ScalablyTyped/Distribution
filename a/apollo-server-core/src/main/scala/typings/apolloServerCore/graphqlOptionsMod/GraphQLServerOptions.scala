@@ -5,12 +5,14 @@ import typings.apolloCacheControl.mod.CacheControlExtensionOptions
 import typings.apolloServerCaching.keyValueCacheMod.KeyValueCache
 import typings.apolloServerCaching.mod.InMemoryLRUCache
 import typings.apolloServerPluginBase.mod.ApolloServerPlugin
+import typings.apolloServerTypes.mod.BaseContext
 import typings.apolloServerTypes.mod.GraphQLExecutionResult
 import typings.apolloServerTypes.mod.GraphQLExecutor
 import typings.apolloServerTypes.mod.GraphQLRequestContext
 import typings.apolloServerTypes.mod.GraphQLRequestContextExecutionDidStart
 import typings.apolloServerTypes.mod.GraphQLResponse
 import typings.apolloServerTypes.mod.Logger
+import typings.apolloServerTypes.mod.SchemaHash
 import typings.apolloServerTypes.mod.ValueOrPromise
 import typings.graphql.astMod.DocumentNode
 import typings.graphql.definitionMod.GraphQLFieldResolver
@@ -47,10 +49,10 @@ trait GraphQLServerOptions[TContext, TRootValue] extends js.Object {
   var logger: js.UndefOr[Logger] = js.undefined
   var parseOptions: js.UndefOr[GraphQLParseOptions] = js.undefined
   var persistedQueries: js.UndefOr[PersistedQueryOptions] = js.undefined
-  var plugins: js.UndefOr[js.Array[ApolloServerPlugin[Record[String, _]]]] = js.undefined
-  var reporting: js.UndefOr[Boolean] = js.undefined
+  var plugins: js.UndefOr[js.Array[ApolloServerPlugin[BaseContext]]] = js.undefined
   var rootValue: js.UndefOr[(js.Function1[/* parsedQuery */ DocumentNode, TRootValue]) | TRootValue] = js.undefined
   var schema: GraphQLSchema
+  var schemaHash: SchemaHash
   var tracing: js.UndefOr[Boolean] = js.undefined
   var validationRules: js.UndefOr[js.Array[js.Function1[/* context */ ValidationContext, _]]] = js.undefined
 }
@@ -59,6 +61,7 @@ object GraphQLServerOptions {
   @scala.inline
   def apply[TContext, TRootValue](
     schema: GraphQLSchema,
+    schemaHash: SchemaHash,
     cache: KeyValueCache[String] = null,
     cacheControl: CacheControlExtensionOptions = null,
     context: TContext | js.Function0[scala.Nothing] = null,
@@ -73,13 +76,12 @@ object GraphQLServerOptions {
     logger: Logger = null,
     parseOptions: GraphQLParseOptions = null,
     persistedQueries: PersistedQueryOptions = null,
-    plugins: js.Array[ApolloServerPlugin[Record[String, _]]] = null,
-    reporting: js.UndefOr[Boolean] = js.undefined,
+    plugins: js.Array[ApolloServerPlugin[BaseContext]] = null,
     rootValue: (js.Function1[/* parsedQuery */ DocumentNode, TRootValue]) | TRootValue = null,
     tracing: js.UndefOr[Boolean] = js.undefined,
     validationRules: js.Array[js.Function1[/* context */ ValidationContext, _]] = null
   ): GraphQLServerOptions[TContext, TRootValue] = {
-    val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any], schemaHash = schemaHash.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
@@ -95,7 +97,6 @@ object GraphQLServerOptions {
     if (parseOptions != null) __obj.updateDynamic("parseOptions")(parseOptions.asInstanceOf[js.Any])
     if (persistedQueries != null) __obj.updateDynamic("persistedQueries")(persistedQueries.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (!js.isUndefined(reporting)) __obj.updateDynamic("reporting")(reporting.get.asInstanceOf[js.Any])
     if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue.asInstanceOf[js.Any])
     if (!js.isUndefined(tracing)) __obj.updateDynamic("tracing")(tracing.get.asInstanceOf[js.Any])
     if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules.asInstanceOf[js.Any])

@@ -36,9 +36,9 @@ object SchemaTransferOptions {
     overwriteObjectsAlreadyExistingInSink: js.UndefOr[Boolean] = js.undefined
   ): SchemaTransferOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deleteObjectsFromSourceAfterTransfer)) __obj.updateDynamic("deleteObjectsFromSourceAfterTransfer")(deleteObjectsFromSourceAfterTransfer.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleteObjectsUniqueInSink)) __obj.updateDynamic("deleteObjectsUniqueInSink")(deleteObjectsUniqueInSink.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwriteObjectsAlreadyExistingInSink)) __obj.updateDynamic("overwriteObjectsAlreadyExistingInSink")(overwriteObjectsAlreadyExistingInSink.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleteObjectsFromSourceAfterTransfer)) __obj.updateDynamic("deleteObjectsFromSourceAfterTransfer")(deleteObjectsFromSourceAfterTransfer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleteObjectsUniqueInSink)) __obj.updateDynamic("deleteObjectsUniqueInSink")(deleteObjectsUniqueInSink.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwriteObjectsAlreadyExistingInSink)) __obj.updateDynamic("overwriteObjectsAlreadyExistingInSink")(overwriteObjectsAlreadyExistingInSink.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTransferOptions]
   }
 }

@@ -29,12 +29,12 @@ object SchemaListResponse {
   def apply(
     items: js.Array[SchemaGetResponse] = null,
     kind: String = null,
-    maximumKeyCount: Int | Double = null
+    maximumKeyCount: js.UndefOr[Double] = js.undefined
   ): SchemaListResponse = {
     val __obj = js.Dynamic.literal()
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (maximumKeyCount != null) __obj.updateDynamic("maximumKeyCount")(maximumKeyCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumKeyCount)) __obj.updateDynamic("maximumKeyCount")(maximumKeyCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListResponse]
   }
 }

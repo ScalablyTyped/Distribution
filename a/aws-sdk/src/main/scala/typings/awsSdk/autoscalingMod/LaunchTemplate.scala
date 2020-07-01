@@ -11,7 +11,7 @@ trait LaunchTemplate extends js.Object {
     */
   var LaunchTemplateSpecification: js.UndefOr[typings.awsSdk.autoscalingMod.LaunchTemplateSpecification] = js.native
   /**
-    * An optional setting. Any parameters that you specify override the same parameters in the launch template. Currently, the only supported override is instance type. You can specify between 1 and 20 instance types.
+    * Any parameters that you specify override the same parameters in the launch template. Currently, the only supported override is instance type. You can specify between 1 and 20 instance types. If not provided, Amazon EC2 Auto Scaling will use the instance type specified in the launch template to launch instances. 
     */
   var Overrides: js.UndefOr[typings.awsSdk.autoscalingMod.Overrides] = js.native
 }

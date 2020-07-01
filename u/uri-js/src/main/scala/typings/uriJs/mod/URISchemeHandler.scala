@@ -15,7 +15,7 @@ trait URISchemeHandler[Components /* <: URIComponents */, Options /* <: URIOptio
 
 object URISchemeHandler {
   @scala.inline
-  def apply[Components, Options, ParentComponents](
+  def apply[/* <: typings.uriJs.mod.URIComponents */ Components, /* <: typings.uriJs.mod.URIOptions */ Options, /* <: typings.uriJs.mod.URIComponents */ ParentComponents](
     parse: (ParentComponents, Options) => Components,
     scheme: String,
     serialize: (Components, Options) => ParentComponents,

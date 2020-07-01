@@ -59,11 +59,11 @@ object pickerMod extends js.Object {
     /**
       * Returns a promise that resolves when the picker did dismiss.
       */
-    def onDidDismiss(): js.Promise[OverlayEventDetail[_]] = js.native
+    def onDidDismiss[T](): js.Promise[OverlayEventDetail[T]] = js.native
     /**
       * Returns a promise that resolves when the picker will dismiss.
       */
-    def onWillDismiss(): js.Promise[OverlayEventDetail[_]] = js.native
+    def onWillDismiss[T](): js.Promise[OverlayEventDetail[T]] = js.native
     @JSName("render")
     def render_MPicker(): js.Any = js.native
   }

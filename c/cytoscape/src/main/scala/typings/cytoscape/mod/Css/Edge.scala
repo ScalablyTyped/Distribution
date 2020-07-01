@@ -1,7 +1,12 @@
 package typings.cytoscape.mod.Css
 
+import typings.cytoscape.cytoscapeStrings.`inside-to-node`
 import typings.cytoscape.cytoscapeStrings.`linear-gradient`
 import typings.cytoscape.cytoscapeStrings.`node-position`
+import typings.cytoscape.cytoscapeStrings.`outside-to-line-or-label`
+import typings.cytoscape.cytoscapeStrings.`outside-to-line`
+import typings.cytoscape.cytoscapeStrings.`outside-to-node-or-label`
+import typings.cytoscape.cytoscapeStrings.`outside-to-node`
 import typings.cytoscape.cytoscapeStrings.`radial-gradient`
 import typings.cytoscape.cytoscapeStrings.`unbundled-bezier`
 import typings.cytoscape.cytoscapeStrings.bezier
@@ -43,6 +48,9 @@ import scala.scalajs.js.annotation._
 /* Inlined parent std.Partial<cytoscape.cytoscape.Css.SegmentsEdges> */
 /* Inlined parent std.Partial<cytoscape.cytoscape.Css.Visibility<cytoscape.cytoscape.EdgeSingular>> */
 /* Inlined parent std.Partial<cytoscape.cytoscape.Css.Labels<cytoscape.cytoscape.EdgeSingular>> */
+/* Inlined parent std.Partial<cytoscape.cytoscape.Css.Events<cytoscape.cytoscape.EdgeSingular>> */
+/* Inlined parent std.Partial<cytoscape.cytoscape.Css.EdgeEndpoints<cytoscape.cytoscape.EdgeSingular>> */
+/* Inlined parent std.Partial<cytoscape.cytoscape.Css.TransitionAnimation> */
 trait Edge extends js.Object {
   /** The size of the arrow. */
   var `arrow-scale`: js.UndefOr[PropertyValueEdge[Double]] = js.undefined
@@ -68,6 +76,7 @@ trait Edge extends js.Object {
   ] = js.undefined
   var display: js.UndefOr[PropertyValue[EdgeSingular, none | displayed]] = js.undefined
   var `edge-distances`: js.UndefOr[PropertyValueEdge[intersection | `node-position`]] = js.undefined
+  var events: js.UndefOr[PropertyValue[EdgeSingular, yes | no]] = js.undefined
   var `font-family`: js.UndefOr[PropertyValue[EdgeSingular, String]] = js.undefined
   var `font-size`: js.UndefOr[PropertyValue[EdgeSingular, Double | String]] = js.undefined
   var `font-style`: js.UndefOr[PropertyValue[EdgeSingular, FontStyle]] = js.undefined
@@ -125,6 +134,12 @@ trait Edge extends js.Object {
   var `source-arrow-fill`: js.UndefOr[PropertyValueEdge[ArrowFill]] = js.undefined
   /** The shape of the edge’s source arrow. */
   var `source-arrow-shape`: js.UndefOr[PropertyValueEdge[ArrowShape]] = js.undefined
+  var `source-endpoint`: js.UndefOr[
+    PropertyValue[
+      EdgeSingular, 
+      `inside-to-node` | `outside-to-node` | `outside-to-node-or-label` | `outside-to-line` | `outside-to-line-or-label` | String
+    ]
+  ] = js.undefined
   var `source-label`: js.UndefOr[PropertyValue[EdgeSingular, String]] = js.undefined
   var `source-text-margin-x`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   var `source-text-margin-y`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
@@ -140,6 +155,12 @@ trait Edge extends js.Object {
     * The distance the edge ends from its target.
     */
   var `target-distance-from-node`: js.UndefOr[PropertyValueEdge[Double]] = js.undefined
+  var `target-endpoint`: js.UndefOr[
+    PropertyValue[
+      EdgeSingular, 
+      `inside-to-node` | `outside-to-node` | `outside-to-node-or-label` | `outside-to-line` | `outside-to-line-or-label` | String
+    ]
+  ] = js.undefined
   var `target-label`: js.UndefOr[PropertyValue[EdgeSingular, String]] = js.undefined
   var `target-text-margin-x`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   var `target-text-margin-y`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
@@ -171,6 +192,10 @@ trait Edge extends js.Object {
   var `text-transform`: js.UndefOr[PropertyValue[EdgeSingular, TextTranformation]] = js.undefined
   var `text-valign`: js.UndefOr[PropertyValue[EdgeSingular, top | center | bottom]] = js.undefined
   var `text-wrap`: js.UndefOr[PropertyValue[EdgeSingular, none | wrap | ellipsis]] = js.undefined
+  var `transition-delay`: js.UndefOr[Double] = js.undefined
+  var `transition-duration`: js.UndefOr[Double] = js.undefined
+  var `transition-property`: js.UndefOr[String] = js.undefined
+  var `transition-timing-function`: js.UndefOr[TransitionTimingFunction] = js.undefined
   var visibility: js.UndefOr[PropertyValue[EdgeSingular, none | visible]] = js.undefined
   /**
     * The width of an edge’s line.
@@ -192,6 +217,7 @@ object Edge {
     `curve-style`: PropertyValueEdge[haystack | straight | bezier | `unbundled-bezier` | segments | taxi] = null,
     display: PropertyValue[EdgeSingular, none | displayed] = null,
     `edge-distances`: PropertyValueEdge[intersection | `node-position`] = null,
+    events: PropertyValue[EdgeSingular, yes | no] = null,
     `font-family`: PropertyValue[EdgeSingular, String] = null,
     `font-size`: PropertyValue[EdgeSingular, Double | String] = null,
     `font-style`: PropertyValue[EdgeSingular, FontStyle] = null,
@@ -222,6 +248,10 @@ object Edge {
     `source-arrow-color`: PropertyValueEdge[Colour] = null,
     `source-arrow-fill`: PropertyValueEdge[ArrowFill] = null,
     `source-arrow-shape`: PropertyValueEdge[ArrowShape] = null,
+    `source-endpoint`: PropertyValue[
+      EdgeSingular, 
+      `inside-to-node` | `outside-to-node` | `outside-to-node-or-label` | `outside-to-line` | `outside-to-line-or-label` | String
+    ] = null,
     `source-label`: PropertyValue[EdgeSingular, String] = null,
     `source-text-margin-x`: PropertyValue[EdgeSingular, Double] = null,
     `source-text-margin-y`: PropertyValue[EdgeSingular, Double] = null,
@@ -231,6 +261,10 @@ object Edge {
     `target-arrow-fill`: PropertyValueEdge[ArrowFill] = null,
     `target-arrow-shape`: PropertyValueEdge[ArrowShape] = null,
     `target-distance-from-node`: PropertyValueEdge[Double] = null,
+    `target-endpoint`: PropertyValue[
+      EdgeSingular, 
+      `inside-to-node` | `outside-to-node` | `outside-to-node-or-label` | `outside-to-line` | `outside-to-line-or-label` | String
+    ] = null,
     `target-label`: PropertyValue[EdgeSingular, String] = null,
     `target-text-margin-x`: PropertyValue[EdgeSingular, Double] = null,
     `target-text-margin-y`: PropertyValue[EdgeSingular, Double] = null,
@@ -262,6 +296,10 @@ object Edge {
     `text-transform`: PropertyValue[EdgeSingular, TextTranformation] = null,
     `text-valign`: PropertyValue[EdgeSingular, top | center | bottom] = null,
     `text-wrap`: PropertyValue[EdgeSingular, none | wrap | ellipsis] = null,
+    `transition-delay`: js.UndefOr[Double] = js.undefined,
+    `transition-duration`: js.UndefOr[Double] = js.undefined,
+    `transition-property`: String = null,
+    `transition-timing-function`: TransitionTimingFunction = null,
     visibility: PropertyValue[EdgeSingular, none | visible] = null,
     width: PropertyValueEdge[Double | String] = null,
     `z-index`: PropertyValue[EdgeSingular, Double] = null
@@ -277,6 +315,7 @@ object Edge {
     if (`curve-style` != null) __obj.updateDynamic("curve-style")(`curve-style`.asInstanceOf[js.Any])
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (`edge-distances` != null) __obj.updateDynamic("edge-distances")(`edge-distances`.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (`font-family` != null) __obj.updateDynamic("font-family")(`font-family`.asInstanceOf[js.Any])
     if (`font-size` != null) __obj.updateDynamic("font-size")(`font-size`.asInstanceOf[js.Any])
     if (`font-style` != null) __obj.updateDynamic("font-style")(`font-style`.asInstanceOf[js.Any])
@@ -307,6 +346,7 @@ object Edge {
     if (`source-arrow-color` != null) __obj.updateDynamic("source-arrow-color")(`source-arrow-color`.asInstanceOf[js.Any])
     if (`source-arrow-fill` != null) __obj.updateDynamic("source-arrow-fill")(`source-arrow-fill`.asInstanceOf[js.Any])
     if (`source-arrow-shape` != null) __obj.updateDynamic("source-arrow-shape")(`source-arrow-shape`.asInstanceOf[js.Any])
+    if (`source-endpoint` != null) __obj.updateDynamic("source-endpoint")(`source-endpoint`.asInstanceOf[js.Any])
     if (`source-label` != null) __obj.updateDynamic("source-label")(`source-label`.asInstanceOf[js.Any])
     if (`source-text-margin-x` != null) __obj.updateDynamic("source-text-margin-x")(`source-text-margin-x`.asInstanceOf[js.Any])
     if (`source-text-margin-y` != null) __obj.updateDynamic("source-text-margin-y")(`source-text-margin-y`.asInstanceOf[js.Any])
@@ -316,6 +356,7 @@ object Edge {
     if (`target-arrow-fill` != null) __obj.updateDynamic("target-arrow-fill")(`target-arrow-fill`.asInstanceOf[js.Any])
     if (`target-arrow-shape` != null) __obj.updateDynamic("target-arrow-shape")(`target-arrow-shape`.asInstanceOf[js.Any])
     if (`target-distance-from-node` != null) __obj.updateDynamic("target-distance-from-node")(`target-distance-from-node`.asInstanceOf[js.Any])
+    if (`target-endpoint` != null) __obj.updateDynamic("target-endpoint")(`target-endpoint`.asInstanceOf[js.Any])
     if (`target-label` != null) __obj.updateDynamic("target-label")(`target-label`.asInstanceOf[js.Any])
     if (`target-text-margin-x` != null) __obj.updateDynamic("target-text-margin-x")(`target-text-margin-x`.asInstanceOf[js.Any])
     if (`target-text-margin-y` != null) __obj.updateDynamic("target-text-margin-y")(`target-text-margin-y`.asInstanceOf[js.Any])
@@ -347,6 +388,10 @@ object Edge {
     if (`text-transform` != null) __obj.updateDynamic("text-transform")(`text-transform`.asInstanceOf[js.Any])
     if (`text-valign` != null) __obj.updateDynamic("text-valign")(`text-valign`.asInstanceOf[js.Any])
     if (`text-wrap` != null) __obj.updateDynamic("text-wrap")(`text-wrap`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`transition-delay`)) __obj.updateDynamic("transition-delay")(`transition-delay`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`transition-duration`)) __obj.updateDynamic("transition-duration")(`transition-duration`.get.asInstanceOf[js.Any])
+    if (`transition-property` != null) __obj.updateDynamic("transition-property")(`transition-property`.asInstanceOf[js.Any])
+    if (`transition-timing-function` != null) __obj.updateDynamic("transition-timing-function")(`transition-timing-function`.asInstanceOf[js.Any])
     if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (`z-index` != null) __obj.updateDynamic("z-index")(`z-index`.asInstanceOf[js.Any])

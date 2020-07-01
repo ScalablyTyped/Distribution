@@ -38,14 +38,14 @@ object SchemaRiceDeltaEncoding {
   def apply(
     encodedData: String = null,
     firstValue: String = null,
-    numEntries: Int | Double = null,
-    riceParameter: Int | Double = null
+    numEntries: js.UndefOr[Double] = js.undefined,
+    riceParameter: js.UndefOr[Double] = js.undefined
   ): SchemaRiceDeltaEncoding = {
     val __obj = js.Dynamic.literal()
     if (encodedData != null) __obj.updateDynamic("encodedData")(encodedData.asInstanceOf[js.Any])
     if (firstValue != null) __obj.updateDynamic("firstValue")(firstValue.asInstanceOf[js.Any])
-    if (numEntries != null) __obj.updateDynamic("numEntries")(numEntries.asInstanceOf[js.Any])
-    if (riceParameter != null) __obj.updateDynamic("riceParameter")(riceParameter.asInstanceOf[js.Any])
+    if (!js.isUndefined(numEntries)) __obj.updateDynamic("numEntries")(numEntries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(riceParameter)) __obj.updateDynamic("riceParameter")(riceParameter.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRiceDeltaEncoding]
   }
 }

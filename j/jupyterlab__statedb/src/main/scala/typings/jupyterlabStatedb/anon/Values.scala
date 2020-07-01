@@ -12,7 +12,7 @@ trait Values[T /* <: ReadonlyPartialJSONValue */] extends js.Object {
 
 object Values {
   @scala.inline
-  def apply[T](ids: js.Array[String], values: js.Array[T]): Values[T] = {
+  def apply[/* <: typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONValue */ T](ids: js.Array[String], values: js.Array[T]): Values[T] = {
     val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[Values[T]]
   }

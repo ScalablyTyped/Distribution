@@ -113,7 +113,7 @@ object SchemaNetwork {
   ): SchemaNetwork = {
     val __obj = js.Dynamic.literal()
     if (IPv4Range != null) __obj.updateDynamic("IPv4Range")(IPv4Range.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCreateSubnetworks)) __obj.updateDynamic("autoCreateSubnetworks")(autoCreateSubnetworks.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCreateSubnetworks)) __obj.updateDynamic("autoCreateSubnetworks")(autoCreateSubnetworks.get.asInstanceOf[js.Any])
     if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
     if (crossVmEncryption != null) __obj.updateDynamic("crossVmEncryption")(crossVmEncryption.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])

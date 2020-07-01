@@ -35,7 +35,7 @@ object SchemaCredential {
     val __obj = js.Dynamic.literal()
     if (basicAuth != null) __obj.updateDynamic("basicAuth")(basicAuth.asInstanceOf[js.Any])
     if (serviceAccount != null) __obj.updateDynamic("serviceAccount")(serviceAccount.asInstanceOf[js.Any])
-    if (!js.isUndefined(useProjectDefault)) __obj.updateDynamic("useProjectDefault")(useProjectDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(useProjectDefault)) __obj.updateDynamic("useProjectDefault")(useProjectDefault.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCredential]
   }
 }

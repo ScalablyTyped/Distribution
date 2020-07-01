@@ -55,6 +55,7 @@ trait TableHTMLAttributes[T] extends HTMLAttributes[T] {
   var cellPadding: js.UndefOr[Double | String] = js.undefined
   var cellSpacing: js.UndefOr[Double | String] = js.undefined
   var summary: js.UndefOr[String] = js.undefined
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 
 object TableHTMLAttributes {
@@ -235,7 +236,8 @@ object TableHTMLAttributes {
     translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,
-    vocab: String = null
+    vocab: String = null,
+    width: Double | String = null
   ): TableHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
@@ -414,6 +416,7 @@ object TableHTMLAttributes {
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableHTMLAttributes[T]]
   }
 }

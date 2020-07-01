@@ -16,7 +16,7 @@ trait ExpandChoiceMap[T /* <: Answers */] extends BaseChoiceMap[T] {
 
 object ExpandChoiceMap {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.inquirer.mod.Answers */ T](
     Choice: typings.inquirer.choiceMod.^[T],
     ChoiceOptions: ChoiceOptions[T],
     ExpandChoiceOptions: ExpandChoiceOptions[T],

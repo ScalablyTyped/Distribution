@@ -62,7 +62,7 @@ trait IContextualMenuProps
     */
   var className: js.UndefOr[String] = js.undefined
   /**
-    * Method to override the render of the individual menu items
+    * Custom component to use for rendering individual menu items.
     * @defaultvalue ContextualMenuItem
     */
   var contextualMenuItemAs: js.UndefOr[
@@ -77,7 +77,6 @@ trait IContextualMenuProps
   /**
     * If true, the contextual menu will not be updated until focus enters the menu via other means.
     * This will only result in different behavior when `shouldFocusOnMount = false`.
-    * @defaultvalue null
     */
   var delayUpdateFocusOnHover: js.UndefOr[Boolean] = js.undefined
   /**
@@ -126,7 +125,6 @@ trait IContextualMenuProps
     * to improve rendering performance when it becomes visible.
     * Note: When ContextualMenu is hidden its content will not be rendered. It will only render
     * once the ContextualMenu is visible.
-    * @defaultValue undefined
     */
   var hidden: js.UndefOr[Boolean] = js.undefined
   /**
@@ -144,7 +142,6 @@ trait IContextualMenuProps
   var isSubMenu: js.UndefOr[Boolean] = js.undefined
   /**
     * Menu items to display.
-    * @defaultvalue []
     */
   var items: js.Array[IContextualMenuItem]
   /**
@@ -198,11 +195,9 @@ trait IContextualMenuProps
     */
   var shouldFocusOnMount: js.UndefOr[Boolean] = js.undefined
   /**
-    * If true, the component will be updated even when `hidden=true`.
-    * Note that this would consume resources to update even though
-    * nothing is being shown to the user.
-    * This might be helpful though if your updates are small and you want the
-    * contextual menu to be revealed fast to the user when `hidden` is set to false.
+    * If true, the menu will be updated even when `hidden=true`. Note that this will consume
+    * resources to update even when nothing is being shown to the user. This might be helpful if
+    * your updates are small and you want the menu to display quickly when `hidden` is set to false.
     */
   var shouldUpdateWhenHidden: js.UndefOr[Boolean] = js.undefined
   /**
@@ -224,7 +219,7 @@ trait IContextualMenuProps
     */
   var theme: js.UndefOr[ITheme] = js.undefined
   /**
-    * Optional title to be displayed on top of the menu.
+    * Title to be displayed at the top of the menu, above the items.
     */
   var title: js.UndefOr[String] = js.undefined
   /**

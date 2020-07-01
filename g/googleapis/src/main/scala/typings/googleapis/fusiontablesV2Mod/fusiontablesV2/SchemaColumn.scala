@@ -1,6 +1,6 @@
 package typings.googleapis.fusiontablesV2Mod.fusiontablesV2
 
-import typings.googleapis.AnonColumnId
+import typings.googleapis.anon.ColumnId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait SchemaColumn extends js.Object {
     * Identifier of the base column. If present, this column is derived from
     * the specified base column.
     */
-  var baseColumn: js.UndefOr[AnonColumnId] = js.native
+  var baseColumn: js.UndefOr[ColumnId] = js.native
   /**
     * Identifier for the column.
     */
@@ -91,8 +91,8 @@ trait SchemaColumn extends js.Object {
 object SchemaColumn {
   @scala.inline
   def apply(
-    baseColumn: AnonColumnId = null,
-    columnId: Int | Double = null,
+    baseColumn: ColumnId = null,
+    columnId: js.UndefOr[Double] = js.undefined,
     columnJsonSchema: String = null,
     columnPropertiesJson: String = null,
     description: String = null,
@@ -106,7 +106,7 @@ object SchemaColumn {
   ): SchemaColumn = {
     val __obj = js.Dynamic.literal()
     if (baseColumn != null) __obj.updateDynamic("baseColumn")(baseColumn.asInstanceOf[js.Any])
-    if (columnId != null) __obj.updateDynamic("columnId")(columnId.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnId)) __obj.updateDynamic("columnId")(columnId.get.asInstanceOf[js.Any])
     if (columnJsonSchema != null) __obj.updateDynamic("columnJsonSchema")(columnJsonSchema.asInstanceOf[js.Any])
     if (columnPropertiesJson != null) __obj.updateDynamic("columnPropertiesJson")(columnPropertiesJson.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
@@ -116,7 +116,7 @@ object SchemaColumn {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (validValues != null) __obj.updateDynamic("validValues")(validValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateData)) __obj.updateDynamic("validateData")(validateData.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateData)) __obj.updateDynamic("validateData")(validateData.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaColumn]
   }
 }

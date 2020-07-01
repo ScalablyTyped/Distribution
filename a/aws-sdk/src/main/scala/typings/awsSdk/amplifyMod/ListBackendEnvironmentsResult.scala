@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListBackendEnvironmentsResult extends js.Object {
   /**
-    *  List of backend environments for an Amplify App. 
+    *  The list of backend environments for an Amplify app. 
     */
   var backendEnvironments: BackendEnvironments = js.native
   /**
-    *  Pagination token. If non-null pagination token is returned in a result, then pass its value in another request to fetch more entries. 
+    *  A pagination token. If a non-null pagination token is returned in a result, pass its value in another request to retrieve more entries. 
     */
   var nextToken: js.UndefOr[NextToken] = js.native
 }

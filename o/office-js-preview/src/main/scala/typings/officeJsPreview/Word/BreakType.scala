@@ -17,7 +17,6 @@ sealed trait BreakType extends js.Object
 @js.native
 object BreakType extends js.Object {
   /**
-    *
     * Line break.
     *
     */
@@ -25,14 +24,12 @@ object BreakType extends js.Object {
   sealed trait line extends BreakType
   
   /**
-    *
     * @deprecated Use sectionNext instead.
     */
   @js.native
   sealed trait next extends BreakType
   
   /**
-    *
     * Page break at the insertion point.
     *
     */
@@ -40,7 +37,6 @@ object BreakType extends js.Object {
   sealed trait page extends BreakType
   
   /**
-    *
     * New section without a corresponding page break.
     *
     */
@@ -48,7 +44,6 @@ object BreakType extends js.Object {
   sealed trait sectionContinuous extends BreakType
   
   /**
-    *
     * Section break with the next section beginning on the next even-numbered page. If the section break falls on an even-numbered page, Word leaves the next odd-numbered page blank.
     *
     */
@@ -56,7 +51,6 @@ object BreakType extends js.Object {
   sealed trait sectionEven extends BreakType
   
   /**
-    *
     * Section break on next page.
     *
     */
@@ -64,7 +58,6 @@ object BreakType extends js.Object {
   sealed trait sectionNext extends BreakType
   
   /**
-    *
     * Section break with the next section beginning on the next odd-numbered page. If the section break falls on an odd-numbered page, Word leaves the next even-numbered page blank.
     *
     */

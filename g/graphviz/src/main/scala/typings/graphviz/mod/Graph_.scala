@@ -6,19 +6,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Graph_ extends HasAttributes {
-  // Graphviz command to use (dot, neato, ...)
-  var use: String = js.native
+  var use: RenderEngine = js.native
   // Subgraph (cluster) API
   def addCluster(id: String): Graph_ = js.native
-  // TODO: Use union types when we have TS 1.4
   def addEdge(nodeOne: String, nodeTwo: String): Edge = js.native
-  def addEdge(nodeOne: String, nodeTwo: String, attrs: js.Any): Edge = js.native
+  def addEdge(nodeOne: String, nodeTwo: String, attrs: Options): Edge = js.native
   def addEdge(nodeOne: String, nodeTwo: Node): Edge = js.native
-  def addEdge(nodeOne: String, nodeTwo: Node, attrs: js.Any): Edge = js.native
+  def addEdge(nodeOne: String, nodeTwo: Node, attrs: Options): Edge = js.native
   def addEdge(nodeOne: Node, nodeTwo: String): Edge = js.native
-  def addEdge(nodeOne: Node, nodeTwo: String, attrs: js.Any): Edge = js.native
+  def addEdge(nodeOne: Node, nodeTwo: String, attrs: Options): Edge = js.native
   def addEdge(nodeOne: Node, nodeTwo: Node): Edge = js.native
-  def addEdge(nodeOne: Node, nodeTwo: Node, attrs: js.Any): Edge = js.native
+  def addEdge(nodeOne: Node, nodeTwo: Node, attrs: Options): Edge = js.native
   def addNode(id: String): Node = js.native
   def addNode(id: String, attrs: js.Any): Node = js.native
   def clusterCount(): Double = js.native
@@ -27,24 +25,22 @@ trait Graph_ extends HasAttributes {
   def getEdgeAttribut(name: String): js.Any = js.native
   def getNodeAttribut(name: String): js.Any = js.native
   def nodeCount(): Double = js.native
-  def output(options: RenderOptions, callback: OutputCallback): Unit = js.native
-  def output(options: RenderOptions, callback: OutputCallback, errback: ErrorCallback): Unit = js.native
-  def output(options: RenderOptions, filename: String): Unit = js.native
-  def output(options: RenderOptions, filename: String, errback: ErrorCallback): Unit = js.native
-  def output(`type`: String, callback: OutputCallback): Unit = js.native
-  def output(`type`: String, callback: OutputCallback, errback: ErrorCallback): Unit = js.native
-  // alias for render
-  def output(`type`: String, filename: String): Unit = js.native
-  def output(`type`: String, filename: String, errback: ErrorCallback): Unit = js.native
-  def render(options: RenderOptions, callback: OutputCallback): Unit = js.native
-  def render(options: RenderOptions, callback: OutputCallback, errback: ErrorCallback): Unit = js.native
-  def render(options: RenderOptions, filename: String): Unit = js.native
-  def render(options: RenderOptions, filename: String, errback: ErrorCallback): Unit = js.native
-  def render(`type`: String, callback: OutputCallback): Unit = js.native
-  def render(`type`: String, callback: OutputCallback, errback: ErrorCallback): Unit = js.native
-  // TODO: Use union types when we can have TS 1.4
-  def render(`type`: String, filename: String): Unit = js.native
-  def render(`type`: String, filename: String, errback: ErrorCallback): Unit = js.native
+  def output(type_options: String, filename_callback: String): Unit = js.native
+  def output(type_options: String, filename_callback: String, errback: ErrorCallback): Unit = js.native
+  def output(type_options: String, filename_callback: OutputCallback): Unit = js.native
+  def output(type_options: String, filename_callback: OutputCallback, errback: ErrorCallback): Unit = js.native
+  def output(type_options: RenderOptions, filename_callback: String): Unit = js.native
+  def output(type_options: RenderOptions, filename_callback: String, errback: ErrorCallback): Unit = js.native
+  def output(type_options: RenderOptions, filename_callback: OutputCallback): Unit = js.native
+  def output(type_options: RenderOptions, filename_callback: OutputCallback, errback: ErrorCallback): Unit = js.native
+  def render(type_options: String, filename_callback: String): Unit = js.native
+  def render(type_options: String, filename_callback: String, errback: ErrorCallback): Unit = js.native
+  def render(type_options: String, filename_callback: OutputCallback): Unit = js.native
+  def render(type_options: String, filename_callback: OutputCallback, errback: ErrorCallback): Unit = js.native
+  def render(type_options: RenderOptions, filename_callback: String): Unit = js.native
+  def render(type_options: RenderOptions, filename_callback: String, errback: ErrorCallback): Unit = js.native
+  def render(type_options: RenderOptions, filename_callback: OutputCallback): Unit = js.native
+  def render(type_options: RenderOptions, filename_callback: OutputCallback, errback: ErrorCallback): Unit = js.native
   def setEdgeAttribut(name: String, value: js.Any): Unit = js.native
   // Path containing Graphviz binaries.
   def setGraphVizPath(directoryPath: String): Unit = js.native

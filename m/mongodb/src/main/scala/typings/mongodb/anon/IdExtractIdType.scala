@@ -11,7 +11,7 @@ trait IdExtractIdType[TSchema /* <: /* import warning: importer.ImportType#apply
 
 object IdExtractIdType {
   @scala.inline
-  def apply[TSchema](_id: ExtractIdType[TSchema] = null): IdExtractIdType[TSchema] = {
+  def apply[/* <: / * import warning: importer.ImportType#apply Failed type conversion: {  _id ? :any} * / js.Any */ TSchema](_id: ExtractIdType[TSchema] = null): IdExtractIdType[TSchema] = {
     val __obj = js.Dynamic.literal()
     if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdExtractIdType[TSchema]]

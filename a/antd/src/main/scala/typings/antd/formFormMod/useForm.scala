@@ -1,6 +1,6 @@
 package typings.antd.formFormMod
 
-import typings.antd.formUtilMod.FormInstance
+import typings.antd.useFormMod.FormInstance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

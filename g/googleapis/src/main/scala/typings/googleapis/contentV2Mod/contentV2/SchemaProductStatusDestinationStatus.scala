@@ -34,7 +34,7 @@ object SchemaProductStatusDestinationStatus {
     intention: String = null
   ): SchemaProductStatusDestinationStatus = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(approvalPending)) __obj.updateDynamic("approvalPending")(approvalPending.asInstanceOf[js.Any])
+    if (!js.isUndefined(approvalPending)) __obj.updateDynamic("approvalPending")(approvalPending.get.asInstanceOf[js.Any])
     if (approvalStatus != null) __obj.updateDynamic("approvalStatus")(approvalStatus.asInstanceOf[js.Any])
     if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
     if (intention != null) __obj.updateDynamic("intention")(intention.asInstanceOf[js.Any])

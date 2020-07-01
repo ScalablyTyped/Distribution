@@ -16,6 +16,11 @@ trait Typeofnetwork extends js.Object {
   /** Allow users to enable and disable RTCPeerConnections (aka WebRTC). */
   val peerConnectionEnabled: Setting
   /**
+    * This property controls the minimum and maximum TLS versions. This setting's value is an object of
+    * `tlsVersionRestrictionConfig`.
+    */
+  val tlsVersionRestriction: Setting
+  /**
     * Allow users to specify the media performance/privacy tradeoffs which impacts how WebRTC traffic will be routed
     * and how much local address information is exposed. This preference's value is of type IPHandlingPolicy,
     * defaulting to `default`.
@@ -25,8 +30,13 @@ trait Typeofnetwork extends js.Object {
 
 object Typeofnetwork {
   @scala.inline
-  def apply(networkPredictionEnabled: Setting, peerConnectionEnabled: Setting, webRTCIPHandlingPolicy: Setting): Typeofnetwork = {
-    val __obj = js.Dynamic.literal(networkPredictionEnabled = networkPredictionEnabled.asInstanceOf[js.Any], peerConnectionEnabled = peerConnectionEnabled.asInstanceOf[js.Any], webRTCIPHandlingPolicy = webRTCIPHandlingPolicy.asInstanceOf[js.Any])
+  def apply(
+    networkPredictionEnabled: Setting,
+    peerConnectionEnabled: Setting,
+    tlsVersionRestriction: Setting,
+    webRTCIPHandlingPolicy: Setting
+  ): Typeofnetwork = {
+    val __obj = js.Dynamic.literal(networkPredictionEnabled = networkPredictionEnabled.asInstanceOf[js.Any], peerConnectionEnabled = peerConnectionEnabled.asInstanceOf[js.Any], tlsVersionRestriction = tlsVersionRestriction.asInstanceOf[js.Any], webRTCIPHandlingPolicy = webRTCIPHandlingPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofnetwork]
   }
 }

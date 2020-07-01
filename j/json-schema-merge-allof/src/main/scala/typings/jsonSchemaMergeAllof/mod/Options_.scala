@@ -53,7 +53,7 @@ trait Options_[Schema /* <: JSONSchema */] extends js.Object {
 
 object Options_ {
   @scala.inline
-  def apply[Schema](
+  def apply[/* <: typings.jsonSchemaMergeAllof.mod.JSONSchema */ Schema](
     ignoreAdditionalProperties: js.UndefOr[Boolean] = js.undefined,
     resolvers: Partial[Resolvers[Schema]] with DefaultResolver[Schema] = null
   ): Options_[Schema] = {

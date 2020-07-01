@@ -29,7 +29,7 @@ object SchemaGSuitePrincipal {
     gsuiteUserEmail: String = null
   ): SchemaGSuitePrincipal = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(gsuiteDomain)) __obj.updateDynamic("gsuiteDomain")(gsuiteDomain.asInstanceOf[js.Any])
+    if (!js.isUndefined(gsuiteDomain)) __obj.updateDynamic("gsuiteDomain")(gsuiteDomain.get.asInstanceOf[js.Any])
     if (gsuiteGroupEmail != null) __obj.updateDynamic("gsuiteGroupEmail")(gsuiteGroupEmail.asInstanceOf[js.Any])
     if (gsuiteUserEmail != null) __obj.updateDynamic("gsuiteUserEmail")(gsuiteUserEmail.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGSuitePrincipal]

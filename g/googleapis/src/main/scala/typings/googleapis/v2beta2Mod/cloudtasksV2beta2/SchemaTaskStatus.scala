@@ -35,14 +35,14 @@ trait SchemaTaskStatus extends js.Object {
 object SchemaTaskStatus {
   @scala.inline
   def apply(
-    attemptDispatchCount: Int | Double = null,
-    attemptResponseCount: Int | Double = null,
+    attemptDispatchCount: js.UndefOr[Double] = js.undefined,
+    attemptResponseCount: js.UndefOr[Double] = js.undefined,
     firstAttemptStatus: SchemaAttemptStatus = null,
     lastAttemptStatus: SchemaAttemptStatus = null
   ): SchemaTaskStatus = {
     val __obj = js.Dynamic.literal()
-    if (attemptDispatchCount != null) __obj.updateDynamic("attemptDispatchCount")(attemptDispatchCount.asInstanceOf[js.Any])
-    if (attemptResponseCount != null) __obj.updateDynamic("attemptResponseCount")(attemptResponseCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(attemptDispatchCount)) __obj.updateDynamic("attemptDispatchCount")(attemptDispatchCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(attemptResponseCount)) __obj.updateDynamic("attemptResponseCount")(attemptResponseCount.get.asInstanceOf[js.Any])
     if (firstAttemptStatus != null) __obj.updateDynamic("firstAttemptStatus")(firstAttemptStatus.asInstanceOf[js.Any])
     if (lastAttemptStatus != null) __obj.updateDynamic("lastAttemptStatus")(lastAttemptStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTaskStatus]

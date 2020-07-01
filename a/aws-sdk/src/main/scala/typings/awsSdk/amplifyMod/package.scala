@@ -19,6 +19,9 @@ package object amplifyMod {
   type AssociatedResources = js.Array[typings.awsSdk.amplifyMod.AssociatedResource]
   type AutoBranchCreationPattern = java.lang.String
   type AutoBranchCreationPatterns = js.Array[typings.awsSdk.amplifyMod.AutoBranchCreationPattern]
+  type AutoSubDomainCreationPattern = java.lang.String
+  type AutoSubDomainCreationPatterns = js.Array[typings.awsSdk.amplifyMod.AutoSubDomainCreationPattern]
+  type AutoSubDomainIAMRole = java.lang.String
   type BackendEnvironmentArn = java.lang.String
   type BackendEnvironments = js.Array[typings.awsSdk.amplifyMod.BackendEnvironment]
   type BasicAuthCredentials = java.lang.String
@@ -63,6 +66,7 @@ package object amplifyMod {
   type EnableAutoSubDomain = scala.Boolean
   type EnableBasicAuth = scala.Boolean
   type EnableBranchAutoBuild = scala.Boolean
+  type EnableBranchAutoDeletion = scala.Boolean
   type EnableNotification = scala.Boolean
   type EnablePullRequestPreview = scala.Boolean
   type EndTime = typings.std.Date

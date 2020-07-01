@@ -12,7 +12,7 @@ trait NonEmpty[NotFound, Tuple /* <: js.Array[_] */, Type, Count /* <: js.Array[
 
 object NonEmpty {
   @scala.inline
-  def apply[NotFound, Tuple, Type, Count](
+  def apply[NotFound, /* <: js.Array[_] */ Tuple, Type, /* <: js.Array[_] */ Count](
     empty: NotFound,
     infinite: js.Any,
     nonEmpty: /* import warning: importer.ImportType#apply Failed type conversion: Count['length'] */ js.Any

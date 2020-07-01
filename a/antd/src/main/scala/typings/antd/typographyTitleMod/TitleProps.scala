@@ -26,6 +26,7 @@ trait TitleProps extends js.Object {
   var editable: js.UndefOr[Boolean | EditConfig] = js.undefined
   var ellipsis: js.UndefOr[Boolean | EllipsisConfig] = js.undefined
   var id: js.UndefOr[String] = js.undefined
+  var keyboard: js.UndefOr[Boolean] = js.undefined
   var level: js.UndefOr[`1` | `2` | `3` | `4`] = js.undefined
   var mark: js.UndefOr[Boolean] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
@@ -48,6 +49,7 @@ object TitleProps {
     editable: Boolean | EditConfig = null,
     ellipsis: Boolean | EllipsisConfig = null,
     id: String = null,
+    keyboard: js.UndefOr[Boolean] = js.undefined,
     level: `1` | `2` | `3` | `4` = null,
     mark: js.UndefOr[Boolean] = js.undefined,
     prefixCls: String = null,
@@ -67,6 +69,7 @@ object TitleProps {
     if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
     if (ellipsis != null) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.get.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (!js.isUndefined(mark)) __obj.updateDynamic("mark")(mark.get.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])

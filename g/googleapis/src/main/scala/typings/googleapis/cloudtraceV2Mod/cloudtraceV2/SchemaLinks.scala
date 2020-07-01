@@ -23,9 +23,9 @@ trait SchemaLinks extends js.Object {
 
 object SchemaLinks {
   @scala.inline
-  def apply(droppedLinksCount: Int | Double = null, link: js.Array[SchemaLink] = null): SchemaLinks = {
+  def apply(droppedLinksCount: js.UndefOr[Double] = js.undefined, link: js.Array[SchemaLink] = null): SchemaLinks = {
     val __obj = js.Dynamic.literal()
-    if (droppedLinksCount != null) __obj.updateDynamic("droppedLinksCount")(droppedLinksCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(droppedLinksCount)) __obj.updateDynamic("droppedLinksCount")(droppedLinksCount.get.asInstanceOf[js.Any])
     if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLinks]
   }

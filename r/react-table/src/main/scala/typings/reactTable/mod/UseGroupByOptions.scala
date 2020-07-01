@@ -23,7 +23,7 @@ trait UseGroupByOptions[D /* <: js.Object */] extends js.Object {
 
 object UseGroupByOptions {
   @scala.inline
-  def apply[D](
+  def apply[/* <: js.Object */ D](
     aggregations: Record[String, AggregatorFn[D]] = null,
     autoResetGroupBy: js.UndefOr[Boolean] = js.undefined,
     defaultCanGroupBy: js.UndefOr[Boolean] = js.undefined,

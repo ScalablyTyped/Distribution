@@ -1,7 +1,7 @@
 
 # Scala.js typings for secure-random-password
 
-Typings are for version 0.1
+Typings are for version 0.2
 
 ## Library description:
 Generate passwords using a cryptographically-strong source of randomness

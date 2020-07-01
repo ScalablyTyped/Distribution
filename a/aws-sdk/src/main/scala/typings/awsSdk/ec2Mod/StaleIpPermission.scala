@@ -19,7 +19,7 @@ trait StaleIpPermission extends js.Object {
     */
   var IpRanges: js.UndefOr[typings.awsSdk.ec2Mod.IpRanges] = js.native
   /**
-    * The prefix list IDs for an AWS service. Not applicable for stale security group rules.
+    * The prefix list IDs. Not applicable for stale security group rules.
     */
   var PrefixListIds: js.UndefOr[PrefixListIdSet] = js.native
   /**

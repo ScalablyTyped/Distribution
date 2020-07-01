@@ -18,8 +18,11 @@ class Cursor () extends js.Object {
   @JSName("each")
   def each_T[T](cb: js.Function2[/* err */ Error, /* row */ T, Boolean | Unit], done: js.Function0[Unit]): Unit = js.native
   def hasNext(): Boolean = js.native
+  def next(): js.Promise[_] = js.native
    // returning false stops iteration
   def next(cb: js.Function2[/* err */ Error, /* row */ js.Any, Unit]): Unit = js.native
+  @JSName("next")
+  def next_T[T](): js.Promise[T] = js.native
   @JSName("next")
   def next_T[T](cb: js.Function2[/* err */ Error, /* row */ T, Unit]): Unit = js.native
   def toArray(): js.Promise[js.Array[_]] = js.native

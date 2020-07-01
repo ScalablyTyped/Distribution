@@ -33,7 +33,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IRemoteEntitySourceDocument because Already inherited
-- typings.mendixmodelsdk.restMod.rest.IConsumedODataService because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined serviceName, version, entities */ @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ConsumedODataService")
+- typings.mendixmodelsdk.restMod.rest.IConsumedODataService because var conflicts: containerAsFolderBase, icon, id, isLoaded, model, structureTypeName, unit. Inlined serviceName, version, entities */ @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ConsumedODataService")
 @js.native
 class ConsumedODataService protected () extends RemoteEntitySourceDocument {
   def this(
@@ -46,6 +46,7 @@ class ConsumedODataService protected () extends RemoteEntitySourceDocument {
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
+    * In version 8.11.0: deleted
     * In version 8.9.0: added public
     */
   @JSName("entities")
@@ -64,11 +65,17 @@ class ConsumedODataService protected () extends RemoteEntitySourceDocument {
     */
   @JSName("version")
   val version_FConsumedODataService: String = js.native
+  /**
+    * In version 8.11.0: introduced
+    */
+  def applicationId: String = js.native
+  def applicationId(newValue: String): js.Any = js.native
   @JSName("containerAsFolderBase")
   def containerAsFolderBase_MConsumedODataService: FolderBase = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
+    * In version 8.11.0: deleted
     * In version 8.9.0: added public
     */
   def entities: IList[ODataEntity] = js.native

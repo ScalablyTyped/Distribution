@@ -21,7 +21,7 @@ object SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisRequestConfig {
   @scala.inline
   def apply(analyzeQueryTextSentiment: js.UndefOr[Boolean] = js.undefined): SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisRequestConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(analyzeQueryTextSentiment)) __obj.updateDynamic("analyzeQueryTextSentiment")(analyzeQueryTextSentiment.asInstanceOf[js.Any])
+    if (!js.isUndefined(analyzeQueryTextSentiment)) __obj.updateDynamic("analyzeQueryTextSentiment")(analyzeQueryTextSentiment.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisRequestConfig]
   }
 }

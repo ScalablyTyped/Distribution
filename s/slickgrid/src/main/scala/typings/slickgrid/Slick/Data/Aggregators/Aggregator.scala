@@ -15,7 +15,7 @@ trait Aggregator[T /* <: SlickData */] extends js.Object {
 
 object Aggregator {
   @scala.inline
-  def apply[T](accumulate: T => Unit, field: String, init: () => Unit, storeResult: GroupTotals[T] => Unit): Aggregator[T] = {
+  def apply[/* <: typings.slickgrid.Slick.SlickData */ T](accumulate: T => Unit, field: String, init: () => Unit, storeResult: GroupTotals[T] => Unit): Aggregator[T] = {
     val __obj = js.Dynamic.literal(accumulate = js.Any.fromFunction1(accumulate), field = field.asInstanceOf[js.Any], init = js.Any.fromFunction0(init), storeResult = js.Any.fromFunction1(storeResult))
     __obj.asInstanceOf[Aggregator[T]]
   }

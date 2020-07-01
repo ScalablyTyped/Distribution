@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "electron-util" : "0.14.1"
+      "electron-util" : "0.14.2"
     }
   ],
   "test-dependencies" : [
     {
-      "electron-util" : "0.14.1"
+      "electron-util" : "0.14.2"
     }
   ],
   "compile-devDependencies" : [

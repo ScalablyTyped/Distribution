@@ -1,7 +1,7 @@
 
 # Scala.js typings for diagnostic-channel
 
-Typings are for version 0.2.0
+Typings are for version 0.3.1
 
 ## Library description:
 Provides a context-saving pub/sub channel to connect diagnostic event publishers and subscribers

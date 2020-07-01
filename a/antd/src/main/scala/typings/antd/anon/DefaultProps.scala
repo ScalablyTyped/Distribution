@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DefaultProps extends js.Object {
-  var defaultProps: ShapeSize = js.native
+  var defaultProps: Shape = js.native
   def apply(props: AvatarProps): Element = js.native
 }
 

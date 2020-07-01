@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@ethersproject/transactions" : "5.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@ethersproject/transactions" : "5.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

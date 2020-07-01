@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LaunchTemplateOverrides extends js.Object {
   /**
-    * The instance type. For information about available instance types, see Available Instance Types in the Amazon Elastic Compute Cloud User Guide. 
+    * The instance type. You must use an instance type that is supported in your requested Region and Availability Zones.  For information about available instance types, see Available Instance Types in the Amazon Elastic Compute Cloud User Guide. 
     */
   var InstanceType: js.UndefOr[XmlStringMaxLen255] = js.native
   /**

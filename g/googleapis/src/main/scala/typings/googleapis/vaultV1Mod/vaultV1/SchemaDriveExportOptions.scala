@@ -21,7 +21,7 @@ object SchemaDriveExportOptions {
   @scala.inline
   def apply(includeAccessInfo: js.UndefOr[Boolean] = js.undefined): SchemaDriveExportOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeAccessInfo)) __obj.updateDynamic("includeAccessInfo")(includeAccessInfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeAccessInfo)) __obj.updateDynamic("includeAccessInfo")(includeAccessInfo.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDriveExportOptions]
   }
 }

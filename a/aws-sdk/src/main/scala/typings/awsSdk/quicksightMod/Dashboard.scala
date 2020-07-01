@@ -27,7 +27,7 @@ trait Dashboard extends js.Object {
     */
   var LastUpdatedTime: js.UndefOr[Timestamp_] = js.native
   /**
-    * A display name for the dataset.
+    * A display name for the dashboard.
     */
   var Name: js.UndefOr[DashboardName] = js.native
   /**

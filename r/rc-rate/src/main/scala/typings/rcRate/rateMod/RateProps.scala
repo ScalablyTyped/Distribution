@@ -15,7 +15,7 @@ trait RateProps extends js.Object {
   var allowClear: js.UndefOr[Boolean] = js.undefined
   var allowHalf: js.UndefOr[Boolean] = js.undefined
   var autoFocus: js.UndefOr[Boolean] = js.undefined
-  var character: js.UndefOr[ReactNode] = js.undefined
+  var character: js.UndefOr[js.Function1[/* props */ StarProps, ReactNode]] = js.undefined
   var characterRender: js.UndefOr[js.Function2[/* origin */ ReactElement, /* props */ StarProps, ReactNode]] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var count: js.UndefOr[Double] = js.undefined
@@ -39,7 +39,7 @@ object RateProps {
     allowClear: js.UndefOr[Boolean] = js.undefined,
     allowHalf: js.UndefOr[Boolean] = js.undefined,
     autoFocus: js.UndefOr[Boolean] = js.undefined,
-    character: ReactNode = null,
+    character: /* props */ StarProps => ReactNode = null,
     characterRender: (/* origin */ ReactElement, /* props */ StarProps) => ReactNode = null,
     className: String = null,
     count: js.UndefOr[Double] = js.undefined,
@@ -60,7 +60,7 @@ object RateProps {
     if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear.get.asInstanceOf[js.Any])
     if (!js.isUndefined(allowHalf)) __obj.updateDynamic("allowHalf")(allowHalf.get.asInstanceOf[js.Any])
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
-    if (character != null) __obj.updateDynamic("character")(character.asInstanceOf[js.Any])
+    if (character != null) __obj.updateDynamic("character")(js.Any.fromFunction1(character))
     if (characterRender != null) __obj.updateDynamic("characterRender")(js.Any.fromFunction2(characterRender))
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])

@@ -74,7 +74,8 @@ trait ComponentOptions[Instance /* <: Component[Data, Props, Behaviors] */, Data
 
 object ComponentOptions {
   @scala.inline
-  def apply[Instance, Data, Methods, Props, Behaviors](
+  def apply[/* <: typings.weixinApp.wx.Component[Data, Props, Behaviors] */ Instance, Data, Methods, Props, /* <: js.Array[
+  (typings.weixinApp.wx.Behavior[js.Object, js.Object, js.Object]) | java.lang.String] */ Behaviors](
     attached: () => Unit = null,
     behaviors: Behaviors = null,
     created: () => Unit = null,

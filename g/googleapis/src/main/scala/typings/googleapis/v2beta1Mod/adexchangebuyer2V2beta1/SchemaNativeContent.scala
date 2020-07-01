@@ -77,7 +77,7 @@ object SchemaNativeContent {
     image: SchemaImage = null,
     logo: SchemaImage = null,
     priceDisplayText: String = null,
-    starRating: Int | Double = null,
+    starRating: js.UndefOr[Double] = js.undefined,
     storeUrl: String = null,
     videoUrl: String = null
   ): SchemaNativeContent = {
@@ -92,7 +92,7 @@ object SchemaNativeContent {
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
     if (priceDisplayText != null) __obj.updateDynamic("priceDisplayText")(priceDisplayText.asInstanceOf[js.Any])
-    if (starRating != null) __obj.updateDynamic("starRating")(starRating.asInstanceOf[js.Any])
+    if (!js.isUndefined(starRating)) __obj.updateDynamic("starRating")(starRating.get.asInstanceOf[js.Any])
     if (storeUrl != null) __obj.updateDynamic("storeUrl")(storeUrl.asInstanceOf[js.Any])
     if (videoUrl != null) __obj.updateDynamic("videoUrl")(videoUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNativeContent]

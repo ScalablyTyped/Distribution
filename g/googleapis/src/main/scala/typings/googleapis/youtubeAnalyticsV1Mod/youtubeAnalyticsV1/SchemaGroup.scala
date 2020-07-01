@@ -1,28 +1,28 @@
 package typings.googleapis.youtubeAnalyticsV1Mod.youtubeAnalyticsV1
 
-import typings.googleapis.AnonItemCount
-import typings.googleapis.AnonPublishedAt
+import typings.googleapis.anon.ItemCount
+import typings.googleapis.anon.PublishedAt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait SchemaGroup extends js.Object {
-  var contentDetails: js.UndefOr[AnonItemCount] = js.native
+  var contentDetails: js.UndefOr[ItemCount] = js.native
   var etag: js.UndefOr[String] = js.native
   var id: js.UndefOr[String] = js.native
   var kind: js.UndefOr[String] = js.native
-  var snippet: js.UndefOr[AnonPublishedAt] = js.native
+  var snippet: js.UndefOr[PublishedAt] = js.native
 }
 
 object SchemaGroup {
   @scala.inline
   def apply(
-    contentDetails: AnonItemCount = null,
+    contentDetails: ItemCount = null,
     etag: String = null,
     id: String = null,
     kind: String = null,
-    snippet: AnonPublishedAt = null
+    snippet: PublishedAt = null
   ): SchemaGroup = {
     val __obj = js.Dynamic.literal()
     if (contentDetails != null) __obj.updateDynamic("contentDetails")(contentDetails.asInstanceOf[js.Any])

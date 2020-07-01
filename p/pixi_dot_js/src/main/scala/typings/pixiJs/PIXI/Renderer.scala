@@ -14,7 +14,6 @@ import typings.pixiJs.PIXI.systems.StateSystem
 import typings.pixiJs.PIXI.systems.StencilSystem
 import typings.pixiJs.PIXI.systems.TextureGCSystem
 import typings.pixiJs.PIXI.systems.TextureSystem
-import typings.pixiJs.anon.Accessibility
 import typings.std.WebGLRenderingContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -96,20 +95,6 @@ trait Renderer extends AbstractRenderer {
     * @readonly
     */
   val mask: MaskSystem = js.native
-  /**
-    * Collection of installed plugins. These are included by default in PIXI, but can be excluded
-    * by creating a custom build. Consult the README for more information about creating custom
-    * builds and excluding plugins.
-    * @name PIXI.Renderer#plugins
-    * @type {object}
-    * @readonly
-    * @property {PIXI.accessibility.AccessibilityManager} accessibility Support tabbing interactive elements.
-    * @property {PIXI.Extract} extract Extract image data from renderer.
-    * @property {PIXI.interaction.InteractionManager} interaction Handles mouse, touch and pointer events.
-    * @property {PIXI.Prepare} prepare Pre-render display objects.
-    */
-  @JSName("plugins")
-  val plugins_Renderer: Accessibility = js.native
   /**
     * Projection system instance
     * @member {PIXI.systems.ProjectionSystem} projection

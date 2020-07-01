@@ -23,10 +23,10 @@ trait SchemaInstanceGroupManagerAutoHealingPolicy extends js.Object {
 
 object SchemaInstanceGroupManagerAutoHealingPolicy {
   @scala.inline
-  def apply(healthCheck: String = null, initialDelaySec: Int | Double = null): SchemaInstanceGroupManagerAutoHealingPolicy = {
+  def apply(healthCheck: String = null, initialDelaySec: js.UndefOr[Double] = js.undefined): SchemaInstanceGroupManagerAutoHealingPolicy = {
     val __obj = js.Dynamic.literal()
     if (healthCheck != null) __obj.updateDynamic("healthCheck")(healthCheck.asInstanceOf[js.Any])
-    if (initialDelaySec != null) __obj.updateDynamic("initialDelaySec")(initialDelaySec.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialDelaySec)) __obj.updateDynamic("initialDelaySec")(initialDelaySec.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstanceGroupManagerAutoHealingPolicy]
   }
 }

@@ -16,7 +16,7 @@ trait Fields[RT /* <: js.UndefOr[ResponseType] */] extends js.Object {
 
 object Fields {
   @scala.inline
-  def apply[RT](
+  def apply[/* <: js.UndefOr[typings.k6.httpMod.ResponseType] */ RT](
     fields: StringDictionary[String] = null,
     formSelector: String = null,
     params: js.UndefOr[Null | RefinedParams[RT]] = js.undefined,

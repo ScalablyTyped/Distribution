@@ -23,6 +23,10 @@ trait CreateFunctionRequest extends js.Object {
     */
   var Environment: js.UndefOr[typings.awsSdk.lambdaMod.Environment] = js.native
   /**
+    * Connection settings for an Amazon EFS file system.
+    */
+  var FileSystemConfigs: js.UndefOr[FileSystemConfigList] = js.native
+  /**
     * The name of the Lambda function.  Name formats     Function name - my-function.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:my-function.    Partial ARN - 123456789012:function:my-function.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
     */
   var FunctionName: typings.awsSdk.lambdaMod.FunctionName = js.native
@@ -83,6 +87,7 @@ object CreateFunctionRequest {
     DeadLetterConfig: DeadLetterConfig = null,
     Description: Description = null,
     Environment: Environment = null,
+    FileSystemConfigs: FileSystemConfigList = null,
     KMSKeyArn: KMSKeyArn = null,
     Layers: LayerList = null,
     MemorySize: js.UndefOr[MemorySize] = js.undefined,
@@ -96,6 +101,7 @@ object CreateFunctionRequest {
     if (DeadLetterConfig != null) __obj.updateDynamic("DeadLetterConfig")(DeadLetterConfig.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (Environment != null) __obj.updateDynamic("Environment")(Environment.asInstanceOf[js.Any])
+    if (FileSystemConfigs != null) __obj.updateDynamic("FileSystemConfigs")(FileSystemConfigs.asInstanceOf[js.Any])
     if (KMSKeyArn != null) __obj.updateDynamic("KMSKeyArn")(KMSKeyArn.asInstanceOf[js.Any])
     if (Layers != null) __obj.updateDynamic("Layers")(Layers.asInstanceOf[js.Any])
     if (!js.isUndefined(MemorySize)) __obj.updateDynamic("MemorySize")(MemorySize.get.asInstanceOf[js.Any])

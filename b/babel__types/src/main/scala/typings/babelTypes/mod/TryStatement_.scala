@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 - typings.babelTypes.mod._Node because Already inherited */ trait TryStatement_
   extends Statement
      with BaseNode {
-  var block: js.Any
+  var block: BlockStatement_
   var finalizer: BlockStatement_ | Null
   var handler: CatchClause_ | Null
   @JSName("type")
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 object TryStatement_ {
   @scala.inline
   def apply(
-    block: js.Any,
+    block: BlockStatement_,
     `type`: TryStatement,
     end: Double = null.asInstanceOf[Double],
     finalizer: BlockStatement_ = null,

@@ -13,6 +13,7 @@ trait CreateReportOptions extends js.Object {
   var literalXmlDelimiter: String
   var noSandbox: Boolean
   var processLineBreaks: Boolean
+  var rejectNullish: Boolean
   var runJs: js.UndefOr[RunJSFunc] = js.undefined
 }
 
@@ -25,9 +26,10 @@ object CreateReportOptions {
     literalXmlDelimiter: String,
     noSandbox: Boolean,
     processLineBreaks: Boolean,
+    rejectNullish: Boolean,
     runJs: /* o */ Ctx => ModifiedSandbox = null
   ): CreateReportOptions = {
-    val __obj = js.Dynamic.literal(additionalJsContext = additionalJsContext.asInstanceOf[js.Any], cmdDelimiter = cmdDelimiter.asInstanceOf[js.Any], failFast = failFast.asInstanceOf[js.Any], literalXmlDelimiter = literalXmlDelimiter.asInstanceOf[js.Any], noSandbox = noSandbox.asInstanceOf[js.Any], processLineBreaks = processLineBreaks.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(additionalJsContext = additionalJsContext.asInstanceOf[js.Any], cmdDelimiter = cmdDelimiter.asInstanceOf[js.Any], failFast = failFast.asInstanceOf[js.Any], literalXmlDelimiter = literalXmlDelimiter.asInstanceOf[js.Any], noSandbox = noSandbox.asInstanceOf[js.Any], processLineBreaks = processLineBreaks.asInstanceOf[js.Any], rejectNullish = rejectNullish.asInstanceOf[js.Any])
     if (runJs != null) __obj.updateDynamic("runJs")(js.Any.fromFunction1(runJs))
     __obj.asInstanceOf[CreateReportOptions]
   }

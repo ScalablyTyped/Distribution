@@ -157,8 +157,8 @@ object utils extends js.Object {
     *
     * @memberof PIXI.utils
     * @function correctBlendMode
-    * @param {number} blendMode supposed blend mode
-    * @param {boolean} premultiplied  whether source is premultiplied
+    * @param {number} blendMode - supposed blend mode
+    * @param {boolean} premultiplied - whether source is premultiplied
     * @returns {number} true blend mode for this texture
     */
   def correctBlendMode(blendMode: Double, premultiplied: Boolean): Double = js.native
@@ -214,7 +214,7 @@ object utils extends js.Object {
     * @function earcut
     * @param {number[]} vertices - A flat array of vertex coordinates
     * @param {number[]} [holes] - An array of hole indices
-    * @param {number} [dimensions=2] The number of coordinates per vertex in the input array
+    * @param {number} [dimensions=2] - The number of coordinates per vertex in the input array
     * @return {number[]} Triangulated polygon
     */
   def earcut(vertices: js.Array[Double]): js.Array[Double] = js.native
@@ -240,7 +240,7 @@ object utils extends js.Object {
     * @memberof PIXI.utils
     * @function hex2rgb
     * @param {number} hex - The hexadecimal number to convert
-    * @param  {number[]} [out=[]] If supplied, this array will be used rather than returning a new one
+    * @param  {number[]} [out=[]] - If supplied, this array will be used rather than returning a new one
     * @return {number[]} An array representing the [R, G, B] of the color where all values are floats.
     */
   def hex2rgb(hex: Double): js.Array[Double] = js.native
@@ -261,7 +261,7 @@ object utils extends js.Object {
     *
     * @function isPow2
     * @memberof PIXI.utils
-    * @param {number} v input value
+    * @param {number} v - input value
     * @return {boolean} `true` if value is power of two
     */
   def isPow2(v: Double): Boolean = js.native
@@ -278,7 +278,7 @@ object utils extends js.Object {
     *
     * @function log2
     * @memberof PIXI.utils
-    * @param {number} v input value
+    * @param {number} v - input value
     * @return {number} logarithm base 2
     */
   def log2(v: Double): Double = js.native
@@ -287,7 +287,7 @@ object utils extends js.Object {
     *
     * @function nextPow2
     * @memberof PIXI.utils
-    * @param {number} v input value
+    * @param {number} v - input value
     * @return {number}
     */
   def nextPow2(v: Double): Double = js.native
@@ -299,10 +299,10 @@ object utils extends js.Object {
     *
     * @memberof PIXI.utils
     * @function premultiplyRgba
-    * @param {Float32Array|number[]} rgb input rgb
-    * @param {number} alpha alpha param
-    * @param {Float32Array} [out] output
-    * @param {boolean} [premultiply=true] do premultiply it
+    * @param {Float32Array|number[]} rgb - input rgb
+    * @param {number} alpha - alpha param
+    * @param {Float32Array} [out] - output
+    * @param {boolean} [premultiply=true] - do premultiply it
     * @returns {Float32Array} vec4 rgba
     */
   def premultiplyRgba(rgb: Float32Array, alpha: Double): Float32Array = js.native
@@ -313,8 +313,8 @@ object utils extends js.Object {
     *
     * @memberof PIXI.utils
     * @function premultiplyTint
-    * @param {number} tint integer RGB
-    * @param {number} alpha floating point alpha (0.0-1.0)
+    * @param {number} tint - integer RGB
+    * @param {number} alpha - floating point alpha (0.0-1.0)
     * @returns {number} tint multiplied by alpha
     */
   def premultiplyTint(tint: Double, alpha: Double): Double = js.native
@@ -323,10 +323,10 @@ object utils extends js.Object {
     *
     * @memberof PIXI.utils
     * @function premultiplyTintToRgba
-    * @param {number} tint input tint
-    * @param {number} alpha alpha param
+    * @param {number} tint - input tint
+    * @param {number} alpha - alpha param
     * @param {Float32Array} [out] output
-    * @param {boolean} [premultiply=true] do premultiply it
+    * @param {boolean} [premultiply=true] - do premultiply it
     * @returns {Float32Array} vec4 rgba
     */
   def premultiplyTintToRgba(tint: Double, alpha: Double): Float32Array = js.native
@@ -337,9 +337,9 @@ object utils extends js.Object {
     *
     * @function removeItems
     * @memberof PIXI.utils
-    * @param {Array<any>} arr Array to remove elements from
-    * @param {number} startIdx starting index
-    * @param {number} removeCount how many to remove
+    * @param {Array<any>} arr - Array to remove elements from
+    * @param {number} startIdx - starting index
+    * @param {number} removeCount - how many to remove
     */
   def removeItems(arr: js.Array[_], startIdx: Double, removeCount: Double): Unit = js.native
   /**
@@ -387,10 +387,10 @@ object utils extends js.Object {
     * PIXI.utils.string2hex("#ffffff"); // returns 0xffffff
     * @memberof PIXI.utils
     * @function string2hex
-    * @param {string} The string color (e.g., `"#ffffff"`)
+    * @param {string} - The string color (e.g., `"#ffffff"`)
     * @return {number} Number in hexadecimal.
     */
-  def string2hex(The: String): Double = js.native
+  def string2hex(): Double = js.native
   /**
     * Trim transparent borders from a canvas
     *

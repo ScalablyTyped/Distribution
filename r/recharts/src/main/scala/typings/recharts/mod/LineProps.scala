@@ -1,6 +1,7 @@
 package typings.recharts.mod
 
 import typings.react.mod.ReactElement
+import typings.recharts.anon.DotPropspayloadany
 import typings.recharts.rechartsNumbers.`100`
 import typings.recharts.rechartsNumbers.`200`
 import typings.recharts.rechartsNumbers.`300`
@@ -53,7 +54,7 @@ trait LineProps extends js.Object {
   var direction: js.UndefOr[String] = js.undefined
   var display: js.UndefOr[String] = js.undefined
   var dominantBaseline: js.UndefOr[String] = js.undefined
-  var dot: js.UndefOr[js.Object | ReactElement | ContentRenderer[DotProps] | Boolean] = js.undefined
+  var dot: js.UndefOr[js.Object | ReactElement | ContentRenderer[DotPropspayloadany] | Boolean] = js.undefined
   var dx: js.UndefOr[Double] = js.undefined
   var dy: js.UndefOr[Double] = js.undefined
   var fill: js.UndefOr[String] = js.undefined
@@ -170,7 +171,7 @@ object LineProps {
     direction: String = null,
     display: String = null,
     dominantBaseline: String = null,
-    dot: js.Object | ReactElement | ContentRenderer[DotProps] | Boolean = null,
+    dot: js.Object | ReactElement | ContentRenderer[DotPropspayloadany] | Boolean = null,
     dx: js.UndefOr[Double] = js.undefined,
     dy: js.UndefOr[Double] = js.undefined,
     fill: String = null,

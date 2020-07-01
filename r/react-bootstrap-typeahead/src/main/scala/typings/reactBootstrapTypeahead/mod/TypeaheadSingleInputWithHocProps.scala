@@ -293,7 +293,7 @@ trait TypeaheadSingleInputWithHocProps[T /* <: TypeaheadModel */] extends js.Obj
 
 object TypeaheadSingleInputWithHocProps {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.reactBootstrapTypeahead.mod.TypeaheadModel */ T](
     `aria-activedescendant`: String,
     `aria-autocomplete`: list | both,
     `aria-expanded`: Boolean,

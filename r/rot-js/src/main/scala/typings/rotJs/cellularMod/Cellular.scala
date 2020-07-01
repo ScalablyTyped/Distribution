@@ -20,7 +20,7 @@ trait Cellular
     value: Double
   ): Unit = js.native
   def _freeSpace(x: Double, y: Double, value: Double): Boolean = js.native
-  def _getClosest(point: Point, space: PointMap): js.Tuple2[Double, Double] = js.native
+  def _getClosest(point: Point, space: PointMap): Point = js.native
   /**
     * Find random points to connect. Search for the closest point in the larger space.
     * This is to minimize the length of the passage while maintaining good performance.

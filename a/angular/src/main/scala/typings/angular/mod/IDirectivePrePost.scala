@@ -12,7 +12,7 @@ trait IDirectivePrePost[TScope /* <: IScope */, TElement /* <: JQLite */, TAttri
 
 object IDirectivePrePost {
   @scala.inline
-  def apply[TScope, TElement, TAttributes, TController](
+  def apply[/* <: typings.angular.mod.IScope */ TScope, /* <: typings.angular.JQLite */ TElement, /* <: typings.angular.mod.IAttributes */ TAttributes, /* <: typings.angular.mod.IDirectiveController */ TController](
     post: (TScope, TElement, TAttributes, /* controller */ js.UndefOr[TController], /* transclude */ js.UndefOr[ITranscludeFunction]) => Unit = null,
     pre: (TScope, TElement, TAttributes, /* controller */ js.UndefOr[TController], /* transclude */ js.UndefOr[ITranscludeFunction]) => Unit = null
   ): IDirectivePrePost[TScope, TElement, TAttributes, TController] = {

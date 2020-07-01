@@ -13,7 +13,7 @@ trait ReplicationResultComplete[Content /* <: js.Object */] extends ReplicationR
 
 object ReplicationResultComplete {
   @scala.inline
-  def apply[Content](
+  def apply[/* <: js.Object */ Content](
     doc_write_failures: Double,
     docs: js.Array[ExistingDocument[Content]],
     docs_read: Double,

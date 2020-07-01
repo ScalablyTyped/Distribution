@@ -18,7 +18,7 @@ trait LayoutOptions[TModel /* <: Model[_, ModelSetOptions] */] extends ViewOptio
 
 object LayoutOptions {
   @scala.inline
-  def apply[TModel](
+  def apply[/* <: typings.backbone.mod.Model[_, typings.backbone.mod.ModelSetOptions] */ TModel](
     attributes: StringDictionary[js.Any] = null,
     className: String = null,
     collection: Collection[_] = null,

@@ -1,6 +1,7 @@
 package typings.gapiClientDrive.gapi.client.drive
 
-import typings.gapiClientDrive.anon.CanChangeTeamDriveBackground
+import typings.gapiClientDrive.anon.CanChangeCopyRequiresWriterPermissionRestriction
+import typings.gapiClientDrive.anon.CopyRequiresWriterPermission
 import typings.gapiClientDrive.anon.Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,17 +16,19 @@ trait TeamDrive extends js.Object {
   /** A short-lived link to this Team Drive's background image. */
   var backgroundImageLink: js.UndefOr[String] = js.undefined
   /** Capabilities the current user has on this Team Drive. */
-  var capabilities: js.UndefOr[CanChangeTeamDriveBackground] = js.undefined
+  var capabilities: js.UndefOr[CanChangeCopyRequiresWriterPermissionRestriction] = js.undefined
   /** The color of this Team Drive as an RGB hex string. It can only be set on a drive.teamdrives.update request that does not set themeId. */
   var colorRgb: js.UndefOr[String] = js.undefined
   /** The time at which the Team Drive was created (RFC 3339 date-time). */
   var createdTime: js.UndefOr[String] = js.undefined
-  /** The ID of this Team Drive which is also the ID of the top level folder for this Team Drive. */
+  /** The ID of this Team Drive which is also the ID of the top level folder of this Team Drive. */
   var id: js.UndefOr[String] = js.undefined
   /** Identifies what kind of resource this is. Value: the fixed string "drive#teamDrive". */
   var kind: js.UndefOr[String] = js.undefined
   /** The name of this Team Drive. */
   var name: js.UndefOr[String] = js.undefined
+  /** A set of restrictions that apply to this Team Drive or items inside this Team Drive. */
+  var restrictions: js.UndefOr[CopyRequiresWriterPermission] = js.undefined
   /**
     * The ID of the theme from which the background image and color will be set. The set of possible teamDriveThemes can be retrieved from a drive.about.get
     * response. When not specified on a drive.teamdrives.create request, a random theme is chosen from which the background image and color are set. This is
@@ -39,12 +42,13 @@ object TeamDrive {
   def apply(
     backgroundImageFile: Id = null,
     backgroundImageLink: String = null,
-    capabilities: CanChangeTeamDriveBackground = null,
+    capabilities: CanChangeCopyRequiresWriterPermissionRestriction = null,
     colorRgb: String = null,
     createdTime: String = null,
     id: String = null,
     kind: String = null,
     name: String = null,
+    restrictions: CopyRequiresWriterPermission = null,
     themeId: String = null
   ): TeamDrive = {
     val __obj = js.Dynamic.literal()
@@ -56,6 +60,7 @@ object TeamDrive {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (restrictions != null) __obj.updateDynamic("restrictions")(restrictions.asInstanceOf[js.Any])
     if (themeId != null) __obj.updateDynamic("themeId")(themeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamDrive]
   }

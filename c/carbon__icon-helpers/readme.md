@@ -1,7 +1,7 @@
 
 # Scala.js typings for carbon__icon-helpers
 
-Typings are for version 10.6
+Typings are for version 10.7
 
 ## Library description:
 Helpers used alongside icons for digital and software products using the Carbon Design System

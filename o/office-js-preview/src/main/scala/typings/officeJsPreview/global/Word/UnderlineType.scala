@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Underline types
+  * The supported styles for underline format.
   *
   * [Api set: WordApi]
   */

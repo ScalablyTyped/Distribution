@@ -65,7 +65,7 @@ object SchemaGoogleCloudMlV1OperationMetadata {
     val __obj = js.Dynamic.literal()
     if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCancellationRequested)) __obj.updateDynamic("isCancellationRequested")(isCancellationRequested.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCancellationRequested)) __obj.updateDynamic("isCancellationRequested")(isCancellationRequested.get.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (modelName != null) __obj.updateDynamic("modelName")(modelName.asInstanceOf[js.Any])
     if (operationType != null) __obj.updateDynamic("operationType")(operationType.asInstanceOf[js.Any])

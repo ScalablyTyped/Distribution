@@ -1,6 +1,5 @@
 package typings.blueprintjsCore.anon
 
-import typings.react.mod.ReactText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait PrevMaxProp extends js.Object {
   var prevMaxProp: Double
   var prevMinProp: Double
-  var prevValueProp: ReactText
+  var prevValueProp: String | Double
   var stepMaxPrecision: Double
   var value: String
 }
@@ -18,7 +17,7 @@ object PrevMaxProp {
   def apply(
     prevMaxProp: Double,
     prevMinProp: Double,
-    prevValueProp: ReactText,
+    prevValueProp: String | Double,
     stepMaxPrecision: Double,
     value: String
   ): PrevMaxProp = {

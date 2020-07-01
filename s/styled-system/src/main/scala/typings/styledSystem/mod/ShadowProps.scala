@@ -12,7 +12,7 @@ trait ShadowProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
 
 object ShadowProps {
   @scala.inline
-  def apply[ThemeType](
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](
     boxShadow: js.UndefOr[Null | (ResponsiveValue[BoxShadowProperty | Double, ThemeType])] = js.undefined,
     textShadow: js.UndefOr[Null | (ResponsiveValue[TextShadowProperty | Double, ThemeType])] = js.undefined
   ): ShadowProps[ThemeType] = {

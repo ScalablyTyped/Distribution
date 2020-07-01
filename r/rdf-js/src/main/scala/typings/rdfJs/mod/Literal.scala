@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Literal
-  extends QuadObject
-     with Term {
+  extends _QuadObject
+     with _Term {
   /**
     * A NamedNode whose IRI represents the datatype of the literal.
     */
-  var datatype: NamedNode = js.native
+  var datatype: NamedNode[String] = js.native
   /**
     * the language as lowercase BCP47 string (examples: en, en-gb)
     * or an empty string if the literal has no language.

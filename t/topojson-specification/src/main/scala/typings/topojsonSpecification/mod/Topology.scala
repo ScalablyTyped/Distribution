@@ -15,7 +15,7 @@ trait Topology[T /* <: Objects[Properties] */] extends TopoJSON {
 
 object Topology {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.topojsonSpecification.mod.Objects[typings.topojsonSpecification.mod.Properties] */ T](
     arcs: js.Array[Arc],
     objects: T,
     `type`: typings.topojsonSpecification.topojsonSpecificationStrings.Topology,

@@ -1,19 +1,15 @@
 package typings.firefoxWebextBrowser.anon
 
-import typings.firefoxWebextBrowser.browser.extension.ViewType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TabId extends js.Object {
-  /** Find a view according to a tab id. If this field is omitted, returns all views. */
+  /** Sets the sidebar title for the tab specified by tabId. Automatically resets when the tab is closed. */
   var tabId: js.UndefOr[Double] = js.undefined
-  /**
-    * The type of view to get. If omitted, returns all views (including background pages and tabs). Valid values:
-    * 'tab', 'popup', 'sidebar'.
-    */
-  var `type`: js.UndefOr[ViewType] = js.undefined
-  /** The window to restrict the search to. If omitted, returns all views. */
+  /** The string the sidebar action should display when moused over. */
+  var title: String | Null
+  /** Sets the sidebar title for the window specified by windowId. */
   var windowId: js.UndefOr[Double] = js.undefined
 }
 
@@ -21,12 +17,11 @@ object TabId {
   @scala.inline
   def apply(
     tabId: js.UndefOr[Double] = js.undefined,
-    `type`: ViewType = null,
+    title: String = null,
     windowId: js.UndefOr[Double] = js.undefined
   ): TabId = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     if (!js.isUndefined(tabId)) __obj.updateDynamic("tabId")(tabId.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(windowId)) __obj.updateDynamic("windowId")(windowId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabId]
   }

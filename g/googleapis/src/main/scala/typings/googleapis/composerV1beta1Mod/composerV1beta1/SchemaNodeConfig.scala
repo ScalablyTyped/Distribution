@@ -99,7 +99,7 @@ trait SchemaNodeConfig extends js.Object {
 object SchemaNodeConfig {
   @scala.inline
   def apply(
-    diskSizeGb: Int | Double = null,
+    diskSizeGb: js.UndefOr[Double] = js.undefined,
     ipAllocationPolicy: SchemaIPAllocationPolicy = null,
     location: String = null,
     machineType: String = null,
@@ -110,7 +110,7 @@ object SchemaNodeConfig {
     tags: js.Array[String] = null
   ): SchemaNodeConfig = {
     val __obj = js.Dynamic.literal()
-    if (diskSizeGb != null) __obj.updateDynamic("diskSizeGb")(diskSizeGb.asInstanceOf[js.Any])
+    if (!js.isUndefined(diskSizeGb)) __obj.updateDynamic("diskSizeGb")(diskSizeGb.get.asInstanceOf[js.Any])
     if (ipAllocationPolicy != null) __obj.updateDynamic("ipAllocationPolicy")(ipAllocationPolicy.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (machineType != null) __obj.updateDynamic("machineType")(machineType.asInstanceOf[js.Any])

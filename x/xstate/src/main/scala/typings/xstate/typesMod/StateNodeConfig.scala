@@ -131,7 +131,7 @@ trait StateNodeConfig[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* 
 
 object StateNodeConfig {
   @scala.inline
-  def apply[TContext, TStateSchema, TEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.StateSchema[_] */ TStateSchema, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     activities: SingleOrArray[Activity[TContext, TEvent]] = null,
     after: DelayedTransitions[TContext, TEvent] = null,
     context: TContext | js.Function0[TContext] = null,

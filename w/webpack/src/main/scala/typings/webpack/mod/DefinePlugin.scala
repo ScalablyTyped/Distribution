@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import typings.webpack.mod.DefinePlugin.CodeValueObject
 import typings.webpack.mod.compilation.normalModuleFactory.Parser
+import typings.webpack.webpackBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,6 +33,11 @@ object DefinePlugin extends js.Object {
   def runtimeValue(
     fn: js.Function1[/* hasModule */ typings.webpack.anon.Module, CodeValuePrimitive],
     fileDependencies: js.Array[String]
+  ): RuntimeValue = js.native
+  @JSName("runtimeValue")
+  def runtimeValue_true(
+    fn: js.Function1[/* hasModule */ typings.webpack.anon.Module, CodeValuePrimitive],
+    fileDependencies: `true`
   ): RuntimeValue = js.native
   type CodeValueObject = CodeValuePrimitive | (StringDictionary[
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias webpack.webpack.DefinePlugin.CodeValueObject */ js.Object

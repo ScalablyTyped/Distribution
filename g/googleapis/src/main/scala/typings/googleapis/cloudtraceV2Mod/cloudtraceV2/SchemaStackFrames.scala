@@ -22,9 +22,9 @@ trait SchemaStackFrames extends js.Object {
 
 object SchemaStackFrames {
   @scala.inline
-  def apply(droppedFramesCount: Int | Double = null, frame: js.Array[SchemaStackFrame] = null): SchemaStackFrames = {
+  def apply(droppedFramesCount: js.UndefOr[Double] = js.undefined, frame: js.Array[SchemaStackFrame] = null): SchemaStackFrames = {
     val __obj = js.Dynamic.literal()
-    if (droppedFramesCount != null) __obj.updateDynamic("droppedFramesCount")(droppedFramesCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(droppedFramesCount)) __obj.updateDynamic("droppedFramesCount")(droppedFramesCount.get.asInstanceOf[js.Any])
     if (frame != null) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStackFrames]
   }

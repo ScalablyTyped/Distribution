@@ -8,6 +8,13 @@ package object ime {
   type ActivateEvent = typings.chrome.chrome.events.Event[
     js.Function2[/* engineID */ java.lang.String, /* screen */ java.lang.String, scala.Unit]
   ]
+  type AssistiveWindowButtonClickedEvent = typings.chrome.chrome.events.Event[
+    js.Function1[
+      /* details */ typings.chrome.chrome.input.ime.AssistiveWindowButtonClickedDetails, 
+      scala.Unit
+    ]
+  ]
+  type AssistiveWindowType = typings.chrome.chromeStrings.undo
   type BlurEvent = typings.chrome.chrome.events.Event[js.Function1[/* contextID */ scala.Double, scala.Unit]]
   type CandidateClickedEvent = typings.chrome.chrome.events.Event[
     js.Function3[

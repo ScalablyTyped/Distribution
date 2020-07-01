@@ -17,9 +17,9 @@ trait SchemaDeleteBandingRequest extends js.Object {
 
 object SchemaDeleteBandingRequest {
   @scala.inline
-  def apply(bandedRangeId: Int | Double = null): SchemaDeleteBandingRequest = {
+  def apply(bandedRangeId: js.UndefOr[Double] = js.undefined): SchemaDeleteBandingRequest = {
     val __obj = js.Dynamic.literal()
-    if (bandedRangeId != null) __obj.updateDynamic("bandedRangeId")(bandedRangeId.asInstanceOf[js.Any])
+    if (!js.isUndefined(bandedRangeId)) __obj.updateDynamic("bandedRangeId")(bandedRangeId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeleteBandingRequest]
   }
 }

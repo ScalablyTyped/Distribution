@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashInvokeArgsMap extends js.Object {
+trait LodashInvokeArgsMap extends LodashConvertible {
   def apply(methodNameOrMethod: __, args: js.Array[_]): LodashInvokeArgsMap1x6 = js.native
   def apply(methodNameOrMethod: __, args: js.Array[_], collection: js.Object): LodashInvokeArgsMap1x6 = js.native
   def apply(methodNameOrMethod: __, args: __): LodashInvokeArgsMap1x4 = js.native

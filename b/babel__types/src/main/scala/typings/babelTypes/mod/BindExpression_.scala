@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 - typings.babelTypes.mod._Node because Already inherited */ trait BindExpression_
   extends Expression
      with BaseNode {
-  var callee: js.Any
-  var `object`: js.Any
+  var callee: Expression
+  var `object`: Expression
   @JSName("type")
   var type_BindExpression_ : BindExpression
 }
@@ -18,8 +18,8 @@ import scala.scalajs.js.annotation._
 object BindExpression_ {
   @scala.inline
   def apply(
-    callee: js.Any,
-    `object`: js.Any,
+    callee: Expression,
+    `object`: Expression,
     `type`: BindExpression,
     end: Double = null.asInstanceOf[Double],
     innerComments: js.Array[Comment] = null,

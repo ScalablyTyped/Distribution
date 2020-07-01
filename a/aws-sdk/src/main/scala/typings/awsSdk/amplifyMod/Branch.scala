@@ -7,43 +7,43 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Branch extends js.Object {
   /**
-    *  Id of the active job for a branch, part of an Amplify App. 
+    *  The ID of the active job for a branch of an Amplify app. 
     */
   var activeJobId: ActiveJobId = js.native
   /**
-    *  List of custom resources that are linked to this branch. 
+    *  A list of custom resources that are linked to this branch. 
     */
   var associatedResources: js.UndefOr[AssociatedResources] = js.native
   /**
-    *  ARN for a Backend Environment, part of an Amplify App. 
+    *  The Amazon Resource Name (ARN) for a backend environment that is part of an Amplify app. 
     */
   var backendEnvironmentArn: js.UndefOr[BackendEnvironmentArn] = js.native
   /**
-    *  Basic Authorization credentials for a branch, part of an Amplify App. 
+    *  The basic authorization credentials for a branch of an Amplify app. 
     */
   var basicAuthCredentials: js.UndefOr[BasicAuthCredentials] = js.native
   /**
-    *  ARN for a branch, part of an Amplify App. 
+    *  The Amazon Resource Name (ARN) for a branch that is part of an Amplify app. 
     */
   var branchArn: BranchArn = js.native
   /**
-    *  Name for a branch, part of an Amplify App. 
+    *  The name for the branch that is part of an Amplify app. 
     */
   var branchName: BranchName = js.native
   /**
-    *  BuildSpec content for branch for Amplify App. 
+    *  The build specification (build spec) content for the branch of an Amplify app. 
     */
   var buildSpec: js.UndefOr[BuildSpec] = js.native
   /**
-    *  Creation date and time for a branch, part of an Amplify App. 
+    *  The creation date and time for a branch that is part of an Amplify app. 
     */
   var createTime: CreateTime = js.native
   /**
-    *  Custom domains for a branch, part of an Amplify App. 
+    *  The custom domains for a branch of an Amplify app. 
     */
   var customDomains: CustomDomains = js.native
   /**
-    *  Description for a branch, part of an Amplify App. 
+    *  The description for the branch that is part of an Amplify app. 
     */
   var description: Description = js.native
   /**
@@ -51,35 +51,35 @@ trait Branch extends js.Object {
     */
   var destinationBranch: js.UndefOr[BranchName] = js.native
   /**
-    *  Display name for a branch, will use as the default domain prefix. 
+    *  The display name for the branch. This is used as the default domain prefix. 
     */
   var displayName: DisplayName = js.native
   /**
-    *  Enables auto-building on push for a branch, part of an Amplify App. 
+    *  Enables auto-building on push for a branch of an Amplify app. 
     */
   var enableAutoBuild: EnableAutoBuild = js.native
   /**
-    *  Enables Basic Authorization for a branch, part of an Amplify App. 
+    *  Enables basic authorization for a branch of an Amplify app. 
     */
   var enableBasicAuth: EnableBasicAuth = js.native
   /**
-    *  Enables notifications for a branch, part of an Amplify App. 
+    *  Enables notifications for a branch that is part of an Amplify app. 
     */
   var enableNotification: EnableNotification = js.native
   /**
-    *  Enables Pull Request Preview for this branch. 
+    *  Enables pull request preview for the branch. 
     */
   var enablePullRequestPreview: EnablePullRequestPreview = js.native
   /**
-    *  Environment Variables specific to a branch, part of an Amplify App. 
+    *  The environment variables specific to a branch of an Amplify app. 
     */
   var environmentVariables: EnvironmentVariables = js.native
   /**
-    *  Framework for a branch, part of an Amplify App. 
+    *  The framework for a branch of an Amplify app. 
     */
   var framework: Framework = js.native
   /**
-    *  The Amplify Environment name for the pull request. 
+    *  The Amplify environment name for the pull request. 
     */
   var pullRequestEnvironmentName: js.UndefOr[PullRequestEnvironmentName] = js.native
   /**
@@ -87,27 +87,27 @@ trait Branch extends js.Object {
     */
   var sourceBranch: js.UndefOr[BranchName] = js.native
   /**
-    *  Stage for a branch, part of an Amplify App. 
+    *  The current stage for the branch that is part of an Amplify app. 
     */
   var stage: Stage = js.native
   /**
-    *  Tag for branch for Amplify App. 
+    *  The tag for the branch of an Amplify app. 
     */
   var tags: js.UndefOr[TagMap] = js.native
   /**
-    *  Thumbnail URL for the branch. 
+    *  The thumbnail URL for the branch of an Amplify app. 
     */
   var thumbnailUrl: js.UndefOr[ThumbnailUrl] = js.native
   /**
-    *  Total number of Jobs part of an Amplify App. 
+    *  The total number of jobs that are part of an Amplify app. 
     */
   var totalNumberOfJobs: TotalNumberOfJobs = js.native
   /**
-    *  The content TTL for the website in seconds. 
+    *  The content Time to Live (TTL) for the website in seconds. 
     */
   var ttl: TTL = js.native
   /**
-    *  Last updated date and time for a branch, part of an Amplify App. 
+    *  The last updated date and time for a branch that is part of an Amplify app. 
     */
   var updateTime: UpdateTime = js.native
 }

@@ -1,6 +1,6 @@
 package typings.rcPicker.rangePickerMod
 
-import typings.rcPicker.dateBodyMod.DateRender
+import typings.rcPicker.anon.Range
 import typings.rcPicker.generateMod.GenerateConfig
 import typings.rcPicker.interfaceMod.Components
 import typings.rcPicker.interfaceMod.DisabledTimes
@@ -128,7 +128,7 @@ trait RangePickerDateProps[DateType] extends RangePickerProps[DateType] {
   var className: js.UndefOr[String] = js.undefined
   var clearIcon: js.UndefOr[ReactNode] = js.undefined
   var components: js.UndefOr[Components] = js.undefined
-  var dateRender: js.UndefOr[DateRender[DateType]] = js.undefined
+  var dateRender: js.UndefOr[RangeDateRender[DateType]] = js.undefined
   var defaultOpen: js.UndefOr[Boolean] = js.undefined
   var defaultPickerValue: js.UndefOr[js.Tuple2[DateType, DateType]] = js.undefined
   var defaultValue: js.UndefOr[RangeValue[DateType]] = js.undefined
@@ -195,6 +195,7 @@ trait RangePickerDateProps[DateType] extends RangePickerProps[DateType] {
   var renderExtraFooter: js.UndefOr[js.Function1[/* mode */ PanelMode, ReactNode]] = js.undefined
   var role: js.UndefOr[String] = js.undefined
   var separator: js.UndefOr[ReactNode] = js.undefined
+  var showNow: js.UndefOr[Boolean] = js.undefined
   var showTime: js.UndefOr[Boolean | RangeShowTimeObject[DateType]] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var suffixIcon: js.UndefOr[ReactNode] = js.undefined
@@ -266,7 +267,7 @@ object RangePickerDateProps {
     className: String = null,
     clearIcon: ReactNode = null,
     components: Components = null,
-    dateRender: (DateType, DateType) => ReactNode = null,
+    dateRender: (DateType, DateType, /* info */ Range) => ReactNode = null,
     defaultOpen: js.UndefOr[Boolean] = js.undefined,
     defaultPickerValue: js.Tuple2[DateType, DateType] = null,
     defaultValue: js.UndefOr[Null | RangeValue[DateType]] = js.undefined,
@@ -311,6 +312,7 @@ object RangePickerDateProps {
     renderExtraFooter: /* mode */ PanelMode => ReactNode = null,
     role: String = null,
     separator: ReactNode = null,
+    showNow: js.UndefOr[Boolean] = js.undefined,
     showTime: Boolean | RangeShowTimeObject[DateType] = null,
     style: CSSProperties = null,
     suffixIcon: ReactNode = null,
@@ -377,7 +379,7 @@ object RangePickerDateProps {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon.asInstanceOf[js.Any])
     if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
-    if (dateRender != null) __obj.updateDynamic("dateRender")(js.Any.fromFunction2(dateRender))
+    if (dateRender != null) __obj.updateDynamic("dateRender")(js.Any.fromFunction3(dateRender))
     if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen.get.asInstanceOf[js.Any])
     if (defaultPickerValue != null) __obj.updateDynamic("defaultPickerValue")(defaultPickerValue.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
@@ -419,6 +421,7 @@ object RangePickerDateProps {
     if (renderExtraFooter != null) __obj.updateDynamic("renderExtraFooter")(js.Any.fromFunction1(renderExtraFooter))
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNow)) __obj.updateDynamic("showNow")(showNow.get.asInstanceOf[js.Any])
     if (showTime != null) __obj.updateDynamic("showTime")(showTime.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (suffixIcon != null) __obj.updateDynamic("suffixIcon")(suffixIcon.asInstanceOf[js.Any])

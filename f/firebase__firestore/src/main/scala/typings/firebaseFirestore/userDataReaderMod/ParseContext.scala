@@ -4,7 +4,7 @@ import typings.firebaseFirestore.anon.PartialContextSettings
 import typings.firebaseFirestore.databaseInfoMod.DatabaseId
 import typings.firebaseFirestore.mutationMod.FieldTransform
 import typings.firebaseFirestore.pathMod.FieldPath
-import typings.firebaseFirestore.serializerMod.JsonProtoSerializer
+import typings.firebaseFirestore.remoteSerializerMod.JsonProtoSerializer
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,6 +19,8 @@ class ParseContext protected () extends js.Object {
     * @param settings The settings for the parser.
     * @param databaseId The database ID of the Firestore instance.
     * @param serializer The serializer to use to generate the Value proto.
+    * @param ignoreUndefinedProperties Whether to ignore undefined properties
+    * rather than throw.
     * @param fieldTransforms A mutable list of field transforms encountered while
     *     parsing the data.
     * @param fieldMask A mutable list of field paths encountered while parsing
@@ -29,23 +31,31 @@ class ParseContext protected () extends js.Object {
     * which case certain features will not work and errors will be somewhat
     * compromised).
     */
-  def this(settings: ContextSettings, databaseId: DatabaseId, serializer: JsonProtoSerializer) = this()
   def this(
     settings: ContextSettings,
     databaseId: DatabaseId,
     serializer: JsonProtoSerializer,
+    ignoreUndefinedProperties: Boolean
+  ) = this()
+  def this(
+    settings: ContextSettings,
+    databaseId: DatabaseId,
+    serializer: JsonProtoSerializer,
+    ignoreUndefinedProperties: Boolean,
     fieldTransforms: js.Array[FieldTransform]
   ) = this()
   def this(
     settings: ContextSettings,
     databaseId: DatabaseId,
     serializer: JsonProtoSerializer,
+    ignoreUndefinedProperties: Boolean,
     fieldTransforms: js.Array[FieldTransform],
     fieldMask: js.Array[FieldPath]
   ) = this()
   val databaseId: DatabaseId = js.native
   val fieldMask: js.Array[FieldPath] = js.native
   val fieldTransforms: js.Array[FieldTransform] = js.native
+  val ignoreUndefinedProperties: Boolean = js.native
   val serializer: JsonProtoSerializer = js.native
   val settings: ContextSettings = js.native
   var validatePath: js.Any = js.native

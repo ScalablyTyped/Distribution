@@ -53,15 +53,17 @@ trait Chain[T, V] extends js.Object {
     * Chaining *
     *********** */
   /**
-    * Wrapped type `any`.
-    * @see _.chain
+    * Returns a wrapped object. Calling methods on this object will continue to return wrapped objects
+    * until value() is used.
+    * @returns An underscore chain wrapper around the wrapped value.
     **/
-  def chain(): Chain[T, T] = js.native
+  def chain(): Chain[T, V] = js.native
   /**
-    * Wrapped type `any[][]`.
-    * @see _.chunk
+    * Chunks a wrapped list into multiple arrays, each containing length or fewer items.
+    * @param length The maximum size of the inner arrays.
+    * @returns The wrapped chunked list.
     **/
-  def chunk(): Chain[T, T] = js.native
+  def chunk(length: Double): Chain[js.Array[T], js.Array[js.Array[T]]] = js.native
   /**
     * @see _.map
     **/
@@ -900,8 +902,8 @@ trait Chain[T, V] extends js.Object {
     **/
   def unzip(arrays: js.Array[_]*): Chain[T, T] = js.native
   /**
-    * Wrapped type `any`.
-    * @see _.value
+    * Extracts the value of the wrapped object.
+    * @returns The value of the wrapped object.
     **/
   def value(): V = js.native
   /**

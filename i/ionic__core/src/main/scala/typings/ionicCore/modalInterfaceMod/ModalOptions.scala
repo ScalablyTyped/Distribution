@@ -30,7 +30,7 @@ trait ModalOptions[T /* <: ComponentRef */] extends js.Object {
 
 object ModalOptions {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.ionicCore.mod.ComponentRef */ T](
     component: T,
     animated: js.UndefOr[Boolean] = js.undefined,
     backdropDismiss: js.UndefOr[Boolean] = js.undefined,

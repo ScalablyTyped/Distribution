@@ -1,7 +1,7 @@
 
 # Scala.js typings for axe-core
 
-Typings are for version 3.5.3
+Typings are for version 3.5.5
 
 ## Library description:
 Accessibility engine for automated Web UI testing

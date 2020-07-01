@@ -157,7 +157,9 @@ class Map () extends Evented {
   def getLayoutProperty(layer: String, name: String): js.Any = js.native
   def getLight(): Light = js.native
   def getMaxBounds(): LngLatBounds | Null = js.native
+  def getMaxPitch(): Double = js.native
   def getMaxZoom(): Double = js.native
+  def getMinPitch(): Double = js.native
   def getMinZoom(): Double = js.native
   /**
     * Returns the current padding applied around the map viewport.
@@ -1015,8 +1017,12 @@ class Map () extends Evented {
   def setLight(options: Light, lightOptions: js.Any): this.type = js.native
   def setMaxBounds(): this.type = js.native
   def setMaxBounds(lnglatbounds: LngLatBoundsLike): this.type = js.native
+  def setMaxPitch(): this.type = js.native
+  def setMaxPitch(maxPitch: Double): this.type = js.native
   def setMaxZoom(): this.type = js.native
   def setMaxZoom(maxZoom: Double): this.type = js.native
+  def setMinPitch(): this.type = js.native
+  def setMinPitch(minPitch: Double): this.type = js.native
   def setMinZoom(): this.type = js.native
   def setMinZoom(minZoom: Double): this.type = js.native
   /**

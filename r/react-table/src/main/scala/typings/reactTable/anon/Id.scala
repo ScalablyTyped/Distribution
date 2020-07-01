@@ -14,7 +14,7 @@ trait Id[D /* <: js.Object */] extends js.Object {
 
 object Id {
   @scala.inline
-  def apply[D](Header: Renderer[HeaderProps[D]], id: IdType[D]): Id[D] = {
+  def apply[/* <: js.Object */ D](Header: Renderer[HeaderProps[D]], id: IdType[D]): Id[D] = {
     val __obj = js.Dynamic.literal(Header = Header.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Id[D]]
   }

@@ -34,7 +34,7 @@ trait IIOPubMessage[T /* <: IOPubMessageType */] extends IMessage[T] {
 
 object IIOPubMessage {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.jupyterlabServices.messagesMod.IOPubMessageType */ T](
     channel: iopub,
     content: Wait | Commid | (ReplyContent[
       ICommInfoReply | ICompleteReply | IHistoryReply | IInfoReply | IInputReply | IInspectReply | IIsCompleteReplyIncomplete | IIsCompleteReplyOther

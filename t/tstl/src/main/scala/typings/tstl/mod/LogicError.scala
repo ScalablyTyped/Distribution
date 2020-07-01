@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl", "LogicError")
 @js.native
 class LogicError protected ()
-  extends typings.tstl.exceptionMod.LogicError {
+  extends typings.tstl.tstlModuleMod.LogicError {
   /**
     * Initializer Constructor.
     *

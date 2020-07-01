@@ -90,7 +90,7 @@ object SchemaAccount {
     youtubeChannelLinks: js.Array[SchemaAccountYouTubeChannelLink] = null
   ): SchemaAccount = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adultContent)) __obj.updateDynamic("adultContent")(adultContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(adultContent)) __obj.updateDynamic("adultContent")(adultContent.get.asInstanceOf[js.Any])
     if (adwordsLinks != null) __obj.updateDynamic("adwordsLinks")(adwordsLinks.asInstanceOf[js.Any])
     if (businessInformation != null) __obj.updateDynamic("businessInformation")(businessInformation.asInstanceOf[js.Any])
     if (googleMyBusinessLink != null) __obj.updateDynamic("googleMyBusinessLink")(googleMyBusinessLink.asInstanceOf[js.Any])

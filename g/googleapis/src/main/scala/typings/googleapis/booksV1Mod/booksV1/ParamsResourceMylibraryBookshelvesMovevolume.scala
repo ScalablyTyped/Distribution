@@ -47,7 +47,7 @@ object ParamsResourceMylibraryBookshelvesMovevolume {
     source: String = null,
     userIp: String = null,
     volumeId: String = null,
-    volumePosition: Int | Double = null
+    volumePosition: js.UndefOr[Double] = js.undefined
   ): ParamsResourceMylibraryBookshelvesMovevolume = {
     val __obj = js.Dynamic.literal()
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
@@ -55,13 +55,13 @@ object ParamsResourceMylibraryBookshelvesMovevolume {
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (shelf != null) __obj.updateDynamic("shelf")(shelf.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId.asInstanceOf[js.Any])
-    if (volumePosition != null) __obj.updateDynamic("volumePosition")(volumePosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(volumePosition)) __obj.updateDynamic("volumePosition")(volumePosition.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceMylibraryBookshelvesMovevolume]
   }
 }

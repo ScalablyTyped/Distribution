@@ -1,6 +1,6 @@
 package typings.hlsJs.mod
 
-import typings.std.HTMLVideoElement
+import typings.std.HTMLMediaElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,9 +50,9 @@ trait Hls extends js.Object {
     */
   var loadLevel: Double = js.native
   /**
-    * get: Return the bound videoElement from the hls instance
+    * get: Return the bound mediaElement (of type HTMLMediaElement, aka. HTMLVideoElement or HTMLAudioElement) from the hls instance
     */
-  val media: js.UndefOr[HTMLVideoElement | Null] = js.native
+  val media: js.UndefOr[HTMLMediaElement | Null] = js.native
   /**
     * get: return next playback quality level (playback quality level for next buffered fragment)
     * return -1 if next fragment not buffered yet
@@ -95,20 +95,20 @@ trait Hls extends js.Object {
   val subtitleTracks: js.Array[_] = js.native
   /**
     * calling this method will:
-    *      bind videoElement and hls instances
-    *      create MediaSource and set it as video source
+    *      bind mediaElement (of type HTMLMediaElement, aka. HTMLVideoElement or HTMLAudioElement) and hls instances
+    *      create MediaSource and set it as video or audio source
     *      once MediaSource object is successfully created, MEDIA_ATTACHED event will be fired
     */
-  def attachMedia(videoElement: HTMLVideoElement): Unit = js.native
+  def attachMedia(mediaElement: HTMLMediaElement): Unit = js.native
   /**
     * should be called to free used resources and destroy hls context
     */
   def destroy(): Unit = js.native
   /**
     * calling this method will:
-    *      unbind VideoElement from hls instance
+    *      unbind HTMLMediaElement (aka. HTMLVideoElement or HTMLAudioElement) from hls instance
     *      signal the end of the stream on MediaSource
-    *      reset video source ( video.src = '' )
+    *      resets media source ( media.src = '',  )
     */
   def detachMedia(): Unit = js.native
   /**
@@ -284,7 +284,7 @@ trait Hls extends js.Object {
     */
   def on(
     event: K_MEDIA_ATTACHING,
-    callback: js.Function2[/* event */ K_MEDIA_ATTACHING, /* data */ mediaAttachedData, Unit]
+    callback: js.Function2[/* event */ K_MEDIA_ATTACHING, /* data */ mediaAttachingData, Unit]
   ): Unit = js.native
   def on(
     event: K_MEDIA_DETACHED,

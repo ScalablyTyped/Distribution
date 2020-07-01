@@ -29,7 +29,7 @@ object SchemaGetSpreadsheetByDataFilterRequest {
   ): SchemaGetSpreadsheetByDataFilterRequest = {
     val __obj = js.Dynamic.literal()
     if (dataFilters != null) __obj.updateDynamic("dataFilters")(dataFilters.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeGridData)) __obj.updateDynamic("includeGridData")(includeGridData.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeGridData)) __obj.updateDynamic("includeGridData")(includeGridData.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGetSpreadsheetByDataFilterRequest]
   }
 }

@@ -62,7 +62,7 @@ object SchemaListLogEntriesRequest {
   def apply(
     filter: String = null,
     orderBy: String = null,
-    pageSize: Int | Double = null,
+    pageSize: js.UndefOr[Double] = js.undefined,
     pageToken: String = null,
     projectIds: js.Array[String] = null,
     resourceNames: js.Array[String] = null
@@ -70,7 +70,7 @@ object SchemaListLogEntriesRequest {
     val __obj = js.Dynamic.literal()
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     if (projectIds != null) __obj.updateDynamic("projectIds")(projectIds.asInstanceOf[js.Any])
     if (resourceNames != null) __obj.updateDynamic("resourceNames")(resourceNames.asInstanceOf[js.Any])

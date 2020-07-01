@@ -68,7 +68,7 @@ trait OpenUrlMenuItemOptions extends js.Object {
   val click: js.UndefOr[
     js.Function3[
       /* menuItem */ MenuItem, 
-      /* browserWindow */ BrowserWindow, 
+      /* browserWindow */ js.UndefOr[BrowserWindow], 
       /* event */ KeyboardEvent, 
       Unit
     ]
@@ -105,7 +105,7 @@ object OpenUrlMenuItemOptions {
     before: js.Array[String] = null,
     beforeGroupContaining: js.Array[String] = null,
     checked: js.UndefOr[Boolean] = js.undefined,
-    click: (/* menuItem */ MenuItem, /* browserWindow */ BrowserWindow, /* event */ KeyboardEvent) => Unit = null,
+    click: (/* menuItem */ MenuItem, /* browserWindow */ js.UndefOr[BrowserWindow], /* event */ KeyboardEvent) => Unit = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     icon: NativeImage_ | String = null,
     id: String = null,

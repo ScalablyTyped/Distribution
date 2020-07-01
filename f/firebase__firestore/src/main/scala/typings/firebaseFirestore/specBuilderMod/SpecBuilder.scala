@@ -15,10 +15,10 @@ import typings.firebaseFirestore.documentMod.NoDocument
 import typings.firebaseFirestore.errorMod.Code
 import typings.firebaseFirestore.objectValueMod.JsonObject
 import typings.firebaseFirestore.specRpcErrorMod.RpcError
+import typings.firebaseFirestore.specTestRunnerMod.PersistenceAction
 import typings.firebaseFirestore.specTestRunnerMod.SpecConfig
-import typings.firebaseFirestore.specTestRunnerMod.SpecDatabaseFailures
 import typings.firebaseFirestore.specTestRunnerMod.SpecStep
-import typings.firebaseFirestore.utilHelpersMod.TestSnapshotVersion
+import typings.firebaseFirestore.testUtilHelpersMod.TestSnapshotVersion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -94,7 +94,7 @@ class SpecBuilder () extends js.Object {
     * Fails the specified database transaction until `recoverDatabase()` is
     * called.
     */
-  def failDatabaseTransactions(failureMode: SpecDatabaseFailures): this.type = js.native
+  def failDatabaseTransactions(actions: PersistenceAction*): this.type = js.native
   /**
     * Fails a write with an error and optional additional options.
     *

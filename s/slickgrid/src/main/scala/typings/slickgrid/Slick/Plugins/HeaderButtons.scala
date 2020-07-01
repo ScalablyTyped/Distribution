@@ -15,7 +15,7 @@ trait HeaderButtons[T /* <: SlickData */] extends Plugin[T] {
 
 object HeaderButtons {
   @scala.inline
-  def apply[T](destroy: () => Unit, init: Grid[T] => Unit, onCommand: Event[OnCommandEventArgs[T]]): HeaderButtons[T] = {
+  def apply[/* <: typings.slickgrid.Slick.SlickData */ T](destroy: () => Unit, init: Grid[T] => Unit, onCommand: Event[OnCommandEventArgs[T]]): HeaderButtons[T] = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), init = js.Any.fromFunction1(init), onCommand = onCommand.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderButtons[T]]
   }

@@ -12,7 +12,6 @@ object ElementCSSInlineStyle {
   @scala.inline
   def apply(attributeStyleMap: StylePropertyMap): ElementCSSInlineStyle = {
     val __obj = js.Dynamic.literal(attributeStyleMap = attributeStyleMap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ElementCSSInlineStyle]
   }
 }

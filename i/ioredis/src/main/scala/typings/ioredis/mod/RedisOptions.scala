@@ -127,6 +127,7 @@ trait RedisOptions extends js.Object {
     */
   var sentinelRetryStrategy: js.UndefOr[js.Function1[/* times */ Double, Double | Unit | Null]] = js.undefined
   var sentinelTLS: js.UndefOr[SecureContextOptions] = js.undefined
+  var sentinelUsername: js.UndefOr[String] = js.undefined
   var sentinels: js.UndefOr[js.Array[Host]] = js.undefined
   /**
     * Whether to show a friendly error stack. Will decrease the performance significantly.
@@ -138,6 +139,10 @@ trait RedisOptions extends js.Object {
     * default: true.
     */
   var updateSentinels: js.UndefOr[Boolean] = js.undefined
+  /**
+    * If set, client will send AUTH command with the value of this option as the first argument when connected. The `password` option must be set too. Username should only be set for Redis >=6.
+    */
+  var username: js.UndefOr[String] = js.undefined
 }
 
 object RedisOptions {
@@ -171,10 +176,12 @@ object RedisOptions {
     sentinelPassword: String = null,
     sentinelRetryStrategy: /* times */ Double => Double | Unit | Null = null,
     sentinelTLS: SecureContextOptions = null,
+    sentinelUsername: String = null,
     sentinels: js.Array[Host] = null,
     showFriendlyErrorStack: js.UndefOr[Boolean] = js.undefined,
     tls: ConnectionOptions = null,
-    updateSentinels: js.UndefOr[Boolean] = js.undefined
+    updateSentinels: js.UndefOr[Boolean] = js.undefined,
+    username: String = null
   ): RedisOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoResendUnfulfilledCommands)) __obj.updateDynamic("autoResendUnfulfilledCommands")(autoResendUnfulfilledCommands.get.asInstanceOf[js.Any])
@@ -205,10 +212,12 @@ object RedisOptions {
     if (sentinelPassword != null) __obj.updateDynamic("sentinelPassword")(sentinelPassword.asInstanceOf[js.Any])
     if (sentinelRetryStrategy != null) __obj.updateDynamic("sentinelRetryStrategy")(js.Any.fromFunction1(sentinelRetryStrategy))
     if (sentinelTLS != null) __obj.updateDynamic("sentinelTLS")(sentinelTLS.asInstanceOf[js.Any])
+    if (sentinelUsername != null) __obj.updateDynamic("sentinelUsername")(sentinelUsername.asInstanceOf[js.Any])
     if (sentinels != null) __obj.updateDynamic("sentinels")(sentinels.asInstanceOf[js.Any])
     if (!js.isUndefined(showFriendlyErrorStack)) __obj.updateDynamic("showFriendlyErrorStack")(showFriendlyErrorStack.get.asInstanceOf[js.Any])
     if (tls != null) __obj.updateDynamic("tls")(tls.asInstanceOf[js.Any])
     if (!js.isUndefined(updateSentinels)) __obj.updateDynamic("updateSentinels")(updateSentinels.get.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedisOptions]
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for pollyjs__node-server
 
-Typings are for version 2.6
+Typings are for version 4.3
 
 ## Library description:
 Standalone node server and express integration for @pollyjs

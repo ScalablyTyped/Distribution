@@ -10,21 +10,31 @@ import scala.scalajs.js.annotation._
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.js_
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.leaf
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mainthreadio
-  - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.privacy
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.responsiveness
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.screenshots
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.seqstyle
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.stackwalk
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tasktracer
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.threads
-  - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.trackopts
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jstracer
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jsallocations
+  - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.nostacksampling
+  - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.nativeallocations
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.preferencereads
+  - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ipcmessages
+  - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.fileio
+  - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.fileioall
+  - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.noiostacks
 */
 trait ProfilerFeature extends js.Object
 
 object ProfilerFeature {
+  @scala.inline
+  def fileio: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.fileio = "fileio".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.fileio]
+  @scala.inline
+  def fileioall: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.fileioall = "fileioall".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.fileioall]
+  @scala.inline
+  def ipcmessages: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ipcmessages = "ipcmessages".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ipcmessages]
   @scala.inline
   def java_ : typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.java_ = "java".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.java_]
   @scala.inline
@@ -38,9 +48,13 @@ object ProfilerFeature {
   @scala.inline
   def mainthreadio: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mainthreadio = "mainthreadio".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mainthreadio]
   @scala.inline
-  def preferencereads: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.preferencereads = "preferencereads".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.preferencereads]
+  def nativeallocations: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.nativeallocations = "nativeallocations".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.nativeallocations]
   @scala.inline
-  def privacy: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.privacy = "privacy".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.privacy]
+  def noiostacks: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.noiostacks = "noiostacks".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.noiostacks]
+  @scala.inline
+  def nostacksampling: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.nostacksampling = "nostacksampling".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.nostacksampling]
+  @scala.inline
+  def preferencereads: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.preferencereads = "preferencereads".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.preferencereads]
   @scala.inline
   def responsiveness: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.responsiveness = "responsiveness".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.responsiveness]
   @scala.inline
@@ -53,7 +67,5 @@ object ProfilerFeature {
   def tasktracer: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tasktracer = "tasktracer".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tasktracer]
   @scala.inline
   def threads: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.threads = "threads".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.threads]
-  @scala.inline
-  def trackopts: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.trackopts = "trackopts".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.trackopts]
 }
 

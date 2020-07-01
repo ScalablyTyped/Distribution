@@ -1,7 +1,7 @@
 
 # Scala.js typings for fast-csv
 
-Typings are for version 3.7.0
+Typings are for version 4.3.1
 
 ## Library description:
 CSV parser and writer

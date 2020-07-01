@@ -59,7 +59,7 @@ trait CreateCacheClusterMessage extends js.Object {
     */
   var Port: js.UndefOr[IntegerOptional] = js.native
   /**
-    * The EC2 Availability Zone in which the cluster is created. All nodes belonging to this Memcached cluster are placed in the preferred Availability Zone. If you want to create your nodes across multiple Availability Zones, use PreferredAvailabilityZones. Default: System chosen Availability Zone.
+    * The EC2 Availability Zone in which the cluster is created. All nodes belonging to this cluster are placed in the preferred Availability Zone. If you want to create your nodes across multiple Availability Zones, use PreferredAvailabilityZones. Default: System chosen Availability Zone.
     */
   var PreferredAvailabilityZone: js.UndefOr[String] = js.native
   /**

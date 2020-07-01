@@ -10,7 +10,7 @@ trait UseColumnOrderState[D /* <: js.Object */] extends js.Object {
 
 object UseColumnOrderState {
   @scala.inline
-  def apply[D](columnOrder: js.Array[IdType[D]]): UseColumnOrderState[D] = {
+  def apply[/* <: js.Object */ D](columnOrder: js.Array[IdType[D]]): UseColumnOrderState[D] = {
     val __obj = js.Dynamic.literal(columnOrder = columnOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseColumnOrderState[D]]
   }

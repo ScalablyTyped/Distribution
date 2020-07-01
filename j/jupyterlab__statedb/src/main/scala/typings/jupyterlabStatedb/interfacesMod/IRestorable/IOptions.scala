@@ -28,7 +28,7 @@ trait IOptions[T /* <: IObservableDisposable */]
 
 object IOptions {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.luminoDisposable.mod.IObservableDisposable */ T](
     command: String,
     connector: IDataConnector[ReadonlyPartialJSONValue, ReadonlyPartialJSONValue, String, String],
     name: T => String,

@@ -12,7 +12,7 @@ trait SplitProps[P, K /* <: /* keyof P */ String */] extends js.Object {
 
 object SplitProps {
   @scala.inline
-  def apply[P, K](matchedProps: Pick[P, K], remainingProps: Omit[P, K]): SplitProps[P, K] = {
+  def apply[P, /* <: / * keyof P * / java.lang.String */ K](matchedProps: Pick[P, K], remainingProps: Omit[P, K]): SplitProps[P, K] = {
     val __obj = js.Dynamic.literal(matchedProps = matchedProps.asInstanceOf[js.Any], remainingProps = remainingProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitProps[P, K]]
   }

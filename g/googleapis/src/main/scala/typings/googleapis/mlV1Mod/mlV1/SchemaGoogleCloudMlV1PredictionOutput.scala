@@ -32,13 +32,13 @@ object SchemaGoogleCloudMlV1PredictionOutput {
   @scala.inline
   def apply(
     errorCount: String = null,
-    nodeHours: Int | Double = null,
+    nodeHours: js.UndefOr[Double] = js.undefined,
     outputPath: String = null,
     predictionCount: String = null
   ): SchemaGoogleCloudMlV1PredictionOutput = {
     val __obj = js.Dynamic.literal()
     if (errorCount != null) __obj.updateDynamic("errorCount")(errorCount.asInstanceOf[js.Any])
-    if (nodeHours != null) __obj.updateDynamic("nodeHours")(nodeHours.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeHours)) __obj.updateDynamic("nodeHours")(nodeHours.get.asInstanceOf[js.Any])
     if (outputPath != null) __obj.updateDynamic("outputPath")(outputPath.asInstanceOf[js.Any])
     if (predictionCount != null) __obj.updateDynamic("predictionCount")(predictionCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudMlV1PredictionOutput]

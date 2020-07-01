@@ -1,7 +1,7 @@
 
 # Scala.js typings for welldone-software__why-did-you-render
 
-Typings are for version 4.2.2
+Typings are for version 4.2.5
 
 ## Library description:
 Monkey patches React to notify you about avoidable re-renders.

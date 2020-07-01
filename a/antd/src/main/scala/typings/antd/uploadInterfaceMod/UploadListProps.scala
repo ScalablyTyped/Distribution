@@ -21,7 +21,7 @@ trait UploadListProps[T] extends js.Object {
   var onRemove: js.UndefOr[js.Function1[/* file */ UploadFile[T], Unit | Boolean]] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var previewFile: js.UndefOr[PreviewFileHandler] = js.undefined
-  var progressAttr: js.UndefOr[js.Object] = js.undefined
+  var progress: js.UndefOr[UploadListProgressProps] = js.undefined
   var removeIcon: js.UndefOr[ReactNode] = js.undefined
   var showDownloadIcon: js.UndefOr[Boolean] = js.undefined
   var showPreviewIcon: js.UndefOr[Boolean] = js.undefined
@@ -42,7 +42,7 @@ object UploadListProps {
     onRemove: /* file */ UploadFile[T] => Unit | Boolean = null,
     prefixCls: String = null,
     previewFile: /* file */ File | Blob => js.Thenable[String] = null,
-    progressAttr: js.Object = null,
+    progress: UploadListProgressProps = null,
     removeIcon: ReactNode = null,
     showDownloadIcon: js.UndefOr[Boolean] = js.undefined,
     showPreviewIcon: js.UndefOr[Boolean] = js.undefined,
@@ -59,7 +59,7 @@ object UploadListProps {
     if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1(onRemove))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (previewFile != null) __obj.updateDynamic("previewFile")(js.Any.fromFunction1(previewFile))
-    if (progressAttr != null) __obj.updateDynamic("progressAttr")(progressAttr.asInstanceOf[js.Any])
+    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
     if (removeIcon != null) __obj.updateDynamic("removeIcon")(removeIcon.asInstanceOf[js.Any])
     if (!js.isUndefined(showDownloadIcon)) __obj.updateDynamic("showDownloadIcon")(showDownloadIcon.get.asInstanceOf[js.Any])
     if (!js.isUndefined(showPreviewIcon)) __obj.updateDynamic("showPreviewIcon")(showPreviewIcon.get.asInstanceOf[js.Any])

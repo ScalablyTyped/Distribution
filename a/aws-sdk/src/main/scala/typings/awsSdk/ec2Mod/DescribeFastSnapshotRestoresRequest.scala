@@ -11,7 +11,7 @@ trait DescribeFastSnapshotRestoresRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.native
   /**
-    * The filters. The possible values are:    availability-zone: The Availability Zone of the snapshot.    owner-id: The ID of the AWS account that owns the snapshot.    snapshot-id: The ID of the snapshot.    state: The state of fast snapshot restores for the snapshot (enabling | optimizing | enabled | disabling | disabled).  
+    * The filters. The possible values are:    availability-zone: The Availability Zone of the snapshot.    owner-id: The ID of the AWS account that enabled fast snapshot restore on the snapshot.    snapshot-id: The ID of the snapshot.    state: The state of fast snapshot restores for the snapshot (enabling | optimizing | enabled | disabling | disabled).  
     */
   var Filters: js.UndefOr[FilterList] = js.native
   /**

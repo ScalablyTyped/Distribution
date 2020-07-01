@@ -17,7 +17,7 @@ trait BoxShadowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.O
 
 object BoxShadowProps {
   @scala.inline
-  def apply[ThemeType](
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](
     boxShadow: js.UndefOr[Null | (ResponsiveValue[BoxShadowProperty | Double, ThemeType])] = js.undefined
   ): BoxShadowProps[ThemeType] = {
     val __obj = js.Dynamic.literal()

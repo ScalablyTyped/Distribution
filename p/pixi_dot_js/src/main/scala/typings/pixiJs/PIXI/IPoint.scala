@@ -8,29 +8,18 @@ import scala.scalajs.js.annotation._
   * Common interface for points. Both Point and ObservablePoint implement it
   * @memberof PIXI
   * @interface IPoint
+  * @extends PIXI.IPointData
   */
 @js.native
-trait IPoint extends js.Object {
-  /**
-    * X coord
-    * @memberof PIXI.IPoint#
-    * @member {number} x
-    */
-  var x: Double = js.native
-  /**
-    * Y coord
-    * @memberof PIXI.IPoint#
-    * @member {number} y
-    */
-  var y: Double = js.native
+trait IPoint extends IPointData {
   /**
     * Copies x and y from the given point
     * @method copyFrom
     * @memberof PIXI.IPoint#
-    * @param {PIXI.IPoint} p - The point to copy from
+    * @param {PIXI.IPointData} p - The point to copy from
     * @returns {this} Returns itself.
     */
-  def copyFrom(p: IPoint): this.type = js.native
+  def copyFrom(p: IPointData): this.type = js.native
   /**
     * Copies x and y into the given point
     * @method copyTo
@@ -44,10 +33,10 @@ trait IPoint extends js.Object {
     *
     * @method equals
     * @memberof PIXI.IPoint#
-    * @param {PIXI.IPoint} p - The point to check
+    * @param {PIXI.IPointData} p - The point to check
     * @returns {boolean} Whether the given point equal to this point
     */
-  def equals(p: IPoint): Boolean = js.native
+  def equals(p: IPointData): Boolean = js.native
   /**
     * Sets the point to a new x and y position.
     * If y is omitted, both x and y will be set to x.

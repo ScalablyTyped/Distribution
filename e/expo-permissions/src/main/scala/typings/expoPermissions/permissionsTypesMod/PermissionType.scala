@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   - typings.expoPermissions.expoPermissionsStrings.contacts
   - typings.expoPermissions.expoPermissionsStrings.calendar
   - typings.expoPermissions.expoPermissionsStrings.reminders
+  - typings.expoPermissions.expoPermissionsStrings.motion
   - typings.expoPermissions.expoPermissionsStrings.systemBrightness
 */
 trait PermissionType extends js.Object
@@ -31,6 +32,8 @@ object PermissionType {
   def contacts: typings.expoPermissions.expoPermissionsStrings.contacts = "contacts".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.contacts]
   @scala.inline
   def location: typings.expoPermissions.expoPermissionsStrings.location = "location".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.location]
+  @scala.inline
+  def motion: typings.expoPermissions.expoPermissionsStrings.motion = "motion".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.motion]
   @scala.inline
   def notifications: typings.expoPermissions.expoPermissionsStrings.notifications = "notifications".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.notifications]
   @scala.inline

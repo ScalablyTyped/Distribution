@@ -93,7 +93,7 @@ object SchemaCommentSnippet {
     authorProfileImageUrl: String = null,
     canRate: js.UndefOr[Boolean] = js.undefined,
     channelId: String = null,
-    likeCount: Int | Double = null,
+    likeCount: js.UndefOr[Double] = js.undefined,
     moderationStatus: String = null,
     parentId: String = null,
     publishedAt: String = null,
@@ -108,9 +108,9 @@ object SchemaCommentSnippet {
     if (authorChannelUrl != null) __obj.updateDynamic("authorChannelUrl")(authorChannelUrl.asInstanceOf[js.Any])
     if (authorDisplayName != null) __obj.updateDynamic("authorDisplayName")(authorDisplayName.asInstanceOf[js.Any])
     if (authorProfileImageUrl != null) __obj.updateDynamic("authorProfileImageUrl")(authorProfileImageUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(canRate)) __obj.updateDynamic("canRate")(canRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(canRate)) __obj.updateDynamic("canRate")(canRate.get.asInstanceOf[js.Any])
     if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
-    if (likeCount != null) __obj.updateDynamic("likeCount")(likeCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(likeCount)) __obj.updateDynamic("likeCount")(likeCount.get.asInstanceOf[js.Any])
     if (moderationStatus != null) __obj.updateDynamic("moderationStatus")(moderationStatus.asInstanceOf[js.Any])
     if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
     if (publishedAt != null) __obj.updateDynamic("publishedAt")(publishedAt.asInstanceOf[js.Any])

@@ -57,6 +57,10 @@ object settings extends js.Object {
     */
   var ratingMaximumRateValueCount: Double = js.native
   /**
+    * Set this property to change readOnlyCommentRenderMode: "textarea" (default) or (div)
+    */
+  var readOnlyCommentRenderMode: String = js.native
+  /**
     * Set to true to always serialize the localization string as object even if there is only one value for default locale. Instead of string "MyStr" serialize as {default: "MyStr"}
     */
   var serializeLocalizableStringAsObject: Boolean = js.native

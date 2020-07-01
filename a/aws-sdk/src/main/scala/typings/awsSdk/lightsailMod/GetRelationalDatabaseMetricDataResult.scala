@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetRelationalDatabaseMetricDataResult extends js.Object {
   /**
-    * An object describing the result of your get relational database metric data request.
+    * An array of objects that describe the metric data returned.
     */
   var metricData: js.UndefOr[MetricDatapointList] = js.native
   /**
-    * The name of the metric.
+    * The name of the metric returned.
     */
   var metricName: js.UndefOr[RelationalDatabaseMetricName] = js.native
 }

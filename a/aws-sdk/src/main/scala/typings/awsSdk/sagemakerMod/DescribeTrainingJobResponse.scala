@@ -11,7 +11,7 @@ trait DescribeTrainingJobResponse extends js.Object {
     */
   var AlgorithmSpecification: typings.awsSdk.sagemakerMod.AlgorithmSpecification = js.native
   /**
-    * 
+    * The Amazon Resource Name (ARN) of an AutoML job.
     */
   var AutoMLJobArn: js.UndefOr[typings.awsSdk.sagemakerMod.AutoMLJobArn] = js.native
   /**

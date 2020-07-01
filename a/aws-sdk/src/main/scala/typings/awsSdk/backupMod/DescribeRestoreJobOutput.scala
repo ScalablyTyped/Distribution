@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeRestoreJobOutput extends js.Object {
   /**
+    * Returns the account ID that owns the restore job.
+    */
+  var AccountId: js.UndefOr[typings.awsSdk.backupMod.AccountId] = js.native
+  /**
     * The size, in bytes, of the restored resource.
     */
   var BackupSizeInBytes: js.UndefOr[Long_] = js.native
@@ -39,6 +43,10 @@ trait DescribeRestoreJobOutput extends js.Object {
     */
   var RecoveryPointArn: js.UndefOr[ARN] = js.native
   /**
+    * Returns metadata associated with a restore job listed by resource type.
+    */
+  var ResourceType: js.UndefOr[typings.awsSdk.backupMod.ResourceType] = js.native
+  /**
     * Uniquely identifies the job that restores a recovery point.
     */
   var RestoreJobId: js.UndefOr[String] = js.native
@@ -47,7 +55,7 @@ trait DescribeRestoreJobOutput extends js.Object {
     */
   var Status: js.UndefOr[RestoreJobStatus] = js.native
   /**
-    * A detailed message explaining the status of a job to restore a recovery point.
+    * A message showing the status of a job to restore a recovery point.
     */
   var StatusMessage: js.UndefOr[String] = js.native
 }
@@ -55,6 +63,7 @@ trait DescribeRestoreJobOutput extends js.Object {
 object DescribeRestoreJobOutput {
   @scala.inline
   def apply(
+    AccountId: AccountId = null,
     BackupSizeInBytes: js.UndefOr[Long_] = js.undefined,
     CompletionDate: timestamp = null,
     CreatedResourceArn: ARN = null,
@@ -63,11 +72,13 @@ object DescribeRestoreJobOutput {
     IamRoleArn: IAMRoleArn = null,
     PercentDone: String = null,
     RecoveryPointArn: ARN = null,
+    ResourceType: ResourceType = null,
     RestoreJobId: String = null,
     Status: RestoreJobStatus = null,
     StatusMessage: String = null
   ): DescribeRestoreJobOutput = {
     val __obj = js.Dynamic.literal()
+    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
     if (!js.isUndefined(BackupSizeInBytes)) __obj.updateDynamic("BackupSizeInBytes")(BackupSizeInBytes.get.asInstanceOf[js.Any])
     if (CompletionDate != null) __obj.updateDynamic("CompletionDate")(CompletionDate.asInstanceOf[js.Any])
     if (CreatedResourceArn != null) __obj.updateDynamic("CreatedResourceArn")(CreatedResourceArn.asInstanceOf[js.Any])
@@ -76,6 +87,7 @@ object DescribeRestoreJobOutput {
     if (IamRoleArn != null) __obj.updateDynamic("IamRoleArn")(IamRoleArn.asInstanceOf[js.Any])
     if (PercentDone != null) __obj.updateDynamic("PercentDone")(PercentDone.asInstanceOf[js.Any])
     if (RecoveryPointArn != null) __obj.updateDynamic("RecoveryPointArn")(RecoveryPointArn.asInstanceOf[js.Any])
+    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
     if (RestoreJobId != null) __obj.updateDynamic("RestoreJobId")(RestoreJobId.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (StatusMessage != null) __obj.updateDynamic("StatusMessage")(StatusMessage.asInstanceOf[js.Any])

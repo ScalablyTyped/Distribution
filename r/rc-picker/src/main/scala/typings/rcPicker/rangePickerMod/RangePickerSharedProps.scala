@@ -1,5 +1,6 @@
 package typings.rcPicker.rangePickerMod
 
+import typings.rcPicker.anon.Range
 import typings.rcPicker.interfaceMod.DisabledTimes
 import typings.rcPicker.interfaceMod.EventValue
 import typings.rcPicker.interfaceMod.PanelMode
@@ -25,6 +26,7 @@ trait RangePickerSharedProps[DateType] extends js.Object {
   var activePickerIndex: js.UndefOr[`0` | `1`] = js.undefined
   var allowEmpty: js.UndefOr[js.Tuple2[Boolean, Boolean]] = js.undefined
   var autoComplete: js.UndefOr[String] = js.undefined
+  var dateRender: js.UndefOr[RangeDateRender[DateType]] = js.undefined
   var defaultPickerValue: js.UndefOr[js.Tuple2[DateType, DateType]] = js.undefined
   var defaultValue: js.UndefOr[RangeValue[DateType]] = js.undefined
   var direction: js.UndefOr[ltr | rtl] = js.undefined
@@ -71,6 +73,7 @@ object RangePickerSharedProps {
     activePickerIndex: `0` | `1` = null,
     allowEmpty: js.Tuple2[Boolean, Boolean] = null,
     autoComplete: String = null,
+    dateRender: (DateType, DateType, /* info */ Range) => ReactNode = null,
     defaultPickerValue: js.Tuple2[DateType, DateType] = null,
     defaultValue: js.UndefOr[Null | RangeValue[DateType]] = js.undefined,
     direction: ltr | rtl = null,
@@ -96,6 +99,7 @@ object RangePickerSharedProps {
     if (activePickerIndex != null) __obj.updateDynamic("activePickerIndex")(activePickerIndex.asInstanceOf[js.Any])
     if (allowEmpty != null) __obj.updateDynamic("allowEmpty")(allowEmpty.asInstanceOf[js.Any])
     if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
+    if (dateRender != null) __obj.updateDynamic("dateRender")(js.Any.fromFunction3(dateRender))
     if (defaultPickerValue != null) __obj.updateDynamic("defaultPickerValue")(defaultPickerValue.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])

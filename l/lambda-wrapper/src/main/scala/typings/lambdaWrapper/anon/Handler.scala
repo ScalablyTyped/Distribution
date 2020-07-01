@@ -10,7 +10,7 @@ trait Handler[THandlerName /* <: String */] extends js.Object {
 
 object Handler {
   @scala.inline
-  def apply[THandlerName](handler: THandlerName = null): Handler[THandlerName] = {
+  def apply[/* <: java.lang.String */ THandlerName](handler: THandlerName = null): Handler[THandlerName] = {
     val __obj = js.Dynamic.literal()
     if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
     __obj.asInstanceOf[Handler[THandlerName]]

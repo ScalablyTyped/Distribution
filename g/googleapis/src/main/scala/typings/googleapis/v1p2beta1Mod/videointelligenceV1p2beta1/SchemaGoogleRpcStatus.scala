@@ -62,9 +62,13 @@ trait SchemaGoogleRpcStatus extends js.Object {
 
 object SchemaGoogleRpcStatus {
   @scala.inline
-  def apply(code: Int | Double = null, details: js.Array[StringDictionary[_]] = null, message: String = null): SchemaGoogleRpcStatus = {
+  def apply(
+    code: js.UndefOr[Double] = js.undefined,
+    details: js.Array[StringDictionary[_]] = null,
+    message: String = null
+  ): SchemaGoogleRpcStatus = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code.get.asInstanceOf[js.Any])
     if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleRpcStatus]

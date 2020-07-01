@@ -15,10 +15,12 @@ object persistentConnectionMod extends js.Object {
     /**
       * @implements {ServerActions}
       * @param repoInfo_ Data about the namespace we are connecting to
+      * @param applicationId_ The Firebase App ID for this project
       * @param onDataUpdate_ A callback for new data from the server
       */
     def this(
       repoInfo_ : RepoInfo,
+      applicationId_ : String,
       onDataUpdate_ : js.Function4[/* a */ String, /* b */ js.Any, /* c */ Boolean, /* d */ Double | Null, Unit],
       onConnectStatus_ : js.Function1[/* a */ Boolean, Unit],
       onServerInfoUpdate_ : js.Function1[/* a */ js.Any, Unit],
@@ -26,12 +28,14 @@ object persistentConnectionMod extends js.Object {
     ) = this()
     def this(
       repoInfo_ : RepoInfo,
+      applicationId_ : String,
       onDataUpdate_ : js.Function4[/* a */ String, /* b */ js.Any, /* c */ Boolean, /* d */ Double | Null, Unit],
       onConnectStatus_ : js.Function1[/* a */ Boolean, Unit],
       onServerInfoUpdate_ : js.Function1[/* a */ js.Any, Unit],
       authTokenProvider_ : AuthTokenProvider,
       authOverride_ : js.Object
     ) = this()
+    var applicationId_ : js.Any = js.native
     var authOverride_ : js.UndefOr[js.Any] = js.native
     var authTokenProvider_ : js.Any = js.native
     var authToken_ : js.Any = js.native

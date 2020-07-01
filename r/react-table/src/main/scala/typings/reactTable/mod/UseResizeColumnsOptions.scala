@@ -10,7 +10,7 @@ trait UseResizeColumnsOptions[D /* <: js.Object */] extends js.Object {
 
 object UseResizeColumnsOptions {
   @scala.inline
-  def apply[D](disableResizing: js.UndefOr[Boolean] = js.undefined): UseResizeColumnsOptions[D] = {
+  def apply[/* <: js.Object */ D](disableResizing: js.UndefOr[Boolean] = js.undefined): UseResizeColumnsOptions[D] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(disableResizing)) __obj.updateDynamic("disableResizing")(disableResizing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseResizeColumnsOptions[D]]

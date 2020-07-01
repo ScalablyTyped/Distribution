@@ -16,7 +16,7 @@ trait Encoders[T /* <: Encodable */] extends js.Object {
 
 object Encoders {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.rsocketTypes.reactiveSocketTypesMod.Encodable */ T](
     data: Encoder[T],
     dataMimeType: Encoder[String],
     message: Encoder[String],

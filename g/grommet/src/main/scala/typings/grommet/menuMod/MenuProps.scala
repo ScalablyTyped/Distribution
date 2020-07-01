@@ -2,7 +2,7 @@ package typings.grommet.menuMod
 
 import typings.grommet.anon.CloseMenu
 import typings.grommet.anon.Opacity
-import typings.grommet.anon.Top
+import typings.grommet.anon.Right
 import typings.grommet.dropMod.DropProps
 import typings.grommet.grommetStrings.large
 import typings.grommet.grommetStrings.medium
@@ -22,7 +22,7 @@ trait MenuProps extends js.Object {
   var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
   var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var dropAlign: js.UndefOr[Top] = js.undefined
+  var dropAlign: js.UndefOr[Right] = js.undefined
   var dropBackground: js.UndefOr[String | Opacity] = js.undefined
   var dropProps: js.UndefOr[DropProps] = js.undefined
   var dropTarget: js.UndefOr[js.Object] = js.undefined
@@ -44,7 +44,7 @@ object MenuProps {
     a11yTitle: A11yTitleType = null,
     alignSelf: AlignSelfType = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    dropAlign: Top = null,
+    dropAlign: Right = null,
     dropBackground: String | Opacity = null,
     dropProps: DropProps = null,
     dropTarget: js.Object = null,

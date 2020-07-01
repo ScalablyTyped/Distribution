@@ -1,12 +1,12 @@
 package typings.firebaseFirestore
 
-import typings.firebaseFirestore.connectionMod.Connection
 import typings.firebaseFirestore.databaseInfoMod.DatabaseInfo
+import typings.firebaseFirestore.remoteConnectionMod.Connection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/platform_browser/webchannel_connection", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/platform/browser/webchannel_connection", JSImport.Namespace)
 @js.native
 object webchannelConnectionMod extends js.Object {
   @js.native

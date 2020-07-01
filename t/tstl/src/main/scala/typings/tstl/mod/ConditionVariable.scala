@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
   * Default Constructor.
   */
 class ConditionVariable ()
-  extends typings.tstl.threadMod.ConditionVariable
+  extends typings.tstl.tstlModuleMod.ConditionVariable
 

@@ -9,6 +9,12 @@ object mongooseStrings {
   sealed trait CastError extends js.Object
   
   @js.native
+  sealed trait DeepMapAsObject extends js.Object
+  
+  @js.native
+  sealed trait DeepNonFunctionProperties extends js.Object
+  
+  @js.native
   sealed trait DivergentArrayError extends js.Object
   
   @js.native
@@ -73,6 +79,9 @@ object mongooseStrings {
   
   @js.native
   sealed trait default extends js.Object
+  
+  @js.native
+  sealed trait deleteOne extends js.Object
   
   @js.native
   sealed trait discriminatorKey extends js.Object
@@ -206,6 +215,10 @@ object mongooseStrings {
   @scala.inline
   def CastError: CastError = "CastError".asInstanceOf[CastError]
   @scala.inline
+  def DeepMapAsObject: DeepMapAsObject = "DeepMapAsObject".asInstanceOf[DeepMapAsObject]
+  @scala.inline
+  def DeepNonFunctionProperties: DeepNonFunctionProperties = "DeepNonFunctionProperties".asInstanceOf[DeepNonFunctionProperties]
+  @scala.inline
   def DivergentArrayError: DivergentArrayError = "DivergentArrayError".asInstanceOf[DivergentArrayError]
   @scala.inline
   def DocumentNotFoundError: DocumentNotFoundError = "DocumentNotFoundError".asInstanceOf[DocumentNotFoundError]
@@ -249,6 +262,8 @@ object mongooseStrings {
   def count: count = "count".asInstanceOf[count]
   @scala.inline
   def default: default = "default".asInstanceOf[default]
+  @scala.inline
+  def deleteOne: deleteOne = "deleteOne".asInstanceOf[deleteOne]
   @scala.inline
   def discriminatorKey: discriminatorKey = "discriminatorKey".asInstanceOf[discriminatorKey]
   @scala.inline

@@ -43,6 +43,9 @@ object waterlineStrings {
   sealed trait json extends AttributeType
   
   @js.native
+  sealed trait number extends AttributeType
+  
+  @js.native
   sealed trait safe extends js.Object
   
   @js.native
@@ -78,6 +81,8 @@ object waterlineStrings {
   def integer: integer = "integer".asInstanceOf[integer]
   @scala.inline
   def json: json = "json".asInstanceOf[json]
+  @scala.inline
+  def number: number = "number".asInstanceOf[number]
   @scala.inline
   def safe: safe = "safe".asInstanceOf[safe]
   @scala.inline

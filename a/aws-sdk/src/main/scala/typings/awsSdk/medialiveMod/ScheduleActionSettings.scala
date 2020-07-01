@@ -15,6 +15,10 @@ trait ScheduleActionSettings extends js.Object {
     */
   var HlsTimedMetadataSettings: js.UndefOr[HlsTimedMetadataScheduleActionSettings] = js.native
   /**
+    * Action to prepare an input for a future immediate input switch
+    */
+  var InputPrepareSettings: js.UndefOr[InputPrepareScheduleActionSettings] = js.native
+  /**
     * Action to switch the input
     */
   var InputSwitchSettings: js.UndefOr[InputSwitchScheduleActionSettings] = js.native
@@ -49,6 +53,7 @@ object ScheduleActionSettings {
   def apply(
     HlsId3SegmentTaggingSettings: HlsId3SegmentTaggingScheduleActionSettings = null,
     HlsTimedMetadataSettings: HlsTimedMetadataScheduleActionSettings = null,
+    InputPrepareSettings: InputPrepareScheduleActionSettings = null,
     InputSwitchSettings: InputSwitchScheduleActionSettings = null,
     PauseStateSettings: PauseStateScheduleActionSettings = null,
     Scte35ReturnToNetworkSettings: Scte35ReturnToNetworkScheduleActionSettings = null,
@@ -60,6 +65,7 @@ object ScheduleActionSettings {
     val __obj = js.Dynamic.literal()
     if (HlsId3SegmentTaggingSettings != null) __obj.updateDynamic("HlsId3SegmentTaggingSettings")(HlsId3SegmentTaggingSettings.asInstanceOf[js.Any])
     if (HlsTimedMetadataSettings != null) __obj.updateDynamic("HlsTimedMetadataSettings")(HlsTimedMetadataSettings.asInstanceOf[js.Any])
+    if (InputPrepareSettings != null) __obj.updateDynamic("InputPrepareSettings")(InputPrepareSettings.asInstanceOf[js.Any])
     if (InputSwitchSettings != null) __obj.updateDynamic("InputSwitchSettings")(InputSwitchSettings.asInstanceOf[js.Any])
     if (PauseStateSettings != null) __obj.updateDynamic("PauseStateSettings")(PauseStateSettings.asInstanceOf[js.Any])
     if (Scte35ReturnToNetworkSettings != null) __obj.updateDynamic("Scte35ReturnToNetworkSettings")(Scte35ReturnToNetworkSettings.asInstanceOf[js.Any])

@@ -12,7 +12,7 @@ trait IPropsWithStyles[TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */] ext
 
 object IPropsWithStyles {
   @scala.inline
-  def apply[TStyleProps, TStyleSet](styles: IStyleFunctionOrObject[TStyleProps, TStyleSet] = null): IPropsWithStyles[TStyleProps, TStyleSet] = {
+  def apply[TStyleProps, /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */ TStyleSet](styles: IStyleFunctionOrObject[TStyleProps, TStyleSet] = null): IPropsWithStyles[TStyleProps, TStyleSet] = {
     val __obj = js.Dynamic.literal()
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPropsWithStyles[TStyleProps, TStyleSet]]

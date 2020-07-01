@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
-- typings.mendixmodelsdk.workflowsMod.workflows.IWorkflowTaskOutcome because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsWorkflowTask, name */ @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.WorkflowTaskOutcome")
+- typings.mendixmodelsdk.workflowsMod.workflows.IWorkflowTaskOutcome because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsWorkflowTask, name, caption */ @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.WorkflowTaskOutcome")
 @js.native
 class WorkflowTaskOutcome protected ()
   extends Element
@@ -34,6 +34,11 @@ class WorkflowTaskOutcome protected ()
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  /**
+    * In version 8.11.0: introduced
+    */
+  @JSName("caption")
+  val caption_FWorkflowTaskOutcome: String = js.native
   @JSName("containerAsWorkflowTask")
   val containerAsWorkflowTask_FWorkflowTaskOutcome: IWorkflowTask = js.native
   @JSName("model")
@@ -48,6 +53,11 @@ class WorkflowTaskOutcome protected ()
     */
   /* CompleteClass */
   override val qualifiedName: String | Null = js.native
+  /**
+    * In version 8.11.0: introduced
+    */
+  def caption: String = js.native
+  def caption(newValue: String): js.Any = js.native
   def containerAsWorkflowTask: WorkflowTask = js.native
   def name: String = js.native
   def name(newValue: String): js.Any = js.native

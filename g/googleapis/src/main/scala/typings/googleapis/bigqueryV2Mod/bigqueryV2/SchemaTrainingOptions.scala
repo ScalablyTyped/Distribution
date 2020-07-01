@@ -93,41 +93,41 @@ object SchemaTrainingOptions {
   @scala.inline
   def apply(
     dataSplitColumn: String = null,
-    dataSplitEvalFraction: Int | Double = null,
+    dataSplitEvalFraction: js.UndefOr[Double] = js.undefined,
     dataSplitMethod: String = null,
     distanceType: String = null,
     earlyStop: js.UndefOr[Boolean] = js.undefined,
-    initialLearnRate: Int | Double = null,
+    initialLearnRate: js.UndefOr[Double] = js.undefined,
     inputLabelColumns: js.Array[String] = null,
-    l1Regularization: Int | Double = null,
-    l2Regularization: Int | Double = null,
+    l1Regularization: js.UndefOr[Double] = js.undefined,
+    l2Regularization: js.UndefOr[Double] = js.undefined,
     labelClassWeights: StringDictionary[Double] = null,
-    learnRate: Int | Double = null,
+    learnRate: js.UndefOr[Double] = js.undefined,
     learnRateStrategy: String = null,
     lossType: String = null,
     maxIterations: String = null,
-    minRelativeProgress: Int | Double = null,
+    minRelativeProgress: js.UndefOr[Double] = js.undefined,
     numClusters: String = null,
     warmStart: js.UndefOr[Boolean] = js.undefined
   ): SchemaTrainingOptions = {
     val __obj = js.Dynamic.literal()
     if (dataSplitColumn != null) __obj.updateDynamic("dataSplitColumn")(dataSplitColumn.asInstanceOf[js.Any])
-    if (dataSplitEvalFraction != null) __obj.updateDynamic("dataSplitEvalFraction")(dataSplitEvalFraction.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataSplitEvalFraction)) __obj.updateDynamic("dataSplitEvalFraction")(dataSplitEvalFraction.get.asInstanceOf[js.Any])
     if (dataSplitMethod != null) __obj.updateDynamic("dataSplitMethod")(dataSplitMethod.asInstanceOf[js.Any])
     if (distanceType != null) __obj.updateDynamic("distanceType")(distanceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(earlyStop)) __obj.updateDynamic("earlyStop")(earlyStop.asInstanceOf[js.Any])
-    if (initialLearnRate != null) __obj.updateDynamic("initialLearnRate")(initialLearnRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(earlyStop)) __obj.updateDynamic("earlyStop")(earlyStop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialLearnRate)) __obj.updateDynamic("initialLearnRate")(initialLearnRate.get.asInstanceOf[js.Any])
     if (inputLabelColumns != null) __obj.updateDynamic("inputLabelColumns")(inputLabelColumns.asInstanceOf[js.Any])
-    if (l1Regularization != null) __obj.updateDynamic("l1Regularization")(l1Regularization.asInstanceOf[js.Any])
-    if (l2Regularization != null) __obj.updateDynamic("l2Regularization")(l2Regularization.asInstanceOf[js.Any])
+    if (!js.isUndefined(l1Regularization)) __obj.updateDynamic("l1Regularization")(l1Regularization.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(l2Regularization)) __obj.updateDynamic("l2Regularization")(l2Regularization.get.asInstanceOf[js.Any])
     if (labelClassWeights != null) __obj.updateDynamic("labelClassWeights")(labelClassWeights.asInstanceOf[js.Any])
-    if (learnRate != null) __obj.updateDynamic("learnRate")(learnRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(learnRate)) __obj.updateDynamic("learnRate")(learnRate.get.asInstanceOf[js.Any])
     if (learnRateStrategy != null) __obj.updateDynamic("learnRateStrategy")(learnRateStrategy.asInstanceOf[js.Any])
     if (lossType != null) __obj.updateDynamic("lossType")(lossType.asInstanceOf[js.Any])
     if (maxIterations != null) __obj.updateDynamic("maxIterations")(maxIterations.asInstanceOf[js.Any])
-    if (minRelativeProgress != null) __obj.updateDynamic("minRelativeProgress")(minRelativeProgress.asInstanceOf[js.Any])
+    if (!js.isUndefined(minRelativeProgress)) __obj.updateDynamic("minRelativeProgress")(minRelativeProgress.get.asInstanceOf[js.Any])
     if (numClusters != null) __obj.updateDynamic("numClusters")(numClusters.asInstanceOf[js.Any])
-    if (!js.isUndefined(warmStart)) __obj.updateDynamic("warmStart")(warmStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(warmStart)) __obj.updateDynamic("warmStart")(warmStart.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTrainingOptions]
   }
 }

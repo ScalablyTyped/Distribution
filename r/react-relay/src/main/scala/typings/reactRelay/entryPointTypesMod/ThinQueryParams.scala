@@ -15,7 +15,7 @@ trait ThinQueryParams[TQuery /* <: OperationType */, TEnvironmentProviderOptions
 
 object ThinQueryParams {
   @scala.inline
-  def apply[TQuery, TEnvironmentProviderOptions](
+  def apply[/* <: typings.relayRuntime.relayRuntimeTypesMod.OperationType */ TQuery, TEnvironmentProviderOptions](
     parameters: PreloadableConcreteRequest[TQuery],
     variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any,
     environmentProviderOptions: TEnvironmentProviderOptions = null,

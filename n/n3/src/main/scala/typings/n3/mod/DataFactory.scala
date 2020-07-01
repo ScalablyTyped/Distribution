@@ -12,10 +12,10 @@ object DataFactory extends js.Object {
   def defaultGraph(): DefaultGraph = js.native
   def literal(value: String): Literal = js.native
   def literal(value: String, languageOrDatatype: String): Literal = js.native
-  def literal(value: String, languageOrDatatype: typings.rdfJs.mod.NamedNode): Literal = js.native
+  def literal(value: String, languageOrDatatype: typings.rdfJs.mod.NamedNode[String]): Literal = js.native
   def literal(value: Double): Literal = js.native
   def literal(value: Double, languageOrDatatype: String): Literal = js.native
-  def literal(value: Double, languageOrDatatype: typings.rdfJs.mod.NamedNode): Literal = js.native
+  def literal(value: Double, languageOrDatatype: typings.rdfJs.mod.NamedNode[String]): Literal = js.native
   def namedNode(value: String): NamedNode = js.native
   def quad(
     subject: typings.rdfJs.mod.QuadSubject,

@@ -5,27 +5,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type FormatFn = js.Function3[
-    /* tokens */ typings.morgan.mod.TokenIndexer, 
-    /* req */ typings.express.mod.Request_[
-      typings.expressServeStaticCore.mod.ParamsDictionary, 
-      js.Any, 
-      js.Any, 
-      typings.expressServeStaticCore.mod.Query
-    ], 
-    /* res */ typings.express.mod.Response_[js.Any], 
+  type FormatFn[Request /* <: typings.node.httpMod.IncomingMessage */, Response /* <: typings.node.httpMod.ServerResponse */] = js.Function3[
+    /* tokens */ typings.morgan.mod.TokenIndexer[Request, Response], 
+    /* req */ Request, 
+    /* res */ Response, 
     js.UndefOr[java.lang.String | scala.Null]
   ]
-  type TokenCallbackFn = js.Function3[
-    /* req */ typings.express.mod.Request_[
-      typings.expressServeStaticCore.mod.ParamsDictionary, 
-      js.Any, 
-      js.Any, 
-      typings.expressServeStaticCore.mod.Query
-    ], 
-    /* res */ typings.express.mod.Response_[js.Any], 
+  type Handler[Request /* <: typings.node.httpMod.IncomingMessage */, Response /* <: typings.node.httpMod.ServerResponse */] = js.Function3[
+    /* req */ Request, 
+    /* res */ Response, 
+    /* callback */ js.Function1[/* err */ js.UndefOr[typings.std.Error], scala.Unit], 
+    scala.Unit
+  ]
+  type TokenCallbackFn[Request /* <: typings.node.httpMod.IncomingMessage */, Response /* <: typings.node.httpMod.ServerResponse */] = js.Function3[
+    /* req */ Request, 
+    /* res */ Response, 
     /* arg */ js.UndefOr[java.lang.String | scala.Double | scala.Boolean], 
     js.UndefOr[java.lang.String]
   ]
-  type TokenIndexer = org.scalablytyped.runtime.StringDictionary[typings.morgan.mod.TokenCallbackFn]
+  type TokenIndexer[Request /* <: typings.node.httpMod.IncomingMessage */, Response /* <: typings.node.httpMod.ServerResponse */] = org.scalablytyped.runtime.StringDictionary[typings.morgan.mod.TokenCallbackFn[Request, Response]]
 }

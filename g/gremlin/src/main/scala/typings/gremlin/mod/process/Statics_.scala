@@ -99,7 +99,7 @@ trait Statics_[T /* <: GraphTraversal */] extends js.Object {
 
 object Statics_ {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.gremlin.mod.process.GraphTraversal */ T](
     V: /* repeated */ js.Any => T,
     addE: /* repeated */ js.Any => T,
     addV: /* repeated */ js.Any => T,

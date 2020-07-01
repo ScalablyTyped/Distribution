@@ -10,12 +10,18 @@ import scala.scalajs.js.annotation._
   - typings.algoliaClientSearch.algoliaClientSearchStrings.partialUpdateObject
   - typings.algoliaClientSearch.algoliaClientSearchStrings.partialUpdateObjectNoCreate
   - typings.algoliaClientSearch.algoliaClientSearchStrings.deleteObject
+  - typings.algoliaClientSearch.algoliaClientSearchStrings.delete
+  - typings.algoliaClientSearch.algoliaClientSearchStrings.clear
 */
 trait BatchActionType extends js.Object
 
 object BatchActionType {
   @scala.inline
   def addObject: typings.algoliaClientSearch.algoliaClientSearchStrings.addObject = "addObject".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.addObject]
+  @scala.inline
+  def clear: typings.algoliaClientSearch.algoliaClientSearchStrings.clear = "clear".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.clear]
+  @scala.inline
+  def delete: typings.algoliaClientSearch.algoliaClientSearchStrings.delete = "delete".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.delete]
   @scala.inline
   def deleteObject: typings.algoliaClientSearch.algoliaClientSearchStrings.deleteObject = "deleteObject".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.deleteObject]
   @scala.inline

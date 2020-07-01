@@ -47,7 +47,7 @@ class Popover ()
   @JSName("componentDidMount")
   def componentDidMount_MPopover(): Unit = js.native
   @JSName("componentDidUpdate")
-  def componentDidUpdate_MPopover(_underscore: IPopoverProps, __ : IPopoverState, snapshot: js.Object): Unit = js.native
+  def componentDidUpdate_MPopover(props: IPopoverProps, state: IPopoverState): Unit = js.native
   /**
     * Instance method to instruct the `Popover` to recompute its position.
     *

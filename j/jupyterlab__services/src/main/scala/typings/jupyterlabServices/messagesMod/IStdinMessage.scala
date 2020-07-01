@@ -34,7 +34,7 @@ trait IStdinMessage[T /* <: StdinMessageType */] extends IMessage[T] {
 
 object IStdinMessage {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.jupyterlabServices.messagesMod.StdinMessageType */ T](
     channel: stdin,
     content: Wait | Commid | (ReplyContent[
       ICommInfoReply | ICompleteReply | IHistoryReply | IInfoReply | IInputReply | IInspectReply | IIsCompleteReplyIncomplete | IIsCompleteReplyOther

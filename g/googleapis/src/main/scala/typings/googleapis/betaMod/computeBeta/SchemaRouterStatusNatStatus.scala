@@ -44,17 +44,17 @@ object SchemaRouterStatusNatStatus {
   @scala.inline
   def apply(
     autoAllocatedNatIps: js.Array[String] = null,
-    minExtraNatIpsNeeded: Int | Double = null,
+    minExtraNatIpsNeeded: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    numVmEndpointsWithNatMappings: Int | Double = null,
+    numVmEndpointsWithNatMappings: js.UndefOr[Double] = js.undefined,
     userAllocatedNatIpResources: js.Array[String] = null,
     userAllocatedNatIps: js.Array[String] = null
   ): SchemaRouterStatusNatStatus = {
     val __obj = js.Dynamic.literal()
     if (autoAllocatedNatIps != null) __obj.updateDynamic("autoAllocatedNatIps")(autoAllocatedNatIps.asInstanceOf[js.Any])
-    if (minExtraNatIpsNeeded != null) __obj.updateDynamic("minExtraNatIpsNeeded")(minExtraNatIpsNeeded.asInstanceOf[js.Any])
+    if (!js.isUndefined(minExtraNatIpsNeeded)) __obj.updateDynamic("minExtraNatIpsNeeded")(minExtraNatIpsNeeded.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (numVmEndpointsWithNatMappings != null) __obj.updateDynamic("numVmEndpointsWithNatMappings")(numVmEndpointsWithNatMappings.asInstanceOf[js.Any])
+    if (!js.isUndefined(numVmEndpointsWithNatMappings)) __obj.updateDynamic("numVmEndpointsWithNatMappings")(numVmEndpointsWithNatMappings.get.asInstanceOf[js.Any])
     if (userAllocatedNatIpResources != null) __obj.updateDynamic("userAllocatedNatIpResources")(userAllocatedNatIpResources.asInstanceOf[js.Any])
     if (userAllocatedNatIps != null) __obj.updateDynamic("userAllocatedNatIps")(userAllocatedNatIps.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRouterStatusNatStatus]

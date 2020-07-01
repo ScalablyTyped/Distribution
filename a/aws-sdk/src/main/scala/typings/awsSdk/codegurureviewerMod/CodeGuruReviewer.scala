@@ -13,12 +13,12 @@ trait CodeGuruReviewer extends Service {
   @JSName("config")
   var config_CodeGuruReviewer: ConfigBase with ClientConfiguration = js.native
   /**
-    * Associates an AWS CodeCommit repository with Amazon CodeGuru Reviewer. When you associate an AWS CodeCommit repository with Amazon CodeGuru Reviewer, Amazon CodeGuru Reviewer will provide recommendations for each pull request raised within the repository. You can view recommendations in the AWS CodeCommit repository. You can associate a GitHub repository using the Amazon CodeGuru Reviewer console.
+    *  Use to associate an AWS CodeCommit repository or a repostory managed by AWS CodeStar Connections with Amazon CodeGuru Reviewer. When you associate a repository, CodeGuru Reviewer reviews source code changes in the repository's pull requests and provides automatic recommendations. You can view recommendations using the CodeGuru Reviewer console. For more information, see Recommendations in Amazon CodeGuru Reviewer in the Amazon CodeGuru Reviewer User Guide.  If you associate a CodeCommit repository, it must be in the same AWS Region and AWS account where its CodeGuru Reviewer code reviews are configured.  Bitbucket and GitHub Enterprise Server repositories are managed by AWS CodeStar Connections to connect to CodeGuru Reviewer. For more information, see Connect to a repository source provider in the Amazon CodeGuru Reviewer User Guide.    You cannot use the CodeGuru Reviewer SDK or the AWS CLI to associate a GitHub repository with Amazon CodeGuru Reviewer. To associate a GitHub repository, use the console. For more information, see Getting started with CodeGuru Reviewer in the CodeGuru Reviewer User Guide.  
     */
   def associateRepository(): Request[AssociateRepositoryResponse, AWSError] = js.native
   def associateRepository(callback: js.Function2[/* err */ AWSError, /* data */ AssociateRepositoryResponse, Unit]): Request[AssociateRepositoryResponse, AWSError] = js.native
   /**
-    * Associates an AWS CodeCommit repository with Amazon CodeGuru Reviewer. When you associate an AWS CodeCommit repository with Amazon CodeGuru Reviewer, Amazon CodeGuru Reviewer will provide recommendations for each pull request raised within the repository. You can view recommendations in the AWS CodeCommit repository. You can associate a GitHub repository using the Amazon CodeGuru Reviewer console.
+    *  Use to associate an AWS CodeCommit repository or a repostory managed by AWS CodeStar Connections with Amazon CodeGuru Reviewer. When you associate a repository, CodeGuru Reviewer reviews source code changes in the repository's pull requests and provides automatic recommendations. You can view recommendations using the CodeGuru Reviewer console. For more information, see Recommendations in Amazon CodeGuru Reviewer in the Amazon CodeGuru Reviewer User Guide.  If you associate a CodeCommit repository, it must be in the same AWS Region and AWS account where its CodeGuru Reviewer code reviews are configured.  Bitbucket and GitHub Enterprise Server repositories are managed by AWS CodeStar Connections to connect to CodeGuru Reviewer. For more information, see Connect to a repository source provider in the Amazon CodeGuru Reviewer User Guide.    You cannot use the CodeGuru Reviewer SDK or the AWS CLI to associate a GitHub repository with Amazon CodeGuru Reviewer. To associate a GitHub repository, use the console. For more information, see Getting started with CodeGuru Reviewer in the CodeGuru Reviewer User Guide.  
     */
   def associateRepository(params: AssociateRepositoryRequest): Request[AssociateRepositoryResponse, AWSError] = js.native
   def associateRepository(
@@ -26,12 +26,12 @@ trait CodeGuruReviewer extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateRepositoryResponse, Unit]
   ): Request[AssociateRepositoryResponse, AWSError] = js.native
   /**
-    *  Returns the metadaata associated with the code review along with its status.
+    *  Returns the metadata associated with the code review along with its status.
     */
   def describeCodeReview(): Request[DescribeCodeReviewResponse, AWSError] = js.native
   def describeCodeReview(callback: js.Function2[/* err */ AWSError, /* data */ DescribeCodeReviewResponse, Unit]): Request[DescribeCodeReviewResponse, AWSError] = js.native
   /**
-    *  Returns the metadaata associated with the code review along with its status.
+    *  Returns the metadata associated with the code review along with its status.
     */
   def describeCodeReview(params: DescribeCodeReviewRequest): Request[DescribeCodeReviewResponse, AWSError] = js.native
   def describeCodeReview(
@@ -54,12 +54,12 @@ trait CodeGuruReviewer extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeRecommendationFeedbackResponse, Unit]
   ): Request[DescribeRecommendationFeedbackResponse, AWSError] = js.native
   /**
-    * Describes a repository association.
+    *  Returns a  RepositoryAssociation  object that contains information about the requested repository association. 
     */
   def describeRepositoryAssociation(): Request[DescribeRepositoryAssociationResponse, AWSError] = js.native
   def describeRepositoryAssociation(callback: js.Function2[/* err */ AWSError, /* data */ DescribeRepositoryAssociationResponse, Unit]): Request[DescribeRepositoryAssociationResponse, AWSError] = js.native
   /**
-    * Describes a repository association.
+    *  Returns a  RepositoryAssociation  object that contains information about the requested repository association. 
     */
   def describeRepositoryAssociation(params: DescribeRepositoryAssociationRequest): Request[DescribeRepositoryAssociationResponse, AWSError] = js.native
   def describeRepositoryAssociation(
@@ -93,12 +93,12 @@ trait CodeGuruReviewer extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListCodeReviewsResponse, Unit]
   ): Request[ListCodeReviewsResponse, AWSError] = js.native
   /**
-    *  Lists the customer feedback for a CodeGuru Reviewer recommendation for all users. This API will be used from the console to extract the previously given feedback by the user to pre-populate the feedback emojis for all recommendations. 
+    *  Returns a list of  RecommendationFeedbackSummary  objects that contain customer recommendation feedback for all CodeGuru Reviewer users. 
     */
   def listRecommendationFeedback(): Request[ListRecommendationFeedbackResponse, AWSError] = js.native
   def listRecommendationFeedback(callback: js.Function2[/* err */ AWSError, /* data */ ListRecommendationFeedbackResponse, Unit]): Request[ListRecommendationFeedbackResponse, AWSError] = js.native
   /**
-    *  Lists the customer feedback for a CodeGuru Reviewer recommendation for all users. This API will be used from the console to extract the previously given feedback by the user to pre-populate the feedback emojis for all recommendations. 
+    *  Returns a list of  RecommendationFeedbackSummary  objects that contain customer recommendation feedback for all CodeGuru Reviewer users. 
     */
   def listRecommendationFeedback(params: ListRecommendationFeedbackRequest): Request[ListRecommendationFeedbackResponse, AWSError] = js.native
   def listRecommendationFeedback(
@@ -119,12 +119,12 @@ trait CodeGuruReviewer extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListRecommendationsResponse, Unit]
   ): Request[ListRecommendationsResponse, AWSError] = js.native
   /**
-    * Lists repository associations. You can optionally filter on one or more of the following recommendation properties: provider types, states, names, and owners.
+    *  Returns a list of  RepositoryAssociationSummary  objects that contain summary information about a repository association. You can filter the returned list by  ProviderType ,  Name ,  State , and  Owner . 
     */
   def listRepositoryAssociations(): Request[ListRepositoryAssociationsResponse, AWSError] = js.native
   def listRepositoryAssociations(callback: js.Function2[/* err */ AWSError, /* data */ ListRepositoryAssociationsResponse, Unit]): Request[ListRepositoryAssociationsResponse, AWSError] = js.native
   /**
-    * Lists repository associations. You can optionally filter on one or more of the following recommendation properties: provider types, states, names, and owners.
+    *  Returns a list of  RepositoryAssociationSummary  objects that contain summary information about a repository association. You can filter the returned list by  ProviderType ,  Name ,  State , and  Owner . 
     */
   def listRepositoryAssociations(params: ListRepositoryAssociationsRequest): Request[ListRepositoryAssociationsResponse, AWSError] = js.native
   def listRepositoryAssociations(
@@ -132,12 +132,12 @@ trait CodeGuruReviewer extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListRepositoryAssociationsResponse, Unit]
   ): Request[ListRepositoryAssociationsResponse, AWSError] = js.native
   /**
-    *  Stores customer feedback for a CodeGuru-Reviewer recommendation. When this API is called again with different reactions the previous feedback is overwritten. 
+    *  Stores customer feedback for a CodeGuru Reviewer recommendation. When this API is called again with different reactions the previous feedback is overwritten. 
     */
   def putRecommendationFeedback(): Request[PutRecommendationFeedbackResponse, AWSError] = js.native
   def putRecommendationFeedback(callback: js.Function2[/* err */ AWSError, /* data */ PutRecommendationFeedbackResponse, Unit]): Request[PutRecommendationFeedbackResponse, AWSError] = js.native
   /**
-    *  Stores customer feedback for a CodeGuru-Reviewer recommendation. When this API is called again with different reactions the previous feedback is overwritten. 
+    *  Stores customer feedback for a CodeGuru Reviewer recommendation. When this API is called again with different reactions the previous feedback is overwritten. 
     */
   def putRecommendationFeedback(params: PutRecommendationFeedbackRequest): Request[PutRecommendationFeedbackResponse, AWSError] = js.native
   def putRecommendationFeedback(

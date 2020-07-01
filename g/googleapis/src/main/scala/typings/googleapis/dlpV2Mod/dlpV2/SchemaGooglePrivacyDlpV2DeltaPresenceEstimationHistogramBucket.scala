@@ -42,15 +42,15 @@ object SchemaGooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket {
     bucketSize: String = null,
     bucketValueCount: String = null,
     bucketValues: js.Array[SchemaGooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues] = null,
-    maxProbability: Int | Double = null,
-    minProbability: Int | Double = null
+    maxProbability: js.UndefOr[Double] = js.undefined,
+    minProbability: js.UndefOr[Double] = js.undefined
   ): SchemaGooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket = {
     val __obj = js.Dynamic.literal()
     if (bucketSize != null) __obj.updateDynamic("bucketSize")(bucketSize.asInstanceOf[js.Any])
     if (bucketValueCount != null) __obj.updateDynamic("bucketValueCount")(bucketValueCount.asInstanceOf[js.Any])
     if (bucketValues != null) __obj.updateDynamic("bucketValues")(bucketValues.asInstanceOf[js.Any])
-    if (maxProbability != null) __obj.updateDynamic("maxProbability")(maxProbability.asInstanceOf[js.Any])
-    if (minProbability != null) __obj.updateDynamic("minProbability")(minProbability.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxProbability)) __obj.updateDynamic("maxProbability")(maxProbability.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minProbability)) __obj.updateDynamic("minProbability")(minProbability.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket]
   }
 }

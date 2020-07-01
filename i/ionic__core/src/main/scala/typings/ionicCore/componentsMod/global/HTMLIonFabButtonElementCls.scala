@@ -21,6 +21,11 @@ class HTMLIonFabButtonElementCls () extends HTMLIonFabButtonElement {
   override var activated: Boolean = js.native
   /* CompleteClass */
   override val assignedSlot: HTMLSlotElement | Null = js.native
+  /**
+    * The icon name to use for the close icon. This will appear when the fab button is pressed. Only applies if it is the main button inside of a fab containing a fab list.
+    */
+  /* CompleteClass */
+  override var closeIcon: String = js.native
   /* CompleteClass */
   override var contentEditable: String = js.native
   /**

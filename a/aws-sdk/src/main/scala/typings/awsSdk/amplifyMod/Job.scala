@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Job extends js.Object {
   /**
-    *  Execution steps for an execution job, for an Amplify App. 
+    *  The execution steps for an execution job, for an Amplify app. 
     */
   var steps: Steps = js.native
   /**
-    *  Summary for an execution job for an Amplify App. 
+    *  Describes the summary for an execution job for an Amplify app. 
     */
   var summary: JobSummary = js.native
 }

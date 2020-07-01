@@ -55,7 +55,7 @@ trait TextGroupOptions[T /* <: MultilineText */] extends GroupOptions {
 
 object TextGroupOptions {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.zfont.mod.zdogAugmentingMod.MultilineText */ T](
     font: Font,
     addTo: Anchor = null,
     color: String = null,

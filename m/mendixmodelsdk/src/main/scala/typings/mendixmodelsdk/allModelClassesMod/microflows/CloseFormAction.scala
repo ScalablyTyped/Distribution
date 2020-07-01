@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/close-form relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/Close+Form relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.CloseFormAction")
 @js.native

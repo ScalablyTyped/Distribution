@@ -23,11 +23,11 @@ trait DescribeCasesRequest extends js.Object {
     */
   var displayId: js.UndefOr[DisplayId] = js.native
   /**
-    * Specifies whether communications should be included in the DescribeCases results. The default is true.
+    * Specifies whether to include communications in the DescribeCases response. By default, communications are incuded.
     */
   var includeCommunications: js.UndefOr[IncludeCommunications] = js.native
   /**
-    * Specifies whether resolved support cases should be included in the DescribeCases results. The default is false.
+    * Specifies whether to include resolved support cases in the DescribeCases response. By default, resolved cases aren't included.
     */
   var includeResolvedCases: js.UndefOr[IncludeResolvedCases] = js.native
   /**

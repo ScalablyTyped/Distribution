@@ -21,10 +21,10 @@ trait SchemaLineStyle extends js.Object {
 
 object SchemaLineStyle {
   @scala.inline
-  def apply(`type`: String = null, width: Int | Double = null): SchemaLineStyle = {
+  def apply(`type`: String = null, width: js.UndefOr[Double] = js.undefined): SchemaLineStyle = {
     val __obj = js.Dynamic.literal()
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLineStyle]
   }
 }

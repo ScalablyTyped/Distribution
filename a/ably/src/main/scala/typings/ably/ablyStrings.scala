@@ -1,5 +1,6 @@
 package typings.ably
 
+import typings.ably.mod.Types.ChannelMode
 import typings.ably.mod.Types.DevicePushState
 import typings.ably.mod.Types.Transport
 import typings.ably.mod.Types.capabilityOp
@@ -22,6 +23,18 @@ object ablyStrings {
   
   @js.native
   sealed trait POST extends js.Object
+  
+  @js.native
+  sealed trait PRESENCE extends ChannelMode
+  
+  @js.native
+  sealed trait PRESENCE_SUBSCRIBE extends ChannelMode
+  
+  @js.native
+  sealed trait PUBLISH extends ChannelMode
+  
+  @js.native
+  sealed trait SUBSCRIBE extends ChannelMode
   
   @js.native
   sealed trait absent extends js.Object
@@ -114,13 +127,13 @@ object ablyStrings {
   sealed trait phone extends js.Object
   
   @js.native
-  sealed trait presence extends capabilityOp
+  sealed trait presence_ extends capabilityOp
   
   @js.native
   sealed trait present extends js.Object
   
   @js.native
-  sealed trait publish extends capabilityOp
+  sealed trait publish_ extends capabilityOp
   
   @js.native
   sealed trait `push-admin` extends capabilityOp
@@ -132,7 +145,7 @@ object ablyStrings {
   sealed trait stats extends capabilityOp
   
   @js.native
-  sealed trait subscribe extends capabilityOp
+  sealed trait subscribe_ extends capabilityOp
   
   @js.native
   sealed trait suspended extends js.Object
@@ -168,6 +181,14 @@ object ablyStrings {
   def GET: GET = "GET".asInstanceOf[GET]
   @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
+  @scala.inline
+  def PRESENCE: PRESENCE = "PRESENCE".asInstanceOf[PRESENCE]
+  @scala.inline
+  def PRESENCE_SUBSCRIBE: PRESENCE_SUBSCRIBE = "PRESENCE_SUBSCRIBE".asInstanceOf[PRESENCE_SUBSCRIBE]
+  @scala.inline
+  def PUBLISH: PUBLISH = "PUBLISH".asInstanceOf[PUBLISH]
+  @scala.inline
+  def SUBSCRIBE: SUBSCRIBE = "SUBSCRIBE".asInstanceOf[SUBSCRIBE]
   @scala.inline
   def absent: absent = "absent".asInstanceOf[absent]
   @scala.inline
@@ -229,11 +250,11 @@ object ablyStrings {
   @scala.inline
   def phone: phone = "phone".asInstanceOf[phone]
   @scala.inline
-  def presence: presence = "presence".asInstanceOf[presence]
+  def presence_ : presence_ = "presence".asInstanceOf[presence_]
   @scala.inline
   def present: present = "present".asInstanceOf[present]
   @scala.inline
-  def publish: publish = "publish".asInstanceOf[publish]
+  def publish_ : publish_ = "publish".asInstanceOf[publish_]
   @scala.inline
   def `push-admin`: `push-admin` = "push-admin".asInstanceOf[`push-admin`]
   @scala.inline
@@ -241,7 +262,7 @@ object ablyStrings {
   @scala.inline
   def stats: stats = "stats".asInstanceOf[stats]
   @scala.inline
-  def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
+  def subscribe_ : subscribe_ = "subscribe".asInstanceOf[subscribe_]
   @scala.inline
   def suspended: suspended = "suspended".asInstanceOf[suspended]
   @scala.inline

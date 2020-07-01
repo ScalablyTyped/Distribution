@@ -144,7 +144,7 @@ object SchemaDevice {
     state: SchemaDeviceState = null
   ): SchemaDevice = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(blocked)) __obj.updateDynamic("blocked")(blocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(blocked)) __obj.updateDynamic("blocked")(blocked.get.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
     if (gatewayConfig != null) __obj.updateDynamic("gatewayConfig")(gatewayConfig.asInstanceOf[js.Any])

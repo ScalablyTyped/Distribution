@@ -10,6 +10,7 @@ import typings.webpack.mod.Compiler_
 import typings.webpack.mod.Compiler_.Watching
 import typings.webpack.mod.Configuration
 import typings.webpack.mod.ConfigurationFactory
+import typings.webpack.mod.ExternalsElement
 import typings.webpack.mod.MultiCompiler
 import typings.webpack.mod.MultiCompiler.Handler
 import typings.webpack.mod.MultiConfigurationFactory
@@ -35,6 +36,11 @@ trait Call extends js.Object {
   var EnvironmentPlugin: Instantiable1[/* envs */ js.Array[String], typings.webpack.mod.EnvironmentPlugin] = js.native
   var EvalSourceMapDevToolPlugin: Instantiable0[typings.webpack.mod.EvalSourceMapDevToolPlugin] = js.native
   var ExtendedAPIPlugin: Instantiable0[typings.webpack.mod.ExtendedAPIPlugin] = js.native
+  var ExternalsPlugin: Instantiable2[
+    /* type */ String, 
+    /* externals */ ExternalsElement, 
+    typings.webpack.mod.ExternalsPlugin
+  ] = js.native
   var HashedModuleIdsPlugin: Instantiable0[typings.webpack.mod.HashedModuleIdsPlugin] = js.native
   var HotModuleReplacementPlugin: Instantiable0[typings.webpack.mod.HotModuleReplacementPlugin] = js.native
   val ICompiler: js.Any = js.native

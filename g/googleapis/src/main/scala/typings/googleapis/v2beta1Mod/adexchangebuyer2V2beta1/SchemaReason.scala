@@ -24,10 +24,10 @@ trait SchemaReason extends js.Object {
 
 object SchemaReason {
   @scala.inline
-  def apply(count: String = null, status: Int | Double = null): SchemaReason = {
+  def apply(count: String = null, status: js.UndefOr[Double] = js.undefined): SchemaReason = {
     val __obj = js.Dynamic.literal()
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReason]
   }
 }

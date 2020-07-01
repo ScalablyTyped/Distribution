@@ -11,7 +11,7 @@ trait SjclKeyPair[P /* <: SjclECCPublicKey */, S /* <: SjclECCSecretKey */] exte
 
 object SjclKeyPair {
   @scala.inline
-  def apply[P, S](pub: P, sec: S): SjclKeyPair[P, S] = {
+  def apply[/* <: typings.sjcl.mod.SjclECCPublicKey */ P, /* <: typings.sjcl.mod.SjclECCSecretKey */ S](pub: P, sec: S): SjclKeyPair[P, S] = {
     val __obj = js.Dynamic.literal(pub = pub.asInstanceOf[js.Any], sec = sec.asInstanceOf[js.Any])
     __obj.asInstanceOf[SjclKeyPair[P, S]]
   }

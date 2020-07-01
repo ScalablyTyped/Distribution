@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 /* Inlined parent std.Omit<@ionic/core.@ionic/core.ToastButton, 'icon'> */
 trait ToastButton extends js.Object {
   var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
-  var handler: js.UndefOr[js.Function0[Boolean | Unit | js.Promise[Boolean]]] = js.undefined
+  var handler: js.UndefOr[js.Function0[Boolean | Unit | (js.Promise[Boolean | Unit])]] = js.undefined
   var icon: js.UndefOr[Ios | String] = js.undefined
   var role: js.UndefOr[cancel | String] = js.undefined
   var side: js.UndefOr[start | end] = js.undefined
@@ -22,7 +22,7 @@ object ToastButton {
   @scala.inline
   def apply(
     cssClass: String | js.Array[String] = null,
-    handler: () => Boolean | Unit | js.Promise[Boolean] = null,
+    handler: () => Boolean | Unit | (js.Promise[Boolean | Unit]) = null,
     icon: Ios | String = null,
     role: cancel | String = null,
     side: start | end = null,

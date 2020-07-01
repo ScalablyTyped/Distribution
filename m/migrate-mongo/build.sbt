@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "migrate-mongo"
-version := "7.0-dt-20200424Z-c29047"
+version := "7.0-dt-20200424Z-09cbeb"
 scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bson" % "4.0-dt-20200515Z-350996",
-  "org.scalablytyped" %%% "mongodb" % "3.5-dt-20200518Z-17cb2a",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200521Z-3aabb7",
-  "org.scalablytyped" %%% "std" % "3.9-18cbeb")
+  "org.scalablytyped" %%% "bson" % "4.0-dt-20200515Z-0f4d1f",
+  "org.scalablytyped" %%% "mongodb" % "3.5-dt-20200624Z-a3bcbe",
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200624Z-2fcd45",
+  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

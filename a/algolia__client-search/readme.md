@@ -1,7 +1,7 @@
 
 # Scala.js typings for algolia__client-search
 
-Typings are for version 4.2.0
+Typings are for version 4.3.0
 
 
 

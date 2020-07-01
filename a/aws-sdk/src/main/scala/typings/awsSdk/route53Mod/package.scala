@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object route53Mod {
+  type AWSAccountID = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.MAX_HEALTH_CHECKS_BY_OWNER
     - typings.awsSdk.awsSdkStrings.MAX_HOSTED_ZONES_BY_OWNER
@@ -131,7 +132,9 @@ package object route53Mod {
     - java.lang.String
   */
   type HostedZoneLimitType = typings.awsSdk.route53Mod._HostedZoneLimitType | java.lang.String
+  type HostedZoneOwningService = java.lang.String
   type HostedZoneRRSetCount = scala.Double
+  type HostedZoneSummaries = js.Array[typings.awsSdk.route53Mod.HostedZoneSummary]
   type HostedZones = js.Array[typings.awsSdk.route53Mod.HostedZone]
   type IPAddress = java.lang.String
   type IPAddressCidr = java.lang.String

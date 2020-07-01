@@ -43,14 +43,14 @@ object SchemaBlock {
   def apply(
     blockType: String = null,
     boundingBox: SchemaBoundingPoly = null,
-    confidence: Int | Double = null,
+    confidence: js.UndefOr[Double] = js.undefined,
     paragraphs: js.Array[SchemaParagraph] = null,
     property: SchemaTextProperty = null
   ): SchemaBlock = {
     val __obj = js.Dynamic.literal()
     if (blockType != null) __obj.updateDynamic("blockType")(blockType.asInstanceOf[js.Any])
     if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox.asInstanceOf[js.Any])
-    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
     if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs.asInstanceOf[js.Any])
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBlock]

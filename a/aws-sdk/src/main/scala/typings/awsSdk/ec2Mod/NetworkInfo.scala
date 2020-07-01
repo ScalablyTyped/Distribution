@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait NetworkInfo extends js.Object {
   /**
+    * Indicates whether Elastic Fabric Adapter (EFA) is supported.
+    */
+  var EfaSupported: js.UndefOr[EfaSupportedFlag] = js.native
+  /**
     * Indicates whether Elastic Network Adapter (ENA) is supported.
     */
   var EnaSupport: js.UndefOr[typings.awsSdk.ec2Mod.EnaSupport] = js.native
@@ -35,6 +39,7 @@ trait NetworkInfo extends js.Object {
 object NetworkInfo {
   @scala.inline
   def apply(
+    EfaSupported: js.UndefOr[EfaSupportedFlag] = js.undefined,
     EnaSupport: EnaSupport = null,
     Ipv4AddressesPerInterface: js.UndefOr[MaxIpv4AddrPerInterface] = js.undefined,
     Ipv6AddressesPerInterface: js.UndefOr[MaxIpv6AddrPerInterface] = js.undefined,
@@ -43,6 +48,7 @@ object NetworkInfo {
     NetworkPerformance: NetworkPerformance = null
   ): NetworkInfo = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(EfaSupported)) __obj.updateDynamic("EfaSupported")(EfaSupported.get.asInstanceOf[js.Any])
     if (EnaSupport != null) __obj.updateDynamic("EnaSupport")(EnaSupport.asInstanceOf[js.Any])
     if (!js.isUndefined(Ipv4AddressesPerInterface)) __obj.updateDynamic("Ipv4AddressesPerInterface")(Ipv4AddressesPerInterface.get.asInstanceOf[js.Any])
     if (!js.isUndefined(Ipv6AddressesPerInterface)) __obj.updateDynamic("Ipv6AddressesPerInterface")(Ipv6AddressesPerInterface.get.asInstanceOf[js.Any])

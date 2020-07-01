@@ -13,7 +13,7 @@ trait ComponentNode[P /* <: ComponentProps */] extends VNode {
 
 object ComponentNode {
   @scala.inline
-  def apply[P](
+  def apply[/* <: typings.petitDom.mod.PetitDom.ComponentProps */ P](
     content: js.Array[VNode],
     isSVG: Boolean,
     props: P with IntrinsicProps,

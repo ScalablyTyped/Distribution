@@ -1,6 +1,6 @@
 package typings.googleapis.driveV2Mod.driveV2
 
-import typings.googleapis.AnonInherited
+import typings.googleapis.anon.Inherited
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -83,7 +83,7 @@ trait SchemaPermission extends js.Object {
     * or directly on this item. This is an output-only field which is present
     * only for Team Drive items.
     */
-  var teamDrivePermissionDetails: js.UndefOr[js.Array[AnonInherited]] = js.native
+  var teamDrivePermissionDetails: js.UndefOr[js.Array[Inherited]] = js.native
   /**
     * The account type. Allowed values are:   - user  - group  - domain  -
     * anyone
@@ -119,7 +119,7 @@ object SchemaPermission {
     photoLink: String = null,
     role: String = null,
     selfLink: String = null,
-    teamDrivePermissionDetails: js.Array[AnonInherited] = null,
+    teamDrivePermissionDetails: js.Array[Inherited] = null,
     `type`: String = null,
     value: String = null,
     withLink: js.UndefOr[Boolean] = js.undefined
@@ -127,7 +127,7 @@ object SchemaPermission {
     val __obj = js.Dynamic.literal()
     if (additionalRoles != null) __obj.updateDynamic("additionalRoles")(additionalRoles.asInstanceOf[js.Any])
     if (authKey != null) __obj.updateDynamic("authKey")(authKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
@@ -141,7 +141,7 @@ object SchemaPermission {
     if (teamDrivePermissionDetails != null) __obj.updateDynamic("teamDrivePermissionDetails")(teamDrivePermissionDetails.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(withLink)) __obj.updateDynamic("withLink")(withLink.asInstanceOf[js.Any])
+    if (!js.isUndefined(withLink)) __obj.updateDynamic("withLink")(withLink.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPermission]
   }
 }

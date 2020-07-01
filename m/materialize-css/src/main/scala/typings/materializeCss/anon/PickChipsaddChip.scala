@@ -1,15 +1,20 @@
 package typings.materializeCss.anon
 
-import typings.materializeCss.M.ChipData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Pick<materialize-css.M.Chips, 'addChip'> */
-@js.native
 trait PickChipsaddChip extends js.Object {
-  @JSName("addChip")
-  var addChip_Original: js.Function1[/* chip */ ChipData, Unit] = js.native
-  def addChip(chip: ChipData): Unit = js.native
+  var addChip: js.UndefOr[js.Any] = js.undefined
+}
+
+object PickChipsaddChip {
+  @scala.inline
+  def apply(addChip: js.Any = null): PickChipsaddChip = {
+    val __obj = js.Dynamic.literal()
+    if (addChip != null) __obj.updateDynamic("addChip")(addChip.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PickChipsaddChip]
+  }
 }
 

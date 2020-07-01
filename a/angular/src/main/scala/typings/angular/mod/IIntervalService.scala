@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 ///////////////////////////////////////////////////////////////////////////
 // IntervalService
-// see http://docs.angularjs.org/api/ng.$interval
+// see http://docs.angularjs.org/api/ng/service/$interval
 ///////////////////////////////////////////////////////////////////////////
 @js.native
 trait IIntervalService extends js.Object {

@@ -4,14 +4,12 @@ import typings.cytoscape.cytoscapeStrings.bottom
 import typings.cytoscape.cytoscapeStrings.center
 import typings.cytoscape.cytoscapeStrings.ellipsis
 import typings.cytoscape.cytoscapeStrings.left
-import typings.cytoscape.cytoscapeStrings.no
 import typings.cytoscape.cytoscapeStrings.none
 import typings.cytoscape.cytoscapeStrings.rectangle
 import typings.cytoscape.cytoscapeStrings.right
 import typings.cytoscape.cytoscapeStrings.roundrectangle
 import typings.cytoscape.cytoscapeStrings.top
 import typings.cytoscape.cytoscapeStrings.wrap
-import typings.cytoscape.cytoscapeStrings.yes
 import typings.cytoscape.mod.EdgeSingular
 import typings.cytoscape.mod.NodeSingular
 import scala.scalajs.js
@@ -148,11 +146,6 @@ trait Labels[SingularType /* <: NodeSingular | EdgeSingular */] extends js.Objec
     */
   var `text-border-width`: PropertyValue[SingularType, Double]
   /**
-    * Whether events should occur on an element if the label receives an event.
-    * You may want a style applied to the text onactive so you know the text is activatable.
-    */
-  var `text-events`: PropertyValue[SingularType, yes | no]
-  /**
     * Node label alignment:
     */
   /**
@@ -253,7 +246,7 @@ trait Labels[SingularType /* <: NodeSingular | EdgeSingular */] extends js.Objec
 
 object Labels {
   @scala.inline
-  def apply[SingularType](
+  def apply[/* <: typings.cytoscape.mod.NodeSingular | typings.cytoscape.mod.EdgeSingular */ SingularType](
     color: PropertyValue[SingularType, Colour],
     `font-family`: PropertyValue[SingularType, String],
     `font-size`: PropertyValue[SingularType, Double | String],
@@ -279,7 +272,6 @@ object Labels {
     `text-border-opacity`: PropertyValue[SingularType, Double],
     `text-border-style`: PropertyValue[SingularType, LineStyle],
     `text-border-width`: PropertyValue[SingularType, Double],
-    `text-events`: PropertyValue[SingularType, yes | no],
     `text-halign`: PropertyValue[SingularType, left | center | right],
     `text-margin-x`: PropertyValue[SingularType, Double],
     `text-margin-y`: PropertyValue[SingularType, Double],
@@ -322,7 +314,6 @@ object Labels {
     __obj.updateDynamic("text-border-opacity")(`text-border-opacity`.asInstanceOf[js.Any])
     __obj.updateDynamic("text-border-style")(`text-border-style`.asInstanceOf[js.Any])
     __obj.updateDynamic("text-border-width")(`text-border-width`.asInstanceOf[js.Any])
-    __obj.updateDynamic("text-events")(`text-events`.asInstanceOf[js.Any])
     __obj.updateDynamic("text-halign")(`text-halign`.asInstanceOf[js.Any])
     __obj.updateDynamic("text-margin-x")(`text-margin-x`.asInstanceOf[js.Any])
     __obj.updateDynamic("text-margin-y")(`text-margin-y`.asInstanceOf[js.Any])

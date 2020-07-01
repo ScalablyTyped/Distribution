@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@algolia/transporter" : "4.2.0"
+      "@algolia/transporter" : "4.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@algolia/transporter" : "4.2.0"
+      "@algolia/transporter" : "4.3.0"
     }
   ],
   "compile-devDependencies" : [

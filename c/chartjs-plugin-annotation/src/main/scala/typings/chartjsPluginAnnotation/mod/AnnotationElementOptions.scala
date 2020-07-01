@@ -12,7 +12,7 @@ trait AnnotationElementOptions[T /* <: AnnotationOptions */] extends js.Object {
 
 object AnnotationElementOptions {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.chartjsPluginAnnotation.mod.AnnotationOptions */ T](
     chartInstance: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Chart */ js.Any,
     id: String,
     options: T

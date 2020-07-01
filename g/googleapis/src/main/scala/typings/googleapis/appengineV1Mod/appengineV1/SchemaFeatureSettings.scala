@@ -34,8 +34,8 @@ object SchemaFeatureSettings {
     useContainerOptimizedOs: js.UndefOr[Boolean] = js.undefined
   ): SchemaFeatureSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(splitHealthChecks)) __obj.updateDynamic("splitHealthChecks")(splitHealthChecks.asInstanceOf[js.Any])
-    if (!js.isUndefined(useContainerOptimizedOs)) __obj.updateDynamic("useContainerOptimizedOs")(useContainerOptimizedOs.asInstanceOf[js.Any])
+    if (!js.isUndefined(splitHealthChecks)) __obj.updateDynamic("splitHealthChecks")(splitHealthChecks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useContainerOptimizedOs)) __obj.updateDynamic("useContainerOptimizedOs")(useContainerOptimizedOs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFeatureSettings]
   }
 }

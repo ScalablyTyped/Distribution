@@ -14,7 +14,7 @@ trait TableSearchProps[T /* <: js.Object */] extends js.Object {
 
 object TableSearchProps {
   @scala.inline
-  def apply[T](
+  def apply[/* <: js.Object */ T](
     customMatchFunc: /* props */ SearchMatchProps[T] => Boolean = null,
     defaultSearch: String = null,
     onColumnMatch: /* props */ SearchMatchProps[T] => Unit = null,

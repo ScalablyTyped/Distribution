@@ -1,6 +1,7 @@
 package typings.newRelicBrowser.mod.NewRelic
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,14 +55,19 @@ trait Browser extends js.Object {
     * @see https://docs.newrelic.com/docs/browser/new-relic-browser/browser-agent-spa-api/interaction-browser-spa-api
     */
   def interaction(): BrowserInteraction = js.native
+  def noticeError(error: String): Unit = js.native
+  def noticeError(error: String, customAttributes: StringDictionary[String | Double]): Unit = js.native
   /**
     * Identifies a browser error without disrupting your app's operations.
     *
-    * @param Provide a meaningful error message that you can use when analyzing data on
+    * @param error Provide a meaningful error message that you can use when analyzing data on
     *   New Relic Browser's JavaScript errors page.
+    * @param customAttributes An object containing name/value pairs representing custom attributes.
     * @see https://docs.newrelic.com/docs/browser/new-relic-browser/browser-agent-spa-api/notice-error
     */
-  def noticeError(error: js.Any): Unit = js.native
+  def noticeError(error: Error): Unit = js.native
+  def noticeError(error: Error, customAttributes: StringDictionary[String | Double]): Unit = js.native
+  def setCurrentRouteName(): Unit = js.native
   /**
     * Gives SPA routes more accurate names than default names. Monitors specific routes rather than by default
     * grouping.
@@ -84,6 +90,7 @@ trait Browser extends js.Object {
     * @see https://docs.newrelic.com/docs/browser/new-relic-browser/browser-agent-spa-api/set-custom-attribute
     */
   def setCustomAttribute(name: String, value: String): Unit = js.native
+  def setCustomAttribute(name: String, value: Double): Unit = js.native
   /**
     * Allows selective ignoring of known errors that the Browser agent captures.
     *

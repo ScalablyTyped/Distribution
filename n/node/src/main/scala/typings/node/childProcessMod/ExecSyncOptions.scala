@@ -3,13 +3,14 @@ package typings.node.childProcessMod
 import typings.node.BufferEncoding
 import typings.node.NodeJS.ProcessEnv
 import typings.node.NodeJS.Signals
+import typings.node.nodeStrings.buffer_
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ExecSyncOptions extends CommonOptions {
-  var encoding: js.UndefOr[BufferEncoding] = js.undefined
+  var encoding: js.UndefOr[BufferEncoding | buffer_ | Null] = js.undefined
   var input: js.UndefOr[String | Uint8Array] = js.undefined
   var killSignal: js.UndefOr[Signals | Double] = js.undefined
   var maxBuffer: js.UndefOr[Double] = js.undefined
@@ -21,7 +22,7 @@ object ExecSyncOptions {
   @scala.inline
   def apply(
     cwd: String = null,
-    encoding: BufferEncoding = null,
+    encoding: js.UndefOr[Null | BufferEncoding | buffer_] = js.undefined,
     env: ProcessEnv = null,
     gid: js.UndefOr[Double] = js.undefined,
     input: String | Uint8Array = null,
@@ -35,7 +36,7 @@ object ExecSyncOptions {
   ): ExecSyncOptions = {
     val __obj = js.Dynamic.literal()
     if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (!js.isUndefined(encoding)) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (!js.isUndefined(gid)) __obj.updateDynamic("gid")(gid.get.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])

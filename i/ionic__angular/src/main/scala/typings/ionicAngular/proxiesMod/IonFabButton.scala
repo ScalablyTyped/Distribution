@@ -25,6 +25,11 @@ class IonFabButton protected ()
   /* CompleteClass */
   override var activated: Boolean = js.native
   /**
+    * The icon name to use for the close icon. This will appear when the fab button is pressed. Only applies if it is the main button inside of a fab containing a fab list.
+    */
+  /* CompleteClass */
+  override var closeIcon: String = js.native
+  /**
     * If `true`, the user cannot interact with the fab button.
     */
   /* CompleteClass */

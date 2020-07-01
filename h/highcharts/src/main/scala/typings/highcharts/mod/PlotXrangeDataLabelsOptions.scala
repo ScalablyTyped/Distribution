@@ -12,7 +12,7 @@ trait PlotXrangeDataLabelsOptions extends js.Object {
     * alignments also dictates how to align it inside the box, as given with
     * the inside option. Can be one of `left`, `center` or `right`.
     */
-  var align: js.UndefOr[AlignValue | Null] = js.undefined
+  var align: js.UndefOr[String] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to allow data labels to
     * overlap. To make the labels less sensitive for overlapping, the
@@ -215,7 +215,7 @@ trait PlotXrangeDataLabelsOptions extends js.Object {
 object PlotXrangeDataLabelsOptions {
   @scala.inline
   def apply(
-    align: js.UndefOr[Null | AlignValue] = js.undefined,
+    align: String = null,
     allowOverlap: js.UndefOr[Boolean] = js.undefined,
     backgroundColor: ColorString | GradientColorObject | PatternObject = null,
     borderColor: ColorString | GradientColorObject | PatternObject = null,
@@ -247,7 +247,7 @@ object PlotXrangeDataLabelsOptions {
     z: js.UndefOr[Double] = js.undefined
   ): PlotXrangeDataLabelsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(align)) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (!js.isUndefined(allowOverlap)) __obj.updateDynamic("allowOverlap")(allowOverlap.get.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])

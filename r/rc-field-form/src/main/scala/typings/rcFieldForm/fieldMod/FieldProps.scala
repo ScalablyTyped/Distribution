@@ -24,12 +24,15 @@ trait FieldProps extends js.Object {
   var getValueFromEvent: js.UndefOr[js.Function1[/* args */ EventArgs, StoreValue]] = js.undefined
   var getValueProps: js.UndefOr[js.Function1[/* value */ StoreValue, js.Object]] = js.undefined
   var initialValue: js.UndefOr[js.Any] = js.undefined
+  /** @private Passed by Form.List props. */
+  var isListField: js.UndefOr[Boolean] = js.undefined
   var messageVariables: js.UndefOr[Record[String, String]] = js.undefined
   var name: js.UndefOr[NamePath] = js.undefined
   var normalize: js.UndefOr[
     js.Function3[/* value */ StoreValue, /* prevValue */ StoreValue, /* allValues */ Store, StoreValue]
   ] = js.undefined
   var onReset: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var preserve: js.UndefOr[Boolean] = js.undefined
   var rules: js.UndefOr[js.Array[Rule]] = js.undefined
   var shouldUpdate: js.UndefOr[ShouldUpdate] = js.undefined
   var trigger: js.UndefOr[String] = js.undefined
@@ -46,10 +49,12 @@ object FieldProps {
     getValueFromEvent: /* args */ EventArgs => StoreValue = null,
     getValueProps: /* value */ StoreValue => js.Object = null,
     initialValue: js.Any = null,
+    isListField: js.UndefOr[Boolean] = js.undefined,
     messageVariables: Record[String, String] = null,
     name: NamePath = null,
     normalize: (/* value */ StoreValue, /* prevValue */ StoreValue, /* allValues */ Store) => StoreValue = null,
     onReset: () => Unit = null,
+    preserve: js.UndefOr[Boolean] = js.undefined,
     rules: js.Array[Rule] = null,
     shouldUpdate: ShouldUpdate = null,
     trigger: String = null,
@@ -63,10 +68,12 @@ object FieldProps {
     if (getValueFromEvent != null) __obj.updateDynamic("getValueFromEvent")(js.Any.fromFunction1(getValueFromEvent))
     if (getValueProps != null) __obj.updateDynamic("getValueProps")(js.Any.fromFunction1(getValueProps))
     if (initialValue != null) __obj.updateDynamic("initialValue")(initialValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(isListField)) __obj.updateDynamic("isListField")(isListField.get.asInstanceOf[js.Any])
     if (messageVariables != null) __obj.updateDynamic("messageVariables")(messageVariables.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (normalize != null) __obj.updateDynamic("normalize")(js.Any.fromFunction3(normalize))
     if (onReset != null) __obj.updateDynamic("onReset")(js.Any.fromFunction0(onReset))
+    if (!js.isUndefined(preserve)) __obj.updateDynamic("preserve")(preserve.get.asInstanceOf[js.Any])
     if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     if (shouldUpdate != null) __obj.updateDynamic("shouldUpdate")(shouldUpdate.asInstanceOf[js.Any])
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])

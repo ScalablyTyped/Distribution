@@ -44,7 +44,7 @@ trait Router extends BaseRouter {
   def getInitialProps(Component: ComponentType[js.Object], ctx: NextPageContext): js.Promise[_] = js.native
   def getRouteInfo(route: String, pathname: String, query: js.Any, as: String): js.Promise[RouteInfo] = js.native
   def getRouteInfo(route: String, pathname: String, query: js.Any, as: String, shallow: Boolean): js.Promise[RouteInfo] = js.native
-  def notify(data: RouteInfo): Unit = js.native
+  def notify(data: RouteInfo): js.Promise[Unit] = js.native
   def onPopState(e: PopStateEvent): Unit = js.native
   def onlyAHashChange(as: String): Boolean = js.native
   /**
@@ -76,7 +76,7 @@ trait Router extends BaseRouter {
   def replace(url: Url, as: Url): js.Promise[Boolean] = js.native
   def replace(url: Url, as: Url, options: js.Object): js.Promise[Boolean] = js.native
   def scrollToHash(as: String): Unit = js.native
-  def set(route: String, pathname: String, query: js.Any, as: String, data: RouteInfo): Unit = js.native
+  def set(route: String, pathname: String, query: js.Any, as: String, data: RouteInfo): js.Promise[Unit] = js.native
   def update(route: String, mod: js.Any): Unit = js.native
   def urlIsNew(asPath: String): Boolean = js.native
 }

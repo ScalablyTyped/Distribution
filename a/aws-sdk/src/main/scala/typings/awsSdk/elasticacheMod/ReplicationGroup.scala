@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ReplicationGroup extends js.Object {
   /**
+    * The ARN (Amazon Resource Name) of the replication group.
+    */
+  var ARN: js.UndefOr[String] = js.native
+  /**
     * A flag that enables encryption at-rest when set to true. You cannot modify the value of AtRestEncryptionEnabled after the cluster is created. To enable encryption at-rest on a cluster you must set AtRestEncryptionEnabled to true when you create a cluster.  Required: Only available when creating a replication group in an Amazon VPC using redis version 3.2.6, 4.x or later. Default: false 
     */
   var AtRestEncryptionEnabled: js.UndefOr[BooleanOptional] = js.native
@@ -51,6 +55,10 @@ trait ReplicationGroup extends js.Object {
     */
   var MemberClusters: js.UndefOr[ClusterIdList] = js.native
   /**
+    * A flag indicating if you have Multi-AZ enabled to enhance fault tolerance. For more information, see Minimizing Downtime: Multi-AZ 
+    */
+  var MultiAZ: js.UndefOr[MultiAZStatus] = js.native
+  /**
     * A list of node groups in this replication group. For Redis (cluster mode disabled) replication groups, this is a single-element list. For Redis (cluster mode enabled) replication groups, the list contains an entry for each node group (shard).
     */
   var NodeGroups: js.UndefOr[NodeGroupList] = js.native
@@ -87,6 +95,7 @@ trait ReplicationGroup extends js.Object {
 object ReplicationGroup {
   @scala.inline
   def apply(
+    ARN: String = null,
     AtRestEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined,
     AuthTokenEnabled: js.UndefOr[BooleanOptional] = js.undefined,
     AuthTokenLastModifiedDate: TStamp = null,
@@ -98,6 +107,7 @@ object ReplicationGroup {
     GlobalReplicationGroupInfo: GlobalReplicationGroupInfo = null,
     KmsKeyId: String = null,
     MemberClusters: ClusterIdList = null,
+    MultiAZ: MultiAZStatus = null,
     NodeGroups: NodeGroupList = null,
     PendingModifiedValues: ReplicationGroupPendingModifiedValues = null,
     ReplicationGroupId: String = null,
@@ -108,6 +118,7 @@ object ReplicationGroup {
     TransitEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined
   ): ReplicationGroup = {
     val __obj = js.Dynamic.literal()
+    if (ARN != null) __obj.updateDynamic("ARN")(ARN.asInstanceOf[js.Any])
     if (!js.isUndefined(AtRestEncryptionEnabled)) __obj.updateDynamic("AtRestEncryptionEnabled")(AtRestEncryptionEnabled.get.asInstanceOf[js.Any])
     if (!js.isUndefined(AuthTokenEnabled)) __obj.updateDynamic("AuthTokenEnabled")(AuthTokenEnabled.get.asInstanceOf[js.Any])
     if (AuthTokenLastModifiedDate != null) __obj.updateDynamic("AuthTokenLastModifiedDate")(AuthTokenLastModifiedDate.asInstanceOf[js.Any])
@@ -119,6 +130,7 @@ object ReplicationGroup {
     if (GlobalReplicationGroupInfo != null) __obj.updateDynamic("GlobalReplicationGroupInfo")(GlobalReplicationGroupInfo.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
     if (MemberClusters != null) __obj.updateDynamic("MemberClusters")(MemberClusters.asInstanceOf[js.Any])
+    if (MultiAZ != null) __obj.updateDynamic("MultiAZ")(MultiAZ.asInstanceOf[js.Any])
     if (NodeGroups != null) __obj.updateDynamic("NodeGroups")(NodeGroups.asInstanceOf[js.Any])
     if (PendingModifiedValues != null) __obj.updateDynamic("PendingModifiedValues")(PendingModifiedValues.asInstanceOf[js.Any])
     if (ReplicationGroupId != null) __obj.updateDynamic("ReplicationGroupId")(ReplicationGroupId.asInstanceOf[js.Any])

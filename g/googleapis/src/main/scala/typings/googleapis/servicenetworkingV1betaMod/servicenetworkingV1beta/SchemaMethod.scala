@@ -53,9 +53,9 @@ object SchemaMethod {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestStreaming)) __obj.updateDynamic("requestStreaming")(requestStreaming.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestStreaming)) __obj.updateDynamic("requestStreaming")(requestStreaming.get.asInstanceOf[js.Any])
     if (requestTypeUrl != null) __obj.updateDynamic("requestTypeUrl")(requestTypeUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(responseStreaming)) __obj.updateDynamic("responseStreaming")(responseStreaming.asInstanceOf[js.Any])
+    if (!js.isUndefined(responseStreaming)) __obj.updateDynamic("responseStreaming")(responseStreaming.get.asInstanceOf[js.Any])
     if (responseTypeUrl != null) __obj.updateDynamic("responseTypeUrl")(responseTypeUrl.asInstanceOf[js.Any])
     if (syntax != null) __obj.updateDynamic("syntax")(syntax.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMethod]

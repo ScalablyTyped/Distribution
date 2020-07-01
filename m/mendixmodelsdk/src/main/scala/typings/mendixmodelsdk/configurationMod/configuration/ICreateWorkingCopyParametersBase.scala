@@ -8,7 +8,7 @@ trait ICreateWorkingCopyParametersBase extends js.Object {
   var avatarUrl: js.UndefOr[String] = js.undefined
   var description: js.UndefOr[String] = js.undefined
   /**
-    * Indicates whether this WC is created for the purpose of collaboration between the Desktop modeler and Webmodeler.
+    * Indicates whether this working copy is created for the purpose of collaboration between the Desktop modeler and Webmodeler.
     * By setting this, BiDi won't be available anymore for this project and thus requires a modeler with version 7.23.3 or higher.
     */
   var isCollaboration: js.UndefOr[Boolean] = js.undefined
@@ -36,11 +36,15 @@ trait ICreateWorkingCopyParametersBase extends js.Object {
     */
   var setAsDefault: js.UndefOr[Boolean] = js.undefined
   /**
-    * If this WC is created from a TeamServer checkout, the BaseRevision / BaseBranch can be used by the Desktop Modeler during merge.
+    * If this working copy is created from an SVN TeamServer checkout, the BaseRevision / BaseBranch can be used by the Desktop Modeler during merge.
     */
   var teamServerBaseBranch: js.UndefOr[String] = js.undefined
   /**
-    * If this WC is created from a TeamServer checkout, the BaseRevision / BaseBranch can be used by the Desktop Modeler during merge.
+    * If this working copy is created from a Git TeamServer checkout, the commit hash will be used for the clone operation.
+    */
+  var teamServerBaseCommitHash: js.UndefOr[String] = js.undefined
+  /**
+    * If this working copy is created from an SVN TeamServer checkout, the BaseRevision / BaseBranch can be used by the Desktop Modeler during merge.
     * @type {number}
     */
   var teamServerBaseRevision: js.UndefOr[Double] = js.undefined
@@ -58,6 +62,7 @@ object ICreateWorkingCopyParametersBase {
     projectId: String = null,
     setAsDefault: js.UndefOr[Boolean] = js.undefined,
     teamServerBaseBranch: String = null,
+    teamServerBaseCommitHash: String = null,
     teamServerBaseRevision: js.UndefOr[Double] = js.undefined
   ): ICreateWorkingCopyParametersBase = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
@@ -69,6 +74,7 @@ object ICreateWorkingCopyParametersBase {
     if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     if (!js.isUndefined(setAsDefault)) __obj.updateDynamic("setAsDefault")(setAsDefault.get.asInstanceOf[js.Any])
     if (teamServerBaseBranch != null) __obj.updateDynamic("teamServerBaseBranch")(teamServerBaseBranch.asInstanceOf[js.Any])
+    if (teamServerBaseCommitHash != null) __obj.updateDynamic("teamServerBaseCommitHash")(teamServerBaseCommitHash.asInstanceOf[js.Any])
     if (!js.isUndefined(teamServerBaseRevision)) __obj.updateDynamic("teamServerBaseRevision")(teamServerBaseRevision.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICreateWorkingCopyParametersBase]
   }

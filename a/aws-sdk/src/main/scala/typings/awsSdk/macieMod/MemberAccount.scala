@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MemberAccount extends js.Object {
   /**
-    * The AWS account ID of the Amazon Macie member account.
+    * The AWS account ID of the Amazon Macie Classic member account.
     */
   var accountId: js.UndefOr[AWSAccountId] = js.native
 }

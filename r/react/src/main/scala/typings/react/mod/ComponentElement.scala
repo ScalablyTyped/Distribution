@@ -10,7 +10,7 @@ trait ComponentElement[P, T /* <: Component[P, ComponentState, _] */] extends Re
 
 object ComponentElement {
   @scala.inline
-  def apply[P, T](
+  def apply[P, /* <: typings.react.mod.Component[P, typings.react.mod.ComponentState, _] */ T](
     props: js.Any,
     `type`: js.Any,
     key: Key = null,

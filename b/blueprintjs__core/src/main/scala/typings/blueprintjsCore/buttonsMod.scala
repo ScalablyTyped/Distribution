@@ -17,14 +17,14 @@ object buttonsMod extends js.Object {
   class AnchorButton () extends AbstractButton[AnchorHTMLAttributes[HTMLAnchorElement]] {
     @JSName("buttonRef")
     var buttonRef_AnchorButton: HTMLAnchorElement | IRefObject[HTMLAnchorElement] | Null = js.native
-    var handleRef: IRefObject[HTMLAnchorElement] | (js.Function1[/* ref */ HTMLAnchorElement, Unit]) = js.native
+    var handleRef: IRefObject[HTMLAnchorElement] | (js.Function1[/* ref */ HTMLAnchorElement | Null, Unit]) = js.native
   }
   
   @js.native
   class Button () extends AbstractButton[ButtonHTMLAttributes[HTMLButtonElement]] {
     @JSName("buttonRef")
     var buttonRef_Button: HTMLButtonElement | IRefObject[HTMLButtonElement] | Null = js.native
-    var handleRef: IRefObject[HTMLButtonElement] | (js.Function1[/* ref */ HTMLButtonElement, Unit]) = js.native
+    var handleRef: IRefObject[HTMLButtonElement] | (js.Function1[/* ref */ HTMLButtonElement | Null, Unit]) = js.native
   }
   
   /* static members */

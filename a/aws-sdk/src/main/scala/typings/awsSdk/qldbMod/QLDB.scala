@@ -104,12 +104,12 @@ trait QLDB extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ExportJournalToS3Response, Unit]
   ): Request[ExportJournalToS3Response, AWSError] = js.native
   /**
-    * Returns a journal block object at a specified address in a ledger. Also returns a proof of the specified block for verification if DigestTipAddress is provided. If the specified ledger doesn't exist or is in DELETING status, then throws ResourceNotFoundException. If the specified ledger is in CREATING status, then throws ResourcePreconditionNotMetException. If no block exists with the specified address, then throws InvalidParameterException.
+    * Returns a block object at a specified address in a journal. Also returns a proof of the specified block for verification if DigestTipAddress is provided. For information about the data contents in a block, see Journal contents in the Amazon QLDB Developer Guide. If the specified ledger doesn't exist or is in DELETING status, then throws ResourceNotFoundException. If the specified ledger is in CREATING status, then throws ResourcePreconditionNotMetException. If no block exists with the specified address, then throws InvalidParameterException.
     */
   def getBlock(): Request[GetBlockResponse, AWSError] = js.native
   def getBlock(callback: js.Function2[/* err */ AWSError, /* data */ GetBlockResponse, Unit]): Request[GetBlockResponse, AWSError] = js.native
   /**
-    * Returns a journal block object at a specified address in a ledger. Also returns a proof of the specified block for verification if DigestTipAddress is provided. If the specified ledger doesn't exist or is in DELETING status, then throws ResourceNotFoundException. If the specified ledger is in CREATING status, then throws ResourcePreconditionNotMetException. If no block exists with the specified address, then throws InvalidParameterException.
+    * Returns a block object at a specified address in a journal. Also returns a proof of the specified block for verification if DigestTipAddress is provided. For information about the data contents in a block, see Journal contents in the Amazon QLDB Developer Guide. If the specified ledger doesn't exist or is in DELETING status, then throws ResourceNotFoundException. If the specified ledger is in CREATING status, then throws ResourcePreconditionNotMetException. If no block exists with the specified address, then throws InvalidParameterException.
     */
   def getBlock(params: GetBlockRequest): Request[GetBlockResponse, AWSError] = js.native
   def getBlock(
@@ -210,12 +210,12 @@ trait QLDB extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
-    * Creates a stream for a given Amazon QLDB ledger that delivers the journal data to a specified Amazon Kinesis Data Streams resource. The stream captures every document revision that is committed to your journal and sends it to the Kinesis data stream.
+    * Creates a journal stream for a given Amazon QLDB ledger. The stream captures every document revision that is committed to the ledger's journal and delivers the data to a specified Amazon Kinesis Data Streams resource.
     */
   def streamJournalToKinesis(): Request[StreamJournalToKinesisResponse, AWSError] = js.native
   def streamJournalToKinesis(callback: js.Function2[/* err */ AWSError, /* data */ StreamJournalToKinesisResponse, Unit]): Request[StreamJournalToKinesisResponse, AWSError] = js.native
   /**
-    * Creates a stream for a given Amazon QLDB ledger that delivers the journal data to a specified Amazon Kinesis Data Streams resource. The stream captures every document revision that is committed to your journal and sends it to the Kinesis data stream.
+    * Creates a journal stream for a given Amazon QLDB ledger. The stream captures every document revision that is committed to the ledger's journal and delivers the data to a specified Amazon Kinesis Data Streams resource.
     */
   def streamJournalToKinesis(params: StreamJournalToKinesisRequest): Request[StreamJournalToKinesisResponse, AWSError] = js.native
   def streamJournalToKinesis(

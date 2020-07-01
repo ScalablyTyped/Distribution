@@ -11,7 +11,7 @@ trait Knob extends js.Object {
   var background: js.UndefOr[BackgroundType] = js.undefined
   var color: js.UndefOr[ColorType] = js.undefined
   var extend: js.UndefOr[ExtendType] = js.undefined
-  var knob: js.UndefOr[Extend] = js.undefined
+  var knob: js.UndefOr[ExtendExtendType] = js.undefined
   var radius: js.UndefOr[String] = js.undefined
   var size: js.UndefOr[String] = js.undefined
 }
@@ -22,7 +22,7 @@ object Knob {
     background: BackgroundType = null,
     color: ColorType = null,
     extend: ExtendType = null,
-    knob: Extend = null,
+    knob: ExtendExtendType = null,
     radius: String = null,
     size: String = null
   ): Knob = {

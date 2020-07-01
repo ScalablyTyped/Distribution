@@ -7,39 +7,39 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AutoBranchCreationConfig extends js.Object {
   /**
-    *  Basic Authorization credentials for the auto created branch. 
+    *  The basic authorization credentials for the autocreated branch. 
     */
   var basicAuthCredentials: js.UndefOr[BasicAuthCredentials] = js.native
   /**
-    *  BuildSpec for the auto created branch. 
+    *  The build specification (build spec) for the autocreated branch. 
     */
   var buildSpec: js.UndefOr[BuildSpec] = js.native
   /**
-    *  Enables auto building for the auto created branch. 
+    *  Enables auto building for the autocreated branch. 
     */
   var enableAutoBuild: js.UndefOr[EnableAutoBuild] = js.native
   /**
-    *  Enables Basic Auth for the auto created branch. 
+    *  Enables basic authorization for the autocreated branch. 
     */
   var enableBasicAuth: js.UndefOr[EnableBasicAuth] = js.native
   /**
-    *  Enables Pull Request Preview for auto created branch. 
+    *  Enables pull request preview for the autocreated branch. 
     */
   var enablePullRequestPreview: js.UndefOr[EnablePullRequestPreview] = js.native
   /**
-    *  Environment Variables for the auto created branch. 
+    *  The environment variables for the autocreated branch. 
     */
   var environmentVariables: js.UndefOr[EnvironmentVariables] = js.native
   /**
-    *  Framework for the auto created branch. 
+    *  The framework for the autocreated branch. 
     */
   var framework: js.UndefOr[Framework] = js.native
   /**
-    *  The Amplify Environment name for the pull request. 
+    *  The Amplify environment name for the pull request. 
     */
   var pullRequestEnvironmentName: js.UndefOr[PullRequestEnvironmentName] = js.native
   /**
-    *  Stage for the auto created branch. 
+    *  Describes the current stage for the autocreated branch. 
     */
   var stage: js.UndefOr[Stage] = js.native
 }

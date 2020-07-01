@@ -10,7 +10,7 @@ trait Revision[Content /* <: js.Object */] extends js.Object {
 
 object Revision {
   @scala.inline
-  def apply[Content](ok: Document[Content] with RevisionIdMeta): Revision[Content] = {
+  def apply[/* <: js.Object */ Content](ok: Document[Content] with RevisionIdMeta): Revision[Content] = {
     val __obj = js.Dynamic.literal(ok = ok.asInstanceOf[js.Any])
     __obj.asInstanceOf[Revision[Content]]
   }

@@ -53,6 +53,8 @@ package object kafkaMod {
   type listOfBrokerEBSVolumeInfo = js.Array[typings.awsSdk.kafkaMod.BrokerEBSVolumeInfo]
   type listOfClusterInfo = js.Array[typings.awsSdk.kafkaMod.ClusterInfo]
   type listOfClusterOperationInfo = js.Array[typings.awsSdk.kafkaMod.ClusterOperationInfo]
+  type listOfClusterOperationStep = js.Array[typings.awsSdk.kafkaMod.ClusterOperationStep]
+  type listOfCompatibleKafkaVersion = js.Array[typings.awsSdk.kafkaMod.CompatibleKafkaVersion]
   type listOfConfiguration = js.Array[typings.awsSdk.kafkaMod.Configuration]
   type listOfConfigurationRevision = js.Array[typings.awsSdk.kafkaMod.ConfigurationRevision]
   type listOfKafkaVersion = js.Array[typings.awsSdk.kafkaMod.KafkaVersion]

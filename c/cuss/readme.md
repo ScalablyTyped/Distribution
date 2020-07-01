@@ -1,7 +1,7 @@
 
 # Scala.js typings for cuss
 
-Typings are for version 1.19
+Typings are for version 1.20
 
 ## Library description:
 Map of English profane words to a rating of sureness

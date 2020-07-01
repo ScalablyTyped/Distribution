@@ -16,8 +16,6 @@ import typings.plotlyJs.anon.PartialSlider
 import typings.plotlyJs.anon.Partialrowsnumberroworder
 import typings.plotlyJs.anon.PartialtextstringfontPart
 import typings.plotlyJs.plotlyJsBooleans.`false`
-import typings.plotlyJs.plotlyJsNumbers.`0`
-import typings.plotlyJs.plotlyJsNumbers.`1`
 import typings.plotlyJs.plotlyJsStrings._empty
 import typings.plotlyJs.plotlyJsStrings.`x unified`
 import typings.plotlyJs.plotlyJsStrings.`y unified`
@@ -47,8 +45,8 @@ import scala.scalajs.js.annotation._
 trait Layout extends js.Object {
   var annotations: js.Array[PartialAnnotationsAlign]
   var autosize: Boolean
-  var bargap: `0` | `1`
-  var bargroupgap: `0` | `1`
+  var bargap: Double
+  var bargroupgap: Double
   var barmode: stack | group | overlay | relative
   var barnorm: _empty | fraction | percent
   var calendar: Calendar
@@ -142,8 +140,8 @@ object Layout {
   def apply(
     annotations: js.Array[PartialAnnotationsAlign],
     autosize: Boolean,
-    bargap: `0` | `1`,
-    bargroupgap: `0` | `1`,
+    bargap: Double,
+    bargroupgap: Double,
     barmode: stack | group | overlay | relative,
     barnorm: _empty | fraction | percent,
     calendar: Calendar,

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ps-list
 
-Typings are for version 7.0.0
+Typings are for version 7.2.0
 
 ## Library description:
 Get running processes

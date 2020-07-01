@@ -25,9 +25,9 @@ trait SchemaAutoscalingPolicyCpuUtilization extends js.Object {
 
 object SchemaAutoscalingPolicyCpuUtilization {
   @scala.inline
-  def apply(utilizationTarget: Int | Double = null): SchemaAutoscalingPolicyCpuUtilization = {
+  def apply(utilizationTarget: js.UndefOr[Double] = js.undefined): SchemaAutoscalingPolicyCpuUtilization = {
     val __obj = js.Dynamic.literal()
-    if (utilizationTarget != null) __obj.updateDynamic("utilizationTarget")(utilizationTarget.asInstanceOf[js.Any])
+    if (!js.isUndefined(utilizationTarget)) __obj.updateDynamic("utilizationTarget")(utilizationTarget.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAutoscalingPolicyCpuUtilization]
   }
 }

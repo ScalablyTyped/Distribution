@@ -43,13 +43,13 @@ object SchemaInstantiateWorkflowTemplateRequest {
     instanceId: String = null,
     parameters: StringDictionary[String] = null,
     requestId: String = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): SchemaInstantiateWorkflowTemplateRequest = {
     val __obj = js.Dynamic.literal()
     if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
     if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstantiateWorkflowTemplateRequest]
   }
 }

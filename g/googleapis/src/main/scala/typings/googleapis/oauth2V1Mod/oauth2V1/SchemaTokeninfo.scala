@@ -67,8 +67,8 @@ object SchemaTokeninfo {
     audience: String = null,
     email: String = null,
     email_verified: js.UndefOr[Boolean] = js.undefined,
-    expires_in: Int | Double = null,
-    issued_at: Int | Double = null,
+    expires_in: js.UndefOr[Double] = js.undefined,
+    issued_at: js.UndefOr[Double] = js.undefined,
     issued_to: String = null,
     issuer: String = null,
     nonce: String = null,
@@ -80,15 +80,15 @@ object SchemaTokeninfo {
     if (access_type != null) __obj.updateDynamic("access_type")(access_type.asInstanceOf[js.Any])
     if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(email_verified)) __obj.updateDynamic("email_verified")(email_verified.asInstanceOf[js.Any])
-    if (expires_in != null) __obj.updateDynamic("expires_in")(expires_in.asInstanceOf[js.Any])
-    if (issued_at != null) __obj.updateDynamic("issued_at")(issued_at.asInstanceOf[js.Any])
+    if (!js.isUndefined(email_verified)) __obj.updateDynamic("email_verified")(email_verified.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expires_in)) __obj.updateDynamic("expires_in")(expires_in.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(issued_at)) __obj.updateDynamic("issued_at")(issued_at.get.asInstanceOf[js.Any])
     if (issued_to != null) __obj.updateDynamic("issued_to")(issued_to.asInstanceOf[js.Any])
     if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
     if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(verified_email)) __obj.updateDynamic("verified_email")(verified_email.asInstanceOf[js.Any])
+    if (!js.isUndefined(verified_email)) __obj.updateDynamic("verified_email")(verified_email.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTokeninfo]
   }
 }

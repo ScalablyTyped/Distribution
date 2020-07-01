@@ -52,7 +52,7 @@ trait SelectComponentsConfig[OptionType /* <: OptionTypeBase */] extends js.Obje
 
 object SelectComponentsConfig {
   @scala.inline
-  def apply[OptionType](
+  def apply[/* <: typings.reactSelect.typesMod.OptionTypeBase */ OptionType](
     ClearIndicator: IndicatorComponentType[OptionType] = null,
     Control: ComponentType[ControlProps[OptionType]] = null,
     CrossIcon: ComponentType[_] = null,

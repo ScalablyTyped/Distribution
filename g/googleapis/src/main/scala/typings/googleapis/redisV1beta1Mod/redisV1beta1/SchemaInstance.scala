@@ -124,9 +124,9 @@ object SchemaInstance {
     host: String = null,
     labels: StringDictionary[String] = null,
     locationId: String = null,
-    memorySizeGb: Int | Double = null,
+    memorySizeGb: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     redisConfigs: StringDictionary[String] = null,
     redisVersion: String = null,
     reservedIpRange: String = null,
@@ -143,9 +143,9 @@ object SchemaInstance {
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (locationId != null) __obj.updateDynamic("locationId")(locationId.asInstanceOf[js.Any])
-    if (memorySizeGb != null) __obj.updateDynamic("memorySizeGb")(memorySizeGb.asInstanceOf[js.Any])
+    if (!js.isUndefined(memorySizeGb)) __obj.updateDynamic("memorySizeGb")(memorySizeGb.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (redisConfigs != null) __obj.updateDynamic("redisConfigs")(redisConfigs.asInstanceOf[js.Any])
     if (redisVersion != null) __obj.updateDynamic("redisVersion")(redisVersion.asInstanceOf[js.Any])
     if (reservedIpRange != null) __obj.updateDynamic("reservedIpRange")(reservedIpRange.asInstanceOf[js.Any])

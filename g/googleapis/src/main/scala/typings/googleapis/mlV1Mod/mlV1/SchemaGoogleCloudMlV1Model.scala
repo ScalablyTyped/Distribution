@@ -97,8 +97,8 @@ object SchemaGoogleCloudMlV1Model {
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlinePredictionConsoleLogging)) __obj.updateDynamic("onlinePredictionConsoleLogging")(onlinePredictionConsoleLogging.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlinePredictionLogging)) __obj.updateDynamic("onlinePredictionLogging")(onlinePredictionLogging.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlinePredictionConsoleLogging)) __obj.updateDynamic("onlinePredictionConsoleLogging")(onlinePredictionConsoleLogging.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlinePredictionLogging)) __obj.updateDynamic("onlinePredictionLogging")(onlinePredictionLogging.get.asInstanceOf[js.Any])
     if (regions != null) __obj.updateDynamic("regions")(regions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudMlV1Model]
   }

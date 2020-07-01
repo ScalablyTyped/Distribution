@@ -19,7 +19,7 @@ trait AdminUIOptions[ListNames /* <: String */, UserType /* <: js.Object */] ext
 
 object AdminUIOptions {
   @scala.inline
-  def apply[ListNames, UserType](
+  def apply[/* <: java.lang.String */ ListNames, /* <: js.Object */ UserType](
     adminPath: String = null,
     apiPath: String = null,
     authStrategy: BaseAuthStrategy = null,

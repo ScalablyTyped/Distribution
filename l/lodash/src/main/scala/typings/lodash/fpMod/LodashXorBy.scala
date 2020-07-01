@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashXorBy extends js.Object {
+trait LodashXorBy extends LodashConvertible {
   def apply[T](iteratee: ValueIteratee[T]): js.Array[T] = js.native
   def apply[T](iteratee: ValueIteratee[T], arrays: Null, arrays2: List[T]): js.Array[T] = js.native
   def apply[T](iteratee: ValueIteratee[T], arrays: List[T]): js.Array[T] = js.native

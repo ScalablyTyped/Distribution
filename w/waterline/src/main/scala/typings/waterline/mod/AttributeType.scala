@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /* Rewritten from type alias, can be one of: 
   - typings.waterline.waterlineStrings.string
   - typings.waterline.waterlineStrings.text
+  - typings.waterline.waterlineStrings.number
   - typings.waterline.waterlineStrings.integer
   - typings.waterline.waterlineStrings.float
   - typings.waterline.waterlineStrings.date
@@ -36,6 +37,8 @@ object AttributeType {
   def integer: typings.waterline.waterlineStrings.integer = "integer".asInstanceOf[typings.waterline.waterlineStrings.integer]
   @scala.inline
   def json: typings.waterline.waterlineStrings.json = "json".asInstanceOf[typings.waterline.waterlineStrings.json]
+  @scala.inline
+  def number: typings.waterline.waterlineStrings.number = "number".asInstanceOf[typings.waterline.waterlineStrings.number]
   @scala.inline
   def string: typings.waterline.waterlineStrings.string = "string".asInstanceOf[typings.waterline.waterlineStrings.string]
   @scala.inline

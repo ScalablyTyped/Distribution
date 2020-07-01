@@ -1,7 +1,7 @@
 
 # Scala.js typings for graphviz
 
-Typings are for version 0.0.8
+Typings are for version 0.0
 
 ## Library description:
 Node.js interface to the GraphViz graphing tool

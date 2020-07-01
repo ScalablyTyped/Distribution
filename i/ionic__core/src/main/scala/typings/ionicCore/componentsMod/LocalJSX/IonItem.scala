@@ -1,5 +1,7 @@
 package typings.ionicCore.componentsMod.LocalJSX
 
+import typings.ionicCore.animationInterfaceMod.Animation
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.interfaceMod.RouterDirection
 import typings.ionicCore.ionicCoreStrings.button
 import typings.ionicCore.ionicCoreStrings.full
@@ -56,6 +58,10 @@ trait IonItem extends js.Object {
     */
   var rel: js.UndefOr[String] = js.undefined
   /**
+    * When using a router, it specifies the transition animation when navigating to another page using `href`.
+    */
+  var routerAnimation: js.UndefOr[AnimationBuilder] = js.undefined
+  /**
     * When using a router, it specifies the transition direction when navigating to another page using `href`.
     */
   var routerDirection: js.UndefOr[RouterDirection] = js.undefined
@@ -82,6 +88,7 @@ object IonItem {
     lines: full | inset | none = null,
     mode: ios | md = null,
     rel: String = null,
+    routerAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     routerDirection: RouterDirection = null,
     target: String = null,
     `type`: submit | reset | button = null
@@ -97,6 +104,7 @@ object IonItem {
     if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (rel != null) __obj.updateDynamic("rel")(rel.asInstanceOf[js.Any])
+    if (routerAnimation != null) __obj.updateDynamic("routerAnimation")(js.Any.fromFunction2(routerAnimation))
     if (routerDirection != null) __obj.updateDynamic("routerDirection")(routerDirection.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

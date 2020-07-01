@@ -26,7 +26,7 @@ trait Config[V /* <: HTTPVersion */] extends js.Object {
 
 object Config {
   @scala.inline
-  def apply[V](
+  def apply[/* <: typings.findMyWay.mod.HTTPVersion */ V](
     allowUnsafeRegex: js.UndefOr[Boolean] = js.undefined,
     caseSensitive: js.UndefOr[Boolean] = js.undefined,
     defaultRoute: (/* req */ Http2ServerRequest | IncomingMessage, /* res */ Http2ServerResponse | ServerResponse) => Unit = null,

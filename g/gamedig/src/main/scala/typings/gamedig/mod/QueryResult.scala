@@ -11,6 +11,7 @@ trait QueryResult extends js.Object {
   var name: String
   var notes: js.Object
   var password: Boolean
+  var ping: Double
   var players: js.Array[Player]
   var query: js.UndefOr[js.Object] = js.undefined
   var raw: js.UndefOr[js.Object] = js.undefined
@@ -25,11 +26,12 @@ object QueryResult {
     name: String,
     notes: js.Object,
     password: Boolean,
+    ping: Double,
     players: js.Array[Player],
     query: js.Object = null,
     raw: js.Object = null
   ): QueryResult = {
-    val __obj = js.Dynamic.literal(bots = bots.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], maxplayers = maxplayers.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], notes = notes.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], players = players.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bots = bots.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], maxplayers = maxplayers.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], notes = notes.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], ping = ping.asInstanceOf[js.Any], players = players.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryResult]

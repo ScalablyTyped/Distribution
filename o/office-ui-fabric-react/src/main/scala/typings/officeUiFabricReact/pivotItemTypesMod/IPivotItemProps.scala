@@ -1,6 +1,7 @@
 package typings.officeUiFabricReact.pivotItemTypesMod
 
-import typings.officeUiFabricReact.anon.IButtonPropskeystringstri
+import org.scalablytyped.runtime.StringDictionary
+import typings.officeUiFabricReact.buttonTypesMod.IButtonProps
 import typings.officeUiFabricReact.keytipTypesMod.IKeytipProps
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
@@ -79,6 +80,13 @@ import scala.scalajs.js.annotation._
 
 trait IPivotItemProps extends HTMLAttributes[HTMLDivElement] {
   /**
+    * Defines whether to always render the pivot item (regardless of whether it is selected or not).
+    * Useful if you're rendering content that is expensive to mount.
+    *
+    * @defaultvalue false
+    */
+  var alwaysRender: js.UndefOr[Boolean] = js.undefined
+  /**
     * The aria label of each pivot link which will read by screen reader instead of linkText.
     *
     * Note that unless you have compelling requirements you should not override aria-label.
@@ -92,7 +100,7 @@ trait IPivotItemProps extends HTMLAttributes[HTMLDivElement] {
     * Props for the header command button. This provides a way to pass in native props, such as data-* and aria-*,
     * for each pivot header/link element.
     */
-  var headerButtonProps: js.UndefOr[IButtonPropskeystringstri] = js.undefined
+  var headerButtonProps: js.UndefOr[IButtonProps | (StringDictionary[String | Double | Boolean])] = js.undefined
   /**
     * The text displayed of each pivot link.
     */
@@ -114,7 +122,7 @@ trait IPivotItemProps extends HTMLAttributes[HTMLDivElement] {
     */
   var itemKey: js.UndefOr[String] = js.undefined
   /**
-    * Optional keytip for this PivotItem
+    * Optional keytip for this PivotItem.
     */
   var keytipProps: js.UndefOr[IKeytipProps] = js.undefined
   /**
@@ -123,7 +131,7 @@ trait IPivotItemProps extends HTMLAttributes[HTMLDivElement] {
     */
   var linkText: js.UndefOr[String] = js.undefined
   /**
-    * Optional custom renderer for the pivot item link
+    * Optional custom renderer for the pivot item link.
     */
   var onRenderItemLink: js.UndefOr[IRenderFunction[IPivotItemProps]] = js.undefined
 }
@@ -133,6 +141,7 @@ object IPivotItemProps {
   def apply(
     about: String = null,
     accessKey: String = null,
+    alwaysRender: js.UndefOr[Boolean] = js.undefined,
     `aria-activedescendant`: String = null,
     `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
     `aria-autocomplete`: none | `inline` | list | both = null,
@@ -197,7 +206,7 @@ object IPivotItemProps {
     defaultValue: String | Double | js.Array[String] = null,
     dir: String = null,
     draggable: js.UndefOr[Booleanish] = js.undefined,
-    headerButtonProps: IButtonPropskeystringstri = null,
+    headerButtonProps: IButtonProps | (StringDictionary[String | Double | Boolean]) = null,
     headerText: String = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
@@ -318,6 +327,7 @@ object IPivotItemProps {
     val __obj = js.Dynamic.literal()
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysRender)) __obj.updateDynamic("alwaysRender")(alwaysRender.get.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
     if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.get.asInstanceOf[js.Any])
     if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])

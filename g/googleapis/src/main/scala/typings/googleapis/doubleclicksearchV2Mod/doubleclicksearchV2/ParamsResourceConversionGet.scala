@@ -73,16 +73,16 @@ object ParamsResourceConversionGet {
     auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
     campaignId: String = null,
     criterionId: String = null,
-    endDate: Int | Double = null,
+    endDate: js.UndefOr[Double] = js.undefined,
     engineAccountId: String = null,
     fields: String = null,
     key: String = null,
     oauth_token: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
     quotaUser: String = null,
-    rowCount: Int | Double = null,
-    startDate: Int | Double = null,
-    startRow: Int | Double = null,
+    rowCount: js.UndefOr[Double] = js.undefined,
+    startDate: js.UndefOr[Double] = js.undefined,
+    startRow: js.UndefOr[Double] = js.undefined,
     userIp: String = null
   ): ParamsResourceConversionGet = {
     val __obj = js.Dynamic.literal()
@@ -94,16 +94,16 @@ object ParamsResourceConversionGet {
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (campaignId != null) __obj.updateDynamic("campaignId")(campaignId.asInstanceOf[js.Any])
     if (criterionId != null) __obj.updateDynamic("criterionId")(criterionId.asInstanceOf[js.Any])
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(endDate)) __obj.updateDynamic("endDate")(endDate.get.asInstanceOf[js.Any])
     if (engineAccountId != null) __obj.updateDynamic("engineAccountId")(engineAccountId.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
-    if (startRow != null) __obj.updateDynamic("startRow")(startRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startDate)) __obj.updateDynamic("startDate")(startDate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startRow)) __obj.updateDynamic("startRow")(startRow.get.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceConversionGet]
   }

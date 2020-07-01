@@ -11,7 +11,7 @@ trait Props[OptionType /* <: OptionTypeBase */] extends js.Object {
 
 object Props {
   @scala.inline
-  def apply[OptionType](components: SelectComponentsConfig[OptionType]): Props[OptionType] = {
+  def apply[/* <: typings.reactSelect.typesMod.OptionTypeBase */ OptionType](components: SelectComponentsConfig[OptionType]): Props[OptionType] = {
     val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props[OptionType]]
   }

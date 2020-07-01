@@ -37,6 +37,7 @@ class SurveyElement protected ()
   override var name: String = js.native
   /**
     * Set it to true to make an element question/panel/page readonly.
+    * Please note, this property is hidden for question without input, for example html question.
     * @see enableIf
     * @see isReadOnly
     */

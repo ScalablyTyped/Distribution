@@ -11,7 +11,7 @@ trait EventProps[TEvent /* <: js.Object */] extends js.Object {
 
 object EventProps {
   @scala.inline
-  def apply[TEvent](event: TEvent, title: String): EventProps[TEvent] = {
+  def apply[/* <: js.Object */ TEvent](event: TEvent, title: String): EventProps[TEvent] = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventProps[TEvent]]
   }

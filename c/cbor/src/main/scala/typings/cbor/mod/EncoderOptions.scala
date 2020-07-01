@@ -31,7 +31,7 @@ object EncoderOptions {
     canonical: js.UndefOr[Boolean] = js.undefined,
     dateType: number | float | int | string = null,
     decodeStrings: js.UndefOr[Boolean] = js.undefined,
-    defaultencoding: BufferEncoding = null,
+    defaultEncoding: BufferEncoding = null,
     destroy: js.ThisFunction2[
       /* this */ Transform, 
       /* error */ Error | Null, 
@@ -85,7 +85,7 @@ object EncoderOptions {
     if (!js.isUndefined(canonical)) __obj.updateDynamic("canonical")(canonical.get.asInstanceOf[js.Any])
     if (dateType != null) __obj.updateDynamic("dateType")(dateType.asInstanceOf[js.Any])
     if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings.get.asInstanceOf[js.Any])
-    if (defaultencoding != null) __obj.updateDynamic("defaultencoding")(defaultencoding.asInstanceOf[js.Any])
+    if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
     if (detectLoops != null) __obj.updateDynamic("detectLoops")(detectLoops.asInstanceOf[js.Any])
     if (!js.isUndefined(disallowUndefinedKeys)) __obj.updateDynamic("disallowUndefinedKeys")(disallowUndefinedKeys.get.asInstanceOf[js.Any])

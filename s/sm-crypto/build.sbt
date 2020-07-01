@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "sm-crypto"
-version := "0.1-dt-20200225Z-f9a679"
+version := "0.1-dt-20200225Z-3f9bff"
 scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bigi" % "1.4-dt-20200515Z-039af0",
-  "org.scalablytyped" %%% "std" % "3.9-18cbeb")
+  "org.scalablytyped" %%% "bigi" % "1.4-dt-20200515Z-1e686f",
+  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

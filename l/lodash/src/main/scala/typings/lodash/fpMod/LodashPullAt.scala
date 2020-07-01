@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashPullAt extends js.Object {
+trait LodashPullAt extends LodashConvertible {
   def apply(indexes: Many[Double]): LodashPullAt1x1 = js.native
   def apply[T](indexes: Many[Double], array: js.Array[T]): js.Array[T] = js.native
   def apply[T](indexes: Many[Double], array: List[T]): List[T] = js.native

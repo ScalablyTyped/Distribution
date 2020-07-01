@@ -1,7 +1,7 @@
 
 # Scala.js typings for redom
 
-Typings are for version 3.26.0
+Typings are for version 3.27.1
 
 ## Library description:
 Tiny turboboosted JavaScript library for creating user interfaces. 100 % test coverage!

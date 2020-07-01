@@ -1,6 +1,7 @@
 package typings.webdriverio.WebdriverIO
 
 import typings.webdriver.AsyncClient
+import typings.webdriver.WebDriver.BaseClient
 import typings.webdriver.WebDriver.ClientOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,4 +13,5 @@ trait BrowserObject
   extends typings.webdriverio.WebdriverIOAsync.Browser
      with ClientOptions
      with AsyncClient
+     with BaseClient
 

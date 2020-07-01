@@ -29,8 +29,6 @@ trait VariantResponse extends js.Object {
   var conversionRate: js.UndefOr[Double] = js.undefined
   /**
     * The search parameters.
-    *
-    * @todo Handle this search options type.
     */
   val customSearchParameters: js.UndefOr[SearchOptions] = js.undefined
   /**

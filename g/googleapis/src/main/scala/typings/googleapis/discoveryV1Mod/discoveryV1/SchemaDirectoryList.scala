@@ -1,6 +1,6 @@
 package typings.googleapis.discoveryV1Mod.discoveryV1
 
-import typings.googleapis.AnonDiscoveryLink
+import typings.googleapis.anon.DiscoveryLink
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait SchemaDirectoryList extends js.Object {
   /**
     * The individual directory entries. One entry per api/version pair.
     */
-  var items: js.UndefOr[js.Array[AnonDiscoveryLink]] = js.native
+  var items: js.UndefOr[js.Array[DiscoveryLink]] = js.native
   /**
     * The kind for this response.
     */
@@ -23,7 +23,7 @@ trait SchemaDirectoryList extends js.Object {
 
 object SchemaDirectoryList {
   @scala.inline
-  def apply(discoveryVersion: String = null, items: js.Array[AnonDiscoveryLink] = null, kind: String = null): SchemaDirectoryList = {
+  def apply(discoveryVersion: String = null, items: js.Array[DiscoveryLink] = null, kind: String = null): SchemaDirectoryList = {
     val __obj = js.Dynamic.literal()
     if (discoveryVersion != null) __obj.updateDynamic("discoveryVersion")(discoveryVersion.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])

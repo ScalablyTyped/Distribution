@@ -34,7 +34,7 @@ object SchemaImageVersion {
   ): SchemaImageVersion = {
     val __obj = js.Dynamic.literal()
     if (imageVersionId != null) __obj.updateDynamic("imageVersionId")(imageVersionId.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.get.asInstanceOf[js.Any])
     if (supportedPythonVersions != null) __obj.updateDynamic("supportedPythonVersions")(supportedPythonVersions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaImageVersion]
   }

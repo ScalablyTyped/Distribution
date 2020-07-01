@@ -12,7 +12,6 @@ trait ByRoleOptions extends MatcherOptions {
     * If true includes elements in the query set that are usually excluded from
     * the accessibility tree. `role="none"` or `role="presentation"` are included
     * in either case.
-    * @default false
     */
   var hidden: js.UndefOr[Boolean] = js.undefined
   /**
@@ -23,9 +22,14 @@ trait ByRoleOptions extends MatcherOptions {
   ] = js.undefined
   /**
     * Includes every role used in the `role` attribute
-    * For example *ByRole('progressbar', {queryFallbacks: true})` will find <div role="meter progresbar">`.
+    * For example *ByRole('progressbar', {queryFallbacks: true})` will find <div role="meter progressbar">`.
     */
   var queryFallbacks: js.UndefOr[Boolean] = js.undefined
+  /**
+    * If true only includes elements in the query set that are marked as
+    * selected in the accessibility tree, i.e., `aria-selected="true"`
+    */
+  var selected: js.UndefOr[Boolean] = js.undefined
 }
 
 object ByRoleOptions {
@@ -37,6 +41,8 @@ object ByRoleOptions {
     name: String | RegExp | (js.Function2[/* accessibleName */ String, /* element */ Element, Boolean]) = null,
     normalizer: /* text */ String => String = null,
     queryFallbacks: js.UndefOr[Boolean] = js.undefined,
+    selected: js.UndefOr[Boolean] = js.undefined,
+    suggest: js.UndefOr[Boolean] = js.undefined,
     trim: js.UndefOr[Boolean] = js.undefined
   ): ByRoleOptions = {
     val __obj = js.Dynamic.literal()
@@ -46,6 +52,8 @@ object ByRoleOptions {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (normalizer != null) __obj.updateDynamic("normalizer")(js.Any.fromFunction1(normalizer))
     if (!js.isUndefined(queryFallbacks)) __obj.updateDynamic("queryFallbacks")(queryFallbacks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suggest)) __obj.updateDynamic("suggest")(suggest.get.asInstanceOf[js.Any])
     if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ByRoleOptions]
   }

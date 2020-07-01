@@ -11,7 +11,7 @@ trait SendMessageBatchRequestEntry extends js.Object {
     */
   var DelaySeconds: js.UndefOr[Integer] = js.native
   /**
-    * An identifier for a message in this batch used to communicate the result.  The Ids of a batch request need to be unique within a request This identifier can have up to 80 characters. The following characters are accepted: alphanumeric characters, hyphens(-), and underscores (_). 
+    * An identifier for a message in this batch used to communicate the result.  The Ids of a batch request need to be unique within a request. This identifier can have up to 80 characters. The following characters are accepted: alphanumeric characters, hyphens(-), and underscores (_). 
     */
   var Id: String = js.native
   /**
@@ -31,7 +31,7 @@ trait SendMessageBatchRequestEntry extends js.Object {
     */
   var MessageGroupId: js.UndefOr[String] = js.native
   /**
-    * The message system attribute to send Each message system attribute consists of a Name, Type, and Value.    Currently, the only supported message system attribute is AWSTraceHeader. Its type must be String and its value must be a correctly formatted AWS X-Ray trace string.   The size of a message system attribute doesn't count towards the total size of a message.   
+    * The message system attribute to send Each message system attribute consists of a Name, Type, and Value.    Currently, the only supported message system attribute is AWSTraceHeader. Its type must be String and its value must be a correctly formatted AWS X-Ray trace header string.   The size of a message system attribute doesn't count towards the total size of a message.   
     */
   var MessageSystemAttributes: js.UndefOr[MessageBodySystemAttributeMap] = js.native
 }

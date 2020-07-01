@@ -1,19 +1,18 @@
 package typings.vexdb.cacheMod
 
-import typings.vexdb.anon.Result
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CacheEntry[T] extends js.Object {
-  var expiry: Double
-  var value: Result[T]
+  var expires: Double
+  var value: APIResponse[T]
 }
 
 object CacheEntry {
   @scala.inline
-  def apply[T](expiry: Double, value: Result[T]): CacheEntry[T] = {
-    val __obj = js.Dynamic.literal(expiry = expiry.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  def apply[T](expires: Double, value: APIResponse[T]): CacheEntry[T] = {
+    val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheEntry[T]]
   }
 }

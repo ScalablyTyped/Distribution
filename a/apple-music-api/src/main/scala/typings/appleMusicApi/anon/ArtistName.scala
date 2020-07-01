@@ -1,6 +1,5 @@
 package typings.appleMusicApi.anon
 
-import typings.appleMusicApi.AppleMusicApi.Artwork
 import typings.appleMusicApi.AppleMusicApi.PlayParameters
 import typings.appleMusicApi.appleMusicApiStrings.clean
 import typings.appleMusicApi.appleMusicApiStrings.explicit
@@ -14,7 +13,7 @@ trait ArtistName extends js.Object {
   // actually return this attribute for the example I picked and the description of the field references music videos, further increasingly the likelihood that it's just a typo):
   var albumName: js.UndefOr[String] = js.undefined
   var artistName: String
-  var artwork: js.UndefOr[Artwork] = js.undefined
+  var artwork: js.UndefOr[typings.appleMusicApi.AppleMusicApi.Artwork] = js.undefined
   var contentRating: js.UndefOr[clean | explicit] = js.undefined
   var copyright: js.UndefOr[String] = js.undefined
   var editorialNotes: js.UndefOr[typings.appleMusicApi.AppleMusicApi.EditorialNotes] = js.undefined
@@ -46,7 +45,7 @@ object ArtistName {
     trackCount: Double,
     url: String,
     albumName: String = null,
-    artwork: Artwork = null,
+    artwork: typings.appleMusicApi.AppleMusicApi.Artwork = null,
     contentRating: clean | explicit = null,
     copyright: String = null,
     editorialNotes: typings.appleMusicApi.AppleMusicApi.EditorialNotes = null,

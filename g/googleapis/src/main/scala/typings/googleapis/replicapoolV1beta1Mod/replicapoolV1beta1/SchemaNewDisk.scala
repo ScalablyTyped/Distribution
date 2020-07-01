@@ -41,8 +41,8 @@ object SchemaNewDisk {
   ): SchemaNewDisk = {
     val __obj = js.Dynamic.literal()
     if (attachment != null) __obj.updateDynamic("attachment")(attachment.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoDelete)) __obj.updateDynamic("autoDelete")(autoDelete.asInstanceOf[js.Any])
-    if (!js.isUndefined(boot)) __obj.updateDynamic("boot")(boot.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDelete)) __obj.updateDynamic("autoDelete")(autoDelete.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(boot)) __obj.updateDynamic("boot")(boot.get.asInstanceOf[js.Any])
     if (initializeParams != null) __obj.updateDynamic("initializeParams")(initializeParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNewDisk]
   }

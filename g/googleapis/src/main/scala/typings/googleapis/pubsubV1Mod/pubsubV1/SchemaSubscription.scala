@@ -92,7 +92,7 @@ trait SchemaSubscription extends js.Object {
 object SchemaSubscription {
   @scala.inline
   def apply(
-    ackDeadlineSeconds: Int | Double = null,
+    ackDeadlineSeconds: js.UndefOr[Double] = js.undefined,
     expirationPolicy: SchemaExpirationPolicy = null,
     labels: StringDictionary[String] = null,
     messageRetentionDuration: String = null,
@@ -102,13 +102,13 @@ object SchemaSubscription {
     topic: String = null
   ): SchemaSubscription = {
     val __obj = js.Dynamic.literal()
-    if (ackDeadlineSeconds != null) __obj.updateDynamic("ackDeadlineSeconds")(ackDeadlineSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(ackDeadlineSeconds)) __obj.updateDynamic("ackDeadlineSeconds")(ackDeadlineSeconds.get.asInstanceOf[js.Any])
     if (expirationPolicy != null) __obj.updateDynamic("expirationPolicy")(expirationPolicy.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (messageRetentionDuration != null) __obj.updateDynamic("messageRetentionDuration")(messageRetentionDuration.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (pushConfig != null) __obj.updateDynamic("pushConfig")(pushConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(retainAckedMessages)) __obj.updateDynamic("retainAckedMessages")(retainAckedMessages.asInstanceOf[js.Any])
+    if (!js.isUndefined(retainAckedMessages)) __obj.updateDynamic("retainAckedMessages")(retainAckedMessages.get.asInstanceOf[js.Any])
     if (topic != null) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSubscription]
   }

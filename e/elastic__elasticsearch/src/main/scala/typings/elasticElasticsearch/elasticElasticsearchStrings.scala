@@ -9,6 +9,9 @@ object elasticElasticsearchStrings {
   sealed trait AND extends js.Object
   
   @js.native
+  sealed trait MsearchHelper extends js.Object
+  
+  @js.native
   sealed trait OR extends js.Object
   
   @js.native
@@ -223,6 +226,8 @@ object elasticElasticsearchStrings {
   
   @scala.inline
   def AND: AND = "AND".asInstanceOf[AND]
+  @scala.inline
+  def MsearchHelper: MsearchHelper = "MsearchHelper".asInstanceOf[MsearchHelper]
   @scala.inline
   def OR: OR = "OR".asInstanceOf[OR]
   @scala.inline

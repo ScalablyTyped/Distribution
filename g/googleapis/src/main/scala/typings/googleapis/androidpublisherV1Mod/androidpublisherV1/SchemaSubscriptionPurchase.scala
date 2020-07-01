@@ -41,7 +41,7 @@ object SchemaSubscriptionPurchase {
     validUntilTimestampMsec: String = null
   ): SchemaSubscriptionPurchase = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoRenewing)) __obj.updateDynamic("autoRenewing")(autoRenewing.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoRenewing)) __obj.updateDynamic("autoRenewing")(autoRenewing.get.asInstanceOf[js.Any])
     if (initiationTimestampMsec != null) __obj.updateDynamic("initiationTimestampMsec")(initiationTimestampMsec.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (validUntilTimestampMsec != null) __obj.updateDynamic("validUntilTimestampMsec")(validUntilTimestampMsec.asInstanceOf[js.Any])

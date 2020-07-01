@@ -26,7 +26,7 @@ trait StringConfigOptions[K /* <: String */] extends js.Object {
 
 object StringConfigOptions {
   @scala.inline
-  def apply[K](
+  def apply[/* <: java.lang.String */ K](
     allowedValues: js.Array[K] = null,
     maxLength: js.UndefOr[Double] = js.undefined,
     minLength: js.UndefOr[Double] = js.undefined,

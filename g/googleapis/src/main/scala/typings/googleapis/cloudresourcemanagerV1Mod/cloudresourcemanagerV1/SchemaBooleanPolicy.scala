@@ -45,7 +45,7 @@ object SchemaBooleanPolicy {
   @scala.inline
   def apply(enforced: js.UndefOr[Boolean] = js.undefined): SchemaBooleanPolicy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enforced)) __obj.updateDynamic("enforced")(enforced.asInstanceOf[js.Any])
+    if (!js.isUndefined(enforced)) __obj.updateDynamic("enforced")(enforced.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBooleanPolicy]
   }
 }

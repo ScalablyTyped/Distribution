@@ -55,7 +55,7 @@ trait ChartEventsOptions extends js.Object {
     * - `point`: The originating point.
     *
     * - `points`: If a category label was clicked, this array holds all points
-    * corresponing to the category.
+    * corresponding to the category.
     *
     * - `seriesOptions`: Options for the new series.
     */

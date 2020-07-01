@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChannelTalkingStarted extends Event {
-  /* Properties */
+  /**
+    * The channel on which talking started.
+    */
   var channel: Channel
 }
 

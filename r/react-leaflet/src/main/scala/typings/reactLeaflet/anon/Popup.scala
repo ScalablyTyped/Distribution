@@ -11,7 +11,7 @@ trait Popup[E /* <: Popup_ */] extends js.Object {
 
 object Popup {
   @scala.inline
-  def apply[E](popup: E): Popup[E] = {
+  def apply[/* <: typings.leaflet.mod.Popup_ */ E](popup: E): Popup[E] = {
     val __obj = js.Dynamic.literal(popup = popup.asInstanceOf[js.Any])
     __obj.asInstanceOf[Popup[E]]
   }

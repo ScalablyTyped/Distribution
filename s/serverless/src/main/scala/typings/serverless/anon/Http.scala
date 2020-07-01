@@ -10,7 +10,7 @@ trait Http[T /* <: js.Object */] extends js.Object {
 
 object Http {
   @scala.inline
-  def apply[T](http: T | String): Http[T] = {
+  def apply[/* <: js.Object */ T](http: T | String): Http[T] = {
     val __obj = js.Dynamic.literal(http = http.asInstanceOf[js.Any])
     __obj.asInstanceOf[Http[T]]
   }

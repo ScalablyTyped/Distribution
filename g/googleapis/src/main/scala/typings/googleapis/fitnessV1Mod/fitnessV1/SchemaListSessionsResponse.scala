@@ -39,7 +39,7 @@ object SchemaListSessionsResponse {
   ): SchemaListSessionsResponse = {
     val __obj = js.Dynamic.literal()
     if (deletedSession != null) __obj.updateDynamic("deletedSession")(deletedSession.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasMoreData)) __obj.updateDynamic("hasMoreData")(hasMoreData.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasMoreData)) __obj.updateDynamic("hasMoreData")(hasMoreData.get.asInstanceOf[js.Any])
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListSessionsResponse]

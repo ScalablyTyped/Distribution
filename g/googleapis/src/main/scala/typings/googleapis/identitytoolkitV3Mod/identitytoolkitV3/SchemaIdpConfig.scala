@@ -41,15 +41,15 @@ object SchemaIdpConfig {
   def apply(
     clientId: String = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
-    experimentPercent: Int | Double = null,
+    experimentPercent: js.UndefOr[Double] = js.undefined,
     provider: String = null,
     secret: String = null,
     whitelistedAudiences: js.Array[String] = null
   ): SchemaIdpConfig = {
     val __obj = js.Dynamic.literal()
     if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (experimentPercent != null) __obj.updateDynamic("experimentPercent")(experimentPercent.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(experimentPercent)) __obj.updateDynamic("experimentPercent")(experimentPercent.get.asInstanceOf[js.Any])
     if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
     if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
     if (whitelistedAudiences != null) __obj.updateDynamic("whitelistedAudiences")(whitelistedAudiences.asInstanceOf[js.Any])

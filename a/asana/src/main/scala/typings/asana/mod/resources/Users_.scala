@@ -51,6 +51,9 @@ trait Users_ extends Resource {
   def findById(user: Double): typings.bluebird.mod.^[Type] = js.native
   def findById(user: Double, params: Params): typings.bluebird.mod.^[Type] = js.native
   def findById(user: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def findByWorkspace(workspace: String): typings.bluebird.mod.^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: String, params: Params): typings.bluebird.mod.^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   /**
     * * Returns the user records for all users in the specified workspace or
     * * organization.

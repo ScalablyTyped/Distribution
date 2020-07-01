@@ -168,7 +168,7 @@ trait PerAxisOptions extends js.Object {
     * be calculated automatically (e.g. [null, 30] to automatically calculate just the lower
     * bound)
     */
-  var valueRange: js.UndefOr[js.Array[Double]] = js.undefined
+  var valueRange: js.UndefOr[(js.Tuple2[Double | Null, Double | Null]) | Null] = js.undefined
 }
 
 object PerAxisOptions {
@@ -195,7 +195,7 @@ object PerAxisOptions {
     sigFigs: js.UndefOr[Double] = js.undefined,
     ticker: (/* min */ Double, /* max */ Double, /* pixels */ Double, /* opts */ js.Function1[/* name */ String, _], /* dygraph */ Dygraph, /* vals */ js.Array[Double]) => js.Array[Label] = null,
     valueFormatter: (/* v */ Double, /* opts */ js.Function1[/* name */ String, _], /* seriesName */ String, /* dygraph */ Dygraph, /* row */ Double, /* col */ Double) => _ = null,
-    valueRange: js.Array[Double] = null
+    valueRange: js.UndefOr[Null | (js.Tuple2[Double | Null, Double | Null])] = js.undefined
   ): PerAxisOptions = {
     val __obj = js.Dynamic.literal()
     if (axisLabelColor != null) __obj.updateDynamic("axisLabelColor")(axisLabelColor.asInstanceOf[js.Any])
@@ -219,7 +219,7 @@ object PerAxisOptions {
     if (!js.isUndefined(sigFigs)) __obj.updateDynamic("sigFigs")(sigFigs.get.asInstanceOf[js.Any])
     if (ticker != null) __obj.updateDynamic("ticker")(js.Any.fromFunction6(ticker))
     if (valueFormatter != null) __obj.updateDynamic("valueFormatter")(js.Any.fromFunction6(valueFormatter))
-    if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueRange)) __obj.updateDynamic("valueRange")(valueRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerAxisOptions]
   }
 }

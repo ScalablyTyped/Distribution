@@ -80,6 +80,7 @@ trait Log extends js.Object {
     *
     * @return The current logging level.
     */
+  def level(): String = js.native
   def level(lvl: String): String = js.native
   /**
     * Logs warning messages. Similar to `console.warn`.

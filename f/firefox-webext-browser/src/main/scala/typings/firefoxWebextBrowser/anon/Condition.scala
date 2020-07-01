@@ -11,7 +11,7 @@ trait Condition extends js.Object {
   var condition: js.UndefOr[WebExtensionManifestChromeSettingsOverridesSearchProviderParamsCondition] = js.undefined
   /** A url parameter name */
   var name: String
-  /** The preference to retreive the value from. */
+  /** The preference to retrieve the value from. */
   var pref: js.UndefOr[String] = js.undefined
   /** The context that initiates a search, required if condition is "purpose". */
   var purpose: js.UndefOr[WebExtensionManifestChromeSettingsOverridesSearchProviderParamsPurpose] = js.undefined

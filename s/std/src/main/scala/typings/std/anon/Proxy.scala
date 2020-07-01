@@ -11,7 +11,7 @@ trait Proxy[T /* <: js.Object */] extends js.Object {
 
 object Proxy {
   @scala.inline
-  def apply[T](proxy: T, revoke: () => Unit): Proxy[T] = {
+  def apply[/* <: js.Object */ T](proxy: T, revoke: () => Unit): Proxy[T] = {
     val __obj = js.Dynamic.literal(proxy = proxy.asInstanceOf[js.Any], revoke = js.Any.fromFunction0(revoke))
     __obj.asInstanceOf[Proxy[T]]
   }

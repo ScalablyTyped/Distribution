@@ -13,7 +13,7 @@ trait Register[T /* <: Entity */, TEngine] extends js.Object {
 
 object Register {
   @scala.inline
-  def apply[T, TEngine](register: (EntitySource[T, _], js.Any) => Adapter[TEngine]): Register[T, TEngine] = {
+  def apply[/* <: typings.frctlFractal.mod.fractal.core.entities.Entity */ T, TEngine](register: (EntitySource[T, _], js.Any) => Adapter[TEngine]): Register[T, TEngine] = {
     val __obj = js.Dynamic.literal(register = js.Any.fromFunction2(register))
     __obj.asInstanceOf[Register[T, TEngine]]
   }

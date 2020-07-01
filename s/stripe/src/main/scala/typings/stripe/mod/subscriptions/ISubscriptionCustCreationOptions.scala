@@ -1,5 +1,6 @@
 package typings.stripe.mod.subscriptions
 
+import typings.stripe.anon.Amountpercent
 import typings.stripe.mod.IDataOptionsWithMetadata
 import typings.stripe.mod.IOptionsMetadata
 import typings.stripe.mod.cards.ICardSourceCreationOptions
@@ -84,6 +85,10 @@ trait ISubscriptionCustCreationOptions extends IDataOptionsWithMetadata {
     */
   var tax_percent: js.UndefOr[Double] = js.undefined
   /**
+    * If specified, the funds from the subscription’s invoices will be transferred to the destination and the ID of the resulting transfers will be found on the resulting charges.
+    */
+  var transfer_data: js.UndefOr[Amountpercent] = js.undefined
+  /**
     * Unix timestamp representing the end of the trial period the customer will get before being charged for the first time. If set, trial_end
     * will override the default trial period of the plan the customer is being subscribed to. The special value now can be provided to end the
     * customer's trial immediately.
@@ -121,6 +126,7 @@ object ISubscriptionCustCreationOptions {
     prorate: js.UndefOr[Boolean] = js.undefined,
     quantity: js.UndefOr[Double] = js.undefined,
     tax_percent: js.UndefOr[Double] = js.undefined,
+    transfer_data: Amountpercent = null,
     trial_end: Double | now = null,
     trial_from_plan: js.UndefOr[Boolean] = js.undefined,
     trial_period_days: js.UndefOr[Double] = js.undefined
@@ -144,6 +150,7 @@ object ISubscriptionCustCreationOptions {
     if (!js.isUndefined(prorate)) __obj.updateDynamic("prorate")(prorate.get.asInstanceOf[js.Any])
     if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
     if (!js.isUndefined(tax_percent)) __obj.updateDynamic("tax_percent")(tax_percent.get.asInstanceOf[js.Any])
+    if (transfer_data != null) __obj.updateDynamic("transfer_data")(transfer_data.asInstanceOf[js.Any])
     if (trial_end != null) __obj.updateDynamic("trial_end")(trial_end.asInstanceOf[js.Any])
     if (!js.isUndefined(trial_from_plan)) __obj.updateDynamic("trial_from_plan")(trial_from_plan.get.asInstanceOf[js.Any])
     if (!js.isUndefined(trial_period_days)) __obj.updateDynamic("trial_period_days")(trial_period_days.get.asInstanceOf[js.Any])

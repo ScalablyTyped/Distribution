@@ -16,6 +16,9 @@ import scala.scalajs.js.annotation._
 
 object blueprintjsCoreStrings {
   @js.native
+  sealed trait ValidationMap extends js.Object
+  
+  @js.native
   sealed trait a extends js.Object
   
   @js.native
@@ -806,6 +809,8 @@ object blueprintjsCoreStrings {
   @js.native
   sealed trait yes extends js.Object
   
+  @scala.inline
+  def ValidationMap: ValidationMap = "ValidationMap".asInstanceOf[ValidationMap]
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline

@@ -12,7 +12,7 @@ trait LabelLine extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-funnel.emphasis.label
     */
-  var label: js.UndefOr[FontWeight] = js.undefined
+  var label: js.UndefOr[FontStyle] = js.undefined
   /**
     * @see https://echarts.apache.org/en/option.html#series-funnel.emphasis.labelLine
     */
@@ -21,7 +21,7 @@ trait LabelLine extends js.Object {
 
 object LabelLine {
   @scala.inline
-  def apply(itemStyle: BorderType = null, label: FontWeight = null, labelLine: Length = null): LabelLine = {
+  def apply(itemStyle: BorderType = null, label: FontStyle = null, labelLine: Length = null): LabelLine = {
     val __obj = js.Dynamic.literal()
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])

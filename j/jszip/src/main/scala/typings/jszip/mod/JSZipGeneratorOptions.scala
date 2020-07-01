@@ -27,7 +27,7 @@ trait JSZipGeneratorOptions[T /* <: OutputType */] extends js.Object {
 
 object JSZipGeneratorOptions {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.jszip.mod.OutputType */ T](
     comment: String = null,
     compression: Compression = null,
     compressionOptions: js.UndefOr[Null | Level] = js.undefined,

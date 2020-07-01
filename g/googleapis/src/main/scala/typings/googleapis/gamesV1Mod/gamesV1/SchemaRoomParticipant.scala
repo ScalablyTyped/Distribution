@@ -91,11 +91,11 @@ object SchemaRoomParticipant {
     status: String = null
   ): SchemaRoomParticipant = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoMatched)) __obj.updateDynamic("autoMatched")(autoMatched.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoMatched)) __obj.updateDynamic("autoMatched")(autoMatched.get.asInstanceOf[js.Any])
     if (autoMatchedPlayer != null) __obj.updateDynamic("autoMatchedPlayer")(autoMatchedPlayer.asInstanceOf[js.Any])
     if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
     if (clientAddress != null) __obj.updateDynamic("clientAddress")(clientAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(connected)) __obj.updateDynamic("connected")(connected.asInstanceOf[js.Any])
+    if (!js.isUndefined(connected)) __obj.updateDynamic("connected")(connected.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (leaveReason != null) __obj.updateDynamic("leaveReason")(leaveReason.asInstanceOf[js.Any])

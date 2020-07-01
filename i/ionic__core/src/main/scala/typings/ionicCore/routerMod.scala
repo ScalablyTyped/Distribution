@@ -1,5 +1,6 @@
 package typings.ionicCore
 
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.interfaceMod.RouterDirection
 import typings.ionicCore.interfaceMod.RouterEventDetail
 import typings.ionicCore.mod.BackButtonEvent
@@ -82,6 +83,7 @@ object routerMod extends js.Object {
       */
     def push(url: String): js.Promise[Boolean] = js.native
     def push(url: String, direction: RouterDirection): js.Promise[Boolean] = js.native
+    def push(url: String, direction: RouterDirection, animation: AnimationBuilder): js.Promise[Boolean] = js.native
   }
   
 }

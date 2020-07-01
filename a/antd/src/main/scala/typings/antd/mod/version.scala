@@ -1,12 +1,12 @@
 package typings.antd.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.antd.antdStrings.`4Dot2Dot4`
+import typings.antd.antdStrings.`4Dot4Dot0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("antd", "version")
 @js.native
-object version extends TopLevel[`4Dot2Dot4`]
+object version extends TopLevel[`4Dot4Dot0`]
 

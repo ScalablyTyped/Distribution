@@ -16,6 +16,15 @@ object Transforms extends js.Object {
   def eastNorthUpToFixedFrame(origin: Cartesian3): Matrix4 = js.native
   def eastNorthUpToFixedFrame(origin: Cartesian3, ellipsoid: Ellipsoid): Matrix4 = js.native
   def eastNorthUpToFixedFrame(origin: Cartesian3, ellipsoid: Ellipsoid, result: Matrix4): Matrix4 = js.native
+  def fixedFrameToHeadingPitchRoll(transform: Matrix4): HeadingPitchRoll = js.native
+  def fixedFrameToHeadingPitchRoll(transform: Matrix4, ellipsoid: Ellipsoid): HeadingPitchRoll = js.native
+  def fixedFrameToHeadingPitchRoll(transform: Matrix4, ellipsoid: Ellipsoid, fixedFrameTransform: LocalFrameToFixedFrame): HeadingPitchRoll = js.native
+  def fixedFrameToHeadingPitchRoll(
+    transform: Matrix4,
+    ellipsoid: Ellipsoid,
+    fixedFrameTransform: LocalFrameToFixedFrame,
+    result: HeadingPitchRoll
+  ): HeadingPitchRoll = js.native
   def headingPitchRollQuaternion(origin: Cartesian3, headingPitchRoll: HeadingPitchRoll): Quaternion = js.native
   def headingPitchRollQuaternion(origin: Cartesian3, headingPitchRoll: HeadingPitchRoll, ellipsoid: Ellipsoid): Quaternion = js.native
   def headingPitchRollQuaternion(

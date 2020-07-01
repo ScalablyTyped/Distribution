@@ -17,7 +17,7 @@ trait TypeofcontextualIdentitie extends js.Object {
     * Creates a contextual identity with the given data.
     * @param details Details about the contextual identity being created.
     */
-  def create(details: Color): js.Promise[typings.firefoxWebextBrowser.browser.contextualIdentities.ContextualIdentity]
+  def create(details: Icon): js.Promise[typings.firefoxWebextBrowser.browser.contextualIdentities.ContextualIdentity]
   /* contextualIdentities functions */
   /**
     * Retrieves information about a single contextual identity.
@@ -41,13 +41,13 @@ trait TypeofcontextualIdentitie extends js.Object {
     * @param cookieStoreId The ID of the contextual identity cookie store.
     * @param details Details about the contextual identity being created.
     */
-  def update(cookieStoreId: String, details: Icon): js.Promise[typings.firefoxWebextBrowser.browser.contextualIdentities.ContextualIdentity]
+  def update(cookieStoreId: String, details: ColorIcon): js.Promise[typings.firefoxWebextBrowser.browser.contextualIdentities.ContextualIdentity]
 }
 
 object TypeofcontextualIdentitie {
   @scala.inline
   def apply(
-    create: Color => js.Promise[typings.firefoxWebextBrowser.browser.contextualIdentities.ContextualIdentity],
+    create: Icon => js.Promise[typings.firefoxWebextBrowser.browser.contextualIdentities.ContextualIdentity],
     get: String => js.Promise[typings.firefoxWebextBrowser.browser.contextualIdentities.ContextualIdentity],
     onCreated: WebExtEvent[js.Function1[/* changeInfo */ ContextualIdentity, Unit]],
     onRemoved: WebExtEvent[js.Function1[/* changeInfo */ ContextualIdentity, Unit]],
@@ -56,7 +56,7 @@ object TypeofcontextualIdentitie {
       js.Array[typings.firefoxWebextBrowser.browser.contextualIdentities.ContextualIdentity]
     ],
     remove: String => js.Promise[typings.firefoxWebextBrowser.browser.contextualIdentities.ContextualIdentity],
-    update: (String, Icon) => js.Promise[typings.firefoxWebextBrowser.browser.contextualIdentities.ContextualIdentity]
+    update: (String, ColorIcon) => js.Promise[typings.firefoxWebextBrowser.browser.contextualIdentities.ContextualIdentity]
   ): TypeofcontextualIdentitie = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), onCreated = onCreated.asInstanceOf[js.Any], onRemoved = onRemoved.asInstanceOf[js.Any], onUpdated = onUpdated.asInstanceOf[js.Any], query = js.Any.fromFunction1(query), remove = js.Any.fromFunction1(remove), update = js.Any.fromFunction2(update))
     __obj.asInstanceOf[TypeofcontextualIdentitie]

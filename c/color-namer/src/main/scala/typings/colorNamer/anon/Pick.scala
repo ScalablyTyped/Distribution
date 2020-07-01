@@ -11,7 +11,7 @@ trait Pick[T /* <: Palette */] extends js.Object {
 
 object Pick {
   @scala.inline
-  def apply[T](pick: js.Array[T]): Pick[T] = {
+  def apply[/* <: typings.colorNamer.mod.Palette */ T](pick: js.Array[T]): Pick[T] = {
     val __obj = js.Dynamic.literal(pick = pick.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pick[T]]
   }

@@ -61,17 +61,17 @@ object SchemaRetryConfig {
   @scala.inline
   def apply(
     maxBackoffDuration: String = null,
-    maxDoublings: Int | Double = null,
+    maxDoublings: js.UndefOr[Double] = js.undefined,
     maxRetryDuration: String = null,
     minBackoffDuration: String = null,
-    retryCount: Int | Double = null
+    retryCount: js.UndefOr[Double] = js.undefined
   ): SchemaRetryConfig = {
     val __obj = js.Dynamic.literal()
     if (maxBackoffDuration != null) __obj.updateDynamic("maxBackoffDuration")(maxBackoffDuration.asInstanceOf[js.Any])
-    if (maxDoublings != null) __obj.updateDynamic("maxDoublings")(maxDoublings.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDoublings)) __obj.updateDynamic("maxDoublings")(maxDoublings.get.asInstanceOf[js.Any])
     if (maxRetryDuration != null) __obj.updateDynamic("maxRetryDuration")(maxRetryDuration.asInstanceOf[js.Any])
     if (minBackoffDuration != null) __obj.updateDynamic("minBackoffDuration")(minBackoffDuration.asInstanceOf[js.Any])
-    if (retryCount != null) __obj.updateDynamic("retryCount")(retryCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(retryCount)) __obj.updateDynamic("retryCount")(retryCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRetryConfig]
   }
 }

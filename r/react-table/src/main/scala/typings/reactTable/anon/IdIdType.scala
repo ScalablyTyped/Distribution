@@ -11,7 +11,7 @@ trait IdIdType[D /* <: js.Object */] extends js.Object {
 
 object IdIdType {
   @scala.inline
-  def apply[D](id: IdType[D]): IdIdType[D] = {
+  def apply[/* <: js.Object */ D](id: IdType[D]): IdIdType[D] = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdIdType[D]]
   }

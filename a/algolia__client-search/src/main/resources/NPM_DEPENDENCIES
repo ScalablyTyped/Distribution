@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@algolia/client-search" : "4.2.0"
+      "@algolia/client-search" : "4.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@algolia/client-search" : "4.2.0"
+      "@algolia/client-search" : "4.3.0"
     }
   ],
   "compile-devDependencies" : [

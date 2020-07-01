@@ -12,7 +12,7 @@ trait MatchResult[P /* <: js.Object */] extends Match_[P] {
 
 object MatchResult {
   @scala.inline
-  def apply[P](index: Double, params: P, path: String): MatchResult[P] = {
+  def apply[/* <: js.Object */ P](index: Double, params: P, path: String): MatchResult[P] = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchResult[P]]
   }

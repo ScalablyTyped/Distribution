@@ -13,7 +13,7 @@ trait ResponseCollection[T /* <: BaseResponse[scala.Nothing] */] extends js.Obje
 
 object ResponseCollection {
   @scala.inline
-  def apply[T](_embedded: Records[T], _links: Next): ResponseCollection[T] = {
+  def apply[/* <: typings.stellarSdk.horizonApiMod.Horizon.BaseResponse[scala.Nothing] */ T](_embedded: Records[T], _links: Next): ResponseCollection[T] = {
     val __obj = js.Dynamic.literal(_embedded = _embedded.asInstanceOf[js.Any], _links = _links.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseCollection[T]]
   }

@@ -48,6 +48,7 @@ trait GraphicsData extends js.Object {
   var `type`: Double
   /**
     * Destroys the Graphics data.
+    *
     */
   def destroy(): Unit
 }

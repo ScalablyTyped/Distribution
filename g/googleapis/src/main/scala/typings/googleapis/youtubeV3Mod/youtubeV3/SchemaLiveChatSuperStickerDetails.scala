@@ -36,14 +36,14 @@ object SchemaLiveChatSuperStickerDetails {
     amountMicros: String = null,
     currency: String = null,
     superStickerMetadata: SchemaSuperStickerMetadata = null,
-    tier: Int | Double = null
+    tier: js.UndefOr[Double] = js.undefined
   ): SchemaLiveChatSuperStickerDetails = {
     val __obj = js.Dynamic.literal()
     if (amountDisplayString != null) __obj.updateDynamic("amountDisplayString")(amountDisplayString.asInstanceOf[js.Any])
     if (amountMicros != null) __obj.updateDynamic("amountMicros")(amountMicros.asInstanceOf[js.Any])
     if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (superStickerMetadata != null) __obj.updateDynamic("superStickerMetadata")(superStickerMetadata.asInstanceOf[js.Any])
-    if (tier != null) __obj.updateDynamic("tier")(tier.asInstanceOf[js.Any])
+    if (!js.isUndefined(tier)) __obj.updateDynamic("tier")(tier.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLiveChatSuperStickerDetails]
   }
 }

@@ -2,12 +2,24 @@ package typings.tabulatorTables.Tabulator
 
 import typings.std.HTMLElement
 import typings.tabulatorTables.tabulatorTablesBooleans.`false`
+import typings.tabulatorTables.tabulatorTablesBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait RowComponent extends js.Object {
+  /**Add child rows to a data tree row
+    *
+    * The first argument should be a row data object. If you do not pass data for a column, it will be left empty. To create a blank row (ie for a user to fill in), pass an empty object to the function.
+    *
+    * The second argument is optional and determines whether the row is added to the top or bottom of the array of child rows. A value of true will add the row to the top of the array, a value of false will add the row to the bottom of the array. If the parameter is not set the row will be placed according to the addRowPos global option.
+    *
+    * If you want to add the row next to an existing row you can pass an optional third argument to the function that will position the new row next to the specified row (above or below based on the value of the second argument). This argument will take any of the standard row component look up options. This must be a row that has the same parent as the row you want to add
+    **/
+  def addTreeChild(rowData: js.Object): Unit = js.native
+  def addTreeChild(rowData: js.Object, position: Boolean): Unit = js.native
+  def addTreeChild(rowData: js.Object, position: Boolean, existingRow: RowComponent): Unit = js.native
   /** The delete function deletes the row, removing its data from the table
     *
     * The delete method returns a promise, this can be used to run any other commands that have to be run after the row has been deleted. By running them in the promise you ensure they are only run after the row has been deleted.
@@ -45,6 +57,8 @@ trait RowComponent extends js.Object {
   def getTreeChildren(): js.Array[RowComponent] = js.native
   /** When the tree structure is enabled the getTreeParent function will return the Row Component for the parent of this row. If no parent exists, a value of false will be returned. */
   def getTreeParent(): RowComponent | `false` = js.native
+  /**The isFrozen function on a Row Component will return a boolean representing the current frozen state of the row. */
+  def isFrozen(): Boolean = js.native
   /** The isSelected function will return a boolean representing the current selected state of the row. */
   def isSelected(): Boolean = js.native
   def move(lookup: Double): Unit = js.native
@@ -78,5 +92,9 @@ trait RowComponent extends js.Object {
   def unfreeze(): Unit = js.native
   /** You can update the data in the row using the update function. You should pass an object to the function containing any fields you wish to update. This object will not replace the row data, only the fields included in the object will be updated.*/
   def update(data: js.Object): js.Promise[Unit] = js.native
+  /**You can validate the whole table in one go by calling the validate method on the table instance.
+    *
+    This will return a value of true if every cell passes validation, if any cells fail, then it will return an array of Cell Components representing each cell in that row that has failed validation.     */
+  def validate(): `true` | js.Array[CellComponent] = js.native
 }
 

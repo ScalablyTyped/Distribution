@@ -1,8 +1,8 @@
 package typings.echarts.echarts.EChartOption.SeriesBar
 
 import typings.echarts.anon.BarBorderRadius
-import typings.echarts.anon.ExtraCssText
 import typings.echarts.anon.FontFamily
+import typings.echarts.echarts.EChartOption.BaseTooltip
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +32,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-bar.data.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
   /**
     * The value of a single data item.
     *
@@ -48,7 +48,7 @@ object DataObject {
     itemStyle: BarBorderRadius = null,
     label: FontFamily = null,
     name: String = null,
-    tooltip: ExtraCssText = null,
+    tooltip: BaseTooltip = null,
     value: js.UndefOr[Double] = js.undefined
   ): DataObject = {
     val __obj = js.Dynamic.literal()

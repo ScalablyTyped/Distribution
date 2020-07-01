@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SubDomain extends js.Object {
   /**
-    *  DNS record for the Subdomain. 
+    *  The DNS record for the subdomain. 
     */
   var dnsRecord: DNSRecord = js.native
   /**
-    *  Setting structure for the Subdomain. 
+    *  Describes the settings for the subdomain. 
     */
   var subDomainSetting: SubDomainSetting = js.native
   /**
-    *  Verified status of the Subdomain 
+    *  The verified status of the subdomain 
     */
   var verified: Verified = js.native
 }

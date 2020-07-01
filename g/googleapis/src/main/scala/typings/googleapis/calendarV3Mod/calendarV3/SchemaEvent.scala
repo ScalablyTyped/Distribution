@@ -1,10 +1,10 @@
 package typings.googleapis.calendarV3Mod.calendarV3
 
-import typings.googleapis.AnonDisplay
-import typings.googleapis.AnonOverrides
-import typings.googleapis.AnonPrivate
-import typings.googleapis.AnonSelf
-import typings.googleapis.AnonTitleUrl
+import typings.googleapis.anon.Display
+import typings.googleapis.anon.Overrides
+import typings.googleapis.anon.Private
+import typings.googleapis.anon.Self
+import typings.googleapis.anon.TitleUrl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,7 +55,7 @@ trait SchemaEvent extends js.Object {
   /**
     * The creator of the event. Read-only.
     */
-  var creator: js.UndefOr[AnonSelf] = js.native
+  var creator: js.UndefOr[Self] = js.native
   /**
     * Description of the event. Optional.
     */
@@ -78,11 +78,11 @@ trait SchemaEvent extends js.Object {
   /**
     * Extended properties of the event.
     */
-  var extendedProperties: js.UndefOr[AnonPrivate] = js.native
+  var extendedProperties: js.UndefOr[Private] = js.native
   /**
     * A gadget that extends this event.
     */
-  var gadget: js.UndefOr[AnonDisplay] = js.native
+  var gadget: js.UndefOr[Display] = js.native
   /**
     * Whether attendees other than the organizer can invite others to the
     * event. Optional. The default is True.
@@ -155,7 +155,7 @@ trait SchemaEvent extends js.Object {
     * to True. To change the organizer, use the move operation. Read-only,
     * except when importing an event.
     */
-  var organizer: js.UndefOr[AnonSelf] = js.native
+  var organizer: js.UndefOr[Self] = js.native
   /**
     * For an instance of a recurring event, this is the time at which this
     * event would start according to the recurrence data in the recurring event
@@ -186,7 +186,7 @@ trait SchemaEvent extends js.Object {
   /**
     * Information about the event&#39;s reminders for the authenticated user.
     */
-  var reminders: js.UndefOr[AnonOverrides] = js.native
+  var reminders: js.UndefOr[Overrides] = js.native
   /**
     * Sequence number as per iCalendar.
     */
@@ -196,7 +196,7 @@ trait SchemaEvent extends js.Object {
     * email message or any document identifiable by an URL with HTTP or HTTPS
     * scheme. Can only be seen or modified by the creator of the event.
     */
-  var source: js.UndefOr[AnonTitleUrl] = js.native
+  var source: js.UndefOr[TitleUrl] = js.native
   /**
     * The (inclusive) start time of the event. For a recurring event, this is
     * the start time of the first instance.
@@ -270,13 +270,13 @@ object SchemaEvent {
     colorId: String = null,
     conferenceData: SchemaConferenceData = null,
     created: String = null,
-    creator: AnonSelf = null,
+    creator: Self = null,
     description: String = null,
     end: SchemaEventDateTime = null,
     endTimeUnspecified: js.UndefOr[Boolean] = js.undefined,
     etag: String = null,
-    extendedProperties: AnonPrivate = null,
-    gadget: AnonDisplay = null,
+    extendedProperties: Private = null,
+    gadget: Display = null,
     guestsCanInviteOthers: js.UndefOr[Boolean] = js.undefined,
     guestsCanModify: js.UndefOr[Boolean] = js.undefined,
     guestsCanSeeOtherGuests: js.UndefOr[Boolean] = js.undefined,
@@ -287,14 +287,14 @@ object SchemaEvent {
     kind: String = null,
     location: String = null,
     locked: js.UndefOr[Boolean] = js.undefined,
-    organizer: AnonSelf = null,
+    organizer: Self = null,
     originalStartTime: SchemaEventDateTime = null,
     privateCopy: js.UndefOr[Boolean] = js.undefined,
     recurrence: js.Array[String] = null,
     recurringEventId: String = null,
-    reminders: AnonOverrides = null,
-    sequence: Int | Double = null,
-    source: AnonTitleUrl = null,
+    reminders: Overrides = null,
+    sequence: js.UndefOr[Double] = js.undefined,
+    source: TitleUrl = null,
     start: SchemaEventDateTime = null,
     status: String = null,
     summary: String = null,
@@ -303,37 +303,37 @@ object SchemaEvent {
     visibility: String = null
   ): SchemaEvent = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(anyoneCanAddSelf)) __obj.updateDynamic("anyoneCanAddSelf")(anyoneCanAddSelf.asInstanceOf[js.Any])
+    if (!js.isUndefined(anyoneCanAddSelf)) __obj.updateDynamic("anyoneCanAddSelf")(anyoneCanAddSelf.get.asInstanceOf[js.Any])
     if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
     if (attendees != null) __obj.updateDynamic("attendees")(attendees.asInstanceOf[js.Any])
-    if (!js.isUndefined(attendeesOmitted)) __obj.updateDynamic("attendeesOmitted")(attendeesOmitted.asInstanceOf[js.Any])
+    if (!js.isUndefined(attendeesOmitted)) __obj.updateDynamic("attendeesOmitted")(attendeesOmitted.get.asInstanceOf[js.Any])
     if (colorId != null) __obj.updateDynamic("colorId")(colorId.asInstanceOf[js.Any])
     if (conferenceData != null) __obj.updateDynamic("conferenceData")(conferenceData.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (creator != null) __obj.updateDynamic("creator")(creator.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (!js.isUndefined(endTimeUnspecified)) __obj.updateDynamic("endTimeUnspecified")(endTimeUnspecified.asInstanceOf[js.Any])
+    if (!js.isUndefined(endTimeUnspecified)) __obj.updateDynamic("endTimeUnspecified")(endTimeUnspecified.get.asInstanceOf[js.Any])
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
     if (extendedProperties != null) __obj.updateDynamic("extendedProperties")(extendedProperties.asInstanceOf[js.Any])
     if (gadget != null) __obj.updateDynamic("gadget")(gadget.asInstanceOf[js.Any])
-    if (!js.isUndefined(guestsCanInviteOthers)) __obj.updateDynamic("guestsCanInviteOthers")(guestsCanInviteOthers.asInstanceOf[js.Any])
-    if (!js.isUndefined(guestsCanModify)) __obj.updateDynamic("guestsCanModify")(guestsCanModify.asInstanceOf[js.Any])
-    if (!js.isUndefined(guestsCanSeeOtherGuests)) __obj.updateDynamic("guestsCanSeeOtherGuests")(guestsCanSeeOtherGuests.asInstanceOf[js.Any])
+    if (!js.isUndefined(guestsCanInviteOthers)) __obj.updateDynamic("guestsCanInviteOthers")(guestsCanInviteOthers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(guestsCanModify)) __obj.updateDynamic("guestsCanModify")(guestsCanModify.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(guestsCanSeeOtherGuests)) __obj.updateDynamic("guestsCanSeeOtherGuests")(guestsCanSeeOtherGuests.get.asInstanceOf[js.Any])
     if (hangoutLink != null) __obj.updateDynamic("hangoutLink")(hangoutLink.asInstanceOf[js.Any])
     if (htmlLink != null) __obj.updateDynamic("htmlLink")(htmlLink.asInstanceOf[js.Any])
     if (iCalUID != null) __obj.updateDynamic("iCalUID")(iCalUID.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.asInstanceOf[js.Any])
+    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.get.asInstanceOf[js.Any])
     if (organizer != null) __obj.updateDynamic("organizer")(organizer.asInstanceOf[js.Any])
     if (originalStartTime != null) __obj.updateDynamic("originalStartTime")(originalStartTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(privateCopy)) __obj.updateDynamic("privateCopy")(privateCopy.asInstanceOf[js.Any])
+    if (!js.isUndefined(privateCopy)) __obj.updateDynamic("privateCopy")(privateCopy.get.asInstanceOf[js.Any])
     if (recurrence != null) __obj.updateDynamic("recurrence")(recurrence.asInstanceOf[js.Any])
     if (recurringEventId != null) __obj.updateDynamic("recurringEventId")(recurringEventId.asInstanceOf[js.Any])
     if (reminders != null) __obj.updateDynamic("reminders")(reminders.asInstanceOf[js.Any])
-    if (sequence != null) __obj.updateDynamic("sequence")(sequence.asInstanceOf[js.Any])
+    if (!js.isUndefined(sequence)) __obj.updateDynamic("sequence")(sequence.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])

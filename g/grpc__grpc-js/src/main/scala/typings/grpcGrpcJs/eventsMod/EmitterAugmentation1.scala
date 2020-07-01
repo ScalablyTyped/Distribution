@@ -16,7 +16,7 @@ trait EmitterAugmentation1[Name /* <: String | js.Symbol */, Arg] extends js.Obj
 
 object EmitterAugmentation1 {
   @scala.inline
-  def apply[Name, Arg](
+  def apply[/* <: java.lang.String | js.Symbol */ Name, Arg](
     addListener: (Name, js.Function1[/* arg1 */ Arg, Unit]) => EmitterAugmentation1[Name, Arg],
     emit: (Name, Arg) => Boolean,
     on: (Name, js.Function1[/* arg1 */ Arg, Unit]) => EmitterAugmentation1[Name, Arg],

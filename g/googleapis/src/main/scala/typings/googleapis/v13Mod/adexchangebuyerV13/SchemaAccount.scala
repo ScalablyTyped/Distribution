@@ -1,6 +1,6 @@
 package typings.googleapis.v13Mod.adexchangebuyerV13
 
-import typings.googleapis.AnonMaximumQps
+import typings.googleapis.anon.MaximumQps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait SchemaAccount extends js.Object {
   /**
     * Your bidder locations that have distinct URLs.
     */
-  var bidderLocation: js.UndefOr[js.Array[AnonMaximumQps]] = js.native
+  var bidderLocation: js.UndefOr[js.Array[MaximumQps]] = js.native
   /**
     * The nid parameter value used in cookie match requests. Please contact
     * your technical account manager if you need to change this.
@@ -52,24 +52,24 @@ trait SchemaAccount extends js.Object {
 object SchemaAccount {
   @scala.inline
   def apply(
-    bidderLocation: js.Array[AnonMaximumQps] = null,
+    bidderLocation: js.Array[MaximumQps] = null,
     cookieMatchingNid: String = null,
     cookieMatchingUrl: String = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     kind: String = null,
-    maximumActiveCreatives: Int | Double = null,
-    maximumTotalQps: Int | Double = null,
-    numberActiveCreatives: Int | Double = null
+    maximumActiveCreatives: js.UndefOr[Double] = js.undefined,
+    maximumTotalQps: js.UndefOr[Double] = js.undefined,
+    numberActiveCreatives: js.UndefOr[Double] = js.undefined
   ): SchemaAccount = {
     val __obj = js.Dynamic.literal()
     if (bidderLocation != null) __obj.updateDynamic("bidderLocation")(bidderLocation.asInstanceOf[js.Any])
     if (cookieMatchingNid != null) __obj.updateDynamic("cookieMatchingNid")(cookieMatchingNid.asInstanceOf[js.Any])
     if (cookieMatchingUrl != null) __obj.updateDynamic("cookieMatchingUrl")(cookieMatchingUrl.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (maximumActiveCreatives != null) __obj.updateDynamic("maximumActiveCreatives")(maximumActiveCreatives.asInstanceOf[js.Any])
-    if (maximumTotalQps != null) __obj.updateDynamic("maximumTotalQps")(maximumTotalQps.asInstanceOf[js.Any])
-    if (numberActiveCreatives != null) __obj.updateDynamic("numberActiveCreatives")(numberActiveCreatives.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumActiveCreatives)) __obj.updateDynamic("maximumActiveCreatives")(maximumActiveCreatives.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumTotalQps)) __obj.updateDynamic("maximumTotalQps")(maximumTotalQps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberActiveCreatives)) __obj.updateDynamic("numberActiveCreatives")(numberActiveCreatives.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAccount]
   }
 }

@@ -72,7 +72,7 @@ trait Group[T /* <: SlickData */] extends NonDataRow {
 
 object Group {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.slickgrid.Slick.SlickData */ T](
     collapsed: Boolean,
     count: Double,
     equals: Group[T] => Boolean,

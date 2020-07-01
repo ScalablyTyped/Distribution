@@ -35,9 +35,9 @@ trait SchemaChildLink extends js.Object {
 
 object SchemaChildLink {
   @scala.inline
-  def apply(childIndex: Int | Double = null, `type`: String = null, variable: String = null): SchemaChildLink = {
+  def apply(childIndex: js.UndefOr[Double] = js.undefined, `type`: String = null, variable: String = null): SchemaChildLink = {
     val __obj = js.Dynamic.literal()
-    if (childIndex != null) __obj.updateDynamic("childIndex")(childIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(childIndex)) __obj.updateDynamic("childIndex")(childIndex.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (variable != null) __obj.updateDynamic("variable")(variable.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaChildLink]

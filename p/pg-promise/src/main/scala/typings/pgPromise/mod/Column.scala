@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 // API: http://vitaly-t.github.io/pg-promise/helpers.Column.html
 @JSImport("pg-promise", "Column")
 @js.native
-class Column protected () extends _QueryColumns {
+class Column[S] protected () extends js.Object {
   def this(col: String) = this()
-  def this(col: IColumnConfig) = this()
+  def this(col: IColumnConfig[S]) = this()
   val cast: String = js.native
   val castText: String = js.native
   val cnd: Boolean = js.native
@@ -20,8 +20,8 @@ class Column protected () extends _QueryColumns {
   // these are all read-only:
   val name: String = js.native
   val prop: String = js.native
-  def init(value: js.Any): js.Any = js.native
-  def skip(name: String): Boolean = js.native
+  def init(col: IColumnDescriptor[S]): js.Any = js.native
+  def skip(col: IColumnDescriptor[S]): Boolean = js.native
   def toString(level: Double): String = js.native
 }
 

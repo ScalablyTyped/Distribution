@@ -1,5 +1,8 @@
 package typings.tapable.mod
 
+import typings.tapable.tapableStrings.async
+import typings.tapable.tapableStrings.promise
+import typings.tapable.tapableStrings.sync
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +12,7 @@ import scala.scalajs.js.annotation._
 class Hook[TArg1, TArg2, TArg3, TTabResult, THookResult] () extends js.Object {
   def this(tapArgumentNames: js.Array[String]) = this()
   var interceptors: js.Array[HookInterceptor] = js.native
-  var taps: js.Array[_] = js.native
+  var taps: js.Array[Tap[TapType, TArg1, TArg2, TArg3, THookResult]] = js.native
   def call(): THookResult = js.native
   def call(arg1: TArg1): THookResult = js.native
   def call(arg1: TArg1, arg2: TArg2): THookResult = js.native
@@ -29,37 +32,40 @@ class Hook[TArg1, TArg2, TArg3, TTabResult, THookResult] () extends js.Object {
     name: String,
     fn: js.Function4[/* arg1 */ TArg1, /* arg2 */ TArg2, /* arg3 */ TArg3, /* repeated */ js.Any, TTabResult]
   ): Unit = js.native
-  def tap(
-    name: Tap,
+  def tapAsync(
+    name: String,
+    fn: js.Function4[/* arg1 */ TArg1, /* arg2 */ TArg2, /* arg3 */ TArg3, /* repeated */ js.Any, Unit]
+  ): Unit = js.native
+  @JSName("tapAsync")
+  def tapAsync_async(
+    name: TapOptions[async, TArg1, TArg2, TArg3, TTabResult],
+    fn: js.Function4[/* arg1 */ TArg1, /* arg2 */ TArg2, /* arg3 */ TArg3, /* repeated */ js.Any, Unit]
+  ): Unit = js.native
+  def tapPromise(
+    name: String,
+    fn: js.Function4[
+      /* arg1 */ TArg1, 
+      /* arg2 */ TArg2, 
+      /* arg3 */ TArg3, 
+      /* repeated */ js.Any, 
+      js.Promise[TTabResult]
+    ]
+  ): Unit = js.native
+  @JSName("tapPromise")
+  def tapPromise_promise(
+    name: TapOptions[promise, TArg1, TArg2, TArg3, TTabResult],
+    fn: js.Function4[
+      /* arg1 */ TArg1, 
+      /* arg2 */ TArg2, 
+      /* arg3 */ TArg3, 
+      /* repeated */ js.Any, 
+      js.Promise[TTabResult]
+    ]
+  ): Unit = js.native
+  @JSName("tap")
+  def tap_sync(
+    name: TapOptions[sync, TArg1, TArg2, TArg3, TTabResult],
     fn: js.Function4[/* arg1 */ TArg1, /* arg2 */ TArg2, /* arg3 */ TArg3, /* repeated */ js.Any, TTabResult]
-  ): Unit = js.native
-  def tapAsync(
-    name: String,
-    fn: js.Function4[/* arg1 */ TArg1, /* arg2 */ TArg2, /* arg3 */ TArg3, /* repeated */ js.Any, Unit]
-  ): Unit = js.native
-  def tapAsync(
-    name: Tap,
-    fn: js.Function4[/* arg1 */ TArg1, /* arg2 */ TArg2, /* arg3 */ TArg3, /* repeated */ js.Any, Unit]
-  ): Unit = js.native
-  def tapPromise(
-    name: String,
-    fn: js.Function4[
-      /* arg1 */ TArg1, 
-      /* arg2 */ TArg2, 
-      /* arg3 */ TArg3, 
-      /* repeated */ js.Any, 
-      js.Promise[TTabResult]
-    ]
-  ): Unit = js.native
-  def tapPromise(
-    name: Tap,
-    fn: js.Function4[
-      /* arg1 */ TArg1, 
-      /* arg2 */ TArg2, 
-      /* arg3 */ TArg3, 
-      /* repeated */ js.Any, 
-      js.Promise[TTabResult]
-    ]
   ): Unit = js.native
 }
 

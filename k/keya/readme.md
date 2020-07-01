@@ -1,7 +1,7 @@
 
 # Scala.js typings for keya
 
-Typings are for version 1.1.3
+Typings are for version 2.0.0
 
 ## Library description:
 A simple, universal document store

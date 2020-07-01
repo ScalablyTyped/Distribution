@@ -25,7 +25,7 @@ trait UpdateConfigurationProfileRequest extends js.Object {
   /**
     * The ARN of an IAM role with permission to access the configuration at the specified LocationUri.
     */
-  var RetrievalRoleArn: js.UndefOr[Arn] = js.native
+  var RetrievalRoleArn: js.UndefOr[RoleArn] = js.native
   /**
     * A list of methods for validating the configuration.
     */
@@ -39,7 +39,7 @@ object UpdateConfigurationProfileRequest {
     ConfigurationProfileId: Id,
     Description: Description = null,
     Name: Name = null,
-    RetrievalRoleArn: Arn = null,
+    RetrievalRoleArn: RoleArn = null,
     Validators: ValidatorList = null
   ): UpdateConfigurationProfileRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], ConfigurationProfileId = ConfigurationProfileId.asInstanceOf[js.Any])

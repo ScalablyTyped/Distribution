@@ -60,24 +60,24 @@ trait Matrix extends js.Object {
     * Get a new position with the current transformation applied.
     * Can be used to go from a child's coordinate space to the world coordinate space. (e.g. rendering)
     *
-    * @param {PIXI.Point} pos - The origin
+    * @param {PIXI.IPointData} pos - The origin
     * @param {PIXI.Point} [newPos] - The point that the new position is assigned to (allowed to be same as input)
     * @return {PIXI.Point} The new point, transformed through this matrix
     */
   @JSName("apply")
-  def apply(pos: Point): Point = js.native
+  def apply(pos: IPointData): Point = js.native
   @JSName("apply")
-  def apply(pos: Point, newPos: Point): Point = js.native
+  def apply(pos: IPointData, newPos: Point): Point = js.native
   /**
     * Get a new position with the inverse of the current transformation applied.
     * Can be used to go from the world coordinate space to a child's coordinate space. (e.g. input)
     *
-    * @param {PIXI.Point} pos - The origin
+    * @param {PIXI.IPointData} pos - The origin
     * @param {PIXI.Point} [newPos] - The point that the new position is assigned to (allowed to be same as input)
     * @return {PIXI.Point} The new point, inverse-transformed through this matrix
     */
-  def applyInverse(pos: Point): Point = js.native
-  def applyInverse(pos: Point, newPos: Point): Point = js.native
+  def applyInverse(pos: IPointData): Point = js.native
+  def applyInverse(pos: IPointData, newPos: Point): Point = js.native
   /**
     * Changes the values of the matrix to be the same as the ones in given matrix
     *
@@ -141,8 +141,8 @@ trait Matrix extends js.Object {
   /**
     * Applies a scale transformation to the matrix.
     *
-    * @param {number} x The amount to scale horizontally
-    * @param {number} y The amount to scale vertically
+    * @param {number} x - The amount to scale horizontally
+    * @param {number} y - The amount to scale vertically
     * @return {PIXI.Matrix} This matrix. Good for chaining method calls.
     */
   def scale(x: Double, y: Double): Matrix = js.native
@@ -196,8 +196,8 @@ trait Matrix extends js.Object {
   /**
     * Translates the matrix on the x and y.
     *
-    * @param {number} x How much to translate x by
-    * @param {number} y How much to translate y by
+    * @param {number} x - How much to translate x by
+    * @param {number} y - How much to translate y by
     * @return {PIXI.Matrix} This matrix. Good for chaining method calls.
     */
   def translate(x: Double, y: Double): Matrix = js.native

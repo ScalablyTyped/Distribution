@@ -32,7 +32,7 @@ trait UseSortByOptions[D /* <: js.Object */] extends js.Object {
 
 object UseSortByOptions {
   @scala.inline
-  def apply[D](
+  def apply[/* <: js.Object */ D](
     autoResetSortBy: js.UndefOr[Boolean] = js.undefined,
     defaultCanSort: js.UndefOr[Boolean] = js.undefined,
     disableMultiSort: js.UndefOr[Boolean] = js.undefined,

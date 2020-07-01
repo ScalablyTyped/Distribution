@@ -64,12 +64,12 @@ object ParamsResourceScoresListwindow {
     key: String = null,
     language: String = null,
     leaderboardId: String = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[Double] = js.undefined,
     oauth_token: String = null,
     pageToken: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
     quotaUser: String = null,
-    resultsAbove: Int | Double = null,
+    resultsAbove: js.UndefOr[Double] = js.undefined,
     returnTopIfAbsent: js.UndefOr[Boolean] = js.undefined,
     timeSpan: String = null,
     userIp: String = null
@@ -82,13 +82,13 @@ object ParamsResourceScoresListwindow {
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (leaderboardId != null) __obj.updateDynamic("leaderboardId")(leaderboardId.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (resultsAbove != null) __obj.updateDynamic("resultsAbove")(resultsAbove.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnTopIfAbsent)) __obj.updateDynamic("returnTopIfAbsent")(returnTopIfAbsent.asInstanceOf[js.Any])
+    if (!js.isUndefined(resultsAbove)) __obj.updateDynamic("resultsAbove")(resultsAbove.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnTopIfAbsent)) __obj.updateDynamic("returnTopIfAbsent")(returnTopIfAbsent.get.asInstanceOf[js.Any])
     if (timeSpan != null) __obj.updateDynamic("timeSpan")(timeSpan.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceScoresListwindow]

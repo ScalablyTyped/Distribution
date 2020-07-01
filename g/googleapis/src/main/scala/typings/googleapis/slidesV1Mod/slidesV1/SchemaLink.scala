@@ -35,13 +35,13 @@ object SchemaLink {
   def apply(
     pageObjectId: String = null,
     relativeLink: String = null,
-    slideIndex: Int | Double = null,
+    slideIndex: js.UndefOr[Double] = js.undefined,
     url: String = null
   ): SchemaLink = {
     val __obj = js.Dynamic.literal()
     if (pageObjectId != null) __obj.updateDynamic("pageObjectId")(pageObjectId.asInstanceOf[js.Any])
     if (relativeLink != null) __obj.updateDynamic("relativeLink")(relativeLink.asInstanceOf[js.Any])
-    if (slideIndex != null) __obj.updateDynamic("slideIndex")(slideIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(slideIndex)) __obj.updateDynamic("slideIndex")(slideIndex.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLink]
   }

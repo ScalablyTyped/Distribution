@@ -15,7 +15,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {[ K in keyof webdriver.WebDriver.Client ]: (args : std.Parameters<webdriver.WebDriver.Client[K]>): std.Promise<std.ReturnType<webdriver.WebDriver.Client[K]>>} */
+/* Inlined {[ K in keyof std.Pick<webdriver.WebDriver.Client, std.Exclude<keyof webdriver.WebDriver.Client, keyof webdriver.WebDriver.BaseClient>> ]: (args : std.Parameters<webdriver.WebDriver.Client[K]>): std.Promise<std.ReturnType<webdriver.WebDriver.Client[K]>>} */
 @js.native
 trait AsyncClient extends js.Object {
   @JSName("_getWindowSize")

@@ -17,16 +17,17 @@ trait CreateCard extends js.Object {
   var get: `810`
   var getCard: `811`
   var getColumn: `812`
-  var listCards: `813`
-  var listCollaborators: `814`
-  var listColumns: `815`
-  var listForOrg: `816`
-  var listForRepo: `817`
-  var listForUser: `818`
-  var moveCard: `819`
-  var moveColumn: `820`
-  var removeCollaborator: `821`
-  var reviewUserPermissionLevel: `822`
+  var getPermissionForUser: `813`
+  var listCards: `814`
+  var listCollaborators: `815`
+  var listColumns: `816`
+  var listForOrg: `817`
+  var listForRepo: `818`
+  var listForUser: `819`
+  var moveCard: `820`
+  var moveColumn: `821`
+  var removeCollaborator: `822`
+  var reviewUserPermissionLevel: `813`
   var update: `823`
   var updateCard: `824`
   var updateColumn: `825`
@@ -47,21 +48,22 @@ object CreateCard {
     get: `810`,
     getCard: `811`,
     getColumn: `812`,
-    listCards: `813`,
-    listCollaborators: `814`,
-    listColumns: `815`,
-    listForOrg: `816`,
-    listForRepo: `817`,
-    listForUser: `818`,
-    moveCard: `819`,
-    moveColumn: `820`,
-    removeCollaborator: `821`,
-    reviewUserPermissionLevel: `822`,
+    getPermissionForUser: `813`,
+    listCards: `814`,
+    listCollaborators: `815`,
+    listColumns: `816`,
+    listForOrg: `817`,
+    listForRepo: `818`,
+    listForUser: `819`,
+    moveCard: `820`,
+    moveColumn: `821`,
+    removeCollaborator: `822`,
+    reviewUserPermissionLevel: `813`,
     update: `823`,
     updateCard: `824`,
     updateColumn: `825`
   ): CreateCard = {
-    val __obj = js.Dynamic.literal(addCollaborator = addCollaborator.asInstanceOf[js.Any], createCard = createCard.asInstanceOf[js.Any], createColumn = createColumn.asInstanceOf[js.Any], createForAuthenticatedUser = createForAuthenticatedUser.asInstanceOf[js.Any], createForOrg = createForOrg.asInstanceOf[js.Any], createForRepo = createForRepo.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], deleteCard = deleteCard.asInstanceOf[js.Any], deleteColumn = deleteColumn.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], getCard = getCard.asInstanceOf[js.Any], getColumn = getColumn.asInstanceOf[js.Any], listCards = listCards.asInstanceOf[js.Any], listCollaborators = listCollaborators.asInstanceOf[js.Any], listColumns = listColumns.asInstanceOf[js.Any], listForOrg = listForOrg.asInstanceOf[js.Any], listForRepo = listForRepo.asInstanceOf[js.Any], listForUser = listForUser.asInstanceOf[js.Any], moveCard = moveCard.asInstanceOf[js.Any], moveColumn = moveColumn.asInstanceOf[js.Any], removeCollaborator = removeCollaborator.asInstanceOf[js.Any], reviewUserPermissionLevel = reviewUserPermissionLevel.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any], updateCard = updateCard.asInstanceOf[js.Any], updateColumn = updateColumn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addCollaborator = addCollaborator.asInstanceOf[js.Any], createCard = createCard.asInstanceOf[js.Any], createColumn = createColumn.asInstanceOf[js.Any], createForAuthenticatedUser = createForAuthenticatedUser.asInstanceOf[js.Any], createForOrg = createForOrg.asInstanceOf[js.Any], createForRepo = createForRepo.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], deleteCard = deleteCard.asInstanceOf[js.Any], deleteColumn = deleteColumn.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], getCard = getCard.asInstanceOf[js.Any], getColumn = getColumn.asInstanceOf[js.Any], getPermissionForUser = getPermissionForUser.asInstanceOf[js.Any], listCards = listCards.asInstanceOf[js.Any], listCollaborators = listCollaborators.asInstanceOf[js.Any], listColumns = listColumns.asInstanceOf[js.Any], listForOrg = listForOrg.asInstanceOf[js.Any], listForRepo = listForRepo.asInstanceOf[js.Any], listForUser = listForUser.asInstanceOf[js.Any], moveCard = moveCard.asInstanceOf[js.Any], moveColumn = moveColumn.asInstanceOf[js.Any], removeCollaborator = removeCollaborator.asInstanceOf[js.Any], reviewUserPermissionLevel = reviewUserPermissionLevel.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any], updateCard = updateCard.asInstanceOf[js.Any], updateColumn = updateColumn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCard]
   }
 }

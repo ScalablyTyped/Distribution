@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
-- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAssociationBase because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsDomainModel, name, `type`, owner, parent, remoteSourceDocument, remoteSourceDocumentQualifiedName, source */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AssociationBase")
+- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAssociationBase because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsDomainModel, name, `type`, owner, parent, remoteSourceDocument, remoteSourceDocumentQualifiedName, source, capabilities */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AssociationBase")
 @js.native
 abstract class AssociationBase protected ()
   extends Element
@@ -32,6 +32,13 @@ abstract class AssociationBase protected ()
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  /**
+    * This property is required and cannot be set to null.
+    *
+    * In version 8.11.0: introduced
+    */
+  @JSName("capabilities")
+  val capabilities_FAssociationBase: IAssociationCapabilities = js.native
   @JSName("containerAsDomainModel")
   val containerAsDomainModel_FAssociationBase: IDomainModel = js.native
   @JSName("model")
@@ -70,6 +77,11 @@ abstract class AssociationBase protected ()
   val source_FAssociationBase: IAssociationSource | Null = js.native
   @JSName("type")
   val type_FAssociationBase: AssociationType = js.native
+  /**
+    * In version 8.11.0: introduced
+    */
+  def capabilities: AssociationCapabilities = js.native
+  def capabilities(newValue: AssociationCapabilities): js.Any = js.native
   def containerAsDomainModel: DomainModel = js.native
   def dataStorageGuid: String = js.native
   def dataStorageGuid(newValue: String): js.Any = js.native

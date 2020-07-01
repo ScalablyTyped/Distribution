@@ -1,6 +1,7 @@
 package typings.firefoxWebextBrowser.anon
 
 import typings.firefoxWebextBrowser.WebExtEvent
+import typings.firefoxWebextBrowser.browser.pageAction.OnClickData
 import typings.firefoxWebextBrowser.browser.tabs.Tab
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait TypeofpageAction extends js.Object {
   /* pageAction events */
   /** Fired when a page action icon is clicked. This event will not fire if the page action has a popup. */
-  val onClicked: WebExtEvent[js.Function1[/* tab */ Tab, Unit]]
+  val onClicked: WebExtEvent[js.Function2[/* tab */ Tab, /* info */ js.UndefOr[OnClickData], Unit]]
   /** Gets the html document set as the popup for this page action. */
   def getPopup(details: TabIdNumber): js.Promise[String]
   /** Gets the title of the page action. */
@@ -32,7 +33,7 @@ trait TypeofpageAction extends js.Object {
   /** Sets the html document to be opened as a popup when the user clicks on the page action's icon. */
   def setPopup(details: PopupTabId): Unit
   /** Sets the title of the page action. This is displayed in a tooltip over the page action. */
-  def setTitle(details: TabIdTitle): Unit
+  def setTitle(details: Title): Unit
   /* pageAction functions */
   /**
     * Shows the page action. The page action is shown whenever the tab is selected.
@@ -48,11 +49,11 @@ object TypeofpageAction {
     getTitle: TabIdNumber => js.Promise[String],
     hide: Double => js.Promise[Unit],
     isShown: TabIdNumber => js.Promise[Boolean],
-    onClicked: WebExtEvent[js.Function1[/* tab */ Tab, Unit]],
+    onClicked: WebExtEvent[js.Function2[/* tab */ Tab, /* info */ js.UndefOr[OnClickData], Unit]],
     openPopup: () => js.Promise[Unit],
     setIcon: Path => js.Promise[Unit],
     setPopup: PopupTabId => Unit,
-    setTitle: TabIdTitle => Unit,
+    setTitle: Title => Unit,
     show: Double => js.Promise[Unit]
   ): TypeofpageAction = {
     val __obj = js.Dynamic.literal(getPopup = js.Any.fromFunction1(getPopup), getTitle = js.Any.fromFunction1(getTitle), hide = js.Any.fromFunction1(hide), isShown = js.Any.fromFunction1(isShown), onClicked = onClicked.asInstanceOf[js.Any], openPopup = js.Any.fromFunction0(openPopup), setIcon = js.Any.fromFunction1(setIcon), setPopup = js.Any.fromFunction1(setPopup), setTitle = js.Any.fromFunction1(setTitle), show = js.Any.fromFunction1(show))

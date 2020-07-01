@@ -28,10 +28,14 @@ trait SchemaLongRunningRecognizeMetadata extends js.Object {
 
 object SchemaLongRunningRecognizeMetadata {
   @scala.inline
-  def apply(lastUpdateTime: String = null, progressPercent: Int | Double = null, startTime: String = null): SchemaLongRunningRecognizeMetadata = {
+  def apply(
+    lastUpdateTime: String = null,
+    progressPercent: js.UndefOr[Double] = js.undefined,
+    startTime: String = null
+  ): SchemaLongRunningRecognizeMetadata = {
     val __obj = js.Dynamic.literal()
     if (lastUpdateTime != null) __obj.updateDynamic("lastUpdateTime")(lastUpdateTime.asInstanceOf[js.Any])
-    if (progressPercent != null) __obj.updateDynamic("progressPercent")(progressPercent.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressPercent)) __obj.updateDynamic("progressPercent")(progressPercent.get.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLongRunningRecognizeMetadata]
   }

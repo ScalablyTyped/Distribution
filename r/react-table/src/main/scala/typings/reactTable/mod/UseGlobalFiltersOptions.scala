@@ -22,7 +22,7 @@ trait UseGlobalFiltersOptions[D /* <: js.Object */] extends js.Object {
 
 object UseGlobalFiltersOptions {
   @scala.inline
-  def apply[D](
+  def apply[/* <: js.Object */ D](
     autoResetGlobalFilter: js.UndefOr[Boolean] = js.undefined,
     disableGlobalFilter: js.UndefOr[Boolean] = js.undefined,
     filterTypes: FilterTypes[D] = null,

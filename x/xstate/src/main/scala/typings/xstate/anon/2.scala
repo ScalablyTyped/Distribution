@@ -13,7 +13,7 @@ trait `2`[TEvent /* <: EventObject */] extends js.Object {
 
 object `2` {
   @scala.inline
-  def apply[TEvent](
+  def apply[/* <: typings.xstate.typesMod.EventObject */ TEvent](
     event: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | NullEvent | Asterisk
   ): `2`[TEvent] = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])

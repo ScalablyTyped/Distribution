@@ -9,6 +9,7 @@ trait Options[T] extends js.Object {
   var actionTransformer: js.UndefOr[js.Function1[/* action */ Action[_], _]] = js.undefined
   var breadcrumbCategory: js.UndefOr[String] = js.undefined
   var breadcrumbDataFromAction: js.UndefOr[js.Function1[/* action */ Action[_], _]] = js.undefined
+  var breadcrumbMessageFromAction: js.UndefOr[js.Function1[/* action */ Action[_], _]] = js.undefined
   var filterBreadcrumbActions: js.UndefOr[js.Function1[/* action */ Action[_], Boolean]] = js.undefined
   var getTags: js.UndefOr[
     js.Function1[
@@ -31,6 +32,7 @@ object Options {
     actionTransformer: /* action */ Action[_] => _ = null,
     breadcrumbCategory: String = null,
     breadcrumbDataFromAction: /* action */ Action[_] => _ = null,
+    breadcrumbMessageFromAction: /* action */ Action[_] => _ = null,
     filterBreadcrumbActions: /* action */ Action[_] => Boolean = null,
     getTags: /* state */ T => /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Sentry.Event * / any['tags'] */ js.Any = null,
     getUserContext: /* state */ T => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Sentry.User */ _ = null,
@@ -40,6 +42,7 @@ object Options {
     if (actionTransformer != null) __obj.updateDynamic("actionTransformer")(js.Any.fromFunction1(actionTransformer))
     if (breadcrumbCategory != null) __obj.updateDynamic("breadcrumbCategory")(breadcrumbCategory.asInstanceOf[js.Any])
     if (breadcrumbDataFromAction != null) __obj.updateDynamic("breadcrumbDataFromAction")(js.Any.fromFunction1(breadcrumbDataFromAction))
+    if (breadcrumbMessageFromAction != null) __obj.updateDynamic("breadcrumbMessageFromAction")(js.Any.fromFunction1(breadcrumbMessageFromAction))
     if (filterBreadcrumbActions != null) __obj.updateDynamic("filterBreadcrumbActions")(js.Any.fromFunction1(filterBreadcrumbActions))
     if (getTags != null) __obj.updateDynamic("getTags")(js.Any.fromFunction1(getTags))
     if (getUserContext != null) __obj.updateDynamic("getUserContext")(js.Any.fromFunction1(getUserContext))

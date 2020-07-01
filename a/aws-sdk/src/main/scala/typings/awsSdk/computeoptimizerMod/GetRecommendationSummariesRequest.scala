@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetRecommendationSummariesRequest extends js.Object {
   /**
-    * The AWS account IDs for which to return recommendation summaries. Only one account ID can be specified per request.
+    * The IDs of the AWS accounts for which to return recommendation summaries. If your account is the master account of an organization, use this parameter to specify the member accounts for which you want to return recommendation summaries. Only one account ID can be specified per request.
     */
   var accountIds: js.UndefOr[AccountIds] = js.native
   /**
-    * The maximum number of recommendation summaries to return with a single call. To retrieve the remaining results, make another call with the returned NextToken value.
+    * The maximum number of recommendation summaries to return with a single request. To retrieve the remaining results, make another request with the returned NextToken value.
     */
   var maxResults: js.UndefOr[MaxResults] = js.native
   /**

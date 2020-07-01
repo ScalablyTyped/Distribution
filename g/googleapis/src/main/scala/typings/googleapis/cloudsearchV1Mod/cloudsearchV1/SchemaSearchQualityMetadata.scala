@@ -19,9 +19,9 @@ trait SchemaSearchQualityMetadata extends js.Object {
 
 object SchemaSearchQualityMetadata {
   @scala.inline
-  def apply(quality: Int | Double = null): SchemaSearchQualityMetadata = {
+  def apply(quality: js.UndefOr[Double] = js.undefined): SchemaSearchQualityMetadata = {
     val __obj = js.Dynamic.literal()
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSearchQualityMetadata]
   }
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "dom-accessibility-api" : "0.4.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "dom-accessibility-api" : "0.4.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

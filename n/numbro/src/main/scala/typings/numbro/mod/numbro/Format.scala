@@ -16,7 +16,6 @@ import typings.numbro.numbroStrings.percent
 import typings.numbro.numbroStrings.postfix
 import typings.numbro.numbroStrings.prefix
 import typings.numbro.numbroStrings.sign
-import typings.numbro.numbroStrings.string
 import typings.numbro.numbroStrings.thousand
 import typings.numbro.numbroStrings.time
 import typings.numbro.numbroStrings.trillion
@@ -30,7 +29,7 @@ trait Format extends js.Object {
   var base: js.UndefOr[decimal | binary | general] = js.undefined
   var characteristic: js.UndefOr[Double] = js.undefined
   var currencyPosition: js.UndefOr[prefix | infix | postfix] = js.undefined
-  var currencySymbol: js.UndefOr[string] = js.undefined
+  var currencySymbol: js.UndefOr[String] = js.undefined
   var exponential: js.UndefOr[Boolean] = js.undefined
   var forceAverage: js.UndefOr[trillion | billion | million | thousand] = js.undefined
   var forceSign: js.UndefOr[Boolean] = js.undefined
@@ -42,6 +41,7 @@ trait Format extends js.Object {
   var postfix: js.UndefOr[String] = js.undefined
   var prefix: js.UndefOr[String] = js.undefined
   var prefixSymbol: js.UndefOr[Boolean] = js.undefined
+  var roundingFunction: js.UndefOr[js.Function1[/* num */ Double, Double]] = js.undefined
   var spaceSeparated: js.UndefOr[Boolean] = js.undefined
   var spaceSeparatedCurrency: js.UndefOr[Boolean] = js.undefined
   var thousandSeparated: js.UndefOr[Boolean] = js.undefined
@@ -57,7 +57,7 @@ object Format {
     base: decimal | binary | general = null,
     characteristic: js.UndefOr[Double] = js.undefined,
     currencyPosition: prefix | infix | postfix = null,
-    currencySymbol: string = null,
+    currencySymbol: String = null,
     exponential: js.UndefOr[Boolean] = js.undefined,
     forceAverage: trillion | billion | million | thousand = null,
     forceSign: js.UndefOr[Boolean] = js.undefined,
@@ -69,6 +69,7 @@ object Format {
     postfix: String = null,
     prefix: String = null,
     prefixSymbol: js.UndefOr[Boolean] = js.undefined,
+    roundingFunction: /* num */ Double => Double = null,
     spaceSeparated: js.UndefOr[Boolean] = js.undefined,
     spaceSeparatedCurrency: js.UndefOr[Boolean] = js.undefined,
     thousandSeparated: js.UndefOr[Boolean] = js.undefined,
@@ -93,6 +94,7 @@ object Format {
     if (postfix != null) __obj.updateDynamic("postfix")(postfix.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (!js.isUndefined(prefixSymbol)) __obj.updateDynamic("prefixSymbol")(prefixSymbol.get.asInstanceOf[js.Any])
+    if (roundingFunction != null) __obj.updateDynamic("roundingFunction")(js.Any.fromFunction1(roundingFunction))
     if (!js.isUndefined(spaceSeparated)) __obj.updateDynamic("spaceSeparated")(spaceSeparated.get.asInstanceOf[js.Any])
     if (!js.isUndefined(spaceSeparatedCurrency)) __obj.updateDynamic("spaceSeparatedCurrency")(spaceSeparatedCurrency.get.asInstanceOf[js.Any])
     if (!js.isUndefined(thousandSeparated)) __obj.updateDynamic("thousandSeparated")(thousandSeparated.get.asInstanceOf[js.Any])

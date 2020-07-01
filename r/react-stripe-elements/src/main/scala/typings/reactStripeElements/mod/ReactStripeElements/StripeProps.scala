@@ -34,6 +34,7 @@ trait StripeProps extends js.Object {
   var paymentRequest: js.Function1[/* options */ StripePaymentRequestOptions, StripePaymentRequest] = js.native
   var redirectToCheckout: js.Function1[/* options */ StripeClientCheckoutOptions, js.Promise[StripeRedirectResponse]] = js.native
   var retrievePaymentIntent: js.Function1[/* clientSecret */ String, js.Promise[PaymentIntentResponse]] = js.native
+  var retrieveSetupIntent: js.Function1[/* clientSecret */ String, js.Promise[SetupIntentResponse]] = js.native
   var retrieveSource: js.Function1[
     /* options */ RetrieveSourceOptions, 
     js.Promise[typings.stripeV3.stripe.SourceResponse]

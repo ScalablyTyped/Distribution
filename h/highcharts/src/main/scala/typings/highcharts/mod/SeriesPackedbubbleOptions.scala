@@ -143,6 +143,7 @@ object SeriesPackedbubbleOptions {
     navigatorOptions: PlotSeriesOptions = null,
     negativeColor: ColorString | GradientColorObject | PatternObject = null,
     opacity: js.UndefOr[Double] = js.undefined,
+    parentNode: PlotPackedbubbleParentNodeOptions = null,
     point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
     pointInterval: js.UndefOr[Double] = js.undefined,
@@ -230,6 +231,7 @@ object SeriesPackedbubbleOptions {
     if (navigatorOptions != null) __obj.updateDynamic("navigatorOptions")(navigatorOptions.asInstanceOf[js.Any])
     if (negativeColor != null) __obj.updateDynamic("negativeColor")(negativeColor.asInstanceOf[js.Any])
     if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (parentNode != null) __obj.updateDynamic("parentNode")(parentNode.asInstanceOf[js.Any])
     if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
     if (pointDescriptionFormatter != null) __obj.updateDynamic("pointDescriptionFormatter")(pointDescriptionFormatter.asInstanceOf[js.Any])
     if (!js.isUndefined(pointInterval)) __obj.updateDynamic("pointInterval")(pointInterval.get.asInstanceOf[js.Any])

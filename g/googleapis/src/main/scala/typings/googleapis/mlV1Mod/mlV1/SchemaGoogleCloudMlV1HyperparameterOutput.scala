@@ -56,7 +56,7 @@ object SchemaGoogleCloudMlV1HyperparameterOutput {
     if (builtInAlgorithmOutput != null) __obj.updateDynamic("builtInAlgorithmOutput")(builtInAlgorithmOutput.asInstanceOf[js.Any])
     if (finalMetric != null) __obj.updateDynamic("finalMetric")(finalMetric.asInstanceOf[js.Any])
     if (hyperparameters != null) __obj.updateDynamic("hyperparameters")(hyperparameters.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTrialStoppedEarly)) __obj.updateDynamic("isTrialStoppedEarly")(isTrialStoppedEarly.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTrialStoppedEarly)) __obj.updateDynamic("isTrialStoppedEarly")(isTrialStoppedEarly.get.asInstanceOf[js.Any])
     if (trialId != null) __obj.updateDynamic("trialId")(trialId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudMlV1HyperparameterOutput]
   }

@@ -93,7 +93,7 @@ object SchemaSpan {
   @scala.inline
   def apply(
     attributes: SchemaAttributes = null,
-    childSpanCount: Int | Double = null,
+    childSpanCount: js.UndefOr[Double] = js.undefined,
     displayName: SchemaTruncatableString = null,
     endTime: String = null,
     links: SchemaLinks = null,
@@ -108,13 +108,13 @@ object SchemaSpan {
   ): SchemaSpan = {
     val __obj = js.Dynamic.literal()
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (childSpanCount != null) __obj.updateDynamic("childSpanCount")(childSpanCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(childSpanCount)) __obj.updateDynamic("childSpanCount")(childSpanCount.get.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
     if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (parentSpanId != null) __obj.updateDynamic("parentSpanId")(parentSpanId.asInstanceOf[js.Any])
-    if (!js.isUndefined(sameProcessAsParentSpan)) __obj.updateDynamic("sameProcessAsParentSpan")(sameProcessAsParentSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(sameProcessAsParentSpan)) __obj.updateDynamic("sameProcessAsParentSpan")(sameProcessAsParentSpan.get.asInstanceOf[js.Any])
     if (spanId != null) __obj.updateDynamic("spanId")(spanId.asInstanceOf[js.Any])
     if (stackTrace != null) __obj.updateDynamic("stackTrace")(stackTrace.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])

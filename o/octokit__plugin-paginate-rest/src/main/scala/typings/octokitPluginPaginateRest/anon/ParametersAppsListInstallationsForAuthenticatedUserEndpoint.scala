@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 
 trait ParametersAppsListInstallationsForAuthenticatedUserEndpoint extends js.Object {
   var parameters: AppsListInstallationsForAuthenticatedUserEndpoint
-  var response: OctokitResponse[AppsListInstallationsForAuthenticatedUserResponseData] with `11`
+  var response: OctokitResponse[AppsListInstallationsForAuthenticatedUserResponseData] with `20`
 }
 
 object ParametersAppsListInstallationsForAuthenticatedUserEndpoint {
   @scala.inline
   def apply(
     parameters: AppsListInstallationsForAuthenticatedUserEndpoint,
-    response: OctokitResponse[AppsListInstallationsForAuthenticatedUserResponseData] with `11`
+    response: OctokitResponse[AppsListInstallationsForAuthenticatedUserResponseData] with `20`
   ): ParametersAppsListInstallationsForAuthenticatedUserEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersAppsListInstallationsForAuthenticatedUserEndpoint]

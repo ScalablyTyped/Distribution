@@ -27,7 +27,7 @@ trait Default[T /* <: Answers */] extends js.Object {
 
 object Default {
   @scala.inline
-  def apply[T](choices: ChoiceCollection[T], default: js.Any, message: String, `type`: String): Default[T] = {
+  def apply[/* <: typings.inquirer.mod.Answers */ T](choices: ChoiceCollection[T], default: js.Any, message: String, `type`: String): Default[T] = {
     val __obj = js.Dynamic.literal(choices = choices.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Default[T]]

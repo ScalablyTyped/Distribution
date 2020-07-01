@@ -47,7 +47,6 @@ object ContentControlType extends js.Object {
   sealed trait repeatingSection extends ContentControlType
   
   /**
-    *
     * Identifies a rich text content control.
     *
     */
@@ -61,7 +60,6 @@ object ContentControlType extends js.Object {
   sealed trait richTextParagraphs extends ContentControlType
   
   /**
-    *
     * Contains a whole table.
     *
     */
@@ -69,7 +67,6 @@ object ContentControlType extends js.Object {
   sealed trait richTextTable extends ContentControlType
   
   /**
-    *
     * Contains a whole cell.
     *
     */
@@ -77,7 +74,6 @@ object ContentControlType extends js.Object {
   sealed trait richTextTableCell extends ContentControlType
   
   /**
-    *
     * Contains a whole row.
     *
     */

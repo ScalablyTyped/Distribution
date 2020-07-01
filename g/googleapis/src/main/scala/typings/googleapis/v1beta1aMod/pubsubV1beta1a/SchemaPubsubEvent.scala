@@ -38,10 +38,10 @@ object SchemaPubsubEvent {
     truncated: js.UndefOr[Boolean] = js.undefined
   ): SchemaPubsubEvent = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
-    if (!js.isUndefined(truncated)) __obj.updateDynamic("truncated")(truncated.asInstanceOf[js.Any])
+    if (!js.isUndefined(truncated)) __obj.updateDynamic("truncated")(truncated.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPubsubEvent]
   }
 }

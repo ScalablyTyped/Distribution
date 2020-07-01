@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 
 trait ParametersTeamsListIdPGroupsInOrgEndpoint extends js.Object {
   var parameters: TeamsListIdPGroupsInOrgEndpoint
-  var response: OctokitResponse[TeamsListIdPGroupsInOrgResponseData] with `1`
+  var response: OctokitResponse[TeamsListIdPGroupsInOrgResponseData] with `3`
 }
 
 object ParametersTeamsListIdPGroupsInOrgEndpoint {
   @scala.inline
   def apply(
     parameters: TeamsListIdPGroupsInOrgEndpoint,
-    response: OctokitResponse[TeamsListIdPGroupsInOrgResponseData] with `1`
+    response: OctokitResponse[TeamsListIdPGroupsInOrgResponseData] with `3`
   ): ParametersTeamsListIdPGroupsInOrgEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersTeamsListIdPGroupsInOrgEndpoint]

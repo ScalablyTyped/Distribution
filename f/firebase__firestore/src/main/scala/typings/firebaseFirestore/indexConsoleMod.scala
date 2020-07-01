@@ -8,12 +8,11 @@ import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.Instantiable6
 import typings.firebaseAuthInteropTypes.mod.FirebaseAuthInternalName
 import typings.firebaseComponent.mod.Provider
+import typings.firebaseFirestore.apiDatabaseMod.FirestoreDatabase
 import typings.firebaseFirestore.byteStringMod.ByteString
 import typings.firebaseFirestore.componentProviderMod.ComponentProvider
-import typings.firebaseFirestore.databaseMod.FirestoreDatabase
 import typings.firebaseFirestore.documentKeyMod.DocumentKey
 import typings.firebaseFirestore.documentMod.Document
-import typings.firebaseFirestore.fieldValueMod.FieldValueImpl
 import typings.firebaseFirestore.mod.FirebaseApp
 import typings.firebaseFirestore.pathMod.ResourcePath
 import typings.firebaseFirestore.queryMod.Query
@@ -37,18 +36,18 @@ object indexConsoleMod extends js.Object {
   
   @js.native
   class DocumentReference[T] protected ()
-    extends typings.firebaseFirestore.databaseMod.DocumentReference[T] {
-    def this(_key: DocumentKey, firestore: typings.firebaseFirestore.databaseMod.Firestore) = this()
+    extends typings.firebaseFirestore.apiDatabaseMod.DocumentReference[T] {
+    def this(_key: DocumentKey, firestore: typings.firebaseFirestore.apiDatabaseMod.Firestore) = this()
     def this(
       _key: DocumentKey,
-      firestore: typings.firebaseFirestore.databaseMod.Firestore,
+      firestore: typings.firebaseFirestore.apiDatabaseMod.Firestore,
       _converter: FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls was tparam T */ _]
     ) = this()
   }
   
   @js.native
   class FieldPath protected ()
-    extends typings.firebaseFirestore.fieldPathMod.FieldPath {
+    extends typings.firebaseFirestore.apiFieldPathMod.FieldPath {
     /**
       * Creates a FieldPath from the provided field names. If more than one field
       * name is provided, the path will point to a nested field in a document.
@@ -60,11 +59,11 @@ object indexConsoleMod extends js.Object {
   
   @js.native
   class FieldValue ()
-    extends typings.firebaseFirestore.fieldValueMod.FieldValue
+    extends typings.firebaseFirestore.apiFieldValueMod.FieldValue
   
   @js.native
   class Firestore protected ()
-    extends typings.firebaseFirestore.databaseMod.Firestore {
+    extends typings.firebaseFirestore.apiDatabaseMod.Firestore {
     def this(databaseIdOrApp: FirestoreDatabase, authProvider: Provider[FirebaseAuthInternalName]) = this()
     def this(databaseIdOrApp: FirebaseApp, authProvider: Provider[FirebaseAuthInternalName]) = this()
     def this(
@@ -93,31 +92,25 @@ object indexConsoleMod extends js.Object {
   
   val CollectionReference: Instantiable3[
     /* _path */ ResourcePath, 
-    /* firestore */ typings.firebaseFirestore.databaseMod.Firestore, 
-    js.UndefOr[
-      /* _converter */ FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]
-    ], 
-    typings.firebaseFirestore.databaseMod.CollectionReference[js.Object]
+    /* firestore */ typings.firebaseFirestore.apiDatabaseMod.Firestore, 
+    /* _converter */ (FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]) | Null, 
+    typings.firebaseFirestore.apiDatabaseMod.CollectionReference[js.Object]
   ] = js.native
   val DocumentSnapshot: Instantiable6[
-    /* _firestore */ typings.firebaseFirestore.databaseMod.Firestore, 
+    /* _firestore */ typings.firebaseFirestore.apiDatabaseMod.Firestore, 
     /* _key */ DocumentKey, 
     /* _document */ Document | Null, 
     /* _fromCache */ Boolean, 
     /* _hasPendingWrites */ Boolean, 
-    js.UndefOr[
-      /* _converter */ FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]
-    ], 
-    typings.firebaseFirestore.databaseMod.DocumentSnapshot[js.Object]
+    /* _converter */ (FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]) | Null, 
+    typings.firebaseFirestore.apiDatabaseMod.DocumentSnapshot[js.Object]
   ] = js.native
   val QuerySnapshot: Instantiable4[
-    /* _firestore */ typings.firebaseFirestore.databaseMod.Firestore, 
+    /* _firestore */ typings.firebaseFirestore.apiDatabaseMod.Firestore, 
     /* _originalQuery */ Query, 
     /* _snapshot */ ViewSnapshot, 
-    js.UndefOr[
-      /* _converter */ FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]
-    ], 
-    typings.firebaseFirestore.databaseMod.QuerySnapshot[js.Object]
+    /* _converter */ (FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]) | Null, 
+    typings.firebaseFirestore.apiDatabaseMod.QuerySnapshot[js.Object]
   ] = js.native
   @js.native
   object Blob
@@ -130,21 +123,21 @@ object indexConsoleMod extends js.Object {
   object DocumentReference
     extends Instantiable2[
           /* _key */ DocumentKey, 
-          /* firestore */ typings.firebaseFirestore.databaseMod.Firestore, 
-          typings.firebaseFirestore.databaseMod.DocumentReference[js.Object]
+          /* firestore */ typings.firebaseFirestore.apiDatabaseMod.Firestore, 
+          typings.firebaseFirestore.apiDatabaseMod.DocumentReference[js.Object]
         ]
        with Instantiable3[
           /* _key */ DocumentKey, 
-          /* firestore */ typings.firebaseFirestore.databaseMod.Firestore, 
+          /* firestore */ typings.firebaseFirestore.apiDatabaseMod.Firestore, 
           /* _converter */ FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
-          typings.firebaseFirestore.databaseMod.DocumentReference[js.Object]
+          typings.firebaseFirestore.apiDatabaseMod.DocumentReference[js.Object]
         ] {
-    def forPath[U](path: ResourcePath, firestore: typings.firebaseFirestore.databaseMod.Firestore): typings.firebaseFirestore.databaseMod.DocumentReference[U] = js.native
+    def forPath[U](path: ResourcePath, firestore: typings.firebaseFirestore.apiDatabaseMod.Firestore): typings.firebaseFirestore.apiDatabaseMod.DocumentReference[U] = js.native
     def forPath[U](
       path: ResourcePath,
-      firestore: typings.firebaseFirestore.databaseMod.Firestore,
+      firestore: typings.firebaseFirestore.apiDatabaseMod.Firestore,
       converter: FirestoreDataConverter[U]
-    ): typings.firebaseFirestore.databaseMod.DocumentReference[U] = js.native
+    ): typings.firebaseFirestore.apiDatabaseMod.DocumentReference[U] = js.native
   }
   
   /* static members */
@@ -157,17 +150,17 @@ object indexConsoleMod extends js.Object {
       * effect is the same.
       */
     val _DOCUMENT_ID: js.Any = js.native
-    def documentId(): typings.firebaseFirestore.fieldPathMod.FieldPath = js.native
+    def documentId(): typings.firebaseFirestore.apiFieldPathMod.FieldPath = js.native
   }
   
   @js.native
   object FieldValue
-    extends Instantiable0[typings.firebaseFirestore.fieldValueMod.FieldValue] {
-    def arrayRemove(elements: js.Any*): FieldValueImpl = js.native
-    def arrayUnion(elements: js.Any*): FieldValueImpl = js.native
-    def delete(): FieldValueImpl = js.native
-    def increment(n: Double): FieldValueImpl = js.native
-    def serverTimestamp(): FieldValueImpl = js.native
+    extends Instantiable0[typings.firebaseFirestore.apiFieldValueMod.FieldValue] {
+    def arrayRemove(elements: js.Any*): typings.firebaseFirestoreTypes.mod.FieldValue = js.native
+    def arrayUnion(elements: js.Any*): typings.firebaseFirestoreTypes.mod.FieldValue = js.native
+    def delete(): typings.firebaseFirestoreTypes.mod.FieldValue = js.native
+    def increment(n: Double): typings.firebaseFirestoreTypes.mod.FieldValue = js.native
+    def serverTimestamp(): typings.firebaseFirestoreTypes.mod.FieldValue = js.native
   }
   
   /* static members */

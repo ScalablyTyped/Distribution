@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-mentions
 
-Typings are for version 1.1.0
+Typings are for version 1.3.0
 
 ## Library description:
 React Mentions

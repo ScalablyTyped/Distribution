@@ -21,6 +21,8 @@ trait RealtimeChannelCallbacks extends RealtimeChannelBase {
   def publish(messagesOrName: js.Any, messageDataOrCallback: js.Any, callback: errorCallback): Unit = js.native
   def publish(messagesOrName: js.Any, messageDataOrCallback: errorCallback): Unit = js.native
   def publish(messagesOrName: js.Any, messageDataOrCallback: errorCallback, callback: errorCallback): Unit = js.native
+  def setOptions(options: ChannelOptions): Unit = js.native
+  def setOptions(options: ChannelOptions, callback: errorCallback): Unit = js.native
   def subscribe(eventOrCallback: String): Unit = js.native
   def subscribe(eventOrCallback: String, listener: messageCallback[Message]): Unit = js.native
   def subscribe(

@@ -27,7 +27,7 @@ trait GatewayInfo extends js.Object {
     */
   var GatewayName: js.UndefOr[String] = js.native
   /**
-    * The state of the gateway. Valid Values: DISABLED or ACTIVE
+    * The state of the gateway. Valid Values: DISABLED | ACTIVE 
     */
   var GatewayOperationalState: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayOperationalState] = js.native
   /**

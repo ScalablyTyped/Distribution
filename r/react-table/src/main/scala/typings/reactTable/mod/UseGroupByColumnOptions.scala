@@ -15,7 +15,7 @@ trait UseGroupByColumnOptions[D /* <: js.Object */] extends js.Object {
 
 object UseGroupByColumnOptions {
   @scala.inline
-  def apply[D](
+  def apply[/* <: js.Object */ D](
     Aggregated: Renderer[CellProps[D, _]] = null,
     aggregate: Aggregator[D] = null,
     defaultCanGroupBy: js.UndefOr[Boolean] = js.undefined,

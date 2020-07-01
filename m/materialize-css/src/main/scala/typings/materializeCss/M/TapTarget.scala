@@ -1,11 +1,11 @@
 package typings.materializeCss.M
 
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TapTarget extends Component[TapTargetOptions] {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<TapTargetOptions> * / any */ trait TapTarget extends js.Object {
   /**
     * If the tap target is open
     */
@@ -22,15 +22,8 @@ trait TapTarget extends Component[TapTargetOptions] {
 
 object TapTarget {
   @scala.inline
-  def apply(
-    close: () => Unit,
-    destroy: () => Unit,
-    el: Element,
-    isOpen: Boolean,
-    open: () => Unit,
-    options: TapTargetOptions
-  ): TapTarget = {
-    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), destroy = js.Any.fromFunction0(destroy), el = el.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], open = js.Any.fromFunction0(open), options = options.asInstanceOf[js.Any])
+  def apply(close: () => Unit, isOpen: Boolean, open: () => Unit): TapTarget = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), isOpen = isOpen.asInstanceOf[js.Any], open = js.Any.fromFunction0(open))
     __obj.asInstanceOf[TapTarget]
   }
 }

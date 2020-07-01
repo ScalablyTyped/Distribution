@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ActivateGatewayInput extends js.Object {
   /**
-    * Your gateway activation key. You can obtain the activation key by sending an HTTP GET request with redirects enabled to the gateway IP address (port 80). The redirect URL returned in the response provides you the activation key for your gateway in the query string parameter activationKey. It may also include other activation-related parameters, however, these are merely defaults -- the arguments you pass to the ActivateGateway API call determine the actual configuration of your gateway.  For more information, see https://docs.aws.amazon.com/storagegateway/latest/userguide/get-activation-key.html in the Storage Gateway User Guide.
+    * Your gateway activation key. You can obtain the activation key by sending an HTTP GET request with redirects enabled to the gateway IP address (port 80). The redirect URL returned in the response provides you the activation key for your gateway in the query string parameter activationKey. It may also include other activation-related parameters, however, these are merely defaults -- the arguments you pass to the ActivateGateway API call determine the actual configuration of your gateway. For more information, see Getting activation key in the AWS Storage Gateway User Guide.
     */
   var ActivationKey: typings.awsSdk.storagegatewayMod.ActivationKey = js.native
   /**
@@ -15,7 +15,7 @@ trait ActivateGatewayInput extends js.Object {
     */
   var GatewayName: typings.awsSdk.storagegatewayMod.GatewayName = js.native
   /**
-    * A value that indicates the AWS Region where you want to store your data. The gateway AWS Region specified must be the same AWS Region as the AWS Region in your Host header in the request. For more information about available AWS Regions and endpoints for AWS Storage Gateway, see Regions and Endpoints in the Amazon Web Services Glossary.  Valid Values: See AWS Storage Gateway Regions and Endpoints in the AWS General Reference. 
+    * A value that indicates the AWS Region where you want to store your data. The gateway AWS Region specified must be the same AWS Region as the AWS Region in your Host header in the request. For more information about available AWS Regions and endpoints for AWS Storage Gateway, see AWS Storage Gateway endpoints and quotas in the AWS General Reference. Valid Values: See AWS Storage Gateway endpoints and quotas in the AWS General Reference. 
     */
   var GatewayRegion: RegionId = js.native
   /**
@@ -23,11 +23,11 @@ trait ActivateGatewayInput extends js.Object {
     */
   var GatewayTimezone: typings.awsSdk.storagegatewayMod.GatewayTimezone = js.native
   /**
-    * A value that defines the type of gateway to activate. The type specified is critical to all later functions of the gateway and cannot be changed after activation. The default value is CACHED.   Valid Values: "STORED", "CACHED", "VTL", "FILE_S3"
+    * A value that defines the type of gateway to activate. The type specified is critical to all later functions of the gateway and cannot be changed after activation. The default value is CACHED. Valid Values: STORED | CACHED | VTL | FILE_S3 
     */
   var GatewayType: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayType] = js.native
   /**
-    * The value that indicates the type of medium changer to use for tape gateway. This field is optional.  Valid Values: "STK-L700", "AWS-Gateway-VTL"
+    * The value that indicates the type of medium changer to use for tape gateway. This field is optional. Valid Values: STK-L700 | AWS-Gateway-VTL 
     */
   var MediumChangerType: js.UndefOr[typings.awsSdk.storagegatewayMod.MediumChangerType] = js.native
   /**
@@ -35,7 +35,7 @@ trait ActivateGatewayInput extends js.Object {
     */
   var Tags: js.UndefOr[typings.awsSdk.storagegatewayMod.Tags] = js.native
   /**
-    * The value that indicates the type of tape drive to use for tape gateway. This field is optional.  Valid Values: "IBM-ULT3580-TD5" 
+    * The value that indicates the type of tape drive to use for tape gateway. This field is optional. Valid Values: IBM-ULT3580-TD5 
     */
   var TapeDriveType: js.UndefOr[typings.awsSdk.storagegatewayMod.TapeDriveType] = js.native
 }

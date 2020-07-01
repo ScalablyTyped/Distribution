@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashSample extends js.Object {
+trait LodashSample extends LodashConvertible {
   def apply[T](): js.UndefOr[T] = js.native
   def apply[T /* <: js.Object */](collection: T): js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any

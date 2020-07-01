@@ -39,13 +39,13 @@ object SchemaGoogleCloudVisionV1p4beta1Word {
   @scala.inline
   def apply(
     boundingBox: SchemaGoogleCloudVisionV1p4beta1BoundingPoly = null,
-    confidence: Int | Double = null,
+    confidence: js.UndefOr[Double] = js.undefined,
     property: SchemaGoogleCloudVisionV1p4beta1TextAnnotationTextProperty = null,
     symbols: js.Array[SchemaGoogleCloudVisionV1p4beta1Symbol] = null
   ): SchemaGoogleCloudVisionV1p4beta1Word = {
     val __obj = js.Dynamic.literal()
     if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox.asInstanceOf[js.Any])
-    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     if (symbols != null) __obj.updateDynamic("symbols")(symbols.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p4beta1Word]

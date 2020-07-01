@@ -62,12 +62,12 @@ object secp256k1Mod extends js.Object {
       * @return a private key instance
       * @throws if the private key is not valid
       */
-    def fromHex(privateKeyHex: String): PrivateKey = js.native
+    def fromHex(privateKeyHex: String): Secp256k1PrivateKey = js.native
     /**
       * @return generates a random PrivateKey
       *
       */
-    def newRandom(): PrivateKey = js.native
+    def newRandom(): Secp256k1PrivateKey = js.native
   }
   
   /* static members */
@@ -80,9 +80,7 @@ object secp256k1Mod extends js.Object {
       * @return a public key instance
       * @throws if the public key is not valid
       */
-    def fromHex(publicKeyHex: String): PublicKey = js.native
-    /** Generate a new random public key */
-    def newRandom(): PublicKey = js.native
+    def fromHex(publicKeyHex: String): Secp256k1PublicKey = js.native
   }
   
 }

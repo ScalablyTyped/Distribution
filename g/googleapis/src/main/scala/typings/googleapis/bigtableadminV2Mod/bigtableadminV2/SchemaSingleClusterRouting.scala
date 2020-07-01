@@ -27,7 +27,7 @@ object SchemaSingleClusterRouting {
   @scala.inline
   def apply(allowTransactionalWrites: js.UndefOr[Boolean] = js.undefined, clusterId: String = null): SchemaSingleClusterRouting = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowTransactionalWrites)) __obj.updateDynamic("allowTransactionalWrites")(allowTransactionalWrites.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowTransactionalWrites)) __obj.updateDynamic("allowTransactionalWrites")(allowTransactionalWrites.get.asInstanceOf[js.Any])
     if (clusterId != null) __obj.updateDynamic("clusterId")(clusterId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSingleClusterRouting]
   }

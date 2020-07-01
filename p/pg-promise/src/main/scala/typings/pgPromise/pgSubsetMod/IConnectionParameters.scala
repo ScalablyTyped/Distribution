@@ -38,7 +38,7 @@ trait IConnectionParameters[C /* <: IClient */] extends js.Object {
 
 object IConnectionParameters {
   @scala.inline
-  def apply[C](
+  def apply[/* <: typings.pgPromise.pgSubsetMod.IClient */ C](
     Client: Instantiable1[/* config */ String | IConnectionParameters[IClient], C] = null,
     application_name: String = null,
     binary: js.UndefOr[Boolean] = js.undefined,

@@ -26,7 +26,7 @@ trait Props extends js.Object {
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   var styleInterpolator: StackHeaderStyleInterpolator
   def getFocusedRoute(): Route[String]
-  def getPreviousRoute(props: typings.reactNavigationStack.anon.Route): js.UndefOr[Route[String]]
+  def getPreviousScene(props: typings.reactNavigationStack.anon.Route): js.UndefOr[Scene[Route[String]]]
 }
 
 object Props {
@@ -34,7 +34,7 @@ object Props {
   def apply(
     gestureDirection: GestureDirection,
     getFocusedRoute: () => Route[String],
-    getPreviousRoute: typings.reactNavigationStack.anon.Route => js.UndefOr[Route[String]],
+    getPreviousScene: typings.reactNavigationStack.anon.Route => js.UndefOr[Scene[Route[String]]],
     insets: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EdgeInsets */ js.Any,
     layout: Layout,
     mode: float | screen,
@@ -43,7 +43,7 @@ object Props {
     onContentHeightChange: /* props */ Height => Unit = null,
     style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined
   ): Props = {
-    val __obj = js.Dynamic.literal(gestureDirection = gestureDirection.asInstanceOf[js.Any], getFocusedRoute = js.Any.fromFunction0(getFocusedRoute), getPreviousRoute = js.Any.fromFunction1(getPreviousRoute), insets = insets.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], scenes = scenes.asInstanceOf[js.Any], styleInterpolator = js.Any.fromFunction1(styleInterpolator))
+    val __obj = js.Dynamic.literal(gestureDirection = gestureDirection.asInstanceOf[js.Any], getFocusedRoute = js.Any.fromFunction0(getFocusedRoute), getPreviousScene = js.Any.fromFunction1(getPreviousScene), insets = insets.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], scenes = scenes.asInstanceOf[js.Any], styleInterpolator = js.Any.fromFunction1(styleInterpolator))
     if (onContentHeightChange != null) __obj.updateDynamic("onContentHeightChange")(js.Any.fromFunction1(onContentHeightChange))
     if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]

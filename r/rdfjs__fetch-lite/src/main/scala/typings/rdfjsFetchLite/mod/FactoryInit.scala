@@ -23,7 +23,7 @@ trait FactoryInit[D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQua
 
 object FactoryInit {
   @scala.inline
-  def apply[D, OutQuad, InQuad](
+  def apply[/* <: typings.rdfJs.mod.DatasetCore[OutQuad, InQuad] */ D, /* <: typings.rdfJs.mod.BaseQuad */ OutQuad, /* <: typings.rdfJs.mod.BaseQuad */ InQuad](
     factory: DatasetCoreFactory[OutQuad, InQuad, D],
     formats: PickparsersSinkMapEventEm,
     body: js.UndefOr[Null | BodyInit] = js.undefined,

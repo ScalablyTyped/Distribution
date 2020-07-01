@@ -50,7 +50,7 @@ object Pureish {
   }
   @scala.inline
   def RegExpLiteral_(
-    flags: js.Any,
+    flags: String,
     pattern: String,
     `type`: RegExpLiteral,
     end: Double = null.asInstanceOf[Double],

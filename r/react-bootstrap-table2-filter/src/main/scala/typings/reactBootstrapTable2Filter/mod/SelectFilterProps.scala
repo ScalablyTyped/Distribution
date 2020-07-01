@@ -26,7 +26,7 @@ trait SelectFilterProps[T /* <: js.Object */] extends js.Object {
 
 object SelectFilterProps {
   @scala.inline
-  def apply[T](
+  def apply[/* <: js.Object */ T](
     options: SelectFilterOptions | (js.Function1[/* column */ ColumnDescription[T, _], SelectFilterOptions]),
     className: String = null,
     comparator: Comparator = null,

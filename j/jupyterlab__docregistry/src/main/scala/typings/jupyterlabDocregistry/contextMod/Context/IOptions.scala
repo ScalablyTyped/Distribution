@@ -52,7 +52,7 @@ trait IOptions[T /* <: IModel */] extends js.Object {
 
 object IOptions {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel */ T](
     factory: IModelFactory[T],
     manager: IManager,
     path: String,

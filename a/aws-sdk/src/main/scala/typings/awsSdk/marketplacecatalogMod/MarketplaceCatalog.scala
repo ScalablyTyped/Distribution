@@ -78,12 +78,12 @@ trait MarketplaceCatalog extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListEntitiesResponse, Unit]
   ): Request[ListEntitiesResponse, AWSError] = js.native
   /**
-    * This operation allows you to request changes in your entities.
+    * This operation allows you to request changes for your entities. Within a single ChangeSet, you cannot start the same change type against the same entity multiple times. Additionally, when a ChangeSet is running, all the entities targeted by the different changes are locked until the ChangeSet has completed (either succeeded, cancelled, or failed). If you try to start a ChangeSet containing a change against an entity that is already locked, you will receive a ResourceInUseException. For example, you cannot start the ChangeSet described in the example below because it contains two changes to execute the same change type (AddRevisions) against the same entity (entity-id@1).
     */
   def startChangeSet(): Request[StartChangeSetResponse, AWSError] = js.native
   def startChangeSet(callback: js.Function2[/* err */ AWSError, /* data */ StartChangeSetResponse, Unit]): Request[StartChangeSetResponse, AWSError] = js.native
   /**
-    * This operation allows you to request changes in your entities.
+    * This operation allows you to request changes for your entities. Within a single ChangeSet, you cannot start the same change type against the same entity multiple times. Additionally, when a ChangeSet is running, all the entities targeted by the different changes are locked until the ChangeSet has completed (either succeeded, cancelled, or failed). If you try to start a ChangeSet containing a change against an entity that is already locked, you will receive a ResourceInUseException. For example, you cannot start the ChangeSet described in the example below because it contains two changes to execute the same change type (AddRevisions) against the same entity (entity-id@1).
     */
   def startChangeSet(params: StartChangeSetRequest): Request[StartChangeSetResponse, AWSError] = js.native
   def startChangeSet(

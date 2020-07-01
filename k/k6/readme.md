@@ -1,7 +1,7 @@
 
 # Scala.js typings for k6
 
-Typings are for version 0.25
+Typings are for version 0.26
 
 ## Library description:
 Dummy package for autocompleting k6 scripts.

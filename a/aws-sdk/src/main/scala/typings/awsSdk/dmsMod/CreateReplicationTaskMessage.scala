@@ -27,7 +27,7 @@ trait CreateReplicationTaskMessage extends js.Object {
     */
   var ReplicationInstanceArn: String = js.native
   /**
-    * An identifier for the replication task. Constraints:   Must contain from 1 to 255 alphanumeric characters or hyphens.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.  
+    * An identifier for the replication task. Constraints:   Must contain 1-255 alphanumeric characters or hyphens.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.  
     */
   var ReplicationTaskIdentifier: String = js.native
   /**
@@ -39,7 +39,7 @@ trait CreateReplicationTaskMessage extends js.Object {
     */
   var SourceEndpointArn: String = js.native
   /**
-    * The table mappings for the task, in JSON format. For more information, see Using Table Mapping to Specify Task Settings in the AWS Database Migration User Guide. 
+    * The table mappings for the task, in JSON format. For more information, see Using Table Mapping to Specify Task Settings in the AWS Database Migration Service User Guide. 
     */
   var TableMappings: String = js.native
   /**
@@ -51,7 +51,7 @@ trait CreateReplicationTaskMessage extends js.Object {
     */
   var TargetEndpointArn: String = js.native
   /**
-    * Supplemental information that the task requires to migrate the data for certain source and target endpoints. For more information, see Specifying Supplemental Data for Task Settings in the AWS Database Migration User Guide. 
+    * Supplemental information that the task requires to migrate the data for certain source and target endpoints. For more information, see Specifying Supplemental Data for Task Settings in the AWS Database Migration Service User Guide. 
     */
   var TaskData: js.UndefOr[String] = js.native
 }

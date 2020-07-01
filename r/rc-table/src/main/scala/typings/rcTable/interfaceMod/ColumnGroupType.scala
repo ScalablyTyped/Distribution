@@ -17,7 +17,7 @@ object ColumnGroupType {
     children: ColumnsType[RecordType],
     align: AlignType = null,
     className: String = null,
-    ellipsis: js.UndefOr[Boolean] = js.undefined,
+    ellipsis: CellEllipsisType = null,
     fixed: FixedType = null,
     key: Key = null,
     onHeaderCell: (/* import warning: importer.ImportType#apply Failed type conversion: rc-table.rc-table/lib/interface.ColumnsType<RecordType>[number] */ js.Any, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement] = null,
@@ -26,7 +26,7 @@ object ColumnGroupType {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(ellipsis)) __obj.updateDynamic("ellipsis")(ellipsis.get.asInstanceOf[js.Any])
+    if (ellipsis != null) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
     if (fixed != null) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (onHeaderCell != null) __obj.updateDynamic("onHeaderCell")(js.Any.fromFunction2(onHeaderCell))

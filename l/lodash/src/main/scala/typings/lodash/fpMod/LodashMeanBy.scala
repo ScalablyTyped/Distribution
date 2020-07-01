@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashMeanBy extends js.Object {
+trait LodashMeanBy extends LodashConvertible {
   def apply[T](iteratee: ValueIteratee[T]): LodashMeanBy1x1[T] = js.native
   def apply[T](iteratee: ValueIteratee[T], collection: List[T]): Double = js.native
   def apply[T](iteratee: __): LodashMeanBy1x2[T] = js.native

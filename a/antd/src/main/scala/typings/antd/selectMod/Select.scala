@@ -19,6 +19,8 @@ trait Select[ValueType /* <: SelectValue */]
   def blur(): Unit = js.native
   def focus(): Unit = js.native
   def getMode(): js.UndefOr[multiple | tags | SECRET_COMBOBOX_MODE_DO_NOT_USE | combobox] = js.native
-  def renderSelect(hasGetPopupContainerGetPrefixClsRenderEmptyDirection: ConfigConsumerProps): Element = js.native
+  def renderSelect(
+    hasGetPopupContainerGetPrefixClsRenderEmptyDirectionVirtualDropdownMatchSelectWidth: ConfigConsumerProps
+  ): Element = js.native
 }
 

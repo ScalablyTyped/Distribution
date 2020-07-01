@@ -13,9 +13,6 @@ object octokitTypesStrings {
   sealed trait `040000` extends js.Object
   
   @js.native
-  sealed trait `1` extends js.Object
-  
-  @js.native
   sealed trait `100644` extends js.Object
   
   @js.native
@@ -218,9 +215,6 @@ object octokitTypesStrings {
   
   @js.native
   sealed trait `DELETE SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_id` extends js.Object
-  
-  @js.native
-  sealed trait `DELETE SlashreposSlashColonownerSlashColonrepoSlashdownloadsSlashColondownload_id` extends js.Object
   
   @js.native
   sealed trait `DELETE SlashreposSlashColonownerSlashColonrepoSlashgitSlashrefsSlashColonref` extends js.Object
@@ -851,12 +845,6 @@ object octokitTypesStrings {
   
   @js.native
   sealed trait `GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatusesSlashColonstatus_id` extends js.Object
-  
-  @js.native
-  sealed trait `GET SlashreposSlashColonownerSlashColonrepoSlashdownloads` extends js.Object
-  
-  @js.native
-  sealed trait `GET SlashreposSlashColonownerSlashColonrepoSlashdownloadsSlashColondownload_id` extends js.Object
   
   @js.native
   sealed trait `GET SlashreposSlashColonownerSlashColonrepoSlashevents` extends js.Object
@@ -1894,15 +1882,6 @@ object octokitTypesStrings {
   sealed trait Plussign1 extends js.Object
   
   @js.native
-  sealed trait `Quotationmarkgh-pagesQuotationmark` extends js.Object
-  
-  @js.native
-  sealed trait `Quotationmarkmaster SlashdocsQuotationmark` extends js.Object
-  
-  @js.native
-  sealed trait QuotationmarkmasterQuotationmark extends js.Object
-  
-  @js.native
   sealed trait REQUEST_CHANGES extends js.Object
   
   @js.native
@@ -2516,12 +2495,6 @@ object octokitTypesStrings {
   
   @js.native
   sealed trait SlashreposSlashColonownerSlashColonrepoSlashdispatches extends js.Object
-  
-  @js.native
-  sealed trait SlashreposSlashColonownerSlashColonrepoSlashdownloads extends js.Object
-  
-  @js.native
-  sealed trait SlashreposSlashColonownerSlashColonrepoSlashdownloadsSlashColondownload_id extends js.Object
   
   @js.native
   sealed trait SlashreposSlashColonownerSlashColonrepoSlashevents extends js.Object
@@ -3283,6 +3256,9 @@ object octokitTypesStrings {
   sealed trait master extends js.Object
   
   @js.native
+  sealed trait `master Slashdocs` extends js.Object
+  
+  @js.native
   sealed trait member extends js.Object
   
   @js.native
@@ -3518,8 +3494,6 @@ object octokitTypesStrings {
   @scala.inline
   def `040000`: `040000` = "040000".asInstanceOf[`040000`]
   @scala.inline
-  def `1`: `1` = "1".asInstanceOf[`1`]
-  @scala.inline
   def `100644`: `100644` = "100644".asInstanceOf[`100644`]
   @scala.inline
   def `100755`: `100755` = "100755".asInstanceOf[`100755`]
@@ -3655,8 +3629,6 @@ object octokitTypesStrings {
   def `DELETE SlashreposSlashColonownerSlashColonrepoSlashcontentsSlashColonpath`: `DELETE SlashreposSlashColonownerSlashColonrepoSlashcontentsSlashColonpath` = ("DELETE /repos/:owner/:repo/contents/:path").asInstanceOf[`DELETE SlashreposSlashColonownerSlashColonrepoSlashcontentsSlashColonpath`]
   @scala.inline
   def `DELETE SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_id`: `DELETE SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_id` = ("DELETE /repos/:owner/:repo/deployments/:deployment_id").asInstanceOf[`DELETE SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_id`]
-  @scala.inline
-  def `DELETE SlashreposSlashColonownerSlashColonrepoSlashdownloadsSlashColondownload_id`: `DELETE SlashreposSlashColonownerSlashColonrepoSlashdownloadsSlashColondownload_id` = ("DELETE /repos/:owner/:repo/downloads/:download_id").asInstanceOf[`DELETE SlashreposSlashColonownerSlashColonrepoSlashdownloadsSlashColondownload_id`]
   @scala.inline
   def `DELETE SlashreposSlashColonownerSlashColonrepoSlashgitSlashrefsSlashColonref`: `DELETE SlashreposSlashColonownerSlashColonrepoSlashgitSlashrefsSlashColonref` = ("DELETE /repos/:owner/:repo/git/refs/:ref").asInstanceOf[`DELETE SlashreposSlashColonownerSlashColonrepoSlashgitSlashrefsSlashColonref`]
   @scala.inline
@@ -4077,10 +4049,6 @@ object octokitTypesStrings {
   def `GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses`: `GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses` = ("GET /repos/:owner/:repo/deployments/:deployment_id/statuses").asInstanceOf[`GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses`]
   @scala.inline
   def `GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatusesSlashColonstatus_id`: `GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatusesSlashColonstatus_id` = ("GET /repos/:owner/:repo/deployments/:deployment_id/statuses/:status_id").asInstanceOf[`GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatusesSlashColonstatus_id`]
-  @scala.inline
-  def `GET SlashreposSlashColonownerSlashColonrepoSlashdownloads`: `GET SlashreposSlashColonownerSlashColonrepoSlashdownloads` = ("GET /repos/:owner/:repo/downloads").asInstanceOf[`GET SlashreposSlashColonownerSlashColonrepoSlashdownloads`]
-  @scala.inline
-  def `GET SlashreposSlashColonownerSlashColonrepoSlashdownloadsSlashColondownload_id`: `GET SlashreposSlashColonownerSlashColonrepoSlashdownloadsSlashColondownload_id` = ("GET /repos/:owner/:repo/downloads/:download_id").asInstanceOf[`GET SlashreposSlashColonownerSlashColonrepoSlashdownloadsSlashColondownload_id`]
   @scala.inline
   def `GET SlashreposSlashColonownerSlashColonrepoSlashevents`: `GET SlashreposSlashColonownerSlashColonrepoSlashevents` = ("GET /repos/:owner/:repo/events").asInstanceOf[`GET SlashreposSlashColonownerSlashColonrepoSlashevents`]
   @scala.inline
@@ -4772,12 +4740,6 @@ object octokitTypesStrings {
   @scala.inline
   def Plussign1: Plussign1 = "+1".asInstanceOf[Plussign1]
   @scala.inline
-  def `Quotationmarkgh-pagesQuotationmark`: `Quotationmarkgh-pagesQuotationmark` = "\"gh-pages\"".asInstanceOf[`Quotationmarkgh-pagesQuotationmark`]
-  @scala.inline
-  def `Quotationmarkmaster SlashdocsQuotationmark`: `Quotationmarkmaster SlashdocsQuotationmark` = ("\"master /docs\"").asInstanceOf[`Quotationmarkmaster SlashdocsQuotationmark`]
-  @scala.inline
-  def QuotationmarkmasterQuotationmark: QuotationmarkmasterQuotationmark = "\"master\"".asInstanceOf[QuotationmarkmasterQuotationmark]
-  @scala.inline
   def REQUEST_CHANGES: REQUEST_CHANGES = "REQUEST_CHANGES".asInstanceOf[REQUEST_CHANGES]
   @scala.inline
   def RIGHT: RIGHT = "RIGHT".asInstanceOf[RIGHT]
@@ -5187,10 +5149,6 @@ object octokitTypesStrings {
   def SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatusesSlashColonstatus_id: SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatusesSlashColonstatus_id = "/repos/:owner/:repo/deployments/:deployment_id/statuses/:status_id".asInstanceOf[SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatusesSlashColonstatus_id]
   @scala.inline
   def SlashreposSlashColonownerSlashColonrepoSlashdispatches: SlashreposSlashColonownerSlashColonrepoSlashdispatches = "/repos/:owner/:repo/dispatches".asInstanceOf[SlashreposSlashColonownerSlashColonrepoSlashdispatches]
-  @scala.inline
-  def SlashreposSlashColonownerSlashColonrepoSlashdownloads: SlashreposSlashColonownerSlashColonrepoSlashdownloads = "/repos/:owner/:repo/downloads".asInstanceOf[SlashreposSlashColonownerSlashColonrepoSlashdownloads]
-  @scala.inline
-  def SlashreposSlashColonownerSlashColonrepoSlashdownloadsSlashColondownload_id: SlashreposSlashColonownerSlashColonrepoSlashdownloadsSlashColondownload_id = "/repos/:owner/:repo/downloads/:download_id".asInstanceOf[SlashreposSlashColonownerSlashColonrepoSlashdownloadsSlashColondownload_id]
   @scala.inline
   def SlashreposSlashColonownerSlashColonrepoSlashevents: SlashreposSlashColonownerSlashColonrepoSlashevents = "/repos/:owner/:repo/events".asInstanceOf[SlashreposSlashColonownerSlashColonrepoSlashevents]
   @scala.inline
@@ -5697,6 +5655,8 @@ object octokitTypesStrings {
   def markdown: markdown = "markdown".asInstanceOf[markdown]
   @scala.inline
   def master: master = "master".asInstanceOf[master]
+  @scala.inline
+  def `master Slashdocs`: `master Slashdocs` = ("master /docs").asInstanceOf[`master Slashdocs`]
   @scala.inline
   def member: member = "member".asInstanceOf[member]
   @scala.inline

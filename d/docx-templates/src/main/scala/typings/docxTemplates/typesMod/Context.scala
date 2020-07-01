@@ -12,6 +12,7 @@ trait Context extends js.Object {
   var fCmd: Boolean
   var fJump: Boolean
   var fSeekQuery: Boolean
+  var gCntIf: Double
   var htmlId: Double
   var htmls: Htmls
   var imageId: Double
@@ -39,6 +40,7 @@ object Context {
     fCmd: Boolean,
     fJump: Boolean,
     fSeekQuery: Boolean,
+    gCntIf: Double,
     htmlId: Double,
     htmls: Htmls,
     imageId: Double,
@@ -57,7 +59,7 @@ object Context {
     query: Query = null,
     textRunPropsNode: NonTextNode = null
   ): Context = {
-    val __obj = js.Dynamic.literal(buffers = buffers.asInstanceOf[js.Any], cmd = cmd.asInstanceOf[js.Any], fCmd = fCmd.asInstanceOf[js.Any], fJump = fJump.asInstanceOf[js.Any], fSeekQuery = fSeekQuery.asInstanceOf[js.Any], htmlId = htmlId.asInstanceOf[js.Any], htmls = htmls.asInstanceOf[js.Any], imageId = imageId.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], linkId = linkId.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], loops = loops.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], shorthands = shorthands.asInstanceOf[js.Any], vars = vars.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(buffers = buffers.asInstanceOf[js.Any], cmd = cmd.asInstanceOf[js.Any], fCmd = fCmd.asInstanceOf[js.Any], fJump = fJump.asInstanceOf[js.Any], fSeekQuery = fSeekQuery.asInstanceOf[js.Any], gCntIf = gCntIf.asInstanceOf[js.Any], htmlId = htmlId.asInstanceOf[js.Any], htmls = htmls.asInstanceOf[js.Any], imageId = imageId.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], linkId = linkId.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], loops = loops.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], shorthands = shorthands.asInstanceOf[js.Any], vars = vars.asInstanceOf[js.Any])
     if (jsSandbox != null) __obj.updateDynamic("jsSandbox")(jsSandbox.asInstanceOf[js.Any])
     if (pendingHtmlNode != null) __obj.updateDynamic("pendingHtmlNode")(pendingHtmlNode.asInstanceOf[js.Any])
     if (pendingImageNode != null) __obj.updateDynamic("pendingImageNode")(pendingImageNode.asInstanceOf[js.Any])

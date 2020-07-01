@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Omit<ant-design-pro.ant-design-pro/lib/Login/LoginItem.LoginItemProps, 'form' | 'type' | 'updateActive'> */
+/* Inlined antd.antd/lib/_util/type.Omit<ant-design-pro.ant-design-pro/lib/Login/LoginItem.LoginItemProps, 'form' | 'type' | 'updateActive'> */
 trait WrappedLoginItemProps extends js.Object {
   var buttonText: js.UndefOr[ReactNode] = js.undefined
   var countDown: js.UndefOr[Double] = js.undefined

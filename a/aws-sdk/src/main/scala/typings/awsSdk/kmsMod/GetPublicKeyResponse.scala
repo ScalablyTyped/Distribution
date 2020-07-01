@@ -15,7 +15,7 @@ trait GetPublicKeyResponse extends js.Object {
     */
   var EncryptionAlgorithms: js.UndefOr[EncryptionAlgorithmSpecList] = js.native
   /**
-    * The identifier of the asymmetric CMK from which the public key was downloaded.
+    * The Amazon Resource Name (key ARN) of the asymmetric CMK from which the public key was downloaded.
     */
   var KeyId: js.UndefOr[KeyIdType] = js.native
   /**

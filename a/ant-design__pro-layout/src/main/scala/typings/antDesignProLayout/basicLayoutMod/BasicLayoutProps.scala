@@ -5,9 +5,15 @@ import typings.antDesignProLayout.anon.Id
 import typings.antDesignProLayout.anon.MenuDataItemisUrlboolean
 import typings.antDesignProLayout.anon.Pathname
 import typings.antDesignProLayout.antDesignProLayoutBooleans.`false`
+import typings.antDesignProLayout.antDesignProLayoutStrings.lg
+import typings.antDesignProLayout.antDesignProLayoutStrings.md
 import typings.antDesignProLayout.antDesignProLayoutStrings.realDark
 import typings.antDesignProLayout.antDesignProLayoutStrings.sidemenu
+import typings.antDesignProLayout.antDesignProLayoutStrings.sm
 import typings.antDesignProLayout.antDesignProLayoutStrings.topmenu
+import typings.antDesignProLayout.antDesignProLayoutStrings.xl
+import typings.antDesignProLayout.antDesignProLayoutStrings.xs
+import typings.antDesignProLayout.antDesignProLayoutStrings.xxl
 import typings.antDesignProLayout.defaultSettingsMod.ContentWidth
 import typings.antDesignProLayout.getPageTitleMod.GetPageTitleProps
 import typings.antDesignProLayout.headerMod.HeaderViewProps
@@ -16,6 +22,8 @@ import typings.antDesignProLayout.siderMenuSiderMenuMod.SiderMenuProps
 import typings.antDesignProLayout.typingsMod.MenuDataItem
 import typings.antDesignProLayout.typingsMod.MessageDescriptor
 import typings.antDesignProLayout.typingsMod.WithFalse
+import typings.antd.breadcrumbBreadcrumbMod.Route
+import typings.antd.menuContextMod.MenuTheme
 import typings.react.mod.CSSProperties
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
@@ -30,16 +38,14 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in keyof @ant-design/pro-layout.@ant-design/pro-layout/lib/defaultSettings.Settings ]:? @ant-design/pro-layout.@ant-design/pro-layout/lib/defaultSettings.Settings[P]} */ /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.antDesignProLayout.headerMod.HeaderViewProps because var conflicts: className, logo, menuHeaderRender, siderWidth, style. Inlined isMobile, collapsed, menuRender, headerRender, rightContentRender, hasSiderMenu, fixSiderbar, layout, fixedHeader, menu, contentWidth, iconfontUrl, primaryColor, colorWeak, navTheme, title, collapsedButtonRender, onCollapse */ trait BasicLayoutProps extends SiderMenuProps {
   var breadcrumbRender: js.UndefOr[
-    js.Function1[
-      /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AntdBreadcrumbProps * / any['routes'] */ /* routers */ js.Any, 
-      /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AntdBreadcrumbProps * / any['routes'] */ js.Any
-    ]
+    js.Function1[/* routers */ js.UndefOr[js.Array[Route]], js.UndefOr[js.Array[Route]]]
   ] = js.undefined
   var collapsed: js.UndefOr[Boolean] = js.undefined
   var collapsedButtonRender: js.UndefOr[WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]]] = js.undefined
   var colorWeak: js.UndefOr[Boolean] = js.undefined
   var contentStyle: js.UndefOr[CSSProperties] = js.undefined
   var contentWidth: js.UndefOr[ContentWidth] = js.undefined
+  var disableAutoContentMinHeight: js.UndefOr[Boolean] = js.undefined
   /**
     * 兼用 content的 margin
     */
@@ -62,7 +68,13 @@ import scala.scalajs.js.annotation._
   var isChildrenLayout: js.UndefOr[Boolean] = js.undefined
   var isMobile: js.UndefOr[Boolean] = js.undefined
   var itemRender: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AntdBreadcrumbProps * / any['itemRender'] */ js.Any
+    js.Function4[
+      /* route */ Route, 
+      /* params */ js.Any, 
+      /* routes */ js.Array[Route], 
+      /* paths */ js.Array[String], 
+      ReactNode
+    ]
   ] = js.undefined
   var layout: js.UndefOr[sidemenu | topmenu] = js.undefined
   var loading: js.UndefOr[Boolean] = js.undefined
@@ -82,9 +94,7 @@ import scala.scalajs.js.annotation._
   var menuRender: js.UndefOr[
     WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]]
   ] = js.undefined
-  var navTheme: js.UndefOr[
-    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark
-  ] = js.undefined
+  var navTheme: js.UndefOr[MenuTheme | realDark] = js.undefined
   var onCollapse: js.UndefOr[js.Function1[/* collapsed */ Boolean, Unit]] = js.undefined
   /**
     * 页面切换的时候触发
@@ -116,14 +126,15 @@ import scala.scalajs.js.annotation._
 object BasicLayoutProps {
   @scala.inline
   def apply(
-    breadcrumbRender: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AntdBreadcrumbProps * / any['routes'] */ /* routers */ js.Any => /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AntdBreadcrumbProps * / any['routes'] */ js.Any = null,
-    breakpoint: (/* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SiderProps * / any['breakpoint'] */ js.Any) | `false` = null,
+    breadcrumbRender: /* routers */ js.UndefOr[js.Array[Route]] => js.UndefOr[js.Array[Route]] = null,
+    breakpoint: xs | sm | md | lg | xl | xxl | `false` = null,
     className: String = null,
     collapsed: js.UndefOr[Boolean] = js.undefined,
     collapsedButtonRender: WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]] = null,
     colorWeak: js.UndefOr[Boolean] = js.undefined,
     contentStyle: CSSProperties = null,
     contentWidth: ContentWidth = null,
+    disableAutoContentMinHeight: js.UndefOr[Boolean] = js.undefined,
     disableContentMargin: js.UndefOr[Boolean] = js.undefined,
     disableMobile: js.UndefOr[Boolean] = js.undefined,
     fixSiderbar: js.UndefOr[Boolean] = js.undefined,
@@ -136,7 +147,7 @@ object BasicLayoutProps {
     iconfontUrl: String = null,
     isChildrenLayout: js.UndefOr[Boolean] = js.undefined,
     isMobile: js.UndefOr[Boolean] = js.undefined,
-    itemRender: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AntdBreadcrumbProps * / any['itemRender'] */ js.Any = null,
+    itemRender: (/* route */ Route, /* params */ js.Any, /* routes */ js.Array[Route], /* paths */ js.Array[String]) => ReactNode = null,
     layout: sidemenu | topmenu = null,
     links: js.Array[ReactNode] = null,
     loading: js.UndefOr[Boolean] = js.undefined,
@@ -156,7 +167,7 @@ object BasicLayoutProps {
       js.Function2[/* item */ MenuDataItemisUrlboolean, /* defaultDom */ ReactNode, ReactNode]
     ] = null,
     menuRender: WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]] = null,
-    navTheme: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark = null,
+    navTheme: MenuTheme | realDark = null,
     onCollapse: /* collapsed */ Boolean => Unit = null,
     onMenuHeaderClick: /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     onOpenChange: /* openKeys */ WithFalse[js.Array[String]] => Unit = null,
@@ -187,6 +198,7 @@ object BasicLayoutProps {
     if (!js.isUndefined(colorWeak)) __obj.updateDynamic("colorWeak")(colorWeak.get.asInstanceOf[js.Any])
     if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle.asInstanceOf[js.Any])
     if (contentWidth != null) __obj.updateDynamic("contentWidth")(contentWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableAutoContentMinHeight)) __obj.updateDynamic("disableAutoContentMinHeight")(disableAutoContentMinHeight.get.asInstanceOf[js.Any])
     if (!js.isUndefined(disableContentMargin)) __obj.updateDynamic("disableContentMargin")(disableContentMargin.get.asInstanceOf[js.Any])
     if (!js.isUndefined(disableMobile)) __obj.updateDynamic("disableMobile")(disableMobile.get.asInstanceOf[js.Any])
     if (!js.isUndefined(fixSiderbar)) __obj.updateDynamic("fixSiderbar")(fixSiderbar.get.asInstanceOf[js.Any])
@@ -199,7 +211,7 @@ object BasicLayoutProps {
     if (iconfontUrl != null) __obj.updateDynamic("iconfontUrl")(iconfontUrl.asInstanceOf[js.Any])
     if (!js.isUndefined(isChildrenLayout)) __obj.updateDynamic("isChildrenLayout")(isChildrenLayout.get.asInstanceOf[js.Any])
     if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile.get.asInstanceOf[js.Any])
-    if (itemRender != null) __obj.updateDynamic("itemRender")(itemRender.asInstanceOf[js.Any])
+    if (itemRender != null) __obj.updateDynamic("itemRender")(js.Any.fromFunction4(itemRender))
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.get.asInstanceOf[js.Any])

@@ -30,9 +30,23 @@ trait IEffects extends js.Object {
     */
   var elevation8: String
   /**
-    * How much corners should be rounded, for use with border-radius.
+    * Rounded corner value, for use with border-radius. Smaller values indicate less rounding.
+    * Smaller elements should get less rounding than larger elements.
+    * Used for: buttons
     */
   var roundedCorner2: String
+  /**
+    * Rounded corner value, for use with border-radius. Smaller values indicate less rounding.
+    * Smaller elements should get less rounding than larger elements.
+    * Used for: cards
+    */
+  var roundedCorner4: String
+  /**
+    * Rounded corner value, for use with border-radius. Smaller values indicate less rounding.
+    * Smaller elements should get less rounding than larger elements.
+    * Used for: surfaces
+    */
+  var roundedCorner6: String
 }
 
 object IEffects {
@@ -42,9 +56,11 @@ object IEffects {
     elevation4: String,
     elevation64: String,
     elevation8: String,
-    roundedCorner2: String
+    roundedCorner2: String,
+    roundedCorner4: String,
+    roundedCorner6: String
   ): IEffects = {
-    val __obj = js.Dynamic.literal(elevation16 = elevation16.asInstanceOf[js.Any], elevation4 = elevation4.asInstanceOf[js.Any], elevation64 = elevation64.asInstanceOf[js.Any], elevation8 = elevation8.asInstanceOf[js.Any], roundedCorner2 = roundedCorner2.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(elevation16 = elevation16.asInstanceOf[js.Any], elevation4 = elevation4.asInstanceOf[js.Any], elevation64 = elevation64.asInstanceOf[js.Any], elevation8 = elevation8.asInstanceOf[js.Any], roundedCorner2 = roundedCorner2.asInstanceOf[js.Any], roundedCorner4 = roundedCorner4.asInstanceOf[js.Any], roundedCorner6 = roundedCorner6.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEffects]
   }
 }

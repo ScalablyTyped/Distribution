@@ -50,7 +50,7 @@ object SchemaDiskInstantiationConfig {
     instantiateFrom: String = null
   ): SchemaDiskInstantiationConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoDelete)) __obj.updateDynamic("autoDelete")(autoDelete.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDelete)) __obj.updateDynamic("autoDelete")(autoDelete.get.asInstanceOf[js.Any])
     if (customImage != null) __obj.updateDynamic("customImage")(customImage.asInstanceOf[js.Any])
     if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName.asInstanceOf[js.Any])
     if (instantiateFrom != null) __obj.updateDynamic("instantiateFrom")(instantiateFrom.asInstanceOf[js.Any])

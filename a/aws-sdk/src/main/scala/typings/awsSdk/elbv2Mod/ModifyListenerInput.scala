@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ModifyListenerInput extends js.Object {
   /**
+    * [TLS listeners] The name of the Application-Layer Protocol Negotiation (ALPN) policy. You can specify one policy name. The following are the possible values:    HTTP1Only     HTTP2Only     HTTP2Optional     HTTP2Preferred     None    For more information, see ALPN Policies in the Network Load Balancers Guide.
+    */
+  var AlpnPolicy: js.UndefOr[AlpnPolicyName] = js.native
+  /**
     * [HTTPS and TLS listeners] The default certificate for the listener. You must provide exactly one certificate. Set CertificateArn to the certificate ARN but do not set IsDefault. To create a certificate list, use AddListenerCertificates.
     */
   var Certificates: js.UndefOr[CertificateList] = js.native
@@ -36,6 +40,7 @@ object ModifyListenerInput {
   @scala.inline
   def apply(
     ListenerArn: ListenerArn,
+    AlpnPolicy: AlpnPolicyName = null,
     Certificates: CertificateList = null,
     DefaultActions: Actions = null,
     Port: js.UndefOr[Port] = js.undefined,
@@ -43,6 +48,7 @@ object ModifyListenerInput {
     SslPolicy: SslPolicyName = null
   ): ModifyListenerInput = {
     val __obj = js.Dynamic.literal(ListenerArn = ListenerArn.asInstanceOf[js.Any])
+    if (AlpnPolicy != null) __obj.updateDynamic("AlpnPolicy")(AlpnPolicy.asInstanceOf[js.Any])
     if (Certificates != null) __obj.updateDynamic("Certificates")(Certificates.asInstanceOf[js.Any])
     if (DefaultActions != null) __obj.updateDynamic("DefaultActions")(DefaultActions.asInstanceOf[js.Any])
     if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])

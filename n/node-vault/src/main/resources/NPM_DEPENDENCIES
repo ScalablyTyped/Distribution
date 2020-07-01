@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "node-vault" : "0.9.15"
+      "node-vault" : "0.9.18"
     }
   ],
   "test-dependencies" : [
     {
-      "node-vault" : "0.9.15"
+      "node-vault" : "0.9.18"
     }
   ],
   "compile-devDependencies" : [

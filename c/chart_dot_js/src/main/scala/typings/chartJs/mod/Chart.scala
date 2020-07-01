@@ -25,9 +25,12 @@ trait Chart extends js.Object {
   def getElementAtEvent(e: js.Any): js.Array[js.Object] = js.native
   def getElementsAtEvent(e: js.Any): js.Array[js.Object] = js.native
   def getElementsAtXAxis(e: js.Any): js.Array[js.Object] = js.native
+  def getVisibleDatasetCount(): Double = js.native
+  def isDatasetVisible(datasetIndex: Double): Boolean = js.native
   def render(): js.Object = js.native
   def render(hasDurationLazyEasing: ChartRenderProps): js.Object = js.native
   def resize(): Chart = js.native
+  def setDatasetVisibility(datasetIndex: Double, visible: Boolean): Unit = js.native
   def stop(): Chart = js.native
   def toBase64Image(): String = js.native
   def update(): js.Object = js.native

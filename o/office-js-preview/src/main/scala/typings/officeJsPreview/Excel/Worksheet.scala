@@ -99,6 +99,14 @@ trait Worksheet extends ClientObject {
   var name: String = js.native
   /**
     *
+    * Returns a collection of sheet views that are present in the worksheet.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val namedSheetViews: NamedSheetViewCollection = js.native
+  /**
+    *
     * Collection of names scoped to the current worksheet.
     *
     * [Api set: ExcelApi 1.4]

@@ -65,6 +65,19 @@ trait AppConfig extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ Environment, Unit]
   ): Request[Environment, AWSError] = js.native
   /**
+    * Create a new configuration in the AppConfig configuration store.
+    */
+  def createHostedConfigurationVersion(): Request[HostedConfigurationVersion, AWSError] = js.native
+  def createHostedConfigurationVersion(callback: js.Function2[/* err */ AWSError, /* data */ HostedConfigurationVersion, Unit]): Request[HostedConfigurationVersion, AWSError] = js.native
+  /**
+    * Create a new configuration in the AppConfig configuration store.
+    */
+  def createHostedConfigurationVersion(params: CreateHostedConfigurationVersionRequest): Request[HostedConfigurationVersion, AWSError] = js.native
+  def createHostedConfigurationVersion(
+    params: CreateHostedConfigurationVersionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ HostedConfigurationVersion, Unit]
+  ): Request[HostedConfigurationVersion, AWSError] = js.native
+  /**
     * Delete an application. Deleting an application does not delete a configuration from a host.
     */
   def deleteApplication(): Request[js.Object, AWSError] = js.native
@@ -114,6 +127,19 @@ trait AppConfig extends Service {
   def deleteEnvironment(params: DeleteEnvironmentRequest): Request[js.Object, AWSError] = js.native
   def deleteEnvironment(
     params: DeleteEnvironmentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
+    * Delete a version of a configuration from the AppConfig configuration store.
+    */
+  def deleteHostedConfigurationVersion(): Request[js.Object, AWSError] = js.native
+  def deleteHostedConfigurationVersion(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Delete a version of a configuration from the AppConfig configuration store.
+    */
+  def deleteHostedConfigurationVersion(params: DeleteHostedConfigurationVersionRequest): Request[js.Object, AWSError] = js.native
+  def deleteHostedConfigurationVersion(
+    params: DeleteHostedConfigurationVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
@@ -195,6 +221,19 @@ trait AppConfig extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ Environment, Unit]
   ): Request[Environment, AWSError] = js.native
   /**
+    * Get information about a specific configuration version.
+    */
+  def getHostedConfigurationVersion(): Request[HostedConfigurationVersion, AWSError] = js.native
+  def getHostedConfigurationVersion(callback: js.Function2[/* err */ AWSError, /* data */ HostedConfigurationVersion, Unit]): Request[HostedConfigurationVersion, AWSError] = js.native
+  /**
+    * Get information about a specific configuration version.
+    */
+  def getHostedConfigurationVersion(params: GetHostedConfigurationVersionRequest): Request[HostedConfigurationVersion, AWSError] = js.native
+  def getHostedConfigurationVersion(
+    params: GetHostedConfigurationVersionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ HostedConfigurationVersion, Unit]
+  ): Request[HostedConfigurationVersion, AWSError] = js.native
+  /**
     * List all applications in your AWS account.
     */
   def listApplications(): Request[Applications, AWSError] = js.native
@@ -259,6 +298,19 @@ trait AppConfig extends Service {
     params: ListEnvironmentsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ Environments, Unit]
   ): Request[Environments, AWSError] = js.native
+  /**
+    * View a list of configurations stored in the AppConfig configuration store by version.
+    */
+  def listHostedConfigurationVersions(): Request[HostedConfigurationVersions, AWSError] = js.native
+  def listHostedConfigurationVersions(callback: js.Function2[/* err */ AWSError, /* data */ HostedConfigurationVersions, Unit]): Request[HostedConfigurationVersions, AWSError] = js.native
+  /**
+    * View a list of configurations stored in the AppConfig configuration store by version.
+    */
+  def listHostedConfigurationVersions(params: ListHostedConfigurationVersionsRequest): Request[HostedConfigurationVersions, AWSError] = js.native
+  def listHostedConfigurationVersions(
+    params: ListHostedConfigurationVersionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ HostedConfigurationVersions, Unit]
+  ): Request[HostedConfigurationVersions, AWSError] = js.native
   /**
     * Retrieves the list of key-value tags assigned to the resource.
     */

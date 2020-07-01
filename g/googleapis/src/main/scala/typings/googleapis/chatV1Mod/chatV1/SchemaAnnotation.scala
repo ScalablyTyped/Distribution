@@ -41,14 +41,14 @@ trait SchemaAnnotation extends js.Object {
 object SchemaAnnotation {
   @scala.inline
   def apply(
-    length: Int | Double = null,
-    startIndex: Int | Double = null,
+    length: js.UndefOr[Double] = js.undefined,
+    startIndex: js.UndefOr[Double] = js.undefined,
     `type`: String = null,
     userMention: SchemaUserMentionMetadata = null
   ): SchemaAnnotation = {
     val __obj = js.Dynamic.literal()
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (userMention != null) __obj.updateDynamic("userMention")(userMention.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAnnotation]

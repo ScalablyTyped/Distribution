@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait VerifyResponse extends js.Object {
   /**
-    * The unique identifier for the asymmetric CMK that was used to verify the signature.
+    * The Amazon Resource Name (key ARN) of the asymmetric CMK that was used to verify the signature.
     */
   var KeyId: js.UndefOr[KeyIdType] = js.native
   /**

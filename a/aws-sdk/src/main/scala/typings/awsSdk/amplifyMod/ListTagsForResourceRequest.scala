@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListTagsForResourceRequest extends js.Object {
   /**
-    *  Resource arn used to list tags. 
+    *  The Amazon Resource Name (ARN) to use to list tags. 
     */
   var resourceArn: ResourceArn = js.native
 }

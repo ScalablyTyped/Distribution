@@ -11,7 +11,7 @@ trait `01`[R /* <: js.Array[_] */] extends js.Object {
 
 object `01` {
   @scala.inline
-  def apply[R](
+  def apply[/* <: js.Array[_] */ R](
     `0`: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias curriable.curriable.Reverse<T, curriable.curriable.Prepend<T[curriable.curriable.Pos<I>], R>, curriable.curriable.Next<I>> */ js.Object,
     `1`: R
   ): `01`[R] = {

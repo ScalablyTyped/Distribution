@@ -39,6 +39,10 @@ trait CreateMaintenanceWindowRequest extends js.Object {
     */
   var Schedule: MaintenanceWindowSchedule = js.native
   /**
+    * The number of days to wait after the date and time specified by a CRON expression before running the maintenance window. For example, the following cron expression schedules a maintenance window to run on the third Tuesday of every month at 11:30 PM.  cron(0 30 23 ? * TUE#3 *)  If the schedule offset is 2, the maintenance window won't run until two days later.
+    */
+  var ScheduleOffset: js.UndefOr[MaintenanceWindowOffset] = js.native
+  /**
     * The time zone that the scheduled maintenance window executions are based on, in Internet Assigned Numbers Authority (IANA) format. For example: "America/Los_Angeles", "etc/UTC", or "Asia/Seoul". For more information, see the Time Zone Database on the IANA website.
     */
   var ScheduleTimezone: js.UndefOr[MaintenanceWindowTimezone] = js.native
@@ -63,6 +67,7 @@ object CreateMaintenanceWindowRequest {
     ClientToken: ClientToken = null,
     Description: MaintenanceWindowDescription = null,
     EndDate: MaintenanceWindowStringDateTime = null,
+    ScheduleOffset: js.UndefOr[MaintenanceWindowOffset] = js.undefined,
     ScheduleTimezone: MaintenanceWindowTimezone = null,
     StartDate: MaintenanceWindowStringDateTime = null,
     Tags: TagList = null
@@ -71,6 +76,7 @@ object CreateMaintenanceWindowRequest {
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (EndDate != null) __obj.updateDynamic("EndDate")(EndDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(ScheduleOffset)) __obj.updateDynamic("ScheduleOffset")(ScheduleOffset.get.asInstanceOf[js.Any])
     if (ScheduleTimezone != null) __obj.updateDynamic("ScheduleTimezone")(ScheduleTimezone.asInstanceOf[js.Any])
     if (StartDate != null) __obj.updateDynamic("StartDate")(StartDate.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])

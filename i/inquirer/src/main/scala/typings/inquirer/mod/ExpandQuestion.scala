@@ -21,7 +21,7 @@ trait ExpandQuestion[T /* <: Answers */] extends ListQuestionOptionsBase[T, Expa
 
 object ExpandQuestion {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.inquirer.mod.Answers */ T](
     `type`: expand,
     choices: AsyncDynamicQuestionProperty[js.Array[DistinctChoice[ExpandChoiceMap[T]]], T] = null,
     default: AsyncDynamicQuestionProperty[_, T] = null,

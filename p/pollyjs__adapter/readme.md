@@ -1,7 +1,7 @@
 
 # Scala.js typings for pollyjs__adapter
 
-Typings are for version 3.0
+Typings are for version 4.3
 
 ## Library description:
 Extendable base adapter class used by @pollyjs

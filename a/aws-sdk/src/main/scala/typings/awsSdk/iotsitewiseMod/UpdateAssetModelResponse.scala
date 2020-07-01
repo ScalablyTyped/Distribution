@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateAssetModelResponse extends js.Object {
   /**
-    * The status of the asset model, which contains a state (UPDATING after successfully calling this action) and any error message.
+    * The status of the asset model, which contains a state (UPDATING after successfully calling this operation) and any error message.
     */
   var assetModelStatus: AssetModelStatus = js.native
 }

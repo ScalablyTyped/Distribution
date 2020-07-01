@@ -11,7 +11,7 @@ trait Items[T /* <: Base */, Base] extends js.Object {
 
 object Items {
   @scala.inline
-  def apply[T, Base](items: js.Array[T] | Collection[T] = null): Items[T, Base] = {
+  def apply[/* <: Base */ T, Base](items: js.Array[T] | Collection[T] = null): Items[T, Base] = {
     val __obj = js.Dynamic.literal()
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[Items[T, Base]]

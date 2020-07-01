@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FleetLaunchTemplateSpecificationRequest extends js.Object {
   /**
-    * The ID of the launch template.
+    * The ID of the launch template. If you specify the template ID, you can't specify the template name.
     */
   var LaunchTemplateId: js.UndefOr[typings.awsSdk.ec2Mod.LaunchTemplateId] = js.native
   /**
-    * The name of the launch template.
+    * The name of the launch template. If you specify the template name, you can't specify the template ID.
     */
   var LaunchTemplateName: js.UndefOr[typings.awsSdk.ec2Mod.LaunchTemplateName] = js.native
   /**
-    * The version number of the launch template. Note: This is a required parameter and will be updated soon. 
+    * The launch template version number, $Latest, or $Default. You must specify a value, otherwise the request fails. If the value is $Latest, Amazon EC2 uses the latest version of the launch template. If the value is $Default, Amazon EC2 uses the default version of the launch template.
     */
   var Version: js.UndefOr[String] = js.native
 }

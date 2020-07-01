@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   - typings.twilioChat.twilioChatStrings.dateUpdated
   - typings.twilioChat.twilioChatStrings.friendlyName
   - typings.twilioChat.twilioChatStrings.lastConsumedMessageIndex
+  - typings.twilioChat.twilioChatStrings.state
   - typings.twilioChat.twilioChatStrings.status
   - typings.twilioChat.twilioChatStrings.uniqueName
   - typings.twilioChat.twilioChatStrings.lastMessage
@@ -35,6 +36,8 @@ object UpdateReason {
   def lastMessage: typings.twilioChat.twilioChatStrings.lastMessage = "lastMessage".asInstanceOf[typings.twilioChat.twilioChatStrings.lastMessage]
   @scala.inline
   def notificationLevel: typings.twilioChat.twilioChatStrings.notificationLevel = "notificationLevel".asInstanceOf[typings.twilioChat.twilioChatStrings.notificationLevel]
+  @scala.inline
+  def state: typings.twilioChat.twilioChatStrings.state = "state".asInstanceOf[typings.twilioChat.twilioChatStrings.state]
   @scala.inline
   def status: typings.twilioChat.twilioChatStrings.status = "status".asInstanceOf[typings.twilioChat.twilioChatStrings.status]
   @scala.inline

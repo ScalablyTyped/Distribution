@@ -13,7 +13,7 @@ trait Response[Content /* <: js.Object */] extends js.Object {
 
 object Response {
   @scala.inline
-  def apply[Content](offset: Double, rows: js.Array[Doc[Content]], total_rows: Double): Response[Content] = {
+  def apply[/* <: js.Object */ Content](offset: Double, rows: js.Array[Doc[Content]], total_rows: Double): Response[Content] = {
     val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], total_rows = total_rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response[Content]]
   }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for mozilla-readability
 
-Typings are for version 0.1
+Typings are for version 0.2
 
 
 

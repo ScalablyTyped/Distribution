@@ -5,12 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait NamedNode
-  extends QuadGraph
-     with QuadObject
-     with QuadPredicate
-     with QuadSubject
-     with Term {
+trait NamedNode[Iri /* <: String */] extends js.Object {
   /**
     * Contains the constant "NamedNode".
     */
@@ -18,7 +13,7 @@ trait NamedNode
   /**
     * The IRI of the named node (example: `http://example.org/resource`)
     */
-  var value: String = js.native
+  var value: Iri = js.native
   /**
     * @param other The term to compare with.
     * @return True if and only if other has termType "NamedNode" and the same `value`.

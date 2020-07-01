@@ -16,7 +16,7 @@ trait IOptions[T /* <: Widget */, U /* <: IModel */]
 
 object IOptions {
   @scala.inline
-  def apply[T, U](
+  def apply[/* <: typings.luminoWidgets.mod.Widget */ T, /* <: typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel */ U](
     content: T,
     context: IContext[U],
     node: HTMLElement = null,

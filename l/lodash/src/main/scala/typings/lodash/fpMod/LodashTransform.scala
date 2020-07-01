@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashTransform extends js.Object {
+trait LodashTransform extends LodashConvertible {
   def apply[TResult](iteratee: __, accumulator: js.Array[TResult]): LodashTransform1x2[TResult] = js.native
   def apply[TResult](iteratee: __, accumulator: Dictionary[TResult]): LodashTransform2x2[TResult] = js.native
   def apply[T](iteratee: __, accumulator: __, `object`: js.Array[T]): LodashTransform1x4[T] = js.native

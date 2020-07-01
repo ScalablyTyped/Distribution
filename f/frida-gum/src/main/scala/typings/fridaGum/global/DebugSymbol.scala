@@ -72,5 +72,11 @@ object DebugSymbol extends js.Object {
     * @param name Function name to resolve the address of.
     */
   def getFunctionByName(name: String): typings.fridaGum.NativePointer = js.native
+  /**
+    * Loads debug symbols for a specific module.
+    *
+    * @param path Path of module to load symbols for.
+    */
+  def load(path: String): Unit = js.native
 }
 

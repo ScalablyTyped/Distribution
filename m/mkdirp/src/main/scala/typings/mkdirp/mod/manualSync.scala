@@ -14,6 +14,6 @@ object manualSync extends js.Object {
     */
   def apply(dir: String): js.UndefOr[String] = js.native
   def apply(dir: String, opts: Mode): js.UndefOr[String] = js.native
-  def apply(dir: String, opts: Options): js.UndefOr[String] = js.native
+  def apply(dir: String, opts: OptionsSync): js.UndefOr[String] = js.native
 }
 

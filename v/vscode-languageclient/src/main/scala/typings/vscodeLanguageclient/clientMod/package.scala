@@ -60,7 +60,9 @@ package object clientMod {
     /* position */ typings.vscode.mod.Position, 
     /* context */ typings.vscode.mod.CompletionContext, 
     /* token */ typings.vscode.mod.CancellationToken, 
-    typings.vscode.mod.ProviderResult[js.Array[typings.vscode.mod.CompletionItem] | typings.vscode.mod.CompletionList]
+    typings.vscode.mod.ProviderResult[
+      js.Array[typings.vscode.mod.CompletionItem] | typings.vscode.mod.CompletionList[typings.vscode.mod.CompletionItem]
+    ]
   ]
   type ProvideDefinitionSignature = js.ThisFunction3[
     /* this */ scala.Unit, 

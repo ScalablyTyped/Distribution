@@ -49,25 +49,39 @@ object EventType extends js.Object {
   sealed trait chartDeleted extends EventType
   
   /**
-    * CommentAdded represents the type of event that is registered on commentCollection, and occurs when comments are added.
+    * CommentAdded represents the type of event that is registered on commentCollection, and occurs when comments are added.
     *
     */
   @js.native
   sealed trait commentAdded extends EventType
   
   /**
-    * CommentChanged represents the type of event that is registered on commentCollection, and occurs when comments are changed.
+    * CommentChanged represents the type of event that is registered on commentCollection, and occurs when comments are changed.
     *
     */
   @js.native
   sealed trait commentChanged extends EventType
   
   /**
-    * CommentDeleted represents the type of event that is registered on commentCollection, and occurs when comments are deleted.
+    * CommentDeleted represents the type of event that is registered on commentCollection, and occurs when comments are deleted.
     *
     */
   @js.native
   sealed trait commentDeleted extends EventType
+  
+  /**
+    * LinkedDataTypeAdded represents the type of event registered on LinkedDataType, and occurs when a new linked data type is added to the workbook.
+    *
+    */
+  @js.native
+  sealed trait linkedDataTypeLinkedDataTypeAdded extends EventType
+  
+  /**
+    * RefreshModeChanged represents the type of event registered on LinkedDataType, and occurs when the linked data type refresh mode is changed.
+    *
+    */
+  @js.native
+  sealed trait linkedDataTypeRefreshModeChanged extends EventType
   
   /**
     * RefreshRequestCompleted represents the type of event registered on LinkedDataType, and occurs when a request to refresh a data source is completed.
@@ -75,9 +89,6 @@ object EventType extends js.Object {
     */
   @js.native
   sealed trait linkedDataTypeRefreshRequestCompleted extends EventType
-  
-  @js.native
-  sealed trait recordingStateChangedEvent extends EventType
   
   /**
     * RibbonCommandExecuted represents the type of event registered on ribbon, and occurs when user click on ribbon
@@ -148,9 +159,6 @@ object EventType extends js.Object {
     */
   @js.native
   sealed trait visualSelectionChanged extends EventType
-  
-  @js.native
-  sealed trait wacoperationEvent extends EventType
   
   /**
     * WorkbookAutoSaveSettingChanged represents the type of event registered on workbook, and occurs when there is an auto save setting change.

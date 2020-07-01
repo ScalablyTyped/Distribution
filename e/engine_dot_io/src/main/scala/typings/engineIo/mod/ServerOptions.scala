@@ -45,7 +45,7 @@ trait ServerOptions extends js.Object {
     */
   var initialPacket: js.UndefOr[Message] = js.undefined
   /**
-    * how many bytes or characters a message can be, before closing the session (to avoid DoS). Default value is 10E7.
+    * how many bytes or characters a message can be, before closing the session (to avoid DoS). Default value is 10E6.
     */
   var maxHttpBufferSize: js.UndefOr[Double] = js.undefined
   /**
@@ -57,7 +57,7 @@ trait ServerOptions extends js.Object {
     */
   var pingInterval: js.UndefOr[Double] = js.undefined
   /**
-    * how many ms without a pong packet to consider the connection closed (60000)
+    * how many ms without a pong packet to consider the connection closed (5000)
     */
   var pingTimeout: js.UndefOr[Double] = js.undefined
   /**

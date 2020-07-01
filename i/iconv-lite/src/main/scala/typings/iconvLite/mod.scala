@@ -18,5 +18,9 @@ object mod extends js.Object {
   def encodeStream(encoding: String): ReadWriteStream = js.native
   def encodeStream(encoding: String, options: Options): ReadWriteStream = js.native
   def encodingExists(encoding: String): Boolean = js.native
+  def getDecoder(encoding: String): DecoderStream = js.native
+  def getDecoder(encoding: String, options: Options): DecoderStream = js.native
+  def getEncoder(encoding: String): EncoderStream = js.native
+  def getEncoder(encoding: String, options: Options): EncoderStream = js.native
 }
 

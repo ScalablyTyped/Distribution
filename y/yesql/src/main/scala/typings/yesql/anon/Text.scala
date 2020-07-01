@@ -13,7 +13,7 @@ trait Text[TParams /* <: js.Object */] extends js.Object {
 
 object Text {
   @scala.inline
-  def apply[TParams](
+  def apply[/* <: js.Object */ TParams](
     text: String,
     values: js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: TParams[keyof TParams] */ js.Any

@@ -39,7 +39,7 @@ trait EndListenerProps[Ref /* <: js.UndefOr[HTMLElement] */]
 
 object EndListenerProps {
   @scala.inline
-  def apply[Ref](
+  def apply[/* <: js.UndefOr[typings.std.HTMLElement] */ Ref](
     addEndListener: EndHandler[Ref],
     children: TransitionChildren = null,
     in: js.UndefOr[Boolean] = js.undefined,

@@ -92,7 +92,7 @@ object SchemaVoterInfoResponse {
     if (earlyVoteSites != null) __obj.updateDynamic("earlyVoteSites")(earlyVoteSites.asInstanceOf[js.Any])
     if (election != null) __obj.updateDynamic("election")(election.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(mailOnly)) __obj.updateDynamic("mailOnly")(mailOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(mailOnly)) __obj.updateDynamic("mailOnly")(mailOnly.get.asInstanceOf[js.Any])
     if (normalizedInput != null) __obj.updateDynamic("normalizedInput")(normalizedInput.asInstanceOf[js.Any])
     if (otherElections != null) __obj.updateDynamic("otherElections")(otherElections.asInstanceOf[js.Any])
     if (pollingLocations != null) __obj.updateDynamic("pollingLocations")(pollingLocations.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 package typings.googleapis.v5Mod.pagespeedonlineV5
 
-import typings.googleapis.AnonMajor
+import typings.googleapis.anon.Major
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,7 +39,7 @@ trait SchemaPagespeedApiPagespeedResponseV5 extends js.Object {
   /**
     * The version of PageSpeed used to generate these results.
     */
-  var version: js.UndefOr[AnonMajor] = js.native
+  var version: js.UndefOr[Major] = js.native
 }
 
 object SchemaPagespeedApiPagespeedResponseV5 {
@@ -52,7 +52,7 @@ object SchemaPagespeedApiPagespeedResponseV5 {
     lighthouseResult: SchemaLighthouseResultV5 = null,
     loadingExperience: SchemaPagespeedApiLoadingExperienceV5 = null,
     originLoadingExperience: SchemaPagespeedApiLoadingExperienceV5 = null,
-    version: AnonMajor = null
+    version: Major = null
   ): SchemaPagespeedApiPagespeedResponseV5 = {
     val __obj = js.Dynamic.literal()
     if (analysisUTCTimestamp != null) __obj.updateDynamic("analysisUTCTimestamp")(analysisUTCTimestamp.asInstanceOf[js.Any])

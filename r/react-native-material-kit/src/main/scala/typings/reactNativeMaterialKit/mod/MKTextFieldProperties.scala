@@ -153,6 +153,7 @@ object MKTextFieldProperties {
     floatingLabelBottomMargin: js.UndefOr[Double] = js.undefined,
     floatingLabelEnabled: js.UndefOr[Boolean] = js.undefined,
     floatingLabelFont: font = null,
+    focusable: js.UndefOr[Boolean] = js.undefined,
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
     highlightColor: String = null,
     hitSlop: Insets = null,
@@ -275,6 +276,7 @@ object MKTextFieldProperties {
     if (!js.isUndefined(floatingLabelBottomMargin)) __obj.updateDynamic("floatingLabelBottomMargin")(floatingLabelBottomMargin.get.asInstanceOf[js.Any])
     if (!js.isUndefined(floatingLabelEnabled)) __obj.updateDynamic("floatingLabelEnabled")(floatingLabelEnabled.get.asInstanceOf[js.Any])
     if (floatingLabelFont != null) __obj.updateDynamic("floatingLabelFont")(floatingLabelFont.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.get.asInstanceOf[js.Any])
     if (highlightColor != null) __obj.updateDynamic("highlightColor")(highlightColor.asInstanceOf[js.Any])
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])

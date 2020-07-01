@@ -10,7 +10,7 @@ trait OnSelectedRowsChangedEventArgs[T /* <: SlickData */] extends GridEventArgs
 
 object OnSelectedRowsChangedEventArgs {
   @scala.inline
-  def apply[T](grid: Grid[T], rows: js.Array[Double]): OnSelectedRowsChangedEventArgs[T] = {
+  def apply[/* <: typings.slickgrid.Slick.SlickData */ T](grid: Grid[T], rows: js.Array[Double]): OnSelectedRowsChangedEventArgs[T] = {
     val __obj = js.Dynamic.literal(grid = grid.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnSelectedRowsChangedEventArgs[T]]
   }

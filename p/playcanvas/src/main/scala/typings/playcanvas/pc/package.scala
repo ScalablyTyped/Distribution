@@ -32,6 +32,10 @@ package object pc {
     */
   type AudioListenerComponentSystem = typings.playcanvas.pc.ComponentSystem
   /**
+    * Parser for basis files.
+    */
+  type BasisParser = typings.playcanvas.pc.TextureParser
+  /**
     * Create a new ButtonComponentSystem.
     * @param app - The application.
     */
@@ -47,8 +51,30 @@ package object pc {
     */
   type ComponentSystem = typings.playcanvas.pc.EventHandler
   /**
-    * Loads files that contain in them multiple resources. For example GLB files which can contain
+    * Loads files that contain multiple resources. For example glTF files can contain
     textures, models and animations.
+    The asset options object can be used for passing in load time callbacks to handle the various resources
+    at different stages of loading as follows:
+    ```
+    |---------------------------------------------------------------------|
+    |  resource   |  preprocess |   process   |processAsync | postprocess |
+    |-------------+-------------+-------------+-------------+-------------|
+    | global      |      x      |             |             |      x      |
+    | node        |      x      |      x      |             |      x      |
+    | animation   |      x      |             |             |      x      |
+    | material    |      x      |      x      |             |      x      |
+    | texture     |      x      |             |      x      |      x      |
+    | buffer      |      x      |             |      x      |      x      |
+    |---------------------------------------------------------------------|
+    ```
+    For example, to receive a texture preprocess callback:
+    ```javascript
+    var containerAsset = new pc.Asset(filename, 'container', { url: url, filename: filename }, null, {
+    texture: {
+    preprocess: function (gltfTexture) { console.log("texture preprocess"); }
+    },
+    });
+    ```
     * @param device - The graphics device that will be rendering.
     * @param defaultMaterial - The shared default material that is used in any place that a material is not specified.
     */
@@ -60,6 +86,10 @@ package object pc {
     * @param loader - The resource loader.
     */
   type CubemapHandler = typings.playcanvas.pc.ResourceHandler
+  /**
+    * Texture parser for dds files.
+    */
+  type DdsParser = typings.playcanvas.pc.TextureParser
   /**
     * Manages creation of {@link pc.ElementComponent}s.
     * @param app - The application.
@@ -77,6 +107,14 @@ package object pc {
     */
   type FontHandler = typings.playcanvas.pc.ResourceHandler
   /**
+    * Parser for browser-supported image formats.
+    */
+  type ImgParser = typings.playcanvas.pc.TextureParser
+  /**
+    * Texture parser for ktx files.
+    */
+  type KtxParser = typings.playcanvas.pc.TextureParser
+  /**
     * Create a new LayoutChildComponentSystem.
     * @param app - The application.
     */
@@ -86,6 +124,10 @@ package object pc {
     * @param app - The application.
     */
   type LayoutGroupComponentSystem = typings.playcanvas.pc.ComponentSystem
+  /**
+    * Legacy texture parser for dds files.
+    */
+  type LegacyDdsParser = typings.playcanvas.pc.TextureParser
   /**
     * Create a new LightComponentSystem.
     * @param app - The application.

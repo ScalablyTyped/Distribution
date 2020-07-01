@@ -1,12 +1,12 @@
 package typings.googleapis.booksV1Mod.booksV1
 
-import typings.googleapis.AnonAccessViewStatus
-import typings.googleapis.AnonAcquiredTime
-import typings.googleapis.AnonAllowAnonLogging
-import typings.googleapis.AnonBuyLink
-import typings.googleapis.AnonExplanation
-import typings.googleapis.AnonLayers
-import typings.googleapis.AnonTextSnippet
+import typings.googleapis.anon.AccessViewStatus
+import typings.googleapis.anon.AcquiredTime
+import typings.googleapis.anon.AllowAnonLogging
+import typings.googleapis.anon.BuyLink
+import typings.googleapis.anon.Explanation
+import typings.googleapis.anon.Layers
+import typings.googleapis.anon.TextSnippet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait SchemaVolume extends js.Object {
     * volume text. This information can depend on country (books may be public
     * domain in one country but not in another, e.g.).
     */
-  var accessInfo: js.UndefOr[AnonAccessViewStatus] = js.native
+  var accessInfo: js.UndefOr[AccessViewStatus] = js.native
   /**
     * Opaque identifier for a specific version of a volume resource. (In LITE
     * projection)
@@ -35,22 +35,22 @@ trait SchemaVolume extends js.Object {
   /**
     * What layers exist in this volume and high level information about them.
     */
-  var layerInfo: js.UndefOr[AnonLayers] = js.native
+  var layerInfo: js.UndefOr[Layers] = js.native
   /**
     * Recommendation related information for this volume.
     */
-  var recommendedInfo: js.UndefOr[AnonExplanation] = js.native
+  var recommendedInfo: js.UndefOr[Explanation] = js.native
   /**
     * Any information about a volume related to the eBookstore and/or
     * purchaseability. This information can depend on the country where the
     * request originates from (i.e. books may not be for sale in certain
     * countries).
     */
-  var saleInfo: js.UndefOr[AnonBuyLink] = js.native
+  var saleInfo: js.UndefOr[BuyLink] = js.native
   /**
     * Search result information related to this volume.
     */
-  var searchInfo: js.UndefOr[AnonTextSnippet] = js.native
+  var searchInfo: js.UndefOr[TextSnippet] = js.native
   /**
     * URL to this resource. (In LITE projection.)
     */
@@ -59,27 +59,27 @@ trait SchemaVolume extends js.Object {
     * User specific information related to this volume. (e.g. page this user
     * last read or whether they purchased this book)
     */
-  var userInfo: js.UndefOr[AnonAcquiredTime] = js.native
+  var userInfo: js.UndefOr[AcquiredTime] = js.native
   /**
     * General volume information.
     */
-  var volumeInfo: js.UndefOr[AnonAllowAnonLogging] = js.native
+  var volumeInfo: js.UndefOr[AllowAnonLogging] = js.native
 }
 
 object SchemaVolume {
   @scala.inline
   def apply(
-    accessInfo: AnonAccessViewStatus = null,
+    accessInfo: AccessViewStatus = null,
     etag: String = null,
     id: String = null,
     kind: String = null,
-    layerInfo: AnonLayers = null,
-    recommendedInfo: AnonExplanation = null,
-    saleInfo: AnonBuyLink = null,
-    searchInfo: AnonTextSnippet = null,
+    layerInfo: Layers = null,
+    recommendedInfo: Explanation = null,
+    saleInfo: BuyLink = null,
+    searchInfo: TextSnippet = null,
     selfLink: String = null,
-    userInfo: AnonAcquiredTime = null,
-    volumeInfo: AnonAllowAnonLogging = null
+    userInfo: AcquiredTime = null,
+    volumeInfo: AllowAnonLogging = null
   ): SchemaVolume = {
     val __obj = js.Dynamic.literal()
     if (accessInfo != null) __obj.updateDynamic("accessInfo")(accessInfo.asInstanceOf[js.Any])

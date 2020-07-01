@@ -1,5 +1,6 @@
 package typings.echarts.anon
 
+import typings.echarts.echarts.EChartOption.BaseTooltip
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,7 +47,7 @@ trait Link extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.silent.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
 }
 
 object Link {
@@ -55,7 +56,7 @@ object Link {
     children: js.Array[_] = null,
     link: String = null,
     target: String = null,
-    tooltip: ExtraCssText = null
+    tooltip: BaseTooltip = null
   ): Link = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

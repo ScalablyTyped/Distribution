@@ -13,7 +13,7 @@ trait IOptions[T /* <: Widget */]
 
 object IOptions {
   @scala.inline
-  def apply[T](content: T, node: HTMLElement = null): IOptions[T] = {
+  def apply[/* <: typings.luminoWidgets.mod.Widget */ T](content: T, node: HTMLElement = null): IOptions[T] = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions[T]]

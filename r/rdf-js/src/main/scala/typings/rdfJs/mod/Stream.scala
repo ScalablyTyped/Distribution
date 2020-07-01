@@ -13,6 +13,6 @@ trait Stream[Q /* <: BaseQuad */] extends EventEmitter {
     *
     * @return A quad from the internal buffer, or null if none is available.
     */
-  def read(): Q = js.native
+  def read(): Q | Null = js.native
 }
 

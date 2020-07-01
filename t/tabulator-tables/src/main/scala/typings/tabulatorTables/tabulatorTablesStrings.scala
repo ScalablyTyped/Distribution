@@ -75,6 +75,9 @@ object tabulatorTablesStrings {
   sealed trait avg extends _ColumnCalc
   
   @js.native
+  sealed trait blocking extends js.Object
+  
+  @js.native
   sealed trait boolean extends js.Object
   
   @js.native
@@ -165,6 +168,9 @@ object tabulatorTablesStrings {
   sealed trait editor extends js.Object
   
   @js.native
+  sealed trait ends extends FilterType
+  
+  @js.native
   sealed trait exists extends js.Object
   
   @js.native
@@ -184,6 +190,9 @@ object tabulatorTablesStrings {
   
   @js.native
   sealed trait fitDataStretch extends js.Object
+  
+  @js.native
+  sealed trait fitDataTable extends js.Object
   
   @js.native
   sealed trait flip extends js.Object
@@ -273,6 +282,9 @@ object tabulatorTablesStrings {
   
   @js.native
   sealed trait lookup extends _Formatter
+  
+  @js.native
+  sealed trait manual extends js.Object
   
   @js.native
   sealed trait max extends _ColumnCalc
@@ -390,6 +402,9 @@ object tabulatorTablesStrings {
        with _Formatter
   
   @js.native
+  sealed trait starts extends FilterType
+  
+  @js.native
   sealed trait string extends StandardValidatorType
   
   @js.native
@@ -474,6 +489,8 @@ object tabulatorTablesStrings {
   @scala.inline
   def avg: avg = "avg".asInstanceOf[avg]
   @scala.inline
+  def blocking: blocking = "blocking".asInstanceOf[blocking]
+  @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   @scala.inline
   def both: both = "both".asInstanceOf[both]
@@ -530,6 +547,8 @@ object tabulatorTablesStrings {
   @scala.inline
   def editor: editor = "editor".asInstanceOf[editor]
   @scala.inline
+  def ends: ends = "ends".asInstanceOf[ends]
+  @scala.inline
   def exists: exists = "exists".asInstanceOf[exists]
   @scala.inline
   def filter: filter = "filter".asInstanceOf[filter]
@@ -543,6 +562,8 @@ object tabulatorTablesStrings {
   def fitDataFill: fitDataFill = "fitDataFill".asInstanceOf[fitDataFill]
   @scala.inline
   def fitDataStretch: fitDataStretch = "fitDataStretch".asInstanceOf[fitDataStretch]
+  @scala.inline
+  def fitDataTable: fitDataTable = "fitDataTable".asInstanceOf[fitDataTable]
   @scala.inline
   def flip: flip = "flip".asInstanceOf[flip]
   @scala.inline
@@ -599,6 +620,8 @@ object tabulatorTablesStrings {
   def local: local = "local".asInstanceOf[local]
   @scala.inline
   def lookup: lookup = "lookup".asInstanceOf[lookup]
+  @scala.inline
+  def manual: manual = "manual".asInstanceOf[manual]
   @scala.inline
   def max: max = "max".asInstanceOf[max]
   @scala.inline
@@ -671,6 +694,8 @@ object tabulatorTablesStrings {
   def sort: sort = "sort".asInstanceOf[sort]
   @scala.inline
   def star: star = "star".asInstanceOf[star]
+  @scala.inline
+  def starts: starts = "starts".asInstanceOf[starts]
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   @scala.inline

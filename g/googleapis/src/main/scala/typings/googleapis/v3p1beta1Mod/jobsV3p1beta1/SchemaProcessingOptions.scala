@@ -31,7 +31,7 @@ object SchemaProcessingOptions {
     htmlSanitization: String = null
   ): SchemaProcessingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableStreetAddressResolution)) __obj.updateDynamic("disableStreetAddressResolution")(disableStreetAddressResolution.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableStreetAddressResolution)) __obj.updateDynamic("disableStreetAddressResolution")(disableStreetAddressResolution.get.asInstanceOf[js.Any])
     if (htmlSanitization != null) __obj.updateDynamic("htmlSanitization")(htmlSanitization.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProcessingOptions]
   }

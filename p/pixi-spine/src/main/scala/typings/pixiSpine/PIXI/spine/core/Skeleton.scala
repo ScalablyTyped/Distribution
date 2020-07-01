@@ -11,8 +11,6 @@ trait Skeleton extends js.Object {
   var color: Color = js.native
   var data: SkeletonData = js.native
   var drawOrder: js.Array[Slot] = js.native
-  var flipX: Boolean = js.native
-  var flipY: Boolean = js.native
   var ikConstraints: js.Array[IkConstraint] = js.native
   var pathConstraints: js.Array[PathConstraint] = js.native
   var scaleX: Double = js.native
@@ -31,6 +29,10 @@ trait Skeleton extends js.Object {
   def findSlot(slotName: String): Slot = js.native
   def findSlotIndex(slotName: String): Double = js.native
   def findTransformConstraint(constraintName: String): TransformConstraint = js.native
+  def flipX: Boolean = js.native
+  def flipX(value: Boolean): js.Any = js.native
+  def flipY: Boolean = js.native
+  def flipY(value: Boolean): js.Any = js.native
   def getAttachment(slotIndex: Double, attachmentName: String): Attachment = js.native
   def getAttachmentByName(slotName: String, attachmentName: String): Attachment = js.native
   def getBounds(offset: Vector2, size: Vector2): Unit = js.native

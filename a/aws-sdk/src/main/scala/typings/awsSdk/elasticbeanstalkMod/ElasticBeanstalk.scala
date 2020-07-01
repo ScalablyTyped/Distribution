@@ -39,6 +39,19 @@ trait ElasticBeanstalk extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ApplyEnvironmentManagedActionResult, Unit]
   ): Request[ApplyEnvironmentManagedActionResult, AWSError] = js.native
   /**
+    * Add or change the operations role used by an environment. After this call is made, Elastic Beanstalk uses the associated operations role for permissions to downstream services during subsequent calls acting on this environment. For more information, see Operations roles in the AWS Elastic Beanstalk Developer Guide.
+    */
+  def associateEnvironmentOperationsRole(): Request[js.Object, AWSError] = js.native
+  def associateEnvironmentOperationsRole(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Add or change the operations role used by an environment. After this call is made, Elastic Beanstalk uses the associated operations role for permissions to downstream services during subsequent calls acting on this environment. For more information, see Operations roles in the AWS Elastic Beanstalk Developer Guide.
+    */
+  def associateEnvironmentOperationsRole(params: AssociateEnvironmentOperationsRoleMessage): Request[js.Object, AWSError] = js.native
+  def associateEnvironmentOperationsRole(
+    params: AssociateEnvironmentOperationsRoleMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
     * Checks if the specified CNAME is available.
     */
   def checkDNSAvailability(): Request[CheckDNSAvailabilityResultMessage, AWSError] = js.native
@@ -366,6 +379,19 @@ trait ElasticBeanstalk extends Service {
     params: DescribePlatformVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribePlatformVersionResult, Unit]
   ): Request[DescribePlatformVersionResult, AWSError] = js.native
+  /**
+    * Disassociate the operations role from an environment. After this call is made, Elastic Beanstalk uses the caller's permissions for permissions to downstream services during subsequent calls acting on this environment. For more information, see Operations roles in the AWS Elastic Beanstalk Developer Guide.
+    */
+  def disassociateEnvironmentOperationsRole(): Request[js.Object, AWSError] = js.native
+  def disassociateEnvironmentOperationsRole(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Disassociate the operations role from an environment. After this call is made, Elastic Beanstalk uses the caller's permissions for permissions to downstream services during subsequent calls acting on this environment. For more information, see Operations roles in the AWS Elastic Beanstalk Developer Guide.
+    */
+  def disassociateEnvironmentOperationsRole(params: DisassociateEnvironmentOperationsRoleMessage): Request[js.Object, AWSError] = js.native
+  def disassociateEnvironmentOperationsRole(
+    params: DisassociateEnvironmentOperationsRoleMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
   /**
     * Returns a list of the available solution stack names, with the public version first and then in reverse chronological order.
     */

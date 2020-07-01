@@ -127,6 +127,7 @@ trait TelegramBot extends EventEmitter {
   def getGameHighScores(userId: String): js.Promise[js.Array[GameHighScore]] = js.native
   def getGameHighScores(userId: String, options: GetGameHighScoresOptions): js.Promise[js.Array[GameHighScore]] = js.native
   def getMe(): js.Promise[User] = js.native
+  def getMyCommands(): js.Promise[js.Array[BotCommand]] = js.native
   def getUpdates(): js.Promise[js.Array[Update]] = js.native
   def getUpdates(options: GetUpdatesOptions): js.Promise[js.Array[Update]] = js.native
   def getUserProfilePhotos(userId: String): js.Promise[UserProfilePhotos] = js.native
@@ -390,6 +391,10 @@ trait TelegramBot extends EventEmitter {
   def sendContact(chatId: String, phoneNumber: String, firstName: String, options: SendContactOptions): js.Promise[Message] = js.native
   def sendContact(chatId: Double, phoneNumber: String, firstName: String): js.Promise[Message] = js.native
   def sendContact(chatId: Double, phoneNumber: String, firstName: String, options: SendContactOptions): js.Promise[Message] = js.native
+  def sendDice(chatId: String): js.Promise[Message] = js.native
+  def sendDice(chatId: String, options: SendDiceOptions): js.Promise[Message] = js.native
+  def sendDice(chatId: Double): js.Promise[Message] = js.native
+  def sendDice(chatId: Double, options: SendDiceOptions): js.Promise[Message] = js.native
   def sendDocument(chatId: String, doc: String): js.Promise[Message] = js.native
   def sendDocument(chatId: String, doc: String, options: SendDocumentOptions): js.Promise[Message] = js.native
   def sendDocument(chatId: String, doc: String, options: SendDocumentOptions, fileOpts: js.Any): js.Promise[Message] = js.native
@@ -544,8 +549,12 @@ trait TelegramBot extends EventEmitter {
   def sendVoice(chatId: Double, voice: Buffer, options: SendVoiceOptions): js.Promise[Message] = js.native
   def sendVoice(chatId: Double, voice: Stream): js.Promise[Message] = js.native
   def sendVoice(chatId: Double, voice: Stream, options: SendVoiceOptions): js.Promise[Message] = js.native
+  def setChatAdministratorCustomTitle(chatId: String, userId: String, customTitle: String): js.Promise[Boolean] = js.native
+  def setChatAdministratorCustomTitle(chatId: Double, userId: String, customTitle: String): js.Promise[Boolean] = js.native
   def setChatDescription(chatId: String, description: String): js.Promise[Boolean] = js.native
   def setChatDescription(chatId: Double, description: String): js.Promise[Boolean] = js.native
+  def setChatPermissions(chatId: String, chatPermissions: ChatPermissions): js.Promise[Boolean] = js.native
+  def setChatPermissions(chatId: Double, chatPermissions: ChatPermissions): js.Promise[Boolean] = js.native
   def setChatPhoto(chatId: String, photo: String): js.Promise[Boolean] = js.native
   def setChatPhoto(chatId: String, photo: Buffer): js.Promise[Boolean] = js.native
   def setChatPhoto(chatId: String, photo: Stream): js.Promise[Boolean] = js.native
@@ -558,6 +567,7 @@ trait TelegramBot extends EventEmitter {
   def setChatTitle(chatId: Double, title: String): js.Promise[Boolean] = js.native
   def setGameScore(userId: String, score: Double): js.Promise[Message | Boolean] = js.native
   def setGameScore(userId: String, score: Double, options: SetGameScoreOptions): js.Promise[Message | Boolean] = js.native
+  def setMyCommands(commands: js.Array[BotCommand]): js.Promise[Boolean] = js.native
   def setWebHook(url: String): js.Promise[_] = js.native
   def setWebHook(url: String, options: SetWebHookOptions): js.Promise[_] = js.native
   def startPolling(): js.Promise[_] = js.native

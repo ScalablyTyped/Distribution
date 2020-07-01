@@ -30,9 +30,9 @@ trait SchemaFeature extends js.Object {
 
 object SchemaFeature {
   @scala.inline
-  def apply(maxResults: Int | Double = null, model: String = null, `type`: String = null): SchemaFeature = {
+  def apply(maxResults: js.UndefOr[Double] = js.undefined, model: String = null, `type`: String = null): SchemaFeature = {
     val __obj = js.Dynamic.literal()
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFeature]

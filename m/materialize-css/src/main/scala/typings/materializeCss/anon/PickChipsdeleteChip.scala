@@ -5,11 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Pick<materialize-css.M.Chips, 'deleteChip'> */
-@js.native
 trait PickChipsdeleteChip extends js.Object {
-  @JSName("deleteChip")
-  var deleteChip_Original: js.Function1[/* n */ js.UndefOr[Double], Unit] = js.native
-  def deleteChip(): Unit = js.native
-  def deleteChip(n: Double): Unit = js.native
+  var deleteChip: js.UndefOr[js.Any] = js.undefined
+}
+
+object PickChipsdeleteChip {
+  @scala.inline
+  def apply(deleteChip: js.Any = null): PickChipsdeleteChip = {
+    val __obj = js.Dynamic.literal()
+    if (deleteChip != null) __obj.updateDynamic("deleteChip")(deleteChip.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PickChipsdeleteChip]
+  }
 }
 

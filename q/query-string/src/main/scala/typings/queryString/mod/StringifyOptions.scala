@@ -66,7 +66,6 @@ trait StringifyOptions extends js.Object {
   	});
   	//=> 'a=1&d=4'
   	```
-  	
   	@example
   	```
   	import queryString = require('query-string');

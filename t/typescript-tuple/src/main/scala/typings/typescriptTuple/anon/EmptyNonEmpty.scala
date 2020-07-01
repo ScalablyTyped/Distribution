@@ -11,7 +11,7 @@ trait EmptyNonEmpty[Shortest, TupleSet /* <: js.Array[js.Array[_]] */] extends j
 
 object EmptyNonEmpty {
   @scala.inline
-  def apply[Shortest, TupleSet](
+  def apply[Shortest, /* <: js.Array[js.Array[_]] */ TupleSet](
     empty: Shortest,
     nonEmpty: /* import warning: importer.ImportType#apply Failed type conversion: typescript-tuple.typescript-tuple/lib/utils.SortTwoTuple<Shortest, any, [Shortest, any]>[0] */ js.Any
   ): EmptyNonEmpty[Shortest, TupleSet] = {

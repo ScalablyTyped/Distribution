@@ -31,7 +31,7 @@ object SchemaDataTypeField {
     val __obj = js.Dynamic.literal()
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDataTypeField]
   }
 }

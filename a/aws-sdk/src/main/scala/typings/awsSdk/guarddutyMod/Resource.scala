@@ -18,6 +18,10 @@ trait Resource extends js.Object {
     * The type of AWS resource.
     */
   var ResourceType: js.UndefOr[String] = js.native
+  /**
+    * Contains information on the S3 bucket.
+    */
+  var S3BucketDetails: js.UndefOr[typings.awsSdk.guarddutyMod.S3BucketDetails] = js.native
 }
 
 object Resource {
@@ -25,12 +29,14 @@ object Resource {
   def apply(
     AccessKeyDetails: AccessKeyDetails = null,
     InstanceDetails: InstanceDetails = null,
-    ResourceType: String = null
+    ResourceType: String = null,
+    S3BucketDetails: S3BucketDetails = null
   ): Resource = {
     val __obj = js.Dynamic.literal()
     if (AccessKeyDetails != null) __obj.updateDynamic("AccessKeyDetails")(AccessKeyDetails.asInstanceOf[js.Any])
     if (InstanceDetails != null) __obj.updateDynamic("InstanceDetails")(InstanceDetails.asInstanceOf[js.Any])
     if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
+    if (S3BucketDetails != null) __obj.updateDynamic("S3BucketDetails")(S3BucketDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resource]
   }
 }

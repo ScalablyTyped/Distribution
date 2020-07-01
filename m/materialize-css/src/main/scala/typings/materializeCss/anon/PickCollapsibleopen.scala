@@ -5,10 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Pick<materialize-css.M.Collapsible, 'open'> */
-@js.native
 trait PickCollapsibleopen extends js.Object {
-  @JSName("open")
-  var open_Original: js.Function1[/* n */ Double, Unit] = js.native
-  def open(n: Double): Unit = js.native
+  var open: js.UndefOr[js.Any] = js.undefined
+}
+
+object PickCollapsibleopen {
+  @scala.inline
+  def apply(open: js.Any = null): PickCollapsibleopen = {
+    val __obj = js.Dynamic.literal()
+    if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PickCollapsibleopen]
+  }
 }
 

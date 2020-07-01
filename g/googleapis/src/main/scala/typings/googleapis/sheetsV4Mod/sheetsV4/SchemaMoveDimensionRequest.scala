@@ -30,9 +30,9 @@ trait SchemaMoveDimensionRequest extends js.Object {
 
 object SchemaMoveDimensionRequest {
   @scala.inline
-  def apply(destinationIndex: Int | Double = null, source: SchemaDimensionRange = null): SchemaMoveDimensionRequest = {
+  def apply(destinationIndex: js.UndefOr[Double] = js.undefined, source: SchemaDimensionRange = null): SchemaMoveDimensionRequest = {
     val __obj = js.Dynamic.literal()
-    if (destinationIndex != null) __obj.updateDynamic("destinationIndex")(destinationIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(destinationIndex)) __obj.updateDynamic("destinationIndex")(destinationIndex.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMoveDimensionRequest]
   }

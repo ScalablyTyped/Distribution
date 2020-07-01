@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Autocomplete
-  extends Component[AutocompleteOptions]
-     with Openable {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<AutocompleteOptions> * / any
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Openable * / any */ trait Autocomplete extends js.Object {
   /**
     * Index of the current selected option.
     */
@@ -16,6 +16,18 @@ trait Autocomplete
     * Number of matching autocomplete options.
     */
   var count: Double
+  /**
+    * If the autocomplete is open.
+    */
+  var isOpen: Boolean
+  /**
+    * Hide autocomplete.
+    */
+  def close(): Unit
+  /**
+    * Show autocomplete.
+    */
+  def open(): Unit
   /**
     * Select a specific autocomplete options.
     * @param el Element of the autocomplete option.
@@ -34,15 +46,12 @@ object Autocomplete {
     activeIndex: Double,
     close: () => Unit,
     count: Double,
-    destroy: () => Unit,
-    el: Element,
     isOpen: Boolean,
     open: () => Unit,
-    options: AutocompleteOptions,
     selectOption: Element => Unit,
     updateData: AutocompleteData => Unit
   ): Autocomplete = {
-    val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], close = js.Any.fromFunction0(close), count = count.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), el = el.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], open = js.Any.fromFunction0(open), options = options.asInstanceOf[js.Any], selectOption = js.Any.fromFunction1(selectOption), updateData = js.Any.fromFunction1(updateData))
+    val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], close = js.Any.fromFunction0(close), count = count.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], open = js.Any.fromFunction0(open), selectOption = js.Any.fromFunction1(selectOption), updateData = js.Any.fromFunction1(updateData))
     __obj.asInstanceOf[Autocomplete]
   }
 }

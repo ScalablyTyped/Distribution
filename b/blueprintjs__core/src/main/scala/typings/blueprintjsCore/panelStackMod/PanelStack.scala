@@ -14,6 +14,6 @@ class PanelStack ()
   var renderPanel: js.Any = js.native
   var renderPanels: js.Any = js.native
   @JSName("componentDidUpdate")
-  def componentDidUpdate_MPanelStack(prevProps: IPanelStackProps, _prevState: IPanelStackState, _snapshot: js.Object): Unit = js.native
+  def componentDidUpdate_MPanelStack(prevProps: IPanelStackProps, prevState: IPanelStackState): Unit = js.native
 }
 

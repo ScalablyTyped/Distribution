@@ -19,7 +19,7 @@ trait CreateReplicationInstanceMessage extends js.Object {
     */
   var AvailabilityZone: js.UndefOr[String] = js.native
   /**
-    * A list of DNS name servers supported for the replication instance.
+    * A list of custom DNS name servers supported for the replication instance to access your on-premise source or target database. This list overrides the default name servers supported by the replication instance. You can specify a comma-separated list of internet addresses for up to four on-premise DNS name servers. For example: "1.1.1.1,2.2.2.2,3.3.3.3,4.4.4.4" 
     */
   var DnsNameServers: js.UndefOr[String] = js.native
   /**
@@ -43,11 +43,11 @@ trait CreateReplicationInstanceMessage extends js.Object {
     */
   var PubliclyAccessible: js.UndefOr[BooleanOptional] = js.native
   /**
-    * The compute and memory capacity of the replication instance as specified by the replication instance class.  Valid Values: dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge  
+    * The compute and memory capacity of the replication instance as defined for the specified replication instance class. For example to specify the instance class dms.c4.large, set this parameter to "dms.c4.large". For more information on the settings and capacities for the available replication instance classes, see  Selecting the right AWS DMS replication instance for your migration. 
     */
   var ReplicationInstanceClass: String = js.native
   /**
-    * The replication instance identifier. This parameter is stored as a lowercase string. Constraints:   Must contain from 1 to 63 alphanumeric characters or hyphens.   First character must be a letter.   Can't end with a hyphen or contain two consecutive hyphens.   Example: myrepinstance 
+    * The replication instance identifier. This parameter is stored as a lowercase string. Constraints:   Must contain 1-63 alphanumeric characters or hyphens.   First character must be a letter.   Can't end with a hyphen or contain two consecutive hyphens.   Example: myrepinstance 
     */
   var ReplicationInstanceIdentifier: String = js.native
   /**

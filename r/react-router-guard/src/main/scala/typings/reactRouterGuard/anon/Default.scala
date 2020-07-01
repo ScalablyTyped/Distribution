@@ -11,7 +11,7 @@ trait Default[T /* <: ComponentType[_] */] extends js.Object {
 
 object Default {
   @scala.inline
-  def apply[T](default: T): Default[T] = {
+  def apply[/* <: typings.react.mod.ComponentType[_] */ T](default: T): Default[T] = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
     __obj.asInstanceOf[Default[T]]
   }

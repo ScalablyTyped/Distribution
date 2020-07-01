@@ -5,8 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SystemInfo extends js.Object {
+  /**
+    * Entity_id.
+    */
   var entity_id: String
-  /* Properties */
+  /**
+    * Asterisk version.
+    */
   var version: String
 }
 

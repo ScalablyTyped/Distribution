@@ -105,7 +105,7 @@ trait SelectRow[TRow /* <: js.Object */] extends js.Object {
 
 object SelectRow {
   @scala.inline
-  def apply[TRow](
+  def apply[/* <: js.Object */ TRow](
     mode: SelectRowMode,
     bgColor: String | (js.Function2[/* row */ TRow, /* isSelect */ Boolean, String]) = null,
     className: String | (js.Function2[/* row */ TRow, /* isSelect */ Boolean, String]) = null,

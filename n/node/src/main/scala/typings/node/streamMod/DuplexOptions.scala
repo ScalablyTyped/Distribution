@@ -8,10 +8,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.node.streamMod.WritableOptions because var conflicts: autoDestroy, destroy, highWaterMark, objectMode. Inlined decodeStrings, defaultencoding, emitClose, write, writev, `final` */ trait DuplexOptions extends ReadableOptions {
+- typings.node.streamMod.WritableOptions because var conflicts: autoDestroy, destroy, highWaterMark, objectMode. Inlined decodeStrings, defaultEncoding, emitClose, write, writev, `final` */ trait DuplexOptions extends ReadableOptions {
   var allowHalfOpen: js.UndefOr[Boolean] = js.undefined
   var decodeStrings: js.UndefOr[Boolean] = js.undefined
-  var defaultencoding: js.UndefOr[BufferEncoding] = js.undefined
+  var defaultEncoding: js.UndefOr[BufferEncoding] = js.undefined
   @JSName("destroy")
   var destroy_DuplexOptions: js.UndefOr[
     js.ThisFunction2[
@@ -61,7 +61,7 @@ object DuplexOptions {
     allowHalfOpen: js.UndefOr[Boolean] = js.undefined,
     autoDestroy: js.UndefOr[Boolean] = js.undefined,
     decodeStrings: js.UndefOr[Boolean] = js.undefined,
-    defaultencoding: BufferEncoding = null,
+    defaultEncoding: BufferEncoding = null,
     destroy: js.ThisFunction2[
       /* this */ Duplex, 
       /* error */ Error | Null, 
@@ -101,7 +101,7 @@ object DuplexOptions {
     if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen.get.asInstanceOf[js.Any])
     if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy.get.asInstanceOf[js.Any])
     if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings.get.asInstanceOf[js.Any])
-    if (defaultencoding != null) __obj.updateDynamic("defaultencoding")(defaultencoding.asInstanceOf[js.Any])
+    if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
     if (!js.isUndefined(emitClose)) __obj.updateDynamic("emitClose")(emitClose.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])

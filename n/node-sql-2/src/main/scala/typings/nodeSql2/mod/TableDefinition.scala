@@ -18,7 +18,7 @@ trait TableDefinition[Name /* <: String */, Row] extends js.Object {
 
 object TableDefinition {
   @scala.inline
-  def apply[Name, Row](
+  def apply[/* <: java.lang.String */ Name, Row](
     columns: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ CName in keyof Row ]: node-sql-2.sql.ColumnDefinition<CName, Row[CName]>}
     */ typings.nodeSql2.nodeSql2Strings.TableDefinition with TopLevel[Row],

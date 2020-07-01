@@ -1,11 +1,13 @@
 package typings.reactColor.editableInputMod
 
+import typings.react.mod.ChangeEvent
 import typings.react.mod.ClassAttributes
 import typings.react.mod.Key
 import typings.react.mod.LegacyRef
 import typings.reactColor.mod.Color
 import typings.reactColor.mod.ColorChangeHandler
 import typings.reactColor.mod.ColorResult
+import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +30,7 @@ object EditableInputProps {
     dragMax: String = null,
     key: Key = null,
     label: String = null,
-    onChange: /* color */ ColorResult => Unit = null,
+    onChange: (/* color */ ColorResult, /* event */ ChangeEvent[HTMLInputElement]) => Unit = null,
     ref: js.UndefOr[Null | LegacyRef[EditableInput]] = js.undefined,
     style: EditableInputStyles = null,
     value: js.Any = null
@@ -39,7 +41,7 @@ object EditableInputProps {
     if (dragMax != null) __obj.updateDynamic("dragMax")(dragMax.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

@@ -47,6 +47,26 @@ trait OptionsClipboard extends js.Object {
   var clipboardPasteParser: js.UndefOr[String | (js.Function1[/* clipboard */ js.Any, js.Array[_]])] = js.undefined
   /** The clipboardPasted event is triggered whenever data is successfuly pasted into the table. */
   var clipboardPasted: js.UndefOr[js.Function0[Unit]] = js.undefined
+  /**When copying to clipboard you may want to apply a different group header from the one usualy used in the table. You can now do this using the groupHeaderClipboard table option, which takes the same inputs as the standard groupHeader property. */
+  var groupHeaderClipboard: js.UndefOr[
+    (js.Function4[
+      /* value */ js.Any, 
+      /* count */ Double, 
+      /* data */ js.Any, 
+      /* group */ GroupComponent, 
+      String
+    ]) | (js.Array[js.Function3[/* value */ _, /* count */ Double, /* data */ _, String]])
+  ] = js.undefined
+  /**When the getHtml function is called you may want to apply a different group header from the one usualy used in the table. You can now do this using the groupHeaderHtmlOutput table option, which takes the same inputs as the standard groupHeader property. */
+  var groupHeaderHtmlOutput: js.UndefOr[
+    (js.Function4[
+      /* value */ js.Any, 
+      /* count */ Double, 
+      /* data */ js.Any, 
+      /* group */ GroupComponent, 
+      String
+    ]) | (js.Array[js.Function3[/* value */ _, /* count */ Double, /* data */ _, String]])
+  ] = js.undefined
 }
 
 object OptionsClipboard {
@@ -62,7 +82,21 @@ object OptionsClipboard {
     clipboardPasteAction: insert | update | replace = null,
     clipboardPasteError: () => Unit = null,
     clipboardPasteParser: String | (js.Function1[/* clipboard */ js.Any, js.Array[_]]) = null,
-    clipboardPasted: () => Unit = null
+    clipboardPasted: () => Unit = null,
+    groupHeaderClipboard: (js.Function4[
+      /* value */ js.Any, 
+      /* count */ Double, 
+      /* data */ js.Any, 
+      /* group */ GroupComponent, 
+      String
+    ]) | (js.Array[js.Function3[/* value */ _, /* count */ Double, /* data */ _, String]]) = null,
+    groupHeaderHtmlOutput: (js.Function4[
+      /* value */ js.Any, 
+      /* count */ Double, 
+      /* data */ js.Any, 
+      /* group */ GroupComponent, 
+      String
+    ]) | (js.Array[js.Function3[/* value */ _, /* count */ Double, /* data */ _, String]]) = null
   ): OptionsClipboard = {
     val __obj = js.Dynamic.literal()
     if (clipboard != null) __obj.updateDynamic("clipboard")(clipboard.asInstanceOf[js.Any])
@@ -76,6 +110,8 @@ object OptionsClipboard {
     if (clipboardPasteError != null) __obj.updateDynamic("clipboardPasteError")(js.Any.fromFunction0(clipboardPasteError))
     if (clipboardPasteParser != null) __obj.updateDynamic("clipboardPasteParser")(clipboardPasteParser.asInstanceOf[js.Any])
     if (clipboardPasted != null) __obj.updateDynamic("clipboardPasted")(js.Any.fromFunction0(clipboardPasted))
+    if (groupHeaderClipboard != null) __obj.updateDynamic("groupHeaderClipboard")(groupHeaderClipboard.asInstanceOf[js.Any])
+    if (groupHeaderHtmlOutput != null) __obj.updateDynamic("groupHeaderHtmlOutput")(groupHeaderHtmlOutput.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsClipboard]
   }
 }

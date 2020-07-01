@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "material__chips"
-version := "0.35-dt-20200515Z-9ee9ab"
+version := "0.35-dt-20200515Z-6b9c77"
 scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "material__base" % "0.35-dt-20200515Z-64199d",
-  "org.scalablytyped" %%% "material__ripple" % "0.35-dt-20200515Z-71f2a2",
-  "org.scalablytyped" %%% "std" % "3.9-18cbeb")
+  "org.scalablytyped" %%% "material__base" % "0.35-dt-20200515Z-5bcbd5",
+  "org.scalablytyped" %%% "material__ripple" % "0.35-dt-20200515Z-16f14e",
+  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

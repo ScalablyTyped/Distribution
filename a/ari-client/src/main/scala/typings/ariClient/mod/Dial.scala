@@ -6,12 +6,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Dial extends Event {
-  /* Properties */
+  /**
+    * The calling channel.
+    */
   var caller: js.UndefOr[Channel] = js.undefined
+  /**
+    * Current status of the dialing attempt to the peer.
+    */
   var dialstatus: String
+  /**
+    * The dial string for calling the peer channel.
+    */
   var dialstring: js.UndefOr[String] = js.undefined
+  /**
+    * Forwarding target requested by the original dialed channel.
+    */
   var forward: js.UndefOr[String] = js.undefined
+  /**
+    * Channel that the caller has been forwarded to.
+    */
   var forwarded: js.UndefOr[Channel] = js.undefined
+  /**
+    * The dialed channel.
+    */
   var peer: Channel
 }
 

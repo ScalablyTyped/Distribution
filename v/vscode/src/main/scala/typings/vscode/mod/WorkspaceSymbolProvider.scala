@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait WorkspaceSymbolProvider extends js.Object {
+trait WorkspaceSymbolProvider[T] extends js.Object {
   /**
     * Given a symbol fill in its [location](#SymbolInformation.location). This method is called whenever a symbol
     * is selected in the UI. Providers can implement this method and return incomplete symbols from
@@ -17,13 +17,7 @@ trait WorkspaceSymbolProvider extends js.Object {
     * @return The resolved symbol or a thenable that resolves to that. When no result is returned,
     * the given `symbol` is used.
     */
-  var resolveWorkspaceSymbol: js.UndefOr[
-    js.Function2[
-      /* symbol */ SymbolInformation, 
-      /* token */ CancellationToken, 
-      ProviderResult[SymbolInformation]
-    ]
-  ] = js.undefined
+  var resolveWorkspaceSymbol: js.UndefOr[js.Function2[/* symbol */ T, /* token */ CancellationToken, ProviderResult[T]]] = js.undefined
   /**
     * Project-wide search for a symbol matching the given query string.
     *
@@ -41,18 +35,18 @@ trait WorkspaceSymbolProvider extends js.Object {
     * @return An array of document highlights or a thenable that resolves to such. The lack of a result can be
     * signaled by returning `undefined`, `null`, or an empty array.
     */
-  def provideWorkspaceSymbols(query: String, token: CancellationToken): ProviderResult[js.Array[SymbolInformation]]
+  def provideWorkspaceSymbols(query: String, token: CancellationToken): ProviderResult[js.Array[T]]
 }
 
 object WorkspaceSymbolProvider {
   @scala.inline
-  def apply(
-    provideWorkspaceSymbols: (String, CancellationToken) => ProviderResult[js.Array[SymbolInformation]],
-    resolveWorkspaceSymbol: (/* symbol */ SymbolInformation, /* token */ CancellationToken) => ProviderResult[SymbolInformation] = null
-  ): WorkspaceSymbolProvider = {
+  def apply[T](
+    provideWorkspaceSymbols: (String, CancellationToken) => ProviderResult[js.Array[T]],
+    resolveWorkspaceSymbol: (/* symbol */ T, /* token */ CancellationToken) => ProviderResult[T] = null
+  ): WorkspaceSymbolProvider[T] = {
     val __obj = js.Dynamic.literal(provideWorkspaceSymbols = js.Any.fromFunction2(provideWorkspaceSymbols))
     if (resolveWorkspaceSymbol != null) __obj.updateDynamic("resolveWorkspaceSymbol")(js.Any.fromFunction2(resolveWorkspaceSymbol))
-    __obj.asInstanceOf[WorkspaceSymbolProvider]
+    __obj.asInstanceOf[WorkspaceSymbolProvider[T]]
   }
 }
 

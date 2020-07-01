@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object default extends js.Object {
   def apply(
-    hasDisabledMoveToLeftMoveToRightLeftArrowTextRightArrowTextLeftActiveRightActiveClassNameStyleDirection: TransferOperationProps
+    hasDisabledMoveToLeftMoveToRightLeftArrowTextRightArrowTextLeftActiveRightActiveClassNameStyleDirectionOneWay: TransferOperationProps
   ): Element = js.native
 }
 

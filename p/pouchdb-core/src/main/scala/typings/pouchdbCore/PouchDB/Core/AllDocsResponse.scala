@@ -15,7 +15,7 @@ trait AllDocsResponse[Content /* <: js.Object */] extends js.Object {
 
 object AllDocsResponse {
   @scala.inline
-  def apply[Content](
+  def apply[/* <: js.Object */ Content](
     offset: Double,
     rows: js.Array[Doc[Content]],
     total_rows: Double,

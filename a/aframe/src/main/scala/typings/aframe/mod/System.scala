@@ -16,7 +16,7 @@ trait System[T /* <: js.Object */] extends js.Object {
 
 object System {
   @scala.inline
-  def apply[T](
+  def apply[/* <: js.Object */ T](
     data: T,
     el: Entity[ObjectMap[Component[_, System[_]]]],
     init: () => Unit,

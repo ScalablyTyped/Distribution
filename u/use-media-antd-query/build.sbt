@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "use-media-antd-query"
-version := "1.0.1-e46d36"
+version := "1.0.2-bb59fd"
 scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -26,12 +26,12 @@ trait SchemaEmbeddedChart extends js.Object {
 object SchemaEmbeddedChart {
   @scala.inline
   def apply(
-    chartId: Int | Double = null,
+    chartId: js.UndefOr[Double] = js.undefined,
     position: SchemaEmbeddedObjectPosition = null,
     spec: SchemaChartSpec = null
   ): SchemaEmbeddedChart = {
     val __obj = js.Dynamic.literal()
-    if (chartId != null) __obj.updateDynamic("chartId")(chartId.asInstanceOf[js.Any])
+    if (!js.isUndefined(chartId)) __obj.updateDynamic("chartId")(chartId.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (spec != null) __obj.updateDynamic("spec")(spec.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEmbeddedChart]

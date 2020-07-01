@@ -51,22 +51,22 @@ trait SchemaNetworkDiagnostics extends js.Object {
 object SchemaNetworkDiagnostics {
   @scala.inline
   def apply(
-    androidNetworkSubtype: Int | Double = null,
-    androidNetworkType: Int | Double = null,
-    iosNetworkType: Int | Double = null,
+    androidNetworkSubtype: js.UndefOr[Double] = js.undefined,
+    androidNetworkType: js.UndefOr[Double] = js.undefined,
+    iosNetworkType: js.UndefOr[Double] = js.undefined,
     kind: String = null,
     networkOperatorCode: String = null,
     networkOperatorName: String = null,
-    registrationLatencyMillis: Int | Double = null
+    registrationLatencyMillis: js.UndefOr[Double] = js.undefined
   ): SchemaNetworkDiagnostics = {
     val __obj = js.Dynamic.literal()
-    if (androidNetworkSubtype != null) __obj.updateDynamic("androidNetworkSubtype")(androidNetworkSubtype.asInstanceOf[js.Any])
-    if (androidNetworkType != null) __obj.updateDynamic("androidNetworkType")(androidNetworkType.asInstanceOf[js.Any])
-    if (iosNetworkType != null) __obj.updateDynamic("iosNetworkType")(iosNetworkType.asInstanceOf[js.Any])
+    if (!js.isUndefined(androidNetworkSubtype)) __obj.updateDynamic("androidNetworkSubtype")(androidNetworkSubtype.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(androidNetworkType)) __obj.updateDynamic("androidNetworkType")(androidNetworkType.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(iosNetworkType)) __obj.updateDynamic("iosNetworkType")(iosNetworkType.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (networkOperatorCode != null) __obj.updateDynamic("networkOperatorCode")(networkOperatorCode.asInstanceOf[js.Any])
     if (networkOperatorName != null) __obj.updateDynamic("networkOperatorName")(networkOperatorName.asInstanceOf[js.Any])
-    if (registrationLatencyMillis != null) __obj.updateDynamic("registrationLatencyMillis")(registrationLatencyMillis.asInstanceOf[js.Any])
+    if (!js.isUndefined(registrationLatencyMillis)) __obj.updateDynamic("registrationLatencyMillis")(registrationLatencyMillis.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNetworkDiagnostics]
   }
 }

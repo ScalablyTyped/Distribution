@@ -10,6 +10,7 @@ class QuestionCustomWidget protected () extends js.Object {
   def this(name: String, widgetJson: js.Any) = this()
   var htmlTemplate: String = js.native
   val isDefaultRender: Boolean = js.native
+  var isFirstRender: Boolean = js.native
   var name: String = js.native
   val pdfQuestionType: String = js.native
   val pdfRender: js.Any = js.native

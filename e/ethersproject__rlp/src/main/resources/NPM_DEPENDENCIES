@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ethersproject/rlp" : "5.0.0-beta.133"
+      "@ethersproject/rlp" : "5.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@ethersproject/rlp" : "5.0.0-beta.133"
+      "@ethersproject/rlp" : "5.0.1"
     }
   ],
   "compile-devDependencies" : [

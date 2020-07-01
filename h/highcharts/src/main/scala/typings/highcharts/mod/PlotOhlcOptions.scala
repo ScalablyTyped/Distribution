@@ -73,6 +73,12 @@ trait PlotOhlcOptions extends js.Object {
     */
   var boostThreshold: js.UndefOr[Double] = js.undefined
   /**
+    * (Highcharts, Highstock, Gantt) When `true`, the columns will center in
+    * the category, ignoring null or missing points. When `false`, space will
+    * be reserved for null or missing points.
+    */
+  var centerInCategory: js.UndefOr[Boolean] = js.undefined
+  /**
     * (Highstock) An additional class name to apply to the series' graphical
     * elements. This option does not replace default class names of the
     * graphical element.
@@ -624,6 +630,7 @@ object PlotOhlcOptions {
     animationLimit: js.UndefOr[Double] = js.undefined,
     boostBlending: OptionsBoostBlendingValue = null,
     boostThreshold: js.UndefOr[Double] = js.undefined,
+    centerInCategory: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
     color: ColorString | GradientColorObject | PatternObject = null,
@@ -704,6 +711,7 @@ object PlotOhlcOptions {
     if (!js.isUndefined(animationLimit)) __obj.updateDynamic("animationLimit")(animationLimit.get.asInstanceOf[js.Any])
     if (boostBlending != null) __obj.updateDynamic("boostBlending")(boostBlending.asInstanceOf[js.Any])
     if (!js.isUndefined(boostThreshold)) __obj.updateDynamic("boostThreshold")(boostThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(centerInCategory)) __obj.updateDynamic("centerInCategory")(centerInCategory.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])

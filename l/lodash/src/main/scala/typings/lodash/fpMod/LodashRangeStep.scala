@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashRangeStep extends js.Object {
+trait LodashRangeStep extends LodashConvertible {
   def apply(start: Double): LodashRangeStep1x1 = js.native
   def apply(start: Double, end: Double): LodashRangeStep1x3 = js.native
   def apply(start: Double, end: Double, step: Double): js.Array[Double] = js.native

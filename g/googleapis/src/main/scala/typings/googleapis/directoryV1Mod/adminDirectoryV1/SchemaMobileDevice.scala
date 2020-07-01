@@ -1,6 +1,6 @@
 package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
-import typings.googleapis.AnonDisplayName
+import typings.googleapis.anon.DisplayName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait SchemaMobileDevice extends js.Object {
   /**
     * List of applications installed on Mobile Device
     */
-  var applications: js.UndefOr[js.Array[AnonDisplayName]] = js.native
+  var applications: js.UndefOr[js.Array[DisplayName]] = js.native
   /**
     * Mobile Device Baseband version (Read-only)
     */
@@ -179,7 +179,7 @@ object SchemaMobileDevice {
   @scala.inline
   def apply(
     adbStatus: js.UndefOr[Boolean] = js.undefined,
-    applications: js.Array[AnonDisplayName] = null,
+    applications: js.Array[DisplayName] = null,
     basebandVersion: String = null,
     bootloaderVersion: String = null,
     brand: String = null,
@@ -220,14 +220,14 @@ object SchemaMobileDevice {
     wifiMacAddress: String = null
   ): SchemaMobileDevice = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adbStatus)) __obj.updateDynamic("adbStatus")(adbStatus.asInstanceOf[js.Any])
+    if (!js.isUndefined(adbStatus)) __obj.updateDynamic("adbStatus")(adbStatus.get.asInstanceOf[js.Any])
     if (applications != null) __obj.updateDynamic("applications")(applications.asInstanceOf[js.Any])
     if (basebandVersion != null) __obj.updateDynamic("basebandVersion")(basebandVersion.asInstanceOf[js.Any])
     if (bootloaderVersion != null) __obj.updateDynamic("bootloaderVersion")(bootloaderVersion.asInstanceOf[js.Any])
     if (brand != null) __obj.updateDynamic("brand")(brand.asInstanceOf[js.Any])
     if (buildNumber != null) __obj.updateDynamic("buildNumber")(buildNumber.asInstanceOf[js.Any])
     if (defaultLanguage != null) __obj.updateDynamic("defaultLanguage")(defaultLanguage.asInstanceOf[js.Any])
-    if (!js.isUndefined(developerOptionsStatus)) __obj.updateDynamic("developerOptionsStatus")(developerOptionsStatus.asInstanceOf[js.Any])
+    if (!js.isUndefined(developerOptionsStatus)) __obj.updateDynamic("developerOptionsStatus")(developerOptionsStatus.get.asInstanceOf[js.Any])
     if (deviceCompromisedStatus != null) __obj.updateDynamic("deviceCompromisedStatus")(deviceCompromisedStatus.asInstanceOf[js.Any])
     if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
     if (devicePasswordStatus != null) __obj.updateDynamic("devicePasswordStatus")(devicePasswordStatus.asInstanceOf[js.Any])
@@ -241,7 +241,7 @@ object SchemaMobileDevice {
     if (kernelVersion != null) __obj.updateDynamic("kernelVersion")(kernelVersion.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (lastSync != null) __obj.updateDynamic("lastSync")(lastSync.asInstanceOf[js.Any])
-    if (!js.isUndefined(managedAccountIsOnOwnerProfile)) __obj.updateDynamic("managedAccountIsOnOwnerProfile")(managedAccountIsOnOwnerProfile.asInstanceOf[js.Any])
+    if (!js.isUndefined(managedAccountIsOnOwnerProfile)) __obj.updateDynamic("managedAccountIsOnOwnerProfile")(managedAccountIsOnOwnerProfile.get.asInstanceOf[js.Any])
     if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer.asInstanceOf[js.Any])
     if (meid != null) __obj.updateDynamic("meid")(meid.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
@@ -255,9 +255,9 @@ object SchemaMobileDevice {
     if (securityPatchLevel != null) __obj.updateDynamic("securityPatchLevel")(securityPatchLevel.asInstanceOf[js.Any])
     if (serialNumber != null) __obj.updateDynamic("serialNumber")(serialNumber.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsWorkProfile)) __obj.updateDynamic("supportsWorkProfile")(supportsWorkProfile.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsWorkProfile)) __obj.updateDynamic("supportsWorkProfile")(supportsWorkProfile.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(unknownSourcesStatus)) __obj.updateDynamic("unknownSourcesStatus")(unknownSourcesStatus.asInstanceOf[js.Any])
+    if (!js.isUndefined(unknownSourcesStatus)) __obj.updateDynamic("unknownSourcesStatus")(unknownSourcesStatus.get.asInstanceOf[js.Any])
     if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
     if (wifiMacAddress != null) __obj.updateDynamic("wifiMacAddress")(wifiMacAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMobileDevice]

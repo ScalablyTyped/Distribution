@@ -1,7 +1,9 @@
 package typings.antd.draggerMod
 
+import typings.antd.antdStrings.PATCH
 import typings.antd.antdStrings.POST
 import typings.antd.antdStrings.PUT
+import typings.antd.antdStrings.patch_
 import typings.antd.antdStrings.post_
 import typings.antd.antdStrings.put_
 import typings.antd.uploadInterfaceMod.HttpRequestHeader
@@ -12,6 +14,7 @@ import typings.antd.uploadInterfaceMod.ShowUploadListInterface
 import typings.antd.uploadInterfaceMod.TransformFileHandler
 import typings.antd.uploadInterfaceMod.UploadChangeParam
 import typings.antd.uploadInterfaceMod.UploadFile
+import typings.antd.uploadInterfaceMod.UploadListProgressProps
 import typings.antd.uploadInterfaceMod.UploadListType
 import typings.antd.uploadInterfaceMod.UploadLocale
 import typings.antd.uploadInterfaceMod.UploadType
@@ -46,7 +49,7 @@ trait DraggerProps extends js.Object {
   var isImageUrl: js.UndefOr[js.Function1[/* file */ UploadFile[_], Boolean]] = js.undefined
   var listType: js.UndefOr[UploadListType] = js.undefined
   var locale: js.UndefOr[UploadLocale] = js.undefined
-  var method: js.UndefOr[POST | PUT | post_ | put_] = js.undefined
+  var method: js.UndefOr[POST | PUT | PATCH | post_ | put_ | patch_] = js.undefined
   var multiple: js.UndefOr[Boolean] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* info */ UploadChangeParam[UploadFile[_]], Unit]] = js.undefined
@@ -58,6 +61,7 @@ trait DraggerProps extends js.Object {
   var openFileDialogOnClick: js.UndefOr[Boolean] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var previewFile: js.UndefOr[PreviewFileHandler] = js.undefined
+  var progress: js.UndefOr[UploadListProgressProps] = js.undefined
   var showUploadList: js.UndefOr[Boolean | ShowUploadListInterface] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var supportServerRender: js.UndefOr[Boolean] = js.undefined
@@ -86,7 +90,7 @@ object DraggerProps {
     isImageUrl: /* file */ UploadFile[_] => Boolean = null,
     listType: UploadListType = null,
     locale: UploadLocale = null,
-    method: POST | PUT | post_ | put_ = null,
+    method: POST | PUT | PATCH | post_ | put_ | patch_ = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     onChange: /* info */ UploadChangeParam[UploadFile[_]] => Unit = null,
@@ -96,6 +100,7 @@ object DraggerProps {
     openFileDialogOnClick: js.UndefOr[Boolean] = js.undefined,
     prefixCls: String = null,
     previewFile: /* file */ File | Blob => js.Thenable[String] = null,
+    progress: UploadListProgressProps = null,
     showUploadList: Boolean | ShowUploadListInterface = null,
     style: CSSProperties = null,
     supportServerRender: js.UndefOr[Boolean] = js.undefined,
@@ -131,6 +136,7 @@ object DraggerProps {
     if (!js.isUndefined(openFileDialogOnClick)) __obj.updateDynamic("openFileDialogOnClick")(openFileDialogOnClick.get.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (previewFile != null) __obj.updateDynamic("previewFile")(js.Any.fromFunction1(previewFile))
+    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
     if (showUploadList != null) __obj.updateDynamic("showUploadList")(showUploadList.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (!js.isUndefined(supportServerRender)) __obj.updateDynamic("supportServerRender")(supportServerRender.get.asInstanceOf[js.Any])

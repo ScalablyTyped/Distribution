@@ -1,51 +1,35 @@
 package typings.grommet.anon
 
-import typings.grommet.grommetStrings.large
-import typings.grommet.grommetStrings.medium
-import typings.grommet.grommetStrings.none
-import typings.grommet.grommetStrings.small
-import typings.grommet.grommetStrings.xlarge
-import typings.grommet.grommetStrings.xsmall
-import typings.grommet.grommetStrings.xxsmall
+import typings.grommet.baseMod.ExtendType
+import typings.grommet.utilsMod.BackgroundType
+import typings.grommet.utilsMod.GapType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Header extends js.Object {
-  var body: js.UndefOr[none | xxsmall | xsmall | small | medium | large | xlarge | Bottom] = js.undefined
-  var bottom: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | String] = js.undefined
-  var footer: js.UndefOr[none | xxsmall | xsmall | small | medium | large | xlarge | Bottom] = js.undefined
-  var header: js.UndefOr[none | xxsmall | xsmall | small | medium | large | xlarge | Bottom] = js.undefined
-  var horizontal: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | String] = js.undefined
-  var left: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | String] = js.undefined
-  var right: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | String] = js.undefined
-  var top: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | String] = js.undefined
-  var vertical: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | String] = js.undefined
+  var background: js.UndefOr[BackgroundType] = js.undefined
+  var extend: js.UndefOr[ExtendType] = js.undefined
+  var gap: js.UndefOr[GapType] = js.undefined
+  var header: js.UndefOr[BorderExtend] = js.undefined
+  var panel: js.UndefOr[ExtendExtendType] = js.undefined
 }
 
 object Header {
   @scala.inline
   def apply(
-    body: none | xxsmall | xsmall | small | medium | large | xlarge | Bottom = null,
-    bottom: xxsmall | xsmall | small | medium | large | xlarge | String = null,
-    footer: none | xxsmall | xsmall | small | medium | large | xlarge | Bottom = null,
-    header: none | xxsmall | xsmall | small | medium | large | xlarge | Bottom = null,
-    horizontal: xxsmall | xsmall | small | medium | large | xlarge | String = null,
-    left: xxsmall | xsmall | small | medium | large | xlarge | String = null,
-    right: xxsmall | xsmall | small | medium | large | xlarge | String = null,
-    top: xxsmall | xsmall | small | medium | large | xlarge | String = null,
-    vertical: xxsmall | xsmall | small | medium | large | xlarge | String = null
+    background: BackgroundType = null,
+    extend: ExtendType = null,
+    gap: GapType = null,
+    header: BorderExtend = null,
+    panel: ExtendExtendType = null
   ): Header = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
+    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
+    if (panel != null) __obj.updateDynamic("panel")(panel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Header]
   }
 }

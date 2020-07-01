@@ -106,8 +106,8 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait FnCallMockedValue extends js.Object {
-    def apply[T](mockedValue: T): Unit = js.native
+  trait FnCallMockedValues extends js.Object {
+    def apply[T](mockedValues: T*): Unit = js.native
   }
   
 }

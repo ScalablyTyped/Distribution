@@ -21,6 +21,8 @@ trait Calls extends js.Object {
   def mostRecent(): CallInfo
   /** By chaining the spy with calls.reset(), will clears all tracking for a spy */
   def reset(): Unit
+  /** Set this spy to do a shallow clone of arguments passed to each invocation. */
+  def saveArgumentsByValue(): Unit
 }
 
 object Calls {
@@ -33,9 +35,10 @@ object Calls {
     count: () => Double,
     first: () => CallInfo,
     mostRecent: () => CallInfo,
-    reset: () => Unit
+    reset: () => Unit,
+    saveArgumentsByValue: () => Unit
   ): Calls = {
-    val __obj = js.Dynamic.literal(all = js.Any.fromFunction0(all), allArgs = js.Any.fromFunction0(allArgs), any = js.Any.fromFunction0(any), argsFor = js.Any.fromFunction1(argsFor), count = js.Any.fromFunction0(count), first = js.Any.fromFunction0(first), mostRecent = js.Any.fromFunction0(mostRecent), reset = js.Any.fromFunction0(reset))
+    val __obj = js.Dynamic.literal(all = js.Any.fromFunction0(all), allArgs = js.Any.fromFunction0(allArgs), any = js.Any.fromFunction0(any), argsFor = js.Any.fromFunction1(argsFor), count = js.Any.fromFunction0(count), first = js.Any.fromFunction0(first), mostRecent = js.Any.fromFunction0(mostRecent), reset = js.Any.fromFunction0(reset), saveArgumentsByValue = js.Any.fromFunction0(saveArgumentsByValue))
     __obj.asInstanceOf[Calls]
   }
 }

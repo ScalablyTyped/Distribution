@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "falcor-router"
-version := "0.8-dt-20200515Z-fff2c1"
+version := "0.8-dt-20200515Z-0703c8"
 scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "falcor" % "2.0-dt-20200515Z-19ded6",
+  "org.scalablytyped" %%% "falcor" % "2.0-dt-20200515Z-909f4c",
   "org.scalablytyped" %%% "falcor-http-datasource" % "0.1.3-dt-20200515Z-e55553",
-  "org.scalablytyped" %%% "falcor-json-graph" % "1.1.7-dt-20200515Z-8e7934",
-  "org.scalablytyped" %%% "rx-core" % "4.0-dt-20200515Z-cad6e8",
-  "org.scalablytyped" %%% "rx-lite-aggregates" % "4.0-dt-20200515Z-20eeae",
-  "org.scalablytyped" %%% "std" % "3.9-18cbeb")
+  "org.scalablytyped" %%% "falcor-json-graph" % "1.1.7-dt-20200515Z-ad1558",
+  "org.scalablytyped" %%% "rx-core" % "4.0-dt-20200515Z-268656",
+  "org.scalablytyped" %%% "rx-lite-aggregates" % "4.0-dt-20200515Z-899297",
+  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

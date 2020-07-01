@@ -83,6 +83,7 @@ object VirtualizedListProps {
     endFillColor: String = null,
     extraData: js.Any = null,
     fadingEdgeLength: js.UndefOr[Double] = js.undefined,
+    focusable: js.UndefOr[Boolean] = js.undefined,
     getItem: (/* data */ js.Any, /* index */ Double) => ItemT = null,
     getItemCount: /* data */ js.Any => Double = null,
     getItemLayout: (/* data */ js.Any, /* index */ Double) => Index = null,
@@ -221,6 +222,7 @@ object VirtualizedListProps {
     if (endFillColor != null) __obj.updateDynamic("endFillColor")(endFillColor.asInstanceOf[js.Any])
     if (extraData != null) __obj.updateDynamic("extraData")(extraData.asInstanceOf[js.Any])
     if (!js.isUndefined(fadingEdgeLength)) __obj.updateDynamic("fadingEdgeLength")(fadingEdgeLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.get.asInstanceOf[js.Any])
     if (getItem != null) __obj.updateDynamic("getItem")(js.Any.fromFunction2(getItem))
     if (getItemCount != null) __obj.updateDynamic("getItemCount")(js.Any.fromFunction1(getItemCount))
     if (getItemLayout != null) __obj.updateDynamic("getItemLayout")(js.Any.fromFunction2(getItemLayout))

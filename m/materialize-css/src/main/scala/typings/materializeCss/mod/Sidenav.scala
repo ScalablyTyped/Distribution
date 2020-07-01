@@ -1,7 +1,5 @@
 package typings.materializeCss.mod
 
-import typings.materializeCss.M.SidenavOptions
-import typings.materializeCss.MElements
 import typings.materializeCss.anon.PartialSidenavOptions
 import typings.std.Element
 import scala.scalajs.js
@@ -13,11 +11,6 @@ import scala.scalajs.js.annotation._
 class Sidenav ()
   extends typings.materializeCss.M.Sidenav {
   /**
-    * The DOM element the plugin was initialized with
-    */
-  /* CompleteClass */
-  override var el: Element = js.native
-  /**
     * Describes if Sidenav is being dragged
     */
   /* CompleteClass */
@@ -27,20 +20,19 @@ class Sidenav ()
     */
   /* CompleteClass */
   override var isFixed: Boolean = js.native
+  /**
+    * Describes open/close state of Sidenav
+    */
   /* CompleteClass */
   override var isOpen: Boolean = js.native
   /**
-    * The options the instance was initialized with
+    * Closes Sidenav
     */
-  /* CompleteClass */
-  override var options: SidenavOptions = js.native
   /* CompleteClass */
   override def close(): Unit = js.native
   /**
-    * Destroy plugin instance and teardown
+    * Opens Sidenav
     */
-  /* CompleteClass */
-  override def destroy(): Unit = js.native
   /* CompleteClass */
   override def open(): Unit = js.native
 }
@@ -56,8 +48,13 @@ object Sidenav extends js.Object {
   /**
     * Init Sidenavs
     */
-  def init(els: MElements): js.Array[typings.materializeCss.M.Sidenav] = js.native
-  def init(els: MElements, options: PartialSidenavOptions): js.Array[typings.materializeCss.M.Sidenav] = js.native
+  def init(
+    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any
+  ): js.Array[typings.materializeCss.M.Sidenav] = js.native
+  def init(
+    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any,
+    options: PartialSidenavOptions
+  ): js.Array[typings.materializeCss.M.Sidenav] = js.native
   /**
     * Init Sidenav
     */

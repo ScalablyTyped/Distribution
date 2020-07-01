@@ -18,7 +18,7 @@ trait DisplayProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Obj
 
 object DisplayProps {
   @scala.inline
-  def apply[ThemeType](display: js.UndefOr[Null | (ResponsiveValue[DisplayProperty, ThemeType])] = js.undefined): DisplayProps[ThemeType] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](display: js.UndefOr[Null | (ResponsiveValue[DisplayProperty, ThemeType])] = js.undefined): DisplayProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(display)) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayProps[ThemeType]]

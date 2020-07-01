@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateDeploymentResult extends js.Object {
   /**
-    *  When the fileMap argument is provided in the request, the fileUploadUrls will contain a map of file names to upload url. 
+    *  When the fileMap argument is provided in the request, fileUploadUrls will contain a map of file names to upload URLs. 
     */
   var fileUploadUrls: FileUploadUrls = js.native
   /**
-    *  The jobId for this deployment, will supply to start deployment api. 
+    *  The job ID for this deployment. will supply to start deployment api. 
     */
   var jobId: js.UndefOr[JobId] = js.native
   /**
-    *  When the fileMap argument is NOT provided. This zipUploadUrl will be returned. 
+    *  When the fileMap argument is not provided in the request, this zipUploadUrl is returned. 
     */
   var zipUploadUrl: UploadUrl = js.native
 }

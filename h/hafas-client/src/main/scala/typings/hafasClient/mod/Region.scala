@@ -5,9 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A region is a group of stations, for example a metropolitan area or a geographical or cultural region.
+  */
 trait Region extends js.Object {
   var id: String
   var name: String
+  /** station ids */
   var stations: js.Array[String]
   var `type`: region
 }

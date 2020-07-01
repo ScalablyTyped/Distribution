@@ -103,14 +103,19 @@ object ConnectionOptions {
     fsync: js.UndefOr[Boolean] = js.undefined,
     ha: js.UndefOr[Boolean] = js.undefined,
     haInterval: js.UndefOr[Double] = js.undefined,
+    heartbeatFrequencyMS: js.UndefOr[Double] = js.undefined,
     ignoreUndefined: js.UndefOr[Boolean] = js.undefined,
     j: js.UndefOr[Boolean] = js.undefined,
     journal: js.UndefOr[Boolean] = js.undefined,
     keepAlive: js.UndefOr[Boolean] = js.undefined,
     keepAliveInitialDelay: js.UndefOr[Double] = js.undefined,
+    localThresholdMS: js.UndefOr[Double] = js.undefined,
     logger: js.Object | log = null,
     loggerLevel: String = null,
+    maxIdleTimeMS: js.UndefOr[Double] = js.undefined,
+    maxPoolSize: js.UndefOr[Double] = js.undefined,
     maxStalenessSeconds: js.UndefOr[Double] = js.undefined,
+    minPoolSize: js.UndefOr[Double] = js.undefined,
     minSize: js.UndefOr[Double] = js.undefined,
     mongos: js.Any = null,
     monitorCommands: js.UndefOr[Boolean] = js.undefined,
@@ -166,6 +171,7 @@ object ConnectionOptions {
     user: String = null,
     validateOptions: js.Object | Boolean = null,
     w: Double | majority | String = null,
+    waitQueueTimeoutMS: js.UndefOr[Double] = js.undefined,
     wtimeout: js.UndefOr[Double] = js.undefined
   ): ConnectionOptions = {
     val __obj = js.Dynamic.literal()
@@ -195,14 +201,19 @@ object ConnectionOptions {
     if (!js.isUndefined(fsync)) __obj.updateDynamic("fsync")(fsync.get.asInstanceOf[js.Any])
     if (!js.isUndefined(ha)) __obj.updateDynamic("ha")(ha.get.asInstanceOf[js.Any])
     if (!js.isUndefined(haInterval)) __obj.updateDynamic("haInterval")(haInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(heartbeatFrequencyMS)) __obj.updateDynamic("heartbeatFrequencyMS")(heartbeatFrequencyMS.get.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined.get.asInstanceOf[js.Any])
     if (!js.isUndefined(j)) __obj.updateDynamic("j")(j.get.asInstanceOf[js.Any])
     if (!js.isUndefined(journal)) __obj.updateDynamic("journal")(journal.get.asInstanceOf[js.Any])
     if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.get.asInstanceOf[js.Any])
     if (!js.isUndefined(keepAliveInitialDelay)) __obj.updateDynamic("keepAliveInitialDelay")(keepAliveInitialDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(localThresholdMS)) __obj.updateDynamic("localThresholdMS")(localThresholdMS.get.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     if (loggerLevel != null) __obj.updateDynamic("loggerLevel")(loggerLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxIdleTimeMS)) __obj.updateDynamic("maxIdleTimeMS")(maxIdleTimeMS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPoolSize)) __obj.updateDynamic("maxPoolSize")(maxPoolSize.get.asInstanceOf[js.Any])
     if (!js.isUndefined(maxStalenessSeconds)) __obj.updateDynamic("maxStalenessSeconds")(maxStalenessSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minPoolSize)) __obj.updateDynamic("minPoolSize")(minPoolSize.get.asInstanceOf[js.Any])
     if (!js.isUndefined(minSize)) __obj.updateDynamic("minSize")(minSize.get.asInstanceOf[js.Any])
     if (mongos != null) __obj.updateDynamic("mongos")(mongos.asInstanceOf[js.Any])
     if (!js.isUndefined(monitorCommands)) __obj.updateDynamic("monitorCommands")(monitorCommands.get.asInstanceOf[js.Any])
@@ -258,6 +269,7 @@ object ConnectionOptions {
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     if (validateOptions != null) __obj.updateDynamic("validateOptions")(validateOptions.asInstanceOf[js.Any])
     if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitQueueTimeoutMS)) __obj.updateDynamic("waitQueueTimeoutMS")(waitQueueTimeoutMS.get.asInstanceOf[js.Any])
     if (!js.isUndefined(wtimeout)) __obj.updateDynamic("wtimeout")(wtimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionOptions]
   }

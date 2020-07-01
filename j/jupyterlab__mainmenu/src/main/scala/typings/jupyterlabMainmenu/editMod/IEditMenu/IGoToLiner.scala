@@ -19,7 +19,7 @@ trait IGoToLiner[T /* <: Widget */] extends IMenuExtender[T] {
 
 object IGoToLiner {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.luminoWidgets.mod.Widget */ T](
     tracker: IWidgetTracker[T],
     goToLine: /* widget */ T => Unit = null,
     isEnabled: T => Boolean = null

@@ -1,7 +1,7 @@
 
 # Scala.js typings for html-minifier
 
-Typings are for version 3.5
+Typings are for version 4.0
 
 ## Library description:
 Highly configurable, well-tested, JavaScript-based HTML minifier.

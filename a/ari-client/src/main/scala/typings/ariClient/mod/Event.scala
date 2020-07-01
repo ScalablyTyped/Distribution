@@ -6,8 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Event extends Message {
-  /* Properties */
+  /**
+    * Name of the application receiving the event.
+    */
   var application: String
+  /**
+    * Time at which this event was created.
+    */
   var timestamp: Date
 }
 

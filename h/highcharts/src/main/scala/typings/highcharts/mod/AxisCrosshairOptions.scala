@@ -16,7 +16,7 @@ trait AxisCrosshairOptions extends js.Object {
     * `rgba(204,214,235,0.25)` for category axes, where the crosshair by
     * default highlights the whole category.
     */
-  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var color: js.UndefOr[ColorType] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The dash style for the
     * crosshair. See plotOptions.series.dashStyle for possible values.
@@ -52,7 +52,7 @@ object AxisCrosshairOptions {
   @scala.inline
   def apply(
     className: String = null,
-    color: ColorString | GradientColorObject | PatternObject = null,
+    color: ColorType = null,
     dashStyle: DashStyleValue = null,
     label: AxisCrosshairLabelOptions = null,
     snap: js.UndefOr[Boolean] = js.undefined,

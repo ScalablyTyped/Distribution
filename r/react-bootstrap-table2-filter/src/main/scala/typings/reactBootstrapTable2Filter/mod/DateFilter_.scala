@@ -21,7 +21,7 @@ trait DateFilter_[T /* <: js.Object */]
 
 object DateFilter_ {
   @scala.inline
-  def apply[T](
+  def apply[/* <: js.Object */ T](
     className: String = null,
     comparator: js.Array[Comparator] = null,
     comparatorClassName: String = null,

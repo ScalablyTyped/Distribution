@@ -13,7 +13,7 @@ trait QuadRunIteratee[Q /* <: BaseQuad */] extends js.Object {
 
 object QuadRunIteratee {
   @scala.inline
-  def apply[Q](run: (Q, Dataset[Q, Q]) => Unit): QuadRunIteratee[Q] = {
+  def apply[/* <: typings.rdfJs.mod.BaseQuad */ Q](run: (Q, Dataset[Q, Q]) => Unit): QuadRunIteratee[Q] = {
     val __obj = js.Dynamic.literal(run = js.Any.fromFunction2(run))
     __obj.asInstanceOf[QuadRunIteratee[Q]]
   }

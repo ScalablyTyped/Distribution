@@ -31,12 +31,17 @@ trait SchemaQuaternion extends js.Object {
 
 object SchemaQuaternion {
   @scala.inline
-  def apply(w: Int | Double = null, x: Int | Double = null, y: Int | Double = null, z: Int | Double = null): SchemaQuaternion = {
+  def apply(
+    w: js.UndefOr[Double] = js.undefined,
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined,
+    z: js.UndefOr[Double] = js.undefined
+  ): SchemaQuaternion = {
     val __obj = js.Dynamic.literal()
-    if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    if (!js.isUndefined(w)) __obj.updateDynamic("w")(w.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQuaternion]
   }
 }

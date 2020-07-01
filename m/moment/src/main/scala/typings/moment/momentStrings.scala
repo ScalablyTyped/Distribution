@@ -536,6 +536,7 @@ object momentStrings {
        with MomentConstructor
        with typings.moment.momentMod.unitOfTime.MomentConstructor
        with RelativeTimeKey
+       with typings.moment.momentMod.RelativeTimeKey
   
   @js.native
   sealed trait week

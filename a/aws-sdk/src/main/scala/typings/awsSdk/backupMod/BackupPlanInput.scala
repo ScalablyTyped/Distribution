@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BackupPlanInput extends js.Object {
   /**
-    * The display name of a backup plan.
+    * The optional display name of a backup plan.
     */
   var BackupPlanName: typings.awsSdk.backupMod.BackupPlanName = js.native
   /**

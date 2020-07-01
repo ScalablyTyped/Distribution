@@ -57,7 +57,7 @@ object SchemaPlatformSummary {
     if (lastChangeTime != null) __obj.updateDynamic("lastChangeTime")(lastChangeTime.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (reportUrl != null) __obj.updateDynamic("reportUrl")(reportUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(underReview)) __obj.updateDynamic("underReview")(underReview.asInstanceOf[js.Any])
+    if (!js.isUndefined(underReview)) __obj.updateDynamic("underReview")(underReview.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPlatformSummary]
   }
 }

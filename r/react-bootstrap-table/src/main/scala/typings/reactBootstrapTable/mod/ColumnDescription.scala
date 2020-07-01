@@ -148,7 +148,7 @@ trait ColumnDescription[TRow /* <: js.Object */] extends js.Object {
 
 object ColumnDescription {
   @scala.inline
-  def apply[TRow](
+  def apply[/* <: js.Object */ TRow](
     align: DataAlignType,
     attrs: CustomAttrs,
     className: String | (js.Function4[

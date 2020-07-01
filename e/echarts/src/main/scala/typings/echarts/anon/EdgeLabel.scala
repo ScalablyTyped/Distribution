@@ -8,7 +8,7 @@ trait EdgeLabel extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-graph.emphasis.edgeLabel
     */
-  var edgeLabel: js.UndefOr[FontStyle] = js.undefined
+  var edgeLabel: js.UndefOr[FontSize] = js.undefined
   /**
     * @see https://echarts.apache.org/en/option.html#series-graph.emphasis.itemStyle
     */
@@ -26,7 +26,7 @@ trait EdgeLabel extends js.Object {
 object EdgeLabel {
   @scala.inline
   def apply(
-    edgeLabel: FontStyle = null,
+    edgeLabel: FontSize = null,
     itemStyle: BorderType = null,
     label: Distance = null,
     lineStyle: ShadowBlur = null

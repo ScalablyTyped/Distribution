@@ -73,7 +73,7 @@ trait Typeofextension extends js.Object {
     * @returns Array of global objects
     */
   def getViews(): js.Array[Window] = js.native
-  def getViews(fetchProperties: TabId): js.Array[Window] = js.native
+  def getViews(fetchProperties: Type): js.Array[Window] = js.native
   /**
     * Retrieves the state of the extension's access to the 'file://' scheme (as determined by the user-controlled
     * 'Allow access to File URLs' checkbox.

@@ -3,6 +3,7 @@ package typings.firebaseDatabase
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
+import org.scalablytyped.runtime.Instantiable5
 import typings.firebaseDatabase.repoInfoMod.RepoInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -58,23 +59,22 @@ object transportMod extends js.Object {
   
   @js.native
   trait TransportConstructor
-    extends Instantiable2[
-          /* connId */ String, 
-          (/* RepoInfo */ js.Any) | (/* repoInfo */ RepoInfo), 
-          js.Any | Transport
-        ]
-       with Instantiable3[
-          /* connId */ String, 
-          (/* RepoInfo */ js.Any) | (/* repoInfo */ RepoInfo), 
-          /* transportSessionId */ String, 
-          js.Any | Transport
-        ]
+    extends Instantiable2[/* connId */ String, /* repoInfo */ RepoInfo, Transport]
+       with Instantiable3[/* connId */ String, /* repoInfo */ RepoInfo, /* applicationId */ String, Transport]
        with Instantiable4[
           /* connId */ String, 
-          (/* RepoInfo */ js.Any) | (/* repoInfo */ RepoInfo), 
+          /* repoInfo */ RepoInfo, 
+          /* applicationId */ String, 
+          /* transportSessionId */ String, 
+          Transport
+        ]
+       with Instantiable5[
+          /* connId */ String, 
+          /* repoInfo */ RepoInfo, 
+          /* applicationId */ String, 
           /* transportSessionId */ String, 
           /* lastSessionId */ String, 
-          js.Any | Transport
+          Transport
         ] {
     var healthyTimeout: js.UndefOr[Double] = js.native
     var responsesRequiredToBeHealthy: js.UndefOr[Double] = js.native

@@ -28,9 +28,9 @@ trait SchemaAudienceSegment extends js.Object {
 
 object SchemaAudienceSegment {
   @scala.inline
-  def apply(allocation: Int | Double = null, id: String = null, name: String = null): SchemaAudienceSegment = {
+  def apply(allocation: js.UndefOr[Double] = js.undefined, id: String = null, name: String = null): SchemaAudienceSegment = {
     val __obj = js.Dynamic.literal()
-    if (allocation != null) __obj.updateDynamic("allocation")(allocation.asInstanceOf[js.Any])
+    if (!js.isUndefined(allocation)) __obj.updateDynamic("allocation")(allocation.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAudienceSegment]

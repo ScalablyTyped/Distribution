@@ -190,7 +190,7 @@ import scala.scalajs.js.annotation._
 
 object Props {
   @scala.inline
-  def apply[OptionType](
+  def apply[/* <: typings.reactSelect.typesMod.OptionTypeBase */ OptionType](
     `aria-label`: String = null,
     `aria-labelledby`: String = null,
     autoFocus: js.UndefOr[Boolean] = js.undefined,

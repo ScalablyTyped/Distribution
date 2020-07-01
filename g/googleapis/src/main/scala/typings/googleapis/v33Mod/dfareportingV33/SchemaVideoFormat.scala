@@ -36,17 +36,17 @@ object SchemaVideoFormat {
   @scala.inline
   def apply(
     fileType: String = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     kind: String = null,
     resolution: SchemaSize = null,
-    targetBitRate: Int | Double = null
+    targetBitRate: js.UndefOr[Double] = js.undefined
   ): SchemaVideoFormat = {
     val __obj = js.Dynamic.literal()
     if (fileType != null) __obj.updateDynamic("fileType")(fileType.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
-    if (targetBitRate != null) __obj.updateDynamic("targetBitRate")(targetBitRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetBitRate)) __obj.updateDynamic("targetBitRate")(targetBitRate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVideoFormat]
   }
 }

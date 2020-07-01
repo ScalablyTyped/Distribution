@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Leg of journey
+  */
 trait Leg extends js.Object {
   var alternatives: js.UndefOr[js.Array[Alternative]] = js.undefined
   var arrival: js.UndefOr[String] = js.undefined
@@ -25,9 +28,11 @@ trait Leg extends js.Object {
   var plannedArrivalPlatform: js.UndefOr[String] = js.undefined
   var plannedDeparture: String
   var plannedDeparturePlatform: js.UndefOr[String] = js.undefined
+  var polyline: js.UndefOr[FeatureCollection] = js.undefined
   var price: js.UndefOr[Price] = js.undefined
   var public: js.UndefOr[Boolean] = js.undefined
   var reachable: js.UndefOr[Boolean] = js.undefined
+  var remarks: js.UndefOr[js.Array[Hint]] = js.undefined
   var schedule: js.UndefOr[Double] = js.undefined
   var stopovers: js.UndefOr[js.Array[StopOver]] = js.undefined
   var transfer: js.UndefOr[Boolean] = js.undefined
@@ -58,9 +63,11 @@ object Leg {
     operator: js.UndefOr[Double] = js.undefined,
     plannedArrivalPlatform: String = null,
     plannedDeparturePlatform: String = null,
+    polyline: FeatureCollection = null,
     price: Price = null,
     public: js.UndefOr[Boolean] = js.undefined,
     reachable: js.UndefOr[Boolean] = js.undefined,
+    remarks: js.Array[Hint] = null,
     schedule: js.UndefOr[Double] = js.undefined,
     stopovers: js.Array[StopOver] = null,
     transfer: js.UndefOr[Boolean] = js.undefined,
@@ -84,9 +91,11 @@ object Leg {
     if (!js.isUndefined(operator)) __obj.updateDynamic("operator")(operator.get.asInstanceOf[js.Any])
     if (plannedArrivalPlatform != null) __obj.updateDynamic("plannedArrivalPlatform")(plannedArrivalPlatform.asInstanceOf[js.Any])
     if (plannedDeparturePlatform != null) __obj.updateDynamic("plannedDeparturePlatform")(plannedDeparturePlatform.asInstanceOf[js.Any])
+    if (polyline != null) __obj.updateDynamic("polyline")(polyline.asInstanceOf[js.Any])
     if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
     if (!js.isUndefined(public)) __obj.updateDynamic("public")(public.get.asInstanceOf[js.Any])
     if (!js.isUndefined(reachable)) __obj.updateDynamic("reachable")(reachable.get.asInstanceOf[js.Any])
+    if (remarks != null) __obj.updateDynamic("remarks")(remarks.asInstanceOf[js.Any])
     if (!js.isUndefined(schedule)) __obj.updateDynamic("schedule")(schedule.get.asInstanceOf[js.Any])
     if (stopovers != null) __obj.updateDynamic("stopovers")(stopovers.asInstanceOf[js.Any])
     if (!js.isUndefined(transfer)) __obj.updateDynamic("transfer")(transfer.get.asInstanceOf[js.Any])

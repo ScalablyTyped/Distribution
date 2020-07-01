@@ -11,7 +11,7 @@ trait GetThreatIntelSetResponse extends js.Object {
     */
   var Format: ThreatIntelSetFormat = js.native
   /**
-    * The URI of the file that contains the ThreatIntelSet. For example: .
+    * The URI of the file that contains the ThreatIntelSet. For example: https://s3.us-west-2.amazonaws.com/my-bucket/my-object-key.
     */
   var Location: typings.awsSdk.guarddutyMod.Location = js.native
   /**

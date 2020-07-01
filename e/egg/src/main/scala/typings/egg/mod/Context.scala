@@ -2,11 +2,14 @@ package typings.egg.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.accepts.mod.Accepts
+import typings.egg.anon.FnCall
 import typings.eggCookies.mod.^
-import typings.eggLogger.mod.EggLogger
 import typings.koa.mod.BaseContext
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
+import typings.node.urlMod.URL_
+import typings.urllib.mod.Callback
+import typings.urllib.mod.HttpClientResponse
 import typings.urllib.mod.RequestOptions2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,6 +30,13 @@ trait Context
   var app: Application = js.native
   // The new 'cookies' instead of Koa's.
   var cookies: ^ = js.native
+  /**
+    * http request helper base on httpclient, it will auto save httpclient log.
+    * Keep the same api with httpclient.request(url, args).
+    * See https://github.com/node-modules/urllib#api-doc for more details.
+    */
+  @JSName("curl")
+  var curl_Original: FnCall = js.native
   /**
     * Set the ctx.body.data value
     *
@@ -54,6 +64,7 @@ trait Context
     */
   var data: js.Any = js.native
   var helper: IHelper = js.native
+  var httpclient: EggContextHttpClient = js.native
   /**
     * locals is an object for view, you can use `app.locals` and `ctx.locals` to set variables,
     * which will be used as data when view is rendering.
@@ -175,8 +186,49 @@ trait Context
     * Keep the same api with httpclient.request(url, args).
     * See https://github.com/node-modules/urllib#api-doc for more details.
     */
-  def curl[T](url: String): js.Promise[T] = js.native
-  def curl[T](url: String, opt: RequestOptions2): js.Promise[T] = js.native
+  def curl[T](url: String): js.Promise[HttpClientResponse[T]] = js.native
+  /**
+    * http request helper base on httpclient, it will auto save httpclient log.
+    * Keep the same api with httpclient.request(url, args).
+    * See https://github.com/node-modules/urllib#api-doc for more details.
+    */
+  def curl[T](url: String, callback: Callback[T]): Unit = js.native
+  /**
+    * http request helper base on httpclient, it will auto save httpclient log.
+    * Keep the same api with httpclient.request(url, args).
+    * See https://github.com/node-modules/urllib#api-doc for more details.
+    */
+  def curl[T](url: String, options: RequestOptions2): js.Promise[HttpClientResponse[T]] = js.native
+  /**
+    * http request helper base on httpclient, it will auto save httpclient log.
+    * Keep the same api with httpclient.request(url, args).
+    * See https://github.com/node-modules/urllib#api-doc for more details.
+    */
+  def curl[T](url: String, options: RequestOptions2, callback: Callback[T]): Unit = js.native
+  /**
+    * http request helper base on httpclient, it will auto save httpclient log.
+    * Keep the same api with httpclient.request(url, args).
+    * See https://github.com/node-modules/urllib#api-doc for more details.
+    */
+  def curl[T](url: URL_): js.Promise[HttpClientResponse[T]] = js.native
+  /**
+    * http request helper base on httpclient, it will auto save httpclient log.
+    * Keep the same api with httpclient.request(url, args).
+    * See https://github.com/node-modules/urllib#api-doc for more details.
+    */
+  def curl[T](url: URL_, callback: Callback[T]): Unit = js.native
+  /**
+    * http request helper base on httpclient, it will auto save httpclient log.
+    * Keep the same api with httpclient.request(url, args).
+    * See https://github.com/node-modules/urllib#api-doc for more details.
+    */
+  def curl[T](url: URL_, options: RequestOptions2): js.Promise[HttpClientResponse[T]] = js.native
+  /**
+    * http request helper base on httpclient, it will auto save httpclient log.
+    * Keep the same api with httpclient.request(url, args).
+    * See https://github.com/node-modules/urllib#api-doc for more details.
+    */
+  def curl[T](url: URL_, options: RequestOptions2, callback: Callback[T]): Unit = js.native
   /**
     * get upload file stream
     * @example

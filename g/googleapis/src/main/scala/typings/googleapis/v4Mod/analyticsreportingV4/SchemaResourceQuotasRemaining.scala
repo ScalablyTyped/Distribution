@@ -22,10 +22,13 @@ trait SchemaResourceQuotasRemaining extends js.Object {
 
 object SchemaResourceQuotasRemaining {
   @scala.inline
-  def apply(dailyQuotaTokensRemaining: Int | Double = null, hourlyQuotaTokensRemaining: Int | Double = null): SchemaResourceQuotasRemaining = {
+  def apply(
+    dailyQuotaTokensRemaining: js.UndefOr[Double] = js.undefined,
+    hourlyQuotaTokensRemaining: js.UndefOr[Double] = js.undefined
+  ): SchemaResourceQuotasRemaining = {
     val __obj = js.Dynamic.literal()
-    if (dailyQuotaTokensRemaining != null) __obj.updateDynamic("dailyQuotaTokensRemaining")(dailyQuotaTokensRemaining.asInstanceOf[js.Any])
-    if (hourlyQuotaTokensRemaining != null) __obj.updateDynamic("hourlyQuotaTokensRemaining")(hourlyQuotaTokensRemaining.asInstanceOf[js.Any])
+    if (!js.isUndefined(dailyQuotaTokensRemaining)) __obj.updateDynamic("dailyQuotaTokensRemaining")(dailyQuotaTokensRemaining.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hourlyQuotaTokensRemaining)) __obj.updateDynamic("hourlyQuotaTokensRemaining")(hourlyQuotaTokensRemaining.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResourceQuotasRemaining]
   }
 }

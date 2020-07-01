@@ -37,7 +37,7 @@ object SchemaAutoFillRequest {
     val __obj = js.Dynamic.literal()
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (sourceAndDestination != null) __obj.updateDynamic("sourceAndDestination")(sourceAndDestination.asInstanceOf[js.Any])
-    if (!js.isUndefined(useAlternateSeries)) __obj.updateDynamic("useAlternateSeries")(useAlternateSeries.asInstanceOf[js.Any])
+    if (!js.isUndefined(useAlternateSeries)) __obj.updateDynamic("useAlternateSeries")(useAlternateSeries.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAutoFillRequest]
   }
 }

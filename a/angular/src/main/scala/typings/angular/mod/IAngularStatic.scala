@@ -34,6 +34,16 @@ trait IAngularStatic extends js.Object {
     */
   var resumeBootstrap: js.UndefOr[js.Function1[/* extraModules */ js.UndefOr[js.Array[String]], IInjectorService]] = js.native
   var version: CodeName = js.native
+  /**
+    * Restores the pre-1.8 behavior of jqLite that turns XHTML-like strings like
+    * `<div /><span />` to `<div></div><span></span>` instead of `<div><span></span></div>`.
+    * The new behavior is a security fix so if you use this method, please try to adjust
+    * to the change & remove the call as soon as possible.
+    * Note that this only patches jqLite. If you use jQuery 3.5.0 or newer, please read
+    * [jQuery 3.5 upgrade guide](https://jquery.com/upgrade-guide/3.5/) for more details
+    * about the workarounds.
+    */
+  def UNSAFE_restoreLegacyJqLiteXHTMLReplacement(): Unit = js.native
   def bind(context: js.Any, fn: Function, args: js.Any*): Function = js.native
   /**
     * Use this function to manually start up angular application.

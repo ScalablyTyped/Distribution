@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.puppeteer.mod.Dialog
 import typings.puppeteer.mod.ElementHandle
 import typings.std.Element
+import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,8 +26,10 @@ object global extends js.Object {
       def toFill(selector: String, value: String, options: ExpectTimingActions): js.Promise[Unit] = js.native
       def toFillForm(selector: String, value: StringDictionary[js.Any]): js.Promise[Unit] = js.native
       def toFillForm(selector: String, value: StringDictionary[js.Any], options: ExpectTimingActions): js.Promise[Unit] = js.native
-      def toMatch(selector: String): js.Promise[Unit] = js.native
-      def toMatch(selector: String, options: ExpectTimingActions): js.Promise[Unit] = js.native
+      def toMatch(matcher: String): js.Promise[Unit] = js.native
+      def toMatch(matcher: String, options: ExpectTimingActions): js.Promise[Unit] = js.native
+      def toMatch(matcher: RegExp): js.Promise[Unit] = js.native
+      def toMatch(matcher: RegExp, options: ExpectTimingActions): js.Promise[Unit] = js.native
       def toMatchElement(selector: String): js.Promise[ElementHandle[Element]] = js.native
       def toMatchElement(selector: String, options: ExpectToClickOptions): js.Promise[ElementHandle[Element]] = js.native
       def toSelect(selector: String, valueOrText: String): js.Promise[Unit] = js.native

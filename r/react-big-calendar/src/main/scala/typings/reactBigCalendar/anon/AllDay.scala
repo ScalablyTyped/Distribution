@@ -14,7 +14,7 @@ trait AllDay[TEvent /* <: js.Object */] extends js.Object {
 
 object AllDay {
   @scala.inline
-  def apply[TEvent](allDay: Boolean, end: stringOrDate, event: TEvent, start: stringOrDate): AllDay[TEvent] = {
+  def apply[/* <: js.Object */ TEvent](allDay: Boolean, end: stringOrDate, event: TEvent, start: stringOrDate): AllDay[TEvent] = {
     val __obj = js.Dynamic.literal(allDay = allDay.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllDay[TEvent]]
   }

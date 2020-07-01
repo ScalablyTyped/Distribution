@@ -72,7 +72,7 @@ object SchemaCondition {
     if (devicePolicy != null) __obj.updateDynamic("devicePolicy")(devicePolicy.asInstanceOf[js.Any])
     if (ipSubnetworks != null) __obj.updateDynamic("ipSubnetworks")(ipSubnetworks.asInstanceOf[js.Any])
     if (members != null) __obj.updateDynamic("members")(members.asInstanceOf[js.Any])
-    if (!js.isUndefined(negate)) __obj.updateDynamic("negate")(negate.asInstanceOf[js.Any])
+    if (!js.isUndefined(negate)) __obj.updateDynamic("negate")(negate.get.asInstanceOf[js.Any])
     if (regions != null) __obj.updateDynamic("regions")(regions.asInstanceOf[js.Any])
     if (requiredAccessLevels != null) __obj.updateDynamic("requiredAccessLevels")(requiredAccessLevels.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCondition]

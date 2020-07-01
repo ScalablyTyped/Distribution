@@ -102,8 +102,8 @@ object SchemaSourceInstanceProperties {
     tags: SchemaTags = null
   ): SchemaSourceInstanceProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canIpForward)) __obj.updateDynamic("canIpForward")(canIpForward.asInstanceOf[js.Any])
-    if (!js.isUndefined(deletionProtection)) __obj.updateDynamic("deletionProtection")(deletionProtection.asInstanceOf[js.Any])
+    if (!js.isUndefined(canIpForward)) __obj.updateDynamic("canIpForward")(canIpForward.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deletionProtection)) __obj.updateDynamic("deletionProtection")(deletionProtection.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (disks != null) __obj.updateDynamic("disks")(disks.asInstanceOf[js.Any])
     if (guestAccelerators != null) __obj.updateDynamic("guestAccelerators")(guestAccelerators.asInstanceOf[js.Any])

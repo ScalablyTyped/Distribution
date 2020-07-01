@@ -9,13 +9,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TermTypeValue extends js.Object {
-  var termType: PropType[NamedNode, typings.rdfExt.rdfExtStrings.termType]
-  var value: PropType[NamedNode, typings.rdfExt.rdfExtStrings.value]
+  var termType: PropType[NamedNode[String], typings.rdfExt.rdfExtStrings.termType]
+  var value: PropType[NamedNode[String], typings.rdfExt.rdfExtStrings.value]
 }
 
 object TermTypeValue {
   @scala.inline
-  def apply(termType: PropType[NamedNode, termType], value: PropType[NamedNode, value]): TermTypeValue = {
+  def apply(termType: PropType[NamedNode[String], termType], value: PropType[NamedNode[String], value]): TermTypeValue = {
     val __obj = js.Dynamic.literal(termType = termType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TermTypeValue]
   }

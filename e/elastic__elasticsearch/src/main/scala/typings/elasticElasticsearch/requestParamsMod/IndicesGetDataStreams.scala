@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IndicesGetDataStreams extends Generic {
-  var name: js.UndefOr[String | js.Array[String]] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
 }
 
 object IndicesGetDataStreams {
@@ -16,7 +16,7 @@ object IndicesGetDataStreams {
     human: js.UndefOr[Boolean] = js.undefined,
     ignore: Double | js.Array[Double] = null,
     method: String = null,
-    name: String | js.Array[String] = null,
+    name: String = null,
     pretty: js.UndefOr[Boolean] = js.undefined,
     source: String = null
   ): IndicesGetDataStreams = {

@@ -11,7 +11,7 @@ trait InvokeEndpointInput extends js.Object {
     */
   var Accept: js.UndefOr[Header] = js.native
   /**
-    * Provides input data, in the format specified in the ContentType request header. Amazon SageMaker passes all of the data in the body to the model.  For information about the format of the request body, see Common Data Formats—Inference.
+    * Provides input data, in the format specified in the ContentType request header. Amazon SageMaker passes all of the data in the body to the model.  For information about the format of the request body, see Common Data Formats-Inference.
     */
   var Body: BodyBlob = js.native
   /**
@@ -27,9 +27,13 @@ trait InvokeEndpointInput extends js.Object {
     */
   var EndpointName: typings.awsSdk.sagemakerruntimeMod.EndpointName = js.native
   /**
-    * Specifies the model to be requested for an inference when invoking a multi-model endpoint. 
+    * The model to request for inference when invoking a multi-model endpoint. 
     */
   var TargetModel: js.UndefOr[TargetModelHeader] = js.native
+  /**
+    * Specify the production variant to send the inference request to when invoking an endpoint that is running two or more variants. Note that this parameter overrides the default behavior for the endpoint, which is to distribute the invocation traffic based on the variant weights.
+    */
+  var TargetVariant: js.UndefOr[TargetVariantHeader] = js.native
 }
 
 object InvokeEndpointInput {
@@ -40,13 +44,15 @@ object InvokeEndpointInput {
     Accept: Header = null,
     ContentType: Header = null,
     CustomAttributes: CustomAttributesHeader = null,
-    TargetModel: TargetModelHeader = null
+    TargetModel: TargetModelHeader = null,
+    TargetVariant: TargetVariantHeader = null
   ): InvokeEndpointInput = {
     val __obj = js.Dynamic.literal(Body = Body.asInstanceOf[js.Any], EndpointName = EndpointName.asInstanceOf[js.Any])
     if (Accept != null) __obj.updateDynamic("Accept")(Accept.asInstanceOf[js.Any])
     if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType.asInstanceOf[js.Any])
     if (CustomAttributes != null) __obj.updateDynamic("CustomAttributes")(CustomAttributes.asInstanceOf[js.Any])
     if (TargetModel != null) __obj.updateDynamic("TargetModel")(TargetModel.asInstanceOf[js.Any])
+    if (TargetVariant != null) __obj.updateDynamic("TargetVariant")(TargetVariant.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvokeEndpointInput]
   }
 }

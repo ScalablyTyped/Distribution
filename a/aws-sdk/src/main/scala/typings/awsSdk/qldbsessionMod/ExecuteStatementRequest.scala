@@ -15,7 +15,7 @@ trait ExecuteStatementRequest extends js.Object {
     */
   var Statement: typings.awsSdk.qldbsessionMod.Statement = js.native
   /**
-    * Specifies the transaction id of the request.
+    * Specifies the transaction ID of the request.
     */
   var TransactionId: typings.awsSdk.qldbsessionMod.TransactionId = js.native
 }

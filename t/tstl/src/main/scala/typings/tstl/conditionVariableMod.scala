@@ -21,7 +21,7 @@ object conditionVariableMod extends js.Object {
       */
     def notify_all(): js.Promise[Unit] = js.native
     /**
-      * Notify, wake one.
+      * Notify, wake only one.
       */
     def notify_one(): js.Promise[Unit] = js.native
     /**

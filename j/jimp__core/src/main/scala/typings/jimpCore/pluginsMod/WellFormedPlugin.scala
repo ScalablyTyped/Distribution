@@ -22,7 +22,7 @@ trait WellFormedPlugin[ImageType /* <: Image */] extends js.Object {
 
 object WellFormedPlugin {
   @scala.inline
-  def apply[ImageType](
+  def apply[/* <: typings.jimpCore.etcMod.Image */ ImageType](
     `class`: js.Any = null,
     constants: // Contants to assign to the Jimp instance
   StringDictionary[js.Any] = null,

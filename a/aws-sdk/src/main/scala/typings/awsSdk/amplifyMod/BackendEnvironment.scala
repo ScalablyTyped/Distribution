@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BackendEnvironment extends js.Object {
   /**
-    *  Arn for a backend environment, part of an Amplify App. 
+    *  The Amazon Resource Name (ARN) for a backend environment that is part of an Amplify app. 
     */
   var backendEnvironmentArn: BackendEnvironmentArn = js.native
   /**
-    *  Creation date and time for a backend environment, part of an Amplify App. 
+    *  The creation date and time for a backend environment that is part of an Amplify app. 
     */
   var createTime: CreateTime = js.native
   /**
-    *  Name of deployment artifacts. 
+    *  The name of deployment artifacts. 
     */
   var deploymentArtifacts: js.UndefOr[DeploymentArtifacts] = js.native
   /**
-    *  Name for a backend environment, part of an Amplify App. 
+    *  The name for a backend environment that is part of an Amplify app. 
     */
   var environmentName: EnvironmentName = js.native
   /**
-    *  CloudFormation stack name of backend environment. 
+    *  The AWS CloudFormation stack name of a backend environment. 
     */
   var stackName: js.UndefOr[StackName] = js.native
   /**
-    *  Last updated date and time for a backend environment, part of an Amplify App. 
+    *  The last updated date and time for a backend environment that is part of an Amplify app. 
     */
   var updateTime: UpdateTime = js.native
 }

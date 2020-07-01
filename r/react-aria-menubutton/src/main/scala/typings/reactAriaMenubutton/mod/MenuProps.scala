@@ -24,7 +24,7 @@ trait MenuProps[T /* <: HTMLElement */]
 
 object MenuProps {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.std.HTMLElement */ T](
     children: Element | (js.Function1[/* hasIsOpen */ IsOpen, Element]),
     AllHTMLAttributes: AllHTMLAttributes[T] = null,
     ClassAttributes: ClassAttributes[T] = null,

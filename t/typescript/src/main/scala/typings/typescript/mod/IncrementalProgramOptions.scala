@@ -15,7 +15,7 @@ trait IncrementalProgramOptions[T /* <: BuilderProgram */] extends js.Object {
 
 object IncrementalProgramOptions {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.typescript.mod.BuilderProgram */ T](
     options: CompilerOptions,
     rootNames: js.Array[java.lang.String],
     configFileParsingDiagnostics: js.Array[Diagnostic] = null,

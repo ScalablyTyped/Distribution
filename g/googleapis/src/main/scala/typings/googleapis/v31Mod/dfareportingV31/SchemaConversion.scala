@@ -106,10 +106,10 @@ object SchemaConversion {
     ordinal: String = null,
     quantity: String = null,
     timestampMicros: String = null,
-    value: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined
   ): SchemaConversion = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(childDirectedTreatment)) __obj.updateDynamic("childDirectedTreatment")(childDirectedTreatment.asInstanceOf[js.Any])
+    if (!js.isUndefined(childDirectedTreatment)) __obj.updateDynamic("childDirectedTreatment")(childDirectedTreatment.get.asInstanceOf[js.Any])
     if (customVariables != null) __obj.updateDynamic("customVariables")(customVariables.asInstanceOf[js.Any])
     if (encryptedUserId != null) __obj.updateDynamic("encryptedUserId")(encryptedUserId.asInstanceOf[js.Any])
     if (encryptedUserIdCandidates != null) __obj.updateDynamic("encryptedUserIdCandidates")(encryptedUserIdCandidates.asInstanceOf[js.Any])
@@ -117,12 +117,12 @@ object SchemaConversion {
     if (floodlightConfigurationId != null) __obj.updateDynamic("floodlightConfigurationId")(floodlightConfigurationId.asInstanceOf[js.Any])
     if (gclid != null) __obj.updateDynamic("gclid")(gclid.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(limitAdTracking)) __obj.updateDynamic("limitAdTracking")(limitAdTracking.asInstanceOf[js.Any])
+    if (!js.isUndefined(limitAdTracking)) __obj.updateDynamic("limitAdTracking")(limitAdTracking.get.asInstanceOf[js.Any])
     if (mobileDeviceId != null) __obj.updateDynamic("mobileDeviceId")(mobileDeviceId.asInstanceOf[js.Any])
     if (ordinal != null) __obj.updateDynamic("ordinal")(ordinal.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     if (timestampMicros != null) __obj.updateDynamic("timestampMicros")(timestampMicros.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaConversion]
   }
 }

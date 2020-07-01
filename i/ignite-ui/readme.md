@@ -1,7 +1,7 @@
 
 # Scala.js typings for ignite-ui
 
-Typings are for version 19.2
+Typings are for version 20.1
 
 ## Library description:
 Ignite UI by Infragistics

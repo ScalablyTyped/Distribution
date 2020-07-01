@@ -20,7 +20,7 @@ trait GraphLevelLinkConfiguration[L /* <: GraphLink */] extends LinkLevelLinkCon
 
 object GraphLevelLinkConfiguration {
   @scala.inline
-  def apply[L](
+  def apply[/* <: typings.reactD3Graph.mod.GraphLink */ L](
     color: String,
     fontColor: String,
     fontSize: Double,

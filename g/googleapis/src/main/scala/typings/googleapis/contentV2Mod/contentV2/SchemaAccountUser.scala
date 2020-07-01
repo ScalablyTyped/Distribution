@@ -38,11 +38,11 @@ object SchemaAccountUser {
     paymentsManager: js.UndefOr[Boolean] = js.undefined
   ): SchemaAccountUser = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(admin)) __obj.updateDynamic("admin")(admin.asInstanceOf[js.Any])
+    if (!js.isUndefined(admin)) __obj.updateDynamic("admin")(admin.get.asInstanceOf[js.Any])
     if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(orderManager)) __obj.updateDynamic("orderManager")(orderManager.asInstanceOf[js.Any])
-    if (!js.isUndefined(paymentsAnalyst)) __obj.updateDynamic("paymentsAnalyst")(paymentsAnalyst.asInstanceOf[js.Any])
-    if (!js.isUndefined(paymentsManager)) __obj.updateDynamic("paymentsManager")(paymentsManager.asInstanceOf[js.Any])
+    if (!js.isUndefined(orderManager)) __obj.updateDynamic("orderManager")(orderManager.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paymentsAnalyst)) __obj.updateDynamic("paymentsAnalyst")(paymentsAnalyst.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paymentsManager)) __obj.updateDynamic("paymentsManager")(paymentsManager.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAccountUser]
   }
 }

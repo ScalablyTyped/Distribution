@@ -50,6 +50,12 @@ trait ClusterOperationInfo extends js.Object {
   var OperationState: js.UndefOr[string] = js.native
   /**
     * 
+    Steps completed during the operation.
+    
+    */
+  var OperationSteps: js.UndefOr[listOfClusterOperationStep] = js.native
+  /**
+    * 
     Type of the cluster operation.
     
     */
@@ -78,6 +84,7 @@ object ClusterOperationInfo {
     ErrorInfo: ErrorInfo = null,
     OperationArn: string = null,
     OperationState: string = null,
+    OperationSteps: listOfClusterOperationStep = null,
     OperationType: string = null,
     SourceClusterInfo: MutableClusterInfo = null,
     TargetClusterInfo: MutableClusterInfo = null
@@ -90,6 +97,7 @@ object ClusterOperationInfo {
     if (ErrorInfo != null) __obj.updateDynamic("ErrorInfo")(ErrorInfo.asInstanceOf[js.Any])
     if (OperationArn != null) __obj.updateDynamic("OperationArn")(OperationArn.asInstanceOf[js.Any])
     if (OperationState != null) __obj.updateDynamic("OperationState")(OperationState.asInstanceOf[js.Any])
+    if (OperationSteps != null) __obj.updateDynamic("OperationSteps")(OperationSteps.asInstanceOf[js.Any])
     if (OperationType != null) __obj.updateDynamic("OperationType")(OperationType.asInstanceOf[js.Any])
     if (SourceClusterInfo != null) __obj.updateDynamic("SourceClusterInfo")(SourceClusterInfo.asInstanceOf[js.Any])
     if (TargetClusterInfo != null) __obj.updateDynamic("TargetClusterInfo")(TargetClusterInfo.asInstanceOf[js.Any])

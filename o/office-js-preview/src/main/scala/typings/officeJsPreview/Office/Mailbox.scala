@@ -139,7 +139,7 @@ trait Mailbox extends js.Object {
   /**
     * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
     *
-    * To see which event types are supported, see `Office.EventType` for details.
+    * Refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox#events | events section} for supported events.
     *
     * [Api set: Mailbox 1.5]
     *
@@ -262,14 +262,14 @@ trait Mailbox extends js.Object {
     * The `displayAppointmentForm` method opens an existing calendar appointment in a new window on the desktop or in a dialog box on
     * mobile devices.
     *
-    * In Outlook on Mac, you can use this method to display a single appointment that is not part of a recurring series, or the
-    * master appointment of a recurring series, but you cannot display an instance of the series.
-    * This is because in Outlook on Mac, you cannot access the properties (including the item ID) of instances of a recurring series.
+    * In Outlook on Mac, you can use this method to display a single appointment that is not part of a recurring series, or the master appointment
+    * of a recurring series. However, you can't display an instance of the series because you can't access the properties
+    * (including the item ID) of instances of a recurring series.
     *
-    * In Outlook on the web, this method opens the specified form only if the body of the form is less than or equal to 32KB number of characters.
+    * In Outlook on the web, this method opens the specified form only if the body of the form is less than or equal to 32K characters.
     *
     * If the specified item identifier does not identify an existing appointment, a blank pane opens on the client computer or device, and
-    * no error message will be returned.
+    * no error message is returned.
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
     *
@@ -283,14 +283,54 @@ trait Mailbox extends js.Object {
     */
   def displayAppointmentForm(itemId: String): Unit = js.native
   /**
+    * Displays an existing calendar appointment.
+    *
+    * The `displayAppointmentFormAsync` method opens an existing calendar appointment in a new window on the desktop or in a dialog box on
+    * mobile devices.
+    *
+    * In Outlook on Mac, you can use this method to display a single appointment that is not part of a recurring series, or the master appointment
+    * of a recurring series. However, you can't display an instance of the series because you can't access the properties
+    * (including the item ID) of instances of a recurring series.
+    *
+    * In Outlook on the web, this method opens the specified form only if the body of the form is less than or equal to 32K characters.
+    *
+    * If the specified item identifier does not identify an existing appointment, a blank pane opens on the client computer or device, and
+    * no error message is returned.
+    *
+    * **Note**: This method is not supported in Outlook on iOS or Android.
+    *
+    * [Api set: Mailbox Preview]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    *
+    * @param itemId - The Exchange Web Services (EWS) identifier for an existing calendar appointment.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
+    *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+    *                `asyncResult`, which is an `Office.AsyncResult` object.
+    *
+    * @beta
+    */
+  def displayAppointmentFormAsync(itemId: String): Unit = js.native
+  def displayAppointmentFormAsync(itemId: String, options: AsyncContextOptions): Unit = js.native
+  def displayAppointmentFormAsync(
+    itemId: String,
+    options: AsyncContextOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  /**
     * Displays an existing message.
     *
     * The `displayMessageForm` method opens an existing message in a new window on the desktop or in a dialog box on mobile devices.
     *
-    * In Outlook on the web, this method opens the specified form only if the body of the form is less than or equal to 32 KB number of characters.
+    * In Outlook on the web, this method opens the specified form only if the body of the form is less than or equal to 32K characters.
     *
     * If the specified item identifier does not identify an existing message, no message will be displayed on the client computer, and
-    * no error message will be returned.
+    * no error message is returned.
     *
     * Do not use the `displayMessageForm` with an itemId that represents an appointment. Use the `displayAppointmentForm` method to display
     * an existing appointment, and `displayNewAppointmentForm` to display a form to create a new appointment.
@@ -306,6 +346,45 @@ trait Mailbox extends js.Object {
     * @param itemId - The Exchange Web Services (EWS) identifier for an existing message.
     */
   def displayMessageForm(itemId: String): Unit = js.native
+  /**
+    * Displays an existing message.
+    *
+    * The `displayMessageFormAsync` method opens an existing message in a new window on the desktop or in a dialog box on mobile devices.
+    *
+    * In Outlook on the web, this method opens the specified form only if the body of the form is less than or equal to 32K characters.
+    *
+    * If the specified item identifier does not identify an existing message, no message will be displayed on the client computer, and
+    * no error message is returned.
+    *
+    * Do not use the `displayMessageForm` or `displayMessageFormAsync` method with an itemId that represents an appointment.
+    * Use the `displayAppointmentForm` or `displayAppointmentFormAsync` method to display an existing appointment,
+    * and `displayNewAppointmentForm` or `displayNewAppointmentFormAsync` to display a form to create a new appointment.
+    *
+    * **Note**: This method is not supported in Outlook on iOS or Android.
+    *
+    * [Api set: Mailbox Preview]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    *
+    * @param itemId - The Exchange Web Services (EWS) identifier for an existing message.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
+    *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+    *                `asyncResult`, which is an `Office.AsyncResult` object.
+    *
+    * @beta
+    */
+  def displayMessageFormAsync(itemId: String): Unit = js.native
+  def displayMessageFormAsync(itemId: String, options: AsyncContextOptions): Unit = js.native
+  def displayMessageFormAsync(
+    itemId: String,
+    options: AsyncContextOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   /**
     * Displays a form for creating a new calendar appointment.
     *
@@ -333,6 +412,47 @@ trait Mailbox extends js.Object {
     * @param parameters - An `AppointmentForm` describing the new appointment. All properties are optional.
     */
   def displayNewAppointmentForm(parameters: AppointmentForm): Unit = js.native
+  /**
+    * Displays a form for creating a new calendar appointment.
+    *
+    * The `displayNewAppointmentFormAsync` method opens a form that enables the user to create a new appointment or meeting.
+    * If parameters are specified, the appointment form fields are automatically populated with the contents of the parameters.
+    *
+    * In Outlook on the web, this method always displays a form with an attendees field.
+    * If you do not specify any attendees as input arguments, the method displays a form with a **Save** button.
+    * If you have specified attendees, the form would include the attendees and a **Send** button.
+    *
+    * In the Outlook rich client and Outlook RT, if you specify any attendees or resources in the `requiredAttendees`, `optionalAttendees`, or
+    * `resources` parameter, this method displays a meeting form with a **Send** button.
+    * If you don't specify any recipients, this method displays an appointment form with a **Save & Close** button.
+    *
+    * If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an exception is thrown.
+    *
+    * **Note**: This method is not supported in Outlook on iOS or Android.
+    *
+    * [Api set: Mailbox Preview]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+    *
+    * @param parameters - An `AppointmentForm` describing the new appointment. All properties are optional.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
+    *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+    *                `asyncResult`, which is an `Office.AsyncResult` object.
+    *
+    * @beta
+    */
+  def displayNewAppointmentFormAsync(parameters: AppointmentForm): Unit = js.native
+  def displayNewAppointmentFormAsync(parameters: AppointmentForm, options: AsyncContextOptions): Unit = js.native
+  def displayNewAppointmentFormAsync(
+    parameters: AppointmentForm,
+    options: AsyncContextOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   /**
     * Displays a form for creating a new message.
     *
@@ -380,6 +500,64 @@ trait Mailbox extends js.Object {
     */
   def displayNewMessageForm(parameters: js.Any): Unit = js.native
   /**
+    * Displays a form for creating a new message.
+    *
+    * The `displayNewMessageFormAsync` method opens a form that enables the user to create a new message.
+    * If parameters are specified, the message form fields are automatically populated with the contents of the parameters.
+    *
+    * If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an exception is thrown.
+    *
+    * [Api set: Mailbox Preview]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+    *
+    * @param parameters - A dictionary containing all values to be filled in for the user in the new form. All parameters are optional.
+    *
+    *        `toRecipients`: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object
+    *        for each of the recipients on the To line. The array is limited to a maximum of 100 entries.
+    *
+    *        `ccRecipients`: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object
+    *        for each of the recipients on the Cc line. The array is limited to a maximum of 100 entries.
+    *
+    *        `bccRecipients`: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object
+    *        for each of the recipients on the Bcc line. The array is limited to a maximum of 100 entries.
+    *
+    *        `subject`: A string containing the subject of the message. The string is limited to a maximum of 255 characters.
+    *
+    *        `htmlBody`: The HTML body of the message. The body content is limited to a maximum size of 32 KB.
+    *
+    *        `attachments`: An array of JSON objects that are either file or item attachments.
+    *
+    *        `attachments.type`: Indicates the type of attachment. Must be file for a file attachment or item for an item attachment.
+    *
+    *        `attachments.name`: A string that contains the name of the attachment, up to 255 characters in length.
+    *
+    *        `attachments.url`: Only used if type is set to file. The URI of the location for the file.
+    *
+    *        `attachments.isInline`: Only used if type is set to file. If true, indicates that the attachment will be shown inline in the
+    *        message body, and should not be displayed in the attachment list.
+    *
+    *        `attachments.itemId`: Only used if type is set to item. The EWS item id of the existing e-mail you want to attach to the new message.
+    *        This is a string up to 100 characters.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
+    *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+    *                `asyncResult`, which is an `Office.AsyncResult` object.
+    *
+    * @beta
+    */
+  def displayNewMessageFormAsync(parameters: js.Any): Unit = js.native
+  def displayNewMessageFormAsync(parameters: js.Any, options: AsyncContextOptions): Unit = js.native
+  def displayNewMessageFormAsync(
+    parameters: js.Any,
+    options: AsyncContextOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  /**
     * Gets a string that contains a token used to get an attachment or item from an Exchange Server.
     *
     * The `getCallbackTokenAsync` method makes an asynchronous call to get an opaque token from the Exchange Server that hosts the user's mailbox.
@@ -398,6 +576,9 @@ trait Mailbox extends js.Object {
     *
     * Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item.
     * The `saveAsync` method requires a minimum permission level of `ReadWriteItem`.
+    *
+    * **Important**: For guidance on delegate or shared scenarios, see the
+    * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
     *
     * [Api set: All support Read mode; Mailbox 1.3 introduced Compose mode support]
     *
@@ -423,7 +604,7 @@ trait Mailbox extends js.Object {
   def getCallbackTokenAsync(callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
   def getCallbackTokenAsync(callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit], userContext: js.Any): Unit = js.native
   /**
-    * Gets a string that contains a token used to call REST APIs or Exchange Web Services.
+    * Gets a string that contains a token used to call REST APIs or Exchange Web Services (EWS).
     *
     * The `getCallbackTokenAsync` method makes an asynchronous call to get an opaque token from the Exchange Server that hosts the user's mailbox.
     * The lifetime of the callback token is 5 minutes.
@@ -435,9 +616,12 @@ trait Mailbox extends js.Object {
     * Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item.
     * The `saveAsync` method requires a minimum permission level of `ReadWriteItem`.
     *
+    * **Important**: For guidance on delegate or shared scenarios, see the
+    * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+    *
     * *REST Tokens*
     *
-    * When a REST token is requested (`options.isRest` = `true`), the resulting token will not work to authenticate Exchange Web Services calls.
+    * When a REST token is requested (`options.isRest` = `true`), the resulting token will not work to authenticate EWS calls.
     * The token will be limited in scope to read-only access to the current item and its attachments, unless the add-in has specified the
     * `ReadWriteMailbox` permission in its manifest.
     * If the `ReadWriteMailbox` permission is specified, the resulting token will grant read/write access to mail, calendar, and contacts,
@@ -596,7 +780,7 @@ trait Mailbox extends js.Object {
   /**
     * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
     *
-    * To see which event types are supported, see `Office.EventType` for details.
+    * Refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox#events | events section} for supported events.
     *
     * [Api set: Mailbox 1.5]
     *

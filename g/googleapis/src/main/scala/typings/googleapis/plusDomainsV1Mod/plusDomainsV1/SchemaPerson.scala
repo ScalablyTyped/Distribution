@@ -1,12 +1,12 @@
 package typings.googleapis.plusDomainsV1Mod.plusDomainsV1
 
-import typings.googleapis.AnonCoverInfo
-import typings.googleapis.AnonDepartment
-import typings.googleapis.AnonFormatted
-import typings.googleapis.AnonIsDefault
-import typings.googleapis.AnonLabelType
-import typings.googleapis.AnonPrimary
-import typings.googleapis.AnonValue
+import typings.googleapis.anon.CoverInfo
+import typings.googleapis.anon.Department
+import typings.googleapis.anon.Formatted
+import typings.googleapis.anon.IsDefault
+import typings.googleapis.anon.LabelType
+import typings.googleapis.anon.Primary
+import typings.googleapis.anon.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +33,7 @@ trait SchemaPerson extends js.Object {
   /**
     * The cover photo content.
     */
-  var cover: js.UndefOr[AnonCoverInfo] = js.native
+  var cover: js.UndefOr[CoverInfo] = js.native
   /**
     * (this field is not currently used)
     */
@@ -55,7 +55,7 @@ trait SchemaPerson extends js.Object {
     * these email addresses, or the email scope can be used to retrieve just
     * the Google account email address.
     */
-  var emails: js.UndefOr[js.Array[AnonValue]] = js.native
+  var emails: js.UndefOr[js.Array[Value]] = js.native
   /**
     * ETag of this response for caching purposes.
     */
@@ -73,7 +73,7 @@ trait SchemaPerson extends js.Object {
   /**
     * The representation of the person&#39;s profile photo.
     */
-  var image: js.UndefOr[AnonIsDefault] = js.native
+  var image: js.UndefOr[IsDefault] = js.native
   /**
     * Whether this user has signed up for Google+.
     */
@@ -86,7 +86,7 @@ trait SchemaPerson extends js.Object {
     * An object representation of the individual components of a person&#39;s
     * name.
     */
-  var name: js.UndefOr[AnonFormatted] = js.native
+  var name: js.UndefOr[Formatted] = js.native
   /**
     * The nickname of this person.
     */
@@ -105,11 +105,11 @@ trait SchemaPerson extends js.Object {
     * A list of current or past organizations with which this person is
     * associated.
     */
-  var organizations: js.UndefOr[js.Array[AnonDepartment]] = js.native
+  var organizations: js.UndefOr[js.Array[Department]] = js.native
   /**
     * A list of places where this person has lived.
     */
-  var placesLived: js.UndefOr[js.Array[AnonPrimary]] = js.native
+  var placesLived: js.UndefOr[js.Array[Primary]] = js.native
   /**
     * If a Google+ Page, the number of people who have +1&#39;d this page.
     */
@@ -141,7 +141,7 @@ trait SchemaPerson extends js.Object {
   /**
     * A list of URLs for this person.
     */
-  var urls: js.UndefOr[js.Array[AnonLabelType]] = js.native
+  var urls: js.UndefOr[js.Array[LabelType]] = js.native
   /**
     * Whether the person or Google+ Page has been verified.
     */
@@ -154,37 +154,37 @@ object SchemaPerson {
     aboutMe: String = null,
     birthday: String = null,
     braggingRights: String = null,
-    circledByCount: Int | Double = null,
-    cover: AnonCoverInfo = null,
+    circledByCount: js.UndefOr[Double] = js.undefined,
+    cover: CoverInfo = null,
     currentLocation: String = null,
     displayName: String = null,
     domain: String = null,
-    emails: js.Array[AnonValue] = null,
+    emails: js.Array[Value] = null,
     etag: String = null,
     gender: String = null,
     id: String = null,
-    image: AnonIsDefault = null,
+    image: IsDefault = null,
     isPlusUser: js.UndefOr[Boolean] = js.undefined,
     kind: String = null,
-    name: AnonFormatted = null,
+    name: Formatted = null,
     nickname: String = null,
     objectType: String = null,
     occupation: String = null,
-    organizations: js.Array[AnonDepartment] = null,
-    placesLived: js.Array[AnonPrimary] = null,
-    plusOneCount: Int | Double = null,
+    organizations: js.Array[Department] = null,
+    placesLived: js.Array[Primary] = null,
+    plusOneCount: js.UndefOr[Double] = js.undefined,
     relationshipStatus: String = null,
     skills: String = null,
     tagline: String = null,
     url: String = null,
-    urls: js.Array[AnonLabelType] = null,
+    urls: js.Array[LabelType] = null,
     verified: js.UndefOr[Boolean] = js.undefined
   ): SchemaPerson = {
     val __obj = js.Dynamic.literal()
     if (aboutMe != null) __obj.updateDynamic("aboutMe")(aboutMe.asInstanceOf[js.Any])
     if (birthday != null) __obj.updateDynamic("birthday")(birthday.asInstanceOf[js.Any])
     if (braggingRights != null) __obj.updateDynamic("braggingRights")(braggingRights.asInstanceOf[js.Any])
-    if (circledByCount != null) __obj.updateDynamic("circledByCount")(circledByCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(circledByCount)) __obj.updateDynamic("circledByCount")(circledByCount.get.asInstanceOf[js.Any])
     if (cover != null) __obj.updateDynamic("cover")(cover.asInstanceOf[js.Any])
     if (currentLocation != null) __obj.updateDynamic("currentLocation")(currentLocation.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
@@ -194,7 +194,7 @@ object SchemaPerson {
     if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPlusUser)) __obj.updateDynamic("isPlusUser")(isPlusUser.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPlusUser)) __obj.updateDynamic("isPlusUser")(isPlusUser.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (nickname != null) __obj.updateDynamic("nickname")(nickname.asInstanceOf[js.Any])
@@ -202,13 +202,13 @@ object SchemaPerson {
     if (occupation != null) __obj.updateDynamic("occupation")(occupation.asInstanceOf[js.Any])
     if (organizations != null) __obj.updateDynamic("organizations")(organizations.asInstanceOf[js.Any])
     if (placesLived != null) __obj.updateDynamic("placesLived")(placesLived.asInstanceOf[js.Any])
-    if (plusOneCount != null) __obj.updateDynamic("plusOneCount")(plusOneCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(plusOneCount)) __obj.updateDynamic("plusOneCount")(plusOneCount.get.asInstanceOf[js.Any])
     if (relationshipStatus != null) __obj.updateDynamic("relationshipStatus")(relationshipStatus.asInstanceOf[js.Any])
     if (skills != null) __obj.updateDynamic("skills")(skills.asInstanceOf[js.Any])
     if (tagline != null) __obj.updateDynamic("tagline")(tagline.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
-    if (!js.isUndefined(verified)) __obj.updateDynamic("verified")(verified.asInstanceOf[js.Any])
+    if (!js.isUndefined(verified)) __obj.updateDynamic("verified")(verified.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPerson]
   }
 }

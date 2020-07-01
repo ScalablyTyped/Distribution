@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RepositoryAssociationSummary extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) identifying the repository association.
+    * The Amazon Resource Name (ARN) of the  RepositoryAssociation  object. 
     */
   var AssociationArn: js.UndefOr[Arn] = js.native
   /**
-    * The repository association ID.
+    *  The repository association ID. 
     */
   var AssociationId: js.UndefOr[typings.awsSdk.codegurureviewerMod.AssociationId] = js.native
   /**
-    *  The Amazon Resource Name (ARN) identifying the repository connection. 
+    *  The Amazon Resource Name (ARN) of an AWS CodeStar Connections connection. Its format is arn:aws:codestar-connections:region-id:aws-account_id:connection/connection-id. For more information, see Connection in the AWS CodeStar Connections API Reference. 
     */
   var ConnectionArn: js.UndefOr[typings.awsSdk.codegurureviewerMod.ConnectionArn] = js.native
   /**
@@ -27,7 +27,7 @@ trait RepositoryAssociationSummary extends js.Object {
     */
   var Name: js.UndefOr[typings.awsSdk.codegurureviewerMod.Name] = js.native
   /**
-    * The owner of the repository association.
+    * The owner of the repository. For an AWS CodeCommit repository, this is the AWS account ID of the account that owns the repository. For a GitHub or Bitbucket repository, this is the username for the account that owns the repository.
     */
   var Owner: js.UndefOr[typings.awsSdk.codegurureviewerMod.Owner] = js.native
   /**
@@ -35,7 +35,7 @@ trait RepositoryAssociationSummary extends js.Object {
     */
   var ProviderType: js.UndefOr[typings.awsSdk.codegurureviewerMod.ProviderType] = js.native
   /**
-    * The state of the repository association.  Associated  Amazon CodeGuru Reviewer is associated with the repository.   Associating  The association is in progress.   Failed  The association failed.   Disassociating  Amazon CodeGuru Reviewer is in the process of disassociating with the repository.   
+    * The state of the repository association. The valid repository association states are:    Associated: The repository association is complete.     Associating: CodeGuru Reviewer is:     Setting up pull request notifications. This is required for pull requests to trigger a CodeGuru Reviewer review.    If your repository ProviderType is GitHub or Bitbucket, CodeGuru Reviewer creates webhooks in your repository to trigger CodeGuru Reviewer reviews. If you delete these webhooks, reviews of code in your repository cannot be triggered.      Setting up source code access. This is required for CodeGuru Reviewer to securely clone code in your repository.       Failed: The repository failed to associate or disassociate.     Disassociating: CodeGuru Reviewer is removing the repository's pull request notifications and source code access.   
     */
   var State: js.UndefOr[RepositoryAssociationState] = js.native
 }

@@ -1,6 +1,6 @@
 package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
-import typings.googleapis.AnonFederatedId
+import typings.googleapis.anon.FederatedId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,7 +54,7 @@ trait SchemaSetAccountInfoResponse extends js.Object {
   /**
     * The user&#39;s profiles at the associated IdPs.
     */
-  var providerUserInfo: js.UndefOr[js.Array[AnonFederatedId]] = js.native
+  var providerUserInfo: js.UndefOr[js.Array[FederatedId]] = js.native
   /**
     * If idToken is STS id token, then this field will be refresh token.
     */
@@ -74,13 +74,13 @@ object SchemaSetAccountInfoResponse {
     newEmail: String = null,
     passwordHash: String = null,
     photoUrl: String = null,
-    providerUserInfo: js.Array[AnonFederatedId] = null,
+    providerUserInfo: js.Array[FederatedId] = null,
     refreshToken: String = null
   ): SchemaSetAccountInfoResponse = {
     val __obj = js.Dynamic.literal()
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified.asInstanceOf[js.Any])
+    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified.get.asInstanceOf[js.Any])
     if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn.asInstanceOf[js.Any])
     if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])

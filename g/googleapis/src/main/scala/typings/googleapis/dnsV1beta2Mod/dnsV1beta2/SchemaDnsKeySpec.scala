@@ -20,13 +20,13 @@ object SchemaDnsKeySpec {
   @scala.inline
   def apply(
     algorithm: String = null,
-    keyLength: Int | Double = null,
+    keyLength: js.UndefOr[Double] = js.undefined,
     keyType: String = null,
     kind: String = null
   ): SchemaDnsKeySpec = {
     val __obj = js.Dynamic.literal()
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
-    if (keyLength != null) __obj.updateDynamic("keyLength")(keyLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyLength)) __obj.updateDynamic("keyLength")(keyLength.get.asInstanceOf[js.Any])
     if (keyType != null) __obj.updateDynamic("keyType")(keyType.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDnsKeySpec]

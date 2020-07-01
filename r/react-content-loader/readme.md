@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-content-loader
 
-Typings are for version 5.0.4
+Typings are for version 5.1.0
 
 ## Library description:
 SVG-Powered component to easily create placeholder loadings (like Facebook cards loading)

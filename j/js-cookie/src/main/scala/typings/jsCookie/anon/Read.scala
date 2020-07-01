@@ -13,7 +13,7 @@ trait Read[TConv /* <: js.Object */] extends js.Object {
 
 object Read {
   @scala.inline
-  def apply[TConv](
+  def apply[/* <: js.Object */ TConv](
     read: (/* value */ String, /* name */ String) => String = null,
     write: (/* value */ String | TConv, /* name */ String) => String = null
   ): Read[TConv] = {

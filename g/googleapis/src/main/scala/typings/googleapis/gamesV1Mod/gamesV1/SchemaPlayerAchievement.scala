@@ -48,7 +48,7 @@ object SchemaPlayerAchievement {
   @scala.inline
   def apply(
     achievementState: String = null,
-    currentSteps: Int | Double = null,
+    currentSteps: js.UndefOr[Double] = js.undefined,
     experiencePoints: String = null,
     formattedCurrentStepsString: String = null,
     id: String = null,
@@ -57,7 +57,7 @@ object SchemaPlayerAchievement {
   ): SchemaPlayerAchievement = {
     val __obj = js.Dynamic.literal()
     if (achievementState != null) __obj.updateDynamic("achievementState")(achievementState.asInstanceOf[js.Any])
-    if (currentSteps != null) __obj.updateDynamic("currentSteps")(currentSteps.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentSteps)) __obj.updateDynamic("currentSteps")(currentSteps.get.asInstanceOf[js.Any])
     if (experiencePoints != null) __obj.updateDynamic("experiencePoints")(experiencePoints.asInstanceOf[js.Any])
     if (formattedCurrentStepsString != null) __obj.updateDynamic("formattedCurrentStepsString")(formattedCurrentStepsString.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

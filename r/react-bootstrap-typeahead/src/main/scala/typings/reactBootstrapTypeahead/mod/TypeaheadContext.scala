@@ -19,7 +19,7 @@ trait TypeaheadContext[T /* <: TypeaheadModel */] extends js.Object {
 
 object TypeaheadContext {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.reactBootstrapTypeahead.mod.TypeaheadModel */ T](
     activeIndex: js.UndefOr[Double] = js.undefined,
     hintText: String = null,
     initialItem: T = null,

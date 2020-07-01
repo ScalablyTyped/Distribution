@@ -9,6 +9,7 @@ import typings.rcMenu.interfaceMod.SelectEventHandler
 import typings.rcMenu.menuItemMod.MenuItem
 import typings.rcMenu.menuItemMod.MenuItemProps
 import typings.react.mod.Component
+import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.ReactElement
 import typings.std.HTMLElement
@@ -42,8 +43,7 @@ class SubPopupMenu protected ()
     */
   def onKeyDown(e: KeyboardEvent[HTMLElement], callback: js.Function1[/* item */ MenuItem, Unit]): Double = js.native
   def renderCommonMenuItem(child: ReactElement, i: Double, extraProps: MenuItemProps): ReactElement = js.native
-  def renderMenuItem(c: ReactElement, i: Double, subMenuKey: String): ReactElement = js.native
-  def renderMenuItem(c: ReactElement, i: Double, subMenuKey: Double): ReactElement = js.native
+  def renderMenuItem(c: ReactElement, i: Double, subMenuKey: Key): ReactElement = js.native
   @JSName("shouldComponentUpdate")
   def shouldComponentUpdate_MSubPopupMenu(nextProps: SubPopupMenuProps): Boolean = js.native
   def step(direction: Double): MenuItem = js.native

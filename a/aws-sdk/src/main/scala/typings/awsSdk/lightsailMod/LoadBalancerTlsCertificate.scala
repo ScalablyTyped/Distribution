@@ -87,7 +87,7 @@ trait LoadBalancerTlsCertificate extends js.Object {
     */
   var signatureAlgorithm: js.UndefOr[NonEmptyString] = js.native
   /**
-    * The status of the SSL/TLS certificate. Valid values are below.
+    * The validation status of the SSL/TLS certificate. Valid values are below.
     */
   var status: js.UndefOr[LoadBalancerTlsCertificateStatus] = js.native
   /**

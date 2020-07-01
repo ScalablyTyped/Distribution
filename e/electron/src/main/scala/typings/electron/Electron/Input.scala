@@ -22,6 +22,10 @@ trait Input extends js.Object {
     */
   var isAutoRepeat: Boolean
   /**
+    * Equivalent to KeyboardEvent.isComposing.
+    */
+  var isComposing: Boolean
+  /**
     * Equivalent to KeyboardEvent.key.
     */
   var key: String
@@ -46,12 +50,13 @@ object Input {
     code: String,
     control: Boolean,
     isAutoRepeat: Boolean,
+    isComposing: Boolean,
     key: String,
     meta: Boolean,
     shift: Boolean,
     `type`: String
   ): Input = {
-    val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any], isAutoRepeat = isAutoRepeat.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], shift = shift.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any], isAutoRepeat = isAutoRepeat.asInstanceOf[js.Any], isComposing = isComposing.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], shift = shift.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Input]
   }

@@ -1,12 +1,13 @@
 package typings.awsLambda.codepipelineCloudwatchActionMod
 
+import typings.awsLambda.awsLambdaStrings.Build_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsLambda.awsLambdaStrings.Approval
-  - typings.awsLambda.awsLambdaStrings.Build
+  - typings.awsLambda.awsLambdaStrings.Build_
   - typings.awsLambda.awsLambdaStrings.Deploy
   - typings.awsLambda.awsLambdaStrings.Invoke
   - typings.awsLambda.awsLambdaStrings.Source
@@ -18,7 +19,7 @@ object CodePipelineActionCategory {
   @scala.inline
   def Approval: typings.awsLambda.awsLambdaStrings.Approval = "Approval".asInstanceOf[typings.awsLambda.awsLambdaStrings.Approval]
   @scala.inline
-  def Build: typings.awsLambda.awsLambdaStrings.Build = "Build".asInstanceOf[typings.awsLambda.awsLambdaStrings.Build]
+  def Build: Build_ = "Build".asInstanceOf[Build_]
   @scala.inline
   def Deploy: typings.awsLambda.awsLambdaStrings.Deploy = "Deploy".asInstanceOf[typings.awsLambda.awsLambdaStrings.Deploy]
   @scala.inline

@@ -26,7 +26,7 @@ object mod extends js.Object {
   @JSName("literal")
   var literal_Original: js.Function1[/* value */ String, Literal] = js.native
   @JSName("namedNode")
-  var namedNode_Original: js.Function1[/* value */ String, NamedNode] = js.native
+  var namedNode_Original: js.Function1[/* value */ String, NamedNode[String]] = js.native
   @JSName("quad")
   var quad_Original: js.Function3[
     /* subject */ QuadSubject, 
@@ -41,7 +41,7 @@ object mod extends js.Object {
   def dataset[InQuad /* <: BaseQuad */](quads: js.Array[InQuad]): ^[InQuad] = js.native
   def defaultGraph(): DefaultGraph = js.native
   def literal(value: String): Literal = js.native
-  def namedNode(value: String): NamedNode = js.native
+  def namedNode(value: String): NamedNode[String] = js.native
   def quad(subject: QuadSubject, predicate: QuadPredicate, `object`: QuadObject): Quad = js.native
   def variable(value: String): Variable = js.native
 }

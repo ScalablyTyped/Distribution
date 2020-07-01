@@ -42,7 +42,7 @@ class Pointer protected () extends js.Object {
     *
     * @return The point closest to given coordinates.
     */
-  def findNearestKDPoints(series: js.Array[Series], shared: js.UndefOr[Boolean], e: PointerEventObject): js.UndefOr[Point] = js.native
+  def findNearestKDPoint(series: js.Array[Series], shared: js.UndefOr[Boolean], e: PointerEventObject): js.UndefOr[Point] = js.native
   /**
     * Return the cached chartPosition if it is available on the Pointer,
     * otherwise find it. Running offset is quite expensive, so it should be

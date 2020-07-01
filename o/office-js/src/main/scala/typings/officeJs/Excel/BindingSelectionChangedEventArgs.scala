@@ -7,17 +7,16 @@ import scala.scalajs.js.annotation._
 /**
   *
   * Provides information about the selection that raised the "SelectionChanged" event.
-  * 
-  * **Note**: If multiple, discontiguous cells are selected, 
-  * `Binding.onSelectionChanged` only reports row and column information for one selection.
-  * Use `Worksheet.onSelectionChanged` for multiple selected ranges.
+  
+  **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
   *
   * [Api set: ExcelApi 1.2]
   */
 trait BindingSelectionChangedEventArgs extends js.Object {
   /**
     *
-    * Gets the Binding object that represents the binding that raised the SelectionChanged event.
+    * Gets a temporary `Binding` object that contains the ID of the `Binding` object that raised the event. 
+    * Use that ID with `BindingCollection.getItem(id)` to get the binding.
     *
     * [Api set: ExcelApi 1.2]
     */

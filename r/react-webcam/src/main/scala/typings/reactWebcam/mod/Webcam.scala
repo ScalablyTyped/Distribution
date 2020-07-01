@@ -25,6 +25,8 @@ trait Webcam
   @JSName("componentWillUnmount")
   def componentWillUnmount_MWebcam(): Unit = js.native
   def getCanvas(): HTMLCanvasElement | Null = js.native
+  def getCanvas(screenshotDimensions: ScreenshotDimensions): HTMLCanvasElement | Null = js.native
   def getScreenshot(): String | Null = js.native
+  def getScreenshot(screenshotDimensions: ScreenshotDimensions): String | Null = js.native
 }
 

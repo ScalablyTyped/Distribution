@@ -12,7 +12,7 @@ trait IConnectionOptions[C /* <: IClient */] extends js.Object {
 
 object IConnectionOptions {
   @scala.inline
-  def apply[C](
+  def apply[/* <: typings.pgPromise.pgSubsetMod.IClient */ C](
     direct: js.UndefOr[Boolean] = js.undefined,
     onLost: (/* err */ js.Any, /* e */ ILostContext[C]) => Unit = null
   ): IConnectionOptions[C] = {

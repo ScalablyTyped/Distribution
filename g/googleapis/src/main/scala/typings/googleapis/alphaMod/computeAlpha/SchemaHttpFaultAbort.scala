@@ -24,10 +24,10 @@ trait SchemaHttpFaultAbort extends js.Object {
 
 object SchemaHttpFaultAbort {
   @scala.inline
-  def apply(httpStatus: Int | Double = null, percentage: Int | Double = null): SchemaHttpFaultAbort = {
+  def apply(httpStatus: js.UndefOr[Double] = js.undefined, percentage: js.UndefOr[Double] = js.undefined): SchemaHttpFaultAbort = {
     val __obj = js.Dynamic.literal()
-    if (httpStatus != null) __obj.updateDynamic("httpStatus")(httpStatus.asInstanceOf[js.Any])
-    if (percentage != null) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpStatus)) __obj.updateDynamic("httpStatus")(httpStatus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(percentage)) __obj.updateDynamic("percentage")(percentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHttpFaultAbort]
   }
 }

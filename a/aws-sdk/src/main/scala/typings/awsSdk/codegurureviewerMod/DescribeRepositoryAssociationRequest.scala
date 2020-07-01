@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeRepositoryAssociationRequest extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) identifying the association. You can retrieve this ARN by calling ListRepositories.
+    * The Amazon Resource Name (ARN) of the  RepositoryAssociation  object. You can retrieve this ARN by calling ListRepositories.
     */
   var AssociationArn: Arn = js.native
 }

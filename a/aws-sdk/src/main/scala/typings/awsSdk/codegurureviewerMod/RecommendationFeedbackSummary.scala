@@ -15,7 +15,7 @@ trait RecommendationFeedbackSummary extends js.Object {
     */
   var RecommendationId: js.UndefOr[typings.awsSdk.codegurureviewerMod.RecommendationId] = js.native
   /**
-    *  The identifier for the user that gave the feedback. 
+    *  The ID of the user that gave the feedback.   The UserId is an IAM principal that can be specified as an AWS account ID or an Amazon Resource Name (ARN). For more information, see  Specifying a Principal in the AWS Identity and Access Management User Guide. 
     */
   var UserId: js.UndefOr[typings.awsSdk.codegurureviewerMod.UserId] = js.native
 }

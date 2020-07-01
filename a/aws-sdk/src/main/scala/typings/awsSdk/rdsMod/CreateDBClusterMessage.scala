@@ -11,7 +11,7 @@ trait CreateDBClusterMessage extends js.Object {
     */
   var AvailabilityZones: js.UndefOr[typings.awsSdk.rdsMod.AvailabilityZones] = js.native
   /**
-    * The target backtrack window, in seconds. To disable backtracking, set this value to 0.  Default: 0 Constraints:   If specified, this value must be set to a number from 0 to 259,200 (72 hours).  
+    * The target backtrack window, in seconds. To disable backtracking, set this value to 0.   Currently, Backtrack is only supported for Aurora MySQL DB clusters.  Default: 0 Constraints:   If specified, this value must be set to a number from 0 to 259,200 (72 hours).  
     */
   var BacktrackWindow: js.UndefOr[LongOptional] = js.native
   /**
@@ -58,6 +58,10 @@ trait CreateDBClusterMessage extends js.Object {
     * The list of log types that need to be enabled for exporting to CloudWatch Logs. The values in the list depend on the DB engine being used. For more information, see Publishing Database Logs to Amazon CloudWatch Logs in the Amazon Aurora User Guide.
     */
   var EnableCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.native
+  /**
+    * A value that indicates whether to enable write operations to be forwarded from this cluster to the primary cluster in an Aurora global database. The resulting changes are replicated back to this cluster. This parameter only applies to DB clusters that are secondary clusters in an Aurora global database. By default, Aurora disallows write operations for secondary clusters.
+    */
+  var EnableGlobalWriteForwarding: js.UndefOr[BooleanOptional] = js.native
   /**
     * A value that indicates whether to enable the HTTP endpoint for an Aurora Serverless DB cluster. By default, the HTTP endpoint is disabled. When enabled, the HTTP endpoint provides a connectionless web service API for running SQL queries on the Aurora Serverless DB cluster. You can also query your database from inside the RDS console with the query editor. For more information, see Using the Data API for Aurora Serverless in the Amazon Aurora User Guide.
     */
@@ -157,6 +161,7 @@ object CreateDBClusterMessage {
     Domain: String = null,
     DomainIAMRoleName: String = null,
     EnableCloudwatchLogsExports: LogTypeList = null,
+    EnableGlobalWriteForwarding: js.UndefOr[BooleanOptional] = js.undefined,
     EnableHttpEndpoint: js.UndefOr[BooleanOptional] = js.undefined,
     EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined,
     EngineMode: String = null,
@@ -190,6 +195,7 @@ object CreateDBClusterMessage {
     if (Domain != null) __obj.updateDynamic("Domain")(Domain.asInstanceOf[js.Any])
     if (DomainIAMRoleName != null) __obj.updateDynamic("DomainIAMRoleName")(DomainIAMRoleName.asInstanceOf[js.Any])
     if (EnableCloudwatchLogsExports != null) __obj.updateDynamic("EnableCloudwatchLogsExports")(EnableCloudwatchLogsExports.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableGlobalWriteForwarding)) __obj.updateDynamic("EnableGlobalWriteForwarding")(EnableGlobalWriteForwarding.get.asInstanceOf[js.Any])
     if (!js.isUndefined(EnableHttpEndpoint)) __obj.updateDynamic("EnableHttpEndpoint")(EnableHttpEndpoint.get.asInstanceOf[js.Any])
     if (!js.isUndefined(EnableIAMDatabaseAuthentication)) __obj.updateDynamic("EnableIAMDatabaseAuthentication")(EnableIAMDatabaseAuthentication.get.asInstanceOf[js.Any])
     if (EngineMode != null) __obj.updateDynamic("EngineMode")(EngineMode.asInstanceOf[js.Any])

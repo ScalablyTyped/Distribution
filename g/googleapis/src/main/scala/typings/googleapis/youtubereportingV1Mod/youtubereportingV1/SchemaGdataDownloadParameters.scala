@@ -26,8 +26,8 @@ object SchemaGdataDownloadParameters {
     ignoreRange: js.UndefOr[Boolean] = js.undefined
   ): SchemaGdataDownloadParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowGzipCompression)) __obj.updateDynamic("allowGzipCompression")(allowGzipCompression.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreRange)) __obj.updateDynamic("ignoreRange")(ignoreRange.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowGzipCompression)) __obj.updateDynamic("allowGzipCompression")(allowGzipCompression.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreRange)) __obj.updateDynamic("ignoreRange")(ignoreRange.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGdataDownloadParameters]
   }
 }

@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 /**
   * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
   *
+  * In version 8.11.0: deleted
   * In version 8.0.0: introduced
   */
 @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "rest.ODataAttribute")
@@ -40,14 +41,5 @@ object ODataAttribute extends js.Object {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): typings.mendixmodelsdk.restMod.rest.ODataAttribute = js.native
-  /**
-    * Creates and returns a new ODataAttribute instance in the SDK and on the server.
-    * The new ODataAttribute will be automatically stored in the 'attributes' property
-    * of the parent ODataEntity element passed as argument.
-    *
-    * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.0.0 and higher
-    */
-  def createIn(container: typings.mendixmodelsdk.restMod.rest.ODataEntity): typings.mendixmodelsdk.restMod.rest.ODataAttribute = js.native
 }
 

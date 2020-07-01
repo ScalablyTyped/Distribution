@@ -18,6 +18,10 @@ trait ImportSnapshotResult extends js.Object {
     * Information about the import snapshot task.
     */
   var SnapshotTaskDetail: js.UndefOr[typings.awsSdk.ec2Mod.SnapshotTaskDetail] = js.native
+  /**
+    * Any tags assigned to the snapshot being imported.
+    */
+  var Tags: js.UndefOr[TagList] = js.native
 }
 
 object ImportSnapshotResult {
@@ -25,12 +29,14 @@ object ImportSnapshotResult {
   def apply(
     Description: String = null,
     ImportTaskId: String = null,
-    SnapshotTaskDetail: SnapshotTaskDetail = null
+    SnapshotTaskDetail: SnapshotTaskDetail = null,
+    Tags: TagList = null
   ): ImportSnapshotResult = {
     val __obj = js.Dynamic.literal()
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (ImportTaskId != null) __obj.updateDynamic("ImportTaskId")(ImportTaskId.asInstanceOf[js.Any])
     if (SnapshotTaskDetail != null) __obj.updateDynamic("SnapshotTaskDetail")(SnapshotTaskDetail.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportSnapshotResult]
   }
 }

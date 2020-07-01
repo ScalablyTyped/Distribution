@@ -41,7 +41,7 @@ trait AppInstance[T /* <: IAnyObject */] extends js.Object {
 
 object AppInstance {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.minappEnv.IAnyObject */ T](
     onError: /* error */ js.UndefOr[String] => Unit = null,
     onHide: () => Unit = null,
     onLaunch: /* options */ js.UndefOr[ILaunchShowOption] => Unit = null,

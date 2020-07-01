@@ -100,7 +100,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.antDesignReactNative.textareaItemMod.TextInputProps because var conflicts: defaultValue, editable, maxLength, placeholder, value. Inlined onAccessibilityTap, textContentType, pointerEvents, tvParallaxTiltAngle, returnKeyLabel, onResponderGrant, onResponderStart, underlineColorAndroid, placeholderTextColor, accessibilityState, accessibilityRole, textAlignVertical, selectionColor, textBreakStrategy, keyboardType, onAccessibilityEscape, onStartShouldSetResponder, multiline, accessibilityElementsHidden, onStartShouldSetResponderCapture, tvParallaxMagnification, hitSlop, onTouchStart, selectionState, maxFontSizeMultiplier, style, inlineImageLeft, dataDetectorTypes, blurOnSubmit, onScroll, accessibilityTraits, tvParallaxShiftDistanceY, onContentSizeChange, showSoftInputOnFocus, onResponderTerminate, onTouchMove, onTouchEnd, secureTextEntry, onAccessibilityAction, spellCheck, onMoveShouldSetResponderCapture, returnKeyType, onSubmitEditing, rejectResponderTermination, inlineImagePadding, selectTextOnFocus, onEndEditing, accessibilityValue, autoCapitalize, isTVSelectable, onLayout, onKeyPress, accessibilityLiveRegion, disableFullscreenUI, allowFontScaling, clearTextOnFocus, tvParallaxProperties, onTouchEndCapture, onResponderMove, accessibilityLabel, shouldRasterizeIOS, numberOfLines, contextMenuHidden, collapsable, enablesReturnKeyAutomatically, tvParallaxShiftDistanceX, renderToHardwareTextureAndroid, onResponderReject, onMoveShouldSetResponder, needsOffscreenAlphaCompositing, accessibilityIgnoresInvertColors, keyboardAppearance, onResponderEnd, inputAccessoryViewID, clearButtonMode, removeClippedSubviews, importantForAccessibility, accessibilityHint, importantForAutofill, onMagicTap, autoCompleteType, autoFocus, passwordRules, onResponderRelease, onTouchCancel, hasTVPreferredFocus, onSelectionChange, onChangeText, nativeID, accessibilityComponentType, selection, testID, caretHidden, accessibilityViewIsModal, accessible, scrollEnabled, autoCorrect, onResponderTerminationRequest, accessibilityActions */ trait TextareaItemProps
+- typings.antDesignReactNative.textareaItemMod.TextInputProps because var conflicts: defaultValue, editable, maxLength, placeholder, value. Inlined onAccessibilityTap, textContentType, pointerEvents, tvParallaxTiltAngle, returnKeyLabel, onResponderGrant, onResponderStart, underlineColorAndroid, placeholderTextColor, accessibilityState, accessibilityRole, textAlignVertical, selectionColor, textBreakStrategy, keyboardType, onAccessibilityEscape, onStartShouldSetResponder, multiline, accessibilityElementsHidden, onStartShouldSetResponderCapture, tvParallaxMagnification, hitSlop, onTouchStart, selectionState, maxFontSizeMultiplier, style, inlineImageLeft, dataDetectorTypes, blurOnSubmit, onScroll, accessibilityTraits, tvParallaxShiftDistanceY, onContentSizeChange, showSoftInputOnFocus, onResponderTerminate, onTouchMove, onTouchEnd, secureTextEntry, onAccessibilityAction, spellCheck, onMoveShouldSetResponderCapture, returnKeyType, onSubmitEditing, rejectResponderTermination, inlineImagePadding, selectTextOnFocus, onEndEditing, accessibilityValue, autoCapitalize, isTVSelectable, onLayout, onKeyPress, accessibilityLiveRegion, disableFullscreenUI, allowFontScaling, clearTextOnFocus, tvParallaxProperties, onTouchEndCapture, onResponderMove, focusable, accessibilityLabel, shouldRasterizeIOS, numberOfLines, contextMenuHidden, collapsable, enablesReturnKeyAutomatically, tvParallaxShiftDistanceX, renderToHardwareTextureAndroid, onResponderReject, onMoveShouldSetResponder, needsOffscreenAlphaCompositing, accessibilityIgnoresInvertColors, keyboardAppearance, onResponderEnd, inputAccessoryViewID, clearButtonMode, removeClippedSubviews, importantForAccessibility, accessibilityHint, importantForAutofill, onMagicTap, autoCompleteType, autoFocus, passwordRules, onResponderRelease, onTouchCancel, hasTVPreferredFocus, onSelectionChange, onChangeText, nativeID, accessibilityComponentType, selection, testID, caretHidden, accessibilityViewIsModal, accessible, scrollEnabled, autoCorrect, onResponderTerminationRequest, accessibilityActions */ trait TextareaItemProps
   extends TextAreaItemPropsType
      with WithThemeStyles[TextareaItemStyle] {
   var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
@@ -132,6 +132,7 @@ import scala.scalajs.js.annotation._
   var dataDetectorTypes: js.UndefOr[DataDetectorTypes | js.Array[DataDetectorTypes]] = js.undefined
   var disableFullscreenUI: js.UndefOr[Boolean] = js.undefined
   var enablesReturnKeyAutomatically: js.UndefOr[Boolean] = js.undefined
+  var focusable: js.UndefOr[Boolean] = js.undefined
   var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
   var hitSlop: js.UndefOr[Insets] = js.undefined
   var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
@@ -255,6 +256,7 @@ object TextareaItemProps {
     editable: js.UndefOr[Boolean] = js.undefined,
     enablesReturnKeyAutomatically: js.UndefOr[Boolean] = js.undefined,
     error: js.UndefOr[Boolean] = js.undefined,
+    focusable: js.UndefOr[Boolean] = js.undefined,
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
     hitSlop: Insets = null,
     importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
@@ -374,6 +376,7 @@ object TextareaItemProps {
     if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(enablesReturnKeyAutomatically)) __obj.updateDynamic("enablesReturnKeyAutomatically")(enablesReturnKeyAutomatically.get.asInstanceOf[js.Any])
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.get.asInstanceOf[js.Any])
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])

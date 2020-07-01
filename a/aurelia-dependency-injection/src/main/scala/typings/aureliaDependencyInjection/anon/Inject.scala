@@ -15,7 +15,7 @@ trait Inject[TArgs /* <: Args[TBase] */, TBase] extends js.Object {
 
 object Inject {
   @scala.inline
-  def apply[TArgs, TBase](
+  def apply[/* <: typings.aureliaDependencyInjection.mod.Args[TBase] */ TArgs, TBase](
     inject: js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any
     ] = null

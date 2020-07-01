@@ -1,6 +1,7 @@
 package typings.ionicAngular
 
 import typings.angularCore.mod.ElementRef
+import typings.angularCore.mod.Injector
 import typings.ionicAngular.valueAccessorMod.ValueAccessor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation._
 object radioValueAccessorMod extends js.Object {
   @js.native
   class RadioValueAccessor protected () extends ValueAccessor {
-    def this(el: ElementRef[_]) = this()
+    def this(injector: Injector, el: ElementRef[_]) = this()
     def _handleIonSelect(el: js.Any): Unit = js.native
   }
   

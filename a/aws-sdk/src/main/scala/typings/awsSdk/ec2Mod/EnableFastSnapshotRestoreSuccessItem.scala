@@ -31,11 +31,11 @@ trait EnableFastSnapshotRestoreSuccessItem extends js.Object {
     */
   var OptimizingTime: js.UndefOr[MillisecondDateTime] = js.native
   /**
-    * The alias of the snapshot owner.
+    * The AWS owner alias that enabled fast snapshot restores on the snapshot. This is intended for future use.
     */
   var OwnerAlias: js.UndefOr[String] = js.native
   /**
-    * The ID of the AWS account that owns the snapshot.
+    * The ID of the AWS account that enabled fast snapshot restores on the snapshot.
     */
   var OwnerId: js.UndefOr[String] = js.native
   /**

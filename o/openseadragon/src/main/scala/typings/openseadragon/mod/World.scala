@@ -32,7 +32,7 @@ class World protected () extends EventSource {
   def raiseEvent(eventName: String, eventArgs: js.Object): Unit = js.native
   def removeAll(): Unit = js.native
   def removeAllHandlers(eventName: String): Unit = js.native
-  def removeHandler(eventName: String, handler: js.Function1[/* event */ Event, Unit]): Unit = js.native
+  def removeHandler(eventName: String, handler: EventHandler[WorldEvent]): Unit = js.native
   def removeItem(item: TiledImage): Unit = js.native
   def resetItems(): Unit = js.native
   def setAutoRefigureSizes(): Unit = js.native

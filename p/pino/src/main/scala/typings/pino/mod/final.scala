@@ -17,7 +17,7 @@ object `final` extends js.Object {
   /**
     * The pino.final method can be used to create an exit listener function.
     * This listener function can be supplied to process exit events.
-    * The exit listener function will cal the handler with
+    * The exit listener function will call the handler with
     * @param [logger]: pino logger that serves as reference for the final logger
     * @param [handler]: Function that will be called by the handler returned from this function
     * @returns Exit listener function that can be supplied to process exit events and will call the supplied handler function

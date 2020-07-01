@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__addon-storyshots
 
-Typings are for version 5.3.18
+Typings are for version 5.3.19
 
 ## Library description:
 StoryShots is a Jest Snapshot Testing Addon for Storybook.

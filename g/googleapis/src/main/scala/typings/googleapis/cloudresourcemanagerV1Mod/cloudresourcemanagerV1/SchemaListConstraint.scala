@@ -29,7 +29,7 @@ object SchemaListConstraint {
   def apply(suggestedValue: String = null, supportsUnder: js.UndefOr[Boolean] = js.undefined): SchemaListConstraint = {
     val __obj = js.Dynamic.literal()
     if (suggestedValue != null) __obj.updateDynamic("suggestedValue")(suggestedValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsUnder)) __obj.updateDynamic("supportsUnder")(supportsUnder.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsUnder)) __obj.updateDynamic("supportsUnder")(supportsUnder.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListConstraint]
   }
 }

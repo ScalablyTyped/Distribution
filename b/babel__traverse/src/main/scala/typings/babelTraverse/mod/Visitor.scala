@@ -152,6 +152,7 @@ import typings.babelTraverse.anon.`232`
 import typings.babelTraverse.anon.`233`
 import typings.babelTraverse.anon.`234`
 import typings.babelTraverse.anon.`235`
+import typings.babelTraverse.anon.`236`
 import typings.babelTraverse.anon.`23`
 import typings.babelTraverse.anon.`24`
 import typings.babelTraverse.anon.`25`
@@ -343,6 +344,7 @@ trait Visitor[S] extends js.Object {
   var IfStatement: js.UndefOr[VisitNode[S, Extract[Node, `117`]]] = js.undefined
   var Immutable: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Immutable]] = js.undefined
   var Import: js.UndefOr[VisitNode[S, Extract[Node, `96`]]] = js.undefined
+  var ImportAttribute: js.UndefOr[VisitNode[S, Extract[Node, `229`]]] = js.undefined
   var ImportDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `13`]]] = js.undefined
   var ImportDefaultSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `101`]]] = js.undefined
   var ImportNamespaceSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `202`]]] = js.undefined
@@ -355,16 +357,16 @@ trait Visitor[S] extends js.Object {
   var IntersectionTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `213`]]] = js.undefined
   var JSX: js.UndefOr[VisitNode[S, typings.babelTypes.mod.JSX]] = js.undefined
   var JSXAttribute: js.UndefOr[VisitNode[S, Extract[Node, `200`]]] = js.undefined
-  var JSXClosingElement: js.UndefOr[VisitNode[S, Extract[Node, `231`]]] = js.undefined
+  var JSXClosingElement: js.UndefOr[VisitNode[S, Extract[Node, `232`]]] = js.undefined
   var JSXClosingFragment: js.UndefOr[VisitNode[S, Extract[Node, `81`]]] = js.undefined
   var JSXElement: js.UndefOr[VisitNode[S, Extract[Node, `119`]]] = js.undefined
   var JSXEmptyExpression: js.UndefOr[VisitNode[S, Extract[Node, `37`]]] = js.undefined
   var JSXExpressionContainer: js.UndefOr[VisitNode[S, Extract[Node, `198`]]] = js.undefined
-  var JSXFragment: js.UndefOr[VisitNode[S, Extract[Node, `232`]]] = js.undefined
+  var JSXFragment: js.UndefOr[VisitNode[S, Extract[Node, `233`]]] = js.undefined
   var JSXIdentifier: js.UndefOr[VisitNode[S, Extract[Node, `169`]]] = js.undefined
   var JSXMemberExpression: js.UndefOr[VisitNode[S, Extract[Node, `33`]]] = js.undefined
   var JSXNamespacedName: js.UndefOr[VisitNode[S, Extract[Node, `228`]]] = js.undefined
-  var JSXOpeningElement: js.UndefOr[VisitNode[S, Extract[Node, `233`]]] = js.undefined
+  var JSXOpeningElement: js.UndefOr[VisitNode[S, Extract[Node, `234`]]] = js.undefined
   var JSXOpeningFragment: js.UndefOr[VisitNode[S, Extract[Node, `19`]]] = js.undefined
   var JSXSpreadAttribute: js.UndefOr[VisitNode[S, Extract[Node, `151`]]] = js.undefined
   var JSXSpreadChild: js.UndefOr[VisitNode[S, Extract[Node, `80`]]] = js.undefined
@@ -372,7 +374,7 @@ trait Visitor[S] extends js.Object {
   var LVal: js.UndefOr[VisitNode[S, typings.babelTypes.mod.LVal]] = js.undefined
   var LabeledStatement: js.UndefOr[VisitNode[S, Extract[Node, `144`]]] = js.undefined
   var Literal: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Literal]] = js.undefined
-  var LogicalExpression: js.UndefOr[VisitNode[S, Extract[Node, `229`]]] = js.undefined
+  var LogicalExpression: js.UndefOr[VisitNode[S, Extract[Node, `230`]]] = js.undefined
   var Loop: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Loop]] = js.undefined
   var MemberExpression: js.UndefOr[VisitNode[S, Extract[Node, `132`]]] = js.undefined
   var MetaProperty: js.UndefOr[VisitNode[S, Extract[Node, `215`]]] = js.undefined
@@ -393,7 +395,7 @@ trait Visitor[S] extends js.Object {
   var ObjectMethod: js.UndefOr[VisitNode[S, Extract[Node, `0`]]] = js.undefined
   var ObjectPattern: js.UndefOr[VisitNode[S, Extract[Node, `110`]]] = js.undefined
   var ObjectProperty: js.UndefOr[VisitNode[S, Extract[Node, `191`]]] = js.undefined
-  var ObjectTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `234`]]] = js.undefined
+  var ObjectTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `235`]]] = js.undefined
   var ObjectTypeCallProperty: js.UndefOr[VisitNode[S, Extract[Node, `84`]]] = js.undefined
   var ObjectTypeIndexer: js.UndefOr[VisitNode[S, Extract[Node, `111`]]] = js.undefined
   var ObjectTypeInternalSlot: js.UndefOr[VisitNode[S, Extract[Node, `182`]]] = js.undefined
@@ -420,7 +422,7 @@ trait Visitor[S] extends js.Object {
   var RestElement: js.UndefOr[VisitNode[S, Extract[Node, `157`]]] = js.undefined
   var ReturnStatement: js.UndefOr[VisitNode[S, Extract[Node, `15`]]] = js.undefined
   var Scopable: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Scopable]] = js.undefined
-  var SequenceExpression: js.UndefOr[VisitNode[S, Extract[Node, `235`]]] = js.undefined
+  var SequenceExpression: js.UndefOr[VisitNode[S, Extract[Node, `236`]]] = js.undefined
   var SpreadElement: js.UndefOr[VisitNode[S, Extract[Node, `181`]]] = js.undefined
   var Statement: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Statement]] = js.undefined
   var StringLiteral: js.UndefOr[VisitNode[S, Extract[Node, `38`]]] = js.undefined
@@ -508,7 +510,7 @@ trait Visitor[S] extends js.Object {
   var TypeAlias: js.UndefOr[VisitNode[S, Extract[Node, `140`]]] = js.undefined
   var TypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `145`]]] = js.undefined
   var TypeCastExpression: js.UndefOr[VisitNode[S, Extract[Node, `226`]]] = js.undefined
-  var TypeParameter: js.UndefOr[VisitNode[S, Extract[Node, `230`]]] = js.undefined
+  var TypeParameter: js.UndefOr[VisitNode[S, Extract[Node, `231`]]] = js.undefined
   var TypeParameterDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `123`]]] = js.undefined
   var TypeParameterInstantiation: js.UndefOr[VisitNode[S, Extract[Node, `161`]]] = js.undefined
   var TypeofTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `91`]]] = js.undefined

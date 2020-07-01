@@ -47,7 +47,7 @@ trait Structure[T /* <: StructureConstant */] extends RoomObject {
 
 object Structure {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.screeps.StructureConstant */ T](
     destroy: () => ScreepsReturnCode,
     effects: js.Array[RoomObjectEffect],
     hits: Double,

@@ -41,14 +41,14 @@ object SchemaAppVersion {
     isProduction: js.UndefOr[Boolean] = js.undefined,
     track: String = null,
     trackId: js.Array[String] = null,
-    versionCode: Int | Double = null,
+    versionCode: js.UndefOr[Double] = js.undefined,
     versionString: String = null
   ): SchemaAppVersion = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isProduction)) __obj.updateDynamic("isProduction")(isProduction.asInstanceOf[js.Any])
+    if (!js.isUndefined(isProduction)) __obj.updateDynamic("isProduction")(isProduction.get.asInstanceOf[js.Any])
     if (track != null) __obj.updateDynamic("track")(track.asInstanceOf[js.Any])
     if (trackId != null) __obj.updateDynamic("trackId")(trackId.asInstanceOf[js.Any])
-    if (versionCode != null) __obj.updateDynamic("versionCode")(versionCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(versionCode)) __obj.updateDynamic("versionCode")(versionCode.get.asInstanceOf[js.Any])
     if (versionString != null) __obj.updateDynamic("versionString")(versionString.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAppVersion]
   }

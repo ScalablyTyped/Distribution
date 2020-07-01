@@ -19,7 +19,7 @@ trait Rejects[TPromise /* <: js.Object */] extends js.Object {
 
 object Rejects {
   @scala.inline
-  def apply[TPromise](rejects: typings.jest.mod.jest.AndNot[TPromise], resolves: typings.jest.mod.jest.AndNot[TPromise]): Rejects[TPromise] = {
+  def apply[/* <: js.Object */ TPromise](rejects: typings.jest.mod.jest.AndNot[TPromise], resolves: typings.jest.mod.jest.AndNot[TPromise]): Rejects[TPromise] = {
     val __obj = js.Dynamic.literal(rejects = rejects.asInstanceOf[js.Any], resolves = resolves.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rejects[TPromise]]
   }

@@ -1,9 +1,9 @@
 package typings.googleapis.v3Mod.analyticsV3
 
-import typings.googleapis.AnonCaseSensitive
-import typings.googleapis.AnonField
-import typings.googleapis.AnonFieldIndex
-import typings.googleapis.AnonHref
+import typings.googleapis.anon.CaseSensitive
+import typings.googleapis.anon.Field
+import typings.googleapis.anon.FieldIndex
+import typings.googleapis.anon.Href
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ trait SchemaFilter extends js.Object {
   /**
     * Details for the filter of the type ADVANCED.
     */
-  var advancedDetails: js.UndefOr[AnonCaseSensitive] = js.native
+  var advancedDetails: js.UndefOr[CaseSensitive] = js.native
   /**
     * Time this filter was created.
     */
@@ -44,7 +44,7 @@ trait SchemaFilter extends js.Object {
   /**
     * Details for the filter of the type LOWER.
     */
-  var lowercaseDetails: js.UndefOr[AnonField] = js.native
+  var lowercaseDetails: js.UndefOr[Field] = js.native
   /**
     * Name of this filter.
     */
@@ -53,11 +53,11 @@ trait SchemaFilter extends js.Object {
     * Parent link for this filter. Points to the account to which this filter
     * belongs.
     */
-  var parentLink: js.UndefOr[AnonHref] = js.native
+  var parentLink: js.UndefOr[Href] = js.native
   /**
     * Details for the filter of the type SEARCH_AND_REPLACE.
     */
-  var searchAndReplaceDetails: js.UndefOr[AnonFieldIndex] = js.native
+  var searchAndReplaceDetails: js.UndefOr[FieldIndex] = js.native
   /**
     * Link for this filter.
     */
@@ -74,27 +74,27 @@ trait SchemaFilter extends js.Object {
   /**
     * Details for the filter of the type UPPER.
     */
-  var uppercaseDetails: js.UndefOr[AnonField] = js.native
+  var uppercaseDetails: js.UndefOr[Field] = js.native
 }
 
 object SchemaFilter {
   @scala.inline
   def apply(
     accountId: String = null,
-    advancedDetails: AnonCaseSensitive = null,
+    advancedDetails: CaseSensitive = null,
     created: String = null,
     excludeDetails: SchemaFilterExpression = null,
     id: String = null,
     includeDetails: SchemaFilterExpression = null,
     kind: String = null,
-    lowercaseDetails: AnonField = null,
+    lowercaseDetails: Field = null,
     name: String = null,
-    parentLink: AnonHref = null,
-    searchAndReplaceDetails: AnonFieldIndex = null,
+    parentLink: Href = null,
+    searchAndReplaceDetails: FieldIndex = null,
     selfLink: String = null,
     `type`: String = null,
     updated: String = null,
-    uppercaseDetails: AnonField = null
+    uppercaseDetails: Field = null
   ): SchemaFilter = {
     val __obj = js.Dynamic.literal()
     if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])

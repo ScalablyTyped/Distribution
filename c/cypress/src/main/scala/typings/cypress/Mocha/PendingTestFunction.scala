@@ -1,5 +1,6 @@
 package typings.cypress.Mocha
 
+import typings.cypress.Cypress.TestConfigOverrides
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,6 +30,13 @@ trait PendingTestFunction extends js.Object {
     * - _Only available when invoked via the mocha CLI._
     */
   def apply(title: String): Test = js.native
+  /**
+    * Describe a specification or test-case with the given `title`, TestCptions, and callback `fn` acting
+    * as a thunk.
+    */
+  def apply(title: String, config: TestConfigOverrides): Test = js.native
+  def apply(title: String, config: TestConfigOverrides, fn: AsyncFunc): Test = js.native
+  def apply(title: String, config: TestConfigOverrides, fn: Func): Test = js.native
   def apply(title: String, fn: AsyncFunc): Test = js.native
   def apply(title: String, fn: Func): Test = js.native
 }

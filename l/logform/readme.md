@@ -1,7 +1,7 @@
 
 # Scala.js typings for logform
 
-Typings are for version 2.1.2
+Typings are for version 2.2.0
 
 ## Library description:
 An mutable object-based log format designed for chaining & objectMode streams.

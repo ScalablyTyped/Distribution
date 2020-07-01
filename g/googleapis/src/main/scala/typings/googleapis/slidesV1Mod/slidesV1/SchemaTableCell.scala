@@ -34,16 +34,16 @@ trait SchemaTableCell extends js.Object {
 object SchemaTableCell {
   @scala.inline
   def apply(
-    columnSpan: Int | Double = null,
+    columnSpan: js.UndefOr[Double] = js.undefined,
     location: SchemaTableCellLocation = null,
-    rowSpan: Int | Double = null,
+    rowSpan: js.UndefOr[Double] = js.undefined,
     tableCellProperties: SchemaTableCellProperties = null,
     text: SchemaTextContent = null
   ): SchemaTableCell = {
     val __obj = js.Dynamic.literal()
-    if (columnSpan != null) __obj.updateDynamic("columnSpan")(columnSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnSpan)) __obj.updateDynamic("columnSpan")(columnSpan.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (rowSpan != null) __obj.updateDynamic("rowSpan")(rowSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowSpan)) __obj.updateDynamic("rowSpan")(rowSpan.get.asInstanceOf[js.Any])
     if (tableCellProperties != null) __obj.updateDynamic("tableCellProperties")(tableCellProperties.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTableCell]

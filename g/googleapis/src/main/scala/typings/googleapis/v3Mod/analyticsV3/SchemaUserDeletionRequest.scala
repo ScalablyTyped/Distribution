@@ -1,6 +1,6 @@
 package typings.googleapis.v3Mod.analyticsV3
 
-import typings.googleapis.AnonType
+import typings.googleapis.anon.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ trait SchemaUserDeletionRequest extends js.Object {
   /**
     * User ID.
     */
-  var id: js.UndefOr[AnonType] = js.native
+  var id: js.UndefOr[Type] = js.native
   /**
     * Value is &quot;analytics#userDeletionRequest&quot;.
     */
@@ -38,7 +38,7 @@ object SchemaUserDeletionRequest {
   def apply(
     deletionRequestTime: String = null,
     firebaseProjectId: String = null,
-    id: AnonType = null,
+    id: Type = null,
     kind: String = null,
     webPropertyId: String = null
   ): SchemaUserDeletionRequest = {

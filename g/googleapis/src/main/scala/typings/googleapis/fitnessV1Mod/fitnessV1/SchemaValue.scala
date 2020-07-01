@@ -37,14 +37,14 @@ trait SchemaValue extends js.Object {
 object SchemaValue {
   @scala.inline
   def apply(
-    fpVal: Int | Double = null,
-    intVal: Int | Double = null,
+    fpVal: js.UndefOr[Double] = js.undefined,
+    intVal: js.UndefOr[Double] = js.undefined,
     mapVal: js.Array[SchemaValueMapValEntry] = null,
     stringVal: String = null
   ): SchemaValue = {
     val __obj = js.Dynamic.literal()
-    if (fpVal != null) __obj.updateDynamic("fpVal")(fpVal.asInstanceOf[js.Any])
-    if (intVal != null) __obj.updateDynamic("intVal")(intVal.asInstanceOf[js.Any])
+    if (!js.isUndefined(fpVal)) __obj.updateDynamic("fpVal")(fpVal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(intVal)) __obj.updateDynamic("intVal")(intVal.get.asInstanceOf[js.Any])
     if (mapVal != null) __obj.updateDynamic("mapVal")(mapVal.asInstanceOf[js.Any])
     if (stringVal != null) __obj.updateDynamic("stringVal")(stringVal.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaValue]

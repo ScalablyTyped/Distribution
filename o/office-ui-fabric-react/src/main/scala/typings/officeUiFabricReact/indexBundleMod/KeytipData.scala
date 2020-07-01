@@ -1,11 +1,15 @@
 package typings.officeUiFabricReact.indexBundleMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeUiFabricReact.keytipDataTypesMod.IKeytipDataProps
+import typings.react.mod.FunctionComponent
+import typings.uifabricUtilities.irendercomponentMod.IRenderComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "KeytipData")
 @js.native
-class KeytipData ()
-  extends typings.officeUiFabricReact.keytipDataKeytipDataMod.KeytipData
+object KeytipData
+  extends TopLevel[FunctionComponent[IKeytipDataProps with IRenderComponent[js.Object]]]
 

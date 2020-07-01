@@ -85,6 +85,7 @@ trait SystemProps
      with FontSizeProps[StyledSystemLength]
      with LineHeightProps[StyledSystemLength]
      with FontWeightProps
+     with FontStyleProps
      with TextAlignProps
      with LetterSpacingProps[StyledSystemLength]
      with ColorProps

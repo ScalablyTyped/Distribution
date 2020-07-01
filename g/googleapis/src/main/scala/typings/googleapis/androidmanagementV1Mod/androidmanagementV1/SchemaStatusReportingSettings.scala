@@ -56,14 +56,14 @@ object SchemaStatusReportingSettings {
     softwareInfoEnabled: js.UndefOr[Boolean] = js.undefined
   ): SchemaStatusReportingSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(applicationReportsEnabled)) __obj.updateDynamic("applicationReportsEnabled")(applicationReportsEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(deviceSettingsEnabled)) __obj.updateDynamic("deviceSettingsEnabled")(deviceSettingsEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayInfoEnabled)) __obj.updateDynamic("displayInfoEnabled")(displayInfoEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(hardwareStatusEnabled)) __obj.updateDynamic("hardwareStatusEnabled")(hardwareStatusEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(memoryInfoEnabled)) __obj.updateDynamic("memoryInfoEnabled")(memoryInfoEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(networkInfoEnabled)) __obj.updateDynamic("networkInfoEnabled")(networkInfoEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(powerManagementEventsEnabled)) __obj.updateDynamic("powerManagementEventsEnabled")(powerManagementEventsEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(softwareInfoEnabled)) __obj.updateDynamic("softwareInfoEnabled")(softwareInfoEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(applicationReportsEnabled)) __obj.updateDynamic("applicationReportsEnabled")(applicationReportsEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deviceSettingsEnabled)) __obj.updateDynamic("deviceSettingsEnabled")(deviceSettingsEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayInfoEnabled)) __obj.updateDynamic("displayInfoEnabled")(displayInfoEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hardwareStatusEnabled)) __obj.updateDynamic("hardwareStatusEnabled")(hardwareStatusEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(memoryInfoEnabled)) __obj.updateDynamic("memoryInfoEnabled")(memoryInfoEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(networkInfoEnabled)) __obj.updateDynamic("networkInfoEnabled")(networkInfoEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(powerManagementEventsEnabled)) __obj.updateDynamic("powerManagementEventsEnabled")(powerManagementEventsEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(softwareInfoEnabled)) __obj.updateDynamic("softwareInfoEnabled")(softwareInfoEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStatusReportingSettings]
   }
 }

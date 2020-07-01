@@ -10,12 +10,12 @@ trait LoggingEvent extends js.Object {
   var categoryName: String
   var cluster: js.UndefOr[Worker] = js.undefined
   var context: js.Any
-  	// level of message
+    // level of message
   var data: js.Array[_]
-  	// name of category
+    // name of category
   var level: Level
   var pid: Double
-  	// objects to log
+    // objects to log
   var startTime: Date
 }
 

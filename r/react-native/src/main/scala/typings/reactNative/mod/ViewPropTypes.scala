@@ -36,6 +36,7 @@ object ViewPropTypes extends js.Object {
   var accessibilityViewIsModal: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
   var accessible: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
   var collapsable: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
+  var focusable: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
   var hasTVPreferredFocus: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
   var hitSlop: js.UndefOr[Validator[js.UndefOr[Insets]]] = js.native
   var importantForAccessibility: js.UndefOr[Validator[js.UndefOr[auto | yes | no | `no-hide-descendants`]]] = js.native

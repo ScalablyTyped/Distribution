@@ -19,7 +19,7 @@ trait MenuElement[S /* <: Schema[_, _] */] extends js.Object {
 
 object MenuElement {
   @scala.inline
-  def apply[S](render: EditorView[S] => Dom[S]): MenuElement[S] = {
+  def apply[/* <: typings.prosemirrorModel.mod.Schema[_, _] */ S](render: EditorView[S] => Dom[S]): MenuElement[S] = {
     val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render))
     __obj.asInstanceOf[MenuElement[S]]
   }

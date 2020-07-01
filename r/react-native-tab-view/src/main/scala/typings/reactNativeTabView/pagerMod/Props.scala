@@ -37,7 +37,7 @@ trait Props[T /* <: Route */] extends js.Object {
 
 object Props {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.reactNativeTabView.typesMod.Route */ T](
     children: EventEmitterPropsposition => ReactNode,
     gestureHandlerProps: ComponentProps[Instantiable0[PanGestureHandler]],
     keyboardDismissMode: none | `on-drag` | auto,

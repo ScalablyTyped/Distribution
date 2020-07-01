@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait ExtensionContext extends js.Object {
   /**
+    * Gets the extension's environment variable collection for this workspace, enabling changes
+    * to be applied to terminal environment variables.
+    */
+  val environmentVariableCollection: EnvironmentVariableCollection
+  /**
     * The absolute file path of the directory containing the extension. Shorthand
     * notation for [ExtensionContext.extensionUri.fsPath](#TextDocument.uri) (independent of the uri scheme).
     */
@@ -66,6 +71,7 @@ object ExtensionContext {
   @scala.inline
   def apply(
     asAbsolutePath: String => String,
+    environmentVariableCollection: EnvironmentVariableCollection,
     extensionPath: String,
     extensionUri: Uri,
     globalState: Memento,
@@ -75,7 +81,7 @@ object ExtensionContext {
     workspaceState: Memento,
     storagePath: String = null
   ): ExtensionContext = {
-    val __obj = js.Dynamic.literal(asAbsolutePath = js.Any.fromFunction1(asAbsolutePath), extensionPath = extensionPath.asInstanceOf[js.Any], extensionUri = extensionUri.asInstanceOf[js.Any], globalState = globalState.asInstanceOf[js.Any], globalStoragePath = globalStoragePath.asInstanceOf[js.Any], logPath = logPath.asInstanceOf[js.Any], subscriptions = subscriptions.asInstanceOf[js.Any], workspaceState = workspaceState.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(asAbsolutePath = js.Any.fromFunction1(asAbsolutePath), environmentVariableCollection = environmentVariableCollection.asInstanceOf[js.Any], extensionPath = extensionPath.asInstanceOf[js.Any], extensionUri = extensionUri.asInstanceOf[js.Any], globalState = globalState.asInstanceOf[js.Any], globalStoragePath = globalStoragePath.asInstanceOf[js.Any], logPath = logPath.asInstanceOf[js.Any], subscriptions = subscriptions.asInstanceOf[js.Any], workspaceState = workspaceState.asInstanceOf[js.Any])
     if (storagePath != null) __obj.updateDynamic("storagePath")(storagePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionContext]
   }

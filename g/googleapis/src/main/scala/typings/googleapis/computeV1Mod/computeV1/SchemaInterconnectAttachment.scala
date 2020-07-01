@@ -177,10 +177,10 @@ object SchemaInterconnectAttachment {
     selfLink: String = null,
     state: String = null,
     `type`: String = null,
-    vlanTag8021q: Int | Double = null
+    vlanTag8021q: js.UndefOr[Double] = js.undefined
   ): SchemaInterconnectAttachment = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adminEnabled)) __obj.updateDynamic("adminEnabled")(adminEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(adminEnabled)) __obj.updateDynamic("adminEnabled")(adminEnabled.get.asInstanceOf[js.Any])
     if (bandwidth != null) __obj.updateDynamic("bandwidth")(bandwidth.asInstanceOf[js.Any])
     if (candidateSubnets != null) __obj.updateDynamic("candidateSubnets")(candidateSubnets.asInstanceOf[js.Any])
     if (cloudRouterIpAddress != null) __obj.updateDynamic("cloudRouterIpAddress")(cloudRouterIpAddress.asInstanceOf[js.Any])
@@ -203,7 +203,7 @@ object SchemaInterconnectAttachment {
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (vlanTag8021q != null) __obj.updateDynamic("vlanTag8021q")(vlanTag8021q.asInstanceOf[js.Any])
+    if (!js.isUndefined(vlanTag8021q)) __obj.updateDynamic("vlanTag8021q")(vlanTag8021q.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInterconnectAttachment]
   }
 }

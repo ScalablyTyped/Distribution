@@ -10,7 +10,7 @@ trait Title[Args /* <: js.Array[_] */] extends js.Object {
 
 object Title {
   @scala.inline
-  def apply[Args](title: (/* providedTitle */ js.UndefOr[String], /* args */ Args) => String = null): Title[Args] = {
+  def apply[/* <: js.Array[_] */ Args](title: (/* providedTitle */ js.UndefOr[String], /* args */ Args) => String = null): Title[Args] = {
     val __obj = js.Dynamic.literal()
     if (title != null) __obj.updateDynamic("title")(js.Any.fromFunction2(title))
     __obj.asInstanceOf[Title[Args]]

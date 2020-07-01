@@ -89,29 +89,29 @@ object SchemaOutlierDetection {
   @scala.inline
   def apply(
     baseEjectionTime: SchemaDuration = null,
-    consecutiveErrors: Int | Double = null,
-    consecutiveGatewayFailure: Int | Double = null,
-    enforcingConsecutiveErrors: Int | Double = null,
-    enforcingConsecutiveGatewayFailure: Int | Double = null,
-    enforcingSuccessRate: Int | Double = null,
+    consecutiveErrors: js.UndefOr[Double] = js.undefined,
+    consecutiveGatewayFailure: js.UndefOr[Double] = js.undefined,
+    enforcingConsecutiveErrors: js.UndefOr[Double] = js.undefined,
+    enforcingConsecutiveGatewayFailure: js.UndefOr[Double] = js.undefined,
+    enforcingSuccessRate: js.UndefOr[Double] = js.undefined,
     interval: SchemaDuration = null,
-    maxEjectionPercent: Int | Double = null,
-    successRateMinimumHosts: Int | Double = null,
-    successRateRequestVolume: Int | Double = null,
-    successRateStdevFactor: Int | Double = null
+    maxEjectionPercent: js.UndefOr[Double] = js.undefined,
+    successRateMinimumHosts: js.UndefOr[Double] = js.undefined,
+    successRateRequestVolume: js.UndefOr[Double] = js.undefined,
+    successRateStdevFactor: js.UndefOr[Double] = js.undefined
   ): SchemaOutlierDetection = {
     val __obj = js.Dynamic.literal()
     if (baseEjectionTime != null) __obj.updateDynamic("baseEjectionTime")(baseEjectionTime.asInstanceOf[js.Any])
-    if (consecutiveErrors != null) __obj.updateDynamic("consecutiveErrors")(consecutiveErrors.asInstanceOf[js.Any])
-    if (consecutiveGatewayFailure != null) __obj.updateDynamic("consecutiveGatewayFailure")(consecutiveGatewayFailure.asInstanceOf[js.Any])
-    if (enforcingConsecutiveErrors != null) __obj.updateDynamic("enforcingConsecutiveErrors")(enforcingConsecutiveErrors.asInstanceOf[js.Any])
-    if (enforcingConsecutiveGatewayFailure != null) __obj.updateDynamic("enforcingConsecutiveGatewayFailure")(enforcingConsecutiveGatewayFailure.asInstanceOf[js.Any])
-    if (enforcingSuccessRate != null) __obj.updateDynamic("enforcingSuccessRate")(enforcingSuccessRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(consecutiveErrors)) __obj.updateDynamic("consecutiveErrors")(consecutiveErrors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(consecutiveGatewayFailure)) __obj.updateDynamic("consecutiveGatewayFailure")(consecutiveGatewayFailure.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enforcingConsecutiveErrors)) __obj.updateDynamic("enforcingConsecutiveErrors")(enforcingConsecutiveErrors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enforcingConsecutiveGatewayFailure)) __obj.updateDynamic("enforcingConsecutiveGatewayFailure")(enforcingConsecutiveGatewayFailure.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enforcingSuccessRate)) __obj.updateDynamic("enforcingSuccessRate")(enforcingSuccessRate.get.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (maxEjectionPercent != null) __obj.updateDynamic("maxEjectionPercent")(maxEjectionPercent.asInstanceOf[js.Any])
-    if (successRateMinimumHosts != null) __obj.updateDynamic("successRateMinimumHosts")(successRateMinimumHosts.asInstanceOf[js.Any])
-    if (successRateRequestVolume != null) __obj.updateDynamic("successRateRequestVolume")(successRateRequestVolume.asInstanceOf[js.Any])
-    if (successRateStdevFactor != null) __obj.updateDynamic("successRateStdevFactor")(successRateStdevFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxEjectionPercent)) __obj.updateDynamic("maxEjectionPercent")(maxEjectionPercent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(successRateMinimumHosts)) __obj.updateDynamic("successRateMinimumHosts")(successRateMinimumHosts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(successRateRequestVolume)) __obj.updateDynamic("successRateRequestVolume")(successRateRequestVolume.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(successRateStdevFactor)) __obj.updateDynamic("successRateStdevFactor")(successRateStdevFactor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOutlierDetection]
   }
 }

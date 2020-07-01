@@ -35,6 +35,10 @@ trait CreateInfrastructureConfigurationRequest extends js.Object {
     */
   var name: ResourceName = js.native
   /**
+    * The tags attached to the resource created by Image Builder.
+    */
+  var resourceTags: js.UndefOr[ResourceTagMap] = js.native
+  /**
     * The security group IDs to associate with the instance used to customize your EC2 AMI. 
     */
   var securityGroupIds: js.UndefOr[SecurityGroupIds] = js.native
@@ -66,6 +70,7 @@ object CreateInfrastructureConfigurationRequest {
     instanceTypes: InstanceTypeList = null,
     keyPair: NonEmptyString = null,
     logging: Logging = null,
+    resourceTags: ResourceTagMap = null,
     securityGroupIds: SecurityGroupIds = null,
     snsTopicArn: SnsTopicArn = null,
     subnetId: NonEmptyString = null,
@@ -77,6 +82,7 @@ object CreateInfrastructureConfigurationRequest {
     if (instanceTypes != null) __obj.updateDynamic("instanceTypes")(instanceTypes.asInstanceOf[js.Any])
     if (keyPair != null) __obj.updateDynamic("keyPair")(keyPair.asInstanceOf[js.Any])
     if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
+    if (resourceTags != null) __obj.updateDynamic("resourceTags")(resourceTags.asInstanceOf[js.Any])
     if (securityGroupIds != null) __obj.updateDynamic("securityGroupIds")(securityGroupIds.asInstanceOf[js.Any])
     if (snsTopicArn != null) __obj.updateDynamic("snsTopicArn")(snsTopicArn.asInstanceOf[js.Any])
     if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])

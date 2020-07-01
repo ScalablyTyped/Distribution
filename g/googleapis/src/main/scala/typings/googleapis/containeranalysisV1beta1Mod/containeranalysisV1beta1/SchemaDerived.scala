@@ -37,13 +37,13 @@ object SchemaDerived {
   @scala.inline
   def apply(
     baseResourceUrl: String = null,
-    distance: Int | Double = null,
+    distance: js.UndefOr[Double] = js.undefined,
     fingerprint: SchemaFingerprint = null,
     layerInfo: js.Array[SchemaLayer] = null
   ): SchemaDerived = {
     val __obj = js.Dynamic.literal()
     if (baseResourceUrl != null) __obj.updateDynamic("baseResourceUrl")(baseResourceUrl.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
     if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
     if (layerInfo != null) __obj.updateDynamic("layerInfo")(layerInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDerived]

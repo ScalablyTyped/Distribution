@@ -18,7 +18,7 @@ trait Edge[TContext, TEvent /* <: EventObject */, TEventType /* <: /* import war
 
 object Edge {
   @scala.inline
-  def apply[TContext, TEvent, TEventType](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent, /* <: / * import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] * / js.Any */ TEventType](
     actions: js.Array[Action[TContext, TEvent]],
     event: TEventType,
     source: StateNode[TContext, _, TEvent, _],

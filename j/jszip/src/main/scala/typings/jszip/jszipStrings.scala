@@ -49,13 +49,12 @@ object jszipStrings {
   sealed trait nodebuffer extends OutputType
   
   @js.native
-  sealed trait nodestream extends js.Object
-  
-  @js.native
   sealed trait stream extends InputType
   
   @js.native
-  sealed trait string extends InputType
+  sealed trait string
+    extends InputType
+       with OutputType
   
   @js.native
   sealed trait text
@@ -87,8 +86,6 @@ object jszipStrings {
   def blob: blob = "blob".asInstanceOf[blob]
   @scala.inline
   def nodebuffer: nodebuffer = "nodebuffer".asInstanceOf[nodebuffer]
-  @scala.inline
-  def nodestream: nodestream = "nodestream".asInstanceOf[nodestream]
   @scala.inline
   def stream: stream = "stream".asInstanceOf[stream]
   @scala.inline

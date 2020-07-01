@@ -43,10 +43,16 @@ object algoliaClientSearchStrings {
   sealed trait browse extends ApiKeyACLType
   
   @js.native
+  sealed trait clear extends BatchActionType
+  
+  @js.native
   sealed trait contains extends js.Object
   
   @js.native
   sealed trait count extends js.Object
+  
+  @js.native
+  sealed trait delete extends BatchActionType
   
   @js.native
   sealed trait deleteIndex extends ApiKeyACLType
@@ -187,9 +193,13 @@ object algoliaClientSearchStrings {
   @scala.inline
   def browse: browse = "browse".asInstanceOf[browse]
   @scala.inline
+  def clear: clear = "clear".asInstanceOf[clear]
+  @scala.inline
   def contains: contains = "contains".asInstanceOf[contains]
   @scala.inline
   def count: count = "count".asInstanceOf[count]
+  @scala.inline
+  def delete: delete = "delete".asInstanceOf[delete]
   @scala.inline
   def deleteIndex: deleteIndex = "deleteIndex".asInstanceOf[deleteIndex]
   @scala.inline

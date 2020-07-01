@@ -25,13 +25,13 @@ object SchemaCPUInfo {
   @scala.inline
   def apply(
     cpuProcessor: String = null,
-    cpuSpeedInGhz: Int | Double = null,
-    numberOfCores: Int | Double = null
+    cpuSpeedInGhz: js.UndefOr[Double] = js.undefined,
+    numberOfCores: js.UndefOr[Double] = js.undefined
   ): SchemaCPUInfo = {
     val __obj = js.Dynamic.literal()
     if (cpuProcessor != null) __obj.updateDynamic("cpuProcessor")(cpuProcessor.asInstanceOf[js.Any])
-    if (cpuSpeedInGhz != null) __obj.updateDynamic("cpuSpeedInGhz")(cpuSpeedInGhz.asInstanceOf[js.Any])
-    if (numberOfCores != null) __obj.updateDynamic("numberOfCores")(numberOfCores.asInstanceOf[js.Any])
+    if (!js.isUndefined(cpuSpeedInGhz)) __obj.updateDynamic("cpuSpeedInGhz")(cpuSpeedInGhz.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfCores)) __obj.updateDynamic("numberOfCores")(numberOfCores.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCPUInfo]
   }
 }

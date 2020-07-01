@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * A floating-point color-only format with 11 bits for red and green channels, and 10 bits for the blue channel (WebGL2 only).
+  * A floating-point color-only format with 11 bits for red and green channels and 10 bits for the blue channel (WebGL2 only).
   */
 @JSImport("playcanvas", "PIXELFORMAT_111110F")
 @js.native

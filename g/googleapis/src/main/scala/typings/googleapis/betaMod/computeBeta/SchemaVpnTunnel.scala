@@ -167,14 +167,14 @@ object SchemaVpnTunnel {
     description: String = null,
     detailedStatus: String = null,
     id: String = null,
-    ikeVersion: Int | Double = null,
+    ikeVersion: js.UndefOr[Double] = js.undefined,
     kind: String = null,
     labelFingerprint: String = null,
     labels: StringDictionary[String] = null,
     localTrafficSelector: js.Array[String] = null,
     name: String = null,
     peerExternalGateway: String = null,
-    peerExternalGatewayInterface: Int | Double = null,
+    peerExternalGatewayInterface: js.UndefOr[Double] = js.undefined,
     peerGcpGateway: String = null,
     peerIp: String = null,
     region: String = null,
@@ -186,21 +186,21 @@ object SchemaVpnTunnel {
     status: String = null,
     targetVpnGateway: String = null,
     vpnGateway: String = null,
-    vpnGatewayInterface: Int | Double = null
+    vpnGatewayInterface: js.UndefOr[Double] = js.undefined
   ): SchemaVpnTunnel = {
     val __obj = js.Dynamic.literal()
     if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (detailedStatus != null) __obj.updateDynamic("detailedStatus")(detailedStatus.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (ikeVersion != null) __obj.updateDynamic("ikeVersion")(ikeVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(ikeVersion)) __obj.updateDynamic("ikeVersion")(ikeVersion.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (labelFingerprint != null) __obj.updateDynamic("labelFingerprint")(labelFingerprint.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (localTrafficSelector != null) __obj.updateDynamic("localTrafficSelector")(localTrafficSelector.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (peerExternalGateway != null) __obj.updateDynamic("peerExternalGateway")(peerExternalGateway.asInstanceOf[js.Any])
-    if (peerExternalGatewayInterface != null) __obj.updateDynamic("peerExternalGatewayInterface")(peerExternalGatewayInterface.asInstanceOf[js.Any])
+    if (!js.isUndefined(peerExternalGatewayInterface)) __obj.updateDynamic("peerExternalGatewayInterface")(peerExternalGatewayInterface.get.asInstanceOf[js.Any])
     if (peerGcpGateway != null) __obj.updateDynamic("peerGcpGateway")(peerGcpGateway.asInstanceOf[js.Any])
     if (peerIp != null) __obj.updateDynamic("peerIp")(peerIp.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
@@ -212,7 +212,7 @@ object SchemaVpnTunnel {
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (targetVpnGateway != null) __obj.updateDynamic("targetVpnGateway")(targetVpnGateway.asInstanceOf[js.Any])
     if (vpnGateway != null) __obj.updateDynamic("vpnGateway")(vpnGateway.asInstanceOf[js.Any])
-    if (vpnGatewayInterface != null) __obj.updateDynamic("vpnGatewayInterface")(vpnGatewayInterface.asInstanceOf[js.Any])
+    if (!js.isUndefined(vpnGatewayInterface)) __obj.updateDynamic("vpnGatewayInterface")(vpnGatewayInterface.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVpnTunnel]
   }
 }

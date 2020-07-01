@@ -9,7 +9,7 @@ import typings.tsMockito.anon.FnCall
 import typings.tsMockito.anon.FnCallClazz
 import typings.tsMockito.anon.FnCallExpectedClass
 import typings.tsMockito.anon.FnCallMethod
-import typings.tsMockito.anon.FnCallMockedValue
+import typings.tsMockito.anon.FnCallMockedValues
 import typings.tsMockito.argCaptorMod.ArgCaptor1
 import typings.tsMockito.argCaptorMod.ArgCaptor10
 import typings.tsMockito.argCaptorMod.ArgCaptor2
@@ -96,8 +96,8 @@ object mod extends js.Object {
   def mock[T](clazz: Instantiable1[/* args (repeated) */ js.Any, T]): T = js.native
   def notNull(): js.Any = js.native
   def objectContaining(expectedValue: js.Object): js.Any = js.native
-  def reset[T](mockedValue: T): Unit = js.native
-  def resetCalls[T](mockedValue: T): Unit = js.native
+  def reset[T](mockedValues: T*): Unit = js.native
+  def resetCalls[T](mockedValues: T*): Unit = js.native
   def spy[T](instanceToSpy: T): T = js.native
   def strictEqual(expectedValue: js.Any): js.Any = js.native
   def verify[T](method: T): MethodStubVerificator[T] = js.native
@@ -132,9 +132,9 @@ object mod extends js.Object {
     @JSName("objectContaining")
     var objectContaining_Original: js.Function1[/* expectedValue */ js.Object, _] = js.native
     @JSName("resetCalls")
-    var resetCalls_Original: FnCallMockedValue = js.native
+    var resetCalls_Original: FnCallMockedValues = js.native
     @JSName("reset")
-    var reset_Original: FnCallMockedValue = js.native
+    var reset_Original: FnCallMockedValues = js.native
     @JSName("spy")
     var spy_Original: FnCall = js.native
     @JSName("strictEqual")
@@ -210,8 +210,8 @@ object mod extends js.Object {
     def mock[T](clazz: Instantiable1[/* args (repeated) */ js.Any, T]): T = js.native
     def notNull(): js.Any = js.native
     def objectContaining(expectedValue: js.Object): js.Any = js.native
-    def reset[T](mockedValue: T): Unit = js.native
-    def resetCalls[T](mockedValue: T): Unit = js.native
+    def reset[T](mockedValues: T*): Unit = js.native
+    def resetCalls[T](mockedValues: T*): Unit = js.native
     def spy[T](expectedValue: T): T = js.native
     def strictEqual(expectedValue: js.Any): js.Any = js.native
     def verify[T](method: T): MethodStubVerificator[T] = js.native

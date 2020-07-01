@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 
 trait WorkbookStreamWriterOptions extends WorkbookWriterOptions {
   /**
-    * Specifies whether to add style information to the workbook.
-    * Styles can add some performance overhead. Default is false
-    */
+  			 * Specifies whether to add style information to the workbook.
+  			 * Styles can add some performance overhead. Default is false
+  			 */
   var zip: PartialArchiverZipOptions
 }
 

@@ -36,12 +36,12 @@ object SchemaServiceSpecReleaseType {
   def apply(
     configuration: SchemaConfigurationSpec = null,
     revisions: js.Array[String] = null,
-    rolloutPercent: Int | Double = null
+    rolloutPercent: js.UndefOr[Double] = js.undefined
   ): SchemaServiceSpecReleaseType = {
     val __obj = js.Dynamic.literal()
     if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
     if (revisions != null) __obj.updateDynamic("revisions")(revisions.asInstanceOf[js.Any])
-    if (rolloutPercent != null) __obj.updateDynamic("rolloutPercent")(rolloutPercent.asInstanceOf[js.Any])
+    if (!js.isUndefined(rolloutPercent)) __obj.updateDynamic("rolloutPercent")(rolloutPercent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaServiceSpecReleaseType]
   }
 }

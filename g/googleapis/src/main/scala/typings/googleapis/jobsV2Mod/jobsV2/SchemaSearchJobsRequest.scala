@@ -108,25 +108,25 @@ object SchemaSearchJobsRequest {
     histogramFacets: SchemaHistogramFacets = null,
     jobView: String = null,
     mode: String = null,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     orderBy: String = null,
-    pageSize: Int | Double = null,
+    pageSize: js.UndefOr[Double] = js.undefined,
     pageToken: String = null,
     query: SchemaJobQuery = null,
     requestMetadata: SchemaRequestMetadata = null,
     sortBy: String = null
   ): SchemaSearchJobsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableRelevanceThresholding)) __obj.updateDynamic("disableRelevanceThresholding")(disableRelevanceThresholding.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableBroadening)) __obj.updateDynamic("enableBroadening")(enableBroadening.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePreciseResultSize)) __obj.updateDynamic("enablePreciseResultSize")(enablePreciseResultSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableRelevanceThresholding)) __obj.updateDynamic("disableRelevanceThresholding")(disableRelevanceThresholding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableBroadening)) __obj.updateDynamic("enableBroadening")(enableBroadening.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePreciseResultSize)) __obj.updateDynamic("enablePreciseResultSize")(enablePreciseResultSize.get.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     if (histogramFacets != null) __obj.updateDynamic("histogramFacets")(histogramFacets.asInstanceOf[js.Any])
     if (jobView != null) __obj.updateDynamic("jobView")(jobView.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (requestMetadata != null) __obj.updateDynamic("requestMetadata")(requestMetadata.asInstanceOf[js.Any])

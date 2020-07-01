@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ConfigureAgentResponse extends js.Object {
   /**
-    * 
+    *  An  AgentConfiguration  object that specifies if an agent profiles or not and for how long to return profiling data. 
     */
   var configuration: AgentConfiguration = js.native
 }

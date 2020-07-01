@@ -1,9 +1,13 @@
 package typings.firefoxWebextBrowser.anon
 
 import typings.firefoxWebextBrowser.browser.types.Setting
+import typings.firefoxWebextBrowser.browser.urlbar.EngagementState
 import typings.firefoxWebextBrowser.browser.urlbar.Result
+import typings.firefoxWebextBrowser.browser.urlbar.SearchOptions
 import typings.firefoxWebextBrowser.browser.urlbar.UrlbarOnBehaviorRequestedEvent
+import typings.firefoxWebextBrowser.browser.urlbar.UrlbarOnEngagementEvent
 import typings.firefoxWebextBrowser.browser.urlbar.UrlbarOnQueryCanceledEvent
+import typings.firefoxWebextBrowser.browser.urlbar.UrlbarOnResultPickedEvent
 import typings.firefoxWebextBrowser.browser.urlbar.UrlbarOnResultsRequestedEvent
 import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.active
 import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.inactive
@@ -12,17 +16,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Typeofurlbar extends js.Object {
-  /**
-    * A contextual tip appears in the urlbar's view (its search results panel) and has an icon, text, optional button, and
-    * an optional link. Use the `browser.urlbar.contextualTip` API to experiment with the contextual tip. Restricted to
-    * Mozilla privileged WebExtensions.
-    *
-    * Not allowed in: Content scripts, Devtools pages
-    */
-  val contextualTip: TypeofcontextualTip
+  /* urlbar properties */
   /** Enables or disables the engagement telemetry. */
-  val engagementTelemetry: Setting
+  val engagementTelemetry: Setting = js.native
   /* urlbar events */
   /**
     * Before a query starts, this event is fired for the given provider. Its purpose is to request the provider's
@@ -36,7 +34,12 @@ trait Typeofurlbar extends js.Object {
       /* query */ typings.firefoxWebextBrowser.browser.urlbar.Query, 
       active | inactive | restricting
     ]
-  ]
+  ] = js.native
+  /**
+    * This event is fired when the user starts and ends an engagement with the urlbar.
+    * @param state The state of the engagement.
+    */
+  val onEngagement: UrlbarOnEngagementEvent[js.Function1[/* state */ EngagementState, Unit]] = js.native
   /**
     * This event is fired for the given provider when a query is canceled. The listener should stop any ongoing fetch
     * or creation of results and clean up its resources.
@@ -44,7 +47,15 @@ trait Typeofurlbar extends js.Object {
     */
   val onQueryCanceled: UrlbarOnQueryCanceledEvent[
     js.Function1[/* query */ typings.firefoxWebextBrowser.browser.urlbar.Query, Unit]
-  ]
+  ] = js.native
+  /**
+    * Typically, a provider includes a `url` property in its results' payloads. When the user picks a result with a
+    * URL, Firefox automatically loads the URL. URLs don't make sense for every result type, however. When the user
+    * picks a result without a URL, this event is fired. The provider should take an appropriate action in response.
+    * Currently the only applicable `ResultType` is `tip`.
+    * @param payload The payload of the result that was picked.
+    */
+  val onResultPicked: UrlbarOnResultPickedEvent[js.Function1[/* payload */ js.Object, Unit]] = js.native
   /**
     * When a query starts, this event is fired for the given provider if the provider is active for the query and
     * there are no other providers that are restricting. Its purpose is to request the provider's results for the
@@ -54,33 +65,22 @@ trait Typeofurlbar extends js.Object {
     */
   val onResultsRequested: UrlbarOnResultsRequestedEvent[
     js.Function1[/* query */ typings.firefoxWebextBrowser.browser.urlbar.Query, js.Array[Result]]
-  ]
-  /* urlbar properties */
-  /** Enables or disables the open-view-on-focus mode. */
-  val openViewOnFocus: Setting
-}
-
-object Typeofurlbar {
-  @scala.inline
-  def apply(
-    contextualTip: TypeofcontextualTip,
-    engagementTelemetry: Setting,
-    onBehaviorRequested: UrlbarOnBehaviorRequestedEvent[
-      js.Function1[
-        /* query */ typings.firefoxWebextBrowser.browser.urlbar.Query, 
-        active | inactive | restricting
-      ]
-    ],
-    onQueryCanceled: UrlbarOnQueryCanceledEvent[
-      js.Function1[/* query */ typings.firefoxWebextBrowser.browser.urlbar.Query, Unit]
-    ],
-    onResultsRequested: UrlbarOnResultsRequestedEvent[
-      js.Function1[/* query */ typings.firefoxWebextBrowser.browser.urlbar.Query, js.Array[Result]]
-    ],
-    openViewOnFocus: Setting
-  ): Typeofurlbar = {
-    val __obj = js.Dynamic.literal(contextualTip = contextualTip.asInstanceOf[js.Any], engagementTelemetry = engagementTelemetry.asInstanceOf[js.Any], onBehaviorRequested = onBehaviorRequested.asInstanceOf[js.Any], onQueryCanceled = onQueryCanceled.asInstanceOf[js.Any], onResultsRequested = onResultsRequested.asInstanceOf[js.Any], openViewOnFocus = openViewOnFocus.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Typeofurlbar]
-  }
+  ] = js.native
+  /* urlbar functions */
+  /** Closes the urlbar view in the current window. */
+  def closeView(): js.Promise[_] = js.native
+  /**
+    * Focuses the urlbar in the current window.
+    * @param [select] If true, the text in the urlbar will also be selected.
+    */
+  def focus(): js.Promise[_] = js.native
+  def focus(select: Boolean): js.Promise[_] = js.native
+  /**
+    * Starts a search in the urlbar in the current window.
+    * @param searchString The search string.
+    * @param [options] Options for the search.
+    */
+  def search(searchString: String): js.Promise[_] = js.native
+  def search(searchString: String, options: SearchOptions): js.Promise[_] = js.native
 }
 

@@ -46,16 +46,16 @@ object SchemaTextElement {
   @scala.inline
   def apply(
     autoText: SchemaAutoText = null,
-    endIndex: Int | Double = null,
+    endIndex: js.UndefOr[Double] = js.undefined,
     paragraphMarker: SchemaParagraphMarker = null,
-    startIndex: Int | Double = null,
+    startIndex: js.UndefOr[Double] = js.undefined,
     textRun: SchemaTextRun = null
   ): SchemaTextElement = {
     val __obj = js.Dynamic.literal()
     if (autoText != null) __obj.updateDynamic("autoText")(autoText.asInstanceOf[js.Any])
-    if (endIndex != null) __obj.updateDynamic("endIndex")(endIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(endIndex)) __obj.updateDynamic("endIndex")(endIndex.get.asInstanceOf[js.Any])
     if (paragraphMarker != null) __obj.updateDynamic("paragraphMarker")(paragraphMarker.asInstanceOf[js.Any])
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
     if (textRun != null) __obj.updateDynamic("textRun")(textRun.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTextElement]
   }

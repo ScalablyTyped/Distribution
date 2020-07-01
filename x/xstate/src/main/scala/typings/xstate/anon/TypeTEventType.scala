@@ -10,7 +10,7 @@ trait TypeTEventType[TEventType /* <: String */] extends js.Object {
 
 object TypeTEventType {
   @scala.inline
-  def apply[TEventType](`type`: TEventType): TypeTEventType[TEventType] = {
+  def apply[/* <: java.lang.String */ TEventType](`type`: TEventType): TypeTEventType[TEventType] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeTEventType[TEventType]]

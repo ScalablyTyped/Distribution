@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
      with BaseNode
      with Terminatorless {
   var argument: Expression | Null
-  var delegate: js.Any
+  var delegate: Boolean
   @JSName("type")
   var type_YieldExpression_ : YieldExpression
 }
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 object YieldExpression_ {
   @scala.inline
   def apply(
-    delegate: js.Any,
+    delegate: Boolean,
     `type`: YieldExpression,
     argument: Expression = null,
     end: Double = null.asInstanceOf[Double],

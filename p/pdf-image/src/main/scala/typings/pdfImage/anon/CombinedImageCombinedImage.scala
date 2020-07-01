@@ -10,7 +10,7 @@ trait CombinedImageCombinedImage[CombinedImage /* <: Boolean */] extends js.Obje
 
 object CombinedImageCombinedImage {
   @scala.inline
-  def apply[CombinedImage](combinedImage: CombinedImage): CombinedImageCombinedImage[CombinedImage] = {
+  def apply[/* <: scala.Boolean */ CombinedImage](combinedImage: CombinedImage): CombinedImageCombinedImage[CombinedImage] = {
     val __obj = js.Dynamic.literal(combinedImage = combinedImage.asInstanceOf[js.Any])
     __obj.asInstanceOf[CombinedImageCombinedImage[CombinedImage]]
   }

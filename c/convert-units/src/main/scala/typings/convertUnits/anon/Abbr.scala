@@ -16,7 +16,7 @@ trait Abbr[T /* <: unit */] extends js.Object {
 
 object Abbr {
   @scala.inline
-  def apply[T](abbr: T, measure: measure, system: system, unit: Name): Abbr[T] = {
+  def apply[/* <: typings.convertUnits.mod.unit */ T](abbr: T, measure: measure, system: system, unit: Name): Abbr[T] = {
     val __obj = js.Dynamic.literal(abbr = abbr.asInstanceOf[js.Any], measure = measure.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Abbr[T]]
   }

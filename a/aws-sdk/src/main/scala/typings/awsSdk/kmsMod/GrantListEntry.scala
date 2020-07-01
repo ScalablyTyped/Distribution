@@ -19,7 +19,7 @@ trait GrantListEntry extends js.Object {
     */
   var GrantId: js.UndefOr[GrantIdType] = js.native
   /**
-    * The principal that receives the grant's permissions.
+    * The identity that gets the permissions in the grant. The GranteePrincipal field in the ListGrants response usually contains the user or role designated as the grantee principal in the grant. However, when the grantee principal in the grant is an AWS service, the GranteePrincipal field contains the service principal, which might represent several different grantee principals.
     */
   var GranteePrincipal: js.UndefOr[PrincipalIdType] = js.native
   /**

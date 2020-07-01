@@ -9,7 +9,6 @@ import typings.babelPluginTester.babelPluginTesterStrings.AsteriskAsterisk
 import typings.babelPluginTester.babelPluginTesterStrings.BlockStatement
 import typings.babelPluginTester.babelPluginTesterStrings.ClassBody
 import typings.babelPluginTester.babelPluginTesterStrings.CommonJS
-import typings.babelPluginTester.babelPluginTesterStrings.Declaration
 import typings.babelPluginTester.babelPluginTesterStrings.ES
 import typings.babelPluginTester.babelPluginTesterStrings.EqualssignEqualssign
 import typings.babelPluginTester.babelPluginTesterStrings.EqualssignEqualssignEqualssign
@@ -98,10 +97,13 @@ import typings.babelTypes.mod.ClassPrivateMethod_
 import typings.babelTypes.mod.ClassPrivateProperty_
 import typings.babelTypes.mod.ClassProperty_
 import typings.babelTypes.mod.Comment
+import typings.babelTypes.mod.CommentBlock
+import typings.babelTypes.mod.CommentLine
 import typings.babelTypes.mod.CommentTypeShorthand
 import typings.babelTypes.mod.ConditionalExpression_
 import typings.babelTypes.mod.ContinueStatement_
 import typings.babelTypes.mod.DebuggerStatement_
+import typings.babelTypes.mod.Declaration
 import typings.babelTypes.mod.DeclareClass_
 import typings.babelTypes.mod.DeclareExportAllDeclaration_
 import typings.babelTypes.mod.DeclareExportDeclaration_
@@ -152,6 +154,7 @@ import typings.babelTypes.mod.FunctionTypeParam_
 import typings.babelTypes.mod.GenericTypeAnnotation_
 import typings.babelTypes.mod.Identifier_
 import typings.babelTypes.mod.IfStatement_
+import typings.babelTypes.mod.ImportAttribute_
 import typings.babelTypes.mod.ImportDeclaration_
 import typings.babelTypes.mod.ImportDefaultSpecifier_
 import typings.babelTypes.mod.ImportNamespaceSpecifier_
@@ -340,17 +343,12 @@ trait Typeoftypes extends js.Object {
   def addComment[T /* <: Node */](node: T, `type`: CommentTypeShorthand, content: String, line: Boolean): T = js.native
   def addComments[T /* <: Node */](node: T, `type`: CommentTypeShorthand, comments: js.Array[Comment]): T = js.native
   def anyTypeAnnotation(): AnyTypeAnnotation_ = js.native
-  @JSName("appendToMemberExpression")
-  def appendToMemberExpression_property[T /* <: PickMemberExpressionobjec */](
-    member: T,
-    append: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.MemberExpression['property'] */ js.Any
-  ): T = js.native
-  @JSName("appendToMemberExpression")
-  def appendToMemberExpression_property[T /* <: PickMemberExpressionobjec */](
-    member: T,
-    append: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.MemberExpression['property'] */ js.Any,
-    computed: Boolean
-  ): T = js.native
+  def appendToMemberExpression[T /* <: PickMemberExpressionobjec */](member: T, append: Expression): T = js.native
+  def appendToMemberExpression[T /* <: PickMemberExpressionobjec */](member: T, append: Expression, computed: Boolean): T = js.native
+  def appendToMemberExpression[T /* <: PickMemberExpressionobjec */](member: T, append: Identifier_): T = js.native
+  def appendToMemberExpression[T /* <: PickMemberExpressionobjec */](member: T, append: Identifier_, computed: Boolean): T = js.native
+  def appendToMemberExpression[T /* <: PickMemberExpressionobjec */](member: T, append: PrivateName_): T = js.native
+  def appendToMemberExpression[T /* <: PickMemberExpressionobjec */](member: T, append: PrivateName_, computed: Boolean): T = js.native
   def argumentPlaceholder(): ArgumentPlaceholder_ = js.native
   def arrayExpression(): ArrayExpression_ = js.native
   def arrayExpression(elements: js.Array[Null | Expression | SpreadElement_]): ArrayExpression_ = js.native
@@ -383,7 +381,12 @@ trait Typeoftypes extends js.Object {
     left: Expression,
     right: Expression
   ): BinaryExpression_ = js.native
-  def bindExpression(`object`: js.Any, callee: js.Any): BindExpression_ = js.native
+  def binaryExpression(
+    operator: Plussign | `-_` | Slash | Percentsign | Asterisk | AsteriskAsterisk | Ampersand | Verticalline | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | LessthansignLessthansign | ^  | EqualssignEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | in | instanceof | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign,
+    left: PrivateName_,
+    right: Expression
+  ): BinaryExpression_ = js.native
+  def bindExpression(`object`: Expression, callee: Expression): BindExpression_ = js.native
   def blockStatement(body: js.Array[Statement]): BlockStatement_ = js.native
   def blockStatement(body: js.Array[Statement], directives: js.Array[Directive_]): BlockStatement_ = js.native
   def booleanLiteral(value: Boolean): BooleanLiteral_ = js.native
@@ -416,7 +419,13 @@ trait Typeoftypes extends js.Object {
       ClassMethod_ | ClassPrivateMethod_ | ClassProperty_ | ClassPrivateProperty_ | TSDeclareMethod_ | TSIndexSignature_
     ]
   ): ClassBody_ = js.native
-  def classDeclaration(id: js.Any, superClass: js.Any, body: js.Any, decorators: js.Any): ClassDeclaration_ = js.native
+  def classDeclaration(id: Identifier_, superClass: js.UndefOr[Expression | Null], body: ClassBody_): ClassDeclaration_ = js.native
+  def classDeclaration(
+    id: Identifier_,
+    superClass: js.UndefOr[Expression | Null],
+    body: ClassBody_,
+    decorators: js.Array[Decorator_]
+  ): ClassDeclaration_ = js.native
   def classExpression(id: js.UndefOr[Identifier_ | Null], superClass: js.UndefOr[Expression | Null], body: ClassBody_): ClassExpression_ = js.native
   def classExpression(
     id: js.UndefOr[Identifier_ | Null],
@@ -1570,29 +1579,32 @@ trait Typeoftypes extends js.Object {
   def exportDefaultDeclaration(declaration: TSDeclareFunction_): ExportDefaultDeclaration_ = js.native
   def exportDefaultSpecifier(exported: Identifier_): ExportDefaultSpecifier_ = js.native
   def exportNamedDeclaration(): ExportNamedDeclaration_ = js.native
-  def exportNamedDeclaration(declaration: js.Any): ExportNamedDeclaration_ = js.native
   def exportNamedDeclaration(
-    declaration: js.Any,
+    declaration: Null,
     specifiers: js.Array[ExportSpecifier_ | ExportDefaultSpecifier_ | ExportNamespaceSpecifier_]
   ): ExportNamedDeclaration_ = js.native
   def exportNamedDeclaration(
-    declaration: js.Any,
+    declaration: Null,
     specifiers: js.Array[ExportSpecifier_ | ExportDefaultSpecifier_ | ExportNamespaceSpecifier_],
     source: StringLiteral_
   ): ExportNamedDeclaration_ = js.native
+  def exportNamedDeclaration(declaration: Declaration): ExportNamedDeclaration_ = js.native
   def exportNamedDeclaration(
-    declaration: Null,
+    declaration: Declaration,
     specifiers: js.Array[ExportSpecifier_ | ExportDefaultSpecifier_ | ExportNamespaceSpecifier_]
   ): ExportNamedDeclaration_ = js.native
   def exportNamedDeclaration(
-    declaration: Null,
+    declaration: Declaration,
     specifiers: js.Array[ExportSpecifier_ | ExportDefaultSpecifier_ | ExportNamespaceSpecifier_],
     source: StringLiteral_
   ): ExportNamedDeclaration_ = js.native
   def exportNamespaceSpecifier(exported: Identifier_): ExportNamespaceSpecifier_ = js.native
   def exportSpecifier(local: Identifier_, exported: Identifier_): ExportSpecifier_ = js.native
   def expressionStatement(expression: Expression): ExpressionStatement_ = js.native
-  def file(program: Program_, comments: js.Any, tokens: js.Any): File_ = js.native
+  def file(program: Program_): File_ = js.native
+  def file(program: Program_, comments: js.Array[CommentBlock | CommentLine]): File_ = js.native
+  def file(program: Program_, comments: js.Array[CommentBlock | CommentLine], tokens: js.Array[_]): File_ = js.native
+  def file(program: Program_, comments: Null, tokens: js.Array[_]): File_ = js.native
   def forInStatement(left: LVal, right: Expression, body: Statement): ForInStatement_ = js.native
   def forInStatement(left: VariableDeclaration_, right: Expression, body: Statement): ForInStatement_ = js.native
   def forOfStatement(left: LVal, right: Expression, body: Statement): ForOfStatement_ = js.native
@@ -1669,10 +1681,11 @@ trait Typeoftypes extends js.Object {
   def getOuterBindingIdentifiers_false(node: Node, duplicates: `false`): Record[String, Identifier_] = js.native
   @JSName("getOuterBindingIdentifiers")
   def getOuterBindingIdentifiers_true(node: Node, duplicates: `true`): Record[String, js.Array[Identifier_]] = js.native
-  def identifier(name: js.Any): Identifier_ = js.native
+  def identifier(name: String): Identifier_ = js.native
   def ifStatement(test: Expression, consequent: Statement): IfStatement_ = js.native
   def ifStatement(test: Expression, consequent: Statement, alternate: Statement): IfStatement_ = js.native
   def `import`(): Import_ = js.native
+  def importAttribute(key: Identifier_, value: StringLiteral_): ImportAttribute_ = js.native
   def importDeclaration(
     specifiers: js.Array[ImportSpecifier_ | ImportDefaultSpecifier_ | ImportNamespaceSpecifier_],
     source: StringLiteral_
@@ -1704,9 +1717,9 @@ trait Typeoftypes extends js.Object {
   def is(`type`: String, n: Null, required: Partial[Node]): /* is @babel/types.@babel/types.Node */ Boolean = js.native
   def is(`type`: String, n: Node): /* is @babel/types.@babel/types.Node */ Boolean = js.native
   def is(`type`: String, n: Node, required: Partial[Node]): /* is @babel/types.@babel/types.Node */ Boolean = js.native
-  def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 237 */ js.Any */](`type`: T): /* is std.Extract<@babel/types.@babel/types.Node, @babel/types.anon.Type<T>> */ Boolean = js.native
-  def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 237 */ js.Any */](`type`: T, n: Node): /* is std.Extract<@babel/types.@babel/types.Node, @babel/types.anon.Type<T>> */ Boolean = js.native
-  def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 237 */ js.Any */, P /* <: Extract[Node, Type[T]] */](`type`: T, n: js.UndefOr[Node | Null], required: Partial[P]): /* is P */ Boolean = js.native
+  def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 238 */ js.Any */](`type`: T): /* is std.Extract<@babel/types.@babel/types.Node, @babel/types.anon.Type<T>> */ Boolean = js.native
+  def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 238 */ js.Any */](`type`: T, n: Node): /* is std.Extract<@babel/types.@babel/types.Node, @babel/types.anon.Type<T>> */ Boolean = js.native
+  def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 238 */ js.Any */, P /* <: Extract[Node, Type[T]] */](`type`: T, n: js.UndefOr[Node | Null], required: Partial[P]): /* is P */ Boolean = js.native
   def isAnyTypeAnnotation(): /* is @babel/types.@babel/types.AnyTypeAnnotation */ Boolean = js.native
   def isAnyTypeAnnotation(node: js.Object): /* is @babel/types.@babel/types.AnyTypeAnnotation */ Boolean = js.native
   def isAnyTypeAnnotation(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.AnyTypeAnnotation */ Boolean = js.native
@@ -2107,6 +2120,10 @@ trait Typeoftypes extends js.Object {
   def isImport(node: js.Object): /* is @babel/types.@babel/types.Import */ Boolean = js.native
   def isImport(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.Import */ Boolean = js.native
   def isImport(node: Null, opts: js.Object): /* is @babel/types.@babel/types.Import */ Boolean = js.native
+  def isImportAttribute(): /* is @babel/types.@babel/types.ImportAttribute */ Boolean = js.native
+  def isImportAttribute(node: js.Object): /* is @babel/types.@babel/types.ImportAttribute */ Boolean = js.native
+  def isImportAttribute(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.ImportAttribute */ Boolean = js.native
+  def isImportAttribute(node: Null, opts: js.Object): /* is @babel/types.@babel/types.ImportAttribute */ Boolean = js.native
   def isImportDeclaration(): /* is @babel/types.@babel/types.ImportDeclaration */ Boolean = js.native
   def isImportDeclaration(node: js.Object): /* is @babel/types.@babel/types.ImportDeclaration */ Boolean = js.native
   def isImportDeclaration(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.ImportDeclaration */ Boolean = js.native
@@ -2381,8 +2398,8 @@ trait Typeoftypes extends js.Object {
   def isPlaceholder(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.Placeholder */ Boolean = js.native
   def isPlaceholder(node: Null, opts: js.Object): /* is @babel/types.@babel/types.Placeholder */ Boolean = js.native
   def isPlaceholderType(
-    placeholderType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 237 */ js.Any,
-    targetType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 237 */ js.Any
+    placeholderType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 238 */ js.Any,
+    targetType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 238 */ js.Any
   ): Boolean = js.native
   def isPrivate(): /* is @babel/types.@babel/types.Private */ Boolean = js.native
   def isPrivate(node: js.Object): /* is @babel/types.@babel/types.Private */ Boolean = js.native
@@ -2785,7 +2802,7 @@ trait Typeoftypes extends js.Object {
   def isTupleTypeAnnotation(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.TupleTypeAnnotation */ Boolean = js.native
   def isTupleTypeAnnotation(node: Null, opts: js.Object): /* is @babel/types.@babel/types.TupleTypeAnnotation */ Boolean = js.native
   def isType(nodetype: js.UndefOr[Null | String], targetType: String): Boolean = js.native
-  def isType[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 237 */ js.Any */](nodetype: String, targetType: T): /* is T */ Boolean = js.native
+  def isType[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 238 */ js.Any */](nodetype: String, targetType: T): /* is T */ Boolean = js.native
   def isTypeAlias(): /* is @babel/types.@babel/types.TypeAlias */ Boolean = js.native
   def isTypeAlias(node: js.Object): /* is @babel/types.@babel/types.TypeAlias */ Boolean = js.native
   def isTypeAlias(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.TypeAlias */ Boolean = js.native
@@ -2894,8 +2911,15 @@ trait Typeoftypes extends js.Object {
     closingElement: js.UndefOr[JSXClosingElement_ | Null],
     children: js.Array[
       JSXElement_ | JSXExpressionContainer_ | JSXFragment_ | JSXSpreadChild_ | JSXText_
+    ]
+  ): JSXElement_ = js.native
+  def jsxElement(
+    openingElement: JSXOpeningElement_,
+    closingElement: js.UndefOr[JSXClosingElement_ | Null],
+    children: js.Array[
+      JSXElement_ | JSXExpressionContainer_ | JSXFragment_ | JSXSpreadChild_ | JSXText_
     ],
-    selfClosing: js.Any
+    selfClosing: Boolean
   ): JSXElement_ = js.native
   def jsxEmptyExpression(): JSXEmptyExpression_ = js.native
   def jsxExpressionContainer(expression: Expression): JSXExpressionContainer_ = js.native
@@ -2941,13 +2965,25 @@ trait Typeoftypes extends js.Object {
   def matchesPattern(node: js.UndefOr[Node | Null], `match`: String, allowPartial: Boolean): /* is @babel/types.@babel/types.MemberExpression */ Boolean = js.native
   def matchesPattern(node: js.UndefOr[Node | Null], `match`: js.Array[String]): /* is @babel/types.@babel/types.MemberExpression */ Boolean = js.native
   def matchesPattern(node: js.UndefOr[Node | Null], `match`: js.Array[String], allowPartial: Boolean): /* is @babel/types.@babel/types.MemberExpression */ Boolean = js.native
-  def memberExpression(`object`: Expression, property: js.Any): MemberExpression_ = js.native
-  def memberExpression(`object`: Expression, property: js.Any, computed: Boolean): MemberExpression_ = js.native
+  def memberExpression(`object`: Expression, property: Expression): MemberExpression_ = js.native
+  def memberExpression(`object`: Expression, property: Expression, computed: Boolean): MemberExpression_ = js.native
+  def memberExpression(`object`: Expression, property: Identifier_): MemberExpression_ = js.native
+  def memberExpression(`object`: Expression, property: Identifier_, computed: Boolean): MemberExpression_ = js.native
+  def memberExpression(`object`: Expression, property: PrivateName_): MemberExpression_ = js.native
+  def memberExpression(`object`: Expression, property: PrivateName_, computed: Boolean): MemberExpression_ = js.native
   @JSName("memberExpression")
-  def memberExpression_false(`object`: Expression, property: js.Any, computed: Boolean, optional: `false`): MemberExpression_ = js.native
+  def memberExpression_false(`object`: Expression, property: Expression, computed: Boolean, optional: `false`): MemberExpression_ = js.native
   @JSName("memberExpression")
-  def memberExpression_true(`object`: Expression, property: js.Any, computed: Boolean, optional: `true`): MemberExpression_ = js.native
-  def metaProperty(meta: js.Any, property: Identifier_): MetaProperty_ = js.native
+  def memberExpression_false(`object`: Expression, property: Identifier_, computed: Boolean, optional: `false`): MemberExpression_ = js.native
+  @JSName("memberExpression")
+  def memberExpression_false(`object`: Expression, property: PrivateName_, computed: Boolean, optional: `false`): MemberExpression_ = js.native
+  @JSName("memberExpression")
+  def memberExpression_true(`object`: Expression, property: Expression, computed: Boolean, optional: `true`): MemberExpression_ = js.native
+  @JSName("memberExpression")
+  def memberExpression_true(`object`: Expression, property: Identifier_, computed: Boolean, optional: `true`): MemberExpression_ = js.native
+  @JSName("memberExpression")
+  def memberExpression_true(`object`: Expression, property: PrivateName_, computed: Boolean, optional: `true`): MemberExpression_ = js.native
+  def metaProperty(meta: Identifier_, property: Identifier_): MetaProperty_ = js.native
   def mixedTypeAnnotation(): MixedTypeAnnotation_ = js.native
   def newExpression(
     callee: Expression,
@@ -2968,14 +3004,14 @@ trait Typeoftypes extends js.Object {
   @JSName("objectMethod")
   def objectMethod_get(
     kind: js.UndefOr[get],
-    key: js.Any,
+    key: Expression,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_
   ): ObjectMethod_ = js.native
   @JSName("objectMethod")
   def objectMethod_get(
     kind: js.UndefOr[get],
-    key: js.Any,
+    key: Expression,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,
     computed: Boolean
@@ -2983,7 +3019,7 @@ trait Typeoftypes extends js.Object {
   @JSName("objectMethod")
   def objectMethod_get(
     kind: js.UndefOr[get],
-    key: js.Any,
+    key: Expression,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,
     computed: Boolean,
@@ -2992,7 +3028,109 @@ trait Typeoftypes extends js.Object {
   @JSName("objectMethod")
   def objectMethod_get(
     kind: js.UndefOr[get],
-    key: js.Any,
+    key: Expression,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean,
+    generator: Boolean,
+    async: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_get(
+    kind: js.UndefOr[get],
+    key: Identifier_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_get(
+    kind: js.UndefOr[get],
+    key: Identifier_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_get(
+    kind: js.UndefOr[get],
+    key: Identifier_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean,
+    generator: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_get(
+    kind: js.UndefOr[get],
+    key: Identifier_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean,
+    generator: Boolean,
+    async: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_get(
+    kind: js.UndefOr[get],
+    key: NumericLiteral_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_get(
+    kind: js.UndefOr[get],
+    key: NumericLiteral_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_get(
+    kind: js.UndefOr[get],
+    key: NumericLiteral_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean,
+    generator: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_get(
+    kind: js.UndefOr[get],
+    key: NumericLiteral_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean,
+    generator: Boolean,
+    async: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_get(
+    kind: js.UndefOr[get],
+    key: StringLiteral_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_get(
+    kind: js.UndefOr[get],
+    key: StringLiteral_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_get(
+    kind: js.UndefOr[get],
+    key: StringLiteral_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean,
+    generator: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_get(
+    kind: js.UndefOr[get],
+    key: StringLiteral_,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,
     computed: Boolean,
@@ -3002,14 +3140,14 @@ trait Typeoftypes extends js.Object {
   @JSName("objectMethod")
   def objectMethod_method(
     kind: js.UndefOr[method],
-    key: js.Any,
+    key: Expression,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_
   ): ObjectMethod_ = js.native
   @JSName("objectMethod")
   def objectMethod_method(
     kind: js.UndefOr[method],
-    key: js.Any,
+    key: Expression,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,
     computed: Boolean
@@ -3017,7 +3155,7 @@ trait Typeoftypes extends js.Object {
   @JSName("objectMethod")
   def objectMethod_method(
     kind: js.UndefOr[method],
-    key: js.Any,
+    key: Expression,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,
     computed: Boolean,
@@ -3026,7 +3164,109 @@ trait Typeoftypes extends js.Object {
   @JSName("objectMethod")
   def objectMethod_method(
     kind: js.UndefOr[method],
-    key: js.Any,
+    key: Expression,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean,
+    generator: Boolean,
+    async: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_method(
+    kind: js.UndefOr[method],
+    key: Identifier_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_method(
+    kind: js.UndefOr[method],
+    key: Identifier_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_method(
+    kind: js.UndefOr[method],
+    key: Identifier_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean,
+    generator: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_method(
+    kind: js.UndefOr[method],
+    key: Identifier_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean,
+    generator: Boolean,
+    async: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_method(
+    kind: js.UndefOr[method],
+    key: NumericLiteral_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_method(
+    kind: js.UndefOr[method],
+    key: NumericLiteral_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_method(
+    kind: js.UndefOr[method],
+    key: NumericLiteral_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean,
+    generator: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_method(
+    kind: js.UndefOr[method],
+    key: NumericLiteral_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean,
+    generator: Boolean,
+    async: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_method(
+    kind: js.UndefOr[method],
+    key: StringLiteral_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_method(
+    kind: js.UndefOr[method],
+    key: StringLiteral_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_method(
+    kind: js.UndefOr[method],
+    key: StringLiteral_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean,
+    generator: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_method(
+    kind: js.UndefOr[method],
+    key: StringLiteral_,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,
     computed: Boolean,
@@ -3036,14 +3276,14 @@ trait Typeoftypes extends js.Object {
   @JSName("objectMethod")
   def objectMethod_set(
     kind: js.UndefOr[set],
-    key: js.Any,
+    key: Expression,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_
   ): ObjectMethod_ = js.native
   @JSName("objectMethod")
   def objectMethod_set(
     kind: js.UndefOr[set],
-    key: js.Any,
+    key: Expression,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,
     computed: Boolean
@@ -3051,7 +3291,7 @@ trait Typeoftypes extends js.Object {
   @JSName("objectMethod")
   def objectMethod_set(
     kind: js.UndefOr[set],
-    key: js.Any,
+    key: Expression,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,
     computed: Boolean,
@@ -3060,7 +3300,109 @@ trait Typeoftypes extends js.Object {
   @JSName("objectMethod")
   def objectMethod_set(
     kind: js.UndefOr[set],
-    key: js.Any,
+    key: Expression,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean,
+    generator: Boolean,
+    async: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_set(
+    kind: js.UndefOr[set],
+    key: Identifier_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_set(
+    kind: js.UndefOr[set],
+    key: Identifier_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_set(
+    kind: js.UndefOr[set],
+    key: Identifier_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean,
+    generator: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_set(
+    kind: js.UndefOr[set],
+    key: Identifier_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean,
+    generator: Boolean,
+    async: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_set(
+    kind: js.UndefOr[set],
+    key: NumericLiteral_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_set(
+    kind: js.UndefOr[set],
+    key: NumericLiteral_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_set(
+    kind: js.UndefOr[set],
+    key: NumericLiteral_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean,
+    generator: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_set(
+    kind: js.UndefOr[set],
+    key: NumericLiteral_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean,
+    generator: Boolean,
+    async: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_set(
+    kind: js.UndefOr[set],
+    key: StringLiteral_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_set(
+    kind: js.UndefOr[set],
+    key: StringLiteral_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_set(
+    kind: js.UndefOr[set],
+    key: StringLiteral_,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    body: BlockStatement_,
+    computed: Boolean,
+    generator: Boolean
+  ): ObjectMethod_ = js.native
+  @JSName("objectMethod")
+  def objectMethod_set(
+    kind: js.UndefOr[set],
+    key: StringLiteral_,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,
     computed: Boolean,
@@ -3068,24 +3410,84 @@ trait Typeoftypes extends js.Object {
     async: Boolean
   ): ObjectMethod_ = js.native
   def objectPattern(properties: js.Array[RestElement_ | ObjectProperty_]): ObjectPattern_ = js.native
-  def objectProperty(key: js.Any, value: Expression): ObjectProperty_ = js.native
-  def objectProperty(key: js.Any, value: Expression, computed: Boolean): ObjectProperty_ = js.native
-  def objectProperty(key: js.Any, value: Expression, computed: Boolean, shorthand: js.Any): ObjectProperty_ = js.native
+  def objectProperty(key: Expression, value: Expression): ObjectProperty_ = js.native
+  def objectProperty(key: Expression, value: Expression, computed: Boolean): ObjectProperty_ = js.native
+  def objectProperty(key: Expression, value: Expression, computed: Boolean, shorthand: Boolean): ObjectProperty_ = js.native
   def objectProperty(
-    key: js.Any,
+    key: Expression,
     value: Expression,
     computed: Boolean,
-    shorthand: js.Any,
+    shorthand: Boolean,
     decorators: js.Array[Decorator_]
   ): ObjectProperty_ = js.native
-  def objectProperty(key: js.Any, value: PatternLike): ObjectProperty_ = js.native
-  def objectProperty(key: js.Any, value: PatternLike, computed: Boolean): ObjectProperty_ = js.native
-  def objectProperty(key: js.Any, value: PatternLike, computed: Boolean, shorthand: js.Any): ObjectProperty_ = js.native
+  def objectProperty(key: Expression, value: PatternLike): ObjectProperty_ = js.native
+  def objectProperty(key: Expression, value: PatternLike, computed: Boolean): ObjectProperty_ = js.native
+  def objectProperty(key: Expression, value: PatternLike, computed: Boolean, shorthand: Boolean): ObjectProperty_ = js.native
   def objectProperty(
-    key: js.Any,
+    key: Expression,
     value: PatternLike,
     computed: Boolean,
-    shorthand: js.Any,
+    shorthand: Boolean,
+    decorators: js.Array[Decorator_]
+  ): ObjectProperty_ = js.native
+  def objectProperty(key: Identifier_, value: Expression): ObjectProperty_ = js.native
+  def objectProperty(key: Identifier_, value: Expression, computed: Boolean): ObjectProperty_ = js.native
+  def objectProperty(key: Identifier_, value: Expression, computed: Boolean, shorthand: Boolean): ObjectProperty_ = js.native
+  def objectProperty(
+    key: Identifier_,
+    value: Expression,
+    computed: Boolean,
+    shorthand: Boolean,
+    decorators: js.Array[Decorator_]
+  ): ObjectProperty_ = js.native
+  def objectProperty(key: Identifier_, value: PatternLike): ObjectProperty_ = js.native
+  def objectProperty(key: Identifier_, value: PatternLike, computed: Boolean): ObjectProperty_ = js.native
+  def objectProperty(key: Identifier_, value: PatternLike, computed: Boolean, shorthand: Boolean): ObjectProperty_ = js.native
+  def objectProperty(
+    key: Identifier_,
+    value: PatternLike,
+    computed: Boolean,
+    shorthand: Boolean,
+    decorators: js.Array[Decorator_]
+  ): ObjectProperty_ = js.native
+  def objectProperty(key: NumericLiteral_, value: Expression): ObjectProperty_ = js.native
+  def objectProperty(key: NumericLiteral_, value: Expression, computed: Boolean): ObjectProperty_ = js.native
+  def objectProperty(key: NumericLiteral_, value: Expression, computed: Boolean, shorthand: Boolean): ObjectProperty_ = js.native
+  def objectProperty(
+    key: NumericLiteral_,
+    value: Expression,
+    computed: Boolean,
+    shorthand: Boolean,
+    decorators: js.Array[Decorator_]
+  ): ObjectProperty_ = js.native
+  def objectProperty(key: NumericLiteral_, value: PatternLike): ObjectProperty_ = js.native
+  def objectProperty(key: NumericLiteral_, value: PatternLike, computed: Boolean): ObjectProperty_ = js.native
+  def objectProperty(key: NumericLiteral_, value: PatternLike, computed: Boolean, shorthand: Boolean): ObjectProperty_ = js.native
+  def objectProperty(
+    key: NumericLiteral_,
+    value: PatternLike,
+    computed: Boolean,
+    shorthand: Boolean,
+    decorators: js.Array[Decorator_]
+  ): ObjectProperty_ = js.native
+  def objectProperty(key: StringLiteral_, value: Expression): ObjectProperty_ = js.native
+  def objectProperty(key: StringLiteral_, value: Expression, computed: Boolean): ObjectProperty_ = js.native
+  def objectProperty(key: StringLiteral_, value: Expression, computed: Boolean, shorthand: Boolean): ObjectProperty_ = js.native
+  def objectProperty(
+    key: StringLiteral_,
+    value: Expression,
+    computed: Boolean,
+    shorthand: Boolean,
+    decorators: js.Array[Decorator_]
+  ): ObjectProperty_ = js.native
+  def objectProperty(key: StringLiteral_, value: PatternLike): ObjectProperty_ = js.native
+  def objectProperty(key: StringLiteral_, value: PatternLike, computed: Boolean): ObjectProperty_ = js.native
+  def objectProperty(key: StringLiteral_, value: PatternLike, computed: Boolean, shorthand: Boolean): ObjectProperty_ = js.native
+  def objectProperty(
+    key: StringLiteral_,
+    value: PatternLike,
+    computed: Boolean,
+    shorthand: Boolean,
     decorators: js.Array[Decorator_]
   ): ObjectProperty_ = js.native
   def objectTypeAnnotation(properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_]): ObjectTypeAnnotation_ = js.native
@@ -3203,7 +3605,8 @@ trait Typeoftypes extends js.Object {
     _arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_],
     optional: Boolean
   ): OptionalCallExpression_ = js.native
-  def optionalMemberExpression(`object`: Expression, property: js.Any, computed: js.UndefOr[Boolean], optional: Boolean): OptionalMemberExpression_ = js.native
+  def optionalMemberExpression(`object`: Expression, property: Expression, computed: js.UndefOr[Boolean], optional: Boolean): OptionalMemberExpression_ = js.native
+  def optionalMemberExpression(`object`: Expression, property: Identifier_, computed: js.UndefOr[Boolean], optional: Boolean): OptionalMemberExpression_ = js.native
   def parenthesizedExpression(expression: Expression): ParenthesizedExpression_ = js.native
   def pipelineBareFunction(callee: Expression): PipelineBareFunction_ = js.native
   def pipelinePrimaryTopicReference(): PipelinePrimaryTopicReference_ = js.native
@@ -3213,7 +3616,7 @@ trait Typeoftypes extends js.Object {
   @JSName("placeholder")
   def placeholder_ClassBody(expectedNode: ClassBody, name: Identifier_): Placeholder_ = js.native
   @JSName("placeholder")
-  def placeholder_Declaration(expectedNode: Declaration, name: Identifier_): Placeholder_ = js.native
+  def placeholder_Declaration(expectedNode: typings.babelPluginTester.babelPluginTesterStrings.Declaration, name: Identifier_): Placeholder_ = js.native
   @JSName("placeholder")
   def placeholder_Expression(expectedNode: typings.babelPluginTester.babelPluginTesterStrings.Expression, name: Identifier_): Placeholder_ = js.native
   @JSName("placeholder")
@@ -3248,9 +3651,9 @@ trait Typeoftypes extends js.Object {
   ): Program_ = js.native
   def qualifiedTypeIdentifier(id: Identifier_, qualification: Identifier_): QualifiedTypeIdentifier_ = js.native
   def qualifiedTypeIdentifier(id: Identifier_, qualification: QualifiedTypeIdentifier_): QualifiedTypeIdentifier_ = js.native
-  def recordExpression(properties: js.Array[ObjectProperty_ | ObjectMethod_ | SpreadElement_]): RecordExpression_ = js.native
+  def recordExpression(properties: js.Array[ObjectProperty_ | SpreadElement_]): RecordExpression_ = js.native
   def regExpLiteral(pattern: String): RegExpLiteral_ = js.native
-  def regExpLiteral(pattern: String, flags: js.Any): RegExpLiteral_ = js.native
+  def regExpLiteral(pattern: String, flags: String): RegExpLiteral_ = js.native
   def removeComments[T /* <: Node */](node: T): T = js.native
   def removeProperties(n: Node): Unit = js.native
   def removeProperties(n: Node, opts: PreserveComments): Unit = js.native
@@ -3336,10 +3739,10 @@ trait Typeoftypes extends js.Object {
   def traverse[T](n: Node, h: TraversalHandler[T], state: T): Unit = js.native
   def traverseFast[T](n: Node, h: TraversalHandler[T]): Unit = js.native
   def traverseFast[T](n: Node, h: TraversalHandler[T], state: T): Unit = js.native
-  def tryStatement(block: js.Any): TryStatement_ = js.native
-  def tryStatement(block: js.Any, handler: Null, finalizer: BlockStatement_): TryStatement_ = js.native
-  def tryStatement(block: js.Any, handler: CatchClause_): TryStatement_ = js.native
-  def tryStatement(block: js.Any, handler: CatchClause_, finalizer: BlockStatement_): TryStatement_ = js.native
+  def tryStatement(block: BlockStatement_): TryStatement_ = js.native
+  def tryStatement(block: BlockStatement_, handler: Null, finalizer: BlockStatement_): TryStatement_ = js.native
+  def tryStatement(block: BlockStatement_, handler: CatchClause_): TryStatement_ = js.native
+  def tryStatement(block: BlockStatement_, handler: CatchClause_, finalizer: BlockStatement_): TryStatement_ = js.native
   def tsAnyKeyword(): TSAnyKeyword_ = js.native
   def tsArrayType(elementType: TSType): TSArrayType_ = js.native
   def tsAsExpression(expression: Expression, typeAnnotation: TSType): TSAsExpression_ = js.native
@@ -3439,6 +3842,7 @@ trait Typeoftypes extends js.Object {
     body: TSInterfaceBody_
   ): TSInterfaceDeclaration_ = js.native
   def tsIntersectionType(types: js.Array[TSType]): TSIntersectionType_ = js.native
+  def tsLiteralType(literal: BigIntLiteral_): TSLiteralType_ = js.native
   def tsLiteralType(literal: BooleanLiteral_): TSLiteralType_ = js.native
   def tsLiteralType(literal: NumericLiteral_): TSLiteralType_ = js.native
   def tsLiteralType(literal: StringLiteral_): TSLiteralType_ = js.native
@@ -3509,7 +3913,7 @@ trait Typeoftypes extends js.Object {
   def tsUnknownKeyword(): TSUnknownKeyword_ = js.native
   def tsVoidKeyword(): TSVoidKeyword_ = js.native
   def tupleExpression(): TupleExpression_ = js.native
-  def tupleExpression(elements: js.Array[Null | Expression | SpreadElement_]): TupleExpression_ = js.native
+  def tupleExpression(elements: js.Array[Expression | SpreadElement_]): TupleExpression_ = js.native
   def tupleTypeAnnotation(types: js.Array[FlowType]): TupleTypeAnnotation_ = js.native
   def typeAlias(id: Identifier_, typeParameters: js.UndefOr[Null | TypeParameterDeclaration_], right: FlowType): TypeAlias_ = js.native
   def typeAnnotation(typeAnnotation: FlowType): TypeAnnotation_ = js.native
@@ -3598,8 +4002,8 @@ trait Typeoftypes extends js.Object {
   def whileStatement(test: Expression, body: Statement): WhileStatement_ = js.native
   def withStatement(`object`: Expression, body: Statement): WithStatement_ = js.native
   def yieldExpression(): YieldExpression_ = js.native
-  def yieldExpression(argument: Null, delegate: js.Any): YieldExpression_ = js.native
+  def yieldExpression(argument: Null, delegate: Boolean): YieldExpression_ = js.native
   def yieldExpression(argument: Expression): YieldExpression_ = js.native
-  def yieldExpression(argument: Expression, delegate: js.Any): YieldExpression_ = js.native
+  def yieldExpression(argument: Expression, delegate: Boolean): YieldExpression_ = js.native
 }
 

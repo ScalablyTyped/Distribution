@@ -16,7 +16,7 @@ trait Status[T /* <: Context */] extends js.Object
 
 object Status {
   @scala.inline
-  def BaseStatus[T](
+  def BaseStatus[/* <: typings.wordpressApiFetch.mod.Schema.Context */ T](
     _links: Record[String, js.Array[Dictk]],
     name: String,
     `private`: Boolean,
@@ -34,7 +34,7 @@ object Status {
     __obj.asInstanceOf[Status[T]]
   }
   @scala.inline
-  def PickBaseStatusStatusEmbedded[T](
+  def PickBaseStatusStatusEmbedded[/* <: typings.wordpressApiFetch.mod.Schema.Context */ T](
     _links: Record[String, js.Array[Dictk]],
     name: String,
     public: Boolean,
@@ -47,7 +47,7 @@ object Status {
     __obj.asInstanceOf[Status[T]]
   }
   @scala.inline
-  def PickBaseStatusStatus[T](
+  def PickBaseStatusStatus[/* <: typings.wordpressApiFetch.mod.Schema.Context */ T](
     _links: Record[String, js.Array[Dictk]],
     name: String,
     slug: String,

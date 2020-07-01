@@ -63,7 +63,7 @@ object ParamsResourceUsersGetloginprofile {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (operatingSystemType != null) __obj.updateDynamic("operatingSystemType")(operatingSystemType.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (systemId != null) __obj.updateDynamic("systemId")(systemId.asInstanceOf[js.Any])

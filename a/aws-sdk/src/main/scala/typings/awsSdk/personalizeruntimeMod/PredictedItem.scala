@@ -11,7 +11,7 @@ trait PredictedItem extends js.Object {
     */
   var itemId: js.UndefOr[ItemID] = js.native
   /**
-    * A numeric representation of the model's certainty in the item's suitability. For more information on scoring logic, see how-scores-work.
+    * A numeric representation of the model's certainty that the item will be the next user selection. For more information on scoring logic, see how-scores-work.
     */
   var score: js.UndefOr[Score] = js.native
 }

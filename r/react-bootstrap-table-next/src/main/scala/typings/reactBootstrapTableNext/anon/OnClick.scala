@@ -11,7 +11,7 @@ trait OnClick[T /* <: js.Object */, E] extends js.Object {
 
 object OnClick {
   @scala.inline
-  def apply[T, E](onClick: (js.Any, ColumnDescription[T, E], Double) => Unit): OnClick[T, E] = {
+  def apply[/* <: js.Object */ T, E](onClick: (js.Any, ColumnDescription[T, E], Double) => Unit): OnClick[T, E] = {
     val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction3(onClick))
     __obj.asInstanceOf[OnClick[T, E]]
   }

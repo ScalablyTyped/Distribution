@@ -24,9 +24,9 @@ trait SchemaSchedule extends js.Object {
 
 object SchemaSchedule {
   @scala.inline
-  def apply(intervalDurationDays: Int | Double = null, scheduleTime: String = null): SchemaSchedule = {
+  def apply(intervalDurationDays: js.UndefOr[Double] = js.undefined, scheduleTime: String = null): SchemaSchedule = {
     val __obj = js.Dynamic.literal()
-    if (intervalDurationDays != null) __obj.updateDynamic("intervalDurationDays")(intervalDurationDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(intervalDurationDays)) __obj.updateDynamic("intervalDurationDays")(intervalDurationDays.get.asInstanceOf[js.Any])
     if (scheduleTime != null) __obj.updateDynamic("scheduleTime")(scheduleTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSchedule]
   }

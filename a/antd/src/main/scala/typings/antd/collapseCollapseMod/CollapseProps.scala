@@ -16,6 +16,7 @@ trait CollapseProps extends js.Object {
   var destroyInactivePanel: js.UndefOr[Boolean] = js.undefined
   var expandIcon: js.UndefOr[js.Function1[/* panelProps */ PanelProps, ReactNode]] = js.undefined
   var expandIconPosition: js.UndefOr[ExpandIconPosition] = js.undefined
+  var ghost: js.UndefOr[Boolean] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* key */ String | js.Array[String], Unit]] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
@@ -32,6 +33,7 @@ object CollapseProps {
     destroyInactivePanel: js.UndefOr[Boolean] = js.undefined,
     expandIcon: /* panelProps */ PanelProps => ReactNode = null,
     expandIconPosition: ExpandIconPosition = null,
+    ghost: js.UndefOr[Boolean] = js.undefined,
     onChange: /* key */ String | js.Array[String] => Unit = null,
     prefixCls: String = null,
     style: CSSProperties = null
@@ -45,6 +47,7 @@ object CollapseProps {
     if (!js.isUndefined(destroyInactivePanel)) __obj.updateDynamic("destroyInactivePanel")(destroyInactivePanel.get.asInstanceOf[js.Any])
     if (expandIcon != null) __obj.updateDynamic("expandIcon")(js.Any.fromFunction1(expandIcon))
     if (expandIconPosition != null) __obj.updateDynamic("expandIconPosition")(expandIconPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(ghost)) __obj.updateDynamic("ghost")(ghost.get.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

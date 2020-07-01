@@ -217,18 +217,31 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateBotResponse, Unit]
   ): Request[CreateBotResponse, AWSError] = js.native
   /**
-    * Creates a new Amazon Chime SDK meeting in the specified media Region with no initial attendees. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
+    * Creates a new Amazon Chime SDK meeting in the specified media Region with no initial attendees. For more information about specifying media Regions, see Amazon Chime SDK Media Regions in the Amazon Chime Developer Guide. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
     */
   def createMeeting(): Request[CreateMeetingResponse, AWSError] = js.native
   def createMeeting(callback: js.Function2[/* err */ AWSError, /* data */ CreateMeetingResponse, Unit]): Request[CreateMeetingResponse, AWSError] = js.native
   /**
-    * Creates a new Amazon Chime SDK meeting in the specified media Region with no initial attendees. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
+    * Creates a new Amazon Chime SDK meeting in the specified media Region with no initial attendees. For more information about specifying media Regions, see Amazon Chime SDK Media Regions in the Amazon Chime Developer Guide. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
     */
   def createMeeting(params: CreateMeetingRequest): Request[CreateMeetingResponse, AWSError] = js.native
   def createMeeting(
     params: CreateMeetingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateMeetingResponse, Unit]
   ): Request[CreateMeetingResponse, AWSError] = js.native
+  /**
+    * Creates a new Amazon Chime SDK meeting in the specified media Region, with attendees. For more information about specifying media Regions, see Amazon Chime SDK Media Regions in the Amazon Chime Developer Guide. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
+    */
+  def createMeetingWithAttendees(): Request[CreateMeetingWithAttendeesResponse, AWSError] = js.native
+  def createMeetingWithAttendees(callback: js.Function2[/* err */ AWSError, /* data */ CreateMeetingWithAttendeesResponse, Unit]): Request[CreateMeetingWithAttendeesResponse, AWSError] = js.native
+  /**
+    * Creates a new Amazon Chime SDK meeting in the specified media Region, with attendees. For more information about specifying media Regions, see Amazon Chime SDK Media Regions in the Amazon Chime Developer Guide. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
+    */
+  def createMeetingWithAttendees(params: CreateMeetingWithAttendeesRequest): Request[CreateMeetingWithAttendeesResponse, AWSError] = js.native
+  def createMeetingWithAttendees(
+    params: CreateMeetingWithAttendeesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateMeetingWithAttendeesResponse, Unit]
+  ): Request[CreateMeetingWithAttendeesResponse, AWSError] = js.native
   /**
     * Creates an order for phone numbers to be provisioned. Choose from Amazon Chime Business Calling and Amazon Chime Voice Connector product types. For toll-free numbers, you must use the Amazon Chime Voice Connector product type.
     */

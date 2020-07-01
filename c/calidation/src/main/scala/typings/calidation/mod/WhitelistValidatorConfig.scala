@@ -4,20 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait WhitelistValidatorConfig extends SimpleValidatorConfig {
+trait WhitelistValidatorConfig[T /* <: js.Object */] extends SimpleValidatorConfig[T] {
   var whitelist: js.Array[String]
 }
 
 object WhitelistValidatorConfig {
   @scala.inline
-  def apply(
+  def apply[/* <: js.Object */ T](
     message: String,
     whitelist: js.Array[String],
-    validateIf: (js.Function1[/* context */ ValidatorContext, Boolean]) | Boolean = null
-  ): WhitelistValidatorConfig = {
+    validateIf: (js.Function1[/* context */ ValidatorContext[T], Boolean]) | Boolean = null
+  ): WhitelistValidatorConfig[T] = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], whitelist = whitelist.asInstanceOf[js.Any])
     if (validateIf != null) __obj.updateDynamic("validateIf")(validateIf.asInstanceOf[js.Any])
-    __obj.asInstanceOf[WhitelistValidatorConfig]
+    __obj.asInstanceOf[WhitelistValidatorConfig[T]]
   }
 }
 

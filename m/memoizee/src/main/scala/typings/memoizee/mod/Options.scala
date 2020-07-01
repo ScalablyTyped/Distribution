@@ -22,7 +22,7 @@ trait Options[F /* <: js.Function1[/* repeated */ js.Any, _] */] extends js.Obje
 
 object Options {
   @scala.inline
-  def apply[F](
+  def apply[/* <: js.Function1[/ * repeated * / js.Any, _] */ F](
     async: js.UndefOr[Boolean] = js.undefined,
     dispose: /* value */ js.Any => Unit = null,
     length: Double | `false` = null,

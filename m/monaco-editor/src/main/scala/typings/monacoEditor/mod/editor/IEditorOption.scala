@@ -12,7 +12,7 @@ trait IEditorOption[K1 /* <: EditorOption */, V] extends js.Object {
 
 object IEditorOption {
   @scala.inline
-  def apply[K1, V](defaultValue: V, id: K1, name: String): IEditorOption[K1, V] = {
+  def apply[/* <: typings.monacoEditor.mod.editor.EditorOption */ K1, V](defaultValue: V, id: K1, name: String): IEditorOption[K1, V] = {
     val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditorOption[K1, V]]
   }

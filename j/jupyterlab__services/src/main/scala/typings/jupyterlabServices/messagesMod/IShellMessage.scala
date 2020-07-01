@@ -34,7 +34,7 @@ trait IShellMessage[T /* <: ShellMessageType */] extends IMessage[T] {
 
 object IShellMessage {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.jupyterlabServices.messagesMod.ShellMessageType */ T](
     channel: shell,
     content: Wait | Commid | (ReplyContent[
       ICommInfoReply | ICompleteReply | IHistoryReply | IInfoReply | IInputReply | IInspectReply | IIsCompleteReplyIncomplete | IIsCompleteReplyOther

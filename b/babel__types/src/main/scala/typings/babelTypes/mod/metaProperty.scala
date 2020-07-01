@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@babel/types", "metaProperty")
 @js.native
 object metaProperty extends js.Object {
-  def apply(meta: js.Any, property: Identifier_): MetaProperty_ = js.native
+  def apply(meta: Identifier_, property: Identifier_): MetaProperty_ = js.native
 }
 

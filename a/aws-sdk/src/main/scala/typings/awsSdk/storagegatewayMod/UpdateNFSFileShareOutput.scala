@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateNFSFileShareOutput extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) of the updated file share. 
+    * The Amazon Resource Name (ARN) of the updated file share.
     */
   var FileShareARN: js.UndefOr[typings.awsSdk.storagegatewayMod.FileShareARN] = js.native
 }

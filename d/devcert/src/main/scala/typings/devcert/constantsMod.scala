@@ -1,5 +1,6 @@
 package typings.devcert
 
+import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("devcert/dist/constants", JSImport.Namespace)
 @js.native
 object constantsMod extends js.Object {
+  val VALID_DOMAIN: RegExp = js.native
   val caSelfSignConfig: String = js.native
   val caVersionFile: String = js.native
   val configDir: js.Any = js.native

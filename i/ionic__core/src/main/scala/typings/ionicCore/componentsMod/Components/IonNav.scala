@@ -517,5 +517,11 @@ trait IonNav extends js.Object {
     done: TransitionDoneFn
   ): js.Promise[Boolean] = js.native
   def setRouteId(id: String, params: js.UndefOr[ComponentProps[Null]], direction: RouterDirection): js.Promise[RouteWrite] = js.native
+  def setRouteId(
+    id: String,
+    params: js.UndefOr[ComponentProps[Null]],
+    direction: RouterDirection,
+    animation: AnimationBuilder
+  ): js.Promise[RouteWrite] = js.native
 }
 

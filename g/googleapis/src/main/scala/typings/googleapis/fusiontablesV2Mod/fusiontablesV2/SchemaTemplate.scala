@@ -49,7 +49,7 @@ object SchemaTemplate {
     kind: String = null,
     name: String = null,
     tableId: String = null,
-    templateId: Int | Double = null
+    templateId: js.UndefOr[Double] = js.undefined
   ): SchemaTemplate = {
     val __obj = js.Dynamic.literal()
     if (automaticColumnNames != null) __obj.updateDynamic("automaticColumnNames")(automaticColumnNames.asInstanceOf[js.Any])
@@ -57,7 +57,7 @@ object SchemaTemplate {
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (tableId != null) __obj.updateDynamic("tableId")(tableId.asInstanceOf[js.Any])
-    if (templateId != null) __obj.updateDynamic("templateId")(templateId.asInstanceOf[js.Any])
+    if (!js.isUndefined(templateId)) __obj.updateDynamic("templateId")(templateId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTemplate]
   }
 }

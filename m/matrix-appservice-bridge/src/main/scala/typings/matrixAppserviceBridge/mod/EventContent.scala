@@ -1,12 +1,14 @@
 package typings.matrixAppserviceBridge.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.matrixJsSdk.mod.MembershipType
 import typings.matrixJsSdk.mod.MsgType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait EventContent extends js.Object {
+trait EventContent
+  extends /* key */ StringDictionary[js.Any] {
   var avatar_url: Null | String
   var body: js.UndefOr[String] = js.undefined
   var displayname: js.UndefOr[String] = js.undefined
@@ -24,6 +26,7 @@ object EventContent {
   @scala.inline
   def apply(
     is_direct: Boolean,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     avatar_url: String = null,
     body: String = null,
     displayname: String = null,
@@ -36,6 +39,7 @@ object EventContent {
     url: String = null
   ): EventContent = {
     val __obj = js.Dynamic.literal(is_direct = is_direct.asInstanceOf[js.Any], avatar_url = avatar_url.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (displayname != null) __obj.updateDynamic("displayname")(displayname.asInstanceOf[js.Any])
     if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])

@@ -2,8 +2,10 @@ package typings.expressValidator
 
 import typings.expressValidator.contextBuilderMod.ContextBuilder
 import typings.expressValidator.contextMod.Context
+import typings.expressValidator.contextMod.ReadonlyContext
 import typings.expressValidator.contextRunnerMod.ContextRunner
 import typings.expressValidator.selectFieldsMod.SelectFields_
+import typings.expressValidator.validationResultMod.Result
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,6 +21,12 @@ object contextRunnerImplMod extends js.Object {
     def this(builderOrContext: Context, selectFields: SelectFields_) = this()
     val builderOrContext: js.Any = js.native
     val selectFields: js.Any = js.native
+  }
+  
+  @js.native
+  trait ResultWithContext
+    extends Result[js.Any] {
+    val context: ReadonlyContext = js.native
   }
   
 }

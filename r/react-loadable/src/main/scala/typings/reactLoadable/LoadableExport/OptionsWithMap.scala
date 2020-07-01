@@ -36,7 +36,7 @@ trait OptionsWithMap[Props, Exports /* <: StringDictionary[js.Any] */] extends C
 
 object OptionsWithMap {
   @scala.inline
-  def apply[Props, Exports](
+  def apply[Props, /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */ Exports](
     loader: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof Exports ]: (): std.Promise<Exports[P]>}
     */ typings.reactLoadable.reactLoadableStrings.OptionsWithMap with TopLevel[Exports],

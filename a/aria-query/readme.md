@@ -1,7 +1,7 @@
 
 # Scala.js typings for aria-query
 
-Typings are for version 3.0
+Typings are for version 4.2
 
 ## Library description:
 Programmatic access to the ARIA specification

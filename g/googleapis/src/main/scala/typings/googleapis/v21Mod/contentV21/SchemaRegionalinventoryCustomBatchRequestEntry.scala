@@ -31,14 +31,14 @@ trait SchemaRegionalinventoryCustomBatchRequestEntry extends js.Object {
 object SchemaRegionalinventoryCustomBatchRequestEntry {
   @scala.inline
   def apply(
-    batchId: Int | Double = null,
+    batchId: js.UndefOr[Double] = js.undefined,
     merchantId: String = null,
     method: String = null,
     productId: String = null,
     regionalInventory: SchemaRegionalInventory = null
   ): SchemaRegionalinventoryCustomBatchRequestEntry = {
     val __obj = js.Dynamic.literal()
-    if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchId)) __obj.updateDynamic("batchId")(batchId.get.asInstanceOf[js.Any])
     if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])

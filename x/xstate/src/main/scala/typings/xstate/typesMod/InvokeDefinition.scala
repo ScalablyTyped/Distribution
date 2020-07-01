@@ -32,7 +32,7 @@ trait InvokeDefinition[TContext, TEvent /* <: EventObject */] extends ActivityDe
 
 object InvokeDefinition {
   @scala.inline
-  def apply[TContext, TEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     id: String,
     src: String,
     `type`: String,

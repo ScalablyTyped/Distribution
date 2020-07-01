@@ -36,12 +36,12 @@ object SchemaUpdateEmbeddedObjectPositionRequest {
   def apply(
     fields: String = null,
     newPosition: SchemaEmbeddedObjectPosition = null,
-    objectId: Int | Double = null
+    objectId: js.UndefOr[Double] = js.undefined
   ): SchemaUpdateEmbeddedObjectPositionRequest = {
     val __obj = js.Dynamic.literal()
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (newPosition != null) __obj.updateDynamic("newPosition")(newPosition.asInstanceOf[js.Any])
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectId)) __obj.updateDynamic("objectId")(objectId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUpdateEmbeddedObjectPositionRequest]
   }
 }

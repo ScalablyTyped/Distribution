@@ -1,0 +1,15 @@
+package typings.tstl.tstlModuleMod
+
+import typings.tstl.iforwarditeratorMod.IForwardIterator
+import typings.tstl.iinsertMod.IInsert
+import typings.tstl.ipointerMod.IPointer.ValueType
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("tstl/module", "inserter")
+@js.native
+object inserter extends js.Object {
+  def apply[Container /* <: IInsert[Iterator] */, Iterator /* <: IForwardIterator[ValueType[Iterator], Iterator] */](container: Container, it: Iterator): typings.tstl.insertIteratorMod.InsertIterator[Container, Iterator] = js.native
+}
+

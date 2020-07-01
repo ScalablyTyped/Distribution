@@ -35,7 +35,7 @@ trait PromptObject[T /* <: String */] extends js.Object {
 
 object PromptObject {
   @scala.inline
-  def apply[T](
+  def apply[/* <: java.lang.String */ T](
     name: ValueOrFunc[T],
     active: String = null,
     choices: js.Array[Choice] = null,

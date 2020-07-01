@@ -286,6 +286,19 @@ trait WorkLink extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListFleetsResponse, Unit]
   ): Request[ListFleetsResponse, AWSError] = js.native
   /**
+    * Retrieves a list of tags for the specified resource.
+    */
+  def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
+  def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
+  /**
+    * Retrieves a list of tags for the specified resource.
+    */
+  def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
+  def listTagsForResource(
+    params: ListTagsForResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
+  ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  /**
     * Retrieves a list of website authorization providers associated with a specified fleet.
     */
   def listWebsiteAuthorizationProviders(): Request[ListWebsiteAuthorizationProvidersResponse, AWSError] = js.native
@@ -354,6 +367,32 @@ trait WorkLink extends Service {
     params: SignOutUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SignOutUserResponse, Unit]
   ): Request[SignOutUserResponse, AWSError] = js.native
+  /**
+    * Adds or overwrites one or more tags for the specified resource, such as a fleet. Each tag consists of a key and an optional value. If a resource already has a tag with the same key, this operation updates its value.
+    */
+  def tagResource(): Request[TagResourceResponse, AWSError] = js.native
+  def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
+  /**
+    * Adds or overwrites one or more tags for the specified resource, such as a fleet. Each tag consists of a key and an optional value. If a resource already has a tag with the same key, this operation updates its value.
+    */
+  def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
+  def tagResource(
+    params: TagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
+  ): Request[TagResourceResponse, AWSError] = js.native
+  /**
+    * Removes one or more tags from the specified resource.
+    */
+  def untagResource(): Request[UntagResourceResponse, AWSError] = js.native
+  def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]): Request[UntagResourceResponse, AWSError] = js.native
+  /**
+    * Removes one or more tags from the specified resource.
+    */
+  def untagResource(params: UntagResourceRequest): Request[UntagResourceResponse, AWSError] = js.native
+  def untagResource(
+    params: UntagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
+  ): Request[UntagResourceResponse, AWSError] = js.native
   /**
     * Updates the audit stream configuration for the fleet.
     */

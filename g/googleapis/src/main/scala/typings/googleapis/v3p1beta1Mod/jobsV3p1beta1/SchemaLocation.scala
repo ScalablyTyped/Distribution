@@ -44,13 +44,13 @@ object SchemaLocation {
     latLng: SchemaLatLng = null,
     locationType: String = null,
     postalAddress: SchemaPostalAddress = null,
-    radiusInMiles: Int | Double = null
+    radiusInMiles: js.UndefOr[Double] = js.undefined
   ): SchemaLocation = {
     val __obj = js.Dynamic.literal()
     if (latLng != null) __obj.updateDynamic("latLng")(latLng.asInstanceOf[js.Any])
     if (locationType != null) __obj.updateDynamic("locationType")(locationType.asInstanceOf[js.Any])
     if (postalAddress != null) __obj.updateDynamic("postalAddress")(postalAddress.asInstanceOf[js.Any])
-    if (radiusInMiles != null) __obj.updateDynamic("radiusInMiles")(radiusInMiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(radiusInMiles)) __obj.updateDynamic("radiusInMiles")(radiusInMiles.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLocation]
   }
 }

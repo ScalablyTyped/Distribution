@@ -11,6 +11,10 @@ trait TwitchExtBitsTransaction extends js.Object {
     * Display name of the user who executed the Bits in Extensions transaction.
     */
   var displayName: String
+  /**
+    * Will be "twitch.ext" + your extension ID.
+    */
+  var domainID: String
   var initiator: CURRENT_USER | OTHER
   /**
     * Full product object from getProducts call
@@ -35,13 +39,14 @@ object TwitchExtBitsTransaction {
   @scala.inline
   def apply(
     displayName: String,
+    domainID: String,
     initiator: CURRENT_USER | OTHER,
     product: TwitchExtBitsProduct,
     transactionID: String,
     transactionReceipt: String,
     userId: String
   ): TwitchExtBitsTransaction = {
-    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], initiator = initiator.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any], transactionID = transactionID.asInstanceOf[js.Any], transactionReceipt = transactionReceipt.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], domainID = domainID.asInstanceOf[js.Any], initiator = initiator.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any], transactionID = transactionID.asInstanceOf[js.Any], transactionReceipt = transactionReceipt.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TwitchExtBitsTransaction]
   }
 }

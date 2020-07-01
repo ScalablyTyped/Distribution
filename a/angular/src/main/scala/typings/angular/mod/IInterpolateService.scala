@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 ///////////////////////////////////////////////////////////////////////////
 // InterpolateService
-// see http://docs.angularjs.org/api/ng.$interpolate
-// see http://docs.angularjs.org/api/ng.$interpolateProvider
+// see http://docs.angularjs.org/api/ng/service/$interpolate
+// see http://docs.angularjs.org/api/ng/provider/$interpolateProvider
 ///////////////////////////////////////////////////////////////////////////
 @js.native
 trait IInterpolateService extends js.Object {

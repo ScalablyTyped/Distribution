@@ -45,13 +45,13 @@ object SchemaInsertTextRequest {
   @scala.inline
   def apply(
     cellLocation: SchemaTableCellLocation = null,
-    insertionIndex: Int | Double = null,
+    insertionIndex: js.UndefOr[Double] = js.undefined,
     objectId: String = null,
     text: String = null
   ): SchemaInsertTextRequest = {
     val __obj = js.Dynamic.literal()
     if (cellLocation != null) __obj.updateDynamic("cellLocation")(cellLocation.asInstanceOf[js.Any])
-    if (insertionIndex != null) __obj.updateDynamic("insertionIndex")(insertionIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(insertionIndex)) __obj.updateDynamic("insertionIndex")(insertionIndex.get.asInstanceOf[js.Any])
     if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInsertTextRequest]

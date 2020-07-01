@@ -27,12 +27,12 @@ trait SchemaMultiStep extends js.Object {
 object SchemaMultiStep {
   @scala.inline
   def apply(
-    multistepNumber: Int | Double = null,
+    multistepNumber: js.UndefOr[Double] = js.undefined,
     primaryStep: SchemaPrimaryStep = null,
     primaryStepId: String = null
   ): SchemaMultiStep = {
     val __obj = js.Dynamic.literal()
-    if (multistepNumber != null) __obj.updateDynamic("multistepNumber")(multistepNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(multistepNumber)) __obj.updateDynamic("multistepNumber")(multistepNumber.get.asInstanceOf[js.Any])
     if (primaryStep != null) __obj.updateDynamic("primaryStep")(primaryStep.asInstanceOf[js.Any])
     if (primaryStepId != null) __obj.updateDynamic("primaryStepId")(primaryStepId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMultiStep]

@@ -26,11 +26,11 @@ trait SchemaGoogleCloudVisionV1p3beta1WebDetectionWebEntity extends js.Object {
 
 object SchemaGoogleCloudVisionV1p3beta1WebDetectionWebEntity {
   @scala.inline
-  def apply(description: String = null, entityId: String = null, score: Int | Double = null): SchemaGoogleCloudVisionV1p3beta1WebDetectionWebEntity = {
+  def apply(description: String = null, entityId: String = null, score: js.UndefOr[Double] = js.undefined): SchemaGoogleCloudVisionV1p3beta1WebDetectionWebEntity = {
     val __obj = js.Dynamic.literal()
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (entityId != null) __obj.updateDynamic("entityId")(entityId.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p3beta1WebDetectionWebEntity]
   }
 }

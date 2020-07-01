@@ -12,7 +12,7 @@ trait DescribeTapesInput extends js.Object {
     */
   var Limit: js.UndefOr[PositiveIntObject] = js.native
   /**
-    * A marker value, obtained in a previous call to DescribeTapes. This marker indicates which page of results to retrieve.  If not specified, the first page of results is retrieved.
+    * A marker value, obtained in a previous call to DescribeTapes. This marker indicates which page of results to retrieve. If not specified, the first page of results is retrieved.
     */
   var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.native
   /**

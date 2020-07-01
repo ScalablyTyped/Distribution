@@ -12,7 +12,7 @@ trait Explicit[ImplicitRefHandler /* <: js.Function2[/* node */ HTMLElement, /* 
 
 object Explicit {
   @scala.inline
-  def apply[ImplicitRefHandler, ExplicitRefHandler](explicit: ExplicitRefHandler, `implicit`: ImplicitRefHandler): Explicit[ImplicitRefHandler, ExplicitRefHandler] = {
+  def apply[/* <: js.Function2[/ * node * / typings.std.HTMLElement, / * repeated * / js.Any, scala.Unit] */ ImplicitRefHandler, /* <: js.Function1[/ * repeated * / js.Any, scala.Unit] */ ExplicitRefHandler](explicit: ExplicitRefHandler, `implicit`: ImplicitRefHandler): Explicit[ImplicitRefHandler, ExplicitRefHandler] = {
     val __obj = js.Dynamic.literal(explicit = explicit.asInstanceOf[js.Any])
     __obj.updateDynamic("implicit")(`implicit`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Explicit[ImplicitRefHandler, ExplicitRefHandler]]

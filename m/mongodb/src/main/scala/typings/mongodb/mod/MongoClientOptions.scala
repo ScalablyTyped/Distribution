@@ -28,7 +28,8 @@ import scala.scalajs.js.annotation._
   extends DbCreateOptions
      with ServerOptions
      with SocketOptions
-     with TLSOptions {
+     with TLSOptions
+     with UnifiedTopologyOptions {
   /**
     * Default: 15; Cutoff latency point in MS for MongoS proxy selection
     */
@@ -82,21 +83,11 @@ import scala.scalajs.js.annotation._
     */
   var secondaryAcceptableLatencyMS: js.UndefOr[scala.Double] = js.undefined
   /**
-    * With `useUnifiedTopology`, the MongoDB driver will try to find a server to send any given operation to
-    * and keep retrying for `serverSelectionTimeoutMS` milliseconds.
-    * Default: 30000
-    */
-  var serverSelectionTimeoutMS: js.UndefOr[scala.Double] = js.undefined
-  /**
     * Determines whether or not to use the new url parser. Enables the new, spec-compliant
     * url parser shipped in the core driver. This url parser fixes a number of problems with
     * the original parser, and aims to outright replace that parser in the near future.
     */
   var useNewUrlParser: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Enables the new unified topology layer
-    */
-  var useUnifiedTopology: js.UndefOr[Boolean] = js.undefined
   /**
     * Validate MongoClient passed in options for correctness.
     * Default: false
@@ -126,13 +117,18 @@ object MongoClientOptions {
     fsync: js.UndefOr[Boolean] = js.undefined,
     ha: js.UndefOr[Boolean] = js.undefined,
     haInterval: js.UndefOr[scala.Double] = js.undefined,
+    heartbeatFrequencyMS: js.UndefOr[scala.Double] = js.undefined,
     ignoreUndefined: js.UndefOr[Boolean] = js.undefined,
     j: js.UndefOr[Boolean] = js.undefined,
     keepAlive: js.UndefOr[Boolean] = js.undefined,
     keepAliveInitialDelay: js.UndefOr[scala.Double] = js.undefined,
+    localThresholdMS: js.UndefOr[scala.Double] = js.undefined,
     logger: js.Object | log = null,
     loggerLevel: String = null,
+    maxIdleTimeMS: js.UndefOr[scala.Double] = js.undefined,
+    maxPoolSize: js.UndefOr[scala.Double] = js.undefined,
     maxStalenessSeconds: js.UndefOr[scala.Double] = js.undefined,
+    minPoolSize: js.UndefOr[scala.Double] = js.undefined,
     minSize: js.UndefOr[scala.Double] = js.undefined,
     monitorCommands: js.UndefOr[Boolean] = js.undefined,
     monitoring: js.UndefOr[Boolean] = js.undefined,
@@ -177,6 +173,7 @@ object MongoClientOptions {
     useUnifiedTopology: js.UndefOr[Boolean] = js.undefined,
     validateOptions: js.Object | Boolean = null,
     w: scala.Double | majority | String = null,
+    waitQueueTimeoutMS: js.UndefOr[scala.Double] = js.undefined,
     wtimeout: js.UndefOr[scala.Double] = js.undefined
   ): MongoClientOptions = {
     val __obj = js.Dynamic.literal()
@@ -199,13 +196,18 @@ object MongoClientOptions {
     if (!js.isUndefined(fsync)) __obj.updateDynamic("fsync")(fsync.get.asInstanceOf[js.Any])
     if (!js.isUndefined(ha)) __obj.updateDynamic("ha")(ha.get.asInstanceOf[js.Any])
     if (!js.isUndefined(haInterval)) __obj.updateDynamic("haInterval")(haInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(heartbeatFrequencyMS)) __obj.updateDynamic("heartbeatFrequencyMS")(heartbeatFrequencyMS.get.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined.get.asInstanceOf[js.Any])
     if (!js.isUndefined(j)) __obj.updateDynamic("j")(j.get.asInstanceOf[js.Any])
     if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.get.asInstanceOf[js.Any])
     if (!js.isUndefined(keepAliveInitialDelay)) __obj.updateDynamic("keepAliveInitialDelay")(keepAliveInitialDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(localThresholdMS)) __obj.updateDynamic("localThresholdMS")(localThresholdMS.get.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     if (loggerLevel != null) __obj.updateDynamic("loggerLevel")(loggerLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxIdleTimeMS)) __obj.updateDynamic("maxIdleTimeMS")(maxIdleTimeMS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPoolSize)) __obj.updateDynamic("maxPoolSize")(maxPoolSize.get.asInstanceOf[js.Any])
     if (!js.isUndefined(maxStalenessSeconds)) __obj.updateDynamic("maxStalenessSeconds")(maxStalenessSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minPoolSize)) __obj.updateDynamic("minPoolSize")(minPoolSize.get.asInstanceOf[js.Any])
     if (!js.isUndefined(minSize)) __obj.updateDynamic("minSize")(minSize.get.asInstanceOf[js.Any])
     if (!js.isUndefined(monitorCommands)) __obj.updateDynamic("monitorCommands")(monitorCommands.get.asInstanceOf[js.Any])
     if (!js.isUndefined(monitoring)) __obj.updateDynamic("monitoring")(monitoring.get.asInstanceOf[js.Any])
@@ -250,6 +252,7 @@ object MongoClientOptions {
     if (!js.isUndefined(useUnifiedTopology)) __obj.updateDynamic("useUnifiedTopology")(useUnifiedTopology.get.asInstanceOf[js.Any])
     if (validateOptions != null) __obj.updateDynamic("validateOptions")(validateOptions.asInstanceOf[js.Any])
     if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitQueueTimeoutMS)) __obj.updateDynamic("waitQueueTimeoutMS")(waitQueueTimeoutMS.get.asInstanceOf[js.Any])
     if (!js.isUndefined(wtimeout)) __obj.updateDynamic("wtimeout")(wtimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MongoClientOptions]
   }

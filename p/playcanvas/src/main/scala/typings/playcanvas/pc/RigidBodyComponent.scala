@@ -14,10 +14,10 @@ import scala.scalajs.js.annotation._
   Defaults to 0.
   * @property angularDamping - Controls the rate at which a body loses angular velocity over time.
   Defaults to 0.
-  * @property linearFactor - Scaling factor for linear movement of the body in each axis.
-  Defaults to 1 in all axes.
-  * @property angularFactor - Scaling factor for angular movement of the body in each axis.
-  Defaults to 1 in all axes.
+  * @property linearFactor - Scaling factor for linear movement of the body in each axis. Only
+  valid for rigid bodies of type pc.BODYTYPE_DYNAMIC. Defaults to 1 in all axes.
+  * @property angularFactor - Scaling factor for angular movement of the body in each axis. Only
+  valid for rigid bodies of type pc.BODYTYPE_DYNAMIC. Defaults to 1 in all axes.
   * @property friction - The friction value used when contacts occur between two bodies. A higher
   value indicates more friction. Should be set in the range 0 to 1. Defaults to 0.5.
   * @property restitution - Influences the amount of energy lost when two rigid bodies collide. The
@@ -32,7 +32,8 @@ import scala.scalajs.js.annotation._
   
   * {@link pc.BODYTYPE_STATIC}: infinite mass and cannot move.
   * {@link pc.BODYTYPE_DYNAMIC}: simulated according to applied forces.
-  * {@link pc.BODYTYPE_KINEMATIC}: infinite mass and does not respond to forces but can still be moved by setting their velocity or position.
+  * {@link pc.BODYTYPE_KINEMATIC}: infinite mass and does not respond to forces but can still be moved
+  by setting their velocity or position.
   
   Defaults to pc.BODYTYPE_STATIC.
   * @param system - The ComponentSystem that created this component.
@@ -46,8 +47,8 @@ trait RigidBodyComponent extends Component {
     */
   var angularDamping: Double = js.native
   /**
-    * Scaling factor for angular movement of the body in each axis.
-    * Defaults to 1 in all axes.
+    * Scaling factor for angular movement of the body in each axis. Only
+    * valid for rigid bodies of type pc.BODYTYPE_DYNAMIC. Defaults to 1 in all axes.
     */
   var angularFactor: Vec3 = js.native
   /**
@@ -70,8 +71,8 @@ trait RigidBodyComponent extends Component {
     */
   var linearDamping: Double = js.native
   /**
-    * Scaling factor for linear movement of the body in each axis.
-    * Defaults to 1 in all axes.
+    * Scaling factor for linear movement of the body in each axis. Only
+    * valid for rigid bodies of type pc.BODYTYPE_DYNAMIC. Defaults to 1 in all axes.
     */
   var linearFactor: Vec3 = js.native
   /**
@@ -99,12 +100,14 @@ trait RigidBodyComponent extends Component {
     * The rigid body type determines how the body is simulated. Can be:
     * * {@link pc.BODYTYPE_STATIC}: infinite mass and cannot move.
     * * {@link pc.BODYTYPE_DYNAMIC}: simulated according to applied forces.
-    * * {@link pc.BODYTYPE_KINEMATIC}: infinite mass and does not respond to forces but can still be moved by setting their velocity or position.
+    * * {@link pc.BODYTYPE_KINEMATIC}: infinite mass and does not respond to forces but can still be moved
+    * by setting their velocity or position.
     * Defaults to pc.BODYTYPE_STATIC.
     */
   var `type`: String = js.native
   /**
-    * Forcibly activate the rigid body simulation.
+    * Forcibly activate the rigid body simulation. Only affects rigid bodies of
+    type pc.BODYTYPE_DYNAMIC.
     */
   def activate(): Unit = js.native
   def applyForce(x: Double): Unit = js.native

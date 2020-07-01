@@ -20,6 +20,7 @@ trait Trip extends js.Object {
   var plannedArrivalPlatform: js.UndefOr[String] = js.undefined
   var plannedDeparture: String
   var plannedDeparturePlatform: js.UndefOr[String] = js.undefined
+  var polyline: js.UndefOr[FeatureCollection] = js.undefined
   var reachable: js.UndefOr[Boolean] = js.undefined
   var remarks: js.UndefOr[js.Array[Hint]] = js.undefined
   var stopovers: js.Array[StopOver]
@@ -44,6 +45,7 @@ object Trip {
     line: Line = null,
     plannedArrivalPlatform: String = null,
     plannedDeparturePlatform: String = null,
+    polyline: FeatureCollection = null,
     reachable: js.UndefOr[Boolean] = js.undefined,
     remarks: js.Array[Hint] = null
   ): Trip = {
@@ -56,6 +58,7 @@ object Trip {
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     if (plannedArrivalPlatform != null) __obj.updateDynamic("plannedArrivalPlatform")(plannedArrivalPlatform.asInstanceOf[js.Any])
     if (plannedDeparturePlatform != null) __obj.updateDynamic("plannedDeparturePlatform")(plannedDeparturePlatform.asInstanceOf[js.Any])
+    if (polyline != null) __obj.updateDynamic("polyline")(polyline.asInstanceOf[js.Any])
     if (!js.isUndefined(reachable)) __obj.updateDynamic("reachable")(reachable.get.asInstanceOf[js.Any])
     if (remarks != null) __obj.updateDynamic("remarks")(remarks.asInstanceOf[js.Any])
     __obj.asInstanceOf[Trip]

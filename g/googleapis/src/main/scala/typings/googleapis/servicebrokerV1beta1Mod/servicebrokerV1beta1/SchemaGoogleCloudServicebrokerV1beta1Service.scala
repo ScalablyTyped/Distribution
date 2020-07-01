@@ -87,16 +87,16 @@ object SchemaGoogleCloudServicebrokerV1beta1Service {
     tags: js.Array[String] = null
   ): SchemaGoogleCloudServicebrokerV1beta1Service = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bindable)) __obj.updateDynamic("bindable")(bindable.asInstanceOf[js.Any])
-    if (!js.isUndefined(binding_retrievable)) __obj.updateDynamic("binding_retrievable")(binding_retrievable.asInstanceOf[js.Any])
-    if (!js.isUndefined(bindings_retrievable)) __obj.updateDynamic("bindings_retrievable")(bindings_retrievable.asInstanceOf[js.Any])
+    if (!js.isUndefined(bindable)) __obj.updateDynamic("bindable")(bindable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(binding_retrievable)) __obj.updateDynamic("binding_retrievable")(binding_retrievable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bindings_retrievable)) __obj.updateDynamic("bindings_retrievable")(bindings_retrievable.get.asInstanceOf[js.Any])
     if (dashboard_client != null) __obj.updateDynamic("dashboard_client")(dashboard_client.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(instances_retrievable)) __obj.updateDynamic("instances_retrievable")(instances_retrievable.asInstanceOf[js.Any])
+    if (!js.isUndefined(instances_retrievable)) __obj.updateDynamic("instances_retrievable")(instances_retrievable.get.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(plan_updateable)) __obj.updateDynamic("plan_updateable")(plan_updateable.asInstanceOf[js.Any])
+    if (!js.isUndefined(plan_updateable)) __obj.updateDynamic("plan_updateable")(plan_updateable.get.asInstanceOf[js.Any])
     if (plans != null) __obj.updateDynamic("plans")(plans.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudServicebrokerV1beta1Service]

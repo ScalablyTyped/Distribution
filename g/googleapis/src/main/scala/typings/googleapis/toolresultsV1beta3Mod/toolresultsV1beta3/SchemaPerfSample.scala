@@ -21,10 +21,10 @@ trait SchemaPerfSample extends js.Object {
 
 object SchemaPerfSample {
   @scala.inline
-  def apply(sampleTime: SchemaTimestamp = null, value: Int | Double = null): SchemaPerfSample = {
+  def apply(sampleTime: SchemaTimestamp = null, value: js.UndefOr[Double] = js.undefined): SchemaPerfSample = {
     val __obj = js.Dynamic.literal()
     if (sampleTime != null) __obj.updateDynamic("sampleTime")(sampleTime.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPerfSample]
   }
 }

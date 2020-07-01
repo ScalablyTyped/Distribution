@@ -24,7 +24,7 @@ trait Resource[T /* <: ResourceConstant */] extends RoomObject {
 
 object Resource {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.screeps.ResourceConstant */ T](
     amount: Double,
     effects: js.Array[RoomObjectEffect],
     id: Id[Resource[T]],

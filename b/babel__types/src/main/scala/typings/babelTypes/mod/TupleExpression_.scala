@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 - typings.babelTypes.mod._Node because Already inherited */ trait TupleExpression_
   extends Expression
      with BaseNode {
-  var elements: js.Array[Null | Expression | SpreadElement_]
+  var elements: js.Array[Expression | SpreadElement_]
   @JSName("type")
   var type_TupleExpression_ : TupleExpression
 }
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 object TupleExpression_ {
   @scala.inline
   def apply(
-    elements: js.Array[Null | Expression | SpreadElement_],
+    elements: js.Array[Expression | SpreadElement_],
     `type`: TupleExpression,
     end: Double = null.asInstanceOf[Double],
     innerComments: js.Array[Comment] = null,

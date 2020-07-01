@@ -1,7 +1,7 @@
 
 # Scala.js typings for jszip
 
-Typings are for version 3.4.0
+Typings are for version 3.5.0
 
 ## Library description:
 Create, read and edit .zip files with JavaScript http://stuartk.com/jszip

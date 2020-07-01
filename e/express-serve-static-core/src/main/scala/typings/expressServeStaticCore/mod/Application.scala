@@ -229,7 +229,7 @@ trait Application
     fn: js.Function3[
       /* path */ String, 
       /* options */ js.Object, 
-      /* callback */ js.Function2[/* e */ js.Any, /* rendered */ String, Unit], 
+      /* callback */ js.Function2[/* e */ js.Any, /* rendered */ js.UndefOr[String], Unit], 
       Unit
     ]
   ): this.type = js.native

@@ -5,17 +5,40 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LocationsOptions extends js.Object {
-   // return stops/stations?
+  /**
+    * return addresses
+    * @default false
+    */
   var addresses: js.UndefOr[Boolean] = js.undefined
+  /**
+    * find only exact matches?
+    * @default true
+    */
   var fuzzy: js.UndefOr[Boolean] = js.undefined
-   // parse & expose lines at each stop/station?
+  /**
+    * Language of the results
+    * @default en
+    */
   var language: js.UndefOr[String] = js.undefined
-   // points of interest
+  /**
+    * parse & expose lines at each stop/station?
+    * @default false
+    */
   var linesOfStops: js.UndefOr[Boolean] = js.undefined
+  /**
+    * points of interest
+    * @default true
+    */
   var poi: js.UndefOr[Boolean] = js.undefined
-   // find only exact matches?
+  /**
+    * how many search results?
+    * @default 10
+    */
   var results: js.UndefOr[Double] = js.undefined
-   // how many search results?
+  /**
+    * return stops/stations?
+    * @default true
+    */
   var stops: js.UndefOr[Boolean] = js.undefined
 }
 

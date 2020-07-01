@@ -14,6 +14,7 @@ trait BlurToCancel extends js.Object {
   var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
   var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
   var open: Boolean = js.native
+  var value: String = js.native
   def forwardKeyDown(e: KeyboardEvent[HTMLInputElement]): Boolean = js.native
   def isClickOutside(): Boolean = js.native
   def isClickOutside(clickElement: EventTarget): Boolean = js.native

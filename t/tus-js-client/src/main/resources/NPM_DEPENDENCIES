@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "tus-js-client" : "2.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "tus-js-client" : "2.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

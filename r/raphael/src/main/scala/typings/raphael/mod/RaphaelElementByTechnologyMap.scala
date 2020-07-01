@@ -12,7 +12,7 @@ trait RaphaelElementByTechnologyMap[TSvg /* <: SVGElement */, TVml /* <: VMLElem
 
 object RaphaelElementByTechnologyMap {
   @scala.inline
-  def apply[TSvg, TVml](SVG: TSvg, VML: TVml): RaphaelElementByTechnologyMap[TSvg, TVml] = {
+  def apply[/* <: typings.std.SVGElement */ TSvg, /* <: typings.raphael.mod.VMLElement */ TVml](SVG: TSvg, VML: TVml): RaphaelElementByTechnologyMap[TSvg, TVml] = {
     val __obj = js.Dynamic.literal(SVG = SVG.asInstanceOf[js.Any], VML = VML.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaphaelElementByTechnologyMap[TSvg, TVml]]
   }

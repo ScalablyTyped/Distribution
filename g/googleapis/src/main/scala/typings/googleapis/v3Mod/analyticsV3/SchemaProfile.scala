@@ -1,7 +1,7 @@
 package typings.googleapis.v3Mod.analyticsV3
 
-import typings.googleapis.AnonEffective
-import typings.googleapis.AnonHref
+import typings.googleapis.anon.Effective
+import typings.googleapis.anon.Href
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ trait SchemaProfile extends js.Object {
     * Child link for this view (profile). Points to the list of goals for this
     * view (profile).
     */
-  var childLink: js.UndefOr[AnonHref] = js.native
+  var childLink: js.UndefOr[Href] = js.native
   /**
     * Time this view (profile) was created.
     */
@@ -74,11 +74,11 @@ trait SchemaProfile extends js.Object {
     * Parent link for this view (profile). Points to the web property to which
     * this view (profile) belongs.
     */
-  var parentLink: js.UndefOr[AnonHref] = js.native
+  var parentLink: js.UndefOr[Href] = js.native
   /**
     * Permissions the user has for this view (profile).
     */
-  var permissions: js.UndefOr[AnonEffective] = js.native
+  var permissions: js.UndefOr[Effective] = js.native
   /**
     * Link for this view (profile).
     */
@@ -134,7 +134,7 @@ object SchemaProfile {
   def apply(
     accountId: String = null,
     botFilteringEnabled: js.UndefOr[Boolean] = js.undefined,
-    childLink: AnonHref = null,
+    childLink: Href = null,
     created: String = null,
     currency: String = null,
     defaultPage: String = null,
@@ -145,8 +145,8 @@ object SchemaProfile {
     internalWebPropertyId: String = null,
     kind: String = null,
     name: String = null,
-    parentLink: AnonHref = null,
-    permissions: AnonEffective = null,
+    parentLink: Href = null,
+    permissions: Effective = null,
     selfLink: String = null,
     siteSearchCategoryParameters: String = null,
     siteSearchQueryParameters: String = null,
@@ -161,13 +161,13 @@ object SchemaProfile {
   ): SchemaProfile = {
     val __obj = js.Dynamic.literal()
     if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (!js.isUndefined(botFilteringEnabled)) __obj.updateDynamic("botFilteringEnabled")(botFilteringEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(botFilteringEnabled)) __obj.updateDynamic("botFilteringEnabled")(botFilteringEnabled.get.asInstanceOf[js.Any])
     if (childLink != null) __obj.updateDynamic("childLink")(childLink.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (defaultPage != null) __obj.updateDynamic("defaultPage")(defaultPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(eCommerceTracking)) __obj.updateDynamic("eCommerceTracking")(eCommerceTracking.asInstanceOf[js.Any])
-    if (!js.isUndefined(enhancedECommerceTracking)) __obj.updateDynamic("enhancedECommerceTracking")(enhancedECommerceTracking.asInstanceOf[js.Any])
+    if (!js.isUndefined(eCommerceTracking)) __obj.updateDynamic("eCommerceTracking")(eCommerceTracking.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enhancedECommerceTracking)) __obj.updateDynamic("enhancedECommerceTracking")(enhancedECommerceTracking.get.asInstanceOf[js.Any])
     if (excludeQueryParameters != null) __obj.updateDynamic("excludeQueryParameters")(excludeQueryParameters.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (internalWebPropertyId != null) __obj.updateDynamic("internalWebPropertyId")(internalWebPropertyId.asInstanceOf[js.Any])
@@ -178,9 +178,9 @@ object SchemaProfile {
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     if (siteSearchCategoryParameters != null) __obj.updateDynamic("siteSearchCategoryParameters")(siteSearchCategoryParameters.asInstanceOf[js.Any])
     if (siteSearchQueryParameters != null) __obj.updateDynamic("siteSearchQueryParameters")(siteSearchQueryParameters.asInstanceOf[js.Any])
-    if (!js.isUndefined(starred)) __obj.updateDynamic("starred")(starred.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripSiteSearchCategoryParameters)) __obj.updateDynamic("stripSiteSearchCategoryParameters")(stripSiteSearchCategoryParameters.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripSiteSearchQueryParameters)) __obj.updateDynamic("stripSiteSearchQueryParameters")(stripSiteSearchQueryParameters.asInstanceOf[js.Any])
+    if (!js.isUndefined(starred)) __obj.updateDynamic("starred")(starred.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripSiteSearchCategoryParameters)) __obj.updateDynamic("stripSiteSearchCategoryParameters")(stripSiteSearchCategoryParameters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripSiteSearchQueryParameters)) __obj.updateDynamic("stripSiteSearchQueryParameters")(stripSiteSearchQueryParameters.get.asInstanceOf[js.Any])
     if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])

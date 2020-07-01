@@ -27,7 +27,6 @@ import scala.scalajs.js.annotation._
 class Mesh protected ()
   extends typings.pixiJs.PIXI.Mesh {
   def this(geometry: typings.pixiJs.PIXI.Geometry, shader: typings.pixiJs.PIXI.MeshMaterial) = this()
-  def this(geometry: typings.pixiJs.PIXI.Geometry, shader: typings.pixiJs.PIXI.Shader) = this()
   def this(
     geometry: typings.pixiJs.PIXI.Geometry,
     shader: typings.pixiJs.PIXI.MeshMaterial,
@@ -35,18 +34,7 @@ class Mesh protected ()
   ) = this()
   def this(
     geometry: typings.pixiJs.PIXI.Geometry,
-    shader: typings.pixiJs.PIXI.Shader,
-    state: typings.pixiJs.PIXI.State
-  ) = this()
-  def this(
-    geometry: typings.pixiJs.PIXI.Geometry,
     shader: typings.pixiJs.PIXI.MeshMaterial,
-    state: typings.pixiJs.PIXI.State,
-    drawMode: Double
-  ) = this()
-  def this(
-    geometry: typings.pixiJs.PIXI.Geometry,
-    shader: typings.pixiJs.PIXI.Shader,
     state: typings.pixiJs.PIXI.State,
     drawMode: Double
   ) = this()

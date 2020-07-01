@@ -17,7 +17,7 @@ trait IFloatingFilterWrapperParams[M, F /* <: FloatingFilterChange */, P /* <: I
 
 object IFloatingFilterWrapperParams {
   @scala.inline
-  def apply[M, F, P](
+  def apply[M, /* <: typings.agGrid.floatingFilterMod.FloatingFilterChange */ F, /* <: typings.agGrid.floatingFilterMod.IFloatingFilterParams[M, F] */ P](
     column: Column,
     floatingFilterComp: Promise[IFloatingFilterComp[M, F, P]],
     suppressFilterButton: Boolean

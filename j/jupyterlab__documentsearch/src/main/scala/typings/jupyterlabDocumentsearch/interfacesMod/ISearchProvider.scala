@@ -94,7 +94,7 @@ trait ISearchProvider[T /* <: Widget */] extends js.Object {
 
 object ISearchProvider {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.luminoWidgets.mod.Widget */ T](
     changed: ISignal[ISearchProvider[T], Unit],
     endQuery: () => js.Promise[Unit],
     endSearch: () => js.Promise[Unit],

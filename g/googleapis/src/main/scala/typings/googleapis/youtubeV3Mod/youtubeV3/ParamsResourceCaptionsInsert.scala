@@ -4,7 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
-import typings.googleapis.AnonBody
+import typings.googleapis.anon.Body
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait ParamsResourceCaptionsInsert extends StandardParameters {
   /**
     * Media metadata
     */
-  var media: js.UndefOr[AnonBody] = js.native
+  var media: js.UndefOr[Body] = js.native
   /**
     * ID of the Google+ Page for the channel that the request is be on behalf
     * of
@@ -65,7 +65,7 @@ object ParamsResourceCaptionsInsert {
     auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
     fields: String = null,
     key: String = null,
-    media: AnonBody = null,
+    media: Body = null,
     oauth_token: String = null,
     onBehalfOf: String = null,
     onBehalfOfContentOwner: String = null,
@@ -86,10 +86,10 @@ object ParamsResourceCaptionsInsert {
     if (onBehalfOf != null) __obj.updateDynamic("onBehalfOf")(onBehalfOf.asInstanceOf[js.Any])
     if (onBehalfOfContentOwner != null) __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner.asInstanceOf[js.Any])
     if (part != null) __obj.updateDynamic("part")(part.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (requestBody != null) __obj.updateDynamic("requestBody")(requestBody.asInstanceOf[js.Any])
-    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.asInstanceOf[js.Any])
+    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.get.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceCaptionsInsert]
   }

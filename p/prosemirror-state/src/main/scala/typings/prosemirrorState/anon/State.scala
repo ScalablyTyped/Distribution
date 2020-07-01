@@ -13,7 +13,7 @@ trait State[S /* <: typings.prosemirrorModel.mod.Schema[_, _] */] extends js.Obj
 
 object State {
   @scala.inline
-  def apply[S](state: EditorState[S], transactions: js.Array[Transaction[S]]): State[S] = {
+  def apply[/* <: typings.prosemirrorModel.mod.Schema[_, _] */ S](state: EditorState[S], transactions: js.Array[Transaction[S]]): State[S] = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], transactions = transactions.asInstanceOf[js.Any])
     __obj.asInstanceOf[State[S]]
   }

@@ -118,11 +118,11 @@ object SchemaWorkItemStatus {
     sourceFork: SchemaSourceFork = null,
     sourceOperationResponse: SchemaSourceOperationResponse = null,
     stopPosition: SchemaPosition = null,
-    totalThrottlerWaitTimeSeconds: Int | Double = null,
+    totalThrottlerWaitTimeSeconds: js.UndefOr[Double] = js.undefined,
     workItemId: String = null
   ): SchemaWorkItemStatus = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(completed)) __obj.updateDynamic("completed")(completed.asInstanceOf[js.Any])
+    if (!js.isUndefined(completed)) __obj.updateDynamic("completed")(completed.get.asInstanceOf[js.Any])
     if (counterUpdates != null) __obj.updateDynamic("counterUpdates")(counterUpdates.asInstanceOf[js.Any])
     if (dynamicSourceSplit != null) __obj.updateDynamic("dynamicSourceSplit")(dynamicSourceSplit.asInstanceOf[js.Any])
     if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
@@ -134,7 +134,7 @@ object SchemaWorkItemStatus {
     if (sourceFork != null) __obj.updateDynamic("sourceFork")(sourceFork.asInstanceOf[js.Any])
     if (sourceOperationResponse != null) __obj.updateDynamic("sourceOperationResponse")(sourceOperationResponse.asInstanceOf[js.Any])
     if (stopPosition != null) __obj.updateDynamic("stopPosition")(stopPosition.asInstanceOf[js.Any])
-    if (totalThrottlerWaitTimeSeconds != null) __obj.updateDynamic("totalThrottlerWaitTimeSeconds")(totalThrottlerWaitTimeSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalThrottlerWaitTimeSeconds)) __obj.updateDynamic("totalThrottlerWaitTimeSeconds")(totalThrottlerWaitTimeSeconds.get.asInstanceOf[js.Any])
     if (workItemId != null) __obj.updateDynamic("workItemId")(workItemId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWorkItemStatus]
   }

@@ -16,7 +16,7 @@ trait Category[T /* <: Context */] extends js.Object
 
 object Category {
   @scala.inline
-  def BaseCategory[T](
+  def BaseCategory[/* <: typings.wordpressApiFetch.mod.Schema.Context */ T](
     _links: Record[String, js.Array[Dictk]],
     count: Double,
     description: String,
@@ -34,7 +34,7 @@ object Category {
     __obj.asInstanceOf[Category[T]]
   }
   @scala.inline
-  def PickBaseCategoryCategoryCount[T](
+  def PickBaseCategoryCategoryCount[/* <: typings.wordpressApiFetch.mod.Schema.Context */ T](
     _links: Record[String, js.Array[Dictk]],
     count: Double,
     description: String,
@@ -52,7 +52,7 @@ object Category {
     __obj.asInstanceOf[Category[T]]
   }
   @scala.inline
-  def PickBaseCategoryCategory[T](
+  def PickBaseCategoryCategory[/* <: typings.wordpressApiFetch.mod.Schema.Context */ T](
     _links: Record[String, js.Array[Dictk]],
     id: Double,
     link: String,

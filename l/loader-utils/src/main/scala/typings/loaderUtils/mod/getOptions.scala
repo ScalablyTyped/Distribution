@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("loader-utils", "getOptions")
 @js.native
 object getOptions extends js.Object {
-  def apply(loaderContext: LoaderContext): OptionObject = js.native
+  def apply(loaderContext: LoaderContext): js.Object = js.native
 }
 

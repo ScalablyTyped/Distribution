@@ -29,7 +29,7 @@ object SchemaPrivateEnvironmentConfig {
     privateClusterConfig: SchemaPrivateClusterConfig = null
   ): SchemaPrivateEnvironmentConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enablePrivateEnvironment)) __obj.updateDynamic("enablePrivateEnvironment")(enablePrivateEnvironment.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePrivateEnvironment)) __obj.updateDynamic("enablePrivateEnvironment")(enablePrivateEnvironment.get.asInstanceOf[js.Any])
     if (privateClusterConfig != null) __obj.updateDynamic("privateClusterConfig")(privateClusterConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPrivateEnvironmentConfig]
   }

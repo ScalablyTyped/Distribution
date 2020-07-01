@@ -68,20 +68,20 @@ trait SchemaRouterBgpPeerBfd extends js.Object {
 object SchemaRouterBgpPeerBfd {
   @scala.inline
   def apply(
-    minReceiveInterval: Int | Double = null,
-    minTransmitInterval: Int | Double = null,
+    minReceiveInterval: js.UndefOr[Double] = js.undefined,
+    minTransmitInterval: js.UndefOr[Double] = js.undefined,
     mode: String = null,
-    multiplier: Int | Double = null,
+    multiplier: js.UndefOr[Double] = js.undefined,
     packetMode: String = null,
-    slowTimerInterval: Int | Double = null
+    slowTimerInterval: js.UndefOr[Double] = js.undefined
   ): SchemaRouterBgpPeerBfd = {
     val __obj = js.Dynamic.literal()
-    if (minReceiveInterval != null) __obj.updateDynamic("minReceiveInterval")(minReceiveInterval.asInstanceOf[js.Any])
-    if (minTransmitInterval != null) __obj.updateDynamic("minTransmitInterval")(minTransmitInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(minReceiveInterval)) __obj.updateDynamic("minReceiveInterval")(minReceiveInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minTransmitInterval)) __obj.updateDynamic("minTransmitInterval")(minTransmitInterval.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (multiplier != null) __obj.updateDynamic("multiplier")(multiplier.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiplier)) __obj.updateDynamic("multiplier")(multiplier.get.asInstanceOf[js.Any])
     if (packetMode != null) __obj.updateDynamic("packetMode")(packetMode.asInstanceOf[js.Any])
-    if (slowTimerInterval != null) __obj.updateDynamic("slowTimerInterval")(slowTimerInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(slowTimerInterval)) __obj.updateDynamic("slowTimerInterval")(slowTimerInterval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRouterBgpPeerBfd]
   }
 }

@@ -17,7 +17,7 @@ trait TypeaheadState[T /* <: TypeaheadModel */] extends js.Object {
 
 object TypeaheadState {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.reactBootstrapTypeahead.mod.TypeaheadModel */ T](
     isFocused: Boolean,
     selected: js.Array[T],
     showMenu: Boolean,

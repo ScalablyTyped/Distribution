@@ -166,14 +166,14 @@ object SchemaJobFilters {
     if (compensationFilter != null) __obj.updateDynamic("compensationFilter")(compensationFilter.asInstanceOf[js.Any])
     if (customAttributeFilter != null) __obj.updateDynamic("customAttributeFilter")(customAttributeFilter.asInstanceOf[js.Any])
     if (customFieldFilters != null) __obj.updateDynamic("customFieldFilters")(customFieldFilters.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableSpellCheck)) __obj.updateDynamic("disableSpellCheck")(disableSpellCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableSpellCheck)) __obj.updateDynamic("disableSpellCheck")(disableSpellCheck.get.asInstanceOf[js.Any])
     if (employmentTypes != null) __obj.updateDynamic("employmentTypes")(employmentTypes.asInstanceOf[js.Any])
     if (extendedCompensationFilter != null) __obj.updateDynamic("extendedCompensationFilter")(extendedCompensationFilter.asInstanceOf[js.Any])
     if (languageCodes != null) __obj.updateDynamic("languageCodes")(languageCodes.asInstanceOf[js.Any])
     if (locationFilters != null) __obj.updateDynamic("locationFilters")(locationFilters.asInstanceOf[js.Any])
     if (publishDateRange != null) __obj.updateDynamic("publishDateRange")(publishDateRange.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (!js.isUndefined(tenantJobOnly)) __obj.updateDynamic("tenantJobOnly")(tenantJobOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(tenantJobOnly)) __obj.updateDynamic("tenantJobOnly")(tenantJobOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaJobFilters]
   }
 }

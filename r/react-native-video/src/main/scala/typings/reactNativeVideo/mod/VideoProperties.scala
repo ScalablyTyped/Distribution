@@ -154,6 +154,7 @@ object VideoProperties {
     disableFocus: js.UndefOr[Boolean] = js.undefined,
     filter: FilterType = null,
     filterEnable: js.UndefOr[Boolean] = js.undefined,
+    focusable: js.UndefOr[Boolean] = js.undefined,
     fullscreen: js.UndefOr[Boolean] = js.undefined,
     fullscreenAutorotate: js.UndefOr[Boolean] = js.undefined,
     fullscreenOrientation: all | landscape | portrait = null,
@@ -284,6 +285,7 @@ object VideoProperties {
     if (!js.isUndefined(disableFocus)) __obj.updateDynamic("disableFocus")(disableFocus.get.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (!js.isUndefined(filterEnable)) __obj.updateDynamic("filterEnable")(filterEnable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.get.asInstanceOf[js.Any])
     if (!js.isUndefined(fullscreenAutorotate)) __obj.updateDynamic("fullscreenAutorotate")(fullscreenAutorotate.get.asInstanceOf[js.Any])
     if (fullscreenOrientation != null) __obj.updateDynamic("fullscreenOrientation")(fullscreenOrientation.asInstanceOf[js.Any])

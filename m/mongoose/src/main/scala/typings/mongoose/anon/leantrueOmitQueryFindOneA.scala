@@ -3,6 +3,7 @@ package typings.mongoose.anon
 import org.scalablytyped.runtime.StringDictionary
 import typings.mongoose.mod.ClientSession
 import typings.mongoose.mongooseBooleans.`true`
+import typings.mongoose.mongooseStrings.`throw`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +25,7 @@ trait leantrueOmitQueryFindOneA extends js.Object {
   var session: js.UndefOr[ClientSession] = js.undefined
   var setDefaultsOnInsert: js.UndefOr[Boolean] = js.undefined
   var sort: js.UndefOr[js.Any] = js.undefined
-  var strict: js.UndefOr[Boolean | String] = js.undefined
+  var strict: js.UndefOr[Boolean | `throw`] = js.undefined
   var timestamps: js.UndefOr[Boolean] = js.undefined
   var upsert: js.UndefOr[Boolean] = js.undefined
 }
@@ -47,7 +48,7 @@ object leantrueOmitQueryFindOneA {
     session: ClientSession = null,
     setDefaultsOnInsert: js.UndefOr[Boolean] = js.undefined,
     sort: js.Any = null,
-    strict: Boolean | String = null,
+    strict: Boolean | `throw` = null,
     timestamps: js.UndefOr[Boolean] = js.undefined,
     upsert: js.UndefOr[Boolean] = js.undefined
   ): leantrueOmitQueryFindOneA = {

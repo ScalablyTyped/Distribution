@@ -28,8 +28,8 @@ trait IContextualMenuItem
   */
 /* propertyName */ StringDictionary[js.Any] {
   /**
-    * Optional accessibility label (aria-label) attribute that will be stamped on to the element.
-    * If none is specified, the aria-label attribute will contain the item name
+    * Custom accessible label for the element.
+    * If no override is specified, the `aria-label` attribute will contain the item name.
     */
   var ariaLabel: js.UndefOr[String] = js.undefined
   /**
@@ -97,7 +97,7 @@ trait IContextualMenuItem
     */
   var href: js.UndefOr[String] = js.undefined
   /**
-    * Props for the Icon.
+    * Props for an icon to display next to the item.
     */
   var iconProps: js.UndefOr[IIconProps] = js.undefined
   /**
@@ -119,18 +119,16 @@ trait IContextualMenuItem
     */
   var keytipProps: js.UndefOr[IKeytipProps] = js.undefined
   /**
-    * Text description for the menu item to display
-    * If a standard dash (-) is passed in, then the item will be rendered as a divider
-    * If a dash must appear as text then the alternatives of
-    * emdash (—), figuredash (‒), or minus symbol (−)
-    * can be used instead
+    * Text of the menu item.
     * @deprecated Use `text` instead.
     */
   var name: js.UndefOr[String] = js.undefined
   /**
     * Callback for when the menu item is invoked. If `ev.preventDefault()` is called in `onClick`,
     * the click will not close the menu.
-    * Returning true will dismiss the menu even if `ev.preventDefault()` was called.
+    *
+    * Only for ContextualMenu items, returning true will dismiss the menu even if `ev.preventDefault()`
+    * was called (does not apply for button or CommandBar sub-menu items).
     */
   var onClick: js.UndefOr[
     js.Function2[
@@ -226,15 +224,13 @@ trait IContextualMenuItem
     */
   var target: js.UndefOr[String] = js.undefined
   /**
-    * Text description for the menu item to display
-    * If a standard dash (-) is passed in, then the item will be rendered as a divider
-    * If a dash must appear as text then the alternatives of
-    * emdash (—), figuredash (‒), or minus symbol (−)
-    * can be used instead
+    * Text of the menu item.
+    * If a standard hyphen (-) is passed in, then the item will be rendered as a divider.
+    * If a dash must appear as text, use an emdash (—), figuredash (‒), or minus symbol (−) instead.
     */
   var text: js.UndefOr[String] = js.undefined
   /**
-    * Optional title for displaying text when hovering over an item.
+    * Title (tooltip) text displayed when hovering over an item.
     */
   var title: js.UndefOr[String] = js.undefined
 }

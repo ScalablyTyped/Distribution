@@ -18,6 +18,7 @@ import typings.ionicCore.ionicCoreStrings.send
 import typings.ionicCore.ionicCoreStrings.tel
 import typings.ionicCore.ionicCoreStrings.text
 import typings.ionicCore.ionicCoreStrings.url
+import typings.ionicCore.mod.AutocompleteTypes
 import typings.ionicCore.mod.Color
 import typings.ionicCore.mod.TextFieldTypes
 import typings.std.HTMLInputElement
@@ -37,7 +38,7 @@ trait IonInput extends js.Object {
   /**
     * Indicates whether the value of the control can be automatically completed by the browser.
     */
-  var autocomplete: on | off
+  var autocomplete: AutocompleteTypes
   /**
     * Whether auto correction should be enabled when the user is entering/editing the text value.
     */
@@ -152,7 +153,7 @@ object IonInput {
   @scala.inline
   def apply(
     autocapitalize: String,
-    autocomplete: on | off,
+    autocomplete: AutocompleteTypes,
     autocorrect: on | off,
     autofocus: Boolean,
     clearInput: Boolean,

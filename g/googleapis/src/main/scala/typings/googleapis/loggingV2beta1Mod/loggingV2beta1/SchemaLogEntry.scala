@@ -176,7 +176,7 @@ object SchemaLogEntry {
     if (textPayload != null) __obj.updateDynamic("textPayload")(textPayload.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     if (trace != null) __obj.updateDynamic("trace")(trace.asInstanceOf[js.Any])
-    if (!js.isUndefined(traceSampled)) __obj.updateDynamic("traceSampled")(traceSampled.asInstanceOf[js.Any])
+    if (!js.isUndefined(traceSampled)) __obj.updateDynamic("traceSampled")(traceSampled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLogEntry]
   }
 }

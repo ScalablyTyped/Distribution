@@ -1,45 +1,53 @@
 package typings.vexdb.requestObjectsMod
 
+import typings.vexdb.responseObjectsMod.TeamsResponseObject
+import typings.vexdb.vexdbNumbers.`0`
+import typings.vexdb.vexdbNumbers.`1`
+import typings.vexdb.vexdbStrings.College
+import typings.vexdb.vexdbStrings.VEXU
+import typings.vexdb.vexdbStrings.VRC
+import typings.vexdb.vexdbStrings.`High School`
+import typings.vexdb.vexdbStrings.`Middle School`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TeamsRequestObject extends RequestObject {
-  var city: js.UndefOr[StringRequest] = js.undefined
-  var country: js.UndefOr[StringRequest] = js.undefined
-  var grade: js.UndefOr[StringRequest] = js.undefined
-  var is_registered: js.UndefOr[NumberRequest] = js.undefined
+  var city: js.UndefOr[StringRequest[TeamsResponseObject, String]] = js.undefined
+  var country: js.UndefOr[StringRequest[TeamsResponseObject, String]] = js.undefined
+  var grade: js.UndefOr[
+    StringRequest[TeamsResponseObject, College | (`High School`) | (`Middle School`)]
+  ] = js.undefined
+  var is_registered: js.UndefOr[NumberRequest[TeamsResponseObject, `0` | `1`]] = js.undefined
   var limit_number: js.UndefOr[Double] = js.undefined
   var limit_start: js.UndefOr[Double] = js.undefined
-  var number: js.UndefOr[StringRequest] = js.undefined
-  var organisation: js.UndefOr[StringRequest] = js.undefined
-  var program: js.UndefOr[StringRequest] = js.undefined
-  var region: js.UndefOr[StringRequest] = js.undefined
-  var robot_name: js.UndefOr[StringRequest] = js.undefined
-  var single: js.UndefOr[Boolean] = js.undefined
-  var sku: js.UndefOr[StringRequest] = js.undefined
-  var team: js.UndefOr[StringRequest] = js.undefined
-  var team_name: js.UndefOr[StringRequest] = js.undefined
+  var number: js.UndefOr[StringRequest[TeamsResponseObject, String]] = js.undefined
+  var organisation: js.UndefOr[StringRequest[TeamsResponseObject, String]] = js.undefined
+  var program: js.UndefOr[StringRequest[TeamsResponseObject, VRC | VEXU]] = js.undefined
+  var region: js.UndefOr[StringRequest[TeamsResponseObject, String]] = js.undefined
+  var robot_name: js.UndefOr[StringRequest[TeamsResponseObject, String]] = js.undefined
+  var sku: js.UndefOr[StringRequest[TeamsResponseObject, String]] = js.undefined
+  var team: js.UndefOr[StringRequest[TeamsResponseObject, String]] = js.undefined
+  var team_name: js.UndefOr[StringRequest[TeamsResponseObject, String]] = js.undefined
 }
 
 object TeamsRequestObject {
   @scala.inline
   def apply(
-    city: StringRequest = null,
-    country: StringRequest = null,
-    grade: StringRequest = null,
-    is_registered: NumberRequest = null,
+    city: StringRequest[TeamsResponseObject, String] = null,
+    country: StringRequest[TeamsResponseObject, String] = null,
+    grade: StringRequest[TeamsResponseObject, College | (`High School`) | (`Middle School`)] = null,
+    is_registered: NumberRequest[TeamsResponseObject, `0` | `1`] = null,
     limit_number: js.UndefOr[Double] = js.undefined,
     limit_start: js.UndefOr[Double] = js.undefined,
-    number: StringRequest = null,
-    organisation: StringRequest = null,
-    program: StringRequest = null,
-    region: StringRequest = null,
-    robot_name: StringRequest = null,
-    single: js.UndefOr[Boolean] = js.undefined,
-    sku: StringRequest = null,
-    team: StringRequest = null,
-    team_name: StringRequest = null
+    number: StringRequest[TeamsResponseObject, String] = null,
+    organisation: StringRequest[TeamsResponseObject, String] = null,
+    program: StringRequest[TeamsResponseObject, VRC | VEXU] = null,
+    region: StringRequest[TeamsResponseObject, String] = null,
+    robot_name: StringRequest[TeamsResponseObject, String] = null,
+    sku: StringRequest[TeamsResponseObject, String] = null,
+    team: StringRequest[TeamsResponseObject, String] = null,
+    team_name: StringRequest[TeamsResponseObject, String] = null
   ): TeamsRequestObject = {
     val __obj = js.Dynamic.literal()
     if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
@@ -53,7 +61,6 @@ object TeamsRequestObject {
     if (program != null) __obj.updateDynamic("program")(program.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (robot_name != null) __obj.updateDynamic("robot_name")(robot_name.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.get.asInstanceOf[js.Any])
     if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
     if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
     if (team_name != null) __obj.updateDynamic("team_name")(team_name.asInstanceOf[js.Any])

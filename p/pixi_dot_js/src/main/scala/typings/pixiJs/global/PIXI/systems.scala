@@ -96,10 +96,10 @@ object systems extends js.Object {
       * All textures in texArray should have `_batchEnabled = _batchId`,
       * and their count should be less than `maxTextures`.
       *
-      * @param {PIXI.BatchTextureArray} texArray textures to bound
-      * @param {PIXI.BaseTexture[]} boundTextures current state of bound textures
-      * @param {number} batchId marker for _batchEnabled param of textures in texArray
-      * @param {number} maxTextures number of texture locations to manipulate
+      * @param {PIXI.BatchTextureArray} texArray - textures to bound
+      * @param {PIXI.BaseTexture[]} boundTextures - current state of bound textures
+      * @param {number} batchId - marker for _batchEnabled param of textures in texArray
+      * @param {number} maxTextures - number of texture locations to manipulate
       */
     /* CompleteClass */
     override def boundArray(
@@ -112,11 +112,11 @@ object systems extends js.Object {
       * Handy function for batch renderers: copies bound textures in first maxTextures locations to array
       * sets actual _batchLocation for them
       *
-      * @param arr
-      * @param maxTextures
+      * @param {PIXI.BaseTexture[]} - arr copy destination
+      * @param {number} maxTextures - number of copied elements
       */
     /* CompleteClass */
-    override def copyBoundTextures(arr: js.Any, maxTextures: js.Any): Unit = js.native
+    override def copyBoundTextures(arr: js.Array[typings.pixiJs.PIXI.BaseTexture], maxTextures: Double): Unit = js.native
     /**
       * Generic destroy methods to be overridden by the subclass
       */
@@ -189,7 +189,7 @@ object systems extends js.Object {
     override val webGLVersion: Double = js.native
     /**
       * Handle the context change event
-      * @param {WebGLRenderingContext} gl new webgl context
+      * @param {WebGLRenderingContext} gl - new webgl context
       */
     /* CompleteClass */
     override def contextChange(gl: WebGLRenderingContext): Unit = js.native
@@ -537,13 +537,6 @@ object systems extends js.Object {
     extends typings.pixiJs.PIXI.systems.ShaderSystem {
     def this(renderer: typings.pixiJs.PIXI.Renderer) = this()
     /**
-      * The current WebGL rendering context
-      *
-      * @member {WebGLRenderingContext} PIXI.systems.ShaderSystem#gl
-      */
-    /* CompleteClass */
-    override var gl: WebGLRenderingContext = js.native
-    /**
       * The renderer this manager works for.
       *
       * @member {PIXI.Renderer} PIXI.System#renderer
@@ -551,47 +544,10 @@ object systems extends js.Object {
     /* CompleteClass */
     override var renderer: typings.pixiJs.PIXI.Renderer = js.native
     /**
-      * Changes the current shader to the one given in parameter
-      *
-      * @param {PIXI.Shader} shader - the new shader
-      * @param {boolean} dontSync - false if the shader should automatically sync its uniforms.
-      * @returns {PIXI.GLProgram} the glProgram that belongs to the shader.
-      */
-    /* CompleteClass */
-    override def bind(shader: typings.pixiJs.PIXI.Shader, dontSync: Boolean): typings.pixiJs.PIXI.GLProgram = js.native
-    /**
       * Generic destroy methods to be overridden by the subclass
       */
     /* CompleteClass */
     override def destroy(): Unit = js.native
-    /**
-      * Returns the underlying GLShade rof the currently bound shader.
-      * This can be handy for when you to have a little more control over the setting of your uniforms.
-      *
-      * @return {PIXI.GLProgram} the glProgram for the currently bound Shader for this context
-      */
-    /* CompleteClass */
-    override def getglProgram(): typings.pixiJs.PIXI.GLProgram = js.native
-    /**
-      * Resets ShaderSystem state, does not affect WebGL state
-      */
-    /* CompleteClass */
-    override def reset(): Unit = js.native
-    /**
-      * Uploads the uniforms values to the currently bound shader.
-      *
-      * @param {object} uniforms - the uniforms values that be applied to the current shader
-      */
-    /* CompleteClass */
-    override def setUniforms(uniforms: js.Any): Unit = js.native
-    /**
-      *
-      * syncs uniforms on the group
-      * @param {*} group the uniform group to sync
-      * @param {*} syncData this is data that is passed to the sync function and any nested sync functions
-      */
-    /* CompleteClass */
-    override def syncUniformGroup(group: js.Any, syncData: js.Any): Unit = js.native
   }
   
   /**
@@ -749,8 +705,8 @@ object systems extends js.Object {
       * or if polygon fill is activated then we need to check if the polygon offset changes.
       * The idea is that we only check what we have too.
       *
-      * @param {Function} func  the checking function to add or remove
-      * @param {boolean} value  should the check function be added or removed.
+      * @param {Function} func - the checking function to add or remove
+      * @param {boolean} value - should the check function be added or removed.
       */
     /* CompleteClass */
     override def updateCheck(func: js.Function1[/* repeated */ js.Any, _], value: Boolean): Unit = js.native

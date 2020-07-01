@@ -13,7 +13,7 @@ trait ObjectRefinedBatchRequest[RT /* <: js.UndefOr[ResponseType] */] extends js
 
 object ObjectRefinedBatchRequest {
   @scala.inline
-  def apply[RT](
+  def apply[/* <: js.UndefOr[typings.k6.httpMod.ResponseType] */ RT](
     method: String,
     url: String,
     body: js.UndefOr[Null | RequestBody] = js.undefined,

@@ -93,7 +93,9 @@ trait FormProps extends BaseFormProps {
   var onFinish: js.UndefOr[js.Function1[/* values */ Store, Unit]] = js.undefined
   var onFinishFailed: js.UndefOr[js.Function1[/* errorInfo */ ValidateErrorEntity, Unit]] = js.undefined
   var onValuesChange: js.UndefOr[js.Function2[/* changedValues */ Store, /* values */ Store, Unit]] = js.undefined
+  var preserve: js.UndefOr[Boolean] = js.undefined
   var validateMessages: js.UndefOr[ValidateMessages] = js.undefined
+  var validateTrigger: js.UndefOr[String | js.Array[String] | `false`] = js.undefined
 }
 
 object FormProps {
@@ -269,6 +271,7 @@ object FormProps {
     onWheel: WheelEvent[HTMLFormElement] => Unit = null,
     placeholder: String = null,
     prefix: String = null,
+    preserve: js.UndefOr[Boolean] = js.undefined,
     property: String = null,
     radioGroup: String = null,
     resource: String = null,
@@ -287,6 +290,7 @@ object FormProps {
     typeof: String = null,
     unselectable: on | off = null,
     validateMessages: ValidateMessages = null,
+    validateTrigger: String | js.Array[String] | `false` = null,
     vocab: String = null
   ): FormProps = {
     val __obj = js.Dynamic.literal()
@@ -460,6 +464,7 @@ object FormProps {
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserve)) __obj.updateDynamic("preserve")(preserve.get.asInstanceOf[js.Any])
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup.asInstanceOf[js.Any])
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
@@ -478,6 +483,7 @@ object FormProps {
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (validateMessages != null) __obj.updateDynamic("validateMessages")(validateMessages.asInstanceOf[js.Any])
+    if (validateTrigger != null) __obj.updateDynamic("validateTrigger")(validateTrigger.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormProps]
   }

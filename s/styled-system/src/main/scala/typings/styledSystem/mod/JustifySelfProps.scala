@@ -17,7 +17,7 @@ trait JustifySelfProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js
 
 object JustifySelfProps {
   @scala.inline
-  def apply[ThemeType](justifySelf: js.UndefOr[Null | (ResponsiveValue[JustifySelfProperty, ThemeType])] = js.undefined): JustifySelfProps[ThemeType] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](justifySelf: js.UndefOr[Null | (ResponsiveValue[JustifySelfProperty, ThemeType])] = js.undefined): JustifySelfProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(justifySelf)) __obj.updateDynamic("justifySelf")(justifySelf.asInstanceOf[js.Any])
     __obj.asInstanceOf[JustifySelfProps[ThemeType]]

@@ -260,6 +260,7 @@ class Chart_ protected () extends js.Object {
     * @param credits
     *        A configuration object for the new credits.
     */
+  def addCredits(): Unit = js.native
   def addCredits(credits: CreditsOptions): Unit = js.native
   /**
     * Add a series to the chart after render time. Note that this method should
@@ -693,6 +694,9 @@ class Chart_ protected () extends js.Object {
   /**
     * Set the chart container's class name, in addition to
     * `highcharts-container`.
+    *
+    * @param className
+    *        The additional class name.
     */
   def setClassName(): Unit = js.native
   def setClassName(className: String): Unit = js.native

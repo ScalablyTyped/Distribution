@@ -40,18 +40,18 @@ trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating extends js.Objec
 object SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating {
   @scala.inline
   def apply(
-    bestRating: Int | Double = null,
+    bestRating: js.UndefOr[Double] = js.undefined,
     imageUrl: String = null,
-    ratingValue: Int | Double = null,
+    ratingValue: js.UndefOr[Double] = js.undefined,
     textualRating: String = null,
-    worstRating: Int | Double = null
+    worstRating: js.UndefOr[Double] = js.undefined
   ): SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating = {
     val __obj = js.Dynamic.literal()
-    if (bestRating != null) __obj.updateDynamic("bestRating")(bestRating.asInstanceOf[js.Any])
+    if (!js.isUndefined(bestRating)) __obj.updateDynamic("bestRating")(bestRating.get.asInstanceOf[js.Any])
     if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
-    if (ratingValue != null) __obj.updateDynamic("ratingValue")(ratingValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(ratingValue)) __obj.updateDynamic("ratingValue")(ratingValue.get.asInstanceOf[js.Any])
     if (textualRating != null) __obj.updateDynamic("textualRating")(textualRating.asInstanceOf[js.Any])
-    if (worstRating != null) __obj.updateDynamic("worstRating")(worstRating.asInstanceOf[js.Any])
+    if (!js.isUndefined(worstRating)) __obj.updateDynamic("worstRating")(worstRating.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating]
   }
 }

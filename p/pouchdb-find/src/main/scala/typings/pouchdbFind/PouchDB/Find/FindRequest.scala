@@ -24,7 +24,7 @@ trait FindRequest[Content /* <: js.Object */] extends js.Object {
 
 object FindRequest {
   @scala.inline
-  def apply[Content](
+  def apply[/* <: js.Object */ Content](
     selector: Selector,
     fields: js.Array[String] = null,
     limit: js.UndefOr[Double] = js.undefined,

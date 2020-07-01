@@ -12,7 +12,7 @@ trait Children[T /* <: String */, C /* <: js.Array[Node] */] extends js.Object {
 
 object Children {
   @scala.inline
-  def apply[T, C](children: C, `type`: T): Children[T, C] = {
+  def apply[/* <: java.lang.String */ T, /* <: js.Array[typings.unist.mod.Node] */ C](children: C, `type`: T): Children[T, C] = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Children[T, C]]

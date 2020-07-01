@@ -24,6 +24,12 @@ trait MutableClusterInfo extends js.Object {
     
     */
   var EnhancedMonitoring: js.UndefOr[typings.awsSdk.kafkaMod.EnhancedMonitoring] = js.native
+  /**
+    * 
+    The Kafka version.
+    
+    */
+  var KafkaVersion: js.UndefOr[string] = js.native
   var LoggingInfo: js.UndefOr[typings.awsSdk.kafkaMod.LoggingInfo] = js.native
   /**
     * 
@@ -45,6 +51,7 @@ object MutableClusterInfo {
     BrokerEBSVolumeInfo: listOfBrokerEBSVolumeInfo = null,
     ConfigurationInfo: ConfigurationInfo = null,
     EnhancedMonitoring: EnhancedMonitoring = null,
+    KafkaVersion: string = null,
     LoggingInfo: LoggingInfo = null,
     NumberOfBrokerNodes: js.UndefOr[integer] = js.undefined,
     OpenMonitoring: OpenMonitoring = null
@@ -53,6 +60,7 @@ object MutableClusterInfo {
     if (BrokerEBSVolumeInfo != null) __obj.updateDynamic("BrokerEBSVolumeInfo")(BrokerEBSVolumeInfo.asInstanceOf[js.Any])
     if (ConfigurationInfo != null) __obj.updateDynamic("ConfigurationInfo")(ConfigurationInfo.asInstanceOf[js.Any])
     if (EnhancedMonitoring != null) __obj.updateDynamic("EnhancedMonitoring")(EnhancedMonitoring.asInstanceOf[js.Any])
+    if (KafkaVersion != null) __obj.updateDynamic("KafkaVersion")(KafkaVersion.asInstanceOf[js.Any])
     if (LoggingInfo != null) __obj.updateDynamic("LoggingInfo")(LoggingInfo.asInstanceOf[js.Any])
     if (!js.isUndefined(NumberOfBrokerNodes)) __obj.updateDynamic("NumberOfBrokerNodes")(NumberOfBrokerNodes.get.asInstanceOf[js.Any])
     if (OpenMonitoring != null) __obj.updateDynamic("OpenMonitoring")(OpenMonitoring.asInstanceOf[js.Any])

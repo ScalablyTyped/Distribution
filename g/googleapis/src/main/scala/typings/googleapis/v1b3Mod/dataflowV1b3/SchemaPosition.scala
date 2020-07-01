@@ -52,7 +52,7 @@ object SchemaPosition {
     val __obj = js.Dynamic.literal()
     if (byteOffset != null) __obj.updateDynamic("byteOffset")(byteOffset.asInstanceOf[js.Any])
     if (concatPosition != null) __obj.updateDynamic("concatPosition")(concatPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (recordIndex != null) __obj.updateDynamic("recordIndex")(recordIndex.asInstanceOf[js.Any])
     if (shufflePosition != null) __obj.updateDynamic("shufflePosition")(shufflePosition.asInstanceOf[js.Any])

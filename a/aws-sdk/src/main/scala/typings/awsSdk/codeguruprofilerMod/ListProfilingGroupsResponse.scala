@@ -11,11 +11,11 @@ trait ListProfilingGroupsResponse extends js.Object {
     */
   var nextToken: js.UndefOr[PaginationToken] = js.native
   /**
-    * Information about profiling group names.
+    *  A returned list of profiling group names. A list of the names is returned only if includeDescription is false, otherwise a list of  ProfilingGroupDescription  objects is returned. 
     */
   var profilingGroupNames: ProfilingGroupNames = js.native
   /**
-    * Information about profiling groups.
+    *  A returned list  ProfilingGroupDescription  objects. A list of  ProfilingGroupDescription  objects is returned only if includeDescription is true, otherwise a list of profiling group names is returned. 
     */
   var profilingGroups: js.UndefOr[ProfilingGroupDescriptions] = js.native
 }

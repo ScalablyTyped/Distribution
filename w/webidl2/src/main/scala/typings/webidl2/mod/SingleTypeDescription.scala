@@ -6,6 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SingleTypeDescription extends IDLTypeDescription {
+  /** A list of extended attributes. */
+  var extAttrs: js.Array[ExtendedAttribute]
   /** String indicating the generic type (e.g. "Promise", "sequence"). null otherwise. */
   var generic: String | Null
   /**
@@ -28,6 +30,7 @@ trait SingleTypeDescription extends IDLTypeDescription {
 object SingleTypeDescription {
   @scala.inline
   def apply(
+    extAttrs: js.Array[ExtendedAttribute],
     idlType: String,
     nullable: Boolean,
     sequence: Boolean,
@@ -35,7 +38,7 @@ object SingleTypeDescription {
     generic: String = null,
     `type`: String = null
   ): SingleTypeDescription = {
-    val __obj = js.Dynamic.literal(idlType = idlType.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any], union = union.asInstanceOf[js.Any], generic = generic.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any], union = union.asInstanceOf[js.Any], generic = generic.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SingleTypeDescription]
   }

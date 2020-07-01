@@ -15,7 +15,7 @@ trait Tag[T /* <: Context */] extends js.Object
 
 object Tag {
   @scala.inline
-  def BaseTag[T](
+  def BaseTag[/* <: typings.wordpressApiFetch.mod.Schema.Context */ T](
     _links: Record[String, js.Array[Dictk]],
     count: Double,
     description: String,
@@ -32,7 +32,7 @@ object Tag {
     __obj.asInstanceOf[Tag[T]]
   }
   @scala.inline
-  def PickBaseTagTag[T](
+  def PickBaseTagTag[/* <: typings.wordpressApiFetch.mod.Schema.Context */ T](
     _links: Record[String, js.Array[Dictk]],
     id: Double,
     link: String,

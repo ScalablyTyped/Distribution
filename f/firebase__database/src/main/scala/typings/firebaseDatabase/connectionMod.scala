@@ -11,17 +11,19 @@ object connectionMod extends js.Object {
   @js.native
   class Connection protected () extends js.Object {
     /**
-      * @param {!string} id - an id for this connection
-      * @param {!RepoInfo} repoInfo_ - the info for the endpoint to connect to
-      * @param {function(Object)} onMessage_ - the callback to be triggered when a server-push message arrives
-      * @param {function(number, string)} onReady_ - the callback to be triggered when this connection is ready to send messages.
-      * @param {function()} onDisconnect_ - the callback to be triggered when a connection was lost
-      * @param {function(string)} onKill_ - the callback to be triggered when this connection has permanently shut down.
-      * @param {string=} lastSessionId - last session id in persistent connection. is used to clean up old session in real-time server
+      * @param id - an id for this connection
+      * @param repoInfo_ - the info for the endpoint to connect to
+      * @param applicationId_ - the Firebase App ID for this project
+      * @param onMessage_ - the callback to be triggered when a server-push message arrives
+      * @param onReady_ - the callback to be triggered when this connection is ready to send messages.
+      * @param onDisconnect_ - the callback to be triggered when a connection was lost
+      * @param onKill_ - the callback to be triggered when this connection has permanently shut down.
+      * @param lastSessionId - last session id in persistent connection. is used to clean up old session in real-time server
       */
     def this(
       id: String,
       repoInfo_ : RepoInfo,
+      applicationId_ : js.UndefOr[String],
       onMessage_ : js.Function1[/* a */ js.Object, Unit],
       onReady_ : js.Function2[/* a */ Double, /* b */ String, Unit],
       onDisconnect_ : js.Function0[Unit],
@@ -30,12 +32,14 @@ object connectionMod extends js.Object {
     def this(
       id: String,
       repoInfo_ : RepoInfo,
+      applicationId_ : js.UndefOr[String],
       onMessage_ : js.Function1[/* a */ js.Object, Unit],
       onReady_ : js.Function2[/* a */ Double, /* b */ String, Unit],
       onDisconnect_ : js.Function0[Unit],
       onKill_ : js.Function1[/* a */ String, Unit],
       lastSessionId: String
     ) = this()
+    var applicationId_ : js.Any = js.native
     /**
       *
       * @private

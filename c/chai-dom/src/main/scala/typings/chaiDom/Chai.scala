@@ -27,6 +27,7 @@ object Chai extends js.Object {
     def descendants(selector: String): Assertion = js.native
     def html(html: String): Assertion = js.native
     def id(id: String): Assertion = js.native
+    def tagName(name: String): Assertion = js.native
     def text(text: String): Assertion = js.native
     def text(text: js.Array[String]): Assertion = js.native
     def value(text: String): Assertion = js.native

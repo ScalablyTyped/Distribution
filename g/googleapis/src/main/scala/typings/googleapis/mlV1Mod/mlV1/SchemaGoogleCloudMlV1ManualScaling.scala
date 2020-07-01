@@ -20,9 +20,9 @@ trait SchemaGoogleCloudMlV1ManualScaling extends js.Object {
 
 object SchemaGoogleCloudMlV1ManualScaling {
   @scala.inline
-  def apply(nodes: Int | Double = null): SchemaGoogleCloudMlV1ManualScaling = {
+  def apply(nodes: js.UndefOr[Double] = js.undefined): SchemaGoogleCloudMlV1ManualScaling = {
     val __obj = js.Dynamic.literal()
-    if (nodes != null) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodes)) __obj.updateDynamic("nodes")(nodes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudMlV1ManualScaling]
   }
 }

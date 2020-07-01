@@ -27,42 +27,42 @@ package object queriesMod {
     /* container */ typings.std.HTMLElement, 
     /* id */ typings.testingLibraryDom.matchesMod.Matcher, 
     /* options */ js.UndefOr[typings.testingLibraryDom.matchesMod.MatcherOptions], 
-    /* waitForElementOptions */ js.UndefOr[typings.testingLibraryDom.waitForElementMod.WaitForElementOptions], 
+    /* waitForElementOptions */ js.UndefOr[typings.testingLibraryDom.waitForMod.waitForOptions], 
     js.Promise[js.Array[typings.std.HTMLElement]]
   ]
   type FindAllByRole_ = js.Function4[
     /* container */ typings.std.HTMLElement, 
     /* role */ typings.testingLibraryDom.matchesMod.Matcher, 
     /* options */ js.UndefOr[typings.testingLibraryDom.queriesMod.ByRoleOptions], 
-    /* waitForElementOptions */ js.UndefOr[typings.testingLibraryDom.waitForElementMod.WaitForElementOptions], 
+    /* waitForElementOptions */ js.UndefOr[typings.testingLibraryDom.waitForMod.waitForOptions], 
     js.Promise[js.Array[typings.std.HTMLElement]]
   ]
   type FindAllByText_ = js.Function4[
     /* container */ typings.std.HTMLElement, 
     /* id */ typings.testingLibraryDom.matchesMod.Matcher, 
     /* options */ js.UndefOr[typings.testingLibraryDom.queryHelpersMod.SelectorMatcherOptions], 
-    /* waitForElementOptions */ js.UndefOr[typings.testingLibraryDom.waitForElementMod.WaitForElementOptions], 
+    /* waitForElementOptions */ js.UndefOr[typings.testingLibraryDom.waitForMod.waitForOptions], 
     js.Promise[js.Array[typings.std.HTMLElement]]
   ]
   type FindByBoundAttribute = js.Function4[
     /* container */ typings.std.HTMLElement, 
     /* id */ typings.testingLibraryDom.matchesMod.Matcher, 
     /* options */ js.UndefOr[typings.testingLibraryDom.matchesMod.MatcherOptions], 
-    /* waitForElementOptions */ js.UndefOr[typings.testingLibraryDom.waitForElementMod.WaitForElementOptions], 
+    /* waitForElementOptions */ js.UndefOr[typings.testingLibraryDom.waitForMod.waitForOptions], 
     js.Promise[typings.std.HTMLElement]
   ]
   type FindByRole_ = js.Function4[
     /* container */ typings.std.HTMLElement, 
     /* role */ typings.testingLibraryDom.matchesMod.Matcher, 
     /* options */ js.UndefOr[typings.testingLibraryDom.queriesMod.ByRoleOptions], 
-    /* waitForElementOptions */ js.UndefOr[typings.testingLibraryDom.waitForElementMod.WaitForElementOptions], 
+    /* waitForElementOptions */ js.UndefOr[typings.testingLibraryDom.waitForMod.waitForOptions], 
     js.Promise[typings.std.HTMLElement]
   ]
   type FindByText_ = js.Function4[
     /* container */ typings.std.HTMLElement, 
     /* id */ typings.testingLibraryDom.matchesMod.Matcher, 
     /* options */ js.UndefOr[typings.testingLibraryDom.queryHelpersMod.SelectorMatcherOptions], 
-    /* waitForElementOptions */ js.UndefOr[typings.testingLibraryDom.waitForElementMod.WaitForElementOptions], 
+    /* waitForElementOptions */ js.UndefOr[typings.testingLibraryDom.waitForMod.waitForOptions], 
     js.Promise[typings.std.HTMLElement]
   ]
   type GetByBoundAttribute = js.Function3[

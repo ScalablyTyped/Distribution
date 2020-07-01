@@ -11,7 +11,7 @@ trait Cancel[T, U, V /* <: String */] extends js.Object {
 
 object Cancel {
   @scala.inline
-  def apply[T, U, V](cancel: State[T, U, V] => Boolean): Cancel[T, U, V] = {
+  def apply[T, U, /* <: java.lang.String */ V](cancel: State[T, U, V] => Boolean): Cancel[T, U, V] = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel))
     __obj.asInstanceOf[Cancel[T, U, V]]
   }

@@ -44,7 +44,7 @@ object SchemaFilterView {
   @scala.inline
   def apply(
     criteria: StringDictionary[SchemaFilterCriteria] = null,
-    filterViewId: Int | Double = null,
+    filterViewId: js.UndefOr[Double] = js.undefined,
     namedRangeId: String = null,
     range: SchemaGridRange = null,
     sortSpecs: js.Array[SchemaSortSpec] = null,
@@ -52,7 +52,7 @@ object SchemaFilterView {
   ): SchemaFilterView = {
     val __obj = js.Dynamic.literal()
     if (criteria != null) __obj.updateDynamic("criteria")(criteria.asInstanceOf[js.Any])
-    if (filterViewId != null) __obj.updateDynamic("filterViewId")(filterViewId.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterViewId)) __obj.updateDynamic("filterViewId")(filterViewId.get.asInstanceOf[js.Any])
     if (namedRangeId != null) __obj.updateDynamic("namedRangeId")(namedRangeId.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (sortSpecs != null) __obj.updateDynamic("sortSpecs")(sortSpecs.asInstanceOf[js.Any])

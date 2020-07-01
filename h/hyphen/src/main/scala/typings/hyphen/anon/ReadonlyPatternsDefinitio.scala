@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Readonly<hyphen.hyphen/common.PatternsDefinition> */
+/* Inlined std.Readonly<hyphen.hyphen.PatternsDefinition> */
 trait ReadonlyPatternsDefinitio extends js.Object {
   val exceptions: js.Array[String]
   val patterns: js.Array[String]

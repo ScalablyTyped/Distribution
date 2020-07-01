@@ -11,7 +11,7 @@ trait IUtilAnimationOptions extends js.Object {
   /**
     * Value to modify the property by
     */
-  var byValue: Double
+  var byValue: js.UndefOr[Double] = js.undefined
   /**
     * Duration of change (in ms)
     */
@@ -27,7 +27,7 @@ trait IUtilAnimationOptions extends js.Object {
   /**
     * Callback; invoked on every value change
     */
-  var onChange: js.UndefOr[js.Function] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
   /**
     * Callback; invoked when value change is completed
     */
@@ -41,19 +41,20 @@ trait IUtilAnimationOptions extends js.Object {
 object IUtilAnimationOptions {
   @scala.inline
   def apply(
-    byValue: Double,
+    byValue: js.UndefOr[Double] = js.undefined,
     duration: js.UndefOr[Double] = js.undefined,
     easing: js.Function = null,
     endValue: js.UndefOr[Double] = js.undefined,
-    onChange: js.Function = null,
+    onChange: /* value */ Double => Unit = null,
     onComplete: js.Function = null,
     startValue: js.UndefOr[Double] = js.undefined
   ): IUtilAnimationOptions = {
-    val __obj = js.Dynamic.literal(byValue = byValue.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(byValue)) __obj.updateDynamic("byValue")(byValue.get.asInstanceOf[js.Any])
     if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (!js.isUndefined(endValue)) __obj.updateDynamic("endValue")(endValue.get.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange.asInstanceOf[js.Any])
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete.asInstanceOf[js.Any])
     if (!js.isUndefined(startValue)) __obj.updateDynamic("startValue")(startValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUtilAnimationOptions]

@@ -19,7 +19,9 @@ trait FieldOptions[T /* <: String | Double | Boolean | Date | File | GeoPoint | 
 
 object FieldOptions {
   @scala.inline
-  def apply[T](defaultValue: T = null, required: js.UndefOr[Boolean] = js.undefined): FieldOptions[T] = {
+  def apply[/* <: java.lang.String | scala.Double | scala.Boolean | typings.std.Date | typings.parse.mod.global.Parse.File | typings.parse.mod.global.Parse.GeoPoint | typings.parse.mod.global.Parse.Polygon | js.Array[_] | js.Object | typings.parse.mod.global.Parse.Pointer | (typings.parse.mod.global.Parse.Relation[
+  typings.parse.mod.global.Parse.Object[typings.parse.mod.global.Parse.Attributes], 
+  typings.parse.mod.global.Parse.Object[typings.parse.mod.global.Parse.Attributes]]) */ T](defaultValue: T = null, required: js.UndefOr[Boolean] = js.undefined): FieldOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])

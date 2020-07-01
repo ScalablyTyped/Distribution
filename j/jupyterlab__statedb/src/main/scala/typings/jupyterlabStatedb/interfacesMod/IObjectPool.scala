@@ -65,7 +65,7 @@ trait IObjectPool[T /* <: IObservableDisposable */] extends IDisposable {
 
 object IObjectPool {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.luminoDisposable.mod.IObservableDisposable */ T](
     added: ISignal[IObjectPool[T], T],
     currentChanged: ISignal[IObjectPool[T], T | Null],
     dispose: () => Unit,

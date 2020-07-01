@@ -1,6 +1,6 @@
 package typings.gapiClientDrive.gapi.client.drive
 
-import typings.std.Record
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,10 +12,14 @@ trait Channel extends js.Object {
   var expiration: js.UndefOr[String] = js.undefined
   /** A UUID or similar unique string that identifies this channel. */
   var id: js.UndefOr[String] = js.undefined
-  /** Identifies this as a notification channel used to watch for changes to a resource. Value: the fixed string "api#channel". */
+  /** Identifies this as a notification channel used to watch for changes to a resource, which is "api#channel". */
   var kind: js.UndefOr[String] = js.undefined
   /** Additional parameters controlling delivery channel behavior. Optional. */
-  var params: js.UndefOr[Record[String, String]] = js.undefined
+  var params: js.UndefOr[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: string}
+    */ typings.gapiClientDrive.gapiClientDriveStrings.Channel with TopLevel[js.Any]
+  ] = js.undefined
   /** A Boolean value to indicate whether payload is wanted. Optional. */
   var payload: js.UndefOr[Boolean] = js.undefined
   /** An opaque ID that identifies the resource being watched on this channel. Stable across different API versions. */
@@ -35,7 +39,9 @@ object Channel {
     expiration: String = null,
     id: String = null,
     kind: String = null,
-    params: Record[String, String] = null,
+    params: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: string}
+    */ typings.gapiClientDrive.gapiClientDriveStrings.Channel with TopLevel[js.Any] = null,
     payload: js.UndefOr[Boolean] = js.undefined,
     resourceId: String = null,
     resourceUri: String = null,

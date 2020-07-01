@@ -39,6 +39,19 @@ trait Athena extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGetQueryExecutionOutput, Unit]
   ): Request[BatchGetQueryExecutionOutput, AWSError] = js.native
   /**
+    * Creates (registers) a data catalog with the specified name and properties. Catalogs created are visible to all users of the same AWS account.
+    */
+  def createDataCatalog(): Request[CreateDataCatalogOutput, AWSError] = js.native
+  def createDataCatalog(callback: js.Function2[/* err */ AWSError, /* data */ CreateDataCatalogOutput, Unit]): Request[CreateDataCatalogOutput, AWSError] = js.native
+  /**
+    * Creates (registers) a data catalog with the specified name and properties. Catalogs created are visible to all users of the same AWS account.
+    */
+  def createDataCatalog(params: CreateDataCatalogInput): Request[CreateDataCatalogOutput, AWSError] = js.native
+  def createDataCatalog(
+    params: CreateDataCatalogInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateDataCatalogOutput, Unit]
+  ): Request[CreateDataCatalogOutput, AWSError] = js.native
+  /**
     * Creates a named query in the specified workgroup. Requires that you have access to the workgroup. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
     */
   def createNamedQuery(): Request[CreateNamedQueryOutput, AWSError] = js.native
@@ -65,6 +78,19 @@ trait Athena extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateWorkGroupOutput, Unit]
   ): Request[CreateWorkGroupOutput, AWSError] = js.native
   /**
+    * Deletes a data catalog.
+    */
+  def deleteDataCatalog(): Request[DeleteDataCatalogOutput, AWSError] = js.native
+  def deleteDataCatalog(callback: js.Function2[/* err */ AWSError, /* data */ DeleteDataCatalogOutput, Unit]): Request[DeleteDataCatalogOutput, AWSError] = js.native
+  /**
+    * Deletes a data catalog.
+    */
+  def deleteDataCatalog(params: DeleteDataCatalogInput): Request[DeleteDataCatalogOutput, AWSError] = js.native
+  def deleteDataCatalog(
+    params: DeleteDataCatalogInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteDataCatalogOutput, Unit]
+  ): Request[DeleteDataCatalogOutput, AWSError] = js.native
+  /**
     * Deletes the named query if you have access to the workgroup in which the query was saved. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
     */
   def deleteNamedQuery(): Request[DeleteNamedQueryOutput, AWSError] = js.native
@@ -90,6 +116,32 @@ trait Athena extends Service {
     params: DeleteWorkGroupInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteWorkGroupOutput, Unit]
   ): Request[DeleteWorkGroupOutput, AWSError] = js.native
+  /**
+    * Returns the specified data catalog.
+    */
+  def getDataCatalog(): Request[GetDataCatalogOutput, AWSError] = js.native
+  def getDataCatalog(callback: js.Function2[/* err */ AWSError, /* data */ GetDataCatalogOutput, Unit]): Request[GetDataCatalogOutput, AWSError] = js.native
+  /**
+    * Returns the specified data catalog.
+    */
+  def getDataCatalog(params: GetDataCatalogInput): Request[GetDataCatalogOutput, AWSError] = js.native
+  def getDataCatalog(
+    params: GetDataCatalogInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetDataCatalogOutput, Unit]
+  ): Request[GetDataCatalogOutput, AWSError] = js.native
+  /**
+    * Returns a database object for the specfied database and data catalog.
+    */
+  def getDatabase(): Request[GetDatabaseOutput, AWSError] = js.native
+  def getDatabase(callback: js.Function2[/* err */ AWSError, /* data */ GetDatabaseOutput, Unit]): Request[GetDatabaseOutput, AWSError] = js.native
+  /**
+    * Returns a database object for the specfied database and data catalog.
+    */
+  def getDatabase(params: GetDatabaseInput): Request[GetDatabaseOutput, AWSError] = js.native
+  def getDatabase(
+    params: GetDatabaseInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetDatabaseOutput, Unit]
+  ): Request[GetDatabaseOutput, AWSError] = js.native
   /**
     * Returns information about a single query. Requires that you have access to the workgroup in which the query was saved.
     */
@@ -130,6 +182,19 @@ trait Athena extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetQueryResultsOutput, Unit]
   ): Request[GetQueryResultsOutput, AWSError] = js.native
   /**
+    * Returns table metadata for the specified catalog, database, and table.
+    */
+  def getTableMetadata(): Request[GetTableMetadataOutput, AWSError] = js.native
+  def getTableMetadata(callback: js.Function2[/* err */ AWSError, /* data */ GetTableMetadataOutput, Unit]): Request[GetTableMetadataOutput, AWSError] = js.native
+  /**
+    * Returns table metadata for the specified catalog, database, and table.
+    */
+  def getTableMetadata(params: GetTableMetadataInput): Request[GetTableMetadataOutput, AWSError] = js.native
+  def getTableMetadata(
+    params: GetTableMetadataInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetTableMetadataOutput, Unit]
+  ): Request[GetTableMetadataOutput, AWSError] = js.native
+  /**
     * Returns information about the workgroup with the specified name.
     */
   def getWorkGroup(): Request[GetWorkGroupOutput, AWSError] = js.native
@@ -143,12 +208,38 @@ trait Athena extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetWorkGroupOutput, Unit]
   ): Request[GetWorkGroupOutput, AWSError] = js.native
   /**
-    * Provides a list of available query IDs only for queries saved in the specified workgroup. Requires that you have access to the workgroup. If a workgroup is not specified, lists the saved queries for the primary workgroup. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+    * Lists the data catalogs in the current AWS account.
+    */
+  def listDataCatalogs(): Request[ListDataCatalogsOutput, AWSError] = js.native
+  def listDataCatalogs(callback: js.Function2[/* err */ AWSError, /* data */ ListDataCatalogsOutput, Unit]): Request[ListDataCatalogsOutput, AWSError] = js.native
+  /**
+    * Lists the data catalogs in the current AWS account.
+    */
+  def listDataCatalogs(params: ListDataCatalogsInput): Request[ListDataCatalogsOutput, AWSError] = js.native
+  def listDataCatalogs(
+    params: ListDataCatalogsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListDataCatalogsOutput, Unit]
+  ): Request[ListDataCatalogsOutput, AWSError] = js.native
+  /**
+    * Lists the databases in the specified data catalog.
+    */
+  def listDatabases(): Request[ListDatabasesOutput, AWSError] = js.native
+  def listDatabases(callback: js.Function2[/* err */ AWSError, /* data */ ListDatabasesOutput, Unit]): Request[ListDatabasesOutput, AWSError] = js.native
+  /**
+    * Lists the databases in the specified data catalog.
+    */
+  def listDatabases(params: ListDatabasesInput): Request[ListDatabasesOutput, AWSError] = js.native
+  def listDatabases(
+    params: ListDatabasesInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListDatabasesOutput, Unit]
+  ): Request[ListDatabasesOutput, AWSError] = js.native
+  /**
+    * Provides a list of available query IDs only for queries saved in the specified workgroup. Requires that you have access to the specified workgroup. If a workgroup is not specified, lists the saved queries for the primary workgroup. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
     */
   def listNamedQueries(): Request[ListNamedQueriesOutput, AWSError] = js.native
   def listNamedQueries(callback: js.Function2[/* err */ AWSError, /* data */ ListNamedQueriesOutput, Unit]): Request[ListNamedQueriesOutput, AWSError] = js.native
   /**
-    * Provides a list of available query IDs only for queries saved in the specified workgroup. Requires that you have access to the workgroup. If a workgroup is not specified, lists the saved queries for the primary workgroup. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+    * Provides a list of available query IDs only for queries saved in the specified workgroup. Requires that you have access to the specified workgroup. If a workgroup is not specified, lists the saved queries for the primary workgroup. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
     */
   def listNamedQueries(params: ListNamedQueriesInput): Request[ListNamedQueriesOutput, AWSError] = js.native
   def listNamedQueries(
@@ -169,12 +260,25 @@ trait Athena extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListQueryExecutionsOutput, Unit]
   ): Request[ListQueryExecutionsOutput, AWSError] = js.native
   /**
-    * Lists the tags associated with this workgroup.
+    * Lists the metadata for the tables in the specified data catalog database.
+    */
+  def listTableMetadata(): Request[ListTableMetadataOutput, AWSError] = js.native
+  def listTableMetadata(callback: js.Function2[/* err */ AWSError, /* data */ ListTableMetadataOutput, Unit]): Request[ListTableMetadataOutput, AWSError] = js.native
+  /**
+    * Lists the metadata for the tables in the specified data catalog database.
+    */
+  def listTableMetadata(params: ListTableMetadataInput): Request[ListTableMetadataOutput, AWSError] = js.native
+  def listTableMetadata(
+    params: ListTableMetadataInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTableMetadataOutput, Unit]
+  ): Request[ListTableMetadataOutput, AWSError] = js.native
+  /**
+    * Lists the tags associated with an Athena workgroup or data catalog resource.
     */
   def listTagsForResource(): Request[ListTagsForResourceOutput, AWSError] = js.native
   def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceOutput, Unit]): Request[ListTagsForResourceOutput, AWSError] = js.native
   /**
-    * Lists the tags associated with this workgroup.
+    * Lists the tags associated with an Athena workgroup or data catalog resource.
     */
   def listTagsForResource(params: ListTagsForResourceInput): Request[ListTagsForResourceOutput, AWSError] = js.native
   def listTagsForResource(
@@ -195,12 +299,12 @@ trait Athena extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListWorkGroupsOutput, Unit]
   ): Request[ListWorkGroupsOutput, AWSError] = js.native
   /**
-    * Runs the SQL query statements contained in the Query. Requires you to have access to the workgroup in which the query ran. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+    * Runs the SQL query statements contained in the Query. Requires you to have access to the workgroup in which the query ran. Running queries against an external catalog requires GetDataCatalog permission to the catalog. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
     */
   def startQueryExecution(): Request[StartQueryExecutionOutput, AWSError] = js.native
   def startQueryExecution(callback: js.Function2[/* err */ AWSError, /* data */ StartQueryExecutionOutput, Unit]): Request[StartQueryExecutionOutput, AWSError] = js.native
   /**
-    * Runs the SQL query statements contained in the Query. Requires you to have access to the workgroup in which the query ran. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+    * Runs the SQL query statements contained in the Query. Requires you to have access to the workgroup in which the query ran. Running queries against an external catalog requires GetDataCatalog permission to the catalog. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
     */
   def startQueryExecution(params: StartQueryExecutionInput): Request[StartQueryExecutionOutput, AWSError] = js.native
   def startQueryExecution(
@@ -221,12 +325,12 @@ trait Athena extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ StopQueryExecutionOutput, Unit]
   ): Request[StopQueryExecutionOutput, AWSError] = js.native
   /**
-    * Adds one or more tags to the resource, such as a workgroup. A tag is a label that you assign to an AWS Athena resource (a workgroup). Each tag consists of a key and an optional value, both of which you define. Tags enable you to categorize resources (workgroups) in Athena, for example, by purpose, owner, or environment. Use a consistent set of tag keys to make it easier to search and filter workgroups in your account. For best practices, see AWS Tagging Strategies. The key length is from 1 (minimum) to 128 (maximum) Unicode characters in UTF-8. The tag value length is from 0 (minimum) to 256 (maximum) Unicode characters in UTF-8. You can use letters and numbers representable in UTF-8, and the following characters: + - = . _ : / @. Tag keys and values are case-sensitive. Tag keys must be unique per resource. If you specify more than one, separate them by commas.
+    * Adds one or more tags to an Athena resource. A tag is a label that you assign to a resource. In Athena, a resource can be a workgroup or data catalog. Each tag consists of a key and an optional value, both of which you define. For example, you can use tags to categorize Athena workgroups or data catalogs by purpose, owner, or environment. Use a consistent set of tag keys to make it easier to search and filter workgroups or data catalogs in your account. For best practices, see Tagging Best Practices. Tag keys can be from 1 to 128 UTF-8 Unicode characters, and tag values can be from 0 to 256 UTF-8 Unicode characters. Tags can use letters and numbers representable in UTF-8, and the following characters: + - = . _ : / @. Tag keys and values are case-sensitive. Tag keys must be unique per resource. If you specify more than one tag, separate them by commas.
     */
   def tagResource(): Request[TagResourceOutput, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceOutput, Unit]): Request[TagResourceOutput, AWSError] = js.native
   /**
-    * Adds one or more tags to the resource, such as a workgroup. A tag is a label that you assign to an AWS Athena resource (a workgroup). Each tag consists of a key and an optional value, both of which you define. Tags enable you to categorize resources (workgroups) in Athena, for example, by purpose, owner, or environment. Use a consistent set of tag keys to make it easier to search and filter workgroups in your account. For best practices, see AWS Tagging Strategies. The key length is from 1 (minimum) to 128 (maximum) Unicode characters in UTF-8. The tag value length is from 0 (minimum) to 256 (maximum) Unicode characters in UTF-8. You can use letters and numbers representable in UTF-8, and the following characters: + - = . _ : / @. Tag keys and values are case-sensitive. Tag keys must be unique per resource. If you specify more than one, separate them by commas.
+    * Adds one or more tags to an Athena resource. A tag is a label that you assign to a resource. In Athena, a resource can be a workgroup or data catalog. Each tag consists of a key and an optional value, both of which you define. For example, you can use tags to categorize Athena workgroups or data catalogs by purpose, owner, or environment. Use a consistent set of tag keys to make it easier to search and filter workgroups or data catalogs in your account. For best practices, see Tagging Best Practices. Tag keys can be from 1 to 128 UTF-8 Unicode characters, and tag values can be from 0 to 256 UTF-8 Unicode characters. Tags can use letters and numbers representable in UTF-8, and the following characters: + - = . _ : / @. Tag keys and values are case-sensitive. Tag keys must be unique per resource. If you specify more than one tag, separate them by commas.
     */
   def tagResource(params: TagResourceInput): Request[TagResourceOutput, AWSError] = js.native
   def tagResource(
@@ -234,18 +338,31 @@ trait Athena extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceOutput, Unit]
   ): Request[TagResourceOutput, AWSError] = js.native
   /**
-    * Removes one or more tags from the workgroup resource. Takes as an input a list of TagKey Strings separated by commas, and removes their tags at the same time.
+    * Removes one or more tags from a data catalog or workgroup resource.
     */
   def untagResource(): Request[UntagResourceOutput, AWSError] = js.native
   def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceOutput, Unit]): Request[UntagResourceOutput, AWSError] = js.native
   /**
-    * Removes one or more tags from the workgroup resource. Takes as an input a list of TagKey Strings separated by commas, and removes their tags at the same time.
+    * Removes one or more tags from a data catalog or workgroup resource.
     */
   def untagResource(params: UntagResourceInput): Request[UntagResourceOutput, AWSError] = js.native
   def untagResource(
     params: UntagResourceInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceOutput, Unit]
   ): Request[UntagResourceOutput, AWSError] = js.native
+  /**
+    * Updates the data catalog that has the specified name.
+    */
+  def updateDataCatalog(): Request[UpdateDataCatalogOutput, AWSError] = js.native
+  def updateDataCatalog(callback: js.Function2[/* err */ AWSError, /* data */ UpdateDataCatalogOutput, Unit]): Request[UpdateDataCatalogOutput, AWSError] = js.native
+  /**
+    * Updates the data catalog that has the specified name.
+    */
+  def updateDataCatalog(params: UpdateDataCatalogInput): Request[UpdateDataCatalogOutput, AWSError] = js.native
+  def updateDataCatalog(
+    params: UpdateDataCatalogInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateDataCatalogOutput, Unit]
+  ): Request[UpdateDataCatalogOutput, AWSError] = js.native
   /**
     * Updates the workgroup with the specified name. The workgroup's name cannot be changed.
     */

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@wordpress/element" : "2.15.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@wordpress/element" : "2.15.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

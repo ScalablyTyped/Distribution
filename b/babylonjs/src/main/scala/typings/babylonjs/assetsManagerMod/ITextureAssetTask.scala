@@ -14,7 +14,7 @@ trait ITextureAssetTask[TEX /* <: BaseTexture */] extends js.Object {
 
 object ITextureAssetTask {
   @scala.inline
-  def apply[TEX](texture: TEX): ITextureAssetTask[TEX] = {
+  def apply[/* <: typings.babylonjs.baseTextureMod.BaseTexture */ TEX](texture: TEX): ITextureAssetTask[TEX] = {
     val __obj = js.Dynamic.literal(texture = texture.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITextureAssetTask[TEX]]
   }

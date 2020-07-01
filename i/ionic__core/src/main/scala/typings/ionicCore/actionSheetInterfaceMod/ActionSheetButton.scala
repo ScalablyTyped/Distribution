@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait ActionSheetButton extends js.Object {
   var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
-  var handler: js.UndefOr[js.Function0[Boolean | Unit | js.Promise[Boolean]]] = js.undefined
+  var handler: js.UndefOr[js.Function0[Boolean | Unit | (js.Promise[Boolean | Unit])]] = js.undefined
   var icon: js.UndefOr[String] = js.undefined
   var role: js.UndefOr[cancel | destructive | selected | String] = js.undefined
   var text: js.UndefOr[String] = js.undefined
@@ -19,7 +19,7 @@ object ActionSheetButton {
   @scala.inline
   def apply(
     cssClass: String | js.Array[String] = null,
-    handler: () => Boolean | Unit | js.Promise[Boolean] = null,
+    handler: () => Boolean | Unit | (js.Promise[Boolean | Unit]) = null,
     icon: String = null,
     role: cancel | destructive | selected | String = null,
     text: String = null

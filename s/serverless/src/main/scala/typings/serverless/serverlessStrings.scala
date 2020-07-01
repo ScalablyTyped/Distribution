@@ -25,6 +25,9 @@ object serverlessStrings {
   sealed trait delete extends HttpMethod
   
   @js.native
+  sealed trait edge extends js.Object
+  
+  @js.native
   sealed trait get extends HttpMethod
   
   @js.native
@@ -43,7 +46,13 @@ object serverlessStrings {
   sealed trait post extends HttpMethod
   
   @js.native
+  sealed trait `private` extends js.Object
+  
+  @js.native
   sealed trait put extends HttpMethod
+  
+  @js.native
+  sealed trait regional extends js.Object
   
   @scala.inline
   def Allow: Allow = "Allow".asInstanceOf[Allow]
@@ -58,6 +67,8 @@ object serverlessStrings {
   @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
   @scala.inline
+  def edge: edge = "edge".asInstanceOf[edge]
+  @scala.inline
   def get: get = "get".asInstanceOf[get]
   @scala.inline
   def head: head = "head".asInstanceOf[head]
@@ -70,6 +81,10 @@ object serverlessStrings {
   @scala.inline
   def post: post = "post".asInstanceOf[post]
   @scala.inline
+  def `private`: `private` = "private".asInstanceOf[`private`]
+  @scala.inline
   def put: put = "put".asInstanceOf[put]
+  @scala.inline
+  def regional: regional = "regional".asInstanceOf[regional]
 }
 

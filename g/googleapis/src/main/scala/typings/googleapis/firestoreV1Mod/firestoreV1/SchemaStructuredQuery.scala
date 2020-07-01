@@ -60,8 +60,8 @@ object SchemaStructuredQuery {
   def apply(
     endAt: SchemaCursor = null,
     from: js.Array[SchemaCollectionSelector] = null,
-    limit: Int | Double = null,
-    offset: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
+    offset: js.UndefOr[Double] = js.undefined,
     orderBy: js.Array[SchemaOrder] = null,
     select: SchemaProjection = null,
     startAt: SchemaCursor = null,
@@ -70,8 +70,8 @@ object SchemaStructuredQuery {
     val __obj = js.Dynamic.literal()
     if (endAt != null) __obj.updateDynamic("endAt")(endAt.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
     if (startAt != null) __obj.updateDynamic("startAt")(startAt.asInstanceOf[js.Any])

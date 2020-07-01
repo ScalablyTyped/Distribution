@@ -202,6 +202,7 @@ trait Props extends js.Object {
   var isLarge: js.UndefOr[Boolean] = js.undefined
   var isLink: js.UndefOr[Boolean] = js.undefined
   var isPrimary: js.UndefOr[Boolean] = js.undefined
+  var isSecondary: js.UndefOr[Boolean] = js.undefined
   /**
     * Whether or not the menu item is currently selected.
     */

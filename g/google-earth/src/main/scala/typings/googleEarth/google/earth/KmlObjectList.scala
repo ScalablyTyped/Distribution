@@ -17,7 +17,7 @@ trait KmlObjectList[T /* <: KmlObject */] extends js.Object {
 
 object KmlObjectList {
   @scala.inline
-  def apply[T](getLength: () => Double, item: Double => T): KmlObjectList[T] = {
+  def apply[/* <: typings.googleEarth.google.earth.KmlObject */ T](getLength: () => Double, item: Double => T): KmlObjectList[T] = {
     val __obj = js.Dynamic.literal(getLength = js.Any.fromFunction0(getLength), item = js.Any.fromFunction1(item))
     __obj.asInstanceOf[KmlObjectList[T]]
   }

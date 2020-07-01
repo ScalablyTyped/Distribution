@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.elementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
-- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IRemoteEntitySourceDocument because var conflicts: containerAsFolderBase, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.RemoteEntitySourceDocument")
+- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IRemoteEntitySourceDocument because var conflicts: containerAsFolderBase, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined icon */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.RemoteEntitySourceDocument")
 @js.native
 abstract class RemoteEntitySourceDocument protected () extends Document {
   def this(
@@ -34,6 +34,12 @@ abstract class RemoteEntitySourceDocument protected () extends Document {
     isPartial: Boolean,
     container: IFolderBase
   ) = this()
+  /**
+    * In version 8.11.0: added public
+    * In version 8.10.0: introduced
+    */
+  @JSName("icon")
+  val icon_FRemoteEntitySourceDocument: String | Null = js.native
   @JSName("model")
   var model_FRemoteEntitySourceDocument: IModel = js.native
   /**
@@ -51,6 +57,7 @@ abstract class RemoteEntitySourceDocument protected () extends Document {
   def icon(): js.Any = js.native
   def icon(newValue: String): js.Any = js.native
   /**
+    * In version 8.11.0: added public
     * In version 8.10.0: introduced
     */
   @JSName("icon")

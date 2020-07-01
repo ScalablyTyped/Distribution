@@ -20,7 +20,7 @@ trait RequestDef[Content /* <: js.Object */] extends js.Object {
 
 object RequestDef {
   @scala.inline
-  def apply[Content](
+  def apply[/* <: js.Object */ Content](
     selector: Selector,
     aggregate: js.UndefOr[Boolean] = js.undefined,
     fields: js.Array[String] = null,

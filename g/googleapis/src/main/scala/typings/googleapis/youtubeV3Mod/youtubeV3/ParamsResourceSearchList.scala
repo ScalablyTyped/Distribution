@@ -251,7 +251,7 @@ object ParamsResourceSearchList {
     key: String = null,
     location: String = null,
     locationRadius: String = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[Double] = js.undefined,
     oauth_token: String = null,
     onBehalfOfContentOwner: String = null,
     order: String = null,
@@ -286,19 +286,19 @@ object ParamsResourceSearchList {
     if (channelType != null) __obj.updateDynamic("channelType")(channelType.asInstanceOf[js.Any])
     if (eventType != null) __obj.updateDynamic("eventType")(eventType.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(forContentOwner)) __obj.updateDynamic("forContentOwner")(forContentOwner.asInstanceOf[js.Any])
-    if (!js.isUndefined(forDeveloper)) __obj.updateDynamic("forDeveloper")(forDeveloper.asInstanceOf[js.Any])
-    if (!js.isUndefined(forMine)) __obj.updateDynamic("forMine")(forMine.asInstanceOf[js.Any])
+    if (!js.isUndefined(forContentOwner)) __obj.updateDynamic("forContentOwner")(forContentOwner.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forDeveloper)) __obj.updateDynamic("forDeveloper")(forDeveloper.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forMine)) __obj.updateDynamic("forMine")(forMine.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (locationRadius != null) __obj.updateDynamic("locationRadius")(locationRadius.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (onBehalfOfContentOwner != null) __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     if (part != null) __obj.updateDynamic("part")(part.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (publishedAfter != null) __obj.updateDynamic("publishedAfter")(publishedAfter.asInstanceOf[js.Any])
     if (publishedBefore != null) __obj.updateDynamic("publishedBefore")(publishedBefore.asInstanceOf[js.Any])
     if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])

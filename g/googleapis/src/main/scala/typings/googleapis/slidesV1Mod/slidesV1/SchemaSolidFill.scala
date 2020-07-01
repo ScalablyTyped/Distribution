@@ -27,9 +27,9 @@ trait SchemaSolidFill extends js.Object {
 
 object SchemaSolidFill {
   @scala.inline
-  def apply(alpha: Int | Double = null, color: SchemaOpaqueColor = null): SchemaSolidFill = {
+  def apply(alpha: js.UndefOr[Double] = js.undefined, color: SchemaOpaqueColor = null): SchemaSolidFill = {
     val __obj = js.Dynamic.literal()
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSolidFill]
   }

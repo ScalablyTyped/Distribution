@@ -11,7 +11,7 @@ trait UseRowStateCellProps[D /* <: js.Object */] extends js.Object {
 
 object UseRowStateCellProps {
   @scala.inline
-  def apply[D](setState: UseRowUpdater[_] => Unit, state: UseRowStateLocalState[D, _]): UseRowStateCellProps[D] = {
+  def apply[/* <: js.Object */ D](setState: UseRowUpdater[_] => Unit, state: UseRowStateLocalState[D, _]): UseRowStateCellProps[D] = {
     val __obj = js.Dynamic.literal(setState = js.Any.fromFunction1(setState), state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseRowStateCellProps[D]]
   }

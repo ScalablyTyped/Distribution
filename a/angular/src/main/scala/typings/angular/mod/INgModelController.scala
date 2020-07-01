@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 ///////////////////////////////////////////////////////////////////////////
 // NgModelController
-// see http://docs.angularjs.org/api/ng.directive:ngModel.NgModelController
+// see http://docs.angularjs.org/api/ng/type/ngModel.NgModelController
 ///////////////////////////////////////////////////////////////////////////
 @js.native
 trait INgModelController extends js.Object {

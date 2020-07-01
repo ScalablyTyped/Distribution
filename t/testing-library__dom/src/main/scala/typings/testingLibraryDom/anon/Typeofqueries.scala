@@ -20,7 +20,7 @@ import typings.testingLibraryDom.queriesMod.QueryByBoundAttribute
 import typings.testingLibraryDom.queriesMod.QueryByRole_
 import typings.testingLibraryDom.queriesMod.QueryByText_
 import typings.testingLibraryDom.queryHelpersMod.SelectorMatcherOptions
-import typings.testingLibraryDom.waitForElementMod.WaitForElementOptions
+import typings.testingLibraryDom.waitForMod.waitForOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -79,22 +79,22 @@ trait Typeofqueries extends js.Object {
 object Typeofqueries {
   @scala.inline
   def apply(
-    findAllByAltText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[WaitForElementOptions]) => js.Promise[js.Array[HTMLElement]],
-    findAllByDisplayValue: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[WaitForElementOptions]) => js.Promise[js.Array[HTMLElement]],
-    findAllByLabelText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[WaitForElementOptions]) => js.Promise[js.Array[HTMLElement]],
-    findAllByPlaceholderText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[WaitForElementOptions]) => js.Promise[js.Array[HTMLElement]],
-    findAllByRole: (/* container */ HTMLElement, /* role */ Matcher, /* options */ js.UndefOr[ByRoleOptions], /* waitForElementOptions */ js.UndefOr[WaitForElementOptions]) => js.Promise[js.Array[HTMLElement]],
-    findAllByTestId: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[WaitForElementOptions]) => js.Promise[js.Array[HTMLElement]],
-    findAllByText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[WaitForElementOptions]) => js.Promise[js.Array[HTMLElement]],
-    findAllByTitle: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[WaitForElementOptions]) => js.Promise[js.Array[HTMLElement]],
-    findByAltText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[WaitForElementOptions]) => js.Promise[HTMLElement],
-    findByDisplayValue: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[WaitForElementOptions]) => js.Promise[HTMLElement],
-    findByLabelText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[WaitForElementOptions]) => js.Promise[HTMLElement],
-    findByPlaceholderText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[WaitForElementOptions]) => js.Promise[HTMLElement],
-    findByRole: (/* container */ HTMLElement, /* role */ Matcher, /* options */ js.UndefOr[ByRoleOptions], /* waitForElementOptions */ js.UndefOr[WaitForElementOptions]) => js.Promise[HTMLElement],
-    findByTestId: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[WaitForElementOptions]) => js.Promise[HTMLElement],
-    findByText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[WaitForElementOptions]) => js.Promise[HTMLElement],
-    findByTitle: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[WaitForElementOptions]) => js.Promise[HTMLElement],
+    findAllByAltText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
+    findAllByDisplayValue: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
+    findAllByLabelText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
+    findAllByPlaceholderText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
+    findAllByRole: (/* container */ HTMLElement, /* role */ Matcher, /* options */ js.UndefOr[ByRoleOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
+    findAllByTestId: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
+    findAllByText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
+    findAllByTitle: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
+    findByAltText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement],
+    findByDisplayValue: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement],
+    findByLabelText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement],
+    findByPlaceholderText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement],
+    findByRole: (/* container */ HTMLElement, /* role */ Matcher, /* options */ js.UndefOr[ByRoleOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement],
+    findByTestId: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement],
+    findByText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement],
+    findByTitle: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement],
     getAllByAltText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement],
     getAllByDisplayValue: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement],
     getAllByLabelText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => js.Array[HTMLElement],

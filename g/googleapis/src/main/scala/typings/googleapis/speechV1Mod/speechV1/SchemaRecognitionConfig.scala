@@ -139,34 +139,34 @@ trait SchemaRecognitionConfig extends js.Object {
 object SchemaRecognitionConfig {
   @scala.inline
   def apply(
-    audioChannelCount: Int | Double = null,
+    audioChannelCount: js.UndefOr[Double] = js.undefined,
     enableAutomaticPunctuation: js.UndefOr[Boolean] = js.undefined,
     enableSeparateRecognitionPerChannel: js.UndefOr[Boolean] = js.undefined,
     enableWordTimeOffsets: js.UndefOr[Boolean] = js.undefined,
     encoding: String = null,
     languageCode: String = null,
-    maxAlternatives: Int | Double = null,
+    maxAlternatives: js.UndefOr[Double] = js.undefined,
     metadata: SchemaRecognitionMetadata = null,
     model: String = null,
     profanityFilter: js.UndefOr[Boolean] = js.undefined,
-    sampleRateHertz: Int | Double = null,
+    sampleRateHertz: js.UndefOr[Double] = js.undefined,
     speechContexts: js.Array[SchemaSpeechContext] = null,
     useEnhanced: js.UndefOr[Boolean] = js.undefined
   ): SchemaRecognitionConfig = {
     val __obj = js.Dynamic.literal()
-    if (audioChannelCount != null) __obj.updateDynamic("audioChannelCount")(audioChannelCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAutomaticPunctuation)) __obj.updateDynamic("enableAutomaticPunctuation")(enableAutomaticPunctuation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSeparateRecognitionPerChannel)) __obj.updateDynamic("enableSeparateRecognitionPerChannel")(enableSeparateRecognitionPerChannel.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableWordTimeOffsets)) __obj.updateDynamic("enableWordTimeOffsets")(enableWordTimeOffsets.asInstanceOf[js.Any])
+    if (!js.isUndefined(audioChannelCount)) __obj.updateDynamic("audioChannelCount")(audioChannelCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAutomaticPunctuation)) __obj.updateDynamic("enableAutomaticPunctuation")(enableAutomaticPunctuation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSeparateRecognitionPerChannel)) __obj.updateDynamic("enableSeparateRecognitionPerChannel")(enableSeparateRecognitionPerChannel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableWordTimeOffsets)) __obj.updateDynamic("enableWordTimeOffsets")(enableWordTimeOffsets.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (maxAlternatives != null) __obj.updateDynamic("maxAlternatives")(maxAlternatives.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAlternatives)) __obj.updateDynamic("maxAlternatives")(maxAlternatives.get.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (!js.isUndefined(profanityFilter)) __obj.updateDynamic("profanityFilter")(profanityFilter.asInstanceOf[js.Any])
-    if (sampleRateHertz != null) __obj.updateDynamic("sampleRateHertz")(sampleRateHertz.asInstanceOf[js.Any])
+    if (!js.isUndefined(profanityFilter)) __obj.updateDynamic("profanityFilter")(profanityFilter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleRateHertz)) __obj.updateDynamic("sampleRateHertz")(sampleRateHertz.get.asInstanceOf[js.Any])
     if (speechContexts != null) __obj.updateDynamic("speechContexts")(speechContexts.asInstanceOf[js.Any])
-    if (!js.isUndefined(useEnhanced)) __obj.updateDynamic("useEnhanced")(useEnhanced.asInstanceOf[js.Any])
+    if (!js.isUndefined(useEnhanced)) __obj.updateDynamic("useEnhanced")(useEnhanced.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRecognitionConfig]
   }
 }

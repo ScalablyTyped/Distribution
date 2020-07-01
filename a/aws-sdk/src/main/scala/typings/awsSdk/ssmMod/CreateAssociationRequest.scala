@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateAssociationRequest extends js.Object {
   /**
+    * By default, when you create a new associations, the system runs it immediately after it is created and then according to the schedule you specified. Specify this option if you don't want an association to run immediately after you create it.
+    */
+  var ApplyOnlyAtCronInterval: js.UndefOr[typings.awsSdk.ssmMod.ApplyOnlyAtCronInterval] = js.native
+  /**
     * Specify a descriptive name for the association.
     */
   var AssociationName: js.UndefOr[typings.awsSdk.ssmMod.AssociationName] = js.native
@@ -64,6 +68,7 @@ object CreateAssociationRequest {
   @scala.inline
   def apply(
     Name: DocumentARN,
+    ApplyOnlyAtCronInterval: js.UndefOr[ApplyOnlyAtCronInterval] = js.undefined,
     AssociationName: AssociationName = null,
     AutomationTargetParameterName: AutomationTargetParameterName = null,
     ComplianceSeverity: AssociationComplianceSeverity = null,
@@ -78,6 +83,7 @@ object CreateAssociationRequest {
     Targets: Targets = null
   ): CreateAssociationRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
+    if (!js.isUndefined(ApplyOnlyAtCronInterval)) __obj.updateDynamic("ApplyOnlyAtCronInterval")(ApplyOnlyAtCronInterval.get.asInstanceOf[js.Any])
     if (AssociationName != null) __obj.updateDynamic("AssociationName")(AssociationName.asInstanceOf[js.Any])
     if (AutomationTargetParameterName != null) __obj.updateDynamic("AutomationTargetParameterName")(AutomationTargetParameterName.asInstanceOf[js.Any])
     if (ComplianceSeverity != null) __obj.updateDynamic("ComplianceSeverity")(ComplianceSeverity.asInstanceOf[js.Any])

@@ -11,7 +11,7 @@ trait BlankTriple[Q /* <: typings.rdfJs.mod.BaseQuad */] extends js.Object {
 
 object BlankTriple {
   @scala.inline
-  def apply[Q](
+  def apply[/* <: typings.rdfJs.mod.BaseQuad */ Q](
     `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any,
     predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any
   ): BlankTriple[Q] = {

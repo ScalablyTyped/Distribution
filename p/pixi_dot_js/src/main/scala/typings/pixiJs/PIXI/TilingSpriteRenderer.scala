@@ -21,7 +21,7 @@ trait TilingSpriteRenderer extends ObjectRenderer {
   val state: State
   /**
     *
-    * @param {PIXI.TilingSprite} ts tilingSprite to be rendered
+    * @param {PIXI.TilingSprite} ts - tilingSprite to be rendered
     */
   def render(ts: TilingSprite): Unit
 }

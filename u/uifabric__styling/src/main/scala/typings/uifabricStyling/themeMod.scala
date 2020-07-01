@@ -14,6 +14,7 @@ object themeMod extends js.Object {
   def createTheme(theme: IPartialTheme, depComments: Boolean): ITheme = js.native
   def getTheme(): ITheme = js.native
   def getTheme(depComments: Boolean): ITheme = js.native
+  def initializeThemeInCustomizations(): Unit = js.native
   def loadTheme(theme: IPartialTheme): ITheme = js.native
   def loadTheme(theme: IPartialTheme, depComments: Boolean): ITheme = js.native
   def registerOnThemeChangeCallback(callback: js.Function1[/* theme */ ITheme, Unit]): Unit = js.native

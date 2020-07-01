@@ -30,6 +30,13 @@ trait ReactFocusLockProps[ChildrenType, LockProps] extends js.Object {
   var autoFocus: js.UndefOr[Boolean] = js.undefined
   var children: js.UndefOr[ChildrenType] = js.undefined
   var className: js.UndefOr[String] = js.undefined
+  /**
+    * enables aggressive focus capturing within iframes
+    * - once disabled allows focus to move outside of iframe, if enabled inside iframe
+    * - once enabled keep focus in the lock, no matter where lock is active (default)
+    * @default true
+    */
+  var crossFrame: js.UndefOr[Boolean] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   /**
     * named focus group for focus scattering aka combined lock targets
@@ -83,6 +90,7 @@ object ReactFocusLockProps {
     autoFocus: js.UndefOr[Boolean] = js.undefined,
     children: ChildrenType = null,
     className: String = null,
+    crossFrame: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     group: String = null,
     lockProps: LockProps = null,
@@ -101,6 +109,7 @@ object ReactFocusLockProps {
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(crossFrame)) __obj.updateDynamic("crossFrame")(crossFrame.get.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (lockProps != null) __obj.updateDynamic("lockProps")(lockProps.asInstanceOf[js.Any])

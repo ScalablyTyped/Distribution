@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@testing-library/dom/queries", "findAllByPlaceholderText")
+@JSImport("@testing-library/dom/types/queries", "findAllByPlaceholderText")
 @js.native
 object findAllByPlaceholderText extends TopLevel[FindAllByBoundAttribute]
 

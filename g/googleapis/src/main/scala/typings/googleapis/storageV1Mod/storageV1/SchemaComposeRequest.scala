@@ -1,6 +1,6 @@
 package typings.googleapis.storageV1Mod.storageV1
 
-import typings.googleapis.AnonGeneration
+import typings.googleapis.anon.Generation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,16 +22,12 @@ trait SchemaComposeRequest extends js.Object {
     * The list of source objects that will be concatenated into a single
     * object.
     */
-  var sourceObjects: js.UndefOr[js.Array[AnonGeneration]] = js.native
+  var sourceObjects: js.UndefOr[js.Array[Generation]] = js.native
 }
 
 object SchemaComposeRequest {
   @scala.inline
-  def apply(
-    destination: SchemaObject = null,
-    kind: String = null,
-    sourceObjects: js.Array[AnonGeneration] = null
-  ): SchemaComposeRequest = {
+  def apply(destination: SchemaObject = null, kind: String = null, sourceObjects: js.Array[Generation] = null): SchemaComposeRequest = {
     val __obj = js.Dynamic.literal()
     if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])

@@ -21,7 +21,7 @@ trait RSAKeyPairOptions[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] exten
 
 object RSAKeyPairOptions {
   @scala.inline
-  def apply[PubF, PrivF](
+  def apply[/* <: typings.node.cryptoMod.KeyFormat */ PubF, /* <: typings.node.cryptoMod.KeyFormat */ PrivF](
     modulusLength: Double,
     privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with Type,
     publicKeyEncoding: Format[PubF],

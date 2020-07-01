@@ -82,7 +82,7 @@ class Map_ protected () extends Evented {
     */
   def invalidateSize(): this.type = js.native
   def invalidateSize(options: Boolean): this.type = js.native
-  def invalidateSize(options: ZoomPanOptions): this.type = js.native
+  def invalidateSize(options: InvalidateSizeOptions): this.type = js.native
   def latLngToContainerPoint(latlng: LatLngExpression): Point_ = js.native
   def latLngToLayerPoint(latlng: LatLngExpression): Point_ = js.native
   def layerPointToContainerPoint(point: PointExpression): Point_ = js.native

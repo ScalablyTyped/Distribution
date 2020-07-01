@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the Section object, for use in "section.set({ ... })". */
+/** An interface for updating data on the Section object, for use in `section.set({ ... })`. */
 trait SectionUpdateData extends js.Object {
   /**
     *

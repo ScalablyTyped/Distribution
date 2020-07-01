@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@testing-library/dom/events", "fireEvent")
+@JSImport("@testing-library/dom/types/events", "fireEvent")
 @js.native
 object fireEvent extends TopLevel[FireFunction with FireObject]
 

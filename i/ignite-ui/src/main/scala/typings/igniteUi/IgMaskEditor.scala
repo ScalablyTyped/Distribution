@@ -121,7 +121,7 @@ trait IgMaskEditor
     */
   var inputName: js.UndefOr[String] = js.undefined
   /**
-    * Sets the ability to allow values only set into the list items. This validation is done only when the editor is blured, or enter key is pressed
+    * Sets the ability to allow values only set into the list items. This validation is done only when the editor is blurred, or enter key is pressed
     */
   var isLimitedToListValues: js.UndefOr[Boolean] = js.undefined
   /**
@@ -167,7 +167,7 @@ trait IgMaskEditor
     */
   var placeHolder: js.UndefOr[String] = js.undefined
   /**
-    * Gets/Sets if the editor should prevent form submition when enter key is pressed.
+    * Gets/Sets if the editor should prevent form submit when enter key is pressed.
     *
     */
   var preventSubmitOnEnter: js.UndefOr[Boolean] = js.undefined
@@ -182,7 +182,7 @@ trait IgMaskEditor
     */
   var regional: js.UndefOr[String | js.Object] = js.undefined
   /**
-    * Gets/Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the opiton is set to false, editor calls clear functionality.
+    * Gets/Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the option is set to false, editor calls clear functionality.
     *
     */
   var revertIfNotValid: js.UndefOr[Boolean] = js.undefined
@@ -191,14 +191,14 @@ trait IgMaskEditor
     *
     *
     * Valid values:
-    * "selectAll" Setting this option will select all the text into the editor when the edit mode gets enetered.
-    * "atStart" Setting this option will move the cursor at the begining the text into the editor when the edit mode gets enetered.
-    * "atEnd" Setting this option will move the cursor at the end the text into the editor when the edit mode gets enetered.
+    * "selectAll" Setting this option will select all the text into the editor when the edit mode gets entered.
+    * "atStart" Setting this option will move the cursor at the beginning the text into the editor when the edit mode gets entered.
+    * "atEnd" Setting this option will move the cursor at the end the text into the editor when the edit mode gets entered.
     * "browserDefault" Setting this option won't do any extra logic, but proceed with the browser default behavior.
     */
   var selectionOnFocus: js.UndefOr[String] = js.undefined
   /**
-    * Gets/Sets the ability of the editor to automatically change the hoverd item into the opened dropdown list to its oposide side.
+    * Gets/Sets the ability of the editor to automatically change the hovered item into the opened dropdown list to its opposite side.
     */
   var spinWrapAround: js.UndefOr[Boolean] = js.undefined
   var suppressKeyboard: js.UndefOr[Boolean] = js.undefined

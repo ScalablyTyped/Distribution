@@ -188,6 +188,13 @@ trait SecuredApiKeyRestrictions extends js.Object {
     */
   val minimumAroundRadius: js.UndefOr[Double] = js.undefined
   /**
+    * List of supported languages with their associated language ISO code.
+    *
+    * Apply a set of natural language best practices such asignorePlurals,
+    * removeStopWords, removeWordsIfNoResults, analyticsTags and ruleContexts.
+    */
+  val naturalLanguages: js.UndefOr[js.Array[String]] = js.undefined
+  /**
     * Filter on numeric attributes.
     */
   val numericFilters: js.UndefOr[String | (js.Array[js.Array[String] | String])] = js.undefined
@@ -350,6 +357,7 @@ object SecuredApiKeyRestrictions {
     minWordSizefor1Typo: js.UndefOr[Double] = js.undefined,
     minWordSizefor2Typos: js.UndefOr[Double] = js.undefined,
     minimumAroundRadius: js.UndefOr[Double] = js.undefined,
+    naturalLanguages: js.Array[String] = null,
     numericFilters: String | (js.Array[js.Array[String] | String]) = null,
     offset: js.UndefOr[Double] = js.undefined,
     optionalFilters: String | (js.Array[js.Array[String] | String]) = null,
@@ -418,6 +426,7 @@ object SecuredApiKeyRestrictions {
     if (!js.isUndefined(minWordSizefor1Typo)) __obj.updateDynamic("minWordSizefor1Typo")(minWordSizefor1Typo.get.asInstanceOf[js.Any])
     if (!js.isUndefined(minWordSizefor2Typos)) __obj.updateDynamic("minWordSizefor2Typos")(minWordSizefor2Typos.get.asInstanceOf[js.Any])
     if (!js.isUndefined(minimumAroundRadius)) __obj.updateDynamic("minimumAroundRadius")(minimumAroundRadius.get.asInstanceOf[js.Any])
+    if (naturalLanguages != null) __obj.updateDynamic("naturalLanguages")(naturalLanguages.asInstanceOf[js.Any])
     if (numericFilters != null) __obj.updateDynamic("numericFilters")(numericFilters.asInstanceOf[js.Any])
     if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (optionalFilters != null) __obj.updateDynamic("optionalFilters")(optionalFilters.asInstanceOf[js.Any])

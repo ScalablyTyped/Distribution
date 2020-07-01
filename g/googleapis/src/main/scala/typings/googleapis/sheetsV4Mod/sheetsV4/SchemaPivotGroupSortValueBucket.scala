@@ -29,10 +29,10 @@ trait SchemaPivotGroupSortValueBucket extends js.Object {
 
 object SchemaPivotGroupSortValueBucket {
   @scala.inline
-  def apply(buckets: js.Array[SchemaExtendedValue] = null, valuesIndex: Int | Double = null): SchemaPivotGroupSortValueBucket = {
+  def apply(buckets: js.Array[SchemaExtendedValue] = null, valuesIndex: js.UndefOr[Double] = js.undefined): SchemaPivotGroupSortValueBucket = {
     val __obj = js.Dynamic.literal()
     if (buckets != null) __obj.updateDynamic("buckets")(buckets.asInstanceOf[js.Any])
-    if (valuesIndex != null) __obj.updateDynamic("valuesIndex")(valuesIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(valuesIndex)) __obj.updateDynamic("valuesIndex")(valuesIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPivotGroupSortValueBucket]
   }
 }

@@ -26,6 +26,7 @@ object Props {
     isLarge: js.UndefOr[Boolean] = js.undefined,
     isLink: js.UndefOr[Boolean] = js.undefined,
     isPrimary: js.UndefOr[Boolean] = js.undefined,
+    isSecondary: js.UndefOr[Boolean] = js.undefined,
     isSmall: js.UndefOr[Boolean] = js.undefined,
     isTertiary: js.UndefOr[Boolean] = js.undefined,
     isToggled: js.UndefOr[Boolean] = js.undefined
@@ -40,6 +41,7 @@ object Props {
     if (!js.isUndefined(isLarge)) __obj.updateDynamic("isLarge")(isLarge.get.asInstanceOf[js.Any])
     if (!js.isUndefined(isLink)) __obj.updateDynamic("isLink")(isLink.get.asInstanceOf[js.Any])
     if (!js.isUndefined(isPrimary)) __obj.updateDynamic("isPrimary")(isPrimary.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSecondary)) __obj.updateDynamic("isSecondary")(isSecondary.get.asInstanceOf[js.Any])
     if (!js.isUndefined(isSmall)) __obj.updateDynamic("isSmall")(isSmall.get.asInstanceOf[js.Any])
     if (!js.isUndefined(isTertiary)) __obj.updateDynamic("isTertiary")(isTertiary.get.asInstanceOf[js.Any])
     if (!js.isUndefined(isToggled)) __obj.updateDynamic("isToggled")(isToggled.get.asInstanceOf[js.Any])
@@ -56,6 +58,7 @@ object Props {
     isLarge: js.UndefOr[Boolean] = js.undefined,
     isLink: js.UndefOr[Boolean] = js.undefined,
     isPrimary: js.UndefOr[Boolean] = js.undefined,
+    isSecondary: js.UndefOr[Boolean] = js.undefined,
     isSmall: js.UndefOr[Boolean] = js.undefined,
     isTertiary: js.UndefOr[Boolean] = js.undefined,
     isToggled: js.UndefOr[Boolean] = js.undefined
@@ -70,6 +73,7 @@ object Props {
     if (!js.isUndefined(isLarge)) __obj.updateDynamic("isLarge")(isLarge.get.asInstanceOf[js.Any])
     if (!js.isUndefined(isLink)) __obj.updateDynamic("isLink")(isLink.get.asInstanceOf[js.Any])
     if (!js.isUndefined(isPrimary)) __obj.updateDynamic("isPrimary")(isPrimary.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSecondary)) __obj.updateDynamic("isSecondary")(isSecondary.get.asInstanceOf[js.Any])
     if (!js.isUndefined(isSmall)) __obj.updateDynamic("isSmall")(isSmall.get.asInstanceOf[js.Any])
     if (!js.isUndefined(isTertiary)) __obj.updateDynamic("isTertiary")(isTertiary.get.asInstanceOf[js.Any])
     if (!js.isUndefined(isToggled)) __obj.updateDynamic("isToggled")(isToggled.get.asInstanceOf[js.Any])

@@ -42,7 +42,7 @@ trait IDirective[TScope /* <: IScope */, TElement /* <: JQLite */, TAttributes /
 
 object IDirective {
   @scala.inline
-  def apply[TScope, TElement, TAttributes, TController](
+  def apply[/* <: typings.angular.mod.IScope */ TScope, /* <: typings.angular.JQLite */ TElement, /* <: typings.angular.mod.IAttributes */ TAttributes, /* <: typings.angular.mod.IDirectiveController */ TController](
     bindToController: Boolean | StringDictionary[String] = null,
     compile: (TElement, TAttributes, /* transclude */ ITranscludeFunction) => Unit | (IDirectiveLinkFn[TScope, TElement, TAttributes, TController]) | (IDirectivePrePost[TScope, TElement, TAttributes, TController]) = null,
     controller: String | Injectable[IControllerConstructor] = null,

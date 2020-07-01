@@ -2,10 +2,9 @@ package typings.antd
 
 import typings.antd.anon.Cancel
 import typings.antd.anon.InsertExtraNode
-import typings.antd.antdStrings.`ant-click-animating-without-extra-node`
-import typings.antd.antdStrings.`ant-click-animating`
 import typings.antd.configProviderContextMod.ConfigConsumerProps
 import typings.react.mod.Component
+import typings.react.mod.Context
 import typings.react.mod.ReactNode
 import typings.std.AnimationEvent
 import typings.std.HTMLElement
@@ -22,6 +21,8 @@ object waveMod extends js.Object {
     var animationStart: js.Any = js.native
     var animationStartId: js.Any = js.native
     var clickWaveTimeoutId: js.Any = js.native
+    @JSName("context")
+    var context_Wave: ConfigConsumerProps = js.native
     var csp: js.UndefOr[js.Any] = js.native
     var destroyed: js.Any = js.native
     var extraNode: js.Any = js.native
@@ -31,7 +32,7 @@ object waveMod extends js.Object {
     def componentDidMount_MWave(): Unit = js.native
     @JSName("componentWillUnmount")
     def componentWillUnmount_MWave(): Unit = js.native
-    def getAttributeName(): `ant-click-animating` | `ant-click-animating-without-extra-node` = js.native
+    def getAttributeName(): String = js.native
     def onClick(node: HTMLElement, waveColor: String): Unit = js.native
     def onTransitionEnd(e: AnimationEvent): Unit = js.native
     def onTransitionStart(e: AnimationEvent): Unit = js.native
@@ -41,6 +42,12 @@ object waveMod extends js.Object {
   
   @js.native
   class default () extends Wave
+  
+  /* static members */
+  @js.native
+  object default extends js.Object {
+    var contextType: Context[ConfigConsumerProps] = js.native
+  }
   
 }
 

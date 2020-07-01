@@ -44,14 +44,14 @@ trait SchemaServiceSpec extends js.Object {
 object SchemaServiceSpec {
   @scala.inline
   def apply(
-    generation: Int | Double = null,
+    generation: js.UndefOr[Double] = js.undefined,
     manual: SchemaServiceSpecManualType = null,
     pinned: SchemaServiceSpecPinnedType = null,
     release: SchemaServiceSpecReleaseType = null,
     runLatest: SchemaServiceSpecRunLatest = null
   ): SchemaServiceSpec = {
     val __obj = js.Dynamic.literal()
-    if (generation != null) __obj.updateDynamic("generation")(generation.asInstanceOf[js.Any])
+    if (!js.isUndefined(generation)) __obj.updateDynamic("generation")(generation.get.asInstanceOf[js.Any])
     if (manual != null) __obj.updateDynamic("manual")(manual.asInstanceOf[js.Any])
     if (pinned != null) __obj.updateDynamic("pinned")(pinned.asInstanceOf[js.Any])
     if (release != null) __obj.updateDynamic("release")(release.asInstanceOf[js.Any])

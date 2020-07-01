@@ -1,5 +1,7 @@
 package typings.kefir.anon
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.kefir.mod.Stream_
 import typings.kefir.mod.ValueOfAnObservable
 import scala.scalajs.js
@@ -44,6 +46,10 @@ trait FnCallObssObssPCombinator extends js.Object {
         /* import warning: importer.ImportType#apply Failed type conversion: T[7] */ js.Any
       ]
     ], 
+    _
+  ] = js.native
+  def apply[T /* <: StringDictionary[typings.kefir.mod.Observable[_, _]] */, K /* <: StringDictionary[typings.kefir.mod.Observable[_, _]] */](obss: T, passiveObss: K): Stream_[
+    typings.kefir.kefirStrings.FnCallObssObssPCombinator with TopLevel[T] with TopLevel[K], 
     _
   ] = js.native
   def apply[T /* <: js.Array[typings.kefir.mod.Observable[_, _]] */, P /* <: js.Array[typings.kefir.mod.Observable[_, _]] */, K](

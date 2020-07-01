@@ -9,6 +9,7 @@ import typings.emberTestHelpers.triggerKeyEventMod.KeyEvent
 import typings.emberTestHelpers.triggerKeyEventMod.KeyModifiers
 import typings.emberTestHelpers.waitForMod.Options
 import typings.std.Element
+import typings.std.MouseEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +20,11 @@ object mod extends js.Object {
   def blur(target: Target): js.Promise[Unit] = js.native
   def clearRender(): js.Promise[Unit] = js.native
   def click(target: Target): js.Promise[Unit] = js.native
+  def click(target: Target, options: MouseEventInit): js.Promise[Unit] = js.native
   def currentRouteName(): String = js.native
   def currentURL(): String = js.native
   def doubleClick(target: Target): js.Promise[Unit] = js.native
+  def doubleClick(target: Target, options: MouseEventInit): js.Promise[Unit] = js.native
   def fillIn(target: Target, text: String): js.Promise[Unit] = js.native
   def find(selector: String): Element | Null = js.native
   def findAll(selector: String): js.Array[Element] = js.native
@@ -46,6 +49,7 @@ object mod extends js.Object {
   def setupContext[C /* <: js.Object */](context: C, options: Resolver): js.Promise[C] = js.native
   def setupRenderingContext[Context /* <: js.Object */](context: Context): js.Promise[Context] = js.native
   def tap(target: Target): js.Promise[Unit] = js.native
+  def tap(target: Target, options: js.Object): js.Promise[Unit] = js.native
   def teardownApplicationContext(context: js.Object): js.Promise[Unit] = js.native
   def teardownContext(context: js.Object): js.Promise[Unit] = js.native
   def teardownRenderingContext(context: js.Object): js.Promise[Unit] = js.native

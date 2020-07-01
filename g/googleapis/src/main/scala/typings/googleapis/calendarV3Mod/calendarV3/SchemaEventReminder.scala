@@ -28,10 +28,10 @@ trait SchemaEventReminder extends js.Object {
 
 object SchemaEventReminder {
   @scala.inline
-  def apply(method: String = null, minutes: Int | Double = null): SchemaEventReminder = {
+  def apply(method: String = null, minutes: js.UndefOr[Double] = js.undefined): SchemaEventReminder = {
     val __obj = js.Dynamic.literal()
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (minutes != null) __obj.updateDynamic("minutes")(minutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(minutes)) __obj.updateDynamic("minutes")(minutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEventReminder]
   }
 }

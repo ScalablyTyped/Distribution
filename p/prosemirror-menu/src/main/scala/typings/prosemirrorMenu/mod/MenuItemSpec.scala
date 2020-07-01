@@ -21,23 +21,18 @@ trait MenuItemSpec[S /* <: Schema[_, _] */] extends js.Object {
   /**
     * Optionally adds a CSS class to the item's DOM representation.
     */
-  var `class`: String
+  var `class`: js.UndefOr[String] = js.undefined
   /**
     * Optionally adds a string of inline CSS to the item's DOM
     * representation.
     */
-  var css: String
+  var css: js.UndefOr[String] = js.undefined
   /**
     * Function that is used to determine if the item is enabled. If
     * given and returning false, the item will be given a disabled
     * styling.
     */
   var enable: js.UndefOr[(js.Function1[/* p */ EditorState[S], Boolean]) | Null] = js.undefined
-  /**
-    * Defines which event on the command's DOM representation should
-    * trigger the execution of the command. Defaults to mousedown.
-    */
-  var execEvent: String
   /**
     * Describes an icon to show for this item. The object may specify
     * an SVG icon, in which case its `path` property should be an [SVG
@@ -78,12 +73,11 @@ trait MenuItemSpec[S /* <: Schema[_, _] */] extends js.Object {
 
 object MenuItemSpec {
   @scala.inline
-  def apply[S](
-    `class`: String,
-    css: String,
-    execEvent: String,
+  def apply[/* <: typings.prosemirrorModel.mod.Schema[_, _] */ S](
     run: (EditorState[S], js.Function1[/* p */ Transaction[S], Unit], EditorView[S], Event) => Unit,
     active: js.UndefOr[Null | (/* p */ EditorState[S] => Boolean)] = js.undefined,
+    `class`: String = null,
+    css: String = null,
     enable: js.UndefOr[Null | (/* p */ EditorState[S] => Boolean)] = js.undefined,
     icon: js.UndefOr[Null | StringDictionary[js.Any]] = js.undefined,
     label: js.UndefOr[Null | String] = js.undefined,
@@ -91,9 +85,10 @@ object MenuItemSpec {
     select: js.UndefOr[Null | (/* p */ EditorState[S] => Boolean)] = js.undefined,
     title: js.UndefOr[Null | String | (js.Function1[/* p */ EditorState[S], String])] = js.undefined
   ): MenuItemSpec[S] = {
-    val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], execEvent = execEvent.asInstanceOf[js.Any], run = js.Any.fromFunction4(run))
-    __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(run = js.Any.fromFunction4(run))
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(if (active != null) js.Any.fromFunction1(active.asInstanceOf[/* p */ EditorState[S] => Boolean]) else null)
+    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
+    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(if (enable != null) js.Any.fromFunction1(enable.asInstanceOf[/* p */ EditorState[S] => Boolean]) else null)
     if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (!js.isUndefined(label)) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])

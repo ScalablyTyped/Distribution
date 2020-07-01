@@ -18,7 +18,7 @@ trait SelectionModel[T /* <: SlickData */, E] extends js.Object {
 
 object SelectionModel {
   @scala.inline
-  def apply[T, E](destroy: () => Unit, init: Grid[T] => Unit, onSelectedRangesChanged: Event[E]): SelectionModel[T, E] = {
+  def apply[/* <: typings.slickgrid.Slick.SlickData */ T, E](destroy: () => Unit, init: Grid[T] => Unit, onSelectedRangesChanged: Event[E]): SelectionModel[T, E] = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), init = js.Any.fromFunction1(init), onSelectedRangesChanged = onSelectedRangesChanged.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionModel[T, E]]
   }

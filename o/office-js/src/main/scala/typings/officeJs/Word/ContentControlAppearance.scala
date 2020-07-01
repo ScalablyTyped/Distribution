@@ -17,7 +17,6 @@ sealed trait ContentControlAppearance extends js.Object
 @js.native
 object ContentControlAppearance extends js.Object {
   /**
-    *
     * Represents a content control shown as a shaded rectangle or bounding box (with optional title).
     *
     */
@@ -25,7 +24,6 @@ object ContentControlAppearance extends js.Object {
   sealed trait boundingBox extends ContentControlAppearance
   
   /**
-    *
     * Represents a content control that is not shown.
     *
     */
@@ -33,7 +31,6 @@ object ContentControlAppearance extends js.Object {
   sealed trait hidden extends ContentControlAppearance
   
   /**
-    *
     * Represents a content control shown as start and end markers.
     *
     */

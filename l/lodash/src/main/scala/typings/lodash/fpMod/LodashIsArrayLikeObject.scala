@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashIsArrayLikeObject extends js.Object {
+trait LodashIsArrayLikeObject extends LodashConvertible {
   // tslint:disable-next-line:ban-types (type guard doesn't seem to work correctly without the Function type)
   def apply(): /* is never */ Boolean = js.native
   def apply(value: String): /* is never */ Boolean = js.native

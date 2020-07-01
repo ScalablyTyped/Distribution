@@ -27,12 +27,12 @@ object SchemaListReferenceImagesResponse {
   @scala.inline
   def apply(
     nextPageToken: String = null,
-    pageSize: Int | Double = null,
+    pageSize: js.UndefOr[Double] = js.undefined,
     referenceImages: js.Array[SchemaReferenceImage] = null
   ): SchemaListReferenceImagesResponse = {
     val __obj = js.Dynamic.literal()
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (referenceImages != null) __obj.updateDynamic("referenceImages")(referenceImages.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListReferenceImagesResponse]
   }

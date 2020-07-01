@@ -11,7 +11,7 @@ trait NavigationState[T /* <: Route */] extends js.Object {
 
 object NavigationState {
   @scala.inline
-  def apply[T](index: Double, routes: js.Array[T]): NavigationState[T] = {
+  def apply[/* <: typings.reactNativeTabView.typesMod.Route */ T](index: Double, routes: js.Array[T]): NavigationState[T] = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationState[T]]
   }

@@ -13,7 +13,7 @@ trait Sql[TParams /* <: js.Object */] extends js.Object {
 
 object Sql {
   @scala.inline
-  def apply[TParams](
+  def apply[/* <: js.Object */ TParams](
     sql: String,
     values: js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: TParams[keyof TParams] */ js.Any

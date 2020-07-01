@@ -1,10 +1,10 @@
 package typings.echarts.echarts.EChartOption.SeriesPie
 
 import typings.echarts.anon.BorderType
-import typings.echarts.anon.ExtraCssText
-import typings.echarts.anon.LabelPadding
-import typings.echarts.anon.LineHeight
+import typings.echarts.anon.FontWeight
+import typings.echarts.anon.LabelLineHeight
 import typings.echarts.anon.Smooth
+import typings.echarts.echarts.EChartOption.BaseTooltip
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait DataObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis
     */
-  var emphasis: js.UndefOr[LabelPadding] = js.undefined
+  var emphasis: js.UndefOr[LabelLineHeight] = js.undefined
   /**
     * Graphic style of , `emphasis` is the style when it is highlighted,
     * like being hovered by mouse, or highlighted via legend connect.
@@ -28,7 +28,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.data.label
     */
-  var label: js.UndefOr[LineHeight] = js.undefined
+  var label: js.UndefOr[FontWeight] = js.undefined
   /**
     * The style of visual guide line.
     *
@@ -56,7 +56,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.data.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
   /**
     * Data value.
     *
@@ -69,13 +69,13 @@ trait DataObject extends js.Object {
 object DataObject {
   @scala.inline
   def apply(
-    emphasis: LabelPadding = null,
+    emphasis: LabelLineHeight = null,
     itemStyle: BorderType = null,
-    label: LineHeight = null,
+    label: FontWeight = null,
     labelLine: Smooth = null,
     name: String = null,
     selected: js.UndefOr[Boolean] = js.undefined,
-    tooltip: ExtraCssText = null,
+    tooltip: BaseTooltip = null,
     value: js.UndefOr[Double] = js.undefined
   ): DataObject = {
     val __obj = js.Dynamic.literal()

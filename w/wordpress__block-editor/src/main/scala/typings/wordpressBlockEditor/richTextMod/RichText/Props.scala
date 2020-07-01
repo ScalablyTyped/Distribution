@@ -431,7 +431,7 @@ trait Props[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union t
 
 object Props {
   @scala.inline
-  def apply[T](
+  def apply[/* <: / * import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 * / js.Any */ T](
     onChange: String => Unit,
     value: String,
     about: String = null,

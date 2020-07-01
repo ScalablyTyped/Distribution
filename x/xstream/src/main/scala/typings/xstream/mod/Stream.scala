@@ -16,7 +16,7 @@ class Stream[T] () extends InternalListener[T] {
   var _ils: js.Array[InternalListener[T]] = js.native
   var _prod: InternalProducer[T] = js.native
   var _stopID: js.Any = js.native
-  var _target: Stream[T] = js.native
+  var _target: Stream[T] | Null = js.native
   var ctor: js.Any = js.native
   def _add(il: InternalListener[T]): Unit = js.native
   /* CompleteClass */

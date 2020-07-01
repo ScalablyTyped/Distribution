@@ -50,7 +50,7 @@ object ParamsResourceProjectsBrokersV2ServiceInstancesPatch {
   ): ParamsResourceProjectsBrokersV2ServiceInstancesPatch = {
     val __obj = js.Dynamic.literal()
     if ($Dotxgafv != null) __obj.updateDynamic("$.xgafv")($Dotxgafv.asInstanceOf[js.Any])
-    if (!js.isUndefined(acceptsIncomplete)) __obj.updateDynamic("acceptsIncomplete")(acceptsIncomplete.asInstanceOf[js.Any])
+    if (!js.isUndefined(acceptsIncomplete)) __obj.updateDynamic("acceptsIncomplete")(acceptsIncomplete.get.asInstanceOf[js.Any])
     if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
@@ -59,7 +59,7 @@ object ParamsResourceProjectsBrokersV2ServiceInstancesPatch {
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (requestBody != null) __obj.updateDynamic("requestBody")(requestBody.asInstanceOf[js.Any])
     if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])

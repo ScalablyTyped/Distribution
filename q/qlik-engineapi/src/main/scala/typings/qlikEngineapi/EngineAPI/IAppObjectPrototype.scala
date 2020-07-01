@@ -11,7 +11,7 @@ trait IAppObjectPrototype[P /* <: IGenericObjectProperties */, O /* <: IGenericO
 
 object IAppObjectPrototype {
   @scala.inline
-  def apply[P, O](createObject: P => js.Promise[O], createSessionObject: P => js.Promise[O]): IAppObjectPrototype[P, O] = {
+  def apply[/* <: typings.qlikEngineapi.EngineAPI.IGenericObjectProperties */ P, /* <: typings.qlikEngineapi.EngineAPI.IGenericObject */ O](createObject: P => js.Promise[O], createSessionObject: P => js.Promise[O]): IAppObjectPrototype[P, O] = {
     val __obj = js.Dynamic.literal(createObject = js.Any.fromFunction1(createObject), createSessionObject = js.Any.fromFunction1(createSessionObject))
     __obj.asInstanceOf[IAppObjectPrototype[P, O]]
   }

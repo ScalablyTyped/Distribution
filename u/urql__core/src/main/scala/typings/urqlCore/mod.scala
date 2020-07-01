@@ -44,7 +44,7 @@ object mod extends js.Object {
   def createRequest(q: String, vars: js.Object): GraphQLRequest = js.native
   def createRequest(q: DocumentNode): GraphQLRequest = js.native
   def createRequest(q: DocumentNode, vars: js.Object): GraphQLRequest = js.native
-  def formatDocument(node: DocumentNode): js.Any = js.native
+  def formatDocument(node: DocumentNode): DocumentNode = js.native
   def makeErrorResult(operation: Operation, error: Error): OperationResult[_] = js.native
   def makeErrorResult(operation: Operation, error: Error, response: js.Any): OperationResult[_] = js.native
   def makeResult(operation: Operation, result: js.Any): OperationResult[_] = js.native

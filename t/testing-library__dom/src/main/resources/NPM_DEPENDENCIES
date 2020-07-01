@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@testing-library/dom" : "7.19.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@testing-library/dom" : "7.19.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

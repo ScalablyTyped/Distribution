@@ -18,7 +18,7 @@ trait DialogflowV1BaseMessage[TType /* <: Double */] extends js.Object {
 
 object DialogflowV1BaseMessage {
   @scala.inline
-  def apply[TType](
+  def apply[/* <: scala.Double */ TType](
     platform: facebook_ | kik_ | line_ | skype_ | slack_ | telegram_ | viber_ = null,
     `type`: TType = null
   ): DialogflowV1BaseMessage[TType] = {

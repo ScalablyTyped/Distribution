@@ -19,7 +19,7 @@ trait Message[T /* <: cacheHit | cacheInvalidation | fetchRequest | fetchSuccess
 
 object Message {
   @scala.inline
-  def apply[T](message: String, operation: Operation, `type`: T): Message[T] = {
+  def apply[/* <: typings.urqlCore.urqlCoreStrings.cacheHit | typings.urqlCore.urqlCoreStrings.cacheInvalidation | typings.urqlCore.urqlCoreStrings.fetchRequest | typings.urqlCore.urqlCoreStrings.fetchSuccess | typings.urqlCore.urqlCoreStrings.fetchError | typings.urqlCore.urqlCoreStrings.retryRetrying | java.lang.String */ T](message: String, operation: Operation, `type`: T): Message[T] = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message[T]]

@@ -1,8 +1,6 @@
 package typings.materializeCss.mod
 
 import typings.materializeCss.M.AutocompleteData
-import typings.materializeCss.M.AutocompleteOptions
-import typings.materializeCss.MElements
 import typings.materializeCss.anon.PartialAutocompleteOption
 import typings.std.Element
 import scala.scalajs.js
@@ -24,24 +22,18 @@ class Autocomplete ()
   /* CompleteClass */
   override var count: Double = js.native
   /**
-    * The DOM element the plugin was initialized with
+    * If the autocomplete is open.
     */
-  /* CompleteClass */
-  override var el: Element = js.native
   /* CompleteClass */
   override var isOpen: Boolean = js.native
   /**
-    * The options the instance was initialized with
+    * Hide autocomplete.
     */
-  /* CompleteClass */
-  override var options: AutocompleteOptions = js.native
   /* CompleteClass */
   override def close(): Unit = js.native
   /**
-    * Destroy plugin instance and teardown
+    * Show autocomplete.
     */
-  /* CompleteClass */
-  override def destroy(): Unit = js.native
   /* CompleteClass */
   override def open(): Unit = js.native
   /**
@@ -69,8 +61,13 @@ object Autocomplete extends js.Object {
   /**
     * Init autocompletes
     */
-  def init(els: MElements): js.Array[typings.materializeCss.M.Autocomplete] = js.native
-  def init(els: MElements, options: PartialAutocompleteOption): js.Array[typings.materializeCss.M.Autocomplete] = js.native
+  def init(
+    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any
+  ): js.Array[typings.materializeCss.M.Autocomplete] = js.native
+  def init(
+    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any,
+    options: PartialAutocompleteOption
+  ): js.Array[typings.materializeCss.M.Autocomplete] = js.native
   /**
     * Init autocomplete
     */

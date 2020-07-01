@@ -43,7 +43,7 @@ import scala.scalajs.js.annotation._
 
 object RouterOptions {
   @scala.inline
-  def apply[R, C](
+  def apply[R, /* <: typings.universalRouter.universalRouterSyncMod.RouterContext */ C](
     baseUrl: String = null,
     context: C = null,
     decode: (/* value */ String, /* token */ Key) => String = null,

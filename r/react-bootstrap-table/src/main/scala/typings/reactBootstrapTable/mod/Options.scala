@@ -624,7 +624,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
 
 object Options {
   @scala.inline
-  def apply[TRow](
+  def apply[/* <: js.Object */ TRow](
     afterColumnFilter: (/* filterConds */ js.Array[FilterData[_]], /* result */ js.Array[TRow]) => Unit = null,
     afterDeleteRow: (/* rowKeys */ js.Array[Double | String], /* rows */ js.Array[TRow]) => Unit = null,
     afterInsertRow: /* row */ TRow => Unit = null,

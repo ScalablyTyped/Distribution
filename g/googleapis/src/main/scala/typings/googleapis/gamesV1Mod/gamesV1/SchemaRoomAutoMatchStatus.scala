@@ -24,10 +24,10 @@ trait SchemaRoomAutoMatchStatus extends js.Object {
 
 object SchemaRoomAutoMatchStatus {
   @scala.inline
-  def apply(kind: String = null, waitEstimateSeconds: Int | Double = null): SchemaRoomAutoMatchStatus = {
+  def apply(kind: String = null, waitEstimateSeconds: js.UndefOr[Double] = js.undefined): SchemaRoomAutoMatchStatus = {
     val __obj = js.Dynamic.literal()
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (waitEstimateSeconds != null) __obj.updateDynamic("waitEstimateSeconds")(waitEstimateSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitEstimateSeconds)) __obj.updateDynamic("waitEstimateSeconds")(waitEstimateSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRoomAutoMatchStatus]
   }
 }

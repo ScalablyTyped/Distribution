@@ -10,7 +10,7 @@ trait ColorStyleProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.
 
 object ColorStyleProps {
   @scala.inline
-  def apply[ThemeType](colors: js.UndefOr[Null | (ResponsiveValue[String, ThemeType])] = js.undefined): ColorStyleProps[ThemeType] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](colors: js.UndefOr[Null | (ResponsiveValue[String, ThemeType])] = js.undefined): ColorStyleProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorStyleProps[ThemeType]]

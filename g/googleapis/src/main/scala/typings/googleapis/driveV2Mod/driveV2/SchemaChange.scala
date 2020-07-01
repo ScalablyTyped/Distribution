@@ -70,7 +70,7 @@ object SchemaChange {
     `type`: String = null
   ): SchemaChange = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     if (fileId != null) __obj.updateDynamic("fileId")(fileId.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

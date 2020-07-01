@@ -156,6 +156,19 @@ trait WorkMail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteResourceResponse, Unit]
   ): Request[DeleteResourceResponse, AWSError] = js.native
   /**
+    * Deletes the specified retention policy from the specified organization.
+    */
+  def deleteRetentionPolicy(): Request[DeleteRetentionPolicyResponse, AWSError] = js.native
+  def deleteRetentionPolicy(callback: js.Function2[/* err */ AWSError, /* data */ DeleteRetentionPolicyResponse, Unit]): Request[DeleteRetentionPolicyResponse, AWSError] = js.native
+  /**
+    * Deletes the specified retention policy from the specified organization.
+    */
+  def deleteRetentionPolicy(params: DeleteRetentionPolicyRequest): Request[DeleteRetentionPolicyResponse, AWSError] = js.native
+  def deleteRetentionPolicy(
+    params: DeleteRetentionPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteRetentionPolicyResponse, Unit]
+  ): Request[DeleteRetentionPolicyResponse, AWSError] = js.native
+  /**
     * Deletes a user from Amazon WorkMail and all subsequent systems. Before you can delete a user, the user state must be DISABLED. Use the DescribeUser action to confirm the user state. Deleting a user is permanent and cannot be undone. WorkMail archives user mailboxes for 30 days before they are permanently removed.
     */
   def deleteUser(): Request[DeleteUserResponse, AWSError] = js.native
@@ -274,6 +287,19 @@ trait WorkMail extends Service {
     params: GetAccessControlEffectRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetAccessControlEffectResponse, Unit]
   ): Request[GetAccessControlEffectResponse, AWSError] = js.native
+  /**
+    * Gets the default retention policy details for the specified organization.
+    */
+  def getDefaultRetentionPolicy(): Request[GetDefaultRetentionPolicyResponse, AWSError] = js.native
+  def getDefaultRetentionPolicy(callback: js.Function2[/* err */ AWSError, /* data */ GetDefaultRetentionPolicyResponse, Unit]): Request[GetDefaultRetentionPolicyResponse, AWSError] = js.native
+  /**
+    * Gets the default retention policy details for the specified organization.
+    */
+  def getDefaultRetentionPolicy(params: GetDefaultRetentionPolicyRequest): Request[GetDefaultRetentionPolicyResponse, AWSError] = js.native
+  def getDefaultRetentionPolicy(
+    params: GetDefaultRetentionPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetDefaultRetentionPolicyResponse, Unit]
+  ): Request[GetDefaultRetentionPolicyResponse, AWSError] = js.native
   /**
     * Requests a user's mailbox details for a specified organization and user.
     */
@@ -443,6 +469,19 @@ trait WorkMail extends Service {
     params: PutMailboxPermissionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutMailboxPermissionsResponse, Unit]
   ): Request[PutMailboxPermissionsResponse, AWSError] = js.native
+  /**
+    * Puts a retention policy to the specified organization.
+    */
+  def putRetentionPolicy(): Request[PutRetentionPolicyResponse, AWSError] = js.native
+  def putRetentionPolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutRetentionPolicyResponse, Unit]): Request[PutRetentionPolicyResponse, AWSError] = js.native
+  /**
+    * Puts a retention policy to the specified organization.
+    */
+  def putRetentionPolicy(params: PutRetentionPolicyRequest): Request[PutRetentionPolicyResponse, AWSError] = js.native
+  def putRetentionPolicy(
+    params: PutRetentionPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutRetentionPolicyResponse, Unit]
+  ): Request[PutRetentionPolicyResponse, AWSError] = js.native
   /**
     * Registers an existing and disabled user, group, or resource for Amazon WorkMail use by associating a mailbox and calendaring capabilities. It performs no change if the user, group, or resource is enabled and fails if the user, group, or resource is deleted. This operation results in the accumulation of costs. For more information, see Pricing. The equivalent console functionality for this operation is Enable.  Users can either be created by calling the CreateUser API operation or they can be synchronized from your directory. For more information, see DeregisterFromWorkMail.
     */

@@ -26,9 +26,19 @@ trait AddAssignees extends js.Object {
     * If the `assignee` can be assigned to issues in the repository, a `204` header with no content is returned.
     *
     * Otherwise a `404` status code is returned.
+    * @deprecated octokit.issues.checkAssignee() has been renamed to octokit.issues.checkUserCanBeAssigned() (2020-06-01)
     */
   @JSName("checkAssignee")
   var checkAssignee_Original: `156` = js.native
+  /**
+    * Checks if a user has permission to be assigned to an issue in this repository.
+    *
+    * If the `assignee` can be assigned to issues in the repository, a `204` header with no content is returned.
+    *
+    * Otherwise a `404` status code is returned.
+    */
+  @JSName("checkUserCanBeAssigned")
+  var checkUserCanBeAssigned_Original: `156` = js.native
   /**
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
@@ -122,8 +132,13 @@ trait AddAssignees extends js.Object {
   var listLabelsForRepo_Original: `180` = js.native
   @JSName("listLabelsOnIssue")
   var listLabelsOnIssue_Original: `181` = js.native
+  /**
+    * @deprecated octokit.issues.listMilestonesForRepo() has been renamed to octokit.issues.listMilestones() (2020-06-01)
+    */
   @JSName("listMilestonesForRepo")
   var listMilestonesForRepo_Original: `182` = js.native
+  @JSName("listMilestones")
+  var listMilestones_Original: `182` = js.native
   /**
     * List issues assigned to the authenticated user across all visible repositories including owned repositories, member repositories, and organization repositories. You can use the `filter` query parameter to fetch issues that are not necessarily assigned to you. See the [Parameters table](https://developer.github.com/v3/issues/#parameters) for more information.
     *
@@ -159,13 +174,23 @@ trait AddAssignees extends js.Object {
     */
   @JSName("removeLabels")
   var removeLabels_Original: `184` = js.native
+  /**
+    * Removes any previous labels and sets the new labels for an issue.
+    * @deprecated octokit.issues.replaceAllLabels() has been renamed to octokit.issues.setLabels() (2020-06-04)
+    */
   @JSName("replaceAllLabels")
   var replaceAllLabels_Original: `187` = js.native
   /**
+    * Removes any previous labels and sets the new labels for an issue.
     * @deprecated octokit.issues.replaceLabels() has been renamed to octokit.issues.replaceAllLabels() (2020-03-04)
     */
   @JSName("replaceLabels")
   var replaceLabels_Original: `187` = js.native
+  /**
+    * Removes any previous labels and sets the new labels for an issue.
+    */
+  @JSName("setLabels")
+  var setLabels_Original: `187` = js.native
   /**
     * Users with push access can unlock an issue's conversation.
     */
@@ -215,11 +240,30 @@ trait AddAssignees extends js.Object {
     * If the `assignee` can be assigned to issues in the repository, a `204` header with no content is returned.
     *
     * Otherwise a `404` status code is returned.
+    * @deprecated octokit.issues.checkAssignee() has been renamed to octokit.issues.checkUserCanBeAssigned() (2020-06-01)
     */
   def checkAssignee(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/assignees/:assignee']['response'] */ js.Any
   ] = js.native
   def checkAssignee(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/assignees/:assignee']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/assignees/:assignee']['response'] */ js.Any
+  ] = js.native
+  /**
+    * Checks if a user has permission to be assigned to an issue in this repository.
+    *
+    * If the `assignee` can be assigned to issues in the repository, a `204` header with no content is returned.
+    *
+    * Otherwise a `404` status code is returned.
+    */
+  def checkUserCanBeAssigned(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/assignees/:assignee']['response'] */ js.Any
+  ] = js.native
+  def checkUserCanBeAssigned(
     params: RequestParameters with (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/assignees/:assignee']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
@@ -554,6 +598,20 @@ trait AddAssignees extends js.Object {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/issues/:issue_number/labels']['response'] */ js.Any
   ] = js.native
+  def listMilestones(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/milestones']['response'] */ js.Any
+  ] = js.native
+  def listMilestones(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/milestones']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/milestones']['response'] */ js.Any
+  ] = js.native
+  /**
+    * @deprecated octokit.issues.listMilestonesForRepo() has been renamed to octokit.issues.listMilestones() (2020-06-01)
+    */
   def listMilestonesForRepo(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/milestones']['response'] */ js.Any
   ] = js.native
@@ -636,6 +694,10 @@ trait AddAssignees extends js.Object {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/issues/:issue_number/labels']['response'] */ js.Any
   ] = js.native
+  /**
+    * Removes any previous labels and sets the new labels for an issue.
+    * @deprecated octokit.issues.replaceAllLabels() has been renamed to octokit.issues.setLabels() (2020-06-04)
+    */
   def replaceAllLabels(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/issues/:issue_number/labels']['response'] */ js.Any
   ] = js.native
@@ -648,12 +710,27 @@ trait AddAssignees extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/issues/:issue_number/labels']['response'] */ js.Any
   ] = js.native
   /**
+    * Removes any previous labels and sets the new labels for an issue.
     * @deprecated octokit.issues.replaceLabels() has been renamed to octokit.issues.replaceAllLabels() (2020-03-04)
     */
   def replaceLabels(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/issues/:issue_number/labels']['response'] */ js.Any
   ] = js.native
   def replaceLabels(
+    params: RequestParameters with (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/issues/:issue_number/labels']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/issues/:issue_number/labels']['response'] */ js.Any
+  ] = js.native
+  /**
+    * Removes any previous labels and sets the new labels for an issue.
+    */
+  def setLabels(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/issues/:issue_number/labels']['response'] */ js.Any
+  ] = js.native
+  def setLabels(
     params: RequestParameters with (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/issues/:issue_number/labels']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType

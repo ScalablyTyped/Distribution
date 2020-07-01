@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @see https://developer.knuddels.de/docs/classes/ClientType.html
-  */
+	 * @see https://developer.knuddels.de/docs/classes/ClientType.html
+	 */
 @JSGlobal("ClientType")
 @js.native
 class ClientType () extends js.Object
@@ -16,24 +16,24 @@ class ClientType () extends js.Object
 @js.native
 object ClientType extends js.Object {
   /**
-    * @see https://developer.knuddels.de/docs/classes/ClientType.html#property_Android
-    */
+  		 * @see https://developer.knuddels.de/docs/classes/ClientType.html#property_Android
+  		 */
   val Android: ClientType = js.native
   /**
-    * @see https://developer.knuddels.de/docs/classes/ClientType.html#property_Applet
-    */
+  		 * @see https://developer.knuddels.de/docs/classes/ClientType.html#property_Applet
+  		 */
   val Applet: ClientType = js.native
   /**
-    * @see https://developer.knuddels.de/docs/classes/ClientType.html#property_Browser
-    */
+  		 * @see https://developer.knuddels.de/docs/classes/ClientType.html#property_Browser
+  		 */
   val Browser: ClientType = js.native
   /**
-    * @see https://developer.knuddels.de/docs/classes/ClientType.html#property_IOS
-    */
+  		 * @see https://developer.knuddels.de/docs/classes/ClientType.html#property_IOS
+  		 */
   val IOS: ClientType = js.native
   /**
-    * @see https://developer.knuddels.de/docs/classes/ClientType.html#property_Offline
-    */
+  		 * @see https://developer.knuddels.de/docs/classes/ClientType.html#property_Offline
+  		 */
   val Offline: ClientType = js.native
 }
 

@@ -35,7 +35,7 @@ object ParamsResourceTemplateDelete {
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
     quotaUser: String = null,
     tableId: String = null,
-    templateId: Int | Double = null,
+    templateId: js.UndefOr[Double] = js.undefined,
     userIp: String = null
   ): ParamsResourceTemplateDelete = {
     val __obj = js.Dynamic.literal()
@@ -44,10 +44,10 @@ object ParamsResourceTemplateDelete {
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (tableId != null) __obj.updateDynamic("tableId")(tableId.asInstanceOf[js.Any])
-    if (templateId != null) __obj.updateDynamic("templateId")(templateId.asInstanceOf[js.Any])
+    if (!js.isUndefined(templateId)) __obj.updateDynamic("templateId")(templateId.get.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceTemplateDelete]
   }

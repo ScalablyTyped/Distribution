@@ -38,10 +38,12 @@ object GeneratedNode {
     name: String,
     selections: js.Array[ReaderSelection],
     `type`: String,
+    abstractKey: js.UndefOr[Null | String] = js.undefined,
     metadata: js.UndefOr[Null | Connection] = js.undefined
   ): GeneratedNode = {
     val __obj = js.Dynamic.literal(argumentDefinitions = argumentDefinitions.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(abstractKey)) __obj.updateDynamic("abstractKey")(abstractKey.asInstanceOf[js.Any])
     if (!js.isUndefined(metadata)) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneratedNode]
   }

@@ -14,10 +14,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A route represents a single set of stations, of a single line.
+  */
 trait Route extends js.Object {
   var id: String
   var line: String
   var mode: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking
+  /** stop ids */
   var stops: js.Array[String]
   var `type`: route
 }

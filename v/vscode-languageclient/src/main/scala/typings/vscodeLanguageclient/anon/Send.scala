@@ -10,7 +10,7 @@ trait Send[T /* <: js.Function */] extends js.Object {
 
 object Send {
   @scala.inline
-  def apply[T](send: T): Send[T] = {
+  def apply[/* <: js.Function */ T](send: T): Send[T] = {
     val __obj = js.Dynamic.literal(send = send.asInstanceOf[js.Any])
     __obj.asInstanceOf[Send[T]]
   }

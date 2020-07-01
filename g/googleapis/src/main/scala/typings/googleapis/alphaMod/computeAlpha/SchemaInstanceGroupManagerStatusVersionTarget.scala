@@ -19,7 +19,7 @@ object SchemaInstanceGroupManagerStatusVersionTarget {
   @scala.inline
   def apply(isReached: js.UndefOr[Boolean] = js.undefined): SchemaInstanceGroupManagerStatusVersionTarget = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isReached)) __obj.updateDynamic("isReached")(isReached.asInstanceOf[js.Any])
+    if (!js.isUndefined(isReached)) __obj.updateDynamic("isReached")(isReached.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstanceGroupManagerStatusVersionTarget]
   }
 }

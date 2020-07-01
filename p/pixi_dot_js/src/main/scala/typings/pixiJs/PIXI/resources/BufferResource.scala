@@ -24,6 +24,14 @@ trait BufferResource extends Resource {
     * @member {Float32Array|Uint8Array|Uint32Array} PIXI.resources.BufferResource#data
     */
   var data: Float32Array | Uint8Array | Uint32Array
+  /**
+    * Upload the texture to the GPU.
+    * @param {PIXI.Renderer} renderer - Upload to the renderer
+    * @param {PIXI.BaseTexture} baseTexture - Reference to parent texture
+    * @param {PIXI.GLTexture} glTexture - glTexture
+    * @returns {boolean} true is success
+    */
+  def upload(renderer: Renderer, baseTexture: BaseTexture, glTexture: GLTexture): Boolean
 }
 
 object BufferResource {

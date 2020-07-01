@@ -116,32 +116,32 @@ object SchemaGoogleCloudDialogflowV2beta1QueryResult {
     fulfillmentMessages: js.Array[SchemaGoogleCloudDialogflowV2beta1IntentMessage] = null,
     fulfillmentText: String = null,
     intent: SchemaGoogleCloudDialogflowV2beta1Intent = null,
-    intentDetectionConfidence: Int | Double = null,
+    intentDetectionConfidence: js.UndefOr[Double] = js.undefined,
     knowledgeAnswers: SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswers = null,
     languageCode: String = null,
     outputContexts: js.Array[SchemaGoogleCloudDialogflowV2beta1Context] = null,
     parameters: StringDictionary[js.Any] = null,
     queryText: String = null,
     sentimentAnalysisResult: SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisResult = null,
-    speechRecognitionConfidence: Int | Double = null,
+    speechRecognitionConfidence: js.UndefOr[Double] = js.undefined,
     webhookPayload: StringDictionary[js.Any] = null,
     webhookSource: String = null
   ): SchemaGoogleCloudDialogflowV2beta1QueryResult = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (!js.isUndefined(allRequiredParamsPresent)) __obj.updateDynamic("allRequiredParamsPresent")(allRequiredParamsPresent.asInstanceOf[js.Any])
+    if (!js.isUndefined(allRequiredParamsPresent)) __obj.updateDynamic("allRequiredParamsPresent")(allRequiredParamsPresent.get.asInstanceOf[js.Any])
     if (diagnosticInfo != null) __obj.updateDynamic("diagnosticInfo")(diagnosticInfo.asInstanceOf[js.Any])
     if (fulfillmentMessages != null) __obj.updateDynamic("fulfillmentMessages")(fulfillmentMessages.asInstanceOf[js.Any])
     if (fulfillmentText != null) __obj.updateDynamic("fulfillmentText")(fulfillmentText.asInstanceOf[js.Any])
     if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
-    if (intentDetectionConfidence != null) __obj.updateDynamic("intentDetectionConfidence")(intentDetectionConfidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(intentDetectionConfidence)) __obj.updateDynamic("intentDetectionConfidence")(intentDetectionConfidence.get.asInstanceOf[js.Any])
     if (knowledgeAnswers != null) __obj.updateDynamic("knowledgeAnswers")(knowledgeAnswers.asInstanceOf[js.Any])
     if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
     if (outputContexts != null) __obj.updateDynamic("outputContexts")(outputContexts.asInstanceOf[js.Any])
     if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     if (queryText != null) __obj.updateDynamic("queryText")(queryText.asInstanceOf[js.Any])
     if (sentimentAnalysisResult != null) __obj.updateDynamic("sentimentAnalysisResult")(sentimentAnalysisResult.asInstanceOf[js.Any])
-    if (speechRecognitionConfidence != null) __obj.updateDynamic("speechRecognitionConfidence")(speechRecognitionConfidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(speechRecognitionConfidence)) __obj.updateDynamic("speechRecognitionConfidence")(speechRecognitionConfidence.get.asInstanceOf[js.Any])
     if (webhookPayload != null) __obj.updateDynamic("webhookPayload")(webhookPayload.asInstanceOf[js.Any])
     if (webhookSource != null) __obj.updateDynamic("webhookSource")(webhookSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1QueryResult]

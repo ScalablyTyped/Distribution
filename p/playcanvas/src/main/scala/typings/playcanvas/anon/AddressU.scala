@@ -22,8 +22,7 @@ trait AddressU extends js.Object {
   var mipmaps: js.UndefOr[Boolean] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var premultiplyAlpha: js.UndefOr[Boolean] = js.undefined
-  var rgbm: js.UndefOr[Boolean] = js.undefined
-  var swizzleGGGR: js.UndefOr[Boolean] = js.undefined
+  var `type`: js.UndefOr[String] = js.undefined
   var volume: js.UndefOr[Boolean] = js.undefined
   var width: js.UndefOr[Double] = js.undefined
 }
@@ -48,8 +47,7 @@ object AddressU {
     mipmaps: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     premultiplyAlpha: js.UndefOr[Boolean] = js.undefined,
-    rgbm: js.UndefOr[Boolean] = js.undefined,
-    swizzleGGGR: js.UndefOr[Boolean] = js.undefined,
+    `type`: String = null,
     volume: js.UndefOr[Boolean] = js.undefined,
     width: js.UndefOr[Double] = js.undefined
   ): AddressU = {
@@ -71,8 +69,7 @@ object AddressU {
     if (!js.isUndefined(mipmaps)) __obj.updateDynamic("mipmaps")(mipmaps.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (!js.isUndefined(premultiplyAlpha)) __obj.updateDynamic("premultiplyAlpha")(premultiplyAlpha.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rgbm)) __obj.updateDynamic("rgbm")(rgbm.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(swizzleGGGR)) __obj.updateDynamic("swizzleGGGR")(swizzleGGGR.get.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(volume)) __obj.updateDynamic("volume")(volume.get.asInstanceOf[js.Any])
     if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddressU]

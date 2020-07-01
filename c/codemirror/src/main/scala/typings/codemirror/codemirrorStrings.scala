@@ -222,6 +222,9 @@ object codemirrorStrings {
   sealed trait gotpointercapture extends js.Object
   
   @js.native
+  sealed trait gutter extends js.Object
+  
+  @js.native
   sealed trait gutterClick extends js.Object
   
   @js.native
@@ -720,6 +723,8 @@ object codemirrorStrings {
   def foldGutter: foldGutter = "foldGutter".asInstanceOf[foldGutter]
   @scala.inline
   def gotpointercapture: gotpointercapture = "gotpointercapture".asInstanceOf[gotpointercapture]
+  @scala.inline
+  def gutter: gutter = "gutter".asInstanceOf[gutter]
   @scala.inline
   def gutterClick: gutterClick = "gutterClick".asInstanceOf[gutterClick]
   @scala.inline

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DOMWrap
   extends Component[DOMWrapProps, DOMWrapState, js.Any] {
+  var cancelFrameId: Double = js.native
   var menuItemSizes: js.Array[Double] = js.native
   var mutationObserver: js.Any = js.native
   var originalTotalWidth: Double = js.native

@@ -29,7 +29,7 @@ trait Iterator[Key, T, SourceT /* <: typings.tstl.multiMapMod.MultiMap[Key, T, S
 
 object Iterator {
   @scala.inline
-  def apply[Key, T, SourceT, IteratorT, ReverseT](
+  def apply[Key, T, /* <: typings.tstl.multiMapMod.MultiMap[Key, T, SourceT, IteratorT, ReverseT] */ SourceT, /* <: typings.tstl.multiMapMod.MultiMap.Iterator[Key, T, SourceT, IteratorT, ReverseT] */ IteratorT, /* <: typings.tstl.multiMapMod.MultiMap.ReverseIterator[Key, T, SourceT, IteratorT, ReverseT] */ ReverseT](
     first: Key,
     next: () => IteratorT,
     prev: () => IteratorT,

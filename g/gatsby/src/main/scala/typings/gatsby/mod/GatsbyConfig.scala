@@ -1,6 +1,5 @@
 package typings.gatsby.mod
 
-import typings.gatsby.anon.Options
 import typings.gatsby.anon.Prefix
 import typings.std.Record
 import scala.scalajs.js
@@ -16,7 +15,7 @@ trait GatsbyConfig extends js.Object {
   /** It’s common for sites to be hosted somewhere other than the root of their domain. Say we have a Gatsby site at `example.com/blog/`. In this case, we would need a prefix (`/blog`) added to all paths on the site. */
   var pathPrefix: js.UndefOr[String] = js.undefined
   /** Plugins are Node.js packages that implement Gatsby APIs. The config file accepts an array of plugins. Some plugins may need only to be listed by name, while others may take options. */
-  var plugins: js.UndefOr[js.Array[String | Options]] = js.undefined
+  var plugins: js.UndefOr[js.Array[PluginRef]] = js.undefined
   /** Gatsby uses the ES6 Promise API. Because some browsers don't support this, Gatsby includes a Promise polyfill by default. If you'd like to provide your own Promise polyfill, you can set `polyfill` to false.*/
   var polyfill: js.UndefOr[Boolean] = js.undefined
   /**
@@ -35,7 +34,7 @@ object GatsbyConfig {
     developMiddleware: /* app */ js.Any => Unit = null,
     mapping: Record[String, String] = null,
     pathPrefix: String = null,
-    plugins: js.Array[String | Options] = null,
+    plugins: js.Array[PluginRef] = null,
     polyfill: js.UndefOr[Boolean] = js.undefined,
     proxy: Prefix = null,
     siteMetadata: Record[String, _] = null

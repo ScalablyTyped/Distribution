@@ -37,7 +37,7 @@ object SchemaGooglePrivacyDlpV2ImageRedactionConfig {
   ): SchemaGooglePrivacyDlpV2ImageRedactionConfig = {
     val __obj = js.Dynamic.literal()
     if (infoType != null) __obj.updateDynamic("infoType")(infoType.asInstanceOf[js.Any])
-    if (!js.isUndefined(redactAllText)) __obj.updateDynamic("redactAllText")(redactAllText.asInstanceOf[js.Any])
+    if (!js.isUndefined(redactAllText)) __obj.updateDynamic("redactAllText")(redactAllText.get.asInstanceOf[js.Any])
     if (redactionColor != null) __obj.updateDynamic("redactionColor")(redactionColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2ImageRedactionConfig]
   }

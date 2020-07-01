@@ -27,7 +27,7 @@ object App {
     initialProps: js.Any,
     isFallback: Boolean,
     pageLoader: js.Any,
-    subscription: (/* data */ RouteInfo, /* App */ js.UndefOr[ComponentType[js.Object]]) => Unit,
+    subscription: (/* data */ RouteInfo, /* App */ js.UndefOr[ComponentType[js.Object]]) => js.Promise[Unit],
     wrapApp: ComponentType[js.Object] => js.Any,
     err: Error = null
   ): App = {

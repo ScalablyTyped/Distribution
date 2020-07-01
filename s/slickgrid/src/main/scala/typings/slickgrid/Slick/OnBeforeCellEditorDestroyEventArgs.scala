@@ -11,7 +11,7 @@ trait OnBeforeCellEditorDestroyEventArgs[T /* <: SlickData */] extends GridEvent
 
 object OnBeforeCellEditorDestroyEventArgs {
   @scala.inline
-  def apply[T](editor: Editor[T], grid: Grid[T]): OnBeforeCellEditorDestroyEventArgs[T] = {
+  def apply[/* <: typings.slickgrid.Slick.SlickData */ T](editor: Editor[T], grid: Grid[T]): OnBeforeCellEditorDestroyEventArgs[T] = {
     val __obj = js.Dynamic.literal(editor = editor.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnBeforeCellEditorDestroyEventArgs[T]]
   }

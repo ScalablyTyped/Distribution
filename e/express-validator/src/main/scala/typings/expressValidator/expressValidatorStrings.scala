@@ -6,6 +6,7 @@ import typings.expressValidator.optionsMod.AlphanumericLocale
 import typings.expressValidator.optionsMod.HashAlgorithm
 import typings.expressValidator.optionsMod.IdentityCard
 import typings.expressValidator.optionsMod.MobilePhoneLocale
+import typings.expressValidator.optionsMod.PassportCountryCode
 import typings.expressValidator.optionsMod.PostalCodeLocale
 import typings.expressValidator.optionsMod.URLProtocol
 import typings.expressValidator.optionsMod.UUIDVersion
@@ -27,111 +28,188 @@ object expressValidatorStrings {
   sealed trait AD extends PostalCodeLocale
   
   @js.native
-  sealed trait AT extends PostalCodeLocale
+  sealed trait AM extends PassportCountryCode
   
   @js.native
-  sealed trait AU extends PostalCodeLocale
+  sealed trait AR extends PassportCountryCode
   
   @js.native
-  sealed trait BE extends PostalCodeLocale
+  sealed trait AT
+    extends PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
-  sealed trait BG extends PostalCodeLocale
+  sealed trait AU
+    extends PassportCountryCode
+       with PostalCodeLocale
+  
+  @js.native
+  sealed trait BE
+    extends PassportCountryCode
+       with PostalCodeLocale
+  
+  @js.native
+  sealed trait BG
+    extends PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
   sealed trait BR extends PostalCodeLocale
   
   @js.native
-  sealed trait CA extends PostalCodeLocale
+  sealed trait CA
+    extends PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
-  sealed trait CH extends PostalCodeLocale
+  sealed trait CH
+    extends PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
-  sealed trait CZ extends PostalCodeLocale
+  sealed trait CN extends PassportCountryCode
   
   @js.native
-  sealed trait DE extends PostalCodeLocale
+  sealed trait CY extends PassportCountryCode
   
   @js.native
-  sealed trait DK extends PostalCodeLocale
+  sealed trait CZ
+    extends PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
-  sealed trait DZ extends PostalCodeLocale
+  sealed trait DE
+    extends PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
-  sealed trait EE extends PostalCodeLocale
+  sealed trait DK
+    extends PassportCountryCode
+       with PostalCodeLocale
+  
+  @js.native
+  sealed trait DZ
+    extends PassportCountryCode
+       with PostalCodeLocale
+  
+  @js.native
+  sealed trait EE
+    extends PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
   sealed trait ES
     extends IdentityCard
+       with PassportCountryCode
        with PostalCodeLocale
   
   @js.native
-  sealed trait FI extends PostalCodeLocale
+  sealed trait FI
+    extends PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
-  sealed trait FR extends PostalCodeLocale
+  sealed trait FR
+    extends PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
-  sealed trait GB extends PostalCodeLocale
+  sealed trait GB
+    extends PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
-  sealed trait GR extends PostalCodeLocale
+  sealed trait GR
+    extends PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
-  sealed trait HR extends PostalCodeLocale
+  sealed trait HR
+    extends PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
-  sealed trait HU extends PostalCodeLocale
+  sealed trait HU
+    extends PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
   sealed trait ID extends PostalCodeLocale
   
   @js.native
+  sealed trait IE extends PassportCountryCode
+  
+  @js.native
   sealed trait IL extends PostalCodeLocale
   
   @js.native
-  sealed trait IN extends PostalCodeLocale
+  sealed trait IN
+    extends IdentityCard
+       with PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
   sealed trait IR extends PostalCodeLocale
   
   @js.native
-  sealed trait IS extends PostalCodeLocale
+  sealed trait IS
+    extends PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
-  sealed trait IT extends PostalCodeLocale
+  sealed trait IT
+    extends PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
-  sealed trait JP extends PostalCodeLocale
+  sealed trait JP
+    extends PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
   sealed trait KE extends PostalCodeLocale
   
   @js.native
+  sealed trait KR extends PassportCountryCode
+  
+  @js.native
   sealed trait LI extends PostalCodeLocale
   
   @js.native
-  sealed trait LT extends PostalCodeLocale
+  sealed trait LT
+    extends PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
-  sealed trait LU extends PostalCodeLocale
+  sealed trait LU
+    extends PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
-  sealed trait LV extends PostalCodeLocale
+  sealed trait LV
+    extends PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
-  sealed trait MT extends PostalCodeLocale
+  sealed trait MT
+    extends PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
   sealed trait MX extends PostalCodeLocale
   
   @js.native
-  sealed trait NL extends PostalCodeLocale
+  sealed trait NL
+    extends PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
-  sealed trait NO extends PostalCodeLocale
+  sealed trait NO
+    extends IdentityCard
+       with PostalCodeLocale
+  
+  @js.native
+  sealed trait NP extends PostalCodeLocale
   
   @js.native
   sealed trait NZ extends PostalCodeLocale
@@ -140,13 +218,20 @@ object expressValidatorStrings {
   sealed trait PL extends PostalCodeLocale
   
   @js.native
+  sealed trait PO extends PassportCountryCode
+  
+  @js.native
   sealed trait PR extends PostalCodeLocale
   
   @js.native
-  sealed trait PT extends PostalCodeLocale
+  sealed trait PT
+    extends PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
-  sealed trait RO extends PostalCodeLocale
+  sealed trait RO
+    extends PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
   sealed trait RU extends PostalCodeLocale
@@ -155,22 +240,37 @@ object expressValidatorStrings {
   sealed trait SA extends PostalCodeLocale
   
   @js.native
-  sealed trait SE extends PostalCodeLocale
+  sealed trait SE
+    extends PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
   sealed trait SI extends PostalCodeLocale
   
   @js.native
+  sealed trait SK extends PassportCountryCode
+  
+  @js.native
+  sealed trait SL extends PassportCountryCode
+  
+  @js.native
   sealed trait TN extends PostalCodeLocale
+  
+  @js.native
+  sealed trait TR extends PassportCountryCode
   
   @js.native
   sealed trait TW extends PostalCodeLocale
   
   @js.native
-  sealed trait UA extends PostalCodeLocale
+  sealed trait UA
+    extends PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
-  sealed trait US extends PostalCodeLocale
+  sealed trait US
+    extends PassportCountryCode
+       with PostalCodeLocale
   
   @js.native
   sealed trait ZA extends PostalCodeLocale
@@ -185,15 +285,13 @@ object expressValidatorStrings {
   sealed trait all extends UUIDVersion
   
   @js.native
+  sealed trait `am-AM` extends MobilePhoneLocale
+  
+  @js.native
   sealed trait any
     extends IdentityCard
        with MobilePhoneLocale
        with PostalCodeLocale
-  
-  @js.native
-  sealed trait ar
-    extends AlphaLocale
-       with AlphanumericLocale
   
   @js.native
   sealed trait `ar-AE`
@@ -246,6 +344,7 @@ object expressValidatorStrings {
   sealed trait `ar-LY`
     extends AlphaLocale
        with AlphanumericLocale
+       with MobilePhoneLocale
   
   @js.native
   sealed trait `ar-MA`
@@ -283,10 +382,16 @@ object expressValidatorStrings {
   sealed trait `ar-TN`
     extends AlphaLocale
        with AlphanumericLocale
+       with IdentityCard
        with MobilePhoneLocale
   
   @js.native
   sealed trait `ar-YE`
+    extends AlphaLocale
+       with AlphanumericLocale
+  
+  @js.native
+  sealed trait ar_
     extends AlphaLocale
        with AlphanumericLocale
   
@@ -310,6 +415,9 @@ object expressValidatorStrings {
   
   @js.native
   sealed trait body extends Location
+  
+  @js.native
+  sealed trait `bs-BA` extends MobilePhoneLocale
   
   @js.native
   sealed trait contains extends js.Object
@@ -343,6 +451,9 @@ object expressValidatorStrings {
   
   @js.native
   sealed trait `de-AT` extends MobilePhoneLocale
+  
+  @js.native
+  sealed trait `de-CH` extends MobilePhoneLocale
   
   @js.native
   sealed trait `de-DE`
@@ -420,6 +531,9 @@ object expressValidatorStrings {
   sealed trait `en-SG` extends MobilePhoneLocale
   
   @js.native
+  sealed trait `en-SL` extends MobilePhoneLocale
+  
+  @js.native
   sealed trait `en-TZ` extends MobilePhoneLocale
   
   @js.native
@@ -444,10 +558,19 @@ object expressValidatorStrings {
        with MobilePhoneLocale
   
   @js.native
+  sealed trait `en-ZW` extends MobilePhoneLocale
+  
+  @js.native
   sealed trait equals extends js.Object
   
   @js.native
   sealed trait `es-CL` extends MobilePhoneLocale
+  
+  @js.native
+  sealed trait `es-CO` extends MobilePhoneLocale
+  
+  @js.native
+  sealed trait `es-CR` extends MobilePhoneLocale
   
   @js.native
   sealed trait `es-EC` extends MobilePhoneLocale
@@ -495,7 +618,9 @@ object expressValidatorStrings {
   sealed trait `fo-FO` extends MobilePhoneLocale
   
   @js.native
-  sealed trait `fr-BE` extends AlphanumericLocale
+  sealed trait `fr-BE`
+    extends AlphanumericLocale
+       with MobilePhoneLocale
   
   @js.native
   sealed trait `fr-FR`
@@ -592,6 +717,9 @@ object expressValidatorStrings {
   sealed trait isDataURI extends js.Object
   
   @js.native
+  sealed trait isDate extends js.Object
+  
+  @js.native
   sealed trait isDecimal extends js.Object
   
   @js.native
@@ -635,6 +763,9 @@ object expressValidatorStrings {
   
   @js.native
   sealed trait isIBAN extends js.Object
+  
+  @js.native
+  sealed trait isIMEI extends js.Object
   
   @js.native
   sealed trait isIP extends js.Object
@@ -743,6 +874,9 @@ object expressValidatorStrings {
   
   @js.native
   sealed trait isSurrogatePair extends js.Object
+  
+  @js.native
+  sealed trait isTaxID extends js.Object
   
   @js.native
   sealed trait isURL extends js.Object
@@ -971,7 +1105,9 @@ object expressValidatorStrings {
   sealed trait withMessage extends js.Object
   
   @js.native
-  sealed trait `zh-CN` extends MobilePhoneLocale
+  sealed trait `zh-CN`
+    extends IdentityCard
+       with MobilePhoneLocale
   
   @js.native
   sealed trait `zh-HK` extends MobilePhoneLocale
@@ -990,6 +1126,10 @@ object expressValidatorStrings {
   @scala.inline
   def AD: AD = "AD".asInstanceOf[AD]
   @scala.inline
+  def AM: AM = "AM".asInstanceOf[AM]
+  @scala.inline
+  def AR: AR = "AR".asInstanceOf[AR]
+  @scala.inline
   def AT: AT = "AT".asInstanceOf[AT]
   @scala.inline
   def AU: AU = "AU".asInstanceOf[AU]
@@ -1003,6 +1143,10 @@ object expressValidatorStrings {
   def CA: CA = "CA".asInstanceOf[CA]
   @scala.inline
   def CH: CH = "CH".asInstanceOf[CH]
+  @scala.inline
+  def CN: CN = "CN".asInstanceOf[CN]
+  @scala.inline
+  def CY: CY = "CY".asInstanceOf[CY]
   @scala.inline
   def CZ: CZ = "CZ".asInstanceOf[CZ]
   @scala.inline
@@ -1030,6 +1174,8 @@ object expressValidatorStrings {
   @scala.inline
   def ID: ID = "ID".asInstanceOf[ID]
   @scala.inline
+  def IE: IE = "IE".asInstanceOf[IE]
+  @scala.inline
   def IL: IL = "IL".asInstanceOf[IL]
   @scala.inline
   def IN: IN = "IN".asInstanceOf[IN]
@@ -1043,6 +1189,8 @@ object expressValidatorStrings {
   def JP: JP = "JP".asInstanceOf[JP]
   @scala.inline
   def KE: KE = "KE".asInstanceOf[KE]
+  @scala.inline
+  def KR: KR = "KR".asInstanceOf[KR]
   @scala.inline
   def LI: LI = "LI".asInstanceOf[LI]
   @scala.inline
@@ -1060,9 +1208,13 @@ object expressValidatorStrings {
   @scala.inline
   def NO: NO = "NO".asInstanceOf[NO]
   @scala.inline
+  def NP: NP = "NP".asInstanceOf[NP]
+  @scala.inline
   def NZ: NZ = "NZ".asInstanceOf[NZ]
   @scala.inline
   def PL: PL = "PL".asInstanceOf[PL]
+  @scala.inline
+  def PO: PO = "PO".asInstanceOf[PO]
   @scala.inline
   def PR: PR = "PR".asInstanceOf[PR]
   @scala.inline
@@ -1078,7 +1230,13 @@ object expressValidatorStrings {
   @scala.inline
   def SI: SI = "SI".asInstanceOf[SI]
   @scala.inline
+  def SK: SK = "SK".asInstanceOf[SK]
+  @scala.inline
+  def SL: SL = "SL".asInstanceOf[SL]
+  @scala.inline
   def TN: TN = "TN".asInstanceOf[TN]
+  @scala.inline
+  def TR: TR = "TR".asInstanceOf[TR]
   @scala.inline
   def TW: TW = "TW".asInstanceOf[TW]
   @scala.inline
@@ -1094,9 +1252,9 @@ object expressValidatorStrings {
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline
-  def any: any = "any".asInstanceOf[any]
+  def `am-AM`: `am-AM` = "am-AM".asInstanceOf[`am-AM`]
   @scala.inline
-  def ar: ar = "ar".asInstanceOf[ar]
+  def any: any = "any".asInstanceOf[any]
   @scala.inline
   def `ar-AE`: `ar-AE` = "ar-AE".asInstanceOf[`ar-AE`]
   @scala.inline
@@ -1132,6 +1290,8 @@ object expressValidatorStrings {
   @scala.inline
   def `ar-YE`: `ar-YE` = "ar-YE".asInstanceOf[`ar-YE`]
   @scala.inline
+  def ar_ : ar_ = "ar".asInstanceOf[ar_]
+  @scala.inline
   def `be-BY`: `be-BY` = "be-BY".asInstanceOf[`be-BY`]
   @scala.inline
   def `bg-BG`: `bg-BG` = "bg-BG".asInstanceOf[`bg-BG`]
@@ -1143,6 +1303,8 @@ object expressValidatorStrings {
   def `bn-BD`: `bn-BD` = "bn-BD".asInstanceOf[`bn-BD`]
   @scala.inline
   def body: body = "body".asInstanceOf[body]
+  @scala.inline
+  def `bs-BA`: `bs-BA` = "bs-BA".asInstanceOf[`bs-BA`]
   @scala.inline
   def contains: contains = "contains".asInstanceOf[contains]
   @scala.inline
@@ -1161,6 +1323,8 @@ object expressValidatorStrings {
   def `da-DK`: `da-DK` = "da-DK".asInstanceOf[`da-DK`]
   @scala.inline
   def `de-AT`: `de-AT` = "de-AT".asInstanceOf[`de-AT`]
+  @scala.inline
+  def `de-CH`: `de-CH` = "de-CH".asInstanceOf[`de-CH`]
   @scala.inline
   def `de-DE`: `de-DE` = "de-DE".asInstanceOf[`de-DE`]
   @scala.inline
@@ -1198,6 +1362,8 @@ object expressValidatorStrings {
   @scala.inline
   def `en-SG`: `en-SG` = "en-SG".asInstanceOf[`en-SG`]
   @scala.inline
+  def `en-SL`: `en-SL` = "en-SL".asInstanceOf[`en-SL`]
+  @scala.inline
   def `en-TZ`: `en-TZ` = "en-TZ".asInstanceOf[`en-TZ`]
   @scala.inline
   def `en-UG`: `en-UG` = "en-UG".asInstanceOf[`en-UG`]
@@ -1208,9 +1374,15 @@ object expressValidatorStrings {
   @scala.inline
   def `en-ZM`: `en-ZM` = "en-ZM".asInstanceOf[`en-ZM`]
   @scala.inline
+  def `en-ZW`: `en-ZW` = "en-ZW".asInstanceOf[`en-ZW`]
+  @scala.inline
   def equals: equals = "equals".asInstanceOf[equals]
   @scala.inline
   def `es-CL`: `es-CL` = "es-CL".asInstanceOf[`es-CL`]
+  @scala.inline
+  def `es-CO`: `es-CO` = "es-CO".asInstanceOf[`es-CO`]
+  @scala.inline
+  def `es-CR`: `es-CR` = "es-CR".asInstanceOf[`es-CR`]
   @scala.inline
   def `es-EC`: `es-EC` = "es-EC".asInstanceOf[`es-EC`]
   @scala.inline
@@ -1296,6 +1468,8 @@ object expressValidatorStrings {
   @scala.inline
   def isDataURI: isDataURI = "isDataURI".asInstanceOf[isDataURI]
   @scala.inline
+  def isDate: isDate = "isDate".asInstanceOf[isDate]
+  @scala.inline
   def isDecimal: isDecimal = "isDecimal".asInstanceOf[isDecimal]
   @scala.inline
   def isDivisibleBy: isDivisibleBy = "isDivisibleBy".asInstanceOf[isDivisibleBy]
@@ -1325,6 +1499,8 @@ object expressValidatorStrings {
   def isHexadecimal: isHexadecimal = "isHexadecimal".asInstanceOf[isHexadecimal]
   @scala.inline
   def isIBAN: isIBAN = "isIBAN".asInstanceOf[isIBAN]
+  @scala.inline
+  def isIMEI: isIMEI = "isIMEI".asInstanceOf[isIMEI]
   @scala.inline
   def isIP: isIP = "isIP".asInstanceOf[isIP]
   @scala.inline
@@ -1397,6 +1573,8 @@ object expressValidatorStrings {
   def isString: isString = "isString".asInstanceOf[isString]
   @scala.inline
   def isSurrogatePair: isSurrogatePair = "isSurrogatePair".asInstanceOf[isSurrogatePair]
+  @scala.inline
+  def isTaxID: isTaxID = "isTaxID".asInstanceOf[isTaxID]
   @scala.inline
   def isURL: isURL = "isURL".asInstanceOf[isURL]
   @scala.inline

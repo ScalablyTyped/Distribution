@@ -15,7 +15,7 @@ trait GridAutoColumnsProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] 
 
 object GridAutoColumnsProps {
   @scala.inline
-  def apply[ThemeType, TVal](gridAutoColumns: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): GridAutoColumnsProps[ThemeType, TVal] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType, TVal](gridAutoColumns: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): GridAutoColumnsProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(gridAutoColumns)) __obj.updateDynamic("gridAutoColumns")(gridAutoColumns.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridAutoColumnsProps[ThemeType, TVal]]

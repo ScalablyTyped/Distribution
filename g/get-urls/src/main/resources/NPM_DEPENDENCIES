@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "get-urls" : "9.2.0"
+      "get-urls" : "9.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "get-urls" : "9.2.0"
+      "get-urls" : "9.2.1"
     }
   ],
   "compile-devDependencies" : [

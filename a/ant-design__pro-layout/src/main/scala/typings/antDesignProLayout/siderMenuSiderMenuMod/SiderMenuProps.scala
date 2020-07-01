@@ -1,6 +1,12 @@
 package typings.antDesignProLayout.siderMenuSiderMenuMod
 
 import typings.antDesignProLayout.antDesignProLayoutBooleans.`false`
+import typings.antDesignProLayout.antDesignProLayoutStrings.lg
+import typings.antDesignProLayout.antDesignProLayoutStrings.md
+import typings.antDesignProLayout.antDesignProLayoutStrings.sm
+import typings.antDesignProLayout.antDesignProLayoutStrings.xl
+import typings.antDesignProLayout.antDesignProLayoutStrings.xs
+import typings.antDesignProLayout.antDesignProLayoutStrings.xxl
 import typings.antDesignProLayout.typingsMod.WithFalse
 import typings.react.mod.CSSProperties
 import typings.react.mod.MouseEvent
@@ -12,10 +18,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<'className' | 'collapsed' | 'isMobile' | 'menuData' | 'mode' | 'openKeys' | 'menuProps' | 'style' | 'theme' | 'subMenuItemRender' | 'menuItemRender', ['onCollapse']> ]: @ant-design/pro-layout.@ant-design/pro-layout/lib/SiderMenu/BaseMenu.BaseMenuProps[P]} */ trait SiderMenuProps extends js.Object {
-  var breakpoint: js.UndefOr[
-    (/* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SiderProps * / any['breakpoint'] */ js.Any) | `false`
-  ] = js.undefined
+- Dropped {[ P in std.Exclude<'className' | 'collapsed' | 'isMobile' | 'menuData' | 'mode' | 'openKeys' | 'menuProps' | 'style' | 'theme' | 'subMenuItemRender' | 'menuItemRender' | 'computedMatch' | 'location' | 'staticContext' | 'match' | 'route' | 'history' | 'openAnimation' | 'getPopupContainer' | 'defaultSelectedKeys' | 'onMouseEnter' | 'multiple' | 'onSelect' | 'selectable' | 'defaultOpenKeys' | 'motion' | 'inlineCollapsed' | 'subMenuCloseDelay' | 'openTransitionName' | 'forceSubMenuRender' | 'selectedKeys' | 'onDeselect' | 'overflowedIndicator' | 'prefixCls' | 'id' | 'focusable' | 'triggerSubMenuAction' | 'inlineIndent' | 'onClick' | 'subMenuOpenDelay' | 'fixSiderbar' | 'layout' | 'fixedHeader' | 'menu' | 'contentWidth' | 'iconfontUrl' | 'primaryColor' | 'colorWeak' | 'navTheme' | 'title', ['onCollapse']> ]: @ant-design/pro-layout.@ant-design/pro-layout/lib/SiderMenu/BaseMenu.BaseMenuProps[P]} */ trait SiderMenuProps extends js.Object {
+  var breakpoint: js.UndefOr[xs | sm | md | lg | xl | xxl | `false`] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var hide: js.UndefOr[Boolean] = js.undefined
   var links: js.UndefOr[js.Array[ReactNode]] = js.undefined
@@ -39,7 +43,7 @@ import scala.scalajs.js.annotation._
 object SiderMenuProps {
   @scala.inline
   def apply(
-    breakpoint: (/* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SiderProps * / any['breakpoint'] */ js.Any) | `false` = null,
+    breakpoint: xs | sm | md | lg | xl | xxl | `false` = null,
     className: String = null,
     hide: js.UndefOr[Boolean] = js.undefined,
     links: js.Array[ReactNode] = null,

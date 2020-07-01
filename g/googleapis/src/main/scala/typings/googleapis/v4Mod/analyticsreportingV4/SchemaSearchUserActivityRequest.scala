@@ -58,7 +58,7 @@ object SchemaSearchUserActivityRequest {
   def apply(
     activityTypes: js.Array[String] = null,
     dateRange: SchemaDateRange = null,
-    pageSize: Int | Double = null,
+    pageSize: js.UndefOr[Double] = js.undefined,
     pageToken: String = null,
     user: SchemaUser = null,
     viewId: String = null
@@ -66,7 +66,7 @@ object SchemaSearchUserActivityRequest {
     val __obj = js.Dynamic.literal()
     if (activityTypes != null) __obj.updateDynamic("activityTypes")(activityTypes.asInstanceOf[js.Any])
     if (dateRange != null) __obj.updateDynamic("dateRange")(dateRange.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     if (viewId != null) __obj.updateDynamic("viewId")(viewId.asInstanceOf[js.Any])

@@ -1,9 +1,9 @@
 package typings.firebaseFirestore
 
 import typings.firebaseFirestore.asyncQueueMod.AsyncQueue
+import typings.firebaseFirestore.coreTransactionMod.Transaction
+import typings.firebaseFirestore.datastoreMod.Datastore
 import typings.firebaseFirestore.promiseMod.Deferred
-import typings.firebaseFirestore.remoteStoreMod.RemoteStore
-import typings.firebaseFirestore.transactionMod.Transaction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,16 +15,16 @@ object transactionRunnerMod extends js.Object {
   class TransactionRunner[T] protected () extends js.Object {
     def this(
       asyncQueue: AsyncQueue,
-      remoteStore: RemoteStore,
+      datastore: Datastore,
       updateFunction: js.Function1[/* transaction */ Transaction, js.Promise[T]],
       deferred: Deferred[T]
     ) = this()
     val asyncQueue: js.Any = js.native
     var backoff: js.Any = js.native
+    val datastore: js.Any = js.native
     val deferred: js.Any = js.native
     var handleTransactionError: js.Any = js.native
     var isRetryableTransactionError: js.Any = js.native
-    val remoteStore: js.Any = js.native
     var retries: js.Any = js.native
     var runWithBackOff: js.Any = js.native
     var tryRunUpdateFunction: js.Any = js.native

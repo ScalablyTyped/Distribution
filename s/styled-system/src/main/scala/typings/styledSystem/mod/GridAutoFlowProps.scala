@@ -17,7 +17,7 @@ trait GridAutoFlowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends j
 
 object GridAutoFlowProps {
   @scala.inline
-  def apply[ThemeType](gridAutoFlow: js.UndefOr[Null | (ResponsiveValue[GridAutoFlowProperty, ThemeType])] = js.undefined): GridAutoFlowProps[ThemeType] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](gridAutoFlow: js.UndefOr[Null | (ResponsiveValue[GridAutoFlowProperty, ThemeType])] = js.undefined): GridAutoFlowProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(gridAutoFlow)) __obj.updateDynamic("gridAutoFlow")(gridAutoFlow.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridAutoFlowProps[ThemeType]]

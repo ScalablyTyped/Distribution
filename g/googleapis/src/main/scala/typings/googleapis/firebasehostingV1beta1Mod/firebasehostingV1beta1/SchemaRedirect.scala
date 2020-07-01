@@ -36,11 +36,11 @@ trait SchemaRedirect extends js.Object {
 
 object SchemaRedirect {
   @scala.inline
-  def apply(glob: String = null, location: String = null, statusCode: Int | Double = null): SchemaRedirect = {
+  def apply(glob: String = null, location: String = null, statusCode: js.UndefOr[Double] = js.undefined): SchemaRedirect = {
     val __obj = js.Dynamic.literal()
     if (glob != null) __obj.updateDynamic("glob")(glob.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusCode)) __obj.updateDynamic("statusCode")(statusCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRedirect]
   }
 }

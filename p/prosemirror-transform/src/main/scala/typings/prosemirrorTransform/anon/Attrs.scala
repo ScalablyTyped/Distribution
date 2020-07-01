@@ -14,7 +14,7 @@ trait Attrs[S /* <: Schema[_, _] */] extends js.Object {
 
 object Attrs {
   @scala.inline
-  def apply[S](`type`: NodeType[S], attrs: js.UndefOr[Null | StringDictionary[js.Any]] = js.undefined): Attrs[S] = {
+  def apply[/* <: typings.prosemirrorModel.mod.Schema[_, _] */ S](`type`: NodeType[S], attrs: js.UndefOr[Null | StringDictionary[js.Any]] = js.undefined): Attrs[S] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(attrs)) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])

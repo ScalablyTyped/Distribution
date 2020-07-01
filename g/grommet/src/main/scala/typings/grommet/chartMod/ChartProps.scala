@@ -4,8 +4,10 @@ import typings.grommet.anon.Color
 import typings.grommet.anon.Height
 import typings.grommet.anon.Label
 import typings.grommet.anon.Value
+import typings.grommet.anon.Vertical
 import typings.grommet.grommetStrings.area
 import typings.grommet.grommetStrings.bar
+import typings.grommet.grommetStrings.fill
 import typings.grommet.grommetStrings.full
 import typings.grommet.grommetStrings.hair
 import typings.grommet.grommetStrings.large
@@ -19,6 +21,7 @@ import typings.grommet.grommetStrings.xsmall
 import typings.grommet.grommetStrings.xxsmall
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
+import typings.grommet.utilsMod.EdgeSizeType
 import typings.grommet.utilsMod.GapType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
@@ -38,8 +41,11 @@ trait ChartProps extends js.Object {
   var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var onHover: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var overflow: js.UndefOr[Boolean] = js.undefined
+  var pad: js.UndefOr[EdgeSizeType | Vertical] = js.undefined
   var round: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | full | Height | String] = js.undefined
+  var size: js.UndefOr[
+    xxsmall | xsmall | small | medium | large | xlarge | fill | full | Height | String
+  ] = js.undefined
   var thickness: js.UndefOr[hair | xsmall | small | medium | large | xlarge | none | String] = js.undefined
   var `type`: js.UndefOr[bar | line | area | point] = js.undefined
   var values: js.Array[Double | js.Array[Double] | Label]
@@ -60,8 +66,9 @@ object ChartProps {
     onClick: /* repeated */ js.Any => _ = null,
     onHover: /* repeated */ js.Any => _ = null,
     overflow: js.UndefOr[Boolean] = js.undefined,
+    pad: EdgeSizeType | Vertical = null,
     round: js.UndefOr[Boolean] = js.undefined,
-    size: xxsmall | xsmall | small | medium | large | xlarge | full | Height | String = null,
+    size: xxsmall | xsmall | small | medium | large | xlarge | fill | full | Height | String = null,
     thickness: hair | xsmall | small | medium | large | xlarge | none | String = null,
     `type`: bar | line | area | point = null
   ): ChartProps = {
@@ -77,6 +84,7 @@ object ChartProps {
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onHover != null) __obj.updateDynamic("onHover")(js.Any.fromFunction1(onHover))
     if (!js.isUndefined(overflow)) __obj.updateDynamic("overflow")(overflow.get.asInstanceOf[js.Any])
+    if (pad != null) __obj.updateDynamic("pad")(pad.asInstanceOf[js.Any])
     if (!js.isUndefined(round)) __obj.updateDynamic("round")(round.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (thickness != null) __obj.updateDynamic("thickness")(thickness.asInstanceOf[js.Any])

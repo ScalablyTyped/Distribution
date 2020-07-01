@@ -67,6 +67,7 @@ object RadarChartProps {
     dragDecelerationEnabled: js.UndefOr[Boolean] = js.undefined,
     dragDecelerationFrictionCoef: js.UndefOr[Double] = js.undefined,
     drawWeb: js.UndefOr[Boolean] = js.undefined,
+    focusable: js.UndefOr[Boolean] = js.undefined,
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
     highlightPerTapEnabled: js.UndefOr[Boolean] = js.undefined,
     highlights: js.Array[DataIndex] = null,
@@ -149,6 +150,7 @@ object RadarChartProps {
     if (!js.isUndefined(dragDecelerationEnabled)) __obj.updateDynamic("dragDecelerationEnabled")(dragDecelerationEnabled.get.asInstanceOf[js.Any])
     if (!js.isUndefined(dragDecelerationFrictionCoef)) __obj.updateDynamic("dragDecelerationFrictionCoef")(dragDecelerationFrictionCoef.get.asInstanceOf[js.Any])
     if (!js.isUndefined(drawWeb)) __obj.updateDynamic("drawWeb")(drawWeb.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.get.asInstanceOf[js.Any])
     if (!js.isUndefined(highlightPerTapEnabled)) __obj.updateDynamic("highlightPerTapEnabled")(highlightPerTapEnabled.get.asInstanceOf[js.Any])
     if (highlights != null) __obj.updateDynamic("highlights")(highlights.asInstanceOf[js.Any])

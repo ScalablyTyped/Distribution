@@ -1,6 +1,7 @@
 package typings.firebaseFirestore
 
 import typings.firebaseLogger.loggerMod.LogLevel
+import typings.firebaseLogger.loggerMod.LogLevelString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,9 @@ object logMod extends js.Object {
   def getLogLevel(): LogLevel = js.native
   def logDebug(msg: String, obj: js.Any*): Unit = js.native
   def logError(msg: String, obj: js.Any*): Unit = js.native
+  def logWarn(msg: String, obj: js.Any*): Unit = js.native
   def setLogLevel(newLevel: LogLevel): Unit = js.native
+  def setLogLevel(newLevel: LogLevelString): Unit = js.native
   @js.native
   object LogLevel extends js.Object {
     /* 0 */ val DEBUG: typings.firebaseLogger.loggerMod.LogLevel.DEBUG with Double = js.native

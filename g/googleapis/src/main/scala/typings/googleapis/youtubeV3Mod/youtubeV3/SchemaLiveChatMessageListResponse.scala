@@ -55,7 +55,7 @@ object SchemaLiveChatMessageListResponse {
     nextPageToken: String = null,
     offlineAt: String = null,
     pageInfo: SchemaPageInfo = null,
-    pollingIntervalMillis: Int | Double = null,
+    pollingIntervalMillis: js.UndefOr[Double] = js.undefined,
     tokenPagination: SchemaTokenPagination = null,
     visitorId: String = null
   ): SchemaLiveChatMessageListResponse = {
@@ -67,7 +67,7 @@ object SchemaLiveChatMessageListResponse {
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     if (offlineAt != null) __obj.updateDynamic("offlineAt")(offlineAt.asInstanceOf[js.Any])
     if (pageInfo != null) __obj.updateDynamic("pageInfo")(pageInfo.asInstanceOf[js.Any])
-    if (pollingIntervalMillis != null) __obj.updateDynamic("pollingIntervalMillis")(pollingIntervalMillis.asInstanceOf[js.Any])
+    if (!js.isUndefined(pollingIntervalMillis)) __obj.updateDynamic("pollingIntervalMillis")(pollingIntervalMillis.get.asInstanceOf[js.Any])
     if (tokenPagination != null) __obj.updateDynamic("tokenPagination")(tokenPagination.asInstanceOf[js.Any])
     if (visitorId != null) __obj.updateDynamic("visitorId")(visitorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLiveChatMessageListResponse]

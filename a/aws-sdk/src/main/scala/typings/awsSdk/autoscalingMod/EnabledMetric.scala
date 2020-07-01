@@ -11,7 +11,7 @@ trait EnabledMetric extends js.Object {
     */
   var Granularity: js.UndefOr[XmlStringMaxLen255] = js.native
   /**
-    * One of the following metrics:    GroupMinSize     GroupMaxSize     GroupDesiredCapacity     GroupInServiceInstances     GroupPendingInstances     GroupStandbyInstances     GroupTerminatingInstances     GroupTotalInstances   
+    * One of the following metrics:    GroupMinSize     GroupMaxSize     GroupDesiredCapacity     GroupInServiceInstances     GroupPendingInstances     GroupStandbyInstances     GroupTerminatingInstances     GroupTotalInstances     GroupInServiceCapacity     GroupPendingCapacity     GroupStandbyCapacity     GroupTerminatingCapacity     GroupTotalCapacity   
     */
   var Metric: js.UndefOr[XmlStringMaxLen255] = js.native
 }

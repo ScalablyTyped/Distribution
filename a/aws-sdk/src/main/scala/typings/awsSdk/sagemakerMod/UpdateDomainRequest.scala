@@ -11,7 +11,7 @@ trait UpdateDomainRequest extends js.Object {
     */
   var DefaultUserSettings: js.UndefOr[UserSettings] = js.native
   /**
-    * The domain ID.
+    * The ID of the domain to be updated.
     */
   var DomainId: typings.awsSdk.sagemakerMod.DomainId = js.native
 }

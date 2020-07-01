@@ -11,7 +11,7 @@ trait ProvideResolveFeature[T1 /* <: js.Function */, T2 /* <: js.Function */] ex
 
 object ProvideResolveFeature {
   @scala.inline
-  def apply[T1, T2](provide: T1, resolve: T2): ProvideResolveFeature[T1, T2] = {
+  def apply[/* <: js.Function */ T1, /* <: js.Function */ T2](provide: T1, resolve: T2): ProvideResolveFeature[T1, T2] = {
     val __obj = js.Dynamic.literal(provide = provide.asInstanceOf[js.Any], resolve = resolve.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvideResolveFeature[T1, T2]]
   }

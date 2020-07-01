@@ -1,8 +1,8 @@
 package typings.googleapis.discoveryV1Mod.discoveryV1
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.googleapis.AnonDiscriminant
-import typings.googleapis.AnonRequired
+import typings.googleapis.anon.Discriminant
+import typings.googleapis.anon.Required
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ trait SchemaJsonSchema extends js.Object {
   /**
     * Additional information about this property.
     */
-  var annotations: js.UndefOr[AnonRequired] = js.native
+  var annotations: js.UndefOr[Required] = js.native
   /**
     * The default value of this property (if one exists).
     */
@@ -103,7 +103,7 @@ trait SchemaJsonSchema extends js.Object {
     * how to interpret the entire entity. Its value must exist in a map of
     * descriminant values to schema names.
     */
-  var variant: js.UndefOr[AnonDiscriminant] = js.native
+  var variant: js.UndefOr[Discriminant] = js.native
 }
 
 object SchemaJsonSchema {
@@ -111,7 +111,7 @@ object SchemaJsonSchema {
   def apply(
     $ref: String = null,
     additionalProperties: SchemaJsonSchema = null,
-    annotations: AnonRequired = null,
+    annotations: Required = null,
     default: String = null,
     description: String = null,
     enum: js.Array[String] = null,
@@ -128,7 +128,7 @@ object SchemaJsonSchema {
     repeated: js.UndefOr[Boolean] = js.undefined,
     required: js.UndefOr[Boolean] = js.undefined,
     `type`: String = null,
-    variant: AnonDiscriminant = null
+    variant: Discriminant = null
   ): SchemaJsonSchema = {
     val __obj = js.Dynamic.literal()
     if ($ref != null) __obj.updateDynamic("$ref")($ref.asInstanceOf[js.Any])
@@ -146,9 +146,9 @@ object SchemaJsonSchema {
     if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(repeated)) __obj.updateDynamic("repeated")(repeated.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeated)) __obj.updateDynamic("repeated")(repeated.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaJsonSchema]

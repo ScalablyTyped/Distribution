@@ -16,7 +16,7 @@ trait BodyTHeadersHeaders[T /* <: CustomResource */] extends js.Object {
 
 object BodyTHeadersHeaders {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.fhirKitClient.mod.CustomResource */ T](
     body: T,
     id: String,
     resourceType: CustomResourceType,

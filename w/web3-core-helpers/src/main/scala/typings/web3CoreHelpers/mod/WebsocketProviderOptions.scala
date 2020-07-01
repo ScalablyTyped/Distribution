@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WebsocketProviderOptions extends js.Object {
-  var clientConfig: js.UndefOr[String] = js.undefined
+  var clientConfig: js.UndefOr[js.Object] = js.undefined
   var headers: js.UndefOr[js.Any] = js.undefined
   var host: js.UndefOr[String] = js.undefined
   var origin: js.UndefOr[String] = js.undefined
@@ -19,7 +19,7 @@ trait WebsocketProviderOptions extends js.Object {
 object WebsocketProviderOptions {
   @scala.inline
   def apply(
-    clientConfig: String = null,
+    clientConfig: js.Object = null,
     headers: js.Any = null,
     host: String = null,
     origin: String = null,

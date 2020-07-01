@@ -9,8 +9,8 @@ package object mod {
     * http://js.cytoscape.org/#collection/style
     */
   type ClassName = java.lang.String
-  /** A space-separated list of class names */
-  type ClassNames = java.lang.String
+  /** A space-separated list of class names or an array */
+  type ClassNames = java.lang.String | js.Array[typings.cytoscape.mod.ClassName]
   /**
     * The output is a collection of node and edge elements OR single element.
     */

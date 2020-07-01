@@ -66,18 +66,18 @@ object SchemaEnterprise {
     enterpriseDisplayName: String = null,
     logo: SchemaExternalData = null,
     name: String = null,
-    primaryColor: Int | Double = null,
+    primaryColor: js.UndefOr[Double] = js.undefined,
     pubsubTopic: String = null,
     signinDetails: js.Array[SchemaSigninDetail] = null,
     termsAndConditions: js.Array[SchemaTermsAndConditions] = null
   ): SchemaEnterprise = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(appAutoApprovalEnabled)) __obj.updateDynamic("appAutoApprovalEnabled")(appAutoApprovalEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(appAutoApprovalEnabled)) __obj.updateDynamic("appAutoApprovalEnabled")(appAutoApprovalEnabled.get.asInstanceOf[js.Any])
     if (enabledNotificationTypes != null) __obj.updateDynamic("enabledNotificationTypes")(enabledNotificationTypes.asInstanceOf[js.Any])
     if (enterpriseDisplayName != null) __obj.updateDynamic("enterpriseDisplayName")(enterpriseDisplayName.asInstanceOf[js.Any])
     if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(primaryColor)) __obj.updateDynamic("primaryColor")(primaryColor.get.asInstanceOf[js.Any])
     if (pubsubTopic != null) __obj.updateDynamic("pubsubTopic")(pubsubTopic.asInstanceOf[js.Any])
     if (signinDetails != null) __obj.updateDynamic("signinDetails")(signinDetails.asInstanceOf[js.Any])
     if (termsAndConditions != null) __obj.updateDynamic("termsAndConditions")(termsAndConditions.asInstanceOf[js.Any])

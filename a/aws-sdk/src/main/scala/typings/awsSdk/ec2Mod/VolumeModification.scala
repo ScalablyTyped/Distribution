@@ -19,7 +19,7 @@ trait VolumeModification extends js.Object {
     */
   var OriginalIops: js.UndefOr[Integer] = js.native
   /**
-    * The original size of the volume.
+    * The original size of the volume, in GiB.
     */
   var OriginalSize: js.UndefOr[Integer] = js.native
   /**

@@ -1,8 +1,8 @@
 package typings.gapiClientDiscovery.gapi.client.discovery
 
+import org.scalablytyped.runtime.TopLevel
 import typings.gapiClientDiscovery.anon.Oauth2
 import typings.gapiClientDiscovery.anon.X16
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,7 +39,11 @@ trait RestDescription extends js.Object {
   /** Labels for the status of this API, such as labs or deprecated. */
   var labels: js.UndefOr[js.Array[String]] = js.undefined
   /** API-level methods for this API. */
-  var methods: js.UndefOr[Record[String, RestMethod]] = js.undefined
+  var methods: js.UndefOr[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: gapi.client.discovery.gapi.client.discovery.RestMethod}
+    */ typings.gapiClientDiscovery.gapiClientDiscoveryStrings.RestDescription with TopLevel[js.Any]
+  ] = js.undefined
   /** The name of this API. */
   var name: js.UndefOr[String] = js.undefined
   /**
@@ -52,17 +56,29 @@ trait RestDescription extends js.Object {
   /** The package of the owner of this API. See ownerDomain. */
   var packagePath: js.UndefOr[String] = js.undefined
   /** Common parameters that apply across all apis. */
-  var parameters: js.UndefOr[Record[String, JsonSchema]] = js.undefined
+  var parameters: js.UndefOr[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: gapi.client.discovery.gapi.client.discovery.JsonSchema}
+    */ typings.gapiClientDiscovery.gapiClientDiscoveryStrings.RestDescription with TopLevel[js.Any]
+  ] = js.undefined
   /** The protocol described by this document. */
   var protocol: js.UndefOr[String] = js.undefined
   /** The resources in this API. */
-  var resources: js.UndefOr[Record[String, RestResource]] = js.undefined
+  var resources: js.UndefOr[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: gapi.client.discovery.gapi.client.discovery.RestResource}
+    */ typings.gapiClientDiscovery.gapiClientDiscoveryStrings.RestDescription with TopLevel[js.Any]
+  ] = js.undefined
   /** The version of this API. */
   var revision: js.UndefOr[String] = js.undefined
   /** The root URL under which all API services live. */
   var rootUrl: js.UndefOr[String] = js.undefined
   /** The schemas for this API. */
-  var schemas: js.UndefOr[Record[String, JsonSchema]] = js.undefined
+  var schemas: js.UndefOr[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: gapi.client.discovery.gapi.client.discovery.JsonSchema}
+    */ typings.gapiClientDiscovery.gapiClientDiscoveryStrings.RestDescription with TopLevel[js.Any]
+  ] = js.undefined
   /** The base path for all REST requests. */
   var servicePath: js.UndefOr[String] = js.undefined
   /** The title of this API. */
@@ -90,17 +106,25 @@ object RestDescription {
     id: String = null,
     kind: String = null,
     labels: js.Array[String] = null,
-    methods: Record[String, RestMethod] = null,
+    methods: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: gapi.client.discovery.gapi.client.discovery.RestMethod}
+    */ typings.gapiClientDiscovery.gapiClientDiscoveryStrings.RestDescription with TopLevel[js.Any] = null,
     name: String = null,
     ownerDomain: String = null,
     ownerName: String = null,
     packagePath: String = null,
-    parameters: Record[String, JsonSchema] = null,
+    parameters: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: gapi.client.discovery.gapi.client.discovery.JsonSchema}
+    */ typings.gapiClientDiscovery.gapiClientDiscoveryStrings.RestDescription with TopLevel[js.Any] = null,
     protocol: String = null,
-    resources: Record[String, RestResource] = null,
+    resources: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: gapi.client.discovery.gapi.client.discovery.RestResource}
+    */ typings.gapiClientDiscovery.gapiClientDiscoveryStrings.RestDescription with TopLevel[js.Any] = null,
     revision: String = null,
     rootUrl: String = null,
-    schemas: Record[String, JsonSchema] = null,
+    schemas: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: gapi.client.discovery.gapi.client.discovery.JsonSchema}
+    */ typings.gapiClientDiscovery.gapiClientDiscoveryStrings.RestDescription with TopLevel[js.Any] = null,
     servicePath: String = null,
     title: String = null,
     version: String = null,

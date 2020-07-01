@@ -194,7 +194,7 @@ object SchemaTimelineItem {
     location: SchemaLocation = null,
     menuItems: js.Array[SchemaMenuItem] = null,
     notification: SchemaNotificationConfig = null,
-    pinScore: Int | Double = null,
+    pinScore: js.UndefOr[Double] = js.undefined,
     recipients: js.Array[SchemaContact] = null,
     selfLink: String = null,
     sourceItemId: String = null,
@@ -215,14 +215,14 @@ object SchemaTimelineItem {
     if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inReplyTo != null) __obj.updateDynamic("inReplyTo")(inReplyTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBundleCover)) __obj.updateDynamic("isBundleCover")(isBundleCover.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDeleted)) __obj.updateDynamic("isDeleted")(isDeleted.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPinned)) __obj.updateDynamic("isPinned")(isPinned.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBundleCover)) __obj.updateDynamic("isBundleCover")(isBundleCover.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDeleted)) __obj.updateDynamic("isDeleted")(isDeleted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPinned)) __obj.updateDynamic("isPinned")(isPinned.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (menuItems != null) __obj.updateDynamic("menuItems")(menuItems.asInstanceOf[js.Any])
     if (notification != null) __obj.updateDynamic("notification")(notification.asInstanceOf[js.Any])
-    if (pinScore != null) __obj.updateDynamic("pinScore")(pinScore.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinScore)) __obj.updateDynamic("pinScore")(pinScore.get.asInstanceOf[js.Any])
     if (recipients != null) __obj.updateDynamic("recipients")(recipients.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     if (sourceItemId != null) __obj.updateDynamic("sourceItemId")(sourceItemId.asInstanceOf[js.Any])

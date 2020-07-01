@@ -40,13 +40,13 @@ object SchemaRunQueryResponse {
   def apply(
     document: SchemaDocument = null,
     readTime: String = null,
-    skippedResults: Int | Double = null,
+    skippedResults: js.UndefOr[Double] = js.undefined,
     transaction: String = null
   ): SchemaRunQueryResponse = {
     val __obj = js.Dynamic.literal()
     if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
     if (readTime != null) __obj.updateDynamic("readTime")(readTime.asInstanceOf[js.Any])
-    if (skippedResults != null) __obj.updateDynamic("skippedResults")(skippedResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(skippedResults)) __obj.updateDynamic("skippedResults")(skippedResults.get.asInstanceOf[js.Any])
     if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRunQueryResponse]
   }

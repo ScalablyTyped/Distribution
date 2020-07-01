@@ -65,6 +65,10 @@ class RetrievalQuery protected () extends Element {
     */
   def usedAssociations: IList[String] = js.native
   /**
+    * In version 8.11.0: introduced
+    */
+  def usedAttributes: IList[String] = js.native
+  /**
     * In version 8.4.0: introduced
     */
   def widgetName: String = js.native

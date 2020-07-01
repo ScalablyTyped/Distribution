@@ -28,6 +28,8 @@ trait DataTableProps extends js.Object {
   var contextMenuSelection: js.UndefOr[js.Any] = js.undefined
   var csvSeparator: js.UndefOr[String] = js.undefined
   var currentPageReportTemplate: js.UndefOr[String] = js.undefined
+  var customRestoreState: js.UndefOr[js.Function0[_]] = js.undefined
+  var customSaveState: js.UndefOr[js.Function1[/* state */ js.Any, Unit]] = js.undefined
   var dataKey: js.UndefOr[String] = js.undefined
   var defaultSortOrder: js.UndefOr[Double] = js.undefined
   var editMode: js.UndefOr[String] = js.undefined
@@ -74,6 +76,8 @@ trait DataTableProps extends js.Object {
   var onRowUnselect: js.UndefOr[js.Function1[/* e */ Type, Unit]] = js.undefined
   var onSelectionChange: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
   var onSort: js.UndefOr[js.Function1[/* e */ MultiSortMeta, Unit]] = js.undefined
+  var onStateRestore: js.UndefOr[js.Function1[/* state */ js.Any, Unit]] = js.undefined
+  var onStateSave: js.UndefOr[js.Function1[/* state */ js.Any, Unit]] = js.undefined
   var onValueChange: js.UndefOr[js.Function1[/* value */ js.Array[_], Unit]] = js.undefined
   var onVirtualScroll: js.UndefOr[js.Function1[/* e */ First, Unit]] = js.undefined
   var pageLinkSize: js.UndefOr[Double] = js.undefined
@@ -128,6 +132,8 @@ object DataTableProps {
     contextMenuSelection: js.Any = null,
     csvSeparator: String = null,
     currentPageReportTemplate: String = null,
+    customRestoreState: () => _ = null,
+    customSaveState: /* state */ js.Any => Unit = null,
     dataKey: String = null,
     defaultSortOrder: js.UndefOr[Double] = js.undefined,
     editMode: String = null,
@@ -174,6 +180,8 @@ object DataTableProps {
     onRowUnselect: /* e */ Type => Unit = null,
     onSelectionChange: /* e */ Value => Unit = null,
     onSort: /* e */ MultiSortMeta => Unit = null,
+    onStateRestore: /* state */ js.Any => Unit = null,
+    onStateSave: /* state */ js.Any => Unit = null,
     onValueChange: /* value */ js.Array[_] => Unit = null,
     onVirtualScroll: /* e */ First => Unit = null,
     pageLinkSize: js.UndefOr[Double] = js.undefined,
@@ -225,6 +233,8 @@ object DataTableProps {
     if (contextMenuSelection != null) __obj.updateDynamic("contextMenuSelection")(contextMenuSelection.asInstanceOf[js.Any])
     if (csvSeparator != null) __obj.updateDynamic("csvSeparator")(csvSeparator.asInstanceOf[js.Any])
     if (currentPageReportTemplate != null) __obj.updateDynamic("currentPageReportTemplate")(currentPageReportTemplate.asInstanceOf[js.Any])
+    if (customRestoreState != null) __obj.updateDynamic("customRestoreState")(js.Any.fromFunction0(customRestoreState))
+    if (customSaveState != null) __obj.updateDynamic("customSaveState")(js.Any.fromFunction1(customSaveState))
     if (dataKey != null) __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultSortOrder)) __obj.updateDynamic("defaultSortOrder")(defaultSortOrder.get.asInstanceOf[js.Any])
     if (editMode != null) __obj.updateDynamic("editMode")(editMode.asInstanceOf[js.Any])
@@ -271,6 +281,8 @@ object DataTableProps {
     if (onRowUnselect != null) __obj.updateDynamic("onRowUnselect")(js.Any.fromFunction1(onRowUnselect))
     if (onSelectionChange != null) __obj.updateDynamic("onSelectionChange")(js.Any.fromFunction1(onSelectionChange))
     if (onSort != null) __obj.updateDynamic("onSort")(js.Any.fromFunction1(onSort))
+    if (onStateRestore != null) __obj.updateDynamic("onStateRestore")(js.Any.fromFunction1(onStateRestore))
+    if (onStateSave != null) __obj.updateDynamic("onStateSave")(js.Any.fromFunction1(onStateSave))
     if (onValueChange != null) __obj.updateDynamic("onValueChange")(js.Any.fromFunction1(onValueChange))
     if (onVirtualScroll != null) __obj.updateDynamic("onVirtualScroll")(js.Any.fromFunction1(onVirtualScroll))
     if (!js.isUndefined(pageLinkSize)) __obj.updateDynamic("pageLinkSize")(pageLinkSize.get.asInstanceOf[js.Any])

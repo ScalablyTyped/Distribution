@@ -59,7 +59,7 @@ object SchemaMetricValue {
   def apply(
     boolValue: js.UndefOr[Boolean] = js.undefined,
     distributionValue: SchemaDistribution = null,
-    doubleValue: Int | Double = null,
+    doubleValue: js.UndefOr[Double] = js.undefined,
     endTime: String = null,
     int64Value: String = null,
     labels: StringDictionary[String] = null,
@@ -68,9 +68,9 @@ object SchemaMetricValue {
     stringValue: String = null
   ): SchemaMetricValue = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue.get.asInstanceOf[js.Any])
     if (distributionValue != null) __obj.updateDynamic("distributionValue")(distributionValue.asInstanceOf[js.Any])
-    if (doubleValue != null) __obj.updateDynamic("doubleValue")(doubleValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleValue)) __obj.updateDynamic("doubleValue")(doubleValue.get.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
     if (int64Value != null) __obj.updateDynamic("int64Value")(int64Value.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])

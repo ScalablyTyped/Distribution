@@ -206,7 +206,7 @@ object SchemaSubnetwork {
     enableFlowLogs: js.UndefOr[Boolean] = js.undefined,
     enablePrivateV6Access: js.UndefOr[Boolean] = js.undefined,
     fingerprint: String = null,
-    flowSampling: Int | Double = null,
+    flowSampling: js.UndefOr[Double] = js.undefined,
     gatewayAddress: String = null,
     id: String = null,
     ipCidrRange: String = null,
@@ -229,13 +229,13 @@ object SchemaSubnetwork {
   ): SchemaSubnetwork = {
     val __obj = js.Dynamic.literal()
     if (aggregationInterval != null) __obj.updateDynamic("aggregationInterval")(aggregationInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSubnetCidrRoutesOverlap)) __obj.updateDynamic("allowSubnetCidrRoutesOverlap")(allowSubnetCidrRoutesOverlap.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSubnetCidrRoutesOverlap)) __obj.updateDynamic("allowSubnetCidrRoutesOverlap")(allowSubnetCidrRoutesOverlap.get.asInstanceOf[js.Any])
     if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableFlowLogs)) __obj.updateDynamic("enableFlowLogs")(enableFlowLogs.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePrivateV6Access)) __obj.updateDynamic("enablePrivateV6Access")(enablePrivateV6Access.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableFlowLogs)) __obj.updateDynamic("enableFlowLogs")(enableFlowLogs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePrivateV6Access)) __obj.updateDynamic("enablePrivateV6Access")(enablePrivateV6Access.get.asInstanceOf[js.Any])
     if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
-    if (flowSampling != null) __obj.updateDynamic("flowSampling")(flowSampling.asInstanceOf[js.Any])
+    if (!js.isUndefined(flowSampling)) __obj.updateDynamic("flowSampling")(flowSampling.get.asInstanceOf[js.Any])
     if (gatewayAddress != null) __obj.updateDynamic("gatewayAddress")(gatewayAddress.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (ipCidrRange != null) __obj.updateDynamic("ipCidrRange")(ipCidrRange.asInstanceOf[js.Any])
@@ -245,7 +245,7 @@ object SchemaSubnetwork {
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
-    if (!js.isUndefined(privateIpGoogleAccess)) __obj.updateDynamic("privateIpGoogleAccess")(privateIpGoogleAccess.asInstanceOf[js.Any])
+    if (!js.isUndefined(privateIpGoogleAccess)) __obj.updateDynamic("privateIpGoogleAccess")(privateIpGoogleAccess.get.asInstanceOf[js.Any])
     if (privateIpv6GoogleAccess != null) __obj.updateDynamic("privateIpv6GoogleAccess")(privateIpv6GoogleAccess.asInstanceOf[js.Any])
     if (purpose != null) __obj.updateDynamic("purpose")(purpose.asInstanceOf[js.Any])
     if (rangeType != null) __obj.updateDynamic("rangeType")(rangeType.asInstanceOf[js.Any])

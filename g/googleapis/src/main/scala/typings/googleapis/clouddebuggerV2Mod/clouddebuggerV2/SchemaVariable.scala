@@ -107,7 +107,7 @@ object SchemaVariable {
     status: SchemaStatusMessage = null,
     `type`: String = null,
     value: String = null,
-    varTableIndex: Int | Double = null
+    varTableIndex: js.UndefOr[Double] = js.undefined
   ): SchemaVariable = {
     val __obj = js.Dynamic.literal()
     if (members != null) __obj.updateDynamic("members")(members.asInstanceOf[js.Any])
@@ -115,7 +115,7 @@ object SchemaVariable {
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (varTableIndex != null) __obj.updateDynamic("varTableIndex")(varTableIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(varTableIndex)) __obj.updateDynamic("varTableIndex")(varTableIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVariable]
   }
 }

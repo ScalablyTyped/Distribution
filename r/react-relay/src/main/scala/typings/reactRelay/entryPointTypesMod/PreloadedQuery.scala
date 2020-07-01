@@ -20,7 +20,7 @@ trait PreloadedQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions]
 
 object PreloadedQuery {
   @scala.inline
-  def apply[TQuery, TEnvironmentProviderOptions](
+  def apply[/* <: typings.relayRuntime.relayRuntimeTypesMod.OperationType */ TQuery, TEnvironmentProviderOptions](
     environment: Environment,
     fetchPolicy: PreloadFetchPolicy,
     name: String,

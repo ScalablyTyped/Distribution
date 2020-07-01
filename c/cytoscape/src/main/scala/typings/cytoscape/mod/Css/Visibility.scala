@@ -38,7 +38,7 @@ trait Visibility[SingularType /* <: NodeSingular | EdgeSingular */] extends js.O
 
 object Visibility {
   @scala.inline
-  def apply[SingularType](
+  def apply[/* <: typings.cytoscape.mod.NodeSingular | typings.cytoscape.mod.EdgeSingular */ SingularType](
     display: PropertyValue[SingularType, none | displayed],
     opacity: PropertyValue[SingularType, Double],
     visibility: PropertyValue[SingularType, none | visible],

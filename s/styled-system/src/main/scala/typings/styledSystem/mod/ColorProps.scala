@@ -12,7 +12,7 @@ trait ColorProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal]
 
 object ColorProps {
   @scala.inline
-  def apply[ThemeType, TVal](
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType, TVal](
     backgroundColor: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
     bg: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
     color: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,

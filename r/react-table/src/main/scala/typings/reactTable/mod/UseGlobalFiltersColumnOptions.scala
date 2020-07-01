@@ -11,7 +11,7 @@ trait UseGlobalFiltersColumnOptions[D /* <: js.Object */] extends js.Object {
 
 object UseGlobalFiltersColumnOptions {
   @scala.inline
-  def apply[D](disableGlobalFilter: js.UndefOr[Boolean] = js.undefined): UseGlobalFiltersColumnOptions[D] = {
+  def apply[/* <: js.Object */ D](disableGlobalFilter: js.UndefOr[Boolean] = js.undefined): UseGlobalFiltersColumnOptions[D] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(disableGlobalFilter)) __obj.updateDynamic("disableGlobalFilter")(disableGlobalFilter.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseGlobalFiltersColumnOptions[D]]

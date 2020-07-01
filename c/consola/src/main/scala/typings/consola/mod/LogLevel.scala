@@ -36,6 +36,9 @@ object LogLevel extends js.Object {
   sealed trait Trace extends LogLevel
   
   @js.native
+  sealed trait Verbose extends LogLevel
+  
+  @js.native
   sealed trait Warn extends LogLevel
   
   @JSBracketAccess
@@ -55,7 +58,7 @@ object LogLevel extends js.Object {
   /* 2 */ @js.native
   object Log extends TopLevel[Log with Double]
   
-  /* Infinity */ @js.native
+  /* -Infinity */ @js.native
   object Silent extends TopLevel[Silent with Double]
   
   /* 3 */ @js.native
@@ -63,6 +66,9 @@ object LogLevel extends js.Object {
   
   /* 5 */ @js.native
   object Trace extends TopLevel[Trace with Double]
+  
+  /* Infinity */ @js.native
+  object Verbose extends TopLevel[Verbose with Double]
   
   /* 1 */ @js.native
   object Warn extends TopLevel[Warn with Double]

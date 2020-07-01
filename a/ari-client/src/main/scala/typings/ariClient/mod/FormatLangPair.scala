@@ -5,8 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FormatLangPair extends js.Object {
+  /**
+    * Format.
+    */
   var format: String
-  /* Properties */
+  /**
+    * Language.
+    */
   var language: String
 }
 

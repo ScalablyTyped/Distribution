@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "electron-packager" : "15.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "electron-packager" : "15.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

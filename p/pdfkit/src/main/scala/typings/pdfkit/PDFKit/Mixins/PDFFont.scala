@@ -15,7 +15,7 @@ trait PDFFont extends js.Object {
   def font(src: String, family: String, size: Double): this.type = js.native
   def fontSize(size: Double): this.type = js.native
   def registerFont(name: String): this.type = js.native
-  def registerFont(name: String, src: String): this.type = js.native
-  def registerFont(name: String, src: String, family: String): this.type = js.native
+  def registerFont(name: String, src: PDFFontSource): this.type = js.native
+  def registerFont(name: String, src: PDFFontSource, family: String): this.type = js.native
 }
 

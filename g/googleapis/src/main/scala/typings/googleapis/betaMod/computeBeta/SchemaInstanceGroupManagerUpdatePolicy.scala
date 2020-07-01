@@ -53,14 +53,14 @@ object SchemaInstanceGroupManagerUpdatePolicy {
   def apply(
     maxSurge: SchemaFixedOrPercent = null,
     maxUnavailable: SchemaFixedOrPercent = null,
-    minReadySec: Int | Double = null,
+    minReadySec: js.UndefOr[Double] = js.undefined,
     minimalAction: String = null,
     `type`: String = null
   ): SchemaInstanceGroupManagerUpdatePolicy = {
     val __obj = js.Dynamic.literal()
     if (maxSurge != null) __obj.updateDynamic("maxSurge")(maxSurge.asInstanceOf[js.Any])
     if (maxUnavailable != null) __obj.updateDynamic("maxUnavailable")(maxUnavailable.asInstanceOf[js.Any])
-    if (minReadySec != null) __obj.updateDynamic("minReadySec")(minReadySec.asInstanceOf[js.Any])
+    if (!js.isUndefined(minReadySec)) __obj.updateDynamic("minReadySec")(minReadySec.get.asInstanceOf[js.Any])
     if (minimalAction != null) __obj.updateDynamic("minimalAction")(minimalAction.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstanceGroupManagerUpdatePolicy]

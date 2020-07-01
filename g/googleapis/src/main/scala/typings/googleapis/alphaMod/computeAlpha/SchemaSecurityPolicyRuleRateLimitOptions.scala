@@ -42,18 +42,18 @@ trait SchemaSecurityPolicyRuleRateLimitOptions extends js.Object {
 object SchemaSecurityPolicyRuleRateLimitOptions {
   @scala.inline
   def apply(
-    blockDuration: Int | Double = null,
+    blockDuration: js.UndefOr[Double] = js.undefined,
     conformAction: String = null,
     enforceOnKey: String = null,
     exceedAction: String = null,
-    thresholdRps: Int | Double = null
+    thresholdRps: js.UndefOr[Double] = js.undefined
   ): SchemaSecurityPolicyRuleRateLimitOptions = {
     val __obj = js.Dynamic.literal()
-    if (blockDuration != null) __obj.updateDynamic("blockDuration")(blockDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockDuration)) __obj.updateDynamic("blockDuration")(blockDuration.get.asInstanceOf[js.Any])
     if (conformAction != null) __obj.updateDynamic("conformAction")(conformAction.asInstanceOf[js.Any])
     if (enforceOnKey != null) __obj.updateDynamic("enforceOnKey")(enforceOnKey.asInstanceOf[js.Any])
     if (exceedAction != null) __obj.updateDynamic("exceedAction")(exceedAction.asInstanceOf[js.Any])
-    if (thresholdRps != null) __obj.updateDynamic("thresholdRps")(thresholdRps.asInstanceOf[js.Any])
+    if (!js.isUndefined(thresholdRps)) __obj.updateDynamic("thresholdRps")(thresholdRps.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSecurityPolicyRuleRateLimitOptions]
   }
 }

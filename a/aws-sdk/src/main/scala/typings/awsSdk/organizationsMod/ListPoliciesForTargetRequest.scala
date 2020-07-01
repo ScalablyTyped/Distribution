@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListPoliciesForTargetRequest extends js.Object {
   /**
-    * The type of policy that you want to include in the returned list.
+    * The type of policy that you want to include in the returned list. You must specify one of the following values:    BACKUP_POLICY     SERVICE_CONTROL_POLICY     TAG_POLICY   
     */
   var Filter: PolicyType = js.native
   /**

@@ -1,7 +1,7 @@
 package typings.googleapis.bloggerV2Mod.bloggerV2
 
-import typings.googleapis.AnonIdString
-import typings.googleapis.AnonImage
+import typings.googleapis.anon.IdString
+import typings.googleapis.anon.Image
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,11 +11,11 @@ trait SchemaPage extends js.Object {
   /**
     * The author of this Page.
     */
-  var author: js.UndefOr[AnonImage] = js.native
+  var author: js.UndefOr[Image] = js.native
   /**
     * Data about the blog containing this Page.
     */
-  var blog: js.UndefOr[AnonIdString] = js.native
+  var blog: js.UndefOr[IdString] = js.native
   /**
     * The body content of this Page, in HTML.
     */
@@ -54,8 +54,8 @@ trait SchemaPage extends js.Object {
 object SchemaPage {
   @scala.inline
   def apply(
-    author: AnonImage = null,
-    blog: AnonIdString = null,
+    author: Image = null,
+    blog: IdString = null,
     content: String = null,
     id: String = null,
     kind: String = null,

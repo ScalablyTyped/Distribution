@@ -1,19 +1,19 @@
 package typings.grommet.anon
 
-import typings.grommet.utilsMod.ColorType
+import typings.grommet.utilsMod.MarginType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait `3` extends js.Object {
-  var color: ColorType
+  var margin: js.UndefOr[MarginType] = js.undefined
 }
 
 object `3` {
   @scala.inline
-  def apply(color: ColorType = null): `3` = {
+  def apply(margin: MarginType = null): `3` = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     __obj.asInstanceOf[`3`]
   }
 }

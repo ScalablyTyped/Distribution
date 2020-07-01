@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@testing-library/dom/get-queries-for-element", JSImport.Namespace)
+@JSImport("@testing-library/dom/types/get-queries-for-element", JSImport.Namespace)
 @js.native
 object getQueriesForElementMod extends js.Object {
   def getQueriesForElement[T /* <: Queries */](element: HTMLElement): BoundFunctions[T] = js.native
@@ -20,7 +20,7 @@ object getQueriesForElementMod extends js.Object {
     js.Any
   ])
   type BoundFunctions[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: @testing-library/dom.@testing-library/dom/get-queries-for-element.BoundFunction<T[P]>}
+  {[ P in keyof T ]: @testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<T[P]>}
     */ typings.testingLibraryDom.testingLibraryDomStrings.BoundFunctions with TopLevel[T]
   type Queries = StringDictionary[Query]
   type Query = js.Function2[

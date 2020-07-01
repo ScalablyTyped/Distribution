@@ -41,7 +41,21 @@ package object autoscalingMod {
   type HonorCooldown = scala.Boolean
   type InstanceIds = js.Array[typings.awsSdk.autoscalingMod.XmlStringMaxLen19]
   type InstanceProtected = scala.Boolean
+  type InstanceRefreshIds = js.Array[typings.awsSdk.autoscalingMod.XmlStringMaxLen255]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.Pending_
+    - typings.awsSdk.awsSdkStrings.InProgress_
+    - typings.awsSdk.awsSdkStrings.Successful_
+    - typings.awsSdk.awsSdkStrings.Failed_
+    - typings.awsSdk.awsSdkStrings.Cancelling_
+    - typings.awsSdk.awsSdkStrings.Cancelled_
+    - java.lang.String
+  */
+  type InstanceRefreshStatus = typings.awsSdk.autoscalingMod._InstanceRefreshStatus | java.lang.String
+  type InstanceRefreshes = js.Array[typings.awsSdk.autoscalingMod.InstanceRefresh]
   type Instances = js.Array[typings.awsSdk.autoscalingMod.Instance]
+  type InstancesToUpdate = scala.Double
+  type IntPercent = scala.Double
   type LaunchConfigurationNames = js.Array[typings.awsSdk.autoscalingMod.ResourceName]
   type LaunchConfigurations = js.Array[typings.awsSdk.autoscalingMod.LaunchConfiguration]
   type LaunchTemplateName = java.lang.String
@@ -122,6 +136,8 @@ package object autoscalingMod {
   type Progress = scala.Double
   type PropagateAtLaunch = scala.Boolean
   type ProtectedFromScaleIn = scala.Boolean
+  type RefreshInstanceWarmup = scala.Double
+  type RefreshStrategy = typings.awsSdk.awsSdkStrings.Rolling | java.lang.String
   type ResourceName = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.PendingSpotBidPlacement

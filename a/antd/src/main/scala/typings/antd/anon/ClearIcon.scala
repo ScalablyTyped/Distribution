@@ -10,6 +10,7 @@ trait ClearIcon extends js.Object {
   var loading: js.UndefOr[Boolean] = js.undefined
   var menuItemSelectedIcon: js.UndefOr[ReactNode] = js.undefined
   var multiple: js.UndefOr[Boolean] = js.undefined
+  var prefixCls: String
   var removeIcon: js.UndefOr[ReactNode] = js.undefined
   var suffixIcon: js.UndefOr[ReactNode] = js.undefined
 }
@@ -17,6 +18,7 @@ trait ClearIcon extends js.Object {
 object ClearIcon {
   @scala.inline
   def apply(
+    prefixCls: String,
     clearIcon: ReactNode = null,
     loading: js.UndefOr[Boolean] = js.undefined,
     menuItemSelectedIcon: ReactNode = null,
@@ -24,7 +26,7 @@ object ClearIcon {
     removeIcon: ReactNode = null,
     suffixIcon: ReactNode = null
   ): ClearIcon = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(prefixCls = prefixCls.asInstanceOf[js.Any])
     if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon.asInstanceOf[js.Any])
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.get.asInstanceOf[js.Any])
     if (menuItemSelectedIcon != null) __obj.updateDynamic("menuItemSelectedIcon")(menuItemSelectedIcon.asInstanceOf[js.Any])

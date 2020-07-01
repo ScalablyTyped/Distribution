@@ -20,7 +20,7 @@ object SchemaMembersHasMember {
   @scala.inline
   def apply(isMember: js.UndefOr[Boolean] = js.undefined): SchemaMembersHasMember = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isMember)) __obj.updateDynamic("isMember")(isMember.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMember)) __obj.updateDynamic("isMember")(isMember.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMembersHasMember]
   }
 }

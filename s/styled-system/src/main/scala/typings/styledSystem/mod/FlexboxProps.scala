@@ -32,7 +32,7 @@ trait FlexboxProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
 
 object FlexboxProps {
   @scala.inline
-  def apply[ThemeType](
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](
     alignContent: js.UndefOr[Null | (ResponsiveValue[AlignContentProperty, ThemeType])] = js.undefined,
     alignItems: js.UndefOr[Null | (ResponsiveValue[AlignItemsProperty, ThemeType])] = js.undefined,
     alignSelf: js.UndefOr[Null | (ResponsiveValue[AlignSelfProperty, ThemeType])] = js.undefined,

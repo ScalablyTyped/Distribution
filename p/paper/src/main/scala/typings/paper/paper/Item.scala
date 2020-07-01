@@ -396,9 +396,9 @@ trait Item extends js.Object {
     * @return the added items, or `null` if adding was not possible
     */
   def addChildren(items: js.Array[Item]): js.Array[Item] = js.native
-  def addTo(owner: CompoundPath): Item = js.native
-  def addTo(owner: Group): Item = js.native
-  def addTo(owner: Layer): Item = js.native
+  def addTo(owner: CompoundPath): this.type = js.native
+  def addTo(owner: Group): this.type = js.native
+  def addTo(owner: Layer): this.type = js.native
   /** 
     * Adds it to the specified owner, which can be either a {@link Item} or a
     * {@link Project}.
@@ -408,12 +408,12 @@ trait Item extends js.Object {
     * 
     * @return the item itself, if it was successfully added
     */
-  def addTo(owner: Project): Item = js.native
+  def addTo(owner: Project): this.type = js.native
   /** 
     * Brings this item to the front of all other items within the same parent.
     */
   def bringToFront(): Unit = js.native
-  def clone(options: js.Object): Item = js.native
+  def clone(options: js.Object): this.type = js.native
   /** 
     * Checks whether the item's geometry contains the given point.
     * 
@@ -436,9 +436,9 @@ trait Item extends js.Object {
     * @param source - the item to copy the content from
     */
   def copyContent(source: Item): Unit = js.native
-  def copyTo(owner: CompoundPath): Item = js.native
-  def copyTo(owner: Group): Item = js.native
-  def copyTo(owner: Layer): Item = js.native
+  def copyTo(owner: CompoundPath): this.type = js.native
+  def copyTo(owner: Group): this.type = js.native
+  def copyTo(owner: Layer): this.type = js.native
   /** 
     * Clones the item and adds it to the specified owner, which can be either
     * a {@link Item} or a {@link Project}.
@@ -448,7 +448,7 @@ trait Item extends js.Object {
     * 
     * @return the new copy of the item, if it was successfully added
     */
-  def copyTo(owner: Project): Item = js.native
+  def copyTo(owner: Project): this.type = js.native
   /** 
     * Emit an event on the item.
     * 
@@ -511,7 +511,7 @@ trait Item extends js.Object {
     */
   def fitBounds(rectangle: Rectangle): Unit = js.native
   def fitBounds(rectangle: Rectangle, fill: Boolean): Unit = js.native
-  def getItem(`match`: js.Function): Item = js.native
+  def getItem(options: js.Function): Item = js.native
   /** 
     * Fetch the first descendant (child or child of child) of this item
     * that matches the properties in the specified object.
@@ -523,13 +523,13 @@ trait Item extends js.Object {
     * See {@link Project#getItems} for a selection of illustrated
     * examples.
     * 
-    * @see #getItems(match)
+    * @see #getItems(options)
     * 
-    * @param match - the criteria to match against
+    * @param options - the criteria to match against
     * 
     * @return the first descendant item matching the given criteria
     */
-  def getItem(`match`: js.Object): Item = js.native
+  def getItem(options: js.Object): Item = js.native
   def getItems(options: js.Function): js.Array[Item] = js.native
   /** 
     * Fetch the descendants (children or children of children) of this item
@@ -540,8 +540,9 @@ trait Item extends js.Object {
     * that x-value). Partial matching does work for {@link Item#data}.
     * 
     * Matching items against a rectangular area is also possible, by setting
-    * either `options.inside` or `options.overlapping` to a rectangle describing
-    * the area in which the items either have to be fully or partly contained.
+    * either `options.inside` or `options.overlapping` to a rectangle
+    * describing the area in which the items either have to be fully or partly
+    * contained.
     * 
     * See {@link Project#getItems} for a selection of illustrated
     * examples.
@@ -554,12 +555,12 @@ trait Item extends js.Object {
     *     item, allowing the definition of more flexible item checks that are
     *     not bound to properties. If no other match properties are defined,
     *     this function can also be passed instead of the `options` object
-    * @option options.class {Function} the constructor function of the item type
-    *     to match against
-    * @option options.inside {Rectangle} the rectangle in which the items need to
-    *     be fully contained
-    * @option options.overlapping {Rectangle} the rectangle with which the items
-    *     need to at least partly overlap
+    * @option options.class {Function} the constructor function of the item
+    *     type to match against
+    * @option options.inside {Rectangle} the rectangle in which the items need
+    *     to be fully contained
+    * @option options.overlapping {Rectangle} the rectangle with which the
+    *     items need to at least partly overlap
     * 
     * @param options - the criteria to match against
     * 
@@ -914,7 +915,7 @@ trait Item extends js.Object {
     * 
     * @return this item itself, so calls can be chained
     */
-  def off(`object`: js.Object): Item = js.native
+  def off(`object`: js.Object): this.type = js.native
   /** 
     * Detach an event handler from the item.
     * 
@@ -925,7 +926,7 @@ trait Item extends js.Object {
     * 
     * @return this item itself, so calls can be chained
     */
-  def off(`type`: String, callback: js.Function): Item = js.native
+  def off(`type`: String, callback: js.Function): this.type = js.native
   /** 
     * Attaches one or more event handlers to the item.
     * 
@@ -935,7 +936,7 @@ trait Item extends js.Object {
     * 
     * @return this item itself, so calls can be chained
     */
-  def on(`object`: js.Object): Item = js.native
+  def on(`object`: js.Object): this.type = js.native
   /** 
     * Attaches an event handler to the item.
     * 
@@ -948,7 +949,7 @@ trait Item extends js.Object {
     * 
     * @return this item itself, so calls can be chained
     */
-  def on(`type`: String, callback: js.Function): Item = js.native
+  def on(`type`: String, callback: js.Function): this.type = js.native
   /** 
     * Converts the specified point from the parent's coordinate space to
     * item's own local coordinate space.
@@ -1099,7 +1100,7 @@ trait Item extends js.Object {
     * 
     * @return the item itself
     */
-  def set(props: js.Object): Item = js.native
+  def set(props: js.Object): this.type = js.native
   /** 
     * Shears the item by the given values from its center point, or optionally
     * by a supplied point.
@@ -1117,7 +1118,7 @@ trait Item extends js.Object {
     * 
     * @see Matrix#shear(shear[, center])
     * 
-    * @param shear - the horziontal and vertical shear factors as a point
+    * @param shear - the horizontal and vertical shear factors as a point
     */
   def shear(shear: Point): Unit = js.native
   def shear(shear: Point, center: Point): Unit = js.native
@@ -1138,7 +1139,7 @@ trait Item extends js.Object {
     * 
     * @see Matrix#shear(skew[, center])
     * 
-    * @param skew - the horziontal and vertical skew angles in degrees
+    * @param skew - the horizontal and vertical skew angles in degrees
     */
   def skew(skew: Point): Unit = js.native
   def skew(skew: Point, center: Point): Unit = js.native

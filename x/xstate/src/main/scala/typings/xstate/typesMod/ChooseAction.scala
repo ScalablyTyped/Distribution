@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 
 object ChooseAction {
   @scala.inline
-  def apply[TContext, TEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     conds: js.Array[ChooseConditon[TContext, TEvent]],
     `type`: Choose,
     exec: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => js.Any | Unit = null

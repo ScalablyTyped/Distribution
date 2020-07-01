@@ -11,7 +11,7 @@ trait ListRecommendationFeedbackResponse extends js.Object {
     */
   var NextToken: js.UndefOr[typings.awsSdk.codegurureviewerMod.NextToken] = js.native
   /**
-    *  Recommendation feedback summaries corresponding to the code reivew ARN. 
+    *  Recommendation feedback summaries corresponding to the code review ARN. 
     */
   var RecommendationFeedbackSummaries: js.UndefOr[typings.awsSdk.codegurureviewerMod.RecommendationFeedbackSummaries] = js.native
 }

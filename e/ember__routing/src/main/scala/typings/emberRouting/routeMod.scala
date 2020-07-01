@@ -226,7 +226,7 @@ object routeMod extends js.Object {
       * A hook you can use to reset controller values either when the model
       * changes or the route is exiting.
       */
-    def resetController(controller: typings.emberController.mod.default, isExiting: Boolean, transition: js.Any): Unit = js.native
+    def resetController(controller: typings.emberController.mod.default, isExiting: Boolean, transition: Transition): Unit = js.native
     /**
       * Sends an action to the router, which will delegate it to the currently active
       * route hierarchy per the bubbling rules explained under actions.
@@ -255,7 +255,7 @@ object routeMod extends js.Object {
       * when implementing your `setupController` function, make sure to call
       * `_super`
       */
-    def setupController(controller: typings.emberController.mod.default, model: js.Object): Unit = js.native
+    def setupController(controller: typings.emberController.mod.default, model: js.Object, transition: Transition): Unit = js.native
     /**
       * Transition the application into another route. The route may
       * be either a single route or route path:

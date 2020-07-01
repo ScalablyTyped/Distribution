@@ -19,7 +19,7 @@ object SchemaCheckValidCredsResponse {
   @scala.inline
   def apply(hasValidCreds: js.UndefOr[Boolean] = js.undefined): SchemaCheckValidCredsResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasValidCreds)) __obj.updateDynamic("hasValidCreds")(hasValidCreds.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasValidCreds)) __obj.updateDynamic("hasValidCreds")(hasValidCreds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCheckValidCredsResponse]
   }
 }

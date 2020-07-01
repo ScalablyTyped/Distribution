@@ -41,7 +41,7 @@ trait Cell
   /**
   	 * comment of the cell
   	 */
-  var note: Comment = js.native
+  var note: String | Comment = js.native
   /**
   	 * convenience getter to access the formula result
   	 */

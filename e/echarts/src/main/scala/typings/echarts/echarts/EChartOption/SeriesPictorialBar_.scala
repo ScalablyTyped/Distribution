@@ -1,12 +1,11 @@
 package typings.echarts.echarts.EChartOption
 
 import typings.echarts.anon.AnimationDelay
-import typings.echarts.anon.AnimationDelayAnimationDelayUpdate
 import typings.echarts.anon.AnimationDelayUpdate
 import typings.echarts.anon.AnimationDuration
+import typings.echarts.anon.AnimationDurationAnimationDurationUpdate
 import typings.echarts.anon.BorderRadius
 import typings.echarts.anon.BorderType
-import typings.echarts.anon.ExtraCssText
 import typings.echarts.anon.LabelBorderRadius
 import typings.echarts.anon.`2`
 import typings.echarts.echarts.EChartOption.SeriesPictorialBar.DataObject
@@ -508,7 +507,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.hoverAnimation
     */
-  var hoverAnimation: js.UndefOr[AnimationDelayAnimationDelayUpdate] = js.undefined
+  var hoverAnimation: js.UndefOr[AnimationDurationAnimationDurationUpdate] = js.undefined
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component in option
@@ -1127,7 +1126,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
   /**
     * @default
     * "pictorialBar"
@@ -1209,7 +1208,7 @@ object SeriesPictorialBar_ {
     dimensions: js.Array[_] = null,
     emphasis: LabelBorderRadius = null,
     encode: js.Object = null,
-    hoverAnimation: AnimationDelayAnimationDelayUpdate = null,
+    hoverAnimation: AnimationDurationAnimationDurationUpdate = null,
     id: String = null,
     itemStyle: BorderType = null,
     label: BorderRadius = null,
@@ -1230,7 +1229,7 @@ object SeriesPictorialBar_ {
     symbolRepeatDirection: String = null,
     symbolRotate: js.UndefOr[Double] = js.undefined,
     symbolSize: js.Array[_] | Double = null,
-    tooltip: ExtraCssText = null,
+    tooltip: BaseTooltip = null,
     `type`: String = null,
     xAxisIndex: js.UndefOr[Double] = js.undefined,
     yAxisIndex: js.UndefOr[Double] = js.undefined,

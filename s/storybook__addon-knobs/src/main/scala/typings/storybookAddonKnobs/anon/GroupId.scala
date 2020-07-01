@@ -12,7 +12,7 @@ trait GroupId[T /* <: KnobType */] extends js.Object {
 
 object GroupId {
   @scala.inline
-  def apply[T](`type`: T, groupId: String = null): GroupId[T] = {
+  def apply[/* <: typings.storybookAddonKnobs.typesMod.KnobType */ T](`type`: T, groupId: String = null): GroupId[T] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (groupId != null) __obj.updateDynamic("groupId")(groupId.asInstanceOf[js.Any])

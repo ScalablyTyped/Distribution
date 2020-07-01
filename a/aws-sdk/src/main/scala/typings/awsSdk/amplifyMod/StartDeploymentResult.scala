@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StartDeploymentResult extends js.Object {
   /**
-    *  Summary for the Job. 
+    *  The summary for the job. 
     */
   var jobSummary: JobSummary = js.native
 }

@@ -62,12 +62,12 @@ object ParamsResourceLivechatmessagesList {
     hl: String = null,
     key: String = null,
     liveChatId: String = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[Double] = js.undefined,
     oauth_token: String = null,
     pageToken: String = null,
     part: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    profileImageSize: Int | Double = null,
+    profileImageSize: js.UndefOr[Double] = js.undefined,
     quotaUser: String = null,
     userIp: String = null
   ): ParamsResourceLivechatmessagesList = {
@@ -78,12 +78,12 @@ object ParamsResourceLivechatmessagesList {
     if (hl != null) __obj.updateDynamic("hl")(hl.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (liveChatId != null) __obj.updateDynamic("liveChatId")(liveChatId.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     if (part != null) __obj.updateDynamic("part")(part.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
-    if (profileImageSize != null) __obj.updateDynamic("profileImageSize")(profileImageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(profileImageSize)) __obj.updateDynamic("profileImageSize")(profileImageSize.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceLivechatmessagesList]

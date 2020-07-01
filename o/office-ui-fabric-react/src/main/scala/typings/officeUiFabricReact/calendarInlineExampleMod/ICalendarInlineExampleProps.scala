@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.calendarInlineExampleMod
 
-import typings.officeUiFabricReact.dateValuesMod.DateRangeType
-import typings.officeUiFabricReact.dateValuesMod.DayOfWeek
+import typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType
+import typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

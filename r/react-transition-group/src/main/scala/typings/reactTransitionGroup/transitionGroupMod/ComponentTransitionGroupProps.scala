@@ -12,7 +12,7 @@ trait ComponentTransitionGroupProps[T /* <: ReactType[_] */] extends TransitionA
 
 object ComponentTransitionGroupProps {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.react.mod.ReactType[_] */ T](
     component: T,
     appear: js.UndefOr[Boolean] = js.undefined,
     enter: js.UndefOr[Boolean] = js.undefined,

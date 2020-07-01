@@ -35,7 +35,7 @@ trait IOptionsOptionalContent[T /* <: Widget */]
 
 object IOptionsOptionalContent {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.luminoWidgets.mod.Widget */ T](
     content: T = null,
     node: HTMLElement = null,
     reveal: js.Promise[_] = null,

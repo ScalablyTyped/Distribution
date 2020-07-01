@@ -1,7 +1,7 @@
 package typings.googleapis.booksV1Mod.booksV1
 
-import typings.googleapis.AnonAllowedCharacterCount
-import typings.googleapis.AnonCfiRange
+import typings.googleapis.anon.AllowedCharacterCount
+import typings.googleapis.anon.CfiRange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait SchemaAnnotation extends js.Object {
   /**
     * Selection ranges sent from the client.
     */
-  var clientVersionRanges: js.UndefOr[AnonCfiRange] = js.native
+  var clientVersionRanges: js.UndefOr[CfiRange] = js.native
   /**
     * Timestamp for the created time of this annotation.
     */
@@ -29,7 +29,7 @@ trait SchemaAnnotation extends js.Object {
   /**
     * Selection ranges for the most recent content version.
     */
-  var currentVersionRanges: js.UndefOr[AnonCfiRange] = js.native
+  var currentVersionRanges: js.UndefOr[CfiRange] = js.native
   /**
     * User-created data for this annotation.
     */
@@ -54,7 +54,7 @@ trait SchemaAnnotation extends js.Object {
     * The layer this annotation is for.
     */
   var layerId: js.UndefOr[String] = js.native
-  var layerSummary: js.UndefOr[AnonAllowedCharacterCount] = js.native
+  var layerSummary: js.UndefOr[AllowedCharacterCount] = js.native
   /**
     * Pages that this annotation spans.
     */
@@ -82,16 +82,16 @@ object SchemaAnnotation {
   def apply(
     afterSelectedText: String = null,
     beforeSelectedText: String = null,
-    clientVersionRanges: AnonCfiRange = null,
+    clientVersionRanges: CfiRange = null,
     created: String = null,
-    currentVersionRanges: AnonCfiRange = null,
+    currentVersionRanges: CfiRange = null,
     data: String = null,
     deleted: js.UndefOr[Boolean] = js.undefined,
     highlightStyle: String = null,
     id: String = null,
     kind: String = null,
     layerId: String = null,
-    layerSummary: AnonAllowedCharacterCount = null,
+    layerSummary: AllowedCharacterCount = null,
     pageIds: js.Array[String] = null,
     selectedText: String = null,
     selfLink: String = null,
@@ -105,7 +105,7 @@ object SchemaAnnotation {
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (currentVersionRanges != null) __obj.updateDynamic("currentVersionRanges")(currentVersionRanges.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
     if (highlightStyle != null) __obj.updateDynamic("highlightStyle")(highlightStyle.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])

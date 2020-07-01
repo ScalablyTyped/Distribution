@@ -367,12 +367,12 @@ trait CodeCommit extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetBranchOutput, Unit]
   ): Request[GetBranchOutput, AWSError] = js.native
   /**
-    * Returns the content of a comment made on a change, file, or commit in a repository.
+    * Returns the content of a comment made on a change, file, or commit in a repository.   Reaction counts might include numbers from user identities who were deleted after the reaction was made. For a count of reactions from active identities, use GetCommentReactions. 
     */
   def getComment(): Request[GetCommentOutput, AWSError] = js.native
   def getComment(callback: js.Function2[/* err */ AWSError, /* data */ GetCommentOutput, Unit]): Request[GetCommentOutput, AWSError] = js.native
   /**
-    * Returns the content of a comment made on a change, file, or commit in a repository.
+    * Returns the content of a comment made on a change, file, or commit in a repository.   Reaction counts might include numbers from user identities who were deleted after the reaction was made. For a count of reactions from active identities, use GetCommentReactions. 
     */
   def getComment(params: GetCommentInput): Request[GetCommentOutput, AWSError] = js.native
   def getComment(
@@ -380,12 +380,25 @@ trait CodeCommit extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetCommentOutput, Unit]
   ): Request[GetCommentOutput, AWSError] = js.native
   /**
-    * Returns information about comments made on the comparison between two commits.
+    * Returns information about reactions to a specified comment ID. Reactions from users who have been deleted will not be included in the count.
+    */
+  def getCommentReactions(): Request[GetCommentReactionsOutput, AWSError] = js.native
+  def getCommentReactions(callback: js.Function2[/* err */ AWSError, /* data */ GetCommentReactionsOutput, Unit]): Request[GetCommentReactionsOutput, AWSError] = js.native
+  /**
+    * Returns information about reactions to a specified comment ID. Reactions from users who have been deleted will not be included in the count.
+    */
+  def getCommentReactions(params: GetCommentReactionsInput): Request[GetCommentReactionsOutput, AWSError] = js.native
+  def getCommentReactions(
+    params: GetCommentReactionsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetCommentReactionsOutput, Unit]
+  ): Request[GetCommentReactionsOutput, AWSError] = js.native
+  /**
+    * Returns information about comments made on the comparison between two commits.  Reaction counts might include numbers from user identities who were deleted after the reaction was made. For a count of reactions from active identities, use GetCommentReactions. 
     */
   def getCommentsForComparedCommit(): Request[GetCommentsForComparedCommitOutput, AWSError] = js.native
   def getCommentsForComparedCommit(callback: js.Function2[/* err */ AWSError, /* data */ GetCommentsForComparedCommitOutput, Unit]): Request[GetCommentsForComparedCommitOutput, AWSError] = js.native
   /**
-    * Returns information about comments made on the comparison between two commits.
+    * Returns information about comments made on the comparison between two commits.  Reaction counts might include numbers from user identities who were deleted after the reaction was made. For a count of reactions from active identities, use GetCommentReactions. 
     */
   def getCommentsForComparedCommit(params: GetCommentsForComparedCommitInput): Request[GetCommentsForComparedCommitOutput, AWSError] = js.native
   def getCommentsForComparedCommit(
@@ -393,12 +406,12 @@ trait CodeCommit extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetCommentsForComparedCommitOutput, Unit]
   ): Request[GetCommentsForComparedCommitOutput, AWSError] = js.native
   /**
-    * Returns comments made on a pull request.
+    * Returns comments made on a pull request.  Reaction counts might include numbers from user identities who were deleted after the reaction was made. For a count of reactions from active identities, use GetCommentReactions. 
     */
   def getCommentsForPullRequest(): Request[GetCommentsForPullRequestOutput, AWSError] = js.native
   def getCommentsForPullRequest(callback: js.Function2[/* err */ AWSError, /* data */ GetCommentsForPullRequestOutput, Unit]): Request[GetCommentsForPullRequestOutput, AWSError] = js.native
   /**
-    * Returns comments made on a pull request.
+    * Returns comments made on a pull request.  Reaction counts might include numbers from user identities who were deleted after the reaction was made. For a count of reactions from active identities, use GetCommentReactions. 
     */
   def getCommentsForPullRequest(params: GetCommentsForPullRequestInput): Request[GetCommentsForPullRequestOutput, AWSError] = js.native
   def getCommentsForPullRequest(
@@ -791,6 +804,19 @@ trait CodeCommit extends Service {
     params: PostCommentReplyInput,
     callback: js.Function2[/* err */ AWSError, /* data */ PostCommentReplyOutput, Unit]
   ): Request[PostCommentReplyOutput, AWSError] = js.native
+  /**
+    * Adds or updates a reaction to a specified comment for the user whose identity is used to make the request. You can only add or update a reaction for yourself. You cannot add, modify, or delete a reaction for another user.
+    */
+  def putCommentReaction(): Request[js.Object, AWSError] = js.native
+  def putCommentReaction(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Adds or updates a reaction to a specified comment for the user whose identity is used to make the request. You can only add or update a reaction for yourself. You cannot add, modify, or delete a reaction for another user.
+    */
+  def putCommentReaction(params: PutCommentReactionInput): Request[js.Object, AWSError] = js.native
+  def putCommentReaction(
+    params: PutCommentReactionInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
   /**
     * Adds or updates a file in a branch in an AWS CodeCommit repository, and generates a commit for the addition in the specified branch.
     */

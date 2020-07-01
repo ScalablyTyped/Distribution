@@ -15,7 +15,7 @@ trait MonthPicker[DateType] extends js.Object {
   var MonthPicker: ComponentClass[
     Pick[
       InjectDefaultProps[PickerDateProps[DateType]], 
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101 */ js.Any
     ], 
     _
   ]
@@ -23,21 +23,21 @@ trait MonthPicker[DateType] extends js.Object {
   var TimePicker: ComponentClass[
     Pick[
       InjectDefaultProps[PickerTimeProps[DateType]], 
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 109 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 110 */ js.Any
     ], 
     _
   ]
   var WeekPicker: ComponentClass[
     Pick[
       InjectDefaultProps[PickerDateProps[DateType]], 
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101 */ js.Any
     ], 
     _
   ]
   var YearPicker: ComponentClass[
     Pick[
       InjectDefaultProps[PickerDateProps[DateType]], 
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101 */ js.Any
     ], 
     _
   ]
@@ -49,7 +49,7 @@ object MonthPicker {
     MonthPicker: ComponentClass[
       Pick[
         InjectDefaultProps[PickerDateProps[DateType]], 
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101 */ js.Any
       ], 
       _
     ],
@@ -57,21 +57,21 @@ object MonthPicker {
     TimePicker: ComponentClass[
       Pick[
         InjectDefaultProps[PickerTimeProps[DateType]], 
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 109 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 110 */ js.Any
       ], 
       _
     ],
     WeekPicker: ComponentClass[
       Pick[
         InjectDefaultProps[PickerDateProps[DateType]], 
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101 */ js.Any
       ], 
       _
     ],
     YearPicker: ComponentClass[
       Pick[
         InjectDefaultProps[PickerDateProps[DateType]], 
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101 */ js.Any
       ], 
       _
     ]

@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashInvertBy extends js.Object {
+trait LodashInvertBy extends LodashConvertible {
   def apply[T](interatee: ValueIteratee[T]): LodashInvertBy1x1[T] = js.native
   def apply[T /* <: js.Object */](
     interatee: ValueIteratee[

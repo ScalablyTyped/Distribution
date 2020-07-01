@@ -15,6 +15,10 @@ trait ReplaceRouteRequest extends js.Object {
     */
   var DestinationIpv6CidrBlock: js.UndefOr[String] = js.native
   /**
+    * The ID of the prefix list for the route.
+    */
+  var DestinationPrefixListId: js.UndefOr[PrefixListResourceId] = js.native
+  /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
   var DryRun: js.UndefOr[Boolean] = js.native
@@ -66,6 +70,7 @@ object ReplaceRouteRequest {
     RouteTableId: RouteTableId,
     DestinationCidrBlock: String = null,
     DestinationIpv6CidrBlock: String = null,
+    DestinationPrefixListId: PrefixListResourceId = null,
     DryRun: js.UndefOr[Boolean] = js.undefined,
     EgressOnlyInternetGatewayId: EgressOnlyInternetGatewayId = null,
     GatewayId: RouteGatewayId = null,
@@ -80,6 +85,7 @@ object ReplaceRouteRequest {
     val __obj = js.Dynamic.literal(RouteTableId = RouteTableId.asInstanceOf[js.Any])
     if (DestinationCidrBlock != null) __obj.updateDynamic("DestinationCidrBlock")(DestinationCidrBlock.asInstanceOf[js.Any])
     if (DestinationIpv6CidrBlock != null) __obj.updateDynamic("DestinationIpv6CidrBlock")(DestinationIpv6CidrBlock.asInstanceOf[js.Any])
+    if (DestinationPrefixListId != null) __obj.updateDynamic("DestinationPrefixListId")(DestinationPrefixListId.asInstanceOf[js.Any])
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (EgressOnlyInternetGatewayId != null) __obj.updateDynamic("EgressOnlyInternetGatewayId")(EgressOnlyInternetGatewayId.asInstanceOf[js.Any])
     if (GatewayId != null) __obj.updateDynamic("GatewayId")(GatewayId.asInstanceOf[js.Any])

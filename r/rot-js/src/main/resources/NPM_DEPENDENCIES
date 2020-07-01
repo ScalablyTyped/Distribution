@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rot-js" : "2.1.1"
+      "rot-js" : "2.1.4"
     }
   ],
   "test-dependencies" : [
     {
-      "rot-js" : "2.1.1"
+      "rot-js" : "2.1.4"
     }
   ],
   "compile-devDependencies" : [

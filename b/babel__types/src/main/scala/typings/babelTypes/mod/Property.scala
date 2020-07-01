@@ -21,8 +21,8 @@ object Property {
   @scala.inline
   def ObjectProperty_(
     computed: Boolean,
-    key: js.Any,
-    shorthand: js.Any,
+    key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_,
+    shorthand: Boolean,
     `type`: ObjectProperty,
     value: Expression | PatternLike,
     decorators: js.Array[Decorator_] = null,

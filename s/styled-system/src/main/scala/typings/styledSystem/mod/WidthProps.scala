@@ -18,7 +18,7 @@ trait WidthProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js
 
 object WidthProps {
   @scala.inline
-  def apply[ThemeType, TVal](width: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): WidthProps[ThemeType, TVal] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType, TVal](width: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): WidthProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[WidthProps[ThemeType, TVal]]

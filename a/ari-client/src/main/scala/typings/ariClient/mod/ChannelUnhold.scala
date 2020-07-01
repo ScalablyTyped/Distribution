@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChannelUnhold extends Event {
-  /* Properties */
+  /**
+    * The channel that initiated the unhold event.
+    */
   var channel: Channel
 }
 

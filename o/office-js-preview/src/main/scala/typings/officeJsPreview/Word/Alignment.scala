@@ -14,7 +14,6 @@ sealed trait Alignment extends js.Object
 @js.native
 object Alignment extends js.Object {
   /**
-    *
     * Alignment to the center.
     *
     */
@@ -22,7 +21,6 @@ object Alignment extends js.Object {
   sealed trait centered extends Alignment
   
   /**
-    *
     * Fully justified alignment.
     *
     */
@@ -30,7 +28,6 @@ object Alignment extends js.Object {
   sealed trait justified extends Alignment
   
   /**
-    *
     * Alignment to the left.
     *
     */
@@ -41,7 +38,6 @@ object Alignment extends js.Object {
   sealed trait mixed extends Alignment
   
   /**
-    *
     * Alignment to the right.
     *
     */
@@ -49,7 +45,6 @@ object Alignment extends js.Object {
   sealed trait right extends Alignment
   
   /**
-    *
     * Unknown alignment.
     *
     */

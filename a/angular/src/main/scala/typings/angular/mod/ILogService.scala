@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 ///////////////////////////////////////////////////////////////////////////
 // LogService
-// see http://docs.angularjs.org/api/ng.$log
-// see http://docs.angularjs.org/api/ng.$logProvider
+// see http://docs.angularjs.org/api/ng/service/$log
+// see http://docs.angularjs.org/api/ng/provider/$logProvider
 ///////////////////////////////////////////////////////////////////////////
 @js.native
 trait ILogService extends js.Object {

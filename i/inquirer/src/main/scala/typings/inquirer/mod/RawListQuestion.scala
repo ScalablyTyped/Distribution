@@ -21,7 +21,7 @@ trait RawListQuestion[T /* <: Answers */] extends ListQuestionOptionsBase[T, Lis
 
 object RawListQuestion {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.inquirer.mod.Answers */ T](
     `type`: rawlist,
     choices: AsyncDynamicQuestionProperty[js.Array[DistinctChoice[ListChoiceMap[T]]], T] = null,
     default: AsyncDynamicQuestionProperty[_, T] = null,

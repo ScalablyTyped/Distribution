@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object regExpLiteral extends js.Object {
   def apply(pattern: String): RegExpLiteral_ = js.native
-  def apply(pattern: String, flags: js.Any): RegExpLiteral_ = js.native
+  def apply(pattern: String, flags: String): RegExpLiteral_ = js.native
 }
 

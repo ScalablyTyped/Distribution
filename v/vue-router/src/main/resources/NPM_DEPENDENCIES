@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vue-router" : "3.2.0"
+      "vue-router" : "3.3.4"
     }
   ],
   "test-dependencies" : [
     {
-      "vue-router" : "3.2.0"
+      "vue-router" : "3.3.4"
     }
   ],
   "compile-devDependencies" : [

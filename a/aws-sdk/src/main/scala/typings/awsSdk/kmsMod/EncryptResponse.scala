@@ -15,7 +15,7 @@ trait EncryptResponse extends js.Object {
     */
   var EncryptionAlgorithm: js.UndefOr[EncryptionAlgorithmSpec] = js.native
   /**
-    * The ID of the key used during encryption.
+    * The Amazon Resource Name (key ARN) of the CMK that was used to encrypt the plaintext.
     */
   var KeyId: js.UndefOr[KeyIdType] = js.native
 }

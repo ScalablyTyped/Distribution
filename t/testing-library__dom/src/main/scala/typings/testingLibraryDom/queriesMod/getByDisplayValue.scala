@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@testing-library/dom/queries", "getByDisplayValue")
+@JSImport("@testing-library/dom/types/queries", "getByDisplayValue")
 @js.native
 object getByDisplayValue extends TopLevel[GetByBoundAttribute]
 

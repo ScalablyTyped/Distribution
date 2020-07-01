@@ -74,20 +74,20 @@ trait SchemaRetryConfig extends js.Object {
 object SchemaRetryConfig {
   @scala.inline
   def apply(
-    maxAttempts: Int | Double = null,
+    maxAttempts: js.UndefOr[Double] = js.undefined,
     maxBackoff: String = null,
-    maxDoublings: Int | Double = null,
+    maxDoublings: js.UndefOr[Double] = js.undefined,
     maxRetryDuration: String = null,
     minBackoff: String = null,
     unlimitedAttempts: js.UndefOr[Boolean] = js.undefined
   ): SchemaRetryConfig = {
     val __obj = js.Dynamic.literal()
-    if (maxAttempts != null) __obj.updateDynamic("maxAttempts")(maxAttempts.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAttempts)) __obj.updateDynamic("maxAttempts")(maxAttempts.get.asInstanceOf[js.Any])
     if (maxBackoff != null) __obj.updateDynamic("maxBackoff")(maxBackoff.asInstanceOf[js.Any])
-    if (maxDoublings != null) __obj.updateDynamic("maxDoublings")(maxDoublings.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDoublings)) __obj.updateDynamic("maxDoublings")(maxDoublings.get.asInstanceOf[js.Any])
     if (maxRetryDuration != null) __obj.updateDynamic("maxRetryDuration")(maxRetryDuration.asInstanceOf[js.Any])
     if (minBackoff != null) __obj.updateDynamic("minBackoff")(minBackoff.asInstanceOf[js.Any])
-    if (!js.isUndefined(unlimitedAttempts)) __obj.updateDynamic("unlimitedAttempts")(unlimitedAttempts.asInstanceOf[js.Any])
+    if (!js.isUndefined(unlimitedAttempts)) __obj.updateDynamic("unlimitedAttempts")(unlimitedAttempts.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRetryConfig]
   }
 }

@@ -11,7 +11,7 @@ trait SetDesiredCapacityType extends js.Object {
     */
   var AutoScalingGroupName: ResourceName = js.native
   /**
-    * The number of EC2 instances that should be running in the Auto Scaling group.
+    * The desired capacity is the initial capacity of the Auto Scaling group after this operation completes and the capacity it attempts to maintain.
     */
   var DesiredCapacity: AutoScalingGroupDesiredCapacity = js.native
   /**

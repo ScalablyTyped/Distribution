@@ -15,7 +15,9 @@ trait Plugins[TypesFuncArr /* <: js.UndefOr[FunctionRet[JimpType[Image]]] */, Pl
 
 object Plugins {
   @scala.inline
-  def apply[TypesFuncArr, PluginFuncArr](plugins: PluginFuncArr = null, types: TypesFuncArr = null): Plugins[TypesFuncArr, PluginFuncArr] = {
+  def apply[/* <: js.UndefOr[
+  typings.jimpCore.utilsMod.FunctionRet[typings.jimpCore.pluginsMod.JimpType[typings.jimpCore.etcMod.Image]]] */ TypesFuncArr, /* <: js.UndefOr[
+  typings.jimpCore.utilsMod.FunctionRet[typings.jimpCore.pluginsMod.JimpPlugin[typings.jimpCore.etcMod.Image]]] */ PluginFuncArr](plugins: PluginFuncArr = null, types: TypesFuncArr = null): Plugins[TypesFuncArr, PluginFuncArr] = {
     val __obj = js.Dynamic.literal()
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])

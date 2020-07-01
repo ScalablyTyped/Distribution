@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "web3-eth-iban"
-version := "1.2.8-6f0042"
+version := "1.2.9-e77dd8"
 scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

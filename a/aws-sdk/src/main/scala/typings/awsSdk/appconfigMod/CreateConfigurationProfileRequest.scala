@@ -25,7 +25,7 @@ trait CreateConfigurationProfileRequest extends js.Object {
   /**
     * The ARN of an IAM role with permission to access the configuration at the specified LocationUri.
     */
-  var RetrievalRoleArn: Arn = js.native
+  var RetrievalRoleArn: js.UndefOr[RoleArn] = js.native
   /**
     * Metadata to assign to the configuration profile. Tags help organize and categorize your AppConfig resources. Each tag consists of a key and an optional value, both of which you define.
     */
@@ -42,13 +42,14 @@ object CreateConfigurationProfileRequest {
     ApplicationId: Id,
     LocationUri: Uri,
     Name: Name,
-    RetrievalRoleArn: Arn,
     Description: Description = null,
+    RetrievalRoleArn: RoleArn = null,
     Tags: TagMap = null,
     Validators: ValidatorList = null
   ): CreateConfigurationProfileRequest = {
-    val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], LocationUri = LocationUri.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], RetrievalRoleArn = RetrievalRoleArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], LocationUri = LocationUri.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (RetrievalRoleArn != null) __obj.updateDynamic("RetrievalRoleArn")(RetrievalRoleArn.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     if (Validators != null) __obj.updateDynamic("Validators")(Validators.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateConfigurationProfileRequest]

@@ -80,6 +80,19 @@ trait MarkedOptions extends js.Object {
     */
   var smartypants: js.UndefOr[Boolean] = js.undefined
   /**
+    * The tokenizer defines how to turn markdown text into tokens.
+    */
+  var tokenizer: js.UndefOr[Tokenizer] = js.undefined
+  /**
+    * The walkTokens function gets called with every token.
+    * Child tokens are called before moving on to sibling tokens.
+    * Each token is passed by reference so updates are persisted when passed to the parser.
+    * The return value of the function is ignored.
+    */
+  var walkTokens: js.UndefOr[
+    js.Function2[/* tokens */ TokensList, /* callback */ js.Function1[/* token */ Token, Unit], _]
+  ] = js.undefined
+  /**
     * Generate closing slash for self-closing tags (<br/> instead of <br>)
     */
   var xhtml: js.UndefOr[Boolean] = js.undefined
@@ -105,6 +118,8 @@ object MarkedOptions {
     silent: js.UndefOr[Boolean] = js.undefined,
     smartLists: js.UndefOr[Boolean] = js.undefined,
     smartypants: js.UndefOr[Boolean] = js.undefined,
+    tokenizer: Tokenizer = null,
+    walkTokens: (/* tokens */ TokensList, /* callback */ js.Function1[/* token */ Token, Unit]) => _ = null,
     xhtml: js.UndefOr[Boolean] = js.undefined
   ): MarkedOptions = {
     val __obj = js.Dynamic.literal()
@@ -123,6 +138,8 @@ object MarkedOptions {
     if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     if (!js.isUndefined(smartLists)) __obj.updateDynamic("smartLists")(smartLists.get.asInstanceOf[js.Any])
     if (!js.isUndefined(smartypants)) __obj.updateDynamic("smartypants")(smartypants.get.asInstanceOf[js.Any])
+    if (tokenizer != null) __obj.updateDynamic("tokenizer")(tokenizer.asInstanceOf[js.Any])
+    if (walkTokens != null) __obj.updateDynamic("walkTokens")(js.Any.fromFunction2(walkTokens))
     if (!js.isUndefined(xhtml)) __obj.updateDynamic("xhtml")(xhtml.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkedOptions]
   }

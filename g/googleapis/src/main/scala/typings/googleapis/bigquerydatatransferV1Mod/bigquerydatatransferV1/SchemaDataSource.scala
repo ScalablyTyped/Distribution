@@ -102,7 +102,7 @@ object SchemaDataSource {
     clientId: String = null,
     dataRefreshType: String = null,
     dataSourceId: String = null,
-    defaultDataRefreshWindowDays: Int | Double = null,
+    defaultDataRefreshWindowDays: js.UndefOr[Double] = js.undefined,
     defaultSchedule: String = null,
     description: String = null,
     displayName: String = null,
@@ -115,27 +115,27 @@ object SchemaDataSource {
     supportsCustomSchedule: js.UndefOr[Boolean] = js.undefined,
     supportsMultipleTransfers: js.UndefOr[Boolean] = js.undefined,
     transferType: String = null,
-    updateDeadlineSeconds: Int | Double = null
+    updateDeadlineSeconds: js.UndefOr[Double] = js.undefined
   ): SchemaDataSource = {
     val __obj = js.Dynamic.literal()
     if (authorizationType != null) __obj.updateDynamic("authorizationType")(authorizationType.asInstanceOf[js.Any])
     if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
     if (dataRefreshType != null) __obj.updateDynamic("dataRefreshType")(dataRefreshType.asInstanceOf[js.Any])
     if (dataSourceId != null) __obj.updateDynamic("dataSourceId")(dataSourceId.asInstanceOf[js.Any])
-    if (defaultDataRefreshWindowDays != null) __obj.updateDynamic("defaultDataRefreshWindowDays")(defaultDataRefreshWindowDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultDataRefreshWindowDays)) __obj.updateDynamic("defaultDataRefreshWindowDays")(defaultDataRefreshWindowDays.get.asInstanceOf[js.Any])
     if (defaultSchedule != null) __obj.updateDynamic("defaultSchedule")(defaultSchedule.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (helpUrl != null) __obj.updateDynamic("helpUrl")(helpUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(manualRunsDisabled)) __obj.updateDynamic("manualRunsDisabled")(manualRunsDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(manualRunsDisabled)) __obj.updateDynamic("manualRunsDisabled")(manualRunsDisabled.get.asInstanceOf[js.Any])
     if (minimumScheduleInterval != null) __obj.updateDynamic("minimumScheduleInterval")(minimumScheduleInterval.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsCustomSchedule)) __obj.updateDynamic("supportsCustomSchedule")(supportsCustomSchedule.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsMultipleTransfers)) __obj.updateDynamic("supportsMultipleTransfers")(supportsMultipleTransfers.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsCustomSchedule)) __obj.updateDynamic("supportsCustomSchedule")(supportsCustomSchedule.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsMultipleTransfers)) __obj.updateDynamic("supportsMultipleTransfers")(supportsMultipleTransfers.get.asInstanceOf[js.Any])
     if (transferType != null) __obj.updateDynamic("transferType")(transferType.asInstanceOf[js.Any])
-    if (updateDeadlineSeconds != null) __obj.updateDynamic("updateDeadlineSeconds")(updateDeadlineSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateDeadlineSeconds)) __obj.updateDynamic("updateDeadlineSeconds")(updateDeadlineSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDataSource]
   }
 }

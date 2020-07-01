@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeFleetMetadataRequest extends js.Object {
   /**
-    * The ARN of the fleet.
+    * The Amazon Resource Name (ARN) of the fleet.
     */
   var FleetArn: typings.awsSdk.worklinkMod.FleetArn = js.native
 }

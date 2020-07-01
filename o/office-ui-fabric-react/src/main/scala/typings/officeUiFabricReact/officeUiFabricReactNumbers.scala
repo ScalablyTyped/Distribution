@@ -1,6 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.directionalHintMod.DirectionalHint
+import typings.officeUiFabricReact.ikeytiptransitionkeyMod.KeytipTransitionModifier
 import typings.officeUiFabricReact.listTypesMod.ScrollToMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -105,13 +106,13 @@ object officeUiFabricReactNumbers {
   sealed trait `145` extends js.Object
   
   @js.native
-  sealed trait `16` extends js.Object
+  sealed trait `16` extends KeytipTransitionModifier
   
   @js.native
-  sealed trait `17` extends js.Object
+  sealed trait `17` extends KeytipTransitionModifier
   
   @js.native
-  sealed trait `18` extends js.Object
+  sealed trait `18` extends KeytipTransitionModifier
   
   @js.native
   sealed trait `186` extends js.Object
@@ -325,7 +326,7 @@ object officeUiFabricReactNumbers {
   sealed trait `90` extends js.Object
   
   @js.native
-  sealed trait `91` extends js.Object
+  sealed trait `91` extends KeytipTransitionModifier
   
   @js.native
   sealed trait `92` extends js.Object

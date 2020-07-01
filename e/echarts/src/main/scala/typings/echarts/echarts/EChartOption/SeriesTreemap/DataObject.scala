@@ -2,7 +2,7 @@ package typings.echarts.echarts.EChartOption.SeriesTreemap
 
 import typings.echarts.anon.BorderColorSaturation
 import typings.echarts.anon.Ellipsis
-import typings.echarts.anon.TextShadowOffsetX
+import typings.echarts.anon.TextShadowColor
 import typings.echarts.anon.UpperLabel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -309,7 +309,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel
     */
-  var upperLabel: js.UndefOr[TextShadowOffsetX] = js.undefined
+  var upperLabel: js.UndefOr[TextShadowColor] = js.undefined
   /**
     * The value of this node, indicating the area size.
     *
@@ -435,7 +435,7 @@ object DataObject {
     itemStyle: BorderColorSaturation = null,
     label: Ellipsis = null,
     name: String = null,
-    upperLabel: TextShadowOffsetX = null,
+    upperLabel: TextShadowColor = null,
     value: js.Array[_] | Double = null,
     visibleMin: js.UndefOr[Double] = js.undefined,
     visualDimension: js.UndefOr[Double] = js.undefined,

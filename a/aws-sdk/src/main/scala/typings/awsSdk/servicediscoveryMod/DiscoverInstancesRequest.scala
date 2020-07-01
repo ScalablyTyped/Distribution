@@ -13,7 +13,7 @@ trait DiscoverInstancesRequest extends js.Object {
   /**
     * The maximum number of instances that you want AWS Cloud Map to return in the response to a DiscoverInstances request. If you don't specify a value for MaxResults, AWS Cloud Map returns up to 100 instances.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.servicediscoveryMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[DiscoverMaxResults] = js.native
   /**
     * The name of the namespace that you specified when you registered the instance.
     */
@@ -34,7 +34,7 @@ object DiscoverInstancesRequest {
     NamespaceName: NamespaceName,
     ServiceName: ServiceName,
     HealthStatus: HealthStatusFilter = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: js.UndefOr[DiscoverMaxResults] = js.undefined,
     QueryParameters: Attributes = null
   ): DiscoverInstancesRequest = {
     val __obj = js.Dynamic.literal(NamespaceName = NamespaceName.asInstanceOf[js.Any], ServiceName = ServiceName.asInstanceOf[js.Any])

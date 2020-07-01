@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "winston" : "3.2.1"
+      "winston" : "3.3.3"
     }
   ],
   "test-dependencies" : [
     {
-      "winston" : "3.2.1"
+      "winston" : "3.3.3"
     }
   ],
   "compile-devDependencies" : [

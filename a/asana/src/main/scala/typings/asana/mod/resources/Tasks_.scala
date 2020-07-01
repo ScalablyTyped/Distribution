@@ -139,6 +139,8 @@ trait Tasks_ extends Resource {
     */
   def create(data: CreateParamsworkspacestri): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
   def create(data: CreateParamsworkspacestri, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def createInWorkspace(workspace: String, data: CreateParams): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def createInWorkspace(workspace: String, data: CreateParams, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
   /**
     * * Creating a new task is as easy as POSTing to the `/tasks` endpoint
     * * with a data block containing the fields you'd like to set on the task.
@@ -312,6 +314,25 @@ trait Tasks_ extends Resource {
   def removeTag(task: String, data: TagParams, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Object] = js.native
   def removeTag(task: Double, data: TagParams): typings.bluebird.mod.^[js.Object] = js.native
   def removeTag(task: Double, data: TagParams, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Object] = js.native
+  def searchInWorkspace(workspace: String): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def searchInWorkspace(workspace: String, params: Params): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def searchInWorkspace(workspace: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  /**
+    * * The search endpoint allows you to build complex queries to find and fetch exactly the data you need from Asana.
+    * * For a more comprehensive description of all the query parameters and limitations of this endpoint, see our
+    * * [long-form documentation](/developers/documentation/getting-started/search-api) for this feature.
+    *   * @param {Number} workspace The workspace to search in for tasks.
+    *   * @param {Object} [params] Parameters for the request
+    *   * @param {Object} [dispatchOptions] Options, if any, to pass the dispatcher for the request
+    *   * @return {Promise} The response from the API
+    * @param task
+    * @param params?
+    * @param dispatchOptions?
+    * @return
+    */
+  def searchInWorkspace(workspace: Double): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def searchInWorkspace(workspace: Double, params: Params): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def searchInWorkspace(workspace: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
   /**
     * * Returns a compact representation of all of the stories on the task.
     *   * @param {Number} task The task containing the stories to get.

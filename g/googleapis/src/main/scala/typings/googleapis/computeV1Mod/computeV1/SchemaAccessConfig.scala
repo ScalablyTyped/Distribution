@@ -71,7 +71,7 @@ object SchemaAccessConfig {
     if (natIP != null) __obj.updateDynamic("natIP")(natIP.asInstanceOf[js.Any])
     if (networkTier != null) __obj.updateDynamic("networkTier")(networkTier.asInstanceOf[js.Any])
     if (publicPtrDomainName != null) __obj.updateDynamic("publicPtrDomainName")(publicPtrDomainName.asInstanceOf[js.Any])
-    if (!js.isUndefined(setPublicPtr)) __obj.updateDynamic("setPublicPtr")(setPublicPtr.asInstanceOf[js.Any])
+    if (!js.isUndefined(setPublicPtr)) __obj.updateDynamic("setPublicPtr")(setPublicPtr.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAccessConfig]
   }

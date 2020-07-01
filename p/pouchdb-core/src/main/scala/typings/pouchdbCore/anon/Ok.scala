@@ -11,7 +11,7 @@ trait Ok[Content /* <: js.Object */] extends js.Object {
 
 object Ok {
   @scala.inline
-  def apply[Content](ok: Content with GetMeta): Ok[Content] = {
+  def apply[/* <: js.Object */ Content](ok: Content with GetMeta): Ok[Content] = {
     val __obj = js.Dynamic.literal(ok = ok.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ok[Content]]
   }

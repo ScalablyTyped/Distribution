@@ -32,13 +32,13 @@ object SchemaPlayerLevel {
   @scala.inline
   def apply(
     kind: String = null,
-    level: Int | Double = null,
+    level: js.UndefOr[Double] = js.undefined,
     maxExperiencePoints: String = null,
     minExperiencePoints: String = null
   ): SchemaPlayerLevel = {
     val __obj = js.Dynamic.literal()
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
     if (maxExperiencePoints != null) __obj.updateDynamic("maxExperiencePoints")(maxExperiencePoints.asInstanceOf[js.Any])
     if (minExperiencePoints != null) __obj.updateDynamic("minExperiencePoints")(minExperiencePoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPlayerLevel]

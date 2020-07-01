@@ -24,7 +24,7 @@ object SchemaSubstringMatchCriteria {
   @scala.inline
   def apply(matchCase: js.UndefOr[Boolean] = js.undefined, text: String = null): SchemaSubstringMatchCriteria = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSubstringMatchCriteria]
   }

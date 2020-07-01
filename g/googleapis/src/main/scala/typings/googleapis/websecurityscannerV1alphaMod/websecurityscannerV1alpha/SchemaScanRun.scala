@@ -66,7 +66,7 @@ object SchemaScanRun {
     executionState: String = null,
     hasVulnerabilities: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
-    progressPercent: Int | Double = null,
+    progressPercent: js.UndefOr[Double] = js.undefined,
     resultState: String = null,
     startTime: String = null,
     urlsCrawledCount: String = null,
@@ -75,9 +75,9 @@ object SchemaScanRun {
     val __obj = js.Dynamic.literal()
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
     if (executionState != null) __obj.updateDynamic("executionState")(executionState.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasVulnerabilities)) __obj.updateDynamic("hasVulnerabilities")(hasVulnerabilities.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasVulnerabilities)) __obj.updateDynamic("hasVulnerabilities")(hasVulnerabilities.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (progressPercent != null) __obj.updateDynamic("progressPercent")(progressPercent.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressPercent)) __obj.updateDynamic("progressPercent")(progressPercent.get.asInstanceOf[js.Any])
     if (resultState != null) __obj.updateDynamic("resultState")(resultState.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     if (urlsCrawledCount != null) __obj.updateDynamic("urlsCrawledCount")(urlsCrawledCount.asInstanceOf[js.Any])

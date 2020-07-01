@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ModifyDBClusterSnapshotAttributeMessage extends js.Object {
   /**
-    * The name of the DB cluster snapshot attribute to modify. To manage authorization for other AWS accounts to copy or restore a manual DB cluster snapshot, set this value to restore.
+    * The name of the DB cluster snapshot attribute to modify. To manage authorization for other AWS accounts to copy or restore a manual DB cluster snapshot, set this value to restore.  To view the list of attributes available to modify, use the DescribeDBClusterSnapshotAttributes API action. 
     */
   var AttributeName: String = js.native
   /**

@@ -21,7 +21,7 @@ trait Sink[InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */
 
 object Sink {
   @scala.inline
-  def apply[InputStream, OutputStream](`import`: InputStream => OutputStream): Sink[InputStream, OutputStream] = {
+  def apply[/* <: typings.node.eventsMod.EventEmitter */ InputStream, /* <: typings.node.eventsMod.EventEmitter */ OutputStream](`import`: InputStream => OutputStream): Sink[InputStream, OutputStream] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("import")(js.Any.fromFunction1(`import`))
     __obj.asInstanceOf[Sink[InputStream, OutputStream]]

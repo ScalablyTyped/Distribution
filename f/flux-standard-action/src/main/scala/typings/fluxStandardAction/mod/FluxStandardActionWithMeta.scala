@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 
 object FluxStandardActionWithMeta {
   @scala.inline
-  def apply[Type, Payload, Meta](meta: Meta, `type`: Type, error: js.UndefOr[Boolean] = js.undefined, payload: Payload = null): FluxStandardActionWithMeta[Type, Payload, Meta] = {
+  def apply[/* <: java.lang.String */ Type, Payload, Meta](meta: Meta, `type`: Type, error: js.UndefOr[Boolean] = js.undefined, payload: Payload = null): FluxStandardActionWithMeta[Type, Payload, Meta] = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.get.asInstanceOf[js.Any])

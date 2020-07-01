@@ -171,11 +171,11 @@ object SchemaObjectMeta {
     annotations: StringDictionary[String] = null,
     clusterName: String = null,
     creationTimestamp: String = null,
-    deletionGracePeriodSeconds: Int | Double = null,
+    deletionGracePeriodSeconds: js.UndefOr[Double] = js.undefined,
     deletionTimestamp: String = null,
     finalizers: js.Array[String] = null,
     generateName: String = null,
-    generation: Int | Double = null,
+    generation: js.UndefOr[Double] = js.undefined,
     initializers: SchemaInitializers = null,
     labels: StringDictionary[String] = null,
     name: String = null,
@@ -189,11 +189,11 @@ object SchemaObjectMeta {
     if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
     if (clusterName != null) __obj.updateDynamic("clusterName")(clusterName.asInstanceOf[js.Any])
     if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
-    if (deletionGracePeriodSeconds != null) __obj.updateDynamic("deletionGracePeriodSeconds")(deletionGracePeriodSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(deletionGracePeriodSeconds)) __obj.updateDynamic("deletionGracePeriodSeconds")(deletionGracePeriodSeconds.get.asInstanceOf[js.Any])
     if (deletionTimestamp != null) __obj.updateDynamic("deletionTimestamp")(deletionTimestamp.asInstanceOf[js.Any])
     if (finalizers != null) __obj.updateDynamic("finalizers")(finalizers.asInstanceOf[js.Any])
     if (generateName != null) __obj.updateDynamic("generateName")(generateName.asInstanceOf[js.Any])
-    if (generation != null) __obj.updateDynamic("generation")(generation.asInstanceOf[js.Any])
+    if (!js.isUndefined(generation)) __obj.updateDynamic("generation")(generation.get.asInstanceOf[js.Any])
     if (initializers != null) __obj.updateDynamic("initializers")(initializers.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

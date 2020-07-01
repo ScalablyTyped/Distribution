@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * @property element - The target Element that the event was fired from.
   * @property touches - A list of all touches currently in contact with the device.
   * @property changedTouches - A list of touches that have changed since the last event.
+  * @property event - The original browser TouchEvent.
   * @param device - The source device of the touch events.
   * @param event - The original browser TouchEvent.
   */
@@ -28,6 +29,11 @@ class TouchEvent protected ()
     */
   /* CompleteClass */
   override var element: Element = js.native
+  /**
+    * The original browser TouchEvent.
+    */
+  /* CompleteClass */
+  override var event: typings.playcanvas.pc.TouchEvent = js.native
   /**
     * A list of all touches currently in contact with the device.
     */

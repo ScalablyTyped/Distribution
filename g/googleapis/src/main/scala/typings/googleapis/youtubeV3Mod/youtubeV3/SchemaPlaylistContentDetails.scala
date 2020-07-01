@@ -14,9 +14,9 @@ trait SchemaPlaylistContentDetails extends js.Object {
 
 object SchemaPlaylistContentDetails {
   @scala.inline
-  def apply(itemCount: Int | Double = null): SchemaPlaylistContentDetails = {
+  def apply(itemCount: js.UndefOr[Double] = js.undefined): SchemaPlaylistContentDetails = {
     val __obj = js.Dynamic.literal()
-    if (itemCount != null) __obj.updateDynamic("itemCount")(itemCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemCount)) __obj.updateDynamic("itemCount")(itemCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPlaylistContentDetails]
   }
 }

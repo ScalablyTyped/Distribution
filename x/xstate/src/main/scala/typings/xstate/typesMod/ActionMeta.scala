@@ -12,7 +12,7 @@ trait ActionMeta[TContext, TEvent /* <: EventObject */] extends StateMeta[TConte
 
 object ActionMeta {
   @scala.inline
-  def apply[TContext, TEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     _event: typings.xstate.typesMod.SCXML.Event[TEvent],
     action: ActionObject[TContext, TEvent],
     state: State[TContext, TEvent, _, Context[TContext]]

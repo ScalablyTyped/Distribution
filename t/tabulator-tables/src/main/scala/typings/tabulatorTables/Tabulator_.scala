@@ -2,6 +2,7 @@ package typings.tabulatorTables
 
 import typings.std.HTMLElement
 import typings.tabulatorTables.Tabulator.AddditionalExportOptions
+import typings.tabulatorTables.Tabulator.CellComponent
 import typings.tabulatorTables.Tabulator.ColumnComponent
 import typings.tabulatorTables.Tabulator.ColumnDefinition
 import typings.tabulatorTables.Tabulator.ColumnLayout
@@ -10,6 +11,7 @@ import typings.tabulatorTables.Tabulator.DownloadOptions
 import typings.tabulatorTables.Tabulator.DownloadType
 import typings.tabulatorTables.Tabulator.Filter
 import typings.tabulatorTables.Tabulator.FilterFunction
+import typings.tabulatorTables.Tabulator.FilterParams
 import typings.tabulatorTables.Tabulator.FilterType
 import typings.tabulatorTables.Tabulator.GroupComponent
 import typings.tabulatorTables.Tabulator.Options
@@ -68,6 +70,7 @@ trait Tabulator_ extends js.Object {
   def addData(data: js.Array[js.Object], addToTop: Boolean, positionTarget: RowLookup): js.Promise[RowComponent] = js.native
   /** If you want to add another filter to the existing filters then you can call the addFilter function: */
   def addFilter(field: String, `type`: FilterType, value: js.Any): Unit = js.native
+  def addFilter(field: String, `type`: FilterType, value: js.Any, filterParams: FilterParams): Unit = js.native
   /** You can add a row to the table using the addRow function.
     The first argument should be a row data object. If you do not pass data for a column, it will be left empty. To create a blank row (ie for a user to fill in), pass an empty object to the function.
     The second argument is optional and determines whether the row is added to the top or bottom of the table. A value of true will add the row to the top of the table, a value of false will add the row to the bottom of the table. If the parameter is not set the row will be placed according to the addRowPos global option. */
@@ -77,6 +80,14 @@ trait Tabulator_ extends js.Object {
   def addRow(data: js.Object, addToTop: Boolean, positionTarget: RowLookup): js.Promise[RowComponent] = js.native
   /** Prevent actions from riggering an update of the Virtual DOM: */
   def blockRedraw(): Unit = js.native
+  /**Clear the edited flag on all cells in the table or some of them */
+  def clearCellEdited(): Unit = js.native
+  def clearCellEdited(clear: js.Array[CellComponent]): Unit = js.native
+  def clearCellEdited(clear: CellComponent): Unit = js.native
+  /** clear the invalid state on all cells in the table */
+  def clearCellValidation(): Unit = js.native
+  def clearCellValidation(clearType: js.Array[CellComponent]): Unit = js.native
+  def clearCellValidation(clearType: CellComponent): Unit = js.native
   /** You can remove all data from the table using clearData */
   def clearData(): Unit = js.native
   /** To remove all filters from the table, use the clearFilter function. */
@@ -124,6 +135,18 @@ trait Tabulator_ extends js.Object {
     fileName: String,
     params: DownloadOptions
   ): Unit = js.native
+  def download(
+    downloadType: js.Function4[
+      /* columns */ js.Array[ColumnDefinition], 
+      /* data */ js.Any, 
+      /* options */ js.Any, 
+      /* setFileContents */ js.Any, 
+      _
+    ],
+    fileName: String,
+    params: DownloadOptions,
+    filter: RowRangeLookup
+  ): Unit = js.native
   /** You have a choice of four file types to choose from:
     csv - Comma separated value file
     json - JSON formatted text file
@@ -137,54 +160,10 @@ trait Tabulator_ extends js.Object {
     */
   def download(downloadType: DownloadType, fileName: String): Unit = js.native
   def download(downloadType: DownloadType, fileName: String, params: DownloadOptions): Unit = js.native
+  def download(downloadType: DownloadType, fileName: String, params: DownloadOptions, filter: RowRangeLookup): Unit = js.native
   /** If you want to open the generated file in a new browser tab rather than downloading it straight away, you can use the downloadToTab function. This is particularly useful with the PDF downloader, as it allows you to preview the resulting PDF in a new browser ta */
   def downloadToTab(downloadType: DownloadType, fileName: String): Unit = js.native
   def downloadToTab(downloadType: DownloadType, fileName: String, params: DownloadOptions): Unit = js.native
-  @JSName("download")
-  def download_active(
-    downloadType: js.Function4[
-      /* columns */ js.Array[ColumnDefinition], 
-      /* data */ js.Any, 
-      /* options */ js.Any, 
-      /* setFileContents */ js.Any, 
-      _
-    ],
-    fileName: String,
-    params: DownloadOptions,
-    filter: active
-  ): Unit = js.native
-  @JSName("download")
-  def download_active(downloadType: DownloadType, fileName: String, params: DownloadOptions, filter: active): Unit = js.native
-  @JSName("download")
-  def download_all(
-    downloadType: js.Function4[
-      /* columns */ js.Array[ColumnDefinition], 
-      /* data */ js.Any, 
-      /* options */ js.Any, 
-      /* setFileContents */ js.Any, 
-      _
-    ],
-    fileName: String,
-    params: DownloadOptions,
-    filter: all
-  ): Unit = js.native
-  @JSName("download")
-  def download_all(downloadType: DownloadType, fileName: String, params: DownloadOptions, filter: all): Unit = js.native
-  @JSName("download")
-  def download_visible(
-    downloadType: js.Function4[
-      /* columns */ js.Array[ColumnDefinition], 
-      /* data */ js.Any, 
-      /* options */ js.Any, 
-      /* setFileContents */ js.Any, 
-      _
-    ],
-    fileName: String,
-    params: DownloadOptions,
-    filter: visible
-  ): Unit = js.native
-  @JSName("download")
-  def download_visible(downloadType: DownloadType, fileName: String, params: DownloadOptions, filter: visible): Unit = js.native
   /** A lot of the modules come with a range of default settings to make setting up your table easier, for example the sorters, formatters and editors that ship with Tabulator as standard.
     If you are using a lot of custom settings over and over again (for example a custom sorter). you can end up re-delcaring it several time for different tables. To make your life easier Tabulator allows you to extend the default setup of each module to make your custom options as easily accessible as the defaults.
     Using the extendModule function on the global Tabulator variable allows you to globally add these options to all tables.
@@ -210,13 +189,15 @@ trait Tabulator_ extends js.Object {
   /** To get an array of Column Components for the current table setup, call the getColumns function. This will only return actual data columns not column groups.
     ** To get a structured array of Column Components that includes column groups, pass a value of true as an argument.
     */
-  def getColumns(): js.Array[ColumnComponent | GroupComponent] = js.native
-  def getColumns(includeColumnGroups: Boolean): js.Array[ColumnComponent | GroupComponent] = js.native
+  def getColumns(): js.Array[ColumnComponent] = js.native
+  def getColumns(includeColumnGroups: Boolean): js.Array[ColumnComponent] = js.native
   /** You can retrieve the data stored in the table using the getData function. */
   def getData(): js.Array[_] = js.native
   def getData(activeOnly: VisibleRowRangeLookup): js.Array[_] = js.native
   def getDataCount(): Double = js.native
   def getDataCount(activeOnly: VisibleRowRangeLookup): Double = js.native
+  /**You can get a list of all editited cells in the table using the getEditedCells function. this will return an array of Cell Components for each cell that has been edited. */
+  def getEditedCells(): js.Array[CellComponent] = js.native
   /** You can retrieve an array of the current programtic filters using the getFilters function, this will not include any of the header filters: */
   def getFilters(includeHeaderFilters: Boolean): js.Array[Filter] = js.native
   /** get grouped table data in the same format as getData() */
@@ -237,6 +218,8 @@ trait Tabulator_ extends js.Object {
   def getHtml(rowRangeLookup: RowRangeLookup): js.Any = js.native
   def getHtml(rowRangeLookup: RowRangeLookup, style: Boolean): js.Any = js.native
   def getHtml(rowRangeLookup: RowRangeLookup, style: Boolean, config: AddditionalExportOptions): js.Any = js.native
+  /**The getInvalidCells method returns an array of Cell Components for all cells flagged as invalid after a user edit. */
+  def getInvalidCells(): js.Array[CellComponent] = js.native
   /** You can then access these at any point using the getLang function, which will return the language object for the currently active locale. */
   def getLang(): js.Any = js.native
   def getLang(locale: String): js.Any = js.native
@@ -339,6 +322,7 @@ trait Tabulator_ extends js.Object {
   def redraw(force: Boolean): Unit = js.native
   /** If you want to remove one filter from the current list of filters you can use the removeFilter function: */
   def removeFilter(field: String, `type`: FilterType, value: js.Any): Unit = js.native
+  def removeFilter(field: String, `type`: FilterType, value: js.Any, filterParams: FilterParams): Unit = js.native
   /** The replaceData function lets you silently replace all data in the table without updating scroll position, sort or filtering, and without triggering the ajax loading popup. This is great if you have a table you want to periodically update with new/updated information without alerting the user to a change.
     It takes the same arguments as the setData function, and behaves in the same way when loading data (ie, it can make ajax requests, parse JSON etc) */
   def replaceData(): js.Promise[Unit] = js.native
@@ -398,13 +382,17 @@ trait Tabulator_ extends js.Object {
   def setFilter(p1: String): Unit = js.native
   def setFilter(p1: String, p2: js.Object): Unit = js.native
   def setFilter(p1: String, p2: js.Object, value: js.Any): Unit = js.native
+  def setFilter(p1: String, p2: js.Object, value: js.Any, filterParams: FilterParams): Unit = js.native
   def setFilter(p1: String, p2: FilterType): Unit = js.native
   def setFilter(p1: String, p2: FilterType, value: js.Any): Unit = js.native
+  def setFilter(p1: String, p2: FilterType, value: js.Any, filterParams: FilterParams): Unit = js.native
   def setFilter(p1: js.Array[_ | Filter]): Unit = js.native
   def setFilter(p1: js.Array[_ | Filter], p2: js.Object): Unit = js.native
   def setFilter(p1: js.Array[_ | Filter], p2: js.Object, value: js.Any): Unit = js.native
+  def setFilter(p1: js.Array[_ | Filter], p2: js.Object, value: js.Any, filterParams: FilterParams): Unit = js.native
   def setFilter(p1: js.Array[_ | Filter], p2: FilterType): Unit = js.native
   def setFilter(p1: js.Array[_ | Filter], p2: FilterType, value: js.Any): Unit = js.native
+  def setFilter(p1: js.Array[_ | Filter], p2: FilterType, value: js.Any, filterParams: FilterParams): Unit = js.native
   def setFilter(p1: js.Function2[/* data */ js.Any, /* filterParams */ js.Any, Boolean]): Unit = js.native
   def setFilter(p1: js.Function2[/* data */ js.Any, /* filterParams */ js.Any, Boolean], p2: js.Object): Unit = js.native
   def setFilter(
@@ -412,11 +400,23 @@ trait Tabulator_ extends js.Object {
     p2: js.Object,
     value: js.Any
   ): Unit = js.native
+  def setFilter(
+    p1: js.Function2[/* data */ js.Any, /* filterParams */ js.Any, Boolean],
+    p2: js.Object,
+    value: js.Any,
+    filterParams: FilterParams
+  ): Unit = js.native
   def setFilter(p1: js.Function2[/* data */ js.Any, /* filterParams */ js.Any, Boolean], p2: FilterType): Unit = js.native
   def setFilter(
     p1: js.Function2[/* data */ js.Any, /* filterParams */ js.Any, Boolean],
     p2: FilterType,
     value: js.Any
+  ): Unit = js.native
+  def setFilter(
+    p1: js.Function2[/* data */ js.Any, /* filterParams */ js.Any, Boolean],
+    p2: FilterType,
+    value: js.Any,
+    filterParams: FilterParams
   ): Unit = js.native
   /** You can use the setGroupBy function to change the fields that rows are grouped by. This function has one argument and takes the same values as passed to the groupBy setup option. */
   def setGroupBy(groups: String): Unit = js.native
@@ -512,5 +512,10 @@ trait Tabulator_ extends js.Object {
     This function will return true if the update was successful or false if the requested row could not be found. If the new data matches the existing row data, no update will be performed.
     */
   def updateRow(row: RowLookup, data: js.Object): Boolean = js.native
+  /**You can validate the whole table in one go by calling the validate method on the table instance.
+    *
+    * This will return a value of true if every cell passes validation, if any cells fail, then it will return an array of Cell Components representing each cell that has failed validation.
+    */
+  def validate(): `true` | js.Array[CellComponent] = js.native
 }
 

@@ -62,7 +62,7 @@ trait BaseInitOpts[T /* <: Ractive[T] */] extends BaseParseOpts {
 
 object BaseInitOpts {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.ractive.mod.Ractive[T] */ T](
     adapt: js.Array[Adaptor | String] = null,
     adaptors: Registry[Adaptor] = null,
     allowExpressions: js.UndefOr[Boolean] = js.undefined,

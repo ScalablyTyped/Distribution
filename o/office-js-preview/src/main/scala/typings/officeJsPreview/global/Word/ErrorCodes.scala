@@ -12,6 +12,8 @@ object ErrorCodes extends js.Object {
   /* "InvalidArgument" */ val invalidArgument: typings.officeJsPreview.Word.ErrorCodes.invalidArgument with String = js.native
   /* "ItemNotFound" */ val itemNotFound: typings.officeJsPreview.Word.ErrorCodes.itemNotFound with String = js.native
   /* "NotImplemented" */ val notImplemented: typings.officeJsPreview.Word.ErrorCodes.notImplemented with String = js.native
+  /* "SearchDialogIsOpen" */ val searchDialogIsOpen: typings.officeJsPreview.Word.ErrorCodes.searchDialogIsOpen with String = js.native
+  /* "SearchStringInvalidOrTooLong" */ val searchStringInvalidOrTooLong: typings.officeJsPreview.Word.ErrorCodes.searchStringInvalidOrTooLong with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.officeJsPreview.Word.ErrorCodes with String] = js.native
 }

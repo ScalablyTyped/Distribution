@@ -71,5 +71,14 @@ trait Text extends Sprite {
     * @member {string}
     */
   var text: String = js.native
+  /**
+    * Renders text to its canvas, and updates its texture.
+    * By default this is used internally to ensure the texture is correct before rendering,
+    * but it can be used called externally, for example from this class to 'pre-generate' the texture from a piece of text,
+    * and then shared across multiple Sprites.
+    *
+    * @param {boolean} respectDirty - Whether to abort updating the text if the Text isn't dirty and the function is called.
+    */
+  def updateText(respectDirty: Boolean): Unit = js.native
 }
 

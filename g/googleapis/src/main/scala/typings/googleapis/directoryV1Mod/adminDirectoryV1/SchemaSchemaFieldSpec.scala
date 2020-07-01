@@ -1,6 +1,6 @@
 package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
-import typings.googleapis.AnonMaxValue
+import typings.googleapis.anon.MaxValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,7 +47,7 @@ trait SchemaSchemaFieldSpec extends js.Object {
     * will be supported for numeric fields. Setting the numericIndexingSpec
     * allows range queries to be supported.
     */
-  var numericIndexingSpec: js.UndefOr[AnonMaxValue] = js.native
+  var numericIndexingSpec: js.UndefOr[MaxValue] = js.native
   /**
     * Read ACLs on the field specifying who can view values of this field.
     * Valid values are &quot;ALL_DOMAIN_USERS&quot; and
@@ -67,7 +67,7 @@ object SchemaSchemaFieldSpec {
     indexed: js.UndefOr[Boolean] = js.undefined,
     kind: String = null,
     multiValued: js.UndefOr[Boolean] = js.undefined,
-    numericIndexingSpec: AnonMaxValue = null,
+    numericIndexingSpec: MaxValue = null,
     readAccessType: String = null
   ): SchemaSchemaFieldSpec = {
     val __obj = js.Dynamic.literal()
@@ -76,9 +76,9 @@ object SchemaSchemaFieldSpec {
     if (fieldId != null) __obj.updateDynamic("fieldId")(fieldId.asInstanceOf[js.Any])
     if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
     if (fieldType != null) __obj.updateDynamic("fieldType")(fieldType.asInstanceOf[js.Any])
-    if (!js.isUndefined(indexed)) __obj.updateDynamic("indexed")(indexed.asInstanceOf[js.Any])
+    if (!js.isUndefined(indexed)) __obj.updateDynamic("indexed")(indexed.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiValued)) __obj.updateDynamic("multiValued")(multiValued.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiValued)) __obj.updateDynamic("multiValued")(multiValued.get.asInstanceOf[js.Any])
     if (numericIndexingSpec != null) __obj.updateDynamic("numericIndexingSpec")(numericIndexingSpec.asInstanceOf[js.Any])
     if (readAccessType != null) __obj.updateDynamic("readAccessType")(readAccessType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSchemaFieldSpec]

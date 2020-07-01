@@ -59,7 +59,7 @@ object SchemaCreativeGroup {
     accountId: String = null,
     advertiserId: String = null,
     advertiserIdDimensionValue: SchemaDimensionValue = null,
-    groupNumber: Int | Double = null,
+    groupNumber: js.UndefOr[Double] = js.undefined,
     id: String = null,
     kind: String = null,
     name: String = null,
@@ -69,7 +69,7 @@ object SchemaCreativeGroup {
     if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
     if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
     if (advertiserIdDimensionValue != null) __obj.updateDynamic("advertiserIdDimensionValue")(advertiserIdDimensionValue.asInstanceOf[js.Any])
-    if (groupNumber != null) __obj.updateDynamic("groupNumber")(groupNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupNumber)) __obj.updateDynamic("groupNumber")(groupNumber.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

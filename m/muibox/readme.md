@@ -1,7 +1,7 @@
 
 # Scala.js typings for muibox
 
-Typings are for version 1.0
+Typings are for version 1.3
 
 ## Library description:
 Promise-based dialog boxes (alert, confirm, prompt) using Material-UI

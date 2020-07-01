@@ -1,6 +1,6 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
-import typings.googleapis.AnonDescription
+import typings.googleapis.anon.Description
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait SchemaQueryParameterType extends js.Object {
     * [Optional] The types of the fields of this struct, in order, if this is a
     * struct.
     */
-  var structTypes: js.UndefOr[js.Array[AnonDescription]] = js.native
+  var structTypes: js.UndefOr[js.Array[Description]] = js.native
   /**
     * [Required] The top level type of this field.
     */
@@ -26,7 +26,7 @@ object SchemaQueryParameterType {
   @scala.inline
   def apply(
     arrayType: SchemaQueryParameterType = null,
-    structTypes: js.Array[AnonDescription] = null,
+    structTypes: js.Array[Description] = null,
     `type`: String = null
   ): SchemaQueryParameterType = {
     val __obj = js.Dynamic.literal()

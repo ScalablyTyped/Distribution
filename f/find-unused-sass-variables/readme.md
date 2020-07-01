@@ -1,7 +1,7 @@
 
 # Scala.js typings for find-unused-sass-variables
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 A small tool to find unused Sass variables

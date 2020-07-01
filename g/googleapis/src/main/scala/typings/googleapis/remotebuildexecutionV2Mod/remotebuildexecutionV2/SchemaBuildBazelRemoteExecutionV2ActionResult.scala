@@ -120,7 +120,7 @@ object SchemaBuildBazelRemoteExecutionV2ActionResult {
   @scala.inline
   def apply(
     executionMetadata: SchemaBuildBazelRemoteExecutionV2ExecutedActionMetadata = null,
-    exitCode: Int | Double = null,
+    exitCode: js.UndefOr[Double] = js.undefined,
     outputDirectories: js.Array[SchemaBuildBazelRemoteExecutionV2OutputDirectory] = null,
     outputDirectorySymlinks: js.Array[SchemaBuildBazelRemoteExecutionV2OutputSymlink] = null,
     outputFileSymlinks: js.Array[SchemaBuildBazelRemoteExecutionV2OutputSymlink] = null,
@@ -132,7 +132,7 @@ object SchemaBuildBazelRemoteExecutionV2ActionResult {
   ): SchemaBuildBazelRemoteExecutionV2ActionResult = {
     val __obj = js.Dynamic.literal()
     if (executionMetadata != null) __obj.updateDynamic("executionMetadata")(executionMetadata.asInstanceOf[js.Any])
-    if (exitCode != null) __obj.updateDynamic("exitCode")(exitCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(exitCode)) __obj.updateDynamic("exitCode")(exitCode.get.asInstanceOf[js.Any])
     if (outputDirectories != null) __obj.updateDynamic("outputDirectories")(outputDirectories.asInstanceOf[js.Any])
     if (outputDirectorySymlinks != null) __obj.updateDynamic("outputDirectorySymlinks")(outputDirectorySymlinks.asInstanceOf[js.Any])
     if (outputFileSymlinks != null) __obj.updateDynamic("outputFileSymlinks")(outputFileSymlinks.asInstanceOf[js.Any])

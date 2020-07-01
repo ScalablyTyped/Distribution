@@ -42,7 +42,7 @@ import scala.scalajs.js.annotation._
 
 object Choice {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.inquirer.mod.Answers */ T](
     disabled: Boolean,
     name: String,
     short: String,

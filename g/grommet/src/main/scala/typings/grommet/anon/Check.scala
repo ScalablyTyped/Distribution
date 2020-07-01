@@ -13,7 +13,7 @@ trait Check extends js.Object {
   var color: js.UndefOr[ColorType] = js.undefined
   var extend: js.UndefOr[ExtendType] = js.undefined
   var gap: js.UndefOr[GapType] = js.undefined
-  var hover: js.UndefOr[Border0] = js.undefined
+  var hover: js.UndefOr[Border1] = js.undefined
   var icon: js.UndefOr[ExtendSize] = js.undefined
   var icons: js.UndefOr[Checked] = js.undefined
   var size: js.UndefOr[String] = js.undefined
@@ -28,7 +28,7 @@ object Check {
     color: ColorType = null,
     extend: ExtendType = null,
     gap: GapType = null,
-    hover: Border0 = null,
+    hover: Border1 = null,
     icon: ExtendSize = null,
     icons: Checked = null,
     size: String = null,

@@ -21,7 +21,7 @@ trait BaseOperationResponse[T /* <: OperationResponseType */, TI /* <: Operation
 
 object BaseOperationResponse {
   @scala.inline
-  def apply[T, TI](
+  def apply[/* <: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType */ T, /* <: typings.stellarSdk.horizonApiMod.Horizon.OperationResponseTypeI */ TI](
     _links: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in T | 'self' ]: stellar-sdk.stellar-sdk/lib/horizon_api.Horizon.ResponseLink}
     */ typings.stellarSdk.stellarSdkStrings.BaseResponse with TopLevel[js.Any],

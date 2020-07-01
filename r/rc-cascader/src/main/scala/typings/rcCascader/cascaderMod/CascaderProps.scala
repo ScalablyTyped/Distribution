@@ -16,9 +16,10 @@ trait CascaderProps extends js.Object {
   ] = js.undefined
   var changeOnSelect: js.UndefOr[Boolean] = js.undefined
   var children: js.UndefOr[ReactElement] = js.undefined
-  var defaultValue: js.UndefOr[js.Array[String]] = js.undefined
+  var defaultValue: js.UndefOr[CascaderValueType] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var dropdownMenuColumnStyle: js.UndefOr[CSSProperties] = js.undefined
+  var dropdownRender: js.UndefOr[js.Function1[/* menu */ ReactElement, ReactElement]] = js.undefined
   var expandIcon: js.UndefOr[ReactNode] = js.undefined
   var expandTrigger: js.UndefOr[String] = js.undefined
   var fieldNames: js.UndefOr[CascaderFieldNames] = js.undefined
@@ -27,7 +28,7 @@ trait CascaderProps extends js.Object {
   var loadData: js.UndefOr[js.Function1[/* selectOptions */ js.Array[CascaderOption], Unit]] = js.undefined
   var loadingIcon: js.UndefOr[ReactNode] = js.undefined
   var onChange: js.UndefOr[
-    js.Function2[/* value */ js.Array[String], /* selectOptions */ js.Array[CascaderOption], Unit]
+    js.Function2[/* value */ CascaderValueType, /* selectOptions */ js.Array[CascaderOption], Unit]
   ] = js.undefined
   var onKeyDown: js.UndefOr[js.Function1[/* e */ KeyboardEvent[HTMLElement], Unit]] = js.undefined
   var onPopupVisibleChange: js.UndefOr[js.Function1[/* popupVisible */ Boolean, Unit]] = js.undefined
@@ -37,7 +38,7 @@ trait CascaderProps extends js.Object {
   var popupVisible: js.UndefOr[Boolean] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var transitionName: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[js.Array[String]] = js.undefined
+  var value: js.UndefOr[CascaderValueType] = js.undefined
 }
 
 object CascaderProps {
@@ -46,9 +47,10 @@ object CascaderProps {
     builtinPlacements: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BuildInPlacements */ js.Any = null,
     changeOnSelect: js.UndefOr[Boolean] = js.undefined,
     children: ReactElement = null,
-    defaultValue: js.Array[String] = null,
+    defaultValue: CascaderValueType = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     dropdownMenuColumnStyle: CSSProperties = null,
+    dropdownRender: /* menu */ ReactElement => ReactElement = null,
     expandIcon: ReactNode = null,
     expandTrigger: String = null,
     fieldNames: CascaderFieldNames = null,
@@ -56,7 +58,7 @@ object CascaderProps {
     getPopupContainer: js.Any = null,
     loadData: /* selectOptions */ js.Array[CascaderOption] => Unit = null,
     loadingIcon: ReactNode = null,
-    onChange: (/* value */ js.Array[String], /* selectOptions */ js.Array[CascaderOption]) => Unit = null,
+    onChange: (/* value */ CascaderValueType, /* selectOptions */ js.Array[CascaderOption]) => Unit = null,
     onKeyDown: /* e */ KeyboardEvent[HTMLElement] => Unit = null,
     onPopupVisibleChange: /* popupVisible */ Boolean => Unit = null,
     options: js.Array[CascaderOption] = null,
@@ -65,7 +67,7 @@ object CascaderProps {
     popupVisible: js.UndefOr[Boolean] = js.undefined,
     prefixCls: String = null,
     transitionName: String = null,
-    value: js.Array[String] = null
+    value: CascaderValueType = null
   ): CascaderProps = {
     val __obj = js.Dynamic.literal()
     if (builtinPlacements != null) __obj.updateDynamic("builtinPlacements")(builtinPlacements.asInstanceOf[js.Any])
@@ -74,6 +76,7 @@ object CascaderProps {
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (dropdownMenuColumnStyle != null) __obj.updateDynamic("dropdownMenuColumnStyle")(dropdownMenuColumnStyle.asInstanceOf[js.Any])
+    if (dropdownRender != null) __obj.updateDynamic("dropdownRender")(js.Any.fromFunction1(dropdownRender))
     if (expandIcon != null) __obj.updateDynamic("expandIcon")(expandIcon.asInstanceOf[js.Any])
     if (expandTrigger != null) __obj.updateDynamic("expandTrigger")(expandTrigger.asInstanceOf[js.Any])
     if (fieldNames != null) __obj.updateDynamic("fieldNames")(fieldNames.asInstanceOf[js.Any])

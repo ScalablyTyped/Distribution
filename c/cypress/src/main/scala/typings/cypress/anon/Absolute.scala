@@ -5,17 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Absolute extends js.Object {
-  /**
-    * resolved filename of the spec
-    */
+  // "cypress/integration/config_passing_spec.coffee" or "__all" if clicked all specs button
   var absolute: String
-  /**
-    * filename like "spec.js"
-    */
   var name: String
-  /**
-    * name relative to the project root, like "cypress/integration/spec.js"
-    */
+  // "config_passing_spec.coffee"
   var relative: String
 }
 

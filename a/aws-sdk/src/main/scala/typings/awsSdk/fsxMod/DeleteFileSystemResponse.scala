@@ -14,6 +14,7 @@ trait DeleteFileSystemResponse extends js.Object {
     * The file system lifecycle for the deletion request. Should be DELETING.
     */
   var Lifecycle: js.UndefOr[FileSystemLifecycle] = js.native
+  var LustreResponse: js.UndefOr[DeleteFileSystemLustreResponse] = js.native
   var WindowsResponse: js.UndefOr[DeleteFileSystemWindowsResponse] = js.native
 }
 
@@ -22,11 +23,13 @@ object DeleteFileSystemResponse {
   def apply(
     FileSystemId: FileSystemId = null,
     Lifecycle: FileSystemLifecycle = null,
+    LustreResponse: DeleteFileSystemLustreResponse = null,
     WindowsResponse: DeleteFileSystemWindowsResponse = null
   ): DeleteFileSystemResponse = {
     val __obj = js.Dynamic.literal()
     if (FileSystemId != null) __obj.updateDynamic("FileSystemId")(FileSystemId.asInstanceOf[js.Any])
     if (Lifecycle != null) __obj.updateDynamic("Lifecycle")(Lifecycle.asInstanceOf[js.Any])
+    if (LustreResponse != null) __obj.updateDynamic("LustreResponse")(LustreResponse.asInstanceOf[js.Any])
     if (WindowsResponse != null) __obj.updateDynamic("WindowsResponse")(WindowsResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFileSystemResponse]
   }

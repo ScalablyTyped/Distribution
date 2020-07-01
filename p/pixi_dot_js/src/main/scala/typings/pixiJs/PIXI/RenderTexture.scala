@@ -61,6 +61,12 @@ trait RenderTexture extends Texture {
     */
   var filterPoolKey: String = js.native
   /**
+    * Shortcut to `this.baseTexture.framebuffer`, saves baseTexture cast.
+    * @member {PIXI.Framebuffer}
+    * @readonly
+    */
+  val framebuffer: Framebuffer = js.native
+  /**
     * Resizes the RenderTexture.
     *
     * @param {number} width - The width to resize to.

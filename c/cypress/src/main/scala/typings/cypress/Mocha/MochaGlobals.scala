@@ -1,5 +1,6 @@
 package typings.cypress.Mocha
 
+import typings.cypress.Cypress.TestConfigOverrides
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -337,6 +338,16 @@ trait MochaGlobals extends js.Object {
     */
   def context(title: String): Suite = js.native
   /**
+    * Describe a "suite" with the given `title`, TestCptions, and callback `fn` containing
+    * nested suites.
+    */
+  /**
+    * Describe a "suite" containing nested suites and tests.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  def context(title: String, config: TestConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite = js.native
+  /**
     * [bdd, tdd] Describe a "suite" with the given `title` and callback `fn` containing
     * nested suites.
     *
@@ -359,6 +370,16 @@ trait MochaGlobals extends js.Object {
     * - _Only available when invoked via the mocha CLI._
     */
   def describe(title: String): Suite = js.native
+  /**
+    * Describe a "suite" with the given `title`, TestCptions, and callback `fn` containing
+    * nested suites.
+    */
+  /**
+    * Describe a "suite" containing nested suites and tests.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  def describe(title: String, config: TestConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite = js.native
   /**
     * [bdd, tdd] Describe a "suite" with the given `title` and callback `fn` containing
     * nested suites.
@@ -407,6 +428,18 @@ trait MochaGlobals extends js.Object {
     * - _Only available when invoked via the mocha CLI._
     */
   def it(title: String): Test = js.native
+  /**
+    * Describe a specification or test-case with the given `title`, TestCptions, and callback `fn` acting
+    * as a thunk.
+    */
+  /**
+    * Describes a test case.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  def it(title: String, config: TestConfigOverrides): Test = js.native
+  def it(title: String, config: TestConfigOverrides, fn: AsyncFunc): Test = js.native
+  def it(title: String, config: TestConfigOverrides, fn: Func): Test = js.native
   def it(title: String, fn: AsyncFunc): Test = js.native
   def it(title: String, fn: Func): Test = js.native
   def run(): Unit = js.native
@@ -489,6 +522,18 @@ trait MochaGlobals extends js.Object {
     * - _Only available when invoked via the mocha CLI._
     */
   def specify(title: String): Test = js.native
+  /**
+    * Describe a specification or test-case with the given `title`, TestCptions, and callback `fn` acting
+    * as a thunk.
+    */
+  /**
+    * Describes a test case.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  def specify(title: String, config: TestConfigOverrides): Test = js.native
+  def specify(title: String, config: TestConfigOverrides, fn: AsyncFunc): Test = js.native
+  def specify(title: String, config: TestConfigOverrides, fn: Func): Test = js.native
   def specify(title: String, fn: AsyncFunc): Test = js.native
   def specify(title: String, fn: Func): Test = js.native
   /**
@@ -502,6 +547,16 @@ trait MochaGlobals extends js.Object {
     * - _Only available when invoked via the mocha CLI._
     */
   def suite(title: String): Suite = js.native
+  /**
+    * Describe a "suite" with the given `title`, TestCptions, and callback `fn` containing
+    * nested suites.
+    */
+  /**
+    * Describe a "suite" containing nested suites and tests.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  def suite(title: String, config: TestConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite = js.native
   /**
     * [bdd, tdd] Describe a "suite" with the given `title` and callback `fn` containing
     * nested suites.
@@ -679,6 +734,18 @@ trait MochaGlobals extends js.Object {
     * - _Only available when invoked via the mocha CLI._
     */
   def test(title: String): Test = js.native
+  /**
+    * Describe a specification or test-case with the given `title`, TestCptions, and callback `fn` acting
+    * as a thunk.
+    */
+  /**
+    * Describes a test case.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  def test(title: String, config: TestConfigOverrides): Test = js.native
+  def test(title: String, config: TestConfigOverrides, fn: AsyncFunc): Test = js.native
+  def test(title: String, config: TestConfigOverrides, fn: Func): Test = js.native
   def test(title: String, fn: AsyncFunc): Test = js.native
   def test(title: String, fn: Func): Test = js.native
   /**
@@ -686,7 +753,19 @@ trait MochaGlobals extends js.Object {
     *
     * - _Only available when invoked via the mocha CLI._
     */
+  def xcontext(title: String, config: TestConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite | Unit = js.native
+  /**
+    * Pending suite.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
   def xcontext(title: String, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite | Unit = js.native
+  /**
+    * Pending suite.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  def xdescribe(title: String, config: TestConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite | Unit = js.native
   /**
     * Pending suite.
     *
@@ -731,6 +810,18 @@ trait MochaGlobals extends js.Object {
     * - _Only available when invoked via the mocha CLI._
     */
   def xit(title: String): Test = js.native
+  /**
+    * Describe a specification or test-case with the given `title`, TestCptions, and callback `fn` acting
+    * as a thunk.
+    */
+  /**
+    * Describes a pending test case.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  def xit(title: String, config: TestConfigOverrides): Test = js.native
+  def xit(title: String, config: TestConfigOverrides, fn: AsyncFunc): Test = js.native
+  def xit(title: String, config: TestConfigOverrides, fn: Func): Test = js.native
   def xit(title: String, fn: AsyncFunc): Test = js.native
   def xit(title: String, fn: Func): Test = js.native
   /**
@@ -771,6 +862,18 @@ trait MochaGlobals extends js.Object {
     * - _Only available when invoked via the mocha CLI._
     */
   def xspecify(title: String): Test = js.native
+  /**
+    * Describe a specification or test-case with the given `title`, TestCptions, and callback `fn` acting
+    * as a thunk.
+    */
+  /**
+    * Describes a pending test case.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  def xspecify(title: String, config: TestConfigOverrides): Test = js.native
+  def xspecify(title: String, config: TestConfigOverrides, fn: AsyncFunc): Test = js.native
+  def xspecify(title: String, config: TestConfigOverrides, fn: Func): Test = js.native
   def xspecify(title: String, fn: AsyncFunc): Test = js.native
   def xspecify(title: String, fn: Func): Test = js.native
 }

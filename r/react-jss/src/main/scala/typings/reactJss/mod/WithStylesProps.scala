@@ -12,7 +12,7 @@ trait WithStylesProps[S /* <: Styles[String] | (js.Function1[/* theme */ js.Any,
 
 object WithStylesProps {
   @scala.inline
-  def apply[S](classes: Classes[/* keyof S */ String]): WithStylesProps[S] = {
+  def apply[/* <: typings.jss.mod.Styles[java.lang.String] | (js.Function1[/ * theme * / js.Any, typings.jss.mod.Styles[java.lang.String]]) */ S](classes: Classes[/* keyof S */ String]): WithStylesProps[S] = {
     val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithStylesProps[S]]
   }

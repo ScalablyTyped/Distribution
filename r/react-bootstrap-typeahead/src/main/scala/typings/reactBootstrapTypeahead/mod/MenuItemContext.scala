@@ -16,7 +16,7 @@ trait MenuItemContext[T /* <: TypeaheadModel */] extends js.Object {
 
 object MenuItemContext {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.reactBootstrapTypeahead.mod.TypeaheadModel */ T](
     activeIndex: js.UndefOr[Double] = js.undefined,
     isOnlyResult: js.UndefOr[Boolean] = js.undefined,
     onActiveItemChange: /* options */ T => Unit = null,

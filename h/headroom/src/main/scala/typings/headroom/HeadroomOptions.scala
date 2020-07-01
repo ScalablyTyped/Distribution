@@ -1,28 +1,39 @@
 package typings.headroom
 
-import typings.headroom.anon.Initial
-import typings.std.Element
+import typings.headroom.anon.Bottom
+import typings.headroom.anon.Down
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HeadroomOptions extends js.Object {
-  var classes: js.UndefOr[Initial] = js.undefined
+  /** css classes to apply multiple classes are also supported with a space-separated list */
+  var classes: js.UndefOr[Bottom] = js.undefined
+  /** vertical offset in px before element is first unpinned */
   var offset: js.UndefOr[Double] = js.undefined
+  /** callback when at bottom of page, `this` is headroom object */
   var onBottom: js.UndefOr[js.Function0[Unit]] = js.undefined
+  /** callback when moving away from bottom of page, `this` is headroom object */
   var onNotBottom: js.UndefOr[js.Function0[Unit]] = js.undefined
+  /** callback when below offset, `this` is headroom object */
   var onNotTop: js.UndefOr[js.Function0[Unit]] = js.undefined
+  /** callback when pinned, `this` is headroom object */
   var onPin: js.UndefOr[js.Function0[Unit]] = js.undefined
+  /** callback when above offset, `this` is headroom object */
   var onTop: js.UndefOr[js.Function0[Unit]] = js.undefined
+  /** callback when unpinned, `this` is headroom object */
   var onUnpin: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var scroller: js.UndefOr[Element] = js.undefined
-  var tolerance: js.UndefOr[js.Any] = js.undefined
+  /** element to listen to scroll events on, defaults to `window` */
+  var scroller: js.UndefOr[HTMLElement] = js.undefined
+  /** scroll tolerance in px before state changes or you can specify tolerance individually for up/down scroll */
+  var tolerance: js.UndefOr[Down | Double] = js.undefined
 }
 
 object HeadroomOptions {
   @scala.inline
   def apply(
-    classes: Initial = null,
+    classes: Bottom = null,
     offset: js.UndefOr[Double] = js.undefined,
     onBottom: () => Unit = null,
     onNotBottom: () => Unit = null,
@@ -30,8 +41,8 @@ object HeadroomOptions {
     onPin: () => Unit = null,
     onTop: () => Unit = null,
     onUnpin: () => Unit = null,
-    scroller: Element = null,
-    tolerance: js.Any = null
+    scroller: HTMLElement = null,
+    tolerance: Down | Double = null
   ): HeadroomOptions = {
     val __obj = js.Dynamic.literal()
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])

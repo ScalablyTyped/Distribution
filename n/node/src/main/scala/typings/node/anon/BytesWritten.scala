@@ -12,7 +12,7 @@ trait BytesWritten[TBuffer /* <: Uint8Array */] extends js.Object {
 
 object BytesWritten {
   @scala.inline
-  def apply[TBuffer](buffer: TBuffer, bytesWritten: Double): BytesWritten[TBuffer] = {
+  def apply[/* <: typings.std.Uint8Array */ TBuffer](buffer: TBuffer, bytesWritten: Double): BytesWritten[TBuffer] = {
     val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesWritten = bytesWritten.asInstanceOf[js.Any])
     __obj.asInstanceOf[BytesWritten[TBuffer]]
   }

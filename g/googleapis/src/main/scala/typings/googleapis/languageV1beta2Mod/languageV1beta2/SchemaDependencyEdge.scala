@@ -25,9 +25,9 @@ trait SchemaDependencyEdge extends js.Object {
 
 object SchemaDependencyEdge {
   @scala.inline
-  def apply(headTokenIndex: Int | Double = null, label: String = null): SchemaDependencyEdge = {
+  def apply(headTokenIndex: js.UndefOr[Double] = js.undefined, label: String = null): SchemaDependencyEdge = {
     val __obj = js.Dynamic.literal()
-    if (headTokenIndex != null) __obj.updateDynamic("headTokenIndex")(headTokenIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(headTokenIndex)) __obj.updateDynamic("headTokenIndex")(headTokenIndex.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDependencyEdge]
   }

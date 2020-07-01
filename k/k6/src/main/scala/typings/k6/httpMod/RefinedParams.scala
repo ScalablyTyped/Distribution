@@ -12,7 +12,7 @@ trait RefinedParams[RT /* <: js.UndefOr[ResponseType] */] extends Params {
 
 object RefinedParams {
   @scala.inline
-  def apply[RT](
+  def apply[/* <: js.UndefOr[typings.k6.httpMod.ResponseType] */ RT](
     auth: AuthMethod = null,
     compression: String = null,
     cookies: StringDictionary[ParamsCookieValue] = null,

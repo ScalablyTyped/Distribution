@@ -10,7 +10,7 @@ trait StateSortColumn[T /* <: js.Object */] extends js.Object {
 
 object StateSortColumn {
   @scala.inline
-  def apply[T](state: SortColumn[T]): StateSortColumn[T] = {
+  def apply[/* <: js.Object */ T](state: SortColumn[T]): StateSortColumn[T] = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateSortColumn[T]]
   }

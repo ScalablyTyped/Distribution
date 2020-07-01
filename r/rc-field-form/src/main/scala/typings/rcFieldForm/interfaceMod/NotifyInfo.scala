@@ -13,13 +13,20 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.rcFieldForm.interfaceMod.ValueUpdateInfo
-  - typings.rcFieldForm.anon.Type
-  - typings.rcFieldForm.anon.Data
-  - typings.rcFieldForm.anon.RelatedFields
+  - typings.rcFieldForm.interfaceMod.ValidateFinishInfo
+  - typings.rcFieldForm.interfaceMod.ResetInfo
+  - typings.rcFieldForm.interfaceMod.SetFieldInfo
+  - typings.rcFieldForm.interfaceMod.DependenciesUpdateInfo
 */
 trait NotifyInfo extends js.Object
 
 object NotifyInfo {
+  @scala.inline
+  def DependenciesUpdateInfo(relatedFields: js.Array[InternalNamePath], `type`: dependenciesUpdate): NotifyInfo = {
+    val __obj = js.Dynamic.literal(relatedFields = relatedFields.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NotifyInfo]
+  }
   @scala.inline
   def ValueUpdateInfo(source: internal | external, `type`: valueUpdate): NotifyInfo = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
@@ -27,20 +34,20 @@ object NotifyInfo {
     __obj.asInstanceOf[NotifyInfo]
   }
   @scala.inline
-  def Type(`type`: validateFinish | reset): NotifyInfo = {
+  def ResetInfo(`type`: reset): NotifyInfo = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotifyInfo]
   }
   @scala.inline
-  def Data(data: FieldData, `type`: setField): NotifyInfo = {
+  def SetFieldInfo(data: FieldData, `type`: setField): NotifyInfo = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotifyInfo]
   }
   @scala.inline
-  def RelatedFields(relatedFields: js.Array[InternalNamePath], `type`: dependenciesUpdate): NotifyInfo = {
-    val __obj = js.Dynamic.literal(relatedFields = relatedFields.asInstanceOf[js.Any])
+  def ValidateFinishInfo(`type`: validateFinish): NotifyInfo = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotifyInfo]
   }

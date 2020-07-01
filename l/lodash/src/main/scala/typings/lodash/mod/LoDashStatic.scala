@@ -157,6 +157,7 @@ import scala.scalajs.js.annotation._
 // isInteger
 // isLength
 // isMap
+// isMatch
 // isNaN
 // isNative
 // isNil
@@ -362,10 +363,11 @@ trait LoDashStatic extends js.Object {
   @JSName("first")
   var first_Original: FnCall = js.native
   /**
-    * Creates a function that memoizes the result of func. If resolver is provided it determines the cache key for
-    * storing the result based on the arguments provided to the memoized function. By default, the first argument
-    * provided to the memoized function is coerced to a string and used as the cache key. The func is invoked with
-    * the this binding of the memoized function.
+    * Creates a function that memoizes the result of `func`. If `resolver` is
+    * provided, it determines the cache key for storing the result based on the
+    * arguments provided to the memoized function. By default, the first argument
+    * provided to the memoized function is used as the map cache key. The `func`
+    * is invoked with the `this` binding of the memoized function.
     *
     * @param func The function to have its output memoized.
     * @param resolver The function to resolve the cache key.
@@ -3172,7 +3174,7 @@ trait LoDashStatic extends js.Object {
     * @param arrays The arrays to inspect.
     * @return Returns the new array of shared values.
     */
-  def intersection[T](arrays: List[T]*): js.Array[T] = js.native
+  def intersection[T](arrays: (js.UndefOr[List[T] | Null])*): js.Array[T] = js.native
   /**
     * @see _.intersectionBy
     */
@@ -4290,10 +4292,11 @@ trait LoDashStatic extends js.Object {
   def meanBy[T](collection: List[T]): Double = js.native
   def meanBy[T](collection: List[T], iteratee: ValueIteratee[T]): Double = js.native
   /**
-    * Creates a function that memoizes the result of func. If resolver is provided it determines the cache key for
-    * storing the result based on the arguments provided to the memoized function. By default, the first argument
-    * provided to the memoized function is coerced to a string and used as the cache key. The func is invoked with
-    * the this binding of the memoized function.
+    * Creates a function that memoizes the result of `func`. If `resolver` is
+    * provided, it determines the cache key for storing the result based on the
+    * arguments provided to the memoized function. By default, the first argument
+    * provided to the memoized function is used as the map cache key. The `func`
+    * is invoked with the `this` binding of the memoized function.
     *
     * @param func The function to have its output memoized.
     * @param resolver The function to resolve the cache key.

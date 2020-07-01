@@ -12,7 +12,7 @@ trait `4`[P /* <: WrappedComponentProps[IntlPropName] */, IntlPropName /* <: Str
 
 object `4` {
   @scala.inline
-  def apply[P, IntlPropName](WrappedComponent: ComponentType[P]): `4`[P, IntlPropName] = {
+  def apply[/* <: typings.reactIntl.mod.WrappedComponentProps[IntlPropName] */ P, /* <: java.lang.String */ IntlPropName](WrappedComponent: ComponentType[P]): `4`[P, IntlPropName] = {
     val __obj = js.Dynamic.literal(WrappedComponent = WrappedComponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[`4`[P, IntlPropName]]
   }

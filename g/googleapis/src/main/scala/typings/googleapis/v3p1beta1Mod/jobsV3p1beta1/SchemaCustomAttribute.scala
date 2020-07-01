@@ -41,7 +41,7 @@ object SchemaCustomAttribute {
     stringValues: js.Array[String] = null
   ): SchemaCustomAttribute = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(filterable)) __obj.updateDynamic("filterable")(filterable.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterable)) __obj.updateDynamic("filterable")(filterable.get.asInstanceOf[js.Any])
     if (longValues != null) __obj.updateDynamic("longValues")(longValues.asInstanceOf[js.Any])
     if (stringValues != null) __obj.updateDynamic("stringValues")(stringValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCustomAttribute]

@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron-packager
 
-Typings are for version 14.0
+Typings are for version 15.0.0
 
 ## Library description:
 Customize and package your Electron app with OS-specific bundles (.app, .exe, etc.) via JS or CLI
@@ -24,7 +24,7 @@ Customize and package your Electron app with OS-specific bundles (.app, .exe, et
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

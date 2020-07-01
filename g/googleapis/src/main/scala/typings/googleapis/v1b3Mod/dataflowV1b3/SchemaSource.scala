@@ -65,7 +65,7 @@ object SchemaSource {
     val __obj = js.Dynamic.literal()
     if (baseSpecs != null) __obj.updateDynamic("baseSpecs")(baseSpecs.asInstanceOf[js.Any])
     if (codec != null) __obj.updateDynamic("codec")(codec.asInstanceOf[js.Any])
-    if (!js.isUndefined(doesNotNeedSplitting)) __obj.updateDynamic("doesNotNeedSplitting")(doesNotNeedSplitting.asInstanceOf[js.Any])
+    if (!js.isUndefined(doesNotNeedSplitting)) __obj.updateDynamic("doesNotNeedSplitting")(doesNotNeedSplitting.get.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (spec != null) __obj.updateDynamic("spec")(spec.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSource]

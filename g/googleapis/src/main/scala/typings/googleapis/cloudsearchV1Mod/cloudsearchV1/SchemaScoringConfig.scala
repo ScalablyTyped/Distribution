@@ -30,8 +30,8 @@ object SchemaScoringConfig {
     disablePersonalization: js.UndefOr[Boolean] = js.undefined
   ): SchemaScoringConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableFreshness)) __obj.updateDynamic("disableFreshness")(disableFreshness.asInstanceOf[js.Any])
-    if (!js.isUndefined(disablePersonalization)) __obj.updateDynamic("disablePersonalization")(disablePersonalization.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableFreshness)) __obj.updateDynamic("disableFreshness")(disableFreshness.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disablePersonalization)) __obj.updateDynamic("disablePersonalization")(disablePersonalization.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaScoringConfig]
   }
 }

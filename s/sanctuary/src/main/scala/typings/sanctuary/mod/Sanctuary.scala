@@ -41,11 +41,11 @@ object Sanctuary extends js.Object {
     def Right[A](x: A): Either[_, A] = js.native
     def T[A](x: A): js.Function1[/* f */ Fn[A, _], _] = js.native
     def add(p: FiniteNumber): js.Function1[/* q */ FiniteNumber, FiniteNumber] = js.native
-    def allPass[A](p: js.Array[Predicate[A]]): Predicate[A] = js.native
+    def all[A](p: Predicate[A]): js.Function1[/* foldable */ Foldable[A], Boolean] = js.native
     def alt[A](x: Alt[A]): js.Function1[/* y */ Alt[A], Alt[A]] = js.native
     //  Logic
     def and(p: Boolean): js.Function1[/* q */ Boolean, Boolean] = js.native
-    def anyPass[A](p: js.Array[Predicate[A]]): Predicate[A] = js.native
+    def any[A](p: Predicate[A]): js.Function1[/* foldable */ Foldable[A], Boolean] = js.native
     def ap[A, B](p: Apply[Fn[A, B]]): js.Function1[/* q */ Apply[A], Apply[B]] = js.native
     def apFirst[A](x: Apply[A]): js.Function1[/* y */ Apply[_], Apply[A]] = js.native
     def apSecond(x: Apply[_]): js.Function1[/* y */ Apply[_], Apply[_]] = js.native
@@ -148,6 +148,7 @@ object Sanctuary extends js.Object {
     def mult(x: FiniteNumber): js.Function1[/* q */ FiniteNumber, FiniteNumber] = js.native
     //  Number
     def negate(n: ValidNumber): ValidNumber = js.native
+    def none[A](p: Predicate[A]): js.Function1[/* foldable */ Foldable[A], Boolean] = js.native
     def not(p: Boolean): Boolean = js.native
     def odd(n: Integer): Boolean = js.native
     def of[A](typeRep: TypeRep): js.Function1[/* x */ A, Fn[_, A]] = js.native
@@ -183,6 +184,7 @@ object Sanctuary extends js.Object {
     //  RegExp
     def regex(p: String): js.Function1[/* q */ String, RegExp] = js.native
     def regexEscape(s: String): String = js.native
+    def reject[A](pred: Predicate[A]): FnCallM[A] = js.native
     def reverse[A](foldable: js.Array[A]): js.Array[A] = js.native
     def reverse[A](foldable: Foldable[A]): Foldable[A] = js.native
     def rights[B](p: js.Array[Either[_, B]]): js.Array[B] = js.native

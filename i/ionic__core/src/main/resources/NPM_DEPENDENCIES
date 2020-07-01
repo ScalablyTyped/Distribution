@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ionic/core" : "5.1.1"
+      "@ionic/core" : "5.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@ionic/core" : "5.1.1"
+      "@ionic/core" : "5.2.2"
     }
   ],
   "compile-devDependencies" : [

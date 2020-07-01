@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateDomainResponse extends js.Object {
   /**
-    * The domain Amazon Resource Name (ARN).
+    * The Amazon Resource Name (ARN) of the domain.
     */
   var DomainArn: js.UndefOr[typings.awsSdk.sagemakerMod.DomainArn] = js.native
 }

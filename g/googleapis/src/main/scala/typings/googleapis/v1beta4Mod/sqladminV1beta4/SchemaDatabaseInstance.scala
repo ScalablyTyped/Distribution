@@ -1,6 +1,6 @@
 package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
-import typings.googleapis.AnonAvailable
+import typings.googleapis.anon.Available
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,7 +56,7 @@ trait SchemaDatabaseInstance extends js.Object {
     * The name and status of the failover replica. This property is applicable
     * only to Second Generation instances.
     */
-  var failoverReplica: js.UndefOr[AnonAvailable] = js.native
+  var failoverReplica: js.UndefOr[Available] = js.native
   /**
     * The Compute Engine zone that the instance is currently serving from. This
     * value could be different from the zone that was specified when the
@@ -164,7 +164,7 @@ object SchemaDatabaseInstance {
     diskEncryptionConfiguration: SchemaDiskEncryptionConfiguration = null,
     diskEncryptionStatus: SchemaDiskEncryptionStatus = null,
     etag: String = null,
-    failoverReplica: AnonAvailable = null,
+    failoverReplica: Available = null,
     gceZone: String = null,
     instanceType: String = null,
     ipAddresses: js.Array[SchemaIpMapping] = null,

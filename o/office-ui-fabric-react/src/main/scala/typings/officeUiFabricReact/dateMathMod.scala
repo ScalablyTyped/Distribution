@@ -1,8 +1,8 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.dateValuesMod.DateRangeType
-import typings.officeUiFabricReact.dateValuesMod.DayOfWeek
-import typings.officeUiFabricReact.dateValuesMod.FirstWeekOfYear
+import typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType
+import typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek
+import typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear
 import typings.std.Date
 import typings.std.Number
 import scala.scalajs.js

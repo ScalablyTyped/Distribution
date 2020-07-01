@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IChannel extends js.Object {
+  var spanContextPropagator: ScopeManager = js.native
   def addContextPreservation[T /* <: js.Function */](preserver: js.Function1[/* cb */ T, T]): Unit = js.native
   def bindToContext[T /* <: js.Function */](cb: T): T = js.native
   def publish[T](name: String, event: T): Unit = js.native

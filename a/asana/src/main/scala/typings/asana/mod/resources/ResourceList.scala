@@ -21,7 +21,7 @@ trait ResourceList[T /* <: Resource */] extends js.Object {
 
 object ResourceList {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.asana.mod.resources.Resource */ T](
     _dispatcher: AsanaBaseUrl,
     _response: Data[T],
     data: js.Array[T],

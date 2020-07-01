@@ -19,7 +19,7 @@ trait QueryFn[TSingleKey /* <: String */, TVariables /* <: AnyVariables */, TRes
 
 object QueryFn {
   @scala.inline
-  def apply[TSingleKey, TVariables, TResult](
+  def apply[/* <: java.lang.String */ TSingleKey, /* <: typings.reactQuery.mod.AnyVariables */ TVariables, TResult](
     queryFn: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _.List.Concat<TKey, TVariables> */ /* key */ js.Any => js.Promise[TResult],
     config: QueryOptions[TResult] = null,
     queryKey: js.UndefOr[

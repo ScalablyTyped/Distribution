@@ -412,6 +412,12 @@ package object medialiveMod {
   */
   type EmbeddedScte20Detection = typings.awsSdk.medialiveMod._EmbeddedScte20Detection | java.lang.String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.DISABLED
+    - typings.awsSdk.awsSdkStrings.ENABLED
+    - java.lang.String
+  */
+  type FeatureActivationsInputPrepareScheduleActions = typings.awsSdk.medialiveMod._FeatureActivationsInputPrepareScheduleActions | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.COLUMN
     - typings.awsSdk.awsSdkStrings.COLUMN_AND_ROW
     - java.lang.String

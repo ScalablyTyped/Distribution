@@ -12,7 +12,7 @@ trait IteratorMultiArgumentsOptions[EmittedType /* <: js.Array[_] */] extends It
 
 object IteratorMultiArgumentsOptions {
   @scala.inline
-  def apply[EmittedType](
+  def apply[/* <: js.Array[_] */ EmittedType](
     multiArgs: `true`,
     filter: EmittedType => Boolean = null,
     limit: js.UndefOr[Double] = js.undefined,

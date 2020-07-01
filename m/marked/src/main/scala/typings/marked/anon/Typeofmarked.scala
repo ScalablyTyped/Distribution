@@ -3,6 +3,7 @@ package typings.marked.anon
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import typings.marked.mod.MarkedOptions
+import typings.marked.mod.Token
 import typings.marked.mod.TokensList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,6 +17,7 @@ trait Typeofmarked extends js.Object {
   var Renderer: Instantiable1[js.UndefOr[/* options */ MarkedOptions], typings.marked.mod.Renderer] = js.native
   var Slugger: Instantiable0[typings.marked.mod.Slugger] = js.native
   var TextRenderer: Instantiable0[typings.marked.mod.TextRenderer] = js.native
+  var Tokenizer: Instantiable1[js.UndefOr[/* options */ MarkedOptions], typings.marked.mod.Tokenizer] = js.native
   val Tokens: js.Any = js.native
   val defaults: MarkedOptions = js.native
   /**
@@ -111,5 +113,11 @@ trait Typeofmarked extends js.Object {
     * @param options Hash of options
     */
   def setOptions(options: MarkedOptions): /* import warning: importer.ImportType#apply Failed type conversion: typeof marked */ js.Any = js.native
+  /**
+    * Use Extension
+    * @param Renderer
+    */
+  def use(options: MarkedOptions): Unit = js.native
+  def walkTokens(tokens: TokensList, callback: js.Function1[/* token */ Token, Unit]): /* import warning: importer.ImportType#apply Failed type conversion: typeof marked */ js.Any = js.native
 }
 

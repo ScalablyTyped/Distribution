@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BackupJob extends js.Object {
   /**
+    * The account ID that owns the backup job.
+    */
+  var AccountId: js.UndefOr[typings.awsSdk.backupMod.AccountId] = js.native
+  /**
     * Uniquely identifies a request to AWS Backup to back up a resource.
     */
   var BackupJobId: js.UndefOr[String] = js.native
@@ -79,6 +83,7 @@ trait BackupJob extends js.Object {
 object BackupJob {
   @scala.inline
   def apply(
+    AccountId: AccountId = null,
     BackupJobId: String = null,
     BackupSizeInBytes: js.UndefOr[Long_] = js.undefined,
     BackupVaultArn: ARN = null,
@@ -98,6 +103,7 @@ object BackupJob {
     StatusMessage: String = null
   ): BackupJob = {
     val __obj = js.Dynamic.literal()
+    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
     if (BackupJobId != null) __obj.updateDynamic("BackupJobId")(BackupJobId.asInstanceOf[js.Any])
     if (!js.isUndefined(BackupSizeInBytes)) __obj.updateDynamic("BackupSizeInBytes")(BackupSizeInBytes.get.asInstanceOf[js.Any])
     if (BackupVaultArn != null) __obj.updateDynamic("BackupVaultArn")(BackupVaultArn.asInstanceOf[js.Any])

@@ -13,7 +13,7 @@ trait Move[S /* <: Schema[_, _] */] extends js.Object {
 
 object Move {
   @scala.inline
-  def apply[S](move: Boolean, slice: Slice[S]): Move[S] = {
+  def apply[/* <: typings.prosemirrorModel.mod.Schema[_, _] */ S](move: Boolean, slice: Slice[S]): Move[S] = {
     val __obj = js.Dynamic.literal(move = move.asInstanceOf[js.Any], slice = slice.asInstanceOf[js.Any])
     __obj.asInstanceOf[Move[S]]
   }

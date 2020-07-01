@@ -46,7 +46,7 @@ trait Props[T /* <: Route */] extends js.Object {
 
 object Props {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.reactNativeTabView.typesMod.Route */ T](
     getAccessibilityLabel: Scene[T] => js.UndefOr[String],
     getAccessible: Scene[T] => js.UndefOr[Boolean],
     getLabelText: Scene[T] => js.UndefOr[String],

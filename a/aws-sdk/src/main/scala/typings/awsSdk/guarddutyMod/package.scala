@@ -115,6 +115,7 @@ package object guarddutyMod {
     - java.lang.String
   */
   type PublishingStatus = typings.awsSdk.guarddutyMod._PublishingStatus | java.lang.String
+  type S3BucketDetails = js.Array[typings.awsSdk.guarddutyMod.S3BucketDetail]
   type SecurityGroups = js.Array[typings.awsSdk.guarddutyMod.SecurityGroup]
   type String = java.lang.String
   type TagKey = java.lang.String
@@ -146,6 +147,7 @@ package object guarddutyMod {
   type ThreatIntelSetStatus = typings.awsSdk.guarddutyMod._ThreatIntelSetStatus | java.lang.String
   type ThreatIntelligenceDetails = js.Array[typings.awsSdk.guarddutyMod.ThreatIntelligenceDetail]
   type ThreatNames = js.Array[typings.awsSdk.guarddutyMod.String]
+  type Timestamp = typings.std.Date
   type UnprocessedAccounts = js.Array[typings.awsSdk.guarddutyMod.UnprocessedAccount]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`2017-11-28`

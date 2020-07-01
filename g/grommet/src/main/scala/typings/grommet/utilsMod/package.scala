@@ -30,7 +30,7 @@ package object utilsMod {
   /* Rewritten from type alias, can be one of: 
     - scala.Boolean
     - typings.grommet.utilsMod.BoxSideType
-    - typings.grommet.anon.Style
+    - typings.grommet.anon.SizeStyle
     - js.Array[typings.grommet.anon.SizeStyle]
   */
   type BorderType = typings.grommet.utilsMod._BorderType | js.Array[typings.grommet.anon.SizeStyle] | scala.Boolean
@@ -43,7 +43,7 @@ package object utilsMod {
     - java.lang.String
   */
   type BoxSizeType = typings.grommet.utilsMod._BoxSizeType | java.lang.String
-  type ColorType = js.UndefOr[java.lang.String | typings.grommet.anon.Light]
+  type ColorType = js.UndefOr[java.lang.String | typings.grommet.anon.Dark]
   type DeepFreeze_ = js.Function1[/* obj */ js.Object, typings.grommet.utilsMod.DeepReadonly[js.Object]]
   type DeepReadonly[T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ K in keyof T ]: T[K] extends object? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias grommet.grommet/utils.DeepReadonly<T[K]> * / object : T[K]}

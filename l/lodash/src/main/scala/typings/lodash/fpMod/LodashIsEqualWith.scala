@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashIsEqualWith extends js.Object {
+trait LodashIsEqualWith extends LodashConvertible {
   def apply(customizer: IsEqualCustomizer): LodashIsEqualWith1x1 = js.native
   def apply(customizer: IsEqualCustomizer, value: js.Any): LodashIsEqualWith1x3 = js.native
   def apply(customizer: IsEqualCustomizer, value: js.Any, other: js.Any): Boolean = js.native

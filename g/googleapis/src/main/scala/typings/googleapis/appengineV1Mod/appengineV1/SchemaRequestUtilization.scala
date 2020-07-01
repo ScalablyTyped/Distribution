@@ -22,10 +22,13 @@ trait SchemaRequestUtilization extends js.Object {
 
 object SchemaRequestUtilization {
   @scala.inline
-  def apply(targetConcurrentRequests: Int | Double = null, targetRequestCountPerSecond: Int | Double = null): SchemaRequestUtilization = {
+  def apply(
+    targetConcurrentRequests: js.UndefOr[Double] = js.undefined,
+    targetRequestCountPerSecond: js.UndefOr[Double] = js.undefined
+  ): SchemaRequestUtilization = {
     val __obj = js.Dynamic.literal()
-    if (targetConcurrentRequests != null) __obj.updateDynamic("targetConcurrentRequests")(targetConcurrentRequests.asInstanceOf[js.Any])
-    if (targetRequestCountPerSecond != null) __obj.updateDynamic("targetRequestCountPerSecond")(targetRequestCountPerSecond.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetConcurrentRequests)) __obj.updateDynamic("targetConcurrentRequests")(targetConcurrentRequests.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetRequestCountPerSecond)) __obj.updateDynamic("targetRequestCountPerSecond")(targetRequestCountPerSecond.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRequestUtilization]
   }
 }

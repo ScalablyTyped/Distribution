@@ -44,7 +44,7 @@ trait Typeofdownloads extends js.Object {
     * strings are not guaranteed to remain backwards compatible between releases. You must not parse it.
     * @param options What to download and how.
     */
-  def download(options: Body): js.Promise[Double] = js.native
+  def download(options: AllowHttpErrors): js.Promise[Double] = js.native
   /**
     * Initiate dragging the file to another application.
     * @deprecated Unsupported on Firefox at this time.

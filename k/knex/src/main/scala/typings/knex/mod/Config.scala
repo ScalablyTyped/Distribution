@@ -32,7 +32,7 @@ trait Config[SV /* <: js.Object */] extends js.Object {
 
 object Config {
   @scala.inline
-  def apply[SV](
+  def apply[/* <: js.Object */ SV](
     acquireConnectionTimeout: js.UndefOr[Double] = js.undefined,
     asyncStackTraces: js.UndefOr[Boolean] = js.undefined,
     client: String | (Instantiable1[/* config */ Config[js.Any], Client]) = null,

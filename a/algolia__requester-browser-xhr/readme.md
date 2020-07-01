@@ -1,7 +1,7 @@
 
 # Scala.js typings for algolia__requester-browser-xhr
 
-Typings are for version 4.2.0
+Typings are for version 4.3.0
 
 ## Library description:
 Promise-based request library for browser using xhr.

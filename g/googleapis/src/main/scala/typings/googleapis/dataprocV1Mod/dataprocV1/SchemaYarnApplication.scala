@@ -37,13 +37,13 @@ object SchemaYarnApplication {
   @scala.inline
   def apply(
     name: String = null,
-    progress: Int | Double = null,
+    progress: js.UndefOr[Double] = js.undefined,
     state: String = null,
     trackingUrl: String = null
   ): SchemaYarnApplication = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
+    if (!js.isUndefined(progress)) __obj.updateDynamic("progress")(progress.get.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (trackingUrl != null) __obj.updateDynamic("trackingUrl")(trackingUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaYarnApplication]

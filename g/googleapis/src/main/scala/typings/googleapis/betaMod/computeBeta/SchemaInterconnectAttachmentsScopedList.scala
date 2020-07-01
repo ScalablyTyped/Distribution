@@ -1,6 +1,6 @@
 package typings.googleapis.betaMod.computeBeta
 
-import typings.googleapis.AnonCode
+import typings.googleapis.anon.Code
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,12 +15,12 @@ trait SchemaInterconnectAttachmentsScopedList extends js.Object {
     * Informational warning which replaces the list of addresses when the list
     * is empty.
     */
-  var warning: js.UndefOr[AnonCode] = js.native
+  var warning: js.UndefOr[Code] = js.native
 }
 
 object SchemaInterconnectAttachmentsScopedList {
   @scala.inline
-  def apply(interconnectAttachments: js.Array[SchemaInterconnectAttachment] = null, warning: AnonCode = null): SchemaInterconnectAttachmentsScopedList = {
+  def apply(interconnectAttachments: js.Array[SchemaInterconnectAttachment] = null, warning: Code = null): SchemaInterconnectAttachmentsScopedList = {
     val __obj = js.Dynamic.literal()
     if (interconnectAttachments != null) __obj.updateDynamic("interconnectAttachments")(interconnectAttachments.asInstanceOf[js.Any])
     if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])

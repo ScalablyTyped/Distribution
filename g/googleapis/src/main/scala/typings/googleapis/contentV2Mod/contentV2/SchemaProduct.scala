@@ -383,7 +383,7 @@ object SchemaProduct {
     displayAdsLink: String = null,
     displayAdsSimilarIds: js.Array[String] = null,
     displayAdsTitle: String = null,
-    displayAdsValue: Int | Double = null,
+    displayAdsValue: js.UndefOr[Double] = js.undefined,
     energyEfficiencyClass: String = null,
     expirationDate: String = null,
     gender: String = null,
@@ -436,7 +436,7 @@ object SchemaProduct {
     val __obj = js.Dynamic.literal()
     if (additionalImageLinks != null) __obj.updateDynamic("additionalImageLinks")(additionalImageLinks.asInstanceOf[js.Any])
     if (additionalProductTypes != null) __obj.updateDynamic("additionalProductTypes")(additionalProductTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(adult)) __obj.updateDynamic("adult")(adult.asInstanceOf[js.Any])
+    if (!js.isUndefined(adult)) __obj.updateDynamic("adult")(adult.get.asInstanceOf[js.Any])
     if (adwordsGrouping != null) __obj.updateDynamic("adwordsGrouping")(adwordsGrouping.asInstanceOf[js.Any])
     if (adwordsLabels != null) __obj.updateDynamic("adwordsLabels")(adwordsLabels.asInstanceOf[js.Any])
     if (adwordsRedirect != null) __obj.updateDynamic("adwordsRedirect")(adwordsRedirect.asInstanceOf[js.Any])
@@ -463,17 +463,17 @@ object SchemaProduct {
     if (displayAdsLink != null) __obj.updateDynamic("displayAdsLink")(displayAdsLink.asInstanceOf[js.Any])
     if (displayAdsSimilarIds != null) __obj.updateDynamic("displayAdsSimilarIds")(displayAdsSimilarIds.asInstanceOf[js.Any])
     if (displayAdsTitle != null) __obj.updateDynamic("displayAdsTitle")(displayAdsTitle.asInstanceOf[js.Any])
-    if (displayAdsValue != null) __obj.updateDynamic("displayAdsValue")(displayAdsValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayAdsValue)) __obj.updateDynamic("displayAdsValue")(displayAdsValue.get.asInstanceOf[js.Any])
     if (energyEfficiencyClass != null) __obj.updateDynamic("energyEfficiencyClass")(energyEfficiencyClass.asInstanceOf[js.Any])
     if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
     if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
     if (googleProductCategory != null) __obj.updateDynamic("googleProductCategory")(googleProductCategory.asInstanceOf[js.Any])
     if (gtin != null) __obj.updateDynamic("gtin")(gtin.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(identifierExists)) __obj.updateDynamic("identifierExists")(identifierExists.asInstanceOf[js.Any])
+    if (!js.isUndefined(identifierExists)) __obj.updateDynamic("identifierExists")(identifierExists.get.asInstanceOf[js.Any])
     if (imageLink != null) __obj.updateDynamic("imageLink")(imageLink.asInstanceOf[js.Any])
     if (installment != null) __obj.updateDynamic("installment")(installment.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBundle)) __obj.updateDynamic("isBundle")(isBundle.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBundle)) __obj.updateDynamic("isBundle")(isBundle.get.asInstanceOf[js.Any])
     if (itemGroupId != null) __obj.updateDynamic("itemGroupId")(itemGroupId.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
@@ -487,7 +487,7 @@ object SchemaProduct {
     if (mpn != null) __obj.updateDynamic("mpn")(mpn.asInstanceOf[js.Any])
     if (multipack != null) __obj.updateDynamic("multipack")(multipack.asInstanceOf[js.Any])
     if (offerId != null) __obj.updateDynamic("offerId")(offerId.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlineOnly)) __obj.updateDynamic("onlineOnly")(onlineOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlineOnly)) __obj.updateDynamic("onlineOnly")(onlineOnly.get.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
     if (productType != null) __obj.updateDynamic("productType")(productType.asInstanceOf[js.Any])

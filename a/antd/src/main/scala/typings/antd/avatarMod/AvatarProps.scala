@@ -14,6 +14,8 @@ trait AvatarProps extends js.Object {
   var alt: js.UndefOr[String] = js.undefined
   var children: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
+  var draggable: js.UndefOr[Boolean] = js.undefined
+  var gap: js.UndefOr[Double] = js.undefined
   /** icon to be used in avatar */
   var icon: js.UndefOr[ReactNode] = js.undefined
   var onError: js.UndefOr[js.Function0[Boolean]] = js.undefined
@@ -34,6 +36,8 @@ object AvatarProps {
     alt: String = null,
     children: ReactNode = null,
     className: String = null,
+    draggable: js.UndefOr[Boolean] = js.undefined,
+    gap: js.UndefOr[Double] = js.undefined,
     icon: ReactNode = null,
     onError: () => Boolean = null,
     prefixCls: String = null,
@@ -47,6 +51,8 @@ object AvatarProps {
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gap)) __obj.updateDynamic("gap")(gap.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction0(onError))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])

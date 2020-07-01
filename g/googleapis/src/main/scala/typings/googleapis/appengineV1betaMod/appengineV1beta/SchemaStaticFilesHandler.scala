@@ -66,12 +66,12 @@ object SchemaStaticFilesHandler {
     uploadPathRegex: String = null
   ): SchemaStaticFilesHandler = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(applicationReadable)) __obj.updateDynamic("applicationReadable")(applicationReadable.asInstanceOf[js.Any])
+    if (!js.isUndefined(applicationReadable)) __obj.updateDynamic("applicationReadable")(applicationReadable.get.asInstanceOf[js.Any])
     if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
     if (httpHeaders != null) __obj.updateDynamic("httpHeaders")(httpHeaders.asInstanceOf[js.Any])
     if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireMatchingFile)) __obj.updateDynamic("requireMatchingFile")(requireMatchingFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireMatchingFile)) __obj.updateDynamic("requireMatchingFile")(requireMatchingFile.get.asInstanceOf[js.Any])
     if (uploadPathRegex != null) __obj.updateDynamic("uploadPathRegex")(uploadPathRegex.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStaticFilesHandler]
   }

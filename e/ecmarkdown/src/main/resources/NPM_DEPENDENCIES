@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ecmarkdown" : "5.0.1"
+      "ecmarkdown" : "5.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "ecmarkdown" : "5.0.1"
+      "ecmarkdown" : "5.1.2"
     }
   ],
   "compile-devDependencies" : [

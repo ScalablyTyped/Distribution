@@ -1,6 +1,7 @@
 package typings.keya
 
-import typings.sqlite.mod.Database
+import typings.sqlite.sqlite3Mod.Database
+import typings.sqlite.sqlite3Mod.Statement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,15 +10,15 @@ import scala.scalajs.js.annotation._
 @js.native
 object sqliteMod extends js.Object {
   @js.native
-  trait SQLiteStore
-    extends typings.keya.storeMod.default {
-    var db: Database = js.native
+  trait SQLiteStore[T]
+    extends typings.keya.storeMod.default[T] {
+    var db: typings.sqlite.mod.Database[Database, Statement] = js.native
     var file: String = js.native
     var statements: js.Any = js.native
   }
   
   @js.native
-  class default () extends SQLiteStore
+  class default[T] () extends SQLiteStore[T]
   
   /* static members */
   @js.native

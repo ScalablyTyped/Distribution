@@ -12,7 +12,7 @@ trait Schema[S /* <: typings.prosemirrorModel.mod.Schema[_, _] */] extends js.Ob
 
 object Schema {
   @scala.inline
-  def apply[S](schema: S, plugins: js.UndefOr[Null | (js.Array[Plugin[_, S]])] = js.undefined): Schema[S] = {
+  def apply[/* <: typings.prosemirrorModel.mod.Schema[_, _] */ S](schema: S, plugins: js.UndefOr[Null | (js.Array[Plugin[_, S]])] = js.undefined): Schema[S] = {
     val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
     if (!js.isUndefined(plugins)) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[Schema[S]]

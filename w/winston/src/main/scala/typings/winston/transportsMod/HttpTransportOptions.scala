@@ -2,7 +2,7 @@ package typings.winston.transportsMod
 
 import typings.logform.mod.Format_
 import typings.node.httpMod.Agent
-import typings.winston.anon.Password
+import typings.winston.anon.Bearer
 import typings.winstonTransport.mod.TransportStreamOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait HttpTransportOptions extends TransportStreamOptions {
   var agent: js.UndefOr[Agent] = js.undefined
-  var auth: js.UndefOr[Password] = js.undefined
+  var auth: js.UndefOr[Bearer] = js.undefined
   var headers: js.UndefOr[js.Object] = js.undefined
   var host: js.UndefOr[String] = js.undefined
   var path: js.UndefOr[String] = js.undefined
@@ -22,7 +22,7 @@ object HttpTransportOptions {
   @scala.inline
   def apply(
     agent: Agent = null,
-    auth: Password = null,
+    auth: Bearer = null,
     close: () => Unit = null,
     format: Format_ = null,
     handleExceptions: js.UndefOr[Boolean] = js.undefined,

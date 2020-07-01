@@ -33,7 +33,7 @@ trait RangeFillLoadOptions extends js.Object {
   var pattern: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * The HTML color code representing the color of the range pattern, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+    * The HTML color code representing the color of the range pattern, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     *
     * [Api set: ExcelApi 1.9]
     */

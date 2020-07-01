@@ -12,6 +12,9 @@ import typings.vega.vegaNumbers.`1`
 import typings.vega.vegaStrings.center
 import typings.vega.vegaStrings.left
 import typings.vega.vegaStrings.right
+import typings.vegaTypings.anon.Ast
+import typings.vegaTypings.anon.Background
+import typings.vegaTypings.configMod.Config
 import typings.vegaTypings.dataMod.Format
 import typings.vegaTypings.dataflowMod.Changeset_
 import typings.vegaTypings.rendererMod.RenderModule_
@@ -78,7 +81,7 @@ object mod extends js.Object {
   class View protected ()
     extends typings.vegaTypings.mod.View {
     def this(runtime: Runtime) = this()
-    def this(runtime: Runtime, config: js.Any) = this()
+    def this(runtime: Runtime, opt: Background) = this()
   }
   
   val Debug: Double = js.native
@@ -182,8 +185,8 @@ object mod extends js.Object {
   def panPow(domain: js.Array[Double], delta: Double, exponent: Double): js.Array[Double] = js.native
   def panSymlog(domain: js.Array[Double], delta: Double, constant: Double): js.Array[Double] = js.native
   def parse(spec: Spec): Runtime = js.native
-  def parse(spec: Spec, config: js.Any): Runtime = js.native
-  def parse(spec: Spec, config: js.Any, opt: js.Object): Runtime = js.native
+  def parse(spec: Spec, config: Config): Runtime = js.native
+  def parse(spec: Spec, config: Config, opt: Ast): Runtime = js.native
   def peek(array: js.Array[_]): js.Any = js.native
   def projection(`type`: String, projection: js.Any): typings.vegaTypings.runtimeMod.View = js.native
   def quarter(date: Double): Double = js.native

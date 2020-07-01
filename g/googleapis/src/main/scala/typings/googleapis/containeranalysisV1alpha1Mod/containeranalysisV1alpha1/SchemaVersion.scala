@@ -34,9 +34,14 @@ trait SchemaVersion extends js.Object {
 
 object SchemaVersion {
   @scala.inline
-  def apply(epoch: Int | Double = null, kind: String = null, name: String = null, revision: String = null): SchemaVersion = {
+  def apply(
+    epoch: js.UndefOr[Double] = js.undefined,
+    kind: String = null,
+    name: String = null,
+    revision: String = null
+  ): SchemaVersion = {
     val __obj = js.Dynamic.literal()
-    if (epoch != null) __obj.updateDynamic("epoch")(epoch.asInstanceOf[js.Any])
+    if (!js.isUndefined(epoch)) __obj.updateDynamic("epoch")(epoch.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (revision != null) __obj.updateDynamic("revision")(revision.asInstanceOf[js.Any])

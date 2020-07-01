@@ -14,7 +14,7 @@ trait ScrollBehaviorOptions[TLocation /* <: LocationBase */, TContext] extends j
 
 object ScrollBehaviorOptions {
   @scala.inline
-  def apply[TLocation, TContext](
+  def apply[/* <: typings.scrollBehavior.mod.LocationBase */ TLocation, TContext](
     addTransitionHook: TransitionHook => js.Function0[Unit],
     getCurrentLocation: () => TLocation,
     stateStorage: Read[TLocation],

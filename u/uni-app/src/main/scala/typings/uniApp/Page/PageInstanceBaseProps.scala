@@ -14,7 +14,7 @@ trait PageInstanceBaseProps[D /* <: AnyObject */] extends js.Object {
 
 object PageInstanceBaseProps {
   @scala.inline
-  def apply[D](route: String = null): PageInstanceBaseProps[D] = {
+  def apply[/* <: typings.uniApp.AnyObject */ D](route: String = null): PageInstanceBaseProps[D] = {
     val __obj = js.Dynamic.literal()
     if (route != null) __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageInstanceBaseProps[D]]

@@ -13,8 +13,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@JSImport("rascal", "SubscriptionSession")
 @js.native
-trait SubscriptionSession extends EventEmitter {
+class SubscriptionSession () extends EventEmitter {
   var name: String = js.native
   def cancel(): js.Promise[Unit] = js.native
   def isCancelled(): Boolean = js.native

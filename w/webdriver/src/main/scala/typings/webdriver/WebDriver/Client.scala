@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 // saucelabs types
 // selenium types
 @js.native
-trait Client extends js.Object {
+trait Client extends BaseClient {
   /**
     * [jsonwp]
     * Get the size of the current focused window.

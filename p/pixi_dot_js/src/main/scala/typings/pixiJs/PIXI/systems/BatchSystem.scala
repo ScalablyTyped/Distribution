@@ -34,10 +34,10 @@ trait BatchSystem extends System {
     * All textures in texArray should have `_batchEnabled = _batchId`,
     * and their count should be less than `maxTextures`.
     *
-    * @param {PIXI.BatchTextureArray} texArray textures to bound
-    * @param {PIXI.BaseTexture[]} boundTextures current state of bound textures
-    * @param {number} batchId marker for _batchEnabled param of textures in texArray
-    * @param {number} maxTextures number of texture locations to manipulate
+    * @param {PIXI.BatchTextureArray} texArray - textures to bound
+    * @param {PIXI.BaseTexture[]} boundTextures - current state of bound textures
+    * @param {number} batchId - marker for _batchEnabled param of textures in texArray
+    * @param {number} maxTextures - number of texture locations to manipulate
     */
   def boundArray(
     texArray: BatchTextureArray,
@@ -49,10 +49,10 @@ trait BatchSystem extends System {
     * Handy function for batch renderers: copies bound textures in first maxTextures locations to array
     * sets actual _batchLocation for them
     *
-    * @param arr
-    * @param maxTextures
+    * @param {PIXI.BaseTexture[]} - arr copy destination
+    * @param {number} maxTextures - number of copied elements
     */
-  def copyBoundTextures(arr: js.Any, maxTextures: js.Any): Unit
+  def copyBoundTextures(arr: js.Array[BaseTexture], maxTextures: Double): Unit
   /**
     * This should be called if you wish to do some custom rendering
     * It will basically render anything that may be batched up such as sprites
@@ -74,7 +74,7 @@ object BatchSystem {
   @scala.inline
   def apply(
     boundArray: (BatchTextureArray, js.Array[BaseTexture], Double, Double) => Unit,
-    copyBoundTextures: (js.Any, js.Any) => Unit,
+    copyBoundTextures: (js.Array[BaseTexture], Double) => Unit,
     currentRenderer: ObjectRenderer,
     destroy: () => Unit,
     emptyRenderer: ObjectRenderer,

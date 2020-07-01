@@ -16,7 +16,7 @@ object SchemaCheckAccessResponse {
   @scala.inline
   def apply(hasAccess: js.UndefOr[Boolean] = js.undefined): SchemaCheckAccessResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasAccess)) __obj.updateDynamic("hasAccess")(hasAccess.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasAccess)) __obj.updateDynamic("hasAccess")(hasAccess.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCheckAccessResponse]
   }
 }

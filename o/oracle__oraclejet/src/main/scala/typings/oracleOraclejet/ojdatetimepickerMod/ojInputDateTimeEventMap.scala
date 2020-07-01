@@ -60,7 +60,7 @@ trait ojInputDateTimeEventMap[SP /* <: ojInputDateTimeSettableProperties */] ext
 
 object ojInputDateTimeEventMap {
   @scala.inline
-  def apply[SP](
+  def apply[/* <: typings.oracleOraclejet.ojdatetimepickerMod.ojInputDateTimeSettableProperties */ SP](
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,

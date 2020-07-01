@@ -35,15 +35,15 @@ object SchemaApkManifest {
   def apply(
     applicationLabel: String = null,
     intentFilters: js.Array[SchemaIntentFilter] = null,
-    maxSdkVersion: Int | Double = null,
-    minSdkVersion: Int | Double = null,
+    maxSdkVersion: js.UndefOr[Double] = js.undefined,
+    minSdkVersion: js.UndefOr[Double] = js.undefined,
     packageName: String = null
   ): SchemaApkManifest = {
     val __obj = js.Dynamic.literal()
     if (applicationLabel != null) __obj.updateDynamic("applicationLabel")(applicationLabel.asInstanceOf[js.Any])
     if (intentFilters != null) __obj.updateDynamic("intentFilters")(intentFilters.asInstanceOf[js.Any])
-    if (maxSdkVersion != null) __obj.updateDynamic("maxSdkVersion")(maxSdkVersion.asInstanceOf[js.Any])
-    if (minSdkVersion != null) __obj.updateDynamic("minSdkVersion")(minSdkVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSdkVersion)) __obj.updateDynamic("maxSdkVersion")(maxSdkVersion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSdkVersion)) __obj.updateDynamic("minSdkVersion")(minSdkVersion.get.asInstanceOf[js.Any])
     if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaApkManifest]
   }

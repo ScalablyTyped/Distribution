@@ -11,7 +11,7 @@ trait CommitTransactionResult extends js.Object {
     */
   var CommitDigest: js.UndefOr[typings.awsSdk.qldbsessionMod.CommitDigest] = js.native
   /**
-    * The transaction id of the committed transaction.
+    * The transaction ID of the committed transaction.
     */
   var TransactionId: js.UndefOr[typings.awsSdk.qldbsessionMod.TransactionId] = js.native
 }

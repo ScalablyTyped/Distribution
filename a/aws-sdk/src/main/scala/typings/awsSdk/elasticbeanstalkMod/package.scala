@@ -223,6 +223,7 @@ package object elasticbeanstalkMod {
   type NullableLong = scala.Double
   type OperatingSystemName = java.lang.String
   type OperatingSystemVersion = java.lang.String
+  type OperationsRole = java.lang.String
   type OptionNamespace = java.lang.String
   type OptionRestrictionMaxLength = scala.Double
   type OptionRestrictionMaxValue = scala.Double

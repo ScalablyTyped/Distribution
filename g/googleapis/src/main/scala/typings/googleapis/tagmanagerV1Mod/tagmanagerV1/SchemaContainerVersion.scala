@@ -91,7 +91,7 @@ object SchemaContainerVersion {
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (containerId != null) __obj.updateDynamic("containerId")(containerId.asInstanceOf[js.Any])
     if (containerVersionId != null) __obj.updateDynamic("containerVersionId")(containerVersionId.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
     if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
     if (folder != null) __obj.updateDynamic("folder")(folder.asInstanceOf[js.Any])
     if (`macro` != null) __obj.updateDynamic("macro")(`macro`.asInstanceOf[js.Any])

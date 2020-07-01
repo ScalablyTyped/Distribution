@@ -12,6 +12,9 @@ object dropzoneStrings {
   sealed trait addedfiles extends js.Object
   
   @js.native
+  sealed trait anonymous extends js.Object
+  
+  @js.native
   sealed trait canceled extends js.Object
   
   @js.native
@@ -98,10 +101,15 @@ object dropzoneStrings {
   @js.native
   sealed trait uploadprogress extends js.Object
   
+  @js.native
+  sealed trait `use-credentials` extends js.Object
+  
   @scala.inline
   def addedfile: addedfile = "addedfile".asInstanceOf[addedfile]
   @scala.inline
   def addedfiles: addedfiles = "addedfiles".asInstanceOf[addedfiles]
+  @scala.inline
+  def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
   @scala.inline
   def canceled: canceled = "canceled".asInstanceOf[canceled]
   @scala.inline
@@ -160,5 +168,7 @@ object dropzoneStrings {
   def totaluploadprogress: totaluploadprogress = "totaluploadprogress".asInstanceOf[totaluploadprogress]
   @scala.inline
   def uploadprogress: uploadprogress = "uploadprogress".asInstanceOf[uploadprogress]
+  @scala.inline
+  def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
 }
 

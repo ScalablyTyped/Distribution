@@ -27,6 +27,12 @@ object jestStrings {
   sealed trait incomplete extends js.Object
   
   @js.native
+  sealed trait legacy extends js.Object
+  
+  @js.native
+  sealed trait modern extends js.Object
+  
+  @js.native
   sealed trait not extends js.Object
   
   @js.native
@@ -58,6 +64,10 @@ object jestStrings {
   def get: get = "get".asInstanceOf[get]
   @scala.inline
   def incomplete: incomplete = "incomplete".asInstanceOf[incomplete]
+  @scala.inline
+  def legacy: legacy = "legacy".asInstanceOf[legacy]
+  @scala.inline
+  def modern: modern = "modern".asInstanceOf[modern]
   @scala.inline
   def not: not = "not".asInstanceOf[not]
   @scala.inline

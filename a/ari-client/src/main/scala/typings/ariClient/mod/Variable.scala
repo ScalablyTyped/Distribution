@@ -5,7 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Variable extends js.Object {
-  /* Properties */
+  /**
+    * The value of the variable requested.
+    */
   var value: String
 }
 

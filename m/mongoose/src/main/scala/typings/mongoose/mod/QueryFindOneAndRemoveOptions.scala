@@ -1,5 +1,6 @@
 package typings.mongoose.mod
 
+import typings.mongoose.mongooseStrings.`throw`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +22,7 @@ trait QueryFindOneAndRemoveOptions extends js.Object {
     */
   var sort: js.UndefOr[js.Any] = js.undefined
   /** overwrites the schema's strict mode option for this update */
-  var strict: js.UndefOr[Boolean | String] = js.undefined
+  var strict: js.UndefOr[Boolean | `throw`] = js.undefined
 }
 
 object QueryFindOneAndRemoveOptions {
@@ -33,7 +34,7 @@ object QueryFindOneAndRemoveOptions {
     select: js.Any = null,
     session: ClientSession = null,
     sort: js.Any = null,
-    strict: Boolean | String = null
+    strict: Boolean | `throw` = null
   ): QueryFindOneAndRemoveOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(maxTimeMS)) __obj.updateDynamic("maxTimeMS")(maxTimeMS.get.asInstanceOf[js.Any])

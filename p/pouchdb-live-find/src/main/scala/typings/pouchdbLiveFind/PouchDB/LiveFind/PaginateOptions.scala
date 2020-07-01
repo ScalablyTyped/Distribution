@@ -16,7 +16,7 @@ trait PaginateOptions[Content /* <: js.Object */] extends js.Object {
 
 object PaginateOptions {
   @scala.inline
-  def apply[Content](
+  def apply[/* <: js.Object */ Content](
     limit: js.UndefOr[Double] = js.undefined,
     skip: js.UndefOr[Double] = js.undefined,
     sort: js.Array[String | (StringDictionary[asc | desc])] = null

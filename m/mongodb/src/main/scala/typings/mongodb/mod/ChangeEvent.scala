@@ -28,7 +28,7 @@ trait ChangeEvent[TSchema /* <: js.Object */] extends js.Object
 
 object ChangeEvent {
   @scala.inline
-  def ChangeEventOther[TSchema](
+  def ChangeEventOther[/* <: js.Object */ TSchema](
     _id: ResumeToken,
     clusterTime: typings.bson.mod.Timestamp,
     ns: Coll,
@@ -42,7 +42,7 @@ object ChangeEvent {
     __obj.asInstanceOf[ChangeEvent[TSchema]]
   }
   @scala.inline
-  def ChangeEventRename[TSchema](
+  def ChangeEventRename[/* <: js.Object */ TSchema](
     _id: ResumeToken,
     clusterTime: typings.bson.mod.Timestamp,
     ns: Coll,
@@ -57,12 +57,12 @@ object ChangeEvent {
     __obj.asInstanceOf[ChangeEvent[TSchema]]
   }
   @scala.inline
-  def ChangeEventInvalidate[TSchema](_id: ResumeToken, clusterTime: typings.bson.mod.Timestamp, operationType: invalidate): ChangeEvent[TSchema] = {
+  def ChangeEventInvalidate[/* <: js.Object */ TSchema](_id: ResumeToken, clusterTime: typings.bson.mod.Timestamp, operationType: invalidate): ChangeEvent[TSchema] = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeEvent[TSchema]]
   }
   @scala.inline
-  def ChangeEventUpdate[TSchema](
+  def ChangeEventUpdate[/* <: js.Object */ TSchema](
     _id: ResumeToken,
     clusterTime: typings.bson.mod.Timestamp,
     documentKey: `3`[TSchema],
@@ -80,7 +80,7 @@ object ChangeEvent {
     __obj.asInstanceOf[ChangeEvent[TSchema]]
   }
   @scala.inline
-  def ChangeEventCR[TSchema](
+  def ChangeEventCR[/* <: js.Object */ TSchema](
     _id: ResumeToken,
     clusterTime: typings.bson.mod.Timestamp,
     documentKey: `3`[TSchema],
@@ -97,7 +97,7 @@ object ChangeEvent {
     __obj.asInstanceOf[ChangeEvent[TSchema]]
   }
   @scala.inline
-  def ChangeEventDelete[TSchema](
+  def ChangeEventDelete[/* <: js.Object */ TSchema](
     _id: ResumeToken,
     clusterTime: typings.bson.mod.Timestamp,
     documentKey: `3`[TSchema],

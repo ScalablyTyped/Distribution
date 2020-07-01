@@ -5,11 +5,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DialplanCEP extends js.Object {
+  /**
+    * Parameter of current dialplan application.
+    */
   var app_data: String
+  /**
+    * Name of current dialplan application.
+    */
   var app_name: String
-  /* Properties */
+  /**
+    * Context in the dialplan.
+    */
   var context: String
+  /**
+    * Extension in the dialplan.
+    */
   var exten: String
+  /**
+    * Priority in the dialplan.
+    */
   var priority: Double
 }
 

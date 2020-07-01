@@ -2,6 +2,8 @@ package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.Checks
 import typings.octokitTypes.anon.Eventsurl
+import typings.octokitTypes.octokitTypesStrings.all
+import typings.octokitTypes.octokitTypesStrings.selected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +18,7 @@ trait AppsGetUserInstallationResponseData extends js.Object {
   var id: Double
   var permissions: Checks
   var repositories_url: String
-  var repository_selection: String
+  var repository_selection: all | selected
   var single_file_name: String
   var target_id: Double
   var target_type: String
@@ -35,7 +37,7 @@ object AppsGetUserInstallationResponseData {
     id: Double,
     permissions: Checks,
     repositories_url: String,
-    repository_selection: String,
+    repository_selection: all | selected,
     single_file_name: String,
     target_id: Double,
     target_type: String,

@@ -76,7 +76,7 @@ object SchemaNodeGroup {
     nodeTemplate: String = null,
     selfLink: String = null,
     selfLinkWithId: String = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     status: String = null,
     zone: String = null
   ): SchemaNodeGroup = {
@@ -90,7 +90,7 @@ object SchemaNodeGroup {
     if (nodeTemplate != null) __obj.updateDynamic("nodeTemplate")(nodeTemplate.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     if (selfLinkWithId != null) __obj.updateDynamic("selfLinkWithId")(selfLinkWithId.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNodeGroup]

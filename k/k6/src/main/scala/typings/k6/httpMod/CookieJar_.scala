@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 abstract class CookieJar_ () extends js.Object {
   /**
     * Get cookies set for a particular URL.
-    * https://docs.k6.io/docs/cookiejarcookiesforurlurl
+    * https://k6.io/docs/javascript-api/k6-http/cookiejar-k6-http/cookiejar-cookiesforurl-url
     * @param url - URL for which to get cookies.
     * @returns Cookies for URL.
     */
   def cookiesForURL(url: String): CookieJarCookies = js.native
   /**
     * Set cookie.
-    * https://docs.k6.io/docs/cookiejarsetname-value-options
+    * https://k6.io/docs/javascript-api/k6-http/cookiejar-k6-http/cookiejar-set-name-value-options
     * @param name - Cookie name.
     * @param value - Cookie value.
     * @param options - Optional settings.

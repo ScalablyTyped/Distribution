@@ -20,7 +20,7 @@ trait ReactTimeagoProps[T /* <: ComponentType[js.Object] */] extends js.Object {
 
 object ReactTimeagoProps {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.react.mod.ComponentType[js.Object] */ T](
     date: String | Double | Date,
     component: String | T = null,
     formatter: (/* value */ Double, /* unit */ Unit, /* suffix */ Suffix, /* epochMiliseconds */ Double, /* nextFormatter */ js.UndefOr[

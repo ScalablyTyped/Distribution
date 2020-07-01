@@ -15,7 +15,7 @@ trait StackSetOperationPreferences extends js.Object {
     */
   var FailureTolerancePercentage: js.UndefOr[typings.awsSdk.cloudformationMod.FailureTolerancePercentage] = js.native
   /**
-    * The maximum number of accounts in which to perform this operation at one time. This is dependent on the value of FailureToleranceCount—MaxConcurrentCount is at most one more than the FailureToleranceCount . Note that this setting lets you specify the maximum for operations. For large deployments, under certain circumstances the actual number of accounts acted upon concurrently may be lower due to service throttling. Conditional: You must specify either MaxConcurrentCount or MaxConcurrentPercentage, but not both.
+    * The maximum number of accounts in which to perform this operation at one time. This is dependent on the value of FailureToleranceCount. MaxConcurrentCount is at most one more than the FailureToleranceCount. Note that this setting lets you specify the maximum for operations. For large deployments, under certain circumstances the actual number of accounts acted upon concurrently may be lower due to service throttling. Conditional: You must specify either MaxConcurrentCount or MaxConcurrentPercentage, but not both.
     */
   var MaxConcurrentCount: js.UndefOr[typings.awsSdk.cloudformationMod.MaxConcurrentCount] = js.native
   /**

@@ -6,6 +6,13 @@ import scala.scalajs.js.annotation._
 
 trait JQueryStatic extends js.Object {
   /**
+    * By default, Migrate only gives a specific warning once.
+    * If you set this property to false it will give a warning for every occurrence each time it happens.
+    * Note that this can generate a lot of output, for example when a warning occurs in a loop.
+    * @default true
+    */
+  var migrateDeduplicateWarnings: js.UndefOr[Boolean] = js.undefined
+  /**
     * Set this property to `true` to prevent console warnings from being generated in the development version.\
     * The `jQuery.migrateWarnings` array is still maintained when this property is set,
     * which allows programmatic inspection without console output
@@ -30,6 +37,12 @@ trait JQueryStatic extends js.Object {
     */
   var migrateWarnings: js.Array[String]
   /**
+    * If you want to upgrade to jQuery 3.5.0 or newer and don't have time to deal with breaking changes at the moment
+    * and you use jQuery Migrate 3.2.0 or newer, you can revert to the previous behavior.
+    * @see {@link https://jquery.com/upgrade-guide/3.5/}
+    */
+  def UNSAFE_restoreLegacyHtmlPrefilter(): Unit
+  /**
     * This method clears the `jQuery.migrateWarnings` array and "forgets" the list of messages
     * that have been seen already.
     */
@@ -39,13 +52,16 @@ trait JQueryStatic extends js.Object {
 object JQueryStatic {
   @scala.inline
   def apply(
+    UNSAFE_restoreLegacyHtmlPrefilter: () => Unit,
     migrateMute: Boolean,
     migrateReset: () => Unit,
     migrateTrace: Boolean,
     migrateVersion: String,
-    migrateWarnings: js.Array[String]
+    migrateWarnings: js.Array[String],
+    migrateDeduplicateWarnings: js.UndefOr[Boolean] = js.undefined
   ): JQueryStatic = {
-    val __obj = js.Dynamic.literal(migrateMute = migrateMute.asInstanceOf[js.Any], migrateReset = js.Any.fromFunction0(migrateReset), migrateTrace = migrateTrace.asInstanceOf[js.Any], migrateVersion = migrateVersion.asInstanceOf[js.Any], migrateWarnings = migrateWarnings.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(UNSAFE_restoreLegacyHtmlPrefilter = js.Any.fromFunction0(UNSAFE_restoreLegacyHtmlPrefilter), migrateMute = migrateMute.asInstanceOf[js.Any], migrateReset = js.Any.fromFunction0(migrateReset), migrateTrace = migrateTrace.asInstanceOf[js.Any], migrateVersion = migrateVersion.asInstanceOf[js.Any], migrateWarnings = migrateWarnings.asInstanceOf[js.Any])
+    if (!js.isUndefined(migrateDeduplicateWarnings)) __obj.updateDynamic("migrateDeduplicateWarnings")(migrateDeduplicateWarnings.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryStatic]
   }
 }

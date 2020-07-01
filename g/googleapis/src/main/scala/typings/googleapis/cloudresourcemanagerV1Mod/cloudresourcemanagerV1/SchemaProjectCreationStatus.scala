@@ -36,8 +36,8 @@ object SchemaProjectCreationStatus {
   ): SchemaProjectCreationStatus = {
     val __obj = js.Dynamic.literal()
     if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(gettable)) __obj.updateDynamic("gettable")(gettable.asInstanceOf[js.Any])
-    if (!js.isUndefined(ready)) __obj.updateDynamic("ready")(ready.asInstanceOf[js.Any])
+    if (!js.isUndefined(gettable)) __obj.updateDynamic("gettable")(gettable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ready)) __obj.updateDynamic("ready")(ready.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProjectCreationStatus]
   }
 }

@@ -83,7 +83,7 @@ trait CalendarProps extends js.Object {
     ])
   ] = js.undefined
   var tileDisabled: js.UndefOr[js.Function1[/* props */ CalendarTilePropertiesact, Boolean]] = js.undefined
-  var value: js.UndefOr[Date | js.Array[Date]] = js.undefined
+  var value: js.UndefOr[Date | js.Array[Date] | Null] = js.undefined
   var view: js.UndefOr[Detail] = js.undefined
 }
 
@@ -144,7 +144,7 @@ object CalendarProps {
       (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ _) | Null
     ]) = null,
     tileDisabled: /* props */ CalendarTilePropertiesact => Boolean = null,
-    value: Date | js.Array[Date] = null,
+    value: js.UndefOr[Null | Date | js.Array[Date]] = js.undefined,
     view: Detail = null
   ): CalendarProps = {
     val __obj = js.Dynamic.literal()
@@ -195,7 +195,7 @@ object CalendarProps {
     if (tileClassName != null) __obj.updateDynamic("tileClassName")(tileClassName.asInstanceOf[js.Any])
     if (tileContent != null) __obj.updateDynamic("tileContent")(tileContent.asInstanceOf[js.Any])
     if (tileDisabled != null) __obj.updateDynamic("tileDisabled")(js.Any.fromFunction1(tileDisabled))
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarProps]
   }

@@ -1,9 +1,7 @@
 package typings.morgan.mod
 
-import typings.express.mod.Request_
-import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
+import typings.node.httpMod.IncomingMessage
+import typings.node.httpMod.ServerResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +9,7 @@ import scala.scalajs.js.annotation._
 /***
   * Morgan accepts these properties in the options object.
   */
-trait Options extends js.Object {
+trait Options[Request /* <: IncomingMessage */, Response /* <: ServerResponse */] extends js.Object {
   /***
     * Buffer duration before writing logs to the stream, defaults to false.
     * When set to true, defaults to 1000 ms.
@@ -28,9 +26,7 @@ trait Options extends js.Object {
     * Function to determine if logging is skipped, defaults to false. This
     * function will be called as skip(req, res).
     */
-  var skip: js.UndefOr[
-    js.Function2[/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], Boolean]
-  ] = js.undefined
+  var skip: js.UndefOr[js.Function2[/* req */ Request, /* res */ Response, Boolean]] = js.undefined
   /***
     * Output stream for writing log lines, defaults to process.stdout.
     * @param str
@@ -40,18 +36,18 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(
+  def apply[/* <: typings.node.httpMod.IncomingMessage */ Request, /* <: typings.node.httpMod.ServerResponse */ Response](
     buffer: js.UndefOr[Boolean] = js.undefined,
     immediate: js.UndefOr[Boolean] = js.undefined,
-    skip: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_]) => Boolean = null,
+    skip: (/* req */ Request, /* res */ Response) => Boolean = null,
     stream: StreamOptions = null
-  ): Options = {
+  ): Options[Request, Response] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.get.asInstanceOf[js.Any])
     if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.get.asInstanceOf[js.Any])
     if (skip != null) __obj.updateDynamic("skip")(js.Any.fromFunction2(skip))
     if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Options]
+    __obj.asInstanceOf[Options[Request, Response]]
   }
 }
 

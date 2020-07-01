@@ -1,5 +1,6 @@
 package typings.pixiJs.mod
 
+import typings.pixiJs.PIXI.IPointData
 import typings.std.Float32Array
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
@@ -69,7 +70,7 @@ class Texture protected ()
     orig: typings.pixiJs.PIXI.Rectangle,
     trim: typings.pixiJs.PIXI.Rectangle,
     rotate: Double,
-    anchor: typings.pixiJs.PIXI.Point
+    anchor: IPointData
   ) = this()
 }
 
@@ -111,7 +112,7 @@ object Texture extends js.Object {
     * @param {string|HTMLImageElement|HTMLCanvasElement|HTMLVideoElement|PIXI.BaseTexture} source
     *        Source to create texture from
     * @param {object} [options] See {@link PIXI.BaseTexture}'s constructor for options.
-    * @param {boolean} [strict] Enforce strict-mode, see {@link PIXI.settings.STRICT_TEXTURE_CACHE}.
+    * @param {boolean} [strict] - Enforce strict-mode, see {@link PIXI.settings.STRICT_TEXTURE_CACHE}.
     * @return {PIXI.Texture} The newly created texture
     */
   def from(source: String): typings.pixiJs.PIXI.Texture = js.native
@@ -133,7 +134,7 @@ object Texture extends js.Object {
     * Create a new Texture with a BufferResource from a Float32Array.
     * RGBA values are floats from 0 to 1.
     * @static
-    * @param {Float32Array|Uint8Array} buffer The optional array to use, if no data
+    * @param {Float32Array|Uint8Array} buffer - The optional array to use, if no data
     *        is provided, a new Float32Array is created.
     * @param {number} width - Width of the resource
     * @param {number} height - Height of the resource
@@ -158,6 +159,16 @@ object Texture extends js.Object {
     */
   def fromLoader(source: HTMLImageElement, imageUrl: String): typings.pixiJs.PIXI.Texture = js.native
   def fromLoader(source: HTMLImageElement, imageUrl: String, name: String): typings.pixiJs.PIXI.Texture = js.native
+  /**
+    * Useful for loading textures via URLs. Use instead of `Texture.from` because
+    * it does a better job of handling failed URLs more effectively. This also ignores
+    * `PIXI.settings.STRICT_TEXTURE_CACHE`. Works for Videos, SVGs, Images.
+    * @param {string} url The remote URL to load.
+    * @param {object} [options] Optional options to include
+    * @return {Promise<PIXI.Texture>} A Promise that resolves to a Texture.
+    */
+  def fromURL(url: String): js.Promise[typings.pixiJs.PIXI.Texture] = js.native
+  def fromURL(url: String, options: js.Any): js.Promise[typings.pixiJs.PIXI.Texture] = js.native
   /**
     * Remove a Texture from the global TextureCache.
     *

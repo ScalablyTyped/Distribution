@@ -91,6 +91,8 @@ object commonTypesMod extends js.Object {
     @JSName("read")
     var read_Original: js.Function0[_] = js.native
     var readable: Boolean = js.native
+    var readableEncoding: js.UndefOr[BufferEncoding] = js.native
+    var readableEnded: Boolean = js.native
     var readableHighWaterMark: Double = js.native
     var readableLength: Double = js.native
     var readableObjectMode: Boolean = js.native

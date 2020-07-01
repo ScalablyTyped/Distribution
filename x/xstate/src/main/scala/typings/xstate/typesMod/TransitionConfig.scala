@@ -16,7 +16,7 @@ trait TransitionConfig[TContext, TEvent /* <: EventObject */] extends js.Object 
 
 object TransitionConfig {
   @scala.inline
-  def apply[TContext, TEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     actions: Actions[TContext, TEvent] = null,
     cond: Condition[TContext, TEvent] = null,
     in: StateValue = null,

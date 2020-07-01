@@ -21,10 +21,13 @@ trait SchemaClusteringMetrics extends js.Object {
 
 object SchemaClusteringMetrics {
   @scala.inline
-  def apply(daviesBouldinIndex: Int | Double = null, meanSquaredDistance: Int | Double = null): SchemaClusteringMetrics = {
+  def apply(
+    daviesBouldinIndex: js.UndefOr[Double] = js.undefined,
+    meanSquaredDistance: js.UndefOr[Double] = js.undefined
+  ): SchemaClusteringMetrics = {
     val __obj = js.Dynamic.literal()
-    if (daviesBouldinIndex != null) __obj.updateDynamic("daviesBouldinIndex")(daviesBouldinIndex.asInstanceOf[js.Any])
-    if (meanSquaredDistance != null) __obj.updateDynamic("meanSquaredDistance")(meanSquaredDistance.asInstanceOf[js.Any])
+    if (!js.isUndefined(daviesBouldinIndex)) __obj.updateDynamic("daviesBouldinIndex")(daviesBouldinIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(meanSquaredDistance)) __obj.updateDynamic("meanSquaredDistance")(meanSquaredDistance.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaClusteringMetrics]
   }
 }

@@ -11,7 +11,7 @@ trait ScheduledUpdateGroupAction extends js.Object {
     */
   var AutoScalingGroupName: js.UndefOr[XmlStringMaxLen255] = js.native
   /**
-    * The number of instances you prefer to maintain in the group.
+    * The desired capacity is the initial capacity of the Auto Scaling group after the scheduled action runs and the capacity it attempts to maintain.
     */
   var DesiredCapacity: js.UndefOr[AutoScalingGroupDesiredCapacity] = js.native
   /**
@@ -19,11 +19,11 @@ trait ScheduledUpdateGroupAction extends js.Object {
     */
   var EndTime: js.UndefOr[TimestampType] = js.native
   /**
-    * The maximum number of instances in the Auto Scaling group.
+    * The maximum size of the Auto Scaling group.
     */
   var MaxSize: js.UndefOr[AutoScalingGroupMaxSize] = js.native
   /**
-    * The minimum number of instances in the Auto Scaling group.
+    * The minimum size of the Auto Scaling group.
     */
   var MinSize: js.UndefOr[AutoScalingGroupMinSize] = js.native
   /**

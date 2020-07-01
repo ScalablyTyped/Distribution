@@ -38,7 +38,7 @@ trait SchemaAggregateBucket extends js.Object {
 object SchemaAggregateBucket {
   @scala.inline
   def apply(
-    activity: Int | Double = null,
+    activity: js.UndefOr[Double] = js.undefined,
     dataset: js.Array[SchemaDataset] = null,
     endTimeMillis: String = null,
     session: SchemaSession = null,
@@ -46,7 +46,7 @@ object SchemaAggregateBucket {
     `type`: String = null
   ): SchemaAggregateBucket = {
     val __obj = js.Dynamic.literal()
-    if (activity != null) __obj.updateDynamic("activity")(activity.asInstanceOf[js.Any])
+    if (!js.isUndefined(activity)) __obj.updateDynamic("activity")(activity.get.asInstanceOf[js.Any])
     if (dataset != null) __obj.updateDynamic("dataset")(dataset.asInstanceOf[js.Any])
     if (endTimeMillis != null) __obj.updateDynamic("endTimeMillis")(endTimeMillis.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])

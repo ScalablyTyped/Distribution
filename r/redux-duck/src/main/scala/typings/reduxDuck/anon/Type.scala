@@ -11,7 +11,7 @@ trait Type[T /* <: String with (/* import warning: importer.ImportType#apply Fai
 
 object Type {
   @scala.inline
-  def apply[T, AppAction](`type`: T): Type[T, AppAction] = {
+  def apply[/* <: java.lang.String with (/ * import warning: importer.ImportType#apply Failed type conversion: AppAction['type'] * / js.Any) */ T, /* <: typings.redux.mod.Action[_] */ AppAction](`type`: T): Type[T, AppAction] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type[T, AppAction]]

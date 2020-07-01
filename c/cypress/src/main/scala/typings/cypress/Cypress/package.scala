@@ -25,10 +25,17 @@ package object Cypress {
     - java.lang.String
   */
   type BrowserName = typings.cypress.Cypress._BrowserName | java.lang.String
+  type CanReturnChainable = scala.Unit | typings.cypress.Cypress.Chainable[js.Any]
   // Diff taken from https://github.com/Microsoft/TypeScript/issues/12215#issuecomment-311923766
   type Diff[T /* <: java.lang.String */, U /* <: java.lang.String */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ P in T ]: P} & {[ P in U ]: never} & {[x: string] : never}[T] */ js.Any
   type FileContents = java.lang.String | js.Array[js.Any] | js.Object
   type HttpMethod = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.cypress.Cypress.BrowserName
+    - typings.cypress.anon.PartialBrowser
+    - js.Array[typings.cypress.Cypress.BrowserName | typings.cypress.anon.PartialBrowser]
+  */
+  type IsBrowserMatcher = typings.cypress.Cypress._IsBrowserMatcher | (js.Array[typings.cypress.Cypress.BrowserName | typings.cypress.anon.PartialBrowser]) | java.lang.String
   type ObjectLike = org.scalablytyped.runtime.StringDictionary[js.Any]
   type Omit[T, K /* <: /* keyof T */ java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
   type Padding = scala.Double | js.Array[scala.Double] | (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple3[scala.Double, scala.Double, scala.Double]) | (js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double])

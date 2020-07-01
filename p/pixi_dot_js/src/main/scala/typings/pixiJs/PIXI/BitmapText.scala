@@ -10,12 +10,11 @@ import scala.scalajs.js.annotation._
   * The primary advantage of this class over Text is that all of your textures are pre-generated and loading,
   * meaning that rendering is fast, and changing text has no performance implications.
   *
-  * The primary disadvantage is that you need to preload the bitmap font assets, and thus the styling is set in stone.
   * Supporting character sets other than latin, such as CJK languages, may be impractical due to the number of characters.
   *
   * To split a line you can use '\n', '\r' or '\r\n' in your string.
   *
-  * You can generate the fnt files using
+  * PixiJS can auto-generate fonts on-the-fly using BitmapFont or use fnt files provided by:
   * http://www.angelcode.com/products/bmfont/ for Windows or
   * http://www.bmglyph.com/ for Mac.
   *
@@ -52,17 +51,23 @@ trait BitmapText extends Container {
     */
   var anchor: Point | Double = js.native
   /**
-    * The dirty state of this object.
+    * Set to `true` if the BitmapText needs to be redrawn.
     *
     * @member {boolean} PIXI.BitmapText#dirty
     */
   var dirty: Boolean = js.native
   /**
-    * The font descriptor of the BitmapText object.
+    * The name of the BitmapFont.
     *
-    * @member {object}
+    * @member {string}
     */
-  var font: js.Any = js.native
+  var fontName: String = js.native
+  /**
+    * The size of the font to display.
+    *
+    * @member {number}
+    */
+  var fontSize: Double = js.native
   /**
     * Additional space between characters.
     *
@@ -92,7 +97,7 @@ trait BitmapText extends Container {
     * To set the global default, change {@link PIXI.settings.ROUND_PIXELS}
     *
     * @member {boolean} PIXI.BitmapText#roundPixels
-    * @default false
+    * @default PIXI.settings.ROUND_PIXELS
     */
   var roundPixels: Boolean = js.native
   /**
@@ -121,7 +126,13 @@ trait BitmapText extends Container {
     * The tint of the BitmapText object.
     *
     * @member {number}
+    * @default 0xffffff
     */
   var tint: Double = js.native
+  /**
+    * Renders text and updates it when needed. This should only be called
+    * if the BitmapFont is regenerated.
+    */
+  def updateText(): Unit = js.native
 }
 

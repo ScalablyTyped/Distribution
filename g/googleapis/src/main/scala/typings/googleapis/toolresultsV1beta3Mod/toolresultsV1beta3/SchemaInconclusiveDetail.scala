@@ -28,8 +28,8 @@ object SchemaInconclusiveDetail {
     infrastructureFailure: js.UndefOr[Boolean] = js.undefined
   ): SchemaInconclusiveDetail = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(abortedByUser)) __obj.updateDynamic("abortedByUser")(abortedByUser.asInstanceOf[js.Any])
-    if (!js.isUndefined(infrastructureFailure)) __obj.updateDynamic("infrastructureFailure")(infrastructureFailure.asInstanceOf[js.Any])
+    if (!js.isUndefined(abortedByUser)) __obj.updateDynamic("abortedByUser")(abortedByUser.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(infrastructureFailure)) __obj.updateDynamic("infrastructureFailure")(infrastructureFailure.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInconclusiveDetail]
   }
 }

@@ -5,25 +5,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ValidationProps extends js.Object {
-  var config: FieldsConfig
-  var initialValues: js.UndefOr[Dictionary[_]] = js.undefined
-  var transforms: js.UndefOr[Transforms] = js.undefined
-  def children(context: ValidationContext): ReactNode
+trait ValidationProps[T /* <: js.Object */] extends js.Object {
+  var config: FieldsConfig[T]
+  var initialValues: js.UndefOr[T] = js.undefined
+  var transforms: js.UndefOr[Transforms[T]] = js.undefined
+  def children(context: ValidationContext[T]): ReactNode
 }
 
 object ValidationProps {
   @scala.inline
-  def apply(
-    children: ValidationContext => ReactNode,
-    config: FieldsConfig,
-    initialValues: Dictionary[_] = null,
-    transforms: Transforms = null
-  ): ValidationProps = {
+  def apply[/* <: js.Object */ T](
+    children: ValidationContext[T] => ReactNode,
+    config: FieldsConfig[T],
+    initialValues: T = null,
+    transforms: Transforms[T] = null
+  ): ValidationProps[T] = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), config = config.asInstanceOf[js.Any])
     if (initialValues != null) __obj.updateDynamic("initialValues")(initialValues.asInstanceOf[js.Any])
     if (transforms != null) __obj.updateDynamic("transforms")(transforms.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ValidationProps]
+    __obj.asInstanceOf[ValidationProps[T]]
   }
 }
 

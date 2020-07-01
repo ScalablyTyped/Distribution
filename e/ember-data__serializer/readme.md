@@ -1,7 +1,7 @@
 
 # Scala.js typings for ember-data__serializer
 
-Typings are for version 3.15
+Typings are for version 3.16
 
 ## Library description:
 The default blueprint for ember-cli addons.

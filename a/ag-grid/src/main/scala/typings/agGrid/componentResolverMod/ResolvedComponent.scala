@@ -16,7 +16,7 @@ trait ResolvedComponent[A /* <: IComponent[_] with B */, B] extends js.Object {
 
 object ResolvedComponent {
   @scala.inline
-  def apply[A, B](
+  def apply[/* <: typings.agGrid.iComponentMod.IComponent[_] with B */ A, B](
     component: (`1`[A, B]) | InstantiableB[B],
     dynamicParams: js.Any,
     source: ComponentSource,

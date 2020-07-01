@@ -27,7 +27,7 @@ object ClusterOptions {
   @scala.inline
   def apply(
     clusterRetryStrategy: (/* times */ Double, /* reason */ js.UndefOr[Error]) => Double | Null = null,
-    dnsLookup: (/* hostname */ String, /* callback */ js.Function3[/* err */ ErrnoException, /* address */ String, /* family */ Double, Unit]) => Unit = null,
+    dnsLookup: (/* hostname */ String, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit = null,
     enableOfflineQueue: js.UndefOr[Boolean] = js.undefined,
     enableReadyCheck: js.UndefOr[Boolean] = js.undefined,
     lazyConnect: js.UndefOr[Boolean] = js.undefined,

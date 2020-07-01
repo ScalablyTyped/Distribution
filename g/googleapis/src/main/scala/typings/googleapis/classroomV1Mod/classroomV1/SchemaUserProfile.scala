@@ -54,7 +54,7 @@ object SchemaUserProfile {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
     if (photoUrl != null) __obj.updateDynamic("photoUrl")(photoUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(verifiedTeacher)) __obj.updateDynamic("verifiedTeacher")(verifiedTeacher.asInstanceOf[js.Any])
+    if (!js.isUndefined(verifiedTeacher)) __obj.updateDynamic("verifiedTeacher")(verifiedTeacher.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUserProfile]
   }
 }

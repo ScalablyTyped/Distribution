@@ -121,21 +121,18 @@ trait TableRow extends ClientObject {
     */
   var verticalAlignment: VerticalAlignment | Mixed | Top | Center | Bottom = js.native
   /**
-    *
     * Clears the contents of the row.
     *
     * [Api set: WordApi 1.3]
     */
   def clear(): Unit = js.native
   /**
-    *
     * Deletes the entire row.
     *
     * [Api set: WordApi 1.3]
     */
   def delete(): Unit = js.native
   /**
-    *
     * Gets the border style of the cells in the row.
     *
     * [Api set: WordApi 1.3]
@@ -160,7 +157,6 @@ trait TableRow extends ClientObject {
   @JSName("getBorder")
   def getBorder_Right(borderLocation: Right): TableBorder = js.native
   /**
-    *
     * Gets the border style of the cells in the row.
     *
     * [Api set: WordApi 1.3]
@@ -170,7 +166,6 @@ trait TableRow extends ClientObject {
   @JSName("getBorder")
   def getBorder_Top(borderLocation: Top): TableBorder = js.native
   /**
-    *
     * Gets cell padding in points.
     *
     * [Api set: WordApi 1.3]
@@ -185,7 +180,6 @@ trait TableRow extends ClientObject {
   @JSName("getCellPadding")
   def getCellPadding_Right(cellPaddingLocation: Right): ClientResult[Double] = js.native
   /**
-    *
     * Gets cell padding in points.
     *
     * [Api set: WordApi 1.3]
@@ -195,21 +189,18 @@ trait TableRow extends ClientObject {
   @JSName("getCellPadding")
   def getCellPadding_Top(cellPaddingLocation: Top): ClientResult[Double] = js.native
   /**
-    *
     * Gets the next row. Throws an error if this row is the last one.
     *
     * [Api set: WordApi 1.3]
     */
   def getNext(): TableRow = js.native
   /**
-    *
     * Gets the next row. Returns a null object if this row is the last one.
     *
     * [Api set: WordApi 1.3]
     */
   def getNextOrNullObject(): TableRow = js.native
   /**
-    *
     * Inserts a content control on the row.
     *
     * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -217,7 +208,6 @@ trait TableRow extends ClientObject {
     */
   def insertContentControl(): ContentControl = js.native
   /**
-    *
     * Inserts rows using this row as a template. If values are specified, inserts the values into the new rows.
     *
     * [Api set: WordApi 1.3]
@@ -233,7 +223,6 @@ trait TableRow extends ClientObject {
   @JSName("insertRows")
   def insertRows_After(insertLocation: After, rowCount: Double, values: js.Array[js.Array[String]]): TableRowCollection = js.native
   /**
-    *
     * Inserts rows using this row as a template. If values are specified, inserts the values into the new rows.
     *
     * [Api set: WordApi 1.3]
@@ -259,27 +248,16 @@ trait TableRow extends ClientObject {
   @JSName("insertRows")
   def insertRows_Start(insertLocation: Start, rowCount: Double, values: js.Array[js.Array[String]]): TableRowCollection = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Word.TableRow` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Word.TableRow` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableRow` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): TableRow = js.native
-  def load(option: String): TableRow = js.native
-  def load(option: js.Array[String]): TableRow = js.native
-  def load(option: TableRowLoadOptions): TableRow = js.native
-  def load(option: Expand): TableRow = js.native
+  def load(options: TableRowLoadOptions): TableRow = js.native
+  def load(propertyNamesAndPaths: Expand): TableRow = js.native
+  def load(propertyNames: String): TableRow = js.native
+  def load(propertyNames: js.Array[String]): TableRow = js.native
   /**
-    *
     * Merges the row into one cell.
     *
     * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -287,7 +265,6 @@ trait TableRow extends ClientObject {
     */
   def merge(): TableCell = js.native
   /**
-    *
     * Performs a search with the specified SearchOptions on the scope of the row. The search results are a collection of range objects.
     *
     * [Api set: WordApi 1.3]
@@ -299,7 +276,6 @@ trait TableRow extends ClientObject {
   def search(searchText: String, searchOptions: SearchOptions): RangeCollection = js.native
   def search(searchText: String, searchOptions: IgnorePunct): RangeCollection = js.native
   /**
-    *
     * Selects the row and navigates the Word UI to it.
     *
     * [Api set: WordApi 1.3]
@@ -330,7 +306,6 @@ trait TableRow extends ClientObject {
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: TableRow): Unit = js.native
   /**
-    *
     * Sets cell padding in points.
     *
     * [Api set: WordApi 1.3]
@@ -346,7 +321,6 @@ trait TableRow extends ClientObject {
   @JSName("setCellPadding")
   def setCellPadding_Right(cellPaddingLocation: Right, cellPadding: Double): Unit = js.native
   /**
-    *
     * Sets cell padding in points.
     *
     * [Api set: WordApi 1.3]
@@ -362,11 +336,11 @@ trait TableRow extends ClientObject {
     */
   def toJSON(): TableRowData = js.native
   /**
-    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
     */
   def track(): TableRow = js.native
   /**
-    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
+    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     */
   def untrack(): TableRow = js.native
 }

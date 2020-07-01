@@ -14,7 +14,7 @@ trait TagForOptions[O /* <: SaxesOptions */] extends js.Object
 
 object TagForOptions {
   @scala.inline
-  def SaxesTag[O](
+  def SaxesTag[/* <: typings.saxes.mod.SaxesOptions */ O](
     attributes: Record[String, SaxesAttributeNS | String],
     isSelfClosing: Boolean,
     name: String,
@@ -31,7 +31,7 @@ object TagForOptions {
     __obj.asInstanceOf[TagForOptions[O]]
   }
   @scala.inline
-  def SaxesTagPlain[O](
+  def SaxesTagPlain[/* <: typings.saxes.mod.SaxesOptions */ O](
     attributes: (Record[String, SaxesAttributeNS | String]) with (Record[String, String]),
     isSelfClosing: Boolean,
     name: String
@@ -40,7 +40,7 @@ object TagForOptions {
     __obj.asInstanceOf[TagForOptions[O]]
   }
   @scala.inline
-  def SaxesTagNS[O](
+  def SaxesTagNS[/* <: typings.saxes.mod.SaxesOptions */ O](
     attributes: (Record[String, SaxesAttributeNS | String]) with (Record[String, SaxesAttributeNS]),
     isSelfClosing: Boolean,
     local: String,

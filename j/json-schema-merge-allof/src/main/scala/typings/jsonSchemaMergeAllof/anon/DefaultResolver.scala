@@ -38,7 +38,7 @@ trait DefaultResolver[Schema /* <: JSONSchema */] extends js.Object {
 
 object DefaultResolver {
   @scala.inline
-  def apply[Schema](
+  def apply[/* <: typings.jsonSchemaMergeAllof.mod.JSONSchema */ Schema](
     defaultResolver: (/* values */ js.Array[_], /* path */ js.Array[String], /* mergeSchemas */ MergeSchemas, /* options */ Options_[Schema]) => _ = null
   ): DefaultResolver[Schema] = {
     val __obj = js.Dynamic.literal()

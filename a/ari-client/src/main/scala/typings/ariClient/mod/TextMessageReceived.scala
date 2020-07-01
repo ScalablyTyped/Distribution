@@ -6,8 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TextMessageReceived extends Event {
+  /**
+    * Endpoint.
+    */
   var endpoint: js.UndefOr[Endpoint] = js.undefined
-  /* Properties */
+  /**
+    * Message.
+    */
   var message: TextMessage
 }
 

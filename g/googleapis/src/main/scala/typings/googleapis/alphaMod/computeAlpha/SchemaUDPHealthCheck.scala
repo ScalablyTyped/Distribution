@@ -31,13 +31,13 @@ trait SchemaUDPHealthCheck extends js.Object {
 object SchemaUDPHealthCheck {
   @scala.inline
   def apply(
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     portName: String = null,
     request: String = null,
     response: String = null
   ): SchemaUDPHealthCheck = {
     val __obj = js.Dynamic.literal()
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (portName != null) __obj.updateDynamic("portName")(portName.asInstanceOf[js.Any])
     if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
     if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])

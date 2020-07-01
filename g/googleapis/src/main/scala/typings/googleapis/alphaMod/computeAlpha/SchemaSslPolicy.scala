@@ -1,6 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
-import typings.googleapis.AnonCode
+import typings.googleapis.anon.Code
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -91,7 +91,7 @@ trait SchemaSslPolicy extends js.Object {
     * [Output Only] If potential misconfigurations are detected for this SSL
     * policy, this field will be populated with warning messages.
     */
-  var warnings: js.UndefOr[js.Array[AnonCode]] = js.native
+  var warnings: js.UndefOr[js.Array[Code]] = js.native
 }
 
 object SchemaSslPolicy {
@@ -110,7 +110,7 @@ object SchemaSslPolicy {
     selfLink: String = null,
     selfLinkWithId: String = null,
     tlsSettings: SchemaServerTlsSettings = null,
-    warnings: js.Array[AnonCode] = null
+    warnings: js.Array[Code] = null
   ): SchemaSslPolicy = {
     val __obj = js.Dynamic.literal()
     if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])

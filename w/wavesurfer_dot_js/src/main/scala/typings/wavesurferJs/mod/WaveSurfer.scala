@@ -3,6 +3,7 @@ package typings.wavesurferJs.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.AudioNode
 import typings.std.Blob
+import typings.std.CanvasGradient
 import typings.std.File
 import typings.std.HTMLMediaElement
 import typings.wavesurferJs.wavesurferJsStrings.blob
@@ -49,7 +50,7 @@ trait WaveSurfer
   def getPlaybackRate(): Double = js.native
   def getProgressColor(): String = js.native
   def getVolume(): Double = js.native
-  def getWaveColor(): String = js.native
+  def getWaveColor(): CanvasGradient | String = js.native
   def init(): WaveSurfer = js.native
   def initPlugin(name: String): WaveSurfer = js.native
   def isPlaying(): Boolean = js.native
@@ -87,6 +88,7 @@ trait WaveSurfer
   def setSinkId(deviceId: String): js.Promise[_] = js.native
   def setVolume(newVolume: Double): Unit = js.native
   def setWaveColor(color: String): Unit = js.native
+  def setWaveColor(color: CanvasGradient): Unit = js.native
   def skip(offset: Double): Unit = js.native
   def skipBackward(): Unit = js.native
   def skipBackward(seconds: Double): Unit = js.native

@@ -11,7 +11,7 @@ trait Filter[THIS, T /* <: js.Object */] extends js.Object {
 
 object Filter {
   @scala.inline
-  def apply[THIS, T](filter: T => js.Any, thisArg: THIS): Filter[THIS, T] = {
+  def apply[THIS, /* <: js.Object */ T](filter: T => js.Any, thisArg: THIS): Filter[THIS, T] = {
     val __obj = js.Dynamic.literal(filter = js.Any.fromFunction1(filter), thisArg = thisArg.asInstanceOf[js.Any])
     __obj.asInstanceOf[Filter[THIS, T]]
   }

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 trait MlDeleteDataFrameAnalytics extends Generic {
   var force: js.UndefOr[Boolean] = js.undefined
   var id: String
+  var timeout: js.UndefOr[String] = js.undefined
 }
 
 object MlDeleteDataFrameAnalytics {
@@ -20,7 +21,8 @@ object MlDeleteDataFrameAnalytics {
     ignore: Double | js.Array[Double] = null,
     method: String = null,
     pretty: js.UndefOr[Boolean] = js.undefined,
-    source: String = null
+    source: String = null,
+    timeout: String = null
   ): MlDeleteDataFrameAnalytics = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.get.asInstanceOf[js.Any])
@@ -31,6 +33,7 @@ object MlDeleteDataFrameAnalytics {
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[MlDeleteDataFrameAnalytics]
   }
 }

@@ -1,6 +1,5 @@
 package typings.firebaseFirestore
 
-import typings.firebaseFirestore.miscMod.Equatable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,8 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object objMapMod extends js.Object {
   @js.native
-  class ObjectMap[KeyType /* <: Equatable[KeyType] */, ValueType] protected () extends js.Object {
-    def this(mapKeyFn: js.Function1[/* key */ KeyType, String]) = this()
+  class ObjectMap[KeyType, ValueType] protected () extends js.Object {
+    def this(
+      mapKeyFn: js.Function1[/* key */ KeyType, String],
+      equalsFn: js.Function2[/* l */ KeyType, /* r */ KeyType, Boolean]
+    ) = this()
+    var equalsFn: js.Any = js.native
     /**
       * The inner map for a key -> value pair. Due to the possibility of
       * collisions we keep a list of entries that we do a linear search through

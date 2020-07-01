@@ -16,7 +16,7 @@ trait Origins[S /* <: Schema[_, _] */] extends js.Object {
 
 object Origins {
   @scala.inline
-  def apply[S](
+  def apply[/* <: typings.prosemirrorModel.mod.Schema[_, _] */ S](
     clientID: Double | String,
     origins: js.Array[Transaction[S]],
     steps: js.Array[Step[S]],

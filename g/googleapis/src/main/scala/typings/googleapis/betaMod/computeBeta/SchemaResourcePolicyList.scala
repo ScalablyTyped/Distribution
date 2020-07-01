@@ -1,6 +1,6 @@
 package typings.googleapis.betaMod.computeBeta
 
-import typings.googleapis.AnonCode
+import typings.googleapis.anon.Code
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,7 +37,7 @@ trait SchemaResourcePolicyList extends js.Object {
   /**
     * [Output Only] Informational warning message.
     */
-  var warning: js.UndefOr[AnonCode] = js.native
+  var warning: js.UndefOr[Code] = js.native
 }
 
 object SchemaResourcePolicyList {
@@ -49,7 +49,7 @@ object SchemaResourcePolicyList {
     kind: String = null,
     nextPageToken: String = null,
     selfLink: String = null,
-    warning: AnonCode = null
+    warning: Code = null
   ): SchemaResourcePolicyList = {
     val __obj = js.Dynamic.literal()
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])

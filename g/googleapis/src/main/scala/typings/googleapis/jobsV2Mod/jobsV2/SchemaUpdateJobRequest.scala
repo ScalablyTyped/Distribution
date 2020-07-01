@@ -50,7 +50,7 @@ object SchemaUpdateJobRequest {
     updateJobFields: String = null
   ): SchemaUpdateJobRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableStreetAddressResolution)) __obj.updateDynamic("disableStreetAddressResolution")(disableStreetAddressResolution.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableStreetAddressResolution)) __obj.updateDynamic("disableStreetAddressResolution")(disableStreetAddressResolution.get.asInstanceOf[js.Any])
     if (job != null) __obj.updateDynamic("job")(job.asInstanceOf[js.Any])
     if (processingOptions != null) __obj.updateDynamic("processingOptions")(processingOptions.asInstanceOf[js.Any])
     if (updateJobFields != null) __obj.updateDynamic("updateJobFields")(updateJobFields.asInstanceOf[js.Any])

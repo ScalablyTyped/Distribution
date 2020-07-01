@@ -8,16 +8,19 @@ trait Corpora extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[String] = js.undefined
   /**
-    * Comma-separated list of bodies of items (files/documents) to which the query applies. Supported bodies are 'user', 'domain', 'teamDrive' and
-    * 'allTeamDrives'. 'allTeamDrives' must be combined with 'user'; all other values must be used in isolation. Prefer 'user' or 'teamDrive' to
-    * 'allTeamDrives' for efficiency.
+    * Bodies of items (files/documents) to which the query applies. Supported bodies are 'user', 'domain', 'drive' and 'allDrives'. Prefer 'user' or 'drive'
+    * to 'allDrives' for efficiency.
     */
   var corpora: js.UndefOr[String] = js.undefined
   /** The source of files to list. Deprecated: use 'corpora' instead. */
   var corpus: js.UndefOr[String] = js.undefined
+  /** ID of the shared drive to search. */
+  var driveId: js.UndefOr[String] = js.undefined
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
-  /** Whether Team Drive items should be included in results. */
+  /** Whether both My Drive and shared drive items should be included in results. */
+  var includeItemsFromAllDrives: js.UndefOr[Boolean] = js.undefined
+  /** Deprecated use includeItemsFromAllDrives instead. */
   var includeTeamDriveItems: js.UndefOr[Boolean] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
@@ -38,18 +41,17 @@ trait Corpora extends js.Object {
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   /** A query for filtering the file results. See the "Search for Files" guide for supported syntax. */
   var q: js.UndefOr[String] = js.undefined
-  /**
-    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-    * Overrides userIp if both are provided.
-    */
+  /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   /** A comma-separated list of spaces to query within the corpus. Supported values are 'drive', 'appDataFolder' and 'photos'. */
   var spaces: js.UndefOr[String] = js.undefined
-  /** Whether the requesting application supports Team Drives. */
+  /** Whether the requesting application supports both My Drives and shared drives. */
+  var supportsAllDrives: js.UndefOr[Boolean] = js.undefined
+  /** Deprecated use supportsAllDrives instead. */
   var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
-  /** ID of Team Drive to search. */
+  /** Deprecated use driveId instead. */
   var teamDriveId: js.UndefOr[String] = js.undefined
-  /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
+  /** Deprecated. Please use quotaUser instead. */
   var userIp: js.UndefOr[String] = js.undefined
 }
 
@@ -59,7 +61,9 @@ object Corpora {
     alt: String = null,
     corpora: String = null,
     corpus: String = null,
+    driveId: String = null,
     fields: String = null,
+    includeItemsFromAllDrives: js.UndefOr[Boolean] = js.undefined,
     includeTeamDriveItems: js.UndefOr[Boolean] = js.undefined,
     key: String = null,
     oauth_token: String = null,
@@ -70,6 +74,7 @@ object Corpora {
     q: String = null,
     quotaUser: String = null,
     spaces: String = null,
+    supportsAllDrives: js.UndefOr[Boolean] = js.undefined,
     supportsTeamDrives: js.UndefOr[Boolean] = js.undefined,
     teamDriveId: String = null,
     userIp: String = null
@@ -78,7 +83,9 @@ object Corpora {
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (corpora != null) __obj.updateDynamic("corpora")(corpora.asInstanceOf[js.Any])
     if (corpus != null) __obj.updateDynamic("corpus")(corpus.asInstanceOf[js.Any])
+    if (driveId != null) __obj.updateDynamic("driveId")(driveId.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeItemsFromAllDrives)) __obj.updateDynamic("includeItemsFromAllDrives")(includeItemsFromAllDrives.get.asInstanceOf[js.Any])
     if (!js.isUndefined(includeTeamDriveItems)) __obj.updateDynamic("includeTeamDriveItems")(includeTeamDriveItems.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
@@ -89,6 +96,7 @@ object Corpora {
     if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (spaces != null) __obj.updateDynamic("spaces")(spaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsAllDrives)) __obj.updateDynamic("supportsAllDrives")(supportsAllDrives.get.asInstanceOf[js.Any])
     if (!js.isUndefined(supportsTeamDrives)) __obj.updateDynamic("supportsTeamDrives")(supportsTeamDrives.get.asInstanceOf[js.Any])
     if (teamDriveId != null) __obj.updateDynamic("teamDriveId")(teamDriveId.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])

@@ -11,7 +11,7 @@ trait DescribeVolumesModificationsRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.native
   /**
-    * The filters. Supported filters: volume-id | modification-state | target-size | target-iops | target-volume-type | original-size | original-iops | original-volume-type | start-time | originalMultiAttachEnabled | targetMultiAttachEnabled. 
+    * The filters.    modification-state - The current modification state (modifying | optimizing | completed | failed).    original-iops - The original IOPS rate of the volume.    original-size - The original size of the volume, in GiB.    original-volume-type - The original volume type of the volume (standard | io1 | gp2 | sc1 | st1).    originalMultiAttachEnabled - Indicates whether Multi-Attach support was enabled (true | false).    start-time - The modification start time.    target-iops - The target IOPS rate of the volume.    target-size - The target size of the volume, in GiB.    target-volume-type - The target volume type of the volume (standard | io1 | gp2 | sc1 | st1).    targetMultiAttachEnabled - Indicates whether Multi-Attach support is to be enabled (true | false).    volume-id - The ID of the volume.  
     */
   var Filters: js.UndefOr[FilterList] = js.native
   /**
@@ -23,7 +23,7 @@ trait DescribeVolumesModificationsRequest extends js.Object {
     */
   var NextToken: js.UndefOr[String] = js.native
   /**
-    * The IDs of the volumes for which in-progress modifications will be described.
+    * The IDs of the volumes.
     */
   var VolumeIds: js.UndefOr[VolumeIdStringList] = js.native
 }

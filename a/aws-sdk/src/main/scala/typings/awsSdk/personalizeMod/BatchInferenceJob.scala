@@ -19,6 +19,10 @@ trait BatchInferenceJob extends js.Object {
     */
   var failureReason: js.UndefOr[FailureReason] = js.native
   /**
+    * The ARN of the filter used on the batch inference job.
+    */
+  var filterArn: js.UndefOr[Arn] = js.native
+  /**
     * The Amazon S3 path that leads to the input data used to generate the batch inference job.
     */
   var jobInput: js.UndefOr[BatchInferenceJobInput] = js.native
@@ -58,6 +62,7 @@ object BatchInferenceJob {
     batchInferenceJobArn: Arn = null,
     creationDateTime: Date = null,
     failureReason: FailureReason = null,
+    filterArn: Arn = null,
     jobInput: BatchInferenceJobInput = null,
     jobName: Name = null,
     jobOutput: BatchInferenceJobOutput = null,
@@ -71,6 +76,7 @@ object BatchInferenceJob {
     if (batchInferenceJobArn != null) __obj.updateDynamic("batchInferenceJobArn")(batchInferenceJobArn.asInstanceOf[js.Any])
     if (creationDateTime != null) __obj.updateDynamic("creationDateTime")(creationDateTime.asInstanceOf[js.Any])
     if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
+    if (filterArn != null) __obj.updateDynamic("filterArn")(filterArn.asInstanceOf[js.Any])
     if (jobInput != null) __obj.updateDynamic("jobInput")(jobInput.asInstanceOf[js.Any])
     if (jobName != null) __obj.updateDynamic("jobName")(jobName.asInstanceOf[js.Any])
     if (jobOutput != null) __obj.updateDynamic("jobOutput")(jobOutput.asInstanceOf[js.Any])

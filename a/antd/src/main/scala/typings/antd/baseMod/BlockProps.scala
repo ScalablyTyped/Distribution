@@ -14,6 +14,7 @@ trait BlockProps extends TypographyProps {
   var disabled: js.UndefOr[Boolean] = js.undefined
   var editable: js.UndefOr[Boolean | EditConfig] = js.undefined
   var ellipsis: js.UndefOr[Boolean | EllipsisConfig] = js.undefined
+  var keyboard: js.UndefOr[Boolean] = js.undefined
   var mark: js.UndefOr[Boolean] = js.undefined
   var strong: js.UndefOr[Boolean] = js.undefined
   var title: js.UndefOr[String] = js.undefined
@@ -34,6 +35,7 @@ object BlockProps {
     editable: Boolean | EditConfig = null,
     ellipsis: Boolean | EllipsisConfig = null,
     id: String = null,
+    keyboard: js.UndefOr[Boolean] = js.undefined,
     mark: js.UndefOr[Boolean] = js.undefined,
     prefixCls: String = null,
     strong: js.UndefOr[Boolean] = js.undefined,
@@ -53,6 +55,7 @@ object BlockProps {
     if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
     if (ellipsis != null) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.get.asInstanceOf[js.Any])
     if (!js.isUndefined(mark)) __obj.updateDynamic("mark")(mark.get.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (!js.isUndefined(strong)) __obj.updateDynamic("strong")(strong.get.asInstanceOf[js.Any])

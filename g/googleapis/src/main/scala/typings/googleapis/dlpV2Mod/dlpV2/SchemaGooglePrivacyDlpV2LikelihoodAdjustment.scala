@@ -28,10 +28,10 @@ trait SchemaGooglePrivacyDlpV2LikelihoodAdjustment extends js.Object {
 
 object SchemaGooglePrivacyDlpV2LikelihoodAdjustment {
   @scala.inline
-  def apply(fixedLikelihood: String = null, relativeLikelihood: Int | Double = null): SchemaGooglePrivacyDlpV2LikelihoodAdjustment = {
+  def apply(fixedLikelihood: String = null, relativeLikelihood: js.UndefOr[Double] = js.undefined): SchemaGooglePrivacyDlpV2LikelihoodAdjustment = {
     val __obj = js.Dynamic.literal()
     if (fixedLikelihood != null) __obj.updateDynamic("fixedLikelihood")(fixedLikelihood.asInstanceOf[js.Any])
-    if (relativeLikelihood != null) __obj.updateDynamic("relativeLikelihood")(relativeLikelihood.asInstanceOf[js.Any])
+    if (!js.isUndefined(relativeLikelihood)) __obj.updateDynamic("relativeLikelihood")(relativeLikelihood.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2LikelihoodAdjustment]
   }
 }

@@ -26,6 +26,10 @@ trait PurchaseHostReservationRequest extends js.Object {
     * The ID of the offering.
     */
   var OfferingId: typings.awsSdk.ec2Mod.OfferingId = js.native
+  /**
+    * The tags to apply to the Dedicated Host Reservation during purchase.
+    */
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
 }
 
 object PurchaseHostReservationRequest {
@@ -35,12 +39,14 @@ object PurchaseHostReservationRequest {
     OfferingId: OfferingId,
     ClientToken: String = null,
     CurrencyCode: CurrencyCodeValues = null,
-    LimitPrice: String = null
+    LimitPrice: String = null,
+    TagSpecifications: TagSpecificationList = null
   ): PurchaseHostReservationRequest = {
     val __obj = js.Dynamic.literal(HostIdSet = HostIdSet.asInstanceOf[js.Any], OfferingId = OfferingId.asInstanceOf[js.Any])
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
     if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode.asInstanceOf[js.Any])
     if (LimitPrice != null) __obj.updateDynamic("LimitPrice")(LimitPrice.asInstanceOf[js.Any])
+    if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[PurchaseHostReservationRequest]
   }
 }

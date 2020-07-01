@@ -18,7 +18,7 @@ trait Argv[N /* <: INamespace[C, N, M, I, O] */, C /* <: ICommand[C, N, M, I, O]
 
 object Argv {
   @scala.inline
-  def apply[N, C, M, I, O](argv: js.Array[String], env: ProcessEnv, namespace: N): Argv[N, C, M, I, O] = {
+  def apply[/* <: typings.ionicCliFramework.definitionsMod.INamespace[C, N, M, I, O] */ N, /* <: typings.ionicCliFramework.definitionsMod.ICommand[C, N, M, I, O] */ C, /* <: typings.ionicCliFramework.definitionsMod.CommandMetadata[I, O] */ M, /* <: typings.ionicCliFramework.definitionsMod.CommandMetadataInput */ I, /* <: typings.ionicCliFramework.definitionsMod.CommandMetadataOption */ O](argv: js.Array[String], env: ProcessEnv, namespace: N): Argv[N, C, M, I, O] = {
     val __obj = js.Dynamic.literal(argv = argv.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[Argv[N, C, M, I, O]]
   }

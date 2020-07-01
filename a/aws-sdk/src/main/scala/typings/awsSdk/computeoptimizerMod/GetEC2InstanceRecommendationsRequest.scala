@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetEC2InstanceRecommendationsRequest extends js.Object {
   /**
-    * The AWS account IDs for which to return instance recommendations. Only one account ID can be specified per request.
+    * The IDs of the AWS accounts for which to return instance recommendations. If your account is the master account of an organization, use this parameter to specify the member accounts for which you want to return instance recommendations. Only one account ID can be specified per request.
     */
   var accountIds: js.UndefOr[AccountIds] = js.native
   /**
@@ -19,7 +19,7 @@ trait GetEC2InstanceRecommendationsRequest extends js.Object {
     */
   var instanceArns: js.UndefOr[InstanceArns] = js.native
   /**
-    * The maximum number of instance recommendations to return with a single call. To retrieve the remaining results, make another call with the returned NextToken value.
+    * The maximum number of instance recommendations to return with a single request. To retrieve the remaining results, make another request with the returned NextToken value.
     */
   var maxResults: js.UndefOr[MaxResults] = js.native
   /**

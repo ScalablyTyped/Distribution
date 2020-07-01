@@ -30,10 +30,22 @@ package object ecsMod {
   type BoxedInteger = scala.Double
   type CapacityProviderField = typings.awsSdk.awsSdkStrings.TAGS | java.lang.String
   type CapacityProviderFieldList = js.Array[typings.awsSdk.ecsMod.CapacityProviderField]
-  type CapacityProviderStatus = typings.awsSdk.awsSdkStrings.ACTIVE | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ACTIVE
+    - typings.awsSdk.awsSdkStrings.INACTIVE
+    - java.lang.String
+  */
+  type CapacityProviderStatus = typings.awsSdk.ecsMod._CapacityProviderStatus | java.lang.String
   type CapacityProviderStrategy = js.Array[typings.awsSdk.ecsMod.CapacityProviderStrategyItem]
   type CapacityProviderStrategyItemBase = scala.Double
   type CapacityProviderStrategyItemWeight = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.DELETE_IN_PROGRESS
+    - typings.awsSdk.awsSdkStrings.DELETE_COMPLETE
+    - typings.awsSdk.awsSdkStrings.DELETE_FAILED
+    - java.lang.String
+  */
+  type CapacityProviderUpdateStatus = typings.awsSdk.ecsMod._CapacityProviderUpdateStatus | java.lang.String
   type CapacityProviders = js.Array[typings.awsSdk.ecsMod.CapacityProvider]
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.ecsMod.ClientApiVersions
   /* Rewritten from type alias, can be one of: 

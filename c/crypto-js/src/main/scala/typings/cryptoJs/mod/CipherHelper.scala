@@ -18,9 +18,9 @@ trait CipherHelper extends js.Object {
   def encrypt(message: String, secretPassphrase: String, option: CipherOption): WordArray = js.native
   def encrypt(message: String, secretPassphrase: WordArray): WordArray = js.native
   def encrypt(message: String, secretPassphrase: WordArray, option: CipherOption): WordArray = js.native
-  def encrypt(message: WordArray, secretPassphrase: String): WordArray = js.native
-  def encrypt(message: WordArray, secretPassphrase: String, option: CipherOption): WordArray = js.native
-  def encrypt(message: WordArray, secretPassphrase: WordArray): WordArray = js.native
-  def encrypt(message: WordArray, secretPassphrase: WordArray, option: CipherOption): WordArray = js.native
+  def encrypt(message: LibWordArray, secretPassphrase: String): WordArray = js.native
+  def encrypt(message: LibWordArray, secretPassphrase: String, option: CipherOption): WordArray = js.native
+  def encrypt(message: LibWordArray, secretPassphrase: WordArray): WordArray = js.native
+  def encrypt(message: LibWordArray, secretPassphrase: WordArray, option: CipherOption): WordArray = js.native
 }
 

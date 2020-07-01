@@ -199,10 +199,10 @@ trait GraphicsGeometry extends BatchGeometry {
     * Modify uvs array according to position of texture region
     * Does not work with rotated or trimmed textures
     *
-    * @param {number[]} uvs array
-    * @param {PIXI.Texture} texture region
-    * @param {number} start starting index for uvs
-    * @param {number} size how many points to adjust
+    * @param {number[]} uvs - array
+    * @param {PIXI.Texture} texture - region
+    * @param {number} start - starting index for uvs
+    * @param {number} size - how many points to adjust
     */
   def adjustUvs(uvs: js.Array[Double], texture: Texture, start: Double, size: Double): Unit = js.native
   /**
@@ -226,24 +226,15 @@ trait GraphicsGeometry extends BatchGeometry {
   /**
     * Check to see if a point is contained within this geometry.
     *
-    * @param {PIXI.Point} point - Point to check if it's contained.
+    * @param {PIXI.IPointData} point - Point to check if it's contained.
     * @return {Boolean} `true` if the point is contained within geometry.
     */
-  def containsPoint(point: Point): Boolean = js.native
+  def containsPoint(point: IPointData): Boolean = js.native
   /**
-    * Destroys the Graphics object.
+    * Destroys the GraphicsGeometry object.
     *
-    * @param {object|boolean} [options] - Options parameter. A boolean will act as if all
-    *  options have been set to that value
-    * @param {boolean} [options.children=false] - if set to true, all the children will have
-    *  their destroy method called as well. 'options' will be passed on to those calls.
-    * @param {boolean} [options.texture=false] - Only used for child Sprites if options.children is set to true
-    *  Should it destroy the texture of the child sprite
-    * @param {boolean} [options.baseTexture=false] - Only used for child Sprites if options.children is set to true
-    *  Should it destroy the base texture of the child sprite
     */
   def destroy(): Unit = js.native
-  def destroy(options: typings.pixiJs.anon.BaseTexture): Unit = js.native
   /**
     * Draws the given shape to this Graphics object. Can be any of Circle, Rectangle, Ellipse, Line or Polygon.
     *
@@ -326,8 +317,11 @@ trait GraphicsGeometry extends BatchGeometry {
   /**
     * Generates intermediate batch data. Either gets converted to drawCalls
     * or used to convert to batch objects directly by the Graphics object.
+    *
+    * @param {boolean} [aloow32Indices] - Allow using 32-bit indices for preventings artefacts when more that 65535 vertices
     */
   def updateBatches(): Unit = js.native
+  def updateBatches(aloow32Indices: Boolean): Unit = js.native
   /**
     * Test geometry for batching process.
     *

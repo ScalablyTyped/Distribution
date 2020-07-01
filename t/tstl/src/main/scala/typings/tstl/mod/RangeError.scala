@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl", "RangeError")
 @js.native
 class RangeError protected ()
-  extends typings.tstl.exceptionMod.RangeError {
+  extends typings.tstl.tstlModuleMod.RangeError {
   /**
     * Initializer Constructor.
     *

@@ -13,7 +13,7 @@ trait EntryPointReference[TEntryPointComponent /* <: EntryPointComponent[TPreloa
 
 object EntryPointReference {
   @scala.inline
-  def apply[TEntryPointComponent, TRuntimeProps, TPreloadedQueries, TPreloadedNestedEntryPoints, TExtraProps](entryPointReference: PreloadedEntryPoint[TEntryPointComponent], props: TRuntimeProps): EntryPointReference[
+  def apply[/* <: typings.reactRelay.entryPointTypesMod.EntryPointComponent[TPreloadedQueries, TPreloadedNestedEntryPoints, TRuntimeProps, TExtraProps] */ TEntryPointComponent, /* <: js.Object */ TRuntimeProps, /* <: js.Object */ TPreloadedQueries, /* <: js.Object */ TPreloadedNestedEntryPoints, TExtraProps](entryPointReference: PreloadedEntryPoint[TEntryPointComponent], props: TRuntimeProps): EntryPointReference[
     TEntryPointComponent, 
     TRuntimeProps, 
     TPreloadedQueries, 

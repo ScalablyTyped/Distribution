@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 object Color extends js.Object {
   def add(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = js.native
   def add_(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = js.native
-  def fromString(str: String): js.Array[Double] = js.native
+  def fromString(str: String): typings.rotJs.colorMod.Color = js.native
   def hsl2rgb(color: typings.rotJs.colorMod.Color): typings.rotJs.colorMod.Color = js.native
   def interpolate(color1: typings.rotJs.colorMod.Color, color2: typings.rotJs.colorMod.Color): typings.rotJs.colorMod.Color = js.native
   def interpolate(color1: typings.rotJs.colorMod.Color, color2: typings.rotJs.colorMod.Color, factor: Double): typings.rotJs.colorMod.Color = js.native

@@ -9,13 +9,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BaseOptions extends StyleSheetFactoryOptions {
-  var theming: js.UndefOr[Theming[js.Object]] = js.undefined
+trait BaseOptions[Theme] extends StyleSheetFactoryOptions {
+  var theming: js.UndefOr[Theming[Theme]] = js.undefined
 }
 
 object BaseOptions {
   @scala.inline
-  def apply(
+  def apply[Theme](
     classNamePrefix: String = null,
     element: HTMLStyleElement = null,
     generateId: (/* rule */ Rule, /* sheet */ js.UndefOr[StyleSheet[String]]) => String = null,
@@ -23,8 +23,8 @@ object BaseOptions {
     link: js.UndefOr[Boolean] = js.undefined,
     media: String = null,
     meta: String = null,
-    theming: Theming[js.Object] = null
-  ): BaseOptions = {
+    theming: Theming[Theme] = null
+  ): BaseOptions[Theme] = {
     val __obj = js.Dynamic.literal()
     if (classNamePrefix != null) __obj.updateDynamic("classNamePrefix")(classNamePrefix.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
@@ -34,7 +34,7 @@ object BaseOptions {
     if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (theming != null) __obj.updateDynamic("theming")(theming.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BaseOptions]
+    __obj.asInstanceOf[BaseOptions[Theme]]
   }
 }
 

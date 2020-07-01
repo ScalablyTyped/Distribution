@@ -43,7 +43,7 @@ object SchemaTrackRelease {
     name: String = null,
     releaseNotes: js.Array[SchemaLocalizedText] = null,
     status: String = null,
-    userFraction: Int | Double = null,
+    userFraction: js.UndefOr[Double] = js.undefined,
     versionCodes: js.Array[String] = null
   ): SchemaTrackRelease = {
     val __obj = js.Dynamic.literal()
@@ -51,7 +51,7 @@ object SchemaTrackRelease {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (releaseNotes != null) __obj.updateDynamic("releaseNotes")(releaseNotes.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (userFraction != null) __obj.updateDynamic("userFraction")(userFraction.asInstanceOf[js.Any])
+    if (!js.isUndefined(userFraction)) __obj.updateDynamic("userFraction")(userFraction.get.asInstanceOf[js.Any])
     if (versionCodes != null) __obj.updateDynamic("versionCodes")(versionCodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTrackRelease]
   }

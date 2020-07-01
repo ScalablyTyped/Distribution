@@ -44,7 +44,7 @@ trait ContextSystem extends System {
   val webGLVersion: Double
   /**
     * Handle the context change event
-    * @param {WebGLRenderingContext} gl new webgl context
+    * @param {WebGLRenderingContext} gl - new webgl context
     */
   def contextChange(gl: WebGLRenderingContext): Unit
   /**

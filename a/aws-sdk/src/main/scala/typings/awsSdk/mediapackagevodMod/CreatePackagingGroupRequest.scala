@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CreatePackagingGroupRequest extends js.Object {
+  var Authorization: js.UndefOr[typings.awsSdk.mediapackagevodMod.Authorization] = js.native
   /**
     * The ID of the PackagingGroup.
     */
@@ -15,8 +16,9 @@ trait CreatePackagingGroupRequest extends js.Object {
 
 object CreatePackagingGroupRequest {
   @scala.inline
-  def apply(Id: string, Tags: Tags = null): CreatePackagingGroupRequest = {
+  def apply(Id: string, Authorization: Authorization = null, Tags: Tags = null): CreatePackagingGroupRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
+    if (Authorization != null) __obj.updateDynamic("Authorization")(Authorization.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePackagingGroupRequest]
   }

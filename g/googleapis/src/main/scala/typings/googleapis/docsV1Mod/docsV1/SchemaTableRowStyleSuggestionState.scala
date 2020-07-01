@@ -21,7 +21,7 @@ object SchemaTableRowStyleSuggestionState {
   @scala.inline
   def apply(minRowHeightSuggested: js.UndefOr[Boolean] = js.undefined): SchemaTableRowStyleSuggestionState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(minRowHeightSuggested)) __obj.updateDynamic("minRowHeightSuggested")(minRowHeightSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(minRowHeightSuggested)) __obj.updateDynamic("minRowHeightSuggested")(minRowHeightSuggested.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTableRowStyleSuggestionState]
   }
 }

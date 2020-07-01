@@ -1,54 +1,63 @@
 package typings.firebaseFirestore
 
-import typings.firebaseFirestore.datastoreMod.Datastore
-import typings.firebaseFirestore.documentKeyMod.DocumentKey
-import typings.firebaseFirestore.documentMod.MaybeDocument
-import typings.firebaseFirestore.userDataReaderMod.ParsedSetData
-import typings.firebaseFirestore.userDataReaderMod.ParsedUpdateData
+import typings.firebaseFirestore.apiFieldPathMod.FieldPath
+import typings.firebaseFirestore.databaseMod.Firestore
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/core/transaction", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/lite/src/api/transaction", JSImport.Namespace)
 @js.native
 object transactionMod extends js.Object {
-  @js.native
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify firestore.Transaction * / any */ @js.native
   class Transaction protected () extends js.Object {
-    def this(datastore: Datastore) = this()
-    var committed: js.Any = js.native
-    var datastore: js.Any = js.native
-    var ensureCommitNotCalled: js.Any = js.native
-    /**
-      * A deferred usage error that occurred previously in this transaction that
-      * will cause the transaction to fail once it actually commits.
-      */
-    var lastWriteError: js.Any = js.native
-    var mutations: js.Any = js.native
-    /**
-      * Returns the version of this document when it was read in this transaction,
-      * as a precondition, or no precondition if it was not read.
-      */
-    var precondition: js.Any = js.native
-    /**
-      * Returns the precondition for a document if the operation is an update.
-      */
-    var preconditionForUpdate: js.Any = js.native
-    var readVersions: js.Any = js.native
-    var recordVersion: js.Any = js.native
-    var write: js.Any = js.native
-    /**
-      * Set of documents that have been written in the transaction.
-      *
-      * When there's more than one write to the same key in a transaction, any
-      * writes after the first are handled differently.
-      */
-    var writtenDocs: js.Any = js.native
-    def commit(): js.Promise[Unit] = js.native
-    def delete(key: DocumentKey): Unit = js.native
-    def lookup(keys: js.Array[DocumentKey]): js.Promise[js.Array[MaybeDocument]] = js.native
-    def set(key: DocumentKey, data: ParsedSetData): Unit = js.native
-    def update(key: DocumentKey, data: ParsedUpdateData): Unit = js.native
+    def this(_firestore: Firestore, _transaction: typings.firebaseFirestore.coreTransactionMod.Transaction) = this()
+    val _dataReader: js.Any = js.native
+    val _firestore: js.Any = js.native
+    val _transaction: js.Any = js.native
+    def delete(
+      documentRef: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify firestore.DocumentReference<unknown> */ js.Any
+    ): Transaction = js.native
+    def get[T](
+      documentRef: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify firestore.DocumentReference<T> */ js.Any
+    ): js.Promise[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify firestore.DocumentSnapshot<T> */ _
+      ] = js.native
+    def set[T](
+      documentRef: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify firestore.DocumentReference<T> */ js.Any,
+      value: T
+    ): Transaction = js.native
+    def set[T](
+      documentRef: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify firestore.DocumentReference<T> */ js.Any,
+      value: Partial[T],
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify firestore.SetOptions */ js.Any
+    ): Transaction = js.native
+    def update(
+      documentRef: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify firestore.DocumentReference<unknown> */ js.Any,
+      field: String,
+      value: js.Any,
+      moreFieldsAndValues: js.Any*
+    ): Transaction = js.native
+    def update(
+      documentRef: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify firestore.DocumentReference<unknown> */ js.Any,
+      field: FieldPath,
+      value: js.Any,
+      moreFieldsAndValues: js.Any*
+    ): Transaction = js.native
+    def update(
+      documentRef: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify firestore.DocumentReference<unknown> */ js.Any,
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify firestore.UpdateData */ js.Any
+    ): Transaction = js.native
   }
   
+  def runTransaction[T](
+    firestore: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify firestore.FirebaseFirestore */ js.Any,
+    updateFunction: js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify firestore.Transaction */ /* transaction */ js.Any, 
+      js.Promise[T]
+    ]
+  ): js.Promise[T] = js.native
 }
 

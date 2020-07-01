@@ -1,12 +1,12 @@
 package typings.googleapis.v32Mod.dfareportingV32
 
-import typings.googleapis.AnonActive
-import typings.googleapis.AnonConversionDimensions
-import typings.googleapis.AnonDimension
-import typings.googleapis.AnonDimensionFilters
-import typings.googleapis.AnonEmailOwnerDeliveryType
-import typings.googleapis.AnonEnableAllDimensionCombinations
-import typings.googleapis.AnonFloodlightConfigId
+import typings.googleapis.anon.Active
+import typings.googleapis.anon.ConversionDimensions
+import typings.googleapis.anon.Dimension
+import typings.googleapis.anon.DimensionFilters
+import typings.googleapis.anon.EmailOwnerDeliveryType
+import typings.googleapis.anon.EnableAllDimensionCombinations
+import typings.googleapis.anon.FloodlightConfigId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,16 +23,16 @@ trait SchemaReport extends js.Object {
   /**
     * The report criteria for a report of type &quot;STANDARD&quot;.
     */
-  var criteria: js.UndefOr[AnonDimensionFilters] = js.native
+  var criteria: js.UndefOr[DimensionFilters] = js.native
   /**
     * The report criteria for a report of type
     * &quot;CROSS_DIMENSION_REACH&quot;.
     */
-  var crossDimensionReachCriteria: js.UndefOr[AnonDimension] = js.native
+  var crossDimensionReachCriteria: js.UndefOr[Dimension] = js.native
   /**
     * The report&#39;s email delivery settings.
     */
-  var delivery: js.UndefOr[AnonEmailOwnerDeliveryType] = js.native
+  var delivery: js.UndefOr[EmailOwnerDeliveryType] = js.native
   /**
     * The eTag of this response for caching purposes.
     */
@@ -44,7 +44,7 @@ trait SchemaReport extends js.Object {
   /**
     * The report criteria for a report of type &quot;FLOODLIGHT&quot;.
     */
-  var floodlightCriteria: js.UndefOr[AnonFloodlightConfigId] = js.native
+  var floodlightCriteria: js.UndefOr[FloodlightConfigId] = js.native
   /**
     * The output format of the report. If not specified, default format is
     * &quot;CSV&quot;. Note that the actual format in the completed report file
@@ -77,17 +77,17 @@ trait SchemaReport extends js.Object {
   /**
     * The report criteria for a report of type &quot;PATH_TO_CONVERSION&quot;.
     */
-  var pathToConversionCriteria: js.UndefOr[AnonConversionDimensions] = js.native
+  var pathToConversionCriteria: js.UndefOr[ConversionDimensions] = js.native
   /**
     * The report criteria for a report of type &quot;REACH&quot;.
     */
-  var reachCriteria: js.UndefOr[AnonEnableAllDimensionCombinations] = js.native
+  var reachCriteria: js.UndefOr[EnableAllDimensionCombinations] = js.native
   /**
     * The report&#39;s schedule. Can only be set if the report&#39;s
     * &#39;dateRange&#39; is a relative date range and the relative date range
     * is not &quot;TODAY&quot;.
     */
-  var schedule: js.UndefOr[AnonActive] = js.native
+  var schedule: js.UndefOr[Active] = js.native
   /**
     * The subaccount ID to which this report belongs if applicable.
     */
@@ -102,21 +102,21 @@ object SchemaReport {
   @scala.inline
   def apply(
     accountId: String = null,
-    criteria: AnonDimensionFilters = null,
-    crossDimensionReachCriteria: AnonDimension = null,
-    delivery: AnonEmailOwnerDeliveryType = null,
+    criteria: DimensionFilters = null,
+    crossDimensionReachCriteria: Dimension = null,
+    delivery: EmailOwnerDeliveryType = null,
     etag: String = null,
     fileName: String = null,
-    floodlightCriteria: AnonFloodlightConfigId = null,
+    floodlightCriteria: FloodlightConfigId = null,
     format: String = null,
     id: String = null,
     kind: String = null,
     lastModifiedTime: String = null,
     name: String = null,
     ownerProfileId: String = null,
-    pathToConversionCriteria: AnonConversionDimensions = null,
-    reachCriteria: AnonEnableAllDimensionCombinations = null,
-    schedule: AnonActive = null,
+    pathToConversionCriteria: ConversionDimensions = null,
+    reachCriteria: EnableAllDimensionCombinations = null,
+    schedule: Active = null,
     subAccountId: String = null,
     `type`: String = null
   ): SchemaReport = {

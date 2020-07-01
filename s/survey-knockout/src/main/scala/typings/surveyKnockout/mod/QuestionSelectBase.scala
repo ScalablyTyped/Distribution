@@ -93,7 +93,7 @@ class QuestionSelectBase protected () extends Question {
   /* protected */ def canUseFilteredChoices(): Boolean = js.native
   /* protected */ def clearDisabledValuesCore(): Unit = js.native
   /**
-    * If the clearIncorrectValuesCallback is set, it is used to clear incorrrect values instead of default behaviour.
+    * If the clearIncorrectValuesCallback is set, it is used to clear incorrect values instead of default behaviour.
     */
   def clearIncorrectValuesCallback(): Unit = js.native
   /* protected */ def clearIncorrectValuesCore(): Unit = js.native

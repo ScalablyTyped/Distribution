@@ -21,9 +21,9 @@ trait SchemaDimension extends js.Object {
 
 object SchemaDimension {
   @scala.inline
-  def apply(magnitude: Int | Double = null, unit: String = null): SchemaDimension = {
+  def apply(magnitude: js.UndefOr[Double] = js.undefined, unit: String = null): SchemaDimension = {
     val __obj = js.Dynamic.literal()
-    if (magnitude != null) __obj.updateDynamic("magnitude")(magnitude.asInstanceOf[js.Any])
+    if (!js.isUndefined(magnitude)) __obj.updateDynamic("magnitude")(magnitude.get.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDimension]
   }

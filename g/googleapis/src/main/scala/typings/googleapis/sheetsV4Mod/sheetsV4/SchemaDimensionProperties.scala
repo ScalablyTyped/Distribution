@@ -33,13 +33,13 @@ object SchemaDimensionProperties {
     developerMetadata: js.Array[SchemaDeveloperMetadata] = null,
     hiddenByFilter: js.UndefOr[Boolean] = js.undefined,
     hiddenByUser: js.UndefOr[Boolean] = js.undefined,
-    pixelSize: Int | Double = null
+    pixelSize: js.UndefOr[Double] = js.undefined
   ): SchemaDimensionProperties = {
     val __obj = js.Dynamic.literal()
     if (developerMetadata != null) __obj.updateDynamic("developerMetadata")(developerMetadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(hiddenByFilter)) __obj.updateDynamic("hiddenByFilter")(hiddenByFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(hiddenByUser)) __obj.updateDynamic("hiddenByUser")(hiddenByUser.asInstanceOf[js.Any])
-    if (pixelSize != null) __obj.updateDynamic("pixelSize")(pixelSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(hiddenByFilter)) __obj.updateDynamic("hiddenByFilter")(hiddenByFilter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hiddenByUser)) __obj.updateDynamic("hiddenByUser")(hiddenByUser.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pixelSize)) __obj.updateDynamic("pixelSize")(pixelSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDimensionProperties]
   }
 }

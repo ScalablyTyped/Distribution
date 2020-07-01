@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PutRecommendationFeedbackRequest extends js.Object {
   /**
-    *  The Amazon Resource Name (ARN) that identifies the code review. 
+    * The Amazon Resource Name (ARN) of the  CodeReview  object. 
     */
   var CodeReviewArn: Arn = js.native
   /**

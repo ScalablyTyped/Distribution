@@ -27,10 +27,10 @@ trait SchemaInterconnectDiagnosticsLinkOpticalPower extends js.Object {
 
 object SchemaInterconnectDiagnosticsLinkOpticalPower {
   @scala.inline
-  def apply(state: String = null, value: Int | Double = null): SchemaInterconnectDiagnosticsLinkOpticalPower = {
+  def apply(state: String = null, value: js.UndefOr[Double] = js.undefined): SchemaInterconnectDiagnosticsLinkOpticalPower = {
     val __obj = js.Dynamic.literal()
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInterconnectDiagnosticsLinkOpticalPower]
   }
 }

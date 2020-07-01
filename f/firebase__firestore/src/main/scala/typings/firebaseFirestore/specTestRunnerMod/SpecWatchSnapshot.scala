@@ -1,7 +1,7 @@
 package typings.firebaseFirestore.specTestRunnerMod
 
+import typings.firebaseFirestore.testUtilHelpersMod.TestSnapshotVersion
 import typings.firebaseFirestore.typesMod.TargetId
-import typings.firebaseFirestore.utilHelpersMod.TestSnapshotVersion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

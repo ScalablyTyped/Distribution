@@ -14,7 +14,7 @@ trait UseTableColumnOptions[D /* <: js.Object */] extends js.Object {
 
 object UseTableColumnOptions {
   @scala.inline
-  def apply[D](
+  def apply[/* <: js.Object */ D](
     Header: Renderer[HeaderProps[D]] = null,
     id: IdType[D] = null,
     maxWidth: js.UndefOr[Double] = js.undefined,

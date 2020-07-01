@@ -7,6 +7,7 @@ import typings.antDesignProLayout.antDesignProLayoutStrings.topmenu
 import typings.antDesignProLayout.defaultSettingsMod.ContentWidth
 import typings.antDesignProLayout.getBreadcrumbPropsMod.BreadcrumbListReturn
 import typings.antDesignProLayout.typingsMod.MenuDataItem
+import typings.antd.menuContextMod.MenuTheme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,9 +26,7 @@ trait RouteContextType extends js.Object {
   var layout: js.UndefOr[sidemenu | topmenu] = js.undefined
   var menu: js.UndefOr[DefaultOpenAll] = js.undefined
   var menuData: js.UndefOr[js.Array[MenuDataItem]] = js.undefined
-  var navTheme: js.UndefOr[
-    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark
-  ] = js.undefined
+  var navTheme: js.UndefOr[MenuTheme | realDark] = js.undefined
   var primaryColor: js.UndefOr[String] = js.undefined
   var title: js.UndefOr[String] = js.undefined
 }
@@ -47,7 +46,7 @@ object RouteContextType {
     layout: sidemenu | topmenu = null,
     menu: DefaultOpenAll = null,
     menuData: js.Array[MenuDataItem] = null,
-    navTheme: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark = null,
+    navTheme: MenuTheme | realDark = null,
     primaryColor: String = null,
     title: String = null
   ): RouteContextType = {

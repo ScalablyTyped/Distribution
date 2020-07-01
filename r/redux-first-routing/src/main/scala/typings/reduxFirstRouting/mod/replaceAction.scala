@@ -15,7 +15,7 @@ trait replaceAction[T /* <: Path | LocationDescriptorObject[LocationState] */] e
 
 object replaceAction {
   @scala.inline
-  def apply[T](payload: T, `type`: ROUTERSlashREPLACE): replaceAction[T] = {
+  def apply[/* <: typings.history.mod.Path | typings.history.mod.LocationDescriptorObject[typings.history.mod.LocationState] */ T](payload: T, `type`: ROUTERSlashREPLACE): replaceAction[T] = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[replaceAction[T]]

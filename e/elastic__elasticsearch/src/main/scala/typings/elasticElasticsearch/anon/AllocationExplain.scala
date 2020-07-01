@@ -3,10 +3,13 @@ package typings.elasticElasticsearch.anon
 import typings.elasticElasticsearch.mod.callbackFn
 import typings.elasticElasticsearch.requestParamsMod.ClusterAllocationExplain
 import typings.elasticElasticsearch.requestParamsMod.ClusterDeleteComponentTemplate
+import typings.elasticElasticsearch.requestParamsMod.ClusterDeleteVotingConfigExclusions
+import typings.elasticElasticsearch.requestParamsMod.ClusterExistsComponentTemplate
 import typings.elasticElasticsearch.requestParamsMod.ClusterGetComponentTemplate
 import typings.elasticElasticsearch.requestParamsMod.ClusterGetSettings
 import typings.elasticElasticsearch.requestParamsMod.ClusterHealth
 import typings.elasticElasticsearch.requestParamsMod.ClusterPendingTasks
+import typings.elasticElasticsearch.requestParamsMod.ClusterPostVotingConfigExclusions
 import typings.elasticElasticsearch.requestParamsMod.ClusterPutComponentTemplate
 import typings.elasticElasticsearch.requestParamsMod.ClusterPutSettings
 import typings.elasticElasticsearch.requestParamsMod.ClusterRemoteInfo
@@ -55,6 +58,16 @@ trait AllocationExplain extends js.Object {
     options: TransportRequestOptions,
     callback: callbackFn[TResponse, TContext]
   ): TransportRequestCallback = js.native
+  def deleteVotingConfigExclusions[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def deleteVotingConfigExclusions[TResponse, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def deleteVotingConfigExclusions[TResponse, TContext](params: ClusterDeleteVotingConfigExclusions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def deleteVotingConfigExclusions[TResponse, TContext](params: ClusterDeleteVotingConfigExclusions, callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def deleteVotingConfigExclusions[TResponse, TContext](params: ClusterDeleteVotingConfigExclusions, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def deleteVotingConfigExclusions[TResponse, TContext](
+    params: ClusterDeleteVotingConfigExclusions,
+    options: TransportRequestOptions,
+    callback: callbackFn[TResponse, TContext]
+  ): TransportRequestCallback = js.native
   def delete_component_template[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def delete_component_template[TResponse, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
   def delete_component_template[TResponse, TContext](params: ClusterDeleteComponentTemplate): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
@@ -62,6 +75,36 @@ trait AllocationExplain extends js.Object {
   def delete_component_template[TResponse, TContext](params: ClusterDeleteComponentTemplate, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def delete_component_template[TResponse, TContext](
     params: ClusterDeleteComponentTemplate,
+    options: TransportRequestOptions,
+    callback: callbackFn[TResponse, TContext]
+  ): TransportRequestCallback = js.native
+  def delete_voting_config_exclusions[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def delete_voting_config_exclusions[TResponse, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def delete_voting_config_exclusions[TResponse, TContext](params: ClusterDeleteVotingConfigExclusions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def delete_voting_config_exclusions[TResponse, TContext](params: ClusterDeleteVotingConfigExclusions, callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def delete_voting_config_exclusions[TResponse, TContext](params: ClusterDeleteVotingConfigExclusions, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def delete_voting_config_exclusions[TResponse, TContext](
+    params: ClusterDeleteVotingConfigExclusions,
+    options: TransportRequestOptions,
+    callback: callbackFn[TResponse, TContext]
+  ): TransportRequestCallback = js.native
+  def existsComponentTemplate[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def existsComponentTemplate[TResponse, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def existsComponentTemplate[TResponse, TContext](params: ClusterExistsComponentTemplate): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def existsComponentTemplate[TResponse, TContext](params: ClusterExistsComponentTemplate, callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def existsComponentTemplate[TResponse, TContext](params: ClusterExistsComponentTemplate, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def existsComponentTemplate[TResponse, TContext](
+    params: ClusterExistsComponentTemplate,
+    options: TransportRequestOptions,
+    callback: callbackFn[TResponse, TContext]
+  ): TransportRequestCallback = js.native
+  def exists_component_template[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def exists_component_template[TResponse, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def exists_component_template[TResponse, TContext](params: ClusterExistsComponentTemplate): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def exists_component_template[TResponse, TContext](params: ClusterExistsComponentTemplate, callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def exists_component_template[TResponse, TContext](params: ClusterExistsComponentTemplate, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def exists_component_template[TResponse, TContext](
+    params: ClusterExistsComponentTemplate,
     options: TransportRequestOptions,
     callback: callbackFn[TResponse, TContext]
   ): TransportRequestCallback = js.native
@@ -128,6 +171,26 @@ trait AllocationExplain extends js.Object {
   def pending_tasks[TResponse, TContext](params: ClusterPendingTasks, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def pending_tasks[TResponse, TContext](
     params: ClusterPendingTasks,
+    options: TransportRequestOptions,
+    callback: callbackFn[TResponse, TContext]
+  ): TransportRequestCallback = js.native
+  def postVotingConfigExclusions[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def postVotingConfigExclusions[TResponse, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def postVotingConfigExclusions[TResponse, TContext](params: ClusterPostVotingConfigExclusions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def postVotingConfigExclusions[TResponse, TContext](params: ClusterPostVotingConfigExclusions, callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def postVotingConfigExclusions[TResponse, TContext](params: ClusterPostVotingConfigExclusions, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def postVotingConfigExclusions[TResponse, TContext](
+    params: ClusterPostVotingConfigExclusions,
+    options: TransportRequestOptions,
+    callback: callbackFn[TResponse, TContext]
+  ): TransportRequestCallback = js.native
+  def post_voting_config_exclusions[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def post_voting_config_exclusions[TResponse, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def post_voting_config_exclusions[TResponse, TContext](params: ClusterPostVotingConfigExclusions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def post_voting_config_exclusions[TResponse, TContext](params: ClusterPostVotingConfigExclusions, callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def post_voting_config_exclusions[TResponse, TContext](params: ClusterPostVotingConfigExclusions, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
+  def post_voting_config_exclusions[TResponse, TContext](
+    params: ClusterPostVotingConfigExclusions,
     options: TransportRequestOptions,
     callback: callbackFn[TResponse, TContext]
   ): TransportRequestCallback = js.native

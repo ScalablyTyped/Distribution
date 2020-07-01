@@ -40,7 +40,7 @@ object SchemaGenerateIdTokenRequest {
     val __obj = js.Dynamic.literal()
     if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
     if (delegates != null) __obj.updateDynamic("delegates")(delegates.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeEmail)) __obj.updateDynamic("includeEmail")(includeEmail.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeEmail)) __obj.updateDynamic("includeEmail")(includeEmail.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGenerateIdTokenRequest]
   }
 }

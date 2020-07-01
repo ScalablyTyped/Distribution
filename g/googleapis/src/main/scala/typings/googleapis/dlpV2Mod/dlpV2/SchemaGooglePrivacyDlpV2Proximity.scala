@@ -21,10 +21,10 @@ trait SchemaGooglePrivacyDlpV2Proximity extends js.Object {
 
 object SchemaGooglePrivacyDlpV2Proximity {
   @scala.inline
-  def apply(windowAfter: Int | Double = null, windowBefore: Int | Double = null): SchemaGooglePrivacyDlpV2Proximity = {
+  def apply(windowAfter: js.UndefOr[Double] = js.undefined, windowBefore: js.UndefOr[Double] = js.undefined): SchemaGooglePrivacyDlpV2Proximity = {
     val __obj = js.Dynamic.literal()
-    if (windowAfter != null) __obj.updateDynamic("windowAfter")(windowAfter.asInstanceOf[js.Any])
-    if (windowBefore != null) __obj.updateDynamic("windowBefore")(windowBefore.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowAfter)) __obj.updateDynamic("windowAfter")(windowAfter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowBefore)) __obj.updateDynamic("windowBefore")(windowBefore.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2Proximity]
   }
 }

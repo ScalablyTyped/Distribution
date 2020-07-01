@@ -108,7 +108,7 @@ object SchemaTargetPool {
     backupPool: String = null,
     creationTimestamp: String = null,
     description: String = null,
-    failoverRatio: Int | Double = null,
+    failoverRatio: js.UndefOr[Double] = js.undefined,
     healthChecks: js.Array[String] = null,
     id: String = null,
     instances: js.Array[String] = null,
@@ -122,7 +122,7 @@ object SchemaTargetPool {
     if (backupPool != null) __obj.updateDynamic("backupPool")(backupPool.asInstanceOf[js.Any])
     if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (failoverRatio != null) __obj.updateDynamic("failoverRatio")(failoverRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(failoverRatio)) __obj.updateDynamic("failoverRatio")(failoverRatio.get.asInstanceOf[js.Any])
     if (healthChecks != null) __obj.updateDynamic("healthChecks")(healthChecks.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (instances != null) __obj.updateDynamic("instances")(instances.asInstanceOf[js.Any])

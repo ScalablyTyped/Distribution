@@ -1,7 +1,7 @@
 
 # Scala.js typings for systeminformation
 
-Typings are for version 4.26.4
+Typings are for version 4.26.9
 
 ## Library description:
 Simple system and OS information library

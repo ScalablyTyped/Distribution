@@ -30,7 +30,7 @@ trait Result[T] extends js.Object {
     * Each column’s name is always given. If the oracledb.extendedMetaData or execute() option extendedMetaData
     * are true then additional information is included.
     */
-  var metaData: js.UndefOr[js.Array[Metadata]] = js.undefined
+  var metaData: js.UndefOr[js.Array[Metadata[T]]] = js.undefined
   /**
     * This contains the output values of OUT and IN OUT binds. If bindParams is passed as an array,
     * then outBinds is returned as an array. If bindParams is passed as an object,
@@ -71,7 +71,7 @@ object Result {
   def apply[T](
     implicitResults: js.Array[js.Array[T] | ResultSet[T]] = null,
     lastRowid: String = null,
-    metaData: js.Array[Metadata] = null,
+    metaData: js.Array[Metadata[T]] = null,
     outBinds: T = null,
     resultSet: ResultSet[T] = null,
     rows: js.Array[T] = null,

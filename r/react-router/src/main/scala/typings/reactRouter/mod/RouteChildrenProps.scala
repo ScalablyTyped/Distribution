@@ -18,7 +18,9 @@ trait RouteChildrenProps[Params /* <: /* import warning: importer.ImportType#app
 
 object RouteChildrenProps {
   @scala.inline
-  def apply[Params, S](history: History[LocationState], location: Location[S], `match`: `match`[Params] = null): RouteChildrenProps[Params, S] = {
+  def apply[/* <: / * import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    * / typings.reactRouter.reactRouterStrings.RouteChildrenProps with org.scalablytyped.runtime.TopLevel[js.Any] */ Params, S](history: History[LocationState], location: Location[S], `match`: `match`[Params] = null): RouteChildrenProps[Params, S] = {
     val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
     __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteChildrenProps[Params, S]]

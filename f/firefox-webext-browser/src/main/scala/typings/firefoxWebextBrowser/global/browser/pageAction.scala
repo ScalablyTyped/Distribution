@@ -4,7 +4,8 @@ import typings.firefoxWebextBrowser.WebExtEvent
 import typings.firefoxWebextBrowser.anon.Path
 import typings.firefoxWebextBrowser.anon.PopupTabId
 import typings.firefoxWebextBrowser.anon.TabIdNumber
-import typings.firefoxWebextBrowser.anon.TabIdTitle
+import typings.firefoxWebextBrowser.anon.Title
+import typings.firefoxWebextBrowser.browser.pageAction.OnClickData
 import typings.firefoxWebextBrowser.browser.tabs.Tab
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +24,7 @@ import scala.scalajs.js.annotation._
 object pageAction extends js.Object {
   /* pageAction events */
   /** Fired when a page action icon is clicked. This event will not fire if the page action has a popup. */
-  val onClicked: WebExtEvent[js.Function1[/* tab */ Tab, Unit]] = js.native
+  val onClicked: WebExtEvent[js.Function2[/* tab */ Tab, /* info */ js.UndefOr[OnClickData], Unit]] = js.native
   /** Gets the html document set as the popup for this page action. */
   def getPopup(details: TabIdNumber): js.Promise[String] = js.native
   /** Gets the title of the page action. */
@@ -46,7 +47,7 @@ object pageAction extends js.Object {
   /** Sets the html document to be opened as a popup when the user clicks on the page action's icon. */
   def setPopup(details: PopupTabId): Unit = js.native
   /** Sets the title of the page action. This is displayed in a tooltip over the page action. */
-  def setTitle(details: TabIdTitle): Unit = js.native
+  def setTitle(details: Title): Unit = js.native
   /* pageAction functions */
   /**
     * Shows the page action. The page action is shown whenever the tab is selected.

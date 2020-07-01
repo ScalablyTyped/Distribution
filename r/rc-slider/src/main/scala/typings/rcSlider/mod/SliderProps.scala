@@ -32,6 +32,11 @@ trait SliderProps extends CommonApiProps {
     */
   var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
   /**
+    * Track starts from this value. If `undefined`, `min` is used.
+    * @default undefined
+    */
+  var startPoint: js.UndefOr[Double] = js.undefined
+  /**
     * Set the tabIndex of the slider handle.
     * @default 0
     */
@@ -63,6 +68,7 @@ object SliderProps {
     onChange: /* value */ Double => Unit = null,
     railStyle: CSSProperties = null,
     reverse: js.UndefOr[Boolean] = js.undefined,
+    startPoint: js.UndefOr[Double] = js.undefined,
     step: js.UndefOr[Null | Double] = js.undefined,
     style: js.Array[CSSProperties] | CSSProperties = null,
     tabIndex: js.UndefOr[Double] = js.undefined,
@@ -91,6 +97,7 @@ object SliderProps {
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (railStyle != null) __obj.updateDynamic("railStyle")(railStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startPoint)) __obj.updateDynamic("startPoint")(startPoint.get.asInstanceOf[js.Any])
     if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])

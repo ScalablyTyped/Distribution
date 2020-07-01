@@ -319,9 +319,6 @@ object convertUnitsStrings {
        with unit
   
   @js.native
-  sealed trait distance extends measure
-  
-  @js.native
   sealed trait ditgital extends measure
   
   @js.native
@@ -615,6 +612,9 @@ object convertUnitsStrings {
   sealed trait lb
     extends uMass
        with unit
+  
+  @js.native
+  sealed trait length extends measure
   
   @js.native
   sealed trait lx
@@ -1089,8 +1089,6 @@ object convertUnitsStrings {
   @scala.inline
   def degSlashs: degSlashs = "deg/s".asInstanceOf[degSlashs]
   @scala.inline
-  def distance: distance = "distance".asInstanceOf[distance]
-  @scala.inline
   def ditgital: ditgital = "ditgital".asInstanceOf[ditgital]
   @scala.inline
   def dlSlashs: dlSlashs = "dl/s".asInstanceOf[dlSlashs]
@@ -1212,6 +1210,8 @@ object convertUnitsStrings {
   def lSlashs: lSlashs = "l/s".asInstanceOf[lSlashs]
   @scala.inline
   def lb: lb = "lb".asInstanceOf[lb]
+  @scala.inline
+  def length: length = "length".asInstanceOf[length]
   @scala.inline
   def lx: lx = "lx".asInstanceOf[lx]
   @scala.inline

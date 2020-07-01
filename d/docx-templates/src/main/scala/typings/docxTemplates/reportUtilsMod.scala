@@ -16,7 +16,7 @@ object reportUtilsMod extends js.Object {
   def cloneNodeForLogging(node: Node): js.Object = js.native
   def cloneNodeWithoutChildren(node: Node): Node = js.native
   def getCurLoop(ctx: Context): LoopStatus | Null = js.native
-  def getNextSibling(node: Node): TextNode | NonTextNode | Null = js.native
+  def getNextSibling(node: Node): Node | Null = js.native
   def insertTextSiblingAfter(textNode: TextNode): TextNode = js.native
   def isLoopExploring(ctx: Context): Boolean = js.native
   def logLoop(loops: js.Array[LoopStatus]): Unit = js.native

@@ -17,7 +17,7 @@ trait UseRowSelectHooks[D /* <: js.Object */] extends js.Object {
 
 object UseRowSelectHooks {
   @scala.inline
-  def apply[D](
+  def apply[/* <: js.Object */ D](
     getToggleAllRowsSelectedProps: js.Array[
       PropGetter[D, TableToggleAllRowsSelectedProps, scala.Nothing, PartialTableToggleAllRows]
     ],

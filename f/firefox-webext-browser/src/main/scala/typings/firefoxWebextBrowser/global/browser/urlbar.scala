@@ -1,13 +1,15 @@
 package typings.firefoxWebextBrowser.global.browser
 
-import typings.firefoxWebextBrowser.WebExtEvent
 import typings.firefoxWebextBrowser.browser.types.Setting
+import typings.firefoxWebextBrowser.browser.urlbar.EngagementState
 import typings.firefoxWebextBrowser.browser.urlbar.Query
 import typings.firefoxWebextBrowser.browser.urlbar.Result
+import typings.firefoxWebextBrowser.browser.urlbar.SearchOptions
 import typings.firefoxWebextBrowser.browser.urlbar.UrlbarOnBehaviorRequestedEvent
+import typings.firefoxWebextBrowser.browser.urlbar.UrlbarOnEngagementEvent
 import typings.firefoxWebextBrowser.browser.urlbar.UrlbarOnQueryCanceledEvent
+import typings.firefoxWebextBrowser.browser.urlbar.UrlbarOnResultPickedEvent
 import typings.firefoxWebextBrowser.browser.urlbar.UrlbarOnResultsRequestedEvent
-import typings.firefoxWebextBrowser.browser.urlbar.contextualTip.ContextualTip
 import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.active
 import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.inactive
 import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.restricting
@@ -26,6 +28,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("browser.urlbar")
 @js.native
 object urlbar extends js.Object {
+  /* urlbar properties */
   /** Enables or disables the engagement telemetry. */
   val engagementTelemetry: Setting = js.native
   /* urlbar events */
@@ -38,11 +41,24 @@ object urlbar extends js.Object {
     */
   val onBehaviorRequested: UrlbarOnBehaviorRequestedEvent[js.Function1[/* query */ Query, active | inactive | restricting]] = js.native
   /**
+    * This event is fired when the user starts and ends an engagement with the urlbar.
+    * @param state The state of the engagement.
+    */
+  val onEngagement: UrlbarOnEngagementEvent[js.Function1[/* state */ EngagementState, Unit]] = js.native
+  /**
     * This event is fired for the given provider when a query is canceled. The listener should stop any ongoing fetch
     * or creation of results and clean up its resources.
     * @param query The query that was canceled.
     */
   val onQueryCanceled: UrlbarOnQueryCanceledEvent[js.Function1[/* query */ Query, Unit]] = js.native
+  /**
+    * Typically, a provider includes a `url` property in its results' payloads. When the user picks a result with a
+    * URL, Firefox automatically loads the URL. URLs don't make sense for every result type, however. When the user
+    * picks a result without a URL, this event is fired. The provider should take an appropriate action in response.
+    * Currently the only applicable `ResultType` is `tip`.
+    * @param payload The payload of the result that was picked.
+    */
+  val onResultPicked: UrlbarOnResultPickedEvent[js.Function1[/* payload */ js.Object, Unit]] = js.native
   /**
     * When a query starts, this event is fired for the given provider if the provider is active for the query and
     * there are no other providers that are restricting. Its purpose is to request the provider's results for the
@@ -51,41 +67,21 @@ object urlbar extends js.Object {
     * @returns The results that the provider fetched for the query.
     */
   val onResultsRequested: UrlbarOnResultsRequestedEvent[js.Function1[/* query */ Query, js.Array[Result]]] = js.native
-  /* urlbar properties */
-  /** Enables or disables the open-view-on-focus mode. */
-  val openViewOnFocus: Setting = js.native
+  /* urlbar functions */
+  /** Closes the urlbar view in the current window. */
+  def closeView(): js.Promise[_] = js.native
   /**
-    * A contextual tip appears in the urlbar's view (its search results panel) and has an icon, text, optional button, and
-    * an optional link. Use the `browser.urlbar.contextualTip` API to experiment with the contextual tip. Restricted to
-    * Mozilla privileged WebExtensions.
-    *
-    * Not allowed in: Content scripts, Devtools pages
+    * Focuses the urlbar in the current window.
+    * @param [select] If true, the text in the urlbar will also be selected.
     */
-  @js.native
-  object contextualTip extends js.Object {
-    /* urlbar.contextualTip events */
-    /**
-      * Fired when the user clicks the contextual tip's button.
-      * @param windowId The id of the window where the contextual tip's button was clicked.
-      */
-    val onButtonClicked: WebExtEvent[js.Function1[/* windowId */ Double, Unit]] = js.native
-    /**
-      * Fired when the user clicks the contextual tip's link.
-      * @param windowId The id of the window where the contextual tip's link was clicked.
-      */
-    val onLinkClicked: WebExtEvent[js.Function1[/* windowId */ Double, Unit]] = js.native
-    /** Hides the contextual tip (it will still be in the DOM). */
-    def remove(): Unit = js.native
-    /* urlbar.contextualTip functions */
-    /**
-      * Sets the contextual tip in the most recent browser winodw with the given icon, title, button title, and link
-      * title. If the urlbar's view is not already open, then it will be opened so the contextual tip will be visible.
-      * Note that when the urlbar's view is closed, the contextual tip is hidden and will not appear again.
-      * `browser.urlbar.contextualTip.set` must be called each time a contextual tip should appear.
-      * @param details Specifies the contextual tip's texts.
-      */
-    def set(details: ContextualTip): Unit = js.native
-  }
-  
+  def focus(): js.Promise[_] = js.native
+  def focus(select: Boolean): js.Promise[_] = js.native
+  /**
+    * Starts a search in the urlbar in the current window.
+    * @param searchString The search string.
+    * @param [options] Options for the search.
+    */
+  def search(searchString: String): js.Promise[_] = js.native
+  def search(searchString: String, options: SearchOptions): js.Promise[_] = js.native
 }
 

@@ -511,12 +511,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListInvitationsResponse, Unit]
   ): Request[ListInvitationsResponse, AWSError] = js.native
   /**
-    * Lists details about associated member accounts for the current GuardDuty master account.
+    * Lists details about all member accounts for the current GuardDuty master account.
     */
   def listMembers(): Request[ListMembersResponse, AWSError] = js.native
   def listMembers(callback: js.Function2[/* err */ AWSError, /* data */ ListMembersResponse, Unit]): Request[ListMembersResponse, AWSError] = js.native
   /**
-    * Lists details about associated member accounts for the current GuardDuty master account.
+    * Lists details about all member accounts for the current GuardDuty master account.
     */
   def listMembers(params: ListMembersRequest): Request[ListMembersResponse, AWSError] = js.native
   def listMembers(

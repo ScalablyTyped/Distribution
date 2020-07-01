@@ -14,7 +14,7 @@ trait FormatOptionLabelMeta[OptionType /* <: OptionTypeBase */] extends js.Objec
 
 object FormatOptionLabelMeta {
   @scala.inline
-  def apply[OptionType](
+  def apply[/* <: typings.reactSelect.typesMod.OptionTypeBase */ OptionType](
     context: FormatOptionLabelContext,
     inputValue: String,
     selectValue: js.UndefOr[Null | ValueType[OptionType]] = js.undefined

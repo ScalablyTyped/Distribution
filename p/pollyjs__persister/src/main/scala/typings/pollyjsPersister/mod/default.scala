@@ -1,5 +1,6 @@
 package typings.pollyjsPersister.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends Persister {
   /* CompleteClass */
-  override val options: js.Any = js.native
+  override val options: StringDictionary[js.Any] = js.native
   /* CompleteClass */
   override def persist(): js.Promise[Unit] = js.native
 }
@@ -17,7 +18,7 @@ class default () extends Persister {
 @JSImport("@pollyjs/persister", JSImport.Default)
 @js.native
 object default extends js.Object {
-  val name: String = js.native
+  val id: String = js.native
   val `type`: String = js.native
 }
 

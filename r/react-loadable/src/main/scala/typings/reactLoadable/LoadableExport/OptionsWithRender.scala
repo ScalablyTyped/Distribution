@@ -34,7 +34,7 @@ trait OptionsWithRender[Props, Exports /* <: js.Object */]
 
 object OptionsWithRender {
   @scala.inline
-  def apply[Props, Exports](
+  def apply[Props, /* <: js.Object */ Exports](
     loader: () => js.Promise[Exports],
     loading: ComponentType[LoadingComponentProps],
     render: (Exports, Props) => ReactNode,

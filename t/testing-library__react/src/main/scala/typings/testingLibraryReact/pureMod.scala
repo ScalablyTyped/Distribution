@@ -7,10 +7,9 @@ import typings.std.Element
 import typings.std.Error
 import typings.std.HTMLDocument
 import typings.std.HTMLElement
-import typings.testingLibraryDom.anon.Container
 import typings.testingLibraryDom.anon.Interval
-import typings.testingLibraryDom.anon.MutationObserverOptions
 import typings.testingLibraryDom.anon.PartialConfig
+import typings.testingLibraryDom.configMod.Config
 import typings.testingLibraryDom.configMod.ConfigFn
 import typings.testingLibraryDom.eventsMod.CreateObject
 import typings.testingLibraryDom.eventsMod.FireFunction
@@ -39,7 +38,10 @@ import typings.testingLibraryDom.queryHelpersMod.AllByAttribute
 import typings.testingLibraryDom.queryHelpersMod.BuiltQueryMethods
 import typings.testingLibraryDom.queryHelpersMod.GetAllBy
 import typings.testingLibraryDom.queryHelpersMod.QueryByAttribute_
-import typings.testingLibraryDom.waitForElementMod.WaitForElementOptions
+import typings.testingLibraryDom.suggestionsMod.Method
+import typings.testingLibraryDom.suggestionsMod.Suggestion
+import typings.testingLibraryDom.suggestionsMod.Variant
+import typings.testingLibraryDom.waitForMod.waitForOptions
 import typings.testingLibraryReact.anon.FnCall
 import typings.testingLibraryReact.anon.OmitRenderOptionsreadonly
 import typings.testingLibraryReact.anon.RenderResultreadonlygetAl
@@ -50,7 +52,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@testing-library/react/pure", JSImport.Namespace)
+@JSImport("@testing-library/react/types/pure", JSImport.Namespace)
 @js.native
 object pureMod extends js.Object {
   val act: FnCall | (js.Function1[/* callback */ js.Function0[Unit], Unit]) = js.native
@@ -114,6 +116,7 @@ object pureMod extends js.Object {
   def cleanup(): js.Promise[Unit] = js.native
   def configure(configDelta: PartialConfig): Unit = js.native
   def configure(configDelta: ConfigFn): Unit = js.native
+  def getConfig(): Config = js.native
   def getDefaultNormalizer(): NormalizerFn = js.native
   def getDefaultNormalizer(options: DefaultNormalizerOptions): NormalizerFn = js.native
   def getElementError(message: String, container: HTMLElement): Error = js.native
@@ -121,6 +124,9 @@ object pureMod extends js.Object {
   def getQueriesForElement[T /* <: Queries */](element: HTMLElement): BoundFunctions[T] = js.native
   def getQueriesForElement[T /* <: Queries */](element: HTMLElement, queriesToBind: T): BoundFunctions[T] = js.native
   def getRoles(container: HTMLElement): StringDictionary[js.Array[HTMLElement]] = js.native
+  def getSuggestedQuery(element: HTMLElement): js.UndefOr[Suggestion] = js.native
+  def getSuggestedQuery(element: HTMLElement, variant: Variant): js.UndefOr[Suggestion] = js.native
+  def getSuggestedQuery(element: HTMLElement, variant: Variant, method: Method): js.UndefOr[Suggestion] = js.native
   def isInaccessible(element: Element): Boolean = js.native
   def logDOM(): Unit = js.native
   def logDOM(dom: Element): Unit = js.native
@@ -143,15 +149,15 @@ object pureMod extends js.Object {
   def wait(callback: js.Function0[Unit]): js.Promise[Unit] = js.native
   def wait(callback: js.Function0[Unit], options: Interval): js.Promise[Unit] = js.native
   def waitFor[T](callback: js.Function0[T]): js.Promise[T] = js.native
-  def waitFor[T](callback: js.Function0[T], options: Container): js.Promise[T] = js.native
+  def waitFor[T](callback: js.Function0[T], options: waitForOptions): js.Promise[T] = js.native
   def waitForDomChange(): js.Promise[_] = js.native
-  def waitForDomChange(options: MutationObserverOptions): js.Promise[_] = js.native
+  def waitForDomChange(options: waitForOptions): js.Promise[_] = js.native
   def waitForElement[T](callback: js.Function0[T]): js.Promise[T] = js.native
-  def waitForElement[T](callback: js.Function0[T], options: WaitForElementOptions): js.Promise[T] = js.native
-  def waitForElementToBeRemoved[T](callback: T): js.Promise[T] = js.native
-  def waitForElementToBeRemoved[T](callback: T, options: Container): js.Promise[T] = js.native
-  def waitForElementToBeRemoved[T](callback: js.Function0[T]): js.Promise[T] = js.native
-  def waitForElementToBeRemoved[T](callback: js.Function0[T], options: Container): js.Promise[T] = js.native
+  def waitForElement[T](callback: js.Function0[T], options: waitForOptions): js.Promise[T] = js.native
+  def waitForElementToBeRemoved[T](callback: T): js.Promise[Unit] = js.native
+  def waitForElementToBeRemoved[T](callback: T, options: waitForOptions): js.Promise[Unit] = js.native
+  def waitForElementToBeRemoved[T](callback: js.Function0[T]): js.Promise[Unit] = js.native
+  def waitForElementToBeRemoved[T](callback: js.Function0[T], options: waitForOptions): js.Promise[Unit] = js.native
   @js.native
   object queries extends js.Object {
     val findAllByAltText: FindAllByBoundAttribute = js.native
@@ -266,13 +272,14 @@ object pureMod extends js.Object {
     var queryByTestId: BoundFunction[QueryByBoundAttribute] = js.native
     var queryByText: BoundFunction[QueryByText_] = js.native
     var queryByTitle: BoundFunction[QueryByBoundAttribute] = js.native
-    def debug(element: js.Array[Element | HTMLDocument]): Unit = js.native
-    def debug(element: js.Array[Element | HTMLDocument], maxLength: Double): Unit = js.native
-    def debug(element: js.Array[Element | HTMLDocument], maxLength: Double, options: OptionsReceived): Unit = js.native
     /**
       * Convenience function for `pretty-dom` which also allows an array
       * of elements
       */
+    def debug(): Unit = js.native
+    def debug(element: js.Array[Element | HTMLDocument]): Unit = js.native
+    def debug(element: js.Array[Element | HTMLDocument], maxLength: Double): Unit = js.native
+    def debug(element: js.Array[Element | HTMLDocument], maxLength: Double, options: OptionsReceived): Unit = js.native
     def debug(element: Element): Unit = js.native
     def debug(element: Element, maxLength: Double): Unit = js.native
     def debug(element: Element, maxLength: Double, options: OptionsReceived): Unit = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ember
 
-Typings are for version 3.1
+Typings are for version 3.16
 
 ## Library description:
 A framework for creating ambitious web applications.

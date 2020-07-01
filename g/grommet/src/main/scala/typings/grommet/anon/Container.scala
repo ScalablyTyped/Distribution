@@ -11,7 +11,7 @@ trait Container extends js.Object {
   var border: js.UndefOr[RadiusString] = js.undefined
   var container: js.UndefOr[ZIndex] = js.undefined
   var extend: js.UndefOr[ExtendType] = js.undefined
-  var overlay: js.UndefOr[`1`] = js.undefined
+  var overlay: js.UndefOr[`2`] = js.undefined
   var responsiveBreakpoint: js.UndefOr[String] = js.undefined
   var zIndex: js.UndefOr[String] = js.undefined
 }
@@ -23,7 +23,7 @@ object Container {
     border: RadiusString = null,
     container: ZIndex = null,
     extend: ExtendType = null,
-    overlay: `1` = null,
+    overlay: `2` = null,
     responsiveBreakpoint: String = null,
     zIndex: String = null
   ): Container = {

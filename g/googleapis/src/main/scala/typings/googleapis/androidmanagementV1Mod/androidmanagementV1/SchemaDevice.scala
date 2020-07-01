@@ -165,7 +165,7 @@ trait SchemaDevice extends js.Object {
 object SchemaDevice {
   @scala.inline
   def apply(
-    apiLevel: Int | Double = null,
+    apiLevel: js.UndefOr[Double] = js.undefined,
     applicationReports: js.Array[SchemaApplicationReport] = null,
     appliedPolicyName: String = null,
     appliedPolicyVersion: String = null,
@@ -197,7 +197,7 @@ object SchemaDevice {
     userName: String = null
   ): SchemaDevice = {
     val __obj = js.Dynamic.literal()
-    if (apiLevel != null) __obj.updateDynamic("apiLevel")(apiLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(apiLevel)) __obj.updateDynamic("apiLevel")(apiLevel.get.asInstanceOf[js.Any])
     if (applicationReports != null) __obj.updateDynamic("applicationReports")(applicationReports.asInstanceOf[js.Any])
     if (appliedPolicyName != null) __obj.updateDynamic("appliedPolicyName")(appliedPolicyName.asInstanceOf[js.Any])
     if (appliedPolicyVersion != null) __obj.updateDynamic("appliedPolicyVersion")(appliedPolicyVersion.asInstanceOf[js.Any])
@@ -219,7 +219,7 @@ object SchemaDevice {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (networkInfo != null) __obj.updateDynamic("networkInfo")(networkInfo.asInstanceOf[js.Any])
     if (nonComplianceDetails != null) __obj.updateDynamic("nonComplianceDetails")(nonComplianceDetails.asInstanceOf[js.Any])
-    if (!js.isUndefined(policyCompliant)) __obj.updateDynamic("policyCompliant")(policyCompliant.asInstanceOf[js.Any])
+    if (!js.isUndefined(policyCompliant)) __obj.updateDynamic("policyCompliant")(policyCompliant.get.asInstanceOf[js.Any])
     if (policyName != null) __obj.updateDynamic("policyName")(policyName.asInstanceOf[js.Any])
     if (powerManagementEvents != null) __obj.updateDynamic("powerManagementEvents")(powerManagementEvents.asInstanceOf[js.Any])
     if (previousDeviceNames != null) __obj.updateDynamic("previousDeviceNames")(previousDeviceNames.asInstanceOf[js.Any])

@@ -19,7 +19,7 @@ trait CreateReplicationGroupMessage extends js.Object {
     */
   var AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.native
   /**
-    * Specifies whether a read-only replica is automatically promoted to read/write primary if the existing primary fails. If true, Multi-AZ is enabled for this replication group. If false, Multi-AZ is disabled for this replication group.  AutomaticFailoverEnabled must be enabled for Redis (cluster mode enabled) replication groups. Default: false Amazon ElastiCache for Redis does not support Multi-AZ with automatic failover on:   Redis versions earlier than 2.8.6.   Redis (cluster mode disabled): T1 node types.   Redis (cluster mode enabled): T1 node types.  
+    * Specifies whether a read-only replica is automatically promoted to read/write primary if the existing primary fails.  AutomaticFailoverEnabled must be enabled for Redis (cluster mode enabled) replication groups. Default: false Amazon ElastiCache for Redis does not support Multi-AZ with automatic failover on:   Redis versions earlier than 2.8.6.   Redis (cluster mode disabled): T1 node types.   Redis (cluster mode enabled): T1 node types.  
     */
   var AutomaticFailoverEnabled: js.UndefOr[BooleanOptional] = js.native
   /**
@@ -54,6 +54,10 @@ trait CreateReplicationGroupMessage extends js.Object {
     * The ID of the KMS key used to encrypt the disk in the cluster.
     */
   var KmsKeyId: js.UndefOr[String] = js.native
+  /**
+    * A flag indicating if you have Multi-AZ enabled to enhance fault tolerance. For more information, see Minimizing Downtime: Multi-AZ.
+    */
+  var MultiAZEnabled: js.UndefOr[BooleanOptional] = js.native
   /**
     * A list of node group (shard) configuration options. Each node group (shard) configuration has the following members: PrimaryAvailabilityZone, ReplicaAvailabilityZones, ReplicaCount, and Slots. If you're creating a Redis (cluster mode disabled) or a Redis (cluster mode enabled) replication group, you can use this parameter to individually configure each node group (shard), or you can omit this parameter. However, it is required when seeding a Redis (cluster mode enabled) cluster from a S3 rdb file. You must configure each node group (shard) using this parameter because you must specify the slots for each node group.
     */
@@ -145,6 +149,7 @@ object CreateReplicationGroupMessage {
     EngineVersion: String = null,
     GlobalReplicationGroupId: String = null,
     KmsKeyId: String = null,
+    MultiAZEnabled: js.UndefOr[BooleanOptional] = js.undefined,
     NodeGroupConfiguration: NodeGroupConfigurationList = null,
     NotificationTopicArn: String = null,
     NumCacheClusters: js.UndefOr[IntegerOptional] = js.undefined,
@@ -175,6 +180,7 @@ object CreateReplicationGroupMessage {
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
     if (GlobalReplicationGroupId != null) __obj.updateDynamic("GlobalReplicationGroupId")(GlobalReplicationGroupId.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
+    if (!js.isUndefined(MultiAZEnabled)) __obj.updateDynamic("MultiAZEnabled")(MultiAZEnabled.get.asInstanceOf[js.Any])
     if (NodeGroupConfiguration != null) __obj.updateDynamic("NodeGroupConfiguration")(NodeGroupConfiguration.asInstanceOf[js.Any])
     if (NotificationTopicArn != null) __obj.updateDynamic("NotificationTopicArn")(NotificationTopicArn.asInstanceOf[js.Any])
     if (!js.isUndefined(NumCacheClusters)) __obj.updateDynamic("NumCacheClusters")(NumCacheClusters.get.asInstanceOf[js.Any])

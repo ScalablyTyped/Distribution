@@ -14,8 +14,86 @@ package object computeoptimizerMod {
   type AutoScalingGroupRecommendations = js.Array[typings.awsSdk.computeoptimizerMod.AutoScalingGroupRecommendation]
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.computeoptimizerMod.ClientApiVersions
   type Code = java.lang.String
+  type CreationTimestamp = typings.std.Date
   type CurrentInstanceType = java.lang.String
   type DesiredCapacity = scala.Double
+  type DestinationBucket = java.lang.String
+  type DestinationKey = java.lang.String
+  type DestinationKeyPrefix = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.AccountId
+    - typings.awsSdk.awsSdkStrings.AutoScalingGroupArn
+    - typings.awsSdk.awsSdkStrings.AutoScalingGroupName
+    - typings.awsSdk.awsSdkStrings.Finding_
+    - typings.awsSdk.awsSdkStrings.UtilizationMetricsCpuMaximum
+    - typings.awsSdk.awsSdkStrings.UtilizationMetricsMemoryMaximum
+    - typings.awsSdk.awsSdkStrings.LookbackPeriodInDays
+    - typings.awsSdk.awsSdkStrings.CurrentConfigurationInstanceType
+    - typings.awsSdk.awsSdkStrings.CurrentConfigurationDesiredCapacity
+    - typings.awsSdk.awsSdkStrings.CurrentConfigurationMinSize
+    - typings.awsSdk.awsSdkStrings.CurrentConfigurationMaxSize
+    - typings.awsSdk.awsSdkStrings.CurrentOnDemandPrice
+    - typings.awsSdk.awsSdkStrings.CurrentStandardOneYearNoUpfrontReservedPrice
+    - typings.awsSdk.awsSdkStrings.CurrentStandardThreeYearNoUpfrontReservedPrice
+    - typings.awsSdk.awsSdkStrings.CurrentVCpus
+    - typings.awsSdk.awsSdkStrings.CurrentMemory
+    - typings.awsSdk.awsSdkStrings.CurrentStorage
+    - typings.awsSdk.awsSdkStrings.CurrentNetwork
+    - typings.awsSdk.awsSdkStrings.RecommendationOptionsConfigurationInstanceType
+    - typings.awsSdk.awsSdkStrings.RecommendationOptionsConfigurationDesiredCapacity
+    - typings.awsSdk.awsSdkStrings.RecommendationOptionsConfigurationMinSize
+    - typings.awsSdk.awsSdkStrings.RecommendationOptionsConfigurationMaxSize
+    - typings.awsSdk.awsSdkStrings.RecommendationOptionsProjectedUtilizationMetricsCpuMaximum
+    - typings.awsSdk.awsSdkStrings.RecommendationOptionsProjectedUtilizationMetricsMemoryMaximum
+    - typings.awsSdk.awsSdkStrings.RecommendationOptionsPerformanceRisk
+    - typings.awsSdk.awsSdkStrings.RecommendationOptionsOnDemandPrice
+    - typings.awsSdk.awsSdkStrings.RecommendationOptionsStandardOneYearNoUpfrontReservedPrice
+    - typings.awsSdk.awsSdkStrings.RecommendationOptionsStandardThreeYearNoUpfrontReservedPrice
+    - typings.awsSdk.awsSdkStrings.RecommendationOptionsVcpus
+    - typings.awsSdk.awsSdkStrings.RecommendationOptionsMemory
+    - typings.awsSdk.awsSdkStrings.RecommendationOptionsStorage
+    - typings.awsSdk.awsSdkStrings.RecommendationOptionsNetwork
+    - typings.awsSdk.awsSdkStrings.LastRefreshTimestamp
+    - java.lang.String
+  */
+  type ExportableAutoScalingGroupField = typings.awsSdk.computeoptimizerMod._ExportableAutoScalingGroupField | java.lang.String
+  type ExportableAutoScalingGroupFields = js.Array[typings.awsSdk.computeoptimizerMod.ExportableAutoScalingGroupField]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.AccountId
+    - typings.awsSdk.awsSdkStrings.InstanceArn
+    - typings.awsSdk.awsSdkStrings.InstanceName
+    - typings.awsSdk.awsSdkStrings.Finding_
+    - typings.awsSdk.awsSdkStrings.LookbackPeriodInDays
+    - typings.awsSdk.awsSdkStrings.CurrentInstanceType
+    - typings.awsSdk.awsSdkStrings.UtilizationMetricsCpuMaximum
+    - typings.awsSdk.awsSdkStrings.UtilizationMetricsMemoryMaximum
+    - typings.awsSdk.awsSdkStrings.CurrentOnDemandPrice
+    - typings.awsSdk.awsSdkStrings.CurrentStandardOneYearNoUpfrontReservedPrice
+    - typings.awsSdk.awsSdkStrings.CurrentStandardThreeYearNoUpfrontReservedPrice
+    - typings.awsSdk.awsSdkStrings.CurrentVCpus
+    - typings.awsSdk.awsSdkStrings.CurrentMemory
+    - typings.awsSdk.awsSdkStrings.CurrentStorage
+    - typings.awsSdk.awsSdkStrings.CurrentNetwork
+    - typings.awsSdk.awsSdkStrings.RecommendationOptionsInstanceType
+    - typings.awsSdk.awsSdkStrings.RecommendationOptionsProjectedUtilizationMetricsCpuMaximum
+    - typings.awsSdk.awsSdkStrings.RecommendationOptionsProjectedUtilizationMetricsMemoryMaximum
+    - typings.awsSdk.awsSdkStrings.RecommendationOptionsPerformanceRisk
+    - typings.awsSdk.awsSdkStrings.RecommendationOptionsVcpus
+    - typings.awsSdk.awsSdkStrings.RecommendationOptionsMemory
+    - typings.awsSdk.awsSdkStrings.RecommendationOptionsStorage
+    - typings.awsSdk.awsSdkStrings.RecommendationOptionsNetwork
+    - typings.awsSdk.awsSdkStrings.RecommendationOptionsOnDemandPrice
+    - typings.awsSdk.awsSdkStrings.RecommendationOptionsStandardOneYearNoUpfrontReservedPrice
+    - typings.awsSdk.awsSdkStrings.RecommendationOptionsStandardThreeYearNoUpfrontReservedPrice
+    - typings.awsSdk.awsSdkStrings.RecommendationsSourcesRecommendationSourceArn
+    - typings.awsSdk.awsSdkStrings.RecommendationsSourcesRecommendationSourceType
+    - typings.awsSdk.awsSdkStrings.LastRefreshTimestamp
+    - java.lang.String
+  */
+  type ExportableInstanceField = typings.awsSdk.computeoptimizerMod._ExportableInstanceField | java.lang.String
+  type ExportableInstanceFields = js.Array[typings.awsSdk.computeoptimizerMod.ExportableInstanceField]
+  type FailureReason = java.lang.String
+  type FileFormat = typings.awsSdk.awsSdkStrings.Csv_ | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.Finding_
     - typings.awsSdk.awsSdkStrings.RecommendationSourceType
@@ -41,12 +119,31 @@ package object computeoptimizerMod {
   type InstanceName = java.lang.String
   type InstanceRecommendations = js.Array[typings.awsSdk.computeoptimizerMod.InstanceRecommendation]
   type InstanceType = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ResourceType
+    - typings.awsSdk.awsSdkStrings.JobStatus
+    - java.lang.String
+  */
+  type JobFilterName = typings.awsSdk.computeoptimizerMod._JobFilterName | java.lang.String
+  type JobFilters = js.Array[typings.awsSdk.computeoptimizerMod.JobFilter]
+  type JobId = java.lang.String
+  type JobIds = js.Array[typings.awsSdk.computeoptimizerMod.JobId]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.Queued_
+    - typings.awsSdk.awsSdkStrings.InProgress_
+    - typings.awsSdk.awsSdkStrings.Complete_
+    - typings.awsSdk.awsSdkStrings.Failed_
+    - java.lang.String
+  */
+  type JobStatus = typings.awsSdk.computeoptimizerMod._JobStatus | java.lang.String
   type LastRefreshTimestamp = typings.std.Date
+  type LastUpdatedTimestamp = typings.std.Date
   type LookBackPeriodInDays = scala.Double
   type MaxResults = scala.Double
   type MaxSize = scala.Double
   type MemberAccountsEnrolled = scala.Boolean
   type Message = java.lang.String
+  type MetadataKey = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.Cpu_
     - typings.awsSdk.awsSdkStrings.Memory_
@@ -68,6 +165,7 @@ package object computeoptimizerMod {
   type ProjectedMetrics = js.Array[typings.awsSdk.computeoptimizerMod.ProjectedMetric]
   type ProjectedUtilizationMetrics = js.Array[typings.awsSdk.computeoptimizerMod.UtilizationMetric]
   type Rank = scala.Double
+  type RecommendationExportJobs = js.Array[typings.awsSdk.computeoptimizerMod.RecommendationExportJob]
   type RecommendationOptions = js.Array[typings.awsSdk.computeoptimizerMod.InstanceRecommendationOption]
   type RecommendationSourceArn = java.lang.String
   /* Rewritten from type alias, can be one of: 
@@ -80,6 +178,12 @@ package object computeoptimizerMod {
   type RecommendationSummaries = js.Array[typings.awsSdk.computeoptimizerMod.RecommendationSummary]
   type RecommendedInstanceType = java.lang.String
   type RecommendedOptionProjectedMetrics = js.Array[typings.awsSdk.computeoptimizerMod.RecommendedOptionProjectedMetric]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.Ec2Instance_
+    - typings.awsSdk.awsSdkStrings.AutoScalingGroup
+    - java.lang.String
+  */
+  type ResourceType = typings.awsSdk.computeoptimizerMod._ResourceType | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.Active_
     - typings.awsSdk.awsSdkStrings.Inactive_

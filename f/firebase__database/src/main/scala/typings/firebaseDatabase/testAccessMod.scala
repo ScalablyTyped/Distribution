@@ -1,8 +1,8 @@
 package typings.firebaseDatabase
 
-import org.scalablytyped.runtime.Instantiable5
 import org.scalablytyped.runtime.Instantiable6
 import org.scalablytyped.runtime.Instantiable7
+import org.scalablytyped.runtime.Instantiable8
 import typings.firebaseDatabase.authTokenProviderMod.AuthTokenProvider
 import typings.firebaseDatabase.connectionMod.Connection
 import typings.firebaseDatabase.persistentConnectionMod.PersistentConnection
@@ -20,10 +20,12 @@ object testAccessMod extends js.Object {
     /**
       * @implements {ServerActions}
       * @param repoInfo_ Data about the namespace we are connecting to
+      * @param applicationId_ The Firebase App ID for this project
       * @param onDataUpdate_ A callback for new data from the server
       */
     def this(
       repoInfo_ : RepoInfo,
+      applicationId_ : String,
       onDataUpdate_ : js.Function4[/* a */ String, /* b */ js.Any, /* c */ Boolean, /* d */ Double | Null, Unit],
       onConnectStatus_ : js.Function1[/* a */ Boolean, Unit],
       onServerInfoUpdate_ : js.Function1[/* a */ js.Any, Unit],
@@ -31,6 +33,7 @@ object testAccessMod extends js.Object {
     ) = this()
     def this(
       repoInfo_ : RepoInfo,
+      applicationId_ : String,
       onDataUpdate_ : js.Function4[/* a */ String, /* b */ js.Any, /* c */ Boolean, /* d */ Double | Null, Unit],
       onConnectStatus_ : js.Function1[/* a */ Boolean, Unit],
       onServerInfoUpdate_ : js.Function1[/* a */ js.Any, Unit],
@@ -48,9 +51,10 @@ object testAccessMod extends js.Object {
     js.UndefOr[/* includeNamespaceInQueryParams */ Boolean], 
     RepoInfo
   ] = js.native
-  val RealTimeConnection: Instantiable7[
+  val RealTimeConnection: Instantiable8[
     /* id */ String, 
     /* repoInfo_ */ RepoInfo, 
+    js.UndefOr[/* applicationId_ */ String], 
     /* onMessage_ */ js.Function1[/* a */ js.Object, Unit], 
     /* onReady_ */ js.Function2[/* a */ Double, /* b */ String, Unit], 
     /* onDisconnect_ */ js.Function0[Unit], 
@@ -63,16 +67,18 @@ object testAccessMod extends js.Object {
   def queryIdentifier(query: Query): String = js.native
   @js.native
   object DataConnection
-    extends Instantiable5[
+    extends Instantiable6[
           /* repoInfo_ */ RepoInfo, 
+          /* applicationId_ */ String, 
           /* onDataUpdate_ */ js.Function4[/* a */ String, /* b */ js.Any, /* c */ Boolean, Double | Null, Unit], 
           /* onConnectStatus_ */ js.Function1[/* a */ Boolean, Unit], 
           /* onServerInfoUpdate_ */ js.Function1[/* a */ js.Any, Unit], 
           /* authTokenProvider_ */ AuthTokenProvider, 
           PersistentConnection
         ]
-       with Instantiable6[
+       with Instantiable7[
           /* repoInfo_ */ RepoInfo, 
+          /* applicationId_ */ String, 
           /* onDataUpdate_ */ js.Function4[/* a */ String, /* b */ js.Any, /* c */ Boolean, /* d */ Double | Null, Unit], 
           /* onConnectStatus_ */ js.Function1[/* a */ Boolean, Unit], 
           /* onServerInfoUpdate_ */ js.Function1[/* a */ js.Any, Unit], 

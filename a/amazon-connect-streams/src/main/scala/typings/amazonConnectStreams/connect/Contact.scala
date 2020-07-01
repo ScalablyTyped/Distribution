@@ -1,182 +1,213 @@
 package typings.amazonConnectStreams.connect
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.amazonConnectStreams.anon.Label
+import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * The Contact API provides event subscription methods and action methods which can be called on behalf of a specific contact.
+  * Contacts come and go and so should these API objects.
+  * It is good practice not to persist these objects or keep them as internal state.
+  * If you need to, store the `contactId` of the contact and make sure that the contact still exists by fetching it from the `Agent` API object before calling methods on it.
+  */
+@js.native
 trait Contact extends js.Object {
+  /** The unique contactId of this contact. */
+  val contactId: String = js.native
   /**
     * Accept an incoming contact.
     *
-    * @param successFailOptions Optional success and failure callbacks can be provided to determine whether the operation was successful.
+    * @param callbacks Success and failure callbacks to determine whether the operation was successful.
     */
-  def accept(successFailOptions: SuccessFailOptions): Unit
+  def accept(): Unit = js.native
+  def accept(callbacks: SuccessFailOptions): Unit = js.native
   /**
-    * Add a new outbound third-party connection to this contact and connect
-    * it to the specified endpoint.
+    * Add a new outbound third-party connection to this contact and connect it to the specified endpoint.
     *
     * @param endpoint The endpoint to add.
-    * @param successFailOptions Optional success and failure callbacks can be provided to determine whether the operation was successful.
+    * @param callbacks Success and failure callbacks to determine whether the operation was successful.
     */
-  def addConnection(endpoint: Endpoint, successFailOptions: SuccessFailOptions): Unit
+  def addConnection(endpoint: Endpoint): Unit = js.native
+  def addConnection(endpoint: Endpoint, callbacks: SuccessFailOptions): Unit = js.native
+  /**
+    * This is an API that completes this contact entirely.
+    * That means that this should only be used for non-monitoring agent connections.
+    *
+    * @param callbacks Success and failure callbacks to determine whether the operation was successful.
+    */
+  def complete(): Unit = js.native
+  def complete(callbacks: SuccessFailOptions): Unit = js.native
   /**
     * Conference together the active connections of the conversation.
+    * This operation is only valid if there is at least one third-party connection and the initial connection is still connected.
     *
-    * @param successFailOptions Optional success and failure callbacks can be provided to determine whether the operation was successful.
+    * @param callbacks Success and failure callbacks to determine whether the operation was successful.
     */
-  def conferenceConnections(successFailOptions: SuccessFailOptions): Unit
+  def conferenceConnections(): Unit = js.native
+  def conferenceConnections(callbacks: SuccessFailOptions): Unit = js.native
   /**
     * Close the contact and all of its associated connections.
+    * If the contact is a voice contact, and there is a third-party, the customer remains bridged with the third party and will not be disconnected from the call.
+    * Otherwise, the agent and customer are disconnected.
     *
-    * @param successFailOptions Optional success and failure callbacks can be provided to determine whether the operation was successful.
+    * @param callbacks Success and failure callbacks to determine whether the operation was successful.
     */
-  def destroy(successFailOptions: SuccessFailOptions): Unit
+  def destroy(): Unit = js.native
+  def destroy(callbacks: SuccessFailOptions): Unit = js.native
+  /** Get the inital connection of the contact, or null if the initial connection is no longer active. */
+  def getActiveInitialConnection(): BaseConnection | Null = js.native
   /**
-    * Get the inital connection of the contact, or null if the initial connection
-    * is no longer active.
+    * Gets the agent connection.
+    * This is the connection that represents the agent's participation in the contact.
     */
-  def getActiveInitialConnection(): Connection
+  def getAgentConnection(): BaseConnection = js.native
+  /** Gets a map of the attributes associated with the contact. */
+  def getAttributes(): AttributeDictionary = js.native
+  /** Get a list containing `Connection` API objects for each connection in the contact. */
+  def getConnections(): js.Array[BaseConnection] = js.native
+  /** Get the unique contactId of this contact. */
+  def getContactId(): String = js.native
   /**
-    * Gets the agent connection. This is the connection that represents the agent's
-    * participation in the contact.
+    * Returns a formatted string with the contact event and ID.
+    *
+    * @param event The event to format.
     */
-  def getAgentConnection(): Connection
+  def getEventName(event: ContactEvents): String = js.native
+  /** Get the initial connection of the contact. */
+  def getInitialConnection(): BaseConnection = js.native
+  /** Alias for `getOriginalContactId()`. */
+  def getInitialContactId(): String = js.native
   /**
-    * Get a map from attribute name to value for each attribute associated with the contact.
+    * Get the original (initial) contact id from which this contact was transferred, or none if this is not an internal Connect transfer.
+    * This is typically a contact owned by another agent, thus this agent will not be able to manipulate it.
+    * It is for reference and association purposes only, and can be used to share data between transferred contacts externally if it is linked by originalContactId.
     */
-  def getAttributes(): StringDictionary[Label]
-  /**
-    * Get a list containing Connection API objects for each connection in the contact.
-    */
-  def getConnections(): js.Array[Connection]
-  /**
-    * Get the unique contactId of this contact.
-    */
-  def getContactId(): String
-  /**
-    * Get the initial connection of the contact.
-    */
-  def getInitialConnection(): Connection
-  /**
-    * Get the original contact id from which this contact was transferred,
-    * or none if this is not an internal Connect transfer.
-    */
-  def getOriginalContactId(): String
-  /**
-    * Get the queue associated with the contact.
-    */
-  def getQueue(): Queue
+  def getOriginalContactId(): String = js.native
+  /** Get the queue associated with the contact. */
+  def getQueue(): Queue = js.native
+  /** Gets the timestamp associated with when the contact was placed in the queue. */
+  def getQueueTimestamp(): Date = js.native
   /**
     * In Voice contacts, there can only be one active third-party connection.
-    * This method returns the single active third-party connection, or null if
-    * there are no currently active third-party connections.
+    * This method returns the single active third-party connection, or null if there are no currently active third-party connections.
     */
-  def getSingleActiveThirdPartyConnection(): Connection
-  /**
-    * Get a ContactState object representing the state of the contact.
-    */
-  def getStatus(): ContactState
+  def getSingleActiveThirdPartyConnection(): BaseConnection | Null = js.native
+  /** Get a ContactState object representing the state of the contact. */
+  def getStatus(): ContactState = js.native
   /**
     * Get the duration of the contact state in milliseconds relative to local time.
+    * This takes into account time skew between the JS client and the Amazon Connect backend servers.
     */
-  def getStatusDuration(): Double
+  def getStatusDuration(): Double = js.native
+  /** Get a list of all of the third-party connections, i.e. the list of all connections except for the initial connection, or an empty list if there are no third-party connections. */
+  def getThirdPartyConnections(): js.Array[BaseConnection] = js.native
   /**
-    * Get a list of all of the third-party connections, i.e. the list of all
-    * connections except for the initial connection, or an empty list if there
-    * are no third-party connections.
+    * Get the type of the contact.
+    * This indicates what type of media is carried over the connections of the contact.
     */
-  def getThirdPartyConnections(): Connection
-  /**
-    * Get the type of the contact. This indicates what type of media is
-    * carried over the connections of the contact.
-    */
-  def getType(): String
+  def getType(): ContactType = js.native
   /**
     * Determine whether the contact is in a connected state.
+    * Note that contacts no longer exist once they have been removed.
+    * To detect these instances, subscribe to the `contact.onEnded()` event for the contact.
     */
-  def isConnected(): Boolean
+  def isConnected(): Boolean = js.native
+  /** Determine whether this is an inbound or outbound contact. */
+  def isInbound(): Boolean = js.native
+  /** Determine whether this contact is a softphone call.  */
+  def isSoftphoneCall(): Boolean = js.native
   /**
-    * Determine whether this is an inbound or outbound contact.
-    */
-  def isInbound(): Boolean
-  /*
-    * Determine whether this contact is a softphone call.
-    */
-  def isSoftphoneCall(): Boolean
-  /**
-    * Provide diagnostic information for the contact in the case
-    * something exceptional happens on the front end.
+    * Provide diagnostic information for the contact in the case something exceptional happens on the front end.
+    * The Streams logs will be published along with the issue code and description provided here.
     *
-    * @param successFailOptions Optional success and failure callbacks can be provided to determine whether the operation was successful.
+    * @param issueCode An arbitrary issue code to associate with the diagnostic report.
+    * @param description A description to associate with the diagnostic report.
+    * @param callbacks Success and failure callbacks to determine whether the operation was successful.
     */
-  def notifyIssue(successFailOptions: SuccessFailOptions): Unit
+  def notifyIssue(issueCode: String, description: String): Unit = js.native
+  def notifyIssue(issueCode: String, description: String, callbacks: SuccessFailOptions): Unit = js.native
+  /**
+    * Subscribe a method to be invoked whenever the contact enters the ACW state.
+    * This is after the connection has been closed, but before the contact is destroyed.
+    *
+    * @param callback A callback to receive the `Contact` API object instance.
+    */
+  def onACW(callback: ContactCallback): Unit = js.native
   /**
     * Subscribe a method to be invoked whenever the contact is accepted.
+    *
+    * @param callback A callback to receive the `Contact` API object instance.
     */
-  def onAccepted(callback: ContactCallback): Unit
+  def onAccepted(callback: ContactCallback): Unit = js.native
   /**
     * Subscribe a method to be invoked when the contact is connected.
+    *
+    * @param callback A callback to receive the `Contact` API object instance.
     */
-  def onConnected(callback: ContactCallback): Unit
+  def onConnected(callback: ContactCallback): Unit = js.native
   /**
     * Subscribe a method to be invoked when the contact is connecting.
+    * This works with chat and softphone contacts.
+    * This event happens when a call or chat comes in, before accepting (there is an exception for queue callbacks, in which onConnecting's handler is executed after the callback is accepted).
+    * Note that once the contact has been accepted, the `onAccepted` handler will be triggered.
+    *
+    * @param callback A callback to receive the `Contact` API object instance.
     */
-  def onConnecting(callback: ContactCallback): Unit
+  def onConnecting(callback: ContactCallback): Unit = js.native
+  /**
+    * Subscribe a method to be invoked whenever the contact is destroyed.
+    *
+    * @param callback A callback to receive the `Contact` API object instance.
+    */
+  def onDestroy(callback: ContactCallback): Unit = js.native
   /**
     * Subscribe a method to be invoked whenever the contact is ended or destroyed.
+    * This could be due to the conversation being ended by the agent, or due to the contact being missed.
+    * Call `contact.getState()` to determine the state of the contact and take appropriate action.
+    *
+    * @param callback A callback to receive the `Contact` API object instance.
     */
-  def onEnded(callback: ContactCallback): Unit
+  def onEnded(callback: ContactCallback): Unit = js.native
   /**
-    * Subscribe a method to be invoked when the contact is incoming.
+    * Subscribe a method to be invoked when a queue callback contact is incoming.
+    * In this state, the contact is waiting to be accepted if it is a softphone call or is waiting for the agent to answer if it is not a softphone call.
+    *
+    * @param callback A callback to receive the `Contact` API object instance.
     */
-  def onIncoming(callback: ContactCallback): Unit
+  def onIncoming(callback: ContactCallback): Unit = js.native
+  /**
+    * Subscribe a method to be invoked whenever the contact is missed.
+    * This is an event which is fired when a contact is put in state "missed" by the backend, which happens when the agent does not answer for a certain amount of time, when the agent rejects the call, or when the other participant hangs up before the agent can accept.
+    *
+    * @param callback A callback to receive the `Contact` API object instance.
+    */
+  def onMissed(callback: ContactCallback): Unit = js.native
+  /**
+    * Subscribe a method to be invoked when the contact is pending.
+    * This event is expected to occur before the connecting event.
+    *
+    * @param callback A callback to receive the `Contact` API object instance.
+    */
+  def onPending(callback: ContactCallback): Unit = js.native
   /**
     * Subscribe a method to be invoked whenever the contact is updated.
+    *
+    * @param callback A callback to receive the `Contact` API object instance.
     */
-  def onRefresh(callback: ContactCallback): Unit
+  def onRefresh(callback: ContactCallback): Unit = js.native
+  /**
+    * The data behind the `Contact` API object is ephemeral and changes whenever new data is provided.
+    * This method provides an opportunity to create a snapshot version of the `Contact` API object and save it for future use, such as adding to a log file or posting elsewhere.
+    */
+  def toSnapshot(): Contact = js.native
   /**
     * Rotate through the connected and on hold connections of the contact.
-    * @param successFailOptions Optional success and failure callbacks can be provided to determine whether the operation was successful.
+    * This operation is only valid if there is at least one third-party connection and the initial connection is still connected.
+    *
+    * @param callbacks Success and failure callbacks to determine whether the operation was successful.
     */
-  def toggleActiveConnections(successFailOptions: SuccessFailOptions): Unit
-}
-
-object Contact {
-  @scala.inline
-  def apply(
-    accept: SuccessFailOptions => Unit,
-    addConnection: (Endpoint, SuccessFailOptions) => Unit,
-    conferenceConnections: SuccessFailOptions => Unit,
-    destroy: SuccessFailOptions => Unit,
-    getActiveInitialConnection: () => Connection,
-    getAgentConnection: () => Connection,
-    getAttributes: () => StringDictionary[Label],
-    getConnections: () => js.Array[Connection],
-    getContactId: () => String,
-    getInitialConnection: () => Connection,
-    getOriginalContactId: () => String,
-    getQueue: () => Queue,
-    getSingleActiveThirdPartyConnection: () => Connection,
-    getStatus: () => ContactState,
-    getStatusDuration: () => Double,
-    getThirdPartyConnections: () => Connection,
-    getType: () => String,
-    isConnected: () => Boolean,
-    isInbound: () => Boolean,
-    isSoftphoneCall: () => Boolean,
-    notifyIssue: SuccessFailOptions => Unit,
-    onAccepted: ContactCallback => Unit,
-    onConnected: ContactCallback => Unit,
-    onConnecting: ContactCallback => Unit,
-    onEnded: ContactCallback => Unit,
-    onIncoming: ContactCallback => Unit,
-    onRefresh: ContactCallback => Unit,
-    toggleActiveConnections: SuccessFailOptions => Unit
-  ): Contact = {
-    val __obj = js.Dynamic.literal(accept = js.Any.fromFunction1(accept), addConnection = js.Any.fromFunction2(addConnection), conferenceConnections = js.Any.fromFunction1(conferenceConnections), destroy = js.Any.fromFunction1(destroy), getActiveInitialConnection = js.Any.fromFunction0(getActiveInitialConnection), getAgentConnection = js.Any.fromFunction0(getAgentConnection), getAttributes = js.Any.fromFunction0(getAttributes), getConnections = js.Any.fromFunction0(getConnections), getContactId = js.Any.fromFunction0(getContactId), getInitialConnection = js.Any.fromFunction0(getInitialConnection), getOriginalContactId = js.Any.fromFunction0(getOriginalContactId), getQueue = js.Any.fromFunction0(getQueue), getSingleActiveThirdPartyConnection = js.Any.fromFunction0(getSingleActiveThirdPartyConnection), getStatus = js.Any.fromFunction0(getStatus), getStatusDuration = js.Any.fromFunction0(getStatusDuration), getThirdPartyConnections = js.Any.fromFunction0(getThirdPartyConnections), getType = js.Any.fromFunction0(getType), isConnected = js.Any.fromFunction0(isConnected), isInbound = js.Any.fromFunction0(isInbound), isSoftphoneCall = js.Any.fromFunction0(isSoftphoneCall), notifyIssue = js.Any.fromFunction1(notifyIssue), onAccepted = js.Any.fromFunction1(onAccepted), onConnected = js.Any.fromFunction1(onConnected), onConnecting = js.Any.fromFunction1(onConnecting), onEnded = js.Any.fromFunction1(onEnded), onIncoming = js.Any.fromFunction1(onIncoming), onRefresh = js.Any.fromFunction1(onRefresh), toggleActiveConnections = js.Any.fromFunction1(toggleActiveConnections))
-    __obj.asInstanceOf[Contact]
-  }
+  def toggleActiveConnections(): Unit = js.native
+  def toggleActiveConnections(callbacks: SuccessFailOptions): Unit = js.native
 }
 

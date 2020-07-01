@@ -1,5 +1,6 @@
 package typings.rcPicker.rangePickerMod
 
+import typings.rcPicker.anon.Range
 import typings.rcPicker.generateMod.GenerateConfig
 import typings.rcPicker.interfaceMod.Components
 import typings.rcPicker.interfaceMod.DisabledTimes
@@ -134,7 +135,7 @@ object RangePickerProps {
     className: String = null,
     clearIcon: ReactNode = null,
     components: Components = null,
-    dateRender: (DateType, DateType) => ReactNode = null,
+    dateRender: (DateType, DateType, /* info */ Range) => ReactNode = null,
     defaultOpen: js.UndefOr[Boolean] = js.undefined,
     defaultPickerValue: js.Tuple2[DateType, DateType] = null,
     defaultValue: js.UndefOr[Null | RangeValue[DateType]] = js.undefined,
@@ -243,7 +244,7 @@ object RangePickerProps {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon.asInstanceOf[js.Any])
     if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
-    if (dateRender != null) __obj.updateDynamic("dateRender")(js.Any.fromFunction2(dateRender))
+    if (dateRender != null) __obj.updateDynamic("dateRender")(js.Any.fromFunction3(dateRender))
     if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen.get.asInstanceOf[js.Any])
     if (defaultPickerValue != null) __obj.updateDynamic("defaultPickerValue")(defaultPickerValue.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
@@ -353,7 +354,7 @@ object RangePickerProps {
     className: String = null,
     clearIcon: ReactNode = null,
     components: Components = null,
-    dateRender: (DateType, DateType) => ReactNode = null,
+    dateRender: (DateType, DateType, /* info */ Range) => ReactNode = null,
     defaultOpen: js.UndefOr[Boolean] = js.undefined,
     defaultPickerValue: js.Tuple2[DateType, DateType] = null,
     defaultValue: js.UndefOr[Null | RangeValue[DateType]] = js.undefined,
@@ -398,6 +399,7 @@ object RangePickerProps {
     renderExtraFooter: /* mode */ PanelMode => ReactNode = null,
     role: String = null,
     separator: ReactNode = null,
+    showNow: js.UndefOr[Boolean] = js.undefined,
     showTime: Boolean | RangeShowTimeObject[DateType] = null,
     style: CSSProperties = null,
     suffixIcon: ReactNode = null,
@@ -464,7 +466,7 @@ object RangePickerProps {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon.asInstanceOf[js.Any])
     if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
-    if (dateRender != null) __obj.updateDynamic("dateRender")(js.Any.fromFunction2(dateRender))
+    if (dateRender != null) __obj.updateDynamic("dateRender")(js.Any.fromFunction3(dateRender))
     if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen.get.asInstanceOf[js.Any])
     if (defaultPickerValue != null) __obj.updateDynamic("defaultPickerValue")(defaultPickerValue.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
@@ -506,6 +508,7 @@ object RangePickerProps {
     if (renderExtraFooter != null) __obj.updateDynamic("renderExtraFooter")(js.Any.fromFunction1(renderExtraFooter))
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNow)) __obj.updateDynamic("showNow")(showNow.get.asInstanceOf[js.Any])
     if (showTime != null) __obj.updateDynamic("showTime")(showTime.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (suffixIcon != null) __obj.updateDynamic("suffixIcon")(suffixIcon.asInstanceOf[js.Any])
@@ -577,7 +580,7 @@ object RangePickerProps {
     className: String = null,
     clearIcon: ReactNode = null,
     components: Components = null,
-    dateRender: (DateType, DateType) => ReactNode = null,
+    dateRender: (DateType, DateType, /* info */ Range) => ReactNode = null,
     defaultOpen: js.UndefOr[Boolean] = js.undefined,
     defaultOpenValue: DateType = null,
     defaultPickerValue: js.Tuple2[DateType, DateType] = null,
@@ -632,6 +635,7 @@ object RangePickerProps {
     separator: ReactNode = null,
     showHour: js.UndefOr[Boolean] = js.undefined,
     showMinute: js.UndefOr[Boolean] = js.undefined,
+    showNow: js.UndefOr[Boolean] = js.undefined,
     showSecond: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
     suffixIcon: ReactNode = null,
@@ -699,7 +703,7 @@ object RangePickerProps {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon.asInstanceOf[js.Any])
     if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
-    if (dateRender != null) __obj.updateDynamic("dateRender")(js.Any.fromFunction2(dateRender))
+    if (dateRender != null) __obj.updateDynamic("dateRender")(js.Any.fromFunction3(dateRender))
     if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen.get.asInstanceOf[js.Any])
     if (defaultOpenValue != null) __obj.updateDynamic("defaultOpenValue")(defaultOpenValue.asInstanceOf[js.Any])
     if (defaultPickerValue != null) __obj.updateDynamic("defaultPickerValue")(defaultPickerValue.asInstanceOf[js.Any])
@@ -751,6 +755,7 @@ object RangePickerProps {
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     if (!js.isUndefined(showHour)) __obj.updateDynamic("showHour")(showHour.get.asInstanceOf[js.Any])
     if (!js.isUndefined(showMinute)) __obj.updateDynamic("showMinute")(showMinute.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNow)) __obj.updateDynamic("showNow")(showNow.get.asInstanceOf[js.Any])
     if (!js.isUndefined(showSecond)) __obj.updateDynamic("showSecond")(showSecond.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (suffixIcon != null) __obj.updateDynamic("suffixIcon")(suffixIcon.asInstanceOf[js.Any])

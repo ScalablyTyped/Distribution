@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Name extends js.Object {
-  var color: js.UndefOr[String | Light] = js.undefined
+  var color: js.UndefOr[String | Dark] = js.undefined
   var name: Africa | Asia | Australia | Europe | (`North America`) | (`South America`)
   var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var onHover: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
@@ -21,7 +21,7 @@ object Name {
   @scala.inline
   def apply(
     name: Africa | Asia | Australia | Europe | (`North America`) | (`South America`),
-    color: String | Light = null,
+    color: String | Dark = null,
     onClick: /* repeated */ js.Any => _ = null,
     onHover: /* repeated */ js.Any => _ = null
   ): Name = {

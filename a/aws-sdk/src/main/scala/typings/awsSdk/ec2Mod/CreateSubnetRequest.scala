@@ -15,7 +15,7 @@ trait CreateSubnetRequest extends js.Object {
     */
   var AvailabilityZoneId: js.UndefOr[String] = js.native
   /**
-    * The IPv4 network range for the subnet, in CIDR notation. For example, 10.0.0.0/24.
+    * The IPv4 network range for the subnet, in CIDR notation. For example, 10.0.0.0/24. We modify the specified CIDR block to its canonical form; for example, if you specify 100.68.0.18/18, we modify it to 100.68.0.0/18.
     */
   var CidrBlock: String = js.native
   /**
@@ -31,6 +31,10 @@ trait CreateSubnetRequest extends js.Object {
     */
   var OutpostArn: js.UndefOr[String] = js.native
   /**
+    * The tags to assign to the subnet.
+    */
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
+  /**
     * The ID of the VPC.
     */
   var VpcId: typings.awsSdk.ec2Mod.VpcId = js.native
@@ -45,7 +49,8 @@ object CreateSubnetRequest {
     AvailabilityZoneId: String = null,
     DryRun: js.UndefOr[Boolean] = js.undefined,
     Ipv6CidrBlock: String = null,
-    OutpostArn: String = null
+    OutpostArn: String = null,
+    TagSpecifications: TagSpecificationList = null
   ): CreateSubnetRequest = {
     val __obj = js.Dynamic.literal(CidrBlock = CidrBlock.asInstanceOf[js.Any], VpcId = VpcId.asInstanceOf[js.Any])
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
@@ -53,6 +58,7 @@ object CreateSubnetRequest {
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (Ipv6CidrBlock != null) __obj.updateDynamic("Ipv6CidrBlock")(Ipv6CidrBlock.asInstanceOf[js.Any])
     if (OutpostArn != null) __obj.updateDynamic("OutpostArn")(OutpostArn.asInstanceOf[js.Any])
+    if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSubnetRequest]
   }
 }

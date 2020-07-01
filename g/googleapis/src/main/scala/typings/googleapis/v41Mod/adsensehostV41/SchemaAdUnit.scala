@@ -1,7 +1,7 @@
 package typings.googleapis.v41Mod.adsensehostV41
 
-import typings.googleapis.AnonBackupOption
-import typings.googleapis.AnonMarkupLanguage
+import typings.googleapis.anon.BackupOption
+import typings.googleapis.anon.MarkupLanguage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait SchemaAdUnit extends js.Object {
     * Settings specific to content ads (AFC) and highend mobile content ads
     * (AFMC - deprecated).
     */
-  var contentAdsSettings: js.UndefOr[AnonBackupOption] = js.native
+  var contentAdsSettings: js.UndefOr[BackupOption] = js.native
   /**
     * Custom style information specific to this ad unit.
     */
@@ -33,7 +33,7 @@ trait SchemaAdUnit extends js.Object {
   /**
     * Settings specific to WAP mobile content ads (AFMC - deprecated).
     */
-  var mobileContentAdsSettings: js.UndefOr[AnonMarkupLanguage] = js.native
+  var mobileContentAdsSettings: js.UndefOr[MarkupLanguage] = js.native
   /**
     * Name of this ad unit.
     */
@@ -52,11 +52,11 @@ object SchemaAdUnit {
   @scala.inline
   def apply(
     code: String = null,
-    contentAdsSettings: AnonBackupOption = null,
+    contentAdsSettings: BackupOption = null,
     customStyle: SchemaAdStyle = null,
     id: String = null,
     kind: String = null,
-    mobileContentAdsSettings: AnonMarkupLanguage = null,
+    mobileContentAdsSettings: MarkupLanguage = null,
     name: String = null,
     status: String = null
   ): SchemaAdUnit = {

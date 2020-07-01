@@ -22,10 +22,12 @@ import typings.ionicReact.ionicReactStrings.grammar
 import typings.ionicReact.ionicReactStrings.grid
 import typings.ionicReact.ionicReactStrings.horizontal
 import typings.ionicReact.ionicReactStrings.inherit
+import typings.ionicReact.ionicReactStrings.ios
 import typings.ionicReact.ionicReactStrings.link
 import typings.ionicReact.ionicReactStrings.list
 import typings.ionicReact.ionicReactStrings.listbox
 import typings.ionicReact.ionicReactStrings.location
+import typings.ionicReact.ionicReactStrings.md
 import typings.ionicReact.ionicReactStrings.menu
 import typings.ionicReact.ionicReactStrings.mixed
 import typings.ionicReact.ionicReactStrings.move
@@ -185,6 +187,10 @@ trait IonMenuButtonPickHTMLAttr extends js.Object {
     * Optional property that maps to a Menu's `menuId` prop. Can also be `start` or `end` for the menu side. This is used to find the correct menu to toggle
     */
   var menu: js.UndefOr[String] = js.undefined
+  /**
+    * The mode determines which platform styles to use.
+    */
+  var mode: js.UndefOr[ios | md] = js.undefined
   var onAbort: js.UndefOr[ReactEventHandler[HTMLIonMenuButtonElement]] = js.undefined
   var onAbortCapture: js.UndefOr[js.Any] = js.undefined
   var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLIonMenuButtonElement]] = js.undefined
@@ -454,6 +460,7 @@ object IonMenuButtonPickHTMLAttr {
     key: Key = null,
     lang: String = null,
     menu: String = null,
+    mode: ios | md = null,
     onAbort: SyntheticEvent[HTMLIonMenuButtonElement, Event] => Unit = null,
     onAbortCapture: js.Any = null,
     onAnimationEnd: AnimationEvent[HTMLIonMenuButtonElement] => Unit = null,
@@ -626,8 +633,7 @@ object IonMenuButtonPickHTMLAttr {
     slot: String = null,
     spellCheck: js.UndefOr[Booleanish] = js.undefined,
     style: StringDictionary[js.Any] = null,
-    suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined,
-    suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
+    suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
   ): IonMenuButtonPickHTMLAttr = {
     val __obj = js.Dynamic.literal()
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
@@ -710,6 +716,7 @@ object IonMenuButtonPickHTMLAttr {
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
     if (onAbortCapture != null) __obj.updateDynamic("onAbortCapture")(onAbortCapture.asInstanceOf[js.Any])
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
@@ -883,7 +890,6 @@ object IonMenuButtonPickHTMLAttr {
     if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (!js.isUndefined(suppressContentEditableWarning)) __obj.updateDynamic("suppressContentEditableWarning")(suppressContentEditableWarning.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonMenuButtonPickHTMLAttr]
   }
 }

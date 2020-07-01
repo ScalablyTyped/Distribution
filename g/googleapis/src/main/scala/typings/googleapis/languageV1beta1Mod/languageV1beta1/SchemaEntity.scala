@@ -46,14 +46,14 @@ object SchemaEntity {
     mentions: js.Array[SchemaEntityMention] = null,
     metadata: StringDictionary[String] = null,
     name: String = null,
-    salience: Int | Double = null,
+    salience: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): SchemaEntity = {
     val __obj = js.Dynamic.literal()
     if (mentions != null) __obj.updateDynamic("mentions")(mentions.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (salience != null) __obj.updateDynamic("salience")(salience.asInstanceOf[js.Any])
+    if (!js.isUndefined(salience)) __obj.updateDynamic("salience")(salience.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEntity]
   }

@@ -18,10 +18,10 @@ trait SchemaOrdersCustomBatchRequestEntryCreateTestReturnReturnItem extends js.O
 
 object SchemaOrdersCustomBatchRequestEntryCreateTestReturnReturnItem {
   @scala.inline
-  def apply(lineItemId: String = null, quantity: Int | Double = null): SchemaOrdersCustomBatchRequestEntryCreateTestReturnReturnItem = {
+  def apply(lineItemId: String = null, quantity: js.UndefOr[Double] = js.undefined): SchemaOrdersCustomBatchRequestEntryCreateTestReturnReturnItem = {
     val __obj = js.Dynamic.literal()
     if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOrdersCustomBatchRequestEntryCreateTestReturnReturnItem]
   }
 }

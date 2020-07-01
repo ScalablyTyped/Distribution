@@ -38,6 +38,7 @@ package object macie2Mod {
     - typings.awsSdk.awsSdkStrings.NONE
     - typings.awsSdk.awsSdkStrings.AES256
     - typings.awsSdk.awsSdkStrings.awsColonkms
+    - typings.awsSdk.awsSdkStrings.UNKNOWN
     - java.lang.String
   */
   type EncryptionType = typings.awsSdk.macie2Mod._EncryptionType | java.lang.String
@@ -124,7 +125,7 @@ package object macie2Mod {
   type KeyValuePairList = js.Array[typings.awsSdk.macie2Mod.KeyValuePair]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.jobType
-    - typings.awsSdk.awsSdkStrings.jobStatus
+    - typings.awsSdk.awsSdkStrings.jobStatus_
     - typings.awsSdk.awsSdkStrings.createdAt_
     - typings.awsSdk.awsSdkStrings.name__
     - java.lang.String
@@ -132,7 +133,7 @@ package object macie2Mod {
   type ListJobsFilterKey = typings.awsSdk.macie2Mod._ListJobsFilterKey | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.createdAt_
-    - typings.awsSdk.awsSdkStrings.jobStatus
+    - typings.awsSdk.awsSdkStrings.jobStatus_
     - typings.awsSdk.awsSdkStrings.name__
     - typings.awsSdk.awsSdkStrings.jobType
     - java.lang.String

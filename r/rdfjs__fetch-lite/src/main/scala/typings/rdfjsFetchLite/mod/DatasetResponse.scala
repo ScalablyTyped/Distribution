@@ -20,7 +20,7 @@ trait DatasetResponse[D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: Bas
 
 object DatasetResponse {
   @scala.inline
-  def apply[D, OutQuad, InQuad](
+  def apply[/* <: typings.rdfJs.mod.DatasetCore[OutQuad, InQuad] */ D, /* <: typings.rdfJs.mod.BaseQuad */ OutQuad, /* <: typings.rdfJs.mod.BaseQuad */ InQuad](
     arrayBuffer: () => js.Promise[ArrayBuffer],
     blob: () => js.Promise[Blob],
     bodyUsed: Boolean,

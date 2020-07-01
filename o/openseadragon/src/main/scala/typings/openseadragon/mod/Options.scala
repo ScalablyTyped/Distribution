@@ -72,8 +72,12 @@ trait Options extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   var imageLoaderLimit: js.UndefOr[Double] = js.undefined
   var imageSmoothingEnabled: js.UndefOr[Boolean] = js.undefined
-  var initialPage: js.UndefOr[Boolean] = js.undefined
-  var inmediateRender: js.UndefOr[Boolean] = js.undefined
+  var immediateRender: js.UndefOr[Boolean] = js.undefined
+  /**
+    * If sequenceMode is true, display this page initially.
+    * @default 0
+    */
+  var initialPage: js.UndefOr[Double] = js.undefined
   var loadTilesWithAjax: js.UndefOr[Boolean] = js.undefined
   var maxImageCacheCount: js.UndefOr[Double] = js.undefined
   var maxZoomLevel: js.UndefOr[Double] = js.undefined
@@ -123,6 +127,7 @@ trait Options extends js.Object {
   var referenceStripWidth: js.UndefOr[Double] = js.undefined
   var rotateLeftButton: js.UndefOr[String] = js.undefined
   var rotateRightButton: js.UndefOr[String] = js.undefined
+  var rotationIncrement: js.UndefOr[Double] = js.undefined
   var sequenceControlAnchor: js.UndefOr[ControlAnchor] = js.undefined
   var sequenceMode: js.UndefOr[Boolean] = js.undefined
   var showFlipControl: js.UndefOr[Boolean] = js.undefined
@@ -193,8 +198,8 @@ object Options {
     id: String = null,
     imageLoaderLimit: js.UndefOr[Double] = js.undefined,
     imageSmoothingEnabled: js.UndefOr[Boolean] = js.undefined,
-    initialPage: js.UndefOr[Boolean] = js.undefined,
-    inmediateRender: js.UndefOr[Boolean] = js.undefined,
+    immediateRender: js.UndefOr[Boolean] = js.undefined,
+    initialPage: js.UndefOr[Double] = js.undefined,
     loadTilesWithAjax: js.UndefOr[Boolean] = js.undefined,
     maxImageCacheCount: js.UndefOr[Double] = js.undefined,
     maxZoomLevel: js.UndefOr[Double] = js.undefined,
@@ -244,6 +249,7 @@ object Options {
     referenceStripWidth: js.UndefOr[Double] = js.undefined,
     rotateLeftButton: String = null,
     rotateRightButton: String = null,
+    rotationIncrement: js.UndefOr[Double] = js.undefined,
     sequenceControlAnchor: ControlAnchor = null,
     sequenceMode: js.UndefOr[Boolean] = js.undefined,
     showFlipControl: js.UndefOr[Boolean] = js.undefined,
@@ -311,8 +317,8 @@ object Options {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (!js.isUndefined(imageLoaderLimit)) __obj.updateDynamic("imageLoaderLimit")(imageLoaderLimit.get.asInstanceOf[js.Any])
     if (!js.isUndefined(imageSmoothingEnabled)) __obj.updateDynamic("imageSmoothingEnabled")(imageSmoothingEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(immediateRender)) __obj.updateDynamic("immediateRender")(immediateRender.get.asInstanceOf[js.Any])
     if (!js.isUndefined(initialPage)) __obj.updateDynamic("initialPage")(initialPage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(inmediateRender)) __obj.updateDynamic("inmediateRender")(inmediateRender.get.asInstanceOf[js.Any])
     if (!js.isUndefined(loadTilesWithAjax)) __obj.updateDynamic("loadTilesWithAjax")(loadTilesWithAjax.get.asInstanceOf[js.Any])
     if (!js.isUndefined(maxImageCacheCount)) __obj.updateDynamic("maxImageCacheCount")(maxImageCacheCount.get.asInstanceOf[js.Any])
     if (!js.isUndefined(maxZoomLevel)) __obj.updateDynamic("maxZoomLevel")(maxZoomLevel.get.asInstanceOf[js.Any])
@@ -362,6 +368,7 @@ object Options {
     if (!js.isUndefined(referenceStripWidth)) __obj.updateDynamic("referenceStripWidth")(referenceStripWidth.get.asInstanceOf[js.Any])
     if (rotateLeftButton != null) __obj.updateDynamic("rotateLeftButton")(rotateLeftButton.asInstanceOf[js.Any])
     if (rotateRightButton != null) __obj.updateDynamic("rotateRightButton")(rotateRightButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotationIncrement)) __obj.updateDynamic("rotationIncrement")(rotationIncrement.get.asInstanceOf[js.Any])
     if (sequenceControlAnchor != null) __obj.updateDynamic("sequenceControlAnchor")(sequenceControlAnchor.asInstanceOf[js.Any])
     if (!js.isUndefined(sequenceMode)) __obj.updateDynamic("sequenceMode")(sequenceMode.get.asInstanceOf[js.Any])
     if (!js.isUndefined(showFlipControl)) __obj.updateDynamic("showFlipControl")(showFlipControl.get.asInstanceOf[js.Any])

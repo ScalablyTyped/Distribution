@@ -14,7 +14,7 @@ trait IPaymentMethodListOptions[T /* <: IPaymentMethodType */] extends IListOpti
 
 object IPaymentMethodListOptions {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.stripe.mod.paymentMethods.IPaymentMethodType */ T](
     customer: String,
     `type`: T,
     ending_before: String = null,

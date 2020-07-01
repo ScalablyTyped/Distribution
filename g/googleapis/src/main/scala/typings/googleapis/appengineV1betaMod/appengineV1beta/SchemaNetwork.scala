@@ -63,7 +63,7 @@ object SchemaNetwork {
     if (forwardedPorts != null) __obj.updateDynamic("forwardedPorts")(forwardedPorts.asInstanceOf[js.Any])
     if (instanceTag != null) __obj.updateDynamic("instanceTag")(instanceTag.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(sessionAffinity)) __obj.updateDynamic("sessionAffinity")(sessionAffinity.asInstanceOf[js.Any])
+    if (!js.isUndefined(sessionAffinity)) __obj.updateDynamic("sessionAffinity")(sessionAffinity.get.asInstanceOf[js.Any])
     if (subnetworkName != null) __obj.updateDynamic("subnetworkName")(subnetworkName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNetwork]
   }

@@ -19,7 +19,6 @@ import typings.objection.mod.Model
 import typings.objection.mod.ModelOptions
 import typings.objection.mod.Modifiers
 import typings.objection.mod.PartialModelObject
-import typings.objection.mod.QueryBuilderType
 import typings.objection.mod.RawBuilder
 import typings.objection.mod.RawFunction
 import typings.objection.mod.ReferenceBuilder
@@ -97,18 +96,18 @@ trait TypeofModel extends Instantiable0[Model] {
   def createNotFoundError(): Error = js.native
   def createValidationError(args: CreateValidationErrorArgs): Error = js.native
   def createValidator(): Validator = js.native
-  def fetchGraph[M /* <: Model */](modelOrObject: js.Array[PartialModelObject[M]], expression: RelationExpression[M]): QueryBuilderType[M] = js.native
+  def fetchGraph[M /* <: Model */](modelOrObject: js.Array[PartialModelObject[M]], expression: RelationExpression[M]): typings.objection.mod.QueryBuilderType[M] = js.native
   def fetchGraph[M /* <: Model */](
     modelOrObject: js.Array[PartialModelObject[M]],
     expression: RelationExpression[M],
     options: FetchGraphOptions
-  ): QueryBuilderType[M] = js.native
-  def fetchGraph[M /* <: Model */](modelOrObject: PartialModelObject[M], expression: RelationExpression[M]): SingleQueryBuilder[QueryBuilderType[M]] = js.native
+  ): typings.objection.mod.QueryBuilderType[M] = js.native
+  def fetchGraph[M /* <: Model */](modelOrObject: PartialModelObject[M], expression: RelationExpression[M]): SingleQueryBuilder[typings.objection.mod.QueryBuilderType[M]] = js.native
   def fetchGraph[M /* <: Model */](
     modelOrObject: PartialModelObject[M],
     expression: RelationExpression[M],
     options: FetchGraphOptions
-  ): SingleQueryBuilder[QueryBuilderType[M]] = js.native
+  ): SingleQueryBuilder[typings.objection.mod.QueryBuilderType[M]] = js.native
   def fetchTableMetadata(): js.Promise[TableMetadata] = js.native
   def fetchTableMetadata(opt: FetchTableMetadataOptions): js.Promise[TableMetadata] = js.native
   def fn(functionName: String, arguments: js.Any*): FunctionBuilder = js.native
@@ -121,37 +120,37 @@ trait TypeofModel extends Instantiable0[Model] {
   def knex(knex: Knex[_, js.Array[_]]): Knex[_, js.Array[_]] = js.native
   def knexQuery(): QueryBuilder[_, _] = js.native
   // Deprecated
-  def loadRelated[M /* <: Model */](modelOrObject: js.Array[PartialModelObject[M]], expression: RelationExpression[M]): QueryBuilderType[M] = js.native
+  def loadRelated[M /* <: Model */](modelOrObject: js.Array[PartialModelObject[M]], expression: RelationExpression[M]): typings.objection.mod.QueryBuilderType[M] = js.native
   def loadRelated[M /* <: Model */](
     modelOrObject: js.Array[PartialModelObject[M]],
     expression: RelationExpression[M],
-    modifiers: Modifiers[QueryBuilderType[M]]
-  ): QueryBuilderType[M] = js.native
+    modifiers: Modifiers[typings.objection.mod.QueryBuilderType[M]]
+  ): typings.objection.mod.QueryBuilderType[M] = js.native
   def loadRelated[M /* <: Model */](
     modelOrObject: js.Array[PartialModelObject[M]],
     expression: RelationExpression[M],
-    modifiers: Modifiers[QueryBuilderType[M]],
+    modifiers: Modifiers[typings.objection.mod.QueryBuilderType[M]],
     trxOrKnex: TransactionOrKnex
-  ): QueryBuilderType[M] = js.native
+  ): typings.objection.mod.QueryBuilderType[M] = js.native
   // Deprecated
-  def loadRelated[M /* <: Model */](modelOrObject: PartialModelObject[M], expression: RelationExpression[M]): SingleQueryBuilder[QueryBuilderType[M]] = js.native
+  def loadRelated[M /* <: Model */](modelOrObject: PartialModelObject[M], expression: RelationExpression[M]): SingleQueryBuilder[typings.objection.mod.QueryBuilderType[M]] = js.native
   def loadRelated[M /* <: Model */](
     modelOrObject: PartialModelObject[M],
     expression: RelationExpression[M],
-    modifiers: Modifiers[QueryBuilderType[M]]
-  ): SingleQueryBuilder[QueryBuilderType[M]] = js.native
+    modifiers: Modifiers[typings.objection.mod.QueryBuilderType[M]]
+  ): SingleQueryBuilder[typings.objection.mod.QueryBuilderType[M]] = js.native
   def loadRelated[M /* <: Model */](
     modelOrObject: PartialModelObject[M],
     expression: RelationExpression[M],
-    modifiers: Modifiers[QueryBuilderType[M]],
+    modifiers: Modifiers[typings.objection.mod.QueryBuilderType[M]],
     trxOrKnex: TransactionOrKnex
-  ): SingleQueryBuilder[QueryBuilderType[M]] = js.native
-  def query[M /* <: Model */](): QueryBuilderType[M] = js.native
-  def query[M /* <: Model */](trxOrKnex: TransactionOrKnex): QueryBuilderType[M] = js.native
+  ): SingleQueryBuilder[typings.objection.mod.QueryBuilderType[M]] = js.native
+  def query[M /* <: Model */](): typings.objection.mod.QueryBuilderType[M] = js.native
+  def query[M /* <: Model */](trxOrKnex: TransactionOrKnex): typings.objection.mod.QueryBuilderType[M] = js.native
   def raw(sql: String, bindings: js.Any*): RawBuilder = js.native
   def ref(expression: String): ReferenceBuilder = js.native
-  def relatedQuery[RM /* <: Model */](relationName: String): QueryBuilderType[RM] = js.native
-  def relatedQuery[RM /* <: Model */](relationName: String, trxOrKnex: TransactionOrKnex): QueryBuilderType[RM] = js.native
+  def relatedQuery[RM /* <: Model */](relationName: String): typings.objection.mod.QueryBuilderType[RM] = js.native
+  def relatedQuery[RM /* <: Model */](relationName: String, trxOrKnex: TransactionOrKnex): typings.objection.mod.QueryBuilderType[RM] = js.native
   def relatedQuery[M /* <: Model */, K /* <: /* keyof M */ String */](relationName: K): ArrayRelatedQueryBuilder[
     /* import warning: importer.ImportType#apply Failed type conversion: M[K] */ js.Any
   ] = js.native

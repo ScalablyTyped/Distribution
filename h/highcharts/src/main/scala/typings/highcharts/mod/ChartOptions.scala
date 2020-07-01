@@ -115,7 +115,7 @@ trait ChartOptions extends js.Object {
     * functions as an index into the `Highcharts.maps` array. Otherwise it is
     * interpreted as map data.
     */
-  var map: js.UndefOr[String | js.Array[_]] = js.undefined
+  var map: js.UndefOr[String | GeoJSON | js.Array[_]] = js.undefined
   /**
     * (Highmaps) Set lat/lon transformation definitions for the chart. If not
     * defined, these are extracted from the map data.
@@ -399,7 +399,7 @@ object ChartOptions {
     height: js.UndefOr[Null | Double | String] = js.undefined,
     ignoreHiddenSeries: js.UndefOr[Boolean] = js.undefined,
     inverted: js.UndefOr[Boolean] = js.undefined,
-    map: String | js.Array[_] = null,
+    map: String | GeoJSON | js.Array[_] = null,
     mapTransforms: js.Any = null,
     margin: Double | js.Array[Double] = null,
     marginBottom: js.UndefOr[Double] = js.undefined,

@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashUpdate extends js.Object {
+trait LodashUpdate extends LodashConvertible {
   def apply(path: PropertyPath): LodashUpdate1x1 = js.native
   def apply(path: PropertyPath, updater: js.Function1[/* value */ js.Any, _]): LodashUpdate1x3 = js.native
   def apply(path: PropertyPath, updater: js.Function1[/* value */ js.Any, _], `object`: js.Object): js.Any = js.native

@@ -12,7 +12,7 @@ trait UseExpandedHooks[D /* <: js.Object */] extends js.Object {
 
 object UseExpandedHooks {
   @scala.inline
-  def apply[D](
+  def apply[/* <: js.Object */ D](
     getToggleAllRowsExpandedProps: js.Array[PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps]],
     getToggleRowsExpandedProps: js.Array[PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps]]
   ): UseExpandedHooks[D] = {

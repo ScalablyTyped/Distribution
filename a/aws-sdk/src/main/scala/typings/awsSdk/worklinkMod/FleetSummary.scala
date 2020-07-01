@@ -15,11 +15,11 @@ trait FleetSummary extends js.Object {
     */
   var CreatedTime: js.UndefOr[DateTime] = js.native
   /**
-    * The name to display.
+    * The name of the fleet to display.
     */
   var DisplayName: js.UndefOr[typings.awsSdk.worklinkMod.DisplayName] = js.native
   /**
-    * The ARN of the fleet.
+    * The Amazon Resource Name (ARN) of the fleet.
     */
   var FleetArn: js.UndefOr[typings.awsSdk.worklinkMod.FleetArn] = js.native
   /**
@@ -34,6 +34,10 @@ trait FleetSummary extends js.Object {
     * The time when the fleet was last updated.
     */
   var LastUpdatedTime: js.UndefOr[DateTime] = js.native
+  /**
+    * The tags attached to the resource. A tag is a key-value pair.
+    */
+  var Tags: js.UndefOr[TagMap] = js.native
 }
 
 object FleetSummary {
@@ -45,7 +49,8 @@ object FleetSummary {
     FleetArn: FleetArn = null,
     FleetName: FleetName = null,
     FleetStatus: FleetStatus = null,
-    LastUpdatedTime: DateTime = null
+    LastUpdatedTime: DateTime = null,
+    Tags: TagMap = null
   ): FleetSummary = {
     val __obj = js.Dynamic.literal()
     if (CompanyCode != null) __obj.updateDynamic("CompanyCode")(CompanyCode.asInstanceOf[js.Any])
@@ -55,6 +60,7 @@ object FleetSummary {
     if (FleetName != null) __obj.updateDynamic("FleetName")(FleetName.asInstanceOf[js.Any])
     if (FleetStatus != null) __obj.updateDynamic("FleetStatus")(FleetStatus.asInstanceOf[js.Any])
     if (LastUpdatedTime != null) __obj.updateDynamic("LastUpdatedTime")(LastUpdatedTime.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[FleetSummary]
   }
 }

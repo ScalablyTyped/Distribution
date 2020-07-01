@@ -45,13 +45,13 @@ object SchemaConfigurationStatus {
     conditions: js.Array[SchemaConfigurationCondition] = null,
     latestCreatedRevisionName: String = null,
     latestReadyRevisionName: String = null,
-    observedGeneration: Int | Double = null
+    observedGeneration: js.UndefOr[Double] = js.undefined
   ): SchemaConfigurationStatus = {
     val __obj = js.Dynamic.literal()
     if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
     if (latestCreatedRevisionName != null) __obj.updateDynamic("latestCreatedRevisionName")(latestCreatedRevisionName.asInstanceOf[js.Any])
     if (latestReadyRevisionName != null) __obj.updateDynamic("latestReadyRevisionName")(latestReadyRevisionName.asInstanceOf[js.Any])
-    if (observedGeneration != null) __obj.updateDynamic("observedGeneration")(observedGeneration.asInstanceOf[js.Any])
+    if (!js.isUndefined(observedGeneration)) __obj.updateDynamic("observedGeneration")(observedGeneration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaConfigurationStatus]
   }
 }

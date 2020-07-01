@@ -1,7 +1,10 @@
 package typings.reactNavigationStack.vendorTypesMod
 
 import typings.react.mod.ReactNode
+import typings.reactNative.mod.Animated.WithAnimatedValue
 import typings.reactNative.mod.LayoutChangeEvent
+import typings.reactNative.mod.StyleProp
+import typings.reactNative.mod.TextStyle
 import typings.reactNavigationStack.anon.TintColorString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,9 +39,7 @@ trait StackHeaderLeftButtonProps extends js.Object {
   /**
     * Style object for the label.
     */
-  var labelStyle: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react-native.react-native.Animated.AnimatedComponent<new (): react-native.react-native.Text>>['style'] */ js.Any
-  ] = js.undefined
+  var labelStyle: js.UndefOr[WithAnimatedValue[StyleProp[TextStyle]]] = js.undefined
   /**
     * Whether the label text is visible.
     * Defaults to `true` on iOS and `false` on Android.
@@ -84,7 +85,7 @@ object StackHeaderLeftButtonProps {
     canGoBack: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     label: String = null,
-    labelStyle: /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react-native.react-native.Animated.AnimatedComponent<new (): react-native.react-native.Text>>['style'] */ js.Any = null,
+    labelStyle: WithAnimatedValue[StyleProp[TextStyle]] = null,
     labelVisible: js.UndefOr[Boolean] = js.undefined,
     onLabelLayout: /* e */ LayoutChangeEvent => Unit = null,
     onPress: () => Unit = null,

@@ -1053,8 +1053,17 @@ trait Collection[TSchema /* <: StringDictionary[js.Any] */] extends js.Object {
     options: UpdateOneOptions,
     callback: MongoCallback[UpdateWriteOpResult]
   ): Unit = js.native
-  /** http://mongodb.github.io/node-mongodb-native/3.3/api/Collection.html#watch */
+  /**
+    * @param pipeline - an array of
+    * {@link https://docs.mongodb.com/manual/reference/operator/aggregation-pipeline/ aggregation pipeline stages}
+    * through which to pass change stream documents. This allows for filtering (using `$match`) and manipulating
+    * the change stream documents.
+    *
+    * @param options - optional settings
+    * @see http://mongodb.github.io/node-mongodb-native/3.6/api/Collection.html#watch
+    */
   def watch[T](): ChangeStream[T] = js.native
+  def watch[T](options: ChangeStreamOptionssessio): ChangeStream[T] = js.native
   def watch[T](pipeline: js.Array[js.Object]): ChangeStream[T] = js.native
   def watch[T](pipeline: js.Array[js.Object], options: ChangeStreamOptionssessio): ChangeStream[T] = js.native
 }

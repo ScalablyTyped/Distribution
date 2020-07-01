@@ -47,9 +47,9 @@ object SchemaUsageRule {
     skipServiceControl: js.UndefOr[Boolean] = js.undefined
   ): SchemaUsageRule = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowUnregisteredCalls)) __obj.updateDynamic("allowUnregisteredCalls")(allowUnregisteredCalls.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowUnregisteredCalls)) __obj.updateDynamic("allowUnregisteredCalls")(allowUnregisteredCalls.get.asInstanceOf[js.Any])
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipServiceControl)) __obj.updateDynamic("skipServiceControl")(skipServiceControl.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipServiceControl)) __obj.updateDynamic("skipServiceControl")(skipServiceControl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUsageRule]
   }
 }

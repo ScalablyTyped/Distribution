@@ -6,16 +6,18 @@ import scala.scalajs.js.annotation._
 
 /**
   * Possible sources of results. `bookmarks`: The result comes from the user's bookmarks. `history`: The result
-  * comes from the user's history. `search`: The result comes from a search engine. `tabs`: The result is an open
-  * tab in the browser or a synced tab from another device.
+  * comes from the user's history. `local`: The result comes from some local source not covered by another source
+  * type. `network`: The result comes from some network source not covered by another source type. `search`: The
+  * result comes from a search engine. `tabs`: The result is an open tab in the browser or a synced tab from another
+  * device.
   */
 /* Rewritten from type alias, can be one of: 
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmarks
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.history
-  - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.search
-  - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tabs
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.local
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.network
+  - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.search
+  - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tabs
 */
 trait SourceType extends js.Object
 

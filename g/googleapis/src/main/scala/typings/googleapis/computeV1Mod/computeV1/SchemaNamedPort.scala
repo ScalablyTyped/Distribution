@@ -22,10 +22,10 @@ trait SchemaNamedPort extends js.Object {
 
 object SchemaNamedPort {
   @scala.inline
-  def apply(name: String = null, port: Int | Double = null): SchemaNamedPort = {
+  def apply(name: String = null, port: js.UndefOr[Double] = js.undefined): SchemaNamedPort = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNamedPort]
   }
 }

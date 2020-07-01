@@ -1,6 +1,6 @@
 package typings.googleapis.v1managementMod.gamesManagementV1management
 
-import typings.googleapis.AnonFamilyName
+import typings.googleapis.anon.FamilyName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,7 +45,7 @@ trait SchemaPlayer extends js.Object {
     * An object representation of the individual components of the player&#39;s
     * name. For some players, these fields may not be present.
     */
-  var name: js.UndefOr[AnonFamilyName] = js.native
+  var name: js.UndefOr[FamilyName] = js.native
   /**
     * The player ID that was used for this player the first time they signed
     * into the game in question. This is only populated for calls to player.get
@@ -78,7 +78,7 @@ object SchemaPlayer {
     experienceInfo: SchemaGamesPlayerExperienceInfoResource = null,
     kind: String = null,
     lastPlayedWith: SchemaGamesPlayedResource = null,
-    name: AnonFamilyName = null,
+    name: FamilyName = null,
     originalPlayerId: String = null,
     playerId: String = null,
     profileSettings: SchemaProfileSettings = null,

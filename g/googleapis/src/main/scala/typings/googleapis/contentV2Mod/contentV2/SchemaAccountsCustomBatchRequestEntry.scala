@@ -51,7 +51,7 @@ object SchemaAccountsCustomBatchRequestEntry {
   def apply(
     account: SchemaAccount = null,
     accountId: String = null,
-    batchId: Int | Double = null,
+    batchId: js.UndefOr[Double] = js.undefined,
     force: js.UndefOr[Boolean] = js.undefined,
     linkRequest: SchemaAccountsCustomBatchRequestEntryLinkRequest = null,
     merchantId: String = null,
@@ -61,12 +61,12 @@ object SchemaAccountsCustomBatchRequestEntry {
     val __obj = js.Dynamic.literal()
     if (account != null) __obj.updateDynamic("account")(account.asInstanceOf[js.Any])
     if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchId)) __obj.updateDynamic("batchId")(batchId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
     if (linkRequest != null) __obj.updateDynamic("linkRequest")(linkRequest.asInstanceOf[js.Any])
     if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAccountsCustomBatchRequestEntry]
   }
 }

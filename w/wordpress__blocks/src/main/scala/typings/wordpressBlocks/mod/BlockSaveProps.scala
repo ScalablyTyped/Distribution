@@ -11,7 +11,7 @@ trait BlockSaveProps[T /* <: Record[String, _] */] extends js.Object {
 
 object BlockSaveProps {
   @scala.inline
-  def apply[T](attributes: T): BlockSaveProps[T] = {
+  def apply[/* <: typings.std.Record[java.lang.String, _] */ T](attributes: T): BlockSaveProps[T] = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockSaveProps[T]]
   }

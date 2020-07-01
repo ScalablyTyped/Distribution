@@ -13,7 +13,7 @@ trait Data[T /* <: Resource */] extends js.Object {
 
 object Data {
   @scala.inline
-  def apply[T](data: js.Array[T], next_page: NextPage = null): Data[T] = {
+  def apply[/* <: typings.asana.mod.resources.Resource */ T](data: js.Array[T], next_page: NextPage = null): Data[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     if (next_page != null) __obj.updateDynamic("next_page")(next_page.asInstanceOf[js.Any])
     __obj.asInstanceOf[Data[T]]

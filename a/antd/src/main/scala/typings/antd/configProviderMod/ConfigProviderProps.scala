@@ -22,6 +22,7 @@ trait ConfigProviderProps extends js.Object {
   var componentSize: js.UndefOr[SizeType] = js.undefined
   var csp: js.UndefOr[CSPConfig] = js.undefined
   var direction: js.UndefOr[ltr | rtl] = js.undefined
+  var dropdownMatchSelectWidth: js.UndefOr[Boolean] = js.undefined
   var form: js.UndefOr[ValidateMessages] = js.undefined
   var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.undefined
   var getTargetContainer: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
@@ -31,6 +32,7 @@ trait ConfigProviderProps extends js.Object {
   var prefixCls: js.UndefOr[String] = js.undefined
   var renderEmpty: js.UndefOr[RenderEmptyHandler] = js.undefined
   var space: js.UndefOr[Size] = js.undefined
+  var virtual: js.UndefOr[Boolean] = js.undefined
 }
 
 object ConfigProviderProps {
@@ -41,6 +43,7 @@ object ConfigProviderProps {
     componentSize: SizeType = null,
     csp: CSPConfig = null,
     direction: ltr | rtl = null,
+    dropdownMatchSelectWidth: js.UndefOr[Boolean] = js.undefined,
     form: ValidateMessages = null,
     getPopupContainer: /* triggerNode */ HTMLElement => HTMLElement = null,
     getTargetContainer: () => HTMLElement = null,
@@ -49,7 +52,8 @@ object ConfigProviderProps {
     pageHeader: Ghost = null,
     prefixCls: String = null,
     renderEmpty: /* componentName */ js.UndefOr[String] => ReactNode = null,
-    space: Size = null
+    space: Size = null,
+    virtual: js.UndefOr[Boolean] = js.undefined
   ): ConfigProviderProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoInsertSpaceInButton)) __obj.updateDynamic("autoInsertSpaceInButton")(autoInsertSpaceInButton.get.asInstanceOf[js.Any])
@@ -57,6 +61,7 @@ object ConfigProviderProps {
     if (componentSize != null) __obj.updateDynamic("componentSize")(componentSize.asInstanceOf[js.Any])
     if (csp != null) __obj.updateDynamic("csp")(csp.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropdownMatchSelectWidth)) __obj.updateDynamic("dropdownMatchSelectWidth")(dropdownMatchSelectWidth.get.asInstanceOf[js.Any])
     if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (getTargetContainer != null) __obj.updateDynamic("getTargetContainer")(js.Any.fromFunction0(getTargetContainer))
@@ -66,6 +71,7 @@ object ConfigProviderProps {
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (renderEmpty != null) __obj.updateDynamic("renderEmpty")(js.Any.fromFunction1(renderEmpty))
     if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
+    if (!js.isUndefined(virtual)) __obj.updateDynamic("virtual")(virtual.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigProviderProps]
   }
 }

@@ -49,5 +49,6 @@ object mod extends js.Object {
     callback: js.Function1[/* ev */ TEvent, Unit],
     useCapture: Boolean
   ): Unit = js.native
+  def usePrevious[T](value: T): js.UndefOr[T] = js.native
 }
 

@@ -33,6 +33,7 @@ import typings.antd.paginationPaginationMod.PaginationPosition
 import typings.antd.progressProgressMod.ProgressSize
 import typings.antd.progressProgressMod.ProgressType
 import typings.antd.radioInterfaceMod.RadioGroupButtonStyle
+import typings.antd.radioInterfaceMod.RadioGroupOptionType
 import typings.antd.responsiveObserveMod.Breakpoint
 import typings.antd.resultMod.ExceptionStatusType
 import typings.antd.resultMod.ResultStatusType
@@ -43,6 +44,7 @@ import typings.antd.spinMod.SpinSize
 import typings.antd.statisticUtilsMod._Formatter
 import typings.antd.switchMod.SwitchSize
 import typings.antd.tableInterfaceMod.RowSelectionType
+import typings.antd.tableInterfaceMod.TableAction
 import typings.antd.tableInterfaceMod.TablePaginationPosition
 import typings.antd.tableInterfaceMod._ExpandType
 import typings.antd.tableInterfaceMod._SortOrder
@@ -66,10 +68,13 @@ object antdStrings {
   sealed trait `404` extends ExceptionStatusType
   
   @js.native
-  sealed trait `4Dot2Dot4` extends js.Object
+  sealed trait `4Dot4Dot0` extends js.Object
   
   @js.native
   sealed trait `500` extends ExceptionStatusType
+  
+  @js.native
+  sealed trait PATCH extends js.Object
   
   @js.native
   sealed trait POST extends js.Object
@@ -109,12 +114,6 @@ object antdStrings {
   
   @js.native
   sealed trait alternate extends js.Object
-  
-  @js.native
-  sealed trait `ant-click-animating` extends js.Object
-  
-  @js.native
-  sealed trait `ant-click-animating-without-extra-node` extends js.Object
   
   @js.native
   sealed trait `aria-activedescendant` extends js.Object
@@ -322,7 +321,9 @@ object antdStrings {
   sealed trait butt extends js.Object
   
   @js.native
-  sealed trait button extends ButtonHTMLType
+  sealed trait button
+    extends ButtonHTMLType
+       with RadioGroupOptionType
   
   @js.native
   sealed trait cancel extends js.Object
@@ -341,9 +342,6 @@ object antdStrings {
   
   @js.native
   sealed trait checkedKeys extends js.Object
-  
-  @js.native
-  sealed trait children extends js.Object
   
   @js.native
   sealed trait circle
@@ -427,6 +425,7 @@ object antdStrings {
        with CardSize
        with ListSize
        with ProgressSize
+       with RadioGroupOptionType
        with SpinSize
        with SwitchSize
   
@@ -515,6 +514,9 @@ object antdStrings {
   
   @js.native
   sealed trait file extends js.Object
+  
+  @js.native
+  sealed trait filter extends TableAction
   
   @js.native
   sealed trait finish extends js.Object
@@ -812,10 +814,16 @@ object antdStrings {
   sealed trait page extends js.Object
   
   @js.native
+  sealed trait paginate extends TableAction
+  
+  @js.native
   sealed trait part extends js.Object
   
   @js.native
   sealed trait password extends js.Object
+  
+  @js.native
+  sealed trait patch_ extends js.Object
   
   @js.native
   sealed trait picker extends js.Object
@@ -953,6 +961,9 @@ object antdStrings {
   sealed trait showMinute extends js.Object
   
   @js.native
+  sealed trait showNow extends js.Object
+  
+  @js.native
   sealed trait showSecond extends js.Object
   
   @js.native
@@ -982,7 +993,7 @@ object antdStrings {
   sealed trait solid extends RadioGroupButtonStyle
   
   @js.native
-  sealed trait sourceSelectedKeys extends js.Object
+  sealed trait sort extends TableAction
   
   @js.native
   sealed trait `space-around` extends js.Object
@@ -1035,13 +1046,12 @@ object antdStrings {
   sealed trait tags extends js.Object
   
   @js.native
-  sealed trait targetSelectedKeys extends js.Object
-  
-  @js.native
   sealed trait tel extends js.Object
   
   @js.native
-  sealed trait text extends UploadListType
+  sealed trait text
+    extends ButtonType
+       with UploadListType
   
   @js.native
   sealed trait time extends js.Object
@@ -1088,9 +1098,6 @@ object antdStrings {
   
   @js.native
   sealed trait use12Hours extends js.Object
-  
-  @js.native
-  sealed trait validateMessages extends js.Object
   
   @js.native
   sealed trait validating extends ValidateStatus
@@ -1156,9 +1163,11 @@ object antdStrings {
   @scala.inline
   def `404`: `404` = "404".asInstanceOf[`404`]
   @scala.inline
-  def `4Dot2Dot4`: `4Dot2Dot4` = "4.2.4".asInstanceOf[`4Dot2Dot4`]
+  def `4Dot4Dot0`: `4Dot4Dot0` = "4.4.0".asInstanceOf[`4Dot4Dot0`]
   @scala.inline
   def `500`: `500` = "500".asInstanceOf[`500`]
+  @scala.inline
+  def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
   @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
   @scala.inline
@@ -1185,10 +1194,6 @@ object antdStrings {
   def allowClear: allowClear = "allowClear".asInstanceOf[allowClear]
   @scala.inline
   def alternate: alternate = "alternate".asInstanceOf[alternate]
-  @scala.inline
-  def `ant-click-animating`: `ant-click-animating` = "ant-click-animating".asInstanceOf[`ant-click-animating`]
-  @scala.inline
-  def `ant-click-animating-without-extra-node`: `ant-click-animating-without-extra-node` = "ant-click-animating-without-extra-node".asInstanceOf[`ant-click-animating-without-extra-node`]
   @scala.inline
   def `aria-activedescendant`: `aria-activedescendant` = "aria-activedescendant".asInstanceOf[`aria-activedescendant`]
   @scala.inline
@@ -1330,8 +1335,6 @@ object antdStrings {
   @scala.inline
   def checkedKeys: checkedKeys = "checkedKeys".asInstanceOf[checkedKeys]
   @scala.inline
-  def children: children = "children".asInstanceOf[children]
-  @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
   @scala.inline
   def `circle-outline`: `circle-outline` = "circle-outline".asInstanceOf[`circle-outline`]
@@ -1431,6 +1434,8 @@ object antdStrings {
   def fade: fade = "fade".asInstanceOf[fade]
   @scala.inline
   def file: file = "file".asInstanceOf[file]
+  @scala.inline
+  def filter: filter = "filter".asInstanceOf[filter]
   @scala.inline
   def finish: finish = "finish".asInstanceOf[finish]
   @scala.inline
@@ -1610,9 +1615,13 @@ object antdStrings {
   @scala.inline
   def page: page = "page".asInstanceOf[page]
   @scala.inline
+  def paginate: paginate = "paginate".asInstanceOf[paginate]
+  @scala.inline
   def part: part = "part".asInstanceOf[part]
   @scala.inline
   def password: password = "password".asInstanceOf[password]
+  @scala.inline
+  def patch_ : patch_ = "patch".asInstanceOf[patch_]
   @scala.inline
   def picker: picker = "picker".asInstanceOf[picker]
   @scala.inline
@@ -1698,6 +1707,8 @@ object antdStrings {
   @scala.inline
   def showMinute: showMinute = "showMinute".asInstanceOf[showMinute]
   @scala.inline
+  def showNow: showNow = "showNow".asInstanceOf[showNow]
+  @scala.inline
   def showSecond: showSecond = "showSecond".asInstanceOf[showSecond]
   @scala.inline
   def showTime: showTime = "showTime".asInstanceOf[showTime]
@@ -1712,7 +1723,7 @@ object antdStrings {
   @scala.inline
   def solid: solid = "solid".asInstanceOf[solid]
   @scala.inline
-  def sourceSelectedKeys: sourceSelectedKeys = "sourceSelectedKeys".asInstanceOf[sourceSelectedKeys]
+  def sort: sort = "sort".asInstanceOf[sort]
   @scala.inline
   def `space-around`: `space-around` = "space-around".asInstanceOf[`space-around`]
   @scala.inline
@@ -1744,8 +1755,6 @@ object antdStrings {
   @scala.inline
   def tags: tags = "tags".asInstanceOf[tags]
   @scala.inline
-  def targetSelectedKeys: targetSelectedKeys = "targetSelectedKeys".asInstanceOf[targetSelectedKeys]
-  @scala.inline
   def tel: tel = "tel".asInstanceOf[tel]
   @scala.inline
   def text: text = "text".asInstanceOf[text]
@@ -1769,8 +1778,6 @@ object antdStrings {
   def url: url = "url".asInstanceOf[url]
   @scala.inline
   def use12Hours: use12Hours = "use12Hours".asInstanceOf[use12Hours]
-  @scala.inline
-  def validateMessages: validateMessages = "validateMessages".asInstanceOf[validateMessages]
   @scala.inline
   def validating: validating = "validating".asInstanceOf[validating]
   @scala.inline

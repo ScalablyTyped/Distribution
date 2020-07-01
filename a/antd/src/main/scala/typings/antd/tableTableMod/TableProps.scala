@@ -36,7 +36,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined parent std.Omit<rc-table.rc-table/lib/Table.TableProps<RecordType>, 'transformColumns' | 'internalHooks' | 'internalRefs' | 'data' | 'columns' | 'scroll'> */
+/* Inlined parent std.Omit<rc-table.rc-table/lib/Table.TableProps<RecordType>, 'transformColumns' | 'internalHooks' | 'internalRefs' | 'data' | 'columns' | 'scroll' | 'emptyText'> */
 trait TableProps[RecordType] extends js.Object {
   var bordered: js.UndefOr[Boolean] = js.undefined
   var children: js.UndefOr[ReactNode] = js.undefined
@@ -49,7 +49,6 @@ trait TableProps[RecordType] extends js.Object {
   var defaultExpandedRowKeys: js.UndefOr[js.Array[Key]] = js.undefined
   var direction: js.UndefOr[ltr | rtl] = js.undefined
   var dropdownPrefixCls: js.UndefOr[String] = js.undefined
-  var emptyText: js.UndefOr[ReactNode | js.Function0[ReactNode]] = js.undefined
   var expandIcon: js.UndefOr[RenderExpandIcon[RecordType]] = js.undefined
   var expandIconColumnIndex: js.UndefOr[Double] = js.undefined
   var expandRowByClick: js.UndefOr[Boolean] = js.undefined
@@ -106,7 +105,6 @@ object TableProps {
     defaultExpandedRowKeys: js.Array[Key] = null,
     direction: ltr | rtl = null,
     dropdownPrefixCls: String = null,
-    emptyText: ReactNode | js.Function0[ReactNode] = null,
     expandIcon: /* props */ RenderExpandIconProps[RecordType] => ReactNode = null,
     expandIconColumnIndex: js.UndefOr[Double] = js.undefined,
     expandRowByClick: js.UndefOr[Boolean] = js.undefined,
@@ -152,7 +150,6 @@ object TableProps {
     if (defaultExpandedRowKeys != null) __obj.updateDynamic("defaultExpandedRowKeys")(defaultExpandedRowKeys.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (dropdownPrefixCls != null) __obj.updateDynamic("dropdownPrefixCls")(dropdownPrefixCls.asInstanceOf[js.Any])
-    if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText.asInstanceOf[js.Any])
     if (expandIcon != null) __obj.updateDynamic("expandIcon")(js.Any.fromFunction1(expandIcon))
     if (!js.isUndefined(expandIconColumnIndex)) __obj.updateDynamic("expandIconColumnIndex")(expandIconColumnIndex.get.asInstanceOf[js.Any])
     if (!js.isUndefined(expandRowByClick)) __obj.updateDynamic("expandRowByClick")(expandRowByClick.get.asInstanceOf[js.Any])

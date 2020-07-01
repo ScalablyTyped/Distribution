@@ -34,13 +34,13 @@ object SchemaVoice {
   def apply(
     languageCodes: js.Array[String] = null,
     name: String = null,
-    naturalSampleRateHertz: Int | Double = null,
+    naturalSampleRateHertz: js.UndefOr[Double] = js.undefined,
     ssmlGender: String = null
   ): SchemaVoice = {
     val __obj = js.Dynamic.literal()
     if (languageCodes != null) __obj.updateDynamic("languageCodes")(languageCodes.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (naturalSampleRateHertz != null) __obj.updateDynamic("naturalSampleRateHertz")(naturalSampleRateHertz.asInstanceOf[js.Any])
+    if (!js.isUndefined(naturalSampleRateHertz)) __obj.updateDynamic("naturalSampleRateHertz")(naturalSampleRateHertz.get.asInstanceOf[js.Any])
     if (ssmlGender != null) __obj.updateDynamic("ssmlGender")(ssmlGender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVoice]
   }

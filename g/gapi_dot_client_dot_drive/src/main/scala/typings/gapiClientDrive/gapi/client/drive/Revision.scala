@@ -1,10 +1,17 @@
 package typings.gapiClientDrive.gapi.client.drive
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Revision extends js.Object {
+  /** Links for exporting Google Docs to specific formats. */
+  var exportLinks: js.UndefOr[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: string}
+    */ typings.gapiClientDrive.gapiClientDriveStrings.Revision with TopLevel[js.Any]
+  ] = js.undefined
   /** The ID of the revision. */
   var id: js.UndefOr[String] = js.undefined
   /**
@@ -38,6 +45,9 @@ trait Revision extends js.Object {
 object Revision {
   @scala.inline
   def apply(
+    exportLinks: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: string}
+    */ typings.gapiClientDrive.gapiClientDriveStrings.Revision with TopLevel[js.Any] = null,
     id: String = null,
     keepForever: js.UndefOr[Boolean] = js.undefined,
     kind: String = null,
@@ -52,6 +62,7 @@ object Revision {
     size: String = null
   ): Revision = {
     val __obj = js.Dynamic.literal()
+    if (exportLinks != null) __obj.updateDynamic("exportLinks")(exportLinks.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (!js.isUndefined(keepForever)) __obj.updateDynamic("keepForever")(keepForever.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])

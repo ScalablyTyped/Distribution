@@ -12,7 +12,7 @@ trait EmptyInfiniteNonEmpty[Holder /* <: js.Array[_] */, Tuple /* <: js.Array[_]
 
 object EmptyInfiniteNonEmpty {
   @scala.inline
-  def apply[Holder, Tuple](empty: Holder, infinite: js.Any, nonEmpty: js.Any): EmptyInfiniteNonEmpty[Holder, Tuple] = {
+  def apply[/* <: js.Array[_] */ Holder, /* <: js.Array[_] */ Tuple](empty: Holder, infinite: js.Any, nonEmpty: js.Any): EmptyInfiniteNonEmpty[Holder, Tuple] = {
     val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any], infinite = infinite.asInstanceOf[js.Any], nonEmpty = nonEmpty.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmptyInfiniteNonEmpty[Holder, Tuple]]
   }

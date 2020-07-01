@@ -1,5 +1,7 @@
 package typings.ionicCore.componentsMod.LocalJSX
 
+import typings.ionicCore.animationInterfaceMod.Animation
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.interfaceMod.RouterDirection
 import typings.ionicCore.ionicCoreStrings.block
 import typings.ionicCore.ionicCoreStrings.button
@@ -67,6 +69,10 @@ trait IonButton extends js.Object {
     */
   var rel: js.UndefOr[String] = js.undefined
   /**
+    * When using a router, it specifies the transition animation when navigating to another page using `href`.
+    */
+  var routerAnimation: js.UndefOr[AnimationBuilder] = js.undefined
+  /**
     * When using a router, it specifies the transition direction when navigating to another page using `href`.
     */
   var routerDirection: js.UndefOr[RouterDirection] = js.undefined
@@ -106,6 +112,7 @@ object IonButton {
     onIonBlur: /* event */ CustomEvent[Unit] => Unit = null,
     onIonFocus: /* event */ CustomEvent[Unit] => Unit = null,
     rel: String = null,
+    routerAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     routerDirection: RouterDirection = null,
     shape: round = null,
     size: small | default | large = null,
@@ -125,6 +132,7 @@ object IonButton {
     if (onIonBlur != null) __obj.updateDynamic("onIonBlur")(js.Any.fromFunction1(onIonBlur))
     if (onIonFocus != null) __obj.updateDynamic("onIonFocus")(js.Any.fromFunction1(onIonFocus))
     if (rel != null) __obj.updateDynamic("rel")(rel.asInstanceOf[js.Any])
+    if (routerAnimation != null) __obj.updateDynamic("routerAnimation")(js.Any.fromFunction2(routerAnimation))
     if (routerDirection != null) __obj.updateDynamic("routerDirection")(routerDirection.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

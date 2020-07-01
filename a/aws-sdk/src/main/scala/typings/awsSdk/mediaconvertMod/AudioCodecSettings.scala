@@ -39,6 +39,14 @@ trait AudioCodecSettings extends js.Object {
     */
   var Mp3Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.Mp3Settings] = js.native
   /**
+    * Required when you set Codec, under AudioDescriptions>CodecSettings, to the value OPUS.
+    */
+  var OpusSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.OpusSettings] = js.native
+  /**
+    * Required when you set Codec, under AudioDescriptions>CodecSettings, to the value Vorbis.
+    */
+  var VorbisSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.VorbisSettings] = js.native
+  /**
     * Required when you set (Codec) under (AudioDescriptions)>(CodecSettings) to the value WAV.
     */
   var WavSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.WavSettings] = js.native
@@ -55,6 +63,8 @@ object AudioCodecSettings {
     Eac3Settings: Eac3Settings = null,
     Mp2Settings: Mp2Settings = null,
     Mp3Settings: Mp3Settings = null,
+    OpusSettings: OpusSettings = null,
+    VorbisSettings: VorbisSettings = null,
     WavSettings: WavSettings = null
   ): AudioCodecSettings = {
     val __obj = js.Dynamic.literal()
@@ -66,6 +76,8 @@ object AudioCodecSettings {
     if (Eac3Settings != null) __obj.updateDynamic("Eac3Settings")(Eac3Settings.asInstanceOf[js.Any])
     if (Mp2Settings != null) __obj.updateDynamic("Mp2Settings")(Mp2Settings.asInstanceOf[js.Any])
     if (Mp3Settings != null) __obj.updateDynamic("Mp3Settings")(Mp3Settings.asInstanceOf[js.Any])
+    if (OpusSettings != null) __obj.updateDynamic("OpusSettings")(OpusSettings.asInstanceOf[js.Any])
+    if (VorbisSettings != null) __obj.updateDynamic("VorbisSettings")(VorbisSettings.asInstanceOf[js.Any])
     if (WavSettings != null) __obj.updateDynamic("WavSettings")(WavSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioCodecSettings]
   }

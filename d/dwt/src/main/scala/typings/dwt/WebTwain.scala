@@ -1369,6 +1369,8 @@ trait WebTwain extends js.Object {
     * @param {number} iHeight the height of the image.
     * @return {string}
     */
+  def GetImageURL(index: Double): String = js.native
+  def GetImageURL(index: Double, iWidth: Double): String = js.native
   def GetImageURL(index: Double, iWidth: Double, iHeight: Double): String = js.native
   /**
     * Returns the width (pixels) of the selected image. This is a read-only property.

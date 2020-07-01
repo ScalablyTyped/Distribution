@@ -12,10 +12,10 @@ trait SchemaNodeGroupAutoscalingPolicy extends js.Object {
 
 object SchemaNodeGroupAutoscalingPolicy {
   @scala.inline
-  def apply(maxSize: Int | Double = null, minSize: Int | Double = null): SchemaNodeGroupAutoscalingPolicy = {
+  def apply(maxSize: js.UndefOr[Double] = js.undefined, minSize: js.UndefOr[Double] = js.undefined): SchemaNodeGroupAutoscalingPolicy = {
     val __obj = js.Dynamic.literal()
-    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
-    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSize)) __obj.updateDynamic("maxSize")(maxSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSize)) __obj.updateDynamic("minSize")(minSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNodeGroupAutoscalingPolicy]
   }
 }

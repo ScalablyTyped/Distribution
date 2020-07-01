@@ -53,22 +53,22 @@ trait SchemaAggregateClassificationMetrics extends js.Object {
 object SchemaAggregateClassificationMetrics {
   @scala.inline
   def apply(
-    accuracy: Int | Double = null,
-    f1Score: Int | Double = null,
-    logLoss: Int | Double = null,
-    precision: Int | Double = null,
-    recall: Int | Double = null,
-    rocAuc: Int | Double = null,
-    threshold: Int | Double = null
+    accuracy: js.UndefOr[Double] = js.undefined,
+    f1Score: js.UndefOr[Double] = js.undefined,
+    logLoss: js.UndefOr[Double] = js.undefined,
+    precision: js.UndefOr[Double] = js.undefined,
+    recall: js.UndefOr[Double] = js.undefined,
+    rocAuc: js.UndefOr[Double] = js.undefined,
+    threshold: js.UndefOr[Double] = js.undefined
   ): SchemaAggregateClassificationMetrics = {
     val __obj = js.Dynamic.literal()
-    if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
-    if (f1Score != null) __obj.updateDynamic("f1Score")(f1Score.asInstanceOf[js.Any])
-    if (logLoss != null) __obj.updateDynamic("logLoss")(logLoss.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (recall != null) __obj.updateDynamic("recall")(recall.asInstanceOf[js.Any])
-    if (rocAuc != null) __obj.updateDynamic("rocAuc")(rocAuc.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(accuracy)) __obj.updateDynamic("accuracy")(accuracy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(f1Score)) __obj.updateDynamic("f1Score")(f1Score.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(logLoss)) __obj.updateDynamic("logLoss")(logLoss.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(recall)) __obj.updateDynamic("recall")(recall.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rocAuc)) __obj.updateDynamic("rocAuc")(rocAuc.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAggregateClassificationMetrics]
   }
 }

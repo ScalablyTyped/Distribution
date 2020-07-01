@@ -10,7 +10,7 @@ trait IsEquivalent[T /* <: /* import warning: importer.ImportType#apply Failed t
 
 object IsEquivalent {
   @scala.inline
-  def apply[T](isEquivalent: T => Boolean): IsEquivalent[T] = {
+  def apply[/* <: / * import warning: importer.ImportType#apply Failed type conversion: {isEquivalent (other : T): boolean} * / js.Any */ T](isEquivalent: T => Boolean): IsEquivalent[T] = {
     val __obj = js.Dynamic.literal(isEquivalent = js.Any.fromFunction1(isEquivalent))
     __obj.asInstanceOf[IsEquivalent[T]]
   }

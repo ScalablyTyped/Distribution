@@ -15,7 +15,7 @@ trait StopInstancesRequest extends js.Object {
     */
   var Force: js.UndefOr[Boolean] = js.native
   /**
-    * Hibernates the instance if the instance was enabled for hibernation at launch. If the instance cannot hibernate successfully, a normal shutdown occurs. For more information, see Hibernate Your Instance in the Amazon Elastic Compute Cloud User Guide.  Default: false 
+    * Hibernates the instance if the instance was enabled for hibernation at launch. If the instance cannot hibernate successfully, a normal shutdown occurs. For more information, see Hibernate your instance in the Amazon Elastic Compute Cloud User Guide.  Default: false 
     */
   var Hibernate: js.UndefOr[Boolean] = js.native
   /**

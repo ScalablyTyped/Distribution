@@ -13,7 +13,7 @@ trait CascaderOptionType
   var isLeaf: js.UndefOr[Boolean] = js.undefined
   var label: js.UndefOr[ReactNode] = js.undefined
   var loading: js.UndefOr[Boolean] = js.undefined
-  var value: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[String | Double] = js.undefined
 }
 
 object CascaderOptionType {
@@ -25,7 +25,7 @@ object CascaderOptionType {
     isLeaf: js.UndefOr[Boolean] = js.undefined,
     label: ReactNode = null,
     loading: js.UndefOr[Boolean] = js.undefined,
-    value: String = null
+    value: String | Double = null
   ): CascaderOptionType = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

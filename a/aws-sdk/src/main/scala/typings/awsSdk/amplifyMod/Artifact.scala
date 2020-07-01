@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Artifact extends js.Object {
   /**
-    *  File name for the artifact. 
+    *  The file name for the artifact. 
     */
   var artifactFileName: ArtifactFileName = js.native
   /**
-    *  Unique Id for a artifact. 
+    *  The unique ID for the artifact. 
     */
   var artifactId: ArtifactId = js.native
 }

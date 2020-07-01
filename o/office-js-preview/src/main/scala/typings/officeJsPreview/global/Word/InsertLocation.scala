@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * The insertion location types
+  * The insertion location types.
   *
   * [Api set: WordApi]
   */

@@ -52,7 +52,7 @@ object SchemaGoogleDevtoolsRemoteexecutionV1testExecuteResponse {
     status: SchemaGoogleRpcStatus = null
   ): SchemaGoogleDevtoolsRemoteexecutionV1testExecuteResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cachedResult)) __obj.updateDynamic("cachedResult")(cachedResult.asInstanceOf[js.Any])
+    if (!js.isUndefined(cachedResult)) __obj.updateDynamic("cachedResult")(cachedResult.get.asInstanceOf[js.Any])
     if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     if (serverLogs != null) __obj.updateDynamic("serverLogs")(serverLogs.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])

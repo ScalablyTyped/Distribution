@@ -22,9 +22,9 @@ trait SchemaConfusionMatrix extends js.Object {
 
 object SchemaConfusionMatrix {
   @scala.inline
-  def apply(confidenceThreshold: Int | Double = null, rows: js.Array[SchemaRow] = null): SchemaConfusionMatrix = {
+  def apply(confidenceThreshold: js.UndefOr[Double] = js.undefined, rows: js.Array[SchemaRow] = null): SchemaConfusionMatrix = {
     val __obj = js.Dynamic.literal()
-    if (confidenceThreshold != null) __obj.updateDynamic("confidenceThreshold")(confidenceThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(confidenceThreshold)) __obj.updateDynamic("confidenceThreshold")(confidenceThreshold.get.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaConfusionMatrix]
   }

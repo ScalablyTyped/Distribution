@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object dmsMod {
   type AccountQuotaList = js.Array[typings.awsSdk.dmsMod.AccountQuota]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsSdk.awsSdkStrings.default_
+    - typings.awsSdk.awsSdkStrings.default__
     - typings.awsSdk.awsSdkStrings.mongodb_cr
     - typings.awsSdk.awsSdkStrings.scram_sha_1
     - java.lang.String
@@ -33,7 +33,7 @@ package object dmsMod {
   type CompressionTypeValue = typings.awsSdk.dmsMod._CompressionTypeValue | java.lang.String
   type ConnectionList = js.Array[typings.awsSdk.dmsMod.Connection]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsSdk.awsSdkStrings.csv_
+    - typings.awsSdk.awsSdkStrings.csv__
     - typings.awsSdk.awsSdkStrings.parquet_
     - java.lang.String
   */

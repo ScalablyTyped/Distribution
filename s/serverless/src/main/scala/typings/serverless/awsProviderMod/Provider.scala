@@ -1,6 +1,9 @@
 package typings.serverless.awsProviderMod
 
+import typings.serverless.serverlessStrings.`private`
 import typings.serverless.serverlessStrings.aws
+import typings.serverless.serverlessStrings.edge
+import typings.serverless.serverlessStrings.regional
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +16,7 @@ trait Provider extends js.Object {
   var cfnRole: js.UndefOr[String] = js.undefined
   var deploymentBucket: js.UndefOr[DeploymentBucket] = js.undefined
   var deploymentPrefix: js.UndefOr[String] = js.undefined
-  var endpointType: js.UndefOr[String] = js.undefined
+  var endpointType: js.UndefOr[regional | edge | `private`] = js.undefined
   var environment: js.UndefOr[Environment] = js.undefined
   var httpApi: js.UndefOr[HttpApi] = js.undefined
   var iamManagedPolicies: js.UndefOr[js.Array[String]] = js.undefined
@@ -58,7 +61,7 @@ object Provider {
     cfnRole: String = null,
     deploymentBucket: DeploymentBucket = null,
     deploymentPrefix: String = null,
-    endpointType: String = null,
+    endpointType: regional | edge | `private` = null,
     environment: Environment = null,
     httpApi: HttpApi = null,
     iamManagedPolicies: js.Array[String] = null,

@@ -13,7 +13,7 @@ trait HasErrorValue[TValue /* <: ValidatableMapOrArray */] extends js.Object {
 
 object HasErrorValue {
   @scala.inline
-  def apply[TValue](hasError: `false`, value: TValue): HasErrorValue[TValue] = {
+  def apply[/* <: typings.formstate.formStateMod.ValidatableMapOrArray */ TValue](hasError: `false`, value: TValue): HasErrorValue[TValue] = {
     val __obj = js.Dynamic.literal(hasError = hasError.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasErrorValue[TValue]]
   }

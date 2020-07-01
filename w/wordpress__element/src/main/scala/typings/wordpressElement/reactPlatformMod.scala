@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@wordpress/element/react-platform", JSImport.Namespace)
+@JSImport("@wordpress/element/build-types/react-platform", JSImport.Namespace)
 @js.native
 object reactPlatformMod extends js.Object {
   val render: Renderer = js.native

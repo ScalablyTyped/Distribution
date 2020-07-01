@@ -6,6 +6,7 @@ import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.Element
 import typings.mendixmodelsdk.internalMod.ModelUnit
+import typings.mendixmodelsdk.kafkaMod.kafka.ConsumedKafkaService
 import typings.mendixmodelsdk.restMod.StructureVersionInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,6 +28,7 @@ class MetadataReference protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FMetadataReference: IModel = js.native
+  def containerAsConsumedKafkaService: ConsumedKafkaService = js.native
   def containerAsConsumedODataService: ConsumedODataService = js.native
   def containerAsMetadataReference: MetadataReference = js.native
   def metadata: String = js.native
@@ -60,6 +62,15 @@ object MetadataReference extends js.Object {
     *  8.6.0 to 8.7.0
     */
   def createIn(container: ConsumedODataService): MetadataReference = js.native
+  /**
+    * Creates and returns a new MetadataReference instance in the SDK and on the server.
+    * The new MetadataReference will be automatically stored in the 'metadataReferences' property
+    * of the parent kafka.ConsumedKafkaService element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.11.0 and higher
+    */
+  def createInConsumedKafkaServiceUnderMetadataReferences(container: ConsumedKafkaService): MetadataReference = js.native
   /**
     * Creates and returns a new MetadataReference instance in the SDK and on the server.
     * The new MetadataReference will be automatically stored in the 'metadataReferences' property

@@ -20,6 +20,7 @@ trait NumbroLanguage extends js.Object {
   var ordinalFormat: js.UndefOr[Format] = js.undefined
   var percentageFormat: js.UndefOr[Format] = js.undefined
   var spaceSeparated: js.UndefOr[Boolean] = js.undefined
+  var timeDefaults: js.UndefOr[Format] = js.undefined
   def ordinal(num: Double): String
 }
 
@@ -37,7 +38,8 @@ object NumbroLanguage {
     defaults: Format = null,
     ordinalFormat: Format = null,
     percentageFormat: Format = null,
-    spaceSeparated: js.UndefOr[Boolean] = js.undefined
+    spaceSeparated: js.UndefOr[Boolean] = js.undefined,
+    timeDefaults: Format = null
   ): NumbroLanguage = {
     val __obj = js.Dynamic.literal(abbreviations = abbreviations.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], delimiters = delimiters.asInstanceOf[js.Any], formats = formats.asInstanceOf[js.Any], languageTag = languageTag.asInstanceOf[js.Any], ordinal = js.Any.fromFunction1(ordinal))
     if (byteFormat != null) __obj.updateDynamic("byteFormat")(byteFormat.asInstanceOf[js.Any])
@@ -46,6 +48,7 @@ object NumbroLanguage {
     if (ordinalFormat != null) __obj.updateDynamic("ordinalFormat")(ordinalFormat.asInstanceOf[js.Any])
     if (percentageFormat != null) __obj.updateDynamic("percentageFormat")(percentageFormat.asInstanceOf[js.Any])
     if (!js.isUndefined(spaceSeparated)) __obj.updateDynamic("spaceSeparated")(spaceSeparated.get.asInstanceOf[js.Any])
+    if (timeDefaults != null) __obj.updateDynamic("timeDefaults")(timeDefaults.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumbroLanguage]
   }
 }

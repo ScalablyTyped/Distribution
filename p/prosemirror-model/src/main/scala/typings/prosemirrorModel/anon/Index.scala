@@ -14,7 +14,7 @@ trait Index[S /* <: Schema[_, _] */] extends js.Object {
 
 object Index {
   @scala.inline
-  def apply[S](index: Double, offset: Double, node: js.UndefOr[Null | ProsemirrorNode[S]] = js.undefined): Index[S] = {
+  def apply[/* <: typings.prosemirrorModel.mod.Schema[_, _] */ S](index: Double, offset: Double, node: js.UndefOr[Null | ProsemirrorNode[S]] = js.undefined): Index[S] = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
     if (!js.isUndefined(node)) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
     __obj.asInstanceOf[Index[S]]

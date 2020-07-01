@@ -39,16 +39,16 @@ trait SchemaInsertTableRequest extends js.Object {
 object SchemaInsertTableRequest {
   @scala.inline
   def apply(
-    columns: Int | Double = null,
+    columns: js.UndefOr[Double] = js.undefined,
     endOfSegmentLocation: SchemaEndOfSegmentLocation = null,
     location: SchemaLocation = null,
-    rows: Int | Double = null
+    rows: js.UndefOr[Double] = js.undefined
   ): SchemaInsertTableRequest = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns.get.asInstanceOf[js.Any])
     if (endOfSegmentLocation != null) __obj.updateDynamic("endOfSegmentLocation")(endOfSegmentLocation.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInsertTableRequest]
   }
 }

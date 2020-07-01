@@ -29,9 +29,9 @@ class PivotBase protected ()
     */
   var _isKeyValid: js.Any = js.native
   /**
-    * Handle the onKeyPress event on the PivotLinks
+    * Handle the onKeyDown event on the PivotLinks
     */
-  var _onKeyPress: js.Any = js.native
+  var _onKeyDown: js.Any = js.native
   /**
     * Handles the onClick event on PivotLinks
     */
@@ -39,7 +39,7 @@ class PivotBase protected ()
   var _pivotId: js.Any = js.native
   var _renderLinkContent: js.Any = js.native
   /**
-    * Renders the current Pivot Item
+    * Renders a Pivot Item
     */
   var _renderPivotItem: js.Any = js.native
   var _renderPivotLink: js.Any = js.native

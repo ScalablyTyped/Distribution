@@ -40,14 +40,14 @@ object SchemaGoogleCloudVisionV1p3beta1WebDetectionWebPage {
     fullMatchingImages: js.Array[SchemaGoogleCloudVisionV1p3beta1WebDetectionWebImage] = null,
     pageTitle: String = null,
     partialMatchingImages: js.Array[SchemaGoogleCloudVisionV1p3beta1WebDetectionWebImage] = null,
-    score: Int | Double = null,
+    score: js.UndefOr[Double] = js.undefined,
     url: String = null
   ): SchemaGoogleCloudVisionV1p3beta1WebDetectionWebPage = {
     val __obj = js.Dynamic.literal()
     if (fullMatchingImages != null) __obj.updateDynamic("fullMatchingImages")(fullMatchingImages.asInstanceOf[js.Any])
     if (pageTitle != null) __obj.updateDynamic("pageTitle")(pageTitle.asInstanceOf[js.Any])
     if (partialMatchingImages != null) __obj.updateDynamic("partialMatchingImages")(partialMatchingImages.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p3beta1WebDetectionWebPage]
   }

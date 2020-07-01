@@ -60,7 +60,7 @@ object ParamsResourceJobsList {
     fields: String = null,
     key: String = null,
     maxCreationTime: String = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[Double] = js.undefined,
     minCreationTime: String = null,
     oauth_token: String = null,
     pageToken: String = null,
@@ -72,17 +72,17 @@ object ParamsResourceJobsList {
     userIp: String = null
   ): ParamsResourceJobsList = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allUsers)) __obj.updateDynamic("allUsers")(allUsers.asInstanceOf[js.Any])
+    if (!js.isUndefined(allUsers)) __obj.updateDynamic("allUsers")(allUsers.get.asInstanceOf[js.Any])
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (maxCreationTime != null) __obj.updateDynamic("maxCreationTime")(maxCreationTime.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (minCreationTime != null) __obj.updateDynamic("minCreationTime")(minCreationTime.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])

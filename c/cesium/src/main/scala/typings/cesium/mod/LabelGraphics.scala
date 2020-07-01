@@ -11,7 +11,7 @@ class LabelGraphics () extends js.Object {
   def this(options: BackgroundColor) = this()
   var backgroundColor: Property = js.native
   var definitionChanged: Event[js.Array[_]] = js.native
-  var distanceDisplayCondition: js.UndefOr[DistanceDisplayCondition | Property] = js.native
+  var distanceDisplayCondition: js.UndefOr[Property] = js.native
   var eyeOffset: Property = js.native
   var fillColor: Color = js.native
   var font: String = js.native

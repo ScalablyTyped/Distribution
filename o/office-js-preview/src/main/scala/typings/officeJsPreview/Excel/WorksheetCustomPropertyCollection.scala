@@ -30,7 +30,7 @@ trait WorksheetCustomPropertyCollection extends ClientObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param key The key that identifies the custom property object. It is case-insensitive.
+    * @param key The key that identifies the custom property object. It is case-insensitive.The key is limited to 255 characters (larger values will cause an "InvalidArgument" error to be thrown.)
     * @param value The value of this custom property.
     */
   def add(key: String, value: String): WorksheetCustomProperty = js.native

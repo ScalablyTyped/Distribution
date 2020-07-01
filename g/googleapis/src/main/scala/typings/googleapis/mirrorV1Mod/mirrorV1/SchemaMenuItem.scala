@@ -90,7 +90,7 @@ object SchemaMenuItem {
     if (contextual_command != null) __obj.updateDynamic("contextual_command")(contextual_command.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeWhenSelected)) __obj.updateDynamic("removeWhenSelected")(removeWhenSelected.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeWhenSelected)) __obj.updateDynamic("removeWhenSelected")(removeWhenSelected.get.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMenuItem]
   }

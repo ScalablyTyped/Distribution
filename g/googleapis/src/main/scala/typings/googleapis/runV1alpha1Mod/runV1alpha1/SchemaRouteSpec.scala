@@ -25,9 +25,9 @@ trait SchemaRouteSpec extends js.Object {
 
 object SchemaRouteSpec {
   @scala.inline
-  def apply(generation: Int | Double = null, traffic: js.Array[SchemaTrafficTarget] = null): SchemaRouteSpec = {
+  def apply(generation: js.UndefOr[Double] = js.undefined, traffic: js.Array[SchemaTrafficTarget] = null): SchemaRouteSpec = {
     val __obj = js.Dynamic.literal()
-    if (generation != null) __obj.updateDynamic("generation")(generation.asInstanceOf[js.Any])
+    if (!js.isUndefined(generation)) __obj.updateDynamic("generation")(generation.get.asInstanceOf[js.Any])
     if (traffic != null) __obj.updateDynamic("traffic")(traffic.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRouteSpec]
   }

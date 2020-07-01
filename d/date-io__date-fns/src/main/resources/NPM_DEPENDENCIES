@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@date-io/date-fns" : "2.6.1"
+      "@date-io/date-fns" : "2.6.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@date-io/date-fns" : "2.6.1"
+      "@date-io/date-fns" : "2.6.2"
     }
   ],
   "compile-devDependencies" : [

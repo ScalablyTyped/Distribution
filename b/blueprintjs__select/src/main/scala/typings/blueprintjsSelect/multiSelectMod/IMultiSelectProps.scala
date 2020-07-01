@@ -16,7 +16,15 @@ trait IMultiSelectProps[T] extends IListItemsProps[T] {
     */
   var fill: js.UndefOr[Boolean] = js.native
   /**
-    * Whether the popover opens on key down or when `TagInput` is focused.
+    * If true, the component waits until a keydown event in the TagInput
+    * before opening its popover.
+    *
+    * If false, the popover opens immediately after a mouse click focuses
+    * the component's TagInput.
+    *
+    * N.B. the behavior of this prop differs slightly from the same one
+    * in the Suggest component; see https://github.com/palantir/blueprint/issues/4152.
+    *
     * @default false
     */
   var openOnKeyDown: js.UndefOr[Boolean] = js.native

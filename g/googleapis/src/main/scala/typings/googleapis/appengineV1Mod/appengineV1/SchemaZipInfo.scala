@@ -25,9 +25,9 @@ trait SchemaZipInfo extends js.Object {
 
 object SchemaZipInfo {
   @scala.inline
-  def apply(filesCount: Int | Double = null, sourceUrl: String = null): SchemaZipInfo = {
+  def apply(filesCount: js.UndefOr[Double] = js.undefined, sourceUrl: String = null): SchemaZipInfo = {
     val __obj = js.Dynamic.literal()
-    if (filesCount != null) __obj.updateDynamic("filesCount")(filesCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(filesCount)) __obj.updateDynamic("filesCount")(filesCount.get.asInstanceOf[js.Any])
     if (sourceUrl != null) __obj.updateDynamic("sourceUrl")(sourceUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaZipInfo]
   }

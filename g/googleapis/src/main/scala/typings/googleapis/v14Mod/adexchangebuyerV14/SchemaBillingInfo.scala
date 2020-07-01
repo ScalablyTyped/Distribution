@@ -32,13 +32,13 @@ trait SchemaBillingInfo extends js.Object {
 object SchemaBillingInfo {
   @scala.inline
   def apply(
-    accountId: Int | Double = null,
+    accountId: js.UndefOr[Double] = js.undefined,
     accountName: String = null,
     billingId: js.Array[String] = null,
     kind: String = null
   ): SchemaBillingInfo = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (!js.isUndefined(accountId)) __obj.updateDynamic("accountId")(accountId.get.asInstanceOf[js.Any])
     if (accountName != null) __obj.updateDynamic("accountName")(accountName.asInstanceOf[js.Any])
     if (billingId != null) __obj.updateDynamic("billingId")(billingId.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])

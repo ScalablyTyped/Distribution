@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   - typings.eslint.eslintStrings.Property
   - typings.eslint.eslintStrings.ArrowFunctionExpression
   - typings.eslint.eslintStrings.CatchClause
+  - typings.eslint.eslintStrings.ChainExpression
   - typings.eslint.eslintStrings.ImportDeclaration
   - typings.eslint.eslintStrings.ReturnStatement
   - typings.eslint.eslintStrings.WithStatement
@@ -99,6 +100,8 @@ object NodeTypes {
   def CallExpression: typings.eslint.eslintStrings.CallExpression = "CallExpression".asInstanceOf[typings.eslint.eslintStrings.CallExpression]
   @scala.inline
   def CatchClause: typings.eslint.eslintStrings.CatchClause = "CatchClause".asInstanceOf[typings.eslint.eslintStrings.CatchClause]
+  @scala.inline
+  def ChainExpression: typings.eslint.eslintStrings.ChainExpression = "ChainExpression".asInstanceOf[typings.eslint.eslintStrings.ChainExpression]
   @scala.inline
   def ClassBody: typings.eslint.eslintStrings.ClassBody = "ClassBody".asInstanceOf[typings.eslint.eslintStrings.ClassBody]
   @scala.inline

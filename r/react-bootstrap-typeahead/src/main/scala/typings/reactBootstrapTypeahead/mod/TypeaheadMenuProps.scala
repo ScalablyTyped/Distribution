@@ -33,7 +33,7 @@ trait TypeaheadMenuProps[T /* <: TypeaheadModel */] extends js.Object {
 
 object TypeaheadMenuProps {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.reactBootstrapTypeahead.mod.TypeaheadModel */ T](
     id: String,
     options: js.Array[T],
     className: String = null,

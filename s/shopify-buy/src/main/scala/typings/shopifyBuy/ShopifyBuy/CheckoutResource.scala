@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CheckoutResource extends js.Object {
-  def addLineItems(checkoutId: String, lineItems: js.Array[LineItem]): js.Promise[Cart] = js.native
-  def addLineItems(checkoutId: Double, lineItems: js.Array[LineItem]): js.Promise[Cart] = js.native
+  def addLineItems(checkoutId: String, lineItems: js.Array[LineItemToAdd]): js.Promise[Cart] = js.native
+  def addLineItems(checkoutId: Double, lineItems: js.Array[LineItemToAdd]): js.Promise[Cart] = js.native
   /**
     * Add items to cart. Updates cart's lineItems
     */

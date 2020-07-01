@@ -14,7 +14,7 @@ trait RouteProps[T /* <: DefaultParams */] extends js.Object {
 
 object RouteProps {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.wouter.mod.DefaultParams */ T](
     path: Path,
     children: (js.Function1[/* params */ Params[T], ReactNode]) | ReactNode = null,
     component: ComponentType[RouteComponentProps[T]] = null

@@ -32,8 +32,8 @@ object SchemaNodeManagement {
     upgradeOptions: SchemaAutoUpgradeOptions = null
   ): SchemaNodeManagement = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoRepair)) __obj.updateDynamic("autoRepair")(autoRepair.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoUpgrade)) __obj.updateDynamic("autoUpgrade")(autoUpgrade.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoRepair)) __obj.updateDynamic("autoRepair")(autoRepair.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoUpgrade)) __obj.updateDynamic("autoUpgrade")(autoUpgrade.get.asInstanceOf[js.Any])
     if (upgradeOptions != null) __obj.updateDynamic("upgradeOptions")(upgradeOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNodeManagement]
   }

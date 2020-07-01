@@ -20,7 +20,12 @@ Extract[
 
 object UpdateResult {
   @scala.inline
-  def apply[I, Payload](payload: Payload, state: OrmState[I], status: UpdateStatus): UpdateResult[I, Payload] = {
+  def apply[/* <: typings.reduxOrm.ormMod.IndexedModelClasses[
+  _, 
+  typings.std.Extract[
+    / * keyof any * / java.lang.String, 
+    / * import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] * / js.Any
+  ]] */ I, /* <: js.Object */ Payload](payload: Payload, state: OrmState[I], status: UpdateStatus): UpdateResult[I, Payload] = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateResult[I, Payload]]
   }

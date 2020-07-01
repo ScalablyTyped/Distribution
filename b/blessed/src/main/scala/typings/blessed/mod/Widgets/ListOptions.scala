@@ -43,7 +43,7 @@ trait ListOptions[TStyle /* <: ListElementStyle */] extends BoxOptions {
 
 object ListOptions {
   @scala.inline
-  def apply[TStyle](
+  def apply[/* <: typings.blessed.mod.Widgets.ListElementStyle */ TStyle](
     align: left | center | right = null,
     alwaysScroll: js.UndefOr[Boolean] = js.undefined,
     baseLimit: js.UndefOr[Double] = js.undefined,

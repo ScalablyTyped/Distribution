@@ -123,7 +123,7 @@ trait ReactCalendarTimelineProps[CustomItem /* <: TimelineItemBase[_] */, Custom
 
 object ReactCalendarTimelineProps {
   @scala.inline
-  def apply[CustomItem, CustomGroup](
+  def apply[/* <: typings.reactCalendarTimeline.mod.TimelineItemBase[_] */ CustomItem, /* <: typings.reactCalendarTimeline.mod.TimelineGroupBase */ CustomGroup](
     groups: js.Array[CustomGroup],
     items: js.Array[CustomItem],
     canChangeGroup: js.UndefOr[Boolean] = js.undefined,

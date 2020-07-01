@@ -29,11 +29,15 @@ trait SchemaAppendCellsRequest extends js.Object {
 
 object SchemaAppendCellsRequest {
   @scala.inline
-  def apply(fields: String = null, rows: js.Array[SchemaRowData] = null, sheetId: Int | Double = null): SchemaAppendCellsRequest = {
+  def apply(
+    fields: String = null,
+    rows: js.Array[SchemaRowData] = null,
+    sheetId: js.UndefOr[Double] = js.undefined
+  ): SchemaAppendCellsRequest = {
     val __obj = js.Dynamic.literal()
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (sheetId != null) __obj.updateDynamic("sheetId")(sheetId.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetId)) __obj.updateDynamic("sheetId")(sheetId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAppendCellsRequest]
   }
 }

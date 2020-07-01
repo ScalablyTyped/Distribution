@@ -20,7 +20,7 @@ object SchemaNavigationInfo {
   @scala.inline
   def apply(enableForcedRedirect: js.UndefOr[Boolean] = js.undefined): SchemaNavigationInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableForcedRedirect)) __obj.updateDynamic("enableForcedRedirect")(enableForcedRedirect.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableForcedRedirect)) __obj.updateDynamic("enableForcedRedirect")(enableForcedRedirect.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNavigationInfo]
   }
 }

@@ -1,6 +1,6 @@
 package typings.googleapis.v3Mod.analyticsV3
 
-import typings.googleapis.AnonHref
+import typings.googleapis.anon.Href
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,7 +51,7 @@ trait SchemaCustomMetric extends js.Object {
     * Parent link for the custom metric. Points to the property to which the
     * custom metric belongs.
     */
-  var parentLink: js.UndefOr[AnonHref] = js.native
+  var parentLink: js.UndefOr[Href] = js.native
   /**
     * Scope of the custom metric: HIT or PRODUCT.
     */
@@ -81,12 +81,12 @@ object SchemaCustomMetric {
     active: js.UndefOr[Boolean] = js.undefined,
     created: String = null,
     id: String = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     kind: String = null,
     max_value: String = null,
     min_value: String = null,
     name: String = null,
-    parentLink: AnonHref = null,
+    parentLink: Href = null,
     scope: String = null,
     selfLink: String = null,
     `type`: String = null,
@@ -95,10 +95,10 @@ object SchemaCustomMetric {
   ): SchemaCustomMetric = {
     val __obj = js.Dynamic.literal()
     if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (max_value != null) __obj.updateDynamic("max_value")(max_value.asInstanceOf[js.Any])
     if (min_value != null) __obj.updateDynamic("min_value")(min_value.asInstanceOf[js.Any])

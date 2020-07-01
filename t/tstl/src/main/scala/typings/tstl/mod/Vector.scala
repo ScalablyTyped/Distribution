@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   * Default Constructor.
   */
 class Vector[T] ()
-  extends typings.tstl.tstlMod.Vector[T] {
+  extends typings.tstl.tstlModuleMod.Vector[T] {
   /**
     * Initializer Constructor.
     *

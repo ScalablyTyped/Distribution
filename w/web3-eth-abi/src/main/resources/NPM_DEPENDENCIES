@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "web3-eth-abi" : "1.2.8"
+      "web3-eth-abi" : "1.2.9"
     }
   ],
   "test-dependencies" : [
     {
-      "web3-eth-abi" : "1.2.8"
+      "web3-eth-abi" : "1.2.9"
     }
   ],
   "compile-devDependencies" : [

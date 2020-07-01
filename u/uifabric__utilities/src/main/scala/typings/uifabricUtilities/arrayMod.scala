@@ -12,6 +12,7 @@ object arrayMod extends js.Object {
   def createArray[T](size: Double, getItem: js.Function1[/* index */ Double, T]): js.Array[T] = js.native
   def find[T](array: js.Array[T], cb: js.Function2[/* item */ T, /* index */ Double, Boolean]): js.UndefOr[T] = js.native
   def findIndex[T](array: js.Array[T], cb: js.Function2[/* item */ T, /* index */ Double, Boolean]): Double = js.native
+  def findIndex[T](array: js.Array[T], cb: js.Function2[/* item */ T, /* index */ Double, Boolean], fromIndex: Double): Double = js.native
   def flatten[T](array: js.Array[T | js.Array[T]]): js.Array[T] = js.native
   def removeIndex[T](array: js.Array[T], index: Double): js.Array[T] = js.native
   def replaceElement[T](array: js.Array[T], newElement: T, index: Double): js.Array[T] = js.native

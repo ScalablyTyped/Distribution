@@ -24,7 +24,7 @@ trait ReverseIterator[Key, T, Unique /* <: Boolean */, SourceT /* <: typings.tst
 
 object ReverseIterator {
   @scala.inline
-  def apply[Key, T, Unique, SourceT, IteratorT, ReverseT](
+  def apply[Key, T, /* <: scala.Boolean */ Unique, /* <: typings.tstl.mapContainerMod.MapContainer[Key, T, Unique, SourceT, IteratorT, ReverseT] */ SourceT, /* <: typings.tstl.mapContainerMod.MapContainer.Iterator[Key, T, Unique, SourceT, IteratorT, ReverseT] */ IteratorT, /* <: typings.tstl.mapContainerMod.MapContainer.ReverseIterator[Key, T, Unique, SourceT, IteratorT, ReverseT] */ ReverseT](
     base: () => IteratorT,
     first: Key,
     next: () => ReverseT,

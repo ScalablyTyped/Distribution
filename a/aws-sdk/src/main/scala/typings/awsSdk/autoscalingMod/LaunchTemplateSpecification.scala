@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LaunchTemplateSpecification extends js.Object {
   /**
-    * The ID of the launch template. You must specify either a template ID or a template name.
+    * The ID of the launch template. To get the template ID, use the Amazon EC2 DescribeLaunchTemplates API operation. New launch templates can be created using the Amazon EC2 CreateLaunchTemplate API. You must specify either a template ID or a template name.
     */
   var LaunchTemplateId: js.UndefOr[XmlStringMaxLen255] = js.native
   /**
-    * The name of the launch template. You must specify either a template name or a template ID.
+    * The name of the launch template. To get the template name, use the Amazon EC2 DescribeLaunchTemplates API operation. New launch templates can be created using the Amazon EC2 CreateLaunchTemplate API. You must specify either a template ID or a template name.
     */
   var LaunchTemplateName: js.UndefOr[typings.awsSdk.autoscalingMod.LaunchTemplateName] = js.native
   /**
-    * The version number, $Latest, or $Default. If the value is $Latest, Amazon EC2 Auto Scaling selects the latest version of the launch template when launching instances. If the value is $Default, Amazon EC2 Auto Scaling selects the default version of the launch template when launching instances. The default value is $Default.
+    * The version number, $Latest, or $Default. To get the version number, use the Amazon EC2 DescribeLaunchTemplateVersions API operation. New launch template versions can be created using the Amazon EC2 CreateLaunchTemplateVersion API. If the value is $Latest, Amazon EC2 Auto Scaling selects the latest version of the launch template when launching instances. If the value is $Default, Amazon EC2 Auto Scaling selects the default version of the launch template when launching instances. The default value is $Default.
     */
   var Version: js.UndefOr[XmlStringMaxLen255] = js.native
 }

@@ -5,23 +5,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait `4` extends js.Object {
-  var `1`: js.UndefOr[Font] = js.undefined
-  var `2`: js.UndefOr[Font] = js.undefined
-  var `3`: js.UndefOr[Font] = js.undefined
-  var `4`: js.UndefOr[Font] = js.undefined
-  var `5`: js.UndefOr[Font] = js.undefined
-  var `6`: js.UndefOr[Font] = js.undefined
+  var `1`: js.UndefOr[FontLarge] = js.undefined
+  var `2`: js.UndefOr[FontLarge] = js.undefined
+  var `3`: js.UndefOr[FontLarge] = js.undefined
+  var `4`: js.UndefOr[FontLarge] = js.undefined
+  var `5`: js.UndefOr[FontLarge] = js.undefined
+  var `6`: js.UndefOr[FontLarge] = js.undefined
 }
 
 object `4` {
   @scala.inline
   def apply(
-    `1`: Font = null,
-    `2`: Font = null,
-    `3`: Font = null,
-    `4`: Font = null,
-    `5`: Font = null,
-    `6`: Font = null
+    `1`: FontLarge = null,
+    `2`: FontLarge = null,
+    `3`: FontLarge = null,
+    `4`: FontLarge = null,
+    `5`: FontLarge = null,
+    `6`: FontLarge = null
   ): `4` = {
     val __obj = js.Dynamic.literal()
     if (`1` != null) __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])

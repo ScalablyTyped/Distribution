@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @see https://developer.knuddels.de/docs/classes/ToplistDisplayType.html
-  */
+	 * @see https://developer.knuddels.de/docs/classes/ToplistDisplayType.html
+	 */
 @JSGlobal("ToplistDisplayType")
 @js.native
 class ToplistDisplayType () extends js.Object
@@ -16,20 +16,20 @@ class ToplistDisplayType () extends js.Object
 @js.native
 object ToplistDisplayType extends js.Object {
   /**
-    * @see https://developer.knuddels.de/docs/classes/ToplistDisplayType.html#property_Label
-    */
+  		 * @see https://developer.knuddels.de/docs/classes/ToplistDisplayType.html#property_Label
+  		 */
   val Label: ToplistDisplayType = js.native
   /**
-    * @see https://developer.knuddels.de/docs/classes/ToplistDisplayType.html#property_LabelAndRank
-    */
+  		 * @see https://developer.knuddels.de/docs/classes/ToplistDisplayType.html#property_LabelAndRank
+  		 */
   val LabelAndRank: ToplistDisplayType = js.native
   /**
-    * @see https://developer.knuddels.de/docs/classes/ToplistDisplayType.html#property_Value
-    */
+  		 * @see https://developer.knuddels.de/docs/classes/ToplistDisplayType.html#property_Value
+  		 */
   val Value: ToplistDisplayType = js.native
   /**
-    * @see https://developer.knuddels.de/docs/classes/ToplistDisplayType.html#property_ValueAndRank
-    */
+  		 * @see https://developer.knuddels.de/docs/classes/ToplistDisplayType.html#property_ValueAndRank
+  		 */
   val ValueAndRank: ToplistDisplayType = js.native
 }
 

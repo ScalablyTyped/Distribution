@@ -16,6 +16,7 @@ package object mod {
   type EggHttpClient = typings.urllib.mod.HttpClient[typings.urllib.mod.RequestOptions2]
   type EggLoader = typings.eggCore.mod.EggLoader[typings.eggCore.mod.EggCore[typings.eggCore.mod.PlainObject[js.Any]], js.Any]
   type EggLoaderOptions = typings.eggCore.mod.EggLoaderOptions
+  type EggLogger = typings.eggLogger.mod.EggLogger
   type EggPluginItem = typings.egg.mod.IEggPluginItem | scala.Boolean
   type IApplicationLocals = typings.egg.mod.PlainObject[js.Any]
   type IContextLocals = typings.egg.mod.PlainObject[js.Any]

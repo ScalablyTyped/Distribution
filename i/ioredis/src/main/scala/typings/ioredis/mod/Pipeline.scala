@@ -33,6 +33,8 @@ trait Pipeline extends js.Object {
   def append(key: KeyType, value: ValueType, callback: Callback[Double]): Pipeline = js.native
   def auth(password: String): Pipeline = js.native
   def auth(password: String, callback: Callback[String]): Pipeline = js.native
+  def auth(username: String, password: String): Pipeline = js.native
+  def auth(username: String, password: String, callback: Callback[String]): Pipeline = js.native
   def bgrewriteaof(): Pipeline = js.native
   def bgrewriteaof(callback: Callback[String]): Pipeline = js.native
   def bgsave(): Pipeline = js.native

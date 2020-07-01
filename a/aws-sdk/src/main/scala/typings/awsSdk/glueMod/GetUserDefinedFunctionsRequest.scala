@@ -11,7 +11,7 @@ trait GetUserDefinedFunctionsRequest extends js.Object {
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.native
   /**
-    * The name of the catalog database where the functions are located.
+    * The name of the catalog database where the functions are located. If none is provided, functions from all the databases across the catalog will be returned.
     */
   var DatabaseName: js.UndefOr[NameString] = js.native
   /**

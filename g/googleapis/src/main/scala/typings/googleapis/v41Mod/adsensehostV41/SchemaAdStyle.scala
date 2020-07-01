@@ -1,7 +1,7 @@
 package typings.googleapis.v41Mod.adsensehostV41
 
-import typings.googleapis.AnonBackground
-import typings.googleapis.AnonSize
+import typings.googleapis.anon.Background
+import typings.googleapis.anon.Size
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait SchemaAdStyle extends js.Object {
     * hexadecimal characters, similar to HTML color codes, but without the
     * leading hash.
     */
-  var colors: js.UndefOr[AnonBackground] = js.native
+  var colors: js.UndefOr[Background] = js.native
   /**
     * The style of the corners in the ad (deprecated: never populated,
     * ignored).
@@ -22,7 +22,7 @@ trait SchemaAdStyle extends js.Object {
   /**
     * The font which is included in the style.
     */
-  var font: js.UndefOr[AnonSize] = js.native
+  var font: js.UndefOr[Size] = js.native
   /**
     * Kind this is, in this case adsensehost#adStyle.
     */
@@ -31,7 +31,7 @@ trait SchemaAdStyle extends js.Object {
 
 object SchemaAdStyle {
   @scala.inline
-  def apply(colors: AnonBackground = null, corners: String = null, font: AnonSize = null, kind: String = null): SchemaAdStyle = {
+  def apply(colors: Background = null, corners: String = null, font: Size = null, kind: String = null): SchemaAdStyle = {
     val __obj = js.Dynamic.literal()
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     if (corners != null) __obj.updateDynamic("corners")(corners.asInstanceOf[js.Any])

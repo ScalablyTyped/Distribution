@@ -25,11 +25,15 @@ trait SchemaAppendDimensionRequest extends js.Object {
 
 object SchemaAppendDimensionRequest {
   @scala.inline
-  def apply(dimension: String = null, length: Int | Double = null, sheetId: Int | Double = null): SchemaAppendDimensionRequest = {
+  def apply(
+    dimension: String = null,
+    length: js.UndefOr[Double] = js.undefined,
+    sheetId: js.UndefOr[Double] = js.undefined
+  ): SchemaAppendDimensionRequest = {
     val __obj = js.Dynamic.literal()
     if (dimension != null) __obj.updateDynamic("dimension")(dimension.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (sheetId != null) __obj.updateDynamic("sheetId")(sheetId.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetId)) __obj.updateDynamic("sheetId")(sheetId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAppendDimensionRequest]
   }
 }

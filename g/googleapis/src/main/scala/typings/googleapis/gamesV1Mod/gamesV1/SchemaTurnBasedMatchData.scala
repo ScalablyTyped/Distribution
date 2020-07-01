@@ -31,7 +31,7 @@ object SchemaTurnBasedMatchData {
   def apply(data: String = null, dataAvailable: js.UndefOr[Boolean] = js.undefined, kind: String = null): SchemaTurnBasedMatchData = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(dataAvailable)) __obj.updateDynamic("dataAvailable")(dataAvailable.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataAvailable)) __obj.updateDynamic("dataAvailable")(dataAvailable.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTurnBasedMatchData]
   }

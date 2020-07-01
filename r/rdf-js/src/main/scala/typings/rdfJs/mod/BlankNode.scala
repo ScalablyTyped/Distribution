@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait BlankNode
-  extends QuadGraph
-     with QuadObject
-     with QuadSubject
-     with Term {
+  extends _QuadGraph
+     with _QuadObject
+     with _QuadSubject
+     with _Term {
   /**
     * Contains the constant "BlankNode".
     */

@@ -122,7 +122,7 @@ object SchemaOrder {
     taxCollector: String = null
   ): SchemaOrder = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(acknowledged)) __obj.updateDynamic("acknowledged")(acknowledged.asInstanceOf[js.Any])
+    if (!js.isUndefined(acknowledged)) __obj.updateDynamic("acknowledged")(acknowledged.get.asInstanceOf[js.Any])
     if (channelType != null) __obj.updateDynamic("channelType")(channelType.asInstanceOf[js.Any])
     if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
     if (deliveryDetails != null) __obj.updateDynamic("deliveryDetails")(deliveryDetails.asInstanceOf[js.Any])

@@ -41,7 +41,7 @@ object SchemaScheduleOptions {
     startTime: String = null
   ): SchemaScheduleOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableAutoScheduling)) __obj.updateDynamic("disableAutoScheduling")(disableAutoScheduling.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableAutoScheduling)) __obj.updateDynamic("disableAutoScheduling")(disableAutoScheduling.get.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaScheduleOptions]

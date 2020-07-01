@@ -11,7 +11,7 @@ trait ElasticInferenceAccelerator extends js.Object {
     */
   var Count: js.UndefOr[ElasticInferenceAcceleratorCount] = js.native
   /**
-    *  The type of elastic inference accelerator. The possible values are eia1.medium, eia1.large, and eia1.xlarge. 
+    *  The type of elastic inference accelerator. The possible values are eia1.medium, eia1.large, eia1.xlarge, eia2.medium, eia2.large, and eia2.xlarge. 
     */
   var Type: String = js.native
 }

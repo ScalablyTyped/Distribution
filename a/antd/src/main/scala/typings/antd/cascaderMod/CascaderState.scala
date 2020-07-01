@@ -10,7 +10,7 @@ trait CascaderState extends js.Object {
   var inputValue: String
   var popupVisible: js.UndefOr[Boolean] = js.undefined
   var prevProps: CascaderProps
-  var value: js.Array[String]
+  var value: CascaderValueType
 }
 
 object CascaderState {
@@ -19,7 +19,7 @@ object CascaderState {
     inputFocused: Boolean,
     inputValue: String,
     prevProps: CascaderProps,
-    value: js.Array[String],
+    value: CascaderValueType,
     flattenOptions: js.Array[js.Array[CascaderOptionType]] = null,
     popupVisible: js.UndefOr[Boolean] = js.undefined
   ): CascaderState = {

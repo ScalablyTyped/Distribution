@@ -4,7 +4,6 @@ import typings.echarts.anon.BorderRadius
 import typings.echarts.anon.BorderType
 import typings.echarts.anon.CurvenessShadowBlur
 import typings.echarts.anon.EmphasisItemStyle
-import typings.echarts.anon.ExtraCssText
 import typings.echarts.anon.LineStyleCurvenessShadowBlur
 import typings.echarts.echarts.EChartOption.SeriesTree.DataObject
 import scala.scalajs.js
@@ -353,7 +352,7 @@ trait SeriesTree_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
   /**
     * Distance between tree component and the top side of the container.
     *
@@ -443,7 +442,7 @@ object SeriesTree_ {
     symbolOffset: js.Array[_] = null,
     symbolRotate: js.UndefOr[Double] = js.undefined,
     symbolSize: js.Array[_] | js.Function | Double = null,
-    tooltip: ExtraCssText = null,
+    tooltip: BaseTooltip = null,
     top: Double | String = null,
     `type`: String = null,
     width: Double | String = null,

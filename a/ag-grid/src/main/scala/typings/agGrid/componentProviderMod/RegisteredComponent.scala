@@ -14,7 +14,7 @@ trait RegisteredComponent[A /* <: IComponent[_] with B */, B] extends js.Object 
 
 object RegisteredComponent {
   @scala.inline
-  def apply[A, B](
+  def apply[/* <: typings.agGrid.iComponentMod.IComponent[_] with B */ A, B](
     component: RegisteredComponentInput[A, B],
     source: RegisteredComponentSource,
     `type`: ComponentType

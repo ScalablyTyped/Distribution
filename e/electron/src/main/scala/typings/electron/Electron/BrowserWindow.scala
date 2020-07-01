@@ -338,7 +338,6 @@ trait BrowserWindow extends EventEmitter {
     * Whether the window can be manually closed by user.
     * 
   On Linux always returns `true`.
-  **Deprecated**
     *
     * @platform darwin,win32
     */
@@ -368,7 +367,6 @@ trait BrowserWindow extends EventEmitter {
   /**
     * Whether the maximize/zoom window button toggles fullscreen mode or maximizes the
     * window.
-  **Deprecated**
     */
   def isFullScreenable(): Boolean = js.native
   /**
@@ -379,7 +377,6 @@ trait BrowserWindow extends EventEmitter {
     * Whether the window can be manually maximized by user.
     * 
   On Linux always returns `true`.
-  **Deprecated**
     *
     * @platform darwin,win32
     */
@@ -390,7 +387,6 @@ trait BrowserWindow extends EventEmitter {
   def isMaximized(): Boolean = js.native
   /**
     * Whether menu bar automatically hides itself.
-  **Deprecated**
     */
   def isMenuBarAutoHide(): Boolean = js.native
   /**
@@ -398,10 +394,9 @@ trait BrowserWindow extends EventEmitter {
     */
   def isMenuBarVisible(): Boolean = js.native
   /**
-    * Whether the window can be manually minimized by user
+    * Whether the window can be manually minimized by the user.
     * 
   On Linux always returns `true`.
-  **Deprecated**
     *
     * @platform darwin,win32
     */
@@ -416,9 +411,7 @@ trait BrowserWindow extends EventEmitter {
   def isModal(): Boolean = js.native
   /**
     * Whether the window can be moved by user.
-    * 
   On Linux always returns `true`.
-  **Deprecated**
     *
     * @platform darwin,win32
     */
@@ -429,8 +422,7 @@ trait BrowserWindow extends EventEmitter {
     */
   def isNormal(): Boolean = js.native
   /**
-    * Whether the window can be manually resized by user.
-  **Deprecated**
+    * Whether the window can be manually resized by the user.
     */
   def isResizable(): Boolean = js.native
   /**
@@ -1039,7 +1031,6 @@ trait BrowserWindow extends EventEmitter {
     *
     * If the menu bar is already visible, calling `setAutoHideMenuBar(true)` won't
     * hide it immediately.
-  **Deprecated**
     */
   def setAutoHideMenuBar(hide: Boolean): Unit = js.native
   /**
@@ -1056,8 +1047,6 @@ trait BrowserWindow extends EventEmitter {
   def setBrowserView(browserView: BrowserView): Unit = js.native
   /**
     * Sets whether the window can be manually closed by user. On Linux does nothing.
-    * 
-  **Deprecated**
     *
     * @platform darwin,win32
     */
@@ -1108,7 +1097,6 @@ trait BrowserWindow extends EventEmitter {
   /**
     * Sets whether the maximize/zoom window button toggles fullscreen mode or
     * maximizes the window.
-  **Deprecated**
     */
   def setFullScreenable(fullscreenable: Boolean): Unit = js.native
   /**
@@ -1137,7 +1125,6 @@ trait BrowserWindow extends EventEmitter {
   /**
     * Sets whether the window can be manually maximized by user. On Linux does
     * nothing.
-  **Deprecated**
     *
     * @platform darwin,win32
     */
@@ -1163,7 +1150,6 @@ trait BrowserWindow extends EventEmitter {
   /**
     * Sets whether the window can be manually minimized by user. On Linux does
     * nothing.
-  **Deprecated**
     *
     * @platform darwin,win32
     */
@@ -1174,8 +1160,6 @@ trait BrowserWindow extends EventEmitter {
   def setMinimumSize(width: Double, height: Double): Unit = js.native
   /**
     * Sets whether the window can be moved by user. On Linux does nothing.
-    * 
-  **Deprecated**
     *
     * @platform darwin,win32
     */
@@ -1230,8 +1214,7 @@ trait BrowserWindow extends EventEmitter {
     */
   def setRepresentedFilename(filename: String): Unit = js.native
   /**
-    * Sets whether the window can be manually resized by user.
-  **Deprecated**
+    * Sets whether the window can be manually resized by the user.
     */
   def setResizable(resizable: Boolean): Unit = js.native
   /**

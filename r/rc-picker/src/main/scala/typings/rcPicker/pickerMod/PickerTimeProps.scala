@@ -311,6 +311,7 @@ trait PickerTimeProps[DateType] extends PickerProps[DateType] {
   var secondStep: js.UndefOr[Double] = js.undefined
   var showHour: js.UndefOr[Boolean] = js.undefined
   var showMinute: js.UndefOr[Boolean] = js.undefined
+  var showNow: js.UndefOr[Boolean] = js.undefined
   var showSecond: js.UndefOr[Boolean] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var suffixIcon: js.UndefOr[ReactNode] = js.undefined
@@ -430,6 +431,7 @@ object PickerTimeProps {
     secondStep: js.UndefOr[Double] = js.undefined,
     showHour: js.UndefOr[Boolean] = js.undefined,
     showMinute: js.UndefOr[Boolean] = js.undefined,
+    showNow: js.UndefOr[Boolean] = js.undefined,
     showSecond: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
     suffixIcon: ReactNode = null,
@@ -543,6 +545,7 @@ object PickerTimeProps {
     if (!js.isUndefined(secondStep)) __obj.updateDynamic("secondStep")(secondStep.get.asInstanceOf[js.Any])
     if (!js.isUndefined(showHour)) __obj.updateDynamic("showHour")(showHour.get.asInstanceOf[js.Any])
     if (!js.isUndefined(showMinute)) __obj.updateDynamic("showMinute")(showMinute.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNow)) __obj.updateDynamic("showNow")(showNow.get.asInstanceOf[js.Any])
     if (!js.isUndefined(showSecond)) __obj.updateDynamic("showSecond")(showSecond.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (suffixIcon != null) __obj.updateDynamic("suffixIcon")(suffixIcon.asInstanceOf[js.Any])

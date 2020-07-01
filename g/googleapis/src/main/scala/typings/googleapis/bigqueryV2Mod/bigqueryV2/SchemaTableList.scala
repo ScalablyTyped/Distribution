@@ -1,6 +1,6 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
-import typings.googleapis.AnonClustering
+import typings.googleapis.anon.Clustering
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ trait SchemaTableList extends js.Object {
   /**
     * Tables in the requested dataset.
     */
-  var tables: js.UndefOr[js.Array[AnonClustering]] = js.native
+  var tables: js.UndefOr[js.Array[Clustering]] = js.native
   /**
     * The total number of tables in the dataset.
     */
@@ -35,15 +35,15 @@ object SchemaTableList {
     etag: String = null,
     kind: String = null,
     nextPageToken: String = null,
-    tables: js.Array[AnonClustering] = null,
-    totalItems: Int | Double = null
+    tables: js.Array[Clustering] = null,
+    totalItems: js.UndefOr[Double] = js.undefined
   ): SchemaTableList = {
     val __obj = js.Dynamic.literal()
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     if (tables != null) __obj.updateDynamic("tables")(tables.asInstanceOf[js.Any])
-    if (totalItems != null) __obj.updateDynamic("totalItems")(totalItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalItems)) __obj.updateDynamic("totalItems")(totalItems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTableList]
   }
 }

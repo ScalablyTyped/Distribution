@@ -18,6 +18,10 @@ trait DescribeGatewayInformationOutput extends js.Object {
     * The AWS Region where the Amazon EC2 instance is located.
     */
   var Ec2InstanceRegion: js.UndefOr[typings.awsSdk.storagegatewayMod.Ec2InstanceRegion] = js.native
+  /**
+    * The type of endpoint for your gateway. Valid Values: STANDARD | FIPS 
+    */
+  var EndpointType: js.UndefOr[typings.awsSdk.storagegatewayMod.EndpointType] = js.native
   var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.native
   /**
     * The unique identifier assigned to your gateway during activation. This ID becomes part of the gateway Amazon Resource Name (ARN), which you use as input for other operations.
@@ -60,7 +64,7 @@ trait DescribeGatewayInformationOutput extends js.Object {
     */
   var Tags: js.UndefOr[typings.awsSdk.storagegatewayMod.Tags] = js.native
   /**
-    * The configuration settings for the virtual private cloud (VPC) endpoint for your gateway. 
+    * The configuration settings for the virtual private cloud (VPC) endpoint for your gateway.
     */
   var VPCEndpoint: js.UndefOr[String] = js.native
 }
@@ -71,6 +75,7 @@ object DescribeGatewayInformationOutput {
     CloudWatchLogGroupARN: CloudWatchLogGroupARN = null,
     Ec2InstanceId: Ec2InstanceId = null,
     Ec2InstanceRegion: Ec2InstanceRegion = null,
+    EndpointType: EndpointType = null,
     GatewayARN: GatewayARN = null,
     GatewayId: GatewayId = null,
     GatewayName: String = null,
@@ -88,6 +93,7 @@ object DescribeGatewayInformationOutput {
     if (CloudWatchLogGroupARN != null) __obj.updateDynamic("CloudWatchLogGroupARN")(CloudWatchLogGroupARN.asInstanceOf[js.Any])
     if (Ec2InstanceId != null) __obj.updateDynamic("Ec2InstanceId")(Ec2InstanceId.asInstanceOf[js.Any])
     if (Ec2InstanceRegion != null) __obj.updateDynamic("Ec2InstanceRegion")(Ec2InstanceRegion.asInstanceOf[js.Any])
+    if (EndpointType != null) __obj.updateDynamic("EndpointType")(EndpointType.asInstanceOf[js.Any])
     if (GatewayARN != null) __obj.updateDynamic("GatewayARN")(GatewayARN.asInstanceOf[js.Any])
     if (GatewayId != null) __obj.updateDynamic("GatewayId")(GatewayId.asInstanceOf[js.Any])
     if (GatewayName != null) __obj.updateDynamic("GatewayName")(GatewayName.asInstanceOf[js.Any])

@@ -40,7 +40,7 @@ object SchemaGooglePrivacyDlpV2RedactImageRequest {
     val __obj = js.Dynamic.literal()
     if (byteItem != null) __obj.updateDynamic("byteItem")(byteItem.asInstanceOf[js.Any])
     if (imageRedactionConfigs != null) __obj.updateDynamic("imageRedactionConfigs")(imageRedactionConfigs.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeFindings)) __obj.updateDynamic("includeFindings")(includeFindings.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeFindings)) __obj.updateDynamic("includeFindings")(includeFindings.get.asInstanceOf[js.Any])
     if (inspectConfig != null) __obj.updateDynamic("inspectConfig")(inspectConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2RedactImageRequest]
   }

@@ -56,7 +56,7 @@ object SchemaGoogleDevtoolsRemoteworkersV1test2CommandResult {
   @scala.inline
   def apply(
     duration: String = null,
-    exitCode: Int | Double = null,
+    exitCode: js.UndefOr[Double] = js.undefined,
     metadata: js.Array[StringDictionary[_]] = null,
     outputs: SchemaGoogleDevtoolsRemoteworkersV1test2Digest = null,
     overhead: String = null,
@@ -64,7 +64,7 @@ object SchemaGoogleDevtoolsRemoteworkersV1test2CommandResult {
   ): SchemaGoogleDevtoolsRemoteworkersV1test2CommandResult = {
     val __obj = js.Dynamic.literal()
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (exitCode != null) __obj.updateDynamic("exitCode")(exitCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(exitCode)) __obj.updateDynamic("exitCode")(exitCode.get.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
     if (overhead != null) __obj.updateDynamic("overhead")(overhead.asInstanceOf[js.Any])

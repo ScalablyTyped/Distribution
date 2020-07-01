@@ -20,7 +20,7 @@ trait CommentRichContent extends js.Object {
   var mentions: js.UndefOr[js.Array[CommentMention]] = js.undefined
   /**
     *
-    * Specifies the rich content of the comment (e.g., comment content with mentions, the first mentioned entity has an id attribute of 0, and the second mentioned entity has an id attribute of 1.
+    * Specifies the rich content of the comment (e.g., comment content with mentions, the first mentioned entity has an id attribute of 0, and the second mentioned entity has an id attribute of 1).
     *
     * [Api set: ExcelApi 1.11]
     */

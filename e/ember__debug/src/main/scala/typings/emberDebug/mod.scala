@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@ember/debug", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  def assert(desc: String): Unit | scala.Nothing = js.native
-  def assert(desc: String, test: js.Any): Unit | scala.Nothing = js.native
+  def assert(desc: String): scala.Nothing = js.native
+  def assert(desc: String, test: js.Any): /* asserts test */ Boolean = js.native
   def debug(message: String): Unit = js.native
   def deprecate(message: String, test: Boolean, options: Until): Unit = js.native
   def inspect(obj: js.Any): String = js.native

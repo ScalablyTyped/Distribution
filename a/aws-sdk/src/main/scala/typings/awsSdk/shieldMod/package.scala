@@ -35,6 +35,7 @@ package object shieldMod {
   */
   type AutoRenew = typings.awsSdk.shieldMod._AutoRenew | java.lang.String
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.shieldMod.ClientApiVersions
+  type ContactNotes = java.lang.String
   type Double = scala.Double
   type DurationInSeconds = scala.Double
   type EmailAddress = java.lang.String
@@ -49,6 +50,14 @@ package object shieldMod {
   type Long = scala.Double
   type MaxResults = scala.Double
   type MitigationList = js.Array[typings.awsSdk.shieldMod.Mitigation]
+  type PhoneNumber = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ENABLED
+    - typings.awsSdk.awsSdkStrings.DISABLED
+    - typings.awsSdk.awsSdkStrings.PENDING
+    - java.lang.String
+  */
+  type ProactiveEngagementStatus = typings.awsSdk.shieldMod._ProactiveEngagementStatus | java.lang.String
   type ProtectionId = java.lang.String
   type ProtectionName = java.lang.String
   type Protections = js.Array[typings.awsSdk.shieldMod.Protection]

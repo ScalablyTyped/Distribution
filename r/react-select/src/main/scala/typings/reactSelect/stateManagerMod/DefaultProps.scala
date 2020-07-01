@@ -14,7 +14,7 @@ trait DefaultProps[OptionType /* <: OptionTypeBase */] extends js.Object {
 
 object DefaultProps {
   @scala.inline
-  def apply[OptionType](
+  def apply[/* <: typings.reactSelect.typesMod.OptionTypeBase */ OptionType](
     defaultInputValue: String,
     defaultMenuIsOpen: Boolean,
     defaultValue: js.UndefOr[Null | ValueType[OptionType]] = js.undefined

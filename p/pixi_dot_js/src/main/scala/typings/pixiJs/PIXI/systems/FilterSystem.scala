@@ -1,5 +1,6 @@
 package typings.pixiJs.PIXI.systems
 
+import typings.pixiJs.PIXI.CLEAR_MODES
 import typings.pixiJs.PIXI.DisplayObject
 import typings.pixiJs.PIXI.Filter
 import typings.pixiJs.PIXI.Matrix
@@ -89,9 +90,17 @@ trait FilterSystem extends System {
     * @param {PIXI.Filter} filter - The filter to draw.
     * @param {PIXI.RenderTexture} input - The input render target.
     * @param {PIXI.RenderTexture} output - The target to output to.
-    * @param {boolean} clear - Should the output be cleared before rendering to it
+    * @param {PIXI.CLEAR_MODES} [clearMode] - Should the output be cleared before rendering to it
     */
-  def applyFilter(filter: Filter, input: RenderTexture, output: RenderTexture, clear: Boolean): Unit = js.native
+  def applyFilter(filter: Filter, input: RenderTexture, output: RenderTexture): Unit = js.native
+  def applyFilter(filter: Filter, input: RenderTexture, output: RenderTexture, clearMode: CLEAR_MODES): Unit = js.native
+  /**
+    * Binds a renderTexture with corresponding `filterFrame`, clears it if mode corresponds.
+    * @param {PIXI.RenderTexture} filterTexture - renderTexture to bind, should belong to filter pool or filter stack
+    * @param {PIXI.CLEAR_MODES} [clearMode] - clearMode, by default its CLEAR/YES. See {@link PIXI.CLEAR_MODES}
+    */
+  def bindAndClear(filterTexture: RenderTexture): Unit = js.native
+  def bindAndClear(filterTexture: RenderTexture, clearMode: CLEAR_MODES): Unit = js.native
   /**
     * Multiply _input normalized coordinates_ to this matrix to get _sprite texture normalized coordinates_.
     *
@@ -110,8 +119,8 @@ trait FilterSystem extends System {
     * Gets extra render texture to use inside current filter
     * To be compliant with older filters, you can use params in any order
     *
-    * @param {PIXI.RenderTexture} [input] renderTexture from which size and resolution will be copied
-    * @param {number} [resolution] override resolution of the renderTexture
+    * @param {PIXI.RenderTexture} [input] - renderTexture from which size and resolution will be copied
+    * @param {number} [resolution] - override resolution of the renderTexture
     * @returns {PIXI.RenderTexture}
     */
   def getFilterTexture(): RenderTexture = js.native

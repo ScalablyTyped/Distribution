@@ -39,6 +39,10 @@ trait MaintenanceWindowIdentity extends js.Object {
     */
   var Schedule: js.UndefOr[MaintenanceWindowSchedule] = js.native
   /**
+    * The number of days to wait to run a maintenance window after the scheduled CRON expression date and time.
+    */
+  var ScheduleOffset: js.UndefOr[MaintenanceWindowOffset] = js.native
+  /**
     * The time zone that the scheduled maintenance window executions are based on, in Internet Assigned Numbers Authority (IANA) format.
     */
   var ScheduleTimezone: js.UndefOr[MaintenanceWindowTimezone] = js.native
@@ -63,6 +67,7 @@ object MaintenanceWindowIdentity {
     Name: MaintenanceWindowName = null,
     NextExecutionTime: MaintenanceWindowStringDateTime = null,
     Schedule: MaintenanceWindowSchedule = null,
+    ScheduleOffset: js.UndefOr[MaintenanceWindowOffset] = js.undefined,
     ScheduleTimezone: MaintenanceWindowTimezone = null,
     StartDate: MaintenanceWindowStringDateTime = null,
     WindowId: MaintenanceWindowId = null
@@ -76,6 +81,7 @@ object MaintenanceWindowIdentity {
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (NextExecutionTime != null) __obj.updateDynamic("NextExecutionTime")(NextExecutionTime.asInstanceOf[js.Any])
     if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule.asInstanceOf[js.Any])
+    if (!js.isUndefined(ScheduleOffset)) __obj.updateDynamic("ScheduleOffset")(ScheduleOffset.get.asInstanceOf[js.Any])
     if (ScheduleTimezone != null) __obj.updateDynamic("ScheduleTimezone")(ScheduleTimezone.asInstanceOf[js.Any])
     if (StartDate != null) __obj.updateDynamic("StartDate")(StartDate.asInstanceOf[js.Any])
     if (WindowId != null) __obj.updateDynamic("WindowId")(WindowId.asInstanceOf[js.Any])

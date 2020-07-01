@@ -1,7 +1,5 @@
 package typings.relayRuntime.relayStoreTypesMod
 
-import typings.relayRuntime.relayConnectionMod.ConnectionID
-import typings.relayRuntime.relayRuntimeTypesMod.Variables
 import typings.std.NonNullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,6 +14,6 @@ trait RecordSourceSelectorProxy[T] extends RecordSourceProxy {
       /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
     ]
   ] = js.native
-  def insertConnectionEdge_UNSTABLE(connectionID: ConnectionID, args: Variables, edge: RecordProxy[js.Object]): Unit = js.native
+  def invalidateStore(): Unit = js.native
 }
 

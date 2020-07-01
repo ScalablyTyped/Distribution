@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 ///////////////////////////////////////////////////////////////////////////
 // SCEDelegateProvider
-// see http://docs.angularjs.org/api/ng.$sceDelegateProvider
+// see http://docs.angularjs.org/api/ng/provider/$sceDelegateProvider
 ///////////////////////////////////////////////////////////////////////////
 @js.native
 trait ISCEDelegateProvider extends IServiceProvider {

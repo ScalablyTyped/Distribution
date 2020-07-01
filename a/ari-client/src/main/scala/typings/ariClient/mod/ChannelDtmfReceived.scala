@@ -6,9 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChannelDtmfReceived extends Event {
+  /**
+    * The channel on which DTMF was received.
+    */
   var channel: Channel
-  /* Properties */
+  /**
+    * DTMF digit received (0-9, A-E, # or *).
+    */
   var digit: String
+  /**
+    * Number of milliseconds DTMF was received.
+    */
   var duration_ms: Double
 }
 

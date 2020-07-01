@@ -38,6 +38,10 @@ trait ImportSnapshotRequest extends js.Object {
     * The name of the role to use when not using the default role, 'vmimport'.
     */
   var RoleName: js.UndefOr[String] = js.native
+  /**
+    * The tags to apply to the snapshot being imported.
+    */
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
 }
 
 object ImportSnapshotRequest {
@@ -50,7 +54,8 @@ object ImportSnapshotRequest {
     DryRun: js.UndefOr[Boolean] = js.undefined,
     Encrypted: js.UndefOr[Boolean] = js.undefined,
     KmsKeyId: KmsKeyId = null,
-    RoleName: String = null
+    RoleName: String = null,
+    TagSpecifications: TagSpecificationList = null
   ): ImportSnapshotRequest = {
     val __obj = js.Dynamic.literal()
     if (ClientData != null) __obj.updateDynamic("ClientData")(ClientData.asInstanceOf[js.Any])
@@ -61,6 +66,7 @@ object ImportSnapshotRequest {
     if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.get.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
     if (RoleName != null) __obj.updateDynamic("RoleName")(RoleName.asInstanceOf[js.Any])
+    if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportSnapshotRequest]
   }
 }

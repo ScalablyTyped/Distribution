@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ethersproject/bignumber" : "5.0.0-beta.139"
+      "@ethersproject/bignumber" : "5.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@ethersproject/bignumber" : "5.0.0-beta.139"
+      "@ethersproject/bignumber" : "5.0.2"
     }
   ],
   "compile-devDependencies" : [

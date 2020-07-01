@@ -18,6 +18,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DOMAttributes[T] extends js.Object {
+  var exportparts: js.UndefOr[String] = js.undefined
   var key: js.UndefOr[String | Double] = js.undefined
   var onAnimationEnd: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.undefined
   var onAnimationEndCapture: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.undefined
@@ -66,6 +67,10 @@ trait DOMAttributes[T] extends js.Object {
   var onErrorCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
   var onFocusCapture: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
+  var onFocusIn: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
+  var onFocusInCapture: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
+  var onFocusOut: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
+  var onFocusOutCapture: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
   var onGotPointerCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   var onGotPointerCaptureCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   var onInput: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
@@ -138,6 +143,7 @@ trait DOMAttributes[T] extends js.Object {
 object DOMAttributes {
   @scala.inline
   def apply[T](
+    exportparts: String = null,
     key: String | Double = null,
     onAnimationEnd: /* event */ AnimationEvent => Unit = null,
     onAnimationEndCapture: /* event */ AnimationEvent => Unit = null,
@@ -186,6 +192,10 @@ object DOMAttributes {
     onErrorCapture: /* event */ Event => Unit = null,
     onFocus: /* event */ FocusEvent => Unit = null,
     onFocusCapture: /* event */ FocusEvent => Unit = null,
+    onFocusIn: /* event */ FocusEvent => Unit = null,
+    onFocusInCapture: /* event */ FocusEvent => Unit = null,
+    onFocusOut: /* event */ FocusEvent => Unit = null,
+    onFocusOutCapture: /* event */ FocusEvent => Unit = null,
     onGotPointerCapture: /* event */ PointerEvent => Unit = null,
     onGotPointerCaptureCapture: /* event */ PointerEvent => Unit = null,
     onInput: /* event */ Event => Unit = null,
@@ -255,6 +265,7 @@ object DOMAttributes {
     slot: String = null
   ): DOMAttributes[T] = {
     val __obj = js.Dynamic.literal()
+    if (exportparts != null) __obj.updateDynamic("exportparts")(exportparts.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
     if (onAnimationEndCapture != null) __obj.updateDynamic("onAnimationEndCapture")(js.Any.fromFunction1(onAnimationEndCapture))
@@ -303,6 +314,10 @@ object DOMAttributes {
     if (onErrorCapture != null) __obj.updateDynamic("onErrorCapture")(js.Any.fromFunction1(onErrorCapture))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onFocusCapture != null) __obj.updateDynamic("onFocusCapture")(js.Any.fromFunction1(onFocusCapture))
+    if (onFocusIn != null) __obj.updateDynamic("onFocusIn")(js.Any.fromFunction1(onFocusIn))
+    if (onFocusInCapture != null) __obj.updateDynamic("onFocusInCapture")(js.Any.fromFunction1(onFocusInCapture))
+    if (onFocusOut != null) __obj.updateDynamic("onFocusOut")(js.Any.fromFunction1(onFocusOut))
+    if (onFocusOutCapture != null) __obj.updateDynamic("onFocusOutCapture")(js.Any.fromFunction1(onFocusOutCapture))
     if (onGotPointerCapture != null) __obj.updateDynamic("onGotPointerCapture")(js.Any.fromFunction1(onGotPointerCapture))
     if (onGotPointerCaptureCapture != null) __obj.updateDynamic("onGotPointerCaptureCapture")(js.Any.fromFunction1(onGotPointerCaptureCapture))
     if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))

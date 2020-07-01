@@ -18,7 +18,7 @@ trait TransformBlock[T /* <: Record[String, _] */] extends Transform[T] {
 
 object TransformBlock {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.std.Record[java.lang.String, _] */ T](
     blocks: js.Array[String],
     transform: T => BlockInstance[Partial[T]],
     `type`: block_,

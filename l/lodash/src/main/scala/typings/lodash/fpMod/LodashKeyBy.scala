@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashKeyBy extends js.Object {
+trait LodashKeyBy extends LodashConvertible {
   def apply[T](iteratee: ValueIterateeCustom[T, PropertyName]): LodashKeyBy1x1[T] = js.native
   def apply[T /* <: js.Object */](
     iteratee: ValueIterateeCustom[

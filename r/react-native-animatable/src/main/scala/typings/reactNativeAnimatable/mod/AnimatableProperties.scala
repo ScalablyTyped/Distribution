@@ -26,7 +26,7 @@ trait AnimatableProperties[S /* <: js.Object */] extends js.Object {
 
 object AnimatableProperties {
   @scala.inline
-  def apply[S](
+  def apply[/* <: js.Object */ S](
     animation: Animation | String | (CustomAnimation[TextStyle with ViewStyle with ImageStyle]) = null,
     delay: js.UndefOr[Double] = js.undefined,
     direction: Direction = null,

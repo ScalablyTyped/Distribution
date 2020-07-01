@@ -1,9 +1,6 @@
 package typings.mendixmodelsdk.restMod.rest
 
 import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.domainmodelsMod.domainmodels.IEntity
-import typings.mendixmodelsdk.elementsMod.IByNameReferrable
-import typings.mendixmodelsdk.instancesMod.IList
 import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.Element
@@ -16,6 +13,7 @@ import scala.scalajs.js.annotation._
 /**
   * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
   *
+  * In version 8.11.0: deleted
   * In version 8.9.0: added public
   * In version 7.18.0: introduced
   */
@@ -24,11 +22,9 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
-- typings.mendixmodelsdk.restMod.rest.IODataEntity because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsConsumedODataService, name, key */ @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataEntity")
+- typings.mendixmodelsdk.restMod.rest.IODataEntity because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsConsumedODataService */ @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataEntity")
 @js.native
-class ODataEntity protected ()
-  extends Element
-     with IByNameReferrable {
+class ODataEntity protected () extends Element {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -39,73 +35,9 @@ class ODataEntity protected ()
   ) = this()
   @JSName("containerAsConsumedODataService")
   val containerAsConsumedODataService_FODataEntity: IConsumedODataService = js.native
-  /**
-    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 8.9.0: introduced
-    */
-  @JSName("key")
-  val key_FODataEntity: IODataKey | Null = js.native
   @JSName("model")
   var model_FODataEntity: IModel = js.native
-  /**
-    * In version 8.10.0: added public
-    */
-  @JSName("name")
-  val name_FODataEntity: String = js.native
-  /**
-    * Returns the qualified name of this element, or
-    * null if this element is not a part of the model,
-    * or if it or one of its namespace containers does not have a
-    * valid name.
-    */
-  /* CompleteClass */
-  override val qualifiedName: String | Null = js.native
-  /**
-    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 8.0.0: introduced
-    */
-  def attributes: IList[ODataAttribute] = js.native
   def containerAsConsumedODataService: ConsumedODataService = js.native
-  /**
-    * In version 8.10.0: deleted
-    */
-  def entity: IEntity = js.native
-  def entity(newValue: IEntity): js.Any = js.native
-  def entityQualifiedName: String = js.native
-  /**
-    * In version 7.19.0: introduced
-    */
-  def entitySet: String = js.native
-  def entitySet(newValue: String): js.Any = js.native
-  def key(): js.Any = js.native
-  def key(newValue: ODataKey): js.Any = js.native
-  /**
-    * In version 8.9.0: deleted
-    * In version 7.22.0: introduced
-    */
-  def keyNames: IList[String] = js.native
-  /**
-    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 8.9.0: introduced
-    */
-  @JSName("key")
-  def key_Union: ODataKey | Null = js.native
-  /**
-    * In version 8.10.0: added public
-    */
-  def name: String = js.native
-  def name(newValue: String): js.Any = js.native
-  /**
-    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.22.0: introduced
-    */
-  def navigationProperties: IList[ODataNavigationProperty] = js.native
-  @JSName("qualifiedName")
-  def qualifiedName_MODataEntity: String | Null = js.native
 }
 
 /* static members */
@@ -126,7 +58,7 @@ object ODataEntity extends js.Object {
     * of the parent ConsumedODataService element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.18.0 and higher
+    *  7.18.0 to 8.10.0
     */
   def createIn(container: ConsumedODataService): ODataEntity = js.native
 }

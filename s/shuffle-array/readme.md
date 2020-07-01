@@ -1,6 +1,7 @@
 
 # Scala.js typings for shuffle-array
 
+Typings are for version 1.0
 
 ## Library description:
 Randomize the order of the elements in a given array.

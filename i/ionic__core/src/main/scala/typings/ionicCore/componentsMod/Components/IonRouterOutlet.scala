@@ -36,5 +36,11 @@ trait IonRouterOutlet extends js.Object {
   def commit(enteringEl: HTMLElement, leavingEl: HTMLElement, opts: RouterOutletOptions): js.Promise[Boolean] = js.native
   def getRouteId(): js.Promise[js.UndefOr[RouteID]] = js.native
   def setRouteId(id: String, params: js.UndefOr[ComponentProps[Null]], direction: RouterDirection): js.Promise[RouteWrite] = js.native
+  def setRouteId(
+    id: String,
+    params: js.UndefOr[ComponentProps[Null]],
+    direction: RouterDirection,
+    animation: AnimationBuilder
+  ): js.Promise[RouteWrite] = js.native
 }
 

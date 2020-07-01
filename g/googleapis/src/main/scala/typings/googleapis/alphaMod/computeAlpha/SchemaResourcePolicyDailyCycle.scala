@@ -28,9 +28,9 @@ trait SchemaResourcePolicyDailyCycle extends js.Object {
 
 object SchemaResourcePolicyDailyCycle {
   @scala.inline
-  def apply(daysInCycle: Int | Double = null, duration: String = null, startTime: String = null): SchemaResourcePolicyDailyCycle = {
+  def apply(daysInCycle: js.UndefOr[Double] = js.undefined, duration: String = null, startTime: String = null): SchemaResourcePolicyDailyCycle = {
     val __obj = js.Dynamic.literal()
-    if (daysInCycle != null) __obj.updateDynamic("daysInCycle")(daysInCycle.asInstanceOf[js.Any])
+    if (!js.isUndefined(daysInCycle)) __obj.updateDynamic("daysInCycle")(daysInCycle.get.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResourcePolicyDailyCycle]

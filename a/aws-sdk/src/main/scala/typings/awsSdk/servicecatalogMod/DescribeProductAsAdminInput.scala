@@ -13,14 +13,20 @@ trait DescribeProductAsAdminInput extends js.Object {
   /**
     * The product identifier.
     */
-  var Id: typings.awsSdk.servicecatalogMod.Id = js.native
+  var Id: js.UndefOr[typings.awsSdk.servicecatalogMod.Id] = js.native
+  /**
+    * The product name.
+    */
+  var Name: js.UndefOr[ProductViewName] = js.native
 }
 
 object DescribeProductAsAdminInput {
   @scala.inline
-  def apply(Id: Id, AcceptLanguage: AcceptLanguage = null): DescribeProductAsAdminInput = {
-    val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
+  def apply(AcceptLanguage: AcceptLanguage = null, Id: Id = null, Name: ProductViewName = null): DescribeProductAsAdminInput = {
+    val __obj = js.Dynamic.literal()
     if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeProductAsAdminInput]
   }
 }

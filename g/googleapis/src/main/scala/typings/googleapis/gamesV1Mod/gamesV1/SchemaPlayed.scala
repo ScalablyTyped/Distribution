@@ -31,7 +31,7 @@ object SchemaPlayed {
   @scala.inline
   def apply(autoMatched: js.UndefOr[Boolean] = js.undefined, kind: String = null, timeMillis: String = null): SchemaPlayed = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoMatched)) __obj.updateDynamic("autoMatched")(autoMatched.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoMatched)) __obj.updateDynamic("autoMatched")(autoMatched.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (timeMillis != null) __obj.updateDynamic("timeMillis")(timeMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPlayed]

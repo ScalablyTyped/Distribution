@@ -6,8 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChannelHold extends Event {
-  /* Properties */
+  /**
+    * The channel that initiated the hold event.
+    */
   var channel: Channel
+  /**
+    * The music on hold class that the initiator requested.
+    */
   var musicclass: js.UndefOr[String] = js.undefined
 }
 

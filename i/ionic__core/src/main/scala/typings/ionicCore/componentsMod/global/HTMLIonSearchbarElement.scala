@@ -24,6 +24,7 @@ import typings.ionicCore.ionicCoreStrings.send
 import typings.ionicCore.ionicCoreStrings.tel
 import typings.ionicCore.ionicCoreStrings.text
 import typings.ionicCore.ionicCoreStrings.url
+import typings.ionicCore.mod.AutocompleteTypes
 import typings.ionicCore.mod.Color
 import typings.ionicCore.stencilPublicRuntimeMod.HTMLStencilElement
 import typings.std.HTMLInputElement
@@ -41,7 +42,7 @@ trait HTMLIonSearchbarElement extends HTMLStencilElement {
   /**
     * Set the input's autocomplete property.
     */
-  var autocomplete: on | off = js.native
+  var autocomplete: AutocompleteTypes = js.native
   /**
     * Set the input's autocorrect property.
     */

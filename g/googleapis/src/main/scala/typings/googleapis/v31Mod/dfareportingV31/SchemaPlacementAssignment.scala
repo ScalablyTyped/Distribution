@@ -39,10 +39,10 @@ object SchemaPlacementAssignment {
     sslRequired: js.UndefOr[Boolean] = js.undefined
   ): SchemaPlacementAssignment = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (placementId != null) __obj.updateDynamic("placementId")(placementId.asInstanceOf[js.Any])
     if (placementIdDimensionValue != null) __obj.updateDynamic("placementIdDimensionValue")(placementIdDimensionValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(sslRequired)) __obj.updateDynamic("sslRequired")(sslRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(sslRequired)) __obj.updateDynamic("sslRequired")(sslRequired.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPlacementAssignment]
   }
 }

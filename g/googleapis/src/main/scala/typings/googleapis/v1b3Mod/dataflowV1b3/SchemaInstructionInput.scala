@@ -24,10 +24,13 @@ trait SchemaInstructionInput extends js.Object {
 
 object SchemaInstructionInput {
   @scala.inline
-  def apply(outputNum: Int | Double = null, producerInstructionIndex: Int | Double = null): SchemaInstructionInput = {
+  def apply(
+    outputNum: js.UndefOr[Double] = js.undefined,
+    producerInstructionIndex: js.UndefOr[Double] = js.undefined
+  ): SchemaInstructionInput = {
     val __obj = js.Dynamic.literal()
-    if (outputNum != null) __obj.updateDynamic("outputNum")(outputNum.asInstanceOf[js.Any])
-    if (producerInstructionIndex != null) __obj.updateDynamic("producerInstructionIndex")(producerInstructionIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputNum)) __obj.updateDynamic("outputNum")(outputNum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(producerInstructionIndex)) __obj.updateDynamic("producerInstructionIndex")(producerInstructionIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstructionInput]
   }
 }

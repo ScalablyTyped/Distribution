@@ -24,7 +24,7 @@ trait Handler_[T /* <: Request */] extends js.Object {
 
 object Handler_ {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.alexaSdk.mod.Request */ T](
     attributes: js.Any,
     callback: js.Any => Unit,
     context: js.Any,

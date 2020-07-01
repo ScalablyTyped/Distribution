@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-cloud__firestore
 
-Typings are for version 3.8.0
+Typings are for version 3.8.6
 
 ## Library description:
 Firestore Client Library for Node.js

@@ -14,7 +14,7 @@ trait ExtendedGeometryCollection[GeometryType /* <: GeoGeometryObjects */] exten
 
 object ExtendedGeometryCollection {
   @scala.inline
-  def apply[GeometryType](
+  def apply[/* <: typings.d3Geo.mod.GeoGeometryObjects */ GeometryType](
     geometries: js.Array[GeometryType],
     `type`: String,
     bbox: js.Array[Double] = null,

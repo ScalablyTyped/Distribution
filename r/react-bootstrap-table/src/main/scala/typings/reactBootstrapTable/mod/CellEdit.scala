@@ -71,7 +71,7 @@ trait CellEdit[TRow /* <: js.Object */] extends js.Object {
 
 object CellEdit {
   @scala.inline
-  def apply[TRow](
+  def apply[/* <: js.Object */ TRow](
     mode: CellEditClickMode,
     afterSaveCell: (/* row */ TRow, /* keyof TRow */ /* cellName */ String, /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, /* props */ ColIndex) => Unit = null,
     beforeSaveCell: (/* row */ TRow, /* keyof TRow */ /* cellName */ String, /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, /* done */ js.Function1[/* isValid */ Boolean, Unit], /* props */ ColIndex) => Boolean | `1` = null,

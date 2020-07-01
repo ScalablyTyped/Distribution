@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Tag extends js.Object {
   /**
-    * Tag key (String). The key can't start with aws:. 
+    * Tag key. The key can't start with aws:.
     */
   var Key: TagKey = js.native
   /**

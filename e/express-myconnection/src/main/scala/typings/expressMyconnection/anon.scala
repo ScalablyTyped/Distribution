@@ -1,5 +1,6 @@
 package typings.expressMyconnection
 
+import typings.mysql.anon.ToSqlString
 import typings.mysql.mod.Connection
 import typings.mysql.mod.ConnectionConfig
 import typings.mysql.mod.Pool
@@ -29,7 +30,7 @@ object anon extends js.Object {
     def format(sql: String, values: js.Array[_]): String = js.native
     def format(sql: String, values: js.Array[_], stringifyObjects: Boolean): String = js.native
     def format(sql: String, values: js.Array[_], stringifyObjects: Boolean, timeZone: String): String = js.native
-    def raw(sql: String): js.Function0[String] = js.native
+    def raw(sql: String): ToSqlString = js.native
   }
   
 }

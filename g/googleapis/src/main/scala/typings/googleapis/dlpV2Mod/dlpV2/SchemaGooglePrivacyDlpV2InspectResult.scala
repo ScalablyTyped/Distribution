@@ -32,7 +32,7 @@ object SchemaGooglePrivacyDlpV2InspectResult {
   ): SchemaGooglePrivacyDlpV2InspectResult = {
     val __obj = js.Dynamic.literal()
     if (findings != null) __obj.updateDynamic("findings")(findings.asInstanceOf[js.Any])
-    if (!js.isUndefined(findingsTruncated)) __obj.updateDynamic("findingsTruncated")(findingsTruncated.asInstanceOf[js.Any])
+    if (!js.isUndefined(findingsTruncated)) __obj.updateDynamic("findingsTruncated")(findingsTruncated.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2InspectResult]
   }
 }

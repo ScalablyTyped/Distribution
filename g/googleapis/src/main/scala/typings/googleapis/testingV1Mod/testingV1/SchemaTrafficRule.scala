@@ -34,18 +34,18 @@ trait SchemaTrafficRule extends js.Object {
 object SchemaTrafficRule {
   @scala.inline
   def apply(
-    bandwidth: Int | Double = null,
-    burst: Int | Double = null,
+    bandwidth: js.UndefOr[Double] = js.undefined,
+    burst: js.UndefOr[Double] = js.undefined,
     delay: String = null,
-    packetDuplicationRatio: Int | Double = null,
-    packetLossRatio: Int | Double = null
+    packetDuplicationRatio: js.UndefOr[Double] = js.undefined,
+    packetLossRatio: js.UndefOr[Double] = js.undefined
   ): SchemaTrafficRule = {
     val __obj = js.Dynamic.literal()
-    if (bandwidth != null) __obj.updateDynamic("bandwidth")(bandwidth.asInstanceOf[js.Any])
-    if (burst != null) __obj.updateDynamic("burst")(burst.asInstanceOf[js.Any])
+    if (!js.isUndefined(bandwidth)) __obj.updateDynamic("bandwidth")(bandwidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(burst)) __obj.updateDynamic("burst")(burst.get.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (packetDuplicationRatio != null) __obj.updateDynamic("packetDuplicationRatio")(packetDuplicationRatio.asInstanceOf[js.Any])
-    if (packetLossRatio != null) __obj.updateDynamic("packetLossRatio")(packetLossRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(packetDuplicationRatio)) __obj.updateDynamic("packetDuplicationRatio")(packetDuplicationRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(packetLossRatio)) __obj.updateDynamic("packetLossRatio")(packetLossRatio.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTrafficRule]
   }
 }

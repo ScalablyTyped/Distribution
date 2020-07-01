@@ -8,7 +8,7 @@ trait CookieSessionRequest extends js.Object {
   /**
     * Represents the session for the given request.
     */
-  var session: js.UndefOr[CookieSessionObject | Null] = js.undefined
+  var session: CookieSessionObject | Null
   /**
     * Represents the session options for the current request. These options are a shallow clone of what was provided at middleware construction and can be altered to change cookie setting behavior on a per-request basis.
     */
@@ -17,12 +17,8 @@ trait CookieSessionRequest extends js.Object {
 
 object CookieSessionRequest {
   @scala.inline
-  def apply(
-    sessionOptions: CookieSessionOptions,
-    session: js.UndefOr[Null | CookieSessionObject] = js.undefined
-  ): CookieSessionRequest = {
-    val __obj = js.Dynamic.literal(sessionOptions = sessionOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(session)) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+  def apply(sessionOptions: CookieSessionOptions, session: CookieSessionObject = null): CookieSessionRequest = {
+    val __obj = js.Dynamic.literal(sessionOptions = sessionOptions.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
     __obj.asInstanceOf[CookieSessionRequest]
   }
 }

@@ -11,5 +11,9 @@ package object mod {
     - typings.reactColor.mod.RGBColor
   */
   type Color = typings.reactColor.mod._Color | java.lang.String
-  type ColorChangeHandler = js.Function1[/* color */ typings.reactColor.mod.ColorResult, scala.Unit]
+  type ColorChangeHandler = js.Function2[
+    /* color */ typings.reactColor.mod.ColorResult, 
+    /* event */ typings.react.mod.ChangeEvent[typings.std.HTMLInputElement], 
+    scala.Unit
+  ]
 }

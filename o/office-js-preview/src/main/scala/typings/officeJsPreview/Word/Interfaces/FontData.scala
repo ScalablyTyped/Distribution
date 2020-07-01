@@ -25,7 +25,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "font.toJSON()". */
+/** An interface describing the data returned by calling `font.toJSON()`. */
 trait FontData extends js.Object {
   /**
     *

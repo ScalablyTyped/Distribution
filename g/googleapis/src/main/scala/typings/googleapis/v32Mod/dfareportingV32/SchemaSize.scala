@@ -36,18 +36,18 @@ trait SchemaSize extends js.Object {
 object SchemaSize {
   @scala.inline
   def apply(
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     iab: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     kind: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): SchemaSize = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(iab)) __obj.updateDynamic("iab")(iab.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(iab)) __obj.updateDynamic("iab")(iab.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSize]
   }
 }

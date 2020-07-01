@@ -15,7 +15,7 @@ trait TSEntityName extends _Node
 object TSEntityName {
   @scala.inline
   def Identifier_(
-    name: js.Any,
+    name: String,
     `type`: Identifier,
     decorators: js.Array[Decorator_] = null,
     end: Double = null.asInstanceOf[Double],

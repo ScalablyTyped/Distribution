@@ -12,6 +12,7 @@ import typings.reactNativeNavigation.componentEventsMod.SearchBarCancelPressedEv
 import typings.reactNativeNavigation.componentEventsMod.SearchBarUpdatedEvent
 import typings.reactNativeNavigation.eventSubscriptionMod.EventSubscription
 import typings.reactNativeNavigation.nativeEventsReceiverMod.NativeEventsReceiver
+import typings.reactNativeNavigation.navigationComponentListenerMod.NavigationComponentListener
 import typings.reactNativeNavigation.storeMod.Store
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,6 +40,7 @@ object componentEventsObserverMod extends js.Object {
     def notifyScreenPopped(event: ScreenPoppedEvent): Unit = js.native
     def notifySearchBarCancelPressed(event: SearchBarCancelPressedEvent): Unit = js.native
     def notifySearchBarUpdated(event: SearchBarUpdatedEvent): Unit = js.native
+    def registerComponentListener(listener: NavigationComponentListener, componentId: String): EventSubscription = js.native
     def registerOnceForAllComponentEvents(): Unit = js.native
     def unmounted(componentId: String): Unit = js.native
   }

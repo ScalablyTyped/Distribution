@@ -13,7 +13,7 @@ trait WalkOptionsVisit[NodeType /* <: CssNode */] extends js.Object {
 
 object WalkOptionsVisit {
   @scala.inline
-  def apply[NodeType](
+  def apply[/* <: typings.cssTree.mod.CssNode */ NodeType](
     visit: /* import warning: importer.ImportType#apply Failed type conversion: NodeType['type'] */ js.Any,
     enter: EnterOrLeaveFn[NodeType] = null,
     leave: EnterOrLeaveFn[NodeType] = null,

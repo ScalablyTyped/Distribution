@@ -1,7 +1,7 @@
 
 # Scala.js typings for vue-router
 
-Typings are for version 3.2.0
+Typings are for version 3.3.4
 
 ## Library description:
 Official router for Vue.js 2

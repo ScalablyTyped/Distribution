@@ -21,10 +21,10 @@ trait SchemaExpansionFile extends js.Object {
 
 object SchemaExpansionFile {
   @scala.inline
-  def apply(fileSize: String = null, referencesVersion: Int | Double = null): SchemaExpansionFile = {
+  def apply(fileSize: String = null, referencesVersion: js.UndefOr[Double] = js.undefined): SchemaExpansionFile = {
     val __obj = js.Dynamic.literal()
     if (fileSize != null) __obj.updateDynamic("fileSize")(fileSize.asInstanceOf[js.Any])
-    if (referencesVersion != null) __obj.updateDynamic("referencesVersion")(referencesVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(referencesVersion)) __obj.updateDynamic("referencesVersion")(referencesVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExpansionFile]
   }
 }

@@ -143,6 +143,14 @@ trait DBCluster extends js.Object {
     */
   var EngineVersion: js.UndefOr[String] = js.native
   /**
+    * Specifies whether you have requested to enable write forwarding for a secondary cluster in an Aurora global database. Because write forwarding takes time to enable, check the value of GlobalWriteForwardingStatus to confirm that the request has completed before using the write forwarding feature for this cluster.
+    */
+  var GlobalWriteForwardingRequested: js.UndefOr[BooleanOptional] = js.native
+  /**
+    * Specifies whether a secondary cluster in an Aurora global database has write forwarding enabled, not enabled, or is in the process of enabling it.
+    */
+  var GlobalWriteForwardingStatus: js.UndefOr[WriteForwardingStatus] = js.native
+  /**
     * Specifies the ID that Amazon Route 53 assigns when you create a hosted zone.
     */
   var HostedZoneId: js.UndefOr[String] = js.native
@@ -250,6 +258,8 @@ object DBCluster {
     Engine: String = null,
     EngineMode: String = null,
     EngineVersion: String = null,
+    GlobalWriteForwardingRequested: js.UndefOr[BooleanOptional] = js.undefined,
+    GlobalWriteForwardingStatus: WriteForwardingStatus = null,
     HostedZoneId: String = null,
     HttpEndpointEnabled: js.UndefOr[BooleanOptional] = js.undefined,
     IAMDatabaseAuthenticationEnabled: js.UndefOr[BooleanOptional] = js.undefined,
@@ -304,6 +314,8 @@ object DBCluster {
     if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
     if (EngineMode != null) __obj.updateDynamic("EngineMode")(EngineMode.asInstanceOf[js.Any])
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(GlobalWriteForwardingRequested)) __obj.updateDynamic("GlobalWriteForwardingRequested")(GlobalWriteForwardingRequested.get.asInstanceOf[js.Any])
+    if (GlobalWriteForwardingStatus != null) __obj.updateDynamic("GlobalWriteForwardingStatus")(GlobalWriteForwardingStatus.asInstanceOf[js.Any])
     if (HostedZoneId != null) __obj.updateDynamic("HostedZoneId")(HostedZoneId.asInstanceOf[js.Any])
     if (!js.isUndefined(HttpEndpointEnabled)) __obj.updateDynamic("HttpEndpointEnabled")(HttpEndpointEnabled.get.asInstanceOf[js.Any])
     if (!js.isUndefined(IAMDatabaseAuthenticationEnabled)) __obj.updateDynamic("IAMDatabaseAuthenticationEnabled")(IAMDatabaseAuthenticationEnabled.get.asInstanceOf[js.Any])

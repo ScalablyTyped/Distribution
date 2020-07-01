@@ -20,7 +20,7 @@ object SchemaFirewallLogConfig {
   @scala.inline
   def apply(enable: js.UndefOr[Boolean] = js.undefined): SchemaFirewallLogConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFirewallLogConfig]
   }
 }

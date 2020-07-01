@@ -36,6 +36,7 @@ object focusTrapZoneFocusTrapZoneMod extends js.Object {
     var _previouslyFocusedElementOutsideTrapZone: js.Any = js.native
     var _returnFocusToInitiator: js.Any = js.native
     var _root: js.Any = js.native
+    var _unmodalize: js.UndefOr[js.Any] = js.native
     var _updateEventHandlers: js.Any = js.native
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MFocusTrapZone(nextProps: IFocusTrapZoneProps): Unit = js.native

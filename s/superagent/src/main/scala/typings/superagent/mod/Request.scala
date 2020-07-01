@@ -86,9 +86,9 @@ trait Request extends Promise[Response] {
   def unset(field: String): this.type = js.native
   def use(fn: Plugin): this.type = js.native
   def withCredentials(): this.type = js.native
-  def write(data: String): this.type = js.native
-  def write(data: String, encoding: String): this.type = js.native
-  def write(data: Buffer): this.type = js.native
-  def write(data: Buffer, encoding: String): this.type = js.native
+  def write(data: String): Boolean = js.native
+  def write(data: String, encoding: String): Boolean = js.native
+  def write(data: Buffer): Boolean = js.native
+  def write(data: Buffer, encoding: String): Boolean = js.native
 }
 

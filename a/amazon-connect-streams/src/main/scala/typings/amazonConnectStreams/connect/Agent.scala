@@ -4,173 +4,176 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * The Agent API provides event subscription methods and action methods which can be called on behalf of the agent.
+  * There is only ever one agent per Streams instantiation and all contacts and actions are assumed to be taken on behalf of this one agent.
+  */
+@js.native
 trait Agent extends js.Object {
   /**
     * Creates an outbound contact to the given endpoint.
     *
-    * @param endpoint An object describing the endpoint to which to connect.
-    * @param successFailOptions Optional success and failure callbacks can be provided to determine whether the operation was successful.
+    * @param endpoint An `Endpoint` API object to connect to.
+    * @param connectOptions The connection options.
     */
-  def connect(endpoint: Endpoint, successFailOptions: ConnectOptions): Unit
+  def connect(endpoint: Endpoint): Unit = js.native
+  def connect(endpoint: Endpoint, connectOptions: ConnectOptions): Unit = js.native
   /**
-    * Gets the list of selectable AgentState API objects.
+    * Gets the list of selectable `AgentState` API objects.
+    * These are the agent states that can be selected when the agent is not handling a live contact.
     */
-  def getAgentStates(): js.Array[AgentState]
+  def getAgentStates(): js.Array[AgentStateDefinition] = js.native
+  /** Returns a list of the ARNs associated with this agent's routing profile's queues. */
+  def getAllQueueARNs(): js.Array[String] = js.native
   /**
-    * Gets the full AgentConfiguration object for the agent.
+    * Gets a map of channel type to 1 or 0.
+    * 1 represents an enabled channel.
+    * 0 represents a disabled channel.
     */
-  def getConfiguration(): AgentConfiguration
-  // /**
-  //  * For internal purposes only.
-  //  */
-  // getPermissions(): string[];
+  def getChannelConcurrency(): AgentChannelConcurrencyMap = js.native
   /**
-    * Gets a list of Contact API objects for each of the agent's current contacts.
+    * Gets a number indicating how many concurrent contacts can an agent have on a given channel.
+    * 0 represents a disabled channel.
+    *
+    * @param channel The channel to get the configured concurrency.
     */
-  def getContacts(contactTypeFilter: String): js.Array[Contact]
+  def getChannelConcurrency(channel: ChannelType): Double = js.native
+  /** Gets the full `AgentConfiguration` object for the agent. */
+  def getConfiguration(): AgentConfiguration = js.native
   /**
-    * Gets the agent's phone number from the AgentConfiguration object for the agent.
+    * Gets a list of `Contact` API objects for each of the agent's current contacts.
+    *
+    * @param contactTypeFilter If provided, only contacts of the given `ContactType` enum are returned.
     */
-  def getExtension(): String
+  def getContacts(): js.Array[Contact] = js.native
+  def getContacts(contactTypeFilter: ContactType): js.Array[Contact] = js.native
+  /** Returns a list of eligible countries to be dialed / deskphone redirected. */
+  def getDialableCountries(): js.Array[String] = js.native
   /**
-    * Gets the agent's user friendly display name from the AgentConfiguration object for the agent.
+    * Returns the endpoints associated with the queueARNs specified in `queueARNs`.
+    *
+    * @param queueARNs A single Queue ARN or a list of Queue ARNs associated with the desired queues.
+    * @param callbacks Success and failure callbacks to determine whether the operation was successful.
     */
-  def getName(): String
+  def getEndpoints(queueARNs: String, callbacks: GetEndpointsCallbacks): Unit = js.native
+  def getEndpoints(queueARNs: js.Array[String], callbacks: GetEndpointsCallbacks): Unit = js.native
   /**
-    * Gets the agent's routing profile.
+    * Gets the agent's phone number.
+    * This is the phone number that is dialed by Amazon Connect to connect calls to the agent for incoming and outgoing calls if softphone is not enabled.
     */
-  def getRoutingProfile(): AgentRoutingProfile
+  def getExtension(): String = js.native
+  /** Gets the agent's user friendly display name. */
+  def getName(): String = js.native
   /**
-    * Get the agent's current AgentState object indicating their availability state type.
+    * Mostly for internal purposes only.
+    * Contains strings which indicates actions that the agent can take in the CCP.
     */
-  def getState(): AgentState
+  def getPermissions(): js.Array[String] = js.native
+  /** Gets the agent's routing profile. */
+  def getRoutingProfile(): AgentRoutingProfile = js.native
+  /** Get the agent's current `AgentState` object indicating their availability state type. */
+  def getState(): AgentState = js.native
   /**
     * Get the duration of the agent's state in milliseconds relative to local time.
+    * This takes into account time skew between the JS client and the Amazon Connect service.
     */
-  def getStateDuration(): Double
-  /**
-    * Determine if softphone is enabled for the agent.
-    */
-  def isSoftphoneEnabled(): Boolean
-  /*
-    * Sets the agent local media to mute mode.
-    */
-  def mute(): Unit
+  def getStateDuration(): Double = js.native
+  /** Alias for `getState()`. */
+  def getStatus(): AgentState = js.native
+  /** Indicates whether the agent's phone calls should route to the agent's browser-based softphone or the telephone number configured as the agent's extension. */
+  def isSoftphoneEnabled(): Boolean = js.native
+  /** Sets the agent local media to mute mode. */
+  def mute(): Unit = js.native
   /**
     * Subscribe a method to be called when the agent enters the "After Call Work" (ACW) state.
+    * This is a non-routable state which exists to allow agents some time to wrap up after handling a contact before they are routed additional contacts.
     *
-    * @param callback A callback to receive updated Agent information.
+    * @param callback A callback to receive the `Agent` API object instance.
     */
-  def onAfterCallWork(callback: AgentCallback): Unit
+  def onAfterCallWork(callback: AgentCallback): Unit = js.native
   /**
-    * Subscribe a method to be called whenever Contact information is about to be updated.
+    * Subscribe a method to be called whenever a contact enters the pending state for this particular agent.
     *
-    * @param callback A callback to receive updated Agent information.
+    * @param callback A callback to receive the `Agent` API object instance.
     */
-  def onContactPending(callback: AgentCallback): Unit
+  def onContactPending(callback: AgentCallback): Unit = js.native
   /**
     * Subscribe a method to be called when the agent is put into an error state.
+    * This can occur if Streams is unable to get new agent data, or if the agent fails to accept an incoming contact, or in other error cases.
+    * It means that the agent is not routable, and may require that the agent switch to a routable state before being able to be routed contacts again.
     *
-    * @param callback A callback to receive updated Agent information.
+    * @param callback A callback to receive the `Agent` API object instance.
     */
-  def onError(callback: AgentCallback): Unit
+  def onError(callback: AgentCallback): Unit = js.native
   /**
-    * Subscribe a method to be called when the agent updates the mute status,
-    * meaning that agents mute/unmute APIs are called and the local media stream
-    * is succesfully updated with the new status.
+    * Subscribe a method to be called when the agent updates the mute status, meaning that agents mute/unmute APIs are called and the local media stream is succesfully updated with the new status.
     *
     * @param callback A callback to receive updates on agent mute state
     */
-  def onMuteToggle(callback: MuteCallback): Unit
+  def onMuteToggle(callback: AgentMutedStatusCallback): Unit = js.native
   /**
     * Subscribe a method to be called when the agent becomes not-routable, meaning that they are online but cannot be routed incoming contacts.
     *
-    * @param callback A callback to receive updated Agent information.
+    * @param callback A callback to receive the `Agent` API object instance.
     */
-  def onNotRoutable(callback: AgentCallback): Unit
+  def onNotRoutable(callback: AgentCallback): Unit = js.native
   /**
     * Subscribe a method to be called when the agent goes offline.
     *
-    * @param callback A callback to receive updated Agent information.
+    * @param callback A callback to receive the `Agent` API object instance.
     */
-  def onOffline(callback: AgentCallback): Unit
+  def onOffline(callback: AgentCallback): Unit = js.native
   /**
     * Subscribe a method to be called whenever new agent data is available.
     *
-    * @param callback A callback to receive updated Agent information.
+    * @param callback A callback to receive the `Agent` API object instance.
     */
-  def onRefresh(callback: AgentCallback): Unit
+  def onRefresh(callback: AgentCallback): Unit = js.native
   /**
     * Subscribe a method to be called when the agent becomes routable, meaning that they can be routed incoming contacts.
     *
-    * @param callback A callback to receive updated Agent information.
+    * @param callback A callback to receive the `Agent` API object instance.
     */
-  def onRoutable(callback: AgentCallback): Unit
+  def onRoutable(callback: AgentCallback): Unit = js.native
   /**
-    * Subscribe a method to be called when the agent is put into an error state specific to softphone functionality.
-    * @param callback
-    */
-  def onSoftphoneError(callback: AgentCallback): Unit
-  /**
-    * Subscribe a method to be called whenever new agent data is available.
-    * @param callback
-    */
-  def onStateChange(callback: js.Function1[/* agentStateChange */ AgentStateChange, Unit]): Unit
-  /**
-    * Updates the agent's configuration with the given AgentConfiguration object.
+    * Subscribe a method to be called when the agent is put into an error state specific to softphone funcionality.
     *
-    * @param configuration The desired configuration
-    * @param successFailOptions Optional success and failure callbacks can be provided to determine whether the operation was successful.
+    * @param callback A callback to receive the `SoftphoneError` error.
     */
-  def setConfiguration(configuration: AgentConfiguration, successFailOptions: SuccessFailOptions): Unit
+  def onSoftphoneError(callback: SoftphoneErrorCallback): Unit = js.native
+  /**
+    * Subscribe a method to be called when the agent's state changes.
+    *
+    * @param callback A callback to receive the `AgentStateChange` API object instance.
+    */
+  def onStateChange(callback: AgentStateChangeCallback): Unit = js.native
+  /**
+    * Updates the agent's configuration with the given `AgentConfiguration` object.
+    * The phone number specified must be in E.164 format or the update fails.
+    *
+    * @param config The desired configuration.
+    * @param callbacks Success and failure callbacks to determine whether the operation was successful.
+    */
+  def setConfiguration(config: AgentConfiguration): Unit = js.native
+  def setConfiguration(config: AgentConfiguration, callbacks: SuccessFailOptions): Unit = js.native
   /**
     * Set the agent's current availability state.
+    * Can only be performed if the agent is not handling a live contact.
     *
     * @param state The new agent state.
-    * @param successFailOptions Optional success and failure callbacks can be provided to determine whether the operation was successful.
+    * @param callbacks Success and failure callbacks to determine whether the operation was successful.
     */
-  def setState(state: AgentState, successFailOptions: SuccessFailOptions): Unit
+  def setState(state: AgentStateDefinition): Unit = js.native
+  def setState(state: AgentStateDefinition, callbacks: SuccessFailOptions): Unit = js.native
+  /** Alias for `setState()`. */
+  def setStatus(state: AgentStateDefinition): Unit = js.native
+  def setStatus(state: AgentStateDefinition, callbacks: SuccessFailOptions): Unit = js.native
   /**
-    * Create a snapshot version of the current Agent state and save it for future use, such as adding to a log file or posting elsewhere.
+    * The data behind the `Agent` API object is ephemeral and changes whenever new data is provided.
+    * This method provides an opportunity to create a snapshot version of the `Agent` API object and save it for future use, such as adding to a log file or posting elsewhere.
     */
-  def toSnapshot(): Agent
-  /*
-    * Sets the agent localmedia to unmute mode.
-    */
-  def unmute(): Unit
-}
-
-object Agent {
-  @scala.inline
-  def apply(
-    connect: (Endpoint, ConnectOptions) => Unit,
-    getAgentStates: () => js.Array[AgentState],
-    getConfiguration: () => AgentConfiguration,
-    getContacts: String => js.Array[Contact],
-    getExtension: () => String,
-    getName: () => String,
-    getRoutingProfile: () => AgentRoutingProfile,
-    getState: () => AgentState,
-    getStateDuration: () => Double,
-    isSoftphoneEnabled: () => Boolean,
-    mute: () => Unit,
-    onAfterCallWork: AgentCallback => Unit,
-    onContactPending: AgentCallback => Unit,
-    onError: AgentCallback => Unit,
-    onMuteToggle: MuteCallback => Unit,
-    onNotRoutable: AgentCallback => Unit,
-    onOffline: AgentCallback => Unit,
-    onRefresh: AgentCallback => Unit,
-    onRoutable: AgentCallback => Unit,
-    onSoftphoneError: AgentCallback => Unit,
-    onStateChange: js.Function1[/* agentStateChange */ AgentStateChange, Unit] => Unit,
-    setConfiguration: (AgentConfiguration, SuccessFailOptions) => Unit,
-    setState: (AgentState, SuccessFailOptions) => Unit,
-    toSnapshot: () => Agent,
-    unmute: () => Unit
-  ): Agent = {
-    val __obj = js.Dynamic.literal(connect = js.Any.fromFunction2(connect), getAgentStates = js.Any.fromFunction0(getAgentStates), getConfiguration = js.Any.fromFunction0(getConfiguration), getContacts = js.Any.fromFunction1(getContacts), getExtension = js.Any.fromFunction0(getExtension), getName = js.Any.fromFunction0(getName), getRoutingProfile = js.Any.fromFunction0(getRoutingProfile), getState = js.Any.fromFunction0(getState), getStateDuration = js.Any.fromFunction0(getStateDuration), isSoftphoneEnabled = js.Any.fromFunction0(isSoftphoneEnabled), mute = js.Any.fromFunction0(mute), onAfterCallWork = js.Any.fromFunction1(onAfterCallWork), onContactPending = js.Any.fromFunction1(onContactPending), onError = js.Any.fromFunction1(onError), onMuteToggle = js.Any.fromFunction1(onMuteToggle), onNotRoutable = js.Any.fromFunction1(onNotRoutable), onOffline = js.Any.fromFunction1(onOffline), onRefresh = js.Any.fromFunction1(onRefresh), onRoutable = js.Any.fromFunction1(onRoutable), onSoftphoneError = js.Any.fromFunction1(onSoftphoneError), onStateChange = js.Any.fromFunction1(onStateChange), setConfiguration = js.Any.fromFunction2(setConfiguration), setState = js.Any.fromFunction2(setState), toSnapshot = js.Any.fromFunction0(toSnapshot), unmute = js.Any.fromFunction0(unmute))
-    __obj.asInstanceOf[Agent]
-  }
+  def toSnapshot(): Agent = js.native
+  /** Sets the agent localmedia to unmute mode. */
+  def unmute(): Unit = js.native
 }
 

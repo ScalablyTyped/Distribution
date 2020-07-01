@@ -18,6 +18,8 @@ trait TypeofbrowserSettings extends js.Object {
     * which has possible values of `mouseup` and `mousedown`.
     */
   val contextMenuShowEvent: Setting
+  /** This boolean setting controls whether the FTP protocol is enabled. */
+  val ftpProtocolEnabled: Setting
   /** Returns the value of the overridden home page. Read-only. */
   val homepageOverride: Setting
   /**
@@ -45,6 +47,13 @@ trait TypeofbrowserSettings extends js.Object {
   val useDocumentFonts: Setting
   /** Disables webAPI notifications. */
   val webNotificationsDisabled: Setting
+  /** This boolean setting controls whether zoom is applied to the full page or to text only. */
+  val zoomFullPage: Setting
+  /**
+    * This boolean setting controls whether zoom is applied on a per-site basis or to the current tab only. If
+    * privacy.resistFingerprinting is true, this setting has no effect and zoom is applied to the current tab only.
+    */
+  val zoomSiteSpecific: Setting
 }
 
 object TypeofbrowserSettings {
@@ -54,6 +63,7 @@ object TypeofbrowserSettings {
     cacheEnabled: Setting,
     closeTabsByDoubleClick: Setting,
     contextMenuShowEvent: Setting,
+    ftpProtocolEnabled: Setting,
     homepageOverride: Setting,
     imageAnimationBehavior: Setting,
     newTabPageOverride: Setting,
@@ -63,9 +73,11 @@ object TypeofbrowserSettings {
     openUrlbarResultsInNewTabs: Setting,
     overrideDocumentColors: Setting,
     useDocumentFonts: Setting,
-    webNotificationsDisabled: Setting
+    webNotificationsDisabled: Setting,
+    zoomFullPage: Setting,
+    zoomSiteSpecific: Setting
   ): TypeofbrowserSettings = {
-    val __obj = js.Dynamic.literal(allowPopupsForUserEvents = allowPopupsForUserEvents.asInstanceOf[js.Any], cacheEnabled = cacheEnabled.asInstanceOf[js.Any], closeTabsByDoubleClick = closeTabsByDoubleClick.asInstanceOf[js.Any], contextMenuShowEvent = contextMenuShowEvent.asInstanceOf[js.Any], homepageOverride = homepageOverride.asInstanceOf[js.Any], imageAnimationBehavior = imageAnimationBehavior.asInstanceOf[js.Any], newTabPageOverride = newTabPageOverride.asInstanceOf[js.Any], newTabPosition = newTabPosition.asInstanceOf[js.Any], openBookmarksInNewTabs = openBookmarksInNewTabs.asInstanceOf[js.Any], openSearchResultsInNewTabs = openSearchResultsInNewTabs.asInstanceOf[js.Any], openUrlbarResultsInNewTabs = openUrlbarResultsInNewTabs.asInstanceOf[js.Any], overrideDocumentColors = overrideDocumentColors.asInstanceOf[js.Any], useDocumentFonts = useDocumentFonts.asInstanceOf[js.Any], webNotificationsDisabled = webNotificationsDisabled.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(allowPopupsForUserEvents = allowPopupsForUserEvents.asInstanceOf[js.Any], cacheEnabled = cacheEnabled.asInstanceOf[js.Any], closeTabsByDoubleClick = closeTabsByDoubleClick.asInstanceOf[js.Any], contextMenuShowEvent = contextMenuShowEvent.asInstanceOf[js.Any], ftpProtocolEnabled = ftpProtocolEnabled.asInstanceOf[js.Any], homepageOverride = homepageOverride.asInstanceOf[js.Any], imageAnimationBehavior = imageAnimationBehavior.asInstanceOf[js.Any], newTabPageOverride = newTabPageOverride.asInstanceOf[js.Any], newTabPosition = newTabPosition.asInstanceOf[js.Any], openBookmarksInNewTabs = openBookmarksInNewTabs.asInstanceOf[js.Any], openSearchResultsInNewTabs = openSearchResultsInNewTabs.asInstanceOf[js.Any], openUrlbarResultsInNewTabs = openUrlbarResultsInNewTabs.asInstanceOf[js.Any], overrideDocumentColors = overrideDocumentColors.asInstanceOf[js.Any], useDocumentFonts = useDocumentFonts.asInstanceOf[js.Any], webNotificationsDisabled = webNotificationsDisabled.asInstanceOf[js.Any], zoomFullPage = zoomFullPage.asInstanceOf[js.Any], zoomSiteSpecific = zoomSiteSpecific.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofbrowserSettings]
   }
 }

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@wordpress/element/utils", JSImport.Namespace)
+@JSImport("@wordpress/element/build-types/utils", JSImport.Namespace)
 @js.native
 object utilsMod extends js.Object {
   def isEmptyElement(element: js.Any): Boolean = js.native

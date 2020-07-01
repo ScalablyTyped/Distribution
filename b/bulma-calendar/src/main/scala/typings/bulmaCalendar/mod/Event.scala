@@ -12,7 +12,7 @@ trait Event[T /* <: EventType */] extends js.Object {
 
 object Event {
   @scala.inline
-  def apply[T](data: bulmaCalendar, timeStamp: Double, `type`: T): Event[T] = {
+  def apply[/* <: typings.bulmaCalendar.mod.EventType */ T](data: bulmaCalendar, timeStamp: Double, `type`: T): Event[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event[T]]

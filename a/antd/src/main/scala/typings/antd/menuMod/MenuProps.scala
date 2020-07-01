@@ -1,5 +1,7 @@
 package typings.antd.menuMod
 
+import typings.antd.antdStrings.click
+import typings.antd.antdStrings.hover
 import typings.antd.menuContextMod.MenuTheme
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
@@ -38,6 +40,7 @@ trait MenuProps extends js.Object {
   var subMenuCloseDelay: js.UndefOr[Double] = js.undefined
   var subMenuOpenDelay: js.UndefOr[Double] = js.undefined
   var theme: js.UndefOr[MenuTheme] = js.undefined
+  var triggerSubMenuAction: js.UndefOr[hover | click] = js.undefined
 }
 
 object MenuProps {
@@ -70,7 +73,8 @@ object MenuProps {
     style: CSSProperties = null,
     subMenuCloseDelay: js.UndefOr[Double] = js.undefined,
     subMenuOpenDelay: js.UndefOr[Double] = js.undefined,
-    theme: MenuTheme = null
+    theme: MenuTheme = null,
+    triggerSubMenuAction: hover | click = null
   ): MenuProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
@@ -101,6 +105,7 @@ object MenuProps {
     if (!js.isUndefined(subMenuCloseDelay)) __obj.updateDynamic("subMenuCloseDelay")(subMenuCloseDelay.get.asInstanceOf[js.Any])
     if (!js.isUndefined(subMenuOpenDelay)) __obj.updateDynamic("subMenuOpenDelay")(subMenuOpenDelay.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (triggerSubMenuAction != null) __obj.updateDynamic("triggerSubMenuAction")(triggerSubMenuAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuProps]
   }
 }

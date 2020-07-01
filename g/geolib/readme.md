@@ -1,7 +1,7 @@
 
 # Scala.js typings for geolib
 
-Typings are for version 3.2.1
+Typings are for version 3.3.1
 
 ## Library description:
 [![CircleCI](https://circleci.com/gh/manuelbieh/geolib/tree/master.svg?style=svg)](https://circleci.com/gh/manuelbieh/geolib/tree/master) ![](https://badgen.net/bundlephobia/minzip/geolib) ![](https://badgen.net/npm/dm/geolib) ![](https://badgen.net/githu

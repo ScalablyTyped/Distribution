@@ -1,39 +1,38 @@
 package typings.antDesignProLayout.pageHeaderWrapperMod
 
+import typings.antd.tabsMod.TabsProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PageHeaderTabConfig extends js.Object {
   var onTabChange: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TabsProps * / any['onChange'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: antd.antd/lib/tabs.TabsProps['onChange'] */ js.Any
   ] = js.undefined
   var tabActiveKey: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TabsProps * / any['activeKey'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: antd.antd/lib/tabs.TabsProps['activeKey'] */ js.Any
   ] = js.undefined
   var tabBarExtraContent: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TabsProps * / any['tabBarExtraContent'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: antd.antd/lib/tabs.TabsProps['tabBarExtraContent'] */ js.Any
   ] = js.undefined
   var tabList: js.UndefOr[
     js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TabPaneProps */ _
     ]
   ] = js.undefined
-  var tabProps: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TabsProps */ js.Any
-  ] = js.undefined
+  var tabProps: js.UndefOr[TabsProps] = js.undefined
 }
 
 object PageHeaderTabConfig {
   @scala.inline
   def apply(
-    onTabChange: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TabsProps * / any['onChange'] */ js.Any = null,
-    tabActiveKey: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TabsProps * / any['activeKey'] */ js.Any = null,
-    tabBarExtraContent: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TabsProps * / any['tabBarExtraContent'] */ js.Any = null,
+    onTabChange: /* import warning: importer.ImportType#apply Failed type conversion: antd.antd/lib/tabs.TabsProps['onChange'] */ js.Any = null,
+    tabActiveKey: /* import warning: importer.ImportType#apply Failed type conversion: antd.antd/lib/tabs.TabsProps['activeKey'] */ js.Any = null,
+    tabBarExtraContent: /* import warning: importer.ImportType#apply Failed type conversion: antd.antd/lib/tabs.TabsProps['tabBarExtraContent'] */ js.Any = null,
     tabList: js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TabPaneProps */ _
     ] = null,
-    tabProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TabsProps */ js.Any = null
+    tabProps: TabsProps = null
   ): PageHeaderTabConfig = {
     val __obj = js.Dynamic.literal()
     if (onTabChange != null) __obj.updateDynamic("onTabChange")(onTabChange.asInstanceOf[js.Any])

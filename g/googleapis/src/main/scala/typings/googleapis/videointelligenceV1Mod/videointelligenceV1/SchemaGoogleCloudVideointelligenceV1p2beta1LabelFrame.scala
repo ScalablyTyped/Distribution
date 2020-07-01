@@ -22,9 +22,9 @@ trait SchemaGoogleCloudVideointelligenceV1p2beta1LabelFrame extends js.Object {
 
 object SchemaGoogleCloudVideointelligenceV1p2beta1LabelFrame {
   @scala.inline
-  def apply(confidence: Int | Double = null, timeOffset: String = null): SchemaGoogleCloudVideointelligenceV1p2beta1LabelFrame = {
+  def apply(confidence: js.UndefOr[Double] = js.undefined, timeOffset: String = null): SchemaGoogleCloudVideointelligenceV1p2beta1LabelFrame = {
     val __obj = js.Dynamic.literal()
-    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
     if (timeOffset != null) __obj.updateDynamic("timeOffset")(timeOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1p2beta1LabelFrame]
   }

@@ -59,6 +59,10 @@ trait EnvironmentDescription extends js.Object {
     */
   var HealthStatus: js.UndefOr[EnvironmentHealthStatus] = js.native
   /**
+    * The Amazon Resource Name (ARN) of the environment's operations role. For more information, see Operations roles in the AWS Elastic Beanstalk Developer Guide.
+    */
+  var OperationsRole: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.OperationsRole] = js.native
+  /**
     * The ARN of the platform version.
     */
   var PlatformArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformArn] = js.native
@@ -104,6 +108,7 @@ object EnvironmentDescription {
     EnvironmentName: EnvironmentName = null,
     Health: EnvironmentHealth = null,
     HealthStatus: EnvironmentHealthStatus = null,
+    OperationsRole: OperationsRole = null,
     PlatformArn: PlatformArn = null,
     Resources: EnvironmentResourcesDescription = null,
     SolutionStackName: SolutionStackName = null,
@@ -126,6 +131,7 @@ object EnvironmentDescription {
     if (EnvironmentName != null) __obj.updateDynamic("EnvironmentName")(EnvironmentName.asInstanceOf[js.Any])
     if (Health != null) __obj.updateDynamic("Health")(Health.asInstanceOf[js.Any])
     if (HealthStatus != null) __obj.updateDynamic("HealthStatus")(HealthStatus.asInstanceOf[js.Any])
+    if (OperationsRole != null) __obj.updateDynamic("OperationsRole")(OperationsRole.asInstanceOf[js.Any])
     if (PlatformArn != null) __obj.updateDynamic("PlatformArn")(PlatformArn.asInstanceOf[js.Any])
     if (Resources != null) __obj.updateDynamic("Resources")(Resources.asInstanceOf[js.Any])
     if (SolutionStackName != null) __obj.updateDynamic("SolutionStackName")(SolutionStackName.asInstanceOf[js.Any])

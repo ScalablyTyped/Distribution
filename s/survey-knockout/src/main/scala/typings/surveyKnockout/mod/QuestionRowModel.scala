@@ -14,6 +14,7 @@ class QuestionRowModel protected () extends Base {
   var visible: Boolean = js.native
   val visibleElements: js.Array[IElement] = js.native
   def addElement(q: IElement): Unit = js.native
+  def setElementMaxMinWidth(el: IElement): Unit = js.native
   def updateVisible(): Unit = js.native
 }
 

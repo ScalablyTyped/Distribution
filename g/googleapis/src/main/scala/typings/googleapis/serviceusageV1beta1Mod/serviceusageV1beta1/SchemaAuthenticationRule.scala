@@ -41,7 +41,7 @@ object SchemaAuthenticationRule {
     selector: String = null
   ): SchemaAuthenticationRule = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowWithoutCredential)) __obj.updateDynamic("allowWithoutCredential")(allowWithoutCredential.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowWithoutCredential)) __obj.updateDynamic("allowWithoutCredential")(allowWithoutCredential.get.asInstanceOf[js.Any])
     if (oauth != null) __obj.updateDynamic("oauth")(oauth.asInstanceOf[js.Any])
     if (requirements != null) __obj.updateDynamic("requirements")(requirements.asInstanceOf[js.Any])
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])

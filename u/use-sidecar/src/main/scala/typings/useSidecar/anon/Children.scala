@@ -12,7 +12,7 @@ trait Children[T /* <: js.Array[_] */] extends js.Object {
 
 object Children {
   @scala.inline
-  def apply[T](children: T => js.Any): Children[T] = {
+  def apply[/* <: js.Array[_] */ T](children: T => js.Any): Children[T] = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
     __obj.asInstanceOf[Children[T]]
   }

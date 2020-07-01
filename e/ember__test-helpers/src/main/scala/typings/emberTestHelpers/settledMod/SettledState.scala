@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 trait SettledState extends js.Object {
   var hasPendingRequests: Boolean
   var hasPendingTimers: Boolean
+  var hasPendingTransitions: Boolean | Null
   var hasPendingWaiters: Boolean
   var hasRunLoop: Boolean
   var pendingRequestCount: Double
@@ -19,9 +20,10 @@ object SettledState {
     hasPendingTimers: Boolean,
     hasPendingWaiters: Boolean,
     hasRunLoop: Boolean,
-    pendingRequestCount: Double
+    pendingRequestCount: Double,
+    hasPendingTransitions: Boolean = null.asInstanceOf[Boolean]
   ): SettledState = {
-    val __obj = js.Dynamic.literal(hasPendingRequests = hasPendingRequests.asInstanceOf[js.Any], hasPendingTimers = hasPendingTimers.asInstanceOf[js.Any], hasPendingWaiters = hasPendingWaiters.asInstanceOf[js.Any], hasRunLoop = hasRunLoop.asInstanceOf[js.Any], pendingRequestCount = pendingRequestCount.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(hasPendingRequests = hasPendingRequests.asInstanceOf[js.Any], hasPendingTimers = hasPendingTimers.asInstanceOf[js.Any], hasPendingWaiters = hasPendingWaiters.asInstanceOf[js.Any], hasRunLoop = hasRunLoop.asInstanceOf[js.Any], pendingRequestCount = pendingRequestCount.asInstanceOf[js.Any], hasPendingTransitions = hasPendingTransitions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettledState]
   }
 }

@@ -6,22 +6,69 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BridgeAttendedTransfer extends Event {
+  /**
+    * Application that has been transferred into.
+    */
   var destination_application: String
+  /**
+    * Bridge that survived the merge result.
+    */
   var destination_bridge: String
+  /**
+    * First leg of a link transfer result.
+    */
   var destination_link_first_leg: Channel
+  /**
+    * Second leg of a link transfer result.
+    */
   var destination_link_second_leg: Channel
+  /**
+    * Bridge that survived the threeway result.
+    */
   var destination_threeway_bridge: Bridge
+  /**
+    * Transferer channel that survived the threeway result.
+    */
   var destination_threeway_channel: Channel
+  /**
+    * How the transfer was accomplished.
+    */
   var destination_type: String
+  /**
+    * Whether the transfer was externally initiated or not.
+    */
   var is_external: Boolean
+  /**
+    * The channel that is replacing transferer_first_leg in the swap.
+    */
   var replace_channel: js.UndefOr[Channel] = js.undefined
+  /**
+    * The result of the transfer attempt.
+    */
   var result: String
+  /**
+    * The channel that is being transferred to.
+    */
   var transfer_target: js.UndefOr[Channel] = js.undefined
+  /**
+    * The channel that is being transferred.
+    */
   var transferee: js.UndefOr[Channel] = js.undefined
-  /* Properties */
+  /**
+    * First leg of the transferer.
+    */
   var transferer_first_leg: Channel
+  /**
+    * Bridge the transferer first leg is in.
+    */
   var transferer_first_leg_bridge: Bridge
+  /**
+    * Second leg of the transferer.
+    */
   var transferer_second_leg: Channel
+  /**
+    * Bridge the transferer second leg is in.
+    */
   var transferer_second_leg_bridge: Bridge
 }
 

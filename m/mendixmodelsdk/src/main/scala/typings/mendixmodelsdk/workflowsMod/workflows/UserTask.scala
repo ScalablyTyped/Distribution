@@ -52,8 +52,18 @@ class UserTask protected () extends WorkflowTask {
   def userRole(): js.Any = js.native
   def userRole(newValue: IUserRole): js.Any = js.native
   def userRoleQualifiedName: String | Null = js.native
+  /**
+    * In version 8.11.0: deleted
+    */
   @JSName("userRole")
   def userRole_Union: IUserRole | Null = js.native
+  /**
+    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+    *
+    * In version 8.11.0: introduced
+    */
+  def userSource: UserSource = js.native
+  def userSource(newValue: UserSource): js.Any = js.native
 }
 
 /* static members */

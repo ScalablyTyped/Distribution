@@ -11,7 +11,7 @@ package object apigatewayMod {
     - java.lang.String
   */
   type ApiKeySourceType = typings.awsSdk.apigatewayMod._ApiKeySourceType | java.lang.String
-  type ApiKeysFormat = typings.awsSdk.awsSdkStrings.csv_ | java.lang.String
+  type ApiKeysFormat = typings.awsSdk.awsSdkStrings.csv__ | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.TOKEN
     - typings.awsSdk.awsSdkStrings.REQUEST

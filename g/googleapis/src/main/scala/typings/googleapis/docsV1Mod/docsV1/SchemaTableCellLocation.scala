@@ -28,13 +28,13 @@ trait SchemaTableCellLocation extends js.Object {
 object SchemaTableCellLocation {
   @scala.inline
   def apply(
-    columnIndex: Int | Double = null,
-    rowIndex: Int | Double = null,
+    columnIndex: js.UndefOr[Double] = js.undefined,
+    rowIndex: js.UndefOr[Double] = js.undefined,
     tableStartLocation: SchemaLocation = null
   ): SchemaTableCellLocation = {
     val __obj = js.Dynamic.literal()
-    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnIndex)) __obj.updateDynamic("columnIndex")(columnIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.get.asInstanceOf[js.Any])
     if (tableStartLocation != null) __obj.updateDynamic("tableStartLocation")(tableStartLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTableCellLocation]
   }

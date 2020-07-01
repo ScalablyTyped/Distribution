@@ -8,6 +8,8 @@ import typings.socketclusterClient.anon.AckTimeout
 import typings.socketclusterClient.anon.Error
 import typings.socketclusterClient.anon.OldAuthToken
 import typings.socketclusterClient.authMod.AGAuthEngine
+import typings.socketclusterClient.authMod.AuthToken
+import typings.socketclusterClient.authMod.SignedAuthToken
 import typings.socketclusterClient.socketclusterClientStrings.authStateChange
 import typings.socketclusterClient.socketclusterClientStrings.authenticate
 import typings.socketclusterClient.socketclusterClientStrings.authenticated
@@ -52,7 +54,7 @@ trait AGClientSocket
   var ackTimeout: Double = js.native
   var auth: AGAuthEngine = js.native
   var authState: AuthStates = js.native
-  var authToken: js.Object | Null = js.native
+  var authToken: AuthToken | Null = js.native
   var authTokenName: String = js.native
   var batchOnHandshake: Boolean = js.native
   var batchOnHandshakeDuration: Double = js.native
@@ -75,7 +77,7 @@ trait AGClientSocket
   var poolIndex: js.UndefOr[Double] = js.native
   var preparingPendingSubscriptions: Boolean = js.native
   var protocolVersion: ProtocolVersions = js.native
-  var signedAuthToken: String | Null = js.native
+  var signedAuthToken: SignedAuthToken | Null = js.native
   var state: States = js.native
   var transport: js.UndefOr[typings.socketclusterClient.transportMod.^] = js.native
   var version: String | Null = js.native
@@ -144,7 +146,7 @@ trait AGClientSocket
   def getAllProceduresConsumerStatsList(): js.Array[ConsumerStats] = js.native
   def getAllReceiversBackpressure(): Double = js.native
   def getAllReceiversConsumerStatsList(): js.Array[ConsumerStats] = js.native
-  def getAuthToken(): js.Object | Null = js.native
+  def getAuthToken(): AuthToken | Null = js.native
   /* AGChannel.Client end */
   def getBackpressure(): Double = js.native
   def getBytesReceived(): Double = js.native
@@ -156,7 +158,7 @@ trait AGClientSocket
   def getReceiverConsumerBackpressure(consumerId: Double): Double = js.native
   def getReceiverConsumerStats(consumerId: Double): ConsumerStats = js.native
   def getReceiverConsumerStatsList(receiverName: String): js.Array[ConsumerStats] = js.native
-  def getSignedAuthToken(): String | Null = js.native
+  def getSignedAuthToken(): SignedAuthToken | Null = js.native
   def getState(): States = js.native
   def hasAnyChannelListenerConsumer(consumerId: js.Any): Boolean = js.native
   def hasAnyChannelOutputConsumer(consumerId: js.Any): Boolean = js.native

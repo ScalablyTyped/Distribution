@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BackgroundImageLink extends js.Object {
-  /** A link to this Team Drive theme's background image. */
+  /** Deprecated - use driveThemes/backgroundImageLink instead. */
   var backgroundImageLink: js.UndefOr[String] = js.undefined
-  /** The color of this Team Drive theme as an RGB hex string. */
+  /** Deprecated - use driveThemes/colorRgb instead. */
   var colorRgb: js.UndefOr[String] = js.undefined
-  /** The ID of the theme. */
+  /** Deprecated - use driveThemes/id instead. */
   var id: js.UndefOr[String] = js.undefined
 }
 

@@ -1,8 +1,8 @@
 package typings.grommet.textInputMod
 
+import typings.grommet.anon.Bottom
 import typings.grommet.anon.EnterSelect
 import typings.grommet.anon.LabelValue
-import typings.grommet.anon.Left
 import typings.grommet.anon.Suggestion
 import typings.grommet.dropMod.DropProps
 import typings.grommet.grommetStrings.large
@@ -17,7 +17,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TextInputProps extends js.Object {
-  var dropAlign: js.UndefOr[Left] = js.undefined
+  var dropAlign: js.UndefOr[Bottom] = js.undefined
   var dropHeight: js.UndefOr[xsmall | small | medium | large | xlarge | String] = js.undefined
   var dropProps: js.UndefOr[DropProps] = js.undefined
   var dropTarget: js.UndefOr[js.Object] = js.undefined
@@ -40,7 +40,7 @@ trait TextInputProps extends js.Object {
 object TextInputProps {
   @scala.inline
   def apply(
-    dropAlign: Left = null,
+    dropAlign: Bottom = null,
     dropHeight: xsmall | small | medium | large | xlarge | String = null,
     dropProps: DropProps = null,
     dropTarget: js.Object = null,

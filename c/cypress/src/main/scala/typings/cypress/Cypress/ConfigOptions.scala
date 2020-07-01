@@ -3,6 +3,7 @@ package typings.cypress.Cypress
 import org.scalablytyped.runtime.StringDictionary
 import typings.cypress.Nullable
 import typings.cypress.anon.OpenMode
+import typings.cypress.cypressBooleans.`false`
 import typings.cypress.cypressStrings.bundled
 import typings.cypress.cypressStrings.system
 import scala.scalajs.js
@@ -21,27 +22,29 @@ trait ConfigOptions extends js.Object {
   var env: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var execTimeout: js.UndefOr[Double] = js.undefined
   var experimentalGetCookiesSameSite: js.UndefOr[Boolean] = js.undefined
+  var experimentalShadowDomSupport: js.UndefOr[Boolean] = js.undefined
   var experimentalSourceRewriting: js.UndefOr[Boolean] = js.undefined
   var fileServerFolder: js.UndefOr[String] = js.undefined
   var firefoxGcInterval: js.UndefOr[Nullable[Double | OpenMode]] = js.undefined
-  var fixturesFolder: js.UndefOr[String] = js.undefined
+  var fixturesFolder: js.UndefOr[String | `false`] = js.undefined
   var ignoreTestFiles: js.UndefOr[String | js.Array[String]] = js.undefined
   var integrationFolder: js.UndefOr[String] = js.undefined
   var nodeVersion: js.UndefOr[system | bundled] = js.undefined
   var numTestsKeptInMemory: js.UndefOr[Double] = js.undefined
   var pageLoadTimeout: js.UndefOr[Double] = js.undefined
-  var pluginsFile: js.UndefOr[String] = js.undefined
+  var pluginsFile: js.UndefOr[String | `false`] = js.undefined
   var port: js.UndefOr[Double] = js.undefined
   var reporter: js.UndefOr[String] = js.undefined
   var requestTimeout: js.UndefOr[Double] = js.undefined
   var resolvedNodePath: js.UndefOr[String] = js.undefined
   var resolvedNodeVersion: js.UndefOr[String] = js.undefined
   var responseTimeout: js.UndefOr[Double] = js.undefined
-  var screenshotsFolder: js.UndefOr[String] = js.undefined
-  var supportFile: js.UndefOr[String] = js.undefined
+  var screenshotsFolder: js.UndefOr[String | `false`] = js.undefined
+  var supportFile: js.UndefOr[String | `false`] = js.undefined
+  var taskTimeout: js.UndefOr[Double] = js.undefined
   var trashAssetsBeforeRuns: js.UndefOr[Boolean] = js.undefined
   var video: js.UndefOr[Boolean] = js.undefined
-  var videoCompression: js.UndefOr[Double] = js.undefined
+  var videoCompression: js.UndefOr[Double | `false`] = js.undefined
   var videoUploadOnPasses: js.UndefOr[Boolean] = js.undefined
   var videosFolder: js.UndefOr[String] = js.undefined
   var viewportHeight: js.UndefOr[Double] = js.undefined
@@ -60,27 +63,29 @@ object ConfigOptions {
     env: StringDictionary[js.Any] = null,
     execTimeout: js.UndefOr[Double] = js.undefined,
     experimentalGetCookiesSameSite: js.UndefOr[Boolean] = js.undefined,
+    experimentalShadowDomSupport: js.UndefOr[Boolean] = js.undefined,
     experimentalSourceRewriting: js.UndefOr[Boolean] = js.undefined,
     fileServerFolder: String = null,
     firefoxGcInterval: js.UndefOr[Null | (Nullable[Double | OpenMode])] = js.undefined,
-    fixturesFolder: String = null,
+    fixturesFolder: String | `false` = null,
     ignoreTestFiles: String | js.Array[String] = null,
     integrationFolder: String = null,
     nodeVersion: system | bundled = null,
     numTestsKeptInMemory: js.UndefOr[Double] = js.undefined,
     pageLoadTimeout: js.UndefOr[Double] = js.undefined,
-    pluginsFile: String = null,
+    pluginsFile: String | `false` = null,
     port: js.UndefOr[Double] = js.undefined,
     reporter: String = null,
     requestTimeout: js.UndefOr[Double] = js.undefined,
     resolvedNodePath: String = null,
     resolvedNodeVersion: String = null,
     responseTimeout: js.UndefOr[Double] = js.undefined,
-    screenshotsFolder: String = null,
-    supportFile: String = null,
+    screenshotsFolder: String | `false` = null,
+    supportFile: String | `false` = null,
+    taskTimeout: js.UndefOr[Double] = js.undefined,
     trashAssetsBeforeRuns: js.UndefOr[Boolean] = js.undefined,
     video: js.UndefOr[Boolean] = js.undefined,
-    videoCompression: js.UndefOr[Double] = js.undefined,
+    videoCompression: Double | `false` = null,
     videoUploadOnPasses: js.UndefOr[Boolean] = js.undefined,
     videosFolder: String = null,
     viewportHeight: js.UndefOr[Double] = js.undefined,
@@ -96,6 +101,7 @@ object ConfigOptions {
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (!js.isUndefined(execTimeout)) __obj.updateDynamic("execTimeout")(execTimeout.get.asInstanceOf[js.Any])
     if (!js.isUndefined(experimentalGetCookiesSameSite)) __obj.updateDynamic("experimentalGetCookiesSameSite")(experimentalGetCookiesSameSite.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(experimentalShadowDomSupport)) __obj.updateDynamic("experimentalShadowDomSupport")(experimentalShadowDomSupport.get.asInstanceOf[js.Any])
     if (!js.isUndefined(experimentalSourceRewriting)) __obj.updateDynamic("experimentalSourceRewriting")(experimentalSourceRewriting.get.asInstanceOf[js.Any])
     if (fileServerFolder != null) __obj.updateDynamic("fileServerFolder")(fileServerFolder.asInstanceOf[js.Any])
     if (!js.isUndefined(firefoxGcInterval)) __obj.updateDynamic("firefoxGcInterval")(firefoxGcInterval.asInstanceOf[js.Any])
@@ -114,9 +120,10 @@ object ConfigOptions {
     if (!js.isUndefined(responseTimeout)) __obj.updateDynamic("responseTimeout")(responseTimeout.get.asInstanceOf[js.Any])
     if (screenshotsFolder != null) __obj.updateDynamic("screenshotsFolder")(screenshotsFolder.asInstanceOf[js.Any])
     if (supportFile != null) __obj.updateDynamic("supportFile")(supportFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(taskTimeout)) __obj.updateDynamic("taskTimeout")(taskTimeout.get.asInstanceOf[js.Any])
     if (!js.isUndefined(trashAssetsBeforeRuns)) __obj.updateDynamic("trashAssetsBeforeRuns")(trashAssetsBeforeRuns.get.asInstanceOf[js.Any])
     if (!js.isUndefined(video)) __obj.updateDynamic("video")(video.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(videoCompression)) __obj.updateDynamic("videoCompression")(videoCompression.get.asInstanceOf[js.Any])
+    if (videoCompression != null) __obj.updateDynamic("videoCompression")(videoCompression.asInstanceOf[js.Any])
     if (!js.isUndefined(videoUploadOnPasses)) __obj.updateDynamic("videoUploadOnPasses")(videoUploadOnPasses.get.asInstanceOf[js.Any])
     if (videosFolder != null) __obj.updateDynamic("videosFolder")(videosFolder.asInstanceOf[js.Any])
     if (!js.isUndefined(viewportHeight)) __obj.updateDynamic("viewportHeight")(viewportHeight.get.asInstanceOf[js.Any])

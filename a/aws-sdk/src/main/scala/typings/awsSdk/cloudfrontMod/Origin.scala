@@ -7,27 +7,35 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Origin extends js.Object {
   /**
-    * A complex type that contains names and values for the custom headers that you want.
+    * The number of times that CloudFront attempts to connect to the origin. The minimum number is 1, the maximum is 3, and the default (if you don’t specify otherwise) is 3. For a custom origin (including an Amazon S3 bucket that’s configured with static website hosting), this value also specifies the number of times that CloudFront attempts to get a response from the origin, in the case of an Origin Response Timeout. For more information, see Origin Connection Attempts in the Amazon CloudFront Developer Guide.
+    */
+  var ConnectionAttempts: js.UndefOr[integer] = js.native
+  /**
+    * The number of seconds that CloudFront waits when trying to establish a connection to the origin. The minimum timeout is 1 second, the maximum is 10 seconds, and the default (if you don’t specify otherwise) is 10 seconds. For more information, see Origin Connection Timeout in the Amazon CloudFront Developer Guide.
+    */
+  var ConnectionTimeout: js.UndefOr[integer] = js.native
+  /**
+    * A list of HTTP header names and values that CloudFront adds to requests it sends to the origin. For more information, see Adding Custom Headers to Origin Requests in the Amazon CloudFront Developer Guide.
     */
   var CustomHeaders: js.UndefOr[typings.awsSdk.cloudfrontMod.CustomHeaders] = js.native
   /**
-    * A complex type that contains information about a custom origin. If the origin is an Amazon S3 bucket, use the S3OriginConfig element instead.
+    * Use this type to specify an origin that is a content container or HTTP server, including an Amazon S3 bucket that is configured with static website hosting. To specify an Amazon S3 bucket that is  not  configured with static website hosting, use the S3OriginConfig type instead.
     */
   var CustomOriginConfig: js.UndefOr[typings.awsSdk.cloudfrontMod.CustomOriginConfig] = js.native
   /**
-    *  Amazon S3 origins: The DNS name of the Amazon S3 bucket from which you want CloudFront to get objects for this origin, for example, myawsbucket.s3.amazonaws.com. If you set up your bucket to be configured as a website endpoint, enter the Amazon S3 static website hosting endpoint for the bucket. For more information about specifying this value for different types of origins, see Origin Domain Name in the Amazon CloudFront Developer Guide. Constraints for Amazon S3 origins:    If you configured Amazon S3 Transfer Acceleration for your bucket, don't specify the s3-accelerate endpoint for DomainName.   The bucket name must be between 3 and 63 characters long (inclusive).   The bucket name must contain only lowercase characters, numbers, periods, underscores, and dashes.   The bucket name must not contain adjacent periods.    Custom Origins: The DNS domain name for the HTTP server from which you want CloudFront to get objects for this origin, for example, www.example.com.  Constraints for custom origins:    DomainName must be a valid DNS name that contains only a-z, A-Z, 0-9, dot (.), hyphen (-), or underscore (_) characters.   The name cannot exceed 128 characters.  
+    * The domain name for the origin. For more information, see Origin Domain Name in the Amazon CloudFront Developer Guide.
     */
   var DomainName: String = js.native
   /**
-    * A unique identifier for the origin or origin group. The value of Id must be unique within the distribution. When you specify the value of TargetOriginId for the default cache behavior or for another cache behavior, you indicate the origin to which you want the cache behavior to route requests by specifying the value of the Id element for that origin. When a request matches the path pattern for that cache behavior, CloudFront routes the request to the specified origin. For more information, see Cache Behavior Settings in the Amazon CloudFront Developer Guide.
+    * A unique identifier for the origin. This value must be unique within the distribution. Use this value to specify the TargetOriginId in a CacheBehavior or DefaultCacheBehavior.
     */
   var Id: String = js.native
   /**
-    * An optional element that causes CloudFront to request your content from a directory in your Amazon S3 bucket or your custom origin. When you include the OriginPath element, specify the directory name, beginning with a /. CloudFront appends the directory name to the value of DomainName, for example, example.com/production. Do not include a / at the end of the directory name. For example, suppose you've specified the following values for your distribution:    DomainName: An Amazon S3 bucket named myawsbucket.    OriginPath: /production     CNAME: example.com    When a user enters example.com/index.html in a browser, CloudFront sends a request to Amazon S3 for myawsbucket/production/index.html. When a user enters example.com/acme/index.html in a browser, CloudFront sends a request to Amazon S3 for myawsbucket/production/acme/index.html.
+    * An optional path that CloudFront appends to the origin domain name when CloudFront requests content from the origin. For more information, see Origin Path in the Amazon CloudFront Developer Guide.
     */
   var OriginPath: js.UndefOr[String] = js.native
   /**
-    * A complex type that contains information about the Amazon S3 origin. If the origin is a custom origin, use the CustomOriginConfig element instead.
+    * Use this type to specify an origin that is an Amazon S3 bucket that is  not  configured with static website hosting. To specify any other type of origin, including an Amazon S3 bucket that is configured with static website hosting, use the CustomOriginConfig type instead.
     */
   var S3OriginConfig: js.UndefOr[typings.awsSdk.cloudfrontMod.S3OriginConfig] = js.native
 }
@@ -37,12 +45,16 @@ object Origin {
   def apply(
     DomainName: String,
     Id: String,
+    ConnectionAttempts: js.UndefOr[integer] = js.undefined,
+    ConnectionTimeout: js.UndefOr[integer] = js.undefined,
     CustomHeaders: CustomHeaders = null,
     CustomOriginConfig: CustomOriginConfig = null,
     OriginPath: String = null,
     S3OriginConfig: S3OriginConfig = null
   ): Origin = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConnectionAttempts)) __obj.updateDynamic("ConnectionAttempts")(ConnectionAttempts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConnectionTimeout)) __obj.updateDynamic("ConnectionTimeout")(ConnectionTimeout.get.asInstanceOf[js.Any])
     if (CustomHeaders != null) __obj.updateDynamic("CustomHeaders")(CustomHeaders.asInstanceOf[js.Any])
     if (CustomOriginConfig != null) __obj.updateDynamic("CustomOriginConfig")(CustomOriginConfig.asInstanceOf[js.Any])
     if (OriginPath != null) __obj.updateDynamic("OriginPath")(OriginPath.asInstanceOf[js.Any])

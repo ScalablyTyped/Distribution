@@ -48,16 +48,16 @@ object SchemaConstraints {
   def apply(
     deviceLocation: String = null,
     language: String = null,
-    maxDatabaseEntries: Int | Double = null,
-    maxUpdateEntries: Int | Double = null,
+    maxDatabaseEntries: js.UndefOr[Double] = js.undefined,
+    maxUpdateEntries: js.UndefOr[Double] = js.undefined,
     region: String = null,
     supportedCompressions: js.Array[String] = null
   ): SchemaConstraints = {
     val __obj = js.Dynamic.literal()
     if (deviceLocation != null) __obj.updateDynamic("deviceLocation")(deviceLocation.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (maxDatabaseEntries != null) __obj.updateDynamic("maxDatabaseEntries")(maxDatabaseEntries.asInstanceOf[js.Any])
-    if (maxUpdateEntries != null) __obj.updateDynamic("maxUpdateEntries")(maxUpdateEntries.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDatabaseEntries)) __obj.updateDynamic("maxDatabaseEntries")(maxDatabaseEntries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxUpdateEntries)) __obj.updateDynamic("maxUpdateEntries")(maxUpdateEntries.get.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (supportedCompressions != null) __obj.updateDynamic("supportedCompressions")(supportedCompressions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaConstraints]

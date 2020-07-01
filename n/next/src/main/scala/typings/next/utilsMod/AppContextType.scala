@@ -14,7 +14,7 @@ trait AppContextType[R /* <: NextRouter */] extends js.Object {
 
 object AppContextType {
   @scala.inline
-  def apply[R](
+  def apply[/* <: typings.next.routerMod.NextRouter */ R](
     AppTree: AppTreeType,
     Component: NextComponentType[NextPageContext, js.Object, js.Object],
     ctx: NextPageContext,

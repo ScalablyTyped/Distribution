@@ -13,7 +13,7 @@ trait ShortestPath[T /* <: js.Object */] extends js.Object {
 
 object ShortestPath {
   @scala.inline
-  def apply[T](distance: Double, edges: js.Array[Edge[T]], vertices: js.Array[String]): ShortestPath[T] = {
+  def apply[/* <: js.Object */ T](distance: Double, edges: js.Array[Edge[T]], vertices: js.Array[String]): ShortestPath[T] = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], edges = edges.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShortestPath[T]]
   }

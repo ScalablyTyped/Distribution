@@ -349,6 +349,7 @@ object enumerableMod extends js.Object {
       * implementation returns an array regardless of the receiver type.
       */
     def uniq(): NativeArray[T] = js.native
+    def uniqBy(callback: js.Function1[/* value */ T, _]): NativeArray[T] = js.native
     /**
       * Returns a new enumerable that contains only items containing a unique property value.
       * The default implementation returns an array regardless of the receiver type.

@@ -11,6 +11,5 @@ object ^ extends js.Object {
   var dateFormats: Dictionary[TimeFormatCallbackFunction] = js.native
   var defaultOptions: Options = js.native
   var time: Time_ = js.native
-  var wrap: js.Any = js.native
 }
 

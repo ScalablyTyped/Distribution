@@ -49,15 +49,15 @@ object SchemaCommutePreference {
   @scala.inline
   def apply(
     allowNonStreetLevelAddress: js.UndefOr[Boolean] = js.undefined,
-    departureHourLocal: Int | Double = null,
+    departureHourLocal: js.UndefOr[Double] = js.undefined,
     method: String = null,
     roadTraffic: String = null,
     startLocation: SchemaLatLng = null,
     travelTime: String = null
   ): SchemaCommutePreference = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowNonStreetLevelAddress)) __obj.updateDynamic("allowNonStreetLevelAddress")(allowNonStreetLevelAddress.asInstanceOf[js.Any])
-    if (departureHourLocal != null) __obj.updateDynamic("departureHourLocal")(departureHourLocal.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowNonStreetLevelAddress)) __obj.updateDynamic("allowNonStreetLevelAddress")(allowNonStreetLevelAddress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(departureHourLocal)) __obj.updateDynamic("departureHourLocal")(departureHourLocal.get.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (roadTraffic != null) __obj.updateDynamic("roadTraffic")(roadTraffic.asInstanceOf[js.Any])
     if (startLocation != null) __obj.updateDynamic("startLocation")(startLocation.asInstanceOf[js.Any])

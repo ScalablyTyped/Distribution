@@ -13,7 +13,7 @@ trait Component[T /* <: js.Function */] extends js.Object {
 
 object Component {
   @scala.inline
-  def apply[T](action: T, component: ISceneComponent, index: Double): Component[T] = {
+  def apply[/* <: js.Function */ T](action: T, component: ISceneComponent, index: Double): Component[T] = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[Component[T]]
   }

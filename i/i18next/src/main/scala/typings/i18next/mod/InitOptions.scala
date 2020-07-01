@@ -151,10 +151,15 @@ trait InitOptions extends js.Object {
     ])
   ] = js.undefined
   /**
-    * If true will pass eg. en-US if finding en in whitelist
+    * If true will pass eg. en-US if finding en in supportedLngs
     * @default false
     */
-  var nonExplicitWhitelist: js.UndefOr[Boolean] = js.undefined
+  var nonExplicitSupportedLngs: js.UndefOr[Boolean] = js.undefined
+  /**
+    * DEPRECTADED use nonExplicitSupportedLngs
+    * @default false
+    */
+  var nonExplicitWhiteliest: js.UndefOr[Boolean] = js.undefined
   /**
     * String or array of namespaces to load
     * @default 'translation'
@@ -245,6 +250,11 @@ trait InitOptions extends js.Object {
     */
   var simplifyPluralSuffix: js.UndefOr[Boolean] = js.undefined
   /**
+    * Array of allowed languages
+    * @default false
+    */
+  var supportedLngs: js.UndefOr[`false` | js.Array[String]] = js.undefined
+  /**
     * Experimental: enable to update default values using the saveMissing
     * (Works only if defaultValue different from translated value.
     * Only useful on initial development or when keeping code as source of truth not changing values outside of code.
@@ -253,7 +263,7 @@ trait InitOptions extends js.Object {
     */
   var updateMissing: js.UndefOr[Boolean] = js.undefined
   /**
-    * Array of allowed languages
+    * DEPRECATED use supportedLngs
     * @default false
     */
   var whitelist: js.UndefOr[`false` | js.Array[String]] = js.undefined
@@ -292,7 +302,8 @@ object InitOptions {
       /* fallbackValue */ String, 
       Unit
     ]) = null,
-    nonExplicitWhitelist: js.UndefOr[Boolean] = js.undefined,
+    nonExplicitSupportedLngs: js.UndefOr[Boolean] = js.undefined,
+    nonExplicitWhiteliest: js.UndefOr[Boolean] = js.undefined,
     ns: String | js.Array[String] = null,
     nsSeparator: `false` | String = null,
     overloadTranslationOptionHandler: /* args */ js.Array[String] => TOptions[StringMap] = null,
@@ -311,6 +322,7 @@ object InitOptions {
     saveMissing: js.UndefOr[Boolean] = js.undefined,
     saveMissingTo: current | all | fallback = null,
     simplifyPluralSuffix: js.UndefOr[Boolean] = js.undefined,
+    supportedLngs: `false` | js.Array[String] = null,
     updateMissing: js.UndefOr[Boolean] = js.undefined,
     whitelist: `false` | js.Array[String] = null
   ): InitOptions = {
@@ -339,7 +351,8 @@ object InitOptions {
     if (!js.isUndefined(lowerCaseLng)) __obj.updateDynamic("lowerCaseLng")(lowerCaseLng.get.asInstanceOf[js.Any])
     if (missingInterpolationHandler != null) __obj.updateDynamic("missingInterpolationHandler")(js.Any.fromFunction3(missingInterpolationHandler))
     if (missingKeyHandler != null) __obj.updateDynamic("missingKeyHandler")(missingKeyHandler.asInstanceOf[js.Any])
-    if (!js.isUndefined(nonExplicitWhitelist)) __obj.updateDynamic("nonExplicitWhitelist")(nonExplicitWhitelist.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nonExplicitSupportedLngs)) __obj.updateDynamic("nonExplicitSupportedLngs")(nonExplicitSupportedLngs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nonExplicitWhiteliest)) __obj.updateDynamic("nonExplicitWhiteliest")(nonExplicitWhiteliest.get.asInstanceOf[js.Any])
     if (ns != null) __obj.updateDynamic("ns")(ns.asInstanceOf[js.Any])
     if (nsSeparator != null) __obj.updateDynamic("nsSeparator")(nsSeparator.asInstanceOf[js.Any])
     if (overloadTranslationOptionHandler != null) __obj.updateDynamic("overloadTranslationOptionHandler")(js.Any.fromFunction1(overloadTranslationOptionHandler))
@@ -358,6 +371,7 @@ object InitOptions {
     if (!js.isUndefined(saveMissing)) __obj.updateDynamic("saveMissing")(saveMissing.get.asInstanceOf[js.Any])
     if (saveMissingTo != null) __obj.updateDynamic("saveMissingTo")(saveMissingTo.asInstanceOf[js.Any])
     if (!js.isUndefined(simplifyPluralSuffix)) __obj.updateDynamic("simplifyPluralSuffix")(simplifyPluralSuffix.get.asInstanceOf[js.Any])
+    if (supportedLngs != null) __obj.updateDynamic("supportedLngs")(supportedLngs.asInstanceOf[js.Any])
     if (!js.isUndefined(updateMissing)) __obj.updateDynamic("updateMissing")(updateMissing.get.asInstanceOf[js.Any])
     if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitOptions]

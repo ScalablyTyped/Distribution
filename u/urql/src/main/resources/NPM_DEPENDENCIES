@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "urql" : "1.9.7"
+      "urql" : "1.9.8"
     }
   ],
   "test-dependencies" : [
     {
-      "urql" : "1.9.7"
+      "urql" : "1.9.8"
     }
   ],
   "compile-devDependencies" : [

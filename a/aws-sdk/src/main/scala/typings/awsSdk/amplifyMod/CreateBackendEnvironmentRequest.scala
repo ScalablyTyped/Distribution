@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateBackendEnvironmentRequest extends js.Object {
   /**
-    *  Unique Id for an Amplify App. 
+    *  The unique ID for an Amplify app. 
     */
   var appId: AppId = js.native
   /**
-    *  Name of deployment artifacts. 
+    *  The name of deployment artifacts. 
     */
   var deploymentArtifacts: js.UndefOr[DeploymentArtifacts] = js.native
   /**
-    *  Name for the backend environment. 
+    *  The name for the backend environment. 
     */
   var environmentName: EnvironmentName = js.native
   /**
-    *  CloudFormation stack name of backend environment. 
+    *  The AWS CloudFormation stack name of a backend environment. 
     */
   var stackName: js.UndefOr[StackName] = js.native
 }

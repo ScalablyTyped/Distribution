@@ -31,6 +31,7 @@ object Style {
     Colondisabled: StyleOptions = null,
     Colonfocus: StyleOptions = null,
     Colonhover: StyleOptions = null,
+    backgroundColor: String = null,
     color: String = null,
     fontFamily: String = null,
     fontSize: String = null,
@@ -54,6 +55,7 @@ object Style {
     if (Colondisabled != null) __obj.updateDynamic(":disabled")(Colondisabled.asInstanceOf[js.Any])
     if (Colonfocus != null) __obj.updateDynamic(":focus")(Colonfocus.asInstanceOf[js.Any])
     if (Colonhover != null) __obj.updateDynamic(":hover")(Colonhover.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])

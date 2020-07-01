@@ -10,6 +10,7 @@ import typings.twitchExt.twitchExtStrings.bufferSize
 import typings.twitchExt.twitchExtStrings.displayResolution
 import typings.twitchExt.twitchExtStrings.game
 import typings.twitchExt.twitchExtStrings.hlsLatencyBroadcaster
+import typings.twitchExt.twitchExtStrings.hostingInfo
 import typings.twitchExt.twitchExtStrings.isFullScreen
 import typings.twitchExt.twitchExtStrings.isMuted
 import typings.twitchExt.twitchExtStrings.isPaused
@@ -37,7 +38,7 @@ trait TwitchExt extends js.Object {
     */
   var actions: TwitchExtActions = js.native
   /**
-    * @see https://dev.twitch.tv/docs/extensions/bits/#javascript-helper
+    * @see https://dev.twitch.tv/docs/extensions/reference#helper-bits
     */
   var bits: TwitchExtBits = js.native
   /**
@@ -61,6 +62,10 @@ trait TwitchExt extends js.Object {
     * This encodes the Helper version in 1.1.1 (semantic versioning) format.
     */
   var version: String = js.native
+  /**
+    * @see https://dev.twitch.tv/docs/extensions/reference#helper-viewer
+    */
+  var viewer: TwitchExtViewer = js.native
   /**
     * This function binds the callback to listen to the target topic.
     *
@@ -89,7 +94,7 @@ trait TwitchExt extends js.Object {
     contextCallback: js.Function2[
       /* context */ PartialTwitchExtContext, 
       /* changed */ js.Array[
-        /* keyof twitch-ext.anon.PartialTwitchExtContext */ isPaused | bufferSize | isTheatreMode | isMuted | isFullScreen | hlsLatencyBroadcaster | volume | videoResolution | displayResolution | playbackMode | mode | arePlayerControlsVisible | bitrate | game | language | theme
+        /* keyof twitch-ext.anon.PartialTwitchExtContext */ isPaused | bufferSize | isTheatreMode | isMuted | isFullScreen | hlsLatencyBroadcaster | volume | videoResolution | displayResolution | playbackMode | mode | arePlayerControlsVisible | hostingInfo | bitrate | game | language | theme
       ], 
       Unit
     ]
@@ -101,6 +106,15 @@ trait TwitchExt extends js.Object {
     * @see https://dev.twitch.tv/docs/extensions/reference/#onerror
     */
   def onError(errorCallback: js.Function1[/* errorValue */ js.Any, Unit]): Unit = js.native
+  /**
+    * This function allows an extension to adjust its visibility when the viewer highlights the extension by hovering
+    * over the extension’s menu icon or open menu, in the video player. The function applies only to video-overlay and
+    * component Extensions.
+    *
+    * @param callback This callback is called whenever the extension is or is no longer highlighted by the user.
+    * @see https://dev.twitch.tv/docs/extensions/reference/#onhighlightchanged
+    */
+  def onHighlightChanged(callback: js.Function1[/* isHighlighted */ Boolean, Unit]): Unit = js.native
   /**
     * This function registers a callback that gets called whenever an extension changes position in the player. This
     * occurs only for video-component extensions. This also is triggered as the extension loads.

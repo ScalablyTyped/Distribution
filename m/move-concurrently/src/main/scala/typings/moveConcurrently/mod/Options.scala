@@ -36,7 +36,7 @@ trait Options[T /* <: js.Thenable[Unit] */] extends js.Object {
 
 object Options {
   @scala.inline
-  def apply[T](
+  def apply[/* <: js.Thenable[scala.Unit] */ T](
     Promise: Instantiable1[/* args (repeated) */ js.Any, T] = null,
     fs: js.Any = null,
     getuid: js.Any = null,

@@ -173,7 +173,6 @@ trait ButtonProps
   var contextMenu: js.UndefOr[String] = js.undefined
   var controls: js.UndefOr[Boolean] = js.undefined
   var coords: js.UndefOr[String] = js.undefined
-  var cornerStyleClass: js.UndefOr[String] = js.undefined
   var crossOrigin: js.UndefOr[String] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   var data: js.UndefOr[String] = js.undefined
@@ -463,7 +462,6 @@ object ButtonProps {
     contextMenu: String = null,
     controls: js.UndefOr[Boolean] = js.undefined,
     coords: String = null,
-    cornerStyleClass: String = null,
     crossOrigin: String = null,
     dangerouslySetInnerHTML: Html = null,
     data: String = null,
@@ -633,7 +631,8 @@ object ButtonProps {
     scrolling: String = null,
     seamless: js.UndefOr[Boolean] = js.undefined,
     security: String = null,
-    selected: js.UndefOr[Boolean] = js.undefined
+    selected: js.UndefOr[Boolean] = js.undefined,
+    shape: String = null
   ): ButtonProps = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
@@ -719,7 +718,6 @@ object ButtonProps {
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.get.asInstanceOf[js.Any])
     if (coords != null) __obj.updateDynamic("coords")(coords.asInstanceOf[js.Any])
-    if (cornerStyleClass != null) __obj.updateDynamic("cornerStyleClass")(cornerStyleClass.asInstanceOf[js.Any])
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
@@ -890,6 +888,7 @@ object ButtonProps {
     if (!js.isUndefined(seamless)) __obj.updateDynamic("seamless")(seamless.get.asInstanceOf[js.Any])
     if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
     if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonProps]
   }
 }

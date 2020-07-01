@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("estraverse", "replace")
 @js.native
 object replace extends js.Object {
-  def apply(ast: Node, visitor: Visitor): Node = js.native
+  def apply(root: Node, visitor: Visitor): Node = js.native
 }
 

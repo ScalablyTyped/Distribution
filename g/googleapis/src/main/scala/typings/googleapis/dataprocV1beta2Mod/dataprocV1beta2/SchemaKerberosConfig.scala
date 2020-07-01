@@ -97,7 +97,7 @@ object SchemaKerberosConfig {
     keystoreUri: String = null,
     kmsKeyUri: String = null,
     rootPrincipalPasswordUri: String = null,
-    tgtLifetimeHours: Int | Double = null,
+    tgtLifetimeHours: js.UndefOr[Double] = js.undefined,
     truststorePasswordUri: String = null,
     truststoreUri: String = null
   ): SchemaKerberosConfig = {
@@ -106,14 +106,14 @@ object SchemaKerberosConfig {
     if (crossRealmTrustKdc != null) __obj.updateDynamic("crossRealmTrustKdc")(crossRealmTrustKdc.asInstanceOf[js.Any])
     if (crossRealmTrustRealm != null) __obj.updateDynamic("crossRealmTrustRealm")(crossRealmTrustRealm.asInstanceOf[js.Any])
     if (crossRealmTrustSharedPasswordUri != null) __obj.updateDynamic("crossRealmTrustSharedPasswordUri")(crossRealmTrustSharedPasswordUri.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableKerberos)) __obj.updateDynamic("enableKerberos")(enableKerberos.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableKerberos)) __obj.updateDynamic("enableKerberos")(enableKerberos.get.asInstanceOf[js.Any])
     if (kdcDbKeyUri != null) __obj.updateDynamic("kdcDbKeyUri")(kdcDbKeyUri.asInstanceOf[js.Any])
     if (keyPasswordUri != null) __obj.updateDynamic("keyPasswordUri")(keyPasswordUri.asInstanceOf[js.Any])
     if (keystorePasswordUri != null) __obj.updateDynamic("keystorePasswordUri")(keystorePasswordUri.asInstanceOf[js.Any])
     if (keystoreUri != null) __obj.updateDynamic("keystoreUri")(keystoreUri.asInstanceOf[js.Any])
     if (kmsKeyUri != null) __obj.updateDynamic("kmsKeyUri")(kmsKeyUri.asInstanceOf[js.Any])
     if (rootPrincipalPasswordUri != null) __obj.updateDynamic("rootPrincipalPasswordUri")(rootPrincipalPasswordUri.asInstanceOf[js.Any])
-    if (tgtLifetimeHours != null) __obj.updateDynamic("tgtLifetimeHours")(tgtLifetimeHours.asInstanceOf[js.Any])
+    if (!js.isUndefined(tgtLifetimeHours)) __obj.updateDynamic("tgtLifetimeHours")(tgtLifetimeHours.get.asInstanceOf[js.Any])
     if (truststorePasswordUri != null) __obj.updateDynamic("truststorePasswordUri")(truststorePasswordUri.asInstanceOf[js.Any])
     if (truststoreUri != null) __obj.updateDynamic("truststoreUri")(truststoreUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaKerberosConfig]

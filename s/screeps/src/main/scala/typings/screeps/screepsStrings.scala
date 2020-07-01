@@ -144,6 +144,9 @@ object screepsStrings {
   sealed trait ZO extends ResourceConstantSansEnergy
   
   @js.native
+  sealed trait accessKey extends js.Object
+  
+  @js.native
   sealed trait alloy extends ResourceConstantSansEnergy
   
   @js.native
@@ -196,6 +199,9 @@ object screepsStrings {
   
   @js.native
   sealed trait controller extends js.Object
+  
+  @js.native
+  sealed trait cpuUnlock extends js.Object
   
   @js.native
   sealed trait creep extends js.Object
@@ -334,6 +340,9 @@ object screepsStrings {
   
   @js.native
   sealed trait phlegm extends ResourceConstantSansEnergy
+  
+  @js.native
+  sealed trait pixel extends js.Object
   
   @js.native
   sealed trait plain extends Terrain
@@ -545,6 +554,8 @@ object screepsStrings {
   @scala.inline
   def ZO: ZO = "ZO".asInstanceOf[ZO]
   @scala.inline
+  def accessKey: accessKey = "accessKey".asInstanceOf[accessKey]
+  @scala.inline
   def alloy: alloy = "alloy".asInstanceOf[alloy]
   @scala.inline
   def attack: attack = "attack".asInstanceOf[attack]
@@ -580,6 +591,8 @@ object screepsStrings {
   def container: container = "container".asInstanceOf[container]
   @scala.inline
   def controller: controller = "controller".asInstanceOf[controller]
+  @scala.inline
+  def cpuUnlock: cpuUnlock = "cpuUnlock".asInstanceOf[cpuUnlock]
   @scala.inline
   def creep: creep = "creep".asInstanceOf[creep]
   @scala.inline
@@ -672,6 +685,8 @@ object screepsStrings {
   def oxidant: oxidant = "oxidant".asInstanceOf[oxidant]
   @scala.inline
   def phlegm: phlegm = "phlegm".asInstanceOf[phlegm]
+  @scala.inline
+  def pixel: pixel = "pixel".asInstanceOf[pixel]
   @scala.inline
   def plain: plain = "plain".asInstanceOf[plain]
   @scala.inline

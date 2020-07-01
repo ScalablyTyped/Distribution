@@ -160,7 +160,7 @@ object SchemaGoogleCloudMlV1Version {
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
     if (framework != null) __obj.updateDynamic("framework")(framework.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.get.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (lastUseTime != null) __obj.updateDynamic("lastUseTime")(lastUseTime.asInstanceOf[js.Any])
     if (machineType != null) __obj.updateDynamic("machineType")(machineType.asInstanceOf[js.Any])

@@ -19,7 +19,7 @@ trait Actions[TContext, TEvent /* <: EventObject */] extends js.Object {
 
 object Actions {
   @scala.inline
-  def apply[TContext, TEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     actions: js.Array[ActionObject[TContext, TEvent]],
     eventType: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | NullEvent | Asterisk,
     source: String,

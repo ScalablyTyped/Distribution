@@ -18,7 +18,7 @@ trait ComponentOptions[V /* <: Vue */] extends js.Object {
 
 object ComponentOptions {
   @scala.inline
-  def apply[V](
+  def apply[/* <: typings.vue.vueMod.Vue */ V](
     beforeRouteEnter: (/* to */ Route, /* from */ Route, /* next */ NavigationGuardNext[V]) => js.Any = null,
     beforeRouteLeave: (/* to */ Route, /* from */ Route, /* next */ NavigationGuardNext[V]) => js.Any = null,
     beforeRouteUpdate: (/* to */ Route, /* from */ Route, /* next */ NavigationGuardNext[V]) => js.Any = null,

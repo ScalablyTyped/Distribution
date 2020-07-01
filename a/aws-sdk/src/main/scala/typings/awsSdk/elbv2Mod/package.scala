@@ -17,6 +17,8 @@ package object elbv2Mod {
   type ActionTypeEnum = typings.awsSdk.elbv2Mod._ActionTypeEnum | java.lang.String
   type Actions = js.Array[typings.awsSdk.elbv2Mod.Action]
   type AllocationId = java.lang.String
+  type AlpnPolicyName = js.Array[typings.awsSdk.elbv2Mod.AlpnPolicyValue]
+  type AlpnPolicyValue = java.lang.String
   type AuthenticateCognitoActionAuthenticationRequestExtraParams = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.elbv2Mod.AuthenticateCognitoActionAuthenticationRequestParamValue]
   type AuthenticateCognitoActionAuthenticationRequestParamName = java.lang.String
   type AuthenticateCognitoActionAuthenticationRequestParamValue = java.lang.String

@@ -5,9 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AsteriskPing extends js.Object {
-  /* Properties */
+  /**
+    * Asterisk id info.
+    */
   var asterisk_id: String
+  /**
+    * Always string value is pong.
+    */
   var ping: String
+  /**
+    * The timestamp string of request received time.
+    */
   var timestamp: String
 }
 

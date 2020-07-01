@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeNFSFileSharesOutput extends js.Object {
   /**
-    * An array containing a description for each requested file share. 
+    * An array containing a description for each requested file share.
     */
   var NFSFileShareInfoList: js.UndefOr[typings.awsSdk.storagegatewayMod.NFSFileShareInfoList] = js.native
 }

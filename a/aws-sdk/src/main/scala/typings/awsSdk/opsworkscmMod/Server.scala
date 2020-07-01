@@ -47,7 +47,7 @@ trait Server extends js.Object {
     */
   var EngineModel: js.UndefOr[String] = js.native
   /**
-    * The engine version of the server. For a Chef server, the valid value for EngineVersion is currently 12. For a Puppet server, the valid value is 2017. 
+    * The engine version of the server. For a Chef server, the valid value for EngineVersion is currently 2. For a Puppet server, the valid value is 2017. 
     */
   var EngineVersion: js.UndefOr[String] = js.native
   /**

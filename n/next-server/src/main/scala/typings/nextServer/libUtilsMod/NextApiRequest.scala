@@ -54,6 +54,8 @@ trait NextApiRequest extends js.Object {
   var rawHeaders: js.Array[String] = js.native
   var rawTrailers: js.Array[String] = js.native
   var readable: Boolean = js.native
+  val readableEncoding: BufferEncoding | Null = js.native
+  val readableEnded: Boolean = js.native
   val readableHighWaterMark: Double = js.native
   val readableLength: Double = js.native
   val readableObjectMode: Boolean = js.native

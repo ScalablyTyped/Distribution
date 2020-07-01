@@ -34,7 +34,7 @@ trait IOptions[T /* <: IShell */, U]
 
 object IOptions {
   @scala.inline
-  def apply[T, U](
+  def apply[/* <: typings.jupyterlabApplication.frontendMod.JupyterFrontEnd.IShell */ T, U](
     shell: T,
     commandLinker: CommandLinker = null,
     contextMenuRenderer: IRenderer = null,

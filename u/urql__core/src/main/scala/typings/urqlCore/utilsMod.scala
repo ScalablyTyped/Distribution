@@ -2,6 +2,7 @@ package typings.urqlCore
 
 import typings.graphql.astMod.DocumentNode
 import typings.std.Error
+import typings.std.Exclude
 import typings.urqlCore.anon.Context
 import typings.urqlCore.anon.NetworkError
 import typings.urqlCore.typesMod.GraphQLRequest
@@ -23,13 +24,13 @@ object utilsMod extends js.Object {
     def this(hasNetworkErrorGraphQLErrorsResponse: NetworkError) = this()
   }
   
-  def addMetadata(source: Operation, meta: OperationDebugMeta): Context = js.native
+  def addMetadata(source: Operation, meta: Exclude[js.UndefOr[OperationDebugMeta], js.UndefOr[scala.Nothing]]): Context = js.native
   def collectTypesFromResponse(response: js.Object): js.Array[String] = js.native
   def createRequest(q: String): GraphQLRequest = js.native
   def createRequest(q: String, vars: js.Object): GraphQLRequest = js.native
   def createRequest(q: DocumentNode): GraphQLRequest = js.native
   def createRequest(q: DocumentNode, vars: js.Object): GraphQLRequest = js.native
-  def formatDocument(node: DocumentNode): js.Any = js.native
+  def formatDocument(node: DocumentNode): DocumentNode = js.native
   def makeErrorResult(operation: Operation, error: Error): OperationResult[_] = js.native
   def makeErrorResult(operation: Operation, error: Error, response: js.Any): OperationResult[_] = js.native
   def makeResult(operation: Operation, result: js.Any): OperationResult[_] = js.native

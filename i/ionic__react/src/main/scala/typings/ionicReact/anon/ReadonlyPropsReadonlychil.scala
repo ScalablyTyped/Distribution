@@ -1,6 +1,8 @@
 package typings.ionicReact.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.ionicCore.animationInterfaceMod.Animation
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.componentsMod.global.HTMLIonBackButtonElement
 import typings.ionicCore.mod.Color
 import typings.ionicReact.ionicReactStrings.button
@@ -25,6 +27,7 @@ trait ReadonlyPropsReadonlychil extends js.Object {
   val icon: js.UndefOr[Ios | String] = js.undefined
   val mode: js.UndefOr[ios | md] = js.undefined
   val ref: js.UndefOr[RefObject[HTMLIonBackButtonElement]] = js.undefined
+  val routerAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   val style: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   val text: js.UndefOr[String] = js.undefined
   val `type`: js.UndefOr[submit | reset | button] = js.undefined
@@ -42,6 +45,7 @@ object ReadonlyPropsReadonlychil {
     icon: Ios | String = null,
     mode: ios | md = null,
     ref: RefObject[HTMLIonBackButtonElement] = null,
+    routerAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     style: StringDictionary[js.Any] = null,
     text: String = null,
     `type`: submit | reset | button = null
@@ -56,6 +60,7 @@ object ReadonlyPropsReadonlychil {
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (routerAnimation != null) __obj.updateDynamic("routerAnimation")(js.Any.fromFunction2(routerAnimation))
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

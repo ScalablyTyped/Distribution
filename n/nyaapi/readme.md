@@ -1,7 +1,7 @@
 
 # Scala.js typings for nyaapi
 
-Typings are for version 2.1
+Typings are for version 2.3
 
 ## Library description:
 Non-official api for getting torrent links from Nyaa.si and Nyaa.pantsu.cat

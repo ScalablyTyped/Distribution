@@ -1474,7 +1474,7 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.intersection
     */
-  def intersection[T](arrays: List[T]*): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def intersection[T](arrays: (js.UndefOr[List[T] | Null])*): LoDashExplicitWrapper[js.Array[T]] = js.native
   /**
     * @see _.intersectionBy
     */

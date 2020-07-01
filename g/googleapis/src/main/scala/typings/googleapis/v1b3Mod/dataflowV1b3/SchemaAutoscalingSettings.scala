@@ -21,10 +21,10 @@ trait SchemaAutoscalingSettings extends js.Object {
 
 object SchemaAutoscalingSettings {
   @scala.inline
-  def apply(algorithm: String = null, maxNumWorkers: Int | Double = null): SchemaAutoscalingSettings = {
+  def apply(algorithm: String = null, maxNumWorkers: js.UndefOr[Double] = js.undefined): SchemaAutoscalingSettings = {
     val __obj = js.Dynamic.literal()
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
-    if (maxNumWorkers != null) __obj.updateDynamic("maxNumWorkers")(maxNumWorkers.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxNumWorkers)) __obj.updateDynamic("maxNumWorkers")(maxNumWorkers.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAutoscalingSettings]
   }
 }

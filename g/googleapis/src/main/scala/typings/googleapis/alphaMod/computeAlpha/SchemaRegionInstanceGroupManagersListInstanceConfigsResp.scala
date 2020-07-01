@@ -1,6 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
-import typings.googleapis.AnonCode
+import typings.googleapis.anon.Code
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ trait SchemaRegionInstanceGroupManagersListInstanceConfigsResp extends js.Object
   /**
     * [Output Only] Informational warning message.
     */
-  var warning: js.UndefOr[AnonCode] = js.native
+  var warning: js.UndefOr[Code] = js.native
 }
 
 object SchemaRegionInstanceGroupManagersListInstanceConfigsResp {
@@ -30,7 +30,7 @@ object SchemaRegionInstanceGroupManagersListInstanceConfigsResp {
   def apply(
     items: js.Array[SchemaPerInstanceConfig] = null,
     nextPageToken: String = null,
-    warning: AnonCode = null
+    warning: Code = null
   ): SchemaRegionInstanceGroupManagersListInstanceConfigsResp = {
     val __obj = js.Dynamic.literal()
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])

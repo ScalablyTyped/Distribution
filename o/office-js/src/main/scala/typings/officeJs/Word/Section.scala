@@ -32,7 +32,6 @@ trait Section extends ClientObject {
   @JSName("context")
   var context_Section: RequestContext = js.native
   /**
-    *
     * Gets one of the section's footers.
     *
     * [Api set: WordApi 1.1]
@@ -45,7 +44,6 @@ trait Section extends ClientObject {
   @JSName("getFooter")
   def getFooter_FirstPage(`type`: FirstPage): Body = js.native
   /**
-    *
     * Gets one of the section's footers.
     *
     * [Api set: WordApi 1.1]
@@ -55,7 +53,6 @@ trait Section extends ClientObject {
   @JSName("getFooter")
   def getFooter_Primary(`type`: Primary): Body = js.native
   /**
-    *
     * Gets one of the section's headers.
     *
     * [Api set: WordApi 1.1]
@@ -68,7 +65,6 @@ trait Section extends ClientObject {
   @JSName("getHeader")
   def getHeader_FirstPage(`type`: FirstPage): Body = js.native
   /**
-    *
     * Gets one of the section's headers.
     *
     * [Api set: WordApi 1.1]
@@ -78,39 +74,27 @@ trait Section extends ClientObject {
   @JSName("getHeader")
   def getHeader_Primary(`type`: Primary): Body = js.native
   /**
-    *
     * Gets the next section. Throws an error if this section is the last one.
     *
     * [Api set: WordApi 1.3]
     */
   def getNext(): Section = js.native
   /**
-    *
     * Gets the next section. Returns a null object if this section is the last one.
     *
     * [Api set: WordApi 1.3]
     */
   def getNextOrNullObject(): Section = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Word.Section` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Word.Section` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Section` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): Section = js.native
-  def load(option: String): Section = js.native
-  def load(option: js.Array[String]): Section = js.native
-  def load(option: SectionLoadOptions): Section = js.native
-  def load(option: Expand): Section = js.native
+  def load(options: SectionLoadOptions): Section = js.native
+  def load(propertyNamesAndPaths: Expand): Section = js.native
+  def load(propertyNames: String): Section = js.native
+  def load(propertyNames: js.Array[String]): Section = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *
     * @remarks
@@ -132,11 +116,11 @@ trait Section extends ClientObject {
     */
   def toJSON(): SectionData = js.native
   /**
-    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
     */
   def track(): Section = js.native
   /**
-    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
+    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     */
   def untrack(): Section = js.native
 }

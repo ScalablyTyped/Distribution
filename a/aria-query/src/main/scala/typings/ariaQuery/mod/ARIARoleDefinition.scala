@@ -12,6 +12,8 @@ trait ARIARoleDefinition extends js.Object {
   /* Child presentational roles strip child nodes of roles and flatten the
     * content to text. */
   var childrenPresentational: Boolean
+  /* aria-* properties and states disallowed on this role. */
+  var prohibitedProps: ARIAPropertyMap
   /* aria-* properties and states allowed on this role. */
   var props: ARIAPropertyMap
   /* The concepts in related domains that inform behavior mappings. */
@@ -31,12 +33,13 @@ object ARIARoleDefinition {
     `abstract`: Boolean,
     baseConcepts: js.Array[ARIARoleRelation],
     childrenPresentational: Boolean,
+    prohibitedProps: ARIAPropertyMap,
     props: ARIAPropertyMap,
     relatedConcepts: js.Array[ARIARoleRelation],
     requiredProps: ARIAPropertyMap,
     superClass: js.Array[js.Array[ARIAAbstractRole | ARIARole | ARIADPubRole]]
   ): ARIARoleDefinition = {
-    val __obj = js.Dynamic.literal(baseConcepts = baseConcepts.asInstanceOf[js.Any], childrenPresentational = childrenPresentational.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], relatedConcepts = relatedConcepts.asInstanceOf[js.Any], requiredProps = requiredProps.asInstanceOf[js.Any], superClass = superClass.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(baseConcepts = baseConcepts.asInstanceOf[js.Any], childrenPresentational = childrenPresentational.asInstanceOf[js.Any], prohibitedProps = prohibitedProps.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], relatedConcepts = relatedConcepts.asInstanceOf[js.Any], requiredProps = requiredProps.asInstanceOf[js.Any], superClass = superClass.asInstanceOf[js.Any])
     __obj.updateDynamic("abstract")(`abstract`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ARIARoleDefinition]
   }

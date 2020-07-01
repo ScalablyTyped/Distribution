@@ -1,5 +1,6 @@
 package typings.ionicCore
 
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.elementInterfaceMod.ButtonInterface
 import typings.ionicCore.ionicCoreStrings.bounded
 import typings.ionicCore.ionicCoreStrings.button
@@ -38,6 +39,11 @@ object backButtonMod extends js.Object {
       */
     var icon: js.UndefOr[String | Null] = js.native
     var onClick: js.Any = js.native
+    /**
+      * When using a router, it specifies the transition animation when navigating to
+      * another page.
+      */
+    var routerAnimation: js.UndefOr[AnimationBuilder] = js.native
     /**
       * The text to display in the back button.
       */

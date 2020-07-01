@@ -31,11 +31,15 @@ trait SchemaSentiment extends js.Object {
 
 object SchemaSentiment {
   @scala.inline
-  def apply(magnitude: Int | Double = null, polarity: Int | Double = null, score: Int | Double = null): SchemaSentiment = {
+  def apply(
+    magnitude: js.UndefOr[Double] = js.undefined,
+    polarity: js.UndefOr[Double] = js.undefined,
+    score: js.UndefOr[Double] = js.undefined
+  ): SchemaSentiment = {
     val __obj = js.Dynamic.literal()
-    if (magnitude != null) __obj.updateDynamic("magnitude")(magnitude.asInstanceOf[js.Any])
-    if (polarity != null) __obj.updateDynamic("polarity")(polarity.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(magnitude)) __obj.updateDynamic("magnitude")(magnitude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(polarity)) __obj.updateDynamic("polarity")(polarity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSentiment]
   }
 }

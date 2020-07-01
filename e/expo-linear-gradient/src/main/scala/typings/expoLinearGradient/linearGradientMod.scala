@@ -1,6 +1,5 @@
 package typings.expoLinearGradient
 
-import typings.expoLinearGradient.anon.AccessibilityActions
 import typings.expoLinearGradient.anon.Colors
 import typings.expoLinearGradient.anon.TypeofView
 import typings.expoLinearGradient.anon.X
@@ -19,12 +18,6 @@ object linearGradientMod extends js.Object {
   
   @js.native
   class default () extends LinearGradient
-  
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    var propTypes: AccessibilityActions = js.native
-  }
   
   type LinearGradienPoint = X | (js.Tuple2[Double, Double])
   type LinearGradientProps = Colors with ComponentProps[TypeofView]

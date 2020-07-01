@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait EmailMessageActivity extends js.Object {
   /**
-    * The "From" address to use for the message.
+    * Specifies the sender address for an email message that's sent to participants in the journey.
     */
   var MessageConfig: js.UndefOr[JourneyEmailMessage] = js.native
   /**
@@ -15,7 +15,7 @@ trait EmailMessageActivity extends js.Object {
     */
   var NextActivity: js.UndefOr[string] = js.native
   /**
-    * The name of the email template to use for the message.
+    * The name of the email message template to use for the message. If specified, this value must match the name of an existing message template.
     */
   var TemplateName: js.UndefOr[string] = js.native
   /**

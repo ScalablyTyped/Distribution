@@ -84,7 +84,6 @@ trait Document extends ClientObject {
     */
   val settings: SettingCollection = js.native
   /**
-    *
     * Deletes a bookmark, if it exists, from the document.
     *
     * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -94,7 +93,6 @@ trait Document extends ClientObject {
     */
   def deleteBookmark(name: String): Unit = js.native
   /**
-    *
     * Gets a bookmark's range. Throws an error if the bookmark does not exist.
     *
     * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -104,7 +102,6 @@ trait Document extends ClientObject {
     */
   def getBookmarkRange(name: String): Range = js.native
   /**
-    *
     * Gets a bookmark's range. Returns a null object if the bookmark does not exist.
     *
     * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -114,34 +111,22 @@ trait Document extends ClientObject {
     */
   def getBookmarkRangeOrNullObject(name: String): Range = js.native
   /**
-    *
     * Gets the current selection of the document. Multiple selections are not supported.
     *
     * [Api set: WordApi 1.1]
     */
   def getSelection(): Range = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Word.Document` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Word.Document` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Document` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): Document = js.native
-  def load(option: String): Document = js.native
-  def load(option: js.Array[String]): Document = js.native
-  def load(option: DocumentLoadOptions): Document = js.native
-  def load(option: Expand): Document = js.native
+  def load(options: DocumentLoadOptions): Document = js.native
+  def load(propertyNamesAndPaths: Expand): Document = js.native
+  def load(propertyNames: String): Document = js.native
+  def load(propertyNames: js.Array[String]): Document = js.native
   /**
-    *
     * Saves the document. This uses the Word default file naming convention if the document has not been saved before.
     *
     * [Api set: WordApi 1.1]
@@ -168,11 +153,11 @@ trait Document extends ClientObject {
     */
   def toJSON(): DocumentData = js.native
   /**
-    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
     */
   def track(): Document = js.native
   /**
-    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
+    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     */
   def untrack(): Document = js.native
 }

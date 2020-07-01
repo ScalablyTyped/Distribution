@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @see https://developer.knuddels.de/docs/classes/Gender.html
-  */
+	 * @see https://developer.knuddels.de/docs/classes/Gender.html
+	 */
 @JSGlobal("Gender")
 @js.native
 class Gender () extends js.Object
@@ -16,16 +16,16 @@ class Gender () extends js.Object
 @js.native
 object Gender extends js.Object {
   /**
-    * @see https://developer.knuddels.de/docs/classes/Gender.html#property_Female
-    */
+  		 * @see https://developer.knuddels.de/docs/classes/Gender.html#property_Female
+  		 */
   val Female: Gender = js.native
   /**
-    * @see https://developer.knuddels.de/docs/classes/Gender.html#property_Male
-    */
+  		 * @see https://developer.knuddels.de/docs/classes/Gender.html#property_Male
+  		 */
   val Male: Gender = js.native
   /**
-    * @see https://developer.knuddels.de/docs/classes/Gender.html#property_Unknown
-    */
+  		 * @see https://developer.knuddels.de/docs/classes/Gender.html#property_Unknown
+  		 */
   val Unknown: Gender = js.native
 }
 

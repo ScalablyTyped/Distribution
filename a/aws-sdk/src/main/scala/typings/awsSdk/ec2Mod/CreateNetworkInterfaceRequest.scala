@@ -46,6 +46,10 @@ trait CreateNetworkInterfaceRequest extends js.Object {
     * The ID of the subnet to associate with the network interface.
     */
   var SubnetId: typings.awsSdk.ec2Mod.SubnetId = js.native
+  /**
+    * The tags to apply to the new network interface.
+    */
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
 }
 
 object CreateNetworkInterfaceRequest {
@@ -60,7 +64,8 @@ object CreateNetworkInterfaceRequest {
     Ipv6Addresses: InstanceIpv6AddressList = null,
     PrivateIpAddress: String = null,
     PrivateIpAddresses: PrivateIpAddressSpecificationList = null,
-    SecondaryPrivateIpAddressCount: js.UndefOr[Integer] = js.undefined
+    SecondaryPrivateIpAddressCount: js.UndefOr[Integer] = js.undefined,
+    TagSpecifications: TagSpecificationList = null
   ): CreateNetworkInterfaceRequest = {
     val __obj = js.Dynamic.literal(SubnetId = SubnetId.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
@@ -72,6 +77,7 @@ object CreateNetworkInterfaceRequest {
     if (PrivateIpAddress != null) __obj.updateDynamic("PrivateIpAddress")(PrivateIpAddress.asInstanceOf[js.Any])
     if (PrivateIpAddresses != null) __obj.updateDynamic("PrivateIpAddresses")(PrivateIpAddresses.asInstanceOf[js.Any])
     if (!js.isUndefined(SecondaryPrivateIpAddressCount)) __obj.updateDynamic("SecondaryPrivateIpAddressCount")(SecondaryPrivateIpAddressCount.get.asInstanceOf[js.Any])
+    if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateNetworkInterfaceRequest]
   }
 }

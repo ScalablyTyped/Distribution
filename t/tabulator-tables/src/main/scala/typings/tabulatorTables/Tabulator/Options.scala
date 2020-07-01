@@ -1,6 +1,7 @@
 package typings.tabulatorTables.Tabulator
 
 import typings.std.HTMLElement
+import typings.std.MouseEvent
 import typings.std.Record
 import typings.std.UIEvent
 import typings.tabulatorTables.anon.PickFilterfieldvalue
@@ -8,6 +9,7 @@ import typings.tabulatorTables.tabulatorTablesBooleans.`false`
 import typings.tabulatorTables.tabulatorTablesBooleans.`true`
 import typings.tabulatorTables.tabulatorTablesStrings.add
 import typings.tabulatorTables.tabulatorTablesStrings.arrow
+import typings.tabulatorTables.tabulatorTablesStrings.blocking
 import typings.tabulatorTables.tabulatorTablesStrings.both
 import typings.tabulatorTables.tabulatorTablesStrings.bottom
 import typings.tabulatorTables.tabulatorTablesStrings.cell
@@ -22,6 +24,7 @@ import typings.tabulatorTables.tabulatorTablesStrings.fitColumns
 import typings.tabulatorTables.tabulatorTablesStrings.fitData
 import typings.tabulatorTables.tabulatorTablesStrings.fitDataFill
 import typings.tabulatorTables.tabulatorTablesStrings.fitDataStretch
+import typings.tabulatorTables.tabulatorTablesStrings.fitDataTable
 import typings.tabulatorTables.tabulatorTablesStrings.form
 import typings.tabulatorTables.tabulatorTablesStrings.group
 import typings.tabulatorTables.tabulatorTablesStrings.header
@@ -33,6 +36,7 @@ import typings.tabulatorTables.tabulatorTablesStrings.insert
 import typings.tabulatorTables.tabulatorTablesStrings.json
 import typings.tabulatorTables.tabulatorTablesStrings.load
 import typings.tabulatorTables.tabulatorTablesStrings.local
+import typings.tabulatorTables.tabulatorTablesStrings.manual
 import typings.tabulatorTables.tabulatorTablesStrings.page
 import typings.tabulatorTables.tabulatorTablesStrings.paste
 import typings.tabulatorTables.tabulatorTablesStrings.plain
@@ -152,16 +156,45 @@ object Options {
     dataTreeStartExpanded: Boolean | js.Array[Boolean] | (js.Function2[/* row */ RowComponent, /* level */ Double, Boolean]) = null,
     downloadComplete: () => Unit = null,
     downloadConfig: AddditionalExportOptions = null,
-    downloadDataFormatter: /* data */ js.Array[_] => _ = null,
     downloadReady: (/* fileContents */ js.Any, /* blob */ js.Any) => _ = null,
+    downloadRowRange: RowRangeLookup = null,
     footerElement: String | HTMLElement = null,
     groupBy: String | (js.Function1[/* data */ js.Any, _]) = null,
     groupClick: (/* e */ UIEvent, /* group */ GroupComponent) => Unit = null,
     groupClosedShowCalcs: js.UndefOr[Boolean] = js.undefined,
     groupContext: (/* e */ UIEvent, /* group */ GroupComponent) => Unit = null,
+    groupContextMenu: js.Array[MenuObject[GroupComponent]] = null,
     groupDblClick: (/* e */ UIEvent, /* group */ GroupComponent) => Unit = null,
     groupDblTap: (/* e */ UIEvent, /* group */ GroupComponent) => Unit = null,
     groupHeader: (js.Function4[
+      /* value */ js.Any, 
+      /* count */ Double, 
+      /* data */ js.Any, 
+      /* group */ GroupComponent, 
+      String
+    ]) | (js.Array[js.Function3[/* value */ _, /* count */ Double, /* data */ _, String]]) = null,
+    groupHeaderClipboard: (js.Function4[
+      /* value */ js.Any, 
+      /* count */ Double, 
+      /* data */ js.Any, 
+      /* group */ GroupComponent, 
+      String
+    ]) | (js.Array[js.Function3[/* value */ _, /* count */ Double, /* data */ _, String]]) = null,
+    groupHeaderDownload: (js.Function4[
+      /* value */ js.Any, 
+      /* count */ Double, 
+      /* data */ js.Any, 
+      /* group */ GroupComponent, 
+      String
+    ]) | (js.Array[js.Function3[/* value */ _, /* count */ Double, /* data */ _, String]]) = null,
+    groupHeaderHtmlOutput: (js.Function4[
+      /* value */ js.Any, 
+      /* count */ Double, 
+      /* data */ js.Any, 
+      /* group */ GroupComponent, 
+      String
+    ]) | (js.Array[js.Function3[/* value */ _, /* count */ Double, /* data */ _, String]]) = null,
+    groupHeaderPrint: (js.Function4[
       /* value */ js.Any, 
       /* count */ Double, 
       /* data */ js.Any, 
@@ -199,7 +232,7 @@ object Options {
     invalidOptionWarnings: js.UndefOr[Boolean] = js.undefined,
     keybindings: `false` | KeyBinding = null,
     langs: js.Any = null,
-    layout: fitData | fitColumns | fitDataFill | fitDataStretch = null,
+    layout: fitData | fitColumns | fitDataFill | fitDataStretch | fitDataTable = null,
     layoutColumnsOnNewData: js.UndefOr[Boolean] = js.undefined,
     locale: Boolean | String = null,
     localized: (/* locale */ String, /* lang */ js.Any) => Unit = null,
@@ -207,7 +240,9 @@ object Options {
     minHeight: String | Double = null,
     movableColumns: js.UndefOr[Boolean] = js.undefined,
     movableRows: js.UndefOr[Boolean] = js.undefined,
+    movableRowsConnectedElements: String | HTMLElement = null,
     movableRowsConnectedTables: String | (js.Array[HTMLElement | String]) | HTMLElement = null,
+    movableRowsElementDrop: (/* e */ MouseEvent, /* element */ HTMLElement, /* row */ RowComponent) => _ = null,
     movableRowsReceived: (/* fromRow */ RowComponent, /* toRow */ RowComponent, /* fromTable */ typings.tabulatorTables.Tabulator) => Unit = null,
     movableRowsReceivedFailed: (/* fromRow */ RowComponent, /* toRow */ RowComponent, /* fromTable */ typings.tabulatorTables.Tabulator) => Unit = null,
     movableRowsReceiver: insert | add | update | replace | (js.Function3[
@@ -238,7 +273,7 @@ object Options {
     paginationElement: HTMLElement | String = null,
     paginationInitialPage: js.UndefOr[Double] = js.undefined,
     paginationSize: js.UndefOr[Double] = js.undefined,
-    paginationSizeSelector: `true` | js.Array[Double] = null,
+    paginationSizeSelector: `true` | (js.Array[_ | Double]) = null,
     persistence: `true` | PersistenceOptions = null,
     persistenceID: String = null,
     persistenceMode: local | cookie | `true` = null,
@@ -308,6 +343,7 @@ object Options {
     tooltips: GlobalTooltipOption = null,
     tooltipsHeader: js.UndefOr[Boolean] = js.undefined,
     validationFailed: (/* cell */ CellComponent, /* value */ js.Any, /* validators */ js.Array[StandardValidatorType | Validator]) => Unit = null,
+    validationMode: blocking | highlight | manual = null,
     virtualDom: js.UndefOr[Boolean] = js.undefined,
     virtualDomBuffer: Boolean | Double = null
   ): Options = {
@@ -391,16 +427,21 @@ object Options {
     if (dataTreeStartExpanded != null) __obj.updateDynamic("dataTreeStartExpanded")(dataTreeStartExpanded.asInstanceOf[js.Any])
     if (downloadComplete != null) __obj.updateDynamic("downloadComplete")(js.Any.fromFunction0(downloadComplete))
     if (downloadConfig != null) __obj.updateDynamic("downloadConfig")(downloadConfig.asInstanceOf[js.Any])
-    if (downloadDataFormatter != null) __obj.updateDynamic("downloadDataFormatter")(js.Any.fromFunction1(downloadDataFormatter))
     if (downloadReady != null) __obj.updateDynamic("downloadReady")(js.Any.fromFunction2(downloadReady))
+    if (downloadRowRange != null) __obj.updateDynamic("downloadRowRange")(downloadRowRange.asInstanceOf[js.Any])
     if (footerElement != null) __obj.updateDynamic("footerElement")(footerElement.asInstanceOf[js.Any])
     if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
     if (groupClick != null) __obj.updateDynamic("groupClick")(js.Any.fromFunction2(groupClick))
     if (!js.isUndefined(groupClosedShowCalcs)) __obj.updateDynamic("groupClosedShowCalcs")(groupClosedShowCalcs.get.asInstanceOf[js.Any])
     if (groupContext != null) __obj.updateDynamic("groupContext")(js.Any.fromFunction2(groupContext))
+    if (groupContextMenu != null) __obj.updateDynamic("groupContextMenu")(groupContextMenu.asInstanceOf[js.Any])
     if (groupDblClick != null) __obj.updateDynamic("groupDblClick")(js.Any.fromFunction2(groupDblClick))
     if (groupDblTap != null) __obj.updateDynamic("groupDblTap")(js.Any.fromFunction2(groupDblTap))
     if (groupHeader != null) __obj.updateDynamic("groupHeader")(groupHeader.asInstanceOf[js.Any])
+    if (groupHeaderClipboard != null) __obj.updateDynamic("groupHeaderClipboard")(groupHeaderClipboard.asInstanceOf[js.Any])
+    if (groupHeaderDownload != null) __obj.updateDynamic("groupHeaderDownload")(groupHeaderDownload.asInstanceOf[js.Any])
+    if (groupHeaderHtmlOutput != null) __obj.updateDynamic("groupHeaderHtmlOutput")(groupHeaderHtmlOutput.asInstanceOf[js.Any])
+    if (groupHeaderPrint != null) __obj.updateDynamic("groupHeaderPrint")(groupHeaderPrint.asInstanceOf[js.Any])
     if (groupStartOpen != null) __obj.updateDynamic("groupStartOpen")(groupStartOpen.asInstanceOf[js.Any])
     if (groupTap != null) __obj.updateDynamic("groupTap")(js.Any.fromFunction2(groupTap))
     if (groupTapHold != null) __obj.updateDynamic("groupTapHold")(js.Any.fromFunction2(groupTapHold))
@@ -434,7 +475,9 @@ object Options {
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (!js.isUndefined(movableColumns)) __obj.updateDynamic("movableColumns")(movableColumns.get.asInstanceOf[js.Any])
     if (!js.isUndefined(movableRows)) __obj.updateDynamic("movableRows")(movableRows.get.asInstanceOf[js.Any])
+    if (movableRowsConnectedElements != null) __obj.updateDynamic("movableRowsConnectedElements")(movableRowsConnectedElements.asInstanceOf[js.Any])
     if (movableRowsConnectedTables != null) __obj.updateDynamic("movableRowsConnectedTables")(movableRowsConnectedTables.asInstanceOf[js.Any])
+    if (movableRowsElementDrop != null) __obj.updateDynamic("movableRowsElementDrop")(js.Any.fromFunction3(movableRowsElementDrop))
     if (movableRowsReceived != null) __obj.updateDynamic("movableRowsReceived")(js.Any.fromFunction3(movableRowsReceived))
     if (movableRowsReceivedFailed != null) __obj.updateDynamic("movableRowsReceivedFailed")(js.Any.fromFunction3(movableRowsReceivedFailed))
     if (movableRowsReceiver != null) __obj.updateDynamic("movableRowsReceiver")(movableRowsReceiver.asInstanceOf[js.Any])
@@ -525,6 +568,7 @@ object Options {
     if (tooltips != null) __obj.updateDynamic("tooltips")(tooltips.asInstanceOf[js.Any])
     if (!js.isUndefined(tooltipsHeader)) __obj.updateDynamic("tooltipsHeader")(tooltipsHeader.get.asInstanceOf[js.Any])
     if (validationFailed != null) __obj.updateDynamic("validationFailed")(js.Any.fromFunction3(validationFailed))
+    if (validationMode != null) __obj.updateDynamic("validationMode")(validationMode.asInstanceOf[js.Any])
     if (!js.isUndefined(virtualDom)) __obj.updateDynamic("virtualDom")(virtualDom.get.asInstanceOf[js.Any])
     if (virtualDomBuffer != null) __obj.updateDynamic("virtualDomBuffer")(virtualDomBuffer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

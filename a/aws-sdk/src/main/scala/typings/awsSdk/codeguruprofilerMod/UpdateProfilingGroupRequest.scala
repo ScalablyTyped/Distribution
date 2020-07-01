@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateProfilingGroupRequest extends js.Object {
   /**
-    * 
+    *  Specifies whether profiling is enabled or disabled for a profiling group. 
     */
   var agentOrchestrationConfig: AgentOrchestrationConfig = js.native
   /**

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Readonly<hyphen.hyphen/common.FactoryOptions> */
+/* Inlined std.Readonly<hyphen.hyphen.FactoryOptions> */
 trait ReadonlyFactoryOptions extends js.Object {
   val async: js.UndefOr[Boolean] = js.undefined
   val debug: js.UndefOr[Boolean] = js.undefined

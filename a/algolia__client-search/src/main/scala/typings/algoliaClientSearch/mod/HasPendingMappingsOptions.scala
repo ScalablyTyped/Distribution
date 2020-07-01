@@ -8,7 +8,7 @@ trait HasPendingMappingsOptions extends js.Object {
   /**
     * If the clusters pending mapping state should be on the response.
     *
-    * @default false
+    * @defaultValue false
     *
     * @internal
     */
@@ -16,7 +16,7 @@ trait HasPendingMappingsOptions extends js.Object {
   /**
     * If the clusters pending mapping state should be on the response.
     *
-    * @default false
+    * @defaultValue false
     */
   val retrieveMappings: js.UndefOr[Boolean] = js.undefined
 }

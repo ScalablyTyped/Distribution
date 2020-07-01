@@ -23,6 +23,7 @@ import typings.ionicCore.ionicCoreStrings.send
 import typings.ionicCore.ionicCoreStrings.tel
 import typings.ionicCore.ionicCoreStrings.text
 import typings.ionicCore.ionicCoreStrings.url
+import typings.ionicCore.mod.AutocompleteTypes
 import typings.ionicCore.mod.Color
 import typings.std.HTMLInputElement
 import scala.scalajs.js
@@ -37,7 +38,7 @@ trait IonSearchbar extends js.Object {
   /**
     * Set the input's autocomplete property.
     */
-  var autocomplete: on | off
+  var autocomplete: AutocompleteTypes
   /**
     * Set the input's autocorrect property.
     */
@@ -116,7 +117,7 @@ object IonSearchbar {
   @scala.inline
   def apply(
     animated: Boolean,
-    autocomplete: on | off,
+    autocomplete: AutocompleteTypes,
     autocorrect: on | off,
     cancelButtonIcon: String,
     cancelButtonText: String,

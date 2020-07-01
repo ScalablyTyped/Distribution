@@ -1,6 +1,7 @@
 package typings.ioredis.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,5 +16,7 @@ trait OverloadedKeyedHashCommand[T, U] extends js.Object {
   def apply(key: KeyType, data: js.Array[T], cb: Callback[U]): Unit = js.native
   def apply(key: KeyType, data: StringDictionary[T]): js.Promise[U] = js.native
   def apply(key: KeyType, data: StringDictionary[T], cb: Callback[U]): Unit = js.native
+  def apply(key: KeyType, data: Map[String, ValueType]): js.Promise[U] = js.native
+  def apply(key: KeyType, data: Map[String, ValueType], cb: Callback[U]): Unit = js.native
 }
 

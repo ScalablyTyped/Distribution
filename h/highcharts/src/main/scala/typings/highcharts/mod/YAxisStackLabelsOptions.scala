@@ -19,12 +19,12 @@ trait YAxisStackLabelsOptions extends js.Object {
   /**
     * (Highcharts) The background color or gradient for the stack label.
     */
-  var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var backgroundColor: js.UndefOr[ColorType] = js.undefined
   /**
     * (Highcharts) The border color for the stack label. Defaults to
     * `undefined`.
     */
-  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var borderColor: js.UndefOr[ColorType] = js.undefined
   /**
     * (Highcharts) The border radius in pixels for the stack label.
     */
@@ -111,8 +111,8 @@ object YAxisStackLabelsOptions {
   def apply(
     align: AlignValue = null,
     allowOverlap: js.UndefOr[Boolean] = js.undefined,
-    backgroundColor: ColorString | GradientColorObject | PatternObject = null,
-    borderColor: ColorString | GradientColorObject | PatternObject = null,
+    backgroundColor: ColorType = null,
+    borderColor: ColorType = null,
     borderRadius: js.UndefOr[Double] = js.undefined,
     borderWidth: js.UndefOr[Double] = js.undefined,
     crop: js.UndefOr[Boolean] = js.undefined,

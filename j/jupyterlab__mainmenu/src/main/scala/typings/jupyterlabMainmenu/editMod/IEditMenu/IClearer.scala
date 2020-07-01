@@ -31,7 +31,7 @@ trait IClearer[T /* <: Widget */] extends IMenuExtender[T] {
 
 object IClearer {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.luminoWidgets.mod.Widget */ T](
     tracker: IWidgetTracker[T],
     clearAll: /* widget */ T => Unit = null,
     clearCurrent: /* widget */ T => Unit = null,

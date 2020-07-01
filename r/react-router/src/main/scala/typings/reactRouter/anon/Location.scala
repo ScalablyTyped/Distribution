@@ -16,7 +16,9 @@ trait Location[Params /* <: /* import warning: importer.ImportType#apply c Unsup
 
 object Location {
   @scala.inline
-  def apply[Params](location: typings.history.mod.Location[LocationState], `match`: `match`[Params]): Location[Params] = {
+  def apply[/* <: / * import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    * / typings.reactRouter.reactRouterStrings.Location with org.scalablytyped.runtime.TopLevel[js.Any] */ Params](location: typings.history.mod.Location[LocationState], `match`: `match`[Params]): Location[Params] = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
     __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Location[Params]]

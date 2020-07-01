@@ -18,10 +18,10 @@ trait SchemaApk extends js.Object {
 
 object SchemaApk {
   @scala.inline
-  def apply(binary: SchemaApkBinary = null, versionCode: Int | Double = null): SchemaApk = {
+  def apply(binary: SchemaApkBinary = null, versionCode: js.UndefOr[Double] = js.undefined): SchemaApk = {
     val __obj = js.Dynamic.literal()
     if (binary != null) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
-    if (versionCode != null) __obj.updateDynamic("versionCode")(versionCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(versionCode)) __obj.updateDynamic("versionCode")(versionCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaApk]
   }
 }

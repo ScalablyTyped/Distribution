@@ -49,7 +49,7 @@ trait EditorLock[T /* <: SlickData */] extends js.Object {
 
 object EditorLock {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.slickgrid.Slick.SlickData */ T](
     activate: Editor[T] => Unit,
     cancelCurrentEdit: () => Boolean,
     commitCurrentEdit: () => Boolean,

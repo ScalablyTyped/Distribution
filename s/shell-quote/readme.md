@@ -1,7 +1,7 @@
 
 # Scala.js typings for shell-quote
 
-Typings are for version 1.6
+Typings are for version 1.7
 
 ## Library description:
 quote and parse shell commands

@@ -14,8 +14,18 @@ object useKeyValueMappingMod extends js.Object {
   trait _SkipType extends js.Object
   
   def default(cacheKeyMap: Map[Key, FlattenDataNode], cacheValueMap: Map[RawValueType, FlattenDataNode]): js.Tuple2[
-    js.Function2[/* key */ Key, /* skipType */ js.UndefOr[SkipType], FlattenDataNode], 
-    js.Function2[/* value */ RawValueType, /* skipType */ js.UndefOr[SkipType], FlattenDataNode]
+    js.Function3[
+      /* key */ Key, 
+      /* skipType */ js.UndefOr[SkipType], 
+      /* ignoreDisabledCheck */ js.UndefOr[Boolean], 
+      FlattenDataNode
+    ], 
+    js.Function3[
+      /* value */ RawValueType, 
+      /* skipType */ js.UndefOr[SkipType], 
+      /* ignoreDisabledCheck */ js.UndefOr[Boolean], 
+      FlattenDataNode
+    ]
   ] = js.native
   def isDisabled(dataNode: FlattenDataNode, skipType: SkipType): Boolean = js.native
   /* Rewritten from type alias, can be one of: 

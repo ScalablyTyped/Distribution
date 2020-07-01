@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__rlp
 
-Typings are for version 5.0.0-beta.133
+Typings are for version 5.0.1
 
 ## Library description:
 Recursive-Length Prefix (RLP) coder.

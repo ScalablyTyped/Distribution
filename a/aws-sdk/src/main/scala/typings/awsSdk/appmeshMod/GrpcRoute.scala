@@ -18,14 +18,21 @@ trait GrpcRoute extends js.Object {
     * An object that represents a retry policy.
     */
   var retryPolicy: js.UndefOr[GrpcRetryPolicy] = js.native
+  var timeout: js.UndefOr[GrpcTimeout] = js.native
 }
 
 object GrpcRoute {
   @scala.inline
-  def apply(action: GrpcRouteAction, `match`: GrpcRouteMatch, retryPolicy: GrpcRetryPolicy = null): GrpcRoute = {
+  def apply(
+    action: GrpcRouteAction,
+    `match`: GrpcRouteMatch,
+    retryPolicy: GrpcRetryPolicy = null,
+    timeout: GrpcTimeout = null
+  ): GrpcRoute = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     if (retryPolicy != null) __obj.updateDynamic("retryPolicy")(retryPolicy.asInstanceOf[js.Any])
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[GrpcRoute]
   }
 }

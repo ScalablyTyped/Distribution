@@ -16,7 +16,7 @@ trait CreateCSSProperties[Props /* <: js.Object */]
 
 object CreateCSSProperties {
   @scala.inline
-  def apply[Props](
+  def apply[/* <: js.Object */ Props](
     BaseCreateCSSProperties: BaseCreateCSSProperties[Props] = null,
     StringDictionary: // Allow pseudo selectors and media queries
   /* k */ StringDictionary[

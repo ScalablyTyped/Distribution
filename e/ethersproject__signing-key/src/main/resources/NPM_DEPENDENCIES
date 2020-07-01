@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@ethersproject/signing-key" : "5.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@ethersproject/signing-key" : "5.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -20,7 +20,7 @@ trait ListSchema[Fields /* <: String */] extends js.Object {
 
 object ListSchema {
   @scala.inline
-  def apply[Fields](
+  def apply[/* <: java.lang.String */ Fields](
     fields: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ fieldName in Fields ]: @keystonejs/keystone.@keystonejs/keystone.AllFieldsOptions<string>}
     */ typings.keystonejsKeystone.keystonejsKeystoneStrings.ListSchema with TopLevel[js.Any],

@@ -46,6 +46,7 @@ trait RecursivePartialPartialOv extends js.Object {
   var presentationStyle: js.UndefOr[
     RecursivePartial[js.UndefOr[fullScreen | pageSheet | formSheet | overFullScreen]]
   ] = js.undefined
+  var statusBarTranslucent: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   var supportedOrientations: js.UndefOr[
     RecursivePartial[
       js.UndefOr[
@@ -81,6 +82,7 @@ object RecursivePartialPartialOv {
     overlayBackgroundColor: RecursivePartial[js.UndefOr[String]] = null,
     overlayStyle: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]] = null,
     presentationStyle: RecursivePartial[js.UndefOr[fullScreen | pageSheet | formSheet | overFullScreen]] = null,
+    statusBarTranslucent: RecursivePartial[js.UndefOr[Boolean]] = null,
     supportedOrientations: RecursivePartial[
       js.UndefOr[
         js.Array[
@@ -111,6 +113,7 @@ object RecursivePartialPartialOv {
     if (overlayBackgroundColor != null) __obj.updateDynamic("overlayBackgroundColor")(overlayBackgroundColor.asInstanceOf[js.Any])
     if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
     if (presentationStyle != null) __obj.updateDynamic("presentationStyle")(presentationStyle.asInstanceOf[js.Any])
+    if (statusBarTranslucent != null) __obj.updateDynamic("statusBarTranslucent")(statusBarTranslucent.asInstanceOf[js.Any])
     if (supportedOrientations != null) __obj.updateDynamic("supportedOrientations")(supportedOrientations.asInstanceOf[js.Any])
     if (transparent != null) __obj.updateDynamic("transparent")(transparent.asInstanceOf[js.Any])
     if (visible != null) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])

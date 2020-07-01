@@ -11,7 +11,7 @@ trait DecryptResponse extends js.Object {
     */
   var EncryptionAlgorithm: js.UndefOr[EncryptionAlgorithmSpec] = js.native
   /**
-    * The ARN of the customer master key that was used to perform the decryption.
+    * The Amazon Resource Name (key ARN) of the CMK that was used to decrypt the ciphertext.
     */
   var KeyId: js.UndefOr[KeyIdType] = js.native
   /**

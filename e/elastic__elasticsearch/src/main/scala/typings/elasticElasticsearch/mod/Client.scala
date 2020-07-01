@@ -9,10 +9,12 @@ import typings.elasticElasticsearch.anon.Bulk
 import typings.elasticElasticsearch.anon.Cancel
 import typings.elasticElasticsearch.anon.Certificates
 import typings.elasticElasticsearch.anon.CleanupRepository
+import typings.elasticElasticsearch.anon.ClearCache
 import typings.elasticElasticsearch.anon.ClearCursor
 import typings.elasticElasticsearch.anon.CloseJob
 import typings.elasticElasticsearch.anon.Delete
 import typings.elasticElasticsearch.anon.DeleteAutoFollowPattern
+import typings.elasticElasticsearch.anon.DeleteAutoscalingPolicy
 import typings.elasticElasticsearch.anon.DeleteJob
 import typings.elasticElasticsearch.anon.DeleteLifecycle_
 import typings.elasticElasticsearch.anon.DeletePipeline
@@ -23,7 +25,6 @@ import typings.elasticElasticsearch.anon.Deprecations
 import typings.elasticElasticsearch.anon.Explore
 import typings.elasticElasticsearch.anon.Force
 import typings.elasticElasticsearch.anon.Get
-import typings.elasticElasticsearch.anon.GetAutoscalingDecision
 import typings.elasticElasticsearch.anon.HotThreads
 import typings.elasticElasticsearch.anon.Info
 import typings.elasticElasticsearch.anon.Search
@@ -79,7 +80,7 @@ class Client () extends EventEmitter {
   var asyncSearch: Delete = js.native
   /* GENERATED */
   var async_search: Delete = js.native
-  var autoscaling: GetAutoscalingDecision = js.native
+  var autoscaling: DeleteAutoscalingPolicy = js.native
   var cat: Aliases = js.native
   var ccr: DeleteAutoFollowPattern = js.native
   var cluster: AllocationExplain = js.native
@@ -99,6 +100,8 @@ class Client () extends EventEmitter {
   var monitoring: Bulk = js.native
   var nodes: HotThreads = js.native
   var rollup: DeleteJob = js.native
+  var searchableSnapshots: ClearCache = js.native
+  var searchable_snapshots: ClearCache = js.native
   var security: Authenticate = js.native
   var serializer: typings.elasticElasticsearch.serializerMod.default = js.native
   var slm: Deletelifecycle = js.native

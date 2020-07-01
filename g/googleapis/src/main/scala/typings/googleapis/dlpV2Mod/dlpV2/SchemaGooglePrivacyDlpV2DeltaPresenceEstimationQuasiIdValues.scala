@@ -29,11 +29,11 @@ trait SchemaGooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues extends js.Ob
 object SchemaGooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues {
   @scala.inline
   def apply(
-    estimatedProbability: Int | Double = null,
+    estimatedProbability: js.UndefOr[Double] = js.undefined,
     quasiIdsValues: js.Array[SchemaGooglePrivacyDlpV2Value] = null
   ): SchemaGooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues = {
     val __obj = js.Dynamic.literal()
-    if (estimatedProbability != null) __obj.updateDynamic("estimatedProbability")(estimatedProbability.asInstanceOf[js.Any])
+    if (!js.isUndefined(estimatedProbability)) __obj.updateDynamic("estimatedProbability")(estimatedProbability.get.asInstanceOf[js.Any])
     if (quasiIdsValues != null) __obj.updateDynamic("quasiIdsValues")(quasiIdsValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues]
   }

@@ -42,6 +42,20 @@ trait Sprite extends Container {
     */
   var _cachedTint: Double = js.native
   /**
+    * The height of the sprite (this is initially set by the texture)
+    *
+    * @protected
+    * @member {number} PIXI.Sprite#_height
+    */
+  var _height: Double = js.native
+  /**
+    * The width of the sprite (this is initially set by the texture)
+    *
+    * @protected
+    * @member {number} PIXI.Sprite#_width
+    */
+  var _width: Double = js.native
+  /**
     * The anchor sets the origin point of the text. The default value is taken from the {@link PIXI.Texture|Texture}
     * and passed to the constructor.
     *
@@ -87,12 +101,6 @@ trait Sprite extends Container {
     */
   var roundPixels: Boolean = js.native
   /**
-    * The shader that will be used to render the sprite. Set to null to remove a current shader.
-    *
-    * @member {PIXI.Filter|PIXI.Shader} PIXI.Sprite#shader
-    */
-  var shader: Filter | Shader = js.native
-  /**
     * The texture that the sprite is using
     *
     * @member {PIXI.Texture}
@@ -107,6 +115,12 @@ trait Sprite extends Container {
     */
   var tint: Double = js.native
   /**
+    * When the texture is updated, this event will fire to update the scale and frame
+    *
+    * @protected
+    */
+  /* protected */ def _onTextureUpdate(): Unit = js.native
+  /**
     * calculates worldTransform * vertices for a non texture with a trim. store it in vertexTrimmedData
     * This is used to ensure that the true width and height of a trimmed texture is respected
     */
@@ -118,9 +132,9 @@ trait Sprite extends Container {
   /**
     * Tests if a point is inside this sprite
     *
-    * @param {PIXI.Point} point - the point to test
+    * @param {PIXI.IPointData} point - the point to test
     * @return {boolean} the result of the test
     */
-  def containsPoint(point: Point): Boolean = js.native
+  def containsPoint(point: IPointData): Boolean = js.native
 }
 

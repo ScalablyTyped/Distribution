@@ -15,6 +15,10 @@ trait TestIdentityProviderRequest extends js.Object {
     */
   var ServerProtocol: js.UndefOr[Protocol] = js.native
   /**
+    * The source IP address of the user account to be tested.
+    */
+  var SourceIp: js.UndefOr[typings.awsSdk.transferMod.SourceIp] = js.native
+  /**
     * The name of the user account to be tested.
     */
   var UserName: typings.awsSdk.transferMod.UserName = js.native
@@ -30,10 +34,12 @@ object TestIdentityProviderRequest {
     ServerId: ServerId,
     UserName: UserName,
     ServerProtocol: Protocol = null,
+    SourceIp: SourceIp = null,
     UserPassword: UserPassword = null
   ): TestIdentityProviderRequest = {
     val __obj = js.Dynamic.literal(ServerId = ServerId.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
     if (ServerProtocol != null) __obj.updateDynamic("ServerProtocol")(ServerProtocol.asInstanceOf[js.Any])
+    if (SourceIp != null) __obj.updateDynamic("SourceIp")(SourceIp.asInstanceOf[js.Any])
     if (UserPassword != null) __obj.updateDynamic("UserPassword")(UserPassword.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestIdentityProviderRequest]
   }

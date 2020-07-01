@@ -6,8 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait Timepicker extends Component[TimepickerOptions] {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<TimepickerOptions> * / any */ @js.native
+trait Timepicker extends js.Object {
   /**
     * If the picker is open.
     */

@@ -49,22 +49,22 @@ object SchemaSearchRequest {
   def apply(
     dataSourceRestrictions: js.Array[SchemaDataSourceRestriction] = null,
     facetOptions: js.Array[SchemaFacetOptions] = null,
-    pageSize: Int | Double = null,
+    pageSize: js.UndefOr[Double] = js.undefined,
     query: String = null,
     queryInterpretationOptions: SchemaQueryInterpretationOptions = null,
     requestOptions: SchemaRequestOptions = null,
     sortOptions: SchemaSortOptions = null,
-    start: Int | Double = null
+    start: js.UndefOr[Double] = js.undefined
   ): SchemaSearchRequest = {
     val __obj = js.Dynamic.literal()
     if (dataSourceRestrictions != null) __obj.updateDynamic("dataSourceRestrictions")(dataSourceRestrictions.asInstanceOf[js.Any])
     if (facetOptions != null) __obj.updateDynamic("facetOptions")(facetOptions.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (queryInterpretationOptions != null) __obj.updateDynamic("queryInterpretationOptions")(queryInterpretationOptions.asInstanceOf[js.Any])
     if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions.asInstanceOf[js.Any])
     if (sortOptions != null) __obj.updateDynamic("sortOptions")(sortOptions.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSearchRequest]
   }
 }

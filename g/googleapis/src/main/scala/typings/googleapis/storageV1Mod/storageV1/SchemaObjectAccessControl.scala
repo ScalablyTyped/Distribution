@@ -1,6 +1,6 @@
 package typings.googleapis.storageV1Mod.storageV1
 
-import typings.googleapis.AnonProjectNumber
+import typings.googleapis.anon.ProjectNumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,7 +61,7 @@ trait SchemaObjectAccessControl extends js.Object {
   /**
     * The project team associated with the entity, if any.
     */
-  var projectTeam: js.UndefOr[AnonProjectNumber] = js.native
+  var projectTeam: js.UndefOr[ProjectNumber] = js.native
   /**
     * The access permission for the entity.
     */
@@ -85,7 +85,7 @@ object SchemaObjectAccessControl {
     id: String = null,
     kind: String = null,
     `object`: String = null,
-    projectTeam: AnonProjectNumber = null,
+    projectTeam: ProjectNumber = null,
     role: String = null,
     selfLink: String = null
   ): SchemaObjectAccessControl = {

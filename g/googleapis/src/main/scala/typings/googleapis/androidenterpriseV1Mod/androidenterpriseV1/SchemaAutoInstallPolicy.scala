@@ -33,14 +33,14 @@ object SchemaAutoInstallPolicy {
   def apply(
     autoInstallConstraint: js.Array[SchemaAutoInstallConstraint] = null,
     autoInstallMode: String = null,
-    autoInstallPriority: Int | Double = null,
-    minimumVersionCode: Int | Double = null
+    autoInstallPriority: js.UndefOr[Double] = js.undefined,
+    minimumVersionCode: js.UndefOr[Double] = js.undefined
   ): SchemaAutoInstallPolicy = {
     val __obj = js.Dynamic.literal()
     if (autoInstallConstraint != null) __obj.updateDynamic("autoInstallConstraint")(autoInstallConstraint.asInstanceOf[js.Any])
     if (autoInstallMode != null) __obj.updateDynamic("autoInstallMode")(autoInstallMode.asInstanceOf[js.Any])
-    if (autoInstallPriority != null) __obj.updateDynamic("autoInstallPriority")(autoInstallPriority.asInstanceOf[js.Any])
-    if (minimumVersionCode != null) __obj.updateDynamic("minimumVersionCode")(minimumVersionCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoInstallPriority)) __obj.updateDynamic("autoInstallPriority")(autoInstallPriority.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumVersionCode)) __obj.updateDynamic("minimumVersionCode")(minimumVersionCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAutoInstallPolicy]
   }
 }

@@ -15,7 +15,7 @@ trait ReEncryptResponse extends js.Object {
     */
   var DestinationEncryptionAlgorithm: js.UndefOr[EncryptionAlgorithmSpec] = js.native
   /**
-    * Unique identifier of the CMK used to reencrypt the data.
+    * The Amazon Resource Name (key ARN) of the CMK that was used to reencrypt the data.
     */
   var KeyId: js.UndefOr[KeyIdType] = js.native
   /**

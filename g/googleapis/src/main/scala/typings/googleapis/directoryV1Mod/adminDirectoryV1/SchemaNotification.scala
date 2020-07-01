@@ -56,7 +56,7 @@ object SchemaNotification {
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
     if (fromAddress != null) __obj.updateDynamic("fromAddress")(fromAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(isUnread)) __obj.updateDynamic("isUnread")(isUnread.asInstanceOf[js.Any])
+    if (!js.isUndefined(isUnread)) __obj.updateDynamic("isUnread")(isUnread.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (notificationId != null) __obj.updateDynamic("notificationId")(notificationId.asInstanceOf[js.Any])
     if (sendTime != null) __obj.updateDynamic("sendTime")(sendTime.asInstanceOf[js.Any])

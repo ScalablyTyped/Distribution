@@ -22,7 +22,7 @@ trait ChangeEventBase[TSchema /* <: StringDictionary[js.Any] */] extends js.Obje
 
 object ChangeEventBase {
   @scala.inline
-  def apply[TSchema](
+  def apply[/* <: org.scalablytyped.runtime.StringDictionary[js.Any] */ TSchema](
     _id: ResumeToken,
     clusterTime: typings.bson.mod.Timestamp,
     ns: Coll,

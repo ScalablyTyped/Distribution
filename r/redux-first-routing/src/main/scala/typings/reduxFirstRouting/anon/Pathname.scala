@@ -13,7 +13,7 @@ trait Pathname[P /* <: typings.history.mod.Pathname */, S /* <: Search */, H /* 
 
 object Pathname {
   @scala.inline
-  def apply[P, S, H](hash: H, pathname: P, search: S): Pathname[P, S, H] = {
+  def apply[/* <: typings.history.mod.Pathname */ P, /* <: typings.history.mod.Search */ S, /* <: typings.history.mod.Hash */ H](hash: H, pathname: P, search: S): Pathname[P, S, H] = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pathname[P, S, H]]
   }

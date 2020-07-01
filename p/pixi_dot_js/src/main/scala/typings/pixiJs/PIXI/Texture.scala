@@ -111,12 +111,6 @@ trait Texture extends EventEmitter {
     */
   var orig: Rectangle = js.native
   /**
-    * This will let a renderer know that a texture has been updated (used mainly for WebGL uv updates)
-    *
-    * @member {boolean} PIXI.Texture#requiresUpdate
-    */
-  var requiresUpdate: Boolean = js.native
-  /**
     * Returns resolution of baseTexture
     *
     * @member {number}
@@ -168,9 +162,13 @@ trait Texture extends EventEmitter {
     */
   var width: Double = js.native
   /**
+    * Utility function for BaseTexture|Texture cast
+    */
+  def castToBaseTexture(): Unit = js.native
+  /**
     * Destroys this texture
     *
-    * @param {boolean} [destroyBase=false] Whether to destroy the base texture as well
+    * @param {boolean} [destroyBase=false] - Whether to destroy the base texture as well
     */
   def destroy(): Unit = js.native
   def destroy(destroyBase: Boolean): Unit = js.native

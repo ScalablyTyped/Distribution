@@ -2,12 +2,11 @@ package typings.echarts.echarts.EChartOption
 
 import typings.echarts.anon.AnimationDelayUpdate
 import typings.echarts.anon.AnimationDuration
-import typings.echarts.anon.AnimationThreshold
 import typings.echarts.anon.BorderRadius
 import typings.echarts.anon.ColorOpacity
 import typings.echarts.anon.DictunknownPropertyBorderColor
-import typings.echarts.anon.ExtraCssText
 import typings.echarts.anon.LabelBorderRadius
+import typings.echarts.anon.Precision
 import typings.echarts.anon.ShadowBlur
 import typings.echarts.echarts.EChartOption.SeriesLine.DataObject
 import scala.scalajs.js
@@ -505,7 +504,7 @@ trait SeriesLine_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-line.markLine
     */
-  var markLine: js.UndefOr[AnimationThreshold] = js.undefined
+  var markLine: js.UndefOr[Precision] = js.undefined
   /**
     * Mark point in a chart.
     *
@@ -811,7 +810,7 @@ trait SeriesLine_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-line.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
   /**
     * @default
     * "line"
@@ -901,7 +900,7 @@ object SeriesLine_ {
     legendHoverLink: js.UndefOr[Boolean] = js.undefined,
     lineStyle: ShadowBlur = null,
     markArea: AnimationDelayUpdate = null,
-    markLine: AnimationThreshold = null,
+    markLine: Precision = null,
     markPoint: AnimationDuration = null,
     name: String = null,
     polarIndex: js.UndefOr[Double] = js.undefined,
@@ -919,7 +918,7 @@ object SeriesLine_ {
     symbolOffset: js.Array[_] = null,
     symbolRotate: js.UndefOr[Double] = js.undefined,
     symbolSize: js.Array[_] | js.Function | Double = null,
-    tooltip: ExtraCssText = null,
+    tooltip: BaseTooltip = null,
     `type`: String = null,
     xAxisIndex: js.UndefOr[Double] = js.undefined,
     yAxisIndex: js.UndefOr[Double] = js.undefined,

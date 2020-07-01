@@ -9,7 +9,7 @@ trait GroupEnd extends js.Object {
   var groupHeader: js.UndefOr[Fill] = js.undefined
   var header: js.UndefOr[js.Object] = js.undefined
   var icons: js.UndefOr[Ascending] = js.undefined
-  var primary: js.UndefOr[Weight] = js.undefined
+  var primary: js.UndefOr[WeightString] = js.undefined
   var resize: js.UndefOr[BorderColorSide] = js.undefined
 }
 
@@ -20,7 +20,7 @@ object GroupEnd {
     groupHeader: Fill = null,
     header: js.Object = null,
     icons: Ascending = null,
-    primary: Weight = null,
+    primary: WeightString = null,
     resize: BorderColorSide = null
   ): GroupEnd = {
     val __obj = js.Dynamic.literal()

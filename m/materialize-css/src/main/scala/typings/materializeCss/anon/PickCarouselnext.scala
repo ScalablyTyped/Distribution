@@ -5,11 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Pick<materialize-css.M.Carousel, 'next'> */
-@js.native
 trait PickCarouselnext extends js.Object {
-  @JSName("next")
-  var next_Original: js.Function1[/* n */ js.UndefOr[Double], Unit] = js.native
-  def next(): Unit = js.native
-  def next(n: Double): Unit = js.native
+  var next: js.UndefOr[js.Any] = js.undefined
+}
+
+object PickCarouselnext {
+  @scala.inline
+  def apply(next: js.Any = null): PickCarouselnext = {
+    val __obj = js.Dynamic.literal()
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PickCarouselnext]
+  }
 }
 

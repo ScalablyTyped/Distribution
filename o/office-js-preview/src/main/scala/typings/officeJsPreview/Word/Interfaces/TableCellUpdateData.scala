@@ -15,7 +15,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the TableCell object, for use in "tableCell.set({ ... })". */
+/** An interface for updating data on the TableCell object, for use in `tableCell.set({ ... })`. */
 trait TableCellUpdateData extends js.Object {
   /**
     *

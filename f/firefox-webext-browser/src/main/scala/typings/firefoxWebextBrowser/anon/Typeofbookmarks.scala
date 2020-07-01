@@ -12,7 +12,7 @@ trait Typeofbookmarks extends js.Object {
   /**
     * Fired when a bookmark or folder changes. **Note:** Currently, only title and url changes trigger this.
     */
-  val onChanged: WebExtEvent[js.Function2[/* id */ String, /* changeInfo */ TitleUrl, Unit]] = js.native
+  val onChanged: WebExtEvent[js.Function2[/* id */ String, /* changeInfo */ TitleString, Unit]] = js.native
   /**
     * Fired when the children of a folder have changed their order due to the order being sorted in the UI. This is
     * not called as a result of a move().
@@ -63,9 +63,9 @@ trait Typeofbookmarks extends js.Object {
   /**
     * Searches for BookmarkTreeNodes matching the given query. Queries specified with an object produce
     * BookmarkTreeNodes matching all specified properties.
-    * @param query Either a string of words and quoted phrases that are matched against bookmark URLs and titles, or
-    *     an object. If an object, the properties `query`, `url`, and `title` may be specified and bookmarks matching
-    *     all specified properties will be produced.
+    * @param query Either a string of words that are matched against bookmark URLs and titles, or an object. If an
+    *     object, the properties `query`, `url`, and `title` may be specified and bookmarks matching all specified
+    *     properties will be produced.
     */
   def search(query: String): js.Promise[js.Array[BookmarkTreeNode]] = js.native
   def search(query: Query): js.Promise[js.Array[BookmarkTreeNode]] = js.native
@@ -73,6 +73,6 @@ trait Typeofbookmarks extends js.Object {
     * Updates the properties of a bookmark or folder. Specify only the properties that you want to change; unspecified
     * properties will be left unchanged. **Note:** Currently, only 'title' and 'url' are supported.
     */
-  def update(id: String, changes: Title): js.Promise[BookmarkTreeNode] = js.native
+  def update(id: String, changes: TitleUrl): js.Promise[BookmarkTreeNode] = js.native
 }
 

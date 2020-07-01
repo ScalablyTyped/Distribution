@@ -11,7 +11,7 @@ trait GetServiceLastAccessedDetailsResponse extends js.Object {
     */
   var Error: js.UndefOr[ErrorDetails] = js.native
   /**
-    *  A flag that indicates whether there are more items to return. If your results were truncated, you can make a subsequent pagination request using the Marker request parameter to retrieve more items. Note that IAM might return fewer than the MaxItems number of results even when there are more results available. We recommend that you check IsTruncated after every call to ensure that you receive all your results.
+    * A flag that indicates whether there are more items to return. If your results were truncated, you can make a subsequent pagination request using the Marker request parameter to retrieve more items. Note that IAM might return fewer than the MaxItems number of results even when there are more results available. We recommend that you check IsTruncated after every call to ensure that you receive all your results.
     */
   var IsTruncated: js.UndefOr[booleanType] = js.native
   /**
@@ -26,6 +26,10 @@ trait GetServiceLastAccessedDetailsResponse extends js.Object {
     * The status of the job.
     */
   var JobStatus: jobStatusType = js.native
+  /**
+    * The type of job. Service jobs return information about when each service was last accessed. Action jobs also include information about when tracked actions within the service were last accessed.
+    */
+  var JobType: js.UndefOr[AccessAdvisorUsageGranularityType] = js.native
   /**
     * When IsTruncated is true, this element is present and contains the value to use for the Marker parameter in a subsequent pagination request.
     */
@@ -45,11 +49,13 @@ object GetServiceLastAccessedDetailsResponse {
     ServicesLastAccessed: ServicesLastAccessed,
     Error: ErrorDetails = null,
     IsTruncated: js.UndefOr[booleanType] = js.undefined,
+    JobType: AccessAdvisorUsageGranularityType = null,
     Marker: responseMarkerType = null
   ): GetServiceLastAccessedDetailsResponse = {
     val __obj = js.Dynamic.literal(JobCompletionDate = JobCompletionDate.asInstanceOf[js.Any], JobCreationDate = JobCreationDate.asInstanceOf[js.Any], JobStatus = JobStatus.asInstanceOf[js.Any], ServicesLastAccessed = ServicesLastAccessed.asInstanceOf[js.Any])
     if (Error != null) __obj.updateDynamic("Error")(Error.asInstanceOf[js.Any])
     if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.get.asInstanceOf[js.Any])
+    if (JobType != null) __obj.updateDynamic("JobType")(JobType.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetServiceLastAccessedDetailsResponse]
   }

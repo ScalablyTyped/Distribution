@@ -5,7 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MissingParams extends Message {
-  /* Properties */
+  /**
+    * A list of the missing parameters.
+    */
   var params: String | js.Array[String]
 }
 

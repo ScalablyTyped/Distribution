@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object assertMod extends js.Object {
   def debugAssert(assertion: Boolean, message: String): /* asserts assertion */ Boolean = js.native
-  def debugCast[T](obj: js.Object, constructor: Instantiable[T]): T = js.native
+  def debugCast[T](obj: js.Object, constructor: Instantiable[T]): T | scala.Nothing = js.native
   def fail(): scala.Nothing = js.native
   def fail(failure: String): scala.Nothing = js.native
   def hardAssert(assertion: Boolean): /* asserts assertion */ Boolean = js.native

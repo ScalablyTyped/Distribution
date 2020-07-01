@@ -27,12 +27,12 @@ trait SchemaGoogleCloudVideointelligenceV1TextSegment extends js.Object {
 object SchemaGoogleCloudVideointelligenceV1TextSegment {
   @scala.inline
   def apply(
-    confidence: Int | Double = null,
+    confidence: js.UndefOr[Double] = js.undefined,
     frames: js.Array[SchemaGoogleCloudVideointelligenceV1TextFrame] = null,
     segment: SchemaGoogleCloudVideointelligenceV1VideoSegment = null
   ): SchemaGoogleCloudVideointelligenceV1TextSegment = {
     val __obj = js.Dynamic.literal()
-    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
     if (frames != null) __obj.updateDynamic("frames")(frames.asInstanceOf[js.Any])
     if (segment != null) __obj.updateDynamic("segment")(segment.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1TextSegment]

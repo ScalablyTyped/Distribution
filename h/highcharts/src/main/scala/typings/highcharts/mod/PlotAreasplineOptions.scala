@@ -585,10 +585,13 @@ trait PlotAreasplineOptions extends js.Object {
   /**
     * (Highcharts, Highstock) Whether to stack the values of each series on top
     * of each other. Possible values are `undefined` to disable, `"normal"` to
-    * stack by value or `"percent"`. When stacking is enabled, data must be
-    * sorted in ascending X order. A special stacking option is with the
-    * streamgraph series type, where the stacking option is set to `"stream"`.
-    * The second one is `"overlap"`, which only applies to waterfall series.
+    * stack by value or `"percent"`.
+    *
+    * When stacking is enabled, data must be sorted in ascending X order.
+    *
+    * Some stacking options are related to specific series types. In the
+    * streamgraph series type, the stacking option is set to `"stream"`. The
+    * second one is `"overlap"`, which only applies to waterfall series.
     */
   var stacking: js.UndefOr[OptionsStackingValue] = js.undefined
   var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
@@ -617,7 +620,7 @@ trait PlotAreasplineOptions extends js.Object {
     * graph and the Y axis minimum.
     *
     * * If `Infinity` or `-Infinity`, the area between the graph and the
-    * corresponing Y axis extreme is filled (since v6.1.0).
+    * corresponding Y axis extreme is filled (since v6.1.0).
     */
   var threshold: js.UndefOr[Double | Null] = js.undefined
   /**

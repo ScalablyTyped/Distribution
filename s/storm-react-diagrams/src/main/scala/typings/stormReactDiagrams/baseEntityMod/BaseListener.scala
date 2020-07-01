@@ -11,7 +11,7 @@ trait BaseListener[T /* <: BaseEntity[BaseListener[_]] */] extends js.Object {
 
 object BaseListener {
   @scala.inline
-  def apply[T](lockChanged: /* event */ BaseEvent[T] with Locked => Unit = null): BaseListener[T] = {
+  def apply[/* <: typings.stormReactDiagrams.baseEntityMod.BaseEntity[typings.stormReactDiagrams.baseEntityMod.BaseListener[_]] */ T](lockChanged: /* event */ BaseEvent[T] with Locked => Unit = null): BaseListener[T] = {
     val __obj = js.Dynamic.literal()
     if (lockChanged != null) __obj.updateDynamic("lockChanged")(js.Any.fromFunction1(lockChanged))
     __obj.asInstanceOf[BaseListener[T]]

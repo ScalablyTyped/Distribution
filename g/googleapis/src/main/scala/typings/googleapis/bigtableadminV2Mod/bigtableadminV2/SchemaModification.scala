@@ -40,7 +40,7 @@ object SchemaModification {
   ): SchemaModification = {
     val __obj = js.Dynamic.literal()
     if (create != null) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
-    if (!js.isUndefined(drop)) __obj.updateDynamic("drop")(drop.asInstanceOf[js.Any])
+    if (!js.isUndefined(drop)) __obj.updateDynamic("drop")(drop.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaModification]

@@ -17,7 +17,7 @@ trait RenderOptions[Q /* <: Queries */] extends js.Object {
 
 object RenderOptions {
   @scala.inline
-  def apply[Q](
+  def apply[/* <: typings.testingLibraryDom.getQueriesForElementMod.Queries */ Q](
     baseElement: HTMLElement = null,
     container: HTMLElement = null,
     hydrate: js.UndefOr[Boolean] = js.undefined,

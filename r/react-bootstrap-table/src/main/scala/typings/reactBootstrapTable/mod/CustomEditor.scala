@@ -26,7 +26,7 @@ trait CustomEditor[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */] 
 
 object CustomEditor {
   @scala.inline
-  def apply[TRow, K](
+  def apply[/* <: js.Object */ TRow, /* <: / * keyof TRow * / java.lang.String */ K](
     getElement: (js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ /* updatedCell */ js.Any, 
       Unit

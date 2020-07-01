@@ -1,7 +1,7 @@
 
 # Scala.js typings for ember__test-helpers
 
-Typings are for version 0.7
+Typings are for version 1.7
 
 ## Library description:
 Helpers for testing Ember.js applications

@@ -195,12 +195,12 @@ trait Backup extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeRecoveryPointOutput, Unit]
   ): Request[DescribeRecoveryPointOutput, AWSError] = js.native
   /**
-    * Returns the current service opt-in settings for the region. If the service has a value set to true, AWS Backup will attempt to protect that service's resources in this region, when included in an on-demand backup or scheduled backup plan. If the value is set to false for a service, AWS Backup will not attempt to protect that service's resources in this region.
+    * Returns the current service opt-in settings for the Region. If the service has a value set to true, AWS Backup attempts to protect that service's resources in this Region, when included in an on-demand backup or scheduled backup plan. If the value is set to false for a service, AWS Backup does not attempt to protect that service's resources in this Region.
     */
   def describeRegionSettings(): Request[DescribeRegionSettingsOutput, AWSError] = js.native
   def describeRegionSettings(callback: js.Function2[/* err */ AWSError, /* data */ DescribeRegionSettingsOutput, Unit]): Request[DescribeRegionSettingsOutput, AWSError] = js.native
   /**
-    * Returns the current service opt-in settings for the region. If the service has a value set to true, AWS Backup will attempt to protect that service's resources in this region, when included in an on-demand backup or scheduled backup plan. If the value is set to false for a service, AWS Backup will not attempt to protect that service's resources in this region.
+    * Returns the current service opt-in settings for the Region. If the service has a value set to true, AWS Backup attempts to protect that service's resources in this Region, when included in an on-demand backup or scheduled backup plan. If the value is set to false for a service, AWS Backup does not attempt to protect that service's resources in this Region.
     */
   def describeRegionSettings(params: DescribeRegionSettingsInput): Request[DescribeRegionSettingsOutput, AWSError] = js.native
   def describeRegionSettings(
@@ -604,12 +604,12 @@ trait Backup extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateRecoveryPointLifecycleOutput, Unit]
   ): Request[UpdateRecoveryPointLifecycleOutput, AWSError] = js.native
   /**
-    * Updates the current service opt-in settings for the region. If the service has a value set to true, AWS Backup will attempt to protect that service's resources in this region, when included in an on-demand backup or scheduled backup plan. If the value is set to false for a service, AWS Backup will not attempt to protect that service's resources in this region.
+    * Updates the current service opt-in settings for the Region. If the service has a value set to true, AWS Backup attempts to protect that service's resources in this Region, when included in an on-demand backup or scheduled backup plan. If the value is set to false for a service, AWS Backup does not attempt to protect that service's resources in this Region.
     */
   def updateRegionSettings(): Request[js.Object, AWSError] = js.native
   def updateRegionSettings(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Updates the current service opt-in settings for the region. If the service has a value set to true, AWS Backup will attempt to protect that service's resources in this region, when included in an on-demand backup or scheduled backup plan. If the value is set to false for a service, AWS Backup will not attempt to protect that service's resources in this region.
+    * Updates the current service opt-in settings for the Region. If the service has a value set to true, AWS Backup attempts to protect that service's resources in this Region, when included in an on-demand backup or scheduled backup plan. If the value is set to false for a service, AWS Backup does not attempt to protect that service's resources in this Region.
     */
   def updateRegionSettings(params: UpdateRegionSettingsInput): Request[js.Object, AWSError] = js.native
   def updateRegionSettings(

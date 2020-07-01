@@ -111,6 +111,10 @@ class ComboBox protected ()
     */
   var _handleInputWhenDisabled: js.Any = js.native
   var _handleTouchAndPointerEvent: js.Any = js.native
+  /**
+    * Returns true if the component has some kind of focus. If it's either focusing or if it's focused
+    */
+  var _hasFocus: js.Any = js.native
   var _hasPendingValue: js.Any = js.native
   /** The base id for the ComboBox */
   var _id: js.Any = js.native
@@ -176,6 +180,11 @@ class ComboBox protected ()
     * Handles dismissing (cancelling) the menu
     */
   var _onDismiss: js.Any = js.native
+  /**
+    * Focus (and select) the content of the input
+    * and set the focused state
+    */
+  var _onFocus: js.Any = js.native
   /**
     * Handler for typing changes on the input
     * @param updatedValue - the newly changed value
@@ -252,6 +261,7 @@ class ComboBox protected ()
   var _processInputChangeWithoutFreeform: js.Any = js.native
   var _processingClearPendingInfo: js.Any = js.native
   var _processingTouch: js.Any = js.native
+  var _renderComboBoxWrapper: js.Any = js.native
   var _renderHeader: js.Any = js.native
   var _renderOption: js.Any = js.native
   var _renderSeparator: js.Any = js.native
@@ -268,11 +278,6 @@ class ComboBox protected ()
     * Scroll the selected element into view
     */
   var _scrollIntoView: js.Any = js.native
-  /**
-    * Focus (and select) the content of the input
-    * and set the focused state
-    */
-  var _select: js.Any = js.native
   /** The menu item element that is currently selected */
   var _selectedElement: js.Any = js.native
   /**

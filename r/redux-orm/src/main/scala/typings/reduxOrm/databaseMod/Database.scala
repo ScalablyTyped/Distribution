@@ -59,7 +59,12 @@ Extract[
 
 object Database {
   @scala.inline
-  def apply[I, Tables](
+  def apply[/* <: typings.reduxOrm.ormMod.IndexedModelClasses[
+  _, 
+  typings.std.Extract[
+    / * keyof any * / java.lang.String, 
+    / * import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] * / js.Any
+  ]] */ I, Tables](
     describe: js.Any => /* import warning: importer.ImportType#apply Failed type conversion: Tables[K] */ js.Any,
     getEmptyState: () => OrmState[I],
     query: (QuerySpec, OrmState[I]) => QueryResult[js.Object],

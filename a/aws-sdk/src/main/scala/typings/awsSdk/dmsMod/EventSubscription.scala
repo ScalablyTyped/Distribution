@@ -39,7 +39,7 @@ trait EventSubscription extends js.Object {
     */
   var Status: js.UndefOr[String] = js.native
   /**
-    * The time the RDS event notification subscription was created.
+    * The time the AWS DMS event notification subscription was created.
     */
   var SubscriptionCreationTime: js.UndefOr[String] = js.native
 }

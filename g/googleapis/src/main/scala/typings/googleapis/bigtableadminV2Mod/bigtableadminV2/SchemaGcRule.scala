@@ -33,13 +33,13 @@ object SchemaGcRule {
   def apply(
     intersection: SchemaIntersection = null,
     maxAge: String = null,
-    maxNumVersions: Int | Double = null,
+    maxNumVersions: js.UndefOr[Double] = js.undefined,
     union: SchemaUnion = null
   ): SchemaGcRule = {
     val __obj = js.Dynamic.literal()
     if (intersection != null) __obj.updateDynamic("intersection")(intersection.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
-    if (maxNumVersions != null) __obj.updateDynamic("maxNumVersions")(maxNumVersions.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxNumVersions)) __obj.updateDynamic("maxNumVersions")(maxNumVersions.get.asInstanceOf[js.Any])
     if (union != null) __obj.updateDynamic("union")(union.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGcRule]
   }

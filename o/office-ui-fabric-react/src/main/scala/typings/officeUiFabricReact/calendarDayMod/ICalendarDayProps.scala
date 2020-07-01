@@ -1,11 +1,11 @@
 package typings.officeUiFabricReact.calendarDayMod
 
+import typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType
+import typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek
+import typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear
 import typings.officeUiFabricReact.calendarTypesMod.ICalendarFormatDateCallbacks
 import typings.officeUiFabricReact.calendarTypesMod.ICalendarIconStrings
 import typings.officeUiFabricReact.calendarTypesMod.ICalendarStrings
-import typings.officeUiFabricReact.dateValuesMod.DateRangeType
-import typings.officeUiFabricReact.dateValuesMod.DayOfWeek
-import typings.officeUiFabricReact.dateValuesMod.FirstWeekOfYear
 import typings.react.mod.ClassAttributes
 import typings.std.Date
 import typings.uifabricUtilities.createRefMod.IRefObject

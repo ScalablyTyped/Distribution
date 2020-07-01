@@ -21,7 +21,7 @@ trait StateTransition[TContext, TEvent /* <: EventObject */] extends js.Object {
 
 object StateTransition {
   @scala.inline
-  def apply[TContext, TEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     actions: js.Array[ActionObject[TContext, TEvent]],
     configuration: js.Array[StateNode[TContext, _, TEvent, _]],
     entrySet: js.Array[StateNode[TContext, _, TEvent, _]],

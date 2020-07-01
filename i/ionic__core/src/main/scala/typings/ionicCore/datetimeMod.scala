@@ -32,6 +32,7 @@ object datetimeMod extends js.Object {
     /**
       * Short abbreviated day of the week names. This can be used to provide
       * locale names for each day in the week. Defaults to English.
+      * Defaults to: `['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']`
       */
     var dayShortNames: js.UndefOr[js.Array[String] | String] = js.native
     /**

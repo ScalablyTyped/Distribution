@@ -26,10 +26,14 @@ trait SchemaRepositoryError extends js.Object {
 
 object SchemaRepositoryError {
   @scala.inline
-  def apply(errorMessage: String = null, httpStatusCode: Int | Double = null, `type`: String = null): SchemaRepositoryError = {
+  def apply(
+    errorMessage: String = null,
+    httpStatusCode: js.UndefOr[Double] = js.undefined,
+    `type`: String = null
+  ): SchemaRepositoryError = {
     val __obj = js.Dynamic.literal()
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
-    if (httpStatusCode != null) __obj.updateDynamic("httpStatusCode")(httpStatusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpStatusCode)) __obj.updateDynamic("httpStatusCode")(httpStatusCode.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRepositoryError]
   }

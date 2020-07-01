@@ -8,6 +8,7 @@ import typings.mongodb.mod.DefaultSchema
 import typings.mongodb.mod.SessionOptions
 import typings.mongoose.mod.Collection
 import typings.mongoose.mod.ConnectionOptions
+import typings.mongoose.mod.ConnectionUseDbOptions
 import typings.mongoose.mod.Connection_
 import typings.mongoose.mod.Document
 import typings.mongoose.mod.Model_
@@ -179,8 +180,10 @@ trait ConnectionthenPromiseConn extends js.Object {
   /**
     * Switches to a different database using the same connection pool.
     * @param name The database name
+    * @param options Additional options
     * @returns New Connection Object
     */
   def useDb(name: String): Connection_ = js.native
+  def useDb(name: String, options: ConnectionUseDbOptions): Connection_ = js.native
 }
 

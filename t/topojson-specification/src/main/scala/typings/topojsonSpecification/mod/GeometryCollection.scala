@@ -15,7 +15,7 @@ trait GeometryCollection[P /* <: Properties */]
 
 object GeometryCollection {
   @scala.inline
-  def apply[P](
+  def apply[/* <: typings.topojsonSpecification.mod.Properties */ P](
     geometries: js.Array[GeometryObject[P]],
     `type`: typings.topojsonSpecification.topojsonSpecificationStrings.GeometryCollection,
     bbox: BBox = null,

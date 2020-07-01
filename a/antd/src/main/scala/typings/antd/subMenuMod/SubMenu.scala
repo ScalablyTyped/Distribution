@@ -13,7 +13,7 @@ trait SubMenu
   extends Component[SubMenuProps, js.Any, js.Any] {
   var subMenu: js.Any = js.native
   def onKeyDown(e: MouseEvent[HTMLElement, NativeMouseEvent]): Unit = js.native
-  def renderTitle(): js.UndefOr[js.Object | Null] = js.native
+  def renderTitle(inlineCollapsed: Boolean): js.UndefOr[js.Object | Null] = js.native
   def saveSubMenu(subMenu: js.Any): Unit = js.native
 }
 

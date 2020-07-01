@@ -26,7 +26,7 @@ trait TextFilterProps[T /* <: js.Object */] extends js.Object {
 
 object TextFilterProps {
   @scala.inline
-  def apply[T](
+  def apply[/* <: js.Object */ T](
     caseSensitive: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     comparator: Comparator = null,

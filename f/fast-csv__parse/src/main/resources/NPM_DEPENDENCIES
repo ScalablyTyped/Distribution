@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@fast-csv/parse" : "4.3.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@fast-csv/parse" : "4.3.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

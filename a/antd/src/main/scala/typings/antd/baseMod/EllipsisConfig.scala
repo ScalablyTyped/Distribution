@@ -3,6 +3,7 @@ package typings.antd.baseMod
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +15,7 @@ trait EllipsisConfig extends js.Object {
   var onExpand: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
   var rows: js.UndefOr[Double] = js.undefined
   var suffix: js.UndefOr[String] = js.undefined
+  var symbol: js.UndefOr[ReactNode] = js.undefined
 }
 
 object EllipsisConfig {
@@ -23,7 +25,8 @@ object EllipsisConfig {
     onEllipsis: /* ellipsis */ Boolean => Unit = null,
     onExpand: MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
     rows: js.UndefOr[Double] = js.undefined,
-    suffix: String = null
+    suffix: String = null,
+    symbol: ReactNode = null
   ): EllipsisConfig = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(expandable)) __obj.updateDynamic("expandable")(expandable.get.asInstanceOf[js.Any])
@@ -31,6 +34,7 @@ object EllipsisConfig {
     if (onExpand != null) __obj.updateDynamic("onExpand")(js.Any.fromFunction1(onExpand))
     if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
     if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
     __obj.asInstanceOf[EllipsisConfig]
   }
 }

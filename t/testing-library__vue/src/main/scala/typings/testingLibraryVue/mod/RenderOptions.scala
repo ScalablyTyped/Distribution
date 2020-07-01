@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 
 object RenderOptions {
   @scala.inline
-  def apply[V, S](props: js.Object = null, routes: js.Array[RouteConfig] = null, store: StoreOptions[S] = null): RenderOptions[V, S] = {
+  def apply[/* <: typings.vue.vueMod.Vue */ V, S](props: js.Object = null, routes: js.Array[RouteConfig] = null, store: StoreOptions[S] = null): RenderOptions[V, S] = {
     val __obj = js.Dynamic.literal()
     if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
     if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])

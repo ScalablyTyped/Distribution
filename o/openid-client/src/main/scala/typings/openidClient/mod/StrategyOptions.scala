@@ -29,7 +29,7 @@ trait StrategyOptions[TClient /* <: Client */] extends js.Object {
 
 object StrategyOptions {
   @scala.inline
-  def apply[TClient](
+  def apply[/* <: typings.openidClient.mod.Client */ TClient](
     client: TClient,
     params: AuthorizationParameters = null,
     passReqToCallback: js.UndefOr[Boolean] = js.undefined,

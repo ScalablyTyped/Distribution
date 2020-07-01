@@ -15,7 +15,7 @@ trait StackSetOperationResultSummary extends js.Object {
     */
   var AccountGateResult: js.UndefOr[typings.awsSdk.cloudformationMod.AccountGateResult] = js.native
   /**
-    * Reserved for internal use. No data returned.
+    * [Service-managed permissions] The organization root ID or organizational unit (OU) IDs that you specified for DeploymentTargets.
     */
   var OrganizationalUnitId: js.UndefOr[typings.awsSdk.cloudformationMod.OrganizationalUnitId] = js.native
   /**

@@ -12,7 +12,7 @@ trait Entries[T /* <: BaseEntry */] extends js.Object {
 
 object Entries {
   @scala.inline
-  def apply[T](entries: js.Array[T] = null, sortAndExpand: js.UndefOr[Boolean] = js.undefined): Entries[T] = {
+  def apply[/* <: typings.fsTreeDiff.entryMod.BaseEntry */ T](entries: js.Array[T] = null, sortAndExpand: js.UndefOr[Boolean] = js.undefined): Entries[T] = {
     val __obj = js.Dynamic.literal()
     if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
     if (!js.isUndefined(sortAndExpand)) __obj.updateDynamic("sortAndExpand")(sortAndExpand.get.asInstanceOf[js.Any])

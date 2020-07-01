@@ -1,9 +1,9 @@
 package typings.googleapis.pagespeedonlineV1Mod.pagespeedonlineV1
 
-import typings.googleapis.AnonCssResponseBytes
-import typings.googleapis.AnonData
-import typings.googleapis.AnonLocale
-import typings.googleapis.AnonMajor
+import typings.googleapis.anon.CssResponseBytes
+import typings.googleapis.anon.Data
+import typings.googleapis.anon.Locale
+import typings.googleapis.anon.Major
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait SchemaResult extends js.Object {
     * Localized PageSpeed results. Contains a ruleResults entry for each
     * PageSpeed rule instantiated and run by the server.
     */
-  var formattedResults: js.UndefOr[AnonLocale] = js.native
+  var formattedResults: js.UndefOr[Locale] = js.native
   /**
     * Canonicalized and final URL for the document, after following page
     * redirects (if any).
@@ -37,7 +37,7 @@ trait SchemaResult extends js.Object {
     * Summary statistics for the page, such as number of JavaScript bytes,
     * number of HTML bytes, etc.
     */
-  var pageStats: js.UndefOr[AnonCssResponseBytes] = js.native
+  var pageStats: js.UndefOr[CssResponseBytes] = js.native
   /**
     * Response code for the document. 200 indicates a normal page load. 4xx/5xx
     * indicates an error.
@@ -52,7 +52,7 @@ trait SchemaResult extends js.Object {
   /**
     * Base64-encoded screenshot of the page that was analyzed.
     */
-  var screenshot: js.UndefOr[AnonData] = js.native
+  var screenshot: js.UndefOr[Data] = js.native
   /**
     * Title of the page, as displayed in the browser&#39;s title bar.
     */
@@ -60,23 +60,23 @@ trait SchemaResult extends js.Object {
   /**
     * The version of PageSpeed used to generate these results.
     */
-  var version: js.UndefOr[AnonMajor] = js.native
+  var version: js.UndefOr[Major] = js.native
 }
 
 object SchemaResult {
   @scala.inline
   def apply(
     captchaResult: String = null,
-    formattedResults: AnonLocale = null,
+    formattedResults: Locale = null,
     id: String = null,
     invalidRules: js.Array[String] = null,
     kind: String = null,
-    pageStats: AnonCssResponseBytes = null,
-    responseCode: Int | Double = null,
-    score: Int | Double = null,
-    screenshot: AnonData = null,
+    pageStats: CssResponseBytes = null,
+    responseCode: js.UndefOr[Double] = js.undefined,
+    score: js.UndefOr[Double] = js.undefined,
+    screenshot: Data = null,
     title: String = null,
-    version: AnonMajor = null
+    version: Major = null
   ): SchemaResult = {
     val __obj = js.Dynamic.literal()
     if (captchaResult != null) __obj.updateDynamic("captchaResult")(captchaResult.asInstanceOf[js.Any])
@@ -85,8 +85,8 @@ object SchemaResult {
     if (invalidRules != null) __obj.updateDynamic("invalidRules")(invalidRules.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (pageStats != null) __obj.updateDynamic("pageStats")(pageStats.asInstanceOf[js.Any])
-    if (responseCode != null) __obj.updateDynamic("responseCode")(responseCode.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(responseCode)) __obj.updateDynamic("responseCode")(responseCode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     if (screenshot != null) __obj.updateDynamic("screenshot")(screenshot.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])

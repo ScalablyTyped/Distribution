@@ -31,7 +31,7 @@ trait Activation[T /* <: Tensor3D | Tensor4D */] extends js.Object {
 
 object Activation {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.tensorflowTfjsCore.tensorMod.Tensor3D | typings.tensorflowTfjsCore.tensorMod.Tensor4D */ T](
     filter: Tensor4D | TensorLike,
     pad: valid_ | same_ | Double,
     strides: (js.Tuple2[Double, Double]) | Double,

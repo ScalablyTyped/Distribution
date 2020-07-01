@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A location object is used by other items to indicate their locations.
+  */
 trait Location extends js.Object {
   var address: js.UndefOr[String] = js.undefined
   var altitude: js.UndefOr[Double] = js.undefined

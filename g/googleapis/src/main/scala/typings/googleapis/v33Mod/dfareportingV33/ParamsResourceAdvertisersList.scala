@@ -86,7 +86,7 @@ object ParamsResourceAdvertisersList {
     ids: js.Array[String] = null,
     includeAdvertisersWithoutGroupsOnly: js.UndefOr[Boolean] = js.undefined,
     key: String = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[Double] = js.undefined,
     oauth_token: String = null,
     onlyParent: js.UndefOr[Boolean] = js.undefined,
     pageToken: String = null,
@@ -107,13 +107,13 @@ object ParamsResourceAdvertisersList {
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (floodlightConfigurationIds != null) __obj.updateDynamic("floodlightConfigurationIds")(floodlightConfigurationIds.asInstanceOf[js.Any])
     if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeAdvertisersWithoutGroupsOnly)) __obj.updateDynamic("includeAdvertisersWithoutGroupsOnly")(includeAdvertisersWithoutGroupsOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeAdvertisersWithoutGroupsOnly)) __obj.updateDynamic("includeAdvertisersWithoutGroupsOnly")(includeAdvertisersWithoutGroupsOnly.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyParent)) __obj.updateDynamic("onlyParent")(onlyParent.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyParent)) __obj.updateDynamic("onlyParent")(onlyParent.get.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (profileId != null) __obj.updateDynamic("profileId")(profileId.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (searchString != null) __obj.updateDynamic("searchString")(searchString.asInstanceOf[js.Any])

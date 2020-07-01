@@ -1,6 +1,8 @@
 package typings.ionicReact.ionBackButtonMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.ionicCore.animationInterfaceMod.Animation
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.componentsMod.global.HTMLIonBackButtonElement
 import typings.ionicCore.mod.Color
 import typings.ionicReact.anon.Ios
@@ -24,6 +26,7 @@ trait Props extends js.Object {
   var icon: js.UndefOr[Ios | String] = js.undefined
   var mode: js.UndefOr[ios | md] = js.undefined
   var ref: js.UndefOr[RefObject[HTMLIonBackButtonElement]] = js.undefined
+  var routerAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   var style: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var text: js.UndefOr[String] = js.undefined
   var `type`: js.UndefOr[submit | reset | button] = js.undefined
@@ -40,6 +43,7 @@ object Props {
     icon: Ios | String = null,
     mode: ios | md = null,
     ref: RefObject[HTMLIonBackButtonElement] = null,
+    routerAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     style: StringDictionary[js.Any] = null,
     text: String = null,
     `type`: submit | reset | button = null
@@ -53,6 +57,7 @@ object Props {
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (routerAnimation != null) __obj.updateDynamic("routerAnimation")(js.Any.fromFunction2(routerAnimation))
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

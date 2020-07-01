@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 
 object loaderUtilsStrings {
   @js.native
+  sealed trait Readonly extends js.Object
+  
+  @js.native
   sealed trait base26 extends DigestType
   
   @js.native
@@ -35,6 +38,9 @@ object loaderUtilsStrings {
   sealed trait hex extends DigestType
   
   @js.native
+  sealed trait md4 extends HashType
+  
+  @js.native
   sealed trait md5 extends HashType
   
   @js.native
@@ -46,6 +52,8 @@ object loaderUtilsStrings {
   @js.native
   sealed trait sha512 extends HashType
   
+  @scala.inline
+  def Readonly: Readonly = "Readonly".asInstanceOf[Readonly]
   @scala.inline
   def base26: base26 = "base26".asInstanceOf[base26]
   @scala.inline
@@ -64,6 +72,8 @@ object loaderUtilsStrings {
   def base64: base64 = "base64".asInstanceOf[base64]
   @scala.inline
   def hex: hex = "hex".asInstanceOf[hex]
+  @scala.inline
+  def md4: md4 = "md4".asInstanceOf[md4]
   @scala.inline
   def md5: md5 = "md5".asInstanceOf[md5]
   @scala.inline

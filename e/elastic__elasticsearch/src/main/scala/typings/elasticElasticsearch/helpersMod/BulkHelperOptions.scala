@@ -22,6 +22,7 @@ trait BulkHelperOptions[TDocument] extends js.Object {
   var error_trace: js.UndefOr[Boolean] = js.undefined
   var filter_path: js.UndefOr[String | js.Array[String]] = js.undefined
   var flushBytes: js.UndefOr[Double] = js.undefined
+  var flushInterval: js.UndefOr[Double] = js.undefined
   var human: js.UndefOr[Boolean] = js.undefined
   var ignore: js.UndefOr[Double | js.Array[Double]] = js.undefined
   var index: js.UndefOr[String] = js.undefined
@@ -56,6 +57,7 @@ object BulkHelperOptions {
     error_trace: js.UndefOr[Boolean] = js.undefined,
     filter_path: String | js.Array[String] = null,
     flushBytes: js.UndefOr[Double] = js.undefined,
+    flushInterval: js.UndefOr[Double] = js.undefined,
     human: js.UndefOr[Boolean] = js.undefined,
     ignore: Double | js.Array[Double] = null,
     index: String = null,
@@ -83,6 +85,7 @@ object BulkHelperOptions {
     if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.get.asInstanceOf[js.Any])
     if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
     if (!js.isUndefined(flushBytes)) __obj.updateDynamic("flushBytes")(flushBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flushInterval)) __obj.updateDynamic("flushInterval")(flushInterval.get.asInstanceOf[js.Any])
     if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.get.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])

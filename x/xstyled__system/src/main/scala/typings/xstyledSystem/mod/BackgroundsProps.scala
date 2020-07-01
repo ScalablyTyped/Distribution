@@ -25,7 +25,8 @@ object BackgroundsProps {
     backgroundImage: ResponsiveValue[BackgroundImageProperty] = null,
     backgroundPosition: ResponsiveValue[BackgroundPositionProperty[StyledSystemLength]] = null,
     backgroundRepeat: ResponsiveValue[BackgroundRepeatProperty] = null,
-    backgroundSize: ResponsiveValue[BackgroundSizeProperty[StyledSystemLength]] = null
+    backgroundSize: ResponsiveValue[BackgroundSizeProperty[StyledSystemLength]] = null,
+    bg: ResponsiveValue[BackgroundProperty[StyledSystemLength]] = null
   ): BackgroundsProps = {
     val __obj = js.Dynamic.literal()
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
@@ -34,6 +35,7 @@ object BackgroundsProps {
     if (backgroundPosition != null) __obj.updateDynamic("backgroundPosition")(backgroundPosition.asInstanceOf[js.Any])
     if (backgroundRepeat != null) __obj.updateDynamic("backgroundRepeat")(backgroundRepeat.asInstanceOf[js.Any])
     if (backgroundSize != null) __obj.updateDynamic("backgroundSize")(backgroundSize.asInstanceOf[js.Any])
+    if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundsProps]
   }
 }

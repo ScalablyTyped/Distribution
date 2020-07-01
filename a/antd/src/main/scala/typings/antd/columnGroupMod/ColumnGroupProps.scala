@@ -9,6 +9,7 @@ import typings.antd.tableInterfaceMod.FilterDropdownProps
 import typings.antd.tableInterfaceMod.Key
 import typings.antd.tableInterfaceMod.SortOrder
 import typings.rcTable.interfaceMod.AlignType
+import typings.rcTable.interfaceMod.CellEllipsisType
 import typings.rcTable.interfaceMod.DataIndex
 import typings.rcTable.interfaceMod.FixedType
 import typings.rcTable.interfaceMod.GetComponentProps
@@ -32,7 +33,7 @@ trait ColumnGroupProps[RecordType] extends js.Object {
   var dataIndex: js.UndefOr[DataIndex] = js.undefined
   var defaultFilteredValue: js.UndefOr[js.Array[Key]] = js.undefined
   var defaultSortOrder: js.UndefOr[SortOrder] = js.undefined
-  var ellipsis: js.UndefOr[Boolean] = js.undefined
+  var ellipsis: js.UndefOr[CellEllipsisType] = js.undefined
   var filterDropdown: js.UndefOr[ReactNode | (js.Function1[/* props */ FilterDropdownProps, ReactNode])] = js.undefined
   var filterDropdownVisible: js.UndefOr[Boolean] = js.undefined
   var filterIcon: js.UndefOr[ReactNode | (js.Function1[/* filtered */ Boolean, ReactNode])] = js.undefined
@@ -65,6 +66,7 @@ trait ColumnGroupProps[RecordType] extends js.Object {
   ] = js.undefined
   var responsive: js.UndefOr[js.Array[Breakpoint]] = js.undefined
   var rowSpan: js.UndefOr[Double] = js.undefined
+  var shouldCellUpdate: js.UndefOr[js.Function2[/* record */ RecordType, /* prevRecord */ RecordType, Boolean]] = js.undefined
   var showSorterTooltip: js.UndefOr[Boolean] = js.undefined
   var sortDirections: js.UndefOr[js.Array[SortOrder]] = js.undefined
   var sortOrder: js.UndefOr[SortOrder] = js.undefined
@@ -83,7 +85,7 @@ object ColumnGroupProps {
     dataIndex: DataIndex = null,
     defaultFilteredValue: js.Array[Key] = null,
     defaultSortOrder: js.UndefOr[Null | SortOrder] = js.undefined,
-    ellipsis: js.UndefOr[Boolean] = js.undefined,
+    ellipsis: CellEllipsisType = null,
     filterDropdown: ReactNode | (js.Function1[/* props */ FilterDropdownProps, ReactNode]) = null,
     filterDropdownVisible: js.UndefOr[Boolean] = js.undefined,
     filterIcon: ReactNode | (js.Function1[/* filtered */ Boolean, ReactNode]) = null,
@@ -101,6 +103,7 @@ object ColumnGroupProps {
     render: (/* value */ js.Any, /* record */ RecordType, /* index */ Double) => ReactNode | RenderedCell[RecordType] = null,
     responsive: js.Array[Breakpoint] = null,
     rowSpan: js.UndefOr[Double] = js.undefined,
+    shouldCellUpdate: (/* record */ RecordType, /* prevRecord */ RecordType) => Boolean = null,
     showSorterTooltip: js.UndefOr[Boolean] = js.undefined,
     sortDirections: js.Array[SortOrder] = null,
     sortOrder: js.UndefOr[Null | SortOrder] = js.undefined,
@@ -115,7 +118,7 @@ object ColumnGroupProps {
     if (dataIndex != null) __obj.updateDynamic("dataIndex")(dataIndex.asInstanceOf[js.Any])
     if (defaultFilteredValue != null) __obj.updateDynamic("defaultFilteredValue")(defaultFilteredValue.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultSortOrder)) __obj.updateDynamic("defaultSortOrder")(defaultSortOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(ellipsis)) __obj.updateDynamic("ellipsis")(ellipsis.get.asInstanceOf[js.Any])
+    if (ellipsis != null) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
     if (filterDropdown != null) __obj.updateDynamic("filterDropdown")(filterDropdown.asInstanceOf[js.Any])
     if (!js.isUndefined(filterDropdownVisible)) __obj.updateDynamic("filterDropdownVisible")(filterDropdownVisible.get.asInstanceOf[js.Any])
     if (filterIcon != null) __obj.updateDynamic("filterIcon")(filterIcon.asInstanceOf[js.Any])
@@ -133,6 +136,7 @@ object ColumnGroupProps {
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction3(render))
     if (responsive != null) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
     if (!js.isUndefined(rowSpan)) __obj.updateDynamic("rowSpan")(rowSpan.get.asInstanceOf[js.Any])
+    if (shouldCellUpdate != null) __obj.updateDynamic("shouldCellUpdate")(js.Any.fromFunction2(shouldCellUpdate))
     if (!js.isUndefined(showSorterTooltip)) __obj.updateDynamic("showSorterTooltip")(showSorterTooltip.get.asInstanceOf[js.Any])
     if (sortDirections != null) __obj.updateDynamic("sortDirections")(sortDirections.asInstanceOf[js.Any])
     if (!js.isUndefined(sortOrder)) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])

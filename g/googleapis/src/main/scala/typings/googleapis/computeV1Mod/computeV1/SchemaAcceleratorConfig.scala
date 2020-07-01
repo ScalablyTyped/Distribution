@@ -26,9 +26,9 @@ trait SchemaAcceleratorConfig extends js.Object {
 
 object SchemaAcceleratorConfig {
   @scala.inline
-  def apply(acceleratorCount: Int | Double = null, acceleratorType: String = null): SchemaAcceleratorConfig = {
+  def apply(acceleratorCount: js.UndefOr[Double] = js.undefined, acceleratorType: String = null): SchemaAcceleratorConfig = {
     val __obj = js.Dynamic.literal()
-    if (acceleratorCount != null) __obj.updateDynamic("acceleratorCount")(acceleratorCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(acceleratorCount)) __obj.updateDynamic("acceleratorCount")(acceleratorCount.get.asInstanceOf[js.Any])
     if (acceleratorType != null) __obj.updateDynamic("acceleratorType")(acceleratorType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAcceleratorConfig]
   }

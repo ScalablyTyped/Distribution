@@ -82,7 +82,7 @@ object SchemaHttpRouteRuleMatch {
     val __obj = js.Dynamic.literal()
     if (fullPathMatch != null) __obj.updateDynamic("fullPathMatch")(fullPathMatch.asInstanceOf[js.Any])
     if (headerMatches != null) __obj.updateDynamic("headerMatches")(headerMatches.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.get.asInstanceOf[js.Any])
     if (metadataFilters != null) __obj.updateDynamic("metadataFilters")(metadataFilters.asInstanceOf[js.Any])
     if (prefixMatch != null) __obj.updateDynamic("prefixMatch")(prefixMatch.asInstanceOf[js.Any])
     if (queryParameterMatches != null) __obj.updateDynamic("queryParameterMatches")(queryParameterMatches.asInstanceOf[js.Any])

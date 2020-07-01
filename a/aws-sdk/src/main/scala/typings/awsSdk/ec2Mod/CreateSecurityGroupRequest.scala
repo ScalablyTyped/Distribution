@@ -19,6 +19,10 @@ trait CreateSecurityGroupRequest extends js.Object {
     */
   var GroupName: String = js.native
   /**
+    * The tags to assign to the security group.
+    */
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
+  /**
     * [EC2-VPC] The ID of the VPC. Required for EC2-VPC.
     */
   var VpcId: js.UndefOr[typings.awsSdk.ec2Mod.VpcId] = js.native
@@ -30,10 +34,12 @@ object CreateSecurityGroupRequest {
     Description: String,
     GroupName: String,
     DryRun: js.UndefOr[Boolean] = js.undefined,
+    TagSpecifications: TagSpecificationList = null,
     VpcId: VpcId = null
   ): CreateSecurityGroupRequest = {
     val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], GroupName = GroupName.asInstanceOf[js.Any])
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
+    if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
     if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSecurityGroupRequest]
   }

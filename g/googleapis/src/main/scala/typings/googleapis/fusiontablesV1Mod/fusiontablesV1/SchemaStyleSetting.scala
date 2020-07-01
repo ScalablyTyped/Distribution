@@ -51,7 +51,7 @@ object SchemaStyleSetting {
     name: String = null,
     polygonOptions: SchemaPolygonStyle = null,
     polylineOptions: SchemaLineStyle = null,
-    styleId: Int | Double = null,
+    styleId: js.UndefOr[Double] = js.undefined,
     tableId: String = null
   ): SchemaStyleSetting = {
     val __obj = js.Dynamic.literal()
@@ -60,7 +60,7 @@ object SchemaStyleSetting {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (polygonOptions != null) __obj.updateDynamic("polygonOptions")(polygonOptions.asInstanceOf[js.Any])
     if (polylineOptions != null) __obj.updateDynamic("polylineOptions")(polylineOptions.asInstanceOf[js.Any])
-    if (styleId != null) __obj.updateDynamic("styleId")(styleId.asInstanceOf[js.Any])
+    if (!js.isUndefined(styleId)) __obj.updateDynamic("styleId")(styleId.get.asInstanceOf[js.Any])
     if (tableId != null) __obj.updateDynamic("tableId")(tableId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStyleSetting]
   }

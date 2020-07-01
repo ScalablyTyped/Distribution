@@ -29,7 +29,7 @@ trait SimulationLinkDatum[NodeDatum /* <: SimulationNodeDatum */] extends js.Obj
 
 object SimulationLinkDatum {
   @scala.inline
-  def apply[NodeDatum](
+  def apply[/* <: typings.d3Force.mod.SimulationNodeDatum */ NodeDatum](
     source: NodeDatum | String | Double,
     target: NodeDatum | String | Double,
     index: js.UndefOr[Double] = js.undefined

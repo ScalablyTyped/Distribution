@@ -11,6 +11,8 @@ import scala.scalajs.js.annotation._
 trait CascaderProps extends js.Object {
   /** 是否支持清除 */
   var allowClear: js.UndefOr[Boolean] = js.undefined
+  /** 自动获取焦点 */
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   /** whether has border style */
   var bordered: js.UndefOr[Boolean] = js.undefined
   /** 当此项为 true 时，点选每级菜单选项值都会发生变化 */
@@ -18,7 +20,7 @@ trait CascaderProps extends js.Object {
   /** 自定义类名 */
   var className: js.UndefOr[String] = js.undefined
   /** 默认的选中项 */
-  var defaultValue: js.UndefOr[js.Array[String]] = js.undefined
+  var defaultValue: js.UndefOr[CascaderValueType] = js.undefined
   /** 禁用 */
   var disabled: js.UndefOr[Boolean] = js.undefined
   /** 选择后展示的渲染函数 */
@@ -29,6 +31,8 @@ trait CascaderProps extends js.Object {
       ReactNode
     ]
   ] = js.undefined
+  var dropdownRender: js.UndefOr[js.Function1[/* menus */ ReactNode, ReactNode]] = js.undefined
+  var expandIcon: js.UndefOr[ReactNode] = js.undefined
   /** 次级菜单的展开方式，可选 'click' 和 'hover' */
   var expandTrigger: js.UndefOr[CascaderExpandTrigger] = js.undefined
   /** use this after antd@3.7.0 */
@@ -42,7 +46,7 @@ trait CascaderProps extends js.Object {
   /** 选择完成后的回调 */
   var onChange: js.UndefOr[
     js.Function2[
-      /* value */ js.Array[String], 
+      /* value */ CascaderValueType, 
       /* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]], 
       Unit
     ]
@@ -66,7 +70,7 @@ trait CascaderProps extends js.Object {
   var style: js.UndefOr[CSSProperties] = js.undefined
   var suffixIcon: js.UndefOr[ReactNode] = js.undefined
   /** 指定选中项 */
-  var value: js.UndefOr[js.Array[String]] = js.undefined
+  var value: js.UndefOr[CascaderValueType] = js.undefined
 }
 
 object CascaderProps {
@@ -74,19 +78,22 @@ object CascaderProps {
   def apply(
     options: js.Array[CascaderOptionType],
     allowClear: js.UndefOr[Boolean] = js.undefined,
+    autoFocus: js.UndefOr[Boolean] = js.undefined,
     bordered: js.UndefOr[Boolean] = js.undefined,
     changeOnSelect: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
-    defaultValue: js.Array[String] = null,
+    defaultValue: CascaderValueType = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     displayRender: (/* label */ js.Array[String], /* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]]) => ReactNode = null,
+    dropdownRender: /* menus */ ReactNode => ReactNode = null,
+    expandIcon: ReactNode = null,
     expandTrigger: CascaderExpandTrigger = null,
     fieldNames: FieldNamesType = null,
     getPopupContainer: /* triggerNode */ HTMLElement => HTMLElement = null,
     inputPrefixCls: String = null,
     loadData: /* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]] => Unit = null,
     notFoundContent: ReactNode = null,
-    onChange: (/* value */ js.Array[String], /* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]]) => Unit = null,
+    onChange: (/* value */ CascaderValueType, /* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]]) => Unit = null,
     onPopupVisibleChange: /* popupVisible */ Boolean => Unit = null,
     placeholder: String = null,
     popupClassName: String = null,
@@ -97,16 +104,19 @@ object CascaderProps {
     size: SizeType = null,
     style: CSSProperties = null,
     suffixIcon: ReactNode = null,
-    value: js.Array[String] = null
+    value: CascaderValueType = null
   ): CascaderProps = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
     if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.get.asInstanceOf[js.Any])
     if (!js.isUndefined(changeOnSelect)) __obj.updateDynamic("changeOnSelect")(changeOnSelect.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (displayRender != null) __obj.updateDynamic("displayRender")(js.Any.fromFunction2(displayRender))
+    if (dropdownRender != null) __obj.updateDynamic("dropdownRender")(js.Any.fromFunction1(dropdownRender))
+    if (expandIcon != null) __obj.updateDynamic("expandIcon")(expandIcon.asInstanceOf[js.Any])
     if (expandTrigger != null) __obj.updateDynamic("expandTrigger")(expandTrigger.asInstanceOf[js.Any])
     if (fieldNames != null) __obj.updateDynamic("fieldNames")(fieldNames.asInstanceOf[js.Any])
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))

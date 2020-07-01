@@ -24,7 +24,7 @@ trait BaseType[T /* <: Context */] extends BaseResponse {
 
 object BaseType {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.wordpressApiFetch.mod.Schema.Context */ T](
     _links: Record[String, js.Array[Dictk]],
     capabilities: Createposts,
     description: String,

@@ -34,7 +34,7 @@ trait i18n extends js.Object {
   var isInitialized: Boolean = js.native
   /**
     * Is set to the current detected or set language.
-    * If you need the primary used language depending on your configuration (whilelist, load) you will prefer using i18next.languages[0].
+    * If you need the primary used language depending on your configuration (supportedLngs, load) you will prefer using i18next.languages[0].
     */
   var language: String = js.native
   /**
@@ -53,6 +53,10 @@ trait i18n extends js.Object {
     * Internal container for all used plugins and implementation details like languageUtils, pluralResolvers, etc.
     */
   var services: Services = js.native
+  /**
+    * Internal container for translation resources
+    */
+  var store: ResourceStore = js.native
   // Expose parameterized t in the i18next interface hierarchy
   @JSName("t")
   var t_Original: TFunction = js.native

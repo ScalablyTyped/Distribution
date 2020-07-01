@@ -20,7 +20,7 @@ trait ActionObject[TContext, TEvent /* <: EventObject */]
 
 object ActionObject {
   @scala.inline
-  def apply[TContext, TEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     `type`: String,
     StringDictionary: /* other */ StringDictionary[js.Any] = null,
     exec: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => js.Any | Unit = null

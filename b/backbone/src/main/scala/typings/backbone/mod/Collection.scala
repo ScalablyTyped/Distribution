@@ -2,6 +2,7 @@ package typings.backbone.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.jquery.JQueryXHR
+import typings.std.Iterator
 import typings.underscore.mod.Dictionary
 import typings.underscore.mod.ListIterator
 import typings.underscore.mod.MemoIterator
@@ -18,6 +19,8 @@ class Collection[TModel /* <: Model[_, ModelSetOptions] */] () extends js.Object
     * Specify a model attribute name (string) or function that will be used to sort the collection.
     */
   var comparator: String | (js.Function1[/* element */ TModel, Double | String]) | (js.Function2[/* compare */ TModel, /* to */ js.UndefOr[TModel], Double]) = js.native
+  @JSName(js.Symbol.iterator)
+  var iterator: js.Function0[Iterator[TModel, _, js.UndefOr[scala.Nothing]]] = js.native
   var length: Double = js.native
   var model: Instantiable1[/* args (repeated) */ js.Any, TModel] = js.native
   var models: js.Array[TModel] = js.native
@@ -63,6 +66,7 @@ class Collection[TModel /* <: Model[_, ModelSetOptions] */] () extends js.Object
   def drop(n: Double): js.Array[TModel] = js.native
   def each(iterator: ListIterator[TModel, Unit]): js.Array[TModel] = js.native
   def each(iterator: ListIterator[TModel, Unit], context: js.Any): js.Array[TModel] = js.native
+  def entries(): Iterator[js.Tuple2[_, TModel], _, js.UndefOr[scala.Nothing]] = js.native
   def every(iterator: ListIterator[TModel, Boolean]): Boolean = js.native
   def every(iterator: ListIterator[TModel, Boolean], context: js.Any): Boolean = js.native
   def fetch(): JQueryXHR = js.native
@@ -119,6 +123,7 @@ class Collection[TModel /* <: Model[_, ModelSetOptions] */] () extends js.Object
   def inject[TResult](iterator: MemoIterator[TModel, TResult], memo: TResult, context: js.Any): TResult = js.native
   def invoke(methodName: String, args: js.Any*): js.Any = js.native
   def isEmpty(): Boolean = js.native
+  def keys(): Iterator[_, _, js.UndefOr[scala.Nothing]] = js.native
   def last(): TModel = js.native
   def last(n: Double): js.Array[TModel] = js.native
   def lastIndexOf(value: TModel): Double = js.native
@@ -211,6 +216,7 @@ class Collection[TModel /* <: Model[_, ModelSetOptions] */] () extends js.Object
   def toArray(): js.Array[TModel] = js.native
   def unshift(model: TModel): TModel = js.native
   def unshift(model: TModel, options: AddOptions): TModel = js.native
+  def values(): Iterator[TModel, _, js.UndefOr[scala.Nothing]] = js.native
   def where(properties: js.Any): js.Array[TModel] = js.native
   def without(values: TModel*): js.Array[TModel] = js.native
 }

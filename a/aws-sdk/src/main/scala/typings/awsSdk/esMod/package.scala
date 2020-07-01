@@ -12,7 +12,10 @@ package object esMod {
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.esMod.ClientApiVersions
   type CloudWatchLogsLogGroupArn = java.lang.String
   type CompatibleElasticsearchVersionsList = js.Array[typings.awsSdk.esMod.CompatibleVersionsMap]
+  type ConnectionAlias = java.lang.String
   type CreatedAt = typings.std.Date
+  type CrossClusterSearchConnectionId = java.lang.String
+  type CrossClusterSearchConnectionStatusMessage = java.lang.String
   type DeploymentCloseDateTimeStamp = typings.std.Date
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.PENDING_UPDATE
@@ -123,8 +126,20 @@ package object esMod {
   type EndpointsMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.esMod.ServiceUrl]
   type ErrorMessage = java.lang.String
   type ErrorType = java.lang.String
+  type FilterList = js.Array[typings.awsSdk.esMod.Filter]
   type GUID = java.lang.String
   type IdentityPoolId = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.PENDING_ACCEPTANCE
+    - typings.awsSdk.awsSdkStrings.APPROVED
+    - typings.awsSdk.awsSdkStrings.REJECTING
+    - typings.awsSdk.awsSdkStrings.REJECTED
+    - typings.awsSdk.awsSdkStrings.DELETING
+    - typings.awsSdk.awsSdkStrings.DELETED
+    - java.lang.String
+  */
+  type InboundCrossClusterSearchConnectionStatusCode = typings.awsSdk.esMod._InboundCrossClusterSearchConnectionStatusCode | java.lang.String
+  type InboundCrossClusterSearchConnections = js.Array[typings.awsSdk.esMod.InboundCrossClusterSearchConnection]
   type InstanceCount = scala.Double
   type InstanceRole = java.lang.String
   type Integer = scala.Double
@@ -149,6 +164,7 @@ package object esMod {
   type MaximumInstanceCount = scala.Double
   type MinimumInstanceCount = scala.Double
   type NextToken = java.lang.String
+  type NonEmptyString = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.RequiresIndexDocuments
     - typings.awsSdk.awsSdkStrings.Processing_
@@ -156,6 +172,20 @@ package object esMod {
     - java.lang.String
   */
   type OptionState = typings.awsSdk.esMod._OptionState | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.PENDING_ACCEPTANCE
+    - typings.awsSdk.awsSdkStrings.VALIDATING
+    - typings.awsSdk.awsSdkStrings.VALIDATION_FAILED
+    - typings.awsSdk.awsSdkStrings.PROVISIONING
+    - typings.awsSdk.awsSdkStrings.ACTIVE
+    - typings.awsSdk.awsSdkStrings.REJECTED
+    - typings.awsSdk.awsSdkStrings.DELETING
+    - typings.awsSdk.awsSdkStrings.DELETED
+    - java.lang.String
+  */
+  type OutboundCrossClusterSearchConnectionStatusCode = typings.awsSdk.esMod._OutboundCrossClusterSearchConnectionStatusCode | java.lang.String
+  type OutboundCrossClusterSearchConnections = js.Array[typings.awsSdk.esMod.OutboundCrossClusterSearchConnection]
+  type OwnerId = java.lang.String
   type PackageDescription = java.lang.String
   type PackageDetailsList = js.Array[typings.awsSdk.esMod.PackageDetails]
   type PackageID = java.lang.String
@@ -177,6 +207,7 @@ package object esMod {
   type PolicyDocument = java.lang.String
   type RecurringChargeList = js.Array[typings.awsSdk.esMod.RecurringCharge]
   type ReferencePath = java.lang.String
+  type Region = java.lang.String
   type ReservationToken = java.lang.String
   type ReservedElasticsearchInstanceList = js.Array[typings.awsSdk.esMod.ReservedElasticsearchInstance]
   type ReservedElasticsearchInstanceOfferingList = js.Array[typings.awsSdk.esMod.ReservedElasticsearchInstanceOffering]
@@ -229,6 +260,7 @@ package object esMod {
   type UpgradeStepsList = js.Array[typings.awsSdk.esMod.UpgradeStepItem]
   type UserPoolId = java.lang.String
   type Username = java.lang.String
+  type ValueStringList = js.Array[typings.awsSdk.esMod.NonEmptyString]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.standard__
     - typings.awsSdk.awsSdkStrings.gp2

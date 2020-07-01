@@ -36,7 +36,7 @@ trait CreateFileSystemWindowsConfiguration extends js.Object {
     */
   var ThroughputCapacity: MegabytesPerSecond = js.native
   /**
-    * The preferred start time to perform weekly maintenance, formatted d:HH:MM in the UTC time zone.
+    * The preferred start time to perform weekly maintenance, formatted d:HH:MM in the UTC time zone, where d is the weekday number, from 1 through 7, beginning with Monday and ending with Sunday.
     */
   var WeeklyMaintenanceStartTime: js.UndefOr[WeeklyTime] = js.native
 }

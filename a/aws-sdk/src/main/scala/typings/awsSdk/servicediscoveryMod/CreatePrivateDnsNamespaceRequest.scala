@@ -19,6 +19,10 @@ trait CreatePrivateDnsNamespaceRequest extends js.Object {
     */
   var Name: NamespaceName = js.native
   /**
+    * The tags to add to the namespace. Each tag consists of a key and an optional value, both of which you define. Tag keys can have a maximum character length of 128 characters, and tag values can have a maximum length of 256 characters.
+    */
+  var Tags: js.UndefOr[TagList] = js.native
+  /**
     * The ID of the Amazon VPC that you want to associate the namespace with.
     */
   var Vpc: ResourceId = js.native
@@ -30,11 +34,13 @@ object CreatePrivateDnsNamespaceRequest {
     Name: NamespaceName,
     Vpc: ResourceId,
     CreatorRequestId: ResourceId = null,
-    Description: ResourceDescription = null
+    Description: ResourceDescription = null,
+    Tags: TagList = null
   ): CreatePrivateDnsNamespaceRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Vpc = Vpc.asInstanceOf[js.Any])
     if (CreatorRequestId != null) __obj.updateDynamic("CreatorRequestId")(CreatorRequestId.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePrivateDnsNamespaceRequest]
   }
 }

@@ -20,7 +20,7 @@ trait RdfFetchResponse[Q /* <: BaseQuad */] extends Response {
 
 object RdfFetchResponse {
   @scala.inline
-  def apply[Q](
+  def apply[/* <: typings.rdfJs.mod.BaseQuad */ Q](
     arrayBuffer: () => js.Promise[ArrayBuffer],
     blob: () => js.Promise[Blob],
     bodyUsed: Boolean,

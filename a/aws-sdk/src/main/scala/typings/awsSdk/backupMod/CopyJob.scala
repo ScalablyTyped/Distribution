@@ -7,11 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CopyJob extends js.Object {
   /**
+    * The account ID that owns the copy job.
+    */
+  var AccountId: js.UndefOr[typings.awsSdk.backupMod.AccountId] = js.native
+  /**
     * The size, in bytes, of a copy job.
     */
   var BackupSizeInBytes: js.UndefOr[Long_] = js.native
   /**
-    * The date and time a copy job is completed, in Unix format and Coordinated Universal Time (UTC). The value of CompletionDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM. 
+    * The date and time a copy job is completed, in Unix format and Coordinated Universal Time (UTC). The value of CompletionDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
   var CompletionDate: js.UndefOr[timestamp] = js.native
   /**
@@ -20,7 +24,7 @@ trait CopyJob extends js.Object {
   var CopyJobId: js.UndefOr[String] = js.native
   var CreatedBy: js.UndefOr[RecoveryPointCreator] = js.native
   /**
-    * The date and time a copy job is created, in Unix format and Coordinated Universal Time (UTC). The value of CreationDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM. 
+    * The date and time a copy job is created, in Unix format and Coordinated Universal Time (UTC). The value of CreationDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
   var CreationDate: js.UndefOr[timestamp] = js.native
   /**
@@ -64,6 +68,7 @@ trait CopyJob extends js.Object {
 object CopyJob {
   @scala.inline
   def apply(
+    AccountId: AccountId = null,
     BackupSizeInBytes: js.UndefOr[Long_] = js.undefined,
     CompletionDate: timestamp = null,
     CopyJobId: String = null,
@@ -80,6 +85,7 @@ object CopyJob {
     StatusMessage: String = null
   ): CopyJob = {
     val __obj = js.Dynamic.literal()
+    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
     if (!js.isUndefined(BackupSizeInBytes)) __obj.updateDynamic("BackupSizeInBytes")(BackupSizeInBytes.get.asInstanceOf[js.Any])
     if (CompletionDate != null) __obj.updateDynamic("CompletionDate")(CompletionDate.asInstanceOf[js.Any])
     if (CopyJobId != null) __obj.updateDynamic("CopyJobId")(CopyJobId.asInstanceOf[js.Any])

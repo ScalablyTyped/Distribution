@@ -23,9 +23,9 @@ trait SchemaConcatPosition extends js.Object {
 
 object SchemaConcatPosition {
   @scala.inline
-  def apply(index: Int | Double = null, position: SchemaPosition = null): SchemaConcatPosition = {
+  def apply(index: js.UndefOr[Double] = js.undefined, position: SchemaPosition = null): SchemaConcatPosition = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaConcatPosition]
   }

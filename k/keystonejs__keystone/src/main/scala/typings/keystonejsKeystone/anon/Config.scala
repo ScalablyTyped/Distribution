@@ -13,7 +13,7 @@ trait Config[ListNames /* <: String */] extends js.Object {
 
 object Config {
   @scala.inline
-  def apply[ListNames](list: ListNames, `type`: BaseAuthStrategy, config: js.Any = null): Config[ListNames] = {
+  def apply[/* <: java.lang.String */ ListNames](list: ListNames, `type`: BaseAuthStrategy, config: js.Any = null): Config[ListNames] = {
     val __obj = js.Dynamic.literal(list = list.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])

@@ -25,9 +25,13 @@ trait SchemaErrors extends js.Object {
 
 object SchemaErrors {
   @scala.inline
-  def apply(code: Int | Double = null, errors: js.Array[SchemaError] = null, message: String = null): SchemaErrors = {
+  def apply(
+    code: js.UndefOr[Double] = js.undefined,
+    errors: js.Array[SchemaError] = null,
+    message: String = null
+  ): SchemaErrors = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code.get.asInstanceOf[js.Any])
     if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaErrors]

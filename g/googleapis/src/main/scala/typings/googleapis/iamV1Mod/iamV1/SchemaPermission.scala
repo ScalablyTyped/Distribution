@@ -51,11 +51,11 @@ object SchemaPermission {
     title: String = null
   ): SchemaPermission = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(apiDisabled)) __obj.updateDynamic("apiDisabled")(apiDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(apiDisabled)) __obj.updateDynamic("apiDisabled")(apiDisabled.get.asInstanceOf[js.Any])
     if (customRolesSupportLevel != null) __obj.updateDynamic("customRolesSupportLevel")(customRolesSupportLevel.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyInPredefinedRoles)) __obj.updateDynamic("onlyInPredefinedRoles")(onlyInPredefinedRoles.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyInPredefinedRoles)) __obj.updateDynamic("onlyInPredefinedRoles")(onlyInPredefinedRoles.get.asInstanceOf[js.Any])
     if (stage != null) __obj.updateDynamic("stage")(stage.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPermission]

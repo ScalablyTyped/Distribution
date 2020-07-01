@@ -43,7 +43,7 @@ trait SnapshotDetail extends js.Object {
     */
   var Url: js.UndefOr[String] = js.native
   /**
-    * The S3 bucket for the disk image.
+    * The Amazon S3 bucket for the disk image.
     */
   var UserBucket: js.UndefOr[UserBucketDetails] = js.native
 }

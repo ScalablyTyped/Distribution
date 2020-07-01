@@ -13,7 +13,7 @@ trait ValueTValue[TValue /* <: ValidatableArray */] extends js.Object {
 
 object ValueTValue {
   @scala.inline
-  def apply[TValue](hasError: `false`, value: TValue): ValueTValue[TValue] = {
+  def apply[/* <: typings.formstate.formStateLazyMod.ValidatableArray */ TValue](hasError: `false`, value: TValue): ValueTValue[TValue] = {
     val __obj = js.Dynamic.literal(hasError = hasError.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueTValue[TValue]]
   }

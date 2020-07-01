@@ -192,7 +192,7 @@ trait DOMAttributes[Target /* <: EventTarget */] extends PreactDOMAttributes {
 
 object DOMAttributes {
   @scala.inline
-  def apply[Target](
+  def apply[/* <: typings.std.EventTarget */ Target](
     children: js.UndefOr[Null | ComponentChildren] = js.undefined,
     dangerouslySetInnerHTML: Html = null,
     onAbort: GenericEventHandler[Target] = null,

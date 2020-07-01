@@ -16,7 +16,7 @@ trait Config[StartAction /* <: AnyAction */, ResolveAction /* <: AnyAction */, R
 
 object Config {
   @scala.inline
-  def apply[StartAction, ResolveAction, RejectAction, TReturn](
+  def apply[/* <: typings.redux.mod.AnyAction */ StartAction, /* <: typings.redux.mod.AnyAction */ ResolveAction, /* <: typings.redux.mod.AnyAction */ RejectAction, TReturn](
     reject: String | ActionMatcher,
     resolve: String | ActionMatcher,
     start: String,

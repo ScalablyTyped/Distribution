@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ExtendedAttributeRightHandSideString extends ExtendedAttributeRightHandSide {
+trait ExtendedAttributeRightHandSideString extends ExtendedAttributeRightHandSideBase {
   var `type`: string
   var value: String
 }

@@ -68,6 +68,7 @@ trait ReferenceAreaProps extends js.Object {
   var imageRendering: js.UndefOr[auto | optimizeSpeed | optimizeQuality | inherit] = js.undefined
   var isFront: js.UndefOr[Boolean] = js.undefined
   var kerning: js.UndefOr[Double | String] = js.undefined
+  var label: js.UndefOr[String | Double | ContentRenderer[_] | ReactElement] = js.undefined
   var letterSpacing: js.UndefOr[String] = js.undefined
   var lightingColor: js.UndefOr[String] = js.undefined
   var markerEnd: js.UndefOr[String] = js.undefined
@@ -155,6 +156,7 @@ object ReferenceAreaProps {
     imageRendering: auto | optimizeSpeed | optimizeQuality | inherit = null,
     isFront: js.UndefOr[Boolean] = js.undefined,
     kerning: Double | String = null,
+    label: String | Double | ContentRenderer[_] | ReactElement = null,
     letterSpacing: String = null,
     lightingColor: String = null,
     markerEnd: String = null,
@@ -239,6 +241,7 @@ object ReferenceAreaProps {
     if (imageRendering != null) __obj.updateDynamic("imageRendering")(imageRendering.asInstanceOf[js.Any])
     if (!js.isUndefined(isFront)) __obj.updateDynamic("isFront")(isFront.get.asInstanceOf[js.Any])
     if (kerning != null) __obj.updateDynamic("kerning")(kerning.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing.asInstanceOf[js.Any])
     if (lightingColor != null) __obj.updateDynamic("lightingColor")(lightingColor.asInstanceOf[js.Any])
     if (markerEnd != null) __obj.updateDynamic("markerEnd")(markerEnd.asInstanceOf[js.Any])

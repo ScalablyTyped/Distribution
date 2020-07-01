@@ -9,6 +9,7 @@ import typings.react.mod.Context
 import typings.react.mod.ElementType
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.FunctionComponent
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.PropsWithoutRef
 import typings.react.mod.RefAttributes
 import typings.react.mod.RefObject
@@ -17,6 +18,7 @@ import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.Partial
+import typings.std.Record
 import typings.std.TypedPropertyDescriptor
 import typings.std.Window
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
@@ -242,31 +244,31 @@ object mod extends js.Object {
   val FocusRects: FunctionComponent[RootRef] = js.native
   val IsFocusVisibleClassName: /* "ms-Fabric--isFocusVisible" */ String = js.native
   val SELECTION_CHANGE: /* "change" */ String = js.native
-  val anchorProperties: js.Array[String] = js.native
-  val audioProperties: js.Array[String] = js.native
-  val baseElementEvents: js.Array[String] = js.native
-  val baseElementProperties: js.Array[String] = js.native
-  val buttonProperties: js.Array[String] = js.native
-  val colGroupProperties: js.Array[String] = js.native
-  val colProperties: js.Array[String] = js.native
-  val divProperties: js.Array[String] = js.native
-  val formProperties: js.Array[String] = js.native
-  val htmlElementProperties: js.Array[String] = js.native
-  val iframeProperties: js.Array[String] = js.native
-  val imageProperties: js.Array[String] = js.native
-  val imgProperties: js.Array[String] = js.native
-  val inputProperties: js.Array[String] = js.native
-  val labelProperties: js.Array[String] = js.native
-  val liProperties: js.Array[String] = js.native
-  val olProperties: js.Array[String] = js.native
-  val optionProperties: js.Array[String] = js.native
-  val selectProperties: js.Array[String] = js.native
-  val tableProperties: js.Array[String] = js.native
-  val tdProperties: js.Array[String] = js.native
-  val textAreaProperties: js.Array[String] = js.native
-  val thProperties: js.Array[String] = js.native
-  val trProperties: js.Array[String] = js.native
-  val videoProperties: js.Array[String] = js.native
+  val anchorProperties: Record[String, Double] = js.native
+  val audioProperties: Record[String, Double] = js.native
+  val baseElementEvents: Record[String, Double] = js.native
+  val baseElementProperties: Record[String, Double] = js.native
+  val buttonProperties: Record[String, Double] = js.native
+  val colGroupProperties: Record[String, Double] = js.native
+  val colProperties: Record[String, Double] = js.native
+  val divProperties: Record[String, Double] = js.native
+  val formProperties: Record[String, Double] = js.native
+  val htmlElementProperties: Record[String, Double] = js.native
+  val iframeProperties: Record[String, Double] = js.native
+  val imageProperties: Record[String, Double] = js.native
+  val imgProperties: Record[String, Double] = js.native
+  val inputProperties: Record[String, Double] = js.native
+  val labelProperties: Record[String, Double] = js.native
+  val liProperties: Record[String, Double] = js.native
+  val olProperties: Record[String, Double] = js.native
+  val optionProperties: Record[String, Double] = js.native
+  val selectProperties: Record[String, Double] = js.native
+  val tableProperties: Record[String, Double] = js.native
+  val tdProperties: Record[String, Double] = js.native
+  val textAreaProperties: Record[String, Double] = js.native
+  val thProperties: Record[String, Double] = js.native
+  val trProperties: Record[String, Double] = js.native
+  val videoProperties: Record[String, Double] = js.native
   def addDirectionalKeyCode(which: Double): Unit = js.native
   def addElementAtIndex[T](array: js.Array[T], index: Double, itemToAdd: T): js.Array[T] = js.native
   def allowOverscrollOnElement(element: Null, events: typings.uifabricUtilities.eventGroupMod.EventGroup): Unit = js.native
@@ -322,6 +324,7 @@ object mod extends js.Object {
   def findElementRecursive(element: Null, matchFunction: js.Function1[/* element */ HTMLElement, Boolean]): HTMLElement | Null = js.native
   def findElementRecursive(element: HTMLElement, matchFunction: js.Function1[/* element */ HTMLElement, Boolean]): HTMLElement | Null = js.native
   def findIndex[T](array: js.Array[T], cb: js.Function2[/* item */ T, /* index */ Double, Boolean]): Double = js.native
+  def findIndex[T](array: js.Array[T], cb: js.Function2[/* item */ T, /* index */ Double, Boolean], fromIndex: Double): Double = js.native
   def findScrollableParent(): HTMLElement | Null = js.native
   def findScrollableParent(startingElement: HTMLElement): HTMLElement | Null = js.native
   def fitContentToBounds(options: IFitContentToBoundsOptions): ISize = js.native
@@ -363,8 +366,23 @@ object mod extends js.Object {
     includeElementsInFocusZones: Boolean,
     checkNode: Boolean
   ): HTMLElement | Null = js.native
-  def getNativeProps[T](props: js.Object, allowedPropNames: js.Array[String]): T = js.native
-  def getNativeProps[T](props: js.Object, allowedPropNames: js.Array[String], excludedPropNames: js.Array[String]): T = js.native
+  def getNativeElementProps[TAttributes /* <: HTMLAttributes[_] */](
+    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any,
+    props: js.Object
+  ): TAttributes = js.native
+  def getNativeElementProps[TAttributes /* <: HTMLAttributes[_] */](
+    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any,
+    props: js.Object,
+    excludedPropNames: js.Array[String]
+  ): TAttributes = js.native
+  def getNativeProps[T /* <: Record[String, _] */](props: Record[String, _], allowedPropNames: js.Array[String]): T = js.native
+  def getNativeProps[T /* <: Record[String, _] */](props: Record[String, _], allowedPropNames: js.Array[String], excludedPropNames: js.Array[String]): T = js.native
+  def getNativeProps[T /* <: Record[String, _] */](props: Record[String, _], allowedPropNames: Record[String, Double]): T = js.native
+  def getNativeProps[T /* <: Record[String, _] */](
+    props: Record[String, _],
+    allowedPropNames: Record[String, Double],
+    excludedPropNames: js.Array[String]
+  ): T = js.native
   def getNextElement(
     rootElement: HTMLElement,
     currentElement: Null,
@@ -470,6 +488,7 @@ object mod extends js.Object {
   def mergeSettings(oldSettings: ISettings, newSettings: ISettingsFunction): ISettings = js.native
   @JSName("merge")
   def merge_false[T](target: Partial[T], args: (js.UndefOr[Partial[T] | Null | `false`])*): T = js.native
+  def modalize(target: HTMLElement): js.Function0[Unit] = js.native
   def nullRender(): typings.react.mod.global.JSX.Element | Null = js.native
   def on(element: Element, eventName: String, callback: js.Function1[/* ev */ Event, Unit]): js.Function0[Unit] = js.native
   def on(

@@ -253,12 +253,12 @@ trait Route53 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteVPCAssociationAuthorizationResponse, Unit]
   ): Request[DeleteVPCAssociationAuthorizationResponse, AWSError] = js.native
   /**
-    * Disassociates a VPC from a Amazon Route 53 private hosted zone. Note the following:   You can't disassociate the last VPC from a private hosted zone.   You can't convert a private hosted zone into a public hosted zone.   You can submit a DisassociateVPCFromHostedZone request using either the account that created the hosted zone or the account that created the VPC.  
+    * Disassociates an Amazon Virtual Private Cloud (Amazon VPC) from an Amazon Route 53 private hosted zone. Note the following:   You can't disassociate the last Amazon VPC from a private hosted zone.   You can't convert a private hosted zone into a public hosted zone.   You can submit a DisassociateVPCFromHostedZone request using either the account that created the hosted zone or the account that created the Amazon VPC.   Some services, such as AWS Cloud Map and Amazon Elastic File System (Amazon EFS) automatically create hosted zones and associate VPCs with the hosted zones. A service can create a hosted zone using your account or using its own account. You can disassociate a VPC from a hosted zone only if the service created the hosted zone using your account. When you run DisassociateVPCFromHostedZone, if the hosted zone has a value for OwningAccount, you can use DisassociateVPCFromHostedZone. If the hosted zone has a value for OwningService, you can't use DisassociateVPCFromHostedZone.  
     */
   def disassociateVPCFromHostedZone(): Request[DisassociateVPCFromHostedZoneResponse, AWSError] = js.native
   def disassociateVPCFromHostedZone(callback: js.Function2[/* err */ AWSError, /* data */ DisassociateVPCFromHostedZoneResponse, Unit]): Request[DisassociateVPCFromHostedZoneResponse, AWSError] = js.native
   /**
-    * Disassociates a VPC from a Amazon Route 53 private hosted zone. Note the following:   You can't disassociate the last VPC from a private hosted zone.   You can't convert a private hosted zone into a public hosted zone.   You can submit a DisassociateVPCFromHostedZone request using either the account that created the hosted zone or the account that created the VPC.  
+    * Disassociates an Amazon Virtual Private Cloud (Amazon VPC) from an Amazon Route 53 private hosted zone. Note the following:   You can't disassociate the last Amazon VPC from a private hosted zone.   You can't convert a private hosted zone into a public hosted zone.   You can submit a DisassociateVPCFromHostedZone request using either the account that created the hosted zone or the account that created the Amazon VPC.   Some services, such as AWS Cloud Map and Amazon Elastic File System (Amazon EFS) automatically create hosted zones and associate VPCs with the hosted zones. A service can create a hosted zone using your account or using its own account. You can disassociate a VPC from a hosted zone only if the service created the hosted zone using your account. When you run DisassociateVPCFromHostedZone, if the hosted zone has a value for OwningAccount, you can use DisassociateVPCFromHostedZone. If the hosted zone has a value for OwningService, you can't use DisassociateVPCFromHostedZone.  
     */
   def disassociateVPCFromHostedZone(params: DisassociateVPCFromHostedZoneRequest): Request[DisassociateVPCFromHostedZoneResponse, AWSError] = js.native
   def disassociateVPCFromHostedZone(
@@ -540,6 +540,19 @@ trait Route53 extends Service {
     params: ListHostedZonesByNameRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListHostedZonesByNameResponse, Unit]
   ): Request[ListHostedZonesByNameResponse, AWSError] = js.native
+  /**
+    * Lists all the private hosted zones that a specified VPC is associated with, regardless of which AWS account or AWS service owns the hosted zones. The HostedZoneOwner structure in the response contains one of the following values:   An OwningAccount element, which contains the account number of either the current AWS account or another AWS account. Some services, such as AWS Cloud Map, create hosted zones using the current account.    An OwningService element, which identifies the AWS service that created and owns the hosted zone. For example, if a hosted zone was created by Amazon Elastic File System (Amazon EFS), the value of Owner is efs.amazonaws.com.   
+    */
+  def listHostedZonesByVPC(): Request[ListHostedZonesByVPCResponse, AWSError] = js.native
+  def listHostedZonesByVPC(callback: js.Function2[/* err */ AWSError, /* data */ ListHostedZonesByVPCResponse, Unit]): Request[ListHostedZonesByVPCResponse, AWSError] = js.native
+  /**
+    * Lists all the private hosted zones that a specified VPC is associated with, regardless of which AWS account or AWS service owns the hosted zones. The HostedZoneOwner structure in the response contains one of the following values:   An OwningAccount element, which contains the account number of either the current AWS account or another AWS account. Some services, such as AWS Cloud Map, create hosted zones using the current account.    An OwningService element, which identifies the AWS service that created and owns the hosted zone. For example, if a hosted zone was created by Amazon Elastic File System (Amazon EFS), the value of Owner is efs.amazonaws.com.   
+    */
+  def listHostedZonesByVPC(params: ListHostedZonesByVPCRequest): Request[ListHostedZonesByVPCResponse, AWSError] = js.native
+  def listHostedZonesByVPC(
+    params: ListHostedZonesByVPCRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListHostedZonesByVPCResponse, Unit]
+  ): Request[ListHostedZonesByVPCResponse, AWSError] = js.native
   /**
     * Lists the configurations for DNS query logging that are associated with the current AWS account or the configuration that is associated with a specified hosted zone. For more information about DNS query logs, see CreateQueryLoggingConfig. Additional information, including the format of DNS query logs, appears in Logging DNS Queries in the Amazon Route 53 Developer Guide.
     */

@@ -16,7 +16,7 @@ trait Options[Props, Exports /* <: js.Object */] extends js.Object
 
 object Options {
   @scala.inline
-  def OptionsWithoutRender[Props, Exports](
+  def OptionsWithoutRender[Props, /* <: js.Object */ Exports](
     loader: () => js.Promise[ComponentType[Props] | Default[Props]],
     loading: ComponentType[LoadingComponentProps],
     delay: js.UndefOr[Null | Double | `false`] = js.undefined,
@@ -32,7 +32,7 @@ object Options {
     __obj.asInstanceOf[Options[Props, Exports]]
   }
   @scala.inline
-  def OptionsWithRender[Props, Exports](
+  def OptionsWithRender[Props, /* <: js.Object */ Exports](
     loader: () => js.Promise[Exports],
     loading: ComponentType[LoadingComponentProps],
     render: (Exports, Props) => ReactNode,

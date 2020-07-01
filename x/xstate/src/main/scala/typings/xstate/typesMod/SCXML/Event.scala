@@ -73,7 +73,7 @@ trait Event[TEvent /* <: EventObject */] extends js.Object {
 
 object Event {
   @scala.inline
-  def apply[TEvent](
+  def apply[/* <: typings.xstate.typesMod.EventObject */ TEvent](
     DollarDollartype: scxml,
     data: TEvent,
     name: String,

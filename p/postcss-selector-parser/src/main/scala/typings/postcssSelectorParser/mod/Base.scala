@@ -58,7 +58,7 @@ trait Base[Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Contai
 
 object Base {
   @scala.inline
-  def apply[Value, ParentType](
+  def apply[/* <: js.UndefOr[java.lang.String] */ Value, /* <: js.UndefOr[typings.postcssSelectorParser.mod.Container[java.lang.String]] */ ParentType](
     appendToPropertyAndEscape: (String, js.Any, String) => Unit,
     clone: StringDictionary[js.Any] => Node,
     isAtPosition: (Double, Double) => js.UndefOr[Boolean],

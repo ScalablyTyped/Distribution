@@ -5,18 +5,10 @@ import typings.tstl.anon.PickILockablelockunlock
 import typings.tstl.anon.PickILockabletrylockunloc
 import typings.tstl.anon.PickITimedLockabletrylock
 import typings.tstl.anon.PickITimedLockabletrylockTrylockuntil
-import typings.tstl.uniqueLockMod.Closure
-import typings.tstl.uniqueLockMod.IMutex
+import typings.tstl.uniqueLockMod.UniqueLock.Closure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
-
-@JSImport("tstl", "UniqueLock")
-@js.native
-class UniqueLock[Mutex /* <: IMutex */] protected ()
-  extends typings.tstl.threadMod.UniqueLock[Mutex] {
-  def this(mutex: Mutex) = this()
-}
 
 @JSImport("tstl", "UniqueLock")
 @js.native

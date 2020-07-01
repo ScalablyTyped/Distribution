@@ -22,6 +22,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RopeGeometry extends MeshGeometry {
   /**
+    * The width (i.e., thickness) of the rope.
+    * @member {number} PIXI.RopeGeometry#_width
+    * @readOnly
+    */
+  val _width: Double = js.native
+  /**
     * An array of points that determine the rope
     * @member {PIXI.Point[]} PIXI.RopeGeometry#points
     */
@@ -34,7 +40,7 @@ trait RopeGeometry extends MeshGeometry {
   val textureScale: Double = js.native
   /**
     * The width (i.e., thickness) of the rope.
-    * @member {number} PIXI.RopeGeometry#width
+    * @member {number}
     * @readOnly
     */
   val width: Double = js.native

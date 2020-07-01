@@ -11,15 +11,15 @@ trait EndpointDetails extends js.Object {
     */
   var AddressAllocationIds: js.UndefOr[typings.awsSdk.transferMod.AddressAllocationIds] = js.native
   /**
-    * A list of subnet IDs that are required to host your file transfer protocol-enabled server endpoint in your VPC.
+    * A list of subnet IDs that are required to host your file transfer protocol-enabled server endpoint in your VPC.  This property can only be used when EndpointType is set to VPC. 
     */
   var SubnetIds: js.UndefOr[typings.awsSdk.transferMod.SubnetIds] = js.native
   /**
-    * The ID of the VPC endpoint.
+    * The ID of the VPC endpoint.  This property can only be used when EndpointType is set to VPC_ENDPOINT. 
     */
   var VpcEndpointId: js.UndefOr[typings.awsSdk.transferMod.VpcEndpointId] = js.native
   /**
-    * The VPC ID of the VPC in which a file transfer protocol-enabled server's endpoint will be hosted.
+    * The VPC ID of the VPC in which a file transfer protocol-enabled server's endpoint will be hosted.  This property can only be used when EndpointType is set to VPC. 
     */
   var VpcId: js.UndefOr[typings.awsSdk.transferMod.VpcId] = js.native
 }

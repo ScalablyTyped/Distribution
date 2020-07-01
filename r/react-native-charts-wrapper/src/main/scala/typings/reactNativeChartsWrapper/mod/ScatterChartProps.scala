@@ -68,6 +68,7 @@ object ScatterChartProps {
     drawBorders: js.UndefOr[Boolean] = js.undefined,
     drawGridBackground: js.UndefOr[Boolean] = js.undefined,
     extraOffsets: Offsets = null,
+    focusable: js.UndefOr[Boolean] = js.undefined,
     gridBackgroundColor: js.UndefOr[Double] = js.undefined,
     group: String = null,
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
@@ -165,6 +166,7 @@ object ScatterChartProps {
     if (!js.isUndefined(drawBorders)) __obj.updateDynamic("drawBorders")(drawBorders.get.asInstanceOf[js.Any])
     if (!js.isUndefined(drawGridBackground)) __obj.updateDynamic("drawGridBackground")(drawGridBackground.get.asInstanceOf[js.Any])
     if (extraOffsets != null) __obj.updateDynamic("extraOffsets")(extraOffsets.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(gridBackgroundColor)) __obj.updateDynamic("gridBackgroundColor")(gridBackgroundColor.get.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.get.asInstanceOf[js.Any])

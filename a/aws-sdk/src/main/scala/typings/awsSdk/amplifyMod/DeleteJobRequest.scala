@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DeleteJobRequest extends js.Object {
   /**
-    *  Unique Id for an Amplify App. 
+    *  The unique ID for an Amplify app. 
     */
   var appId: AppId = js.native
   /**
-    *  Name for the branch, for the Job. 
+    *  The name for the branch, for the job. 
     */
   var branchName: BranchName = js.native
   /**
-    *  Unique Id for the Job. 
+    *  The unique ID for the job. 
     */
   var jobId: JobId = js.native
 }

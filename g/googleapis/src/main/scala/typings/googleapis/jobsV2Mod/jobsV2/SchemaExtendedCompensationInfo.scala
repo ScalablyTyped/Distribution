@@ -56,9 +56,9 @@ object SchemaExtendedCompensationInfo {
   ): SchemaExtendedCompensationInfo = {
     val __obj = js.Dynamic.literal()
     if (annualizedBaseCompensationRange != null) __obj.updateDynamic("annualizedBaseCompensationRange")(annualizedBaseCompensationRange.asInstanceOf[js.Any])
-    if (!js.isUndefined(annualizedBaseCompensationUnspecified)) __obj.updateDynamic("annualizedBaseCompensationUnspecified")(annualizedBaseCompensationUnspecified.asInstanceOf[js.Any])
+    if (!js.isUndefined(annualizedBaseCompensationUnspecified)) __obj.updateDynamic("annualizedBaseCompensationUnspecified")(annualizedBaseCompensationUnspecified.get.asInstanceOf[js.Any])
     if (annualizedTotalCompensationRange != null) __obj.updateDynamic("annualizedTotalCompensationRange")(annualizedTotalCompensationRange.asInstanceOf[js.Any])
-    if (!js.isUndefined(annualizedTotalCompensationUnspecified)) __obj.updateDynamic("annualizedTotalCompensationUnspecified")(annualizedTotalCompensationUnspecified.asInstanceOf[js.Any])
+    if (!js.isUndefined(annualizedTotalCompensationUnspecified)) __obj.updateDynamic("annualizedTotalCompensationUnspecified")(annualizedTotalCompensationUnspecified.get.asInstanceOf[js.Any])
     if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExtendedCompensationInfo]

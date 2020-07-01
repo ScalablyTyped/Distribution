@@ -34,12 +34,12 @@ object SchemaAction {
   def apply(
     commands: js.Array[String] = null,
     envVariables: js.Array[SchemaEnvVariable] = null,
-    timeoutMilliSeconds: Int | Double = null
+    timeoutMilliSeconds: js.UndefOr[Double] = js.undefined
   ): SchemaAction = {
     val __obj = js.Dynamic.literal()
     if (commands != null) __obj.updateDynamic("commands")(commands.asInstanceOf[js.Any])
     if (envVariables != null) __obj.updateDynamic("envVariables")(envVariables.asInstanceOf[js.Any])
-    if (timeoutMilliSeconds != null) __obj.updateDynamic("timeoutMilliSeconds")(timeoutMilliSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutMilliSeconds)) __obj.updateDynamic("timeoutMilliSeconds")(timeoutMilliSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAction]
   }
 }

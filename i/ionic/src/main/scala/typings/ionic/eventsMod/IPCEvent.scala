@@ -13,7 +13,7 @@ trait IPCEvent[E /* <: String */, D /* <: js.Object */] extends js.Object {
 
 object IPCEvent {
   @scala.inline
-  def apply[E, D](data: D, event: E, `type`: event): IPCEvent[E, D] = {
+  def apply[/* <: java.lang.String */ E, /* <: js.Object */ D](data: D, event: E, `type`: event): IPCEvent[E, D] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPCEvent[E, D]]

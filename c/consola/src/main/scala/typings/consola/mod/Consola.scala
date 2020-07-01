@@ -1,5 +1,6 @@
 package typings.consola.mod
 
+import typings.node.NodeJS.WritableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,8 +10,8 @@ import scala.scalajs.js.annotation._
 class Consola protected () extends js.Object {
   def this(options: ConsolaOptions) = this()
   var level: LogLevel = js.native
-  val stderr: js.Any = js.native
-  val stdout: js.Any = js.native
+  val stderr: WritableStream = js.native
+  val stdout: WritableStream = js.native
   // Reporter
   def addReporter(reporter: ConsolaReporter): Consola = js.native
   def clear(): Consola = js.native

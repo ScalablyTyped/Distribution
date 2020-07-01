@@ -2,7 +2,7 @@ package typings.antd.transferMod
 
 import typings.antd.anon.SourceSelectedKeys
 import typings.antd.anon.TypeofList
-import typings.antd.anon.TypeofSearchInstantiable
+import typings.antd.anon.TypeofSearch
 import typings.antd.operationMod.TransferOperationProps
 import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
@@ -20,11 +20,11 @@ class default protected () extends Transfer {
 @js.native
 object default extends js.Object {
   var List: TypeofList = js.native
-  var Search: TypeofSearchInstantiable = js.native
+  var Search: TypeofSearch = js.native
   var defaultProps: typings.antd.anon.ListStyle = js.native
   def Operation(
-    hasDisabledMoveToLeftMoveToRightLeftArrowTextRightArrowTextLeftActiveRightActiveClassNameStyleDirection: TransferOperationProps
+    hasDisabledMoveToLeftMoveToRightLeftArrowTextRightArrowTextLeftActiveRightActiveClassNameStyleDirectionOneWay: TransferOperationProps
   ): Element = js.native
-  def getDerivedStateFromProps(nextProps: TransferProps): SourceSelectedKeys | Null = js.native
+  def getDerivedStateFromProps(hasSelectedKeysTargetKeysPaginationChildren: TransferProps): SourceSelectedKeys | Null = js.native
 }
 

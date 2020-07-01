@@ -38,8 +38,6 @@ class WithRenderer[O] ()
     */
   /* CompleteClass */
   override val previousElementSibling: Element | Null = js.native
-  // getter for turning of ShadowDOM
-  val renderRoot: js.UndefOr[this.type | Mixed] = js.native
   // called after render
   var rendered: js.UndefOr[js.Function0[Unit]] = js.native
   // called before render
@@ -77,6 +75,8 @@ class WithRenderer[O] ()
   def render(): O = js.native
   def render(props: Mixed): O = js.native
   def render(props: Mixed, state: Mixed): O = js.native
+  // getter for turning off ShadowDOM
+  def renderRoot: this.type | Mixed = js.native
   // Default renderer, returns string returned from render and adds it to root via innerHTML
   // -> override to get own renderer
   def renderer(root: Element, html: js.Function1[/* props */ js.UndefOr[Mixed], O]): Unit = js.native

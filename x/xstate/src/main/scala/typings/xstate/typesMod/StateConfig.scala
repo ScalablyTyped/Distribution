@@ -28,7 +28,7 @@ trait StateConfig[TContext, TEvent /* <: EventObject */] extends js.Object {
 
 object StateConfig {
   @scala.inline
-  def apply[TContext, TEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     _event: typings.xstate.typesMod.SCXML.Event[TEvent],
     children: Record[String, Actor[_, AnyEventObject]],
     configuration: js.Array[StateNode[TContext, _, TEvent, _]],

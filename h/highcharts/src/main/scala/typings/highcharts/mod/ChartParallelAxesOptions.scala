@@ -125,7 +125,7 @@ trait ChartParallelAxesOptions extends js.Object {
     * In styled mode, the line stroke is given in the `.highcharts-axis-line`
     * or `.highcharts-xaxis-line` class.
     */
-  var lineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var lineColor: js.UndefOr[ColorType] = js.undefined
   /**
     * (Highcharts) The width of the line marking the axis itself.
     *
@@ -225,7 +225,7 @@ trait ChartParallelAxesOptions extends js.Object {
     * minRange of 1 means that the axis can be zoomed to 10-100, 100-1000,
     * 1000-10000 etc.
     *
-    * Note that the `minPadding`, `maxPadding`, `startOnTick` and `endOnTick`
+    * **Note**: The `minPadding`, `maxPadding`, `startOnTick` and `endOnTick`
     * settings also affect how the extremes of the axis are computed.
     */
   var minRange: js.UndefOr[Double] = js.undefined
@@ -239,7 +239,7 @@ trait ChartParallelAxesOptions extends js.Object {
   /**
     * (Highcharts) Color for the minor tick marks.
     */
-  var minorTickColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var minorTickColor: js.UndefOr[ColorType] = js.undefined
   /**
     * (Highcharts) Specific tick interval in axis units for the minor ticks. On
     * a linear axis, if `"auto"`, the minor tick interval is calculated as a
@@ -392,7 +392,7 @@ trait ChartParallelAxesOptions extends js.Object {
     *
     * In styled mode, the stroke is given in the `.highcharts-tick` class.
     */
-  var tickColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var tickColor: js.UndefOr[ColorType] = js.undefined
   /**
     * (Highcharts) The interval of the tick marks in axis units. When
     * `undefined`, the tick interval is computed to approximately follow the
@@ -555,7 +555,7 @@ object ChartParallelAxesOptions {
     height: Double | String = null,
     labels: ChartParallelAxesLabelsOptions = null,
     left: Double | String = null,
-    lineColor: ColorString | GradientColorObject | PatternObject = null,
+    lineColor: ColorType = null,
     lineWidth: js.UndefOr[Double] = js.undefined,
     linkedTo: js.UndefOr[Double] = js.undefined,
     margin: js.UndefOr[Double] = js.undefined,
@@ -568,7 +568,7 @@ object ChartParallelAxesOptions {
     minPadding: js.UndefOr[Double] = js.undefined,
     minRange: js.UndefOr[Double] = js.undefined,
     minTickInterval: js.UndefOr[Double] = js.undefined,
-    minorTickColor: ColorString | GradientColorObject | PatternObject = null,
+    minorTickColor: ColorType = null,
     minorTickInterval: js.UndefOr[Null | Double | String] = js.undefined,
     minorTickLength: js.UndefOr[Double] = js.undefined,
     minorTickPosition: OptionsMinorTickPositionValue = null,
@@ -590,7 +590,7 @@ object ChartParallelAxesOptions {
     startOnTick: js.UndefOr[Boolean] = js.undefined,
     staticScale: js.UndefOr[Double] = js.undefined,
     tickAmount: js.UndefOr[Double] = js.undefined,
-    tickColor: ColorString | GradientColorObject | PatternObject = null,
+    tickColor: ColorType = null,
     tickInterval: js.UndefOr[Double] = js.undefined,
     tickLength: js.UndefOr[Double] = js.undefined,
     tickPixelInterval: js.UndefOr[Double] = js.undefined,

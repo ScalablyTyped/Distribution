@@ -53,7 +53,7 @@ trait DeviceData extends js.Object {
   /**
     * The name of the room associated with a device.
     */
-  var RoomName: js.UndefOr[typings.awsSdk.alexaforbusinessMod.RoomName] = js.native
+  var RoomName: js.UndefOr[DeviceRoomName] = js.native
   /**
     * The software version of a device.
     */
@@ -74,7 +74,7 @@ object DeviceData {
     NetworkProfileArn: Arn = null,
     NetworkProfileName: NetworkProfileName = null,
     RoomArn: Arn = null,
-    RoomName: RoomName = null,
+    RoomName: DeviceRoomName = null,
     SoftwareVersion: SoftwareVersion = null
   ): DeviceData = {
     val __obj = js.Dynamic.literal()

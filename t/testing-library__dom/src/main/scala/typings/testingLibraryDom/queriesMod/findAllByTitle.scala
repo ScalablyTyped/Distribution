@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@testing-library/dom/queries", "findAllByTitle")
+@JSImport("@testing-library/dom/types/queries", "findAllByTitle")
 @js.native
 object findAllByTitle extends TopLevel[FindAllByBoundAttribute]
 

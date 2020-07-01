@@ -65,9 +65,11 @@ trait TdHTMLAttributes[T] extends HTMLAttributes[T] {
   var align: js.UndefOr[left | center | right | justify | char] = js.undefined
   var colSpan: js.UndefOr[Double] = js.undefined
   var headers: js.UndefOr[String] = js.undefined
+  var height: js.UndefOr[Double | String] = js.undefined
   var rowSpan: js.UndefOr[Double] = js.undefined
   var scope: js.UndefOr[String] = js.undefined
   var valign: js.UndefOr[top | middle | bottom | baseline] = js.undefined
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 
 object TdHTMLAttributes {
@@ -141,6 +143,7 @@ object TdHTMLAttributes {
     dir: String = null,
     draggable: js.UndefOr[Booleanish] = js.undefined,
     headers: String = null,
+    height: Double | String = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     inlist: js.Any = null,
@@ -252,7 +255,8 @@ object TdHTMLAttributes {
     typeof: String = null,
     unselectable: on | off = null,
     valign: top | middle | bottom | baseline = null,
-    vocab: String = null
+    vocab: String = null,
+    width: Double | String = null
   ): TdHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     if (abbr != null) __obj.updateDynamic("abbr")(abbr.asInstanceOf[js.Any])
@@ -323,6 +327,7 @@ object TdHTMLAttributes {
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
@@ -435,6 +440,7 @@ object TdHTMLAttributes {
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (valign != null) __obj.updateDynamic("valign")(valign.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[TdHTMLAttributes[T]]
   }
 }

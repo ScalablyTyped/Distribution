@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashFlowRight extends js.Object {
+trait LodashFlowRight extends LodashConvertible {
   def apply(
     f7: js.Function1[/* a */ js.Any, _],
     f6: js.Function1[/* a */ js.Any, _],

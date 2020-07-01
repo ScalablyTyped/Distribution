@@ -22,7 +22,7 @@ package object mod {
   /**
     * Gets the multi-item query builder type for a query builder.
     */
-  type ArrayQueryBuilder[QB /* <: typings.objection.mod.AnyQueryBuilder */] = /* import warning: importer.ImportType#apply Failed type conversion: QB['ArrayQueryBuilderType'] */ js.Any
+  type ArrayQueryBuilder[T /* <: typings.objection.anon.ArrayQueryBuilderType */] = /* import warning: importer.ImportType#apply Failed type conversion: T['ArrayQueryBuilderType'] */ js.Any
   type ArrayQueryBuilderThunk[M /* <: typings.objection.mod.Model */] = js.Function0[
     typings.objection.mod.ArrayQueryBuilder[typings.objection.mod.QueryBuilderType[M]]
   ]
@@ -117,7 +117,7 @@ package object mod {
     * A Pojo version of model.
     */
   type ModelObject[T /* <: typings.objection.mod.Model */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in objection.objection.NonFunctionPropertyNames<T> ]: T[K]}
+  {[ K in std.Exclude<objection.objection.NonFunctionPropertyNames<T>, 'QueryBuilderType'> ]: T[K]}
     */ typings.objection.objectionStrings.ModelObject with org.scalablytyped.runtime.TopLevel[T]
   /**
     * Extracts the property names (excluding relations) of a model class.
@@ -135,7 +135,7 @@ package object mod {
   /**
     * Gets the model type from a query builder type.
     */
-  type ModelType[QB /* <: typings.objection.mod.AnyQueryBuilder */] = /* import warning: importer.ImportType#apply Failed type conversion: QB['ModelType'] */ js.Any
+  type ModelType[T /* <: typings.objection.anon.ModelType */] = /* import warning: importer.ImportType#apply Failed type conversion: T['ModelType'] */ js.Any
   type Modifier[QB /* <: typings.objection.mod.AnyQueryBuilder */] = typings.objection.mod.ModifierFunction[QB] | java.lang.String | js.Array[java.lang.String] | (typings.std.Record[
     java.lang.String, 
     typings.objection.mod.Expression[typings.objection.mod.PrimitiveValue]
@@ -159,7 +159,7 @@ package object mod {
   /**
     * Gets the number query builder type for a query builder.
     */
-  type NumberQueryBuilder[QB /* <: typings.objection.mod.AnyQueryBuilder */] = /* import warning: importer.ImportType#apply Failed type conversion: QB['NumberQueryBuilderType'] */ js.Any
+  type NumberQueryBuilder[T /* <: typings.objection.anon.NumberQueryBuilderType */] = /* import warning: importer.ImportType#apply Failed type conversion: T['NumberQueryBuilderType'] */ js.Any
   type OnBuildKnexCallback[QB /* <: typings.objection.mod.AnyQueryBuilder */] = js.ThisFunction2[
     /* this */ QB, 
     /* knexQuery */ typings.knex.mod.QueryBuilder[js.Any, js.Any], 
@@ -176,7 +176,7 @@ package object mod {
   /**
     * Gets the page query builder type for a query builder.
     */
-  type PageQueryBuilder[QB /* <: typings.objection.mod.AnyQueryBuilder */] = /* import warning: importer.ImportType#apply Failed type conversion: QB['PageQueryBuilderType'] */ js.Any
+  type PageQueryBuilder[T /* <: typings.objection.anon.PageQueryBuilderType */] = /* import warning: importer.ImportType#apply Failed type conversion: T['PageQueryBuilderType'] */ js.Any
   /**
     * Just like PartialModelObject but this is applied recursively to relations.
     */
@@ -200,7 +200,7 @@ package object mod {
   /**
     * Gets the query builder type for a model type.
     */
-  type QueryBuilderType[M /* <: typings.objection.mod.Model */] = /* import warning: importer.ImportType#apply Failed type conversion: M['QueryBuilderType'] */ js.Any
+  type QueryBuilderType[T /* <: typings.objection.anon.QueryBuilderType */] = /* import warning: importer.ImportType#apply Failed type conversion: T['QueryBuilderType'] */ js.Any
   type RawBuilder = typings.objection.mod.Aliasable
   type RawFunction = typings.objection.mod.RawInterface[typings.objection.mod.RawBuilder]
   type RawInterface[R] = js.Function2[/* sql */ java.lang.String, /* repeated */ js.Any, R]
@@ -226,7 +226,7 @@ package object mod {
   /**
     * Gets the result type from a query builder type.
     */
-  type ResultType[QB /* <: typings.objection.mod.AnyQueryBuilder */] = /* import warning: importer.ImportType#apply Failed type conversion: QB['ResultType'] */ js.Any
+  type ResultType[T /* <: typings.objection.anon.ResultType */] = /* import warning: importer.ImportType#apply Failed type conversion: T['ResultType'] */ js.Any
   type ReturningMethod = js.ThisFunction1[
     /* this */ typings.objection.mod.AnyQueryBuilder, 
     /* column */ java.lang.String | js.Array[java.lang.String], 
@@ -245,7 +245,7 @@ package object mod {
   /**
     * Gets the single item query builder type for a query builder.
     */
-  type SingleQueryBuilder[QB /* <: typings.objection.mod.AnyQueryBuilder */] = /* import warning: importer.ImportType#apply Failed type conversion: QB['SingleQueryBuilderType'] */ js.Any
+  type SingleQueryBuilder[T /* <: typings.objection.anon.SingleQueryBuilderType */] = /* import warning: importer.ImportType#apply Failed type conversion: T['SingleQueryBuilderType'] */ js.Any
   type SnakeCaseMappersFactory = js.Function1[
     /* options */ js.UndefOr[typings.objection.mod.SnakeCaseMappersOptions], 
     typings.objection.mod.ColumnNameMappers

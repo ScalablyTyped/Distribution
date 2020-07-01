@@ -67,6 +67,23 @@ trait ChartOptions extends js.Object {
     */
   var dataPointMaxWidth: js.UndefOr[Double] = js.undefined
   /**
+    * dataPointMinWidth sets the minimum width of dataPoints in column / bar, ohlc and candlestick, charts.
+    * This allows you to set a minimum limit on the width of dataPoints so that they don’t become very thin when there are too many dataPoints.
+    * At the same time, when the number of dataPoints decrease, chart increase their width automatically.
+    * Default : 1.
+    * Example : 2, 10, 25, etc.
+    */
+  var dataPointMinWidth: js.UndefOr[Double] = js.undefined
+  /**
+    * dataPointWidth sets the width of dataPoints in column / bar, ohlc and candlestick, charts.
+    * This allows you to fix the width of dataPoints such that their width doesn’t change when the total number of dataPoints varies.
+    * At the same time, when the number of dataPoints increase, it can lead to overlap if dataPointWidth is not set properly.
+    * This allows you to set the width of dataPoints.
+    * Default : Automatically calculated based on the chart size.
+    * Example : 10, 20, 30, etc.
+    */
+  var dataPointWidth: js.UndefOr[Double] = js.undefined
+  /**
     * Setting exportEnabled to true enables the export feature. As of now JPG & PNG formats are supported. Export feature is available in all Chart Types.
     * Default: false
     * Options: true, false
@@ -149,6 +166,8 @@ object ChartOptions {
     colorSet: String = null,
     culture: String = null,
     dataPointMaxWidth: js.UndefOr[Double] = js.undefined,
+    dataPointMinWidth: js.UndefOr[Double] = js.undefined,
+    dataPointWidth: js.UndefOr[Double] = js.undefined,
     exportEnabled: js.UndefOr[Boolean] = js.undefined,
     exportFileName: String = null,
     height: js.UndefOr[Double] = js.undefined,
@@ -171,6 +190,8 @@ object ChartOptions {
     if (colorSet != null) __obj.updateDynamic("colorSet")(colorSet.asInstanceOf[js.Any])
     if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
     if (!js.isUndefined(dataPointMaxWidth)) __obj.updateDynamic("dataPointMaxWidth")(dataPointMaxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataPointMinWidth)) __obj.updateDynamic("dataPointMinWidth")(dataPointMinWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataPointWidth)) __obj.updateDynamic("dataPointWidth")(dataPointWidth.get.asInstanceOf[js.Any])
     if (!js.isUndefined(exportEnabled)) __obj.updateDynamic("exportEnabled")(exportEnabled.get.asInstanceOf[js.Any])
     if (exportFileName != null) __obj.updateDynamic("exportFileName")(exportFileName.asInstanceOf[js.Any])
     if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])

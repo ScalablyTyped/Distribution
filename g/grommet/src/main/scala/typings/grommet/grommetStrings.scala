@@ -1,6 +1,7 @@
 package typings.grommet
 
 import typings.grommet.announceContextMod.AnnounceMode
+import typings.grommet.dataTableMod.ColumnSizeType
 import typings.grommet.diagramMod.DiagramConnectionAnchor
 import typings.grommet.diagramMod.DiagramConnectionType
 import typings.grommet.listMod.SideType
@@ -34,13 +35,19 @@ object grommetStrings {
   sealed trait `12` extends js.Object
   
   @js.native
-  sealed trait `1Slash2` extends _BasisType
+  sealed trait `1Slash2`
+    extends ColumnSizeType
+       with _BasisType
   
   @js.native
-  sealed trait `1Slash3` extends _BasisType
+  sealed trait `1Slash3`
+    extends ColumnSizeType
+       with _BasisType
   
   @js.native
-  sealed trait `1Slash4` extends _BasisType
+  sealed trait `1Slash4`
+    extends ColumnSizeType
+       with _BasisType
   
   @js.native
   sealed trait `2` extends js.Object
@@ -49,16 +56,22 @@ object grommetStrings {
   sealed trait `24` extends js.Object
   
   @js.native
-  sealed trait `2Slash3` extends _BasisType
+  sealed trait `2Slash3`
+    extends ColumnSizeType
+       with _BasisType
   
   @js.native
-  sealed trait `2Slash4` extends _BasisType
+  sealed trait `2Slash4`
+    extends ColumnSizeType
+       with _BasisType
   
   @js.native
   sealed trait `3` extends js.Object
   
   @js.native
-  sealed trait `3Slash4` extends _BasisType
+  sealed trait `3Slash4`
+    extends ColumnSizeType
+       with _BasisType
   
   @js.native
   sealed trait `4` extends js.Object
@@ -244,6 +257,9 @@ object grommetStrings {
        with DiagramConnectionAnchor
        with JustifyContentType
        with TextAlignType
+  
+  @js.native
+  sealed trait checked extends js.Object
   
   @js.native
   sealed trait circle extends _PolymorphicType
@@ -601,6 +617,7 @@ object grommetStrings {
   @js.native
   sealed trait large
     extends EdgeSizeType
+       with ColumnSizeType
        with _BasisType
        with _BoxSizeType
        with _ElevationType
@@ -655,6 +672,7 @@ object grommetStrings {
   @js.native
   sealed trait medium
     extends EdgeSizeType
+       with ColumnSizeType
        with _BasisType
        with _BoxSizeType
        with _ElevationType
@@ -723,6 +741,9 @@ object grommetStrings {
   
   @js.native
   sealed trait ol extends _PolymorphicType
+  
+  @js.native
+  sealed trait onChange extends js.Object
   
   @js.native
   sealed trait onSelect extends js.Object
@@ -823,6 +844,12 @@ object grommetStrings {
        with SideType
   
   @js.native
+  sealed trait rotateLeft extends js.Object
+  
+  @js.native
+  sealed trait rotateRight extends js.Object
+  
+  @js.native
   sealed trait row extends js.Object
   
   @js.native
@@ -894,6 +921,7 @@ object grommetStrings {
   @js.native
   sealed trait small
     extends EdgeSizeType
+       with ColumnSizeType
        with _BasisType
        with _BoxSizeType
        with _ElevationType
@@ -1062,6 +1090,7 @@ object grommetStrings {
   @js.native
   sealed trait xlarge
     extends EdgeSizeType
+       with ColumnSizeType
        with _BasisType
        with _BoxSizeType
        with _ElevationType
@@ -1231,6 +1260,8 @@ object grommetStrings {
   def caption: caption = "caption".asInstanceOf[caption]
   @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
+  def checked: checked = "checked".asInstanceOf[checked]
   @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
   @scala.inline
@@ -1530,6 +1561,8 @@ object grommetStrings {
   @scala.inline
   def ol: ol = "ol".asInstanceOf[ol]
   @scala.inline
+  def onChange: onChange = "onChange".asInstanceOf[onChange]
+  @scala.inline
   def onSelect: onSelect = "onSelect".asInstanceOf[onSelect]
   @scala.inline
   def optgroup: optgroup = "optgroup".asInstanceOf[optgroup]
@@ -1593,6 +1626,10 @@ object grommetStrings {
   def ridge: ridge = "ridge".asInstanceOf[ridge]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
+  def rotateLeft: rotateLeft = "rotateLeft".asInstanceOf[rotateLeft]
+  @scala.inline
+  def rotateRight: rotateRight = "rotateRight".asInstanceOf[rotateRight]
   @scala.inline
   def row: row = "row".asInstanceOf[row]
   @scala.inline

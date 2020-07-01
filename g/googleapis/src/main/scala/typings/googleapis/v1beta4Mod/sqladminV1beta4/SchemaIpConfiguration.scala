@@ -42,9 +42,9 @@ object SchemaIpConfiguration {
   ): SchemaIpConfiguration = {
     val __obj = js.Dynamic.literal()
     if (authorizedNetworks != null) __obj.updateDynamic("authorizedNetworks")(authorizedNetworks.asInstanceOf[js.Any])
-    if (!js.isUndefined(ipv4Enabled)) __obj.updateDynamic("ipv4Enabled")(ipv4Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(ipv4Enabled)) __obj.updateDynamic("ipv4Enabled")(ipv4Enabled.get.asInstanceOf[js.Any])
     if (privateNetwork != null) __obj.updateDynamic("privateNetwork")(privateNetwork.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireSsl)) __obj.updateDynamic("requireSsl")(requireSsl.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireSsl)) __obj.updateDynamic("requireSsl")(requireSsl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIpConfiguration]
   }
 }

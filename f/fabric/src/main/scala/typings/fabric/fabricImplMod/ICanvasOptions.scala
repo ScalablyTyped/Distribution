@@ -81,6 +81,12 @@ trait ICanvasOptions extends IStaticCanvasOptions {
     */
   var freeDrawingCursor: js.UndefOr[String] = js.undefined
   /**
+    * Canvas height
+    * @type number
+    * @default
+    */
+  var height: js.UndefOr[Double] = js.undefined
+  /**
     * Default cursor value used when hovering over an object on canvas
     */
   var hoverCursor: js.UndefOr[String] = js.undefined
@@ -207,6 +213,12 @@ trait ICanvasOptions extends IStaticCanvasOptions {
     * @type Boolean
     */
   var uniScaleTransform: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Canvas width
+    * @type number
+    * @default
+    */
+  var width: js.UndefOr[Double] = js.undefined
 }
 
 object ICanvasOptions {
@@ -231,6 +243,7 @@ object ICanvasOptions {
     fireMiddleClick: js.UndefOr[Boolean] = js.undefined,
     fireRightClick: js.UndefOr[Boolean] = js.undefined,
     freeDrawingCursor: String = null,
+    height: js.UndefOr[Double] = js.undefined,
     hoverCursor: String = null,
     imageSmoothingEnabled: js.UndefOr[Boolean] = js.undefined,
     includeDefaultValues: js.UndefOr[Boolean] = js.undefined,
@@ -264,7 +277,8 @@ object ICanvasOptions {
     uniScaleKey: String = null,
     uniScaleTransform: js.UndefOr[Boolean] = js.undefined,
     viewportTransform: js.Array[Double] = null,
-    vptCoords: Tl = null
+    vptCoords: Tl = null,
+    width: js.UndefOr[Double] = js.undefined
   ): ICanvasOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowTouchScrolling)) __obj.updateDynamic("allowTouchScrolling")(allowTouchScrolling.get.asInstanceOf[js.Any])
@@ -286,6 +300,7 @@ object ICanvasOptions {
     if (!js.isUndefined(fireMiddleClick)) __obj.updateDynamic("fireMiddleClick")(fireMiddleClick.get.asInstanceOf[js.Any])
     if (!js.isUndefined(fireRightClick)) __obj.updateDynamic("fireRightClick")(fireRightClick.get.asInstanceOf[js.Any])
     if (freeDrawingCursor != null) __obj.updateDynamic("freeDrawingCursor")(freeDrawingCursor.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (hoverCursor != null) __obj.updateDynamic("hoverCursor")(hoverCursor.asInstanceOf[js.Any])
     if (!js.isUndefined(imageSmoothingEnabled)) __obj.updateDynamic("imageSmoothingEnabled")(imageSmoothingEnabled.get.asInstanceOf[js.Any])
     if (!js.isUndefined(includeDefaultValues)) __obj.updateDynamic("includeDefaultValues")(includeDefaultValues.get.asInstanceOf[js.Any])
@@ -320,6 +335,7 @@ object ICanvasOptions {
     if (!js.isUndefined(uniScaleTransform)) __obj.updateDynamic("uniScaleTransform")(uniScaleTransform.get.asInstanceOf[js.Any])
     if (viewportTransform != null) __obj.updateDynamic("viewportTransform")(viewportTransform.asInstanceOf[js.Any])
     if (vptCoords != null) __obj.updateDynamic("vptCoords")(vptCoords.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICanvasOptions]
   }
 }

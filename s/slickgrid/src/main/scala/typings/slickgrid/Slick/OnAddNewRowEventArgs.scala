@@ -11,7 +11,7 @@ trait OnAddNewRowEventArgs[T /* <: SlickData */] extends GridEventArgs[T] {
 
 object OnAddNewRowEventArgs {
   @scala.inline
-  def apply[T](column: Column[T], grid: Grid[T], item: T): OnAddNewRowEventArgs[T] = {
+  def apply[/* <: typings.slickgrid.Slick.SlickData */ T](column: Column[T], grid: Grid[T], item: T): OnAddNewRowEventArgs[T] = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnAddNewRowEventArgs[T]]
   }

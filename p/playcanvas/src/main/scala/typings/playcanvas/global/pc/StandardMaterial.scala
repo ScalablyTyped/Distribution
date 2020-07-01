@@ -239,6 +239,8 @@ import scala.scalajs.js.annotation._
   * skyboxIntensity: if reflected skybox intensity should be modulated.
   * useTexCubeLod: if textureCubeLodEXT function should be used to read prefiltered cubemaps. Usually true of iOS, false on other devices due to quality/performance balance.
   * useInstancing: if hardware instancing compatible shader should be generated. Transform is read from per-instance {@link pc.VertexBuffer} instead of shader's uniforms.
+  * useMorphPosition: if morphing code should be generated to morph positions.
+  * useMorphNormal: if morphing code should be generated to morph normals.
   */
 @JSGlobal("pc.StandardMaterial")
 @js.native

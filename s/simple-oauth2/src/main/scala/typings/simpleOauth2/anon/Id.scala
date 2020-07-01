@@ -17,7 +17,7 @@ trait Id[ClientIdName /* <: String */] extends js.Object {
 
 object Id {
   @scala.inline
-  def apply[ClientIdName](id: String, secret: String, idParamName: ClientIdName = null, secretParamName: String = null): Id[ClientIdName] = {
+  def apply[/* <: java.lang.String */ ClientIdName](id: String, secret: String, idParamName: ClientIdName = null, secretParamName: String = null): Id[ClientIdName] = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
     if (idParamName != null) __obj.updateDynamic("idParamName")(idParamName.asInstanceOf[js.Any])
     if (secretParamName != null) __obj.updateDynamic("secretParamName")(secretParamName.asInstanceOf[js.Any])

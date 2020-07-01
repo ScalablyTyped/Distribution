@@ -72,5 +72,6 @@ trait AxeBuilder extends js.Object {
 @js.native
 object AxeBuilder extends Instantiable1[/* driver */ WebDriver, AxeBuilder] {
   def apply(driver: WebDriver): AxeBuilder = js.native
+  def apply(driver: WebDriver, source: String): AxeBuilder = js.native
 }
 

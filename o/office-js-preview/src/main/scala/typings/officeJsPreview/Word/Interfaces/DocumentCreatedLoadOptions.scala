@@ -11,6 +11,9 @@ import scala.scalajs.js.annotation._
   * [Api set: WordApi 1.3]
   */
 trait DocumentCreatedLoadOptions extends js.Object {
+  /**
+    Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+    */
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
@@ -18,7 +21,6 @@ trait DocumentCreatedLoadOptions extends js.Object {
     * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..
     *
     * [Api set: WordApiHiddenDocument 1.3]
-    * @beta
     */
   var body: js.UndefOr[BodyLoadOptions] = js.undefined
   /**
@@ -26,7 +28,6 @@ trait DocumentCreatedLoadOptions extends js.Object {
     * Gets the properties of the document.
     *
     * [Api set: WordApiHiddenDocument 1.3]
-    * @beta
     */
   var properties: js.UndefOr[DocumentPropertiesLoadOptions] = js.undefined
   /**
@@ -34,7 +35,6 @@ trait DocumentCreatedLoadOptions extends js.Object {
     * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
     *
     * [Api set: WordApiHiddenDocument 1.3]
-    * @beta
     */
   var saved: js.UndefOr[Boolean] = js.undefined
 }

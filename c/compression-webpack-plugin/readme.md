@@ -1,7 +1,7 @@
 
 # Scala.js typings for compression-webpack-plugin
 
-Typings are for version 2.0
+Typings are for version 4.0
 
 ## Library description:
 Prepare compressed versions of assets to serve them with Content-Encoding

@@ -24,7 +24,7 @@ trait SetOptions_[T /* <: SignerOptions */] extends BaseOperation[SetOptions] {
 
 object SetOptions_ {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.stellarBase.mod.SignerOptions */ T](
     signer: PreAuthTx | Sha256Hash | Ed25519PublicKey,
     `type`: SetOptions,
     clearFlags: AuthFlag = null,

@@ -4,6 +4,7 @@ import typings.antDesignProLayout.antDesignProLayoutStrings.realDark
 import typings.antDesignProLayout.antDesignProLayoutStrings.sidemenu
 import typings.antDesignProLayout.antDesignProLayoutStrings.topmenu
 import typings.antDesignProLayout.defaultSettingsMod.ContentWidth
+import typings.antd.menuContextMod.MenuTheme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,9 +18,7 @@ trait MergerSettingsTypeSetting extends js.Object {
   var iconfontUrl: js.UndefOr[String] = js.undefined
   var layout: js.UndefOr[sidemenu | topmenu] = js.undefined
   var menu: js.UndefOr[DefaultOpenAll] = js.undefined
-  var navTheme: js.UndefOr[
-    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark
-  ] = js.undefined
+  var navTheme: js.UndefOr[MenuTheme | realDark] = js.undefined
   var primaryColor: js.UndefOr[String] = js.undefined
   var title: js.UndefOr[String] = js.undefined
 }
@@ -34,7 +33,7 @@ object MergerSettingsTypeSetting {
     iconfontUrl: String = null,
     layout: sidemenu | topmenu = null,
     menu: DefaultOpenAll = null,
-    navTheme: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark = null,
+    navTheme: MenuTheme | realDark = null,
     primaryColor: String = null,
     title: String = null
   ): MergerSettingsTypeSetting = {

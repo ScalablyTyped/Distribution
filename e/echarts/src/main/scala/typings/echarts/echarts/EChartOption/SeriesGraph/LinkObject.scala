@@ -1,6 +1,6 @@
 package typings.echarts.echarts.EChartOption.SeriesGraph
 
-import typings.echarts.anon.FontStyle
+import typings.echarts.anon.FontSize
 import typings.echarts.anon.LabelLineStyle
 import typings.echarts.anon.ShadowColor
 import scala.scalajs.js
@@ -15,7 +15,7 @@ trait LinkObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-graph.links.label
     */
-  var label: js.UndefOr[FontStyle] = js.undefined
+  var label: js.UndefOr[FontSize] = js.undefined
   /**
     * Line style of edges.
     *
@@ -70,7 +70,7 @@ object LinkObject {
   @scala.inline
   def apply(
     emphasis: LabelLineStyle = null,
-    label: FontStyle = null,
+    label: FontSize = null,
     lineStyle: ShadowColor = null,
     source: String = null,
     symbol: js.Array[_] | String = null,

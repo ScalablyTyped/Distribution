@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashIncludes extends js.Object {
+trait LodashIncludes extends LodashConvertible {
   def apply[T](target: T): LodashIncludes1x1[T] = js.native
   def apply[T](target: T, collection: Dictionary[T]): Boolean = js.native
   def apply[T](target: T, collection: List[T]): Boolean = js.native

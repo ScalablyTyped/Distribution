@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashIntersectionWith extends js.Object {
+trait LodashIntersectionWith extends LodashConvertible {
   def apply[T1](comparator: __): LodashIntersectionWith1x2[T1] = js.native
   def apply[T1](comparator: __, array: List[T1]): LodashIntersectionWith1x2[T1] = js.native
   def apply[T2](comparator: __, array: __, values: List[T2]): LodashIntersectionWith1x4[T2] = js.native

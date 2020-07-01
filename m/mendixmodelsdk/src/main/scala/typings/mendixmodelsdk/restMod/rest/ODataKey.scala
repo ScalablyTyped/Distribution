@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
-- typings.mendixmodelsdk.restMod.rest.IODataKey because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsODataEntity, parts */ @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataKey")
+- typings.mendixmodelsdk.restMod.rest.IODataKey because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsODataRemoteEntitySource, parts */ @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataKey")
 @js.native
 class ODataKey protected () extends Element {
   def this(
@@ -32,8 +32,8 @@ class ODataKey protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  @JSName("containerAsODataEntity")
-  val containerAsODataEntity_FODataKey: IODataEntity = js.native
+  @JSName("containerAsODataRemoteEntitySource")
+  val containerAsODataRemoteEntitySource_FODataKey: IODataRemoteEntitySource = js.native
   @JSName("model")
   var model_FODataKey: IModel = js.native
   /**
@@ -41,7 +41,7 @@ class ODataKey protected () extends Element {
     */
   @JSName("parts")
   val parts_FODataKey: IList[IODataKeyPart] = js.native
-  def containerAsODataEntity: ODataEntity = js.native
+  def containerAsODataRemoteEntitySource: ODataRemoteEntitySource = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
@@ -63,11 +63,11 @@ object ODataKey extends js.Object {
   /**
     * Creates and returns a new ODataKey instance in the SDK and on the server.
     * The new ODataKey will be automatically stored in the 'key' property
-    * of the parent ODataEntity element passed as argument.
+    * of the parent ODataRemoteEntitySource element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.9.0 and higher
+    *  8.11.0 and higher
     */
-  def createIn(container: ODataEntity): ODataKey = js.native
+  def createIn(container: ODataRemoteEntitySource): ODataKey = js.native
 }
 

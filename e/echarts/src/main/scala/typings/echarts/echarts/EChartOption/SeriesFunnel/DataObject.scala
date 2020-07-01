@@ -1,10 +1,10 @@
 package typings.echarts.echarts.EChartOption.SeriesFunnel
 
 import typings.echarts.anon.BorderType
-import typings.echarts.anon.ExtraCssText
+import typings.echarts.anon.FontWeight
 import typings.echarts.anon.LabelLabelLine
 import typings.echarts.anon.Length
-import typings.echarts.anon.LineHeight
+import typings.echarts.echarts.EChartOption.BaseTooltip
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-funnel.data.label
     */
-  var label: js.UndefOr[LineHeight] = js.undefined
+  var label: js.UndefOr[FontWeight] = js.undefined
   /**
     * @see https://echarts.apache.org/en/option.html#series-funnel.data.labelLine
     */
@@ -46,7 +46,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-funnel.data.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
   /**
     * data value.
     *
@@ -61,10 +61,10 @@ object DataObject {
   def apply(
     emphasis: LabelLabelLine = null,
     itemStyle: BorderType = null,
-    label: LineHeight = null,
+    label: FontWeight = null,
     labelLine: Length = null,
     name: String = null,
-    tooltip: ExtraCssText = null,
+    tooltip: BaseTooltip = null,
     value: js.UndefOr[Double] = js.undefined
   ): DataObject = {
     val __obj = js.Dynamic.literal()

@@ -15,7 +15,7 @@ trait ModelTableOpts[MClass /* <: Instantiable0[AnyModel] */] extends js.Object 
 
 object ModelTableOpts {
   @scala.inline
-  def apply[MClass](
+  def apply[/* <: org.scalablytyped.runtime.Instantiable0[typings.reduxOrm.modelMod.AnyModel] */ MClass](
     arrName: ArrName[MClass],
     fields: /* import warning: importer.ImportType#apply Failed type conversion: MClass['fields'] */ js.Any,
     idAttribute: IdAttribute[MClass],

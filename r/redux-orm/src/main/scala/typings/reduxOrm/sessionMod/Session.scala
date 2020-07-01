@@ -64,7 +64,12 @@ Extract[
 
 object Session {
   @scala.inline
-  def apply[I](
+  def apply[/* <: typings.reduxOrm.ormMod.IndexedModelClasses[
+  _, 
+  typings.std.Extract[
+    / * keyof any * / java.lang.String, 
+    / * import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] * / js.Any
+  ]] */ I](
     applyUpdate: UpdateSpec[js.Any] => js.Any,
     query: QuerySpec => QueryResult[js.Object],
     sessionBoundModels: js.Array[

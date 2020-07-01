@@ -39,7 +39,7 @@ object Geometry extends js.Object {
     * merges an array of geometries into a new single one
     * geometry attribute styles must match for this operation to work
     *
-    * @param {PIXI.Geometry[]} geometries array of geometries to merge
+    * @param {PIXI.Geometry[]} geometries - array of geometries to merge
     * @returns {PIXI.Geometry} shiny new geometry!
     */
   def merge(geometries: js.Array[typings.pixiJs.PIXI.Geometry]): typings.pixiJs.PIXI.Geometry = js.native

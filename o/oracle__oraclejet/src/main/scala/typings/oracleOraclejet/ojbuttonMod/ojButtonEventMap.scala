@@ -37,7 +37,7 @@ trait ojButtonEventMap[SP /* <: ojButtonSettableProperties */] extends baseCompo
 
 object ojButtonEventMap {
   @scala.inline
-  def apply[SP](
+  def apply[/* <: typings.oracleOraclejet.ojbuttonMod.ojButtonSettableProperties */ SP](
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,

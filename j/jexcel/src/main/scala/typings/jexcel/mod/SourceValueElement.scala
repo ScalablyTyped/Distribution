@@ -11,7 +11,7 @@ trait SourceValueElement[T /* <: CellValue */] extends js.Object {
 
 object SourceValueElement {
   @scala.inline
-  def apply[T](id: T, name: CellValue): SourceValueElement[T] = {
+  def apply[/* <: typings.jexcel.mod.CellValue */ T](id: T, name: CellValue): SourceValueElement[T] = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceValueElement[T]]
   }

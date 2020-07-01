@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl", "Pair")
 @js.native
 class Pair[First, Second] protected ()
-  extends typings.tstl.utilityMod.Pair[First, Second] {
+  extends typings.tstl.tstlModuleMod.Pair[First, Second] {
   /**
     * Initializer Constructor.
     *

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListAppsRequest extends js.Object {
   /**
-    *  Maximum number of records to list in a single response. 
+    *  The maximum number of records to list in a single response. 
     */
   var maxResults: js.UndefOr[MaxResults] = js.native
   /**
-    *  Pagination token. If non-null pagination token is returned in a result, then pass its value in another request to fetch more entries. 
+    *  A pagination token. If non-null, the pagination token is returned in a result. Pass its value in another request to retrieve more entries. 
     */
   var nextToken: js.UndefOr[NextToken] = js.native
 }

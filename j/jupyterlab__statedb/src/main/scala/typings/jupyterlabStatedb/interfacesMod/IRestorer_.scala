@@ -26,7 +26,7 @@ trait IRestorer_[T /* <: IRestorable[U, _] */, U /* <: IObservableDisposable */,
 
 object IRestorer_ {
   @scala.inline
-  def apply[T, U, V](restore: (T, IOptions[U]) => js.Promise[V], restored: js.Promise[V]): IRestorer_[T, U, V] = {
+  def apply[/* <: typings.jupyterlabStatedb.interfacesMod.IRestorable[U, _] */ T, /* <: typings.luminoDisposable.mod.IObservableDisposable */ U, V](restore: (T, IOptions[U]) => js.Promise[V], restored: js.Promise[V]): IRestorer_[T, U, V] = {
     val __obj = js.Dynamic.literal(restore = js.Any.fromFunction2(restore), restored = restored.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRestorer_[T, U, V]]
   }

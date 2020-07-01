@@ -5,6 +5,8 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.googleAuthLibrary.jwtclientMod.JWTOptions
 import typings.googleAuthLibrary.mod.GoogleAuth
+import typings.googleapis.anon.ReadonlyEndpoint
+import typings.googleapis.anon.TypeofOAuth2Client
 import typings.googleapis.apisMod.GeneratedAPIs
 import typings.googleapisCommon.apiMod.APIEndpoint
 import typings.googleapisCommon.apiMod.GlobalOptions

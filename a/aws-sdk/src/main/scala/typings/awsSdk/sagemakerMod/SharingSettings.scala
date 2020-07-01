@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SharingSettings extends js.Object {
   /**
-    * The notebook output option.
+    * Whether to include the notebook cell output when sharing the notebook. The default is Disabled.
     */
   var NotebookOutputOption: js.UndefOr[typings.awsSdk.sagemakerMod.NotebookOutputOption] = js.native
   /**
-    * The AWS Key Management Service encryption key ID.
+    * When NotebookOutputOption is Allowed, the AWS Key Management Service (KMS) encryption key ID used to encrypt the notebook cell output in the Amazon S3 bucket.
     */
   var S3KmsKeyId: js.UndefOr[KmsKeyId] = js.native
   /**
-    * The Amazon S3 output path.
+    * When NotebookOutputOption is Allowed, the Amazon S3 bucket used to save the notebook cell output. If S3OutputPath isn't specified, a default bucket is used.
     */
   var S3OutputPath: js.UndefOr[S3Uri] = js.native
 }

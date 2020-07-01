@@ -34,6 +34,10 @@ trait DescribeFleetMetadataResponse extends js.Object {
     * The option to optimize for better performance by routing traffic through the closest AWS Region to users, which may be outside of your home Region.
     */
   var OptimizeForEndUserLocation: js.UndefOr[Boolean] = js.native
+  /**
+    * The tags attached to the resource. A tag is a key-value pair.
+    */
+  var Tags: js.UndefOr[TagMap] = js.native
 }
 
 object DescribeFleetMetadataResponse {
@@ -45,7 +49,8 @@ object DescribeFleetMetadataResponse {
     FleetName: FleetName = null,
     FleetStatus: FleetStatus = null,
     LastUpdatedTime: DateTime = null,
-    OptimizeForEndUserLocation: js.UndefOr[Boolean] = js.undefined
+    OptimizeForEndUserLocation: js.UndefOr[Boolean] = js.undefined,
+    Tags: TagMap = null
   ): DescribeFleetMetadataResponse = {
     val __obj = js.Dynamic.literal()
     if (CompanyCode != null) __obj.updateDynamic("CompanyCode")(CompanyCode.asInstanceOf[js.Any])
@@ -55,6 +60,7 @@ object DescribeFleetMetadataResponse {
     if (FleetStatus != null) __obj.updateDynamic("FleetStatus")(FleetStatus.asInstanceOf[js.Any])
     if (LastUpdatedTime != null) __obj.updateDynamic("LastUpdatedTime")(LastUpdatedTime.asInstanceOf[js.Any])
     if (!js.isUndefined(OptimizeForEndUserLocation)) __obj.updateDynamic("OptimizeForEndUserLocation")(OptimizeForEndUserLocation.get.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeFleetMetadataResponse]
   }
 }

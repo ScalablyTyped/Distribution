@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CodeCommitRepository extends js.Object {
   /**
-    * The name of the AWS CodeCommit repository.
+    * The name of the AWS CodeCommit repository. For more information, see repositoryName in the AWS CodeCommit API Reference.
     */
   var Name: typings.awsSdk.codegurureviewerMod.Name = js.native
 }

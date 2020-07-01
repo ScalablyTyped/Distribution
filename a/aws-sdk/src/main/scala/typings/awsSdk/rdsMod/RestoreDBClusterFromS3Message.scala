@@ -11,7 +11,7 @@ trait RestoreDBClusterFromS3Message extends js.Object {
     */
   var AvailabilityZones: js.UndefOr[typings.awsSdk.rdsMod.AvailabilityZones] = js.native
   /**
-    * The target backtrack window, in seconds. To disable backtracking, set this value to 0. Default: 0 Constraints:   If specified, this value must be set to a number from 0 to 259,200 (72 hours).  
+    * The target backtrack window, in seconds. To disable backtracking, set this value to 0.  Currently, Backtrack is only supported for Aurora MySQL DB clusters.  Default: 0 Constraints:   If specified, this value must be set to a number from 0 to 259,200 (72 hours).  
     */
   var BacktrackWindow: js.UndefOr[LongOptional] = js.native
   /**
@@ -27,7 +27,7 @@ trait RestoreDBClusterFromS3Message extends js.Object {
     */
   var CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.native
   /**
-    * The name of the DB cluster to create from the source data in the Amazon S3 bucket. This parameter is isn't case-sensitive. Constraints:   Must contain from 1 to 63 letters, numbers, or hyphens.   First character must be a letter.   Can't end with a hyphen or contain two consecutive hyphens.   Example: my-cluster1 
+    * The name of the DB cluster to create from the source data in the Amazon S3 bucket. This parameter isn't case-sensitive. Constraints:   Must contain from 1 to 63 letters, numbers, or hyphens.   First character must be a letter.   Can't end with a hyphen or contain two consecutive hyphens.   Example: my-cluster1 
     */
   var DBClusterIdentifier: String = js.native
   /**
@@ -115,7 +115,7 @@ trait RestoreDBClusterFromS3Message extends js.Object {
     */
   var SourceEngine: String = js.native
   /**
-    * The version of the database that the backup files were created from. MySQL version 5.5 and 5.6 are supported.  Example: 5.6.22 
+    * The version of the database that the backup files were created from. MySQL versions 5.5, 5.6, and 5.7 are supported.  Example: 5.6.40 
     */
   var SourceEngineVersion: String = js.native
   /**

@@ -8,15 +8,20 @@ import scala.scalajs.js.annotation._
 @js.native
 object localhostMod extends js.Object {
   @js.native
-  trait LocalStoreStore
-    extends typings.keya.storeMod.default
+  trait LocalStoreStore[T]
+    extends typings.keya.storeMod.default[T] {
+    var prefix: String = js.native
+  }
   
   @js.native
-  class default () extends LocalStoreStore
+  class default[T] () extends LocalStoreStore[T]
   
   /* static members */
   @js.native
   object default extends js.Object {
+    /**
+      * Gets all stores
+      */
     def stores(): js.Promise[js.Array[String]] = js.native
   }
   

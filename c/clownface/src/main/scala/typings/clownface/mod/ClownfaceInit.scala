@@ -18,7 +18,7 @@ trait ClownfaceInit[D /* <: DatasetCore[Quad, Quad] */] extends js.Object {
 
 object ClownfaceInit {
   @scala.inline
-  def apply[D](_context: js.Array[Context[D, Term]] = null, dataset: D = null, graph: QuadGraph = null): ClownfaceInit[D] = {
+  def apply[/* <: typings.rdfJs.mod.DatasetCore[typings.rdfJs.mod.Quad, typings.rdfJs.mod.Quad] */ D](_context: js.Array[Context[D, Term]] = null, dataset: D = null, graph: QuadGraph = null): ClownfaceInit[D] = {
     val __obj = js.Dynamic.literal()
     if (_context != null) __obj.updateDynamic("_context")(_context.asInstanceOf[js.Any])
     if (dataset != null) __obj.updateDynamic("dataset")(dataset.asInstanceOf[js.Any])

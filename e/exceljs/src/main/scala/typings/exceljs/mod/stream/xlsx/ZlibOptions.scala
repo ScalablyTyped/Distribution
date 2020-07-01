@@ -10,18 +10,18 @@ import scala.scalajs.js.annotation._
 
 trait ZlibOptions extends js.Object {
   /**
-    * @default 16*1024
-    */
+  			 * @default 16*1024
+  			 */
   var chunkSize: Double
    // compression only
   var dictionary: Buffer | TypedArray | DataView | ArrayBuffer
   /**
-    * @default constants.Z_FINISH
-    */
+  			 * @default constants.Z_FINISH
+  			 */
   var finishFlush: Double
   /**
-    * @default constants.Z_NO_FLUSH
-    */
+  			 * @default constants.Z_NO_FLUSH
+  			 */
   var flush: Double
   var level: Double
    // compression only

@@ -14,7 +14,7 @@ trait TaskOptions[A /* <: js.Array[_] */, R] extends js.Object {
 
 object TaskOptions {
   @scala.inline
-  def apply[A, R](
+  def apply[/* <: js.Array[_] */ A, R](
     args: A = null,
     error: js.Any = null,
     result: WithoutPromise[R] = null,

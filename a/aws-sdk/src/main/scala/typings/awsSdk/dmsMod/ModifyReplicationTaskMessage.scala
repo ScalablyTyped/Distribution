@@ -27,7 +27,7 @@ trait ModifyReplicationTaskMessage extends js.Object {
     */
   var ReplicationTaskArn: String = js.native
   /**
-    * The replication task identifier. Constraints:   Must contain from 1 to 255 alphanumeric characters or hyphens.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.  
+    * The replication task identifier. Constraints:   Must contain 1-255 alphanumeric characters or hyphens.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.  
     */
   var ReplicationTaskIdentifier: js.UndefOr[String] = js.native
   /**
@@ -39,7 +39,7 @@ trait ModifyReplicationTaskMessage extends js.Object {
     */
   var TableMappings: js.UndefOr[String] = js.native
   /**
-    * Supplemental information that the task requires to migrate the data for certain source and target endpoints. For more information, see Specifying Supplemental Data for Task Settings in the AWS Database Migration User Guide. 
+    * Supplemental information that the task requires to migrate the data for certain source and target endpoints. For more information, see Specifying Supplemental Data for Task Settings in the AWS Database Migration Service User Guide. 
     */
   var TaskData: js.UndefOr[String] = js.native
 }

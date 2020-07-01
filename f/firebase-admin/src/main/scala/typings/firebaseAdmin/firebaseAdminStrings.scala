@@ -9,6 +9,9 @@ import scala.scalajs.js.annotation._
 
 object firebaseAdminStrings {
   @js.native
+  sealed trait ADMIN_SDK_NODE extends js.Object
+  
+  @js.native
   sealed trait BCRYPT
     extends HashAlgorithmType
        with typings.firebaseAdmin.authMod.admin.auth.HashAlgorithmType
@@ -20,10 +23,16 @@ object firebaseAdminStrings {
   sealed trait BROWN extends TagColor
   
   @js.native
+  sealed trait CONSOLE extends js.Object
+  
+  @js.native
   sealed trait CYAN extends TagColor
   
   @js.native
   sealed trait DEEP_ORANGE extends TagColor
+  
+  @js.native
+  sealed trait FORCED_UPDATE extends js.Object
   
   @js.native
   sealed trait GREEN extends TagColor
@@ -47,6 +56,9 @@ object firebaseAdminStrings {
   sealed trait HMAC_SHA512
     extends HashAlgorithmType
        with typings.firebaseAdmin.authMod.admin.auth.HashAlgorithmType
+  
+  @js.native
+  sealed trait INCREMENTAL_UPDATE extends js.Object
   
   @js.native
   sealed trait INDIGO extends TagColor
@@ -77,6 +89,18 @@ object firebaseAdminStrings {
   
   @js.native
   sealed trait PURPLE extends TagColor
+  
+  @js.native
+  sealed trait REMOTE_CONFIG_UPDATE_ORIGIN_UNSPECIFIED extends js.Object
+  
+  @js.native
+  sealed trait REMOTE_CONFIG_UPDATE_TYPE_UNSPECIFIED extends js.Object
+  
+  @js.native
+  sealed trait REST_API extends js.Object
+  
+  @js.native
+  sealed trait ROLLBACK extends js.Object
   
   @js.native
   sealed trait SCRYPT
@@ -180,15 +204,21 @@ object firebaseAdminStrings {
        with typings.firebaseAdmin.databaseMod.admin.database.EventType
   
   @scala.inline
+  def ADMIN_SDK_NODE: ADMIN_SDK_NODE = "ADMIN_SDK_NODE".asInstanceOf[ADMIN_SDK_NODE]
+  @scala.inline
   def BCRYPT: BCRYPT = "BCRYPT".asInstanceOf[BCRYPT]
   @scala.inline
   def BLUE: BLUE = "BLUE".asInstanceOf[BLUE]
   @scala.inline
   def BROWN: BROWN = "BROWN".asInstanceOf[BROWN]
   @scala.inline
+  def CONSOLE: CONSOLE = "CONSOLE".asInstanceOf[CONSOLE]
+  @scala.inline
   def CYAN: CYAN = "CYAN".asInstanceOf[CYAN]
   @scala.inline
   def DEEP_ORANGE: DEEP_ORANGE = "DEEP_ORANGE".asInstanceOf[DEEP_ORANGE]
+  @scala.inline
+  def FORCED_UPDATE: FORCED_UPDATE = "FORCED_UPDATE".asInstanceOf[FORCED_UPDATE]
   @scala.inline
   def GREEN: GREEN = "GREEN".asInstanceOf[GREEN]
   @scala.inline
@@ -199,6 +229,8 @@ object firebaseAdminStrings {
   def HMAC_SHA256: HMAC_SHA256 = "HMAC_SHA256".asInstanceOf[HMAC_SHA256]
   @scala.inline
   def HMAC_SHA512: HMAC_SHA512 = "HMAC_SHA512".asInstanceOf[HMAC_SHA512]
+  @scala.inline
+  def INCREMENTAL_UPDATE: INCREMENTAL_UPDATE = "INCREMENTAL_UPDATE".asInstanceOf[INCREMENTAL_UPDATE]
   @scala.inline
   def INDIGO: INDIGO = "INDIGO".asInstanceOf[INDIGO]
   @scala.inline
@@ -215,6 +247,14 @@ object firebaseAdminStrings {
   def PINK: PINK = "PINK".asInstanceOf[PINK]
   @scala.inline
   def PURPLE: PURPLE = "PURPLE".asInstanceOf[PURPLE]
+  @scala.inline
+  def REMOTE_CONFIG_UPDATE_ORIGIN_UNSPECIFIED: REMOTE_CONFIG_UPDATE_ORIGIN_UNSPECIFIED = "REMOTE_CONFIG_UPDATE_ORIGIN_UNSPECIFIED".asInstanceOf[REMOTE_CONFIG_UPDATE_ORIGIN_UNSPECIFIED]
+  @scala.inline
+  def REMOTE_CONFIG_UPDATE_TYPE_UNSPECIFIED: REMOTE_CONFIG_UPDATE_TYPE_UNSPECIFIED = "REMOTE_CONFIG_UPDATE_TYPE_UNSPECIFIED".asInstanceOf[REMOTE_CONFIG_UPDATE_TYPE_UNSPECIFIED]
+  @scala.inline
+  def REST_API: REST_API = "REST_API".asInstanceOf[REST_API]
+  @scala.inline
+  def ROLLBACK: ROLLBACK = "ROLLBACK".asInstanceOf[ROLLBACK]
   @scala.inline
   def SCRYPT: SCRYPT = "SCRYPT".asInstanceOf[SCRYPT]
   @scala.inline

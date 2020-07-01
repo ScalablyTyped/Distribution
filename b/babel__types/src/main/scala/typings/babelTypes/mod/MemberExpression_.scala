@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   var computed: Boolean
   var `object`: Expression
   var optional: `true` | `false` | Null
-  var property: js.Any
+  var property: Expression | Identifier_ | PrivateName_
   @JSName("type")
   var type_MemberExpression_ : MemberExpression
 }
@@ -25,7 +25,7 @@ object MemberExpression_ {
   def apply(
     computed: Boolean,
     `object`: Expression,
-    property: js.Any,
+    property: Expression | Identifier_ | PrivateName_,
     `type`: MemberExpression,
     end: Double = null.asInstanceOf[Double],
     innerComments: js.Array[Comment] = null,

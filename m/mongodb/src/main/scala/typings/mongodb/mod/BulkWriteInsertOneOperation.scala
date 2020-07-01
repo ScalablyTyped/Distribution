@@ -5,15 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BulkWriteInsertOneOperation[T] extends BulkWriteOperation[T] {
-  var insertOne: Document[T]
+trait BulkWriteInsertOneOperation[TSchema] extends BulkWriteOperation[TSchema] {
+  var insertOne: Document[TSchema]
 }
 
 object BulkWriteInsertOneOperation {
   @scala.inline
-  def apply[T](insertOne: Document[T]): BulkWriteInsertOneOperation[T] = {
+  def apply[TSchema](insertOne: Document[TSchema]): BulkWriteInsertOneOperation[TSchema] = {
     val __obj = js.Dynamic.literal(insertOne = insertOne.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BulkWriteInsertOneOperation[T]]
+    __obj.asInstanceOf[BulkWriteInsertOneOperation[TSchema]]
   }
 }
 

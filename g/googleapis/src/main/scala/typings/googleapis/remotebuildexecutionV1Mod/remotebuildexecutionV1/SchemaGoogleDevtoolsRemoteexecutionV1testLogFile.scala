@@ -31,7 +31,7 @@ object SchemaGoogleDevtoolsRemoteexecutionV1testLogFile {
   ): SchemaGoogleDevtoolsRemoteexecutionV1testLogFile = {
     val __obj = js.Dynamic.literal()
     if (digest != null) __obj.updateDynamic("digest")(digest.asInstanceOf[js.Any])
-    if (!js.isUndefined(humanReadable)) __obj.updateDynamic("humanReadable")(humanReadable.asInstanceOf[js.Any])
+    if (!js.isUndefined(humanReadable)) __obj.updateDynamic("humanReadable")(humanReadable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteexecutionV1testLogFile]
   }
 }

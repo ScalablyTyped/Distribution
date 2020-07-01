@@ -10,10 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Setting extends js.Object {
-  /**
-    * Fired after the setting changes.
-    * @deprecated Unsupported on Firefox at this time.
-    */
+  /** Fired after the setting changes. */
   var onChange: WebExtEvent[js.Function1[/* details */ IncognitoSpecific, Unit]]
   /**
     * Clears the setting, restoring any default value.

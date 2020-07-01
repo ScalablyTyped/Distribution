@@ -5,14 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  /* Rewritten from type alias, can be one of: 
-    - typings.pgPromise.mod.Column
-    - typings.pgPromise.mod.ColumnSet
-    - js.Array[
-  java.lang.String | typings.pgPromise.mod.IColumnConfig | typings.pgPromise.mod.Column]
-  */
-  type QueryColumns = typings.pgPromise.mod._QueryColumns | (js.Array[
-    java.lang.String | typings.pgPromise.mod.IColumnConfig | typings.pgPromise.mod.Column
+  type QueryColumns = typings.pgPromise.mod.Column[js.Any] | typings.pgPromise.mod.ColumnSet[js.Any] | (js.Array[
+    java.lang.String | typings.pgPromise.mod.IColumnConfig[js.Any] | typings.pgPromise.mod.Column[js.Any]
   ])
   /* Rewritten from type alias, can be one of: 
     - java.lang.String

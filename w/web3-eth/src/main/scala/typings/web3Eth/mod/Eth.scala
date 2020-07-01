@@ -61,6 +61,7 @@ class Eth () extends js.Object {
   var defaultHardfork: hardfork = js.native
   var ens: Ens = js.native
   val givenProvider: js.Any = js.native
+  var handleRevert: Boolean = js.native
   var net: Network = js.native
   var personal: Personal = js.native
   var transactionBlockTimeout: Double = js.native

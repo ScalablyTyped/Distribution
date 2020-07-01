@@ -1,13 +1,12 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.anon.AnimationDurationUpdate
 import typings.echarts.anon.AnimationEasing
 import typings.echarts.anon.AnimationEasingUpdate
+import typings.echarts.anon.AnimationThreshold
 import typings.echarts.anon.DictunknownPropertyBorderColor
-import typings.echarts.anon.ExtraCssText
-import typings.echarts.anon.LabelFontWeight
+import typings.echarts.anon.LabelFontStyle
 import typings.echarts.anon.Length2
-import typings.echarts.anon.TextBorderWidth
+import typings.echarts.anon.TextBorderColor
 import typings.echarts.echarts.EChartOption.SeriesPie.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -250,7 +249,7 @@ trait SeriesPie_ extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-pie.emphasis
     */
-  var emphasis: js.UndefOr[LabelFontWeight] = js.undefined
+  var emphasis: js.UndefOr[LabelFontStyle] = js.undefined
   /**
     * Whether to enable the zoom animation effects when hovering sectors.
     *
@@ -297,7 +296,7 @@ trait SeriesPie_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.label
     */
-  var label: js.UndefOr[TextBorderWidth] = js.undefined
+  var label: js.UndefOr[TextBorderColor] = js.undefined
   /**
     * The style of visual guide line. Will show when
     * [label position](https://echarts.apache.org/en/option.html#series-pie.label.position)
@@ -327,21 +326,21 @@ trait SeriesPie_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.markArea
     */
-  var markArea: js.UndefOr[AnimationEasingUpdate] = js.undefined
+  var markArea: js.UndefOr[AnimationThreshold] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.markLine
     */
-  var markLine: js.UndefOr[AnimationEasing] = js.undefined
+  var markLine: js.UndefOr[AnimationEasingUpdate] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.markPoint
     */
-  var markPoint: js.UndefOr[AnimationDurationUpdate] = js.undefined
+  var markPoint: js.UndefOr[AnimationEasing] = js.undefined
   /**
     * The minimum angle of sector (0 ~ 360).
     * It prevents some sector from being too small when value is small,
@@ -477,7 +476,7 @@ trait SeriesPie_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
   /**
     * @default
     * "pie"
@@ -537,17 +536,17 @@ object SeriesPie_ {
     cursor: String = null,
     data: js.Array[js.Array[Double] | DataObject | Double] = null,
     datasetIndex: js.UndefOr[Double] = js.undefined,
-    emphasis: LabelFontWeight = null,
+    emphasis: LabelFontStyle = null,
     hoverAnimation: js.UndefOr[Boolean] = js.undefined,
     hoverOffset: js.UndefOr[Double] = js.undefined,
     id: String = null,
     itemStyle: DictunknownPropertyBorderColor = null,
-    label: TextBorderWidth = null,
+    label: TextBorderColor = null,
     labelLine: Length2 = null,
     legendHoverLink: js.UndefOr[Boolean] = js.undefined,
-    markArea: AnimationEasingUpdate = null,
-    markLine: AnimationEasing = null,
-    markPoint: AnimationDurationUpdate = null,
+    markArea: AnimationThreshold = null,
+    markLine: AnimationEasingUpdate = null,
+    markPoint: AnimationEasing = null,
     minAngle: js.UndefOr[Double] = js.undefined,
     minShowLabelAngle: js.UndefOr[Double] = js.undefined,
     name: String = null,
@@ -559,7 +558,7 @@ object SeriesPie_ {
     silent: js.UndefOr[Boolean] = js.undefined,
     startAngle: js.UndefOr[Double] = js.undefined,
     stillShowZeroSum: js.UndefOr[Boolean] = js.undefined,
-    tooltip: ExtraCssText = null,
+    tooltip: BaseTooltip = null,
     `type`: String = null,
     z: js.UndefOr[Double] = js.undefined,
     zlevel: js.UndefOr[Double] = js.undefined

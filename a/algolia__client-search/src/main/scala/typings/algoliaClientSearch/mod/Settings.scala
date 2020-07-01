@@ -111,6 +111,10 @@ trait Settings extends js.Object {
     */
   val distinct: js.UndefOr[Boolean | Double] = js.undefined
   /**
+    * Enable personalization for queries by default
+    */
+  val enablePersonalization: js.UndefOr[Boolean] = js.undefined
+  /**
     * Whether rules should be globally enabled.
     */
   val enableRules: js.UndefOr[Boolean] = js.undefined
@@ -274,6 +278,7 @@ object Settings {
     disableTypoToleranceOnAttributes: js.Array[String] = null,
     disableTypoToleranceOnWords: js.Array[String] = null,
     distinct: Boolean | Double = null,
+    enablePersonalization: js.UndefOr[Boolean] = js.undefined,
     enableRules: js.UndefOr[Boolean] = js.undefined,
     exactOnSingleWordQuery: attribute | none | word = null,
     highlightPostTag: String = null,
@@ -331,6 +336,7 @@ object Settings {
     if (disableTypoToleranceOnAttributes != null) __obj.updateDynamic("disableTypoToleranceOnAttributes")(disableTypoToleranceOnAttributes.asInstanceOf[js.Any])
     if (disableTypoToleranceOnWords != null) __obj.updateDynamic("disableTypoToleranceOnWords")(disableTypoToleranceOnWords.asInstanceOf[js.Any])
     if (distinct != null) __obj.updateDynamic("distinct")(distinct.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePersonalization)) __obj.updateDynamic("enablePersonalization")(enablePersonalization.get.asInstanceOf[js.Any])
     if (!js.isUndefined(enableRules)) __obj.updateDynamic("enableRules")(enableRules.get.asInstanceOf[js.Any])
     if (exactOnSingleWordQuery != null) __obj.updateDynamic("exactOnSingleWordQuery")(exactOnSingleWordQuery.asInstanceOf[js.Any])
     if (highlightPostTag != null) __obj.updateDynamic("highlightPostTag")(highlightPostTag.asInstanceOf[js.Any])

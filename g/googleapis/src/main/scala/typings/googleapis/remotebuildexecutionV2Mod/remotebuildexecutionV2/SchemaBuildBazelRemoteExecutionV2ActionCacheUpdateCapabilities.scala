@@ -16,7 +16,7 @@ object SchemaBuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities {
   @scala.inline
   def apply(updateEnabled: js.UndefOr[Boolean] = js.undefined): SchemaBuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(updateEnabled)) __obj.updateDynamic("updateEnabled")(updateEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateEnabled)) __obj.updateDynamic("updateEnabled")(updateEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities]
   }
 }

@@ -1,6 +1,6 @@
 package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
-import typings.googleapis.AnonPrivilegeName
+import typings.googleapis.anon.PrivilegeName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,7 +41,7 @@ trait SchemaRole extends js.Object {
   /**
     * The set of privileges that are granted to this role.
     */
-  var rolePrivileges: js.UndefOr[js.Array[AnonPrivilegeName]] = js.native
+  var rolePrivileges: js.UndefOr[js.Array[PrivilegeName]] = js.native
 }
 
 object SchemaRole {
@@ -54,12 +54,12 @@ object SchemaRole {
     roleDescription: String = null,
     roleId: String = null,
     roleName: String = null,
-    rolePrivileges: js.Array[AnonPrivilegeName] = null
+    rolePrivileges: js.Array[PrivilegeName] = null
   ): SchemaRole = {
     val __obj = js.Dynamic.literal()
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSuperAdminRole)) __obj.updateDynamic("isSuperAdminRole")(isSuperAdminRole.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSystemRole)) __obj.updateDynamic("isSystemRole")(isSystemRole.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSuperAdminRole)) __obj.updateDynamic("isSuperAdminRole")(isSuperAdminRole.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSystemRole)) __obj.updateDynamic("isSystemRole")(isSystemRole.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (roleDescription != null) __obj.updateDynamic("roleDescription")(roleDescription.asInstanceOf[js.Any])
     if (roleId != null) __obj.updateDynamic("roleId")(roleId.asInstanceOf[js.Any])

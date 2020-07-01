@@ -5,6 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// Setting 'orientation' automatically sets 'meta' to true
+// so setting it to false is not valid in that case
 trait MetaTrueOptions extends MetaOptions {
   var meta: js.UndefOr[`true`] = js.undefined
   var orientation: Orientation

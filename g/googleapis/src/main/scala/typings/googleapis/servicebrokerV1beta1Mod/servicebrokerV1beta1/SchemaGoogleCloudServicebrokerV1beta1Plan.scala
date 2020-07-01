@@ -57,9 +57,9 @@ object SchemaGoogleCloudServicebrokerV1beta1Plan {
     schemas: StringDictionary[js.Any] = null
   ): SchemaGoogleCloudServicebrokerV1beta1Plan = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bindable)) __obj.updateDynamic("bindable")(bindable.asInstanceOf[js.Any])
+    if (!js.isUndefined(bindable)) __obj.updateDynamic("bindable")(bindable.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(free)) __obj.updateDynamic("free")(free.asInstanceOf[js.Any])
+    if (!js.isUndefined(free)) __obj.updateDynamic("free")(free.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

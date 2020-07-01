@@ -20,8 +20,8 @@ object mod extends js.Object {
   def defaultGraph(): DefaultGraph = js.native
   def literal(value: String): Literal = js.native
   def literal(value: String, languageOrDatatype: String): Literal = js.native
-  def literal(value: String, languageOrDatatype: NamedNode): Literal = js.native
-  def namedNode(value: String): NamedNode = js.native
+  def literal(value: String, languageOrDatatype: NamedNode[String]): Literal = js.native
+  def namedNode(value: String): NamedNode[String] = js.native
   def quad(subject: Term, predicate: Term, `object`: Term): Quad = js.native
   def quad(subject: Term, predicate: Term, `object`: Term, graph: Term): Quad = js.native
   def triple(subject: Term, predicate: Term, `object`: Term): Quad = js.native

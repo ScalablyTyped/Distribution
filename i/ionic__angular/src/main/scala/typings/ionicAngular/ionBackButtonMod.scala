@@ -3,6 +3,7 @@ package typings.ionicAngular
 import typings.ionicAngular.configMod.Config
 import typings.ionicAngular.ionRouterOutletMod.IonRouterOutlet
 import typings.ionicAngular.navControllerMod.NavController
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,6 +18,7 @@ object ionBackButtonMod extends js.Object {
     var config: js.Any = js.native
     var defaultHref: js.UndefOr[String | Null] = js.native
     var navCtrl: js.Any = js.native
+    var routerAnimation: js.UndefOr[AnimationBuilder] = js.native
     var routerOutlet: js.Any = js.native
     /**
       * @internal

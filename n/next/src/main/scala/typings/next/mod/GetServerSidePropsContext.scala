@@ -18,7 +18,7 @@ trait GetServerSidePropsContext[Q /* <: ParsedUrlQuery */] extends js.Object {
 
 object GetServerSidePropsContext {
   @scala.inline
-  def apply[Q](
+  def apply[/* <: typings.node.querystringMod.ParsedUrlQuery */ Q](
     query: ParsedUrlQuery,
     req: IncomingMessage,
     res: ServerResponse,

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@fluentui/react-icons" : "0.1.19"
+      "@fluentui/react-icons" : "0.1.33"
     }
   ],
   "test-dependencies" : [
     {
-      "@fluentui/react-icons" : "0.1.19"
+      "@fluentui/react-icons" : "0.1.33"
     }
   ],
   "compile-devDependencies" : [

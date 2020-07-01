@@ -25,7 +25,7 @@ object SchemaParserConfig {
   @scala.inline
   def apply(allowNullHeader: js.UndefOr[Boolean] = js.undefined, segmentTerminator: String = null): SchemaParserConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowNullHeader)) __obj.updateDynamic("allowNullHeader")(allowNullHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowNullHeader)) __obj.updateDynamic("allowNullHeader")(allowNullHeader.get.asInstanceOf[js.Any])
     if (segmentTerminator != null) __obj.updateDynamic("segmentTerminator")(segmentTerminator.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaParserConfig]
   }

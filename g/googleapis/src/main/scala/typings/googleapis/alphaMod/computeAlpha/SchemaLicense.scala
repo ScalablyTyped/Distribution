@@ -74,7 +74,7 @@ object SchemaLicense {
     transferable: js.UndefOr[Boolean] = js.undefined
   ): SchemaLicense = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(chargesUseFee)) __obj.updateDynamic("chargesUseFee")(chargesUseFee.asInstanceOf[js.Any])
+    if (!js.isUndefined(chargesUseFee)) __obj.updateDynamic("chargesUseFee")(chargesUseFee.get.asInstanceOf[js.Any])
     if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
@@ -84,7 +84,7 @@ object SchemaLicense {
     if (resourceRequirements != null) __obj.updateDynamic("resourceRequirements")(resourceRequirements.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     if (selfLinkWithId != null) __obj.updateDynamic("selfLinkWithId")(selfLinkWithId.asInstanceOf[js.Any])
-    if (!js.isUndefined(transferable)) __obj.updateDynamic("transferable")(transferable.asInstanceOf[js.Any])
+    if (!js.isUndefined(transferable)) __obj.updateDynamic("transferable")(transferable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLicense]
   }
 }

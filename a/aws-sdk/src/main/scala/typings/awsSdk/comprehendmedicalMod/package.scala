@@ -131,6 +131,7 @@ package object comprehendmedicalMod {
     - typings.awsSdk.awsSdkStrings.TEST_VALUE
     - typings.awsSdk.awsSdkStrings.TEST_UNITS
     - typings.awsSdk.awsSdkStrings.DIRECTION
+    - typings.awsSdk.awsSdkStrings.SYSTEM_ORGAN_SITE
     - java.lang.String
   */
   type RelationshipType = typings.awsSdk.comprehendmedicalMod._RelationshipType | java.lang.String

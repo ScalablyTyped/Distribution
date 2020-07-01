@@ -46,17 +46,17 @@ object SchemaScheduling {
   @scala.inline
   def apply(
     automaticRestart: js.UndefOr[Boolean] = js.undefined,
-    minNodeCpus: Int | Double = null,
+    minNodeCpus: js.UndefOr[Double] = js.undefined,
     nodeAffinities: js.Array[SchemaSchedulingNodeAffinity] = null,
     onHostMaintenance: String = null,
     preemptible: js.UndefOr[Boolean] = js.undefined
   ): SchemaScheduling = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(automaticRestart)) __obj.updateDynamic("automaticRestart")(automaticRestart.asInstanceOf[js.Any])
-    if (minNodeCpus != null) __obj.updateDynamic("minNodeCpus")(minNodeCpus.asInstanceOf[js.Any])
+    if (!js.isUndefined(automaticRestart)) __obj.updateDynamic("automaticRestart")(automaticRestart.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minNodeCpus)) __obj.updateDynamic("minNodeCpus")(minNodeCpus.get.asInstanceOf[js.Any])
     if (nodeAffinities != null) __obj.updateDynamic("nodeAffinities")(nodeAffinities.asInstanceOf[js.Any])
     if (onHostMaintenance != null) __obj.updateDynamic("onHostMaintenance")(onHostMaintenance.asInstanceOf[js.Any])
-    if (!js.isUndefined(preemptible)) __obj.updateDynamic("preemptible")(preemptible.asInstanceOf[js.Any])
+    if (!js.isUndefined(preemptible)) __obj.updateDynamic("preemptible")(preemptible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaScheduling]
   }
 }

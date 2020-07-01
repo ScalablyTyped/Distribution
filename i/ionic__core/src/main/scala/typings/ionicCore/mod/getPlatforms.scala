@@ -21,6 +21,9 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/core", "getPlatforms")
 @js.native
 object getPlatforms extends js.Object {
+  def apply(): js.Array[
+    ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
+  ] = js.native
   def apply(win: js.Any): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = js.native

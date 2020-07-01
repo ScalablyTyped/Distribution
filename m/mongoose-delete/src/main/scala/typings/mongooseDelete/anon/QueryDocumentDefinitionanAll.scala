@@ -345,6 +345,11 @@ trait QueryDocumentDefinitionanAll extends js.Object {
     */
   def geometry(`object`: Coordinates): this.type = js.native
   /**
+    * Returns the current query filter (also known as conditions) as a POJO.
+    * @returns current query filter
+    */
+  def getFilter(): js.Any = js.native
+  /**
     * Returns the current query options as a JSON object.
     * @returns current query options
     */
@@ -352,6 +357,7 @@ trait QueryDocumentDefinitionanAll extends js.Object {
   /**
     * Returns the current query conditions as a JSON object.
     * @returns current query conditions
+    * @deprecated You should use getFilter() instead of getQuery() where possible. getQuery() will likely be deprecated in a future release.
     */
   def getQuery(): js.Any = js.native
   /**

@@ -15,10 +15,9 @@ import scala.scalajs.js.annotation._
 //     readonly val: CSSNumericValue;
 //     readonly max: CSSNumericValue;
 // };
-@JSGlobal("CSSNumericArray")
 @js.native
-class CSSNumericArray () extends /* index */ NumberDictionary[CSSNumericValue] {
-  @JSName(scala.scalajs.js.Symbol.iterator)
+trait CSSNumericArray extends /* index */ NumberDictionary[CSSNumericValue] {
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[CSSNumericValue]] = js.native
   val length: Double = js.native
 }

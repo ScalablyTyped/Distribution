@@ -9,6 +9,7 @@ import typings.tabulatorTables.tabulatorTablesStrings.fitColumns
 import typings.tabulatorTables.tabulatorTablesStrings.fitData
 import typings.tabulatorTables.tabulatorTablesStrings.fitDataFill
 import typings.tabulatorTables.tabulatorTablesStrings.fitDataStretch
+import typings.tabulatorTables.tabulatorTablesStrings.fitDataTable
 import typings.tabulatorTables.tabulatorTablesStrings.group
 import typings.tabulatorTables.tabulatorTablesStrings.header
 import typings.tabulatorTables.tabulatorTablesStrings.hide
@@ -55,7 +56,7 @@ trait OptionsColumns extends js.Object {
   /**By setting the headerVisible option to false you can hide the column headers and present the table as a simple list if needed. */
   var headerVisible: js.UndefOr[Boolean] = js.undefined
   /** By default Tabulator will use the fitData layout mode, which will resize the tables columns to fit the data held in each column, unless you specify a width or minWidth in the column constructor. If the width of all columns exceeds the width of the containing element, a scroll bar will appear. */
-  var layout: js.UndefOr[fitData | fitColumns | fitDataFill | fitDataStretch] = js.undefined
+  var layout: js.UndefOr[fitData | fitColumns | fitDataFill | fitDataStretch | fitDataTable] = js.undefined
   /** To keep the layout of the columns consistent, once the column widths have been set on the first data load (either from the data property in the constructor or the setData function) they will not be changed when new data is loaded.
     If you would prefer that the column widths adjust to the data each time you load it into the table you can set the layoutColumnsOnNewData property to true. */
   var layoutColumnsOnNewData: js.UndefOr[Boolean] = js.undefined
@@ -118,7 +119,7 @@ object OptionsColumns {
     headerSort: js.UndefOr[Boolean] = js.undefined,
     headerSortTristate: js.UndefOr[Boolean] = js.undefined,
     headerVisible: js.UndefOr[Boolean] = js.undefined,
-    layout: fitData | fitColumns | fitDataFill | fitDataStretch = null,
+    layout: fitData | fitColumns | fitDataFill | fitDataStretch | fitDataTable = null,
     layoutColumnsOnNewData: js.UndefOr[Boolean] = js.undefined,
     movableColumns: js.UndefOr[Boolean] = js.undefined,
     nestedFieldSeparator: String | Boolean = null,

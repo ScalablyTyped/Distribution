@@ -22,10 +22,12 @@ package object manifest {
     * add-ons, but, reasons. The MatchPattern class will still refuse privileged schemes for those extensions.
     */
   type MatchPatternUnestricted = java.lang.String
-  type OptionalPermission = typings.firefoxWebextBrowser.browser.manifest._OptionalPermission
+  type OptionalPermission = typings.firefoxWebextBrowser.browser.manifest.OptionalPermissionNoPrompt | typings.firefoxWebextBrowser.browser.manifest._OptionalPermission
+  type OptionalPermissionNoPrompt = typings.firefoxWebextBrowser.browser.manifest._OptionalPermissionNoPrompt
   type OptionalPermissionOrOrigin = typings.firefoxWebextBrowser.browser.manifest.OptionalPermission | typings.firefoxWebextBrowser.browser.manifest.MatchPattern
+  type Permission = java.lang.String | typings.firefoxWebextBrowser.browser.manifest.PermissionNoPrompt | typings.firefoxWebextBrowser.browser.manifest.OptionalPermission | typings.firefoxWebextBrowser.browser.manifest._Permission
   /* _manifest types */
-  type Permission = java.lang.String | typings.firefoxWebextBrowser.browser.manifest.OptionalPermission | typings.firefoxWebextBrowser.browser.manifest._Permission
+  type PermissionNoPrompt = typings.firefoxWebextBrowser.browser.manifest.OptionalPermission | typings.firefoxWebextBrowser.browser.manifest._PermissionNoPrompt
   type PermissionOrOrigin = typings.firefoxWebextBrowser.browser.manifest.Permission | typings.firefoxWebextBrowser.browser.manifest.MatchPattern
   /** @deprecated Event pages are not currently supported. This will run as a persistent background page. */
   type PersistentBackgroundProperty = scala.Boolean
@@ -33,4 +35,5 @@ package object manifest {
   /** @deprecated An unexpected property was found in the WebExtension manifest. */
   type UnrecognizedProperty = js.Any
   type _MatchPattern = typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Lessthansignall_urlsGreaterthansign
+  type _Permission = typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.nativeMessaging
 }

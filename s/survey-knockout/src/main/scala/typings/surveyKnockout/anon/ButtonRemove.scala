@@ -10,7 +10,6 @@ trait ButtonRemove extends js.Object {
   var buttonRemove: String
   var iconAdd: String
   var iconRemove: String
-  var itemValue: String
   var root: String
 }
 
@@ -22,10 +21,9 @@ object ButtonRemove {
     buttonRemove: String,
     iconAdd: String,
     iconRemove: String,
-    itemValue: String,
     root: String
   ): ButtonRemove = {
-    val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], buttonAdd = buttonAdd.asInstanceOf[js.Any], buttonRemove = buttonRemove.asInstanceOf[js.Any], iconAdd = iconAdd.asInstanceOf[js.Any], iconRemove = iconRemove.asInstanceOf[js.Any], itemValue = itemValue.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], buttonAdd = buttonAdd.asInstanceOf[js.Any], buttonRemove = buttonRemove.asInstanceOf[js.Any], iconAdd = iconAdd.asInstanceOf[js.Any], iconRemove = iconRemove.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonRemove]
   }
 }

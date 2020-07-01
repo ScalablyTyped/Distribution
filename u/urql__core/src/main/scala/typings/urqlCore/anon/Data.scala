@@ -16,7 +16,7 @@ trait Data[T /* <: cacheHit | cacheInvalidation | fetchRequest | fetchSuccess | 
 
 object Data {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.urqlCore.urqlCoreStrings.cacheHit | typings.urqlCore.urqlCoreStrings.cacheInvalidation | typings.urqlCore.urqlCoreStrings.fetchRequest | typings.urqlCore.urqlCoreStrings.fetchSuccess | typings.urqlCore.urqlCoreStrings.fetchError | typings.urqlCore.urqlCoreStrings.retryRetrying | java.lang.String */ T](
     data: /* import warning: importer.ImportType#apply Failed type conversion: @urql/core.@urql/core/dist/types/types.DebugEventTypes[T] */ js.Any
   ): Data[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])

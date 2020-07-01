@@ -11,7 +11,7 @@ trait SelectTypeKnob[T /* <: SelectTypeKnobValue */] extends KnobControlConfig[T
 
 object SelectTypeKnob {
   @scala.inline
-  def apply[T](name: String, options: SelectTypeOptionsProp[T], value: T, defaultValue: T = null): SelectTypeKnob[T] = {
+  def apply[/* <: typings.storybookAddonKnobs.selectMod.SelectTypeKnobValue */ T](name: String, options: SelectTypeOptionsProp[T], value: T, defaultValue: T = null): SelectTypeKnob[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectTypeKnob[T]]

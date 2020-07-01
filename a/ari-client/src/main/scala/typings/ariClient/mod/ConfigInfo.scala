@@ -5,12 +5,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ConfigInfo extends js.Object {
+  /**
+    * Default language for media playback.
+    */
   var default_language: String
+  /**
+    * Maximum number of simultaneous channels.
+    */
   var max_channels: js.UndefOr[Double] = js.undefined
+  /**
+    * Maximum load avg on system.
+    */
   var max_load: js.UndefOr[Double] = js.undefined
+  /**
+    * Maximum number of open file handles (files, sockets).
+    */
   var max_open_files: js.UndefOr[Double] = js.undefined
-  /* Properties */
+  /**
+    * Asterisk system name.
+    */
   var name: String
+  /**
+    * Effective user/group id for running Asterisk.
+    */
   var setid: SetId
 }
 

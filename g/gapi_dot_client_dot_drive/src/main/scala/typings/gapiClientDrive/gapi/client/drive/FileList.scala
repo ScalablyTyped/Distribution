@@ -9,8 +9,8 @@ trait FileList extends js.Object {
   var files: js.UndefOr[js.Array[File]] = js.undefined
   /**
     * Whether the search process was incomplete. If true, then some search results may be missing, since all documents were not searched. This may occur when
-    * searching multiple Team Drives with the "user,allTeamDrives" corpora, but all corpora could not be searched. When this happens, it is suggested that
-    * clients narrow their query by choosing a different corpus such as "user" or "teamDrive".
+    * searching multiple drives with the "allDrives" corpora, but all corpora could not be searched. When this happens, it is suggested that clients narrow
+    * their query by choosing a different corpus such as "user" or "drive".
     */
   var incompleteSearch: js.UndefOr[Boolean] = js.undefined
   /** Identifies what kind of resource this is. Value: the fixed string "drive#fileList". */

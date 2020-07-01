@@ -41,7 +41,7 @@ trait Skeleton extends js.Object {
     * @param skel1 - Skeleton holding the first pose to be blended.
     * @param skel2 - Skeleton holding the second pose to be blended.
     * @param alpha - The value controlling the interpolation in relation to the two input
-    * skeletons. The value is in the range 0 to 1, 0 generating skel1, 1 generating skel2 and anything
+    skeletons. The value is in the range 0 to 1, 0 generating skel1, 1 generating skel2 and anything
     in between generating a spherical interpolation between the two.
     */
   def blend(skel1: Skeleton, skel2: Skeleton, alpha: Double): Unit

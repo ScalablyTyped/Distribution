@@ -16,7 +16,7 @@ trait TextAlignProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.O
 
 object TextAlignProps {
   @scala.inline
-  def apply[ThemeType](textAlign: js.UndefOr[Null | (ResponsiveValue[TextAlignProperty, ThemeType])] = js.undefined): TextAlignProps[ThemeType] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](textAlign: js.UndefOr[Null | (ResponsiveValue[TextAlignProperty, ThemeType])] = js.undefined): TextAlignProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(textAlign)) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextAlignProps[ThemeType]]

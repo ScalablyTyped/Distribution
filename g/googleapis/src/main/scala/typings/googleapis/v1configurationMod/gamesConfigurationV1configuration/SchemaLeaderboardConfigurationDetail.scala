@@ -39,14 +39,14 @@ object SchemaLeaderboardConfigurationDetail {
     kind: String = null,
     name: SchemaLocalizedStringBundle = null,
     scoreFormat: SchemaGamesNumberFormatConfiguration = null,
-    sortRank: Int | Double = null
+    sortRank: js.UndefOr[Double] = js.undefined
   ): SchemaLeaderboardConfigurationDetail = {
     val __obj = js.Dynamic.literal()
     if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (scoreFormat != null) __obj.updateDynamic("scoreFormat")(scoreFormat.asInstanceOf[js.Any])
-    if (sortRank != null) __obj.updateDynamic("sortRank")(sortRank.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortRank)) __obj.updateDynamic("sortRank")(sortRank.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLeaderboardConfigurationDetail]
   }
 }

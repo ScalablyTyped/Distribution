@@ -11,7 +11,7 @@ trait PutScheduledUpdateGroupActionType extends js.Object {
     */
   var AutoScalingGroupName: ResourceName = js.native
   /**
-    * The number of EC2 instances that should be running in the Auto Scaling group.
+    * The desired capacity is the initial capacity of the Auto Scaling group after the scheduled action runs and the capacity it attempts to maintain. It can scale beyond this capacity if you add more scaling conditions. 
     */
   var DesiredCapacity: js.UndefOr[AutoScalingGroupDesiredCapacity] = js.native
   /**
@@ -19,11 +19,11 @@ trait PutScheduledUpdateGroupActionType extends js.Object {
     */
   var EndTime: js.UndefOr[TimestampType] = js.native
   /**
-    * The maximum number of instances in the Auto Scaling group.
+    * The maximum size of the Auto Scaling group.
     */
   var MaxSize: js.UndefOr[AutoScalingGroupMaxSize] = js.native
   /**
-    * The minimum number of instances in the Auto Scaling group.
+    * The minimum size of the Auto Scaling group.
     */
   var MinSize: js.UndefOr[AutoScalingGroupMinSize] = js.native
   /**

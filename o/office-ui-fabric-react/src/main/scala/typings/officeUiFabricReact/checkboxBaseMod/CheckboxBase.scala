@@ -28,6 +28,7 @@ class CheckboxBase protected ()
   var _onChange: js.Any = js.native
   var _onFocus: js.Any = js.native
   var _onRenderLabel: js.Any = js.native
+  var _renderContent: js.Any = js.native
   /** Gets the current checked state. */
   /* CompleteClass */
   override var checked: Boolean = js.native

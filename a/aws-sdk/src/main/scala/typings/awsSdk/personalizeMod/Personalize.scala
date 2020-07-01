@@ -91,6 +91,19 @@ trait Personalize extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateEventTrackerResponse, Unit]
   ): Request[CreateEventTrackerResponse, AWSError] = js.native
   /**
+    * Creates a recommendation filter. For more information, see Using Filters with Amazon Personalize.
+    */
+  def createFilter(): Request[CreateFilterResponse, AWSError] = js.native
+  def createFilter(callback: js.Function2[/* err */ AWSError, /* data */ CreateFilterResponse, Unit]): Request[CreateFilterResponse, AWSError] = js.native
+  /**
+    * Creates a recommendation filter. For more information, see Using Filters with Amazon Personalize.
+    */
+  def createFilter(params: CreateFilterRequest): Request[CreateFilterResponse, AWSError] = js.native
+  def createFilter(
+    params: CreateFilterRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateFilterResponse, Unit]
+  ): Request[CreateFilterResponse, AWSError] = js.native
+  /**
     * Creates an Amazon Personalize schema from the specified schema string. The schema you create must be in Avro JSON format. Amazon Personalize recognizes three schema variants. Each schema is associated with a dataset type and has a set of required field and keywords. You specify a schema when you call CreateDataset.  Related APIs     ListSchemas     DescribeSchema     DeleteSchema   
     */
   def createSchema(): Request[CreateSchemaResponse, AWSError] = js.native
@@ -179,6 +192,19 @@ trait Personalize extends Service {
   def deleteEventTracker(params: DeleteEventTrackerRequest): Request[js.Object, AWSError] = js.native
   def deleteEventTracker(
     params: DeleteEventTrackerRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a filter.
+    */
+  def deleteFilter(): Request[js.Object, AWSError] = js.native
+  def deleteFilter(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a filter.
+    */
+  def deleteFilter(params: DeleteFilterRequest): Request[js.Object, AWSError] = js.native
+  def deleteFilter(
+    params: DeleteFilterRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
@@ -311,6 +337,19 @@ trait Personalize extends Service {
     params: DescribeFeatureTransformationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeFeatureTransformationResponse, Unit]
   ): Request[DescribeFeatureTransformationResponse, AWSError] = js.native
+  /**
+    * Describes a filter's properties.
+    */
+  def describeFilter(): Request[DescribeFilterResponse, AWSError] = js.native
+  def describeFilter(callback: js.Function2[/* err */ AWSError, /* data */ DescribeFilterResponse, Unit]): Request[DescribeFilterResponse, AWSError] = js.native
+  /**
+    * Describes a filter's properties.
+    */
+  def describeFilter(params: DescribeFilterRequest): Request[DescribeFilterResponse, AWSError] = js.native
+  def describeFilter(
+    params: DescribeFilterRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFilterResponse, Unit]
+  ): Request[DescribeFilterResponse, AWSError] = js.native
   /**
     * Describes a recipe. A recipe contains three items:   An algorithm that trains a model.   Hyperparameters that govern the training.   Feature transformation information for modifying the input data before training.   Amazon Personalize provides a set of predefined recipes. You specify a recipe when you create a solution with the CreateSolution API. CreateSolution trains a model by using the algorithm in the specified recipe and a training dataset. The solution, when deployed as a campaign, can provide recommendations using the GetRecommendations API.
     */
@@ -454,6 +493,19 @@ trait Personalize extends Service {
     params: ListEventTrackersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListEventTrackersResponse, Unit]
   ): Request[ListEventTrackersResponse, AWSError] = js.native
+  /**
+    * Lists all filters that belong to a given dataset group.
+    */
+  def listFilters(): Request[ListFiltersResponse, AWSError] = js.native
+  def listFilters(callback: js.Function2[/* err */ AWSError, /* data */ ListFiltersResponse, Unit]): Request[ListFiltersResponse, AWSError] = js.native
+  /**
+    * Lists all filters that belong to a given dataset group.
+    */
+  def listFilters(params: ListFiltersRequest): Request[ListFiltersResponse, AWSError] = js.native
+  def listFilters(
+    params: ListFiltersRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListFiltersResponse, Unit]
+  ): Request[ListFiltersResponse, AWSError] = js.native
   /**
     * Returns a list of available recipes. The response provides the properties for each recipe, including the recipe's Amazon Resource Name (ARN).
     */

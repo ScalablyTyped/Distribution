@@ -40,16 +40,16 @@ trait SchemaContainerPort extends js.Object {
 object SchemaContainerPort {
   @scala.inline
   def apply(
-    containerPort: Int | Double = null,
+    containerPort: js.UndefOr[Double] = js.undefined,
     hostIP: String = null,
-    hostPort: Int | Double = null,
+    hostPort: js.UndefOr[Double] = js.undefined,
     name: String = null,
     protocol: String = null
   ): SchemaContainerPort = {
     val __obj = js.Dynamic.literal()
-    if (containerPort != null) __obj.updateDynamic("containerPort")(containerPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(containerPort)) __obj.updateDynamic("containerPort")(containerPort.get.asInstanceOf[js.Any])
     if (hostIP != null) __obj.updateDynamic("hostIP")(hostIP.asInstanceOf[js.Any])
-    if (hostPort != null) __obj.updateDynamic("hostPort")(hostPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(hostPort)) __obj.updateDynamic("hostPort")(hostPort.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaContainerPort]

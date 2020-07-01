@@ -45,7 +45,7 @@ object SchemaNetwork {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePrivateAddress)) __obj.updateDynamic("usePrivateAddress")(usePrivateAddress.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePrivateAddress)) __obj.updateDynamic("usePrivateAddress")(usePrivateAddress.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNetwork]
   }
 }

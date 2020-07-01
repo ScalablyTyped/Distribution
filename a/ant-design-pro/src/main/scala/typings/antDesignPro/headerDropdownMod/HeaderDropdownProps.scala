@@ -29,6 +29,7 @@ object HeaderDropdownProps {
   @scala.inline
   def apply(
     align: Align = null,
+    arrow: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     forceRender: js.UndefOr[Boolean] = js.undefined,
@@ -48,6 +49,7 @@ object HeaderDropdownProps {
   ): HeaderDropdownProps = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrow)) __obj.updateDynamic("arrow")(arrow.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender.get.asInstanceOf[js.Any])

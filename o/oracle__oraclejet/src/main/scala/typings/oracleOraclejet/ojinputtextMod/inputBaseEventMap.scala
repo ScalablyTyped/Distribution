@@ -54,7 +54,7 @@ trait inputBaseEventMap[V, SP /* <: inputBaseSettableProperties[V, SV, V] */, SV
 
 object inputBaseEventMap {
   @scala.inline
-  def apply[V, SP, SV, RV](
+  def apply[V, /* <: typings.oracleOraclejet.ojinputtextMod.inputBaseSettableProperties[V, SV, V] */ SP, SV, RV](
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,

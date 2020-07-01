@@ -10,7 +10,7 @@ trait ThemeTheme[Theme /* <: js.Object */] extends js.Object {
 
 object ThemeTheme {
   @scala.inline
-  def apply[Theme](theme: Theme = null): ThemeTheme[Theme] = {
+  def apply[/* <: js.Object */ Theme](theme: Theme = null): ThemeTheme[Theme] = {
     val __obj = js.Dynamic.literal()
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeTheme[Theme]]

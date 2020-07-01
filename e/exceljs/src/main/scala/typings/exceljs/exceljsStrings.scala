@@ -3,6 +3,7 @@ package typings.exceljs
 import typings.exceljs.mod.BorderStyle
 import typings.exceljs.mod.CellIsOperators
 import typings.exceljs.mod.CfvoTypes
+import typings.exceljs.mod.CommentEditAs
 import typings.exceljs.mod.ContainsTextOperators
 import typings.exceljs.mod.DataValidationOperator
 import typings.exceljs.mod.FillPatterns
@@ -76,6 +77,9 @@ object exceljsStrings {
   
   @js.native
   sealed trait DEFLATE extends js.Object
+  
+  @js.native
+  sealed trait False extends js.Object
   
   @js.native
   sealed trait NA extends js.Object
@@ -291,7 +295,13 @@ object exceljsStrings {
   sealed trait TableStyleMedium9 extends js.Object
   
   @js.native
+  sealed trait True extends js.Object
+  
+  @js.native
   sealed trait aboveAverage extends js.Object
+  
+  @js.native
+  sealed trait absolute extends CommentEditAs
   
   @js.native
   sealed trait angle extends js.Object
@@ -587,6 +597,9 @@ object exceljsStrings {
   sealed trait num extends CfvoTypes
   
   @js.native
+  sealed trait oneCells extends CommentEditAs
+  
+  @js.native
   sealed trait overThenDown extends js.Object
   
   @js.native
@@ -689,6 +702,9 @@ object exceljsStrings {
   sealed trait topRight extends js.Object
   
   @js.native
+  sealed trait twoCells extends CommentEditAs
+  
+  @js.native
   sealed trait `var` extends js.Object
   
   @js.native
@@ -748,6 +764,8 @@ object exceljsStrings {
   def `5Rating`: `5Rating` = "5Rating".asInstanceOf[`5Rating`]
   @scala.inline
   def DEFLATE: DEFLATE = "DEFLATE".asInstanceOf[DEFLATE]
+  @scala.inline
+  def False: False = "False".asInstanceOf[False]
   @scala.inline
   def NA: NA = "NA".asInstanceOf[NA]
   @scala.inline
@@ -891,7 +909,11 @@ object exceljsStrings {
   @scala.inline
   def TableStyleMedium9: TableStyleMedium9 = "TableStyleMedium9".asInstanceOf[TableStyleMedium9]
   @scala.inline
+  def True: True = "True".asInstanceOf[True]
+  @scala.inline
   def aboveAverage: aboveAverage = "aboveAverage".asInstanceOf[aboveAverage]
+  @scala.inline
+  def absolute: absolute = "absolute".asInstanceOf[absolute]
   @scala.inline
   def angle: angle = "angle".asInstanceOf[angle]
   @scala.inline
@@ -1083,6 +1105,8 @@ object exceljsStrings {
   @scala.inline
   def num: num = "num".asInstanceOf[num]
   @scala.inline
+  def oneCells: oneCells = "oneCells".asInstanceOf[oneCells]
+  @scala.inline
   def overThenDown: overThenDown = "overThenDown".asInstanceOf[overThenDown]
   @scala.inline
   def pageBreakPreview: pageBreakPreview = "pageBreakPreview".asInstanceOf[pageBreakPreview]
@@ -1150,6 +1174,8 @@ object exceljsStrings {
   def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
   @scala.inline
   def topRight: topRight = "topRight".asInstanceOf[topRight]
+  @scala.inline
+  def twoCells: twoCells = "twoCells".asInstanceOf[twoCells]
   @scala.inline
   def `var`: `var` = "var".asInstanceOf[`var`]
   @scala.inline

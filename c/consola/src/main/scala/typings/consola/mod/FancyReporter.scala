@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class FancyReporter () extends BasicReporter {
   def this(options: FancyReporterOptions) = this()
-  /* protected */ def formatType(logObj: ConsolaLogObject): Unit = js.native
+  /* protected */ def formatType(logObj: ConsolaReporterLogObject): Unit = js.native
 }
 

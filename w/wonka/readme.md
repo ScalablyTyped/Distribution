@@ -1,7 +1,7 @@
 
 # Scala.js typings for wonka
 
-Typings are for version 4.0.13
+Typings are for version 4.0.14
 
 ## Library description:
 A fast push & pull stream library for Reason/OCaml, Flow, and TypeScript

@@ -29,7 +29,7 @@ trait TaskMethods[A /* <: js.Array[_] */, R] extends js.Object {
 
 object TaskMethods {
   @scala.inline
-  def apply[A, R](
+  def apply[/* <: js.Array[_] */ A, R](
     `match`: TaskMatchProps[js.Any, js.Any, js.Any, A, R] => js.Any | js.Any | js.Any,
     reset: () => Unit,
     setState: TaskOptions[A, R] => Unit,

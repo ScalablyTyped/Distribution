@@ -77,7 +77,9 @@ trait _Middleware extends js.Object {
       /* context */ CompletionContext, 
       /* token */ typings.vscode.mod.CancellationToken, 
       /* next */ ProvideCompletionItemsSignature, 
-      ProviderResult[js.Array[typings.vscode.mod.CompletionItem] | typings.vscode.mod.CompletionList]
+      ProviderResult[
+        js.Array[typings.vscode.mod.CompletionItem] | typings.vscode.mod.CompletionList[typings.vscode.mod.CompletionItem]
+      ]
     ]
   ] = js.undefined
   var provideDefinition: js.UndefOr[
@@ -291,7 +293,9 @@ object _Middleware {
       /* context */ CompletionContext, 
       /* token */ typings.vscode.mod.CancellationToken, 
       /* next */ ProvideCompletionItemsSignature, 
-      ProviderResult[js.Array[typings.vscode.mod.CompletionItem] | typings.vscode.mod.CompletionList]
+      ProviderResult[
+        js.Array[typings.vscode.mod.CompletionItem] | typings.vscode.mod.CompletionList[typings.vscode.mod.CompletionItem]
+      ]
     ] = null,
     provideDefinition: js.ThisFunction4[
       /* this */ Unit, 

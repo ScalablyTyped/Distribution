@@ -7,47 +7,47 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Step extends js.Object {
   /**
-    *  URL to the artifact for the execution step. 
+    *  The URL to the artifact for the execution step. 
     */
   var artifactsUrl: js.UndefOr[ArtifactsUrl] = js.native
   /**
-    *  The context for current step, will include build image if step is build. 
+    *  The context for the current step. Includes a build image if the step is build. 
     */
   var context: js.UndefOr[Context] = js.native
   /**
-    *  End date/ time of the execution step. 
+    *  The end date and time of the execution step. 
     */
   var endTime: EndTime = js.native
   /**
-    *  URL to the logs for the execution step. 
+    *  The URL to the logs for the execution step. 
     */
   var logUrl: js.UndefOr[LogUrl] = js.native
   /**
-    *  List of screenshot URLs for the execution step, if relevant. 
+    *  The list of screenshot URLs for the execution step, if relevant. 
     */
   var screenshots: js.UndefOr[Screenshots] = js.native
   /**
-    *  Start date/ time of the execution step. 
+    *  The start date and time of the execution step. 
     */
   var startTime: StartTime = js.native
   /**
-    *  Status of the execution step. 
+    *  The status of the execution step. 
     */
   var status: JobStatus = js.native
   /**
-    *  The reason for current step status. 
+    *  The reason for the current step status. 
     */
   var statusReason: js.UndefOr[StatusReason] = js.native
   /**
-    *  Name of the execution step. 
+    *  The name of the execution step. 
     */
   var stepName: StepName = js.native
   /**
-    *  URL to the test artifact for the execution step. 
+    *  The URL to the test artifact for the execution step. 
     */
   var testArtifactsUrl: js.UndefOr[TestArtifactsUrl] = js.native
   /**
-    *  URL to the test config for the execution step. 
+    *  The URL to the test configuration for the execution step. 
     */
   var testConfigUrl: js.UndefOr[TestConfigUrl] = js.native
 }

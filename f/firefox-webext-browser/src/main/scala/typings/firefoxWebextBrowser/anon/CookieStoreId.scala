@@ -2,6 +2,7 @@ package typings.firefoxWebextBrowser.anon
 
 import typings.firefoxWebextBrowser.browser.webRequest.HttpHeaders
 import typings.firefoxWebextBrowser.browser.webRequest.ResourceType
+import typings.firefoxWebextBrowser.browser.webRequest.UrlClassification
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +23,6 @@ trait CookieStoreId extends js.Object {
   var fromCache: Boolean
   /** True for private browsing requests. */
   var incognito: js.UndefOr[Boolean] = js.undefined
-  /**
-    * The server IP address that the request was actually sent to. Note that it may be a literal IPv6 address.
-    */
-  var ip: js.UndefOr[String] = js.undefined
   /** Standard HTTP method. */
   var method: String
   /** URL of the resource that triggered this request. */
@@ -41,11 +38,15 @@ trait CookieStoreId extends js.Object {
   var requestId: String
   /** The ID of the tab in which the request takes place. Set to -1 if the request isn't related to a tab. */
   var tabId: Double
+  /** Indicates if this request and its content window hierarchy is third party. */
+  var thirdParty: Boolean
   /** The time when this signal is triggered, in milliseconds since the epoch. */
   var timeStamp: Double
   /** How the requested resource will be used. */
   var `type`: ResourceType
   var url: String
+  /** Url classification if the request has been classified. */
+  var urlClassification: UrlClassification
 }
 
 object CookieStoreId {
@@ -57,22 +58,22 @@ object CookieStoreId {
     parentFrameId: Double,
     requestId: String,
     tabId: Double,
+    thirdParty: Boolean,
     timeStamp: Double,
     `type`: ResourceType,
     url: String,
+    urlClassification: UrlClassification,
     cookieStoreId: String = null,
     documentUrl: String = null,
     incognito: js.UndefOr[Boolean] = js.undefined,
-    ip: String = null,
     originUrl: String = null,
     requestHeaders: HttpHeaders = null
   ): CookieStoreId = {
-    val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], fromCache = fromCache.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], parentFrameId = parentFrameId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], fromCache = fromCache.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], parentFrameId = parentFrameId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], thirdParty = thirdParty.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], urlClassification = urlClassification.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (cookieStoreId != null) __obj.updateDynamic("cookieStoreId")(cookieStoreId.asInstanceOf[js.Any])
     if (documentUrl != null) __obj.updateDynamic("documentUrl")(documentUrl.asInstanceOf[js.Any])
     if (!js.isUndefined(incognito)) __obj.updateDynamic("incognito")(incognito.get.asInstanceOf[js.Any])
-    if (ip != null) __obj.updateDynamic("ip")(ip.asInstanceOf[js.Any])
     if (originUrl != null) __obj.updateDynamic("originUrl")(originUrl.asInstanceOf[js.Any])
     if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
     __obj.asInstanceOf[CookieStoreId]

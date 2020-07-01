@@ -10,6 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Operation extends js.Object {
+  var cacheConfig: typings.relayRuntime.relayRuntimeTypesMod.CacheConfig | Null
   var operation: OperationDescriptor
   var optimisticResponse: js.UndefOr[StringDictionary[js.Any] | Null] = js.undefined
   var optimisticUpdater: js.UndefOr[SelectorStoreUpdater[js.Object] | Null] = js.undefined
@@ -21,12 +22,13 @@ object Operation {
   @scala.inline
   def apply(
     operation: OperationDescriptor,
+    cacheConfig: typings.relayRuntime.relayRuntimeTypesMod.CacheConfig = null,
     optimisticResponse: js.UndefOr[Null | StringDictionary[js.Any]] = js.undefined,
     optimisticUpdater: js.UndefOr[Null | ((/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit)] = js.undefined,
     updater: js.UndefOr[Null | ((/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit)] = js.undefined,
     uploadables: js.UndefOr[Null | UploadableMap] = js.undefined
   ): Operation = {
-    val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any], cacheConfig = cacheConfig.asInstanceOf[js.Any])
     if (!js.isUndefined(optimisticResponse)) __obj.updateDynamic("optimisticResponse")(optimisticResponse.asInstanceOf[js.Any])
     if (!js.isUndefined(optimisticUpdater)) __obj.updateDynamic("optimisticUpdater")(if (optimisticUpdater != null) js.Any.fromFunction2(optimisticUpdater.asInstanceOf[(/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit]) else null)
     if (!js.isUndefined(updater)) __obj.updateDynamic("updater")(if (updater != null) js.Any.fromFunction2(updater.asInstanceOf[(/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit]) else null)

@@ -27,7 +27,7 @@ object SchemaGoogleCloudHealthcareV1alpha2DicomBigQueryDestination {
   @scala.inline
   def apply(force: js.UndefOr[Boolean] = js.undefined, tableUri: String = null): SchemaGoogleCloudHealthcareV1alpha2DicomBigQueryDestination = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
     if (tableUri != null) __obj.updateDynamic("tableUri")(tableUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudHealthcareV1alpha2DicomBigQueryDestination]
   }

@@ -44,7 +44,7 @@ trait OptionsPagination extends js.Object {
   var paginationSize: js.UndefOr[Double] = js.undefined
   /**  Setting this option to true will cause Tabulator to create a list of page size options, that are multiples of the current page size. In the example below, the list will have the values of 5, 10, 15 and 20.
     When using the page size selector like this, if you use the setPageSize function to set the page size to a value not in the list, the list will be regenerated using the new page size as the starting valuer    */
-  var paginationSizeSelector: js.UndefOr[`true` | js.Array[Double]] = js.undefined
+  var paginationSizeSelector: js.UndefOr[`true` | (js.Array[_ | Double])] = js.undefined
 }
 
 object OptionsPagination {
@@ -58,7 +58,7 @@ object OptionsPagination {
     paginationElement: HTMLElement | String = null,
     paginationInitialPage: js.UndefOr[Double] = js.undefined,
     paginationSize: js.UndefOr[Double] = js.undefined,
-    paginationSizeSelector: `true` | js.Array[Double] = null
+    paginationSizeSelector: `true` | (js.Array[_ | Double]) = null
   ): OptionsPagination = {
     val __obj = js.Dynamic.literal()
     if (pagination != null) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])

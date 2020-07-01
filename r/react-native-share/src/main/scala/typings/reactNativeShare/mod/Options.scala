@@ -10,6 +10,7 @@ trait Options extends js.Object {
   var failOnCancel: js.UndefOr[Boolean] = js.undefined
   var filename: js.UndefOr[String] = js.undefined
   var message: js.UndefOr[String] = js.undefined
+  var saveToFiles: js.UndefOr[Boolean] = js.undefined
   var showAppsToView: js.UndefOr[Boolean] = js.undefined
   var subject: js.UndefOr[String] = js.undefined
   var title: js.UndefOr[String] = js.undefined
@@ -26,6 +27,7 @@ object Options {
     failOnCancel: js.UndefOr[Boolean] = js.undefined,
     filename: String = null,
     message: String = null,
+    saveToFiles: js.UndefOr[Boolean] = js.undefined,
     showAppsToView: js.UndefOr[Boolean] = js.undefined,
     subject: String = null,
     title: String = null,
@@ -39,6 +41,7 @@ object Options {
     if (!js.isUndefined(failOnCancel)) __obj.updateDynamic("failOnCancel")(failOnCancel.get.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveToFiles)) __obj.updateDynamic("saveToFiles")(saveToFiles.get.asInstanceOf[js.Any])
     if (!js.isUndefined(showAppsToView)) __obj.updateDynamic("showAppsToView")(showAppsToView.get.asInstanceOf[js.Any])
     if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

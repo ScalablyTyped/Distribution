@@ -24,7 +24,7 @@ trait GotBodyOptions[E /* <: String | Null */] extends GotOptions[E] {
 
 object GotBodyOptions {
   @scala.inline
-  def apply[E](
+  def apply[/* <: java.lang.String | scala.Null */ E](
     _defaultAgent: Agent = null,
     agent: Agent | Boolean | AgentOptions = null,
     auth: js.UndefOr[Null | String] = js.undefined,

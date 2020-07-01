@@ -18,7 +18,7 @@ trait EventBridgeEvent[TDetailType /* <: String */, TDetail] extends js.Object {
 
 object EventBridgeEvent {
   @scala.inline
-  def apply[TDetailType, TDetail](
+  def apply[/* <: java.lang.String */ TDetailType, TDetail](
     account: String,
     detail: TDetail,
     `detail-type`: TDetailType,

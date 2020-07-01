@@ -22,8 +22,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.antd.dropdownDropdownMod.DropDownProps because var conflicts: className, prefixCls. Inlined trigger, overlay, onVisibleChange, visible, disabled, align, getPopupContainer, transitionName, placement, overlayClassName, overlayStyle, forceRender, mouseEnterDelay, mouseLeaveDelay, openClassName */ trait DropdownButtonProps extends ButtonGroupProps {
+- typings.antd.dropdownDropdownMod.DropDownProps because var conflicts: className, prefixCls. Inlined arrow, trigger, overlay, onVisibleChange, visible, disabled, align, getPopupContainer, transitionName, placement, overlayClassName, overlayStyle, forceRender, mouseEnterDelay, mouseLeaveDelay, openClassName */ trait DropdownButtonProps extends ButtonGroupProps {
   var align: js.UndefOr[Align] = js.undefined
+  var arrow: js.UndefOr[Boolean] = js.undefined
   var buttonsRender: js.UndefOr[js.Function1[/* buttons */ js.Array[ReactNode], js.Array[ReactNode]]] = js.undefined
   var children: js.UndefOr[ReactNode] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
@@ -53,6 +54,7 @@ object DropdownButtonProps {
   def apply(
     overlay: ReactElement | OverlayFunc,
     align: Align = null,
+    arrow: js.UndefOr[Boolean] = js.undefined,
     buttonsRender: /* buttons */ js.Array[ReactNode] => js.Array[ReactNode] = null,
     children: ReactNode = null,
     className: String = null,
@@ -81,6 +83,7 @@ object DropdownButtonProps {
   ): DropdownButtonProps = {
     val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrow)) __obj.updateDynamic("arrow")(arrow.get.asInstanceOf[js.Any])
     if (buttonsRender != null) __obj.updateDynamic("buttonsRender")(js.Any.fromFunction1(buttonsRender))
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])

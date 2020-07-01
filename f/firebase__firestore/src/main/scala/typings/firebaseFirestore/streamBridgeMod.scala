@@ -1,8 +1,8 @@
 package typings.firebaseFirestore
 
 import typings.firebaseFirestore.anon.CloseFn
-import typings.firebaseFirestore.connectionMod.Stream
 import typings.firebaseFirestore.errorMod.FirestoreError
+import typings.firebaseFirestore.remoteConnectionMod.Stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

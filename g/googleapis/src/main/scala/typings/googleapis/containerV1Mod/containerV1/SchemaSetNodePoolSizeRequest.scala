@@ -48,7 +48,7 @@ object SchemaSetNodePoolSizeRequest {
   def apply(
     clusterId: String = null,
     name: String = null,
-    nodeCount: Int | Double = null,
+    nodeCount: js.UndefOr[Double] = js.undefined,
     nodePoolId: String = null,
     projectId: String = null,
     zone: String = null
@@ -56,7 +56,7 @@ object SchemaSetNodePoolSizeRequest {
     val __obj = js.Dynamic.literal()
     if (clusterId != null) __obj.updateDynamic("clusterId")(clusterId.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nodeCount != null) __obj.updateDynamic("nodeCount")(nodeCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeCount)) __obj.updateDynamic("nodeCount")(nodeCount.get.asInstanceOf[js.Any])
     if (nodePoolId != null) __obj.updateDynamic("nodePoolId")(nodePoolId.asInstanceOf[js.Any])
     if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])

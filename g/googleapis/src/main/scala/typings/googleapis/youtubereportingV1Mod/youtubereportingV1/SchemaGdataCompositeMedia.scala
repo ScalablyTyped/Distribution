@@ -61,7 +61,7 @@ object SchemaGdataCompositeMedia {
     blobRef: String = null,
     blobstore2Info: SchemaGdataBlobstore2Info = null,
     cosmoBinaryReference: String = null,
-    crc32cHash: Int | Double = null,
+    crc32cHash: js.UndefOr[Double] = js.undefined,
     `inline`: String = null,
     length: String = null,
     md5Hash: String = null,
@@ -74,7 +74,7 @@ object SchemaGdataCompositeMedia {
     if (blobRef != null) __obj.updateDynamic("blobRef")(blobRef.asInstanceOf[js.Any])
     if (blobstore2Info != null) __obj.updateDynamic("blobstore2Info")(blobstore2Info.asInstanceOf[js.Any])
     if (cosmoBinaryReference != null) __obj.updateDynamic("cosmoBinaryReference")(cosmoBinaryReference.asInstanceOf[js.Any])
-    if (crc32cHash != null) __obj.updateDynamic("crc32cHash")(crc32cHash.asInstanceOf[js.Any])
+    if (!js.isUndefined(crc32cHash)) __obj.updateDynamic("crc32cHash")(crc32cHash.get.asInstanceOf[js.Any])
     if (`inline` != null) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (md5Hash != null) __obj.updateDynamic("md5Hash")(md5Hash.asInstanceOf[js.Any])

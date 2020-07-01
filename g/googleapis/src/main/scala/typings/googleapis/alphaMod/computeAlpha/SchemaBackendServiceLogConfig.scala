@@ -27,10 +27,10 @@ trait SchemaBackendServiceLogConfig extends js.Object {
 
 object SchemaBackendServiceLogConfig {
   @scala.inline
-  def apply(enable: js.UndefOr[Boolean] = js.undefined, sampleRate: Int | Double = null): SchemaBackendServiceLogConfig = {
+  def apply(enable: js.UndefOr[Boolean] = js.undefined, sampleRate: js.UndefOr[Double] = js.undefined): SchemaBackendServiceLogConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
-    if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleRate)) __obj.updateDynamic("sampleRate")(sampleRate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBackendServiceLogConfig]
   }
 }

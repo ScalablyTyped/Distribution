@@ -14,11 +14,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * There are many ways to format schedules of public transport routes.
+  * This one tries to balance the amount of data and consumability.
+  * It is specifically geared towards urban public transport, with frequent trains and homogenous travels.
+  */
 trait Schedule extends js.Object {
   var id: String
   var mode: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking
   var route: String
   var sequence: js.Array[ArrivalDeparture]
+  /** array of Unix timestamps */
   var starts: js.Array[String]
   var `type`: schedule
 }

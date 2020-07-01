@@ -13,7 +13,7 @@ trait Params[RT /* <: js.UndefOr[ResponseType] */] extends js.Object {
 
 object Params {
   @scala.inline
-  def apply[RT](params: js.UndefOr[Null | RefinedParams[RT]] = js.undefined, selector: String = null): Params[RT] = {
+  def apply[/* <: js.UndefOr[typings.k6.httpMod.ResponseType] */ RT](params: js.UndefOr[Null | RefinedParams[RT]] = js.undefined, selector: String = null): Params[RT] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(params)) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])

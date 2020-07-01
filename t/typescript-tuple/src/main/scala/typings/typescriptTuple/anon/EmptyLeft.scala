@@ -14,7 +14,7 @@ trait EmptyLeft[Right /* <: js.Array[_] */, Left /* <: js.Array[_] */] extends j
 
 object EmptyLeft {
   @scala.inline
-  def apply[Right, Left](emptyLeft: Right, infiniteLeft: ERROR, multiLeft: js.Any, singleLeft: Prepend[Right, _]): EmptyLeft[Right, Left] = {
+  def apply[/* <: js.Array[_] */ Right, /* <: js.Array[_] */ Left](emptyLeft: Right, infiniteLeft: ERROR, multiLeft: js.Any, singleLeft: Prepend[Right, _]): EmptyLeft[Right, Left] = {
     val __obj = js.Dynamic.literal(emptyLeft = emptyLeft.asInstanceOf[js.Any], infiniteLeft = infiniteLeft.asInstanceOf[js.Any], multiLeft = multiLeft.asInstanceOf[js.Any], singleLeft = singleLeft.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmptyLeft[Right, Left]]
   }

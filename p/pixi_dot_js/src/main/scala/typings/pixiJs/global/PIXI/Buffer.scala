@@ -37,7 +37,7 @@ object Buffer extends js.Object {
     * Helper function that creates a buffer based on an array or TypedArray
     *
     * @static
-    * @param {ArrayBufferView | number[]} data the TypedArray that the buffer will store. If this is a regular Array it will be converted to a Float32Array.
+    * @param {ArrayBufferView | number[]} data - the TypedArray that the buffer will store. If this is a regular Array it will be converted to a Float32Array.
     * @return {PIXI.Buffer} A new Buffer based on the data provided.
     */
   def from(data: ArrayBufferView): typings.pixiJs.PIXI.Buffer = js.native

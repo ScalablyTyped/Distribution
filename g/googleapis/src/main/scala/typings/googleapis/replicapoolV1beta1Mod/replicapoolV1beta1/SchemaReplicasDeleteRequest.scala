@@ -19,7 +19,7 @@ object SchemaReplicasDeleteRequest {
   @scala.inline
   def apply(abandonInstance: js.UndefOr[Boolean] = js.undefined): SchemaReplicasDeleteRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(abandonInstance)) __obj.updateDynamic("abandonInstance")(abandonInstance.asInstanceOf[js.Any])
+    if (!js.isUndefined(abandonInstance)) __obj.updateDynamic("abandonInstance")(abandonInstance.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReplicasDeleteRequest]
   }
 }

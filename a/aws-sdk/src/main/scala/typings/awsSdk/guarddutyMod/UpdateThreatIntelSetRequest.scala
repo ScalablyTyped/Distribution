@@ -15,7 +15,7 @@ trait UpdateThreatIntelSetRequest extends js.Object {
     */
   var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
   /**
-    * The updated URI of the file that contains the ThreateIntelSet. For example: .
+    * The updated URI of the file that contains the ThreateIntelSet. For example: https://s3.us-west-2.amazonaws.com/my-bucket/my-object-key.
     */
   var Location: js.UndefOr[typings.awsSdk.guarddutyMod.Location] = js.native
   /**

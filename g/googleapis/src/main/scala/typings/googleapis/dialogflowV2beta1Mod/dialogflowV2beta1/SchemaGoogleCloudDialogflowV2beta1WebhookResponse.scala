@@ -68,7 +68,7 @@ object SchemaGoogleCloudDialogflowV2beta1WebhookResponse {
     source: String = null
   ): SchemaGoogleCloudDialogflowV2beta1WebhookResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(endInteraction)) __obj.updateDynamic("endInteraction")(endInteraction.asInstanceOf[js.Any])
+    if (!js.isUndefined(endInteraction)) __obj.updateDynamic("endInteraction")(endInteraction.get.asInstanceOf[js.Any])
     if (followupEventInput != null) __obj.updateDynamic("followupEventInput")(followupEventInput.asInstanceOf[js.Any])
     if (fulfillmentMessages != null) __obj.updateDynamic("fulfillmentMessages")(fulfillmentMessages.asInstanceOf[js.Any])
     if (fulfillmentText != null) __obj.updateDynamic("fulfillmentText")(fulfillmentText.asInstanceOf[js.Any])

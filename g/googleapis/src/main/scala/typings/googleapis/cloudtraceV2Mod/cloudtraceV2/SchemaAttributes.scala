@@ -32,11 +32,11 @@ object SchemaAttributes {
   @scala.inline
   def apply(
     attributeMap: StringDictionary[SchemaAttributeValue] = null,
-    droppedAttributesCount: Int | Double = null
+    droppedAttributesCount: js.UndefOr[Double] = js.undefined
   ): SchemaAttributes = {
     val __obj = js.Dynamic.literal()
     if (attributeMap != null) __obj.updateDynamic("attributeMap")(attributeMap.asInstanceOf[js.Any])
-    if (droppedAttributesCount != null) __obj.updateDynamic("droppedAttributesCount")(droppedAttributesCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(droppedAttributesCount)) __obj.updateDynamic("droppedAttributesCount")(droppedAttributesCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAttributes]
   }
 }

@@ -21,6 +21,7 @@ trait PartialTwitchExtContext extends js.Object {
   var displayResolution: js.UndefOr[String] = js.undefined
   var game: js.UndefOr[String] = js.undefined
   var hlsLatencyBroadcaster: js.UndefOr[Double] = js.undefined
+  var hostingInfo: js.UndefOr[HostedChannelId] = js.undefined
   var isFullScreen: js.UndefOr[Boolean] = js.undefined
   var isMuted: js.UndefOr[Boolean] = js.undefined
   var isPaused: js.UndefOr[Boolean] = js.undefined
@@ -42,6 +43,7 @@ object PartialTwitchExtContext {
     displayResolution: String = null,
     game: String = null,
     hlsLatencyBroadcaster: js.UndefOr[Double] = js.undefined,
+    hostingInfo: HostedChannelId = null,
     isFullScreen: js.UndefOr[Boolean] = js.undefined,
     isMuted: js.UndefOr[Boolean] = js.undefined,
     isPaused: js.UndefOr[Boolean] = js.undefined,
@@ -60,6 +62,7 @@ object PartialTwitchExtContext {
     if (displayResolution != null) __obj.updateDynamic("displayResolution")(displayResolution.asInstanceOf[js.Any])
     if (game != null) __obj.updateDynamic("game")(game.asInstanceOf[js.Any])
     if (!js.isUndefined(hlsLatencyBroadcaster)) __obj.updateDynamic("hlsLatencyBroadcaster")(hlsLatencyBroadcaster.get.asInstanceOf[js.Any])
+    if (hostingInfo != null) __obj.updateDynamic("hostingInfo")(hostingInfo.asInstanceOf[js.Any])
     if (!js.isUndefined(isFullScreen)) __obj.updateDynamic("isFullScreen")(isFullScreen.get.asInstanceOf[js.Any])
     if (!js.isUndefined(isMuted)) __obj.updateDynamic("isMuted")(isMuted.get.asInstanceOf[js.Any])
     if (!js.isUndefined(isPaused)) __obj.updateDynamic("isPaused")(isPaused.get.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.googleapis.v3Mod.analyticsV3
 
-import typings.googleapis.AnonExcludeConditions
-import typings.googleapis.AnonIncludeConditions
+import typings.googleapis.anon.ExcludeConditions
+import typings.googleapis.anon.IncludeConditions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait SchemaRemarketingAudience extends js.Object {
     * The simple audience definition that will cause a user to be added to an
     * audience.
     */
-  var audienceDefinition: js.UndefOr[AnonIncludeConditions] = js.native
+  var audienceDefinition: js.UndefOr[IncludeConditions] = js.native
   /**
     * The type of audience, either SIMPLE or STATE_BASED.
     */
@@ -62,7 +62,7 @@ trait SchemaRemarketingAudience extends js.Object {
     * A state based audience definition that will cause a user to be added or
     * removed from an audience.
     */
-  var stateBasedAudienceDefinition: js.UndefOr[AnonExcludeConditions] = js.native
+  var stateBasedAudienceDefinition: js.UndefOr[ExcludeConditions] = js.native
   /**
     * Time this remarketing audience was last modified.
     */
@@ -78,7 +78,7 @@ object SchemaRemarketingAudience {
   @scala.inline
   def apply(
     accountId: String = null,
-    audienceDefinition: AnonIncludeConditions = null,
+    audienceDefinition: IncludeConditions = null,
     audienceType: String = null,
     created: String = null,
     description: String = null,
@@ -88,7 +88,7 @@ object SchemaRemarketingAudience {
     linkedAdAccounts: js.Array[SchemaLinkedForeignAccount] = null,
     linkedViews: js.Array[String] = null,
     name: String = null,
-    stateBasedAudienceDefinition: AnonExcludeConditions = null,
+    stateBasedAudienceDefinition: ExcludeConditions = null,
     updated: String = null,
     webPropertyId: String = null
   ): SchemaRemarketingAudience = {

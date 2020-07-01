@@ -2,6 +2,7 @@ package typings.ionicReact.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.ionicCore.componentsMod.global.HTMLIonSearchbarElement
+import typings.ionicCore.mod.AutocompleteTypes
 import typings.ionicCore.mod.Color
 import typings.ionicCore.searchbarInterfaceMod.SearchbarChangeEventDetail
 import typings.ionicReact.ionicReactStrings.`additions text`
@@ -165,7 +166,7 @@ trait IonSearchbarPickHTMLAttri extends js.Object {
   /**
     * Set the input's autocomplete property.
     */
-  var autocomplete: js.UndefOr[on | off] = js.undefined
+  var autocomplete: js.UndefOr[AutocompleteTypes] = js.undefined
   /**
     * Set the input's autocorrect property.
     */
@@ -515,7 +516,7 @@ object IonSearchbarPickHTMLAttri {
     autoCapitalize: String = null,
     autoCorrect: String = null,
     autoSave: String = null,
-    autocomplete: on | off = null,
+    autocomplete: AutocompleteTypes = null,
     autocorrect: on | off = null,
     cancelButtonIcon: String = null,
     cancelButtonText: String = null,

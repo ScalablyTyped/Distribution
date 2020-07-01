@@ -57,7 +57,7 @@ object SchemaWorkerSettings {
   ): SchemaWorkerSettings = {
     val __obj = js.Dynamic.literal()
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(reportingEnabled)) __obj.updateDynamic("reportingEnabled")(reportingEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(reportingEnabled)) __obj.updateDynamic("reportingEnabled")(reportingEnabled.get.asInstanceOf[js.Any])
     if (servicePath != null) __obj.updateDynamic("servicePath")(servicePath.asInstanceOf[js.Any])
     if (shuffleServicePath != null) __obj.updateDynamic("shuffleServicePath")(shuffleServicePath.asInstanceOf[js.Any])
     if (tempStoragePrefix != null) __obj.updateDynamic("tempStoragePrefix")(tempStoragePrefix.asInstanceOf[js.Any])

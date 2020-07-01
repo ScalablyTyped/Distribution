@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   * Default Constructor.
   */
 class ErrorCode ()
-  extends typings.tstl.exceptionMod.ErrorCode {
+  extends typings.tstl.tstlModuleMod.ErrorCode {
   /**
     * Initializer Constructor.
     *

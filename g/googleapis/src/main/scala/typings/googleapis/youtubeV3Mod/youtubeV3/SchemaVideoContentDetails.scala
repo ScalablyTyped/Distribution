@@ -87,8 +87,8 @@ object SchemaVideoContentDetails {
     if (definition != null) __obj.updateDynamic("definition")(definition.asInstanceOf[js.Any])
     if (dimension != null) __obj.updateDynamic("dimension")(dimension.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasCustomThumbnail)) __obj.updateDynamic("hasCustomThumbnail")(hasCustomThumbnail.asInstanceOf[js.Any])
-    if (!js.isUndefined(licensedContent)) __obj.updateDynamic("licensedContent")(licensedContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasCustomThumbnail)) __obj.updateDynamic("hasCustomThumbnail")(hasCustomThumbnail.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(licensedContent)) __obj.updateDynamic("licensedContent")(licensedContent.get.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     if (regionRestriction != null) __obj.updateDynamic("regionRestriction")(regionRestriction.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVideoContentDetails]

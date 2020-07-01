@@ -68,7 +68,7 @@ trait ojInputDateEventMap[SP /* <: ojInputDateSettableProperties */] extends inp
 
 object ojInputDateEventMap {
   @scala.inline
-  def apply[SP](
+  def apply[/* <: typings.oracleOraclejet.ojdatetimepickerMod.ojInputDateSettableProperties */ SP](
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,

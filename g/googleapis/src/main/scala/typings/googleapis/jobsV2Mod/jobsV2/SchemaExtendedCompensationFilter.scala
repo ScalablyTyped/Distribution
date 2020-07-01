@@ -49,7 +49,7 @@ object SchemaExtendedCompensationFilter {
     if (compensationRange != null) __obj.updateDynamic("compensationRange")(compensationRange.asInstanceOf[js.Any])
     if (compensationUnits != null) __obj.updateDynamic("compensationUnits")(compensationUnits.asInstanceOf[js.Any])
     if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeJobWithUnspecifiedCompensationRange)) __obj.updateDynamic("includeJobWithUnspecifiedCompensationRange")(includeJobWithUnspecifiedCompensationRange.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeJobWithUnspecifiedCompensationRange)) __obj.updateDynamic("includeJobWithUnspecifiedCompensationRange")(includeJobWithUnspecifiedCompensationRange.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExtendedCompensationFilter]
   }

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("estraverse", "traverse")
 @js.native
 object traverse extends js.Object {
-  def apply(ast: Node, visitor: Visitor): Unit = js.native
+  def apply(root: Node, visitor: Visitor): Unit = js.native
 }
 

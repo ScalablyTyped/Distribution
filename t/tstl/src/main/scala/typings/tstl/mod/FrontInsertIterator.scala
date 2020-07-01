@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl", "FrontInsertIterator")
 @js.native
 class FrontInsertIterator[Source /* <: IPushFront[ValueType[Source]] */] protected ()
-  extends typings.tstl.iteratorMod.FrontInsertIterator[Source] {
+  extends typings.tstl.tstlModuleMod.FrontInsertIterator[Source] {
   /**
     * Initializer Constructor.
     *

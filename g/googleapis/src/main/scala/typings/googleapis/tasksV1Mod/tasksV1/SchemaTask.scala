@@ -1,6 +1,6 @@
 package typings.googleapis.tasksV1Mod.tasksV1
 
-import typings.googleapis.AnonLink
+import typings.googleapis.anon.Link
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,7 +41,7 @@ trait SchemaTask extends js.Object {
   /**
     * Collection of links. This collection is read-only.
     */
-  var links: js.UndefOr[js.Array[AnonLink]] = js.native
+  var links: js.UndefOr[js.Array[Link]] = js.native
   /**
     * Notes describing the task. Optional.
     */
@@ -91,7 +91,7 @@ object SchemaTask {
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     kind: String = null,
-    links: js.Array[AnonLink] = null,
+    links: js.Array[Link] = null,
     notes: String = null,
     parent: String = null,
     position: String = null,
@@ -102,10 +102,10 @@ object SchemaTask {
   ): SchemaTask = {
     val __obj = js.Dynamic.literal()
     if (completed != null) __obj.updateDynamic("completed")(completed.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
     if (due != null) __obj.updateDynamic("due")(due.asInstanceOf[js.Any])
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])

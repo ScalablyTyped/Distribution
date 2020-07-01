@@ -34,11 +34,11 @@ trait SchemaNetworkEndpoint extends js.Object {
 
 object SchemaNetworkEndpoint {
   @scala.inline
-  def apply(instance: String = null, ipAddress: String = null, port: Int | Double = null): SchemaNetworkEndpoint = {
+  def apply(instance: String = null, ipAddress: String = null, port: js.UndefOr[Double] = js.undefined): SchemaNetworkEndpoint = {
     val __obj = js.Dynamic.literal()
     if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
     if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNetworkEndpoint]
   }
 }

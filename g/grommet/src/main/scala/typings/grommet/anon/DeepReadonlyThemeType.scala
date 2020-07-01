@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 /* Inlined grommet.grommet/utils.DeepReadonly<grommet.grommet/themes/base.ThemeType> */
 trait DeepReadonlyThemeType extends js.Object {
-  val accordion: js.UndefOr[BorderHeading | DeepReadonly[js.UndefOr[BorderHeading]]] = js.undefined
+  val accordion: js.UndefOr[Panel | DeepReadonly[js.UndefOr[Panel]]] = js.undefined
   val anchor: js.UndefOr[ExtendFontWeight | DeepReadonly[js.UndefOr[ExtendFontWeight]]] = js.undefined
   val avatar: js.UndefOr[Text | DeepReadonly[js.UndefOr[Text]]] = js.undefined
   val box: js.UndefOr[ResponsiveBreakpoint | DeepReadonly[js.UndefOr[ResponsiveBreakpoint]]] = js.undefined
-  val button: js.UndefOr[MinWidth | DeepReadonly[js.UndefOr[MinWidth]]] = js.undefined
+  val button: js.UndefOr[Default | DeepReadonly[js.UndefOr[Default]]] = js.undefined
   val calendar: js.UndefOr[Heading | DeepReadonly[js.UndefOr[Heading]]] = js.undefined
   val carousel: js.UndefOr[Animation | DeepReadonly[js.UndefOr[Animation]]] = js.undefined
   val chart: js.UndefOr[ColorExtend | DeepReadonly[js.UndefOr[ColorExtend]]] = js.undefined
@@ -23,7 +23,7 @@ trait DeepReadonlyThemeType extends js.Object {
   val drop: js.UndefOr[MaxHeight | DeepReadonly[js.UndefOr[MaxHeight]]] = js.undefined
   val formField: js.UndefOr[Content | DeepReadonly[js.UndefOr[Content]]] = js.undefined
   val global: js.UndefOr[Active | DeepReadonly[js.UndefOr[Active]]] = js.undefined
-  val grommet: js.UndefOr[Extend | DeepReadonly[js.UndefOr[Extend]]] = js.undefined
+  val grommet: js.UndefOr[ExtendExtendType | DeepReadonly[js.UndefOr[ExtendExtendType]]] = js.undefined
   val heading: js.UndefOr[ExtendFont | DeepReadonly[js.UndefOr[ExtendFont]]] = js.undefined
   val icon: js.UndefOr[SizeDictxLarge | DeepReadonly[js.UndefOr[SizeDictxLarge]]] = js.undefined
   val layer: js.UndefOr[Container | DeepReadonly[js.UndefOr[Container]]] = js.undefined
@@ -37,8 +37,8 @@ trait DeepReadonlyThemeType extends js.Object {
   val rangeSelector: js.UndefOr[Edge | DeepReadonly[js.UndefOr[Edge]]] = js.undefined
   val select: js.UndefOr[Control | DeepReadonly[js.UndefOr[Control]]] = js.undefined
   val tab: js.UndefOr[Margin | DeepReadonly[js.UndefOr[Margin]]] = js.undefined
-  val table: js.UndefOr[Row | DeepReadonly[js.UndefOr[Row]]] = js.undefined
-  val tabs: js.UndefOr[Panel | DeepReadonly[js.UndefOr[Panel]]] = js.undefined
+  val table: js.UndefOr[Body | DeepReadonly[js.UndefOr[Body]]] = js.undefined
+  val tabs: js.UndefOr[Header | DeepReadonly[js.UndefOr[Header]]] = js.undefined
   val text: js.UndefOr[Small | DeepReadonly[js.UndefOr[Small]]] = js.undefined
   val textArea: js.UndefOr[DisabledExtend | DeepReadonly[js.UndefOr[DisabledExtend]]] = js.undefined
   val textInput: js.UndefOr[DisabledExtend | DeepReadonly[js.UndefOr[DisabledExtend]]] = js.undefined
@@ -49,11 +49,11 @@ trait DeepReadonlyThemeType extends js.Object {
 object DeepReadonlyThemeType {
   @scala.inline
   def apply(
-    accordion: BorderHeading | DeepReadonly[js.UndefOr[BorderHeading]] = null,
+    accordion: Panel | DeepReadonly[js.UndefOr[Panel]] = null,
     anchor: ExtendFontWeight | DeepReadonly[js.UndefOr[ExtendFontWeight]] = null,
     avatar: Text | DeepReadonly[js.UndefOr[Text]] = null,
     box: ResponsiveBreakpoint | DeepReadonly[js.UndefOr[ResponsiveBreakpoint]] = null,
-    button: MinWidth | DeepReadonly[js.UndefOr[MinWidth]] = null,
+    button: Default | DeepReadonly[js.UndefOr[Default]] = null,
     calendar: Heading | DeepReadonly[js.UndefOr[Heading]] = null,
     carousel: Animation | DeepReadonly[js.UndefOr[Animation]] = null,
     chart: ColorExtend | DeepReadonly[js.UndefOr[ColorExtend]] = null,
@@ -65,7 +65,7 @@ object DeepReadonlyThemeType {
     drop: MaxHeight | DeepReadonly[js.UndefOr[MaxHeight]] = null,
     formField: Content | DeepReadonly[js.UndefOr[Content]] = null,
     global: Active | DeepReadonly[js.UndefOr[Active]] = null,
-    grommet: Extend | DeepReadonly[js.UndefOr[Extend]] = null,
+    grommet: ExtendExtendType | DeepReadonly[js.UndefOr[ExtendExtendType]] = null,
     heading: ExtendFont | DeepReadonly[js.UndefOr[ExtendFont]] = null,
     icon: SizeDictxLarge | DeepReadonly[js.UndefOr[SizeDictxLarge]] = null,
     layer: Container | DeepReadonly[js.UndefOr[Container]] = null,
@@ -79,8 +79,8 @@ object DeepReadonlyThemeType {
     rangeSelector: Edge | DeepReadonly[js.UndefOr[Edge]] = null,
     select: Control | DeepReadonly[js.UndefOr[Control]] = null,
     tab: Margin | DeepReadonly[js.UndefOr[Margin]] = null,
-    table: Row | DeepReadonly[js.UndefOr[Row]] = null,
-    tabs: Panel | DeepReadonly[js.UndefOr[Panel]] = null,
+    table: Body | DeepReadonly[js.UndefOr[Body]] = null,
+    tabs: Header | DeepReadonly[js.UndefOr[Header]] = null,
     text: Small | DeepReadonly[js.UndefOr[Small]] = null,
     textArea: DisabledExtend | DeepReadonly[js.UndefOr[DisabledExtend]] = null,
     textInput: DisabledExtend | DeepReadonly[js.UndefOr[DisabledExtend]] = null,

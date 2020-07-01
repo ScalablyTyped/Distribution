@@ -28,7 +28,7 @@ trait IRecompositionComponentOptions[TComponentProps /* <: ISlottableProps[TComp
 
 object IRecompositionComponentOptions {
   @scala.inline
-  def apply[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics](
+  def apply[/* <: typings.uifabricFoundation.libIslotsMod.ISlottableProps[TComponentSlots] */ TComponentProps, TTokens, /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */ TStyleSet, TViewProps, TComponentSlots, TStatics](
     displayName: String = null,
     factoryOptions: IFactoryOptions[TComponentProps] = null,
     fields: js.Array[String] = null,

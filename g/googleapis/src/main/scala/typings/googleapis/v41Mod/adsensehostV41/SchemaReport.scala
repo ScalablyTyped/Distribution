@@ -1,6 +1,6 @@
 package typings.googleapis.v41Mod.adsensehostV41
 
-import typings.googleapis.AnonCurrency
+import typings.googleapis.anon.Currency
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait SchemaReport extends js.Object {
     * list of headers; one for each dimension in the request, followed by one
     * for each metric in the request.
     */
-  var headers: js.UndefOr[js.Array[AnonCurrency]] = js.native
+  var headers: js.UndefOr[js.Array[Currency]] = js.native
   /**
     * Kind this is, in this case adsensehost#report.
     */
@@ -50,7 +50,7 @@ object SchemaReport {
   @scala.inline
   def apply(
     averages: js.Array[String] = null,
-    headers: js.Array[AnonCurrency] = null,
+    headers: js.Array[Currency] = null,
     kind: String = null,
     rows: js.Array[js.Array[String]] = null,
     totalMatchedRows: String = null,

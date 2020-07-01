@@ -24,9 +24,9 @@ trait SchemaBuildBazelRemoteExecutionV2ResultsCachePolicy extends js.Object {
 
 object SchemaBuildBazelRemoteExecutionV2ResultsCachePolicy {
   @scala.inline
-  def apply(priority: Int | Double = null): SchemaBuildBazelRemoteExecutionV2ResultsCachePolicy = {
+  def apply(priority: js.UndefOr[Double] = js.undefined): SchemaBuildBazelRemoteExecutionV2ResultsCachePolicy = {
     val __obj = js.Dynamic.literal()
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2ResultsCachePolicy]
   }
 }

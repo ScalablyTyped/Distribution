@@ -1,10 +1,9 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.anon.AnimationDurationUpdate
 import typings.echarts.anon.AnimationEasing
 import typings.echarts.anon.AnimationEasingUpdate
-import typings.echarts.anon.ExtraCssText
-import typings.echarts.anon.FontStyle
+import typings.echarts.anon.AnimationThreshold
+import typings.echarts.anon.FontSize
 import typings.echarts.anon.LabelLine
 import typings.echarts.anon.Length
 import typings.echarts.anon.ShadowOffsetY
@@ -218,7 +217,7 @@ trait SeriesFunnel_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-funnel.label
     */
-  var label: js.UndefOr[FontStyle] = js.undefined
+  var label: js.UndefOr[FontSize] = js.undefined
   /**
     * The visual guide line style of label. When
     * [label position](https://echarts.apache.org/en/option.html#series-funnel.label.position)
@@ -246,21 +245,21 @@ trait SeriesFunnel_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-funnel.markArea
     */
-  var markArea: js.UndefOr[AnimationEasingUpdate] = js.undefined
+  var markArea: js.UndefOr[AnimationThreshold] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-funnel.markLine
     */
-  var markLine: js.UndefOr[AnimationEasing] = js.undefined
+  var markLine: js.UndefOr[AnimationEasingUpdate] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-funnel.markPoint
     */
-  var markPoint: js.UndefOr[AnimationDurationUpdate] = js.undefined
+  var markPoint: js.UndefOr[AnimationEasing] = js.undefined
   /**
     * The specified maximum value.
     *
@@ -359,7 +358,7 @@ trait SeriesFunnel_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-funnel.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
   /**
     * @default
     * "funnel"
@@ -386,12 +385,12 @@ object SeriesFunnel_ {
     gap: js.UndefOr[Double] = js.undefined,
     id: String = null,
     itemStyle: ShadowOffsetY = null,
-    label: FontStyle = null,
+    label: FontSize = null,
     labelLine: Length = null,
     legendHoverLink: js.UndefOr[Boolean] = js.undefined,
-    markArea: AnimationEasingUpdate = null,
-    markLine: AnimationEasing = null,
-    markPoint: AnimationDurationUpdate = null,
+    markArea: AnimationThreshold = null,
+    markLine: AnimationEasingUpdate = null,
+    markPoint: AnimationEasing = null,
     max: js.UndefOr[Double] = js.undefined,
     maxSize: String = null,
     min: js.UndefOr[Double] = js.undefined,
@@ -399,7 +398,7 @@ object SeriesFunnel_ {
     name: String = null,
     seriesLayoutBy: String = null,
     sort: String = null,
-    tooltip: ExtraCssText = null,
+    tooltip: BaseTooltip = null,
     `type`: String = null
   ): SeriesFunnel_ = {
     val __obj = js.Dynamic.literal()

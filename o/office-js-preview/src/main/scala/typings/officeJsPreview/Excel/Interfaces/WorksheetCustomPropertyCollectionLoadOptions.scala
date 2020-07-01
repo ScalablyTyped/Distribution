@@ -19,7 +19,7 @@ trait WorksheetCustomPropertyCollectionLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Gets the key of the custom property. Custom property keys are case-insensitive.
+    * For EACH ITEM in the collection: Gets the key of the custom property. Custom property keys are case-insensitive. The key is limited to 255 characters (larger values will cause an "InvalidArgument" error to be thrown.)
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

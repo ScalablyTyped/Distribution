@@ -10,7 +10,7 @@ trait _Action[TContext, TEvent /* <: EventObject */] extends js.Object
 
 object _Action {
   @scala.inline
-  def ActionObject[TContext, TEvent](
+  def ActionObject[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     `type`: String,
     StringDictionary: /* other */ StringDictionary[js.Any] = null,
     exec: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => js.Any | Unit = null
@@ -22,7 +22,7 @@ object _Action {
     __obj.asInstanceOf[_Action[TContext, TEvent]]
   }
   @scala.inline
-  def ChooseAction[TContext, TEvent](
+  def ChooseAction[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     conds: js.Array[ChooseConditon[TContext, TEvent]],
     `type`: Choose,
     exec: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => js.Any | Unit = null

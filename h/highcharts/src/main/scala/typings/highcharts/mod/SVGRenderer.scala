@@ -445,17 +445,6 @@ class SVGRenderer protected () extends js.Object {
   def path(attribs: SVGAttributes): SVGElement = js.native
   def path(path: SVGPathArray): SVGElement = js.native
   /**
-    * Compatibility function to convert the legacy one-dimensional path array
-    * into an array of segments.
-    *
-    * It is used in maps to parse the `path` option, and in SVGRenderer.dSetter
-    * to support legacy paths from demos.
-    *
-    * @param path
-    *        @private
-    */
-  def pathToSegments(path: js.Any): SVGPathArray = js.native
-  /**
     * Draw and return a rectangle.
     *
     * @param attributes

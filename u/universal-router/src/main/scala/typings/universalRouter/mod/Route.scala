@@ -39,7 +39,7 @@ trait Route[R, C /* <: RouterContext */] extends js.Object {
 
 object Route {
   @scala.inline
-  def apply[R, C](
+  def apply[R, /* <: typings.universalRouter.mod.RouterContext */ C](
     action: (/* context */ RouteContext[R, C], /* params */ RouteParams) => RouteResult[R] = null,
     children: js.UndefOr[Null | (Routes[R, C])] = js.undefined,
     `match`: /* path */ String => Match_[RouteParams] = null,

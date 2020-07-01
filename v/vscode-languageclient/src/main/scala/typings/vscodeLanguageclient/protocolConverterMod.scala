@@ -85,12 +85,16 @@ object protocolConverterMod extends js.Object {
     def asCommands_Array(items: js.Array[Command]): js.Array[typings.vscode.mod.Command] = js.native
     def asCompletionItem(item: CompletionItem): default = js.native
     def asCompletionResult(): js.UndefOr[scala.Nothing] = js.native
-    def asCompletionResult(result: js.Array[CompletionItem]): js.UndefOr[js.Array[typings.vscode.mod.CompletionItem] | CompletionList] = js.native
-    def asCompletionResult(result: typings.vscodeLanguageserverTypes.mod.CompletionList): CompletionList = js.native
+    def asCompletionResult(result: js.Array[CompletionItem]): js.UndefOr[
+        js.Array[typings.vscode.mod.CompletionItem] | CompletionList[typings.vscode.mod.CompletionItem]
+      ] = js.native
+    def asCompletionResult(result: typings.vscodeLanguageserverTypes.mod.CompletionList): CompletionList[typings.vscode.mod.CompletionItem] = js.native
     @JSName("asCompletionResult")
     def asCompletionResult_Array(result: js.Array[CompletionItem]): js.Array[typings.vscode.mod.CompletionItem] = js.native
     @JSName("asCompletionResult")
-    def asCompletionResult_Union(result: typings.vscodeLanguageserverTypes.mod.CompletionList): js.UndefOr[js.Array[typings.vscode.mod.CompletionItem] | CompletionList] = js.native
+    def asCompletionResult_Union(result: typings.vscodeLanguageserverTypes.mod.CompletionList): js.UndefOr[
+        js.Array[typings.vscode.mod.CompletionItem] | CompletionList[typings.vscode.mod.CompletionItem]
+      ] = js.native
     def asDeclarationResult(): js.UndefOr[scala.Nothing] = js.native
     def asDeclarationResult(item: js.Array[DeclarationLink]): js.UndefOr[Declaration] = js.native
     def asDeclarationResult(item: typings.vscodeLanguageserverTypes.mod.Declaration): Location | js.Array[Location] = js.native

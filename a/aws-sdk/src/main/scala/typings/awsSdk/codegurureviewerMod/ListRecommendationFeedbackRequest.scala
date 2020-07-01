@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListRecommendationFeedbackRequest extends js.Object {
   /**
-    *  The Amazon Resource Name (ARN) that identifies the code review. 
+    * The Amazon Resource Name (ARN) of the  CodeReview  object. 
     */
   var CodeReviewArn: Arn = js.native
   /**
@@ -19,11 +19,11 @@ trait ListRecommendationFeedbackRequest extends js.Object {
     */
   var NextToken: js.UndefOr[typings.awsSdk.codegurureviewerMod.NextToken] = js.native
   /**
-    *  Filter on recommendationIds that need to be applied before displaying the result. This can be used to query all the recommendation feedback for a given recommendation. 
+    *  Used to query the recommendation feedback for a given recommendation. 
     */
   var RecommendationIds: js.UndefOr[typings.awsSdk.codegurureviewerMod.RecommendationIds] = js.native
   /**
-    *  Filter on userIds that need to be applied before displaying the result. This can be used to query all the recommendation feedback for a code review from a given user. 
+    *  An AWS user's account ID or Amazon Resource Name (ARN). Use this ID to query the recommendation feedback for a code review from that user.   The UserId is an IAM principal that can be specified as an AWS account ID or an Amazon Resource Name (ARN). For more information, see  Specifying a Principal in the AWS Identity and Access Management User Guide. 
     */
   var UserIds: js.UndefOr[typings.awsSdk.codegurureviewerMod.UserIds] = js.native
 }

@@ -15,6 +15,10 @@ trait ServiceLastAccessed extends js.Object {
     */
   var LastAuthenticatedEntity: js.UndefOr[arnType] = js.native
   /**
+    * The Region from which the authenticated entity (user or role) last attempted to access the service. AWS does not report unauthenticated requests. This field is null if no IAM entities attempted to access the service within the reporting period.
+    */
+  var LastAuthenticatedRegion: js.UndefOr[stringType] = js.native
+  /**
     * The name of the service in which access was attempted.
     */
   var ServiceName: serviceNameType = js.native
@@ -26,6 +30,10 @@ trait ServiceLastAccessed extends js.Object {
     * The total number of authenticated principals (root user, IAM users, or IAM roles) that have attempted to access the service. This field is null if no principals attempted to access the service within the reporting period.
     */
   var TotalAuthenticatedEntities: js.UndefOr[integerType] = js.native
+  /**
+    * An object that contains details about the most recent attempt to access a tracked action within the service. This field is null if there no tracked actions or if the principal did not use the tracked actions within the reporting period. This field is also null if the report was generated at the service level and not the action level. For more information, see the Granularity field in GenerateServiceLastAccessedDetails.
+    */
+  var TrackedActionsLastAccessed: js.UndefOr[typings.awsSdk.iamMod.TrackedActionsLastAccessed] = js.native
 }
 
 object ServiceLastAccessed {
@@ -35,12 +43,16 @@ object ServiceLastAccessed {
     ServiceNamespace: serviceNamespaceType,
     LastAuthenticated: dateType = null,
     LastAuthenticatedEntity: arnType = null,
-    TotalAuthenticatedEntities: js.UndefOr[integerType] = js.undefined
+    LastAuthenticatedRegion: stringType = null,
+    TotalAuthenticatedEntities: js.UndefOr[integerType] = js.undefined,
+    TrackedActionsLastAccessed: TrackedActionsLastAccessed = null
   ): ServiceLastAccessed = {
     val __obj = js.Dynamic.literal(ServiceName = ServiceName.asInstanceOf[js.Any], ServiceNamespace = ServiceNamespace.asInstanceOf[js.Any])
     if (LastAuthenticated != null) __obj.updateDynamic("LastAuthenticated")(LastAuthenticated.asInstanceOf[js.Any])
     if (LastAuthenticatedEntity != null) __obj.updateDynamic("LastAuthenticatedEntity")(LastAuthenticatedEntity.asInstanceOf[js.Any])
+    if (LastAuthenticatedRegion != null) __obj.updateDynamic("LastAuthenticatedRegion")(LastAuthenticatedRegion.asInstanceOf[js.Any])
     if (!js.isUndefined(TotalAuthenticatedEntities)) __obj.updateDynamic("TotalAuthenticatedEntities")(TotalAuthenticatedEntities.get.asInstanceOf[js.Any])
+    if (TrackedActionsLastAccessed != null) __obj.updateDynamic("TrackedActionsLastAccessed")(TrackedActionsLastAccessed.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceLastAccessed]
   }
 }

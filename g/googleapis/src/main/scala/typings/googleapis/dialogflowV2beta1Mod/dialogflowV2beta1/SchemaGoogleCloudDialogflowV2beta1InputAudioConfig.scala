@@ -56,14 +56,14 @@ object SchemaGoogleCloudDialogflowV2beta1InputAudioConfig {
     languageCode: String = null,
     model: String = null,
     phraseHints: js.Array[String] = null,
-    sampleRateHertz: Int | Double = null
+    sampleRateHertz: js.UndefOr[Double] = js.undefined
   ): SchemaGoogleCloudDialogflowV2beta1InputAudioConfig = {
     val __obj = js.Dynamic.literal()
     if (audioEncoding != null) __obj.updateDynamic("audioEncoding")(audioEncoding.asInstanceOf[js.Any])
     if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (phraseHints != null) __obj.updateDynamic("phraseHints")(phraseHints.asInstanceOf[js.Any])
-    if (sampleRateHertz != null) __obj.updateDynamic("sampleRateHertz")(sampleRateHertz.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleRateHertz)) __obj.updateDynamic("sampleRateHertz")(sampleRateHertz.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1InputAudioConfig]
   }
 }

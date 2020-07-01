@@ -14,7 +14,7 @@ trait DefineMark[T /* <: String */, I, R /* <: String */] extends js.Object {
 
 object DefineMark {
   @scala.inline
-  def apply[T, I, R](group: js.Any, items: js.Array[Item[I]], marktype: T, role: mark | R): DefineMark[T, I, R] = {
+  def apply[/* <: java.lang.String */ T, I, /* <: java.lang.String */ R](group: js.Any, items: js.Array[Item[I]], marktype: T, role: mark | R): DefineMark[T, I, R] = {
     val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], marktype = marktype.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefineMark[T, I, R]]
   }

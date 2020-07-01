@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl/base", "MapContainer")
 @js.native
 abstract class MapContainer[Key, T, Unique /* <: Boolean */, Source /* <: typings.tstl.mapContainerMod.MapContainer[Key, T, Unique, Source, IteratorT, ReverseT] */, IteratorT /* <: Iterator[Key, T, Unique, Source, IteratorT, ReverseT] */, ReverseT /* <: ReverseIterator[Key, T, Unique, Source, IteratorT, ReverseT] */] protected ()
-  extends typings.tstl.containerMod.MapContainer[Key, T, Unique, Source, IteratorT, ReverseT] {
+  extends typings.tstl.moduleMod.MapContainer[Key, T, Unique, Source, IteratorT, ReverseT] {
   /**
     * Default Constructor.
     */

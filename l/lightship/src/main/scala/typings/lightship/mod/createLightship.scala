@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object createLightship extends js.Object {
   def apply(): LightshipType = js.native
-  def apply(userConfiguration: UserConfigurationType): LightshipType = js.native
+  def apply(configuration: ConfigurationInputType): LightshipType = js.native
 }
 

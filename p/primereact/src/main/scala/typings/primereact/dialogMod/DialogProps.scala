@@ -1,7 +1,6 @@
 package typings.primereact.dialogMod
 
 import typings.primereact.anon.Maximized
-import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +19,7 @@ trait DialogProps extends js.Object {
   var focusOnShow: js.UndefOr[Boolean] = js.undefined
   var footer: js.UndefOr[js.Any] = js.undefined
   var header: js.UndefOr[js.Any] = js.undefined
-  var iconsTemplate: js.UndefOr[js.Function0[js.UndefOr[Element]]] = js.undefined
+  var iconsTemplate: js.UndefOr[js.Any] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var maskClassName: js.UndefOr[String] = js.undefined
   var maximizable: js.UndefOr[Boolean] = js.undefined
@@ -52,7 +51,7 @@ object DialogProps {
     focusOnShow: js.UndefOr[Boolean] = js.undefined,
     footer: js.Any = null,
     header: js.Any = null,
-    iconsTemplate: () => js.UndefOr[Element] = null,
+    iconsTemplate: js.Any = null,
     id: String = null,
     maskClassName: String = null,
     maximizable: js.UndefOr[Boolean] = js.undefined,
@@ -79,7 +78,7 @@ object DialogProps {
     if (!js.isUndefined(focusOnShow)) __obj.updateDynamic("focusOnShow")(focusOnShow.get.asInstanceOf[js.Any])
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (iconsTemplate != null) __obj.updateDynamic("iconsTemplate")(js.Any.fromFunction0(iconsTemplate))
+    if (iconsTemplate != null) __obj.updateDynamic("iconsTemplate")(iconsTemplate.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (maskClassName != null) __obj.updateDynamic("maskClassName")(maskClassName.asInstanceOf[js.Any])
     if (!js.isUndefined(maximizable)) __obj.updateDynamic("maximizable")(maximizable.get.asInstanceOf[js.Any])

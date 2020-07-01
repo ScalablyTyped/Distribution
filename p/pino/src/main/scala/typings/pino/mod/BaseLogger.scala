@@ -83,6 +83,11 @@ trait BaseLogger extends EventEmitter {
     */
   val pino: String = js.native
   /**
+    * Noop function.
+    */
+  @JSName("silent")
+  var silent_Original: LogFn = js.native
+  /**
     * Log at `'trace'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
     * If more args follows `msg`, these will be used to format `msg` using `util.format`.
     *
@@ -100,6 +105,10 @@ trait BaseLogger extends EventEmitter {
     * Use only defined `customLevels` and omit Pino's levels.
     */
   var useOnlyCustomLevels: Boolean = js.native
+  /**
+    * Exposes the Pino package version. Also available on the exported pino function.
+    */
+  val version: String = js.native
   /**
     * Log at `'warn'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
     * If more args follows `msg`, these will be used to format `msg` using `util.format`.
@@ -229,6 +238,15 @@ trait BaseLogger extends EventEmitter {
   def prependOnceListener_levelchange(event: `level-change`, listener: LevelChangeEventListener): this.type = js.native
   @JSName("removeListener")
   def removeListener_levelchange(event: `level-change`, listener: LevelChangeEventListener): this.type = js.native
+  /**
+    * Noop function.
+    */
+  def silent(msg: String, args: js.Any*): Unit = js.native
+  /**
+    * Noop function.
+    */
+  def silent(obj: js.Object): Unit = js.native
+  def silent(obj: js.Object, msg: String, args: js.Any*): Unit = js.native
   /**
     * Log at `'trace'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
     * If more args follows `msg`, these will be used to format `msg` using `util.format`.

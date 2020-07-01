@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 // defaultPhrases.js
 trait SingleDatePickerPhrases extends js.Object {
   var calendarLabel: js.UndefOr[String] = js.undefined
-  var chooseAvailableDate: js.UndefOr[js.Function1[/* date */ String, String]] = js.undefined
+  var chooseAvailableDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
   var clearDate: js.UndefOr[String] = js.undefined
   var closeDatePicker: js.UndefOr[String] = js.undefined
-  var dateIsSelected: js.UndefOr[js.Function1[/* date */ String, String]] = js.undefined
-  var dateIsUnavailable: js.UndefOr[js.Function1[/* date */ String, String]] = js.undefined
+  var dateIsSelected: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
+  var dateIsUnavailable: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
   var enterKey: js.UndefOr[String] = js.undefined
   var escape: js.UndefOr[String] = js.undefined
   var hideKeyboardShortcutsPanel: js.UndefOr[String] = js.undefined
@@ -38,11 +38,11 @@ object SingleDatePickerPhrases {
   @scala.inline
   def apply(
     calendarLabel: String = null,
-    chooseAvailableDate: /* date */ String => String = null,
+    chooseAvailableDate: /* phraseArg */ PhraseArg => String = null,
     clearDate: String = null,
     closeDatePicker: String = null,
-    dateIsSelected: /* date */ String => String = null,
-    dateIsUnavailable: /* date */ String => String = null,
+    dateIsSelected: /* phraseArg */ PhraseArg => String = null,
+    dateIsUnavailable: /* phraseArg */ PhraseArg => String = null,
     enterKey: String = null,
     escape: String = null,
     hideKeyboardShortcutsPanel: String = null,

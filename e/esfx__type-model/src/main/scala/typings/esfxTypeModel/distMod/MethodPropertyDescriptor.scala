@@ -13,7 +13,7 @@ trait MethodPropertyDescriptor[T /* <: js.Function1[/* repeated */ js.Any, _] */
 
 object MethodPropertyDescriptor {
   @scala.inline
-  def apply[T](
+  def apply[/* <: js.Function1[/ * repeated * / js.Any, _] */ T](
     value: T,
     configurable: js.UndefOr[Boolean] = js.undefined,
     enumerable: js.UndefOr[Boolean] = js.undefined,

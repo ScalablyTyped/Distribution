@@ -21,6 +21,14 @@ trait CalendarBaseProps extends js.Object {
     */
   var dayComponent: js.UndefOr[(Component[DayComponentProps, js.Object, _]) | SFC[DayComponentProps]] = js.undefined
   /**
+    *  Disable left arrow. Default = false
+    */
+  var disableArrowLeft: js.UndefOr[Boolean] = js.undefined
+  /**
+    *  Disable right arrow. Default = false
+    */
+  var disableArrowRight: js.UndefOr[Boolean] = js.undefined
+  /**
     *  If hideArrows=false and hideExtraDays=false do not switch month when tapping on greyed out
     *  day from another month that is visible in calendar page. Default = false
     */
@@ -37,6 +45,10 @@ trait CalendarBaseProps extends js.Object {
     *  If firstDay=1 week starts from Monday. Note that dayNames and dayNamesShort should still start from Sunday.
     */
   var firstDay: js.UndefOr[Double] = js.undefined
+  /**
+    *  Style passed to the header
+    */
+  var headerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   /**
     *  Hide month navigation arrows. Default = false
     */
@@ -101,6 +113,10 @@ trait CalendarBaseProps extends js.Object {
     *  Specify theme properties to override specific styles for calendar parts. Default = {}
     */
   var theme: js.UndefOr[CalendarTheme] = js.undefined
+  /**
+    *  Provide aria-level for calendar heading for proper accessibility when used with web (react-native-web)
+    */
+  var webAriaLevel: js.UndefOr[Double] = js.undefined
 }
 
 object CalendarBaseProps {
@@ -108,10 +124,13 @@ object CalendarBaseProps {
   def apply(
     current: TCalendarDate = null,
     dayComponent: (Component[DayComponentProps, js.Object, _]) | SFC[DayComponentProps] = null,
+    disableArrowLeft: js.UndefOr[Boolean] = js.undefined,
+    disableArrowRight: js.UndefOr[Boolean] = js.undefined,
     disableMonthChange: js.UndefOr[Boolean] = js.undefined,
     disabledByDefault: js.UndefOr[Boolean] = js.undefined,
     displayLoadingIndicator: js.UndefOr[Boolean] = js.undefined,
     firstDay: js.UndefOr[Double] = js.undefined,
+    headerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     hideArrows: js.UndefOr[Boolean] = js.undefined,
     hideDayNames: js.UndefOr[Boolean] = js.undefined,
     hideExtraDays: js.UndefOr[Boolean] = js.undefined,
@@ -127,15 +146,19 @@ object CalendarBaseProps {
     renderArrow: /* direction */ left | right => ReactNode = null,
     showWeekNumbers: js.UndefOr[Boolean] = js.undefined,
     style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    theme: CalendarTheme = null
+    theme: CalendarTheme = null,
+    webAriaLevel: js.UndefOr[Double] = js.undefined
   ): CalendarBaseProps = {
     val __obj = js.Dynamic.literal()
     if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
     if (dayComponent != null) __obj.updateDynamic("dayComponent")(dayComponent.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableArrowLeft)) __obj.updateDynamic("disableArrowLeft")(disableArrowLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableArrowRight)) __obj.updateDynamic("disableArrowRight")(disableArrowRight.get.asInstanceOf[js.Any])
     if (!js.isUndefined(disableMonthChange)) __obj.updateDynamic("disableMonthChange")(disableMonthChange.get.asInstanceOf[js.Any])
     if (!js.isUndefined(disabledByDefault)) __obj.updateDynamic("disabledByDefault")(disabledByDefault.get.asInstanceOf[js.Any])
     if (!js.isUndefined(displayLoadingIndicator)) __obj.updateDynamic("displayLoadingIndicator")(displayLoadingIndicator.get.asInstanceOf[js.Any])
     if (!js.isUndefined(firstDay)) __obj.updateDynamic("firstDay")(firstDay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerStyle)) __obj.updateDynamic("headerStyle")(headerStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(hideArrows)) __obj.updateDynamic("hideArrows")(hideArrows.get.asInstanceOf[js.Any])
     if (!js.isUndefined(hideDayNames)) __obj.updateDynamic("hideDayNames")(hideDayNames.get.asInstanceOf[js.Any])
     if (!js.isUndefined(hideExtraDays)) __obj.updateDynamic("hideExtraDays")(hideExtraDays.get.asInstanceOf[js.Any])
@@ -152,6 +175,7 @@ object CalendarBaseProps {
     if (!js.isUndefined(showWeekNumbers)) __obj.updateDynamic("showWeekNumbers")(showWeekNumbers.get.asInstanceOf[js.Any])
     if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (!js.isUndefined(webAriaLevel)) __obj.updateDynamic("webAriaLevel")(webAriaLevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarBaseProps]
   }
 }

@@ -1,7 +1,7 @@
 package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.googleapis.AnonContainerType
+import typings.googleapis.anon.ContainerType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -103,7 +103,7 @@ trait SchemaImage extends js.Object {
   /**
     * The parameters of the raw disk image.
     */
-  var rawDisk: js.UndefOr[AnonContainerType] = js.native
+  var rawDisk: js.UndefOr[ContainerType] = js.native
   /**
     * [Output Only] Server-defined URL for the resource.
     */
@@ -196,7 +196,7 @@ object SchemaImage {
     licenseCodes: js.Array[String] = null,
     licenses: js.Array[String] = null,
     name: String = null,
-    rawDisk: AnonContainerType = null,
+    rawDisk: ContainerType = null,
     selfLink: String = null,
     sourceDisk: String = null,
     sourceDiskEncryptionKey: SchemaCustomerEncryptionKey = null,

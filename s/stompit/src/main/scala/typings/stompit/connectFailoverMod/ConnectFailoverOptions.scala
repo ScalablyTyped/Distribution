@@ -1,7 +1,7 @@
 package typings.stompit.connectFailoverMod
 
-import typings.std.Error
 import typings.stompit.connectMod.ConnectOptions
+import typings.stompit.connectMod.ConnectionListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,9 +11,7 @@ trait ConnectFailoverOptions extends js.Object {
   var connectFunction: js.UndefOr[
     js.Function2[
       /* options */ ConnectOptions, 
-      /* connectionListener */ js.UndefOr[
-        js.Function2[/* err */ Error | Null, /* client */ typings.stompit.clientMod.^, Unit]
-      ], 
+      /* connectionListener */ js.UndefOr[ConnectionListener], 
       typings.stompit.clientMod.^
     ]
   ] = js.undefined
@@ -34,9 +32,7 @@ trait ConnectFailoverOptions extends js.Object {
 object ConnectFailoverOptions {
   @scala.inline
   def apply(
-    connectFunction: (/* options */ ConnectOptions, /* connectionListener */ js.UndefOr[
-      js.Function2[/* err */ Error | Null, /* client */ typings.stompit.clientMod.^, Unit]
-    ]) => typings.stompit.clientMod.^ = null,
+    connectFunction: (/* options */ ConnectOptions, /* connectionListener */ js.UndefOr[ConnectionListener]) => typings.stompit.clientMod.^ = null,
     initialReconnectDelay: js.UndefOr[Double] = js.undefined,
     maxReconnectDelay: js.UndefOr[Double] = js.undefined,
     maxReconnects: js.UndefOr[Double] = js.undefined,

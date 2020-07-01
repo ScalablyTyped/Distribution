@@ -1,6 +1,6 @@
 package typings.gapiClientSheets.gapi.client.sheets
 
-import typings.std.Record
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,11 @@ trait BasicFilter extends js.Object {
     * The map's key is the column index, and the value is the criteria for
     * that column.
     */
-  var criteria: js.UndefOr[Record[String, FilterCriteria]] = js.undefined
+  var criteria: js.UndefOr[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: gapi.client.sheets.gapi.client.sheets.FilterCriteria}
+    */ typings.gapiClientSheets.gapiClientSheetsStrings.BasicFilter with TopLevel[js.Any]
+  ] = js.undefined
   /** The range the filter covers. */
   var range: js.UndefOr[GridRange] = js.undefined
   /**
@@ -24,7 +28,9 @@ trait BasicFilter extends js.Object {
 object BasicFilter {
   @scala.inline
   def apply(
-    criteria: Record[String, FilterCriteria] = null,
+    criteria: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: gapi.client.sheets.gapi.client.sheets.FilterCriteria}
+    */ typings.gapiClientSheets.gapiClientSheetsStrings.BasicFilter with TopLevel[js.Any] = null,
     range: GridRange = null,
     sortSpecs: js.Array[SortSpec] = null
   ): BasicFilter = {

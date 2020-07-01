@@ -4,9 +4,8 @@ import typings.echarts.anon.BorderColorSaturation
 import typings.echarts.anon.Bottom
 import typings.echarts.anon.ChildrenVisibleMin
 import typings.echarts.anon.Ellipsis
-import typings.echarts.anon.ExtraCssText
 import typings.echarts.anon.Link
-import typings.echarts.anon.TextShadowOffsetX
+import typings.echarts.anon.TextShadowColor
 import typings.echarts.anon.UpperLabel
 import typings.echarts.echarts.EChartOption.SeriesTreemap.DataObject
 import scala.scalajs.js
@@ -598,7 +597,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
   /**
     * Distance between treemap component and the top side of the container.
     *
@@ -666,7 +665,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.upperLabel
     */
-  var upperLabel: js.UndefOr[TextShadowOffsetX] = js.undefined
+  var upperLabel: js.UndefOr[TextShadowColor] = js.undefined
   /**
     * A node will not be shown when its area size is smaller than this
     * value (unit: px square).
@@ -848,10 +847,10 @@ object SeriesTreemap_ {
     roam: Boolean | String = null,
     silent: Link = null,
     squareRatio: js.UndefOr[Double] = js.undefined,
-    tooltip: ExtraCssText = null,
+    tooltip: BaseTooltip = null,
     top: Double | String = null,
     `type`: String = null,
-    upperLabel: TextShadowOffsetX = null,
+    upperLabel: TextShadowColor = null,
     visibleMin: js.UndefOr[Double] = js.undefined,
     visualDimension: js.UndefOr[Double] = js.undefined,
     visualMax: js.UndefOr[Double] = js.undefined,

@@ -99,7 +99,7 @@ object SchemaLogSink {
     if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
     if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeChildren)) __obj.updateDynamic("includeChildren")(includeChildren.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeChildren)) __obj.updateDynamic("includeChildren")(includeChildren.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (outputVersionFormat != null) __obj.updateDynamic("outputVersionFormat")(outputVersionFormat.asInstanceOf[js.Any])
     if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])

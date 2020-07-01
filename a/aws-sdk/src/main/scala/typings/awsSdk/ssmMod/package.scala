@@ -17,6 +17,7 @@ package object ssmMod {
   type AgentErrorCode = java.lang.String
   type AggregatorSchemaOnly = scala.Boolean
   type AllowedPattern = java.lang.String
+  type ApplyOnlyAtCronInterval = scala.Boolean
   type ApproveAfterDays = scala.Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.CRITICAL
@@ -550,6 +551,7 @@ package object ssmMod {
   type MaintenanceWindowLambdaQualifier = java.lang.String
   type MaintenanceWindowMaxResults = scala.Double
   type MaintenanceWindowName = java.lang.String
+  type MaintenanceWindowOffset = scala.Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.INSTANCE
     - typings.awsSdk.awsSdkStrings.RESOURCE_GROUP

@@ -1,6 +1,6 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
-import typings.googleapis.AnonDatasetReference
+import typings.googleapis.anon.DatasetReference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait SchemaDatasetList extends js.Object {
     * resource, use the Datasets: get method. This property is omitted when
     * there are no datasets in the project.
     */
-  var datasets: js.UndefOr[js.Array[AnonDatasetReference]] = js.native
+  var datasets: js.UndefOr[js.Array[DatasetReference]] = js.native
   /**
     * A hash value of the results page. You can use this property to determine
     * if the page has changed since the last request.
@@ -34,7 +34,7 @@ trait SchemaDatasetList extends js.Object {
 object SchemaDatasetList {
   @scala.inline
   def apply(
-    datasets: js.Array[AnonDatasetReference] = null,
+    datasets: js.Array[DatasetReference] = null,
     etag: String = null,
     kind: String = null,
     nextPageToken: String = null

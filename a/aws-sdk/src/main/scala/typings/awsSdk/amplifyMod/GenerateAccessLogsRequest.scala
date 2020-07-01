@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GenerateAccessLogsRequest extends js.Object {
   /**
-    *  Unique Id for an Amplify App. 
+    *  The unique ID for an Amplify app. 
     */
   var appId: AppId = js.native
   /**
-    *  Name of the domain. 
+    *  The name of the domain. 
     */
   var domainName: DomainName = js.native
   /**
-    *  The time at which the logs should end, inclusive. 
+    *  The time at which the logs should end. The time range specified is inclusive of the end time. 
     */
   var endTime: js.UndefOr[EndTime] = js.native
   /**
-    *  The time at which the logs should start, inclusive. 
+    *  The time at which the logs should start. The time range specified is inclusive of the start time. 
     */
   var startTime: js.UndefOr[StartTime] = js.native
 }

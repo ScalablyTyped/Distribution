@@ -15,7 +15,7 @@ trait Value[Name /* <: formatDate | formatTime */] extends js.Object {
 
 object Value {
   @scala.inline
-  def apply[Name](
+  def apply[/* <: typings.reactIntl.reactIntlStrings.formatDate | typings.reactIntl.reactIntlStrings.formatTime */ Name](
     children: js.Array[DateTimeFormatPart] => ReactElement | Null,
     value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.react-intl/lib/types.IntlShape[Name]>[0] */ js.Any
   ): Value[Name] = {

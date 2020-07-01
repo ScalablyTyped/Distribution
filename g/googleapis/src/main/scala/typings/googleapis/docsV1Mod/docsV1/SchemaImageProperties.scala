@@ -50,22 +50,22 @@ trait SchemaImageProperties extends js.Object {
 object SchemaImageProperties {
   @scala.inline
   def apply(
-    angle: Int | Double = null,
-    brightness: Int | Double = null,
+    angle: js.UndefOr[Double] = js.undefined,
+    brightness: js.UndefOr[Double] = js.undefined,
     contentUri: String = null,
-    contrast: Int | Double = null,
+    contrast: js.UndefOr[Double] = js.undefined,
     cropProperties: SchemaCropProperties = null,
     sourceUri: String = null,
-    transparency: Int | Double = null
+    transparency: js.UndefOr[Double] = js.undefined
   ): SchemaImageProperties = {
     val __obj = js.Dynamic.literal()
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (brightness != null) __obj.updateDynamic("brightness")(brightness.asInstanceOf[js.Any])
+    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(brightness)) __obj.updateDynamic("brightness")(brightness.get.asInstanceOf[js.Any])
     if (contentUri != null) __obj.updateDynamic("contentUri")(contentUri.asInstanceOf[js.Any])
-    if (contrast != null) __obj.updateDynamic("contrast")(contrast.asInstanceOf[js.Any])
+    if (!js.isUndefined(contrast)) __obj.updateDynamic("contrast")(contrast.get.asInstanceOf[js.Any])
     if (cropProperties != null) __obj.updateDynamic("cropProperties")(cropProperties.asInstanceOf[js.Any])
     if (sourceUri != null) __obj.updateDynamic("sourceUri")(sourceUri.asInstanceOf[js.Any])
-    if (transparency != null) __obj.updateDynamic("transparency")(transparency.asInstanceOf[js.Any])
+    if (!js.isUndefined(transparency)) __obj.updateDynamic("transparency")(transparency.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaImageProperties]
   }
 }

@@ -16,7 +16,7 @@ trait CalendarProps extends js.Object {
   var autoZIndex: js.UndefOr[Boolean] = js.undefined
   var baseZIndex: js.UndefOr[Double] = js.undefined
   var className: js.UndefOr[String] = js.undefined
-  var clearButtonStyleClass: js.UndefOr[String] = js.undefined
+  var clearButtonClassName: js.UndefOr[String] = js.undefined
   var dateFormat: js.UndefOr[String] = js.undefined
   var dateTemplate: js.UndefOr[js.Function1[/* dateMeta */ DateMetaData, ReactNode]] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
@@ -90,7 +90,7 @@ object CalendarProps {
     autoZIndex: js.UndefOr[Boolean] = js.undefined,
     baseZIndex: js.UndefOr[Double] = js.undefined,
     className: String = null,
-    clearButtonStyleClass: String = null,
+    clearButtonClassName: String = null,
     dateFormat: String = null,
     dateTemplate: /* dateMeta */ DateMetaData => ReactNode = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
@@ -161,7 +161,7 @@ object CalendarProps {
     if (!js.isUndefined(autoZIndex)) __obj.updateDynamic("autoZIndex")(autoZIndex.get.asInstanceOf[js.Any])
     if (!js.isUndefined(baseZIndex)) __obj.updateDynamic("baseZIndex")(baseZIndex.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (clearButtonStyleClass != null) __obj.updateDynamic("clearButtonStyleClass")(clearButtonStyleClass.asInstanceOf[js.Any])
+    if (clearButtonClassName != null) __obj.updateDynamic("clearButtonClassName")(clearButtonClassName.asInstanceOf[js.Any])
     if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
     if (dateTemplate != null) __obj.updateDynamic("dateTemplate")(js.Any.fromFunction1(dateTemplate))
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])

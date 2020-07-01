@@ -6,9 +6,10 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * ContentControl appearance
+  * Either bounding box, or tags, or hidden.
   *
   * [Api set: WordApi]
+  * @remarks
   */
 @JSGlobal("Word.ContentControlAppearance")
 @js.native

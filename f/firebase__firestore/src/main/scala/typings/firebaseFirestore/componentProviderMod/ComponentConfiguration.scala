@@ -4,7 +4,6 @@ import typings.firebaseFirestore.asyncQueueMod.AsyncQueue
 import typings.firebaseFirestore.databaseInfoMod.DatabaseInfo
 import typings.firebaseFirestore.datastoreMod.Datastore
 import typings.firebaseFirestore.firestoreClientMod.PersistenceSettings
-import typings.firebaseFirestore.platformMod.Platform
 import typings.firebaseFirestore.sharedClientStateMod.ClientId
 import typings.firebaseFirestore.userMod.User
 import scala.scalajs.js
@@ -19,7 +18,6 @@ trait ComponentConfiguration extends js.Object {
   var initialUser: User
   var maxConcurrentLimboResolutions: Double
   var persistenceSettings: PersistenceSettings
-  var platform: Platform
 }
 
 object ComponentConfiguration {
@@ -31,10 +29,9 @@ object ComponentConfiguration {
     datastore: Datastore,
     initialUser: User,
     maxConcurrentLimboResolutions: Double,
-    persistenceSettings: PersistenceSettings,
-    platform: Platform
+    persistenceSettings: PersistenceSettings
   ): ComponentConfiguration = {
-    val __obj = js.Dynamic.literal(asyncQueue = asyncQueue.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], databaseInfo = databaseInfo.asInstanceOf[js.Any], datastore = datastore.asInstanceOf[js.Any], initialUser = initialUser.asInstanceOf[js.Any], maxConcurrentLimboResolutions = maxConcurrentLimboResolutions.asInstanceOf[js.Any], persistenceSettings = persistenceSettings.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(asyncQueue = asyncQueue.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], databaseInfo = databaseInfo.asInstanceOf[js.Any], datastore = datastore.asInstanceOf[js.Any], initialUser = initialUser.asInstanceOf[js.Any], maxConcurrentLimboResolutions = maxConcurrentLimboResolutions.asInstanceOf[js.Any], persistenceSettings = persistenceSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentConfiguration]
   }
 }

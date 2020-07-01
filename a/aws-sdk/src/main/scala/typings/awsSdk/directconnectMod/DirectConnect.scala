@@ -296,12 +296,12 @@ trait DirectConnect extends Service {
   def createLag(params: CreateLagRequest): Request[Lag, AWSError] = js.native
   def createLag(params: CreateLagRequest, callback: js.Function2[/* err */ AWSError, /* data */ Lag, Unit]): Request[Lag, AWSError] = js.native
   /**
-    * Creates a private virtual interface. A virtual interface is the VLAN that transports AWS Direct Connect traffic. A private virtual interface can be connected to either a Direct Connect gateway or a Virtual Private Gateway (VGW). Connecting the private virtual interface to a Direct Connect gateway enables the possibility for connecting to multiple VPCs, including VPCs in different AWS Regions. Connecting the private virtual interface to a VGW only provides access to a single VPC within the same Region.
+    * Creates a private virtual interface. A virtual interface is the VLAN that transports AWS Direct Connect traffic. A private virtual interface can be connected to either a Direct Connect gateway or a Virtual Private Gateway (VGW). Connecting the private virtual interface to a Direct Connect gateway enables the possibility for connecting to multiple VPCs, including VPCs in different AWS Regions. Connecting the private virtual interface to a VGW only provides access to a single VPC within the same Region. Setting the MTU of a virtual interface to 9001 (jumbo frames) can cause an update to the underlying physical connection if it wasn't updated to support jumbo frames. Updating the connection disrupts network connectivity for all virtual interfaces associated with the connection for up to 30 seconds. To check whether your connection supports jumbo frames, call DescribeConnections. To check whether your virtual interface supports jumbo frames, call DescribeVirtualInterfaces.
     */
   def createPrivateVirtualInterface(): Request[VirtualInterface, AWSError] = js.native
   def createPrivateVirtualInterface(callback: js.Function2[/* err */ AWSError, /* data */ VirtualInterface, Unit]): Request[VirtualInterface, AWSError] = js.native
   /**
-    * Creates a private virtual interface. A virtual interface is the VLAN that transports AWS Direct Connect traffic. A private virtual interface can be connected to either a Direct Connect gateway or a Virtual Private Gateway (VGW). Connecting the private virtual interface to a Direct Connect gateway enables the possibility for connecting to multiple VPCs, including VPCs in different AWS Regions. Connecting the private virtual interface to a VGW only provides access to a single VPC within the same Region.
+    * Creates a private virtual interface. A virtual interface is the VLAN that transports AWS Direct Connect traffic. A private virtual interface can be connected to either a Direct Connect gateway or a Virtual Private Gateway (VGW). Connecting the private virtual interface to a Direct Connect gateway enables the possibility for connecting to multiple VPCs, including VPCs in different AWS Regions. Connecting the private virtual interface to a VGW only provides access to a single VPC within the same Region. Setting the MTU of a virtual interface to 9001 (jumbo frames) can cause an update to the underlying physical connection if it wasn't updated to support jumbo frames. Updating the connection disrupts network connectivity for all virtual interfaces associated with the connection for up to 30 seconds. To check whether your connection supports jumbo frames, call DescribeConnections. To check whether your virtual interface supports jumbo frames, call DescribeVirtualInterfaces.
     */
   def createPrivateVirtualInterface(params: CreatePrivateVirtualInterfaceRequest): Request[VirtualInterface, AWSError] = js.native
   def createPrivateVirtualInterface(
@@ -322,12 +322,12 @@ trait DirectConnect extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ VirtualInterface, Unit]
   ): Request[VirtualInterface, AWSError] = js.native
   /**
-    * Creates a transit virtual interface. A transit virtual interface should be used to access one or more transit gateways associated with Direct Connect gateways. A transit virtual interface enables the connection of multiple VPCs attached to a transit gateway to a Direct Connect gateway.  If you associate your transit gateway with one or more Direct Connect gateways, the Autonomous System Number (ASN) used by the transit gateway and the Direct Connect gateway must be different. For example, if you use the default ASN 64512 for both your the transit gateway and Direct Connect gateway, the association request fails. 
+    * Creates a transit virtual interface. A transit virtual interface should be used to access one or more transit gateways associated with Direct Connect gateways. A transit virtual interface enables the connection of multiple VPCs attached to a transit gateway to a Direct Connect gateway.  If you associate your transit gateway with one or more Direct Connect gateways, the Autonomous System Number (ASN) used by the transit gateway and the Direct Connect gateway must be different. For example, if you use the default ASN 64512 for both your the transit gateway and Direct Connect gateway, the association request fails.  Setting the MTU of a virtual interface to 8500 (jumbo frames) can cause an update to the underlying physical connection if it wasn't updated to support jumbo frames. Updating the connection disrupts network connectivity for all virtual interfaces associated with the connection for up to 30 seconds. To check whether your connection supports jumbo frames, call DescribeConnections. To check whether your virtual interface supports jumbo frames, call DescribeVirtualInterfaces.
     */
   def createTransitVirtualInterface(): Request[CreateTransitVirtualInterfaceResult, AWSError] = js.native
   def createTransitVirtualInterface(callback: js.Function2[/* err */ AWSError, /* data */ CreateTransitVirtualInterfaceResult, Unit]): Request[CreateTransitVirtualInterfaceResult, AWSError] = js.native
   /**
-    * Creates a transit virtual interface. A transit virtual interface should be used to access one or more transit gateways associated with Direct Connect gateways. A transit virtual interface enables the connection of multiple VPCs attached to a transit gateway to a Direct Connect gateway.  If you associate your transit gateway with one or more Direct Connect gateways, the Autonomous System Number (ASN) used by the transit gateway and the Direct Connect gateway must be different. For example, if you use the default ASN 64512 for both your the transit gateway and Direct Connect gateway, the association request fails. 
+    * Creates a transit virtual interface. A transit virtual interface should be used to access one or more transit gateways associated with Direct Connect gateways. A transit virtual interface enables the connection of multiple VPCs attached to a transit gateway to a Direct Connect gateway.  If you associate your transit gateway with one or more Direct Connect gateways, the Autonomous System Number (ASN) used by the transit gateway and the Direct Connect gateway must be different. For example, if you use the default ASN 64512 for both your the transit gateway and Direct Connect gateway, the association request fails.  Setting the MTU of a virtual interface to 8500 (jumbo frames) can cause an update to the underlying physical connection if it wasn't updated to support jumbo frames. Updating the connection disrupts network connectivity for all virtual interfaces associated with the connection for up to 30 seconds. To check whether your connection supports jumbo frames, call DescribeConnections. To check whether your virtual interface supports jumbo frames, call DescribeVirtualInterfaces.
     */
   def createTransitVirtualInterface(params: CreateTransitVirtualInterfaceRequest): Request[CreateTransitVirtualInterfaceResult, AWSError] = js.native
   def createTransitVirtualInterface(
@@ -661,6 +661,47 @@ trait DirectConnect extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ Connection, Unit]
   ): Request[Connection, AWSError] = js.native
   /**
+    * Lists the virtual interface failover test history.
+    */
+  def listVirtualInterfaceTestHistory(): Request[ListVirtualInterfaceTestHistoryResponse, AWSError] = js.native
+  def listVirtualInterfaceTestHistory(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListVirtualInterfaceTestHistoryResponse, Unit]
+  ): Request[ListVirtualInterfaceTestHistoryResponse, AWSError] = js.native
+  /**
+    * Lists the virtual interface failover test history.
+    */
+  def listVirtualInterfaceTestHistory(params: ListVirtualInterfaceTestHistoryRequest): Request[ListVirtualInterfaceTestHistoryResponse, AWSError] = js.native
+  def listVirtualInterfaceTestHistory(
+    params: ListVirtualInterfaceTestHistoryRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListVirtualInterfaceTestHistoryResponse, Unit]
+  ): Request[ListVirtualInterfaceTestHistoryResponse, AWSError] = js.native
+  /**
+    * Starts the virtual interface failover test that verifies your configuration meets your resiliency requirements by placing the BGP peering session in the DOWN state. You can then send traffic to verify that there are no outages. You can run the test on public, private, transit, and hosted virtual interfaces. You can use ListVirtualInterfaceTestHistory to view the virtual interface test history. If you need to stop the test before the test interval completes, use StopBgpFailoverTest.
+    */
+  def startBgpFailoverTest(): Request[StartBgpFailoverTestResponse, AWSError] = js.native
+  def startBgpFailoverTest(callback: js.Function2[/* err */ AWSError, /* data */ StartBgpFailoverTestResponse, Unit]): Request[StartBgpFailoverTestResponse, AWSError] = js.native
+  /**
+    * Starts the virtual interface failover test that verifies your configuration meets your resiliency requirements by placing the BGP peering session in the DOWN state. You can then send traffic to verify that there are no outages. You can run the test on public, private, transit, and hosted virtual interfaces. You can use ListVirtualInterfaceTestHistory to view the virtual interface test history. If you need to stop the test before the test interval completes, use StopBgpFailoverTest.
+    */
+  def startBgpFailoverTest(params: StartBgpFailoverTestRequest): Request[StartBgpFailoverTestResponse, AWSError] = js.native
+  def startBgpFailoverTest(
+    params: StartBgpFailoverTestRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartBgpFailoverTestResponse, Unit]
+  ): Request[StartBgpFailoverTestResponse, AWSError] = js.native
+  /**
+    * Stops the virtual interface failover test.
+    */
+  def stopBgpFailoverTest(): Request[StopBgpFailoverTestResponse, AWSError] = js.native
+  def stopBgpFailoverTest(callback: js.Function2[/* err */ AWSError, /* data */ StopBgpFailoverTestResponse, Unit]): Request[StopBgpFailoverTestResponse, AWSError] = js.native
+  /**
+    * Stops the virtual interface failover test.
+    */
+  def stopBgpFailoverTest(params: StopBgpFailoverTestRequest): Request[StopBgpFailoverTestResponse, AWSError] = js.native
+  def stopBgpFailoverTest(
+    params: StopBgpFailoverTestRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StopBgpFailoverTestResponse, Unit]
+  ): Request[StopBgpFailoverTestResponse, AWSError] = js.native
+  /**
     * Adds the specified tags to the specified AWS Direct Connect resource. Each resource can have a maximum of 50 tags. Each tag consists of a key and an optional value. If a tag with the same key is already associated with the resource, this action updates its value.
     */
   def tagResource(): Request[TagResourceResponse, AWSError] = js.native
@@ -712,12 +753,12 @@ trait DirectConnect extends Service {
   def updateLag(params: UpdateLagRequest): Request[Lag, AWSError] = js.native
   def updateLag(params: UpdateLagRequest, callback: js.Function2[/* err */ AWSError, /* data */ Lag, Unit]): Request[Lag, AWSError] = js.native
   /**
-    * Updates the specified attributes of the specified virtual private interface. Setting the MTU of a virtual interface to 9001 (jumbo frames) can cause an update to the underlying physical connection if it wasn't updated to support jumbo frames. Updating the connection disrupts network connectivity for all virtual interfaces associated with the connection for up to 30 seconds. To check whether your connection supports jumbo frames, call DescribeConnections. To check whether your virtual interface supports jumbo frames, call DescribeVirtualInterfaces.
+    * Updates the specified attributes of the specified virtual private interface. Setting the MTU of a virtual interface to 9001 (jumbo frames) can cause an update to the underlying physical connection if it wasn't updated to support jumbo frames. Updating the connection disrupts network connectivity for all virtual interfaces associated with the connection for up to 30 seconds. To check whether your connection supports jumbo frames, call DescribeConnections. To check whether your virtual q interface supports jumbo frames, call DescribeVirtualInterfaces.
     */
   def updateVirtualInterfaceAttributes(): Request[VirtualInterface, AWSError] = js.native
   def updateVirtualInterfaceAttributes(callback: js.Function2[/* err */ AWSError, /* data */ VirtualInterface, Unit]): Request[VirtualInterface, AWSError] = js.native
   /**
-    * Updates the specified attributes of the specified virtual private interface. Setting the MTU of a virtual interface to 9001 (jumbo frames) can cause an update to the underlying physical connection if it wasn't updated to support jumbo frames. Updating the connection disrupts network connectivity for all virtual interfaces associated with the connection for up to 30 seconds. To check whether your connection supports jumbo frames, call DescribeConnections. To check whether your virtual interface supports jumbo frames, call DescribeVirtualInterfaces.
+    * Updates the specified attributes of the specified virtual private interface. Setting the MTU of a virtual interface to 9001 (jumbo frames) can cause an update to the underlying physical connection if it wasn't updated to support jumbo frames. Updating the connection disrupts network connectivity for all virtual interfaces associated with the connection for up to 30 seconds. To check whether your connection supports jumbo frames, call DescribeConnections. To check whether your virtual q interface supports jumbo frames, call DescribeVirtualInterfaces.
     */
   def updateVirtualInterfaceAttributes(params: UpdateVirtualInterfaceAttributesRequest): Request[VirtualInterface, AWSError] = js.native
   def updateVirtualInterfaceAttributes(

@@ -25,10 +25,10 @@ trait SchemaGoogleCloudDialogflowV2beta1Sentiment extends js.Object {
 
 object SchemaGoogleCloudDialogflowV2beta1Sentiment {
   @scala.inline
-  def apply(magnitude: Int | Double = null, score: Int | Double = null): SchemaGoogleCloudDialogflowV2beta1Sentiment = {
+  def apply(magnitude: js.UndefOr[Double] = js.undefined, score: js.UndefOr[Double] = js.undefined): SchemaGoogleCloudDialogflowV2beta1Sentiment = {
     val __obj = js.Dynamic.literal()
-    if (magnitude != null) __obj.updateDynamic("magnitude")(magnitude.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(magnitude)) __obj.updateDynamic("magnitude")(magnitude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1Sentiment]
   }
 }

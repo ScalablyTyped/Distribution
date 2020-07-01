@@ -1,7 +1,6 @@
 package typings.materializeCss.mod
 
 import typings.materializeCss.M.SliderOptions
-import typings.materializeCss.MElements
 import typings.materializeCss.anon.PartialSliderOptions
 import typings.std.Element
 import scala.scalajs.js
@@ -18,20 +17,15 @@ class Slider ()
   /* CompleteClass */
   override var activeIndex: Double = js.native
   /**
-    * The DOM element the plugin was initialized with
+    * ID of the dropdown element
     */
   /* CompleteClass */
   override var el: Element = js.native
   /**
-    * The options the instance was initialized with
+    * ID of the dropdown element
     */
   /* CompleteClass */
   override var options: SliderOptions = js.native
-  /**
-    * Destroy plugin instance and teardown
-    */
-  /* CompleteClass */
-  override def destroy(): Unit = js.native
   /**
     * Move to next slider
     */
@@ -65,8 +59,13 @@ object Slider extends js.Object {
   /**
     * Init Sliders
     */
-  def init(els: MElements): js.Array[typings.materializeCss.M.Slider] = js.native
-  def init(els: MElements, options: PartialSliderOptions): js.Array[typings.materializeCss.M.Slider] = js.native
+  def init(
+    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any
+  ): js.Array[typings.materializeCss.M.Slider] = js.native
+  def init(
+    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any,
+    options: PartialSliderOptions
+  ): js.Array[typings.materializeCss.M.Slider] = js.native
   /**
     * Init Slider
     */

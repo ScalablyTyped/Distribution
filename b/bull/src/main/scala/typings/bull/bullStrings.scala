@@ -43,7 +43,9 @@ object bullStrings {
        with JobStatusClean
   
   @js.native
-  sealed trait paused extends js.Object
+  sealed trait paused
+    extends JobStatus
+       with JobStatusClean
   
   @js.native
   sealed trait progress extends js.Object

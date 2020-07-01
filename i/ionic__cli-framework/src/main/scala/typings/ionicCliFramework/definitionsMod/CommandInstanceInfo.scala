@@ -13,7 +13,7 @@ trait CommandInstanceInfo[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace
 
 object CommandInstanceInfo {
   @scala.inline
-  def apply[C, N, M, I, O](
+  def apply[/* <: typings.ionicCliFramework.definitionsMod.ICommand[C, N, M, I, O] */ C, /* <: typings.ionicCliFramework.definitionsMod.INamespace[C, N, M, I, O] */ N, /* <: typings.ionicCliFramework.definitionsMod.CommandMetadata[I, O] */ M, /* <: typings.ionicCliFramework.definitionsMod.CommandMetadataInput */ I, /* <: typings.ionicCliFramework.definitionsMod.CommandMetadataOption */ O](
     env: ProcessEnv,
     executor: IExecutor[C, N, M, I, O],
     location: NamespaceLocateResult[C, N, M, I, O]

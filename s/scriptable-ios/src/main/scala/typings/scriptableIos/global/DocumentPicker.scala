@@ -20,6 +20,16 @@ object DocumentPicker extends js.Object {
     */
   def export(path: String): js.Promise[js.Array[String]] = js.native
   /**
+    * _Exports data._
+    *
+    * Exports data to a new file. The name of the file can optionally be specified. A picker prompting for a destination to export the document to is presented.
+    * @param data - Data to export.
+    * @param name - Optional name of the image to export.
+    * @see https://docs.scriptable.app/documentpicker/#exportdata
+    */
+  def exportData(data: typings.scriptableIos.Data): js.Promise[js.Array[String]] = js.native
+  def exportData(data: typings.scriptableIos.Data, name: String): js.Promise[js.Array[String]] = js.native
+  /**
     * _Exports an image._
     *
     * Exports an image to a new file. The name of the file can optionally be specified. A picker prompting for a destination to export the document to is presented.

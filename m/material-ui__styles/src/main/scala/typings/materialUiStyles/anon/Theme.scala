@@ -12,7 +12,7 @@ trait Theme[StylesType /* <: ClassKeyInferable[_, _] */] extends js.Object {
 
 object Theme {
   @scala.inline
-  def apply[StylesType](theme: ThemeOfStyles[StylesType]): Theme[StylesType] = {
+  def apply[/* <: typings.materialUiStyles.withStylesWithStylesMod.ClassKeyInferable[_, _] */ StylesType](theme: ThemeOfStyles[StylesType]): Theme[StylesType] = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Theme[StylesType]]
   }

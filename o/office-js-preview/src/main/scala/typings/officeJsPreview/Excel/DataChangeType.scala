@@ -15,6 +15,7 @@ sealed trait DataChangeType extends js.Object
 object DataChangeType extends js.Object {
   /**
     * CellDeleted represents the data change event is triggered by deleting cells.
+    * [Api set: ExcelApi 1.7]
     *
     */
   @js.native
@@ -22,6 +23,7 @@ object DataChangeType extends js.Object {
   
   /**
     * CellInserted represents the data change event is triggered by inserting new cells.
+    * [Api set: ExcelApi 1.7]
     *
     */
   @js.native
@@ -29,6 +31,7 @@ object DataChangeType extends js.Object {
   
   /**
     * ColumnDeleted represents the data change event is triggered by deleting columns.
+    * [Api set: ExcelApi 1.7]
     *
     */
   @js.native
@@ -36,6 +39,7 @@ object DataChangeType extends js.Object {
   
   /**
     * ColumnInserted represents the data change event is triggered by inserting new columns.
+    * [Api set: ExcelApi 1.7]
     *
     */
   @js.native
@@ -43,6 +47,7 @@ object DataChangeType extends js.Object {
   
   /**
     * RangeEdited represents the data change event is triggered by range being edited.
+    * [Api set: ExcelApi 1.7]
     *
     */
   @js.native
@@ -50,6 +55,7 @@ object DataChangeType extends js.Object {
   
   /**
     * RowDeleted represents the data change event is triggered by deleting rows.
+    * [Api set: ExcelApi 1.7]
     *
     */
   @js.native
@@ -57,6 +63,7 @@ object DataChangeType extends js.Object {
   
   /**
     * RowInserted represents the data change event is triggered by inserting new rows.
+    * [Api set: ExcelApi 1.7]
     *
     */
   @js.native
@@ -64,6 +71,7 @@ object DataChangeType extends js.Object {
   
   /**
     * Unknown represents the type of data change is not the listed types.
+    * [Api set: ExcelApi The name of this value was 'Others' in ExcelApi 1.7]
     *
     */
   @js.native

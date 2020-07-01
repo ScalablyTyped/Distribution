@@ -19,9 +19,9 @@ trait SchemaToolExitCode extends js.Object {
 
 object SchemaToolExitCode {
   @scala.inline
-  def apply(number: Int | Double = null): SchemaToolExitCode = {
+  def apply(number: js.UndefOr[Double] = js.undefined): SchemaToolExitCode = {
     val __obj = js.Dynamic.literal()
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaToolExitCode]
   }
 }

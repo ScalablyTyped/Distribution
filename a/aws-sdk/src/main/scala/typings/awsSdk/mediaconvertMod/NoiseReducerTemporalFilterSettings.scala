@@ -11,6 +11,10 @@ trait NoiseReducerTemporalFilterSettings extends js.Object {
     */
   var AggressiveMode: js.UndefOr[integerMin0Max4] = js.native
   /**
+    * Optional. When you set Noise reducer (noiseReducer) to Temporal (TEMPORAL), you can optionally use this setting to apply additional sharpening. The default behavior, Auto (AUTO) allows the transcoder to determine whether to apply filtering, depending on input type and quality.
+    */
+  var PostTemporalSharpening: js.UndefOr[NoiseFilterPostTemporalSharpening] = js.native
+  /**
     * The speed of the filter (higher number is faster). Low setting reduces bit rate at the cost of transcode time, high setting improves transcode time at the cost of bit rate.
     */
   var Speed: js.UndefOr[integerMinNegative1Max3] = js.native
@@ -24,11 +28,13 @@ object NoiseReducerTemporalFilterSettings {
   @scala.inline
   def apply(
     AggressiveMode: js.UndefOr[integerMin0Max4] = js.undefined,
+    PostTemporalSharpening: NoiseFilterPostTemporalSharpening = null,
     Speed: js.UndefOr[integerMinNegative1Max3] = js.undefined,
     Strength: js.UndefOr[integerMin0Max16] = js.undefined
   ): NoiseReducerTemporalFilterSettings = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(AggressiveMode)) __obj.updateDynamic("AggressiveMode")(AggressiveMode.get.asInstanceOf[js.Any])
+    if (PostTemporalSharpening != null) __obj.updateDynamic("PostTemporalSharpening")(PostTemporalSharpening.asInstanceOf[js.Any])
     if (!js.isUndefined(Speed)) __obj.updateDynamic("Speed")(Speed.get.asInstanceOf[js.Any])
     if (!js.isUndefined(Strength)) __obj.updateDynamic("Strength")(Strength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoiseReducerTemporalFilterSettings]

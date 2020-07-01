@@ -3,9 +3,9 @@ package typings.echarts.echarts.EChartOption.SeriesRadar
 import typings.echarts.anon.AreaStyleItemStyle
 import typings.echarts.anon.BarBorderWidth
 import typings.echarts.anon.Distance
-import typings.echarts.anon.ExtraCssText
 import typings.echarts.anon.Opacity
 import typings.echarts.anon.ShadowBlur
+import typings.echarts.echarts.EChartOption.BaseTooltip
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -150,7 +150,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.data.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
   /**
     * Numerical value of a single data item.
     *
@@ -174,7 +174,7 @@ object DataObject {
     symbolOffset: js.Array[_] = null,
     symbolRotate: js.UndefOr[Double] = js.undefined,
     symbolSize: js.Array[_] | Double = null,
-    tooltip: ExtraCssText = null,
+    tooltip: BaseTooltip = null,
     value: Double | js.Array[Double] = null
   ): DataObject = {
     val __obj = js.Dynamic.literal()

@@ -289,7 +289,7 @@ trait ChildrenVisibleMin extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.levels.upperLabel
     */
-  var upperLabel: js.UndefOr[TextShadowOffsetX] = js.undefined
+  var upperLabel: js.UndefOr[TextShadowColor] = js.undefined
   /**
     * A node will not be shown when its area size is smaller than
     * this value (unit: px square).
@@ -399,7 +399,7 @@ object ChildrenVisibleMin {
     emphasis: UpperLabel = null,
     itemStyle: BorderColorSaturation = null,
     label: Ellipsis = null,
-    upperLabel: TextShadowOffsetX = null,
+    upperLabel: TextShadowColor = null,
     visibleMin: js.UndefOr[Double] = js.undefined,
     visualDimension: js.UndefOr[Double] = js.undefined,
     visualMax: js.UndefOr[Double] = js.undefined,

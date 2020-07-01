@@ -11,7 +11,7 @@ trait IdentityProviderDetails extends js.Object {
     */
   var InvocationRole: js.UndefOr[Role] = js.native
   /**
-    * Contains the location of the service endpoint used to authenticate users.
+    * Provides the location of the service endpoint used to authenticate users.
     */
   var Url: js.UndefOr[typings.awsSdk.transferMod.Url] = js.native
 }

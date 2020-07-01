@@ -19,7 +19,7 @@ object SchemaHangoutsChatOptions {
   @scala.inline
   def apply(includeRooms: js.UndefOr[Boolean] = js.undefined): SchemaHangoutsChatOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeRooms)) __obj.updateDynamic("includeRooms")(includeRooms.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeRooms)) __obj.updateDynamic("includeRooms")(includeRooms.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHangoutsChatOptions]
   }
 }

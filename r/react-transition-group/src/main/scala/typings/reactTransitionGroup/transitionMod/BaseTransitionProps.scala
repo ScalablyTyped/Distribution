@@ -82,7 +82,7 @@ trait BaseTransitionProps[RefElement /* <: js.UndefOr[HTMLElement] */]
 
 object BaseTransitionProps {
   @scala.inline
-  def apply[RefElement](
+  def apply[/* <: js.UndefOr[typings.std.HTMLElement] */ RefElement](
     StringDictionary: /* name */ StringDictionary[js.Any] = null,
     children: TransitionChildren = null,
     in: js.UndefOr[Boolean] = js.undefined,

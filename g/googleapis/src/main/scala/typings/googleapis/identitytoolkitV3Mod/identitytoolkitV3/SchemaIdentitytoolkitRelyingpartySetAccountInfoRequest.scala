@@ -139,10 +139,10 @@ object SchemaIdentitytoolkitRelyingpartySetAccountInfoRequest {
     if (delegatedProjectNumber != null) __obj.updateDynamic("delegatedProjectNumber")(delegatedProjectNumber.asInstanceOf[js.Any])
     if (deleteAttribute != null) __obj.updateDynamic("deleteAttribute")(deleteAttribute.asInstanceOf[js.Any])
     if (deleteProvider != null) __obj.updateDynamic("deleteProvider")(deleteProvider.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableUser)) __obj.updateDynamic("disableUser")(disableUser.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableUser)) __obj.updateDynamic("disableUser")(disableUser.get.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified.asInstanceOf[js.Any])
+    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified.get.asInstanceOf[js.Any])
     if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
     if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
     if (lastLoginAt != null) __obj.updateDynamic("lastLoginAt")(lastLoginAt.asInstanceOf[js.Any])
@@ -152,8 +152,8 @@ object SchemaIdentitytoolkitRelyingpartySetAccountInfoRequest {
     if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
     if (photoUrl != null) __obj.updateDynamic("photoUrl")(photoUrl.asInstanceOf[js.Any])
     if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnSecureToken)) __obj.updateDynamic("returnSecureToken")(returnSecureToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(upgradeToFederatedLogin)) __obj.updateDynamic("upgradeToFederatedLogin")(upgradeToFederatedLogin.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnSecureToken)) __obj.updateDynamic("returnSecureToken")(returnSecureToken.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(upgradeToFederatedLogin)) __obj.updateDynamic("upgradeToFederatedLogin")(upgradeToFederatedLogin.get.asInstanceOf[js.Any])
     if (validSince != null) __obj.updateDynamic("validSince")(validSince.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIdentitytoolkitRelyingpartySetAccountInfoRequest]
   }

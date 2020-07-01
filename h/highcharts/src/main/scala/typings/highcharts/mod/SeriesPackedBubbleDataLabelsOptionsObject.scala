@@ -133,18 +133,7 @@ trait SeriesPackedBubbleDataLabelsOptionsObject extends js.Object {
     */
   var padding: js.UndefOr[Double] = js.undefined
   var parentNodeFormat: js.UndefOr[String] = js.undefined
-  /**
-    * (Highcharts, Highstock, Highmaps, Gantt) Callback to format data labels
-    * for _parentNodes_. The `parentNodeFormat` option takes precedence over
-    * the `parentNodeFormatter`.
-    */
   var parentNodeFormatter: js.UndefOr[SeriesPackedBubbleDataLabelsFormatterCallbackFunction] = js.undefined
-  /**
-    * (Highcharts, Highstock, Highmaps, Gantt) Options for a _parentNode_ label
-    * text.
-    *
-    * **Note:** Only SVG-based renderer supports this option.
-    */
   var parentNodeTextPath: js.UndefOr[SeriesPackedBubbleDataLabelsTextPathOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Aligns data labels relative to

@@ -1,6 +1,5 @@
 package typings.firebaseFirestore.localStoreMod
 
-import typings.firebaseFirestore.byteStringMod.ByteString
 import typings.firebaseFirestore.collectionsMod.MaybeDocumentMap_
 import typings.firebaseFirestore.documentKeyMod.DocumentKey
 import typings.firebaseFirestore.documentMod.MaybeDocument
@@ -125,8 +124,6 @@ class LocalStore protected () extends js.Object {
     * determine whether to buffer incoming snapshots from the backend).
     */
   def getLastRemoteSnapshotVersion(): js.Promise[SnapshotVersion] = js.native
-  /** Returns the last recorded stream token for the current user. */
-  def getLastStreamToken(): js.Promise[ByteString] = js.native
   /**
     * Returns the TargetData as seen by the LocalStore, including updates that may
     * have not yet been persisted to the TargetCache.
@@ -172,12 +169,6 @@ class LocalStore protected () extends js.Object {
     * Releasing a non-existing `Target` is a no-op.
     */
   def releaseTarget(targetId: Double, keepPersistedTargetData: Boolean): js.Promise[Unit] = js.native
-  /**
-    * Sets the stream token for the current user without acknowledging any
-    * mutation batch. This is usually only useful after a stream handshake or in
-    * response to an error that requires clearing the stream token.
-    */
-  def setLastStreamToken(streamToken: ByteString): js.Promise[Unit] = js.native
   /** Starts the LocalStore. */
   def start(): js.Promise[Unit] = js.native
 }

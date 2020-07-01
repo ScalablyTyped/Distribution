@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 
 trait Control extends js.Object {
   var background: js.UndefOr[BackgroundType] = js.undefined
-  var container: js.UndefOr[Extend] = js.undefined
+  var container: js.UndefOr[ExtendExtendType] = js.undefined
   var control: js.UndefOr[Open] = js.undefined
   var extend: js.UndefOr[ExtendType] = js.undefined
   var icons: js.UndefOr[Up] = js.undefined
@@ -36,7 +36,7 @@ object Control {
   @scala.inline
   def apply(
     background: BackgroundType = null,
-    container: Extend = null,
+    container: ExtendExtendType = null,
     control: Open = null,
     extend: ExtendType = null,
     icons: Up = null,

@@ -39,11 +39,11 @@ trait SchemaDisk extends js.Object {
 
 object SchemaDisk {
   @scala.inline
-  def apply(diskType: String = null, mountPoint: String = null, sizeGb: Int | Double = null): SchemaDisk = {
+  def apply(diskType: String = null, mountPoint: String = null, sizeGb: js.UndefOr[Double] = js.undefined): SchemaDisk = {
     val __obj = js.Dynamic.literal()
     if (diskType != null) __obj.updateDynamic("diskType")(diskType.asInstanceOf[js.Any])
     if (mountPoint != null) __obj.updateDynamic("mountPoint")(mountPoint.asInstanceOf[js.Any])
-    if (sizeGb != null) __obj.updateDynamic("sizeGb")(sizeGb.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizeGb)) __obj.updateDynamic("sizeGb")(sizeGb.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDisk]
   }
 }

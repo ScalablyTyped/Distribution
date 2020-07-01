@@ -43,7 +43,7 @@ object SchemaNamedProperty {
     timestampValues: SchemaTimestampValues = null
   ): SchemaNamedProperty = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(booleanValue)) __obj.updateDynamic("booleanValue")(booleanValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(booleanValue)) __obj.updateDynamic("booleanValue")(booleanValue.get.asInstanceOf[js.Any])
     if (dateValues != null) __obj.updateDynamic("dateValues")(dateValues.asInstanceOf[js.Any])
     if (doubleValues != null) __obj.updateDynamic("doubleValues")(doubleValues.asInstanceOf[js.Any])
     if (enumValues != null) __obj.updateDynamic("enumValues")(enumValues.asInstanceOf[js.Any])

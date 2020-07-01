@@ -1,7 +1,7 @@
 
 # Scala.js typings for localforage
 
-Typings are for version 1.7.3
+Typings are for version 1.7.4
 
 ## Library description:
 Offline storage, improved.

@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 trait Variant extends js.Object {
   /**
     * The search parameters.
-    *
-    * @todo Handle this search options type.
     */
   val customSearchParameters: js.UndefOr[SearchOptions] = js.undefined
   /**

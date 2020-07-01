@@ -3,12 +3,13 @@ package typings.cypress.anon
 import typings.cypress.Cypress.BrowserChannel
 import typings.cypress.Cypress.BrowserFamily
 import typings.cypress.Cypress.BrowserName
+import typings.cypress.Cypress._IsBrowserMatcher
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<cypress.Cypress.Browser> */
-trait PartialBrowser extends js.Object {
+trait PartialBrowser extends _IsBrowserMatcher {
   var channel: js.UndefOr[BrowserChannel] = js.undefined
   var displayName: js.UndefOr[String] = js.undefined
   var family: js.UndefOr[BrowserFamily] = js.undefined

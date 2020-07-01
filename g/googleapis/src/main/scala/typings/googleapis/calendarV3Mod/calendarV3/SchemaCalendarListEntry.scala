@@ -1,6 +1,6 @@
 package typings.googleapis.calendarV3Mod.calendarV3
 
-import typings.googleapis.AnonNotifications
+import typings.googleapis.anon.Notifications
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -87,7 +87,7 @@ trait SchemaCalendarListEntry extends js.Object {
     * The notifications that the authenticated user is receiving for this
     * calendar.
     */
-  var notificationSettings: js.UndefOr[AnonNotifications] = js.native
+  var notificationSettings: js.UndefOr[Notifications] = js.native
   /**
     * Whether the calendar is the primary calendar of the authenticated user.
     * Read-only. Optional. The default is False.
@@ -129,7 +129,7 @@ object SchemaCalendarListEntry {
     id: String = null,
     kind: String = null,
     location: String = null,
-    notificationSettings: AnonNotifications = null,
+    notificationSettings: Notifications = null,
     primary: js.UndefOr[Boolean] = js.undefined,
     selected: js.UndefOr[Boolean] = js.undefined,
     summary: String = null,
@@ -142,17 +142,17 @@ object SchemaCalendarListEntry {
     if (colorId != null) __obj.updateDynamic("colorId")(colorId.asInstanceOf[js.Any])
     if (conferenceProperties != null) __obj.updateDynamic("conferenceProperties")(conferenceProperties.asInstanceOf[js.Any])
     if (defaultReminders != null) __obj.updateDynamic("defaultReminders")(defaultReminders.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
     if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (notificationSettings != null) __obj.updateDynamic("notificationSettings")(notificationSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
     if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
     if (summaryOverride != null) __obj.updateDynamic("summaryOverride")(summaryOverride.asInstanceOf[js.Any])
     if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])

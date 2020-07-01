@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ts-mockito" : "2.5.0"
+      "ts-mockito" : "2.6.1"
     }
   ],
   "test-dependencies" : [
     {
-      "ts-mockito" : "2.5.0"
+      "ts-mockito" : "2.6.1"
     }
   ],
   "compile-devDependencies" : [

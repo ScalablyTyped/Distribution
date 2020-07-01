@@ -1,6 +1,5 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.anon.ExtraCssText
 import typings.echarts.anon.LineStyleShadowBlur
 import typings.echarts.anon.ShadowBlur
 import typings.echarts.echarts.EChartOption.SeriesParallel.DataObject
@@ -389,7 +388,7 @@ trait SeriesParallel_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-parallel.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
   /**
     * @default
     * "parallel"
@@ -457,7 +456,7 @@ object SeriesParallel_ {
     realtime: js.UndefOr[Boolean] = js.undefined,
     silent: js.UndefOr[Boolean] = js.undefined,
     smooth: Boolean | Double = null,
-    tooltip: ExtraCssText = null,
+    tooltip: BaseTooltip = null,
     `type`: String = null,
     z: js.UndefOr[Double] = js.undefined,
     zlevel: js.UndefOr[Double] = js.undefined

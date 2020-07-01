@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PutClassificationExportConfigurationRequest extends js.Object {
   /**
-    * The location to export data classification results to, and the encryption settings to use when storing results in that location.
+    * The location to store data classification results in, and the encryption settings to use when storing results in that location.
     */
   var configuration: ClassificationExportConfiguration = js.native
 }

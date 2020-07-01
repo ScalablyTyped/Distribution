@@ -22,7 +22,7 @@ trait ApiPath[P /* <: SwaggerRequestParameters */] extends js.Object {
 
 object ApiPath {
   @scala.inline
-  def apply[P](
+  def apply[/* <: typings.swaggerTools.mod.SwaggerRequestParameters */ P](
     apiPath: String,
     params: P,
     path: js.Any,

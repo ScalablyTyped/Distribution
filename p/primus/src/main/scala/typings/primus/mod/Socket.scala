@@ -56,7 +56,7 @@ class Socket () extends Stream {
     event: `reconnect timeout`,
     handler: js.Function2[/* err */ Error, /* opts */ ReconnectEventOpts, Unit]
   ): this.type = js.native
-  def open(): Unit = js.native
+  def open(): this.type = js.native
   def write(data: js.Any): this.type = js.native
 }
 

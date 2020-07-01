@@ -51,9 +51,6 @@ object numbroStrings {
   sealed trait sign extends js.Object
   
   @js.native
-  sealed trait string extends js.Object
-  
-  @js.native
   sealed trait thousand extends js.Object
   
   @js.native
@@ -92,8 +89,6 @@ object numbroStrings {
   def prefix: prefix = "prefix".asInstanceOf[prefix]
   @scala.inline
   def sign: sign = "sign".asInstanceOf[sign]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
   @scala.inline
   def thousand: thousand = "thousand".asInstanceOf[thousand]
   @scala.inline

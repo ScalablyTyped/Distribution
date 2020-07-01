@@ -5,10 +5,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LogChannel extends js.Object {
-  /* Properties */
+  /**
+    * The log channel path.
+    */
   var channel: String
+  /**
+    * The various log levels.
+    */
   var configuration: String
+  /**
+    * Whether or not a log type is enabled.
+    */
   var status: String
+  /**
+    * Types of logs for the log channel.
+    */
   var `type`: String
 }
 

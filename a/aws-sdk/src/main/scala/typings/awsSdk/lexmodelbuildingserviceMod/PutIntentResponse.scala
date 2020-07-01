@@ -43,6 +43,10 @@ trait PutIntentResponse extends js.Object {
     */
   var fulfillmentActivity: js.UndefOr[FulfillmentActivity] = js.native
   /**
+    * Configuration information, if any, required to connect to an Amazon Kendra index and use the AMAZON.KendraSearchIntent intent.
+    */
+  var kendraConfiguration: js.UndefOr[KendraConfiguration] = js.native
+  /**
     * The date that the intent was updated. When you create a resource, the creation date and last update dates are the same.
     */
   var lastUpdatedDate: js.UndefOr[Timestamp] = js.native
@@ -84,6 +88,7 @@ object PutIntentResponse {
     dialogCodeHook: CodeHook = null,
     followUpPrompt: FollowUpPrompt = null,
     fulfillmentActivity: FulfillmentActivity = null,
+    kendraConfiguration: KendraConfiguration = null,
     lastUpdatedDate: Timestamp = null,
     name: IntentName = null,
     parentIntentSignature: BuiltinIntentSignature = null,
@@ -102,6 +107,7 @@ object PutIntentResponse {
     if (dialogCodeHook != null) __obj.updateDynamic("dialogCodeHook")(dialogCodeHook.asInstanceOf[js.Any])
     if (followUpPrompt != null) __obj.updateDynamic("followUpPrompt")(followUpPrompt.asInstanceOf[js.Any])
     if (fulfillmentActivity != null) __obj.updateDynamic("fulfillmentActivity")(fulfillmentActivity.asInstanceOf[js.Any])
+    if (kendraConfiguration != null) __obj.updateDynamic("kendraConfiguration")(kendraConfiguration.asInstanceOf[js.Any])
     if (lastUpdatedDate != null) __obj.updateDynamic("lastUpdatedDate")(lastUpdatedDate.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (parentIntentSignature != null) __obj.updateDynamic("parentIntentSignature")(parentIntentSignature.asInstanceOf[js.Any])

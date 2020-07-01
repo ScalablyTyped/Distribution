@@ -1,5 +1,6 @@
 package typings.i18next.mod
 
+import typings.i18next.i18nextBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +33,7 @@ trait TOptionsBase extends js.Object {
   /**
     * Override char to separate keys
     */
-  var keySeparator: js.UndefOr[String] = js.undefined
+  var keySeparator: js.UndefOr[`false` | String] = js.undefined
   /**
     * Override language to use
     */
@@ -48,7 +49,7 @@ trait TOptionsBase extends js.Object {
   /**
     * Override char to split namespace from key
     */
-  var nsSeparator: js.UndefOr[String] = js.undefined
+  var nsSeparator: js.UndefOr[`false` | String] = js.undefined
   /**
     * String or array of postProcessors to apply see interval plurals as a sample
     */
@@ -72,11 +73,11 @@ object TOptionsBase {
     fallbackLng: FallbackLng = null,
     interpolation: InterpolationOptions = null,
     joinArrays: String = null,
-    keySeparator: String = null,
+    keySeparator: `false` | String = null,
     lng: String = null,
     lngs: js.Array[String] = null,
     ns: String | js.Array[String] = null,
-    nsSeparator: String = null,
+    nsSeparator: `false` | String = null,
     postProcess: String | js.Array[String] = null,
     replace: js.Any = null,
     returnObjects: js.UndefOr[Boolean] = js.undefined

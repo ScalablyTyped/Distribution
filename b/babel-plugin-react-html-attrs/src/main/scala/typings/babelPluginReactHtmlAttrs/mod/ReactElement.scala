@@ -12,7 +12,7 @@ trait ReactElement[P, T /* <: String | JSXElementConstructor[_] */] extends js.O
 
 object ReactElement {
   @scala.inline
-  def apply[P, T](props: P, `type`: T, key: Key = null): ReactElement[P, T] = {
+  def apply[P, /* <: java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[_] */ T](props: P, `type`: T, key: Key = null): ReactElement[P, T] = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactElement[P, T]]

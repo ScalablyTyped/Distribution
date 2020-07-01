@@ -5,7 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TextMessageVariable extends js.Object {
-  /* Properties */
   var key: String
   var value: String
 }

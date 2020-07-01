@@ -1,6 +1,6 @@
 package typings.googleapis.doubleclicksearchV2Mod.doubleclicksearchV2
 
-import typings.googleapis.AnonByteCount
+import typings.googleapis.anon.ByteCount
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait SchemaReport extends js.Object {
     * Asynchronous report only. Contains a list of generated report files once
     * the report has succesfully completed.
     */
-  var files: js.UndefOr[js.Array[AnonByteCount]] = js.native
+  var files: js.UndefOr[js.Array[ByteCount]] = js.native
   /**
     * Asynchronous report only. Id of the report.
     */
@@ -61,12 +61,12 @@ trait SchemaReport extends js.Object {
 object SchemaReport {
   @scala.inline
   def apply(
-    files: js.Array[AnonByteCount] = null,
+    files: js.Array[ByteCount] = null,
     id: String = null,
     isReportReady: js.UndefOr[Boolean] = js.undefined,
     kind: String = null,
     request: SchemaReportRequest = null,
-    rowCount: Int | Double = null,
+    rowCount: js.UndefOr[Double] = js.undefined,
     rows: js.Array[SchemaReportRow] = null,
     statisticsCurrencyCode: String = null,
     statisticsTimeZone: String = null
@@ -74,10 +74,10 @@ object SchemaReport {
     val __obj = js.Dynamic.literal()
     if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isReportReady)) __obj.updateDynamic("isReportReady")(isReportReady.asInstanceOf[js.Any])
+    if (!js.isUndefined(isReportReady)) __obj.updateDynamic("isReportReady")(isReportReady.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.get.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (statisticsCurrencyCode != null) __obj.updateDynamic("statisticsCurrencyCode")(statisticsCurrencyCode.asInstanceOf[js.Any])
     if (statisticsTimeZone != null) __obj.updateDynamic("statisticsTimeZone")(statisticsTimeZone.asInstanceOf[js.Any])

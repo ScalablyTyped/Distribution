@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "wonka" : "4.0.13"
+      "wonka" : "4.0.14"
     }
   ],
   "test-dependencies" : [
     {
-      "wonka" : "4.0.13"
+      "wonka" : "4.0.14"
     }
   ],
   "compile-devDependencies" : [

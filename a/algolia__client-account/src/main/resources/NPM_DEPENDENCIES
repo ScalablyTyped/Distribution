@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@algolia/client-account" : "4.2.0"
+      "@algolia/client-account" : "4.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@algolia/client-account" : "4.2.0"
+      "@algolia/client-account" : "4.3.0"
     }
   ],
   "compile-devDependencies" : [

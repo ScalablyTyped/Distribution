@@ -1,7 +1,7 @@
 package typings.googleapis.storageV1beta1Mod.storageV1beta1
 
-import typings.googleapis.AnonEntity
-import typings.googleapis.AnonMainPageSuffix
+import typings.googleapis.anon.Entity
+import typings.googleapis.anon.MainPageSuffix
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +36,7 @@ trait SchemaBucket extends js.Object {
     * The owner of the bucket. This will always be the project team&#39;s owner
     * group.
     */
-  var owner: js.UndefOr[AnonEntity] = js.native
+  var owner: js.UndefOr[Entity] = js.native
   /**
     * The project the bucket belongs to.
     */
@@ -52,7 +52,7 @@ trait SchemaBucket extends js.Object {
   /**
     * The bucket&#39;s website configuration.
     */
-  var website: js.UndefOr[AnonMainPageSuffix] = js.native
+  var website: js.UndefOr[MainPageSuffix] = js.native
 }
 
 object SchemaBucket {
@@ -63,11 +63,11 @@ object SchemaBucket {
     id: String = null,
     kind: String = null,
     location: String = null,
-    owner: AnonEntity = null,
+    owner: Entity = null,
     projectId: String = null,
     selfLink: String = null,
     timeCreated: String = null,
-    website: AnonMainPageSuffix = null
+    website: MainPageSuffix = null
   ): SchemaBucket = {
     val __obj = js.Dynamic.literal()
     if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])

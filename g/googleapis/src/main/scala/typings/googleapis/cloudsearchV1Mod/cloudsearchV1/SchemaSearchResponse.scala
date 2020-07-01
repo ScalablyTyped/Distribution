@@ -76,7 +76,7 @@ object SchemaSearchResponse {
     if (debugInfo != null) __obj.updateDynamic("debugInfo")(debugInfo.asInstanceOf[js.Any])
     if (errorInfo != null) __obj.updateDynamic("errorInfo")(errorInfo.asInstanceOf[js.Any])
     if (facetResults != null) __obj.updateDynamic("facetResults")(facetResults.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasMoreResults)) __obj.updateDynamic("hasMoreResults")(hasMoreResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasMoreResults)) __obj.updateDynamic("hasMoreResults")(hasMoreResults.get.asInstanceOf[js.Any])
     if (queryInterpretation != null) __obj.updateDynamic("queryInterpretation")(queryInterpretation.asInstanceOf[js.Any])
     if (resultCountEstimate != null) __obj.updateDynamic("resultCountEstimate")(resultCountEstimate.asInstanceOf[js.Any])
     if (resultCountExact != null) __obj.updateDynamic("resultCountExact")(resultCountExact.asInstanceOf[js.Any])

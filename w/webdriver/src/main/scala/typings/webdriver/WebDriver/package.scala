@@ -5,7 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object WebDriver {
-  type ClientAsync = typings.webdriver.AsyncClient
   // object with no match
   type ProtocolCommandResponse = org.scalablytyped.runtime.StringDictionary[js.Any]
   // appium.json

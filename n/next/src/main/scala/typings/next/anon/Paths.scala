@@ -12,7 +12,7 @@ trait Paths[P /* <: ParsedUrlQuery */] extends js.Object {
 
 object Paths {
   @scala.inline
-  def apply[P](fallback: Boolean, paths: js.Array[String | Params[P]]): Paths[P] = {
+  def apply[/* <: typings.node.querystringMod.ParsedUrlQuery */ P](fallback: Boolean, paths: js.Array[String | Params[P]]): Paths[P] = {
     val __obj = js.Dynamic.literal(fallback = fallback.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[Paths[P]]
   }

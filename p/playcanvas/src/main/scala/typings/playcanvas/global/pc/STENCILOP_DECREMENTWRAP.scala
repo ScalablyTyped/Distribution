@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Decrement the value, but wrap it to a maximum representable value, if the current value is 0.
+  * Decrement the value but wrap it to a maximum representable value if the current value is 0.
   */
 @JSGlobal("pc.STENCILOP_DECREMENTWRAP")
 @js.native

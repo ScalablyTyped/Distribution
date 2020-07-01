@@ -233,7 +233,7 @@ object Expression {
   }
   @scala.inline
   def BinaryExpression_(
-    left: Expression,
+    left: Expression | PrivateName_,
     operator: Plussign | `-_` | Slash | Percentsign | Asterisk | AsteriskAsterisk | Ampersand | Verticalline | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | LessthansignLessthansign | ^  | EqualssignEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | in | instanceof | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign,
     right: Expression,
     `type`: BinaryExpression,
@@ -250,7 +250,7 @@ object Expression {
   }
   @scala.inline
   def RegExpLiteral_(
-    flags: js.Any,
+    flags: String,
     pattern: String,
     `type`: RegExpLiteral,
     end: Double = null.asInstanceOf[Double],
@@ -344,7 +344,7 @@ object Expression {
   }
   @scala.inline
   def MetaProperty_(
-    meta: js.Any,
+    meta: Identifier_,
     property: Identifier_,
     `type`: MetaProperty,
     end: Double = null.asInstanceOf[Double],
@@ -408,7 +408,7 @@ object Expression {
     computed: Boolean,
     `object`: Expression,
     optional: Boolean,
-    property: js.Any,
+    property: Expression | Identifier_,
     `type`: OptionalMemberExpression,
     end: Double = null.asInstanceOf[Double],
     innerComments: js.Array[Comment] = null,
@@ -425,7 +425,6 @@ object Expression {
   @scala.inline
   def ClassExpression_(
     body: ClassBody_,
-    mixins: js.Any,
     `type`: ClassExpression,
     decorators: js.Array[Decorator_] = null,
     end: Double = null.asInstanceOf[Double],
@@ -434,13 +433,14 @@ object Expression {
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
+    mixins: InterfaceExtends_ = null,
     start: Double = null.asInstanceOf[Double],
     superClass: Expression = null,
     superTypeParameters: TypeParameterInstantiation_ | TSTypeParameterInstantiation_ = null,
     trailingComments: js.Array[Comment] = null,
     typeParameters: TypeParameterDeclaration_ | TSTypeParameterDeclaration_ | Noop_ = null
   ): Expression = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], mixins = mixins.asInstanceOf[js.Any], decorators = decorators.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], implements = implements.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], superClass = superClass.asInstanceOf[js.Any], superTypeParameters = superTypeParameters.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], decorators = decorators.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], implements = implements.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], mixins = mixins.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], superClass = superClass.asInstanceOf[js.Any], superTypeParameters = superTypeParameters.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
@@ -448,7 +448,7 @@ object Expression {
   def MemberExpression_(
     computed: Boolean,
     `object`: Expression,
-    property: js.Any,
+    property: Expression | Identifier_ | PrivateName_,
     `type`: MemberExpression,
     end: Double = null.asInstanceOf[Double],
     innerComments: js.Array[Comment] = null,
@@ -567,8 +567,8 @@ object Expression {
   }
   @scala.inline
   def BindExpression_(
-    callee: js.Any,
-    `object`: js.Any,
+    callee: Expression,
+    `object`: Expression,
     `type`: BindExpression,
     end: Double = null.asInstanceOf[Double],
     innerComments: js.Array[Comment] = null,
@@ -584,7 +584,7 @@ object Expression {
   }
   @scala.inline
   def RecordExpression_(
-    properties: js.Array[ObjectProperty_ | ObjectMethod_ | SpreadElement_],
+    properties: js.Array[ObjectProperty_ | SpreadElement_],
     `type`: RecordExpression,
     end: Double = null.asInstanceOf[Double],
     innerComments: js.Array[Comment] = null,
@@ -647,7 +647,7 @@ object Expression {
   }
   @scala.inline
   def TupleExpression_(
-    elements: js.Array[Null | Expression | SpreadElement_],
+    elements: js.Array[Expression | SpreadElement_],
     `type`: TupleExpression,
     end: Double = null.asInstanceOf[Double],
     innerComments: js.Array[Comment] = null,
@@ -662,7 +662,7 @@ object Expression {
   }
   @scala.inline
   def YieldExpression_(
-    delegate: js.Any,
+    delegate: Boolean,
     `type`: YieldExpression,
     argument: Expression = null,
     end: Double = null.asInstanceOf[Double],
@@ -711,7 +711,7 @@ object Expression {
   }
   @scala.inline
   def Identifier_(
-    name: js.Any,
+    name: String,
     `type`: Identifier,
     decorators: js.Array[Decorator_] = null,
     end: Double = null.asInstanceOf[Double],
@@ -814,17 +814,17 @@ object Expression {
       JSXText_ | JSXExpressionContainer_ | JSXSpreadChild_ | typings.babelTypes.mod.JSXElement_ | JSXFragment_
     ],
     openingElement: JSXOpeningElement_,
-    selfClosing: js.Any,
     `type`: JSXElement,
     closingElement: JSXClosingElement_ = null,
     end: Double = null.asInstanceOf[Double],
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
+    selfClosing: Boolean = null.asInstanceOf[Boolean],
     start: Double = null.asInstanceOf[Double],
     trailingComments: js.Array[Comment] = null
   ): Expression = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], openingElement = openingElement.asInstanceOf[js.Any], selfClosing = selfClosing.asInstanceOf[js.Any], closingElement = closingElement.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], openingElement = openingElement.asInstanceOf[js.Any], closingElement = closingElement.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], selfClosing = selfClosing.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }

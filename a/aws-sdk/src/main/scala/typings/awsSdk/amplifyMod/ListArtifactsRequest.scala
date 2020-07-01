@@ -7,23 +7,23 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListArtifactsRequest extends js.Object {
   /**
-    *  Unique Id for an Amplify App. 
+    *  The unique ID for an Amplify app. 
     */
   var appId: AppId = js.native
   /**
-    *  Name for a branch, part of an Amplify App. 
+    *  The name of a branch that is part of an Amplify app. 
     */
   var branchName: BranchName = js.native
   /**
-    *  Unique Id for an Job. 
+    *  The unique ID for a job. 
     */
   var jobId: JobId = js.native
   /**
-    *  Maximum number of records to list in a single response. 
+    *  The maximum number of records to list in a single response. 
     */
   var maxResults: js.UndefOr[MaxResults] = js.native
   /**
-    *  Pagination token. Set to null to start listing artifacts from start. If non-null pagination token is returned in a result, then pass its value in here to list more artifacts. 
+    *  A pagination token. Set to null to start listing artifacts from start. If a non-null pagination token is returned in a result, pass its value in here to list more artifacts. 
     */
   var nextToken: js.UndefOr[NextToken] = js.native
 }

@@ -15,9 +15,9 @@ object numericInputUtilsMod extends js.Object {
   def getValueOrEmptyValue(): String = js.native
   def getValueOrEmptyValue(value: String): String = js.native
   def getValueOrEmptyValue(value: Double): String = js.native
-  def isFloatingPointNumericCharacter(character: String): Boolean = js.native
   def isValidNumericKeyboardEvent(e: KeyboardEvent[Element]): Boolean = js.native
   def isValueNumeric(value: String): Boolean = js.native
+  def sanitizeNumericInput(value: String): String = js.native
   def toMaxPrecision(value: Double, maxPrecision: Double): Double = js.native
 }
 

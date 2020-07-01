@@ -58,7 +58,7 @@ object SchemaShadow {
   @scala.inline
   def apply(
     alignment: String = null,
-    alpha: Int | Double = null,
+    alpha: js.UndefOr[Double] = js.undefined,
     blurRadius: SchemaDimension = null,
     color: SchemaOpaqueColor = null,
     propertyState: String = null,
@@ -68,11 +68,11 @@ object SchemaShadow {
   ): SchemaShadow = {
     val __obj = js.Dynamic.literal()
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
     if (blurRadius != null) __obj.updateDynamic("blurRadius")(blurRadius.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (propertyState != null) __obj.updateDynamic("propertyState")(propertyState.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotateWithShape)) __obj.updateDynamic("rotateWithShape")(rotateWithShape.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotateWithShape)) __obj.updateDynamic("rotateWithShape")(rotateWithShape.get.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaShadow]

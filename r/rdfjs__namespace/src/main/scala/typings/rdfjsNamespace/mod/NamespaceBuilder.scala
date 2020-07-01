@@ -8,9 +8,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait NamespaceBuilder extends /* property */ StringDictionary[NamedNode] {
-  def apply(): NamedNode = js.native
-  def apply(property: String): NamedNode = js.native
-  def apply(property: TemplateStringsArray): NamedNode = js.native
+trait NamespaceBuilder extends /* property */ StringDictionary[NamedNode[String]] {
+  def apply(): NamedNode[String] = js.native
+  def apply(property: String): NamedNode[String] = js.native
+  def apply(property: TemplateStringsArray): NamedNode[String] = js.native
 }
 

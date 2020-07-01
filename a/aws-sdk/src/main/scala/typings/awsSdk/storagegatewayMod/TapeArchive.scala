@@ -12,7 +12,7 @@ trait TapeArchive extends js.Object {
   var CompletionTime: js.UndefOr[Time] = js.native
   var KMSKey: js.UndefOr[typings.awsSdk.storagegatewayMod.KMSKey] = js.native
   /**
-    * The ID of the pool that was used to archive the tape. The tapes in this pool are archived in the S3 storage class that is associated with the pool. Valid values: "GLACIER", "DEEP_ARCHIVE"
+    * The ID of the pool that was used to archive the tape. The tapes in this pool are archived in the S3 storage class that is associated with the pool. Valid Values: GLACIER | DEEP_ARCHIVE 
     */
   var PoolId: js.UndefOr[typings.awsSdk.storagegatewayMod.PoolId] = js.native
   /**

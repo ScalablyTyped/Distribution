@@ -1,6 +1,9 @@
 package typings.officeUiFabricReact.comboBoxComboBoxMod
 
 import typings.officeUiFabricReact.comboBoxTypesMod.IComboBoxOption
+import typings.officeUiFabricReact.officeUiFabricReactStrings.focused
+import typings.officeUiFabricReact.officeUiFabricReactStrings.focusing
+import typings.officeUiFabricReact.officeUiFabricReactStrings.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +24,7 @@ trait IComboBoxState extends js.Object {
     */
   var currentPendingValueValidIndexOnHover: Double
   /** The focused state of the comboBox */
-  var focused: js.UndefOr[Boolean] = js.undefined
+  var focusState: js.UndefOr[none | focused | focusing] = js.undefined
   /** The open state */
   var isOpen: js.UndefOr[Boolean] = js.undefined
   /** The currently selected indices */
@@ -37,14 +40,14 @@ object IComboBoxState {
     currentPendingValueValidIndex: Double,
     currentPendingValueValidIndexOnHover: Double,
     currentPendingValue: String = null,
-    focused: js.UndefOr[Boolean] = js.undefined,
+    focusState: none | focused | focusing = null,
     isOpen: js.UndefOr[Boolean] = js.undefined,
     selectedIndices: js.Array[Double] = null,
     suggestedDisplayValue: String = null
   ): IComboBoxState = {
     val __obj = js.Dynamic.literal(currentOptions = currentOptions.asInstanceOf[js.Any], currentPendingValueValidIndex = currentPendingValueValidIndex.asInstanceOf[js.Any], currentPendingValueValidIndexOnHover = currentPendingValueValidIndexOnHover.asInstanceOf[js.Any])
     if (currentPendingValue != null) __obj.updateDynamic("currentPendingValue")(currentPendingValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused.get.asInstanceOf[js.Any])
+    if (focusState != null) __obj.updateDynamic("focusState")(focusState.asInstanceOf[js.Any])
     if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.get.asInstanceOf[js.Any])
     if (selectedIndices != null) __obj.updateDynamic("selectedIndices")(selectedIndices.asInstanceOf[js.Any])
     if (suggestedDisplayValue != null) __obj.updateDynamic("suggestedDisplayValue")(suggestedDisplayValue.asInstanceOf[js.Any])

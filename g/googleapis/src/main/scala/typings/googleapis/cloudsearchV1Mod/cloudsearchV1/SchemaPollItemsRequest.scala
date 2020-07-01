@@ -36,14 +36,14 @@ object SchemaPollItemsRequest {
   def apply(
     connectorName: String = null,
     debugOptions: SchemaDebugOptions = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     queue: String = null,
     statusCodes: js.Array[String] = null
   ): SchemaPollItemsRequest = {
     val __obj = js.Dynamic.literal()
     if (connectorName != null) __obj.updateDynamic("connectorName")(connectorName.asInstanceOf[js.Any])
     if (debugOptions != null) __obj.updateDynamic("debugOptions")(debugOptions.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (queue != null) __obj.updateDynamic("queue")(queue.asInstanceOf[js.Any])
     if (statusCodes != null) __obj.updateDynamic("statusCodes")(statusCodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPollItemsRequest]

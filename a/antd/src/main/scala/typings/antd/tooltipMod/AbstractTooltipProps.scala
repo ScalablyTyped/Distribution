@@ -1,5 +1,6 @@
 package typings.antd.tooltipMod
 
+import typings.antd.colorsMod.PresetColorType
 import typings.antd.placementsMod.AdjustOverflow
 import typings.react.mod.CSSProperties
 import typings.std.HTMLElement
@@ -15,6 +16,7 @@ import scala.scalajs.js.annotation._
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BuildInPlacements */ js.Any
   ] = js.undefined
   var className: js.UndefOr[String] = js.undefined
+  var color: js.UndefOr[PresetColorType] = js.undefined
   var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.undefined
   var openClassName: js.UndefOr[String] = js.undefined
   var placement: js.UndefOr[TooltipPlacement] = js.undefined
@@ -28,6 +30,7 @@ object AbstractTooltipProps {
     autoAdjustOverflow: Boolean | AdjustOverflow = null,
     builtinPlacements: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BuildInPlacements */ js.Any = null,
     className: String = null,
+    color: PresetColorType = null,
     getPopupContainer: /* triggerNode */ HTMLElement => HTMLElement = null,
     openClassName: String = null,
     placement: TooltipPlacement = null,
@@ -38,6 +41,7 @@ object AbstractTooltipProps {
     if (autoAdjustOverflow != null) __obj.updateDynamic("autoAdjustOverflow")(autoAdjustOverflow.asInstanceOf[js.Any])
     if (builtinPlacements != null) __obj.updateDynamic("builtinPlacements")(builtinPlacements.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (openClassName != null) __obj.updateDynamic("openClassName")(openClassName.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])

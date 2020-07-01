@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined docx-templates.docx-templates/lib/types.BaseNode & {  _fTextNode  :false,   _tag  :string,   _attrs  :{[key: string] : sax.sax.QualifiedAttribute | string,   Extension ? :string}} */
+/* Inlined docx-templates.docx-templates/lib/types.BaseNode & {  _fTextNode  :false,   _tag  :string,   _attrs  :{[key: string] : sax.sax.QualifiedAttribute | string,   Extension ? :string,   ContentType ? :string,   PartName ? :string}} */
 trait NonTextNode extends Node {
   var _attrs: Dictkey
   var _children: js.Array[Node]

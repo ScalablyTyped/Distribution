@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Disk extends js.Object {
   /**
-    * The iSCSI qualified name (IQN) that is defined for a disk. This field is not included in the response if the local disk is not defined as an iSCSI target. The format of this field is targetIqn::LUNNumber::region-volumeId. 
+    * The iSCSI qualified name (IQN) that is defined for a disk. This field is not included in the response if the local disk is not defined as an iSCSI target. The format of this field is targetIqn::LUNNumber::region-volumeId.
     */
   var DiskAllocationResource: js.UndefOr[String] = js.native
   var DiskAllocationType: js.UndefOr[typings.awsSdk.storagegatewayMod.DiskAllocationType] = js.native

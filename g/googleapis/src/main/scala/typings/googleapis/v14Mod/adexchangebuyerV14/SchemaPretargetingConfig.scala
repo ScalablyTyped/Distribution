@@ -1,8 +1,8 @@
 package typings.googleapis.v14Mod.adexchangebuyerV14
 
-import typings.googleapis.AnonAspectRatio
-import typings.googleapis.AnonToken
-import typings.googleapis.AnonWidth
+import typings.googleapis.anon.AspectRatio
+import typings.googleapis.anon.Token
+import typings.googleapis.anon.Width
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +32,7 @@ trait SchemaPretargetingConfig extends js.Object {
     * Requests which allow one of these (width, height) pairs will match. All
     * pairs must be supported ad dimensions.
     */
-  var dimensions: js.UndefOr[js.Array[AnonWidth]] = js.native
+  var dimensions: js.UndefOr[js.Array[Width]] = js.native
   /**
     * Requests with any of these content labels will not match. Values are from
     * content-labels.txt in the downloadable files section.
@@ -45,7 +45,7 @@ trait SchemaPretargetingConfig extends js.Object {
   /**
     * Requests containing any of these placements will not match.
     */
-  var excludedPlacements: js.UndefOr[js.Array[AnonToken]] = js.native
+  var excludedPlacements: js.UndefOr[js.Array[Token]] = js.native
   /**
     * Requests containing any of these users list ids will not match.
     */
@@ -97,7 +97,7 @@ trait SchemaPretargetingConfig extends js.Object {
   /**
     * Requests containing any of these placements will match.
     */
-  var placements: js.UndefOr[js.Array[AnonToken]] = js.native
+  var placements: js.UndefOr[js.Array[Token]] = js.native
   /**
     * Requests matching any of these platforms will match. Possible values are
     * PRETARGETING_PLATFORM_MOBILE, PRETARGETING_PLATFORM_DESKTOP, and
@@ -136,7 +136,7 @@ trait SchemaPretargetingConfig extends js.Object {
     * Video requests satisfying any of these player size constraints will
     * match.
     */
-  var videoPlayerSizes: js.UndefOr[js.Array[AnonAspectRatio]] = js.native
+  var videoPlayerSizes: js.UndefOr[js.Array[AspectRatio]] = js.native
 }
 
 object SchemaPretargetingConfig {
@@ -146,28 +146,28 @@ object SchemaPretargetingConfig {
     configId: String = null,
     configName: String = null,
     creativeType: js.Array[String] = null,
-    dimensions: js.Array[AnonWidth] = null,
+    dimensions: js.Array[Width] = null,
     excludedContentLabels: js.Array[String] = null,
     excludedGeoCriteriaIds: js.Array[String] = null,
-    excludedPlacements: js.Array[AnonToken] = null,
+    excludedPlacements: js.Array[Token] = null,
     excludedUserLists: js.Array[String] = null,
     excludedVerticals: js.Array[String] = null,
     geoCriteriaIds: js.Array[String] = null,
     isActive: js.UndefOr[Boolean] = js.undefined,
     kind: String = null,
     languages: js.Array[String] = null,
-    minimumViewabilityDecile: Int | Double = null,
+    minimumViewabilityDecile: js.UndefOr[Double] = js.undefined,
     mobileCarriers: js.Array[String] = null,
     mobileDevices: js.Array[String] = null,
     mobileOperatingSystemVersions: js.Array[String] = null,
-    placements: js.Array[AnonToken] = null,
+    placements: js.Array[Token] = null,
     platforms: js.Array[String] = null,
     supportedCreativeAttributes: js.Array[String] = null,
     userIdentifierDataRequired: js.Array[String] = null,
     userLists: js.Array[String] = null,
     vendorTypes: js.Array[String] = null,
     verticals: js.Array[String] = null,
-    videoPlayerSizes: js.Array[AnonAspectRatio] = null
+    videoPlayerSizes: js.Array[AspectRatio] = null
   ): SchemaPretargetingConfig = {
     val __obj = js.Dynamic.literal()
     if (billingId != null) __obj.updateDynamic("billingId")(billingId.asInstanceOf[js.Any])
@@ -181,10 +181,10 @@ object SchemaPretargetingConfig {
     if (excludedUserLists != null) __obj.updateDynamic("excludedUserLists")(excludedUserLists.asInstanceOf[js.Any])
     if (excludedVerticals != null) __obj.updateDynamic("excludedVerticals")(excludedVerticals.asInstanceOf[js.Any])
     if (geoCriteriaIds != null) __obj.updateDynamic("geoCriteriaIds")(geoCriteriaIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.asInstanceOf[js.Any])
+    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (languages != null) __obj.updateDynamic("languages")(languages.asInstanceOf[js.Any])
-    if (minimumViewabilityDecile != null) __obj.updateDynamic("minimumViewabilityDecile")(minimumViewabilityDecile.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumViewabilityDecile)) __obj.updateDynamic("minimumViewabilityDecile")(minimumViewabilityDecile.get.asInstanceOf[js.Any])
     if (mobileCarriers != null) __obj.updateDynamic("mobileCarriers")(mobileCarriers.asInstanceOf[js.Any])
     if (mobileDevices != null) __obj.updateDynamic("mobileDevices")(mobileDevices.asInstanceOf[js.Any])
     if (mobileOperatingSystemVersions != null) __obj.updateDynamic("mobileOperatingSystemVersions")(mobileOperatingSystemVersions.asInstanceOf[js.Any])

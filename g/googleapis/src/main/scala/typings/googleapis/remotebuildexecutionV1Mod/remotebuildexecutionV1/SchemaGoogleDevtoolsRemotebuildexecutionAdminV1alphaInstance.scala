@@ -44,7 +44,7 @@ object SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance {
   ): SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance = {
     val __obj = js.Dynamic.literal()
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (!js.isUndefined(loggingEnabled)) __obj.updateDynamic("loggingEnabled")(loggingEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(loggingEnabled)) __obj.updateDynamic("loggingEnabled")(loggingEnabled.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance]

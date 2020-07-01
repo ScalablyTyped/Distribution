@@ -73,7 +73,7 @@ object SchemaParagraphStyle {
     indentEnd: SchemaDimension = null,
     indentFirstLine: SchemaDimension = null,
     indentStart: SchemaDimension = null,
-    lineSpacing: Int | Double = null,
+    lineSpacing: js.UndefOr[Double] = js.undefined,
     spaceAbove: SchemaDimension = null,
     spaceBelow: SchemaDimension = null,
     spacingMode: String = null
@@ -84,7 +84,7 @@ object SchemaParagraphStyle {
     if (indentEnd != null) __obj.updateDynamic("indentEnd")(indentEnd.asInstanceOf[js.Any])
     if (indentFirstLine != null) __obj.updateDynamic("indentFirstLine")(indentFirstLine.asInstanceOf[js.Any])
     if (indentStart != null) __obj.updateDynamic("indentStart")(indentStart.asInstanceOf[js.Any])
-    if (lineSpacing != null) __obj.updateDynamic("lineSpacing")(lineSpacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineSpacing)) __obj.updateDynamic("lineSpacing")(lineSpacing.get.asInstanceOf[js.Any])
     if (spaceAbove != null) __obj.updateDynamic("spaceAbove")(spaceAbove.asInstanceOf[js.Any])
     if (spaceBelow != null) __obj.updateDynamic("spaceBelow")(spaceBelow.asInstanceOf[js.Any])
     if (spacingMode != null) __obj.updateDynamic("spacingMode")(spacingMode.asInstanceOf[js.Any])

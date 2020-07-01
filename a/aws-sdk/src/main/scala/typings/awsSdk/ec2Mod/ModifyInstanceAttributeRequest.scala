@@ -11,7 +11,7 @@ trait ModifyInstanceAttributeRequest extends js.Object {
     */
   var Attribute: js.UndefOr[InstanceAttributeName] = js.native
   /**
-    * Modifies the DeleteOnTermination attribute for volumes that are currently attached. The volume must be owned by the caller. If no value is specified for DeleteOnTermination, the default is true and the volume is deleted when the instance is terminated. To add instance store volumes to an Amazon EBS-backed instance, you must add them when you launch the instance. For more information, see Updating the Block Device Mapping when Launching an Instance in the Amazon Elastic Compute Cloud User Guide.
+    * Modifies the DeleteOnTermination attribute for volumes that are currently attached. The volume must be owned by the caller. If no value is specified for DeleteOnTermination, the default is true and the volume is deleted when the instance is terminated. To add instance store volumes to an Amazon EBS-backed instance, you must add them when you launch the instance. For more information, see Updating the block device mapping when launching an instance in the Amazon Elastic Compute Cloud User Guide.
     */
   var BlockDeviceMappings: js.UndefOr[InstanceBlockDeviceMappingSpecificationList] = js.native
   /**
@@ -43,7 +43,7 @@ trait ModifyInstanceAttributeRequest extends js.Object {
     */
   var InstanceInitiatedShutdownBehavior: js.UndefOr[AttributeValue] = js.native
   /**
-    * Changes the instance type to the specified value. For more information, see Instance Types. If the instance type is not valid, the error returned is InvalidInstanceAttributeValue.
+    * Changes the instance type to the specified value. For more information, see Instance types. If the instance type is not valid, the error returned is InvalidInstanceAttributeValue.
     */
   var InstanceType: js.UndefOr[AttributeValue] = js.native
   /**

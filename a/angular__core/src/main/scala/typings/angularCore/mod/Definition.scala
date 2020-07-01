@@ -10,7 +10,7 @@ trait Definition[DF /* <: DefinitionFactory[_] */] extends js.Object {
 
 object Definition {
   @scala.inline
-  def apply[DF](factory: DF = null): Definition[DF] = {
+  def apply[/* <: typings.angularCore.mod.DefinitionFactory[_] */ DF](factory: DF = null): Definition[DF] = {
     val __obj = js.Dynamic.literal(factory = factory.asInstanceOf[js.Any])
     __obj.asInstanceOf[Definition[DF]]
   }

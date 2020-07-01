@@ -11,7 +11,7 @@ trait `0`[OverlayType /* <: OverlayElement */] extends js.Object {
 
 object `0` {
   @scala.inline
-  def apply[OverlayType](create: js.Any => js.Promise[OverlayType]): `0`[OverlayType] = {
+  def apply[/* <: typings.ionicReact.createOverlayComponentMod.OverlayElement */ OverlayType](create: js.Any => js.Promise[OverlayType]): `0`[OverlayType] = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
     __obj.asInstanceOf[`0`[OverlayType]]
   }

@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashReplace extends js.Object {
+trait LodashReplace extends LodashConvertible {
   def apply(pattern: String): LodashReplace1x1 = js.native
   def apply(pattern: String, replacement: String): LodashReplace1x3 = js.native
   def apply(pattern: String, replacement: String, string: String): String = js.native

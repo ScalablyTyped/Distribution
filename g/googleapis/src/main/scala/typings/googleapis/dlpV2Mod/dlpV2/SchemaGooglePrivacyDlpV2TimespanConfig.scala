@@ -47,7 +47,7 @@ object SchemaGooglePrivacyDlpV2TimespanConfig {
     timestampField: SchemaGooglePrivacyDlpV2FieldId = null
   ): SchemaGooglePrivacyDlpV2TimespanConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableAutoPopulationOfTimespanConfig)) __obj.updateDynamic("enableAutoPopulationOfTimespanConfig")(enableAutoPopulationOfTimespanConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAutoPopulationOfTimespanConfig)) __obj.updateDynamic("enableAutoPopulationOfTimespanConfig")(enableAutoPopulationOfTimespanConfig.get.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     if (timestampField != null) __obj.updateDynamic("timestampField")(timestampField.asInstanceOf[js.Any])

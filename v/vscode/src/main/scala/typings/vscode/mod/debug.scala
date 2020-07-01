@@ -22,6 +22,11 @@ object debug extends js.Object {
   def registerDebugAdapterDescriptorFactory(debugType: String, factory: DebugAdapterDescriptorFactory): Disposable = js.native
   def registerDebugAdapterTrackerFactory(debugType: String, factory: DebugAdapterTrackerFactory): Disposable = js.native
   def registerDebugConfigurationProvider(debugType: String, provider: DebugConfigurationProvider): Disposable = js.native
+  def registerDebugConfigurationProvider(
+    debugType: String,
+    provider: DebugConfigurationProvider,
+    triggerKind: DebugConfigurationProviderTriggerKind
+  ): Disposable = js.native
   def removeBreakpoints(breakpoints: js.Array[Breakpoint]): Unit = js.native
   def startDebugging(folder: js.UndefOr[WorkspaceFolder], nameOrConfiguration: String): Thenable[Boolean] = js.native
   def startDebugging(

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FirehoseRecordMetadata extends js.Object {
-  var approximateArrivalTimestamp: String
+  var approximateArrivalTimestamp: Double
   var partitionKey: String
   var sequenceNumber: String
   var shardId: String
@@ -15,7 +15,7 @@ trait FirehoseRecordMetadata extends js.Object {
 object FirehoseRecordMetadata {
   @scala.inline
   def apply(
-    approximateArrivalTimestamp: String,
+    approximateArrivalTimestamp: Double,
     partitionKey: String,
     sequenceNumber: String,
     shardId: String,

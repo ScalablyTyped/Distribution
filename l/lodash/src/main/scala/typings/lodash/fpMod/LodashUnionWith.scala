@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashUnionWith extends js.Object {
+trait LodashUnionWith extends LodashConvertible {
   def apply[T](comparator: Comparator[T]): js.Array[T] = js.native
   def apply[T](comparator: Comparator[T], arrays: Null, arrays2: List[T]): js.Array[T] = js.native
   def apply[T](comparator: Comparator[T], arrays: List[T]): js.Array[T] = js.native

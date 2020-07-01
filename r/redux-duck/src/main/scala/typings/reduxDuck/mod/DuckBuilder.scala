@@ -16,7 +16,7 @@ trait DuckBuilder[AppAction /* <: Action[_] */] extends js.Object {
 
 object DuckBuilder {
   @scala.inline
-  def apply[AppAction](
+  def apply[/* <: typings.redux.mod.Action[_] */ AppAction](
     createAction: js.Any => ActionCreator[Extract[AppAction, Type[js.Any, AppAction]]],
     createReducer: (ActionHandlers[js.Any, AppAction], js.Any) => Reducer[js.Any, AppAction],
     defineType: ActionName => ActionType

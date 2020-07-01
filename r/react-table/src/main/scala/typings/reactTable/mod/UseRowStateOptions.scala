@@ -13,7 +13,7 @@ trait UseRowStateOptions[D /* <: js.Object */] extends js.Object {
 
 object UseRowStateOptions {
   @scala.inline
-  def apply[D](
+  def apply[/* <: js.Object */ D](
     autoResetRowState: js.UndefOr[Boolean] = js.undefined,
     getResetRowStateDeps: /* instance */ TableInstance[D] => js.Array[_] = null,
     initialRowStateAccessor: /* row */ Row[D] => UseRowStateLocalState[D, _] = null

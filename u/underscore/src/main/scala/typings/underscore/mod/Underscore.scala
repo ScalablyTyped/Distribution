@@ -53,15 +53,17 @@ trait Underscore[T, V] extends js.Object {
     * Chaining *
     *********** */
   /**
-    * Wrapped type `any`.
-    * @see _.chain
+    * Returns a wrapped object. Calling methods on this object will continue to return wrapped objects
+    * until value() is used.
+    * @returns An underscore chain wrapper around the wrapped value.
     **/
   def chain(): Chain[T, V] = js.native
   /**
-    * Wrapped type any[][].
-    * @see _.chunk
+    * Chunks a wrapped list into multiple arrays, each containing length or fewer items.
+    * @param length The maximum size of the inner arrays.
+    * @returns The chunked list.
     **/
-  def chunk(): js.Array[js.Array[_]] = js.native
+  def chunk(length: Double): js.Array[js.Array[T]] = js.native
   /**
     * @see _.map
     **/
@@ -827,11 +829,10 @@ trait Underscore[T, V] extends js.Object {
     **/
   def unzip(arrays: js.Array[_]*): js.Array[js.Array[_]] = js.native
   /**
-    * Wrapped type `any`.
-    * Extracts the value of a wrapped object.
-    * @return Value of the wrapped object.
+    * Extracts the value of the wrapped object.
+    * @returns The value of the wrapped object.
     **/
-  def value[TResult](): TResult = js.native
+  def value(): V = js.native
   /**
     * Wrapped type `object`.
     * @see _.values

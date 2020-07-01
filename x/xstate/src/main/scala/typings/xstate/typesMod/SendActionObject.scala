@@ -17,7 +17,7 @@ trait SendActionObject[TContext, TEvent /* <: EventObject */, TSentEvent /* <: E
 
 object SendActionObject {
   @scala.inline
-  def apply[TContext, TEvent, TSentEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent, /* <: typings.xstate.typesMod.EventObject */ TSentEvent](
     _event: typings.xstate.typesMod.SCXML.Event[TSentEvent],
     event: TSentEvent,
     id: String | Double,

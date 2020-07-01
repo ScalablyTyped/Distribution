@@ -67,6 +67,12 @@ package object elasticacheMod {
   type Integer = scala.Double
   type IntegerOptional = scala.Double
   type KeyList = js.Array[typings.awsSdk.elasticacheMod.String]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.enabled__
+    - typings.awsSdk.awsSdkStrings.disabled__
+    - java.lang.String
+  */
+  type MultiAZStatus = typings.awsSdk.elasticacheMod._MultiAZStatus | java.lang.String
   type NodeGroupConfigurationList = js.Array[typings.awsSdk.elasticacheMod.NodeGroupConfiguration]
   type NodeGroupList = js.Array[typings.awsSdk.elasticacheMod.NodeGroup]
   type NodeGroupMemberList = js.Array[typings.awsSdk.elasticacheMod.NodeGroupMember]

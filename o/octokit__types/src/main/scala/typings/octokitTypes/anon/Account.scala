@@ -1,5 +1,7 @@
 package typings.octokitTypes.anon
 
+import typings.octokitTypes.octokitTypesStrings.all
+import typings.octokitTypes.octokitTypesStrings.selected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +16,7 @@ trait Account extends js.Object {
   var id: Double
   var permissions: Deployments
   var repositories_url: String
-  var repository_selection: String
+  var repository_selection: all | selected
   var single_file_name: String
   var target_id: Double
   var target_type: String
@@ -33,7 +35,7 @@ object Account {
     id: Double,
     permissions: Deployments,
     repositories_url: String,
-    repository_selection: String,
+    repository_selection: all | selected,
     single_file_name: String,
     target_id: Double,
     target_type: String,

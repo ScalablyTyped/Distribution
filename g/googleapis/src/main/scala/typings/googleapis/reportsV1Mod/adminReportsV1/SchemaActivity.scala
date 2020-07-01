@@ -1,8 +1,8 @@
 package typings.googleapis.reportsV1Mod.adminReportsV1
 
-import typings.googleapis.AnonApplicationName
-import typings.googleapis.AnonCallerType
-import typings.googleapis.AnonName
+import typings.googleapis.anon.ApplicationName
+import typings.googleapis.anon.CallerType
+import typings.googleapis.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait SchemaActivity extends js.Object {
   /**
     * User doing the action.
     */
-  var actor: js.UndefOr[AnonCallerType] = js.native
+  var actor: js.UndefOr[CallerType] = js.native
   /**
     * ETag of the entry.
     */
@@ -23,11 +23,11 @@ trait SchemaActivity extends js.Object {
   /**
     * Activity events.
     */
-  var events: js.UndefOr[js.Array[AnonName]] = js.native
+  var events: js.UndefOr[js.Array[Name]] = js.native
   /**
     * Unique identifier for each activity record.
     */
-  var id: js.UndefOr[AnonApplicationName] = js.native
+  var id: js.UndefOr[ApplicationName] = js.native
   /**
     * IP Address of the user doing the action.
     */
@@ -45,10 +45,10 @@ trait SchemaActivity extends js.Object {
 object SchemaActivity {
   @scala.inline
   def apply(
-    actor: AnonCallerType = null,
+    actor: CallerType = null,
     etag: String = null,
-    events: js.Array[AnonName] = null,
-    id: AnonApplicationName = null,
+    events: js.Array[Name] = null,
+    id: ApplicationName = null,
     ipAddress: String = null,
     kind: String = null,
     ownerDomain: String = null

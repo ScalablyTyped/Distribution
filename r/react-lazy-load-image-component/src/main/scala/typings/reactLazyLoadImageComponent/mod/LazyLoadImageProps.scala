@@ -15,6 +15,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
@@ -93,6 +94,7 @@ import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.ve
 import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.yes
 import typings.std.Event
 import typings.std.HTMLImageElement
+import typings.std.HTMLSpanElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -307,6 +309,8 @@ trait LazyLoadImageProps extends js.Object {
   var width: js.UndefOr[Double | String] = js.undefined
   /** In some occasions (for example, when using a placeholderSrc) a wrapper span tag is rendered. This prop allows setting a class to that element. */
   var wrapperClassName: js.UndefOr[String] = js.undefined
+  /** Props that should be passed to the wrapper span when it is rendered (for example, when using placeholderSrc or effect) */
+  var wrapperProps: js.UndefOr[HTMLAttributes[HTMLSpanElement]] = js.undefined
 }
 
 object LazyLoadImageProps {
@@ -506,7 +510,8 @@ object LazyLoadImageProps {
     visibleByDefault: js.UndefOr[Boolean] = js.undefined,
     vocab: String = null,
     width: Double | String = null,
-    wrapperClassName: String = null
+    wrapperClassName: String = null,
+    wrapperProps: HTMLAttributes[HTMLSpanElement] = null
   ): LazyLoadImageProps = {
     val __obj = js.Dynamic.literal()
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
@@ -704,6 +709,7 @@ object LazyLoadImageProps {
     if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (wrapperClassName != null) __obj.updateDynamic("wrapperClassName")(wrapperClassName.asInstanceOf[js.Any])
+    if (wrapperProps != null) __obj.updateDynamic("wrapperProps")(wrapperProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[LazyLoadImageProps]
   }
 }

@@ -29,7 +29,7 @@ trait SagaMiddlewareOptions[C /* <: js.Object */] extends js.Object {
 
 object SagaMiddlewareOptions {
   @scala.inline
-  def apply[C](
+  def apply[/* <: js.Object */ C](
     context: C = null,
     effectMiddlewares: js.Array[EffectMiddleware] = null,
     onError: (/* error */ Error, /* errorInfo */ ErrorInfo) => Unit = null,

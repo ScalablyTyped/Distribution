@@ -21,6 +21,7 @@ sealed trait ValueFilterCondition extends js.Object
 object ValueFilterCondition extends js.Object {
   /**
     * Between `lowerBound` and `upperBound` criteria.
+    
     Required Criteria: {`value`, `lowerBound`, `upperBound`}.
     Optional Criteria: {`exclusive`}.
     *
@@ -30,6 +31,7 @@ object ValueFilterCondition extends js.Object {
   
   /**
     * In bottom N (`threshold`) [items, percent, sum] of value category.
+    
     Required Criteria: {`value`, `threshold`, `selectionType`}.
     *
     */
@@ -38,6 +40,7 @@ object ValueFilterCondition extends js.Object {
   
   /**
     * Equals comparator criterion.
+    
     Required Criteria: {`value`, `comparator`}.
     Optional Criteria: {`exclusive`}.
     *
@@ -47,6 +50,7 @@ object ValueFilterCondition extends js.Object {
   
   /**
     * Greater than comparator criterion.
+    
     Required Criteria: {`value`, `comparator`}.
     *
     */
@@ -55,6 +59,7 @@ object ValueFilterCondition extends js.Object {
   
   /**
     * Greater than or equal to comparator criterion.
+    
     Required Criteria: {`value`, `comparator`}.
     *
     */
@@ -63,6 +68,7 @@ object ValueFilterCondition extends js.Object {
   
   /**
     * Less than comparator criterion.
+    
     Required Criteria: {`value`, `comparator`}.
     *
     */
@@ -71,6 +77,7 @@ object ValueFilterCondition extends js.Object {
   
   /**
     * Less than or equal to comparator criterion.
+    
     Required Criteria: {`value`, `comparator`}.
     *
     */
@@ -79,6 +86,7 @@ object ValueFilterCondition extends js.Object {
   
   /**
     * In top N (`threshold`) [items, percent, sum] of value category.
+    
     Required Criteria: {`value`, `threshold`, `selectionType`}.
     *
     */

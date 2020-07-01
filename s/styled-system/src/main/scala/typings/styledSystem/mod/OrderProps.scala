@@ -17,7 +17,7 @@ trait OrderProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Objec
 
 object OrderProps {
   @scala.inline
-  def apply[ThemeType](order: js.UndefOr[Null | (ResponsiveValue[GlobalsNumber, ThemeType])] = js.undefined): OrderProps[ThemeType] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](order: js.UndefOr[Null | (ResponsiveValue[GlobalsNumber, ThemeType])] = js.undefined): OrderProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(order)) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderProps[ThemeType]]

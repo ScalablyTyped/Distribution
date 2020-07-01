@@ -1,6 +1,7 @@
 package typings.codemirror.mod.MergeView
 
 import typings.codemirror.anon.Delay
+import typings.codemirror.mod.AsyncLinter
 import typings.codemirror.mod.AutoCloseBrackets
 import typings.codemirror.mod.AutoCloseTags
 import typings.codemirror.mod.Editor
@@ -8,7 +9,8 @@ import typings.codemirror.mod.EditorConfiguration
 import typings.codemirror.mod.HighlightSelectionMatches
 import typings.codemirror.mod.InputStyle
 import typings.codemirror.mod.KeyMap
-import typings.codemirror.mod.LintOptions
+import typings.codemirror.mod.LintStateOptions
+import typings.codemirror.mod.Linter
 import typings.codemirror.mod.MatchBrackets
 import typings.codemirror.mod.MatchTags
 import typings.codemirror.mod.ShowHintOptions
@@ -112,7 +114,7 @@ object MergeViewEditorConfiguration {
     lineNumbers: js.UndefOr[Boolean] = js.undefined,
     lineWiseCopyCut: js.UndefOr[Boolean] = js.undefined,
     lineWrapping: js.UndefOr[Boolean] = js.undefined,
-    lint: Boolean | LintOptions = null,
+    lint: Boolean | LintStateOptions | Linter | AsyncLinter = null,
     matchBrackets: MatchBrackets | Boolean = null,
     matchTags: MatchTags | Boolean = null,
     maxHighlightLength: js.UndefOr[Double] = js.undefined,

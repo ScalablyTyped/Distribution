@@ -31,12 +31,12 @@ object SchemaGoogleCloudDialogflowV2OutputAudioConfig {
   @scala.inline
   def apply(
     audioEncoding: String = null,
-    sampleRateHertz: Int | Double = null,
+    sampleRateHertz: js.UndefOr[Double] = js.undefined,
     synthesizeSpeechConfig: SchemaGoogleCloudDialogflowV2SynthesizeSpeechConfig = null
   ): SchemaGoogleCloudDialogflowV2OutputAudioConfig = {
     val __obj = js.Dynamic.literal()
     if (audioEncoding != null) __obj.updateDynamic("audioEncoding")(audioEncoding.asInstanceOf[js.Any])
-    if (sampleRateHertz != null) __obj.updateDynamic("sampleRateHertz")(sampleRateHertz.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleRateHertz)) __obj.updateDynamic("sampleRateHertz")(sampleRateHertz.get.asInstanceOf[js.Any])
     if (synthesizeSpeechConfig != null) __obj.updateDynamic("synthesizeSpeechConfig")(synthesizeSpeechConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2OutputAudioConfig]
   }

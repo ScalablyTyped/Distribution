@@ -11,11 +11,11 @@ trait DeleteOTAUpdateRequest extends js.Object {
     */
   var deleteStream: js.UndefOr[DeleteStream] = js.native
   /**
-    * Specifies if the AWS Job associated with the OTA update should be deleted with the OTA update is deleted.
+    * Specifies if the AWS Job associated with the OTA update should be deleted when the OTA update is deleted.
     */
   var forceDeleteAWSJob: js.UndefOr[ForceDeleteAWSJob] = js.native
   /**
-    * The OTA update ID to delete.
+    * The ID of the OTA update to delete.
     */
   var otaUpdateId: OTAUpdateId = js.native
 }

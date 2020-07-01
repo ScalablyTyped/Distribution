@@ -68,7 +68,7 @@ object SchemaEvent {
     val __obj = js.Dynamic.literal()
     if (additionalEventTypes != null) __obj.updateDynamic("additionalEventTypes")(additionalEventTypes.asInstanceOf[js.Any])
     if (eventTimeMillis != null) __obj.updateDynamic("eventTimeMillis")(eventTimeMillis.asInstanceOf[js.Any])
-    if (!js.isUndefined(fromUserDeletion)) __obj.updateDynamic("fromUserDeletion")(fromUserDeletion.asInstanceOf[js.Any])
+    if (!js.isUndefined(fromUserDeletion)) __obj.updateDynamic("fromUserDeletion")(fromUserDeletion.get.asInstanceOf[js.Any])
     if (move != null) __obj.updateDynamic("move")(move.asInstanceOf[js.Any])
     if (permissionChanges != null) __obj.updateDynamic("permissionChanges")(permissionChanges.asInstanceOf[js.Any])
     if (primaryEventType != null) __obj.updateDynamic("primaryEventType")(primaryEventType.asInstanceOf[js.Any])

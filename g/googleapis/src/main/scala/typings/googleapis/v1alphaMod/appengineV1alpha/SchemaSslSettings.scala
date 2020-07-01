@@ -33,7 +33,7 @@ object SchemaSslSettings {
   def apply(certificateId: String = null, isManagedCertificate: js.UndefOr[Boolean] = js.undefined): SchemaSslSettings = {
     val __obj = js.Dynamic.literal()
     if (certificateId != null) __obj.updateDynamic("certificateId")(certificateId.asInstanceOf[js.Any])
-    if (!js.isUndefined(isManagedCertificate)) __obj.updateDynamic("isManagedCertificate")(isManagedCertificate.asInstanceOf[js.Any])
+    if (!js.isUndefined(isManagedCertificate)) __obj.updateDynamic("isManagedCertificate")(isManagedCertificate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSslSettings]
   }
 }

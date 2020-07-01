@@ -15,7 +15,7 @@ trait FunctionRequest[T /* <: Params */] extends js.Object {
 
 object FunctionRequest {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.parse.mod.global.Parse.Cloud.Params */ T](
     params: T,
     installationId: String = null,
     master: js.UndefOr[Boolean] = js.undefined,

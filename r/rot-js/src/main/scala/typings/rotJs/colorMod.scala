@@ -11,7 +11,7 @@ object colorMod extends js.Object {
   val lerpHSL: js.Function3[/* color1 */ Color, /* color2 */ Color, /* factor */ js.UndefOr[Double], Color] = js.native
   def add(color1: Color, colors: Color*): Color = js.native
   def add_(color1: Color, colors: Color*): Color = js.native
-  def fromString(str: String): js.Array[Double] = js.native
+  def fromString(str: String): Color = js.native
   def hsl2rgb(color: Color): Color = js.native
   def interpolate(color1: Color, color2: Color): Color = js.native
   def interpolate(color1: Color, color2: Color, factor: Double): Color = js.native

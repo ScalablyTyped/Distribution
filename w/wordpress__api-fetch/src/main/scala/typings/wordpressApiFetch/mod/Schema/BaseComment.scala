@@ -32,7 +32,7 @@ trait BaseComment[T /* <: Context */] extends BaseResponse {
 
 object BaseComment {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.wordpressApiFetch.mod.Schema.Context */ T](
     _links: Record[String, js.Array[Dictk]],
     author: Double,
     author_avatar_urls: Record[Double, String],

@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__a11y
 
-Typings are for version 2.9.0
+Typings are for version 2.11.0
 
 ## Library description:
 Accessibility (a11y) utilities for WordPress.

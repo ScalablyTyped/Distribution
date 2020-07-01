@@ -13,7 +13,7 @@ trait Content[S /* <: Schema[_, _] */] extends js.Object {
 
 object Content {
   @scala.inline
-  def apply[S](content: js.Array[js.Array[MenuElement[S]]], floating: js.UndefOr[Null | Boolean] = js.undefined): Content[S] = {
+  def apply[/* <: typings.prosemirrorModel.mod.Schema[_, _] */ S](content: js.Array[js.Array[MenuElement[S]]], floating: js.UndefOr[Null | Boolean] = js.undefined): Content[S] = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating.asInstanceOf[js.Any])
     __obj.asInstanceOf[Content[S]]

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Location extends js.Object {
-  var color: js.UndefOr[String | Light] = js.undefined
+  var color: js.UndefOr[String | Dark] = js.undefined
   var location: js.Array[Double]
   var name: js.UndefOr[String] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
@@ -16,7 +16,7 @@ object Location {
   @scala.inline
   def apply(
     location: js.Array[Double],
-    color: String | Light = null,
+    color: String | Dark = null,
     name: String = null,
     onClick: /* repeated */ js.Any => _ = null,
     onHover: /* repeated */ js.Any => _ = null

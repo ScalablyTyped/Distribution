@@ -61,7 +61,7 @@ object SchemaSmimeInfo {
     if (encryptedKeyPassword != null) __obj.updateDynamic("encryptedKeyPassword")(encryptedKeyPassword.asInstanceOf[js.Any])
     if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.get.asInstanceOf[js.Any])
     if (issuerCn != null) __obj.updateDynamic("issuerCn")(issuerCn.asInstanceOf[js.Any])
     if (pem != null) __obj.updateDynamic("pem")(pem.asInstanceOf[js.Any])
     if (pkcs12 != null) __obj.updateDynamic("pkcs12")(pkcs12.asInstanceOf[js.Any])

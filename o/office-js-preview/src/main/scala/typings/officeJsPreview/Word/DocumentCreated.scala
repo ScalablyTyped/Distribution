@@ -23,7 +23,6 @@ trait DocumentCreated extends ClientObject {
     * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.
     *
     * [Api set: WordApiHiddenDocument 1.3]
-    * @beta
     */
   val body: Body = js.native
   /**
@@ -31,7 +30,6 @@ trait DocumentCreated extends ClientObject {
     * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.
     *
     * [Api set: WordApiHiddenDocument 1.3]
-    * @beta
     */
   val contentControls: ContentControlCollection = js.native
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -50,7 +48,6 @@ trait DocumentCreated extends ClientObject {
     * Gets the properties of the document. Read-only.
     *
     * [Api set: WordApiHiddenDocument 1.3]
-    * @beta
     */
   val properties: DocumentProperties = js.native
   /**
@@ -58,7 +55,6 @@ trait DocumentCreated extends ClientObject {
     * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
     *
     * [Api set: WordApiHiddenDocument 1.3]
-    * @beta
     */
   val saved: Boolean = js.native
   /**
@@ -66,7 +62,6 @@ trait DocumentCreated extends ClientObject {
     * Gets the collection of section objects in the document. Read-only.
     *
     * [Api set: WordApiHiddenDocument 1.3]
-    * @beta
     */
   val sections: SectionCollection = js.native
   /**
@@ -78,7 +73,6 @@ trait DocumentCreated extends ClientObject {
     */
   val settings: SettingCollection = js.native
   /**
-    *
     * Deletes a bookmark, if it exists, from the document.
     *
     * [Api set: WordApiHiddenDocument 1.4]
@@ -88,7 +82,6 @@ trait DocumentCreated extends ClientObject {
     */
   def deleteBookmark(name: String): Unit = js.native
   /**
-    *
     * Gets a bookmark's range. Throws an error if the bookmark does not exist.
     *
     * [Api set: WordApiHiddenDocument 1.4]
@@ -98,7 +91,6 @@ trait DocumentCreated extends ClientObject {
     */
   def getBookmarkRange(name: String): Range = js.native
   /**
-    *
     * Gets a bookmark's range. Returns a null object if the bookmark does not exist.
     *
     * [Api set: WordApiHiddenDocument 1.4]
@@ -108,38 +100,25 @@ trait DocumentCreated extends ClientObject {
     */
   def getBookmarkRangeOrNullObject(name: String): Range = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Word.DocumentCreated` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Word.DocumentCreated` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.DocumentCreated` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): DocumentCreated = js.native
-  def load(option: String): DocumentCreated = js.native
-  def load(option: js.Array[String]): DocumentCreated = js.native
-  def load(option: DocumentCreatedLoadOptions): DocumentCreated = js.native
-  def load(option: Expand): DocumentCreated = js.native
+  def load(options: DocumentCreatedLoadOptions): DocumentCreated = js.native
+  def load(propertyNamesAndPaths: Expand): DocumentCreated = js.native
+  def load(propertyNames: String): DocumentCreated = js.native
+  def load(propertyNames: js.Array[String]): DocumentCreated = js.native
   /**
-    *
     * Opens the document.
     *
     * [Api set: WordApi 1.3]
     */
   def open(): Unit = js.native
   /**
-    *
     * Saves the document. This uses the Word default file naming convention if the document has not been saved before.
     *
     * [Api set: WordApiHiddenDocument 1.3]
-    * @beta
     */
   def save(): Unit = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -163,11 +142,11 @@ trait DocumentCreated extends ClientObject {
     */
   def toJSON(): DocumentCreatedData = js.native
   /**
-    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
     */
   def track(): DocumentCreated = js.native
   /**
-    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
+    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     */
   def untrack(): DocumentCreated = js.native
 }

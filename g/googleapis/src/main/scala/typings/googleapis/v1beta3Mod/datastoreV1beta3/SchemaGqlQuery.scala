@@ -48,7 +48,7 @@ object SchemaGqlQuery {
     queryString: String = null
   ): SchemaGqlQuery = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowLiterals)) __obj.updateDynamic("allowLiterals")(allowLiterals.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowLiterals)) __obj.updateDynamic("allowLiterals")(allowLiterals.get.asInstanceOf[js.Any])
     if (namedBindings != null) __obj.updateDynamic("namedBindings")(namedBindings.asInstanceOf[js.Any])
     if (positionalBindings != null) __obj.updateDynamic("positionalBindings")(positionalBindings.asInstanceOf[js.Any])
     if (queryString != null) __obj.updateDynamic("queryString")(queryString.asInstanceOf[js.Any])

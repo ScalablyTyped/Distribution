@@ -66,7 +66,7 @@ object SchemaTestMatrix {
   def apply(
     clientInfo: SchemaClientInfo = null,
     environmentMatrix: SchemaEnvironmentMatrix = null,
-    flakyTestAttempts: Int | Double = null,
+    flakyTestAttempts: js.UndefOr[Double] = js.undefined,
     invalidMatrixDetails: String = null,
     projectId: String = null,
     resultStorage: SchemaResultStorage = null,
@@ -79,7 +79,7 @@ object SchemaTestMatrix {
     val __obj = js.Dynamic.literal()
     if (clientInfo != null) __obj.updateDynamic("clientInfo")(clientInfo.asInstanceOf[js.Any])
     if (environmentMatrix != null) __obj.updateDynamic("environmentMatrix")(environmentMatrix.asInstanceOf[js.Any])
-    if (flakyTestAttempts != null) __obj.updateDynamic("flakyTestAttempts")(flakyTestAttempts.asInstanceOf[js.Any])
+    if (!js.isUndefined(flakyTestAttempts)) __obj.updateDynamic("flakyTestAttempts")(flakyTestAttempts.get.asInstanceOf[js.Any])
     if (invalidMatrixDetails != null) __obj.updateDynamic("invalidMatrixDetails")(invalidMatrixDetails.asInstanceOf[js.Any])
     if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     if (resultStorage != null) __obj.updateDynamic("resultStorage")(resultStorage.asInstanceOf[js.Any])

@@ -50,7 +50,7 @@ trait SchemaTCPHealthCheck extends js.Object {
 object SchemaTCPHealthCheck {
   @scala.inline
   def apply(
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     portName: String = null,
     portSpecification: String = null,
     proxyHeader: String = null,
@@ -58,7 +58,7 @@ object SchemaTCPHealthCheck {
     response: String = null
   ): SchemaTCPHealthCheck = {
     val __obj = js.Dynamic.literal()
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (portName != null) __obj.updateDynamic("portName")(portName.asInstanceOf[js.Any])
     if (portSpecification != null) __obj.updateDynamic("portSpecification")(portSpecification.asInstanceOf[js.Any])
     if (proxyHeader != null) __obj.updateDynamic("proxyHeader")(proxyHeader.asInstanceOf[js.Any])

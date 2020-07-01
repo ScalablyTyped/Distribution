@@ -26,7 +26,7 @@ trait Boost[T /* <: BodyPartConstant */] extends js.Object {
 
 object Boost {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.screeps.BodyPartConstant */ T](
     hits: Double,
     `type`: T,
     boost: /* import warning: importer.ImportType#apply Failed type conversion: keyof screeps.anon.Dictpart[T] */ js.Any = null

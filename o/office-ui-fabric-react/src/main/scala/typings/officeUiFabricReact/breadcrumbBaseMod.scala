@@ -17,6 +17,14 @@ object breadcrumbBaseMod extends js.Object {
     var _classNames: js.Any = js.native
     var _focusZone: js.Any = js.native
     var _onBreadcrumbClicked: js.Any = js.native
+    /**
+      * Remove the last item of the overflow set and insert the item as the start of the rendered set past the overflow
+      * point.
+      */
+    var _onGrowData: js.Any = js.native
+    /**
+      * Remove the first rendered item past the overlow point and put it and the end the overflow set.
+      */
     var _onReduceData: js.Any = js.native
     var _onRenderBreadcrumb: js.Any = js.native
     var _onRenderItem: js.Any = js.native

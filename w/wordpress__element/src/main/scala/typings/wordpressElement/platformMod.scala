@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@wordpress/element/platform", JSImport.Namespace)
+@JSImport("@wordpress/element/build-types/platform", JSImport.Namespace)
 @js.native
 object platformMod extends js.Object {
   @js.native

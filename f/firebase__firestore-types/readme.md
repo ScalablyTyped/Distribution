@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__firestore-types
 
-Typings are for version 1.10.2
+Typings are for version 1.11.0
 
 ## Library description:
 @firebase/firestore Types

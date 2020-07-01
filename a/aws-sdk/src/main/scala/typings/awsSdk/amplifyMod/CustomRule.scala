@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CustomRule extends js.Object {
   /**
-    *  The condition for a URL rewrite or redirect rule, e.g. country code. 
+    *  The condition for a URL rewrite or redirect rule, such as a country code. 
     */
   var condition: js.UndefOr[Condition] = js.native
   /**

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 ///////////////////////////////////////////////////////////////////////////
 // Attributes
-// see http://docs.angularjs.org/api/ng.$compile.directive.Attributes
+// see http://docs.angularjs.org/api/ng/type/$compile.directive.Attributes
 ///////////////////////////////////////////////////////////////////////////
 trait IAttributes
   extends /**

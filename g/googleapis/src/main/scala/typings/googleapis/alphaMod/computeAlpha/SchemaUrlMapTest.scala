@@ -40,7 +40,7 @@ trait SchemaUrlMapTest extends js.Object {
 object SchemaUrlMapTest {
   @scala.inline
   def apply(
-    backendServiceWeight: Int | Double = null,
+    backendServiceWeight: js.UndefOr[Double] = js.undefined,
     description: String = null,
     expectedUrlRedirect: String = null,
     host: String = null,
@@ -48,7 +48,7 @@ object SchemaUrlMapTest {
     service: String = null
   ): SchemaUrlMapTest = {
     val __obj = js.Dynamic.literal()
-    if (backendServiceWeight != null) __obj.updateDynamic("backendServiceWeight")(backendServiceWeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(backendServiceWeight)) __obj.updateDynamic("backendServiceWeight")(backendServiceWeight.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (expectedUrlRedirect != null) __obj.updateDynamic("expectedUrlRedirect")(expectedUrlRedirect.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])

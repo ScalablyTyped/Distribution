@@ -20,7 +20,7 @@ object experimental extends js.Object {
     * @param comp A binary function predicates *x* element would be placed before *y*. When returns `true`, then *x* precedes *y*. Note that, because *equality* is predicated by `!comp(x, y) && !comp(y, x)`, the function must not cover the *equality* like `<=` or `>=`. It must exclude the *equality* like `<` or `>`. Default is {@link less}.
     */
   class FlatMap[Key, T] ()
-    extends typings.tstl.experimentalMod.FlatMap[Key, T] {
+    extends typings.tstl.tstlModuleMod.experimental.FlatMap[Key, T] {
     def this(comp: Comparator[Key, Key]) = this()
     /**
       * Initializer Constructor.
@@ -61,7 +61,7 @@ object experimental extends js.Object {
     * @param comp A binary function predicates *x* element would be placed before *y*. When returns `true`, then *x* precedes *y*. Note that, because *equality* is predicated by `!comp(x, y) && !comp(y, x)`, the function must not cover the *equality* like `<=` or `>=`. It must exclude the *equality* like `<` or `>`. Default is {@link less}.
     */
   class FlatMultiMap[Key, T] ()
-    extends typings.tstl.experimentalMod.FlatMultiMap[Key, T] {
+    extends typings.tstl.tstlModuleMod.experimental.FlatMultiMap[Key, T] {
     def this(comp: Comparator[Key, Key]) = this()
     /**
       * Initializer Constructor.
@@ -102,7 +102,7 @@ object experimental extends js.Object {
     * @param comp A binary function predicates *x* element would be placed before *y*. When returns `true`, then *x* precedes *y*. Note that, because *equality* is predicated by `!comp(x, y) && !comp(y, x)`, the function must not cover the *equality* like `<=` or `>=`. It must exclude the *equality* like `<` or `>`. Default is {@link less}.
     */
   class FlatMultiSet[Key] ()
-    extends typings.tstl.experimentalMod.FlatMultiSet[Key] {
+    extends typings.tstl.tstlModuleMod.experimental.FlatMultiSet[Key] {
     def this(comp: Comparator[Key, Key]) = this()
     /**
       * Initializer Constructor.
@@ -143,7 +143,7 @@ object experimental extends js.Object {
     * @param comp A binary function predicates *x* element would be placed before *y*. When returns `true`, then *x* precedes *y*. Note that, because *equality* is predicated by `!comp(x, y) && !comp(y, x)`, the function must not cover the *equality* like `<=` or `>=`. It must exclude the *equality* like `<` or `>`. Default is {@link less}.
     */
   class FlatSet[Key] ()
-    extends typings.tstl.experimentalMod.FlatSet[Key] {
+    extends typings.tstl.tstlModuleMod.experimental.FlatSet[Key] {
     def this(comp: Comparator[Key, Key]) = this()
     /**
       * Initializer Constructor.

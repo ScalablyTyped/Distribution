@@ -19,7 +19,7 @@ trait TaskDefinition extends js.Object {
     */
   var cpu: js.UndefOr[String] = js.native
   /**
-    * The Amazon Resource Name (ARN) of the task execution role that containers in this task can assume. All containers in this task are granted the permissions that are specified in this role.
+    * The Amazon Resource Name (ARN) of the task execution role that grants the Amazon ECS container agent permission to make AWS API calls on your behalf. The task execution IAM role is required depending on the requirements of your task. For more information, see Amazon ECS task execution IAM role in the Amazon Elastic Container Service Developer Guide.
     */
   var executionRoleArn: js.UndefOr[String] = js.native
   /**

@@ -24,7 +24,7 @@ trait IOptions[T /* <: ReadonlyPartialJSONValue */] extends js.Object {
 
 object IOptions {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONValue */ T](
     connector: IDataConnector[String, String, String, String] = null,
     transform: js.Promise[DataTransform[T]] = null
   ): IOptions[T] = {

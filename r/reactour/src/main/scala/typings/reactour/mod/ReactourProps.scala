@@ -18,6 +18,10 @@ trait ReactourProps extends js.Object {
     */
   var accentColor: js.UndefOr[String] = js.undefined
   /**
+    * Configure accessibility related accessibility options
+    */
+  var accessibilityOptions: js.UndefOr[ReactourAccessibilityOptions] = js.undefined
+  /**
     * Customize _Badge_ content using `current` and `total` steps values
     */
   var badgeContent: js.UndefOr[js.Function2[/* current */ Double, /* total */ Double, ReactNode]] = js.undefined
@@ -176,6 +180,7 @@ object ReactourProps {
     onRequestClose: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit,
     steps: js.Array[ReactourStep],
     accentColor: String = null,
+    accessibilityOptions: ReactourAccessibilityOptions = null,
     badgeContent: (/* current */ Double, /* total */ Double) => ReactNode = null,
     children: ReactNode = null,
     className: String = null,
@@ -211,6 +216,7 @@ object ReactourProps {
   ): ReactourProps = {
     val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any], onRequestClose = js.Any.fromFunction1(onRequestClose), steps = steps.asInstanceOf[js.Any])
     if (accentColor != null) __obj.updateDynamic("accentColor")(accentColor.asInstanceOf[js.Any])
+    if (accessibilityOptions != null) __obj.updateDynamic("accessibilityOptions")(accessibilityOptions.asInstanceOf[js.Any])
     if (badgeContent != null) __obj.updateDynamic("badgeContent")(js.Any.fromFunction2(badgeContent))
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])

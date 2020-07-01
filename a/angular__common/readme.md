@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular__common
 
-Typings are for version 9.1.9
+Typings are for version 9.1.11
 
 ## Library description:
 Angular - commonly needed directives and services

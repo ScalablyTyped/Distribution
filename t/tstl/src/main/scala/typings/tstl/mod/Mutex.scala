@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
   * Default Constructor.
   */
 class Mutex ()
-  extends typings.tstl.threadMod.Mutex
+  extends typings.tstl.tstlModuleMod.Mutex
 

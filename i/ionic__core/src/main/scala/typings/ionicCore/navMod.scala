@@ -2,9 +2,6 @@ package typings.ionicCore
 
 import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.interfaceMod.NavOutlet
-import typings.ionicCore.interfaceMod.RouteID
-import typings.ionicCore.interfaceMod.RouteWrite
-import typings.ionicCore.interfaceMod.RouterDirection
 import typings.ionicCore.mod.ComponentProps
 import typings.ionicCore.mod.FrameworkDelegate
 import typings.ionicCore.mod.ViewController
@@ -120,8 +117,6 @@ object navMod extends js.Object {
       */
     def getPrevious(): js.Promise[js.UndefOr[ViewController]] = js.native
     def getPrevious(view: ViewController): js.Promise[js.UndefOr[ViewController]] = js.native
-    /* CompleteClass */
-    override def getRouteId(): js.Promise[js.UndefOr[RouteID]] = js.native
     def insert(insertIndex: Double): js.Promise[Boolean] = js.native
     def insert(insertIndex: Double, component: String): js.Promise[Boolean] = js.native
     def insert(insertIndex: Double, component: String, componentProps: Null, opts: Null, done: TransitionDoneFn): js.Promise[Boolean] = js.native
@@ -598,8 +593,6 @@ object navMod extends js.Object {
       opts: NavOptions,
       done: TransitionDoneFn
     ): js.Promise[Boolean] = js.native
-    /* CompleteClass */
-    override def setRouteId(id: String, params: js.UndefOr[ComponentProps[Null]], direction: RouterDirection): js.Promise[RouteWrite] = js.native
     def swipeGestureChanged(): Unit = js.native
   }
   

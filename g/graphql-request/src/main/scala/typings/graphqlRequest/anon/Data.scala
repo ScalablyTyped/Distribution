@@ -16,7 +16,7 @@ trait Data[T /* <: js.Any */] extends js.Object {
 
 object Data {
   @scala.inline
-  def apply[T](
+  def apply[/* <: js.Any */ T](
     headers: Headers,
     status: Double,
     data: T = null,

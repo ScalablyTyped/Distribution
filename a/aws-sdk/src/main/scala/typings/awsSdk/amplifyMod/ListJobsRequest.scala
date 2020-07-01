@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListJobsRequest extends js.Object {
   /**
-    *  Unique Id for an Amplify App. 
+    *  The unique ID for an Amplify app. 
     */
   var appId: AppId = js.native
   /**
-    *  Name for a branch. 
+    *  The name for a branch. 
     */
   var branchName: BranchName = js.native
   /**
-    *  Maximum number of records to list in a single response. 
+    *  The maximum number of records to list in a single response. 
     */
   var maxResults: js.UndefOr[MaxResults] = js.native
   /**
-    *  Pagination token. Set to null to start listing steps from start. If a non-null pagination token is returned in a result, then pass its value in here to list more steps. 
+    *  A pagination token. Set to null to start listing steps from the start. If a non-null pagination token is returned in a result, pass its value in here to list more steps. 
     */
   var nextToken: js.UndefOr[NextToken] = js.native
 }

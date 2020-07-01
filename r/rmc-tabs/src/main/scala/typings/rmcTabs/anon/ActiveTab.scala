@@ -23,7 +23,7 @@ trait ActiveTab[S /* <: StateType */, P /* <: PropsType */] extends js.Object {
 
 object ActiveTab {
   @scala.inline
-  def apply[S, P](
+  def apply[/* <: typings.rmcTabs.tabsBaseMod.StateType */ S, /* <: typings.rmcTabs.propsTypeMod.PropsType */ P](
     activeTab: /* import warning: importer.ImportType#apply Failed type conversion: S['currentTab'] */ js.Any,
     animated: Boolean,
     goToTab: js.Any,

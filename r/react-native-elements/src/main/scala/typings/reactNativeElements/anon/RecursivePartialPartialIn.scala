@@ -150,6 +150,7 @@ trait RecursivePartialPartialIn extends js.Object {
   var errorMessage: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   var errorProps: js.UndefOr[RecursivePartial[js.UndefOr[TextProps]]] = js.undefined
   var errorStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
+  var focusable: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   var hasTVPreferredFocus: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   var hitSlop: js.UndefOr[RecursivePartial[js.UndefOr[Insets]]] = js.undefined
   var importantForAccessibility: js.UndefOr[RecursivePartial[js.UndefOr[auto | yes | no | `no-hide-descendants`]]] = js.undefined
@@ -368,6 +369,7 @@ object RecursivePartialPartialIn {
     errorMessage: RecursivePartial[js.UndefOr[String]] = null,
     errorProps: RecursivePartial[js.UndefOr[TextProps]] = null,
     errorStyle: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]] = null,
+    focusable: RecursivePartial[js.UndefOr[Boolean]] = null,
     hasTVPreferredFocus: RecursivePartial[js.UndefOr[Boolean]] = null,
     hitSlop: RecursivePartial[js.UndefOr[Insets]] = null,
     importantForAccessibility: RecursivePartial[js.UndefOr[auto | yes | no | `no-hide-descendants`]] = null,
@@ -521,6 +523,7 @@ object RecursivePartialPartialIn {
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
     if (errorProps != null) __obj.updateDynamic("errorProps")(errorProps.asInstanceOf[js.Any])
     if (errorStyle != null) __obj.updateDynamic("errorStyle")(errorStyle.asInstanceOf[js.Any])
+    if (focusable != null) __obj.updateDynamic("focusable")(focusable.asInstanceOf[js.Any])
     if (hasTVPreferredFocus != null) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.asInstanceOf[js.Any])
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])

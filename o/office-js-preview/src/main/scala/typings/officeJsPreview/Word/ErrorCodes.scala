@@ -25,5 +25,11 @@ object ErrorCodes extends js.Object {
   @js.native
   sealed trait notImplemented extends ErrorCodes
   
+  @js.native
+  sealed trait searchDialogIsOpen extends ErrorCodes
+  
+  @js.native
+  sealed trait searchStringInvalidOrTooLong extends ErrorCodes
+  
 }
 

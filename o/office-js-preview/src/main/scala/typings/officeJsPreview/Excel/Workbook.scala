@@ -161,7 +161,7 @@ trait Workbook extends ClientObject {
   val properties: DocumentProperties = js.native
   /**
     *
-    * Returns workbook protection object for a workbook.
+    * Returns the protection object for a workbook.
     *
     * [Api set: ExcelApi 1.7]
     */

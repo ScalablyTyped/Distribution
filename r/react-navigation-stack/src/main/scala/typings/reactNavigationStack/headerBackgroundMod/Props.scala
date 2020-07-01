@@ -7,6 +7,7 @@ import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityState
 import typings.reactNative.mod.AccessibilityTrait
 import typings.reactNative.mod.AccessibilityValue
+import typings.reactNative.mod.Animated.WithAnimatedValue
 import typings.reactNative.mod.GestureResponderEvent
 import typings.reactNative.mod.Insets
 import typings.reactNative.mod.LayoutChangeEvent
@@ -29,7 +30,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react-native.react-native.ViewProps & {  children ? :react.react.ReactNode} */
+/* Inlined react-native.react-native.ViewProps & {  style ? :react-native.react-native.Animated.WithAnimatedValue<react-native.react-native.StyleProp<react-native.react-native.ViewStyle>>,   children ? :react.react.ReactNode} */
 trait Props extends js.Object {
   /**
     * Provides an array of custom actions available for accessibility.
@@ -106,6 +107,10 @@ trait Props extends js.Object {
     * Set this property to false to disable this optimization and ensure that this View exists in the native view hierarchy.
     */
   var collapsable: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Whether this `View` should be focusable with a non-touch input device, eg. receive focus with a hardware keyboard.
+    */
+  var focusable: js.UndefOr[Boolean] = js.undefined
   /**
     * *(Apple TV only)* May be set to true to force the Apple TV focus engine to move focus to this view.
     *
@@ -317,7 +322,7 @@ trait Props extends js.Object {
     * Test and measure when using this property.
     */
   var shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var style: js.UndefOr[StyleProp[ViewStyle] with WithAnimatedValue[StyleProp[ViewStyle]]] = js.undefined
   /**
     * Used to locate this view in end-to-end tests.
     */
@@ -372,6 +377,7 @@ object Props {
     accessible: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     collapsable: js.UndefOr[Boolean] = js.undefined,
+    focusable: js.UndefOr[Boolean] = js.undefined,
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
     hitSlop: Insets = null,
     importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
@@ -404,7 +410,7 @@ object Props {
     removeClippedSubviews: js.UndefOr[Boolean] = js.undefined,
     renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined,
     shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined,
-    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    style: StyleProp[ViewStyle] with WithAnimatedValue[StyleProp[ViewStyle]] = null,
     testID: String = null,
     tvParallaxMagnification: js.UndefOr[Double] = js.undefined,
     tvParallaxProperties: TVParallaxProperties = null,
@@ -428,6 +434,7 @@ object Props {
     if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.get.asInstanceOf[js.Any])
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
@@ -460,7 +467,7 @@ object Props {
     if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews.get.asInstanceOf[js.Any])
     if (!js.isUndefined(renderToHardwareTextureAndroid)) __obj.updateDynamic("renderToHardwareTextureAndroid")(renderToHardwareTextureAndroid.get.asInstanceOf[js.Any])
     if (!js.isUndefined(shouldRasterizeIOS)) __obj.updateDynamic("shouldRasterizeIOS")(shouldRasterizeIOS.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
     if (!js.isUndefined(tvParallaxMagnification)) __obj.updateDynamic("tvParallaxMagnification")(tvParallaxMagnification.get.asInstanceOf[js.Any])
     if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties.asInstanceOf[js.Any])

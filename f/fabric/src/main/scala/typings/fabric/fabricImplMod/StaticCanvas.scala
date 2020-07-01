@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("fabric/fabric-impl", "StaticCanvas")
 @js.native
-class StaticCanvas protected ()
+class StaticCanvas ()
   extends IObservable[StaticCanvas]
      with IStaticCanvasOptions
      with ICollection[StaticCanvas]
@@ -28,6 +28,7 @@ class StaticCanvas protected ()
     */
   def this(element: HTMLCanvasElement) = this()
   def this(element: String, options: ICanvasOptions) = this()
+  def this(element: Null, options: ICanvasOptions) = this()
   def this(element: HTMLCanvasElement, options: ICanvasOptions) = this()
   var _activeObject: js.UndefOr[Object | Group] = js.native
   var freeDrawingBrush: FreeDrawingBrush = js.native

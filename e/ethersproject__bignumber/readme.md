@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__bignumber
 
-Typings are for version 5.0.0-beta.139
+Typings are for version 5.0.2
 
 ## Library description:
 BigNumber library used in ethers.js.

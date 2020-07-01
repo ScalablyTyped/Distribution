@@ -11,8 +11,8 @@ trait Exact extends js.Object {
   var key: String
   var locale: String
   var name: String
-  var parentKeys: js.Array[String]
   var path: String
+  var pro_layout_parentKeys: js.Array[String]
   var routes: Null
   var target: js.UndefOr[scala.Nothing] = js.undefined
 }
@@ -25,11 +25,11 @@ object Exact {
     key: String,
     locale: String,
     name: String,
-    parentKeys: js.Array[String],
     path: String,
+    pro_layout_parentKeys: js.Array[String],
     routes: Null
   ): Exact = {
-    val __obj = js.Dynamic.literal(exact = exact.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parentKeys = parentKeys.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(exact = exact.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pro_layout_parentKeys = pro_layout_parentKeys.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Exact]
   }
 }

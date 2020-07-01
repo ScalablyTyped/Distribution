@@ -11,6 +11,7 @@ trait CheckAccountIsAssociatedWithAny extends js.Object {
   var checkToken: `613`
   var createContentAttachment: `614`
   var createFromManifest: `615`
+  var createInstallationAccessToken: `616`
   var createInstallationToken: `616`
   var deleteAuthorization: `617`
   var deleteInstallation: `618`
@@ -35,10 +36,12 @@ trait CheckAccountIsAssociatedWithAny extends js.Object {
   var listPlans: `633`
   var listPlansStubbed: `634`
   var listRepos: `635`
+  var listReposAccessibleToInstallation: `635`
   var listSubscriptionsForAuthenticatedUser: `631`
   var listSubscriptionsForAuthenticatedUserStubbed: `632`
   var removeRepoFromInstallation: `636`
   var resetToken: `637`
+  var revokeInstallationAccessToken: `638`
   var revokeInstallationToken: `638`
   var suspendInstallation: `639`
   var unsuspendInstallation: `640`
@@ -53,6 +56,7 @@ object CheckAccountIsAssociatedWithAny {
     checkToken: `613`,
     createContentAttachment: `614`,
     createFromManifest: `615`,
+    createInstallationAccessToken: `616`,
     createInstallationToken: `616`,
     deleteAuthorization: `617`,
     deleteInstallation: `618`,
@@ -77,15 +81,17 @@ object CheckAccountIsAssociatedWithAny {
     listPlans: `633`,
     listPlansStubbed: `634`,
     listRepos: `635`,
+    listReposAccessibleToInstallation: `635`,
     listSubscriptionsForAuthenticatedUser: `631`,
     listSubscriptionsForAuthenticatedUserStubbed: `632`,
     removeRepoFromInstallation: `636`,
     resetToken: `637`,
+    revokeInstallationAccessToken: `638`,
     revokeInstallationToken: `638`,
     suspendInstallation: `639`,
     unsuspendInstallation: `640`
   ): CheckAccountIsAssociatedWithAny = {
-    val __obj = js.Dynamic.literal(addRepoToInstallation = addRepoToInstallation.asInstanceOf[js.Any], checkAccountIsAssociatedWithAny = checkAccountIsAssociatedWithAny.asInstanceOf[js.Any], checkAccountIsAssociatedWithAnyStubbed = checkAccountIsAssociatedWithAnyStubbed.asInstanceOf[js.Any], checkToken = checkToken.asInstanceOf[js.Any], createContentAttachment = createContentAttachment.asInstanceOf[js.Any], createFromManifest = createFromManifest.asInstanceOf[js.Any], createInstallationToken = createInstallationToken.asInstanceOf[js.Any], deleteAuthorization = deleteAuthorization.asInstanceOf[js.Any], deleteInstallation = deleteInstallation.asInstanceOf[js.Any], deleteToken = deleteToken.asInstanceOf[js.Any], getAuthenticated = getAuthenticated.asInstanceOf[js.Any], getBySlug = getBySlug.asInstanceOf[js.Any], getInstallation = getInstallation.asInstanceOf[js.Any], getOrgInstallation = getOrgInstallation.asInstanceOf[js.Any], getRepoInstallation = getRepoInstallation.asInstanceOf[js.Any], getSubscriptionPlanForAccount = getSubscriptionPlanForAccount.asInstanceOf[js.Any], getSubscriptionPlanForAccountStubbed = getSubscriptionPlanForAccountStubbed.asInstanceOf[js.Any], getUserInstallation = getUserInstallation.asInstanceOf[js.Any], listAccountsForPlan = listAccountsForPlan.asInstanceOf[js.Any], listAccountsForPlanStubbed = listAccountsForPlanStubbed.asInstanceOf[js.Any], listAccountsUserOrOrgOnPlan = listAccountsUserOrOrgOnPlan.asInstanceOf[js.Any], listAccountsUserOrOrgOnPlanStubbed = listAccountsUserOrOrgOnPlanStubbed.asInstanceOf[js.Any], listInstallationReposForAuthenticatedUser = listInstallationReposForAuthenticatedUser.asInstanceOf[js.Any], listInstallations = listInstallations.asInstanceOf[js.Any], listInstallationsForAuthenticatedUser = listInstallationsForAuthenticatedUser.asInstanceOf[js.Any], listMarketplacePurchasesForAuthenticatedUser = listMarketplacePurchasesForAuthenticatedUser.asInstanceOf[js.Any], listMarketplacePurchasesForAuthenticatedUserStubbed = listMarketplacePurchasesForAuthenticatedUserStubbed.asInstanceOf[js.Any], listPlans = listPlans.asInstanceOf[js.Any], listPlansStubbed = listPlansStubbed.asInstanceOf[js.Any], listRepos = listRepos.asInstanceOf[js.Any], listSubscriptionsForAuthenticatedUser = listSubscriptionsForAuthenticatedUser.asInstanceOf[js.Any], listSubscriptionsForAuthenticatedUserStubbed = listSubscriptionsForAuthenticatedUserStubbed.asInstanceOf[js.Any], removeRepoFromInstallation = removeRepoFromInstallation.asInstanceOf[js.Any], resetToken = resetToken.asInstanceOf[js.Any], revokeInstallationToken = revokeInstallationToken.asInstanceOf[js.Any], suspendInstallation = suspendInstallation.asInstanceOf[js.Any], unsuspendInstallation = unsuspendInstallation.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addRepoToInstallation = addRepoToInstallation.asInstanceOf[js.Any], checkAccountIsAssociatedWithAny = checkAccountIsAssociatedWithAny.asInstanceOf[js.Any], checkAccountIsAssociatedWithAnyStubbed = checkAccountIsAssociatedWithAnyStubbed.asInstanceOf[js.Any], checkToken = checkToken.asInstanceOf[js.Any], createContentAttachment = createContentAttachment.asInstanceOf[js.Any], createFromManifest = createFromManifest.asInstanceOf[js.Any], createInstallationAccessToken = createInstallationAccessToken.asInstanceOf[js.Any], createInstallationToken = createInstallationToken.asInstanceOf[js.Any], deleteAuthorization = deleteAuthorization.asInstanceOf[js.Any], deleteInstallation = deleteInstallation.asInstanceOf[js.Any], deleteToken = deleteToken.asInstanceOf[js.Any], getAuthenticated = getAuthenticated.asInstanceOf[js.Any], getBySlug = getBySlug.asInstanceOf[js.Any], getInstallation = getInstallation.asInstanceOf[js.Any], getOrgInstallation = getOrgInstallation.asInstanceOf[js.Any], getRepoInstallation = getRepoInstallation.asInstanceOf[js.Any], getSubscriptionPlanForAccount = getSubscriptionPlanForAccount.asInstanceOf[js.Any], getSubscriptionPlanForAccountStubbed = getSubscriptionPlanForAccountStubbed.asInstanceOf[js.Any], getUserInstallation = getUserInstallation.asInstanceOf[js.Any], listAccountsForPlan = listAccountsForPlan.asInstanceOf[js.Any], listAccountsForPlanStubbed = listAccountsForPlanStubbed.asInstanceOf[js.Any], listAccountsUserOrOrgOnPlan = listAccountsUserOrOrgOnPlan.asInstanceOf[js.Any], listAccountsUserOrOrgOnPlanStubbed = listAccountsUserOrOrgOnPlanStubbed.asInstanceOf[js.Any], listInstallationReposForAuthenticatedUser = listInstallationReposForAuthenticatedUser.asInstanceOf[js.Any], listInstallations = listInstallations.asInstanceOf[js.Any], listInstallationsForAuthenticatedUser = listInstallationsForAuthenticatedUser.asInstanceOf[js.Any], listMarketplacePurchasesForAuthenticatedUser = listMarketplacePurchasesForAuthenticatedUser.asInstanceOf[js.Any], listMarketplacePurchasesForAuthenticatedUserStubbed = listMarketplacePurchasesForAuthenticatedUserStubbed.asInstanceOf[js.Any], listPlans = listPlans.asInstanceOf[js.Any], listPlansStubbed = listPlansStubbed.asInstanceOf[js.Any], listRepos = listRepos.asInstanceOf[js.Any], listReposAccessibleToInstallation = listReposAccessibleToInstallation.asInstanceOf[js.Any], listSubscriptionsForAuthenticatedUser = listSubscriptionsForAuthenticatedUser.asInstanceOf[js.Any], listSubscriptionsForAuthenticatedUserStubbed = listSubscriptionsForAuthenticatedUserStubbed.asInstanceOf[js.Any], removeRepoFromInstallation = removeRepoFromInstallation.asInstanceOf[js.Any], resetToken = resetToken.asInstanceOf[js.Any], revokeInstallationAccessToken = revokeInstallationAccessToken.asInstanceOf[js.Any], revokeInstallationToken = revokeInstallationToken.asInstanceOf[js.Any], suspendInstallation = suspendInstallation.asInstanceOf[js.Any], unsuspendInstallation = unsuspendInstallation.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckAccountIsAssociatedWithAny]
   }
 }

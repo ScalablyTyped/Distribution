@@ -94,7 +94,7 @@ trait PaddingProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Obj
 
 object PaddingProps {
   @scala.inline
-  def apply[ThemeType](
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](
     p: js.UndefOr[
       Null | (ResponsiveValue[
         ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 

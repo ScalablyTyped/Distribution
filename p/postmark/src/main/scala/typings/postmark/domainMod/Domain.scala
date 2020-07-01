@@ -9,7 +9,7 @@ trait Domain extends js.Object {
   var ID: Double
   var Name: String
   var ReturnPathDomainVerified: Boolean
-  var SpfVerified: Boolean
+  var SPFVerified: Boolean
   var WeakDKIM: Boolean
 }
 
@@ -20,10 +20,10 @@ object Domain {
     ID: Double,
     Name: String,
     ReturnPathDomainVerified: Boolean,
-    SpfVerified: Boolean,
+    SPFVerified: Boolean,
     WeakDKIM: Boolean
   ): Domain = {
-    val __obj = js.Dynamic.literal(DKIMVerified = DKIMVerified.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], ReturnPathDomainVerified = ReturnPathDomainVerified.asInstanceOf[js.Any], SpfVerified = SpfVerified.asInstanceOf[js.Any], WeakDKIM = WeakDKIM.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(DKIMVerified = DKIMVerified.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], ReturnPathDomainVerified = ReturnPathDomainVerified.asInstanceOf[js.Any], SPFVerified = SPFVerified.asInstanceOf[js.Any], WeakDKIM = WeakDKIM.asInstanceOf[js.Any])
     __obj.asInstanceOf[Domain]
   }
 }

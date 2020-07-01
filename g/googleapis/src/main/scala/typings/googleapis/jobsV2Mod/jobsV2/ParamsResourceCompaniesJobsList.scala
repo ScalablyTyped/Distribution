@@ -64,7 +64,7 @@ object ParamsResourceCompaniesJobsList {
     jobRequisitionId: String = null,
     key: String = null,
     oauth_token: String = null,
-    pageSize: Int | Double = null,
+    pageSize: js.UndefOr[Double] = js.undefined,
     pageToken: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
     quotaUser: String = null,
@@ -79,14 +79,14 @@ object ParamsResourceCompaniesJobsList {
     if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
     if (companyName != null) __obj.updateDynamic("companyName")(companyName.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(idsOnly)) __obj.updateDynamic("idsOnly")(idsOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeJobsCount)) __obj.updateDynamic("includeJobsCount")(includeJobsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(idsOnly)) __obj.updateDynamic("idsOnly")(idsOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeJobsCount)) __obj.updateDynamic("includeJobsCount")(includeJobsCount.get.asInstanceOf[js.Any])
     if (jobRequisitionId != null) __obj.updateDynamic("jobRequisitionId")(jobRequisitionId.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])
     if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol.asInstanceOf[js.Any])

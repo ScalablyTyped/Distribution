@@ -15,7 +15,7 @@ trait Polygon[P /* <: Properties */]
 
 object Polygon {
   @scala.inline
-  def apply[P](
+  def apply[/* <: typings.topojsonSpecification.mod.Properties */ P](
     arcs: js.Array[ArcIndexes],
     `type`: typings.topojsonSpecification.topojsonSpecificationStrings.Polygon,
     bbox: BBox = null,

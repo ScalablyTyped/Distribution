@@ -99,7 +99,7 @@ object SchemaPartialResultSet {
     values: js.Array[_] = null
   ): SchemaPartialResultSet = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(chunkedValue)) __obj.updateDynamic("chunkedValue")(chunkedValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(chunkedValue)) __obj.updateDynamic("chunkedValue")(chunkedValue.get.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (resumeToken != null) __obj.updateDynamic("resumeToken")(resumeToken.asInstanceOf[js.Any])
     if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])

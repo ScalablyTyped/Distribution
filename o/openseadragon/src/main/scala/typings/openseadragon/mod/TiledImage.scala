@@ -56,9 +56,11 @@ class TiledImage protected () extends js.Object {
   def removeAllHandlers(eventName: String): Unit = js.native
   def removeHandler(eventName: String, handler: EventHandler[TiledImageEvent]): Unit = js.native
   def reset(): Unit = js.native
+  def resetCroppingPolygons(): Unit = js.native
   def setClip(): Unit = js.native
   def setClip(newClip: Rect): Unit = js.native
   def setCompositeOperation(compositeOperation: String): Unit = js.native
+  def setCroppingPolygons(polygons: js.Array[js.Array[Point]]): Unit = js.native
   def setHeight(height: Double): Unit = js.native
   def setHeight(height: Double, immediately: Boolean): Unit = js.native
   def setOpacity(opacity: Double): Unit = js.native

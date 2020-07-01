@@ -43,7 +43,7 @@ object SchemaSubnetwork {
     if (ipCidrRange != null) __obj.updateDynamic("ipCidrRange")(ipCidrRange.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
-    if (!js.isUndefined(outsideAllocation)) __obj.updateDynamic("outsideAllocation")(outsideAllocation.asInstanceOf[js.Any])
+    if (!js.isUndefined(outsideAllocation)) __obj.updateDynamic("outsideAllocation")(outsideAllocation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSubnetwork]
   }
 }

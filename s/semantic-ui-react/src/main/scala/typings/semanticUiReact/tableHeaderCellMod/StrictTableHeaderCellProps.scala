@@ -168,6 +168,7 @@ object StrictTableHeaderCellProps {
     draggable: js.UndefOr[Booleanish] = js.undefined,
     error: js.UndefOr[Boolean] = js.undefined,
     headers: String = null,
+    height: Double | String = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     icon: SemanticShorthandItem[IconProps] = null,
     id: String = null,
@@ -366,6 +367,7 @@ object StrictTableHeaderCellProps {
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

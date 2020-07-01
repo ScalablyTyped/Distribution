@@ -45,7 +45,7 @@ trait ProxyHandler[T /* <: js.Object */] extends js.Object {
 
 object ProxyHandler {
   @scala.inline
-  def apply[T](
+  def apply[/* <: js.Object */ T](
     apply: (/* target */ T, /* thisArg */ js.Any, /* argArray */ js.UndefOr[js.Any]) => _ = null,
     construct: (/* target */ T, /* argArray */ js.Any, /* newTarget */ js.UndefOr[js.Any]) => js.Object = null,
     defineProperty: (/* target */ T, /* p */ PropertyKey, /* attributes */ PropertyDescriptor) => scala.Boolean = null,

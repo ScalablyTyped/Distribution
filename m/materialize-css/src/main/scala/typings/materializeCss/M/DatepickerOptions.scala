@@ -1,8 +1,8 @@
 package typings.materializeCss.M
 
-import typings.materializeCss.anon.PartialInternationalizati
 import typings.std.Date
 import typings.std.Element
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,7 +45,9 @@ trait DatepickerOptions extends js.Object {
   /**
     * Internationalization options
     */
-  var i18n: PartialInternationalizati
+  var i18n: Partial[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ _
+  ]
   /**
     * Changes Datepicker to RTL.
     * @default false
@@ -121,7 +123,9 @@ object DatepickerOptions {
     events: js.Array[String],
     firstDay: Double,
     format: String,
-    i18n: PartialInternationalizati,
+    i18n: Partial[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ _
+    ],
     isRTL: Boolean,
     maxDate: Date,
     minDate: Date,

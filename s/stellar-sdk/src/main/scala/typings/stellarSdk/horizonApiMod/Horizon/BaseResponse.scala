@@ -13,7 +13,7 @@ trait BaseResponse[T /* <: String */] extends js.Object {
 
 object BaseResponse {
   @scala.inline
-  def apply[T](
+  def apply[/* <: java.lang.String */ T](
     _links: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in T | 'self' ]: stellar-sdk.stellar-sdk/lib/horizon_api.Horizon.ResponseLink}
     */ typings.stellarSdk.stellarSdkStrings.BaseResponse with TopLevel[js.Any]

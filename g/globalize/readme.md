@@ -1,6 +1,7 @@
 
 # Scala.js typings for globalize
 
+Typings are for version 1.5
 
 ## Library description:
 A JavaScript library for internationalization and localization that leverages the official Unicode CLDR JSON data.

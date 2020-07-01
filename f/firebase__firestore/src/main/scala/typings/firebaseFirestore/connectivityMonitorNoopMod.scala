@@ -1,7 +1,7 @@
 package typings.firebaseFirestore
 
-import typings.firebaseFirestore.connectivityMonitorMod.ConnectivityMonitor
-import typings.firebaseFirestore.connectivityMonitorMod.ConnectivityMonitorCallback
+import typings.firebaseFirestore.remoteConnectivityMonitorMod.ConnectivityMonitor
+import typings.firebaseFirestore.remoteConnectivityMonitorMod.ConnectivityMonitorCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

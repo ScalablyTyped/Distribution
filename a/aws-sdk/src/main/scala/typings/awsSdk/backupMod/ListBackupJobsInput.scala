@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListBackupJobsInput extends js.Object {
   /**
+    * The account ID to list the jobs from. Returns only backup jobs associated with the specified account ID.
+    */
+  var ByAccountId: js.UndefOr[AccountId] = js.native
+  /**
     * Returns only backup jobs that will be stored in the specified backup vault. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
     */
   var ByBackupVaultName: js.UndefOr[BackupVaultName] = js.native
@@ -23,7 +27,7 @@ trait ListBackupJobsInput extends js.Object {
     */
   var ByResourceArn: js.UndefOr[ARN] = js.native
   /**
-    * Returns only backup jobs for the specified resources:    DynamoDB for Amazon DynamoDB    EBS for Amazon Elastic Block Store    EFS for Amazon Elastic File System    RDS for Amazon Relational Database Service    Storage Gateway for AWS Storage Gateway  
+    * Returns only backup jobs for the specified resources:    DynamoDB for Amazon DynamoDB    EBS for Amazon Elastic Block Store    EC2 for Amazon Elastic Compute Cloud    EFS for Amazon Elastic File System    RDS for Amazon Relational Database Service    Storage Gateway for AWS Storage Gateway  
     */
   var ByResourceType: js.UndefOr[ResourceType] = js.native
   /**
@@ -43,6 +47,7 @@ trait ListBackupJobsInput extends js.Object {
 object ListBackupJobsInput {
   @scala.inline
   def apply(
+    ByAccountId: AccountId = null,
     ByBackupVaultName: BackupVaultName = null,
     ByCreatedAfter: timestamp = null,
     ByCreatedBefore: timestamp = null,
@@ -53,6 +58,7 @@ object ListBackupJobsInput {
     NextToken: String = null
   ): ListBackupJobsInput = {
     val __obj = js.Dynamic.literal()
+    if (ByAccountId != null) __obj.updateDynamic("ByAccountId")(ByAccountId.asInstanceOf[js.Any])
     if (ByBackupVaultName != null) __obj.updateDynamic("ByBackupVaultName")(ByBackupVaultName.asInstanceOf[js.Any])
     if (ByCreatedAfter != null) __obj.updateDynamic("ByCreatedAfter")(ByCreatedAfter.asInstanceOf[js.Any])
     if (ByCreatedBefore != null) __obj.updateDynamic("ByCreatedBefore")(ByCreatedBefore.asInstanceOf[js.Any])

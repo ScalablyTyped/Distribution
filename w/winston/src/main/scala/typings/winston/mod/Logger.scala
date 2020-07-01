@@ -26,6 +26,7 @@ trait Logger
   var data_Original: LeveledLogMethod = js.native
   @JSName("debug")
   var debug_Original: LeveledLogMethod = js.native
+  var defaultMeta: js.UndefOr[js.Any] = js.native
   // for syslog levels only
   @JSName("emerg")
   var emerg_Original: LeveledLogMethod = js.native
@@ -67,6 +68,7 @@ trait Logger
   def alert(message: String, callback: LogCallback): Logger = js.native
   def alert(message: String, meta: js.Any*): Logger = js.native
   def alert(message: String, meta: js.Any, callback: LogCallback): Logger = js.native
+  def alert(message: js.Any): Logger = js.native
   def child(options: js.Object): Logger = js.native
   def clear(): Logger = js.native
   def close(): Logger = js.native
@@ -75,14 +77,17 @@ trait Logger
   def crit(message: String, callback: LogCallback): Logger = js.native
   def crit(message: String, meta: js.Any*): Logger = js.native
   def crit(message: String, meta: js.Any, callback: LogCallback): Logger = js.native
+  def crit(message: js.Any): Logger = js.native
   def data(infoObject: js.Object): Logger = js.native
   def data(message: String, callback: LogCallback): Logger = js.native
   def data(message: String, meta: js.Any*): Logger = js.native
   def data(message: String, meta: js.Any, callback: LogCallback): Logger = js.native
+  def data(message: js.Any): Logger = js.native
   def debug(infoObject: js.Object): Logger = js.native
   def debug(message: String, callback: LogCallback): Logger = js.native
   def debug(message: String, meta: js.Any*): Logger = js.native
   def debug(message: String, meta: js.Any, callback: LogCallback): Logger = js.native
+  def debug(message: js.Any): Logger = js.native
   // for syslog levels only
   def emerg(infoObject: js.Object): Logger = js.native
   // for syslog levels only
@@ -91,6 +96,8 @@ trait Logger
   def emerg(message: String, meta: js.Any*): Logger = js.native
   // for syslog levels only
   def emerg(message: String, meta: js.Any, callback: LogCallback): Logger = js.native
+  // for syslog levels only
+  def emerg(message: js.Any): Logger = js.native
   // for cli and npm levels
   def error(infoObject: js.Object): Logger = js.native
   // for cli and npm levels
@@ -99,30 +106,45 @@ trait Logger
   def error(message: String, meta: js.Any*): Logger = js.native
   // for cli and npm levels
   def error(message: String, meta: js.Any, callback: LogCallback): Logger = js.native
+  // for cli and npm levels
+  def error(message: js.Any): Logger = js.native
   def help(infoObject: js.Object): Logger = js.native
   def help(message: String, callback: LogCallback): Logger = js.native
   def help(message: String, meta: js.Any*): Logger = js.native
   def help(message: String, meta: js.Any, callback: LogCallback): Logger = js.native
+  def help(message: js.Any): Logger = js.native
   def http(infoObject: js.Object): Logger = js.native
   def http(message: String, callback: LogCallback): Logger = js.native
   def http(message: String, meta: js.Any*): Logger = js.native
   def http(message: String, meta: js.Any, callback: LogCallback): Logger = js.native
+  def http(message: js.Any): Logger = js.native
   def info(infoObject: js.Object): Logger = js.native
   def info(message: String, callback: LogCallback): Logger = js.native
   def info(message: String, meta: js.Any*): Logger = js.native
   def info(message: String, meta: js.Any, callback: LogCallback): Logger = js.native
+  def info(message: js.Any): Logger = js.native
   def input(infoObject: js.Object): Logger = js.native
   def input(message: String, callback: LogCallback): Logger = js.native
   def input(message: String, meta: js.Any*): Logger = js.native
   def input(message: String, meta: js.Any, callback: LogCallback): Logger = js.native
+  def input(message: js.Any): Logger = js.native
+  def isDebugEnabled(): Boolean = js.native
+  def isErrorEnabled(): Boolean = js.native
+  def isInfoEnabled(): Boolean = js.native
+  def isLevelEnabled(level: String): Boolean = js.native
+  def isSillyEnabled(): Boolean = js.native
+  def isVerboseEnabled(): Boolean = js.native
+  def isWarnEnabled(): Boolean = js.native
   def log(entry: LogEntry): Logger = js.native
   def log(level: String, message: String, callback: LogCallback): Logger = js.native
   def log(level: String, message: String, meta: js.Any*): Logger = js.native
   def log(level: String, message: String, meta: js.Any, callback: LogCallback): Logger = js.native
+  def log(level: String, message: js.Any): Logger = js.native
   def notice(infoObject: js.Object): Logger = js.native
   def notice(message: String, callback: LogCallback): Logger = js.native
   def notice(message: String, meta: js.Any*): Logger = js.native
   def notice(message: String, meta: js.Any, callback: LogCallback): Logger = js.native
+  def notice(message: js.Any): Logger = js.native
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
   /* InferMemberOverrides */
@@ -135,6 +157,7 @@ trait Logger
   def prompt(message: String, callback: LogCallback): Logger = js.native
   def prompt(message: String, meta: js.Any*): Logger = js.native
   def prompt(message: String, meta: js.Any, callback: LogCallback): Logger = js.native
+  def prompt(message: js.Any): Logger = js.native
   def query(): js.Any = js.native
   def query(options: QueryOptions): js.Any = js.native
   def query(options: QueryOptions, callback: js.Function2[/* err */ Error, /* results */ js.Any, Unit]): js.Any = js.native
@@ -143,6 +166,7 @@ trait Logger
   def silly(message: String, callback: LogCallback): Logger = js.native
   def silly(message: String, meta: js.Any*): Logger = js.native
   def silly(message: String, meta: js.Any, callback: LogCallback): Logger = js.native
+  def silly(message: js.Any): Logger = js.native
   def startTimer(): Profiler = js.native
   def stream(): ReadableStream = js.native
   def stream(options: js.Any): ReadableStream = js.native
@@ -150,13 +174,16 @@ trait Logger
   def verbose(message: String, callback: LogCallback): Logger = js.native
   def verbose(message: String, meta: js.Any*): Logger = js.native
   def verbose(message: String, meta: js.Any, callback: LogCallback): Logger = js.native
+  def verbose(message: js.Any): Logger = js.native
   def warn(infoObject: js.Object): Logger = js.native
   def warn(message: String, callback: LogCallback): Logger = js.native
   def warn(message: String, meta: js.Any*): Logger = js.native
   def warn(message: String, meta: js.Any, callback: LogCallback): Logger = js.native
+  def warn(message: js.Any): Logger = js.native
   def warning(infoObject: js.Object): Logger = js.native
   def warning(message: String, callback: LogCallback): Logger = js.native
   def warning(message: String, meta: js.Any*): Logger = js.native
   def warning(message: String, meta: js.Any, callback: LogCallback): Logger = js.native
+  def warning(message: js.Any): Logger = js.native
 }
 

@@ -90,6 +90,7 @@ object ModalDropdownProps {
     dropdownStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     dropdownTextHighlightStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
     dropdownTextStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
+    focusable: js.UndefOr[Boolean] = js.undefined,
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
     hitSlop: Insets = null,
     importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
@@ -164,6 +165,7 @@ object ModalDropdownProps {
     if (!js.isUndefined(dropdownStyle)) __obj.updateDynamic("dropdownStyle")(dropdownStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(dropdownTextHighlightStyle)) __obj.updateDynamic("dropdownTextHighlightStyle")(dropdownTextHighlightStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(dropdownTextStyle)) __obj.updateDynamic("dropdownTextStyle")(dropdownTextStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.get.asInstanceOf[js.Any])
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])

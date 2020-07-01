@@ -1,7 +1,7 @@
 package typings.blueprintjsCore.collapseMod
 
 import typings.blueprintjsCore.propsMod.IProps
-import typings.react.mod.ReactType
+import typings.react.mod.ElementType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait ICollapseProps extends IProps {
     * Useful when rendering a `Collapse` inside a `<table>`, for instance.
     * @default "div"
     */
-  var component: js.UndefOr[ReactType[_]] = js.undefined
+  var component: js.UndefOr[ElementType[_]] = js.undefined
   /**
     * Whether the component is open or closed.
     * @default false
@@ -38,7 +38,7 @@ object ICollapseProps {
   @scala.inline
   def apply(
     className: String = null,
-    component: ReactType[_] = null,
+    component: ElementType[_] = null,
     isOpen: js.UndefOr[Boolean] = js.undefined,
     keepChildrenMounted: js.UndefOr[Boolean] = js.undefined,
     transitionDuration: js.UndefOr[Double] = js.undefined

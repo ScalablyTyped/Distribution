@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CommitDiffSourceCodeType extends js.Object {
   /**
-    *  Destination Commit SHA 
+    *  The SHA of the destination commit. 
     */
   var DestinationCommit: js.UndefOr[CommitId] = js.native
   /**
-    *  Source Commit SHA. 
+    *  The SHA of the source commit. 
     */
   var SourceCommit: js.UndefOr[CommitId] = js.native
 }

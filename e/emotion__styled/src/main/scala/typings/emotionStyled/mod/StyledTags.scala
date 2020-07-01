@@ -289,7 +289,7 @@ trait StyledTags[Theme /* <: js.Object */] extends js.Object {
 
 object StyledTags {
   @scala.inline
-  def apply[Theme](
+  def apply[/* <: js.Object */ Theme](
     a: CreateStyledComponentIntrinsic[a, js.Object, Theme],
     abbr: CreateStyledComponentIntrinsic[abbr, js.Object, Theme],
     address: CreateStyledComponentIntrinsic[address, js.Object, Theme],

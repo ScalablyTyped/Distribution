@@ -74,10 +74,10 @@ object SchemaPipelineResources {
   def apply(
     acceleratorCount: String = null,
     acceleratorType: String = null,
-    bootDiskSizeGb: Int | Double = null,
+    bootDiskSizeGb: js.UndefOr[Double] = js.undefined,
     disks: js.Array[SchemaDisk] = null,
-    minimumCpuCores: Int | Double = null,
-    minimumRamGb: Int | Double = null,
+    minimumCpuCores: js.UndefOr[Double] = js.undefined,
+    minimumRamGb: js.UndefOr[Double] = js.undefined,
     noAddress: js.UndefOr[Boolean] = js.undefined,
     preemptible: js.UndefOr[Boolean] = js.undefined,
     zones: js.Array[String] = null
@@ -85,12 +85,12 @@ object SchemaPipelineResources {
     val __obj = js.Dynamic.literal()
     if (acceleratorCount != null) __obj.updateDynamic("acceleratorCount")(acceleratorCount.asInstanceOf[js.Any])
     if (acceleratorType != null) __obj.updateDynamic("acceleratorType")(acceleratorType.asInstanceOf[js.Any])
-    if (bootDiskSizeGb != null) __obj.updateDynamic("bootDiskSizeGb")(bootDiskSizeGb.asInstanceOf[js.Any])
+    if (!js.isUndefined(bootDiskSizeGb)) __obj.updateDynamic("bootDiskSizeGb")(bootDiskSizeGb.get.asInstanceOf[js.Any])
     if (disks != null) __obj.updateDynamic("disks")(disks.asInstanceOf[js.Any])
-    if (minimumCpuCores != null) __obj.updateDynamic("minimumCpuCores")(minimumCpuCores.asInstanceOf[js.Any])
-    if (minimumRamGb != null) __obj.updateDynamic("minimumRamGb")(minimumRamGb.asInstanceOf[js.Any])
-    if (!js.isUndefined(noAddress)) __obj.updateDynamic("noAddress")(noAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(preemptible)) __obj.updateDynamic("preemptible")(preemptible.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumCpuCores)) __obj.updateDynamic("minimumCpuCores")(minimumCpuCores.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumRamGb)) __obj.updateDynamic("minimumRamGb")(minimumRamGb.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noAddress)) __obj.updateDynamic("noAddress")(noAddress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preemptible)) __obj.updateDynamic("preemptible")(preemptible.get.asInstanceOf[js.Any])
     if (zones != null) __obj.updateDynamic("zones")(zones.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPipelineResources]
   }

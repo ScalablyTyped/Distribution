@@ -1,5 +1,6 @@
 package typings.rotJs.eventqueueMod
 
+import typings.rotJs.minHeapMod.MinHeap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,17 +12,9 @@ import scala.scalajs.js.annotation._
   */
 class default[T] () extends EventQueue[T] {
   /* CompleteClass */
-  override var _eventTimes: js.Array[Double] = js.native
-  /* CompleteClass */
-  override var _events: js.Array[T] = js.native
+  override var _events: MinHeap[T] = js.native
   /* CompleteClass */
   override var _time: Double = js.native
-  /**
-    * Remove an event from the queue
-    * @param {int} index
-    */
-  /* CompleteClass */
-  override def _remove(index: Double): Unit = js.native
   /**
     * @param {?} event
     * @param {number} time

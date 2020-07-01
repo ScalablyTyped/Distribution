@@ -14,13 +14,13 @@ trait ObserverDefaults[TElement /* <: HTMLElement */] extends js.Object
 
 object ObserverDefaults {
   @scala.inline
-  def DefaultsWithoutResizeHandler[TElement](ref: RefObject[TElement] = null): ObserverDefaults[TElement] = {
+  def DefaultsWithoutResizeHandler[/* <: typings.std.HTMLElement */ TElement](ref: RefObject[TElement] = null): ObserverDefaults[TElement] = {
     val __obj = js.Dynamic.literal()
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObserverDefaults[TElement]]
   }
   @scala.inline
-  def DefaultsWithResizeHandler[TElement](onResize: /* newSize */ RefSize => Unit, ref: RefObject[TElement] = null): ObserverDefaults[TElement] = {
+  def DefaultsWithResizeHandler[/* <: typings.std.HTMLElement */ TElement](onResize: /* newSize */ RefSize => Unit, ref: RefObject[TElement] = null): ObserverDefaults[TElement] = {
     val __obj = js.Dynamic.literal(onResize = js.Any.fromFunction1(onResize))
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObserverDefaults[TElement]]

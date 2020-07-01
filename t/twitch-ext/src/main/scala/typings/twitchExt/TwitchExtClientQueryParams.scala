@@ -25,7 +25,8 @@ import scala.scalajs.js.annotation._
 /**
   * The extension window receives the following query parameters, which indicate
   * information about the extension environment that isn’t subject to change over
-  * the frame’s life cycle.
+  * the frame’s life cycle. Note that all parameters are encoded as strings here,
+  * because they are always part of the URL.
   *
   * @see https://dev.twitch.tv/docs/extensions/reference/#client-query-parameters
   */
@@ -37,9 +38,15 @@ trait TwitchExtClientQueryParams extends js.Object {
   /**
     * The user’s language setting.
     *
-    * @example en
+    * @example "en"
     */
   var language: String
+  /**
+    * The user’s language locale.
+    *
+    * @example "en-US"
+    */
+  var locale: String
   /**
     * The extension’s mode.
     */
@@ -63,12 +70,13 @@ object TwitchExtClientQueryParams {
   def apply(
     anchor: component | panel | video_overlay,
     language: String,
+    locale: String,
     mode: config | dashboard | viewer,
     platform: mobile | web,
     popout: `true` | `false`,
     state: testing | hosted_test | approved | released | ready_for_review | in_review | pending_action | uploading
   ): TwitchExtClientQueryParams = {
-    val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], popout = popout.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], popout = popout.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[TwitchExtClientQueryParams]
   }
 }

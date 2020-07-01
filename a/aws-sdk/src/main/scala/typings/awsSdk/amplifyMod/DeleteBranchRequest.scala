@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DeleteBranchRequest extends js.Object {
   /**
-    *  Unique Id for an Amplify App. 
+    *  The unique ID for an Amplify app. 
     */
   var appId: AppId = js.native
   /**
-    *  Name for the branch. 
+    *  The name for the branch. 
     */
   var branchName: BranchName = js.native
 }

@@ -19,7 +19,7 @@ trait A[T /* <: Tensor[Rank] */] extends js.Object {
 
 object A {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.tensorflowTfjsCore.tensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */ T](
     a: T | TensorLike,
     b: T | TensorLike,
     activation: typings.tensorflowTfjsCore.fusedUtilMod.Activation = null,

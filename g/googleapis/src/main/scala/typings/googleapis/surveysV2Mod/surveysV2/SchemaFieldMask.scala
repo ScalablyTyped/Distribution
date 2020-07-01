@@ -12,10 +12,10 @@ trait SchemaFieldMask extends js.Object {
 
 object SchemaFieldMask {
   @scala.inline
-  def apply(fields: js.Array[SchemaFieldMask] = null, id: Int | Double = null): SchemaFieldMask = {
+  def apply(fields: js.Array[SchemaFieldMask] = null, id: js.UndefOr[Double] = js.undefined): SchemaFieldMask = {
     val __obj = js.Dynamic.literal()
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFieldMask]
   }
 }

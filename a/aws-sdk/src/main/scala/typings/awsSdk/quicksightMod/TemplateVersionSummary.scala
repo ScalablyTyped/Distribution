@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TemplateVersionSummary extends js.Object {
   /**
-    * The ARN of the template version.
+    * The Amazon Resource Name (ARN) of the template version.
     */
   var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.native
   /**

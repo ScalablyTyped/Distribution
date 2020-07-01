@@ -1,7 +1,5 @@
 package typings.pixiJs.PIXI
 
-import typings.pixiJs.PIXI.interaction.InteractionEvent
-import typings.pixiJs.PIXI.interaction.InteractionEventTypes
 import typings.pixiJs.PIXI.utils.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * The base class for all objects that are rendered on the screen.
   *
-  * This is an abstract class and should not be used on its own; rather it should be extended.
+  * This is an abstract class and should not be used on its own; rather it should b e extended.
   *
   * @class
   * @extends PIXI.utils.EventEmitter
@@ -34,9 +32,22 @@ trait DisplayObject extends EventEmitter {
     * The bounds object, this is used to calculate and store the bounds of the displayObject.
     *
     * @member {PIXI.Bounds} PIXI.DisplayObject#_bounds
-    * @protected
     */
   var _bounds: Bounds = js.native
+  /**
+    * Flags the cached bounds as dirty.
+    *
+    * @member {number} PIXI.DisplayObject#_boundsID
+    * @protected
+    */
+  var _boundsID: Double = js.native
+  /**
+    * Cache of this display-object's bounds-rectangle.
+    *
+    * @member {PIXI.Bounds} PIXI.DisplayObject#_boundsRect
+    * @protected
+    */
+  var _boundsRect: Bounds = js.native
   /**
     * If the object has been destroyed via destroy(). If true, it should not be used.
     *
@@ -44,6 +55,12 @@ trait DisplayObject extends EventEmitter {
     * @protected
     */
   var _destroyed: Boolean = js.native
+  /**
+    * Currently enabled filters
+    * @member {PIXI.Filter[]} PIXI.DisplayObject#_enabledFilters
+    * @protected
+    */
+  var _enabledFilters: js.Array[Filter] = js.native
   /**
     * Which index in the children array the display component was before the previous zIndex sort.
     * Used by containers to help sort objects with the same zIndex, by using previous array index as the decider.
@@ -53,17 +70,30 @@ trait DisplayObject extends EventEmitter {
     */
   var _lastSortedIndex: Double = js.native
   /**
+    * Local bounds object, swapped with `_bounds` when using `getLocalBounds()`.
+    *
+    * @member {PIXI.Bounds} PIXI.DisplayObject#_localBounds
+    */
+  var _localBounds: Bounds = js.native
+  /**
+    * Cache of this display-object's local-bounds rectangle.
+    *
+    * @member {PIXI.Bounds} PIXI.DisplayObject#_localBoundsRect
+    * @protected
+    */
+  var _localBoundsRect: Bounds = js.native
+  /**
     * The original, cached mask of the object.
     *
-    * @member {PIXI.Graphics|PIXI.Sprite|null} PIXI.DisplayObject#_mask
+    * @member {PIXI.Container|PIXI.MaskData|null} PIXI.DisplayObject#_mask
     * @protected
     */
-  var _mask: Graphics | Sprite | Null = js.native
+  var _mask: Container | MaskData | Null = js.native
   /**
     * @protected
-    * @member {PIXI.DisplayObject}
+    * @member {PIXI.Container}
     */
-  var _tempDisplayObjectParent: DisplayObject = js.native
+  var _tempDisplayObjectParent: Container = js.native
   /**
     * The zIndex of the displayObject.
     * A higher value will mean it will be rendered on top of other displayObjects within the same container.
@@ -251,9 +281,9 @@ trait DisplayObject extends EventEmitter {
     * sprite.mask = graphics;
     * @todo At the moment, PIXI.CanvasRenderer doesn't support PIXI.Sprite as mask.
     *
-    * @member {PIXI.Container|PIXI.MaskData}
+    * @member {PIXI.Container|PIXI.MaskData|null}
     */
-  var mask: Container | MaskData = js.native
+  var mask: Container | MaskData | Null = js.native
   /**
     * The instance name of the object.
     *
@@ -265,23 +295,22 @@ trait DisplayObject extends EventEmitter {
     * The display object container that contains this display object.
     *
     * @member {PIXI.Container} PIXI.DisplayObject#parent
-    * @readonly
     */
-  val parent: Container = js.native
+  var parent: Container = js.native
   /**
     * The pivot point of the displayObject that it rotates around.
     * Assignment by value since pixi-v4.
     *
-    * @member {PIXI.IPoint}
+    * @member {PIXI.ObservablePoint}
     */
-  var pivot: IPoint = js.native
+  var pivot: ObservablePoint = js.native
   /**
     * The coordinate of the object relative to the local coordinates of the parent.
     * Assignment by value since pixi-v4.
     *
-    * @member {PIXI.IPoint}
+    * @member {PIXI.ObservablePoint}
     */
-  var position: IPoint = js.native
+  var position: ObservablePoint = js.native
   /**
     * Can this object be rendered, if false the object will not be drawn but the updateTransform
     * methods will still be called.
@@ -302,9 +331,9 @@ trait DisplayObject extends EventEmitter {
     * The scale factor of the object.
     * Assignment by value since pixi-v4.
     *
-    * @member {PIXI.IPoint}
+    * @member {PIXI.ObservablePoint}
     */
-  var scale: IPoint = js.native
+  var scale: ObservablePoint = js.native
   /**
     * The skew factor for the object in radians.
     * Assignment by value since pixi-v4.
@@ -384,12 +413,6 @@ trait DisplayObject extends EventEmitter {
     context: js.Any
   ): this.type = js.native
   /**
-    * Recalculates the bounds of the display object.
-    *
-    * Does nothing by default and can be overwritten in a parent class.
-    */
-  def calculateBounds(): Unit = js.native
-  /**
     * Base destroy method for generic display objects. This will automatically
     * remove the display object from its parent Container as well as remove
     * all current event listeners and internal references. Do not use a DisplayObject
@@ -398,6 +421,11 @@ trait DisplayObject extends EventEmitter {
     */
   def destroy(): Unit = js.native
   /**
+    * Pair method for `enableTempParent`
+    * @param {PIXI.DisplayObject} cacheParent actual parent of element
+    */
+  def disableTempParent(cacheParent: DisplayObject): Unit = js.native
+  /**
     * DisplayObject default updateTransform, does not update children of container.
     * Will crash if there's no parent element.
     *
@@ -405,6 +433,18 @@ trait DisplayObject extends EventEmitter {
     * @function displayObjectUpdateTransform
     */
   def displayObjectUpdateTransform(): Unit = js.native
+  /**
+    * Used in Renderer, cacheAsBitmap and other places where you call an `updateTransform` on root
+    *
+    * ```
+    * const cacheParent = elem.enableTempParent();
+    * elem.updateTransform();
+    * elem.disableTempParent(cacheParent);
+    * ```
+    *
+    * @returns {PIXI.DisplayObject} current parent
+    */
+  def enableTempParent(): DisplayObject = js.native
   /**
     * Retrieves the bounds of the displayObject as a rectangle object.
     *
@@ -467,12 +507,6 @@ trait DisplayObject extends EventEmitter {
     context: js.Any
   ): this.type = js.native
   /**
-    * Renders the object using the WebGL renderer.
-    *
-    * @param {PIXI.Renderer} renderer - The renderer.
-    */
-  def render(renderer: Renderer): Unit = js.native
-  /**
     * Set the parent Container of this DisplayObject.
     *
     * @param {PIXI.Container} container - The Container to add this DisplayObject to.
@@ -507,29 +541,29 @@ trait DisplayObject extends EventEmitter {
   /**
     * Calculates the global position of the display object.
     *
-    * @param {PIXI.IPoint} position - The world origin to calculate from.
-    * @param {PIXI.IPoint} [point] - A Point object in which to store the value, optional
+    * @param {PIXI.IPointData} position - The world origin to calculate from.
+    * @param {PIXI.Point} [point] - A Point object in which to store the value, optional
     *  (otherwise will create a new Point).
     * @param {boolean} [skipUpdate=false] - Should we skip the update transform.
-    * @return {PIXI.IPoint} A point object representing the position of this object.
+    * @return {PIXI.Point} A point object representing the position of this object.
     */
-  def toGlobal(position: IPoint): IPoint = js.native
-  def toGlobal(position: IPoint, point: IPoint): IPoint = js.native
-  def toGlobal(position: IPoint, point: IPoint, skipUpdate: Boolean): IPoint = js.native
+  def toGlobal(position: IPointData): Point = js.native
+  def toGlobal(position: IPointData, point: Point): Point = js.native
+  def toGlobal(position: IPointData, point: Point, skipUpdate: Boolean): Point = js.native
   /**
     * Calculates the local position of the display object relative to another point.
     *
-    * @param {PIXI.IPoint} position - The world origin to calculate from.
+    * @param {PIXI.IPointData} position - The world origin to calculate from.
     * @param {PIXI.DisplayObject} [from] - The DisplayObject to calculate the global position from.
-    * @param {PIXI.IPoint} [point] - A Point object in which to store the value, optional
+    * @param {PIXI.Point} [point] - A Point object in which to store the value, optional
     *  (otherwise will create a new Point).
     * @param {boolean} [skipUpdate=false] - Should we skip the update transform
-    * @return {PIXI.IPoint} A point object representing the position of this object
+    * @return {PIXI.Point} A point object representing the position of this object
     */
-  def toLocal(position: IPoint): IPoint = js.native
-  def toLocal(position: IPoint, from: DisplayObject): IPoint = js.native
-  def toLocal(position: IPoint, from: DisplayObject, point: IPoint): IPoint = js.native
-  def toLocal(position: IPoint, from: DisplayObject, point: IPoint, skipUpdate: Boolean): IPoint = js.native
+  def toLocal(position: IPointData): Point = js.native
+  def toLocal(position: IPointData, from: DisplayObject): Point = js.native
+  def toLocal(position: IPointData, from: DisplayObject, point: Point): Point = js.native
+  def toLocal(position: IPointData, from: DisplayObject, point: Point, skipUpdate: Boolean): Point = js.native
   /**
     * Updates the object transform for rendering.
     *

@@ -54,13 +54,13 @@ object SchemaDeviceSettings {
     verifyAppsEnabled: js.UndefOr[Boolean] = js.undefined
   ): SchemaDeviceSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adbEnabled)) __obj.updateDynamic("adbEnabled")(adbEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(developmentSettingsEnabled)) __obj.updateDynamic("developmentSettingsEnabled")(developmentSettingsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(adbEnabled)) __obj.updateDynamic("adbEnabled")(adbEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(developmentSettingsEnabled)) __obj.updateDynamic("developmentSettingsEnabled")(developmentSettingsEnabled.get.asInstanceOf[js.Any])
     if (encryptionStatus != null) __obj.updateDynamic("encryptionStatus")(encryptionStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDeviceSecure)) __obj.updateDynamic("isDeviceSecure")(isDeviceSecure.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEncrypted)) __obj.updateDynamic("isEncrypted")(isEncrypted.asInstanceOf[js.Any])
-    if (!js.isUndefined(unknownSourcesEnabled)) __obj.updateDynamic("unknownSourcesEnabled")(unknownSourcesEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(verifyAppsEnabled)) __obj.updateDynamic("verifyAppsEnabled")(verifyAppsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDeviceSecure)) __obj.updateDynamic("isDeviceSecure")(isDeviceSecure.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEncrypted)) __obj.updateDynamic("isEncrypted")(isEncrypted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unknownSourcesEnabled)) __obj.updateDynamic("unknownSourcesEnabled")(unknownSourcesEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verifyAppsEnabled)) __obj.updateDynamic("verifyAppsEnabled")(verifyAppsEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeviceSettings]
   }
 }

@@ -72,7 +72,7 @@ object SchemaSurvey {
     state: String = null,
     surveyUrlId: String = null,
     title: String = null,
-    wantedResponseCount: Int | Double = null
+    wantedResponseCount: js.UndefOr[Double] = js.undefined
   ): SchemaSurvey = {
     val __obj = js.Dynamic.literal()
     if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
@@ -85,7 +85,7 @@ object SchemaSurvey {
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (surveyUrlId != null) __obj.updateDynamic("surveyUrlId")(surveyUrlId.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (wantedResponseCount != null) __obj.updateDynamic("wantedResponseCount")(wantedResponseCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(wantedResponseCount)) __obj.updateDynamic("wantedResponseCount")(wantedResponseCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSurvey]
   }
 }

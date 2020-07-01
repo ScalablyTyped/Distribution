@@ -44,7 +44,7 @@ object ParamsResourceTurnbasedmatchesLeaveturn {
     key: String = null,
     language: String = null,
     matchId: String = null,
-    matchVersion: Int | Double = null,
+    matchVersion: js.UndefOr[Double] = js.undefined,
     oauth_token: String = null,
     pendingParticipantId: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
@@ -58,10 +58,10 @@ object ParamsResourceTurnbasedmatchesLeaveturn {
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (matchId != null) __obj.updateDynamic("matchId")(matchId.asInstanceOf[js.Any])
-    if (matchVersion != null) __obj.updateDynamic("matchVersion")(matchVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchVersion)) __obj.updateDynamic("matchVersion")(matchVersion.get.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (pendingParticipantId != null) __obj.updateDynamic("pendingParticipantId")(pendingParticipantId.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceTurnbasedmatchesLeaveturn]

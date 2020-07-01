@@ -5,6 +5,7 @@ import typings.officeJsPreview.Excel.Interfaces.CommentCollectionData
 import typings.officeJsPreview.Excel.Interfaces.CommentCollectionLoadOptions
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.ClientResult
+import typings.officeJsPreview.OfficeExtension.EventHandlers
 import typings.officeJsPreview.OfficeExtension.LoadOption
 import typings.officeJsPreview.officeJsPreviewStrings.Mention
 import typings.officeJsPreview.officeJsPreviewStrings.Plain
@@ -25,6 +26,36 @@ trait CommentCollection extends ClientObject {
   var context_CommentCollection: RequestContext = js.native
   /** Gets the loaded child items in this collection. */
   val items: js.Array[Comment] = js.native
+  /**
+    *
+    * Occurs when the comments are added.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    *
+    * @eventproperty
+    * @beta
+    */
+  val onAdded: EventHandlers[CommentAddedEventArgs] = js.native
+  /**
+    *
+    * Occurs when comments or replies in a comment collection are changed, including when replies are deleted.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    *
+    * @eventproperty
+    * @beta
+    */
+  val onChanged: EventHandlers[CommentChangedEventArgs] = js.native
+  /**
+    *
+    * Occurs when comments are deleted in the comment collection.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    *
+    * @eventproperty
+    * @beta
+    */
+  val onDeleted: EventHandlers[CommentDeletedEventArgs] = js.native
   def add(cellAddress: String, content: String): Comment = js.native
   def add(cellAddress: String, content: String, contentType: ContentType): Comment = js.native
   def add(cellAddress: String, content: CommentRichContent): Comment = js.native

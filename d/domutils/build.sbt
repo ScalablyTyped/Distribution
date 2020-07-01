@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "domutils"
-version := "1.7-dt-20190326Z-a83fec"
+version := "1.7-dt-20190326Z-1b3da1"
 scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "domhandler" % "2.4-dt-20200515Z-c6e294",
-  "org.scalablytyped" %%% "std" % "3.9-18cbeb")
+  "org.scalablytyped" %%% "domhandler" % "2.4-dt-20200515Z-cc7213",
+  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

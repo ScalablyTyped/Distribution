@@ -38,8 +38,12 @@ trait OriginUrl extends js.Object {
     * relate different events of the same request.
     */
   var requestId: String
+  /** For http requests, the bytes transferred in the request. Only available in onCompleted. */
+  var requestSize: Double
   /** The HTTP response headers that were received along with this response. */
   var responseHeaders: js.UndefOr[HttpHeaders] = js.undefined
+  /** For http requests, the bytes received in the request. Only available in onCompleted. */
+  var responseSize: Double
   /** Standard HTTP status code returned by the server. */
   var statusCode: Double
   /**
@@ -49,6 +53,8 @@ trait OriginUrl extends js.Object {
   var statusLine: String
   /** The ID of the tab in which the request takes place. Set to -1 if the request isn't related to a tab. */
   var tabId: Double
+  /** Indicates if this request and its content window hierarchy is third party. */
+  var thirdParty: Boolean
   /** The time when this signal is triggered, in milliseconds since the epoch. */
   var timeStamp: Double
   /** How the requested resource will be used. */
@@ -66,9 +72,12 @@ object OriginUrl {
     method: String,
     parentFrameId: Double,
     requestId: String,
+    requestSize: Double,
+    responseSize: Double,
     statusCode: Double,
     statusLine: String,
     tabId: Double,
+    thirdParty: Boolean,
     timeStamp: Double,
     `type`: ResourceType,
     url: String,
@@ -80,7 +89,7 @@ object OriginUrl {
     originUrl: String = null,
     responseHeaders: HttpHeaders = null
   ): OriginUrl = {
-    val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], fromCache = fromCache.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], parentFrameId = parentFrameId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusLine = statusLine.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], urlClassification = urlClassification.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], fromCache = fromCache.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], parentFrameId = parentFrameId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], requestSize = requestSize.asInstanceOf[js.Any], responseSize = responseSize.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusLine = statusLine.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], thirdParty = thirdParty.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], urlClassification = urlClassification.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (cookieStoreId != null) __obj.updateDynamic("cookieStoreId")(cookieStoreId.asInstanceOf[js.Any])
     if (documentUrl != null) __obj.updateDynamic("documentUrl")(documentUrl.asInstanceOf[js.Any])

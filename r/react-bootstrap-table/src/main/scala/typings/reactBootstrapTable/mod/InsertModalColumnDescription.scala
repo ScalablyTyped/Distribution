@@ -80,7 +80,7 @@ trait InsertModalColumnDescription[TRow /* <: js.Object */] extends js.Object {
 
 object InsertModalColumnDescription {
   @scala.inline
-  def apply[TRow](
+  def apply[/* <: js.Object */ TRow](
     customInsertEditor: (InsertModalColumnDescription[TRow], EditableAttrs, String, Boolean, /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ js.Any) => ReactElement | Boolean,
     editable: Boolean | (Editable[TRow, /* keyof TRow */ String]) | (js.Function4[
       /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cell */ js.Any, 

@@ -17,7 +17,6 @@ sealed trait EventType extends js.Object
 @js.native
 object EventType extends js.Object {
   /**
-    *
     * AnnotationAdded represents the event an annotation has been added to the document.
     *
     */
@@ -25,7 +24,6 @@ object EventType extends js.Object {
   sealed trait annotationAdded extends EventType
   
   /**
-    *
     * AnnotationAdded represents the event an annotation has been updated in the document.
     *
     */
@@ -33,7 +31,6 @@ object EventType extends js.Object {
   sealed trait annotationChanged extends EventType
   
   /**
-    *
     * AnnotationAdded represents the event an annotation has been deleted from the document.
     *
     */
@@ -41,7 +38,6 @@ object EventType extends js.Object {
   sealed trait annotationDeleted extends EventType
   
   /**
-    *
     * ContentControlAdded represents the event a content control has been added to the document.
     *
     */
@@ -49,7 +45,6 @@ object EventType extends js.Object {
   sealed trait contentControlAdded extends EventType
   
   /**
-    *
     * ContentControlDataChanged represents the event that the data in the content control have been changed.
     *
     */
@@ -57,7 +52,6 @@ object EventType extends js.Object {
   sealed trait contentControlDataChanged extends EventType
   
   /**
-    *
     * ContentControlDeleted represent the event that the content control has been deleted.
     *
     */
@@ -65,7 +59,6 @@ object EventType extends js.Object {
   sealed trait contentControlDeleted extends EventType
   
   /**
-    *
     * ContentControlSelectionChanged represents the event that the selection in the content control has been changed.
     *
     */

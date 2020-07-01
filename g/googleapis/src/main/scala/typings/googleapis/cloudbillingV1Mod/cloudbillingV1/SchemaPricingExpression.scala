@@ -63,18 +63,18 @@ object SchemaPricingExpression {
   @scala.inline
   def apply(
     baseUnit: String = null,
-    baseUnitConversionFactor: Int | Double = null,
+    baseUnitConversionFactor: js.UndefOr[Double] = js.undefined,
     baseUnitDescription: String = null,
-    displayQuantity: Int | Double = null,
+    displayQuantity: js.UndefOr[Double] = js.undefined,
     tieredRates: js.Array[SchemaTierRate] = null,
     usageUnit: String = null,
     usageUnitDescription: String = null
   ): SchemaPricingExpression = {
     val __obj = js.Dynamic.literal()
     if (baseUnit != null) __obj.updateDynamic("baseUnit")(baseUnit.asInstanceOf[js.Any])
-    if (baseUnitConversionFactor != null) __obj.updateDynamic("baseUnitConversionFactor")(baseUnitConversionFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(baseUnitConversionFactor)) __obj.updateDynamic("baseUnitConversionFactor")(baseUnitConversionFactor.get.asInstanceOf[js.Any])
     if (baseUnitDescription != null) __obj.updateDynamic("baseUnitDescription")(baseUnitDescription.asInstanceOf[js.Any])
-    if (displayQuantity != null) __obj.updateDynamic("displayQuantity")(displayQuantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayQuantity)) __obj.updateDynamic("displayQuantity")(displayQuantity.get.asInstanceOf[js.Any])
     if (tieredRates != null) __obj.updateDynamic("tieredRates")(tieredRates.asInstanceOf[js.Any])
     if (usageUnit != null) __obj.updateDynamic("usageUnit")(usageUnit.asInstanceOf[js.Any])
     if (usageUnitDescription != null) __obj.updateDynamic("usageUnitDescription")(usageUnitDescription.asInstanceOf[js.Any])

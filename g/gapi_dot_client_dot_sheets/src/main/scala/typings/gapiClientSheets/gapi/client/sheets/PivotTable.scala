@@ -1,6 +1,6 @@
 package typings.gapiClientSheets.gapi.client.sheets
 
-import typings.std.Record
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,11 @@ trait PivotTable extends js.Object {
     * For example, if the source was `C10:E15`, a key of `0` will have the filter
     * for column `C`, whereas the key `1` is for column `D`.
     */
-  var criteria: js.UndefOr[Record[String, PivotFilterCriteria]] = js.undefined
+  var criteria: js.UndefOr[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: gapi.client.sheets.gapi.client.sheets.PivotFilterCriteria}
+    */ typings.gapiClientSheets.gapiClientSheetsStrings.PivotTable with TopLevel[js.Any]
+  ] = js.undefined
   /** Each row grouping in the pivot table. */
   var rows: js.UndefOr[js.Array[PivotGroup]] = js.undefined
   /** The range the pivot table is reading data from. */
@@ -36,7 +40,9 @@ object PivotTable {
   @scala.inline
   def apply(
     columns: js.Array[PivotGroup] = null,
-    criteria: Record[String, PivotFilterCriteria] = null,
+    criteria: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: gapi.client.sheets.gapi.client.sheets.PivotFilterCriteria}
+    */ typings.gapiClientSheets.gapiClientSheetsStrings.PivotTable with TopLevel[js.Any] = null,
     rows: js.Array[PivotGroup] = null,
     source: GridRange = null,
     valueLayout: String = null,

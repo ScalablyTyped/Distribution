@@ -1,6 +1,9 @@
 package typings.ionicAngular
 
+import typings.angularCore.mod.AfterViewInit
 import typings.angularCore.mod.ElementRef
+import typings.angularCore.mod.Injector
+import typings.angularCore.mod.OnDestroy
 import typings.angularForms.mod.ControlValueAccessor
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -11,14 +14,33 @@ import scala.scalajs.js.annotation._
 @js.native
 object valueAccessorMod extends js.Object {
   @js.native
-  class ValueAccessor protected () extends ControlValueAccessor {
-    def this(el: ElementRef[_]) = this()
+  class ValueAccessor protected ()
+    extends ControlValueAccessor
+       with AfterViewInit
+       with OnDestroy {
+    def this(injector: Injector, el: ElementRef[_]) = this()
     var el: ElementRef[_] = js.native
+    var injector: Injector = js.native
     var lastValue: js.Any = js.native
     var onChange: js.Any = js.native
     var onTouched: js.Any = js.native
+    var statusChanges: js.UndefOr[js.Any] = js.native
     def _handleBlurEvent(el: js.Any): Unit = js.native
     def handleChangeEvent(el: HTMLElement, value: js.Any): Unit = js.native
+    /**
+      * A callback method that is invoked immediately after
+      * Angular has completed initialization of a component's view.
+      * It is invoked only once when the view is instantiated.
+      *
+      */
+    /* CompleteClass */
+    override def ngAfterViewInit(): Unit = js.native
+    /**
+      * A callback method that performs custom clean-up, invoked immediately
+      * before a directive, pipe, or service instance is destroyed.
+      */
+    /* CompleteClass */
+    override def ngOnDestroy(): Unit = js.native
     /**
       * @description
       * Registers a callback function that is called when the control's value

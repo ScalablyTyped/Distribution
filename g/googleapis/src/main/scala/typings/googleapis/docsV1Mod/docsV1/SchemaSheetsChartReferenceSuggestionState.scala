@@ -28,8 +28,8 @@ object SchemaSheetsChartReferenceSuggestionState {
     spreadsheetIdSuggested: js.UndefOr[Boolean] = js.undefined
   ): SchemaSheetsChartReferenceSuggestionState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(chartIdSuggested)) __obj.updateDynamic("chartIdSuggested")(chartIdSuggested.asInstanceOf[js.Any])
-    if (!js.isUndefined(spreadsheetIdSuggested)) __obj.updateDynamic("spreadsheetIdSuggested")(spreadsheetIdSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(chartIdSuggested)) __obj.updateDynamic("chartIdSuggested")(chartIdSuggested.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spreadsheetIdSuggested)) __obj.updateDynamic("spreadsheetIdSuggested")(spreadsheetIdSuggested.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSheetsChartReferenceSuggestionState]
   }
 }

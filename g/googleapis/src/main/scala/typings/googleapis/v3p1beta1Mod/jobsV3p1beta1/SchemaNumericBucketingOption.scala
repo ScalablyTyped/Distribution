@@ -29,7 +29,7 @@ object SchemaNumericBucketingOption {
   def apply(bucketBounds: js.Array[Double] = null, requiresMinMax: js.UndefOr[Boolean] = js.undefined): SchemaNumericBucketingOption = {
     val __obj = js.Dynamic.literal()
     if (bucketBounds != null) __obj.updateDynamic("bucketBounds")(bucketBounds.asInstanceOf[js.Any])
-    if (!js.isUndefined(requiresMinMax)) __obj.updateDynamic("requiresMinMax")(requiresMinMax.asInstanceOf[js.Any])
+    if (!js.isUndefined(requiresMinMax)) __obj.updateDynamic("requiresMinMax")(requiresMinMax.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNumericBucketingOption]
   }
 }

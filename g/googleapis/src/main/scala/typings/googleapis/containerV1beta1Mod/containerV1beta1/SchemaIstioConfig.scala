@@ -24,7 +24,7 @@ object SchemaIstioConfig {
   def apply(auth: String = null, disabled: js.UndefOr[Boolean] = js.undefined): SchemaIstioConfig = {
     val __obj = js.Dynamic.literal()
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIstioConfig]
   }
 }

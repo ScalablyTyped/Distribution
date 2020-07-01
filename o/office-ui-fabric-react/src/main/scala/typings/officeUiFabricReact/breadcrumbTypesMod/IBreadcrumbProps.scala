@@ -109,6 +109,11 @@ trait IBreadcrumbProps extends HTMLAttributes[HTMLElement] {
     */
   var maxDisplayedItems: js.UndefOr[Double] = js.undefined
   /**
+    * Method that determines how to group the length of the breadcrumb.
+    * Return undefined to never increase breadcrumb length.
+    */
+  var onGrowData: js.UndefOr[js.Function1[/* data */ IBreadcrumbData, js.UndefOr[IBreadcrumbData]]] = js.undefined
+  /**
     * Method that determines how to reduce the length of the breadcrumb.
     * Return undefined to never reduce breadcrumb length.
     */
@@ -251,6 +256,7 @@ object IBreadcrumbProps {
     onEnded: SyntheticEvent[HTMLElement, Event] => Unit = null,
     onError: SyntheticEvent[HTMLElement, Event] => Unit = null,
     onFocus: FocusEvent[HTMLElement] => Unit = null,
+    onGrowData: /* data */ IBreadcrumbData => js.UndefOr[IBreadcrumbData] = null,
     onInput: FormEvent[HTMLElement] => Unit = null,
     onInvalid: FormEvent[HTMLElement] => Unit = null,
     onKeyDown: KeyboardEvent[HTMLElement] => Unit = null,
@@ -439,6 +445,7 @@ object IBreadcrumbProps {
     if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction1(onEnded))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
+    if (onGrowData != null) __obj.updateDynamic("onGrowData")(js.Any.fromFunction1(onGrowData))
     if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
     if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction1(onInvalid))
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))

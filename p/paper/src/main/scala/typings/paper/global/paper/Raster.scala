@@ -25,6 +25,14 @@ import scala.scalajs.js.annotation._
 class Raster ()
   extends typings.paper.paper.Raster {
   /** 
+    * Creates a new raster from an object description, and places it in the
+    * active layer.
+    * 
+    * @param object - an object containing properties to be set on the
+    *     raster
+    */
+  def this(`object`: js.Object) = this()
+  /** 
     * Creates a new empty raster of the given size, and places it in the
     * active layer.
     * 

@@ -1,6 +1,5 @@
 package typings.firebaseFirestore
 
-import typings.firebaseFirestore.byteStringMod.ByteString
 import typings.firebaseFirestore.collectionsMod.DocumentKeySet_
 import typings.firebaseFirestore.collectionsMod.DocumentVersionMap_
 import typings.firebaseFirestore.collectionsMod.MaybeDocumentMap_
@@ -80,7 +79,6 @@ object mutationBatchMod extends js.Object {
       */
     val docVersions: DocumentVersionMap_ = js.native
     val mutationResults: js.Array[MutationResult] = js.native
-    val streamToken: ByteString = js.native
   }
   
   val BATCHID_UNKNOWN: /* -1 */ Double = js.native
@@ -92,12 +90,7 @@ object mutationBatchMod extends js.Object {
       * must be one result for each mutation in the batch. This static factory
       * caches a document=>version mapping (docVersions).
       */
-    def from(
-      batch: MutationBatch,
-      commitVersion: SnapshotVersion,
-      results: js.Array[MutationResult],
-      streamToken: ByteString
-    ): MutationBatchResult = js.native
+    def from(batch: MutationBatch, commitVersion: SnapshotVersion, results: js.Array[MutationResult]): MutationBatchResult = js.native
   }
   
 }

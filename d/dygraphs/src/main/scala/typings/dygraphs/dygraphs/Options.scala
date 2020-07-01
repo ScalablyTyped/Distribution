@@ -598,7 +598,7 @@ object Options {
     underlayCallback: (/* context */ CanvasRenderingContext2D, /* area */ Area, /* dygraph */ Dygraph) => _ = null,
     unhighlightCallback: /* event */ MouseEvent => _ = null,
     valueFormatter: (/* v */ Double, /* opts */ js.Function1[/* name */ String, _], /* seriesName */ String, /* dygraph */ Dygraph, /* row */ Double, /* col */ Double) => _ = null,
-    valueRange: js.Array[Double] = null,
+    valueRange: js.UndefOr[Null | (js.Tuple2[Double | Null, Double | Null])] = js.undefined,
     visibility: js.Array[Boolean] = null,
     width: js.UndefOr[Double] = js.undefined,
     wilsonInterval: js.UndefOr[Boolean] = js.undefined,
@@ -711,7 +711,7 @@ object Options {
     if (underlayCallback != null) __obj.updateDynamic("underlayCallback")(js.Any.fromFunction3(underlayCallback))
     if (unhighlightCallback != null) __obj.updateDynamic("unhighlightCallback")(js.Any.fromFunction1(unhighlightCallback))
     if (valueFormatter != null) __obj.updateDynamic("valueFormatter")(js.Any.fromFunction6(valueFormatter))
-    if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueRange)) __obj.updateDynamic("valueRange")(valueRange.asInstanceOf[js.Any])
     if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     if (!js.isUndefined(wilsonInterval)) __obj.updateDynamic("wilsonInterval")(wilsonInterval.get.asInstanceOf[js.Any])

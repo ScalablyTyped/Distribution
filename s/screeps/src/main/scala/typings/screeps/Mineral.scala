@@ -33,7 +33,7 @@ trait Mineral[T /* <: MineralConstant */] extends RoomObject {
 
 object Mineral {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.screeps.MineralConstant */ T](
     density: Double,
     effects: js.Array[RoomObjectEffect],
     id: Id[Mineral[T]],

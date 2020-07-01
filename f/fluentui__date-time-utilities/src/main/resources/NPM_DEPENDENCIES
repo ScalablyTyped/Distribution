@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@fluentui/date-time-utilities" : "7.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@fluentui/date-time-utilities" : "7.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

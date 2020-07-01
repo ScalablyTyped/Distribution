@@ -39,7 +39,7 @@ trait NewTransitVirtualInterface extends js.Object {
     */
   var tags: js.UndefOr[TagList] = js.native
   /**
-    * The name of the virtual interface assigned by the customer network.
+    * The name of the virtual interface assigned by the customer network. The name has a maximum of 100 characters. The following are valid characters: a-z, 0-9 and a hyphen (-).
     */
   var virtualInterfaceName: js.UndefOr[VirtualInterfaceName] = js.native
   /**

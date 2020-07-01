@@ -43,7 +43,7 @@ trait KeyMetadata extends js.Object {
     */
   var Enabled: js.UndefOr[BooleanType] = js.native
   /**
-    * A list of encryption algorithms that the CMK supports. You cannot use the CMK with other encryption algorithms within AWS KMS. This field appears only when the KeyUsage of the CMK is ENCRYPT_DECRYPT.
+    * The encryption algorithms that the CMK supports. You cannot use the CMK with other encryption algorithms within AWS KMS. This field appears only when the KeyUsage of the CMK is ENCRYPT_DECRYPT.
     */
   var EncryptionAlgorithms: js.UndefOr[EncryptionAlgorithmSpecList] = js.native
   /**
@@ -59,7 +59,7 @@ trait KeyMetadata extends js.Object {
     */
   var KeyManager: js.UndefOr[KeyManagerType] = js.native
   /**
-    * The state of the CMK. For more information about how key state affects the use of a CMK, see How Key State Affects the Use of a Customer Master Key in the AWS Key Management Service Developer Guide.
+    * The current status of the CMK. For more information about how key state affects the use of a CMK, see Key state: Effect on your CMK in the AWS Key Management Service Developer Guide.
     */
   var KeyState: js.UndefOr[typings.awsSdk.kmsMod.KeyState] = js.native
   /**
@@ -71,7 +71,7 @@ trait KeyMetadata extends js.Object {
     */
   var Origin: js.UndefOr[OriginType] = js.native
   /**
-    * A list of signing algorithms that the CMK supports. You cannot use the CMK with other signing algorithms within AWS KMS. This field appears only when the KeyUsage of the CMK is SIGN_VERIFY.
+    * The signing algorithms that the CMK supports. You cannot use the CMK with other signing algorithms within AWS KMS. This field appears only when the KeyUsage of the CMK is SIGN_VERIFY.
     */
   var SigningAlgorithms: js.UndefOr[SigningAlgorithmSpecList] = js.native
   /**

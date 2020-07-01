@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ethersproject/logger" : "5.0.0-beta.137"
+      "@ethersproject/logger" : "5.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@ethersproject/logger" : "5.0.0-beta.137"
+      "@ethersproject/logger" : "5.0.2"
     }
   ],
   "compile-devDependencies" : [

@@ -1,9 +1,9 @@
 package typings.googleapis.doubleclicksearchV2Mod.doubleclicksearchV2
 
-import typings.googleapis.AnonAdGroupId
-import typings.googleapis.AnonChangedAttributesSinceTimestamp
-import typings.googleapis.AnonColumn
-import typings.googleapis.AnonSortOrder
+import typings.googleapis.anon.AdGroupId
+import typings.googleapis.anon.ChangedAttributesSinceTimestamp
+import typings.googleapis.anon.Column
+import typings.googleapis.anon.SortOrder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,7 +31,7 @@ trait SchemaReportRequest extends js.Object {
     * A list of filters to be applied to the report. The maximum number of
     * filters per request is 300.
     */
-  var filters: js.UndefOr[js.Array[AnonColumn]] = js.native
+  var filters: js.UndefOr[js.Array[Column]] = js.native
   /**
     * Determines if removed entities should be included in the report. Defaults
     * to false. Deprecated, please use includeRemovedEntities instead.
@@ -53,13 +53,13 @@ trait SchemaReportRequest extends js.Object {
     * sorting to be performed on the report rows. The maximum number of
     * orderings per request is 300.
     */
-  var orderBy: js.UndefOr[js.Array[AnonSortOrder]] = js.native
+  var orderBy: js.UndefOr[js.Array[SortOrder]] = js.native
   /**
     * The reportScope is a set of IDs that are used to determine which subset
     * of entities will be returned in the report. The full lineage of IDs from
     * the lowest scoped level desired up through agency is required.
     */
-  var reportScope: js.UndefOr[AnonAdGroupId] = js.native
+  var reportScope: js.UndefOr[AdGroupId] = js.native
   /**
     * Determines the type of rows that are returned in the report. For example,
     * if you specify reportType: keyword, each row in the report will contain
@@ -90,7 +90,7 @@ trait SchemaReportRequest extends js.Object {
     * If metrics are requested in a report, this argument will be used to
     * restrict the metrics to a specific time range.
     */
-  var timeRange: js.UndefOr[AnonChangedAttributesSinceTimestamp] = js.native
+  var timeRange: js.UndefOr[ChangedAttributesSinceTimestamp] = js.native
   /**
     * If true, the report would only be created if all the requested stat data
     * are sourced from a single timezone. Defaults to false.
@@ -103,34 +103,34 @@ object SchemaReportRequest {
   def apply(
     columns: js.Array[SchemaReportApiColumnSpec] = null,
     downloadFormat: String = null,
-    filters: js.Array[AnonColumn] = null,
+    filters: js.Array[Column] = null,
     includeDeletedEntities: js.UndefOr[Boolean] = js.undefined,
     includeRemovedEntities: js.UndefOr[Boolean] = js.undefined,
-    maxRowsPerFile: Int | Double = null,
-    orderBy: js.Array[AnonSortOrder] = null,
-    reportScope: AnonAdGroupId = null,
+    maxRowsPerFile: js.UndefOr[Double] = js.undefined,
+    orderBy: js.Array[SortOrder] = null,
+    reportScope: AdGroupId = null,
     reportType: String = null,
-    rowCount: Int | Double = null,
-    startRow: Int | Double = null,
+    rowCount: js.UndefOr[Double] = js.undefined,
+    startRow: js.UndefOr[Double] = js.undefined,
     statisticsCurrency: String = null,
-    timeRange: AnonChangedAttributesSinceTimestamp = null,
+    timeRange: ChangedAttributesSinceTimestamp = null,
     verifySingleTimeZone: js.UndefOr[Boolean] = js.undefined
   ): SchemaReportRequest = {
     val __obj = js.Dynamic.literal()
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (downloadFormat != null) __obj.updateDynamic("downloadFormat")(downloadFormat.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeDeletedEntities)) __obj.updateDynamic("includeDeletedEntities")(includeDeletedEntities.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeRemovedEntities)) __obj.updateDynamic("includeRemovedEntities")(includeRemovedEntities.asInstanceOf[js.Any])
-    if (maxRowsPerFile != null) __obj.updateDynamic("maxRowsPerFile")(maxRowsPerFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeDeletedEntities)) __obj.updateDynamic("includeDeletedEntities")(includeDeletedEntities.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeRemovedEntities)) __obj.updateDynamic("includeRemovedEntities")(includeRemovedEntities.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRowsPerFile)) __obj.updateDynamic("maxRowsPerFile")(maxRowsPerFile.get.asInstanceOf[js.Any])
     if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
     if (reportScope != null) __obj.updateDynamic("reportScope")(reportScope.asInstanceOf[js.Any])
     if (reportType != null) __obj.updateDynamic("reportType")(reportType.asInstanceOf[js.Any])
-    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
-    if (startRow != null) __obj.updateDynamic("startRow")(startRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startRow)) __obj.updateDynamic("startRow")(startRow.get.asInstanceOf[js.Any])
     if (statisticsCurrency != null) __obj.updateDynamic("statisticsCurrency")(statisticsCurrency.asInstanceOf[js.Any])
     if (timeRange != null) __obj.updateDynamic("timeRange")(timeRange.asInstanceOf[js.Any])
-    if (!js.isUndefined(verifySingleTimeZone)) __obj.updateDynamic("verifySingleTimeZone")(verifySingleTimeZone.asInstanceOf[js.Any])
+    if (!js.isUndefined(verifySingleTimeZone)) __obj.updateDynamic("verifySingleTimeZone")(verifySingleTimeZone.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReportRequest]
   }
 }

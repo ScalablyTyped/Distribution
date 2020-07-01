@@ -20,8 +20,6 @@ import scala.scalajs.js.annotation._
 trait Spine extends js.Object {
   var _autoUpdate: js.Any = js.native
   var _visible: js.Any = js.native
-  var autoUpdate: Boolean = js.native
-  val delayLimit: Double = js.native
   var lastTime: Double = js.native
   var localDelayLimit: Double = js.native
   var setMeshRegion: js.Any = js.native
@@ -36,13 +34,14 @@ trait Spine extends js.Object {
   var tempClipContainers: js.Array[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Container */ _
   ] = js.native
-  var tint: Double = js.native
   var tintRgb: ArrayLike[Double] = js.native
-  var visible: Boolean = js.native
+  def autoUpdate: Boolean = js.native
+  def autoUpdate(value: Boolean): js.Any = js.native
   def autoUpdateTransform(): Unit = js.native
   def createGraphics(slot: Slot, clip: ClippingAttachment): js.Any = js.native
   def createMesh(slot: Slot, attachment: MeshAttachment): SpineMesh = js.native
   def createSprite(slot: Slot, attachment: RegionAttachment, defName: String): SpineSprite = js.native
+  def delayLimit: Double = js.native
   def destroy(): Unit = js.native
   def destroy(options: js.Any): Unit = js.native
   def hackAttachmentGroups(nameSuffix: String, group: js.Any, outGroup: js.Any): js.Array[js.Array[_]] = js.native
@@ -96,8 +95,12 @@ trait Spine extends js.Object {
   def newSprite(
     tex: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any
   ): SpineSprite = js.native
+  def tint: Double = js.native
+  def tint(value: Double): js.Any = js.native
   def transformHack(): Double = js.native
   def update(dt: Double): Unit = js.native
   def updateGraphics(slot: Slot, clip: ClippingAttachment): Unit = js.native
+  def visible: Boolean = js.native
+  def visible(value: Boolean): js.Any = js.native
 }
 

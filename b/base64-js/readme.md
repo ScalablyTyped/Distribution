@@ -1,7 +1,7 @@
 
 # Scala.js typings for base64-js
 
-Typings are for version 1.2
+Typings are for version 1.3
 
 ## Library description:
 Base64 encoding/decoding in pure JS

@@ -22,7 +22,7 @@ trait Log extends js.Object {
   @JSName("get")
   def get_el(attr: $el): JQuery[HTMLElement] = js.native
   @JSName("get")
-  def get_message(attr: message): js.Array[_] = js.native
+  def get_message(attr: message): js.Any = js.native
   @JSName("get")
   def get_name(attr: name): String = js.native
   def set(options: PartialLogConfig): Log = js.native
@@ -31,7 +31,7 @@ trait Log extends js.Object {
   @JSName("set")
   def set_el(key: $el, value: JQuery[HTMLElement]): Log = js.native
   @JSName("set")
-  def set_message(key: message, value: js.Array[_]): Log = js.native
+  def set_message(key: message, value: js.Any): Log = js.native
   @JSName("set")
   def set_name(key: name, value: String): Log = js.native
   def snapshot(): Log = js.native

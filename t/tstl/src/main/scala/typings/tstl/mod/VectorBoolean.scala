@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   * Default Constructor.
   */
 class VectorBoolean ()
-  extends typings.tstl.tstlMod.VectorBoolean {
+  extends typings.tstl.tstlModuleMod.VectorBoolean {
   /**
     * Initializer Constructor.
     *

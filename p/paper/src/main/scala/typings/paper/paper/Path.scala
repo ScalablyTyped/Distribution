@@ -88,7 +88,7 @@ trait Path extends PathItem {
     *     path at which to divide the existing curve by inserting a new segment
     * 
     * @return the newly inserted segment if the location is valid,
-    *     {code null} otherwise
+    *     `null` otherwise
     */
   def divideAt(location: Double): Segment = js.native
   def divideAt(location: CurveLocation): Segment = js.native

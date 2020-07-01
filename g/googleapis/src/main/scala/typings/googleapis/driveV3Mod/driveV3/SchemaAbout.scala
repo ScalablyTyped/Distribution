@@ -1,8 +1,8 @@
 package typings.googleapis.driveV3Mod.driveV3
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.googleapis.AnonBackgroundImageLink
-import typings.googleapis.AnonLimit
+import typings.googleapis.anon.BackgroundImageLink
+import typings.googleapis.anon.Limit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,11 +49,11 @@ trait SchemaAbout extends js.Object {
     * The user&#39;s storage quota limits and usage. All fields are measured in
     * bytes.
     */
-  var storageQuota: js.UndefOr[AnonLimit] = js.native
+  var storageQuota: js.UndefOr[Limit] = js.native
   /**
     * A list of themes that are supported for Team Drives.
     */
-  var teamDriveThemes: js.UndefOr[js.Array[AnonBackgroundImageLink]] = js.native
+  var teamDriveThemes: js.UndefOr[js.Array[BackgroundImageLink]] = js.native
   /**
     * The authenticated user.
     */
@@ -71,13 +71,13 @@ object SchemaAbout {
     kind: String = null,
     maxImportSizes: StringDictionary[String] = null,
     maxUploadSize: String = null,
-    storageQuota: AnonLimit = null,
-    teamDriveThemes: js.Array[AnonBackgroundImageLink] = null,
+    storageQuota: Limit = null,
+    teamDriveThemes: js.Array[BackgroundImageLink] = null,
     user: SchemaUser = null
   ): SchemaAbout = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(appInstalled)) __obj.updateDynamic("appInstalled")(appInstalled.asInstanceOf[js.Any])
-    if (!js.isUndefined(canCreateTeamDrives)) __obj.updateDynamic("canCreateTeamDrives")(canCreateTeamDrives.asInstanceOf[js.Any])
+    if (!js.isUndefined(appInstalled)) __obj.updateDynamic("appInstalled")(appInstalled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(canCreateTeamDrives)) __obj.updateDynamic("canCreateTeamDrives")(canCreateTeamDrives.get.asInstanceOf[js.Any])
     if (exportFormats != null) __obj.updateDynamic("exportFormats")(exportFormats.asInstanceOf[js.Any])
     if (folderColorPalette != null) __obj.updateDynamic("folderColorPalette")(folderColorPalette.asInstanceOf[js.Any])
     if (importFormats != null) __obj.updateDynamic("importFormats")(importFormats.asInstanceOf[js.Any])

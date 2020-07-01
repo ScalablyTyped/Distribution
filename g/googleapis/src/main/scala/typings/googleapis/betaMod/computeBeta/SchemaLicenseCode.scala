@@ -71,7 +71,7 @@ object SchemaLicenseCode {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (!js.isUndefined(transferable)) __obj.updateDynamic("transferable")(transferable.asInstanceOf[js.Any])
+    if (!js.isUndefined(transferable)) __obj.updateDynamic("transferable")(transferable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLicenseCode]
   }
 }

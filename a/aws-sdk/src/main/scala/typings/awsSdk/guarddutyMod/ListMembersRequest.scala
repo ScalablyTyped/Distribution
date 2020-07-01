@@ -19,7 +19,7 @@ trait ListMembersRequest extends js.Object {
     */
   var NextToken: js.UndefOr[String] = js.native
   /**
-    * Specifies what member accounts the response includes based on their relationship status with the master account. The default value is "true". If set to "false" the response includes all existing member accounts (including members who haven't been invited yet or have been disassociated).
+    * Specifies whether to only return associated members or to return all members (including members who haven't been invited yet or have been disassociated).
     */
   var OnlyAssociated: js.UndefOr[String] = js.native
 }

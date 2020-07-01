@@ -70,7 +70,7 @@ object SchemaAddSubnetworkRequest {
     consumer: String = null,
     consumerNetwork: String = null,
     description: String = null,
-    ipPrefixLength: Int | Double = null,
+    ipPrefixLength: js.UndefOr[Double] = js.undefined,
     region: String = null,
     requestedAddress: String = null,
     subnetwork: String = null,
@@ -80,7 +80,7 @@ object SchemaAddSubnetworkRequest {
     if (consumer != null) __obj.updateDynamic("consumer")(consumer.asInstanceOf[js.Any])
     if (consumerNetwork != null) __obj.updateDynamic("consumerNetwork")(consumerNetwork.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (ipPrefixLength != null) __obj.updateDynamic("ipPrefixLength")(ipPrefixLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(ipPrefixLength)) __obj.updateDynamic("ipPrefixLength")(ipPrefixLength.get.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (requestedAddress != null) __obj.updateDynamic("requestedAddress")(requestedAddress.asInstanceOf[js.Any])
     if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork.asInstanceOf[js.Any])

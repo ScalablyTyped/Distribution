@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl", "UnderflowError")
 @js.native
 class UnderflowError protected ()
-  extends typings.tstl.exceptionMod.UnderflowError {
+  extends typings.tstl.tstlModuleMod.UnderflowError {
   /**
     * Initializer Constructor.
     *

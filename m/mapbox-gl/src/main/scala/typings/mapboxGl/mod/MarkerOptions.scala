@@ -35,6 +35,10 @@ trait MarkerOptions extends js.Object {
     * The default value is `auto`
     */
   var rotationAlignment: js.UndefOr[Alignment] = js.undefined
+  /** The scale to use for the default marker if options.element is not provided.
+    * The default scale (1) corresponds to a height of `41px` and a width of `27px`.
+    */
+  var scale: js.UndefOr[Double] = js.undefined
 }
 
 object MarkerOptions {
@@ -47,7 +51,8 @@ object MarkerOptions {
     offset: PointLike = null,
     pitchAlignment: Alignment = null,
     rotation: js.UndefOr[Double] = js.undefined,
-    rotationAlignment: Alignment = null
+    rotationAlignment: Alignment = null,
+    scale: js.UndefOr[Double] = js.undefined
   ): MarkerOptions = {
     val __obj = js.Dynamic.literal()
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
@@ -58,6 +63,7 @@ object MarkerOptions {
     if (pitchAlignment != null) __obj.updateDynamic("pitchAlignment")(pitchAlignment.asInstanceOf[js.Any])
     if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
     if (rotationAlignment != null) __obj.updateDynamic("rotationAlignment")(rotationAlignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerOptions]
   }
 }

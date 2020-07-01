@@ -1,11 +1,12 @@
 package typings.expressValidator.optionsMod
 
+import typings.expressValidator.expressValidatorStrings.ar_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.expressValidator.expressValidatorStrings.ar
+  - typings.expressValidator.expressValidatorStrings.ar_
   - typings.expressValidator.expressValidatorStrings.`ar-AE`
   - typings.expressValidator.expressValidatorStrings.`ar-BH`
   - typings.expressValidator.expressValidatorStrings.`ar-DZ`
@@ -62,7 +63,7 @@ trait AlphaLocale extends js.Object
 
 object AlphaLocale {
   @scala.inline
-  def ar: typings.expressValidator.expressValidatorStrings.ar = "ar".asInstanceOf[typings.expressValidator.expressValidatorStrings.ar]
+  def ar: ar_ = "ar".asInstanceOf[ar_]
   @scala.inline
   def `ar-AE`: typings.expressValidator.expressValidatorStrings.`ar-AE` = "ar-AE".asInstanceOf[typings.expressValidator.expressValidatorStrings.`ar-AE`]
   @scala.inline

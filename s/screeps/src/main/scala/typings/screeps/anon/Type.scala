@@ -11,7 +11,7 @@ trait Type[K /* <: LookConstant */] extends js.Object {
 
 object Type {
   @scala.inline
-  def apply[K](`type`: K): Type[K] = {
+  def apply[/* <: typings.screeps.LookConstant */ K](`type`: K): Type[K] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type[K]]

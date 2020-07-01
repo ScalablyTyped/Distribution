@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceStateChanged extends Event {
-  /* Properties */
+  /**
+    * Device state object.
+    */
   var device_state: DeviceState
 }
 

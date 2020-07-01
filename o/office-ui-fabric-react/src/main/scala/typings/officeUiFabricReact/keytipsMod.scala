@@ -55,17 +55,5 @@ object keytipsMod extends js.Object {
     def getInstance(): typings.officeUiFabricReact.keytipManagerMod.KeytipManager = js.native
   }
   
-  @js.native
-  object KeytipTransitionModifier extends js.Object {
-    /* 2 */ val alt: typings.officeUiFabricReact.ikeytiptransitionkeyMod.KeytipTransitionModifier.alt with Double = js.native
-    /* 1 */ val ctrl: typings.officeUiFabricReact.ikeytiptransitionkeyMod.KeytipTransitionModifier.ctrl with Double = js.native
-    /* 3 */ val meta: typings.officeUiFabricReact.ikeytiptransitionkeyMod.KeytipTransitionModifier.meta with Double = js.native
-    /* 0 */ val shift: typings.officeUiFabricReact.ikeytiptransitionkeyMod.KeytipTransitionModifier.shift with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[
-        typings.officeUiFabricReact.ikeytiptransitionkeyMod.KeytipTransitionModifier with Double
-      ] = js.native
-  }
-  
 }
 

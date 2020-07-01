@@ -147,6 +147,9 @@ object emberDataStrings {
   sealed trait serialize extends js.Object
   
   @js.native
+  sealed trait store extends js.Object
+  
+  @js.native
   sealed trait string extends js.Object
   
   @js.native
@@ -255,6 +258,8 @@ object emberDataStrings {
   def save: save = "save".asInstanceOf[save]
   @scala.inline
   def serialize: serialize = "serialize".asInstanceOf[serialize]
+  @scala.inline
+  def store: store = "store".asInstanceOf[store]
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   @scala.inline

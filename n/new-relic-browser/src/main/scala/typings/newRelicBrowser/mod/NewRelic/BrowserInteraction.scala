@@ -12,11 +12,13 @@ trait BrowserInteraction extends js.Object {
     * @param name This will be used as the name of the tracer. If you do not include a name,
     *   New Relic Browser does not add a node to the interaction tree. The callback time will be
     *   attributed to the parent node.
+    * @param callback A callback that contains the synchronous work to run at the end of the async work.
+    *   To execute this callback, call the wrapper function returned using createTracer()
     * @returns This method ends the async time. It calls (and times) the callback that was passed into createTracer().
     * @see https://docs.newrelic.com/docs/browser/new-relic-browser/browser-agent-spa-api/spa-create-tracer
     */
   def createTracer(name: String): js.Function0[Unit] = js.native
-  def createTracer(name: String, syncCallback: js.Function0[Unit]): js.Function0[Unit] = js.native
+  def createTracer(name: String, callback: js.Function0[Unit]): js.Function0[Unit] = js.native
   /**
     * Ends the New Relic SPA interaction at the current time.
     *

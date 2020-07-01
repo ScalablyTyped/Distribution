@@ -1,6 +1,7 @@
 package typings.mongoose.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.mongoose.mongooseStrings.`throw`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -66,7 +67,7 @@ object QueryFindOneAndUpdateOptions {
     session: ClientSession = null,
     setDefaultsOnInsert: js.UndefOr[Boolean] = js.undefined,
     sort: js.Any = null,
-    strict: Boolean | String = null,
+    strict: Boolean | `throw` = null,
     timestamps: js.UndefOr[Boolean] = js.undefined,
     upsert: js.UndefOr[Boolean] = js.undefined
   ): QueryFindOneAndUpdateOptions = {

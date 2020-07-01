@@ -134,11 +134,11 @@ object SchemaNodeConfig {
   @scala.inline
   def apply(
     accelerators: js.Array[SchemaAcceleratorConfig] = null,
-    diskSizeGb: Int | Double = null,
+    diskSizeGb: js.UndefOr[Double] = js.undefined,
     diskType: String = null,
     imageType: String = null,
     labels: StringDictionary[String] = null,
-    localSsdCount: Int | Double = null,
+    localSsdCount: js.UndefOr[Double] = js.undefined,
     machineType: String = null,
     metadata: StringDictionary[String] = null,
     minCpuPlatform: String = null,
@@ -151,16 +151,16 @@ object SchemaNodeConfig {
   ): SchemaNodeConfig = {
     val __obj = js.Dynamic.literal()
     if (accelerators != null) __obj.updateDynamic("accelerators")(accelerators.asInstanceOf[js.Any])
-    if (diskSizeGb != null) __obj.updateDynamic("diskSizeGb")(diskSizeGb.asInstanceOf[js.Any])
+    if (!js.isUndefined(diskSizeGb)) __obj.updateDynamic("diskSizeGb")(diskSizeGb.get.asInstanceOf[js.Any])
     if (diskType != null) __obj.updateDynamic("diskType")(diskType.asInstanceOf[js.Any])
     if (imageType != null) __obj.updateDynamic("imageType")(imageType.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (localSsdCount != null) __obj.updateDynamic("localSsdCount")(localSsdCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(localSsdCount)) __obj.updateDynamic("localSsdCount")(localSsdCount.get.asInstanceOf[js.Any])
     if (machineType != null) __obj.updateDynamic("machineType")(machineType.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (minCpuPlatform != null) __obj.updateDynamic("minCpuPlatform")(minCpuPlatform.asInstanceOf[js.Any])
     if (oauthScopes != null) __obj.updateDynamic("oauthScopes")(oauthScopes.asInstanceOf[js.Any])
-    if (!js.isUndefined(preemptible)) __obj.updateDynamic("preemptible")(preemptible.asInstanceOf[js.Any])
+    if (!js.isUndefined(preemptible)) __obj.updateDynamic("preemptible")(preemptible.get.asInstanceOf[js.Any])
     if (serviceAccount != null) __obj.updateDynamic("serviceAccount")(serviceAccount.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (taints != null) __obj.updateDynamic("taints")(taints.asInstanceOf[js.Any])

@@ -1,5 +1,6 @@
 package typings.ionicCore
 
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.mod.ComponentProps
 import typings.ionicCore.mod.FrameworkDelegate
 import typings.std.HTMLElement
@@ -14,6 +15,7 @@ object viewControllerMod extends js.Object {
   class ViewController protected () extends js.Object {
     def this(component: js.Any) = this()
     def this(component: js.Any, params: ComponentProps[Null]) = this()
+    var animationBuilder: js.UndefOr[AnimationBuilder] = js.native
     var component: js.Any = js.native
     var delegate: js.UndefOr[FrameworkDelegate] = js.native
     var element: js.UndefOr[HTMLElement] = js.native

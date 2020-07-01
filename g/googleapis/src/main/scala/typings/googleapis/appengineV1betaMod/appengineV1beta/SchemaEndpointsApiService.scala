@@ -55,7 +55,7 @@ object SchemaEndpointsApiService {
   ): SchemaEndpointsApiService = {
     val __obj = js.Dynamic.literal()
     if (configId != null) __obj.updateDynamic("configId")(configId.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableTraceSampling)) __obj.updateDynamic("disableTraceSampling")(disableTraceSampling.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableTraceSampling)) __obj.updateDynamic("disableTraceSampling")(disableTraceSampling.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (rolloutStrategy != null) __obj.updateDynamic("rolloutStrategy")(rolloutStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEndpointsApiService]

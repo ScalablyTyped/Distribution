@@ -19,6 +19,7 @@ trait TransferOperationProps extends js.Object {
   var leftArrowText: js.UndefOr[String] = js.undefined
   var moveToLeft: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
   var moveToRight: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
+  var oneWay: js.UndefOr[Boolean] = js.undefined
   var rightActive: js.UndefOr[Boolean] = js.undefined
   var rightArrowText: js.UndefOr[String] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
@@ -34,6 +35,7 @@ object TransferOperationProps {
     leftArrowText: String = null,
     moveToLeft: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit = null,
     moveToRight: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit = null,
+    oneWay: js.UndefOr[Boolean] = js.undefined,
     rightActive: js.UndefOr[Boolean] = js.undefined,
     rightArrowText: String = null,
     style: CSSProperties = null
@@ -46,6 +48,7 @@ object TransferOperationProps {
     if (leftArrowText != null) __obj.updateDynamic("leftArrowText")(leftArrowText.asInstanceOf[js.Any])
     if (moveToLeft != null) __obj.updateDynamic("moveToLeft")(js.Any.fromFunction1(moveToLeft))
     if (moveToRight != null) __obj.updateDynamic("moveToRight")(js.Any.fromFunction1(moveToRight))
+    if (!js.isUndefined(oneWay)) __obj.updateDynamic("oneWay")(oneWay.get.asInstanceOf[js.Any])
     if (!js.isUndefined(rightActive)) __obj.updateDynamic("rightActive")(rightActive.get.asInstanceOf[js.Any])
     if (rightArrowText != null) __obj.updateDynamic("rightArrowText")(rightArrowText.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

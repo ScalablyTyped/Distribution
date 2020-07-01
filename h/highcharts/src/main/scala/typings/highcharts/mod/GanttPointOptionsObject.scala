@@ -54,6 +54,12 @@ trait GanttPointOptionsObject extends js.Object {
     */
   var end: js.UndefOr[Double] = js.undefined
   /**
+    * (Highcharts, Highstock, Gantt) An id for the point. This can be used
+    * after render time to get a pointer to the point object through
+    * `chart.get()`.
+    */
+  var id: js.UndefOr[String] = js.undefined
+  /**
     * (Gantt) The rank for this point's data label in case of collision. If two
     * data labels are about to overlap, only the one with the highest
     * `labelrank` will be drawn.
@@ -101,6 +107,7 @@ object GanttPointOptionsObject {
     dragDrop: SeriesLineDataDragDropOptions = null,
     drilldown: String = null,
     end: js.UndefOr[Double] = js.undefined,
+    id: String = null,
     labelrank: js.UndefOr[Double] = js.undefined,
     marker: PointMarkerOptionsObject = null,
     milestone: js.UndefOr[Boolean] = js.undefined,
@@ -119,6 +126,7 @@ object GanttPointOptionsObject {
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop.asInstanceOf[js.Any])
     if (drilldown != null) __obj.updateDynamic("drilldown")(drilldown.asInstanceOf[js.Any])
     if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (!js.isUndefined(labelrank)) __obj.updateDynamic("labelrank")(labelrank.get.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
     if (!js.isUndefined(milestone)) __obj.updateDynamic("milestone")(milestone.get.asInstanceOf[js.Any])

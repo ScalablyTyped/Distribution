@@ -3,6 +3,21 @@
 
 Typings are for version 2.0
 
+## Library description:
+Utility for easy setup and access of SAP HANA XS Advanced environment variables
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | @sap/xsenv |
+| Keywords           | - |
+| # releases         | 10 |
+| # dependents       | 30 |
+| # downloads        | 15233 |
+| # stars            | 0 |
+
+## Links
+- [Npm](https://www.npmjs.com/package/%40sap%2Fxsenv)
+    
 
 
 ## Note

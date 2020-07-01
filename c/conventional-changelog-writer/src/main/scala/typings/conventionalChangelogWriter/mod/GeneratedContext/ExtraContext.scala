@@ -22,7 +22,7 @@ trait ExtraContext[T /* <: Commit[String | Double | js.Symbol] */] extends js.Ob
 
 object ExtraContext {
   @scala.inline
-  def apply[T](commitGroups: js.Array[CommitGroup[T]], noteGroups: js.Array[NoteGroup]): ExtraContext[T] = {
+  def apply[/* <: typings.conventionalCommitsParser.mod.Commit[java.lang.String | scala.Double | js.Symbol] */ T](commitGroups: js.Array[CommitGroup[T]], noteGroups: js.Array[NoteGroup]): ExtraContext[T] = {
     val __obj = js.Dynamic.literal(commitGroups = commitGroups.asInstanceOf[js.Any], noteGroups = noteGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtraContext[T]]
   }

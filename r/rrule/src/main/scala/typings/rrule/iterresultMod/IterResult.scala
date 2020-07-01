@@ -40,7 +40,7 @@ trait IterResult[M /* <: QueryMethodTypes */] extends js.Object {
 
 object IterResult {
   @scala.inline
-  def apply[M](
+  def apply[/* <: typings.rrule.typesMod.QueryMethodTypes */ M](
     _result: js.Array[Date],
     accept: Date => Boolean,
     add: Date => Boolean,

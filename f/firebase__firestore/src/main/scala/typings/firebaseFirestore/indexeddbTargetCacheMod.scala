@@ -8,7 +8,6 @@ import typings.firebaseFirestore.lruGarbageCollectorMod.ActiveTargets
 import typings.firebaseFirestore.persistenceMod.PersistenceTransaction
 import typings.firebaseFirestore.persistencePromiseMod.PersistencePromise
 import typings.firebaseFirestore.simpleDbMod.SimpleDbStore
-import typings.firebaseFirestore.simpleDbMod.SimpleDbTransaction
 import typings.firebaseFirestore.targetCacheMod.TargetCache
 import typings.firebaseFirestore.targetDataMod.TargetData
 import typings.firebaseFirestore.typesMod.ListenSequenceNumber
@@ -51,6 +50,5 @@ object indexeddbTargetCacheMod extends js.Object {
   }
   
   def documentTargetStore(txn: PersistenceTransaction): SimpleDbStore[DbTargetDocumentKey, DbTargetDocument] = js.native
-  def getHighestListenSequenceNumber(txn: SimpleDbTransaction): PersistencePromise[ListenSequenceNumber] = js.native
 }
 

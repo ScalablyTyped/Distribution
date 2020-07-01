@@ -34,13 +34,13 @@ object SchemaListFindingsResponse {
     findings: js.Array[SchemaFinding] = null,
     nextPageToken: String = null,
     readTime: String = null,
-    totalSize: Int | Double = null
+    totalSize: js.UndefOr[Double] = js.undefined
   ): SchemaListFindingsResponse = {
     val __obj = js.Dynamic.literal()
     if (findings != null) __obj.updateDynamic("findings")(findings.asInstanceOf[js.Any])
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     if (readTime != null) __obj.updateDynamic("readTime")(readTime.asInstanceOf[js.Any])
-    if (totalSize != null) __obj.updateDynamic("totalSize")(totalSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalSize)) __obj.updateDynamic("totalSize")(totalSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListFindingsResponse]
   }
 }

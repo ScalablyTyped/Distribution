@@ -30,7 +30,7 @@ trait GraphConfiguration[N /* <: GraphNode */, L /* <: GraphLink */] extends js.
 
 object GraphConfiguration {
   @scala.inline
-  def apply[N, L](
+  def apply[/* <: typings.reactD3Graph.mod.GraphNode */ N, /* <: typings.reactD3Graph.mod.GraphLink */ L](
     automaticRearrangeAfterDropNode: Boolean,
     collapsible: Boolean,
     d3: AlphaTarget,

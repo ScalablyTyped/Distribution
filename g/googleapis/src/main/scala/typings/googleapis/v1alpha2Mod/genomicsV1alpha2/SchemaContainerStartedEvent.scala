@@ -32,12 +32,12 @@ trait SchemaContainerStartedEvent extends js.Object {
 object SchemaContainerStartedEvent {
   @scala.inline
   def apply(
-    actionId: Int | Double = null,
+    actionId: js.UndefOr[Double] = js.undefined,
     ipAddress: String = null,
     portMappings: StringDictionary[Double] = null
   ): SchemaContainerStartedEvent = {
     val __obj = js.Dynamic.literal()
-    if (actionId != null) __obj.updateDynamic("actionId")(actionId.asInstanceOf[js.Any])
+    if (!js.isUndefined(actionId)) __obj.updateDynamic("actionId")(actionId.get.asInstanceOf[js.Any])
     if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
     if (portMappings != null) __obj.updateDynamic("portMappings")(portMappings.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaContainerStartedEvent]

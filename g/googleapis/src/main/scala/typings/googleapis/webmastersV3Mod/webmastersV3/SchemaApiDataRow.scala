@@ -16,18 +16,18 @@ trait SchemaApiDataRow extends js.Object {
 object SchemaApiDataRow {
   @scala.inline
   def apply(
-    clicks: Int | Double = null,
-    ctr: Int | Double = null,
-    impressions: Int | Double = null,
+    clicks: js.UndefOr[Double] = js.undefined,
+    ctr: js.UndefOr[Double] = js.undefined,
+    impressions: js.UndefOr[Double] = js.undefined,
     keys: js.Array[String] = null,
-    position: Int | Double = null
+    position: js.UndefOr[Double] = js.undefined
   ): SchemaApiDataRow = {
     val __obj = js.Dynamic.literal()
-    if (clicks != null) __obj.updateDynamic("clicks")(clicks.asInstanceOf[js.Any])
-    if (ctr != null) __obj.updateDynamic("ctr")(ctr.asInstanceOf[js.Any])
-    if (impressions != null) __obj.updateDynamic("impressions")(impressions.asInstanceOf[js.Any])
+    if (!js.isUndefined(clicks)) __obj.updateDynamic("clicks")(clicks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ctr)) __obj.updateDynamic("ctr")(ctr.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(impressions)) __obj.updateDynamic("impressions")(impressions.get.asInstanceOf[js.Any])
     if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaApiDataRow]
   }
 }

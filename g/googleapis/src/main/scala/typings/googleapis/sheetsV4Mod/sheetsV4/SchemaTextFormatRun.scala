@@ -22,10 +22,10 @@ trait SchemaTextFormatRun extends js.Object {
 
 object SchemaTextFormatRun {
   @scala.inline
-  def apply(format: SchemaTextFormat = null, startIndex: Int | Double = null): SchemaTextFormatRun = {
+  def apply(format: SchemaTextFormat = null, startIndex: js.UndefOr[Double] = js.undefined): SchemaTextFormatRun = {
     val __obj = js.Dynamic.literal()
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTextFormatRun]
   }
 }

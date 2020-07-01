@@ -49,8 +49,8 @@ object SchemaPrivateClusterConfig {
     publicEndpoint: String = null
   ): SchemaPrivateClusterConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enablePrivateEndpoint)) __obj.updateDynamic("enablePrivateEndpoint")(enablePrivateEndpoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePrivateNodes)) __obj.updateDynamic("enablePrivateNodes")(enablePrivateNodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePrivateEndpoint)) __obj.updateDynamic("enablePrivateEndpoint")(enablePrivateEndpoint.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePrivateNodes)) __obj.updateDynamic("enablePrivateNodes")(enablePrivateNodes.get.asInstanceOf[js.Any])
     if (masterIpv4CidrBlock != null) __obj.updateDynamic("masterIpv4CidrBlock")(masterIpv4CidrBlock.asInstanceOf[js.Any])
     if (privateEndpoint != null) __obj.updateDynamic("privateEndpoint")(privateEndpoint.asInstanceOf[js.Any])
     if (publicEndpoint != null) __obj.updateDynamic("publicEndpoint")(publicEndpoint.asInstanceOf[js.Any])

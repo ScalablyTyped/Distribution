@@ -30,7 +30,7 @@ trait IComponent[TComponentProps /* <: ISlottableProps[TComponentSlots] */, TTok
 
 object IComponent {
   @scala.inline
-  def apply[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics](
+  def apply[/* <: typings.uifabricFoundation.libIslotsMod.ISlottableProps[TComponentSlots] */ TComponentProps, TTokens, /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */ TStyleSet, TViewProps, TComponentSlots, TStatics](
     displayName: String,
     factoryOptions: IFactoryOptions[TComponentProps],
     fields: js.Array[String],

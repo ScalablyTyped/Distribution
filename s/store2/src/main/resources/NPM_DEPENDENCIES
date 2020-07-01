@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "store2" : "2.11.0"
+      "store2" : "2.11.2"
     }
   ],
   "test-dependencies" : [
     {
-      "store2" : "2.11.0"
+      "store2" : "2.11.2"
     }
   ],
   "compile-devDependencies" : [

@@ -11,7 +11,7 @@ trait WrappedComponent[C /* <: ComponentType[_] */] extends js.Object {
 
 object WrappedComponent {
   @scala.inline
-  def apply[C](WrappedComponent: C): WrappedComponent[C] = {
+  def apply[/* <: typings.react.mod.ComponentType[_] */ C](WrappedComponent: C): WrappedComponent[C] = {
     val __obj = js.Dynamic.literal(WrappedComponent = WrappedComponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[WrappedComponent[C]]
   }

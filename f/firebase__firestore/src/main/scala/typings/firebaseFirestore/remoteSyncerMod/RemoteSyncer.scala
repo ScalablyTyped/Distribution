@@ -6,6 +6,7 @@ import typings.firebaseFirestore.mutationBatchMod.MutationBatchResult
 import typings.firebaseFirestore.remoteEventMod.RemoteEvent
 import typings.firebaseFirestore.typesMod.BatchId
 import typings.firebaseFirestore.typesMod.TargetId
+import typings.firebaseFirestore.userMod.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,6 +30,11 @@ trait RemoteSyncer extends js.Object {
     * the last snapshot.
     */
   def getRemoteKeysForTarget(targetId: TargetId): DocumentKeySet_
+  /**
+    * Updates all local state to match the pending mutations for the given user.
+    * May be called repeatedly for the same user.
+    */
+  def handleCredentialChange(user: User): js.Promise[Unit]
   /**
     * Rejects the batch, removing the batch from the mutation queue, recomputing
     * the local view of any documents affected by the batch and then, emitting
@@ -54,10 +60,11 @@ object RemoteSyncer {
     applyRemoteEvent: RemoteEvent => js.Promise[Unit],
     applySuccessfulWrite: MutationBatchResult => js.Promise[Unit],
     getRemoteKeysForTarget: TargetId => DocumentKeySet_,
+    handleCredentialChange: User => js.Promise[Unit],
     rejectFailedWrite: (BatchId, FirestoreError) => js.Promise[Unit],
     rejectListen: (TargetId, FirestoreError) => js.Promise[Unit]
   ): RemoteSyncer = {
-    val __obj = js.Dynamic.literal(applyRemoteEvent = js.Any.fromFunction1(applyRemoteEvent), applySuccessfulWrite = js.Any.fromFunction1(applySuccessfulWrite), getRemoteKeysForTarget = js.Any.fromFunction1(getRemoteKeysForTarget), rejectFailedWrite = js.Any.fromFunction2(rejectFailedWrite), rejectListen = js.Any.fromFunction2(rejectListen))
+    val __obj = js.Dynamic.literal(applyRemoteEvent = js.Any.fromFunction1(applyRemoteEvent), applySuccessfulWrite = js.Any.fromFunction1(applySuccessfulWrite), getRemoteKeysForTarget = js.Any.fromFunction1(getRemoteKeysForTarget), handleCredentialChange = js.Any.fromFunction1(handleCredentialChange), rejectFailedWrite = js.Any.fromFunction2(rejectFailedWrite), rejectListen = js.Any.fromFunction2(rejectListen))
     __obj.asInstanceOf[RemoteSyncer]
   }
 }

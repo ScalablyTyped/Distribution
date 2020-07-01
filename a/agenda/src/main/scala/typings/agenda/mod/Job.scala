@@ -52,7 +52,7 @@ trait Job[T /* <: JobAttributesData */] extends js.Object {
   /**
     * Removes the job from the database and cancels the job.
     */
-  def remove(): js.Promise[Unit] = js.native
+  def remove(): js.Promise[Double] = js.native
   /**
     * Specifies a time when the job should repeat. [Possible values](https://github.com/matthewmueller/date#examples).
     * @param time

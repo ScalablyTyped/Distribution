@@ -16,7 +16,7 @@ trait BackgroundSizeProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] e
 
 object BackgroundSizeProps {
   @scala.inline
-  def apply[ThemeType, TVal](backgroundSize: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): BackgroundSizeProps[ThemeType, TVal] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType, TVal](backgroundSize: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): BackgroundSizeProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(backgroundSize)) __obj.updateDynamic("backgroundSize")(backgroundSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundSizeProps[ThemeType, TVal]]

@@ -44,6 +44,10 @@ trait PrettyOptions extends js.Object {
     */
   var search: js.UndefOr[String] = js.undefined
   /**
+    * Suppress warning on first synchronous flushing.
+    */
+  var suppressFlushSyncWarning: js.UndefOr[Boolean] = js.undefined
+  /**
     * The key in the JSON object to use for timestamp display. Default: "time".
     */
   var timestampKey: js.UndefOr[String] = js.undefined
@@ -68,6 +72,7 @@ object PrettyOptions {
     messageFormat: `false` | String = null,
     messageKey: String = null,
     search: String = null,
+    suppressFlushSyncWarning: js.UndefOr[Boolean] = js.undefined,
     timestampKey: String = null,
     translateTime: Boolean | String = null
   ): PrettyOptions = {
@@ -81,6 +86,7 @@ object PrettyOptions {
     if (messageFormat != null) __obj.updateDynamic("messageFormat")(messageFormat.asInstanceOf[js.Any])
     if (messageKey != null) __obj.updateDynamic("messageKey")(messageKey.asInstanceOf[js.Any])
     if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressFlushSyncWarning)) __obj.updateDynamic("suppressFlushSyncWarning")(suppressFlushSyncWarning.get.asInstanceOf[js.Any])
     if (timestampKey != null) __obj.updateDynamic("timestampKey")(timestampKey.asInstanceOf[js.Any])
     if (translateTime != null) __obj.updateDynamic("translateTime")(translateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrettyOptions]

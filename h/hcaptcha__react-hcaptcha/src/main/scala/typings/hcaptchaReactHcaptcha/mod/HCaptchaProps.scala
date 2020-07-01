@@ -10,6 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HCaptchaProps extends js.Object {
+  var id: js.UndefOr[String] = js.undefined
   var languageOverride: js.UndefOr[String] = js.undefined
   var onError: js.UndefOr[js.Function1[/* event */ String, _]] = js.undefined
   var onExpire: js.UndefOr[js.Function0[_]] = js.undefined
@@ -24,6 +25,7 @@ object HCaptchaProps {
   @scala.inline
   def apply(
     sitekey: String,
+    id: String = null,
     languageOverride: String = null,
     onError: /* event */ String => _ = null,
     onExpire: () => _ = null,
@@ -33,6 +35,7 @@ object HCaptchaProps {
     theme: light | dark = null
   ): HCaptchaProps = {
     val __obj = js.Dynamic.literal(sitekey = sitekey.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (languageOverride != null) __obj.updateDynamic("languageOverride")(languageOverride.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onExpire != null) __obj.updateDynamic("onExpire")(js.Any.fromFunction0(onExpire))

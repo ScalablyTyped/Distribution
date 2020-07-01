@@ -41,7 +41,7 @@ object SchemaPhishingSpike {
   ): SchemaPhishingSpike = {
     val __obj = js.Dynamic.literal()
     if (domainId != null) __obj.updateDynamic("domainId")(domainId.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInternal)) __obj.updateDynamic("isInternal")(isInternal.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInternal)) __obj.updateDynamic("isInternal")(isInternal.get.asInstanceOf[js.Any])
     if (maliciousEntity != null) __obj.updateDynamic("maliciousEntity")(maliciousEntity.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPhishingSpike]

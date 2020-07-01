@@ -83,12 +83,12 @@ object SchemaSecurityContext {
     seLinuxOptions: SchemaSELinuxOptions = null
   ): SchemaSecurityContext = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowPrivilegeEscalation)) __obj.updateDynamic("allowPrivilegeEscalation")(allowPrivilegeEscalation.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowPrivilegeEscalation)) __obj.updateDynamic("allowPrivilegeEscalation")(allowPrivilegeEscalation.get.asInstanceOf[js.Any])
     if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
-    if (!js.isUndefined(privileged)) __obj.updateDynamic("privileged")(privileged.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnlyRootFilesystem)) __obj.updateDynamic("readOnlyRootFilesystem")(readOnlyRootFilesystem.asInstanceOf[js.Any])
+    if (!js.isUndefined(privileged)) __obj.updateDynamic("privileged")(privileged.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnlyRootFilesystem)) __obj.updateDynamic("readOnlyRootFilesystem")(readOnlyRootFilesystem.get.asInstanceOf[js.Any])
     if (runAsGroup != null) __obj.updateDynamic("runAsGroup")(runAsGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(runAsNonRoot)) __obj.updateDynamic("runAsNonRoot")(runAsNonRoot.asInstanceOf[js.Any])
+    if (!js.isUndefined(runAsNonRoot)) __obj.updateDynamic("runAsNonRoot")(runAsNonRoot.get.asInstanceOf[js.Any])
     if (runAsUser != null) __obj.updateDynamic("runAsUser")(runAsUser.asInstanceOf[js.Any])
     if (seLinuxOptions != null) __obj.updateDynamic("seLinuxOptions")(seLinuxOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSecurityContext]

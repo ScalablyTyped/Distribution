@@ -11,7 +11,7 @@ trait PutParameterRequest extends js.Object {
     */
   var AllowedPattern: js.UndefOr[typings.awsSdk.ssmMod.AllowedPattern] = js.native
   /**
-    * The data type for a String parameter. Supported data types include plain text and Amazon Machine Image IDs.  The following data type values are supported.     text     aws:ec2:image    When you create a String parameter and specify aws:ec2:image, Systems Manager validates the parameter value you provide against that data type. The required format is ami-12345abcdeEXAMPLE. For more information, see Native parameter support for Amazon Machine Image IDs in the AWS Systems Manager User Guide.
+    * The data type for a String parameter. Supported data types include plain text and Amazon Machine Image IDs.  The following data type values are supported.     text     aws:ec2:image    When you create a String parameter and specify aws:ec2:image, Systems Manager validates the parameter value is in the required format, such as ami-12345abcdeEXAMPLE, and that the specified AMI is available in your AWS account. For more information, see Native parameter support for Amazon Machine Image IDs in the AWS Systems Manager User Guide.
     */
   var DataType: js.UndefOr[ParameterDataType] = js.native
   /**
@@ -43,7 +43,7 @@ trait PutParameterRequest extends js.Object {
     */
   var Tier: js.UndefOr[ParameterTier] = js.native
   /**
-    * The type of parameter that you want to add to the system. Items in a StringList must be separated by a comma (,). You can't use other punctuation or special character to escape items in the list. If you have a parameter value that requires a comma, then use the String data type.   SecureString is not currently supported for AWS CloudFormation templates or in the China Regions. 
+    * The type of parameter that you want to add to the system.   SecureString is not currently supported for AWS CloudFormation templates or in the China Regions.  Items in a StringList must be separated by a comma (,). You can't use other punctuation or special character to escape items in the list. If you have a parameter value that requires a comma, then use the String data type.  Specifying a parameter type is not required when updating a parameter. You must specify a parameter type when creating a parameter. 
     */
   var Type: js.UndefOr[ParameterType] = js.native
   /**

@@ -1,14 +1,16 @@
 package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.Checks
-import typings.octokitTypes.anon.Followersurl
+import typings.octokitTypes.anon.Eventsurl
+import typings.octokitTypes.octokitTypesStrings.all
+import typings.octokitTypes.octokitTypesStrings.selected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AppsGetOrgInstallationResponseData extends js.Object {
   var access_tokens_url: String
-  var account: Followersurl
+  var account: Eventsurl
   var app_id: Double
   var created_at: String
   var events: js.Array[String]
@@ -16,7 +18,7 @@ trait AppsGetOrgInstallationResponseData extends js.Object {
   var id: Double
   var permissions: Checks
   var repositories_url: String
-  var repository_selection: String
+  var repository_selection: all | selected
   var single_file_name: String
   var target_id: Double
   var target_type: String
@@ -27,7 +29,7 @@ object AppsGetOrgInstallationResponseData {
   @scala.inline
   def apply(
     access_tokens_url: String,
-    account: Followersurl,
+    account: Eventsurl,
     app_id: Double,
     created_at: String,
     events: js.Array[String],
@@ -35,7 +37,7 @@ object AppsGetOrgInstallationResponseData {
     id: Double,
     permissions: Checks,
     repositories_url: String,
-    repository_selection: String,
+    repository_selection: all | selected,
     single_file_name: String,
     target_id: Double,
     target_type: String,

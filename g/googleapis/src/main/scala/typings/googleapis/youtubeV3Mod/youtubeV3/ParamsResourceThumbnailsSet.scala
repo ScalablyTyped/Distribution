@@ -4,7 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
-import typings.googleapis.AnonBody
+import typings.googleapis.anon.Body
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait ParamsResourceThumbnailsSet extends StandardParameters {
   /**
     * Media metadata
     */
-  var media: js.UndefOr[AnonBody] = js.native
+  var media: js.UndefOr[Body] = js.native
   /**
     * Note: This parameter is intended exclusively for YouTube content
     * partners.  The onBehalfOfContentOwner parameter indicates that the
@@ -46,7 +46,7 @@ object ParamsResourceThumbnailsSet {
     auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
     fields: String = null,
     key: String = null,
-    media: AnonBody = null,
+    media: Body = null,
     oauth_token: String = null,
     onBehalfOfContentOwner: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
@@ -62,7 +62,7 @@ object ParamsResourceThumbnailsSet {
     if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (onBehalfOfContentOwner != null) __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     if (videoId != null) __obj.updateDynamic("videoId")(videoId.asInstanceOf[js.Any])

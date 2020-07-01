@@ -23,7 +23,7 @@ object SchemaGoogleCloudVisionV1p2beta1TextAnnotationDetectedBreak {
   @scala.inline
   def apply(isPrefix: js.UndefOr[Boolean] = js.undefined, `type`: String = null): SchemaGoogleCloudVisionV1p2beta1TextAnnotationDetectedBreak = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isPrefix)) __obj.updateDynamic("isPrefix")(isPrefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPrefix)) __obj.updateDynamic("isPrefix")(isPrefix.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p2beta1TextAnnotationDetectedBreak]
   }

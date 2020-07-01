@@ -6,9 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChannelHangupRequest extends Event {
-  /* Properties */
+  /**
+    * Integer representation of the cause of the hangup.
+    */
   var cause: Double
+  /**
+    * The channel on which the hangup was requested.
+    */
   var channel: Channel
+  /**
+    * Whether the hangup request was a soft hangup request.
+    */
   var soft: Boolean
 }
 

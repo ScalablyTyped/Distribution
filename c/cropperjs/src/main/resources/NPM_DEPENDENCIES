@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cropperjs" : "1.5.6"
+      "cropperjs" : "1.5.7"
     }
   ],
   "test-dependencies" : [
     {
-      "cropperjs" : "1.5.6"
+      "cropperjs" : "1.5.7"
     }
   ],
   "compile-devDependencies" : [

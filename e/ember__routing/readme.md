@@ -1,7 +1,7 @@
 
 # Scala.js typings for ember__routing
 
-Typings are for version 3.0
+Typings are for version 3.16
 
 
 

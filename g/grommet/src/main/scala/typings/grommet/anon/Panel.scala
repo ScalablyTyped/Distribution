@@ -1,34 +1,32 @@
 package typings.grommet.anon
 
-import typings.grommet.baseMod.ExtendType
-import typings.grommet.utilsMod.BackgroundType
-import typings.grommet.utilsMod.GapType
+import typings.grommet.utilsMod.BorderType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Panel extends js.Object {
-  var background: js.UndefOr[BackgroundType] = js.undefined
-  var extend: js.UndefOr[ExtendType] = js.undefined
-  var gap: js.UndefOr[GapType] = js.undefined
-  var header: js.UndefOr[BackgroundExtend] = js.undefined
-  var panel: js.UndefOr[Extend] = js.undefined
+  var border: js.UndefOr[BorderType] = js.undefined
+  var heading: js.UndefOr[LevelMargin] = js.undefined
+  var hover: js.UndefOr[ColorHeading] = js.undefined
+  var icons: js.UndefOr[Collapse] = js.undefined
+  var panel: js.UndefOr[BorderBorderType] = js.undefined
 }
 
 object Panel {
   @scala.inline
   def apply(
-    background: BackgroundType = null,
-    extend: ExtendType = null,
-    gap: GapType = null,
-    header: BackgroundExtend = null,
-    panel: Extend = null
+    border: BorderType = null,
+    heading: LevelMargin = null,
+    hover: ColorHeading = null,
+    icons: Collapse = null,
+    panel: BorderBorderType = null
   ): Panel = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
+    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
+    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
     if (panel != null) __obj.updateDynamic("panel")(panel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Panel]
   }

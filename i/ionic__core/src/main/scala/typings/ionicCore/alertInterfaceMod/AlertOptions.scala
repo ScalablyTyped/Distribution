@@ -3,7 +3,7 @@ package typings.ionicCore.alertInterfaceMod
 import typings.ionicCore.animationInterfaceMod.Animation
 import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.mod.Mode
-import typings.ionicCore.typesMod.IonicSafeString
+import typings.ionicCore.sanitizationMod.IonicSafeString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

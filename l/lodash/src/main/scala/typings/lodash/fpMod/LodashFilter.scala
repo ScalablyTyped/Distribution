@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashFilter extends js.Object {
+trait LodashFilter extends LodashConvertible {
   def apply[T](predicate: ValueIterateeCustom[T, Boolean]): js.Array[T] = js.native
   def apply[T /* <: js.Object */](
     predicate: ValueIterateeCustom[

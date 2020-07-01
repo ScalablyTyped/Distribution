@@ -5,34 +5,28 @@ import typings.ariaQuery.mod.ARIACompositeWidgetRole
 import typings.ariaQuery.mod.ARIADPubRole
 import typings.ariaQuery.mod.ARIADocumentStructureRole
 import typings.ariaQuery.mod.ARIALandmarkRole
+import typings.ariaQuery.mod.ARIALiveRegionRole
 import typings.ariaQuery.mod.ARIAProperty
 import typings.ariaQuery.mod.ARIAPropertyCurrent
-import typings.ariaQuery.mod.ARIARole
-import typings.ariaQuery.mod.ARIARoleDefintionKey
 import typings.ariaQuery.mod.ARIAState
 import typings.ariaQuery.mod.ARIAWidgetRole
+import typings.ariaQuery.mod.ARIAWindowRole
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object ariaQueryStrings {
   @js.native
-  sealed trait alert
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+  sealed trait Greaterthansign1 extends js.Object
   
   @js.native
-  sealed trait alertdialog
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+  sealed trait alert extends ARIALiveRegionRole
   
   @js.native
-  sealed trait application
-    extends ARIALandmarkRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait alertdialog extends ARIAWindowRole
+  
+  @js.native
+  sealed trait application extends ARIADocumentStructureRole
   
   @js.native
   sealed trait `aria-activedescendant` extends ARIAProperty
@@ -200,338 +194,226 @@ object ariaQueryStrings {
   sealed trait `aria-valuetext` extends ARIAProperty
   
   @js.native
-  sealed trait article
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait article extends ARIADocumentStructureRole
   
   @js.native
-  sealed trait banner
-    extends ARIALandmarkRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait banner extends ARIALandmarkRole
+  
+  @js.native
+  sealed trait blockquote extends ARIADocumentStructureRole
   
   @js.native
   sealed trait boolean extends js.Object
   
   @js.native
-  sealed trait button
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+  sealed trait button extends ARIAWidgetRole
   
   @js.native
-  sealed trait cell
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait caption extends ARIADocumentStructureRole
   
   @js.native
-  sealed trait checkbox
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+  sealed trait cell extends ARIADocumentStructureRole
   
   @js.native
-  sealed trait columnheader
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait checkbox extends ARIAWidgetRole
   
   @js.native
-  sealed trait combobox
-    extends ARIACompositeWidgetRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait code extends js.Object
   
   @js.native
-  sealed trait command
-    extends ARIAAbstractRole
-       with ARIARoleDefintionKey
+  sealed trait columnheader extends ARIADocumentStructureRole
   
   @js.native
-  sealed trait complementary
-    extends ARIALandmarkRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait combobox extends ARIACompositeWidgetRole
   
   @js.native
-  sealed trait composite
-    extends ARIAAbstractRole
-       with ARIARoleDefintionKey
+  sealed trait command extends ARIAAbstractRole
   
   @js.native
-  sealed trait contentinfo
-    extends ARIALandmarkRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait complementary extends ARIALandmarkRole
+  
+  @js.native
+  sealed trait composite extends ARIAAbstractRole
+  
+  @js.native
+  sealed trait contentinfo extends ARIALandmarkRole
   
   @js.native
   sealed trait date extends ARIAPropertyCurrent
   
   @js.native
-  sealed trait definition
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait definition extends ARIADocumentStructureRole
   
   @js.native
-  sealed trait dialog
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+  sealed trait deletion extends ARIADocumentStructureRole
   
   @js.native
-  sealed trait directory
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait `descendant of table` extends js.Object
   
   @js.native
-  sealed trait `doc-abstract`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait dialog extends ARIAWindowRole
   
   @js.native
-  sealed trait `doc-acknowledgments`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `direct descendant of details element with the open attribute defined` extends js.Object
   
   @js.native
-  sealed trait `doc-afterword`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `direct descendant of document` extends js.Object
   
   @js.native
-  sealed trait `doc-appendix`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `direct descendant of olComma ul or menu` extends js.Object
   
   @js.native
-  sealed trait `doc-backlink`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait directory extends ARIADocumentStructureRole
   
   @js.native
-  sealed trait `doc-biblioentry`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-abstract` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-bibliography`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-acknowledgments` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-biblioref`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-afterword` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-chapter`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-appendix` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-colophon`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-backlink` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-conclusion`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-biblioentry` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-cover`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-bibliography` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-credit`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-biblioref` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-credits`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-chapter` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-dedication`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-colophon` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-endnote`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-conclusion` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-endnotes`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-cover` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-epigraph`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-credit` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-epilogue`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-credits` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-errata`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-dedication` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-example`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-endnote` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-footnote`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-endnotes` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-foreword`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-epigraph` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-glossary`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-epilogue` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-glossref`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-errata` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-index`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-example` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-introduction`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-footnote` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-noteref`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-foreword` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-notice`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-glossary` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-pagebreak`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-glossref` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-pagelist`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-index` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-part`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-introduction` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-preface`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-noteref` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-prologue`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-notice` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-pullquote`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-pagebreak` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-qna`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-pagelist` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-subtitle`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-part` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-tip`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-preface` extends ARIADPubRole
   
   @js.native
-  sealed trait `doc-toc`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+  sealed trait `doc-prologue` extends ARIADPubRole
   
   @js.native
-  sealed trait document
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait `doc-pullquote` extends ARIADPubRole
+  
+  @js.native
+  sealed trait `doc-qna` extends ARIADPubRole
+  
+  @js.native
+  sealed trait `doc-subtitle` extends ARIADPubRole
+  
+  @js.native
+  sealed trait `doc-tip` extends ARIADPubRole
+  
+  @js.native
+  sealed trait `doc-toc` extends ARIADPubRole
+  
+  @js.native
+  sealed trait document extends ARIADocumentStructureRole
+  
+  @js.native
+  sealed trait emphasis extends ARIADocumentStructureRole
   
   @js.native
   sealed trait `false` extends ARIAPropertyCurrent
   
   @js.native
-  sealed trait feed
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait feed extends ARIADocumentStructureRole
   
   @js.native
-  sealed trait figure
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait figure extends ARIADocumentStructureRole
   
   @js.native
-  sealed trait form
-    extends ARIALandmarkRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait form extends ARIALandmarkRole
   
   @js.native
-  sealed trait grid
-    extends ARIACompositeWidgetRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait generic extends ARIADocumentStructureRole
   
   @js.native
-  sealed trait gridcell
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+  sealed trait grid extends ARIACompositeWidgetRole
   
   @js.native
-  sealed trait group
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait gridcell extends ARIAWidgetRole
   
   @js.native
-  sealed trait heading
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait group extends ARIADocumentStructureRole
+  
+  @js.native
+  sealed trait heading extends ARIADocumentStructureRole
   
   @js.native
   sealed trait id extends js.Object
@@ -540,249 +422,145 @@ object ariaQueryStrings {
   sealed trait idlist extends js.Object
   
   @js.native
-  sealed trait img
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait img extends ARIADocumentStructureRole
   
   @js.native
-  sealed trait input
-    extends ARIAAbstractRole
-       with ARIARoleDefintionKey
+  sealed trait input extends ARIAAbstractRole
+  
+  @js.native
+  sealed trait insertion extends ARIADocumentStructureRole
   
   @js.native
   sealed trait integer extends js.Object
   
   @js.native
-  sealed trait landmark
-    extends ARIAAbstractRole
-       with ARIARoleDefintionKey
+  sealed trait landmark extends ARIAAbstractRole
   
   @js.native
-  sealed trait link
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+  sealed trait link extends ARIAWidgetRole
   
   @js.native
-  sealed trait list
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait list extends ARIADocumentStructureRole
   
   @js.native
-  sealed trait listbox
-    extends ARIACompositeWidgetRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait listbox extends ARIACompositeWidgetRole
   
   @js.native
-  sealed trait listitem
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait listitem extends ARIADocumentStructureRole
   
   @js.native
   sealed trait location extends ARIAPropertyCurrent
   
   @js.native
-  sealed trait log
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+  sealed trait log extends ARIALiveRegionRole
   
   @js.native
-  sealed trait main
-    extends ARIALandmarkRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait main extends ARIALandmarkRole
   
   @js.native
-  sealed trait marquee
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+  sealed trait marquee extends ARIALiveRegionRole
   
   @js.native
-  sealed trait math
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait math extends ARIADocumentStructureRole
   
   @js.native
-  sealed trait menu
-    extends ARIACompositeWidgetRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait menu extends ARIACompositeWidgetRole
   
   @js.native
-  sealed trait menubar
-    extends ARIACompositeWidgetRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait menubar extends ARIACompositeWidgetRole
   
   @js.native
-  sealed trait menuitem
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+  sealed trait menuitem extends ARIAWidgetRole
   
   @js.native
-  sealed trait menuitemcheckbox
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+  sealed trait menuitemcheckbox extends ARIAWidgetRole
   
   @js.native
-  sealed trait menuitemradio
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+  sealed trait menuitemradio extends ARIAWidgetRole
   
   @js.native
-  sealed trait navigation
-    extends ARIALandmarkRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait meter extends ARIADocumentStructureRole
   
   @js.native
-  sealed trait none
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait navigation extends ARIALandmarkRole
   
   @js.native
-  sealed trait note
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait none extends ARIADocumentStructureRole
+  
+  @js.native
+  sealed trait note extends ARIADocumentStructureRole
   
   @js.native
   sealed trait number extends js.Object
   
   @js.native
-  sealed trait option
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+  sealed trait option extends ARIAWidgetRole
   
   @js.native
   sealed trait page extends ARIAPropertyCurrent
   
   @js.native
-  sealed trait presentation
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait paragraph extends ARIADocumentStructureRole
   
   @js.native
-  sealed trait progressbar
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+  sealed trait presentation extends ARIADocumentStructureRole
   
   @js.native
-  sealed trait radio
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+  sealed trait progressbar extends ARIAWidgetRole
   
   @js.native
-  sealed trait radiogroup
-    extends ARIACompositeWidgetRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait radio extends ARIAWidgetRole
   
   @js.native
-  sealed trait range
-    extends ARIAAbstractRole
-       with ARIARoleDefintionKey
+  sealed trait radiogroup extends ARIACompositeWidgetRole
   
   @js.native
-  sealed trait region
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait range extends ARIAAbstractRole
   
   @js.native
-  sealed trait roletype
-    extends ARIAAbstractRole
-       with ARIARoleDefintionKey
+  sealed trait region extends ARIALandmarkRole
   
   @js.native
-  sealed trait row
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait roletype extends ARIAAbstractRole
   
   @js.native
-  sealed trait rowgroup
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait row extends ARIADocumentStructureRole
   
   @js.native
-  sealed trait rowheader
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait rowgroup extends ARIADocumentStructureRole
   
   @js.native
-  sealed trait scrollbar
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+  sealed trait rowheader extends ARIADocumentStructureRole
   
   @js.native
-  sealed trait search
-    extends ARIALandmarkRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait scrollbar extends ARIAWidgetRole
   
   @js.native
-  sealed trait searchbox
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+  sealed trait search extends ARIALandmarkRole
   
   @js.native
-  sealed trait section
-    extends ARIAAbstractRole
-       with ARIARoleDefintionKey
+  sealed trait searchbox extends ARIAWidgetRole
   
   @js.native
-  sealed trait sectionhead
-    extends ARIAAbstractRole
-       with ARIARoleDefintionKey
+  sealed trait section extends ARIAAbstractRole
   
   @js.native
-  sealed trait select
-    extends ARIAAbstractRole
-       with ARIARoleDefintionKey
+  sealed trait sectionhead extends ARIAAbstractRole
   
   @js.native
-  sealed trait separator
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait select extends ARIAAbstractRole
   
   @js.native
-  sealed trait slider
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+  sealed trait separator extends ARIADocumentStructureRole
   
   @js.native
-  sealed trait spinbutton
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+  sealed trait slider extends ARIAWidgetRole
   
   @js.native
-  sealed trait status
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+  sealed trait spinbutton extends ARIAWidgetRole
+  
+  @js.native
+  sealed trait status extends ARIALiveRegionRole
   
   @js.native
   sealed trait step extends ARIAPropertyCurrent
@@ -791,60 +569,45 @@ object ariaQueryStrings {
   sealed trait string extends js.Object
   
   @js.native
-  sealed trait structure
-    extends ARIAAbstractRole
-       with ARIARoleDefintionKey
+  sealed trait strong extends ARIADocumentStructureRole
   
   @js.native
-  sealed trait switch
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+  sealed trait structure extends ARIAAbstractRole
   
   @js.native
-  sealed trait tab
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+  sealed trait subscript extends ARIADocumentStructureRole
   
   @js.native
-  sealed trait table
+  sealed trait superscript extends ARIADocumentStructureRole
+  
+  @js.native
+  sealed trait switch extends ARIAWidgetRole
+  
+  @js.native
+  sealed trait tab extends ARIAWidgetRole
+  
+  @js.native
+  sealed trait table extends ARIADocumentStructureRole
+  
+  @js.native
+  sealed trait tablist extends ARIACompositeWidgetRole
+  
+  @js.native
+  sealed trait tabpanel extends ARIAWidgetRole
+  
+  @js.native
+  sealed trait term extends ARIADocumentStructureRole
+  
+  @js.native
+  sealed trait textbox extends ARIAWidgetRole
+  
+  @js.native
+  sealed trait time
     extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+       with ARIAPropertyCurrent
   
   @js.native
-  sealed trait tablist
-    extends ARIACompositeWidgetRole
-       with ARIARole
-       with ARIARoleDefintionKey
-  
-  @js.native
-  sealed trait tabpanel
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
-  
-  @js.native
-  sealed trait term
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
-  
-  @js.native
-  sealed trait textbox
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
-  
-  @js.native
-  sealed trait time extends ARIAPropertyCurrent
-  
-  @js.native
-  sealed trait timer
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+  sealed trait timer extends ARIALiveRegionRole
   
   @js.native
   sealed trait token extends js.Object
@@ -853,34 +616,19 @@ object ariaQueryStrings {
   sealed trait tokenlist extends js.Object
   
   @js.native
-  sealed trait toolbar
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait toolbar extends ARIADocumentStructureRole
   
   @js.native
-  sealed trait tooltip
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+  sealed trait tooltip extends ARIADocumentStructureRole
   
   @js.native
-  sealed trait tree
-    extends ARIACompositeWidgetRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait tree extends ARIACompositeWidgetRole
   
   @js.native
-  sealed trait treegrid
-    extends ARIACompositeWidgetRole
-       with ARIARole
-       with ARIARoleDefintionKey
+  sealed trait treegrid extends ARIACompositeWidgetRole
   
   @js.native
-  sealed trait treeitem
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+  sealed trait treeitem extends ARIAWidgetRole
   
   @js.native
   sealed trait tristate extends js.Object
@@ -889,15 +637,16 @@ object ariaQueryStrings {
   sealed trait `true` extends ARIAPropertyCurrent
   
   @js.native
-  sealed trait widget
-    extends ARIAAbstractRole
-       with ARIARoleDefintionKey
+  sealed trait unset extends js.Object
   
   @js.native
-  sealed trait window
-    extends ARIAAbstractRole
-       with ARIARoleDefintionKey
+  sealed trait widget extends ARIAAbstractRole
   
+  @js.native
+  sealed trait window extends ARIAAbstractRole
+  
+  @scala.inline
+  def Greaterthansign1: Greaterthansign1 = ">1".asInstanceOf[Greaterthansign1]
   @scala.inline
   def alert: alert = "alert".asInstanceOf[alert]
   @scala.inline
@@ -1007,13 +756,19 @@ object ariaQueryStrings {
   @scala.inline
   def banner: banner = "banner".asInstanceOf[banner]
   @scala.inline
+  def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
+  @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   @scala.inline
   def button: button = "button".asInstanceOf[button]
   @scala.inline
+  def caption: caption = "caption".asInstanceOf[caption]
+  @scala.inline
   def cell: cell = "cell".asInstanceOf[cell]
   @scala.inline
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
+  @scala.inline
+  def code: code = "code".asInstanceOf[code]
   @scala.inline
   def columnheader: columnheader = "columnheader".asInstanceOf[columnheader]
   @scala.inline
@@ -1031,7 +786,17 @@ object ariaQueryStrings {
   @scala.inline
   def definition: definition = "definition".asInstanceOf[definition]
   @scala.inline
+  def deletion: deletion = "deletion".asInstanceOf[deletion]
+  @scala.inline
+  def `descendant of table`: `descendant of table` = ("descendant of table").asInstanceOf[`descendant of table`]
+  @scala.inline
   def dialog: dialog = "dialog".asInstanceOf[dialog]
+  @scala.inline
+  def `direct descendant of details element with the open attribute defined`: `direct descendant of details element with the open attribute defined` = ("direct descendant of details element with the open attribute defined").asInstanceOf[`direct descendant of details element with the open attribute defined`]
+  @scala.inline
+  def `direct descendant of document`: `direct descendant of document` = ("direct descendant of document").asInstanceOf[`direct descendant of document`]
+  @scala.inline
+  def `direct descendant of olComma ul or menu`: `direct descendant of olComma ul or menu` = ("direct descendant of ol, ul or menu").asInstanceOf[`direct descendant of olComma ul or menu`]
   @scala.inline
   def directory: directory = "directory".asInstanceOf[directory]
   @scala.inline
@@ -1115,6 +880,8 @@ object ariaQueryStrings {
   @scala.inline
   def document: document = "document".asInstanceOf[document]
   @scala.inline
+  def emphasis: emphasis = "emphasis".asInstanceOf[emphasis]
+  @scala.inline
   def `false`: `false` = "false".asInstanceOf[`false`]
   @scala.inline
   def feed: feed = "feed".asInstanceOf[feed]
@@ -1122,6 +889,8 @@ object ariaQueryStrings {
   def figure: figure = "figure".asInstanceOf[figure]
   @scala.inline
   def form: form = "form".asInstanceOf[form]
+  @scala.inline
+  def generic: generic = "generic".asInstanceOf[generic]
   @scala.inline
   def grid: grid = "grid".asInstanceOf[grid]
   @scala.inline
@@ -1138,6 +907,8 @@ object ariaQueryStrings {
   def img: img = "img".asInstanceOf[img]
   @scala.inline
   def input: input = "input".asInstanceOf[input]
+  @scala.inline
+  def insertion: insertion = "insertion".asInstanceOf[insertion]
   @scala.inline
   def integer: integer = "integer".asInstanceOf[integer]
   @scala.inline
@@ -1171,6 +942,8 @@ object ariaQueryStrings {
   @scala.inline
   def menuitemradio: menuitemradio = "menuitemradio".asInstanceOf[menuitemradio]
   @scala.inline
+  def meter: meter = "meter".asInstanceOf[meter]
+  @scala.inline
   def navigation: navigation = "navigation".asInstanceOf[navigation]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
@@ -1182,6 +955,8 @@ object ariaQueryStrings {
   def option: option = "option".asInstanceOf[option]
   @scala.inline
   def page: page = "page".asInstanceOf[page]
+  @scala.inline
+  def paragraph: paragraph = "paragraph".asInstanceOf[paragraph]
   @scala.inline
   def presentation: presentation = "presentation".asInstanceOf[presentation]
   @scala.inline
@@ -1227,7 +1002,13 @@ object ariaQueryStrings {
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   @scala.inline
+  def strong: strong = "strong".asInstanceOf[strong]
+  @scala.inline
   def structure: structure = "structure".asInstanceOf[structure]
+  @scala.inline
+  def subscript: subscript = "subscript".asInstanceOf[subscript]
+  @scala.inline
+  def superscript: superscript = "superscript".asInstanceOf[superscript]
   @scala.inline
   def switch: switch = "switch".asInstanceOf[switch]
   @scala.inline
@@ -1264,6 +1045,8 @@ object ariaQueryStrings {
   def tristate: tristate = "tristate".asInstanceOf[tristate]
   @scala.inline
   def `true`: `true` = "true".asInstanceOf[`true`]
+  @scala.inline
+  def unset: unset = "unset".asInstanceOf[unset]
   @scala.inline
   def widget: widget = "widget".asInstanceOf[widget]
   @scala.inline

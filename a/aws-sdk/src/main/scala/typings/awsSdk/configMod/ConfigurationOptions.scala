@@ -65,7 +65,7 @@ abstract class ConfigurationOptions () extends js.Object {
     */
   var endpointDiscoveryEnabled: js.UndefOr[Boolean] = js.native
   /**
-    *  whether to marshal request parameters to the prefix of hostname.
+    * Whether to marshal request parameters to the prefix of hostname.
     */
   var hostPrefixEnabled: js.UndefOr[Boolean] = js.native
   /**
@@ -112,13 +112,13 @@ abstract class ConfigurationOptions () extends js.Object {
     */
   var s3ForcePathStyle: js.UndefOr[Boolean] = js.native
   /**
-    * when region is set to 'us-east-1', whether to send s3 request to global endpoints
+    * When region is set to 'us-east-1', whether to send s3 request to global endpoints
     * or 'us-east-1' regional endpoints. This config is only applicable to S3 client;
     * Defaults to 'legacy'
     */
   var s3UsEast1RegionalEndpoint: js.UndefOr[regional_ | legacy_] = js.native
   /**
-    * whether to override the request region with the region inferred
+    * Whether to override the request region with the region inferred
     * from requested resource's ARN. Only available for S3 buckets
     * Defaults to `true`
     */
@@ -149,7 +149,7 @@ abstract class ConfigurationOptions () extends js.Object {
     */
   var sslEnabled: js.UndefOr[Boolean] = js.native
   /**
-    * whether to send sts request to global endpoints or
+    * Whether to send sts request to global endpoints or
     * regional endpoints. 
     */
   var stsRegionalEndpoints: js.UndefOr[legacy_ | regional_] = js.native

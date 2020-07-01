@@ -1,5 +1,6 @@
 package typings.ionicCore
 
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.elementInterfaceMod.AnchorInterface
 import typings.ionicCore.elementInterfaceMod.ButtonInterface
 import typings.ionicCore.interfaceMod.RouterDirection
@@ -28,6 +29,12 @@ object fabButtonMod extends js.Object {
       */
     var activated: Boolean = js.native
     /**
+      * The icon name to use for the close icon. This will appear when the fab button
+      * is pressed. Only applies if it is the main button inside of a fab containing a
+      * fab list.
+      */
+    var closeIcon: String = js.native
+    /**
       * The color to use from your application's color palette.
       * Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`.
       * For more information on colors, see [theming](/docs/theming/basics).
@@ -47,6 +54,11 @@ object fabButtonMod extends js.Object {
     var onBlur: js.Any = js.native
     var onFocus: js.Any = js.native
     /**
+      * When using a router, it specifies the transition animation when navigating to
+      * another page using `href`.
+      */
+    var routerAnimation: js.UndefOr[AnimationBuilder] = js.native
+    /**
       * When using a router, it specifies the transition direction when navigating to
       * another page using `href`.
       */
@@ -56,7 +68,7 @@ object fabButtonMod extends js.Object {
       */
     var show: Boolean = js.native
     /**
-      * The size of the button. Set this to `small` in order to have a mini fab.
+      * The size of the button. Set this to `small` in order to have a mini fab button.
       */
     var size: js.UndefOr[small] = js.native
     /**

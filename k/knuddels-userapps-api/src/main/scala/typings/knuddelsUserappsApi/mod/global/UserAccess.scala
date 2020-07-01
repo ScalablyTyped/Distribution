@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @see https://developer.knuddels.de/docs/classes/UserAccess.html
-  */
+	 * @see https://developer.knuddels.de/docs/classes/UserAccess.html
+	 */
 @JSGlobal("UserAccess")
 @js.native
 class UserAccess () extends js.Object {
   /**
-    * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_eachAccessibleUser
-    */
+  		 * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_eachAccessibleUser
+  		 */
   def eachAccessibleUser(
     callback: js.Function4[
       /* user */ User, 
@@ -34,28 +34,33 @@ class UserAccess () extends js.Object {
     parameters: OnEnd
   ): Unit = js.native
   /**
-    * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_exists
-    */
+  		 * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_exists
+  		 */
   def exists(nick: java.lang.String): Boolean = js.native
   /**
-    * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_getNick
-    */
+  		 * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_getAccessibleUserCount
+  		 * @since AppServer 20200212-112449
+  		 */
+  def getAccessibleUserCount(): Double = js.native
+  /**
+  		 * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_getNick
+  		 */
   def getNick(userId: Double): java.lang.String = js.native
   /**
-    * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_getUserById
-    */
+  		 * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_getUserById
+  		 */
   def getUserById(userId: Double): User = js.native
   /**
-    * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_getUserId
-    */
+  		 * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_getUserId
+  		 */
   def getUserId(nick: java.lang.String): Double = js.native
   /**
-    * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_isUserDeleted
-    */
+  		 * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_isUserDeleted
+  		 */
   def isUserDeleted(userId: Double): Boolean = js.native
   /**
-    * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_mayAccess
-    */
+  		 * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_mayAccess
+  		 */
   def mayAccess(userId: Double): Boolean = js.native
 }
 

@@ -90,7 +90,7 @@ object SchemaGroupFindingsRequest {
     compareDuration: String = null,
     filter: String = null,
     groupBy: String = null,
-    pageSize: Int | Double = null,
+    pageSize: js.UndefOr[Double] = js.undefined,
     pageToken: String = null,
     readTime: String = null
   ): SchemaGroupFindingsRequest = {
@@ -98,7 +98,7 @@ object SchemaGroupFindingsRequest {
     if (compareDuration != null) __obj.updateDynamic("compareDuration")(compareDuration.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     if (readTime != null) __obj.updateDynamic("readTime")(readTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGroupFindingsRequest]

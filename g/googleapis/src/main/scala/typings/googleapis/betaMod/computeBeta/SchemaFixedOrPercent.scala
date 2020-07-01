@@ -33,11 +33,15 @@ trait SchemaFixedOrPercent extends js.Object {
 
 object SchemaFixedOrPercent {
   @scala.inline
-  def apply(calculated: Int | Double = null, fixed: Int | Double = null, percent: Int | Double = null): SchemaFixedOrPercent = {
+  def apply(
+    calculated: js.UndefOr[Double] = js.undefined,
+    fixed: js.UndefOr[Double] = js.undefined,
+    percent: js.UndefOr[Double] = js.undefined
+  ): SchemaFixedOrPercent = {
     val __obj = js.Dynamic.literal()
-    if (calculated != null) __obj.updateDynamic("calculated")(calculated.asInstanceOf[js.Any])
-    if (fixed != null) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
-    if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
+    if (!js.isUndefined(calculated)) __obj.updateDynamic("calculated")(calculated.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(percent)) __obj.updateDynamic("percent")(percent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFixedOrPercent]
   }
 }

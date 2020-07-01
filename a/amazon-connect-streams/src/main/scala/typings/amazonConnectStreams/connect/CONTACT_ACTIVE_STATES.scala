@@ -19,5 +19,8 @@ object CONTACT_ACTIVE_STATES extends js.Object {
   @js.native
   sealed trait INCOMING extends CONTACT_ACTIVE_STATES
   
+  @js.native
+  sealed trait PENDING extends CONTACT_ACTIVE_STATES
+  
 }
 

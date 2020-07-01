@@ -1,7 +1,7 @@
 
 # Scala.js typings for icheck
 
-Typings are for version v0.8
+Typings are for version 1.0
 
 ## Library description:
 Highly customizable checkboxes and radio buttons (jQuery & Zepto)

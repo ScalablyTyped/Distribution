@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "use-merge-value" : "1.0.1"
+      "use-merge-value" : "1.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "use-merge-value" : "1.0.1"
+      "use-merge-value" : "1.0.2"
     }
   ],
   "compile-devDependencies" : [

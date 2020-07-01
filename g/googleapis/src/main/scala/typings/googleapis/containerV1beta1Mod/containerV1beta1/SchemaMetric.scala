@@ -31,13 +31,13 @@ trait SchemaMetric extends js.Object {
 object SchemaMetric {
   @scala.inline
   def apply(
-    doubleValue: Int | Double = null,
+    doubleValue: js.UndefOr[Double] = js.undefined,
     intValue: String = null,
     name: String = null,
     stringValue: String = null
   ): SchemaMetric = {
     val __obj = js.Dynamic.literal()
-    if (doubleValue != null) __obj.updateDynamic("doubleValue")(doubleValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleValue)) __obj.updateDynamic("doubleValue")(doubleValue.get.asInstanceOf[js.Any])
     if (intValue != null) __obj.updateDynamic("intValue")(intValue.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])

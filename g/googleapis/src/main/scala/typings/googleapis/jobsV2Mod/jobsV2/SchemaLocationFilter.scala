@@ -55,15 +55,15 @@ trait SchemaLocationFilter extends js.Object {
 object SchemaLocationFilter {
   @scala.inline
   def apply(
-    distanceInMiles: Int | Double = null,
+    distanceInMiles: js.UndefOr[Double] = js.undefined,
     isTelecommute: js.UndefOr[Boolean] = js.undefined,
     latLng: SchemaLatLng = null,
     name: String = null,
     regionCode: String = null
   ): SchemaLocationFilter = {
     val __obj = js.Dynamic.literal()
-    if (distanceInMiles != null) __obj.updateDynamic("distanceInMiles")(distanceInMiles.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTelecommute)) __obj.updateDynamic("isTelecommute")(isTelecommute.asInstanceOf[js.Any])
+    if (!js.isUndefined(distanceInMiles)) __obj.updateDynamic("distanceInMiles")(distanceInMiles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTelecommute)) __obj.updateDynamic("isTelecommute")(isTelecommute.get.asInstanceOf[js.Any])
     if (latLng != null) __obj.updateDynamic("latLng")(latLng.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode.asInstanceOf[js.Any])

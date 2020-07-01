@@ -11,7 +11,7 @@ trait FetchPageRequest extends js.Object {
     */
   var NextPageToken: PageToken = js.native
   /**
-    * Specifies the transaction id of the page to be fetched.
+    * Specifies the transaction ID of the page to be fetched.
     */
   var TransactionId: typings.awsSdk.qldbsessionMod.TransactionId = js.native
 }

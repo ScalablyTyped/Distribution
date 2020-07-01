@@ -13,7 +13,7 @@ trait Grads[T /* <: Tensor[Rank] */] extends js.Object {
 
 object Grads {
   @scala.inline
-  def apply[T](grads: js.Array[Tensor[Rank]], value: T): Grads[T] = {
+  def apply[/* <: typings.tensorflowTfjsCore.tensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */ T](grads: js.Array[Tensor[Rank]], value: T): Grads[T] = {
     val __obj = js.Dynamic.literal(grads = grads.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Grads[T]]
   }

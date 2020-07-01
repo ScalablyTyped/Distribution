@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-native-tab-view" : "2.14.1"
+      "react-native-tab-view" : "2.14.4"
     }
   ],
   "test-dependencies" : [
     {
-      "react-native-tab-view" : "2.14.1"
+      "react-native-tab-view" : "2.14.4"
     }
   ],
   "compile-devDependencies" : [

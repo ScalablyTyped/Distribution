@@ -21,7 +21,7 @@ trait UserScriptOptions extends js.Object {
   var includeGlobs: js.UndefOr[js.Array[String]] = js.undefined
   /** The list of JS files to inject */
   @JSName("js")
-  var js_ : js.UndefOr[js.Array[ExtensionFileOrCode]] = js.undefined
+  var js_ : js.Array[ExtensionFileOrCode]
   /**
     * If matchAboutBlank is true, then the code is also injected in about:blank and about:srcdoc frames if your
     * extension has access to its parent document. Code cannot be inserted in top-level about:-frames. By default
@@ -38,22 +38,22 @@ trait UserScriptOptions extends js.Object {
 object UserScriptOptions {
   @scala.inline
   def apply(
+    js_ : js.Array[ExtensionFileOrCode],
     matches: js.Array[MatchPattern],
     allFrames: js.UndefOr[Boolean] = js.undefined,
     excludeGlobs: js.Array[String] = null,
     excludeMatches: js.Array[MatchPattern] = null,
     includeGlobs: js.Array[String] = null,
-    js_ : js.Array[ExtensionFileOrCode] = null,
     matchAboutBlank: js.UndefOr[Boolean] = js.undefined,
     runAt: RunAt = null,
     scriptMetadata: js.UndefOr[Null | PlainJSONValue] = js.undefined
   ): UserScriptOptions = {
     val __obj = js.Dynamic.literal(matches = matches.asInstanceOf[js.Any])
+    __obj.updateDynamic("js")(js_.asInstanceOf[js.Any])
     if (!js.isUndefined(allFrames)) __obj.updateDynamic("allFrames")(allFrames.get.asInstanceOf[js.Any])
     if (excludeGlobs != null) __obj.updateDynamic("excludeGlobs")(excludeGlobs.asInstanceOf[js.Any])
     if (excludeMatches != null) __obj.updateDynamic("excludeMatches")(excludeMatches.asInstanceOf[js.Any])
     if (includeGlobs != null) __obj.updateDynamic("includeGlobs")(includeGlobs.asInstanceOf[js.Any])
-    if (js_ != null) __obj.updateDynamic("js")(js_.asInstanceOf[js.Any])
     if (!js.isUndefined(matchAboutBlank)) __obj.updateDynamic("matchAboutBlank")(matchAboutBlank.get.asInstanceOf[js.Any])
     if (runAt != null) __obj.updateDynamic("runAt")(runAt.asInstanceOf[js.Any])
     if (!js.isUndefined(scriptMetadata)) __obj.updateDynamic("scriptMetadata")(scriptMetadata.asInstanceOf[js.Any])

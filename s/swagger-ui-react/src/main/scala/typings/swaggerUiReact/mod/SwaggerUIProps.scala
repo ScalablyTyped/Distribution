@@ -15,6 +15,7 @@ trait SwaggerUIProps extends js.Object {
   var requestInterceptor: js.UndefOr[js.Function1[/* req */ Request, Request | js.Promise[Request]]] = js.undefined
   var responseInterceptor: js.UndefOr[js.Function1[/* res */ Response, Response | js.Promise[Response]]] = js.undefined
   var spec: js.UndefOr[js.Object] = js.undefined
+  var supportedSubmitMethods: js.UndefOr[js.Array[String]] = js.undefined
   var url: js.UndefOr[String] = js.undefined
 }
 
@@ -28,6 +29,7 @@ object SwaggerUIProps {
     requestInterceptor: /* req */ Request => Request | js.Promise[Request] = null,
     responseInterceptor: /* res */ Response => Response | js.Promise[Response] = null,
     spec: js.Object = null,
+    supportedSubmitMethods: js.Array[String] = null,
     url: String = null
   ): SwaggerUIProps = {
     val __obj = js.Dynamic.literal()
@@ -38,6 +40,7 @@ object SwaggerUIProps {
     if (requestInterceptor != null) __obj.updateDynamic("requestInterceptor")(js.Any.fromFunction1(requestInterceptor))
     if (responseInterceptor != null) __obj.updateDynamic("responseInterceptor")(js.Any.fromFunction1(responseInterceptor))
     if (spec != null) __obj.updateDynamic("spec")(spec.asInstanceOf[js.Any])
+    if (supportedSubmitMethods != null) __obj.updateDynamic("supportedSubmitMethods")(supportedSubmitMethods.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwaggerUIProps]
   }

@@ -4,7 +4,6 @@ import typings.echarts.anon.AnimationDelay
 import typings.echarts.anon.AnimationDelayUpdate
 import typings.echarts.anon.AnimationDuration
 import typings.echarts.anon.BorderColor0
-import typings.echarts.anon.ExtraCssText
 import typings.echarts.anon.ItemStyleBorderColor0
 import typings.echarts.echarts.EChartOption.SeriesCandlestick.DataObject
 import scala.scalajs.js
@@ -413,7 +412,7 @@ trait SeriesCandlestick_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-candlestick.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
   /**
     * @default
     * "candlestick"
@@ -502,7 +501,7 @@ object SeriesCandlestick_ {
     progressiveChunkMode: String = null,
     progressiveThreshold: js.UndefOr[Double] = js.undefined,
     silent: js.UndefOr[Boolean] = js.undefined,
-    tooltip: ExtraCssText = null,
+    tooltip: BaseTooltip = null,
     `type`: String = null,
     xAxisIndex: js.UndefOr[Double] = js.undefined,
     yAxisIndex: js.UndefOr[Double] = js.undefined,

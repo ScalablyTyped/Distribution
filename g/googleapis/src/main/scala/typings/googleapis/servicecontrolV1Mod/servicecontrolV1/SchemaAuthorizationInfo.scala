@@ -40,7 +40,7 @@ object SchemaAuthorizationInfo {
     resourceAttributes: SchemaResource = null
   ): SchemaAuthorizationInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(granted)) __obj.updateDynamic("granted")(granted.asInstanceOf[js.Any])
+    if (!js.isUndefined(granted)) __obj.updateDynamic("granted")(granted.get.asInstanceOf[js.Any])
     if (permission != null) __obj.updateDynamic("permission")(permission.asInstanceOf[js.Any])
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     if (resourceAttributes != null) __obj.updateDynamic("resourceAttributes")(resourceAttributes.asInstanceOf[js.Any])

@@ -35,7 +35,7 @@ object SchemaBigQueryDestination {
   def apply(dataset: String = null, overwriteTable: js.UndefOr[Boolean] = js.undefined, table: String = null): SchemaBigQueryDestination = {
     val __obj = js.Dynamic.literal()
     if (dataset != null) __obj.updateDynamic("dataset")(dataset.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwriteTable)) __obj.updateDynamic("overwriteTable")(overwriteTable.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwriteTable)) __obj.updateDynamic("overwriteTable")(overwriteTable.get.asInstanceOf[js.Any])
     if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBigQueryDestination]
   }

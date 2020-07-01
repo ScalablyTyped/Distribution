@@ -12,7 +12,8 @@ import typings.cypress.anon.PartialClickOptions
 import typings.cypress.anon.PartialExecOptions
 import typings.cypress.anon.PartialLoggable
 import typings.cypress.anon.PartialLoggableTimeoutabl
-import typings.cypress.anon.PartialLoggableTimeoutablAfterScreenshot
+import typings.cypress.anon.PartialLoggableTimeoutablBlackout
+import typings.cypress.anon.PartialLoggableTimeoutablIncludeShadowDom
 import typings.cypress.anon.PartialLoggableTimeoutablLog
 import typings.cypress.anon.PartialLoggableTimeoutablRequestTimeout
 import typings.cypress.anon.PartialLoggableTimeoutablTimeout
@@ -179,8 +180,10 @@ import typings.cypress.cypressStrings.h4
 import typings.cypress.cypressStrings.h5
 import typings.cypress.cypressStrings.h6
 import typings.cypress.cypressStrings.hash
+import typings.cypress.cypressStrings.haveDotallDotkey
 import typings.cypress.cypressStrings.haveDotallDotkeys
 import typings.cypress.cypressStrings.haveDotalwaysDotthrown
+import typings.cypress.cypressStrings.haveDotanyDotkey
 import typings.cypress.cypressStrings.haveDotanyDotkeys
 import typings.cypress.cypressStrings.haveDotattr
 import typings.cypress.cypressStrings.haveDotcallCount
@@ -1533,6 +1536,21 @@ trait Chainable[Subject] extends js.Object {
   @JSName("and")
   def and_exist(chainer: exist): Chainable[Subject] = js.native
   /**
+    * Causes all `.key` assertions that follow in the chain to require that the target have all of the given keys. This is the opposite of `.any`, which only requires that the target have at least one of the given keys.
+    * @example
+    *    cy.wrap({ a: 1, b: 2 }).should('have.all.key', 'a', 'b')
+    * @see http://chaijs.com/api/bdd/#method_all
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @alias should
+    * @see https://on.cypress.io/and
+    */
+  @JSName("and")
+  def and_haveallkey(chainer: haveDotallDotkey, value: String*): Chainable[Subject] = js.native
+  /**
     * Causes all `.keys` assertions that follow in the chain to require that the target have all of the given keys. This is the opposite of `.any`, which only requires that the target have at least one of the given keys.
     * @example
     *    cy.wrap({ a: 1, b: 2 }).should('have.all.keys', 'a', 'b')
@@ -1566,6 +1584,21 @@ trait Chainable[Subject] extends js.Object {
   def and_havealwaysthrown(chainer: haveDotalwaysDotthrown, value: String): Chainable[Subject] = js.native
   @JSName("and")
   def and_havealwaysthrown(chainer: haveDotalwaysDotthrown, value: typings.std.Error): Chainable[Subject] = js.native
+  /**
+    * Causes all `.key` assertions that follow in the chain to only require that the target have at least one of the given keys. This is the opposite of `.all`, which requires that the target have all of the given keys.
+    * @example
+    *    cy.wrap({ a: 1, b: 2 }).should('have.any.key', 'a')
+    * @see http://chaijs.com/api/bdd/#method_any
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @alias should
+    * @see https://on.cypress.io/and
+    */
+  @JSName("and")
+  def and_haveanykey(chainer: haveDotanyDotkey, value: String*): Chainable[Subject] = js.native
   /**
     * Causes all `.keys` assertions that follow in the chain to only require that the target have at least one of the given keys. This is the opposite of `.all`, which requires that the target have all of the given keys.
     * @example
@@ -6979,7 +7012,7 @@ trait Chainable[Subject] extends js.Object {
     *    cy.get('.left-nav>.nav').find('>li')
     */
   def find[E /* <: Node */](selector: String): Chainable[JQuery[E]] = js.native
-  def find[E /* <: Node */](selector: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[E]] = js.native
+  def find[E /* <: Node */](selector: String, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[E]] = js.native
   /**
     * Get the descendent DOM elements of a specific selector.
     *
@@ -6990,479 +7023,479 @@ trait Chainable[Subject] extends js.Object {
   @JSName("find")
   def find_a(selector: a): Chainable[JQuery[HTMLAnchorElement]] = js.native
   @JSName("find")
-  def find_a(selector: a, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLAnchorElement]] = js.native
+  def find_a(selector: a, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLAnchorElement]] = js.native
   @JSName("find")
   def find_abbr(selector: abbr): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_abbr(selector: abbr, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_abbr(selector: abbr, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_address(selector: address): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_address(selector: address, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_address(selector: address, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_applet(selector: applet): Chainable[JQuery[HTMLAppletElement]] = js.native
   @JSName("find")
-  def find_applet(selector: applet, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLAppletElement]] = js.native
+  def find_applet(selector: applet, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLAppletElement]] = js.native
   @JSName("find")
   def find_area(selector: area): Chainable[JQuery[HTMLAreaElement]] = js.native
   @JSName("find")
-  def find_area(selector: area, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLAreaElement]] = js.native
+  def find_area(selector: area, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLAreaElement]] = js.native
   @JSName("find")
   def find_article(selector: article): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_article(selector: article, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_article(selector: article, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_aside(selector: aside): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_aside(selector: aside, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_aside(selector: aside, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_audio(selector: audio): Chainable[JQuery[HTMLAudioElement]] = js.native
   @JSName("find")
-  def find_audio(selector: audio, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLAudioElement]] = js.native
+  def find_audio(selector: audio, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLAudioElement]] = js.native
   @JSName("find")
   def find_b(selector: b): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_b(selector: b, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_b(selector: b, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_base(selector: base_): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("find")
-  def find_base(selector: base_, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def find_base(selector: base_, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("find")
   def find_basefont(selector: basefont): Chainable[JQuery[HTMLBaseFontElement]] = js.native
   @JSName("find")
-  def find_basefont(selector: basefont, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLBaseFontElement]] = js.native
+  def find_basefont(selector: basefont, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLBaseFontElement]] = js.native
   @JSName("find")
   def find_bdi(selector: bdi): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_bdi(selector: bdi, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_bdi(selector: bdi, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_bdo(selector: bdo): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_bdo(selector: bdo, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_bdo(selector: bdo, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_blockquote(selector: blockquote): Chainable[JQuery[HTMLQuoteElement]] = js.native
   @JSName("find")
-  def find_blockquote(selector: blockquote, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLQuoteElement]] = js.native
+  def find_blockquote(selector: blockquote, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLQuoteElement]] = js.native
   @JSName("find")
   def find_body(selector: body): Chainable[JQuery[HTMLBodyElement]] = js.native
   @JSName("find")
-  def find_body(selector: body, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLBodyElement]] = js.native
+  def find_body(selector: body, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLBodyElement]] = js.native
   @JSName("find")
   def find_br(selector: br): Chainable[JQuery[HTMLBRElement]] = js.native
   @JSName("find")
-  def find_br(selector: br, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLBRElement]] = js.native
+  def find_br(selector: br, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLBRElement]] = js.native
   @JSName("find")
   def find_button(selector: button): Chainable[JQuery[HTMLButtonElement]] = js.native
   @JSName("find")
-  def find_button(selector: button, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLButtonElement]] = js.native
+  def find_button(selector: button, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLButtonElement]] = js.native
   @JSName("find")
   def find_canvas(selector: canvas): Chainable[JQuery[HTMLCanvasElement]] = js.native
   @JSName("find")
-  def find_canvas(selector: canvas, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLCanvasElement]] = js.native
+  def find_canvas(selector: canvas, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLCanvasElement]] = js.native
   @JSName("find")
   def find_caption(selector: caption): Chainable[JQuery[HTMLTableCaptionElement]] = js.native
   @JSName("find")
-  def find_caption(selector: caption, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableCaptionElement]] = js.native
+  def find_caption(selector: caption, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLTableCaptionElement]] = js.native
   @JSName("find")
   def find_cite(selector: cite): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_cite(selector: cite, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_cite(selector: cite, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_code(selector: code): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_code(selector: code, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_code(selector: code, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_col(selector: col): Chainable[JQuery[HTMLTableColElement]] = js.native
   @JSName("find")
-  def find_col(selector: col, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableColElement]] = js.native
+  def find_col(selector: col, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLTableColElement]] = js.native
   @JSName("find")
   def find_colgroup(selector: colgroup): Chainable[JQuery[HTMLTableColElement]] = js.native
   @JSName("find")
-  def find_colgroup(selector: colgroup, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableColElement]] = js.native
+  def find_colgroup(selector: colgroup, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLTableColElement]] = js.native
   @JSName("find")
   def find_data(selector: data): Chainable[JQuery[HTMLDataElement]] = js.native
   @JSName("find")
-  def find_data(selector: data, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLDataElement]] = js.native
+  def find_data(selector: data, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLDataElement]] = js.native
   @JSName("find")
   def find_datalist(selector: datalist): Chainable[JQuery[HTMLDataListElement]] = js.native
   @JSName("find")
-  def find_datalist(selector: datalist, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLDataListElement]] = js.native
+  def find_datalist(selector: datalist, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLDataListElement]] = js.native
   @JSName("find")
   def find_dd(selector: dd): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_dd(selector: dd, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_dd(selector: dd, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_del(selector: del): Chainable[JQuery[HTMLModElement]] = js.native
   @JSName("find")
-  def find_del(selector: del, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLModElement]] = js.native
+  def find_del(selector: del, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLModElement]] = js.native
   @JSName("find")
   def find_details(selector: details): Chainable[JQuery[HTMLDetailsElement]] = js.native
   @JSName("find")
-  def find_details(selector: details, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLDetailsElement]] = js.native
+  def find_details(selector: details, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLDetailsElement]] = js.native
   @JSName("find")
   def find_dfn(selector: dfn): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_dfn(selector: dfn, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_dfn(selector: dfn, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_dialog(selector: dialog): Chainable[JQuery[HTMLDialogElement]] = js.native
   @JSName("find")
-  def find_dialog(selector: dialog, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLDialogElement]] = js.native
+  def find_dialog(selector: dialog, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLDialogElement]] = js.native
   @JSName("find")
   def find_dir(selector: dir): Chainable[JQuery[HTMLDirectoryElement]] = js.native
   @JSName("find")
-  def find_dir(selector: dir, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLDirectoryElement]] = js.native
+  def find_dir(selector: dir, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLDirectoryElement]] = js.native
   @JSName("find")
   def find_div(selector: div): Chainable[JQuery[HTMLDivElement]] = js.native
   @JSName("find")
-  def find_div(selector: div, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLDivElement]] = js.native
+  def find_div(selector: div, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLDivElement]] = js.native
   @JSName("find")
   def find_dl(selector: dl): Chainable[JQuery[HTMLDListElement]] = js.native
   @JSName("find")
-  def find_dl(selector: dl, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLDListElement]] = js.native
+  def find_dl(selector: dl, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLDListElement]] = js.native
   @JSName("find")
   def find_dt(selector: dt): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_dt(selector: dt, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_dt(selector: dt, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_em(selector: em): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_em(selector: em, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_em(selector: em, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_embed(selector: embed): Chainable[JQuery[HTMLEmbedElement]] = js.native
   @JSName("find")
-  def find_embed(selector: embed, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLEmbedElement]] = js.native
+  def find_embed(selector: embed, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLEmbedElement]] = js.native
   @JSName("find")
   def find_fieldset(selector: fieldset): Chainable[JQuery[HTMLFieldSetElement]] = js.native
   @JSName("find")
-  def find_fieldset(selector: fieldset, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLFieldSetElement]] = js.native
+  def find_fieldset(selector: fieldset, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLFieldSetElement]] = js.native
   @JSName("find")
   def find_figcaption(selector: figcaption): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_figcaption(selector: figcaption, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_figcaption(selector: figcaption, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_figure(selector: figure): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_figure(selector: figure, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_figure(selector: figure, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_font(selector: font): Chainable[JQuery[HTMLFontElement]] = js.native
   @JSName("find")
-  def find_font(selector: font, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLFontElement]] = js.native
+  def find_font(selector: font, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLFontElement]] = js.native
   @JSName("find")
   def find_footer(selector: footer): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_footer(selector: footer, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_footer(selector: footer, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_form(selector: form): Chainable[JQuery[HTMLFormElement]] = js.native
   @JSName("find")
-  def find_form(selector: form, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLFormElement]] = js.native
+  def find_form(selector: form, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLFormElement]] = js.native
   @JSName("find")
   def find_frame(selector: frame): Chainable[JQuery[HTMLFrameElement]] = js.native
   @JSName("find")
-  def find_frame(selector: frame, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLFrameElement]] = js.native
+  def find_frame(selector: frame, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLFrameElement]] = js.native
   @JSName("find")
   def find_frameset(selector: frameset): Chainable[JQuery[HTMLFrameSetElement]] = js.native
   @JSName("find")
-  def find_frameset(selector: frameset, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLFrameSetElement]] = js.native
+  def find_frameset(selector: frameset, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLFrameSetElement]] = js.native
   @JSName("find")
   def find_h1(selector: h1): Chainable[JQuery[HTMLHeadingElement]] = js.native
   @JSName("find")
-  def find_h1(selector: h1, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadingElement]] = js.native
+  def find_h1(selector: h1, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLHeadingElement]] = js.native
   @JSName("find")
   def find_h2(selector: h2): Chainable[JQuery[HTMLHeadingElement]] = js.native
   @JSName("find")
-  def find_h2(selector: h2, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadingElement]] = js.native
+  def find_h2(selector: h2, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLHeadingElement]] = js.native
   @JSName("find")
   def find_h3(selector: h3): Chainable[JQuery[HTMLHeadingElement]] = js.native
   @JSName("find")
-  def find_h3(selector: h3, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadingElement]] = js.native
+  def find_h3(selector: h3, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLHeadingElement]] = js.native
   @JSName("find")
   def find_h4(selector: h4): Chainable[JQuery[HTMLHeadingElement]] = js.native
   @JSName("find")
-  def find_h4(selector: h4, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadingElement]] = js.native
+  def find_h4(selector: h4, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLHeadingElement]] = js.native
   @JSName("find")
   def find_h5(selector: h5): Chainable[JQuery[HTMLHeadingElement]] = js.native
   @JSName("find")
-  def find_h5(selector: h5, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadingElement]] = js.native
+  def find_h5(selector: h5, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLHeadingElement]] = js.native
   @JSName("find")
   def find_h6(selector: h6): Chainable[JQuery[HTMLHeadingElement]] = js.native
   @JSName("find")
-  def find_h6(selector: h6, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadingElement]] = js.native
+  def find_h6(selector: h6, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLHeadingElement]] = js.native
   @JSName("find")
   def find_head(selector: head): Chainable[JQuery[HTMLHeadElement]] = js.native
   @JSName("find")
-  def find_head(selector: head, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadElement]] = js.native
+  def find_head(selector: head, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLHeadElement]] = js.native
   @JSName("find")
   def find_header(selector: header): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_header(selector: header, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_header(selector: header, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_hgroup(selector: hgroup): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_hgroup(selector: hgroup, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_hgroup(selector: hgroup, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_hr(selector: hr): Chainable[JQuery[HTMLHRElement]] = js.native
   @JSName("find")
-  def find_hr(selector: hr, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHRElement]] = js.native
+  def find_hr(selector: hr, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLHRElement]] = js.native
   @JSName("find")
   def find_html(selector: html_): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("find")
-  def find_html(selector: html_, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def find_html(selector: html_, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("find")
   def find_i(selector: i): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_i(selector: i, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_i(selector: i, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_iframe(selector: iframe): Chainable[JQuery[HTMLIFrameElement]] = js.native
   @JSName("find")
-  def find_iframe(selector: iframe, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLIFrameElement]] = js.native
+  def find_iframe(selector: iframe, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLIFrameElement]] = js.native
   @JSName("find")
   def find_img(selector: img): Chainable[JQuery[HTMLImageElement]] = js.native
   @JSName("find")
-  def find_img(selector: img, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLImageElement]] = js.native
+  def find_img(selector: img, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLImageElement]] = js.native
   @JSName("find")
   def find_input(selector: input): Chainable[JQuery[HTMLInputElement]] = js.native
   @JSName("find")
-  def find_input(selector: input, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLInputElement]] = js.native
+  def find_input(selector: input, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLInputElement]] = js.native
   @JSName("find")
   def find_ins(selector: ins): Chainable[JQuery[HTMLModElement]] = js.native
   @JSName("find")
-  def find_ins(selector: ins, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLModElement]] = js.native
+  def find_ins(selector: ins, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLModElement]] = js.native
   @JSName("find")
   def find_kbd(selector: kbd): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_kbd(selector: kbd, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_kbd(selector: kbd, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_label(selector: label): Chainable[JQuery[HTMLLabelElement]] = js.native
   @JSName("find")
-  def find_label(selector: label, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLLabelElement]] = js.native
+  def find_label(selector: label, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLLabelElement]] = js.native
   @JSName("find")
   def find_legend(selector: legend): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("find")
-  def find_legend(selector: legend, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLLegendElement]] = js.native
+  def find_legend(selector: legend, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("find")
   def find_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("find")
-  def find_li(selector: li, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLLIElement]] = js.native
+  def find_li(selector: li, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("find")
   def find_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("find")
-  def find_link(selector: link, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLLinkElement]] = js.native
+  def find_link(selector: link, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("find")
   def find_main(selector: main): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_main(selector: main, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_main(selector: main, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_map(selector: map): Chainable[JQuery[HTMLMapElement]] = js.native
   @JSName("find")
-  def find_map(selector: map, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLMapElement]] = js.native
+  def find_map(selector: map, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLMapElement]] = js.native
   @JSName("find")
   def find_mark(selector: mark): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_mark(selector: mark, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_mark(selector: mark, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_marquee(selector: marquee): Chainable[JQuery[HTMLMarqueeElement]] = js.native
   @JSName("find")
-  def find_marquee(selector: marquee, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLMarqueeElement]] = js.native
+  def find_marquee(selector: marquee, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLMarqueeElement]] = js.native
   @JSName("find")
   def find_menu(selector: menu): Chainable[JQuery[HTMLMenuElement]] = js.native
   @JSName("find")
-  def find_menu(selector: menu, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLMenuElement]] = js.native
+  def find_menu(selector: menu, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLMenuElement]] = js.native
   @JSName("find")
   def find_meta(selector: meta): Chainable[JQuery[HTMLMetaElement]] = js.native
   @JSName("find")
-  def find_meta(selector: meta, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLMetaElement]] = js.native
+  def find_meta(selector: meta, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLMetaElement]] = js.native
   @JSName("find")
   def find_meter(selector: meter): Chainable[JQuery[HTMLMeterElement]] = js.native
   @JSName("find")
-  def find_meter(selector: meter, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLMeterElement]] = js.native
+  def find_meter(selector: meter, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLMeterElement]] = js.native
   @JSName("find")
   def find_nav(selector: nav): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_nav(selector: nav, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_nav(selector: nav, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_noscript(selector: noscript): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_noscript(selector: noscript, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_noscript(selector: noscript, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_object(selector: object_): Chainable[JQuery[HTMLObjectElement]] = js.native
   @JSName("find")
-  def find_object(selector: object_, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLObjectElement]] = js.native
+  def find_object(selector: object_, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLObjectElement]] = js.native
   @JSName("find")
   def find_ol(selector: ol): Chainable[JQuery[HTMLOListElement]] = js.native
   @JSName("find")
-  def find_ol(selector: ol, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLOListElement]] = js.native
+  def find_ol(selector: ol, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLOListElement]] = js.native
   @JSName("find")
   def find_optgroup(selector: optgroup): Chainable[JQuery[HTMLOptGroupElement]] = js.native
   @JSName("find")
-  def find_optgroup(selector: optgroup, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLOptGroupElement]] = js.native
+  def find_optgroup(selector: optgroup, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLOptGroupElement]] = js.native
   @JSName("find")
   def find_option(selector: option): Chainable[JQuery[HTMLOptionElement]] = js.native
   @JSName("find")
-  def find_option(selector: option, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLOptionElement]] = js.native
+  def find_option(selector: option, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLOptionElement]] = js.native
   @JSName("find")
   def find_output(selector: output): Chainable[JQuery[HTMLOutputElement]] = js.native
   @JSName("find")
-  def find_output(selector: output, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLOutputElement]] = js.native
+  def find_output(selector: output, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLOutputElement]] = js.native
   @JSName("find")
   def find_p(selector: p): Chainable[JQuery[HTMLParagraphElement]] = js.native
   @JSName("find")
-  def find_p(selector: p, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLParagraphElement]] = js.native
+  def find_p(selector: p, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLParagraphElement]] = js.native
   @JSName("find")
   def find_param(selector: param): Chainable[JQuery[HTMLParamElement]] = js.native
   @JSName("find")
-  def find_param(selector: param, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLParamElement]] = js.native
+  def find_param(selector: param, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLParamElement]] = js.native
   @JSName("find")
   def find_picture(selector: picture): Chainable[JQuery[HTMLPictureElement]] = js.native
   @JSName("find")
-  def find_picture(selector: picture, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLPictureElement]] = js.native
+  def find_picture(selector: picture, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLPictureElement]] = js.native
   @JSName("find")
   def find_pre(selector: pre): Chainable[JQuery[HTMLPreElement]] = js.native
   @JSName("find")
-  def find_pre(selector: pre, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLPreElement]] = js.native
+  def find_pre(selector: pre, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLPreElement]] = js.native
   @JSName("find")
   def find_progress(selector: progress_): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("find")
-  def find_progress(selector: progress_, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def find_progress(selector: progress_, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("find")
   def find_q(selector: q): Chainable[JQuery[HTMLQuoteElement]] = js.native
   @JSName("find")
-  def find_q(selector: q, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLQuoteElement]] = js.native
+  def find_q(selector: q, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLQuoteElement]] = js.native
   @JSName("find")
   def find_rp(selector: rp): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_rp(selector: rp, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_rp(selector: rp, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_rt(selector: rt): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_rt(selector: rt, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_rt(selector: rt, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_ruby(selector: ruby): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_ruby(selector: ruby, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_ruby(selector: ruby, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_s(selector: s): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_s(selector: s, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_s(selector: s, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_samp(selector: samp): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_samp(selector: samp, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_samp(selector: samp, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_script(selector: script): Chainable[JQuery[HTMLScriptElement]] = js.native
   @JSName("find")
-  def find_script(selector: script, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLScriptElement]] = js.native
+  def find_script(selector: script, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLScriptElement]] = js.native
   @JSName("find")
   def find_section(selector: section): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_section(selector: section, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_section(selector: section, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_select(selector: select): Chainable[JQuery[HTMLSelectElement]] = js.native
   @JSName("find")
-  def find_select(selector: select, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLSelectElement]] = js.native
+  def find_select(selector: select, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLSelectElement]] = js.native
   @JSName("find")
   def find_slot(selector: slot): Chainable[JQuery[HTMLSlotElement]] = js.native
   @JSName("find")
-  def find_slot(selector: slot, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLSlotElement]] = js.native
+  def find_slot(selector: slot, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLSlotElement]] = js.native
   @JSName("find")
   def find_small(selector: small): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_small(selector: small, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_small(selector: small, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_source(selector: source): Chainable[JQuery[HTMLSourceElement]] = js.native
   @JSName("find")
-  def find_source(selector: source, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLSourceElement]] = js.native
+  def find_source(selector: source, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLSourceElement]] = js.native
   @JSName("find")
   def find_span(selector: span): Chainable[JQuery[HTMLSpanElement]] = js.native
   @JSName("find")
-  def find_span(selector: span, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLSpanElement]] = js.native
+  def find_span(selector: span, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLSpanElement]] = js.native
   @JSName("find")
   def find_strong(selector: strong): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_strong(selector: strong, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_strong(selector: strong, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_style(selector: style): Chainable[JQuery[HTMLStyleElement]] = js.native
   @JSName("find")
-  def find_style(selector: style, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLStyleElement]] = js.native
+  def find_style(selector: style, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLStyleElement]] = js.native
   @JSName("find")
   def find_sub(selector: sub): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_sub(selector: sub, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_sub(selector: sub, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_summary(selector: summary): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_summary(selector: summary, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_summary(selector: summary, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_sup(selector: sup): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_sup(selector: sup, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_sup(selector: sup, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_table(selector: table): Chainable[JQuery[HTMLTableElement]] = js.native
   @JSName("find")
-  def find_table(selector: table, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableElement]] = js.native
+  def find_table(selector: table, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLTableElement]] = js.native
   @JSName("find")
   def find_tbody(selector: tbody): Chainable[JQuery[HTMLTableSectionElement]] = js.native
   @JSName("find")
-  def find_tbody(selector: tbody, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableSectionElement]] = js.native
+  def find_tbody(selector: tbody, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLTableSectionElement]] = js.native
   @JSName("find")
   def find_td(selector: td): Chainable[JQuery[HTMLTableDataCellElement]] = js.native
   @JSName("find")
-  def find_td(selector: td, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableDataCellElement]] = js.native
+  def find_td(selector: td, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLTableDataCellElement]] = js.native
   @JSName("find")
   def find_template(selector: template): Chainable[JQuery[HTMLTemplateElement]] = js.native
   @JSName("find")
-  def find_template(selector: template, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTemplateElement]] = js.native
+  def find_template(selector: template, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLTemplateElement]] = js.native
   @JSName("find")
   def find_textarea(selector: textarea): Chainable[JQuery[HTMLTextAreaElement]] = js.native
   @JSName("find")
-  def find_textarea(selector: textarea, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTextAreaElement]] = js.native
+  def find_textarea(selector: textarea, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLTextAreaElement]] = js.native
   @JSName("find")
   def find_tfoot(selector: tfoot): Chainable[JQuery[HTMLTableSectionElement]] = js.native
   @JSName("find")
-  def find_tfoot(selector: tfoot, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableSectionElement]] = js.native
+  def find_tfoot(selector: tfoot, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLTableSectionElement]] = js.native
   @JSName("find")
   def find_th(selector: th): Chainable[JQuery[HTMLTableHeaderCellElement]] = js.native
   @JSName("find")
-  def find_th(selector: th, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableHeaderCellElement]] = js.native
+  def find_th(selector: th, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLTableHeaderCellElement]] = js.native
   @JSName("find")
   def find_thead(selector: thead): Chainable[JQuery[HTMLTableSectionElement]] = js.native
   @JSName("find")
-  def find_thead(selector: thead, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableSectionElement]] = js.native
+  def find_thead(selector: thead, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLTableSectionElement]] = js.native
   @JSName("find")
   def find_time(selector: time): Chainable[JQuery[HTMLTimeElement]] = js.native
   @JSName("find")
-  def find_time(selector: time, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTimeElement]] = js.native
+  def find_time(selector: time, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLTimeElement]] = js.native
   @JSName("find")
   def find_title(selector: title): Chainable[JQuery[HTMLTitleElement]] = js.native
   @JSName("find")
-  def find_title(selector: title, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTitleElement]] = js.native
+  def find_title(selector: title, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLTitleElement]] = js.native
   @JSName("find")
   def find_tr(selector: tr): Chainable[JQuery[HTMLTableRowElement]] = js.native
   @JSName("find")
-  def find_tr(selector: tr, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableRowElement]] = js.native
+  def find_tr(selector: tr, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLTableRowElement]] = js.native
   @JSName("find")
   def find_track(selector: track): Chainable[JQuery[HTMLTrackElement]] = js.native
   @JSName("find")
-  def find_track(selector: track, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTrackElement]] = js.native
+  def find_track(selector: track, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLTrackElement]] = js.native
   @JSName("find")
   def find_u(selector: u): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_u(selector: u, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_u(selector: u, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_ul(selector: ul): Chainable[JQuery[HTMLUListElement]] = js.native
   @JSName("find")
-  def find_ul(selector: ul, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLUListElement]] = js.native
+  def find_ul(selector: ul, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLUListElement]] = js.native
   @JSName("find")
   def find_var(selector: `var`): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_var(selector: `var`, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_var(selector: `var`, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
   def find_video(selector: video): Chainable[JQuery[HTMLVideoElement]] = js.native
   @JSName("find")
-  def find_video(selector: video, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLVideoElement]] = js.native
+  def find_video(selector: video, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLVideoElement]] = js.native
   @JSName("find")
   def find_wbr(selector: wbr): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_wbr(selector: wbr, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def find_wbr(selector: wbr, options: PartialLoggableTimeoutablIncludeShadowDom): Chainable[JQuery[HTMLElement]] = js.native
   /**
     * Get the first DOM element within a set of DOM elements.
     *
@@ -14092,8 +14125,8 @@ trait Chainable[Subject] extends js.Object {
     *    cy.get(".post").screenshot("post-element")
     */
   def screenshot(fileName: String): Chainable[Null] = js.native
-  def screenshot(fileName: String, options: PartialLoggableTimeoutablAfterScreenshot): Chainable[Null] = js.native
-  def screenshot(options: PartialLoggableTimeoutablAfterScreenshot): Chainable[Null] = js.native
+  def screenshot(fileName: String, options: PartialLoggableTimeoutablBlackout): Chainable[Null] = js.native
+  def screenshot(options: PartialLoggableTimeoutablBlackout): Chainable[Null] = js.native
   /**
     * Scroll an element into view.
     *
@@ -14155,6 +14188,20 @@ trait Chainable[Subject] extends js.Object {
     */
   def setCookie(name: String, value: String): Chainable[Cookie] = js.native
   def setCookie(name: String, value: String, options: PartialSetCookieOptions): Chainable[Cookie] = js.native
+  /**
+    * Traverse into an element's shadow root.
+    * Requires `experimentalShadowDomSupport: true` config option
+    *
+    @example
+    ```js
+    cy.get('.top-level > my-component')
+    .shadow()
+    .find('.my-button')
+    .click()
+    ```
+    * @see https://on.cypress.io/experimental
+    */
+  def shadow(): Chainable[Subject] = js.native
   // fallback
   /**
     * Create an assertion. Assertions are automatically retried until they pass or time out.
@@ -15185,6 +15232,23 @@ trait Chainable[Subject] extends js.Object {
   @JSName("should")
   def should_exist(chainer: exist): Chainable[Subject] = js.native
   /**
+    * Causes all `.key` assertions that follow in the chain to require that the target have all of the given keys. This is the opposite of `.any`, which only requires that the target have at least one of the given keys.
+    * @example
+    *    cy.wrap({ a: 1, b: 2 }).should('have.all.key', 'a', 'b')
+    * @see http://chaijs.com/api/bdd/#method_all
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
+    */
+  @JSName("should")
+  def should_haveallkey(chainer: haveDotallDotkey, value: String*): Chainable[Subject] = js.native
+  /**
     * Causes all `.keys` assertions that follow in the chain to require that the target have all of the given keys. This is the opposite of `.any`, which only requires that the target have at least one of the given keys.
     * @example
     *    cy.wrap({ a: 1, b: 2 }).should('have.all.keys', 'a', 'b')
@@ -15222,6 +15286,23 @@ trait Chainable[Subject] extends js.Object {
   def should_havealwaysthrown(chainer: haveDotalwaysDotthrown, value: String): Chainable[Subject] = js.native
   @JSName("should")
   def should_havealwaysthrown(chainer: haveDotalwaysDotthrown, value: typings.std.Error): Chainable[Subject] = js.native
+  /**
+    * Causes all `.key` assertions that follow in the chain to only require that the target have at least one of the given keys. This is the opposite of `.all`, which requires that the target have all of the given keys.
+    * @example
+    *    cy.wrap({ a: 1, b: 2 }).should('have.any.key', 'a')
+    * @see http://chaijs.com/api/bdd/#method_any
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @see https://on.cypress.io/should
+    * @example
+    *   // Assert on the href of the location
+    *   cy.location('href').should('contain', '/tag/tutorials/')
+    */
+  @JSName("should")
+  def should_haveanykey(chainer: haveDotanyDotkey, value: String*): Chainable[Subject] = js.native
   /**
     * Causes all `.keys` assertions that follow in the chain to only require that the target have at least one of the given keys. This is the opposite of `.all`, which requires that the target have all of the given keys.
     * @example
@@ -20523,8 +20604,8 @@ trait Chainable[Subject] extends js.Object {
     * @example
     *    cy.wait(1000) // wait for 1 second
     */
-  def wait(ms: Double): Chainable[js.UndefOr[scala.Nothing]] = js.native
-  def wait(ms: Double, options: PartialLoggableTimeoutabl): Chainable[js.UndefOr[scala.Nothing]] = js.native
+  def wait(ms: Double): Chainable[Subject] = js.native
+  def wait(ms: Double, options: PartialLoggableTimeoutabl): Chainable[Subject] = js.native
   /**
     * Get the window object of the page that is currently active.
     *

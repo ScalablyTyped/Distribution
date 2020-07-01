@@ -27,7 +27,7 @@ trait As[T /* <: SupportedMenuLinkComponent */] extends js.Object {
 
 object As {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.reachMenuButton.mod.SupportedMenuLinkComponent */ T](
     _ref: /* node */ HTMLElement => Unit = null,
     as: String = null,
     component: ResolvedMenuLinkComponent[T] = null,

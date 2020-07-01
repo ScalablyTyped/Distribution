@@ -4,6 +4,7 @@ import typings.vscode.Thenable
 import typings.vscode.anon.Increment
 import typings.vscode.anon.PreserveFocus
 import typings.vscode.anon.QuickPickOptionscanPickMa
+import typings.vscode.anon.SupportsMultipleEditorsPerDocument
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,8 +58,20 @@ object window extends js.Object {
     showOptions: ViewColumn,
     options: WebviewPanelOptions with WebviewOptions
   ): WebviewPanel = js.native
+  def registerCustomEditorProvider(viewType: String, provider: CustomEditorProvider[CustomDocument]): Disposable = js.native
+  def registerCustomEditorProvider(
+    viewType: String,
+    provider: CustomEditorProvider[CustomDocument],
+    options: SupportsMultipleEditorsPerDocument
+  ): Disposable = js.native
+  def registerCustomEditorProvider(viewType: String, provider: CustomReadonlyEditorProvider[CustomDocument]): Disposable = js.native
+  def registerCustomEditorProvider(
+    viewType: String,
+    provider: CustomReadonlyEditorProvider[CustomDocument],
+    options: SupportsMultipleEditorsPerDocument
+  ): Disposable = js.native
   def registerCustomEditorProvider(viewType: String, provider: CustomTextEditorProvider): Disposable = js.native
-  def registerCustomEditorProvider(viewType: String, provider: CustomTextEditorProvider, options: typings.vscode.anon.WebviewOptions): Disposable = js.native
+  def registerCustomEditorProvider(viewType: String, provider: CustomTextEditorProvider, options: SupportsMultipleEditorsPerDocument): Disposable = js.native
   def registerTreeDataProvider[T](viewId: String, treeDataProvider: TreeDataProvider[T]): Disposable = js.native
   def registerUriHandler(handler: UriHandler): Disposable = js.native
   def registerWebviewPanelSerializer(viewType: String, serializer: WebviewPanelSerializer): Disposable = js.native

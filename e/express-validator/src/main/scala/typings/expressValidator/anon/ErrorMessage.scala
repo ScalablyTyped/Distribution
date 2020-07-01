@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ErrorMessage[K /* <: /* keyof express-validator.express-validator/src/chain/validators.Validators<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 79 */ js.Any */] extends ValidatorSchemaOptions[K] {
+trait ErrorMessage[K /* <: /* keyof express-validator.express-validator/src/chain/validators.Validators<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 82 */ js.Any */] extends ValidatorSchemaOptions[K] {
   var errorMessage: js.UndefOr[DynamicMessageCreator | js.Any] = js.undefined
   var negated: js.UndefOr[Boolean] = js.undefined
   var options: js.UndefOr[
@@ -19,7 +19,7 @@ trait ErrorMessage[K /* <: /* keyof express-validator.express-validator/src/chai
 
 object ErrorMessage {
   @scala.inline
-  def apply[K](
+  def apply[/* <: / * keyof express-validator.express-validator/src/chain/validators.Validators<any> * / / * import warning: LimitUnionLength.leaveTypeRef Was union type with length 82 * / js.Any */ K](
     errorMessage: DynamicMessageCreator | js.Any = null,
     negated: js.UndefOr[Boolean] = js.undefined,
     options: (Parameters[

@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashFindLast extends js.Object {
+trait LodashFindLast extends LodashConvertible {
   def apply[T](predicate: ValueIterateeCustom[T, Boolean]): js.UndefOr[T] = js.native
   def apply[T /* <: js.Object */](
     predicate: ValueIterateeCustom[

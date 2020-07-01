@@ -11,7 +11,7 @@ trait ListTagsForResourceOutput extends js.Object {
     */
   var NextToken: js.UndefOr[Token] = js.native
   /**
-    * The list of tags associated with this workgroup.
+    * The list of tags associated with the specified resource.
     */
   var Tags: js.UndefOr[TagList] = js.native
 }

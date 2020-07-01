@@ -23,7 +23,6 @@ object settingsServiceMod extends js.Object {
     var logTraceAfterSampling: Boolean = js.native
     var loggingEnabled: Boolean = js.native
     var networkRequestsSamplingRate: Double = js.native
-    var shouldSendToFl: Boolean = js.native
     var tracesSamplingRate: Double = js.native
     var transportKey: String = js.native
     def getApiKey(): String = js.native

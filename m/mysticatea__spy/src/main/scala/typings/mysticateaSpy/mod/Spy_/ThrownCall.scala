@@ -17,7 +17,7 @@ trait ThrownCall[T /* <: js.Function1[/* repeated */ js.Any, _] */] extends Call
 
 object ThrownCall {
   @scala.inline
-  def apply[T](
+  def apply[/* <: js.Function1[/ * repeated * / js.Any, _] */ T](
     arguments: Parameters[T],
     `throw`: js.Any,
     `type`: `throw`,

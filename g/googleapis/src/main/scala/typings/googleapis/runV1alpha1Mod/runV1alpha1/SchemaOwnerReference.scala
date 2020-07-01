@@ -56,8 +56,8 @@ object SchemaOwnerReference {
   ): SchemaOwnerReference = {
     val __obj = js.Dynamic.literal()
     if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(blockOwnerDeletion)) __obj.updateDynamic("blockOwnerDeletion")(blockOwnerDeletion.asInstanceOf[js.Any])
-    if (!js.isUndefined(controller)) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockOwnerDeletion)) __obj.updateDynamic("blockOwnerDeletion")(blockOwnerDeletion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(controller)) __obj.updateDynamic("controller")(controller.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])

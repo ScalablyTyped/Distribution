@@ -19,14 +19,13 @@ trait AcknowledgeAbuse extends js.Object {
   var oauth_token: js.UndefOr[String] = js.undefined
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-    * Overrides userIp if both are provided.
-    */
+  /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
-  /** Whether the requesting application supports Team Drives. */
+  /** Whether the requesting application supports both My Drives and shared drives. */
+  var supportsAllDrives: js.UndefOr[Boolean] = js.undefined
+  /** Deprecated use supportsAllDrives instead. */
   var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
-  /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
+  /** Deprecated. Please use quotaUser instead. */
   var userIp: js.UndefOr[String] = js.undefined
 }
 
@@ -41,6 +40,7 @@ object AcknowledgeAbuse {
     oauth_token: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
     quotaUser: String = null,
+    supportsAllDrives: js.UndefOr[Boolean] = js.undefined,
     supportsTeamDrives: js.UndefOr[Boolean] = js.undefined,
     userIp: String = null
   ): AcknowledgeAbuse = {
@@ -52,6 +52,7 @@ object AcknowledgeAbuse {
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsAllDrives)) __obj.updateDynamic("supportsAllDrives")(supportsAllDrives.get.asInstanceOf[js.Any])
     if (!js.isUndefined(supportsTeamDrives)) __obj.updateDynamic("supportsTeamDrives")(supportsTeamDrives.get.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcknowledgeAbuse]

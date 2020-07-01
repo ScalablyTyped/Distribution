@@ -1,8 +1,8 @@
 package typings.googleapis.plusV1Mod.plusV1
 
-import typings.googleapis.AnonActor
-import typings.googleapis.AnonClientSpecificActorInfo
-import typings.googleapis.AnonTitle
+import typings.googleapis.anon.Actor
+import typings.googleapis.anon.ClientSpecificActorInfo
+import typings.googleapis.anon.Title
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait SchemaActivity extends js.Object {
   /**
     * The person who performed this activity.
     */
-  var actor: js.UndefOr[AnonClientSpecificActorInfo] = js.native
+  var actor: js.UndefOr[ClientSpecificActorInfo] = js.native
   /**
     * Street address where this activity occurred.
     */
@@ -56,7 +56,7 @@ trait SchemaActivity extends js.Object {
   /**
     * The object of this activity.
     */
-  var `object`: js.UndefOr[AnonActor] = js.native
+  var `object`: js.UndefOr[Actor] = js.native
   /**
     * ID of the place where this activity occurred.
     */
@@ -68,7 +68,7 @@ trait SchemaActivity extends js.Object {
   /**
     * The service provider that initially published this activity.
     */
-  var provider: js.UndefOr[AnonTitle] = js.native
+  var provider: js.UndefOr[Title] = js.native
   /**
     * The time at which this activity was initially published. Formatted as an
     * RFC 3339 timestamp.
@@ -105,7 +105,7 @@ object SchemaActivity {
   @scala.inline
   def apply(
     access: SchemaAcl = null,
-    actor: AnonClientSpecificActorInfo = null,
+    actor: ClientSpecificActorInfo = null,
     address: String = null,
     annotation: String = null,
     crosspostSource: String = null,
@@ -114,10 +114,10 @@ object SchemaActivity {
     id: String = null,
     kind: String = null,
     location: SchemaPlace = null,
-    `object`: AnonActor = null,
+    `object`: Actor = null,
     placeId: String = null,
     placeName: String = null,
-    provider: AnonTitle = null,
+    provider: Title = null,
     published: String = null,
     radius: String = null,
     title: String = null,

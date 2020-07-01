@@ -1,7 +1,7 @@
 
 # Scala.js typings for devcert
 
-Typings are for version 1.1.0
+Typings are for version 1.1.1
 
 ## Library description:
 Generate trusted local SSL/TLS certificates for local SSL development

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ember-data
 
-Typings are for version 3.1
+Typings are for version 3.16
 
 ## Library description:
 A data layer for your Ember applications.

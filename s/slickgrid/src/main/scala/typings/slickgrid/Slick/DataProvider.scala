@@ -23,7 +23,7 @@ trait DataProvider[T /* <: SlickData */] extends js.Object {
 
 object DataProvider {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.slickgrid.Slick.SlickData */ T](
     getItem: Double => T,
     getLength: () => Double,
     getItemMetadata: /* index */ Double => RowMetadata[T] = null

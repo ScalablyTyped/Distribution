@@ -40,7 +40,7 @@ object swiperEsmMod extends js.Object {
       * Pass here another Swiper instance or array with Swiper instances that should be controlled
       * by this Swiper
       */
-    var control: js.UndefOr[default] = js.native
+    var control: js.UndefOr[default | js.Array[default]] = js.native
   }
   
   @js.native

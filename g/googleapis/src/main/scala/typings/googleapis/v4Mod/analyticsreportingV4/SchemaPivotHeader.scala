@@ -23,11 +23,11 @@ object SchemaPivotHeader {
   @scala.inline
   def apply(
     pivotHeaderEntries: js.Array[SchemaPivotHeaderEntry] = null,
-    totalPivotGroupsCount: Int | Double = null
+    totalPivotGroupsCount: js.UndefOr[Double] = js.undefined
   ): SchemaPivotHeader = {
     val __obj = js.Dynamic.literal()
     if (pivotHeaderEntries != null) __obj.updateDynamic("pivotHeaderEntries")(pivotHeaderEntries.asInstanceOf[js.Any])
-    if (totalPivotGroupsCount != null) __obj.updateDynamic("totalPivotGroupsCount")(totalPivotGroupsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalPivotGroupsCount)) __obj.updateDynamic("totalPivotGroupsCount")(totalPivotGroupsCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPivotHeader]
   }
 }

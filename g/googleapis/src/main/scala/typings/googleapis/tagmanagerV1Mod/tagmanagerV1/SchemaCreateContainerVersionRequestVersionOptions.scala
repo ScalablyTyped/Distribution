@@ -30,7 +30,7 @@ object SchemaCreateContainerVersionRequestVersionOptions {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
-    if (!js.isUndefined(quickPreview)) __obj.updateDynamic("quickPreview")(quickPreview.asInstanceOf[js.Any])
+    if (!js.isUndefined(quickPreview)) __obj.updateDynamic("quickPreview")(quickPreview.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreateContainerVersionRequestVersionOptions]
   }
 }

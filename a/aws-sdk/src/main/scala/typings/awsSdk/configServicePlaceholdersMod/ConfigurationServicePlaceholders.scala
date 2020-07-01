@@ -42,6 +42,7 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var cloudwatch: js.UndefOr[typings.awsSdk.cloudwatchMod.ClientConfiguration] = js.native
   var cloudwatchevents: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.ClientConfiguration] = js.native
   var cloudwatchlogs: js.UndefOr[typings.awsSdk.cloudwatchlogsMod.ClientConfiguration] = js.native
+  var codeartifact: js.UndefOr[typings.awsSdk.codeartifactMod.ClientConfiguration] = js.native
   var codebuild: js.UndefOr[typings.awsSdk.codebuildMod.ClientConfiguration] = js.native
   var codecommit: js.UndefOr[typings.awsSdk.codecommitMod.ClientConfiguration] = js.native
   var codedeploy: js.UndefOr[typings.awsSdk.codedeployMod.ClientConfiguration] = js.native
@@ -106,6 +107,7 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var groundstation: js.UndefOr[typings.awsSdk.groundstationMod.ClientConfiguration] = js.native
   var guardduty: js.UndefOr[typings.awsSdk.guarddutyMod.ClientConfiguration] = js.native
   var health: js.UndefOr[typings.awsSdk.healthMod.ClientConfiguration] = js.native
+  var honeycode: js.UndefOr[typings.awsSdk.honeycodeMod.ClientConfiguration] = js.native
   var iam: js.UndefOr[typings.awsSdk.iamMod.ClientConfiguration] = js.native
   var imagebuilder: js.UndefOr[typings.awsSdk.imagebuilderMod.ClientConfiguration] = js.native
   var importexport: js.UndefOr[typings.awsSdk.importexportMod.ClientConfiguration] = js.native

@@ -73,7 +73,6 @@ trait List extends ClientObject {
     */
   val paragraphs: ParagraphCollection = js.native
   /**
-    *
     * Gets the font of the bullet, number, or picture at the specified level in the list.
     *
     * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -83,7 +82,6 @@ trait List extends ClientObject {
     */
   def getLevelFont(level: Double): Font = js.native
   /**
-    *
     * Gets the paragraphs that occur at the specified level in the list.
     *
     * [Api set: WordApi 1.3]
@@ -92,7 +90,6 @@ trait List extends ClientObject {
     */
   def getLevelParagraphs(level: Double): ParagraphCollection = js.native
   /**
-    *
     * Gets the base64 encoded string representation of the picture at the specified level in the list.
     *
     * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -102,7 +99,6 @@ trait List extends ClientObject {
     */
   def getLevelPicture(level: Double): ClientResult[String] = js.native
   /**
-    *
     * Gets the bullet, number, or picture at the specified level as a string.
     *
     * [Api set: WordApi 1.3]
@@ -111,7 +107,6 @@ trait List extends ClientObject {
     */
   def getLevelString(level: Double): ClientResult[String] = js.native
   /**
-    *
     * Inserts a paragraph at the specified location.
     *
     * [Api set: WordApi 1.3]
@@ -123,7 +118,6 @@ trait List extends ClientObject {
   @JSName("insertParagraph")
   def insertParagraph_After(paragraphText: String, insertLocation: After): Paragraph = js.native
   /**
-    *
     * Inserts a paragraph at the specified location.
     *
     * [Api set: WordApi 1.3]
@@ -140,27 +134,16 @@ trait List extends ClientObject {
   @JSName("insertParagraph")
   def insertParagraph_Start(paragraphText: String, insertLocation: Start): Paragraph = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Word.List` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Word.List` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.List` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): List = js.native
-  def load(option: String): List = js.native
-  def load(option: js.Array[String]): List = js.native
-  def load(option: ListLoadOptions): List = js.native
-  def load(option: Expand): List = js.native
+  def load(options: ListLoadOptions): List = js.native
+  def load(propertyNamesAndPaths: Expand): List = js.native
+  def load(propertyNames: String): List = js.native
+  def load(propertyNames: js.Array[String]): List = js.native
   /**
-    *
     * Resets the font of the bullet, number, or picture at the specified level in the list.
     *
     * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -172,7 +155,6 @@ trait List extends ClientObject {
   def resetLevelFont(level: Double): Unit = js.native
   def resetLevelFont(level: Double, resetFontName: Boolean): Unit = js.native
   /**
-    *
     * Sets the alignment of the bullet, number, or picture at the specified level in the list.
     *
     * [Api set: WordApi 1.3]
@@ -188,7 +170,6 @@ trait List extends ClientObject {
   @JSName("setLevelAlignment")
   def setLevelAlignment_Left(level: Double, alignment: Left): Unit = js.native
   /**
-    *
     * Sets the alignment of the bullet, number, or picture at the specified level in the list.
     *
     * [Api set: WordApi 1.3]
@@ -203,7 +184,6 @@ trait List extends ClientObject {
   @JSName("setLevelAlignment")
   def setLevelAlignment_Unknown(level: Double, alignment: Unknown_): Unit = js.native
   /**
-    *
     * Sets the bullet format at the specified level in the list. If the bullet is 'Custom', the charCode is required.
     *
     * [Api set: WordApi 1.3]
@@ -229,7 +209,6 @@ trait List extends ClientObject {
   @JSName("setLevelBullet")
   def setLevelBullet_Checkmark(level: Double, listBullet: Checkmark, charCode: Double, fontName: String): Unit = js.native
   /**
-    *
     * Sets the bullet format at the specified level in the list. If the bullet is 'Custom', the charCode is required.
     *
     * [Api set: WordApi 1.3]
@@ -270,7 +249,6 @@ trait List extends ClientObject {
   @JSName("setLevelBullet")
   def setLevelBullet_Square(level: Double, listBullet: Square, charCode: Double, fontName: String): Unit = js.native
   /**
-    *
     * Sets the two indents of the specified level in the list.
     *
     * [Api set: WordApi 1.3]
@@ -281,7 +259,6 @@ trait List extends ClientObject {
     */
   def setLevelIndents(level: Double, textIndent: Double, bulletNumberPictureIndent: Double): Unit = js.native
   /**
-    *
     * Sets the numbering format at the specified level in the list.
     *
     * [Api set: WordApi 1.3]
@@ -305,7 +282,6 @@ trait List extends ClientObject {
   @JSName("setLevelNumbering")
   def setLevelNumbering_LowerRoman(level: Double, listNumbering: LowerRoman, formatString: js.Array[String | Double]): Unit = js.native
   /**
-    *
     * Sets the numbering format at the specified level in the list.
     *
     * [Api set: WordApi 1.3]
@@ -327,7 +303,6 @@ trait List extends ClientObject {
   @JSName("setLevelNumbering")
   def setLevelNumbering_UpperRoman(level: Double, listNumbering: UpperRoman, formatString: js.Array[String | Double]): Unit = js.native
   /**
-    *
     * Sets the picture at the specified level in the list.
     *
     * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -339,7 +314,6 @@ trait List extends ClientObject {
   def setLevelPicture(level: Double): Unit = js.native
   def setLevelPicture(level: Double, base64EncodedImage: String): Unit = js.native
   /**
-    *
     * Sets the starting number at the specified level in the list. Default value is 1.
     *
     * [Api set: WordApi 1.3]
@@ -354,11 +328,11 @@ trait List extends ClientObject {
     */
   def toJSON(): ListData = js.native
   /**
-    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
     */
   def track(): List = js.native
   /**
-    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
+    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     */
   def untrack(): List = js.native
 }

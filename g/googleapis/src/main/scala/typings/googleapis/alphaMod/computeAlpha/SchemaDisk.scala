@@ -277,7 +277,7 @@ object SchemaDisk {
     if (lastDetachTimestamp != null) __obj.updateDynamic("lastDetachTimestamp")(lastDetachTimestamp.asInstanceOf[js.Any])
     if (licenseCodes != null) __obj.updateDynamic("licenseCodes")(licenseCodes.asInstanceOf[js.Any])
     if (licenses != null) __obj.updateDynamic("licenses")(licenses.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiWriter)) __obj.updateDynamic("multiWriter")(multiWriter.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiWriter)) __obj.updateDynamic("multiWriter")(multiWriter.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (physicalBlockSizeBytes != null) __obj.updateDynamic("physicalBlockSizeBytes")(physicalBlockSizeBytes.asInstanceOf[js.Any])

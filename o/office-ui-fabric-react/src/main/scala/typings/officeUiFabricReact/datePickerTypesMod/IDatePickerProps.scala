@@ -1,10 +1,10 @@
 package typings.officeUiFabricReact.datePickerTypesMod
 
+import typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek
+import typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear
 import typings.officeUiFabricReact.calendarTypesMod.ICalendarFormatDateCallbacks
 import typings.officeUiFabricReact.calendarTypesMod.ICalendarProps
 import typings.officeUiFabricReact.calloutTypesMod.ICalloutProps
-import typings.officeUiFabricReact.dateValuesMod.DayOfWeek
-import typings.officeUiFabricReact.dateValuesMod.FirstWeekOfYear
 import typings.officeUiFabricReact.textFieldTypesMod.ITextFieldProps
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent

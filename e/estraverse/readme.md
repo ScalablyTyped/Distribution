@@ -1,6 +1,7 @@
 
 # Scala.js typings for estraverse
 
+Typings are for version 5.1
 
 ## Library description:
 ECMAScript JS AST traversal functions

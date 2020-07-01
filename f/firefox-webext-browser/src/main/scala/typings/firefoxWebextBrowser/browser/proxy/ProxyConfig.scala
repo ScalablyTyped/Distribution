@@ -23,6 +23,12 @@ trait ProxyConfig extends js.Object {
   var proxyDNS: js.UndefOr[Boolean] = js.undefined
   /** The type of proxy to use. */
   var proxyType: js.UndefOr[ProxyConfigProxyType] = js.undefined
+  /**
+    * If true (the default value), do not use newer TLS protocol features that might have interoperability
+    * problems on the Internet. This is intended only for use with critical infrastructure like the updates, and
+    * is only available to privileged addons.
+    */
+  var respectBeConservative: js.UndefOr[Boolean] = js.undefined
   /** The address of the socks proxy, can include a port. */
   var socks: js.UndefOr[String] = js.undefined
   /** The version of the socks proxy. */
@@ -42,6 +48,7 @@ object ProxyConfig {
     passthrough: String = null,
     proxyDNS: js.UndefOr[Boolean] = js.undefined,
     proxyType: ProxyConfigProxyType = null,
+    respectBeConservative: js.UndefOr[Boolean] = js.undefined,
     socks: String = null,
     socksVersion: js.UndefOr[Double] = js.undefined,
     ssl: String = null
@@ -55,6 +62,7 @@ object ProxyConfig {
     if (passthrough != null) __obj.updateDynamic("passthrough")(passthrough.asInstanceOf[js.Any])
     if (!js.isUndefined(proxyDNS)) __obj.updateDynamic("proxyDNS")(proxyDNS.get.asInstanceOf[js.Any])
     if (proxyType != null) __obj.updateDynamic("proxyType")(proxyType.asInstanceOf[js.Any])
+    if (!js.isUndefined(respectBeConservative)) __obj.updateDynamic("respectBeConservative")(respectBeConservative.get.asInstanceOf[js.Any])
     if (socks != null) __obj.updateDynamic("socks")(socks.asInstanceOf[js.Any])
     if (!js.isUndefined(socksVersion)) __obj.updateDynamic("socksVersion")(socksVersion.get.asInstanceOf[js.Any])
     if (ssl != null) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])

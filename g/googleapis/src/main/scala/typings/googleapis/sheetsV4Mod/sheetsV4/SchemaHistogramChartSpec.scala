@@ -51,18 +51,18 @@ trait SchemaHistogramChartSpec extends js.Object {
 object SchemaHistogramChartSpec {
   @scala.inline
   def apply(
-    bucketSize: Int | Double = null,
+    bucketSize: js.UndefOr[Double] = js.undefined,
     legendPosition: String = null,
-    outlierPercentile: Int | Double = null,
+    outlierPercentile: js.UndefOr[Double] = js.undefined,
     series: js.Array[SchemaHistogramSeries] = null,
     showItemDividers: js.UndefOr[Boolean] = js.undefined
   ): SchemaHistogramChartSpec = {
     val __obj = js.Dynamic.literal()
-    if (bucketSize != null) __obj.updateDynamic("bucketSize")(bucketSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(bucketSize)) __obj.updateDynamic("bucketSize")(bucketSize.get.asInstanceOf[js.Any])
     if (legendPosition != null) __obj.updateDynamic("legendPosition")(legendPosition.asInstanceOf[js.Any])
-    if (outlierPercentile != null) __obj.updateDynamic("outlierPercentile")(outlierPercentile.asInstanceOf[js.Any])
+    if (!js.isUndefined(outlierPercentile)) __obj.updateDynamic("outlierPercentile")(outlierPercentile.get.asInstanceOf[js.Any])
     if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
-    if (!js.isUndefined(showItemDividers)) __obj.updateDynamic("showItemDividers")(showItemDividers.asInstanceOf[js.Any])
+    if (!js.isUndefined(showItemDividers)) __obj.updateDynamic("showItemDividers")(showItemDividers.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHistogramChartSpec]
   }
 }

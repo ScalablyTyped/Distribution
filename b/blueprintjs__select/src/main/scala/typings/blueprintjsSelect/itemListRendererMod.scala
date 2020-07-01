@@ -53,6 +53,6 @@ object itemListRendererMod extends js.Object {
   def renderFilteredItems(props: IItemListRendererProps[_]): ReactNode = js.native
   def renderFilteredItems(props: IItemListRendererProps[_], noResults: ReactNode): ReactNode = js.native
   def renderFilteredItems(props: IItemListRendererProps[_], noResults: ReactNode, initialContent: ReactNode): ReactNode = js.native
-  type ItemListRenderer[T] = js.Function1[/* itemListProps */ IItemListRendererProps[T], Element]
+  type ItemListRenderer[T] = js.Function1[/* itemListProps */ IItemListRendererProps[T], Element | Null]
 }
 

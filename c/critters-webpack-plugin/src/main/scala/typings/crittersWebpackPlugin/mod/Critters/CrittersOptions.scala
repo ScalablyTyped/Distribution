@@ -1,18 +1,19 @@
 package typings.crittersWebpackPlugin.mod.Critters
 
 import typings.crittersWebpackPlugin.crittersWebpackPluginStrings.`js-lazy`
-import typings.crittersWebpackPlugin.crittersWebpackPluginStrings.all
 import typings.crittersWebpackPlugin.crittersWebpackPluginStrings.body
-import typings.crittersWebpackPlugin.crittersWebpackPluginStrings.critical
 import typings.crittersWebpackPlugin.crittersWebpackPluginStrings.js_
 import typings.crittersWebpackPlugin.crittersWebpackPluginStrings.media
-import typings.crittersWebpackPlugin.crittersWebpackPluginStrings.none
 import typings.crittersWebpackPlugin.crittersWebpackPluginStrings.swap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CrittersOptions extends js.Object {
+  /**
+    * Glob for matching other stylesheets to be used while looking for critical CSS
+    */
+  var additionalStylesheets: js.UndefOr[js.Array[String]] = js.undefined
   /**
     * Compress resulting critical CSS.
     * @default true
@@ -40,13 +41,16 @@ trait CrittersOptions extends js.Object {
     */
   var inlineThreshold: js.UndefOr[Double] = js.undefined
   /**
-    * Controls which keyframes rules are inlined. - Values:
-    * - "critical": Inline keyframes rules used by the critical CSS.
-    * - "all" Inline all keyframes rules.
-    * - "none" Remove all keyframes rules
+    * Controls which keyframes rules are inlined.
+    * See {@link KeyFrameStrategy keyframe strategy}
     * @default "critical"
     */
-  var keyframes: js.UndefOr[critical | all | none] = js.undefined
+  var keyframes: js.UndefOr[KeyframeStrategy] = js.undefined
+  /**
+    * Controls {@link LogLevel log level} of the plugin
+    * @default 'info'
+    */
+  var logLevel: js.UndefOr[LogLevel] = js.undefined
   /**
     * Merged inlined stylesheets into a single <style> tag.
     * @default true
@@ -62,13 +66,8 @@ trait CrittersOptions extends js.Object {
     */
   var noscriptFallback: js.UndefOr[Boolean] = js.undefined
   /**
-    * The mechanism to use for lazy-loading stylesheets. [JS] indicates that a strategy requires JavaScript (falls back to <noscript>).
-    * - default: Move stylesheet links to the end of the document and insert preload meta tags in their place.
-    * - "body": Move all external stylesheet links to the end of the document.
-    * - "media": Load stylesheets asynchronously by adding media="not x" and removing once loaded. [JS]
-    * - "swap": Convert stylesheet links to preloads that swap to rel="stylesheet" once loaded. [JS]
-    * - "js": Inject an asynchronous CSS loader similar to LoadCSS and use it to load stylesheets. [JS]
-    * - "js-lazy": Like "js", but the stylesheet is disabled until fully loaded.
+    * The mechanism to use for lazy-loading stylesheets.
+    *
     */
   var preload: js.UndefOr[body | media | swap | js_ | `js-lazy`] = js.undefined
   /**
@@ -86,12 +85,14 @@ trait CrittersOptions extends js.Object {
 object CrittersOptions {
   @scala.inline
   def apply(
+    additionalStylesheets: js.Array[String] = null,
     compress: js.UndefOr[Boolean] = js.undefined,
     external: js.UndefOr[Boolean] = js.undefined,
     fonts: js.UndefOr[Boolean] = js.undefined,
     inlineFonts: js.UndefOr[Boolean] = js.undefined,
     inlineThreshold: js.UndefOr[Double] = js.undefined,
-    keyframes: critical | all | none = null,
+    keyframes: KeyframeStrategy = null,
+    logLevel: LogLevel = null,
     mergeStylesheets: js.UndefOr[Boolean] = js.undefined,
     minimumExternalSize: js.UndefOr[Double] = js.undefined,
     noscriptFallback: js.UndefOr[Boolean] = js.undefined,
@@ -100,12 +101,14 @@ object CrittersOptions {
     pruneSource: js.UndefOr[Boolean] = js.undefined
   ): CrittersOptions = {
     val __obj = js.Dynamic.literal()
+    if (additionalStylesheets != null) __obj.updateDynamic("additionalStylesheets")(additionalStylesheets.asInstanceOf[js.Any])
     if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.get.asInstanceOf[js.Any])
     if (!js.isUndefined(external)) __obj.updateDynamic("external")(external.get.asInstanceOf[js.Any])
     if (!js.isUndefined(fonts)) __obj.updateDynamic("fonts")(fonts.get.asInstanceOf[js.Any])
     if (!js.isUndefined(inlineFonts)) __obj.updateDynamic("inlineFonts")(inlineFonts.get.asInstanceOf[js.Any])
     if (!js.isUndefined(inlineThreshold)) __obj.updateDynamic("inlineThreshold")(inlineThreshold.get.asInstanceOf[js.Any])
     if (keyframes != null) __obj.updateDynamic("keyframes")(keyframes.asInstanceOf[js.Any])
+    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
     if (!js.isUndefined(mergeStylesheets)) __obj.updateDynamic("mergeStylesheets")(mergeStylesheets.get.asInstanceOf[js.Any])
     if (!js.isUndefined(minimumExternalSize)) __obj.updateDynamic("minimumExternalSize")(minimumExternalSize.get.asInstanceOf[js.Any])
     if (!js.isUndefined(noscriptFallback)) __obj.updateDynamic("noscriptFallback")(noscriptFallback.get.asInstanceOf[js.Any])

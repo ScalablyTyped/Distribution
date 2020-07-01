@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CodeReviewSummary extends js.Object {
   /**
-    *  The Amazon Resource Name (ARN) of the code review to describe. 
+    * The Amazon Resource Name (ARN) of the  CodeReview  object. 
     */
   var CodeReviewArn: js.UndefOr[Arn] = js.native
   /**
@@ -27,7 +27,7 @@ trait CodeReviewSummary extends js.Object {
     */
   var Name: js.UndefOr[typings.awsSdk.codegurureviewerMod.Name] = js.native
   /**
-    *  The owner of the repository. 
+    * The owner of the repository. For an AWS CodeCommit repository, this is the AWS account ID of the account that owns the repository. For a GitHub or Bitbucket repository, this is the username for the account that owns the repository.
     */
   var Owner: js.UndefOr[typings.awsSdk.codegurureviewerMod.Owner] = js.native
   /**
@@ -43,7 +43,7 @@ trait CodeReviewSummary extends js.Object {
     */
   var RepositoryName: js.UndefOr[Name] = js.native
   /**
-    *  The state of the code review. 
+    *  The state of the code review.  The valid code review states are:    Completed: The code review is complete.     Pending: The code review started and has not completed or failed.     Failed: The code review failed.     Deleting: The code review is being deleted.   
     */
   var State: js.UndefOr[JobState] = js.native
   /**

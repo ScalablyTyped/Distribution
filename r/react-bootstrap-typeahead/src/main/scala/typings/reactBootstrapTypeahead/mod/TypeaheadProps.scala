@@ -140,7 +140,7 @@ trait TypeaheadProps[T /* <: TypeaheadModel */] extends js.Object {
 
 object TypeaheadProps {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.reactBootstrapTypeahead.mod.TypeaheadModel */ T](
     options: js.Array[T],
     a11yNumResults: () => Unit = null,
     a11yNumSelected: () => Unit = null,

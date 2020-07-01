@@ -1,6 +1,6 @@
 package typings.googleapis.computeV1Mod.computeV1
 
-import typings.googleapis.AnonCode
+import typings.googleapis.anon.Code
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,7 +38,7 @@ trait SchemaInstanceTemplateList extends js.Object {
   /**
     * [Output Only] Informational warning message.
     */
-  var warning: js.UndefOr[AnonCode] = js.native
+  var warning: js.UndefOr[Code] = js.native
 }
 
 object SchemaInstanceTemplateList {
@@ -49,7 +49,7 @@ object SchemaInstanceTemplateList {
     kind: String = null,
     nextPageToken: String = null,
     selfLink: String = null,
-    warning: AnonCode = null
+    warning: Code = null
   ): SchemaInstanceTemplateList = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

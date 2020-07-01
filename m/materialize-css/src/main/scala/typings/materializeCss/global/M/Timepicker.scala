@@ -1,7 +1,5 @@
 package typings.materializeCss.global.M
 
-import typings.materializeCss.M.TimepickerOptions
-import typings.materializeCss.MElements
 import typings.materializeCss.anon.PartialTimepickerOptions
 import typings.std.Element
 import scala.scalajs.js
@@ -11,23 +9,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("M.Timepicker")
 @js.native
 class Timepicker ()
-  extends typings.materializeCss.M.Timepicker {
-  /**
-    * The DOM element the plugin was initialized with
-    */
-  /* CompleteClass */
-  override var el: Element = js.native
-  /**
-    * The options the instance was initialized with
-    */
-  /* CompleteClass */
-  override var options: TimepickerOptions = js.native
-  /**
-    * Destroy plugin instance and teardown
-    */
-  /* CompleteClass */
-  override def destroy(): Unit = js.native
-}
+  extends typings.materializeCss.M.Timepicker
 
 /* static members */
 @JSGlobal("M.Timepicker")
@@ -40,8 +22,13 @@ object Timepicker extends js.Object {
   /**
     * Init Timepickers
     */
-  def init(els: MElements): js.Array[typings.materializeCss.M.Timepicker] = js.native
-  def init(els: MElements, options: PartialTimepickerOptions): js.Array[typings.materializeCss.M.Timepicker] = js.native
+  def init(
+    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any
+  ): js.Array[typings.materializeCss.M.Timepicker] = js.native
+  def init(
+    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any,
+    options: PartialTimepickerOptions
+  ): js.Array[typings.materializeCss.M.Timepicker] = js.native
   /**
     * Init Timepicker
     */

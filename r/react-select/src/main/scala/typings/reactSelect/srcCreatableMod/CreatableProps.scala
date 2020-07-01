@@ -41,7 +41,7 @@ trait CreatableProps[OptionType /* <: OptionTypeBase */] extends js.Object {
 
 object CreatableProps {
   @scala.inline
-  def apply[OptionType](
+  def apply[/* <: typings.reactSelect.typesMod.OptionTypeBase */ OptionType](
     allowCreateWhileLoading: js.UndefOr[Boolean] = js.undefined,
     createOptionPosition: first | last = null,
     formatCreateLabel: /* inputValue */ String => ReactNode = null,

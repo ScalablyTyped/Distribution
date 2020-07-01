@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl", "Entry")
 @js.native
 class Entry[Key, T] protected ()
-  extends typings.tstl.utilityMod.Entry[Key, T] {
+  extends typings.tstl.tstlModuleMod.Entry[Key, T] {
   /**
     * Intializer Constructor.
     *

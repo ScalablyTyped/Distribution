@@ -21,7 +21,7 @@ trait DSAKeyPairOptions[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] exten
 
 object DSAKeyPairOptions {
   @scala.inline
-  def apply[PubF, PrivF](
+  def apply[/* <: typings.node.cryptoMod.KeyFormat */ PubF, /* <: typings.node.cryptoMod.KeyFormat */ PrivF](
     divisorLength: Double,
     modulusLength: Double,
     privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with `0`,

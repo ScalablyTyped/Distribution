@@ -42,7 +42,7 @@ object SchemaParameterMetadata {
   ): SchemaParameterMetadata = {
     val __obj = js.Dynamic.literal()
     if (helpText != null) __obj.updateDynamic("helpText")(helpText.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOptional)) __obj.updateDynamic("isOptional")(isOptional.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOptional)) __obj.updateDynamic("isOptional")(isOptional.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (regexes != null) __obj.updateDynamic("regexes")(regexes.asInstanceOf[js.Any])

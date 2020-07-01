@@ -25,8 +25,14 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("pixi.js", "MeshGeometry")
 @js.native
-class MeshGeometry protected ()
+class MeshGeometry ()
   extends typings.pixiJs.PIXI.MeshGeometry {
+  def this(vertices: js.Array[Double]) = this()
+  def this(vertices: Float32Array) = this()
+  def this(vertices: js.Array[Double], uvs: js.Array[Double]) = this()
+  def this(vertices: js.Array[Double], uvs: Float32Array) = this()
+  def this(vertices: Float32Array, uvs: js.Array[Double]) = this()
+  def this(vertices: Float32Array, uvs: Float32Array) = this()
   def this(vertices: js.Array[Double], uvs: js.Array[Double], index: js.Array[Double]) = this()
   def this(vertices: js.Array[Double], uvs: js.Array[Double], index: Uint16Array) = this()
   def this(vertices: js.Array[Double], uvs: Float32Array, index: js.Array[Double]) = this()

@@ -17,7 +17,7 @@ trait RemovedFields[TSchema /* <: StringDictionary[js.Any] */] extends js.Object
 
 object RemovedFields {
   @scala.inline
-  def apply[TSchema](removedFields: js.Array[/* keyof TSchema */ String], updatedFields: FieldUpdates[TSchema]): RemovedFields[TSchema] = {
+  def apply[/* <: org.scalablytyped.runtime.StringDictionary[js.Any] */ TSchema](removedFields: js.Array[/* keyof TSchema */ String], updatedFields: FieldUpdates[TSchema]): RemovedFields[TSchema] = {
     val __obj = js.Dynamic.literal(removedFields = removedFields.asInstanceOf[js.Any], updatedFields = updatedFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemovedFields[TSchema]]
   }

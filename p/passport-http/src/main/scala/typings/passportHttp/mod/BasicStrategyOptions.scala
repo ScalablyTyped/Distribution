@@ -11,7 +11,7 @@ trait BasicStrategyOptions[req /* <: Boolean */] extends js.Object {
 
 object BasicStrategyOptions {
   @scala.inline
-  def apply[req](passReqToCallback: req = null, realm: String = null): BasicStrategyOptions[req] = {
+  def apply[/* <: scala.Boolean */ req](passReqToCallback: req = null, realm: String = null): BasicStrategyOptions[req] = {
     val __obj = js.Dynamic.literal()
     if (passReqToCallback != null) __obj.updateDynamic("passReqToCallback")(passReqToCallback.asInstanceOf[js.Any])
     if (realm != null) __obj.updateDynamic("realm")(realm.asInstanceOf[js.Any])

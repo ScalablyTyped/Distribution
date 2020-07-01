@@ -1,14 +1,16 @@
 package typings.socketclusterClient.clientsocketMod
 
+import typings.socketclusterClient.authMod.AuthToken
+import typings.socketclusterClient.authMod.SignedAuthToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AuthStateChangeData extends js.Object {
-  var authToken: js.UndefOr[js.Object] = js.undefined
+  var authToken: js.UndefOr[AuthToken] = js.undefined
   var newAuthState: AuthStates
   var oldAuthState: AuthStates
-  var signedAuthToken: js.UndefOr[String] = js.undefined
+  var signedAuthToken: js.UndefOr[SignedAuthToken] = js.undefined
 }
 
 object AuthStateChangeData {
@@ -16,8 +18,8 @@ object AuthStateChangeData {
   def apply(
     newAuthState: AuthStates,
     oldAuthState: AuthStates,
-    authToken: js.Object = null,
-    signedAuthToken: String = null
+    authToken: AuthToken = null,
+    signedAuthToken: SignedAuthToken = null
   ): AuthStateChangeData = {
     val __obj = js.Dynamic.literal(newAuthState = newAuthState.asInstanceOf[js.Any], oldAuthState = oldAuthState.asInstanceOf[js.Any])
     if (authToken != null) __obj.updateDynamic("authToken")(authToken.asInstanceOf[js.Any])

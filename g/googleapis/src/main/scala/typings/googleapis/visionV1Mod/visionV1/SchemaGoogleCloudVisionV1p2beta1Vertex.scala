@@ -22,10 +22,10 @@ trait SchemaGoogleCloudVisionV1p2beta1Vertex extends js.Object {
 
 object SchemaGoogleCloudVisionV1p2beta1Vertex {
   @scala.inline
-  def apply(x: Int | Double = null, y: Int | Double = null): SchemaGoogleCloudVisionV1p2beta1Vertex = {
+  def apply(x: js.UndefOr[Double] = js.undefined, y: js.UndefOr[Double] = js.undefined): SchemaGoogleCloudVisionV1p2beta1Vertex = {
     val __obj = js.Dynamic.literal()
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p2beta1Vertex]
   }
 }

@@ -31,9 +31,9 @@ object SchemaShieldedInstanceConfig {
     enableVtpm: js.UndefOr[Boolean] = js.undefined
   ): SchemaShieldedInstanceConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableIntegrityMonitoring)) __obj.updateDynamic("enableIntegrityMonitoring")(enableIntegrityMonitoring.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSecureBoot)) __obj.updateDynamic("enableSecureBoot")(enableSecureBoot.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableVtpm)) __obj.updateDynamic("enableVtpm")(enableVtpm.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableIntegrityMonitoring)) __obj.updateDynamic("enableIntegrityMonitoring")(enableIntegrityMonitoring.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSecureBoot)) __obj.updateDynamic("enableSecureBoot")(enableSecureBoot.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableVtpm)) __obj.updateDynamic("enableVtpm")(enableVtpm.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaShieldedInstanceConfig]
   }
 }

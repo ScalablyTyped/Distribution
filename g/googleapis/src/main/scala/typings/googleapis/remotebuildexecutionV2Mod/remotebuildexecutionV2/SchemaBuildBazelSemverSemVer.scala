@@ -32,15 +32,15 @@ trait SchemaBuildBazelSemverSemVer extends js.Object {
 object SchemaBuildBazelSemverSemVer {
   @scala.inline
   def apply(
-    major: Int | Double = null,
-    minor: Int | Double = null,
-    patch: Int | Double = null,
+    major: js.UndefOr[Double] = js.undefined,
+    minor: js.UndefOr[Double] = js.undefined,
+    patch: js.UndefOr[Double] = js.undefined,
     prerelease: String = null
   ): SchemaBuildBazelSemverSemVer = {
     val __obj = js.Dynamic.literal()
-    if (major != null) __obj.updateDynamic("major")(major.asInstanceOf[js.Any])
-    if (minor != null) __obj.updateDynamic("minor")(minor.asInstanceOf[js.Any])
-    if (patch != null) __obj.updateDynamic("patch")(patch.asInstanceOf[js.Any])
+    if (!js.isUndefined(major)) __obj.updateDynamic("major")(major.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minor)) __obj.updateDynamic("minor")(minor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(patch)) __obj.updateDynamic("patch")(patch.get.asInstanceOf[js.Any])
     if (prerelease != null) __obj.updateDynamic("prerelease")(prerelease.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBuildBazelSemverSemVer]
   }

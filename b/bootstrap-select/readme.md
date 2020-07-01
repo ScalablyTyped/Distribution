@@ -1,7 +1,7 @@
 
 # Scala.js typings for bootstrap-select
 
-Typings are for version v1.11.2
+Typings are for version v1.13.14
 
 ## Library description:
 The jQuery plugin that brings select elements into the 21st century with intuitive multiselection, searching, and much more. Now with Bootstrap 4 support.

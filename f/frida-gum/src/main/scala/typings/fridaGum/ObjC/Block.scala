@@ -24,6 +24,14 @@ trait Block extends ObjectWrapper {
     */
   var types: js.UndefOr[String] = js.native
   /**
+    * Declares the signature of an externally defined block. This is needed
+    * when working with blocks without signature metadata, i.e. when
+    * `block.types === undefined`.
+    *
+    * @param signature Signature to use.
+    */
+  def declare(signature: BlockSignature): Unit = js.native
+  /**
     * Current implementation. You may replace it by assigning to this property.
     */
   def implementation(args: js.Any*): js.Any = js.native

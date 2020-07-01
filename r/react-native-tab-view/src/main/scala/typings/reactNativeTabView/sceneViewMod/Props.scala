@@ -32,7 +32,7 @@ trait Props[T /* <: Route */] extends js.Object {
 
 object Props {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.reactNativeTabView.typesMod.Route */ T](
     addListener: (enter, Listener) => Unit,
     children: Loading => ReactNode,
     index: Double,

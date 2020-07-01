@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeNFSFileSharesInput extends js.Object {
   /**
-    * An array containing the Amazon Resource Name (ARN) of each file share to be described. 
+    * An array containing the Amazon Resource Name (ARN) of each file share to be described.
     */
   var FileShareARNList: typings.awsSdk.storagegatewayMod.FileShareARNList = js.native
 }

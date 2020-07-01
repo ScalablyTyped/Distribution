@@ -819,7 +819,7 @@ trait RaphaelSetPluginRegistry[TTechnology /* <: RaphaelTechnology */] extends j
 
 object RaphaelSetPluginRegistry {
   @scala.inline
-  def apply[TTechnology](
+  def apply[/* <: typings.raphael.mod.RaphaelTechnology */ TTechnology](
     animate: RaphaelSetPluginMethod[
       TTechnology, 
       Parameters[

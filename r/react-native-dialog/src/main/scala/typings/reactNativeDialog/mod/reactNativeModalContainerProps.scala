@@ -70,6 +70,7 @@ trait reactNativeModalContainerProps extends js.Object {
   var customBackdrop: js.UndefOr[ReactNode] = js.undefined
   var deviceHeight: js.UndefOr[Double] = js.undefined
   var deviceWidth: js.UndefOr[Double] = js.undefined
+  var focusable: js.UndefOr[Boolean] = js.undefined
   var hardwareAccelerated: js.UndefOr[Boolean] = js.undefined
   var hasBackdrop: js.UndefOr[Boolean] = js.undefined
   var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
@@ -168,6 +169,7 @@ object reactNativeModalContainerProps {
     customBackdrop: ReactNode = null,
     deviceHeight: js.UndefOr[Double] = js.undefined,
     deviceWidth: js.UndefOr[Double] = js.undefined,
+    focusable: js.UndefOr[Boolean] = js.undefined,
     hardwareAccelerated: js.UndefOr[Boolean] = js.undefined,
     hasBackdrop: js.UndefOr[Boolean] = js.undefined,
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
@@ -263,6 +265,7 @@ object reactNativeModalContainerProps {
     if (customBackdrop != null) __obj.updateDynamic("customBackdrop")(customBackdrop.asInstanceOf[js.Any])
     if (!js.isUndefined(deviceHeight)) __obj.updateDynamic("deviceHeight")(deviceHeight.get.asInstanceOf[js.Any])
     if (!js.isUndefined(deviceWidth)) __obj.updateDynamic("deviceWidth")(deviceWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(hardwareAccelerated)) __obj.updateDynamic("hardwareAccelerated")(hardwareAccelerated.get.asInstanceOf[js.Any])
     if (!js.isUndefined(hasBackdrop)) __obj.updateDynamic("hasBackdrop")(hasBackdrop.get.asInstanceOf[js.Any])
     if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.get.asInstanceOf[js.Any])

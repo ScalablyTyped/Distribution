@@ -38,10 +38,10 @@ object mapElementListMod extends js.Object {
     /**
       * Iterator of map container storing elements in a list.
       *
-      * @typeParam Key Key type
-      * @typeParam T Mapped type
-      * @typeParam Unique Whether duplicated key is blocked or not
-      * @typeParam Source Source container type
+      * @type Key Key type
+      * @type T Mapped type
+      * @type Unique Whether duplicated key is blocked or not
+      * @type Source Source container type
       *
       * @author Jeongho Nam - https://github.com/samchon
       */
@@ -89,10 +89,10 @@ object mapElementListMod extends js.Object {
     /**
       * Reverse iterator of map container storing elements a list.
       *
-      * @typeParam Key Key type
-      * @typeParam T Mapped type
-      * @typeParam Unique Whether duplicated key is blocked or not
-      * @typeParam Source Source container type
+      * @type Key Key type
+      * @type T Mapped type
+      * @type Unique Whether duplicated key is blocked or not
+      * @type Source Source container type
       *
       * @author Jeongho Nam - https://github.com/samchon
       */

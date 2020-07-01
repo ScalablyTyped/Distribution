@@ -13,7 +13,7 @@ trait StateMeta[TContext, TEvent /* <: EventObject */] extends js.Object {
 
 object StateMeta {
   @scala.inline
-  def apply[TContext, TEvent](
+  def apply[TContext, /* <: typings.xstate.typesMod.EventObject */ TEvent](
     _event: typings.xstate.typesMod.SCXML.Event[TEvent],
     state: State[TContext, TEvent, _, Context[TContext]]
   ): StateMeta[TContext, TEvent] = {

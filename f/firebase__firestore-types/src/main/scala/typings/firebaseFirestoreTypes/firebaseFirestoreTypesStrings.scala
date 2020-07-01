@@ -77,6 +77,9 @@ object firebaseFirestoreTypesStrings {
   sealed trait in extends WhereFilterOp
   
   @js.native
+  sealed trait info extends LogLevel
+  
+  @js.native
   sealed trait internal extends FirestoreErrorCode
   
   @js.native
@@ -124,6 +127,12 @@ object firebaseFirestoreTypesStrings {
   @js.native
   sealed trait unknown extends FirestoreErrorCode
   
+  @js.native
+  sealed trait verbose extends LogLevel
+  
+  @js.native
+  sealed trait warn extends LogLevel
+  
   @scala.inline
   def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
   @scala.inline
@@ -169,6 +178,8 @@ object firebaseFirestoreTypesStrings {
   @scala.inline
   def in: in = "in".asInstanceOf[in]
   @scala.inline
+  def info: info = "info".asInstanceOf[info]
+  @scala.inline
   def internal: internal = "internal".asInstanceOf[internal]
   @scala.inline
   def `invalid-argument`: `invalid-argument` = "invalid-argument".asInstanceOf[`invalid-argument`]
@@ -200,5 +211,9 @@ object firebaseFirestoreTypesStrings {
   def unimplemented: unimplemented = "unimplemented".asInstanceOf[unimplemented]
   @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
+  @scala.inline
+  def verbose: verbose = "verbose".asInstanceOf[verbose]
+  @scala.inline
+  def warn: warn = "warn".asInstanceOf[warn]
 }
 

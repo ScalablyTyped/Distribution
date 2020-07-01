@@ -11,65 +11,64 @@ trait AnimationDelayAnimationDelayUpdate extends js.Object {
     *
     * @default
     * "true"
-    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.hoverAnimation.animation
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.animation
     */
   var animation: js.UndefOr[Boolean] = js.undefined
   /**
-    * Specify the delay time before animation start.
-    * Callback function can be used, where different delay time
-    * can be used on different element.
+    * Delay before updating the first animation, which supports
+    * callback function for different data to have different animation
+    * effect.
     *
     * For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar.hoverAnimation)
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markLine)
     *
-    * For example:
+    * See
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
+    * for more information.
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar.hoverAnimation)
     *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.hoverAnimation.animationDelay
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
   /**
-    * Specify the delay time before update animation.
-    * Callback function can be used, where different delay time
-    * can be used on different element.
+    * Delay before updating animation, which supports callback
+    * function for different data to have different animation effect.
     *
     * For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar.hoverAnimation)
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markLine)
     *
-    * For example:
+    * See
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
+    * for more information.
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar.hoverAnimation)
     *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.hoverAnimation.animationDelayUpdate
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Duration of the first animation, which supports callback
     * function for different data to have different animation effect:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar.hoverAnimation)
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markLine)
     *
     *
     * @default
     * 1000
-    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.hoverAnimation.animationDuration
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar.hoverAnimation)
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markLine)
     *
     *
     * @default
     * 300
-    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.hoverAnimation.animationDurationUpdate
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
@@ -81,7 +80,7 @@ trait AnimationDelayAnimationDelayUpdate extends js.Object {
     *
     * @default
     * "cubicOut"
-    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.hoverAnimation.animationEasing
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.undefined
   /**
@@ -90,7 +89,7 @@ trait AnimationDelayAnimationDelayUpdate extends js.Object {
     *
     * @default
     * "cubicOut"
-    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.hoverAnimation.animationEasingUpdate
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[String] = js.undefined
   /**
@@ -101,9 +100,92 @@ trait AnimationDelayAnimationDelayUpdate extends js.Object {
     *
     * @default
     * 2000
-    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.hoverAnimation.animationThreshold
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.animationThreshold
     */
   var animationThreshold: js.UndefOr[Double] = js.undefined
+  /**
+    * Data array of marking line.
+    * Every array item can be an array of one or two values, representing
+    * starting and ending point of the line, and every item is
+    * an object.
+    * Here are several ways to assign the positions of starting
+    * and ending point.
+    *
+    * 1. Assign coordinate according to container with
+    * [x](https://echarts.apache.org/en/option.html#series-map.markLine.data.0.x)
+    * ,
+    * [y](https://echarts.apache.org/en/option.html#series-map.markLine.data.0.y)
+    * attribute, in which pixel values and percentage are supported.
+    *
+    * 2. Assign coordinate position with
+    * [coord](https://echarts.apache.org/en/option.html#series-map.markLine.data.0.coord)
+    * attribute, in which `'min'`, `'max'`, `'average'` are supported
+    * for each dimension.
+    *
+    * When multiple attributes exist, priority is as the above
+    * order.
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markLine)
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.data
+    */
+  var data: js.UndefOr[`0ValueDim`] = js.undefined
+  /**
+    * Mark line text.
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.label
+    */
+  var label: js.UndefOr[Position] = js.undefined
+  /**
+    * Mark line style.
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.lineStyle
+    */
+  var lineStyle: js.UndefOr[Curveness] = js.undefined
+  /**
+    * Precison of marking line value, which is useful when displaying
+    * average value mark line.
+    *
+    *
+    * @default
+    * 2
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.precision
+    */
+  var precision: js.UndefOr[Double] = js.undefined
+  /**
+    * Whether to ignore mouse events.
+    * Default value is false, for triggering and responding to
+    * mouse events.
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.silent
+    */
+  var silent: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Symbol type at the two ends of the mark line.
+    * It can be an array for two ends, or assigned seperately.
+    * See
+    * [data.symbol](https://echarts.apache.org/en/option.html#series-map.markLine.data.0.symbol)
+    * for more format information.
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.symbol
+    */
+  var symbol: js.UndefOr[js.Array[_] | String] = js.undefined
+  /**
+    * Symbol size at the two ends of the mark line.
+    * It can be an array for two ends, or assigned seperately.
+    *
+    * **Attention:** You cannot assgin width and height seperately
+    * as normal `symbolSize`.
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.symbolSize
+    */
+  var symbolSize: js.UndefOr[js.Array[_] | Double] = js.undefined
 }
 
 object AnimationDelayAnimationDelayUpdate {
@@ -116,7 +198,14 @@ object AnimationDelayAnimationDelayUpdate {
     animationDurationUpdate: js.Function | Double = null,
     animationEasing: String = null,
     animationEasingUpdate: String = null,
-    animationThreshold: js.UndefOr[Double] = js.undefined
+    animationThreshold: js.UndefOr[Double] = js.undefined,
+    data: `0ValueDim` = null,
+    label: Position = null,
+    lineStyle: Curveness = null,
+    precision: js.UndefOr[Double] = js.undefined,
+    silent: js.UndefOr[Boolean] = js.undefined,
+    symbol: js.Array[_] | String = null,
+    symbolSize: js.Array[_] | Double = null
   ): AnimationDelayAnimationDelayUpdate = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
@@ -127,6 +216,13 @@ object AnimationDelayAnimationDelayUpdate {
     if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
     if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate.asInstanceOf[js.Any])
     if (!js.isUndefined(animationThreshold)) __obj.updateDynamic("animationThreshold")(animationThreshold.get.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
+    if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationDelayAnimationDelayUpdate]
   }
 }

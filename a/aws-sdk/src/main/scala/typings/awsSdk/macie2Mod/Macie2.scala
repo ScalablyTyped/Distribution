@@ -26,19 +26,6 @@ trait Macie2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AcceptInvitationResponse, scala.Unit]
   ): Request[AcceptInvitationResponse, AWSError] = js.native
   /**
-    *  Archives one or more findings.
-    */
-  def archiveFindings(): Request[ArchiveFindingsResponse, AWSError] = js.native
-  def archiveFindings(callback: js.Function2[/* err */ AWSError, /* data */ ArchiveFindingsResponse, scala.Unit]): Request[ArchiveFindingsResponse, AWSError] = js.native
-  /**
-    *  Archives one or more findings.
-    */
-  def archiveFindings(params: ArchiveFindingsRequest): Request[ArchiveFindingsResponse, AWSError] = js.native
-  def archiveFindings(
-    params: ArchiveFindingsRequest,
-    callback: js.Function2[/* err */ AWSError, /* data */ ArchiveFindingsResponse, scala.Unit]
-  ): Request[ArchiveFindingsResponse, AWSError] = js.native
-  /**
     * Retrieves information about one or more custom data identifiers.
     */
   def batchGetCustomDataIdentifiers(): Request[BatchGetCustomDataIdentifiersResponse, AWSError] = js.native
@@ -341,7 +328,7 @@ trait Macie2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetBucketStatisticsResponse, scala.Unit]
   ): Request[GetBucketStatisticsResponse, AWSError] = js.native
   /**
-    * Retrieves the configuration settings for exporting data classification results.
+    * Retrieves the configuration settings for storing data classification results.
     */
   def getClassificationExportConfiguration(): Request[GetClassificationExportConfigurationResponse, AWSError] = js.native
   def getClassificationExportConfiguration(
@@ -352,7 +339,7 @@ trait Macie2 extends Service {
     ]
   ): Request[GetClassificationExportConfigurationResponse, AWSError] = js.native
   /**
-    * Retrieves the configuration settings for exporting data classification results.
+    * Retrieves the configuration settings for storing data classification results.
     */
   def getClassificationExportConfiguration(params: GetClassificationExportConfigurationRequest): Request[GetClassificationExportConfigurationResponse, AWSError] = js.native
   def getClassificationExportConfiguration(
@@ -602,7 +589,7 @@ trait Macie2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, scala.Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
-    * Creates or updates the configuration settings for exporting data classification results.
+    * Creates or updates the configuration settings for storing data classification results.
     */
   def putClassificationExportConfiguration(): Request[PutClassificationExportConfigurationResponse, AWSError] = js.native
   def putClassificationExportConfiguration(
@@ -613,7 +600,7 @@ trait Macie2 extends Service {
     ]
   ): Request[PutClassificationExportConfigurationResponse, AWSError] = js.native
   /**
-    * Creates or updates the configuration settings for exporting data classification results.
+    * Creates or updates the configuration settings for storing data classification results.
     */
   def putClassificationExportConfiguration(params: PutClassificationExportConfigurationRequest): Request[PutClassificationExportConfigurationResponse, AWSError] = js.native
   def putClassificationExportConfiguration(
@@ -652,19 +639,6 @@ trait Macie2 extends Service {
     params: TestCustomDataIdentifierRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TestCustomDataIdentifierResponse, scala.Unit]
   ): Request[TestCustomDataIdentifierResponse, AWSError] = js.native
-  /**
-    *  Reactivates (unarchives) one or more findings.
-    */
-  def unarchiveFindings(): Request[UnarchiveFindingsResponse, AWSError] = js.native
-  def unarchiveFindings(callback: js.Function2[/* err */ AWSError, /* data */ UnarchiveFindingsResponse, scala.Unit]): Request[UnarchiveFindingsResponse, AWSError] = js.native
-  /**
-    *  Reactivates (unarchives) one or more findings.
-    */
-  def unarchiveFindings(params: UnarchiveFindingsRequest): Request[UnarchiveFindingsResponse, AWSError] = js.native
-  def unarchiveFindings(
-    params: UnarchiveFindingsRequest,
-    callback: js.Function2[/* err */ AWSError, /* data */ UnarchiveFindingsResponse, scala.Unit]
-  ): Request[UnarchiveFindingsResponse, AWSError] = js.native
   /**
     * Removes one or more tags (keys and values) from a classification job, custom data identifier, findings filter, or member account.
     */

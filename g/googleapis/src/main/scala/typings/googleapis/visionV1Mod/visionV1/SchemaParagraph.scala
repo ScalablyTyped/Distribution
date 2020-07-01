@@ -38,13 +38,13 @@ object SchemaParagraph {
   @scala.inline
   def apply(
     boundingBox: SchemaBoundingPoly = null,
-    confidence: Int | Double = null,
+    confidence: js.UndefOr[Double] = js.undefined,
     property: SchemaTextProperty = null,
     words: js.Array[SchemaWord] = null
   ): SchemaParagraph = {
     val __obj = js.Dynamic.literal()
     if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox.asInstanceOf[js.Any])
-    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     if (words != null) __obj.updateDynamic("words")(words.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaParagraph]

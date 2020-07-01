@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ava" : "3.8.2"
+      "ava" : "3.9.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ava" : "3.8.2"
+      "ava" : "3.9.0"
     }
   ],
   "compile-devDependencies" : [

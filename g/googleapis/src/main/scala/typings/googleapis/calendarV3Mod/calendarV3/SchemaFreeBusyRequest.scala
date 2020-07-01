@@ -38,16 +38,16 @@ trait SchemaFreeBusyRequest extends js.Object {
 object SchemaFreeBusyRequest {
   @scala.inline
   def apply(
-    calendarExpansionMax: Int | Double = null,
-    groupExpansionMax: Int | Double = null,
+    calendarExpansionMax: js.UndefOr[Double] = js.undefined,
+    groupExpansionMax: js.UndefOr[Double] = js.undefined,
     items: js.Array[SchemaFreeBusyRequestItem] = null,
     timeMax: String = null,
     timeMin: String = null,
     timeZone: String = null
   ): SchemaFreeBusyRequest = {
     val __obj = js.Dynamic.literal()
-    if (calendarExpansionMax != null) __obj.updateDynamic("calendarExpansionMax")(calendarExpansionMax.asInstanceOf[js.Any])
-    if (groupExpansionMax != null) __obj.updateDynamic("groupExpansionMax")(groupExpansionMax.asInstanceOf[js.Any])
+    if (!js.isUndefined(calendarExpansionMax)) __obj.updateDynamic("calendarExpansionMax")(calendarExpansionMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupExpansionMax)) __obj.updateDynamic("groupExpansionMax")(groupExpansionMax.get.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (timeMax != null) __obj.updateDynamic("timeMax")(timeMax.asInstanceOf[js.Any])
     if (timeMin != null) __obj.updateDynamic("timeMin")(timeMin.asInstanceOf[js.Any])

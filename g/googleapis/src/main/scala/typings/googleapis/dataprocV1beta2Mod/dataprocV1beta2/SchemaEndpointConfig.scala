@@ -29,7 +29,7 @@ object SchemaEndpointConfig {
     httpPorts: StringDictionary[String] = null
   ): SchemaEndpointConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableHttpPortAccess)) __obj.updateDynamic("enableHttpPortAccess")(enableHttpPortAccess.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableHttpPortAccess)) __obj.updateDynamic("enableHttpPortAccess")(enableHttpPortAccess.get.asInstanceOf[js.Any])
     if (httpPorts != null) __obj.updateDynamic("httpPorts")(httpPorts.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEndpointConfig]
   }

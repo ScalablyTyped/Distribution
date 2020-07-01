@@ -43,11 +43,11 @@ object ODataKey extends js.Object {
   /**
     * Creates and returns a new ODataKey instance in the SDK and on the server.
     * The new ODataKey will be automatically stored in the 'key' property
-    * of the parent ODataEntity element passed as argument.
+    * of the parent ODataRemoteEntitySource element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.9.0 and higher
+    *  8.11.0 and higher
     */
-  def createIn(container: typings.mendixmodelsdk.restMod.rest.ODataEntity): typings.mendixmodelsdk.restMod.rest.ODataKey = js.native
+  def createIn(container: typings.mendixmodelsdk.restMod.rest.ODataRemoteEntitySource): typings.mendixmodelsdk.restMod.rest.ODataKey = js.native
 }
 

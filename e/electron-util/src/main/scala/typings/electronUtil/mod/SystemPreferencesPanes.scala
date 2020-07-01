@@ -13,9 +13,12 @@ import typings.electronUtil.electronUtilStrings.Media_Descriptions
 import typings.electronUtil.electronUtilStrings.Mouse
 import typings.electronUtil.electronUtilStrings.Privacy
 import typings.electronUtil.electronUtilStrings.Privacy_Accessibility
+import typings.electronUtil.electronUtilStrings.Privacy_Advertising
 import typings.electronUtil.electronUtilStrings.Privacy_AllFiles
-import typings.electronUtil.electronUtilStrings.Privacy_Assistice
+import typings.electronUtil.electronUtilStrings.Privacy_Assistive
+import typings.electronUtil.electronUtilStrings.Privacy_Automation
 import typings.electronUtil.electronUtilStrings.Privacy_Calendars
+import typings.electronUtil.electronUtilStrings.Privacy_Camera
 import typings.electronUtil.electronUtilStrings.Privacy_Contacts
 import typings.electronUtil.electronUtilStrings.Privacy_DesktopFolder
 import typings.electronUtil.electronUtilStrings.Privacy_Diagnostics
@@ -23,6 +26,7 @@ import typings.electronUtil.electronUtilStrings.Privacy_DocumentsFolder
 import typings.electronUtil.electronUtilStrings.Privacy_DownloadsFolder
 import typings.electronUtil.electronUtilStrings.Privacy_LocationServices
 import typings.electronUtil.electronUtilStrings.Privacy_Microphone
+import typings.electronUtil.electronUtilStrings.Privacy_Photos
 import typings.electronUtil.electronUtilStrings.Privacy_Reminders
 import typings.electronUtil.electronUtilStrings.Privacy_ScreenCapture
 import typings.electronUtil.electronUtilStrings.Seeing_Display
@@ -30,7 +34,7 @@ import typings.electronUtil.electronUtilStrings.Seeing_VoiceOver
 import typings.electronUtil.electronUtilStrings.Seeing_Zoom
 import typings.electronUtil.electronUtilStrings.Services_ARDService
 import typings.electronUtil.electronUtilStrings.Services_BluetoothSharing
-import typings.electronUtil.electronUtilStrings.Services_PersonalFileSHaring
+import typings.electronUtil.electronUtilStrings.Services_PersonalFileSharing
 import typings.electronUtil.electronUtilStrings.Services_PrinterSharing
 import typings.electronUtil.electronUtilStrings.Services_RemoteAppleEvent
 import typings.electronUtil.electronUtilStrings.Services_RemoteLogin
@@ -43,8 +47,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SystemPreferencesPanes extends js.Object {
-  var security: Advanced | FDE | Firewall | General | Privacy | Privacy_Accessibility | Privacy_Assistice | Privacy_Calendars | Privacy_Contacts | Privacy_Diagnostics | Privacy_LocationServices | Privacy_Microphone | Privacy_Reminders | Privacy_ScreenCapture | Privacy_DesktopFolder | Privacy_DocumentsFolder | Privacy_DownloadsFolder | Privacy_AllFiles
-  var sharing: Internet | Services_ARDService | Services_BluetoothSharing | Services_PersonalFileSHaring | Services_PrinterSharing | Services_RemoteAppleEvent | Services_RemoteLogin | Services_ScreenSharing
+  var security: Advanced | FDE | Firewall | General | Privacy | Privacy_Accessibility | Privacy_Advertising | Privacy_AllFiles | Privacy_Assistive | Privacy_Automation | Privacy_Calendars | Privacy_Camera | Privacy_Contacts | Privacy_DesktopFolder | Privacy_Diagnostics | Privacy_DocumentsFolder | Privacy_DownloadsFolder | Privacy_LocationServices | Privacy_Microphone | Privacy_Photos | Privacy_Reminders | Privacy_ScreenCapture
+  var sharing: Internet | Services_ARDService | Services_BluetoothSharing | Services_PersonalFileSharing | Services_PrinterSharing | Services_RemoteAppleEvent | Services_RemoteLogin | Services_ScreenSharing
   var speech: Dictation | TTS
   var universalaccess: Captioning | Hearing | Keyboard | Media_Descriptions | Mouse | Seeing_Display | Seeing_VoiceOver | Seeing_Zoom | SpeakableItems | Switch
 }
@@ -52,8 +56,8 @@ trait SystemPreferencesPanes extends js.Object {
 object SystemPreferencesPanes {
   @scala.inline
   def apply(
-    security: Advanced | FDE | Firewall | General | Privacy | Privacy_Accessibility | Privacy_Assistice | Privacy_Calendars | Privacy_Contacts | Privacy_Diagnostics | Privacy_LocationServices | Privacy_Microphone | Privacy_Reminders | Privacy_ScreenCapture | Privacy_DesktopFolder | Privacy_DocumentsFolder | Privacy_DownloadsFolder | Privacy_AllFiles,
-    sharing: Internet | Services_ARDService | Services_BluetoothSharing | Services_PersonalFileSHaring | Services_PrinterSharing | Services_RemoteAppleEvent | Services_RemoteLogin | Services_ScreenSharing,
+    security: Advanced | FDE | Firewall | General | Privacy | Privacy_Accessibility | Privacy_Advertising | Privacy_AllFiles | Privacy_Assistive | Privacy_Automation | Privacy_Calendars | Privacy_Camera | Privacy_Contacts | Privacy_DesktopFolder | Privacy_Diagnostics | Privacy_DocumentsFolder | Privacy_DownloadsFolder | Privacy_LocationServices | Privacy_Microphone | Privacy_Photos | Privacy_Reminders | Privacy_ScreenCapture,
+    sharing: Internet | Services_ARDService | Services_BluetoothSharing | Services_PersonalFileSharing | Services_PrinterSharing | Services_RemoteAppleEvent | Services_RemoteLogin | Services_ScreenSharing,
     speech: Dictation | TTS,
     universalaccess: Captioning | Hearing | Keyboard | Media_Descriptions | Mouse | Seeing_Display | Seeing_VoiceOver | Seeing_Zoom | SpeakableItems | Switch
   ): SystemPreferencesPanes = {

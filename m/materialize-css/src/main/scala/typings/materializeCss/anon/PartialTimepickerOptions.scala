@@ -2,6 +2,7 @@ package typings.materializeCss.anon
 
 import typings.materializeCss.M.Modal
 import typings.std.Element
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +14,11 @@ trait PartialTimepickerOptions extends js.Object {
   var defaultTime: js.UndefOr[String] = js.undefined
   var duration: js.UndefOr[Double] = js.undefined
   var fromNow: js.UndefOr[Double] = js.undefined
-  var i18n: js.UndefOr[PartialInternationalizati] = js.undefined
+  var i18n: js.UndefOr[
+    Partial[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ _
+    ]
+  ] = js.undefined
   var onCloseEnd: js.UndefOr[js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]] = js.undefined
   var onCloseStart: js.UndefOr[js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]] = js.undefined
   var onOpenEnd: js.UndefOr[js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]] = js.undefined
@@ -32,7 +37,9 @@ object PartialTimepickerOptions {
     defaultTime: String = null,
     duration: js.UndefOr[Double] = js.undefined,
     fromNow: js.UndefOr[Double] = js.undefined,
-    i18n: PartialInternationalizati = null,
+    i18n: Partial[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ _
+    ] = null,
     onCloseEnd: js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit] = null,
     onCloseStart: js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit] = null,
     onOpenEnd: js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit] = null,

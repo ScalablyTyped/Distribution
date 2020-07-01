@@ -44,7 +44,7 @@ object ParamsResourceEditsApklistingsPatch {
   @scala.inline
   def apply(
     alt: String = null,
-    apkVersionCode: Int | Double = null,
+    apkVersionCode: js.UndefOr[Double] = js.undefined,
     auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
     editId: String = null,
     fields: String = null,
@@ -59,7 +59,7 @@ object ParamsResourceEditsApklistingsPatch {
   ): ParamsResourceEditsApklistingsPatch = {
     val __obj = js.Dynamic.literal()
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (apkVersionCode != null) __obj.updateDynamic("apkVersionCode")(apkVersionCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(apkVersionCode)) __obj.updateDynamic("apkVersionCode")(apkVersionCode.get.asInstanceOf[js.Any])
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (editId != null) __obj.updateDynamic("editId")(editId.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
@@ -67,7 +67,7 @@ object ParamsResourceEditsApklistingsPatch {
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
     if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (requestBody != null) __obj.updateDynamic("requestBody")(requestBody.asInstanceOf[js.Any])
     if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])

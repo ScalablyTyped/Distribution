@@ -15,7 +15,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface describing the data returned by calling "tableCell.toJSON()". */
+/** An interface describing the data returned by calling `tableCell.toJSON()`. */
 trait TableCellData extends js.Object {
   /**
     *

@@ -22,10 +22,7 @@ trait UpdatePortalRequest extends js.Object {
     * The ID of the portal to update.
     */
   var portalId: ID = js.native
-  /**
-    * A logo image to display in the portal. Upload a square, high-resolution image. The image is displayed on a dark background.
-    */
-  var portalLogoImageFile: js.UndefOr[ImageFile] = js.native
+  var portalLogoImage: js.UndefOr[Image] = js.native
   /**
     * A new friendly name for the portal.
     */
@@ -45,12 +42,12 @@ object UpdatePortalRequest {
     roleArn: ARN,
     clientToken: ClientToken = null,
     portalDescription: Description = null,
-    portalLogoImageFile: ImageFile = null
+    portalLogoImage: Image = null
   ): UpdatePortalRequest = {
     val __obj = js.Dynamic.literal(portalContactEmail = portalContactEmail.asInstanceOf[js.Any], portalId = portalId.asInstanceOf[js.Any], portalName = portalName.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     if (clientToken != null) __obj.updateDynamic("clientToken")(clientToken.asInstanceOf[js.Any])
     if (portalDescription != null) __obj.updateDynamic("portalDescription")(portalDescription.asInstanceOf[js.Any])
-    if (portalLogoImageFile != null) __obj.updateDynamic("portalLogoImageFile")(portalLogoImageFile.asInstanceOf[js.Any])
+    if (portalLogoImage != null) __obj.updateDynamic("portalLogoImage")(portalLogoImage.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePortalRequest]
   }
 }

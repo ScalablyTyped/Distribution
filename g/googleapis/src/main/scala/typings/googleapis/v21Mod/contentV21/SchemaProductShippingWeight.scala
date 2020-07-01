@@ -19,10 +19,10 @@ trait SchemaProductShippingWeight extends js.Object {
 
 object SchemaProductShippingWeight {
   @scala.inline
-  def apply(unit: String = null, value: Int | Double = null): SchemaProductShippingWeight = {
+  def apply(unit: String = null, value: js.UndefOr[Double] = js.undefined): SchemaProductShippingWeight = {
     val __obj = js.Dynamic.literal()
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProductShippingWeight]
   }
 }

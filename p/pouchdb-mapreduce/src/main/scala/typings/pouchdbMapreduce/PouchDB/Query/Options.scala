@@ -52,7 +52,7 @@ trait Options[Content /* <: js.Object */, Reduction] extends js.Object {
 
 object Options {
   @scala.inline
-  def apply[Content, Reduction](
+  def apply[/* <: js.Object */ Content, Reduction](
     attachments: js.UndefOr[Boolean] = js.undefined,
     binary: js.UndefOr[Boolean] = js.undefined,
     conflicts: js.UndefOr[Boolean] = js.undefined,

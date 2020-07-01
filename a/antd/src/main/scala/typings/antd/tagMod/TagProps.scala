@@ -77,6 +77,7 @@ import scala.scalajs.js.annotation._
 
 trait TagProps extends HTMLAttributes[HTMLSpanElement] {
   var closable: js.UndefOr[Boolean] = js.undefined
+  var closeIcon: js.UndefOr[ReactNode] = js.undefined
   @JSName("color")
   var color_TagProps: js.UndefOr[LiteralUnion[PresetColorType | PresetStatusColorType, String]] = js.undefined
   var icon: js.UndefOr[ReactNode] = js.undefined
@@ -144,6 +145,7 @@ object TagProps {
     children: ReactNode = null,
     className: String = null,
     closable: js.UndefOr[Boolean] = js.undefined,
+    closeIcon: ReactNode = null,
     color: LiteralUnion[PresetColorType | PresetStatusColorType, String] = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
@@ -324,6 +326,7 @@ object TagProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.get.asInstanceOf[js.Any])
+    if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])

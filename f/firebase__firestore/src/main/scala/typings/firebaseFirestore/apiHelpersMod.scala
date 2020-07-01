@@ -1,13 +1,13 @@
 package typings.firebaseFirestore
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.firebaseFirestore.apiDatabaseMod.CollectionReference
+import typings.firebaseFirestore.apiDatabaseMod.DocumentReference
+import typings.firebaseFirestore.apiDatabaseMod.DocumentSnapshot
+import typings.firebaseFirestore.apiDatabaseMod.Firestore
+import typings.firebaseFirestore.apiDatabaseMod.Query
+import typings.firebaseFirestore.apiDatabaseMod.QuerySnapshot
 import typings.firebaseFirestore.collectionsMod.DocumentKeySet_
-import typings.firebaseFirestore.databaseMod.CollectionReference
-import typings.firebaseFirestore.databaseMod.DocumentReference
-import typings.firebaseFirestore.databaseMod.DocumentSnapshot
-import typings.firebaseFirestore.databaseMod.Firestore
-import typings.firebaseFirestore.databaseMod.Query
-import typings.firebaseFirestore.databaseMod.QuerySnapshot
 import typings.firebaseFirestore.objectValueMod.JsonObject
 import typings.firebaseFirestoreTypes.mod.DocumentData
 import scala.scalajs.js

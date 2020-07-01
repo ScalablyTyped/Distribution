@@ -84,34 +84,34 @@ trait SchemaHttpsHealthCheck extends js.Object {
 object SchemaHttpsHealthCheck {
   @scala.inline
   def apply(
-    checkIntervalSec: Int | Double = null,
+    checkIntervalSec: js.UndefOr[Double] = js.undefined,
     creationTimestamp: String = null,
     description: String = null,
-    healthyThreshold: Int | Double = null,
+    healthyThreshold: js.UndefOr[Double] = js.undefined,
     host: String = null,
     id: String = null,
     kind: String = null,
     name: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     requestPath: String = null,
     selfLink: String = null,
-    timeoutSec: Int | Double = null,
-    unhealthyThreshold: Int | Double = null
+    timeoutSec: js.UndefOr[Double] = js.undefined,
+    unhealthyThreshold: js.UndefOr[Double] = js.undefined
   ): SchemaHttpsHealthCheck = {
     val __obj = js.Dynamic.literal()
-    if (checkIntervalSec != null) __obj.updateDynamic("checkIntervalSec")(checkIntervalSec.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkIntervalSec)) __obj.updateDynamic("checkIntervalSec")(checkIntervalSec.get.asInstanceOf[js.Any])
     if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (healthyThreshold != null) __obj.updateDynamic("healthyThreshold")(healthyThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(healthyThreshold)) __obj.updateDynamic("healthyThreshold")(healthyThreshold.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (requestPath != null) __obj.updateDynamic("requestPath")(requestPath.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (timeoutSec != null) __obj.updateDynamic("timeoutSec")(timeoutSec.asInstanceOf[js.Any])
-    if (unhealthyThreshold != null) __obj.updateDynamic("unhealthyThreshold")(unhealthyThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutSec)) __obj.updateDynamic("timeoutSec")(timeoutSec.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unhealthyThreshold)) __obj.updateDynamic("unhealthyThreshold")(unhealthyThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHttpsHealthCheck]
   }
 }

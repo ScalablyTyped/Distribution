@@ -43,6 +43,10 @@ trait ModifyReplicationGroupMessage extends js.Object {
     */
   var EngineVersion: js.UndefOr[String] = js.native
   /**
+    * A flag indicating if you have Multi-AZ enabled to enhance fault tolerance. For more information, see Minimizing Downtime: Multi-AZ.
+    */
+  var MultiAZEnabled: js.UndefOr[BooleanOptional] = js.native
+  /**
     * Deprecated. This parameter is not used.
     */
   var NodeGroupId: js.UndefOr[String] = js.native
@@ -101,6 +105,7 @@ object ModifyReplicationGroupMessage {
     CacheParameterGroupName: String = null,
     CacheSecurityGroupNames: CacheSecurityGroupNameList = null,
     EngineVersion: String = null,
+    MultiAZEnabled: js.UndefOr[BooleanOptional] = js.undefined,
     NodeGroupId: String = null,
     NotificationTopicArn: String = null,
     NotificationTopicStatus: String = null,
@@ -122,6 +127,7 @@ object ModifyReplicationGroupMessage {
     if (CacheParameterGroupName != null) __obj.updateDynamic("CacheParameterGroupName")(CacheParameterGroupName.asInstanceOf[js.Any])
     if (CacheSecurityGroupNames != null) __obj.updateDynamic("CacheSecurityGroupNames")(CacheSecurityGroupNames.asInstanceOf[js.Any])
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(MultiAZEnabled)) __obj.updateDynamic("MultiAZEnabled")(MultiAZEnabled.get.asInstanceOf[js.Any])
     if (NodeGroupId != null) __obj.updateDynamic("NodeGroupId")(NodeGroupId.asInstanceOf[js.Any])
     if (NotificationTopicArn != null) __obj.updateDynamic("NotificationTopicArn")(NotificationTopicArn.asInstanceOf[js.Any])
     if (NotificationTopicStatus != null) __obj.updateDynamic("NotificationTopicStatus")(NotificationTopicStatus.asInstanceOf[js.Any])

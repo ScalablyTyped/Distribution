@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PutRestApiRequest extends js.Object {
   /**
-    * [Required] The PUT request body containing external API definitions. Currently, only OpenAPI definition JSON/YAML files are supported. The maximum size of the API definition file is 2MB.
+    * [Required] The PUT request body containing external API definitions. Currently, only OpenAPI definition JSON/YAML files are supported. The maximum size of the API definition file is 6MB.
     */
   var body: _Blob = js.native
   /**

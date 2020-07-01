@@ -12,6 +12,6 @@ object default extends js.Object {
     * @param {Ajv} ajv
     * @returns {Ajv}
     */
-  def apply(ajv: typings.ajv.mod.Ajv): typings.ajv.mod.Ajv = js.native
+  def apply(ajv: Ajv): Ajv = js.native
 }
 

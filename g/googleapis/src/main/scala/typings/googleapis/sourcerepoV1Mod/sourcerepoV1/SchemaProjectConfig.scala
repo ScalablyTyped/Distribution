@@ -34,7 +34,7 @@ object SchemaProjectConfig {
     pubsubConfigs: StringDictionary[SchemaPubsubConfig] = null
   ): SchemaProjectConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enablePrivateKeyCheck)) __obj.updateDynamic("enablePrivateKeyCheck")(enablePrivateKeyCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePrivateKeyCheck)) __obj.updateDynamic("enablePrivateKeyCheck")(enablePrivateKeyCheck.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (pubsubConfigs != null) __obj.updateDynamic("pubsubConfigs")(pubsubConfigs.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProjectConfig]

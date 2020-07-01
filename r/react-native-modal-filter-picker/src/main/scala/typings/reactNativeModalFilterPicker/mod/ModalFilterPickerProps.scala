@@ -51,7 +51,7 @@ trait ModalFilterPickerProps[T /* <: ModalFilterPickerOption */] extends js.Obje
 
 object ModalFilterPickerProps {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.reactNativeModalFilterPicker.mod.ModalFilterPickerOption */ T](
     onCancel: () => Unit,
     onSelect: String => Unit,
     options: js.Array[T],

@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PutImageRequest extends js.Object {
   /**
+    * The image digest of the image manifest corresponding to the image.
+    */
+  var imageDigest: js.UndefOr[ImageDigest] = js.native
+  /**
     * The image manifest corresponding to the image to be uploaded.
     */
   var imageManifest: ImageManifest = js.native
@@ -33,11 +37,13 @@ object PutImageRequest {
   def apply(
     imageManifest: ImageManifest,
     repositoryName: RepositoryName,
+    imageDigest: ImageDigest = null,
     imageManifestMediaType: MediaType = null,
     imageTag: ImageTag = null,
     registryId: RegistryId = null
   ): PutImageRequest = {
     val __obj = js.Dynamic.literal(imageManifest = imageManifest.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
+    if (imageDigest != null) __obj.updateDynamic("imageDigest")(imageDigest.asInstanceOf[js.Any])
     if (imageManifestMediaType != null) __obj.updateDynamic("imageManifestMediaType")(imageManifestMediaType.asInstanceOf[js.Any])
     if (imageTag != null) __obj.updateDynamic("imageTag")(imageTag.asInstanceOf[js.Any])
     if (registryId != null) __obj.updateDynamic("registryId")(registryId.asInstanceOf[js.Any])

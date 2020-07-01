@@ -22,12 +22,12 @@ trait SchemaAggregationInfo extends js.Object {
 object SchemaAggregationInfo {
   @scala.inline
   def apply(
-    aggregationCount: Int | Double = null,
+    aggregationCount: js.UndefOr[Double] = js.undefined,
     aggregationInterval: String = null,
     aggregationLevel: String = null
   ): SchemaAggregationInfo = {
     val __obj = js.Dynamic.literal()
-    if (aggregationCount != null) __obj.updateDynamic("aggregationCount")(aggregationCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(aggregationCount)) __obj.updateDynamic("aggregationCount")(aggregationCount.get.asInstanceOf[js.Any])
     if (aggregationInterval != null) __obj.updateDynamic("aggregationInterval")(aggregationInterval.asInstanceOf[js.Any])
     if (aggregationLevel != null) __obj.updateDynamic("aggregationLevel")(aggregationLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAggregationInfo]

@@ -1,7 +1,7 @@
 
 # Scala.js typings for carbon__pictograms-react
 
-Typings are for version 10.10
+Typings are for version 10.12
 
 ## Library description:
 React components for pictograms in digital and software products using the Carbon Design System

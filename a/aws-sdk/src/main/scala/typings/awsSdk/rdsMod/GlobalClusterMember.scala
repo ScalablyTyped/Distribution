@@ -11,6 +11,10 @@ trait GlobalClusterMember extends js.Object {
     */
   var DBClusterArn: js.UndefOr[String] = js.native
   /**
+    * Specifies whether a secondary cluster in an Aurora global database has write forwarding enabled, not enabled, or is in the process of enabling it.
+    */
+  var GlobalWriteForwardingStatus: js.UndefOr[WriteForwardingStatus] = js.native
+  /**
     *  Specifies whether the Aurora cluster is the primary cluster (that is, has read-write capability) for the Aurora global database with which it is associated. 
     */
   var IsWriter: js.UndefOr[Boolean] = js.native
@@ -24,11 +28,13 @@ object GlobalClusterMember {
   @scala.inline
   def apply(
     DBClusterArn: String = null,
+    GlobalWriteForwardingStatus: WriteForwardingStatus = null,
     IsWriter: js.UndefOr[Boolean] = js.undefined,
     Readers: ReadersArnList = null
   ): GlobalClusterMember = {
     val __obj = js.Dynamic.literal()
     if (DBClusterArn != null) __obj.updateDynamic("DBClusterArn")(DBClusterArn.asInstanceOf[js.Any])
+    if (GlobalWriteForwardingStatus != null) __obj.updateDynamic("GlobalWriteForwardingStatus")(GlobalWriteForwardingStatus.asInstanceOf[js.Any])
     if (!js.isUndefined(IsWriter)) __obj.updateDynamic("IsWriter")(IsWriter.get.asInstanceOf[js.Any])
     if (Readers != null) __obj.updateDynamic("Readers")(Readers.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalClusterMember]

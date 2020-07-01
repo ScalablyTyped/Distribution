@@ -41,7 +41,7 @@ object SchemaCustomAttributeHistogramRequest {
     val __obj = js.Dynamic.literal()
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (longValueHistogramBucketingOption != null) __obj.updateDynamic("longValueHistogramBucketingOption")(longValueHistogramBucketingOption.asInstanceOf[js.Any])
-    if (!js.isUndefined(stringValueHistogram)) __obj.updateDynamic("stringValueHistogram")(stringValueHistogram.asInstanceOf[js.Any])
+    if (!js.isUndefined(stringValueHistogram)) __obj.updateDynamic("stringValueHistogram")(stringValueHistogram.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCustomAttributeHistogramRequest]
   }
 }

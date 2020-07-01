@@ -15,7 +15,7 @@ trait ResourceToImport extends js.Object {
     */
   var ResourceIdentifier: ResourceIdentifierProperties = js.native
   /**
-    * The type of resource to import into your stack, such as AWS::S3::Bucket. 
+    * The type of resource to import into your stack, such as AWS::S3::Bucket. For a list of supported resource types, see Resources that support import operations in the AWS CloudFormation User Guide.
     */
   var ResourceType: typings.awsSdk.cloudformationMod.ResourceType = js.native
 }

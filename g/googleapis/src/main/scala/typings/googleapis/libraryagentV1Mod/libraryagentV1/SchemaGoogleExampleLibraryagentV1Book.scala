@@ -40,7 +40,7 @@ object SchemaGoogleExampleLibraryagentV1Book {
     val __obj = js.Dynamic.literal()
     if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(read)) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
+    if (!js.isUndefined(read)) __obj.updateDynamic("read")(read.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleExampleLibraryagentV1Book]
   }

@@ -19,7 +19,7 @@ trait ClownfaceInitWithValue[D /* <: DatasetCore[Quad, Quad] */] extends js.Obje
 
 object ClownfaceInitWithValue {
   @scala.inline
-  def apply[D](
+  def apply[/* <: typings.rdfJs.mod.DatasetCore[typings.rdfJs.mod.Quad, typings.rdfJs.mod.Quad] */ D](
     value: String,
     _context: js.Array[Context[D, Term]] = null,
     dataset: D = null,

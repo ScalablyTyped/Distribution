@@ -12,11 +12,14 @@ import scala.scalajs.js.annotation._
 // API: http://vitaly-t.github.io/pg-promise/helpers.html
 @js.native
 trait IHelpers extends js.Object {
-  var Column: Instantiable1[/* col */ String | IColumnConfig, typings.pgPromise.mod.Column] = js.native
+  var Column: Instantiable1[
+    /* col */ String | (IColumnConfig[/* import warning: RewrittenClass.unapply cls was tparam S */ js.Any]), 
+    typings.pgPromise.mod.Column[js.Object]
+  ] = js.native
   var ColumnSet: Instantiable2[
-    /* columns */ Column, 
+    /* columns */ Column[/* import warning: RewrittenClass.unapply cls was tparam S */ js.Any], 
     js.UndefOr[/* options */ IColumnSetOptions], 
-    typings.pgPromise.mod.ColumnSet
+    typings.pgPromise.mod.ColumnSet[js.Object]
   ] = js.native
   var TableName: Instantiable1[/* table */ String | ITable, typings.pgPromise.mod.TableName] = js.native
   def concat(queries: js.Array[String | QueryFile | Options]): String = js.native

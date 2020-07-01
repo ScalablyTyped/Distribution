@@ -15,7 +15,9 @@ trait History[Params /* <: /* import warning: importer.ImportType#apply c Unsupp
 
 object History {
   @scala.inline
-  def apply[Params](history: typings.history.mod.History[LocationState], route: Location[Params]): History[Params] = {
+  def apply[/* <: / * import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    * / typings.reactRouter.reactRouterStrings.History with org.scalablytyped.runtime.TopLevel[js.Any] */ Params](history: typings.history.mod.History[LocationState], route: Location[Params]): History[Params] = {
     val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
     __obj.asInstanceOf[History[Params]]
   }

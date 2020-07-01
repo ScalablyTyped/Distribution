@@ -33,13 +33,13 @@ object SchemaDeploymentConfig {
     description: String = null,
     manifestFileName: String = null,
     scriptId: String = null,
-    versionNumber: Int | Double = null
+    versionNumber: js.UndefOr[Double] = js.undefined
   ): SchemaDeploymentConfig = {
     val __obj = js.Dynamic.literal()
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (manifestFileName != null) __obj.updateDynamic("manifestFileName")(manifestFileName.asInstanceOf[js.Any])
     if (scriptId != null) __obj.updateDynamic("scriptId")(scriptId.asInstanceOf[js.Any])
-    if (versionNumber != null) __obj.updateDynamic("versionNumber")(versionNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(versionNumber)) __obj.updateDynamic("versionNumber")(versionNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeploymentConfig]
   }
 }

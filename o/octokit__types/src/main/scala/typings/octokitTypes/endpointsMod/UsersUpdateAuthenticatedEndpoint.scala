@@ -33,6 +33,10 @@ trait UsersUpdateAuthenticatedEndpoint extends js.Object {
     * The new name of the user.
     */
   var name: js.UndefOr[String] = js.undefined
+  /**
+    * The new Twitter username of the user.
+    */
+  var twitter_username: js.UndefOr[String] = js.undefined
 }
 
 object UsersUpdateAuthenticatedEndpoint {
@@ -44,7 +48,8 @@ object UsersUpdateAuthenticatedEndpoint {
     email: String = null,
     hireable: js.UndefOr[Boolean] = js.undefined,
     location: String = null,
-    name: String = null
+    name: String = null,
+    twitter_username: String = null
   ): UsersUpdateAuthenticatedEndpoint = {
     val __obj = js.Dynamic.literal()
     if (bio != null) __obj.updateDynamic("bio")(bio.asInstanceOf[js.Any])
@@ -54,6 +59,7 @@ object UsersUpdateAuthenticatedEndpoint {
     if (!js.isUndefined(hireable)) __obj.updateDynamic("hireable")(hireable.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (twitter_username != null) __obj.updateDynamic("twitter_username")(twitter_username.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsersUpdateAuthenticatedEndpoint]
   }
 }

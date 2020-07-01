@@ -331,7 +331,8 @@ object IGridProps {
     translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,
-    vocab: String = null
+    vocab: String = null,
+    width: Double | String = null
   ): IGridProps = {
     val __obj = js.Dynamic.literal(columnCount = columnCount.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], onRenderItem = js.Any.fromFunction2(onRenderItem))
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
@@ -520,6 +521,7 @@ object IGridProps {
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridProps]
   }
 }

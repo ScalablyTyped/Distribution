@@ -36,6 +36,8 @@ import scala.scalajs.js.annotation._
 /* Inlined parent std.Partial<cytoscape.cytoscape.Css.Ghost> */
 /* Inlined parent std.Partial<cytoscape.cytoscape.Css.Visibility<cytoscape.cytoscape.NodeSingular>> */
 /* Inlined parent std.Partial<cytoscape.cytoscape.Css.PieChartBackground> */
+/* Inlined parent std.Partial<cytoscape.cytoscape.Css.Events<cytoscape.cytoscape.NodeSingular>> */
+/* Inlined parent std.Partial<cytoscape.cytoscape.Css.TransitionAnimation> */
 trait Node extends js.Object {
   /**
     * Blackens the node’s body for values from 0 to 1;
@@ -132,6 +134,7 @@ trait Node extends js.Object {
     */
   var content: js.UndefOr[PropertyValueNode[String]] = js.undefined
   var display: js.UndefOr[PropertyValue[NodeSingular, none | displayed]] = js.undefined
+  var events: js.UndefOr[PropertyValue[NodeSingular, yes | no]] = js.undefined
   var `font-family`: js.UndefOr[PropertyValue[NodeSingular, String]] = js.undefined
   var `font-size`: js.UndefOr[PropertyValue[NodeSingular, Double | String]] = js.undefined
   var `font-style`: js.UndefOr[PropertyValue[NodeSingular, FontStyle]] = js.undefined
@@ -201,6 +204,10 @@ trait Node extends js.Object {
   var `text-transform`: js.UndefOr[PropertyValue[NodeSingular, TextTranformation]] = js.undefined
   var `text-valign`: js.UndefOr[PropertyValue[NodeSingular, top | center | bottom]] = js.undefined
   var `text-wrap`: js.UndefOr[PropertyValue[NodeSingular, none | wrap | ellipsis]] = js.undefined
+  var `transition-delay`: js.UndefOr[Double] = js.undefined
+  var `transition-duration`: js.UndefOr[Double] = js.undefined
+  var `transition-property`: js.UndefOr[String] = js.undefined
+  var `transition-timing-function`: js.UndefOr[TransitionTimingFunction] = js.undefined
   var visibility: js.UndefOr[PropertyValue[NodeSingular, none | visible]] = js.undefined
   /**
     * The width of the node’s body.
@@ -234,6 +241,7 @@ object Node {
     color: PropertyValue[NodeSingular, Colour] = null,
     content: PropertyValueNode[String] = null,
     display: PropertyValue[NodeSingular, none | displayed] = null,
+    events: PropertyValue[NodeSingular, yes | no] = null,
     `font-family`: PropertyValue[NodeSingular, String] = null,
     `font-size`: PropertyValue[NodeSingular, Double | String] = null,
     `font-style`: PropertyValue[NodeSingular, FontStyle] = null,
@@ -295,6 +303,10 @@ object Node {
     `text-transform`: PropertyValue[NodeSingular, TextTranformation] = null,
     `text-valign`: PropertyValue[NodeSingular, top | center | bottom] = null,
     `text-wrap`: PropertyValue[NodeSingular, none | wrap | ellipsis] = null,
+    `transition-delay`: js.UndefOr[Double] = js.undefined,
+    `transition-duration`: js.UndefOr[Double] = js.undefined,
+    `transition-property`: String = null,
+    `transition-timing-function`: TransitionTimingFunction = null,
     visibility: PropertyValue[NodeSingular, none | visible] = null,
     width: PropertyValueNode[Double | String] = null,
     `z-index`: PropertyValue[NodeSingular, Double] = null
@@ -320,6 +332,7 @@ object Node {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (`font-family` != null) __obj.updateDynamic("font-family")(`font-family`.asInstanceOf[js.Any])
     if (`font-size` != null) __obj.updateDynamic("font-size")(`font-size`.asInstanceOf[js.Any])
     if (`font-style` != null) __obj.updateDynamic("font-style")(`font-style`.asInstanceOf[js.Any])
@@ -381,6 +394,10 @@ object Node {
     if (`text-transform` != null) __obj.updateDynamic("text-transform")(`text-transform`.asInstanceOf[js.Any])
     if (`text-valign` != null) __obj.updateDynamic("text-valign")(`text-valign`.asInstanceOf[js.Any])
     if (`text-wrap` != null) __obj.updateDynamic("text-wrap")(`text-wrap`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`transition-delay`)) __obj.updateDynamic("transition-delay")(`transition-delay`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`transition-duration`)) __obj.updateDynamic("transition-duration")(`transition-duration`.get.asInstanceOf[js.Any])
+    if (`transition-property` != null) __obj.updateDynamic("transition-property")(`transition-property`.asInstanceOf[js.Any])
+    if (`transition-timing-function` != null) __obj.updateDynamic("transition-timing-function")(`transition-timing-function`.asInstanceOf[js.Any])
     if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (`z-index` != null) __obj.updateDynamic("z-index")(`z-index`.asInstanceOf[js.Any])

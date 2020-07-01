@@ -16,6 +16,10 @@ import scala.scalajs.js.annotation._
 trait IWorkflowTaskOutcome
   extends IElement
      with IByNameReferrable {
+  /**
+    * In version 8.11.0: introduced
+    */
+  val caption: String = js.native
   val containerAsWorkflowTask: IWorkflowTask = js.native
   @JSName("model")
   val model_IWorkflowTaskOutcome: IModel = js.native

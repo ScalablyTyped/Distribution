@@ -50,7 +50,9 @@ trait Mentions
   def selectOption(option: OptionProps): Unit = js.native
   def setActiveIndex(activeIndex: Double): Unit = js.native
   def setMeasureRef(element: HTMLDivElement): Unit = js.native
-  def setTextAreaRef(element: HTMLTextAreaElement): Unit = js.native
+  def setTextAreaRef(
+    element: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TextArea */ js.Any
+  ): Unit = js.native
   def startMeasure(measureText: String, measurePrefix: String, measureLocation: Double): Unit = js.native
   def stopMeasure(): Unit = js.native
   def stopMeasure(callback: js.Function0[Unit]): Unit = js.native

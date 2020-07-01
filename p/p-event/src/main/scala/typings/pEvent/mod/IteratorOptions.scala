@@ -19,7 +19,7 @@ trait IteratorOptions[EmittedType /* <: js.Array[_] */] extends Options[EmittedT
 
 object IteratorOptions {
   @scala.inline
-  def apply[EmittedType](
+  def apply[/* <: js.Array[_] */ EmittedType](
     filter: EmittedType => Boolean = null,
     limit: js.UndefOr[Double] = js.undefined,
     multiArgs: js.UndefOr[Boolean] = js.undefined,

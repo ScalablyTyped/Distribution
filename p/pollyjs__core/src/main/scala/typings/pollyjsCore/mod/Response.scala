@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Response extends HTTPBase {
+  var isBinary: Boolean = js.native
   val ok: Boolean = js.native
   var statusCode: Double = js.native
   val statusText: String = js.native

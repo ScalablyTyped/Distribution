@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RestoreJobsListMember extends js.Object {
   /**
+    * The account ID that owns the restore job.
+    */
+  var AccountId: js.UndefOr[typings.awsSdk.backupMod.AccountId] = js.native
+  /**
     * The size, in bytes, of the restored resource.
     */
   var BackupSizeInBytes: js.UndefOr[Long_] = js.native
@@ -39,6 +43,10 @@ trait RestoreJobsListMember extends js.Object {
     */
   var RecoveryPointArn: js.UndefOr[ARN] = js.native
   /**
+    * The resource type of the listed restore jobs; for example, an Amazon Elastic Block Store (Amazon EBS) volume or an Amazon Relational Database Service (Amazon RDS) database.
+    */
+  var ResourceType: js.UndefOr[typings.awsSdk.backupMod.ResourceType] = js.native
+  /**
     * Uniquely identifies the job that restores a recovery point.
     */
   var RestoreJobId: js.UndefOr[String] = js.native
@@ -55,6 +63,7 @@ trait RestoreJobsListMember extends js.Object {
 object RestoreJobsListMember {
   @scala.inline
   def apply(
+    AccountId: AccountId = null,
     BackupSizeInBytes: js.UndefOr[Long_] = js.undefined,
     CompletionDate: timestamp = null,
     CreatedResourceArn: ARN = null,
@@ -63,11 +72,13 @@ object RestoreJobsListMember {
     IamRoleArn: IAMRoleArn = null,
     PercentDone: String = null,
     RecoveryPointArn: ARN = null,
+    ResourceType: ResourceType = null,
     RestoreJobId: String = null,
     Status: RestoreJobStatus = null,
     StatusMessage: String = null
   ): RestoreJobsListMember = {
     val __obj = js.Dynamic.literal()
+    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
     if (!js.isUndefined(BackupSizeInBytes)) __obj.updateDynamic("BackupSizeInBytes")(BackupSizeInBytes.get.asInstanceOf[js.Any])
     if (CompletionDate != null) __obj.updateDynamic("CompletionDate")(CompletionDate.asInstanceOf[js.Any])
     if (CreatedResourceArn != null) __obj.updateDynamic("CreatedResourceArn")(CreatedResourceArn.asInstanceOf[js.Any])
@@ -76,6 +87,7 @@ object RestoreJobsListMember {
     if (IamRoleArn != null) __obj.updateDynamic("IamRoleArn")(IamRoleArn.asInstanceOf[js.Any])
     if (PercentDone != null) __obj.updateDynamic("PercentDone")(PercentDone.asInstanceOf[js.Any])
     if (RecoveryPointArn != null) __obj.updateDynamic("RecoveryPointArn")(RecoveryPointArn.asInstanceOf[js.Any])
+    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
     if (RestoreJobId != null) __obj.updateDynamic("RestoreJobId")(RestoreJobId.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (StatusMessage != null) __obj.updateDynamic("StatusMessage")(StatusMessage.asInstanceOf[js.Any])

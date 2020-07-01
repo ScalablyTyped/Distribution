@@ -35,7 +35,7 @@ trait NavigatorYAxisOptions extends js.Object {
     * (Highstock, Gantt) When using an alternate grid color, a band is painted
     * across the plot area between every other grid line.
     */
-  var alternateGridColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var alternateGridColor: js.UndefOr[ColorType] = js.undefined
   /**
     * (Highcharts) In a polar chart, this is the angle of the Y axis in
     * degrees, where 0 is up and 90 is right. The angle determines the position
@@ -117,7 +117,7 @@ trait NavigatorYAxisOptions extends js.Object {
     *
     * In styled mode, the stroke is given in the `.highcharts-grid-line` class.
     */
-  var gridLineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var gridLineColor: js.UndefOr[ColorType] = js.undefined
   /**
     * (Highstock, Gantt) The dash or dot style of the grid lines. For possible
     * values, see this demonstration.
@@ -169,7 +169,7 @@ trait NavigatorYAxisOptions extends js.Object {
     * In styled mode, the line stroke is given in the `.highcharts-axis-line`
     * or `.highcharts-xaxis-line` class.
     */
-  var lineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var lineColor: js.UndefOr[ColorType] = js.undefined
   /**
     * (Highstock, Gantt) The width of the line marking the axis itself.
     *
@@ -199,7 +199,7 @@ trait NavigatorYAxisOptions extends js.Object {
     * (Highcharts) Solid gauge only. Unless stops are set, the color to
     * represent the maximum value of the Y axis.
     */
-  var maxColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var maxColor: js.UndefOr[ColorType] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) Padding of the max value relative to the
     * length of the axis. A padding of 0.05 will make a 100px axis 5px longer.
@@ -229,7 +229,7 @@ trait NavigatorYAxisOptions extends js.Object {
     * (Highcharts) Solid gauge only. Unless stops are set, the color to
     * represent the minimum value of the Y axis.
     */
-  var minColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var minColor: js.UndefOr[ColorType] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) Padding of the min value relative to the
     * length of the axis. A padding of 0.05 will make a 100px axis 5px longer.
@@ -256,7 +256,7 @@ trait NavigatorYAxisOptions extends js.Object {
     * In styled mode, the stroke width is given in the
     * `.highcharts-minor-grid-line` class.
     */
-  var minorGridLineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var minorGridLineColor: js.UndefOr[ColorType] = js.undefined
   /**
     * (Highstock, Gantt) The dash or dot style of the minor grid lines. For
     * possible values, see this demonstration.
@@ -272,7 +272,7 @@ trait NavigatorYAxisOptions extends js.Object {
   /**
     * (Highstock, Gantt) Color for the minor tick marks.
     */
-  var minorTickColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var minorTickColor: js.UndefOr[ColorType] = js.undefined
   /**
     * (Highstock, Gantt) Specific tick interval in axis units for the minor
     * ticks. On a linear axis, if `"auto"`, the minor tick interval is
@@ -445,7 +445,7 @@ trait NavigatorYAxisOptions extends js.Object {
     *
     * In styled mode, the stroke is given in the `.highcharts-tick` class.
     */
-  var tickColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var tickColor: js.UndefOr[ColorType] = js.undefined
   /**
     * (Highstock, Gantt) The interval of the tick marks in axis units. When
     * `undefined`, the tick interval is computed to approximately follow the
@@ -577,7 +577,7 @@ object NavigatorYAxisOptions {
     accessibility: AxisAccessibilityOptionsObject = null,
     alignTicks: js.UndefOr[Boolean] = js.undefined,
     allowDecimals: js.UndefOr[Boolean] = js.undefined,
-    alternateGridColor: ColorString | GradientColorObject | PatternObject = null,
+    alternateGridColor: ColorType = null,
     angle: js.UndefOr[Double] = js.undefined,
     breaks: js.Array[NavigatorYAxisBreaksOptions] = null,
     categories: js.Array[String] = null,
@@ -589,7 +589,7 @@ object NavigatorYAxisOptions {
     events: NavigatorYAxisEventsOptions = null,
     floor: js.UndefOr[Double] = js.undefined,
     grid: NavigatorYAxisGridOptions = null,
-    gridLineColor: ColorString | GradientColorObject | PatternObject = null,
+    gridLineColor: ColorType = null,
     gridLineDashStyle: DashStyleValue = null,
     gridLineInterpolation: OptionsGridLineInterpolationValue = null,
     gridLineWidth: js.UndefOr[Double] = js.undefined,
@@ -597,20 +597,20 @@ object NavigatorYAxisOptions {
     id: String = null,
     labels: NavigatorYAxisLabelsOptions = null,
     left: Double | String = null,
-    lineColor: ColorString | GradientColorObject | PatternObject = null,
+    lineColor: ColorType = null,
     lineWidth: js.UndefOr[Double] = js.undefined,
     margin: js.UndefOr[Double] = js.undefined,
     max: js.UndefOr[Null | Double] = js.undefined,
-    maxColor: ColorString | GradientColorObject | PatternObject = null,
+    maxColor: ColorType = null,
     maxPadding: js.UndefOr[Double] = js.undefined,
     min: js.UndefOr[Null | Double] = js.undefined,
-    minColor: ColorString | GradientColorObject | PatternObject = null,
+    minColor: ColorType = null,
     minPadding: js.UndefOr[Double] = js.undefined,
     minTickInterval: js.UndefOr[Double] = js.undefined,
-    minorGridLineColor: ColorString | GradientColorObject | PatternObject = null,
+    minorGridLineColor: ColorType = null,
     minorGridLineDashStyle: DashStyleValue = null,
     minorGridLineWidth: js.UndefOr[Double] = js.undefined,
-    minorTickColor: ColorString | GradientColorObject | PatternObject = null,
+    minorTickColor: ColorType = null,
     minorTickInterval: js.UndefOr[Null | Double | String] = js.undefined,
     minorTickLength: js.UndefOr[Double] = js.undefined,
     minorTickPosition: OptionsMinorTickPositionValue = null,
@@ -633,7 +633,7 @@ object NavigatorYAxisOptions {
     staticScale: js.UndefOr[Double] = js.undefined,
     stops: js.Array[GradientColorStopObject] = null,
     tickAmount: js.UndefOr[Double] = js.undefined,
-    tickColor: ColorString | GradientColorObject | PatternObject = null,
+    tickColor: ColorType = null,
     tickInterval: js.UndefOr[Double] = js.undefined,
     tickLength: js.UndefOr[Double] = js.undefined,
     tickPixelInterval: js.UndefOr[Double] = js.undefined,

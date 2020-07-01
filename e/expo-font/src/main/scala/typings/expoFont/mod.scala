@@ -3,6 +3,7 @@ package typings.expoFont
 import org.scalablytyped.runtime.StringDictionary
 import typings.expoFont.fontTypesMod.FontSource
 import typings.expoFont.fontTypesMod.UnloadFontOptions
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,6 +24,8 @@ object mod extends js.Object {
   def unloadAsync(fontFamilyOrFontMap: String, options: UnloadFontOptions): js.Promise[Unit] = js.native
   def unloadAsync(fontFamilyOrFontMap: StringDictionary[UnloadFontOptions]): js.Promise[Unit] = js.native
   def unloadAsync(fontFamilyOrFontMap: StringDictionary[UnloadFontOptions], options: UnloadFontOptions): js.Promise[Unit] = js.native
+  def useFonts(map: String): js.Tuple2[Boolean, Error | Null] = js.native
+  def useFonts(map: StringDictionary[FontSource]): js.Tuple2[Boolean, Error | Null] = js.native
   @js.native
   object FontDisplay extends js.Object {
     /* "auto" */ val AUTO: typings.expoFont.fontTypesMod.FontDisplay.AUTO with String = js.native

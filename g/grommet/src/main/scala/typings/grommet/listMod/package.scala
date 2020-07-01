@@ -8,7 +8,7 @@ package object listMod {
   /* Rewritten from type alias, can be one of: 
     - scala.Boolean
     - typings.grommet.listMod.SideType
-    - typings.grommet.anon.Size
+    - typings.grommet.anon.Side
   */
   type BorderType = typings.grommet.listMod._BorderType | scala.Boolean
   /* Rewritten from type alias, can be one of: 
@@ -24,7 +24,7 @@ package object listMod {
   type PadSizeType = typings.grommet.listMod._PadSizeType | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.grommet.listMod.PadSizeType
-    - typings.grommet.anon.Right
+    - typings.grommet.anon.Left
   */
   type PadType = typings.grommet.listMod._PadType | java.lang.String
   /* Rewritten from type alias, can be one of: 

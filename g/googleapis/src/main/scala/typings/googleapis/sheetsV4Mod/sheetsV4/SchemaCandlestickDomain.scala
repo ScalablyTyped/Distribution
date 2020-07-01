@@ -24,7 +24,7 @@ object SchemaCandlestickDomain {
   def apply(data: SchemaChartData = null, reversed: js.UndefOr[Boolean] = js.undefined): SchemaCandlestickDomain = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.asInstanceOf[js.Any])
+    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCandlestickDomain]
   }
 }

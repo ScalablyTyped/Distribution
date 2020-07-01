@@ -4,6 +4,7 @@ import typings.exceljs.anon.ImageId
 import typings.exceljs.anon.IncludeEmpty
 import typings.exceljs.anon.PartialColumn
 import typings.exceljs.anon.PartialColumnAlignment
+import typings.exceljs.anon.PartialHeaderFooter
 import typings.exceljs.anon.PartialPageSetup
 import typings.exceljs.anon.PartialWorksheetProtectio
 import typings.exceljs.anon.editAsstringhyperlinksIma
@@ -43,7 +44,7 @@ trait Worksheet extends js.Object {
   /**
   	 * Worksheet Header and Footer
   	 */
-  var headerFooter: HeaderFooter = js.native
+  var headerFooter: PartialHeaderFooter = js.native
   val id: Double = js.native
   /**
   	 * Get the last editable row in a worksheet (or undefined if there are none)

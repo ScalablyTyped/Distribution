@@ -46,7 +46,7 @@ class TagInput ()
 @JSImport("@blueprintjs/core/lib/esm/components/tag-input/tagInput", "TagInput")
 @js.native
 object TagInput extends js.Object {
-  var defaultProps: PartialITagInputProps with js.Object = js.native
+  var defaultProps: PartialITagInputProps = js.native
   var displayName: String = js.native
   def getDerivedStateFromProps(props: ReadonlyITagInputProps, state: ReadonlyITagInputState): PartialITagInputState | Null = js.native
 }

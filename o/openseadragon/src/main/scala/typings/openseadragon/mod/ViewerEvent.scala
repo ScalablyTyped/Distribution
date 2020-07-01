@@ -28,7 +28,7 @@ trait ViewerEvent extends OSDEvent[Viewer] {
   var gesturePoints: js.UndefOr[js.Array[GesturePoint]] = js.native
   var getCompletionCallback: js.UndefOr[js.Function1[/* args */ js.Any, Unit]] = js.native
   var homeBounds: js.UndefOr[Rect] = js.native
-  var inmediately: js.UndefOr[Double] = js.native
+  var immediately: js.UndefOr[Double] = js.native
   var insideElementPressed: js.UndefOr[Boolean] = js.native
   var insideElementReleased: js.UndefOr[Boolean] = js.native
   var lastCenter: js.UndefOr[Point] = js.native

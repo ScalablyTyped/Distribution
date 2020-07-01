@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.loaderUtils.loaderUtilsStrings.sha1
+  - typings.loaderUtils.loaderUtilsStrings.md4
   - typings.loaderUtils.loaderUtilsStrings.md5
   - typings.loaderUtils.loaderUtilsStrings.sha256
   - typings.loaderUtils.loaderUtilsStrings.sha512
@@ -13,6 +14,8 @@ import scala.scalajs.js.annotation._
 trait HashType extends js.Object
 
 object HashType {
+  @scala.inline
+  def md4: typings.loaderUtils.loaderUtilsStrings.md4 = "md4".asInstanceOf[typings.loaderUtils.loaderUtilsStrings.md4]
   @scala.inline
   def md5: typings.loaderUtils.loaderUtilsStrings.md5 = "md5".asInstanceOf[typings.loaderUtils.loaderUtilsStrings.md5]
   @scala.inline

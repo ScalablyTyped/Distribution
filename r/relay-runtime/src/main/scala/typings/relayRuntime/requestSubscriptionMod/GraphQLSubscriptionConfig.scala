@@ -33,7 +33,7 @@ trait GraphQLSubscriptionConfig[TSubscription /* <: OperationType */] extends js
 
 object GraphQLSubscriptionConfig {
   @scala.inline
-  def apply[TSubscription](
+  def apply[/* <: typings.relayRuntime.relayRuntimeTypesMod.OperationType */ TSubscription](
     subscription: GraphQLTaggedNode,
     variables: /* import warning: importer.ImportType#apply Failed type conversion: TSubscription['variables'] */ js.Any,
     configs: js.Array[DeclarativeMutationConfig] = null,

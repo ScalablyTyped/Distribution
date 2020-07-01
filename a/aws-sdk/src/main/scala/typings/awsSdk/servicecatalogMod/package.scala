@@ -84,6 +84,7 @@ package object servicecatalogMod {
   type InstructionValue = java.lang.String
   type LastRequestId = java.lang.String
   type LaunchPathSummaries = js.Array[typings.awsSdk.servicecatalogMod.LaunchPathSummary]
+  type LaunchPaths = js.Array[typings.awsSdk.servicecatalogMod.LaunchPath]
   type LogicalResourceId = java.lang.String
   type Message = java.lang.String
   type Namespaces = js.Array[typings.awsSdk.servicecatalogMod.AccountId]

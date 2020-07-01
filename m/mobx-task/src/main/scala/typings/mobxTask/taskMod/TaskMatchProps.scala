@@ -12,7 +12,7 @@ trait TaskMatchProps[T1, T2, T3, A /* <: js.Array[_] */, R] extends js.Object {
 
 object TaskMatchProps {
   @scala.inline
-  def apply[T1, T2, T3, A, R](
+  def apply[T1, T2, T3, /* <: js.Array[_] */ A, R](
     pending: /* args */ A => T1 = null,
     rejected: /* error */ js.Any => T2 = null,
     resolved: /* result */ WithoutPromise[R] => T3 = null

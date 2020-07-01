@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DisablePolicyTypeRequest extends js.Object {
   /**
-    * The policy type that you want to disable in this root.
+    * The policy type that you want to disable in this root. You can specify one of the following values:    BACKUP_POLICY     SERVICE_CONTROL_POLICY     TAG_POLICY   
     */
   var PolicyType: typings.awsSdk.organizationsMod.PolicyType = js.native
   /**

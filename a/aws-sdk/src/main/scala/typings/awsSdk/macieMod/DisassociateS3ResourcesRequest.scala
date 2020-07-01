@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DisassociateS3ResourcesRequest extends js.Object {
   /**
-    * The S3 resources (buckets or prefixes) that you want to remove from being monitored and classified by Amazon Macie. 
+    * The S3 resources (buckets or prefixes) that you want to remove from being monitored and classified by Amazon Macie Classic. 
     */
   var associatedS3Resources: S3Resources = js.native
   /**
-    * The ID of the Amazon Macie member account whose resources you want to remove from being monitored by Amazon Macie. 
+    * The ID of the Amazon Macie Classic member account whose resources you want to remove from being monitored by Amazon Macie Classic. 
     */
   var memberAccountId: js.UndefOr[AWSAccountId] = js.native
 }

@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CreateFileSystemLustreConfiguration extends js.Object {
+  var AutomaticBackupRetentionDays: js.UndefOr[typings.awsSdk.fsxMod.AutomaticBackupRetentionDays] = js.native
   /**
-    * (Optional) Choose SCRATCH_1 and SCRATCH_2 deployment types when you need temporary storage and shorter-term processing of data. The SCRATCH_2 deployment type provides in-transit encryption of data and higher burst throughput capacity than SCRATCH_1. Choose PERSISTENT_1 deployment type for longer-term storage and workloads and encryption of data in transit. To learn more about deployment types, see  FSx for Lustre Deployment Options. Encryption of data in-transit is automatically enabled when you access a SCRATCH_2 or PERSISTENT_1 file system from Amazon EC2 instances that support this feature. (Default = SCRATCH_1)  Encryption of data in-transit for SCRATCH_2 and PERSISTENT_1 deployment types is supported when accessed from supported instance types in supported AWS Regions. To learn more, Encrypting Data in Transit.
+    * A boolean flag indicating whether tags for the file system should be copied to backups. This value defaults to false. If it's set to true, all tags for the file system are copied to all automatic and user-initiated backups where the user doesn't specify tags. If this value is true, and you specify one or more tags, only the specified tags are copied to backups. If you specify one or more tags when creating a user-initiated backup, no tags are copied from the file system, regardless of this value.
+    */
+  var CopyTagsToBackups: js.UndefOr[Flag] = js.native
+  var DailyAutomaticBackupStartTime: js.UndefOr[DailyTime] = js.native
+  /**
+    *  Choose SCRATCH_1 and SCRATCH_2 deployment types when you need temporary storage and shorter-term processing of data. The SCRATCH_2 deployment type provides in-transit encryption of data and higher burst throughput capacity than SCRATCH_1.  This option can only be set for for PERSISTENT_1 deployments types.  Choose PERSISTENT_1 deployment type for longer-term storage and workloads and encryption of data in transit. To learn more about deployment types, see  FSx for Lustre Deployment Options. Encryption of data in-transit is automatically enabled when you access a SCRATCH_2 or PERSISTENT_1 file system from Amazon EC2 instances that support this feature. (Default = SCRATCH_1)  Encryption of data in-transit for SCRATCH_2 and PERSISTENT_1 deployment types is supported when accessed from supported instance types in supported AWS Regions. To learn more, Encrypting Data in Transit.
     */
   var DeploymentType: js.UndefOr[LustreDeploymentType] = js.native
   /**
@@ -27,7 +33,7 @@ trait CreateFileSystemLustreConfiguration extends js.Object {
     */
   var PerUnitStorageThroughput: js.UndefOr[typings.awsSdk.fsxMod.PerUnitStorageThroughput] = js.native
   /**
-    * The preferred time to perform weekly maintenance, in the UTC time zone.
+    * The preferred start time to perform weekly maintenance, formatted d:HH:MM in the UTC time zone, where d is the weekday number, from 1 through 7, beginning with Monday and ending with Sunday.
     */
   var WeeklyMaintenanceStartTime: js.UndefOr[WeeklyTime] = js.native
 }
@@ -35,6 +41,9 @@ trait CreateFileSystemLustreConfiguration extends js.Object {
 object CreateFileSystemLustreConfiguration {
   @scala.inline
   def apply(
+    AutomaticBackupRetentionDays: js.UndefOr[AutomaticBackupRetentionDays] = js.undefined,
+    CopyTagsToBackups: js.UndefOr[Flag] = js.undefined,
+    DailyAutomaticBackupStartTime: DailyTime = null,
     DeploymentType: LustreDeploymentType = null,
     ExportPath: ArchivePath = null,
     ImportPath: ArchivePath = null,
@@ -43,6 +52,9 @@ object CreateFileSystemLustreConfiguration {
     WeeklyMaintenanceStartTime: WeeklyTime = null
   ): CreateFileSystemLustreConfiguration = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(AutomaticBackupRetentionDays)) __obj.updateDynamic("AutomaticBackupRetentionDays")(AutomaticBackupRetentionDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(CopyTagsToBackups)) __obj.updateDynamic("CopyTagsToBackups")(CopyTagsToBackups.get.asInstanceOf[js.Any])
+    if (DailyAutomaticBackupStartTime != null) __obj.updateDynamic("DailyAutomaticBackupStartTime")(DailyAutomaticBackupStartTime.asInstanceOf[js.Any])
     if (DeploymentType != null) __obj.updateDynamic("DeploymentType")(DeploymentType.asInstanceOf[js.Any])
     if (ExportPath != null) __obj.updateDynamic("ExportPath")(ExportPath.asInstanceOf[js.Any])
     if (ImportPath != null) __obj.updateDynamic("ImportPath")(ImportPath.asInstanceOf[js.Any])

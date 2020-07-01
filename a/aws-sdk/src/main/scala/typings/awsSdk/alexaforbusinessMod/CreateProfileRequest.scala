@@ -43,6 +43,10 @@ trait CreateProfileRequest extends js.Object {
     */
   var SetupModeDisabled: js.UndefOr[Boolean] = js.native
   /**
+    * The tags for the profile.
+    */
+  var Tags: js.UndefOr[TagList] = js.native
+  /**
     * The temperature unit to be used by devices in the profile.
     */
   var TemperatureUnit: typings.awsSdk.alexaforbusinessMod.TemperatureUnit = js.native
@@ -70,7 +74,8 @@ object CreateProfileRequest {
     MaxVolumeLimit: js.UndefOr[MaxVolumeLimit] = js.undefined,
     MeetingRoomConfiguration: CreateMeetingRoomConfiguration = null,
     PSTNEnabled: js.UndefOr[Boolean] = js.undefined,
-    SetupModeDisabled: js.UndefOr[Boolean] = js.undefined
+    SetupModeDisabled: js.UndefOr[Boolean] = js.undefined,
+    Tags: TagList = null
   ): CreateProfileRequest = {
     val __obj = js.Dynamic.literal(Address = Address.asInstanceOf[js.Any], DistanceUnit = DistanceUnit.asInstanceOf[js.Any], ProfileName = ProfileName.asInstanceOf[js.Any], TemperatureUnit = TemperatureUnit.asInstanceOf[js.Any], Timezone = Timezone.asInstanceOf[js.Any], WakeWord = WakeWord.asInstanceOf[js.Any])
     if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken.asInstanceOf[js.Any])
@@ -79,6 +84,7 @@ object CreateProfileRequest {
     if (MeetingRoomConfiguration != null) __obj.updateDynamic("MeetingRoomConfiguration")(MeetingRoomConfiguration.asInstanceOf[js.Any])
     if (!js.isUndefined(PSTNEnabled)) __obj.updateDynamic("PSTNEnabled")(PSTNEnabled.get.asInstanceOf[js.Any])
     if (!js.isUndefined(SetupModeDisabled)) __obj.updateDynamic("SetupModeDisabled")(SetupModeDisabled.get.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProfileRequest]
   }
 }

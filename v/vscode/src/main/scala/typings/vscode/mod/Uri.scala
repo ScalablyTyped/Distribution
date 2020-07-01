@@ -118,7 +118,7 @@ object Uri extends js.Object {
     * The path segments are normalized in the following ways:
     * - sequences of path separators (`/` or `\`) are replaced with a single separator
     * - for `file`-uris on windows, the backslash-character (`\`) is considered a path-separator
-    * - the `..`-segment denotes the parent segment, the `.` denotes the current segement
+    * - the `..`-segment denotes the parent segment, the `.` denotes the current segment
     * - paths have a root which always remains, for instance on windows drive-letters are roots
     * so that is true: `joinPath(Uri.file('file:///c:/root'), '../../other').fsPath === 'c:/other'`
     *

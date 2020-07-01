@@ -84,9 +84,9 @@ object SchemaQueryResponse {
     totalRows: String = null
   ): SchemaQueryResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cacheHit)) __obj.updateDynamic("cacheHit")(cacheHit.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheHit)) __obj.updateDynamic("cacheHit")(cacheHit.get.asInstanceOf[js.Any])
     if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
-    if (!js.isUndefined(jobComplete)) __obj.updateDynamic("jobComplete")(jobComplete.asInstanceOf[js.Any])
+    if (!js.isUndefined(jobComplete)) __obj.updateDynamic("jobComplete")(jobComplete.get.asInstanceOf[js.Any])
     if (jobReference != null) __obj.updateDynamic("jobReference")(jobReference.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (numDmlAffectedRows != null) __obj.updateDynamic("numDmlAffectedRows")(numDmlAffectedRows.asInstanceOf[js.Any])

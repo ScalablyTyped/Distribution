@@ -24,6 +24,8 @@ import typings.grommet.grommetStrings.large
 import typings.grommet.grommetStrings.medium
 import typings.grommet.grommetStrings.pulse
 import typings.grommet.grommetStrings.reverse
+import typings.grommet.grommetStrings.rotateLeft
+import typings.grommet.grommetStrings.rotateRight
 import typings.grommet.grommetStrings.row
 import typings.grommet.grommetStrings.scroll
 import typings.grommet.grommetStrings.shrink
@@ -65,7 +67,7 @@ trait BoxProps extends js.Object {
   var alignContent: js.UndefOr[AlignContentType] = js.undefined
   var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
   var animation: js.UndefOr[
-    fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Delay | (js.Array[
+    fadeIn | fadeOut | jiggle | pulse | rotateLeft | rotateRight | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Delay | (js.Array[
       fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Delay
     ])
   ] = js.undefined
@@ -101,7 +103,7 @@ object BoxProps {
     align: start | center | end | baseline | stretch = null,
     alignContent: AlignContentType = null,
     alignSelf: AlignSelfType = null,
-    animation: fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Delay | (js.Array[
+    animation: fadeIn | fadeOut | jiggle | pulse | rotateLeft | rotateRight | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Delay | (js.Array[
       fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Delay
     ]) = null,
     as: PolymorphicType = null,

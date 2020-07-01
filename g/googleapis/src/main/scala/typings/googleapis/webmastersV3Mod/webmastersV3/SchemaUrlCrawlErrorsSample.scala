@@ -37,14 +37,14 @@ object SchemaUrlCrawlErrorsSample {
     first_detected: String = null,
     last_crawled: String = null,
     pageUrl: String = null,
-    responseCode: Int | Double = null,
+    responseCode: js.UndefOr[Double] = js.undefined,
     urlDetails: SchemaUrlSampleDetails = null
   ): SchemaUrlCrawlErrorsSample = {
     val __obj = js.Dynamic.literal()
     if (first_detected != null) __obj.updateDynamic("first_detected")(first_detected.asInstanceOf[js.Any])
     if (last_crawled != null) __obj.updateDynamic("last_crawled")(last_crawled.asInstanceOf[js.Any])
     if (pageUrl != null) __obj.updateDynamic("pageUrl")(pageUrl.asInstanceOf[js.Any])
-    if (responseCode != null) __obj.updateDynamic("responseCode")(responseCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(responseCode)) __obj.updateDynamic("responseCode")(responseCode.get.asInstanceOf[js.Any])
     if (urlDetails != null) __obj.updateDynamic("urlDetails")(urlDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUrlCrawlErrorsSample]
   }

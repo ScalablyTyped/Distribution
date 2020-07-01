@@ -11,7 +11,7 @@ trait CreateVpcRequest extends js.Object {
     */
   var AmazonProvidedIpv6CidrBlock: js.UndefOr[Boolean] = js.native
   /**
-    * The IPv4 network range for the VPC, in CIDR notation. For example, 10.0.0.0/16.
+    * The IPv4 network range for the VPC, in CIDR notation. For example, 10.0.0.0/16. We modify the specified CIDR block to its canonical form; for example, if you specify 100.68.0.18/18, we modify it to 100.68.0.0/18.
     */
   var CidrBlock: String = js.native
   /**
@@ -34,6 +34,10 @@ trait CreateVpcRequest extends js.Object {
     * The ID of an IPv6 address pool from which to allocate the IPv6 CIDR block.
     */
   var Ipv6Pool: js.UndefOr[Ipv6PoolEc2Id] = js.native
+  /**
+    * The tags to assign to the VPC.
+    */
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
 }
 
 object CreateVpcRequest {
@@ -45,7 +49,8 @@ object CreateVpcRequest {
     InstanceTenancy: Tenancy = null,
     Ipv6CidrBlock: String = null,
     Ipv6CidrBlockNetworkBorderGroup: String = null,
-    Ipv6Pool: Ipv6PoolEc2Id = null
+    Ipv6Pool: Ipv6PoolEc2Id = null,
+    TagSpecifications: TagSpecificationList = null
   ): CreateVpcRequest = {
     val __obj = js.Dynamic.literal(CidrBlock = CidrBlock.asInstanceOf[js.Any])
     if (!js.isUndefined(AmazonProvidedIpv6CidrBlock)) __obj.updateDynamic("AmazonProvidedIpv6CidrBlock")(AmazonProvidedIpv6CidrBlock.get.asInstanceOf[js.Any])
@@ -54,6 +59,7 @@ object CreateVpcRequest {
     if (Ipv6CidrBlock != null) __obj.updateDynamic("Ipv6CidrBlock")(Ipv6CidrBlock.asInstanceOf[js.Any])
     if (Ipv6CidrBlockNetworkBorderGroup != null) __obj.updateDynamic("Ipv6CidrBlockNetworkBorderGroup")(Ipv6CidrBlockNetworkBorderGroup.asInstanceOf[js.Any])
     if (Ipv6Pool != null) __obj.updateDynamic("Ipv6Pool")(Ipv6Pool.asInstanceOf[js.Any])
+    if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVpcRequest]
   }
 }

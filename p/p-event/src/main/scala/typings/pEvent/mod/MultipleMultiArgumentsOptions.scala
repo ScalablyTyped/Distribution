@@ -12,7 +12,7 @@ trait MultipleMultiArgumentsOptions[EmittedType /* <: js.Array[_] */] extends Mu
 
 object MultipleMultiArgumentsOptions {
   @scala.inline
-  def apply[EmittedType](
+  def apply[/* <: js.Array[_] */ EmittedType](
     count: Double,
     multiArgs: `true`,
     filter: EmittedType => Boolean = null,

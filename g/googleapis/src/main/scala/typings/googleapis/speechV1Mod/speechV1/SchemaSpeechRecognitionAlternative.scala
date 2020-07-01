@@ -33,9 +33,13 @@ trait SchemaSpeechRecognitionAlternative extends js.Object {
 
 object SchemaSpeechRecognitionAlternative {
   @scala.inline
-  def apply(confidence: Int | Double = null, transcript: String = null, words: js.Array[SchemaWordInfo] = null): SchemaSpeechRecognitionAlternative = {
+  def apply(
+    confidence: js.UndefOr[Double] = js.undefined,
+    transcript: String = null,
+    words: js.Array[SchemaWordInfo] = null
+  ): SchemaSpeechRecognitionAlternative = {
     val __obj = js.Dynamic.literal()
-    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
     if (transcript != null) __obj.updateDynamic("transcript")(transcript.asInstanceOf[js.Any])
     if (words != null) __obj.updateDynamic("words")(words.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSpeechRecognitionAlternative]

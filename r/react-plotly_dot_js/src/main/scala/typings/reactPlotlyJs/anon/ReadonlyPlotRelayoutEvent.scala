@@ -21,8 +21,6 @@ import typings.plotlyJs.mod.Color
 import typings.plotlyJs.mod.Datum
 import typings.plotlyJs.mod.Transition
 import typings.reactPlotlyJs.reactPlotlyJsBooleans.`false`
-import typings.reactPlotlyJs.reactPlotlyJsNumbers.`0`
-import typings.reactPlotlyJs.reactPlotlyJsNumbers.`1`
 import typings.reactPlotlyJs.reactPlotlyJsStrings._empty
 import typings.reactPlotlyJs.reactPlotlyJsStrings.`x unified`
 import typings.reactPlotlyJs.reactPlotlyJsStrings.`y unified`
@@ -54,8 +52,8 @@ trait ReadonlyPlotRelayoutEvent extends js.Object {
   val angularaxis: js.UndefOr[js.Object] = js.undefined
   val annotations: js.UndefOr[js.Array[PartialAnnotationsAlign]] = js.undefined
   val autosize: js.UndefOr[Boolean] = js.undefined
-  val bargap: js.UndefOr[`0` | `1`] = js.undefined
-  val bargroupgap: js.UndefOr[`0` | `1`] = js.undefined
+  val bargap: js.UndefOr[Double] = js.undefined
+  val bargroupgap: js.UndefOr[Double] = js.undefined
   val barmode: js.UndefOr[stack | group | overlay | relative] = js.undefined
   val barnorm: js.UndefOr[_empty | fraction | percent] = js.undefined
   val calendar: js.UndefOr[Calendar] = js.undefined
@@ -150,8 +148,8 @@ object ReadonlyPlotRelayoutEvent {
     angularaxis: js.Object = null,
     annotations: js.Array[PartialAnnotationsAlign] = null,
     autosize: js.UndefOr[Boolean] = js.undefined,
-    bargap: `0` | `1` = null,
-    bargroupgap: `0` | `1` = null,
+    bargap: js.UndefOr[Double] = js.undefined,
+    bargroupgap: js.UndefOr[Double] = js.undefined,
     barmode: stack | group | overlay | relative = null,
     barnorm: _empty | fraction | percent = null,
     calendar: Calendar = null,
@@ -231,8 +229,8 @@ object ReadonlyPlotRelayoutEvent {
     if (angularaxis != null) __obj.updateDynamic("angularaxis")(angularaxis.asInstanceOf[js.Any])
     if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
     if (!js.isUndefined(autosize)) __obj.updateDynamic("autosize")(autosize.get.asInstanceOf[js.Any])
-    if (bargap != null) __obj.updateDynamic("bargap")(bargap.asInstanceOf[js.Any])
-    if (bargroupgap != null) __obj.updateDynamic("bargroupgap")(bargroupgap.asInstanceOf[js.Any])
+    if (!js.isUndefined(bargap)) __obj.updateDynamic("bargap")(bargap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bargroupgap)) __obj.updateDynamic("bargroupgap")(bargroupgap.get.asInstanceOf[js.Any])
     if (barmode != null) __obj.updateDynamic("barmode")(barmode.asInstanceOf[js.Any])
     if (barnorm != null) __obj.updateDynamic("barnorm")(barnorm.asInstanceOf[js.Any])
     if (calendar != null) __obj.updateDynamic("calendar")(calendar.asInstanceOf[js.Any])

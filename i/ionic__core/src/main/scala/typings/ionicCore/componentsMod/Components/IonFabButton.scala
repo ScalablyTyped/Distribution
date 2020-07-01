@@ -1,5 +1,7 @@
 package typings.ionicCore.componentsMod.Components
 
+import typings.ionicCore.animationInterfaceMod.Animation
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.interfaceMod.RouterDirection
 import typings.ionicCore.ionicCoreStrings.button
 import typings.ionicCore.ionicCoreStrings.ios
@@ -17,6 +19,10 @@ trait IonFabButton extends js.Object {
     * If `true`, the fab button will be show a close icon.
     */
   var activated: Boolean
+  /**
+    * The icon name to use for the close icon. This will appear when the fab button is pressed. Only applies if it is the main button inside of a fab containing a fab list.
+    */
+  var closeIcon: String
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
@@ -42,6 +48,10 @@ trait IonFabButton extends js.Object {
     */
   var rel: js.UndefOr[String] = js.undefined
   /**
+    * When using a router, it specifies the transition animation when navigating to another page using `href`.
+    */
+  var routerAnimation: js.UndefOr[AnimationBuilder] = js.undefined
+  /**
     * When using a router, it specifies the transition direction when navigating to another page using `href`.
     */
   var routerDirection: RouterDirection
@@ -50,7 +60,7 @@ trait IonFabButton extends js.Object {
     */
   var show: Boolean
   /**
-    * The size of the button. Set this to `small` in order to have a mini fab.
+    * The size of the button. Set this to `small` in order to have a mini fab button.
     */
   var size: js.UndefOr[small] = js.undefined
   /**
@@ -71,6 +81,7 @@ object IonFabButton {
   @scala.inline
   def apply(
     activated: Boolean,
+    closeIcon: String,
     disabled: Boolean,
     routerDirection: RouterDirection,
     show: Boolean,
@@ -81,16 +92,18 @@ object IonFabButton {
     href: String = null,
     mode: ios | md = null,
     rel: String = null,
+    routerAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     size: small = null,
     target: String = null
   ): IonFabButton = {
-    val __obj = js.Dynamic.literal(activated = activated.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], routerDirection = routerDirection.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any], translucent = translucent.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(activated = activated.asInstanceOf[js.Any], closeIcon = closeIcon.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], routerDirection = routerDirection.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any], translucent = translucent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (download != null) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (rel != null) __obj.updateDynamic("rel")(rel.asInstanceOf[js.Any])
+    if (routerAnimation != null) __obj.updateDynamic("routerAnimation")(js.Any.fromFunction2(routerAnimation))
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonFabButton]

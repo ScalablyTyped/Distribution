@@ -4,7 +4,7 @@ import typings.grommet.anon.Active
 import typings.grommet.anon.Analog
 import typings.grommet.anon.Animation
 import typings.grommet.anon.Baseline
-import typings.grommet.anon.BorderHeading
+import typings.grommet.anon.Body
 import typings.grommet.anon.Captions
 import typings.grommet.anon.Check
 import typings.grommet.anon.ColorColors
@@ -13,23 +13,24 @@ import typings.grommet.anon.Container
 import typings.grommet.anon.Content
 import typings.grommet.anon.Continent
 import typings.grommet.anon.Control
+import typings.grommet.anon.Default
 import typings.grommet.anon.DisabledExtend
 import typings.grommet.anon.Edge
 import typings.grommet.anon.Extend
+import typings.grommet.anon.ExtendExtendType
 import typings.grommet.anon.ExtendFont
 import typings.grommet.anon.ExtendFontWeight
 import typings.grommet.anon.Gap
 import typings.grommet.anon.GroupEnd
+import typings.grommet.anon.Header
 import typings.grommet.anon.Heading
 import typings.grommet.anon.Icons
 import typings.grommet.anon.Item
 import typings.grommet.anon.Line
 import typings.grommet.anon.Margin
 import typings.grommet.anon.MaxHeight
-import typings.grommet.anon.MinWidth
 import typings.grommet.anon.Panel
 import typings.grommet.anon.ResponsiveBreakpoint
-import typings.grommet.anon.Row
 import typings.grommet.anon.SizeDictxLarge
 import typings.grommet.anon.Small
 import typings.grommet.anon.Text
@@ -40,11 +41,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ThemeType extends js.Object {
-  var accordion: js.UndefOr[BorderHeading] = js.undefined
+  var accordion: js.UndefOr[Panel] = js.undefined
   var anchor: js.UndefOr[ExtendFontWeight] = js.undefined
   var avatar: js.UndefOr[Text] = js.undefined
   var box: js.UndefOr[ResponsiveBreakpoint] = js.undefined
-  var button: js.UndefOr[MinWidth] = js.undefined
+  var button: js.UndefOr[Default] = js.undefined
   var calendar: js.UndefOr[Heading] = js.undefined
   var carousel: js.UndefOr[Animation] = js.undefined
   var chart: js.UndefOr[ColorExtend] = js.undefined
@@ -56,7 +57,7 @@ trait ThemeType extends js.Object {
   var drop: js.UndefOr[MaxHeight] = js.undefined
   var formField: js.UndefOr[Content] = js.undefined
   var global: js.UndefOr[Active] = js.undefined
-  var grommet: js.UndefOr[Extend] = js.undefined
+  var grommet: js.UndefOr[ExtendExtendType] = js.undefined
   var heading: js.UndefOr[ExtendFont] = js.undefined
   var icon: js.UndefOr[SizeDictxLarge] = js.undefined
   var layer: js.UndefOr[Container] = js.undefined
@@ -70,8 +71,8 @@ trait ThemeType extends js.Object {
   var rangeSelector: js.UndefOr[Edge] = js.undefined
   var select: js.UndefOr[Control] = js.undefined
   var tab: js.UndefOr[Margin] = js.undefined
-  var table: js.UndefOr[Row] = js.undefined
-  var tabs: js.UndefOr[Panel] = js.undefined
+  var table: js.UndefOr[Body] = js.undefined
+  var tabs: js.UndefOr[Header] = js.undefined
   var text: js.UndefOr[Small] = js.undefined
   var textArea: js.UndefOr[DisabledExtend] = js.undefined
   var textInput: js.UndefOr[DisabledExtend] = js.undefined
@@ -82,11 +83,11 @@ trait ThemeType extends js.Object {
 object ThemeType {
   @scala.inline
   def apply(
-    accordion: BorderHeading = null,
+    accordion: Panel = null,
     anchor: ExtendFontWeight = null,
     avatar: Text = null,
     box: ResponsiveBreakpoint = null,
-    button: MinWidth = null,
+    button: Default = null,
     calendar: Heading = null,
     carousel: Animation = null,
     chart: ColorExtend = null,
@@ -98,7 +99,7 @@ object ThemeType {
     drop: MaxHeight = null,
     formField: Content = null,
     global: Active = null,
-    grommet: Extend = null,
+    grommet: ExtendExtendType = null,
     heading: ExtendFont = null,
     icon: SizeDictxLarge = null,
     layer: Container = null,
@@ -112,8 +113,8 @@ object ThemeType {
     rangeSelector: Edge = null,
     select: Control = null,
     tab: Margin = null,
-    table: Row = null,
-    tabs: Panel = null,
+    table: Body = null,
+    tabs: Header = null,
     text: Small = null,
     textArea: DisabledExtend = null,
     textInput: DisabledExtend = null,

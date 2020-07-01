@@ -22,7 +22,7 @@ trait PasswordQuestion[T /* <: Answers */] extends PasswordQuestionOptions[T] {
 
 object PasswordQuestion {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.inquirer.mod.Answers */ T](
     `type`: password,
     default: AsyncDynamicQuestionProperty[_, T] = null,
     filter: /* input */ js.Any => _ = null,

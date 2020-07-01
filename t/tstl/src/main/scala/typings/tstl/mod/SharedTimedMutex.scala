@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
   * Default Constructor.
   */
 class SharedTimedMutex ()
-  extends typings.tstl.threadMod.SharedTimedMutex
+  extends typings.tstl.tstlModuleMod.SharedTimedMutex
 

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An interface for updating data on the DocumentCreated object, for use in "documentCreated.set({ ... })". */
+/** An interface for updating data on the DocumentCreated object, for use in `documentCreated.set({ ... })`. */
 trait DocumentCreatedUpdateData extends js.Object {
   /**
     *

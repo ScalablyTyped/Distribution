@@ -125,8 +125,20 @@ object OfficeExtension extends js.Object {
       name: String,
       eventInfo: EventInfo[T]
     ) = this()
+    /**
+      * Adds a function to be called when the event is triggered.
+      * @param handler A promise-based function that takes in any relevant event arguments.
+      */
     /* CompleteClass */
     override def add(handler: js.Function1[T, js.Promise[_]]): typings.officeJs.OfficeExtension.EventHandlerResult[T] = js.native
+    /**
+      * Removes the specified function from the event handler list so that it will not be called on subsequent events. 
+      * 
+      * **Note**: The same {@link OfficeExtension.ClientRequestContext | RequestContext} object that the handler was added in must be used when removing the handler. 
+      * More information can be found in {@link https://docs.microsoft.com/office/dev/add-ins/develop/common-coding-issues#removing-event-handlers | Coding guidance for common issues and unexpected platform behaviors}. 
+      * 
+      * @param handler A reference to a function previously provided to the `add` method as an event handler. 
+      */
     /* CompleteClass */
     override def remove(handler: js.Function1[T, js.Promise[_]]): Unit = js.native
   }

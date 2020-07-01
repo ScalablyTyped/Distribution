@@ -41,16 +41,16 @@ object SchemaCustomMetric {
   def apply(
     filter: String = null,
     metricName: String = null,
-    singleInstanceAssignment: Int | Double = null,
+    singleInstanceAssignment: js.UndefOr[Double] = js.undefined,
     targetType: String = null,
-    targetUtilization: Int | Double = null
+    targetUtilization: js.UndefOr[Double] = js.undefined
   ): SchemaCustomMetric = {
     val __obj = js.Dynamic.literal()
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (metricName != null) __obj.updateDynamic("metricName")(metricName.asInstanceOf[js.Any])
-    if (singleInstanceAssignment != null) __obj.updateDynamic("singleInstanceAssignment")(singleInstanceAssignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleInstanceAssignment)) __obj.updateDynamic("singleInstanceAssignment")(singleInstanceAssignment.get.asInstanceOf[js.Any])
     if (targetType != null) __obj.updateDynamic("targetType")(targetType.asInstanceOf[js.Any])
-    if (targetUtilization != null) __obj.updateDynamic("targetUtilization")(targetUtilization.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetUtilization)) __obj.updateDynamic("targetUtilization")(targetUtilization.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCustomMetric]
   }
 }

@@ -1,6 +1,7 @@
 package typings.sharedb.sharedbMod
 
 import typings.node.eventsMod.EventEmitter
+import typings.sharedb.clientMod.Connection
 import typings.sharedb.sharedbStrings.`before op`
 import typings.sharedb.sharedbStrings.`no write pending`
 import typings.sharedb.sharedbStrings.`nothing pending`
@@ -16,9 +17,12 @@ import scala.scalajs.js.annotation._
 @JSImport("sharedb/lib/sharedb", "Doc")
 @js.native
 class Doc () extends EventEmitter {
+  var collection: String = js.native
+  var connection: Connection = js.native
   var data: js.Any = js.native
   var id: String = js.native
-  var `type`: String = js.native
+  var `type`: Type | Null = js.native
+  var version: Double | Null = js.native
   @JSName("addListener")
   def addListener_beforeop(event: `before op`, callback: js.Function2[/* ops */ js.Array[Op], /* source */ Boolean, Unit]): this.type = js.native
   @JSName("addListener")

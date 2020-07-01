@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Snapshot extends js.Object {
   /**
+    * The ARN (Amazon Resource Name) of the snapshot.
+    */
+  var ARN: js.UndefOr[String] = js.native
+  /**
     * This parameter is currently disabled.
     */
   var AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.native
@@ -111,6 +115,7 @@ trait Snapshot extends js.Object {
 object Snapshot {
   @scala.inline
   def apply(
+    ARN: String = null,
     AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
     AutomaticFailover: AutomaticFailoverStatus = null,
     CacheClusterCreateTime: TStamp = null,
@@ -138,6 +143,7 @@ object Snapshot {
     VpcId: String = null
   ): Snapshot = {
     val __obj = js.Dynamic.literal()
+    if (ARN != null) __obj.updateDynamic("ARN")(ARN.asInstanceOf[js.Any])
     if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade.get.asInstanceOf[js.Any])
     if (AutomaticFailover != null) __obj.updateDynamic("AutomaticFailover")(AutomaticFailover.asInstanceOf[js.Any])
     if (CacheClusterCreateTime != null) __obj.updateDynamic("CacheClusterCreateTime")(CacheClusterCreateTime.asInstanceOf[js.Any])

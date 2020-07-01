@@ -20,7 +20,7 @@ object SchemaLocationMetadata {
   @scala.inline
   def apply(hsmAvailable: js.UndefOr[Boolean] = js.undefined): SchemaLocationMetadata = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hsmAvailable)) __obj.updateDynamic("hsmAvailable")(hsmAvailable.asInstanceOf[js.Any])
+    if (!js.isUndefined(hsmAvailable)) __obj.updateDynamic("hsmAvailable")(hsmAvailable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLocationMetadata]
   }
 }

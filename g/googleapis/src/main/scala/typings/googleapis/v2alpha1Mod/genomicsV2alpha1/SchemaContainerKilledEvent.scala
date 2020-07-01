@@ -19,9 +19,9 @@ trait SchemaContainerKilledEvent extends js.Object {
 
 object SchemaContainerKilledEvent {
   @scala.inline
-  def apply(actionId: Int | Double = null): SchemaContainerKilledEvent = {
+  def apply(actionId: js.UndefOr[Double] = js.undefined): SchemaContainerKilledEvent = {
     val __obj = js.Dynamic.literal()
-    if (actionId != null) __obj.updateDynamic("actionId")(actionId.asInstanceOf[js.Any])
+    if (!js.isUndefined(actionId)) __obj.updateDynamic("actionId")(actionId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaContainerKilledEvent]
   }
 }

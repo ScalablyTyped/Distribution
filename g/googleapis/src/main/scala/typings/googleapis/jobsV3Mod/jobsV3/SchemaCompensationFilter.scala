@@ -38,7 +38,7 @@ object SchemaCompensationFilter {
     units: js.Array[String] = null
   ): SchemaCompensationFilter = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeJobsWithUnspecifiedCompensationRange)) __obj.updateDynamic("includeJobsWithUnspecifiedCompensationRange")(includeJobsWithUnspecifiedCompensationRange.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeJobsWithUnspecifiedCompensationRange)) __obj.updateDynamic("includeJobsWithUnspecifiedCompensationRange")(includeJobsWithUnspecifiedCompensationRange.get.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])

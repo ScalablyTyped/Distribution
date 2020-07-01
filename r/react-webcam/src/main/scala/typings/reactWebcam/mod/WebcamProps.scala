@@ -6,6 +6,7 @@ import typings.reactWebcam.reactWebcamStrings.imageSlashjpeg
 import typings.reactWebcam.reactWebcamStrings.imageSlashpng
 import typings.reactWebcam.reactWebcamStrings.imageSlashwebp
 import typings.std.HTMLVideoElement
+import typings.std.MediaStream
 import typings.std.MediaTrackConstraints
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,7 +25,7 @@ trait WebcamProps
   var screenshotFormat: imageSlashwebp | imageSlashpng | imageSlashjpeg
   var screenshotQuality: Double
   var videoConstraints: js.UndefOr[Boolean | MediaTrackConstraints] = js.undefined
-  def onUserMedia(): Unit
+  def onUserMedia(stream: MediaStream): Unit
   def onUserMediaError(error: String): Unit
 }
 
@@ -35,7 +36,7 @@ object WebcamProps {
     forceScreenshotSourceSize: Boolean,
     imageSmoothing: Boolean,
     mirrored: Boolean,
-    onUserMedia: () => Unit,
+    onUserMedia: MediaStream => Unit,
     onUserMediaError: String => Unit,
     screenshotFormat: imageSlashwebp | imageSlashpng | imageSlashjpeg,
     screenshotQuality: Double,
@@ -46,7 +47,7 @@ object WebcamProps {
     minScreenshotWidth: js.UndefOr[Double] = js.undefined,
     videoConstraints: Boolean | MediaTrackConstraints = null
   ): WebcamProps = {
-    val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any], forceScreenshotSourceSize = forceScreenshotSourceSize.asInstanceOf[js.Any], imageSmoothing = imageSmoothing.asInstanceOf[js.Any], mirrored = mirrored.asInstanceOf[js.Any], onUserMedia = js.Any.fromFunction0(onUserMedia), onUserMediaError = js.Any.fromFunction1(onUserMediaError), screenshotFormat = screenshotFormat.asInstanceOf[js.Any], screenshotQuality = screenshotQuality.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any], forceScreenshotSourceSize = forceScreenshotSourceSize.asInstanceOf[js.Any], imageSmoothing = imageSmoothing.asInstanceOf[js.Any], mirrored = mirrored.asInstanceOf[js.Any], onUserMedia = js.Any.fromFunction1(onUserMedia), onUserMediaError = js.Any.fromFunction1(onUserMediaError), screenshotFormat = screenshotFormat.asInstanceOf[js.Any], screenshotQuality = screenshotQuality.asInstanceOf[js.Any])
     if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
     if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (audioConstraints != null) __obj.updateDynamic("audioConstraints")(audioConstraints.asInstanceOf[js.Any])

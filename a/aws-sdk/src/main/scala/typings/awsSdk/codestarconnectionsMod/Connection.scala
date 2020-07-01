@@ -19,11 +19,15 @@ trait Connection extends js.Object {
     */
   var ConnectionStatus: js.UndefOr[typings.awsSdk.codestarconnectionsMod.ConnectionStatus] = js.native
   /**
+    * The Amazon Resource Name (ARN) of the host associated with the connection.
+    */
+  var HostArn: js.UndefOr[typings.awsSdk.codestarconnectionsMod.HostArn] = js.native
+  /**
     * The identifier of the external provider where your third-party code repository is configured. For Bitbucket, this is the account ID of the owner of the Bitbucket repository.
     */
   var OwnerAccountId: js.UndefOr[AccountId] = js.native
   /**
-    * The name of the external provider where your third-party code repository is configured. Currently, the valid provider type is Bitbucket.
+    * The name of the external provider where your third-party code repository is configured. The valid provider type is Bitbucket.
     */
   var ProviderType: js.UndefOr[typings.awsSdk.codestarconnectionsMod.ProviderType] = js.native
 }
@@ -34,6 +38,7 @@ object Connection {
     ConnectionArn: ConnectionArn = null,
     ConnectionName: ConnectionName = null,
     ConnectionStatus: ConnectionStatus = null,
+    HostArn: HostArn = null,
     OwnerAccountId: AccountId = null,
     ProviderType: ProviderType = null
   ): Connection = {
@@ -41,6 +46,7 @@ object Connection {
     if (ConnectionArn != null) __obj.updateDynamic("ConnectionArn")(ConnectionArn.asInstanceOf[js.Any])
     if (ConnectionName != null) __obj.updateDynamic("ConnectionName")(ConnectionName.asInstanceOf[js.Any])
     if (ConnectionStatus != null) __obj.updateDynamic("ConnectionStatus")(ConnectionStatus.asInstanceOf[js.Any])
+    if (HostArn != null) __obj.updateDynamic("HostArn")(HostArn.asInstanceOf[js.Any])
     if (OwnerAccountId != null) __obj.updateDynamic("OwnerAccountId")(OwnerAccountId.asInstanceOf[js.Any])
     if (ProviderType != null) __obj.updateDynamic("ProviderType")(ProviderType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Connection]

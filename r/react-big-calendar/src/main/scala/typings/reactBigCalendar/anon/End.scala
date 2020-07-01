@@ -13,7 +13,7 @@ trait End[TEvent /* <: js.Object */] extends js.Object {
 
 object End {
   @scala.inline
-  def apply[TEvent](
+  def apply[/* <: js.Object */ TEvent](
     end: /* event */ TEvent => typings.std.Date = null,
     start: /* event */ TEvent => typings.std.Date = null,
     title: /* event */ TEvent => String = null,

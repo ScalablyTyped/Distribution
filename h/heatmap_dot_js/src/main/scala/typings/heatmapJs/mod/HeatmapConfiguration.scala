@@ -26,7 +26,7 @@ trait HeatmapConfiguration[V /* <: String */, X /* <: String */, Y /* <: String 
 
 object HeatmapConfiguration {
   @scala.inline
-  def apply[V, X, Y](
+  def apply[/* <: java.lang.String */ V, /* <: java.lang.String */ X, /* <: java.lang.String */ Y](
     container: HTMLElement,
     backgroundColor: String = null,
     blur: js.UndefOr[Double] = js.undefined,

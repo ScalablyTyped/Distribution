@@ -32,6 +32,7 @@ trait ResourceLoader extends js.Object {
     * {@link pc.ASSET_CSS}
     * {@link pc.ASSET_HTML}
     * {@link pc.ASSET_SCRIPT}
+    * {@link pc.ASSET_CONTAINER}
     * @param handler - An instance of a resource handler supporting atleast load() and open().
     */
   def addHandler(`type`: String, handler: ResourceHandler): Unit = js.native

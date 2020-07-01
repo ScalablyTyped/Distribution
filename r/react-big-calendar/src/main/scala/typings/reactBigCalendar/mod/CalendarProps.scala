@@ -55,7 +55,9 @@ trait CalendarProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] ext
   var onNavigate: js.UndefOr[
     js.Function3[/* newDate */ Date, /* view */ View, /* action */ NavigateAction, Unit]
   ] = js.undefined
-  var onRangeChange: js.UndefOr[js.Function1[/* range */ js.Array[Date] | Start, Unit]] = js.undefined
+  var onRangeChange: js.UndefOr[
+    js.Function2[/* range */ js.Array[Date] | Start, /* view */ js.UndefOr[View], Unit]
+  ] = js.undefined
   var onSelectEvent: js.UndefOr[
     js.Function2[/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event], Unit]
   ] = js.undefined
@@ -88,7 +90,7 @@ trait CalendarProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] ext
 
 object CalendarProps {
   @scala.inline
-  def apply[TEvent, TResource](
+  def apply[/* <: js.Object */ TEvent, /* <: js.Object */ TResource](
     localizer: DateLocalizer,
     allDayAccessor: (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Boolean]) = null,
     children: ReactNode = null,
@@ -119,7 +121,7 @@ object CalendarProps {
     onDoubleClickEvent: (/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event]) => Unit = null,
     onDrillDown: (/* date */ Date, /* view */ View) => Unit = null,
     onNavigate: (/* newDate */ Date, /* view */ View, /* action */ NavigateAction) => Unit = null,
-    onRangeChange: /* range */ js.Array[Date] | Start => Unit = null,
+    onRangeChange: (/* range */ js.Array[Date] | Start, /* view */ js.UndefOr[View]) => Unit = null,
     onSelectEvent: (/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event]) => Unit = null,
     onSelectSlot: /* slotInfo */ Action => Unit = null,
     onSelecting: /* range */ Start => js.UndefOr[Boolean | Null] = null,
@@ -176,7 +178,7 @@ object CalendarProps {
     if (onDoubleClickEvent != null) __obj.updateDynamic("onDoubleClickEvent")(js.Any.fromFunction2(onDoubleClickEvent))
     if (onDrillDown != null) __obj.updateDynamic("onDrillDown")(js.Any.fromFunction2(onDrillDown))
     if (onNavigate != null) __obj.updateDynamic("onNavigate")(js.Any.fromFunction3(onNavigate))
-    if (onRangeChange != null) __obj.updateDynamic("onRangeChange")(js.Any.fromFunction1(onRangeChange))
+    if (onRangeChange != null) __obj.updateDynamic("onRangeChange")(js.Any.fromFunction2(onRangeChange))
     if (onSelectEvent != null) __obj.updateDynamic("onSelectEvent")(js.Any.fromFunction2(onSelectEvent))
     if (onSelectSlot != null) __obj.updateDynamic("onSelectSlot")(js.Any.fromFunction1(onSelectSlot))
     if (onSelecting != null) __obj.updateDynamic("onSelecting")(js.Any.fromFunction1(onSelecting))

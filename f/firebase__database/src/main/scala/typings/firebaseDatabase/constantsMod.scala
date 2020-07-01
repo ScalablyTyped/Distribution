@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@firebase/database/dist/src/realtime/Constants", JSImport.Namespace)
 @js.native
 object constantsMod extends js.Object {
+  val APPLICATION_ID_PARAM: /* "p" */ String = js.native
   val FORGE_DOMAIN: /* "firebaseio.com" */ String = js.native
   val FORGE_REF: /* "f" */ String = js.native
   val LAST_SESSION_PARAM: /* "ls" */ String = js.native

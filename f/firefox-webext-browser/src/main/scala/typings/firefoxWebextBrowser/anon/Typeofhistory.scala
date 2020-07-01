@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait Typeofhistory extends js.Object {
   /** Fired when the title of a URL is changed in the browser history. */
-  val onTitleChanged: WebExtEvent[js.Function1[/* changed */ TitleString, Unit]]
+  val onTitleChanged: WebExtEvent[js.Function1[/* changed */ TitleStringUrlString, Unit]]
   /**
     * Fired when one or more URLs are removed from the history service. When all visits have been removed the URL is
     * purged from history.
@@ -49,7 +49,7 @@ object Typeofhistory {
     deleteRange: StartTime => js.Promise[Unit],
     deleteUrl: UrlString => js.Promise[Unit],
     getVisits: UrlString => js.Promise[js.Array[VisitItem]],
-    onTitleChanged: WebExtEvent[js.Function1[/* changed */ TitleString, Unit]],
+    onTitleChanged: WebExtEvent[js.Function1[/* changed */ TitleStringUrlString, Unit]],
     onVisitRemoved: WebExtEvent[js.Function1[/* removed */ AllHistory, Unit]],
     onVisited: WebExtEvent[js.Function1[/* result */ HistoryItem, Unit]],
     search: EndTime => js.Promise[js.Array[HistoryItem]]

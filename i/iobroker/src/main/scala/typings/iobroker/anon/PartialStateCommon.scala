@@ -11,6 +11,7 @@ trait PartialStateCommon extends js.Object {
   var alias: js.UndefOr[Id] = js.undefined
   var custom: js.UndefOr[Record[String, _]] = js.undefined
   var `def`: js.UndefOr[js.Any] = js.undefined
+  var defAck: js.UndefOr[Boolean] = js.undefined
   var desc: js.UndefOr[String] = js.undefined
   var history: js.UndefOr[js.Any] = js.undefined
   var icon: js.UndefOr[String] = js.undefined
@@ -32,6 +33,7 @@ object PartialStateCommon {
     alias: Id = null,
     custom: Record[String, _] = null,
     `def`: js.Any = null,
+    defAck: js.UndefOr[Boolean] = js.undefined,
     desc: String = null,
     history: js.Any = null,
     icon: String = null,
@@ -50,6 +52,7 @@ object PartialStateCommon {
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
     if (`def` != null) __obj.updateDynamic("def")(`def`.asInstanceOf[js.Any])
+    if (!js.isUndefined(defAck)) __obj.updateDynamic("defAck")(defAck.get.asInstanceOf[js.Any])
     if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
     if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])

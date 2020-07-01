@@ -26,9 +26,13 @@ trait SchemaDatafeedsCustomBatchResponseEntry extends js.Object {
 
 object SchemaDatafeedsCustomBatchResponseEntry {
   @scala.inline
-  def apply(batchId: Int | Double = null, datafeed: SchemaDatafeed = null, errors: SchemaErrors = null): SchemaDatafeedsCustomBatchResponseEntry = {
+  def apply(
+    batchId: js.UndefOr[Double] = js.undefined,
+    datafeed: SchemaDatafeed = null,
+    errors: SchemaErrors = null
+  ): SchemaDatafeedsCustomBatchResponseEntry = {
     val __obj = js.Dynamic.literal()
-    if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchId)) __obj.updateDynamic("batchId")(batchId.get.asInstanceOf[js.Any])
     if (datafeed != null) __obj.updateDynamic("datafeed")(datafeed.asInstanceOf[js.Any])
     if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDatafeedsCustomBatchResponseEntry]

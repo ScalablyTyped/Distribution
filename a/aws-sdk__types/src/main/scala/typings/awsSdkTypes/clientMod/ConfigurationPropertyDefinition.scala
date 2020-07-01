@@ -39,7 +39,7 @@ trait ConfigurationPropertyDefinition[InputType, ResolvedType /* <: InputType */
 
 object ConfigurationPropertyDefinition {
   @scala.inline
-  def apply[InputType, ResolvedType, ServiceConfiguration, ResolvedConfiguration](
+  def apply[InputType, /* <: InputType */ ResolvedType, /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */ ServiceConfiguration, /* <: ServiceConfiguration */ ResolvedConfiguration](
     apply: (ResolvedConfiguration, /* clientMiddlewareStack */ MiddlewareStack[js.Any, js.Any, js.Any]) => Unit = null,
     defaultProvider: /* config */ ResolvedConfiguration => ResolvedType = null,
     defaultValue: ResolvedType = null,

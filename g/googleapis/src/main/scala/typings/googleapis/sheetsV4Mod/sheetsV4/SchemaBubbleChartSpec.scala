@@ -73,9 +73,9 @@ object SchemaBubbleChartSpec {
   def apply(
     bubbleBorderColor: SchemaColor = null,
     bubbleLabels: SchemaChartData = null,
-    bubbleMaxRadiusSize: Int | Double = null,
-    bubbleMinRadiusSize: Int | Double = null,
-    bubbleOpacity: Int | Double = null,
+    bubbleMaxRadiusSize: js.UndefOr[Double] = js.undefined,
+    bubbleMinRadiusSize: js.UndefOr[Double] = js.undefined,
+    bubbleOpacity: js.UndefOr[Double] = js.undefined,
     bubbleSizes: SchemaChartData = null,
     bubbleTextStyle: SchemaTextFormat = null,
     domain: SchemaChartData = null,
@@ -86,9 +86,9 @@ object SchemaBubbleChartSpec {
     val __obj = js.Dynamic.literal()
     if (bubbleBorderColor != null) __obj.updateDynamic("bubbleBorderColor")(bubbleBorderColor.asInstanceOf[js.Any])
     if (bubbleLabels != null) __obj.updateDynamic("bubbleLabels")(bubbleLabels.asInstanceOf[js.Any])
-    if (bubbleMaxRadiusSize != null) __obj.updateDynamic("bubbleMaxRadiusSize")(bubbleMaxRadiusSize.asInstanceOf[js.Any])
-    if (bubbleMinRadiusSize != null) __obj.updateDynamic("bubbleMinRadiusSize")(bubbleMinRadiusSize.asInstanceOf[js.Any])
-    if (bubbleOpacity != null) __obj.updateDynamic("bubbleOpacity")(bubbleOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(bubbleMaxRadiusSize)) __obj.updateDynamic("bubbleMaxRadiusSize")(bubbleMaxRadiusSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bubbleMinRadiusSize)) __obj.updateDynamic("bubbleMinRadiusSize")(bubbleMinRadiusSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bubbleOpacity)) __obj.updateDynamic("bubbleOpacity")(bubbleOpacity.get.asInstanceOf[js.Any])
     if (bubbleSizes != null) __obj.updateDynamic("bubbleSizes")(bubbleSizes.asInstanceOf[js.Any])
     if (bubbleTextStyle != null) __obj.updateDynamic("bubbleTextStyle")(bubbleTextStyle.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])

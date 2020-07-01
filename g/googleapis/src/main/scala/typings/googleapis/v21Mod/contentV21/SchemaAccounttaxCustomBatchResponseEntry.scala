@@ -32,13 +32,13 @@ object SchemaAccounttaxCustomBatchResponseEntry {
   @scala.inline
   def apply(
     accountTax: SchemaAccountTax = null,
-    batchId: Int | Double = null,
+    batchId: js.UndefOr[Double] = js.undefined,
     errors: SchemaErrors = null,
     kind: String = null
   ): SchemaAccounttaxCustomBatchResponseEntry = {
     val __obj = js.Dynamic.literal()
     if (accountTax != null) __obj.updateDynamic("accountTax")(accountTax.asInstanceOf[js.Any])
-    if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchId)) __obj.updateDynamic("batchId")(batchId.get.asInstanceOf[js.Any])
     if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAccounttaxCustomBatchResponseEntry]

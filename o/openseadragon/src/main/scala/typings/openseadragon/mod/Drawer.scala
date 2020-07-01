@@ -21,6 +21,8 @@ class Drawer protected () extends js.Object {
   def blendSketch(options: Bounds): Unit = js.native
   def canRotate(): Boolean = js.native
   def clear(): Unit = js.native
+  def clipWithPolygons(polygons: js.Array[js.Array[Point]]): Unit = js.native
+  def clipWithPolygons(polygons: js.Array[js.Array[Point]], useSketch: Boolean): Unit = js.native
   def destroy(): Unit = js.native
   def drawTile(
     tile: Tile,
@@ -45,7 +47,10 @@ class Drawer protected () extends js.Object {
   ): Unit = js.native
   def getCanvasSize(sketch: Boolean): Point = js.native
   def getOpacity(): Double = js.native
+  def setImageSmoothingEnabled(): Unit = js.native
+  def setImageSmoothingEnabled(imageSmoothingEnabled: Boolean): Unit = js.native
   def setOpacity(opacity: Double): Drawer = js.native
+  def viewportCoordToDrawerCoord(point: Point): Point = js.native
   def viewportToDrawerRectangle(rectangle: Rect): Rect = js.native
 }
 

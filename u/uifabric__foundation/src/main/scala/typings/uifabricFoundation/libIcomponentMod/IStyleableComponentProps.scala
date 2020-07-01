@@ -15,7 +15,7 @@ trait IStyleableComponentProps[TViewProps, TTokens, TStyleSet /* <: IStyleSet[TS
 
 object IStyleableComponentProps {
   @scala.inline
-  def apply[TViewProps, TTokens, TStyleSet](
+  def apply[TViewProps, TTokens, /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */ TStyleSet](
     className: String = null,
     styles: IStylesFunctionOrObject[TViewProps, TTokens, TStyleSet] = null,
     theme: ITheme = null,

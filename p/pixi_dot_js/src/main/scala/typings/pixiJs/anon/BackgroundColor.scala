@@ -11,7 +11,6 @@ trait BackgroundColor extends js.Object {
   var backgroundColor: js.UndefOr[Double] = js.undefined
   var clearBeforeRender: js.UndefOr[Boolean] = js.undefined
   var context: js.UndefOr[js.Any] = js.undefined
-  var forceFXAA: js.UndefOr[Boolean] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
   var powerPreference: js.UndefOr[String] = js.undefined
   var preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined
@@ -29,7 +28,6 @@ object BackgroundColor {
     backgroundColor: js.UndefOr[Double] = js.undefined,
     clearBeforeRender: js.UndefOr[Boolean] = js.undefined,
     context: js.Any = null,
-    forceFXAA: js.UndefOr[Boolean] = js.undefined,
     height: js.UndefOr[Double] = js.undefined,
     powerPreference: String = null,
     preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined,
@@ -44,7 +42,6 @@ object BackgroundColor {
     if (!js.isUndefined(backgroundColor)) __obj.updateDynamic("backgroundColor")(backgroundColor.get.asInstanceOf[js.Any])
     if (!js.isUndefined(clearBeforeRender)) __obj.updateDynamic("clearBeforeRender")(clearBeforeRender.get.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceFXAA)) __obj.updateDynamic("forceFXAA")(forceFXAA.get.asInstanceOf[js.Any])
     if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (powerPreference != null) __obj.updateDynamic("powerPreference")(powerPreference.asInstanceOf[js.Any])
     if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer.get.asInstanceOf[js.Any])

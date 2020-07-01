@@ -44,7 +44,7 @@ trait GESchemaObjectContainer[T /* <: KmlObject */] extends js.Object {
 
 object GESchemaObjectContainer {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.googleEarth.google.earth.KmlObject */ T](
     appendChild: T => Unit,
     getChildNodes: () => KmlObjectList[T],
     getFirstChild: () => T,

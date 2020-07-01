@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @see https://developer.knuddels.de/docs/classes/AppViewMode.html
-  */
+	 * @see https://developer.knuddels.de/docs/classes/AppViewMode.html
+	 */
 @JSGlobal("AppViewMode")
 @js.native
 class AppViewMode () extends js.Object
@@ -16,16 +16,16 @@ class AppViewMode () extends js.Object
 @js.native
 object AppViewMode extends js.Object {
   /**
-    * @see https://developer.knuddels.de/docs/classes/AppViewMode.html#property_Headerbar
-    */
+  		 * @see https://developer.knuddels.de/docs/classes/AppViewMode.html#property_Headerbar
+  		 */
   val Headerbar: AppViewMode = js.native
   /**
-    * @see https://developer.knuddels.de/docs/classes/AppViewMode.html#property_Overlay
-    */
+  		 * @see https://developer.knuddels.de/docs/classes/AppViewMode.html#property_Overlay
+  		 */
   val Overlay: AppViewMode = js.native
   /**
-    * @see https://developer.knuddels.de/docs/classes/AppViewMode.html#property_Popup
-    */
+  		 * @see https://developer.knuddels.de/docs/classes/AppViewMode.html#property_Popup
+  		 */
   val Popup: AppViewMode = js.native
 }
 

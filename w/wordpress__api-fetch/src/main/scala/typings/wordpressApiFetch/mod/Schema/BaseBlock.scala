@@ -28,7 +28,7 @@ trait BaseBlock[T /* <: Context */] extends BaseResponse {
 
 object BaseBlock {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.wordpressApiFetch.mod.Schema.Context */ T](
     _links: Record[String, js.Array[Dictk]],
     content: ProtectedRaw with (js.Object | Blockversion),
     date: String,

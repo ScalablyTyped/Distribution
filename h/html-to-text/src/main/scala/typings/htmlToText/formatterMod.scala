@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatterMod extends js.Object {
   val anchor: Formatter[js.Any] = js.native
+  val blockquote: Formatter[js.Any] = js.native
   val heading: Formatter[js.Any] = js.native
   val horizontalLine: Formatter[js.Any] = js.native
   val image: LeafFormatter[js.Any] = js.native

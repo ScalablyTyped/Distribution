@@ -20,7 +20,7 @@ trait UseGlobalFiltersInstanceProps[D /* <: js.Object */] extends js.Object {
 
 object UseGlobalFiltersInstanceProps {
   @scala.inline
-  def apply[D](
+  def apply[/* <: js.Object */ D](
     flatRows: js.Array[Row[D]],
     globalFilteredFlatRows: js.Array[Row[D]],
     globalFilteredRows: js.Array[Row[D]],

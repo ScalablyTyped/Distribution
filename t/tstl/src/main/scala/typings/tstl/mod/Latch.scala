@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl", "Latch")
 @js.native
 class Latch protected ()
-  extends typings.tstl.threadMod.Latch {
+  extends typings.tstl.tstlModuleMod.Latch {
   /**
     * Initializer Constructor.
     *

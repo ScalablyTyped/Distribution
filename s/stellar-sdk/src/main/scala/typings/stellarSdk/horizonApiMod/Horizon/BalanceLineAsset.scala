@@ -20,7 +20,7 @@ trait BalanceLineAsset[T /* <: credit4 | credit12 */] extends js.Object {
 
 object BalanceLineAsset {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.stellarBase.mod.AssetType.credit4 | typings.stellarBase.mod.AssetType.credit12 */ T](
     asset_code: String,
     asset_issuer: String,
     asset_type: T,

@@ -88,7 +88,7 @@ object SchemaReservation {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     if (specificReservation != null) __obj.updateDynamic("specificReservation")(specificReservation.asInstanceOf[js.Any])
-    if (!js.isUndefined(specificReservationRequired)) __obj.updateDynamic("specificReservationRequired")(specificReservationRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(specificReservationRequired)) __obj.updateDynamic("specificReservationRequired")(specificReservationRequired.get.asInstanceOf[js.Any])
     if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReservation]
   }

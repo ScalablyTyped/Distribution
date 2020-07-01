@@ -1,6 +1,5 @@
 package typings.firebaseFirestore
 
-import typings.firebaseFirestore.byteStringMod.ByteString
 import typings.firebaseFirestore.collectionsMod.DocumentKeySet_
 import typings.firebaseFirestore.documentKeyMod.DocumentKey
 import typings.firebaseFirestore.indexManagerMod.IndexManager
@@ -59,11 +58,6 @@ object indexeddbMutationQueueMod extends js.Object {
       * retrieve mutations.
       */
     var userId: js.Any = js.native
-    /**
-      * Acknowledges the given batch.
-      */
-    /* CompleteClass */
-    override def acknowledgeBatch(transaction: PersistenceTransaction, batch: MutationBatch, streamToken: ByteString): PersistencePromise[Unit] = js.native
     /**
       * Creates a new mutation batch and adds it to this mutation queue.
       *
@@ -141,9 +135,6 @@ object indexeddbMutationQueueMod extends js.Object {
       */
     /* CompleteClass */
     override def getHighestUnacknowledgedBatchId(transaction: PersistenceTransaction): PersistencePromise[BatchId] = js.native
-    /** Returns the current stream token for this mutation queue. */
-    /* CompleteClass */
-    override def getLastStreamToken(transaction: PersistenceTransaction): PersistencePromise[ByteString] = js.native
     /**
       * Gets the first unacknowledged mutation batch after the passed in batchId
       * in the mutation queue or null if empty.
@@ -193,9 +184,6 @@ object indexeddbMutationQueueMod extends js.Object {
       */
     /* CompleteClass */
     override def removeMutationBatch(transaction: PersistenceTransaction, batch: MutationBatch): PersistencePromise[Unit] = js.native
-    /** Sets the stream token for this mutation queue. */
-    /* CompleteClass */
-    override def setLastStreamToken(transaction: PersistenceTransaction, streamToken: ByteString): PersistencePromise[Unit] = js.native
   }
   
   def mutationQueuesContainKey(txn: PersistenceTransaction, docKey: DocumentKey): PersistencePromise[Boolean] = js.native

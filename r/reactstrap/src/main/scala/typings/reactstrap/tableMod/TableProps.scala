@@ -84,7 +84,7 @@ trait TableProps
   var hover: js.UndefOr[Boolean] = js.undefined
   var inverse: js.UndefOr[Boolean] = js.undefined
   var reflow: js.UndefOr[Boolean] = js.undefined
-  var responsive: js.UndefOr[Boolean] = js.undefined
+  var responsive: js.UndefOr[Boolean | String] = js.undefined
   var responsiveTag: js.UndefOr[ReactType[_]] = js.undefined
   var size: js.UndefOr[String] = js.undefined
   var striped: js.UndefOr[Boolean] = js.undefined
@@ -260,7 +260,7 @@ object TableProps {
     radioGroup: String = null,
     reflow: js.UndefOr[Boolean] = js.undefined,
     resource: String = null,
-    responsive: js.UndefOr[Boolean] = js.undefined,
+    responsive: Boolean | String = null,
     responsiveTag: ReactType[_] = null,
     results: js.UndefOr[Double] = js.undefined,
     role: String = null,
@@ -447,7 +447,7 @@ object TableProps {
     if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup.asInstanceOf[js.Any])
     if (!js.isUndefined(reflow)) __obj.updateDynamic("reflow")(reflow.get.asInstanceOf[js.Any])
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.get.asInstanceOf[js.Any])
+    if (responsive != null) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
     if (responsiveTag != null) __obj.updateDynamic("responsiveTag")(responsiveTag.asInstanceOf[js.Any])
     if (!js.isUndefined(results)) __obj.updateDynamic("results")(results.get.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])

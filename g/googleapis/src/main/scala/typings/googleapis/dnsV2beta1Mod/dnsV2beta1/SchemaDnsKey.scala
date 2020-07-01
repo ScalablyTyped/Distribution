@@ -32,8 +32,8 @@ object SchemaDnsKey {
     digests: js.Array[SchemaDnsKeyDigest] = null,
     id: String = null,
     isActive: js.UndefOr[Boolean] = js.undefined,
-    keyLength: Int | Double = null,
-    keyTag: Int | Double = null,
+    keyLength: js.UndefOr[Double] = js.undefined,
+    keyTag: js.UndefOr[Double] = js.undefined,
     kind: String = null,
     publicKey: String = null,
     `type`: String = null
@@ -44,9 +44,9 @@ object SchemaDnsKey {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (digests != null) __obj.updateDynamic("digests")(digests.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.asInstanceOf[js.Any])
-    if (keyLength != null) __obj.updateDynamic("keyLength")(keyLength.asInstanceOf[js.Any])
-    if (keyTag != null) __obj.updateDynamic("keyTag")(keyTag.asInstanceOf[js.Any])
+    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyLength)) __obj.updateDynamic("keyLength")(keyLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyTag)) __obj.updateDynamic("keyTag")(keyTag.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

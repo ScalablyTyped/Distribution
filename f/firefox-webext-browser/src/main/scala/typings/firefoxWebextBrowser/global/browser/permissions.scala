@@ -16,16 +16,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object permissions extends js.Object {
   /* permissions events */
-  /**
-    * Fired when the extension acquires new permissions.
-    * @deprecated Unsupported on Firefox at this time.
-    */
-  val onAdded: js.UndefOr[WebExtEvent[js.Function1[/* permissions */ Permissions, Unit]]] = js.native
-  /**
-    * Fired when permissions are removed from the extension.
-    * @deprecated Unsupported on Firefox at this time.
-    */
-  val onRemoved: js.UndefOr[WebExtEvent[js.Function1[/* permissions */ Permissions, Unit]]] = js.native
+  /** Fired when the extension acquires new permissions. */
+  val onAdded: WebExtEvent[js.Function1[/* permissions */ Permissions, Unit]] = js.native
+  /** Fired when permissions are removed from the extension. */
+  val onRemoved: WebExtEvent[js.Function1[/* permissions */ Permissions, Unit]] = js.native
   /** Check if the extension has the given permissions. */
   def contains(permissions: AnyPermissions): js.Promise[Boolean] = js.native
   /* permissions functions */

@@ -83,31 +83,31 @@ object SchemaRouterNat {
   @scala.inline
   def apply(
     drainNatIps: js.Array[String] = null,
-    icmpIdleTimeoutSec: Int | Double = null,
+    icmpIdleTimeoutSec: js.UndefOr[Double] = js.undefined,
     logConfig: SchemaRouterNatLogConfig = null,
-    minPortsPerVm: Int | Double = null,
+    minPortsPerVm: js.UndefOr[Double] = js.undefined,
     name: String = null,
     natIpAllocateOption: String = null,
     natIps: js.Array[String] = null,
     sourceSubnetworkIpRangesToNat: String = null,
     subnetworks: js.Array[SchemaRouterNatSubnetworkToNat] = null,
-    tcpEstablishedIdleTimeoutSec: Int | Double = null,
-    tcpTransitoryIdleTimeoutSec: Int | Double = null,
-    udpIdleTimeoutSec: Int | Double = null
+    tcpEstablishedIdleTimeoutSec: js.UndefOr[Double] = js.undefined,
+    tcpTransitoryIdleTimeoutSec: js.UndefOr[Double] = js.undefined,
+    udpIdleTimeoutSec: js.UndefOr[Double] = js.undefined
   ): SchemaRouterNat = {
     val __obj = js.Dynamic.literal()
     if (drainNatIps != null) __obj.updateDynamic("drainNatIps")(drainNatIps.asInstanceOf[js.Any])
-    if (icmpIdleTimeoutSec != null) __obj.updateDynamic("icmpIdleTimeoutSec")(icmpIdleTimeoutSec.asInstanceOf[js.Any])
+    if (!js.isUndefined(icmpIdleTimeoutSec)) __obj.updateDynamic("icmpIdleTimeoutSec")(icmpIdleTimeoutSec.get.asInstanceOf[js.Any])
     if (logConfig != null) __obj.updateDynamic("logConfig")(logConfig.asInstanceOf[js.Any])
-    if (minPortsPerVm != null) __obj.updateDynamic("minPortsPerVm")(minPortsPerVm.asInstanceOf[js.Any])
+    if (!js.isUndefined(minPortsPerVm)) __obj.updateDynamic("minPortsPerVm")(minPortsPerVm.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (natIpAllocateOption != null) __obj.updateDynamic("natIpAllocateOption")(natIpAllocateOption.asInstanceOf[js.Any])
     if (natIps != null) __obj.updateDynamic("natIps")(natIps.asInstanceOf[js.Any])
     if (sourceSubnetworkIpRangesToNat != null) __obj.updateDynamic("sourceSubnetworkIpRangesToNat")(sourceSubnetworkIpRangesToNat.asInstanceOf[js.Any])
     if (subnetworks != null) __obj.updateDynamic("subnetworks")(subnetworks.asInstanceOf[js.Any])
-    if (tcpEstablishedIdleTimeoutSec != null) __obj.updateDynamic("tcpEstablishedIdleTimeoutSec")(tcpEstablishedIdleTimeoutSec.asInstanceOf[js.Any])
-    if (tcpTransitoryIdleTimeoutSec != null) __obj.updateDynamic("tcpTransitoryIdleTimeoutSec")(tcpTransitoryIdleTimeoutSec.asInstanceOf[js.Any])
-    if (udpIdleTimeoutSec != null) __obj.updateDynamic("udpIdleTimeoutSec")(udpIdleTimeoutSec.asInstanceOf[js.Any])
+    if (!js.isUndefined(tcpEstablishedIdleTimeoutSec)) __obj.updateDynamic("tcpEstablishedIdleTimeoutSec")(tcpEstablishedIdleTimeoutSec.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tcpTransitoryIdleTimeoutSec)) __obj.updateDynamic("tcpTransitoryIdleTimeoutSec")(tcpTransitoryIdleTimeoutSec.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(udpIdleTimeoutSec)) __obj.updateDynamic("udpIdleTimeoutSec")(udpIdleTimeoutSec.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRouterNat]
   }
 }

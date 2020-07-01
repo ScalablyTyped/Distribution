@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashMapValues extends js.Object {
+trait LodashMapValues extends LodashConvertible {
   def apply(iteratee: String): LodashMapValues6x1 = js.native
   def apply(iteratee: js.Object): LodashMapValues3x1 = js.native
   def apply[T](callbackOrIterateeOrIterateeOrIteratee: __): LodashMapValues1x2[T] = js.native

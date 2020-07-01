@@ -31,6 +31,10 @@ trait FormatOptions extends js.Object {
     */
   var indentWith: js.UndefOr[space | tab] = js.undefined
   /**
+    * Controls removing trailing semicolons in rule; defaults to `false` - means remove
+    */
+  var semicolonAfterLastProperty: js.UndefOr[Boolean] = js.undefined
+  /**
     * Controls where to insert spaces
     */
   var spaces: js.UndefOr[AroundSelectorRelation] = js.undefined
@@ -47,6 +51,7 @@ object FormatOptions {
     breaks: AfterAtRule = null,
     indentBy: js.UndefOr[Double] = js.undefined,
     indentWith: space | tab = null,
+    semicolonAfterLastProperty: js.UndefOr[Boolean] = js.undefined,
     spaces: AroundSelectorRelation = null,
     wrapAt: `false` | Double = null
   ): FormatOptions = {
@@ -55,6 +60,7 @@ object FormatOptions {
     if (breaks != null) __obj.updateDynamic("breaks")(breaks.asInstanceOf[js.Any])
     if (!js.isUndefined(indentBy)) __obj.updateDynamic("indentBy")(indentBy.get.asInstanceOf[js.Any])
     if (indentWith != null) __obj.updateDynamic("indentWith")(indentWith.asInstanceOf[js.Any])
+    if (!js.isUndefined(semicolonAfterLastProperty)) __obj.updateDynamic("semicolonAfterLastProperty")(semicolonAfterLastProperty.get.asInstanceOf[js.Any])
     if (spaces != null) __obj.updateDynamic("spaces")(spaces.asInstanceOf[js.Any])
     if (wrapAt != null) __obj.updateDynamic("wrapAt")(wrapAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatOptions]

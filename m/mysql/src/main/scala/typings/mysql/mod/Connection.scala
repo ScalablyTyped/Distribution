@@ -44,6 +44,8 @@ trait Connection extends EscapeFunctions {
   def createQuery(options: String, values: js.Any, callback: queryCallback): Query = js.native
   def createQuery(options: QueryOptions): Query = js.native
   def createQuery(options: QueryOptions, callback: queryCallback): Query = js.native
+  def createQuery(options: QueryOptions, values: js.Any): Query = js.native
+  def createQuery(options: QueryOptions, values: js.Any, callback: queryCallback): Query = js.native
   def createQuery(query: Query): Query = js.native
   /**
     * Close the connection immediately, without waiting for any queued data (eg
@@ -56,8 +58,8 @@ trait Connection extends EscapeFunctions {
     * @param callback Handler for any fatal error
     */
   def end(): Unit = js.native
-  def end(callback: js.Function2[/* err */ MysqlError, /* repeated */ js.Any, Unit]): Unit = js.native
-  def end(options: js.Any, callback: js.Function2[/* err */ MysqlError, /* repeated */ js.Any, Unit]): Unit = js.native
+  def end(callback: js.Function1[/* err */ js.UndefOr[MysqlError], Unit]): Unit = js.native
+  def end(options: js.Any, callback: js.Function1[/* err */ js.UndefOr[MysqlError], Unit]): Unit = js.native
   /**
     * Set handler to be run on a certain event.
     */
@@ -100,6 +102,8 @@ trait Connection extends EscapeFunctions {
   def query(options: String, values: js.Any, callback: queryCallback): Query = js.native
   def query(options: QueryOptions): Query = js.native
   def query(options: QueryOptions, callback: queryCallback): Query = js.native
+  def query(options: QueryOptions, values: js.Any): Query = js.native
+  def query(options: QueryOptions, values: js.Any, callback: queryCallback): Query = js.native
   def query(query: Query): Query = js.native
   /**
     * Resume the connection.

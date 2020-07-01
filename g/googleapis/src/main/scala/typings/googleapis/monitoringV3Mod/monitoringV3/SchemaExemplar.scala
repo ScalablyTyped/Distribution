@@ -39,12 +39,12 @@ object SchemaExemplar {
   def apply(
     attachments: js.Array[StringDictionary[_]] = null,
     timestamp: String = null,
-    value: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined
   ): SchemaExemplar = {
     val __obj = js.Dynamic.literal()
     if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExemplar]
   }
 }

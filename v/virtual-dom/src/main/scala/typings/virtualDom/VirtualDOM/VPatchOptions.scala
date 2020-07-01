@@ -11,7 +11,7 @@ trait VPatchOptions[T /* <: Element */] extends js.Object {
 
 object VPatchOptions {
   @scala.inline
-  def apply[T](patch: (T, /* patches */ js.Array[VPatch], /* renderOptions */ VPatchOptions[T]) => T = null): VPatchOptions[T] = {
+  def apply[/* <: typings.std.Element */ T](patch: (T, /* patches */ js.Array[VPatch], /* renderOptions */ VPatchOptions[T]) => T = null): VPatchOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (patch != null) __obj.updateDynamic("patch")(js.Any.fromFunction3(patch))
     __obj.asInstanceOf[VPatchOptions[T]]

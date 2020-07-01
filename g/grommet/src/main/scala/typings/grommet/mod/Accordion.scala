@@ -2,6 +2,7 @@ package typings.grommet.mod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.grommet.accordionMod.AccordionProps
+import typings.grommet.boxMod.BoxProps
 import typings.react.mod.DetailedHTMLProps
 import typings.react.mod.FC
 import typings.react.mod.HTMLAttributes
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object Accordion extends TopLevel[
       FC[
-        AccordionProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
+        BoxProps with AccordionProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
       ]
     ]
 

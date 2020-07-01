@@ -25,7 +25,7 @@ object SchemaPrecondition {
   @scala.inline
   def apply(exists: js.UndefOr[Boolean] = js.undefined, updateTime: String = null): SchemaPrecondition = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(exists)) __obj.updateDynamic("exists")(exists.asInstanceOf[js.Any])
+    if (!js.isUndefined(exists)) __obj.updateDynamic("exists")(exists.get.asInstanceOf[js.Any])
     if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPrecondition]
   }

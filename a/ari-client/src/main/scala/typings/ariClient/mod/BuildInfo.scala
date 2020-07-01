@@ -5,12 +5,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BuildInfo extends js.Object {
+  /**
+    * Date and time when Asterisk was built.
+    */
   var date: String
+  /**
+    * Kernel version Asterisk was built on.
+    */
   var kernel: String
+  /**
+    * Machine architecture (x86_64, i686, ppc, etc.).
+    */
   var machine: String
+  /**
+    * Compile time options, or empty string if default.
+    */
   var options: String
-  /* Properties */
+  /**
+    * OS Asterisk was built on.
+    */
   var os: String
+  /**
+    * Username that build Asterisk.
+    */
   var user: String
 }
 

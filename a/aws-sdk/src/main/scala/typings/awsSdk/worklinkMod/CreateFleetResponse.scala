@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateFleetResponse extends js.Object {
   /**
-    * The ARN of the fleet.
+    * The Amazon Resource Name (ARN) of the fleet.
     */
   var FleetArn: js.UndefOr[typings.awsSdk.worklinkMod.FleetArn] = js.native
 }

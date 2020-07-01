@@ -13,7 +13,7 @@ trait WrappedComponentRef[C /* <: ComponentType[_] */] extends js.Object {
 
 object WrappedComponentRef {
   @scala.inline
-  def apply[C](wrappedComponentRef: js.UndefOr[Null | Ref[InstanceType[C]]] = js.undefined): WrappedComponentRef[C] = {
+  def apply[/* <: typings.react.mod.ComponentType[_] */ C](wrappedComponentRef: js.UndefOr[Null | Ref[InstanceType[C]]] = js.undefined): WrappedComponentRef[C] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(wrappedComponentRef)) __obj.updateDynamic("wrappedComponentRef")(wrappedComponentRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[WrappedComponentRef[C]]

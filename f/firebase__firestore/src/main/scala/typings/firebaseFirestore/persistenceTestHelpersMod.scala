@@ -11,6 +11,7 @@ import typings.firebaseFirestore.sharedClientStateMod.ClientId
 import typings.firebaseFirestore.typesMod.BatchId
 import typings.firebaseFirestore.typesMod.TargetId
 import typings.firebaseFirestore.userMod.User
+import typings.firebaseFirestore.utilTypesMod.WindowLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,9 +26,9 @@ object persistenceTestHelpersMod extends js.Object {
   val TEST_PERSISTENCE_PREFIX: String = js.native
   val TEST_SERIALIZER: LocalSerializer = js.native
   def clearTestPersistence(): js.Promise[Unit] = js.native
-  def clearWebStorage(): Unit = js.native
   def populateWebStorage(
     user: User,
+    window: WindowLike,
     existingClientId: ClientId,
     existingMutationBatchIds: js.Array[BatchId],
     existingQueryTargetIds: js.Array[TargetId]

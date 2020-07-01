@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PutIntegrationRequest extends js.Object {
   /**
-    * An API-specific tag group of related cached parameters.
+    * A list of request parameters whose values API Gateway caches. To be valid values for cacheKeyParameters, these parameters must also be specified for Method requestParameters.
     */
   var cacheKeyParameters: js.UndefOr[ListOfString] = js.native
   /**
-    * A list of request parameters whose values are to be cached.
+    * Specifies a group of related cached parameters. By default, API Gateway uses the resource ID as the cacheNamespace. You can specify the same cacheNamespace across resources to return the same cached data for requests to different resources.
     */
   var cacheNamespace: js.UndefOr[String] = js.native
   /**
@@ -62,6 +62,7 @@ trait PutIntegrationRequest extends js.Object {
     * Custom timeout between 50 and 29,000 milliseconds. The default value is 29,000 milliseconds or 29 seconds.
     */
   var timeoutInMillis: js.UndefOr[NullableInteger] = js.native
+  var tlsConfig: js.UndefOr[TlsConfig] = js.native
   /**
     * [Required] Specifies a put integration input's type.
     */
@@ -90,6 +91,7 @@ object PutIntegrationRequest {
     requestParameters: MapOfStringToString = null,
     requestTemplates: MapOfStringToString = null,
     timeoutInMillis: js.UndefOr[NullableInteger] = js.undefined,
+    tlsConfig: TlsConfig = null,
     uri: String = null
   ): PutIntegrationRequest = {
     val __obj = js.Dynamic.literal(httpMethod = httpMethod.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
@@ -105,6 +107,7 @@ object PutIntegrationRequest {
     if (requestParameters != null) __obj.updateDynamic("requestParameters")(requestParameters.asInstanceOf[js.Any])
     if (requestTemplates != null) __obj.updateDynamic("requestTemplates")(requestTemplates.asInstanceOf[js.Any])
     if (!js.isUndefined(timeoutInMillis)) __obj.updateDynamic("timeoutInMillis")(timeoutInMillis.get.asInstanceOf[js.Any])
+    if (tlsConfig != null) __obj.updateDynamic("tlsConfig")(tlsConfig.asInstanceOf[js.Any])
     if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutIntegrationRequest]
   }

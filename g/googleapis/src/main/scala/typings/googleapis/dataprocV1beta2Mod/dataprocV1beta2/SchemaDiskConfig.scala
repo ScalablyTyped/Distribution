@@ -32,14 +32,14 @@ trait SchemaDiskConfig extends js.Object {
 object SchemaDiskConfig {
   @scala.inline
   def apply(
-    bootDiskSizeGb: Int | Double = null,
+    bootDiskSizeGb: js.UndefOr[Double] = js.undefined,
     bootDiskType: String = null,
-    numLocalSsds: Int | Double = null
+    numLocalSsds: js.UndefOr[Double] = js.undefined
   ): SchemaDiskConfig = {
     val __obj = js.Dynamic.literal()
-    if (bootDiskSizeGb != null) __obj.updateDynamic("bootDiskSizeGb")(bootDiskSizeGb.asInstanceOf[js.Any])
+    if (!js.isUndefined(bootDiskSizeGb)) __obj.updateDynamic("bootDiskSizeGb")(bootDiskSizeGb.get.asInstanceOf[js.Any])
     if (bootDiskType != null) __obj.updateDynamic("bootDiskType")(bootDiskType.asInstanceOf[js.Any])
-    if (numLocalSsds != null) __obj.updateDynamic("numLocalSsds")(numLocalSsds.asInstanceOf[js.Any])
+    if (!js.isUndefined(numLocalSsds)) __obj.updateDynamic("numLocalSsds")(numLocalSsds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDiskConfig]
   }
 }

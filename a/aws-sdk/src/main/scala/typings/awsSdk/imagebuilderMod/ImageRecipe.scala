@@ -50,6 +50,10 @@ trait ImageRecipe extends js.Object {
     * The version of the image recipe.
     */
   var version: js.UndefOr[VersionNumber] = js.native
+  /**
+    * The working directory to be used during build and test workflows.
+    */
+  var workingDirectory: js.UndefOr[NonEmptyString] = js.native
 }
 
 object ImageRecipe {
@@ -65,7 +69,8 @@ object ImageRecipe {
     parentImage: NonEmptyString = null,
     platform: Platform = null,
     tags: TagMap = null,
-    version: VersionNumber = null
+    version: VersionNumber = null,
+    workingDirectory: NonEmptyString = null
   ): ImageRecipe = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
@@ -79,6 +84,7 @@ object ImageRecipe {
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (workingDirectory != null) __obj.updateDynamic("workingDirectory")(workingDirectory.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageRecipe]
   }
 }

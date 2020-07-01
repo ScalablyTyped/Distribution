@@ -2,8 +2,8 @@ package typings.echarts.echarts.EChartOption.SeriesPictorialBar
 
 import typings.echarts.anon.BorderType
 import typings.echarts.anon.Distance
-import typings.echarts.anon.ExtraCssText
 import typings.echarts.anon.LabelDistance
+import typings.echarts.echarts.EChartOption.BaseTooltip
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -692,7 +692,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.data.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
   /**
     * The value of a single data item.
     *
@@ -737,7 +737,7 @@ object DataObject {
     symbolRepeatDirection: String = null,
     symbolRotate: js.UndefOr[Double] = js.undefined,
     symbolSize: js.Array[_] | Double = null,
-    tooltip: ExtraCssText = null,
+    tooltip: BaseTooltip = null,
     value: js.UndefOr[Double] = js.undefined,
     z: js.UndefOr[Double] = js.undefined
   ): DataObject = {

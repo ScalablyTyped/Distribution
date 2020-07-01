@@ -210,6 +210,7 @@ object AutocompleteProps {
     editable: js.UndefOr[Boolean] = js.undefined,
     enablesReturnKeyAutomatically: js.UndefOr[Boolean] = js.undefined,
     flatListProps: Partial[FlatListProps[T]] = null,
+    focusable: js.UndefOr[Boolean] = js.undefined,
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
     hideResults: js.UndefOr[Boolean] = js.undefined,
     hitSlop: Insets = null,
@@ -329,6 +330,7 @@ object AutocompleteProps {
     if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(enablesReturnKeyAutomatically)) __obj.updateDynamic("enablesReturnKeyAutomatically")(enablesReturnKeyAutomatically.get.asInstanceOf[js.Any])
     if (flatListProps != null) __obj.updateDynamic("flatListProps")(flatListProps.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.get.asInstanceOf[js.Any])
     if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.get.asInstanceOf[js.Any])
     if (!js.isUndefined(hideResults)) __obj.updateDynamic("hideResults")(hideResults.get.asInstanceOf[js.Any])
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])

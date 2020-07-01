@@ -1,5 +1,6 @@
 package typings.antd.popoverMod
 
+import typings.antd.colorsMod.PresetColorType
 import typings.antd.getRenderPropValueMod.RenderFunction
 import typings.antd.placementsMod.AdjustOverflow
 import typings.antd.tooltipMod.AbstractTooltipProps
@@ -23,6 +24,7 @@ object PopoverProps {
     autoAdjustOverflow: Boolean | AdjustOverflow = null,
     builtinPlacements: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BuildInPlacements */ js.Any = null,
     className: String = null,
+    color: PresetColorType = null,
     content: ReactNode | RenderFunction = null,
     getPopupContainer: /* triggerNode */ HTMLElement => HTMLElement = null,
     openClassName: String = null,
@@ -35,6 +37,7 @@ object PopoverProps {
     if (autoAdjustOverflow != null) __obj.updateDynamic("autoAdjustOverflow")(autoAdjustOverflow.asInstanceOf[js.Any])
     if (builtinPlacements != null) __obj.updateDynamic("builtinPlacements")(builtinPlacements.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (openClassName != null) __obj.updateDynamic("openClassName")(openClassName.asInstanceOf[js.Any])

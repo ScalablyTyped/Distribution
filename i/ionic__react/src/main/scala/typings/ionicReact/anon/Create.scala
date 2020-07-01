@@ -11,7 +11,7 @@ trait Create[OptionsType /* <: js.Object */, OverlayType /* <: OverlayBase */] e
 
 object Create {
   @scala.inline
-  def apply[OptionsType, OverlayType](create: OptionsType => js.Promise[OverlayType]): Create[OptionsType, OverlayType] = {
+  def apply[/* <: js.Object */ OptionsType, /* <: typings.ionicReact.createControllerComponentMod.OverlayBase */ OverlayType](create: OptionsType => js.Promise[OverlayType]): Create[OptionsType, OverlayType] = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
     __obj.asInstanceOf[Create[OptionsType, OverlayType]]
   }

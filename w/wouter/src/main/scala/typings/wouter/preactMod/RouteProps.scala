@@ -14,7 +14,7 @@ trait RouteProps[T /* <: DefaultParams */] extends js.Object {
 
 object RouteProps {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.wouter.preactMod.DefaultParams */ T](
     path: Path,
     children: js.UndefOr[
       Null | (js.Function1[/* params */ Params[T], ComponentChildren]) | ComponentChildren

@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MediaRecorderOptions extends js.Object {
+  var audioBitrateMode: js.UndefOr[BitrateMode] = js.undefined
   var audioBitsPerSecond: js.UndefOr[Double] = js.undefined
   var bitsPerSecond: js.UndefOr[Double] = js.undefined
   var mimeType: js.UndefOr[String] = js.undefined
@@ -14,12 +15,14 @@ trait MediaRecorderOptions extends js.Object {
 object MediaRecorderOptions {
   @scala.inline
   def apply(
+    audioBitrateMode: BitrateMode = null,
     audioBitsPerSecond: js.UndefOr[Double] = js.undefined,
     bitsPerSecond: js.UndefOr[Double] = js.undefined,
     mimeType: String = null,
     videoBitsPerSecond: js.UndefOr[Double] = js.undefined
   ): MediaRecorderOptions = {
     val __obj = js.Dynamic.literal()
+    if (audioBitrateMode != null) __obj.updateDynamic("audioBitrateMode")(audioBitrateMode.asInstanceOf[js.Any])
     if (!js.isUndefined(audioBitsPerSecond)) __obj.updateDynamic("audioBitsPerSecond")(audioBitsPerSecond.get.asInstanceOf[js.Any])
     if (!js.isUndefined(bitsPerSecond)) __obj.updateDynamic("bitsPerSecond")(bitsPerSecond.get.asInstanceOf[js.Any])
     if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])

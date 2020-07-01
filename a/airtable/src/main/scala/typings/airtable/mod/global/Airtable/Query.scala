@@ -12,7 +12,7 @@ trait Query[TFields /* <: js.Object */] extends js.Object {
 
 object Query {
   @scala.inline
-  def apply[TFields](
+  def apply[/* <: js.Object */ TFields](
     all: () => js.Promise[Records[TFields]],
     eachPage: js.Function2[/* records */ Records[TFields], /* next */ js.Function0[Unit], Unit] => js.Promise[Unit],
     firstPage: () => js.Promise[Records[TFields]]

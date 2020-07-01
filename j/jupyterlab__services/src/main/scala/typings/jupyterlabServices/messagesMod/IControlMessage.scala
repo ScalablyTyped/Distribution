@@ -34,7 +34,7 @@ trait IControlMessage[T /* <: ControlMessageType */] extends IMessage[T] {
 
 object IControlMessage {
   @scala.inline
-  def apply[T](
+  def apply[/* <: typings.jupyterlabServices.messagesMod.ControlMessageType */ T](
     channel: control,
     content: Wait | Commid | (ReplyContent[
       ICommInfoReply | ICompleteReply | IHistoryReply | IInfoReply | IInputReply | IInspectReply | IIsCompleteReplyIncomplete | IIsCompleteReplyOther

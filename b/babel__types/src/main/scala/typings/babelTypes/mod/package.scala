@@ -105,6 +105,7 @@ package object mod {
     - typings.babelTypes.mod.IfStatement_
     - typings.babelTypes.mod.Immutable
     - typings.babelTypes.mod.Import_
+    - typings.babelTypes.mod.ImportAttribute_
     - typings.babelTypes.mod.ImportDeclaration_
     - typings.babelTypes.mod.ImportDefaultSpecifier_
     - typings.babelTypes.mod.ImportNamespaceSpecifier_

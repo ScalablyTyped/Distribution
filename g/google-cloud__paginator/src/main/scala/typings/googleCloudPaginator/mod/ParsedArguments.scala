@@ -44,7 +44,7 @@ object ParsedArguments {
     autoPaginate: js.UndefOr[Boolean] = js.undefined,
     callback: js.Function = null,
     decodeStrings: js.UndefOr[Boolean] = js.undefined,
-    defaultencoding: BufferEncoding = null,
+    defaultEncoding: BufferEncoding = null,
     destroy: js.ThisFunction2[
       /* this */ Transform, 
       /* error */ Error | Null, 
@@ -99,7 +99,7 @@ object ParsedArguments {
     if (!js.isUndefined(autoPaginate)) __obj.updateDynamic("autoPaginate")(autoPaginate.get.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
     if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings.get.asInstanceOf[js.Any])
-    if (defaultencoding != null) __obj.updateDynamic("defaultencoding")(defaultencoding.asInstanceOf[js.Any])
+    if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
     if (!js.isUndefined(emitClose)) __obj.updateDynamic("emitClose")(emitClose.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])

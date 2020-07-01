@@ -65,7 +65,7 @@ object ionRouterOutletMod extends js.Object {
     var activated: js.Any = js.native
     val activatedRoute: ActivatedRoute = js.native
     val activatedRouteData: js.Any = js.native
-    var activatedView: js.Any = js.native
+    var activatedView: RouteView | Null = js.native
     var animated: Boolean = js.native
     @JSName("animation")
     var animation_Original: AnimationBuilder = js.native

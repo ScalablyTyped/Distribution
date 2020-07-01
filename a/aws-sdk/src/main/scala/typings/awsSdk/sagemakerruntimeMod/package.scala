@@ -11,6 +11,7 @@ package object sagemakerruntimeMod {
   type EndpointName = java.lang.String
   type Header = java.lang.String
   type TargetModelHeader = java.lang.String
+  type TargetVariantHeader = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`2017-05-13`
     - typings.awsSdk.awsSdkStrings.latest_

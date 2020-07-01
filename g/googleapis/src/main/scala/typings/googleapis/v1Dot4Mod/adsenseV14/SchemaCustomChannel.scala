@@ -1,6 +1,6 @@
 package typings.googleapis.v1Dot4Mod.adsenseV14
 
-import typings.googleapis.AnonAdsAppearOn
+import typings.googleapis.anon.AdsAppearOn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ trait SchemaCustomChannel extends js.Object {
   /**
     * The targeting information of this custom channel, if activated.
     */
-  var targetingInfo: js.UndefOr[AnonAdsAppearOn] = js.native
+  var targetingInfo: js.UndefOr[AdsAppearOn] = js.native
 }
 
 object SchemaCustomChannel {
@@ -38,7 +38,7 @@ object SchemaCustomChannel {
     id: String = null,
     kind: String = null,
     name: String = null,
-    targetingInfo: AnonAdsAppearOn = null
+    targetingInfo: AdsAppearOn = null
   ): SchemaCustomChannel = {
     val __obj = js.Dynamic.literal()
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])

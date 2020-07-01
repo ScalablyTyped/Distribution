@@ -79,8 +79,8 @@ object SchemaReadOnly {
     if (maxStaleness != null) __obj.updateDynamic("maxStaleness")(maxStaleness.asInstanceOf[js.Any])
     if (minReadTimestamp != null) __obj.updateDynamic("minReadTimestamp")(minReadTimestamp.asInstanceOf[js.Any])
     if (readTimestamp != null) __obj.updateDynamic("readTimestamp")(readTimestamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnReadTimestamp)) __obj.updateDynamic("returnReadTimestamp")(returnReadTimestamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(strong)) __obj.updateDynamic("strong")(strong.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnReadTimestamp)) __obj.updateDynamic("returnReadTimestamp")(returnReadTimestamp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strong)) __obj.updateDynamic("strong")(strong.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReadOnly]
   }
 }

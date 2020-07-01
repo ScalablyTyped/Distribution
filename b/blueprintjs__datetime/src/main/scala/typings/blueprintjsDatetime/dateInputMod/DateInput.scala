@@ -34,8 +34,6 @@ class DateInput ()
   var unregisterPopoverBlurHandler: js.Any = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MDateInput(prevProps: IDateInputProps, prevState: IDateInputState): Unit = js.native
-  @JSName("componentDidUpdate")
-  def componentDidUpdate_MDateInput(prevProps: IDateInputProps, prevState: IDateInputState, snapshot: js.Object): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MDateInput(): Unit = js.native
 }

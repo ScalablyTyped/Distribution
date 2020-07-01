@@ -6,8 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PeerStatusChange extends Event {
-  /* Properties */
+  /**
+    * Endpoint.
+    */
   var endpoint: Endpoint
+  /**
+    * Peer.
+    */
   var peer: Peer
 }
 

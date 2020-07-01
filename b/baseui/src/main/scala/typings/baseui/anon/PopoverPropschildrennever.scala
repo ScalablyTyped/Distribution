@@ -18,7 +18,6 @@ import typings.baseui.baseuiStrings.tooltip
 import typings.baseui.baseuiStrings.top
 import typings.baseui.baseuiStrings.topLeft
 import typings.baseui.baseuiStrings.topRight
-import typings.baseui.popoverMod.Overrides
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import typings.std.MouseEvent
@@ -48,7 +47,7 @@ trait PopoverPropschildrennever extends js.Object {
   var onMouseEnterDelay: js.UndefOr[Double] = js.undefined
   var onMouseLeave: js.UndefOr[js.Function0[_]] = js.undefined
   var onMouseLeaveDelay: js.UndefOr[Double] = js.undefined
-  var overrides: js.UndefOr[Overrides] = js.undefined
+  var overrides: js.UndefOr[typings.baseui.popoverMod.Overrides] = js.undefined
   var placement: js.UndefOr[
     topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top
   ] = js.undefined
@@ -82,7 +81,7 @@ object PopoverPropschildrennever {
     onMouseEnterDelay: js.UndefOr[Double] = js.undefined,
     onMouseLeave: () => _ = null,
     onMouseLeaveDelay: js.UndefOr[Double] = js.undefined,
-    overrides: Overrides = null,
+    overrides: typings.baseui.popoverMod.Overrides = null,
     placement: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top = null,
     popperOptions: js.Any = null,
     renderAll: js.UndefOr[Boolean] = js.undefined,

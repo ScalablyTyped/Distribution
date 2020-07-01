@@ -30,12 +30,12 @@ object SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsResult {
   def apply(
     image: String = null,
     product: SchemaGoogleCloudVisionV1p2beta1Product = null,
-    score: Int | Double = null
+    score: js.UndefOr[Double] = js.undefined
   ): SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsResult = {
     val __obj = js.Dynamic.literal()
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsResult]
   }
 }

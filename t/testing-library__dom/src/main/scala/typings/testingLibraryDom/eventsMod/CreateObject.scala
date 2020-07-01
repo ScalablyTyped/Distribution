@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {[ K in @testing-library/dom.@testing-library/dom/events.EventType ]: (element : std.Document | std.Element | std.Window | std.Node, options? : {}): std.Event} */
+/* Inlined {[ K in @testing-library/dom.@testing-library/dom/types/events.EventType ]: (element : std.Document | std.Element | std.Window | std.Node, options? : {}): std.Event} */
 trait CreateObject extends js.Object {
   var abort: js.Function2[
     /* element */ Document | Element | Window | Node, 

@@ -3,10 +3,9 @@ package typings.echarts.echarts.EChartOption
 import typings.echarts.anon.BorderRadius
 import typings.echarts.anon.BorderType
 import typings.echarts.anon.CurvenessOpacity
-import typings.echarts.anon.ExtraCssText
 import typings.echarts.anon.ItemStyleLabelLineStyle
-import typings.echarts.anon.Source
 import typings.echarts.echarts.EChartOption.SeriesSankey.DataObject
+import typings.echarts.echarts.EChartOption.SeriesSankey.LinkObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -323,7 +322,25 @@ trait SeriesSankey_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sankey.links
     */
-  var links: js.UndefOr[Source] = js.undefined
+  var links: js.UndefOr[js.Array[LinkObject]] = js.undefined
+  /**
+    * Series name used for displaying in
+    * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-sankey.name
+    */
+  var name: js.UndefOr[String] = js.undefined
+  /**
+    * Alignment of nodes in the graph.
+    *
+    * May be 'left', 'right' or 'justify'
+    *
+    * @default
+    * justify
+    * @see https://echarts.apache.org/en/option.html#series-sankey.nodeAlign
+    */
+  var nodeAlign: js.UndefOr[String] = js.undefined
   /**
     * The gap between any two rectangles in each column from the graph.
     *
@@ -389,7 +406,7 @@ trait SeriesSankey_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sankey.tooltip
     */
-  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
   /**
     * Distance between sankey component and the top side of the container.
     *
@@ -478,14 +495,16 @@ object SeriesSankey_ {
     layoutIterations: js.UndefOr[Double] = js.undefined,
     left: Double | String = null,
     lineStyle: CurvenessOpacity = null,
-    links: Source = null,
+    links: js.Array[LinkObject] = null,
+    name: String = null,
+    nodeAlign: String = null,
     nodeGap: js.UndefOr[Double] = js.undefined,
     nodeWidth: js.UndefOr[Double] = js.undefined,
     nodes: js.Array[_] = null,
     orient: String = null,
     right: Double | String = null,
     silent: js.UndefOr[Boolean] = js.undefined,
-    tooltip: ExtraCssText = null,
+    tooltip: BaseTooltip = null,
     top: Double | String = null,
     `type`: String = null,
     width: Double | String = null,
@@ -515,6 +534,8 @@ object SeriesSankey_ {
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
     if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (nodeAlign != null) __obj.updateDynamic("nodeAlign")(nodeAlign.asInstanceOf[js.Any])
     if (!js.isUndefined(nodeGap)) __obj.updateDynamic("nodeGap")(nodeGap.get.asInstanceOf[js.Any])
     if (!js.isUndefined(nodeWidth)) __obj.updateDynamic("nodeWidth")(nodeWidth.get.asInstanceOf[js.Any])
     if (nodes != null) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])

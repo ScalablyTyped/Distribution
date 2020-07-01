@@ -27,11 +27,15 @@ trait SchemaColorInfo extends js.Object {
 
 object SchemaColorInfo {
   @scala.inline
-  def apply(color: SchemaColor = null, pixelFraction: Int | Double = null, score: Int | Double = null): SchemaColorInfo = {
+  def apply(
+    color: SchemaColor = null,
+    pixelFraction: js.UndefOr[Double] = js.undefined,
+    score: js.UndefOr[Double] = js.undefined
+  ): SchemaColorInfo = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (pixelFraction != null) __obj.updateDynamic("pixelFraction")(pixelFraction.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(pixelFraction)) __obj.updateDynamic("pixelFraction")(pixelFraction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaColorInfo]
   }
 }

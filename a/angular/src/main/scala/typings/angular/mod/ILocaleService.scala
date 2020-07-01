@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 ///////////////////////////////////////////////////////////////////////////
 // LocaleService
-// see http://docs.angularjs.org/api/ng.$locale
+// see http://docs.angularjs.org/api/ng/service/$locale
 ///////////////////////////////////////////////////////////////////////////
 trait ILocaleService extends js.Object {
   var DATETIME_FORMATS: ILocaleDateTimeFormatDescriptor

@@ -1,6 +1,7 @@
 package typings.tabulatorTables.Tabulator
 
 import typings.std.HTMLElement
+import typings.std.MouseEvent
 import typings.std.UIEvent
 import typings.tabulatorTables.tabulatorTablesBooleans.`false`
 import typings.tabulatorTables.tabulatorTablesStrings.add
@@ -25,8 +26,13 @@ trait OptionsRows extends js.Object {
   var dataTreeRowExpanded: js.UndefOr[js.Function2[/* row */ RowComponent, /* level */ Double, Unit]] = js.undefined
   /** To allow the user to move rows up and down the table, set the movableRows parameter in the options: */
   var movableRows: js.UndefOr[Boolean] = js.undefined
+  var movableRowsConnectedElements: js.UndefOr[String | HTMLElement] = js.undefined
   /** Tabulator also allows you to move rows between tables. To enable this you should supply either a valid CSS selector string a DOM node for the table or the Tabuator object for the table to the movableRowsConnectedTables option. if you want to connect to multple tables then you can pass in an array of values to this option. */
   var movableRowsConnectedTables: js.UndefOr[String | (js.Array[HTMLElement | String]) | HTMLElement] = js.undefined
+  /**When a row is dropped on element from from the movableRowsConnectedElements option the movableRowsElementDrop callback will be triggered. You can use this callback to trigger any changes as a result of the drop */
+  var movableRowsElementDrop: js.UndefOr[
+    js.Function3[/* e */ MouseEvent, /* element */ HTMLElement, /* row */ RowComponent, _]
+  ] = js.undefined
   /** The movableRowsReceived callback is triggered on a receiving table when a row has been successfuly received.*/
   var movableRowsReceived: js.UndefOr[
     js.Function3[
@@ -188,7 +194,9 @@ object OptionsRows {
     dataTreeRowCollapsed: (/* row */ RowComponent, /* level */ Double) => Unit = null,
     dataTreeRowExpanded: (/* row */ RowComponent, /* level */ Double) => Unit = null,
     movableRows: js.UndefOr[Boolean] = js.undefined,
+    movableRowsConnectedElements: String | HTMLElement = null,
     movableRowsConnectedTables: String | (js.Array[HTMLElement | String]) | HTMLElement = null,
+    movableRowsElementDrop: (/* e */ MouseEvent, /* element */ HTMLElement, /* row */ RowComponent) => _ = null,
     movableRowsReceived: (/* fromRow */ RowComponent, /* toRow */ RowComponent, /* fromTable */ typings.tabulatorTables.Tabulator) => Unit = null,
     movableRowsReceivedFailed: (/* fromRow */ RowComponent, /* toRow */ RowComponent, /* fromTable */ typings.tabulatorTables.Tabulator) => Unit = null,
     movableRowsReceiver: insert | add | update | replace | (js.Function3[
@@ -247,7 +255,9 @@ object OptionsRows {
     if (dataTreeRowCollapsed != null) __obj.updateDynamic("dataTreeRowCollapsed")(js.Any.fromFunction2(dataTreeRowCollapsed))
     if (dataTreeRowExpanded != null) __obj.updateDynamic("dataTreeRowExpanded")(js.Any.fromFunction2(dataTreeRowExpanded))
     if (!js.isUndefined(movableRows)) __obj.updateDynamic("movableRows")(movableRows.get.asInstanceOf[js.Any])
+    if (movableRowsConnectedElements != null) __obj.updateDynamic("movableRowsConnectedElements")(movableRowsConnectedElements.asInstanceOf[js.Any])
     if (movableRowsConnectedTables != null) __obj.updateDynamic("movableRowsConnectedTables")(movableRowsConnectedTables.asInstanceOf[js.Any])
+    if (movableRowsElementDrop != null) __obj.updateDynamic("movableRowsElementDrop")(js.Any.fromFunction3(movableRowsElementDrop))
     if (movableRowsReceived != null) __obj.updateDynamic("movableRowsReceived")(js.Any.fromFunction3(movableRowsReceived))
     if (movableRowsReceivedFailed != null) __obj.updateDynamic("movableRowsReceivedFailed")(js.Any.fromFunction3(movableRowsReceivedFailed))
     if (movableRowsReceiver != null) __obj.updateDynamic("movableRowsReceiver")(movableRowsReceiver.asInstanceOf[js.Any])

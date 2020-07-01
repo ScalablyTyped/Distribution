@@ -88,7 +88,7 @@ object PartialISuggestPropsany {
     inputValueRenderer: /* item */ js.Any => String = null,
     itemDisabled: (/* keyof any */ String) | (js.Function2[/* item */ js.Any, /* index */ Double, Boolean]) = null,
     itemListPredicate: (/* query */ String, /* items */ js.Array[_]) => js.Array[_] = null,
-    itemListRenderer: /* itemListProps */ IItemListRendererProps[_] => Element = null,
+    itemListRenderer: /* itemListProps */ IItemListRendererProps[_] => Element | Null = null,
     itemPredicate: (/* query */ String, _, /* index */ js.UndefOr[Double], /* exactMatch */ js.UndefOr[Boolean]) => Boolean = null,
     itemRenderer: (_, /* itemProps */ IItemRendererProps) => Element | Null = null,
     items: js.Array[_] = null,

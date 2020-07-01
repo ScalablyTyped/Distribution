@@ -1,7 +1,7 @@
 package typings.googleapis.bloggerV3Mod.bloggerV3
 
-import typings.googleapis.AnonIdString
-import typings.googleapis.AnonImage
+import typings.googleapis.anon.IdString
+import typings.googleapis.anon.Image
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,11 +11,11 @@ trait SchemaComment extends js.Object {
   /**
     * The author of this Comment.
     */
-  var author: js.UndefOr[AnonImage] = js.native
+  var author: js.UndefOr[Image] = js.native
   /**
     * Data about the blog containing this comment.
     */
-  var blog: js.UndefOr[AnonIdString] = js.native
+  var blog: js.UndefOr[IdString] = js.native
   /**
     * The actual content of the comment. May include HTML markup.
     */
@@ -27,7 +27,7 @@ trait SchemaComment extends js.Object {
   /**
     * Data about the comment this is in reply to.
     */
-  var inReplyTo: js.UndefOr[AnonIdString] = js.native
+  var inReplyTo: js.UndefOr[IdString] = js.native
   /**
     * The kind of this entry. Always blogger#comment
     */
@@ -35,7 +35,7 @@ trait SchemaComment extends js.Object {
   /**
     * Data about the post containing this comment.
     */
-  var post: js.UndefOr[AnonIdString] = js.native
+  var post: js.UndefOr[IdString] = js.native
   /**
     * RFC 3339 date-time when this comment was published.
     */
@@ -57,13 +57,13 @@ trait SchemaComment extends js.Object {
 object SchemaComment {
   @scala.inline
   def apply(
-    author: AnonImage = null,
-    blog: AnonIdString = null,
+    author: Image = null,
+    blog: IdString = null,
     content: String = null,
     id: String = null,
-    inReplyTo: AnonIdString = null,
+    inReplyTo: IdString = null,
     kind: String = null,
-    post: AnonIdString = null,
+    post: IdString = null,
     published: String = null,
     selfLink: String = null,
     status: String = null,

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 trait CardStack
   extends Component[Props, State, js.Any] {
   var getFocusedRoute: js.Any = js.native
+  var getPreviousScene: js.Any = js.native
   var handleHeaderLayout: js.Any = js.native
   var handleLayout: js.Any = js.native
 }

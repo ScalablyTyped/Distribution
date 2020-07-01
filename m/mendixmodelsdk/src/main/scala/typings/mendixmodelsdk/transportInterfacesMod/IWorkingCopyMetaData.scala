@@ -11,6 +11,7 @@ trait IWorkingCopyMetaData extends js.Object {
   var name: String
   var projectId: String
   var teamServerBaseBranch: js.UndefOr[String] = js.undefined
+  var teamServerBaseCommitHash: js.UndefOr[String] = js.undefined
   var teamServerBaseRevision: js.UndefOr[Double] = js.undefined
 }
 
@@ -23,10 +24,12 @@ object IWorkingCopyMetaData {
     name: String,
     projectId: String,
     teamServerBaseBranch: String = null,
+    teamServerBaseCommitHash: String = null,
     teamServerBaseRevision: js.UndefOr[Double] = js.undefined
   ): IWorkingCopyMetaData = {
     val __obj = js.Dynamic.literal(avatarUrl = avatarUrl.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], metaModelVersion = metaModelVersion.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any])
     if (teamServerBaseBranch != null) __obj.updateDynamic("teamServerBaseBranch")(teamServerBaseBranch.asInstanceOf[js.Any])
+    if (teamServerBaseCommitHash != null) __obj.updateDynamic("teamServerBaseCommitHash")(teamServerBaseCommitHash.asInstanceOf[js.Any])
     if (!js.isUndefined(teamServerBaseRevision)) __obj.updateDynamic("teamServerBaseRevision")(teamServerBaseRevision.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWorkingCopyMetaData]
   }

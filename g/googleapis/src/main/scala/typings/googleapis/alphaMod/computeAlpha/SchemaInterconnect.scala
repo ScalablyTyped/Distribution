@@ -174,14 +174,14 @@ object SchemaInterconnect {
     nocContactEmail: String = null,
     operationalStatus: String = null,
     peerIpAddress: String = null,
-    provisionedLinkCount: Int | Double = null,
-    requestedLinkCount: Int | Double = null,
+    provisionedLinkCount: js.UndefOr[Double] = js.undefined,
+    requestedLinkCount: js.UndefOr[Double] = js.undefined,
     selfLink: String = null,
     selfLinkWithId: String = null,
     state: String = null
   ): SchemaInterconnect = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adminEnabled)) __obj.updateDynamic("adminEnabled")(adminEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(adminEnabled)) __obj.updateDynamic("adminEnabled")(adminEnabled.get.asInstanceOf[js.Any])
     if (circuitInfos != null) __obj.updateDynamic("circuitInfos")(circuitInfos.asInstanceOf[js.Any])
     if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
     if (customerName != null) __obj.updateDynamic("customerName")(customerName.asInstanceOf[js.Any])
@@ -201,8 +201,8 @@ object SchemaInterconnect {
     if (nocContactEmail != null) __obj.updateDynamic("nocContactEmail")(nocContactEmail.asInstanceOf[js.Any])
     if (operationalStatus != null) __obj.updateDynamic("operationalStatus")(operationalStatus.asInstanceOf[js.Any])
     if (peerIpAddress != null) __obj.updateDynamic("peerIpAddress")(peerIpAddress.asInstanceOf[js.Any])
-    if (provisionedLinkCount != null) __obj.updateDynamic("provisionedLinkCount")(provisionedLinkCount.asInstanceOf[js.Any])
-    if (requestedLinkCount != null) __obj.updateDynamic("requestedLinkCount")(requestedLinkCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(provisionedLinkCount)) __obj.updateDynamic("provisionedLinkCount")(provisionedLinkCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestedLinkCount)) __obj.updateDynamic("requestedLinkCount")(requestedLinkCount.get.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     if (selfLinkWithId != null) __obj.updateDynamic("selfLinkWithId")(selfLinkWithId.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])

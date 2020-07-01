@@ -55,7 +55,7 @@ object AnimatedSprite extends js.Object {
     *
     * @static
     * @param {string[]} frames - The array of frames ids the AnimatedSprite will use as its texture frames.
-    * @return {AnimatedSprite} The new animated sprite with the specified frames.
+    * @return {PIXI.AnimatedSprite} The new animated sprite with the specified frames.
     */
   def fromFrames(frames: js.Array[String]): typings.pixiJs.PIXI.AnimatedSprite = js.native
   /**
@@ -63,7 +63,7 @@ object AnimatedSprite extends js.Object {
     *
     * @static
     * @param {string[]} images - The array of image urls the AnimatedSprite will use as its texture frames.
-    * @return {AnimatedSprite} The new animate sprite with the specified images as frames.
+    * @return {PIXI.AnimatedSprite} The new animate sprite with the specified images as frames.
     */
   def fromImages(images: js.Array[String]): typings.pixiJs.PIXI.AnimatedSprite = js.native
 }

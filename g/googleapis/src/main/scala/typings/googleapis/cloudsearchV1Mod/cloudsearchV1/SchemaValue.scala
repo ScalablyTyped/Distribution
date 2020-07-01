@@ -22,15 +22,15 @@ object SchemaValue {
   def apply(
     booleanValue: js.UndefOr[Boolean] = js.undefined,
     dateValue: SchemaDate = null,
-    doubleValue: Int | Double = null,
+    doubleValue: js.UndefOr[Double] = js.undefined,
     integerValue: String = null,
     stringValue: String = null,
     timestampValue: String = null
   ): SchemaValue = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(booleanValue)) __obj.updateDynamic("booleanValue")(booleanValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(booleanValue)) __obj.updateDynamic("booleanValue")(booleanValue.get.asInstanceOf[js.Any])
     if (dateValue != null) __obj.updateDynamic("dateValue")(dateValue.asInstanceOf[js.Any])
-    if (doubleValue != null) __obj.updateDynamic("doubleValue")(doubleValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleValue)) __obj.updateDynamic("doubleValue")(doubleValue.get.asInstanceOf[js.Any])
     if (integerValue != null) __obj.updateDynamic("integerValue")(integerValue.asInstanceOf[js.Any])
     if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
     if (timestampValue != null) __obj.updateDynamic("timestampValue")(timestampValue.asInstanceOf[js.Any])

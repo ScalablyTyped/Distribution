@@ -11,7 +11,7 @@ trait CampaignSmsMessage extends js.Object {
     */
   var Body: js.UndefOr[string] = js.native
   /**
-    * The type of SMS message. Valid values are: TRANSACTIONAL, the message is critical or time-sensitive, such as a one-time password that supports a customer transaction; and, PROMOTIONAL, the message isn't critical or time-sensitive, such as a marketing message.
+    * The SMS message type. Valid values are TRANSACTIONAL (for messages that are critical or time-sensitive, such as a one-time passwords) and PROMOTIONAL (for messsages that aren't critical or time-sensitive, such as marketing messages).
     */
   var MessageType: js.UndefOr[typings.awsSdk.pinpointMod.MessageType] = js.native
   /**

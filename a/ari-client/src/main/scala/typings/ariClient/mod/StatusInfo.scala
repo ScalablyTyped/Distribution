@@ -6,8 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait StatusInfo extends js.Object {
+  /**
+    * Time when Asterisk was last reloaded.
+    */
   var last_reload_time: Date
-  /* Properties */
+  /**
+    * Time when Asterisk was started.
+    */
   var startup_time: Date
 }
 

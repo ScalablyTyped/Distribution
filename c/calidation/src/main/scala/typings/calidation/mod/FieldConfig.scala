@@ -4,37 +4,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FieldConfig extends js.Object {
-  var isBlacklisted: js.UndefOr[BlacklistValidator] = js.undefined
-  var isEmail: js.UndefOr[SimpleValidator] = js.undefined
-  var isEqual: js.UndefOr[ValueValidator[_]] = js.undefined
-  var isExactLength: js.UndefOr[LengthValidator] = js.undefined
-  var isGreaterThan: js.UndefOr[ValueValidator[Double]] = js.undefined
-  var isLessThan: js.UndefOr[ValueValidator[Double]] = js.undefined
-  var isMaxLength: js.UndefOr[LengthValidator] = js.undefined
-  var isMinLength: js.UndefOr[LengthValidator] = js.undefined
-  var isNumber: js.UndefOr[SimpleValidator] = js.undefined
-  var isRegexMatch: js.UndefOr[RegexValidator] = js.undefined
-  var isRequired: js.UndefOr[SimpleValidator] = js.undefined
-  var isWhitelisted: js.UndefOr[WhitelistValidator] = js.undefined
+trait FieldConfig[T /* <: js.Object */] extends js.Object {
+  var isBlacklisted: js.UndefOr[BlacklistValidator[T]] = js.undefined
+  var isEmail: js.UndefOr[SimpleValidator[T]] = js.undefined
+  var isEqual: js.UndefOr[ValueValidator[_, T]] = js.undefined
+  var isExactLength: js.UndefOr[LengthValidator[T]] = js.undefined
+  var isGreaterThan: js.UndefOr[ValueValidator[Double, T]] = js.undefined
+  var isLessThan: js.UndefOr[ValueValidator[Double, T]] = js.undefined
+  var isMaxLength: js.UndefOr[LengthValidator[T]] = js.undefined
+  var isMinLength: js.UndefOr[LengthValidator[T]] = js.undefined
+  var isNumber: js.UndefOr[SimpleValidator[T]] = js.undefined
+  var isRegexMatch: js.UndefOr[RegexValidator[T]] = js.undefined
+  var isRequired: js.UndefOr[SimpleValidator[T]] = js.undefined
+  var isWhitelisted: js.UndefOr[WhitelistValidator[T]] = js.undefined
 }
 
 object FieldConfig {
   @scala.inline
-  def apply(
-    isBlacklisted: BlacklistValidator = null,
-    isEmail: SimpleValidator = null,
-    isEqual: ValueValidator[_] = null,
-    isExactLength: LengthValidator = null,
-    isGreaterThan: ValueValidator[Double] = null,
-    isLessThan: ValueValidator[Double] = null,
-    isMaxLength: LengthValidator = null,
-    isMinLength: LengthValidator = null,
-    isNumber: SimpleValidator = null,
-    isRegexMatch: RegexValidator = null,
-    isRequired: SimpleValidator = null,
-    isWhitelisted: WhitelistValidator = null
-  ): FieldConfig = {
+  def apply[/* <: js.Object */ T](
+    isBlacklisted: BlacklistValidator[T] = null,
+    isEmail: SimpleValidator[T] = null,
+    isEqual: ValueValidator[_, T] = null,
+    isExactLength: LengthValidator[T] = null,
+    isGreaterThan: ValueValidator[Double, T] = null,
+    isLessThan: ValueValidator[Double, T] = null,
+    isMaxLength: LengthValidator[T] = null,
+    isMinLength: LengthValidator[T] = null,
+    isNumber: SimpleValidator[T] = null,
+    isRegexMatch: RegexValidator[T] = null,
+    isRequired: SimpleValidator[T] = null,
+    isWhitelisted: WhitelistValidator[T] = null
+  ): FieldConfig[T] = {
     val __obj = js.Dynamic.literal()
     if (isBlacklisted != null) __obj.updateDynamic("isBlacklisted")(isBlacklisted.asInstanceOf[js.Any])
     if (isEmail != null) __obj.updateDynamic("isEmail")(isEmail.asInstanceOf[js.Any])
@@ -48,7 +48,7 @@ object FieldConfig {
     if (isRegexMatch != null) __obj.updateDynamic("isRegexMatch")(isRegexMatch.asInstanceOf[js.Any])
     if (isRequired != null) __obj.updateDynamic("isRequired")(isRequired.asInstanceOf[js.Any])
     if (isWhitelisted != null) __obj.updateDynamic("isWhitelisted")(isWhitelisted.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FieldConfig]
+    __obj.asInstanceOf[FieldConfig[T]]
   }
 }
 

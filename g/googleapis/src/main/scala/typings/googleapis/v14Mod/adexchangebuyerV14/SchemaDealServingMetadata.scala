@@ -26,7 +26,7 @@ object SchemaDealServingMetadata {
     dealPauseStatus: SchemaDealServingMetadataDealPauseStatus = null
   ): SchemaDealServingMetadata = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alcoholAdsAllowed)) __obj.updateDynamic("alcoholAdsAllowed")(alcoholAdsAllowed.asInstanceOf[js.Any])
+    if (!js.isUndefined(alcoholAdsAllowed)) __obj.updateDynamic("alcoholAdsAllowed")(alcoholAdsAllowed.get.asInstanceOf[js.Any])
     if (dealPauseStatus != null) __obj.updateDynamic("dealPauseStatus")(dealPauseStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDealServingMetadata]
   }

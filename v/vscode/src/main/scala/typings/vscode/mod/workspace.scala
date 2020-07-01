@@ -60,7 +60,7 @@ object workspace extends js.Object {
   def openTextDocument(uri: Uri): Thenable[TextDocument] = js.native
   def registerFileSystemProvider(scheme: String, provider: FileSystemProvider): Disposable = js.native
   def registerFileSystemProvider(scheme: String, provider: FileSystemProvider, options: IsCaseSensitive): Disposable = js.native
-  def registerTaskProvider(`type`: String, provider: TaskProvider): Disposable = js.native
+  def registerTaskProvider(`type`: String, provider: TaskProvider[Task]): Disposable = js.native
   def registerTextDocumentContentProvider(scheme: String, provider: TextDocumentContentProvider): Disposable = js.native
   def saveAll(): Thenable[Boolean] = js.native
   def saveAll(includeUntitled: Boolean): Thenable[Boolean] = js.native

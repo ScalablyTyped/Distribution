@@ -1,6 +1,5 @@
 package typings.egg.mod
 
-import typings.eggLogger.mod.EggLogger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

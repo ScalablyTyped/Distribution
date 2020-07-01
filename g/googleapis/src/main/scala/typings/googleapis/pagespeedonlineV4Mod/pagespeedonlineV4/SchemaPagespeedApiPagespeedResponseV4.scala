@@ -1,11 +1,11 @@
 package typings.googleapis.pagespeedonlineV4Mod.pagespeedonlineV4
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.googleapis.AnonCms
-import typings.googleapis.AnonInitialurl
-import typings.googleapis.AnonLocaleRuleResults
-import typings.googleapis.AnonMajor
-import typings.googleapis.AnonPass
+import typings.googleapis.anon.Cms
+import typings.googleapis.anon.Initialurl
+import typings.googleapis.anon.LocaleRuleResults
+import typings.googleapis.anon.Major
+import typings.googleapis.anon.Pass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ trait SchemaPagespeedApiPagespeedResponseV4 extends js.Object {
     * Localized PageSpeed results. Contains a ruleResults entry for each
     * PageSpeed rule instantiated and run by the server.
     */
-  var formattedResults: js.UndefOr[AnonLocaleRuleResults] = js.native
+  var formattedResults: js.UndefOr[LocaleRuleResults] = js.native
   /**
     * Canonicalized and final URL for the document, after following page
     * redirects (if any).
@@ -38,12 +38,12 @@ trait SchemaPagespeedApiPagespeedResponseV4 extends js.Object {
   /**
     * Metrics of end users&#39; page loading experience.
     */
-  var loadingExperience: js.UndefOr[AnonInitialurl] = js.native
+  var loadingExperience: js.UndefOr[Initialurl] = js.native
   /**
     * Summary statistics for the page, such as number of JavaScript bytes,
     * number of HTML bytes, etc.
     */
-  var pageStats: js.UndefOr[AnonCms] = js.native
+  var pageStats: js.UndefOr[Cms] = js.native
   /**
     * Response code for the document. 200 indicates a normal page load. 4xx/5xx
     * indicates an error.
@@ -52,7 +52,7 @@ trait SchemaPagespeedApiPagespeedResponseV4 extends js.Object {
   /**
     * A map with one entry for each rule group in these results.
     */
-  var ruleGroups: js.UndefOr[StringDictionary[AnonPass]] = js.native
+  var ruleGroups: js.UndefOr[StringDictionary[Pass]] = js.native
   /**
     * Base64-encoded screenshot of the page that was analyzed.
     */
@@ -69,25 +69,25 @@ trait SchemaPagespeedApiPagespeedResponseV4 extends js.Object {
   /**
     * The version of PageSpeed used to generate these results.
     */
-  var version: js.UndefOr[AnonMajor] = js.native
+  var version: js.UndefOr[Major] = js.native
 }
 
 object SchemaPagespeedApiPagespeedResponseV4 {
   @scala.inline
   def apply(
     captchaResult: String = null,
-    formattedResults: AnonLocaleRuleResults = null,
+    formattedResults: LocaleRuleResults = null,
     id: String = null,
     invalidRules: js.Array[String] = null,
     kind: String = null,
-    loadingExperience: AnonInitialurl = null,
-    pageStats: AnonCms = null,
-    responseCode: Int | Double = null,
-    ruleGroups: StringDictionary[AnonPass] = null,
+    loadingExperience: Initialurl = null,
+    pageStats: Cms = null,
+    responseCode: js.UndefOr[Double] = js.undefined,
+    ruleGroups: StringDictionary[Pass] = null,
     screenshot: SchemaPagespeedApiImageV4 = null,
     snapshots: js.Array[SchemaPagespeedApiImageV4] = null,
     title: String = null,
-    version: AnonMajor = null
+    version: Major = null
   ): SchemaPagespeedApiPagespeedResponseV4 = {
     val __obj = js.Dynamic.literal()
     if (captchaResult != null) __obj.updateDynamic("captchaResult")(captchaResult.asInstanceOf[js.Any])
@@ -97,7 +97,7 @@ object SchemaPagespeedApiPagespeedResponseV4 {
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (loadingExperience != null) __obj.updateDynamic("loadingExperience")(loadingExperience.asInstanceOf[js.Any])
     if (pageStats != null) __obj.updateDynamic("pageStats")(pageStats.asInstanceOf[js.Any])
-    if (responseCode != null) __obj.updateDynamic("responseCode")(responseCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(responseCode)) __obj.updateDynamic("responseCode")(responseCode.get.asInstanceOf[js.Any])
     if (ruleGroups != null) __obj.updateDynamic("ruleGroups")(ruleGroups.asInstanceOf[js.Any])
     if (screenshot != null) __obj.updateDynamic("screenshot")(screenshot.asInstanceOf[js.Any])
     if (snapshots != null) __obj.updateDynamic("snapshots")(snapshots.asInstanceOf[js.Any])

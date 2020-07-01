@@ -51,7 +51,7 @@ object SchemaGoogleWatcherV1Change {
     state: String = null
   ): SchemaGoogleWatcherV1Change = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(continued)) __obj.updateDynamic("continued")(continued.asInstanceOf[js.Any])
+    if (!js.isUndefined(continued)) __obj.updateDynamic("continued")(continued.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (resumeMarker != null) __obj.updateDynamic("resumeMarker")(resumeMarker.asInstanceOf[js.Any])

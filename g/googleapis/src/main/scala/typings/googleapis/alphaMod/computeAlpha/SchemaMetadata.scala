@@ -1,6 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
-import typings.googleapis.AnonKey
+import typings.googleapis.anon.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,7 @@ trait SchemaMetadata extends js.Object {
     * Array of key/value pairs. The total size of all keys and values must be
     * less than 512 KB.
     */
-  var items: js.UndefOr[js.Array[AnonKey]] = js.native
+  var items: js.UndefOr[js.Array[Key]] = js.native
   /**
     * [Output Only] Type of the resource. Always compute#metadata for metadata.
     */
@@ -33,7 +33,7 @@ trait SchemaMetadata extends js.Object {
 
 object SchemaMetadata {
   @scala.inline
-  def apply(fingerprint: String = null, items: js.Array[AnonKey] = null, kind: String = null): SchemaMetadata = {
+  def apply(fingerprint: String = null, items: js.Array[Key] = null, kind: String = null): SchemaMetadata = {
     val __obj = js.Dynamic.literal()
     if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])

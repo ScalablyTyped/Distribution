@@ -1,5 +1,6 @@
 package typings.fullpageJs
 
+import typings.fullpageJs.anon.FadeBackground
 import typings.fullpageJs.anon.Percentage
 import typings.fullpageJs.fullpageJsStrings.bottom
 import typings.fullpageJs.fullpageJsStrings.fingersonly
@@ -70,6 +71,15 @@ trait FullPageJsOptions extends js.Object {
     * Defines how to scroll to a section which size is bigger than the viewport. By default fullPage.js scrolls to the top if you come from a section above the destination one and to the bottom if you come from a section below the destination one.
     */
   var bigSectionsDestination: js.UndefOr[top | bottom | Null] = js.undefined
+  /**
+    * Extension of fullpage.js. Defines whether or not to use the cards effect on sections/slides
+    * @default false
+    */
+  var cards: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Allows you to configure the parameters for the cards effect when using the option `cards:true`
+    */
+  var cardsOptions: js.UndefOr[FadeBackground] = js.undefined
   /**
     * (default false) Extension of fullpage.js. Defines whether sliding right in the last slide should slide right to the first one or not, and if scrolling left in the first slide should slide left to the last one or not. Not compatible with loopHorizontal. Requires fullpage.js >= 2.8.3.
     */
@@ -315,6 +325,8 @@ object FullPageJsOptions {
     animateAnchor: js.UndefOr[Boolean] = js.undefined,
     autoScrolling: js.UndefOr[Boolean] = js.undefined,
     bigSectionsDestination: js.UndefOr[Null | top | bottom] = js.undefined,
+    cards: js.UndefOr[Boolean] = js.undefined,
+    cardsOptions: FadeBackground = null,
     continuousHorizontal: js.UndefOr[Boolean] = js.undefined,
     continuousVertical: js.UndefOr[Boolean] = js.undefined,
     controlArrows: js.UndefOr[Boolean] = js.undefined,
@@ -377,6 +389,8 @@ object FullPageJsOptions {
     if (!js.isUndefined(animateAnchor)) __obj.updateDynamic("animateAnchor")(animateAnchor.get.asInstanceOf[js.Any])
     if (!js.isUndefined(autoScrolling)) __obj.updateDynamic("autoScrolling")(autoScrolling.get.asInstanceOf[js.Any])
     if (!js.isUndefined(bigSectionsDestination)) __obj.updateDynamic("bigSectionsDestination")(bigSectionsDestination.asInstanceOf[js.Any])
+    if (!js.isUndefined(cards)) __obj.updateDynamic("cards")(cards.get.asInstanceOf[js.Any])
+    if (cardsOptions != null) __obj.updateDynamic("cardsOptions")(cardsOptions.asInstanceOf[js.Any])
     if (!js.isUndefined(continuousHorizontal)) __obj.updateDynamic("continuousHorizontal")(continuousHorizontal.get.asInstanceOf[js.Any])
     if (!js.isUndefined(continuousVertical)) __obj.updateDynamic("continuousVertical")(continuousVertical.get.asInstanceOf[js.Any])
     if (!js.isUndefined(controlArrows)) __obj.updateDynamic("controlArrows")(controlArrows.get.asInstanceOf[js.Any])

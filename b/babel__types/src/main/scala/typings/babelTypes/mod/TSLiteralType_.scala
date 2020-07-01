@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   extends TSBaseType
      with BaseNode
      with TSType {
-  var literal: NumericLiteral_ | StringLiteral_ | BooleanLiteral_
+  var literal: NumericLiteral_ | StringLiteral_ | BooleanLiteral_ | BigIntLiteral_
   @JSName("type")
   var type_TSLiteralType_ : TSLiteralType
 }
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 object TSLiteralType_ {
   @scala.inline
   def apply(
-    literal: NumericLiteral_ | StringLiteral_ | BooleanLiteral_,
+    literal: NumericLiteral_ | StringLiteral_ | BooleanLiteral_ | BigIntLiteral_,
     `type`: TSLiteralType,
     end: Double = null.asInstanceOf[Double],
     innerComments: js.Array[Comment] = null,

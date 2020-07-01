@@ -21,7 +21,7 @@ trait ChangeEventUpdate[TSchema /* <: StringDictionary[js.Any] */]
 
 object ChangeEventUpdate {
   @scala.inline
-  def apply[TSchema](
+  def apply[/* <: org.scalablytyped.runtime.StringDictionary[js.Any] */ TSchema](
     _id: ResumeToken,
     clusterTime: typings.bson.mod.Timestamp,
     documentKey: `3`[TSchema],

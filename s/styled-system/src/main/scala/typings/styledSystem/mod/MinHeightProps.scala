@@ -16,7 +16,7 @@ trait MinHeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extend
 
 object MinHeightProps {
   @scala.inline
-  def apply[ThemeType, TVal](minHeight: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): MinHeightProps[ThemeType, TVal] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType, TVal](minHeight: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): MinHeightProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[MinHeightProps[ThemeType, TVal]]

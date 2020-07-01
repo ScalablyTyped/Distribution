@@ -45,13 +45,22 @@ object electronUtilStrings {
   sealed trait Privacy_Accessibility extends js.Object
   
   @js.native
+  sealed trait Privacy_Advertising extends js.Object
+  
+  @js.native
   sealed trait Privacy_AllFiles extends js.Object
   
   @js.native
-  sealed trait Privacy_Assistice extends js.Object
+  sealed trait Privacy_Assistive extends js.Object
+  
+  @js.native
+  sealed trait Privacy_Automation extends js.Object
   
   @js.native
   sealed trait Privacy_Calendars extends js.Object
+  
+  @js.native
+  sealed trait Privacy_Camera extends js.Object
   
   @js.native
   sealed trait Privacy_Contacts extends js.Object
@@ -75,6 +84,9 @@ object electronUtilStrings {
   sealed trait Privacy_Microphone extends js.Object
   
   @js.native
+  sealed trait Privacy_Photos extends js.Object
+  
+  @js.native
   sealed trait Privacy_Reminders extends js.Object
   
   @js.native
@@ -96,7 +108,7 @@ object electronUtilStrings {
   sealed trait Services_BluetoothSharing extends js.Object
   
   @js.native
-  sealed trait Services_PersonalFileSHaring extends js.Object
+  sealed trait Services_PersonalFileSharing extends js.Object
   
   @js.native
   sealed trait Services_PrinterSharing extends js.Object
@@ -305,11 +317,17 @@ object electronUtilStrings {
   @scala.inline
   def Privacy_Accessibility: Privacy_Accessibility = "Privacy_Accessibility".asInstanceOf[Privacy_Accessibility]
   @scala.inline
+  def Privacy_Advertising: Privacy_Advertising = "Privacy_Advertising".asInstanceOf[Privacy_Advertising]
+  @scala.inline
   def Privacy_AllFiles: Privacy_AllFiles = "Privacy_AllFiles".asInstanceOf[Privacy_AllFiles]
   @scala.inline
-  def Privacy_Assistice: Privacy_Assistice = "Privacy_Assistice".asInstanceOf[Privacy_Assistice]
+  def Privacy_Assistive: Privacy_Assistive = "Privacy_Assistive".asInstanceOf[Privacy_Assistive]
+  @scala.inline
+  def Privacy_Automation: Privacy_Automation = "Privacy_Automation".asInstanceOf[Privacy_Automation]
   @scala.inline
   def Privacy_Calendars: Privacy_Calendars = "Privacy_Calendars".asInstanceOf[Privacy_Calendars]
+  @scala.inline
+  def Privacy_Camera: Privacy_Camera = "Privacy_Camera".asInstanceOf[Privacy_Camera]
   @scala.inline
   def Privacy_Contacts: Privacy_Contacts = "Privacy_Contacts".asInstanceOf[Privacy_Contacts]
   @scala.inline
@@ -325,6 +343,8 @@ object electronUtilStrings {
   @scala.inline
   def Privacy_Microphone: Privacy_Microphone = "Privacy_Microphone".asInstanceOf[Privacy_Microphone]
   @scala.inline
+  def Privacy_Photos: Privacy_Photos = "Privacy_Photos".asInstanceOf[Privacy_Photos]
+  @scala.inline
   def Privacy_Reminders: Privacy_Reminders = "Privacy_Reminders".asInstanceOf[Privacy_Reminders]
   @scala.inline
   def Privacy_ScreenCapture: Privacy_ScreenCapture = "Privacy_ScreenCapture".asInstanceOf[Privacy_ScreenCapture]
@@ -339,7 +359,7 @@ object electronUtilStrings {
   @scala.inline
   def Services_BluetoothSharing: Services_BluetoothSharing = "Services_BluetoothSharing".asInstanceOf[Services_BluetoothSharing]
   @scala.inline
-  def Services_PersonalFileSHaring: Services_PersonalFileSHaring = "Services_PersonalFileSHaring".asInstanceOf[Services_PersonalFileSHaring]
+  def Services_PersonalFileSharing: Services_PersonalFileSharing = "Services_PersonalFileSharing".asInstanceOf[Services_PersonalFileSharing]
   @scala.inline
   def Services_PrinterSharing: Services_PrinterSharing = "Services_PrinterSharing".asInstanceOf[Services_PrinterSharing]
   @scala.inline

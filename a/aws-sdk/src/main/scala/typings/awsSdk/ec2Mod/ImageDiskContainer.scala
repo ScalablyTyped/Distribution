@@ -15,7 +15,7 @@ trait ImageDiskContainer extends js.Object {
     */
   var DeviceName: js.UndefOr[String] = js.native
   /**
-    * The format of the disk image being imported. Valid values: VHD | VMDK | OVA 
+    * The format of the disk image being imported. Valid values: OVA | VHD | VHDX |VMDK 
     */
   var Format: js.UndefOr[String] = js.native
   /**

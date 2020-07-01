@@ -41,7 +41,7 @@ trait MutationConfig[TOperation /* <: MutationParameters */] extends js.Object {
 
 object MutationConfig {
   @scala.inline
-  def apply[TOperation](
+  def apply[/* <: typings.relayRuntime.commitMutationMod.MutationParameters */ TOperation](
     mutation: GraphQLTaggedNode,
     variables: /* import warning: importer.ImportType#apply Failed type conversion: TOperation['variables'] */ js.Any,
     configs: js.Array[DeclarativeMutationConfig] = null,
